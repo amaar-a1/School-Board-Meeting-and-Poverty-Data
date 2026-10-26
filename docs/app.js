@@ -9,7 +9,6 @@
   document.title = cfg.title;
   $("site-title").textContent = cfg.title;
   $("sources-link").href = cfg.sourcesUrl;
-  $("sheet-link").href = cfg.spreadsheetUrl;
   renderSources();
 
   function sheetUrl(name) {
@@ -54,8 +53,7 @@
         $("status").textContent = "Showing a saved copy of the data (the live spreadsheet couldn't be reached).";
       } catch (_) {
         $("status").classList.add("error");
-        $("status").innerHTML = `Couldn't load the spreadsheet (${err.message}). Make sure it is shared as
-          “Anyone with the link can view”, or <a href="${cfg.spreadsheetUrl}" target="_blank" rel="noopener">open it directly</a>.`;
+        $("status").textContent = `Couldn't load the spreadsheet (${err.message}). Please try again later.`;
         return;
       }
     }
