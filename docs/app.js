@@ -27,13 +27,17 @@
 
   function parse(name, text) {
     const out = Papa.parse(text, { header: true, skipEmptyLines: "greedy" });
-    const columns = (out.meta.fields || []).filter((c) => c && c.trim() !== "");
-    const rows = out.data.filter((r) => columns.some((c) => String(r[c] ?? "").trim() !== ""));
+    const filled = (v) => String(v ?? "").trim() !== "";
+    let columns = (out.meta.fields || []).filter((c) => c && c.trim() !== "");
+    const rows = out.data.filter((r) => columns.some((c) => filled(r[c])));
+    columns = columns.filter((c) => rows.some((r) => filled(r[c])));
     const numeric = new Set(columns.filter((c) => {
-      const vals = rows.map((r) => r[c]).filter((v) => String(v ?? "").trim() !== "");
+      const vals = rows.map((r) => r[c]).filter(filled);
       return vals.length > 0 && vals.every((v) => !isNaN(toNumber(v)));
     }));
-    return { name, columns, rows, numeric };
+    const percent = new Set([...numeric].filter((c) =>
+      rows.map((r) => r[c]).filter(filled).every((v) => String(v).trim().endsWith("%"))));
+    return { name, columns, rows, numeric, percent };
   }
 
   async function load() {
@@ -75,7 +79,14 @@
   }
 
   const fmt = (n) => (Math.abs(n) >= 1000 ? n.toLocaleString(undefined, { maximumFractionDigits: 0 })
-                                          : n.toLocaleString(undefined, { maximumFractionDigits: 2 }));
+                                          : n.toLocaleString(undefined, { maximumFractionDigits: 1 }));
+
+  const fmtCol = (c, n) => (current.percent.has(c) ? `${n.toFixed(1)}%` : fmt(n));
+
+  function cell(c, v) {
+    if (!current.numeric.has(c) || String(v ?? "").trim() === "") return v ?? "";
+    return current.percent.has(c) ? `${toNumber(v).toFixed(2)}%` : toNumber(v).toLocaleString();
+  }
 
   function renderStats() {
     const el = $("stats");
@@ -89,12 +100,39 @@
       if (sub) d.querySelector(".sub").textContent = sub;
       el.appendChild(d);
     };
-    add("Records", current.rows.length.toLocaleString());
+    add(cfg.recordLabel || "Records", current.rows.length.toLocaleString());
     [...current.numeric].slice(0, 5).forEach((c) => {
       const vals = current.rows.map((r) => toNumber(r[c])).filter((v) => !isNaN(v));
       const avg = vals.reduce((a, b) => a + b, 0) / vals.length;
-      add(`Average ${c}`, fmt(avg), `range ${fmt(Math.min(...vals))} – ${fmt(Math.max(...vals))}`);
+      add(`Average ${c}`, fmtCol(c, avg), `range ${fmtCol(c, Math.min(...vals))} – ${fmtCol(c, Math.max(...vals))}`);
     });
+    renderCompare();
+  }
+
+  // Splits rows into "value > 0" vs "value = 0" on cfg.compare.by and compares cfg.compare.metric.
+  function renderCompare() {
+    const cmp = cfg.compare, el = $("compare");
+    el.hidden = true;
+    if (!cmp || !current.numeric.has(cmp.by) || !current.numeric.has(cmp.metric)) return;
+    const groups = [
+      { label: cmp.withLabel, rows: current.rows.filter((r) => toNumber(r[cmp.by]) > 0) },
+      { label: cmp.withoutLabel, rows: current.rows.filter((r) => toNumber(r[cmp.by]) === 0) }
+    ];
+    const body = $("compare-body");
+    body.innerHTML = "";
+    groups.forEach((g) => {
+      const vals = g.rows.map((r) => toNumber(r[cmp.metric])).filter((v) => !isNaN(v));
+      const avg = vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : NaN;
+      const d = document.createElement("div");
+      d.className = "stat";
+      d.innerHTML = '<div class="label"></div><div class="value"></div><div class="sub"></div>';
+      d.querySelector(".label").textContent = g.label;
+      d.querySelector(".value").textContent = isNaN(avg) ? "–" : fmtCol(cmp.metric, avg);
+      d.querySelector(".sub").textContent = `average ${cmp.metric.toLowerCase()} · ${g.rows.length.toLocaleString()} ${(cfg.recordLabel || "records").toLowerCase()}`;
+      body.appendChild(d);
+    });
+    $("compare-title").textContent = cmp.title;
+    el.hidden = false;
   }
 
   function setupChartControls() {
@@ -107,8 +145,11 @@
       cols.forEach((c) => sel.add(new Option(c, c, false, c === pick)));
     };
     const labelCol = current.columns.find((c) => !current.numeric.has(c)) || current.columns[0];
-    fill($("x-col"), current.columns, labelCol);
-    fill($("y-col"), nums, nums.find((c) => c !== labelCol) || nums[0]);
+    const def = cfg.chart || {};
+    const has = (c) => current.columns.includes(c);
+    if (def.type) $("chart-type").value = def.type;
+    fill($("x-col"), current.columns, has(def.x) ? def.x : labelCol);
+    fill($("y-col"), nums, has(def.y) ? def.y : nums.find((c) => c !== labelCol) || nums[0]);
     renderChart();
   }
 
@@ -118,15 +159,26 @@
 
   function renderChart() {
     const x = $("x-col").value, y = $("y-col").value, type = $("chart-type").value;
-    const rows = current.rows.filter((r) => !isNaN(toNumber(r[y])));
+    const limit = Number($("chart-limit").value);
+    const nameCol = current.columns.find((c) => !current.numeric.has(c));
+    let rows = current.rows.filter((r) => !isNaN(toNumber(r[y])));
+    const xIsNum = current.numeric.has(x);
+    $("chart-limit").disabled = type === "scatter";
+    $("chart-type").querySelector('[value="scatter"]').disabled = !xIsNum;
+    if (type === "scatter" && !xIsNum) { $("chart-type").value = "bar"; return renderChart(); }
+    if (type !== "scatter") {
+      rows = [...rows].sort((a, b) => toNumber(b[y]) - toNumber(a[y]));
+      if (limit) rows = rows.slice(0, limit);
+    }
     const accent = cssVar("--accent"), text = cssVar("--muted"), grid = cssVar("--border");
     let data;
     if (type === "scatter") {
       data = { datasets: [{ label: `${y} vs ${x}`,
-        data: rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), label: r[x] })).filter((p) => !isNaN(p.x)),
-        backgroundColor: accent }] };
+        data: rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), name: nameCol ? r[nameCol] : "" }))
+          .filter((p) => !isNaN(p.x)),
+        backgroundColor: accent + "99", pointRadius: 3.5, pointHoverRadius: 6 }] };
     } else {
-      data = { labels: rows.map((r) => r[x]),
+      data = { labels: rows.map((r) => (current.numeric.has(x) ? cell(x, r[x]) : r[x])),
         datasets: [{ label: y, data: rows.map((r) => toNumber(r[y])),
           backgroundColor: accent, borderColor: accent, borderRadius: 3, tension: 0.2 }] };
     }
@@ -135,7 +187,15 @@
       type, data,
       options: {
         maintainAspectRatio: false,
-        plugins: { legend: { display: false } },
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: {
+            title: (items) => (type === "scatter" ? items[0].raw.name : items[0].label),
+            label: (item) => type === "scatter"
+              ? [`${x}: ${fmtCol(x, item.raw.x)}`, `${y}: ${fmtCol(y, item.raw.y)}`]
+              : `${y}: ${fmtCol(y, item.raw)}`
+          } }
+        },
         scales: {
           x: { type: type === "scatter" ? "linear" : "category", title: { display: true, text: x, color: text },
                ticks: { color: text, maxRotation: 60, autoSkip: true }, grid: { color: grid } },
@@ -189,7 +249,7 @@
           a.href = String(v).trim(); a.textContent = "Link"; a.target = "_blank"; a.rel = "noopener";
           td.appendChild(a);
         } else {
-          td.textContent = v;
+          td.textContent = cell(c, v);
         }
         if (current.numeric.has(c)) td.className = "num";
         row.appendChild(td);
@@ -226,7 +286,7 @@
 
   $("search").addEventListener("input", renderTable);
   $("download").addEventListener("click", download);
-  ["x-col", "y-col", "chart-type"].forEach((id) => $(id).addEventListener("change", renderChart));
+  ["x-col", "y-col", "chart-type", "chart-limit"].forEach((id) => $(id).addEventListener("change", renderChart));
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => current && renderChart());
 
   load();

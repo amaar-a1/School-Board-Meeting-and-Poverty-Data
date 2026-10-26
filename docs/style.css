@@ -54,8 +54,11 @@ main { padding-top: 24px; padding-bottom: 24px; }
 .stat .sub { color: var(--muted); font-size: .8rem; }
 .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px; margin-bottom: 20px; }
 .card h2 { margin: 0; font-size: 1.25rem; }
+.compare { margin: 12px 0 0; }
 .card-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
-.controls { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.controls { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; min-width: 0; max-width: 100%; }
+.controls label { min-width: 0; max-width: 100%; }
+.controls select { min-width: 0; }
 .controls label { font-size: .85rem; color: var(--muted); display: flex; gap: 6px; align-items: center; }
 select, input, button {
   font: inherit; font-size: .9rem; color: var(--text); background: var(--bg);

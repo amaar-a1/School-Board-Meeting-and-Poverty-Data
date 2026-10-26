@@ -2,7 +2,7 @@ name: Update data and deploy website
 
 on:
   push:
-    branches: [main, claude/data-website]
+    branches: [main]
   schedule:
     - cron: "17 6 * * *"   # daily refresh of the data
   workflow_dispatch:

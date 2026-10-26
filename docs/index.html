@@ -27,17 +27,30 @@
 
     <section id="stats" class="stats" aria-label="Summary"></section>
 
+    <section id="compare" class="card" hidden>
+      <h2 id="compare-title"></h2>
+      <div id="compare-body" class="stats compare"></div>
+    </section>
+
     <section id="chart-section" class="card" hidden>
       <div class="card-head">
         <h2>Chart</h2>
         <div class="controls">
-          <label>Label <select id="x-col"></select></label>
-          <label>Value <select id="y-col"></select></label>
+          <label>X axis <select id="x-col"></select></label>
+          <label>Y axis <select id="y-col"></select></label>
           <label>Type
             <select id="chart-type">
               <option value="bar">Bar</option>
               <option value="line">Line</option>
               <option value="scatter">Scatter</option>
+            </select>
+          </label>
+          <label>Show
+            <select id="chart-limit">
+              <option value="25">Top 25</option>
+              <option value="50">Top 50</option>
+              <option value="100">Top 100</option>
+              <option value="0">All</option>
             </select>
           </label>
         </div>
@@ -68,7 +81,7 @@
     </section>
   </main>
 
-  <footer class="wrap muted">Data is refreshed from the project spreadsheet daily.</footer>
+  <footer class="wrap muted">Poverty figures are for children ages 5–17. Data is refreshed from the project spreadsheet daily.</footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
