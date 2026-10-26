@@ -270,17 +270,29 @@
   }
 
   function renderSources() {
-    const list = $("sources-list");
-    (window.SOURCES || []).forEach((s) => {
-      const li = document.createElement("li");
-      if (s.url) {
-        const a = document.createElement("a");
-        a.href = s.url; a.textContent = s.title || s.url; a.target = "_blank"; a.rel = "noopener";
-        li.appendChild(a);
-      } else {
-        li.textContent = s.title;
+    const box = $("sources-list");
+    (window.SOURCES || []).forEach((g) => {
+      const h = document.createElement("h3");
+      h.textContent = g.group;
+      const ul = document.createElement("ul");
+      g.items.forEach((s) => {
+        const li = document.createElement("li");
+        if (s.url) {
+          const a = document.createElement("a");
+          a.href = s.url; a.textContent = s.title || s.url; a.target = "_blank"; a.rel = "noopener";
+          li.appendChild(a);
+        } else {
+          li.textContent = s.title;
+        }
+        ul.appendChild(li);
+      });
+      box.append(h, ul);
+      if (g.note) {
+        const p = document.createElement("p");
+        p.className = "note";
+        p.textContent = `Note: ${g.note}`;
+        box.appendChild(p);
       }
-      list.appendChild(li);
     });
   }
 
