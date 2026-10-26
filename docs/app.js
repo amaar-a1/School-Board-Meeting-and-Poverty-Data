@@ -11,17 +11,11 @@
   $("sources-link").href = cfg.sourcesUrl;
   renderSources();
 
-  function sheetUrl(name) {
-    let url = `https://docs.google.com/spreadsheets/d/${cfg.sheetId}/gviz/tq?tqx=out:csv`;
-    if (name) url += `&sheet=${encodeURIComponent(name)}`;
-    return url;
-  }
-
   async function fetchCsv(url) {
     const res = await fetch(url);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const text = await res.text();
-    if (text.trim().startsWith("<")) throw new Error("Sheet is not publicly viewable");
+    if (text.trim().startsWith("<")) throw new Error("not a CSV file");
     return text;
   }
 
@@ -43,19 +37,13 @@
   }
 
   async function load() {
-    const names = cfg.sheets && cfg.sheets.length ? cfg.sheets : [null];
     try {
-      datasets = await Promise.all(names.map(async (n) => parse(n || "Data", await fetchCsv(sheetUrl(n)))));
+      datasets = await Promise.all(cfg.dataFiles.map(async (d) => parse(d.name, await fetchCsv(d.file))));
       $("status").textContent = "";
     } catch (err) {
-      try {
-        datasets = [parse("Data", await fetchCsv(cfg.fallbackCsv))];
-        $("status").textContent = "Showing a saved copy of the data (the live spreadsheet couldn't be reached).";
-      } catch (_) {
-        $("status").classList.add("error");
-        $("status").textContent = `Couldn't load the spreadsheet (${err.message}). Please try again later.`;
-        return;
-      }
+      $("status").classList.add("error");
+      $("status").textContent = `Couldn't load the data (${err.message}). Please try again later.`;
+      return;
     }
     renderTabs();
     select(0);
