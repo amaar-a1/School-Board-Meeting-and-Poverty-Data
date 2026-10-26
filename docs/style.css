@@ -1,0 +1,83 @@
+:root {
+  --bg: #f7f7f5;
+  --surface: #ffffff;
+  --text: #1d2125;
+  --muted: #5d656e;
+  --border: #e2e3e0;
+  --accent: #2a6fdb;
+  --accent-soft: #e8f0fc;
+  --hero: #16324f;
+  --hero-text: #f2f5f9;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171a;
+    --surface: #1d2125;
+    --text: #e6e8ea;
+    --muted: #9aa3ab;
+    --border: #30363c;
+    --accent: #6ea1f0;
+    --accent-soft: #1f2d42;
+    --hero: #0f2235;
+    --hero-text: #e6edf5;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+a { color: var(--accent); }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+.hero { background: var(--hero); color: var(--hero-text); padding: 48px 0 36px; }
+.hero h1 { margin: 0 0 8px; font-size: clamp(1.7rem, 4vw, 2.6rem); line-height: 1.15; }
+.lede { max-width: 640px; opacity: .9; margin: 0 0 18px; }
+.links { display: flex; gap: 18px; flex-wrap: wrap; }
+.links a { color: var(--hero-text); font-weight: 600; }
+main { padding-top: 24px; padding-bottom: 24px; }
+.status { padding: 12px 16px; border-radius: 8px; background: var(--accent-soft); margin-bottom: 20px; }
+.status.error { background: #fde8e8; color: #8a1c1c; }
+.status:empty { display: none; }
+[hidden] { display: none !important; }
+.tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+.tabs button {
+  border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  padding: 8px 14px; border-radius: 999px; cursor: pointer; font: inherit;
+}
+.tabs button[aria-selected="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin-bottom: 20px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+.stat .label { color: var(--muted); font-size: .85rem; }
+.stat .value { font-size: 1.6rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.stat .sub { color: var(--muted); font-size: .8rem; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px; margin-bottom: 20px; }
+.card h2 { margin: 0; font-size: 1.25rem; }
+.compare { margin: 12px 0 0; }
+.card-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+.controls { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; min-width: 0; max-width: 100%; }
+.controls label { min-width: 0; max-width: 100%; }
+.controls select { min-width: 0; }
+.controls label { font-size: .85rem; color: var(--muted); display: flex; gap: 6px; align-items: center; }
+select, input, button {
+  font: inherit; font-size: .9rem; color: var(--text); background: var(--bg);
+  border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; max-width: 100%;
+}
+button { cursor: pointer; }
+button:hover { border-color: var(--accent); }
+.chart-box { position: relative; height: 420px; }
+.table-scroll { overflow: auto; max-height: 640px; border: 1px solid var(--border); border-radius: 8px; }
+table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+th, td { padding: 8px 10px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+th { position: sticky; top: 0; background: var(--surface); cursor: pointer; white-space: nowrap; user-select: none; }
+th .arrow { color: var(--muted); font-size: .75rem; }
+tbody tr:hover { background: var(--accent-soft); }
+.muted { color: var(--muted); }
+#sources-list h3 { font-size: 1rem; margin: 18px 0 6px; }
+#sources-list ul { margin: 0; padding-left: 20px; }
+#sources-list li { margin-bottom: 4px; }
+.note { color: var(--muted); font-size: .9rem; margin: 8px 0 0; }
+footer { padding: 8px 16px 40px; font-size: .85rem; }
+@media (max-width: 600px) { .chart-box { height: 300px; } }

@@ -1,0 +1,69 @@
+name: Update data and deploy website
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 6 * * *"   # daily refresh of the data
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+env:
+  # Project spreadsheet (first tab is exported to docs/data/data.csv)
+  SHEET_ID: 1qphCSWlKrBUIsodbmafpjaW75Jg-h8fgdxqlyJ_jys0
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download spreadsheet as CSV
+        run: |
+          mkdir -p docs/data
+          curl -sSfL "https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv" -o /tmp/data.csv
+          if head -c 100 /tmp/data.csv | grep -qi "<html\|<!doctype"; then
+            echo "::error::Got a web page instead of CSV. Share the sheet as 'Anyone with the link can view'."
+            exit 1
+          fi
+          mv /tmp/data.csv docs/data/data.csv
+
+      - name: Commit updated CSV
+        run: |
+          git add docs/data/data.csv
+          if git diff --cached --quiet; then
+            echo "Data unchanged"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Update data from spreadsheet"
+            git push
+          fi
+
+      - if: github.ref == 'refs/heads/main'
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - if: github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: update-data
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
