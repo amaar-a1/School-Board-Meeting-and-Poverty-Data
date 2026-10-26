@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>School Board & Poverty Data</title>
+  <meta name="description" content="School board meeting and poverty data, with charts, a searchable table and sources.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <h1 id="site-title">School Board Meetings &amp; Poverty Data</h1>
+      <p class="lede">Explore the dataset: summary figures, an interactive chart, and the full table. Every figure is loaded straight from the project spreadsheet.</p>
+      <nav class="links">
+        <a href="#chart-section">Chart</a>
+        <a href="#table-section">Data table</a>
+        <a href="#sources">Sources</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div id="status" class="status">Loading data…</div>
+
+    <div id="tabs" class="tabs" role="tablist" hidden></div>
+
+    <section id="stats" class="stats" aria-label="Summary"></section>
+
+    <section id="chart-section" class="card" hidden>
+      <div class="card-head">
+        <h2>Chart</h2>
+        <div class="controls">
+          <label>Label <select id="x-col"></select></label>
+          <label>Value <select id="y-col"></select></label>
+          <label>Type
+            <select id="chart-type">
+              <option value="bar">Bar</option>
+              <option value="line">Line</option>
+              <option value="scatter">Scatter</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="chart-box"><canvas id="chart" aria-label="Chart of selected columns" role="img"></canvas></div>
+    </section>
+
+    <section id="table-section" class="card" hidden>
+      <div class="card-head">
+        <h2>Data table</h2>
+        <div class="controls">
+          <input id="search" type="search" placeholder="Search rows…" aria-label="Search rows">
+          <button id="download" type="button">Download CSV</button>
+        </div>
+      </div>
+      <p id="row-count" class="muted"></p>
+      <div class="table-scroll">
+        <table id="table"><thead></thead><tbody></tbody></table>
+      </div>
+    </section>
+
+    <section id="sources" class="card">
+      <h2>Sources</h2>
+      <p>All data sources used for this project are listed in the
+        <a id="sources-link" href="#" target="_blank" rel="noopener">sources document</a>.
+        The raw data lives in the
+        <a id="sheet-link" href="#" target="_blank" rel="noopener">project spreadsheet</a>.</p>
+      <ul id="sources-list"></ul>
+    </section>
+  </main>
+
+  <footer class="wrap muted">Data updates automatically when the spreadsheet changes.</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <script src="config.js"></script>
+  <script src="sources.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
