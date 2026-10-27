@@ -5,7 +5,7 @@
   let current = null;
   let sort = { col: null, dir: 1 };
   let chart = null;
-  let urbanChart = null;
+  const subsetCharts = {};
 
   document.title = cfg.title;
   $("site-title").textContent = cfg.title;
@@ -155,19 +155,32 @@
     return ["yes", "y", "true", "1", "x", "urban", "suburban"].includes(s) || /\b(city|suburb)\b/.test(s);
   }
 
+  // Urban only (no suburbs): "Urban", or an NCES "City" locale such as "City: Large".
+  function isCity(v) {
+    const s = String(v ?? "").trim().toLowerCase();
+    return s === "urban" || /\bcity\b/.test(s);
+  }
+
   function renderUrban() {
-    const col = urbanColumn(), el = $("urban");
+    renderSubset("urban", isUrban, "are urban or suburban");
+    renderSubset("city", isCity, "are urban, not counting suburban");
+  }
+
+  // Fills the section with id `id`: with/without comparison plus a scatter plot,
+  // for the rows whose urban column passes `test`.
+  function renderSubset(id, test, noteText) {
+    const col = urbanColumn(), el = $(id);
     el.hidden = !col || !canCompare();
-    $("urban-link").hidden = el.hidden;
+    $(`${id}-link`).hidden = el.hidden;
     if (el.hidden) return;
-    const rows = current.rows.filter((r) => isUrban(r[col]));
-    fillCompare($("urban-body"), rows);
-    $("urban-note").textContent = `${rows.length.toLocaleString()} of ${current.rows.length.toLocaleString()} ${(cfg.recordLabel || "records").toLowerCase()} are urban or suburban (“${col}” column).`;
+    const rows = current.rows.filter((r) => test(r[col]));
+    fillCompare($(`${id}-body`), rows);
+    $(`${id}-note`).textContent = `${rows.length.toLocaleString()} of ${current.rows.length.toLocaleString()} ${(cfg.recordLabel || "records").toLowerCase()} ${noteText} (“${col}” column).`;
     const x = cfg.compare.metric, y = cfg.compare.by;
     const nameCol = current.columns.find((c) => !current.numeric.has(c));
     const accent = cssVar("--accent"), text = cssVar("--muted"), grid = cssVar("--border");
-    if (urbanChart) urbanChart.destroy();
-    urbanChart = new Chart($("urban-chart"), {
+    if (subsetCharts[id]) subsetCharts[id].destroy();
+    subsetCharts[id] = new Chart($(`${id}-chart`), {
       type: "scatter",
       data: { datasets: [{ label: `${y} vs ${x}`,
         data: rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), name: nameCol ? r[nameCol] : "" }))
