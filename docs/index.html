@@ -14,6 +14,7 @@
       <p class="lede">Explore the dataset: summary figures, an interactive chart, and the full table. All figures come from the project’s data file.</p>
       <nav class="links">
         <a href="#chart-section">Chart</a>
+        <a href="#urban" id="urban-link" hidden>Urban districts</a>
         <a href="#table-section">Data table</a>
         <a href="#sources">Sources</a>
       </nav>
@@ -56,6 +57,13 @@
         </div>
       </div>
       <div class="chart-box"><canvas id="chart" aria-label="Chart of selected columns" role="img"></canvas></div>
+    </section>
+
+    <section id="urban" class="card" hidden>
+      <h2>Urban districts only</h2>
+      <p id="urban-note" class="muted"></p>
+      <div id="urban-body" class="stats compare"></div>
+      <div class="chart-box"><canvas id="urban-chart" aria-label="Scatter plot of urban districts: poverty rate vs. available board meetings" role="img"></canvas></div>
     </section>
 
     <section id="table-section" class="card" hidden>

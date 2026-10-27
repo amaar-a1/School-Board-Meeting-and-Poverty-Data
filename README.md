@@ -19,6 +19,7 @@ The site is a static page in `docs/` that reads its data from CSV files in `docs
 ### Requirements
 
 - The spreadsheet must be shared as **Anyone with the link → Viewer** so the workflow can download it.
+- The **Urban districts only** section appears when the spreadsheet has a column named `Urban` (or `Urban District`, `Locale`, `Urbanicity`, `Urban/Rural`). A district counts as urban if that cell says `Yes`, `True`, `1`, `X` or `Urban`, or is an NCES locale starting with "City" (for example `City: Large`). Any other value, or a blank cell, counts as not urban.
 - Only the first tab is exported. To change the spreadsheet, edit `SHEET_ID` in the workflow.
 - In the repo, go to **Settings → Pages** and set **Source** to **GitHub Actions** (if the first deploy didn't enable it automatically).
 

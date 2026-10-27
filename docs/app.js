@@ -5,6 +5,7 @@
   let current = null;
   let sort = { col: null, dir: 1 };
   let chart = null;
+  let urbanChart = null;
 
   document.title = cfg.title;
   $("site-title").textContent = cfg.title;
@@ -109,16 +110,24 @@
     renderCompare();
   }
 
-  // Splits rows into "value > 0" vs "value = 0" on cfg.compare.by and compares cfg.compare.metric.
+  const canCompare = () => cfg.compare && current.numeric.has(cfg.compare.by) && current.numeric.has(cfg.compare.metric);
+
   function renderCompare() {
-    const cmp = cfg.compare, el = $("compare");
-    el.hidden = true;
-    if (!cmp || !current.numeric.has(cmp.by) || !current.numeric.has(cmp.metric)) return;
+    const el = $("compare");
+    el.hidden = !canCompare();
+    if (el.hidden) return;
+    fillCompare($("compare-body"), current.rows);
+    $("compare-title").textContent = cfg.compare.title;
+    renderUrban();
+  }
+
+  // Splits rows into "value > 0" vs "value = 0" on cfg.compare.by and compares cfg.compare.metric.
+  function fillCompare(body, rows) {
+    const cmp = cfg.compare;
     const groups = [
-      { label: cmp.withLabel, rows: current.rows.filter((r) => toNumber(r[cmp.by]) > 0) },
-      { label: cmp.withoutLabel, rows: current.rows.filter((r) => toNumber(r[cmp.by]) === 0) }
+      { label: cmp.withLabel, rows: rows.filter((r) => toNumber(r[cmp.by]) > 0) },
+      { label: cmp.withoutLabel, rows: rows.filter((r) => toNumber(r[cmp.by]) === 0) }
     ];
-    const body = $("compare-body");
     body.innerHTML = "";
     groups.forEach((g) => {
       const vals = g.rows.map((r) => toNumber(r[cmp.metric])).filter((v) => !isNaN(v));
@@ -131,8 +140,53 @@
       d.querySelector(".sub").textContent = `average ${cmp.metric.toLowerCase()} · ${g.rows.length.toLocaleString()} ${(cfg.recordLabel || "records").toLowerCase()}`;
       body.appendChild(d);
     });
-    $("compare-title").textContent = cmp.title;
-    el.hidden = false;
+  }
+
+  // Urban-only section: shown when the data has a column named in cfg.urban.columns.
+  function urbanColumn() {
+    const names = ((cfg.urban && cfg.urban.columns) || []).map((n) => n.toLowerCase());
+    return current.columns.find((c) => names.includes(c.trim().toLowerCase()));
+  }
+
+  // "Yes"/"True"/"1"/"X"/"Urban", or an NCES locale such as "City: Large" or "11 - City: Large".
+  function isUrban(v) {
+    const s = String(v ?? "").trim().toLowerCase();
+    return ["yes", "y", "true", "1", "x", "urban"].includes(s) || /\bcity\b/.test(s);
+  }
+
+  function renderUrban() {
+    const col = urbanColumn(), el = $("urban");
+    el.hidden = !col || !canCompare();
+    $("urban-link").hidden = el.hidden;
+    if (el.hidden) return;
+    const rows = current.rows.filter((r) => isUrban(r[col]));
+    fillCompare($("urban-body"), rows);
+    $("urban-note").textContent = `${rows.length.toLocaleString()} of ${current.rows.length.toLocaleString()} ${(cfg.recordLabel || "records").toLowerCase()} are marked urban in the “${col}” column.`;
+    const x = cfg.compare.metric, y = cfg.compare.by;
+    const nameCol = current.columns.find((c) => !current.numeric.has(c));
+    const accent = cssVar("--accent"), text = cssVar("--muted"), grid = cssVar("--border");
+    if (urbanChart) urbanChart.destroy();
+    urbanChart = new Chart($("urban-chart"), {
+      type: "scatter",
+      data: { datasets: [{ label: `${y} vs ${x}`,
+        data: rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), name: nameCol ? r[nameCol] : "" }))
+          .filter((p) => !isNaN(p.x) && !isNaN(p.y)),
+        backgroundColor: accent + "99", pointRadius: 4, pointHoverRadius: 6 }] },
+      options: {
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: {
+            title: (items) => items[0].raw.name,
+            label: (item) => [`${x}: ${fmtCol(x, item.raw.x)}`, `${y}: ${fmtCol(y, item.raw.y)}`]
+          } }
+        },
+        scales: {
+          x: { type: "linear", title: { display: true, text: x, color: text }, ticks: { color: text }, grid: { color: grid } },
+          y: { title: { display: true, text: y, color: text }, ticks: { color: text }, grid: { color: grid }, beginAtZero: true }
+        }
+      }
+    });
   }
 
   function setupChartControls() {
@@ -299,7 +353,11 @@
   $("search").addEventListener("input", renderTable);
   $("download").addEventListener("click", download);
   ["x-col", "y-col", "chart-type", "chart-limit"].forEach((id) => $(id).addEventListener("change", renderChart));
-  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => current && renderChart());
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+    if (!current) return;
+    renderChart();
+    renderUrban();
+  });
 
   load();
 })();
