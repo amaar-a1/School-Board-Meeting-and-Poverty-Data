@@ -19,6 +19,8 @@ The site is a static page in `docs/` that reads its data from CSV files in `docs
 ### Requirements
 
 - The spreadsheet must be shared as **Anyone with the link → Viewer** so the workflow can download it.
+- The **Urban & suburban districts only** section appears when the spreadsheet has a column named `Locale` (or `Urban`, `Urban District`, `Urbanicity`, `Urban/Rural`). A district is included if that cell says `Urban` or `Suburban` (also `Yes`, `True`, `1`, `X`, or an NCES "City"/"Suburb" locale). `Town`, `Rural` or a blank cell are left out.
+- [`data-prep/district_locales.csv`](data-prep/district_locales.csv) lists each district's locale with the NCES record it was matched to (NCES Common Core of Data 2023, via the Urban Institute Education Data API). NCES locale codes 11–13 are City (Urban), 21–23 Suburb (Suburban), 31–33 Town, 41–43 Rural.
 - Only the first tab is exported. To change the spreadsheet, edit `SHEET_ID` in the workflow.
 - In the repo, go to **Settings → Pages** and set **Source** to **GitHub Actions** (if the first deploy didn't enable it automatically).
 

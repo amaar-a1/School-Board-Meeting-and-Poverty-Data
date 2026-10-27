@@ -21,5 +21,11 @@ window.SITE_CONFIG = {
     withLabel: "With 1+ available meetings",
     withoutLabel: "With no available meetings"
   },
+  // "Urban & suburban districts only" section. It appears when the data has one
+  // of these columns. A district counts if the cell says Urban/Suburban/Yes/
+  // True/1/X, or is an NCES "City" or "Suburb" locale (e.g. "Suburb: Large").
+  urban: {
+    columns: ["Urban", "Urban District", "Locale", "Urbanicity", "Urban/Rural"]
+  },
   sourcesUrl: "https://docs.google.com/document/d/1U5bDB31MpETIwG8Q8xZ7MZdH9oNooY_W6TnpSkNdBFk/edit?usp=drivesdk"
 };
