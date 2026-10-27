@@ -1,4 +1,4 @@
-# School Board Meetings & Poverty Data
+# School Board Meetings & Poverty Data Prototype App
 
 A website that shows the project's school board meeting and poverty data with summary stats, an interactive chart, and a searchable, sortable table you can download.
 
