@@ -148,10 +148,11 @@
     return current.columns.find((c) => names.includes(c.trim().toLowerCase()));
   }
 
-  // "Yes"/"True"/"1"/"X"/"Urban", or an NCES locale such as "City: Large" or "11 - City: Large".
+  // Urban and suburban both count: "Urban"/"Suburban", "Yes"/"True"/"1"/"X",
+  // or an NCES locale such as "City: Large" or "21 - Suburb: Large".
   function isUrban(v) {
     const s = String(v ?? "").trim().toLowerCase();
-    return ["yes", "y", "true", "1", "x", "urban"].includes(s) || /\bcity\b/.test(s);
+    return ["yes", "y", "true", "1", "x", "urban", "suburban"].includes(s) || /\b(city|suburb)\b/.test(s);
   }
 
   function renderUrban() {
@@ -161,7 +162,7 @@
     if (el.hidden) return;
     const rows = current.rows.filter((r) => isUrban(r[col]));
     fillCompare($("urban-body"), rows);
-    $("urban-note").textContent = `${rows.length.toLocaleString()} of ${current.rows.length.toLocaleString()} ${(cfg.recordLabel || "records").toLowerCase()} are marked urban in the “${col}” column.`;
+    $("urban-note").textContent = `${rows.length.toLocaleString()} of ${current.rows.length.toLocaleString()} ${(cfg.recordLabel || "records").toLowerCase()} are urban or suburban (“${col}” column).`;
     const x = cfg.compare.metric, y = cfg.compare.by;
     const nameCol = current.columns.find((c) => !current.numeric.has(c));
     const accent = cssVar("--accent"), text = cssVar("--muted"), grid = cssVar("--border");
