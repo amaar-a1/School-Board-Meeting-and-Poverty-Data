@@ -8,6 +8,7 @@
   --accent-soft: #e8f0fc;
   --hero: #16324f;
   --hero-text: #f2f5f9;
+  --accent-2: #d9762b;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -20,6 +21,7 @@
     --accent-soft: #1f2d42;
     --hero: #0f2235;
     --hero-text: #e6edf5;
+    --accent-2: #f0a35e;
   }
 }
 * { box-sizing: border-box; }
@@ -80,6 +82,11 @@ tbody tr:hover { background: var(--accent-soft); }
 #sources-list h3 { font-size: 1rem; margin: 18px 0 6px; }
 #sources-list ul { margin: 0; padding-left: 20px; }
 #sources-list li { margin-bottom: 4px; }
+.view-tabs { margin-bottom: 20px; }
+#size-table td:first-child, #size-table th:first-child { font-weight: 600; }
+#size-table tr.total td { border-top: 2px solid var(--border); font-weight: 600; }
+#size-table th { cursor: default; white-space: normal; vertical-align: bottom; }
+#size-table td { white-space: nowrap; }
 .note { color: var(--muted); font-size: .9rem; margin: 8px 0 0; }
 footer { padding: 8px 16px 40px; font-size: .85rem; }
 @media (max-width: 600px) { .chart-box { height: 300px; } }

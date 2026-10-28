@@ -16,6 +16,18 @@ window.SOURCES = [
     ]
   },
   {
+    group: "Enrollment and urban/suburban/rural type",
+    items: [
+      { title: "NCES Common Core of Data 2023 school district directory (enrollment and locale codes), via the Urban Institute Education Data API", url: "https://educationdata.urban.org/documentation/school-districts.html" }
+    ]
+  },
+  {
+    group: "Law",
+    items: [
+      { title: "FindLaw.com - Texas Government Code - GOV'T § 551.128. Internet Broadcast of Open Meeting - last updated January 01, 2026", url: "https://codes.findlaw.com/tx/government-code/gov-t-sect-551-128/" }
+    ]
+  },
+  {
     group: "County and ID checks (used for repeated district names)",
     items: [
       { title: "Highland Park ISD on Wikipedia" },

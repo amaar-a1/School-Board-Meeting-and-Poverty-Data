@@ -6,6 +6,8 @@
   let sort = { col: null, dir: 1 };
   let chart = null;
   const subsetCharts = {};
+  const sizeCharts = {};
+  let view = "overview";
 
   document.title = cfg.title;
   $("site-title").textContent = cfg.title;
@@ -77,6 +79,139 @@
     setupChartControls();
     renderTable();
     $("table-section").hidden = false;
+    if (view === "size") renderSize();
+  }
+
+  // Switches between the "Overview" and "By district size" views.
+  function setView(name) {
+    view = name;
+    document.querySelectorAll("[data-view]").forEach((el) => { el.hidden = el.dataset.view !== name; });
+    document.querySelectorAll("[data-view-tab]").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.viewTab === name)));
+    if (name === "size" && current) renderSize();
+  }
+
+  const avg = (vals) => (vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : NaN);
+  const pct = (n) => (isNaN(n) ? "–" : `${n.toFixed(1)}%`);
+
+  // Stats for one group of rows, used by the "By district size" tab.
+  function sizeStats(rows, enrollCol) {
+    const cmp = cfg.compare;
+    const meetings = (r) => toNumber(r[cmp.by]);
+    const poverty = (r) => toNumber(r[cmp.metric]);
+    const withM = rows.filter((r) => meetings(r) > 0), withoutM = rows.filter((r) => meetings(r) === 0);
+    const totalMeetings = rows.reduce((a, r) => a + (meetings(r) || 0), 0);
+    const totalEnroll = rows.reduce((a, r) => a + (toNumber(r[enrollCol]) || 0), 0);
+    const avgMeetings = rows.length ? totalMeetings / rows.length : NaN;
+    const avgPoverty = avg(rows.map(poverty).filter((v) => !isNaN(v)));
+    return {
+      n: rows.length, nWith: withM.length, nWithout: withoutM.length,
+      shareWith: rows.length ? (100 * withM.length) / rows.length : NaN,
+      avgMeetings,
+      povWith: avg(withM.map(poverty).filter((v) => !isNaN(v))),
+      povWithout: avg(withoutM.map(poverty).filter((v) => !isNaN(v))),
+      per10k: totalEnroll ? (totalMeetings / totalEnroll) * 10000 : NaN,
+      perPovPoint: avgPoverty ? avgMeetings / avgPoverty : NaN
+    };
+  }
+
+  function statCard(parent, label, value, sub) {
+    const d = document.createElement("div");
+    d.className = "stat";
+    d.innerHTML = '<div class="label"></div><div class="value"></div><div class="sub"></div>';
+    d.querySelector(".label").textContent = label;
+    d.querySelector(".value").textContent = value;
+    d.querySelector(".sub").textContent = sub || "";
+    parent.appendChild(d);
+  }
+
+  function renderSize() {
+    const st = cfg.sizeTiers;
+    const enrollCol = st && current.columns.find((c) => c.trim().toLowerCase() === st.column.toLowerCase());
+    const ok = enrollCol && canCompare();
+    $("size-missing").hidden = ok;
+    $("size-content").hidden = !ok;
+    if (!ok) return;
+    const enroll = (r) => toNumber(r[enrollCol]);
+    const rows = current.rows.filter((r) => !isNaN(enroll(r)));
+    const range = (t) => (t.max == null ? `${t.min.toLocaleString()}+` : `${t.min.toLocaleString()}–${t.max.toLocaleString()}`);
+    const tiers = st.tiers.map((t) => ({ ...t,
+      s: sizeStats(rows.filter((r) => enroll(r) >= t.min && (t.max == null || enroll(r) <= t.max)), enrollCol) }));
+    const all = sizeStats(rows, enrollCol);
+    const label = (cfg.recordLabel || "records").toLowerCase();
+
+    // The 10,000-student rule
+    $("law-link").href = st.lawUrl;
+    const covered = sizeStats(rows.filter((r) => enroll(r) >= st.lawThreshold), enrollCol);
+    const lawBody = $("law-body");
+    lawBody.innerHTML = "";
+    statCard(lawBody, `Districts with ${st.lawThreshold.toLocaleString()}+ students`, covered.n.toLocaleString(), "required to put meetings online");
+    statCard(lawBody, "Of those, with available meetings", pct(covered.shareWith), `${covered.nWith.toLocaleString()} of ${covered.n.toLocaleString()} ${label}`);
+    statCard(lawBody, "Of those, with none found", pct(100 - covered.shareWith), `${covered.nWithout.toLocaleString()} ${label}`);
+
+    // Overall
+    const overall = $("size-overall");
+    overall.innerHTML = "";
+    statCard(overall, "Districts with available meetings", pct(all.shareWith), `${all.nWith.toLocaleString()} of ${all.n.toLocaleString()} ${label}`);
+    statCard(overall, "Average available meetings", all.avgMeetings.toFixed(2), "per district");
+    statCard(overall, "Meetings per 10,000 students", all.per10k.toFixed(2), "meeting-to-population ratio");
+    statCard(overall, "Meetings per poverty point", all.perPovPoint.toFixed(3), "meeting-to-poverty-rate ratio");
+
+    // Table
+    const cols = ["Tier", "Enrollment", "Districts", "With meetings", "Avg meetings",
+      "Poverty: with meetings", "Poverty: without", "Meetings per 10,000 students", "Meetings per poverty point"];
+    const cells = (name, rng, s) => [name, rng, s.n.toLocaleString(), `${pct(s.shareWith)} (${s.nWith})`, s.avgMeetings.toFixed(2),
+      s.nWith ? `${pct(s.povWith)} (${s.nWith})` : "–", s.nWithout ? `${pct(s.povWithout)} (${s.nWithout})` : "–",
+      s.per10k.toFixed(2), s.perPovPoint.toFixed(3)];
+    const table = $("size-table");
+    table.tHead.innerHTML = "";
+    const hr = table.tHead.insertRow();
+    cols.forEach((c, i) => { const th = document.createElement("th"); th.textContent = c; if (i > 1) th.className = "num"; hr.appendChild(th); });
+    const body = table.tBodies[0];
+    body.innerHTML = "";
+    [...tiers.map((t) => cells(t.name, range(t), t.s)), cells("All districts", "", all)].forEach((vals, i) => {
+      const tr = body.insertRow();
+      if (i === tiers.length) tr.className = "total";
+      vals.forEach((v, j) => { const td = tr.insertCell(); td.textContent = v; if (j > 1) td.className = "num"; });
+    });
+
+    // Charts
+    const accent = cssVar("--accent"), accent2 = cssVar("--accent-2"), text = cssVar("--muted"), grid = cssVar("--border");
+    const labels = tiers.map((t) => `${t.name} (${range(t)})`);
+    const axes = (yTitle, extra) => ({
+      x: { ticks: { color: text }, grid: { display: false }, ...(extra || {}) },
+      y: { beginAtZero: true, title: { display: true, text: yTitle, color: text }, ticks: { color: text }, grid: { color: grid }, ...(extra || {}) }
+    });
+    const legend = { labels: { color: text } };
+    const draw = (id, config) => { if (sizeCharts[id]) sizeCharts[id].destroy(); sizeCharts[id] = new Chart($(id), config); };
+
+    draw("size-poverty-chart", {
+      type: "bar",
+      data: { labels, datasets: [
+        { label: "With available meetings", data: tiers.map((t) => (t.s.nWith ? t.s.povWith : null)), counts: tiers.map((t) => t.s.nWith), backgroundColor: accent, borderRadius: 3 },
+        { label: "Without", data: tiers.map((t) => (t.s.nWithout ? t.s.povWithout : null)), counts: tiers.map((t) => t.s.nWithout), backgroundColor: accent2, borderRadius: 3 }
+      ] },
+      options: { maintainAspectRatio: false, scales: axes("Average child poverty rate (%)"),
+        plugins: { legend, tooltip: { callbacks: { label: (i) => `${i.dataset.label}: ${pct(i.raw)} (${i.dataset.counts[i.dataIndex]} ${label})` } } } }
+    });
+
+    draw("size-share-chart", {
+      type: "bar",
+      data: { labels, datasets: [
+        { label: "With available meetings", data: tiers.map((t) => t.s.shareWith), counts: tiers.map((t) => t.s.nWith), backgroundColor: accent },
+        { label: "Without", data: tiers.map((t) => 100 - t.s.shareWith), counts: tiers.map((t) => t.s.nWithout), backgroundColor: accent2 }
+      ] },
+      options: { maintainAspectRatio: false,
+        scales: { x: { stacked: true, ticks: { color: text }, grid: { display: false } },
+                  y: { stacked: true, max: 100, title: { display: true, text: "Share of districts (%)", color: text }, ticks: { color: text }, grid: { color: grid } } },
+        plugins: { legend, tooltip: { callbacks: { label: (i) => `${i.dataset.label}: ${pct(i.raw)} (${i.dataset.counts[i.dataIndex]} ${label})` } } } }
+    });
+
+    draw("size-meetings-chart", {
+      type: "bar",
+      data: { labels, datasets: [{ label: "Average available meetings", data: tiers.map((t) => t.s.avgMeetings), counts: tiers.map((t) => t.s.n), backgroundColor: accent, borderRadius: 3 }] },
+      options: { maintainAspectRatio: false, scales: axes("Average available meetings"),
+        plugins: { legend: { display: false }, tooltip: { callbacks: { label: (i) => `${i.raw.toFixed(2)} meetings on average (${i.dataset.counts[i.dataIndex]} ${label})` } } } }
+    });
   }
 
   const fmt = (n) => (Math.abs(n) >= 1000 ? n.toLocaleString(undefined, { maximumFractionDigits: 0 })
@@ -367,10 +502,21 @@
   $("search").addEventListener("input", renderTable);
   $("download").addEventListener("click", download);
   ["x-col", "y-col", "chart-type", "chart-limit"].forEach((id) => $(id).addEventListener("change", renderChart));
+  document.querySelectorAll("[data-view-tab]").forEach((b) => b.addEventListener("click", () => {
+    setView(b.dataset.viewTab);
+    history.replaceState(null, "", b.dataset.viewTab === "size" ? "#size" : location.pathname + location.search);
+  }));
+  // Header links: "By district size" opens that view; the others jump to a section of the overview.
+  document.querySelectorAll(".links a").forEach((a) => a.addEventListener("click", () => {
+    setView(a.dataset.viewLink || "overview");
+  }));
+  if (location.hash === "#size") setView("size");
+  window.addEventListener("hashchange", () => { if (location.hash === "#size") setView("size"); });
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
     if (!current) return;
     renderChart();
     renderUrban();
+    if (view === "size") renderSize();
   });
 
   load();

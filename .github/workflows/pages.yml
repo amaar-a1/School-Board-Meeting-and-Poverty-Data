@@ -36,6 +36,28 @@ jobs:
           fi
           mv /tmp/data.csv docs/data/data.csv
 
+      - name: Add NCES enrollment if the sheet has no Enrollment column
+        run: |
+          python3 - <<'PY'
+          import csv
+          path = "docs/data/data.csv"
+          rows = list(csv.reader(open(path, newline="", encoding="utf-8")))
+          header = [h.strip().lower() for h in rows[0]]
+          if "enrollment" in header:
+              print("Sheet already has an Enrollment column")
+          else:
+              nces = {r["District"]: r["NCES enrollment 2023"]
+                      for r in csv.DictReader(open("data-prep/district_locales.csv", newline="", encoding="utf-8"))}
+              rows[0].append("Enrollment")
+              missing = 0
+              for r in rows[1:]:
+                  value = nces.get(r[0].strip(), "")
+                  missing += value == ""
+                  r.append(value)
+              csv.writer(open(path, "w", newline="", encoding="utf-8")).writerows(rows)
+              print(f"Added NCES enrollment; {missing} districts not found")
+          PY
+
       - name: Commit updated CSV
         run: |
           git add docs/data/data.csv
