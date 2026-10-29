@@ -5,9 +5,12 @@ window.SITE_CONFIG = {
   // CSV files to show. Each one gets its own tab on the page when there is more than one.
   dataFiles: [
     { name: "Texas", file: "data/data.csv",
-      note: "1,017 Texas school districts, from the project spreadsheet." },
-    { name: "United States", file: "data/national.csv", textColumns: ["NCES LEAID"], law: "comparison",
-      note: "All 13,132 US school districts in the Census SAIPE 2024 file, Texas included. Meeting counts are from CivicSearch's district list (October 29, 2026), which covers 1,206 of these districts; the rest show 0. Built by data-prep/build_national.py." }
+      note: "1,017 Texas school districts, from the project spreadsheet.",
+      footer: "Poverty figures are for children ages 5–17. Data is refreshed from the project spreadsheet daily." },
+    // law: "none" hides the 10,000-student rule card on the "By district size" tab.
+    { name: "United States", file: "data/national.csv", textColumns: ["NCES LEAID"], law: "none",
+      note: "All 13,132 US school districts in the Census SAIPE 2024 file. Meeting counts are from CivicSearch's district list (October 29, 2026), which covers 1,206 of these districts; the rest show 0.",
+      footer: "Poverty figures are for children ages 5–17. This data is a snapshot from October 29, 2026." }
   ],
   recordLabel: "Districts",
   // Chart shown when the page opens (the viewer can change it).

@@ -13,7 +13,6 @@
   document.title = cfg.title;
   $("site-title").textContent = cfg.title;
   $("sources-link").href = cfg.sourcesUrl;
-  renderSources();
 
   async function fetchCsv(url) {
     const res = await fetch(url);
@@ -78,6 +77,8 @@
     sort = { col: null, dir: 1 };
     [...$("tabs").querySelectorAll("button")].forEach((b, j) => b.setAttribute("aria-selected", String(i === j)));
     $("dataset-note").textContent = current.note || "";
+    $("footer").textContent = current.footer || "";
+    renderSources();
     $("search").value = "";
     renderStats();
     setupChartControls();
@@ -147,14 +148,12 @@
       (left ? ` ${left.toLocaleString()} ${label} without an NCES enrollment figure are left out of this tab.` : "");
 
     // The 10,000-student rule
-    const isLaw = current.law !== "comparison";
-    $("law-title").textContent = isLaw ? `The ${st.lawThreshold.toLocaleString()}-student rule` : `Districts with ${st.lawThreshold.toLocaleString()}+ students`;
-    $("law-national").hidden = isLaw;
+    $("size-law").hidden = current.law === "none";
     $("law-link").href = st.lawUrl;
     const covered = sizeStats(rows.filter((r) => enroll(r) >= st.lawThreshold), enrollCol);
     const lawBody = $("law-body");
     lawBody.innerHTML = "";
-    statCard(lawBody, `Districts with ${st.lawThreshold.toLocaleString()}+ students`, covered.n.toLocaleString(), isLaw ? "required to put meetings online" : "the size Texas requires to put meetings online");
+    statCard(lawBody, `Districts with ${st.lawThreshold.toLocaleString()}+ students`, covered.n.toLocaleString(), "required to put meetings online");
     statCard(lawBody, "Of those, with available meetings", pct(covered.shareWith), `${covered.nWith.toLocaleString()} of ${covered.n.toLocaleString()} ${label}`);
     statCard(lawBody, "Of those, with none found", pct(100 - covered.shareWith), `${covered.nWithout.toLocaleString()} ${label}`);
 
@@ -491,13 +490,18 @@
     URL.revokeObjectURL(a.href);
   }
 
+  // Sources for the selected dataset: entries marked `only` show just for that dataset.
   function renderSources() {
     const box = $("sources-list");
-    (window.SOURCES || []).forEach((g) => {
+    box.innerHTML = "";
+    const shown = (x) => !x.only || x.only === current.name;
+    (window.SOURCES || []).filter(shown).forEach((g) => {
+      const items = g.items.filter(shown);
+      if (!items.length) return;
       const h = document.createElement("h3");
       h.textContent = g.group;
       const ul = document.createElement("ul");
-      g.items.forEach((s) => {
+      items.forEach((s) => {
         const li = document.createElement("li");
         if (s.url) {
           const a = document.createElement("a");
