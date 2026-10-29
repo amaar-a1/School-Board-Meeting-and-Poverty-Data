@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Google Search Console ownership proof for the https://www.uslege.ai/ property (GTM-792). Never remove: the property drops back to unverified without it. -->
+<meta name="google-site-verification" content="yvWWWlm5KRLO5b5BWidKbN0wA7niIUU7gYEykQRhbHk">
+<script id="gtm-loader-script">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P53P8FNJ');</script>
+<!-- Google tag (gtag.js). This is the ONLY thing loading GA4 — verified 2026-08-10
+     against the live site: GTM-P53P8FNJ initializes but fires no gtag/js request and
+     leaves window.gtag undefined, so there is no GA4 tag in the container. GTM-586
+     assumed the opposite and deleted this block; GA4 went dark until it was restored.
+     Do not remove without first confirming in the browser that the container actually
+     loads gtag/js?id=G-BX5Q943EW4. Both scripts must keep their ids — worker.js strips
+     them by id for EEA/UK/CH visitors. -->
+<script id="ga4-loader-script" async src="https://www.googletagmanager.com/gtag/js?id=G-BX5Q943EW4"></script>
+<script id="ga4-config-script">
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-BX5Q943EW4');
+</script>
+<!-- PostHog (GTM-630): session replay + autocapture + funnels for the marketing site, project
+     "USLege" (public project key, same project the app reports to). All form inputs are masked in
+     replays; when a visitor submits any form, posthog.identify() ties their anonymous history to the
+     email they typed, and a lead_form_submitted event fires alongside GA4's
+     generate_lead. Keep the id — worker.js strips this script for EEA/UK/CH visitors. -->
+<script id="posthog-script">
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_1JGvlcH337fl2yMTAcwwRC2TB8GDck7Mb2PEEAXbRlh',{api_host:'https://us.i.posthog.com',person_profiles:'identified_only',capture_pageview:true,capture_pageleave:true,autocapture:true,session_recording:{maskAllInputs:true,maskTextSelector:'[data-ph-mask]'}});
+document.addEventListener('submit',function(e){try{var f=e.target;if(!f||f.nodeName!=='FORM'||!window.posthog)return;var em=f.querySelector('input[type="email"],input[name*="mail" i]');var v=em&&em.value?em.value.trim().toLowerCase():'';var ftEl=f.querySelector('input[name="formType"]');var ft=(ftEl&&ftEl.value)||f.id||f.getAttribute('name')||f.getAttribute('action')||'unknown';if(v&&v.indexOf('@')>0){posthog.identify(v,{email:v});}posthog.capture('lead_form_submitted',{form_type:ft,page:location.pathname});}catch(_){}},true);
+</script>
+<!-- Lead source attribution (GTM-1855): first/last touch for every form and demo booking.
+     Keep the id: worker.js strips it for EEA/UK/CH visitors with the other trackers. -->
+<script id="attribution-script" src="/assets/js/attribution.js?v=1"></script>
+
+<!-- Apollo website visitor tracking (GTM-428). Snippet issued by Apollo for tracker 67db1c813242f4001d8286ce; must load in head on every page, exactly once. -->
+<script id="apollo-tracker-script">function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,o.onload=function(){window.trackingFunctions.onLoad({appId:"67db1c813242f4001d8286ce"})},document.head.appendChild(o)}initApollo();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png?v=3">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/favicon-192.png?v=3">
+<link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png?v=3">
+
+<title>Carrollton-Farmers Branch ISD: Meetings & Video | USLege</title>
+<meta name="description" content="Every Carrollton-Farmers Branch ISD board meeting: searchable video, automatic minutes, and instant alerts.">
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="USLege.ai">
+<meta property="og:title" content="Carrollton-Farmers Branch ISD: Meetings & Video | USLege">
+<meta property="og:description" content="Every Carrollton-Farmers Branch ISD board meeting: searchable video, automatic minutes, and instant alerts.">
+<meta property="og:url" content="https://www.uslege.ai/tracking/carrollton-farmers-branch-independent-school-district">
+<meta property="og:image" content="https://www.uslege.ai/assets/og/tracking/carrollton-farmers-branch-independent-school-district.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@USLege_ai">
+<meta name="twitter:title" content="Carrollton-Farmers Branch ISD: Meetings & Video | USLege">
+<meta name="twitter:description" content="Every Carrollton-Farmers Branch ISD board meeting: searchable video, automatic minutes, and instant alerts.">
+<meta name="twitter:image" content="https://www.uslege.ai/assets/og/tracking/carrollton-farmers-branch-independent-school-district.jpg">
+
+
+<link rel="canonical" href="https://www.uslege.ai/tracking/carrollton-farmers-branch-independent-school-district">
+
+
+
+<link rel="alternate" type="text/markdown" href="https://www.uslege.ai/tracking/carrollton-farmers-branch-independent-school-district.md" title="Machine-readable version">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What happens if I miss a Carrollton-Farmers Branch Independent School District board meeting?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Carrollton-Farmers Branch Independent School District board meeting recordings are transcribed and indexed automatically, so you can catch up without watching hours of footage." } },
+    { "@type": "Question", "name": "How fast do I find out something happened at Carrollton-Farmers Branch Independent School District?",
+      "acceptedAnswer": { "@type": "Answer", "text": "As it happens. Radar alerts you the moment your issue is mentioned in a Carrollton-Farmers Branch Independent School District board meeting, live." } },
+    { "@type": "Question", "name": "Is there a transcript, or just video?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Both. Every Carrollton-Farmers Branch Independent School District board meeting gets a full, searchable transcript alongside the video, with speakers identified." } },
+    { "@type": "Question", "name": "Can I get Carrollton-Farmers Branch Independent School District coverage alongside Texas state government?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. USLege's Texas coverage extends well beyond Carrollton-Farmers Branch Independent School District." } },
+    { "@type": "Question", "name": "What if my body isn't covered yet?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Tell us once you're a customer. Coverage expands based on real requests, and additions move fast." } }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentOrganization",
+  "name": "Carrollton-Farmers Branch Independent School District",
+  "url": "https://www.uslege.ai/tracking/carrollton-farmers-branch-independent-school-district",
+  "areaServed": { "@type": "State", "name": "Texas" }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --ink:#1F2937;--ink-2:#1F2937;--ink-3:#1F2937;--paper:#FFFFFF;
+  --teal:#017F77;--teal-bright:#19D9C9;--teal-dark:#01665F;--teal-tint:#E6F5F4;--teal-mist:#F2FAF9;
+  --gray-50:#F8FAFB;--gray-100:#EEF2F4;--gray-200:#D8DEE2;
+  --display:'Fraunces',Georgia,serif;--body:'Poppins','Helvetica Neue',Arial,sans-serif;--mono:'JetBrains Mono',Menlo,monospace;
+  --shadow-card:0 2px 8px rgba(31,41,55,0.04);
+  --shadow-card-hover:0 24px 48px -12px rgba(1,127,119,0.18), 0 8px 16px -4px rgba(31,41,55,0.06);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+.container{max-width:1240px;margin:0 auto;padding:0 32px}
+h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:-0.02em;line-height:1.05;color:var(--ink)}
+h1{font-size:clamp(36px,4.8vw,62px)}
+h2{font-size:clamp(30px,4vw,50px)}
+a{color:inherit;text-decoration:none}
+em{font-style:italic;color:var(--teal-dark);font-family:var(--display)}
+.eyebrow{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--teal-dark)}
+.reveal{opacity:1;transform:none}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:80ms}.reveal.d2{transition-delay:160ms}.reveal.d3{transition-delay:240ms}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;font-family:var(--body);font-size:14px;font-weight:600;border-radius:8px;border:none;cursor:pointer;transition:all 200ms ease}
+.btn-large{padding:19px 36px;font-size:15px}
+.btn-primary{background:var(--teal);color:#fff;box-shadow:0 8px 24px -8px rgba(1,127,119,0.5)}
+.btn-primary:hover{background:var(--teal-dark);transform:translateY(-2px)}
+.btn-primary-dark{background:var(--teal);color:#fff;box-shadow:0 8px 30px -6px rgba(1,127,119,0.7)}
+.btn-primary-dark:hover{background:var(--teal-bright);color:var(--ink-3);transform:translateY(-2px)}
+.btn-ghost-dark{background:rgba(255,255,255,0.06);color:#fff;border:1px solid rgba(255,255,255,0.22);backdrop-filter:blur(8px)}
+.btn-ghost-dark:hover{border-color:var(--teal-bright);color:var(--teal-bright)}
+
+.hero{background:var(--ink-3);text-align:center;padding:110px 0 88px}
+.hero .eyebrow{color:var(--teal-bright)}
+.hero h1{color:var(--paper);max-width:24ch;margin:18px auto 20px}
+.hero h1 em{color:var(--teal-bright)}
+.hero-sub{color:#B9C4C2;font-size:clamp(17px,1.5vw,20px);max-width:62ch;margin:0 auto}
+.hero-cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+
+.get{padding:100px 0;background:linear-gradient(180deg,var(--paper) 0%,var(--teal-mist) 100%)}
+.get .head{text-align:center;max-width:740px;margin:0 auto 48px}
+.get .head h2{margin:16px 0 10px}
+.get .head p{opacity:0.85;font-size:17px}
+.get-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;max-width:1080px;margin:0 auto}
+.gcard{background:var(--paper);border:1px solid var(--gray-100);border-radius:18px;padding:32px 30px;box-shadow:var(--shadow-card);transition:transform 220ms,box-shadow 220ms}
+.gcard:hover{transform:translateY(-4px);box-shadow:var(--shadow-card-hover)}
+.gcard .k{font-family:var(--mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal-dark);font-weight:600;margin-bottom:10px}
+.gcard h3{font-size:22px;margin-bottom:10px}
+.gcard p{font-size:15px;line-height:1.65;opacity:0.88}
+@media(max-width:820px){.get-grid{grid-template-columns:1fr}}
+
+.also{padding:88px 0;background:var(--paper);text-align:center}
+.also h2{margin:16px 0 12px}
+.also .sub{opacity:0.85;max-width:60ch;margin:0 auto 30px;font-size:16.5px}
+.chip-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:860px;margin:0 auto}
+.chip-row span{font-family:var(--mono);font-size:12px;letter-spacing:0.05em;text-transform:uppercase;color:var(--teal-dark);background:var(--teal-tint);border:1px solid rgba(1,127,119,0.22);border-radius:999px;padding:10px 18px;font-weight:600}
+
+.ask{padding:0 0 100px;background:var(--paper)}
+.ask-card{max-width:860px;margin:0 auto;background:var(--teal-mist);border:1px solid var(--teal-tint);border-radius:18px;padding:40px 36px;text-align:center}
+.ask-card h2{font-size:clamp(24px,3vw,34px);margin-bottom:12px}
+.ask-card p{font-size:16px;opacity:0.9;max-width:56ch;margin:0 auto 22px}
+
+.faq-sec{padding:96px 0;background:var(--teal-mist)}
+.faq-sec .head{text-align:center;margin-bottom:40px}
+.faq-sec h2{margin:16px 0 0}
+.faq-list{max-width:860px;margin:0 auto}
+.faq{border-bottom:1px solid rgba(1,127,119,0.14)}
+.faq summary{list-style:none;cursor:pointer;padding:24px 4px;display:flex;justify-content:space-between;align-items:center;gap:20px;font-weight:600;font-size:17.5px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--mono);font-size:24px;color:var(--teal);transition:transform 300ms;flex-shrink:0}
+.faq[open] summary::after{transform:rotate(45deg)}
+.faq .a{padding:0 4px 24px;font-size:15.5px;line-height:1.7;opacity:0.88;max-width:72ch}
+
+.pre-footer{background:linear-gradient(180deg,var(--ink),var(--ink-2));text-align:center;padding:120px 0;color:#fff}
+.pre-footer .eyebrow{color:var(--teal-bright)}
+.pre-footer h2{color:#fff;margin:16px 0 14px}.pre-footer h2 em{color:var(--teal-tint)}
+.pre-footer .sub{color:#B9C4C2;max-width:54ch;margin:0 auto 30px}
+.cta-stack{display:flex;flex-direction:column;align-items:center;gap:16px}
+.pre-footer .secondary{font-family:var(--mono);font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal-bright)}
+
+
+/* All dropdown menus share one format (Laura, 2026-09-11): a grid of plain-text
+   link columns, each headed by a .mega-h label, no pills/cards/CTAs. Single-column
+   dropdowns (Company, Pricing, Awards) just omit the grid-template-columns rule. */
+.nav-dropdown-menu.mega{display:grid;gap:2px 16px;align-items:start;max-height:calc(100vh - 100px);overflow-y:auto;padding:12px 14px}
+.mega-platform{grid-template-columns:repeat(3,minmax(0,1fr))}
+.mega-solutions{grid-template-columns:repeat(6,minmax(0,1fr))}
+.mega-coverage{grid-template-columns:repeat(3,minmax(0,1fr))}
+.mega-compare{grid-template-columns:repeat(auto-fill,minmax(186px,1fr))}
+.mega-compare .mega-h{grid-column:1/-1}
+.mega-resources{grid-template-columns:repeat(4,minmax(0,1fr))}
+.mega-col{display:flex;flex-direction:column;gap:2px;min-width:0}
+/* The State column runs all 52 states; it scrolls in place so it doesn't force
+   the shorter Nationwide/Browse-by-Type columns beside it to stretch to match. */
+.mega-col-states{max-height:260px;overflow-y:auto;padding-right:4px}
+.nav-dropdown-menu.mega a{white-space:normal;line-height:1.25;font-size:12.5px;padding:3px 10px}
+.mega-h{font-family:var(--mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.4);padding:6px 14px 4px}
+.nav.light .mega-h{color:rgba(31,41,55,0.45)}
+.mega-soon{display:block;padding:4px 10px;font-size:12px;color:rgba(255,255,255,0.35);cursor:default}
+.nav.light .mega-soon{color:rgba(31,41,55,0.35)}
+@media(max-width:1100px){.mega-platform{grid-template-columns:repeat(2,minmax(0,1fr))}.mega-solutions{grid-template-columns:repeat(3,minmax(0,1fr))}.mega-coverage{grid-template-columns:1fr}.mega-resources{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Master search bar in nav */
+.nav-search{position:relative;display:flex;align-items:center}
+.nav-search-input{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.14);border-radius:8px;padding:8px 12px;font-family:var(--body,'Poppins','Helvetica Neue',Arial,sans-serif);font-size:13.5px;color:#fff;width:160px;transition:width 220ms ease,background 200ms,border-color 200ms}
+.nav-search-input::placeholder{color:rgba(255,255,255,0.45)}
+.nav-search-input:focus{outline:none;width:220px;background:rgba(255,255,255,0.12);border-color:rgba(25,217,201,0.5)}
+.nav.light .nav-search-input{background:rgba(1,127,119,0.06);border-color:rgba(1,127,119,0.16);color:var(--ink)}
+.nav.light .nav-search-input::placeholder{color:rgba(31,41,55,0.45)}
+.nav.light .nav-search-input:focus{background:rgba(1,127,119,0.1);border-color:rgba(1,127,119,0.4)}
+.nav-search-results{position:absolute;top:calc(100% + 10px);right:0;width:320px;max-height:420px;overflow-y:auto;background:var(--ink-2,#1F2937);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:8px;box-shadow:0 20px 48px rgba(0,0,0,0.35);z-index:250}
+.nav-search-results[hidden]{display:none}
+.nav.light .nav-search-results{background:var(--paper);border-color:rgba(1,127,119,0.1);box-shadow:0 8px 24px rgba(0,0,0,0.1)}
+.nav-search-result{display:block;padding:8px 12px;border-radius:8px;text-decoration:none;transition:background 140ms}
+.nav-search-result:hover,.nav-search-result.active{background:rgba(1,127,119,0.22)}
+.nav.light .nav-search-result:hover,.nav.light .nav-search-result.active{background:var(--teal-tint)}
+.nav-search-result-title{display:block;font-family:var(--body,'Poppins','Helvetica Neue',Arial,sans-serif);font-size:13.5px;font-weight:600;color:#fff}
+.nav.light .nav-search-result-title{color:var(--ink)}
+.nav-search-result-desc{display:block;font-family:var(--body,'Poppins','Helvetica Neue',Arial,sans-serif);font-size:12px;color:rgba(255,255,255,0.55);margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nav.light .nav-search-result-desc{color:rgba(31,41,55,0.55)}
+.nav-search-empty{padding:10px 12px;font-family:var(--body,'Poppins','Helvetica Neue',Arial,sans-serif);font-size:13px;color:rgba(255,255,255,0.45)}
+.nav.light .nav-search-empty{color:rgba(31,41,55,0.45)}
+@media(max-width:1400px){.nav-search{display:none}}
+
+/* logo swaps with nav invert */
+.nav-logo .logo-on-light{display:none}
+.nav.light .logo-on-dark{display:none}
+.nav.light .logo-on-light{display:block}
+
+/* Mobile QA fix, site-wide: every /vs/ comparison table is wider than the viewport
+   below ~760px and relies on horizontal scroll with zero visual cue; it read as
+   cut off, not scrollable. This is global (not per-page) so it covers all 19
+   comparison pages plus any future one without touching their markup. */
+@media (max-width:900px){
+  .cmp-wrap{position:relative;margin-top:28px}
+  /* Both pseudo-elements are absolutely positioned against .cmp-wrap's own (visible,
+     viewport-constrained) box, NOT its scrollable content width, so the hint stays
+     centered on-screen and the fade sits fixed over the cut edge, rather than
+     scrolling away with the table. */
+  .cmp-wrap::before{content:"Swipe to see the full comparison →";position:absolute;top:-24px;left:0;right:0;font-family:var(--mono,monospace);font-size:11px;letter-spacing:0.04em;color:var(--teal-dark,#01665F);opacity:0.75;text-align:center}
+  .cmp-wrap::after{content:"";position:absolute;top:0;right:0;bottom:0;width:32px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.92));pointer-events:none}
+}
+</style>
+<style>
+.footer-social{display:flex;gap:14px;margin-top:18px;align-items:center;flex-wrap:wrap}.footer-social a{color:#9BA8B4;display:inline-flex;transition:color 140ms}.footer-social a:hover{color:#FFFFFF}
+.st-hero img{filter:grayscale(1)}
+.footer-states{max-width:1320px;margin:48px auto 0;padding:0 32px}.footer-states .footer-h{margin-bottom:14px}.footer-states-links{display:flex;flex-wrap:wrap;gap:8px 18px}.footer-states-links a{font-family:var(--body,"Poppins","Helvetica Neue",Arial,sans-serif);font-size:13px;color:#9BA8B4;text-decoration:none;transition:color 140ms}.footer-states-links a:hover{color:#FFFFFF}@media(max-width:720px){.footer-states-links{gap:10px 14px}}
+.footer-col .footer-h{font-family:var(--mono,'JetBrains Mono',monospace);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#FFFFFF;margin-bottom:18px;font-weight:600}
+/* Global footer layout (was per-page; missing on pages like /demo -> unstyled footer) */
+.footer{background:#0A0F14;color:#7A8794;padding:56px 0 28px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:56px;max-width:1320px;margin:0 auto;padding:0 32px}
+.footer-brand .tagline{font-size:14px;margin-top:14px;max-width:300px;line-height:1.55;color:#9BA8B4}
+.footer-col a{display:block;font-size:14px;color:#9BA8B4;padding:7px 0;transition:color 200ms;text-decoration:none}
+.footer-col a:hover{color:#FFFFFF}.footer-col a.current{color:var(--teal,#017F77)}
+.footer-bottom{max-width:1320px;margin:32px auto 0;padding:20px 32px 0;border-top:1px solid rgba(255,255,255,0.06);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-family:var(--mono,'JetBrains Mono',monospace);font-size:12px;color:#9BA8B4;letter-spacing:0.04em}
+.footer-bottom a{color:#9BA8B4;text-decoration:none}.footer-bottom a:hover{color:#FFFFFF}
+@media(max-width:920px){.footer-grid{grid-template-columns:1fr 1fr;gap:32px}.footer-col,.footer-brand{min-width:0}}
+@media(max-width:600px){.footer-grid{grid-template-columns:1fr}}
+.footer-solutions-row{max-width:1320px;margin:0 auto;padding:0 32px;display:flex;gap:0 32px;flex-wrap:wrap}
+.footer-solutions-row .footer-states{flex:1 1 220px;margin:0;max-width:none;padding:0}
+@media(max-width:600px){.footer-solutions-row{flex-direction:column;gap:0}.footer-solutions-row .footer-states{flex:none}}
+/* Footer accordion. footer-col (short lists: Platform/Compare/Company/Resources) stays
+   force-open on desktop, matching a normal multi-column footer. footer-states (Solutions,
+   Coverage) carries 25-150+ links each, so it stays a real click-to-expand accordion at
+   every width, collapsed by default, to keep the footer short. Links are still in the
+   HTML either way, so nothing is lost for crawlers. */
+details.footer-acc{border-bottom:1px solid rgba(255,255,255,0.06)}
+details.footer-acc>summary{list-style:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
+details.footer-acc>summary::-webkit-details-marker{display:none}
+details.footer-acc>summary.footer-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:0;padding:14px 0;font-family:var(--mono,'JetBrains Mono',monospace);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#FFFFFF;font-weight:600}
+details.footer-acc>summary.footer-h::after{content:"›";font-size:18px;font-weight:400;letter-spacing:normal;text-transform:none;color:rgba(25,217,201,0.6);transition:transform 220ms ease;transform:rotate(0deg)}
+details.footer-acc[open]>summary.footer-h::after{transform:rotate(90deg)}
+details.footer-acc.footer-col a{padding-left:0}
+details.footer-acc>a:last-of-type{padding-bottom:16px}
+.footer-states{margin:8px auto 0}
+.footer-states.footer-acc .footer-states-links{padding-bottom:16px;padding-top:4px}
+@media(min-width:921px){
+  details.footer-col.footer-acc{border-bottom:none}
+  details.footer-col.footer-acc>summary{cursor:default;pointer-events:none}
+  details.footer-col.footer-acc>summary.footer-h::after{display:none}
+}
+.nav{position:sticky;top:0;z-index:50;background:var(--ink-2,#1F2937);backdrop-filter:saturate(180%) blur(24px);border-bottom:1px solid rgba(255,255,255,0.06);transition:background 320ms ease,border-color 320ms ease}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:11px 28px;max-width:1440px;margin:0 auto;position:relative}
+.nav-logo{display:inline-flex;align-items:center;flex-shrink:0}.nav-logo img{height:30px;width:auto;display:block}
+.nav-menu{display:flex;gap:20px;align-items:center}
+.nav-menu a{font-family:'Poppins','Helvetica Neue',Arial,sans-serif;font-size:14px;font-weight:500;color:rgba(255,255,255,0.75);position:relative;transition:color 320ms;text-decoration:none}
+.nav-menu a.current{color:#19D9C9}
+.nav-menu a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:#19D9C9;transform:scaleX(0);transform-origin:left;transition:transform 320ms cubic-bezier(.2,.8,.2,1)}
+.nav-menu a:hover{color:#fff}.nav-menu a:hover::after,.nav-menu a.current::after{transform:scaleX(1)}
+.nav-cta{display:flex;gap:16px;align-items:center;flex-shrink:0}
+.nav-cta .login{font-family:'Poppins','Helvetica Neue',Arial,sans-serif;font-size:14px;font-weight:500;color:rgba(255,255,255,0.75);text-decoration:none;white-space:nowrap}
+.nav-cta .login:hover{color:#fff}
+.nav-cta .lang-toggle{white-space:nowrap}
+.nav-cta .btn-demo{background:#017F77;color:#fff;font-family:'Poppins','Helvetica Neue',Arial,sans-serif;font-weight:600;font-size:14px;padding:11px 22px;border-radius:10px;text-decoration:none;transition:background 200ms;white-space:nowrap}
+.nav-cta .btn-demo:hover{background:#01665F}
+.nav.light{background:rgba(255,255,255,0.96);border-bottom-color:rgba(1,127,119,0.12)}
+.nav.light .nav-menu a{color:#1F2937}.nav.light .nav-menu a:hover{color:#017F77}
+.nav.light .nav-cta .login{color:#1F2937}
+@media(max-width:1400px){.nav-menu,.nav-cta{display:none}.nav{backdrop-filter:none}}
+.nav-burger{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:none;cursor:pointer;padding:4px;width:44px;height:44px}
+.nav-burger span{display:block;height:2px;background:rgba(255,255,255,0.8);border-radius:2px;transition:transform 240ms,opacity 240ms,width 240ms}
+.nav-burger span:nth-child(3){width:66%}
+.nav-burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav-burger[aria-expanded="true"] span:nth-child(3){width:100%;transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:1400px){.nav-burger{display:flex}}
+.nav-mobile{display:none;flex-direction:column;background:var(--ink-2,#14213D);border-top:1px solid rgba(255,255,255,0.06);padding:16px 24px 24px}
+.nav-mobile.open{display:flex;position:absolute;top:100%;left:0;right:0;max-height:calc(100vh - 73px);max-height:calc(100dvh - 73px);overflow-y:auto;-webkit-overflow-scrolling:touch}
+.nav-mobile a{font-family:'Poppins','Helvetica Neue',Arial,sans-serif;font-size:15px;font-weight:500;color:rgba(255,255,255,0.75);text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+.nav-mobile a:hover{color:#fff}
+.nav-mobile a:last-of-type{border-bottom:none}
+.nav-mobile-section{border-bottom:1px solid rgba(255,255,255,0.06)}
+.nav-mobile-section summary{font-family:'Poppins','Helvetica Neue',Arial,sans-serif;font-size:15px;font-weight:500;color:rgba(255,255,255,0.75);padding:12px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.nav-mobile-section summary::-webkit-details-marker{display:none}
+.nav-mobile-section summary::after{content:"›";font-size:18px;color:rgba(25,217,201,0.6);transition:transform 220ms ease;transform:rotate(0deg)}
+.nav-mobile-section[open] summary::after{transform:rotate(90deg)}
+.nav-mobile-section summary:hover{color:#fff}
+.nav-mobile-section a{padding-left:16px;display:block}
+.nav-mobile-section[open] a:last-of-type{border-bottom:none}
+.nav-mobile-cta{display:flex;flex-direction:column;gap:10px;margin-top:20px;position:sticky;bottom:0;padding-top:14px;padding-bottom:4px;background:var(--ink-2,#14213D);box-shadow:0 -12px 20px -6px rgba(0,0,0,0.4);z-index:2}
+.nav-mobile-cta .login{font-family:'Poppins','Helvetica Neue',Arial,sans-serif;font-size:15px;font-weight:500;color:rgba(255,255,255,0.75);text-decoration:none;text-align:center;padding:11px}
+.nav-mobile-cta .btn-demo{background:#017F77;color:#fff;font-family:'Poppins','Helvetica Neue',Arial,sans-serif;font-weight:600;font-size:15px;padding:13px 22px;border-radius:10px;text-decoration:none;text-align:center;transition:background 200ms}
+.nav-mobile-cta .btn-demo:hover{background:#01665F}
+.nav-dropdown{position:static}
+.nav-dropdown-toggle{background:none;border:none;cursor:pointer;font-family:var(--body);font-size:14px;font-weight:500;color:rgba(255,255,255,0.75);transition:color 320ms;padding:0;display:flex;align-items:center;gap:5px;line-height:1}
+.nav.light .nav-dropdown-toggle{color:var(--ink)}
+.nav-dropdown-toggle:hover,.nav-dropdown.open .nav-dropdown-toggle{color:var(--paper)}
+.nav.light .nav-dropdown-toggle:hover,.nav.light .nav-dropdown.open .nav-dropdown-toggle{color:var(--teal-dark)}
+.nav-dropdown-toggle::after{content:"";display:inline-block;border:solid currentColor;border-width:0 1.5px 1.5px 0;padding:2.5px;transform:rotate(45deg);margin-top:-3px;transition:transform 160ms}
+.nav-dropdown.open .nav-dropdown-toggle::after{transform:rotate(-135deg);margin-top:2px}
+.nav-dropdown-menu{position:absolute;top:calc(100% + 10px);left:0;right:0;transform:translateY(-6px);background:var(--ink-2,#1F2937);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:18px 24px;opacity:0;pointer-events:none;transition:opacity 160ms,transform 160ms;z-index:200;box-shadow:0 20px 48px rgba(0,0,0,0.35)}
+.nav-dropdown.open .nav-dropdown-menu{opacity:1;pointer-events:auto;transform:translateY(0)}
+/* Single-list dropdowns (Awards, Company, Pricing) are the same full-width box as the
+   multi-column ones -- content flows into balanced columns instead of one tall strip. */
+.nav-dropdown-menu:not(.mega){columns:220px;column-gap:16px}
+.nav-dropdown-menu:not(.mega) a,.nav-dropdown-menu:not(.mega) .mega-h{break-inside:avoid}
+.nav-dropdown-menu:not(.mega) .mega-h{column-span:all}
+.nav.light .nav-dropdown-menu{background:var(--paper);border-color:rgba(1,127,119,0.1);box-shadow:0 8px 24px rgba(0,0,0,0.1)}
+.nav-dropdown-menu a{display:block;padding:7px 12px;border-radius:8px;font-family:var(--body);font-size:13.5px;font-weight:500;color:rgba(255,255,255,0.8);transition:background 140ms,color 140ms;white-space:nowrap;text-decoration:none}
+.nav-dropdown-menu a:hover{background:rgba(1,127,119,0.22);color:var(--paper)}
+.nav-dropdown-menu a::after{display:none!important}
+.nav.light .nav-dropdown-menu a{color:var(--ink)}
+.nav.light .nav-dropdown-menu a:hover{background:var(--teal-tint);color:var(--teal-dark)}
+
+/* Dropdown refresh: light panel, readable section labels, real column layout.
+   Scoped to .nav-dropdown-menu so the mobile menu (which reuses .mega-h on a dark
+   background) is untouched. */
+.nav-dropdown-menu{background:#fff;border:1px solid rgba(31,41,55,0.10);box-shadow:0 28px 64px -14px rgba(15,23,42,0.30),0 4px 14px rgba(15,23,42,0.08)}
+.nav-dropdown-menu a{color:#1F2937}
+.nav-dropdown-menu a:hover{background:var(--teal-tint,#E6F5F4);color:var(--teal-dark,#01665F)}
+.nav-dropdown-menu a:focus-visible{outline:2px solid #017F77;outline-offset:-2px}
+.nav-dropdown-menu .mega-h{color:#01665F;font-size:11px;font-weight:600;letter-spacing:0.12em;padding:2px 12px 8px;margin-bottom:6px;border-bottom:1px solid rgba(1,127,119,0.2)}
+.nav-dropdown-menu .mega-soon{color:rgba(31,41,55,0.55)}
+.nav-dropdown-menu.mega{padding:24px 28px 26px;gap:8px 32px;max-width:1220px;margin-left:auto;margin-right:auto}
+.nav-dropdown-menu.mega a{font-size:14px;line-height:1.3;padding:7px 12px}
+.nav-dropdown-menu.mega .mega-col{gap:1px}
+@media(min-width:1101px){
+  .mega-platform{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .mega-platform>.mega-col:nth-child(1){grid-column:1;grid-row:1}
+  .mega-platform>.mega-col:nth-child(4){grid-column:1;grid-row:2}
+  .mega-platform>.mega-col:nth-child(6){grid-column:1;grid-row:3}
+  .mega-platform>.mega-col:nth-child(2){grid-column:2;grid-row:1 / span 3}
+  .mega-platform>.mega-col:nth-child(3){grid-column:3;grid-row:1 / span 2}
+  .mega-platform>.mega-col:nth-child(5){grid-column:3;grid-row:3}
+  .mega-platform>.mega-col:nth-child(7){grid-column:4;grid-row:1 / span 3}
+}
+.mega-solutions{gap:8px 22px}
+.nav-dropdown-menu.mega-solutions a{font-size:13.5px}
+
+.lang-toggle{font-family:'Poppins','Helvetica Neue',Arial,sans-serif;font-size:13px;font-weight:600;color:var(--teal-bright,#19D9C9)!important;border:1px solid rgba(25,217,201,0.4);border-radius:999px;padding:6px 14px!important;text-decoration:none;transition:background 160ms,border-color 160ms}
+.lang-toggle:hover{background:rgba(25,217,201,0.12);border-color:var(--teal-bright,#19D9C9)}
+.nav.light .lang-toggle{color:var(--teal-dark,#01665F)!important;border-color:rgba(1,127,119,0.35)}
+.nav.light .lang-toggle:hover{background:var(--teal-tint,#E6F5F4)}
+.nav-mobile-cta .lang-toggle{border:1px solid rgba(25,217,201,0.4);border-radius:10px;text-align:center;padding:11px!important}
+</style>
+</head>
+<body>
+<noscript id="gtm-noscript"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P53P8FNJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+
+
+<!-- Referral slide-in. Shows only on customer-frequented pages (allowlist in the script),
+     after 50% scroll or 18s, at most once every 30 days per visitor. -->
+<div class="refpop" id="refpop" role="dialog" aria-label="Referral program" hidden>
+  <button class="refpop-close" id="refpop-close" aria-label="Dismiss">&times;</button>
+  <div class="refpop-k">Refer &amp; Earn</div>
+  <p class="refpop-p">Know a team still tracking bills the hard way? Earn <b>$250 per signup</b> for one state, <b>$499</b> for all 50 + Federal.</p>
+  <a href="/referral" class="refpop-cta">Get my referral link &rarr;</a>
+</div>
+<style>
+.refpop{position:fixed;right:22px;bottom:22px;z-index:90;width:320px;max-width:calc(100vw - 44px);background:#14213D;border:1px solid rgba(25,217,201,0.35);border-radius:16px;padding:22px 22px 20px;box-shadow:0 24px 60px -12px rgba(0,0,0,0.5);transform:translateY(16px);opacity:0;transition:transform 420ms cubic-bezier(.16,1,.3,1),opacity 420ms}
+.refpop.on{transform:none;opacity:1}
+.refpop[hidden]{display:none}
+.refpop-k{font-family:'JetBrains Mono',Menlo,monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#19D9C9;margin-bottom:8px}
+.refpop-p{font-family:'Poppins','Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:1.55;color:rgba(255,255,255,0.88);margin:0 0 14px}
+.refpop-p b{color:#fff}
+.refpop-cta{display:inline-block;font-family:'Poppins','Helvetica Neue',Arial,sans-serif;font-size:14px;font-weight:600;background:#017F77;color:#fff;border-radius:8px;padding:11px 18px;text-decoration:none;transition:background 160ms}
+.refpop-cta:hover{background:#01665F}
+.refpop-close{position:absolute;top:10px;right:12px;background:none;border:none;color:rgba(255,255,255,0.55);font-size:19px;cursor:pointer;padding:6px;line-height:1}
+.refpop-close:hover{color:#fff}
+@media(prefers-reduced-motion:reduce){.refpop{transition:none}}
+@media(max-width:640px){.refpop{right:12px;left:12px;bottom:12px;width:auto}}
+</style>
+<script>
+(function(){
+  var pop=document.getElementById('refpop');
+  if(!pop)return;
+  var ALLOW=['/customers','/case-studies','/events','/podcast','/faq','/about','/best-in-government-affairs'];
+  var path=location.pathname;
+  if(!ALLOW.some(function(p){return path.indexOf(p)===0;}))return;
+  var KEY='uslege-refpop-shown';
+  try{
+    var last=parseInt(localStorage.getItem(KEY)||'0',10);
+    if(Date.now()-last < 30*24*60*60*1000)return;
+  }catch(e){}
+  var fired=false;
+  function show(){
+    if(fired)return;fired=true;
+    pop.hidden=false;
+    requestAnimationFrame(function(){requestAnimationFrame(function(){pop.classList.add('on');});});
+    try{localStorage.setItem(KEY,String(Date.now()));}catch(e){}
+    window.removeEventListener('scroll',onScroll);
+  }
+  function onScroll(){
+    var max=document.documentElement.scrollHeight-window.innerHeight;
+    if(max>0&&window.scrollY/max>0.5)show();
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  setTimeout(show,18000);
+  document.getElementById('refpop-close').addEventListener('click',function(){
+    pop.classList.remove('on');
+    setTimeout(function(){pop.hidden=true;},420);
+  });
+})();
+</script>
+
+<script>
+/* Global referral capture: a ?ref= code on ANY page is remembered for 90 days,
+   so credit survives however the referred person wanders before converting.
+   The session flag is separate: welcome messaging only appears in the browser
+   session where the referral link was actually clicked, never on later visits. */
+(function(){
+  var m=location.search.match(/[?&]ref=([^&]+)/);
+  if(m){try{localStorage.setItem('uslege_ref_v2',JSON.stringify({c:m[1],t:Date.now()}));sessionStorage.setItem('uslege_ref_fresh','1');}catch(e){}}
+})();
+window.__usRef=function(){
+  try{
+    var raw=localStorage.getItem('uslege_ref_v2');
+    if(!raw)return '';
+    var o=JSON.parse(raw);
+    if(!o.c||(Date.now()-o.t)>90*24*60*60*1000)return '';
+    return String(o.c);
+  }catch(e){return '';}
+};
+window.__usRefFresh=function(){
+  try{return sessionStorage.getItem('uslege_ref_fresh')==='1';}catch(e){return false;}
+};
+/* Same pattern for standard ad/campaign attribution: utm_* + gclid/fbclid,
+   captured from ANY page's query string and kept 90 days so it survives
+   however the visitor wanders before converting. */
+(function(){
+  var p=new URLSearchParams(location.search);
+  var keys=['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','fbclid'];
+  var d={};
+  keys.forEach(function(k){ var v=p.get(k); if(v) d[k]=v; });
+  if(Object.keys(d).length){
+    try{ localStorage.setItem('uslege_utm_v1', JSON.stringify({d:d,t:Date.now()})); }catch(e){}
+  }
+})();
+window.__usUtm=function(){
+  var out={utm_source:'',utm_medium:'',utm_campaign:'',utm_term:'',utm_content:'',gclid:'',fbclid:''};
+  try{
+    var raw=localStorage.getItem('uslege_utm_v1');
+    if(!raw)return out;
+    var o=JSON.parse(raw);
+    if(!o.d||!o.t||(Date.now()-o.t)>90*24*60*60*1000)return out;
+    for(var k in out){ if(o.d[k]) out[k]=o.d[k]; }
+    return out;
+  }catch(e){return out;}
+};
+</script>
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" aria-label="USLege home"><img class="logo-on-dark" src="/assets/uslege-logo-light.png" alt="USLege"><img class="logo-on-light" src="/assets/uslege-logo.png" alt="USLege"></a>
+    <div class="nav-menu">
+      <div class="nav-dropdown nav-mega" id="platform-dropdown">
+  <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Platform</button>
+  <div class="nav-dropdown-menu mega mega-platform" role="menu">
+    <div class="mega-col">
+      <div class="mega-h">Get Started</div>
+      <a href="/platform" role="menuitem">Platform Overview</a>
+      
+    </div>
+    <div class="mega-col">
+      <div class="mega-h">Features</div>
+      <a href="/mcp" role="menuitem">USLege MCP</a>
+      <a href="/ai-assistant" role="menuitem">AI Assistant</a>
+      <a href="/ai-recommendations" role="menuitem">AI Recommendations</a>
+      <a href="/legislative-crm" role="menuitem">Legislative CRM</a>
+      <a href="/bill-tracking" role="menuitem">Bill Tracking</a>
+      <a href="/bill-text-comparison" role="menuitem">Bill Text Comparison</a>
+      <a href="/refiled-bills" role="menuitem">Refiled Bills</a>
+      <a href="/hearing-intelligence" role="menuitem">Hearing Intelligence</a>
+      <a href="/video" role="menuitem">Video Search</a>
+      <a href="/regulatory-tracking" role="menuitem">Regulatory Tracking</a>
+      <a href="/local-government-tracking" role="menuitem">Local & Ordinance Tracking</a>
+      <a href="/legislative-calendar" role="menuitem">Legislative Calendar</a>
+      <a href="/stakeholder-intelligence" role="menuitem">Stakeholder Intelligence</a>
+      
+    </div><div class="mega-col">
+      <div class="mega-h">Data & Monitoring</div>
+      <a href="/legislator-directory" role="menuitem">Legislator Directory</a>
+      <a href="/committee-directory" role="menuitem">Committee Directory</a>
+      <a href="/agency-directory" role="menuitem">Agency Directory</a>
+      <a href="/lobbyist-registry" role="menuitem">Lobbyist Registry</a>
+      <a href="/campaign-finance" role="menuitem">Campaign Finance</a>
+      <a href="/witnesses" role="menuitem">Witnesses</a>
+      <a href="/vote-tracking" role="menuitem">Vote Tracking</a>
+      <a href="/social-media-monitoring" role="menuitem">Social Media Monitoring</a>
+      <a href="/press-release-monitoring" role="menuitem">Press Release Monitoring</a>
+      <a href="/action-center" role="menuitem">Action Center</a>
+      <a href="/statute-search" role="menuitem">Statute Search</a>
+      <a href="/executive-order-tracking" role="menuitem">Executive Orders</a>
+      <a href="/state-register-tracking" role="menuitem">State Registers</a>
+      <a href="/interim-studies" role="menuitem">Interim Studies</a>
+      <a href="/budget-research" role="menuitem">Budget Research</a>
+      
+    </div><div class="mega-col">
+      <div class="mega-h">Workflow Tools</div>
+      <a href="/advanced-bill-search" role="menuitem">Advanced Bill Search</a>
+      <a href="/legislative-alerts" role="menuitem">Legislative Alerts</a>
+      <a href="/hearing-clips" role="menuitem">Hearing Clips & Transcripts</a>
+      <a href="/rule-version-comparison" role="menuitem">Rule Version Comparison</a>
+      <a href="/portals" role="menuitem">Client Portals</a>
+      <a href="/dashboards" role="menuitem">Custom Dashboards</a>
+      <a href="/custom-reports" role="menuitem">Custom Reports</a>
+      <a href="/workflows" role="menuitem">Workflows & Task Templates</a>
+      
+    </div><div class="mega-col">
+      <div class="mega-h">Use Cases</div>
+      <a href="/public-affairs-advocacy" role="menuitem">Public Affairs & Advocacy</a>
+      <a href="/mcp#bill-drafting" role="menuitem">Bill Drafting & Amendments</a>
+      <a href="/mcp#constituent-correspondence" role="menuitem">Constituent Correspondence</a>
+      <a href="/mcp#newsletters" role="menuitem">Newsletters</a>
+      <a href="/mcp#campaign-websites" role="menuitem">Campaign & Legislative Websites</a>
+      
+    </div><div class="mega-col">
+      <div class="mega-h">Developers</div>
+      <a href="/api" role="menuitem">API & Integrations</a>
+      
+    </div><div class="mega-col">
+      <div class="mega-h">Learn</div>
+      <a href="/what-is-legislative-intelligence" role="menuitem">What Is Legislative Intelligence?</a>
+      <a href="/what-is-hearing-intelligence" role="menuitem">What Is Hearing Intelligence?</a>
+      <a href="/what-is-regulatory-intelligence" role="menuitem">What Is Regulatory Intelligence?</a>
+      <a href="/what-is-ai-bill-tracking" role="menuitem">What Is AI Bill Tracking?</a>
+      <a href="/best-legislative-tracking-software" role="menuitem">Best Legislative Tracking Software</a>
+      <a href="/best-bill-tracking-software" role="menuitem">Best Bill Tracking Software</a>
+      <a href="/best-government-ai-tools" role="menuitem">Best Government AI Tools</a>
+      <a href="/best-government-monitoring-software" role="menuitem">Best Government Monitoring Software</a>
+      <a href="/best" role="menuitem">All Best-Of Guides</a>
+      <a href="/alternatives" role="menuitem">Legislative Software Alternatives</a>
+      
+    </div>
+  </div>
+</div><div class="nav-dropdown nav-mega" id="solutions-dropdown">
+  <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Solutions</button>
+  <div class="nav-dropdown-menu mega mega-solutions" role="menu">
+    <div class="mega-col">
+      <div class="mega-h">Get Started</div>
+      <a href="/solutions" role="menuitem">Solutions Overview</a>
+      
+    </div>
+    <div class="mega-col">
+      <div class="mega-h">Companies & Startups</div>
+      <a href="/for/corporations" role="menuitem">Corporations</a>
+      <a href="/for/startups" role="menuitem">Startups</a>
+      <a href="/for/chambers-of-commerce" role="menuitem">Chambers of Commerce</a>
+      <a href="/for/education" role="menuitem">Education</a>
+      <a href="/for/universities" role="menuitem">Universities</a>
+      <a href="/for/media" role="menuitem">Media</a>
+      
+    </div><div class="mega-col">
+      <div class="mega-h">Associations & Advocacy</div>
+      <a href="/for/trade-associations" role="menuitem">Trade Associations</a>
+      <a href="/for/associations" role="menuitem">Associations</a>
+      <a href="/for/advocacy" role="menuitem">Advocacy & Think Tanks</a>
+      
+    </div><div class="mega-col">
+      <div class="mega-h">Lobbying & Law</div>
+      <a href="/for/public-affairs" role="menuitem">Public Affairs & GR Firms</a>
+      <a href="/for/lobbyists" role="menuitem">Contract Lobbyists</a>
+      <a href="/for/lobby-firms" role="menuitem">Lobby Firms</a>
+      <a href="/for/law-firms" role="menuitem">Law Firms</a>
+      <a href="/for/federal-gr" role="menuitem">Federal Government Relations</a>
+      <a href="/for/local-gr" role="menuitem">Local Government Relations</a>
+      
+    </div><div class="mega-col">
+      <div class="mega-h">Government</div>
+      <a href="/for/government" role="menuitem">Government</a>
+      <a href="/for/government-agencies" role="menuitem">Government Agencies</a>
+      <a href="/for/legislative-offices" role="menuitem">Legislative Offices</a>
+      <a href="/for/legislators" role="menuitem">Legislators</a>
+      <a href="/for/congressional-offices" role="menuitem">Congressional Offices</a>
+      <a href="/for/caucuses" role="menuitem">Caucuses</a>
+      <a href="/for/local-government" role="menuitem">City & Municipal Government</a>
+      <a href="/for/government-cios" role="menuitem">State Agency CIOs & IT Directors</a>
+      <a href="/for/legislative-research" role="menuitem">Legislative Research & Councils</a>
+      
+    </div><div class="mega-col">
+      <div class="mega-h">By use case</div>
+      <a href="/for/50-state-tracking" role="menuitem">All-50-State Tracking</a>
+      <a href="/for/rfp-procurement" role="menuitem">RFP & Procurement Tracking</a>
+      <a href="/solutions/constituent-correspondence" role="menuitem">Constituent Correspondence</a>
+      <a href="/dashboards" role="menuitem">Custom Dashboards & Reporting</a>
+      <a href="/ai-strategy" role="menuitem">AI Strategy for Government Affairs</a>
+      
+    </div>
+  </div>
+</div><div class="nav-dropdown nav-mega" id="coverage-dropdown">
+  <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Coverage</button>
+  <div class="nav-dropdown-menu mega mega-coverage" role="menu">
+    <div class="mega-col">
+      <div class="mega-h">Nationwide</div>
+      <a href="/all-states" role="menuitem">All States & Multistate</a>
+      <a href="/federal" role="menuitem">Federal</a>
+      <a href="/coverage" role="menuitem">View all coverage</a>
+    </div>
+    <div class="mega-col">
+      <div class="mega-h">Browse by Type</div>
+      <a href="/video/city-council-meetings" role="menuitem">Cities & towns</a>
+      <a href="/video/county-meetings" role="menuitem">Counties</a>
+      <a href="/video/school-boards" role="menuitem">School boards</a>
+      <a href="/video/state-agencies" role="menuitem">State agencies</a>
+      <a href="/coverage#district" role="menuitem">Districts & transit</a>
+      <a href="/coverage#higher-ed" role="menuitem">Higher ed</a>
+    </div>
+    <div class="mega-col mega-col-states">
+      <div class="mega-h">State</div>
+      <a href="/states/alabama" role="menuitem">Alabama</a>
+      <a href="/states/alaska" role="menuitem">Alaska</a>
+      <a href="/states/arizona" role="menuitem">Arizona</a>
+      <a href="/states/arkansas" role="menuitem">Arkansas</a>
+      <a href="/states/california" role="menuitem">California</a>
+      <a href="/states/colorado" role="menuitem">Colorado</a>
+      <a href="/states/connecticut" role="menuitem">Connecticut</a>
+      <a href="/states/delaware" role="menuitem">Delaware</a>
+      <a href="/states/district-of-columbia" role="menuitem">District of Columbia</a>
+      <a href="/states/florida" role="menuitem">Florida</a>
+      <a href="/states/georgia" role="menuitem">Georgia</a>
+      <a href="/states/hawaii" role="menuitem">Hawaii</a>
+      <a href="/states/idaho" role="menuitem">Idaho</a>
+      <a href="/states/illinois" role="menuitem">Illinois</a>
+      <a href="/states/indiana" role="menuitem">Indiana</a>
+      <a href="/states/iowa" role="menuitem">Iowa</a>
+      <a href="/states/kansas" role="menuitem">Kansas</a>
+      <a href="/states/kentucky" role="menuitem">Kentucky</a>
+      <a href="/states/louisiana" role="menuitem">Louisiana</a>
+      <a href="/states/maine" role="menuitem">Maine</a>
+      <a href="/states/maryland" role="menuitem">Maryland</a>
+      <a href="/states/massachusetts" role="menuitem">Massachusetts</a>
+      <a href="/states/michigan" role="menuitem">Michigan</a>
+      <a href="/states/minnesota" role="menuitem">Minnesota</a>
+      <a href="/states/mississippi" role="menuitem">Mississippi</a>
+      <a href="/states/missouri" role="menuitem">Missouri</a>
+      <a href="/states/montana" role="menuitem">Montana</a>
+      <a href="/states/nebraska" role="menuitem">Nebraska</a>
+      <a href="/states/nevada" role="menuitem">Nevada</a>
+      <a href="/states/new-hampshire" role="menuitem">New Hampshire</a>
+      <a href="/states/new-jersey" role="menuitem">New Jersey</a>
+      <a href="/states/new-mexico" role="menuitem">New Mexico</a>
+      <a href="/states/new-york" role="menuitem">New York</a>
+      <a href="/states/north-carolina" role="menuitem">North Carolina</a>
+      <a href="/states/north-dakota" role="menuitem">North Dakota</a>
+      <a href="/states/ohio" role="menuitem">Ohio</a>
+      <a href="/states/oklahoma" role="menuitem">Oklahoma</a>
+      <a href="/states/oregon" role="menuitem">Oregon</a>
+      <a href="/states/pennsylvania" role="menuitem">Pennsylvania</a>
+      <a href="/states/puerto-rico" role="menuitem">Puerto Rico</a>
+      <a href="/states/rhode-island" role="menuitem">Rhode Island</a>
+      <a href="/states/south-carolina" role="menuitem">South Carolina</a>
+      <a href="/states/south-dakota" role="menuitem">South Dakota</a>
+      <a href="/states/tennessee" role="menuitem">Tennessee</a>
+      <a href="/states/texas" role="menuitem">Texas</a>
+      <a href="/states/utah" role="menuitem">Utah</a>
+      <a href="/states/vermont" role="menuitem">Vermont</a>
+      <a href="/states/virginia" role="menuitem">Virginia</a>
+      <a href="/states/washington" role="menuitem">Washington</a>
+      <a href="/states/west-virginia" role="menuitem">West Virginia</a>
+      <a href="/states/wisconsin" role="menuitem">Wisconsin</a>
+      <a href="/states/wyoming" role="menuitem">Wyoming</a>
+      
+    </div>
+  </div>
+</div><div class="nav-dropdown nav-mega" id="compare-dropdown">
+  <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">vs</button>
+  <div class="nav-dropdown-menu mega mega-compare" role="menu">
+    <div class="mega-h">Comparisons</div>
+    <a href="/vs" role="menuitem">All comparisons</a>
+    <a href="/vs/quorum" role="menuitem">vs Quorum</a>
+    <a href="/vs/fiscalnote" role="menuitem">vs FiscalNote</a>
+    <a href="/vs/bloomberg-government" role="menuitem">vs Bloomberg Government</a>
+    <a href="/vs/politico-pro" role="menuitem">vs POLITICO Pro</a>
+    <a href="/vs/cq" role="menuitem">vs CQ</a>
+    <a href="/vs/statenet" role="menuitem">vs LexisNexis State Net</a>
+    <a href="/vs/plural" role="menuitem">vs Plural</a>
+    <a href="/vs/billtrack50" role="menuitem">vs BillTrack50</a>
+    <a href="/vs/fastdemocracy" role="menuitem">vs FastDemocracy</a>
+    <a href="/vs/state-affairs" role="menuitem">vs State Affairs</a>
+    <a href="/switch-from-telicon" role="menuitem">Switch from Telicon</a>
+    <a href="/switch-from-capitoltrack" role="menuitem">Switch from CapitolTrack</a>
+    <a href="/switch-from-fiscalnote" role="menuitem">Switch from FiscalNote</a>
+    
+  </div>
+</div><div class="nav-dropdown" id="awards-dropdown">
+  <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Awards</button>
+  <div class="nav-dropdown-menu" role="menu">
+    <div class="mega-h">Best in Government Affairs</div>
+    <a href="/best-in-government-affairs/arizona" role="menuitem">Arizona</a><a href="/best-in-government-affairs/arkansas" role="menuitem">Arkansas</a><a href="/best-in-government-affairs/california" role="menuitem">California</a><a href="/best-in-government-affairs/new-york" role="menuitem">New York</a><a href="/best-in-government-affairs/tennessee" role="menuitem">Tennessee</a><a href="/best-in-government-affairs/texas" role="menuitem">Texas</a><a href="/best-in-government-affairs/utah" role="menuitem">Utah</a>
+    <a href="/best-in-government-affairs" role="menuitem">All Awards &rarr;</a>
+  </div>
+</div><div class="nav-dropdown nav-mega" id="media-dropdown">
+  <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Resources</button>
+  <div class="nav-dropdown-menu mega mega-resources" role="menu">
+    <div class="mega-col">
+      <div class="mega-h">Get Started</div>
+      <a href="/customers" role="menuitem">Customer Stories</a>
+      <a href="/case-studies" role="menuitem">All Case Studies</a>
+      <a href="/case-studies/desk-138" role="menuitem">Contract Lobbyist Case Study</a>
+      <a href="/events" role="menuitem">Events</a>
+      
+    </div>
+    <div class="mega-col">
+      <div class="mega-h">Guides & Reference</div>
+      <a href="/how-it-works" role="menuitem">How USLege Works</a>
+      <a href="/guides" role="menuitem">Government Affairs Guides</a>
+      <a href="/definitions" role="menuitem">Definitions</a>
+      <a href="/reports" role="menuitem">Reports</a>
+      <a href="/statistics" role="menuitem">Legislative Statistics</a>
+      <a href="/stats" role="menuitem">USLege by the Numbers</a>
+      <a href="/coverage" role="menuitem">Full Coverage Map</a>
+      <a href="/webinars" role="menuitem">Webinars</a>
+      <a href="/training" role="menuitem">Book a Training</a>
+      
+    </div><div class="mega-col">
+      <div class="mega-h">Media</div>
+      <a href="/blog" role="menuitem">Blog: Guides & Analysis</a>
+      <a href="/podcast" role="menuitem">Bills & Business Podcast</a>
+      <a href="/blog#media-appearances" role="menuitem">Media Appearances</a>
+      <a href="/newsletters" role="menuitem">The Political Spotlight</a>
+      
+    </div><div class="mega-col">
+      <div class="mega-h">News</div>
+      <a href="/press" role="menuitem">Press</a>
+      <a href="/news" role="menuitem">News Archive</a>
+      
+    </div>
+  </div>
+</div><div class="nav-dropdown" id="company-dropdown">
+  <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Company</button>
+  <div class="nav-dropdown-menu" role="menu">
+    <a href="/about" role="menuitem">About</a>
+    <a href="/customers" role="menuitem">Customers</a>
+    <a href="/customers/love" role="menuitem">Reviews</a>
+    <a href="/careers" role="menuitem">Careers</a>
+    <a href="/events" role="menuitem">Events</a>
+    <a href="/security" role="menuitem">Trust & Security</a>
+    <a href="https://app.vanta.com/uslege.ai/trust/bbpep2sjulifwr52vpaw9" role="menuitem" target="_blank" rel="noopener">Trust Center</a>
+    <a href="/support" role="menuitem">Support</a>
+    <a href="/accessibility" role="menuitem">Accessibility</a>
+    <a href="/terms-and-conditions" role="menuitem">Terms of Service</a>
+    <a href="/privacy-policy" role="menuitem">Privacy Policy</a>
+    <a href="/faq" role="menuitem">FAQ</a>
+    <a href="/contact-us" role="menuitem">Contact</a>
+    
+  </div>
+</div><div class="nav-dropdown" id="pricing-dropdown">
+  <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Pricing</button>
+  <div class="nav-dropdown-menu" role="menu">
+    <a href="/pricing" role="menuitem">Pricing</a>
+    <a href="/contract-buyout" role="menuitem">Contract Buyout</a>
+    <a href="/referral" role="menuitem">Refer & Earn</a>
+    <a href="/referral-terms" role="menuitem">Referral Program Terms</a>
+    
+  </div>
+</div>
+    </div>
+    <div class="nav-search" id="nav-search">
+      <input type="search" id="site-search" class="nav-search-input" placeholder="Search USLege.ai" autocomplete="off" spellcheck="false" aria-label="Search site" role="combobox" aria-expanded="false" aria-controls="site-search-results" aria-autocomplete="list">
+      <div class="nav-search-results" id="site-search-results" role="listbox" hidden></div>
+    </div>
+    <div class="nav-cta">
+      
+      <a href="https://app.uslege.ai" class="login">Log in</a>
+      <a href="/demo" class="btn-demo">Book a demo</a>
+    </div>
+    <button class="nav-burger" id="nav-burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="nav-mobile" aria-hidden="true">
+    <details class="nav-mobile-section"><summary>Platform</summary>
+      <a href="/platform">Platform Overview</a>
+      
+      <div class="mega-h">Features</div>
+      <a href="/mcp">USLege MCP</a>
+      <a href="/ai-assistant">AI Assistant</a>
+      <a href="/ai-recommendations">AI Recommendations</a>
+      <a href="/legislative-crm">Legislative CRM</a>
+      <a href="/bill-tracking">Bill Tracking</a>
+      <a href="/bill-text-comparison">Bill Text Comparison</a>
+      <a href="/refiled-bills">Refiled Bills</a>
+      <a href="/hearing-intelligence">Hearing Intelligence</a>
+      <a href="/video">Video Search</a>
+      <a href="/regulatory-tracking">Regulatory Tracking</a>
+      <a href="/local-government-tracking">Local & Ordinance Tracking</a>
+      <a href="/legislative-calendar">Legislative Calendar</a>
+      <a href="/stakeholder-intelligence">Stakeholder Intelligence</a>
+      <div class="mega-h">Data & Monitoring</div>
+      <a href="/legislator-directory">Legislator Directory</a>
+      <a href="/committee-directory">Committee Directory</a>
+      <a href="/agency-directory">Agency Directory</a>
+      <a href="/lobbyist-registry">Lobbyist Registry</a>
+      <a href="/campaign-finance">Campaign Finance</a>
+      <a href="/witnesses">Witnesses</a>
+      <a href="/vote-tracking">Vote Tracking</a>
+      <a href="/social-media-monitoring">Social Media Monitoring</a>
+      <a href="/press-release-monitoring">Press Release Monitoring</a>
+      <a href="/action-center">Action Center</a>
+      <a href="/statute-search">Statute Search</a>
+      <a href="/executive-order-tracking">Executive Orders</a>
+      <a href="/state-register-tracking">State Registers</a>
+      <a href="/interim-studies">Interim Studies</a>
+      <a href="/budget-research">Budget Research</a>
+      <div class="mega-h">Workflow Tools</div>
+      <a href="/advanced-bill-search">Advanced Bill Search</a>
+      <a href="/legislative-alerts">Legislative Alerts</a>
+      <a href="/hearing-clips">Hearing Clips & Transcripts</a>
+      <a href="/rule-version-comparison">Rule Version Comparison</a>
+      <a href="/portals">Client Portals</a>
+      <a href="/dashboards">Custom Dashboards</a>
+      <a href="/custom-reports">Custom Reports</a>
+      <a href="/workflows">Workflows & Task Templates</a>
+      <div class="mega-h">Use Cases</div>
+      <a href="/public-affairs-advocacy">Public Affairs & Advocacy</a>
+      <a href="/mcp#bill-drafting">Bill Drafting & Amendments</a>
+      <a href="/mcp#constituent-correspondence">Constituent Correspondence</a>
+      <a href="/mcp#newsletters">Newsletters</a>
+      <a href="/mcp#campaign-websites">Campaign & Legislative Websites</a>
+      <div class="mega-h">Developers</div>
+      <a href="/api">API & Integrations</a>
+      <div class="mega-h">Learn</div>
+      <a href="/what-is-legislative-intelligence">What Is Legislative Intelligence?</a>
+      <a href="/what-is-hearing-intelligence">What Is Hearing Intelligence?</a>
+      <a href="/what-is-regulatory-intelligence">What Is Regulatory Intelligence?</a>
+      <a href="/what-is-ai-bill-tracking">What Is AI Bill Tracking?</a>
+      <a href="/best-legislative-tracking-software">Best Legislative Tracking Software</a>
+      <a href="/best-bill-tracking-software">Best Bill Tracking Software</a>
+      <a href="/best-government-ai-tools">Best Government AI Tools</a>
+      <a href="/best-government-monitoring-software">Best Government Monitoring Software</a>
+      <a href="/best">All Best-Of Guides</a>
+      <a href="/alternatives">Legislative Software Alternatives</a>
+      </details>
+    <details class="nav-mobile-section"><summary>Solutions</summary>
+      <a href="/for/government">Government</a>
+      <a href="/for/lobbyists">Contract Lobbyists</a>
+      <a href="/for/lobby-firms">Lobby Firms</a>
+      <a href="/for/law-firms">Law Firms</a>
+      <a href="/for/trade-associations">Trade Associations</a>
+      <a href="/for/public-affairs">Public Affairs & GR Firms</a>
+      <a href="/for/federal-gr">Federal Government Relations</a>
+      <a href="/for/local-gr">Local Government Relations</a>
+      <a href="/for/legislative-offices">Legislative Offices</a>
+      <a href="/for/legislators">Legislators</a>
+      <a href="/for/caucuses">Caucuses</a>
+      <a href="/for/congressional-offices">Congressional Offices</a>
+      <a href="/for/local-government">City & Municipal Government</a>
+      <a href="/for/government-agencies">Government Agencies</a>
+      <a href="/for/corporations">Corporations</a>
+      <a href="/for/startups">Startups</a>
+      <a href="/for/associations">Associations</a>
+      <a href="/for/chambers-of-commerce">Chambers of Commerce</a>
+      <a href="/for/education">Education</a>
+      <a href="/for/universities">Universities</a>
+      <a href="/for/advocacy">Advocacy & Think Tanks</a>
+      <a href="/for/media">Media</a>
+      <a href="/for/50-state-tracking">All-50-State Tracking</a>
+      <a href="/for/rfp-procurement">RFP & Procurement Tracking</a>
+      <a href="/for/government-cios">State Agency CIOs & IT Directors</a>
+      <a href="/for/legislative-research">Legislative Research & Councils</a>
+      </details>
+    <details class="nav-mobile-section" id="nav-mobile-coverage"><summary>Coverage</summary>
+      <a href="/federal">Federal</a>
+      <a href="/all-states">Multi-state</a>
+      <a href="/coverage">All 50 + Federal</a>
+      <a href="/states/alabama">Alabama</a>
+      <a href="/states/alaska">Alaska</a>
+      <a href="/states/arizona">Arizona</a>
+      <a href="/states/arkansas">Arkansas</a>
+      <a href="/states/california">California</a>
+      <a href="/states/colorado">Colorado</a>
+      <a href="/states/connecticut">Connecticut</a>
+      <a href="/states/delaware">Delaware</a>
+      <a href="/states/district-of-columbia">District of Columbia</a>
+      <a href="/states/florida">Florida</a>
+      <a href="/states/georgia">Georgia</a>
+      <a href="/states/hawaii">Hawaii</a>
+      <a href="/states/idaho">Idaho</a>
+      <a href="/states/illinois">Illinois</a>
+      <a href="/states/indiana">Indiana</a>
+      <a href="/states/iowa">Iowa</a>
+      <a href="/states/kansas">Kansas</a>
+      <a href="/states/kentucky">Kentucky</a>
+      <a href="/states/louisiana">Louisiana</a>
+      <a href="/states/maine">Maine</a>
+      <a href="/states/maryland">Maryland</a>
+      <a href="/states/massachusetts">Massachusetts</a>
+      <a href="/states/michigan">Michigan</a>
+      <a href="/states/minnesota">Minnesota</a>
+      <a href="/states/mississippi">Mississippi</a>
+      <a href="/states/missouri">Missouri</a>
+      <a href="/states/montana">Montana</a>
+      <a href="/states/nebraska">Nebraska</a>
+      <a href="/states/nevada">Nevada</a>
+      <a href="/states/new-hampshire">New Hampshire</a>
+      <a href="/states/new-jersey">New Jersey</a>
+      <a href="/states/new-mexico">New Mexico</a>
+      <a href="/states/new-york">New York</a>
+      <a href="/states/north-carolina">North Carolina</a>
+      <a href="/states/north-dakota">North Dakota</a>
+      <a href="/states/ohio">Ohio</a>
+      <a href="/states/oklahoma">Oklahoma</a>
+      <a href="/states/oregon">Oregon</a>
+      <a href="/states/pennsylvania">Pennsylvania</a>
+      <a href="/states/puerto-rico">Puerto Rico</a>
+      <a href="/states/rhode-island">Rhode Island</a>
+      <a href="/states/south-carolina">South Carolina</a>
+      <a href="/states/south-dakota">South Dakota</a>
+      <a href="/states/tennessee">Tennessee</a>
+      <a href="/states/texas">Texas</a>
+      <a href="/states/utah">Utah</a>
+      <a href="/states/vermont">Vermont</a>
+      <a href="/states/virginia">Virginia</a>
+      <a href="/states/washington">Washington</a>
+      <a href="/states/west-virginia">West Virginia</a>
+      <a href="/states/wisconsin">Wisconsin</a>
+      <a href="/states/wyoming">Wyoming</a>
+      
+      <a href="/coverage">View all coverage</a></details>
+    <details class="nav-mobile-section"><summary>vs</summary>
+      <a href="/vs">All comparisons</a>
+      <a href="/vs/quorum">vs Quorum</a>
+      <a href="/vs/fiscalnote">vs FiscalNote</a>
+      <a href="/vs/bloomberg-government">vs Bloomberg Government</a>
+      <a href="/vs/politico-pro">vs POLITICO Pro</a>
+      <a href="/vs/cq">vs CQ</a>
+      <a href="/vs/statenet">vs LexisNexis State Net</a>
+      <a href="/vs/plural">vs Plural</a>
+      <a href="/vs/billtrack50">vs BillTrack50</a>
+      <a href="/vs/fastdemocracy">vs FastDemocracy</a>
+      <a href="/vs/state-affairs">vs State Affairs</a>
+      <a href="/switch-from-telicon">Switch from Telicon</a>
+      <a href="/switch-from-capitoltrack">Switch from CapitolTrack</a>
+      <a href="/switch-from-fiscalnote">Switch from FiscalNote</a>
+      </details>
+    <details class="nav-mobile-section"><summary>Awards</summary>
+      <a href="/best-in-government-affairs">All States</a>
+      <a href="/best-in-government-affairs/texas">Texas</a>
+      <a href="/best-in-government-affairs/new-york">New York</a>
+      <a href="/best-in-government-affairs/california">California</a>
+      <a href="/best-in-government-affairs/arkansas">Arkansas</a>
+      <a href="/best-in-government-affairs/utah">Utah</a>
+      <a href="/best-in-government-affairs/arizona">Arizona</a>
+      <a href="/best-in-government-affairs/tennessee">Tennessee</a>
+      </details>
+    <details class="nav-mobile-section"><summary>Resources</summary>
+      <a href="/customers">Customer Stories</a>
+      <a href="/case-studies">All Case Studies</a>
+      <a href="/case-studies/desk-138">Contract Lobbyist Case Study</a>
+      <a href="/events">Events</a>
+      
+      <div class="mega-h">Guides & Reference</div>
+      <a href="/how-it-works">How USLege Works</a>
+      <a href="/guides">Government Affairs Guides</a>
+      <a href="/definitions">Definitions</a>
+      <a href="/reports">Reports</a>
+      <a href="/statistics">Legislative Statistics</a>
+      <a href="/stats">USLege by the Numbers</a>
+      <a href="/coverage">Full Coverage Map</a>
+      <a href="/webinars">Webinars</a>
+      <a href="/training">Book a Training</a>
+      <div class="mega-h">Media</div>
+      <a href="/blog">Blog: Guides & Analysis</a>
+      <a href="/podcast">Bills & Business Podcast</a>
+      <a href="/blog#media-appearances">Media Appearances</a>
+      <a href="/newsletters">The Political Spotlight</a>
+      <div class="mega-h">News</div>
+      <a href="/press">Press</a>
+      <a href="/news">News Archive</a>
+      </details>
+    <details class="nav-mobile-section"><summary>Company</summary>
+      <a href="/about">About</a>
+      <a href="/customers">Customers</a>
+      <a href="/customers/love">Reviews</a>
+      <a href="/careers">Careers</a>
+      <a href="/events">Events</a>
+      <a href="/security">Trust & Security</a>
+      <a href="https://app.vanta.com/uslege.ai/trust/bbpep2sjulifwr52vpaw9" target="_blank" rel="noopener">Trust Center</a>
+      <a href="/support">Support</a>
+      <a href="/accessibility">Accessibility</a>
+      <a href="/terms-and-conditions">Terms of Service</a>
+      <a href="/privacy-policy">Privacy Policy</a>
+      <a href="/faq">FAQ</a>
+      <a href="/contact-us">Contact</a>
+      </details>
+    <details class="nav-mobile-section"><summary>Pricing</summary>
+      <a href="/pricing">Pricing</a>
+      <a href="/contract-buyout">Contract Buyout</a>
+      <a href="/referral">Refer & Earn</a>
+      <a href="/referral-terms">Referral Program Terms</a>
+      </details>
+    <div class="nav-mobile-cta">
+      
+      <a href="https://app.uslege.ai" class="login">Log in</a>
+      <a href="/demo" class="btn-demo">Book a demo</a>
+    </div>
+  </div>
+</nav>
+
+
+<main id="page-content">
+
+<main id="main">
+
+<header class="hero" id="hero">
+  <div class="container">
+    <div class="eyebrow reveal">Coverage · Carrollton-Farmers Branch ISD, Texas</div>
+    <h1 class="reveal d1">Nothing said at <em>Carrollton-Farmers Branch Independent School District</em> gets missed.</h1>
+    <p class="hero-sub reveal d2">Somewhere in a Carrollton-Farmers Branch Independent School District board meeting is the exact moment that matters to you, and it's easy to miss if nobody's watching live. USLege watches every one automatically, so nothing slips through because a meeting ran long or started early.</p>
+    <div class="hero-cta-row reveal d3">
+      <a class="btn btn-primary-dark btn-large" href="/demo">See it live, book a demo</a>
+      <a class="btn btn-ghost-dark btn-large" href="#whats-included">What's included</a>
+    </div>
+  </div>
+</header>
+
+
+
+
+<style>
+.logo-bar{background:#FFFFFF;padding:14px 0 22px;border-bottom:1px solid rgba(1,127,119,0.10);position:relative;z-index:0}
+.logo-bar .lb-eyebrow{text-align:center;font-family:var(--mono,'JetBrains Mono',monospace);font-size:10.5px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(31,41,55,0.5);margin-bottom:9px}
+.logo-bar .lb-marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent 0%,black 8%,black 92%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0%,black 8%,black 92%,transparent 100%)}
+.logo-bar .lb-track{display:inline-flex;gap:80px;align-items:center;animation:lbscroll 60s linear infinite;white-space:nowrap}
+@media (prefers-reduced-motion: reduce){.logo-bar .lb-track{animation:none}}
+.logo-bar .lb-item{flex-shrink:0;display:flex;align-items:center}
+.logo-bar .lb-item img{height:52px;width:auto;display:block;filter:brightness(0);opacity:0.62;transition:opacity 200ms}
+.logo-bar .lb-item:hover img{opacity:0.95}
+/* Logos exported as solid-color cards (no transparency around the mark) turn
+   into a blank block under the silhouette filter above - opt them out so
+   they render in their own colors instead, same fix as the TPPF logo. */
+.logo-bar .lb-item--plain img{filter:none;opacity:1}
+.logo-bar .lb-item--plain:hover img{opacity:1}
+@keyframes lbscroll{from{transform:translateX(0)} to{transform:translateX(-50%)}}
+</style>
+<section class="logo-bar" aria-label="Cities running on USLege">
+  <div class="lb-eyebrow">Cities running on USLege</div>
+  <div class="lb-marquee"><div class="lb-track"></div></div>
+</section>
+<script>
+(function(){
+
+  var LOGOS = [{"n":"City of Arlington, TX","img":"cities/arlington-tx.svg","h":70},{"n":"City of Baytown, TX","img":"cities/baytown-tx.png","h":60},{"n":"City of Carrollton, TX","img":"cities/carrollton-tx.svg","h":70},{"n":"City of Coppell, TX","img":"cities/coppell-tx.png","h":60},{"n":"City of Fort Worth, TX","img":"cities/fort-worth-tx.svg","h":70},{"n":"City of Georgetown, TX","img":"cities/georgetown-tx.png","h":70},{"n":"City of Horseshoe Bay, TX","img":"cities/horseshoe-bay-tx.png","h":65},{"n":"City of Lago Vista, TX","img":"cities/lago-vista-tx.png","h":75},{"n":"City of San Diego, CA","img":"cities/san-diego-ca.svg","h":70},{"n":"The Colony, TX","img":"cities/the-colony-tx.png","h":65}];
+
+  document.querySelectorAll('.logo-bar .lb-track').forEach(function(track){
+    if(track.dataset.done) return; track.dataset.done='1';
+    var set='';
+    LOGOS.forEach(function(l){ set+='<div class="lb-item'+(l.plain?' lb-item--plain':'')+'"><img src="/assets/logos/'+l.img+'" alt="'+l.n.replace(/"/g,'&quot;')+'" loading="lazy" style="height:'+Math.round(l.h*0.75)+'px"></div>'; });
+    track.innerHTML=set+set;
+  });
+})();
+</script>
+
+
+
+<section class="get" id="whats-included">
+  <div class="container">
+    <div class="head">
+      <div class="eyebrow reveal">What's included</div>
+      <h2 class="reveal d1">Coverage that keeps up.</h2>
+      <p class="reveal d1">Every Carrollton-Farmers Branch Independent School District board meeting, watched, transcribed, and ready to search.</p>
+    </div>
+    <div class="get-grid">
+      <div class="gcard reveal d1">
+        <div class="k">Alerts</div>
+        <h3>Radar watches every meeting for you</h3>
+        <p>Get an alert the instant your issue is mentioned in a Carrollton-Farmers Branch Independent School District board meeting, before it shows up anywhere else.</p>
+      </div>
+      <div class="gcard reveal d1">
+        <div class="k">Video</div>
+        <h3>Every meeting, captured</h3>
+        <p>Full video of Carrollton-Farmers Branch Independent School District board meetings in one archive, no hunting across the site or YouTube for the right recording.</p>
+      </div>
+      <div class="gcard reveal d1">
+        <div class="k">Search & transcripts</div>
+        <h3>Every word, searchable and sourced</h3>
+        <p>Search a keyword, jump to the exact moment in the video, and pull the quote, with who said it attached.</p>
+      </div>
+      <div class="gcard reveal d1">
+        <div class="k">AI minutes</div>
+        <h3>Minutes, drafted automatically</h3>
+        <p>USLege's AI writes the board meeting minutes straight from the transcript, so nobody on your team has to sit through a recording and type them up by hand.</p>
+      </div>
+      <div class="gcard reveal d1">
+        <div class="k">Clips & briefings</div>
+        <h3>Share the moment that matters</h3>
+        <p>Clip the exchange, drop it in a briefing, and send leadership or clients exactly what happened, minutes after it happened.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<style>
+.record{padding:96px 0;background:var(--paper);border-top:1px solid var(--gray-100)}
+.record .head{text-align:center;max-width:780px;margin:0 auto 44px}
+.record .head h2{margin:16px 0 12px}
+.record .head p{opacity:0.85;font-size:17px;line-height:1.7}
+.record-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:900px;margin:0 auto 40px}
+.rstat{background:var(--teal-mist);border:1px solid var(--gray-100);border-radius:16px;padding:26px 24px;text-align:center}
+.rstat .n{font-family:var(--display);font-size:clamp(34px,4vw,48px);line-height:1;color:var(--teal-dark);letter-spacing:-0.02em}
+.rstat .l{font-family:var(--mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink);opacity:0.7;margin-top:10px}
+.record-list{list-style:none;max-width:900px;margin:0 auto;border:1px solid var(--gray-100);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-card)}
+.record-list li{display:grid;grid-template-columns:150px 1fr auto;gap:18px;align-items:center;padding:16px 22px;border-top:1px solid var(--gray-100);font-size:15px}
+.record-list li:first-child{border-top:0}
+.record-list .d{font-family:var(--mono);font-size:12.5px;color:var(--teal-dark)}
+.record-list .t{font-weight:500}
+.record-list .t span{display:block;font-weight:400;font-size:13.5px;opacity:0.7;margin-top:2px}
+.record-list .m{font-family:var(--mono);font-size:12px;opacity:0.7;white-space:nowrap}
+.record-list a{color:var(--teal-dark);border-bottom:1px solid rgba(1,127,119,0.35)}
+.record-note{max-width:900px;margin:18px auto 0;font-size:13px;opacity:0.65;text-align:center}
+@media(max-width:820px){.record-stats{grid-template-columns:1fr}.record-list li{grid-template-columns:1fr;gap:6px}}
+</style>
+
+<section class="record" id="on-the-record">
+  <div class="container">
+    <div class="head">
+      <div class="eyebrow reveal">On the record</div>
+      <h2 class="reveal d1">17 Carrollton-Farmers Branch Independent School District meetings on record since March 26, 2026.</h2>
+      <p class="reveal d2">These are real recordings in the USLege archive, roughly 24 hours of Carrollton-Farmers Branch Independent School District video in total, each one transcribed, searchable, and indexed to the moment. The most recent was recorded on Sep 17, 2026.</p>
+    </div>
+    <div class="record-stats reveal d1">
+      <div class="rstat"><div class="n">17</div><div class="l">Meetings recorded</div></div>
+      <div class="rstat"><div class="n">&asymp;24</div><div class="l">Est. hours of video</div></div>
+      <div class="rstat"><div class="n">Sep 17</div><div class="l">Most recent recording</div></div>
+    </div>
+    <ul class="record-list reveal d2">
+      
+      <li>
+        <div class="d">Sep 17, 2026</div>
+        <div class="t"><a href="https://app.uslege.ai/videos/124952" rel="noopener">School Board Meeting- Work-Study</a><span>Work-Study</span></div>
+        <div class="m">3 hr 15 min</div>
+      </li>
+      
+      <li>
+        <div class="d">Sep 10, 2026</div>
+        <div class="t"><a href="https://app.uslege.ai/videos/123696" rel="noopener">School Board Meeting- Work-Study</a><span>Work-Study</span></div>
+        <div class="m">4 min</div>
+      </li>
+      
+      <li>
+        <div class="d">Sep 3, 2026</div>
+        <div class="t"><a href="https://app.uslege.ai/videos/122473" rel="noopener">School Board Meeting- Regular Meeting</a><span>Regular Meeting</span></div>
+        <div class="m">2 hr 40 min</div>
+      </li>
+      
+      <li>
+        <div class="d">Sep 3, 2026</div>
+        <div class="t"><a href="https://app.uslege.ai/videos/122384" rel="noopener">School Board Meeting- Pre Meeting</a><span>Pre Meeting</span></div>
+        <div class="m">24 min</div>
+      </li>
+      
+      <li>
+        <div class="d">Aug 20, 2026</div>
+        <div class="t"><a href="https://app.uslege.ai/videos/120392" rel="noopener">School Board Meeting- Special Meeting</a><span>Special Meeting</span></div>
+        <div class="m">55 min</div>
+      </li>
+      
+    </ul>
+    <p class="record-note">Counts cover recordings from March 26, 2026 through September 26, 2026. Meeting links open in the USLege app.</p>
+  </div>
+</section>
+
+
+
+<style>
+.plat{padding:100px 0;background:var(--ink-3)}
+.plat .head{text-align:center;max-width:780px;margin:0 auto 52px}
+.plat .head .eyebrow{color:var(--teal-bright)}
+.plat .head h2{color:var(--paper);margin:16px 0 14px}
+.plat .head h2 em{color:var(--teal-bright)}
+.plat .head p{color:#B9C4C2;font-size:17px;line-height:1.7}
+.plat .head p a{color:var(--teal-bright);border-bottom:1px solid rgba(25,217,201,0.4)}
+.plat-photo{max-width:1000px;margin:0 auto 48px;border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,0.12);box-shadow:0 40px 90px -24px rgba(1,127,119,0.35),0 12px 32px -8px rgba(0,0,0,0.4)}
+.plat-photo img{display:block;width:100%;height:auto}
+.plat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:1000px;margin:0 auto}
+.pcard{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:18px;padding:32px 30px;transition:transform 220ms,border-color 220ms}
+.pcard:hover{transform:translateY(-4px);border-color:rgba(25,217,201,0.45)}
+.pcard .k{font-family:var(--mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal-bright);font-weight:600;margin-bottom:10px}
+.pcard h3{font-size:22px;margin-bottom:10px;color:var(--paper)}
+.pcard p{font-size:15px;line-height:1.65;color:#B9C4C2}
+@media(max-width:820px){.plat-grid{grid-template-columns:1fr}}
+</style>
+
+<section class="plat" id="the-archive">
+  <div class="container">
+    <div class="head">
+      <div class="eyebrow reveal">The archive behind this page</div>
+      <h2 class="reveal d1">The largest transcribed local government video archive, <em>made usable.</em></h2>
+      <p class="reveal d2">USLege maintains the largest searchable archive of local government video in the country. Carrollton-Farmers Branch Independent School District is one feed in it, alongside city councils, counties, school boards, and agencies nationwide. Every meeting that enters the archive gets the same treatment.</p>
+      <p class="reveal d3">If your team covers city, county, or school district affairs, see <a href="/for/local-government">USLege for city and municipal government</a> for the tools built around briefing councils, boards, and departments on exactly this kind of coverage.</p>
+      
+      
+      
+      
+      
+      <p class="reveal d3" style="margin-top:10px"><a href="/video/school-boards">See every school board meeting USLege covers &rarr;</a></p>
+    </div>
+    
+    <div class="plat-grid">
+      
+      <div class="pcard reveal d1">
+        <div class="k">AI meeting minutes</div>
+        <h3>Minutes, drafted for you</h3>
+        <p>Structured meeting minutes generated from every transcript: agenda items, motions, votes, and who said what. No waiting weeks for the official version.</p>
+      </div>
+      <div class="pcard reveal d2">
+        <div class="k">AI hearing summaries</div>
+        <h3>Hearings, summarized</h3>
+        <p>A clear summary of each meeting and hearing: what was discussed, who took which side, and what happens next. Read it in two minutes, or go straight to the tape.</p>
+      </div>
+      <div class="pcard reveal d1">
+        <div class="k">Witness extraction</div>
+        <h3>Find the person, not just the word</h3>
+        <p>Every speaker and witness is identified and indexed. Search for who testified on your issue, see every time they spoke, and jump straight to their moment in the video.</p>
+      </div>
+      <div class="pcard reveal d2">
+        <div class="k">AI search + exact match</div>
+        <h3>Search it two ways</h3>
+        <p>Ask a question in plain English and let AI search surface the discussion, or match the exact word or phrase when precision matters. Both run across the entire archive.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="also">
+  <div class="container">
+    <div class="eyebrow reveal">Beyond the board room</div>
+    <h2 class="reveal d1">You're covered on Carrollton-Farmers Branch Independent School District. <em>What about the rest?</em></h2>
+    <p class="sub reveal d1">USLege's coverage in Texas keeps growing well beyond Carrollton-Farmers Branch Independent School District.</p>
+    <p class="sub reveal d2" style="margin-top:24px;font-size:14.5px">USLege tracks cities, counties, school boards, agencies, special districts, MUD districts, townships, higher ed, and federal bodies nationwide. There's no place too small.</p>
+  </div>
+</section>
+
+<section class="ask">
+  <div class="container">
+    <div class="ask-card reveal">
+      <h2>Need somewhere else covered?</h2>
+      <p>Tell us once you're a customer, and we'll add the feed. Coverage grows based on what customers actually need, not a fixed list.</p>
+      <a class="btn btn-primary" href="/demo">See it live: book a demo</a>
+    </div>
+  </div>
+</section>
+
+<style>
+.cidx{padding:96px 0;background:var(--paper);text-align:center;border-top:1px solid var(--gray-100)}
+.cidx h2{margin:16px 0 12px}
+.cidx .sub{opacity:0.85;max-width:62ch;margin:0 auto 30px;font-size:16.5px}
+.cidx-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:920px;margin:0 auto 24px}
+.cidx-row a{font-family:var(--mono);font-size:12px;letter-spacing:0.05em;text-transform:uppercase;color:var(--teal-dark);background:var(--teal-tint);border:1px solid rgba(1,127,119,0.22);border-radius:999px;padding:10px 18px;font-weight:600;transition:all 180ms ease}
+.cidx-row a:hover{background:var(--teal);color:#fff;transform:translateY(-2px)}
+.cidx-more{max-width:920px;margin:0 auto 34px}
+.cidx-more summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--teal-dark);font-weight:600;padding:10px 4px}
+.cidx-more summary::-webkit-details-marker{display:none}
+.cidx-more summary::after{content:"↓";transition:transform 180ms ease}
+.cidx-more[open] summary::after{transform:rotate(180deg)}
+.cidx-more summary:hover{color:var(--teal)}
+.cidx-more .cidx-row{margin-top:18px}
+</style>
+
+<section class="cidx" id="more-cities">
+  <div class="container">
+    <div class="eyebrow reveal">One archive, many cities</div>
+    <h2 class="reveal d1">Tracking city halls <em>across the country.</em></h2>
+    <p class="sub reveal d1">The same video, transcripts, AI minutes, witness search, and alerts on this page are live for cities nationwide, with new feeds added every month.</p>
+    
+    <div class="cidx-row reveal d2">
+      <a href="/tracking/auburn-city-council">Auburn City Council</a><a href="/tracking/birmingham-city-council">Birmingham City Council</a><a href="/tracking/decatur-city-council">Decatur City Council</a><a href="/tracking/dothan-city-council">Dothan City Council</a><a href="/tracking/gadsden-city-council">Gadsden City Council</a>
+    </div>
+    <details class="cidx-more reveal d2">
+      <summary>Show 136 more cities</summary>
+      <div class="cidx-row">
+        <a href="/tracking/hoover-city-council">Hoover City Council</a><a href="/tracking/madison-city-council">Madison City Council</a><a href="/tracking/mobile-city-council">Mobile City Council</a><a href="/tracking/montgomery-city-council">Montgomery City Council</a><a href="/tracking/opelika-city-council">Opelika City Council</a><a href="/tracking/phenix-city-council">Phenix City Council</a><a href="/tracking/prattville-city-council">Prattville City Council</a><a href="/tracking/tuscaloosa-city-council">Tuscaloosa City Council</a><a href="/tracking/city-of-springdale">City of Springdale</a><a href="/tracking/berkeley-city-council">Berkeley City Council</a><a href="/tracking/city-of-banning">City of Banning</a><a href="/tracking/city-of-beaumont">City of Beaumont</a><a href="/tracking/city-of-coachella">City of Coachella</a><a href="/tracking/city-of-corona">City of Corona</a><a href="/tracking/city-of-desert-hot-springs">City of Desert Hot Springs</a><a href="/tracking/city-of-eastvale">City of Eastvale</a><a href="/tracking/city-of-indian-wells">City of Indian Wells</a><a href="/tracking/city-of-indio">City of Indio</a><a href="/tracking/city-of-jurupa-valley-city-council">City of Jurupa Valley City Council</a><a href="/tracking/city-of-moreno-valley">City of Moreno Valley</a><a href="/tracking/city-of-murrieta">City of Murrieta</a><a href="/tracking/city-of-newport-beach-city-council">City of Newport Beach City Council</a><a href="/tracking/city-of-norco">City of Norco</a><a href="/tracking/city-of-palm-desert">City of Palm Desert</a><a href="/tracking/city-of-palm-springs">City of Palm Springs</a><a href="/tracking/city-of-perris">City of Perris</a><a href="/tracking/city-of-pomona-city-council">City of Pomona City Council</a><a href="/tracking/city-of-rancho-mirage">City of Rancho Mirage</a><a href="/tracking/city-of-riverside">City of Riverside</a><a href="/tracking/city-of-san-diego-city-council">City of San Diego City Council</a><a href="/tracking/city-of-san-jose">City of San Jose</a><a href="/tracking/city-of-santa-barbara-city-council">City of Santa Barbara City Council</a><a href="/tracking/city-of-wildomar">City of Wildomar</a><a href="/tracking/los-angeles-city-clerk">Los Angeles City Clerk</a><a href="/tracking/oakland-city-council">Oakland City Council</a><a href="/tracking/city-of-bonita-springs-city-council">City of Bonita Springs City Council</a><a href="/tracking/city-of-fort-myers">City of Fort Myers</a><a href="/tracking/city-of-ocala-city-council">City of Ocala City Council</a><a href="/tracking/city-of-orlando-city-council">City of Orlando City Council</a><a href="/tracking/city-of-punta-gorda-city-council">City of Punta Gorda City Council</a><a href="/tracking/city-of-sanibel">City of Sanibel</a><a href="/tracking/town-of-fort-myers-beach">Town of Fort Myers Beach</a><a href="/tracking/city-council-of-indianapolis">City Council of Indianapolis</a><a href="/tracking/city-of-bloomington">City of Bloomington</a><a href="/tracking/city-of-carmel">City of Carmel</a><a href="/tracking/city-of-columbus-city-council">City of Columbus City Council</a><a href="/tracking/city-of-evansville">City of Evansville</a><a href="/tracking/city-of-fishers">City of Fishers</a><a href="/tracking/city-of-fort-wayne-city-council">City of Fort Wayne City Council</a><a href="/tracking/city-of-gary">City of Gary</a><a href="/tracking/city-of-greenwood">City of Greenwood</a><a href="/tracking/city-of-hammond">City of Hammond</a><a href="/tracking/city-of-jeffersonville-city-council">City of Jeffersonville City Council</a><a href="/tracking/city-of-kokomo">City of Kokomo</a><a href="/tracking/city-of-lafayette-city-council">City of Lafayette City Council</a><a href="/tracking/city-of-mishawaka">City of Mishawaka</a><a href="/tracking/city-of-muncie">City of Muncie</a><a href="/tracking/city-of-tipton-indiana">City of Tipton, Indiana</a><a href="/tracking/city-of-westfield-city-council">City of Westfield City Council</a><a href="/tracking/town-of-chelmsford-select-board">Town of Chelmsford Select Board</a><a href="/tracking/city-of-saratoga-springs">City of Saratoga Springs</a><a href="/tracking/new-york-city-council">New York City Council</a><a href="/tracking/troy-city-council">Troy City Council</a><a href="/tracking/charlotte-city-council">Charlotte City Council</a><a href="/tracking/evendale-village-city-council">Evendale Village City Council</a><a href="/tracking/kirtland-city-council">Kirtland City Council</a><a href="/tracking/mayfield-heights-city-council">Mayfield Heights City Council</a><a href="/tracking/mentor-city-council">Mentor City Council</a><a href="/tracking/richmond-heights-city-council">Richmond Heights City Council</a><a href="/tracking/shaker-heights-city-council">Shaker Heights City Council</a><a href="/tracking/sharonville-city-council">Sharonville City Council</a><a href="/tracking/solon-city-council">Solon City Council</a><a href="/tracking/strongsville-city-council">Strongsville City Council</a><a href="/tracking/west-chester-township">West Chester Township</a><a href="/tracking/wickliffe-city-council">Wickliffe City Council</a><a href="/tracking/portland-city-council">Portland City Council</a><a href="/tracking/memphis-city-council">Memphis City Council</a><a href="/tracking/city-of-allen-city-council">City of Allen City Council</a><a href="/tracking/city-of-anna-city-council">City of Anna City Council</a><a href="/tracking/city-of-arlington">City of Arlington</a><a href="/tracking/city-of-austin">City of Austin</a><a href="/tracking/city-of-brownsville-city-commission">City of Brownsville City Commission</a><a href="/tracking/city-of-carrollton-city-council">City of Carrollton City Council</a><a href="/tracking/city-of-cedar-hill-city-council">City of Cedar Hill City Council</a><a href="/tracking/city-of-celina-city-council">City of Celina City Council</a><a href="/tracking/city-of-corpus-christi">City of Corpus Christi</a><a href="/tracking/city-of-corsicana-city-council">City of Corsicana City Council</a><a href="/tracking/dallas-city-council">City of Dallas</a><a href="/tracking/city-of-desoto-city-council">City of DeSoto City Council</a><a href="/tracking/city-of-denton-city-council">City of Denton City Council</a><a href="/tracking/city-of-el-paso">City of El Paso</a><a href="/tracking/city-of-farmers-branch-city-council">City of Farmers Branch City Council</a><a href="/tracking/city-of-forney-city-council">City of Forney City Council</a><a href="/tracking/city-of-fort-worth">City of Fort Worth</a><a href="/tracking/city-of-frisco-city-council">City of Frisco City Council</a><a href="/tracking/city-of-gainesville-city-council">City of Gainesville City Council</a><a href="/tracking/city-of-garland-city-council">City of Garland City Council</a><a href="/tracking/city-of-georgetown-city-council">City of Georgetown City Council</a><a href="/tracking/city-of-grand-prairie-city-council">City of Grand Prairie City Council</a><a href="/tracking/city-of-houston">City of Houston</a><a href="/tracking/city-of-irving-city-council">City of Irving City Council</a><a href="/tracking/city-of-killeen-city-council">City of Killeen City Council</a><a href="/tracking/city-of-la-marque">City of La Marque</a><a href="/tracking/city-of-lago-vista-city-council">City of Lago Vista City Council</a><a href="/tracking/city-of-lewisville-city-council">City of Lewisville City Council</a><a href="/tracking/city-of-lubbock">City of Lubbock</a><a href="/tracking/city-of-lufkin-city-council">City of Lufkin City Council</a><a href="/tracking/city-of-mckinney-city-council">City of McKinney City Council</a><a href="/tracking/city-of-mesquite-city-council">City of Mesquite City Council</a><a href="/tracking/city-of-plano">City of Plano</a><a href="/tracking/city-of-richardson-city-council">City of Richardson City Council</a><a href="/tracking/city-of-rockwall">City of Rockwall</a><a href="/tracking/city-of-rollingwood">City of Rollingwood</a><a href="/tracking/city-of-rowlett-city-council">City of Rowlett City Council</a><a href="/tracking/city-of-san-antonio">City of San Antonio</a><a href="/tracking/city-of-sherman">City of Sherman</a><a href="/tracking/city-of-south-padre-island">City of South Padre Island</a><a href="/tracking/city-of-the-colony-city-council">City of The Colony City Council</a><a href="/tracking/city-of-waxahachie-city-council">City of Waxahachie City Council</a><a href="/tracking/granbury-city-council">Granbury City Council</a><a href="/tracking/midland-city-council">Midland City Council</a><a href="/tracking/town-of-addison-city-council">Town of Addison City Council</a><a href="/tracking/town-of-prosper">Town of Prosper</a><a href="/tracking/albany-common-council">Albany Common Council</a><a href="/tracking/temecula-city-council">Temecula City Council</a><a href="/tracking/huntsville-city-council">Huntsville City Council</a><a href="/tracking/city-of-goleta-city-council">City of Goleta City Council</a><a href="/tracking/city-of-brea-city-council">City of Brea City Council</a><a href="/tracking/city-of-calimesa">City of Calimesa</a><a href="/tracking/city-of-san-jacinto">City of San Jacinto</a><a href="/tracking/city-of-bastrop-city-council">City of Bastrop City Council</a><a href="/tracking/city-of-la-quinta">City of La Quinta</a><a href="/tracking/city-of-cathedral-city">City of Cathedral City</a><a href="/tracking/florence-city-council">Florence City Council</a><a href="/tracking/city-of-menifee">City of Menifee</a><a href="/tracking/liberty-township-delaware-county-ohio">Liberty Township, Delaware County</a>
+      </div>
+    </details>
+    <a class="btn btn-primary reveal d3" href="/coverage">Browse all coverage</a>
+  </div>
+</section>
+
+
+<section class="faq-sec">
+  <div class="container">
+    <div class="head">
+      <div class="eyebrow reveal">Questions</div>
+      <h2 class="reveal d1">Carrollton-Farmers Branch Independent School District tracking, <em>answered.</em></h2>
+    </div>
+    <div class="faq-list reveal d1">
+      <details class="faq" open>
+        <summary>What happens if I miss a Carrollton-Farmers Branch Independent School District board meeting?</summary>
+        <div class="a">Carrollton-Farmers Branch Independent School District board meeting recordings are transcribed and indexed automatically, so you can catch up without watching hours of footage.</div>
+      </details>
+      <details class="faq">
+        <summary>How fast do I find out something happened at Carrollton-Farmers Branch Independent School District?</summary>
+        <div class="a">As it happens. Radar alerts you the moment your issue is mentioned in a Carrollton-Farmers Branch Independent School District board meeting, live.</div>
+      </details>
+      <details class="faq">
+        <summary>Is there a transcript, or just video?</summary>
+        <div class="a">Both. Every Carrollton-Farmers Branch Independent School District board meeting gets a full, searchable transcript alongside the video, with speakers identified.</div>
+      </details>
+      <details class="faq">
+        <summary>Can I get Carrollton-Farmers Branch Independent School District coverage alongside Texas state government?</summary>
+        <div class="a">Yes. USLege's Texas coverage extends well beyond Carrollton-Farmers Branch Independent School District.</div>
+      </details>
+      <details class="faq">
+        <summary>What if my body isn't covered yet?</summary>
+        <div class="a">Tell us once you're a customer. Coverage expands based on real requests, and additions move fast.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="pre-footer">
+  <div class="container">
+    <div class="eyebrow reveal">See it live</div>
+    <h2 class="reveal d1">Watch USLege search a real <em>Carrollton-Farmers Branch ISD board meeting</em> transcript.</h2>
+    <p class="sub reveal d2">Thirty minutes, live product, your issues, on a real recording.</p>
+    <div class="cta-stack reveal d3">
+      <a href="/demo" class="btn btn-primary btn-large">Book a demo →</a>
+      <a href="/coverage" class="secondary">Or see everything we cover ↑</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+</main>
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand"><a href="/" aria-label="USLege home"><img src="/assets/uslege-logo-light.png" alt="USLege" style="height:32px;width:auto;display:block" loading="lazy"></a><p class="tagline">The AI legislative intelligence platform built for the entire United States.</p>
+    <div class="footer-social" aria-label="USLege on social media">
+      <a href="https://www.linkedin.com/company/uslege-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.31h4.52V23H.24V8.31zM8.34 8.31h4.33v2h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.92V23h-4.51v-7.13c0-1.7-.03-3.89-2.37-3.89-2.37 0-2.73 1.85-2.73 3.76V23H8.34V8.31z"/></svg></a>
+      <a href="https://x.com/USLege_ai" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.24 2.25h3.31l-7.23 8.26L22.83 21.75h-6.66l-5.22-6.82-5.97 6.82H1.66l7.73-8.84L1.17 2.25h6.83l4.72 6.23 5.52-6.23zm-1.16 17.52h1.83L7.08 4.13H5.11l11.97 15.64z"/></svg></a>
+      <a href="https://www.youtube.com/@BillsandBusiness" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg></a>
+      <a href="https://www.instagram.com/uslege.ai/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.38A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.8.72 1.48 1.38 2.13a5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.15A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm7.85-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44z"/></svg></a>
+      <a href="https://www.facebook.com/USLegeai/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.09 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.09 24 18.1 24 12.07z"/></svg></a>
+      <a href="https://uslege.beehiiv.com/" target="_blank" rel="noopener" aria-label="Newsletter"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6L22 7"/></svg></a>
+      <a href="/podcast" aria-label="Bills and Business podcast"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v1a7 7 0 0 0 14 0v-1M12 18v4M8 22h8"/></svg></a>
+    </div></div>
+    <details class="footer-col footer-acc"><summary class="footer-h">Platform</summary><a href="/platform">Platform overview</a><a href="/mcp">USLege MCP</a><a href="/ai-assistant">AI Assistant</a><a href="/ai-recommendations">AI Recommendations</a><a href="/legislative-crm">Legislative CRM</a><a href="/bill-tracking">Bill Tracking</a><a href="/bill-text-comparison">Bill Text Comparison</a><a href="/refiled-bills">Refiled Bills</a><a href="/hearing-intelligence">Hearing Intelligence</a><a href="/video">Video Search</a><a href="/regulatory-tracking">Regulatory Tracking</a><a href="/local-government-tracking">Local & Ordinance Tracking</a><a href="/legislative-calendar">Legislative Calendar</a><a href="/stakeholder-intelligence">Stakeholder Intelligence</a><a href="/legislator-directory">Legislator Directory</a><a href="/committee-directory">Committee Directory</a><a href="/agency-directory">Agency Directory</a><a href="/lobbyist-registry">Lobbyist Registry</a><a href="/campaign-finance">Campaign Finance</a><a href="/witnesses">Witnesses</a><a href="/vote-tracking">Vote Tracking</a><a href="/social-media-monitoring">Social Media Monitoring</a><a href="/press-release-monitoring">Press Release Monitoring</a><a href="/action-center">Action Center</a><a href="/statute-search">Statute Search</a><a href="/executive-order-tracking">Executive Orders</a><a href="/state-register-tracking">State Registers</a><a href="/interim-studies">Interim Studies</a><a href="/budget-research">Budget Research</a><a href="/advanced-bill-search">Advanced Bill Search</a><a href="/legislative-alerts">Legislative Alerts</a><a href="/hearing-clips">Hearing Clips & Transcripts</a><a href="/rule-version-comparison">Rule Version Comparison</a><a href="/portals">Client Portals</a><a href="/dashboards">Custom Dashboards</a><a href="/custom-reports">Custom Reports</a><a href="/workflows">Workflows & Task Templates</a><a href="/dashboards">Dashboards</a><a href="/portals">Portals</a><a href="/api">API & Integrations</a><a href="/coverage">All Coverage</a></details>
+    <details class="footer-col footer-acc"><summary class="footer-h">Company</summary><a href="/about">About</a><a href="/customers">Customers</a><a href="/customers/love">Reviews</a><a href="/careers">Careers</a><a href="/press">Press</a><a href="/contact-us">Contact</a><a href="/security">Trust & Security</a><a href="https://app.vanta.com/uslege.ai/trust/bbpep2sjulifwr52vpaw9" target="_blank" rel="noopener">Trust Center</a><a href="/faq">FAQ</a></details>
+    <details class="footer-col footer-acc"><summary class="footer-h">Resources</summary><a href="/legislative-calendar">Legislative Session Calendar</a><a href="/blog">Blog: Guides & Analysis</a><a href="/podcast">Bills & Business Podcast</a><a href="/blog#media-appearances">Media Appearances</a><a href="/events">Events</a><a href="/newsletters">The Political Spotlight</a><a href="/news">News Archive</a><a href="/case-studies/desk-138">Case Study: Desk 138</a><a href="/best-in-government-affairs/texas">Best in GA: Texas</a><a href="/best-in-government-affairs/new-york">Best in GA: New York</a><a href="/best-in-government-affairs/california">Best in GA: California</a><a href="/referral">Refer & Earn</a><a href="/contract-buyout">Contract Buyout</a></details>
+  </div>
+  <div class="footer-solutions-row">
+    <details class="footer-states footer-acc"><summary class="footer-h">Solutions</summary><div class="footer-states-links"><a href="/for/government">Government</a><a href="/for/lobby-firms">Lobby Firms</a><a href="/for/law-firms">Law Firms</a><a href="/for/trade-associations">Trade Associations</a><a href="/for/associations">Associations</a><a href="/for/public-affairs">Public Affairs & GR Firms</a><a href="/for/corporations">Corporations</a><a href="/for/advocacy">Advocacy & Think Tanks</a></div></details>
+    <details class="footer-states footer-acc"><summary class="footer-h">Compare</summary><div class="footer-states-links"><a href="/vs">All comparisons</a><a href="/vs/quorum">vs Quorum</a><a href="/vs/fiscalnote">vs FiscalNote</a><a href="/vs/bloomberg-government">vs Bloomberg Government</a><a href="/vs/politico-pro">vs POLITICO Pro</a><a href="/vs/cq">vs CQ</a><a href="/vs/statenet">vs LexisNexis State Net</a><a href="/vs/plural">vs Plural</a><a href="/vs/billtrack50">vs BillTrack50</a><a href="/vs/fastdemocracy">vs FastDemocracy</a><a href="/vs/state-affairs">vs State Affairs</a><a href="/switch-from-telicon">Switch from Telicon</a><a href="/switch-from-capitoltrack">Switch from CapitolTrack</a><a href="/switch-from-fiscalnote">Switch from FiscalNote</a></div></details>
+    <details class="footer-states footer-acc"><summary class="footer-h">Coverage</summary><div class="footer-states-links"><a href="/all-states">All States</a><a href="/federal">Federal</a><a href="/video">Local Government</a><a href="/video/school-boards">School Boards</a><a href="/coverage">View all coverage</a></div></details>
+  </div>
+  <div class="footer-bottom"><span>© 2026 USLege, Inc. · SOC 2 Type II · TX-RAMP</span><span><a href="/security">Trust & Security</a> · <a href="https://app.vanta.com/uslege.ai/trust/bbpep2sjulifwr52vpaw9" target="_blank" rel="noopener">Trust Center</a> · <a href="/terms-and-conditions">Terms of Service</a> · <a href="/privacy-policy">Privacy Policy</a> · <a href="/accessibility">Accessibility</a> · <a href="https://status.uslege.ai/" target="_blank" rel="noopener">Status</a> · <a href="/sitemap">Sitemap</a></span></div>
+</footer>
+
+
+<script>
+(function(){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  document.querySelectorAll('.faq').forEach(function(d){d.addEventListener('toggle',function(){if(d.open){d.parentNode.querySelectorAll('details[open]').forEach(function(o){if(o!==d)o.open=false;});}});});
+})();
+</script>
+
+<script>
+(function(){
+  var burger=document.getElementById('nav-burger');
+  var menu=document.getElementById('nav-mobile');
+  if(burger&&menu){
+    burger.addEventListener('click',function(){
+      var open=menu.classList.toggle('open');
+      burger.setAttribute('aria-expanded',open);
+      menu.setAttribute('aria-hidden',!open);
+    });
+  }
+})();
+</script>
+<script>
+(function(){
+  var mq = window.matchMedia('(min-width:921px)');
+  function apply(){ document.querySelectorAll('details.footer-acc.footer-col').forEach(function(d){ d.open = mq.matches; }); }
+  apply(); mq.addEventListener('change', apply);
+})();
+</script>
+<script>
+(function(){
+  if(window.__usDD)return;window.__usDD=1;
+  var dropdowns=Array.prototype.slice.call(document.querySelectorAll('.nav-dropdown')).filter(function(dd){return dd.querySelector('.nav-dropdown-toggle');});
+  function closeAll(except){
+    dropdowns.forEach(function(dd){
+      if(dd!==except){dd.classList.remove('open');dd.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded','false');}
+    });
+  }
+  dropdowns.forEach(function(dd){
+    var toggle=dd.querySelector('.nav-dropdown-toggle');
+    toggle.addEventListener('click',function(e){
+      e.stopPropagation();
+      var opening=!dd.classList.contains('open');
+      closeAll(dd);
+      dd.classList.toggle('open',opening);
+      toggle.setAttribute('aria-expanded',opening);
+    });
+  });
+  document.addEventListener('click',function(){closeAll(null);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll(null);});
+})();
+</script>
+<script>
+(function(){
+  var input=document.getElementById('site-search');
+  var results=document.getElementById('site-search-results');
+  var wrap=document.getElementById('nav-search');
+  if(!input||!results||!wrap)return;
+  var cache=null,fetching=null;
+  function ensureData(){
+    if(cache)return Promise.resolve(cache);
+    if(fetching)return fetching;
+    fetching=fetch('/search-index.json').then(function(r){return r.json();}).then(function(d){cache=Array.isArray(d)?d:[];return cache;}).catch(function(){cache=[];return cache;});
+    return fetching;
+  }
+  function clear(){
+    results.innerHTML='';
+    results.hidden=true;
+    input.setAttribute('aria-expanded','false');
+  }
+  function renderResults(items){
+    results.innerHTML='';
+    if(!items.length){
+      var empty=document.createElement('div');
+      empty.className='nav-search-empty';
+      empty.textContent='Even wizards don’t know everything (yet). Try another search.';
+      results.appendChild(empty);
+      results.hidden=false;
+      input.setAttribute('aria-expanded','true');
+      return;
+    }
+    items.slice(0,8).forEach(function(item,i){
+      var a=document.createElement('a');
+      a.href=item.url;
+      a.className='nav-search-result'+(i===0?' active':'');
+      a.setAttribute('role','option');
+      var t=document.createElement('span');
+      t.className='nav-search-result-title';
+      t.textContent=item.title||item.url;
+      a.appendChild(t);
+      if(item.description){
+        var d=document.createElement('span');
+        d.className='nav-search-result-desc';
+        d.textContent=item.description;
+        a.appendChild(d);
+      }
+      results.appendChild(a);
+    });
+    results.hidden=false;
+    input.setAttribute('aria-expanded','true');
+  }
+  function matchScore(query,item){
+    var title=(item.title||'').toLowerCase();
+    var desc=(item.description||'').toLowerCase();
+    var esc=query.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    var wordRe=new RegExp('\\b'+esc+'\\b');
+    if(title===query)return 0;
+    if(title.indexOf('('+query+')')!==-1)return 1;
+    if(title.indexOf(query)===0)return 2;
+    if(wordRe.test(title))return 3;
+    if(title.indexOf(query)!==-1)return 4;
+    if(wordRe.test(desc))return 5;
+    if(desc.indexOf(query)!==-1)return 6;
+    return -1;
+  }
+  /* City abbreviation/full-name aliases, so "LA" and "Los Angeles" both find the same
+     pages regardless of which form a given page's title happens to use. */
+  var SEARCH_ALIASES={
+    'la':['los angeles'],'los angeles':['la'],
+    'sf':['san francisco'],'san francisco':['sf'],
+    'atl':['atlanta'],'atlanta':['atl'],
+    'okc':['oklahoma city'],'oklahoma city':['okc'],
+    'kc':['kansas city'],'kansas city':['kc'],
+    'slc':['salt lake city'],'salt lake city':['slc'],
+    'sd':['san diego'],'san diego':['sd'],
+    'phx':['phoenix'],'phoenix':['phx'],
+    'jax':['jacksonville'],'jacksonville':['jax'],
+    'dfw':['dallas','fort worth'],
+    'nyc':['new york city','new york'],'new york':['nyc'],'new york city':['nyc'],
+    'dc':['washington','district of columbia'],'washington dc':['dc']
+  };
+  function bestScore(query,item){
+    /* A direct match on what was actually typed always outranks an alias-only
+       match at the same tier -- e.g. searching "Los Angeles" should surface the
+       Los Angeles page above Louisiana, even though both legitimately match "LA". */
+    var direct=matchScore(query,item);
+    var aliasBest=-1;
+    (SEARCH_ALIASES[query]||[]).forEach(function(t){
+      var s=matchScore(t,item);
+      if(s!==-1&&(aliasBest===-1||s<aliasBest))aliasBest=s;
+    });
+    var best=direct===-1?aliasBest:(aliasBest===-1?direct:Math.min(direct,aliasBest));
+    return {best:best,direct:direct===-1?99:direct};
+  }
+  function runSearch(raw){
+    var query=(raw||'').trim().toLowerCase();
+    if(!query){clear();return;}
+    ensureData().then(function(items){
+      var scored=items.map(function(item){var s=bestScore(query,item);return {item:item,score:s.best,direct:s.direct};}).filter(function(s){return s.score!==-1;});
+      scored.sort(function(a,b){return a.score-b.score||a.direct-b.direct;});
+      renderResults(scored.map(function(s){return s.item;}));
+    });
+  }
+  input.addEventListener('focus',function(){ensureData();if(input.value.trim())runSearch(input.value);});
+  input.addEventListener('input',function(){runSearch(input.value);});
+  input.addEventListener('keydown',function(e){
+    if(e.key==='Enter'){
+      var first=results.querySelector('.nav-search-result');
+      if(first){e.preventDefault();window.location.href=first.getAttribute('href');}
+    }else if(e.key==='Escape'){
+      clear();input.blur();
+    }
+  });
+  document.addEventListener('click',function(e){
+    if(!wrap.contains(e.target))clear();
+  });
+})();
+</script>
+<script>
+(function(){
+  var p=location.pathname.replace(/\/$/,'');
+  document.querySelectorAll('.nav-menu a,.footer-col a').forEach(function(a){
+    var h=(a.getAttribute('href')||'').replace(/\/$/,'');
+    if(h&&h===p)a.classList.add('current');
+  });
+  ['solutions-dropdown','coverage-dropdown','compare-dropdown','awards-dropdown','media-dropdown','company-dropdown','pricing-dropdown'].forEach(function(id){
+    var dd=document.getElementById(id);
+    if(dd&&dd.querySelector('a.current'))dd.classList.add('current');
+  });
+  if(/[?&]wf=1/.test(location.search)){
+    var q=location.search.replace(/[?&]wf=1/,'').replace(/^&/,'?');
+    history.replaceState(null,'',location.pathname+q+location.hash);
+  }
+})();
+</script>
+</body>
+<script>
+/* Reveal safety net: if the IntersectionObserver never fires (old browser, throttled tab,
+   instant anchor jump), no content may stay hidden. Reveals anything at or above the viewport. */
+(function(){
+  function sweep(){
+    document.querySelectorAll('.reveal:not(.in)').forEach(function(el){
+      if(el.getBoundingClientRect().top < window.innerHeight) el.classList.add('in');
+    });
+  }
+  var t; window.addEventListener('scroll', function(){ if(t) return; t=requestAnimationFrame(function(){ t=null; sweep(); }); }, {passive:true});
+  setTimeout(sweep, 1800);
+  setTimeout(sweep, 4000);
+})();
+</script>
+</html>
