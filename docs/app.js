@@ -87,7 +87,7 @@
     if (view === "size") renderSize();
   }
 
-  // Switches between the "Overview" and "By district size" views.
+  // Switches between the "Overview", "By district size" and "Sources" views.
   function setView(name) {
     view = name;
     document.querySelectorAll("[data-view]").forEach((el) => { el.hidden = el.dataset.view !== name; });
@@ -144,12 +144,11 @@
     const all = sizeStats(rows, enrollCol);
     const label = (cfg.recordLabel || "records").toLowerCase();
     const left = current.rows.length - rows.length;
-    $("size-note").textContent = "Districts are grouped by NCES student enrollment (2023)." +
-      (left ? ` ${left.toLocaleString()} ${label} without an NCES enrollment figure are left out of this tab.` : "");
+    $("size-note").textContent = "Districts are grouped by student enrollment (2023)." +
+      (left ? ` ${left.toLocaleString()} ${label} without an enrollment figure are left out of this tab.` : "");
 
     // The 10,000-student rule
     $("size-law").hidden = current.law === "none";
-    $("law-link").href = st.lawUrl;
     const covered = sizeStats(rows.filter((r) => enroll(r) >= st.lawThreshold), enrollCol);
     const lawBody = $("law-body");
     lawBody.innerHTML = "";
@@ -527,14 +526,15 @@
   ["x-col", "y-col", "chart-type", "chart-limit"].forEach((id) => $(id).addEventListener("change", renderChart));
   document.querySelectorAll("[data-view-tab]").forEach((b) => b.addEventListener("click", () => {
     setView(b.dataset.viewTab);
-    history.replaceState(null, "", b.dataset.viewTab === "size" ? "#size" : location.pathname + location.search);
+    history.replaceState(null, "", b.dataset.viewTab === "overview" ? location.pathname + location.search : `#${b.dataset.viewTab}`);
   }));
-  // Header links: "By district size" opens that view; the others jump to a section of the overview.
+  // Header links: "By district size" and "Sources" open those views; the others jump to a section of the overview.
   document.querySelectorAll(".links a").forEach((a) => a.addEventListener("click", () => {
     setView(a.dataset.viewLink || "overview");
   }));
-  if (location.hash === "#size") setView("size");
-  window.addEventListener("hashchange", () => { if (location.hash === "#size") setView("size"); });
+  const viewFromHash = () => { if (["#size", "#sources"].includes(location.hash)) setView(location.hash.slice(1)); };
+  viewFromHash();
+  window.addEventListener("hashchange", viewFromHash);
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
     if (!current) return;
     renderChart();

@@ -5,12 +5,12 @@ window.SITE_CONFIG = {
   // CSV files to show. Each one gets its own tab on the page when there is more than one.
   dataFiles: [
     { name: "Texas", file: "data/data.csv",
-      note: "1,017 Texas school districts, from the project spreadsheet.",
-      footer: "Poverty figures are for children ages 5–17. Data is refreshed from the project spreadsheet daily." },
+      note: "1,017 Texas school districts.",
+      footer: "Poverty figures are for children ages 5–17. Data is refreshed daily. Sources are listed on the Sources tab." },
     // law: "none" hides the 10,000-student rule card on the "By district size" tab.
-    { name: "United States", file: "data/national.csv", textColumns: ["NCES LEAID"], law: "none",
-      note: "All 13,132 US school districts in the Census SAIPE 2024 file. Meeting counts are from CivicSearch's district list (October 29, 2026), which covers 1,206 of these districts; the rest show 0.",
-      footer: "Poverty figures are for children ages 5–17. This data is a snapshot from October 29, 2026." }
+    { name: "United States", file: "data/national.csv", textColumns: ["District ID"], law: "none",
+      note: "13,132 US school districts. Meeting counts are available for 1,206 of them; the rest show 0.",
+      footer: "Poverty figures are for children ages 5–17. This data is a snapshot from October 29, 2026. Sources are listed on the Sources tab." }
   ],
   recordLabel: "Districts",
   // Chart shown when the page opens (the viewer can change it).
@@ -46,8 +46,7 @@ window.SITE_CONFIG = {
     ],
     // Texas Government Code § 551.128: districts with 10,000+ students must make
     // their board meetings available online.
-    lawThreshold: 10000,
-    lawUrl: "https://codes.findlaw.com/tx/government-code/gov-t-sect-551-128/"
+    lawThreshold: 10000
   },
   sourcesUrl: "https://docs.google.com/document/d/1U5bDB31MpETIwG8Q8xZ7MZdH9oNooY_W6TnpSkNdBFk/edit?usp=drivesdk"
 };

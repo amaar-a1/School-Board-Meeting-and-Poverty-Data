@@ -119,7 +119,7 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
     with open(out_path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["District", "State", "Available Board Meetings", "Children Ages 5-17", "Children Ages 5-17 in Poverty",
-                    "Percentage of Children Ages 5-17 in Poverty", "Locale", "Enrollment", "NCES LEAID"])
+                    "Percentage of Children Ages 5-17 in Poverty", "Locale", "Enrollment", "District ID"])
         for d in districts:
             w.writerow([d["name"], d["state"], d["meetings"], d["kids"], d["poor"], d["pct"], d["locale"], d["enrollment"], d["leaid"]])
     with open(report_path, "w", newline="", encoding="utf-8") as f:
