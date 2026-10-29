@@ -2,16 +2,32 @@
 // spreadsheet by .github/workflows/pages.yml.
 window.SITE_CONFIG = {
   title: "School Board Meetings & Poverty Data",
-  // CSV files to show. Each one gets its own tab on the page when there is more than one.
+  // CSV files to load. "United States" gets a button; each state is picked from a menu
+  // (see perState). Texas uses the project spreadsheet; other states come from the national file.
   dataFiles: [
-    { name: "Texas", file: "data/data.csv",
+    { name: "Texas", file: "data/data.csv", state: "TX",
       note: "1,017 Texas school districts.",
       footer: "Poverty figures are for children ages 5–17. Data is refreshed daily. Sources are listed on the Sources tab." },
-    // law: "none" hides the 10,000-student rule card on the "By district size" tab.
-    { name: "United States", file: "data/national.csv", textColumns: ["District ID"], law: "none",
+    { name: "United States", file: "data/national.csv", textColumns: ["District ID"],
       note: "13,132 US school districts. Meeting counts are available for 1,206 of them; the rest show 0.",
       footer: "Poverty figures are for children ages 5–17. This data is a snapshot from October 29, 2026. Sources are listed on the Sources tab." }
   ],
+  // State menu: every state and DC. Each state's view is the national rows with this
+  // State value (Texas uses its own data set above).
+  perState: {
+    from: "United States",
+    column: "State",
+    names: {
+      AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California", CO: "Colorado", CT: "Connecticut",
+      DE: "Delaware", DC: "District of Columbia", FL: "Florida", GA: "Georgia", HI: "Hawaii", ID: "Idaho", IL: "Illinois",
+      IN: "Indiana", IA: "Iowa", KS: "Kansas", KY: "Kentucky", LA: "Louisiana", ME: "Maine", MD: "Maryland",
+      MA: "Massachusetts", MI: "Michigan", MN: "Minnesota", MS: "Mississippi", MO: "Missouri", MT: "Montana",
+      NE: "Nebraska", NV: "Nevada", NH: "New Hampshire", NJ: "New Jersey", NM: "New Mexico", NY: "New York",
+      NC: "North Carolina", ND: "North Dakota", OH: "Ohio", OK: "Oklahoma", OR: "Oregon", PA: "Pennsylvania",
+      RI: "Rhode Island", SC: "South Carolina", SD: "South Dakota", TN: "Tennessee", TX: "Texas", UT: "Utah",
+      VT: "Vermont", VA: "Virginia", WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming"
+    }
+  },
   recordLabel: "Districts",
   // Chart shown when the page opens (the viewer can change it).
   chart: {
@@ -43,10 +59,7 @@ window.SITE_CONFIG = {
       { name: "Big", min: 10000, max: 49999 },
       { name: "Large", min: 50000, max: 99999 },
       { name: "Huge", min: 100000 }
-    ],
-    // Texas Government Code § 551.128: districts with 10,000+ students must make
-    // their board meetings available online.
-    lawThreshold: 10000
+    ]
   },
   sourcesUrl: "https://docs.google.com/document/d/1U5bDB31MpETIwG8Q8xZ7MZdH9oNooY_W6TnpSkNdBFk/edit?usp=drivesdk"
 };

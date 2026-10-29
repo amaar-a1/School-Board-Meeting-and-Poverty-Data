@@ -3,12 +3,17 @@
 window.STATE_RULES = {
   checked: "October 29, 2026",
   // Laws in force. `threshold` is the size cutoff, or "" when the rule covers every board.
+  // `enrollmentMin` marks a cutoff by student enrollment; the "By district size" tab counts
+  // the districts at or above it (`requiredLabel` describes what they must do).
   laws: [
     { state: "Texas", covers: "Elected school boards of districts with 10,000+ students", threshold: "10,000+ students (enrollment)",
+      enrollmentMin: 10000, requiredLabel: "required to post meeting video online",
       rule: "Video-and-audio record each regular meeting (and work sessions or special meetings with a vote or public comment), post online within 7 days, keep 2 years." },
     { state: "Texas", covers: "All school boards (since September 1, 2025)", threshold: "",
       rule: "Record every regular or special meeting; audio-only is allowed." },
     { state: "Oregon", covers: "School district boards", threshold: "Districts with fewer than 50 students (average daily membership) are exempt",
+      enrollmentMin: 50, requiredLabel: "required to video-record and post meetings",
+      enrollmentNote: "The cutoff is set by average daily membership; these counts use enrollment as a stand-in.",
       rule: "Video-record board meetings and post within 7 days; audio-only allowed without broadband." },
     { state: "Louisiana", covers: "School boards in parishes with 25,000+ people", threshold: "25,000+ parish population",
       rule: "Broadcast all public meetings live, including committee meetings." },
