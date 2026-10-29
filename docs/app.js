@@ -55,27 +55,62 @@
       return;
     }
     renderTabs();
-    select(0);
+    selectDataset(stateDataset("TX") || datasets[0]);
   }
 
+  // One state's view: its own data set if there is one (Texas), otherwise the
+  // national rows for that state.
+  const stateCache = {};
+  function stateDataset(abbr) {
+    const ps = cfg.perState;
+    if (!ps) return null;
+    if (stateCache[abbr]) return stateCache[abbr];
+    const own = datasets.find((d) => d.state === abbr);
+    if (own) return (stateCache[abbr] = own);
+    const nat = datasets.find((d) => d.name === ps.from);
+    if (!nat) return null;
+    const name = ps.names[abbr];
+    const rows = nat.rows.filter((r) => r[ps.column] === abbr);
+    const withMeetings = rows.filter((r) => toNumber(r[cfg.compare.by]) > 0).length;
+    const label = (cfg.recordLabel || "records").toLowerCase();
+    return (stateCache[abbr] = { ...nat, name, state: abbr, rows, sourcesAs: nat.name,
+      columns: nat.columns.filter((c) => c !== ps.column),
+      note: rows.length === 1
+        ? `1 school ${label.replace(/s$/, "")} in ${name}. ${withMeetings ? "Its meeting count is available." : "No meeting count is available, so it shows 0."}`
+        : `${rows.length.toLocaleString()} school ${label} in ${name}. Meeting counts are available for ${withMeetings.toLocaleString()} of them; the rest show 0.` });
+  }
+
+  // "Data:" row: a button for the national data and a menu with every state.
   function renderTabs() {
-    const tabs = $("tabs");
-    tabs.hidden = datasets.length < 2;
+    const tabs = $("tabs"), ps = cfg.perState;
+    tabs.hidden = false;
     tabs.innerHTML = '<span class="tabs-label">Data:</span>';
-    datasets.forEach((d, i) => {
+    const nat = ps && datasets.find((d) => d.name === ps.from);
+    if (nat) {
       const b = document.createElement("button");
       b.type = "button";
       b.role = "tab";
-      b.textContent = d.name;
-      b.addEventListener("click", () => select(i));
+      b.id = "national-button";
+      b.textContent = nat.name;
+      b.addEventListener("click", () => selectDataset(nat));
       tabs.appendChild(b);
-    });
+    }
+    const sel = document.createElement("select");
+    sel.id = "state-select";
+    sel.setAttribute("aria-label", "State");
+    sel.add(new Option("Choose a state…", ""));
+    Object.entries(ps ? ps.names : {}).sort((a, b) => a[1].localeCompare(b[1]))
+      .forEach(([abbr, name]) => sel.add(new Option(name, abbr)));
+    sel.addEventListener("change", () => { if (sel.value) selectDataset(stateDataset(sel.value)); });
+    tabs.appendChild(sel);
   }
 
-  function select(i) {
-    current = datasets[i];
+  function selectDataset(ds) {
+    current = ds;
     sort = { col: null, dir: 1 };
-    [...$("tabs").querySelectorAll("button")].forEach((b, j) => b.setAttribute("aria-selected", String(i === j)));
+    const nb = $("national-button"), sel = $("state-select");
+    if (nb) nb.setAttribute("aria-selected", String(!current.state));
+    if (sel) { sel.value = current.state || ""; sel.classList.toggle("active", !!current.state); }
     $("dataset-note").textContent = current.note || "";
     $("footer").textContent = current.footer || "";
     renderSources();
@@ -147,14 +182,35 @@
     $("size-note").textContent = "Districts are grouped by student enrollment (2023)." +
       (left ? ` ${left.toLocaleString()} ${label} without an enrollment figure are left out of this tab.` : "");
 
-    // The 10,000-student rule
-    $("size-law").hidden = current.law === "none";
-    const covered = sizeStats(rows.filter((r) => enroll(r) >= st.lawThreshold), enrollCol);
-    const lawBody = $("law-body");
-    lawBody.innerHTML = "";
-    statCard(lawBody, `Districts with ${st.lawThreshold.toLocaleString()}+ students`, covered.n.toLocaleString(), "required to put meetings online");
-    statCard(lawBody, "Of those, with available meetings", pct(covered.shareWith), `${covered.nWith.toLocaleString()} of ${covered.n.toLocaleString()} ${label}`);
-    statCard(lawBody, "Of those, with none found", pct(100 - covered.shareWith), `${covered.nWithout.toLocaleString()} ${label}`);
+    // This state's rules on recording or streaming meetings (state views only)
+    const sr = window.STATE_RULES;
+    $("size-law").hidden = !current.state || !sr;
+    if (current.state && sr) {
+      const rules = sr.laws.filter((x) => x.state === current.name);
+      $("law-title").textContent = `${current.name} rules on recording or streaming board meetings`;
+      const list = $("law-list");
+      list.innerHTML = "";
+      (rules.length ? rules : [null]).forEach((x) => {
+        const li = document.createElement("li");
+        if (x) {
+          const b = document.createElement("strong");
+          b.textContent = `${x.covers}: `;
+          li.append(b, x.rule);
+        } else {
+          li.textContent = `No recording or streaming requirement found (checked ${sr.checked}); usually only written minutes are required.`;
+        }
+        list.appendChild(li);
+      });
+      const lawBody = $("law-body");
+      lawBody.innerHTML = "";
+      $("law-note").textContent = rules.filter((x) => x.enrollmentMin && x.enrollmentNote).map((x) => x.enrollmentNote).join(" ");
+      rules.filter((x) => x.enrollmentMin).forEach((x) => {
+        const covered = sizeStats(rows.filter((r) => enroll(r) >= x.enrollmentMin), enrollCol);
+        statCard(lawBody, `Districts with ${x.enrollmentMin.toLocaleString()}+ students`, covered.n.toLocaleString(), x.requiredLabel);
+        statCard(lawBody, "Of those, with available meetings", pct(covered.shareWith), `${covered.nWith.toLocaleString()} of ${covered.n.toLocaleString()} ${label}`);
+        statCard(lawBody, "Of those, with none found", pct(100 - covered.shareWith), `${covered.nWithout.toLocaleString()} ${label}`);
+      });
+    }
 
     // Overall
     const overall = $("size-overall");
@@ -515,7 +571,7 @@
   function renderSources() {
     const box = $("sources-list");
     box.innerHTML = "";
-    const shown = (x) => !x.only || x.only === current.name;
+    const shown = (x) => !x.only || x.only === (current.sourcesAs || current.name);
     (window.SOURCES || []).filter(shown).forEach((g) => {
       const items = g.items.filter(shown);
       if (!items.length) return;

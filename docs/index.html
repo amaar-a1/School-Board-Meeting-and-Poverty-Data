@@ -11,7 +11,7 @@
   <header class="hero">
     <div class="wrap">
       <h1 id="site-title">School Board Meetings &amp; Poverty Data</h1>
-      <p class="lede">Explore school board meeting and child poverty data: summary figures, interactive charts, the full table, and a breakdown by district size. Use the buttons below to switch data sets.</p>
+      <p class="lede">Explore school board meeting and child poverty data: summary figures, interactive charts, the full table, and a breakdown by district size. Pick the United States or any state below.</p>
       <nav class="links">
         <a href="#chart-section">Chart</a>
         <a href="#urban" id="urban-link" hidden>Urban &amp; suburban</a>
@@ -106,10 +106,10 @@
       <p id="size-missing" class="status" hidden>This tab needs an “Enrollment” column in the data.</p>
       <div id="size-content">
         <section id="size-law" class="card">
-          <h2>The 10,000-student rule</h2>
-          <p>Texas law requires school districts with a student enrollment of <strong>10,000 or more</strong> to make their board meetings available online.
-            That covers the Big, Large and Huge tiers below.</p>
+          <h2 id="law-title"></h2>
+          <ul id="law-list" class="rules-proposed"></ul>
           <div id="law-body" class="stats compare"></div>
+          <p id="law-note" class="note"></p>
         </section>
 
         <section class="card">
