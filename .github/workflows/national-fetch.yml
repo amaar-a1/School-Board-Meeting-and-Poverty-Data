@@ -3,7 +3,7 @@ name: Fetch pages for national research (temporary)
 on:
   push:
     branches: [claude/national-fetch]
-    paths: [fetch/urls.txt]
+    paths: [fetch/urls.txt, fetch/paginate.txt]
 
 permissions:
   contents: write
@@ -25,6 +25,23 @@ jobs:
             sleep 1
           done < fetch/urls.txt
           cat fetch/out/index.tsv
+      - name: Download paginated APIs listed in fetch/paginate.txt
+        run: |
+          [ -f fetch/paginate.txt ] || exit 0
+          python3 - <<'PY'
+          import json, urllib.request, time
+          for line in open("fetch/paginate.txt"):
+              line = line.strip()
+              if not line or line.startswith("#"): continue
+              name, url = line.split(None, 1)
+              rows = []
+              while url:
+                  with urllib.request.urlopen(url, timeout=300) as r:
+                      d = json.load(r)
+                  rows += d["results"]; url = d.get("next"); time.sleep(1)
+              json.dump(rows, open(f"fetch/out/{name}", "w"))
+              print(name, len(rows), "rows")
+          PY
       - name: Commit results
         run: |
           git config user.name "github-actions[bot]"
