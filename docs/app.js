@@ -6,6 +6,7 @@
   let sort = { col: null, dir: 1 };
   let chart = null;
   const subsetCharts = {};
+  const TABLE_LIMIT = 500;   // rows drawn at once; the full set is still searchable and downloadable
   const sizeCharts = {};
   let view = "overview";
 
@@ -28,24 +29,26 @@
     return s === "" ? NaN : Number(s);
   }
 
-  function parse(name, text) {
+  function parse(name, text, opts = {}) {
     const out = Papa.parse(text, { header: true, skipEmptyLines: "greedy" });
     const filled = (v) => String(v ?? "").trim() !== "";
     let columns = (out.meta.fields || []).filter((c) => c && c.trim() !== "");
     const rows = out.data.filter((r) => columns.some((c) => filled(r[c])));
     columns = columns.filter((c) => rows.some((r) => filled(r[c])));
+    const textCols = new Set(opts.textColumns || []);
     const numeric = new Set(columns.filter((c) => {
+      if (textCols.has(c)) return false;
       const vals = rows.map((r) => r[c]).filter(filled);
       return vals.length > 0 && vals.every((v) => !isNaN(toNumber(v)));
     }));
     const percent = new Set([...numeric].filter((c) =>
       rows.map((r) => r[c]).filter(filled).every((v) => String(v).trim().endsWith("%"))));
-    return { name, columns, rows, numeric, percent };
+    return { ...opts, name, columns, rows, numeric, percent };
   }
 
   async function load() {
     try {
-      datasets = await Promise.all(cfg.dataFiles.map(async (d) => parse(d.name, await fetchCsv(d.file))));
+      datasets = await Promise.all(cfg.dataFiles.map(async (d) => parse(d.name, await fetchCsv(d.file), d)));
       $("status").textContent = "";
     } catch (err) {
       $("status").classList.add("error");
@@ -59,7 +62,7 @@
   function renderTabs() {
     const tabs = $("tabs");
     tabs.hidden = datasets.length < 2;
-    tabs.innerHTML = "";
+    tabs.innerHTML = '<span class="tabs-label">Data:</span>';
     datasets.forEach((d, i) => {
       const b = document.createElement("button");
       b.type = "button";
@@ -73,7 +76,8 @@
   function select(i) {
     current = datasets[i];
     sort = { col: null, dir: 1 };
-    [...$("tabs").children].forEach((b, j) => b.setAttribute("aria-selected", String(i === j)));
+    [...$("tabs").querySelectorAll("button")].forEach((b, j) => b.setAttribute("aria-selected", String(i === j)));
+    $("dataset-note").textContent = current.note || "";
     $("search").value = "";
     renderStats();
     setupChartControls();
@@ -138,13 +142,19 @@
       s: sizeStats(rows.filter((r) => enroll(r) >= t.min && (t.max == null || enroll(r) <= t.max)), enrollCol) }));
     const all = sizeStats(rows, enrollCol);
     const label = (cfg.recordLabel || "records").toLowerCase();
+    const left = current.rows.length - rows.length;
+    $("size-note").textContent = "Districts are grouped by NCES student enrollment (2023)." +
+      (left ? ` ${left.toLocaleString()} ${label} without an NCES enrollment figure are left out of this tab.` : "");
 
     // The 10,000-student rule
+    const isLaw = current.law !== "comparison";
+    $("law-title").textContent = isLaw ? `The ${st.lawThreshold.toLocaleString()}-student rule` : `Districts with ${st.lawThreshold.toLocaleString()}+ students`;
+    $("law-national").hidden = isLaw;
     $("law-link").href = st.lawUrl;
     const covered = sizeStats(rows.filter((r) => enroll(r) >= st.lawThreshold), enrollCol);
     const lawBody = $("law-body");
     lawBody.innerHTML = "";
-    statCard(lawBody, `Districts with ${st.lawThreshold.toLocaleString()}+ students`, covered.n.toLocaleString(), "required to put meetings online");
+    statCard(lawBody, `Districts with ${st.lawThreshold.toLocaleString()}+ students`, covered.n.toLocaleString(), isLaw ? "required to put meetings online" : "the size Texas requires to put meetings online");
     statCard(lawBody, "Of those, with available meetings", pct(covered.shareWith), `${covered.nWith.toLocaleString()} of ${covered.n.toLocaleString()} ${label}`);
     statCard(lawBody, "Of those, with none found", pct(100 - covered.shareWith), `${covered.nWithout.toLocaleString()} ${label}`);
 
@@ -257,8 +267,9 @@
   }
 
   // Splits rows into "value > 0" vs "value = 0" on cfg.compare.by and compares cfg.compare.metric.
-  function fillCompare(body, rows) {
+  function fillCompare(body, allRows) {
     const cmp = cfg.compare;
+    const rows = allRows.filter((r) => !isNaN(toNumber(r[cmp.metric])));
     const groups = [
       { label: cmp.withLabel, rows: rows.filter((r) => toNumber(r[cmp.by]) > 0) },
       { label: cmp.withoutLabel, rows: rows.filter((r) => toNumber(r[cmp.by]) === 0) }
@@ -312,13 +323,12 @@
     fillCompare($(`${id}-body`), rows);
     $(`${id}-note`).textContent = `${rows.length.toLocaleString()} of ${current.rows.length.toLocaleString()} ${(cfg.recordLabel || "records").toLowerCase()} ${noteText} (“${col}” column).`;
     const x = cfg.compare.metric, y = cfg.compare.by;
-    const nameCol = current.columns.find((c) => !current.numeric.has(c));
     const accent = cssVar("--accent"), text = cssVar("--muted"), grid = cssVar("--border");
     if (subsetCharts[id]) subsetCharts[id].destroy();
     subsetCharts[id] = new Chart($(`${id}-chart`), {
       type: "scatter",
       data: { datasets: [{ label: `${y} vs ${x}`,
-        data: rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), name: nameCol ? r[nameCol] : "" }))
+        data: rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), name: rowLabel(r) }))
           .filter((p) => !isNaN(p.x) && !isNaN(p.y)),
         backgroundColor: accent + "99", pointRadius: 4, pointHoverRadius: 6 }] },
       options: {
@@ -336,6 +346,13 @@
         }
       }
     });
+  }
+
+  // District name for chart tooltips, with the state when the data has one.
+  function rowLabel(r) {
+    const nameCol = current.columns.find((c) => !current.numeric.has(c));
+    const name = nameCol ? r[nameCol] : "";
+    return current.columns.includes("State") && nameCol !== "State" ? `${name}, ${r.State}` : name;
   }
 
   function setupChartControls() {
@@ -363,7 +380,6 @@
   function renderChart() {
     const x = $("x-col").value, y = $("y-col").value, type = $("chart-type").value;
     const limit = Number($("chart-limit").value);
-    const nameCol = current.columns.find((c) => !current.numeric.has(c));
     let rows = current.rows.filter((r) => !isNaN(toNumber(r[y])));
     const xIsNum = current.numeric.has(x);
     $("chart-limit").disabled = type === "scatter";
@@ -377,7 +393,7 @@
     let data;
     if (type === "scatter") {
       data = { datasets: [{ label: `${y} vs ${x}`,
-        data: rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), name: nameCol ? r[nameCol] : "" }))
+        data: rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), name: rowLabel(r) }))
           .filter((p) => !isNaN(p.x)),
         backgroundColor: accent + "99", pointRadius: 3.5, pointHoverRadius: 6 }] };
     } else {
@@ -439,7 +455,8 @@
       });
       tr.appendChild(th);
     });
-    const rows = visibleRows();
+    const matching = visibleRows();
+    const rows = matching.slice(0, TABLE_LIMIT);
     tbody.innerHTML = "";
     const frag = document.createDocumentFragment();
     rows.forEach((r) => {
@@ -460,7 +477,9 @@
       frag.appendChild(row);
     });
     tbody.appendChild(frag);
-    $("row-count").textContent = `Showing ${rows.length.toLocaleString()} of ${current.rows.length.toLocaleString()} rows`;
+    $("row-count").textContent = matching.length > rows.length
+      ? `Showing the first ${rows.length.toLocaleString()} of ${matching.length.toLocaleString()} matching rows (${current.rows.length.toLocaleString()} in total). Search or sort to find others; “Download CSV” gets them all.`
+      : `Showing ${rows.length.toLocaleString()} of ${current.rows.length.toLocaleString()} rows`;
   }
 
   function download() {

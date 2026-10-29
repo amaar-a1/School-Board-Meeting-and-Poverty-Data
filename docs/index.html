@@ -11,7 +11,7 @@
   <header class="hero">
     <div class="wrap">
       <h1 id="site-title">School Board Meetings &amp; Poverty Data</h1>
-      <p class="lede">Explore the dataset: summary figures, an interactive chart, the full table, and a breakdown by district size. All figures come from the project’s data file.</p>
+      <p class="lede">Explore Texas and nationwide data: summary figures, interactive charts, the full table, and a breakdown by district size. Switch between Texas and the United States with the buttons below.</p>
       <nav class="links">
         <a href="#chart-section">Chart</a>
         <a href="#urban" id="urban-link" hidden>Urban &amp; suburban</a>
@@ -26,12 +26,13 @@
   <main class="wrap">
     <div id="status" class="status">Loading data…</div>
 
+    <div id="tabs" class="tabs" role="tablist" aria-label="Data set" hidden></div>
+    <p id="dataset-note" class="note dataset-note"></p>
+
     <div class="tabs view-tabs" role="tablist" aria-label="Page views">
       <button type="button" role="tab" data-view-tab="overview" aria-selected="true">Overview</button>
       <button type="button" role="tab" data-view-tab="size" aria-selected="false">By district size</button>
     </div>
-
-    <div id="tabs" class="tabs" role="tablist" hidden></div>
 
     <div data-view="overview">
 
@@ -102,7 +103,9 @@
       <p id="size-missing" class="status" hidden>This tab needs an “Enrollment” column in the data.</p>
       <div id="size-content">
         <section id="size-law" class="card">
-          <h2>The 10,000-student rule</h2>
+          <h2 id="law-title">The 10,000-student rule</h2>
+          <p id="law-national" class="muted" hidden>Texas law requires these districts to put their board meetings online. Other states have their own rules,
+            so outside Texas this size is a point of comparison, not a legal requirement.</p>
           <p>Texas law requires school districts with a student enrollment of <strong>10,000 or more</strong> to make their board meetings available online
             (<a id="law-link" href="#" target="_blank" rel="noopener">Texas Government Code § 551.128</a>). That covers the Big, Large and Huge tiers below.</p>
           <div id="law-body" class="stats compare"></div>
@@ -117,7 +120,7 @@
 
         <section class="card">
           <h2>By district size</h2>
-          <p class="muted">Districts are grouped by NCES student enrollment (2023).</p>
+          <p id="size-note" class="muted">Districts are grouped by NCES student enrollment (2023).</p>
           <div class="table-scroll"><table id="size-table"><thead></thead><tbody></tbody></table></div>
         </section>
 
@@ -149,7 +152,7 @@
     </section>
   </main>
 
-  <footer class="wrap muted">Poverty figures are for children ages 5–17. Data is refreshed from the project spreadsheet daily.</footer>
+  <footer class="wrap muted">Poverty figures are for children ages 5–17. Texas data is refreshed from the project spreadsheet daily; the nationwide data is a snapshot (see the note under the Texas / United States buttons).</footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>

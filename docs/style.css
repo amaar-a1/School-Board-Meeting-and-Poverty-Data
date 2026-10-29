@@ -83,6 +83,10 @@ tbody tr:hover { background: var(--accent-soft); }
 #sources-list ul { margin: 0; padding-left: 20px; }
 #sources-list li { margin-bottom: 4px; }
 .view-tabs { margin-bottom: 20px; }
+.tabs-label { align-self: center; color: var(--muted); font-size: .9rem; margin-right: 2px; }
+#tabs { margin-bottom: 6px; }
+.dataset-note { margin: 0 0 14px; }
+.dataset-note:empty { display: none; }
 #size-table td:first-child, #size-table th:first-child { font-weight: 600; }
 #size-table tr.total td { border-top: 2px solid var(--border); font-weight: 600; }
 #size-table th { cursor: default; white-space: normal; vertical-align: bottom; }

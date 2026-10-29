@@ -5,20 +5,25 @@ window.SOURCES = [
     items: [
       { title: "Census SAIPE 2024 Texas school district file", url: "https://www2.census.gov/programs-surveys/saipe/datasets/2024/2024-school-districts/sd24-tx.txt" },
       { title: "Census SAIPE 2024 school district estimates page, which describes the file layout", url: "https://www.census.gov/data/datasets/2024/demo/saipe/2024-school-districts.html" },
-      { title: "SAIPE school district overview, which confirms the ages 5–17 measures", url: "https://census.gov/programs-surveys/saipe/technical-documentation/methodology/school-districts/overview-school-district.html" }
+      { title: "SAIPE school district overview, which confirms the ages 5–17 measures", url: "https://census.gov/programs-surveys/saipe/technical-documentation/methodology/school-districts/overview-school-district.html" },
+      { title: "Census SAIPE 2024 file for all US school districts (United States data)", url: "https://www2.census.gov/programs-surveys/saipe/datasets/2024/2024-school-districts/ussd24.csv" }
     ]
   },
   {
     group: "Meeting counts (available board meetings)",
     items: [
       { title: "CivicSearch Texas district list", url: "https://schools.civicsearch.org/cities" },
-      { title: "Individual CivicSearch district pages, such as Alamo Heights ISD. All 74 Texas district pages were checked.", url: "https://schools.civicsearch.org/alamo-heights-isd-texas" }
-    ]
+      { title: "Individual CivicSearch district pages, such as Alamo Heights ISD. All 74 Texas district pages were checked.", url: "https://schools.civicsearch.org/alamo-heights-isd-texas" },
+      { title: "CivicSearch district list data (the meeting counts behind the district list, for every state; United States data, downloaded October 29, 2026)", url: "https://schools.civicsearch.org/api/get_place_list" },
+      { title: "USLege school board coverage, such as Carrollton-Farmers Branch ISD (checked, not used for counts)", url: "https://www.uslege.ai/tracking/carrollton-farmers-branch-independent-school-district" }
+    ],
+    note: "USLege covers about 60 school districts nationwide and counts only the last six months of meetings, so its numbers aren't comparable with CivicSearch's and weren't used."
   },
   {
     group: "Enrollment and urban/suburban/rural type",
     items: [
-      { title: "NCES Common Core of Data 2023 school district directory (enrollment and locale codes), via the Urban Institute Education Data API", url: "https://educationdata.urban.org/documentation/school-districts.html" }
+      { title: "NCES Common Core of Data 2023 school district directory (enrollment and locale codes), via the Urban Institute Education Data API", url: "https://educationdata.urban.org/documentation/school-districts.html" },
+      { title: "NCES 2023 directory data for all US school districts (United States data)", url: "https://educationdata.urban.org/api/v1/school-districts/ccd/directory/2023/" }
     ]
   },
   {

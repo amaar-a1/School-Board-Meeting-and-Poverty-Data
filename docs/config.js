@@ -4,7 +4,10 @@ window.SITE_CONFIG = {
   title: "School Board Meetings & Poverty Data",
   // CSV files to show. Each one gets its own tab on the page when there is more than one.
   dataFiles: [
-    { name: "Data", file: "data/data.csv" }
+    { name: "Texas", file: "data/data.csv",
+      note: "1,017 Texas school districts, from the project spreadsheet." },
+    { name: "United States", file: "data/national.csv", textColumns: ["NCES LEAID"], law: "comparison",
+      note: "All 13,132 US school districts in the Census SAIPE 2024 file, Texas included. Meeting counts are from CivicSearch's district list (October 29, 2026), which covers 1,206 of these districts; the rest show 0. Built by data-prep/build_national.py." }
   ],
   recordLabel: "Districts",
   // Chart shown when the page opens (the viewer can change it).
