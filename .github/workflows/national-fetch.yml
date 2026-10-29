@@ -20,7 +20,7 @@ jobs:
           while read -r name url; do
             [ -z "$name" ] && continue
             case "$name" in \#*) continue;; esac
-            code=$(curl -sSL -A "Mozilla/5.0 (school-board research project; github.com/amaar-a1)" -m 120 -o "fetch/out/$name" -w "%{http_code}" "$url" || echo ERR)
+            code=$(curl -sSL -H "Accept: text/html,application/pdf,*/*" -A "Mozilla/5.0 (school-board research project; github.com/amaar-a1)" -m 120 -o "fetch/out/$name" -w "%{http_code}" "$url" || echo ERR)
             printf "%s\t%s\t%s\t%s\n" "$name" "$code" "$(stat -c %s "fetch/out/$name" 2>/dev/null || echo 0)" "$url" >> fetch/out/index.tsv
             sleep 12
           done < fetch/urls.txt
