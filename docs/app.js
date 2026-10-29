@@ -13,7 +13,6 @@
   document.title = cfg.title;
   $("site-title").textContent = cfg.title;
   $("sources-link").href = cfg.sourcesUrl;
-  renderSources();
 
   async function fetchCsv(url) {
     const res = await fetch(url);
@@ -78,6 +77,8 @@
     sort = { col: null, dir: 1 };
     [...$("tabs").querySelectorAll("button")].forEach((b, j) => b.setAttribute("aria-selected", String(i === j)));
     $("dataset-note").textContent = current.note || "";
+    $("footer").textContent = current.footer || "";
+    renderSources();
     $("search").value = "";
     renderStats();
     setupChartControls();
@@ -86,7 +87,7 @@
     if (view === "size") renderSize();
   }
 
-  // Switches between the "Overview" and "By district size" views.
+  // Switches between the "Overview", "By district size", "State rules" and "Sources" views.
   function setView(name) {
     view = name;
     document.querySelectorAll("[data-view]").forEach((el) => { el.hidden = el.dataset.view !== name; });
@@ -143,18 +144,15 @@
     const all = sizeStats(rows, enrollCol);
     const label = (cfg.recordLabel || "records").toLowerCase();
     const left = current.rows.length - rows.length;
-    $("size-note").textContent = "Districts are grouped by NCES student enrollment (2023)." +
-      (left ? ` ${left.toLocaleString()} ${label} without an NCES enrollment figure are left out of this tab.` : "");
+    $("size-note").textContent = "Districts are grouped by student enrollment (2023)." +
+      (left ? ` ${left.toLocaleString()} ${label} without an enrollment figure are left out of this tab.` : "");
 
     // The 10,000-student rule
-    const isLaw = current.law !== "comparison";
-    $("law-title").textContent = isLaw ? `The ${st.lawThreshold.toLocaleString()}-student rule` : `Districts with ${st.lawThreshold.toLocaleString()}+ students`;
-    $("law-national").hidden = isLaw;
-    $("law-link").href = st.lawUrl;
+    $("size-law").hidden = current.law === "none";
     const covered = sizeStats(rows.filter((r) => enroll(r) >= st.lawThreshold), enrollCol);
     const lawBody = $("law-body");
     lawBody.innerHTML = "";
-    statCard(lawBody, `Districts with ${st.lawThreshold.toLocaleString()}+ students`, covered.n.toLocaleString(), isLaw ? "required to put meetings online" : "the size Texas requires to put meetings online");
+    statCard(lawBody, `Districts with ${st.lawThreshold.toLocaleString()}+ students`, covered.n.toLocaleString(), "required to put meetings online");
     statCard(lawBody, "Of those, with available meetings", pct(covered.shareWith), `${covered.nWith.toLocaleString()} of ${covered.n.toLocaleString()} ${label}`);
     statCard(lawBody, "Of those, with none found", pct(100 - covered.shareWith), `${covered.nWithout.toLocaleString()} ${label}`);
 
@@ -491,13 +489,40 @@
     URL.revokeObjectURL(a.href);
   }
 
+  // State rules table (same for every data set).
+  function renderRules() {
+    const r = window.STATE_RULES;
+    if (!r) return;
+    $("rules-intro").textContent = `${r.laws.length} rules in ${new Set(r.laws.map((x) => x.state)).size} states, checked ${r.checked}. Laws change often.`;
+    const body = $("rules-table").tBodies[0];
+    body.innerHTML = "";
+    r.laws.forEach((x) => {
+      const tr = body.insertRow();
+      [x.state, x.covers, x.threshold || "None (all boards)", x.rule].forEach((v) => { tr.insertCell().textContent = v; });
+    });
+    const ul = $("rules-proposed");
+    ul.innerHTML = "";
+    r.proposed.forEach((x) => {
+      const li = document.createElement("li");
+      const b = document.createElement("strong");
+      b.textContent = `${x.state}: `;
+      li.append(b, x.note);
+      ul.appendChild(li);
+    });
+  }
+
+  // Sources for the selected dataset: entries marked `only` show just for that dataset.
   function renderSources() {
     const box = $("sources-list");
-    (window.SOURCES || []).forEach((g) => {
+    box.innerHTML = "";
+    const shown = (x) => !x.only || x.only === current.name;
+    (window.SOURCES || []).filter(shown).forEach((g) => {
+      const items = g.items.filter(shown);
+      if (!items.length) return;
       const h = document.createElement("h3");
       h.textContent = g.group;
       const ul = document.createElement("ul");
-      g.items.forEach((s) => {
+      items.forEach((s) => {
         const li = document.createElement("li");
         if (s.url) {
           const a = document.createElement("a");
@@ -523,14 +548,16 @@
   ["x-col", "y-col", "chart-type", "chart-limit"].forEach((id) => $(id).addEventListener("change", renderChart));
   document.querySelectorAll("[data-view-tab]").forEach((b) => b.addEventListener("click", () => {
     setView(b.dataset.viewTab);
-    history.replaceState(null, "", b.dataset.viewTab === "size" ? "#size" : location.pathname + location.search);
+    history.replaceState(null, "", b.dataset.viewTab === "overview" ? location.pathname + location.search : `#${b.dataset.viewTab}`);
   }));
-  // Header links: "By district size" opens that view; the others jump to a section of the overview.
+  // Header links: "By district size" and "Sources" open those views; the others jump to a section of the overview.
   document.querySelectorAll(".links a").forEach((a) => a.addEventListener("click", () => {
     setView(a.dataset.viewLink || "overview");
   }));
-  if (location.hash === "#size") setView("size");
-  window.addEventListener("hashchange", () => { if (location.hash === "#size") setView("size"); });
+  renderRules();
+  const viewFromHash = () => { if (["#size", "#rules", "#sources"].includes(location.hash)) setView(location.hash.slice(1)); };
+  viewFromHash();
+  window.addEventListener("hashchange", viewFromHash);
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
     if (!current) return;
     renderChart();
