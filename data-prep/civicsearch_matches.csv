@@ -1,0 +1,1214 @@
+CivicSearch name,State,Meetings,Matched LEAID,Matched district (Census name),How,Distance km
+"District 0400762, Arizona",Arizona,25,,,not matched,
+"District 0400926, Arizona",Arizona,5,,,not matched,
+"District 0691029, California",California,14,,,not matched,
+"District 0691034, California",California,13,,,not matched,
+"District 0800260, Colorado",Colorado,15,,,not matched,
+"District 2507985, Massachusetts",Massachusetts,2,,,not matched,
+"District 4800261, Texas",Texas,23,,,not matched,
+"Autauga County, Alabama",Alabama,16,0100240,Autauga County School District,name,18
+"Cullman County, Alabama",Alabama,13,0101020,Cullman County School District,name,6
+"Enterprise City, Alabama",Alabama,14,0101320,Enterprise City School District,name,1
+"Hoover City, Alabama",Alabama,11,0100007,Hoover City School District,name,5
+"Madison County, Alabama",Alabama,12,0102220,Madison County School District,name,1
+"Muscle Shoals City, Alabama",Alabama,13,0102520,Muscle Shoals City School District,name,1
+"Randolph County, Alabama",Alabama,12,0102820,Randolph County School District,name,2
+"Tuscaloosa City, Alabama",Alabama,23,0103360,Tuscaloosa City School District,name,5
+"Vestavia Hills City, Alabama",Alabama,12,0103430,Vestavia Hills City School District,name,5
+"Anchorage School District, Alaska",Alaska,41,0200180,Anchorage School District,name,36
+"Annette Island School District, Alaska",Alaska,8,0200525,Annette Island School District,name,6
+"District 0200770, Alaska",Alaska,14,0200770,Denali Borough School District,federal ID,54
+"Blue Ridge Unified School District No. 32 (4397), Arizona",Arizona,14,0406580,Blue Ridge Unified District,name,4
+"Dysart Unified District (4243), Arizona",Arizona,15,0402690,Dysart Unified District,name,3
+"Fountain Hills Unified District (4247), Arizona",Arizona,24,0403040,Fountain Hills Unified District,name,2
+"Gilbert Unified District (4239), Arizona",Arizona,22,0403400,Gilbert Unified District,name,6
+"Glendale Elementary District (4271), Arizona",Arizona,19,0403420,Glendale Elementary District,name,1
+"Higley Unified School District (4248), Arizona",Arizona,18,0403780,Higley Unified District,name,1
+"J O Combs Unified School District (4445), Arizona",Arizona,19,0403990,J. O. Combs Unified School District,name,6
+"Kingman Unified School District (79598), Arizona",Arizona,2,0400295,Kingman Unified School District,name,46
+"Liberty Elementary District (4266), Arizona",Arizona,26,0404320,Liberty Elementary District,name,13
+"Littleton Elementary District (4278), Arizona",Arizona,19,0404440,Littleton Elementary District,name,4
+"Osborn Elementary District (4262), Arizona",Arizona,8,0405670,Osborn Elementary District,name,1
+"Peoria Unified School District (4237), Arizona",Arizona,24,0406250,Peoria Unified School District,name,15
+"Prescott Unified District (4466), Arizona",Arizona,12,0406730,Prescott Unified District,name,3
+"Queen Creek Unified District (4245), Arizona",Arizona,2,0406810,Queen Creek Unified District,name,4
+"Round Valley Unified District (4155), Arizona",Arizona,11,0407130,Round Valley Unified District,name,22
+"Sahuarita Unified District (4411), Arizona",Arizona,2,0407300,Sahuarita Unified District,name,22
+"Scottsdale Unified District (4240), Arizona",Arizona,22,0407570,Scottsdale Unified District,name,7
+"Sierra Vista Unified District (4175), Arizona",Arizona,39,0401460,Sierra Vista Unified District,name,5
+"Sunnyside Unified District (4407), Arizona",Arizona,1,0408170,Sunnyside Unified District,name,6
+"Tucson Unified District (4403), Arizona",Arizona,2,0408800,Tucson Unified District,name,1
+"Washington Elementary School District (4260), Arizona",Arizona,23,0409060,Washington Elementary District,name,5
+"Conway School District, Arkansas",Arkansas,21,0504590,Conway Public Schools,name,4
+"Hope School District, Arkansas",Arkansas,14,0507840,Hope School District,name,5
+"Huntsville School District, Arkansas",Arkansas,19,0508130,Huntsville School District,name,9
+"Little Rock School District, Arkansas",Arkansas,23,0509000,Little Rock School District,name,7
+"North Little Rock School District, Arkansas",Arkansas,30,0510680,North Little Rock School District,name,2
+"Rogers School District, Arkansas",Arkansas,7,0511970,Rogers Public Schools,name,10
+"Shirley School District, Arkansas",Arkansas,13,0512420,Shirley School District,name,2
+"Siloam Springs School District, Arkansas",Arkansas,19,0512450,Siloam Springs Schools,name,9
+"Acton-Agua Dulce Unified, California",California,17,0600001,Acton-Agua Dulce Unified School District,name,2
+"Adelanto Elementary, California",California,20,0601710,Adelanto Elementary School District,name,14
+"Alum Rock Union Elementary, California",California,18,0602310,Alum Rock Union Elementary School District,name,9
+"Antioch Unified, California",California,15,0602850,Antioch Unified School District,name,4
+"Bass Lake Joint Union Elementary, California",California,13,0604080,Bass Lake Joint Union Elementary School District,name,12
+"Bear Valley Unified, California",California,20,0604230,Bear Valley Unified School District,name,6
+"Belmont-Redwood Shores Elementary, California",California,17,0604530,Belmont-Redwood Shores Elementary School District,name,4
+"Berkeley Unified, California",California,24,0604740,Berkeley Unified School District,name,1
+"Bonsall Unified, California",California,6,0601426,Bonsall Unified School District,name,6
+"Brea-Olinda Unified, California",California,14,0605880,Brea-Olinda Unified School District,name,4
+"Burlingame Elementary, California",California,13,0606480,Burlingame Elementary School District,name,2
+"Burton Elementary, California",California,1,0606570,Burton Elementary School District,name,1
+"Calexico Unified, California",California,1,0606900,Calexico Unified School District,name,4
+"Capistrano Unified, California",California,20,0607440,Capistrano Unified School District,name,8
+"Castro Valley Unified, California",California,20,0607800,Castro Valley Unified School District,name,3
+"Cayucos Elementary, California",California,10,0607840,Cayucos Elementary School District,name,4
+"Chino Valley Unified, California",California,25,0608460,Chino Valley Unified School District,name,6
+"Cloverdale Unified, California",California,16,0608970,Cloverdale Unified School District,name,3
+"Coachella Valley Unified, California",California,22,0609070,Coachella Valley Unified School District,name,23
+"Cotati-Rohnert Park Unified, California",California,12,0609940,Cotati-Rohnert Park Unified School District,name,1
+"Desert Sands Unified, California",California,13,0611110,Desert Sands Unified School District,name,21
+"District 0602670, California",California,12,0602670,West Sonoma County Union High School District,federal ID,20
+"District 0612120, California",California,18,0612120,El Monte Union High School District,federal ID,1
+"District 0613530, California",California,12,0613530,Fallbrook Union High School District,federal ID,13
+"District 0614760, California",California,14,0614760,Fullerton Joint Union High School District,federal ID,2
+"District 0618930, California",California,19,0618930,Jefferson Union High School District,federal ID,3
+"District 0630210, California",California,17,0630210,Perris Union High School District,federal ID,6
+"District 0630750, California",California,10,0630750,Placer Union High School District,federal ID,35
+"District 0633630, California",California,24,0633630,Roseville Joint Union High School District,federal ID,5
+"District 0636972, California",California,2,0636972,Victor Valley Union High School District,federal ID,19
+"Duarte Unified, California",California,21,0611520,Duarte Unified School District,name,3
+"Elk Grove Unified, California",California,17,0612330,Elk Grove Unified School District,name,9
+"Fairfield-Suisun Unified, California",California,15,0613360,Fairfield-Suisun Unified School District,name,8
+"Fallbrook Union Elementary, California",California,12,0613500,Fallbrook Union Elementary School District,name,12
+"Farmersville Unified, California",California,20,0600035,Farmersville Unified School District,name,1
+"Folsom-Cordova Unified, California",California,24,0613890,Folsom-Cordova Unified School District,name,2
+"Fort Bragg Unified, California",California,10,0614070,Fort Bragg Unified School District,name,14
+"Fullerton Elementary, California",California,15,0614730,Fullerton Elementary School District,name,3
+"Galt Joint Union Elementary, California",California,8,0614790,Galt Joint Union Elementary School District,name,1
+"Glendora Unified, California",California,17,0615270,Glendora Unified School District,name,2
+"Healdsburg Unified, California",California,8,0600044,Healdsburg Unified School District,name,2
+"Hermosa Beach City Elementary, California",California,12,0617040,Hermosa Beach City Elementary School District,name,0
+"Hollister, California",California,12,0617340,Hollister School District,name,1
+"Inglewood Unified, California",California,22,0618390,Inglewood Unified School District,name,1
+"Jefferson Elementary, California",California,18,0618870,Jefferson Elementary School District,name (closest of 3),2
+"Klamath-Trinity Joint Unified, California",California,25,0619950,Klamath-Trinity Joint Unified School District,name,12
+"La Canada Unified, California",California,17,0620130,La Cañada Unified School District,name,17
+"Lake Tahoe Unified, California",California,29,0620640,Lake Tahoe Unified School District,name,9
+"Lakeside Union, California",California,12,0620730,Lakeside Union School District,name,8
+"Lawndale Elementary, California",California,9,0621210,Lawndale Elementary School District,name,1
+"Lodi Unified, California",California,17,0622230,Lodi Unified School District,name,4
+"Long Beach Unified, California",California,14,0622500,Long Beach Unified School District,name,31
+"Los Alamitos Unified, California",California,29,0622590,Los Alamitos Unified School District,name,5
+"Los Banos Unified, California",California,14,0622740,Los Banos Unified School District,name,10
+"Mark Twain Union Elementary, California",California,2,0623970,Mark Twain Union Elementary School District,name,11
+"Mill Valley Elementary, California",California,14,0624870,Mill Valley Elementary School District,name,3
+"Milpitas Unified, California",California,6,0624500,Milpitas Unified School District,name,15
+"Mountain View Whisman, California",California,29,0626280,Mountain View Whisman Elementary School District,name,1
+"Muroc Joint Unified, California",California,10,0626490,Muroc Joint Unified School District,name,12
+"National Elementary, California",California,19,0626670,National Elementary School District,name,1
+"New Haven Unified, California",California,13,0626910,New Haven Unified School District,name,2
+"Newark Unified, California",California,24,0627060,Newark Unified School District,name,3
+"Newport-Mesa Unified, California",California,17,0627240,Newport-Mesa Unified School District,name,5
+"Oak Park Unified, California",California,9,0627850,Oak Park Unified School District,name,5
+"Oakdale Joint Unified, California",California,12,0600062,Oakdale Joint Unified School District,name,6
+"Ocean View, California",California,37,0628140,Ocean View Elementary School District,name (closest of 2),1
+"Ojai Unified, California",California,17,0628270,Ojai Unified School District,name,5
+"Orange Unified, California",California,18,0628650,Orange Unified School District,name,13
+"Pacific Grove Unified, California",California,31,0629370,Pacific Grove Unified School District,name,2
+"Pajaro Valley Unified, California",California,18,0629490,Pajaro Valley Joint Unified School District,name,3
+"Palm Springs Unified, California",California,21,0629550,Palm Springs Unified School District,name,3
+"Palo Alto Unified, California",California,15,0629610,Palo Alto Unified School District,name,3
+"Palos Verdes Peninsula Unified, California",California,18,0629700,Palos Verdes Peninsula Unified School District,name,5
+"Paramount Unified, California",California,13,0629850,Paramount Unified School District,name,0
+"Pasadena Unified, California",California,23,0629940,Pasadena Unified School District,name,7
+"Paso Robles Joint Unified, California",California,12,0600048,Paso Robles Joint Unified School District,name,6
+"Redwood City Elementary, California",California,32,0632130,Redwood City Elementary School District,name,2
+"Ross Valley Elementary, California",California,6,0600006,Ross Valley Elementary School District,name,3
+"Sacramento City Unified, California",California,15,0633840,Sacramento City Unified School District,name,2
+"Saint Helena Unified, California",California,11,0637830,St. Helena Unified School District,name,16
+"San Bernardino City Unified, California",California,37,0634170,San Bernardino City Unified School District,name,10
+"San Diego Unified, California",California,17,0634320,San Diego City Unified School District,name,6
+"San Luis Coastal Unified, California",California,18,0634800,San Luis Coastal Unified School District,name,7
+"San Ramon Valley Unified, California",California,33,0635130,San Ramon Valley Unified School District,name,3
+"Santa Barbara Unified, California",California,19,0601414,Santa Barbara Unified School District,name,2
+"Santa Clara Unified, California",California,25,0635430,Santa Clara Unified School District,name,5
+"Santa Monica-Malibu Unified, California",California,27,0635700,Santa Monica-Malibu Unified School District,name,25
+"Santa Rita Union Elementary, California",California,19,0635790,Santa Rita Union Elementary School District,name,4
+"Sierra Sands Unified, California",California,13,0636800,Sierra Sands Unified School District,name,12
+"Sunol Glen Unified, California",California,14,0600021,Sunol Glen Unified School District,name,7
+"Tehachapi Unified, California",California,15,0638880,Tehachapi Unified School District,name,4
+"Temecula Valley Unified, California",California,34,0600028,Temecula Valley Unified School District,name,6
+"Twin Rivers Unified, California",California,19,0601332,Twin Rivers Unified School District,name,4
+"Ukiah Unified, California",California,10,0640300,Ukiah Unified School District,name,4
+"Vallejo City Unified, California",California,8,0640740,Vallejo City Unified School District,name,3
+"Visalia Unified, California",California,12,0641160,Visalia Unified School District,name,5
+"Washington Unified, California",California,19,0641580,Washington Unified School District,name (closest of 2),3
+"West Contra Costa Unified, California",California,38,0632550,West Contra Costa Unified School District,name,5
+"Western Placer Unified, California",California,19,0642140,Western Placer Unified School District,name,4
+"Willits Unified, California",California,12,0642560,Willits Unified School District,name,8
+"Wiseburn Unified, California",California,18,0601428,Wiseburn Unified School District,name,1
+"Academy School District No. 20 In The County El Paso An, Colorado",Colorado,19,0801920,Academy School District 20,name,4
+"Bayfield School District No. 10Jt-R, Colorado",Colorado,21,0802400,Bayfield School District 10 JT-R,name,22
+"Cherry Creek School District No. 5 In The County Arapah, Colorado",Colorado,15,0802910,Cherry Creek School District 5,name,9
+"Cheyenne Mountain School District No. 12 In The County E, Colorado",Colorado,18,0802940,Cheyenne Mountain School District 12,name,7
+"Colorado Springs School District No. 11 In The County E, Colorado",Colorado,24,0803060,Colorado Springs School District 11,name,3
+"Elizabeth School District, Colorado",Colorado,24,0803720,Elizabeth School District,name,6
+"Estes Park School District R-3, Colorado",Colorado,13,0803810,Estes Park School District R-3,name,7
+"Fremont Re-1, Colorado",Colorado,13,0802790,Fremont RE-1,name,13
+"Harrison School District No. 2 In The County El Paso An, Colorado",Colorado,5,0804530,Harrison School District 2,name,3
+"Lewis-Palmer Consolidated School District No. 38 In The Co, Colorado",Colorado,11,0805820,Lewis-Palmer School District 38,name,1
+"Mancos School District Re-6, Colorado",Colorado,17,0805460,Mancos School District RE-6,name,2
+"Mesa County Valley School District No. 51, Colorado",Colorado,19,0804350,Mesa County Valley School District 51,name,18
+"Montezuma-Cortez School District No. Re-1, Colorado",Colorado,2,0803090,Montezuma-Cortez School District RE-1,name,16
+"Pueblo County School District 70, Colorado",Colorado,18,0806150,Pueblo County School District 70,name,7
+"Thompson School District R-2J, Colorado",Colorado,34,0805400,Thompson School District R-2J,name,8
+"Weld County School District No. Re-5J, Colorado",Colorado,12,0804830,Johnstown-Milliken School District RE-5J,name,6
+"Woodland Park School District No. Re-2, Colorado",Colorado,22,0807380,Woodland Park School District RE-2,name,11
+"Bethany School District, Connecticut",Connecticut,5,0900240,Bethany School District,name,1
+"Bridgeport School District, Connecticut",Connecticut,32,0900450,Bridgeport School District,name,1
+"Cheshire School District, Connecticut",Connecticut,23,0900750,Cheshire School District,name,1
+"Cromwell School District, Connecticut",Connecticut,14,0900990,Cromwell School District,name,2
+"Danbury School District, Connecticut",Connecticut,29,0901020,Danbury School District,name,4
+"Darien School District, Connecticut",Connecticut,45,0901050,Darien School District,name,1
+"District 0903750, Connecticut",Connecticut,16,0903750,Regional School District 08,federal ID,3
+"East Haddam School District, Connecticut",Connecticut,14,0901200,East Haddam School District,name,5
+"East Haven School District, Connecticut",Connecticut,20,0901290,East Haven School District,name,4
+"East Lyme School District, Connecticut",Connecticut,20,0901320,East Lyme School District,name,2
+"Ellington School District, Connecticut",Connecticut,14,0901440,Ellington School District,name,2
+"Greenwich School District, Connecticut",Connecticut,19,0901710,Greenwich School District,name,5
+"Guilford School District, Connecticut",Connecticut,5,0901800,Guilford School District,name,6
+"Middletown School District, Connecticut",Connecticut,24,0902490,Middletown School District,name,1
+"New Haven School District, Connecticut",Connecticut,24,0902790,New Haven School District,name,1
+"Newington School District, Connecticut",Connecticut,19,0902880,Newington School District,name,1
+"Norwalk School District, Connecticut",Connecticut,29,0903090,Norwalk School District,name,1
+"Norwich School District, Connecticut",Connecticut,11,0903120,Norwich School District,name,1
+"Oxford School District, Connecticut",Connecticut,4,0903240,Oxford School District,name,1
+"Plymouth School District, Connecticut",Connecticut,11,0903330,Plymouth School District,name,3
+"Regional School District 12, Connecticut",Connecticut,22,0903530,Regional School District 12,name,5
+"Regional School District 13, Connecticut",Connecticut,21,0903535,Regional School District 13,name,2
+"Regional School District 15, Connecticut",Connecticut,15,0903537,Regional School District 15,name,10
+"Regional School District 18, Connecticut",Connecticut,16,0903540,Regional School District 18,name,5
+"Thomaston School District, Connecticut",Connecticut,8,0904500,Thomaston School District,name,2
+"Wilton School District, Connecticut",Connecticut,17,0905130,Wilton School District,name,1
+"Windham School District, Connecticut",Connecticut,19,0905190,Windham School District,name,4
+"Brandywine School District, Delaware",Delaware,12,1001240,Brandywine School District,name,3
+"Colonial School District, Delaware",Delaware,14,1000230,Colonial School District,name,7
+"Alachua, Florida",Florida,30,1200030,Alachua County School District,name,4
+"Citrus, Florida",Florida,17,1200270,Citrus County School District,name,12
+"Clay, Florida",Florida,29,1200300,Clay County School District,name,17
+"Desoto, Florida",Florida,15,1200420,DeSoto County School District,name,6
+"Escambia, Florida",Florida,15,1200510,Escambia County School District,name,35
+"Indian River, Florida",Florida,14,1200930,Indian River County School District,name,15
+"Lee, Florida",Florida,34,1201080,Lee County School District,name,4
+"Manatee, Florida",Florida,35,1201230,Manatee County School District,name,26
+"Marion, Florida",Florida,40,1201260,Marion County School District,name,6
+"Palm Beach, Florida",Florida,47,1201500,Palm Beach County School District,name,37
+"Polk, Florida",Florida,33,1201590,Polk County School District,name,17
+"Putnam, Florida",Florida,28,1201620,Putnam County School District,name,13
+"Sarasota, Florida",Florida,29,1201680,Sarasota County School District,name,23
+"Seminole, Florida",Florida,16,1201710,Seminole County School District,name,7
+"St. Lucie, Florida",Florida,23,1201770,St. Lucie County School District,name,10
+"Butts County, Georgia",Georgia,12,1300690,Butts County School District,name,1
+"City Schools Decatur, Georgia",Georgia,20,1301680,Decatur City School District,name,0
+"Clayton County, Georgia",Georgia,31,1301230,Clayton County School District,name,1
+"Glynn County, Georgia",Georgia,24,1302400,Glynn County School District,name,7
+"Houston County, Georgia",Georgia,13,1302880,Houston County School District,name,6
+"Jackson County, Georgia",Georgia,1,1302940,Jackson County School District,name,4
+"Muscogee County, Georgia",Georgia,11,1303870,Muscogee County School District,name,7
+"Rockdale County, Georgia",Georgia,30,1304410,Rockdale County School District,name,2
+"Savannah-Chatham County, Georgia",Georgia,31,1301020,Chatham County School District,name,8
+"Twiggs County, Georgia",Georgia,13,1305220,Twiggs County School District,name,9
+"Boise Independent District, Idaho",Idaho,13,1600360,Boise City Independent School District 1,name,21
+"Bonneville Joint District, Idaho",Idaho,5,1600930,Bonneville Joint School District 93,name,17
+"Caldwell District, Idaho",Idaho,24,1600510,Caldwell School District 132,name,1
+"Emmett Independent District, Idaho",Idaho,13,1601020,Emmett Independent School District 221,name,22
+"Lakeland District, Idaho",Idaho,41,1601800,Lakeland Joint School District 272,name,13
+"Moscow District, Idaho",Idaho,4,1602220,Moscow School District 281,name,3
+"Nampa School District, Idaho",Idaho,16,1602340,Nampa School District 131,name,4
+"Notus District, Idaho",Idaho,6,1602460,Notus School District 135,name,1
+"Parma District, Idaho",Idaho,24,1602550,Parma School District 137,name,2
+"Prairie Elementary District, Idaho",Idaho,7,1602730,Prairie Elementary School District 191,name,1
+"West Jefferson District, Idaho",Idaho,14,1603400,West Jefferson School District 253,name,53
+"Barrington Cusd 220, Illinois",Illinois,18,1705050,Barrington Community Unit School District 220,name,2
+"Beach Park Ccsd 3, Illinois",Illinois,9,1700010,Beach Park Community Consolidated School District 3,name,5
+"Beecher Cusd 200U, Illinois",Illinois,27,1705430,Beecher Community Unit School District 200U,name,1
+"Belvidere Cusd 100, Illinois",Illinois,8,1705790,Belvidere Consolidated Unit School District 100,name,2
+"Blue Ridge Cusd 18, Illinois",Illinois,11,1700003,Blue Ridge Community Unit School District 18,name,5
+"Calumet Public Sd 132, Illinois",Illinois,8,1708130,Calumet Public School District 132,name,0
+"Canton Union Sd 66, Illinois",Illinois,1,1708280,Canton Union School District 66,name,3
+"Ccsd 146, Illinois",Illinois,10,1739030,Community Consolidated School District 146,name,2
+"Chicago Ridge Sd 127-5, Illinois",Illinois,26,1709990,Chicago Ridge School District 127-5,name,0
+"Coal City Cusd 1, Illinois",Illinois,9,1710530,Coal City Community Unit School District 1,name,4
+"Columbia Cusd 4, Illinois",Illinois,19,1710740,Columbia Community Unit School District 4,name,1
+"Cusd 201, Illinois",Illinois,3,1741980,Westmont Community Unit School District 201,name,2
+"Decatur Sd 61, Illinois",Illinois,7,1711850,Decatur School District 61,name,2
+"Dekalb Cusd 428, Illinois",Illinois,1,1712000,DeKalb Community Unit School District 428,name,4
+"District 1713940, Illinois",Illinois,19,1713940,DuPage High School District 88,federal ID,4
+"District 1714490, Illinois",Illinois,13,1714490,Evanston Township High School District 202,federal ID,0
+"District 1715030, Illinois",Illinois,10,1715030,Fenton Community High School District 100,federal ID,1
+"District 1722110, Illinois",Illinois,11,1722110,LaSalle-Peru Township High School District 120,federal ID,4
+"District 1732580, Illinois",Illinois,8,1732580,Adlai E. Stevenson High School District 125,federal ID,2
+"District 1740800, Illinois",Illinois,17,1740800,Warren Township High School District 121,federal ID,4
+"District 1740980, Illinois",Illinois,12,1740980,Washington Community High School District 308,federal ID,0
+"Dixon Usd 170, Illinois",Illinois,31,1712330,Dixon Unit School District 170,name,2
+"Downers Grove Gsd 58, Illinois",Illinois,1,1712540,Downers Grove Grade School District 58,name,2
+"Dunlap Cusd 323, Illinois",Illinois,14,1712700,Dunlap Community Unit School District 323,name,2
+"East St Louis Sd 189, Illinois",Illinois,9,1713320,East St. Louis School District 189,name,4
+"Elmhurst Sd 205, Illinois",Illinois,11,1713970,Elmhurst School District 205,name,0
+"Esd 159, Illinois",Illinois,1,1736300,Elementary School District 159,name,2
+"Evergreen Park Esd 124, Illinois",Illinois,12,1714550,Evergreen Park Elementary School District 124,name,2
+"Farmington Central Cusd 265, Illinois",Illinois,7,1700044,Farmington Central Community Unit School District 265,name,3
+"Flossmoor Sd 161, Illinois",Illinois,18,1715420,Flossmoor School District 161,name,3
+"Galena Usd 120, Illinois",Illinois,11,1716050,Galena Unit School District 120,name,1
+"Galesburg Cusd 205, Illinois",Illinois,1,1716080,Galesburg Community Unit School District 205,name,4
+"Glen Ellyn Sd 41, Illinois",Illinois,9,1716800,Glen Ellyn School District 41,name,0
+"Homer Ccsd 33C, Illinois",Illinois,13,1719500,Homer Community Consolidated School District 33C,name,3
+"Homewood Sd 153, Illinois",Illinois,14,1719530,Homewood School District 153,name,1
+"Lake Bluff Esd 65, Illinois",Illinois,10,1721720,Lake Bluff Elementary School District 65,name,1
+"Lindop Sd 92, Illinois",Illinois,1,1713440,Lindop School District 92,name,0
+"Litchfield Cusd 12, Illinois",Illinois,4,1723250,Litchfield Community Unit School District 12,name,2
+"Mendota Ccsd 289, Illinois",Illinois,10,1725620,Mendota Community Consolidated School District 289,name,3
+"Mercer County School District 404, Illinois",Illinois,12,1701395,Mercer County School District 404,name,2
+"Morrison Cusd 6, Illinois",Illinois,1,1726710,Morrison Community Unit School District 6,name,2
+"Murphysboro Cusd 186, Illinois",Illinois,11,1727610,Murphysboro Community Unit School District 186,name,10
+"Park Ridge Ccsd 64, Illinois",Illinois,5,1730840,Park Ridge Consolidated Community School District 64,name,2
+"Peotone Cusd 207U, Illinois",Illinois,20,1731290,Peotone Community Unit School District 207U,name,7
+"Prospect Heights Sd 23, Illinois",Illinois,15,1732850,Prospect Heights School District 23,name,0
+"Rantoul City Sd 137, Illinois",Illinois,5,1733210,Rantoul City School District 137,name,5
+"Sangamon Valley Cusd 9, Illinois",Illinois,2,1700324,Sangamon Valley Community Unit School District 9,name,3
+"Springfield Sd 186, Illinois",Illinois,16,1737080,Springfield School District 186,name,3
+"St Charles Cusd 303, Illinois",Illinois,32,1737170,St. Charles Community Unit School District 303,name,4
+"Streator Esd 44, Illinois",Illinois,14,1700112,Streator Elementary School District 44,name,4
+"Sunset Ridge Sd 29, Illinois",Illinois,7,1738400,Sunset Ridge School District 29,name,0
+"Sycamore Cusd 427, Illinois",Illinois,11,1738460,Sycamore Community Unit School District 427,name,2
+"Valley View Cusd 365U, Illinois",Illinois,19,1740070,Valley View Community Unit School District 365U,name,2
+"Bartholomew Con School Corp, Indiana",Indiana,18,1800360,Bartholomew County School Corporation,name,4
+"Bloomfield School District, Indiana",Indiana,15,1800600,Bloomfield School District,name,5
+"Carmel Clay Schools, Indiana",Indiana,19,1801200,Carmel Clay Schools,name,6
+"Center Grove Community School Corp, Indiana",Indiana,13,1801440,Center Grove Community School Corporation,name,0
+"Concord Community Schools, Indiana",Indiana,3,1802400,Concord Community Schools,name,1
+"Crown Point Community School Corp, Indiana",Indiana,9,1802490,Crown Point Community School Corporation,name,5
+"Eastern Greene Schools, Indiana",Indiana,16,1803090,Eastern Greene County School District,name,1
+"Elkhart Community Schools, Indiana",Indiana,25,1803270,Elkhart Community Schools,name,8
+"Goshen Community Schools, Indiana",Indiana,21,1803930,Goshen Community Schools,name,2
+"Greater Clark County Schools, Indiana",Indiana,17,1803940,Greater Clark County Schools,name,16
+"Huntington Co Com Sch Corp, Indiana",Indiana,20,1804710,Huntington County Community School Corporation,name,16
+"Indianapolis Public Schools, Indiana",Indiana,18,1804770,Indianapolis Public Schools,name,2
+"Jennings County School Corporation, Indiana",Indiana,25,1805190,Jennings County Schools,name,1
+"Lake Central School Corporation, Indiana",Indiana,20,1805450,Lake Central School Corporation,name,2
+"Laporte Community School Corp, Indiana",Indiana,15,1805580,La Porte Community School Corporation,name,7
+"Lebanon Community School Corp, Indiana",Indiana,18,1805790,Lebanon Community School Corporation,name,5
+"Manchester Community Schools, Indiana",Indiana,14,1806270,Manchester Community Schools,name,3
+"Michigan City Area Schools, Indiana",Indiana,16,1806570,Michigan City Area Schools,name,3
+"Msd Lawrence Township, Indiana",Indiana,20,1805670,Lawrence Township Metropolitan School District,name,3
+"Msd Martinsville Schools, Indiana",Indiana,15,1806510,Martinsville Schools Metropolitan School District,name,2
+"Msd North Posey Co Schools, Indiana",Indiana,14,1807950,North Posey County Schools Metropolitan School District,name,6
+"Msd Wabash County Schools, Indiana",Indiana,15,1812180,Wabash County Schools Metropolitan School District,name,6
+"Msd Warren Township, Indiana",Indiana,15,1812360,Warren Township Metropolitan School District,name,1
+"Muncie Community Schools, Indiana",Indiana,19,1807320,Muncie Community Schools,name,4
+"North Gibson School Corporation, Indiana",Indiana,14,1807770,North Gibson School Corporation,name,4
+"North Harrison Com School Corp, Indiana",Indiana,16,1800690,North Harrison Community School Corporation,name,1
+"Plainfield Community School Corp, Indiana",Indiana,15,1808970,Plainfield Community School Corporation,name,2
+"Portage Township Schools, Indiana",Indiana,19,1809150,Portage Township Schools,name,3
+"Richmond Community Schools, Indiana",Indiana,40,1809510,Richmond Community School Corporation,name,3
+"School City East Chicago, Indiana",Indiana,26,1802880,City of East Chicago School District,name,1
+"South Bend Community School Corp, Indiana",Indiana,26,1810290,South Bend Community School Corporation,name,6
+"South Putnam Community Schools, Indiana",Indiana,18,1810500,South Putnam Community Schools,name,3
+"South Vermillion Com Sch Corp, Indiana",Indiana,20,1810590,South Vermillion Community School Corporation,name,5
+"Southwest Parke Com Sch Corp, Indiana",Indiana,12,1810900,Southwest Parke Community School Corporation,name,3
+"Springs Valley Com School Corp, Indiana",Indiana,15,1810980,Springs Valley Community School Corporation,name,2
+"Tipton Community School Corp, Indiana",Indiana,16,1811400,Tipton Community School Corporation,name,0
+"Tri-Creek School Corporation, Indiana",Indiana,16,1811460,Tri-Creek School Corporation,name,4
+"Triton School Corporation, Indiana",Indiana,8,1811490,Triton School Corporation,name,2
+"Vigo County School Corp, Indiana",Indiana,19,1812090,Vigo County School Corporation,name,4
+"Wabash City Schools, Indiana",Indiana,22,1812150,Wabash City Schools,name,0
+"Warrick County School Corp, Indiana",Indiana,27,1812390,Warrick County School Corporation,name,4
+"Whitko Community School Corp, Indiana",Indiana,18,1813230,Whitko Community School Corporation,name,6
+"Algona Comm School District, Iowa",Iowa,12,1903360,Algona Community School District,name,6
+"Ames Comm School District, Iowa",Iowa,20,1903540,Ames Community School District,name,4
+"Ankeny Comm School District, Iowa",Iowa,19,1903690,Ankeny Community School District,name,1
+"Bettendorf Comm School District, Iowa",Iowa,15,1904860,Bettendorf Community School District,name,1
+"Cedar Falls Comm School District, Iowa",Iowa,17,1906510,Cedar Falls Community School District,name,2
+"Cedar Rapids Comm School District, Iowa",Iowa,27,1906540,Cedar Rapids Community School District,name,2
+"Clear Creek Amana Comm School District, Iowa",Iowa,14,1907590,Clear Creek-Amana Community School District,name,2
+"Council Bluffs Comm School District, Iowa",Iowa,9,1908220,Council Bluffs Community School District,name,7
+"Davenport Comm School District, Iowa",Iowa,7,1908580,Davenport Community School District,name,10
+"Des Moines Independent Comm School District, Iowa",Iowa,30,1908970,Des Moines Independent Community School District,name,2
+"Dubuque Comm School District, Iowa",Iowa,14,1909480,Dubuque Community School District,name,4
+"Fairfield Comm School District, Iowa",Iowa,11,1911340,Fairfield Community School District,name,5
+"Greene County Comm School District, Iowa",Iowa,12,1915210,Greene County Community School District,name,1
+"Interstate 35 Comm School District, Iowa",Iowa,10,1914670,Interstate 35 Community School District,name,5
+"Lewis Central Comm School District, Iowa",Iowa,22,1916680,Lewis Central Community School District,name,3
+"North Scott Comm School District, Iowa",Iowa,14,1920940,North Scott Community School District,name,4
+"Ottumwa Comm School District, Iowa",Iowa,16,1922110,Ottumwa Community School District,name,4
+"Pleasant Valley Comm School District, Iowa",Iowa,7,1923110,Pleasant Valley Community School District,name,7
+"Solon Comm School District, Iowa",Iowa,11,1926580,Solon Community School District,name,1
+"Urbandale Comm School District, Iowa",Iowa,26,1928680,Urbandale Community School District,name,1
+"Wapello Comm School District, Iowa",Iowa,13,1929730,Wapello Community School District,name,5
+"Washington Comm School District, Iowa",Iowa,13,1930240,Washington Community School District,name,5
+"Waterloo Comm School District, Iowa",Iowa,16,1930480,Waterloo Community School District,name,3
+"West Liberty Comm School District, Iowa",Iowa,20,1930990,West Liberty Community School District,name,4
+"Wilton Comm School District, Iowa",Iowa,2,1931800,Wilton Community School District,name,3
+"Auburn Washburn, Kansas",Kansas,13,2003200,Auburn-Washburn Unified School District 437,name,3
+"Dodge City, Kansas",Kansas,9,2005580,Dodge City Unified School District 443,name,2
+"Garden City, Kansas",Kansas,3,2006390,Garden City Unified School District 457,name,13
+"Geary County Schools, Kansas",Kansas,1,2007890,Geary County Schools Unified School District 475,name,9
+"Lawrence, Kansas",Kansas,22,2008400,Lawrence Unified School District 497,name,6
+"Osage City, Kansas",Kansas,6,2010230,Osage City Unified School District 420,name,2
+"Piper-Kansas City, Kansas",Kansas,3,2010680,Piper-Kansas City Unified School District 203,name,2
+"Rock Hills, Kansas",Kansas,15,2000029,Rock Hills Unified School District 107,name,4
+"Seaman, Kansas",Kansas,1,2011490,Seaman Unified School District 345,name,6
+"Shawnee Heights, Kansas",Kansas,10,2012180,Shawnee Heights Unified School District 450,name,3
+"Shawnee Mission Pub Sch, Kansas",Kansas,16,2011640,Shawnee Mission Public Schools Unified School District,name,2
+"Tonganoxie, Kansas",Kansas,18,2012210,Tonganoxie Unified School District 464,name,2
+"Boone County, Kentucky",Kentucky,15,2100510,Boone County School District,name,7
+"Bullitt County, Kentucky",Kentucky,14,2100750,Bullitt County School District,name,4
+"Danville Independent, Kentucky",Kentucky,1,2101440,Danville Independent School District,name,1
+"Fayette County, Kentucky",Kentucky,30,2101860,Fayette County School District,name,4
+"Frankfort Independent, Kentucky",Kentucky,28,2101980,Frankfort Independent School District,name,1
+"Franklin County, Kentucky",Kentucky,12,2102010,Franklin County School District,name,9
+"Hardin County, Kentucky",Kentucky,10,2102490,Hardin County School District,name,13
+"Harrison County, Kentucky",Kentucky,2,2102580,Harrison County School District,name,7
+"Mccreary County, Kentucky",Kentucky,18,2103990,McCreary County School District,name,4
+"Nelson County, Kentucky",Kentucky,26,2104410,Nelson County School District,name,4
+"Paintsville Independent, Kentucky",Kentucky,1,2104680,Paintsville Independent School District,name,0
+"Paris Independent, Kentucky",Kentucky,12,2104710,Paris Independent School District,name,0
+"Rockcastle County, Kentucky",Kentucky,18,2105070,Rockcastle County School District,name,2
+"Walton-Verona Independent, Kentucky",Kentucky,12,2105700,Walton-Verona Independent School District,name,4
+"Woodford County, Kentucky",Kentucky,21,2106000,Woodford County School District,name,8
+"Acadia Parish, Louisiana",Louisiana,22,2200030,Acadia Parish School District,name,7
+"Caldwell Parish, Louisiana",Louisiana,14,2200360,Caldwell Parish School District,name,4
+"Lafayette Parish, Louisiana",Louisiana,28,2200870,Lafayette Parish School District,name,6
+"Natchitoches Parish, Louisiana",Louisiana,19,2201140,Natchitoches Parish School District,name,3
+"Ouachita Parish, Louisiana",Louisiana,19,2201200,Ouachita Parish School District,name,4
+"St. Bernard Parish, Louisiana",Louisiana,23,2201410,St. Bernard Parish School District,name,38
+"St. Charles Parish, Louisiana",Louisiana,11,2201440,St. Charles Parish School District,name,4
+"Portland Public Schools, Maine",Maine,46,2309930,Portland,name,2
+"Rsu 04, Maine",Maine,17,2314783,Regional School Unit 04,name,4
+"Rsu 05, Maine",Maine,10,2314789,Regional School Unit 05,name,7
+"Rsu 12, Maine",Maine,2,2314780,Regional School Unit 12,name,11
+"Rsu 15/Msad 15, Maine",Maine,12,2310710,School Administrative District 15,name,4
+"Rsu 26, Maine",Maine,3,2314778,Regional School Unit 26,name,3
+"Rsu 28/Msad 28, Maine",Maine,3,2311130,School Administrative District 28,name,3
+"Rsu 38, Maine",Maine,1,2314788,Regional School Unit 38,name,1
+"Rsu 51/Msad 51, Maine",Maine,1,2314240,School Administrative District 51,name,3
+"Rsu 73, Maine",Maine,1,2314805,Regional School Unit 73,name,1
+"Scarborough Public Schools, Maine",Maine,4,2310530,Scarborough,name,2
+"Winslow Schools, Maine",Maine,14,2313860,Winslow,name,4
+"Winthrop Public Schools, Maine",Maine,19,2313970,Winthrop,name,1
+"Anne Arundel County Public Schools, Maryland",Maryland,29,2400060,Anne Arundel County Public Schools,name,6
+"Baltimore City Public Schools, Maryland",Maryland,9,2400090,Baltimore City Public Schools,name,0
+"Baltimore County Public Schools, Maryland",Maryland,48,2400120,Baltimore County Public Schools,name,7
+"Carroll County Public Schools, Maryland",Maryland,14,2400210,Carroll County Public Schools,name,3
+"Charles County Public Schools, Maryland",Maryland,37,2400270,Charles County Public Schools,name,6
+"Garrett County Public Schools, Maryland",Maryland,16,2400360,Garrett County Public Schools,name,17
+"Kent County Public Schools, Maryland",Maryland,17,2400450,Kent County Public Schools,name,22
+"Prince George'S County Public Schools, Maryland",Maryland,61,2400510,Prince George's County Public Schools,name,8
+"Queen Anne'S County Public Schools, Maryland",Maryland,17,2400540,Queen Annes County Public Schools,name,5
+"St. Mary'S County Public Schools, Maryland",Maryland,20,2400600,St. Marys County Public Schools,name,3
+"Worcester County Public Schools, Maryland",Maryland,13,2400720,Worcester County Public Schools,name,2
+"Brockton, Massachusetts",Massachusetts,49,2503090,Brockton School District,name,0
+"District 2504290, Massachusetts",Massachusetts,49,2504290,Dover-Sherborn School District,federal ID,2
+"Hamilton-Wenham, Massachusetts",Massachusetts,5,2505670,Hamilton-Wenham School District,name,2
+"Mendon-Upton, Massachusetts",Massachusetts,17,2507680,Mendon-Upton School District,name,1
+"Narragansett, Massachusetts",Massachusetts,18,2508280,Narragansett School District,name,4
+"North Brookfield, Massachusetts",Massachusetts,36,2508760,North Brookfield School District,name,1
+"Norton, Massachusetts",Massachusetts,8,2509000,Norton School District,name,1
+"Allen Park Public Schools, Michigan",Michigan,16,2602520,Allen Park Public Schools,name,1
+"Alpena Public Schools, Michigan",Michigan,18,2602730,Alpena Public Schools,name,11
+"Bedford Public Schools, Michigan",Michigan,13,2604470,Bedford Public Schools,name,5
+"Bloomfield Hills Schools, Michigan",Michigan,12,2606090,Bloomfield Hills School District,name,5
+"Brighton Area Schools, Michigan",Michigan,11,2606870,Brighton Area Schools,name,2
+"Buchanan Community Schools, Michigan",Michigan,13,2607140,Buchanan Community School District,name,2
+"Caledonia Community Schools, Michigan",Michigan,18,2607620,Caledonia Community Schools,name,2
+"Cedar Springs Public Schools, Michigan",Michigan,17,2608520,Cedar Springs Public Schools,name,3
+"Comstock Public Schools, Michigan",Michigan,21,2610590,Comstock Public Schools,name,5
+"Crestwood School District, Michigan",Michigan,19,2600016,Crestwood School District,name,3
+"Croswell-Lexington Community Schools, Michigan",Michigan,1,2611140,Croswell-Lexington Community School District,name,3
+"Dexter Community School District, Michigan",Michigan,28,2612030,Dexter Community School District,name,3
+"Dundee Community Schools, Michigan",Michigan,11,2612300,Dundee Community Schools,name,3
+"East Lansing School District, Michigan",Michigan,15,2612600,East Lansing School District,name,1
+"Eastpointe Community Schools, Michigan",Michigan,19,2612450,Eastpointe Community Schools,name,3
+"Edwardsburg Public Schools, Michigan",Michigan,14,2612990,Edwardsburg Public Schools,name,2
+"Farmington Public School District, Michigan",Michigan,20,2614070,Farmington Public School District,name,2
+"Flint School District The City, Michigan",Michigan,7,2614520,Flint City School District,name,1
+"Galesburg-Augusta Community Schools, Michigan",Michigan,10,2615450,Galesburg-Augusta Community School District,name,2
+"Grand Rapids Public Schools, Michigan",Michigan,17,2616440,Grand Rapids Public Schools,name,2
+"Gwinn Area Community Schools, Michigan",Michigan,12,2614690,Gwinn Area Community Schools,name,6
+"Hamtramck School District The City, Michigan",Michigan,11,2617520,Hamtramck Public Schools,name,1
+"Hartland Consolidated Schools, Michigan",Michigan,19,2617910,Hartland Consolidated Schools,name,3
+"Hudsonville Public School District, Michigan",Michigan,13,2618840,Hudsonville Public School District,name,2
+"Lansing Public School District, Michigan",Michigan,14,2621150,Lansing Public School District,name,1
+"Madison District Public Schools, Michigan",Michigan,19,2622290,Madison Public Schools,name (closest of 2),0
+"Marquette Area Public Schools, Michigan",Michigan,16,2600013,Marquette Area Public Schools,name,4
+"Milan Area Schools, Michigan",Michigan,24,2623850,Milan Area Schools,name,3
+"Mt. Pleasant City School District, Michigan",Michigan,21,2624750,Mount Pleasant City School District,name,3
+"Plymouth-Canton Community Schools, Michigan",Michigan,24,2628560,Plymouth-Canton Community Schools,name,4
+"Portage Public Schools, Michigan",Michigan,20,2628950,Portage Public Schools,name,1
+"Romulus Community Schools, Michigan",Michigan,18,2630120,Romulus Community Schools,name,3
+"Southfield Public School District, Michigan",Michigan,8,2632310,Southfield Public School District,name,1
+"Southgate Community School District, Michigan",Michigan,20,2632340,Southgate Community School District,name,2
+"Three Rivers Community Schools, Michigan",Michigan,15,2633840,Three Rivers Community Schools,name,6
+"Vicksburg Community Schools, Michigan",Michigan,12,2634950,Vicksburg Community Schools,name,5
+"Walled Lake Consolidated Schools, Michigan",Michigan,12,2635160,Walled Lake Consolidated Schools,name,3
+"Waterford School District, Michigan",Michigan,12,2635310,Waterford School District,name,3
+"Wayne-Westland Community School District, Michigan",Michigan,14,2600015,Wayne-Westland Community School District,name,2
+"Westwood Heights Schools, Michigan",Michigan,14,2635970,Westwood Heights Schools,name,2
+"Woodhaven-Brownstown School District, Michigan",Michigan,11,2636485,Woodhaven-Brownstown School District,name,3
+"Ypsilanti Community Schools, Michigan",Michigan,12,2636630,Ypsilanti Community Schools,name,4
+"Albert Lea Public School District, Minnesota",Minnesota,30,2702970,Albert Lea Public School District,name,5
+"Bird Island-Olivia-Lake Lillian, Minnesota",Minnesota,20,2705660,Bird Island-Olivia-Lake Lillian Public School District,name,5
+"Brainerd Public School District, Minnesota",Minnesota,17,2706090,Brainerd Public School District,name,5
+"Burnsville Public School District, Minnesota",Minnesota,20,2707290,Burnsville-Eagan-Savage School District,partial name,2
+"Chisago Lakes School District, Minnesota",Minnesota,11,2700017,Chisago Lakes School District,name,8
+"Cloquet Public School District, Minnesota",Minnesota,11,2709420,Cloquet Public School District,name,8
+"Duluth Public School District, Minnesota",Minnesota,3,2711040,Duluth Public School District,name,21
+"East Grand Forks Public School Dist, Minnesota",Minnesota,22,2711130,East Grand Forks Public School District,name,8
+"Faribault Public School District, Minnesota",Minnesota,22,2711760,Faribault Public School District,name,5
+"Farmington Public School District, Minnesota",Minnesota,1,2711820,Farmington Public School District,name,7
+"Gfw Public Schools, Minnesota",Minnesota,2,2712580,G.F.W.,name,1
+"Glencoe-Silver Lake School District, Minnesota",Minnesota,10,2700128,Glencoe-Silver Lake School District,name,5
+"Hinckley-Finlayson School District, Minnesota",Minnesota,5,2714070,Hinckley-Finlayson School District,name,6
+"Janesville-Waldorf-Pemberton, Minnesota",Minnesota,11,2791451,Janesville-Waldorf-Pemberton,name,11
+"Lac Qui Parle Valley Schools, Minnesota",Minnesota,12,2700125,Lac Qui Parle Valley School District,name,6
+"Little Falls Public School District, Minnesota",Minnesota,5,2718240,Little Falls Public School District,name,9
+"Mahtomedi Public School District, Minnesota",Minnesota,13,2718750,Mahtomedi Public School District,name,2
+"Northfield Public School District, Minnesota",Minnesota,23,2723880,Northfield Public School District,name,3
+"Owatonna Public School District, Minnesota",Minnesota,14,2728050,Owatonna Public School District,name,4
+"Paynesville Public School District, Minnesota",Minnesota,21,2728140,Paynesville Public School District,name,2
+"Pillager Public School District, Minnesota",Minnesota,8,2728350,Pillager Public School District,name,2
+"Prior Lake-Savage Area Schools, Minnesota",Minnesota,18,2730060,Prior Lake-Savage Area Schools,name,1
+"Red Lake Public School District, Minnesota",Minnesota,8,2730510,Red Lake Public School District,name,18
+"Red Wing Public School District, Minnesota",Minnesota,17,2730480,Red Wing Public School District,name,8
+"Richfield Public School District, Minnesota",Minnesota,17,2731750,Richfield Public School District,name,0
+"Rochester Public School District, Minnesota",Minnesota,23,2731800,Rochester Public School District,name,5
+"Rockford Public School District, Minnesota",Minnesota,13,2732070,Rockford Public School District,name,6
+"Rosemount-Apple Valley-Eagan, Minnesota",Minnesota,15,2732390,Rosemount-Apple Valley-Eagan,name,3
+"Roseville Public School District, Minnesota",Minnesota,16,2732430,Roseville Public School District,name,2
+"Sartell-St. Stephen School District, Minnesota",Minnesota,15,2732820,Sartell-St. Stephen School District,name,6
+"Shakopee Public School District, Minnesota",Minnesota,19,2733000,Shakopee Public School District,name,4
+"South St. Paul Public School Dist, Minnesota",Minnesota,10,2733270,South St. Paul Public School District,name,0
+"South Washington County Schools, Minnesota",Minnesota,21,2733810,South Washington County School District,name,3
+"St. Francis Area Schools, Minnesota",Minnesota,15,2733540,St. Francis Area Schools,name,4
+"Stewartville Public School District, Minnesota",Minnesota,17,2738160,Stewartville Public School District,name,2
+"Stillwater Area Public Schools, Minnesota",Minnesota,21,2738190,Stillwater Area Public School District,name,1
+"Waseca Public School District, Minnesota",Minnesota,17,2741880,Waseca Public School District,name,1
+"Wayzata Public School District, Minnesota",Minnesota,25,2742160,Wayzata Public School District,name,4
+"Westonka Public School District, Minnesota",Minnesota,12,2722920,Westonka Public School District,name,2
+"White Bear Lake School District, Minnesota",Minnesota,13,2742360,White Bear Lake School District,name,2
+"Yellow Medicine East, Minnesota",Minnesota,15,2700099,Yellow Medicine East,name,12
+"Columbus Municipal School Dist, Mississippi",Mississippi,12,2801200,Columbus Municipal School District,name,1
+"Greenwood-Leflore Cons Sch District, Mississippi",Mississippi,1,2800198,Greenwood-Leflore Consolidated School District,name,8
+"Jackson County School Dist, Mississippi",Mississippi,11,2802160,Jackson County School District,name,9
+"Jackson Public School District, Mississippi",Mississippi,44,2802190,Jackson Public School District,name (closest of 2),4
+"North Pike School Dist, Mississippi",Mississippi,7,2803240,North Pike School District,name,6
+"Pascagoula-Gautier School District, Mississippi",Mississippi,12,2803480,Pascagoula-Gautier School District,name,4
+"Vicksburg Warren School Dist, Mississippi",Mississippi,15,2804470,Vicksburg Warren School District,name,2
+"Belton 124, Missouri",Missouri,8,2904620,Belton 124 School District,name,3
+"Bolivar R-I, Missouri",Missouri,13,2905370,Bolivar R-I School District,name,7
+"Camdenton R-Iii, Missouri",Missouri,19,2906990,Camdenton R-III School District,name,4
+"Clayton, Missouri",Missouri,17,2909720,Clayton School District,name,2
+"Ferguson-Florissant R-Ii, Missouri",Missouri,23,2912010,Ferguson-Florissant R-II School District,name,3
+"Fox C-6 School District, Missouri",Missouri,1,2912300,Fox C-6 School District,name,8
+"Francis Howell R-Iii, Missouri",Missouri,28,2928950,Francis Howell R-III School District,name,4
+"Harrisonville R-Ix, Missouri",Missouri,3,2913760,Harrisonville R-IX School District,name,2
+"Hickman Mills C-1, Missouri",Missouri,2,2914340,Hickman Mills C-1 School District,name,2
+"Hillsboro R-Iii, Missouri",Missouri,13,2914430,Hillsboro R-III School District,name,2
+"Kansas City 33, Missouri",Missouri,4,2916400,Kansas City 33 School District,name,3
+"Kearney R-I, Missouri",Missouri,1,2916450,Kearney R-I School District,name,2
+"Kirkwood R-Vii, Missouri",Missouri,21,2916770,Kirkwood R-VII School District,name,3
+"Marshall, Missouri",Missouri,11,2920410,Marshall School District,name,5
+"Newburg R-Ii, Missouri",Missouri,4,2922140,Newburg R-II School District,name,5
+"Normandy Schools Collaborative, Missouri",Missouri,15,2922650,Normandy Schools Collaborative,name,1
+"North Kansas City 74, Missouri",Missouri,20,2922800,North Kansas City 74 School District,name,4
+"Oak Grove R-Vi, Missouri",Missouri,14,2923010,Oak Grove R-VI School District,name,2
+"Raymore-Peculiar R-Ii, Missouri",Missouri,12,2923730,Raymore-Peculiar R-II School District,name,1
+"Raytown C-2, Missouri",Missouri,15,2926070,Raytown C-2 School District,name,0
+"Ritenour, Missouri",Missouri,13,2926640,Ritenour School District,name,1
+"Riverview Gardens, Missouri",Missouri,15,2926670,Riverview Gardens School District,name,0
+"Rockwood R-Vi, Missouri",Missouri,26,2926850,Rockwood R-VI School District,name,5
+"Smithville R-Ii, Missouri",Missouri,12,2928410,Smithville R-II School District,name,2
+"Springfield R-Xii, Missouri",Missouri,15,2928860,Springfield R-XII School District,name,0
+"University City, Missouri",Missouri,12,2930660,University City School District,name,1
+"Willow Springs R-Iv, Missouri",Missouri,16,2932070,Willow Springs R-IV School District,name,4
+"Kalispell Elem, Montana",Montana,21,3015450,Kalispell Elementary School District,name,3
+"Beatrice Public Schools, Nebraska",Nebraska,17,3103600,Beatrice Public Schools,name,4
+"Bennington Public Schools, Nebraska",Nebraska,14,3103990,Bennington Public Schools,name,2
+"Grand Island Public Schools, Nebraska",Nebraska,11,3100016,Grand Island Public Schools,name,2
+"Lincoln Public Schools, Nebraska",Nebraska,28,3172840,Lincoln Public Schools,name,6
+"Norris School Dist 160, Nebraska",Nebraska,14,3100088,Norris School District 160,name,3
+"Omaha Public Schools, Nebraska",Nebraska,19,3174820,Omaha Public Schools,name,5
+"Papillion La Vista Community Schools, Nebraska",Nebraska,9,3175270,Papillion-La Vista Community Schools,name,0
+"Raymond Central Public Schools, Nebraska",Nebraska,2,3104950,Raymond Central Public Schools,name,1
+"Wahoo Public Schools, Nebraska",Nebraska,11,3178210,Wahoo Public Schools,name,3
+"Clark County School District, Nevada",Nevada,36,3200060,Clark County School District,name,14
+"Elko County School District, Nevada",Nevada,28,3200120,Elko County School District,name,48
+"Derry School District, New Hampshire",New Hampshire,4,3302610,Derry School District,name,2
+"Hampton School District, New Hampshire",New Hampshire,3,3303510,Hampton School District,name,1
+"Sanborn Regional School District, New Hampshire",New Hampshire,42,3306080,Sanborn Regional School District,name,5
+"Barnegat Township School District, New Jersey",New Jersey,10,3416470,Barnegat Township School District,name,5
+"Bayonne School District, New Jersey",New Jersey,24,3401260,Bayonne City School District,name,1
+"Belleville Public School District, New Jersey",New Jersey,16,3401350,Belleville Town School District,name,1
+"Berkeley Heights School District, New Jersey",New Jersey,15,3401530,Berkeley Heights Township School District,name,1
+"Bernards Township School District, New Jersey",New Jersey,13,3401650,Bernards Township School District,name,2
+"Bogota Public School District, New Jersey",New Jersey,15,3401920,Bogota Borough School District,name,1
+"Bound Brook School District, New Jersey",New Jersey,15,3402100,Bound Brook Borough School District,name,0
+"Branchburg Township School District, New Jersey",New Jersey,7,3402160,Branchburg Township School District,name,1
+"Brielle Boro School District, New Jersey",New Jersey,12,3402310,Brielle Borough School District,name,1
+"Caldwell-West School District, New Jersey",New Jersey,12,3402580,Caldwell-West Caldwell School District,name,1
+"Camden City School District, New Jersey",New Jersey,11,3402640,Camden City School District,name,2
+"Cherry Hill School District, New Jersey",New Jersey,29,3403000,Cherry Hill Township School District,name,1
+"Cinnaminson Township School District, New Jersey",New Jersey,11,3403120,Cinnaminson Township School District,name,1
+"Clifton Public School District, New Jersey",New Jersey,17,3403300,Clifton City School District,name,1
+"Delanco Township School District, New Jersey",New Jersey,8,3403690,Delanco Township School District,name,1
+"Denville Township K-8 School District, New Jersey",New Jersey,21,3403870,Denville Township School District,name,1
+"District 3405610, New Jersey",New Jersey,13,3405610,Freehold Regional School District,federal ID,11
+"District 3407140, New Jersey",New Jersey,13,3407140,High Point Regional School District,federal ID,2
+"District 3413000, New Jersey",New Jersey,13,3413000,Pinelands Regional School District,federal ID,5
+"District 3417460, New Jersey",New Jersey,13,3417460,West Essex Regional School District,federal ID,2
+"East Brunswick Township School District, New Jersey",New Jersey,27,3404110,East Brunswick Township School District,name,4
+"East Windsor Regional School District, New Jersey",New Jersey,18,3404320,East Windsor Regional School District,name,0
+"Galloway Township Public School District, New Jersey",New Jersey,11,3405730,Galloway Township School District,name,2
+"Gloucester Township Public Schools, New Jersey",New Jersey,13,3406030,Gloucester Township School District,name,3
+"Hackensack School District, New Jersey",New Jersey,21,3406270,Hackensack City School District,name,1
+"Haddon Township School District, New Jersey",New Jersey,14,3406360,Haddon Township School District,name,1
+"Haddonfield School District, New Jersey",New Jersey,19,3406390,Haddonfield Borough School District,name,1
+"Hillsborough Township Public School District, New Jersey",New Jersey,17,3407230,Hillsborough Township School District,name,1
+"Hillside Public School District, New Jersey",New Jersey,14,3407290,Hillside Township School District,name,1
+"Hopatcong School District, New Jersey",New Jersey,10,3407440,Hopatcong Borough School District,partial name,3
+"Jackson Township School District, New Jersey",New Jersey,14,3407740,Jackson Township School District,name,1
+"Keansburg School District, New Jersey",New Jersey,2,3407860,Keansburg Borough School District,name,1
+"Kenilworth School District, New Jersey",New Jersey,9,3407920,Kenilworth Borough School District,name,1
+"Kinnelon School District, New Jersey",New Jersey,16,3408040,Kinnelon Borough School District,name,2
+"Leonia Public School District, New Jersey",New Jersey,14,3408520,Leonia Borough School District,name,1
+"Long Hill Township School District, New Jersey",New Jersey,16,3412660,Long Hill Township School District,name,2
+"Mahwah Township Public School District, New Jersey",New Jersey,20,3409330,Mahwah Township School District,name,2
+"Manchester Township School District, New Jersey",New Jersey,12,3409450,Manchester Township School District,name,2
+"Matawan-Aberdeen Regional School District, New Jersey",New Jersey,19,3409750,Matawan-Aberdeen Regional School District,name,1
+"Montgomery Township School District, New Jersey",New Jersey,14,3410590,Montgomery Township School District,name,2
+"Mount Olive Township School District, New Jersey",New Jersey,21,3410980,Mount Olive Township School District,name,4
+"Nutley Public School District, New Jersey",New Jersey,13,3411880,Nutley Town School District,name,0
+"Old Bridge Township School District, New Jersey",New Jersey,20,3409270,Old Bridge Township School District,name,4
+"Oradell Public School District, New Jersey",New Jersey,20,3412240,Oradell Borough School District,name,0
+"Piscataway Township School District, New Jersey",New Jersey,15,3413050,Piscataway Township School District,name,4
+"Plainfield Public School District, New Jersey",New Jersey,12,3413140,Plainfield City School District,name,3
+"Princeton Public School District, New Jersey",New Jersey,15,3413410,Princeton Public Schools,name,1
+"Readington Township School District, New Jersey",New Jersey,15,3413710,Readington Township School District,name,2
+"Ridgewood Public School District, New Jersey",New Jersey,17,3413830,Ridgewood Village School District,name,0
+"River Edge School District, New Jersey",New Jersey,14,3413890,River Edge Borough School District,name,1
+"River Vale Public School District, New Jersey",New Jersey,13,3413950,River Vale Township School District,name,2
+"Robbinsville Public Schools, New Jersey",New Jersey,16,3417100,Robbinsville Township School District,name,3
+"Rockaway Township School District, New Jersey",New Jersey,15,3414130,Rockaway Township School District,name,2
+"Roselle Park Public School District, New Jersey",New Jersey,13,3414310,Roselle Park Borough School District,name,0
+"Saddle Brook School District, New Jersey",New Jersey,16,3414490,Saddle Brook Township School District,name,0
+"Scotch Plains-Fanwood School District, New Jersey",New Jersey,10,3414670,Scotch Plains-Fanwood Regional School District,name,3
+"South Orange-Maplewood School District, New Jersey",New Jersey,16,3415330,South Orange-Maplewood School District,name,0
+"South Plainfield School District, New Jersey",New Jersey,14,3415360,South Plainfield Borough School District,name,0
+"Sparta Township Public School District, New Jersey",New Jersey,12,3415510,Sparta Township School District,name,2
+"Summit Public School District, New Jersey",New Jersey,16,3415900,Summit City School District,name,1
+"Sussex-Wantage Regional School District, New Jersey",New Jersey,11,3415960,Sussex-Wantage Regional School District,name,4
+"Vineland Public School District, New Jersey",New Jersey,18,3416800,Vineland City School District,name,4
+"Wall Township Public School District, New Jersey",New Jersey,14,3416890,Wall Township School District,name,3
+"Warren Township School District, New Jersey",New Jersey,14,3416980,Warren Township School District,name,1
+"Watchung School District, New Jersey",New Jersey,16,3417190,Watchung Borough School District,partial name (closest of 2),2
+"Wayne Township Public School District, New Jersey",New Jersey,20,3417280,Wayne Township School District,name,2
+"West Windsor-Plainsboro Regional School District, New Jersey",New Jersey,21,3417700,West Windsor-Plainsboro Regional School District,name,4
+"Westwood Regional School District, New Jersey",New Jersey,12,3417820,Westwood Regional School District,name,1
+"Winslow Township School District, New Jersey",New Jersey,15,3418060,Winslow Township School District,name,5
+"Alamogordo Public Schools, New Mexico",New Mexico,4,3500030,Alamogordo Public Schools,name,59
+"Central Consolidated Schools, New Mexico",New Mexico,22,3500390,Central Consolidated Schools,name,33
+"Cobre Consolidated Schools, New Mexico",New Mexico,9,3500600,Cobre Consolidated Schools,name,17
+"Deming Public Schools, New Mexico",New Mexico,18,3500690,Deming Public Schools,name,8
+"Gallup-Mckinley Cty Schools, New Mexico",New Mexico,16,3501110,Gallup-McKinley County Schools,partial name,47
+"Hatch Valley Public Schools, New Mexico",New Mexico,5,3501230,Hatch Valley Municipal Schools,name,37
+"Lordsburg Municipal Schools, New Mexico",New Mexico,11,3501620,Lordsburg Municipal Schools,name,10
+"Rio Rancho Public Schools, New Mexico",New Mexico,26,3500010,Rio Rancho Public Schools,name,10
+"Silver Consolidated Schools, New Mexico",New Mexico,15,3502430,Silver City Consolidated Schools,partial name,26
+"Tucumcari Public Schools, New Mexico",New Mexico,5,3502640,Tucumcari Public Schools,name,11
+"Akron Central School District, New York",New York,20,3602430,Akron Central School District,name,4
+"Amherst Central School District, New York",New York,18,3602920,Amherst Central School District,name,1
+"Arlington Central School District, New York",New York,21,3603270,Arlington Central School District,name,2
+"Averill Park Central School District, New York",New York,2,3600016,Averill Park Central School District,name,3
+"Baldwin Union Free School District, New York",New York,12,3603840,Baldwin Union Free School District,name,2
+"Ballston Spa Central School District, New York",New York,12,3603930,Ballston Spa Central School District,name,1
+"Bay Shore Union Free School District, New York",New York,21,3604080,Bay Shore Union Free School District,name,1
+"Beekmantown Central School District, New York",New York,6,3604290,Beekmantown Central School District,name,1
+"Brighton Central School District, New York",New York,18,3605460,Brighton Central School District,name,1
+"Byram Hills Central School District, New York",New York,20,3606060,Byram Hills Central School District,name,1
+"Caledonia-Mumford Central School District, New York",New York,17,3606180,Caledonia-Mumford Central School District,name,0
+"Canajoharie Central School District, New York",New York,8,3606300,Canajoharie Central School District,name,5
+"Candor Central School District, New York",New York,1,3606420,Candor Central School District,name,2
+"Center Moriches Union Free School District, New York",New York,11,3606840,Center Moriches Union Free School District,name,0
+"Central Square Central School District, New York",New York,19,3606900,Central Square Central School District,name,9
+"Chatham Central School District, New York",New York,20,3607110,Chatham Central School District,name,5
+"Cheektowaga-Maryvale Union Free School District, New York",New York,15,3618600,Cheektowaga-Maryvale Union Free School District,name,1
+"Clarence Central School District, New York",New York,14,3607590,Clarence Central School District,name,4
+"Cohoes City School District, New York",New York,21,3607980,Cohoes City School District,name,1
+"Connetquot Central School District, New York",New York,24,3608160,Connetquot Central School District,name,2
+"Cornwall Central School District, New York",New York,14,3608430,Cornwall Central School District,name,5
+"District 3605640, New York",New York,15,3605640,Bronxville Union Free School District,federal ID,0
+"Duanesburg Central School District, New York",New York,7,3609360,Duanesburg Central School District,name,2
+"East Aurora Union Free School District, New York",New York,17,3609540,East Aurora Union Free School District,name,4
+"East Meadow Union Free School District, New York",New York,18,3609840,East Meadow Union Free School District,name,2
+"East Rockaway Union Free School District, New York",New York,16,3609960,East Rockaway Union Free School District,name,1
+"Eastport-South Manor Csd, New York",New York,18,3600125,Eastport-South Manor Central School District,name,4
+"Edgemont Union Free School District, New York",New York,15,3610200,Edgemont Union Free School District,name,1
+"Eldred Central School District, New York",New York,15,3610410,Eldred Central School District,name,3
+"Ellenville Central School District, New York",New York,20,3610500,Ellenville Central School District,name,3
+"Farmingdale Union Free School District, New York",New York,1,3610980,Farmingdale Union Free School District,name,1
+"Fredonia Central School District, New York",New York,22,3611520,Fredonia Central School District,name,3
+"Frontier Central School District, New York",New York,16,3611670,Frontier Central School District,name,2
+"Geneseo Central School District, New York",New York,25,3611940,Geneseo Central School District,name,6
+"Gloversville City School District, New York",New York,11,3612270,Gloversville City School District,name,10
+"Grand Island Central School District, New York",New York,8,3607020,Grand Island Central School District,name,3
+"Greece Central School District, New York",New York,21,3612630,Greece Central School District,name,2
+"Greenville Central School District, New York",New York,13,3612870,Greenville Central School District,name,3
+"Guilderland Central School District, New York",New York,1,3613080,Guilderland Central School District,name,1
+"Haldane Central School District, New York",New York,17,3613230,Haldane Central School District,name,6
+"Hamilton Central School District, New York",New York,15,3613380,Hamilton Central School District,name,2
+"Hampton Bays Union Free School District, New York",New York,12,3613530,Hampton Bays Union Free School District,name,1
+"Hauppauge Union Free School District, New York",New York,17,3613980,Hauppauge Union Free School District,name,3
+"Highland Central School District, New York",New York,18,3614400,Highland Central School District,name,1
+"Horseheads Central School District, New York",New York,21,3614850,Horseheads Central School District,name,10
+"Hudson Falls Central School District, New York",New York,9,3614970,Hudson Falls Central School District,name,2
+"Hyde Park Central School District, New York",New York,23,3615180,Hyde Park Central School District,name,5
+"Iroquois Central School District, New York",New York,15,3615360,Iroquois Central School District,name,5
+"Ithaca City School District, New York",New York,43,3615570,Ithaca City School District,name,6
+"Lake Placid Central School District, New York",New York,14,3616500,Lake Placid Central School District,name,3
+"Lancaster Central School District, New York",New York,9,3616680,Lancaster Central School District,name,2
+"Locust Valley Central School District, New York",New York,15,3617700,Locust Valley Central School District,name,2
+"Long Beach City School District, New York",New York,18,3617730,Long Beach City School District,name,1
+"Lynbrook Union Free School District, New York",New York,12,3617910,Lynbrook Union Free School District,name,0
+"Manhasset Union Free School District, New York",New York,23,3618270,Manhasset Union Free School District,name,1
+"Marion Central School District, New York",New York,18,3618540,Marion Central School District,name,2
+"Massena Central School District, New York",New York,9,3618660,Massena Central School District,name,0
+"Mattituck-Cutchogue Union Free School District, New York",New York,12,3600021,Mattituck-Cutchogue Union Free School District,name,3
+"Middletown City School District, New York",New York,18,3619320,Middletown City School District,name,2
+"Monroe-Woodbury Central School District, New York",New York,23,3619650,Monroe-Woodbury Central School District,name,6
+"Mount Sinai Union Free School District, New York",New York,13,3620040,Mount Sinai Union Free School District,name,1
+"Mount Vernon School District, New York",New York,35,3620100,Mount Vernon School District,name,0
+"Nanuet Union Free School District, New York",New York,17,3620190,Nanuet Union Free School District,name,1
+"New Paltz Central School District, New York",New York,1,3620460,New Paltz Central School District,name,4
+"New Rochelle City School District, New York",New York,17,3620490,New Rochelle City School District,name,1
+"Newark Central School District, New York",New York,18,3620640,Newark Central School District,name,4
+"Newburgh City School District, New York",New York,23,3620700,Newburgh City School District,name,4
+"Niagara-Wheatfield Central School District, New York",New York,17,3620850,Niagara-Wheatfield Central School District,name,3
+"North Rose-Wolcott Central School District, New York",New York,18,3616980,North Rose-Wolcott Central School District,name,2
+"Oakfield-Alabama Central School District, New York",New York,14,3621510,Oakfield-Alabama Central School District,name,4
+"Oswego City School District, New York",New York,20,3622050,Oswego City School District,name,4
+"Palmyra-Macedon Central School District, New York",New York,3,3622380,Palmyra-Macedon Central School District,name,3
+"Peru Central School District, New York",New York,11,3622830,Peru Central School District,name,2
+"Pittsford Central School District, New York",New York,14,3623160,Pittsford Central School District,name,1
+"Port Washington Union Free School District, New York",New York,28,3623580,Port Washington Union Free School District,name,1
+"Ravena-Coeymans-Selkirk Central School District, New York",New York,22,3624150,Ravena-Coeymans-Selkirk Central School District,name,6
+"Red Creek Central School District, New York",New York,14,3624210,Red Creek Central School District,name,2
+"Riverhead Central School District, New York",New York,11,3624690,Riverhead Central School District,name,1
+"Rochester City School District, New York",New York,23,3624750,Rochester City School District,name,2
+"Rondout Valley Central School District, New York",New York,12,3624960,Rondout Valley Central School District,name,4
+"Rye City School District, New York",New York,20,3625260,Rye City School District,name,1
+"Sachem Central School District, New York",New York,26,3625350,Sachem Central School District,name,3
+"Salamanca City School District, New York",New York,21,3625440,Salamanca City School District,name,3
+"Salem Central School District, New York",New York,17,3625470,Salem Central School District,name,2
+"Saratoga Springs City Sd, New York",New York,11,3625770,Saratoga Springs City School District,name,5
+"Sayville Union Free School District, New York",New York,23,3625920,Sayville Union Free School District,name,1
+"Sidney Central School District, New York",New York,1,3626850,Sidney Central School District,name,6
+"Smithtown Central School District, New York",New York,1,3627060,Smithtown Central School District,name,2
+"Somers Central School District, New York",New York,25,3627180,Somers Central School District,name,4
+"South Colonie Central School District, New York",New York,12,3627210,South Colonie Central School District,name,0
+"South Country Central School District, New York",New York,2,3600008,South Country Central School District,name,4
+"South Huntington Union Free School District, New York",New York,19,3627300,South Huntington Union Free School District,name,1
+"Spackenkill Union Free School District, New York",New York,15,3606500,Spackenkill Union Free School District,name,1
+"Three Central School District, New York",New York,20,3628200,Three Village Central School District,name,2
+"Tri-Valley Central School District, New York",New York,19,3628890,Tri-Valley Central School District,name,6
+"Valley Central School District (Montgomery), New York",New York,17,3619680,Valley Central School District (Montgomery),name,3
+"Voorheesville Central School District, New York",New York,19,3629670,Voorheesville Central School District,name,1
+"Walton Central School District, New York",New York,22,3629820,Walton Central School District,name,3
+"Wantagh Union Free School District, New York",New York,15,3629850,Wantagh Union Free School District,name,4
+"Wappingers Central School District, New York",New York,24,3629880,Wappingers Central School District,name,4
+"Watertown City School District, New York",New York,21,3630120,Watertown City School District,name,2
+"Waterville Central School District, New York",New York,12,3630160,Waterville Central School District,name,1
+"West Canada Valley Central School District, New York",New York,1,3630600,West Canada Valley Central School District,name,2
+"West Hempstead Union Free School District, New York",New York,19,3630660,West Hempstead Union Free School District,name,0
+"West Islip Union Free School District, New York",New York,12,3630690,West Islip Union Free School District,name,1
+"Westbury Union Free School District, New York",New York,12,3630960,Westbury Union Free School District,name,0
+"White Plains City School District, New York",New York,12,3631260,White Plains City School District,name,2
+"Whitney Point Central School District, New York",New York,12,3631380,Whitney Point Central School District,name,2
+"Wilson Central School District, New York",New York,8,3631560,Wilson Central School District,name,5
+"Yorktown Central School District, New York",New York,23,3631980,Yorktown Central School District,name,3
+"Ashe County Schools, North Carolina",North Carolina,13,3700210,Ashe County Schools,name,3
+"Bladen County Schools, North Carolina",North Carolina,7,3700390,Bladen County Schools,name,5
+"Buncombe County Schools, North Carolina",North Carolina,16,3700450,Buncombe County Schools,name,5
+"Cabarrus County Schools, North Carolina",North Carolina,22,3700530,Cabarrus County Schools,name,4
+"Caldwell County Schools, North Carolina",North Carolina,1,3700580,Caldwell County Schools,name,9
+"Clay County Schools, North Carolina",North Carolina,10,3700870,Clay County Schools,name,6
+"Columbus County Schools, North Carolina",North Carolina,14,3700960,Columbus County Schools,name,14
+"Cumberland County Schools, North Carolina",North Carolina,23,3700011,Cumberland County Schools,name,9
+"Dare County Schools, North Carolina",North Carolina,11,3701110,Dare County Schools,name,27
+"Edgecombe County Public Schools, North Carolina",North Carolina,15,3701320,Edgecombe County Schools,name,4
+"Elkin City Schools, North Carolina",North Carolina,12,3701380,Elkin City Schools,name,5
+"Gaston County Schools, North Carolina",North Carolina,8,3701620,Gaston County Schools,name,5
+"Granville County Schools, North Carolina",North Carolina,19,3701800,Granville County Schools,name,6
+"Guilford County Schools, North Carolina",North Carolina,13,3701920,Guilford County Schools,name,0
+"Haywood County Schools, North Carolina",North Carolina,20,3702040,Haywood County Schools,name,7
+"Hoke County Schools, North Carolina",North Carolina,11,3702250,Hoke County Schools,name,2
+"Jackson County Public Schools, North Carolina",North Carolina,11,3702340,Jackson County Schools,name,14
+"Johnston County Public Schools, North Carolina",North Carolina,4,3702370,Johnston County Schools,name,5
+"Jones County Schools, North Carolina",North Carolina,12,3702400,Jones County Schools,name,5
+"Lenoir County Public Schools, North Carolina",North Carolina,16,3702610,Lenoir County Schools,name,4
+"Moore County Schools, North Carolina",North Carolina,30,3703090,Moore County Schools,name,6
+"Nash County Public Schools, North Carolina",North Carolina,29,3703270,Nash-Rocky Mount Schools,name,3
+"Pamlico County Schools, North Carolina",North Carolina,11,3703510,Pamlico County Schools,name,3
+"Person County Schools, North Carolina",North Carolina,13,3703630,Person County Schools,name,2
+"Polk County Schools, North Carolina",North Carolina,11,3703720,Polk County Schools,name,4
+"Public Schools Robeson County, North Carolina",North Carolina,22,3703930,Robeson County Schools,name,11
+"Stokes County Schools, North Carolina",North Carolina,15,3704380,Stokes County Schools,name,3
+"Surry County Schools, North Carolina",North Carolina,14,3704410,Surry County Schools,name,4
+"Transylvania County Schools, North Carolina",North Carolina,8,3704530,Transylvania County Schools,name,6
+"Tyrrell County Schools, North Carolina",North Carolina,4,3704590,Tyrrell County Schools,name,12
+"Union County Public Schools, North Carolina",North Carolina,40,3704620,Union County Public Schools,name,2
+"Wake County Schools, North Carolina",North Carolina,42,3704720,Wake County Schools,name,9
+"Washington County Schools, North Carolina",North Carolina,13,3704800,Washington County Schools,name,15
+"Wayne County Public Schools, North Carolina",North Carolina,1,3704880,Wayne County Public Schools,name,5
+"Weldon City Schools, North Carolina",North Carolina,14,3704890,Weldon City Schools,name,9
+"Winston Salem / Forsyth County Schools, North Carolina",North Carolina,22,3701500,Forsyth County Schools,name,6
+"Belcourt 7, North Dakota",North Dakota,10,3802530,Belcourt Public School District 7,name,4
+"Grand Forks 1, North Dakota",North Dakota,23,3808130,Grand Forks Public School District 1,name,4
+"Oakes 41, North Dakota",North Dakota,26,3814500,Oakes Public School District 41,name,1
+"Richland 44, North Dakota",North Dakota,2,3800036,Richland Public School District 44,name,2
+"Williston Basin 7, North Dakota",North Dakota,29,3800405,Williston Basin Public School District 7,name,
+"Akron City, Ohio",Ohio,20,3904348,Akron City School District,name,1
+"Alexander Local, Ohio",Ohio,10,3904590,Alexander Local School District,name,2
+"Amherst Exempted, Ohio",Ohio,6,3904519,Amherst Exempted Village School District,name,2
+"Beachwood City, Ohio",Ohio,16,3904355,Beachwood City School District,name,1
+"Bedford City, Ohio",Ohio,20,3910017,Bedford City School District,name,3
+"Bellbrook-Sugarcreek Local, Ohio",Ohio,17,3904727,Bellbrook-Sugarcreek Local School District,name,2
+"Berea City, Ohio",Ohio,2,3904360,Berea City School District,name,4
+"Bexley City, Ohio",Ohio,17,3904362,Bexley City School District,name,0
+"Big Walnut Local, Ohio",Ohio,14,3904674,Big Walnut Local School District,name,3
+"Bloom-Carroll Local, Ohio",Ohio,17,3904686,Bloom-Carroll Local School District,name,1
+"Brooklyn City, Ohio",Ohio,13,3904365,Brooklyn City School District,name,0
+"Canal Winchester Local, Ohio",Ohio,14,3904694,Canal Winchester Local School District,name,3
+"Canfield Local, Ohio",Ohio,12,3904831,Canfield Local School District,name,0
+"Carlisle Local, Ohio",Ohio,15,3905041,Carlisle Local School District,name,1
+"Chagrin Falls Exempted, Ohio",Ohio,11,3904528,Chagrin Falls Exempted Village School District,name,0
+"Cleveland Municipal, Ohio",Ohio,21,3904378,Cleveland Municipal School District,name,3
+"Cuyahoga Falls City, Ohio",Ohio,26,3904383,Cuyahoga Falls City School District,name,1
+"Cuyahoga Heights Local, Ohio",Ohio,24,3904655,Cuyahoga Heights Local School District,name,3
+"Dayton City, Ohio",Ohio,25,3904384,Dayton City School District,name,2
+"Dublin City, Ohio",Ohio,27,3904702,Dublin City School District,name,3
+"Fairbanks Local, Ohio",Ohio,10,3905032,Fairbanks Local School District,name,2
+"Fairborn City, Ohio",Ohio,12,3904396,Fairborn City School District,name,2
+"Fairfield Union Local, Ohio",Ohio,20,3904687,Fairfield Union Local School District,name,1
+"Findlay City, Ohio",Ohio,13,3910000,Findlay City School District,name,5
+"Forest Hills Local, Ohio",Ohio,11,3904734,Forest Hills Local School District,name,2
+"Fredericktown Local, Ohio",Ohio,16,3904785,Fredericktown Local School District,name,2
+"Fremont City, Ohio",Ohio,34,3904401,Fremont City School District,name,4
+"Garfield Heights City Schools, Ohio",Ohio,17,3904404,Garfield Heights City School District,name,1
+"Geneva Area City, Ohio",Ohio,12,3904405,Geneva Area City School District,name,5
+"Grandview Heights Schools, Ohio",Ohio,10,3904407,Grandview Heights City School District,name,1
+"Granville Exempted, Ohio",Ohio,14,3904539,Granville Exempted Village School District,name,1
+"Green Local, Ohio",Ohio,12,3905001,Green Local School District,name (closest of 3),1
+"Groveport Madison Local, Ohio",Ohio,20,3904697,Groveport Madison Local School District,name,2
+"Independence Local, Ohio",Ohio,8,3904656,Independence Local School District,name,1
+"Kenston Local, Ohio",Ohio,4,3904719,Kenston Local School District,name,2
+"Kettering City School District, Ohio",Ohio,22,3904418,Kettering City School District,name,0
+"Lakota Local, Ohio",Ohio,25,3904611,Lakota Local School District,name (closest of 2),3
+"Little Miami Local, Ohio",Ohio,10,3905044,Little Miami Local School District,name,8
+"Maple Heights City, Ohio",Ohio,18,3904430,Maple Heights City School District,name,1
+"Marlington Local, Ohio",Ohio,14,3904988,Marlington Local School District,name,1
+"Medina City Sd, Ohio",Ohio,11,3904438,Medina City School District,name,2
+"Mentor Exempted, Ohio",Ohio,28,3904549,Mentor Exempted Village School District,name,1
+"New Albany-Plain Local, Ohio",Ohio,20,3904699,New Albany-Plain Local School District,name,1
+"New Philadelphia City, Ohio",Ohio,12,3904448,New Philadelphia City School District,name,7
+"New Richmond Exempted, Ohio",Ohio,12,3904555,New Richmond Exempted Village School District,name,4
+"Nordonia Hills City, Ohio",Ohio,1,3905004,Nordonia Hills City School District,name,1
+"North Ridgeville City, Ohio",Ohio,26,3904453,North Ridgeville City School District,name,1
+"Northridge Local, Ohio",Ohio,19,3904803,Northridge Local School District,name (closest of 2),0
+"Northwest Local, Ohio",Ohio,13,3904990,Northwest Local School District,name (closest of 3),4
+"Oberlin City Schools, Ohio",Ohio,14,3904459,Oberlin City School District,name,0
+"Olentangy Local, Ohio",Ohio,22,3904676,Olentangy Local School District,name,3
+"Perrysburg Exempted, Ohio",Ohio,25,3904558,Perrysburg Exempted Village School District,name,4
+"Pickerington Local, Ohio",Ohio,23,3904689,Pickerington Local School District,name,1
+"Poland Local, Ohio",Ohio,4,3904834,Poland Local School District,name,2
+"Revere Local, Ohio",Ohio,24,3905005,Revere Local School District,name,1
+"Riverside Local, Ohio",Ohio,47,3910014,Riverside Local School District,name (closest of 2),3
+"Rolling Hills Local, Ohio",Ohio,14,3904730,Rolling Hills Local School District,name,6
+"Ross Local, Ohio",Ohio,10,3904614,Ross Local School District,name,7
+"Sidney City, Ohio",Ohio,14,3910003,Sidney City School District,name,4
+"South Euclid-Lyndhurst City, Ohio",Ohio,17,3904479,South Euclid-Lyndhurst City School District,name,1
+"South-Western City, Ohio",Ohio,21,3904480,South-Western City School District,name,7
+"Springboro Community City, Ohio",Ohio,15,3905042,Springboro Community City School District,name,3
+"Stow-Munroe Falls City School District, Ohio",Ohio,27,3904483,Stow-Munroe Falls City School District,name,4
+"Strongsville City, Ohio",Ohio,23,3904484,Strongsville City School District,name,1
+"Sycamore Community City, Ohio",Ohio,27,3904486,Sycamore Community City School District,name,2
+"Talawanda City, Ohio",Ohio,12,3904615,Talawanda City School District,name,4
+"Three Rivers Local, Ohio",Ohio,13,3904739,Three Rivers Local School District,name,1
+"Tiffin City Schools, Ohio",Ohio,2,3904489,Tiffin City School District,name,4
+"Tipp City Exempted, Ohio",Ohio,14,3904561,Tipp City Exempted Village School District,name,3
+"Toledo City, Ohio",Ohio,13,3904490,Toledo City School District,name,7
+"Trotwood-Madison City, Ohio",Ohio,20,3904869,Trotwood-Madison City School District,name,1
+"Valley View Local, Ohio",Ohio,10,3904874,Valley View Local School District,name,4
+"Vermilion Local, Ohio",Ohio,14,3904682,Vermilion Local School District,name,3
+"Warren City, Ohio",Ohio,1,3904499,Warren City School District,name,0
+"West Geauga Local, Ohio",Ohio,19,3904722,West Geauga Local School District,name,3
+"Westerville City, Ohio",Ohio,43,3904504,Westerville City School District,name,2
+"Willoughby-Eastlake City, Ohio",Ohio,15,3904510,Willoughby-Eastlake City School District,name,2
+"Woodridge Local, Ohio",Ohio,8,3904997,Woodridge Local School District,name,3
+"Wyoming City, Ohio",Ohio,12,3904514,Wyoming City School District,name,1
+"Yellow Springs Exempted, Ohio",Ohio,19,3904567,Yellow Springs Exempted Village School District,name,1
+"Bixby, Oklahoma",Oklahoma,9,4004500,Bixby Public Schools,name,1
+"Broken Arrow, Oklahoma",Oklahoma,13,4005490,Broken Arrow Public Schools,name,4
+"Davis, Oklahoma",Oklahoma,1,4009510,Davis Public Schools,name,8
+"Guthrie, Oklahoma",Oklahoma,9,4013560,Guthrie Public Schools,name,3
+"Lawton, Oklahoma",Oklahoma,16,4017250,Lawton Public Schools,name,4
+"Muskogee, Oklahoma",Oklahoma,3,4020970,Muskogee Public Schools,name,3
+"Norman, Oklahoma",Oklahoma,15,4021720,Norman Public Schools,name,4
+"Ponca City, Oklahoma",Oklahoma,7,4024690,Ponca City Public Schools,name,4
+"Sand Springs, Oklahoma",Oklahoma,10,4026880,Sand Springs Public Schools,name,5
+"Banks Sd 13, Oregon",Oregon,18,4101830,Banks School District 13,name,10
+"Bend-Lapine Administrative Sd 1, Oregon",Oregon,25,4101980,Bend-La Pine Administrative School District 1,name,26
+"Centennial Sd 28J, Oregon",Oregon,2,4102800,Centennial School District 28J,name,3
+"Colton Sd 53, Oregon",Oregon,11,4103270,Colton School District 53,name,11
+"Coos Bay Sd 9, Oregon",Oregon,18,4103660,Coos Bay School District 9,name,17
+"Corvallis Sd 509J, Oregon",Oregon,20,4103480,Corvallis School District 509J,name,0
+"Forest Grove Sd 15, Oregon",Oregon,23,4105160,Forest Grove School District 15,name,12
+"Greater Albany Public Sd 8J, Oregon",Oregon,20,4101120,Greater Albany School District 8J,name,3
+"Gresham-Barlow Sd 10J, Oregon",Oregon,30,4106000,Gresham-Barlow School District 1J,name,6
+"Hillsboro Sd 1J, Oregon",Oregon,19,4100023,Hillsboro School District 1J,name,4
+"North Bend Sd 13, Oregon",Oregon,18,4108820,North Bend School District 13,name,16
+"North Clackamas Sd 12, Oregon",Oregon,22,4108830,North Clackamas School District 12,name,5
+"Nyssa Sd 26, Oregon",Oregon,1,4109000,Nyssa School District 26,name,27
+"Ontario Sd 8C, Oregon",Oregon,13,4109270,Ontario School District 8,name,7
+"Oregon City Sd 62, Oregon",Oregon,20,4109330,Oregon City School District 62,name,7
+"Philomath Sd 17J, Oregon",Oregon,18,4109600,Philomath School District 17J,name,12
+"Phoenix-Talent Sd 4, Oregon",Oregon,23,4109630,Phoenix-Talent School District 4,name,12
+"Port Orford-Langlois Sd 2Cj, Oregon",Oregon,10,4110020,Port Orford-Langlois School District 2J,name,10
+"Sherwood Sd 88J, Oregon",Oregon,16,4111290,Sherwood School District 88J,name,1
+"Silver Falls Sd 4J, Oregon",Oregon,21,4111450,Silver Falls School District 4J,name,9
+"St Helens Sd 502, Oregon",Oregon,22,4111720,St. Helens School District 502,name,9
+"Sweet Home Sd 55, Oregon",Oregon,20,4111970,Sweet Home School District 55,name,33
+"Tigard-Tualatin Sd 23J, Oregon",Oregon,28,4112240,Tigard-Tualatin School District 23J,name,3
+"Willamina Sd 30J, Oregon",Oregon,12,4113350,Willamina School District 30J,name,9
+"Woodburn Sd 103, Oregon",Oregon,20,4113530,Woodburn School District 103,name,1
+"Abington Heights Sd, Pennsylvania",Pennsylvania,23,4202010,Abington Heights School District,name,4
+"Abington Sd, Pennsylvania",Pennsylvania,25,4202040,Abington School District,name,1
+"Allegheny Valley Sd, Pennsylvania",Pennsylvania,21,4202190,Allegheny Valley School District,name,0
+"Altoona Area Sd, Pennsylvania",Pennsylvania,3,4202340,Altoona Area School District,name,1
+"Ambridge Area Sd, Pennsylvania",Pennsylvania,20,4202440,Ambridge Area School District,name,5
+"Bermudian Springs Sd, Pennsylvania",Pennsylvania,12,4203450,Bermudian Springs School District,name,1
+"Bethel Park Sd, Pennsylvania",Pennsylvania,25,4203510,Bethel Park School District,name,2
+"Boyertown Area Sd, Pennsylvania",Pennsylvania,30,4203960,Boyertown Area School District,name,1
+"Bristol Sd, Pennsylvania",Pennsylvania,12,4204200,Bristol Borough School District,partial name (closest of 2),1
+"Burgettstown Area Sd, Pennsylvania",Pennsylvania,3,4204500,Burgettstown Area School District,name,4
+"Carlynton Sd, Pennsylvania",Pennsylvania,10,4205040,Carlynton School District,name,1
+"Central Valley Sd, Pennsylvania",Pennsylvania,22,4200824,Central Valley School District,name,1
+"Chester-Upland Sd, Pennsylvania",Pennsylvania,23,4205860,Chester-Upland School District,name,1
+"Coatesville Area Sd, Pennsylvania",Pennsylvania,23,4206240,Coatesville Area School District,name,7
+"Colonial Sd, Pennsylvania",Pennsylvania,30,4219470,Colonial School District,name,0
+"Conestoga Valley Sd, Pennsylvania",Pennsylvania,21,4206480,Conestoga Valley School District,name,4
+"Cornwall-Lebanon Sd, Pennsylvania",Pennsylvania,23,4206840,Cornwall-Lebanon School District,name,1
+"Council Rock Sd, Pennsylvania",Pennsylvania,12,4206960,Council Rock School District,name,4
+"Crestwood Sd, Pennsylvania",Pennsylvania,26,4205460,Crestwood School District,name,3
+"Dallastown Area Sd, Pennsylvania",Pennsylvania,6,4207230,Dallastown Area School District,name,4
+"Delaware Valley Sd, Pennsylvania",Pennsylvania,23,4207530,Delaware Valley School District,name,13
+"Dover Area Sd, Pennsylvania",Pennsylvania,26,4207680,Dover Area School District,name,6
+"Downingtown Area Sd, Pennsylvania",Pennsylvania,9,4207710,Downingtown Area School District,name,5
+"East Penn Sd, Pennsylvania",Pennsylvania,21,4208550,East Penn School District,name,4
+"Eastern York Sd, Pennsylvania",Pennsylvania,14,4208790,Eastern York School District,name,5
+"Easton Area Sd, Pennsylvania",Pennsylvania,4,4208850,Easton Area School District,name,2
+"Elizabethtown Area Sd, Pennsylvania",Pennsylvania,21,4209120,Elizabethtown Area School District,name,2
+"Franklin Regional Sd, Pennsylvania",Pennsylvania,10,4210230,Franklin Regional School District,name (closest of 2),2
+"Great Valley Sd, Pennsylvania",Pennsylvania,27,4210870,Great Valley School District,name,1
+"Greater Latrobe Sd, Pennsylvania",Pennsylvania,13,4210980,Greater Latrobe School District,name,5
+"Hanover Area Sd, Pennsylvania",Pennsylvania,14,4211420,Hanover Area School District,name (closest of 2),2
+"Harrisburg City Sd, Pennsylvania",Pennsylvania,18,4211580,Harrisburg City School District,name,2
+"Haverford Township Sd, Pennsylvania",Pennsylvania,28,4211670,Haverford Township School District,name,1
+"Interboro Sd, Pennsylvania",Pennsylvania,12,4212170,Interboro School District,name,4
+"Jersey Shore Area Sd, Pennsylvania",Pennsylvania,18,4212480,Jersey Shore Area School District,name,15
+"Jim Thorpe Area Sd, Pennsylvania",Pennsylvania,12,4212540,Jim Thorpe Area School District,name,12
+"Kutztown Area Sd, Pennsylvania",Pennsylvania,34,4212930,Kutztown Area School District,name,10
+"Lower Moreland Township Sd, Pennsylvania",Pennsylvania,21,4214190,Lower Moreland Township School District,name,2
+"Mechanicsburg Area Sd, Pennsylvania",Pennsylvania,20,4215030,Mechanicsburg Area School District,name,3
+"Millcreek Township Sd, Pennsylvania",Pennsylvania,24,4215330,Millcreek Township School District,name,3
+"Millersburg Area Sd, Pennsylvania",Pennsylvania,21,4215360,Millersburg Area School District,name,3
+"Mount Pleasant Area Sd, Pennsylvania",Pennsylvania,11,4216170,Mount Pleasant Area School District,name,11
+"North Hills Sd, Pennsylvania",Pennsylvania,19,4217220,North Hills School District,name,0
+"North Penn Sd, Pennsylvania",Pennsylvania,28,4217280,North Penn School District,name,1
+"Northwestern Lehigh Sd, Pennsylvania",Pennsylvania,18,4217850,Northwestern Lehigh School District,name,3
+"Norwin Sd, Pennsylvania",Pennsylvania,14,4217940,Norwin School District,name,1
+"Octorara Area Sd, Pennsylvania",Pennsylvania,20,4218030,Octorara Area School District,name,1
+"Oley Valley Sd, Pennsylvania",Pennsylvania,32,4218150,Oley Valley School District,name,1
+"Penn-Delco Sd, Pennsylvania",Pennsylvania,11,4218580,Penn-Delco School District,name,1
+"Pennsbury Sd, Pennsylvania",Pennsylvania,9,4218840,Pennsbury School District,name,0
+"Perkiomen Valley Sd, Pennsylvania",Pennsylvania,33,4218930,Perkiomen Valley School District,name,3
+"Plum Sd, Pennsylvania",Pennsylvania,19,4219350,Plum Borough School District,partial name,2
+"Radnor Township Sd, Pennsylvania",Pennsylvania,29,4219920,Radnor Township School District,name,2
+"Rose Tree Media Sd, Pennsylvania",Pennsylvania,25,4220550,Rose Tree Media School District,name,4
+"Salisbury Township Sd, Pennsylvania",Pennsylvania,22,4220730,Salisbury Township School District,name,2
+"Shamokin Area Sd, Pennsylvania",Pennsylvania,4,4221240,Shamokin Area School District,name,2
+"Shippensburg Area Sd, Pennsylvania",Pennsylvania,18,4221570,Shippensburg Area School District,name,3
+"Solanco Sd, Pennsylvania",Pennsylvania,11,4221810,Solanco School District,name,6
+"Southmoreland Sd, Pennsylvania",Pennsylvania,14,4222410,Southmoreland School District,name,1
+"Springfield Sd, Pennsylvania",Pennsylvania,11,4222600,Springfield School District,name,0
+"Springfield Township Sd, Pennsylvania",Pennsylvania,33,4222620,Springfield Township School District,name,1
+"Sullivan County Sd, Pennsylvania",Pennsylvania,12,4222920,Sullivan County School District,name,3
+"Susquehanna Township Sd, Pennsylvania",Pennsylvania,22,4223010,Susquehanna Township School District,name,2
+"Tredyffrin-Easttown Sd, Pennsylvania",Pennsylvania,14,4223640,Tredyffrin-Easttown School District,name,2
+"Upper Adams Sd, Pennsylvania",Pennsylvania,31,4224300,Upper Adams School District,name,3
+"Upper Dublin Sd, Pennsylvania",Pennsylvania,45,4224390,Upper Dublin School District,name,2
+"Wallingford-Swarthmore Sd, Pennsylvania",Pennsylvania,22,4224790,Wallingford-Swarthmore School District,name,0
+"Wattsburg Area Sd, Pennsylvania",Pennsylvania,21,4225080,Wattsburg Area School District,name,4
+"West Chester Area Sd, Pennsylvania",Pennsylvania,12,4225290,West Chester Area School District,name,7
+"West Mifflin Area Sd, Pennsylvania",Pennsylvania,15,4225680,West Mifflin Area School District,name,2
+"Whitehall-Coplay Sd, Pennsylvania",Pennsylvania,21,4226250,Whitehall-Coplay School District,name,1
+"William Penn Sd, Pennsylvania",Pennsylvania,45,4226390,William Penn School District,name,2
+"Wissahickon Sd, Pennsylvania",Pennsylvania,12,4202400,Wissahickon School District,name,2
+"Wyoming Valley West Sd, Pennsylvania",Pennsylvania,21,4225950,Wyoming Valley West School District,name,1
+"York City Sd, Pennsylvania",Pennsylvania,19,4226820,York City School District,name,0
+"Bristol Warren, Rhode Island",Rhode Island,4,4400065,Bristol-Warren Regional School District,name,3
+"Berkeley 01, South Carolina",South Carolina,21,4501170,Berkeley County School District,name,6
+"Chesterfield 01, South Carolina",South Carolina,14,4501560,Chesterfield County School District,name,12
+"Colleton 01, South Carolina",South Carolina,21,4501830,Colleton County School District,name,6
+"Darlington 01, South Carolina",South Carolina,14,4501860,Darlington County School District,name,7
+"District 4503915, South Carolina",South Carolina,4,4503915,Clarendon County School District,federal ID,
+"Florence 01, South Carolina",South Carolina,1,4502130,Florence School District 1,name,6
+"Georgetown 01, South Carolina",South Carolina,20,4502280,Georgetown County School District,name,8
+"Kershaw 01, South Carolina",South Carolina,2,4502550,Kershaw County School District,name,11
+"Lexington 02, South Carolina",South Carolina,12,4502730,Lexington School District 2,name,9
+"Lexington 03, South Carolina",South Carolina,11,4502760,Lexington School District 3,name,5
+"Marion 10, South Carolina",South Carolina,14,4503908,Marion School District 10,name,12
+"Marlboro 01, South Carolina",South Carolina,22,4502970,Marlboro County School District,name,2
+"Oconee 01, South Carolina",South Carolina,13,4503060,Oconee County School District,name,1
+"Richland 02, South Carolina",South Carolina,27,4503390,Richland School District 2,name,4
+"Spartanburg 02, South Carolina",South Carolina,1,4503510,Spartanburg School District 2,name,5
+"York 01, South Carolina",South Carolina,11,4503810,York School District 1,name,11
+"York 02, South Carolina",South Carolina,12,4503840,York School District 2,name,1
+"Flandreau School District 50-3, South Dakota",South Dakota,5,4624390,Flandreau School District 50-3,name,1
+"Freeman School District 33-1, South Dakota",South Dakota,15,4625500,Freeman School District 33-1,name,3
+"Huron School District 02-2, South Dakota",South Dakota,17,4635480,Huron School District 02-2,name,2
+"Madison Central School District 39-2, South Dakota",South Dakota,12,4639600,Madison Central School District 39-2,name,8
+"Rapid City Area School District 51-4, South Dakota",South Dakota,15,4659820,Rapid City School District 51-4,name,8
+"Todd County School District 66-1, South Dakota",South Dakota,9,4672090,Todd County School District 66-1,name,13
+"Vermillion School District 13-1, South Dakota",South Dakota,13,4674370,Vermillion School District 13-1,name,5
+"Wall School District 51-5, South Dakota",South Dakota,12,4675660,Wall School District 51-5,name,4
+"Watertown School District 14-4, South Dakota",South Dakota,13,4676620,Watertown School District 14-4,name,5
+"Webster Area 18-5, South Dakota",South Dakota,18,4676990,Webster School District 18-5,name,2
+"Wolsey Wessington School District 02-6, South Dakota",South Dakota,12,4680100,Wolsey-Wessington School District 02-6,name,7
+"Yankton School District 63-3, South Dakota",South Dakota,3,4680430,Yankton School District 63-3,name,5
+"Benton County, Tennessee",Tennessee,12,4700240,Benton County School District,name,4
+"Blount County, Tennessee",Tennessee,16,4700300,Blount County School District,name,8
+"Bradley County, Tennessee",Tennessee,7,4700330,Bradley County School District,name,3
+"Fayetteville, Tennessee",Tennessee,14,4701200,Fayetteville City School District,name,1
+"Franklin Ssd, Tennessee",Tennessee,11,4701260,Franklin Special School District,name,3
+"Lincoln County, Tennessee",Tennessee,15,4702490,Lincoln County School District,name,2
+"Monroe County, Tennessee",Tennessee,7,4703000,Monroe County School District,name,16
+"Smith County, Tennessee",Tennessee,14,4703870,Smith County School District,name,3
+"Tipton County, Tennessee",Tennessee,13,4704080,Tipton County School District,name,10
+"Alamo Heights Isd, Texas",Texas,17,4807590,Alamo Heights Independent School District,name,0
+"Aransas County Isd, Texas",Texas,16,4808550,Rockport-Fulton Independent School District,checked by hand,15
+"Aransas Pass Isd, Texas",Texas,17,4808580,Aransas Pass Independent School District,name,4
+"Argyle Isd, Texas",Texas,22,4808670,Argyle Independent School District,name,4
+"Arlington Isd, Texas",Texas,43,4808700,Arlington Independent School District,name,6
+"Austin Isd, Texas",Texas,44,4808940,Austin Independent School District,name,6
+"Carrollton-Farmers Branch Isd, Texas",Texas,25,4813050,Carrollton-Farmers Branch Independent School District,name,2
+"College Station Isd, Texas",Texas,25,4807350,College Station Independent School District,name,6
+"Conroe Isd, Texas",Texas,27,4815000,Conroe Independent School District,name,11
+"Corsicana Isd, Texas",Texas,17,4815330,Corsicana Independent School District,name,115
+"Crystal City Isd, Texas",Texas,11,4815930,Crystal City Independent School District,name,11
+"Cypress-Fairbanks Isd, Texas",Texas,26,4816110,Cypress-Fairbanks Independent School District,name,3
+"District 4826610, Texas",Texas,17,4826610,Lamesa Independent School District,federal ID,7
+"District 4830660, Texas",Texas,33,4830660,Midway Independent School District,federal ID,8
+"Donna Isd, Texas",Texas,10,4817390,Donna Independent School District,name,2
+"Duncanville Isd, Texas",Texas,20,4817640,Duncanville Independent School District,name,1
+"Eagle Pass Isd, Texas",Texas,11,4817730,Eagle Pass Independent School District,name,19
+"Edgewood Isd, Texas",Texas,22,4818150,Edgewood Independent School District,name (closest of 2),2
+"El Paso Isd, Texas",Texas,33,4818300,El Paso Independent School District,name,14
+"Elgin Isd, Texas",Texas,6,4818360,Elgin Independent School District,name,3
+"Floresville Isd, Texas",Texas,14,4819350,Floresville Independent School District,name,6
+"Flour Bluff Isd, Texas",Texas,13,4819380,Flour Bluff Independent School District,name,3
+"Forney Isd, Texas",Texas,13,4819560,Forney Independent School District,name,3
+"Frisco Isd, Texas",Texas,8,4820010,Frisco Independent School District,name,3
+"Gatesville Isd, Texas",Texas,15,4820500,Gatesville Independent School District,name,4
+"Georgetown Isd, Texas",Texas,10,4820600,Georgetown Independent School District,name,4
+"Goose Creek Cisd, Texas",Texas,24,4821150,Goose Creek Consolidated Independent School District,name,4
+"Granbury Isd, Texas",Texas,18,4821390,Granbury Independent School District,name,4
+"Grapevine-Colleyville Isd, Texas",Texas,2,4821660,Grapevine-Colleyville Independent School District,name,3
+"Harlingen Cisd, Texas",Texas,28,4822530,Harlingen Consolidated Independent School District,name,4
+"Houston Isd, Texas",Texas,6,4823640,Houston Independent School District,name,10
+"Humble Isd, Texas",Texas,18,4823910,Humble Independent School District,name,7
+"Huntsville Isd, Texas",Texas,11,4824030,Huntsville Independent School District,name,5
+"Hurst-Euless-Bedford Isd, Texas",Texas,10,4824060,Hurst-Euless-Bedford Independent School District,name,2
+"Judson Isd, Texas",Texas,34,4824990,Judson Independent School District,name,2
+"Kennedale Isd, Texas",Texas,21,4825500,Kennedale Independent School District,name,1
+"Kingsville Isd, Texas",Texas,12,4825680,Kingsville Independent School District,name,9
+"La Feria Isd, Texas",Texas,16,4826040,La Feria Independent School District,name,3
+"La Joya Isd, Texas",Texas,41,4826130,La Joya Independent School District,name,8
+"Lake Dallas Isd, Texas",Texas,15,4826430,Lake Dallas Independent School District,name,1
+"Lamar Cisd, Texas",Texas,15,4826580,Lamar Consolidated Independent School District,name,2
+"Magnolia Isd, Texas",Texas,19,4828740,Magnolia Independent School District,name,5
+"Marble Falls Isd, Texas",Texas,20,4829010,Marble Falls Independent School District,name,8
+"Marshall Isd, Texas",Texas,8,4829160,Marshall Independent School District,name,1
+"Medina Valley Isd, Texas",Texas,18,4830060,Medina Valley Independent School District,name,8
+"Midland Isd, Texas",Texas,17,4830570,Midland Independent School District,name,17
+"Montgomery Isd, Texas",Texas,11,4831260,Montgomery Independent School District,name,1
+"Mount Vernon Isd, Texas",Texas,15,4831770,Mount Vernon Independent School District,name,1
+"Natalia Isd, Texas",Texas,9,4832130,Natalia Independent School District,name,3
+"Navarro Isd, Texas",Texas,19,4832160,Navarro Independent School District,name,4
+"New Caney Isd, Texas",Texas,13,4832400,New Caney Independent School District,name,1
+"North East Isd, Texas",Texas,22,4832940,North East Independent School District,name,6
+"Northside Isd, Texas",Texas,20,4833120,Northside Independent School District,name (closest of 2),12
+"Northwest Isd, Texas",Texas,14,4833180,Northwest Independent School District,name,3
+"Perryton Isd, Texas",Texas,26,4834650,Perryton Independent School District,name,11
+"Prosper Isd, Texas",Texas,12,4836000,Prosper Independent School District,name,1
+"Rio Grande City Grulla Isd, Texas",Texas,35,4837140,Rio Grande City Grulla Independent School District,name,15
+"Robstown Isd, Texas",Texas,13,4837440,Robstown Independent School District,name,4
+"Roma Isd, Texas",Texas,10,4837740,Roma Independent School District,name,25
+"San Angelo Isd, Texas",Texas,26,4838700,San Angelo Independent School District,name,8
+"San Benito Cisd, Texas",Texas,14,4838790,San Benito Consolidated Independent School District,name,7
+"San Felipe-Del Rio Cisd, Texas",Texas,28,4838900,San Felipe-Del Rio Consolidated Independent School District,name,38
+"Schertz-Cibolo-U City Isd, Texas",Texas,17,4839480,Schertz-Cibolo-Universal City Independent School District,name,3
+"Socorro Isd, Texas",Texas,27,4840710,Socorro Independent School District,name,10
+"Tuloso-Midway Isd, Texas",Texas,21,4843350,Tuloso-Midway Independent School District,name,4
+"Tyler Isd, Texas",Texas,15,4843470,Tyler Independent School District,name,5
+"United Isd, Texas",Texas,32,4843650,United Independent School District,name,31
+"Venus Isd, Texas",Texas,15,4844010,Venus Independent School District,name,2
+"Waco Isd, Texas",Texas,23,4844280,Waco Independent School District,name,3
+"Waxahachie Isd, Texas",Texas,20,4844730,Waxahachie Independent School District,name,5
+"Weslaco Isd, Texas",Texas,15,4844960,Weslaco Independent School District,name,3
+"Willis Isd, Texas",Texas,17,4845900,Willis Independent School District,name,5
+"Zapata County Isd, Texas",Texas,13,4846710,Zapata County Independent School District,name,14
+"Alpine District, Utah",Utah,25,4900030,Alpine School District,name,9
+"Box Elder District, Utah",Utah,21,4900090,Box Elder School District,name,89
+"Cache District, Utah",Utah,16,4900120,Cache School District,name,10
+"Canyons District, Utah",Utah,13,4900142,Canyons School District,name,10
+"Granite District, Utah",Utah,14,4900360,Granite School District,name,5
+"Iron District, Utah",Utah,19,4900390,Iron School District,name,28
+"Provo District, Utah",Utah,1,4900810,Provo School District,name,2
+"Salt Lake District, Utah",Utah,21,4900870,Salt Lake City School District,name,4
+"Wasatch District, Utah",Utah,29,4901110,Wasatch School District,name,29
+"Albemarle County Public Schools, Virginia",Virginia,26,5100090,Albemarle County Public Schools,name,7
+"Brunswick County Public Schools, Virginia",Virginia,11,5100480,Brunswick County Public Schools,name,9
+"Charlottesville Cty Public Schools, Virginia",Virginia,21,5100780,Charlottesville City Public Schools,partial name,2
+"Craig County Public Schools, Virginia",Virginia,11,5101020,Craig County Public Schools,name,12
+"Dickenson County Public Schools, Virginia",Virginia,12,5101140,Dickenson County Public Schools,name,10
+"Fairfax County Public Schools, Virginia",Virginia,35,5101260,Fairfax County Public Schools,name,6
+"Falls Church City Public Schools, Virginia",Virginia,8,5101290,Falls Church City Public Schools,name,0
+"Franklin City Public Schools, Virginia",Virginia,14,5101410,Franklin City Public Schools,name,1
+"Frederick County Public Schools, Virginia",Virginia,9,5101470,Frederick County Public Schools,name,7
+"Halifax County Public Schools, Virginia",Virginia,17,5101770,Halifax County Public Schools,name,1
+"Hampton City Public Schools, Virginia",Virginia,14,5101800,Hampton City Public Schools,name,4
+"Henry County Public Schools, Virginia",Virginia,15,5101920,Henry County Public Schools,name,7
+"Isle Wight County Public Schools, Virginia",Virginia,20,5102010,Isle of Wight County Public Schools,name,12
+"Lynchburg City Public Schools, Virginia",Virginia,29,5102340,Lynchburg City Public Schools,name,4
+"Madison County Public Schools, Virginia",Virginia,13,5102370,Madison County Public Schools,name,5
+"Manassas City Public Schools, Virginia",Virginia,24,5102360,Manassas City Public Schools,name,3
+"Mecklenburg County Public Schools, Virginia",Virginia,6,5102460,Mecklenburg County Public Schools,name,5
+"Montgomery County Public Schools, Virginia",Virginia,24,5102520,Montgomery County Public Schools,name,5
+"Nelson County Public Schools, Virginia",Virginia,14,5102580,Nelson County Public Schools,name,3
+"New Kent County Public Schools, Virginia",Virginia,21,5102610,New Kent County Public Schools,name,3
+"Petersburg City Public Schools, Virginia",Virginia,13,5102910,Petersburg City Public Schools,name,1
+"Poquoson City Public Schools, Virginia",Virginia,12,5102980,Poquoson City Public Schools,name,4
+"Portsmouth City Public Schools, Virginia",Virginia,12,5103000,Portsmouth City Public Schools,name,5
+"Powhatan County Public Schools, Virginia",Virginia,19,5103030,Powhatan County Public Schools,name,3
+"Richmond City Public Schools, Virginia",Virginia,27,5103240,Richmond City Public Schools,name,4
+"Russell County Public Schools, Virginia",Virginia,13,5103420,Russell County Public Schools,name,5
+"Stafford County Public Schools, Virginia",Virginia,20,5103660,Stafford County Public Schools,name,6
+"Suffolk City Public Schools, Virginia",Virginia,19,5103710,Suffolk City Public Schools,name,7
+"Va Beach City Public Schools, Virginia",Virginia,30,5103840,Virginia Beach City Public Schools,name,0
+"Washington County Public Schools, Virginia",Virginia,12,5103900,Washington County Public Schools,name,1
+"Westmoreland County Public Schools, Virginia",Virginia,6,5103980,Westmoreland County Public Schools,name,2
+"Williamsburg-James City Public Schools, Virginia",Virginia,27,5104020,Williamsburg City Public Schools,partial name,3
+"York County Public Schools, Virginia",Virginia,22,5104150,York County Public Schools,name,13
+"Bellevue School District, Washington",Washington,23,5300390,Bellevue School District,name,1
+"Clover Park School District, Washington",Washington,27,5301410,Clover Park School District,name,8
+"Dieringer School District, Washington",Washington,11,5302130,Dieringer School District,name,2
+"Ellensburg School District, Washington",Washington,11,5302460,Ellensburg School District,name,7
+"Everett School District, Washington",Washington,24,5302670,Everett School District,name,4
+"Evergreen School District (Clark), Washington",Washington,24,5302700,Evergreen School District (Clark),name,3
+"Granite Falls School District, Washington",Washington,22,5303210,Granite Falls School District,name,29
+"Issaquah School District, Washington",Washington,21,5303750,Issaquah School District,name,4
+"Kiona-Benton City School District, Washington",Washington,20,5304020,Kiona-Benton City School District,name,4
+"Northshore School District, Washington",Washington,34,5305910,Northshore School District,name,3
+"Orting School District, Washington",Washington,14,5306450,Orting School District,name,4
+"Pasco School District, Washington",Washington,27,5306570,Pasco School District,name,13
+"Peninsula School District, Washington",Washington,17,5306690,Peninsula School District,name,10
+"Prosser School District, Washington",Washington,29,5306900,Prosser School District,name,2
+"Pullman School District, Washington",Washington,22,5306930,Pullman School District,name,3
+"Selah School District, Washington",Washington,21,5307770,Selah School District,name,98
+"Sequim School District, Washington",Washington,24,5307830,Sequim School District,name,10
+"South Whidbey School District, Washington",Washington,14,5308190,South Whidbey School District,name,3
+"Sultan School District, Washington",Washington,23,5308550,Sultan School District,name,18
+"Tacoma School District, Washington",Washington,22,5308700,Tacoma Public Schools,name,2
+"Tumwater School District, Washington",Washington,10,5309100,Tumwater School District,name,8
+"Yakima School District, Washington",Washington,23,5310110,Yakima School District,name,2
+"Gilmer County Schools, West",West Virginia,14,5400330,Gilmer County School District,name,4
+"Harrison County Schools, West",West Virginia,18,5400510,Harrison County School District,name,3
+"Lewis County Schools, West",West Virginia,18,5400630,Lewis County School District,name,6
+"Lincoln County Schools, West",West Virginia,29,5400660,Lincoln County School District,name,13
+"Mason County Schools, West",West Virginia,1,5400780,Mason County School District,name,11
+"Ohio County Schools, West",West Virginia,25,5401050,Ohio County School District,name,7
+"Adams-Friendship Area School District, Wisconsin",Wisconsin,15,5500060,Adams-Friendship Area School District,name,3
+"Amery School District, Wisconsin",Wisconsin,14,5500300,Amery School District,name,94
+"Antigo Unified School District, Wisconsin",Wisconsin,17,5500360,Antigo School District,name,5
+"Auburndale School District, Wisconsin",Wisconsin,12,5500600,Auburndale School District,name,4
+"Bangor School District, Wisconsin",Wisconsin,14,5500780,Bangor School District,name,3
+"Beaver Dam Unified School District, Wisconsin",Wisconsin,13,5500960,Beaver Dam School District,name,2
+"Belleville School District, Wisconsin",Wisconsin,6,5500990,Belleville School District,name,2
+"Beloit School District, Wisconsin",Wisconsin,30,5501050,Beloit School District,name,2
+"Berlin Area School District, Wisconsin",Wisconsin,15,5501140,Berlin Area School District,name,4
+"Black River Falls School District, Wisconsin",Wisconsin,15,5501260,Black River Falls School District,name,8
+"Brown Deer School District, Wisconsin",Wisconsin,15,5501800,Brown Deer School District,name,1
+"District 5516770, Wisconsin",Wisconsin,14,5516770,Wilmot Union High School District,federal ID,2
+"Eau Claire Area School District, Wisconsin",Wisconsin,22,5504050,Eau Claire Area School District,name,6
+"Elkhorn Area School District, Wisconsin",Wisconsin,19,5504290,Elkhorn Area School District,name,3
+"Evansville Community School District, Wisconsin",Wisconsin,20,5504440,Evansville Community School District,name,4
+"Fall River School District, Wisconsin",Wisconsin,11,5504530,Fall River School District,name,3
+"Fort Atkinson School District, Wisconsin",Wisconsin,16,5504740,Fort Atkinson School District,name,1
+"Glendale-River Hills School District, Wisconsin",Wisconsin,18,5505460,Glendale-River Hills School District,name,2
+"Greendale School District, Wisconsin",Wisconsin,20,5505910,Greendale School District,name,0
+"Hudson School District, Wisconsin",Wisconsin,20,5506690,Hudson School District,name,4
+"Janesville School District, Wisconsin",Wisconsin,32,5507020,Janesville School District,name,2
+"Kickapoo Area School District, Wisconsin",Wisconsin,11,5512540,Kickapoo Area School District,name,2
+"Kiel Area School District, Wisconsin",Wisconsin,7,5507440,Kiel Area School District,name,8
+"La Crosse School District, Wisconsin",Wisconsin,20,5507530,La Crosse School District,name,3
+"Loyal School District, Wisconsin",Wisconsin,23,5508250,Loyal School District,name,3
+"Manitowoc School District, Wisconsin",Wisconsin,38,5508610,Manitowoc School District,name,3
+"Maple School District, Wisconsin",Wisconsin,17,5508640,Maple School District,name,6
+"Mcfarland School District, Wisconsin",Wisconsin,3,5508910,McFarland School District,name,1
+"Menomonee Falls School District, Wisconsin",Wisconsin,24,5509060,Menomonee Falls School District,name,1
+"Merrill Area School District, Wisconsin",Wisconsin,8,5509210,Merrill Area School District,name,8
+"Merton Community School District, Wisconsin",Wisconsin,18,5509360,Merton Community School District,name,2
+"Monroe School District, Wisconsin",Wisconsin,11,5509840,Monroe School District,name,3
+"Mosinee School District, Wisconsin",Wisconsin,13,5509960,Mosinee School District,name,5
+"Muskego-Norway School District, Wisconsin",Wisconsin,15,5510170,Muskego-Norway School District,name,2
+"New London School District, Wisconsin",Wisconsin,2,5510590,New London School District,name,2
+"Northland Pines School District, Wisconsin",Wisconsin,17,5503860,Northland Pines School District,name,13
+"Oconto Falls Public School District, Wisconsin",Wisconsin,14,5510950,Oconto Falls School District,name,1
+"Palmyra-Eagle Area School District, Wisconsin",Wisconsin,10,5511350,Palmyra-Eagle Area School District,name,4
+"Pewaukee School District, Wisconsin",Wisconsin,21,5511640,Pewaukee School District,name,1
+"Platteville School District, Wisconsin",Wisconsin,34,5511850,Platteville School District,name,3
+"Port Edwards School District, Wisconsin",Wisconsin,15,5511970,Port Edwards School District,name,9
+"Rice Lake Area School District, Wisconsin",Wisconsin,22,5512810,Rice Lake Area School District,name,8
+"River Falls School District, Wisconsin",Wisconsin,14,5513050,River Falls School District,name,2
+"Rosholt School District, Wisconsin",Wisconsin,10,5513140,Rosholt School District,name,3
+"Saint Croix Central School District, Wisconsin",Wisconsin,13,5506060,St. Croix Central School District,name,5
+"Shawano School District, Wisconsin",Wisconsin,7,5513620,Shawano School District,name,2
+"Sheboygan Area School District, Wisconsin",Wisconsin,8,5513650,Sheboygan Area School District,name,11
+"Siren School District, Wisconsin",Wisconsin,3,5513890,Siren School District,name,5
+"Somerset School District, Wisconsin",Wisconsin,15,5514010,Somerset School District,name,2
+"Spooner Area School District, Wisconsin",Wisconsin,25,5514220,Spooner Area School District,name,8
+"Stevens Point Area Public School District, Wisconsin",Wisconsin,11,5514490,Stevens Point Area School District,name,6
+"Superior School District, Wisconsin",Wisconsin,23,5514670,Superior School District,name,20
+"Three Lakes School District, Wisconsin",Wisconsin,11,5514850,Three Lakes School District,name,5
+"Viroqua Area School District, Wisconsin",Wisconsin,11,5515360,Viroqua Area School District,name,4
+"Waukesha School District, Wisconsin",Wisconsin,33,5515780,Waukesha School District,name,2
+"Wauwatosa School District, Wisconsin",Wisconsin,29,5515990,Wauwatosa School District,name,2
+"West Bend School District, Wisconsin",Wisconsin,10,5516290,West Bend School District,name,3
+"Goshen County School District #1, Wyoming",Wyoming,15,5602990,Goshen County School District 1,name,12
+"Hot Springs County School District #1, Wyoming",Wyoming,12,5603310,Hot Springs County School District 1,name,20
+"Laramie County School District #1, Wyoming",Wyoming,2,5601980,Laramie County School District 1,name,22
+"Laramie County School District #2, Wyoming",Wyoming,21,5604120,Laramie County School District 2,name,25
+"Natrona County School District #1, Wyoming",Wyoming,13,5604510,Natrona County School District 1,name,39
+"Platte County School District #1, Wyoming",Wyoming,1,5605090,Platte County School District 1,name,4
+"Sweetwater County School District #2, Wyoming",Wyoming,1,5605762,Sweetwater County School District 2,name,16
