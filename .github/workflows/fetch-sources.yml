@@ -1,0 +1,25 @@
+name: Fetch sources doc (temporary)
+
+on:
+  push:
+    branches: [claude/fetch-sources]
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Export the sources Google Doc as HTML (keeps links)
+        run: |
+          curl -sSfL "https://docs.google.com/document/d/1U5bDB31MpETIwG8Q8xZ7MZdH9oNooY_W6TnpSkNdBFk/export?format=html" -o sources_doc.html
+          ls -l sources_doc.html
+      - name: Commit result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sources_doc.html
+          git commit -m "Add exported sources doc"
+          git push
