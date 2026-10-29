@@ -87,7 +87,7 @@
     if (view === "size") renderSize();
   }
 
-  // Switches between the "Overview", "By district size" and "Sources" views.
+  // Switches between the "Overview", "By district size", "State rules" and "Sources" views.
   function setView(name) {
     view = name;
     document.querySelectorAll("[data-view]").forEach((el) => { el.hidden = el.dataset.view !== name; });
@@ -489,6 +489,28 @@
     URL.revokeObjectURL(a.href);
   }
 
+  // State rules table (same for every data set).
+  function renderRules() {
+    const r = window.STATE_RULES;
+    if (!r) return;
+    $("rules-intro").textContent = `${r.laws.length} rules in ${new Set(r.laws.map((x) => x.state)).size} states, checked ${r.checked}. Laws change often.`;
+    const body = $("rules-table").tBodies[0];
+    body.innerHTML = "";
+    r.laws.forEach((x) => {
+      const tr = body.insertRow();
+      [x.state, x.covers, x.threshold || "None (all boards)", x.rule].forEach((v) => { tr.insertCell().textContent = v; });
+    });
+    const ul = $("rules-proposed");
+    ul.innerHTML = "";
+    r.proposed.forEach((x) => {
+      const li = document.createElement("li");
+      const b = document.createElement("strong");
+      b.textContent = `${x.state}: `;
+      li.append(b, x.note);
+      ul.appendChild(li);
+    });
+  }
+
   // Sources for the selected dataset: entries marked `only` show just for that dataset.
   function renderSources() {
     const box = $("sources-list");
@@ -532,7 +554,8 @@
   document.querySelectorAll(".links a").forEach((a) => a.addEventListener("click", () => {
     setView(a.dataset.viewLink || "overview");
   }));
-  const viewFromHash = () => { if (["#size", "#sources"].includes(location.hash)) setView(location.hash.slice(1)); };
+  renderRules();
+  const viewFromHash = () => { if (["#size", "#rules", "#sources"].includes(location.hash)) setView(location.hash.slice(1)); };
   viewFromHash();
   window.addEventListener("hashchange", viewFromHash);
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {

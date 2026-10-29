@@ -18,6 +18,7 @@
         <a href="#city" id="city-link" hidden>Urban only</a>
         <a href="#table-section">Data table</a>
         <a href="#size" data-view-link="size">By district size</a>
+        <a href="#rules" data-view-link="rules">State rules</a>
         <a href="#sources" data-view-link="sources">Sources</a>
       </nav>
     </div>
@@ -32,6 +33,7 @@
     <div class="tabs view-tabs" role="tablist" aria-label="Page views">
       <button type="button" role="tab" data-view-tab="overview" aria-selected="true">Overview</button>
       <button type="button" role="tab" data-view-tab="size" aria-selected="false">By district size</button>
+      <button type="button" role="tab" data-view-tab="rules" aria-selected="false">State rules</button>
       <button type="button" role="tab" data-view-tab="sources" aria-selected="false">Sources</button>
     </div>
 
@@ -142,6 +144,20 @@
       </div>
     </div>
 
+    <div data-view="rules" hidden>
+      <section class="card">
+        <h2>State rules for recording or streaming school board meetings</h2>
+        <p class="muted" id="rules-intro"></p>
+        <div class="table-scroll"><table id="rules-table"><thead><tr><th>State</th><th>Who's covered</th><th>Size threshold</th><th>What's required</th></tr></thead><tbody></tbody></table></div>
+        <p class="note">Only Texas and Oregon set their cutoff by student enrollment; Louisiana and Montana use population.
+          States not listed have no recording or streaming requirement we could find, usually only written minutes. Citations are on the Sources tab.</p>
+      </section>
+      <section class="card">
+        <h2>Proposed, but not law</h2>
+        <ul id="rules-proposed" class="rules-proposed"></ul>
+      </section>
+    </div>
+
     <div data-view="sources" hidden>
       <section id="sources" class="card">
         <h2>Sources</h2>
@@ -159,6 +175,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
   <script src="config.js"></script>
   <script src="sources.js"></script>
+  <script src="state-rules.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
