@@ -55,7 +55,7 @@
       return;
     }
     renderTabs();
-    selectDataset(stateDataset("TX") || datasets[0]);
+    selectDataset(datasets.find((d) => d.name === (cfg.perState && cfg.perState.from)) || datasets[0]);
   }
 
   // One state's view: its own data set if there is one (Texas), otherwise the
