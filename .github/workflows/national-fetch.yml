@@ -1,0 +1,34 @@
+name: Fetch pages for national research (temporary)
+
+on:
+  push:
+    branches: [claude/national-fetch]
+    paths: [fetch/urls.txt]
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download each URL in fetch/urls.txt
+        run: |
+          mkdir -p fetch/out
+          : > fetch/out/index.tsv
+          while read -r name url; do
+            [ -z "$name" ] && continue
+            case "$name" in \#*) continue;; esac
+            code=$(curl -sSL -A "Mozilla/5.0 (school-board research project; github.com/amaar-a1)" -m 120 -o "fetch/out/$name" -w "%{http_code}" "$url" || echo ERR)
+            printf "%s\t%s\t%s\t%s\n" "$name" "$code" "$(stat -c %s "fetch/out/$name" 2>/dev/null || echo 0)" "$url" >> fetch/out/index.tsv
+            sleep 1
+          done < fetch/urls.txt
+          cat fetch/out/index.tsv
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fetch/out
+          git commit -m "Fetched pages" || echo "nothing new"
+          git push

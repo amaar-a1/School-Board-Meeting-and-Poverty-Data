@@ -1,0 +1,9 @@
+civic_robots.txt https://schools.civicsearch.org/robots.txt
+civic_cities.html https://schools.civicsearch.org/cities
+civic_alamo.html https://schools.civicsearch.org/alamo-heights-isd-texas
+civic_austin.html https://schools.civicsearch.org/austin-isd-texas
+uslege_robots.txt https://www.uslege.ai/robots.txt
+uslege_cfb.html https://www.uslege.ai/tracking/carrollton-farmers-branch-independent-school-district
+uslege_tracking.html https://www.uslege.ai/tracking
+uslege_sitemap.xml https://www.uslege.ai/sitemap.xml
+saipe_dir.html https://www2.census.gov/programs-surveys/saipe/datasets/2024/2024-school-districts/
