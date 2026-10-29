@@ -28,5 +28,20 @@ window.SITE_CONFIG = {
   urban: {
     columns: ["Urban", "Urban District", "Locale", "Urbanicity", "Urban/Rural"]
   },
+  // "By district size" tab. Districts are grouped by NCES student enrollment.
+  sizeTiers: {
+    column: "Enrollment",
+    tiers: [
+      { name: "Low", min: 0, max: 499 },
+      { name: "Medium", min: 500, max: 9999 },
+      { name: "Big", min: 10000, max: 49999 },
+      { name: "Large", min: 50000, max: 99999 },
+      { name: "Huge", min: 100000 }
+    ],
+    // Texas Government Code § 551.128: districts with 10,000+ students must make
+    // their board meetings available online.
+    lawThreshold: 10000,
+    lawUrl: "https://codes.findlaw.com/tx/government-code/gov-t-sect-551-128/"
+  },
   sourcesUrl: "https://docs.google.com/document/d/1U5bDB31MpETIwG8Q8xZ7MZdH9oNooY_W6TnpSkNdBFk/edit?usp=drivesdk"
 };
