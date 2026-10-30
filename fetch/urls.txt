@@ -1,3 +1,3 @@
-vibe_agendas.html https://myviboe.com/meeting-agendas-minutes/
-vibe_news.html https://myviboe.com/news-room/
-asdoe_home2.html https://doe.as/
+cnmipss_videos.html https://cnmipss.org/videos
+cnmipss_boe_members.html https://cnmipss.org/state-boe-board-members
+cnmipss_boe_meeting.html https://cnmipss.org/19th-cnmi-state-board-education-isa-committee-meeting-0
