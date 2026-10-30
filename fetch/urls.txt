@@ -1,4 +1,3 @@
-vibe_home.html https://myviboe.com/
-cnmipss_home.html https://www.cnmipss.org/
-cnmipss_boe.html https://www.cnmipss.org/board-of-education
-asdoe_home.html https://www.doe.as/
+vibe_agendas.html https://myviboe.com/meeting-agendas-minutes/
+vibe_news.html https://myviboe.com/news-room/
+asdoe_home2.html https://doe.as/

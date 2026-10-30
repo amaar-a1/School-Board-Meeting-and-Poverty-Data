@@ -13,9 +13,10 @@ def ytlist(key, target):
         except ValueError:
             pass
     out[key] = {"target": target, "count": len(items), "items": items, "stderr": r.stderr[-1500:]}
-ytlist("guam_videos", "https://www.youtube.com/@guamdepartmentofeducation5142/videos")
-ytlist("guam_streams", "https://www.youtube.com/@guamdepartmentofeducation5142/streams")
-ytlist("search_cnmi", "ytsearch60:CNMI Board of Education meeting")
-ytlist("search_vi", "ytsearch60:Virgin Islands Board of Education meeting")
-ytlist("search_as", "ytsearch60:American Samoa Board of Education meeting")
+ytlist("cnmi_videos", "https://www.youtube.com/channel/UCkbpGWkvnelMHKwyFGpwf0w/videos")
+ytlist("cnmi_streams", "https://www.youtube.com/channel/UCkbpGWkvnelMHKwyFGpwf0w/streams")
+ytlist("viga_videos", "https://www.youtube.com/channel/UCUeosYkcAS4HVKSfbLNR0FA/videos")
+ytlist("viga_streams", "https://www.youtube.com/channel/UCUeosYkcAS4HVKSfbLNR0FA/streams")
+ytlist("search_vibe", "ytsearch60:VIBE Virgin Islands Board of Education board meeting St. Thomas St. Croix")
+ytlist("search_asboe", "ytsearch40:ASDOE Board of Education meeting Pago Pago")
 json.dump(out, open("fetch/out/territory_videos.json", "w"), indent=1)
