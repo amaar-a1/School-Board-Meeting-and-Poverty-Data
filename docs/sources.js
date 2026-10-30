@@ -9,7 +9,7 @@ window.SOURCES = [
       { title: "Census SAIPE 2024 school district estimates page, which describes the file layout", url: "https://www.census.gov/data/datasets/2024/demo/saipe/2024-school-districts.html" },
       { title: "SAIPE school district overview, which confirms the ages 5–17 measures", url: "https://census.gov/programs-surveys/saipe/technical-documentation/methodology/school-districts/overview-school-district.html" },
       { only: "United States", title: "Census SAIPE 2024 file for all US school districts", url: "https://www2.census.gov/programs-surveys/saipe/datasets/2024/2024-school-districts/ussd24.csv" },
-      { only: "United States", title: "Census SAIPE 2024 state and county estimates (all-ages poverty rate, used for the 5 districts with no children ages 5–17; see the Poverty note column)", url: "https://www2.census.gov/programs-surveys/saipe/datasets/2024/2024-state-and-county/est24all.txt" }
+      { only: "United States", title: "Census SAIPE 2024 state and county estimates (all-ages poverty rate, used for the 5 districts with no children ages 5–17; see the Notes column)", url: "https://www2.census.gov/programs-surveys/saipe/datasets/2024/2024-state-and-county/est24all.txt" }
     ]
   },
   {

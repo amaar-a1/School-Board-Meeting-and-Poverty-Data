@@ -322,8 +322,11 @@
     add(cfg.recordLabel || "Records", current.rows.length.toLocaleString());
     [...current.numeric].slice(0, 5).forEach((c) => {
       const vals = current.rows.map((r) => toNumber(r[c])).filter((v) => !isNaN(v));
+      if (!vals.length) return add(`Average ${c}`, "–", "not available for these districts");
       const avg = vals.reduce((a, b) => a + b, 0) / vals.length;
-      add(`Average ${c}`, fmtCol(c, avg), `range ${fmtCol(c, Math.min(...vals))} – ${fmtCol(c, Math.max(...vals))}`);
+      const missing = current.rows.length - vals.length;
+      add(`Average ${c}`, fmtCol(c, avg), `range ${fmtCol(c, Math.min(...vals))} – ${fmtCol(c, Math.max(...vals))}` +
+        (missing ? ` · ${missing.toLocaleString()} without a figure` : ""));
     });
     renderCompare();
   }
@@ -548,7 +551,10 @@
     if (q) rows = rows.filter((r) => current.columns.some((c) => String(r[c] ?? "").toLowerCase().includes(q)));
     if (sort.col) {
       const c = sort.col, isNum = current.numeric.has(c);
+      // Blank cells always sort last.
       rows = [...rows].sort((a, b) => {
+        const ea = String(a[c] ?? "").trim() === "", eb = String(b[c] ?? "").trim() === "";
+        if (ea || eb) return ea - eb;
         if (isNum) return (toNumber(a[c]) - toNumber(b[c])) * sort.dir;
         return String(a[c] ?? "").localeCompare(String(b[c] ?? ""), undefined, { numeric: true }) * sort.dir;
       });

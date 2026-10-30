@@ -50,6 +50,31 @@ ZERO_CHILDREN_COUNTY = {
 }
 
 
+# Districts NCES has no 2023 record for, or records under other districts. `from` lists the NCES
+# district(s) whose county and locale they take; with "sum", their enrollment is the 2023 total of
+# those districts. Merged districts: news and state reports are on the site's Sources tab.
+RELATED = {
+    "0999501": (["0903515", "0902220"], "sum", "Formed in 2024 from Regional School District 6 and Litchfield; enrollment and locale are theirs for 2023"),
+    "1799501": (["1737120", "1737140"], "sum", "Formed in 2024 from St. Anne districts 256 and 302; enrollment and locale are theirs for 2023"),
+    "3499501": (["3401020", "3407200", "3407050"], "sum", "Became a PreK-12 district in 2024, merging Atlantic Highlands and Highlands; enrollment and locale are the three districts' for 2023"),
+    "4599501": (["4503914", "4501080"], "sum", "Formed from Barnwell 45 and Barnwell County Consolidated (Barnwell 48); enrollment and locale are theirs for 2023"),
+    "3333009": (["5000024"], "sum", "Interstate district (New Hampshire and Vermont); NCES lists it under Vermont"),
+    "3172700": (["3100122"], "", "Part of South Central Nebraska Unified 5, which NCES reports as a whole (733 students in 2023, with Sandy Creek)"),
+    "3176390": (["3100122"], "", "Part of South Central Nebraska Unified 5, which NCES reports as a whole (733 students in 2023, with Lawrence-Nelson)"),
+    "5101230": (["5101260"], "", "Served by Fairfax County Public Schools, where NCES counts its students"),
+    "5101190": (["5101740"], "", "Served by Greensville County Public Schools, where NCES counts its students"),
+    "5100036": (["5104020"], "", "Served by Williamsburg-James City County Public Schools; NCES counts its students under Williamsburg City"),
+}
+# County (or independent city) where the related district's would be wrong.
+COUNTY = {"3172700": "Nuckolls County", "5101230": "Fairfax city", "5101190": "Emporia city", "5100036": "James City County"}
+# Notes for districts whose NCES enrollment counts students from elsewhere.
+SERVES_OTHERS = {
+    "5104020": "Enrollment includes James City County students (Williamsburg-James City County Public Schools)",
+    "5101260": "Enrollment includes Fairfax City students",
+    "5101740": "Enrollment includes Emporia City students",
+}
+
+
 def county_poverty(path):
     """All-ages poverty rate and name for each county in the SAIPE state and county file."""
     out = {}
@@ -86,6 +111,18 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
     # Districts with no 2023 enrollment or locale use the latest earlier NCES year that has one.
     fallback_path = os.path.join(os.path.dirname(nces_path), "nces_fallback.json")
     fallback = json.load(open(fallback_path)) if os.path.exists(fallback_path) else {}
+    # NCES reports New York City's students in its 32 geographic districts, not the city-wide district.
+    nyc = [r for r in nces.values() if (r.get("lea_name") or "").upper().startswith("NEW YORK CITY GEOGRAPHIC DISTRICT")]
+    if nyc and "3620580" in nces:
+        nces["3620580"] = {**nces["3620580"], "enrollment": sum(r["enrollment"] or 0 for r in nyc)}
+    # Vermont: Census reports supervisory unions; NCES counts students in their member districts.
+    vt = [r for r in nces.values() if r.get("leaid", "").startswith("50") and r.get("supervisory_union_number")]
+    vt_unions = {r["supervisory_union_number"]: r for r in vt if r.get("agency_type") == 3}
+    vt_members = {}
+    for r in vt:
+        if r.get("agency_type") != 3 and isinstance(r.get("enrollment"), int) and r["enrollment"] > 0:
+            vt_members.setdefault(r["supervisory_union_number"], []).append(r["enrollment"])
+    vt_key = lambda name: re.sub(r"\b(supervisory|union|district|school|unified|sd|su)\b", "", name.lower()).replace("-", " ").split()
     saipe = list(csv.DictReader(open(saipe_path, encoding="latin-1")))
     county_path = os.path.join(os.path.dirname(saipe_path), "est24all.txt")
     counties = county_poverty(county_path) if os.path.exists(county_path) else {}
@@ -103,6 +140,38 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
             enrollment = fb.get("enrollment")
         if not (isinstance(locale, int) and locale > 0):
             locale = fb.get("urban_centric_locale")
+        county_name = n.get("county_name") or ""
+        notes = []
+        related = RELATED.get(leaid)
+        if related:
+            ids, how, why = related
+            rel = [nces[i] for i in ids if i in nces]
+            if rel:
+                county_name = county_name or rel[0].get("county_name") or ""
+                if not (isinstance(locale, int) and locale > 0):
+                    locale = rel[0].get("urban_centric_locale")
+                if how == "sum" and not (isinstance(enrollment, int) and enrollment >= 0):
+                    enrollment = sum(r.get("enrollment") or 0 for r in rel)
+            notes.append(why)
+        if r["STABREV"] == "VT" and not (isinstance(enrollment, int) and enrollment >= 0):
+            union = nces.get(leaid) if (nces.get(leaid) or {}).get("agency_type") == 3 else next(
+                (u for u in vt_unions.values() if vt_key(u["lea_name"]) == vt_key(r["name"])), None)
+            if union and vt_members.get(union["supervisory_union_number"]):
+                enrollment = sum(vt_members[union["supervisory_union_number"]])
+                county_name = county_name or union.get("county_name") or ""
+                if not (isinstance(locale, int) and locale > 0):
+                    locale = union.get("urban_centric_locale")
+                notes.append("Enrollment is the total of the union's member districts (NCES 2023)")
+        county_name = COUNTY.get(leaid, county_name)
+        if r["name"].endswith("Unorganized Territory") and not county_name:
+            county_name = {"Louds Island": "Lincoln County"}.get(r["name"][:-22], r["name"][:-22] + " County")
+        if leaid == "3620580":
+            notes.append("Enrollment is the total of NCES's 32 New York City geographic districts")
+        if leaid in SERVES_OTHERS:
+            notes.append(SERVES_OTHERS[leaid])
+        elif isinstance(enrollment, int) and kids and enrollment > 3 * kids + 200:
+            notes.append(f"Enrollment ({enrollment:,}) is far above the {kids:,} school-age children living here, "
+                         "likely because the district runs an online or statewide program that enrolls students from elsewhere")
         pct, note = (f"{100 * poor / kids:.8f}%" if kids else ""), ""
         if not kids:
             county = counties.get(ZERO_CHILDREN_COUNTY.get(leaid, ""))
@@ -112,8 +181,9 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
                         f"for {county[1]} (Census SAIPE 2024)")
             else:
                 note = "No children ages 5-17 live here (Census), so there is no school-age poverty rate"
+        note = ". ".join([x for x in [note] + notes if x])
         districts.append({
-            "leaid": leaid, "name": r["name"], "state": r["STABREV"],
+            "leaid": leaid, "name": r["name"], "state": r["STABREV"], "county": county_name,
             "kids": kids, "poor": poor, "pct": pct, "note": note,
             "enrollment": enrollment if isinstance(enrollment, int) and enrollment >= 0 else "",
             "locale": LOCALE.get(locale // 10, "") if isinstance(locale, int) and locale > 0 else "",
@@ -162,10 +232,10 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
 
     with open(out_path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["District", "State", "Available Board Meetings", "Children Ages 5-17", "Children Ages 5-17 in Poverty",
-                    "Percentage of Children Ages 5-17 in Poverty", "Locale", "Enrollment", "District ID", "Poverty note"])
+        w.writerow(["District", "State", "County", "Available Board Meetings", "Children Ages 5-17", "Children Ages 5-17 in Poverty",
+                    "Percentage of Children Ages 5-17 in Poverty", "Locale", "Enrollment", "District ID", "Notes"])
         for d in districts:
-            w.writerow([d["name"], d["state"], d["meetings"], d["kids"], d["poor"], d["pct"], d["locale"], d["enrollment"], d["leaid"], d["note"]])
+            w.writerow([d["name"], d["state"], d["county"], d["meetings"], d["kids"], d["poor"], d["pct"], d["locale"], d["enrollment"], d["leaid"], d["note"]])
     with open(report_path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["CivicSearch name", "State", "Meetings", "Matched LEAID", "Matched district (Census name)", "How", "Distance km"])
