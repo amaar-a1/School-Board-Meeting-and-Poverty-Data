@@ -1,27 +1,21 @@
-# Temporary: Virgin Islands poverty by age by sex (vi000392020.dhc, field 186) for each island.
-import csv, urllib.request, zipfile
-B = "https://www2.census.gov/programs-surveys/decennial/2020/data/island-areas"
-urllib.request.urlretrieve(f"{B}/us-virgin-islands/demographic-and-housing-characteristics-file/vi2020.dhc.zip", "/tmp/vi.zip")
-z = zipfile.ZipFile("/tmp/vi.zip")
-islands = {}
-with z.open("vigeo2020.dhc") as f:
-    for raw in f:
-        g = raw.decode("latin-1").split("|")
-        if g[2] == "050" and g[3] == "00" and g[4] == "00":
-            islands[g[7]] = [x for x in g if x][-6] if False else g
-with z.open("vi000392020.dhc") as f:
-    seg = {}
-    for raw in f:
-        r = raw.decode("latin-1").rstrip("\r\n").split("|")
-        if r[4] in islands or r[4] == "0000001":
-            seg[r[4]] = r
-with open("fetch/out/vi_islands.csv", "w", newline="") as out:
-    w = csv.writer(out)
-    w.writerow(["logrecno", "geo", "name", "total", "below", "kids_5_17", "kids_5_17_below"])
-    for lr in ["0000001"] + sorted(islands):
-        r = seg[lr]
-        v = [0] + [int(x) for x in r[185:220]]
-        below = v[5] + v[6] + v[7] + v[13] + v[14] + v[15]
-        above = v[22] + v[23] + v[24] + v[30] + v[31] + v[32]
-        g = islands.get(lr)
-        w.writerow([lr, g[8] if g else "territory", "|".join(x for x in g[-12:] if x) if g else "", v[1], v[2], below + above, below])
+# Temporary: list territory school board meeting videos.
+import json, subprocess, sys
+subprocess.run([sys.executable, "-m", "pip", "install", "-q", "yt-dlp"], check=True)
+out = {}
+def ytlist(key, target):
+    r = subprocess.run(["yt-dlp", "--flat-playlist", "--dump-json", "--ignore-errors", target],
+                       capture_output=True, text=True, timeout=900)
+    items = []
+    for line in r.stdout.splitlines():
+        try:
+            d = json.loads(line)
+            items.append({k: d.get(k) for k in ("title", "id", "upload_date", "timestamp", "duration", "channel", "channel_id", "url")})
+        except ValueError:
+            pass
+    out[key] = {"target": target, "count": len(items), "items": items, "stderr": r.stderr[-1500:]}
+ytlist("guam_videos", "https://www.youtube.com/@guamdepartmentofeducation5142/videos")
+ytlist("guam_streams", "https://www.youtube.com/@guamdepartmentofeducation5142/streams")
+ytlist("search_cnmi", "ytsearch60:CNMI Board of Education meeting")
+ytlist("search_vi", "ytsearch60:Virgin Islands Board of Education meeting")
+ytlist("search_as", "ytsearch60:American Samoa Board of Education meeting")
+json.dump(out, open("fetch/out/territory_videos.json", "w"), indent=1)
