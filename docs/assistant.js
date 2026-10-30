@@ -102,8 +102,8 @@
 
   function districtCard(r) {
     const pov = num(r[POV]), meet = num(r[MEET]), enr = num(r.Enrollment);
-    const note = r["Poverty note"] || r["Poverty figures"] || "";
-    return `<div class="ask-card"><strong>${esc(r.District)}${r._place ? `, ${esc(r._place)}` : ""}</strong><ul>` +
+    const note = r.Notes || r["Poverty figures"] || "";
+    return `<div class="ask-card"><strong>${esc(r.District)}${r.County ? `, ${esc(r.County)}` : ""}${r._place ? `, ${esc(r._place)}` : ""}</strong><ul>` +
       `<li>Child poverty (ages 5–17): ${isNaN(pov) ? "not available" : pov.toFixed(1) + "%"}` +
       (!(num(r["Children Ages 5-17"]) > 0) ? "" : ` (${num(r["Children Ages 5-17 in Poverty"]).toLocaleString()} of ${num(r["Children Ages 5-17"]).toLocaleString()} children)`) + `</li>` +
       `<li>Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}</li>` +

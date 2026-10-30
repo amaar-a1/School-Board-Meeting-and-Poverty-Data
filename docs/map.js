@@ -101,11 +101,11 @@
     const r = rowFor(feature.properties.GEOID);
     if (undefinedArea(feature)) return `<div class="map-tip"><strong>No school district</strong>Area the Census leaves outside any district (mostly water or federal land)</div>`;
     if (!r) return `<div class="map-tip"><strong>${esc(feature.properties.NAME)}</strong>Available board meetings: 0<br>No poverty data for this district</div>`;
-    const place = r.State || r.Territory || "";
+    const place = [r.County, r.State || r.Territory].filter(Boolean).join(", ");
     const pov = toNumber(r["Percentage of Children Ages 5-17 in Poverty"]);
     const meet = toNumber(r["Available Board Meetings"]);
     const enr = toNumber(r.Enrollment);
-    const note = [r["Map note"], r["Poverty note"] || r["Poverty figures"]].filter(Boolean).join(". ");
+    const note = [r["Map note"], r.Notes || r["Poverty figures"]].filter(Boolean).join(". ");
     return `<div class="map-tip"><strong>${esc(r.District)}${place ? `, ${esc(place)}` : ""}</strong>` +
       `Child poverty: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>` +
       `Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}<br>` +
