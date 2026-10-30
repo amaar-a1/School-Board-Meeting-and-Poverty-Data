@@ -62,6 +62,18 @@ window.SOURCES = [
     note: "Territory meeting counts come from the boards' YouTube channels, not CivicSearch, so they aren't directly comparable with the states' counts."
   },
   {
+    group: "Map (district borders)",
+    items: [
+      { title: "Census Bureau 2024 cartographic boundary files: unified school districts", url: "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_unsd_500k.zip" },
+      { title: "Census Bureau 2024 cartographic boundary files: elementary school districts", url: "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_elsd_500k.zip" },
+      { title: "Census Bureau 2024 cartographic boundary files: secondary school districts", url: "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_scsd_500k.zip" },
+      { title: "Census Bureau 2024 cartographic boundary files: states and territories (outlines for Guam, the Northern Mariana Islands and American Samoa)", url: "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_500k.zip" },
+      { title: "Census Bureau 2024 cartographic boundary files: counties (the U.S. Virgin Islands' islands, for its two districts)", url: "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_county_500k.zip" },
+      { title: "Background map: © OpenStreetMap contributors, © CARTO", url: "https://carto.com/attributions" }
+    ],
+    note: "Borders were simplified with mapshaper so the map loads quickly; they are drawn with Leaflet."
+  },
+  {
     only: "Texas",
     group: "Law",
     items: [

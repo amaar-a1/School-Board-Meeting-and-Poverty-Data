@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>School Board & Poverty Data</title>
   <meta name="description" content="School board meeting and poverty data, with charts, a searchable table and sources.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,6 +19,7 @@
         <a href="#city" id="city-link" hidden>Urban only</a>
         <a href="#table-section">Data table</a>
         <a href="#size" data-view-link="size">By district size</a>
+        <a href="#map" data-view-link="map">Map</a>
         <a href="#rules" data-view-link="rules">State rules</a>
         <a href="#sources" data-view-link="sources">Sources</a>
       </nav>
@@ -34,6 +36,7 @@
       <button type="button" role="tab" data-view-tab="overview" aria-selected="true">Overview</button>
       <button type="button" role="tab" data-view-tab="size" aria-selected="false">By district size</button>
       <button type="button" role="tab" data-view-tab="rules" aria-selected="false">State rules</button>
+      <button type="button" role="tab" data-view-tab="map" aria-selected="false">Map</button>
       <button type="button" role="tab" data-view-tab="sources" aria-selected="false">Sources</button>
     </div>
 
@@ -145,6 +148,32 @@
       </div>
     </div>
 
+    <div data-view="map" hidden>
+      <section class="card">
+        <div class="card-head">
+          <h2>Map of school districts</h2>
+          <div class="controls">
+            <label>Color by
+              <select id="map-metric">
+                <option value="poverty">Child poverty rate</option>
+                <option value="meetings">Available board meetings</option>
+              </select>
+            </label>
+            <label>Go to <select id="map-jump"></select></label>
+            <label><input type="checkbox" id="map-secondary"> Secondary districts</label>
+          </div>
+        </div>
+        <p id="map-status" class="muted">Loading district borders…</p>
+        <div id="map" class="map-box" role="region" aria-label="Map of school districts"></div>
+        <div id="map-legend" class="map-legend"></div>
+        <p class="note">Hover over or tap a district to see its figures; click to zoom in. District borders are the Census Bureau's 2024
+          cartographic boundaries (simplified). Unified and elementary districts are shown; in states that also have separate high school
+          districts, tick “Secondary districts” to draw those on top. Guam, the Northern Mariana Islands and American Samoa have one
+          territory-wide district each, so their outline is the whole territory. A few districts have no border in the Census file
+          (mostly Vermont supervisory unions), and some borders have no matching data; those are gray.</p>
+      </section>
+    </div>
+
     <div data-view="rules" hidden>
       <section class="card">
         <h2>State rules for recording or streaming school board meetings</h2>
@@ -176,7 +205,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
   <script src="config.js"></script>
   <script src="sources.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
   <script src="state-rules.js"></script>
+  <script src="map.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

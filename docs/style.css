@@ -104,3 +104,11 @@ tbody tr:hover { background: var(--accent-soft); }
 .note { color: var(--muted); font-size: .9rem; margin: 8px 0 0; }
 footer { padding: 8px 16px 40px; font-size: .85rem; }
 @media (max-width: 600px) { .chart-box { height: 300px; } }
+.map-box { height: 560px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); }
+.map-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 10px; font-size: .85rem; color: var(--muted); }
+.map-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.map-legend i { width: 14px; height: 14px; border-radius: 3px; border: 1px solid var(--border); display: inline-block; }
+.map-tip strong { display: block; margin-bottom: 2px; }
+.map-tip .tip-note { max-width: 240px; white-space: normal; color: #555; }
+#map-secondary { width: auto; }
+@media (max-width: 600px) { .map-box { height: 420px; } }

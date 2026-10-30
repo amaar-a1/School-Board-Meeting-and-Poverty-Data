@@ -126,6 +126,7 @@
     renderTable();
     $("table-section").hidden = false;
     if (view === "size") renderSize();
+    if (view === "map" && window.SiteMap) window.SiteMap.show(current, datasets);
   }
 
   // Switches between the "Overview", "By district size", "State rules" and "Sources" views.
@@ -134,6 +135,7 @@
     document.querySelectorAll("[data-view]").forEach((el) => { el.hidden = el.dataset.view !== name; });
     document.querySelectorAll("[data-view-tab]").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.viewTab === name)));
     if (name === "size" && current) renderSize();
+    if (name === "map" && current && window.SiteMap) window.SiteMap.show(current, datasets);
   }
 
   const avg = (vals) => (vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : NaN);
@@ -628,7 +630,7 @@
     setView(a.dataset.viewLink || "overview");
   }));
   renderRules();
-  const viewFromHash = () => { if (["#size", "#rules", "#sources"].includes(location.hash)) setView(location.hash.slice(1)); };
+  const viewFromHash = () => { if (["#size", "#map", "#rules", "#sources"].includes(location.hash)) setView(location.hash.slice(1)); };
   viewFromHash();
   window.addEventListener("hashchange", viewFromHash);
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
