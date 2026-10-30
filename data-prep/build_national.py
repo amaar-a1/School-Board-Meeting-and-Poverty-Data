@@ -62,6 +62,8 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
     saipe = list(csv.DictReader(open(saipe_path, encoding="latin-1")))
     districts = []
     for r in saipe:
+        if r["STABREV"] in TERRITORIES:
+            continue    # territories are kept separate, in docs/data/territories.csv
         leaid = r["state"] + r["distid"]
         n = nces.get(leaid, {})
         kids, poor = int(r["rpop5_17v_24"]), int(r["saepov5_17rv_24"])
@@ -129,6 +131,8 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
     matched = sum(1 for r in report if r[3])
     print(f"{len(districts)} districts; {matched} of {len(places)} CivicSearch places matched")
 
+
+TERRITORIES = {"PR", "GU", "VI", "AS", "MP"}
 
 STATE_ABBR = {
     "Alabama": "AL", "Alaska": "AK", "Arizona": "AZ", "Arkansas": "AR", "California": "CA", "Colorado": "CO",

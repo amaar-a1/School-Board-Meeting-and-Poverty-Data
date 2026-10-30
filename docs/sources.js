@@ -26,7 +26,8 @@ window.SOURCES = [
     group: "Enrollment and urban/suburban/rural type",
     items: [
       { title: "NCES Common Core of Data 2023 school district directory (enrollment and locale codes), via the Urban Institute Education Data API", url: "https://educationdata.urban.org/documentation/school-districts.html" },
-      { only: "United States", title: "NCES 2023 directory data for all US school districts", url: "https://educationdata.urban.org/api/v1/school-districts/ccd/directory/2023/" }
+      { only: "United States", title: "NCES 2023 directory data for all US school districts", url: "https://educationdata.urban.org/api/v1/school-districts/ccd/directory/2023/" },
+      { only: "U.S. territories", title: "NCES 2023 directory data (schools and enrollment for the territories: Puerto Rico, Guam, Northern Mariana Islands, U.S. Virgin Islands, American Samoa)", url: "https://educationdata.urban.org/api/v1/school-districts/ccd/directory/2023/" }
     ]
   },
   {
@@ -36,9 +37,13 @@ window.SOURCES = [
       { title: "Guam Education Board meetings, broadcast live and recorded on the Guam Department of Education YouTube channel and Facebook page" },
       { title: "CNMI State Board of Education sessions, streamed on the CNMI Public School System's social media and regional news channels" },
       { title: "Virgin Islands Board of Education meeting notices and agendas, in the board's News Room" },
-      { title: "Puerto Rico Department of Education: run as a cabinet department, with no school board" }
+      { title: "Puerto Rico Department of Education: run as a cabinet department, with no school board" },
+      { title: "Google search summary of how each territory's schools are run and which boards post meetings online (searched by the project team, October 30, 2026); the four entries above come from it" },
+      { title: "CivicSearch school district list data (checked October 30, 2026; it lists no school boards in the territories, so there are no meeting counts)", url: "https://schools.civicsearch.org/api/get_place_list" },
+      { title: "Census SAIPE 2024 file for all US school districts (Puerto Rico's children ages 5–17 and children in poverty; no other territory is in the file)", url: "https://www2.census.gov/programs-surveys/saipe/datasets/2024/2024-school-districts/ussd24.csv" },
+      { title: "Census SAIPE estimation details for Puerto Rico (its figures come from the Puerto Rico Community Survey)", url: "https://www.census.gov/programs-surveys/saipe/technical-documentation/methodology/puerto-rico.html" }
     ],
-    note: "Gathered by the project team from an online search summary on October 30, 2026; not yet checked against the boards' own sites. American Samoa was not checked."
+    note: "The board entries are not yet checked against the boards' own sites. American Samoa was not checked."
   },
   {
     only: "Texas",
@@ -74,6 +79,7 @@ window.SOURCES = [
     note: "Inferred counties (Big Sandy, Chapel Hill, Centerville, Hubbard, Midway McLennan, Valley View Hidalgo, Edgewood Bexar, and Wylie Collin) came from size and ID matches. They are not confirmed by a source."
   },
   {
+    only: ["Texas", "United States"],
     group: "State rules: laws (checked October 29, 2026)",
     items: [
       { title: "Texas Government Code § 551.128 (Internet broadcast of open meeting; 10,000+ student districts)", url: "https://texas.public.law/statutes/tex._gov't_code_section_551.128" },
@@ -95,6 +101,7 @@ window.SOURCES = [
     ]
   },
   {
+    only: ["Texas", "United States"],
     group: "State rules: bills that are not law, and summaries used to find the laws",
     items: [
       { title: "Maryland SB 99 (2026), Local Boards of Education Transparency Act", url: "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/sb0099?ys=2026RS" },

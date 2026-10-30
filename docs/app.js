@@ -423,7 +423,7 @@
       cols.forEach((c) => sel.add(new Option(c, c, false, c === pick)));
     };
     const labelCol = current.columns.find((c) => !current.numeric.has(c)) || current.columns[0];
-    const def = cfg.chart || {};
+    const def = current.chart || cfg.chart || {};
     const has = (c) => current.columns.includes(c);
     if (def.type) $("chart-type").value = def.type;
     fill($("x-col"), current.columns, has(def.x) ? def.x : labelCol);
