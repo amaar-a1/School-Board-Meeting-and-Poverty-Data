@@ -138,6 +138,7 @@
 
   const avg = (vals) => (vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : NaN);
   const pct = (n) => (isNaN(n) ? "–" : `${n.toFixed(1)}%`);
+  const fixed = (n, digits) => (isNaN(n) ? "–" : n.toFixed(digits));
 
   // Stats for one group of rows, used by the "By district size" tab.
   function sizeStats(rows, enrollCol) {
@@ -228,16 +229,16 @@
     const overall = $("size-overall");
     overall.innerHTML = "";
     statCard(overall, "Districts with available meetings", pct(all.shareWith), `${all.nWith.toLocaleString()} of ${all.n.toLocaleString()} ${label}`);
-    statCard(overall, "Average available meetings", all.avgMeetings.toFixed(2), "per district");
-    statCard(overall, "Meetings per 10,000 students", all.per10k.toFixed(2), "meeting-to-population ratio");
-    statCard(overall, "Meetings per poverty point", all.perPovPoint.toFixed(3), "meeting-to-poverty-rate ratio");
+    statCard(overall, "Average available meetings", fixed(all.avgMeetings, 2), "per district");
+    statCard(overall, "Meetings per 10,000 students", fixed(all.per10k, 2), "meeting-to-population ratio");
+    statCard(overall, "Meetings per poverty point", fixed(all.perPovPoint, 3), "meeting-to-poverty-rate ratio");
 
     // Table
     const cols = ["Tier", "Enrollment", "Districts", "With meetings", "Avg meetings",
       "Poverty: with meetings", "Poverty: without", "Meetings per 10,000 students", "Meetings per poverty point"];
-    const cells = (name, rng, s) => [name, rng, s.n.toLocaleString(), `${pct(s.shareWith)} (${s.nWith})`, s.avgMeetings.toFixed(2),
+    const cells = (name, rng, s) => s.n ? [name, rng, s.n.toLocaleString(), `${pct(s.shareWith)} (${s.nWith})`, fixed(s.avgMeetings, 2),
       s.nWith ? `${pct(s.povWith)} (${s.nWith})` : "–", s.nWithout ? `${pct(s.povWithout)} (${s.nWithout})` : "–",
-      s.per10k.toFixed(2), s.perPovPoint.toFixed(3)];
+      fixed(s.per10k, 2), fixed(s.perPovPoint, 3)] : [name, rng, "0", "–", "–", "–", "–", "–", "–"];
     const table = $("size-table");
     table.tHead.innerHTML = "";
     const hr = table.tHead.insertRow();
@@ -348,9 +349,11 @@
       d.className = "stat";
       d.innerHTML = '<div class="label"></div><div class="value"></div><div class="sub"></div>';
       d.querySelector(".label").textContent = g.label;
-      d.querySelector(".value").textContent = isNaN(avg) ? "–" : fmtCol(cmp.metric, avg);
+      d.querySelector(".value").textContent = isNaN(avg) ? "None" : fmtCol(cmp.metric, avg);
       const label = (cfg.recordLabel || "records").toLowerCase();
-      d.querySelector(".sub").textContent = `average ${cmp.metric.toLowerCase()} · ${g.rows.length.toLocaleString()} ${g.rows.length === 1 ? label.replace(/s$/, "") : label}`;
+      d.querySelector(".sub").textContent = g.rows.length
+        ? `average ${cmp.metric.toLowerCase()} · ${g.rows.length.toLocaleString()} ${g.rows.length === 1 ? label.replace(/s$/, "") : label}`
+        : `no ${label} in this group`;
       body.appendChild(d);
     });
   }
