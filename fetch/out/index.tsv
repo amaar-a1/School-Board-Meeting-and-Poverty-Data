@@ -1,0 +1,5 @@
+vars_gu.json	200	2885460	https://api.census.gov/data/2020/dec/dhcgu/variables.json
+vars_mp.json	200	2526370	https://api.census.gov/data/2020/dec/dhcmp/variables.json
+vars_vi.json	200	2896150	https://api.census.gov/data/2020/dec/dhcvi/variables.json
+vars_as.json	200	2346154	https://api.census.gov/data/2020/dec/dhcas/variables.json
+dp_gu_vars.json	200	431703	https://api.census.gov/data/2020/dec/dpgu/variables.json
