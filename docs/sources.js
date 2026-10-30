@@ -69,6 +69,13 @@ window.SOURCES = [
       { title: "Census Bureau 2024 cartographic boundary files: secondary school districts", url: "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_scsd_500k.zip" },
       { title: "Census Bureau 2024 cartographic boundary files: states and territories (outlines for Guam, the Northern Mariana Islands and American Samoa)", url: "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_500k.zip" },
       { title: "Census Bureau 2024 cartographic boundary files: counties (the U.S. Virgin Islands' islands, for its two districts)", url: "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_county_500k.zip" },
+      { title: "NCES 2023 school district directory (supervisory union number for each Vermont town district, used to show its union's figures)", url: "https://educationdata.urban.org/api/v1/school-districts/ccd/directory/2023/?fips=50" },
+      { title: "VCGI: Vermont supervisory union boundaries (checked; the map builds the same unions from their member districts)", url: "https://maps.vcgi.vermont.gov/arcgis/rest/services/EGC_services/OPENDATA_VCGI_BOUNDARIES_SP_NOCACHE_v1/MapServer/55" },
+      { title: "Region 20 (Connecticut): Goshen, Litchfield, Morris and Warren merged Region 6 and Litchfield Public Schools in 2024", url: "https://www.rsd6.org/page/who-we-are" },
+      { title: "Henry Hudson Regional School District (New Jersey) became PreK–12 in 2024, merging Atlantic Highlands and Highlands", url: "https://en.wikipedia.org/wiki/Henry_Hudson_Regional_School_District" },
+      { title: "St. Anne Unit District 24 (Illinois) replaced districts 256 and 302 in 2024", url: "https://www.shawlocal.com/daily-journal/news/2024/07/27/st-annes-new-school-district-up-and-running/" },
+      { title: "Barnwell County school consolidation (South Carolina)", url: "https://www.wrdw.com/2024/06/26/people-leave-upset-after-barnwell-county-consolidated-school-meeting" },
+      { title: "Nebraska Department of Education unification report (South Central Nebraska Unified 5 covers Lawrence-Nelson and Sandy Creek)", url: "https://www.education.ne.gov/wp-content/uploads/2023/11/UnificationReport_2023-24.pdf" },
       { title: "Background map: © OpenStreetMap contributors, © CARTO", url: "https://carto.com/attributions" }
     ],
     note: "Borders were simplified with mapshaper so the map loads quickly; they are drawn with Leaflet."

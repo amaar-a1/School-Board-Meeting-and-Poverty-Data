@@ -29,7 +29,33 @@
   };
   const NO_DATA = "#9e9e9e";
 
-  let map = null, loading = null, lookup = {}, layers = {}, current = null, fips = {};
+  let map = null, loading = null, lookup = {}, layers = {}, current = null, fips = {}, aliases = {};
+
+  // Borders with no row of their own (Vermont town districts, pieces of districts merged in 2024)
+  // show the figures of the district(s) listed in data/map/aliases.json; several are combined.
+  function rowFor(geoid) {
+    if (lookup[geoid]) return lookup[geoid];
+    const a = aliases[geoid];
+    if (!a) return null;
+    const rows = a.ids.map((id) => lookup[id]).filter(Boolean);
+    if (!rows.length) return null;
+    const row = rows.length === 1 ? { ...rows[0] } : combine(rows);
+    row["Map note"] = a.note;
+    return row;
+  }
+
+  function combine(rows) {
+    const sum = (c) => rows.reduce((t, r) => t + (toNumber(r[c]) || 0), 0);
+    const kids = sum("Children Ages 5-17"), poor = sum("Children Ages 5-17 in Poverty");
+    return {
+      District: rows.map((r) => r.District).join(" + "), State: rows[0].State,
+      "Children Ages 5-17": kids, "Children Ages 5-17 in Poverty": poor,
+      "Percentage of Children Ages 5-17 in Poverty": kids ? (100 * poor) / kids : "",
+      "Available Board Meetings": sum("Available Board Meetings"),
+      Enrollment: rows.every((r) => r.Enrollment) ? sum("Enrollment") : "",
+      Locale: rows[0].Locale
+    };
+  }
 
   const toNumber = (v) => {
     const s = String(v ?? "").trim().replace(/[$,%\s]/g, "");
@@ -51,21 +77,25 @@
     return !fips[current.state] || geoid.startsWith(fips[current.state]);
   }
 
+  const undefinedArea = (f) => /^School District Not Defined$/i.test(f.properties.NAME || "");
+
   function style(feature) {
+    if (undefinedArea(feature)) return { fillOpacity: 0, color: "#999", weight: 0.3, dashArray: "2 3" };
     const on = inView(feature.properties.GEOID);
-    return { fillColor: color(lookup[feature.properties.GEOID]), fillOpacity: on ? 0.8 : 0.15, color: "#555", weight: on ? 0.4 : 0.2 };
+    return { fillColor: color(rowFor(feature.properties.GEOID)), fillOpacity: on ? 0.8 : 0.15, color: "#555", weight: on ? 0.4 : 0.2 };
   }
 
   const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
   function tip(feature) {
-    const r = lookup[feature.properties.GEOID];
+    const r = rowFor(feature.properties.GEOID);
+    if (undefinedArea(feature)) return `<div class="map-tip"><strong>No school district</strong>Area the Census leaves outside any district (mostly water or federal land)</div>`;
     if (!r) return `<div class="map-tip"><strong>${esc(feature.properties.NAME)}</strong>No data for this district</div>`;
     const place = r.State || r.Territory || "";
     const pov = toNumber(r["Percentage of Children Ages 5-17 in Poverty"]);
     const meet = toNumber(r["Available Board Meetings"]);
     const enr = toNumber(r.Enrollment);
-    const note = r["Poverty note"] || r["Poverty figures"] || "";
+    const note = [r["Map note"], r["Poverty note"] || r["Poverty figures"]].filter(Boolean).join(". ");
     return `<div class="map-tip"><strong>${esc(r.District)}${place ? `, ${esc(place)}` : ""}</strong>` +
       `Child poverty: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>` +
       `Available board meetings: ${isNaN(meet) ? "none (no school board)" : meet.toLocaleString()}<br>` +
@@ -127,9 +157,10 @@
     }).addTo(map);
     const renderer = L.canvas({ padding: 0.3 });
     LAYERS.forEach((name, i) => {
-      // Puerto Rico's border is already in the unified-district file.
       const fc = topojson.feature(topo[i], topo[i].objects[name]);
+      // Puerto Rico's border is in the unified-district file; the other territories use the territory outlines.
       if (name === "territories") fc.features = fc.features.filter((f) => f.properties.GEOID !== "7200030");
+      else fc.features = fc.features.filter((f) => !/^(60|66|69|78)/.test(f.properties.GEOID));
       layers[name] = L.geoJSON(fc, {
         renderer, style,
         onEachFeature: (f, l) => {
@@ -151,14 +182,15 @@
   }
 
   window.SiteMap = {
+    rowFor: (geoid) => rowFor(geoid),
     show(ds, datasets) {
       current = ds;
       if (!loading) {
-        loading = Promise.all(LAYERS.map((n) => fetch(`data/map/${n}.json`).then((r) => {
+        loading = Promise.all([...LAYERS, "aliases"].map((n) => fetch(`data/map/${n}.json`).then((r) => {
           if (!r.ok) throw new Error(`HTTP ${r.status}`);
           return r.json();
         })))
-          .then((topo) => { build(datasets, topo); $("map-status").textContent = ""; })
+          .then((files) => { aliases = files.pop(); build(datasets, files); $("map-status").textContent = ""; })
           .catch((e) => { $("map-status").textContent = `Couldn't load the map (${e.message}).`; throw e; });
       }
       loading.then(() => { map.invalidateSize(); restyle(); zoomToCurrent(); }).catch(() => {});

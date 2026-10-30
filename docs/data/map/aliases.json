@@ -1,0 +1,849 @@
+{
+"0902220": {
+"ids": [
+"0999501"
+],
+"note": "Merged with Region 6 into Regional School District 20 in 2024"
+},
+"0903515": {
+"ids": [
+"0999501"
+],
+"note": "Merged with Litchfield into Regional School District 20 in 2024"
+},
+"1737120": {
+"ids": [
+"1799501"
+],
+"note": "Merged into St. Anne Unit District 24 in 2024"
+},
+"1737140": {
+"ids": [
+"1799501"
+],
+"note": "Merged into St. Anne Unit District 24 in 2024"
+},
+"3100122": {
+"ids": [
+"3172700",
+"3176390"
+],
+"note": "Covers Lawrence-Nelson Public Schools and Sandy Creek Schools; figures are the two combined"
+},
+"3401020": {
+"ids": [
+"3499501"
+],
+"note": "Merged into the PreK-12 Henry Hudson Regional School District in 2024"
+},
+"3407050": {
+"ids": [
+"3499501"
+],
+"note": "Merged into the PreK-12 Henry Hudson Regional School District in 2024"
+},
+"3407200": {
+"ids": [
+"3499501"
+],
+"note": "Merged into the PreK-12 Henry Hudson Regional School District in 2024"
+},
+"4501080": {
+"ids": [
+"4599501"
+],
+"note": "Part of Barnwell County School District"
+},
+"4503914": {
+"ids": [
+"4599501"
+],
+"note": "Part of Barnwell County School District"
+},
+"5000011": {
+"ids": [
+"5099912"
+],
+"note": "Vermont town district; figures are for Mount Mansfield Unified Union School District (Supervisory)"
+},
+"5000012": {
+"ids": [
+"5099919"
+],
+"note": "Vermont town district; figures are for Essex North Supervisory Union"
+},
+"5000013": {
+"ids": [
+"5099905"
+],
+"note": "Vermont town district; figures are for Southwest Vermont Supervisory Union"
+},
+"5000014": {
+"ids": [
+"5099949"
+],
+"note": "Vermont town district; figures are for Windham Southwest Supervisory Union"
+},
+"5000015": {
+"ids": [
+"5099919"
+],
+"note": "Vermont town district; figures are for Essex North Supervisory Union"
+},
+"5000016": {
+"ids": [
+"5099919"
+],
+"note": "Vermont town district; figures are for Essex North Supervisory Union"
+},
+"5000017": {
+"ids": [
+"5099919"
+],
+"note": "Vermont town district; figures are for Essex North Supervisory Union"
+},
+"5000018": {
+"ids": [
+"5099919"
+],
+"note": "Vermont town district; figures are for Essex North Supervisory Union"
+},
+"5000019": {
+"ids": [
+"5099919"
+],
+"note": "Vermont town district; figures are for Essex North Supervisory Union"
+},
+"5000024": {
+"ids": [
+"5000384"
+],
+"note": "Vermont town district; figures are for Rivendell Interstate Supervisory District"
+},
+"5000390": {
+"ids": [
+"5099936"
+],
+"note": "Vermont town district; figures are for Rutland Northeast Supervisory Union"
+},
+"5000392": {
+"ids": [
+"5099936"
+],
+"note": "Vermont town district; figures are for Rutland Northeast Supervisory Union"
+},
+"5000393": {
+"ids": [
+"5099933"
+],
+"note": "Vermont town district; figures are for Mill River Unified Union Supervisory District"
+},
+"5000395": {
+"ids": [
+"5000394"
+],
+"note": "Vermont town district; figures are for Essex-Westford Supervisory School District"
+},
+"5000396": {
+"ids": [
+"5099914"
+],
+"note": "Vermont town district; figures are for Champlain Valley Supervisory District"
+},
+"5000397": {
+"ids": [
+"5099925"
+],
+"note": "Vermont town district; figures are for Lamoille North Supervisory Union"
+},
+"5000398": {
+"ids": [
+"5099902"
+],
+"note": "Vermont town district; figures are for Addison Northwest Supervisory District"
+},
+"5000399": {
+"ids": [
+"5099923"
+],
+"note": "Vermont town district; figures are for Maple Run Supervisory District"
+},
+"5000400": {
+"ids": [
+"5099928"
+],
+"note": "Vermont town district; figures are for Orange Southwest Supervisory Union"
+},
+"5000401": {
+"ids": [
+"5099925"
+],
+"note": "Vermont town district; figures are for Lamoille North Supervisory Union"
+},
+"5000402": {
+"ids": [
+"5099903"
+],
+"note": "Vermont town district; figures are for Addison Central Supervisory District"
+},
+"5000403": {
+"ids": [
+"5099942"
+],
+"note": "Vermont town district; figures are for Harwood Unified Union Supervisory District"
+},
+"5000408": {
+"ids": [
+"5000404"
+],
+"note": "Vermont town district; figures are for Central Vermont Supervisory Union"
+},
+"5000409": {
+"ids": [
+"5000405"
+],
+"note": "Vermont town district; figures are for Greater Rutland County Supervisory Union"
+},
+"5000410": {
+"ids": [
+"5000406"
+],
+"note": "Vermont town district; figures are for Montpelier-Roxbury Supervisory Union"
+},
+"5000411": {
+"ids": [
+"5000405"
+],
+"note": "Vermont town district; figures are for Greater Rutland County Supervisory Union"
+},
+"5000412": {
+"ids": [
+"5099909"
+],
+"note": "Vermont town district; figures are for Caledonia Central Supervisory Union"
+},
+"5000414": {
+"ids": [
+"5099930"
+],
+"note": "Vermont town district; figures are for White River Valley Supervisory Union"
+},
+"5000415": {
+"ids": [
+"5099919"
+],
+"note": "Vermont town district; figures are for Essex North Supervisory Union"
+},
+"5000417": {
+"ids": [
+"5099906"
+],
+"note": "Vermont town district; figures are for Bennington Rutland Supervisory Union"
+},
+"5000418": {
+"ids": [
+"5099949"
+],
+"note": "Vermont town district; figures are for Windham Southwest Supervisory Union"
+},
+"5000419": {
+"ids": [
+"5099906"
+],
+"note": "Vermont town district; figures are for Bennington Rutland Supervisory Union"
+},
+"5000421": {
+"ids": [
+"5000407"
+],
+"note": "Vermont town district; figures are for Kingdom East Supervisory District"
+},
+"5000422": {
+"ids": [
+"5000385"
+],
+"note": "Vermont town district; figures are for Two Rivers Supervisory Union"
+},
+"5000423": {
+"ids": [
+"5099930"
+],
+"note": "Vermont town district; figures are for White River Valley Supervisory Union"
+},
+"5000425": {
+"ids": [
+"5099901"
+],
+"note": "Vermont town district; figures are for Mt. Abraham Unified School District (Supervisory)"
+},
+"5000426": {
+"ids": [
+"5099930"
+],
+"note": "Vermont town district; figures are for White River Valley Supervisory Union"
+},
+"5000427": {
+"ids": [
+"5000385"
+],
+"note": "Vermont town district; figures are for Two Rivers Supervisory Union"
+},
+"5000429": {
+"ids": [
+"5099930"
+],
+"note": "Vermont town district; figures are for White River Valley Supervisory Union"
+},
+"5000430": {
+"ids": [
+"5000404"
+],
+"note": "Vermont town district; figures are for Central Vermont Supervisory Union"
+},
+"5000431": {
+"ids": [
+"5099948"
+],
+"note": "Vermont town district; figures are for Windham Southeast Supervisory Union"
+},
+"5000432": {
+"ids": [
+"5099946"
+],
+"note": "Vermont town district; figures are for Windham Central Supervisory Union"
+},
+"5000433": {
+"ids": [
+"5099921"
+],
+"note": "Vermont town district; figures are for Missisquoi Valley School District (Supervisory)"
+},
+"5000434": {
+"ids": [
+"5099905"
+],
+"note": "Vermont town district; figures are for Southwest Vermont Supervisory Union"
+},
+"5000435": {
+"ids": [
+"5099924"
+],
+"note": "Vermont town district; figures are for Grand Isle Supervisory Union"
+},
+"5000436": {
+"ids": [
+"5099934"
+],
+"note": "Vermont town district; figures are for Orleans Central Supervisory Union"
+},
+"5000437": {
+"ids": [
+"5099927"
+],
+"note": "Vermont town district; figures are for Orange East Supervisory Union"
+},
+"5000438": {
+"ids": [
+"5099935"
+],
+"note": "Vermont town district; figures are for Orleans Southwest Supervisory Union"
+},
+"5000439": {
+"ids": [
+"5099932"
+],
+"note": "Vermont town district; figures are for Washington Central Supervisory Union"
+},
+"5000440": {
+"ids": [
+"5099904"
+],
+"note": "Vermont town district; figures are for Slate Valley Unified Union School District (Supervisory)"
+},
+"5000441": {
+"ids": [
+"5099920"
+],
+"note": "Vermont town district; figures are for Franklin Northeast Supervisory Union"
+},
+"5000442": {
+"ids": [
+"5099952"
+],
+"note": "Vermont town district; figures are for Windsor Southeast Supervisory Union"
+},
+"5000443": {
+"ids": [
+"5099912"
+],
+"note": "Vermont town district; figures are for Mount Mansfield Unified Union School District (Supervisory)"
+},
+"5000444": {
+"ids": [
+"5099920"
+],
+"note": "Vermont town district; figures are for Franklin Northeast Supervisory Union"
+},
+"5000445": {
+"ids": [
+"5000007"
+],
+"note": "Vermont town district; figures are for Barre Supervisory Union"
+},
+"5000446": {
+"ids": [
+"5099947"
+],
+"note": "Vermont town district; figures are for Windham Northeast Supervisory Union"
+},
+"5000447": {
+"ids": [
+"5099946"
+],
+"note": "Vermont town district; figures are for Windham Central Supervisory Union"
+},
+"5000448": {
+"ids": [
+"5099926"
+],
+"note": "Vermont town district; figures are for Lamoille South Supervisory Union"
+},
+"5000449": {
+"ids": [
+"5099946"
+],
+"note": "Vermont town district; figures are for Windham Central Supervisory Union"
+},
+"5000450": {
+"ids": [
+"5099951"
+],
+"note": "Vermont town district; figures are for Mountain Views Supervisory Union"
+},
+"5001770": {
+"ids": [
+"5099924"
+],
+"note": "Vermont town district; figures are for Grand Isle Supervisory Union"
+},
+"5001830": {
+"ids": [
+"5099905"
+],
+"note": "Vermont town district; figures are for Southwest Vermont Supervisory Union"
+},
+"5002610": {
+"ids": [
+"5099931"
+],
+"note": "Vermont town district; figures are for North Country Supervisory Union"
+},
+"5002820": {
+"ids": [
+"5099915"
+],
+"note": "Vermont town district; figures are for Burlington Supervisory District"
+},
+"5002850": {
+"ids": [
+"5099909"
+],
+"note": "Vermont town district; figures are for Caledonia Central Supervisory Union"
+},
+"5002910": {
+"ids": [
+"5099925"
+],
+"note": "Vermont town district; figures are for Lamoille North Supervisory Union"
+},
+"5002940": {
+"ids": [
+"5099919"
+],
+"note": "Vermont town district; figures are for Essex North Supervisory Union"
+},
+"5003060": {
+"ids": [
+"5099931"
+],
+"note": "Vermont town district; figures are for North Country Supervisory Union"
+},
+"5003240": {
+"ids": [
+"5099907"
+],
+"note": "Vermont town district; figures are for Colchester Supervisory District"
+},
+"5003360": {
+"ids": [
+"5099931"
+],
+"note": "Vermont town district; figures are for North Country Supervisory Union"
+},
+"5003390": {
+"ids": [
+"5099935"
+],
+"note": "Vermont town district; figures are for Orleans Southwest Supervisory Union"
+},
+"5003450": {
+"ids": [
+"5099909"
+],
+"note": "Vermont town district; figures are for Caledonia Central Supervisory Union"
+},
+"5003480": {
+"ids": [
+"5099931"
+],
+"note": "Vermont town district; figures are for North Country Supervisory Union"
+},
+"5003930": {
+"ids": [
+"5099922"
+],
+"note": "Vermont town district; figures are for Franklin West Supervisory Union"
+},
+"5004080": {
+"ids": [
+"5099922"
+],
+"note": "Vermont town district; figures are for Franklin West Supervisory Union"
+},
+"5004140": {
+"ids": [
+"5099922"
+],
+"note": "Vermont town district; figures are for Franklin West Supervisory Union"
+},
+"5004500": {
+"ids": [
+"5099949"
+],
+"note": "Vermont town district; figures are for Windham Southwest Supervisory Union"
+},
+"5004590": {
+"ids": [
+"5099954"
+],
+"note": "Vermont town district; figures are for Hartford Supervisory District"
+},
+"5004620": {
+"ids": [
+"5099952"
+],
+"note": "Vermont town district; figures are for Windsor Southeast Supervisory Union"
+},
+"5004710": {
+"ids": [
+"5099931"
+],
+"note": "Vermont town district; figures are for North Country Supervisory Union"
+},
+"5004830": {
+"ids": [
+"5000405"
+],
+"note": "Vermont town district; figures are for Greater Rutland County Supervisory Union"
+},
+"5004950": {
+"ids": [
+"5099931"
+],
+"note": "Vermont town district; figures are for North Country Supervisory Union"
+},
+"5005050": {
+"ids": [
+"5099934"
+],
+"note": "Vermont town district; figures are for Orleans Central Supervisory Union"
+},
+"5005160": {
+"ids": [
+"5099963"
+],
+"note": "Vermont town district; figures are for Lincoln Supervisory District"
+},
+"5005220": {
+"ids": [
+"5099931"
+],
+"note": "Vermont town district; figures are for North Country Supervisory Union"
+},
+"5005400": {
+"ids": [
+"5099946"
+],
+"note": "Vermont town district; figures are for Windham Central Supervisory Union"
+},
+"5005610": {
+"ids": [
+"5099910"
+],
+"note": "Vermont town district; figures are for Milton Supervisory District"
+},
+"5005760": {
+"ids": [
+"5099931"
+],
+"note": "Vermont town district; figures are for North Country Supervisory Union"
+},
+"5005810": {
+"ids": [
+"5099905"
+],
+"note": "Vermont town district; figures are for Southwest Vermont Supervisory Union"
+},
+"5006000": {
+"ids": [
+"5099931"
+],
+"note": "Vermont town district; figures are for North Country Supervisory Union"
+},
+"5006030": {
+"ids": [
+"5099931"
+],
+"note": "Vermont town district; figures are for North Country Supervisory Union"
+},
+"5006060": {
+"ids": [
+"5099905"
+],
+"note": "Vermont town district; figures are for Southwest Vermont Supervisory Union"
+},
+"5006180": {
+"ids": [
+"5099955"
+],
+"note": "Vermont town district; figures are for School Administrative Unit 70"
+},
+"5006390": {
+"ids": [
+"5099909"
+],
+"note": "Vermont town district; figures are for Caledonia Central Supervisory Union"
+},
+"5006450": {
+"ids": [
+"5099951"
+],
+"note": "Vermont town district; figures are for Mountain Views Supervisory Union"
+},
+"5006780": {
+"ids": [
+"5099949"
+],
+"note": "Vermont town district; figures are for Windham Southwest Supervisory Union"
+},
+"5006930": {
+"ids": [
+"5099947"
+],
+"note": "Vermont town district; figures are for Windham Northeast Supervisory Union"
+},
+"5007050": {
+"ids": [
+"5099940"
+],
+"note": "Vermont town district; figures are for Rutland City Supervisory District"
+},
+"5007080": {
+"ids": [
+"5000405"
+],
+"note": "Vermont town district; figures are for Greater Rutland County Supervisory Union"
+},
+"5007170": {
+"ids": [
+"5099905"
+],
+"note": "Vermont town district; figures are for Southwest Vermont Supervisory Union"
+},
+"5007200": {
+"ids": [
+"5099949"
+],
+"note": "Vermont town district; figures are for Windham Southwest Supervisory Union"
+},
+"5007260": {
+"ids": [
+"5099930"
+],
+"note": "Vermont town district; figures are for White River Valley Supervisory Union"
+},
+"5007470": {
+"ids": [
+"5099916"
+],
+"note": "Vermont town district; figures are for South Burlington Supervisory District"
+},
+"5007500": {
+"ids": [
+"5099924"
+],
+"note": "Vermont town district; figures are for Grand Isle Supervisory Union"
+},
+"5007530": {
+"ids": [
+"5099956"
+],
+"note": "Vermont town district; figures are for Springfield Supervisory District"
+},
+"5007650": {
+"ids": [
+"5099911"
+],
+"note": "Vermont town district; figures are for St. Johnsbury Supervisory District"
+},
+"5007680": {
+"ids": [
+"5099949"
+],
+"note": "Vermont town district; figures are for Windham Southwest Supervisory Union"
+},
+"5007710": {
+"ids": [
+"5099935"
+],
+"note": "Vermont town district; figures are for Orleans Southwest Supervisory Union"
+},
+"5007800": {
+"ids": [
+"5099926"
+],
+"note": "Vermont town district; figures are for Lamoille South Supervisory Union"
+},
+"5007830": {
+"ids": [
+"5099930"
+],
+"note": "Vermont town district; figures are for White River Valley Supervisory Union"
+},
+"5007860": {
+"ids": [
+"5099946"
+],
+"note": "Vermont town district; figures are for Windham Central Supervisory Union"
+},
+"5008010": {
+"ids": [
+"5099927"
+],
+"note": "Vermont town district; figures are for Orange East Supervisory Union"
+},
+"5008130": {
+"ids": [
+"5099931"
+],
+"note": "Vermont town district; figures are for North Country Supervisory Union"
+},
+"5008224": {
+"ids": [
+"5099927"
+],
+"note": "Vermont town district; figures are for Orange East Supervisory Union"
+},
+"5008225": {
+"ids": [
+"5099909"
+],
+"note": "Vermont town district; figures are for Caledonia Central Supervisory Union"
+},
+"5008242": {
+"ids": [
+"5099927"
+],
+"note": "Vermont town district; figures are for Orange East Supervisory Union"
+},
+"5008243": {
+"ids": [
+"5099935"
+],
+"note": "Vermont town district; figures are for Orleans Southwest Supervisory Union"
+},
+"5008246": {
+"ids": [
+"5099947"
+],
+"note": "Vermont town district; figures are for Windham Northeast Supervisory Union"
+},
+"5008310": {
+"ids": [
+"5099948"
+],
+"note": "Vermont town district; figures are for Windham Southeast Supervisory Union"
+},
+"5008700": {
+"ids": [
+"5099952"
+],
+"note": "Vermont town district; figures are for Windsor Southeast Supervisory Union"
+},
+"5008910": {
+"ids": [
+"5099931"
+],
+"note": "Vermont town district; figures are for North Country Supervisory Union"
+},
+"5008970": {
+"ids": [
+"5099947"
+],
+"note": "Vermont town district; figures are for Windham Northeast Supervisory Union"
+},
+"5009270": {
+"ids": [
+"5099946"
+],
+"note": "Vermont town district; figures are for Windham Central Supervisory Union"
+},
+"5009330": {
+"ids": [
+"5099906"
+],
+"note": "Vermont town district; figures are for Bennington Rutland Supervisory Union"
+},
+"5009360": {
+"ids": [
+"5099917"
+],
+"note": "Vermont town district; figures are for Winooski Supervisory District"
+},
+"5009390": {
+"ids": [
+"5099935"
+],
+"note": "Vermont town district; figures are for Orleans Southwest Supervisory Union"
+},
+"5009600": {
+"ids": [
+"5099931"
+],
+"note": "Vermont town district; figures are for North Country Supervisory Union"
+},
+"5099001": {
+"ids": [
+"5099946"
+],
+"note": "Vermont union school district; figures are for Windham Central Supervisory Union"
+},
+"5099002": {
+"ids": [
+"5099905"
+],
+"note": "Vermont union school district; figures are for Southwest Vermont Supervisory Union"
+},
+"5099003": {
+"ids": [
+"5099905"
+],
+"note": "Vermont union school district; figures are for Southwest Vermont Supervisory Union"
+},
+"5099004": {
+"ids": [
+"5099931"
+],
+"note": "Vermont union school district; figures are for North Country Supervisory Union"
+}
+}
