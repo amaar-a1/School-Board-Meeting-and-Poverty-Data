@@ -1,19 +1,24 @@
-// Site settings. The CSV files in docs/data/ are downloaded from the project
-// spreadsheet by .github/workflows/pages.yml.
+// Site settings. docs/data/national.csv is rebuilt daily by .github/workflows/pages.yml
+// with fresh CivicSearch meeting counts.
 window.SITE_CONFIG = {
   title: "School Board Meetings & Poverty Data",
   // CSV files to load. "United States" gets a button; each state is picked from a menu
-  // (see perState). Texas uses the project spreadsheet; other states come from the national file.
+  // (see perState) and comes from the national file.
   dataFiles: [
-    { name: "Texas", file: "data/data.csv", state: "TX",
-      note: "1,017 Texas school districts.",
-      footer: "Poverty figures are for children ages 5–17. Data is refreshed daily. Sources are listed on the Sources tab." },
     { name: "United States", file: "data/national.csv", textColumns: ["District ID"],
-      note: "13,132 US school districts. Meeting counts are available for 1,206 of them; the rest show 0.",
-      footer: "Poverty figures are for children ages 5–17. This data is a snapshot from October 29, 2026. Sources are listed on the Sources tab." }
+      // {rows} and {withMeetings} are filled in from the data when the page loads.
+      note: "{rows} school districts in the 50 states and DC. Meeting counts are available for {withMeetings} of them; the rest show 0.",
+      footer: "Poverty figures are for children ages 5–17. Meeting counts are refreshed daily from CivicSearch. Sources are listed on the Sources tab." },
+    // The territories share one menu entry (see perState.after). They have no meeting
+    // counts or school-district poverty figures, so this view only lists their school systems.
+    { name: "U.S. territories", file: "data/territories.csv", state: "territories",
+      chart: { type: "bar", x: "District", y: "Percentage of Children Ages 5-17 in Poverty" },
+      rulesNote: "The territories' rules on recording or streaming board meetings haven't been researched yet.",
+      note: "Puerto Rico, Guam, the Northern Mariana Islands, the U.S. Virgin Islands and American Samoa, shown together. Each runs one territory-wide school system (the Virgin Islands has two districts under one board). CivicSearch doesn't cover the territories, so their meeting counts are the board meetings recorded on the boards' own YouTube channels (checked October 30, 2026; a meeting split across several videos counts once): Guam has 20 (October 2025 to October 2026) and the Northern Mariana Islands 6 (May to October 2026); the Virgin Islands board posts only agendas and minutes, American Samoa had none, and Puerto Rico has no board. These counts aren't directly comparable with CivicSearch's. Puerto Rico's poverty figures are Census estimates for 2024; the other territories' come from the 2020 Census (2019 income) and count children living in households (on Guam, not counting military housing), so they aren't directly comparable with Puerto Rico's or the states'. The Virgin Islands figures are split by island to match its two districts. Enrollment and locale are from the NCES 2023 directory, which has no enrollment for Guam or American Samoa (so they're left out of the size tab); Guam's four charter schools, listed separately by NCES, are left out.",
+      footer: "Territory school systems as of October 30, 2026. Sources are listed on the Sources tab." }
   ],
   // State menu: every state and DC. Each state's view is the national rows with this
-  // State value (Texas uses its own data set above).
+  // State value.
   perState: {
     from: "United States",
     column: "State",
@@ -26,7 +31,9 @@ window.SITE_CONFIG = {
       NC: "North Carolina", ND: "North Dakota", OH: "Ohio", OK: "Oklahoma", OR: "Oregon", PA: "Pennsylvania",
       RI: "Rhode Island", SC: "South Carolina", SD: "South Dakota", TN: "Tennessee", TX: "Texas", UT: "Utah",
       VT: "Vermont", VA: "Virginia", WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming"
-    }
+    },
+    // Listed after the states, in this order.
+    after: { territories: "U.S. territories" }
   },
   recordLabel: "Districts",
   // Chart shown when the page opens (the viewer can change it).

@@ -48,6 +48,11 @@
   async function load() {
     try {
       datasets = await Promise.all(cfg.dataFiles.map(async (d) => parse(d.name, await fetchCsv(d.file), d)));
+      datasets.forEach((d) => {
+        if (!d.note) return;
+        const withMeetings = d.rows.filter((r) => toNumber(r[cfg.compare.by]) > 0).length;
+        d.note = d.note.replace("{rows}", d.rows.length.toLocaleString()).replace("{withMeetings}", withMeetings.toLocaleString());
+      });
       $("status").textContent = "";
     } catch (err) {
       $("status").classList.add("error");
@@ -58,8 +63,8 @@
     selectDataset(datasets.find((d) => d.name === (cfg.perState && cfg.perState.from)) || datasets[0]);
   }
 
-  // One state's view: its own data set if there is one (Texas), otherwise the
-  // national rows for that state.
+  // One state's view: its own data set if there is one (the territories), otherwise
+  // the national rows for that state.
   const stateCache = {};
   function stateDataset(abbr) {
     const ps = cfg.perState;
@@ -101,6 +106,7 @@
     sel.add(new Option("Choose a state…", ""));
     Object.entries(ps ? ps.names : {}).sort((a, b) => a[1].localeCompare(b[1]))
       .forEach(([abbr, name]) => sel.add(new Option(name, abbr)));
+    Object.entries((ps && ps.after) || {}).forEach(([key, name]) => sel.add(new Option(name, key)));
     sel.addEventListener("change", () => { if (sel.value) selectDataset(stateDataset(sel.value)); });
     tabs.appendChild(sel);
   }
@@ -168,6 +174,11 @@
     const st = cfg.sizeTiers;
     const enrollCol = st && current.columns.find((c) => c.trim().toLowerCase() === st.column.toLowerCase());
     const ok = enrollCol && canCompare();
+    const missing = [[cfg.compare.by, "meeting counts"], [cfg.compare.metric, "child poverty figures"]]
+      .filter(([c]) => !current.numeric.has(c)).map(([, label]) => label).join(" and ");
+    $("size-missing").textContent = enrollCol
+      ? `This tab needs ${missing}, which aren't available for ${current.name}.`
+      : "This tab needs an “Enrollment” column in the data.";
     $("size-missing").hidden = ok;
     $("size-content").hidden = !ok;
     if (!ok) return;
@@ -197,7 +208,8 @@
           b.textContent = `${x.covers}: `;
           li.append(b, x.rule);
         } else {
-          li.textContent = `No recording or streaming requirement found (checked ${sr.checked}); usually only written minutes are required.`;
+          li.textContent = current.rulesNote ||
+            `No recording or streaming requirement found (checked ${sr.checked}); usually only written minutes are required.`;
         }
         list.appendChild(li);
       });
@@ -314,10 +326,10 @@
   function renderCompare() {
     const el = $("compare");
     el.hidden = !canCompare();
+    renderUrban();
     if (el.hidden) return;
     fillCompare($("compare-body"), current.rows);
     $("compare-title").textContent = cfg.compare.title;
-    renderUrban();
   }
 
   // Splits rows into "value > 0" vs "value = 0" on cfg.compare.by and compares cfg.compare.metric.
@@ -337,7 +349,8 @@
       d.innerHTML = '<div class="label"></div><div class="value"></div><div class="sub"></div>';
       d.querySelector(".label").textContent = g.label;
       d.querySelector(".value").textContent = isNaN(avg) ? "–" : fmtCol(cmp.metric, avg);
-      d.querySelector(".sub").textContent = `average ${cmp.metric.toLowerCase()} · ${g.rows.length.toLocaleString()} ${(cfg.recordLabel || "records").toLowerCase()}`;
+      const label = (cfg.recordLabel || "records").toLowerCase();
+      d.querySelector(".sub").textContent = `average ${cmp.metric.toLowerCase()} · ${g.rows.length.toLocaleString()} ${g.rows.length === 1 ? label.replace(/s$/, "") : label}`;
       body.appendChild(d);
     });
   }
@@ -419,7 +432,7 @@
       cols.forEach((c) => sel.add(new Option(c, c, false, c === pick)));
     };
     const labelCol = current.columns.find((c) => !current.numeric.has(c)) || current.columns[0];
-    const def = cfg.chart || {};
+    const def = current.chart || cfg.chart || {};
     const has = (c) => current.columns.includes(c);
     if (def.type) $("chart-type").value = def.type;
     fill($("x-col"), current.columns, has(def.x) ? def.x : labelCol);
@@ -567,11 +580,12 @@
     });
   }
 
-  // Sources for the selected dataset: entries marked `only` show just for that dataset.
+  // Sources for the selected dataset: entries marked `only` (a name or a list of names)
+  // show just for those datasets. A state's view also shows entries marked with its name.
   function renderSources() {
     const box = $("sources-list");
     box.innerHTML = "";
-    const shown = (x) => !x.only || x.only === (current.sourcesAs || current.name);
+    const shown = (x) => !x.only || [].concat(x.only).some((n) => n === (current.sourcesAs || current.name) || n === current.name);
     (window.SOURCES || []).filter(shown).forEach((g) => {
       const items = g.items.filter(shown);
       if (!items.length) return;

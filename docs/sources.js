@@ -1,7 +1,8 @@
 // Sources shown on the page, grouped. Add `url` to an item to make it a link.
-// `only: "<data set name>"` on a group or item shows it just for that data set.
+// `only: "<data set name>"` (or a list of names) on a group or item shows it just for those data sets.
 window.SOURCES = [
   {
+    only: ["Texas", "United States"],
     group: "Census data (children ages 5–17 and children in poverty)",
     items: [
       { only: "Texas", title: "Census SAIPE 2024 Texas school district file", url: "https://www2.census.gov/programs-surveys/saipe/datasets/2024/2024-school-districts/sd24-tx.txt" },
@@ -16,7 +17,7 @@ window.SOURCES = [
       { only: "Texas", title: "CivicSearch Texas district list", url: "https://schools.civicsearch.org/cities" },
       { only: "Texas", title: "Individual CivicSearch district pages, such as Alamo Heights ISD. All 74 Texas district pages were checked.", url: "https://schools.civicsearch.org/alamo-heights-isd-texas" },
       { only: "United States", title: "CivicSearch school district list", url: "https://schools.civicsearch.org/cities" },
-      { only: "United States", title: "CivicSearch district list data (the meeting counts behind the district list, for every state; downloaded October 29, 2026)", url: "https://schools.civicsearch.org/api/get_place_list" },
+      { only: "United States", title: "CivicSearch district list data (the meeting counts behind the district list, for every state; downloaded daily)", url: "https://schools.civicsearch.org/api/get_place_list" },
       { only: "United States", title: "USLege school board coverage, such as Carrollton-Farmers Branch ISD (checked, not used for counts)", url: "https://www.uslege.ai/tracking/carrollton-farmers-branch-independent-school-district" }
     ],
     note: "USLege covers about 60 school districts nationwide and counts only the last six months of meetings, so its numbers aren't comparable with CivicSearch's and weren't used."
@@ -25,8 +26,34 @@ window.SOURCES = [
     group: "Enrollment and urban/suburban/rural type",
     items: [
       { title: "NCES Common Core of Data 2023 school district directory (enrollment and locale codes), via the Urban Institute Education Data API", url: "https://educationdata.urban.org/documentation/school-districts.html" },
-      { only: "United States", title: "NCES 2023 directory data for all US school districts", url: "https://educationdata.urban.org/api/v1/school-districts/ccd/directory/2023/" }
+      { only: "United States", title: "NCES 2023 directory data for all US school districts", url: "https://educationdata.urban.org/api/v1/school-districts/ccd/directory/2023/" },
+      { only: "U.S. territories", title: "NCES 2023 directory data (schools and enrollment for the territories: Puerto Rico, Guam, Northern Mariana Islands, U.S. Virgin Islands, American Samoa)", url: "https://educationdata.urban.org/api/v1/school-districts/ccd/directory/2023/" }
     ]
+  },
+  {
+    only: "U.S. territories",
+    group: "U.S. territories: school boards, children and poverty",
+    items: [
+      { title: "Guam Department of Education YouTube channel, Live tab (Guam Education Board meeting recordings; 20 meetings counted October 30, 2026)", url: "https://www.youtube.com/@guamdepartmentofeducation5142/streams" },
+      { title: "Guam Education Board meeting notice naming the YouTube channel as its live stream (June 16, 2026 meeting)", url: "https://notices.guam.gov/notice_detail/9093" },
+      { title: "CNMI Public School System YouTube channel, Live tab (CNMI State Board of Education meeting recordings; 6 board meetings counted October 30, 2026, committee meetings left out)", url: "https://www.youtube.com/channel/UCkbpGWkvnelMHKwyFGpwf0w/streams" },
+      { title: "Virgin Islands Board of Education meeting agendas and minutes (no recordings posted)", url: "https://myviboe.com/meeting-agendas-minutes/" },
+      { title: "Virgin Islands Board of Education News Room (meeting notices)", url: "https://myviboe.com/news-room/" },
+      { title: "Government Access Channel – Virgin Islands on YouTube (checked; no board meeting recordings)", url: "https://www.youtube.com/channel/UCUeosYkcAS4HVKSfbLNR0FA" },
+      { title: "American Samoa Department of Education website (could not be reached October 30, 2026; YouTube searches found no board meeting recordings)", url: "https://www.doe.as/" },
+      { title: "Puerto Rico Department of Education: run as a cabinet department, with no school board" },
+      { title: "Google search summary of how each territory's schools are run and which boards post meetings online (searched by the project team, October 30, 2026); used to find the channels above" },
+      { title: "CivicSearch school district list data (checked October 30, 2026; it lists no school boards in the territories, so there are no meeting counts)", url: "https://schools.civicsearch.org/api/get_place_list" },
+      { title: "2020 Census of Guam, Demographic and Housing Characteristics File (poverty status in 2019 by age by sex, table PCT78: children ages 5–17 and children in poverty)", url: "https://www2.census.gov/programs-surveys/decennial/2020/data/island-areas/guam/demographic-and-housing-characteristics-file/" },
+      { title: "2020 Census of the Northern Mariana Islands, Demographic and Housing Characteristics File (table PCT77)", url: "https://www2.census.gov/programs-surveys/decennial/2020/data/island-areas/commonwealth-of-the-northern-mariana-islands/demographic-and-housing-characteristics-file/" },
+      { title: "2020 Census of the U.S. Virgin Islands, Demographic and Housing Characteristics File (table PCT75, by island: St. Croix, and St. Thomas plus St. John)", url: "https://www2.census.gov/programs-surveys/decennial/2020/data/island-areas/us-virgin-islands/demographic-and-housing-characteristics-file/" },
+      { title: "2020 Census of American Samoa, Demographic and Housing Characteristics File (table PCT77)", url: "https://www2.census.gov/programs-surveys/decennial/2020/data/island-areas/american-samoa/demographic-and-housing-characteristics-file/" },
+      { title: "Census press release on Guam's 2020 data (used to check the Guam totals: 145,543 people, 29,408 below poverty)", url: "https://www.census.gov/newsroom/press-releases/2023/2020-dhc-summary-file-guam.html" },
+      { title: "Census press release on American Samoa's 2020 data (used to check its totals: 48,506 people, 26,480 below poverty)", url: "https://www.census.gov/newsroom/press-releases/2023/2020-dhc-summary-file-american-samoa.html" },
+      { title: "Census SAIPE 2024 file for all US school districts (Puerto Rico's children ages 5–17 and children in poverty; no other territory is in the file)", url: "https://www2.census.gov/programs-surveys/saipe/datasets/2024/2024-school-districts/ussd24.csv" },
+      { title: "Census SAIPE estimation details for Puerto Rico (its figures come from the Puerto Rico Community Survey)", url: "https://www.census.gov/programs-surveys/saipe/technical-documentation/methodology/puerto-rico.html" }
+    ],
+    note: "Territory meeting counts come from the boards' YouTube channels, not CivicSearch, so they aren't directly comparable with the states' counts."
   },
   {
     only: "Texas",
@@ -62,6 +89,7 @@ window.SOURCES = [
     note: "Inferred counties (Big Sandy, Chapel Hill, Centerville, Hubbard, Midway McLennan, Valley View Hidalgo, Edgewood Bexar, and Wylie Collin) came from size and ID matches. They are not confirmed by a source."
   },
   {
+    only: ["Texas", "United States"],
     group: "State rules: laws (checked October 29, 2026)",
     items: [
       { title: "Texas Government Code § 551.128 (Internet broadcast of open meeting; 10,000+ student districts)", url: "https://texas.public.law/statutes/tex._gov't_code_section_551.128" },
@@ -83,6 +111,7 @@ window.SOURCES = [
     ]
   },
   {
+    only: ["Texas", "United States"],
     group: "State rules: bills that are not law, and summaries used to find the laws",
     items: [
       { title: "Maryland SB 99 (2026), Local Boards of Education Transparency Act", url: "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/sb0099?ys=2026RS" },

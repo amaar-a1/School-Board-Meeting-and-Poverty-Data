@@ -16,57 +16,36 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
-env:
-  # Project spreadsheet (first tab is exported to docs/data/data.csv)
-  SHEET_ID: 1qphCSWlKrBUIsodbmafpjaW75Jg-h8fgdxqlyJ_jys0
-
 jobs:
   update-data:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Download spreadsheet as CSV
+      - name: Refresh US meeting counts from CivicSearch
+        # Census and NCES inputs are saved in data-prep/inputs/; only CivicSearch changes daily.
+        # If the download fails or looks wrong, the site keeps the last good national.csv.
         run: |
-          mkdir -p docs/data
-          curl -sSfL "https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv" -o /tmp/data.csv
-          if head -c 100 /tmp/data.csv | grep -qi "<html\|<!doctype"; then
-            echo "::error::Got a web page instead of CSV. Share the sheet as 'Anyone with the link can view'."
-            exit 1
+          if ! curl -sSfL -m 120 "https://schools.civicsearch.org/api/get_place_list" -o /tmp/civic.json; then
+            echo "::warning::Couldn't download the CivicSearch list; keeping the current US data."
+            exit 0
           fi
-          mv /tmp/data.csv docs/data/data.csv
-
-      - name: Add NCES enrollment if the sheet has no Enrollment column
-        run: |
-          python3 - <<'PY'
-          import csv
-          path = "docs/data/data.csv"
-          rows = list(csv.reader(open(path, newline="", encoding="utf-8")))
-          header = [h.strip().lower() for h in rows[0]]
-          if "enrollment" in header:
-              print("Sheet already has an Enrollment column")
-          else:
-              nces = {r["District"]: r["NCES enrollment 2023"]
-                      for r in csv.DictReader(open("data-prep/district_locales.csv", newline="", encoding="utf-8"))}
-              rows[0].append("Enrollment")
-              missing = 0
-              for r in rows[1:]:
-                  value = nces.get(r[0].strip(), "")
-                  missing += value == ""
-                  r.append(value)
-              csv.writer(open(path, "w", newline="", encoding="utf-8")).writerows(rows)
-              print(f"Added NCES enrollment; {missing} districts not found")
-          PY
+          if ! python3 -c "import json; d = json.load(open('/tmp/civic.json')); assert isinstance(d, list) and len(d) >= 1000 and all('num_meetings' in p for p in d)"; then
+            echo "::warning::The CivicSearch list didn't look right; keeping the current US data."
+            exit 0
+          fi
+          python3 data-prep/build_national.py data-prep/inputs/ussd24.csv data-prep/inputs/nces_directory_2023.json \
+            /tmp/civic.json docs/data/national.csv data-prep/civicsearch_matches.csv
 
       - name: Commit updated CSV
         run: |
-          git add docs/data/data.csv
+          git add docs/data/national.csv data-prep/civicsearch_matches.csv
           if git diff --cached --quiet; then
             echo "Data unchanged"
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git commit -m "Update data from spreadsheet"
+            git commit -m "Update meeting counts from CivicSearch"
             git push
           fi
 
