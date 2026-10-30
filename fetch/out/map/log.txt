@@ -1,0 +1,120 @@
+unsd: https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_unsd_500k.zip
+elsd: https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_elsd_500k.zip
+scsd: https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_scsd_500k.zip
+state: https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_500k.zip
+county: https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_county_500k.zip
+$ mapshaper -i /tmp/geo/unsd/cb_2024_us_unsd_500k.shp -info
+[info] 
+==============================================
+Layer:    cb_2024_us_unsd_500k
+----------------------------------------------
+Type:     polygon
+Records:  10,891
+Bounds:   -179.146711,-14.548699,179.77847,71.387815
+CRS:      +proj=longlat +datum=NAD83
+Source:   /tmp/geo/unsd/cb_2024_us_unsd_500k.shp
+
+Attribute data
+------------+---------------------------------
+ Field      | First value
+------------+---------------------------------
+ ALAND      | 1211009692
+ AWATER     |   12701674
+ GEOID      | '5101830'
+ GEOIDFQ    | '9700000US5101830'
+ HIGRADE    | '12'
+ LOGRADE    | 'PK'
+ LSAD       | '00'
+ NAME       | 'Hanover County Public Schools'
+ STATE_NAME | 'Virginia'
+ STATEFP    | '51'
+ STUSPS     | 'VA'
+ UNSDLEA    | '01830'
+------------+---------------------------------
+
+
+$ mapshaper -i /tmp/geo/unsd/cb_2024_us_unsd_500k.shp name=unsd -filter-fields GEOID,NAME -simplify 6% keep-shapes -o fetch/out/map/unsd.json format=topojson quantization=100000
+[simplify] Repaired 112 intersections; 3 intersections could not be repaired
+[o] Wrote fetch/out/map/unsd.json
+
+$ mapshaper -i /tmp/geo/elsd/cb_2024_us_elsd_500k.shp -info
+[info] 
+==================================================
+Layer:    cb_2024_us_elsd_500k
+--------------------------------------------------
+Type:     polygon
+Records:  1,952
+Bounds:   -124.312211093525,29.401719,-67.431618,49.00139
+CRS:      +proj=longlat +datum=NAD83
+Source:   /tmp/geo/elsd/cb_2024_us_elsd_500k.shp
+
+Attribute data
+------------+-------------------------------------
+ Field      | First value
+------------+-------------------------------------
+ ALAND      | 619429107
+ AWATER     |   1061023
+ ELSDLEA    | '11610'
+ GEOID      | '3811610'
+ GEOIDFQ    | '9500000US3811610'
+ HIGRADE    | '12'
+ LOGRADE    | 'KG'
+ LSAD       | '00'
+ NAME       | 'Lone Tree Public School District 6'
+ STATE_NAME | 'North Dakota'
+ STATEFP    | '38'
+ STUSPS     | 'ND'
+------------+-------------------------------------
+
+
+$ mapshaper -i /tmp/geo/elsd/cb_2024_us_elsd_500k.shp name=elsd -filter-fields GEOID,NAME -simplify 6% keep-shapes -o fetch/out/map/elsd.json format=topojson quantization=100000
+[simplify] Repaired 8 intersections
+[o] Wrote fetch/out/map/elsd.json
+
+$ mapshaper -i /tmp/geo/scsd/cb_2024_us_scsd_500k.shp -info
+[info] 
+==================================================
+Layer:    cb_2024_us_scsd_500k
+--------------------------------------------------
+Type:     polygon
+Records:  481
+Bounds:   -124.312211093525,29.401719,-67.431618,49.00139
+CRS:      +proj=longlat +datum=NAD83
+Source:   /tmp/geo/scsd/cb_2024_us_scsd_500k.shp
+
+Attribute data
+------------+-------------------------------------
+ Field      | First value
+------------+-------------------------------------
+ ALAND      | 31220556
+ AWATER     |   929530
+ GEOID      | '0606025'
+ GEOIDFQ    | '9600000US0606025'
+ HIGRADE    | '12'
+ LOGRADE    | '09'
+ LSAD       | '00'
+ NAME       | 'Hamilton Unified School District (9-12)'
+ SCSDLEA    | '06025'
+ STATE_NAME | 'California'
+ STATEFP    | '06'
+ STUSPS     | 'CA'
+------------+-------------------------------------
+
+
+$ mapshaper -i /tmp/geo/scsd/cb_2024_us_scsd_500k.shp name=scsd -filter-fields GEOID,NAME -simplify 6% keep-shapes -o fetch/out/map/scsd.json format=topojson quantization=100000
+[simplify] Repaired 4 intersections
+[o] Wrote fetch/out/map/scsd.json
+
+$ mapshaper -i /tmp/geo/state/cb_2024_us_state_500k.shp -filter 'STATEFP=="60"||STATEFP=="66"||STATEFP=="69"||STATEFP=="72"' -each 'GEOID = STATEFP=="66" ? "6600002" : STATEFP=="69" ? "6900002" : STATEFP=="72" ? "7200030" : "6000030"' -filter-fields GEOID,NAME -o /tmp/geo/terr_a.json format=geojson
+[filter] Retained 4 of 56 features
+[o] Wrote /tmp/geo/terr_a.json
+
+$ mapshaper -i /tmp/geo/county/cb_2024_us_county_500k.shp -filter 'STATEFP=="78"' -each 'GEOID = COUNTYFP=="010" ? "7800002" : "7800030"' -dissolve GEOID -o /tmp/geo/terr_b.json format=geojson
+[filter] Retained 3 of 3,235 features
+[dissolve] Dissolved 3 features into 2 features
+[o] Wrote /tmp/geo/terr_b.json
+
+$ mapshaper -i /tmp/geo/terr_a.json /tmp/geo/terr_b.json combine-files -merge-layers force name=territories -filter-fields GEOID,NAME -simplify 15% keep-shapes -o fetch/out/map/territories.json format=topojson quantization=100000
+[merge-layers] Warning: Field [NAME] is missing from one or more layers
+[o] Wrote fetch/out/map/territories.json
+
