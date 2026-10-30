@@ -53,7 +53,7 @@ Fairfield City School District,AL,Jefferson County,0,1703,522,30.65179096%,Subur
 Fayette County School District,AL,Fayette County,0,2310,538,23.29004329%,Rural,2238,0101470,
 Florence City School District,AL,Lauderdale County,0,5351,940,17.56680994%,Urban,4519,0101530,
 Fort Payne City School District,AL,DeKalb County,0,2774,804,28.98341745%,Town,3550,0101560,
-Fort Rucker School District,AL,,0,855,21,2.45614035%,,,0100001,
+Fort Rucker School District,AL,Dale County,0,855,21,2.45614035%,,,0100001,"Defense Department (DoDEA) school system on a military base; NCES doesn't count these schools' students, so enrollment (and, for most, locale) isn't available"
 Franklin County School District,AL,Franklin County,0,3648,771,21.13486842%,Rural,3640,0101590,
 Gadsden City School District,AL,Etowah County,0,5389,1773,32.90035257%,Urban,4872,0101620,
 Geneva City School District,AL,Geneva County,0,930,205,22.04301075%,Rural,1263,0101640,
@@ -88,7 +88,7 @@ Madison County School District,AL,Madison County,12,24892,2119,8.51277519%,Rural
 Marengo County School District,AL,Marengo County,0,1219,347,28.46595570%,Rural,970,0102250,
 Marion County School District,AL,Marion County,0,3674,984,26.78279804%,Rural,3358,0102310,
 Marshall County School District,AL,Marshall County,0,9292,1652,17.77873440%,Rural,6040,0100006,
-Maxwell AFB School District,AL,,0,286,2,0.69930070%,,,0100003,
+Maxwell AFB School District,AL,Montgomery County,0,286,2,0.69930070%,,,0100003,"Defense Department (DoDEA) school system on a military base; NCES doesn't count these schools' students, so enrollment (and, for most, locale) isn't available"
 Midfield City School District,AL,Jefferson County,0,1052,347,32.98479087%,Suburban,1033,0102350,
 Mobile County School District,AL,Mobile County,0,64167,13130,20.46223137%,Urban,50929,0102370,
 Monroe County School District,AL,Monroe County,0,2884,853,29.57697642%,Rural,3031,0102400,
@@ -229,7 +229,7 @@ Catalina Foothills Unified District,AZ,Pima County,0,3966,182,4.58900656%,Suburb
 Cave Creek Unified District,AZ,Maricopa County,0,7067,251,3.55171926%,Urban,4214,0400001,
 Cedar Unified District,AZ,Navajo County,0,1306,539,41.27105666%,Rural,118,0401810,
 Chandler Unified District,AZ,Maricopa County,0,51340,3293,6.41410206%,Urban,42832,0401870,
-Chevelon Butte School District,AZ,Coconino County,0,25,8,32.00000000%,Rural,,0401920,
+Chevelon Butte School District,AZ,Coconino County,0,25,8,32.00000000%,Rural,,0401920,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Chinle Unified District,AZ,Apache County,0,4089,1470,35.95011005%,Rural,3026,0401940,
 Chino Valley Unified District,AZ,Yavapai County,0,3602,264,7.32926152%,Town,2343,0400003,
 Clarkdale-Jerome Elementary District,AZ,Yavapai County,0,344,33,9.59302326%,Rural,473,0400004,
@@ -249,10 +249,10 @@ Double Adobe Elementary District,AZ,Cochise County,0,43,15,34.88372093%,Rural,39
 Douglas Unified District,AZ,Cochise County,0,4070,1172,28.79606880%,Town,3725,0402530,
 Duncan Unified District,AZ,Greenlee County,0,450,72,16.00000000%,Rural,374,0402600,
 Dysart Unified District,AZ,Maricopa County,15,34797,3426,9.84567635%,Suburban,23118,0402690,
-Eagle Elementary District,AZ,,0,7,0,0.00000000%,,,0402710,
+Eagle Elementary District,AZ,Greenlee County,0,7,0,0.00000000%,,,0402710,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Elfrida Elementary District,AZ,Cochise County,0,85,17,20.00000000%,Rural,102,0402760,
 Eloy Elementary District,AZ,Pinal County,0,971,264,27.18846550%,Rural,728,0402790,
-Empire Elementary District,AZ,Pima County,0,65,9,13.84615385%,Rural,,0402820,
+Empire Elementary District,AZ,Pima County,0,65,9,13.84615385%,Rural,,0402820,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Flagstaff Unified District,AZ,Coconino County,0,13271,1482,11.16720669%,Urban,8820,0402860,
 Florence Unified School District,AZ,Pinal County,0,20742,2089,10.07135281%,Suburban,8952,0402920,
 Flowing Wells Unified District,AZ,Pima County,0,4980,1259,25.28112450%,Suburban,5287,0403010,
@@ -284,7 +284,7 @@ Joseph City Unified District,AZ,Navajo County,0,375,112,29.86666667%,Rural,440,0
 Kayenta Unified District,AZ,Navajo County,0,2362,1053,44.58086367%,Rural,1611,0404060,
 Kingman Unified School District,AZ,Mohave County,2,9462,1906,20.14373283%,Town,7263,0400295,
 Kirkland Elementary District,AZ,Yavapai County,0,122,17,13.93442623%,Rural,70,0404170,
-Klondyke Elementary District,AZ,Graham County,0,13,7,53.84615385%,Town,,0404200,
+Klondyke Elementary District,AZ,Graham County,0,13,7,53.84615385%,Town,,0404200,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Kyrene Elementary District,AZ,Maricopa County,0,16978,1112,6.54965249%,Urban,13800,0404230,
 Lake Havasu Unified District,AZ,Mohave County,0,6679,1096,16.40964216%,Urban,5205,0404280,
 Laveen Elementary District,AZ,Maricopa County,0,8711,1312,15.06141660%,Urban,7954,0404290,
@@ -341,7 +341,7 @@ Queen Creek Unified District,AZ,Maricopa County,2,14883,607,4.07847880%,Suburban
 Ray Unified District,AZ,Pinal County,0,580,54,9.31034483%,Rural,349,0406850,
 Red Mesa Unified District,AZ,Apache County,0,1360,500,36.76470588%,Rural,464,0406870,
 Red Rock Elementary District,AZ,Pinal County,0,624,64,10.25641026%,Rural,441,0406900,
-Redington Elementary District,AZ,Pima County,0,18,0,0.00000000%,Urban,,0406930,
+Redington Elementary District,AZ,Pima County,0,18,0,0.00000000%,Urban,,0406930,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Riverside Elementary District,AZ,Maricopa County,0,1338,251,18.75934230%,Urban,813,0407020,
 Roosevelt Elementary District,AZ,Maricopa County,0,17013,3555,20.89578558%,Urban,7274,0407080,
 Round Valley Unified District,AZ,Apache County,11,1368,305,22.29532164%,Rural,1287,0407130,
@@ -390,7 +390,7 @@ Vail Unified District,AZ,Pima County,0,14071,793,5.63570464%,Rural,14831,0408850
 Valentine Elementary District,AZ,Mohave County,0,31,6,19.35483871%,Rural,89,0408880,
 Valley Union High School District,AZ,Cochise County,0,144,21,14.58333333%,Rural,87,0408910,
 Vernon Elementary District,AZ,Apache County,0,196,74,37.75510204%,Rural,127,0400022,
-Walnut Grove Elementary District,AZ,,0,6,0,0.00000000%,Rural,,0409030,
+Walnut Grove Elementary District,AZ,Yavapai County,0,6,0,0.00000000%,Rural,,0409030,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Washington Elementary District,AZ,Maricopa County,23,28942,5441,18.79966830%,Urban,18766,0409060,
 Wellton Elementary District,AZ,Yuma County,0,241,77,31.95020747%,Rural,184,0409090,
 Wenden Elementary District,AZ,La Paz County,0,47,20,42.55319149%,Rural,79,0409120,
@@ -398,7 +398,7 @@ Whiteriver Unified District,AZ,Navajo County,0,3354,1284,38.28264758%,Rural,2322
 Wickenburg Unified District,AZ,Maricopa County,0,1447,157,10.85003455%,Rural,1250,0409190,
 Willcox Unified District,AZ,Cochise County,0,1234,246,19.93517018%,Rural,1086,0409250,
 Williams Unified District,AZ,Coconino County,0,866,189,21.82448037%,Rural,662,0409310,
-Williamson Valley Elementary School District,AZ,Yavapai County,0,60,7,11.66666667%,Rural,,0409360,
+Williamson Valley Elementary School District,AZ,Yavapai County,0,60,7,11.66666667%,Rural,,0409360,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Wilson Elementary District,AZ,Maricopa County,0,566,167,29.50530035%,Urban,975,0409390,
 Window Rock Unified District,AZ,Apache County,0,2075,787,37.92771084%,Rural,1721,0409430,
 Winslow Unified District,AZ,Navajo County,0,2062,468,22.69641125%,Town,1874,0409460,
@@ -2075,8 +2075,8 @@ Fannin County School District,GA,Fannin County,0,2995,605,20.20033389%,Rural,282
 Fayette County School District,GA,Fayette County,0,21931,1450,6.61164562%,Suburban,19869,1302130,
 Floyd County School District,GA,Floyd County,0,10082,1707,16.93116445%,Rural,8847,1302190,
 Forsyth County School District,GA,Forsyth County,0,54892,2105,3.83480289%,Suburban,54984,1302220,
-Fort Benning Schools,GA,,0,2239,123,5.49352389%,,,1300002,
-Fort Stewart School District,GA,,0,1726,204,11.81923523%,,,1300003,
+Fort Benning Schools,GA,Muscogee County,0,2239,123,5.49352389%,,,1300002,"Defense Department (DoDEA) school system on a military base; NCES doesn't count these schools' students, so enrollment (and, for most, locale) isn't available"
+Fort Stewart School District,GA,Liberty County,0,1726,204,11.81923523%,,,1300003,"Defense Department (DoDEA) school system on a military base; NCES doesn't count these schools' students, so enrollment (and, for most, locale) isn't available"
 Franklin County School District,GA,Franklin County,0,4087,790,19.32958160%,Rural,3557,1302250,
 Fulton County School District,GA,Fulton County,0,109049,10864,9.96249392%,Suburban,88043,1302280,
 Gainesville City School District,GA,Hall County,0,7507,1224,16.30478220%,Urban,8144,1302310,
@@ -2437,7 +2437,7 @@ Chaney-Monge School District 88,IL,Will County,0,480,67,13.95833333%,Suburban,45
 Channahon School District 17,IL,Will County,0,1272,55,4.32389937%,Suburban,1163,1709540,
 Charleston Community Unit School District 1,IL,Coles County,0,2833,385,13.58983410%,Town,2652,1709600,
 Chester Community Unit School District 139,IL,Randolph County,0,1074,170,15.82867784%,Town,968,1709810,
-Chester Non-High School District 122,IL,Randolph County,0,41,6,14.63414634%,Rural,0,1700333,
+Chester Non-High School District 122,IL,Randolph County,0,41,6,14.63414634%,Rural,0,1700333,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Chester-East Lincoln Community CSD 61,IL,Logan County,0,283,25,8.83392226%,Town,299,1709850,
 Chicago Heights School District 170,IL,Cook County,0,2859,763,26.68765303%,Suburban,2655,1709960,
 Chicago Public School District 299,IL,Cook County,0,378975,79140,20.88264397%,Urban,322809,1709930,
@@ -4114,8 +4114,8 @@ Fairview Independent School District,KY,Boyd County,0,555,116,20.90090090%,Subur
 Fayette County School District,KY,Fayette County,30,49647,5877,11.83757327%,Urban,41697,2101860,
 Fleming County School District,KY,Fleming County,0,2773,610,21.99783628%,Rural,2209,2101920,
 Floyd County School District,KY,Floyd County,0,5759,1856,32.22781733%,Rural,5449,2101950,
-Fort Campbell Dependent Schools,KY,,0,2395,342,14.27974948%,,,2100078,
-Fort Knox Dependent Schools,KY,,0,1725,70,4.05797101%,,,2100079,
+Fort Campbell Dependent Schools,KY,Christian County,0,2395,342,14.27974948%,,,2100078,"Defense Department (DoDEA) school system on a military base; NCES doesn't count these schools' students, so enrollment (and, for most, locale) isn't available"
+Fort Knox Dependent Schools,KY,Hardin County,0,1725,70,4.05797101%,,,2100079,"Defense Department (DoDEA) school system on a military base; NCES doesn't count these schools' students, so enrollment (and, for most, locale) isn't available"
 Fort Thomas Independent School District,KY,Campbell County,0,3224,128,3.97022333%,Suburban,3167,2102040,
 Frankfort Independent School District,KY,Franklin County,28,687,121,17.61280932%,Town,958,2101980,
 Franklin County School District,KY,Franklin County,12,7546,912,12.08587331%,Town,6188,2102010,
@@ -4302,34 +4302,34 @@ Airline Community School District,ME,Penobscot County,0,54,8,14.81481481%,Rural,
 Alexander,ME,Washington County,0,80,11,13.75000000%,Rural,43,2302280,
 Andover Public Schools,ME,Oxford County,0,71,10,14.08450704%,Rural,27,2314823,
 Appleton,ME,Waldo County,0,158,14,8.86075949%,Rural,135,2302510,
-Aroostook Unorganized Territory,ME,Aroostook County,0,223,41,18.38565022%,,,2382001,
+Aroostook Unorganized Territory,ME,Aroostook County,0,223,41,18.38565022%,Rural,,2382001,"Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's"
 Athens,ME,Somerset County,0,125,30,24.00000000%,Rural,113,2314817,
 Auburn,ME,Androscoggin County,0,3640,477,13.10439560%,Urban,3179,2302610,
 Augusta,ME,Kennebec County,0,2360,389,16.48305085%,Town,2176,2302640,
 Baileyville,ME,Washington County,0,226,32,14.15929204%,Rural,308,2302730,
 Bangor,ME,Penobscot County,0,3654,553,15.13409962%,Urban,3434,2302820,
 Bar Harbor,ME,Hancock County,0,380,31,8.15789474%,Rural,346,2302850,
-Baring Plantation,ME,Washington County,0,25,2,8.00000000%,Rural,0,2302880,
+Baring Plantation,ME,Washington County,0,25,2,8.00000000%,Rural,0,2302880,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Beals,ME,Washington County,0,25,6,24.00000000%,Rural,37,2302950,
-Beaver Cove,ME,Piscataquis County,0,6,0,0.00000000%,Rural,0,2302960,
-Beddington,ME,Washington County,0,5,0,0.00000000%,Rural,0,2302980,
+Beaver Cove,ME,Piscataquis County,0,6,0,0.00000000%,Rural,0,2302960,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
+Beddington,ME,Washington County,0,5,0,0.00000000%,Rural,0,2302980,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Biddeford,ME,York County,0,2533,313,12.35688906%,Suburban,2398,2303150,
 Blue Hill,ME,Hancock County,0,394,50,12.69035533%,Rural,383,2303210,
 Boothbay-Boothbay Harbor Community School District,ME,Lincoln County,0,476,55,11.55462185%,Town,508,2303290,
 Bowerbank,ME,Piscataquis County,0,9,0,0.00000000%,Rural,2,2303390,
 Bremen,ME,Lincoln County,0,40,5,12.50000000%,Rural,26,2303480,
 Brewer,ME,Penobscot County,0,1409,158,11.21362669%,Suburban,1564,2303510,
-Bridgewater,ME,Aroostook County,0,81,11,13.58024691%,Rural,0,2300004,
-Brighton Plantation,ME,Somerset County,0,4,0,0.00000000%,Rural,0,2314811,
+Bridgewater,ME,Aroostook County,0,81,11,13.58024691%,Rural,0,2300004,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
+Brighton Plantation,ME,Somerset County,0,4,0,0.00000000%,Rural,0,2314811,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Bristol,ME,Lincoln County,0,311,31,9.96784566%,Rural,267,2303600,
 Brooklin,ME,Hancock County,0,85,9,10.58823529%,Rural,70,2303610,
 Brooksville,ME,Hancock County,0,100,27,27.00000000%,Rural,70,2303640,
 Brunswick,ME,Cumberland County,0,2618,188,7.18105424%,Town,2406,2303780,
 Burlington Public Schools,ME,Penobscot County,0,58,10,17.24137931%,Rural,1,2314834,
-Byron Public Schools,ME,Oxford County,0,5,0,0.00000000%,Rural,0,2314835,
+Byron Public Schools,ME,Oxford County,0,5,0,0.00000000%,Rural,0,2314835,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Calais,ME,Washington County,0,444,104,23.42342342%,Rural,557,2303870,
 Cape Elizabeth,ME,Cumberland County,0,1699,47,2.76633314%,Suburban,1525,2303930,
-Caratunk,ME,Somerset County,0,9,1,11.11111111%,Rural,0,2300061,
+Caratunk,ME,Somerset County,0,9,1,11.11111111%,Rural,0,2300061,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Carrabassett Valley,ME,Franklin County,0,70,6,8.57142857%,Rural,20,2303980,
 Carroll Plantation,ME,Penobscot County,0,11,3,27.27272727%,Rural,4,2303990,
 Castine,ME,Hancock County,0,66,5,7.57575758%,Rural,77,2304080,
@@ -4340,16 +4340,16 @@ Cherryfield,ME,Washington County,0,142,36,25.35211268%,Rural,97,2314814,
 Cooper,ME,Washington County,0,18,6,33.33333333%,Rural,3,2304440,
 Coplin Plantation,ME,Franklin County,0,19,2,10.52631579%,Rural,2,2304500,
 Cranberry Isles,ME,Hancock County,0,31,2,6.45161290%,Rural,13,2304620,
-Crawford,ME,Washington County,0,4,1,25.00000000%,Rural,0,2304650,
+Crawford,ME,Washington County,0,4,1,25.00000000%,Rural,0,2304650,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Cutler,ME,Washington County,0,90,20,22.22222222%,Rural,73,2300065,
 Damariscotta,ME,Lincoln County,0,108,7,6.48148148%,Rural,86,2304830,
 Dayton Public Schools,ME,York County,0,330,14,4.24242424%,Rural,309,2304860,
-Deblois,ME,Washington County,0,11,1,9.09090909%,Rural,0,2304880,
+Deblois,ME,Washington County,0,11,1,9.09090909%,Rural,0,2304880,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Dedham,ME,Penobscot County,0,210,13,6.19047619%,Rural,200,2304890,
 Deer Isle-Stonington Community School District,ME,Hancock County,0,382,58,15.18324607%,Rural,318,2304895,
-Dennistown Plantation,ME,Waldo County,0,8,4,50.00000000%,Rural,0,2304897,
+Dennistown Plantation,ME,Waldo County,0,8,4,50.00000000%,Rural,0,2304897,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Dennysville,ME,Washington County,0,41,12,29.26829268%,Rural,10,2304900,
-Eagle Lake Public Schools,ME,Aroostook County,0,69,6,8.69565217%,Rural,0,2314839,
+Eagle Lake Public Schools,ME,Aroostook County,0,69,6,8.69565217%,Rural,0,2314839,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 East Machias,ME,Washington County,0,229,36,15.72052402%,Rural,244,2300062,
 East Millinocket,ME,Penobscot County,0,200,55,27.50000000%,Rural,245,2305280,
 East Range Community School District,ME,Washington County,0,18,7,38.88888889%,Rural,19,2305380,
@@ -4361,23 +4361,23 @@ Eustis,ME,Franklin County,0,66,4,6.06060606%,Rural,102,2314818,
 Falmouth,ME,Cumberland County,0,2168,55,2.53690037%,Rural,1987,2305670,
 Fayette,ME,Kennebec County,0,161,12,7.45341615%,Rural,81,2300008,
 Five Town Community School District,ME,Knox County,0,691,41,5.93342981%,Rural,748,2300053,
-Franklin Unorganized Territory,ME,Franklin County,0,111,9,8.10810811%,,,2382003,
+Franklin Unorganized Territory,ME,Franklin County,0,111,9,8.10810811%,Rural,,2382003,"Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's"
 Frenchboro,ME,Hancock County,0,1,0,0.00000000%,Rural,5,2307590,
 Georgetown,ME,Lincoln County,0,102,5,4.90196078%,Rural,56,2305970,
-Gilead,ME,Oxford County,0,17,1,5.88235294%,Rural,0,2305980,
+Gilead,ME,Oxford County,0,17,1,5.88235294%,Rural,0,2305980,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Glenburn,ME,Penobscot County,0,745,55,7.38255034%,Rural,431,2306000,
-Glenwood Plantation,ME,Aroostook County,0,0,0,14.9%,Rural,0,2306030,"No children ages 5-17 live here (Census), so this is the all-ages poverty rate for Aroostook County (Census SAIPE 2024)"
+Glenwood Plantation,ME,Aroostook County,0,0,0,14.9%,Rural,0,2306030,"No children ages 5-17 live here (Census), so this is the all-ages poverty rate for Aroostook County (Census SAIPE 2024). Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Gorham,ME,Cumberland County,0,3058,151,4.93786789%,Suburban,2851,2306060,
-Grand Isle,ME,Aroostook County,0,33,4,12.12121212%,Rural,0,2300005,
-Great Lake Stream Plantation,ME,Washington County,0,11,2,18.18181818%,Rural,0,2306150,
+Grand Isle,ME,Aroostook County,0,33,4,12.12121212%,Rural,0,2300005,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
+Great Lake Stream Plantation,ME,Washington County,0,11,2,18.18181818%,Rural,0,2306150,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Great Salt Bay Community School District,ME,Lincoln County,0,405,34,8.39506173%,Rural,387,2306160,
 Greenbush,ME,Penobscot County,0,223,40,17.93721973%,Rural,147,2306180,
 Greenville,ME,Piscataquis County,0,127,13,10.23622047%,Rural,184,2306250,
 Hancock Public Schools,ME,Hancock County,0,305,36,11.80327869%,Rural,175,2306260,
-Hancock Unorganized Territory,ME,Hancock County,0,17,5,29.41176471%,,,2382011,
+Hancock Unorganized Territory,ME,Hancock County,0,17,5,29.41176471%,Rural,,2382011,"Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's"
 Harmony,ME,Penobscot County,0,84,19,22.61904762%,Rural,69,2306330,
 Hermon,ME,Penobscot County,0,1117,77,6.89346464%,Rural,1359,2306510,
-Highland Plantation,ME,Somerset County,0,1,0,0.00000000%,Rural,0,2306600,
+Highland Plantation,ME,Somerset County,0,1,0,0.00000000%,Rural,0,2306600,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Hope,ME,Waldo County,0,177,16,9.03954802%,Rural,137,2306610,
 Indian Island,ME,Washington County,0,53,15,28.30188679%,Rural,95,2300066,
 Indian Township,ME,Washington County,0,176,29,16.47727273%,Rural,134,2300064,
@@ -4386,54 +4386,54 @@ Islesboro,ME,Waldo County,0,73,4,5.47945205%,Rural,77,2306810,
 Jefferson,ME,Lincoln County,0,366,41,11.20218579%,Rural,335,2306870,
 Jonesboro,ME,Washington County,0,83,21,25.30120482%,Rural,60,2306900,
 Jonesport,ME,Washington County,0,115,28,24.34782609%,Rural,104,2307100,
-Kennebec Unorganized Territory,ME,Kennebec County,0,6,2,33.33333333%,,,2382005,
-Kingsbury Plantation,ME,Piscataquis County,0,1,0,0.00000000%,Rural,0,2307110,
+Kennebec Unorganized Territory,ME,Kennebec County,0,6,2,33.33333333%,Rural,,2382005,"Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's"
+Kingsbury Plantation,ME,Piscataquis County,0,1,0,0.00000000%,Rural,0,2307110,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Kittery,ME,York County,0,996,42,4.21686747%,Suburban,933,2307140,
-Knox Unorganized Territory,ME,Knox County,0,1,0,0.00000000%,,,2382007,
+Knox Unorganized Territory,ME,Knox County,0,1,0,0.00000000%,Rural,,2382007,"Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's"
 Lake View Plantation,ME,Piscataquis County,0,10,4,40.00000000%,Rural,3,2300059,
 Lakeville,ME,Penobscot County,0,7,1,14.28571429%,Rural,1,2307200,
 Lamoine Public Schools,ME,Hancock County,0,204,37,18.13725490%,Rural,133,2307250,
 Lewiston,ME,Androscoggin County,0,5565,1135,20.39532794%,Urban,5147,2307320,
 Limestone Public Schools,ME,Aroostook County,0,245,56,22.85714286%,Rural,144,2314842,
-Lincoln Plantation,ME,Oxford County,0,1,0,0.00000000%,Rural,0,2307440,
-Lincoln Unorganized Territory,ME,Lincoln County,0,1,0,0.00000000%,,,2382006,
+Lincoln Plantation,ME,Oxford County,0,1,0,0.00000000%,Rural,0,2307440,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
+Lincoln Unorganized Territory,ME,Lincoln County,0,1,0,0.00000000%,Rural,,2382006,"Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's"
 Lincolnville,ME,Waldo County,0,213,19,8.92018779%,Rural,215,2307450,
 Lisbon,ME,Androscoggin County,0,1453,146,10.04817619%,Suburban,1313,2307530,
 Long Island,ME,Cumberland County,0,26,2,7.69230769%,Rural,16,2300009,
-Louds Island Unorganized Territory,ME,Lincoln County,0,0,0,9.9%,,,2382013,"No children ages 5-17 live here (Census), so this is the all-ages poverty rate for Lincoln County (Census SAIPE 2024)"
+Louds Island Unorganized Territory,ME,Lincoln County,0,0,0,9.9%,Rural,,2382013,"No children ages 5-17 live here (Census), so this is the all-ages poverty rate for Lincoln County (Census SAIPE 2024). Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's"
 Lowell,ME,Penobscot County,0,43,5,11.62790698%,Rural,3,2300063,
 Machias,ME,Washington County,0,243,71,29.21810700%,Rural,509,2307710,
 Machiasport,ME,Washington County,0,158,42,26.58227848%,Rural,64,2300067,
 Macwahoc Plantation,ME,Penobscot County,0,1,0,0.00000000%,Rural,1,2307770,
 Madawaska,ME,Aroostook County,0,430,70,16.27906977%,Rural,381,2307800,
 Marshfield,ME,Washington County,0,103,17,16.50485437%,Rural,14,2307980,
-Meddybemps,ME,Washington County,0,10,6,60.00000000%,Rural,0,2308135,
+Meddybemps,ME,Washington County,0,10,6,60.00000000%,Rural,0,2308135,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Medford,ME,Piscataquis County,0,19,8,42.10526316%,Rural,1,2308140,
 Medway,ME,Penobscot County,0,158,15,9.49367089%,Rural,119,2308160,
 Milford,ME,Penobscot County,0,429,43,10.02331002%,Suburban,289,2308250,
 Millinocket,ME,Penobscot County,0,457,94,20.56892779%,Rural,449,2308280,
 Monhegan Plantation,ME,Lincoln County,0,3,1,33.33333333%,Rural,4,2308340,
 Moosabec Community School District,ME,Washington County,0,77,15,19.48051948%,Rural,58,2308400,
-Moro Plantation Public Schools,ME,Penobscot County,0,4,0,0.00000000%,Rural,0,2314836,
+Moro Plantation Public Schools,ME,Penobscot County,0,4,0,0.00000000%,Rural,0,2314836,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Mount Desert,ME,Hancock County,0,156,8,5.12820513%,Rural,159,2308490,
 Mount Desert Community School District,ME,Hancock County,0,385,25,6.49350649%,Rural,474,2308500,
-Nashville Plantation,ME,Aroostook County,0,3,0,0.00000000%,Rural,0,2308580,
-New Sweden,ME,Aroostook County,0,78,20,25.64102564%,Rural,0,2308700,
+Nashville Plantation,ME,Aroostook County,0,3,0,0.00000000%,Rural,0,2308580,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
+New Sweden,ME,Aroostook County,0,78,20,25.64102564%,Rural,0,2308700,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Newcastle,ME,Lincoln County,0,85,5,5.88235294%,Rural,99,2308760,
 Nobleboro,ME,Lincoln County,0,235,17,7.23404255%,Rural,217,2308940,
 Northfield,ME,Washington County,0,24,5,20.83333333%,Rural,4,2309090,
 Northport Public Schools,ME,Waldo County,0,193,21,10.88082902%,Town,93,2314824,
-Orient,ME,Washington County,0,26,7,26.92307692%,Rural,0,2309240,
+Orient,ME,Washington County,0,26,7,26.92307692%,Rural,0,2309240,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Orrington,ME,Penobscot County,0,562,36,6.40569395%,Rural,409,2309330,
 Otis,ME,Hancock County,0,68,9,13.23529412%,Rural,80,2309390,
-Oxford Unorganized Territory,ME,Oxford County,0,95,11,11.57894737%,,,2382002,
+Oxford Unorganized Territory,ME,Oxford County,0,95,11,11.57894737%,Rural,,2382002,"Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's"
 Pembroke,ME,Washington County,0,107,29,27.10280374%,Rural,80,2309560,
 Penobscot,ME,Hancock County,0,102,14,13.72549020%,Rural,86,2309630,
-Penobscot Unorganized Territory,ME,Penobscot County,0,130,26,20.00000000%,,,2382010,
+Penobscot Unorganized Territory,ME,Penobscot County,0,130,26,20.00000000%,Rural,,2382010,"Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's"
 Perry,ME,Washington County,0,128,19,14.84375000%,Rural,82,2309650,
-Piscataquis Unorganized Territory,ME,Piscataquis County,0,90,11,12.22222222%,,,2382009,
+Piscataquis Unorganized Territory,ME,Piscataquis County,0,90,11,12.22222222%,Rural,,2382009,"Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's"
 Pleasant Point,ME,Washington County,0,80,13,16.25000000%,Rural,145,2300069,
-Pleasant Ridge Plantation,ME,Somerset County,0,3,1,33.33333333%,Rural,0,2309810,
+Pleasant Ridge Plantation,ME,Somerset County,0,3,1,33.33333333%,Rural,0,2309810,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Portland,ME,Cumberland County,46,7071,1033,14.60896620%,Urban,6649,2309930,
 Princeton,ME,Washington County,0,110,18,16.36363636%,Rural,114,2309990,
 Reed Plantation,ME,Penobscot County,0,8,3,37.50000000%,Rural,3,2310140,
@@ -4470,10 +4470,10 @@ Richmond Public Schools,ME,Sagadahoc County,0,493,36,7.30223124%,Rural,429,23148
 Robbinston,ME,Washington County,0,85,8,9.41176471%,Rural,10,2310190,
 Roque Bluffs,ME,Washington County,0,25,4,16.00000000%,Rural,3,2310320,
 Saco Public Schools,ME,York County,0,2859,189,6.61070304%,Suburban,2806,2310380,
-Sagadahoc Unorganized Territory,ME,Sagadahoc County,0,0,0,7.8%,,,2382004,"No children ages 5-17 live here (Census), so this is the all-ages poverty rate for Sagadahoc County (Census SAIPE 2024)"
+Sagadahoc Unorganized Territory,ME,Sagadahoc County,0,0,0,7.8%,Rural,,2382004,"No children ages 5-17 live here (Census), so this is the all-ages poverty rate for Sagadahoc County (Census SAIPE 2024). Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's"
 Sanford,ME,York County,0,3180,341,10.72327044%,Town,3265,2310500,
 Scarborough,ME,Cumberland County,4,3352,127,3.78878282%,Suburban,2857,2310530,
-School Administration District 10,ME,Aroostook County,0,26,11,42.30769231%,Rural,0,2310560,
+School Administration District 10,ME,Aroostook County,0,26,11,42.30769231%,Rural,0,2310560,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 School Administrative District 01,ME,Aroostook County,0,1719,219,12.73996510%,Rural,1687,2310860,
 School Administrative District 03,ME,Waldo County,0,1432,228,15.92178771%,Rural,1017,2311520,
 School Administrative District 04,ME,Piscataquis County,0,603,97,16.08623549%,Rural,491,2311730,
@@ -4526,10 +4526,10 @@ School Administrative District 74,ME,Somerset County,0,642,104,16.19937695%,Rura
 School Administrative District 75,ME,Sagadahoc County,0,2786,223,8.00430725%,Town,2342,2314768,
 School Administrative District 76,ME,Hancock County,0,49,4,8.16326531%,Rural,23,2311910,
 Sebago Public Schools,ME,Cumberland County,0,235,21,8.93617021%,Rural,116,2314837,
-Seboeis Plantation,ME,Penobscot County,0,1,0,0.00000000%,Rural,0,2300057,
+Seboeis Plantation,ME,Penobscot County,0,1,0,0.00000000%,Rural,0,2300057,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Sedgwick,ME,Hancock County,0,177,33,18.64406780%,Rural,112,2312140,
 Shirley,ME,Piscataquis County,0,33,4,12.12121212%,Rural,1,2312180,
-Somerset Unorganized Territory,ME,Somerset County,0,50,4,8.00000000%,,,2382008,
+Somerset Unorganized Territory,ME,Somerset County,0,50,4,8.00000000%,Rural,,2382008,"Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's"
 South Bristol,ME,Lincoln County,0,99,4,4.04040404%,Rural,87,2312300,
 South Portland,ME,Cumberland County,0,3229,327,10.12697430%,Urban,2942,2312330,
 Southport,ME,Lincoln County,0,50,4,8.00000000%,Town,20,2312360,
@@ -4537,31 +4537,31 @@ Southwest Harbor,ME,Hancock County,0,132,12,9.09090909%,Rural,122,2312390,
 St. George Public Schools,ME,Knox County,0,284,21,7.39436620%,Rural,215,2314820,
 Surry,ME,Hancock County,0,199,34,17.08542714%,Rural,171,2312750,
 Talmadge,ME,Washington County,0,15,5,33.33333333%,Rural,1,2312810,
-The Forks Plantation,ME,Somerset County,0,2,1,50.00000000%,Rural,0,2300052,
+The Forks Plantation,ME,Somerset County,0,2,1,50.00000000%,Rural,0,2300052,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Tremont,ME,Hancock County,0,113,13,11.50442478%,Rural,135,2312960,
 Trenton,ME,Hancock County,0,205,23,11.21951220%,Rural,139,2312980,
-Upton,ME,Oxford County,0,2,1,50.00000000%,Rural,0,2313070,
-Vanceboro,ME,Washington County,0,7,2,28.57142857%,Rural,0,2313080,
+Upton,ME,Oxford County,0,2,1,50.00000000%,Rural,0,2313070,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
+Vanceboro,ME,Washington County,0,7,2,28.57142857%,Rural,0,2313080,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Vassalboro,ME,Kennebec County,0,736,65,8.83152174%,Rural,485,2313110,
 Veazie,ME,Penobscot County,0,238,20,8.40336134%,Suburban,189,2313140,
 Waite,ME,Washington County,0,7,2,28.57142857%,Rural,3,2313200,
-Washington Unorganized Territory,ME,Washington County,0,162,39,24.07407407%,,,2382012,
+Washington Unorganized Territory,ME,Washington County,0,162,39,24.07407407%,Rural,,2382012,"Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's"
 Waterville,ME,Kennebec County,0,1911,360,18.83830455%,Town,1618,2313350,
 Wells-Ogunquit Community School District,ME,York County,0,1508,59,3.91246684%,Suburban,1402,2313490,
 Wesley,ME,Washington County,0,15,3,20.00000000%,Rural,3,2313500,
 West Bath Public Schools,ME,Sagadahoc County,0,228,18,7.89473684%,Town,102,2313530,
-West Forks Plantation,ME,Somerset County,0,5,1,20.00000000%,Rural,0,2300058,
+West Forks Plantation,ME,Somerset County,0,5,1,20.00000000%,Rural,0,2300058,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Westbrook,ME,Cumberland County,0,2623,385,14.67784979%,Suburban,2311,2313560,
-Westmanland,ME,Aroostook County,0,6,0,0.00000000%,Rural,0,2313590,
+Westmanland,ME,Aroostook County,0,6,0,0.00000000%,Rural,0,2313590,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Whiting,ME,Washington County,0,87,16,18.39080460%,Rural,34,2300068,
 Whitneyville,ME,Washington County,0,32,7,21.87500000%,Rural,1,2313710,
 Willimantic,ME,Piscataquis County,0,13,2,15.38461538%,Rural,1,2313740,
 Winslow,ME,Kennebec County,14,1196,122,10.20066890%,Town,1108,2313860,
-Winterville Plantation Public Schools,ME,Aroostook County,0,28,2,7.14285714%,Rural,0,2314825,
+Winterville Plantation Public Schools,ME,Aroostook County,0,28,2,7.14285714%,Rural,0,2314825,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Winthrop,ME,Kennebec County,19,900,81,9.00000000%,Rural,819,2313970,
 Wiscasset Public Schools,ME,Lincoln County,0,514,72,14.00778210%,Rural,428,2313980,
 Woodland,ME,Aroostook County,0,172,22,12.79069767%,Rural,167,2314010,
-Woodville,ME,Penobscot County,0,22,6,27.27272727%,Rural,0,2314040,
+Woodville,ME,Penobscot County,0,22,6,27.27272727%,Rural,0,2314040,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Yarmouth,ME,Cumberland County,0,1720,59,3.43023256%,Suburban,1663,2314100,
 York,ME,York County,0,1805,60,3.32409972%,Suburban,1511,2314130,
 Allegany County Public Schools,MD,Allegany County,0,8915,1796,20.14582165%,Town,8205,2400030,
@@ -4662,7 +4662,7 @@ Edgartown School District,MA,Dukes County,0,469,68,14.49893390%,Town,386,2509090
 Erving School District,MA,Franklin County,0,139,17,12.23021583%,Rural,123,2504710,
 Everett School District,MA,Middlesex County,0,7679,1311,17.07253549%,Suburban,7345,2504770,
 Fairhaven School District,MA,Bristol County,0,2116,162,7.65595463%,Suburban,1759,2504800,
-Fairhaven/New Bedford School Districts in Acushnet (9-12),MA,,0,569,32,5.62390158%,,,2525010,
+Fairhaven/New Bedford School Districts in Acushnet (9-12),MA,Bristol County,0,569,32,5.62390158%,,,2525010,Part of a town whose students attend another district's schools; their enrollment is counted there
 Fall River School District,MA,Bristol County,0,14048,2644,18.82118451%,Suburban,10656,2504830,
 Falmouth School District,MA,Barnstable County,0,3333,330,9.90099010%,Suburban,2892,2504860,
 Farmington River Regional School District,MA,Berkshire County,0,120,9,7.50000000%,Rural,129,2513321,
@@ -4709,7 +4709,7 @@ King Philip School District,MA,Norfolk County,0,2683,94,3.50354081%,Suburban,184
 Kingston School District,MA,Plymouth County,0,1209,65,5.37634409%,Rural,1261,2506540,
 Lawrence School District,MA,Essex County,0,16657,3725,22.36297052%,Suburban,13008,2506660,
 Lee School District,MA,Berkshire County,0,640,63,9.84375000%,Town,646,2506690,
-Lee/Berkshire Hills in Farmington River Regional (7-12),MA,,0,116,9,7.75862069%,,,2525015,
+Lee/Berkshire Hills in Farmington River Regional (7-12),MA,Berkshire County,0,116,9,7.75862069%,,,2525015,Part of a town whose students attend another district's schools; their enrollment is counted there
 Leicester School District,MA,Worcester County,0,1633,127,7.77709737%,Suburban,1322,2506720,
 Lenox School District,MA,Berkshire County,0,538,31,5.76208178%,Town,783,2506750,
 Leominster School District,MA,Worcester County,0,6565,665,10.12947449%,Suburban,6012,2506780,
@@ -4752,14 +4752,14 @@ Mohawk Trail School District,MA,Franklin County,0,1097,108,9.84503191%,Rural,806
 Monomoy Regional School District,MA,Barnstable County,0,1809,135,7.46268657%,Suburban,1746,2500544,
 Monson School District,MA,Hampden County,0,1076,94,8.73605948%,Rural,807,2508040,
 Mount Greylock School District,MA,Berkshire County,0,1108,98,8.84476534%,Rural,1213,2508160,
-Mount Greylock/New Lebanon (NY) School Districts in Hancock (7-12),MA,,0,39,1,2.56410256%,,,2525013,
+Mount Greylock/New Lebanon (NY) School Districts in Hancock (7-12),MA,Berkshire County,0,39,1,2.56410256%,,,2525013,Part of a town whose students attend another district's schools; their enrollment is counted there
 Nahant School District,MA,Essex County,0,176,11,6.25000000%,Suburban,149,2508220,
 Nantucket School District,MA,Nantucket County,0,2137,130,6.08329434%,Town,1683,2508250,
 Narragansett School District,MA,Worcester County,18,1575,123,7.80952381%,Rural,1453,2508280,
 Nashoba School District,MA,Worcester County,0,3732,91,2.43837085%,Suburban,3031,2508310,
 Natick School District,MA,Middlesex County,0,5900,213,3.61016949%,Suburban,5303,2508340,
 Nauset School District,MA,Barnstable County,0,1398,122,8.72675250%,Rural,1236,2504560,
-Nauset/Provincetown School Districts in Turo (7-12),MA,,0,86,5,5.81395349%,,,2525012,
+Nauset/Provincetown School Districts in Turo (7-12),MA,Barnstable County,0,86,5,5.81395349%,,,2525012,Part of a town whose students attend another district's schools; their enrollment is counted there
 Needham School District,MA,Norfolk County,0,6473,124,1.91564962%,Suburban,5541,2508370,
 New Bedford School District,MA,Bristol County,0,16279,2981,18.31193562%,Suburban,12488,2508430,
 New Salem-Wendell School District,MA,Franklin County,0,128,15,11.71875000%,Rural,137,2508530,
@@ -5121,7 +5121,7 @@ Hastings Area School District,MI,Barry County,0,3135,334,10.65390750%,Town,2519,
 Hazel Park City School District,MI,Oakland County,0,2067,392,18.96468312%,Suburban,2910,2618030,
 Hemlock Public School District,MI,Saginaw County,0,1405,122,8.68327402%,Rural,1214,2618180,
 Hesperia Community Schools,MI,Newaygo County,0,881,164,18.61520999%,Rural,803,2618270,
-Highland Park City Schools,MI,Wayne County,0,1388,677,48.77521614%,Suburban,,2618330,
+Highland Park City Schools,MI,Wayne County,0,1388,677,48.77521614%,Suburban,352,2618330,"Its schools are run by the Highland Park Public School Academy System, a charter district NCES counts separately"
 Hillman Community Schools,MI,Montmorency County,0,452,97,21.46017699%,Rural,420,2618360,
 Hillsdale Community Schools,MI,Hillsdale County,0,2267,349,15.39479488%,Town,1262,2618390,
 Holland City School District,MI,Ottawa County,0,5582,752,13.47187388%,Urban,2886,2618420,
@@ -5242,7 +5242,7 @@ Mount Morris Consolidated School District,MI,Genesee County,0,2219,662,29.833258
 Mount Pleasant City School District,MI,Isabella County,21,4537,660,14.54705753%,Town,3397,2624750,
 Munising Public Schools,MI,Alger County,0,531,61,11.48775895%,Rural,572,2624810,
 Muskegon City School District,MI,Muskegon County,0,5980,2168,36.25418060%,Urban,3196,2624840,
-Muskegon Heights School District,MI,Muskegon County,0,1998,1138,56.95695696%,Suburban,,2624870,
+Muskegon Heights School District,MI,Muskegon County,0,1998,1138,56.95695696%,Suburban,500,2624870,"Its schools are run by the Muskegon Heights Public School Academy System, a charter district NCES counts separately"
 N.I.C.E. Community Schools,MI,Marquette County,0,1101,69,6.26702997%,Rural,1157,2625400,
 Napoleon Community Schools,MI,Jackson County,0,1301,114,8.76249039%,Rural,1277,2624960,
 Negaunee Public Schools,MI,Marquette County,0,1423,69,4.84891075%,Town,1530,2625020,
@@ -5338,7 +5338,7 @@ Shelby Public Schools,MI,Oceana County,0,1344,241,17.93154762%,Rural,1070,263132
 Shepherd Public School District,MI,Isabella County,0,1424,182,12.78089888%,Rural,1768,2631380,
 Sigel Township School District 3F,MI,Huron County,0,39,5,12.82051282%,Rural,32,2600010,
 Sigel Township School District 4F,MI,Huron County,0,12,1,8.33333333%,Rural,25,2600011,
-Sigel Township School District 6,MI,,0,18,0,0.00000000%,,,2631830,
+Sigel Township School District 6,MI,Huron County,0,18,0,0.00000000%,,,2631830,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Sodus Township School District 5,MI,Berrien County,0,12,4,33.33333333%,Rural,60,2632070,
 South Haven Public Schools,MI,Van Buren County,0,1785,306,17.14285714%,Town,1779,2632300,
 South Lake Schools,MI,Macomb County,0,2363,293,12.39949217%,Suburban,1426,2632220,
@@ -5519,7 +5519,7 @@ Floodwood Public School District,MN,St. Louis County,0,210,15,7.14285714%,Rural,
 Foley Public School District,MN,Benton County,0,1994,90,4.51354062%,Rural,1925,2712240,
 Forest Lake Public School District,MN,Washington County,0,8691,372,4.28028996%,Town,5763,2712270,
 Fosston Public School District,MN,Polk County,0,685,92,13.43065693%,Rural,618,2712300,
-Franconia Public School District,MN,Washington County,0,42,1,2.38095238%,Rural,,2708880,
+Franconia Public School District,MN,Washington County,0,42,1,2.38095238%,Rural,,2708880,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Frazee-Vergas Public School District,MN,Becker County,0,1252,166,13.25878594%,Rural,802,2712360,
 Fridley Public School District,MN,Anoka County,0,2792,362,12.96561605%,Suburban,2633,2712420,
 Fulda Public School District,MN,Murray County,0,423,38,8.98345154%,Rural,364,2712480,
@@ -5658,7 +5658,7 @@ Pine River-Backus Public School District,MN,Cass County,0,1116,143,12.81362007%,
 Pipestone Area School District,MN,Pipestone County,0,1430,144,10.06993007%,Rural,1087,2700108,
 Plainview-Elgin-Millville,MN,Wabasha County,0,1520,80,5.26315789%,Rural,1466,2700287,
 Princeton Public School District,MN,Mille Lacs County,0,4029,240,5.95681310%,Town,3217,2730030,
-Prinsburg Public School District,MN,Kandiyohi County,0,150,3,2.00000000%,Rural,,2716830,
+Prinsburg Public School District,MN,Kandiyohi County,0,150,3,2.00000000%,Rural,,2716830,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Prior Lake-Savage Area Schools,MN,Scott County,18,9436,327,3.46545146%,Suburban,8777,2730060,
 Proctor Public School District,MN,St. Louis County,0,1915,89,4.64751958%,Suburban,1871,2730090,
 RTR Public Schools,MN,Lincoln County,0,647,54,8.34621329%,Rural,637,2700294,
@@ -7064,7 +7064,7 @@ Pershing County School District,NV,Pershing County,0,826,127,15.37530266%,Rural,
 Storey County School District,NV,Storey County,0,381,26,6.82414698%,Rural,400,3200450,
 Washoe County School District,NV,Washoe County,0,76489,8235,10.76625397%,Urban,63777,3200480,
 White Pine County School District,NV,White Pine County,0,1325,161,12.15094340%,Town,1290,3200510,
-Albany School District,NH,Carroll County,0,94,13,13.82978723%,Town,,3301350,
+Albany School District,NH,Carroll County,0,94,13,13.82978723%,Town,,3301350,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Allenstown School District,NH,Merrimack County,0,636,52,8.17610063%,Suburban,336,3301380,
 Alton School District,NH,Belknap County,0,487,25,5.13347023%,Town,422,3301440,
 Amherst School District,NH,Hillsborough County,0,1319,31,2.35026535%,Rural,1343,3301470,
@@ -7084,18 +7084,18 @@ Brentwood School District,NH,Rockingham County,0,321,5,1.55763240%,Rural,295,330
 Brookline School District,NH,Hillsborough County,0,649,13,2.00308166%,Rural,578,3302070,
 Campton School District,NH,Grafton County,0,316,20,6.32911392%,Rural,282,3302100,
 Candia School District,NH,Merrimack County,0,517,12,2.32108317%,Rural,275,3302130,
-Chatham School District,NH,Carroll County,0,47,3,6.38297872%,Town,,3302200,
+Chatham School District,NH,Carroll County,0,47,3,6.38297872%,Town,,3302200,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Chester School District,NH,Rockingham County,0,878,27,3.07517084%,Rural,518,3302250,
 Chesterfield School District,NH,Cheshire County,0,515,15,2.91262136%,Rural,249,3302280,
 Chichester School District,NH,Merrimack County,0,407,18,4.42260442%,Rural,190,3302310,
 Claremont School District,NH,Sullivan County,0,1842,282,15.30944625%,Town,1621,3302340,
-Clarksville School District,NH,Coos County,0,25,1,4.00000000%,Rural,,3302370,
+Clarksville School District,NH,Coos County,0,25,1,4.00000000%,Rural,,3302370,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Colebrook School District,NH,Coos County,0,248,35,14.11290323%,Rural,304,3302400,
 Columbia School District,NH,Coos County,0,56,8,14.28571429%,Rural,1,3302430,
 Concord School District,NH,Merrimack County,0,4674,380,8.13008130%,Town,3949,3302460,
 Contoocook Valley School District,NH,Hillsborough County,0,2692,140,5.20059435%,Rural,1951,3302480,
 Conway School District,NH,Carroll County,0,1182,124,10.49069374%,Rural,1524,3302490,
-Coos County School District,NH,Coos County,0,4,0,0.00000000%,Rural,,3302510,
+Coos County School District,NH,Coos County,0,4,0,0.00000000%,Rural,,3302510,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Cornish School District,NH,Sullivan County,0,177,1,0.56497175%,Rural,136,3302520,
 Croydon School District,NH,Sullivan County,0,95,6,6.31578947%,Rural,37,3302550,
 Deerfield School District,NH,Merrimack County,0,730,23,3.15068493%,Rural,498,3302580,
@@ -7105,8 +7105,8 @@ Dresden School District,NH,Grafton County,0,787,13,1.65184244%,Town,1050,3302670
 Dummer School District,NH,Coos County,0,34,6,17.64705882%,Town,1,3302730,
 Dunbarton School District,NH,Merrimack County,0,503,6,1.19284294%,Rural,242,3302760,
 East Kingston School District,NH,Rockingham County,0,179,4,2.23463687%,Rural,118,3302790,
-Eaton School District,NH,Carroll County,0,29,4,13.79310345%,Town,,3302850,
-Ellsworth School District,NH,Grafton County,0,12,0,0.00000000%,Town,,3302870,
+Eaton School District,NH,Carroll County,0,29,4,13.79310345%,Town,,3302850,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
+Ellsworth School District,NH,Grafton County,0,12,0,0.00000000%,Town,,3302870,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Epping School District,NH,Rockingham County,0,951,31,3.25972660%,Rural,878,3302880,
 Epsom School District,NH,Merrimack County,0,669,24,3.58744395%,Rural,374,3302910,
 Errol School District,NH,Coos County,0,15,0,0.00000000%,Rural,13,3302940,
@@ -7125,13 +7125,13 @@ Goshen School District,NH,Sullivan County,0,100,8,8.00000000%,Rural,1,3303304,
 Governor Wentworth Regional School District,NH,Carroll County,0,2259,153,6.77290837%,Rural,2121,3303330,
 Grantham School District,NH,Sullivan County,0,451,7,1.55210643%,Rural,271,3303360,
 Greenland School District,NH,Rockingham County,0,589,12,2.03735144%,Suburban,374,3303420,
-Hale's Location School District,NH,Carroll County,0,2,0,0.00000000%,Rural,,3303279,
+Hale's Location School District,NH,Carroll County,0,2,0,0.00000000%,Rural,,3303279,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Hampstead School District,NH,Rockingham County,0,1320,30,2.27272727%,Suburban,817,3303480,
 Hampton Falls School District,NH,Rockingham County,0,233,4,1.71673820%,Suburban,187,3303540,
 Hampton School District,NH,Rockingham County,3,1070,34,3.17757009%,Suburban,905,3303510,
 Hanover School District,NH,Grafton County,0,529,10,1.89035917%,Rural,438,3303600,
 Harrisville School District,NH,Cheshire County,0,118,6,5.08474576%,Rural,47,3303630,
-Hart's Location School District,NH,Carroll County,0,7,0,0.00000000%,Town,,3303640,
+Hart's Location School District,NH,Carroll County,0,7,0,0.00000000%,Town,,3303640,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Haverhill Cooperative School District,NH,Grafton County,0,627,70,11.16427432%,Rural,664,3303660,
 Henniker School District,NH,Merrimack County,0,417,20,4.79616307%,Rural,398,3303690,
 Hill School District,NH,Merrimack County,0,136,13,9.55882353%,Rural,65,3303720,
@@ -7224,7 +7224,7 @@ Stratford School District,NH,Coos County,0,71,19,26.76056338%,Rural,57,3306450,
 Stratham School District,NH,Rockingham County,0,540,8,1.48148148%,Rural,520,3306480,
 Sullivan School District,NH,Cheshire County,0,68,3,4.41176471%,Rural,1,3303293,
 Sunapee School District,NH,Sullivan County,0,428,12,2.80373832%,Rural,397,3306540,
-Surry School District,NH,Cheshire County,0,115,6,5.21739130%,Rural,,3303275,
+Surry School District,NH,Cheshire County,0,115,6,5.21739130%,Rural,,3303275,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Tamworth School District,NH,Carroll County,0,322,42,13.04347826%,Rural,183,3306600,
 Thornton School District,NH,Grafton County,0,234,9,3.84615385%,Rural,173,3306660,
 Timberlane Regional School District,NH,Rockingham County,0,3641,101,2.77396320%,Suburban,3302,3306720,
@@ -7240,14 +7240,14 @@ White Mountain Regional School District,NH,Coos County,0,1095,95,8.67579909%,Rur
 Wilton-Lyndeborough School District,NH,Hillsborough County,0,786,32,4.07124682%,Rural,543,3307115,
 Winchester School District,NH,Cheshire County,0,566,71,12.54416961%,Rural,368,3307140,
 Windham School District,NH,Rockingham County,0,2938,48,1.63376447%,Rural,3002,3307170,
-Windsor School District,NH,Hillsborough County,0,46,0,0.00000000%,Rural,,3307200,
+Windsor School District,NH,Hillsborough County,0,46,0,0.00000000%,Rural,,3307200,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Winnacunnet Cooperative School District,NH,Rockingham County,0,1161,40,3.44530577%,Suburban,1061,3307230,
 Winnisquam Regional School District,NH,Belknap County,0,1690,134,7.92899408%,Rural,1233,3307300,
 Absecon City School District,NJ,Atlantic County,0,1282,125,9.75039002%,Suburban,936,3400660,
 Alexandria Township School District,NJ,Hunterdon County,0,490,9,1.83673469%,Rural,428,3400690,
 Allamuchy Township School District,NJ,Warren County,0,673,30,4.45765230%,Rural,441,3400720,
 Allendale Borough School District,NJ,Bergen County,0,889,19,2.13723285%,Suburban,905,3400750,
-Allenhurst Borough School District,NJ,Monmouth County,0,54,10,18.51851852%,Suburban,,3400780,
+Allenhurst Borough School District,NJ,Monmouth County,0,54,10,18.51851852%,Suburban,,3400780,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Alloway Township School District,NJ,Salem County,0,553,43,7.77576854%,Rural,294,3400810,
 Alpha Borough School District,NJ,Warren County,0,318,33,10.37735849%,Suburban,204,3400840,
 Alpine Borough School District,NJ,Bergen County,0,298,10,3.35570470%,Suburban,169,3400870,
@@ -7303,14 +7303,14 @@ Caldwell-West Caldwell School District,NJ,Essex County,12,3180,111,3.49056604%,S
 Califon Borough School District,NJ,Hunterdon County,0,109,5,4.58715596%,Rural,85,3402610,
 Camden City School District,NJ,Camden County,11,15070,5539,36.75514267%,Urban,7117,3402640,
 Cape May City School District,NJ,Cape May County,0,137,9,6.56934307%,Suburban,160,3402700,
-Cape May Point Borough School District,NJ,Cape May County,0,12,1,8.33333333%,Suburban,,3402760,
+Cape May Point Borough School District,NJ,Cape May County,0,12,1,8.33333333%,Suburban,,3402760,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Carlstadt Borough School District,NJ,Bergen County,0,602,54,8.97009967%,Suburban,523,3402790,
 Carlstadt-East Rutherford School District,NJ,Bergen County,0,663,52,7.84313725%,Suburban,862,3402800,
 Carteret Borough School District,NJ,Middlesex County,0,4479,718,16.03036392%,Suburban,4009,3402820,
 Cedar Grove Township School District,NJ,Essex County,0,1956,55,2.81186094%,Suburban,1564,3402850,
 Central Regional School District,NJ,Ocean County,0,2484,182,7.32689211%,Suburban,2285,3402910,
 Cherry Hill Township School District,NJ,Camden County,29,12712,907,7.13499056%,Suburban,10772,3403000,
-Chesilhurst Borough School District,NJ,Camden County,0,209,48,22.96650718%,Suburban,,3403030,
+Chesilhurst Borough School District,NJ,Camden County,0,209,48,22.96650718%,Suburban,,3403030,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Chester Township School District,NJ,Morris County,0,1227,29,2.36348818%,Rural,1028,3403060,
 Chesterfield Township School District,NJ,Burlington County,0,737,7,0.94979647%,Suburban,695,3403090,
 Cinnaminson Township School District,NJ,Burlington County,11,2961,93,3.14083080%,Suburban,2914,3403120,
@@ -7326,7 +7326,7 @@ Closter Borough School District,NJ,Bergen County,0,1167,46,3.94173093%,Suburban,
 Collingswood Borough School District,NJ,Camden County,0,1896,148,7.80590717%,Suburban,2270,3403420,
 Colts Neck Township School District,NJ,Monmouth County,0,1265,48,3.79446640%,Suburban,984,3403450,
 Commercial Township School District,NJ,Cumberland County,0,872,175,20.06880734%,Rural,488,3403480,
-Corbin City School District,NJ,Cape May County,0,60,4,6.66666667%,Suburban,,3403510,
+Corbin City School District,NJ,Cape May County,0,60,4,6.66666667%,Suburban,,3403510,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Cranbury Township School District,NJ,Middlesex County,0,834,16,1.91846523%,Suburban,442,3403540,
 Cranford Township School District,NJ,Union County,0,4417,91,2.06022187%,Suburban,3768,3403570,
 Cresskill Borough School District,NJ,Bergen County,0,2021,82,4.05739733%,Suburban,1709,3403600,
@@ -7442,7 +7442,7 @@ Haworth Borough School District,NJ,Bergen County,0,446,11,2.46636771%,Suburban,4
 Hawthorne Borough School District,NJ,Passaic County,0,2940,261,8.87755102%,Suburban,2207,3406990,
 Hazlet Township School District,NJ,Monmouth County,0,2994,158,5.27722111%,Suburban,2724,3413680,
 Henry Hudson Regional School District,NJ,Monmouth County,0,902,56,6.20842572%,Suburban,714,3499501,"Became a PreK-12 district in 2024, merging Atlantic Highlands and Highlands; enrollment and locale are the three districts' for 2023"
-Hi-Nella Borough School District,NJ,Camden County,0,138,16,11.59420290%,Suburban,,3407080,
+Hi-Nella Borough School District,NJ,Camden County,0,138,16,11.59420290%,Suburban,,3407080,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 High Bridge Borough School District,NJ,Hunterdon County,0,363,25,6.88705234%,Town,351,3407110,
 High Point Regional School District,NJ,Sussex County,13,1030,64,6.21359223%,Rural,827,3407140,
 Highland Park Borough School District,NJ,Middlesex County,0,2343,202,8.62142552%,Suburban,1635,3407170,
@@ -7459,14 +7459,14 @@ Hopewell Township School District,NJ,Cumberland County,0,484,46,9.50413223%,Rura
 Hopewell Valley Regional School District,NJ,Mercer County,0,4276,88,2.05799813%,Suburban,3432,3407530,
 Howell Township School District,NJ,Monmouth County,0,5934,461,7.76879002%,Suburban,5716,3407560,
 Hunterdon Central Regional School District,NJ,Hunterdon County,0,2710,92,3.39483395%,Town,2428,3407590,
-Interlaken Borough School District,NJ,Monmouth County,0,93,2,2.15053763%,Suburban,,3407650,
+Interlaken Borough School District,NJ,Monmouth County,0,93,2,2.15053763%,Suburban,,3407650,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Irvington Township School District,NJ,Essex County,0,10834,2342,21.61713125%,Suburban,7770,3407680,
 Island Heights Borough School District,NJ,Ocean County,0,129,4,3.10077519%,Suburban,136,3407710,
 Jackson Township School District,NJ,Ocean County,14,11926,1231,10.32198558%,Suburban,7628,3407740,
 Jamesburg Borough School District,NJ,Middlesex County,0,903,91,10.07751938%,Suburban,707,3407770,
 Jefferson Township School District,NJ,Morris County,0,2980,106,3.55704698%,Rural,2672,3407800,
 Jersey City School District,NJ,Hudson County,0,39091,9375,23.98250237%,Urban,26293,3407830,
-Joint Base McGuire-Dix-Lakehurst,NJ,,0,1542,58,3.76134890%,,,3434001,
+Joint Base McGuire-Dix-Lakehurst,NJ,Burlington County,0,1542,58,3.76134890%,,,3434001,"Defense Department (DoDEA) school system on a military base; NCES doesn't count these schools' students, so enrollment (and, for most, locale) isn't available"
 Keansburg Borough School District,NJ,Monmouth County,2,1563,363,23.22456814%,Suburban,1565,3407860,
 Kearny Town School District,NJ,Hudson County,0,6474,1211,18.70559160%,Suburban,5435,3407890,
 Kenilworth Borough School District,NJ,Union County,9,1468,87,5.92643052%,Suburban,1453,3407920,
@@ -7478,7 +7478,7 @@ Kittatinny Regional School District,NJ,Sussex County,0,1018,41,4.02750491%,Rural
 Knowlton Township School District,NJ,Warren County,0,185,17,9.18918919%,Rural,182,3408070,
 Lacey Township School District,NJ,Ocean County,0,4632,262,5.65630397%,Suburban,3786,3408100,
 Lafayette Township School District,NJ,Sussex County,0,222,14,6.30630631%,Rural,217,3408130,
-Lake Como Borough School District,NJ,Monmouth County,0,192,27,14.06250000%,Suburban,,3415150,
+Lake Como Borough School District,NJ,Monmouth County,0,192,27,14.06250000%,Suburban,,3415150,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Lakehurst Borough School District,NJ,Ocean County,0,482,62,12.86307054%,Suburban,406,3408160,
 Lakeland Regional School District,NJ,Passaic County,0,1121,45,4.01427297%,Suburban,864,3408190,
 Lakewood Township School District,NJ,Ocean County,0,41513,8218,19.79620842%,Urban,4694,3408220,
@@ -7501,13 +7501,13 @@ Little Falls Township School District,NJ,Passaic County,0,1038,75,7.22543353%,Su
 Little Ferry Borough School District,NJ,Bergen County,0,1393,171,12.27566403%,Suburban,871,3408760,
 Little Silver Borough School District,NJ,Monmouth County,0,833,10,1.20048019%,Suburban,717,3408790,
 Livingston Township School District,NJ,Essex County,0,6592,133,2.01759709%,Suburban,6489,3408820,
-Loch Arbour School District,NJ,Monmouth County,0,28,2,7.14285714%,Suburban,,3400790,
+Loch Arbour School District,NJ,Monmouth County,0,28,2,7.14285714%,Suburban,,3400790,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Lodi Borough School District,NJ,Bergen County,0,3756,516,13.73801917%,Suburban,3287,3408850,
 Logan Township School District,NJ,Gloucester County,0,1143,47,4.11198600%,Suburban,825,3408880,
 Long Beach Island School District,NJ,Ocean County,0,228,9,3.94736842%,Suburban,191,3408910,
 Long Branch City School District,NJ,Monmouth County,0,4593,1036,22.55606358%,Suburban,5400,3408940,
 Long Hill Township School District,NJ,Morris County,16,983,28,2.84842319%,Suburban,871,3412660,
-Longport Borough School District,NJ,Atlantic County,0,87,6,6.89655172%,Suburban,,3408671,
+Longport Borough School District,NJ,Atlantic County,0,87,6,6.89655172%,Suburban,,3408671,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Lopatcong Township School District,NJ,Warren County,0,1210,72,5.95041322%,Rural,722,3409000,
 Lower Alloways Creek Township School District,NJ,Salem County,0,260,25,9.61538462%,Rural,175,3409030,
 Lower Cape May Regional School District,NJ,Cape May County,0,1508,182,12.06896552%,Rural,1164,3409090,
@@ -7579,7 +7579,7 @@ New Hanover Township School District,NJ,Burlington County,0,260,19,7.30769231%,T
 New Milford Borough School District,NJ,Bergen County,0,2541,123,4.84061393%,Suburban,2037,3411280,
 New Providence Borough School District,NJ,Union County,0,2678,34,1.26960418%,Suburban,2352,3411310,
 Newark City School District,NJ,Essex County,0,56125,14373,25.60890869%,Urban,42791,3411340,
-Newfield Elementary School District,NJ,Camden County,0,313,18,5.75079872%,Urban,,3411370,
+Newfield Elementary School District,NJ,Camden County,0,313,18,5.75079872%,Urban,,3411370,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Newton Town School District,NJ,Sussex County,0,1157,157,13.56957649%,Town,1622,3411400,
 North Arlington Borough School District,NJ,Bergen County,0,2168,171,7.88745387%,Suburban,2134,3411430,
 North Bergen Township School District,NJ,Hudson County,0,8858,2318,26.16843531%,Suburban,7165,3411460,
@@ -7668,7 +7668,7 @@ Robbinsville Township School District,NJ,Mercer County,16,3300,81,2.45454545%,Ru
 Rochelle Park Township School District,NJ,Bergen County,0,725,44,6.06896552%,Suburban,479,3414070,
 Rockaway Borough School District,NJ,Morris County,0,640,34,5.31250000%,Suburban,553,3414100,
 Rockaway Township School District,NJ,Morris County,15,2494,87,3.48837209%,Suburban,2431,3414130,
-Rockleigh Borough School District,NJ,Bergen County,0,51,4,7.84313725%,Suburban,,3414160,
+Rockleigh Borough School District,NJ,Bergen County,0,51,4,7.84313725%,Suburban,,3414160,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Roosevelt Borough School District,NJ,Monmouth County,0,98,7,7.14285714%,Rural,88,3414220,
 Roseland Borough School District,NJ,Essex County,0,521,13,2.49520154%,Suburban,443,3414250,
 Roselle Borough School District,NJ,Union County,0,3605,504,13.98058252%,Suburban,3080,3414280,
@@ -7685,9 +7685,9 @@ Sandyston-Walpack Township School District,NJ,Sussex County,0,128,4,3.12500000%,
 Sayreville Borough School District,NJ,Middlesex County,0,7152,587,8.20749441%,Suburban,6460,3414640,
 Scotch Plains-Fanwood Regional School District,NJ,Union County,10,6417,158,2.46220976%,Suburban,5758,3414670,
 Sea Girt Borough School District,NJ,Monmouth County,0,194,6,3.09278351%,Suburban,138,3414730,
-Sea Isle City School District,NJ,Cape May County,0,118,8,6.77966102%,Suburban,,3414760,
+Sea Isle City School District,NJ,Cape May County,0,118,8,6.77966102%,Suburban,,3414760,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Seaside Heights Borough School District,NJ,Ocean County,0,178,29,16.29213483%,Suburban,174,3414790,
-Seaside Park Borough School District,NJ,Ocean County,0,36,3,8.33333333%,Suburban,,3414820,
+Seaside Park Borough School District,NJ,Ocean County,0,36,3,8.33333333%,Suburban,,3414820,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Secaucus Town School District,NJ,Hudson County,0,3038,298,9.80908492%,Suburban,2196,3414850,
 Shamong Township School District,NJ,Burlington County,0,785,22,2.80254777%,Rural,669,3414880,
 Shore Regional School District,NJ,Monmouth County,0,939,55,5.85729499%,Suburban,574,3414940,
@@ -7755,7 +7755,7 @@ Wanaque Borough School District,NJ,Passaic County,0,1006,55,5.46719682%,Suburban
 Warren Hills Regional School District,NJ,Warren County,0,1675,135,8.05970149%,Town,1573,3416970,
 Warren Township School District,NJ,Somerset County,14,1947,50,2.56805342%,Suburban,1677,3416980,
 Washington Borough School District,NJ,Warren County,0,580,66,11.37931034%,Town,575,3417010,
-Washington Township School District,NJ,Burlington County,0,75,5,6.66666667%,Rural,,3417040,
+Washington Township School District,NJ,Burlington County,0,75,5,6.66666667%,Rural,,3417040,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Washington Township School District,NJ,Gloucester County,0,8348,472,5.65404887%,Suburban,7302,3417070,
 Washington Township School District,NJ,Morris County,0,2172,46,2.11786372%,Rural,2012,3417130,
 Washington Township School District,NJ,Warren County,0,511,31,6.06653620%,Town,407,3417160,
@@ -7773,7 +7773,7 @@ West Milford Township School District,NJ,Passaic County,0,3583,154,4.29807424%,R
 West Morris Regional School District,NJ,Morris County,0,2538,44,1.73364854%,Suburban,2110,3417550,
 West New York Town School District,NJ,Hudson County,0,7281,2068,28.40269194%,Suburban,8059,3417580,
 West Orange Town School District,NJ,Essex County,0,7885,617,7.82498415%,Suburban,7030,3417610,
-West Wildwood Borough School District,NJ,Cape May County,0,42,3,7.14285714%,Suburban,,3417670,
+West Wildwood Borough School District,NJ,Cape May County,0,42,3,7.14285714%,Suburban,,3417670,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 West Windsor-Plainsboro Regional School District,NJ,Mercer County,21,10381,266,2.56237357%,Suburban,9015,3417700,
 Westampton Township School District,NJ,Burlington County,0,1045,49,4.68899522%,Suburban,915,3417730,
 Westfield Town School District,NJ,Union County,0,7152,103,1.44015660%,Suburban,5979,3417760,
@@ -8360,7 +8360,7 @@ Phoenix Central School District,NY,Oswego County,0,1767,311,17.60045274%,Suburba
 Pine Bush Central School District,NY,Orange County,0,5788,881,15.22114720%,Rural,4853,3623010,
 Pine Plains Central School District,NY,Dutchess County,0,960,70,7.29166667%,Rural,825,3623040,
 Pine Valley Central School District (South Dayton),NY,Chautauqua County,0,834,272,32.61390887%,Rural,529,3623070,
-Piseco Common School District,NY,Hamilton County,0,29,2,6.89655172%,Rural,,3623130,
+Piseco Common School District,NY,Hamilton County,0,29,2,6.89655172%,Rural,,3623130,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Pittsford Central School District,NY,Monroe County,14,6263,166,2.65048699%,Suburban,5582,3623160,
 Plainedge Union Free School District,NY,Nassau County,0,3021,72,2.38331678%,Suburban,2948,3623190,
 Plainview-Old Bethpage Central School District,NY,Nassau County,0,5206,147,2.82366500%,Suburban,5359,3623220,
@@ -8383,7 +8383,7 @@ Putnam Valley Central School District,NY,Putnam County,0,1602,94,5.86766542%,Sub
 Queensbury Union Free School District,NY,Warren County,0,3281,317,9.66168851%,Suburban,3083,3624030,
 Quogue Union Free School District,NY,Suffolk County,0,294,2,0.68027211%,Suburban,83,3624060,
 Randolph Central School District,NY,Cattaraugus County,0,1251,272,21.74260592%,Rural,829,3624090,
-Raquette Lake Union Free School District,NY,Hamilton County,0,2,0,0.00000000%,Rural,,3624120,
+Raquette Lake Union Free School District,NY,Hamilton County,0,2,0,0.00000000%,Rural,,3624120,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Ravena-Coeymans-Selkirk Central School District,NY,Albany County,22,1981,159,8.02624937%,Town,1808,3624150,
 Red Creek Central School District,NY,Wayne County,14,843,98,11.62514828%,Rural,808,3624210,
 Red Hook Central School District,NY,Dutchess County,0,1711,92,5.37697253%,Rural,1602,3624240,
@@ -8584,14 +8584,14 @@ Burke County Schools,NC,Burke County,0,11855,2731,23.03669338%,Suburban,11690,37
 Cabarrus County Schools,NC,Cabarrus County,22,41427,3474,8.38583532%,Urban,35021,3700530,
 Caldwell County Schools,NC,Caldwell County,1,11796,1953,16.55645982%,Suburban,10665,3700580,
 Camden County Schools,NC,Camden County,0,1968,132,6.70731707%,Rural,1953,3700600,
-Camp Lejeune Schools,NC,Onslow County,0,2627,150,5.70993529%,Rural,,3700383,
+Camp Lejeune Schools,NC,Onslow County,0,2627,150,5.70993529%,Rural,,3700383,"Defense Department (DoDEA) school system on a military base; NCES doesn't count these schools' students, so enrollment (and, for most, locale) isn't available"
 Carteret County Schools,NC,Carteret County,0,9035,972,10.75816270%,Town,8035,3700630,
 Caswell County Schools,NC,Caswell County,0,3090,729,23.59223301%,Rural,2149,3700660,
 Catawba County Schools,NC,Catawba County,0,18586,2903,15.61928333%,Suburban,15880,3700690,
 Chapel Hill-Carrboro Schools,NC,Orange County,0,12309,854,6.93801284%,Urban,11386,3700720,
 Charlotte-Mecklenburg Schools,NC,Mecklenburg County,0,192923,26828,13.90606615%,Urban,144116,3702970,
 Chatham County Schools,NC,Chatham County,0,11824,1174,9.92895805%,Rural,9023,3700750,
-Cherokee Central Schools,NC,Swain County,0,1764,608,34.46712018%,Rural,,3700153,
+Cherokee Central Schools,NC,Swain County,0,1764,608,34.46712018%,Rural,1296,3700153,Tribal school system of the Eastern Band of Cherokee; NCES lists its elementary and high schools with the Bureau of Indian Education
 Cherokee County Schools,NC,Cherokee County,0,3499,843,24.09259789%,Rural,3108,3700780,
 Clay County Schools,NC,Clay County,10,1317,229,17.38800304%,Rural,1301,3700870,
 Cleveland County Schools,NC,Cleveland County,0,16789,3143,18.72059086%,Rural,14458,3700900,
@@ -8609,7 +8609,7 @@ Edenton-Chowan Schools,NC,Chowan County,0,1999,467,23.36168084%,Rural,1833,37008
 Edgecombe County Schools,NC,Edgecombe County,15,8261,2334,28.25323811%,Rural,5299,3701320,
 Elkin City Schools,NC,Surry County,12,921,198,21.49837134%,Rural,1253,3701380,
 Forsyth County Schools,NC,Forsyth County,22,65686,10147,15.44773620%,Urban,52157,3701500,
-Fort Bragg Schools,NC,Cumberland County,0,2651,269,10.14711430%,Urban,,3700148,
+Fort Bragg Schools,NC,Cumberland County,0,2651,269,10.14711430%,Urban,,3700148,"Defense Department (DoDEA) school system on a military base; NCES doesn't count these schools' students, so enrollment (and, for most, locale) isn't available"
 Franklin County Schools,NC,Franklin County,0,12498,1867,14.93839014%,Rural,7994,3701530,
 Gaston County Schools,NC,Gaston County,8,39412,5539,14.05409520%,Suburban,30253,3701620,
 Gates County Schools,NC,Gates County,0,1465,236,16.10921502%,Rural,1448,3701680,
@@ -9191,7 +9191,7 @@ Mentor Exempted Village School District,OH,Lake County,28,8387,452,5.38929295%,S
 Miami East Local School District,OH,Miami County,0,1498,75,5.00667557%,Rural,1403,3904862,
 Miami Trace Local School District,OH,Fayette County,0,2680,318,11.86567164%,Rural,2487,3910010,
 Miamisburg City School District,OH,Montgomery County,0,6278,806,12.83848359%,Suburban,4925,3904439,
-Middle Bass Local School District,OH,Ottawa County,0,13,1,7.69230769%,Rural,0,3904895,
+Middle Bass Local School District,OH,Ottawa County,0,13,1,7.69230769%,Rural,0,3904895,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Middletown City School District,OH,Butler County,0,8430,2451,29.07473310%,Suburban,5978,3904440,
 Midview Local School District,OH,Lorain County,0,3211,375,11.67860480%,Rural,2558,3904817,
 Milford Exempted Village School District,OH,Clermont County,0,7900,395,5.00000000%,Suburban,6146,3904550,
@@ -9233,7 +9233,7 @@ Niles City School District,OH,Trumbull County,0,2542,553,21.75452400%,Suburban,1
 Noble Local School District,OH,Noble County,0,1163,161,13.84350817%,Rural,1060,3904890,
 Nordonia Hills City School District,OH,Summit County,1,4389,222,5.05809979%,Suburban,3437,3905004,
 North Baltimore Local School District,OH,Wood County,0,729,142,19.47873800%,Rural,609,3905070,
-North Bass Local School District,OH,Ottawa County,0,0,0,9.3%,Rural,0,3904896,"No children ages 5-17 live here (Census), so this is the all-ages poverty rate for Ottawa County (Census SAIPE 2024)"
+North Bass Local School District,OH,Ottawa County,0,0,0,9.3%,Rural,0,3904896,"No children ages 5-17 live here (Census), so this is the all-ages poverty rate for Ottawa County (Census SAIPE 2024). Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 North Canton City School District,OH,Stark County,0,4735,332,7.01161563%,Suburban,4415,3904450,
 North Central Local School District,OH,Williams County,0,671,60,8.94187779%,Rural,564,3905064,
 North College Hill City School District,OH,Hamilton County,0,2059,509,24.72073822%,Suburban,1415,3904451,
@@ -10075,7 +10075,7 @@ Long Creek School District 17,OR,Grant County,0,71,41,57.74647887%,Rural,19,4107
 Lowell School District 71,OR,Lane County,0,477,40,8.38574423%,Rural,1019,4107590,
 Mapleton School District 32,OR,Lane County,0,194,33,17.01030928%,Rural,144,4107710,
 Marcola School District 79J,OR,Lane County,0,267,16,5.99250936%,Suburban,888,4107740,
-McDermitt School District 51,OR,,0,10,1,10.00000000%,,,4107880,
+McDermitt School District 51,OR,Malheur County,0,10,1,10.00000000%,,,4107880,"McDermitt School District 51's students attend McDermitt Combined School in Humboldt County, Nevada"
 McKenzie School District 68,OR,Lane County,0,219,35,15.98173516%,Rural,181,4107980,
 McMinnville School District 40,OR,Yamhill County,0,6569,778,11.84350738%,Town,6429,4108010,
 Medford School District 549,OR,Jackson County,0,15467,1971,12.74325984%,Urban,13763,4108040,
@@ -10220,7 +10220,7 @@ Bristol Township School District,PA,Bucks County,0,7729,939,12.14904904%,Suburba
 Brockway Area School District,PA,Jefferson County,0,1119,159,14.20911528%,Rural,868,4204260,
 Brookville Area School District,PA,Jefferson County,0,1741,219,12.57897760%,Rural,1322,4204320,
 Brownsville Area School District,PA,Fayette County,0,1667,298,17.87642472%,Rural,1423,4204080,
-Bryn Athyn School District,PA,Montgomery County,0,215,10,4.65116279%,Suburban,0,4204090,
+Bryn Athyn School District,PA,Montgomery County,0,215,10,4.65116279%,Suburban,0,4204090,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment"
 Burgettstown Area School District,PA,Washington County,3,1297,143,11.02544333%,Rural,971,4204500,
 Burrell School District,PA,Westmoreland County,0,1833,192,10.47463175%,Suburban,1736,4204530,
 Butler Area School District,PA,Butler County,0,7178,819,11.40986347%,Town,5941,4204590,
@@ -10964,7 +10964,7 @@ Etowah City School District,TN,McMinn County,0,429,91,21.21212121%,Town,351,4701
 Fayette County School District,TN,Fayette County,0,5673,766,13.50255597%,Rural,3195,4701170,
 Fayetteville City School District,TN,Lincoln County,14,1127,280,24.84472050%,Town,1197,4701200,
 Fentress County School District,TN,Fentress County,0,3075,732,23.80487805%,Rural,2280,4701230,
-Fort Campbell Schools,TN,,0,1704,83,4.87089202%,,,4700078,
+Fort Campbell Schools,TN,Montgomery County,0,1704,83,4.87089202%,,,4700078,"Defense Department (DoDEA) school system on a military base; NCES doesn't count these schools' students, so enrollment (and, for most, locale) isn't available"
 Franklin County School District,TN,Franklin County,0,6157,929,15.08851713%,Town,4977,4701290,
 Franklin Special School District,TN,Williamson County,11,4191,294,7.01503221%,Urban,3152,4701260,
 Germantown Municipal School District,TN,Shelby County,0,8221,334,4.06276609%,Suburban,6028,4700151,
@@ -12207,7 +12207,7 @@ Colonial Heights City Public Schools,VA,Colonial Heights city,0,3487,516,14.7978
 Craig County Public Schools,VA,Craig County,11,586,83,14.16382253%,Rural,470,5101020,
 Culpeper County Public Schools,VA,Culpeper County,0,10335,1270,12.28834059%,Town,8368,5101050,
 Cumberland County Public Schools,VA,Cumberland County,0,1505,261,17.34219269%,Rural,1233,5101080,
-Dahlgren Department of Defense School District,VA,,0,131,2,1.52671756%,,,5100022,
+Dahlgren Department of Defense School District,VA,King George County,0,131,2,1.52671756%,,,5100022,"Defense Department (DoDEA) school system on a military base; NCES doesn't count these schools' students, so enrollment (and, for most, locale) isn't available"
 Danville City Public Schools,VA,Danville city,0,7003,2345,33.48564901%,Town,5580,5101110,
 Dickenson County Public Schools,VA,Dickenson County,12,1972,434,22.00811359%,Rural,1883,5101140,
 Dinwiddie County Public Schools,VA,Dinwiddie County,0,4386,542,12.35750114%,Rural,4256,5101170,
@@ -12278,7 +12278,7 @@ Prince Edward County Public Schools,VA,Prince Edward County,0,2506,564,22.505985
 Prince George County Public Schools,VA,Prince George County,0,6475,670,10.34749035%,Rural,6180,5103090,
 Prince William County Public Schools,VA,Prince William County,0,94669,7298,7.70896492%,Suburban,90550,5103130,
 Pulaski County Public Schools,VA,Pulaski County,0,4395,640,14.56200228%,Town,4361,5103150,
-Quantico Marine Corps Center School District,VA,,0,968,18,1.85950413%,,,5100023,
+Quantico Marine Corps Center School District,VA,Prince William County,0,968,18,1.85950413%,,,5100023,"Defense Department (DoDEA) school system on a military base; NCES doesn't count these schools' students, so enrollment (and, for most, locale) isn't available"
 Radford City Public Schools,VA,Radford city,0,1577,244,15.47241598%,Town,3206,5103180,
 Rappahannock County Public Schools,VA,Rappahannock County,0,990,119,12.02020202%,Rural,774,5103210,
 Richmond City Public Schools,VA,Richmond city,27,27209,7869,28.92057775%,Urban,20819,5103240,

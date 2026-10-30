@@ -64,6 +64,28 @@ RELATED = {
     "5101230": (["5101260"], "", "Served by Fairfax County Public Schools, where NCES counts its students"),
     "5101190": (["5101740"], "", "Served by Greensville County Public Schools, where NCES counts its students"),
     "5100036": (["5104020"], "", "Served by Williamsburg-James City County Public Schools; NCES counts its students under Williamsburg City"),
+    "3700153": (["5900066", "5900101"], "sum", "Tribal school system of the Eastern Band of Cherokee; NCES lists its elementary and high schools with the Bureau of Indian Education"),
+    "2618330": (["2601014"], "sum", "Its schools are run by the Highland Park Public School Academy System, a charter district NCES counts separately"),
+    "2624870": (["2601029"], "sum", "Its schools are run by the Muskegon Heights Public School Academy System, a charter district NCES counts separately"),
+}
+# Districts NCES doesn't list, and the notes they get. Counties are where the district or base is.
+NOT_IN_NCES = {
+    "0100001": ("Dale County", "military"), "0100003": ("Montgomery County", "military"),
+    "1300002": ("Muscogee County", "military"), "1300003": ("Liberty County", "military"),
+    "2100078": ("Christian County", "military"), "2100079": ("Hardin County", "military"),
+    "4700078": ("Montgomery County", "military"), "3434001": ("Burlington County", "military"),
+    "5100022": ("King George County", "military"), "5100023": ("Prince William County", "military"),
+    "3700148": ("Cumberland County", "military"), "3700383": ("Onslow County", "military"),
+    "0402710": ("Greenlee County", "no schools"), "0409030": ("Yavapai County", "no schools"),
+    "2631830": ("Huron County", "no schools"),
+    "4107880": ("Malheur County", "McDermitt School District 51's students attend McDermitt Combined School in Humboldt County, Nevada"),
+    "2525010": ("Bristol County", "piece"), "2525015": ("Berkshire County", "piece"),
+    "2525013": ("Berkshire County", "piece"), "2525012": ("Barnstable County", "piece"),
+}
+NOTE_TEXT = {
+    "military": "Defense Department (DoDEA) school system on a military base; NCES doesn't count these schools' students, so enrollment (and, for most, locale) isn't available",
+    "no schools": "Has no schools of its own; its students attend schools in other districts, so it has no enrollment",
+    "piece": "Part of a town whose students attend another district's schools; their enrollment is counted there",
 }
 # County (or independent city) where the related district's would be wrong.
 COUNTY = {"3172700": "Nuckolls County", "5101230": "Fairfax city", "5101190": "Emporia city", "5100036": "James City County"}
@@ -163,6 +185,17 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
                     locale = union.get("urban_centric_locale")
                 notes.append("Enrollment is the total of the union's member districts (NCES 2023)")
         county_name = COUNTY.get(leaid, county_name)
+        if leaid in NOT_IN_NCES:
+            county_name = county_name or NOT_IN_NCES[leaid][0]
+            notes.append(NOTE_TEXT.get(NOT_IN_NCES[leaid][1], NOT_IN_NCES[leaid][1]))
+        elif n.get("number_of_schools") == 0 and not (isinstance(enrollment, int) and enrollment > 0) and leaid not in RELATED:
+            notes.append(NOTE_TEXT["no schools"])
+        if r["name"].endswith("Unorganized Territory"):
+            eut = nces.get("2312100", {})
+            if not (isinstance(locale, int) and locale > 0):
+                locale = eut.get("urban_centric_locale")
+            notes.append("Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide "
+                         f"({eut.get('enrollment', 'n/a')} students in 2023), not by county; locale is the program's")
         if r["name"].endswith("Unorganized Territory") and not county_name:
             county_name = {"Louds Island": "Lincoln County"}.get(r["name"][:-22], r["name"][:-22] + " County")
         if leaid == "3620580":
