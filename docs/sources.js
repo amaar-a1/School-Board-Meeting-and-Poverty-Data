@@ -34,11 +34,15 @@ window.SOURCES = [
     only: "U.S. territories",
     group: "U.S. territories: school boards, children and poverty",
     items: [
-      { title: "Guam Education Board meetings, broadcast live and recorded on the Guam Department of Education YouTube channel and Facebook page" },
-      { title: "CNMI State Board of Education sessions, streamed on the CNMI Public School System's social media and regional news channels" },
-      { title: "Virgin Islands Board of Education meeting notices and agendas, in the board's News Room" },
+      { title: "Guam Department of Education YouTube channel, Live tab (Guam Education Board meeting recordings; 20 meetings counted October 30, 2026)", url: "https://www.youtube.com/@guamdepartmentofeducation5142/streams" },
+      { title: "Guam Education Board meeting notice naming the YouTube channel as its live stream (June 16, 2026 meeting)", url: "https://notices.guam.gov/notice_detail/9093" },
+      { title: "CNMI Public School System YouTube channel, Live tab (CNMI State Board of Education meeting recordings; 6 board meetings counted October 30, 2026, committee meetings left out)", url: "https://www.youtube.com/channel/UCkbpGWkvnelMHKwyFGpwf0w/streams" },
+      { title: "Virgin Islands Board of Education meeting agendas and minutes (no recordings posted)", url: "https://myviboe.com/meeting-agendas-minutes/" },
+      { title: "Virgin Islands Board of Education News Room (meeting notices)", url: "https://myviboe.com/news-room/" },
+      { title: "Government Access Channel – Virgin Islands on YouTube (checked; no board meeting recordings)", url: "https://www.youtube.com/channel/UCUeosYkcAS4HVKSfbLNR0FA" },
+      { title: "American Samoa Department of Education website (could not be reached October 30, 2026; YouTube searches found no board meeting recordings)", url: "https://www.doe.as/" },
       { title: "Puerto Rico Department of Education: run as a cabinet department, with no school board" },
-      { title: "Google search summary of how each territory's schools are run and which boards post meetings online (searched by the project team, October 30, 2026); the four entries above come from it" },
+      { title: "Google search summary of how each territory's schools are run and which boards post meetings online (searched by the project team, October 30, 2026); used to find the channels above" },
       { title: "CivicSearch school district list data (checked October 30, 2026; it lists no school boards in the territories, so there are no meeting counts)", url: "https://schools.civicsearch.org/api/get_place_list" },
       { title: "2020 Census of Guam, Demographic and Housing Characteristics File (poverty status in 2019 by age by sex, table PCT78: children ages 5–17 and children in poverty)", url: "https://www2.census.gov/programs-surveys/decennial/2020/data/island-areas/guam/demographic-and-housing-characteristics-file/" },
       { title: "2020 Census of the Northern Mariana Islands, Demographic and Housing Characteristics File (table PCT77)", url: "https://www2.census.gov/programs-surveys/decennial/2020/data/island-areas/commonwealth-of-the-northern-mariana-islands/demographic-and-housing-characteristics-file/" },
@@ -49,7 +53,7 @@ window.SOURCES = [
       { title: "Census SAIPE 2024 file for all US school districts (Puerto Rico's children ages 5–17 and children in poverty; no other territory is in the file)", url: "https://www2.census.gov/programs-surveys/saipe/datasets/2024/2024-school-districts/ussd24.csv" },
       { title: "Census SAIPE estimation details for Puerto Rico (its figures come from the Puerto Rico Community Survey)", url: "https://www.census.gov/programs-surveys/saipe/technical-documentation/methodology/puerto-rico.html" }
     ],
-    note: "The board entries are not yet checked against the boards' own sites. American Samoa was not checked."
+    note: "Territory meeting counts come from the boards' YouTube channels, not CivicSearch, so they aren't directly comparable with the states' counts."
   },
   {
     only: "Texas",

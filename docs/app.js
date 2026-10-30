@@ -208,7 +208,8 @@
           b.textContent = `${x.covers}: `;
           li.append(b, x.rule);
         } else {
-          li.textContent = `No recording or streaming requirement found (checked ${sr.checked}); usually only written minutes are required.`;
+          li.textContent = current.rulesNote ||
+            `No recording or streaming requirement found (checked ${sr.checked}); usually only written minutes are required.`;
         }
         list.appendChild(li);
       });
@@ -348,7 +349,8 @@
       d.innerHTML = '<div class="label"></div><div class="value"></div><div class="sub"></div>';
       d.querySelector(".label").textContent = g.label;
       d.querySelector(".value").textContent = isNaN(avg) ? "–" : fmtCol(cmp.metric, avg);
-      d.querySelector(".sub").textContent = `average ${cmp.metric.toLowerCase()} · ${g.rows.length.toLocaleString()} ${(cfg.recordLabel || "records").toLowerCase()}`;
+      const label = (cfg.recordLabel || "records").toLowerCase();
+      d.querySelector(".sub").textContent = `average ${cmp.metric.toLowerCase()} · ${g.rows.length.toLocaleString()} ${g.rows.length === 1 ? label.replace(/s$/, "") : label}`;
       body.appendChild(d);
     });
   }
