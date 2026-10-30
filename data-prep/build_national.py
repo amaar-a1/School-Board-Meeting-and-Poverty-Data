@@ -7,6 +7,8 @@ Usage:
 
   SAIPE_CSV  https://www2.census.gov/programs-surveys/saipe/datasets/2024/2024-school-districts/ussd24.csv
   NCES_JSON  all pages of https://educationdata.urban.org/api/v1/school-districts/ccd/directory/2023/
+             (nces_fallback.json next to it, if present, fills enrollment and locale missing in 2023
+             from the latest of the 2018-2022 directories that has them)
   CIVIC_JSON https://schools.civicsearch.org/api/get_place_list
 
 CivicSearch places are matched to districts by federal ID when CivicSearch names a
@@ -17,6 +19,7 @@ REPORT_CSV lists every CivicSearch place and what it was matched to, for checkin
 import csv
 import json
 import math
+import os
 import re
 import sys
 
@@ -59,6 +62,9 @@ def distance_km(a, b):
 
 def main(saipe_path, nces_path, civic_path, out_path, report_path):
     nces = {r["leaid"]: r for r in json.load(open(nces_path))}
+    # Districts with no 2023 enrollment or locale use the latest earlier NCES year that has one.
+    fallback_path = os.path.join(os.path.dirname(nces_path), "nces_fallback.json")
+    fallback = json.load(open(fallback_path)) if os.path.exists(fallback_path) else {}
     saipe = list(csv.DictReader(open(saipe_path, encoding="latin-1")))
     districts = []
     for r in saipe:
@@ -69,6 +75,11 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
         kids, poor = int(r["rpop5_17v_24"]), int(r["saepov5_17rv_24"])
         enrollment = n.get("enrollment")
         locale = n.get("urban_centric_locale")
+        fb = fallback.get(leaid, {})
+        if not (isinstance(enrollment, int) and enrollment >= 0):
+            enrollment = fb.get("enrollment")
+        if not (isinstance(locale, int) and locale > 0):
+            locale = fb.get("urban_centric_locale")
         districts.append({
             "leaid": leaid, "name": r["name"], "state": r["STABREV"],
             "kids": kids, "poor": poor,
