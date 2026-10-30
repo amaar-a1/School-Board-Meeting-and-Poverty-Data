@@ -3,7 +3,7 @@ name: Fetch pages for territory research (temporary)
 on:
   push:
     branches: [claude/territory-fetch]
-    paths: [fetch/urls.txt, fetch/paginate.txt]
+    paths: [fetch/urls.txt, fetch/paginate.txt, fetch/extract.py]
 
 permissions:
   contents: write
@@ -42,6 +42,9 @@ jobs:
               json.dump(rows, open(f"fetch/out/{name}", "w"))
               print(name, len(rows), "rows")
           PY
+      - name: Run extraction script if present
+        run: |
+          [ -f fetch/extract.py ] && python3 fetch/extract.py || true
       - name: Commit results
         run: |
           git config user.name "github-actions[bot]"
