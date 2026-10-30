@@ -1,8 +1,5 @@
-nmc_article.html https://nmc-mic.ca/2025/10/09/civic-searchlight-accountability-tool-launches/
-cno_searchlight.html https://www.nationalobserver.com/civic-searchlight
-schools_place_list.json https://schools.civicsearch.org/api/get_place_list
-cities_place_list.json https://civicsearch.org/api/get_place_list
-cities_page.html https://civicsearch.org/cities
-ddg_searchlight.html https://html.duckduckgo.com/html/?q=%22Civic+Searchlight%22+National+Observer
-ddg_searchlight_school.html https://html.duckduckgo.com/html/?q=%22Civic+Searchlight%22+%22school+board%22
-ddg_civicsearch_canada.html https://html.duckduckgo.com/html/?q=civicsearch+Canada+school+board+trustees+meetings
+sl_root.html https://civicsearchlight.nationalobserver.com/
+sl_robots.txt https://civicsearchlight.nationalobserver.com/robots.txt
+sl_sitemap.xml https://civicsearchlight.nationalobserver.com/sitemap.xml
+sl_about.html https://civicsearchlight.nationalobserver.com/about
+cno_free.html https://www.nationalobserver.com/2026/03/09/news/civic-searchlight-now-free-use
