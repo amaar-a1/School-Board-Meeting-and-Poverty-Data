@@ -60,6 +60,8 @@
       return;
     }
     renderTabs();
+    setupFilters();
+    window.SiteData = { datasets, config: cfg, select: (key) => selectDataset(key ? stateDataset(key) : datasets.find((d) => d.name === cfg.perState.from)) };
     selectDataset(datasets.find((d) => d.name === (cfg.perState && cfg.perState.from)) || datasets[0]);
   }
 
@@ -123,8 +125,9 @@
     $("search").value = "";
     renderStats();
     setupChartControls();
-    renderTable();
+    applyFilters();
     $("table-section").hidden = false;
+    $("filters").hidden = !["overview", "map"].includes(view);
     if (view === "size") renderSize();
     if (view === "map" && window.SiteMap) window.SiteMap.show(current, datasets);
   }
@@ -134,6 +137,7 @@
     view = name;
     document.querySelectorAll("[data-view]").forEach((el) => { el.hidden = el.dataset.view !== name; });
     document.querySelectorAll("[data-view-tab]").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.viewTab === name)));
+    $("filters").hidden = !current || !["overview", "map"].includes(name);
     if (name === "size" && current) renderSize();
     if (name === "map" && current && window.SiteMap) window.SiteMap.show(current, datasets);
   }
@@ -496,9 +500,51 @@
     });
   }
 
+  // Filters bar (Overview and Map): locale, meetings, poverty range and size tier. The data
+  // table, its download and the map follow them; the summary cards and charts don't.
+  const filterInputs = ["f-locale", "f-meetings", "f-pov-min", "f-pov-max", "f-size"];
+  const filterValue = (id) => $(id).value.trim();
+  const filtersActive = () => filterInputs.some((id) => filterValue(id) !== "");
+
+  function passesFilters(r) {
+    const locale = filterValue("f-locale"), meetings = filterValue("f-meetings"), size = filterValue("f-size");
+    const min = filterValue("f-pov-min"), max = filterValue("f-pov-max");
+    if (locale && String(r.Locale || "").trim() !== locale) return false;
+    if (meetings) {
+      const m = toNumber(r[cfg.compare.by]);
+      if (meetings === "with" ? !(m > 0) : m > 0) return false;
+    }
+    if (min !== "" || max !== "") {
+      const p = toNumber(r[cfg.compare.metric]);
+      if (isNaN(p) || (min !== "" && p < Number(min)) || (max !== "" && p > Number(max))) return false;
+    }
+    if (size) {
+      const t = cfg.sizeTiers.tiers.find((x) => x.name === size), e = toNumber(r[cfg.sizeTiers.column]);
+      if (isNaN(e) || e < t.min || (t.max != null && e > t.max)) return false;
+    }
+    return true;
+  }
+
+  function applyFilters() {
+    renderTable();
+    const n = current.rows.filter(passesFilters).length;
+    $("f-status").textContent = filtersActive()
+      ? `${n.toLocaleString()} of ${current.rows.length.toLocaleString()} ${(cfg.recordLabel || "records").toLowerCase()} match. The data table, its download and the map show only these; the summary figures and charts above use all ${(cfg.recordLabel || "records").toLowerCase()}.`
+      : "";
+    if (window.SiteMap) window.SiteMap.restyle();
+  }
+
+  function setupFilters() {
+    cfg.sizeTiers.tiers.forEach((t) => $("f-size").add(new Option(
+      `${t.name} (${t.max == null ? `${t.min.toLocaleString()}+` : `${t.min.toLocaleString()}–${t.max.toLocaleString()}`} students)`, t.name)));
+    filterInputs.forEach((id) => $(id).addEventListener("input", applyFilters));
+    $("f-clear").addEventListener("click", () => { filterInputs.forEach((id) => { $(id).value = ""; }); applyFilters(); });
+    window.SiteFilters = { active: filtersActive, test: passesFilters };
+  }
+
   function visibleRows() {
     const q = $("search").value.trim().toLowerCase();
-    let rows = current.rows;
+    let rows = current.rows.filter(passesFilters);
     if (q) rows = rows.filter((r) => current.columns.some((c) => String(r[c] ?? "").toLowerCase().includes(q)));
     if (sort.col) {
       const c = sort.col, isNum = current.numeric.has(c);
