@@ -58,15 +58,30 @@ jobs:
               print(f"Added NCES enrollment; {missing} districts not found")
           PY
 
+      - name: Refresh US meeting counts from CivicSearch
+        # Census and NCES inputs are saved in data-prep/inputs/; only CivicSearch changes daily.
+        # If the download fails or looks wrong, the site keeps the last good national.csv.
+        run: |
+          if ! curl -sSfL -m 120 "https://schools.civicsearch.org/api/get_place_list" -o /tmp/civic.json; then
+            echo "::warning::Couldn't download the CivicSearch list; keeping the current US data."
+            exit 0
+          fi
+          if ! python3 -c "import json; d = json.load(open('/tmp/civic.json')); assert isinstance(d, list) and len(d) >= 1000 and all('num_meetings' in p for p in d)"; then
+            echo "::warning::The CivicSearch list didn't look right; keeping the current US data."
+            exit 0
+          fi
+          python3 data-prep/build_national.py data-prep/inputs/ussd24.csv data-prep/inputs/nces_directory_2023.json \
+            /tmp/civic.json docs/data/national.csv data-prep/civicsearch_matches.csv
+
       - name: Commit updated CSV
         run: |
-          git add docs/data/data.csv
+          git add docs/data/data.csv docs/data/national.csv data-prep/civicsearch_matches.csv
           if git diff --cached --quiet; then
             echo "Data unchanged"
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git commit -m "Update data from spreadsheet"
+            git commit -m "Update data from spreadsheet and CivicSearch"
             git push
           fi
 

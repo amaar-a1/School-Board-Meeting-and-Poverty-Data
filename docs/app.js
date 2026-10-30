@@ -48,6 +48,11 @@
   async function load() {
     try {
       datasets = await Promise.all(cfg.dataFiles.map(async (d) => parse(d.name, await fetchCsv(d.file), d)));
+      datasets.forEach((d) => {
+        if (!d.note) return;
+        const withMeetings = d.rows.filter((r) => toNumber(r[cfg.compare.by]) > 0).length;
+        d.note = d.note.replace("{rows}", d.rows.length.toLocaleString()).replace("{withMeetings}", withMeetings.toLocaleString());
+      });
       $("status").textContent = "";
     } catch (err) {
       $("status").classList.add("error");

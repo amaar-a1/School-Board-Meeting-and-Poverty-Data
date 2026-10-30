@@ -9,8 +9,9 @@ window.SITE_CONFIG = {
       note: "1,017 Texas school districts.",
       footer: "Poverty figures are for children ages 5–17. Data is refreshed daily. Sources are listed on the Sources tab." },
     { name: "United States", file: "data/national.csv", textColumns: ["District ID"],
-      note: "13,131 school districts in the 50 states and DC. Meeting counts are available for 1,206 of them; the rest show 0.",
-      footer: "Poverty figures are for children ages 5–17. This data is a snapshot from October 29, 2026. Sources are listed on the Sources tab." },
+      // {rows} and {withMeetings} are filled in from the data when the page loads.
+      note: "{rows} school districts in the 50 states and DC. Meeting counts are available for {withMeetings} of them; the rest show 0.",
+      footer: "Poverty figures are for children ages 5–17. Meeting counts are refreshed daily from CivicSearch. Sources are listed on the Sources tab." },
     // The territories share one menu entry (see perState.after). They have no meeting
     // counts or school-district poverty figures, so this view only lists their school systems.
     { name: "U.S. territories", file: "data/territories.csv", state: "territories",
