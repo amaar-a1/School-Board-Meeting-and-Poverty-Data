@@ -10,7 +10,12 @@ window.SITE_CONFIG = {
       footer: "Poverty figures are for children ages 5–17. Data is refreshed daily. Sources are listed on the Sources tab." },
     { name: "United States", file: "data/national.csv", textColumns: ["District ID"],
       note: "13,132 US school districts. Meeting counts are available for 1,206 of them; the rest show 0.",
-      footer: "Poverty figures are for children ages 5–17. This data is a snapshot from October 29, 2026. Sources are listed on the Sources tab." }
+      footer: "Poverty figures are for children ages 5–17. This data is a snapshot from October 29, 2026. Sources are listed on the Sources tab." },
+    // The territories share one menu entry (see perState.after). They have no meeting
+    // counts or school-district poverty figures, so this view only lists their school systems.
+    { name: "U.S. territories", file: "data/territories.csv", state: "territories",
+      note: "Puerto Rico, Guam, the Northern Mariana Islands, the U.S. Virgin Islands and American Samoa, shown together. Each runs one territory-wide school system (the Virgin Islands has two districts under one board). Meeting counts and child poverty figures by school district aren't available for the territories, so this view lists each school system and whether its board posts meetings online. The online-meetings column is reported, not yet checked against official sites. Enrollment is from the NCES 2023 directory, which has no figure for Guam or American Samoa; Guam's four charter schools, listed separately by NCES, are left out.",
+      footer: "Territory school systems as of October 30, 2026. Sources are listed on the Sources tab." }
   ],
   // State menu: every state and DC. Each state's view is the national rows with this
   // State value (Texas uses its own data set above).
@@ -26,7 +31,9 @@ window.SITE_CONFIG = {
       NC: "North Carolina", ND: "North Dakota", OH: "Ohio", OK: "Oklahoma", OR: "Oregon", PA: "Pennsylvania",
       RI: "Rhode Island", SC: "South Carolina", SD: "South Dakota", TN: "Tennessee", TX: "Texas", UT: "Utah",
       VT: "Vermont", VA: "Virginia", WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming"
-    }
+    },
+    // Listed after the states, in this order.
+    after: { territories: "U.S. territories" }
   },
   recordLabel: "Districts",
   // Chart shown when the page opens (the viewer can change it).

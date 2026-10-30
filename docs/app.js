@@ -101,6 +101,7 @@
     sel.add(new Option("Choose a state…", ""));
     Object.entries(ps ? ps.names : {}).sort((a, b) => a[1].localeCompare(b[1]))
       .forEach(([abbr, name]) => sel.add(new Option(name, abbr)));
+    Object.entries((ps && ps.after) || {}).forEach(([key, name]) => sel.add(new Option(name, key)));
     sel.addEventListener("change", () => { if (sel.value) selectDataset(stateDataset(sel.value)); });
     tabs.appendChild(sel);
   }
@@ -168,6 +169,9 @@
     const st = cfg.sizeTiers;
     const enrollCol = st && current.columns.find((c) => c.trim().toLowerCase() === st.column.toLowerCase());
     const ok = enrollCol && canCompare();
+    $("size-missing").textContent = enrollCol
+      ? `This tab needs meeting counts and child poverty figures, which aren't available for ${current.name}.`
+      : "This tab needs an “Enrollment” column in the data.";
     $("size-missing").hidden = ok;
     $("size-content").hidden = !ok;
     if (!ok) return;
@@ -314,10 +318,10 @@
   function renderCompare() {
     const el = $("compare");
     el.hidden = !canCompare();
+    renderUrban();
     if (el.hidden) return;
     fillCompare($("compare-body"), current.rows);
     $("compare-title").textContent = cfg.compare.title;
-    renderUrban();
   }
 
   // Splits rows into "value > 0" vs "value = 0" on cfg.compare.by and compares cfg.compare.metric.
@@ -567,11 +571,12 @@
     });
   }
 
-  // Sources for the selected dataset: entries marked `only` show just for that dataset.
+  // Sources for the selected dataset: entries marked `only` (a name or a list of names)
+  // show just for those datasets.
   function renderSources() {
     const box = $("sources-list");
     box.innerHTML = "";
-    const shown = (x) => !x.only || x.only === (current.sourcesAs || current.name);
+    const shown = (x) => !x.only || [].concat(x.only).includes(current.sourcesAs || current.name);
     (window.SOURCES || []).filter(shown).forEach((g) => {
       const items = g.items.filter(shown);
       if (!items.length) return;

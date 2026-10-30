@@ -1,7 +1,8 @@
 // Sources shown on the page, grouped. Add `url` to an item to make it a link.
-// `only: "<data set name>"` on a group or item shows it just for that data set.
+// `only: "<data set name>"` (or a list of names) on a group or item shows it just for those data sets.
 window.SOURCES = [
   {
+    only: ["Texas", "United States"],
     group: "Census data (children ages 5–17 and children in poverty)",
     items: [
       { only: "Texas", title: "Census SAIPE 2024 Texas school district file", url: "https://www2.census.gov/programs-surveys/saipe/datasets/2024/2024-school-districts/sd24-tx.txt" },
@@ -27,6 +28,17 @@ window.SOURCES = [
       { title: "NCES Common Core of Data 2023 school district directory (enrollment and locale codes), via the Urban Institute Education Data API", url: "https://educationdata.urban.org/documentation/school-districts.html" },
       { only: "United States", title: "NCES 2023 directory data for all US school districts", url: "https://educationdata.urban.org/api/v1/school-districts/ccd/directory/2023/" }
     ]
+  },
+  {
+    only: "U.S. territories",
+    group: "U.S. territory school boards",
+    items: [
+      { title: "Guam Education Board meetings, broadcast live and recorded on the Guam Department of Education YouTube channel and Facebook page" },
+      { title: "CNMI State Board of Education sessions, streamed on the CNMI Public School System's social media and regional news channels" },
+      { title: "Virgin Islands Board of Education meeting notices and agendas, in the board's News Room" },
+      { title: "Puerto Rico Department of Education: run as a cabinet department, with no school board" }
+    ],
+    note: "Gathered by the project team from an online search summary on October 30, 2026; not yet checked against the boards' own sites. American Samoa was not checked."
   },
   {
     only: "Texas",
