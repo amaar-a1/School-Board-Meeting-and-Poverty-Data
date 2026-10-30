@@ -1,26 +1,15 @@
-# Temporary: details for untitled Guam streams, channel playlists, and NCES enrollment for Guam/American Samoa.
-import json, subprocess, sys, urllib.request
-subprocess.run([sys.executable, "-m", "pip", "install", "-q", "yt-dlp"], check=True)
-out = {"guam_details": [], "nces": {}}
-for vid in "AVE9W908OhQ ZSwsLU1NgK8 p3TgbwvovEY 4Bj6-_C4z00 WMHDxY9LmjQ aqml99ajztE FF_2Nb9s1E8 9mEQ-8nVsKo uDBNErn7YpQ AJvAncTsldc Kr1dnIF2054 bucj3kX82kQ br3JAL6f_mA qctPmnzy0wI bYDmYlM4u1E QXP-vlUYl-w kw5aEcChwfE T2spj89YR3s xks_Nh1hJJ0 y5EO1_MLqWU PPWiS4SX8MA U0QoHiql6Pc OeBlZUpJ-GQ wvwFt_51kMU 2q34-iCqw2E 7PTC6gGg5ic 22v6FPwwD7E h9GulRC6SWU".split():
-    r = subprocess.run(["yt-dlp", "--skip-download", "--dump-json", "--no-warnings", f"https://www.youtube.com/watch?v={vid}"],
-                       capture_output=True, text=True, timeout=300)
-    try:
-        d = json.loads(r.stdout)
-        out["guam_details"].append({k: d.get(k) for k in ("id", "title", "upload_date", "release_timestamp", "duration", "description")})
-    except ValueError:
-        out["guam_details"].append({"id": vid, "error": r.stderr[-300:]})
-def flat(target):
-    r = subprocess.run(["yt-dlp", "--flat-playlist", "--dump-json", "--ignore-errors", target], capture_output=True, text=True, timeout=600)
-    return [{k: json.loads(l).get(k) for k in ("title", "id", "url")} for l in r.stdout.splitlines() if l.startswith("{")]
-out["cnmi_playlists"] = flat("https://www.youtube.com/channel/UCkbpGWkvnelMHKwyFGpwf0w/playlists")
-out["guam_playlists"] = flat("https://www.youtube.com/@guamdepartmentofeducation5142/playlists")
-for year in (2019, 2020, 2021, 2022):
-    for fips in (66, 60):
-        try:
-            with urllib.request.urlopen(f"https://educationdata.urban.org/api/v1/school-districts/ccd/directory/{year}/?fips={fips}", timeout=120) as r:
-                res = json.load(r)["results"]
-            out["nces"][f"{year}_{fips}"] = [{k: x.get(k) for k in ("leaid", "lea_name", "enrollment", "number_of_schools")} for x in res]
-        except Exception as e:
-            out["nces"][f"{year}_{fips}"] = str(e)
-json.dump(out, open("fetch/out/territory_check.json", "w"), indent=1)
+# Temporary: NCES enrollment and locale from earlier years for districts missing them in 2023.
+import json, urllib.request
+want = set("0100001 0100003 0401920 0402710 0402820 0404200 0406930 0409030 0409360 0999501 1300002 1300003 1700333 1799501 2100078 2100079 2382001 2382002 2382003 2382004 2382005 2382006 2382007 2382008 2382009 2382010 2382011 2382012 2382013 2525010 2525012 2525013 2525015 2618330 2624870 2631830 2708880 2716830 3012060 3012570 3172700 3176390 3301350 3301830 3302200 3302370 3302430 3302510 3302730 3302850 3302870 3303275 3303279 3303293 3303304 3303640 3307200 3333009 3400780 3400790 3401200 3402760 3403030 3403510 3407080 3407650 3408671 3411370 3414160 3414760 3414820 3415150 3417040 3417670 3434001 3499501 3615330 3620580 3623130 3624120 3700148 3700153 3700383 3904895 3904896 4107880 4204090 4599501 4700078 5000007 5000384 5000385 5000394 5000404 5000405 5000406 5000407 5099901 5099902 5099903 5099904 5099905 5099906 5099907 5099909 5099910 5099911 5099912 5099914 5099915 5099916 5099917 5099919 5099920 5099921 5099922 5099923 5099924 5099925 5099926 5099927 5099928 5099930 5099931 5099932 5099933 5099934 5099935 5099936 5099940 5099942 5099946 5099947 5099948 5099949 5099951 5099952 5099954 5099955 5099956 5099963 5100022 5100023 5100036 5101190 5101230 5309390".split())
+out = {}
+for year in (2022, 2021, 2020, 2019, 2018):
+    url = f"https://educationdata.urban.org/api/v1/school-districts/ccd/directory/{year}/"
+    while url:
+        with urllib.request.urlopen(url, timeout=300) as r:
+            d = json.load(r)
+        for x in d["results"]:
+            if x.get("leaid") in want:
+                out.setdefault(x["leaid"], {})[year] = {k: x.get(k) for k in ("lea_name", "enrollment", "urban_centric_locale")}
+        url = d.get("next")
+json.dump(out, open("fetch/out/nces_fallback_raw.json", "w"), indent=0)
+print(len(out), "of", len(want))
