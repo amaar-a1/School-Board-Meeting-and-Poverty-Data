@@ -24,7 +24,7 @@
       column: "Available Board Meetings",
       breaks: [1, 5, 15, 30],
       colors: ["#e7ecef", "#c6dbef", "#6baed6", "#2171b5", "#08306b"],
-      labels: ["None", "1–4", "5–14", "15–29", "30 or more"]
+      labels: ["0", "1–4", "5–14", "15–29", "30 or more"]
     }
   };
   const NO_DATA = "#9e9e9e";
@@ -37,6 +37,10 @@
     if (lookup[geoid]) return lookup[geoid];
     const a = aliases[geoid];
     if (!a) return null;
+    if (a.rate) {   // left out of the Census poverty file: county all-ages rate
+      return { District: a.district, "Percentage of Children Ages 5-17 in Poverty": a.rate,
+        "Available Board Meetings": 0, Enrollment: a.enrollment ?? "", "Map note": a.note };
+    }
     const rows = a.ids.map((id) => lookup[id]).filter(Boolean);
     if (!rows.length) return null;
     const row = rows.length === 1 ? { ...rows[0] } : combine(rows);
@@ -63,8 +67,9 @@
   };
 
   function color(row) {
-    const sc = SCALES[$("map-metric").value];
-    const v = row ? toNumber(row[sc.column]) : NaN;
+    const metric = $("map-metric").value, sc = SCALES[metric];
+    let v = row ? toNumber(row[sc.column]) : NaN;
+    if (metric === "meetings" && isNaN(v)) v = 0;   // no meetings found counts as 0
     if (isNaN(v)) return NO_DATA;
     const i = sc.breaks.findIndex((b) => v < b);
     return sc.colors[i === -1 ? sc.colors.length - 1 : i];
@@ -90,7 +95,7 @@
   function tip(feature) {
     const r = rowFor(feature.properties.GEOID);
     if (undefinedArea(feature)) return `<div class="map-tip"><strong>No school district</strong>Area the Census leaves outside any district (mostly water or federal land)</div>`;
-    if (!r) return `<div class="map-tip"><strong>${esc(feature.properties.NAME)}</strong>No data for this district</div>`;
+    if (!r) return `<div class="map-tip"><strong>${esc(feature.properties.NAME)}</strong>Available board meetings: 0<br>No poverty data for this district</div>`;
     const place = r.State || r.Territory || "";
     const pov = toNumber(r["Percentage of Children Ages 5-17 in Poverty"]);
     const meet = toNumber(r["Available Board Meetings"]);
@@ -98,7 +103,7 @@
     const note = [r["Map note"], r["Poverty note"] || r["Poverty figures"]].filter(Boolean).join(". ");
     return `<div class="map-tip"><strong>${esc(r.District)}${place ? `, ${esc(place)}` : ""}</strong>` +
       `Child poverty: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>` +
-      `Available board meetings: ${isNaN(meet) ? "none (no school board)" : meet.toLocaleString()}<br>` +
+      `Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}<br>` +
       `Enrollment: ${isNaN(enr) ? "not reported" : enr.toLocaleString()}` +
       (r.Locale ? `<br>Locale: ${esc(r.Locale)}` : "") +
       (note ? `<div class="tip-note">${esc(note)}</div>` : "") + "</div>";
@@ -107,7 +112,7 @@
   function legend() {
     const sc = SCALES[$("map-metric").value];
     const items = sc.labels.map((l, i) => `<span><i style="background:${sc.colors[i]}"></i>${l}</span>`);
-    items.push(`<span><i style="background:${NO_DATA}"></i>No data</span>`);
+    if ($("map-metric").value !== "meetings") items.push(`<span><i style="background:${NO_DATA}"></i>No data</span>`);
     $("map-legend").innerHTML = items.join("");
   }
 

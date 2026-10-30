@@ -1,4 +1,228 @@
 {
+"0200715": {
+"county": "Yukon-Koyukuk Census Area",
+"district": "Tanana City School District",
+"enrollment": 32,
+"ids": [],
+"note": "Small district the Census poverty file leaves out, so this is the all-ages poverty rate for Yukon-Koyukuk Census Area (Census SAIPE 2024)",
+"rate": "19.9"
+},
+"0606001": {
+"ids": [
+"0600160"
+],
+"note": "Part of Yosemite Unified School District"
+},
+"0606003": {
+"ids": [
+"0601332"
+],
+"note": "Part of Twin Rivers Unified School District"
+},
+"0606004": {
+"ids": [
+"0601332"
+],
+"note": "Part of Twin Rivers Unified School District"
+},
+"0606005": {
+"ids": [
+"0600159"
+],
+"note": "Part of Scott Valley Unified School District"
+},
+"0606006": {
+"ids": [
+"0601331"
+],
+"note": "Part of Trinity Alps Unified School District"
+},
+"0606013": {
+"ids": [
+"0600158"
+],
+"note": "Part of Turlock Unified School District"
+},
+"0606015": {
+"ids": [
+"0635600"
+],
+"note": "Part of Santa Cruz City High School District"
+},
+"0606016": {
+"ids": [
+"0600065"
+],
+"note": "Part of Dinuba Unified School District"
+},
+"0606018": {
+"ids": [
+"0601415"
+],
+"note": "High school (9-12) part of Washington Unified School District, Fresno County"
+},
+"0606019": {
+"ids": [
+"0601414"
+],
+"note": "Part of Santa Barbara Unified School District"
+},
+"0606020": {
+"ids": [
+"0601410"
+],
+"note": "Part of Lammersville Joint Unified School District"
+},
+"0606021": {
+"ids": [
+"0601409"
+],
+"note": "Part of Bishop Unified School District"
+},
+"0606022": {
+"ids": [
+"0601421"
+],
+"note": "Part of Santa Paula Unified School District"
+},
+"0606025": {
+"ids": [
+"0601339"
+],
+"note": "Part of Hamilton Unified School District"
+},
+"0606026": {
+"ids": [
+"0601418"
+],
+"note": "Part of Woodlake Unified School District"
+},
+"0606028": {
+"ids": [
+"0601423"
+],
+"note": "Part of Exeter Unified School District"
+},
+"0606031": {
+"ids": [
+"0600047"
+],
+"note": "Part of Tracy Unified School District"
+},
+"0606034": {
+"ids": [
+"0630210"
+],
+"note": "Part of Perris Union High School District"
+},
+"0606037": {
+"ids": [
+"0600153"
+],
+"note": "Part of Alhambra Unified School District"
+},
+"0606038": {
+"ids": [
+"0600044"
+],
+"note": "Part of Healdsburg Unified School District"
+},
+"0606053": {
+"ids": [
+"0600046"
+],
+"note": "Part of Gonzales Unified School District"
+},
+"0606107": {
+"ids": [
+"0600064"
+],
+"note": "Part of Porterville Unified School District"
+},
+"0699001": {
+"ids": [
+"0600051"
+],
+"note": "Part of Gridley Unified School District"
+},
+"0699002": {
+"ids": [
+"0600067"
+],
+"note": "Part of Caruthers Unified School District"
+},
+"0699003": {
+"ids": [
+"0600040"
+],
+"note": "Part of Riverdale Joint Unified School District"
+},
+"0699004": {
+"ids": [
+"0636805"
+],
+"note": "Part of Sierra Unified School District"
+},
+"0699005": {
+"ids": [
+"0600045"
+],
+"note": "Part of Orland Joint Unified School District"
+},
+"0699006": {
+"ids": [
+"0600052"
+],
+"note": "Part of Eureka City Unified School District"
+},
+"0699007": {
+"ids": [
+"0600052"
+],
+"note": "Part of Eureka City Unified School District"
+},
+"0699008": {
+"ids": [
+"0601442"
+],
+"note": "Part of Upper Lake Unified School District"
+},
+"0699009": {
+"ids": [
+"0600049"
+],
+"note": "Part of Coast Unified School District"
+},
+"0699010": {
+"ids": [
+"0600048"
+],
+"note": "Part of Paso Robles Joint Unified School District"
+},
+"0699011": {
+"ids": [
+"0635600"
+],
+"note": "Part of Santa Cruz City High School District"
+},
+"0699012": {
+"ids": [
+"0600060"
+],
+"note": "Part of Hughson Unified School District"
+},
+"0699013": {
+"ids": [
+"0600062"
+],
+"note": "Part of Oakdale Joint Unified School District"
+},
+"0699014": {
+"ids": [
+"0626880"
+],
+"note": "Part of Nevada Joint Union High School District"
+},
 "0902220": {
 "ids": [
 "0999501"
@@ -11,6 +235,36 @@
 ],
 "note": "Merged with Litchfield into Regional School District 20 in 2024"
 },
+"1313053": {
+"ids": [
+"1301050"
+],
+"note": "Part of Chattahoochee County School District"
+},
+"1313215": {
+"ids": [
+"1303870"
+],
+"note": "Part of Muscogee County School District"
+},
+"1717901": {
+"ids": [
+"1701390"
+],
+"note": "Part of Flanagan-Cornell District 74"
+},
+"1717902": {
+"ids": [
+"1701390"
+],
+"note": "Part of Flanagan-Cornell District 74"
+},
+"1717903": {
+"ids": [
+"1701390"
+],
+"note": "Part of Flanagan-Cornell District 74"
+},
 "1737120": {
 "ids": [
 "1799501"
@@ -22,6 +276,152 @@
 "1799501"
 ],
 "note": "Merged into St. Anne Unit District 24 in 2024"
+},
+"1799001": {
+"ids": [
+"1701417"
+],
+"note": "Part of Bluford Unit School District 318"
+},
+"1799002": {
+"ids": [
+"1701417"
+],
+"note": "Part of Bluford Unit School District 318"
+},
+"1799003": {
+"ids": [
+"1701422"
+],
+"note": "Part of Woodlawn Unit District 209"
+},
+"1799004": {
+"ids": [
+"1701417"
+],
+"note": "Part of Bluford Unit School District 318"
+},
+"1799005": {
+"ids": [
+"1701422"
+],
+"note": "Part of Woodlawn Unit District 209"
+},
+"1799006": {
+"ids": [
+"1701422"
+],
+"note": "Part of Woodlawn Unit District 209"
+},
+"1799007": {
+"ids": [
+"1701422"
+],
+"note": "Part of Woodlawn Unit District 209"
+},
+"1799008": {
+"ids": [
+"1701422"
+],
+"note": "Part of Woodlawn Unit District 209"
+},
+"2121001": {
+"ids": [
+"2103210"
+],
+"note": "Part of Laurel County School District"
+},
+"2121002": {
+"ids": [
+"2104950"
+],
+"note": "Part of Pulaski County School District"
+},
+"2121004": {
+"ids": [
+"2102990"
+],
+"note": "Part of Jefferson County School District"
+},
+"2121005": {
+"ids": [
+"2100900"
+],
+"note": "Part of Campbell County School District"
+},
+"2522222": {
+"ids": [
+"2507990"
+],
+"note": "Part of Mohawk Trail School District (Hawley and Charlemont)"
+},
+"2525002": {
+"ids": [
+"2508670"
+],
+"note": "Part of North Adams School District"
+},
+"2525003": {
+"ids": [
+"2505270"
+],
+"note": "Part of Gill-Montague School District"
+},
+"2525005": {
+"ids": [
+"2511430"
+],
+"note": "Part of Swampscott School District"
+},
+"2525006": {
+"ids": [
+"2509630"
+],
+"note": "Part of Pittsfield School District"
+},
+"2525007": {
+"ids": [
+"2507990"
+],
+"note": "Part of Mohawk Trail School District"
+},
+"2525008": {
+"ids": [
+"2501780"
+],
+"note": "Part of Hoosac Valley School District"
+},
+"2525009": {
+"ids": [
+"2508670"
+],
+"note": "Part of North Adams School District"
+},
+"2525014": {
+"ids": [
+"2508670"
+],
+"note": "Part of North Adams School District"
+},
+"2599001": {
+"ids": [
+"2509600"
+],
+"note": "Part of Pioneer Valley School District"
+},
+"2727001": {
+"ids": [
+"2728080"
+],
+"note": "Part of Park Rapids Public School District"
+},
+"3018660": {
+"county": "Stillwater County",
+"district": "Molt Elementary School District",
+"enrollment": null,
+"ids": [],
+"note": "District with no schools of its own; the Census poverty file leaves it out, so this is the all-ages poverty rate for Stillwater County (Census SAIPE 2024)",
+"rate": "8.3"
 },
 "3100122": {
 "ids": [
@@ -48,6 +448,46 @@
 ],
 "note": "Merged into the PreK-12 Henry Hudson Regional School District in 2024"
 },
+"3802240": {
+"county": "Emmons County",
+"district": "Bakker Public School District 10",
+"enrollment": null,
+"ids": [],
+"note": "District with no schools of its own; the Census poverty file leaves it out, so this is the all-ages poverty rate for Emmons County (Census SAIPE 2024)",
+"rate": "14.0"
+},
+"4013380": {
+"county": "Love County",
+"district": "Greenville Public School",
+"enrollment": null,
+"ids": [],
+"note": "District with no schools of its own; the Census poverty file leaves it out, so this is the all-ages poverty rate for Love County (Census SAIPE 2024)",
+"rate": "15.1"
+},
+"4029760": {
+"county": "Jefferson County",
+"district": "Terral Public School",
+"enrollment": null,
+"ids": [],
+"note": "District with no schools of its own; the Census poverty file leaves it out, so this is the all-ages poverty rate for Jefferson County (Census SAIPE 2024)",
+"rate": "19.0"
+},
+"4500005": {
+"county": "Richland County",
+"district": "Fort Jackson Schools",
+"enrollment": null,
+"ids": [],
+"note": "Defense Department school on Fort Jackson; the Census poverty file has no figures for base schools, so this is the all-ages poverty rate for Richland County (Census SAIPE 2024)",
+"rate": "15.8"
+},
+"4500006": {
+"county": "Beaufort County",
+"district": "Beaufort Marine Corps Air Station School District",
+"enrollment": null,
+"ids": [],
+"note": "Defense Department school on Marine Corps Air Station Beaufort; the Census poverty file has no figures for base schools, so this is the all-ages poverty rate for Beaufort County (Census SAIPE 2024)",
+"rate": "8.4"
+},
 "4501080": {
 "ids": [
 "4599501"
@@ -59,6 +499,128 @@
 "4599501"
 ],
 "note": "Part of Barnwell County School District"
+},
+"4545013": {
+"ids": [
+"4501110"
+],
+"note": "Part of Beaufort County School District on Marine Corps Air Station Beaufort"
+},
+"4545079": {
+"ids": [
+"4503390"
+],
+"note": "Part of Richland School District 2 on Fort Jackson"
+},
+"4747001": {
+"ids": [
+"4700090"
+],
+"note": "Part of Anderson County School District"
+},
+"4747002": {
+"ids": [
+"4700152"
+],
+"note": "Part of Arlington Community School District"
+},
+"4747029": {
+"ids": [
+"4700750"
+],
+"note": "Part of Cocke County School District"
+},
+"4747031": {
+"ids": [
+"4700780"
+],
+"note": "Part of Coffee County School District"
+},
+"4747033": {
+"ids": [
+"4700850"
+],
+"note": "Part of Crockett County School District"
+},
+"4747034": {
+"ids": [
+"4700850"
+],
+"note": "Part of Crockett County School District"
+},
+"4747073": {
+"ids": [
+"4701740"
+],
+"note": "Part of Hawkins County School District"
+},
+"4747077": {
+"ids": [
+"4701800"
+],
+"note": "Part of Henderson County School District"
+},
+"4747079": {
+"ids": [
+"4701830"
+],
+"note": "Part of Henry County School District"
+},
+"4747107": {
+"ids": [
+"4702820"
+],
+"note": "Part of McMinn County School District"
+},
+"4747108": {
+"ids": [
+"4702820"
+],
+"note": "Part of McMinn County School District"
+},
+"4747123": {
+"ids": [
+"4703000"
+],
+"note": "Part of Monroe County School District"
+},
+"4747143": {
+"ids": [
+"4703510"
+],
+"note": "Part of Rhea County School District"
+},
+"4747149": {
+"ids": [
+"4703690"
+],
+"note": "Part of Rutherford County School District"
+},
+"4747187": {
+"ids": [
+"4704530"
+],
+"note": "Part of Williamson County School District"
+},
+"4747189": {
+"ids": [
+"4704550"
+],
+"note": "Part of Wilson County School District"
+},
+"4841130": {
+"county": "Hutchinson County",
+"district": "Spring Creek Independent School District",
+"enrollment": 83,
+"ids": [],
+"note": "Small district the Census poverty file leaves out, so this is the all-ages poverty rate for Hutchinson County (Census SAIPE 2024)",
+"rate": "14.4"
+},
+"4848285": {
+"ids": [
+"4822120"
+],
+"note": "Part of Hallettsville Independent School District"
 },
 "5000011": {
 "ids": [

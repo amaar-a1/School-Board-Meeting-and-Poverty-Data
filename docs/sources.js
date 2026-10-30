@@ -76,6 +76,7 @@ window.SOURCES = [
       { title: "St. Anne Unit District 24 (Illinois) replaced districts 256 and 302 in 2024", url: "https://www.shawlocal.com/daily-journal/news/2024/07/27/st-annes-new-school-district-up-and-running/" },
       { title: "Barnwell County school consolidation (South Carolina)", url: "https://www.wrdw.com/2024/06/26/people-leave-upset-after-barnwell-county-consolidated-school-meeting" },
       { title: "Nebraska Department of Education unification report (South Central Nebraska Unified 5 covers Lawrence-Nelson and Sandy Creek)", url: "https://www.education.ne.gov/wp-content/uploads/2023/11/UnificationReport_2023-24.pdf" },
+      { title: "Census SAIPE 2024 county estimates (all-ages poverty rate shown for 8 districts the district file leaves out: Defense Department base schools at Fort Jackson and Marine Corps Air Station Beaufort, districts with no schools in Montana, North Dakota and Oklahoma, Tanana City in Alaska and Spring Creek ISD in Texas)", url: "https://www2.census.gov/programs-surveys/saipe/datasets/2024/2024-state-and-county/est24all.txt" },
       { title: "Background map: © OpenStreetMap contributors, © CARTO", url: "https://carto.com/attributions" }
     ],
     note: "Borders were simplified with mapshaper so the map loads quickly; they are drawn with Leaflet."
