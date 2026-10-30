@@ -1,0 +1,211 @@
+{
+  "fips": [
+    {
+      "name": "state",
+      "geoLevelDisplay": "040",
+      "referenceDate": "2020-01-01"
+    },
+    {
+      "name": "county",
+      "geoLevelDisplay": "050",
+      "referenceDate": "2020-01-01",
+      "requires": [
+        "state"
+      ],
+      "wildcard": [
+        "state"
+      ],
+      "optionalWithWCFor": "state"
+    },
+    {
+      "name": "county subdivision",
+      "geoLevelDisplay": "060",
+      "referenceDate": "2020-01-01",
+      "requires": [
+        "state",
+        "county"
+      ],
+      "wildcard": [
+        "county"
+      ],
+      "optionalWithWCFor": "county"
+    },
+    {
+      "name": "place/remainder (or part)",
+      "geoLevelDisplay": "070",
+      "referenceDate": "2020-01-01",
+      "requires": [
+        "state",
+        "county",
+        "county subdivision"
+      ]
+    },
+    {
+      "name": "tract (or part)",
+      "geoLevelDisplay": "080",
+      "referenceDate": "2020-01-01",
+      "requires": [
+        "state",
+        "county",
+        "county subdivision",
+        "place/remainder (or part)"
+      ]
+    },
+    {
+      "name": "urban/rural",
+      "geoLevelDisplay": "085",
+      "referenceDate": "2020-01-01",
+      "requires": [
+        "state",
+        "county",
+        "county subdivision",
+        "place/remainder (or part)",
+        "tract (or part)"
+      ]
+    },
+    {
+      "name": "urban/rural",
+      "geoLevelDisplay": "090",
+      "referenceDate": "2020-01-01",
+      "requires": [
+        "state",
+        "county",
+        "county subdivision",
+        "place/remainder (or part)",
+        "tract (or part)",
+        "block group (or part)"
+      ]
+    },
+    {
+      "name": "block group (or part)",
+      "geoLevelDisplay": "091",
+      "referenceDate": "2020-01-01",
+      "requires": [
+        "state",
+        "county",
+        "county subdivision",
+        "place/remainder (or part)",
+        "tract (or part)"
+      ]
+    },
+    {
+      "name": "block",
+      "geoLevelDisplay": "100",
+      "referenceDate": "2020-01-01",
+      "requires": [
+        "state",
+        "county",
+        "tract"
+      ],
+      "wildcard": [
+        "county",
+        "tract"
+      ],
+      "optionalWithWCFor": "tract"
+    },
+    {
+      "name": "tract",
+      "geoLevelDisplay": "140",
+      "referenceDate": "2020-01-01",
+      "requires": [
+        "state",
+        "county"
+      ],
+      "wildcard": [
+        "county"
+      ],
+      "optionalWithWCFor": "county"
+    },
+    {
+      "name": "block group",
+      "geoLevelDisplay": "150",
+      "referenceDate": "2020-01-01",
+      "requires": [
+        "state",
+        "county",
+        "tract"
+      ],
+      "wildcard": [
+        "county",
+        "tract"
+      ],
+      "optionalWithWCFor": "tract"
+    },
+    {
+      "name": "county (or part)",
+      "geoLevelDisplay": "155",
+      "referenceDate": "2020-01-01",
+      "requires": [
+        "state",
+        "place"
+      ]
+    },
+    {
+      "name": "place",
+      "geoLevelDisplay": "160",
+      "referenceDate": "2020-01-01",
+      "requires": [
+        "state"
+      ],
+      "wildcard": [
+        "state"
+      ],
+      "optionalWithWCFor": "state"
+    },
+    {
+      "name": "urban area (or part)",
+      "geoLevelDisplay": "420",
+      "referenceDate": "2020-01-01",
+      "requires": [
+        "state"
+      ]
+    },
+    {
+      "name": "county (or part)",
+      "geoLevelDisplay": "431",
+      "referenceDate": "2020-01-01",
+      "requires": [
+        "state",
+        "urban area (or part)"
+      ]
+    },
+    {
+      "name": "county subdivision (or part)",
+      "geoLevelDisplay": "441",
+      "referenceDate": "2020-01-01",
+      "requires": [
+        "state",
+        "urban area (or part)",
+        "county (or part)"
+      ]
+    },
+    {
+      "name": "place/remainder (or part)",
+      "geoLevelDisplay": "451",
+      "referenceDate": "2020-01-01",
+      "requires": [
+        "state",
+        "urban area (or part)",
+        "county (or part)",
+        "county subdivision (or part)"
+      ]
+    },
+    {
+      "name": "zip code tabulation area (or part)",
+      "geoLevelDisplay": "871",
+      "referenceDate": "2020-01-01",
+      "requires": [
+        "state"
+      ]
+    },
+    {
+      "name": "county (or part)",
+      "geoLevelDisplay": "881",
+      "referenceDate": "2020-01-01",
+      "requires": [
+        "state",
+        "zip code tabulation area (or part)"
+      ]
+    }
+  ]
+}
