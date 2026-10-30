@@ -1,5 +1,1 @@
-sl_root.html https://civicsearchlight.nationalobserver.com/
-sl_robots.txt https://civicsearchlight.nationalobserver.com/robots.txt
-sl_sitemap.xml https://civicsearchlight.nationalobserver.com/sitemap.xml
-sl_about.html https://civicsearchlight.nationalobserver.com/about
-cno_free.html https://www.nationalobserver.com/2026/03/09/news/civic-searchlight-now-free-use
+sl_main.js https://civicsearchlight.nationalobserver.com/assets/index-Zdacb8Br.js
