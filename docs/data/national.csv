@@ -390,7 +390,7 @@ Vail Unified District,AZ,0,14071,793,5.63570464%,Rural,14831,0408850
 Valentine Elementary District,AZ,0,31,6,19.35483871%,Rural,89,0408880
 Valley Union High School District,AZ,0,144,21,14.58333333%,Rural,87,0408910
 Vernon Elementary District,AZ,0,196,74,37.75510204%,Rural,127,0400022
-Walnut Grove Elementary District,AZ,0,6,0,0.00000000%,,,0409030
+Walnut Grove Elementary District,AZ,0,6,0,0.00000000%,Rural,,0409030
 Washington Elementary District,AZ,23,28942,5441,18.79966830%,Urban,18766,0409060
 Wellton Elementary District,AZ,0,241,77,31.95020747%,Rural,184,0409090
 Wenden Elementary District,AZ,0,47,20,42.55319149%,Rural,79,0409120
@@ -2437,7 +2437,7 @@ Chaney-Monge School District 88,IL,0,480,67,13.95833333%,Suburban,451,1709510
 Channahon School District 17,IL,0,1272,55,4.32389937%,Suburban,1163,1709540
 Charleston Community Unit School District 1,IL,0,2833,385,13.58983410%,Town,2652,1709600
 Chester Community Unit School District 139,IL,0,1074,170,15.82867784%,Town,968,1709810
-Chester Non-High School District 122,IL,0,41,6,14.63414634%,Rural,,1700333
+Chester Non-High School District 122,IL,0,41,6,14.63414634%,Rural,0,1700333
 Chester-East Lincoln Community CSD 61,IL,0,283,25,8.83392226%,Town,299,1709850
 Chicago Heights School District 170,IL,0,2859,763,26.68765303%,Suburban,2655,1709960
 Chicago Public School District 299,IL,0,378975,79140,20.88264397%,Urban,322809,1709930
@@ -6564,7 +6564,7 @@ Geyser K-12 Schools,MT,0,53,6,11.32075472%,Rural,36,3012300
 Gildford Colony Elementary School District,MT,0,12,1,8.33333333%,Rural,15,3012350
 Glasgow K-12 Schools,MT,0,808,89,11.01485149%,Rural,777,3012420
 Glendive Elementary School District,MT,0,833,102,12.24489796%,Town,764,3012510
-Gold Creek Elementary School District,MT,0,19,4,21.05263158%,Rural,,3012570
+Gold Creek Elementary School District,MT,0,19,4,21.05263158%,Rural,5,3012570
 Golden Ridge Elementary School District,MT,0,28,8,28.57142857%,Rural,7,3012600
 Grant Elementary School District,MT,0,6,1,16.66666667%,Rural,9,3012900
 Grass Range Elementary School District,MT,0,55,7,12.72727273%,Rural,55,3012960
@@ -6718,7 +6718,7 @@ Ryegate K-12 Schools,MT,0,52,17,32.69230769%,Rural,63,3023340
 S Y Elementary School District,MT,0,21,4,19.04761905%,Rural,5,3008010
 Saco Elementary School District,MT,0,40,9,22.50000000%,Rural,35,3023370
 Saco High School District,MT,0,28,3,10.71428571%,Rural,14,3023400
-Sand Springs Elementary School District,MT,0,11,3,27.27272727%,Rural,,3012060
+Sand Springs Elementary School District,MT,0,11,3,27.27272727%,Rural,4,3012060
 Savage Elementary School District,MT,0,68,7,10.29411765%,Rural,95,3023520
 Savage High School District,MT,0,44,4,9.09090909%,Rural,35,3023550
 Scobey K-12 Schools,MT,0,275,31,11.27272727%,Rural,277,3023670
@@ -7076,7 +7076,7 @@ Barrington School District,NH,0,1507,39,2.58792303%,Rural,972,3301650
 Bartlett School District,NH,0,321,71,22.11838006%,Rural,171,3301680
 Bath School District,NH,0,164,8,4.87804878%,Rural,47,3301710
 Bedford School District,NH,0,4522,92,2.03449801%,Suburban,4070,3301740
-Benton School District,NH,0,27,2,7.40740741%,Rural,,3301830
+Benton School District,NH,0,27,2,7.40740741%,Rural,3,3301830
 Berlin School District,NH,0,1170,201,17.17948718%,Rural,1018,3301860
 Bethlehem School District,NH,0,162,12,7.40740741%,Rural,140,3301890
 Bow School District,NH,0,1667,40,2.39952010%,Town,1671,3301950
@@ -7091,7 +7091,7 @@ Chichester School District,NH,0,407,18,4.42260442%,Rural,190,3302310
 Claremont School District,NH,0,1842,282,15.30944625%,Town,1621,3302340
 Clarksville School District,NH,0,25,1,4.00000000%,Rural,,3302370
 Colebrook School District,NH,0,248,35,14.11290323%,Rural,304,3302400
-Columbia School District,NH,0,56,8,14.28571429%,Rural,,3302430
+Columbia School District,NH,0,56,8,14.28571429%,Rural,1,3302430
 Concord School District,NH,0,4674,380,8.13008130%,Town,3949,3302460
 Contoocook Valley School District,NH,0,2692,140,5.20059435%,Rural,1951,3302480
 Conway School District,NH,0,1182,124,10.49069374%,Rural,1524,3302490
@@ -7102,7 +7102,7 @@ Deerfield School District,NH,0,730,23,3.15068493%,Rural,498,3302580
 Derry School District,NH,4,5013,238,4.74765609%,Suburban,3093,3302610
 Dover School District,NH,0,4130,230,5.56900726%,Suburban,3644,3302640
 Dresden School District,NH,0,787,13,1.65184244%,Town,1050,3302670
-Dummer School District,NH,0,34,6,17.64705882%,Town,,3302730
+Dummer School District,NH,0,34,6,17.64705882%,Town,1,3302730
 Dunbarton School District,NH,0,503,6,1.19284294%,Rural,242,3302760
 East Kingston School District,NH,0,179,4,2.23463687%,Rural,118,3302790
 Eaton School District,NH,0,29,4,13.79310345%,Town,,3302850
@@ -7121,7 +7121,7 @@ Gilford School District,NH,0,1053,51,4.84330484%,Rural,1094,3303180
 Gilmanton School District,NH,0,552,28,5.07246377%,Rural,360,3303210
 Goffstown School District,NH,0,2569,87,3.38653172%,Rural,2798,3303240
 Gorham Randolph Shelburne Cooperative School District,NH,0,420,49,11.66666667%,Town,372,3300035
-Goshen School District,NH,0,100,8,8.00000000%,Rural,,3303304
+Goshen School District,NH,0,100,8,8.00000000%,Rural,1,3303304
 Governor Wentworth Regional School District,NH,0,2259,153,6.77290837%,Rural,2121,3303330
 Grantham School District,NH,0,451,7,1.55210643%,Rural,271,3303360
 Greenland School District,NH,0,589,12,2.03735144%,Suburban,374,3303420
@@ -7222,7 +7222,7 @@ Stoddard School District,NH,0,189,6,3.17460317%,Rural,54,3306390
 Strafford School District,NH,0,727,27,3.71389271%,Rural,394,3306420
 Stratford School District,NH,0,71,19,26.76056338%,Rural,57,3306450
 Stratham School District,NH,0,540,8,1.48148148%,Rural,520,3306480
-Sullivan School District,NH,0,68,3,4.41176471%,Rural,,3303293
+Sullivan School District,NH,0,68,3,4.41176471%,Rural,1,3303293
 Sunapee School District,NH,0,428,12,2.80373832%,Rural,397,3306540
 Surry School District,NH,0,115,6,5.21739130%,Rural,,3303275
 Tamworth School District,NH,0,322,42,13.04347826%,Rural,183,3306600
@@ -7259,7 +7259,7 @@ Avalon Borough School District,NJ,0,62,5,8.06451613%,Suburban,92,3401110
 Avon-by-the-Sea Borough School District,NJ,0,203,9,4.43349754%,Suburban,119,3401140
 Barnegat Township School District,NJ,10,3738,297,7.94542536%,Suburban,3665,3416470
 Barrington Borough School District,NJ,0,986,83,8.41784990%,Suburban,535,3401170
-Bass River Township School District,NJ,0,91,7,7.69230769%,Rural,,3401200
+Bass River Township School District,NJ,0,91,7,7.69230769%,Rural,93,3401200
 Bay Head Borough School District,NJ,0,117,3,2.56410256%,Suburban,120,3401230
 Bayonne City School District,NJ,24,11947,2446,20.47375910%,Suburban,10697,3401260
 Beach Haven Borough School District,NJ,0,39,3,7.69230769%,Suburban,63,3401290
@@ -8179,7 +8179,7 @@ Huntington Union Free School District,NY,0,4939,434,8.78720389%,Suburban,4144,36
 Hyde Park Central School District,NY,23,3708,308,8.30636462%,Suburban,3515,3615180
 Indian Lake Central School District,NY,0,126,14,11.11111111%,Rural,125,3615270
 Indian River Central School District,NY,0,4137,627,15.15591008%,Rural,3494,3615300
-Inlet Common School District,NY,0,31,7,22.58064516%,Rural,,3615330
+Inlet Common School District,NY,0,31,7,22.58064516%,Rural,13,3615330
 Iroquois Central School District,NY,15,2535,75,2.95857988%,Rural,2090,3615360
 Irvington Union Free School District,NY,0,1797,39,2.17028381%,Suburban,1787,3615450
 Island Park Union Free School District,NY,0,1172,76,6.48464164%,Suburban,739,3615480
@@ -8291,7 +8291,7 @@ New Lebanon Central School District,NY,0,538,49,9.10780669%,Rural,413,3620430
 New Paltz Central School District,NY,1,2196,161,7.33151184%,Rural,1806,3620460
 New Rochelle City School District,NY,17,11412,1116,9.77917981%,Suburban,9910,3620490
 New Suffolk Common School District,NY,0,52,0,0.00000000%,Suburban,8,3620520
-New York City Department Of Education,NY,0,1205433,282054,23.39856301%,Urban,,3620580
+New York City Department Of Education,NY,0,1205433,282054,23.39856301%,Urban,0,3620580
 New York Mills Union Free School District,NY,0,659,124,18.81638847%,Suburban,617,3620610
 Newark Central School District,NY,18,2131,345,16.18958236%,Town,1929,3620640
 Newark Valley Central School District,NY,0,1158,159,13.73056995%,Rural,1028,3620670
@@ -9191,7 +9191,7 @@ Mentor Exempted Village School District,OH,28,8387,452,5.38929295%,Suburban,7067
 Miami East Local School District,OH,0,1498,75,5.00667557%,Rural,1403,3904862
 Miami Trace Local School District,OH,0,2680,318,11.86567164%,Rural,2487,3910010
 Miamisburg City School District,OH,0,6278,806,12.83848359%,Suburban,4925,3904439
-Middle Bass Local School District,OH,0,13,1,7.69230769%,Rural,,3904895
+Middle Bass Local School District,OH,0,13,1,7.69230769%,Rural,0,3904895
 Middletown City School District,OH,0,8430,2451,29.07473310%,Suburban,5978,3904440
 Midview Local School District,OH,0,3211,375,11.67860480%,Rural,2558,3904817
 Milford Exempted Village School District,OH,0,7900,395,5.00000000%,Suburban,6146,3904550
@@ -9233,7 +9233,7 @@ Niles City School District,OH,0,2542,553,21.75452400%,Suburban,1961,3904449
 Noble Local School District,OH,0,1163,161,13.84350817%,Rural,1060,3904890
 Nordonia Hills City School District,OH,1,4389,222,5.05809979%,Suburban,3437,3905004
 North Baltimore Local School District,OH,0,729,142,19.47873800%,Rural,609,3905070
-North Bass Local School District,OH,0,0,0,,Rural,,3904896
+North Bass Local School District,OH,0,0,0,,Rural,0,3904896
 North Canton City School District,OH,0,4735,332,7.01161563%,Suburban,4415,3904450
 North Central Local School District,OH,0,671,60,8.94187779%,Rural,564,3905064
 North College Hill City School District,OH,0,2059,509,24.72073822%,Suburban,1415,3904451
@@ -10220,7 +10220,7 @@ Bristol Township School District,PA,0,7729,939,12.14904904%,Suburban,6111,420423
 Brockway Area School District,PA,0,1119,159,14.20911528%,Rural,868,4204260
 Brookville Area School District,PA,0,1741,219,12.57897760%,Rural,1322,4204320
 Brownsville Area School District,PA,0,1667,298,17.87642472%,Rural,1423,4204080
-Bryn Athyn School District,PA,0,215,10,4.65116279%,Suburban,,4204090
+Bryn Athyn School District,PA,0,215,10,4.65116279%,Suburban,0,4204090
 Burgettstown Area School District,PA,3,1297,143,11.02544333%,Rural,971,4204500
 Burrell School District,PA,0,1833,192,10.47463175%,Suburban,1736,4204530
 Butler Area School District,PA,0,7178,819,11.40986347%,Town,5941,4204590
@@ -12582,7 +12582,7 @@ Vancouver Public Schools,WA,0,24853,2733,10.99666036%,Urban,21949,5309270
 Vashon Island School District,WA,0,1432,111,7.75139665%,Rural,1473,5309300
 Wahkiakum School District,WA,0,500,77,15.40000000%,Rural,412,5309330
 Wahluke School District,WA,0,2005,353,17.60598504%,Rural,2483,5309360
-Waitsburg School District,WA,0,273,15,5.49450549%,Rural,,5309390
+Waitsburg School District,WA,0,273,15,5.49450549%,Rural,300,5309390
 Walla Walla Public Schools,WA,0,5916,777,13.13387424%,Urban,5534,5309450
 Wapato School District,WA,0,3469,858,24.73335255%,Town,3196,5309480
 Warden School District,WA,0,863,165,19.11935110%,Rural,936,5309510
