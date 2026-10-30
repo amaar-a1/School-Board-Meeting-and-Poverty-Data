@@ -1,5 +1,5 @@
-vars_gu.json https://api.census.gov/data/2020/dec/dhcgu/variables.json
-vars_mp.json https://api.census.gov/data/2020/dec/dhcmp/variables.json
-vars_vi.json https://api.census.gov/data/2020/dec/dhcvi/variables.json
-vars_as.json https://api.census.gov/data/2020/dec/dhcas/variables.json
-dp_gu_vars.json https://api.census.gov/data/2020/dec/dpgu/variables.json
+pov_gu.json https://api.census.gov/data/2020/dec/dhcgu?get=NAME,group(PCT78)&ucgid=0400000US66
+pov_mp.json https://api.census.gov/data/2020/dec/dhcmp?get=NAME,group(PCT77)&ucgid=0400000US69
+pov_vi.json https://api.census.gov/data/2020/dec/dhcvi?get=NAME,group(PCT75)&ucgid=0400000US78
+pov_as.json https://api.census.gov/data/2020/dec/dhcas?get=NAME,group(PCT77)&ucgid=0400000US60
+geo_gu.json https://api.census.gov/data/2020/dec/dhcgu/geography.json
