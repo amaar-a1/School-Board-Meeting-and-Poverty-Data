@@ -38,6 +38,27 @@ ALIASES = {"saint": "st", "mount": "mt", "fort": "ft", "u": "universal", "va": "
 # (Aransas County); the project's sources note this for its 16 meetings.
 MANUAL = {"aransas-county-isd-texas": "4808550"}
 
+# Districts where the Census counts no children ages 5-17 have no school-age poverty rate, so
+# they show the all-ages poverty rate of their county (SAIPE 2024, est24all.txt in the inputs
+# folder). Counties are from the NCES directory, or the district's name where NCES has none.
+ZERO_CHILDREN_COUNTY = {
+    "2306030": "23003",   # Glenwood Plantation, ME: Aroostook County
+    "2382013": "23015",   # Louds Island Unorganized Territory, ME: Lincoln County
+    "2382004": "23023",   # Sagadahoc Unorganized Territory, ME: Sagadahoc County
+    "3904896": "39123",   # North Bass Local School District, OH: Ottawa County
+    "4104290": "41025",   # Double O School District 28, OR: Harney County
+}
+
+
+def county_poverty(path):
+    """All-ages poverty rate and name for each county in the SAIPE state and county file."""
+    out = {}
+    for line in open(path, encoding="latin-1"):
+        f = line.split()
+        if len(f) > 6 and f[1] != "0":
+            out[f[0] + f[1].zfill(3)] = (f[5], line[193:239].strip())
+    return out
+
 
 def tokens(name):
     s = name.lower().replace("&", " and ").replace("’", "'")
@@ -66,6 +87,8 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
     fallback_path = os.path.join(os.path.dirname(nces_path), "nces_fallback.json")
     fallback = json.load(open(fallback_path)) if os.path.exists(fallback_path) else {}
     saipe = list(csv.DictReader(open(saipe_path, encoding="latin-1")))
+    county_path = os.path.join(os.path.dirname(saipe_path), "est24all.txt")
+    counties = county_poverty(county_path) if os.path.exists(county_path) else {}
     districts = []
     for r in saipe:
         if r["STABREV"] in TERRITORIES:
@@ -80,10 +103,18 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
             enrollment = fb.get("enrollment")
         if not (isinstance(locale, int) and locale > 0):
             locale = fb.get("urban_centric_locale")
+        pct, note = (f"{100 * poor / kids:.8f}%" if kids else ""), ""
+        if not kids:
+            county = counties.get(ZERO_CHILDREN_COUNTY.get(leaid, ""))
+            if county:
+                pct = f"{county[0]}%"
+                note = (f"No children ages 5-17 live here (Census), so this is the all-ages poverty rate "
+                        f"for {county[1]} (Census SAIPE 2024)")
+            else:
+                note = "No children ages 5-17 live here (Census), so there is no school-age poverty rate"
         districts.append({
             "leaid": leaid, "name": r["name"], "state": r["STABREV"],
-            "kids": kids, "poor": poor,
-            "pct": f"{100 * poor / kids:.8f}%" if kids else "",
+            "kids": kids, "poor": poor, "pct": pct, "note": note,
             "enrollment": enrollment if isinstance(enrollment, int) and enrollment >= 0 else "",
             "locale": LOCALE.get(locale // 10, "") if isinstance(locale, int) and locale > 0 else "",
             "nces_name": n.get("lea_name", ""), "lat": n.get("latitude"), "lon": n.get("longitude"),
@@ -132,9 +163,9 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
     with open(out_path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["District", "State", "Available Board Meetings", "Children Ages 5-17", "Children Ages 5-17 in Poverty",
-                    "Percentage of Children Ages 5-17 in Poverty", "Locale", "Enrollment", "District ID"])
+                    "Percentage of Children Ages 5-17 in Poverty", "Locale", "Enrollment", "District ID", "Poverty note"])
         for d in districts:
-            w.writerow([d["name"], d["state"], d["meetings"], d["kids"], d["poor"], d["pct"], d["locale"], d["enrollment"], d["leaid"]])
+            w.writerow([d["name"], d["state"], d["meetings"], d["kids"], d["poor"], d["pct"], d["locale"], d["enrollment"], d["leaid"], d["note"]])
     with open(report_path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["CivicSearch name", "State", "Meetings", "Matched LEAID", "Matched district (Census name)", "How", "Distance km"])
