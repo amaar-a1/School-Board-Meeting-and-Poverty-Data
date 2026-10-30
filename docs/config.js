@@ -1,13 +1,10 @@
-// Site settings. The CSV files in docs/data/ are downloaded from the project
-// spreadsheet by .github/workflows/pages.yml.
+// Site settings. docs/data/national.csv is rebuilt daily by .github/workflows/pages.yml
+// with fresh CivicSearch meeting counts.
 window.SITE_CONFIG = {
   title: "School Board Meetings & Poverty Data",
   // CSV files to load. "United States" gets a button; each state is picked from a menu
-  // (see perState). Texas uses the project spreadsheet; other states come from the national file.
+  // (see perState) and comes from the national file.
   dataFiles: [
-    { name: "Texas", file: "data/data.csv", state: "TX",
-      note: "1,017 Texas school districts.",
-      footer: "Poverty figures are for children ages 5–17. Data is refreshed daily. Sources are listed on the Sources tab." },
     { name: "United States", file: "data/national.csv", textColumns: ["District ID"],
       // {rows} and {withMeetings} are filled in from the data when the page loads.
       note: "{rows} school districts in the 50 states and DC. Meeting counts are available for {withMeetings} of them; the rest show 0.",
@@ -20,7 +17,7 @@ window.SITE_CONFIG = {
       footer: "Territory school systems as of October 30, 2026. Sources are listed on the Sources tab." }
   ],
   // State menu: every state and DC. Each state's view is the national rows with this
-  // State value (Texas uses its own data set above).
+  // State value.
   perState: {
     from: "United States",
     column: "State",

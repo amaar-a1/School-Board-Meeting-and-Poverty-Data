@@ -63,8 +63,8 @@
     selectDataset(datasets.find((d) => d.name === (cfg.perState && cfg.perState.from)) || datasets[0]);
   }
 
-  // One state's view: its own data set if there is one (Texas), otherwise the
-  // national rows for that state.
+  // One state's view: its own data set if there is one (the territories), otherwise
+  // the national rows for that state.
   const stateCache = {};
   function stateDataset(abbr) {
     const ps = cfg.perState;
@@ -577,11 +577,11 @@
   }
 
   // Sources for the selected dataset: entries marked `only` (a name or a list of names)
-  // show just for those datasets.
+  // show just for those datasets. A state's view also shows entries marked with its name.
   function renderSources() {
     const box = $("sources-list");
     box.innerHTML = "";
-    const shown = (x) => !x.only || [].concat(x.only).includes(current.sourcesAs || current.name);
+    const shown = (x) => !x.only || [].concat(x.only).some((n) => n === (current.sourcesAs || current.name) || n === current.name);
     (window.SOURCES || []).filter(shown).forEach((g) => {
       const items = g.items.filter(shown);
       if (!items.length) return;
