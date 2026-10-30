@@ -86,7 +86,12 @@
 
   function style(feature) {
     if (undefinedArea(feature)) return { fillOpacity: 0, color: "#999", weight: 0.3, dashArray: "2 3" };
-    const on = inView(feature.properties.GEOID);
+    const f = window.SiteFilters;
+    let on = inView(feature.properties.GEOID);
+    if (on && f && f.active()) {
+      const r = rowFor(feature.properties.GEOID);
+      on = !!r && f.test(r);
+    }
     return { fillColor: color(rowFor(feature.properties.GEOID)), fillOpacity: on ? 0.8 : 0.15, color: "#555", weight: on ? 0.4 : 0.2 };
   }
 
@@ -188,6 +193,7 @@
 
   window.SiteMap = {
     rowFor: (geoid) => rowFor(geoid),
+    restyle: () => { if (map) restyle(); },
     show(ds, datasets) {
       current = ds;
       if (!loading) {

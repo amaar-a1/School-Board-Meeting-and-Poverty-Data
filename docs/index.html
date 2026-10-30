@@ -40,6 +40,34 @@
       <button type="button" role="tab" data-view-tab="sources" aria-selected="false">Sources</button>
     </div>
 
+    <section id="filters" class="card filters" aria-label="Filters" hidden>
+      <div class="filter-row">
+        <strong class="filter-title">Filters</strong>
+        <label>Locale
+          <select id="f-locale">
+            <option value="">Any</option>
+            <option>Urban</option><option>Suburban</option><option>Town</option><option>Rural</option>
+          </select>
+        </label>
+        <label>Meetings
+          <select id="f-meetings">
+            <option value="">Any</option>
+            <option value="with">With available meetings</option>
+            <option value="without">Without available meetings</option>
+          </select>
+        </label>
+        <label>Child poverty
+          <input id="f-pov-min" type="number" min="0" max="100" step="1" placeholder="min" aria-label="Minimum child poverty rate (%)">
+          to
+          <input id="f-pov-max" type="number" min="0" max="100" step="1" placeholder="max" aria-label="Maximum child poverty rate (%)">
+          %
+        </label>
+        <label>District size <select id="f-size"><option value="">Any</option></select></label>
+        <button id="f-clear" type="button">Clear filters</button>
+      </div>
+      <p id="f-status" class="note"></p>
+    </section>
+
     <div data-view="overview">
 
     <section id="stats" class="stats" aria-label="Summary"></section>
@@ -214,5 +242,6 @@
   <script src="state-rules.js"></script>
   <script src="map.js"></script>
   <script src="app.js"></script>
+  <script src="assistant.js"></script>
 </body>
 </html>
