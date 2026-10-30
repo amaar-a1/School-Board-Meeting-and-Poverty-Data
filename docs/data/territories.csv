@@ -1,7 +1,7 @@
-District,Territory,School board,Board meetings online,Schools,Enrollment,Children Ages 5-17,Children Ages 5-17 in Poverty,Percentage of Children Ages 5-17 in Poverty
-Puerto Rico Department of Education,Puerto Rico,None (run directly by the territory's Department of Education),No board meetings,858,240910,386483,192971,49.93000986%
-Guam Department of Education,Guam,Guam Education Board,"Yes, live and recorded (YouTube and Facebook)",41,,,,
-Commonwealth of the Northern Mariana Islands Public School System,Northern Mariana Islands,CNMI State Board of Education,"Yes, sessions are streamed",35,9217,,,
-Saint Croix School District,U.S. Virgin Islands,Virgin Islands Board of Education (one board for both districts),Meeting notices and agendas only,10,5082,,,
-Saint Thomas - Saint John School District,U.S. Virgin Islands,Virgin Islands Board of Education (one board for both districts),Meeting notices and agendas only,10,5230,,,
-American Samoa Department of Education,American Samoa,American Samoa Board of Education,Not checked,29,,,,
+District,Territory,School board,Board meetings online,Schools,Enrollment,Children Ages 5-17,Children Ages 5-17 in Poverty,Percentage of Children Ages 5-17 in Poverty,Poverty figures
+Puerto Rico Department of Education,Puerto Rico,None (run directly by the territory's Department of Education),No board meetings,858,240910,386483,192971,49.93000986%,Census SAIPE 2024 estimate
+Guam Department of Education,Guam,Guam Education Board,"Yes, live and recorded (YouTube and Facebook)",41,,29567,8853,29.94216525%,"2020 Census (2019 income), children in households"
+Commonwealth of the Northern Mariana Islands Public School System,Northern Mariana Islands,CNMI State Board of Education,"Yes, sessions are streamed",35,9217,10326,4945,47.88882433%,"2020 Census (2019 income), children in households"
+Saint Croix School District,U.S. Virgin Islands,Virgin Islands Board of Education (one board for both districts),Meeting notices and agendas only,10,5082,6363,2177,34.21342134%,"2020 Census (2019 income), children in households on St. Croix"
+Saint Thomas - Saint John School District,U.S. Virgin Islands,Virgin Islands Board of Education (one board for both districts),Meeting notices and agendas only,10,5230,6123,1743,28.46643802%,"2020 Census (2019 income), children in households on St. Thomas and St. John"
+American Samoa Department of Education,American Samoa,American Samoa Board of Education,Not checked,29,,13505,8487,62.84339134%,"2020 Census (2019 income), children in households"

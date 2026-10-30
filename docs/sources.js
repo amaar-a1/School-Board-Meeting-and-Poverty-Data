@@ -32,7 +32,7 @@ window.SOURCES = [
   },
   {
     only: "U.S. territories",
-    group: "U.S. territory school boards",
+    group: "U.S. territories: school boards, children and poverty",
     items: [
       { title: "Guam Education Board meetings, broadcast live and recorded on the Guam Department of Education YouTube channel and Facebook page" },
       { title: "CNMI State Board of Education sessions, streamed on the CNMI Public School System's social media and regional news channels" },
@@ -40,6 +40,12 @@ window.SOURCES = [
       { title: "Puerto Rico Department of Education: run as a cabinet department, with no school board" },
       { title: "Google search summary of how each territory's schools are run and which boards post meetings online (searched by the project team, October 30, 2026); the four entries above come from it" },
       { title: "CivicSearch school district list data (checked October 30, 2026; it lists no school boards in the territories, so there are no meeting counts)", url: "https://schools.civicsearch.org/api/get_place_list" },
+      { title: "2020 Census of Guam, Demographic and Housing Characteristics File (poverty status in 2019 by age by sex, table PCT78: children ages 5–17 and children in poverty)", url: "https://www2.census.gov/programs-surveys/decennial/2020/data/island-areas/guam/demographic-and-housing-characteristics-file/" },
+      { title: "2020 Census of the Northern Mariana Islands, Demographic and Housing Characteristics File (table PCT77)", url: "https://www2.census.gov/programs-surveys/decennial/2020/data/island-areas/commonwealth-of-the-northern-mariana-islands/demographic-and-housing-characteristics-file/" },
+      { title: "2020 Census of the U.S. Virgin Islands, Demographic and Housing Characteristics File (table PCT75, by island: St. Croix, and St. Thomas plus St. John)", url: "https://www2.census.gov/programs-surveys/decennial/2020/data/island-areas/us-virgin-islands/demographic-and-housing-characteristics-file/" },
+      { title: "2020 Census of American Samoa, Demographic and Housing Characteristics File (table PCT77)", url: "https://www2.census.gov/programs-surveys/decennial/2020/data/island-areas/american-samoa/demographic-and-housing-characteristics-file/" },
+      { title: "Census press release on Guam's 2020 data (used to check the Guam totals: 145,543 people, 29,408 below poverty)", url: "https://www.census.gov/newsroom/press-releases/2023/2020-dhc-summary-file-guam.html" },
+      { title: "Census press release on American Samoa's 2020 data (used to check its totals: 48,506 people, 26,480 below poverty)", url: "https://www.census.gov/newsroom/press-releases/2023/2020-dhc-summary-file-american-samoa.html" },
       { title: "Census SAIPE 2024 file for all US school districts (Puerto Rico's children ages 5–17 and children in poverty; no other territory is in the file)", url: "https://www2.census.gov/programs-surveys/saipe/datasets/2024/2024-school-districts/ussd24.csv" },
       { title: "Census SAIPE estimation details for Puerto Rico (its figures come from the Puerto Rico Community Survey)", url: "https://www.census.gov/programs-surveys/saipe/technical-documentation/methodology/puerto-rico.html" }
     ],

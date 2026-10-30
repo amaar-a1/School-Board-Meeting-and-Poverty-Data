@@ -174,8 +174,10 @@
     const st = cfg.sizeTiers;
     const enrollCol = st && current.columns.find((c) => c.trim().toLowerCase() === st.column.toLowerCase());
     const ok = enrollCol && canCompare();
+    const missing = [[cfg.compare.by, "meeting counts"], [cfg.compare.metric, "child poverty figures"]]
+      .filter(([c]) => !current.numeric.has(c)).map(([, label]) => label).join(" and ");
     $("size-missing").textContent = enrollCol
-      ? `This tab needs meeting counts and child poverty figures, which aren't available for ${current.name}.`
+      ? `This tab needs ${missing}, which aren't available for ${current.name}.`
       : "This tab needs an “Enrollment” column in the data.";
     $("size-missing").hidden = ok;
     $("size-content").hidden = !ok;
