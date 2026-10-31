@@ -143,3 +143,4 @@ footer { padding: 8px 16px 40px; font-size: .85rem; }
 .ask-form input { flex: 1; min-width: 0; }
 .ask-form button { background: var(--accent); color: #fff; border-color: var(--accent); }
 .ask-foot { margin: 0; padding: 0 14px 10px; font-size: .75rem; color: var(--muted); }
+.map-legend .map-faded { font-style: italic; }
