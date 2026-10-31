@@ -23,11 +23,12 @@
     meetings: {
       column: "Available Board Meetings",
       breaks: [1, 5, 15, 30],
-      colors: ["#e7ecef", "#c6dbef", "#6baed6", "#2171b5", "#08306b"],
+      colors: ["#deebf7", "#9ecae1", "#4292c6", "#2171b5", "#08306b"],
       labels: ["0", "1–4", "5–14", "15–29", "30 or more"]
     }
   };
   const NO_DATA = "#9e9e9e";
+  const NO_DISTRICT = "#e3eedd";   // areas outside any school district (national parks, federal land, water)
 
   let map = null, loading = null, lookup = {}, layers = {}, current = null, fips = {}, aliases = {};
 
@@ -85,21 +86,21 @@
   const undefinedArea = (f) => /^School District Not Defined$/i.test(f.properties.NAME || "");
 
   function style(feature) {
-    if (undefinedArea(feature)) return { fillOpacity: 0, color: "#999", weight: 0.3, dashArray: "2 3" };
+    if (undefinedArea(feature)) return { fillColor: NO_DISTRICT, fillOpacity: 0.9, color: "#8a9a80", weight: 0.3, dashArray: "2 3" };
     const f = window.SiteFilters;
     let on = inView(feature.properties.GEOID);
     if (on && f && f.active()) {
       const r = rowFor(feature.properties.GEOID);
       on = !!r && f.test(r);
     }
-    return { fillColor: color(rowFor(feature.properties.GEOID)), fillOpacity: on ? 0.8 : 0.15, color: "#555", weight: on ? 0.4 : 0.2 };
+    return { fillColor: color(rowFor(feature.properties.GEOID)), fillOpacity: on ? 0.85 : 0.35, color: "#555", weight: on ? 0.4 : 0.2 };
   }
 
   const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
   function tip(feature) {
     const r = rowFor(feature.properties.GEOID);
-    if (undefinedArea(feature)) return `<div class="map-tip"><strong>No school district</strong>Area the Census leaves outside any district (mostly water or federal land)</div>`;
+    if (undefinedArea(feature)) return `<div class="map-tip"><strong>No school district</strong>Area the Census leaves outside any district, mostly national parks and other federal land (e.g. Grand Canyon, Yellowstone) or water</div>`;
     if (!r) return `<div class="map-tip"><strong>${esc(feature.properties.NAME)}</strong>Available board meetings: 0<br>No poverty data for this district</div>`;
     const place = [r.County, r.State || r.Territory].filter(Boolean).join(", ");
     const pov = toNumber(r["Percentage of Children Ages 5-17 in Poverty"]);
@@ -117,7 +118,11 @@
   function legend() {
     const sc = SCALES[$("map-metric").value];
     const items = sc.labels.map((l, i) => `<span><i style="background:${sc.colors[i]}"></i>${l}</span>`);
-    if ($("map-metric").value !== "meetings") items.push(`<span><i style="background:${NO_DATA}"></i>No data</span>`);
+    items.push(`<span><i style="background:${NO_DISTRICT}"></i>No school district (mostly national parks and federal land)</span>`);
+    const faded = [];
+    if (current && current.state) faded.push(current.state === "territories" ? "outside the U.S. territories" : `outside ${current.name}`);
+    if (window.SiteFilters && window.SiteFilters.active()) faded.push("that don't match the filters");
+    if (faded.length) items.push(`<span class="map-faded">Faded: districts ${faded.join(" or ")}</span>`);
     $("map-legend").innerHTML = items.join("");
   }
 
