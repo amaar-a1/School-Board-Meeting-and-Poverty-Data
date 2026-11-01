@@ -144,3 +144,20 @@ footer { padding: 8px 16px 40px; font-size: .85rem; }
 .ask-form button { background: var(--accent); color: #fff; border-color: var(--accent); }
 .ask-foot { margin: 0; padding: 0 14px 10px; font-size: .75rem; color: var(--muted); }
 .map-legend .map-faded { font-style: italic; }
+.map-search { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: 0 0 12px; font-size: .85rem; color: var(--muted); }
+.map-search-box { position: relative; flex: 1; min-width: 220px; max-width: 460px; }
+.map-search-box input { width: 100%; }
+.map-results { position: absolute; z-index: 1100; left: 0; right: 0; top: calc(100% + 4px); margin: 0; padding: 4px 0; list-style: none;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,.18); max-height: 320px; overflow-y: auto; }
+.map-results li { padding: 6px 10px; cursor: pointer; display: flex; flex-direction: column; color: var(--text); }
+.map-results li span { color: var(--muted); font-size: .8rem; }
+.map-results li:hover, .map-results li[aria-selected="true"] { background: var(--accent-soft); }
+.map-results .map-results-none { cursor: default; color: var(--muted); }
+.find { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: 0 0 14px; font-size: .9rem; color: var(--muted); }
+.find label { font-weight: 600; color: var(--text); }
+.find-card .find-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.find-card .find-head p { margin: 2px 0 0; }
+.find-close { border: 0; background: none; font-size: 1.4rem; line-height: 1; color: var(--muted); }
+.find-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.find-actions button { background: var(--surface); }
+.find-actions button[data-act="map"] { background: var(--accent); color: #fff; border-color: var(--accent); }
