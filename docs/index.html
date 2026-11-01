@@ -32,6 +32,16 @@
     <div id="tabs" class="tabs" role="tablist" aria-label="Data set" hidden></div>
     <p id="dataset-note" class="note dataset-note"></p>
 
+    <section id="find" class="find" aria-label="Find a district" hidden>
+      <label for="find-input">Find a district</label>
+      <div class="map-search-box">
+        <input id="find-input" type="search" placeholder="Type a district, county or state…" autocomplete="off"
+          role="combobox" aria-expanded="false" aria-controls="find-results" aria-autocomplete="list">
+        <ul id="find-results" class="map-results" role="listbox" hidden></ul>
+      </div>
+    </section>
+    <section id="find-card" class="card find-card" aria-live="polite" hidden></section>
+
     <div class="tabs view-tabs" role="tablist" aria-label="Page views">
       <button type="button" role="tab" data-view-tab="overview" aria-selected="true">Overview</button>
       <button type="button" role="tab" data-view-tab="size" aria-selected="false">By district size</button>
@@ -191,6 +201,14 @@
             <label><input type="checkbox" id="map-secondary"> Secondary districts</label>
           </div>
         </div>
+        <div class="map-search">
+          <label for="map-search">Find a district</label>
+          <div class="map-search-box">
+            <input id="map-search" type="search" placeholder="Type a district, county or state…" autocomplete="off"
+              role="combobox" aria-expanded="false" aria-controls="map-results" aria-autocomplete="list">
+            <ul id="map-results" class="map-results" role="listbox" hidden></ul>
+          </div>
+        </div>
         <p id="map-status" class="muted">Loading district borders…</p>
         <div id="map" class="map-box" role="region" aria-label="Map of school districts"></div>
         <div id="map-legend" class="map-legend"></div>
@@ -243,5 +261,6 @@
   <script src="map.js"></script>
   <script src="app.js"></script>
   <script src="assistant.js"></script>
+  <script src="search.js"></script>
 </body>
 </html>

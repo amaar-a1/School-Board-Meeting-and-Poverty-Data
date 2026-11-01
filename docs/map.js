@@ -30,6 +30,7 @@
   const NO_DATA = "#9e9e9e";
   const NO_DISTRICT = "#e3eedd";   // areas outside any school district (national parks, federal land, water)
 
+  let searchIndex = [], highlight = null, active = -1, byId = new Map();
   let map = null, loading = null, lookup = {}, layers = {}, current = null, fips = {}, aliases = {};
 
   // Borders with no row of their own (Vermont town districts, pieces of districts merged in 2024)
@@ -194,11 +195,108 @@
     $("map-metric").addEventListener("change", restyle);
     $("map-secondary").addEventListener("change", setSecondary);
     legend();
+    buildSearch();
+  }
+
+  // ---- "Find a district" --------------------------------------------------------------------
+  // One entry per district in the data (its border may be several shapes, e.g. a Vermont union's
+  // towns), plus entries for shapes whose own name differs (e.g. a Vermont town district).
+  const norm = (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9 ]/g, " ").replace(/\bsaint\b/g, "st").replace(/\s+/g, " ");
+
+  function buildSearch() {
+    const groups = new Map();
+    ["unsd", "elsd", "territories", "scsd"].forEach((n) => layers[n] && layers[n].eachLayer((l) => {
+      const p = l.feature.properties;
+      if (undefinedArea(l.feature)) return;
+      const r = rowFor(p.GEOID);
+      const id = (r && r["District ID"]) || (r && r.District) || p.GEOID;
+      const place = r ? [r.County, r.State || r.Territory].filter(Boolean).join(", ") : "";
+      if (!groups.has(id)) groups.set(id, { name: r ? r.District : p.NAME, place, layers: [], scsd: n === "scsd", row: r });
+      const g = groups.get(id);
+      if (n !== "scsd" || g.scsd) g.layers.push(l);
+      if (r && p.NAME && norm(p.NAME) !== norm(r.District) && n !== "scsd" && n !== "territories") {
+        groups.set(`shape-${p.GEOID}`, { name: p.NAME, place, layers: [l], row: r, partOf: r.District });
+      }
+    }));
+    byId = groups;
+    searchIndex = [...groups.values()].filter((g) => g.layers.length).map((g) => ({
+      ...g, text: norm(`${g.name} ${g.place}`), size: Number(String((g.row || {}).Enrollment || "").replace(/,/g, "")) || 0
+    }));
+    const box = $("map-search");
+    box.addEventListener("input", showResults);
+    box.addEventListener("keydown", (e) => {
+      const items = [...$("map-results").children];
+      if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+        e.preventDefault();
+        if (!items.length) return;
+        active = (active + (e.key === "ArrowDown" ? 1 : -1) + items.length) % items.length;
+        items.forEach((li, i) => li.setAttribute("aria-selected", String(i === active)));
+        items[active].scrollIntoView({ block: "nearest" });
+      } else if (e.key === "Enter") {
+        e.preventDefault();
+        const pick = items[active >= 0 ? active : 0];
+        if (pick) choose(Number(pick.dataset.i));
+      } else if (e.key === "Escape") {
+        hideResults();
+      }
+    });
+    $("map-results").addEventListener("mousedown", (e) => {
+      const li = e.target.closest("li[data-i]");
+      if (li) { e.preventDefault(); choose(Number(li.dataset.i)); }
+    });
+    box.addEventListener("blur", () => setTimeout(hideResults, 150));
+  }
+
+  let shown = [];
+  function showResults() {
+    const q = norm($("map-search").value).trim();
+    const list = $("map-results");
+    active = -1;
+    if (q.length < 2) return hideResults();
+    const words = q.split(/\s+/);
+    shown = searchIndex
+      .filter((e) => words.every((w) => e.text.includes(w)))
+      .sort((a, b) => (norm(b.name).startsWith(q) - norm(a.name).startsWith(q)) || (!!a.partOf - !!b.partOf) || b.size - a.size)
+      .slice(0, 8);
+    list.innerHTML = shown.length
+      ? shown.map((e, i) => `<li role="option" data-i="${i}" aria-selected="false"><strong>${esc(e.name)}</strong>` +
+          `<span>${esc([e.partOf ? `part of ${e.partOf}` : "", e.place].filter(Boolean).join(" · "))}</span></li>`).join("")
+      : `<li class="map-results-none">No district found</li>`;
+    list.hidden = false;
+    $("map-search").setAttribute("aria-expanded", "true");
+  }
+
+  function hideResults() {
+    $("map-results").hidden = true;
+    $("map-search").setAttribute("aria-expanded", "false");
+  }
+
+  function choose(i) { focusEntry(shown[i]); }
+
+  function focusEntry(e) {
+    if (!e) return;
+    hideResults();
+    $("map-search").value = e.name;
+    if (e.layers.some((l) => layers.scsd && layers.scsd.hasLayer(l)) && !$("map-secondary").checked) {
+      $("map-secondary").checked = true;
+      setSecondary();
+    }
+    let bounds = null;
+    e.layers.forEach((l) => { bounds = bounds ? bounds.extend(l.getBounds()) : L.latLngBounds(l.getBounds().getSouthWest(), l.getBounds().getNorthEast()); });
+    map.fitBounds(bounds, { maxZoom: 10, padding: [20, 20] });
+    $("map-jump").value = "";
+    if (highlight) highlight.remove();
+    highlight = L.featureGroup(e.layers.map((l) => L.geoJSON(l.feature, { interactive: false,
+      style: { fill: false, color: "#111", weight: 3 } }))).addTo(map);
+    e.layers[0].openTooltip(bounds.getCenter());
   }
 
   window.SiteMap = {
     rowFor: (geoid) => rowFor(geoid),
     restyle: () => { if (map) restyle(); },
+    // Zooms to and outlines a district by its District ID (used by the site-wide search).
+    focus: (id) => loading && loading.then(() => { map.invalidateSize(); focusEntry(byId.get(id)); }),
     show(ds, datasets) {
       current = ds;
       if (!loading) {

@@ -61,7 +61,7 @@
     }
     renderTabs();
     setupFilters();
-    window.SiteData = { datasets, config: cfg, select: (key) => selectDataset(key ? stateDataset(key) : datasets.find((d) => d.name === cfg.perState.from)) };
+    window.SiteData = { datasets, config: cfg, setView, select: (key) => selectDataset(key ? stateDataset(key) : datasets.find((d) => d.name === cfg.perState.from)) };
     selectDataset(datasets.find((d) => d.name === (cfg.perState && cfg.perState.from)) || datasets[0]);
   }
 
