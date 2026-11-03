@@ -323,9 +323,17 @@ def main(work, outdir):
         print("outside every board:", prov, f"{100 * share:.1f}% of the land")
         if share < 0.02:
             continue
+        # Its own rate: the census subdivisions inside it, shared by land area (reserves have no
+        # low-income figures, so this is mostly unorganized areas); else the province-wide rate.
+        cut = gpd.overlay(sub[["kids", "low", "area", "geometry"]], gpd.GeoDataFrame(geometry=[rest], crs=sub.crs), how="intersection", keep_geom_type=True)
+        sh = cut.geometry.area / cut["area"]
+        rk, rl = float((cut.kids * sh).sum()), float((cut.low * sh).sum())
         k, l = sub.kids.sum(), sub.low.sum()
+        own = rk >= 50
+        print("  its own figures:", round(rk), "children,", round(rl), "in low income")
         shapes.append({"id": f"CA-{prov}-REST", "geometry": rest.simplify(500), "pseudo": 1, "province": prov,
-                       "name": f"Rest of {prov} (no school board)", "pct": round(100 * l / k, 2) if k else None})
+                       "name": f"Rest of {prov} (no school board)", "own": 1 if own else 0, "kids": round(rk) if own else None,
+                       "pct": round(100 * (rl / rk if own else l / k), 2) if (rk if own else k) else None})
     shp = gpd.GeoDataFrame(shapes, geometry="geometry", crs=3347)
     shp = shp[shp.geometry.notna() & ~shp.geometry.is_empty].to_crs(4326)
     shp.to_file(f"{outdir}/canada_boards.geojson", driver="GeoJSON")
