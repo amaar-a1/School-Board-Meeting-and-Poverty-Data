@@ -757,8 +757,8 @@
     const isCA = current && (current.country === "CA" || (current.parent && current.parent.country === "CA"));
     const both = current && current.combined;
     const laws = isCA ? ca.laws : both ? [...us.laws, ...ca.laws] : us.laws;
-    $("rules-title").textContent = isCA ? "Provincial rules for recording or streaming school board meetings (Canada)"
-      : both ? "Rules for recording or streaming school board meetings (US states and Canadian provinces)"
+    $("rules-title").textContent = isCA ? "Province rules for recording or streaming school board meetings (Canada)"
+      : both ? "State and province rules for recording or streaming school board meetings (US and Canada)"
       : "State rules for recording or streaming school board meetings";
     $("rules-place").textContent = isCA ? "Province" : both ? "State or province" : "State";
     $("rules-intro").textContent = isCA
@@ -784,7 +784,7 @@
       li.append(b, x.note);
       ul.appendChild(li);
     });
-    const label = isCA ? "Provincial rules" : both ? "Rules" : "State rules";
+    const label = isCA ? "Province rules" : both ? "State & province rules" : "State rules";
     document.querySelectorAll('[data-view-tab="rules"], [data-view-link="rules"]').forEach((el) => { el.textContent = label; });
   }
 

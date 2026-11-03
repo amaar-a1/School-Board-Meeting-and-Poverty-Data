@@ -142,7 +142,7 @@
     const note = [r["How poverty was calculated"], r["Meetings note"]].filter(Boolean).join(". ");
     return `<div class="map-tip"><strong>${esc(r.District)}, ${esc(r.Province)}</strong>` +
       (r.pseudo ? "Not a school board<br>" : `${esc(r["Board type"])} board<br>`) +
-      `Children (0–17) in low income: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}${r.pseudo ? " (province-wide rate)" : ""}<br>` +
+      `Children (0–17) in low income: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}${r.pseudo && !r.own ? " (province-wide rate)" : ""}<br>` +
       `Board meetings found: ${isNaN(meet) ? 0 : meet.toLocaleString()}` +
       (note ? `<div class="tip-note">${esc(note)}</div>` : "") + "</div>";
   }
@@ -228,12 +228,13 @@
     const caNames = ((window.SITE_CONFIG.dataFiles.find((d) => d.country === "CA") || {}).groups || {}).names || {};
     files.canada.features.filter((f) => f.properties.pseudo).forEach((f) => {
       const p = f.properties, prov = caNames[p.province] || p.province;
-      lookup[gid(f)] = { District: `Rest of ${prov} (no school board)`, Province: prov, "Board type": "No school board", pseudo: true,
+      lookup[gid(f)] = { District: `Rest of ${prov} (no school board)`, Province: prov, "Board type": "No school board", pseudo: true, own: !!p.own,
         "Percentage of Children Ages 0-17 in Low Income": p.pct ?? "", "Available Board Meetings": 0,
         "How poverty was calculated": `Not a school board: the part of ${prov} outside every public board's border` +
           (p.province === "ON" ? ", mostly the Far North (unorganized land and First Nations reserves, whose schools are run by First Nations or small school authorities)"
             : p.province === "AB" ? ", mostly national parks (Wood Buffalo, Jasper, Banff) and First Nations reserves" : "") +
-          `. Shown with ${prov}'s province-wide rate and 0 meetings; it isn't counted in ${prov}'s data` };
+          (p.own ? `. Its rate is from the census areas inside it (${Number(p.kids).toLocaleString()} children; reserves have no low-income figures, so it mostly covers unorganized areas)`
+            : `. Shown with ${prov}'s province-wide rate`) + `; 0 meetings. It isn't counted in ${prov}'s data` };
     });
     const caRows = files.canada.features.map((f) => lookup[gid(f)]).filter(Boolean);
     const hasMain = new Set(caRows.filter(caMainRow).map((r) => r.Province));
