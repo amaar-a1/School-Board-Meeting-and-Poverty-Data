@@ -181,7 +181,7 @@ def main(work, outdir):
     rows, shapes = [], []
     poly = boards(work)
     inter = gpd.overlay(csd[["CSDUID", "kids", "low", "area", "geometry"]], poly[["id", "geometry"]], how="intersection", keep_geom_type=True)
-    inter["share"] = inter.geometry.area / inter.area
+    inter["share"] = inter.geometry.area / inter["area"]
     agg = inter.assign(k=inter.kids * inter.share, l=inter.low * inter.share).groupby("id")[["k", "l"]].sum()
     for _, b in poly.iterrows():
         k, l = agg.loc[b.id] if b.id in agg.index else (0, 0)
@@ -217,11 +217,15 @@ def main(work, outdir):
         if not ok(r["id"]):
             r["id"] = f"CA-{r['province']}-{i}"
         if not ok(r["name"]):
-            print("board with no name:", r["id"], r["province"], r["type"])
-            r["name"] = r["id"]
+            r["name"] = None
         r["province"], r["type"] = str(r["province"]), str(r["type"])
         r["website"] = r["website"] if isinstance(r["website"], str) else ""
         r["pct"] = f"{100 * r['low'] / r['kids']:.2f}%" if r["kids"] else ""
+    gone = {r["id"] for r in rows if r["name"] is None}
+    if gone:
+        print("left out boards with no name:", [(r["id"], r["kids"]) for r in rows if r["id"] in gone])
+    rows = [r for r in rows if r["id"] not in gone]
+    shapes = [x for x in shapes if x["id"] not in gone]
     with open(f"{outdir}/canada.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["District", "Province", "Board type", "Children Ages 0-17", "Children Ages 0-17 in Low Income",
