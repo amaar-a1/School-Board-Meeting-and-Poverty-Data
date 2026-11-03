@@ -241,15 +241,17 @@ def main(work, outdir):
     csd["low"] = csd.CSDUID.map(lambda u: li.get(u, (0, 0))[1])
     csd["geometry"] = csd.geometry.make_valid().buffer(0)
     csd["area"] = csd.geometry.area
-    # Estimated locale, after Statistics Canada's population centre sizes (large urban 100,000+,
-    # medium 30,000-99,999, small 1,000-29,999), for subdivisions with at least 150 people per
-    # km2 (the OECD's rural cutoff); the rest are rural.
+    # Estimated locale, after Statistics Canada's population centre sizes: large urban 100,000+
+    # people; medium 30,000-99,999 and small 1,000-29,999 for subdivisions with at least 150
+    # people per km2 (the OECD's rural cutoff); the rest are rural.
     csd["pop"] = csd.CSDUID.map(lambda u: pop.get(u, 0))
     dens = csd["pop"] / (csd["area"] / 1e6)
     csd["loc"] = "Rural"
     csd.loc[(dens >= 150) & (csd["pop"] >= 1000), "loc"] = "Small urban"
     csd.loc[(dens >= 150) & (csd["pop"] >= 30000), "loc"] = "Medium urban"
-    csd.loc[(dens >= 150) & (csd["pop"] >= 100000), "loc"] = "Large urban"
+    # 100,000+ people is large urban at any density: amalgamated cities such as Halifax or Greater
+    # Sudbury take in so much rural land that their density falls under the cutoff.
+    csd.loc[csd["pop"] >= 100000, "loc"] = "Large urban"
     print("CSD locales:", csd.groupby("loc").kids.sum().round().to_dict())
     csd["CD"] = csd.CSDUID.str[:4]
     # split counties used by two boards
