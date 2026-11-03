@@ -128,7 +128,7 @@ window.SOURCES = [
       { title: "Each board's own YouTube channel (listed in the “Meetings source” column)", url: "https://www.youtube.com/" },
       { title: "Civic Searchlight (checked; covers city councils and police boards, not school boards)", url: "https://nmc-mic.ca/2025/10/09/civic-searchlight-accountability-tool-launches/" }
     ],
-    note: "Videos whose titles show a board meeting (regular, special or public meetings, committee of the whole, or the French “séance” or “conseil d'administration”) were counted; a meeting split into parts counts once. Meetings streamed only on Zoom, Facebook or a board's own site aren't counted."
+    note: "Each board's channel was found by searching YouTube for the board's name (and its acronym or French name); channels that turned out to belong to someone else, such as a US district with the same name, were checked by hand and left out. Videos whose titles show a meeting of the board or one of its committees (“meeting”, or the French “séance” or “réunion”) were counted, leaving out information sessions, trainings and similar events; a meeting split into parts counts once. Meetings streamed only on Zoom, Facebook or a board's own site aren't counted, so 0 doesn't mean a board holds no public meetings."
   },
   {
     only: "Texas",
