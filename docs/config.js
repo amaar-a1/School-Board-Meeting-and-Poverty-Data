@@ -35,6 +35,24 @@ window.SITE_CONFIG = {
       note: "{rows} Canadian school boards and school service centres in every province and territory. Canada has no site like CivicSearch, so meeting counts are the board meetings each board has posted on its own YouTube channel (meetings found for {withMeetings} boards; the rest show 0, which can also mean the board streams elsewhere). Low income is Statistics Canada's after-tax low-income measure (LIM-AT) for children ages 0–17 from the 2021 Census (2020 incomes), worked out for each board from the census subdivisions inside its border; see the “How poverty was calculated” column. These figures aren't comparable with the US child poverty rates.",
       footer: "Canadian boards, borders and low-income figures as built in November 2026. Sources are listed on the Sources tab." }
   ],
+  // "All" button: every US district, territory school system and Canadian board together.
+  combined: {
+    name: "All: United States, U.S. territories and Canada", button: "All", recordLabel: "Districts and boards",
+    textColumns: ["District ID"], metric: "Child poverty rate",
+    measures: {
+      us: "Children 5–17 in poverty (Census SAIPE 2024)",
+      territories: "Children 5–17 in poverty (Census; 2020 Census for all but Puerto Rico)",
+      canada: "Children 0–17 in low income (Statistics Canada LIM-AT, 2021 Census)"
+    },
+    chart: { type: "scatter", x: "Child poverty rate", y: "Available Board Meetings" },
+    compare: {
+      title: "Child poverty: with vs. without available board meetings (all countries)",
+      by: "Available Board Meetings", metric: "Child poverty rate",
+      withLabel: "With 1+ available meetings", withoutLabel: "With no available meetings"
+    },
+    note: "Every US school district, U.S. territory school system and Canadian school board on this site together ({rows}; meetings found for {withMeetings}). The child poverty rate isn't measured the same way everywhere: US districts use the Census share of children 5–17 in poverty, the territories mostly the 2020 Census, and Canada Statistics Canada's share of children 0–17 in low income (see the “Poverty measure” column). Meeting counts come from CivicSearch in the US and from the boards' own sites or YouTube channels in the territories and Canada. So treat comparisons across countries with care; the US, territory and Canada buttons have each one's full figures.",
+    footer: "Built from the United States, U.S. territories and Canada data. Sources for all three are listed on the Sources tab."
+  },
   // State menu: every state and DC. Each state's view is the national rows with this
   // State value.
   perState: {

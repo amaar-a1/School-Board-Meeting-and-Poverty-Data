@@ -2,6 +2,7 @@
   const cfg = window.SITE_CONFIG;
   const $ = (id) => document.getElementById(id);
   let datasets = [];   // [{ name, columns, rows, numeric: Set }]
+  let combined = null; // the "All" view: every data set's rows in shared columns (see cfg.combined)
   let current = null;
   let sort = { col: null, dir: 1 };
   let chart = null;
@@ -55,6 +56,7 @@
         const withMeetings = d.rows.filter((r) => toNumber(r[cmpFor(d).by]) > 0).length;
         d.note = d.note.replace("{rows}", d.rows.length.toLocaleString()).replace("{withMeetings}", withMeetings.toLocaleString());
       });
+      if (cfg.combined) combined = buildCombined(cfg.combined);
       $("status").textContent = "";
     } catch (err) {
       $("status").classList.add("error");
@@ -63,8 +65,36 @@
     }
     renderTabs();
     setupFilters();
-    window.SiteData = { datasets, config: cfg, setView, select: (key) => selectDataset(key ? stateDataset(key) : datasets.find((d) => d.name === cfg.perState.from)) };
+    window.SiteData = { datasets, combined, config: cfg, setView, select: (key) => selectDataset(key ? stateDataset(key) : datasets.find((d) => d.name === cfg.perState.from)) };
     selectDataset(datasets.find((d) => d.name === (cfg.perState && cfg.perState.from)) || datasets[0]);
+  }
+
+  // The "All" view: US districts, territory school systems and Canadian boards in one table, with
+  // shared columns. Their poverty measures differ, so each row says which one it uses.
+  function buildCombined(c) {
+    const ps = cfg.perState, out = [];
+    const pct = (v) => (String(v ?? "").trim() === "" ? "" : `${toNumber(v).toFixed(2)}%`);
+    datasets.forEach((d) => d.rows.forEach((r) => {
+      const ca = d.country === "CA", terr = !!d.state;
+      out.push({
+        District: r.District,
+        Country: ca ? "Canada" : terr ? "U.S. territories" : "United States",
+        "State or province": ca ? r.Province : terr ? r.Territory : (ps.names[r.State] || r.State),
+        "Available Board Meetings": r["Available Board Meetings"] ?? "",
+        [c.metric]: pct(ca ? r["Percentage of Children Ages 0-17 in Low Income"] : r["Percentage of Children Ages 5-17 in Poverty"]),
+        "Poverty measure": ca ? c.measures.canada : terr ? c.measures.territories : c.measures.us,
+        Children: ca ? r["Children Ages 0-17"] : r["Children Ages 5-17"],
+        Enrollment: r.Enrollment ?? "",
+        Locale: r.Locale ?? "",
+        "Other Board Meetings": r["Other Board Meetings"] ?? "",   // DC, Hawaiʻi and Vermont boards' own sites
+        "District ID": r["District ID"]
+      });
+    }));
+    const text = Papa.unparse({ fields: Object.keys(out[0]), data: out.map((r) => Object.values(r)) });
+    const ds = parse(c.name, text, { ...c, combined: true });
+    const withMeetings = ds.rows.filter((r) => toNumber(r[c.compare.by]) > 0).length;
+    ds.note = (c.note || "").replace("{rows}", ds.rows.length.toLocaleString()).replace("{withMeetings}", withMeetings.toLocaleString());
+    return ds;
   }
 
   // One state's view: its own data set if there is one (the territories), otherwise
@@ -116,6 +146,17 @@
       b.addEventListener("click", () => selectDataset(d));
       tabs.appendChild(b);
     });
+    if (combined) {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.role = "tab";
+      b.className = "country-button";
+      b.dataset.name = combined.name;
+      b.textContent = combined.button || combined.name;
+      b.title = combined.name;
+      b.addEventListener("click", () => selectDataset(combined));
+      tabs.appendChild(b);
+    }
     const sel = document.createElement("select");
     sel.id = "state-select";
     sel.setAttribute("aria-label", "State or province");
@@ -737,8 +778,9 @@
     const shown = (x) => !x.only || [].concat(x.only).some((n) => n === (current.sourcesAs || current.name) || n === current.name);
     // Groups with no `only` are about the US data; another country's view shows only its own groups.
     const other = current.country || (current.parent && current.parent.country);
-    (window.SOURCES || []).filter((g) => (other ? !!g.only : true) && shown(g)).forEach((g) => {
-      const items = g.items.filter(shown);
+    const keep = (x) => current.combined || shown(x);
+    (window.SOURCES || []).filter((g) => current.combined || ((other ? !!g.only : true) && shown(g))).forEach((g) => {
+      const items = g.items.filter(keep);
       if (!items.length) return;
       const h = document.createElement("h3");
       h.textContent = g.group;

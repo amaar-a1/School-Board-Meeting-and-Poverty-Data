@@ -20,7 +20,8 @@
     Guam: [[13.2, 144.6], [13.7, 145.0]],
     "Northern Mariana Islands": [[14.0, 144.8], [15.4, 146.0]],
     "American Samoa": [[-14.6, -171.1], [-14.1, -168.1]],
-    Canada: [[42, -140], [62, -53]]
+    Canada: [[42, -140], [62, -53]],
+    "United States and Canada": [[18, -165], [68, -52]]
   };
   const SCALES = {
     poverty: {
@@ -91,6 +92,7 @@
 
   // In a state's view (or the territories'), districts elsewhere are faded.
   function inView(geoid) {
+    if (current && current.combined) return true;
     const ca = current && (current.country === "CA" || (current.parent && current.parent.country === "CA"));
     if (isCA(geoid) !== !!ca) return false;   // the US and Canada views fade each other
     if (ca) return !current.state || geoid.startsWith(`CA-${current.state.split(":")[1]}-`);
@@ -147,12 +149,12 @@
   function legend() {
     const sc = SCALES[$("map-metric").value];
     const items = sc.labels.map((l, i) => `<span><i style="background:${sc.colors[i]}"></i>${l}</span>`);
-    const ca = current && (current.country === "CA" || current.parent);
-    if (!ca) items.push(`<span><i style="background:${NO_DISTRICT}"></i>No school district (mostly national parks and federal land)</span>`);
+    const ca = current && (current.country === "CA" || current.parent || current.combined);
+    if (!ca || current.combined) items.push(`<span><i style="background:${NO_DISTRICT}"></i>No school district (mostly national parks and federal land)</span>`);
     const faded = [];
     if (current && current.state) faded.push(current.state === "territories" ? "outside the U.S. territories" : `outside ${current.name}`);
-    else if (ca) faded.push("outside Canada");
-    if (ca && $("map-metric").value === "poverty") items.push(`<span class="map-faded">Canada: share of children 0–17 in low income (LIM-AT, 2020), not the same measure as the US child poverty rate</span>`);
+    else if (ca && !current.combined) faded.push("outside Canada");
+    if (ca && $("map-metric").value === "poverty") items.push(`<span class="map-faded">${current.combined ? "Canadian boards" : "Canada"}: share of children 0–17 in low income (LIM-AT, 2020), not the same measure as the US child poverty rate</span>`);
     if (window.SiteFilters && window.SiteFilters.active()) faded.push("that don't match the filters");
     if (faded.length) items.push(`<span class="map-faded">Faded: districts ${faded.join(" or ")}</span>`);
     $("map-legend").innerHTML = items.join("");
@@ -175,6 +177,7 @@
   function zoomToCurrent() {
     if (!map || !current) return;
     if (current.state === "territories") return jump("Puerto Rico");
+    if (current.combined) return jump("United States and Canada");
     if (current.country === "CA" && !current.parent) return jump("Canada");
     if (current.parent) {
       const pre = `CA-${current.state.split(":")[1]}-`;
@@ -217,7 +220,16 @@
     const renderer = L.canvas({ padding: 0.3 });
     const files = {};
     LAYERS.forEach((name, i) => { files[name] = topo[i] ? topojson.feature(topo[i], topo[i].objects[name]) : { type: "FeatureCollection", features: [] }; });
-    const caMain = (f) => caMainRow(lookup[gid(f)]);
+    // Yukon and Nunavut have no public board of their own (the territory runs most schools), so
+    // their territory-wide board shows in the main layer: the First Nation board, else the French one.
+    const caRows = files.canada.features.map((f) => lookup[gid(f)]).filter(Boolean);
+    const hasMain = new Set(caRows.filter(caMainRow).map((r) => r.Province));
+    const stand = {};
+    caRows.filter((r) => !hasMain.has(r.Province)).forEach((r) => {
+      const cur = stand[r.Province];
+      if (!cur || (cur["Board type"] === "Francophone" && r["Board type"] !== "Francophone")) stand[r.Province] = r;
+    });
+    const caMain = (f) => { const r = lookup[gid(f)]; return caMainRow(r) || (!!r && stand[r.Province] === r); };
     files.canada2 = { type: "FeatureCollection", features: files.canada.features.filter((f) => !caMain(f)) };
     files.canada.features = files.canada.features.filter(caMain);
     DRAW.forEach((name) => {
