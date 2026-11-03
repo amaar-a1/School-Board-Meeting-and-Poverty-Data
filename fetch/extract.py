@@ -30,3 +30,4 @@ for attempt in range(4):
         open("fetch/out/canada/ontario_error.txt", "a").write(f"{e}\n")
 # rerun 1793688509
 # rerun 1793689251
+# rerun 1793689888
