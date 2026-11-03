@@ -121,7 +121,7 @@ def boards(work):
     zipfile.ZipFile(fetch("https://www.donneesquebec.ca/recherche/dataset/37d944eb-335b-40fe-8d80-835ff77bc5cb/resource/2ded8ebe-5e71-4dff-91de-896b4150e19c/download", f"{work}/qc.zip")).extractall(f"{work}/qc")
     for shp, typ in [("CS_FRA.shp", "French"), ("CS_ANG.shp", "English"), ("CS_STA.shp", "Special status")]:
         q = gpd.read_file(f"{work}/qc/{shp}")
-        out.append(gpd.GeoDataFrame({"id": "CA-QC-" + q.CD_CS.astype(str), "name": q.NOM_LONG, "province": "QC", "type": typ,
+        out.append(gpd.GeoDataFrame({"id": "CA-QC-" + q.CD_CS.astype(str), "name": q.NOM_LONG.fillna(q.NOM_CS), "province": "QC", "type": typ,
             "website": q.SITE_WEB}, geometry=q.geometry, crs=q.crs))
     for lname, url in find_alberta():
         try:
@@ -213,6 +213,8 @@ def main(work, outdir):
                      "kids": round(sub.kids.sum()), "low": round(sub.low.sum()),
                      "method": "Serves the whole province or territory, so its figures are province- or territory-wide", "website": ""})
     for r in rows:
+        r["name"] = str(r["name"]) if isinstance(r["name"], str) and r["name"].strip() else r["id"]
+        r["website"] = r["website"] if isinstance(r["website"], str) else ""
         r["pct"] = f"{100 * r['low'] / r['kids']:.2f}%" if r["kids"] else ""
     with open(f"{outdir}/canada.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
