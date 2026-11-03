@@ -131,6 +131,18 @@ window.SOURCES = [
     note: "Each board's channel was found by searching YouTube for the board's name (and its acronym or French name); channels that turned out to belong to someone else, such as a US district with the same name, were checked by hand and left out. Videos whose titles show a meeting of the board or one of its committees (“meeting”, or the French “séance” or “réunion”) were counted, leaving out information sessions, trainings and similar events; a meeting split into parts counts once. Meetings streamed only on Zoom, Facebook or a board's own site aren't counted, so 0 doesn't mean a board holds no public meetings."
   },
   {
+    only: "Canada",
+    group: "Canada: provincial rules on recording or streaming board meetings (checked November 3, 2026)",
+    items: [
+      { title: "Ontario: O. Reg. 463/97, Electronic Meetings and Meeting Attendance (Education Act)", url: "https://www.ontario.ca/laws/regulation/970463" },
+      { title: "Global News: Ontario school boards under supervision told to stop livestreaming meetings (October 2025)", url: "https://globalnews.ca/news/11472398/ontario-school-board-live-streaming-meeting-change" },
+      { title: "CBC News: Ottawa parent fights back after school board stops livestreaming committee meetings", url: "https://www.cbc.ca/news/canada/ottawa/ottawa-parent-fights-back-after-school-board-stops-livestreaming-committee-meetings-9.6933871" },
+      { title: "Quebec: Education Act (Loi sur l'instruction publique, I-13.3), sections 162 and 167", url: "https://www.legisquebec.gouv.qc.ca/fr/document/lc/i-13.3" },
+      { title: "St. Albert Gazette: Alberta board debates posting meeting recordings (no provincial requirement)", url: "https://www.stalbertgazette.com/local-news/st-albert-public-schools-board-debates-public-access-to-meeting-recordings-11661194" }
+    ],
+    note: "No province or territory was found to require school boards to record or livestream meetings. Provincial school acts require open meetings and minutes; the statute details here are from summaries and should be checked against the current acts."
+  },
+  {
     only: "Texas",
     group: "Law",
     items: [

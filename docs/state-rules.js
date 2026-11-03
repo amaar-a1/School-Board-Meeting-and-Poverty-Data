@@ -48,5 +48,21 @@ window.STATE_RULES = {
     { state: "Arizona", note: "School board livestreaming bill was vetoed." },
     { state: "Arkansas", note: "2025 bill requiring video recording of public meetings was withdrawn." },
     { state: "Georgia", note: "HB 989 (proposed) would require public comment to be recorded or broadcast like the rest of a meeting." }
-  ]
+  ],
+  // Canada: provincial rules, shown instead of the US ones in the Canada views. No province was
+  // found to require school boards to record or stream meetings; these are the related rules.
+  canada: {
+    checked: "November 3, 2026",
+    laws: [
+      { state: "Ontario", covers: "Boards under provincial supervision (e.g. Toronto DSB, Ottawa-Carleton DSB, Dufferin-Peel Catholic DSB)", threshold: "",
+        rule: "Restriction, not a requirement: in October 2025 the Minister of Education told these boards' supervisors to stop livestreaming board and committee meetings (including special education advisory committees); the media may still record. The minister said he'd reconsider; whether it still applies hasn't been confirmed." },
+      { state: "Ontario", covers: "All school boards", threshold: "",
+        rule: "Board and committee meetings are open to the public, who must be able to attend in person; boards set their own policy on electronic participation (Education Act, O. Reg. 463/97). No requirement to record or stream." },
+      { state: "Quebec", covers: "School service centres and school boards", threshold: "",
+        rule: "Board sessions are public, with at least four ordinary sessions a year and minutes kept in a register (Education Act, s. 162 and 167). No requirement to record or broadcast." },
+      { state: "Alberta", covers: "All school boards", threshold: "",
+        rule: "Board meetings must be held in public (Education Act). No requirement to record or post meetings; livestreaming is each board's choice." }
+    ],
+    note: "No Canadian province or territory was found to require school boards to record or livestream their meetings; provinces not listed (British Columbia, Saskatchewan, Manitoba, the Atlantic provinces and the territories) require open meetings and minutes. Citations are on the Sources tab."
+  }
 };
