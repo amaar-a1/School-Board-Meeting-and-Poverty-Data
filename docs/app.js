@@ -200,12 +200,17 @@
     $("table-section").hidden = false;
     $("filters").hidden = !["overview", "map"].includes(view);
     // Locale and size filters need NCES columns, which Canada's data doesn't have.
+    const locSel = $("f-locale"), keepLoc = locSel.value;
+    locSel.innerHTML = '<option value="">Any</option>';
+    localeGroups(current.rows).forEach((g) => locSel.add(new Option(g, g)));
+    locSel.value = [...locSel.options].some((o) => o.value === keepLoc) ? keepLoc : "";
     ["f-locale", "f-size"].forEach((id) => {
       const has = id === "f-locale" ? current.columns.includes("Locale") : current.columns.includes(cfg.sizeTiers.column);
       $(id).closest("label").hidden = !has;
       if (!has) $(id).value = "";
     });
     if (view === "size") renderSize();
+    if (view === "locale") renderLocale();
     if (view === "map" && window.SiteMap) window.SiteMap.show(current, datasets);
   }
 
@@ -216,6 +221,7 @@
     document.querySelectorAll("[data-view-tab]").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.viewTab === name)));
     $("filters").hidden = !current || !["overview", "map"].includes(name);
     if (name === "size" && current) renderSize();
+    if (name === "locale" && current) renderLocale();
     if (name === "map" && current && window.SiteMap) window.SiteMap.show(current, datasets);
   }
 
@@ -242,6 +248,82 @@
       per10k: totalEnroll ? (totalMeetings / totalEnroll) * 10000 : NaN,
       perPovPoint: avgPoverty ? avgMeetings / avgPoverty : NaN
     };
+  }
+
+  // "By locale" tab: the same comparisons as "By district size", grouped by locale. US districts
+  // use NCES locale types; Canadian boards an estimate from Statistics Canada population sizes.
+  const LOCALE_ORDER = ["Urban", "Suburban", "Town", "Rural", "Large urban", "Medium urban", "Small urban", "Province-wide"];
+  function localeGroups(rows) {
+    const seen = new Set(rows.map((r) => String(r.Locale || "").trim()).filter(Boolean));
+    const order = LOCALE_ORDER.filter((g) => seen.has(g));
+    return [...order, ...[...seen].filter((g) => !order.includes(g)).sort()];
+  }
+
+  function renderLocale() {
+    const has = current.columns.includes("Locale");
+    const ok = has && canCompare();
+    $("locale-missing").textContent = has ? `This tab needs meeting counts and child poverty figures, which aren't available for ${current.name}.`
+      : "This tab needs a “Locale” column in the data.";
+    $("locale-missing").hidden = ok;
+    $("locale-content").hidden = !ok;
+    if (!ok) return;
+    const label = ((current && current.recordLabel) || cfg.recordLabel || "records").toLowerCase();
+    // Meetings per 10,000 students, or per 10,000 children where there's no enrollment (Canada).
+    const denom = current.columns.includes("Enrollment") && current.rows.some((r) => toNumber(r.Enrollment) > 0) ? "Enrollment"
+      : ["Children Ages 0-17", "Children", "Children Ages 5-17"].find((c) => current.columns.includes(c));
+    const per = denom === "Enrollment" ? "students" : "children";
+    const names = localeGroups(current.rows);
+    const groups = names.map((g) => ({ name: g, s: sizeStats(current.rows.filter((r) => String(r.Locale || "").trim() === g), denom) }));
+    const all = sizeStats(current.rows.filter((r) => String(r.Locale || "").trim()), denom);
+    const left = current.rows.filter((r) => !String(r.Locale || "").trim()).length;
+    const ca = current.country === "CA" || (current.parent && current.parent.country === "CA");
+    $("locale-note").textContent = (ca ? "Boards are grouped by an estimated locale (see below)." : current.combined
+      ? "US districts are grouped by NCES locale (2023); Canadian boards by an estimated locale (see below)."
+      : "Districts are grouped by NCES locale (2023): Urban (a city), Suburban, Town or Rural.") +
+      (left ? ` ${left.toLocaleString()} ${label} without a locale are left out of this tab.` : "");
+    $("locale-def").textContent = ca || current.combined
+      ? "Canada's locales are estimates: each census subdivision with at least 150 people per km² (the OECD's rural cutoff) is large urban (100,000+ people), medium urban (30,000–99,999) or small urban (1,000–29,999), after Statistics Canada's population centre sizes; the rest are rural. A board takes the locale where most of its children live; boards serving a whole province or territory are “Province-wide”. They aren't the same as the US NCES locales."
+      : "";
+    const cols = ["Locale", label[0].toUpperCase() + label.slice(1), "With meetings", "Avg meetings", "Poverty: with meetings", "Poverty: without",
+      `Meetings per 10,000 ${per}`, "Meetings per poverty point"];
+    const cells = (name, s) => s.n ? [name, s.n.toLocaleString(), `${pct(s.shareWith)} (${s.nWith})`, fixed(s.avgMeetings, 2),
+      s.nWith ? `${pct(s.povWith)} (${s.nWith})` : "–", s.nWithout ? `${pct(s.povWithout)} (${s.nWithout})` : "–",
+      fixed(s.per10k, 2), fixed(s.perPovPoint, 3)] : [name, "0", "–", "–", "–", "–", "–", "–"];
+    const table = $("locale-table");
+    table.tHead.innerHTML = "";
+    const hr = table.tHead.insertRow();
+    cols.forEach((c, i) => { const th = document.createElement("th"); th.textContent = c; if (i) th.className = "num"; hr.appendChild(th); });
+    const body = table.tBodies[0];
+    body.innerHTML = "";
+    [...groups.map((g) => cells(g.name, g.s)), cells(`All ${label}`, all)].forEach((vals, i) => {
+      const tr = body.insertRow();
+      if (i === groups.length) tr.className = "total";
+      vals.forEach((v, j) => { const td = tr.insertCell(); td.textContent = v; if (j) td.className = "num"; });
+    });
+    const accent = cssVar("--accent"), accent2 = cssVar("--accent-2"), text = cssVar("--muted"), grid = cssVar("--border");
+    const labels = groups.map((g) => g.name);
+    const axes = (yTitle) => ({ x: { ticks: { color: text }, grid: { display: false } },
+      y: { beginAtZero: true, title: { display: true, text: yTitle, color: text }, ticks: { color: text }, grid: { color: grid } } });
+    const legend = { labels: { color: text } };
+    const draw = (id, config) => { if (sizeCharts[id]) sizeCharts[id].destroy(); sizeCharts[id] = new Chart($(id), config); };
+    const tip = (i) => `${i.dataset.label}: ${pct(i.raw)} (${i.dataset.counts[i.dataIndex]} ${label})`;
+    draw("locale-poverty-chart", { type: "bar",
+      data: { labels, datasets: [
+        { label: "With available meetings", data: groups.map((g) => (g.s.nWith ? g.s.povWith : null)), counts: groups.map((g) => g.s.nWith), backgroundColor: accent, borderRadius: 3 },
+        { label: "Without", data: groups.map((g) => (g.s.nWithout ? g.s.povWithout : null)), counts: groups.map((g) => g.s.nWithout), backgroundColor: accent2, borderRadius: 3 }] },
+      options: { maintainAspectRatio: false, scales: axes("Average child poverty rate (%)"), plugins: { legend, tooltip: { callbacks: { label: tip } } } } });
+    draw("locale-share-chart", { type: "bar",
+      data: { labels, datasets: [
+        { label: "With available meetings", data: groups.map((g) => g.s.shareWith), counts: groups.map((g) => g.s.nWith), backgroundColor: accent },
+        { label: "Without", data: groups.map((g) => 100 - g.s.shareWith), counts: groups.map((g) => g.s.nWithout), backgroundColor: accent2 }] },
+      options: { maintainAspectRatio: false,
+        scales: { x: { stacked: true, ticks: { color: text }, grid: { display: false } },
+                  y: { stacked: true, max: 100, title: { display: true, text: `Share of ${label} (%)`, color: text }, ticks: { color: text }, grid: { color: grid } } },
+        plugins: { legend, tooltip: { callbacks: { label: tip } } } } });
+    draw("locale-meetings-chart", { type: "bar",
+      data: { labels, datasets: [{ label: "Average available meetings", data: groups.map((g) => g.s.avgMeetings), counts: groups.map((g) => g.s.n), backgroundColor: accent, borderRadius: 3 }] },
+      options: { maintainAspectRatio: false, scales: axes("Average available meetings"),
+        plugins: { legend: { display: false }, tooltip: { callbacks: { label: (i) => `${i.raw.toFixed(2)} meetings on average (${i.dataset.counts[i.dataIndex]} ${label})` } } } } });
   }
 
   function statCard(parent, label, value, sub) {
@@ -454,13 +536,13 @@
   // or an NCES locale such as "City: Large" or "21 - Suburb: Large".
   function isUrban(v) {
     const s = String(v ?? "").trim().toLowerCase();
-    return ["yes", "y", "true", "1", "x", "urban", "suburban"].includes(s) || /\b(city|suburb)\b/.test(s);
+    return ["yes", "y", "true", "1", "x", "urban", "suburban"].includes(s) || /\b(city|suburb)\b/.test(s) || /urban$/.test(s);
   }
 
   // Urban only (no suburbs): "Urban", or an NCES "City" locale such as "City: Large".
   function isCity(v) {
     const s = String(v ?? "").trim().toLowerCase();
-    return s === "urban" || /\bcity\b/.test(s);
+    return s === "urban" || s === "large urban" || /\bcity\b/.test(s);
   }
 
   function renderUrban() {
@@ -835,7 +917,7 @@
   document.querySelectorAll(".links a").forEach((a) => a.addEventListener("click", () => {
     setView(a.dataset.viewLink || "overview");
   }));
-  const viewFromHash = () => { if (["#size", "#map", "#rules", "#sources"].includes(location.hash)) setView(location.hash.slice(1)); };
+  const viewFromHash = () => { if (["#size", "#locale", "#map", "#rules", "#sources"].includes(location.hash)) setView(location.hash.slice(1)); };
   viewFromHash();
   window.addEventListener("hashchange", viewFromHash);
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
@@ -843,6 +925,7 @@
     renderChart();
     renderUrban();
     if (view === "size") renderSize();
+    if (view === "locale") renderLocale();
   });
 
   load();
