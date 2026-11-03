@@ -14,7 +14,8 @@ separate roman regional centre center services service scolaire scolaires commis
 authority francophone english french anglophone authority no number sd rce centre-de-services area county""".split())
 MEETING = re.compile(r"\bmeeting\b|s[ée]ance|r[ée]union (du|ordinaire|extraordinaire|publique)|assembl[ée]e (publique|du conseil|ordinaire)", re.I)
 NOT = re.compile(r"graduation|concert|tournament|highlights|commencement|webinar|town hall|information session|parent|"
-                 r"council meeting|city council|library|school options|open house|trustee (tour|corner)|message", re.I)
+                 r"council meeting|city council|library|school options|open house|trustee (tour|corner)|message|information|d.accueil|"
+                 r"\bPTO\b|career|drop.in|training|presentation|buddy|recognition|election|candidate", re.I)
 SCHOOLISH = re.compile(r"school|schools|board|division|district|\bsd\s?\d|\bsd\b|dsb|cdsb|education|scolaire|commission|conseil|"
                        r"trustees|ecsd|centre de services|\bcss\b|ecoles|écoles|rce\b|csf|catholic", re.I)
 # Not a school board's own channel: news, cities, churches, and US districts with the same place names.
@@ -108,6 +109,8 @@ def main(src, dst, overrides=""):
                 else:
                     french = b["Province"] == "QC" or b["Board type"] in ("French", "Francophone", "French public", "French Catholic")
                     queries = [f"{name} board meeting"] + ([f"{name} séance du conseil"] if french else [])
+                    if len(initials(name)) >= 4 and re.search(r"District School Board|Catholic", name):
+                        queries.append(f"{initials(name).upper()} board meeting")   # e.g. PDSB, YRDSB
                     chans = {}
                     for q in queries:
                         for e in ytdlp(f"ytsearch12:{q}").get("entries") or []:
