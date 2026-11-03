@@ -1,0 +1,47 @@
+[
+ [
+  "New Brunswick original metadata (https://gnb.socrata.com)",
+  "HTML",
+  "https://gnb.socrata.com/datasets/rnin-ez9d"
+ ],
+ [
+  "Student enrolment by school by grade by year, as of September 30 (CSV)",
+  "CSV",
+  "https://gnb.socrata.com/api/views/rnin-ez9d/rows.csv?accessType=DOWNLOAD"
+ ],
+ [
+  "Student enrolment by school by grade by year, as of September 30 (CSV Excel)",
+  "CSV",
+  "https://gnb.socrata.com/api/views/rnin-ez9d/rows.csv?accessType=DOWNLOAD&bom=true&format=true"
+ ],
+ [
+  "Student enrolment by school by grade by year, as of September 30 (CSV Excel (EU))",
+  "CSV",
+  "https://gnb.socrata.com/api/views/rnin-ez9d/rows.csv?accessType=DOWNLOAD&bom=true&format=true&delimiter=%3B"
+ ],
+ [
+  "Student enrolment by school by grade by year, as of September 30 (RDF)",
+  "RDF",
+  "https://gnb.socrata.com/api/views/rnin-ez9d/rows.rdf?accessType=DOWNLOAD"
+ ],
+ [
+  "Student enrolment by school by grade by year, as of September 30 (RSS)",
+  "RSS",
+  "https://gnb.socrata.com/api/views/rnin-ez9d/rows.rss?accessType=DOWNLOAD"
+ ],
+ [
+  "Student enrolment by school by grade by year, as of September 30 (TSV)",
+  "other",
+  "https://gnb.socrata.com/api/views/rnin-ez9d/rows.tsv?accessType=DOWNLOAD&bom=true&format=true&delimiter=%3B"
+ ],
+ [
+  "Student enrolment by school by grade by year, as of September 30 (XML)",
+  "XML",
+  "https://gnb.socrata.com/api/views/rnin-ez9d/rows.xml?accessType=DOWNLOAD"
+ ],
+ [
+  "Student enrolment by school by grade by year, as of September 30 - Advanced View",
+  "HTML",
+  "https://gnb.socrata.com/datasets/7eh3-wc6i"
+ ]
+]

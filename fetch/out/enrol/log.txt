@@ -1,0 +1,25 @@
+ok 18709 https://files.ontario.ca/opendata/enrolment_by_grade_elementary_schools_en.xlsx -> on_enrolment_by_grade_elementary_schools_en.xlsx
+FAIL https://files.ontario.ca/opendata/enrolment_by_grade_secondary_schools_en.xlsx: HTTP Error 403: Forbidden
+ok 74573 https://data.ontario.ca/api/3/action/package_show?id=enrolment-by-grade-in-elementary-schools -> None
+ok 18709 https://files.ontario.ca/opendata/enrolment_by_grade_elementary_schools_en.xlsx -> on_enrolment-by-grade-in-elementa_0.xlsx
+ok 19999 https://files.ontario.ca/opendata/enrolment_by_grade-elementary_schools_en_1.xlsx -> on_enrolment-by-grade-in-elementa_1.xlsx
+ok 74033 https://data.ontario.ca/api/3/action/package_show?id=enrolment-by-grade-in-secondary-schools -> None
+ok 15697 https://files.ontario.ca/opendata/enrolment_by_grade_secondary_17-18_en.xlsx -> on_enrolment-by-grade-in-secondar_0.xlsx
+ok 17202 https://files.ontario.ca/opendata/enrolment_by_grade_secondary_en_1.xlsx -> on_enrolment-by-grade-in-secondar_1.xlsx
+ok 71438 https://data.ontario.ca/api/3/action/package_show?id=ontario-public-schools-enrolment -> None
+ok 262910 https://files.ontario.ca/opendata/enrolment_by_school_1718_en_supp.xlsx -> on_ontario-public-schools-enrolme_0.xlsx
+ok 267051 https://files.ontario.ca/opendata/enrolment_by_school_en_-_sup_0.xlsx -> on_ontario-public-schools-enrolme_1.xlsx
+ok 11959 https://catalogue.data.gov.bc.ca/api/3/action/package_show?id=7114187e-305c-4a79-acbb-3294ba0f53c8 -> None
+ok 16865593 https://catalogue.data.gov.bc.ca/dataset/7114187e-305c-4a79-acbb-3294ba0f53c8/resource/c1a55945-8554-4058-9019-514b16178f89/download/student_headcount_by_grade_2017_18_to_2025_26.xlsx -> bc_0.xlsx
+ok 27948761 https://catalogue.data.gov.bc.ca/dataset/7114187e-305c-4a79-acbb-3294ba0f53c8/resource/579e1ecf-3778-4db4-af05-7da0e852ff75/download/student_headcount_by_grade_1991_92_to_2005_06.xlsx -> bc_1.xlsx
+ok 3958 https://open.alberta.ca/api/3/action/package_show?id=e5ada449-0242-47a4-ab46-181216dec8ca -> None
+ok 959641 https://open.alberta.ca/dataset/e5ada449-0242-47a4-ab46-181216dec8ca/resource/b8d03bf1-7299-46f8-ad2c-d2984e5fc999/download/alberta-school-authority-student-population-data.xlsx -> ab_0.vnd.m
+ok 5244007 https://www.edu.gov.mb.ca/k12/finance/sch_enrol/enrolment_2025.pdf -> mb_enrolment_2025.pdf
+ok 4542673 https://www.edu.gov.mb.ca/k12/finance/sch_enrol/enrolment_2024.pdf -> mb_enrolment_2024.pdf
+ok 67057 https://cdn-contenu.quebec.ca/cdn-contenu/education/indicateurs-statistiques/Previsions_effectif_scolaire/Faits_saillants/evolution-effectif-scolaire.pdf -> qc_evolution.pdf
+ok 153472 https://data.novascotia.ca/api/catalog/v1?q=enrolment%20school&limit=10 -> None
+FAIL https://data.novascotia.ca/api/views/7z8d-msnt/rows.csv?accessType=DOWNLOAD: HTTP Error 404: Not Found
+ok 11681 https://open.canada.ca/data/api/3/action/package_show?id=712e7355-91d7-7b4f-9d46-1e7b5561cd95 -> None
+ok 184172 https://gnb.socrata.com/api/views/rnin-ez9d/rows.csv?accessType=DOWNLOAD -> nb_0.csv
+ok 184382 https://gnb.socrata.com/api/views/rnin-ez9d/rows.csv?accessType=DOWNLOAD&bom=true&format=true -> nb_1.csv
+ok 14730 https://open.canada.ca/data/api/3/action/package_search?q=saskatchewan%20school%20division%20enrolment&rows=10 -> None

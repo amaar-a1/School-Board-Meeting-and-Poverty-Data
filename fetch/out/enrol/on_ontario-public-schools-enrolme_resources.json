@@ -1,0 +1,282 @@
+[
+ [
+  "2017-2018 Academic Year",
+  "XLSX",
+  "https://files.ontario.ca/opendata/enrolment_by_school_1718_en_supp.xlsx"
+ ],
+ [
+  "2017-2018 Academic Year",
+  "TXT",
+  "https://files.ontario.ca/opendata/enrol_by_schl_1718_en.txt"
+ ],
+ [
+  "2016-2017 Academic Year",
+  "XLSX",
+  "https://files.ontario.ca/opendata/enrolment_by_school_en_-_sup_0.xlsx"
+ ],
+ [
+  "2016-2017 Academic Year",
+  "TXT",
+  "https://files.ontario.ca/opendata/enrl_byschen_0.txt"
+ ],
+ [
+  "2015-2016 Academic Year",
+  "XLSX",
+  "https://files.ontario.ca/opendata/enrolment_by_school_en_-_sup.xlsx"
+ ],
+ [
+  "2015-2016 Academic Year",
+  "TXT",
+  "https://files.ontario.ca/opendata/enrl_byschen.txt"
+ ],
+ [
+  "2014-2015 Academic Year",
+  "XLSX",
+  "https://files.ontario.ca/opendata/enrolment_by_schoolen.xlsx"
+ ],
+ [
+  "2014-2015 Academic Year",
+  "TXT",
+  "https://files.ontario.ca/opendata/enrl_by_schen.txt"
+ ],
+ [
+  "2013-2014 Academic Year",
+  "XLSX",
+  "https://files.ontario.ca/opendata/enrolment_by_school_2013-14_en.xlsx"
+ ],
+ [
+  "2013-2014 Academic Year",
+  "TXT",
+  "https://files.ontario.ca/opendata/enrolment_by_school_2013-14_en.txt"
+ ],
+ [
+  "2012-2013 Academic Year",
+  "XLSX",
+  "https://files.ontario.ca/opendata/enrolment_by_school_2012-2013_en.xlsx"
+ ],
+ [
+  "2012-2013 Academic Year",
+  "TXT",
+  "https://files.ontario.ca/opendata/enrolment_by_school_2012-2013_en.txt"
+ ],
+ [
+  "2011-2012 Academic Year",
+  "XLSX",
+  "https://files.ontario.ca/opendata/enrolment_by_school_2011-2012_en_0.xlsx"
+ ],
+ [
+  "2011-2012 Academic Year",
+  "TXT",
+  "https://files.ontario.ca/opendata/enrolment_by_school_2011-2012_en_2.txt"
+ ],
+ [
+  "2017-2018 l\u2019Ann\u00e9e Scolaire",
+  "XLSX",
+  "https://files.ontario.ca/opendata/enrolment_by_school_1718_fr_supp.xlsx"
+ ],
+ [
+  "2017-2018 l\u2019Ann\u00e9e Scolaire",
+  "TXT",
+  "https://files.ontario.ca/opendata/enrol_by_schl_1718_fr.txt"
+ ],
+ [
+  "2016-2017 l\u2019Ann\u00e9e Scolaire",
+  "XLSX",
+  "https://files.ontario.ca/opendata/enrolment_by_school_fr_-_sup_0.xlsx"
+ ],
+ [
+  "2016-2017 l\u2019Ann\u00e9e Scolaire",
+  "TXT",
+  "https://files.ontario.ca/opendata/enrl_by_schfr_1.txt"
+ ],
+ [
+  "2015-2016 l\u2019Ann\u00e9e Scolaire",
+  "XLSX",
+  "https://files.ontario.ca/opendata/enrolment_by_school_fr_-_sup.xlsx"
+ ],
+ [
+  "2015-2016 l\u2019Ann\u00e9e Scolaire",
+  "TXT",
+  "https://files.ontario.ca/opendata/enrl_by_schfr_0.txt"
+ ],
+ [
+  "2014-2015 l\u2019Ann\u00e9e Scolaire",
+  "XLSX",
+  "https://files.ontario.ca/opendata/enrolment_by_schoolfr.xlsx"
+ ],
+ [
+  "2014-2015 l\u2019Ann\u00e9e Scolaire",
+  "TXT",
+  "https://files.ontario.ca/opendata/enrl_by_schfr.txt"
+ ],
+ [
+  "2013-2014 l\u2019Ann\u00e9e Scolaire",
+  "XLSX",
+  "https://files.ontario.ca/opendata/enrolment_by_school_2013-14_fr.xlsx"
+ ],
+ [
+  "2013-2014 l\u2019Ann\u00e9e Scolaire",
+  "TXT",
+  "https://files.ontario.ca/opendata/enrolment_by_school_2013-14_fr.txt"
+ ],
+ [
+  "2012-2013 l\u2019Ann\u00e9e Scolaire",
+  "XLSX",
+  "https://files.ontario.ca/opendata/enrolment_by_school_2012-2013_fr.xlsx"
+ ],
+ [
+  "2012-2013 l\u2019Ann\u00e9e Scolaire",
+  "TXT",
+  "https://files.ontario.ca/opendata/enrolment_by_school_2012-2013_fr.txt"
+ ],
+ [
+  "2011-2012 l\u2019Ann\u00e9e Scolaire",
+  "XLSX",
+  "https://files.ontario.ca/opendata/enrolment_by_school_2011-2012_fr_0.xlsx"
+ ],
+ [
+  "2011-2012 l\u2019Ann\u00e9e Scolaire",
+  "TXT",
+  "https://files.ontario.ca/opendata/enrolment_by_school_2011-2012_fr_1.txt"
+ ],
+ [
+  "2018-2019 Academic Year",
+  "TXT",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/fec01aff-e961-4258-a38a-a84b5d9e7505/download/enrol_by_sch_1819_en.txt"
+ ],
+ [
+  "2018-2019 l\u2019Ann\u00e9e Scolaire",
+  "TXT",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/3a6fe07c-e9f0-4fa5-8a6b-3586c54523c0/download/enrol_by_sch_1819_fr.txt"
+ ],
+ [
+  "2018-2019 Academic Year",
+  "XLSX",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/0092f907-8f7f-4d27-ae61-e9b80f025c7d/download/enrolment_by_school_1819_en_supp_final.xlsx"
+ ],
+ [
+  "2018-2019 l\u2019Ann\u00e9e Scolaire",
+  "XLSX",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/1c589a42-ff2b-4f67-8714-0927aa930f03/download/enrolment_by_school_1819_fr_supp_final.xlsx"
+ ],
+ [
+  "2019-2020",
+  "XLSX",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/1d3ab792-90e4-49f1-81ed-25f903b47027/download/enrolment_by_school_1920_en_supp.xlsx"
+ ],
+ [
+  "2019-2020",
+  "XLSX",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/e3f5bacf-0459-4275-b506-279370d6485f/download/enrolment_by_school_1920_fr_supp.xlsx"
+ ],
+ [
+  "2019-2020",
+  "TXT",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/8cf44c8a-5feb-4af1-82c9-fc2524b84fff/download/enrolment_supp_en_2019-2020.txt"
+ ],
+ [
+  "2019-2020",
+  "TXT",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/08e25f85-7102-4d58-9b68-2ceb0644ae28/download/enrolment_supp_fr_2019-2020.txt"
+ ],
+ [
+  "2020-2021",
+  "XLSX",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/c5f9829c-4ca8-4c4f-931d-2e01456639de/download/en_enrolment_by_school_2021.xlsx"
+ ],
+ [
+  "2020-2021",
+  "XLSX",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/60ed5996-f631-42b6-8435-e1ce628fabc2/download/fr_enrolment_by_school_2021.xlsx"
+ ],
+ [
+  "2020-2021",
+  "TXT",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/c328c012-9b25-4668-b6ad-f8327fbe6806/download/en_public_schools_enrolment_2020-21.txt"
+ ],
+ [
+  "2020-2021",
+  "TXT",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/d2d6ecde-1447-4e2d-80a5-db4dd6a37ff8/download/fr_public_schools_enrolment_2020-21.txt"
+ ],
+ [
+  "2021-2022",
+  "XLSX",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/d289f408-1f88-42fb-9d23-460f7f3aab1a/download/enrolment_by_school_2122_en_supp.xlsx"
+ ],
+ [
+  "2021-2022",
+  "TXT",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/6beacf63-55c0-4f1c-9759-f611f642e6f3/download/enrolment_by_school_2122_en_supp.txt"
+ ],
+ [
+  "2021-2022",
+  "XLSX",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/cfef3405-5acb-493d-9aab-ae659a043b29/download/enrolment_by_school_2122_fr_supp.xlsx"
+ ],
+ [
+  "2021-2022",
+  "TXT",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/7b0a4a5e-fd3b-458d-870d-62fba6d097fa/download/enrolment_by_school_2122_fr_supp.txt"
+ ],
+ [
+  "2023-2024 Academic Year",
+  "TXT",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/d490d94c-a2f2-49a9-8cae-19f4c4342611/download/enrolment_supp_en_2023-2024.txt"
+ ],
+ [
+  "2023-2024 Academic Year",
+  "XLSX",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/f0540857-210f-49cf-aff7-69e50fc0a2ab/download/enrolment_by_school_2324_en.xlsx"
+ ],
+ [
+  "2023-2024 Academic Year",
+  "TXT",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/410d4cde-421e-4b48-bc7a-32a60cb18969/download/enrolment_supp_fr_2023-2024.txt"
+ ],
+ [
+  "2023-2024 Academic Year",
+  "XLSX",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/b2d5a7c4-292b-42a0-82d4-c1ee6ece03de/download/enrolment_by_school_2324_fr.xlsx"
+ ],
+ [
+  "2022-2023",
+  "XLSX",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/8b89c6ee-804d-425f-a8a1-e9b8a773123e/download/enrolment_by_school_2223_final_en_supp.xlsx"
+ ],
+ [
+  "2022-2023",
+  "XLSX",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/2e2944de-8320-4a7c-b740-ed3148f5a4f3/download/enrolment_by_school_2223_final_fr_supp.xlsx"
+ ],
+ [
+  "2022-2023",
+  "TXT",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/63d5fd29-ece6-4ea3-b4b5-13951c0c209f/download/enrolment_supp_en_2022-2023.txt"
+ ],
+ [
+  "2022-2023",
+  "TXT",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/14ca263b-73a2-489f-b227-ad4f10c220e2/download/enrolment_supp_fr_2022-2023.txt"
+ ],
+ [
+  "2024-2025",
+  "TXT",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/5205b284-8f9d-4d97-8e3f-fb5391d0911d/download/enrolment_by_school_2425_en.txt"
+ ],
+ [
+  "2024-2025",
+  "TXT",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/2b94d2ff-b313-4d8d-ae6d-5a861ae16108/download/enrolment_by_school_2425_fr.txt"
+ ],
+ [
+  "2024-2025",
+  "XLSX",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/d9103427-2b6b-4ef6-9441-adb8037d5e50/download/enrolment_by_school_2425_en.xlsx"
+ ],
+ [
+  "2024-2025",
+  "XLSX",
+  "https://data.ontario.ca/dataset/d89271cf-c5b7-4537-9d8b-5905766d93c6/resource/eb0dbd27-f8b5-4e73-9afc-5310d7854990/download/enrolment_by_school_2425_fr.xlsx"
+ ]
+]
