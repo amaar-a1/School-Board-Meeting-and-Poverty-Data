@@ -10,8 +10,8 @@ ontario FRENCH_PUBLIC 4
 ontario FRENCH_CATHOLIC 8
 sask layers [(0, 'Education (K-12)'), (1, 'School'), (2, 'Sch_Public'), (3, 'Sch_Separate'), (4, 'Sch_Francophone'), (5, 'Sch_Band'), (6, 'School Division'), (7, 'SD_Public'), (8, 'SD_Separate'), (9, 'SD_Francophone'), (10, 'SD_Public_Link'), (11, 'SD_Separate_Link'), (12, 'Library'), (13, 'Libraries'), (14, 'Family Literacy Hubs'), (15, 'Family Resource Centers'), (16, 'Public Library System')]
 sask layer SD_Public 18 ['geometry', 'SD_NUM', 'SD_NAME', 'SD_TYPE', 'MAIL_ST_ADDR', 'MAIL_PO_ADDR', 'MAIL_OTH_ADDR', 'MAIL_P_CODE', 'MAIL_UM_NAME', 'PH_NUM', 'PROV_NAME', 'OBJECTID']
-saskatchewan failed max() iterable argument is empty
-boards drawn as several shapes, joined: [nan]
-331 boards; 315 shapes; income year 2020
+sask layer SD_Separate 8 ['geometry', 'SD_NUM', 'SD_NAME', 'SD_TYPE', 'MAIL_ST_ADDR', 'MAIL_P_CODE', 'MAIL_UM_NAME', 'PH_NUM', 'PROV_NAME', 'OBJECTID']
+boards drawn as several shapes, joined: [nan, 'CA-SK-Lloydminster', 'CA-SK-Regina']
+355 boards; 339 shapes; income year 2020
 
 --- stderr ---
