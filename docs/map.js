@@ -231,7 +231,8 @@
       lookup[gid(f)] = { District: `Rest of ${prov} (no school board)`, Province: prov, "Board type": "No school board", pseudo: true,
         "Percentage of Children Ages 0-17 in Low Income": p.pct ?? "", "Available Board Meetings": 0,
         "How poverty was calculated": `Not a school board: the part of ${prov} outside every public board's border` +
-          (p.province === "ON" ? ", mostly the Far North (unorganized land and First Nations reserves, whose schools are run by First Nations or small school authorities)" : "") +
+          (p.province === "ON" ? ", mostly the Far North (unorganized land and First Nations reserves, whose schools are run by First Nations or small school authorities)"
+            : p.province === "AB" ? ", mostly national parks (Wood Buffalo, Jasper, Banff) and First Nations reserves" : "") +
           `. Shown with ${prov}'s province-wide rate and 0 meetings; it isn't counted in ${prov}'s data` };
     });
     const caRows = files.canada.features.map((f) => lookup[gid(f)]).filter(Boolean);
