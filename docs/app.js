@@ -282,7 +282,7 @@
       : "Districts are grouped by NCES locale (2023): Urban (a city), Suburban, Town or Rural.") +
       (left ? ` ${left.toLocaleString()} ${label} without a locale are left out of this tab.` : "");
     $("locale-def").textContent = ca || current.combined
-      ? "Canada's locales are estimates: each census subdivision with at least 150 people per km² (the OECD's rural cutoff) is large urban (100,000+ people), medium urban (30,000–99,999) or small urban (1,000–29,999), after Statistics Canada's population centre sizes; the rest are rural. A board takes the locale where most of its children live; boards serving a whole province or territory are “Province-wide”. They aren't the same as the US NCES locales."
+      ? "Canada's locales are estimates, after Statistics Canada's population centre sizes: each census subdivision (municipality) with 100,000+ people is large urban; one with at least 150 people per km² (the OECD's rural cutoff) is medium urban (30,000–99,999 people) or small urban (1,000–29,999); the rest are rural. A board takes the locale where most of its children live; boards serving a whole province or territory are “Province-wide”. They aren't the same as the US NCES locales."
       : "";
     const cols = ["Locale", label[0].toUpperCase() + label.slice(1), "With meetings", "Avg meetings", "Poverty: with meetings", "Poverty: without",
       `Meetings per 10,000 ${per}`, "Meetings per poverty point"];
