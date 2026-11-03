@@ -3,7 +3,7 @@
 Usage: python3 data-prep/finish_canada.py canada.csv canada_youtube.csv docs/data/canada.csv
 (canada_youtube.csv may be missing; boards then show 0 meetings.)
 """
-import csv, os, sys
+import csv, os, re, sys
 
 NAMES = {"AB": "Alberta", "BC": "British Columbia", "MB": "Manitoba", "NB": "New Brunswick", "NL": "Newfoundland and Labrador",
          "NS": "Nova Scotia", "NT": "Northwest Territories", "NU": "Nunavut", "ON": "Ontario", "PE": "Prince Edward Island",
@@ -25,6 +25,10 @@ def main(src, yt, dst):
         w.writeheader()
         for r in rows:
             n, url = counts.get(r["District ID"], (0, ""))
+            # Lloydminster's two boards serve the city on both sides of the Alberta-Saskatchewan
+            # border; each province's border file has its own side, so each side is its own row.
+            if "Lloydminster" in r["District"]:
+                r["District"] = re.sub(r"^The ", "", r["District"]) + (" (Alberta side)" if r["Province"] == "AB" else " (Saskatchewan side)")
             w.writerow({**{c: r.get(c, "") for c in cols}, "Province": NAMES[r["Province"]],
                         "Available Board Meetings": n, "Meetings source": url if n else "",
                         # Ontario's border file (2015) lists old web addresses, many of them dead.
