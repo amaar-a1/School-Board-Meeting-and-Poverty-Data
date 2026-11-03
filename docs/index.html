@@ -239,14 +239,15 @@
 
     <div data-view="rules" hidden>
       <section class="card">
-        <h2>State rules for recording or streaming school board meetings</h2>
+        <h2 id="rules-title">State rules for recording or streaming school board meetings</h2>
         <p class="muted" id="rules-intro"></p>
-        <div class="table-scroll"><table id="rules-table"><thead><tr><th>State</th><th>Who's covered</th><th>Size threshold</th><th>What's required</th></tr></thead><tbody></tbody></table></div>
-        <p class="note">Only Texas and Oregon set their cutoff by student enrollment; Louisiana and Montana use population.
+        <div class="table-scroll"><table id="rules-table"><thead><tr><th id="rules-place">State</th><th>Who's covered</th><th>Size threshold</th><th>What's required</th></tr></thead><tbody></tbody></table></div>
+        <p class="note" id="rules-ca-note" hidden></p>
+        <p class="note" id="rules-us-note">Only Texas and Oregon set their cutoff by student enrollment; Louisiana and Montana use population.
           States not listed have no recording or streaming requirement we could find, usually only written minutes. Citations are on the Sources tab.</p>
       </section>
-      <section class="card">
-        <h2>Proposed, but not law</h2>
+      <section class="card" id="rules-proposed-card">
+        <h2>Proposed, but not law (US)</h2>
         <ul id="rules-proposed" class="rules-proposed"></ul>
       </section>
     </div>
