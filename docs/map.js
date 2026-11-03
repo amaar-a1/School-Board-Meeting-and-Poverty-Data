@@ -6,7 +6,8 @@
   // Canadian boards overlap (public and Catholic, English and French). The main layer shows one
   // board per place; "canada2" holds the overlapping ones and shows when its box is ticked.
   // Quebec's French boards cover all of Quebec; elsewhere the public (or English) board does.
-  const caMainRow = (r) => !!r && (["Public", "English public"].includes(r["Board type"]) ||
+  // Quebec's Cree, Kativik and Littoral boards ("Special status") serve the north and east instead.
+  const caMainRow = (r) => !!r && (["Public", "English public", "Special status"].includes(r["Board type"]) ||
     r["Board type"] === (r.Province === "Quebec" ? "French" : "English"));
   const DRAW = ["unsd", "elsd", "territories", "scsd", "canada", "canada2"];
   const gid = (f) => f.properties.GEOID || f.properties.id;
@@ -20,7 +21,7 @@
     Guam: [[13.2, 144.6], [13.7, 145.0]],
     "Northern Mariana Islands": [[14.0, 144.8], [15.4, 146.0]],
     "American Samoa": [[-14.6, -171.1], [-14.1, -168.1]],
-    Canada: [[42, -140], [62, -53]],
+    Canada: [[42, -142], [66, -53]],
     "United States and Canada": [[18, -165], [68, -52]]
   };
   const SCALES = {
