@@ -188,6 +188,9 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
                 if not (isinstance(locale, int) and locale > 0):
                     locale = union.get("urban_centric_locale")
                 notes.append("Enrollment is the total of the union's member districts (NCES 2023)")
+        if r["STABREV"] == "VT" and leaid not in other:
+            notes.append("CivicSearch has no Vermont boards; this district's meetings may be posted on its own website "
+                         "or a local public-access TV station, which haven't been checked")
         county_name = COUNTY.get(leaid, county_name)
         if leaid in NOT_IN_NCES:
             county_name = county_name or NOT_IN_NCES[leaid][0]

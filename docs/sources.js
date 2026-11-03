@@ -45,6 +45,8 @@ window.SOURCES = [
       { title: "CNMI Public School System videos page and board meeting notices (meetings are held on Zoom; no recordings posted)", url: "https://cnmipss.org/videos" },
       { title: "Virgin Islands Board of Education meeting agendas and minutes (no recordings posted)", url: "https://myviboe.com/meeting-agendas-minutes/" },
       { title: "Virgin Islands Board of Education News Room (meeting notices)", url: "https://myviboe.com/news-room/" },
+      { title: "Virgin Islands Board of Education meeting notices in the St. Thomas Source (meetings held in person and on Microsoft Teams; no recordings linked)", url: "https://stthomassource.com/content/2026/08/07/virgin-islands-board-of-education-announces-emergency-board-meeting/" },
+      { title: "KVZK-TV, American Samoa's government station (checked; no Board of Education meeting recordings found)", url: "https://www.samoanews.com/kvzk-tv" },
       { title: "Government Access Channel – Virgin Islands on YouTube (checked; no board meeting recordings)", url: "https://www.youtube.com/channel/UCUeosYkcAS4HVKSfbLNR0FA" },
       { title: "American Samoa Department of Education website (could not be reached October 30, 2026; YouTube searches found no board meeting recordings)", url: "https://www.doe.as/" },
       { title: "Puerto Rico Department of Education: run as a cabinet department, with no school board" },
@@ -91,7 +93,7 @@ window.SOURCES = [
       { title: "PEGTV (Rutland) school board video playlist: Rutland City, Otter Valley (Rutland Northeast) and Mill River boards, 1 recent meeting each", url: "https://videoplayer.telvue.com/player/MFXsvSYzjQOlecorW3Sq8GyBkhIm0OQN/playlists/6207" },
       { title: "Checked but not counted: South Burlington and Milton school district sites and ORCA Media's site block automated visits; South Burlington's board says its recordings are on The Media Factory and Facebook", url: "https://sbschools.net/page/school-board" }
     ],
-    note: "These counts are in the separate “Other Board Meetings” column. The Available Board Meetings column, and every total, comparison, chart and filter, use CivicSearch only; the map's meetings colors use these counts where CivicSearch has none."
+    note: "Other Vermont districts may post meetings on their own websites or local public-access TV stations (for example The Media Factory, CCTV or ORCA Media), which haven't been checked, so Vermont's counts are incomplete. These counts are in the separate “Other Board Meetings” column. The Available Board Meetings column, and every total, comparison, chart and filter, use CivicSearch only; the map's meetings colors use these counts where CivicSearch has none."
   },
   {
     only: "Texas",
