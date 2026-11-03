@@ -28,3 +28,4 @@ for attempt in range(4):
         break
     except Exception as e:
         open("fetch/out/canada/ontario_error.txt", "a").write(f"{e}\n")
+# rerun 1793688509

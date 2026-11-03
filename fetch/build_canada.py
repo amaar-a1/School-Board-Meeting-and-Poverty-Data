@@ -50,17 +50,20 @@ def low_income_by_csd(work):
     year = [h for h in head if h.startswith("Year")][0]
     total = [h for h in head if "Total - Individual low-income status based on low-income measure, after tax" in h][0]
     low = [h for h in head if h.endswith("In low income (LIM-AT)[2]")][0]
-    out, years = {}, set()
+    out, years, ages = {}, set(), set()
     for r in rows:
-        years.add(r[col[year]])
+        if len(r) < len(head):
+            continue   # footnote or blank lines
+        years.add(r[col[year]]); ages.add(r[col[age]])
         if not r[col[gender]].startswith("Total") or r[col[age]] != "0 to 17 years":
             continue
         dg = r[col["DGUID"]]
         if dg[4:9] != "A0005":
             continue
         out.setdefault(r[col[year]], {})[dg[-7:]] = (float(r[col[total]] or 0), float(r[col[low]] or 0))
+    print("ages", sorted(ages), "years", sorted(years))
     y = max(out)   # latest income year
-    print("income years", sorted(years), "using", y, len(out[y]), "CSDs")
+    print("using income year", y, len(out[y]), "CSDs")
     return out[y], y
 
 
