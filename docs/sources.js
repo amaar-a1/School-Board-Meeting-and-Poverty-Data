@@ -50,6 +50,8 @@ window.SOURCES = [
       { title: "Government Access Channel – Virgin Islands on YouTube (checked; no board meeting recordings)", url: "https://www.youtube.com/channel/UCUeosYkcAS4HVKSfbLNR0FA" },
       { title: "American Samoa Department of Education website (could not be reached October 30, 2026; YouTube searches found no board meeting recordings)", url: "https://www.doe.as/" },
       { title: "Puerto Rico Department of Education: run as a cabinet department, with no school board" },
+      { title: "Puerto Rico Senate YouTube channel (education committee public hearings; 7 counted, Nov. 3, 2026). Puerto Rico has no school board, so legislative education hearings stand in", url: "https://www.youtube.com/channel/UCg90Gzk-QoCxYUNYmAUasWA" },
+      { title: "Puerto Rico House of Representatives YouTube channel (education committee hearings and markup sessions; 14 counted)", url: "https://www.youtube.com/channel/UCm0SWjunIA5PDT9l4qW59Kw" },
       { title: "Google search summary of how each territory's schools are run and which boards post meetings online (searched by the project team, October 30, 2026); used to find the channels above" },
       { title: "CivicSearch school district list data (checked October 30, 2026; it lists no school boards in the territories, so their meeting counts come from the boards’ own channels instead)", url: "https://schools.civicsearch.org/api/get_place_list" },
       { title: "2020 Census of Guam, Demographic and Housing Characteristics File (poverty status in 2019 by age by sex, table PCT78: children ages 5–17 and children in poverty)", url: "https://www2.census.gov/programs-surveys/decennial/2020/data/island-areas/guam/demographic-and-housing-characteristics-file/" },
