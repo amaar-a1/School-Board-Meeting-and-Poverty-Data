@@ -85,7 +85,8 @@
         "Poverty measure": ca ? c.measures.canada : terr ? c.measures.territories : c.measures.us,
         Children: ca ? r["Children Ages 0-17"] : r["Children Ages 5-17"],
         Enrollment: r.Enrollment ?? "",
-        Locale: r.Locale ?? "",
+        // Canada's locales are estimates, not NCES types, so they stay separate groups here.
+        Locale: ca && r.Locale ? `Canada: ${r.Locale}` : r.Locale ?? "",
         "Other Board Meetings": r["Other Board Meetings"] ?? "",   // DC, Hawaiʻi and Vermont boards' own sites
         "District ID": r["District ID"]
       });
@@ -252,10 +253,13 @@
 
   // "By locale" tab: the same comparisons as "By district size", grouped by locale. US districts
   // use NCES locale types; Canadian boards an estimate from Statistics Canada population sizes.
-  const LOCALE_ORDER = ["Urban", "Suburban", "Town", "Rural", "Large urban", "Medium urban", "Small urban", "Province-wide"];
+  const US_LOCALES = ["Urban", "Suburban", "Town", "Rural"];
+  const CA_LOCALES = ["Large urban", "Medium urban", "Small urban", "Rural", "Province-wide"];
   function localeGroups(rows) {
     const seen = new Set(rows.map((r) => String(r.Locale || "").trim()).filter(Boolean));
-    const order = LOCALE_ORDER.filter((g) => seen.has(g));
+    // Canada on its own: largest to smallest. In "All", Canada's groups are labelled "Canada: …".
+    const caOnly = seen.has("Large urban") && !seen.has("Urban");
+    const order = (caOnly ? CA_LOCALES : [...US_LOCALES, ...CA_LOCALES.map((g) => `Canada: ${g}`)]).filter((g) => seen.has(g));
     return [...order, ...[...seen].filter((g) => !order.includes(g)).sort()];
   }
 
@@ -542,7 +546,7 @@
   // Urban only (no suburbs): "Urban", or an NCES "City" locale such as "City: Large".
   function isCity(v) {
     const s = String(v ?? "").trim().toLowerCase();
-    return s === "urban" || s === "large urban" || /\bcity\b/.test(s);
+    return s === "urban" || /large urban$/.test(s) || /\bcity\b/.test(s);
   }
 
   function renderUrban() {
