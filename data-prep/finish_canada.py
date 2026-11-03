@@ -1,6 +1,7 @@
 """Make docs/data/canada.csv from build_canada.py's canada.csv and canada_youtube.py's counts.
 
 Usage: python3 data-prep/finish_canada.py canada.csv canada_youtube.csv docs/data/canada.csv
+Hand-checked channel fixes in data-prep/inputs/canada_channels.csv are applied on top.
 (canada_youtube.csv may be missing; boards then show 0 meetings.)
 """
 import csv, os, re, sys
@@ -16,6 +17,15 @@ def main(src, yt, dst):
         for r in csv.DictReader(open(yt, newline="", encoding="utf-8")):
             if r["Board meetings on YouTube"] not in ("", None):
                 counts[r["District ID"]] = (int(r["Board meetings on YouTube"]), r["Channel URL"])
+    # Hand-checked channels (data-prep/inputs/canada_channels.csv): "none" = no channel; a Meetings
+    # figure replaces the search's count.
+    hand = os.path.join(os.path.dirname(os.path.abspath(__file__)), "inputs", "canada_channels.csv")
+    if os.path.exists(hand):
+        for r in csv.DictReader(open(hand, newline="", encoding="utf-8")):
+            if r["Channel URL"] == "none":
+                counts.pop(r["District ID"], None)
+            elif r.get("Meetings"):
+                counts[r["District ID"]] = (int(r["Meetings"]), r["Channel URL"])
     rows = list(csv.DictReader(open(src, newline="", encoding="utf-8")))
     cols = ["District", "Province", "Board type", "Available Board Meetings", "Meetings source", "Children Ages 0-17",
             "Children Ages 0-17 in Low Income", "Percentage of Children Ages 0-17 in Low Income", "How poverty was calculated",
