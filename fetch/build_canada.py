@@ -212,8 +212,14 @@ def main(work, outdir):
         rows.append({"id": f"CA-{prov}-" + re.sub(r"\W+", "", name)[:40], "name": name, "province": prov, "type": typ,
                      "kids": round(sub.kids.sum()), "low": round(sub.low.sum()),
                      "method": "Serves the whole province or territory, so its figures are province- or territory-wide", "website": ""})
-    for r in rows:
-        r["name"] = str(r["name"]) if isinstance(r["name"], str) and r["name"].strip() else r["id"]
+    ok = lambda v: isinstance(v, str) and v.strip() != ""
+    for i, r in enumerate(rows):
+        if not ok(r["id"]):
+            r["id"] = f"CA-{r['province']}-{i}"
+        if not ok(r["name"]):
+            print("board with no name:", r["id"], r["province"], r["type"])
+            r["name"] = r["id"]
+        r["province"], r["type"] = str(r["province"]), str(r["type"])
         r["website"] = r["website"] if isinstance(r["website"], str) else ""
         r["pct"] = f"{100 * r['low'] / r['kids']:.2f}%" if r["kids"] else ""
     with open(f"{outdir}/canada.csv", "w", newline="", encoding="utf-8") as f:
