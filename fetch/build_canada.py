@@ -139,7 +139,7 @@ def saskatchewan():
             layers = json.load(r).get("layers", [])
         print("sask layers", [(l["id"], l["name"]) for l in layers])
         for l in layers:
-            if not re.search(r"division", l["name"], re.I) or l.get("subLayerIds"):
+            if not re.match(r"SD_(Public|Separate)$", l["name"]) or l.get("subLayerIds"):
                 continue
             a = esri_geojson(f"{base}/{l['id']}")
             if a.empty or not a.geom_type.isin(["Polygon", "MultiPolygon"]).any():
@@ -193,6 +193,10 @@ def boards(work):
     out += ontario(work) + saskatchewan()
     allb = pd.concat([b.to_crs(3347) for b in out], ignore_index=True)
     allb["geometry"] = allb.geometry.make_valid().buffer(0)
+    dup = allb.id[allb.id.duplicated()].unique()
+    if len(dup):
+        print("boards drawn as several shapes, joined:", list(dup)[:20])
+    allb = allb.dissolve(by="id", aggfunc="first", as_index=False)
     return allb
 
 
