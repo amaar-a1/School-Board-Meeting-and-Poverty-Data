@@ -207,8 +207,13 @@
   function rules(stateList) {
     const r = window.STATE_RULES;
     if (!r) return "The state rules aren't loaded.";
-    if (stateList.length && stateList.every((a) => a.startsWith("CA:"))) {
-      return "The rules on recording or streaming board meetings have only been researched for US states, not Canadian provinces.";
+    const ca = r.canada;
+    if (ca && (stateList.some((a) => a.startsWith("CA:")) || /canad|province/i.test(lastQ))) {
+      const provs = stateList.filter((a) => a.startsWith("CA:")).map((a) => states[a]);
+      const laws = ca.laws.filter((x) => !provs.length || provs.includes(x.state));
+      return `<p>No Canadian province requires school boards to record or stream their meetings (checked ${esc(ca.checked)}).</p>` +
+        (laws.length ? `<ul>${laws.map((x) => `<li><strong>${esc(x.state)}</strong> (${esc(x.covers)}): ${esc(x.rule)}</li>`).join("")}</ul>`
+          : `<p>${esc(provs.join(", "))}: meetings must be open to the public and minutes kept; nothing on recording or streaming was found.</p>`);
     }
     if (stateList.length) {
       return stateList.filter((a) => !a.startsWith("CA:")).map((a) => {
@@ -241,7 +246,9 @@
     return "The data comes from the Census Bureau (child poverty, SAIPE 2024; 2020 Census for most territories), NCES (enrollment and locale), CivicSearch (board meeting counts), and state laws for the rules. Canada's comes from Statistics Canada, provincial border files and the boards' YouTube channels. Every source is linked on the Sources tab.";
   }
 
+  let lastQ = "";
   function answer(q) {
+    lastQ = q;
     if (!data()) return "The data is still loading — try again in a moment.";
     const stateList = findStates(q);
     const s = q.toLowerCase();

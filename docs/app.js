@@ -192,6 +192,7 @@
     $("dataset-note").textContent = current.note || "";
     $("footer").textContent = current.footer || "";
     renderSources();
+    renderRules();
     $("search").value = "";
     renderStats();
     setupChartControls();
@@ -748,26 +749,43 @@
     URL.revokeObjectURL(a.href);
   }
 
-  // State rules table (same for every data set).
+  // Rules table: US state rules, or Canada's provincial ones in the Canada views (both in "All").
   function renderRules() {
-    const r = window.STATE_RULES;
-    if (!r) return;
-    $("rules-intro").textContent = `${r.laws.length} rules in ${new Set(r.laws.map((x) => x.state)).size} states, checked ${r.checked}. Laws change often.`;
+    const us = window.STATE_RULES;
+    if (!us) return;
+    const ca = us.canada;
+    const isCA = current && (current.country === "CA" || (current.parent && current.parent.country === "CA"));
+    const both = current && current.combined;
+    const laws = isCA ? ca.laws : both ? [...us.laws, ...ca.laws] : us.laws;
+    $("rules-title").textContent = isCA ? "Province rules for recording or streaming school board meetings (Canada)"
+      : both ? "State and province rules for recording or streaming school board meetings (US and Canada)"
+      : "State rules for recording or streaming school board meetings";
+    $("rules-place").textContent = isCA ? "Province" : both ? "State or province" : "State";
+    $("rules-intro").textContent = isCA
+      ? `No province requires school boards to record or stream meetings; ${laws.length} related rules in ${new Set(laws.map((x) => x.state)).size} provinces, checked ${ca.checked}.`
+      : `${us.laws.length} rules in ${new Set(us.laws.map((x) => x.state)).size} states, checked ${us.checked}` +
+        (both ? `; ${ca.laws.length} related rules in Canadian provinces, checked ${ca.checked}` : "") + ". Laws change often.";
+    $("rules-us-note").hidden = isCA;
+    $("rules-ca-note").hidden = !isCA && !both;
+    $("rules-ca-note").textContent = ca.note;
     const body = $("rules-table").tBodies[0];
     body.innerHTML = "";
-    r.laws.forEach((x) => {
+    laws.forEach((x) => {
       const tr = body.insertRow();
       [x.state, x.covers, x.threshold || "None (all boards)", x.rule].forEach((v) => { tr.insertCell().textContent = v; });
     });
+    $("rules-proposed-card").hidden = isCA;
     const ul = $("rules-proposed");
     ul.innerHTML = "";
-    r.proposed.forEach((x) => {
+    us.proposed.forEach((x) => {
       const li = document.createElement("li");
       const b = document.createElement("strong");
       b.textContent = `${x.state}: `;
       li.append(b, x.note);
       ul.appendChild(li);
     });
+    const label = isCA ? "Province rules" : both ? "State & province rules" : "State rules";
+    document.querySelectorAll('[data-view-tab="rules"], [data-view-link="rules"]').forEach((el) => { el.textContent = label; });
   }
 
   // Sources for the selected dataset: entries marked `only` (a name or a list of names)
@@ -817,7 +835,6 @@
   document.querySelectorAll(".links a").forEach((a) => a.addEventListener("click", () => {
     setView(a.dataset.viewLink || "overview");
   }));
-  renderRules();
   const viewFromHash = () => { if (["#size", "#map", "#rules", "#sources"].includes(location.hash)) setView(location.hash.slice(1)); };
   viewFromHash();
   window.addEventListener("hashchange", viewFromHash);
