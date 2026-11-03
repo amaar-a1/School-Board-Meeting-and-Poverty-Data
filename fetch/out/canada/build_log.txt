@@ -12,6 +12,6 @@ sask layers [(0, 'Education (K-12)'), (1, 'School'), (2, 'Sch_Public'), (3, 'Sch
 sask layer SD_Public 18 ['geometry', 'SD_NUM', 'SD_NAME', 'SD_TYPE', 'MAIL_ST_ADDR', 'MAIL_PO_ADDR', 'MAIL_OTH_ADDR', 'MAIL_P_CODE', 'MAIL_UM_NAME', 'PH_NUM', 'PROV_NAME', 'OBJECTID']
 sask layer SD_Separate 8 ['geometry', 'SD_NUM', 'SD_NAME', 'SD_TYPE', 'MAIL_ST_ADDR', 'MAIL_P_CODE', 'MAIL_UM_NAME', 'PH_NUM', 'PROV_NAME', 'OBJECTID']
 boards drawn as several shapes, joined: [nan]
-357 boards; 341 shapes; income year 2020
+357 boards; 357 shapes; income year 2020
 
 --- stderr ---
