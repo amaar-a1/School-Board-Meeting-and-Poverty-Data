@@ -98,6 +98,39 @@ window.SOURCES = [
     note: "Other Vermont districts may post meetings on their own websites or local public-access TV stations (for example The Media Factory, CCTV or ORCA Media), which haven't been checked, so Vermont's counts are incomplete. These counts are in the separate “Other Board Meetings” column. The Available Board Meetings column, and every total, comparison, chart and filter, use CivicSearch only; the map's meetings colors use these counts where CivicSearch has none."
   },
   {
+    only: "Canada",
+    group: "Canada: children and low income",
+    items: [
+      { title: "Statistics Canada table 98-10-0103-01: low-income status by age, 2021 Census (census subdivisions; children 0–17, LIM-AT, 2020 incomes)", url: "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810010301" },
+      { title: "Statistics Canada 2021 census subdivision boundary file (lcsd000b21a_e), copied to this project's GitHub release because Statistics Canada's site blocks automated downloads", url: "https://github.com/amaar-a1/School-Board-Meeting-and-Poverty-Data/releases/tag/statcan-csd-2021" },
+      { title: "Statistics Canada: low-income measure, after tax (LIM-AT) definition", url: "https://www12.statcan.gc.ca/census-recensement/2021/ref/dict/az/Definition-eng.cfm?ID=fam021" },
+      { title: "Wood Buffalo population and the Fort McMurray population centre (2021 Census), used to share Wood Buffalo's children between its boards", url: "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&DGUIDlist=2021A00054816037&GENDERlist=1&STATISTIClist=1&HEADERlist=0" }
+    ],
+    note: "Each board's figures add up the census subdivisions (municipalities, reserves and unorganized areas) inside its border; a subdivision split between boards is shared by land area, which can be off where most people live in one part of it. Boards in the same place (public and Catholic, English and French) share the same children, so their figures can't be added together."
+  },
+  {
+    only: "Canada",
+    group: "Canada: school board borders",
+    items: [
+      { title: "British Columbia: school district boundaries (DataBC)", url: "https://catalogue.data.gov.bc.ca/dataset/school-districts-of-bc" },
+      { title: "Alberta: public and separate school authority boundaries, 2025 (Alberta geospatial services)", url: "https://geospatial.alberta.ca/titan/rest/services" },
+      { title: "Saskatchewan: schools and school divisions (Government of Saskatchewan map service)", url: "https://gis.saskatchewan.ca/arcgis/rest/services/Education/SchoolsAndDivisions/MapServer" },
+      { title: "Manitoba: school divisions (Manitoba geoportal)", url: "https://geoportal.gov.mb.ca/" },
+      { title: "Ontario: school board boundaries (Land Information Ontario)", url: "https://geohub.lio.gov.on.ca/" },
+      { title: "Quebec: centres de services scolaires and English school boards (Données Québec)", url: "https://www.donneesquebec.ca/recherche/dataset/territoires-des-commissions-scolaires-du-quebec" }
+    ],
+    note: "Nova Scotia, New Brunswick and the Northwest Territories publish no border files, so their boards are built from the counties or regions they serve. Boards that serve a whole province or territory use its total."
+  },
+  {
+    only: "Canada",
+    group: "Canada: board meetings",
+    items: [
+      { title: "Each board's own YouTube channel (listed in the “Meetings source” column)", url: "https://www.youtube.com/" },
+      { title: "Civic Searchlight (checked; covers city councils and police boards, not school boards)", url: "https://nmc-mic.ca/2025/10/09/civic-searchlight-accountability-tool-launches/" }
+    ],
+    note: "Videos whose titles show a board meeting (regular, special or public meetings, committee of the whole, or the French “séance” or “conseil d'administration”) were counted; a meeting split into parts counts once. Meetings streamed only on Zoom, Facebook or a board's own site aren't counted."
+  },
+  {
     only: "Texas",
     group: "Law",
     items: [

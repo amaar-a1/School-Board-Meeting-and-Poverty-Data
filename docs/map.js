@@ -2,7 +2,15 @@
 // colored by the site's data. app.js calls SiteMap.show() when the tab or the data set changes.
 (function () {
   const $ = (id) => document.getElementById(id);
-  const LAYERS = ["unsd", "elsd", "territories", "scsd"];   // drawing order; scsd only when ticked
+  const LAYERS = ["unsd", "elsd", "territories", "scsd", "canada"];   // files in data/map/; scsd only when ticked
+  // Canadian boards overlap (public and Catholic, English and French). The main layer shows one
+  // board per place; "canada2" holds the overlapping ones and shows when its box is ticked.
+  // Quebec's French boards cover all of Quebec; elsewhere the public (or English) board does.
+  const caMainRow = (r) => !!r && (["Public", "English public"].includes(r["Board type"]) ||
+    r["Board type"] === (r.Province === "Quebec" ? "French" : "English"));
+  const DRAW = ["unsd", "elsd", "territories", "scsd", "canada", "canada2"];
+  const gid = (f) => f.properties.GEOID || f.properties.id;
+  const isCA = (id) => String(id).startsWith("CA-");
   const JUMPS = {
     "Contiguous US": [[24.4, -125], [49.5, -66.9]],
     Alaska: [[51.2, -179.5], [71.5, -129.9]],
@@ -11,11 +19,13 @@
     "U.S. Virgin Islands": [[17.65, -65.1], [18.45, -64.55]],
     Guam: [[13.2, 144.6], [13.7, 145.0]],
     "Northern Mariana Islands": [[14.0, 144.8], [15.4, 146.0]],
-    "American Samoa": [[-14.6, -171.1], [-14.1, -168.1]]
+    "American Samoa": [[-14.6, -171.1], [-14.1, -168.1]],
+    Canada: [[42, -140], [62, -53]]
   };
   const SCALES = {
     poverty: {
       column: "Percentage of Children Ages 5-17 in Poverty",
+      caColumn: "Percentage of Children Ages 0-17 in Low Income",   // Canada's measure (not the same as the US one)
       breaks: [10, 15, 20, 25, 30],
       colors: ["#fef0d9", "#fdd49e", "#fdbb84", "#fc8d59", "#e34a33", "#b30000"],
       labels: ["Under 10%", "10–15%", "15–20%", "20–25%", "25–30%", "30% or more"]
@@ -70,7 +80,7 @@
 
   function color(row) {
     const metric = $("map-metric").value, sc = SCALES[metric];
-    let v = row ? toNumber(row[sc.column]) : NaN;
+    let v = row ? toNumber(row[row[sc.column] === undefined && sc.caColumn ? sc.caColumn : sc.column]) : NaN;
     // Where CivicSearch has none, the meetings map uses counts from the district's own sources.
     if (metric === "meetings" && row && !(v > 0) && toNumber(row["Other Board Meetings"]) > 0) v = toNumber(row["Other Board Meetings"]);
     if (metric === "meetings" && isNaN(v)) v = 0;   // no meetings found counts as 0
@@ -81,6 +91,9 @@
 
   // In a state's view (or the territories'), districts elsewhere are faded.
   function inView(geoid) {
+    const ca = current && (current.country === "CA" || (current.parent && current.parent.country === "CA"));
+    if (isCA(geoid) !== !!ca) return false;   // the US and Canada views fade each other
+    if (ca) return !current.state || geoid.startsWith(`CA-${current.state.split(":")[1]}-`);
     if (!current || !current.state) return true;
     if (current.state === "territories") return /^(60|66|69|72|78)/.test(geoid);
     return !fips[current.state] || geoid.startsWith(fips[current.state]);
@@ -91,18 +104,19 @@
   function style(feature) {
     if (undefinedArea(feature)) return { fillColor: NO_DISTRICT, fillOpacity: 0.9, color: "#8a9a80", weight: 0.3, dashArray: "2 3" };
     const f = window.SiteFilters;
-    let on = inView(feature.properties.GEOID);
+    let on = inView(gid(feature));
     if (on && f && f.active()) {
-      const r = rowFor(feature.properties.GEOID);
+      const r = rowFor(gid(feature));
       on = !!r && f.test(r);
     }
-    return { fillColor: color(rowFor(feature.properties.GEOID)), fillOpacity: on ? 0.85 : 0.35, color: "#555", weight: on ? 0.4 : 0.2 };
+    return { fillColor: color(rowFor(gid(feature))), fillOpacity: on ? 0.85 : 0.35, color: "#555", weight: on ? 0.4 : 0.2 };
   }
 
   const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
   function tip(feature) {
-    const r = rowFor(feature.properties.GEOID);
+    const r = rowFor(gid(feature));
+    if (r && r.Province) return caTip(r);
     if (undefinedArea(feature)) return `<div class="map-tip"><strong>No school district</strong>Area the Census leaves outside any district, mostly national parks and other federal land (e.g. Grand Canyon, Yellowstone) or water</div>`;
     if (!r) return `<div class="map-tip"><strong>${esc(feature.properties.NAME)}</strong>Available board meetings: 0<br>No poverty data for this district</div>`;
     const place = [r.County, r.State || r.Territory].filter(Boolean).join(", ");
@@ -119,12 +133,26 @@
       (note ? `<div class="tip-note">${esc(note)}</div>` : "") + "</div>";
   }
 
+  function caTip(r) {
+    const pov = toNumber(r["Percentage of Children Ages 0-17 in Low Income"]);
+    const meet = toNumber(r["Available Board Meetings"]);
+    const note = [r["How poverty was calculated"], r["Meetings note"]].filter(Boolean).join(". ");
+    return `<div class="map-tip"><strong>${esc(r.District)}, ${esc(r.Province)}</strong>` +
+      `${esc(r["Board type"])} board<br>` +
+      `Children (0–17) in low income: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>` +
+      `Board meetings found: ${isNaN(meet) ? 0 : meet.toLocaleString()}` +
+      (note ? `<div class="tip-note">${esc(note)}</div>` : "") + "</div>";
+  }
+
   function legend() {
     const sc = SCALES[$("map-metric").value];
     const items = sc.labels.map((l, i) => `<span><i style="background:${sc.colors[i]}"></i>${l}</span>`);
-    items.push(`<span><i style="background:${NO_DISTRICT}"></i>No school district (mostly national parks and federal land)</span>`);
+    const ca = current && (current.country === "CA" || current.parent);
+    if (!ca) items.push(`<span><i style="background:${NO_DISTRICT}"></i>No school district (mostly national parks and federal land)</span>`);
     const faded = [];
     if (current && current.state) faded.push(current.state === "territories" ? "outside the U.S. territories" : `outside ${current.name}`);
+    else if (ca) faded.push("outside Canada");
+    if (ca && $("map-metric").value === "poverty") items.push(`<span class="map-faded">Canada: share of children 0–17 in low income (LIM-AT, 2020), not the same measure as the US child poverty rate</span>`);
     if (window.SiteFilters && window.SiteFilters.active()) faded.push("that don't match the filters");
     if (faded.length) items.push(`<span class="map-faded">Faded: districts ${faded.join(" or ")}</span>`);
     $("map-legend").innerHTML = items.join("");
@@ -136,15 +164,27 @@
   }
 
   function setSecondary() {
-    const l = layers.scsd;
-    if (!l) return;
-    if ($("map-secondary").checked) l.addTo(map); else l.remove();
+    [["scsd", "map-secondary"], ["canada2", "map-canada-overlap"]].forEach(([n, box]) => {
+      const l = layers[n];
+      if (!l || !$(box)) return;
+      if ($(box).checked) l.addTo(map); else l.remove();
+    });
   }
 
   // Zooms to the selected state (or, for the territories, the first territory).
   function zoomToCurrent() {
     if (!map || !current) return;
     if (current.state === "territories") return jump("Puerto Rico");
+    if (current.country === "CA") return jump("Canada");
+    if (current.parent) {
+      const pre = `CA-${current.state.split(":")[1]}-`;
+      let b = null;
+      ["canada", "canada2"].forEach((n) => layers[n] && layers[n].eachLayer((f) => {
+        if (gid(f.feature).startsWith(pre)) b = b ? b.extend(f.getBounds()) : L.latLngBounds(f.getBounds().getSouthWest(), f.getBounds().getNorthEast());
+      }));
+      if (b) { map.fitBounds(b, { padding: [10, 10] }); $("map-jump").value = ""; }
+      return;
+    }
     const code = current.state && fips[current.state];
     if (!code) return jump("Contiguous US");
     let bounds = null;
@@ -175,11 +215,16 @@
       subdomains: "abcd", maxZoom: 14
     }).addTo(map);
     const renderer = L.canvas({ padding: 0.3 });
-    LAYERS.forEach((name, i) => {
-      const fc = topojson.feature(topo[i], topo[i].objects[name]);
+    const files = {};
+    LAYERS.forEach((name, i) => { files[name] = topo[i] ? topojson.feature(topo[i], topo[i].objects[name]) : { type: "FeatureCollection", features: [] }; });
+    const caMain = (f) => caMainRow(lookup[gid(f)]);
+    files.canada2 = { type: "FeatureCollection", features: files.canada.features.filter((f) => !caMain(f)) };
+    files.canada.features = files.canada.features.filter(caMain);
+    DRAW.forEach((name) => {
+      const fc = files[name];
       // Puerto Rico's border is in the unified-district file; the other territories use the territory outlines.
       if (name === "territories") fc.features = fc.features.filter((f) => f.properties.GEOID !== "7200030");
-      else fc.features = fc.features.filter((f) => !/^(60|66|69|78)/.test(f.properties.GEOID));
+      else if (!name.startsWith("canada")) fc.features = fc.features.filter((f) => !/^(60|66|69|78)/.test(f.properties.GEOID));
       layers[name] = L.geoJSON(fc, {
         renderer, style,
         onEachFeature: (f, l) => {
@@ -189,7 +234,7 @@
           l.on("mouseout", () => l.setStyle(style(f)));
         }
       });
-      if (name !== "scsd") layers[name].addTo(map);
+      if (name !== "scsd" && name !== "canada2") layers[name].addTo(map);
     });
     const sel = $("map-jump");
     sel.add(new Option("—", ""));
@@ -197,6 +242,7 @@
     sel.addEventListener("change", () => sel.value && jump(sel.value));
     $("map-metric").addEventListener("change", restyle);
     $("map-secondary").addEventListener("change", setSecondary);
+    if ($("map-canada-overlap")) $("map-canada-overlap").addEventListener("change", setSecondary);
     legend();
     buildSearch();
   }
@@ -209,15 +255,15 @@
 
   function buildSearch() {
     const groups = new Map();
-    ["unsd", "elsd", "territories", "scsd"].forEach((n) => layers[n] && layers[n].eachLayer((l) => {
+    DRAW.forEach((n) => layers[n] && layers[n].eachLayer((l) => {
       const p = l.feature.properties;
       if (undefinedArea(l.feature)) return;
-      const r = rowFor(p.GEOID);
-      const id = (r && r["District ID"]) || (r && r.District) || p.GEOID;
-      const place = r ? [r.County, r.State || r.Territory].filter(Boolean).join(", ") : "";
-      if (!groups.has(id)) groups.set(id, { name: r ? r.District : p.NAME, place, layers: [], scsd: n === "scsd", row: r });
+      const r = rowFor(gid(l.feature));
+      const id = (r && r["District ID"]) || (r && r.District) || gid(l.feature);
+      const place = r ? [r.County, r.State || r.Territory || r.Province].filter(Boolean).join(", ") : "";
+      if (!groups.has(id)) groups.set(id, { name: r ? r.District : p.NAME, place, layers: [], scsd: n === "scsd" || n === "canada2", row: r });
       const g = groups.get(id);
-      if (n !== "scsd" || g.scsd) g.layers.push(l);
+      if ((n !== "scsd" && n !== "canada2") || g.scsd) g.layers.push(l);
       if (r && p.NAME && norm(p.NAME) !== norm(r.District) && n !== "scsd" && n !== "territories") {
         groups.set(`shape-${p.GEOID}`, { name: p.NAME, place, layers: [l], row: r, partOf: r.District });
       }
@@ -281,10 +327,12 @@
     if (!e) return;
     hideResults();
     $("map-search").value = e.name;
-    if (e.layers.some((l) => layers.scsd && layers.scsd.hasLayer(l)) && !$("map-secondary").checked) {
-      $("map-secondary").checked = true;
-      setSecondary();
-    }
+    [["scsd", "map-secondary"], ["canada2", "map-canada-overlap"]].forEach(([n, box]) => {
+      if (e.layers.some((l) => layers[n] && layers[n].hasLayer(l)) && $(box) && !$(box).checked) {
+        $(box).checked = true;
+        setSecondary();
+      }
+    });
     let bounds = null;
     e.layers.forEach((l) => { bounds = bounds ? bounds.extend(l.getBounds()) : L.latLngBounds(l.getBounds().getSouthWest(), l.getBounds().getNorthEast()); });
     map.fitBounds(bounds, { maxZoom: 10, padding: [20, 20] });
@@ -304,7 +352,10 @@
       current = ds;
       if (!loading) {
         loading = Promise.all([...LAYERS, "aliases"].map((n) => fetch(`data/map/${n}.json`).then((r) => {
-          if (!r.ok) throw new Error(`HTTP ${r.status}`);
+          if (!r.ok) {
+            if (n === "canada") return null;   // the US map still works without Canada's borders
+            throw new Error(`HTTP ${r.status}`);
+          }
           return r.json();
         })))
           .then((files) => { aliases = files.pop(); build(datasets, files); $("map-status").textContent = ""; })
