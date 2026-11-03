@@ -312,13 +312,13 @@ def main(work, outdir):
     # Map only: the part of a province outside every main board (in Ontario, the Far North:
     # unorganized land and First Nations reserves, whose schools First Nations or small school
     # authorities run). Shown with the province-wide rate and 0 meetings; not a row in canada.csv.
-    main = poly[poly.type.isin(["Public", "English public", "Special status"]) | ((poly.province == "QC") & (poly.type == "French"))]
+    main = poly[poly["type"].isin(["Public", "English public", "Special status"]) | ((poly["province"] == "QC") & (poly["type"] == "French"))]
     for pr, prov in PROV.items():
-        if prov not in set(main.province):
+        if prov not in set(main["province"]):
             continue
         sub = csd[csd.CSDUID.str[:2] == pr]
         whole = sub.dissolve().geometry.iloc[0]
-        rest = whole.difference(main[main.province == prov].union_all().buffer(200)).buffer(-300).buffer(300)
+        rest = whole.difference(main[main["province"] == prov].union_all().buffer(200)).buffer(-300).buffer(300)
         share = rest.area / whole.area if not rest.is_empty else 0
         print("outside every board:", prov, f"{100 * share:.1f}% of the land")
         if share < 0.02:

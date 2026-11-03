@@ -10,3 +10,4 @@ if os.path.exists("/tmp/caout/canada_boards.geojson"):
     subprocess.run("npm install -g mapshaper >/dev/null 2>&1", shell=True)
     subprocess.run("mapshaper -i /tmp/caout/canada_boards.geojson name=canada -simplify 4% keep-shapes -o fetch/out/canada/canada.json format=topojson quantization=100000", shell=True)
 # run rest
+# run rest 2
