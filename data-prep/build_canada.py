@@ -309,7 +309,25 @@ def main(work, outdir):
                     "Percentage of Children Ages 0-17 in Low Income", "How poverty was calculated", "Website", "District ID"])
         for r in sorted(rows, key=lambda r: (r["province"], r["name"])):
             w.writerow([r["name"], r["province"], r["type"], r["kids"], r["low"], r["pct"], r["method"], r["website"], r["id"]])
-    shp = gpd.GeoDataFrame(shapes, geometry="geometry", crs=3347).dropna().to_crs(4326)
+    # Map only: the part of a province outside every main board (in Ontario, the Far North:
+    # unorganized land and First Nations reserves, whose schools First Nations or small school
+    # authorities run). Shown with the province-wide rate and 0 meetings; not a row in canada.csv.
+    main = poly[poly.type.isin(["Public", "English public", "Special status"]) | ((poly.province == "QC") & (poly.type == "French"))]
+    for pr, prov in PROV.items():
+        if prov not in set(main.province):
+            continue
+        sub = csd[csd.CSDUID.str[:2] == pr]
+        whole = sub.dissolve().geometry.iloc[0]
+        rest = whole.difference(main[main.province == prov].union_all().buffer(200)).buffer(-300).buffer(300)
+        share = rest.area / whole.area if not rest.is_empty else 0
+        print("outside every board:", prov, f"{100 * share:.1f}% of the land")
+        if share < 0.02:
+            continue
+        k, l = sub.kids.sum(), sub.low.sum()
+        shapes.append({"id": f"CA-{prov}-REST", "geometry": rest.simplify(500), "pseudo": 1, "province": prov,
+                       "name": f"Rest of {prov} (no school board)", "pct": round(100 * l / k, 2) if k else None})
+    shp = gpd.GeoDataFrame(shapes, geometry="geometry", crs=3347)
+    shp = shp[shp.geometry.notna() & ~shp.geometry.is_empty].to_crs(4326)
     shp.to_file(f"{outdir}/canada_boards.geojson", driver="GeoJSON")
     print(len(rows), "boards;", len(shp), "shapes; income year", year)
 
