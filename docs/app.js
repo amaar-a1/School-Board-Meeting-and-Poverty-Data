@@ -439,13 +439,13 @@
     const x = cmpFor(current).metric, y = cmpFor(current).by;
     const accent = cssVar("--accent"), text = cssVar("--muted"), grid = cssVar("--border");
     if (subsetCharts[id]) subsetCharts[id].destroy();
-    const points = rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), name: rowLabel(r) }))
+    const points = rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), m: toNumber(r[y]), name: rowLabel(r) }))
       .filter((p) => !isNaN(p.x) && !isNaN(p.y));
-    const fit = bestFit(points, x, y);
+    const fit = fitLines(points, x, y);
     subsetCharts[id] = new Chart($(`${id}-chart`), {
       type: "scatter",
       data: { datasets: [{ label: `${y} vs ${x}`, data: points,
-        backgroundColor: accent + "99", pointRadius: 4, pointHoverRadius: 6, order: 1 }, ...(fit ? [fit.dataset] : [])] },
+        backgroundColor: accent + "99", pointRadius: 4, pointHoverRadius: 6, order: 1 }, ...(fit ? fit.datasets : [])] },
       options: {
         maintainAspectRatio: false,
         plugins: {
@@ -499,7 +499,7 @@
     return (a >= 100 ? v.toFixed(0) : a >= 1 ? v.toFixed(2) : String(Number(v.toPrecision(3)))).replace(/^-/, "−");
   };
 
-  function bestFit(points, xName, yName) {
+  function bestFit(points, xName, yName, opts = {}) {
     const pts = points.filter((p) => isFinite(p.x) && isFinite(p.y));
     const n = pts.length;
     if (n < 2) return null;
@@ -510,11 +510,11 @@
     const m = sxy / sxx, b = my - m * mx, r2 = syy ? (sxy * sxy) / (sxx * syy) : 1;
     const xs = pts.map((p) => p.x), lo = Math.min(...xs), hi = Math.max(...xs);
     return {
-      dataset: { type: "line", label: "Line of best fit", fit: true, data: [{ x: lo, y: m * lo + b }, { x: hi, y: m * hi + b }],
-        borderColor: cssVar("--accent-2"), backgroundColor: cssVar("--accent-2"), borderWidth: 2.5, pointRadius: 0,
-        pointHoverRadius: 0, fill: false, order: 0 },
+      dataset: { type: "line", label: opts.label || "Line of best fit", fit: true, data: [{ x: lo, y: m * lo + b }, { x: hi, y: m * hi + b }],
+        borderColor: opts.color || cssVar("--accent-2"), backgroundColor: opts.color || cssVar("--accent-2"), borderWidth: 2.5,
+        borderDash: opts.dash || [], pointRadius: 0, pointHoverRadius: 0, fill: false, order: 0 },
       subtitle: [
-        `Line of best fit: ${yName} = ${sig(m)} × ${xName} ${b < 0 ? "−" : "+"} ${sig(Math.abs(b))}`,
+        `${opts.title || "Line of best fit"}: ${yName} = ${sig(m)} × ${xName} ${b < 0 ? "−" : "+"} ${sig(Math.abs(b))}`,
         `R² ${r2 > 0 && r2 < 0.001 ? "< 0.001" : `= ${r2.toFixed(3)}`} (0 = no fit, 1 = perfect fit) · ${n.toLocaleString()} ${((current && current.recordLabel) || cfg.recordLabel || "points").toLowerCase()}`
       ]
     };
@@ -523,6 +523,23 @@
   const fitSubtitle = (fit, color) => (fit
     ? { display: true, text: fit.subtitle, color, font: { size: 12 }, padding: { bottom: 10 } }
     : { display: false });
+
+  // Lines of best fit for a scatter plot: one through every point, and, when the chart uses the
+  // meeting counts, a second (dashed) one through only the districts with 1+ meetings, since the
+  // many 0s pull the first line down. Points carry `m`, their meeting count.
+  function fitLines(points, x, y) {
+    const all = bestFit(points, x, y);
+    if (!all) return null;
+    const by = cmpFor(current).by;
+    const label = ((current && current.recordLabel) || cfg.recordLabel || "districts").toLowerCase();
+    const withM = points.filter((p) => p.m > 0);
+    const some = (x === by || y === by) && withM.length >= 2 && withM.length < points.length;
+    const only = some && bestFit(withM, x, y, { label: `Line of best fit (${label} with meetings only)`,
+      title: `Dashed line, ${label} with 1+ meetings only`, color: cssVar("--text"), dash: [7, 5] });
+    if (!only) return { datasets: [all.dataset], subtitle: all.subtitle };
+    return { datasets: [all.dataset, only.dataset],
+      subtitle: [`Solid line, all ${label}: ${all.subtitle[0].replace(/^Line of best fit: /, "")}`, all.subtitle[1], ...only.subtitle] };
+  }
 
   function cssVar(name) {
     return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
@@ -543,12 +560,12 @@
     const accent = cssVar("--accent"), text = cssVar("--muted"), grid = cssVar("--border");
     let data, fit = null, yMin;
     if (type === "scatter") {
-      const points = rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), name: rowLabel(r) }))
+      const points = rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), m: toNumber(r[cmpFor(current).by]), name: rowLabel(r) }))
         .filter((p) => !isNaN(p.x));
-      fit = bestFit(points, x, y);
+      fit = fitLines(points, x, y);
       if (points.every((p) => p.y >= 0)) yMin = 0;   // keep the axis at 0; the fit line is clipped there
       data = { datasets: [{ label: `${y} vs ${x}`, data: points,
-        backgroundColor: accent + "99", pointRadius: 3.5, pointHoverRadius: 6, order: 1 }, ...(fit ? [fit.dataset] : [])] };
+        backgroundColor: accent + "99", pointRadius: 3.5, pointHoverRadius: 6, order: 1 }, ...(fit ? fit.datasets : [])] };
     } else {
       data = { labels: rows.map((r) => (current.numeric.has(x) ? cell(x, r[x]) : r[x])),
         datasets: [{ label: y, data: rows.map((r) => toNumber(r[y])),
