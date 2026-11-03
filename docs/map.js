@@ -7,7 +7,7 @@
   // board per place; "canada2" holds the overlapping ones and shows when its box is ticked.
   // Quebec's French boards cover all of Quebec; elsewhere the public (or English) board does.
   // Quebec's Cree, Kativik and Littoral boards ("Special status") serve the north and east instead.
-  const caMainRow = (r) => !!r && (["Public", "English public", "Special status"].includes(r["Board type"]) ||
+  const caMainRow = (r) => !!r && (r.pseudo || ["Public", "English public", "Special status"].includes(r["Board type"]) ||
     r["Board type"] === (r.Province === "Quebec" ? "French" : "English"));
   const DRAW = ["unsd", "elsd", "territories", "scsd", "canada", "canada2"];
   const gid = (f) => f.properties.GEOID || f.properties.id;
@@ -141,8 +141,8 @@
     const meet = toNumber(r["Available Board Meetings"]);
     const note = [r["How poverty was calculated"], r["Meetings note"]].filter(Boolean).join(". ");
     return `<div class="map-tip"><strong>${esc(r.District)}, ${esc(r.Province)}</strong>` +
-      `${esc(r["Board type"])} board<br>` +
-      `Children (0–17) in low income: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>` +
+      (r.pseudo ? "Not a school board<br>" : `${esc(r["Board type"])} board<br>`) +
+      `Children (0–17) in low income: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}${r.pseudo ? " (province-wide rate)" : ""}<br>` +
       `Board meetings found: ${isNaN(meet) ? 0 : meet.toLocaleString()}` +
       (note ? `<div class="tip-note">${esc(note)}</div>` : "") + "</div>";
   }
@@ -223,6 +223,17 @@
     LAYERS.forEach((name, i) => { files[name] = topo[i] ? topojson.feature(topo[i], topo[i].objects[name]) : { type: "FeatureCollection", features: [] }; });
     // Yukon and Nunavut have no public board of their own (the territory runs most schools), so
     // their territory-wide board shows in the main layer: the First Nation board, else the French one.
+    // Areas outside every board (e.g. Ontario's Far North) are map-only: they get a row here from
+    // their own properties, with the province-wide rate and 0 meetings, but no row in the data.
+    const caNames = ((window.SITE_CONFIG.dataFiles.find((d) => d.country === "CA") || {}).groups || {}).names || {};
+    files.canada.features.filter((f) => f.properties.pseudo).forEach((f) => {
+      const p = f.properties, prov = caNames[p.province] || p.province;
+      lookup[gid(f)] = { District: `Rest of ${prov} (no school board)`, Province: prov, "Board type": "No school board", pseudo: true,
+        "Percentage of Children Ages 0-17 in Low Income": p.pct ?? "", "Available Board Meetings": 0,
+        "How poverty was calculated": `Not a school board: the part of ${prov} outside every public board's border` +
+          (p.province === "ON" ? ", mostly the Far North (unorganized land and First Nations reserves, whose schools are run by First Nations or small school authorities)" : "") +
+          `. Shown with ${prov}'s province-wide rate and 0 meetings; it isn't counted in ${prov}'s data` };
+    });
     const caRows = files.canada.features.map((f) => lookup[gid(f)]).filter(Boolean);
     const hasMain = new Set(caRows.filter(caMainRow).map((r) => r.Province));
     const stand = {};
