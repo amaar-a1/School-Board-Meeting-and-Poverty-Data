@@ -99,7 +99,8 @@ def find_alberta():
         try:
             with urllib.request.urlopen(urllib.request.Request(svc + "?f=json", headers=UA), timeout=120) as r:
                 for l in json.load(r).get("layers", []):
-                    if re.search(r"authorit|jurisdiction|district", l["name"], re.I):
+                    # current public and separate (Catholic) school authority borders
+                    if re.match(r"(Public|Separate) School Authority Boundary \(2025\).*Area Fill$", l["name"]):
                         layers.append((l["name"], f"{svc}/{l['id']}"))
         except Exception as e:
             print("alberta layer list failed", svc, e)
@@ -135,7 +136,9 @@ def boards(work):
             continue
         out.append(gpd.GeoDataFrame({"id": "CA-AB-" + (a[codecol].astype(str) if codecol else a.index.astype(str)) + "-" + typ[:3],
             "name": a[namecol] if namecol else lname, "province": "AB", "type": typ, "website": ""}, geometry=a.geometry, crs=a.crs))
-    return pd.concat([b.to_crs(3347) for b in out], ignore_index=True)
+    allb = pd.concat([b.to_crs(3347) for b in out], ignore_index=True)
+    allb["geometry"] = allb.geometry.make_valid().buffer(0)
+    return allb
 
 
 # Boards built from census divisions (counties/regions) where no border file is published.
@@ -164,6 +167,7 @@ def main(work, outdir):
     csd = gpd.read_file("zip://" + fetch("https://github.com/amaar-a1/School-Board-Meeting-and-Poverty-Data/releases/download/statcan-csd-2021/lcsd000b21a_e.zip", f"{work}/csd.zip")).to_crs(3347)
     csd["kids"] = csd.CSDUID.map(lambda u: li.get(u, (0, 0))[0])
     csd["low"] = csd.CSDUID.map(lambda u: li.get(u, (0, 0))[1])
+    csd["geometry"] = csd.geometry.make_valid().buffer(0)
     csd["area"] = csd.geometry.area
     csd["CD"] = csd.CSDUID.str[:4]
     # split counties used by two boards
