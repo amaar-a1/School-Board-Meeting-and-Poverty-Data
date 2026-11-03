@@ -182,6 +182,14 @@ def main(work, outdir):
     poly = boards(work)
     inter = gpd.overlay(csd[["CSDUID", "kids", "low", "area", "geometry"]], poly[["id", "geometry"]], how="intersection", keep_geom_type=True)
     inter["share"] = inter.geometry.area / inter["area"]
+    # Land-area shares fail where nearly everyone lives in one small part of a huge
+    # municipality. Wood Buffalo (AB): 68,002 of its 72,326 people (2021) live in the
+    # Fort McMurray population centre, which only the Fort McMurray boards serve.
+    names = poly.set_index("id")["name"].astype(str)
+    wb = inter.CSDUID == "4816037"
+    fm = inter.id.map(names).str.contains("Fort McMurray", na=False)
+    inter.loc[wb & fm, "share"] = 68002 / 72326
+    inter.loc[wb & ~fm, "share"] = (72326 - 68002) / 72326 * inter.loc[wb & ~fm, "share"] / max(inter.loc[wb & ~fm, "share"].sum(), 1e-9)
     agg = inter.assign(k=inter.kids * inter.share, l=inter.low * inter.share).groupby("id")[["k", "l"]].sum()
     for _, b in poly.iterrows():
         k, l = agg.loc[b.id] if b.id in agg.index else (0, 0)
