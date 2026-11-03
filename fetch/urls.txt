@@ -1,8 +1,0 @@
-pegtv_p2.html https://videoplayer.telvue.com/player/MFXsvSYzjQOlecorW3Sq8GyBkhIm0OQN/playlists/6207?page=2
-pegtv_p3.html https://videoplayer.telvue.com/player/MFXsvSYzjQOlecorW3Sq8GyBkhIm0OQN/playlists/6207?page=3
-pegtv_p4.html https://videoplayer.telvue.com/player/MFXsvSYzjQOlecorW3Sq8GyBkhIm0OQN/playlists/6207?page=4
-pegtv_p5.html https://videoplayer.telvue.com/player/MFXsvSYzjQOlecorW3Sq8GyBkhIm0OQN/playlists/6207?page=5
-pegtv_p6.html https://videoplayer.telvue.com/player/MFXsvSYzjQOlecorW3Sq8GyBkhIm0OQN/playlists/6207?page=6
-pegtv_p7.html https://videoplayer.telvue.com/player/MFXsvSYzjQOlecorW3Sq8GyBkhIm0OQN/playlists/6207?page=7
-mrps_2023.html https://www.mrpsvt.org/2023-videos
-mrps_2022.html https://www.mrpsvt.org/2022-videos
