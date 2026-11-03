@@ -16,8 +16,8 @@ The Elk Island Catholic Separate School Division,Alberta,Separate (Catholic),0,,
 The Elk Island School Division,Alberta,Public,0,,31052,1988,6.40%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-2195-Pub
 The Evergreen Catholic Separate School Division,Alberta,Separate (Catholic),0,,21127,1925,9.11%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-0048-Sep
 The Foothills School Division,Alberta,Public,0,,17681,1419,8.03%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-1180-Pub
-The Fort McMurray Roman Catholic Separate School Division,Alberta,Separate (Catholic),0,,228,12,5.26%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-4160-Sep
-The Fort McMurray School Division,Alberta,Public,0,,228,12,5.26%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-3260-Pub
+The Fort McMurray Roman Catholic Separate School Division,Alberta,Separate (Catholic),0,,17812,945,5.31%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-4160-Sep
+The Fort McMurray School Division,Alberta,Public,0,,17812,945,5.31%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-3260-Pub
 The Fort Vermilion School Division,Alberta,Public,0,,2979,540,18.13%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-1250-Pub
 The Golden Hills School Division,Alberta,Public,0,,9367,1220,13.02%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-2155-Pub
 The Grande Prairie Roman Catholic Separate School Division,Alberta,Separate (Catholic),0,,22539,2091,9.28%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-4130-Sep
@@ -39,9 +39,9 @@ The Medicine Hat Catholic Separate School Division,Alberta,Separate (Catholic),0
 The Medicine Hat School Division,Alberta,Public,0,,12779,1635,12.79%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-3050-Pub
 The Northern Gateway School Division,Alberta,Public,0,,7672,1002,13.06%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-2275-Pub
 The Northern Lights School Division,Alberta,Public,0,,10867,1228,11.30%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-1245-Pub
-The Northland School Division,Alberta,Public,0,,33728,4386,13.00%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-1280-Pub
+The Northland School Division,Alberta,Public,0,,16209,3456,21.32%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-1280-Pub
 The Palliser School Division,Alberta,Public,0,,8959,1068,11.92%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-2255-Pub
-The Parkland School Division,Alberta,Public,0,,20968,1961,9.35%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-2305-Pub
+The Parkland School Division,Alberta,Public,0,,20955,1961,9.36%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-2305-Pub
 The Peace River School Division,Alberta,Public,0,,4830,592,12.26%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-1070-Pub
 The Peace Wapiti School Division,Alberta,Public,0,,10136,957,9.44%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-0177-Pub
 The Pembina Hills School Division,Alberta,Public,0,,5720,777,13.58%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-AB-1175-Pub
@@ -181,6 +181,78 @@ Tłı̨chǫ Community Services Agency,Northwest Territories,Public,0,,810,145,17
 Yellowknife Catholic Schools,Northwest Territories,Catholic,0,,4865,300,6.17%,Approximated from the census region it serves (no published border),,CA-NT-YellowknifeCatholicSchools
 Yellowknife Education District No. 1,Northwest Territories,Public,0,,4865,300,6.17%,Approximated from the census region it serves (no published border),,CA-NT-YellowknifeEducationDistrictNo1
 Commission scolaire francophone du Nunavut,Nunavut,Francophone,0,,13830,2615,18.91%,"Serves the whole province or territory, so its figures are province- or territory-wide",,CA-NU-CommissionscolairefrancophoneduNunavut
+Algoma District School Board,Ontario,English public,0,,17695,2600,14.69%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-2
+Algonquin and Lakeshore Catholic District School Board,Ontario,English Catholic,0,,62158,7110,11.44%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-55
+Avon Maitland District School Board,Ontario,English public,0,,29620,3633,12.27%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-8
+Bluewater District School Board,Ontario,English public,0,,32511,4299,13.22%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-7
+Brant Haldimand Norfolk Catholic District School Board,Ontario,English Catholic,0,,52607,5421,10.30%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-51
+Bruce-Grey Catholic District School Board,Ontario,English Catholic,0,,32514,4299,13.22%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-35
+Catholic District School Board of Eastern Ontario,Ontario,English Catholic,0,,70865,7455,10.52%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-52
+Conseil des écoles publiques de l'Est de l'Ontari,Ontario,French public,0,,347792,37396,10.75%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-59
+Conseil scolaire Viamonde,Ontario,French public,0,,2198976,250034,11.37%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-58
+Conseil scolaire catholique MonAvenir,Ontario,French Catholic,0,,1872332,205726,10.99%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-64
+Conseil scolaire catholique Providence,Ontario,French Catholic,0,,336407,45245,13.45%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-63
+Conseil scolaire de district catholique Franco-Nord,Ontario,French Catholic,0,,17890,2358,13.18%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-60B
+Conseil scolaire de district catholique de l'Est ontarien,Ontario,French Catholic,0,,39942,4408,11.04%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-65
+Conseil scolaire de district catholique des Aurores boréales,Ontario,French Catholic,0,,34761,4889,14.06%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-62
+Conseil scolaire de district catholique des Grandes Rivières,Ontario,French Catholic,0,,19558,2792,14.28%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-60A
+Conseil scolaire de district catholique du Centre-Est de l'Ontario,Ontario,French Catholic,0,,308299,33076,10.73%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-66
+Conseil scolaire de district catholique du Nouvel-Ontario,Ontario,French Catholic,0,,50875,6499,12.77%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-61
+Conseil scolaire public du Grand Nord de l'Ontario,Ontario,French public,0,,88830,12214,13.75%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-57
+Conseil scolaire public du Nord-Est de l'Ontario,Ontario,French public,0,,49870,6438,12.91%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-56
+District School Board Ontario North East,Ontario,English public,0,,19107,2683,14.04%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-1
+District School Board of Niagara,Ontario,English public,0,,85213,10672,12.52%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-22
+Dufferin-Peel Catholic District School Board,Ontario,English Catholic,0,,307835,29470,9.57%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-43
+Durham Catholic District School Board,Ontario,English Catholic,0,,127517,10930,8.57%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-45
+Durham District School Board,Ontario,English public,0,,127513,10938,8.58%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-13
+Grand Erie District School Board,Ontario,English public,0,,52604,5420,10.30%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-23
+Greater Essex County District School Board,Ontario,English public,0,,83976,12154,14.47%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-9
+Halton Catholic District School Board,Ontario,English Catholic,0,,138835,10817,7.79%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-46
+Halton District School Board,Ontario,English public,0,,138839,10818,7.79%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-20
+Hamilton-Wentworth Catholic District School Board,Ontario,English Catholic,0,,109495,14220,12.99%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-47
+Hamilton-Wentworth District School Board,Ontario,English public,0,,109550,14225,12.98%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-21
+Hastings and Prince Edward District School Board,Ontario,English public,0,,26251,3302,12.58%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-29
+Huron Perth Catholic District School Board,Ontario,English Catholic,0,,29620,3633,12.27%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-36
+Huron-Superior Catholic District School Board,Ontario,English Catholic,0,,18965,2842,14.99%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-31
+Kawartha Pine Ridge District School Board,Ontario,English public,0,,65918,5807,8.81%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-14
+Keewatin-Patricia District School Board,Ontario,English public,0,,6981,828,11.86%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-5A
+Kenora Catholic District School Board,Ontario,English Catholic,0,,3987,402,10.08%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-33B
+Lakehead District School Board,Ontario,English public,0,,21342,3070,14.38%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-6A
+Lambton Kent District School Board,Ontario,English public,0,,43738,5182,11.85%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-10
+Limestone District School Board,Ontario,English public,0,,35379,3712,10.49%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-27
+London District Catholic SB,Ontario,English Catholic,0,,146495,19965,13.63%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-38
+Near North District School Board,Ontario,English public,0,,21002,2811,13.38%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-4
+Niagara Catholic District School Board,Ontario,English Catholic,0,,85223,10673,12.52%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-50
+Nipissing-Parry Sound Catholic District School Board,Ontario,English Catholic,0,,17890,2358,13.18%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-30B
+Northeastern Catholic District School Board,Ontario,English Catholic,0,,19558,2792,14.28%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-30A
+Northwest Catholic District School Board,Ontario,English Catholic,0,,6549,935,14.28%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-33A
+Ottawa Catholic SB,Ontario,English Catholic,0,,196532,20967,10.67%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-53
+Ottawa-Carleton District School Board,Ontario,English public,0,,196526,20966,10.67%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-25
+Peel District School Board,Ontario,English public,0,,293299,28472,9.71%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-19
+Peterborough Victoria Northumberland and Clarington Catholic District School Board,Ontario,English Catholic,0,,78510,7201,9.17%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-41
+Rainbow District School Board,Ontario,English public,0,,36297,4662,12.84%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-3
+Rainy River District School Board,Ontario,English public,0,,3698,570,15.41%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-5B
+Renfrew County Catholic District School Board,Ontario,English Catholic,0,,18677,1952,10.45%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-54
+Renfrew County District School Board,Ontario,English public,0,,18764,1961,10.45%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-28
+Simcoe County District School Board,Ontario,English public,0,,95971,8476,8.83%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-17
+Simcoe Muskoka Catholic District School Board,Ontario,English Catholic,0,,107956,9712,9.00%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-44
+St Clair Catholic District School Board,Ontario,English Catholic,0,,43738,5182,11.85%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-39
+Sudbury Catholic District School Board,Ontario,English Catholic,0,,31899,3656,11.46%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-32
+Superior North Catholic District School Board,Ontario,English Catholic,0,,2980,502,16.85%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-34B
+Superior-Greenstone District School Board,Ontario,English public,0,,2983,503,16.86%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-6B
+Thames Valley District School Board,Ontario,English public,0,,146496,19965,13.63%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-11
+Thunder Bay Catholic District School Board,Ontario,English Catholic,0,,21243,3050,14.36%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-34A
+Toronto Catholic District School Board,Ontario,English Catholic,0,,460599,67541,14.66%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-40
+Toronto District School Board,Ontario,English public,0,,460637,67546,14.66%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-12
+Trillium Lakelands District School Board,Ontario,English public,0,,24514,2619,10.68%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-15
+Upper Canada District School Board,Ontario,English public,0,,70866,7454,10.52%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-26
+Upper Grand District School Board,Ontario,English public,0,,64128,5282,8.24%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-18
+Waterloo Catholic District School Board,Ontario,English Catholic,0,,122158,13148,10.76%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-49
+Waterloo Region District School Board,Ontario,English public,0,,122160,13148,10.76%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-24
+Wellington Catholic District School Board,Ontario,English Catholic,0,,49463,4277,8.65%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-48
+Windsor-Essex Catholic District School Board,Ontario,English Catholic,0,,84026,12164,14.48%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-37
+York Catholic District School Board,Ontario,English Catholic,0,,231830,22285,9.61%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-42
+York Region District School Board,Ontario,English public,0,,231984,22306,9.62%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-16
 Commission scolaire de langue française,Prince Edward Island,Francophone,0,,27900,4310,15.45%,"Serves the whole province or territory, so its figures are province- or territory-wide",,CA-PE-Commissionscolairedelanguefrançaise
 Public Schools Branch,Prince Edward Island,English,0,,27900,4310,15.45%,"Serves the whole province or territory, so its figures are province- or territory-wide",,CA-PE-PublicSchoolsBranch
 Centre de services scolaire De La Jonquière,Quebec,French,0,,11158,824,7.38%,Census subdivisions inside the board's published border (split ones shared by land area),https://cssdlj.gouv.qc.ca/,CA-QC-724000
@@ -255,5 +327,6 @@ Commission scolaire Riverside,Quebec,English,0,,220532,16868,7.65%,Census subdiv
 Commission scolaire Sir-Wilfrid-Laurier,Quebec,English,0,,328605,25912,7.89%,Census subdivisions inside the board's published border (split ones shared by land area),https://www.swlauriersb.qc.ca,CA-QC-885000
 Commission scolaire Western Québec,Quebec,English,0,,107472,10052,9.35%,Census subdivisions inside the board's published border (split ones shared by land area),https://westernquebec.ca/fr/accueil/,CA-QC-886000
 Commission scolaire crie,Quebec,Special status,0,,5459,341,6.25%,Census subdivisions inside the board's published border (split ones shared by land area),https://eeyoueducation.ca/,CA-QC-759000
+Conseil des écoles fransaskoises,Saskatchewan,Francophone,0,,252860,43245,17.10%,"Serves the whole province or territory, so its figures are province- or territory-wide",,CA-SK-Conseildesécolesfransaskoises
 Commission scolaire francophone du Yukon,Yukon,Francophone,0,,7910,580,7.33%,"Serves the whole province or territory, so its figures are province- or territory-wide",,CA-YT-CommissionscolairefrancophoneduYukon
 Yukon First Nation School Board,Yukon,First Nation,0,,7910,580,7.33%,"Serves the whole province or territory, so its figures are province- or territory-wide",,CA-YT-YukonFirstNationSchoolBoard

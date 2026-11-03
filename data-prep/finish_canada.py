@@ -26,7 +26,9 @@ def main(src, yt, dst):
         for r in rows:
             n, url = counts.get(r["District ID"], (0, ""))
             w.writerow({**{c: r.get(c, "") for c in cols}, "Province": NAMES[r["Province"]],
-                        "Available Board Meetings": n, "Meetings source": url if n else ""})
+                        "Available Board Meetings": n, "Meetings source": url if n else "",
+                        # Ontario's border file (2015) lists old web addresses, many of them dead.
+                        "Website": "" if r["Province"] == "ON" else r.get("Website", "")})
     print(len(rows), "boards;", sum(1 for r in rows if counts.get(r["District ID"], (0,))[0] > 0), "with meetings")
 
 

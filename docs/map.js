@@ -175,7 +175,7 @@
   function zoomToCurrent() {
     if (!map || !current) return;
     if (current.state === "territories") return jump("Puerto Rico");
-    if (current.country === "CA") return jump("Canada");
+    if (current.country === "CA" && !current.parent) return jump("Canada");
     if (current.parent) {
       const pre = `CA-${current.state.split(":")[1]}-`;
       let b = null;
