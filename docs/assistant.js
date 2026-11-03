@@ -4,12 +4,16 @@
 (function () {
   const $ = (id) => document.getElementById(id);
   const POV = "Percentage of Children Ages 5-17 in Poverty", MEET = "Available Board Meetings";
+  // Canadian boards use low income for ages 0-17 (a different measure; never mixed with US rows).
+  const CA_POV = "Percentage of Children Ages 0-17 in Low Income";
   const METRICS = {
-    poverty: { col: POV, label: "child poverty rate", fmt: (v) => `${v.toFixed(1)}%` },
+    poverty: { col: POV, caCol: CA_POV, label: "child poverty rate", caLabel: "child low-income rate (ages 0–17)", fmt: (v) => `${v.toFixed(1)}%` },
     meetings: { col: MEET, label: "available board meetings", fmt: (v) => v.toLocaleString() },
     enrollment: { col: "Enrollment", label: "enrollment", fmt: (v) => `${v.toLocaleString()} students` },
-    children: { col: "Children Ages 5-17", label: "children ages 5–17", fmt: (v) => v.toLocaleString() }
+    children: { col: "Children Ages 5-17", caCol: "Children Ages 0-17", label: "children ages 5–17", caLabel: "children ages 0–17", fmt: (v) => v.toLocaleString() }
   };
+  const val = (r, m) => num(r[r._ca && m.caCol ? m.caCol : m.col]);
+  const povOf = (r) => num(r[r._ca ? CA_POV : POV]);
   const EXAMPLES = [
     "What is the poverty rate in Austin ISD?",
     "Which districts in Ohio have the most meetings?",
@@ -17,6 +21,7 @@
     "How many rural districts in Iowa have meetings?",
     "Compare California and Florida",
     "Does Oregon require recording board meetings?",
+    "Highest child low income in Ontario",
     "Where does the data come from?"
   ];
 
@@ -28,12 +33,18 @@
   const plural = (n, word) => `${n.toLocaleString()} ${n === 1 ? word : word + "s"}`;
 
   // ---- data -------------------------------------------------------------------------------
-  let all = [], states = {};   // all rows (states + territories); abbr -> full name
+  let all = [], states = {};   // all rows (states, territories, Canada); place key -> full name
+  // Place keys: US state codes ("OH") and Canadian provinces ("CA:ON").
+  const inPlace = (r, key) => (key.startsWith("CA:") ? r._ca && r.Province === states[key] : r.State === key);
   function data() {
     if (all.length || !window.SiteData) return all.length > 0;
     const { datasets, config } = window.SiteData;
-    states = config.perState.names;
-    datasets.forEach((ds) => ds.rows.forEach((r) => all.push({ ...r, _place: r.State || r.Territory || "", _terr: !r.State })));
+    states = { ...config.perState.names };
+    datasets.forEach((ds) => {
+      if (ds.country === "CA") Object.entries(ds.groups.names).forEach(([k, n]) => { states[`CA:${k}`] = n; });
+      ds.rows.forEach((r) => all.push({ ...r, _ca: ds.country === "CA", _place: r.State || r.Territory || r.Province || "",
+        _terr: !ds.country && !r.State }));
+    });
     return true;
   }
 
@@ -74,7 +85,7 @@
     const qw = new Set(words(q));
     let best = [], bestLen = 0;
     all.forEach((r) => {
-      if (inStates.length && !inStates.includes(r.State)) return;
+      if (inStates.length && !inStates.some((k) => inPlace(r, k))) return;
       const c = core(r.District);
       if (!c.length || !c.every((w) => qw.has(w))) return;
       const len = c.join(" ").length;
@@ -91,16 +102,29 @@
   function scopeRows(stateList, q) {
     let rows = all;
     let label = "the United States";
-    if (/territor/i.test(q)) { rows = all.filter((r) => r._terr); label = "the U.S. territories"; }
-    else if (stateList.length === 1) { rows = all.filter((r) => r.State === stateList[0]); label = states[stateList[0]]; }
-    else rows = all.filter((r) => !r._terr);
+    if (stateList.length === 1) { rows = all.filter((r) => inPlace(r, stateList[0])); label = states[stateList[0]]; }
+    else if (/canad/i.test(q)) { rows = all.filter((r) => r._ca); label = "Canada"; }
+    else if (/territor/i.test(q)) { rows = all.filter((r) => r._terr); label = "the U.S. territories"; }
+    else rows = all.filter((r) => !r._terr && !r._ca);
+    const unit = rows.length && rows.every((r) => r._ca) ? "boards" : "districts";
     const locale = findLocale(q);
-    if (locale) { rows = rows.filter((r) => r.Locale === locale); label = `${locale.toLowerCase()} districts in ${label}`; }
-    else label = `districts in ${label}`;
+    if (locale && unit === "districts") { rows = rows.filter((r) => r.Locale === locale); label = `${locale.toLowerCase()} districts in ${label}`; }
+    else label = `${unit} in ${label}`;
     return { rows, label };
   }
 
+  function boardCard(r) {
+    const pov = povOf(r), meet = num(r[MEET]);
+    return `<div class="ask-card"><strong>${esc(r.District)}, ${esc(r.Province)}</strong><ul>` +
+      `<li>${esc(r["Board type"])} board</li>` +
+      `<li>Children ages 0–17 in low income: ${isNaN(pov) ? "not available" : pov.toFixed(1) + "%"}` +
+      (num(r["Children Ages 0-17"]) > 0 ? ` (${num(r["Children Ages 0-17 in Low Income"]).toLocaleString()} of ${num(r["Children Ages 0-17"]).toLocaleString()} children)` : "") + `</li>` +
+      `<li>Board meetings found on YouTube: ${isNaN(meet) ? 0 : meet.toLocaleString()}</li></ul>` +
+      `<p class="ask-note">${esc(r["How poverty was calculated"] || "")}. Canada's low-income measure (LIM-AT, 2021 Census) isn't the same as the US child poverty rate.</p></div>`;
+  }
+
   function districtCard(r) {
+    if (r._ca) return boardCard(r);
     const pov = num(r[POV]), meet = num(r[MEET]), enr = num(r.Enrollment);
     const note = r.Notes || r["Poverty figures"] || "";
     return `<div class="ask-card"><strong>${esc(r.District)}${r.County ? `, ${esc(r.County)}` : ""}${r._place ? `, ${esc(r._place)}` : ""}</strong><ul>` +
@@ -119,20 +143,21 @@
     const low = /\b(lowest|least|fewest|smallest|bottom|minimum)\b/i.test(q);
     const n = Math.min(Number((q.match(/\b(?:top|bottom|first)?\s*(\d{1,2})\b/i) || [])[1]) || 5, 20);
     const { rows, label } = scopeRows(stateList, q);
-    const list = rows.filter((r) => !isNaN(num(r[m.col])))
-      .sort((a, b) => (num(a[m.col]) - num(b[m.col])) * (low ? 1 : -1)).slice(0, n);
-    if (!list.length) return `I couldn't find any ${esc(label)} with a ${m.label}.`;
+    const list = rows.filter((r) => !isNaN(val(r, m)))
+      .sort((a, b) => (val(a, m) - val(b, m)) * (low ? 1 : -1)).slice(0, n);
+    const mLabel = rows.length && rows[0]._ca && m.caLabel ? m.caLabel : m.label;
+    if (!list.length) return `I couldn't find any ${esc(label)} with a ${mLabel}${rows.some((r) => r._ca) && metricKey === "enrollment" ? " (Canada's data has no enrollment figures)" : ""}.`;
     if (metricKey === "meetings" && !low && num(list[0][MEET]) === 0) return `None of the ${esc(label)} have available board meetings on record.`;
-    return `<p>${low ? "Lowest" : "Highest"} ${m.label} among ${esc(label)}:</p><ol>` +
-      list.map((r) => `<li>${esc(r.District)}${stateList.length === 1 ? "" : `, ${esc(r._place)}`}: ${m.fmt(num(r[m.col]))}</li>`).join("") + "</ol>";
+    return `<p>${low ? "Lowest" : "Highest"} ${mLabel} among ${esc(label)}:</p><ol>` +
+      list.map((r) => `<li>${esc(r.District)}${stateList.length === 1 ? "" : `, ${esc(r._place)}`}: ${m.fmt(val(r, m))}</li>`).join("") + "</ol>";
   }
 
   function summary(rows) {
-    const pov = rows.map((r) => num(r[POV])).filter((v) => !isNaN(v));
+    const pov = rows.map(povOf).filter((v) => !isNaN(v));
     const withM = rows.filter((r) => num(r[MEET]) > 0);
     const avg = (a) => (a.length ? a.reduce((x, y) => x + y, 0) / a.length : NaN);
-    const avgPov = (rs) => avg(rs.map((r) => num(r[POV])).filter((v) => !isNaN(v)));
-    return { n: rows.length, avgPov: avg(pov), withM: withM.length, povWith: avgPov(withM),
+    const avgPov = (rs) => avg(rs.map(povOf).filter((v) => !isNaN(v)));
+    return { n: rows.length, ca: rows.length > 0 && rows.every((r) => r._ca), avgPov: avg(pov), withM: withM.length, povWith: avgPov(withM),
       povWithout: avgPov(rows.filter((r) => !(num(r[MEET]) > 0))), meetings: rows.reduce((t, r) => t + (num(r[MEET]) || 0), 0) };
   }
   const pct = (v) => (isNaN(v) ? "–" : `${v.toFixed(1)}%`);
@@ -142,45 +167,51 @@
     if (!rows.length) return `I couldn't find any ${esc(label)}.`;
     const s = summary(rows);
     return `<p>${esc(label[0].toUpperCase() + label.slice(1))} (${s.n.toLocaleString()}):</p><ul>` +
-      `<li>Average child poverty rate: ${pct(s.avgPov)}</li>` +
+      `<li>Average ${s.ca ? "child low-income rate (ages 0–17)" : "child poverty rate"}: ${pct(s.avgPov)}</li>` +
       `<li>With available board meetings: ${s.withM.toLocaleString()} (${pct((100 * s.withM) / s.n)}), ${s.meetings.toLocaleString()} meetings in all</li>` +
-      `<li>Average child poverty, with meetings vs. without: ${pct(s.povWith)} vs. ${pct(s.povWithout)}</li></ul>`;
+      `<li>Average ${s.ca ? "child low income" : "child poverty"}, with meetings vs. without: ${pct(s.povWith)} vs. ${pct(s.povWithout)}</li></ul>` +
+      (s.ca ? `<p class="ask-note">Canada's low-income measure (LIM-AT, 2021 Census) isn't the same as the US child poverty rate.</p>` : "");
   }
 
   function count(q, stateList) {
     const { rows, label } = scopeRows(stateList, q);
+    const unit = label.startsWith("boards") ? "board" : "district";
     if (/meeting/i.test(q)) {
       const w = rows.filter((r) => num(r[MEET]) > 0).length;
       const without = /\b(no|without|none|zero)\b/i.test(q);
       return without
-        ? `${plural(rows.length - w, "district")} of ${rows.length.toLocaleString()} ${esc(label)} have no available board meetings on record.`
-        : `${plural(w, "district")} of ${rows.length.toLocaleString()} ${esc(label)} have available board meetings (${pct((100 * w) / Math.max(rows.length, 1))}).`;
+        ? `${plural(rows.length - w, unit)} of ${rows.length.toLocaleString()} ${esc(label)} have no available board meetings on record.`
+        : `${plural(w, unit)} of ${rows.length.toLocaleString()} ${esc(label)} have available board meetings (${pct((100 * w) / Math.max(rows.length, 1))}).`;
     }
     const over = q.match(/(?:over|above|more than|at least)\s*(\d+)\s*%/i), under = q.match(/(?:under|below|less than)\s*(\d+)\s*%/i);
     if (over || under) {
       const t = Number((over || under)[1]);
-      const k = rows.filter((r) => (over ? num(r[POV]) >= t : num(r[POV]) < t)).length;
-      return `${plural(k, "district")} of ${rows.length.toLocaleString()} ${esc(label)} have a child poverty rate ${over ? "of" : "under"} ${t}%${over ? " or more" : ""}.`;
+      const k = rows.filter((r) => (over ? povOf(r) >= t : povOf(r) < t)).length;
+      return `${plural(k, unit)} of ${rows.length.toLocaleString()} ${esc(label)} have a child poverty rate ${over ? "of" : "under"} ${t}%${over ? " or more" : ""}.`;
     }
-    return `There are ${rows.length.toLocaleString()} ${esc(rows.length === 1 ? label.replace(/^(\w+ )?districts/, (m) => m.replace(/s$/, "")) : label)}.`;
+    return `There are ${rows.length.toLocaleString()} ${esc(rows.length === 1 ? label.replace(/^(\w+ )?(districts|boards)/, (m) => m.replace(/s$/, "")) : label)}.`;
   }
 
   function compare(stateList) {
-    const rows = stateList.map((a) => [states[a], summary(all.filter((r) => r.State === a))]);
+    const rows = stateList.map((a) => [states[a], summary(all.filter((r) => inPlace(r, a)))]);
+    const mixed = rows.some(([, s]) => s.ca) && rows.some(([, s]) => !s.ca);
     return `<table class="ask-table"><thead><tr><th></th>${rows.map(([n]) => `<th>${esc(n)}</th>`).join("")}</tr></thead><tbody>` +
-      `<tr><td>Districts</td>${rows.map(([, s]) => `<td>${s.n.toLocaleString()}</td>`).join("")}</tr>` +
-      `<tr><td>Average child poverty</td>${rows.map(([, s]) => `<td>${pct(s.avgPov)}</td>`).join("")}</tr>` +
+      `<tr><td>Districts or boards</td>${rows.map(([, s]) => `<td>${s.n.toLocaleString()}</td>`).join("")}</tr>` +
+      `<tr><td>Average child poverty${mixed ? " (US) / low income (Canada)" : rows[0][1].ca ? " (low income, 0–17)" : ""}</td>${rows.map(([, s]) => `<td>${pct(s.avgPov)}</td>`).join("")}</tr>` +
       `<tr><td>With available meetings</td>${rows.map(([, s]) => `<td>${s.withM.toLocaleString()} (${pct((100 * s.withM) / s.n)})</td>`).join("")}</tr>` +
       `<tr><td>Total meetings</td>${rows.map(([, s]) => `<td>${s.meetings.toLocaleString()}</td>`).join("")}</tr>` +
       `<tr><td>Poverty with / without meetings</td>${rows.map(([, s]) => `<td>${pct(s.povWith)} / ${pct(s.povWithout)}</td>`).join("")}</tr>` +
-      `</tbody></table>`;
+      `</tbody></table>` + (mixed ? `<p class="ask-note">Canada's low-income rate (ages 0–17, LIM-AT) and the US child poverty rate (ages 5–17, SAIPE) are different measures, so compare them with care.</p>` : "");
   }
 
   function rules(stateList) {
     const r = window.STATE_RULES;
     if (!r) return "The state rules aren't loaded.";
+    if (stateList.length && stateList.every((a) => a.startsWith("CA:"))) {
+      return "The rules on recording or streaming board meetings have only been researched for US states, not Canadian provinces.";
+    }
     if (stateList.length) {
-      return stateList.map((a) => {
+      return stateList.filter((a) => !a.startsWith("CA:")).map((a) => {
         const name = states[a], laws = r.laws.filter((x) => x.state === name), bill = r.proposed.find((x) => x.state === name);
         return `<p><strong>${esc(name)}</strong>: ` + (laws.length
           ? laws.map((x) => `${esc(x.covers)} — ${esc(x.rule)}`).join(" ")
@@ -204,7 +235,10 @@
     if (/meeting/.test(s) && /what|mean|count/.test(s)) {
       return "“Available board meetings” is how many of a district's board meetings CivicSearch has recordings or transcripts for. Districts it doesn't cover show 0. For the territories, the counts are board meetings posted on the boards' own YouTube channels.";
     }
-    return "The data comes from the Census Bureau (child poverty, SAIPE 2024; 2020 Census for most territories), NCES (enrollment and locale), CivicSearch (board meeting counts), and state laws for the rules. Every source is linked on the Sources tab.";
+    if (/canad|province/.test(s)) {
+      return "Canada's figures come from Statistics Canada (children 0–17 in low income, LIM-AT, 2021 Census, worked out for each board from census subdivisions inside its border), provincial board border files, and board meetings counted on each board's YouTube channel. They're kept separate from the US figures. Sources are on the Sources tab when Canada is picked.";
+    }
+    return "The data comes from the Census Bureau (child poverty, SAIPE 2024; 2020 Census for most territories), NCES (enrollment and locale), CivicSearch (board meeting counts), and state laws for the rules. Canada's comes from Statistics Canada, provincial border files and the boards' YouTube channels. Every source is linked on the Sources tab.";
   }
 
   function answer(q) {
@@ -254,7 +288,7 @@
       <section id="ask-panel" class="ask-panel" role="dialog" aria-label="Ask about the data" hidden>
         <div class="ask-head"><strong>Ask about the data</strong><button id="ask-close" type="button" aria-label="Close">×</button></div>
         <div id="ask-log" class="ask-log" aria-live="polite">
-          <div class="ask-msg ask-bot"><p>Ask about any school district, state or territory on this site. I answer from the site's own data.</p>
+          <div class="ask-msg ask-bot"><p>Ask about any school district, state or territory, or Canadian board or province, on this site. I answer from the site's own data.</p>
             <div class="ask-chips">${EXAMPLES.map((e) => `<button type="button" class="ask-chip">${esc(e)}</button>`).join("")}</div></div>
         </div>
         <form id="ask-form" class="ask-form"><input id="ask-input" type="text" placeholder="Type a question…" aria-label="Your question" autocomplete="off"><button type="submit">Ask</button></form>
