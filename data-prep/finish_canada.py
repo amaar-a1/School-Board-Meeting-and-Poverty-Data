@@ -27,7 +27,7 @@ def main(src, yt, dst):
             elif r.get("Meetings"):
                 counts[r["District ID"]] = (int(r["Meetings"]), r["Channel URL"])
     rows = list(csv.DictReader(open(src, newline="", encoding="utf-8")))
-    cols = ["District", "Province", "Board type", "Available Board Meetings", "Meetings source", "Children Ages 0-17",
+    cols = ["District", "Province", "Board type", "Locale", "Available Board Meetings", "Meetings source", "Children Ages 0-17",
             "Children Ages 0-17 in Low Income", "Percentage of Children Ages 0-17 in Low Income", "How poverty was calculated",
             "Website", "District ID"]
     with open(dst, "w", newline="", encoding="utf-8") as f:
