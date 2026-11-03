@@ -1,6 +1,7 @@
 # Temporary: inspect Ontario's official school board boundary file; search again for Saskatchewan.
 import json, os, subprocess, sys, time, urllib.request, zipfile
 subprocess.run([sys.executable, "-m", "pip", "install", "-q", "geopandas", "pyogrio"], check=True)
+import site, importlib; site.addsitedir(site.getusersitepackages()); importlib.invalidate_caches()
 import geopandas as gpd, pyogrio
 os.makedirs("fetch/out/canada", exist_ok=True)
 UA = {"User-Agent": "school-board-research-script (github.com/amaar-a1)"}
