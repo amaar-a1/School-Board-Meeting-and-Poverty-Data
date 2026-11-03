@@ -14,9 +14,45 @@ window.SITE_CONFIG = {
     { name: "U.S. territories", file: "data/territories.csv", state: "territories", textColumns: ["District ID"],
       chart: { type: "bar", x: "District", y: "Percentage of Children Ages 5-17 in Poverty" },
       rulesNote: "The territories' rules on recording or streaming board meetings haven't been researched yet.",
-      note: "Puerto Rico, Guam, the Northern Mariana Islands, the U.S. Virgin Islands and American Samoa, shown together. Each runs one territory-wide school system (the Virgin Islands has two districts under one board). CivicSearch doesn't cover the territories, so their meeting counts are the board meetings recorded on the boards' own YouTube channels (checked October 30, 2026; a meeting split across several videos counts once): Guam has 21 (October 2025 to October 2026) and the Northern Mariana Islands 6 (May to October 2026; its board meets on Zoom and its website posts no recordings); the Virgin Islands board posts only agendas and minutes, American Samoa had none, and Puerto Rico has no board. Recordings posted only on Facebook couldn't be checked. These counts aren't directly comparable with CivicSearch's. Puerto Rico's poverty figures are Census estimates for 2024; the other territories' come from the 2020 Census (2019 income) and count children living in households (on Guam, not counting military housing), so they aren't directly comparable with Puerto Rico's or the states'. The Virgin Islands figures are split by island to match its two districts. Enrollment and locale are from the NCES directory: 2023, except Guam (2021) and American Samoa (2020), the latest years NCES has enrollment for them; Guam's four charter schools, listed separately by NCES, are left out.",
-      footer: "Territory school systems as of October 30, 2026. Sources are listed on the Sources tab." }
+      note: "Puerto Rico, Guam, the Northern Mariana Islands, the U.S. Virgin Islands and American Samoa, shown together. Each runs one territory-wide school system (the Virgin Islands has two districts under one board). CivicSearch doesn't cover the territories, so their meeting counts are the board meetings recorded on the boards' own YouTube channels (checked October 30, 2026; a meeting split across several videos counts once): Guam has 21 (October 2025 to October 2026) and the Northern Mariana Islands 6 (May to October 2026; its board meets on Zoom and its website posts no recordings); the Virgin Islands board posts only agendas and minutes, American Samoa had none, and Puerto Rico has no board, so its count is the Legislature's education committee sessions (21) instead. Recordings posted only on Facebook couldn't be checked. These counts aren't directly comparable with CivicSearch's. Puerto Rico's poverty figures are Census estimates for 2024; the other territories' come from the 2020 Census (2019 income) and count children living in households (on Guam, not counting military housing), so they aren't directly comparable with Puerto Rico's or the states'. The Virgin Islands figures are split by island to match its two districts. Enrollment and locale are from the NCES directory: 2023, except Guam (2021) and American Samoa (2020), the latest years NCES has enrollment for them; Guam's four charter schools, listed separately by NCES, are left out.",
+      footer: "Territory school systems as of October 30, 2026. Sources are listed on the Sources tab." },
+    // Canada: its own button and its own provinces in the menu. Kept apart from the US figures,
+    // because its low-income measure (ages 0-17, LIM-AT) isn't the same as the US one (ages 5-17, SAIPE).
+    { name: "Canada", file: "data/canada.csv", country: "CA", textColumns: ["District ID"], recordLabel: "Boards",
+      groups: { column: "Province", label: "Canada",
+        names: { AB: "Alberta", BC: "British Columbia", MB: "Manitoba", NB: "New Brunswick", NL: "Newfoundland and Labrador",
+          NS: "Nova Scotia", NT: "Northwest Territories", NU: "Nunavut", ON: "Ontario", PE: "Prince Edward Island", QC: "Quebec",
+          SK: "Saskatchewan", YT: "Yukon" } },
+      chart: { type: "scatter", x: "Percentage of Children Ages 0-17 in Low Income", y: "Available Board Meetings" },
+      compare: {
+        title: "Child low income: boards with vs. without board meetings found",
+        by: "Available Board Meetings",
+        metric: "Percentage of Children Ages 0-17 in Low Income",
+        withLabel: "With 1+ meetings found",
+        withoutLabel: "With no meetings found"
+      },
+      sizeNote: "Canada's data has no enrollment figures, so boards can't be grouped by size.",
+      note: "{rows} Canadian school boards and school service centres in every province and territory. Canada has no site like CivicSearch, so meeting counts are the board meetings each board has posted on its own YouTube channel (meetings found for {withMeetings} boards; the rest show 0, which can also mean the board streams elsewhere). Low income is Statistics Canada's after-tax low-income measure (LIM-AT) for children ages 0–17 from the 2021 Census (2020 incomes), worked out for each board from the census subdivisions inside its border; see the “How poverty was calculated” column. These figures aren't comparable with the US child poverty rates.",
+      footer: "Canadian boards, borders and low-income figures as built in November 2026. Sources are listed on the Sources tab." }
   ],
+  // "All" button: every US district, territory school system and Canadian board together.
+  combined: {
+    name: "All: United States, U.S. territories and Canada", button: "All", recordLabel: "Districts and boards",
+    textColumns: ["District ID"], metric: "Child poverty rate",
+    measures: {
+      us: "Children 5–17 in poverty (Census SAIPE 2024)",
+      territories: "Children 5–17 in poverty (Census; 2020 Census for all but Puerto Rico)",
+      canada: "Children 0–17 in low income (Statistics Canada LIM-AT, 2021 Census)"
+    },
+    chart: { type: "scatter", x: "Child poverty rate", y: "Available Board Meetings" },
+    compare: {
+      title: "Child poverty: with vs. without available board meetings (all countries)",
+      by: "Available Board Meetings", metric: "Child poverty rate",
+      withLabel: "With 1+ available meetings", withoutLabel: "With no available meetings"
+    },
+    note: "Every US school district, U.S. territory school system and Canadian school board on this site together ({rows}; meetings found for {withMeetings}). The child poverty rate isn't measured the same way everywhere: US districts use the Census share of children 5–17 in poverty, the territories mostly the 2020 Census, and Canada Statistics Canada's share of children 0–17 in low income (see the “Poverty measure” column). Meeting counts come from CivicSearch in the US and from the boards' own sites or YouTube channels in the territories and Canada. So treat comparisons across countries with care; the US, territory and Canada buttons have each one's full figures.",
+    footer: "Built from the United States, U.S. territories and Canada data. Sources for all three are listed on the Sources tab."
+  },
   // State menu: every state and DC. Each state's view is the national rows with this
   // State value.
   perState: {

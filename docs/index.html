@@ -12,7 +12,7 @@
   <header class="hero">
     <div class="wrap">
       <h1 id="site-title">School Board Meetings &amp; Poverty Data</h1>
-      <p class="lede">Explore school board meeting and child poverty data: summary figures, interactive charts, the full table, and a breakdown by district size. Pick the United States, any state, or the U.S. territories below.</p>
+      <p class="lede">Explore school board meeting and child poverty data: summary figures, interactive charts, the full table, and a breakdown by district size. Pick the United States, any state, the U.S. territories, Canada and its provinces, or All to see everything together.</p>
       <nav class="links">
         <a href="#chart-section">Chart</a>
         <a href="#urban" id="urban-link" hidden>Urban &amp; suburban</a>
@@ -35,7 +35,7 @@
     <section id="find" class="find" aria-label="Find a district" hidden>
       <label for="find-input">Find a district</label>
       <div class="map-search-box">
-        <input id="find-input" type="search" placeholder="Type a district, county or state…" autocomplete="off"
+        <input id="find-input" type="search" placeholder="Type a district, board, county, state or province…" autocomplete="off"
           role="combobox" aria-expanded="false" aria-controls="find-results" aria-autocomplete="list">
         <ul id="find-results" class="map-results" role="listbox" hidden></ul>
       </div>
@@ -199,12 +199,13 @@
             </label>
             <label>Go to <select id="map-jump"></select></label>
             <label><input type="checkbox" id="map-secondary"> Secondary districts</label>
+            <label><input type="checkbox" id="map-canada-overlap"> Overlapping Canadian boards</label>
           </div>
         </div>
         <div class="map-search">
           <label for="map-search">Find a district</label>
           <div class="map-search-box">
-            <input id="map-search" type="search" placeholder="Type a district, county or state…" autocomplete="off"
+            <input id="map-search" type="search" placeholder="Type a district, board, county, state or province…" autocomplete="off"
               role="combobox" aria-expanded="false" aria-controls="map-results" aria-autocomplete="list">
             <ul id="map-results" class="map-results" role="listbox" hidden></ul>
           </div>
@@ -216,11 +217,20 @@
           cartographic boundaries (simplified). Unified and elementary districts are shown; in states that also have separate high school
           districts, tick “Secondary districts” to draw those on top. Guam, the Northern Mariana Islands and American Samoa have one
           territory-wide district each, so their outline is the whole territory. Vermont's poverty figures are for supervisory unions,
-          so each Vermont town district shows its union's figures; districts merged in 2024 show the merged district's figures on
+          so each Vermont town district shows its union's figures (CivicSearch has no Vermont boards; meetings counted from other sites cover only a few unions, and others may post meetings elsewhere); districts merged in 2024 show the merged district's figures on
           their old borders. High school pieces of districts show their parent district. Districts the Census poverty file
           leaves out (Defense Department base schools, districts with no schools of their own, a few tiny districts) show their
           county's all-ages poverty rate, noted in their tooltip. Districts with no meetings found count as 0 (palest blue). Pale green areas are outside
           any school district, mostly national parks and other federal land. When a state is picked or filters are on, other districts are faded.</p>
+        <p class="note">Canada (pick “Canada” above): school board borders come from each province (British Columbia, Alberta,
+          Saskatchewan, Manitoba, Ontario and Quebec publish them). Nova Scotia, New Brunswick and the Northwest Territories boards are
+          drawn from the counties or regions they serve. Boards that serve a whole province or territory (French-language boards,
+          Prince Edward Island, Newfoundland and Labrador, the Yukon and Nunavut) are drawn as the whole province or territory.
+          Canada's boards overlap: public and Catholic boards, and English and French ones, serve the same places. The map shows the
+          public (or English) board for each place by default (in the Yukon, the Yukon First Nation School Board; in Nunavut, its French
+          board, the only board there); tick “Overlapping Canadian boards” to draw the Catholic and French-language boards on top.
+          Boards with no meetings found are drawn too, in the palest blue. Canada's colors use the
+          share of children 0–17 in low income (2021 Census, LIM-AT), which isn't the same measure as the US child poverty rate.</p>
       </section>
     </div>
 

@@ -2,6 +2,7 @@
   const cfg = window.SITE_CONFIG;
   const $ = (id) => document.getElementById(id);
   let datasets = [];   // [{ name, columns, rows, numeric: Set }]
+  let combined = null; // the "All" view: every data set's rows in shared columns (see cfg.combined)
   let current = null;
   let sort = { col: null, dir: 1 };
   let chart = null;
@@ -9,6 +10,8 @@
   const TABLE_LIMIT = 500;   // rows drawn at once; the full set is still searchable and downloadable
   const sizeCharts = {};
   let view = "overview";
+  // A data set can bring its own comparison columns (Canada uses low income for ages 0-17).
+  const cmpFor = (d) => (d && d.compare) || cfg.compare;
 
   document.title = cfg.title;
   $("site-title").textContent = cfg.title;
@@ -50,9 +53,10 @@
       datasets = await Promise.all(cfg.dataFiles.map(async (d) => parse(d.name, await fetchCsv(d.file), d)));
       datasets.forEach((d) => {
         if (!d.note) return;
-        const withMeetings = d.rows.filter((r) => toNumber(r[cfg.compare.by]) > 0).length;
+        const withMeetings = d.rows.filter((r) => toNumber(r[cmpFor(d).by]) > 0).length;
         d.note = d.note.replace("{rows}", d.rows.length.toLocaleString()).replace("{withMeetings}", withMeetings.toLocaleString());
       });
+      if (cfg.combined) combined = buildCombined(cfg.combined);
       $("status").textContent = "";
     } catch (err) {
       $("status").classList.add("error");
@@ -61,8 +65,36 @@
     }
     renderTabs();
     setupFilters();
-    window.SiteData = { datasets, config: cfg, setView, select: (key) => selectDataset(key ? stateDataset(key) : datasets.find((d) => d.name === cfg.perState.from)) };
+    window.SiteData = { datasets, combined, config: cfg, setView, select: (key) => selectDataset(key ? stateDataset(key) : datasets.find((d) => d.name === cfg.perState.from)) };
     selectDataset(datasets.find((d) => d.name === (cfg.perState && cfg.perState.from)) || datasets[0]);
+  }
+
+  // The "All" view: US districts, territory school systems and Canadian boards in one table, with
+  // shared columns. Their poverty measures differ, so each row says which one it uses.
+  function buildCombined(c) {
+    const ps = cfg.perState, out = [];
+    const pct = (v) => (String(v ?? "").trim() === "" ? "" : `${toNumber(v).toFixed(2)}%`);
+    datasets.forEach((d) => d.rows.forEach((r) => {
+      const ca = d.country === "CA", terr = !!d.state;
+      out.push({
+        District: r.District,
+        Country: ca ? "Canada" : terr ? "U.S. territories" : "United States",
+        "State or province": ca ? r.Province : terr ? r.Territory : (ps.names[r.State] || r.State),
+        "Available Board Meetings": r["Available Board Meetings"] ?? "",
+        [c.metric]: pct(ca ? r["Percentage of Children Ages 0-17 in Low Income"] : r["Percentage of Children Ages 5-17 in Poverty"]),
+        "Poverty measure": ca ? c.measures.canada : terr ? c.measures.territories : c.measures.us,
+        Children: ca ? r["Children Ages 0-17"] : r["Children Ages 5-17"],
+        Enrollment: r.Enrollment ?? "",
+        Locale: r.Locale ?? "",
+        "Other Board Meetings": r["Other Board Meetings"] ?? "",   // DC, Hawaiʻi and Vermont boards' own sites
+        "District ID": r["District ID"]
+      });
+    }));
+    const text = Papa.unparse({ fields: Object.keys(out[0]), data: out.map((r) => Object.values(r)) });
+    const ds = parse(c.name, text, { ...c, combined: true });
+    const withMeetings = ds.rows.filter((r) => toNumber(r[c.compare.by]) > 0).length;
+    ds.note = (c.note || "").replace("{rows}", ds.rows.length.toLocaleString()).replace("{withMeetings}", withMeetings.toLocaleString());
+    return ds;
   }
 
   // One state's view: its own data set if there is one (the territories), otherwise
@@ -74,14 +106,23 @@
     if (stateCache[abbr]) return stateCache[abbr];
     const own = datasets.find((d) => d.state === abbr);
     if (own) return (stateCache[abbr] = own);
-    const nat = datasets.find((d) => d.name === ps.from);
+    // "CA:ON" and the like: one province or territory of another country's data set.
+    const [country, code] = abbr.includes(":") ? abbr.split(":") : [null, abbr];
+    const parent = country ? datasets.find((d) => d.country === country) : null;
+    const nat = parent || datasets.find((d) => d.name === ps.from);
     if (!nat) return null;
-    const name = ps.names[abbr];
-    const rows = nat.rows.filter((r) => r[ps.column] === abbr);
-    const withMeetings = rows.filter((r) => toNumber(r[cfg.compare.by]) > 0).length;
-    const label = (cfg.recordLabel || "records").toLowerCase();
-    return (stateCache[abbr] = { ...nat, name, state: abbr, rows, sourcesAs: nat.name,
-      columns: nat.columns.filter((c) => c !== ps.column),
+    const groupCol = parent ? parent.groups.column : ps.column;
+    const name = parent ? parent.groups.names[code] : ps.names[abbr];
+    // The other country's file names its provinces in full ("Ontario"); the menu keys are codes.
+    const rows = nat.rows.filter((r) => r[groupCol] === (parent ? name : code));
+    const withMeetings = rows.filter((r) => toNumber(r[cmpFor(nat).by]) > 0).length;
+    const label = (nat.recordLabel || cfg.recordLabel || "records").toLowerCase();
+    if (parent && parent.groupNotes && parent.groupNotes[code]) {
+      return (stateCache[abbr] = { ...nat, name, state: abbr, rows, sourcesAs: nat.name, parent: nat,
+        columns: nat.columns.filter((c) => c !== groupCol), note: parent.groupNotes[code] });
+    }
+    return (stateCache[abbr] = { ...nat, name, state: abbr, rows, sourcesAs: nat.name, parent: parent || undefined,
+      columns: nat.columns.filter((c) => c !== groupCol),
       note: rows.length === 1
         ? `1 school ${label.replace(/s$/, "")} in ${name}. ${withMeetings ? "Its meeting count is available." : "No meeting count is available, so it shows 0."}`
         : `${rows.length.toLocaleString()} school ${label} in ${name}. Meeting counts are available for ${withMeetings.toLocaleString()} of them; the rest show 0.` });
@@ -92,23 +133,52 @@
     const tabs = $("tabs"), ps = cfg.perState;
     tabs.hidden = false;
     tabs.innerHTML = '<span class="tabs-label">Data:</span>';
-    const nat = ps && datasets.find((d) => d.name === ps.from);
-    if (nat) {
+    // One button per country-wide data set: the US (perState.from) and any with a `country`.
+    const buttons = datasets.filter((d) => (ps && d.name === ps.from) || d.country);
+    buttons.forEach((d, i) => {
       const b = document.createElement("button");
       b.type = "button";
       b.role = "tab";
-      b.id = "national-button";
-      b.textContent = nat.name;
-      b.addEventListener("click", () => selectDataset(nat));
+      b.className = "country-button";
+      if (i === 0) b.id = "national-button";
+      b.dataset.name = d.name;
+      b.textContent = d.name;
+      b.addEventListener("click", () => selectDataset(d));
+      tabs.appendChild(b);
+    });
+    if (combined) {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.role = "tab";
+      b.className = "country-button";
+      b.dataset.name = combined.name;
+      b.textContent = combined.button || combined.name;
+      b.title = combined.name;
+      b.addEventListener("click", () => selectDataset(combined));
       tabs.appendChild(b);
     }
     const sel = document.createElement("select");
     sel.id = "state-select";
-    sel.setAttribute("aria-label", "State");
-    sel.add(new Option("Choose a state…", ""));
+    sel.setAttribute("aria-label", "State or province");
+    const others = datasets.filter((d) => d.country && d.groups);
+    sel.add(new Option(others.length ? "Choose a state or province…" : "Choose a state…", ""));
+    const group = (label) => {
+      if (!others.length) return sel;
+      const g = document.createElement("optgroup");
+      g.label = label;
+      sel.appendChild(g);
+      return g;
+    };
+    const us = group("United States");
     Object.entries(ps ? ps.names : {}).sort((a, b) => a[1].localeCompare(b[1]))
-      .forEach(([abbr, name]) => sel.add(new Option(name, abbr)));
-    Object.entries((ps && ps.after) || {}).forEach(([key, name]) => sel.add(new Option(name, key)));
+      .forEach(([abbr, name]) => us.appendChild(new Option(name, abbr)));
+    Object.entries((ps && ps.after) || {}).forEach(([key, name]) => us.appendChild(new Option(name, key)));
+    others.forEach((d) => {
+      const g = group(d.groups.label || d.name);
+      Object.entries(d.groups.names).sort((a, b) => a[1].localeCompare(b[1]))
+        .filter(([, name]) => d.rows.some((r) => r[d.groups.column] === name))
+        .forEach(([code, name]) => g.appendChild(new Option(name, `${d.country}:${code}`)));
+    });
     sel.addEventListener("change", () => { if (sel.value) selectDataset(stateDataset(sel.value)); });
     tabs.appendChild(sel);
   }
@@ -116,8 +186,8 @@
   function selectDataset(ds) {
     current = ds;
     sort = { col: null, dir: 1 };
-    const nb = $("national-button"), sel = $("state-select");
-    if (nb) nb.setAttribute("aria-selected", String(!current.state));
+    const sel = $("state-select");
+    document.querySelectorAll(".country-button").forEach((b) => b.setAttribute("aria-selected", String(!current.state && b.dataset.name === current.name)));
     if (sel) { sel.value = current.state || ""; sel.classList.toggle("active", !!current.state); }
     $("dataset-note").textContent = current.note || "";
     $("footer").textContent = current.footer || "";
@@ -128,6 +198,12 @@
     applyFilters();
     $("table-section").hidden = false;
     $("filters").hidden = !["overview", "map"].includes(view);
+    // Locale and size filters need NCES columns, which Canada's data doesn't have.
+    ["f-locale", "f-size"].forEach((id) => {
+      const has = id === "f-locale" ? current.columns.includes("Locale") : current.columns.includes(cfg.sizeTiers.column);
+      $(id).closest("label").hidden = !has;
+      if (!has) $(id).value = "";
+    });
     if (view === "size") renderSize();
     if (view === "map" && window.SiteMap) window.SiteMap.show(current, datasets);
   }
@@ -148,7 +224,7 @@
 
   // Stats for one group of rows, used by the "By district size" tab.
   function sizeStats(rows, enrollCol) {
-    const cmp = cfg.compare;
+    const cmp = cmpFor(current);
     const meetings = (r) => toNumber(r[cmp.by]);
     const poverty = (r) => toNumber(r[cmp.metric]);
     const withM = rows.filter((r) => meetings(r) > 0), withoutM = rows.filter((r) => meetings(r) === 0);
@@ -181,11 +257,11 @@
     const st = cfg.sizeTiers;
     const enrollCol = st && current.columns.find((c) => c.trim().toLowerCase() === st.column.toLowerCase());
     const ok = enrollCol && canCompare();
-    const missing = [[cfg.compare.by, "meeting counts"], [cfg.compare.metric, "child poverty figures"]]
+    const missing = [[cmpFor(current).by, "meeting counts"], [cmpFor(current).metric, "child poverty figures"]]
       .filter(([c]) => !current.numeric.has(c)).map(([, label]) => label).join(" and ");
     $("size-missing").textContent = enrollCol
       ? `This tab needs ${missing}, which aren't available for ${current.name}.`
-      : "This tab needs an “Enrollment” column in the data.";
+      : current.sizeNote || "This tab needs an “Enrollment” column in the data.";
     $("size-missing").hidden = ok;
     $("size-content").hidden = !ok;
     if (!ok) return;
@@ -195,7 +271,7 @@
     const tiers = st.tiers.map((t) => ({ ...t,
       s: sizeStats(rows.filter((r) => enroll(r) >= t.min && (t.max == null || enroll(r) <= t.max)), enrollCol) }));
     const all = sizeStats(rows, enrollCol);
-    const label = (cfg.recordLabel || "records").toLowerCase();
+    const label = ((current && current.recordLabel) || cfg.recordLabel || "records").toLowerCase();
     const left = current.rows.length - rows.length;
     $("size-note").textContent = "Districts are grouped by student enrollment (2023)." +
       (left ? ` ${left.toLocaleString()} ${label} without an enrollment figure are left out of this tab.` : "");
@@ -319,7 +395,7 @@
       if (sub) d.querySelector(".sub").textContent = sub;
       el.appendChild(d);
     };
-    add(cfg.recordLabel || "Records", current.rows.length.toLocaleString());
+    add((current && current.recordLabel) || cfg.recordLabel || "Records", current.rows.length.toLocaleString());
     [...current.numeric].slice(0, 5).forEach((c) => {
       const vals = current.rows.map((r) => toNumber(r[c])).filter((v) => !isNaN(v));
       if (!vals.length) return add(`Average ${c}`, "–", "not available for these districts");
@@ -331,7 +407,7 @@
     renderCompare();
   }
 
-  const canCompare = () => cfg.compare && current.numeric.has(cfg.compare.by) && current.numeric.has(cfg.compare.metric);
+  const canCompare = () => { const c = cmpFor(current); return c && current.numeric.has(c.by) && current.numeric.has(c.metric); };
 
   function renderCompare() {
     const el = $("compare");
@@ -339,12 +415,12 @@
     renderUrban();
     if (el.hidden) return;
     fillCompare($("compare-body"), current.rows);
-    $("compare-title").textContent = cfg.compare.title;
+    $("compare-title").textContent = cmpFor(current).title;
   }
 
   // Splits rows into "value > 0" vs "value = 0" on cfg.compare.by and compares cfg.compare.metric.
   function fillCompare(body, allRows) {
-    const cmp = cfg.compare;
+    const cmp = cmpFor(current);
     const rows = allRows.filter((r) => !isNaN(toNumber(r[cmp.metric])));
     const groups = [
       { label: cmp.withLabel, rows: rows.filter((r) => toNumber(r[cmp.by]) > 0) },
@@ -359,7 +435,7 @@
       d.innerHTML = '<div class="label"></div><div class="value"></div><div class="sub"></div>';
       d.querySelector(".label").textContent = g.label;
       d.querySelector(".value").textContent = isNaN(avg) ? "None" : fmtCol(cmp.metric, avg);
-      const label = (cfg.recordLabel || "records").toLowerCase();
+      const label = ((current && current.recordLabel) || cfg.recordLabel || "records").toLowerCase();
       d.querySelector(".sub").textContent = g.rows.length
         ? `average ${cmp.metric.toLowerCase()} · ${g.rows.length.toLocaleString()} ${g.rows.length === 1 ? label.replace(/s$/, "") : label}`
         : `no ${label} in this group`;
@@ -400,28 +476,31 @@
     if (el.hidden) return;
     const rows = current.rows.filter((r) => test(r[col]));
     fillCompare($(`${id}-body`), rows);
-    $(`${id}-note`).textContent = `${rows.length.toLocaleString()} of ${current.rows.length.toLocaleString()} ${(cfg.recordLabel || "records").toLowerCase()} ${noteText} (“${col}” column).`;
-    const x = cfg.compare.metric, y = cfg.compare.by;
+    $(`${id}-note`).textContent = `${rows.length.toLocaleString()} of ${current.rows.length.toLocaleString()} ${((current && current.recordLabel) || cfg.recordLabel || "records").toLowerCase()} ${noteText} (“${col}” column).`;
+    const x = cmpFor(current).metric, y = cmpFor(current).by;
     const accent = cssVar("--accent"), text = cssVar("--muted"), grid = cssVar("--border");
     if (subsetCharts[id]) subsetCharts[id].destroy();
+    const points = rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), m: toNumber(r[y]), name: rowLabel(r) }))
+      .filter((p) => !isNaN(p.x) && !isNaN(p.y));
+    const fit = fitLines(points, x, y);
     subsetCharts[id] = new Chart($(`${id}-chart`), {
       type: "scatter",
-      data: { datasets: [{ label: `${y} vs ${x}`,
-        data: rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), name: rowLabel(r) }))
-          .filter((p) => !isNaN(p.x) && !isNaN(p.y)),
-        backgroundColor: accent + "99", pointRadius: 4, pointHoverRadius: 6 }] },
+      data: { datasets: [{ label: `${y} vs ${x}`, data: points,
+        backgroundColor: accent + "99", pointRadius: 4, pointHoverRadius: 6, order: 1 }, ...(fit ? fit.datasets : [])] },
       options: {
         maintainAspectRatio: false,
         plugins: {
           legend: { display: false },
-          tooltip: { callbacks: {
+          subtitle: fitSubtitle(fit, text),
+          tooltip: { filter: (item) => !item.dataset.fit, callbacks: {
             title: (items) => items[0].raw.name,
             label: (item) => [`${x}: ${fmtCol(x, item.raw.x)}`, `${y}: ${fmtCol(y, item.raw.y)}`]
           } }
         },
         scales: {
           x: { type: "linear", title: { display: true, text: x, color: text }, ticks: { color: text }, grid: { color: grid } },
-          y: { title: { display: true, text: y, color: text }, ticks: { color: text }, grid: { color: grid }, beginAtZero: true }
+          y: { title: { display: true, text: y, color: text }, ticks: { color: text }, grid: { color: grid }, beginAtZero: true,
+               min: points.every((p) => p.y >= 0) ? 0 : undefined }
         }
       }
     });
@@ -431,7 +510,8 @@
   function rowLabel(r) {
     const nameCol = current.columns.find((c) => !current.numeric.has(c));
     const name = nameCol ? r[nameCol] : "";
-    return current.columns.includes("State") && nameCol !== "State" ? `${name}, ${r.State}` : name;
+    const place = ["State", "Province"].find((c) => current.columns.includes(c) && nameCol !== c);
+    return place ? `${name}, ${r[place]}` : name;
   }
 
   function setupChartControls() {
@@ -452,6 +532,56 @@
     renderChart();
   }
 
+  // Least-squares line of best fit through scatter points: a line dataset for Chart.js and the
+  // equation (with R² and the number of points) for the chart's subtitle.
+  const sig = (v) => {
+    const a = Math.abs(v);
+    if (a === 0) return "0";
+    return (a >= 100 ? v.toFixed(0) : a >= 1 ? v.toFixed(2) : String(Number(v.toPrecision(3)))).replace(/^-/, "−");
+  };
+
+  function bestFit(points, xName, yName, opts = {}) {
+    const pts = points.filter((p) => isFinite(p.x) && isFinite(p.y));
+    const n = pts.length;
+    if (n < 2) return null;
+    const mx = pts.reduce((t, p) => t + p.x, 0) / n, my = pts.reduce((t, p) => t + p.y, 0) / n;
+    let sxx = 0, sxy = 0, syy = 0;
+    pts.forEach((p) => { sxx += (p.x - mx) ** 2; sxy += (p.x - mx) * (p.y - my); syy += (p.y - my) ** 2; });
+    if (!sxx) return null;
+    const m = sxy / sxx, b = my - m * mx, r2 = syy ? (sxy * sxy) / (sxx * syy) : 1;
+    const xs = pts.map((p) => p.x), lo = Math.min(...xs), hi = Math.max(...xs);
+    return {
+      dataset: { type: "line", label: opts.label || "Line of best fit", fit: true, data: [{ x: lo, y: m * lo + b }, { x: hi, y: m * hi + b }],
+        borderColor: opts.color || cssVar("--accent-2"), backgroundColor: opts.color || cssVar("--accent-2"), borderWidth: 2.5,
+        borderDash: opts.dash || [], pointRadius: 0, pointHoverRadius: 0, fill: false, order: 0 },
+      subtitle: [
+        `${opts.title || "Line of best fit"}: ${yName} = ${sig(m)} × ${xName} ${b < 0 ? "−" : "+"} ${sig(Math.abs(b))}`,
+        `R² ${r2 > 0 && r2 < 0.001 ? "< 0.001" : `= ${r2.toFixed(3)}`} (0 = no fit, 1 = perfect fit) · ${n.toLocaleString()} ${((current && current.recordLabel) || cfg.recordLabel || "points").toLowerCase()}`
+      ]
+    };
+  }
+
+  const fitSubtitle = (fit, color) => (fit
+    ? { display: true, text: fit.subtitle, color, font: { size: 12 }, padding: { bottom: 10 } }
+    : { display: false });
+
+  // Lines of best fit for a scatter plot: one through every point, and, when the chart uses the
+  // meeting counts, a second (dashed) one through only the districts with 1+ meetings, since the
+  // many 0s pull the first line down. Points carry `m`, their meeting count.
+  function fitLines(points, x, y) {
+    const all = bestFit(points, x, y);
+    if (!all) return null;
+    const by = cmpFor(current).by;
+    const label = ((current && current.recordLabel) || cfg.recordLabel || "districts").toLowerCase();
+    const withM = points.filter((p) => p.m > 0);
+    const some = (x === by || y === by) && withM.length >= 2 && withM.length < points.length;
+    const only = some && bestFit(withM, x, y, { label: `Line of best fit (${label} with meetings only)`,
+      title: `Dashed line, ${label} with 1+ meetings only`, color: cssVar("--text"), dash: [7, 5] });
+    if (!only) return { datasets: [all.dataset], subtitle: all.subtitle };
+    return { datasets: [all.dataset, only.dataset],
+      subtitle: [`Solid line, all ${label}: ${all.subtitle[0].replace(/^Line of best fit: /, "")}`, all.subtitle[1], ...only.subtitle] };
+  }
+
   function cssVar(name) {
     return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
   }
@@ -469,12 +599,14 @@
       if (limit) rows = rows.slice(0, limit);
     }
     const accent = cssVar("--accent"), text = cssVar("--muted"), grid = cssVar("--border");
-    let data;
+    let data, fit = null, yMin;
     if (type === "scatter") {
-      data = { datasets: [{ label: `${y} vs ${x}`,
-        data: rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), name: rowLabel(r) }))
-          .filter((p) => !isNaN(p.x)),
-        backgroundColor: accent + "99", pointRadius: 3.5, pointHoverRadius: 6 }] };
+      const points = rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), m: toNumber(r[cmpFor(current).by]), name: rowLabel(r) }))
+        .filter((p) => !isNaN(p.x));
+      fit = fitLines(points, x, y);
+      if (points.every((p) => p.y >= 0)) yMin = 0;   // keep the axis at 0; the fit line is clipped there
+      data = { datasets: [{ label: `${y} vs ${x}`, data: points,
+        backgroundColor: accent + "99", pointRadius: 3.5, pointHoverRadius: 6, order: 1 }, ...(fit ? fit.datasets : [])] };
     } else {
       data = { labels: rows.map((r) => (current.numeric.has(x) ? cell(x, r[x]) : r[x])),
         datasets: [{ label: y, data: rows.map((r) => toNumber(r[y])),
@@ -487,7 +619,8 @@
         maintainAspectRatio: false,
         plugins: {
           legend: { display: false },
-          tooltip: { callbacks: {
+          subtitle: fitSubtitle(fit, text),
+          tooltip: { filter: (item) => !item.dataset.fit, callbacks: {
             title: (items) => (type === "scatter" ? items[0].raw.name : items[0].label),
             label: (item) => type === "scatter"
               ? [`${x}: ${fmtCol(x, item.raw.x)}`, `${y}: ${fmtCol(y, item.raw.y)}`]
@@ -497,7 +630,7 @@
         scales: {
           x: { type: type === "scatter" ? "linear" : "category", title: { display: true, text: x, color: text },
                ticks: { color: text, maxRotation: 60, autoSkip: true }, grid: { color: grid } },
-          y: { title: { display: true, text: y, color: text }, ticks: { color: text }, grid: { color: grid }, beginAtZero: type === "bar" }
+          y: { title: { display: true, text: y, color: text }, ticks: { color: text }, grid: { color: grid }, beginAtZero: type === "bar", min: yMin }
         }
       }
     });
@@ -514,11 +647,11 @@
     const min = filterValue("f-pov-min"), max = filterValue("f-pov-max");
     if (locale && String(r.Locale || "").trim() !== locale) return false;
     if (meetings) {
-      const m = toNumber(r[cfg.compare.by]);
+      const m = toNumber(r[cmpFor(current).by]);
       if (meetings === "with" ? !(m > 0) : m > 0) return false;
     }
     if (min !== "" || max !== "") {
-      const p = toNumber(r[cfg.compare.metric]);
+      const p = toNumber(r[cmpFor(current).metric]);
       if (isNaN(p) || (min !== "" && p < Number(min)) || (max !== "" && p > Number(max))) return false;
     }
     if (size) {
@@ -532,7 +665,7 @@
     renderTable();
     const n = current.rows.filter(passesFilters).length;
     $("f-status").textContent = filtersActive()
-      ? `${n.toLocaleString()} of ${current.rows.length.toLocaleString()} ${(cfg.recordLabel || "records").toLowerCase()} match. The data table, its download and the map show only these; the summary figures and charts above use all ${(cfg.recordLabel || "records").toLowerCase()}.`
+      ? `${n.toLocaleString()} of ${current.rows.length.toLocaleString()} ${((current && current.recordLabel) || cfg.recordLabel || "records").toLowerCase()} match. The data table, its download and the map show only these; the summary figures and charts above use all ${((current && current.recordLabel) || cfg.recordLabel || "records").toLowerCase()}.`
       : "";
     if (window.SiteMap) window.SiteMap.restyle();
   }
@@ -643,8 +776,11 @@
     const box = $("sources-list");
     box.innerHTML = "";
     const shown = (x) => !x.only || [].concat(x.only).some((n) => n === (current.sourcesAs || current.name) || n === current.name);
-    (window.SOURCES || []).filter(shown).forEach((g) => {
-      const items = g.items.filter(shown);
+    // Groups with no `only` are about the US data; another country's view shows only its own groups.
+    const other = current.country || (current.parent && current.parent.country);
+    const keep = (x) => current.combined || shown(x);
+    (window.SOURCES || []).filter((g) => current.combined || ((other ? !!g.only : true) && shown(g))).forEach((g) => {
+      const items = g.items.filter(keep);
       if (!items.length) return;
       const h = document.createElement("h3");
       h.textContent = g.group;

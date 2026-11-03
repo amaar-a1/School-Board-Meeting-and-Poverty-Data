@@ -45,9 +45,13 @@ window.SOURCES = [
       { title: "CNMI Public School System videos page and board meeting notices (meetings are held on Zoom; no recordings posted)", url: "https://cnmipss.org/videos" },
       { title: "Virgin Islands Board of Education meeting agendas and minutes (no recordings posted)", url: "https://myviboe.com/meeting-agendas-minutes/" },
       { title: "Virgin Islands Board of Education News Room (meeting notices)", url: "https://myviboe.com/news-room/" },
+      { title: "Virgin Islands Board of Education meeting notices in the St. Thomas Source (meetings held in person and on Microsoft Teams; no recordings linked)", url: "https://stthomassource.com/content/2026/08/07/virgin-islands-board-of-education-announces-emergency-board-meeting/" },
+      { title: "KVZK-TV, American Samoa's government station (checked; no Board of Education meeting recordings found)", url: "https://www.samoanews.com/kvzk-tv" },
       { title: "Government Access Channel – Virgin Islands on YouTube (checked; no board meeting recordings)", url: "https://www.youtube.com/channel/UCUeosYkcAS4HVKSfbLNR0FA" },
       { title: "American Samoa Department of Education website (could not be reached October 30, 2026; YouTube searches found no board meeting recordings)", url: "https://www.doe.as/" },
       { title: "Puerto Rico Department of Education: run as a cabinet department, with no school board" },
+      { title: "Puerto Rico Senate YouTube channel (education committee public hearings; 7 counted, Nov. 3, 2026). Puerto Rico has no school board, so legislative education hearings stand in", url: "https://www.youtube.com/channel/UCg90Gzk-QoCxYUNYmAUasWA" },
+      { title: "Puerto Rico House of Representatives YouTube channel (education committee hearings and markup sessions; 14 counted)", url: "https://www.youtube.com/channel/UCm0SWjunIA5PDT9l4qW59Kw" },
       { title: "Google search summary of how each territory's schools are run and which boards post meetings online (searched by the project team, October 30, 2026); used to find the channels above" },
       { title: "CivicSearch school district list data (checked October 30, 2026; it lists no school boards in the territories, so their meeting counts come from the boards’ own channels instead)", url: "https://schools.civicsearch.org/api/get_place_list" },
       { title: "2020 Census of Guam, Demographic and Housing Characteristics File (poverty status in 2019 by age by sex, table PCT78: children ages 5–17 and children in poverty)", url: "https://www2.census.gov/programs-surveys/decennial/2020/data/island-areas/guam/demographic-and-housing-characteristics-file/" },
@@ -80,6 +84,51 @@ window.SOURCES = [
       { title: "Background map: © OpenStreetMap contributors, © CARTO", url: "https://carto.com/attributions" }
     ],
     note: "Borders were simplified with mapshaper so the map loads quickly; they are drawn with Leaflet."
+  },
+  {
+    only: "United States",
+    group: "Board meetings from other sources (DC, Hawaiʻi, Vermont; not CivicSearch)",
+    items: [
+      { title: "DC State Board of Education on-demand meeting videos, DC Office of Cable Television (106 meetings, Sept. 2016 – June 2026)", url: "https://entertainment.dc.gov/page/demand-videos-dc-state-board-education-and-dcps-special-events" },
+      { title: "Hawaiʻi State Board of Education meeting recordings (4 general business and special meetings, May – Oct. 2026)", url: "https://boe.hawaii.gov/meeting-recordings/" },
+      { title: "Montpelier Roxbury Public Schools board meeting videos, recorded by ORCA Media (93 meetings, Feb. 2022 – Aug. 2026; one page per year)", url: "https://www.mrpsvt.org/2025-videos" },
+      { title: "PEGTV (Rutland) school board video playlist: Rutland City, Otter Valley (Rutland Northeast) and Mill River boards, 1 recent meeting each", url: "https://videoplayer.telvue.com/player/MFXsvSYzjQOlecorW3Sq8GyBkhIm0OQN/playlists/6207" },
+      { title: "Checked but not counted: South Burlington and Milton school district sites and ORCA Media's site block automated visits; South Burlington's board says its recordings are on The Media Factory and Facebook", url: "https://sbschools.net/page/school-board" }
+    ],
+    note: "Other Vermont districts may post meetings on their own websites or local public-access TV stations (for example The Media Factory, CCTV or ORCA Media), which haven't been checked, so Vermont's counts are incomplete. These counts are in the separate “Other Board Meetings” column. The Available Board Meetings column, and every total, comparison, chart and filter, use CivicSearch only; the map's meetings colors use these counts where CivicSearch has none."
+  },
+  {
+    only: "Canada",
+    group: "Canada: children and low income",
+    items: [
+      { title: "Statistics Canada table 98-10-0103-01: low-income status by age, 2021 Census (census subdivisions; children 0–17, LIM-AT, 2020 incomes)", url: "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810010301" },
+      { title: "Statistics Canada 2021 census subdivision boundary file (lcsd000b21a_e), copied to this project's GitHub release because Statistics Canada's site blocks automated downloads", url: "https://github.com/amaar-a1/School-Board-Meeting-and-Poverty-Data/releases/tag/statcan-csd-2021" },
+      { title: "Statistics Canada: low-income measure, after tax (LIM-AT) definition", url: "https://www12.statcan.gc.ca/census-recensement/2021/ref/dict/az/Definition-eng.cfm?ID=fam021" },
+      { title: "Wood Buffalo population and the Fort McMurray population centre (2021 Census), used to share Wood Buffalo's children between its boards", url: "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&DGUIDlist=2021A00054816037&GENDERlist=1&STATISTIClist=1&HEADERlist=0" }
+    ],
+    note: "Each board's figures add up the census subdivisions (municipalities, reserves and unorganized areas) inside its border; a subdivision split between boards is shared by land area, which can be off where most people live in one part of it. Boards in the same place (public and Catholic, English and French) share the same children, so their figures can't be added together. Statistics Canada doesn't work out low-income status on First Nations reserves, so children living on reserves aren't counted (their schools are mostly run by First Nations, not these boards)."
+  },
+  {
+    only: "Canada",
+    group: "Canada: school board borders",
+    items: [
+      { title: "British Columbia: school district boundaries (DataBC)", url: "https://catalogue.data.gov.bc.ca/dataset/school-districts-of-bc" },
+      { title: "Alberta: public and separate school authority boundaries, 2025 (Alberta geospatial services)", url: "https://geospatial.alberta.ca/titan/rest/services" },
+      { title: "Saskatchewan: schools and school divisions (Government of Saskatchewan map service)", url: "https://gis.saskatchewan.ca/arcgis/rest/services/Education/SchoolsAndDivisions/MapServer" },
+      { title: "Manitoba: school divisions (Manitoba geoportal)", url: "https://geoportal.gov.mb.ca/" },
+      { title: "Ontario: school board boundaries (Land Information Ontario)", url: "https://geohub.lio.gov.on.ca/" },
+      { title: "Quebec: centres de services scolaires and English school boards (Données Québec)", url: "https://www.donneesquebec.ca/recherche/dataset/territoires-des-commissions-scolaires-du-quebec" }
+    ],
+    note: "Nova Scotia, New Brunswick and the Northwest Territories publish no border files, so their boards are built from the counties or regions they serve. Boards that serve a whole province or territory use its total."
+  },
+  {
+    only: "Canada",
+    group: "Canada: board meetings",
+    items: [
+      { title: "Each board's own YouTube channel (listed in the “Meetings source” column)", url: "https://www.youtube.com/" },
+      { title: "Civic Searchlight (checked; covers city councils and police boards, not school boards)", url: "https://nmc-mic.ca/2025/10/09/civic-searchlight-accountability-tool-launches/" }
+    ],
+    note: "Each board's channel was found by searching YouTube for the board's name (and its acronym or French name); channels that turned out to belong to someone else, such as a US district with the same name, were checked by hand and left out. Videos whose titles show a meeting of the board or one of its committees (“meeting”, or the French “séance” or “réunion”) were counted, leaving out information sessions, trainings and similar events; a meeting split into parts counts once. Meetings streamed only on Zoom, Facebook or a board's own site aren't counted, so 0 doesn't mean a board holds no public meetings."
   },
   {
     only: "Texas",
