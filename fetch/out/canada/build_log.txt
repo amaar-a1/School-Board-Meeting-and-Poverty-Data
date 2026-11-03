@@ -4,7 +4,29 @@ CSDs 5161 children 7171230.0 low income 847335.0
 alberta services ['https://geospatial.alberta.ca/titan/rest/services/boundaries/land_rec_edu_ptnr_contact/FeatureServer', 'https://geospatial.alberta.ca/titan/rest/services/boundaries/land_rec_edu_ptnr_contact/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/education/edu_access/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/education/edu_ats_no_road_allowances/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/education/edu_base_water_feature/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/education/edu_francophone_edu_regn_bound_2017_group_public/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/education/edu_historical_4x4_schl_district_bound_2022_group_public/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/education/edu_public_schl_auth_bound_2022_group_public/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/education/edu_rural_municipality_boundaries_group/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/education/edu_separate_schl_auth_bound_2022_group_public/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/education/edu_unorganized_territory_bound_2017_group_public/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/education/education_urban_locations/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/education/francophone_edu_regn_bound_2017_group/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/education/province_of_alberta_mask/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/education/unorganized_territory_boundaries_2017/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/Education_Maps/edu_historical_4x4_schl_district_bound_2024_group_public/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/Education_Maps/edu_historical_4x4_schl_district_bound_2025_group_public/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/Education_Maps/edu_public_schl_auth_bound_2024_group_public/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/Education_Maps/edu_public_schl_auth_bound_2025_group_public/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/Education_Maps/edu_separate_schl_auth_bound_2024_group_public/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/Education_Maps/edu_separate_schl_auth_bound_2025_group_public/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/educationmaps2026/historical_4x4_school_district_boundary_2026/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/educationmaps2026/public_school_authority_boundary_2026/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/educationmaps2026/separate_school_authority_boundary_2026/MapServer', 'https://geospatial.alberta.ca/titan/rest/services/nadc/edu_school_and_school_authority_boundary/MapServer'] layers [('Public School Authority Boundary (2025) Area Fill', 'https://geospatial.alberta.ca/titan/rest/services/Education_Maps/edu_public_schl_auth_bound_2025_group_public/MapServer/3'), ('Separate School Authority Boundary (2025) By Name Area Fill', 'https://geospatial.alberta.ca/titan/rest/services/Education_Maps/edu_separate_schl_auth_bound_2025_group_public/MapServer/3')]
 alberta layer Public School Authority Boundary (2025) Area Fill 43 ['geometry', 'Name', 'Code', 'OBJECTID']
 alberta layer Separate School Authority Boundary (2025) By Name Area Fill 23 ['geometry', 'OBJECTID', 'Name', 'Code']
-left out boards with no name: [('CA-AB-209', 0), ('CA-AB-227', 0), ('CA-AB-228', 0), ('CA-AB-229', 0), ('CA-AB-230', 0), ('CA-AB-231', 0), ('CA-AB-232', 0)]
-258 boards; 243 shapes; income year 2020
+ontario ENGLISH_PUBLIC 31
+ontario ENGLISH_CATHOLIC 29
+ontario FRENCH_PUBLIC 4
+ontario FRENCH_CATHOLIC 8
+sask layers [(0, 'Education (K-12)'), (1, 'School'), (2, 'Sch_Public'), (3, 'Sch_Separate'), (4, 'Sch_Francophone'), (5, 'Sch_Band'), (6, 'School Division'), (7, 'SD_Public'), (8, 'SD_Separate'), (9, 'SD_Francophone'), (10, 'SD_Public_Link'), (11, 'SD_Separate_Link'), (12, 'Library'), (13, 'Libraries'), (14, 'Family Literacy Hubs'), (15, 'Family Resource Centers'), (16, 'Public Library System')]
 
 --- stderr ---
+Traceback (most recent call last):
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/build_canada.py", line 305, in <module>
+    main(*sys.argv[1:3])
+    ~~~~^^^^^^^^^^^^^^^^
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/build_canada.py", line 246, in main
+    fm = inter.id.map(names).str.contains("Fort McMurray", na=False)
+         ~~~~~~~~~~~~^^^^^^^
+  File "/home/runner/.local/lib/python3.14/site-packages/pandas/core/series.py", line 5187, in map
+    new_values = self._map_values(func, na_action=na_action)
+  File "/home/runner/.local/lib/python3.14/site-packages/pandas/core/base.py", line 1076, in _map_values
+    return arr.map(mapper, na_action=na_action)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.14/site-packages/pandas/core/arrays/base.py", line 3006, in map
+    result = map_array(self, mapper, na_action=na_action)
+  File "/home/runner/.local/lib/python3.14/site-packages/pandas/core/algorithms.py", line 1996, in map_array
+    indexer = mapper.index.get_indexer(arr)
+  File "/home/runner/.local/lib/python3.14/site-packages/pandas/core/indexes/base.py", line 3903, in get_indexer
+    raise InvalidIndexError(self._requires_unique_msg)
+pandas.errors.InvalidIndexError: Reindexing only valid with uniquely valued Index objects
