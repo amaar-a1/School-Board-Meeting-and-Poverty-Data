@@ -13,3 +13,4 @@ if os.path.exists("/tmp/caout/canada_boards.geojson"):
 # run rest 2
 # run rest 3
 # run locale
+# run locale 2
