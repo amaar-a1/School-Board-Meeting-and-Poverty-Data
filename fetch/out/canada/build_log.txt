@@ -14,9 +14,11 @@ sask layer SD_Separate 8 ['geometry', 'SD_NUM', 'SD_NAME', 'SD_TYPE', 'MAIL_ST_A
 boards drawn as several shapes, joined: [nan]
 outside every board: QC 0.1% of the land
 outside every board: ON 76.9% of the land
+  its own figures: 29906 children, 6208 in low income
 outside every board: MB 1.6% of the land
 outside every board: SK 0.0% of the land
 outside every board: AB 4.9% of the land
+  its own figures: 3525 children, 798 in low income
 outside every board: BC 0.0% of the land
 357 boards; 359 shapes; income year 2020
 
