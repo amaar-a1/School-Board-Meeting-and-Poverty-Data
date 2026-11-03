@@ -8,7 +8,7 @@ Inputs it downloads into WORKDIR:
   - Statistics Canada table 98-10-0103-01 (low income by age, CSD level)
   - lcsd000b21a_e.zip: 2021 CSD cartographic boundaries (from this repo's statcan-csd-2021 release)
   - board borders: BC (DataBC), Manitoba (Manitoba geoportal), Quebec (Données Québec), Alberta
-    (Alberta geospatial services)
+    (Alberta geospatial services), Ontario (Land Information Ontario), Saskatchewan (gis.saskatchewan.ca)
 
 Each board's children and low-income children are the sum over the CSDs inside its border; a CSD
 split between boards is shared by land area. Provinces without published borders are built from
@@ -108,6 +108,60 @@ def find_alberta():
     return layers
 
 
+ON_ABBR = [(r"^CSD catholique\b", "Conseil scolaire de district catholique"), (r"^CS catholique\b", "Conseil scolaire catholique"),
+           (r"^CSP\b", "Conseil scolaire public"), (r"\bCDSB\b", "Catholic District School Board"), (r"\bDSB\b", "District School Board"),
+           (r"\bRCSSB\b", "Roman Catholic Separate School Board"), (r"\bDCSB\b", "District Catholic School Board")]
+
+
+def ontario(work):
+    """Ontario's four board layers (Land Information Ontario, "School board boundaries")."""
+    zipfile.ZipFile(fetch("https://ws.gisetl.lrc.gov.on.ca/fmedatadownload/Packages/SchoolBoardBoundaries.zip", f"{work}/on.zip")).extractall(f"{work}/on")
+    out = []
+    for layer, typ in [("ENGLISH_PUBLIC", "English public"), ("ENGLISH_CATHOLIC", "English Catholic"),
+                       ("FRENCH_PUBLIC", "French public"), ("FRENCH_CATHOLIC", "French Catholic")]:
+        g = gpd.read_file(f"{work}/on/SchoolBoardBoundaries/SCHOOL_BOARD_{layer}.shp")
+        names = (g["NAME"] if "NAME" in g else g.iloc[:, -2]).astype(str).str.strip()
+        for pat, rep in ON_ABBR:
+            names = names.str.replace(pat, rep, regex=True)
+        web = g["WEBSITE"].where(g["WEBSITE"].astype(str).str.startswith("http"), "") if "WEBSITE" in g else ""
+        out.append(gpd.GeoDataFrame({"id": "CA-ON-" + g["SDSB_ID"].astype(str).str.strip(), "name": names, "province": "ON", "type": typ,
+                                     "website": web}, geometry=g.geometry, crs=g.crs))
+        print("ontario", layer, len(g))
+    return out
+
+
+def saskatchewan():
+    """Saskatchewan school divisions (gis.saskatchewan.ca Education/SchoolsAndDivisions)."""
+    base = "https://gis.saskatchewan.ca/arcgis/rest/services/Education/SchoolsAndDivisions/MapServer"
+    out = []
+    try:
+        with urllib.request.urlopen(urllib.request.Request(base + "?f=json", headers=UA), timeout=120) as r:
+            layers = json.load(r).get("layers", [])
+        print("sask layers", [(l["id"], l["name"]) for l in layers])
+        for l in layers:
+            if not re.search(r"division", l["name"], re.I) or l.get("subLayerIds"):
+                continue
+            a = esri_geojson(f"{base}/{l['id']}")
+            if a.empty or not a.geom_type.isin(["Polygon", "MultiPolygon"]).any():
+                continue
+            print("sask layer", l["name"], len(a), list(a.columns)[:15])
+            strs = [c for c in a.columns if c != "geometry" and a[c].dtype == object]
+            namecol = max(strs, key=lambda c: a[c].astype(str).str.contains("Division|Conseil|School", case=False).sum())
+            typ = "Separate (Catholic)" if re.search(r"separ|catholic", l["name"], re.I) else "Francophone" if re.search(r"fransask|franco", l["name"], re.I) else "Public"
+            nm = a[namecol].astype(str).str.strip()
+            if typ == "Public":   # a single layer may hold every type; read it from the name
+                typ = nm.map(lambda n: "Separate (Catholic)" if re.search(r"catholic|separate", n, re.I) else
+                             "Francophone" if re.search(r"fransask", n, re.I) else "Public")
+            keep = (pd.Series(typ, index=a.index) if isinstance(typ, str) else typ) != "Francophone"   # province-wide, see WIDE
+            a, nm = a[keep], nm[keep]
+            typ = typ[keep] if not isinstance(typ, str) else typ
+            out.append(gpd.GeoDataFrame({"id": "CA-SK-" + nm.str.replace(r"\W+", "", regex=True).str[:40], "name": nm, "province": "SK",
+                                         "type": typ, "website": ""}, geometry=a.geometry, crs=a.crs))
+    except Exception as e:
+        print("saskatchewan failed", e)
+    return out
+
+
 def boards(work):
     """Board polygons with columns: id, name, province, type, website."""
     out = []
@@ -136,6 +190,7 @@ def boards(work):
             continue
         out.append(gpd.GeoDataFrame({"id": "CA-AB-" + (a[codecol].astype(str) if codecol else a.index.astype(str)) + "-" + typ[:3],
             "name": a[namecol] if namecol else lname, "province": "AB", "type": typ, "website": ""}, geometry=a.geometry, crs=a.crs))
+    out += ontario(work) + saskatchewan()
     allb = pd.concat([b.to_crs(3347) for b in out], ignore_index=True)
     allb["geometry"] = allb.geometry.make_valid().buffer(0)
     return allb
@@ -158,7 +213,8 @@ WIDE = [("Conseil scolaire francophone de la Colombie-Britannique", "BC", "Franc
         ("Commission scolaire de langue française", "PE", "Francophone"), ("NLSchools (Department of Education)", "NL", "English"),
         ("Conseil scolaire francophone provincial de Terre-Neuve-et-Labrador", "NL", "Francophone"),
         ("Commission scolaire francophone du Yukon", "YT", "Francophone"), ("Yukon First Nation School Board", "YT", "First Nation"),
-        ("Commission scolaire francophone des Territoires du Nord-Ouest", "NT", "Francophone"), ("Commission scolaire francophone du Nunavut", "NU", "Francophone")]
+        ("Commission scolaire francophone des Territoires du Nord-Ouest", "NT", "Francophone"), ("Commission scolaire francophone du Nunavut", "NU", "Francophone"),
+        ("Conseil des écoles fransaskoises", "SK", "Francophone")]
 
 
 def main(work, outdir):
@@ -182,6 +238,14 @@ def main(work, outdir):
     poly = boards(work)
     inter = gpd.overlay(csd[["CSDUID", "kids", "low", "area", "geometry"]], poly[["id", "geometry"]], how="intersection", keep_geom_type=True)
     inter["share"] = inter.geometry.area / inter["area"]
+    # Land-area shares fail where nearly everyone lives in one small part of a huge
+    # municipality. Wood Buffalo (AB): 68,002 of its 72,326 people (2021) live in the
+    # Fort McMurray population centre, which only the Fort McMurray boards serve.
+    names = poly.set_index("id")["name"].astype(str)
+    wb = inter.CSDUID == "4816037"
+    fm = inter.id.map(names).str.contains("Fort McMurray", na=False)
+    inter.loc[wb & fm, "share"] = 68002 / 72326
+    inter.loc[wb & ~fm, "share"] = (72326 - 68002) / 72326 * inter.loc[wb & ~fm, "share"] / max(inter.loc[wb & ~fm, "share"].sum(), 1e-9)
     agg = inter.assign(k=inter.kids * inter.share, l=inter.low * inter.share).groupby("id")[["k", "l"]].sum()
     for _, b in poly.iterrows():
         k, l = agg.loc[b.id] if b.id in agg.index else (0, 0)
