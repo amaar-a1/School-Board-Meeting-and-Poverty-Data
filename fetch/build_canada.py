@@ -145,8 +145,8 @@ def saskatchewan():
             if a.empty or not a.geom_type.isin(["Polygon", "MultiPolygon"]).any():
                 continue
             print("sask layer", l["name"], len(a), list(a.columns)[:15])
-            strs = [c for c in a.columns if c != "geometry" and a[c].dtype == object]
-            namecol = max(strs, key=lambda c: a[c].astype(str).str.contains("Division|Conseil|School", case=False).sum())
+            strs = [c for c in a.columns if c != "geometry" and not pd.api.types.is_numeric_dtype(a[c])]
+            namecol = "SD_NAME" if "SD_NAME" in a else max(strs, key=lambda c: a[c].astype(str).str.contains("Division|Conseil|School", case=False).sum())
             typ = "Separate (Catholic)" if re.search(r"separ|catholic", l["name"], re.I) else "Francophone" if re.search(r"fransask|franco", l["name"], re.I) else "Public"
             nm = a[namecol].astype(str).str.strip()
             if typ == "Public":   # a single layer may hold every type; read it from the name
