@@ -275,18 +275,20 @@ def main(work, outdir):
         shapes.append({"id": rows[-1]["id"], "geometry": g})
     for name, (cds, typ) in NB.items():
         g = from_cds(name, "NB", typ, cds, "Approximated from the counties it serves (no published border); anglophone and francophone districts overlap")
-        if typ == "English":
-            shapes.append({"id": rows[-1]["id"], "geometry": g})
+        shapes.append({"id": rows[-1]["id"], "geometry": g})
     for name, cds in NT.items():
         g = from_cds(name, "NT", "Catholic" if "Catholic" in name else "Public", cds, "Approximated from the census region it serves (no published border)")
-        if "Catholic" not in name:
-            shapes.append({"id": rows[-1]["id"], "geometry": g})
+        shapes.append({"id": rows[-1]["id"], "geometry": g})
+    outline = {}   # province and territory outlines, for the boards that serve all of one
     for name, prov, typ in WIDE:
         pr = [k for k, v in PROV.items() if v == prov][0]
         sub = csd[csd.CSDUID.str[:2] == pr]
+        if pr not in outline:
+            outline[pr] = sub.dissolve().geometry.iloc[0].simplify(500)
         rows.append({"id": f"CA-{prov}-" + re.sub(r"\W+", "", name)[:40], "name": name, "province": prov, "type": typ,
                      "kids": round(sub.kids.sum()), "low": round(sub.low.sum()),
                      "method": "Serves the whole province or territory, so its figures are province- or territory-wide", "website": ""})
+        shapes.append({"id": rows[-1]["id"], "geometry": outline[pr]})
     ok = lambda v: isinstance(v, str) and v.strip() != ""
     for i, r in enumerate(rows):
         if not ok(r["id"]):
