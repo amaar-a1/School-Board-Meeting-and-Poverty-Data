@@ -255,6 +255,20 @@
   // use NCES locale types; Canadian boards an estimate from Statistics Canada population sizes.
   const US_LOCALES = ["Urban", "Suburban", "Town", "Rural"];
   const CA_LOCALES = ["Large urban", "Medium urban", "Small urban", "Rural", "Province-wide"];
+  // Shared groups for the US and Canada together: the closest match between NCES types and
+  // Canada's estimated sizes.
+  const MERGED_LOCALES = [
+    { name: "Urban and suburban", us: ["Urban", "Suburban"], ca: ["Large urban", "Medium urban"] },
+    { name: "Town and small urban", us: ["Town"], ca: ["Small urban"] },
+    { name: "Rural", us: ["Rural"], ca: ["Rural"] },
+    { name: "Province-wide (Canada)", us: [], ca: ["Province-wide"] }
+  ];
+  function mergedLocale(v) {
+    const s = String(v || "").trim(), ca = s.startsWith("Canada: "), name = s.replace(/^Canada: /, "");
+    const g = MERGED_LOCALES.find((x) => (ca ? x.ca : x.us).includes(name));
+    return g ? g.name : "";
+  }
+
   function localeGroups(rows) {
     const seen = new Set(rows.map((r) => String(r.Locale || "").trim()).filter(Boolean));
     // Canada on its own: largest to smallest. In "All", Canada's groups are labelled "Canada: …".
@@ -293,17 +307,33 @@
     const cells = (name, s) => s.n ? [name, s.n.toLocaleString(), `${pct(s.shareWith)} (${s.nWith})`, fixed(s.avgMeetings, 2),
       s.nWith ? `${pct(s.povWith)} (${s.nWith})` : "–", s.nWithout ? `${pct(s.povWithout)} (${s.nWithout})` : "–",
       fixed(s.per10k, 2), fixed(s.perPovPoint, 3)] : [name, "0", "–", "–", "–", "–", "–", "–"];
-    const table = $("locale-table");
-    table.tHead.innerHTML = "";
-    const hr = table.tHead.insertRow();
-    cols.forEach((c, i) => { const th = document.createElement("th"); th.textContent = c; if (i) th.className = "num"; hr.appendChild(th); });
-    const body = table.tBodies[0];
-    body.innerHTML = "";
-    [...groups.map((g) => cells(g.name, g.s)), cells(`All ${label}`, all)].forEach((vals, i) => {
-      const tr = body.insertRow();
-      if (i === groups.length) tr.className = "total";
-      vals.forEach((v, j) => { const td = tr.insertCell(); td.textContent = v; if (j) td.className = "num"; });
-    });
+    const fill = (table, gs, total) => {
+      table.tHead.innerHTML = "";
+      const hr = table.tHead.insertRow();
+      cols.forEach((c, i) => { const th = document.createElement("th"); th.textContent = c; if (i) th.className = "num"; hr.appendChild(th); });
+      const body = table.tBodies[0];
+      body.innerHTML = "";
+      [...gs.map((g) => cells(g.name, g.s)), cells(`All ${label}`, total)].forEach((vals, i) => {
+        const tr = body.insertRow();
+        if (i === gs.length) tr.className = "total";
+        vals.forEach((v, j) => { const td = tr.insertCell(); td.textContent = v; if (j) td.className = "num"; });
+      });
+    };
+    fill($("locale-table"), groups, all);
+    // "All" only: US and Canadian locales put into shared groups (see MERGED_LOCALES).
+    $("locale-merged").hidden = !current.combined;
+    if (current.combined) {
+      const located = current.rows.filter((r) => mergedLocale(r.Locale));
+      // Canada has no enrollment, so per-student figures only work for groups without Canadian boards.
+      const stats = (rows) => {
+        const st = sizeStats(rows, denom);
+        if (denom === "Enrollment" && rows.some((r) => !(toNumber(r.Enrollment) > 0) && String(r.Locale || "").startsWith("Canada: "))) st.per10k = NaN;
+        return st;
+      };
+      const merged = MERGED_LOCALES.map((g) => ({ name: g.name, s: stats(located.filter((r) => mergedLocale(r.Locale) === g.name)) }))
+        .filter((g) => g.s.n);
+      fill($("locale-merged-table"), merged, stats(located));
+    }
     const accent = cssVar("--accent"), accent2 = cssVar("--accent-2"), text = cssVar("--muted"), grid = cssVar("--border");
     const labels = groups.map((g) => g.name);
     const axes = (yTitle) => ({ x: { ticks: { color: text }, grid: { display: false } },
