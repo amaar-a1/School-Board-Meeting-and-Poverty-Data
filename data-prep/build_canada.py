@@ -155,7 +155,14 @@ def saskatchewan():
             keep = (pd.Series(typ, index=a.index) if isinstance(typ, str) else typ) != "Francophone"   # province-wide, see WIDE
             a, nm = a[keep], nm[keep]
             typ = typ[keep] if not isinstance(typ, str) else typ
-            out.append(gpd.GeoDataFrame({"id": "CA-SK-" + nm.str.replace(r"\W+", "", regex=True).str[:40], "name": nm, "province": "SK",
+            # Full names ("Regina School Division No. 4"); public and Catholic divisions can share a place name.
+            sep = (typ == "Separate (Catholic)") if not isinstance(typ, str) else pd.Series(typ == "Separate (Catholic)", index=a.index)
+            num_ = a["SD_NUM"].astype(str).str.replace(r"\.0$", "", regex=True) if "SD_NUM" in a else pd.Series("", index=a.index)
+            full = nm + sep.map({True: " Roman Catholic Separate School Division", False: " School Division"}) + \
+                num_.map(lambda v: f" No. {v}" if v and v != "nan" else "")
+            ids = "CA-SK-" + nm.str.replace(r"\W+", "", regex=True).str[:36] + sep.map({True: "-Sep", False: "-Pub"})
+            nm = full
+            out.append(gpd.GeoDataFrame({"id": ids, "name": nm, "province": "SK",
                                          "type": typ, "website": ""}, geometry=a.geometry, crs=a.crs))
     except Exception as e:
         print("saskatchewan failed", e)
