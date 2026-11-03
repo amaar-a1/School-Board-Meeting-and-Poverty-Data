@@ -145,6 +145,10 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
         if r.get("agency_type") != 3 and isinstance(r.get("enrollment"), int) and r["enrollment"] > 0:
             vt_members.setdefault(r["supervisory_union_number"], []).append(r["enrollment"])
     vt_key = lambda name: re.sub(r"\b(supervisory|union|district|school|unified|sd|su)\b", "", name.lower()).replace("-", " ").split()
+    # Board meetings counted from other sources (districts CivicSearch doesn't cover). Kept in their
+    # own columns so totals and comparisons use CivicSearch's counts only.
+    other_path = os.path.join(os.path.dirname(saipe_path), "other_meetings.csv")
+    other = {r["District ID"]: r for r in csv.DictReader(open(other_path, encoding="utf-8"))} if os.path.exists(other_path) else {}
     saipe = list(csv.DictReader(open(saipe_path, encoding="latin-1")))
     county_path = os.path.join(os.path.dirname(saipe_path), "est24all.txt")
     counties = county_poverty(county_path) if os.path.exists(county_path) else {}
@@ -266,9 +270,11 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
     with open(out_path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["District", "State", "County", "Available Board Meetings", "Children Ages 5-17", "Children Ages 5-17 in Poverty",
-                    "Percentage of Children Ages 5-17 in Poverty", "Locale", "Enrollment", "District ID", "Notes"])
+                    "Percentage of Children Ages 5-17 in Poverty", "Locale", "Enrollment", "District ID", "Notes",
+                    "Other Board Meetings", "Other meetings source"])
         for d in districts:
-            w.writerow([d["name"], d["state"], d["county"], d["meetings"], d["kids"], d["poor"], d["pct"], d["locale"], d["enrollment"], d["leaid"], d["note"]])
+            w.writerow([d["name"], d["state"], d["county"], d["meetings"], d["kids"], d["poor"], d["pct"], d["locale"], d["enrollment"], d["leaid"], d["note"],
+                        other.get(d["leaid"], {}).get("Other Board Meetings", ""), other.get(d["leaid"], {}).get("Other meetings source", "")])
     with open(report_path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["CivicSearch name", "State", "Meetings", "Matched LEAID", "Matched district (Census name)", "How", "Distance km"])

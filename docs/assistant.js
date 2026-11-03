@@ -107,6 +107,7 @@
       `<li>Child poverty (ages 5–17): ${isNaN(pov) ? "not available" : pov.toFixed(1) + "%"}` +
       (!(num(r["Children Ages 5-17"]) > 0) ? "" : ` (${num(r["Children Ages 5-17 in Poverty"]).toLocaleString()} of ${num(r["Children Ages 5-17"]).toLocaleString()} children)`) + `</li>` +
       `<li>Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}</li>` +
+      (num(r["Other Board Meetings"]) > 0 ? `<li>Board meetings from other sources: ${num(r["Other Board Meetings"]).toLocaleString()} (${esc(r["Other meetings source"])})</li>` : "") +
       `<li>Enrollment: ${isNaN(enr) ? "not reported" : enr.toLocaleString()}</li>` +
       (r.Locale ? `<li>Locale: ${esc(r.Locale)}</li>` : "") +
       (r["School board"] ? `<li>School board: ${esc(r["School board"])}</li>` : "") +

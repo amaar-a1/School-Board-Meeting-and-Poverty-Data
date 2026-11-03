@@ -82,6 +82,18 @@ window.SOURCES = [
     note: "Borders were simplified with mapshaper so the map loads quickly; they are drawn with Leaflet."
   },
   {
+    only: "United States",
+    group: "Board meetings from other sources (DC, Hawaiʻi, Vermont; not CivicSearch)",
+    items: [
+      { title: "DC State Board of Education on-demand meeting videos, DC Office of Cable Television (106 meetings, Sept. 2016 – June 2026)", url: "https://entertainment.dc.gov/page/demand-videos-dc-state-board-education-and-dcps-special-events" },
+      { title: "Hawaiʻi State Board of Education meeting recordings (4 general business and special meetings, May – Oct. 2026)", url: "https://boe.hawaii.gov/meeting-recordings/" },
+      { title: "Montpelier Roxbury Public Schools board meeting videos, recorded by ORCA Media (93 meetings, Feb. 2022 – Aug. 2026; one page per year)", url: "https://www.mrpsvt.org/2025-videos" },
+      { title: "PEGTV (Rutland) school board video playlist: Rutland City, Otter Valley (Rutland Northeast) and Mill River boards, 1 recent meeting each", url: "https://videoplayer.telvue.com/player/MFXsvSYzjQOlecorW3Sq8GyBkhIm0OQN/playlists/6207" },
+      { title: "Checked but not counted: South Burlington and Milton school district sites and ORCA Media's site block automated visits; South Burlington's board says its recordings are on The Media Factory and Facebook", url: "https://sbschools.net/page/school-board" }
+    ],
+    note: "These counts are in the separate “Other Board Meetings” column. The Available Board Meetings column, and every total, comparison, chart and filter, use CivicSearch only; the map's meetings colors use these counts where CivicSearch has none."
+  },
+  {
     only: "Texas",
     group: "Law",
     items: [

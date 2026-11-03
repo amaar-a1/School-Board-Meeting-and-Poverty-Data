@@ -74,14 +74,15 @@
     const r = picked.row;
     $("find-input").value = r.District;
     const pov = num(r[POV]), meet = num(r[MEET]), enr = num(r.Enrollment), kids = num(r["Children Ages 5-17"]);
-    const note = r.Notes || r["Poverty figures"] || "";
+    const note = [r.Notes || r["Poverty figures"], r["Other meetings source"] && `Other meetings: ${r["Other meetings source"]}`].filter(Boolean).join(". ");
     const where = picked.terr ? "the U.S. territories" : names[r.State];
     $("find-card").innerHTML =
       `<div class="find-head"><div><h2>${esc(r.District)}</h2><p class="muted">${esc(picked.label)}</p></div>` +
       `<button type="button" class="find-close" data-act="close" aria-label="Close">×</button></div>` +
       `<div class="stats compare">` +
       stat("Child poverty (ages 5–17)", isNaN(pov) ? "–" : `${pov.toFixed(1)}%`, kids > 0 ? `${num(r["Children Ages 5-17 in Poverty"]).toLocaleString()} of ${kids.toLocaleString()} children` : "") +
-      stat("Available board meetings", isNaN(meet) ? "0" : meet.toLocaleString(), isNaN(meet) ? "no school board" : "") +
+      stat("Available board meetings", isNaN(meet) ? "0" : meet.toLocaleString(), isNaN(meet) ? "no school board" : r.State ? "on CivicSearch" : "") +
+      (num(r["Other Board Meetings"]) > 0 ? stat("Board meetings from other sources", num(r["Other Board Meetings"]).toLocaleString(), "not CivicSearch; see note") : "") +
       stat("Enrollment", isNaN(enr) ? "–" : enr.toLocaleString(), isNaN(enr) ? "not reported" : "students") +
       stat("Locale", r.Locale || "–", "") + `</div>` +
       (note ? `<p class="note">${esc(note)}</p>` : "") +

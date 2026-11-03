@@ -71,6 +71,8 @@
   function color(row) {
     const metric = $("map-metric").value, sc = SCALES[metric];
     let v = row ? toNumber(row[sc.column]) : NaN;
+    // Where CivicSearch has none, the meetings map uses counts from the district's own sources.
+    if (metric === "meetings" && row && !(v > 0) && toNumber(row["Other Board Meetings"]) > 0) v = toNumber(row["Other Board Meetings"]);
     if (metric === "meetings" && isNaN(v)) v = 0;   // no meetings found counts as 0
     if (isNaN(v)) return NO_DATA;
     const i = sc.breaks.findIndex((b) => v < b);
@@ -107,10 +109,11 @@
     const pov = toNumber(r["Percentage of Children Ages 5-17 in Poverty"]);
     const meet = toNumber(r["Available Board Meetings"]);
     const enr = toNumber(r.Enrollment);
-    const note = [r["Map note"], r.Notes || r["Poverty figures"]].filter(Boolean).join(". ");
+    const note = [r["Map note"], r.Notes || r["Poverty figures"], r["Other meetings source"] && `Other meetings: ${r["Other meetings source"]}`].filter(Boolean).join(". ");
     return `<div class="map-tip"><strong>${esc(r.District)}${place ? `, ${esc(place)}` : ""}</strong>` +
       `Child poverty: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>` +
-      `Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}<br>` +
+      `Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}` +
+      (toNumber(r["Other Board Meetings"]) > 0 ? ` on CivicSearch; ${toNumber(r["Other Board Meetings"]).toLocaleString()} from other sources (see note)` : "") + `<br>` +
       `Enrollment: ${isNaN(enr) ? "not reported" : enr.toLocaleString()}` +
       (r.Locale ? `<br>Locale: ${esc(r.Locale)}` : "") +
       (note ? `<div class="tip-note">${esc(note)}</div>` : "") + "</div>";
