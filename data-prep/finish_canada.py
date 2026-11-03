@@ -27,6 +27,7 @@ def main(src, yt, dst):
             n, url = counts.get(r["District ID"], (0, ""))
             # Lloydminster's two boards serve the city on both sides of the Alberta-Saskatchewan
             # border; each province's border file has its own side, so each side is its own row.
+            r["District"] = re.sub(r"l'Ontari$", "l'Ontario", r["District"])   # cut short in Ontario's file
             if "Lloydminster" in r["District"]:
                 r["District"] = re.sub(r"^The ", "", r["District"]) + (" (Alberta side)" if r["Province"] == "AB" else " (Saskatchewan side)")
             w.writerow({**{c: r.get(c, "") for c in cols}, "Province": NAMES[r["Province"]],
