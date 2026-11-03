@@ -404,24 +404,27 @@
     const x = cfg.compare.metric, y = cfg.compare.by;
     const accent = cssVar("--accent"), text = cssVar("--muted"), grid = cssVar("--border");
     if (subsetCharts[id]) subsetCharts[id].destroy();
+    const points = rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), name: rowLabel(r) }))
+      .filter((p) => !isNaN(p.x) && !isNaN(p.y));
+    const fit = bestFit(points, x, y);
     subsetCharts[id] = new Chart($(`${id}-chart`), {
       type: "scatter",
-      data: { datasets: [{ label: `${y} vs ${x}`,
-        data: rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), name: rowLabel(r) }))
-          .filter((p) => !isNaN(p.x) && !isNaN(p.y)),
-        backgroundColor: accent + "99", pointRadius: 4, pointHoverRadius: 6 }] },
+      data: { datasets: [{ label: `${y} vs ${x}`, data: points,
+        backgroundColor: accent + "99", pointRadius: 4, pointHoverRadius: 6, order: 1 }, ...(fit ? [fit.dataset] : [])] },
       options: {
         maintainAspectRatio: false,
         plugins: {
           legend: { display: false },
-          tooltip: { callbacks: {
+          subtitle: fitSubtitle(fit, text),
+          tooltip: { filter: (item) => !item.dataset.fit, callbacks: {
             title: (items) => items[0].raw.name,
             label: (item) => [`${x}: ${fmtCol(x, item.raw.x)}`, `${y}: ${fmtCol(y, item.raw.y)}`]
           } }
         },
         scales: {
           x: { type: "linear", title: { display: true, text: x, color: text }, ticks: { color: text }, grid: { color: grid } },
-          y: { title: { display: true, text: y, color: text }, ticks: { color: text }, grid: { color: grid }, beginAtZero: true }
+          y: { title: { display: true, text: y, color: text }, ticks: { color: text }, grid: { color: grid }, beginAtZero: true,
+               min: points.every((p) => p.y >= 0) ? 0 : undefined }
         }
       }
     });
@@ -452,6 +455,39 @@
     renderChart();
   }
 
+  // Least-squares line of best fit through scatter points: a line dataset for Chart.js and the
+  // equation (with R² and the number of points) for the chart's subtitle.
+  const sig = (v) => {
+    const a = Math.abs(v);
+    if (a === 0) return "0";
+    return (a >= 100 ? v.toFixed(0) : a >= 1 ? v.toFixed(2) : String(Number(v.toPrecision(3)))).replace(/^-/, "−");
+  };
+
+  function bestFit(points, xName, yName) {
+    const pts = points.filter((p) => isFinite(p.x) && isFinite(p.y));
+    const n = pts.length;
+    if (n < 2) return null;
+    const mx = pts.reduce((t, p) => t + p.x, 0) / n, my = pts.reduce((t, p) => t + p.y, 0) / n;
+    let sxx = 0, sxy = 0, syy = 0;
+    pts.forEach((p) => { sxx += (p.x - mx) ** 2; sxy += (p.x - mx) * (p.y - my); syy += (p.y - my) ** 2; });
+    if (!sxx) return null;
+    const m = sxy / sxx, b = my - m * mx, r2 = syy ? (sxy * sxy) / (sxx * syy) : 1;
+    const xs = pts.map((p) => p.x), lo = Math.min(...xs), hi = Math.max(...xs);
+    return {
+      dataset: { type: "line", label: "Line of best fit", fit: true, data: [{ x: lo, y: m * lo + b }, { x: hi, y: m * hi + b }],
+        borderColor: cssVar("--accent-2"), backgroundColor: cssVar("--accent-2"), borderWidth: 2.5, pointRadius: 0,
+        pointHoverRadius: 0, fill: false, order: 0 },
+      subtitle: [
+        `Line of best fit: ${yName} = ${sig(m)} × ${xName} ${b < 0 ? "−" : "+"} ${sig(Math.abs(b))}`,
+        `R² ${r2 > 0 && r2 < 0.001 ? "< 0.001" : `= ${r2.toFixed(3)}`} (0 = no fit, 1 = perfect fit) · ${n.toLocaleString()} ${(cfg.recordLabel || "points").toLowerCase()}`
+      ]
+    };
+  }
+
+  const fitSubtitle = (fit, color) => (fit
+    ? { display: true, text: fit.subtitle, color, font: { size: 12 }, padding: { bottom: 10 } }
+    : { display: false });
+
   function cssVar(name) {
     return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
   }
@@ -469,12 +505,14 @@
       if (limit) rows = rows.slice(0, limit);
     }
     const accent = cssVar("--accent"), text = cssVar("--muted"), grid = cssVar("--border");
-    let data;
+    let data, fit = null, yMin;
     if (type === "scatter") {
-      data = { datasets: [{ label: `${y} vs ${x}`,
-        data: rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), name: rowLabel(r) }))
-          .filter((p) => !isNaN(p.x)),
-        backgroundColor: accent + "99", pointRadius: 3.5, pointHoverRadius: 6 }] };
+      const points = rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), name: rowLabel(r) }))
+        .filter((p) => !isNaN(p.x));
+      fit = bestFit(points, x, y);
+      if (points.every((p) => p.y >= 0)) yMin = 0;   // keep the axis at 0; the fit line is clipped there
+      data = { datasets: [{ label: `${y} vs ${x}`, data: points,
+        backgroundColor: accent + "99", pointRadius: 3.5, pointHoverRadius: 6, order: 1 }, ...(fit ? [fit.dataset] : [])] };
     } else {
       data = { labels: rows.map((r) => (current.numeric.has(x) ? cell(x, r[x]) : r[x])),
         datasets: [{ label: y, data: rows.map((r) => toNumber(r[y])),
@@ -487,7 +525,8 @@
         maintainAspectRatio: false,
         plugins: {
           legend: { display: false },
-          tooltip: { callbacks: {
+          subtitle: fitSubtitle(fit, text),
+          tooltip: { filter: (item) => !item.dataset.fit, callbacks: {
             title: (items) => (type === "scatter" ? items[0].raw.name : items[0].label),
             label: (item) => type === "scatter"
               ? [`${x}: ${fmtCol(x, item.raw.x)}`, `${y}: ${fmtCol(y, item.raw.y)}`]
@@ -497,7 +536,7 @@
         scales: {
           x: { type: type === "scatter" ? "linear" : "category", title: { display: true, text: x, color: text },
                ticks: { color: text, maxRotation: 60, autoSkip: true }, grid: { color: grid } },
-          y: { title: { display: true, text: y, color: text }, ticks: { color: text }, grid: { color: grid }, beginAtZero: type === "bar" }
+          y: { title: { display: true, text: y, color: text }, ticks: { color: text }, grid: { color: grid }, beginAtZero: type === "bar", min: yMin }
         }
       }
     });
