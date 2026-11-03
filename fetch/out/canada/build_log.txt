@@ -1,0 +1,13 @@
+
+--- stderr ---
+Traceback (most recent call last):
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/build_canada.py", line 222, in <module>
+    main(*sys.argv[1:3])
+    ~~~~^^^^^^^^^^^^^^^^
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/build_canada.py", line 160, in main
+    li, year = low_income_by_csd(work)
+               ~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/build_canada.py", line 55, in low_income_by_csd
+    years.add(r[col[year]])
+              ~^^^^^^^^^^^
+IndexError: list index out of range
