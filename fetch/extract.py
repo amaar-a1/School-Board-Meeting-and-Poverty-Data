@@ -1,28 +1,35 @@
-# Temporary: run the Canadian board build and save the (small) results.
-import json, os, subprocess, sys, time, urllib.request
+# Temporary: inspect Ontario's official school board boundary file; search again for Saskatchewan.
+import json, os, subprocess, sys, time, urllib.request, zipfile
 subprocess.run([sys.executable, "-m", "pip", "install", "-q", "geopandas", "pyogrio"], check=True)
+import geopandas as gpd, pyogrio
 os.makedirs("fetch/out/canada", exist_ok=True)
-r = subprocess.run([sys.executable, "fetch/build_canada.py", "/tmp/cawork", "/tmp/caout"], capture_output=True, text=True, timeout=3000)
-open("fetch/out/canada/build_log.txt", "w").write(r.stdout[-20000:] + "\n--- stderr ---\n" + r.stderr[-20000:])
-if os.path.exists("/tmp/caout/canada.csv"):
-    os.replace("/tmp/caout/canada.csv", "fetch/out/canada/canada.csv")
-if os.path.exists("/tmp/caout/canada_boards.geojson"):
-    subprocess.run("npm install -g mapshaper >/dev/null 2>&1", shell=True)
-    subprocess.run("mapshaper -i /tmp/caout/canada_boards.geojson name=canada -simplify 4% keep-shapes -o fetch/out/canada/canada.json format=topojson quantization=100000", shell=True)
-# Look for Ontario and Saskatchewan board borders on their open-data hubs (one polite try each).
 UA = {"User-Agent": "school-board-research-script (github.com/amaar-a1)"}
-tries = {
-    "ontario_data": "https://data.ontario.ca/api/3/action/package_search?q=%22school%20board%22&rows=10",
-    "ontario_geohub": "https://geohub.lio.gov.on.ca/api/search/v1/collections/all/items?q=school%20board&limit=20",
-    "sask_geohub": "https://geohub.saskatchewan.ca/api/search/v1/collections/all/items?q=school%20division&limit=20",
-    "ontario_agol": "https://www.arcgis.com/sharing/rest/search?f=json&num=30&q=%22school%20board%22%20ontario%20boundary%20type:%22Feature%20Service%22",
-    "sask_agol": "https://www.arcgis.com/sharing/rest/search?f=json&num=30&q=%22school%20division%22%20saskatchewan%20type:%22Feature%20Service%22",
-}
-for name, url in tries.items():
+out = []
+try:
+    urllib.request.urlretrieve("https://ws.gisetl.lrc.gov.on.ca/fmedatadownload/Packages/SchoolBoardBoundaries.zip", "/tmp/on.zip")
+    z = zipfile.ZipFile("/tmp/on.zip"); out.append(str([(i.filename, i.file_size) for i in z.infolist()]))
+    z.extractall("/tmp/on")
+    for root, _, files in os.walk("/tmp/on"):
+        for f in files:
+            p = os.path.join(root, f)
+            if f.lower().endswith((".shp", ".gdb", ".gpkg")) or root.lower().endswith(".gdb"):
+                src = root if root.lower().endswith(".gdb") else p
+                for lyr in pyogrio.list_layers(src):
+                    g = gpd.read_file(src, layer=lyr[0])
+                    out.append(f"{src} {lyr} n={len(g)} crs={g.crs}\n{g.drop(columns='geometry').head(80).to_string()[:12000]}")
+                if root.lower().endswith(".gdb"): break
+            elif f.lower().endswith((".txt", ".xml", ".csv")) and os.path.getsize(p) < 200000:
+                out.append(f"--- {p}\n" + open(p, errors="replace").read()[:3000])
+except Exception as e:
+    out.append(f"ontario error: {e!r}")
+for name, url in {
+    "sask_agol2": "https://www.arcgis.com/sharing/rest/search?f=json&num=30&q=saskatchewan%20%22school%20divisions%22",
+    "sask_agol3": "https://www.arcgis.com/sharing/rest/search?f=json&num=30&q=saskatchewan%20school%20division%20boundaries",
+}.items():
     time.sleep(5)
     try:
-        with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=120) as resp:
-            open(f"fetch/out/canada/search_{name}.json", "wb").write(resp.read())
+        d = json.load(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=120))
+        out.append(name + "\n" + "\n".join(f" - {i['title'][:70]} | {i['owner']} | {i['type']} | {i.get('url')}" for i in d.get("results", [])))
     except Exception as e:
-        open("fetch/out/canada/search_errors.txt", "a").write(f"{name}: {e}\n")
-# run 2
+        out.append(f"{name} error {e}")
+open("fetch/out/canada/ontario_inspect.txt", "w").write("\n\n".join(out))
