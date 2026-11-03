@@ -9,24 +9,9 @@ ontario ENGLISH_CATHOLIC 29
 ontario FRENCH_PUBLIC 4
 ontario FRENCH_CATHOLIC 8
 sask layers [(0, 'Education (K-12)'), (1, 'School'), (2, 'Sch_Public'), (3, 'Sch_Separate'), (4, 'Sch_Francophone'), (5, 'Sch_Band'), (6, 'School Division'), (7, 'SD_Public'), (8, 'SD_Separate'), (9, 'SD_Francophone'), (10, 'SD_Public_Link'), (11, 'SD_Separate_Link'), (12, 'Library'), (13, 'Libraries'), (14, 'Family Literacy Hubs'), (15, 'Family Resource Centers'), (16, 'Public Library System')]
+sask layer SD_Public 18 ['geometry', 'SD_NUM', 'SD_NAME', 'SD_TYPE', 'MAIL_ST_ADDR', 'MAIL_PO_ADDR', 'MAIL_OTH_ADDR', 'MAIL_P_CODE', 'MAIL_UM_NAME', 'PH_NUM', 'PROV_NAME', 'OBJECTID']
+saskatchewan failed max() iterable argument is empty
+boards drawn as several shapes, joined: [nan]
+331 boards; 315 shapes; income year 2020
 
 --- stderr ---
-Traceback (most recent call last):
-  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/build_canada.py", line 305, in <module>
-    main(*sys.argv[1:3])
-    ~~~~^^^^^^^^^^^^^^^^
-  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/build_canada.py", line 246, in main
-    fm = inter.id.map(names).str.contains("Fort McMurray", na=False)
-         ~~~~~~~~~~~~^^^^^^^
-  File "/home/runner/.local/lib/python3.14/site-packages/pandas/core/series.py", line 5187, in map
-    new_values = self._map_values(func, na_action=na_action)
-  File "/home/runner/.local/lib/python3.14/site-packages/pandas/core/base.py", line 1076, in _map_values
-    return arr.map(mapper, na_action=na_action)
-           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/.local/lib/python3.14/site-packages/pandas/core/arrays/base.py", line 3006, in map
-    result = map_array(self, mapper, na_action=na_action)
-  File "/home/runner/.local/lib/python3.14/site-packages/pandas/core/algorithms.py", line 1996, in map_array
-    indexer = mapper.index.get_indexer(arr)
-  File "/home/runner/.local/lib/python3.14/site-packages/pandas/core/indexes/base.py", line 3903, in get_indexer
-    raise InvalidIndexError(self._requires_unique_msg)
-pandas.errors.InvalidIndexError: Reindexing only valid with uniquely valued Index objects
