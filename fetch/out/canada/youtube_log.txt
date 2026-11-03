@@ -20,7 +20,7 @@ The Fort McMurray School Division ->
 The Fort Vermilion School Division ->   
 The Golden Hills School Division ->   
 The Grande Prairie Roman Catholic Separate School Division ->   
-The Grande Prairie School Division -> Grande Prairie Public School Division 1 
+The Grande Prairie School Division -> Grande Prairie Public School Division 0 
 The Grande Yellowhead School Division -> Grande Yellowhead Public School Division 20 
 The Grasslands School Division ->   
 The Greater St. Albert Roman Catholic Separate School Division ->   
@@ -31,7 +31,7 @@ The Horizon School Division ->
 The Lakeland Roman Catholic Separate School Division -> Lakeland Catholic 0 
 The Lethbridge School Division -> Lethbridge School Division 78 
 The Living Waters Catholic Separate School Division ->   
-The Livingstone Range School Division -> Livingstone Range School Division 55 
+The Livingstone Range School Division -> Livingstone Range School Division 54 
 The Lloydminster Roman Catholic Separate School Division ->   
 The Lloydminster School Division -> Lloydminster Public School Division 6 
 The Medicine Hat Catholic Separate School Division -> Medicine Hat Catholic Schools 58 
@@ -49,13 +49,13 @@ The Prairie Rose School Division -> Prairie Rose Public Schools 0
 The Red Deer Catholic School Division ->   
 The Red Deer School Division -> Red Deer Public Schools 67 
 The Rocky View School Division ->   
-The St. Albert School Division -> Albert Gallatin School District 31 
-The St. Paul School Division ->   skipped Saint Paul Public Schools: its description points to the US
+The St. Albert School Division ->   
+The St. Paul School Division ->   
 The St. Thomas Aquinas Roman Catholic Separate School Division ->   
 The Sturgeon School Division -> Sturgeon Public Schools 52 
 The Westwind School Division -> Westwind School Division 2 
 The Wetaskiwin School Division -> Wetaskiwin Regional Public Schools 86 
-The Wild Rose School Division -> Wild Rose School District 0 
+The Wild Rose School Division ->   
 The Wolf Creek School Division -> Wolf Creek Public Schools 2 
 Conseil scolaire francophone de la Colombie-Britannique -> Conseil scolaire francophone de la C.-B. csfcb 0 
 School District 10 (Arrow Lakes) ->   
@@ -119,20 +119,20 @@ School District 91 (Nechako Lakes) ->
 School District 92 (Nisgaa) ->   
 Beautiful Plains School Division ->   
 Border Land School Division ->   
-Brandon School Division -> Brandon Chamber of Commerce 0 
+Brandon School Division ->   
 Division scolaire franco-manitobaine ->   
-Evergreen School Division ->   skipped Evergreen Public Schools: its description points to the US
+Evergreen School Division ->   
 Flin Flon School Division ->   
 Fort la Bosse School Division ->   
-Frontier School Division -> Frontier ElementarySchool 2 
-Garden Valley School Division -> Garden Valley School Board Meetings 71 
+Frontier School Division ->   
+Garden Valley School Division ->   
 Hanover School Division ->   
 Interlake School Division -> Interlake School Division 2 
 Kelsey School Division -> Kelsey School Division 16 
 Lakeshore School Division ->   
 Lord Selkirk School Division -> Lord Selkirk School Division 0 
 Louis Riel School Division -> Louis Riel School Division 69 
-Mountain View School Division -> Mountain View School District 1 
+Mountain View School Division ->   
 Mystery Lake School Division ->   
 Park West School Division ->   
 Pembina Trails School Division ->   
@@ -140,7 +140,7 @@ Pine Creek School Division ->
 Portage La Prairie School Division -> Portage la Prairie School Division 0 
 Prairie Rose School Division -> Prairie Rose Public Schools 0 
 Prairie Spirit School Division ->   
-Red River Valley School Division -> River Valley School District - Home of the Blackhawks 112 
+Red River Valley School Division ->   
 River East Transcona School Division ->   
 Rolling River School Division ->   
 Seine River School Division ->   
@@ -160,7 +160,7 @@ Anglophone School District South ->
 Anglophone School District West ->   
 District scolaire francophone Nord-Est ->   
 District scolaire francophone Nord-Ouest ->   
-District scolaire francophone Sud -> District scolaire francophone Sud 2 
+District scolaire francophone Sud -> District scolaire francophone Sud 1 
 Conseil scolaire francophone provincial de Terre-Neuve-et-Labrador ->   
 NLSchools (Department of Education) ->   
 Annapolis Valley Regional Centre for Education ->   
@@ -202,26 +202,26 @@ Conseil scolaire public du Nord-Est de l'Ontario ->
 District School Board Ontario North East ->   
 District School Board of Niagara ->   
 Dufferin-Peel Catholic District School Board ->   
-Durham Catholic District School Board -> Durham Catholic District School Board 4 
-Durham District School Board -> DDSB Live 291 
+Durham Catholic District School Board -> Durham Catholic Virtual Elementary School DCVES 0 
+Durham District School Board -> DDSB Live 289 
 Grand Erie District School Board -> Grand Erie District School Board 8 
-Greater Essex County District School Board ->   
+Greater Essex County District School Board -> GECDSB Meetings 143 
 Halton Catholic District School Board ->   
-Halton District School Board -> Halton District School Board 410 
+Halton District School Board -> Halton District School Board 406 
 Hamilton-Wentworth Catholic District School Board -> Hamilton-Wentworth Catholic District School Board 0 
 Hamilton-Wentworth District School Board ->   
 Hastings and Prince Edward District School Board -> HPEDSB Board Meetings 6 
 Huron Perth Catholic District School Board -> Huron-Perth Catholic District School Board 0 
 Huron-Superior Catholic District School Board -> Huron-Superior Catholic District School Board 0 
 Kawartha Pine Ridge District School Board ->   
-Keewatin-Patricia District School Board -> Keewatin-Patricia District School Board 1 
+Keewatin-Patricia District School Board -> Keewatin-Patricia District School Board 0 
 Kenora Catholic District School Board ->   
 Lakehead District School Board -> LakeheadSchools 0 
-Lambton Kent District School Board -> Lambton Kent District School Board 0 
-Limestone District School Board -> Clarion-Limestone School District 25 
+Lambton Kent District School Board -> LKDSB Zoom PD 0 
+Limestone District School Board ->   
 London District Catholic SB ->   
-Near North District School Board ->   
-Niagara Catholic District School Board ->   
+Near North District School Board -> Near North DSB 0 
+Niagara Catholic District School Board -> Niagara Catholic 0 
 Nipissing-Parry Sound Catholic District School Board ->   
 Northeastern Catholic District School Board ->   
 Northwest Catholic District School Board ->   
@@ -231,24 +231,24 @@ Peel District School Board ->
 Peterborough Victoria Northumberland and Clarington Catholic District School Board ->   
 Rainbow District School Board -> Rainbow Schools 79 
 Rainy River District School Board -> Rainy River District School Board 0 
-Renfrew County Catholic District School Board ->   
-Renfrew County District School Board -> RCDSB Communications 60 
+Renfrew County Catholic District School Board -> RCCDSB Communications 0 
+Renfrew County District School Board -> RCDSB 23 
 Simcoe County District School Board -> Simcoe County District School Board 29 
-Simcoe Muskoka Catholic District School Board -> We Are SMCDSB 0 
+Simcoe Muskoka Catholic District School Board -> SMCDSB Mental Health & Well-Being 0 
 St Clair Catholic District School Board -> St Clair Catholic 0 
 Sudbury Catholic District School Board -> Sudbury Catholic Schools 0 
 Superior North Catholic District School Board -> Superior North Catholic District School Board 0 
 Superior-Greenstone District School Board -> Superior-Greenstone District School Board 0 
 Thames Valley District School Board -> Thames Valley District School Board Channel 2 0 
 Thunder Bay Catholic District School Board ->   
-Toronto Catholic District School Board -> Equity TCDSB 0 
+Toronto Catholic District School Board -> TCDSB YouTube Channel 0 
 Toronto District School Board -> Toronto District School Board 20 
 Trillium Lakelands District School Board -> Trillium Lakelands District School Board (TLDSB) 36 
 Upper Canada District School Board -> UCDSB Board Meetings 260 
-Upper Grand District School Board -> UGDSB Communications 1 
+Upper Grand District School Board -> UGDSB Communications 0 
 Waterloo Catholic District School Board ->   
 Waterloo Region District School Board -> WRDSB 16 
-Wellington Catholic District School Board -> Wellington Catholic District School Board 2 
+Wellington Catholic District School Board -> Wellington Catholic District School Board 0 
 Windsor-Essex Catholic District School Board -> Windsor Essex Catholic District School Board 30 
 York Catholic District School Board ->   
 York Region District School Board ->   
@@ -257,12 +257,12 @@ Public Schools Branch ->
 Centre de services scolaire De La Jonquière ->   
 Centre de services scolaire Harricana ->   
 Centre de services scolaire Marguerite-Bourgeoys -> Centre de services scolaire Marguerite-Bourgeoys 0 
-Centre de services scolaire Marie-Victorin -> CSS Marie-Victorin 5 
+Centre de services scolaire Marie-Victorin -> CSS Marie-Victorin 0 
 Centre de services scolaire René-Lévesque ->   
 Centre de services scolaire au Coeur-des-Vallées ->   
 Centre de services scolaire de Charlevoix ->   
 Centre de services scolaire de Kamouraska-Rivière-du-Loup ->   
-Centre de services scolaire de Laval -> Centre de services scolaire de Laval 2 
+Centre de services scolaire de Laval -> Centre de services scolaire de Laval 1 
 Centre de services scolaire de Montréal -> Centre de services scolaire de Montréal - CSSDM 0 
 Centre de services scolaire de Portneuf ->   
 Centre de services scolaire de Rouyn-Noranda ->   
@@ -301,7 +301,7 @@ Centre de services scolaire des Patriotes ->
 Centre de services scolaire des Phares -> Centre de services scolaire des Phares (CSSPhares) 0 
 Centre de services scolaire des Portages-de-l'Outaouais ->   
 Centre de services scolaire des Premières-Seigneuries ->   
-Centre de services scolaire des Rives-du-Saguenay -> Centre de services scolaire des Rives-du-Saguenay 1 
+Centre de services scolaire des Rives-du-Saguenay -> Centre de services scolaire des Rives-du-Saguenay 0 
 Centre de services scolaire des Samares ->   
 Centre de services scolaire des Sommets ->   
 Centre de services scolaire des Trois-Lacs ->   
@@ -318,11 +318,11 @@ Centre de services scolaire du Val-des-Cerfs ->
 Commission scolaire Central Québec ->   
 Commission scolaire Eastern Shores ->   
 Commission scolaire Eastern Townships -> Eastern Townships School Board 0 
-Commission scolaire English-Montréal -> Centre de services scolaire de Montréal - CSSDM 0 
+Commission scolaire English-Montréal ->   
 Commission scolaire Kativik ->   
 Commission scolaire Lester-B.-Pearson -> Lester B. Pearson School Board 0 
-Commission scolaire New Frontiers ->   
-Commission scolaire Riverside -> Riverside Unified School District Board Meetings 244 
+Commission scolaire New Frontiers -> www.NFSB.me (Continuing Education - New Frontiers School Board) 0 
+Commission scolaire Riverside ->   
 Commission scolaire Sir-Wilfrid-Laurier -> Sir Wilfrid Laurier School Board 0 
 Commission scolaire Western Québec ->   
 Commission scolaire crie ->   
