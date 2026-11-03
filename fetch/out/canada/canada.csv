@@ -168,7 +168,7 @@ Annapolis Valley Regional Centre for Education,NS,English,Rural,17565,3230,18.39
 Cape Breton-Victoria Regional Centre for Education,NS,English,Rural,17375,4185,24.09%,Approximated from the counties it serves (no published border),,CA-NS-CapeBretonVictoriaRegionalCentreforEduca
 Chignecto-Central Regional Centre for Education,NS,English,Rural,26450,4760,18.00%,Approximated from the counties it serves (no published border),,CA-NS-ChignectoCentralRegionalCentreforEducati
 Conseil scolaire acadien provincial,NS,Francophone,Province-wide,164905,28435,17.24%,"Serves the whole province or territory, so its figures are province- or territory-wide",,CA-NS-Conseilscolaireacadienprovincial
-Halifax Regional Centre for Education,NS,English,Rural,77805,11420,14.68%,Approximated from the counties it serves (no published border),,CA-NS-HalifaxRegionalCentreforEducation
+Halifax Regional Centre for Education,NS,English,Large urban,77805,11420,14.68%,Approximated from the counties it serves (no published border),,CA-NS-HalifaxRegionalCentreforEducation
 South Shore Regional Centre for Education,NS,English,Rural,8340,1460,17.51%,Approximated from the counties it serves (no published border),,CA-NS-SouthShoreRegionalCentreforEducation
 Strait Regional Centre for Education,NS,English,Rural,8810,1605,18.22%,Approximated from the counties it serves (no published border),,CA-NS-StraitRegionalCentreforEducation
 Tri-County Regional Centre for Education,NS,English,Rural,8560,1775,20.74%,Approximated from the counties it serves (no published border),,CA-NS-TriCountyRegionalCentreforEducation
@@ -191,14 +191,14 @@ Catholic District School Board of Eastern Ontario,ON,English Catholic,Rural,7086
 Conseil des écoles publiques de l'Est de l'Ontari,ON,French public,Large urban,347792,37396,10.75%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.cepo.on.ca,CA-ON-59
 Conseil scolaire Viamonde,ON,French public,Large urban,2198976,250034,11.37%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.csdcso.on.ca,CA-ON-58
 Conseil scolaire catholique MonAvenir,ON,French Catholic,Large urban,1872332,205726,10.99%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.csdccs.edu.on.ca,CA-ON-64
-Conseil scolaire catholique Providence,ON,French Catholic,Rural,336407,45245,13.45%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-63
+Conseil scolaire catholique Providence,ON,French Catholic,Large urban,336407,45245,13.45%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-63
 Conseil scolaire de district catholique Franco-Nord,ON,French Catholic,Rural,17890,2358,13.18%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.franco-nord.edu.on.ca,CA-ON-60B
 Conseil scolaire de district catholique de l'Est ontarien,ON,French Catholic,Rural,39942,4408,11.04%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.csdceo.on.ca,CA-ON-65
 Conseil scolaire de district catholique des Aurores boréales,ON,French Catholic,Large urban,34761,4889,14.06%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-62
 Conseil scolaire de district catholique des Grandes Rivières,ON,French Catholic,Rural,19558,2792,14.28%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.cscdgr.on.ca,CA-ON-60A
 Conseil scolaire de district catholique du Centre-Est de l'Ontario,ON,French Catholic,Large urban,308299,33076,10.73%,Census subdivisions inside the board's published border (split ones shared by land area),http://csdb66.edu.on.ca,CA-ON-66
-Conseil scolaire de district catholique du Nouvel-Ontario,ON,French Catholic,Rural,50875,6499,12.77%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.nouvelon.edu.on.ca,CA-ON-61
-Conseil scolaire public du Grand Nord de l'Ontario,ON,French public,Rural,88830,12214,13.75%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-57
+Conseil scolaire de district catholique du Nouvel-Ontario,ON,French Catholic,Large urban,50875,6499,12.77%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.nouvelon.edu.on.ca,CA-ON-61
+Conseil scolaire public du Grand Nord de l'Ontario,ON,French public,Large urban,88830,12214,13.75%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-57
 Conseil scolaire public du Nord-Est de l'Ontario,ON,French public,Rural,49870,6438,12.91%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-56
 District School Board Ontario North East,ON,English public,Rural,19107,2683,14.04%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.dsv1.edu.on.ca,CA-ON-1
 District School Board of Niagara,ON,English public,Medium urban,85213,10672,12.52%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.vaxxine.com/dsbn,CA-ON-22
@@ -218,7 +218,7 @@ Kawartha Pine Ridge District School Board,ON,English public,Rural,65918,5807,8.8
 Keewatin-Patricia District School Board,ON,English public,Rural,6981,828,11.86%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.kpdsb.on.ca,CA-ON-5A
 Kenora Catholic District School Board,ON,English Catholic,Rural,3987,402,10.08%,Census subdivisions inside the board's published border (split ones shared by land area),,CA-ON-33B
 Lakehead District School Board,ON,English public,Large urban,21342,3070,14.38%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.lhbe.edu.on.ca,CA-ON-6A
-Lambton Kent District School Board,ON,English public,Rural,43738,5182,11.85%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.lkdsb.net,CA-ON-10
+Lambton Kent District School Board,ON,English public,Large urban,43738,5182,11.85%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.lkdsb.net,CA-ON-10
 Limestone District School Board,ON,English public,Large urban,35379,3712,10.49%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.limestone.on.ca,CA-ON-27
 London District Catholic SB,ON,English Catholic,Large urban,146495,19965,13.63%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.ldcsb.on.ca,CA-ON-38
 Near North District School Board,ON,English public,Rural,21002,2811,13.38%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.nearnorth.edu.on.ca,CA-ON-4
@@ -230,14 +230,14 @@ Ottawa Catholic SB,ON,English Catholic,Large urban,196532,20967,10.67%,Census su
 Ottawa-Carleton District School Board,ON,English public,Large urban,196526,20966,10.67%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.ocdsb.edu.on.ca,CA-ON-25
 Peel District School Board,ON,English public,Large urban,293299,28472,9.71%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.peelschools.org,CA-ON-19
 Peterborough Victoria Northumberland and Clarington Catholic District School Board,ON,English Catholic,Rural,78510,7201,9.17%,Census subdivisions inside the board's published border (split ones shared by land area),http://pvnccdsb.on.ca,CA-ON-41
-Rainbow District School Board,ON,English public,Rural,36297,4662,12.84%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.rainbow.edu.on.ca,CA-ON-3
+Rainbow District School Board,ON,English public,Large urban,36297,4662,12.84%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.rainbow.edu.on.ca,CA-ON-3
 Rainy River District School Board,ON,English public,Rural,3698,570,15.41%,Census subdivisions inside the board's published border (split ones shared by land area),http://rrdsb.com,CA-ON-5B
 Renfrew County Catholic District School Board,ON,English Catholic,Rural,18677,1952,10.45%,Census subdivisions inside the board's published border (split ones shared by land area),http://rccdsb.edu.on.ca,CA-ON-54
 Renfrew County District School Board,ON,English public,Rural,18764,1961,10.45%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.renfrew.edu.on.ca,CA-ON-28
 Simcoe County District School Board,ON,English public,Rural,95971,8476,8.83%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.scdsb.on.ca,CA-ON-17
 Simcoe Muskoka Catholic District School Board,ON,English Catholic,Rural,107956,9712,9.00%,Census subdivisions inside the board's published border (split ones shared by land area),http://smcdsb.edu.on.ca,CA-ON-44
-St Clair Catholic District School Board,ON,English Catholic,Rural,43738,5182,11.85%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.st-clair.net,CA-ON-39
-Sudbury Catholic District School Board,ON,English Catholic,Rural,31899,3656,11.46%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.scdsb.edu.on.ca,CA-ON-32
+St Clair Catholic District School Board,ON,English Catholic,Large urban,43738,5182,11.85%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.st-clair.net,CA-ON-39
+Sudbury Catholic District School Board,ON,English Catholic,Large urban,31899,3656,11.46%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.scdsb.edu.on.ca,CA-ON-32
 Superior North Catholic District School Board,ON,English Catholic,Rural,2980,502,16.85%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.superiornorthcatholicdsb.,CA-ON-34B
 Superior-Greenstone District School Board,ON,English public,Rural,2983,503,16.86%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.s-gdsb.on.ca,CA-ON-6B
 Thames Valley District School Board,ON,English public,Large urban,146496,19965,13.63%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.tvdsb.on.ca,CA-ON-11
@@ -255,7 +255,7 @@ York Catholic District School Board,ON,English Catholic,Large urban,231830,22285
 York Region District School Board,ON,English public,Large urban,231984,22306,9.62%,Census subdivisions inside the board's published border (split ones shared by land area),http://www.yrbe.edu.on.ca,CA-ON-16
 Commission scolaire de langue française,PE,Francophone,Province-wide,27900,4310,15.45%,"Serves the whole province or territory, so its figures are province- or territory-wide",,CA-PE-Commissionscolairedelanguefrançaise
 Public Schools Branch,PE,English,Province-wide,27900,4310,15.45%,"Serves the whole province or territory, so its figures are province- or territory-wide",,CA-PE-PublicSchoolsBranch
-Centre de services scolaire De La Jonquière,QC,French,Rural,11158,824,7.38%,Census subdivisions inside the board's published border (split ones shared by land area),https://cssdlj.gouv.qc.ca/,CA-QC-724000
+Centre de services scolaire De La Jonquière,QC,French,Large urban,11158,824,7.38%,Census subdivisions inside the board's published border (split ones shared by land area),https://cssdlj.gouv.qc.ca/,CA-QC-724000
 Centre de services scolaire Harricana,QC,French,Rural,4932,361,7.32%,Census subdivisions inside the board's published border (split ones shared by land area),https://www.cssh.gouv.qc.ca/,CA-QC-783000
 Centre de services scolaire Marguerite-Bourgeoys,QC,French,Large urban,166431,23219,13.95%,Census subdivisions inside the board's published border (split ones shared by land area),https://www.cssmb.gouv.qc.ca/,CA-QC-763000
 Centre de services scolaire Marie-Victorin,QC,French,Large urban,72313,8346,11.54%,Census subdivisions inside the board's published border (split ones shared by land area),https://cssmv.gouv.qc.ca/,CA-QC-864000
@@ -302,7 +302,7 @@ Centre de services scolaire des Patriotes,QC,French,Small urban,62313,2474,3.97%
 Centre de services scolaire des Phares,QC,French,Rural,13120,1023,7.80%,Census subdivisions inside the board's published border (split ones shared by land area),https://www.cssphares.gouv.qc.ca,CA-QC-712000
 Centre de services scolaire des Portages-de-l'Outaouais,QC,French,Large urban,25603,2224,8.69%,Census subdivisions inside the board's published border (split ones shared by land area),https://www.csspo.gouv.qc.ca/,CA-QC-772000
 Centre de services scolaire des Premières-Seigneuries,QC,French,Large urban,51522,3387,6.57%,Census subdivisions inside the board's published border (split ones shared by land area),https://www.cssps.gouv.qc.ca,CA-QC-734000
-Centre de services scolaire des Rives-du-Saguenay,QC,French,Rural,17180,1267,7.37%,Census subdivisions inside the board's published border (split ones shared by land area),https://www.csrsaguenay.qc.ca,CA-QC-723000
+Centre de services scolaire des Rives-du-Saguenay,QC,French,Large urban,17180,1267,7.37%,Census subdivisions inside the board's published border (split ones shared by land area),https://www.csrsaguenay.qc.ca,CA-QC-723000
 Centre de services scolaire des Samares,QC,French,Rural,42820,5031,11.75%,Census subdivisions inside the board's published border (split ones shared by land area),https://www.csssamares.gouv.qc.ca,CA-QC-842000
 Centre de services scolaire des Sommets,QC,French,Small urban,15360,1562,10.17%,Census subdivisions inside the board's published border (split ones shared by land area),https://www.cssds.gouv.qc.ca/,CA-QC-753000
 Centre de services scolaire des Trois-Lacs,QC,French,Small urban,36565,2084,5.70%,Census subdivisions inside the board's published border (split ones shared by land area),https://www.csstl.gouv.qc.ca,CA-QC-869000
@@ -316,7 +316,7 @@ Centre de services scolaire du Lac-Témiscamingue,QC,French,Rural,2694,289,10.73
 Centre de services scolaire du Littoral,QC,Special status,Rural,486,14,2.88%,Census subdivisions inside the board's published border (split ones shared by land area),https://www.cssdulittoral.gouv.qc.ca,CA-QC-689000
 Centre de services scolaire du Pays-des-Bleuets,QC,French,Rural,9005,700,7.77%,Census subdivisions inside the board's published border (split ones shared by land area),https://csspb.gouv.qc.ca/,CA-QC-721000
 Centre de services scolaire du Val-des-Cerfs,QC,French,Rural,29655,2835,9.56%,Census subdivisions inside the board's published border (split ones shared by land area),https://cssvdc.gouv.qc.ca/,CA-QC-866000
-Commission scolaire Central Québec,QC,English,Rural,332126,25181,7.58%,Census subdivisions inside the board's published border (split ones shared by land area),https://www.cqsb.qc.ca,CA-QC-881000
+Commission scolaire Central Québec,QC,English,Large urban,332126,25181,7.58%,Census subdivisions inside the board's published border (split ones shared by land area),https://www.cqsb.qc.ca,CA-QC-881000
 Commission scolaire Eastern Shores,QC,English,Rural,62978,5133,8.15%,Census subdivisions inside the board's published border (split ones shared by land area),https://www.essb.qc.ca,CA-QC-882000
 Commission scolaire Eastern Townships,QC,English,Rural,136162,13665,10.04%,Census subdivisions inside the board's published border (split ones shared by land area),https://www.etsb.qc.ca,CA-QC-883000
 Commission scolaire English-Montréal,QC,English,Large urban,253911,39013,15.36%,Census subdivisions inside the board's published border (split ones shared by land area),https://www.emsb.qc.ca,CA-QC-887000
