@@ -1,0 +1,5 @@
+ok 625 https://px.hagstofa.is/pxis/api/v1/is/Samfelag/lifskjor/3_fjarhagsstada/1_einstaklingar/LIF01140.px
+ok 881 https://px.hagstofa.is/pxis/api/v1/is/Samfelag/lifskjor/3_fjarhagsstada/1_einstaklingar/LIF01140.px
+ok 4305 https://px.hagstofa.is/pxis/api/v1/is/Ibuar/mannfjoldi/2_byggdir/sveitarfelog/MAN02005.px
+ok 5345 https://px.hagstofa.is/pxis/api/v1/is/Ibuar/mannfjoldi/2_byggdir/sveitarfelog/MAN02005.px
+ok 294286 https://island.is/s/vinnumalastofnun/maelabord-og-toelulegar-upplysingar
