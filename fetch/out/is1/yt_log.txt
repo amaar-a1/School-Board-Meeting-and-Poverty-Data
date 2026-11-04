@@ -1,0 +1,66 @@
+IS Reykjavíkurborg -> Reykjavíkurborg 5
+IS Λευκωσία ->  
+IS Σιά ->  
+IS Garðabær ->  
+IS Hafnarfjarðarkaupstaður ->  
+IS Mosfellsbær -> Mosfellsbær 0
+IS Kjósarhreppur ->  
+IS Κερύνεια ->  
+IS Grindavíkurbær ->  
+IS Jokkmokk ->  
+IS Αμμόχωστος ->  
+IS Skorradalshreppur ->  
+IS Hvalfjarðarsveit ->  
+IS Borgarbyggð ->  
+IS Grundarfjarðarbær ->  
+IS Eyja- og Miklaholtshreppur ->  
+IS Snæfellsbær ->  
+IS Sveitarfélagið Stykkishólmur ->  
+IS Færder ->  
+IS Bolungarvíkurkaupstaður ->  
+IS Reykhólahreppur ->  
+IS Tálknafjarðarhreppur ->  
+IS Vesturbyggð ->  
+IS Súðavíkurhreppur ->  
+IS Árneshreppur ->  
+IS Kaldrananeshreppur ->  
+IS Strandabyggð ->  
+IS Húnaþing vestra ->  
+IS Sveitarfélagið Skagaströnd ->  
+IS Skagabyggð ->  
+IS Húnabyggð ->  
+IS Πάφος ->  
+IS Κούκλια Πάφου ->  
+IS Fjallabyggð ->  
+IS Dalvíkurbyggð ->  
+IS Eyjafjarðarsveit ->  
+IS Hörgársveit ->  
+IS Svalbarðsstrandarhreppur ->  
+IS Tjörneshreppur ->  
+IS Þingeyjarsveit ->  
+IS Langanesbyggð ->  
+IS Fjarðabyggð -> Sveitarfélagið Fjarðabyggð 0
+IS Múlaþing -> Sveitarstjórn Múlaþings 0
+IS Vopnafjarðarhreppur ->  
+IS Fljótsdalshreppur ->  
+IS Vestmannaeyjabær ->  
+IS Sveitarfélagið Árborg ->  
+IS Sveitarfélagið Hornafjörður -> Sveitarfélagið Hornafjörður 1
+IS Mýrdalshreppur ->  
+IS Ásahreppur ->  
+IS Rangárþing eystra ->  
+IS Rangárþing ytra ->  
+IS Hrunamannahreppur ->  
+IS Hveragerðisbær -> Hveragerðisbær 0
+IS Sveitarfélagið Ölfus ->  
+IS Grímsnes- og Grafningshreppur ->  
+IS Skeiða- og Gnúpverjahreppur ->  
+IS Bláskógabyggð ->  
+IS Flóahreppur ->  
+IS Sveitarfélagið Vogar -> Sveitarfélagið Vogar 0
+IS Ísafjarðarbær -> Ísafjarðarbær 0
+IS Skagafjörður ->  
+IS Grýtubakkahreppur ->  
+IS Skaftárhreppur ->  
+
+---

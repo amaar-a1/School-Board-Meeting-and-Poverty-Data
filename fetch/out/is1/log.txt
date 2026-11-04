@@ -1,0 +1,14 @@
+ok 127457720 https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2023_4326.geojson
+LAU IS: 64
+ok 235 https://px.hagstofa.is/pxis/api/v1/is/?query=grunnsk%C3%B3l
+ok 235 https://px.hagstofa.is/pxis/api/v1/is/?query=nemendur
+ok 235 https://px.hagstofa.is/pxis/api/v1/is/?query=l%C3%A1gtekju
+ok 235 https://px.hagstofa.is/pxis/api/v1/is/?query=tekjul%C3%A1g
+ok 235 https://px.hagstofa.is/pxis/api/v1/is/?query=f%C3%A1t%C3%A6kt
+ok 235 https://px.hagstofa.is/pxis/api/v1/is/?query=atvinnulaus
+ok 235 https://px.hagstofa.is/pxis/api/v1/is/?query=mannfj%C3%B6ldi+sveitarf%C3%A9l%C3%B6g
+ok 438 https://px.hagstofa.is/pxis/api/v1/is/Samfelag/skolamal
+ok 259 https://px.hagstofa.is/pxis/api/v1/is/Ibuar/mannfjoldi
+FAIL https://vinnumalastofnun.is/maelabord-og-toelfraedi/manadarlegar-atvinnuleysistolur: HTTP Error 404: Not Found <!DOCTYPE html><html lang="is"><head><meta charSet="utf-8" data-next-head=""/><meta name="viewport" content="width=device-width, initial-scale=1" data-next-head=""/><link rel="preload" href="/fonts/ibm-plex-sans-v7-latin-300.woff2" as="font" type="font/woff2" crossorigin="anonymous" class="jsx-23888
+ok 6454 https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_li02?geo=IS&age=Y_LT18&sinceTimePeriod=2015
+ok 3372 https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_li41?geo=IS&geo=IS00&sinceTimePeriod=2015
