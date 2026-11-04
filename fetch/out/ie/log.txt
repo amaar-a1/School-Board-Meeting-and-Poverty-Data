@@ -1,0 +1,3 @@
+ok 58 https://www.arcgis.com/sharing/rest/search?q=Local+Authority+Boundaries+Ireland+Tailte+Eireann&f=json&num=20 -> None
+ok 198663 https://data.gov.ie/api/3/action/package_search?q=SAP2022T8T1&rows=30 -> None
+ok 1130451 https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/SAP2022T8T1LEA22/CSV/1.0/en -> ie_SAP2022T8T1LEA22.csv
