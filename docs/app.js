@@ -75,15 +75,16 @@
     const ps = cfg.perState, out = [];
     const pct = (v) => (String(v ?? "").trim() === "" ? "" : `${toNumber(v).toFixed(2)}%`);
     datasets.forEach((d) => d.rows.forEach((r) => {
-      const ca = d.country === "CA", fr = d.country === "FR", terr = !!d.state;
+      const ca = d.country === "CA", fr = d.country === "FR", uk = d.country === "UK", terr = !!d.state;
       out.push({
         District: r.District,
-        Country: ca ? "Canada" : fr ? "France (Saint-Pierre-et-Miquelon)" : terr ? "U.S. territories" : "United States",
-        "State or province": ca ? r.Province : (terr || fr) ? r.Territory : (ps.names[r.State] || r.State),
+        Country: ca ? "Canada" : fr ? "France (Saint-Pierre-et-Miquelon)" : uk ? "United Kingdom" : terr ? "U.S. territories" : "United States",
+        "State or province": ca ? r.Province : uk ? r.Nation : (terr || fr) ? r.Territory : (ps.names[r.State] || r.State),
         "Available Board Meetings": r["Available Board Meetings"] ?? "",
-        [c.metric]: pct(ca ? r["Percentage of Children Ages 0-17 in Low Income"] : fr ? r["Unemployment rate (stand-in for poverty)"] : r["Percentage of Children Ages 5-17 in Poverty"]),
-        "Poverty measure": ca ? c.measures.canada : fr ? c.measures.france : terr ? c.measures.territories : c.measures.us,
-        Children: ca ? r["Children Ages 0-17"] : r["Children Ages 5-17"],
+        [c.metric]: pct(ca ? r["Percentage of Children Ages 0-17 in Low Income"] : fr ? r["Unemployment rate (stand-in for poverty)"]
+          : uk ? r["Percentage of Children Under 16 in Low Income"] : r["Percentage of Children Ages 5-17 in Poverty"]),
+        "Poverty measure": ca ? c.measures.canada : fr ? c.measures.france : uk ? c.measures.uk : terr ? c.measures.territories : c.measures.us,
+        Children: ca ? r["Children Ages 0-17"] : uk ? r["Children Under 16"] : r["Children Ages 5-17"],
         Enrollment: r.Enrollment ?? "",
         // Canada's locales are estimates, not NCES types, so they stay separate groups here.
         Locale: ca && r.Locale ? `Canada: ${r.Locale}` : r.Locale ?? "",
@@ -125,8 +126,8 @@
     return (stateCache[abbr] = { ...nat, name, state: abbr, rows, sourcesAs: nat.name, parent: parent || undefined,
       columns: nat.columns.filter((c) => c !== groupCol),
       note: rows.length === 1
-        ? `1 school ${label.replace(/s$/, "")} in ${name}. ${withMeetings ? "Its meeting count is available." : "No meeting count is available, so it shows 0."}`
-        : `${rows.length.toLocaleString()} school ${label} in ${name}. Meeting counts are available for ${withMeetings.toLocaleString()} of them; the rest show 0.` });
+        ? `1 ${nat.country === "UK" ? "" : "school "}${label.replace(/s$/, "")} in ${name}. ${withMeetings ? "Its meeting count is available." : "No meeting count is available, so it shows 0."}`
+        : `${rows.length.toLocaleString()} ${nat.country === "UK" ? "" : "school "}${label} in ${name}. Meeting counts are available for ${withMeetings.toLocaleString()} of them; the rest show 0.` });
   }
 
   // "Data:" row: a button for the national data and a menu with every state.
@@ -871,31 +872,32 @@
   function renderRules() {
     const us = window.STATE_RULES;
     if (!us) return;
-    const ca = us.canada, fr = us.france;
+    const ca = us.canada, fr = us.france, ukr = us.uk;
     const country = current && (current.country || (current.parent && current.parent.country));
-    const isCA = country === "CA", isFR = country === "FR";
+    const isCA = country === "CA", isFR = country === "FR", isUK = country === "UK";
     const both = current && current.combined;
-    const laws = isCA ? ca.laws : isFR ? fr.laws : both ? [...us.laws, ...ca.laws, ...fr.laws] : us.laws;
+    const laws = isCA ? ca.laws : isFR ? fr.laws : isUK ? ukr.laws : both ? [...us.laws, ...ca.laws, ...fr.laws, ...ukr.laws] : us.laws;
     $("rules-title").textContent = isCA ? "Province rules for recording or streaming school board meetings (Canada)"
       : isFR ? "Rules for recording or publishing meetings (Saint-Pierre-et-Miquelon)"
+      : isUK ? "Rules for recording or broadcasting council meetings (United Kingdom)"
       : both ? "State and province rules for recording or streaming school board meetings (US, Canada and Saint-Pierre-et-Miquelon)"
       : "State rules for recording or streaming school board meetings";
-    $("rules-place").textContent = isCA ? "Province" : isFR ? "Territory" : both ? "State, province or territory" : "State";
+    $("rules-place").textContent = isCA ? "Province" : isFR ? "Territory" : isUK ? "Nation" : both ? "State, province or territory" : "State";
     $("rules-intro").textContent = isCA
       ? `No province requires school boards to record or stream meetings; ${laws.length} related rules in ${new Set(laws.map((x) => x.state)).size} provinces, checked ${ca.checked}.`
-      : isFR ? `Checked ${fr.checked}.`
+      : isFR ? `Checked ${fr.checked}.` : isUK ? `Checked ${ukr.checked}.`
       : `${us.laws.length} rules in ${new Set(us.laws.map((x) => x.state)).size} states, checked ${us.checked}` +
         (both ? `; ${ca.laws.length} related rules in Canadian provinces, checked ${ca.checked}; Saint-Pierre-et-Miquelon checked ${fr.checked}` : "") + ". Laws change often.";
-    $("rules-us-note").hidden = isCA || isFR;
-    $("rules-ca-note").hidden = !isCA && !isFR && !both;
-    $("rules-ca-note").textContent = isFR ? fr.note : both ? `${ca.note} ${fr.note}` : ca.note;
+    $("rules-us-note").hidden = isCA || isFR || isUK;
+    $("rules-ca-note").hidden = !isCA && !isFR && !isUK && !both;
+    $("rules-ca-note").textContent = isFR ? fr.note : isUK ? ukr.note : both ? `${ca.note} ${fr.note} ${ukr.note}` : ca.note;
     const body = $("rules-table").tBodies[0];
     body.innerHTML = "";
     laws.forEach((x) => {
       const tr = body.insertRow();
       [x.state, x.covers, x.threshold || "None (all boards)", x.rule].forEach((v) => { tr.insertCell().textContent = v; });
     });
-    $("rules-proposed-card").hidden = isCA || isFR;
+    $("rules-proposed-card").hidden = isCA || isFR || isUK;
     const ul = $("rules-proposed");
     ul.innerHTML = "";
     us.proposed.forEach((x) => {
@@ -905,7 +907,7 @@
       li.append(b, x.note);
       ul.appendChild(li);
     });
-    const label = isCA ? "Province rules" : isFR ? "Rules" : both ? "State & province rules" : "State rules";
+    const label = isCA ? "Province rules" : (isFR || isUK) ? "Rules" : both ? "State & province rules" : "State rules";
     document.querySelectorAll('[data-view-tab="rules"], [data-view-link="rules"]').forEach((el) => { el.textContent = label; });
   }
 

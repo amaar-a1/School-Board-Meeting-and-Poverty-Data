@@ -75,5 +75,20 @@ window.STATE_RULES = {
         rule: "Schools are run by the French state's education office, which reports to the Académie de Normandie and holds no public meetings." }
     ],
     note: "Saint-Pierre-et-Miquelon has no elected school board; its schools are run by the French state."
+  },
+  // United Kingdom: councils (no elected school boards).
+  uk: {
+    checked: "November 4, 2026",
+    laws: [
+      { state: "England", covers: "Council and committee meetings", threshold: "",
+        rule: "Anyone may film, photograph, record or report public meetings (Openness of Local Government Bodies Regulations 2014). Councils don't have to broadcast them, though many webcast." },
+      { state: "Wales", covers: "Principal councils", threshold: "",
+        rule: "Full council meetings must be broadcast electronically while they happen (Local Government and Elections (Wales) Act 2021)." },
+      { state: "Scotland", covers: "Councils", threshold: "",
+        rule: "Meetings are open to the public with papers published (Local Government (Scotland) Act 1973); no requirement to record or broadcast was found, though most councils webcast." },
+      { state: "Northern Ireland", covers: "Education Authority board", threshold: "",
+        rule: "Not a council; it publishes board papers and minutes. No requirement to record or broadcast was found." }
+    ],
+    note: "The UK has no elected school boards: councils (and Northern Ireland's Education Authority) run state schools. These are the rules for their meetings; check the current law before relying on them."
   }
 };

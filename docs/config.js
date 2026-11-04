@@ -44,16 +44,30 @@ window.SITE_CONFIG = {
       compare: { title: "Unemployment (stand-in for poverty): with vs. without meetings", by: "Available Board Meetings",
         metric: "Unemployment rate (stand-in for poverty)", withLabel: "With 1+ meetings", withoutLabel: "With no meetings" },
       note: "Saint-Pierre-et-Miquelon, a French overseas collectivity next to Newfoundland. It has no elected school board: its schools are run by the French state's education office (Service de l'Éducation nationale), which reports to the Académie de Normandie and holds no public meetings. As a stand-in, like Puerto Rico's, the meeting count is the official sessions of the elected Territorial Council (Conseil territorial): at least 12 from January 2025 to October 2026, found from the dates on the deliberations it publishes in its official gazette; these are written records, not recordings, so they aren't comparable with CivicSearch's counts. Enrollment is from France's Ministry of Education (start of the 2024 school year, public and private schools under contract). No child poverty rate is published for the archipelago, so its unemployment rate stands in: 8.7% (2015 estimate, CIA World Factbook), which isn't comparable with the child poverty rates elsewhere on this site.",
-      footer: "Saint-Pierre-et-Miquelon as of November 2026. Sources are listed on the Sources tab." }
+      footer: "Saint-Pierre-et-Miquelon as of November 2026. Sources are listed on the Sources tab." },
+    // United Kingdom: its own button and nations. Child poverty is DWP's relative low income (children under 16).
+    { name: "United Kingdom", file: "data/uk.csv", country: "UK", recordLabel: "Councils", textColumns: ["District ID", "Enrollment year"],
+      groups: { column: "Nation", label: "United Kingdom",
+        names: { E: "England", S: "Scotland", W: "Wales", N: "Northern Ireland" } },
+      chart: { type: "scatter", x: "Percentage of Children Under 16 in Low Income", y: "Available Board Meetings" },
+      compare: {
+        title: "Child low income: councils with vs. without meetings found",
+        by: "Available Board Meetings", metric: "Percentage of Children Under 16 in Low Income",
+        withLabel: "With 1+ meetings found", withoutLabel: "With no meetings found"
+      },
+      sizeYearNote: "Councils are grouped by pupils in state-funded schools: England January 2026 (register of schools), Scotland September 2025, Wales January 2025, Northern Ireland October 2025.",
+      note: "{rows} UK education authorities: England's 153 upper-tier councils (counties, unitary authorities, metropolitan and London boroughs), Scotland's 32 and Wales's 22 councils, and Northern Ireland's Education Authority. The UK has no elected school boards; these councils (and Northern Ireland's Education Authority) run state schools, and their education or children's services committees are the closest thing. Child low income is the Department for Work and Pensions' share of children under 16 in relative low income before housing costs, financial year ending 2025, which isn't the same measure as the US or Canadian rates. Meetings found for {withMeetings} councils.",
+      footer: "UK education authorities as of November 2026. Sources are listed on the Sources tab." }
   ],
   // "All" button: every US district, territory school system and Canadian board together.
   combined: {
-    name: "All: United States, U.S. territories, Canada and Saint-Pierre-et-Miquelon", button: "All", recordLabel: "Districts and boards",
+    name: "All: United States, U.S. territories, Canada, Saint-Pierre-et-Miquelon and the United Kingdom", button: "All", recordLabel: "Districts and boards",
     textColumns: ["District ID"], metric: "Child poverty rate",
     measures: {
       us: "Children 5–17 in poverty (Census SAIPE 2024)",
       territories: "Children 5–17 in poverty (Census; 2020 Census for all but Puerto Rico)",
       canada: "Children 0–17 in low income (Statistics Canada LIM-AT, 2021 Census)",
+      uk: "Children under 16 in relative low income before housing costs (DWP, financial year ending 2025)",
       france: "Unemployment rate, 2015 estimate (CIA World Factbook): a stand-in, since no poverty rate is published for Saint-Pierre-et-Miquelon"
     },
     chart: { type: "scatter", x: "Child poverty rate", y: "Available Board Meetings" },

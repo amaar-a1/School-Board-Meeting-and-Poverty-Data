@@ -1,0 +1,89 @@
+"""Build docs/data/uk.csv and docs/data/map/uk.json: one row per UK education authority.
+
+England: the 153 upper-tier councils (counties, unitary authorities, metropolitan and London
+boroughs). Scotland: 32 councils. Wales: 22 councils. Northern Ireland: one Education Authority.
+- Child poverty: DWP, Children in Low Income Families (relative low income before housing
+  costs, children under 16), financial year ending 2025. England's 21 two-tier counties add up
+  their districts (ONS lookup); Northern Ireland adds up its 11 districts.
+- Enrollment: England, Get Information about Schools (open state-funded schools); Scotland,
+  pupil census 2025 (Table 5.2); Wales, schools' census January 2025 (Table 5); Northern
+  Ireland, school census October 2025 (primary 164,713 + post-primary 156,766 + special 7,729).
+- Borders: ONS Counties and Unitary Authorities (December 2024), UK, BUC.
+Inputs are in data-prep/inputs/uk/. Usage: python3 data-prep/build_uk.py
+"""
+import csv, json, os, re
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+IN = os.path.join(HERE, "inputs", "uk")
+OUT_CSV = os.path.join(HERE, "..", "docs", "data", "uk.csv")
+OUT_MAP = os.path.join(HERE, "..", "docs", "data", "map", "uk.json")
+NI_PUPILS = 164713 + 156766 + 7729
+NATION = {"E": "England", "S": "Scotland", "W": "Wales", "N": "Northern Ireland"}
+num = lambda v: float(str(v).replace(",", "")) if str(v).strip() not in ("", "nan", "[x]", "[c]", "[z]") else None
+norm = lambda s: re.sub(r"[^a-z]", "", re.sub(r"^the ", "", s.lower()).replace("&", "and").replace(", city of", "").replace("city of ", "").replace("county of ", ""))
+
+
+def main():
+    rows = list(csv.reader(open(os.path.join(IN, "dwp_cilif_bhc_relative_la_fye2022_2025.csv"), encoding="utf-8")))
+    head = next(i for i, r in enumerate(rows) if r and r[1] == "Area Code")
+    cols = [c.replace("\n", " ") for c in rows[head]]
+    ni_, pi_ = cols.index("Number of children  FYE 2025"), next(i for i, c in enumerate(cols) if c.startswith("Percentage of children  FYE 2025"))
+    pov = {}   # code -> (children in low income, all children)
+    for r in rows[head + 1:]:
+        if len(r) > pi_ and r[1] and num(r[ni_]) and num(r[pi_]):
+            n, p = num(r[ni_]), num(r[pi_])
+            pov[r[1]] = (n, n / p)
+    lookup = {r["LAD24CD"]: r["CTYUA24CD"] for r in csv.DictReader(open(os.path.join(IN, "ons_lad24_ctyua24_lookup.csv")))}
+    agg = {}
+    for code, (n, k) in pov.items():
+        if code.startswith("E07"):
+            cty = lookup.get(code)
+            if cty:
+                a = agg.setdefault(cty, [0, 0]); a[0] += n; a[1] += k
+        if code.startswith("N09"):
+            a = agg.setdefault("N-EA", [0, 0]); a[0] += n; a[1] += k
+    pov.update({k: tuple(v) for k, v in agg.items()})
+    geo = json.load(open(os.path.join(IN, "ons_ctyua_dec2024_buc.geojson")))
+    eng = {norm(r["LA (name)"]): float(r["NumberOfPupils"]) for r in csv.DictReader(open(os.path.join(IN, "england_gias_pupils_by_la_20261104.csv")))}
+    sco = {norm(r["Local Authority"]): float(r["Pupils 2025"]) for r in csv.DictReader(open(os.path.join(IN, "scotland_pupil_census_2025_table5_2.csv")))}
+    wr = list(csv.reader(open(os.path.join(IN, "wales_census_2025_table5.csv"), encoding="utf-8")))
+    wh = next(i for i, r in enumerate(wr) if r and r[0] == "Local authority")
+    wal = {norm(r[0]): num(r[wr[wh].index("All pupils - total")]) for r in wr[wh + 1:] if r and r[0] and num(r[wr[wh].index("All pupils - total")])}
+    out, feats, seen = [], [], set()
+    for f in geo["features"]:
+        p = f["properties"]
+        code, name = p["CTYUA24CD"], p["CTYUA24NM"]
+        nat = NATION[code[0]]
+        rid = "N-EA" if code.startswith("N09") else code
+        feats.append({"type": "Feature", "properties": {"id": "UK-" + rid, "NAME": name}, "geometry": f["geometry"]})
+        if rid in seen:
+            continue
+        seen.add(rid)
+        if rid == "N-EA":
+            name, enr, ey = "Education Authority (Northern Ireland)", NI_PUPILS, "October 2025"
+        elif nat == "England":
+            enr, ey = eng.get(norm(name)), "January 2026 (register)"
+        elif nat == "Scotland":
+            enr, ey = sco.get(norm(name)) or sco.get(norm(name.replace("and", "&"))), "September 2025"
+        else:
+            enr, ey = wal.get(norm(name)), "January 2025"
+        n, k = pov.get(rid, (None, None))
+        out.append({"District": name, "Nation": nat, "Available Board Meetings": 0, "Meetings source": "",
+                    "Children Under 16": round(k) if k else "", "Children Under 16 in Low Income": round(n) if n else "",
+                    "Percentage of Children Under 16 in Low Income": f"{100 * n / k:.2f}%" if k else "",
+                    "Enrollment": round(enr) if enr else "", "Enrollment year": ey if enr else "", "District ID": "UK-" + rid})
+    out.sort(key=lambda r: (r["Nation"], r["District"]))
+    with open(OUT_CSV, "w", newline="", encoding="utf-8") as fo:
+        w = csv.DictWriter(fo, fieldnames=list(out[0])); w.writeheader(); w.writerows(out)
+    def rnd(c):
+        return [rnd(x) for x in c] if isinstance(c[0], list) else [round(c[0], 4), round(c[1], 4)]
+    for f in feats:
+        f["geometry"]["coordinates"] = rnd(f["geometry"]["coordinates"])
+    json.dump({"type": "FeatureCollection", "features": feats}, open(OUT_MAP, "w"), separators=(",", ":"))
+    miss = [r["District"] for r in out if not r["Percentage of Children Under 16 in Low Income"]]
+    me = [r["District"] for r in out if not r["Enrollment"]]
+    print(len(out), "authorities; no poverty:", miss, "; no enrollment:", me)
+
+
+if __name__ == "__main__":
+    main()

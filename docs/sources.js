@@ -98,6 +98,20 @@ window.SOURCES = [
     note: "Other Vermont districts may post meetings on their own websites or local public-access TV stations (for example The Media Factory, CCTV or ORCA Media), which haven't been checked, so Vermont's counts are incomplete. These counts are in the separate “Other Board Meetings” column. The Available Board Meetings column, and every total, comparison, chart and filter, use CivicSearch only; the map's meetings colors use these counts where CivicSearch has none."
   },
   {
+    only: "United Kingdom",
+    group: "United Kingdom: councils, child low income and pupils",
+    items: [
+      { title: "Child low income: DWP, Children in Low Income Families: local area statistics, financial year ending 2025 (Table 7, relative low income before housing costs, children under 16)", url: "https://www.gov.uk/government/statistics/children-in-low-income-families-local-area-statistics-2022-to-2025" },
+      { title: "England's two-tier counties: ONS Local Authority District to County and Unitary Authority (December 2024) lookup (districts added up)", url: "https://geoportal.statistics.gov.uk/" },
+      { title: "England pupils: Get Information about Schools, all establishments (open state-funded schools: council-maintained, academies, free schools and special schools), November 2026", url: "https://get-information-schools.service.gov.uk/Downloads" },
+      { title: "Scotland pupils: Pupil census supplementary statistics 2025, Table 5.2", url: "https://www.gov.scot/publications/pupil-census-supplementary-statistics/" },
+      { title: "Wales pupils: Schools' census results, January 2025, Table 5", url: "https://www.gov.wales/schools-census-results-january-2025" },
+      { title: "Northern Ireland pupils: Annual enrolments at schools and in funded pre-school education, 2025/26 (primary 164,713, post-primary 156,766, special 7,729)", url: "https://datavis.nisra.gov.uk/DEstatistics/annual-enrolments-schools-and-funded-pre-school-education-northern-ireland-202526.html" },
+      { title: "Borders: ONS Counties and Unitary Authorities (December 2024) Boundaries UK BUC", url: "https://geoportal.statistics.gov.uk/" }
+    ],
+    note: "England's pupil counts come from the register of schools (each school's latest census figure), so they can differ a little from the published census totals. Northern Ireland's Education Authority covers all 11 of its council areas."
+  },
+  {
     only: "Saint-Pierre-et-Miquelon (France)",
     group: "Saint-Pierre-et-Miquelon: schools, meetings and map",
     items: [
