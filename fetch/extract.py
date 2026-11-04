@@ -1,6 +1,6 @@
-# Temporary: third set of Canadian enrolment files (Ontario 2024-25, Alberta 2024-25, Saskatchewan).
-import json, os, subprocess, time, urllib.request
-OUT = "fetch/out/enrol3"; os.makedirs(OUT, exist_ok=True)
+# Temporary: enrolment for Saskatchewan (archived copy), PEI, NWT, Yukon and Newfoundland and Labrador.
+import json, os, re, time, urllib.parse, urllib.request
+OUT = "fetch/out/enrol4"; os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "school-board-research-script (github.com/amaar-a1)"}
 log = []
 def get(url, name=None):
@@ -14,16 +14,36 @@ def get(url, name=None):
         return data
     except Exception as e:
         log.append(f"FAIL {url}: {e}"); return None
-get("https://data.ontario.ca/dataset/d85f68c5-fcb0-4b4d-aec5-3047db47dcd5/resource/f75540ed-59eb-49ab-ac43-976d563b3a65/download/new_sif_data_2024_25_final_en_sep_2026.xlsx", "on_sif_2024_25.xlsx")
-d = get("https://open.alberta.ca/api/3/action/package_show?id=ccbcf0fb-615e-44a0-b7ec-681e2ea4e1e7")
+# Saskatchewan: the Internet Archive's copies of the Active List of Saskatchewan Schools/Programs and the category listing
+for u in ["publications.saskatchewan.ca/api/v1/products/83293/formats/95844/download", "publications.saskatchewan.ca/api/v1/products/83293",
+          "publications.saskatchewan.ca/api/v1/categories/2303/products"]:
+    d = get("https://archive.org/wayback/available?url=" + urllib.parse.quote(u))
+    snap = json.loads(d).get("archived_snapshots", {}).get("closest", {}) if d else {}
+    log.append(f"wayback {u}: {snap}")
+    if snap.get("url"):
+        raw = re.sub(r"/web/(\d+)/", r"/web/\1id_/", snap["url"])   # id_ = the original file, unmodified
+        get(raw, "sk_" + re.sub(r"\W+", "_", u.split("/api/v1/")[1])[:40])
+d = get("https://web.archive.org/cdx/search/cdx?url=publications.saskatchewan.ca/api/v1/products/*&output=json&limit=200&filter=statuscode:200")
 if d:
-    res = json.loads(d)["result"]["resources"]
-    open(f"{OUT}/ab_resources.json", "w").write(json.dumps([(r.get("name"), r.get("format"), r.get("url")) for r in res], indent=1))
-    pick = [r for r in res if "2024" in ((r.get("name") or "") + (r.get("url") or "")) and "2025" in ((r.get("name") or "") + (r.get("url") or ""))]
-    for i, r in enumerate(pick[:2]):
-        get(r["url"], f"ab_2024_25_{i}.xlsx")
-# Saskatchewan's server doesn't send its full certificate chain; curl with the system CA store.
-r = subprocess.run(["curl", "-sSfL", "-A", UA["User-Agent"], "-o", f"{OUT}/sk_active_schools.bin",
-                    "https://publications.saskatchewan.ca/api/v1/products/83293/formats/95844/download"], capture_output=True, text=True)
-log.append(f"sk curl {r.returncode} {r.stderr[:200]}")
+    open(f"{OUT}/sk_cdx.json", "wb").write(d)
+# PEI: official K-12 enrolment report pages, then their PDFs
+for node in ("71985", "78851"):
+    h = get(f"https://www.princeedwardisland.ca/en/node/{node}", f"pe_node_{node}.html")
+    if h:
+        for i, link in enumerate(sorted(set(re.findall(rb'href="([^"]+\.pdf)"', h)))[:3]):
+            get(urllib.parse.urljoin("https://www.princeedwardisland.ca/", link.decode()), f"pe_{node}_{i}.pdf")
+# NWT: JK-12 performance measures report 2024-25 (enrolment by education body)
+get("https://www.ece.gov.nt.ca/sites/ece/files/resources/jk-12_annual_pm_report_2024-25_final.pdf", "nt_pm_2024_25.pdf")
+# Yukon: open data search for school enrolment
+d = get("https://open.yukon.ca/data/api/3/action/package_search?q=school%20enrolment&rows=10")
+if d:
+    res = json.loads(d)["result"]["results"]
+    open(f"{OUT}/yt_search.json", "w").write(json.dumps([(p["title"], p["name"], [(r.get("format"), r.get("url")) for r in p["resources"]][:5]) for p in res], indent=1))
+    for p in res:
+        if re.search(r"enrol", p["title"], re.I):
+            for i, r in enumerate([r for r in p["resources"] if (r.get("format") or "").upper() in ("CSV", "XLSX")][:2]):
+                get(r["url"], f"yt_{p['name'][:30]}_{i}.{(r.get('format') or 'csv').lower()}")
+            break
+# Newfoundland and Labrador: Community Accounts enrolment table
+get("https://nl.communityaccounts.ca/table.asp?_=vb7En4WVgbOxz7ZjS6rIxpuixqOVko7Lqomyv4yplszCmJ6-x84_", "nl_enrolment.html")
 open(f"{OUT}/log.txt", "w").write("\n".join(log))
