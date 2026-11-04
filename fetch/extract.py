@@ -1,60 +1,60 @@
-# Temporary: UK and Ireland data files (child poverty, enrolment, boundaries).
-import json, os, re, time, urllib.parse, urllib.request
-OUT = "fetch/out/ukie2"; os.makedirs(OUT, exist_ok=True)
+# Temporary: UK/Ireland part 3: convert ODS to CSV, England school register, Ireland census unemployment, NI enrolment.
+import datetime, json, os, re, subprocess, sys, time, urllib.parse, urllib.request
+subprocess.run([sys.executable, "-m", "pip", "install", "-q", "pandas", "odfpy", "openpyxl"], check=True)
+import site, importlib; site.addsitedir(site.getusersitepackages()); importlib.invalidate_caches()
+import pandas as pd
+OUT = "fetch/out/ukie3"; os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "school-board-research-script (github.com/amaar-a1)", "Accept": "*/*"}
 log = []
-def get(url, name=None, limit=80_000_000):
+def get(url, name=None, limit=200_000_000):
     time.sleep(2)
     try:
         with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=300) as r:
             d = r.read(limit + 1)
-        if len(d) > limit: log.append(f"too big {url}"); return None
         if name: open(f"{OUT}/{name}", "wb").write(d)
         log.append(f"ok {len(d)} {url} -> {name}"); return d
     except Exception as e:
         log.append(f"FAIL {url}: {e}"); return None
-def links(page, pat, base):
-    h = get(page)
-    return [urllib.parse.urljoin(base, x.decode()) for x in re.findall(rb'href="([^"]+)"', h or b"") if re.search(pat, x.decode(), re.I)]
-def esri(url, name):
-    feats, off = [], 0
-    while True:
-        d = get(f"{url}/query?where=1%3D1&outFields=*&outSR=4326&f=geojson&resultOffset={off}&resultRecordCount=500")
-        if not d: break
-        j = json.loads(d); feats += j.get("features", [])
-        if len(j.get("features", [])) < 500: break
-        off += 500
-    json.dump({"type": "FeatureCollection", "features": feats}, open(f"{OUT}/{name}", "w"))
-    log.append(f"{name}: {len(feats)} features")
-# UK child poverty (DWP, all four nations, local authority level)
-get("https://assets.publishing.service.gov.uk/media/69b809619d8b52961a62b49a/children-in-low-income-families-local-area-statistics-2022-2025.ods", "dwp_cilif_2022_2025.ods")
-# UK boundaries: counties and unitary authorities (education authorities), December 2024, generalised
-esri("https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Counties_and_Unitary_Authorities_December_2024_Boundaries_UK_BUC/FeatureServer/0", "uk_ctyua_2024.geojson")
-# England: school census (Explore Education Statistics release files)
-d = get("https://content.explore-education-statistics.service.gov.uk/api/publications/school-pupils-and-their-characteristics/releases/2025-26", "ees_release.json")
-if d:
-    rel = json.loads(d)
-    files = [f for f in rel.get("downloadFiles", []) + [x.get("file", {}) for x in rel.get("dataSets", [])] if isinstance(f, dict)]
-    open(f"{OUT}/ees_files.json", "w").write(json.dumps(files, indent=1)[:200000])
-    rid = rel.get("id")
-    if rid:
-        get(f"https://content.explore-education-statistics.service.gov.uk/api/releases/{rid}/files", "ees_all_files.zip", limit=300_000_000)
-# Scotland: pupil census supplementary statistics (spreadsheets)
-for u in links("https://www.gov.scot/publications/pupil-census-supplementary-statistics/", r"\.xlsx|\.ods|supplementary", "https://www.gov.scot")[:4]:
-    if re.search(r"\.(xlsx|ods)$", u): get(u, "scot_" + os.path.basename(u)[:60])
-# Wales: schools' census results
-for u in links("https://www.gov.wales/schools-census-results-january-2025", r"\.(xlsx|ods|csv)", "https://www.gov.wales")[:3]:
-    get(u, "wales_" + os.path.basename(u)[:60])
-# Northern Ireland: school enrolments
-for u in links("https://www.education-ni.gov.uk/topics/school-enrolments", r"enrolment", "https://www.education-ni.gov.uk")[:6]:
-    if "publications" in u:
-        for f in links(u, r"\.(xlsx|ods|csv)$", "https://www.education-ni.gov.uk")[:2]:
-            get(f, "ni_" + os.path.basename(f)[:60])
+# ODS files from the last run -> one CSV per sheet
+for f in ["fetch/out/ukie2/dwp_cilif_2022_2025.ods", "fetch/out/ukie2/wales_schools-census-results-january-2025.ods"]:
+    try:
+        x = pd.ExcelFile(f, engine="odf")
+        for s in x.sheet_names:
+            pd.read_excel(x, s, header=None).to_csv(f"{OUT}/{os.path.basename(f)[:20]}__{re.sub(r'\W+', '_', s)[:40]}.csv", index=False, header=False)
+        log.append(f"converted {f}: {x.sheet_names}")
+    except Exception as e:
+        log.append(f"convert failed {f}: {e}")
+# England: Get Information about Schools (all establishments), state-funded pupil counts by local authority
+day = datetime.date.today()
+for back in range(0, 8):
+    d = (day - datetime.timedelta(days=back)).strftime("%Y%m%d")
+    raw = get(f"https://ea-edubase-api-prod.azurewebsites.net/edubase/downloads/public/edubasealldata{d}.csv")
+    if raw:
+        g = pd.read_csv(__import__("io").BytesIO(raw), encoding="latin-1", low_memory=False)
+        keep = [c for c in g.columns if c in ("LA (code)", "LA (name)", "EstablishmentStatus (name)", "TypeOfEstablishment (name)", "EstablishmentTypeGroup (name)", "NumberOfPupils", "PhaseOfEducation (name)", "CensusDate")]
+        g[keep].to_csv(f"{OUT}/gias_{d}.csv", index=False)
+        log.append(f"GIAS columns kept: {keep}")
         break
-# Ireland: counties, Pobal HP Deprivation Index 2022 (by small area / ED), post-primary school list with enrolment
-esri("https://services6.arcgis.com/MmUrOQU5v1he9gfS/arcgis/rest/services/Counties_OSi_Ireland/FeatureServer/0", "ie_counties.geojson")
+# Ireland: Census 2022 principal economic status by county (CSO PxStat), found through data.gov.ie
+d = get("https://data.gov.ie/api/3/action/package_search?" + urllib.parse.urlencode({"q": "census 2022 principal economic status county", "rows": 15}))
+if d:
+    res = json.loads(d)["result"]["results"]
+    open(f"{OUT}/ie_census_search.json", "w").write(json.dumps([(p["title"], p["name"], [(r.get("format"), r.get("url")) for r in p["resources"]][:2]) for p in res], indent=1))
+    for p in res:
+        if re.search(r"economic status", p["title"], re.I) and re.search(r"county|administrative", p["title"], re.I):
+            for r in p["resources"]:
+                if (r.get("format") or "").upper() == "CSV":
+                    get(r["url"], "ie_" + p["name"][:40] + ".csv"); break
+            break
 get("https://www.pobal.ie/wp-content/uploads/2024/01/hp-deprivation-index-scores-2022.csv", "ie_pobal_2022.csv")
-for u in links("https://www.gov.ie/en/department-of-education/collections/data-on-individual-schools/", r"post-primary|data-on-individual", "https://www.gov.ie")[:3]:
-    for f in links(u, r"\.(xlsx|csv)$", "https://www.gov.ie")[:2]:
-        get(f, "ie_" + os.path.basename(f)[:60])
+# Ireland: post-primary enrolment by school (data.gov.ie)
+d = get("https://data.gov.ie/api/3/action/package_search?" + urllib.parse.urlencode({"q": "post primary schools enrolment 2024", "rows": 15, "sort": "metadata_modified desc"}))
+if d:
+    open(f"{OUT}/ie_pp_search.json", "w").write(json.dumps([(p["title"], p["name"], [(r.get("format"), r.get("url")) for r in p["resources"]][:3]) for p in json.loads(d)["result"]["results"]], indent=1))
+# Northern Ireland: school enrolments summary
+for page in ["https://www.education-ni.gov.uk/publications/school-enrolments-northern-ireland-summary-data",
+             "https://www.education-ni.gov.uk/articles/school-enrolments-overview"]:
+    h = get(page, "ni_" + page.rstrip("/").split("/")[-1] + ".html")
+    for f in re.findall(rb'href="([^"]+\.(?:xlsx|ods|csv))"', h or b"")[:3]:
+        get(urllib.parse.urljoin("https://www.education-ni.gov.uk", f.decode()), "ni_" + os.path.basename(f.decode())[:50])
 open(f"{OUT}/log.txt", "w").write("\n".join(log))
