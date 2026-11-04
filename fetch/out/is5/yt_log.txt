@@ -1,0 +1,56 @@
+IS Kópavogsbær ->  
+IS Seltjarnarnesbær ->  
+IS Garðabær ->  
+IS Hafnarfjarðarkaupstaður ->  
+IS Kjósarhreppur ->  
+IS Reykjanesbær -> Reykjanesbær Fundir 0
+IS Grindavíkurbær ->  
+IS Suðurnesjabær ->  
+IS Akraneskaupstaður -> Akraneskaupstaður Sveitarfélag 3
+IS Skorradalshreppur ->  
+IS Hvalfjarðarsveit ->  
+IS Borgarbyggð -> Kvikmyndafjelag Borgarfjarðar 0
+IS Grundarfjarðarbær ->  
+IS Eyja- og Miklaholtshreppur ->  
+IS Snæfellsbær ->  
+IS Sveitarfélagið Stykkishólmur ->  
+IS Dalabyggð -> Dalabyggð TV 0
+IS Bolungarvíkurkaupstaður -> Bolungarvík - Bolungarvíkurkaupstaður 0
+IS Reykhólahreppur ->  
+IS Vesturbyggð ->  
+IS Súðavíkurhreppur ->  
+IS Árneshreppur ->  
+IS Kaldrananeshreppur ->  
+IS Strandabyggð -> Strandabyggð sveitarfélag 0
+IS Húnaþing vestra ->  
+IS Sveitarfélagið Skagaströnd ->  
+IS Húnabyggð ->  
+IS Skagafjörður ->  
+IS Akureyrarbær -> Bæjarstjórn Akureyrar 38
+IS Norðurþing ->  
+IS Fjallabyggð ->  
+IS Dalvíkurbyggð ->  
+IS Eyjafjarðarsveit ->  
+IS Hörgársveit ->  
+IS Svalbarðsstrandarhreppur ->  
+IS Grýtubakkahreppur ->  
+IS Tjörneshreppur ->  
+IS Þingeyjarsveit ->  
+IS Langanesbyggð ->  
+IS Vopnafjarðarhreppur ->  
+IS Fljótsdalshreppur ->  
+IS Vestmannaeyjabær ->  
+IS Sveitarfélagið Árborg -> Sveitarfélagið Árborg 0
+IS Mýrdalshreppur ->  
+IS Skaftárhreppur -> Skaftárhreppur sveitarfélag 0
+IS Ásahreppur ->  
+IS Rangárþing eystra ->  
+IS Rangárþing ytra ->  
+IS Hrunamannahreppur ->  
+IS Sveitarfélagið Ölfus ->  
+IS Grímsnes- og Grafningshreppur ->  
+IS Skeiða- og Gnúpverjahreppur ->  
+IS Bláskógabyggð ->  
+IS Flóahreppur ->  
+
+---
