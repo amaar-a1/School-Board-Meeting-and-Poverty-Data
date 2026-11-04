@@ -78,9 +78,10 @@
       const ca = d.country === "CA", fr = d.country === "FR", uk = d.country === "UK", ie = d.country === "IE", terr = !!d.state;
       const sp = d.simple;   // the Nordic countries and the Netherlands: municipalities, one shared layout
       if (sp) return out.push({
-        District: r.District, Country: d.name, "State or province": "", "Available Board Meetings": r["Available Board Meetings"] ?? "",
-        [c.metric]: pct(r[sp.pov]), "Poverty measure": sp.measure, Children: r[sp.children] ?? "", Enrollment: r.Enrollment ?? "",
-        Locale: r.Locale ? `${d.name}: ${r.Locale}` : "", "Other Board Meetings": "", "District ID": r["District ID"]
+        District: r.District, Country: d.country === "ISLE" ? r.District : d.name, "State or province": sp.place ? r[sp.place] : "",
+        "Available Board Meetings": r["Available Board Meetings"] ?? "",
+        [c.metric]: pct(r[sp.pov]), "Poverty measure": sp.measureColumn ? r[sp.measureColumn] : sp.measure, Children: r[sp.children] ?? "", Enrollment: r.Enrollment ?? "",
+        Locale: r.Locale ? `${d.localePrefix || d.name}: ${r.Locale}` : "", "Other Board Meetings": "", "District ID": r["District ID"]
       });
       out.push({
         District: r.District,
@@ -132,8 +133,8 @@
     return (stateCache[abbr] = { ...nat, name, state: abbr, rows, sourcesAs: nat.name, parent: parent || undefined,
       columns: nat.columns.filter((c) => c !== groupCol),
       note: rows.length === 1
-        ? `1 ${nat.country === "UK" ? "" : "school "}${label.replace(/s$/, "")} in ${name}. ${withMeetings ? "Its meeting count is available." : "No meeting count is available, so it shows 0."}`
-        : `${rows.length.toLocaleString()} ${nat.country === "UK" ? "" : "school "}${label} in ${name}. Meeting counts are available for ${withMeetings.toLocaleString()} of them; the rest show 0.` });
+        ? `1 ${["UK", "ISLE"].includes(nat.country) ? "" : "school "}${label.replace(/s$/, "")} in ${name}. ${withMeetings ? "Its meeting count is available." : "No meeting count is available, so it shows 0."}`
+        : `${rows.length.toLocaleString()} ${["UK", "ISLE"].includes(nat.country) ? "" : "school "}${label} in ${name}. Meeting counts are available for ${withMeetings.toLocaleString()} of them; the rest show 0.` });
   }
 
   // "Data:" row: a button for the national data and a menu with every state.
@@ -265,7 +266,7 @@
   // use NCES locale types; Canadian boards an estimate from Statistics Canada population sizes.
   const US_LOCALES = ["Urban", "Suburban", "Town", "Mixed", "Rural"];   // "Mixed": the European estimates
   // Countries whose locales are density estimates, labelled "UK: Urban" and so on in "All".
-  const DENSITY_COUNTRIES = ["UK", "Ireland", "Norway", "Sweden", "Finland", "Denmark", "Netherlands"];
+  const DENSITY_COUNTRIES = ["UK", "Ireland", "Norway", "Sweden", "Finland", "Denmark", "Netherlands", "Germany", "New Zealand", "Islands"];
   const DENSITY_RE = new RegExp(`^(${DENSITY_COUNTRIES.join("|")}): `);
   const CA_LOCALES = ["Large urban", "Medium urban", "Small urban", "Rural", "Province-wide"];
   // Shared groups for the US and Canada together: the closest match between NCES types and
@@ -317,7 +318,7 @@
       (left ? ` ${left.toLocaleString()} ${label} without a locale are left out of this tab.` : "");
     $("locale-def").textContent = (current.localeDef || (current.parent && current.parent.localeDef)) ? (current.localeDef || current.parent.localeDef)
       : ca || current.combined
-      ? "Canada's locales are estimates, after Statistics Canada's population centre sizes: each census subdivision (municipality) with 100,000+ people is large urban; one with at least 150 people per km² (the OECD's rural cutoff) is medium urban (30,000–99,999 people) or small urban (1,000–29,999); the rest are rural. A board takes the locale where most of its children live; boards serving a whole province or territory are “Province-wide”. They aren't the same as the US NCES locales." + (current.combined ? " UK, Irish, Nordic and Dutch locales are estimates from population density (urban 2,000+ people per km², suburban 500–2,000, mixed 100–500, rural under 100)." : "")
+      ? "Canada's locales are estimates, after Statistics Canada's population centre sizes: each census subdivision (municipality) with 100,000+ people is large urban; one with at least 150 people per km² (the OECD's rural cutoff) is medium urban (30,000–99,999 people) or small urban (1,000–29,999); the rest are rural. A board takes the locale where most of its children live; boards serving a whole province or territory are “Province-wide”. They aren't the same as the US NCES locales." + (current.combined ? " UK, Irish, other European, New Zealand and island locales are estimates from population density (urban 2,000+ people per km², suburban 500–2,000, mixed 100–500, rural under 100)." : "")
       : "";
     const cols = ["Locale", label[0].toUpperCase() + label.slice(1), "With meetings", "Avg meetings", "Poverty: with meetings", "Poverty: without",
       `Meetings per 10,000 ${per}`, "Meetings per poverty point"];
@@ -896,7 +897,7 @@
     $("rules-title").textContent = isCA ? "Province rules for recording or streaming school board meetings (Canada)"
       : isFR ? "Rules for recording or publishing meetings (Saint-Pierre-et-Miquelon)"
       : isUK ? "Rules for recording or broadcasting council meetings (United Kingdom)"
-      : gen ? `Rules for municipal council and committee meetings (${current.parent ? current.parent.name : current.name})`
+      : gen ? `${gen.title || "Rules for municipal council and committee meetings"} (${(current.parent || current).name})`
       : isIE ? "Rules for Education and Training Board meetings (Ireland)"
       : both ? "Rules for recording or streaming school board meetings (every country on this site)"
       : "State rules for recording or streaming school board meetings";
