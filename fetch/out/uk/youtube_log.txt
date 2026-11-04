@@ -1,0 +1,210 @@
+Barking and Dagenham ->  
+Barnet -> Barnet Council 0
+Barnsley -> Barnsley Council Help 0
+Bath and North East Somerset ->  
+Bedford -> Bedford Borough Council Communications 3
+Bexley ->  
+Birmingham -> Birmingham City Council - Committee Meetings 0
+Blackburn with Darwen -> Blackburn with Darwen Council 0
+Blackpool -> Blackpool Council 5
+Bolton -> Bolton Council 35
+Bournemouth, Christchurch and Poole ->  
+Bracknell Forest -> Bracknell Forest Council 0
+Bradford -> Bradford on Avon Town Council 0
+Brent -> Brent Knoll Parish Council meetings 0
+Brighton and Hove -> Brighton & Hove City Council 0
+Bristol, City of -> Bristol City Council Live (Public Meetings) 1
+Bromley ->  
+Buckinghamshire -> Webcontent Buckinghamshire Council 0
+Bury -> Bury Council Communications Team 0
+Calderdale -> Calderdale Council 33
+Cambridgeshire -> Cambridgeshire County Council 1
+Camden ->  
+Central Bedfordshire -> Central Bedfordshire Council 0
+Cheshire East ->  
+Cheshire West and Chester -> Cheshire West and Chester Council 0
+City of London -> London Ontario City Council 0
+Cornwall -> Cornwall Council 0
+County Durham ->  
+Coventry ->  
+Croydon -> Croydon Council 0
+Cumberland ->  
+Darlington -> Darlington Borough Council 0
+Derby -> Derby City Council 39
+Derbyshire -> North East Derbyshire District Council 0
+Devon -> Devon County Council 13
+Doncaster -> Doncaster Council 0
+Dorset -> Dorset Council UK 0
+Dudley ->  
+Ealing -> Ealing Council 0
+East Riding of Yorkshire -> East Riding of Yorkshire Council 0
+East Sussex -> East Sussex County Council 0
+Enfield -> Enfield Council 0
+Essex -> Essex County Council 0
+Gateshead ->  
+Gloucestershire -> Gloucestershire County Council 23
+Greenwich ->  
+Hackney ->  
+Halton ->  
+Hammersmith and Fulham ->  
+Hampshire -> Hampshire County Council 8
+Haringey ->  
+Harrow ->  
+Hartlepool -> Hartlepool Borough Council 0
+Havering ->  
+Herefordshire, County of ->  
+Hertfordshire -> Hertfordshire County Council 16
+Hillingdon ->  
+Hounslow -> Hounslow Council 3
+Isle of Wight ->  
+Isles of Scilly -> The Council of the Isles of Scilly 4
+Islington -> Islington Council 0
+Kensington and Chelsea ->  
+Kent -> Kent County Council 0
+Kingston upon Hull, City of ->  
+Kingston upon Thames ->  
+Kirklees -> Kirklees Council Live Streaming 19
+Knowsley ->  
+Lambeth ->  
+Lancashire ->  
+Leeds -> Leeds City Council - Committees, Boards and Panels 0
+Leicester -> Leicester City Council Democracy 3
+Leicestershire -> Committee meetings at Leicestershire County Council 9
+Lewisham -> Lewisham Council Housing Services 0
+Lincolnshire ->  
+Liverpool -> Liverpool City Council Australia 0
+Luton ->  
+Manchester -> Manchester City Council 1
+Medway -> Medway Council 0
+Merton -> Merton Council 0
+Middlesbrough -> Middlesbrough Council 0
+Milton Keynes -> Milton Keynes City Council 0
+Newcastle upon Tyne ->  
+Newham ->  
+Norfolk -> Norfolk County Council Democratic Services 1
+North East Lincolnshire ->  
+North Lincolnshire ->  
+North Northamptonshire ->  
+North Somerset -> North Somerset Council 3
+North Tyneside -> North Tyneside Council 2
+North Yorkshire -> North Yorkshire Council 3
+Northumberland ->  
+Nottingham -> Nottingham City Council 2
+Nottinghamshire ->  
+Oldham -> Oldham Council Live Council Meetings 0
+Oxfordshire -> Oxfordshire Public Meetings 5
+Peterborough -> Peterborough City Council 0
+Plymouth -> Plymouth City Council 20
+Portsmouth -> Portsmouth City Council - Democratic Services 20
+Reading -> Reading Council 0
+Redbridge -> Redbridge Council 0
+Redcar and Cleveland -> Redcar & Cleveland Borough Council 0
+Richmond upon Thames ->  
+Rochdale -> Rochdale Borough Council 0
+Rotherham -> Rotherham Council 0
+Rutland -> Rutland County Council 0
+Salford ->  
+Sandwell -> Sandwell Council Meetings 0
+Sefton ->  
+Sheffield ->  
+Shropshire ->  
+Slough ->  
+Solihull ->  
+Somerset ->  
+South Gloucestershire ->  
+South Tyneside ->  
+Southampton -> Southampton City Council 0
+Southend-on-Sea -> Southend-on-Sea City Council 0
+Southwark ->  
+St. Helens ->  
+Staffordshire -> Staffordshire County Council Webcast Archive 29
+Stockport -> Stockport Council Watch 0
+Stockton-on-Tees ->  
+Stoke-on-Trent -> Stoke-on-Trent City Council 0
+Suffolk -> Suffolk County Council 32
+Sunderland ->  
+Surrey -> Surrey County Council 0
+Sutton -> Sutton Council 1
+Swindon -> Swindon Borough Council - Meeting Broadcasts 14
+Tameside ->  
+Telford and Wrekin -> Telford & Wrekin Council meetings 9
+Thurrock ->  
+Torbay -> Torbay Council 0
+Tower Hamlets -> Tower Hamlets Council 0
+Trafford -> Trafford Council Meetings 25
+Wakefield -> Wakefield Council 0
+Walsall ->  
+Waltham Forest ->  
+Wandsworth -> Wandsworth Council 0
+Warrington -> Warrington Borough Council Meetings 0
+Warwickshire -> Warwickshire County Council 4
+West Berkshire -> West Berkshire Council 25
+West Northamptonshire ->  
+West Sussex ->  
+Westminster -> Westminster City Council 0
+Westmorland and Furness ->  
+Wigan ->  
+Wiltshire ->  
+Windsor and Maidenhead ->  
+Wirral -> Wirral Council 0
+Wokingham ->  
+Wolverhampton ->  
+Worcestershire -> Worcestershire County Council 3
+York -> City of York Council 0
+Education Authority (Northern Ireland) ->  
+Aberdeen City ->  
+Aberdeenshire -> Aberdeenshire Council 0
+Angus -> Angus Council LIVE 0
+Argyll and Bute ->  
+City of Edinburgh ->  
+Clackmannanshire -> Clackmannanshire Council 0
+Dumfries and Galloway ->  
+Dundee City -> Dundee City Council 0
+East Ayrshire -> East Ayrshire Council 0
+East Dunbartonshire -> East Dunbartonshire Council 1
+East Lothian -> East Lothian Council 0
+East Renfrewshire ->  
+Falkirk -> Falkirk Council: Committees 0
+Fife -> Carroll Fife for City Council 0
+Glasgow City -> Glasgow City Council  0
+Highland ->  
+Inverclyde -> Inverclyde Council 0
+Midlothian -> Midlothian Council 1
+Moray -> Moray Council 1
+Na h-Eileanan Siar ->  
+North Ayrshire ->  
+North Lanarkshire ->  
+Orkney Islands -> Orkney Islands Council 0
+Perth and Kinross -> Perth & Kinross Council 0
+Renfrewshire ->  
+Scottish Borders ->  
+Shetland Islands -> Shetland Islands Council 0
+South Ayrshire ->  
+South Lanarkshire -> South Lanarkshire Council 0
+Stirling -> Stirling Council 1
+West Dunbartonshire ->  
+West Lothian -> West Lothian Council committees 0
+Blaenau Gwent ->  
+Bridgend ->  
+Caerphilly ->  
+Cardiff ->  
+Carmarthenshire ->  
+Ceredigion -> Cyngor Sir Ceredigion County Council 0
+Conwy -> Cyngor Bwrdeistref Sirol Conwy County Borough Council 4
+Denbighshire ->  
+Flintshire -> Flintshire County Council - Committee Meetings 4
+Gwynedd ->  
+Isle of Anglesey ->  
+Merthyr Tydfil -> Cyngor Merthyr Tudful | Merthyr Tydfil Council 0
+Monmouthshire ->  
+Neath Port Talbot -> Neath Port Talbot Council 0
+Newport -> Newport City Council - Cyngor Dinas Casnewydd  0
+Pembrokeshire -> Pembrokeshire County Council Forum 0
+Powys -> Powys County Council Democratic Services 48
+Rhondda Cynon Taf ->  
+Swansea -> Swansea Council 0
+Torfaen -> Torfaen Council Democracy and Scrutiny 0
+Vale of Glamorgan ->  
+Wrexham ->  
+
+--- stderr ---
