@@ -98,6 +98,56 @@ window.SOURCES = [
     note: "Other Vermont districts may post meetings on their own websites or local public-access TV stations (for example The Media Factory, CCTV or ORCA Media), which haven't been checked, so Vermont's counts are incomplete. These counts are in the separate “Other Board Meetings” column. The Available Board Meetings column, and every total, comparison, chart and filter, use CivicSearch only; the map's meetings colors use these counts where CivicSearch has none."
   },
   {
+    only: "Norway",
+    group: "Norway: municipalities, child low income and pupils",
+    items: [
+      { title: "Child low income: Statistics Norway table 12944, persistent low income (EU scale, 60% of the median), children 0–17, 2022–2024", url: "https://www.ssb.no/en/statbank/table/12944/" },
+      { title: "Pupils: Statistics Norway table 11980, pupils in compulsory school, 2025", url: "https://www.ssb.no/en/statbank/table/11980/" },
+      { title: "Borders and density: Eurostat GISCO Local Administrative Units (LAU) 2023", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" }
+    ],
+    note: "Locales are estimates from Eurostat's 2023 people per km² for each municipality: urban 2,000+, suburban 500–2,000, mixed 100–500, rural under 100. Built by data-prep/build_nordic.py. Norway renumbered its municipalities in 2024, so the figures are matched to the 2023 borders by name; Haram, split from Ålesund in 2024, isn't shown on its own: its area is drawn as part of Ålesund, whose figures are for Ålesund without Haram."
+  },
+  {
+    only: "Sweden",
+    group: "Sweden: municipalities, low economic standard and pupils",
+    items: [
+      { title: "Low economic standard: Statistics Sweden (SCB) table TAB6685, people 0–19 with household income below 60% of the median, 2024", url: "https://www.statistikdatabasen.scb.se/" },
+      { title: "Pupils: Kolada key figure N15835, pupils in compulsory school (F–9) by home municipality, 2025", url: "https://www.kolada.se/" },
+      { title: "Borders and density: Eurostat GISCO Local Administrative Units (LAU) 2023", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" }
+    ],
+    note: "Locales are estimates from Eurostat's 2023 people per km² for each municipality: urban 2,000+, suburban 500–2,000, mixed 100–500, rural under 100. Built by data-prep/build_nordic.py."
+  },
+  {
+    only: "Finland",
+    group: "Finland: municipalities, child low income and pupils",
+    items: [
+      { title: "Child low income: THL Sotkanet indicator 228, children under 18 in low-income households, 2022–2024 (latest year per municipality)", url: "https://sotkanet.fi/sotkanet/en/metadata/indicators/228" },
+      { title: "Pupils: Statistics Finland table 133w, comprehensive school pupils, 2025", url: "https://pxdata.stat.fi/PxWeb/pxweb/en/StatFin/StatFin__opiskt/" },
+      { title: "Borders and density: Eurostat GISCO Local Administrative Units (LAU) 2023", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" }
+    ],
+    note: "Locales are estimates: population (children under 18 divided by 0.19, their approximate share of Finland's population) over each municipality's area from the Eurostat borders, since Eurostat's Finnish density figures are wrong; urban 2,000+ people per km², suburban 500–2,000, mixed 100–500, rural under 100. Lakes count in the area, so some lake-district municipalities look more rural than they are."
+  },
+  {
+    only: "Denmark",
+    group: "Denmark: municipalities, child poverty and pupils",
+    items: [
+      { title: "Child poverty: Statistics Denmark table LABY07, children 0–17 in relative poverty (50% of the median), 2024", url: "https://www.statbank.dk/LABY07" },
+      { title: "Pupils: Statistics Denmark table LABY23, pupils in primary and lower secondary school on 1 October 2025", url: "https://www.statbank.dk/LABY23" },
+      { title: "Borders and density: Eurostat GISCO Local Administrative Units (LAU) 2023", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" }
+    ],
+    note: "Locales are estimates from Eurostat's 2023 people per km² for each municipality: urban 2,000+, suburban 500–2,000, mixed 100–500, rural under 100. Built by data-prep/build_nordic.py."
+  },
+  {
+    only: "Netherlands",
+    group: "Netherlands: municipalities, child poverty and pupils",
+    items: [
+      { title: "Child poverty: CBS table 86132NED, children in poverty (the “not much but sufficient” criterion), 2024", url: "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/86132NED/table" },
+      { title: "Pupils: CBS table 85701NED, pupils by municipality of residence (primary, special and secondary), 2025/26", url: "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85701NED/table" },
+      { title: "Borders and density: Eurostat GISCO Local Administrative Units (LAU) 2023", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" }
+    ],
+    note: "Locales are estimates from Eurostat's 2023 people per km² for each municipality: urban 2,000+, suburban 500–2,000, mixed 100–500, rural under 100. Built by data-prep/build_nordic.py. Voorne aan Zee (2023) is drawn from its three former municipalities' borders."
+  },
+  {
     only: "Ireland",
     group: "Ireland: Education and Training Boards, unemployment and children",
     items: [
