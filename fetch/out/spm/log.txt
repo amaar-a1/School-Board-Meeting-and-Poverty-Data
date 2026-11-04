@@ -1,0 +1,3 @@
+ok 682637 https://www.education.gouv.fr/sites/default/files/2025-07/rers2025-chapitre-11-441744.pdf
+FAIL https://github.com/wmgeolab/geoBoundaries/raw/main/releaseData/gbOpen/SPM/ADM0/geoBoundaries-SPM-ADM0_simplified.geojson: HTTP Error 404: Not Found
+FAIL https://github.com/wmgeolab/geoBoundaries/raw/main/releaseData/gbOpen/SPM/ADM0/geoBoundaries-SPM-ADM0.geojson: HTTP Error 404: Not Found
