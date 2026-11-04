@@ -1,0 +1,11 @@
+ok 3607 https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_li41?geo=IE04&geo=IE05&geo=IE06&geo=IE&sinceTimePeriod=2019
+ok 26314 https://data.ssb.no/api/v0/no/table/12944
+ok 26314 https://data.ssb.no/api/v0/no/table/12944
+ok 183439 https://data.ssb.no/api/v0/no/table/12944
+ok 26118 https://data.ssb.no/api/v0/no/table/13563
+ok 28451 https://data.ssb.no/api/v0/no/table/10540
+ok 2521852 https://sotkanet.fi/rest/1.1/indicators
+FAIL https://www.insee.fr/fr/statistiques/2011101?geo=COM-977: HTTP Error 500: Internal Server Error <html><body><h1>Whitelabel Error Page</h1><p>This application has no configured error view, so you are seeing this as a fallback.</p><div id='created'>Wed Nov 04 22:29:41 UTC 2026</div><div>[2d8d9958-536782] There was an unexpected error (type=Internal Server Error, status=500).</div></body></html>
+FAIL https://www.insee.fr/fr/statistiques/2011101?geo=COM-978: HTTP Error 500: Internal Server Error <html><body><h1>Whitelabel Error Page</h1><p>This application has no configured error view, so you are seeing this as a fallback.</p><div id='created'>Wed Nov 04 22:29:43 UTC 2026</div><div>[bd5426ce-536921] There was an unexpected error (type=Internal Server Error, status=500).</div></body></html>
+ok 186529 https://www.abs.gov.au/census/find-census-data/quickstats/2021/901031003
+ok 194200 https://www.abs.gov.au/census/find-census-data/quickstats/2021/9
