@@ -1,6 +1,0 @@
-ok 59595 https://data.ontario.ca/api/3/action/package_show?id=school-information-and-student-demographics -> None
-ok 1567330 https://data.ontario.ca/dataset/d85f68c5-fcb0-4b4d-aec5-3047db47dcd5/resource/602a5186-67f5-4faf-94f3-7c61ffc4719a/download/sif_data_table_2019_2020_en.xlsx -> on_sif_0.xlsx
-ok 1550796 https://data.ontario.ca/dataset/d85f68c5-fcb0-4b4d-aec5-3047db47dcd5/resource/bbbac037-b1c9-4b32-8f67-4fed1dfcac06/download/sif_data_table_2018_2019_en.xlsx -> on_sif_1.xlsx
-ok 640617 https://data.novascotia.ca/api/views/cjnf-ywvt/rows.csv?accessType=DOWNLOAD -> ns_enrolment.csv
-FAIL https://publications.saskatchewan.ca/api/v1/products/83293/formats/95844/download: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>
-ok 835123 https://www.ece.gov.nt.ca/sites/ece/files/school_funding_framework_2025-26.pdf -> nt_funding_2025_26.pdf

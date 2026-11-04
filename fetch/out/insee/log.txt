@@ -1,2 +1,0 @@
-FAIL https://www.insee.fr/en/statistiques/7758862?geo=BV2022-58264: HTTP Error 500: Internal Server Error
-FAIL https://www.insee.fr/fr/statistiques/7758862?geo=BV2022-58264: HTTP Error 404: Not Found

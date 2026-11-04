@@ -1,5 +1,0 @@
-ok 21659 https://www.arcgis.com/sharing/rest/search?q=Local+Authority+District+to+County+December+2024+Lookup+in+England&f=json&num=10
-ok 52812 https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/LAD24_CTYUA24_EW_LU/FeatureServer/0/query?where=1%3D1&outFields=*&f=json&resultRecordCount=2000
-lookup: Local Authority District to County and Unitary Authority (December 2024) Lookup in EW
-ok 45876831 https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadCollection
-CSO tables: 13164, kept 0

@@ -1,6 +1,0 @@
-ok 14214 https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/opiskt/133w.px
-ok 505175 https://api.kolada.se/v3/data/kpi/N15835/year/2025
-ok 6737 https://statistikdatabasen.scb.se/api/v2/tables/TAB6685/data?lang=sv&outputFormat=csv
-ok 59 https://api.kolada.se/v3/kpi?title=ekonomiskt+utsatta
-ok 10447 https://api.kolada.se/v3/kpi?title=l%C3%A5g+ekonomisk+standard
-ok 59 https://api.kolada.se/v3/kpi?title=barnfattigdom

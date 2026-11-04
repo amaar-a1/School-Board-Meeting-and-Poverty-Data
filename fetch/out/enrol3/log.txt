@@ -1,8 +1,0 @@
-ok 1523903 https://data.ontario.ca/dataset/d85f68c5-fcb0-4b4d-aec5-3047db47dcd5/resource/f75540ed-59eb-49ab-ac43-976d563b3a65/download/new_sif_data_2024_25_final_en_sep_2026.xlsx -> on_sif_2024_25.xlsx
-ok 18715 https://open.alberta.ca/api/3/action/package_show?id=ccbcf0fb-615e-44a0-b7ec-681e2ea4e1e7 -> None
-ok 53583 https://open.alberta.ca/dataset/ccbcf0fb-615e-44a0-b7ec-681e2ea4e1e7/resource/5ef019ed-2cfe-4b6b-ad82-71b441985855/download/ecc-authority-enrolment-data-2024-2025.xlsx -> ab_2024_25_0.xlsx
-ok 273260 https://open.alberta.ca/dataset/ccbcf0fb-615e-44a0-b7ec-681e2ea4e1e7/resource/ebb14c82-d08b-4696-b84f-f4e1fd684dcb/download/ecc-school-enrolment-data-2024-2025.xlsx -> ab_2024_25_1.xlsx
-sk curl 60 curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
-More details here: https://curl.se/docs/sslcerts.html
-
-curl failed to verify the legitimacy of the server 
