@@ -1,0 +1,32 @@
+ok 884276 https://api.worldbank.org/v2/country/all/indicator/SE.PRM.ENRL?format=json&per_page=20000&date=2010:2025
+ok 892081 https://api.worldbank.org/v2/country/all/indicator/SE.SEC.ENRL?format=json&per_page=20000&date=2010:2025
+ok 1053842 https://api.worldbank.org/v2/country/all/indicator/SI.POV.NAHC?format=json&per_page=20000&date=2010:2025
+ok 1079097 https://api.worldbank.org/v2/country/all/indicator/SL.UEM.TOTL.ZS?format=json&per_page=20000&date=2010:2025
+ok 856189 https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json&per_page=20000&date=2010:2025
+ok 1032164 https://api.worldbank.org/v2/country/all/indicator/SP.POP.0014.TO.ZS?format=json&per_page=20000&date=2010:2025
+ok 12948 https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_li02?geo=MT&geo=CY&geo=IS&geo=DE&age=Y_LT18&sinceTimePeriod=2020
+ok 248170 https://www.stats.govt.nz/assets/Uploads/Child-poverty-statistics/Child-poverty-statistics-Year-ended-June-2025/Download-data/child-poverty-statistics-year-ended-june-2025.xlsx
+ok 29911 https://www.stats.govt.nz/assets/Uploads/Child-poverty-statistics/Child-poverty-statistics-Year-ended-June-2025/Download-data/child-poverty-statistics-year-ended-june-2025-summary-table.xlsx
+ok 851 https://www.wegweiser-kommune.de/data-api/rest/export/kinderarmut+berlin+2016-2023+tabelle.csv
+ok 736 https://www.wegweiser-kommune.de/data-api/rest/export/kinderarmut+berlin+hamburg+2023+tabelle.csv
+FAIL https://www.wegweiser-kommune.de/data-api/rest/region/filter: HTTP Error 405: Method Not Allowed <!DOCTYPE html>
+<html class="ltr" dir="ltr" lang="de-DE">
+<head>
+
+<title>Ung&uuml;ltige Anfrage - Wegweiser Kommune</title>
+<meta content="initial-scale=1.0, width=device-width" name="viewport" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<link href="/o/wegweiser-theme/images/favicon.ico" rel="icon" />
+<link class="lfr-css-file" data-senna-track="temporary"
+	href="/o/wegweiser-theme/css/clay.css?themeId=wegweisertheme_WAR_wegweisertheme" id="liferayAUICSS" rel="stylesheet"
+	type="text/css" />
+<link class="lfr-css-file" data-senna-track="temporary"
+	href="/o/wegweise
+ok 2016 https://www.wegweiser-kommune.de/data-api/rest/region/list?search=kreis
+ok 1985 https://www.wegweiser-kommune.de/data-api/rest/region/list?query=kreis
+ok 1985 https://www.wegweiser-kommune.de/data-api/rest/region/list?term=Landkreis
+ok 1985 https://www.wegweiser-kommune.de/data-api/rest/region/list?type=LANDKREIS
+ok 1985 https://www.wegweiser-kommune.de/data-api/rest/region/list
+ok 167 https://www.wegweiser-kommune.de/data-api/rest/suggest/regionType
+ok 3476 https://www.wegweiser-kommune.de/data-api/rest/indicator/list?search=Kinderarmut
+ok 148230 https://www.wegweiser-kommune.de/data-api/js/statistics/main.aec9d13b.chunk.js
