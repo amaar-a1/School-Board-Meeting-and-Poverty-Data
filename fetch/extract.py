@@ -1,28 +1,18 @@
-# Temporary: Territorial Council session dates of Saint-Pierre-et-Miquelon from its published deliberations (jo-spm.fr).
-import json, os, re, subprocess, time, urllib.request
-OUT = "fetch/out/spm3"; os.makedirs(OUT, exist_ok=True)
+# Temporary: INSEE page the user linked (poverty data for Saint-Pierre-et-Miquelon).
+import os, re, html, time, urllib.request
+OUT = "fetch/out/insee"; os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "school-board-research-script (github.com/amaar-a1)"}
-subprocess.run("sudo apt-get install -y -q poppler-utils >/dev/null 2>&1", shell=True)
-found, log, fails = {}, [], 0
-def date_of(url):
-    global fails
-    time.sleep(1.5)
+log = []
+for name, url in [("en", "https://www.insee.fr/en/statistiques/7758862?geo=BV2022-58264"),
+                  ("fr", "https://www.insee.fr/fr/statistiques/7758862?geo=BV2022-58264")]:
+    time.sleep(3)
     try:
-        with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
-            data = r.read()
+        with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=120) as r:
+            h = r.read().decode("utf-8", "replace")
+        open(f"{OUT}/{name}.html", "w").write(h)
+        t = html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " | ", re.sub(r"(?s)<(script|style).*?</\1>", " ", h))))
+        open(f"{OUT}/{name}.txt", "w").write(t)
+        log.append(f"ok {len(h)} {url}")
     except Exception as e:
-        log.append(f"FAIL {url}: {e}"); fails += 1
-        return None
-    open("/tmp/d.pdf", "wb").write(data)
-    t = subprocess.run(["pdftotext", "-l", "2", "/tmp/d.pdf", "-"], capture_output=True, text=True).stdout
-    m = re.search(r"S[ée]ance\s+(officielle|extraordinaire|publique)?\s*du\s+(\w+\s+)?(\d{1,2}\s*(?:er)?\s+\w+\s+20\d\d)", t, re.I)
-    return (m.group(1) or "", m.group(3)) if m else ("?", t[:120].replace("\n", " "))
-for year, pattern, top in [(2025, "https://jo-spm.fr/doc_jo/DELIB2025-{:04d}.pdf", 320), (2026, "https://jo-spm.fr/doc_jo/DELIB_{:03d}_2026.pdf", 260)]:
-    for n in range(1, top, 4):
-        if fails > 12 and not found:
-            log.append("stopping: the site isn't answering"); break
-        d = date_of(pattern.format(n))
-        if d:
-            found[f"{year}-{n}"] = d
-json.dump(found, open(f"{OUT}/sessions.json", "w"), indent=1, ensure_ascii=False)
-open(f"{OUT}/log.txt", "w").write("\n".join(log[-200:]))
+        log.append(f"FAIL {url}: {e}")
+open(f"{OUT}/log.txt", "w").write("\n".join(log))
