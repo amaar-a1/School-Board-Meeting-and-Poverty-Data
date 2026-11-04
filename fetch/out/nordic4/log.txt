@@ -1,0 +1,23 @@
+ok 26314 https://data.ssb.no/api/v0/no/table/12944
+ok 63920 https://data.ssb.no/api/v0/no/table/12944
+ok 22027 https://data.ssb.no/api/v0/no/table/11980
+ok 42995 https://data.ssb.no/api/v0/no/table/11980
+FAIL https://statistikdatabasen.scb.se/api/v2/tables/TAB6685/data?lang=sv&outputFormat=csv&valueCodes%5BRegion%5D=0114%2C0115%2C0117%2C0120%2C0123%2C0125%2C0126%2C0127%2C0128%: HTTP Error 404: Not Found <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<title>404 - File or directory not found.</title>
+<style typ
+ok 48025 https://api.kolada.se/v3/kpi?title=elever+i+grundskola
+ok 512770 https://api.kolada.se/v3/data/kpi/N11806/year/2025
+ok 503879 https://api.kolada.se/v3/data/kpi/N15033/year/2025
+ok 503865 https://api.kolada.se/v3/data/kpi/N15034/year/2025
+ok 13985 https://api.kolada.se/v3/municipality
+ok 7526 https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/opiskt/133w.px
+ok 13498 https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/opiskt/133w.px
+FAIL https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/opiskt/statfin_opiskt_pxt_133w.px: HTTP Error 400: Bad Request Bad Request
+ok 2397 https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/opiskt/15fe.px
+ok 4670 https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/opiskt/15fe.px
+ok 7308 https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/opiskt/13jn.px
+ok 13218 https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/opiskt/13jn.px
+ok 203875 https://opendata.cbs.nl/ODataApi/odata/85701NED/TypedDataSet?$format=json&$filter=Geslacht%20eq%20%27T001038%27%20and%20Perioden%20eq%20%272025SJ00%27%20and%20%28Onderwij
