@@ -98,6 +98,20 @@ window.SOURCES = [
     note: "Other Vermont districts may post meetings on their own websites or local public-access TV stations (for example The Media Factory, CCTV or ORCA Media), which haven't been checked, so Vermont's counts are incomplete. These counts are in the separate “Other Board Meetings” column. The Available Board Meetings column, and every total, comparison, chart and filter, use CivicSearch only; the map's meetings colors use these counts where CivicSearch has none."
   },
   {
+    only: "Saint-Pierre-et-Miquelon (France)",
+    group: "Saint-Pierre-et-Miquelon: schools, meetings and map",
+    items: [
+      { title: "Service de l'Éducation nationale de Saint-Pierre-et-Miquelon (the French state's education office)", url: "https://www.education.gouv.fr/service-de-l-education-nationale-de-saint-pierre-et-miquelon-100136" },
+      { title: "Enrollment: Repères et références statistiques 2025, chapter 11, La France d'outre-mer (tables 11.01: 358 primary and 484 secondary students, start of the 2024 school year)", url: "https://www.education.gouv.fr/sites/default/files/2025-07/rers2025-chapitre-11-441744.pdf" },
+      { title: "Meetings: Territorial Council deliberations in the official gazette of Saint-Pierre-et-Miquelon (session dates)", url: "https://www.jo-spm.fr/" },
+      { title: "Territorial Council rules: Code général des collectivités territoriales, book IV (Saint-Pierre-et-Miquelon)", url: "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070633/LEGISCTA000006135519/" },
+      { title: "Unemployment (stand-in for poverty): CIA World Factbook, Saint Pierre and Miquelon (8.7%, 2015 est.; population below poverty line: NA)", url: "https://relief.unboundmedicine.com/relief/view/The-World-Factbook/563198/all/Saint_Pierre_and_Miquelon" },
+      { title: "Poverty: IEDOM, Saint-Pierre-et-Miquelon key figures 2023 (poverty rate listed as not available)", url: "https://www.iedom.fr/IMG/pdf/st_pierre_et_miquelon_2023_chiffres_cles.pdf" },
+      { title: "Map outline: Natural Earth 1:10m admin-0 map units", url: "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/" }
+    ],
+    note: "The Territorial Council's website (spm-ct975.fr) refused automated access, so session dates come from the deliberations in the official gazette; no recordings of its sessions were found. The council handles the archipelago's own affairs; schools are run by the French state."
+  },
+  {
     only: "Canada",
     group: "Canada: children and low income",
     items: [

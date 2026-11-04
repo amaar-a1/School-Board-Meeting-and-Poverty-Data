@@ -2,16 +2,17 @@
 // colored by the site's data. app.js calls SiteMap.show() when the tab or the data set changes.
 (function () {
   const $ = (id) => document.getElementById(id);
-  const LAYERS = ["unsd", "elsd", "territories", "scsd", "canada"];   // files in data/map/; scsd only when ticked
+  const LAYERS = ["unsd", "elsd", "territories", "scsd", "canada", "spm"];   // files in data/map/; scsd only when ticked
   // Canadian boards overlap (public and Catholic, English and French). The main layer shows one
   // board per place; "canada2" holds the overlapping ones and shows when its box is ticked.
   // Quebec's French boards cover all of Quebec; elsewhere the public (or English) board does.
   // Quebec's Cree, Kativik and Littoral boards ("Special status") serve the north and east instead.
   const caMainRow = (r) => !!r && (r.pseudo || ["Public", "English public", "Special status"].includes(r["Board type"]) ||
     r["Board type"] === (r.Province === "Quebec" ? "French" : "English"));
-  const DRAW = ["unsd", "elsd", "territories", "scsd", "canada", "canada2"];
+  const DRAW = ["unsd", "elsd", "territories", "scsd", "canada", "canada2", "spm"];
   const gid = (f) => f.properties.GEOID || f.properties.id;
   const isCA = (id) => String(id).startsWith("CA-");
+  const isFR = (id) => String(id).startsWith("FR-");   // Saint-Pierre-et-Miquelon (France)
   const JUMPS = {
     "Contiguous US": [[24.4, -125], [49.5, -66.9]],
     Alaska: [[51.2, -179.5], [71.5, -129.9]],
@@ -22,7 +23,8 @@
     "Northern Mariana Islands": [[14.0, 144.8], [15.4, 146.0]],
     "American Samoa": [[-14.6, -171.1], [-14.1, -168.1]],
     Canada: [[42, -142], [66, -53]],
-    "United States and Canada": [[18, -165], [68, -52]]
+    "United States and Canada": [[18, -165], [68, -52]],
+    "Saint-Pierre-et-Miquelon": [[46.72, -56.45], [47.17, -56.07]]
   };
   const SCALES = {
     poverty: {
@@ -83,6 +85,8 @@
   function color(row) {
     const metric = $("map-metric").value, sc = SCALES[metric];
     let v = row ? toNumber(row[row[sc.column] === undefined && sc.caColumn ? sc.caColumn : sc.column]) : NaN;
+    // Saint-Pierre-et-Miquelon has no poverty rate; its unemployment rate stands in.
+    if (metric === "poverty" && row && isNaN(v) && row["Unemployment rate (stand-in for poverty)"]) v = toNumber(row["Unemployment rate (stand-in for poverty)"]);
     // Where CivicSearch has none, the meetings map uses counts from the district's own sources.
     if (metric === "meetings" && row && !(v > 0) && toNumber(row["Other Board Meetings"]) > 0) v = toNumber(row["Other Board Meetings"]);
     if (metric === "meetings" && isNaN(v)) v = 0;   // no meetings found counts as 0
@@ -94,6 +98,8 @@
   // In a state's view (or the territories'), districts elsewhere are faded.
   function inView(geoid) {
     if (current && current.combined) return true;
+    const fr = current && current.country === "FR";
+    if (isFR(geoid) || fr) return isFR(geoid) && fr;   // Saint-Pierre-et-Miquelon's view fades everything else
     const ca = current && (current.country === "CA" || (current.parent && current.parent.country === "CA"));
     if (isCA(geoid) !== !!ca) return false;   // the US and Canada views fade each other
     if (ca) return !current.state || geoid.startsWith(`CA-${current.state.split(":")[1]}-`);
@@ -124,11 +130,12 @@
     if (!r) return `<div class="map-tip"><strong>${esc(feature.properties.NAME)}</strong>Available board meetings: 0<br>No poverty data for this district</div>`;
     const place = [r.County, r.State || r.Territory].filter(Boolean).join(", ");
     const pov = toNumber(r["Percentage of Children Ages 5-17 in Poverty"]);
+    const unemp = toNumber(r["Unemployment rate (stand-in for poverty)"]);
     const meet = toNumber(r["Available Board Meetings"]);
     const enr = toNumber(r.Enrollment);
-    const note = [r["Map note"], r.Notes || r["Poverty figures"], r["Other meetings source"] && `Other meetings: ${r["Other meetings source"]}`].filter(Boolean).join(". ");
+    const note = [r["Map note"], r.Notes || r["Poverty figures"], r["Meetings note"], r["Other meetings source"] && `Other meetings: ${r["Other meetings source"]}`].filter(Boolean).map((x) => String(x).replace(/\.\s*$/, "")).join(". ");
     return `<div class="map-tip"><strong>${esc(r.District)}${place ? `, ${esc(place)}` : ""}</strong>` +
-      `Child poverty: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>` +
+      (isNaN(pov) && !isNaN(unemp) ? `Unemployment (stand-in for poverty): ${unemp.toFixed(1)}% (2015 est.)<br>` : `Child poverty: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>`) +
       `Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}` +
       (toNumber(r["Other Board Meetings"]) > 0 ? ` on CivicSearch; ${toNumber(r["Other Board Meetings"]).toLocaleString()} from other sources (see note)` : "") + `<br>` +
       `Enrollment: ${isNaN(enr) ? "not reported" : enr.toLocaleString()}` +
@@ -153,10 +160,13 @@
     const sc = SCALES[$("map-metric").value];
     const items = sc.labels.map((l, i) => `<span><i style="background:${sc.colors[i]}"></i>${l}</span>`);
     const ca = current && (current.country === "CA" || current.parent || current.combined);
-    if (!ca || current.combined) items.push(`<span><i style="background:${NO_DISTRICT}"></i>No school district (mostly national parks and federal land)</span>`);
+    if ((!ca || current.combined) && !(current && current.country === "FR")) items.push(`<span><i style="background:${NO_DISTRICT}"></i>No school district (mostly national parks and federal land)</span>`);
     const faded = [];
     if (current && current.state) faded.push(current.state === "territories" ? "outside the U.S. territories" : `outside ${current.name}`);
     else if (ca && !current.combined) faded.push("outside Canada");
+    if ((current && (current.country === "FR" || current.combined)) && $("map-metric").value === "poverty")
+      items.push(`<span class="map-faded">Saint-Pierre-et-Miquelon: unemployment rate (2015 est.) in place of child poverty, which isn't published there</span>`);
+    if (current && current.country === "FR") faded.push("outside Saint-Pierre-et-Miquelon");
     if (ca && $("map-metric").value === "poverty") items.push(`<span class="map-faded">${current.combined ? "Canadian boards" : "Canada"}: share of children 0–17 in low income (LIM-AT, 2020), not the same measure as the US child poverty rate</span>`);
     if (window.SiteFilters && window.SiteFilters.active()) faded.push("that don't match the filters");
     if (faded.length) items.push(`<span class="map-faded">Faded: districts ${faded.join(" or ")}</span>`);
@@ -181,6 +191,7 @@
     if (!map || !current) return;
     if (current.state === "territories") return jump("Puerto Rico");
     if (current.combined) return jump("United States and Canada");
+    if (current.country === "FR") return jump("Saint-Pierre-et-Miquelon");
     if (current.country === "CA" && !current.parent) return jump("Canada");
     if (current.parent) {
       const pre = `CA-${current.state.split(":")[1]}-`;
@@ -222,7 +233,10 @@
     }).addTo(map);
     const renderer = L.canvas({ padding: 0.3 });
     const files = {};
-    LAYERS.forEach((name, i) => { files[name] = topo[i] ? topojson.feature(topo[i], topo[i].objects[name]) : { type: "FeatureCollection", features: [] }; });
+    LAYERS.forEach((name, i) => {
+      const t = topo[i];
+      files[name] = !t ? { type: "FeatureCollection", features: [] } : t.type === "FeatureCollection" ? t : topojson.feature(t, t.objects[name]);
+    });
     // Yukon and Nunavut have no public board of their own (the territory runs most schools), so
     // their territory-wide board shows in the main layer: the First Nation board, else the French one.
     // Areas outside every board (e.g. Ontario's Far North) are map-only: they get a row here from
@@ -264,6 +278,13 @@
       });
       if (name !== "scsd" && name !== "canada2") layers[name].addTo(map);
     });
+    // Saint-Pierre-et-Miquelon is tiny and has no poverty figure, so a label keeps its meeting count visible.
+    const spmRow = lookup["FR-SPM"];
+    if (spmRow && layers.spm && layers.spm.getLayers().length) {
+      const n = toNumber(spmRow["Available Board Meetings"]);
+      L.marker(layers.spm.getBounds().getCenter(), { interactive: false, keyboard: false,
+        icon: L.divIcon({ className: "map-label", html: `Saint-Pierre-et-Miquelon<br><b>${isNaN(n) ? 0 : n} meetings</b> (Territorial Council)`, iconSize: [190, 34], iconAnchor: [-14, 17] }) }).addTo(map);
+    }
     const sel = $("map-jump");
     sel.add(new Option("—", ""));
     Object.keys(JUMPS).forEach((k) => sel.add(new Option(k, k)));
@@ -381,7 +402,7 @@
       if (!loading) {
         loading = Promise.all([...LAYERS, "aliases"].map((n) => fetch(`data/map/${n}.json`).then((r) => {
           if (!r.ok) {
-            if (n === "canada") return null;   // the US map still works without Canada's borders
+            if (n === "canada" || n === "spm") return null;   // the US map still works without these borders
             throw new Error(`HTTP ${r.status}`);
           }
           return r.json();
