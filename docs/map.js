@@ -157,7 +157,7 @@
     const sc = SCALES[$("map-metric").value];
     const items = sc.labels.map((l, i) => `<span><i style="background:${sc.colors[i]}"></i>${l}</span>`);
     const ca = current && (current.country === "CA" || current.parent || current.combined);
-    if (!ca || current.combined) items.push(`<span><i style="background:${NO_DISTRICT}"></i>No school district (mostly national parks and federal land)</span>`);
+    if ((!ca || current.combined) && !(current && current.country === "FR")) items.push(`<span><i style="background:${NO_DISTRICT}"></i>No school district (mostly national parks and federal land)</span>`);
     const faded = [];
     if (current && current.state) faded.push(current.state === "territories" ? "outside the U.S. territories" : `outside ${current.name}`);
     else if (ca && !current.combined) faded.push("outside Canada");

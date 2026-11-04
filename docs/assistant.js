@@ -253,6 +253,10 @@
   function answer(q) {
     lastQ = q;
     if (!data()) return "The data is still loading — try again in a moment.";
+    if (/saint.pierre|miquelon/i.test(q)) {   // before district names: a South Dakota district is called "Pierre"
+      const r = all.find((x) => x._fr);
+      if (r) return districtCard(r) + (r["Meetings note"] ? `<p class="ask-note">${esc(r["Meetings note"])}</p>` : "");
+    }
     const stateList = findStates(q);
     const s = q.toLowerCase();
     if (/\b(sources?|come from|data from|updated?|refresh(ed)?|how often|locale|mean|means|meaning)\b/.test(s) && !findDistricts(q, stateList).length) return help(q);

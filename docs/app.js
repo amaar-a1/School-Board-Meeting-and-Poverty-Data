@@ -283,7 +283,9 @@
   function renderLocale() {
     const has = current.columns.includes("Locale");
     const ok = has && canCompare();
-    $("locale-missing").textContent = has ? `This tab needs meeting counts and child poverty figures, which aren't available for ${current.name}.`
+    const lack = [[cmpFor(current).by, "meeting counts"], [cmpFor(current).metric, "child poverty figures"]]
+      .filter(([c]) => !current.numeric.has(c)).map(([, l]) => l).join(" and ");
+    $("locale-missing").textContent = has ? `This tab needs ${lack}, which aren't available for ${current.name}.`
       : "This tab needs a “Locale” column in the data.";
     $("locale-missing").hidden = ok;
     $("locale-content").hidden = !ok;
