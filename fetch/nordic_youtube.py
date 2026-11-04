@@ -91,9 +91,10 @@ def run(cc, outdir):
             out = [r["District ID"], name, "", "", "", "", "", ""]
             try:
                 chans = {}
-                for e in ytdlp(f"ytsearch15:{c['q'].format(' '.join(names(name)))}").get("entries") or []:
-                    if e.get("channel_url") and e.get("channel"):
-                        chans[e["channel_url"]] = e["channel"]
+                for q in [c["q"]] + [x for x in os.environ.get(f"EXTRA_Q_{cc}", "").split("|") if x]:
+                    for e in ytdlp(f"ytsearch15:{q.format(' '.join(names(name)))}").get("entries") or []:
+                        if e.get("channel_url") and e.get("channel"):
+                            chans[e["channel_url"]] = e["channel"]
                 exact = lambda ch: any(all(w in words(ch) for w in words(n)) for n in names(name))
                 pick = sorted([(u, ch) for u, ch in chans.items() if is_channel_for(cc, name, ch)], key=lambda x: not exact(x[1]))
                 if pick:
