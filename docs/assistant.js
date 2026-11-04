@@ -7,13 +7,14 @@
   // Canadian boards use low income for ages 0-17 (a different measure; never mixed with US rows).
   const CA_POV = "Percentage of Children Ages 0-17 in Low Income";
   const METRICS = {
-    poverty: { col: POV, caCol: CA_POV, label: "child poverty rate", caLabel: "child low-income rate (ages 0–17)", fmt: (v) => `${v.toFixed(1)}%` },
+    poverty: { col: POV, caCol: CA_POV, ukCol: "Percentage of Children Under 16 in Low Income", label: "child poverty rate", caLabel: "child low-income rate (ages 0–17)", fmt: (v) => `${v.toFixed(1)}%` },
     meetings: { col: MEET, label: "available board meetings", fmt: (v) => v.toLocaleString() },
     enrollment: { col: "Enrollment", label: "enrollment", fmt: (v) => `${v.toLocaleString()} students` },
-    children: { col: "Children Ages 5-17", caCol: "Children Ages 0-17", label: "children ages 5–17", caLabel: "children ages 0–17", fmt: (v) => v.toLocaleString() }
+    children: { col: "Children Ages 5-17", caCol: "Children Ages 0-17", ukCol: "Children Under 16", label: "children ages 5–17", caLabel: "children ages 0–17", fmt: (v) => v.toLocaleString() }
   };
-  const val = (r, m) => num(r[r._ca && m.caCol ? m.caCol : m.col]);
-  const povOf = (r) => num(r[r._ca ? CA_POV : POV]);
+  const val = (r, m) => num(r[r._ca && m.caCol ? m.caCol : r._uk && m.ukCol ? m.ukCol : (r._ie || r._fr) && m.col === POV ? "Unemployment rate (stand-in for poverty)" : m.col]);
+  const UK_POV = "Percentage of Children Under 16 in Low Income";
+  const povOf = (r) => num(r[r._ca ? CA_POV : r._uk ? UK_POV : (r._ie || r._fr) ? "Unemployment rate (stand-in for poverty)" : POV]);
   const EXAMPLES = [
     "What is the poverty rate in Austin ISD?",
     "Which districts in Ohio have the most meetings?",
@@ -35,15 +36,17 @@
   // ---- data -------------------------------------------------------------------------------
   let all = [], states = {};   // all rows (states, territories, Canada); place key -> full name
   // Place keys: US state codes ("OH") and Canadian provinces ("CA:ON").
-  const inPlace = (r, key) => (key.startsWith("CA:") ? r._ca && r.Province === states[key] : r.State === key);
+  // Other countries' places: "CA:ON", "UK:S" (each data set's groups); US states by code.
+  const inPlace = (r, key) => (key.includes(":") ? r._country === key.split(":")[0] && r._group === states[key] : r.State === key);
   function data() {
     if (all.length || !window.SiteData) return all.length > 0;
     const { datasets, config } = window.SiteData;
     states = { ...config.perState.names };
     datasets.forEach((ds) => {
-      if (ds.country === "CA") Object.entries(ds.groups.names).forEach(([k, n]) => { states[`CA:${k}`] = n; });
-      ds.rows.forEach((r) => all.push({ ...r, _ca: ds.country === "CA", _place: r.State || r.Territory || r.Province || "",
-        _terr: !ds.country && !r.State, _fr: ds.country === "FR" }));
+      if (ds.country && ds.groups) Object.entries(ds.groups.names).forEach(([k, n]) => { states[`${ds.country}:${k}`] = n; });
+      ds.rows.forEach((r) => all.push({ ...r, _ca: ds.country === "CA", _uk: ds.country === "UK", _country: ds.country,
+        _group: ds.groups ? r[ds.groups.column] : "", _place: r.State || r.Territory || r.Province || r.Nation || r.Region || "",
+        _terr: !ds.country && !r.State, _fr: ds.country === "FR", _ie: ds.country === "IE" }));
     });
     return true;
   }
@@ -74,7 +77,7 @@
   function findMetric(q) {
     const s = q.toLowerCase();
     if (/meeting|recorded|video|livestream/.test(s)) return "meetings";
-    if (/poverty|poor|low.income/.test(s)) return "poverty";
+    if (/poverty|poor|low.income|unemploy/.test(s)) return "poverty";
     if (/enrol|students|largest|biggest|smallest|size/.test(s)) return "enrollment";
     if (/children|kids|population/.test(s)) return "children";
     return null;
@@ -106,8 +109,10 @@
     else if (/canad/i.test(q)) { rows = all.filter((r) => r._ca); label = "Canada"; }
     else if (/territor/i.test(q)) { rows = all.filter((r) => r._terr); label = "the U.S. territories"; }
     else if (/saint.pierre|miquelon/i.test(q)) { rows = all.filter((r) => r._fr); label = "Saint-Pierre-et-Miquelon"; }
-    else rows = all.filter((r) => !r._terr && !r._ca && !r._fr);
-    const unit = rows.length && rows.every((r) => r._ca) ? "boards" : "districts";
+    else if (/\b(uk|united kingdom|britain|british)\b/i.test(q)) { rows = all.filter((r) => r._uk); label = "the United Kingdom"; }
+    else if (/\b(ireland|irish|etbs?)\b/i.test(q) && !/northern ireland/i.test(q)) { rows = all.filter((r) => r._ie); label = "Ireland"; }
+    else rows = all.filter((r) => !r._terr && !r._ca && !r._fr && !r._uk && !r._ie);
+    const unit = rows.length && rows.every((r) => r._ca || r._ie) ? "boards" : rows.length && rows.every((r) => r._uk) ? "councils" : "districts";
     const locale = findLocale(q);
     if (locale && unit === "districts") { rows = rows.filter((r) => r.Locale === locale); label = `${locale.toLowerCase()} districts in ${label}`; }
     else label = `${unit} in ${label}`;
@@ -148,7 +153,7 @@
     const { rows, label } = scopeRows(stateList, q);
     const list = rows.filter((r) => !isNaN(val(r, m)))
       .sort((a, b) => (val(a, m) - val(b, m)) * (low ? 1 : -1)).slice(0, n);
-    const mLabel = rows.length && rows[0]._ca && m.caLabel ? m.caLabel : m.label;
+    const mLabel = rows.length && rows[0]._ca && m.caLabel ? m.caLabel : rows.length && (rows[0]._ie || rows[0]._fr) && metricKey === "poverty" ? "unemployment rate (stand-in for poverty)" : m.label;
     if (!list.length) return `I couldn't find any ${esc(label)} with a ${mLabel}${rows.some((r) => r._ca) && metricKey === "enrollment" ? " (a few Canadian boards have no enrollment figure)" : ""}.`;
     if (metricKey === "meetings" && !low && num(list[0][MEET]) === 0) return `None of the ${esc(label)} have available board meetings on record.`;
     return `<p>${low ? "Lowest" : "Highest"} ${mLabel} among ${esc(label)}:</p><ol>` +

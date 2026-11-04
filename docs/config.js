@@ -33,8 +33,8 @@ window.SITE_CONFIG = {
       },
       textColumns: ["District ID", "Enrollment year"],
       sizeNote: "Canada's data has no enrollment figures, so boards can't be grouped by size.",
-      sizeYearNote: "Boards are grouped by student enrollment from each province's latest published figures (see the “Enrollment year” column: mostly 2024–25 or 2025–26; Quebec September 2022; Saskatchewan September 30, 2024). A few boards' figures come from other sources and are noted in the “Enrollment note” column (the Northwest Territories' are full-time-equivalent grades 1–12). PEI's French board and the Yukon First Nation School Board have no figure yet.",
-      note: "{rows} Canadian school boards and school service centres in every province and territory. Canada has no site like CivicSearch, so meeting counts are the board meetings each board has posted on its own YouTube channel (meetings found for {withMeetings} boards; the rest show 0, which can also mean the board streams elsewhere). Low income is Statistics Canada's after-tax low-income measure (LIM-AT) for children ages 0–17 from the 2021 Census (2020 incomes), worked out for each board from the census subdivisions inside its border; see the “How poverty was calculated” column. These figures aren't comparable with the US child poverty rates. Enrollment comes from each province's latest published figures, with a few from other sources (see the “Enrollment note” column); none yet for PEI's French board or the Yukon First Nation School Board.",
+      sizeYearNote: "Boards are grouped by student enrollment from each province's latest published figures (see the “Enrollment year” column: mostly 2024–25 or 2025–26; Quebec September 2022; Saskatchewan September 30, 2024). A few boards' figures come from other sources and are noted in the “Enrollment note” column (the Northwest Territories' are full-time-equivalent grades 1–12). The Yukon First Nation School Board's figure covers 7 of its 11 schools, so it undercounts.",
+      note: "{rows} Canadian school boards and school service centres in every province and territory. Canada has no site like CivicSearch, so meeting counts are the board meetings each board has posted on its own YouTube channel (meetings found for {withMeetings} boards; the rest show 0, which can also mean the board streams elsewhere). Low income is Statistics Canada's after-tax low-income measure (LIM-AT) for children ages 0–17 from the 2021 Census (2020 incomes), worked out for each board from the census subdivisions inside its border; see the “How poverty was calculated” column. These figures aren't comparable with the US child poverty rates. Enrollment comes from each province's latest published figures, with a few from other sources (see the “Enrollment note” column); the Yukon First Nation School Board's covers only 7 of its 11 schools.",
       footer: "Canadian boards, borders and low-income figures as built in November 2026. Sources are listed on the Sources tab." },
     // Saint-Pierre-et-Miquelon (France): its own button. No elected school board, no child poverty figure.
     { name: "Saint-Pierre-et-Miquelon (France)", button: "Saint-Pierre-et-Miquelon", file: "data/spm.csv", country: "FR",
@@ -44,20 +44,47 @@ window.SITE_CONFIG = {
       compare: { title: "Unemployment (stand-in for poverty): with vs. without meetings", by: "Available Board Meetings",
         metric: "Unemployment rate (stand-in for poverty)", withLabel: "With 1+ meetings", withoutLabel: "With no meetings" },
       note: "Saint-Pierre-et-Miquelon, a French overseas collectivity next to Newfoundland. It has no elected school board: its schools are run by the French state's education office (Service de l'Éducation nationale), which reports to the Académie de Normandie and holds no public meetings. As a stand-in, like Puerto Rico's, the meeting count is the official sessions of the elected Territorial Council (Conseil territorial): at least 12 from January 2025 to October 2026, found from the dates on the deliberations it publishes in its official gazette; these are written records, not recordings, so they aren't comparable with CivicSearch's counts. Enrollment is from France's Ministry of Education (start of the 2024 school year, public and private schools under contract). No child poverty rate is published for the archipelago, so its unemployment rate stands in: 8.7% (2015 estimate, CIA World Factbook), which isn't comparable with the child poverty rates elsewhere on this site.",
-      footer: "Saint-Pierre-et-Miquelon as of November 2026. Sources are listed on the Sources tab." }
+      footer: "Saint-Pierre-et-Miquelon as of November 2026. Sources are listed on the Sources tab." },
+    // United Kingdom: its own button and nations. Child poverty is DWP's relative low income (children under 16).
+    { name: "United Kingdom", file: "data/uk.csv", country: "UK", recordLabel: "Councils", textColumns: ["District ID", "Enrollment year"],
+      groups: { column: "Nation", label: "United Kingdom",
+        names: { E: "England", S: "Scotland", W: "Wales", N: "Northern Ireland" } },
+      chart: { type: "scatter", x: "Percentage of Children Under 16 in Low Income", y: "Available Board Meetings" },
+      compare: {
+        title: "Child low income: councils with vs. without meetings found",
+        by: "Available Board Meetings", metric: "Percentage of Children Under 16 in Low Income",
+        withLabel: "With 1+ meetings found", withoutLabel: "With no meetings found"
+      },
+      localeNote: "Councils are grouped by an estimated locale (see below).",
+      localeDef: "Locales are estimates from population density (children counted in the census, divided by their share of the population, over land area): urban 2,000+ people per km², suburban 500–2,000, mixed town and country 100–500, rural under 100. They aren't the same as the US or Canadian locales.",
+      sizeYearNote: "Councils are grouped by pupils in state-funded schools: England January 2026 (register of schools), Scotland September 2025, Wales January 2025, Northern Ireland October 2025.",
+      note: "{rows} UK education authorities: England's 153 upper-tier councils (counties, unitary authorities, metropolitan and London boroughs), Scotland's 32 and Wales's 22 councils, and Northern Ireland's Education Authority. The UK has no elected school boards; these councils (and Northern Ireland's Education Authority) run state schools, and their education or children's services committees are the closest thing. Child low income is the Department for Work and Pensions' share of children under 16 in relative low income before housing costs, financial year ending 2025, which isn't the same measure as the US or Canadian rates. Meetings are recordings of the council's education, schools or children's committee meetings (including its Schools Forum) on its own YouTube channel, found for {withMeetings} councils; many councils webcast on their own sites instead, which weren't counted, so 0 can also mean that.",
+      footer: "UK education authorities as of November 2026. Sources are listed on the Sources tab." },
+    // Ireland: its own button. No local child poverty rate, so Census 2022 unemployment stands in.
+    { name: "Ireland", file: "data/ireland.csv", country: "IE", recordLabel: "Boards", textColumns: ["District ID"],
+      chart: { type: "bar", x: "District", y: "Unemployment rate (stand-in for poverty)" },
+      compare: { title: "Unemployment (stand-in for poverty): boards with vs. without meetings found", by: "Available Board Meetings",
+        metric: "Unemployment rate (stand-in for poverty)", withLabel: "With 1+ meetings found", withoutLabel: "With no meetings found" },
+      sizeNote: "Enrollment by Education and Training Board isn't published openly, so boards can't be grouped by size.",
+      localeNote: "Boards are grouped by an estimated locale (see below).",
+      localeDef: "Locales are estimates from population density (children counted in the census, divided by their share of the population, over land area): urban 2,000+ people per km², suburban 500–2,000, mixed town and country 100–500, rural under 100. They aren't the same as the US or Canadian locales.",
+      note: "Ireland's 16 Education and Training Boards (ETBs), the elected-and-appointed local boards that run about a quarter of post-primary schools (community colleges and community schools), Community National Schools and further education. Each covers one or more council areas; most primary and secondary schools are run by other patron bodies, so ETBs aren't a full equivalent of a US school board. Ireland publishes no local child poverty rate, so the unemployment rate from Census 2022 stands in for it (people looking for a first job or unemployed, out of everyone working or looking for work); it isn't comparable with the child poverty rates elsewhere on this site. No ETB posts its board meetings on YouTube (their channels show school and course videos); ETBs publish board minutes on their own websites instead, which weren't counted.",
+      footer: "Irish Education and Training Boards as of November 2026. Sources are listed on the Sources tab." }
   ],
   // "All" button: every US district, territory school system and Canadian board together.
   combined: {
-    name: "All: United States, U.S. territories, Canada and Saint-Pierre-et-Miquelon", button: "All", recordLabel: "Districts and boards",
+    name: "All: United States, U.S. territories, Canada, Saint-Pierre-et-Miquelon, the United Kingdom and Ireland", button: "All", recordLabel: "Districts and boards",
     textColumns: ["District ID"], metric: "Child poverty rate",
     measures: {
       us: "Children 5–17 in poverty (Census SAIPE 2024)",
       territories: "Children 5–17 in poverty (Census; 2020 Census for all but Puerto Rico)",
       canada: "Children 0–17 in low income (Statistics Canada LIM-AT, 2021 Census)",
+      uk: "Children under 16 in relative low income before housing costs (DWP, financial year ending 2025)",
+      ireland: "Unemployment rate, Census 2022 (CSO): a stand-in, since no local child poverty rate is published in Ireland",
       france: "Unemployment rate, 2015 estimate (CIA World Factbook): a stand-in, since no poverty rate is published for Saint-Pierre-et-Miquelon"
     },
     chart: { type: "scatter", x: "Child poverty rate", y: "Available Board Meetings" },
-    sizeYearNote: "Districts and boards are grouped by student enrollment: US districts 2023 (NCES); Canadian boards each province's latest published figures (none yet for PEI's French board or the Yukon First Nation School Board).",
+    sizeYearNote: "Districts and boards are grouped by student enrollment: US districts 2023 (NCES); Canadian boards each province's latest published figures (a few from other sources, noted in the Enrollment note column).",
     compare: {
       title: "Child poverty: with vs. without available board meetings (all countries)",
       by: "Available Board Meetings", metric: "Child poverty rate",

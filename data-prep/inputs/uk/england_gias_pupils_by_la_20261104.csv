@@ -1,0 +1,154 @@
+LA (code),LA (name),NumberOfPupils
+201,City of London,229.0
+202,Camden,20103.0
+203,Greenwich,43492.0
+204,Hackney,31800.0
+205,Hammersmith and Fulham,19921.0
+206,Islington,22316.0
+207,Kensington and Chelsea,13092.0
+208,Lambeth,34235.0
+209,Lewisham,36969.0
+210,Southwark,40771.0
+211,Tower Hamlets,44112.0
+212,Wandsworth,30691.0
+213,Westminster,20046.0
+301,Barking and Dagenham,45968.0
+302,Barnet,61352.0
+303,Bexley,41975.0
+304,Brent,47566.0
+305,Bromley,53052.0
+306,Croydon,55306.0
+307,Ealing,51167.0
+308,Enfield,53826.0
+309,Haringey,35859.0
+310,Harrow,38594.0
+311,Havering,43302.0
+312,Hillingdon,50844.0
+313,Hounslow,44712.0
+314,Kingston upon Thames,26588.0
+315,Merton,26877.0
+316,Newham,61272.0
+317,Redbridge,56501.0
+318,Richmond upon Thames,28673.0
+319,Sutton,40745.0
+320,Waltham Forest,40806.0
+330,Birmingham,199937.0
+331,Coventry,60906.0
+332,Dudley,47458.0
+333,Sandwell,62352.0
+334,Solihull,39021.0
+335,Walsall,53421.0
+336,Wolverhampton,50261.0
+340,Knowsley,21717.0
+341,Liverpool,75728.0
+342,St. Helens,25652.0
+343,Sefton,40127.0
+344,Wirral,49406.0
+350,Bolton,53721.0
+351,Bury,26491.0
+352,Manchester,91422.0
+353,Oldham,44101.0
+354,Rochdale,37247.0
+355,Salford,37901.0
+356,Stockport,42542.0
+357,Tameside,35749.0
+358,Trafford,43152.0
+359,Wigan,48363.0
+370,Barnsley,34885.0
+371,Doncaster,48462.0
+372,Rotherham,44886.0
+373,Sheffield,80645.0
+380,Bradford,96691.0
+381,Calderdale,35060.0
+382,Kirklees,64132.0
+383,Leeds,130424.0
+384,Wakefield,54139.0
+390,Gateshead,27005.0
+391,Newcastle upon Tyne,42677.0
+392,North Tyneside,29495.0
+393,South Tyneside,22753.0
+394,Sunderland,41218.0
+420,Isles of Scilly,243.0
+800,Bath and North East Somerset,27071.0
+801,"Bristol, City of",62955.0
+802,North Somerset,31388.0
+803,South Gloucestershire,40749.0
+805,Hartlepool,14800.0
+806,Middlesbrough,25335.0
+807,Redcar and Cleveland,20415.0
+808,Stockton-on-Tees,30055.0
+810,"Kingston upon Hull, City of",41921.0
+811,East Riding of Yorkshire,44407.0
+812,North East Lincolnshire,22036.0
+813,North Lincolnshire,23778.0
+815,North Yorkshire,79839.0
+816,York,24701.0
+821,Luton,40052.0
+822,Bedford,31133.0
+823,Central Bedfordshire,48975.0
+825,Buckinghamshire,89254.0
+826,Milton Keynes,51034.0
+830,Derbyshire,105625.0
+831,Derby,46121.0
+838,Dorset,44901.0
+839,"Bournemouth, Christchurch and Poole",51585.0
+840,County Durham,72206.0
+841,Darlington,16037.0
+845,East Sussex,65362.0
+846,Brighton and Hove,28907.0
+850,Hampshire,181297.0
+851,Portsmouth,27696.0
+852,Southampton,33868.0
+855,Leicestershire,102283.0
+856,Leicester,59579.0
+857,Rutland,5978.0
+860,Staffordshire,126666.0
+861,Stoke-on-Trent,41194.0
+865,Wiltshire,69354.0
+866,Swindon,36030.0
+867,Bracknell Forest,18962.0
+868,Windsor and Maidenhead,22974.0
+869,West Berkshire,24731.0
+870,Reading,24277.0
+871,Slough,33758.0
+872,Wokingham,29381.0
+873,Cambridgeshire,91255.0
+874,Peterborough,40387.0
+876,Halton,18375.0
+877,Warrington,31467.0
+878,Devon,97779.0
+879,Plymouth,37139.0
+880,Torbay,19465.0
+881,Essex,222706.0
+882,Southend-on-Sea,31227.0
+883,Thurrock,31216.0
+884,"Herefordshire, County of",23437.0
+885,Worcestershire,81676.0
+886,Kent,249389.0
+887,Medway,49649.0
+888,Lancashire,175974.0
+889,Blackburn with Darwen,27826.0
+890,Blackpool,19575.0
+891,Nottinghamshire,125284.0
+892,Nottingham,48624.0
+893,Shropshire,39652.0
+894,Telford and Wrekin,29292.0
+895,Cheshire East,57234.0
+896,Cheshire West and Chester,50097.0
+908,Cornwall,71669.0
+916,Gloucestershire,93836.0
+919,Hertfordshire,200550.0
+921,Isle of Wight,15753.0
+925,Lincolnshire,106926.0
+926,Norfolk,117506.0
+929,Northumberland,42687.0
+931,Oxfordshire,101500.0
+933,Somerset,69803.0
+935,Suffolk,102162.0
+936,Surrey,160531.0
+937,Warwickshire,90623.0
+938,West Sussex,117639.0
+940,North Northamptonshire,56186.0
+941,West Northamptonshire,67958.0
+942,Cumberland,38864.0
+943,Westmorland and Furness,30186.0

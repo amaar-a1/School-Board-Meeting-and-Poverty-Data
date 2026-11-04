@@ -75,18 +75,19 @@
     const ps = cfg.perState, out = [];
     const pct = (v) => (String(v ?? "").trim() === "" ? "" : `${toNumber(v).toFixed(2)}%`);
     datasets.forEach((d) => d.rows.forEach((r) => {
-      const ca = d.country === "CA", fr = d.country === "FR", terr = !!d.state;
+      const ca = d.country === "CA", fr = d.country === "FR", uk = d.country === "UK", ie = d.country === "IE", terr = !!d.state;
       out.push({
         District: r.District,
-        Country: ca ? "Canada" : fr ? "France (Saint-Pierre-et-Miquelon)" : terr ? "U.S. territories" : "United States",
-        "State or province": ca ? r.Province : (terr || fr) ? r.Territory : (ps.names[r.State] || r.State),
+        Country: ca ? "Canada" : fr ? "France (Saint-Pierre-et-Miquelon)" : uk ? "United Kingdom" : ie ? "Ireland" : terr ? "U.S. territories" : "United States",
+        "State or province": ca ? r.Province : uk ? r.Nation : ie ? r.Region : (terr || fr) ? r.Territory : (ps.names[r.State] || r.State),
         "Available Board Meetings": r["Available Board Meetings"] ?? "",
-        [c.metric]: pct(ca ? r["Percentage of Children Ages 0-17 in Low Income"] : fr ? r["Unemployment rate (stand-in for poverty)"] : r["Percentage of Children Ages 5-17 in Poverty"]),
-        "Poverty measure": ca ? c.measures.canada : fr ? c.measures.france : terr ? c.measures.territories : c.measures.us,
-        Children: ca ? r["Children Ages 0-17"] : r["Children Ages 5-17"],
+        [c.metric]: pct(ca ? r["Percentage of Children Ages 0-17 in Low Income"] : (fr || ie) ? r["Unemployment rate (stand-in for poverty)"]
+          : uk ? r["Percentage of Children Under 16 in Low Income"] : r["Percentage of Children Ages 5-17 in Poverty"]),
+        "Poverty measure": ca ? c.measures.canada : fr ? c.measures.france : uk ? c.measures.uk : ie ? c.measures.ireland : terr ? c.measures.territories : c.measures.us,
+        Children: ca ? r["Children Ages 0-17"] : uk ? r["Children Under 16"] : r["Children Ages 5-17"],
         Enrollment: r.Enrollment ?? "",
         // Canada's locales are estimates, not NCES types, so they stay separate groups here.
-        Locale: ca && r.Locale ? `Canada: ${r.Locale}` : r.Locale ?? "",
+        Locale: r.Locale && (ca || uk || ie) ? `${ca ? "Canada" : uk ? "UK" : "Ireland"}: ${r.Locale}` : r.Locale ?? "",
         "Other Board Meetings": r["Other Board Meetings"] ?? "",   // DC, Hawaiʻi and Vermont boards' own sites
         "District ID": r["District ID"]
       });
@@ -125,8 +126,8 @@
     return (stateCache[abbr] = { ...nat, name, state: abbr, rows, sourcesAs: nat.name, parent: parent || undefined,
       columns: nat.columns.filter((c) => c !== groupCol),
       note: rows.length === 1
-        ? `1 school ${label.replace(/s$/, "")} in ${name}. ${withMeetings ? "Its meeting count is available." : "No meeting count is available, so it shows 0."}`
-        : `${rows.length.toLocaleString()} school ${label} in ${name}. Meeting counts are available for ${withMeetings.toLocaleString()} of them; the rest show 0.` });
+        ? `1 ${nat.country === "UK" ? "" : "school "}${label.replace(/s$/, "")} in ${name}. ${withMeetings ? "Its meeting count is available." : "No meeting count is available, so it shows 0."}`
+        : `${rows.length.toLocaleString()} ${nat.country === "UK" ? "" : "school "}${label} in ${name}. Meeting counts are available for ${withMeetings.toLocaleString()} of them; the rest show 0.` });
   }
 
   // "Data:" row: a button for the national data and a menu with every state.
@@ -256,19 +257,19 @@
 
   // "By locale" tab: the same comparisons as "By district size", grouped by locale. US districts
   // use NCES locale types; Canadian boards an estimate from Statistics Canada population sizes.
-  const US_LOCALES = ["Urban", "Suburban", "Town", "Rural"];
+  const US_LOCALES = ["Urban", "Suburban", "Town", "Mixed", "Rural"];   // "Mixed": UK and Ireland's estimate
   const CA_LOCALES = ["Large urban", "Medium urban", "Small urban", "Rural", "Province-wide"];
   // Shared groups for the US and Canada together: the closest match between NCES types and
   // Canada's estimated sizes.
   const MERGED_LOCALES = [
-    { name: "Urban and suburban", us: ["Urban", "Suburban"], ca: ["Large urban", "Medium urban"] },
-    { name: "Town and small urban", us: ["Town"], ca: ["Small urban"] },
-    { name: "Rural", us: ["Rural"], ca: ["Rural"] },
+    { name: "Urban and suburban", us: ["Urban", "Suburban"], ca: ["Large urban", "Medium urban"], other: ["Urban", "Suburban"] },
+    { name: "Town and small urban", us: ["Town"], ca: ["Small urban"], other: ["Mixed"] },
+    { name: "Rural", us: ["Rural"], ca: ["Rural"], other: ["Rural"] },
     { name: "Province-wide (Canada)", us: [], ca: ["Province-wide"] }
   ];
   function mergedLocale(v) {
-    const s = String(v || "").trim(), ca = s.startsWith("Canada: "), name = s.replace(/^Canada: /, "");
-    const g = MERGED_LOCALES.find((x) => (ca ? x.ca : x.us).includes(name));
+    const s = String(v || "").trim(), ca = s.startsWith("Canada: "), other = /^(UK|Ireland): /.test(s), name = s.replace(/^(Canada|UK|Ireland): /, "");
+    const g = MERGED_LOCALES.find((x) => (ca ? x.ca : other ? (x.other || []) : x.us).includes(name));
     return g ? g.name : "";
   }
 
@@ -276,7 +277,8 @@
     const seen = new Set(rows.map((r) => String(r.Locale || "").trim()).filter(Boolean));
     // Canada on its own: largest to smallest. In "All", Canada's groups are labelled "Canada: …".
     const caOnly = seen.has("Large urban") && !seen.has("Urban");
-    const order = (caOnly ? CA_LOCALES : [...US_LOCALES, ...CA_LOCALES.map((g) => `Canada: ${g}`)]).filter((g) => seen.has(g));
+    const order = (caOnly ? CA_LOCALES : [...US_LOCALES, ...CA_LOCALES.map((g) => `Canada: ${g}`),
+      ...["UK", "Ireland"].flatMap((c) => ["Urban", "Suburban", "Mixed", "Rural"].map((g) => `${c}: ${g}`))]).filter((g) => seen.has(g));
     return [...order, ...[...seen].filter((g) => !order.includes(g)).sort()];
   }
 
@@ -300,12 +302,13 @@
     const all = sizeStats(current.rows.filter((r) => String(r.Locale || "").trim()), denom);
     const left = current.rows.filter((r) => !String(r.Locale || "").trim()).length;
     const ca = current.country === "CA" || (current.parent && current.parent.country === "CA");
-    $("locale-note").textContent = (current.localeNote ? current.localeNote : ca ? "Boards are grouped by an estimated locale (see below)." : current.combined
+    $("locale-note").textContent = ((current.localeNote || (current.parent && current.parent.localeNote)) ? (current.localeNote || current.parent.localeNote) : ca ? "Boards are grouped by an estimated locale (see below)." : current.combined
       ? "US districts are grouped by NCES locale (2023); Canadian boards by an estimated locale (see below)."
       : "Districts are grouped by NCES locale (2023): Urban (a city), Suburban, Town or Rural.") +
       (left ? ` ${left.toLocaleString()} ${label} without a locale are left out of this tab.` : "");
-    $("locale-def").textContent = ca || current.combined
-      ? "Canada's locales are estimates, after Statistics Canada's population centre sizes: each census subdivision (municipality) with 100,000+ people is large urban; one with at least 150 people per km² (the OECD's rural cutoff) is medium urban (30,000–99,999 people) or small urban (1,000–29,999); the rest are rural. A board takes the locale where most of its children live; boards serving a whole province or territory are “Province-wide”. They aren't the same as the US NCES locales."
+    $("locale-def").textContent = (current.localeDef || (current.parent && current.parent.localeDef)) ? (current.localeDef || current.parent.localeDef)
+      : ca || current.combined
+      ? "Canada's locales are estimates, after Statistics Canada's population centre sizes: each census subdivision (municipality) with 100,000+ people is large urban; one with at least 150 people per km² (the OECD's rural cutoff) is medium urban (30,000–99,999 people) or small urban (1,000–29,999); the rest are rural. A board takes the locale where most of its children live; boards serving a whole province or territory are “Province-wide”. They aren't the same as the US NCES locales." + (current.combined ? " UK and Irish locales are estimates from population density (urban 2,000+ people per km², suburban 500–2,000, mixed 100–500, rural under 100)." : "")
       : "";
     const cols = ["Locale", label[0].toUpperCase() + label.slice(1), "With meetings", "Avg meetings", "Poverty: with meetings", "Poverty: without",
       `Meetings per 10,000 ${per}`, "Meetings per poverty point"];
@@ -871,31 +874,33 @@
   function renderRules() {
     const us = window.STATE_RULES;
     if (!us) return;
-    const ca = us.canada, fr = us.france;
+    const ca = us.canada, fr = us.france, ukr = us.uk, ier = us.ireland;
     const country = current && (current.country || (current.parent && current.parent.country));
-    const isCA = country === "CA", isFR = country === "FR";
+    const isCA = country === "CA", isFR = country === "FR", isUK = country === "UK", isIE = country === "IE";
     const both = current && current.combined;
-    const laws = isCA ? ca.laws : isFR ? fr.laws : both ? [...us.laws, ...ca.laws, ...fr.laws] : us.laws;
+    const laws = isCA ? ca.laws : isFR ? fr.laws : isUK ? ukr.laws : isIE ? ier.laws : both ? [...us.laws, ...ca.laws, ...fr.laws, ...ukr.laws, ...ier.laws] : us.laws;
     $("rules-title").textContent = isCA ? "Province rules for recording or streaming school board meetings (Canada)"
       : isFR ? "Rules for recording or publishing meetings (Saint-Pierre-et-Miquelon)"
+      : isUK ? "Rules for recording or broadcasting council meetings (United Kingdom)"
+      : isIE ? "Rules for Education and Training Board meetings (Ireland)"
       : both ? "State and province rules for recording or streaming school board meetings (US, Canada and Saint-Pierre-et-Miquelon)"
       : "State rules for recording or streaming school board meetings";
-    $("rules-place").textContent = isCA ? "Province" : isFR ? "Territory" : both ? "State, province or territory" : "State";
+    $("rules-place").textContent = isCA ? "Province" : isFR ? "Territory" : isUK ? "Nation" : isIE ? "Country" : both ? "State, province or territory" : "State";
     $("rules-intro").textContent = isCA
       ? `No province requires school boards to record or stream meetings; ${laws.length} related rules in ${new Set(laws.map((x) => x.state)).size} provinces, checked ${ca.checked}.`
-      : isFR ? `Checked ${fr.checked}.`
+      : isFR ? `Checked ${fr.checked}.` : isUK ? `Checked ${ukr.checked}.` : isIE ? `Checked ${ier.checked}.`
       : `${us.laws.length} rules in ${new Set(us.laws.map((x) => x.state)).size} states, checked ${us.checked}` +
         (both ? `; ${ca.laws.length} related rules in Canadian provinces, checked ${ca.checked}; Saint-Pierre-et-Miquelon checked ${fr.checked}` : "") + ". Laws change often.";
-    $("rules-us-note").hidden = isCA || isFR;
-    $("rules-ca-note").hidden = !isCA && !isFR && !both;
-    $("rules-ca-note").textContent = isFR ? fr.note : both ? `${ca.note} ${fr.note}` : ca.note;
+    $("rules-us-note").hidden = isCA || isFR || isUK || isIE;
+    $("rules-ca-note").hidden = !isCA && !isFR && !isUK && !isIE && !both;
+    $("rules-ca-note").textContent = isFR ? fr.note : isUK ? ukr.note : isIE ? ier.note : both ? `${ca.note} ${fr.note} ${ukr.note} ${ier.note}` : ca.note;
     const body = $("rules-table").tBodies[0];
     body.innerHTML = "";
     laws.forEach((x) => {
       const tr = body.insertRow();
       [x.state, x.covers, x.threshold || "None (all boards)", x.rule].forEach((v) => { tr.insertCell().textContent = v; });
     });
-    $("rules-proposed-card").hidden = isCA || isFR;
+    $("rules-proposed-card").hidden = isCA || isFR || isUK || isIE;
     const ul = $("rules-proposed");
     ul.innerHTML = "";
     us.proposed.forEach((x) => {
@@ -905,7 +910,7 @@
       li.append(b, x.note);
       ul.appendChild(li);
     });
-    const label = isCA ? "Province rules" : isFR ? "Rules" : both ? "State & province rules" : "State rules";
+    const label = isCA ? "Province rules" : (isFR || isUK || isIE) ? "Rules" : both ? "State & province rules" : "State rules";
     document.querySelectorAll('[data-view-tab="rules"], [data-view-link="rules"]').forEach((el) => { el.textContent = label; });
   }
 
