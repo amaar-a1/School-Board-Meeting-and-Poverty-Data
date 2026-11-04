@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+      default-src 'none';
+      base-uri 'none';
+      object-src 'none';
+      font-src 'self';
+      script-src 'self' https://code.highcharts.com/12.5.0/lib/jspdf.js https://code.highcharts.com/12.5.0/lib/svg2pdf.js;
+      style-src 'self' 'sha256-IO+Y1yEBEpZphZrJXe5us6Rbf6kFWpmO1AwABrsU7rA=' 'sha256-1y5QuuM0ntDrCXrvhcsMpVtTYJn5oAfrUZz63lyc+oA=';
+      media-src 'self' https://www-genesis.destatis.de/genesis/misc/ https://www-genesis.destatis.de/genesis-old/misc/ blob:;
+      img-src 'self' https://www-genesis.destatis.de/genesis/misc/ https://www-genesis.destatis.de/genesis-old/misc/ blob: data:;
+      connect-src 'self' https://www-genesis.destatis.de http://genesis-test-web01-neu https://ergebnisse.prodzen.de;
+      child-src 'none';
+      require-trusted-types-for 'script'; 
+      trusted-types react-dom highcharts gor default 'allow-duplicates'"
+    />
+
+    <meta
+      name="description"
+      content="GENESIS-Online ist eine Datenbank, die tief gegliederte Ergebnisse der amtlichen Statistik enthält. Sie wird kontinuierlich ausgebaut. Der Tabellenabruf erfolgt unentgeltlich und kann variabel auf den individuellen Bedarf angepasst werden. Die Abspeicherung der Ergebnisse ist in verschiedenen Formaten möglich."
+    />
+    <meta name="referrer" content="origin" />
+    <link rel="stylesheet" href="/datenbank/online/custom.css" />
+    <link rel="icon" href="/datenbank/online/favicon.ico" />
+    <meta name="google-site-verification" content="caIlWtGfQf8FlKFmI5t6geZsLkO5JA24QMFE1wlcztU" />
+    <style>
+      body {
+        overflow: hidden;
+        display: none;
+      }
+    </style>
+    <title>GENESIS-Online</title>
+    <script type="module" crossorigin src="/datenbank/online/assets/index-Sn8tL7Gs.js"></script>
+    <link rel="modulepreload" crossorigin href="/datenbank/online/assets/src-B77i94xi.js">
+    <link rel="stylesheet" crossorigin href="/datenbank/online/assets/src-Qw6N7NgU.css">
+    <link rel="stylesheet" crossorigin href="/datenbank/online/assets/index-Bj8GOjXn.css">
+  </head>
+
+  <body class="gor-webapp">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div id="searchInputRoot"></div>
+    <div id="modalsRoot"></div>
+  </body>
+</html>
