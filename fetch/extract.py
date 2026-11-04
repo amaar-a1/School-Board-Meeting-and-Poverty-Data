@@ -1,36 +1,38 @@
-# Temporary: Saint-Pierre-et-Miquelon (education statistics, outline, Territorial Council videos).
-import json, os, subprocess, sys, time, urllib.request
-OUT = "fetch/out/spm"; os.makedirs(OUT, exist_ok=True)
+# Temporary: Saint-Pierre-et-Miquelon outline (Natural Earth) and Territorial Council session minutes.
+import json, os, re, time, urllib.parse, urllib.request
+OUT = "fetch/out/spm2"; os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "school-board-research-script (github.com/amaar-a1)"}
 log = []
-def get(url, name):
-    time.sleep(3)
-    try:
-        with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=180) as r:
-            data = r.read()
-        open(f"{OUT}/{name}", "wb").write(data); log.append(f"ok {len(data)} {url}")
-    except Exception as e:
-        log.append(f"FAIL {url}: {e}")
-get("https://www.education.gouv.fr/sites/default/files/2025-07/rers2025-chapitre-11-441744.pdf", "rers2025_ch11.pdf")
-get("https://github.com/wmgeolab/geoBoundaries/raw/main/releaseData/gbOpen/SPM/ADM0/geoBoundaries-SPM-ADM0_simplified.geojson", "spm_adm0.geojson")
-get("https://github.com/wmgeolab/geoBoundaries/raw/main/releaseData/gbOpen/SPM/ADM0/geoBoundaries-SPM-ADM0.geojson", "spm_adm0_full.geojson")
-subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-U", "yt-dlp"], check=True)
-def ytdlp(*a):
-    r = subprocess.run([sys.executable, "-m", "yt_dlp", "--flat-playlist", "-J", "--no-warnings", *a], capture_output=True, text=True, timeout=600)
-    if r.returncode:
-        log.append("yt-dlp error: " + r.stderr[-300:]); return {}
-    return json.loads(r.stdout)
-found = {}
-for q in ["Conseil territorial Saint-Pierre-et-Miquelon séance plénière", "Collectivité territoriale Saint-Pierre-et-Miquelon session conseil territorial", "SPM conseil territorial séance"]:
-    for e in ytdlp(f"ytsearch20:{q}").get("entries") or []:
-        found.setdefault(e.get("channel_url"), {"channel": e.get("channel"), "titles": []})["titles"].append(e.get("title"))
+def get(url):
     time.sleep(2)
-json.dump(found, open(f"{OUT}/yt_search.json", "w"), indent=1, ensure_ascii=False)
-for url, v in found.items():
-    if url and v["channel"] and any(k in v["channel"].lower() for k in ["collectivit", "territorial", "saint-pierre", "spm"]):
-        vids = []
-        for tab in ("/videos", "/streams"):
-            vids += [{"title": x.get("title"), "id": x.get("id")} for x in (ytdlp(url + tab).get("entries") or [])]
-            time.sleep(2)
-        json.dump({"channel": v["channel"], "url": url, "videos": vids}, open(f"{OUT}/yt_channel_{len(os.listdir(OUT))}.json", "w"), indent=1, ensure_ascii=False)
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=300) as r:
+            data = r.read()
+        log.append(f"ok {len(data)} {url}"); return data
+    except Exception as e:
+        log.append(f"FAIL {url}: {e}"); return None
+d = get("https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_0_map_units.geojson")
+if d:
+    fc = json.loads(d)
+    keep = [f for f in fc["features"] if f["properties"].get("ADM0_A3") == "SPM" or f["properties"].get("GU_A3") == "SPM" or "Pierre" in str(f["properties"].get("NAME", ""))]
+    json.dump({"type": "FeatureCollection", "features": [{"type": "Feature", "properties": {"NAME": k["properties"].get("NAME")}, "geometry": k["geometry"]} for k in keep]}, open(f"{OUT}/spm_outline.geojson", "w"))
+    log.append(f"outline features: {len(keep)}")
+# Territorial Council: minutes (PV) of sessions, from the collectivity's WordPress media library
+pvs = []
+for page in range(1, 11):
+    q = get(f"https://www.spm-ct975.fr/wp-json/wp/v2/media?search=PV&per_page=100&page={page}&_fields=id,date,title,source_url")
+    if not q:
+        break
+    items = json.loads(q)
+    if not items:
+        break
+    pvs += [{"date": i["date"], "title": i["title"]["rendered"], "url": i["source_url"]} for i in items]
+json.dump(pvs, open(f"{OUT}/ct_pv_media.json", "w"), indent=1, ensure_ascii=False)
+h = get("https://www.spm-ct975.fr/")
+if h:
+    open(f"{OUT}/ct_home.html", "wb").write(h)
+    for path in sorted(set(re.findall(rb'href="(https://www\.spm-ct975\.fr/[^"]*(?:seance|deliber|conseil|proces|pv)[^"]*)"', h, re.I)))[:8]:
+        p = get(path.decode())
+        if p:
+            open(f"{OUT}/ct_{re.sub(r'\W+', '_', path.decode())[-60:]}.html", "wb").write(p)
 open(f"{OUT}/log.txt", "w").write("\n".join(log))
