@@ -11,6 +11,10 @@ Municipalities run schools in these countries, so each municipality is the board
 - Pupils: SSB 11980 (2025); Kolada N15835 (F-9, home municipality, 2025); Statistics Finland 133w
   (2025); Statistics Denmark LABY23 (Oct 2025); CBS 85701NED (primary, special and secondary by
   municipality of residence, 2025/26).
+- Meetings: recordings of the municipality's education or children's committee on its own YouTube channel
+  (data-prep/nordic_youtube.py finds the channel; inputs/nordic/youtube/titles.json lists its videos).
+  A title counts only if it names such a committee and a meeting, in the country's language (STRICT
+  below); children's councils, parent meetings and town-hall meetings don't count.
 - Locale (estimated): people per km² from Eurostat's 2023 LAU figures (Finland: children / their share
   of the population, over the municipality's area, since Eurostat's Finnish figures are broken): urban 2,000+ people
   per km², suburban 500-2,000, mixed 100-500, rural under 100.
@@ -55,6 +59,42 @@ def jsonstat(path, region_dim):
     for code, i in idx.items():
         vals = [d["value"][i * n_after + k] for k in range(n_after)]
         out[code] = (lab[code], vals)
+    return out
+
+
+# A title must name a committee (or board) whose name is about schools, education or children.
+STRICT = {
+    "NO": (r"(hoved)?utvalg(et)?|utvalet|komit[eé]", r"oppvekst|skole|utdanning|levek[aå]r|barn og unge|kunnskap"),
+    "SE": (r"n[aä]mnd(en)?s?\b|n[aä]mndens", r"utbildning|bildning|barn|skol|f[oö]rskol|gymnasie"),
+    "FI": (r"lautakun|jaosto|n[aä]mnd", r"sivistys|opetus|kasvatus|koulu|bildning|utbildning"),
+    "DK": (r"udvalg", r"b[øo]rn|skole|uddannelse|dagtilbud"),
+    "NL": (r"commissie", r"onderwijs|jeugd|samenleving|sociaal|welzijn"),
+}
+# Sweden, Finland and the Netherlands also need a word for the meeting itself (videos about a committee don't count).
+MEETW = {"SE": r"sammantr[aä]de|m[oö]te", "FI": r"kokous|sammantr[aä]de", "NL": r"vergadering|\b\d{1,2}[ .-]+(\w+|\d{1,2})[ .-]+20\d\d\b"}   # or a date
+NOT = r"commissiekamer|kinderraad|kindergemeenteraad|jeugdraad|jeugdgemeenteraad|foreldrem[øo]te|folkem[øo]te|informasjonsm[øo]te|kontrollutvalg|f[oö]r[aä]ldram[oö]te|ungebyr[aå]d|kulturskolen|rapport fr[aå]n"
+
+
+def strict_count(cc, titles):
+    unit, topic = (re.compile(x, re.I) for x in STRICT[cc])
+    mw = re.compile(MEETW.get(cc, "."), re.I)
+    keep = [t for t in titles if unit.search(t) and topic.search(t) and mw.search(t) and not re.search(NOT, t, re.I)]
+    return len({re.sub(r"\b(del|osa|deel|part|video)\s*\d+(\s*(av|af|van|/)\s*\d+)?\b|\(\d\)|\d/\d\s*$", "", t, flags=re.I).strip().lower() for t in keep}), keep[:3]
+
+
+def meetings(cc):
+    """{District ID: (count, channel URL, examples)} from the YouTube search and title lists."""
+    f = os.path.join(IN, "youtube", f"{cc}_youtube.csv")
+    tf = os.path.join(IN, "youtube", "titles.json")
+    if not os.path.exists(f):
+        return {}
+    titles = json.load(open(tf, encoding="utf-8")) if os.path.exists(tf) else {}
+    out = {}
+    for r in csv.DictReader(open(f, encoding="utf-8")):
+        if not r["Channel URL"]:
+            continue
+        n, ex = strict_count(cc, titles[r["Channel URL"]]) if r["Channel URL"] in titles else (0, [])
+        out[r["District ID"]] = (n, r["Channel URL"], ex)
     return out
 
 
@@ -151,6 +191,12 @@ def main():
                     tot[v["Regiokenmerken"].strip()] = tot.get(v["Regiokenmerken"].strip(), 0) + v["LeerlingenStudenten_1"]
             for g, n in tot.items():
                 put(code=g, **{"Enrollment": n, "Enrollment year": "2025/26"})
+        meet = meetings(cc)
+        for k, r in rows.items():
+            if r["District ID"] in meet:
+                n, url, ex = meet[r["District ID"]]
+                r["Available Board Meetings"] = n
+                r["Meetings source"] = url
         out = []
         for k, r in rows.items():
             basis = float(r["Enrollment"] or 0) if cc == "DK" else float(r["Children"] or 0)
