@@ -64,5 +64,16 @@ window.STATE_RULES = {
         rule: "Board meetings must be held in public (Education Act). No requirement to record or post meetings; livestreaming is each board's choice." }
     ],
     note: "No Canadian province or territory was found to require school boards to record or livestream their meetings; provinces not listed (British Columbia, Saskatchewan, Manitoba, the Atlantic provinces and the territories) require open meetings and minutes. Citations are on the Sources tab."
+  },
+  // Saint-Pierre-et-Miquelon (France): no school board; the Territorial Council's sessions stand in.
+  france: {
+    checked: "November 4, 2026",
+    laws: [
+      { state: "Saint-Pierre-et-Miquelon", covers: "Territorial Council (Conseil territorial)", threshold: "",
+        rule: "Sessions are public, at least once a quarter; anyone may ask for the deliberations and minutes (procès-verbaux) of public sessions, which the council publishes (Code général des collectivités territoriales, book IV). No requirement to record or stream was found." },
+      { state: "Saint-Pierre-et-Miquelon", covers: "Schools (Service de l'Éducation nationale, French state)", threshold: "",
+        rule: "Schools are run by the French state's education office, which reports to the Académie de Normandie and holds no public meetings." }
+    ],
+    note: "Saint-Pierre-et-Miquelon has no elected school board; its schools are run by the French state."
   }
 };

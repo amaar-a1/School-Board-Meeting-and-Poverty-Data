@@ -43,7 +43,7 @@
     datasets.forEach((ds) => {
       if (ds.country === "CA") Object.entries(ds.groups.names).forEach(([k, n]) => { states[`CA:${k}`] = n; });
       ds.rows.forEach((r) => all.push({ ...r, _ca: ds.country === "CA", _place: r.State || r.Territory || r.Province || "",
-        _terr: !ds.country && !r.State }));
+        _terr: !ds.country && !r.State, _fr: ds.country === "FR" }));
     });
     return true;
   }
@@ -105,7 +105,8 @@
     if (stateList.length === 1) { rows = all.filter((r) => inPlace(r, stateList[0])); label = states[stateList[0]]; }
     else if (/canad/i.test(q)) { rows = all.filter((r) => r._ca); label = "Canada"; }
     else if (/territor/i.test(q)) { rows = all.filter((r) => r._terr); label = "the U.S. territories"; }
-    else rows = all.filter((r) => !r._terr && !r._ca);
+    else if (/saint.pierre|miquelon/i.test(q)) { rows = all.filter((r) => r._fr); label = "Saint-Pierre-et-Miquelon"; }
+    else rows = all.filter((r) => !r._terr && !r._ca && !r._fr);
     const unit = rows.length && rows.every((r) => r._ca) ? "boards" : "districts";
     const locale = findLocale(q);
     if (locale && unit === "districts") { rows = rows.filter((r) => r.Locale === locale); label = `${locale.toLowerCase()} districts in ${label}`; }
@@ -252,6 +253,10 @@
   function answer(q) {
     lastQ = q;
     if (!data()) return "The data is still loading — try again in a moment.";
+    if (/saint.pierre|miquelon/i.test(q)) {   // before district names: a South Dakota district is called "Pierre"
+      const r = all.find((x) => x._fr);
+      if (r) return districtCard(r) + (r["Meetings note"] ? `<p class="ask-note">${esc(r["Meetings note"])}</p>` : "");
+    }
     const stateList = findStates(q);
     const s = q.toLowerCase();
     if (/\b(sources?|come from|data from|updated?|refresh(ed)?|how often|locale|mean|means|meaning)\b/.test(s) && !findDistricts(q, stateList).length) return help(q);
