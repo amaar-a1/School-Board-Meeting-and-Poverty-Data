@@ -14,9 +14,9 @@
   };
   // The Nordic countries and the Netherlands share one layout (r._eu is the country's name).
   const EU_POV = "Percentage of Children in Low Income";
-  const EU_RE = /\b(norw\w*|swed\w*|finn?\w*|denmark|danish|netherlands|dutch|holland|german\w*|new zealand|islands?|island countries)\b/i;
+  const EU_RE = /\b(norw\w*|swed\w*|finn?\w*|denmark|danish|netherlands|dutch|holland|german\w*|iceland\w*|new zealand|islands?|island countries)\b/i;
   const EU_OF = (q) => { const m = (q.match(EU_RE) || [])[1]; if (!m) return null; const w = m.toLowerCase();
-    return w.startsWith("norw") ? "Norway" : w.startsWith("swed") ? "Sweden" : w.startsWith("fin") ? "Finland" : /^(denmark|danish)$/.test(w) ? "Denmark" : w.startsWith("german") ? "Germany" : w === "new zealand" ? "New Zealand" : w.startsWith("island") ? "Island countries and territories" : "Netherlands"; };
+    return w.startsWith("norw") ? "Norway" : w.startsWith("swed") ? "Sweden" : w.startsWith("fin") ? "Finland" : /^(denmark|danish)$/.test(w) ? "Denmark" : w.startsWith("german") ? "Germany" : w.startsWith("iceland") ? "Iceland" : w === "new zealand" ? "New Zealand" : w.startsWith("island") ? "Island countries and territories" : "Netherlands"; };
   const val = (r, m) => num(r[r._eu ? (m.col === POV ? r._pov : m.col === "Children Ages 5-17" ? r._kids : m.col) : r._ca && m.caCol ? m.caCol : r._uk && m.ukCol ? m.ukCol : r._ie && m.col === POV ? "Poverty rate (region, all ages)" : r._fr && m.col === POV ? "Unemployment rate (stand-in for poverty)" : m.col]);
   const UK_POV = "Percentage of Children Under 16 in Low Income";
   const povOf = (r) => num(r[r._eu ? r._pov : r._ca ? CA_POV : r._uk ? UK_POV : r._ie ? "Poverty rate (region, all ages)" : r._fr ? "Unemployment rate (stand-in for poverty)" : POV]);

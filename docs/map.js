@@ -2,7 +2,7 @@
 // colored by the site's data. app.js calls SiteMap.show() when the tab or the data set changes.
 (function () {
   const $ = (id) => document.getElementById(id);
-  const LAYERS = ["world", "unsd", "elsd", "territories", "scsd", "canada", "spm", "uk", "ireland", "norway", "sweden", "finland", "denmark", "netherlands", "germany", "new-zealand", "islands"];   // files in data/map/; scsd only when ticked
+  const LAYERS = ["world", "unsd", "elsd", "territories", "scsd", "canada", "spm", "uk", "ireland", "norway", "sweden", "finland", "denmark", "netherlands", "germany", "new-zealand", "islands", "iceland"];   // files in data/map/; scsd only when ticked
   // Canadian boards overlap (public and Catholic, English and French). The main layer shows one
   // board per place; "canada2" holds the overlapping ones and shows when its box is ticked.
   // Quebec's French boards cover all of Quebec; elsewhere the public (or English) board does.
@@ -11,8 +11,8 @@
     r["Board type"] === (r.Province === "Quebec" ? "French" : "English"));
   // The Nordic countries and the Netherlands: municipalities, IDs like "NO-0301" (map file per country).
   // Also Germany, New Zealand and the island countries ("ISLE-JAM"), which share the same handling.
-  const EU = { NO: "norway", SE: "sweden", FI: "finland", DK: "denmark", NL: "netherlands", DE: "germany", NZ: "new-zealand", ISLE: "islands" };
-  const EU_NAMES = { NO: "Norway", SE: "Sweden", FI: "Finland", DK: "Denmark", NL: "Netherlands", DE: "Germany", NZ: "New Zealand", ISLE: "the island countries" };
+  const EU = { NO: "norway", SE: "sweden", FI: "finland", DK: "denmark", NL: "netherlands", DE: "germany", NZ: "new-zealand", ISLE: "islands", IS: "iceland" };
+  const EU_NAMES = { NO: "Norway", SE: "Sweden", FI: "Finland", DK: "Denmark", NL: "Netherlands", DE: "Germany", NZ: "New Zealand", ISLE: "the island countries", IS: "Iceland" };
   const EU_POV = "Percentage of Children in Low Income";
   const povCol = (eu) => (eu === "ISLE" ? "Poverty rate or stand-in" : EU_POV);
   const euOf = (id) => { const c = String(id).split("-")[0]; return String(id).includes("-") && EU[c] ? c : null; };
@@ -43,6 +43,7 @@
     Denmark: [[54.5, 8.0], [57.8, 15.2]],
     Netherlands: [[50.7, 3.3], [53.6, 7.3]],
     Germany: [[47.2, 5.8], [55.1, 15.1]],
+    Iceland: [[63.2, -24.6], [66.6, -13.4]],
     "New Zealand": [[-47.4, 166.3], [-34.3, 178.7]],
     World: [[-58, -170], [75, 180]]
   };
@@ -178,7 +179,7 @@
     return `<div class="map-tip"><strong>${esc(r.District)}${place ? `, ${esc(place)}` : ""}</strong>` +
       (!isNaN(iePov) ? `Poverty rate (all ages, its region): ${iePov.toFixed(1)}%<br>Unemployment (Census 2022): ${esc(r["Unemployment rate (Census 2022)"] || "–")}<br>`
         : isNaN(pov) && !isNaN(unemp) ? `Unemployment (stand-in for poverty): ${unemp.toFixed(1)}% (2015 est.)<br>`
-        : `${ukPov ? "Children under 16 in low income" : eu === "ISLE" ? esc(r["Poverty measure"] || "Poverty") : eu ? `Children in low income (${{ NO: "0–17, 2022–24", SE: "0–19, 2024", FI: "under 18", DK: "0–17, 50% line, 2024", NL: "CBS, 2024", DE: "under 15 on SGB II benefits, 2023", NZ: "60% line, 2025" }[eu]})` : "Child poverty"}: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>`) +
+        : `${ukPov ? "Children under 16 in low income" : eu === "ISLE" ? esc(r["Poverty measure"] || "Poverty") : eu ? `Children in low income (${{ NO: "0–17, 2022–24", SE: "0–19, 2024", FI: "under 18", DK: "0–17, 50% line, 2024", NL: "CBS, 2024", DE: "under 15 on SGB II benefits, 2023", NZ: "60% line, 2025", IS: "national rate" }[eu]})` : "Child poverty"}: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>`) +
       `Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}` +
       (toNumber(r["Other Board Meetings"]) > 0 ? ` on CivicSearch; ${toNumber(r["Other Board Meetings"]).toLocaleString()} from other sources (see note)` : "") + `<br>` +
       `Enrollment: ${isNaN(enr) ? "not reported" : enr.toLocaleString()}` +

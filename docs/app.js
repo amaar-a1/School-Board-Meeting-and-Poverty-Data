@@ -266,7 +266,7 @@
   // use NCES locale types; Canadian boards an estimate from Statistics Canada population sizes.
   const US_LOCALES = ["Urban", "Suburban", "Town", "Mixed", "Rural"];   // "Mixed": the European estimates
   // Countries whose locales are density estimates, labelled "UK: Urban" and so on in "All".
-  const DENSITY_COUNTRIES = ["UK", "Ireland", "Norway", "Sweden", "Finland", "Denmark", "Netherlands", "Germany", "New Zealand", "Islands"];
+  const DENSITY_COUNTRIES = ["UK", "Ireland", "Norway", "Sweden", "Finland", "Denmark", "Netherlands", "Germany", "New Zealand", "Islands", "Iceland"];
   const DENSITY_RE = new RegExp(`^(${DENSITY_COUNTRIES.join("|")}): `);
   const CA_LOCALES = ["Large urban", "Medium urban", "Small urban", "Rural", "Province-wide"];
   // Shared groups for the US and Canada together: the closest match between NCES types and

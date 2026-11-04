@@ -5,7 +5,7 @@ department, so each is a single "district". (Iceland's municipalities run its co
 it's shown as one unit here.) The US territories and Saint-Pierre-et-Miquelon have their own views.
 - Borders: Natural Earth 1:10m admin-0 (public domain), inputs/world/ne_10m_islands.geojson.
 - Poverty, best available for each place, in this order:
-  1. children under 18 below 60% of the median income (Eurostat EU-SILC ilc_li02): Malta, Cyprus, Iceland;
+  1. children under 18 below 60% of the median income (Eurostat EU-SILC ilc_li02): Malta, Cyprus;
   2. people below the national poverty line (World Bank SI.POV.NAHC, else the CIA World Factbook);
   3. unemployment rate as a stand-in (World Bank SL.UEM.TOTL.ZS, ILO estimate, else the Factbook).
   The national poverty lines differ from country to country, so these aren't comparable.
@@ -77,6 +77,8 @@ def main():
     ISO2 = {"MLT": "MT", "CYP": "CY", "ISL": "IS"}
     out = []
     for iso, n in sorted(ne.items(), key=lambda x: NAMES.get(x[1]["NAME"], x[1]["NAME"])):
+        if iso == "ISL":   # Iceland has its own data set (municipalities), docs/data/iceland.csv
+            continue
         f = fb.get(n["ADM0_A3"]) or fb.get(iso) or {}
         econ = {**old.get(iso, {}), **f.get("Economy", {})}
         name = NAMES.get(n["NAME"], n["NAME"])
@@ -129,6 +131,8 @@ def main():
     shapes = json.load(open(os.path.join(IN, "world", "ne_10m_islands.geojson"), encoding="utf-8"))
     iso_of = {o["ADM0_A3"]: o["ISO_A3"] for o in ne.values()}
     rnd = lambda c: [rnd(x) for x in c] if isinstance(c[0], list) else [round(c[0], 3), round(c[1], 3)]
+    feats = [f for f in shapes["features"] if f["properties"]["ADM0_A3"] != "ISL"]
+    shapes["features"] = feats
     feats = [{"type": "Feature", "properties": {"id": f"ISLE-{iso_of[f['properties']['ADM0_A3']]}", "NAME": f["properties"]["NAME"]},
               "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}} for f in shapes["features"]]
     json.dump({"type": "FeatureCollection", "features": feats}, open(os.path.join(DOCS, "map", "islands.json"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)

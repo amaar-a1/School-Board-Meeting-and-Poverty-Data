@@ -174,13 +174,25 @@ window.SOURCES = [
     only: "Island countries and territories",
     group: "Island countries and territories",
     items: [
-      { title: "Children below 60% of the median income (Malta, Cyprus, Iceland): Eurostat ilc_li02", url: "https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table" },
+      { title: "Children below 60% of the median income (Malta, Cyprus): Eurostat ilc_li02", url: "https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table" },
       { title: "National poverty line, unemployment, population, enrollment (primary and secondary): World Bank World Development Indicators (SI.POV.NAHC, SL.UEM.TOTL.ZS, SP.POP.TOTL, SP.POP.0014.TO.ZS, SE.PRM.ENRL, SE.SEC.ENRL)", url: "https://data.worldbank.org/" },
       { title: "Norfolk Island unemployment: Australian Bureau of Statistics, 2021 Census QuickStats (Norfolk Island)", url: "https://www.abs.gov.au/census/find-census-data/quickstats/2021/SAL90004" },
       { title: "Where the World Bank has none: CIA World Factbook (2026 edition, and the November 2023 edition for poverty and unemployment), via the factbook.json archive", url: "https://github.com/factbook/factbook.json" },
       { title: "Borders: Natural Earth 1:10m admin-0 countries", url: "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/" }
     ],
     note: "Many of these figures are old (some Factbook poverty rates are from surveys more than ten years old); each row's “Poverty measure” names the source and year. Locales are estimates from population over land area. Built by data-prep/build_islands.py."
+  },
+  {
+    only: "Iceland",
+    group: "Iceland: municipalities, children and council meetings",
+    items: [
+      { title: "Children 6–15 and population: Statistics Iceland MAN02005 (population by sex, age and municipality, 1 January 2026)", url: "https://px.hagstofa.is/pxis/pxweb/is/Ibuar/Ibuar__mannfjoldi__2_byggdir__sveitarfelog/MAN02005.px" },
+      { title: "Child low income (national): Eurostat ilc_li02, children under 18 below 60% of the median income, 2020", url: "https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table" },
+      { title: "Checked but not used: Statistics Iceland LIF01140, child low income by residence (its “total” row is higher than both the capital area and the rest of the country)", url: "https://px.hagstofa.is/pxis/pxweb/is/Samfelag/Samfelag__lifskjor__3_fjarhagsstada__1_einstaklingar/LIF01140.px" },
+      { title: "Borders: Eurostat GISCO LAU 2023 (names taken from Statistics Iceland's municipality codes, since eight LAU names are wrong)", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
+      { title: "Meetings: each municipality's own YouTube channel (in the “Meetings source” column); videos of council meetings, one per meeting", url: "https://www.youtube.com/" }
+    ],
+    note: "Locales are estimates from population over area. Skagabyggð and Tálknafjarðarhreppur merged into Húnabyggð and Vesturbyggð in 2024 and are drawn as part of them. Built by data-prep/build_iceland.py."
   },
   {
     only: "Ireland",

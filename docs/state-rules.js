@@ -175,5 +175,16 @@ window.STATE_RULES = {
         rule: "Not checked for each island. Their schools are run by a government ministry or department, which doesn't hold public board meetings the way a US school board does." }
     ],
     note: "Rules for the islands' education bodies weren't researched; check each place's own law."
+  },
+  iceland: {
+    title: "Rules for municipal council and committee meetings",
+    checked: "November 4, 2026",
+    laws: [
+      { state: "Iceland", covers: "Municipal councils", threshold: "",
+        rule: "Council meetings are open to the public (Local Government Act 138/2011); councils may broadcast them, and many do, but no requirement to was found." },
+      { state: "Iceland", covers: "Committees, including education committees", threshold: "",
+        rule: "Committee meetings are closed to the public; their minutes (fundargerðir) are published and go to the council for approval." }
+    ],
+    note: "Icelandic municipalities run compulsory schools through their council and an education committee. Check the current law before relying on this."
   }
 };

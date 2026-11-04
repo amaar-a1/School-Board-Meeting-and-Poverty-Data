@@ -12,9 +12,9 @@ DST = os.path.join(HERE, "..", "docs", "data", "map", "world.json")
 # On the site already: the US and its territories, Canada, Saint-Pierre-et-Miquelon, the UK,
 # Ireland, the Nordic countries, the Netherlands, Germany, New Zealand and the island set.
 COVERED = {"USA", "PRI", "VIR", "GUM", "MNP", "ASM", "CAN", "SPM", "GBR", "IRL", "NOR", "SWE", "FIN", "DNK", "NLD"}
-for f in ("germany.csv", "new-zealand.csv"):
+for f, iso in (("germany.csv", "DEU"), ("new-zealand.csv", "NZL"), ("iceland.csv", "ISL")):
     if os.path.exists(os.path.join(HERE, "..", "docs", "data", f)):
-        COVERED.add({"germany.csv": "DEU", "new-zealand.csv": "NZL"}[f])
+        COVERED.add(iso)
 ISL = os.path.join(HERE, "..", "docs", "data", "islands.csv")
 if os.path.exists(ISL):
     import csv
