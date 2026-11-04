@@ -1,0 +1,302 @@
+[
+ [
+  "ElevData",
+  "07518: Elevar og datamaskinar, etter eigeforhold (F) (avslutta serie) 2005 - 2009",
+  null
+ ],
+ [
+  "ElevData",
+  "07518: Elevar og datamaskinar, etter eigeforhold (F) (avslutta serie) 2005 - 2009",
+  null
+ ],
+ [
+  "ElevarGrunnSk",
+  "05232: Elevar i grunnskoleutdanning, etter årstrinn, skolen sitt eigeforhold og institusjonstype (F) 2002 - 2025",
+  null
+ ],
+ [
+  "ElevarGrunnSk",
+  "05232: Elevar i grunnskoleutdanning, etter årstrinn, skolen sitt eigeforhold og institusjonstype (F) 2002 - 2025",
+  null
+ ],
+ [
+  "ElevSkoleStr",
+  "09537: Grunnskolar og elevar, etter skolestorleik (prosent) 2005 - 2025",
+  null
+ ],
+ [
+  "ElevSkoleStr",
+  "09537: Grunnskolar og elevar, etter skolestorleik (prosent) 2005 - 2025",
+  null
+ ],
+ [
+  "ElevarNy",
+  "07522: Elevar i faste særskilde undervisningsgrupper (F) (avslutta serie) 2008 - 2010",
+  null
+ ],
+ [
+  "ElevarNy",
+  "07522: Elevar i faste særskilde undervisningsgrupper (F) (avslutta serie) 2008 - 2010",
+  null
+ ],
+ [
+  "ElevarNY2",
+  "07523: Elevar med morsmålsopplæring, tospråkleg fagopplæring, eller tilrettelagt opplæring (F) 2008 - 2025",
+  null
+ ],
+ [
+  "ElevarNY2",
+  "07523: Elevar med morsmålsopplæring, tospråkleg fagopplæring, eller tilrettelagt opplæring (F) 2008 - 2025",
+  null
+ ],
+ [
+  "ElevFremSprakVf",
+  "12453: Elevar i grunnskolen, etter framandspråkleg valfag (F) 2011 - 2025",
+  null
+ ],
+ [
+  "ElevMaalForm",
+  "03743: Elevar i grunnskolen, etter målform (F) 2002 - 2025",
+  null
+ ],
+ [
+  "ElevFremSprakVf",
+  "12453: Elevar i grunnskolen, etter framandspråkleg valfag (F) 2011 - 2025",
+  null
+ ],
+ [
+  "ElevMaalForm",
+  "03743: Elevar i grunnskolen, etter målform (F) 2002 - 2025",
+  null
+ ],
+ [
+  "Barneverng02",
+  "13335: Elevar 22 år eller yngre, etter kjønn, grunnskolepoeng, barnevernstiltak og foreldra sitt utdanningsnivå 2018 - 2024",
+  null
+ ],
+ [
+  "Barneverng02",
+  "13335: Elevar 22 år eller yngre, etter kjønn, grunnskolepoeng, barnevernstiltak og foreldra sitt utdanningsnivå 2018 - 2024",
+  null
+ ],
+ [
+  "Barneverng05",
+  "13338: Elevar 22 år eller yngre fordelt på standpunktkarakterar, etter kjønn, fag, karakterverdi og barnevernstiltak 2018 - 2024",
+  null
+ ],
+ [
+  "Barneverng05",
+  "13338: Elevar 22 år eller yngre fordelt på standpunktkarakterar, etter kjønn, fag, karakterverdi og barnevernstiltak 2018 - 2024",
+  null
+ ],
+ [
+  "Barneverng14",
+  "13347: Status for elevar 6 år etter avslutta grunnskole. Etter status, kjønn, foreldrenes utdanningsnivå og barnevernstiltak 2018 - 2024",
+  null
+ ],
+ [
+  "Barneverng16",
+  "13349: Status for elevar etter avslutta grunnskole. Etter antall år etter avslutta grunnskole, status, kjønn, foreldrenes utdanningsnivå og barnevernstiltak 2018 - 2024",
+  null
+ ],
+ [
+  "Barneverng14",
+  "13347: Status for elevar 6 år etter avslutta grunnskole. Etter status, kjønn, foreldrenes utdanningsnivå og barnevernstiltak 2018 - 2024",
+  null
+ ],
+ [
+  "Barneverng16",
+  "13349: Status for elevar etter avslutta grunnskole. Etter antall år etter avslutta grunnskole, status, kjønn, foreldrenes utdanningsnivå og barnevernstiltak 2018 - 2024",
+  null
+ ],
+ [
+  "ElevNorskOp",
+  "03741: Elevar med forsterka opplæring i norsk, etter eigeforhold og institusjonstype (F) 2002 - 2025",
+  null
+ ],
+ [
+  "SpesUndAar",
+  "08624: Elevar med spesialundervisning/individuelt tilrettelagd opplæring, etter årstrinn (F) 2007 - 2025",
+  null
+ ],
+ [
+  "ElevNorskOp",
+  "03741: Elevar med forsterka opplæring i norsk, etter eigeforhold og institusjonstype (F) 2002 - 2025",
+  null
+ ],
+ [
+  "SpesUndAar",
+  "08624: Elevar med spesialundervisning/individuelt tilrettelagd opplæring, etter årstrinn (F) 2007 - 2025",
+  null
+ ],
+ [
+  "Barneverng12",
+  "13345: Gjennomføring i vidaregåande opplæring blant elevar 22 år eller yngre. Etter antall år etter start, fullføringsgrad, kjønn, todelt utdanningsprogram og barnevernstiltak 2008 - 2014",
+  null
+ ],
+ [
+  "Barneverng12",
+  "13345: Gjennomføring i vidaregåande opplæring blant elevar 22 år eller yngre. Etter antall år etter start, fullføringsgrad, kjønn, todelt utdanningsprogram og barnevernstiltak 2008 - 2014",
+  null
+ ],
+ [
+  "Barneverng03",
+  "13336: Elevar 22 år eller yngre, etter region, kjønn, grunnskolepoeng og barnevernstiltak (F) 2018 - 2024",
+  null
+ ],
+ [
+  "Barneverng03",
+  "13336: Elevar 22 år eller yngre, etter region, kjønn, grunnskolepoeng og barnevernstiltak (F) 2018 - 2024",
+  null
+ ],
+ [
+  "Rd1552Aa",
+  "01552: Grunnskolen, etter organisasjonsform, eigeforhold og skolens storleik (talet på elevar) (K) (avslutta serie) 1994 - 2000",
+  null
+ ],
+ [
+  "Rd1552Aa",
+  "01552: Grunnskolen, etter organisasjonsform, eigeforhold og skolens storleik (talet på elevar) (K) (avslutta serie) 1994 - 2000",
+  null
+ ],
+ [
+  "Barneverng08",
+  "13341: Gjennomføring i vidaregåande opplæring blant elevar 22 år eller yngre. Etter fullføringsgrad, kjønn, todelt utdanningsprogram, foreldrenes utdanningsnivå og barnevernstiltak 2012-2018 - 2018-2024",
+  null
+ ],
+ [
+  "Barneverng09",
+  "13342: Gjennomføring i vidaregåande opplæring blant elevar 22 år eller yngre. Etter fullføringsgrad, kjønn, todelt utdanningsprogram, grunnskolepoeng og barnevernstiltak 2012-2018 - 2018-2024",
+  null
+ ],
+ [
+  "Barneverng08",
+  "13341: Gjennomføring i vidaregåande opplæring blant elevar 22 år eller yngre. Etter fullføringsgrad, kjønn, todelt utdanningsprogram, foreldrenes utdanningsnivå og barnevernstiltak 2012-2018 - 2018-2024",
+  null
+ ],
+ [
+  "Barneverng09",
+  "13342: Gjennomføring i vidaregåande opplæring blant elevar 22 år eller yngre. Etter fullføringsgrad, kjønn, todelt utdanningsprogram, grunnskolepoeng og barnevernstiltak 2012-2018 - 2018-2024",
+  null
+ ],
+ [
+  "Barneverng06",
+  "13339: Elevar 22 år eller yngre fordelt på standpunktkarakterar, etter region, kjønn, fag, karakterverdi og barnevernstiltak (F) 2018 - 2024",
+  null
+ ],
+ [
+  "Barneverng10",
+  "13343: Gjennomføring i vidaregåande opplæring blant elevar 22 år eller yngre. Etter region, fullføringsgrad, kjønn og barnevernstiltak (F) 2012-2018 - 2018-2024",
+  null
+ ],
+ [
+  "Barneverng13",
+  "13346: Status for elevar 6 år etter avslutta grunnskole. Etter region, status, kjønn og barnevernstiltak (F) 2018 - 2024",
+  null
+ ],
+ [
+  "Barneverng15",
+  "13348: Status for elevar etter avslutta grunnskole. Etter region, antall år etter avslutta grunnskole, status, kjønn og barnevernstiltak (F) 2018 - 2024",
+  null
+ ],
+ [
+  "Barneverng06",
+  "13339: Elevar 22 år eller yngre fordelt på standpunktkarakterar, etter region, kjønn, fag, karakterverdi og barnevernstiltak (F) 2018 - 2024",
+  null
+ ],
+ [
+  "Barneverng10",
+  "13343: Gjennomføring i vidaregåande opplæring blant elevar 22 år eller yngre. Etter region, fullføringsgrad, kjønn og barnevernstiltak (F) 2012-2018 - 2018-2024",
+  null
+ ],
+ [
+  "Barneverng13",
+  "13346: Status for elevar 6 år etter avslutta grunnskole. Etter region, status, kjønn og barnevernstiltak (F) 2018 - 2024",
+  null
+ ],
+ [
+  "Barneverng15",
+  "13348: Status for elevar etter avslutta grunnskole. Etter region, antall år etter avslutta grunnskole, status, kjønn og barnevernstiltak (F) 2018 - 2024",
+  null
+ ],
+ [
+  "ElevMorsm",
+  "03742: Elevar med morsmålsopplæring og/eller tospråkleg fagopplæring, etter morsmål (F) (avslutta serie) 2002 - 2017",
+  null
+ ],
+ [
+  "ElevMorsm",
+  "03742: Elevar med morsmålsopplæring og/eller tospråkleg fagopplæring, etter morsmål (F) (avslutta serie) 2002 - 2017",
+  null
+ ],
+ [
+  "Barneverng04",
+  "13337: Standpunktkarakterar blant elevar 22 år eller yngre, etter region, kjønn, fag og barnevernstiltak (F) 2018 - 2024",
+  null
+ ],
+ [
+  "Barneverng04",
+  "13337: Standpunktkarakterar blant elevar 22 år eller yngre, etter region, kjønn, fag og barnevernstiltak (F) 2018 - 2024",
+  null
+ ],
+ [
+  "Barneverng07",
+  "13340: Overgang frå grunnskole til vidaregåande opplæring blant elevar 22 år eller yngre. Etter region, kjønn, type overgang og barnevernstiltak (F) 2018 - 2024",
+  null
+ ],
+ [
+  "Barneverng11",
+  "13344: Gjennomføring i vidaregåande opplæring blant elevar 22 år eller yngre. Etter region, fullføringsgrad, todelt utdanningsprogram og barnevernstiltak (F) 2012-2018 - 2018-2024",
+  null
+ ],
+ [
+  "Barneverng07",
+  "13340: Overgang frå grunnskole til vidaregåande opplæring blant elevar 22 år eller yngre. Etter region, kjønn, type overgang og barnevernstiltak (F) 2018 - 2024",
+  null
+ ],
+ [
+  "Barneverng11",
+  "13344: Gjennomføring i vidaregåande opplæring blant elevar 22 år eller yngre. Etter region, fullføringsgrad, todelt utdanningsprogram og barnevernstiltak (F) 2012-2018 - 2018-2024",
+  null
+ ],
+ [
+  "Rd1554Aa",
+  "01554: Elevar frå språklege minoritetar, etter klassesteg, organisasjonsform og eigeforhold (K) (avslutta serie) 1994 - 1999",
+  null
+ ],
+ [
+  "Rd1551Aa",
+  "01551: Elevar i grunnskolen, etter kjønn, klassesteg, organisasjonsform og eigeforhold (K) (avslutta serie) 1993 - 2000",
+  null
+ ],
+ [
+  "Rd1554Aa",
+  "01554: Elevar frå språklege minoritetar, etter klassesteg, organisasjonsform og eigeforhold (K) (avslutta serie) 1994 - 1999",
+  null
+ ],
+ [
+  "Rd1551Aa",
+  "01551: Elevar i grunnskolen, etter kjønn, klassesteg, organisasjonsform og eigeforhold (K) (avslutta serie) 1993 - 2000",
+  null
+ ],
+ [
+  "GrSkoleKlas",
+  "03740: Grunnskoleelevar, etter klassesteg, skolestorleik, skolens organisasjonsform og eigeforhold (K) (avslutta serie) 2002",
+  null
+ ],
+ [
+  "GrSkoleKlas",
+  "03740: Grunnskoleelevar, etter klassesteg, skolestorleik, skolens organisasjonsform og eigeforhold (K) (avslutta serie) 2002",
+  null
+ ],
+ [
+  "Grunnskolar",
+  "09546: Grunnskolar, etter skolestorleik, skolens organisasjonsform og eigeforhold (K) 2002 - 2025",
+  null
+ ],
+ [
+  "Grunnskolar",
+  "09546: Grunnskolar, etter skolestorleik, skolens organisasjonsform og eigeforhold (K) 2002 - 2025",
+  null
+ ]
+]

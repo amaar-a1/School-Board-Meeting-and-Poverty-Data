@@ -1,0 +1,35 @@
+{
+  "odata.metadata":"https://opendata.cbs.nl/ODataApi/OData/85701NED/$metadata#Cbs.OData.WebAPI.Perioden","value":[
+    {
+      "Key":"2011SJ00","Title":"2011/'12","Description":"","Status":"Definitief"
+    },{
+      "Key":"2012SJ00","Title":"2012/'13","Description":"","Status":"Definitief"
+    },{
+      "Key":"2013SJ00","Title":"2013/'14","Description":"","Status":"Definitief"
+    },{
+      "Key":"2014SJ00","Title":"2014/'15","Description":"","Status":"Definitief"
+    },{
+      "Key":"2015SJ00","Title":"2015/'16","Description":"","Status":"Definitief"
+    },{
+      "Key":"2016SJ00","Title":"2016/'17","Description":"","Status":"Definitief"
+    },{
+      "Key":"2017SJ00","Title":"2017/'18","Description":"","Status":"Definitief"
+    },{
+      "Key":"2018SJ00","Title":"2018/'19","Description":"","Status":"Definitief"
+    },{
+      "Key":"2019SJ00","Title":"2019/'20","Description":"","Status":"Definitief"
+    },{
+      "Key":"2020SJ00","Title":"2020/'21","Description":"","Status":"Definitief"
+    },{
+      "Key":"2021SJ00","Title":"2021/'22","Description":"","Status":"Definitief"
+    },{
+      "Key":"2022SJ00","Title":"2022/'23","Description":"","Status":"Definitief"
+    },{
+      "Key":"2023SJ00","Title":"2023/'24","Description":"","Status":"Definitief"
+    },{
+      "Key":"2024SJ00","Title":"2024/'25","Description":"","Status":"Definitief"
+    },{
+      "Key":"2025SJ00","Title":"2025/'26","Description":"Voorlopige cijfers","Status":"Voorlopig"
+    }
+  ]
+}
