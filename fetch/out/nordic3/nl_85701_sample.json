@@ -1,0 +1,7 @@
+{
+  "odata.metadata":"https://opendata.cbs.nl/ODataApi/OData/85701NED/$metadata#Cbs.OData.WebAPI.TypedDataSet","value":[
+    {
+      "ID":0,"Geslacht":"T001038","Onderwijssoort":"A025279","Regiokenmerken":"NL01   ","Perioden":"2011SJ00","LeerlingenStudenten_1":1559270
+    }
+  ]
+}

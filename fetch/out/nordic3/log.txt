@@ -1,0 +1,23 @@
+ok 26314 https://data.ssb.no/api/v0/no/table/12944
+ok 51603 https://data.ssb.no/api/v0/no/table/12944
+ok 22027 https://data.ssb.no/api/v0/no/table/11980
+ok 2863 https://data.ssb.no/api/v0/no/table/11980
+ok 1131942 https://statistikdatabasen.scb.se/api/v2/tables/TAB6685/metadata?lang=sv
+FAIL https://statistikdatabasen.scb.se/api/v2/tables/TAB6685/data?lang=sv&outputFormat=csv&valueCodes%5BRegion%5D=%2A&valueCodes%5BAlder%5D=tot%2C0-19%2C20-64%2C20-65%2C65%2B%: HTTP Error 400: Bad Request {"type":"Parameter error","title":"Too many cells selected","status":400,"detail":"Too many cells selected"}
+FAIL https://api.kolada.se/v2/kpi?title=elever+i+grundskola: HTTP Error 410: Gone {"error": "This endpoint is deprecated. Please use /v3 instead."}
+FAIL https://api.kolada.se/v2/municipality: HTTP Error 410: Gone {"error": "This endpoint is deprecated. Please use /v3 instead."}
+ok 4897 https://api.statbank.dk/v1/tableinfo/LABY07?lang=en&format=JSON
+ok 3260 https://api.statbank.dk/v1/data
+ok 5750 https://api.statbank.dk/v1/tableinfo/LABY23?lang=en&format=JSON
+ok 6316 https://api.statbank.dk/v1/data
+ok 2521852 https://sotkanet.fi/rest/1.1/indicators
+FAIL https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/opiskt/statfin_opiskt_pxt_133w.px: HTTP Error 400: Bad Request Bad Request
+ok 4735 https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/opiskt/
+ok 7731 https://opendata.cbs.nl/ODataApi/odata/86132NED/PersoonsEnHuishoudenskenmerken?$format=json
+ok 764 https://opendata.cbs.nl/ODataApi/odata/86132NED/Perioden?$format=json
+ok 505 https://opendata.cbs.nl/ODataApi/odata/85701NED/Geslacht?$format=json
+ok 6429 https://opendata.cbs.nl/ODataApi/odata/85701NED/Onderwijssoort?$format=json
+ok 78613 https://opendata.cbs.nl/ODataApi/odata/85701NED/Regiokenmerken?$format=json
+ok 1512 https://opendata.cbs.nl/ODataApi/odata/85701NED/Perioden?$format=json
+ok 213814 https://opendata.cbs.nl/ODataApi/odata/86132NED/TypedDataSet?$format=json&$filter=PersoonsEnHuishoudenskenmerken%20eq%20%27T009002%27%20and%20%28Perioden%20eq%20%272023JJ
+ok 286 https://opendata.cbs.nl/ODataApi/odata/85701NED/TypedDataSet?$format=json&$top=1

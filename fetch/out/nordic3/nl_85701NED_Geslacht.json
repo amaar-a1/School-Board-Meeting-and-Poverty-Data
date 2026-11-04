@@ -1,0 +1,11 @@
+{
+  "odata.metadata":"https://opendata.cbs.nl/ODataApi/OData/85701NED/$metadata#Cbs.OData.WebAPI.Geslacht","value":[
+    {
+      "Key":"T001038","Title":"Totaal mannen en vrouwen","Description":"Totaal mannen en vrouwen.\r\n\r\nInclusief personen van wie het geslacht onbekend is.","CategoryGroupID":null
+    },{
+      "Key":"3000   ","Title":"Mannen","Description":null,"CategoryGroupID":null
+    },{
+      "Key":"4000   ","Title":"Vrouwen","Description":null,"CategoryGroupID":null
+    }
+  ]
+}
