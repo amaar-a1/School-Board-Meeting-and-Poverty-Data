@@ -99,5 +99,54 @@ window.STATE_RULES = {
         rule: "Each ETB board (councillors, staff and parent representatives and community members) meets in public under the Education and Training Boards Act 2013 and publishes minutes; no requirement to record or stream meetings was found." }
     ],
     note: "ETBs run some of Ireland's schools; most are run by other patron bodies (often religious), which have no public board meetings."
+  },
+  // The Nordic countries and the Netherlands: municipal councils and their committees.
+  norway: {
+    checked: "November 4, 2026",
+    laws: [
+      { state: "Norway", covers: "Municipal councils and committees", threshold: "",
+        rule: "Meetings of elected municipal bodies, committees included, are open to the public unless an item is closed by law (Local Government Act 2018, section 11-5). No requirement to record or stream was found, though most councils stream their council meetings." }
+    ],
+    note: "Norwegian municipalities run primary and lower secondary schools through their council and committees. Check the current law before relying on this."
+  },
+  sweden: {
+    checked: "November 4, 2026",
+    laws: [
+      { state: "Sweden", covers: "Municipal councils", threshold: "",
+        rule: "Council (kommunfullmäktige) meetings are public (Local Government Act 2017:725, chapter 5, section 38); many councils stream them, but no requirement to was found." },
+      { state: "Sweden", covers: "Municipal boards (nämnder), including education boards", threshold: "",
+        rule: "Board meetings are held behind closed doors unless the board decides to open them (chapter 6, section 25), so education boards' meetings are rarely public or recorded." }
+    ],
+    note: "Swedish municipalities run their schools through an education board (nämnd). Check the current law before relying on this."
+  },
+  finland: {
+    checked: "November 4, 2026",
+    laws: [
+      { state: "Finland", covers: "Municipal councils", threshold: "",
+        rule: "Council (valtuusto) meetings are public (Local Government Act 410/2015, section 101); many councils stream them, but no requirement to was found." },
+      { state: "Finland", covers: "Committees, including education committees", threshold: "",
+        rule: "Other bodies' meetings, such as the education committee (sivistyslautakunta), are closed unless the body decides to open them (section 101), so they're rarely public or recorded." }
+    ],
+    note: "Finnish municipalities run comprehensive schools through their council and education committee. Check the current law before relying on this."
+  },
+  denmark: {
+    checked: "November 4, 2026",
+    laws: [
+      { state: "Denmark", covers: "Municipal councils", threshold: "",
+        rule: "Council (kommunalbestyrelse) meetings are public (Local Government Act, section 10); many councils stream them, but no requirement to was found." },
+      { state: "Denmark", covers: "Standing committees, including children and schools committees", threshold: "",
+        rule: "Committee meetings are held behind closed doors (Local Government Act, section 20), so they aren't public or recorded; their minutes are published." }
+    ],
+    note: "Danish municipalities run their public schools (folkeskoler) through the council and its committees. Check the current law before relying on this."
+  },
+  netherlands: {
+    checked: "November 4, 2026",
+    laws: [
+      { state: "Netherlands", covers: "Municipal councils and council committees", threshold: "",
+        rule: "Council meetings are public (Municipalities Act, article 23), and so are most council committee meetings; no requirement to record or stream was found, though nearly all councils webcast on their own sites." },
+      { state: "Netherlands", covers: "School boards (schoolbesturen)", threshold: "",
+        rule: "Schools are run by school boards (foundations or associations, public and private), which aren't elected and have no duty to hold public meetings." }
+    ],
+    note: "Dutch municipalities fund school buildings and set local education policy, but don't run schools. Check the current law before relying on this."
   }
 };

@@ -76,6 +76,12 @@
     const pct = (v) => (String(v ?? "").trim() === "" ? "" : `${toNumber(v).toFixed(2)}%`);
     datasets.forEach((d) => d.rows.forEach((r) => {
       const ca = d.country === "CA", fr = d.country === "FR", uk = d.country === "UK", ie = d.country === "IE", terr = !!d.state;
+      const sp = d.simple;   // the Nordic countries and the Netherlands: municipalities, one shared layout
+      if (sp) return out.push({
+        District: r.District, Country: d.name, "State or province": "", "Available Board Meetings": r["Available Board Meetings"] ?? "",
+        [c.metric]: pct(r[sp.pov]), "Poverty measure": sp.measure, Children: r[sp.children] ?? "", Enrollment: r.Enrollment ?? "",
+        Locale: r.Locale ? `${d.name}: ${r.Locale}` : "", "Other Board Meetings": "", "District ID": r["District ID"]
+      });
       out.push({
         District: r.District,
         Country: ca ? "Canada" : fr ? "France (Saint-Pierre-et-Miquelon)" : uk ? "United Kingdom" : ie ? "Ireland" : terr ? "U.S. territories" : "United States",
@@ -257,7 +263,10 @@
 
   // "By locale" tab: the same comparisons as "By district size", grouped by locale. US districts
   // use NCES locale types; Canadian boards an estimate from Statistics Canada population sizes.
-  const US_LOCALES = ["Urban", "Suburban", "Town", "Mixed", "Rural"];   // "Mixed": UK and Ireland's estimate
+  const US_LOCALES = ["Urban", "Suburban", "Town", "Mixed", "Rural"];   // "Mixed": the European estimates
+  // Countries whose locales are density estimates, labelled "UK: Urban" and so on in "All".
+  const DENSITY_COUNTRIES = ["UK", "Ireland", "Norway", "Sweden", "Finland", "Denmark", "Netherlands"];
+  const DENSITY_RE = new RegExp(`^(${DENSITY_COUNTRIES.join("|")}): `);
   const CA_LOCALES = ["Large urban", "Medium urban", "Small urban", "Rural", "Province-wide"];
   // Shared groups for the US and Canada together: the closest match between NCES types and
   // Canada's estimated sizes.
@@ -268,7 +277,7 @@
     { name: "Province-wide (Canada)", us: [], ca: ["Province-wide"] }
   ];
   function mergedLocale(v) {
-    const s = String(v || "").trim(), ca = s.startsWith("Canada: "), other = /^(UK|Ireland): /.test(s), name = s.replace(/^(Canada|UK|Ireland): /, "");
+    const s = String(v || "").trim(), ca = s.startsWith("Canada: "), other = DENSITY_RE.test(s), name = s.replace(/^Canada: /, "").replace(DENSITY_RE, "");
     const g = MERGED_LOCALES.find((x) => (ca ? x.ca : other ? (x.other || []) : x.us).includes(name));
     return g ? g.name : "";
   }
@@ -278,7 +287,7 @@
     // Canada on its own: largest to smallest. In "All", Canada's groups are labelled "Canada: …".
     const caOnly = seen.has("Large urban") && !seen.has("Urban");
     const order = (caOnly ? CA_LOCALES : [...US_LOCALES, ...CA_LOCALES.map((g) => `Canada: ${g}`),
-      ...["UK", "Ireland"].flatMap((c) => ["Urban", "Suburban", "Mixed", "Rural"].map((g) => `${c}: ${g}`))]).filter((g) => seen.has(g));
+      ...DENSITY_COUNTRIES.flatMap((c) => ["Urban", "Suburban", "Mixed", "Rural"].map((g) => `${c}: ${g}`))]).filter((g) => seen.has(g));
     return [...order, ...[...seen].filter((g) => !order.includes(g)).sort()];
   }
 
@@ -308,7 +317,7 @@
       (left ? ` ${left.toLocaleString()} ${label} without a locale are left out of this tab.` : "");
     $("locale-def").textContent = (current.localeDef || (current.parent && current.parent.localeDef)) ? (current.localeDef || current.parent.localeDef)
       : ca || current.combined
-      ? "Canada's locales are estimates, after Statistics Canada's population centre sizes: each census subdivision (municipality) with 100,000+ people is large urban; one with at least 150 people per km² (the OECD's rural cutoff) is medium urban (30,000–99,999 people) or small urban (1,000–29,999); the rest are rural. A board takes the locale where most of its children live; boards serving a whole province or territory are “Province-wide”. They aren't the same as the US NCES locales." + (current.combined ? " UK and Irish locales are estimates from population density (urban 2,000+ people per km², suburban 500–2,000, mixed 100–500, rural under 100)." : "")
+      ? "Canada's locales are estimates, after Statistics Canada's population centre sizes: each census subdivision (municipality) with 100,000+ people is large urban; one with at least 150 people per km² (the OECD's rural cutoff) is medium urban (30,000–99,999 people) or small urban (1,000–29,999); the rest are rural. A board takes the locale where most of its children live; boards serving a whole province or territory are “Province-wide”. They aren't the same as the US NCES locales." + (current.combined ? " UK, Irish, Nordic and Dutch locales are estimates from population density (urban 2,000+ people per km², suburban 500–2,000, mixed 100–500, rural under 100)." : "")
       : "";
     const cols = ["Locale", label[0].toUpperCase() + label.slice(1), "With meetings", "Avg meetings", "Poverty: with meetings", "Poverty: without",
       `Meetings per 10,000 ${per}`, "Meetings per poverty point"];
@@ -876,24 +885,30 @@
     if (!us) return;
     const ca = us.canada, fr = us.france, ukr = us.uk, ier = us.ireland;
     const country = current && (current.country || (current.parent && current.parent.country));
-    const isCA = country === "CA", isFR = country === "FR", isUK = country === "UK", isIE = country === "IE";
+    const own = current && (current.simple || (current.parent && current.parent.simple));
+    const gen = own && us[own.rules];   // a Nordic country or the Netherlands
+    const isCA = country === "CA", isFR = country === "FR", isUK = country === "UK", isIE = country === "IE" || !!gen;
     const both = current && current.combined;
-    const laws = isCA ? ca.laws : isFR ? fr.laws : isUK ? ukr.laws : isIE ? ier.laws : both ? [...us.laws, ...ca.laws, ...fr.laws, ...ukr.laws, ...ier.laws] : us.laws;
+    const extra = cfg.dataFiles.filter((d) => d.simple && us[d.simple.rules]).map((d) => us[d.simple.rules]);
+    const ierv = gen || ier;
+    const laws = isCA ? ca.laws : isFR ? fr.laws : isUK ? ukr.laws : isIE ? ierv.laws
+      : both ? [...us.laws, ...ca.laws, ...fr.laws, ...ukr.laws, ...ier.laws, ...extra.flatMap((x) => x.laws)] : us.laws;
     $("rules-title").textContent = isCA ? "Province rules for recording or streaming school board meetings (Canada)"
       : isFR ? "Rules for recording or publishing meetings (Saint-Pierre-et-Miquelon)"
       : isUK ? "Rules for recording or broadcasting council meetings (United Kingdom)"
+      : gen ? `Rules for municipal council and committee meetings (${current.parent ? current.parent.name : current.name})`
       : isIE ? "Rules for Education and Training Board meetings (Ireland)"
-      : both ? "State and province rules for recording or streaming school board meetings (US, Canada and Saint-Pierre-et-Miquelon)"
+      : both ? "Rules for recording or streaming school board meetings (every country on this site)"
       : "State rules for recording or streaming school board meetings";
     $("rules-place").textContent = isCA ? "Province" : isFR ? "Territory" : isUK ? "Nation" : isIE ? "Country" : both ? "State, province or territory" : "State";
     $("rules-intro").textContent = isCA
       ? `No province requires school boards to record or stream meetings; ${laws.length} related rules in ${new Set(laws.map((x) => x.state)).size} provinces, checked ${ca.checked}.`
-      : isFR ? `Checked ${fr.checked}.` : isUK ? `Checked ${ukr.checked}.` : isIE ? `Checked ${ier.checked}.`
+      : isFR ? `Checked ${fr.checked}.` : isUK ? `Checked ${ukr.checked}.` : isIE ? `Checked ${ierv.checked}.`
       : `${us.laws.length} rules in ${new Set(us.laws.map((x) => x.state)).size} states, checked ${us.checked}` +
         (both ? `; ${ca.laws.length} related rules in Canadian provinces, checked ${ca.checked}; Saint-Pierre-et-Miquelon checked ${fr.checked}` : "") + ". Laws change often.";
     $("rules-us-note").hidden = isCA || isFR || isUK || isIE;
     $("rules-ca-note").hidden = !isCA && !isFR && !isUK && !isIE && !both;
-    $("rules-ca-note").textContent = isFR ? fr.note : isUK ? ukr.note : isIE ? ier.note : both ? `${ca.note} ${fr.note} ${ukr.note} ${ier.note}` : ca.note;
+    $("rules-ca-note").textContent = isFR ? fr.note : isUK ? ukr.note : isIE ? ierv.note : both ? [ca, fr, ukr, ier, ...extra].map((x) => x.note).join(" ") : ca.note;
     const body = $("rules-table").tBodies[0];
     body.innerHTML = "";
     laws.forEach((x) => {

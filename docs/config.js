@@ -69,11 +69,66 @@ window.SITE_CONFIG = {
       localeNote: "Boards are grouped by an estimated locale (see below).",
       localeDef: "Locales are estimates from population density (children counted in the census, divided by their share of the population, over land area): urban 2,000+ people per km², suburban 500–2,000, mixed town and country 100–500, rural under 100. They aren't the same as the US or Canadian locales.",
       note: "Ireland's 16 Education and Training Boards (ETBs), the elected-and-appointed local boards that run about a quarter of post-primary schools (community colleges and community schools), Community National Schools and further education. Each covers one or more council areas; most primary and secondary schools are run by other patron bodies, so ETBs aren't a full equivalent of a US school board. Ireland publishes no local child poverty rate, so the unemployment rate from Census 2022 stands in for it (people looking for a first job or unemployed, out of everyone working or looking for work); it isn't comparable with the child poverty rates elsewhere on this site. No ETB posts its board meetings on YouTube (their channels show school and course videos); ETBs publish board minutes on their own websites instead, which weren't counted.",
-      footer: "Irish Education and Training Boards as of November 2026. Sources are listed on the Sources tab." }
+      footer: "Irish Education and Training Boards as of November 2026. Sources are listed on the Sources tab." },
+    // Norway: municipalities run schools. Child low income is the national statistics office's own measure.
+    { name: "Norway", file: "data/norway.csv", country: "NO", recordLabel: "Municipalities", textColumns: ["District ID", "Enrollment year"],
+      simple: { pov: "Percentage of Children in Low Income", children: "Children", measure: "Statistics Norway: children 0–17 in households with persistent low income (below 60% of the median, three-year period 2022–2024)", rules: "norway" },
+      chart: { type: "scatter", x: "Percentage of Children in Low Income", y: "Available Board Meetings" },
+      compare: { title: "Child low income: municipalities with vs. without meetings found", by: "Available Board Meetings",
+        metric: "Percentage of Children in Low Income", withLabel: "With 1+ meetings found", withoutLabel: "With no meetings found" },
+      localeNote: "Municipalities are grouped by an estimated locale (see below).",
+      localeDef: "Locales are estimates from population density (Eurostat's 2023 people per km² for each municipality; Finland's from children counted, divided by their share of the population, over the municipality's area): urban 2,000+ people per km², suburban 500–2,000, mixed town and country 100–500, rural under 100. They aren't the same as the US or Canadian locales.",
+      sizeYearNote: "Municipalities are grouped by pupils in compulsory school (grades 1–10, municipal and private) in autumn 2025 (Statistics Norway).",
+      note: "Norway's {rows} municipalities (kommuner), which run its primary and lower secondary schools; each has an elected council, and most have a committee for children and education (oppvekstutvalg or similar) that is the closest thing to a school board. Child low income is Statistics Norway's share of children 0–17 in households with persistent low income (below 60% of the median, over the three years 2022–2024), which isn't the same measure as the US, Canadian or other European rates; it isn't published for some small municipalities. Enrollment is pupils in compulsory school (grades 1–10, municipal and private) in autumn 2025. Meeting counts haven't been gathered yet, so every municipality shows 0.",
+      footer: "Norway municipalities as of November 2026. Sources are listed on the Sources tab." },
+    // Sweden: municipalities run schools. Child low income is the national statistics office's own measure.
+    { name: "Sweden", file: "data/sweden.csv", country: "SE", recordLabel: "Municipalities", textColumns: ["District ID", "Enrollment year"],
+      simple: { pov: "Percentage of Children in Low Income", children: "Children", measure: "Statistics Sweden: people 0–19 with a low economic standard (household income below 60% of the median, adjusted for household size), 2024", rules: "sweden" },
+      chart: { type: "scatter", x: "Percentage of Children in Low Income", y: "Available Board Meetings" },
+      compare: { title: "Child low income: municipalities with vs. without meetings found", by: "Available Board Meetings",
+        metric: "Percentage of Children in Low Income", withLabel: "With 1+ meetings found", withoutLabel: "With no meetings found" },
+      localeNote: "Municipalities are grouped by an estimated locale (see below).",
+      localeDef: "Locales are estimates from population density (Eurostat's 2023 people per km² for each municipality; Finland's from children counted, divided by their share of the population, over the municipality's area): urban 2,000+ people per km², suburban 500–2,000, mixed town and country 100–500, rural under 100. They aren't the same as the US or Canadian locales.",
+      sizeYearNote: "Municipalities are grouped by pupils in compulsory school (förskoleklass to year 9) living in the municipality, 2025 (Kolada).",
+      note: "Sweden's {rows} municipalities (kommuner), which run most of its schools; each has an elected council and a board (nämnd) for education, often called barn- och utbildningsnämnden, which is the closest thing to a school board. Independent schools (friskolor) are run by their own owners. Child low income is Statistics Sweden's share of people 0–19 with a low economic standard in 2024 (household income below 60% of the median), which isn't the same measure as the US, Canadian or other European rates. Enrollment is pupils in compulsory school (förskoleklass to year 9) living in the municipality, 2025 (Kolada). Meeting counts haven't been gathered yet, so every municipality shows 0.",
+      footer: "Sweden municipalities as of November 2026. Sources are listed on the Sources tab." },
+    // Finland: municipalities run schools. Child low income is the national statistics office's own measure.
+    { name: "Finland", file: "data/finland.csv", country: "FI", recordLabel: "Municipalities", textColumns: ["District ID", "Enrollment year"],
+      simple: { pov: "Percentage of Children in Low Income", children: "Children", measure: "THL (Sotkanet): children under 18 in low-income households (below 60% of the median), latest year 2022–2024", rules: "finland" },
+      chart: { type: "scatter", x: "Percentage of Children in Low Income", y: "Available Board Meetings" },
+      compare: { title: "Child low income: municipalities with vs. without meetings found", by: "Available Board Meetings",
+        metric: "Percentage of Children in Low Income", withLabel: "With 1+ meetings found", withoutLabel: "With no meetings found" },
+      localeNote: "Municipalities are grouped by an estimated locale (see below).",
+      localeDef: "Locales are estimates from population density (Eurostat's 2023 people per km² for each municipality; Finland's from children counted, divided by their share of the population, over the municipality's area): urban 2,000+ people per km², suburban 500–2,000, mixed town and country 100–500, rural under 100. They aren't the same as the US or Canadian locales.",
+      sizeYearNote: "Municipalities are grouped by pupils in comprehensive school (grades 1–9), 2025 (Statistics Finland).",
+      note: "Finland's {rows} municipalities (kunnat), which run almost all of its comprehensive schools; each has an elected council and an education committee (sivistyslautakunta or similar), the closest thing to a school board. Child low income is the share of children under 18 in low-income households (below 60% of the median), from THL's Sotkanet, latest year available (2022–2024); it isn't published for some small municipalities, mostly on Åland, and isn't the same measure as the US, Canadian or other European rates. Enrollment is comprehensive school pupils in 2025 (Statistics Finland). Meeting counts haven't been gathered yet, so every municipality shows 0.",
+      footer: "Finland municipalities as of November 2026. Sources are listed on the Sources tab." },
+    // Denmark: municipalities run schools. Child low income is the national statistics office's own measure.
+    { name: "Denmark", file: "data/denmark.csv", country: "DK", recordLabel: "Municipalities", textColumns: ["District ID", "Enrollment year"],
+      simple: { pov: "Percentage of Children in Low Income", children: "Children", measure: "Statistics Denmark: children 0–17 in relative poverty (below 50% of the median), 2024", rules: "denmark" },
+      chart: { type: "scatter", x: "Percentage of Children in Low Income", y: "Available Board Meetings" },
+      compare: { title: "Child low income: municipalities with vs. without meetings found", by: "Available Board Meetings",
+        metric: "Percentage of Children in Low Income", withLabel: "With 1+ meetings found", withoutLabel: "With no meetings found" },
+      localeNote: "Municipalities are grouped by an estimated locale (see below).",
+      localeDef: "Locales are estimates from population density (Eurostat's 2023 people per km² for each municipality; Finland's from children counted, divided by their share of the population, over the municipality's area): urban 2,000+ people per km², suburban 500–2,000, mixed town and country 100–500, rural under 100. They aren't the same as the US or Canadian locales.",
+      sizeYearNote: "Municipalities are grouped by pupils in primary and lower secondary school on 1 October 2025 (Statistics Denmark).",
+      note: "Denmark's {rows} municipalities (kommuner), which run its public primary and lower secondary schools (folkeskoler); each has an elected council and a children and schools committee (børne- og skoleudvalg or similar), the closest thing to a school board. Christiansø, which isn't part of a municipality, has no figures. Child poverty is Statistics Denmark's share of children 0–17 in relative poverty in 2024 (below 50% of the median income, a stricter line than most countries on this site use), so it isn't comparable with the other rates. Enrollment is pupils in primary and lower secondary school on 1 October 2025. Meeting counts haven't been gathered yet, so every municipality shows 0.",
+      footer: "Denmark municipalities as of November 2026. Sources are listed on the Sources tab." },
+    // Netherlands: municipalities run schools. Child low income is the national statistics office's own measure.
+    { name: "Netherlands", file: "data/netherlands.csv", country: "NL", recordLabel: "Municipalities", textColumns: ["District ID", "Enrollment year"],
+      simple: { pov: "Percentage of Children in Low Income", children: "Children", measure: "CBS: children in households below CBS's poverty line (its “not much but sufficient” budget), 2024", rules: "netherlands" },
+      chart: { type: "scatter", x: "Percentage of Children in Low Income", y: "Available Board Meetings" },
+      compare: { title: "Child low income: municipalities with vs. without meetings found", by: "Available Board Meetings",
+        metric: "Percentage of Children in Low Income", withLabel: "With 1+ meetings found", withoutLabel: "With no meetings found" },
+      localeNote: "Municipalities are grouped by an estimated locale (see below).",
+      localeDef: "Locales are estimates from population density (Eurostat's 2023 people per km² for each municipality; Finland's from children counted, divided by their share of the population, over the municipality's area): urban 2,000+ people per km², suburban 500–2,000, mixed town and country 100–500, rural under 100. They aren't the same as the US or Canadian locales.",
+      sizeYearNote: "Municipalities are grouped by pupils in primary, special and secondary education living in the municipality, 2025/26 (CBS).",
+      note: "The Netherlands' {rows} municipalities (gemeenten). Dutch schools are run by school boards (schoolbesturen), both public and private, which aren't tied to municipalities; the municipality funds school buildings, runs youth and education policy, and its elected council and committees (open to the public by law) are the closest local body with public meetings. Child poverty is the share of children in households below CBS's poverty line (its “not much but sufficient” budget) in 2024, which isn't the same measure as the US, Canadian or other European rates. Brielle, Hellevoetsluis and Westvoorne merged into Voorne aan Zee in 2023 and are shown as one. Enrollment is pupils in primary, special and secondary education living in the municipality, 2025/26 (CBS). Meeting counts haven't been gathered yet, so every municipality shows 0.",
+      footer: "Netherlands municipalities as of November 2026. Sources are listed on the Sources tab." }
   ],
   // "All" button: every US district, territory school system and Canadian board together.
   combined: {
-    name: "All: United States, U.S. territories, Canada, Saint-Pierre-et-Miquelon, the United Kingdom and Ireland", button: "All", recordLabel: "Districts and boards",
+    name: "All: United States, U.S. territories, Canada, Saint-Pierre-et-Miquelon, the United Kingdom, Ireland, the Nordic countries and the Netherlands", button: "All", recordLabel: "Districts and boards",
     textColumns: ["District ID"], metric: "Child poverty rate",
     measures: {
       us: "Children 5–17 in poverty (Census SAIPE 2024)",
@@ -90,8 +145,8 @@ window.SITE_CONFIG = {
       by: "Available Board Meetings", metric: "Child poverty rate",
       withLabel: "With 1+ available meetings", withoutLabel: "With no available meetings"
     },
-    note: "Every US school district, U.S. territory school system and Canadian school board on this site together ({rows}; meetings found for {withMeetings}). The child poverty rate isn't measured the same way everywhere: US districts use the Census share of children 5–17 in poverty, the territories mostly the 2020 Census, and Canada Statistics Canada's share of children 0–17 in low income (see the “Poverty measure” column). Meeting counts come from CivicSearch in the US and from the boards' own sites or YouTube channels in the territories and Canada. So treat comparisons across countries with care; the US, territory and Canada buttons have each one's full figures.",
-    footer: "Built from the United States, U.S. territories and Canada data. Sources for all three are listed on the Sources tab."
+    note: "Every school district, board and council-level body on this site together ({rows}; meetings found for {withMeetings}): US school districts, U.S. territory school systems, Canadian school boards, Saint-Pierre-et-Miquelon, UK councils, Irish Education and Training Boards, and the municipalities that run schools in Norway, Sweden, Finland and Denmark (and the Dutch municipalities, which fund but don't run schools). The child poverty rate isn't measured the same way anywhere: each row's “Poverty measure” column names its own, and Ireland and Saint-Pierre-et-Miquelon use unemployment as a stand-in. Meeting counts come from CivicSearch in the US and from the bodies' own sites or YouTube channels elsewhere; they haven't been gathered yet for the Nordic countries and the Netherlands. So treat comparisons across countries with care; each country's button has its full figures.",
+    footer: "Built from every country's data on this site. Sources are listed on the Sources tab."
   },
   // State menu: every state and DC. Each state's view is the national rows with this
   // State value.
