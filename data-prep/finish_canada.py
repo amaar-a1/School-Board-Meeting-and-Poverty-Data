@@ -27,7 +27,17 @@ def main(src, yt, dst):
             elif r.get("Meetings"):
                 counts[r["District ID"]] = (int(r["Meetings"]), r["Channel URL"])
     rows = list(csv.DictReader(open(src, newline="", encoding="utf-8")))
-    cols = ["District", "Province", "Board type", "Available Board Meetings", "Meetings source", "Children Ages 0-17",
+    # Enrolment from each province's figures (data-prep/canada_enrolment.py)
+    enr = {}
+    ef = os.path.join(os.path.dirname(os.path.abspath(__file__)), "inputs", "canada", "canada_enrolment.csv")
+    if os.path.exists(ef):
+        enr = {r["District ID"]: r for r in csv.DictReader(open(ef, newline="", encoding="utf-8"))}
+    # Hand-entered figures for boards with no provincial file (secondary sources noted)
+    xf = os.path.join(os.path.dirname(os.path.abspath(__file__)), "inputs", "canada", "canada_enrolment_extra.csv")
+    if os.path.exists(xf):
+        for r in csv.DictReader(open(xf, newline="", encoding="utf-8")):
+            enr.setdefault(r["District ID"], r)
+    cols = ["District", "Province", "Board type", "Locale", "Enrollment", "Enrollment year", "Enrollment note", "Available Board Meetings", "Meetings source", "Children Ages 0-17",
             "Children Ages 0-17 in Low Income", "Percentage of Children Ages 0-17 in Low Income", "How poverty was calculated",
             "Website", "District ID"]
     with open(dst, "w", newline="", encoding="utf-8") as f:
@@ -40,7 +50,12 @@ def main(src, yt, dst):
             r["District"] = re.sub(r"l'Ontari$", "l'Ontario", r["District"])   # cut short in Ontario's file
             if "Lloydminster" in r["District"]:
                 r["District"] = re.sub(r"^The ", "", r["District"]) + (" (Alberta side)" if r["Province"] == "AB" else " (Saskatchewan side)")
+            e = enr.get(r["District ID"], {})
             w.writerow({**{c: r.get(c, "") for c in cols}, "Province": NAMES[r["Province"]],
+                        "Enrollment": e.get("Enrollment", ""), "Enrollment year": e.get("Enrollment year", ""),
+                        "Enrollment note": "; ".join(x for x in [e.get("Enrollment note", ""),
+                            "Lloydminster's division reports to both provinces; this is this province's count, which may overlap with the other side's"
+                            if "Lloydminster" in r["District"] and e else ""] if x),
                         "Available Board Meetings": n, "Meetings source": url if n else "",
                         # Ontario's border file (2015) lists old web addresses, many of them dead.
                         "Website": "" if r["Province"] == "ON" else r.get("Website", "")})

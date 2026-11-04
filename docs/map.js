@@ -144,6 +144,8 @@
       (r.pseudo ? "Not a school board<br>" : `${esc(r["Board type"])} board<br>`) +
       `Children (0–17) in low income: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}${r.pseudo && !r.own ? " (province-wide rate)" : ""}<br>` +
       `Board meetings found: ${isNaN(meet) ? 0 : meet.toLocaleString()}` +
+      (toNumber(r.Enrollment) > 0 ? `<br>Enrollment: ${toNumber(r.Enrollment).toLocaleString()} (${esc(r["Enrollment year"])}${r["Enrollment note"] ? `; ${esc(r["Enrollment note"])}` : ""})` : "") +
+      (r.Locale ? `<br>Locale (estimated): ${esc(r.Locale)}` : "") +
       (note ? `<div class="tip-note">${esc(note)}</div>` : "") + "</div>";
   }
 

@@ -50,21 +50,26 @@ def low_income_by_csd(work):
     year = [h for h in head if h.startswith("Year")][0]
     total = [h for h in head if "Total - Individual low-income status based on low-income measure, after tax" in h][0]
     low = [h for h in head if h.endswith("In low income (LIM-AT)[2]")][0]
-    out, years, ages = {}, set(), set()
+    out, years, ages, pop = {}, set(), set(), {}
     for r in rows:
         if len(r) < len(head):
             continue   # footnote or blank lines
         years.add(r[col[year]]); ages.add(r[col[age]])
-        if not r[col[gender]].startswith("Total") or r[col[age]] != "0 to 17 years":
+        if not r[col[gender]].startswith("Total"):
             continue
         dg = r[col["DGUID"]]
         if dg[4:9] != "A0005":
             continue
+        if r[col[age]].startswith("Total"):   # everyone: used for the estimated locale
+            pop.setdefault(r[col[year]], {})[dg[-7:]] = float(r[col[total]] or 0)
+            continue
+        if r[col[age]] != "0 to 17 years":
+            continue
         out.setdefault(r[col[year]], {})[dg[-7:]] = (float(r[col[total]] or 0), float(r[col[low]] or 0))
     print("ages", sorted(ages), "years", sorted(years))
     y = max(out)   # latest income year
-    print("using income year", y, len(out[y]), "CSDs")
-    return out[y], y
+    print("using income year", y, len(out[y]), "CSDs;", len(pop.get(y, {})), "with total population")
+    return out[y], y, pop.get(y, {})
 
 
 def esri_geojson(url):
@@ -230,12 +235,24 @@ WIDE = [("Conseil scolaire francophone de la Colombie-Britannique", "BC", "Franc
 
 def main(work, outdir):
     os.makedirs(work, exist_ok=True); os.makedirs(outdir, exist_ok=True)
-    li, year = low_income_by_csd(work)
+    li, year, pop = low_income_by_csd(work)
     csd = gpd.read_file("zip://" + fetch("https://github.com/amaar-a1/School-Board-Meeting-and-Poverty-Data/releases/download/statcan-csd-2021/lcsd000b21a_e.zip", f"{work}/csd.zip")).to_crs(3347)
     csd["kids"] = csd.CSDUID.map(lambda u: li.get(u, (0, 0))[0])
     csd["low"] = csd.CSDUID.map(lambda u: li.get(u, (0, 0))[1])
     csd["geometry"] = csd.geometry.make_valid().buffer(0)
     csd["area"] = csd.geometry.area
+    # Estimated locale, after Statistics Canada's population centre sizes: large urban 100,000+
+    # people; medium 30,000-99,999 and small 1,000-29,999 for subdivisions with at least 150
+    # people per km2 (the OECD's rural cutoff); the rest are rural.
+    csd["pop"] = csd.CSDUID.map(lambda u: pop.get(u, 0))
+    dens = csd["pop"] / (csd["area"] / 1e6)
+    csd["loc"] = "Rural"
+    csd.loc[(dens >= 150) & (csd["pop"] >= 1000), "loc"] = "Small urban"
+    csd.loc[(dens >= 150) & (csd["pop"] >= 30000), "loc"] = "Medium urban"
+    # 100,000+ people is large urban at any density: amalgamated cities such as Halifax or Greater
+    # Sudbury take in so much rural land that their density falls under the cutoff.
+    csd.loc[csd["pop"] >= 100000, "loc"] = "Large urban"
+    print("CSD locales:", csd.groupby("loc").kids.sum().round().to_dict())
     csd["CD"] = csd.CSDUID.str[:4]
     # split counties used by two boards
     csd.loc[(csd.CD == "1208") & csd.CSDNAME.str.contains("West Hants", case=False), "CD"] = "1208W"
@@ -247,7 +264,7 @@ def main(work, outdir):
 
     rows, shapes = [], []
     poly = boards(work)
-    inter = gpd.overlay(csd[["CSDUID", "kids", "low", "area", "geometry"]], poly[["id", "geometry"]], how="intersection", keep_geom_type=True)
+    inter = gpd.overlay(csd[["CSDUID", "kids", "low", "area", "loc", "geometry"]], poly[["id", "geometry"]], how="intersection", keep_geom_type=True)
     inter["share"] = inter.geometry.area / inter["area"]
     # Land-area shares fail where nearly everyone lives in one small part of a huge
     # municipality. Wood Buffalo (AB): 68,002 of its 72,326 people (2021) live in the
@@ -258,16 +275,20 @@ def main(work, outdir):
     inter.loc[wb & fm, "share"] = 68002 / 72326
     inter.loc[wb & ~fm, "share"] = (72326 - 68002) / 72326 * inter.loc[wb & ~fm, "share"] / max(inter.loc[wb & ~fm, "share"].sum(), 1e-9)
     agg = inter.assign(k=inter.kids * inter.share, l=inter.low * inter.share).groupby("id")[["k", "l"]].sum()
+    # A board's locale: the class where most of its children live.
+    by_loc = inter.assign(k=inter.kids * inter.share).groupby(["id", "loc"]).k.sum().reset_index()
+    locale = by_loc.sort_values("k").groupby("id").tail(1).set_index("id")["loc"].to_dict()
+    top_loc = lambda sub: sub.groupby("loc").kids.sum().idxmax() if len(sub) and sub.kids.sum() else "Rural"
     for _, b in poly.iterrows():
         k, l = agg.loc[b.id] if b.id in agg.index else (0, 0)
-        rows.append({"id": b.id, "name": b["name"], "province": b.province, "type": b.type, "kids": round(k), "low": round(l),
+        rows.append({"id": b.id, "name": b["name"], "province": b.province, "type": b.type, "kids": round(k), "low": round(l), "locale": locale.get(b.id, "Rural"),
                      "method": "Census subdivisions inside the board's published border (split ones shared by land area)", "website": b.website})
         shapes.append({"id": b.id, "geometry": b.geometry})
 
     def from_cds(name, prov, typ, cds, how):
         sub = csd[csd.CD.isin(cds)]
         rows.append({"id": f"CA-{prov}-" + re.sub(r"\W+", "", name)[:40], "name": name, "province": prov, "type": typ,
-                     "kids": round(sub.kids.sum()), "low": round(sub.low.sum()), "method": how, "website": ""})
+                     "kids": round(sub.kids.sum()), "low": round(sub.low.sum()), "locale": top_loc(sub), "method": how, "website": ""})
         return sub.dissolve().geometry.iloc[0] if len(sub) else None
 
     for name, cds in NS_RCE.items():
@@ -286,7 +307,7 @@ def main(work, outdir):
         if pr not in outline:
             outline[pr] = sub.dissolve().geometry.iloc[0].simplify(500)
         rows.append({"id": f"CA-{prov}-" + re.sub(r"\W+", "", name)[:40], "name": name, "province": prov, "type": typ,
-                     "kids": round(sub.kids.sum()), "low": round(sub.low.sum()),
+                     "kids": round(sub.kids.sum()), "low": round(sub.low.sum()), "locale": "Province-wide",
                      "method": "Serves the whole province or territory, so its figures are province- or territory-wide", "website": ""})
         shapes.append({"id": rows[-1]["id"], "geometry": outline[pr]})
     ok = lambda v: isinstance(v, str) and v.strip() != ""
@@ -305,10 +326,10 @@ def main(work, outdir):
     shapes = [x for x in shapes if x["id"] not in gone]
     with open(f"{outdir}/canada.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["District", "Province", "Board type", "Children Ages 0-17", "Children Ages 0-17 in Low Income",
+        w.writerow(["District", "Province", "Board type", "Locale", "Children Ages 0-17", "Children Ages 0-17 in Low Income",
                     "Percentage of Children Ages 0-17 in Low Income", "How poverty was calculated", "Website", "District ID"])
         for r in sorted(rows, key=lambda r: (r["province"], r["name"])):
-            w.writerow([r["name"], r["province"], r["type"], r["kids"], r["low"], r["pct"], r["method"], r["website"], r["id"]])
+            w.writerow([r["name"], r["province"], r["type"], r["locale"], r["kids"], r["low"], r["pct"], r["method"], r["website"], r["id"]])
     # Map only: the part of a province outside every main board (in Ontario, the Far North:
     # unorganized land and First Nations reserves, whose schools First Nations or small school
     # authorities run). Shown with the province-wide rate and 0 meetings; not a row in canada.csv.

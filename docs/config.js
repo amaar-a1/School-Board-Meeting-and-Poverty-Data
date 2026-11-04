@@ -18,7 +18,7 @@ window.SITE_CONFIG = {
       footer: "Territory school systems as of October 30, 2026. Sources are listed on the Sources tab." },
     // Canada: its own button and its own provinces in the menu. Kept apart from the US figures,
     // because its low-income measure (ages 0-17, LIM-AT) isn't the same as the US one (ages 5-17, SAIPE).
-    { name: "Canada", file: "data/canada.csv", country: "CA", textColumns: ["District ID"], recordLabel: "Boards",
+    { name: "Canada", file: "data/canada.csv", country: "CA", recordLabel: "Boards",
       groups: { column: "Province", label: "Canada",
         names: { AB: "Alberta", BC: "British Columbia", MB: "Manitoba", NB: "New Brunswick", NL: "Newfoundland and Labrador",
           NS: "Nova Scotia", NT: "Northwest Territories", NU: "Nunavut", ON: "Ontario", PE: "Prince Edward Island", QC: "Quebec",
@@ -31,8 +31,10 @@ window.SITE_CONFIG = {
         withLabel: "With 1+ meetings found",
         withoutLabel: "With no meetings found"
       },
+      textColumns: ["District ID", "Enrollment year"],
       sizeNote: "Canada's data has no enrollment figures, so boards can't be grouped by size.",
-      note: "{rows} Canadian school boards and school service centres in every province and territory. Canada has no site like CivicSearch, so meeting counts are the board meetings each board has posted on its own YouTube channel (meetings found for {withMeetings} boards; the rest show 0, which can also mean the board streams elsewhere). Low income is Statistics Canada's after-tax low-income measure (LIM-AT) for children ages 0–17 from the 2021 Census (2020 incomes), worked out for each board from the census subdivisions inside its border; see the “How poverty was calculated” column. These figures aren't comparable with the US child poverty rates.",
+      sizeYearNote: "Boards are grouped by student enrollment from each province's latest published figures (see the “Enrollment year” column: mostly 2024–25 or 2025–26; Quebec September 2022; Saskatchewan September 30, 2024). A few boards' figures come from other sources and are noted in the “Enrollment note” column (the Northwest Territories' are full-time-equivalent grades 1–12). PEI's French board and the Yukon First Nation School Board have no figure yet.",
+      note: "{rows} Canadian school boards and school service centres in every province and territory. Canada has no site like CivicSearch, so meeting counts are the board meetings each board has posted on its own YouTube channel (meetings found for {withMeetings} boards; the rest show 0, which can also mean the board streams elsewhere). Low income is Statistics Canada's after-tax low-income measure (LIM-AT) for children ages 0–17 from the 2021 Census (2020 incomes), worked out for each board from the census subdivisions inside its border; see the “How poverty was calculated” column. These figures aren't comparable with the US child poverty rates. Enrollment comes from each province's latest published figures, with a few from other sources (see the “Enrollment note” column); none yet for PEI's French board or the Yukon First Nation School Board.",
       footer: "Canadian boards, borders and low-income figures as built in November 2026. Sources are listed on the Sources tab." }
   ],
   // "All" button: every US district, territory school system and Canadian board together.
@@ -45,6 +47,7 @@ window.SITE_CONFIG = {
       canada: "Children 0–17 in low income (Statistics Canada LIM-AT, 2021 Census)"
     },
     chart: { type: "scatter", x: "Child poverty rate", y: "Available Board Meetings" },
+    sizeYearNote: "Districts and boards are grouped by student enrollment: US districts 2023 (NCES); Canadian boards each province's latest published figures (none yet for PEI's French board or the Yukon First Nation School Board).",
     compare: {
       title: "Child poverty: with vs. without available board meetings (all countries)",
       by: "Available Board Meetings", metric: "Child poverty rate",

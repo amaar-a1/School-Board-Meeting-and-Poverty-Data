@@ -119,7 +119,9 @@
       `<li>${esc(r["Board type"])} board</li>` +
       `<li>Children ages 0–17 in low income: ${isNaN(pov) ? "not available" : pov.toFixed(1) + "%"}` +
       (num(r["Children Ages 0-17"]) > 0 ? ` (${num(r["Children Ages 0-17 in Low Income"]).toLocaleString()} of ${num(r["Children Ages 0-17"]).toLocaleString()} children)` : "") + `</li>` +
-      `<li>Board meetings found on YouTube: ${isNaN(meet) ? 0 : meet.toLocaleString()}</li></ul>` +
+      `<li>Board meetings found on YouTube: ${isNaN(meet) ? 0 : meet.toLocaleString()}</li>` +
+      (num(r.Enrollment) > 0 ? `<li>Enrollment: ${num(r.Enrollment).toLocaleString()} (${esc(r["Enrollment year"])}${r["Enrollment note"] ? `; ${esc(r["Enrollment note"])}` : ""})</li>` : "") +
+      (r.Locale ? `<li>Locale (estimated): ${esc(r.Locale)}</li>` : "") + `</ul>` +
       `<p class="ask-note">${esc(r["How poverty was calculated"] || "")}. Canada's low-income measure (LIM-AT, 2021 Census) isn't the same as the US child poverty rate.</p></div>`;
   }
 
@@ -146,7 +148,7 @@
     const list = rows.filter((r) => !isNaN(val(r, m)))
       .sort((a, b) => (val(a, m) - val(b, m)) * (low ? 1 : -1)).slice(0, n);
     const mLabel = rows.length && rows[0]._ca && m.caLabel ? m.caLabel : m.label;
-    if (!list.length) return `I couldn't find any ${esc(label)} with a ${mLabel}${rows.some((r) => r._ca) && metricKey === "enrollment" ? " (Canada's data has no enrollment figures)" : ""}.`;
+    if (!list.length) return `I couldn't find any ${esc(label)} with a ${mLabel}${rows.some((r) => r._ca) && metricKey === "enrollment" ? " (a few Canadian boards have no enrollment figure)" : ""}.`;
     if (metricKey === "meetings" && !low && num(list[0][MEET]) === 0) return `None of the ${esc(label)} have available board meetings on record.`;
     return `<p>${low ? "Lowest" : "Highest"} ${mLabel} among ${esc(label)}:</p><ol>` +
       list.map((r) => `<li>${esc(r.District)}${stateList.length === 1 ? "" : `, ${esc(r._place)}`}: ${m.fmt(val(r, m))}</li>`).join("") + "</ol>";
