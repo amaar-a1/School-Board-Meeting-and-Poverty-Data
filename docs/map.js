@@ -130,7 +130,7 @@
     const pov = toNumber(r["Percentage of Children Ages 5-17 in Poverty"]);
     const meet = toNumber(r["Available Board Meetings"]);
     const enr = toNumber(r.Enrollment);
-    const note = [r["Map note"], r.Notes || r["Poverty figures"], r["Other meetings source"] && `Other meetings: ${r["Other meetings source"]}`].filter(Boolean).join(". ");
+    const note = [r["Map note"], r.Notes || r["Poverty figures"], r["Meetings note"], r["Other meetings source"] && `Other meetings: ${r["Other meetings source"]}`].filter(Boolean).join(". ");
     return `<div class="map-tip"><strong>${esc(r.District)}${place ? `, ${esc(place)}` : ""}</strong>` +
       `Child poverty: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>` +
       `Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}` +
@@ -275,6 +275,13 @@
       });
       if (name !== "scsd" && name !== "canada2") layers[name].addTo(map);
     });
+    // Saint-Pierre-et-Miquelon is tiny and has no poverty figure, so a label keeps its meeting count visible.
+    const spmRow = lookup["FR-SPM"];
+    if (spmRow && layers.spm && layers.spm.getLayers().length) {
+      const n = toNumber(spmRow["Available Board Meetings"]);
+      L.marker(layers.spm.getBounds().getCenter(), { interactive: false, keyboard: false,
+        icon: L.divIcon({ className: "map-label", html: `Saint-Pierre-et-Miquelon<br><b>${isNaN(n) ? 0 : n} meetings</b> (Territorial Council)`, iconSize: [190, 34], iconAnchor: [-14, 17] }) }).addTo(map);
+    }
     const sel = $("map-jump");
     sel.add(new Option("—", ""));
     Object.keys(JUMPS).forEach((k) => sel.add(new Option(k, k)));
