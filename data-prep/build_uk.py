@@ -72,6 +72,14 @@ def main():
                     "Children Under 16": round(k) if k else "", "Children Under 16 in Low Income": round(n) if n else "",
                     "Percentage of Children Under 16 in Low Income": f"{100 * n / k:.2f}%" if k else "",
                     "Enrollment": round(enr) if enr else "", "Enrollment year": ey if enr else "", "District ID": "UK-" + rid})
+    # Meetings: council committee meetings on YouTube (data-prep/uk_youtube.py), with hand-checked fixes
+    yt = {r["District ID"]: r for r in csv.DictReader(open(os.path.join(IN, "uk_youtube.csv"), encoding="utf-8"))} if os.path.exists(os.path.join(IN, "uk_youtube.csv")) else {}
+    bad = {r["District"] for r in csv.DictReader(open(os.path.join(IN, "uk_channels.csv"), encoding="utf-8"))} if os.path.exists(os.path.join(IN, "uk_channels.csv")) else set()
+    for r in out:
+        y = yt.get(r["District ID"], {})
+        n = int(y.get("Meetings") or 0) if r["District"] not in bad else 0
+        r["Available Board Meetings"] = n
+        r["Meetings source"] = y.get("Channel URL", "") if n else ""
     out.sort(key=lambda r: (r["Nation"], r["District"]))
     with open(OUT_CSV, "w", newline="", encoding="utf-8") as fo:
         w = csv.DictWriter(fo, fieldnames=list(out[0])); w.writeheader(); w.writerows(out)

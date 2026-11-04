@@ -107,9 +107,10 @@ window.SOURCES = [
       { title: "Scotland pupils: Pupil census supplementary statistics 2025, Table 5.2", url: "https://www.gov.scot/publications/pupil-census-supplementary-statistics/" },
       { title: "Wales pupils: Schools' census results, January 2025, Table 5", url: "https://www.gov.wales/schools-census-results-january-2025" },
       { title: "Northern Ireland pupils: Annual enrolments at schools and in funded pre-school education, 2025/26 (primary 164,713, post-primary 156,766, special 7,729)", url: "https://datavis.nisra.gov.uk/DEstatistics/annual-enrolments-schools-and-funded-pre-school-education-northern-ireland-202526.html" },
-      { title: "Borders: ONS Counties and Unitary Authorities (December 2024) Boundaries UK BUC", url: "https://geoportal.statistics.gov.uk/" }
+      { title: "Borders: ONS Counties and Unitary Authorities (December 2024) Boundaries UK BUC", url: "https://geoportal.statistics.gov.uk/" },
+      { title: "Meetings: each council's own YouTube channel (listed in the “Meetings source” column); videos whose titles name an education, schools, children's or young people's committee, panel or forum", url: "https://www.youtube.com/" }
     ],
-    note: "England's pupil counts come from the register of schools (each school's latest census figure), so they can differ a little from the published census totals. Northern Ireland's Education Authority covers all 11 of its council areas."
+    note: "England's pupil counts come from the register of schools (each school's latest census figure), so they can differ a little from the published census totals. Northern Ireland's Education Authority covers all 11 of its council areas. Channels the search wrongly matched (for example Bradford on Avon Town Council for Bradford) were checked by hand and left out (data-prep/inputs/uk/uk_channels.csv)."
   },
   {
     only: "Saint-Pierre-et-Miquelon (France)",
