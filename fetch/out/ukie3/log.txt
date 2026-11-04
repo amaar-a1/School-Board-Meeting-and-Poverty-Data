@@ -1,0 +1,12 @@
+converted fetch/out/ukie2/dwp_cilif_2022_2025.ods: ['Cover', 'Contents', 'Guidance', 'Notes', '1_AHC_Relative_Region', '2_AHC_Relative_LA', '3_AHC_Relative_ParlC_', '4_AHC_Relative_Ward', '5_BHC_Relative_Region', '6_BHC_Absolute_Region', '7_BHC_Relative_LA', '8_BHC_Absolute_LA', '9_BHC_Relative_ParlC', '10_BHC_Absolute_ParlC', '11_BHC_Relative_Ward', '12_BHC_Absolute_Ward']
+convert failed fetch/out/ukie2/wales_schools-census-results-january-2025.ods: Unrecognized type error
+ok 64733770 https://ea-edubase-api-prod.azurewebsites.net/edubase/downloads/public/edubasealldata20261104.csv -> None
+GIAS columns kept: ['LA (code)', 'LA (name)', 'TypeOfEstablishment (name)', 'EstablishmentTypeGroup (name)', 'EstablishmentStatus (name)', 'PhaseOfEducation (name)', 'CensusDate', 'NumberOfPupils']
+ok 105375 https://data.gov.ie/api/3/action/package_search?q=census+2022+principal+economic+status+county&rows=15 -> None
+FAIL https://www.pobal.ie/wp-content/uploads/2024/01/hp-deprivation-index-scores-2022.csv: <urlopen error [Errno 110] Connection timed out>
+ok 97709 https://data.gov.ie/api/3/action/package_search?q=post+primary+schools+enrolment+2024&rows=15&sort=metadata_modified+desc -> None
+ok 35515 https://www.education-ni.gov.uk/publications/school-enrolments-northern-ireland-summary-data -> ni_school-enrolments-northern-ireland-summary-data.html
+ok 29827 https://www.education-ni.gov.uk/sites/default/files/2026-03/Children%20in%20Irish%20Medium%20Education%20%202001-02%20to%202025-26.xlsx -> ni_Children%20in%20Irish%20Medium%20Education%20%2020
+ok 33975 https://www.education-ni.gov.uk/sites/default/files/2026-03/Percentage%20pupils%20entitled%20to%20free%20school%20meals%202001-02%20to%202025-26.xlsx -> ni_Percentage%20pupils%20entitled%20to%20free%20schoo
+ok 26984 https://www.education-ni.gov.uk/sites/default/files/2026-03/Newcomer%20pupils%202001-02%20to%202025-26.xlsx -> ni_Newcomer%20pupils%202001-02%20to%202025-26.xlsx
+ok 40964 https://www.education-ni.gov.uk/articles/school-enrolments-overview -> ni_school-enrolments-overview.html
