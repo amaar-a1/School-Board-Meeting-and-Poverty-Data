@@ -1,0 +1,446 @@
+[
+ [
+  "84732NED",
+  "Caribisch NL; leerlingen en studenten in po, vo en mbo",
+  "2009/'10 - 2025/'26",
+  "2026-03-18T15:30:00"
+ ],
+ [
+  "86132NED",
+  "Armoede van kinderen; persoons- en huishoudenskenmerken, regio (2025)",
+  "2018-2024",
+  "2025-12-17T06:30:00"
+ ],
+ [
+  "86131NED",
+  "Armoede van personen; persoons- en huishoudenskenmerken, regio (2025)",
+  "2018-2024",
+  "2025-12-17T06:30:00"
+ ],
+ [
+  "86202NED",
+  "Laag en langdurig laag inkomen; huishoudenskenmerken, regio (indeling 2025)",
+  "2011 t/m 2024",
+  "2026-10-27T02:00:00"
+ ],
+ [
+  "86127NED",
+  "Armoede van personen; persoons- en huishoudenskenmerken",
+  "2018-2024",
+  "2025-12-17T06:30:00"
+ ],
+ [
+  "86128NED",
+  "Armoede van kinderen; persoons- en huishoudenskenmerken",
+  "2018-2024",
+  "2025-12-17T06:30:00"
+ ],
+ [
+  "86130NED",
+  "Intensiteit van armoede; huishoudenskenmerken",
+  "2018-2024",
+  "2025-12-17T06:30:00"
+ ],
+ [
+  "83841NED",
+  "Laag en langdurig laag inkomen van huishoudens; huishoudenskenmerken",
+  "2011-2024",
+  "2026-10-27T02:00:00"
+ ],
+ [
+  "83842NED",
+  "Laag en langdurig laag inkomen van personen; huishoudenskenmerken",
+  "2011-2024",
+  "2026-10-27T02:00:00"
+ ],
+ [
+  "83843NED",
+  "Laag en langdurig laag inkomen van personen; persoonskenmerken",
+  "2011-2024",
+  "2026-10-27T02:00:00"
+ ],
+ [
+  "86358NED",
+  "Kerncijfers wijken en buurten 2026",
+  "2026",
+  "2026-10-15T02:00:00"
+ ],
+ [
+  "86165NED",
+  "Kerncijfers wijken en buurten 2025",
+  "2025",
+  "2026-10-15T02:00:00"
+ ],
+ [
+  "85984NED",
+  "Kerncijfers wijken en buurten 2024",
+  "2024",
+  "2026-10-15T02:00:00"
+ ],
+ [
+  "85618NED",
+  "Kerncijfers wijken en buurten 2023",
+  "2023",
+  "2026-03-31T02:00:00"
+ ],
+ [
+  "85318NED",
+  "Kerncijfers wijken en buurten 2022",
+  "2022",
+  "2025-03-27T02:00:00"
+ ],
+ [
+  "85039NED",
+  "Kerncijfers wijken en buurten 2021",
+  "2021",
+  "2024-12-20T02:00:00"
+ ],
+ [
+  "84799NED",
+  "Kerncijfers wijken en buurten 2020",
+  "2020",
+  "2025-09-16T02:00:00"
+ ],
+ [
+  "84583NED",
+  "Kerncijfers wijken en buurten 2019",
+  "2019",
+  "2024-05-02T02:00:00"
+ ],
+ [
+  "84286NED",
+  "Kerncijfers wijken en buurten 2018",
+  "2018",
+  "2023-06-30T02:00:00"
+ ],
+ [
+  "85380NED",
+  "Vo; leerlingen, onderwijssoort, leerjaar, woonregio",
+  "2021/'22-2025/'26",
+  "2026-04-02T02:00:00"
+ ],
+ [
+  "85701NED",
+  "Leerlingen en studenten; onderwijssoort, woonregio",
+  "2011/'12-2025/'26",
+  "2026-04-14T02:00:00"
+ ],
+ [
+  "85489NED",
+  "Leerlingen in (speciaal) basisonderwijs; herkomst, woonregio",
+  "2011/'12 - 2025/'26",
+  "2026-03-02T02:00:00"
+ ],
+ [
+  "85490NED",
+  "Leerlingen op speciale scholen; herkomst, woonregio",
+  "2011/'12 - 2025/'26",
+  "2026-03-02T02:00:00"
+ ],
+ [
+  "71478ned",
+  "(Speciaal) basisonderwijs en speciale scholen; leerlingen, schoolregio",
+  "2000/'01-2025/'26",
+  "2026-04-10T02:00:00"
+ ],
+ [
+  "85379NED",
+  "Vo; leerlingen, onderwijssoort in detail, leerjaar, herkomst",
+  "2020/'21-2025/'26",
+  "2026-10-01T02:00:00"
+ ],
+ [
+  "37220",
+  "Leerlingen en studenten; onderwijssoort, vanaf 1900",
+  "1900/'01 - 2025/'26",
+  "2026-04-30T02:00:00"
+ ],
+ [
+  "81869NED",
+  "Caribisch NL; leerlingen, onderwijssoort, leeftijd 2009/'10-2017/'18",
+  "2009/'10 t/m 2017/'18",
+  "2018-02-23T15:30:00"
+ ],
+ [
+  "84311NED",
+  "Caribisch NL; leerlingen in het po en vo, geslacht 2009/'10 - 2018/'19",
+  "2009/'10 - 2018/'19",
+  "2018-12-14T15:30:00"
+ ],
+ [
+  "71713ned",
+  "Part. huishoudens met (langdurig) laag inkomen/rond sociaal minimum, 2005",
+  "2005**.",
+  "2008-11-21T09:51:00"
+ ],
+ [
+  "71374ned",
+  "Particuliere huishoudens met laag inkomen / rond soc. minimum, 2004",
+  "2004.",
+  "2007-04-20T13:41:00"
+ ],
+ [
+  "71343ned",
+  "Particuliere huishoudens met laag inkomen / rond sociaal minimum, 2003",
+  "2003.",
+  "2010-02-15T02:00:00"
+ ],
+ [
+  "71362ned",
+  "Particuliere huish. met laag inkomen / rond soc. minimum, na revisie, 2002",
+  "2002.",
+  "2010-02-15T02:00:00"
+ ],
+ [
+  "71325ned",
+  "Particuliere huish.met laag inkomen / rond soc. minimum, na revisie, 2001",
+  "2001.",
+  "2010-02-15T02:00:00"
+ ],
+ [
+  "86006NED",
+  "Laag en langdurig laag inkomen; huishoudenskenmerken, regio (indeling 2024)",
+  "2011-2023",
+  "2024-11-01T02:00:00"
+ ],
+ [
+  "85678NED",
+  "Laag en langdurig laag inkomen; huishoudenskenmerken, regio (indeling 2023)",
+  "2011-2022",
+  "2023-11-08T02:00:00"
+ ],
+ [
+  "85066NED",
+  "Laag en langdurig laag inkomen; kenmerken, regio (indeling 2021) 2011-2020",
+  "2011-2020",
+  "2021-12-08T02:00:00"
+ ],
+ [
+  "84868NED",
+  "Laag en langdurig laag inkomen; kenmerken, regio (indeling 2020) 2011-2019",
+  "2011-2019",
+  "2020-12-02T02:00:00"
+ ],
+ [
+  "85344NED",
+  "Laag en langdurig laag inkomen; huishoudenskenmerken, regio (indeling 2022)",
+  "2011-2021",
+  "2022-12-02T02:00:00"
+ ],
+ [
+  "84641NED",
+  "Laag en langdurig laag inkomen; huishoudenskenmerken, regio (indeling 2019)",
+  "2011-2018",
+  "2019-12-09T09:30:00"
+ ],
+ [
+  "84355NED",
+  "Laag en langdurig laag inkomen; huishoudenskenmerken, regio (indeling 2018)",
+  "2011 - 2017",
+  "2018-11-13T02:00:00"
+ ],
+ [
+  "83921NED",
+  "Laag en langdurig laag inkomen; huishoudenskenmerken, regio (indeling 2017)",
+  "2011 - 2016",
+  "2018-05-01T02:00:00"
+ ],
+ [
+  "80861ned",
+  "Laag en langdurig laag inkomen; huishoudenskenmerken en regio, 2005-2014",
+  "2005-2014",
+  "2016-12-16T02:00:00"
+ ],
+ [
+  "70738ned",
+  "Laag en langdurig laag inkomen; part. huishoudens naar kenmerken, 2000-2014",
+  "2000*, 2001 - 2014.",
+  "2017-02-08T02:00:00"
+ ],
+ [
+  "70741ned",
+  "Laag en langdurig laag inkomen; personen in part. huishoudens, 2000-2014",
+  "2000*, 2001 - 2014.",
+  "2017-02-08T02:00:00"
+ ],
+ [
+  "71222ned",
+  "Part. huish. (52 wk. ink.) als basis voor huish. met laag inkomen, 2002",
+  "2002.",
+  "2006-07-06T13:11:00"
+ ],
+ [
+  "70103NED",
+  "Personen met laag inkomen: stand, in- en uitstroom",
+  "1992 - 2000",
+  "2003-07-28T13:45:00"
+ ],
+ [
+  "83765NED",
+  "Kerncijfers wijken en buurten 2017",
+  "2017",
+  "2023-07-14T02:00:00"
+ ],
+ [
+  "83487NED",
+  "Kerncijfers wijken en buurten 2016",
+  "2016",
+  "2023-07-14T02:00:00"
+ ],
+ [
+  "83220NED",
+  "Kerncijfers wijken en buurten 2015",
+  "2015",
+  "2018-07-27T02:00:00"
+ ],
+ [
+  "82931NED",
+  "Kerncijfers wijken en buurten 2014",
+  "2014",
+  "2018-07-27T02:00:00"
+ ],
+ [
+  "82339NED",
+  "Kerncijfers wijken en buurten 2013",
+  "2013",
+  "2018-07-27T02:00:00"
+ ],
+ [
+  "70904ned",
+  "Kerncijfers wijken en buurten 2009-2012",
+  "2009 - 2012",
+  "2014-12-10T02:00:00"
+ ],
+ [
+  "81903NED",
+  "Kerncijfers wijken en buurten 2004-2008",
+  "2004-2008",
+  "2013-05-03T09:30:00"
+ ],
+ [
+  "80868ned",
+  "Kerncijfers wijken en buurten 2003",
+  "2003",
+  "2012-12-14T02:00:00"
+ ],
+ [
+  "70139NED",
+  "Kerncijfers wijken en buurten 2001",
+  "2001",
+  "2012-12-14T02:00:00"
+ ],
+ [
+  "37681",
+  "Kerncijfers wijken en buurten 1999",
+  "1999",
+  "2012-12-14T02:00:00"
+ ],
+ [
+  "37515",
+  "Kerncijfers wijken en buurten 1997",
+  "1997",
+  "2012-12-14T02:00:00"
+ ],
+ [
+  "37108",
+  "Kerncijfers wijken en buurten 1995",
+  "1995",
+  "2013-02-27T02:00:00"
+ ],
+ [
+  "80043ned",
+  "Vo; leerlingen, onderwijssoort, leerjaar, mig.acht., gen. 2003/'04-2021/'22",
+  "2003/'04 - 2021/'22",
+  "2022-04-22T02:00:00"
+ ],
+ [
+  "80042ned",
+  "Vo; leerlingen, onderwijssoort, regio in detail 2003/'04-2021/'22",
+  "2003/'04 - 2021/'22",
+  "2022-04-22T02:00:00"
+ ],
+ [
+  "80040ned",
+  "Vo; leerlingen, onderwijssoort in detail, leerjaar 2003/'04-2021/'22",
+  "2003/'04 - 2021/'22",
+  "2022-04-22T02:00:00"
+ ],
+ [
+  "71832ned",
+  "Leerlingen VO; aandeel medeleerlingen naar herkomst; 2003-2006",
+  "2003 - 2006",
+  "2011-11-18T02:00:00"
+ ],
+ [
+  "71215ned",
+  "Voortgezet onderwijs; deelname van de leerlingen naar herkomstgroepering",
+  "2003/'04 - 2007/'08*",
+  "2008-04-28T02:00:00"
+ ],
+ [
+  "70134ned",
+  "Leerlingen en geslaagden naar schoolgemeente, 2000-2005",
+  "2000/'01 - 2005/'06.",
+  "2008-03-05T11:56:00"
+ ],
+ [
+  "71450ned",
+  "Leerlingen en studenten; onderwijssoort, woonregio 2000/'01-2022/'23",
+  "2000/'01 - 2022/'23",
+  "2023-06-16T02:00:00"
+ ],
+ [
+  "83295NED",
+  "Leerlingen (speciaal) basisonderwijs; migratieachtergrond 2011-2021",
+  "2011/'12 - 2021/'22",
+  "2022-04-22T02:00:00"
+ ],
+ [
+  "83296NED",
+  "Leerlingen op speciale scholen; migratieachtergrond, woonregio 2011-2021",
+  "2011/'12 - 2021/'22",
+  "2022-04-22T02:00:00"
+ ],
+ [
+  "7097kuno",
+  "Instellingen kunstzinnige vorming; leerlingen, exploitatie; naar regio",
+  "1993 - 2007.",
+  "2009-06-23T02:00:00"
+ ],
+ [
+  "37746sol",
+  "Speciale scholen; leerlingen, schooltype, leeftijd 1991-2013",
+  "1991/'92 - 2013/'14",
+  "2015-08-19T02:00:00"
+ ],
+ [
+  "80041ned",
+  "Vo; leerlingen, onderwijssoort, leerjaar, leeftijd 2003/'04-2021/'22",
+  "2003/'04 - 2021/'22",
+  "2022-04-22T02:00:00"
+ ],
+ [
+  "37545vol",
+  "Voortgezet onderwijs; leerlingen 1990/'91 t/m 2002/'03",
+  "1990/'91 - 2002/'03",
+  "2013-06-12T02:00:00"
+ ],
+ [
+  "70749ned",
+  "Leerlingenstroom: 10 jaar na de brugklas (schooljaar 1992/1993)",
+  "1993",
+  "2004-01-16T13:36:00"
+ ],
+ [
+  "70762ned",
+  "In-, door- en uitstroom van leerlingen 1995/'96 - 2008/'09",
+  "1995/'96 - 2008/'09",
+  "2011-02-11T02:00:00"
+ ],
+ [
+  "7101kuvo",
+  "Instellingen kunstzinnige vorming; leerlingen, personeel, exploitatie",
+  "1993 - 2007.",
+  "2009-06-23T02:00:00"
+ ]
+]
