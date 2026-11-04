@@ -1,0 +1,6 @@
+ok 85222 https://www.arcgis.com/sharing/rest/search?q=Local+Authorities+Ireland+boundaries&f=json&num=25
+ok 51612 https://www.arcgis.com/sharing/rest/search?q=Administrative+Areas+OSi+National+Statutory+Boundaries&f=json&num=25
+ok 110324 https://www.arcgis.com/sharing/rest/search?q=Local+Authority+Boundaries+Ireland+2019&f=json&num=25
+ok 118064 https://www.arcgis.com/sharing/rest/search?q=Ireland+local+authorities+Esri+Ireland&f=json&num=25
+ok 3178 https://services1.arcgis.com/mJI7JYqAOKXPG7Hh/arcgis/rest/services/Local_Authority_Administrative_Areas/FeatureServer?f=json
+ok 192060 https://services1.arcgis.com/mJI7JYqAOKXPG7Hh/arcgis/rest/services/Local_Authority_Administrative_Areas/FeatureServer/0/query?where=1%3D1&outFields=*&
