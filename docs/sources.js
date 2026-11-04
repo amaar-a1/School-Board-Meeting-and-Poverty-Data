@@ -98,6 +98,18 @@ window.SOURCES = [
     note: "Other Vermont districts may post meetings on their own websites or local public-access TV stations (for example The Media Factory, CCTV or ORCA Media), which haven't been checked, so Vermont's counts are incomplete. These counts are in the separate “Other Board Meetings” column. The Available Board Meetings column, and every total, comparison, chart and filter, use CivicSearch only; the map's meetings colors use these counts where CivicSearch has none."
   },
   {
+    only: "Ireland",
+    group: "Ireland: Education and Training Boards, unemployment and children",
+    items: [
+      { title: "ETB areas: Education and Training Boards Act 2013, Schedule 1 (each ETB's local authority areas)", url: "https://www.irishstatutebook.ie/eli/2013/act/11/schedule/1/enacted/en/html" },
+      { title: "Unemployment (stand-in for poverty): CSO Census 2022, SAP2022T8T1LEA22, population aged 15 and over by principal economic status (local electoral areas, added up by council area)", url: "https://data.gov.ie/dataset/sap2022t8t1lea22-population-aged-15-years-and-over-by-principal-economic-status-and-sex" },
+      { title: "Children 5–17 and council borders: CSO Census 2022 Census Hub, Table 1.1 by local authority", url: "https://services-eu1.arcgis.com/BuS9rtTsYEV5C0xh/arcgis/rest/services/CensusHub2022_T1_1_LA/FeatureServer" },
+      { title: "Meetings: the ETBs' YouTube channels (no board meetings posted)", url: "https://www.youtube.com/" },
+      { title: "ETB sector overview (Education and Training Boards Ireland)", url: "https://www.etbi.ie/" }
+    ],
+    note: "The Department of Education's school list couldn't be downloaded (gov.ie refused automated access), so there's no enrollment by ETB. The unemployment rate counts people who say their main status is unemployed or looking for a first job."
+  },
+  {
     only: "United Kingdom",
     group: "United Kingdom: councils, child low income and pupils",
     items: [

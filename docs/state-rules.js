@@ -90,5 +90,14 @@ window.STATE_RULES = {
         rule: "Not a council; it publishes board papers and minutes. No requirement to record or broadcast was found." }
     ],
     note: "The UK has no elected school boards: councils (and Northern Ireland's Education Authority) run state schools. These are the rules for their meetings; check the current law before relying on them."
+  },
+  // Ireland: Education and Training Boards.
+  ireland: {
+    checked: "November 4, 2026",
+    laws: [
+      { state: "Ireland", covers: "Education and Training Boards", threshold: "",
+        rule: "Each ETB board (councillors, staff and parent representatives and community members) meets in public under the Education and Training Boards Act 2013 and publishes minutes; no requirement to record or stream meetings was found." }
+    ],
+    note: "ETBs run some of Ireland's schools; most are run by other patron bodies (often religious), which have no public board meetings."
   }
 };

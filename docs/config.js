@@ -57,17 +57,26 @@ window.SITE_CONFIG = {
       },
       sizeYearNote: "Councils are grouped by pupils in state-funded schools: England January 2026 (register of schools), Scotland September 2025, Wales January 2025, Northern Ireland October 2025.",
       note: "{rows} UK education authorities: England's 153 upper-tier councils (counties, unitary authorities, metropolitan and London boroughs), Scotland's 32 and Wales's 22 councils, and Northern Ireland's Education Authority. The UK has no elected school boards; these councils (and Northern Ireland's Education Authority) run state schools, and their education or children's services committees are the closest thing. Child low income is the Department for Work and Pensions' share of children under 16 in relative low income before housing costs, financial year ending 2025, which isn't the same measure as the US or Canadian rates. Meetings are recordings of the council's education, schools or children's committee meetings (including its Schools Forum) on its own YouTube channel, found for {withMeetings} councils; many councils webcast on their own sites instead, which weren't counted, so 0 can also mean that.",
-      footer: "UK education authorities as of November 2026. Sources are listed on the Sources tab." }
+      footer: "UK education authorities as of November 2026. Sources are listed on the Sources tab." },
+    // Ireland: its own button. No local child poverty rate, so Census 2022 unemployment stands in.
+    { name: "Ireland", file: "data/ireland.csv", country: "IE", recordLabel: "Boards", textColumns: ["District ID"],
+      chart: { type: "bar", x: "District", y: "Unemployment rate (stand-in for poverty)" },
+      compare: { title: "Unemployment (stand-in for poverty): boards with vs. without meetings found", by: "Available Board Meetings",
+        metric: "Unemployment rate (stand-in for poverty)", withLabel: "With 1+ meetings found", withoutLabel: "With no meetings found" },
+      sizeNote: "Enrollment by Education and Training Board isn't published openly, so boards can't be grouped by size.",
+      note: "Ireland's 16 Education and Training Boards (ETBs), the elected-and-appointed local boards that run about a quarter of post-primary schools (community colleges and community schools), Community National Schools and further education. Each covers one or more council areas; most primary and secondary schools are run by other patron bodies, so ETBs aren't a full equivalent of a US school board. Ireland publishes no local child poverty rate, so the unemployment rate from Census 2022 stands in for it (people looking for a first job or unemployed, out of everyone working or looking for work); it isn't comparable with the child poverty rates elsewhere on this site. No ETB posts its board meetings on YouTube (their channels show school and course videos); ETBs publish board minutes on their own websites instead, which weren't counted.",
+      footer: "Irish Education and Training Boards as of November 2026. Sources are listed on the Sources tab." }
   ],
   // "All" button: every US district, territory school system and Canadian board together.
   combined: {
-    name: "All: United States, U.S. territories, Canada, Saint-Pierre-et-Miquelon and the United Kingdom", button: "All", recordLabel: "Districts and boards",
+    name: "All: United States, U.S. territories, Canada, Saint-Pierre-et-Miquelon, the United Kingdom and Ireland", button: "All", recordLabel: "Districts and boards",
     textColumns: ["District ID"], metric: "Child poverty rate",
     measures: {
       us: "Children 5–17 in poverty (Census SAIPE 2024)",
       territories: "Children 5–17 in poverty (Census; 2020 Census for all but Puerto Rico)",
       canada: "Children 0–17 in low income (Statistics Canada LIM-AT, 2021 Census)",
       uk: "Children under 16 in relative low income before housing costs (DWP, financial year ending 2025)",
+      ireland: "Unemployment rate, Census 2022 (CSO): a stand-in, since no local child poverty rate is published in Ireland",
       france: "Unemployment rate, 2015 estimate (CIA World Factbook): a stand-in, since no poverty rate is published for Saint-Pierre-et-Miquelon"
     },
     chart: { type: "scatter", x: "Child poverty rate", y: "Available Board Meetings" },
