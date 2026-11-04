@@ -1,12 +1,12 @@
-# Temporary: Nordics + Netherlands part 3: the data (child low income, pupils).
+# Temporary: Nordics + Netherlands part 4: corrected data queries.
 import json, os, re, time, urllib.parse, urllib.request
-OUT = "fetch/out/nordic3"; os.makedirs(OUT, exist_ok=True)
+OUT = "fetch/out/nordic4"; os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "school-board-research-script (github.com/amaar-a1)", "Accept": "application/json, */*"}
 log = []
-def get(url, name=None, data=None, ctype="application/json"):
+def get(url, name=None, data=None):
     time.sleep(1.5)
     try:
-        h = dict(UA); h["Content-Type"] = ctype
+        h = dict(UA); h["Content-Type"] = "application/json"
         with urllib.request.urlopen(urllib.request.Request(url, headers=h, data=data), timeout=600) as r:
             d = r.read()
         if name: open(f"{OUT}/{name}", "wb").write(d)
@@ -16,81 +16,50 @@ def get(url, name=None, data=None, ctype="application/json"):
         try: body = e.read().decode()[:300]
         except Exception: pass
         log.append(f"FAIL {url[:170]}: {e} {body}"); return None
-def pick(values, texts, pattern):
-    for v, t in zip(values, texts):
-        if re.search(pattern, t, re.I): return v
-    return None
-# ---- Norway: SSB PxWeb v0 (GET metadata, POST query)
-def ssb(table, name, prefs):
-    m = get(f"https://data.ssb.no/api/v0/no/table/{table}")
-    if not m: return
-    meta = json.loads(m); open(f"{OUT}/{name}_meta.json", "w").write(json.dumps(meta, ensure_ascii=False))
+def ssb(table, name, choose):
+    meta = json.loads(get(f"https://data.ssb.no/api/v0/no/table/{table}"))
     q = []
     for v in meta["variables"]:
-        code, vals, txts = v["code"], v["values"], v["valueTexts"]
-        if code == "Region":
-            q.append({"code": code, "selection": {"filter": "all", "values": ["*"]}})
-        elif code == "Tid":
-            q.append({"code": code, "selection": {"filter": "item", "values": vals[-1:]}})
-        else:
-            pat = prefs.get(code)
-            sel = pick(vals, txts, pat) if pat else None
-            q.append({"code": code, "selection": {"filter": "item", "values": [sel] if sel else ([vals[0]] if code != "ContentsCode" else vals)}})
+        c, vals, txt = v["code"], v["values"], v["valueTexts"]
+        if "region" in c.lower(): sel = ("all", ["*"])
+        elif c == "Tid": sel = ("item", vals[-1:])
+        elif c in choose: sel = ("item", [x for x, t in zip(vals, txt) if re.search(choose[c], t, re.I)] or vals[:1])
+        else: sel = ("item", vals)
+        q.append({"code": c, "selection": {"filter": sel[0], "values": sel[1]}})
     get(f"https://data.ssb.no/api/v0/no/table/{table}", f"{name}.json", data=json.dumps({"query": q, "response": {"format": "json-stat2"}}).encode())
-ssb("12944", "no_lowincome", {"Alder": r"0-17|under 18", "ContentsCode": r"prosent|andel"})
-ssb("11980", "no_pupils", {"EierforhGrsk": r"i alt|alle", "Klassetrinn": r"i alt|1\.-10|alle"})
-# ---- Sweden: SCB PxWebApi v2 (TAB6685 low economic standard by region and age); Kolada for pupils
-m = get("https://statistikdatabasen.scb.se/api/v2/tables/TAB6685/metadata?lang=sv", "se_TAB6685_meta.json")
-if m:
-    meta = json.loads(m); dims = meta.get("dimension", {}); ids = meta.get("id", [])
-    params = {}
-    for d in ids:
-        cats = dims[d]["category"]; keys = list(cats["index"].keys()) if isinstance(cats["index"], dict) else cats["index"]
-        labels = cats.get("label", {})
-        if d.lower() == "region": params[f"valueCodes[{d}]"] = "*"
-        elif d.lower() in ("tid", "time"): params[f"valueCodes[{d}]"] = keys[-1]
-        else:
-            k = pick(keys, [labels.get(k, k) for k in keys], r"0-17|0–17|0-19") if d.lower().startswith("ald") else None
-            params[f"valueCodes[{d}]"] = k or ",".join(keys)
-    get("https://statistikdatabasen.scb.se/api/v2/tables/TAB6685/data?lang=sv&outputFormat=csv&" + urllib.parse.urlencode(params), "se_lowincome.csv")
-d = get("https://api.kolada.se/v2/kpi?" + urllib.parse.urlencode({"title": "elever i grundskola"}))
+ssb("12944", "no_lowincome", {"Alder": r"^0-17"})
+ssb("11980", "no_pupils", {"KOKeierfh0000": r"og privat", "KOKtrinn0000": r"alle trinn"})
+# Sweden: municipalities only, ages 0-19, share with low economic standard, latest year
+meta = json.load(open("fetch/out/nordic3/se_TAB6685_meta.json"))
+regs = [k for k in meta["dimension"]["Region"]["category"]["index"] if re.fullmatch(r"\d{4}", k)]
+tid = list(meta["dimension"]["Tid"]["category"]["index"])[-1]
+params = {"valueCodes[Region]": ",".join(regs), "valueCodes[Alder]": "0-19", "valueCodes[ContentsCode]": "000008AC,000008AE", "valueCodes[Tid]": tid}
+get("https://statistikdatabasen.scb.se/api/v2/tables/TAB6685/data?lang=sv&outputFormat=csv&" + urllib.parse.urlencode(params), "se_lowincome.csv")
+# Sweden pupils: Kolada v3
+d = get("https://api.kolada.se/v3/kpi?" + urllib.parse.urlencode({"title": "elever i grundskola"}), "se_kolada_kpi_search.json")
 if d:
     kpis = json.loads(d).get("values", [])
-    open(f"{OUT}/se_kolada_kpis.json", "w").write(json.dumps([(k["id"], k["title"]) for k in kpis], ensure_ascii=False, indent=1))
-    ks = [k for k in kpis if re.search(r"^elever i grundskola", k["title"], re.I) and re.search(r"antal", k["title"], re.I)] or kpis[:1]
-    for k in ks[:2]:
+    ks = [k for k in kpis if re.search(r"antal", k.get("title", ""), re.I)] or kpis
+    for k in ks[:3]:
         for y in (2025, 2024):
-            r = get(f"https://api.kolada.se/v2/data/kpi/{k['id']}/year/{y}", f"se_pupils_{k['id']}_{y}.json")
+            r = get(f"https://api.kolada.se/v3/data/kpi/{k['id']}/year/{y}", f"se_pupils_{k['id']}_{y}.json")
             if r and json.loads(r).get("values"): break
-d = get("https://api.kolada.se/v2/municipality")
-if d: open(f"{OUT}/se_kolada_municipalities.json", "wb").write(d)
-# ---- Denmark: Statbank (LABY07 relative poverty 0-17; LABY23 pupils)
-for t in ("LABY07", "LABY23"):
-    i = get(f"https://api.statbank.dk/v1/tableinfo/{t}?lang=en&format=JSON", f"dk_{t}_info.json")
-    if not i: continue
-    info = json.loads(i); vars_ = []
-    for v in info["variables"]:
-        ids_ = [x["id"] for x in v["values"]]; txt = [x["text"] for x in v["values"]]
-        if v["id"] in ("KOMGRP", "OMRÅDE", "KOMMUNEDK"): sel = ["*"]
-        elif v["id"] == "Tid": sel = ids_[-1:]
-        elif v["id"] == "ALDER": sel = [pick(ids_, txt, r"0-17") or ids_[0]]
-        else: sel = [ids_[0]]
-        vars_.append({"code": v["id"], "values": sel})
-    get("https://api.statbank.dk/v1/data", f"dk_{t}.csv", data=json.dumps({"table": t, "format": "CSV", "lang": "en", "variables": vars_}).encode())
-# ---- Finland: Sotkanet pupils indicator search + data
-d = get("https://sotkanet.fi/rest/1.1/indicators")
-if d:
-    ind = [(i["id"], i.get("title", {}).get("fi"), i.get("title", {}).get("en")) for i in json.loads(d) if re.search(r"peruskoulu|perusopetu", json.dumps(i.get("title", {}), ensure_ascii=False), re.I) and re.search(r"oppila", json.dumps(i.get("title", {}), ensure_ascii=False), re.I)]
-    open(f"{OUT}/fi_pupil_indicators.json", "w").write(json.dumps(ind, ensure_ascii=False, indent=1))
-get("https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/opiskt/statfin_opiskt_pxt_133w.px", "fi_133w_meta.json")
-get("https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/opiskt/", "fi_opiskt_list.json")
-# ---- Netherlands: CBS OData (86132NED child poverty; 85701NED pupils by residence)
-for t, dims in (("86132NED", ["PersoonsEnHuishoudenskenmerken", "Perioden"]), ("85701NED", ["Geslacht", "Onderwijssoort", "Regiokenmerken", "Perioden"])):
-    for dim in dims:
-        get(f"https://opendata.cbs.nl/ODataApi/odata/{t}/{dim}?$format=json", f"nl_{t}_{dim}.json")
-p = json.loads(open(f"{OUT}/nl_86132NED_PersoonsEnHuishoudenskenmerken.json").read())["value"] if os.path.exists(f"{OUT}/nl_86132NED_PersoonsEnHuishoudenskenmerken.json") else []
-tot = next((x["Key"].strip() for x in p if re.search(r"totaal", x["Title"], re.I)), p[0]["Key"].strip() if p else "")
-f = urllib.parse.quote(f"PersoonsEnHuishoudenskenmerken eq '{tot}' and (Perioden eq '2023JJ00' or Perioden eq '2024JJ00')")
-get(f"https://opendata.cbs.nl/ODataApi/odata/86132NED/TypedDataSet?$format=json&$filter={f}", "nl_childpoverty.json")
-get("https://opendata.cbs.nl/ODataApi/odata/85701NED/TypedDataSet?$format=json&$top=1", "nl_85701_sample.json")
+get("https://api.kolada.se/v3/municipality", "se_kolada_municipalities.json")
+# Finland: comprehensive school pupils by municipality
+for u in ["https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/opiskt/133w.px", "https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/opiskt/statfin_opiskt_pxt_133w.px",
+          "https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/opiskt/15fe.px", "https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/opiskt/13jn.px"]:
+    m = get(u)
+    if m:
+        open(f"{OUT}/fi_{u.split('/')[-1]}_meta.json", "wb").write(m)
+        meta = json.loads(m); q = []
+        for v in meta["variables"]:
+            c, vals, txt = v["code"], v["values"], v["valueTexts"]
+            if re.search(r"kunta|alue|maakunta", c + v["text"], re.I): sel = ("all", ["*"])
+            elif re.search(r"vuosi|year", c + v["text"], re.I): sel = ("item", vals[-1:])
+            else: sel = ("item", [x for x, t in zip(vals, txt) if re.search(r"yhteensä|kaikki|total|SSS", t, re.I)][:1] or vals[:1])
+            q.append({"code": c, "selection": {"filter": sel[0], "values": sel[1]}})
+        get(u, f"fi_pupils_{u.split('/')[-1]}.json", data=json.dumps({"query": q, "response": {"format": "json-stat2"}}).encode())
+# Netherlands: pupils by municipality of residence, 2025/26
+f = urllib.parse.quote("Geslacht eq 'T001038' and Perioden eq '2025SJ00' and (Onderwijssoort eq 'A025279' or Onderwijssoort eq 'A025282' or Onderwijssoort eq 'T001345') and substringof('GM',Regiokenmerken)")
+get(f"https://opendata.cbs.nl/ODataApi/odata/85701NED/TypedDataSet?$format=json&$filter={f}", "nl_pupils.json")
 open(f"{OUT}/log.txt", "w").write("\n".join(log))
