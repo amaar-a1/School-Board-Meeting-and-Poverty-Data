@@ -107,7 +107,7 @@ window.SOURCES = [
       { title: "Meetings: the ETBs' YouTube channels (no board meetings posted)", url: "https://www.youtube.com/" },
       { title: "ETB sector overview (Education and Training Boards Ireland)", url: "https://www.etbi.ie/" }
     ],
-    note: "The Department of Education's school list couldn't be downloaded (gov.ie refused automated access), so there's no enrollment by ETB. The unemployment rate counts people who say their main status is unemployed or looking for a first job."
+    note: "Locales are estimates: population (children 5–17 divided by 0.178, their share of Ireland's population in Census 2022) over each ETB's land area; urban 2,000+ people per km², suburban 500–2,000, mixed 100–500, rural under 100. The Department of Education's school list couldn't be downloaded (gov.ie refused automated access), so there's no enrollment by ETB. The unemployment rate counts people who say their main status is unemployed or looking for a first job."
   },
   {
     only: "United Kingdom",
@@ -122,7 +122,7 @@ window.SOURCES = [
       { title: "Borders: ONS Counties and Unitary Authorities (December 2024) Boundaries UK BUC", url: "https://geoportal.statistics.gov.uk/" },
       { title: "Meetings: each council's own YouTube channel (listed in the “Meetings source” column); videos whose titles name an education, schools, children's or young people's committee, panel or forum", url: "https://www.youtube.com/" }
     ],
-    note: "England's pupil counts come from the register of schools (each school's latest census figure), so they can differ a little from the published census totals. Northern Ireland's Education Authority covers all 11 of its council areas. Channels the search wrongly matched (for example Bradford on Avon Town Council for Bradford) were checked by hand and left out (data-prep/inputs/uk/uk_channels.csv)."
+    note: "Locales are estimates: population (children under 16 divided by 0.185, their share of the UK population) over each council's land area from the ONS borders; urban 2,000+ people per km², suburban 500–2,000, mixed 100–500, rural under 100. England's pupil counts come from the register of schools (each school's latest census figure), so they can differ a little from the published census totals. Northern Ireland's Education Authority covers all 11 of its council areas. Channels the search wrongly matched (for example Bradford on Avon Town Council for Bradford) were checked by hand and left out (data-prep/inputs/uk/uk_channels.csv)."
   },
   {
     only: "Saint-Pierre-et-Miquelon (France)",
@@ -178,10 +178,12 @@ window.SOURCES = [
       { title: "Newfoundland and Labrador: Community Accounts, Enrolment 1990-2026 (province-wide, used for NLSchools)", url: "https://nl.communityaccounts.ca/table.asp?_=vb7En4WVgbOxz7ZjS6rIxpuixqOVko7Lqomyv4yplszCmJ6-x84_" },
       { title: "Newfoundland and Labrador French board: Conseil scolaire francophone provincial (“more than 400 students”)", url: "https://csfp.nl.ca/a-propos/" },
       { title: "Prince Edward Island: official K-12 enrolment, September 2023 (Public Schools Branch total, as quoted in search results)", url: "https://www.princeedwardisland.ca/en/node/71985" },
+      { title: "PEI French board (Commission scolaire de langue française): CBC News, October 2023 (1,259 students)", url: "https://www.cbc.ca/news/canada/prince-edward-island/french-schools-pei-expansion-population-growth-immigration-1.6985246" },
+      { title: "Yukon First Nation School Board: territorial school counts for 7 of its 11 schools (about 705 students), as compiled by the site owner", url: "https://yukon.ca/en/first-nation-school-board" },
       { title: "Yukon French board: People for Education, Canadian Education Blueprint (413 students, 2025–26)", url: "https://peopleforeducation.ca/blueprints/" },
       { title: "Nunavut French board: Radio Canada International, September 3, 2025 (116 students at École des Trois-Soleils)", url: "https://www.rcinet.ca/regard-sur-arctique/2025/09/03/plus-deleves-plus-de-depenses-dans-les-ecoles-francophones-des-territoires/" }
     ],
-    note: "The provincial files are official. The last five sources fill in boards with no provincial file and are noted in the “Enrollment note” column; NLSchools uses the province-wide total, which also includes the French board's roughly 400 students. Lloydminster's two divisions report to both Alberta and Saskatchewan, so each side shows that province's count, which may overlap. PEI's French board and the Yukon First Nation School Board also have no figure. The years differ by province (see the Enrollment year column)."
+    note: "The provincial files are official. The last seven sources fill in boards with no provincial file and are noted in the “Enrollment note” column; NLSchools uses the province-wide total, which also includes the French board's roughly 400 students. Lloydminster's two divisions report to both Alberta and Saskatchewan, so each side shows that province's count, which may overlap. The Yukon First Nation School Board's figure covers 7 of its 11 schools, so it undercounts. The years differ by province (see the Enrollment year column)."
   },
   {
     only: "Canada",

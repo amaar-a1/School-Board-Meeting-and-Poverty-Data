@@ -87,7 +87,7 @@
         Children: ca ? r["Children Ages 0-17"] : uk ? r["Children Under 16"] : r["Children Ages 5-17"],
         Enrollment: r.Enrollment ?? "",
         // Canada's locales are estimates, not NCES types, so they stay separate groups here.
-        Locale: ca && r.Locale ? `Canada: ${r.Locale}` : r.Locale ?? "",
+        Locale: r.Locale && (ca || uk || ie) ? `${ca ? "Canada" : uk ? "UK" : "Ireland"}: ${r.Locale}` : r.Locale ?? "",
         "Other Board Meetings": r["Other Board Meetings"] ?? "",   // DC, Hawaiʻi and Vermont boards' own sites
         "District ID": r["District ID"]
       });
@@ -257,19 +257,19 @@
 
   // "By locale" tab: the same comparisons as "By district size", grouped by locale. US districts
   // use NCES locale types; Canadian boards an estimate from Statistics Canada population sizes.
-  const US_LOCALES = ["Urban", "Suburban", "Town", "Rural"];
+  const US_LOCALES = ["Urban", "Suburban", "Town", "Mixed", "Rural"];   // "Mixed": UK and Ireland's estimate
   const CA_LOCALES = ["Large urban", "Medium urban", "Small urban", "Rural", "Province-wide"];
   // Shared groups for the US and Canada together: the closest match between NCES types and
   // Canada's estimated sizes.
   const MERGED_LOCALES = [
-    { name: "Urban and suburban", us: ["Urban", "Suburban"], ca: ["Large urban", "Medium urban"] },
-    { name: "Town and small urban", us: ["Town"], ca: ["Small urban"] },
-    { name: "Rural", us: ["Rural"], ca: ["Rural"] },
+    { name: "Urban and suburban", us: ["Urban", "Suburban"], ca: ["Large urban", "Medium urban"], other: ["Urban", "Suburban"] },
+    { name: "Town and small urban", us: ["Town"], ca: ["Small urban"], other: ["Mixed"] },
+    { name: "Rural", us: ["Rural"], ca: ["Rural"], other: ["Rural"] },
     { name: "Province-wide (Canada)", us: [], ca: ["Province-wide"] }
   ];
   function mergedLocale(v) {
-    const s = String(v || "").trim(), ca = s.startsWith("Canada: "), name = s.replace(/^Canada: /, "");
-    const g = MERGED_LOCALES.find((x) => (ca ? x.ca : x.us).includes(name));
+    const s = String(v || "").trim(), ca = s.startsWith("Canada: "), other = /^(UK|Ireland): /.test(s), name = s.replace(/^(Canada|UK|Ireland): /, "");
+    const g = MERGED_LOCALES.find((x) => (ca ? x.ca : other ? (x.other || []) : x.us).includes(name));
     return g ? g.name : "";
   }
 
@@ -277,7 +277,8 @@
     const seen = new Set(rows.map((r) => String(r.Locale || "").trim()).filter(Boolean));
     // Canada on its own: largest to smallest. In "All", Canada's groups are labelled "Canada: …".
     const caOnly = seen.has("Large urban") && !seen.has("Urban");
-    const order = (caOnly ? CA_LOCALES : [...US_LOCALES, ...CA_LOCALES.map((g) => `Canada: ${g}`)]).filter((g) => seen.has(g));
+    const order = (caOnly ? CA_LOCALES : [...US_LOCALES, ...CA_LOCALES.map((g) => `Canada: ${g}`),
+      ...["UK", "Ireland"].flatMap((c) => ["Urban", "Suburban", "Mixed", "Rural"].map((g) => `${c}: ${g}`))]).filter((g) => seen.has(g));
     return [...order, ...[...seen].filter((g) => !order.includes(g)).sort()];
   }
 
@@ -301,12 +302,13 @@
     const all = sizeStats(current.rows.filter((r) => String(r.Locale || "").trim()), denom);
     const left = current.rows.filter((r) => !String(r.Locale || "").trim()).length;
     const ca = current.country === "CA" || (current.parent && current.parent.country === "CA");
-    $("locale-note").textContent = (current.localeNote ? current.localeNote : ca ? "Boards are grouped by an estimated locale (see below)." : current.combined
+    $("locale-note").textContent = ((current.localeNote || (current.parent && current.parent.localeNote)) ? (current.localeNote || current.parent.localeNote) : ca ? "Boards are grouped by an estimated locale (see below)." : current.combined
       ? "US districts are grouped by NCES locale (2023); Canadian boards by an estimated locale (see below)."
       : "Districts are grouped by NCES locale (2023): Urban (a city), Suburban, Town or Rural.") +
       (left ? ` ${left.toLocaleString()} ${label} without a locale are left out of this tab.` : "");
-    $("locale-def").textContent = ca || current.combined
-      ? "Canada's locales are estimates, after Statistics Canada's population centre sizes: each census subdivision (municipality) with 100,000+ people is large urban; one with at least 150 people per km² (the OECD's rural cutoff) is medium urban (30,000–99,999 people) or small urban (1,000–29,999); the rest are rural. A board takes the locale where most of its children live; boards serving a whole province or territory are “Province-wide”. They aren't the same as the US NCES locales."
+    $("locale-def").textContent = (current.localeDef || (current.parent && current.parent.localeDef)) ? (current.localeDef || current.parent.localeDef)
+      : ca || current.combined
+      ? "Canada's locales are estimates, after Statistics Canada's population centre sizes: each census subdivision (municipality) with 100,000+ people is large urban; one with at least 150 people per km² (the OECD's rural cutoff) is medium urban (30,000–99,999 people) or small urban (1,000–29,999); the rest are rural. A board takes the locale where most of its children live; boards serving a whole province or territory are “Province-wide”. They aren't the same as the US NCES locales." + (current.combined ? " UK and Irish locales are estimates from population density (urban 2,000+ people per km², suburban 500–2,000, mixed 100–500, rural under 100)." : "")
       : "";
     const cols = ["Locale", label[0].toUpperCase() + label.slice(1), "With meetings", "Avg meetings", "Poverty: with meetings", "Poverty: without",
       `Meetings per 10,000 ${per}`, "Meetings per poverty point"];

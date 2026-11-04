@@ -11,7 +11,9 @@ boroughs). Scotland: 32 councils. Wales: 22 councils. Northern Ireland: one Educ
 - Borders: ONS Counties and Unitary Authorities (December 2024), UK, BUC.
 Inputs are in data-prep/inputs/uk/. Usage: python3 data-prep/build_uk.py
 """
-import csv, json, os, re
+import csv, json, os, re, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from geo_area import area_km2
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 IN = os.path.join(HERE, "inputs", "uk")
@@ -83,6 +85,20 @@ def main():
     out.sort(key=lambda r: (r["Nation"], r["District"]))
     with open(OUT_CSV, "w", newline="", encoding="utf-8") as fo:
         w = csv.DictWriter(fo, fieldnames=list(out[0])); w.writeheader(); w.writerows(out)
+    # Estimated locale from population density: people = children / 0.185 (their share of the
+    # population), over land area. Urban 2,000+ per km², suburban 500-2,000, mixed 100-500, rural under 100.
+    area = {}
+    for f in feats:
+        area[f["properties"]["id"]] = area.get(f["properties"]["id"], 0) + area_km2(f["geometry"])
+    for r in out:
+        k = float(r["Children Under 16"] or 0)
+        d = k / 0.185 / area[r["District ID"]] if area.get(r["District ID"]) else 0
+        r["Locale"] = "Urban" if d >= 2000 else "Suburban" if d >= 500 else "Mixed" if d >= 100 else "Rural"
+        r["People per km² (estimated)"] = round(d)
+    path = OUT_CSV if "OUT_CSV" in globals() else os.path.join(HERE, "..", "docs", "data", "ireland.csv")
+    data = out
+    with open(path, "w", newline="", encoding="utf-8") as fo:
+        w = csv.DictWriter(fo, fieldnames=list(data[0])); w.writeheader(); w.writerows(data)
     def rnd(c):
         return [rnd(x) for x in c] if isinstance(c[0], list) else [round(c[0], 4), round(c[1], 4)]
     for f in feats:

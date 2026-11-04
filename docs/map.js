@@ -151,7 +151,7 @@
       `Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}` +
       (toNumber(r["Other Board Meetings"]) > 0 ? ` on CivicSearch; ${toNumber(r["Other Board Meetings"]).toLocaleString()} from other sources (see note)` : "") + `<br>` +
       `Enrollment: ${isNaN(enr) ? "not reported" : enr.toLocaleString()}` +
-      (r.Locale ? `<br>Locale: ${esc(r.Locale)}` : "") +
+      (r.Locale ? `<br>Locale${/^(UK|IE)-/.test(r["District ID"]) ? " (estimated)" : ""}: ${esc(r.Locale)}` : "") +
       (note ? `<div class="tip-note">${esc(note)}</div>` : "") + "</div>";
   }
 

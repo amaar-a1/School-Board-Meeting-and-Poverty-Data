@@ -9,7 +9,10 @@ Each ETB is made of local authority areas (Education and Training Boards Act 201
 - Meetings: none found; ETBs' YouTube channels (etb_youtube.json) post no board meetings.
 Usage: python3 data-prep/build_ireland.py
 """
-import csv, json, os, re, unicodedata
+import csv, json, os, re, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from geo_area import area_km2
+import unicodedata
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 IN = os.path.join(HERE, "inputs", "ireland")
@@ -71,6 +74,20 @@ def main():
     miss = [f["properties"]["LOCAL_AUTHORITY"] for f in geo["features"] if not la_of_feat[id(f)]]
     with open(os.path.join(HERE, "..", "docs", "data", "ireland.csv"), "w", newline="", encoding="utf-8") as fo:
         w = csv.DictWriter(fo, fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)
+    # Estimated locale from population density: people = children / 0.178 (their share of the
+    # population), over land area. Urban 2,000+ per km², suburban 500-2,000, mixed 100-500, rural under 100.
+    area = {}
+    for f in feats:
+        area[f["properties"]["id"]] = area.get(f["properties"]["id"], 0) + area_km2(f["geometry"])
+    for r in rows:
+        k = float(r["Children Ages 5-17"] or 0)
+        d = k / 0.178 / area[r["District ID"]] if area.get(r["District ID"]) else 0
+        r["Locale"] = "Urban" if d >= 2000 else "Suburban" if d >= 500 else "Mixed" if d >= 100 else "Rural"
+        r["People per km² (estimated)"] = round(d)
+    path = OUT_CSV if "OUT_CSV" in globals() else os.path.join(HERE, "..", "docs", "data", "ireland.csv")
+    data = rows
+    with open(path, "w", newline="", encoding="utf-8") as fo:
+        w = csv.DictWriter(fo, fieldnames=list(data[0])); w.writeheader(); w.writerows(data)
     def rnd(c):
         return [rnd(x) for x in c] if isinstance(c[0], list) else [round(c[0], 4), round(c[1], 4)]
     for f in feats:
