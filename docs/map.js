@@ -109,6 +109,7 @@
     if (metric === "poverty" && row && isNaN(v) && row[EU_POV]) v = toNumber(row[EU_POV]);
     if (metric === "poverty" && row && isNaN(v) && row["Poverty rate or stand-in"]) v = toNumber(row["Poverty rate or stand-in"]);
     // Saint-Pierre-et-Miquelon has no poverty rate; its unemployment rate stands in.
+    if (metric === "poverty" && row && isNaN(v) && row["Poverty rate (region, all ages)"]) v = toNumber(row["Poverty rate (region, all ages)"]);   // Ireland
     if (metric === "poverty" && row && isNaN(v) && row["Unemployment rate (stand-in for poverty)"]) v = toNumber(row["Unemployment rate (stand-in for poverty)"]);
     // Where CivicSearch has none, the meetings map uses counts from the district's own sources.
     if (metric === "meetings" && row && !(v > 0) && toNumber(row["Other Board Meetings"]) > 0) v = toNumber(row["Other Board Meetings"]);
@@ -170,11 +171,13 @@
     const ukPov = r[UK_POV] !== undefined;
     const pov = toNumber(r[ukPov ? UK_POV : eu ? povCol(eu) : "Percentage of Children Ages 5-17 in Poverty"]);
     const unemp = toNumber(r["Unemployment rate (stand-in for poverty)"]);
+    const iePov = toNumber(r["Poverty rate (region, all ages)"]);
     const meet = toNumber(r["Available Board Meetings"]);
     const enr = toNumber(r.Enrollment);
-    const note = [r["Map note"], r.Notes || r["Poverty figures"], r["Meetings note"], r["Other meetings source"] && `Other meetings: ${r["Other meetings source"]}`].filter(Boolean).map((x) => String(x).replace(/\.\s*$/, "")).join(". ");
+    const note = [r["Map note"], r["Poverty note"], r.Notes || r["Poverty figures"], r["Meetings note"], r["Other meetings source"] && `Other meetings: ${r["Other meetings source"]}`].filter(Boolean).map((x) => String(x).replace(/\.\s*$/, "")).join(". ");
     return `<div class="map-tip"><strong>${esc(r.District)}${place ? `, ${esc(place)}` : ""}</strong>` +
-      (isNaN(pov) && !isNaN(unemp) ? `Unemployment (stand-in for poverty): ${unemp.toFixed(1)}% (${String(r["District ID"]).startsWith("IE-") ? "Census 2022" : "2015 est."})<br>`
+      (!isNaN(iePov) ? `Poverty rate (all ages, its region): ${iePov.toFixed(1)}%<br>Unemployment (Census 2022): ${esc(r["Unemployment rate (Census 2022)"] || "–")}<br>`
+        : isNaN(pov) && !isNaN(unemp) ? `Unemployment (stand-in for poverty): ${unemp.toFixed(1)}% (2015 est.)<br>`
         : `${ukPov ? "Children under 16 in low income" : eu === "ISLE" ? esc(r["Poverty measure"] || "Poverty") : eu ? `Children in low income (${{ NO: "0–17, 2022–24", SE: "0–19, 2024", FI: "under 18", DK: "0–17, 50% line, 2024", NL: "CBS, 2024", DE: "under 15 on SGB II benefits, 2023", NZ: "60% line, 2025" }[eu]})` : "Child poverty"}: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>`) +
       `Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}` +
       (toNumber(r["Other Board Meetings"]) > 0 ? ` on CivicSearch; ${toNumber(r["Other Board Meetings"]).toLocaleString()} from other sources (see note)` : "") + `<br>` +
@@ -215,7 +218,7 @@
     if ((euv || (current && current.combined)) && $("map-metric").value === "poverty")
       items.push(`<span class="map-faded">${euv === "ISLE" ? "Islands: the best figure available for each (child low income, the national poverty line or unemployment), not comparable with each other" : `${euv ? EU_NAMES[euv] : "Other countries"}: each country's own child low-income measure, not comparable with each other or with the US rate`}</span>`);
     if (current && (current.country === "IE" || current.combined) && $("map-metric").value === "poverty")
-      items.push(`<span class="map-faded">Ireland: unemployment rate (Census 2022) in place of child poverty, which isn't published for ETB areas</span>`);
+      items.push(`<span class="map-faded">Ireland: overall poverty rate of each board's region (Eurostat), since no local or child rate is published</span>`);
     const ukv = current && (current.country === "UK" || (current.parent && current.parent.country === "UK"));
     if (ukv && !current.state) faded.push("outside the United Kingdom");
     if ((ukv || (current && current.combined)) && $("map-metric").value === "poverty")
@@ -228,8 +231,10 @@
   }
 
   // Islands are too small to see at a world zoom, so each also gets a dot (data/map/islands.json).
-  let islandDots = [];
+  let islandDots = [], spmLabel = null;
   function restyle() {
+    // Saint-Pierre-et-Miquelon's label shows only in its own view.
+    if (spmLabel) { if (current && current.country === "FR") spmLabel.addTo(map); else spmLabel.remove(); }
     Object.values(layers).forEach((l) => l.setStyle(style));
     islandDots.forEach(({ dot, f }) => { const st = style(f); dot.setStyle({ fillColor: st.fillColor, fillOpacity: st.fillOpacity, opacity: st.fillOpacity }); });
     legend();
@@ -365,8 +370,8 @@
     const spmRow = lookup["FR-SPM"];
     if (spmRow && layers.spm && layers.spm.getLayers().length) {
       const n = toNumber(spmRow["Available Board Meetings"]);
-      L.marker(layers.spm.getBounds().getCenter(), { interactive: false, keyboard: false,
-        icon: L.divIcon({ className: "map-label", html: `Saint-Pierre-et-Miquelon<br><b>${isNaN(n) ? 0 : n} meetings</b> (Territorial Council)`, iconSize: [190, 34], iconAnchor: [-14, 17] }) }).addTo(map);
+      spmLabel = L.marker(layers.spm.getBounds().getCenter(), { interactive: false, keyboard: false,
+        icon: L.divIcon({ className: "map-label", html: `Saint-Pierre-et-Miquelon<br><b>${isNaN(n) ? 0 : n} meetings</b> (Territorial Council)`, iconSize: [190, 34], iconAnchor: [-14, 17] }) });
     }
     const sel = $("map-jump");
     sel.add(new Option("—", ""));

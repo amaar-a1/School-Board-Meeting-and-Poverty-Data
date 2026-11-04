@@ -35,6 +35,8 @@ NAMES = {"Antigua and Barb.": "Antigua and Barbuda", "St. Kitts and Nevis": "Sai
          "St-Barthélemy": "Saint-Barthélemy", "St-Martin": "Saint-Martin (French part)", "Sint Maarten": "Sint Maarten (Dutch part)",
          "Micronesia": "Federated States of Micronesia", "São Tomé and Principe": "São Tomé and Príncipe",
          "Saint Helena": "Saint Helena, Ascension and Tristan da Cunha"}
+# Figures found by hand where neither the World Bank nor the Factbook has one.
+MANUAL = {"NFK": (2.8, "Unemployment rate, a stand-in for poverty (Australian Bureau of Statistics, 2021 Census: 33 of 1,187 in the labour force)")}
 pct = lambda s: float(re.match(r"\s*([\d.]+)%", s).group(1)) if s and re.match(r"\s*([\d.]+)%", s) else None
 year = lambda s: (re.search(r"\((\d{4})", s or "") or [None, ""])[1]
 num = lambda s: float(re.match(r"\s*([\d,.]+)", s).group(1).replace(",", "")) if s and re.match(r"\s*[\d,.]*\d", s) else None
@@ -89,6 +91,8 @@ def main():
                 rate, measure = v, f"People below the national poverty line, all ages (World Bank, {y})"
             elif fv is not None:
                 rate, measure = fv, f"People below the national poverty line, all ages (CIA World Factbook, {fy} estimate)"
+        if rate == "" and iso in MANUAL:
+            rate, measure = MANUAL[iso]
         if rate == "":
             y, v = latest("SL.UEM.TOTL.ZS", iso)
             fv, fy = fb_latest(econ.get("Unemployment rate"))

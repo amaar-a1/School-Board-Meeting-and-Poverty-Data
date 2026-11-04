@@ -17,9 +17,9 @@
   const EU_RE = /\b(norw\w*|swed\w*|finn?\w*|denmark|danish|netherlands|dutch|holland|german\w*|new zealand|islands?|island countries)\b/i;
   const EU_OF = (q) => { const m = (q.match(EU_RE) || [])[1]; if (!m) return null; const w = m.toLowerCase();
     return w.startsWith("norw") ? "Norway" : w.startsWith("swed") ? "Sweden" : w.startsWith("fin") ? "Finland" : /^(denmark|danish)$/.test(w) ? "Denmark" : w.startsWith("german") ? "Germany" : w === "new zealand" ? "New Zealand" : w.startsWith("island") ? "Island countries and territories" : "Netherlands"; };
-  const val = (r, m) => num(r[r._eu ? (m.col === POV ? r._pov : m.col === "Children Ages 5-17" ? r._kids : m.col) : r._ca && m.caCol ? m.caCol : r._uk && m.ukCol ? m.ukCol : (r._ie || r._fr) && m.col === POV ? "Unemployment rate (stand-in for poverty)" : m.col]);
+  const val = (r, m) => num(r[r._eu ? (m.col === POV ? r._pov : m.col === "Children Ages 5-17" ? r._kids : m.col) : r._ca && m.caCol ? m.caCol : r._uk && m.ukCol ? m.ukCol : r._ie && m.col === POV ? "Poverty rate (region, all ages)" : r._fr && m.col === POV ? "Unemployment rate (stand-in for poverty)" : m.col]);
   const UK_POV = "Percentage of Children Under 16 in Low Income";
-  const povOf = (r) => num(r[r._eu ? r._pov : r._ca ? CA_POV : r._uk ? UK_POV : (r._ie || r._fr) ? "Unemployment rate (stand-in for poverty)" : POV]);
+  const povOf = (r) => num(r[r._eu ? r._pov : r._ca ? CA_POV : r._uk ? UK_POV : r._ie ? "Poverty rate (region, all ages)" : r._fr ? "Unemployment rate (stand-in for poverty)" : POV]);
   const EXAMPLES = [
     "What is the poverty rate in Austin ISD?",
     "Which districts in Ohio have the most meetings?",
@@ -140,10 +140,19 @@
 
   function districtCard(r) {
     if (r._ca) return boardCard(r);
+    if (r._ie) {
+      return `<div class="ask-card"><strong>${esc(r.District)}, Ireland</strong><ul>` +
+        `<li>Poverty rate (all ages, its region): ${esc(r["Poverty rate (region, all ages)"] || "–")}</li>` +
+        `<li>Unemployment (Census 2022): ${esc(r["Unemployment rate (Census 2022)"] || "–")}</li>` +
+        `<li>Children 5–17: ${num(r["Children Ages 5-17"]).toLocaleString()}</li>` +
+        `<li>Board meetings found: ${num(r[MEET]) || 0}</li>` + (r.Locale ? `<li>Locale (estimated): ${esc(r.Locale)}</li>` : "") + `</ul>` +
+        `<p class="ask-note">${esc(r["Poverty note"] || "")}.</p></div>`;
+    }
     if (r._eu) {
       const p = num(r[r._pov]), m = num(r[MEET]), e = num(r.Enrollment), isl = !!r["Poverty measure"];
       return `<div class="ask-card"><strong>${esc(r.District)}${isl ? "" : `, ${esc(r._eu)}`}</strong><ul>` +
-        `<li>${isl ? esc(r["Poverty measure"] || "Poverty") : "Children in low income"}: ${isNaN(p) ? "not published" : p.toFixed(1) + "%"}${num(r.Children) > 0 ? ` (of ${num(r.Children).toLocaleString()} children)` : ""}</li>` +
+        `<li>${isl ? esc(r["Poverty measure"] || "Poverty") : r["Poverty note"] ? "Low income (see note)" : "Children in low income"}: ${isNaN(p) ? "not published" : p.toFixed(1) + "%"}${num(r.Children) > 0 && !r["Poverty note"] ? ` (of ${num(r.Children).toLocaleString()} children)` : ""}</li>` +
+        (r["Poverty note"] ? `<li>${esc(r["Poverty note"])}</li>` : "") +
         `<li>Meetings found: ${isNaN(m) ? 0 : m.toLocaleString()}</li>` +
         `<li>Pupils: ${isNaN(e) ? "not reported" : `${e.toLocaleString()}${r["Enrollment year"] ? ` (${esc(r["Enrollment year"])})` : ""}`}</li>` +
         (r.Locale ? `<li>Locale (estimated): ${esc(r.Locale)}</li>` : "") + `</ul>` +
@@ -169,7 +178,7 @@
     const { rows, label } = scopeRows(stateList, q);
     const list = rows.filter((r) => !isNaN(val(r, m)))
       .sort((a, b) => (val(a, m) - val(b, m)) * (low ? 1 : -1)).slice(0, n);
-    const mLabel = rows.length && rows[0]._eu === "Island countries and territories" && metricKey === "poverty" ? "poverty rate (or stand-in)" : rows.length && rows[0]._eu && metricKey === "poverty" ? "child low-income rate (each country's own measure)" : rows.length && rows[0]._ca && m.caLabel ? m.caLabel : rows.length && (rows[0]._ie || rows[0]._fr) && metricKey === "poverty" ? "unemployment rate (stand-in for poverty)" : m.label;
+    const mLabel = rows.length && rows[0]._eu === "Island countries and territories" && metricKey === "poverty" ? "poverty rate (or stand-in)" : rows.length && rows[0]._eu && metricKey === "poverty" ? "child low-income rate (each country's own measure)" : rows.length && rows[0]._ca && m.caLabel ? m.caLabel : rows.length && rows[0]._ie && metricKey === "poverty" ? "poverty rate (all ages, each board's region)" : rows.length && rows[0]._fr && metricKey === "poverty" ? "unemployment rate (stand-in for poverty)" : m.label;
     if (!list.length) return `I couldn't find any ${esc(label)} with a ${mLabel}${rows.some((r) => r._ca) && metricKey === "enrollment" ? " (a few Canadian boards have no enrollment figure)" : ""}.`;
     if (metricKey === "meetings" && !low && num(list[0][MEET]) === 0) return `None of the ${esc(label)} have available board meetings on record.`;
     return `<p>${low ? "Lowest" : "Highest"} ${mLabel} among ${esc(label)}:</p><ol>` +
