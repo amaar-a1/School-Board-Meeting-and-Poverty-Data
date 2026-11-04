@@ -1,0 +1,1398 @@
+NO Aarborte/Hattfjelldal ->  
+SE Ale ->  
+DK Aabenraa ->  
+DK Aalborg ->  
+FI Akaa -> Akaan kaupunki 3
+NO Alstahaug -> Alstahaug kommune 0
+SE Alingsås -> Alingsås kommun 0
+DK Aarhus -> Teknik & Miljø - Aarhus Kommune 0
+NO Alta ->  
+SE Alvesta ->  
+FI Alajärvi -> Alajärven kaupunki 0
+DK Albertslund ->  
+SE Aneby ->  
+NO Alvdal ->  
+FI Alavieska ->  
+DK Allerød ->  
+NO Alver ->  
+DK Assens ->  
+DK Ballerup ->  
+SE Arboga -> Arboga kommun 0
+FI Alavus -> Alavuden kaupunki 0
+DK Billund ->  
+SE Arjeplog ->  
+NO Andøy -> Andøy Kommune 0
+FI Asikkala ->  
+DK Bornholm ->  
+SE Arvidsjaur ->  
+FI Askola ->  
+NO Aremark ->  
+DK Brøndby ->  
+FI Aura ->  
+NL 's-Gravenhage -> Gemeente Den Haag 1
+DK Brønderslev ->  
+FI Brändö ->  
+NL 's-Hertogenbosch ->  
+DK Christiansø ->  
+FI Eckerö ->  
+NO Arendal -> Arendal kommune 1
+SE Arvika -> Arvika kommun 0
+DK Dragør ->  
+NO Asker ->  
+DK Egedal ->  
+NO Askvoll ->  
+FI Enonkoski -> Enonkosken kunta 0
+DK Esbjerg ->  
+SE Askersund -> Askersunds Kommun 0
+NL Aa en Hunze -> gemeente Aa en Hunze 0
+SE Avesta ->  
+DK Faaborg-Midtfyn ->  
+NO Askøy -> Askøy kommune 0
+FI Enontekiö -> Enontekiön kunta 0
+SE Bengtsfors ->  
+NO Aukra ->  
+NL Aalsmeer -> Gemeente Aalsmeer 1
+DK Fanø -> Fanø Kommune 0
+NO Aure ->  
+SE Berg -> Bergs kommun 0
+NO Aurland ->  
+NL Aalten -> Gemeente Aalten 1
+DK Favrskov -> Favrskov Kommune 0
+SE Bjurholm -> Bjurholms kommun WebbTV 0
+FI Espoo -> Espoon kaupunki 0
+SE Bjuv ->  
+NO Aurskog-Høland -> Aurskog-Høland Kommune 0
+NL Achtkarspelen -> Gemeente Achtkarspelen 0
+DK Faxe -> Faxe Kommune 0
+FI Eura -> Euran kunta 0
+NO Austevoll ->  
+SE Boden -> Kommunfullmäktige Bodens kommun 0
+DK Fredensborg ->  
+NL Alblasserdam -> Gemeente Alblasserdam 0
+NO Austrheim ->  
+DK Fredericia ->  
+NL Albrandswaard ->  
+NO Averøy ->  
+DK Frederiksberg ->  
+FI Eurajoki -> Eurajoen kunta - Eurajoki Municipality 0
+SE Bollebygd -> Bollebygds kommun 0
+NO Balsfjord ->  
+FI Evijärvi ->  
+DK Frederikshavn ->  
+SE Bollnäs ->  
+NO Bamble ->  
+FI Finström ->  
+DK Frederikssund ->  
+DK Furesø ->  
+NL Alkmaar -> Gemeente Alkmaar 0
+DK Gentofte ->  
+SE Borgholm -> Borgholms kommunfullmäktige 0
+NO Bardu -> Bardu kommune 0
+FI Forssa -> Forssan kaupunki - City of Forssa 0
+DK Gladsaxe ->  
+NO Beiarn ->  
+FI Föglö ->  
+DK Glostrup ->  
+NL Almelo -> gemeente Almelo 0
+NO Bergen ->  
+FI Geta ->  
+DK Greve ->  
+SE Borlänge -> Borlänge kommun 0
+NO Berlevåg ->  
+FI Haapajärvi ->  
+NO Bindal ->  
+FI Haapavesi ->  
+NL Almere -> Raad van Almere (raadvanalmere.nl) 1
+FI Hailuoto ->  
+DK Gribskov -> Gribskov Kommune 1
+SE Borås -> Kommunstyrelsen Borås Stad 0
+FI Halsua ->  
+NO Birkenes -> Birkenes kommune 0
+DK Guldborgsund ->  
+FI Hamina ->  
+NO Bjerkreim ->  
+DK Haderslev ->  
+FI Hammarland ->  
+NL Alphen aan den Rijn -> Gemeente Alphen aan den Rijn 4
+NO Bjørnafjorden ->  
+DK Halsnæs ->  
+SE Botkyrka -> Botkyrka kommun 0
+FI Hankasalmi ->  
+NL Alphen-Chaam ->  
+SE Boxholm ->  
+DK Hedensted -> Hedensted Kommune 0
+FI Hanko -> Hangon Kaupunki 0
+NL Altena -> Gemeente Altena 0
+NO Bodø -> Bodø Kommune 1
+SE Bromölla -> Bromölla kommun 0
+NO Bokn ->  
+SE Bräcke ->  
+FI Harjavalta -> Harjavallan Kaupunki 0
+NO Bremanger ->  
+DK Helsingør -> Helsingør Kommunes ByrådsTV 0
+NL Ameland -> Gemeente Ameland 0
+NO Brønnøy ->  
+DK Herlev ->  
+SE Burlöv -> Burlövs Kommun 0
+NO Bygland ->  
+FI Hartola -> Hartolan Kunta 0
+DK Herning ->  
+SE Båstad ->  
+DK Hillerød ->  
+NO Bykle ->  
+SE Dals-Ed ->  
+NL Amersfoort -> Raad Amersfoort 1
+NO Båtsfjord ->  
+SE Danderyd ->  
+DK Hjørring -> Spillet om magten i Hjørring Kommune 0
+DK Holbæk ->  
+FI Hattula -> Hattulan kunta 0
+NL Amstelveen -> Gemeente Amstelveen 2
+SE Degerfors -> Degerfors Kommun 0
+DK Holstebro ->  
+FI Hausjärvi ->  
+NO Bærum -> Bærum Kommune (Formannskapssalen) 25
+DK Horsens ->  
+SE Dorotea -> Dorotea Kommun 0
+NL Amsterdam -> Gemeente Amsterdam 0
+NO Bø -> Bø Kommune 0
+SE Eda ->  
+DK Hvidovre -> Hvidovre Kommune 0
+FI Heinola -> Heinolan kaupunki - City of Heinola 0
+SE Ekerö ->  
+DK Høje-Taastrup ->  
+FI Heinävesi ->  
+NO Bømlo -> Bømlo kommune 0
+SE Eksjö ->  
+DK Hørsholm ->  
+FI Helsinki ->  
+NO Deatnu/Tana ->  
+NL Apeldoorn -> Gemeente Apeldoorn (Gelderland) 0
+FI Hirvensalmi ->  
+DK Ikast-Brande ->  
+NO Dielddanuorri/Tjeldsund ->  
+FI Hollola ->  
+SE Emmaboda -> Emmaboda kommun 0
+NO Dovre ->  
+NO Drammen ->  
+NL Arnhem -> Raad Arnhem 0
+NO Drangedal ->  
+FI Huittinen -> Huittisten kaupunki 0
+NO Dyrøy ->  
+SE Enköping -> Enköpings kommun 0
+FI Humppila ->  
+NL Assen -> Gemeente Assen 6
+NO Dønna ->  
+FI Hyrynsalmi ->  
+NO Eidfjord ->  
+NO Eidskog ->  
+NL Asten -> Gemeente Asten 0
+SE Eskilstuna -> Eskilstuna kommun 0
+NO Eidsvoll ->  
+NL Baarle-Nassau ->  
+SE Eslöv ->  
+FI Hyvinkää -> Hyvinkään Kaupunki 0
+SE Essunga ->  
+NL Baarn -> Gemeente Baarn 1
+SE Fagersta ->  
+NO Eigersund -> Eigersund kommune 25
+FI Hämeenkyrö -> Hämeenkyrön kunta 0
+NL Barendrecht ->  
+NL Barneveld ->  
+SE Falkenberg -> Falkenbergs kommun 0
+NL Beek ->  
+NO Elverum -> Elverum kommune 0
+SE Falköping ->  
+NL Beekdaelen ->  
+FI Hämeenlinna -> Hämeenlinnan kaupunki 0
+NO Enebakk ->  
+SE Falun ->  
+NO Engerdal ->  
+FI Ii ->  
+SE Filipstad ->  
+NO Etne ->  
+NL Beesel -> Gemeente Beesel 0
+NO Etnedal ->  
+DK Ishøj -> Ishøj Kommune  17
+SE Finspång -> Finspångs kommun 0
+NO Evenes/Evenášši ->  
+NL Berg en Dal -> Gemeenteraad Berg en Dal 0
+DK Jammerbugt ->  
+NO Evje og Hornnes ->  
+FI Iisalmi -> Iisalmen kaupunki - City of Iisalmi #byiisalmi 0
+DK Kalundborg ->  
+NO Farsund ->  
+SE Flen -> Flens kommun 0
+DK Kerteminde ->  
+NL Bergeijk -> Protestantse Gemeente Bergeijk 0
+NO Fauske/Fuossko ->  
+FI Iitti -> Iitin Valtuusto 0
+DK Kolding ->  
+NL Bergen (L.) ->  
+NO Fedje ->  
+SE Forshaga -> Forshaga kommun 0
+NL Bergen (NH.) ->  
+NO Fitjar ->  
+SE Färgelanda ->  
+FI Ikaalinen -> Ikaalisten kaupunki 0
+DK København -> Københavns Kommune 0
+SE Gagnef ->  
+NL Bergen op Zoom -> Gemeenteraad Bergen op Zoom 0
+DK Køge ->  
+NO Fjaler -> Fjaler Kommune 0
+SE Gislaved ->  
+NL Berkelland ->  
+DK Langeland ->  
+NO Fjord ->  
+SE Gnesta ->  
+FI Ilmajoki -> Ilmajoen kunta 0
+NL Bernheze ->  
+DK Lejre ->  
+FI Ilomantsi ->  
+SE Gnosjö ->  
+NO Flakstad ->  
+NL Best ->  
+DK Lemvig ->  
+SE Gotland ->  
+NO Flatanger ->  
+SE Grums ->  
+NL Beuningen -> Gemeente Beuningen 0
+DK Lolland -> Lolland kommune 0
+NO Flekkefjord -> Flekkefjord kommune 2
+DK Lyngby-Taarbæk ->  
+FI Imatra -> Imatran kaupunki 0
+SE Grästorp -> Grästorps kommun 0
+NO Flesberg -> Flesberg kommune 0
+NL Beverwijk -> Gemeente Beverwijk 0
+NO Flå ->  
+SE Gullspång -> Gullspångs kommun 0
+DK Læsø -> Læsø Kommune 0
+FI Inari -> Inarin kunta 0
+DK Mariagerfjord ->  
+FI Inkoo ->  
+NL Bladel -> gemeente Bladel 0
+DK Middelfart ->  
+NO Folldal -> Folldal kommune 0
+NL Blaricum ->  
+SE Gällivare -> Gällivare kommun 0
+DK Morsø ->  
+NO Fredrikstad ->  
+NL Bloemendaal ->  
+FI Isojoki -> Isojoen kunta 0
+DK Norddjurs ->  
+NO Frogn ->  
+NL Bodegraven-Reeuwijk ->  
+FI Isokyrö ->  
+SE Gävle -> Internationella kontoret Gävle kommun 0
+DK Nordfyns ->  
+NO Froland ->  
+NL Boekel ->  
+SE Göteborg ->  
+NO Frosta ->  
+NL Borger-Odoorn ->  
+DK Nyborg -> Nyborg Kommune 0
+FI Janakkala -> Janakkalan kunta 0
+DK Næstved ->  
+NL Borne -> Gemeenteraad Borne 0
+SE Götene -> Götene kommun 1
+NO Frøya -> Frøya Kommune 15
+NL Borsele ->  
+DK Odder ->  
+SE Habo ->  
+NO Fyresdal ->  
+DK Odense ->  
+DK Odsherred ->  
+NL Boxtel -> Gemeente Boxtel 0
+FI Joensuu -> Joensuun kaupunki 0
+SE Hagfors -> Hagfors kommun 3
+NO Færder -> Færder kommune 1
+SE Hallsberg ->  
+DK Randers -> Randers Kommune 0
+NO Gamvik ->  
+SE Hallstahammar ->  
+FI Jokioinen -> Jokioisten kunta 0
+DK Rebild ->  
+FI Jomala ->  
+DK Ringkøbing-Skjern ->  
+FI Joroinen ->  
+DK Ringsted ->  
+NL Breda -> Gemeente Breda 0
+NO Gausdal -> Gausdal kommune 0
+SE Halmstad -> Halmstads kommun 0
+DK Roskilde ->  
+NL Bronckhorst ->  
+NO Gildeskål ->  
+DK Rudersdal ->  
+NL Brummen ->  
+FI Joutsa -> Joutsan kunta 0
+DK Rødovre ->  
+FI Juuka ->  
+SE Hammarö -> Hammarö kommun 0
+NO Giske -> Giske kommune 0
+DK Samsø ->  
+SE Haninge ->  
+FI Juupajoki ->  
+NO Gjemnes ->  
+DK Silkeborg ->  
+FI Juva ->  
+SE Haparanda ->  
+DK Skanderborg ->  
+FI Jyväskylä ->  
+SE Heby ->  
+DK Skive ->  
+NL Brunssum -> Gemeente Brunssum 5
+SE Hedemora ->  
+NO Gjerdrum -> Møter i Gjerdrum kommunestyre 7
+DK Slagelse ->  
+SE Helsingborg ->  
+FI Jämijärvi -> Jämijärven kunta 0
+NL Bunnik -> Gemeente Bunnik 0
+NO Gjerstad -> Gjerstad kommune 0
+DK Solrød -> Solrød Kommune 0
+FI Jämsä -> Jämsän kaupunki 0
+NL Bunschoten -> Gemeenteraad Bunschoten 0
+NO Gjesdal -> Gjesdal Kommune 7
+DK Sorø -> Sorø Kommune 0
+NO Gjøvik ->  
+SE Herrljunga -> Herrljunga kommunfullmäktige 0
+DK Stevns ->  
+NL Buren -> Gemeentebelangen Buren 0
+NO Gloppen ->  
+SE Hjo ->  
+DK Struer ->  
+FI Järvenpää -> Järvenpään kaupunki 0
+NO Gol ->  
+SE Hofors ->  
+FI Kaarina ->  
+NO Gran ->  
+SE Huddinge ->  
+NO Grane ->  
+NL Capelle aan den IJssel -> Gemeente Capelle aan den IJssel 0
+SE Hudiksvall ->  
+FI Kaavi -> Kaavin kunta 0
+DK Svendborg -> Svendborg Kommune 1
+NL Castricum ->  
+FI Kajaani ->  
+NO Gratangen -> Gratangen kommune 0
+SE Hultsfred -> Hultsfreds kommun 0
+DK Syddjurs -> Syddjurs Kommune 0
+DK Sønderborg ->  
+NL Coevorden -> Gemeente Coevorden 0
+FI Kalajoki -> Kalajoen Kaupunki 0
+DK Thisted ->  
+NO Grimstad -> Grimstad kommune 7
+NL Cranendonck ->  
+SE Hylte -> Hylte kommun 0
+FI Kangasala ->  
+DK Tårnby ->  
+SE Hällefors ->  
+FI Kangasniemi ->  
+DK Tønder ->  
+SE Härjedalen ->  
+NO Grong -> Grong kommune 0
+NL Culemborg -> Gemeente Culemborg 0
+DK Vallensbæk ->  
+SE Härnösand ->  
+NO Grue ->  
+FI Kankaanpää -> Kankaanpään kaupunki - City of Kankaanpää 0
+DK Varde ->  
+SE Härryda ->  
+FI Kannonkoski ->  
+NL Dalfsen -> Gemeente Dalfsen 0
+NO Gulen -> Gulen kommune 0
+FI Kannus ->  
+NL Dantumadiel ->  
+NO Guovdageaidnu/Kautokeino ->  
+DK Vejen -> Vejen Kommune 0
+SE Hässleholm -> Hässleholms kommun 0
+FI Karijoki -> Karijoen kunta 0
+NL De Bilt -> Gemeenteraad De Bilt 0
+FI Karkkila ->  
+NO Gáivuotna/Kåfjord/Kaivuono -> Gáivuona suohkan Kåfjord kommune Kaivuonon komuuni 0
+NL De Fryske Marren ->  
+SE Håbo -> Håbo kommun 0
+DK Vejle -> Vejle Kommune 0
+FI Karstula ->  
+NL De Ronde Venen ->  
+FI Karvia ->  
+DK Vesthimmerlands ->  
+NO Hadsel -> Hadsel kommune 1
+FI Kaskinen ->  
+DK Viborg ->  
+NO Halden ->  
+NL De Wolden -> Gemeenteraad De Wolden 3
+FI Kauhajoki ->  
+DK Vordingborg ->  
+NO Hamar ->  
+SE Höganäs -> Höganäs Kommun 0
+DK Ærø ->  
+NO Hammerfest/Hámmerfeasta ->  
+SE Högsby ->  
+FI Kauhava -> Kauhavan kaupunki 0
+NL Delft -> Gemeente Delft 0
+FI Kauniainen ->  
+NO Hareid -> Hareid kommune 0
+NL Den Helder ->  
+FI Kaustinen ->  
+SE Hörby -> Hörby kommun 0
+FI Keitele ->  
+SE Höör ->  
+FI Kemi ->  
+SE Jokkmokk ->  
+NL Deurne -> Gemeente Deurne 0
+NL Deventer ->  
+NO Harstad/Hárstták -> Harstad kommune 51
+FI Kemijärvi -> Kemijärven kaupunki 0
+NO Hasvik ->  
+SE Järfälla -> Järfälla kommun 0
+NO Haugesund ->  
+SE Jönköping ->  
+NL Diemen -> Vergaderingen Gemeente Diemen 0
+FI Keminmaa -> Keminmaan Kunta 0
+NO Heim -> Heim Kommune 0
+NL Dijk en Waard -> Gemeente Dijk en Waard 0
+FI Kemiönsaari -> Kimitoöns kommun | Kemiönsaaren kunta 0
+SE Kalix -> Kalix kommun 1
+NO Hemnes -> Hemnes Kommune 0
+NL Dinkelland -> Gemeente Dinkelland 0
+NO Hemsedal ->  
+FI Kempele -> Kempeleen kunta 0
+SE Kalmar -> Kalmar kommun 0
+FI Kerava ->  
+NL Doesburg -> Stichting Gehandicapten Raad Doesburg e.o. 0
+SE Karlsborg ->  
+NO Herøy (Møre og Romsdal) -> Herøy kommune 0
+SE Karlshamn ->  
+FI Keuruu -> Keuruun kaupunki 0
+NO Herøy (Nordland) -> Herøy kommune 0
+FI Kihniö ->  
+NO Hitra ->  
+NO Hjartdal ->  
+NL Doetinchem -> Gemeenteraad Doetinchem 5
+SE Karlskoga -> Karlskoga kommun 0
+FI Kinnula -> Kinnulan kunta 0
+SE Karlskrona ->  
+NO Hjelmeland ->  
+FI Kirkkonummi ->  
+NO Hol ->  
+NL Dongen -> Gemeente Dongen 0
+NO Hole ->  
+SE Karlstad -> Karlstads kommun 0
+NL Dordrecht -> Gemeenteraad Dordrecht 0
+FI Kitee -> Kiteen kaupunki 2
+NO Holmestrand -> Holmestrand kommune 0
+SE Katrineholm -> Katrineholms kommun 2
+NL Drechterland -> Gemeente Drechterland 0
+NO Holtålen ->  
+FI Kittilä -> Kittilän kunta 0
+SE Kil ->  
+NL Drimmelen ->  
+NL Dronten ->  
+SE Kinda ->  
+NO Horten -> Horten kommune 0
+NL Druten ->  
+FI Kiuruvesi -> Kiuruveden kaupunki 0
+NO Hurdal ->  
+FI Kivijärvi ->  
+SE Kiruna -> Kiruna kommun 0
+NL Duiven -> Gemeente Duiven 0
+SE Klippan ->  
+NO Hustadvika -> Hustadvika kommune 1
+SE Knivsta ->  
+FI Kokemäki -> Kokemäen kaupunki 0
+NO Hvaler ->  
+NL Echt-Susteren -> Gemeente Echt-Susteren 0
+SE Kramfors ->  
+FI Kokkola ->  
+NO Hyllestad ->  
+NL Edam-Volendam -> Griffie Edam-Volendam 0
+SE Kristianstad -> Kristianstads kommun 0
+FI Kolari -> Kolarin kunta 1
+NL Ede ->  
+NO Hábmer/Hamarøy -> Hábmera suohkan - Hamarøy kommune 0
+NL Eemnes ->  
+SE Kristinehamn -> Kommunfullmäktige Kristinehamn 0
+FI Konnevesi -> Konneveden kunta 0
+NO Hå -> Hå kommune 0
+NL Eemsdelta -> Raad Eemsdelta 0
+SE Krokom -> Krokoms kommun 0
+NO Hægebostad -> Hægebostad kommune 0
+FI Kontiolahti -> Kontiolahden kunta 0
+SE Kumla ->  
+NL Eersel -> Gemeente Eersel 0
+FI Korsnäs ->  
+NO Høyanger ->  
+FI Koski Tl ->  
+NO Høylandet ->  
+NL Eijsden-Margraten -> Gemeente Eijsden-Margraten 1
+SE Kungsbacka -> Kungsbacka kommun 0
+NO Ibestad -> Ibestad Kommune 0
+FI Kotka -> Kotkan kaupunki - City Of Kotka 0
+NL Eindhoven -> Gemeenteraad Eindhoven 2
+SE Kungsör -> Kungsörs kommun 0
+NO Inderøy -> Inderøy Kommune 0
+NO Indre Fosen ->  
+NL Elburg -> Gemeente Elburg 0
+NO Indre Østfold ->  
+SE Kungälv -> Kungälvs Kommun 0
+FI Kouvola -> Kouvolan kaupunki 0
+NL Emmen -> Gemeenteraad-Emmen 0
+SE Kävlinge ->  
+FI Kristiinankaupunki ->  
+FI Kruunupyy ->  
+SE Köping ->  
+NO Iveland -> Iveland kommune 0
+NL Enkhuizen -> Gemeente Enkhuizen 0
+NO Jevnaker ->  
+NO Karlsøy ->  
+FI Kuhmo -> Kuhmon kaupunki 0
+SE Laholm -> Kultur och turism, Laholms kommun 0
+FI Kuhmoinen ->  
+SE Landskrona ->  
+FI Kumlinge ->  
+SE Laxå ->  
+NL Enschede -> Gemeente Enschede 0
+FI Kuopio ->  
+SE Lekeberg ->  
+NL Epe ->  
+NO Karmøy -> Karmøy kommune 0
+SE Leksand ->  
+NO Kinn -> Kinn kommune 0
+NL Ermelo -> Gemeente Ermelo 0
+FI Kuortane -> Kuortaneen Kunta 0
+NO Klepp ->  
+SE Lerum -> Moderaterna i Lerums kommun 0
+NO Kongsberg ->  
+FI Kurikka -> Kurikan kaupunki 0
+NL Etten-Leur -> Gemeente Etten-Leur 0
+FI Kustavi ->  
+NL Geertruidenberg ->  
+SE Lessebo -> Lessebo kommun 0
+NO Kongsvinger -> Kongsvinger kommune 1
+FI Kuusamo ->  
+SE Lidingö ->  
+NO Kragerø ->  
+FI Kyyjärvi ->  
+SE Lidköping ->  
+NL Geldrop-Mierlo -> Gemeente Geldrop-Mierlo 0
+NO Kristiansand ->  
+FI Kärkölä ->  
+SE Lilla Edet ->  
+NL Gemert-Bakel ->  
+NL Gennep ->  
+NO Kristiansund -> Kristiansund kommune 0
+FI Kärsämäki -> Kärsämäen kunta 0
+SE Lindesberg -> Lindesbergs kommun 0
+FI Kökar ->  
+NL Gilze en Rijen -> Gemeente Gilze en Rijen 0
+SE Linköping ->  
+NO Krødsherad -> Krødsherad Kommune 16
+SE Ljungby -> Kommunfullmäktige - Ljungby kommun 0
+NO Kvam ->  
+FI Lahti -> Lahden kaupunki 0
+NL Goeree-Overflakkee -> Gemeente Goeree-Overflakkee 0
+SE Ljusdal ->  
+FI Laihia ->  
+NL Goes ->  
+SE Ljusnarsberg ->  
+FI Laitila ->  
+NO Kvinesdal -> Kvinesdal Kommune 0
+NL Goirle -> Gemeente Goirle 0
+NO Kvinnherad ->  
+SE Lomma -> Lomma kommun 0
+FI Lapinjärvi -> Lapinjärven kunta 0
+NL Gooise Meren ->  
+NO Kviteseid ->  
+NL Gorinchem ->  
+NO Kvitsøy ->  
+NL Gouda ->  
+SE Ludvika -> Ludvika kommun 0
+FI Lapinlahti -> Lapinlahden kunta 0
+SE Luleå ->  
+NO Kvæfjord -> Kvæfjord kommune 0
+NL Groningen -> PVV Gemeente Groningen 0
+FI Lappajärvi -> Lappajärven kunta (valtuuston streamit) 0
+FI Lappeenranta ->  
+NO Kvænangen -> Kvænangen kommune 5
+SE Lund -> Lunds kommun 1
+NL Gulpen-Wittem -> Griffie Gulpen-Wittem 0
+NO Kárášjohka/Karasjok ->  
+SE Lycksele ->  
+NL Haaksbergen ->  
+FI Lapua -> Lapuan kaupunki 0
+NO Larvik -> Larvik kommune 0
+NO Lebesby ->  
+NL Haarlem -> Gemeente Haarlem 1
+SE Lysekil -> Lysekils kommun 0
+FI Laukaa -> Laukaan kunta 0
+NO Leirfjord ->  
+SE Malmö ->  
+NO Leka ->  
+FI Lemi ->  
+NO Lesja ->  
+FI Lemland ->  
+SE Malung-Sälen -> Malung-Sälens kommun 0
+SE Malå ->  
+SE Mariestad ->  
+NO Levanger -> Levanger kommune 13
+FI Lempäälä -> Lempäälän kunta 0
+NL Haarlemmermeer -> Gemeenteraad Haarlemmermeer 5
+FI Leppävirta ->  
+FI Lestijärvi ->  
+NO Lier -> Lier kommune 0
+SE Mark -> Marks kommun 0
+NO Lierne ->  
+SE Markaryd ->  
+NL Halderberge -> Gemeente Halderberge 0
+NO Lillehammer ->  
+FI Lieksa -> Lieksan kaupunki 0
+SE Mellerud -> Melleruds kommun 0
+FI Lieto ->  
+NO Lillesand -> Lillesand kommune 0
+FI Liminka ->  
+NL Hardenberg -> Gemeente Hardenberg 0
+NO Lillestrøm ->  
+SE Mjölby -> Mjölby kommun 0
+FI Liperi ->  
+NL Harderwijk -> Gemeente Harderwijk 1
+SE Mora -> Mora kommun 0
+NO Lindesnes -> Lindesnes kommune 0
+FI Lohja -> Lohjan kaupunki 0
+NO Loabák/Lavangen ->  
+FI Loimaa ->  
+NO Lom ->  
+NL Hardinxveld-Giessendam -> Gemeente Hardinxveld-Giessendam 1
+SE Motala -> Motala kommun 0
+NO Loppa ->  
+NL Harlingen ->  
+SE Mullsjö ->  
+FI Loppi -> Lopen kunta 0
+NL Hattem ->  
+FI Loviisa ->  
+NO Lund -> Lund Kommune 0
+NL Heemskerk ->  
+FI Luhanka ->  
+SE Munkedal -> Munkedals Kommun 0
+NL Heemstede ->  
+NO Lunner -> Lunner kommune 0
+FI Lumijoki -> Lumijoen kunta 0
+SE Munkfors -> Munkfors kommun 0
+NO Lurøy ->  
+NL Heerde -> Gemeente Heerde 0
+FI Lumparland ->  
+SE Mölndal ->  
+NO Luster ->  
+FI Luoto ->  
+SE Mönsterås ->  
+NO Lyngdal ->  
+FI Luumäki ->  
+NL Heerenveen -> Gemeente Heerenveen 0
+FI Maalahti ->  
+SE Mörbylånga -> Mörbylånga kommun 0
+FI Maarianhamina - Mariehamn ->  
+NO Lyngen -> Lyngen kommune 0
+FI Marttila ->  
+FI Masku ->  
+NL Heerlen -> Gemeente Heerlen 0
+SE Nacka -> Nacka kommun 0
+NO Lærdal -> Lærdal kommune 0
+FI Merijärvi ->  
+NL Heeze-Leende ->  
+SE Nora ->  
+FI Merikarvia ->  
+SE Norberg ->  
+NO Lødingen -> Kommunestyremøter Lødingen 0
+FI Miehikkälä ->  
+NL Heiloo -> Gemeente Heiloo 0
+SE Nordanstig -> Nordanstigs kommun 0
+NL Hellendoorn -> Gemeente Hellendoorn 0
+FI Mikkeli -> Mikkelin kaupunki 0
+NO Lørenskog -> Lørenskog kommune 1
+SE Nordmaling ->  
+NL Helmond ->  
+NO Løten ->  
+SE Norrköping ->  
+NL Hendrik-Ido-Ambacht ->  
+FI Muhos -> Muhoksen kunta 0
+NL Hengelo ->  
+FI Multia ->  
+SE Norrtälje -> Norrtälje kommun 0
+NO Malvik -> Malvik kommune 1
+FI Muonio ->  
+NL Het Hogeland -> GemeenteBelangen Het Hogeland 0
+FI Mustasaari ->  
+SE Norsjö -> Norsjö kommun 0
+NO Marker -> Marker kommune 0
+FI Muurame ->  
+NO Masfjorden ->  
+FI Mynämäki ->  
+NL Heumen -> Gemeente Heumen 0
+NO Melhus ->  
+FI Myrskylä ->  
+NO Meløy ->  
+NL Heusden -> Gemeente Heusden 0
+SE Nybro -> Nybro kommun 0
+SE Nykvarn ->  
+NL Hillegom ->  
+FI Mäntsälä -> Mäntsälän kunta 0
+NO Meråker -> Meråker Kommune 0
+FI Mänttä-Vilppula ->  
+NO Midt-Telemark ->  
+FI Mäntyharju ->  
+NL Hilvarenbeek -> Gemeente Hilvarenbeek 4
+NO Midtre Gauldal ->  
+FI Naantali ->  
+SE Nyköping -> Nyköpings kommun 0
+NO Modalen ->  
+NL Hilversum -> Raadspraat  Hilversum  (onofficieel kanaal ) 0
+FI Nakkila -> Nakkilan kunta 0
+SE Nynäshamn -> Sorundanet Nynäshamns kommunparti 0
+FI Nivala ->  
+NO Modum -> Modum kommune 1
+SE Nässjö ->  
+NL Hoeksche Waard -> Gemeente Hoeksche Waard 0
+NO Molde ->  
+SE Ockelbo ->  
+NO Moskenes ->  
+FI Nokia -> Nokian kaupunki  0
+SE Olofström ->  
+NO Moss ->  
+NL Hof van Twente -> Gemeenteraad Hof van Twente 0
+SE Orsa ->  
+NO Målselv ->  
+FI Nousiainen -> Nousiaisten kunta 0
+NO Måsøy ->  
+NL Hollands Kroon -> FvD Gemeente Hollands Kroon 0
+NO Namsos/Nåavmesjenjaelmie ->  
+SE Orust -> Orust kommun 0
+FI Nurmes ->  
+NO Namsskogan ->  
+NO Nannestad ->  
+SE Osby -> Osby kommun 0
+NL Hoogeveen -> Christengemeente Hoogeveen 0
+FI Nurmijärvi -> Nurmijärven kunta 0
+NL Hoorn ->  
+FI Närpiö ->  
+NO Narvik -> Narvik Kommune Direktesending 1
+SE Oskarshamn -> Oskarshamns kommun 0
+FI Orimattila -> Orimattilan Kaupunki 0
+NL Horst aan de Maas -> Gemeenteraad Horst aan de Maas 25
+SE Ovanåker -> Kultur och bibliotek Ovanåkers kommun 0
+NO Nes -> Nes kommune 0
+FI Oripää ->  
+NO Nesbyen ->  
+FI Orivesi ->  
+SE Oxelösund -> Oxelösunds kommun 0
+NL Houten -> Gemeente Houten 0
+FI Oulainen ->  
+NO Nesna -> Nesna Kommune Live 0
+NO Nesodden ->  
+SE Pajala -> Pajala Kommun 0
+NL Huizen -> Gemeenteraad Huizen 0
+NO Nissedal ->  
+NO Nittedal ->  
+NO Nome ->  
+NL Hulst -> gemeente Hulst 0
+SE Partille -> Partille Kommun 0
+NO Nord-Aurdal ->  
+SE Perstorp ->  
+SE Piteå ->  
+NL IJsselstein -> Gemeente IJsselstein 0
+NO Nord-Fron -> Nord-Fron kommune 0
+NO Nord-Odal ->  
+NL Kaag en Braassem -> Gemeenteraad Kaag en Braassem 0
+SE Ragunda -> Ragunda kommun 0
+NO Nordkapp ->  
+NL Kampen ->  
+NO Nordre Follo ->  
+SE Robertsfors -> Robertsfors kommun 0
+NO Nordre Land ->  
+FI Oulu -> Oulun kaupunki 3
+NL Kapelle -> Gemeenteraad Kapelle-op-den-Bos 0
+NO Nordreisa/Ráisa/Raisi ->  
+SE Ronneby ->  
+NL Katwijk ->  
+NO Nore og Uvdal ->  
+FI Outokumpu -> Outokummun kaupunki 0
+NO Notodden ->  
+SE Rättvik -> Rättviks kommun 0
+SE Sala ->  
+FI Padasjoki -> Padasjoen Kunta 0
+NL Kerkrade -> Gemeente Kerkrade 2
+NL Koggenland ->  
+NO Nærøysund -> Nærøysund kommune 0
+SE Salem -> Salems Kommun 0
+NO Oppdal ->  
+FI Paimio -> Paimion kaupunki 0
+NO Orkland ->  
+NL Krimpen aan den IJssel -> Gemeente Krimpen aan den IJssel 0
+FI Paltamo ->  
+NO Os ->  
+SE Sandviken -> Sandvikens Kommun 0
+NL Krimpenerwaard ->  
+FI Parainen -> Pargas stad - Paraisten kaupunki 0
+NO Osen -> Osen Kommune 0
+SE Sigtuna -> Sigtuna kommun 0
+NL Laarbeek -> Gemeente Laarbeek 2
+FI Parikkala ->  
+NO Oslo ->  
+NL Land van Cuijk ->  
+NO Osterøy -> Osterøy Kommune 0
+FI Parkano -> Parkanon Kaupunki 0
+NL Landgraaf -> Gemeente Landgraaf 0
+SE Simrishamn -> Simrishamns kommun 0
+NL Landsmeer ->  
+FI Pedersören kunta -> Pedersöre kommun 0
+SE Sjöbo -> Sjöbo kommun 0
+NO Overhalla -> Overhalla Kommune 0
+NL Lansingerland -> Gemeente Lansingerland 1
+NO Porsanger/Porsángu/Porsanki ->  
+FI Pelkosenniemi -> Pelkosenniemen kunta 0
+NL Laren ->  
+NO Porsgrunn ->  
+SE Skara -> Skara kommun 0
+NO Raarvihke/Røyrvik ->  
+FI Pello -> Pellon kunta 0
+NO Rakkestad ->  
+FI Perho ->  
+FI Pertunmaa ->  
+NL Leeuwarden -> Gemeente Leeuwarden 10
+NO Rana -> Rana kommune 0
+SE Skellefteå -> Skellefteå kommun 0
+NO Randaberg ->  
+FI Petäjävesi -> Petäjäveden kunta 0
+NO Rauma ->  
+NL Leiden -> Gemeente Leiden 0
+SE Skinnskatteberg -> Skinnskattebergs kommun 0
+NO Rendalen -> Rendalen kommune 0
+FI Pieksämäki -> Pieksämäen kaupunki 0
+NL Leiderdorp -> Gemeente Leiderdorp 0
+SE Skurup -> Arbetsmarknadsenheten i Skurups kommun 0
+NO Rennebu -> Rennebu kommune 0
+NO Rindal ->  
+NL Leidschendam-Voorburg -> Gemeente Leidschendam-Voorburg 0
+SE Skövde -> Skövde kommun 0
+NO Ringebu ->  
+FI Pielavesi -> Pielaveden Helluntaiseurakunta 0
+SE Smedjebacken ->  
+FI Pietarsaari ->  
+NO Ringerike -> Ringerike kommune 0
+NL Lelystad -> Gemeente Lelystad 0
+NO Ringsaker ->  
+NL Leudal ->  
+FI Pihtipudas -> Pihtiputaan kunta 0
+NO Risør ->  
+SE Sollefteå -> Sollefteå Kommun 0
+NO Rollag ->  
+SE Sollentuna ->  
+NO Råde ->  
+SE Solna ->  
+NL Leusden -> Gemeente Leusden 1
+FI Pirkkala -> Pirkkalan kunta 0
+NO Rælingen -> Rælingen kommune 0
+SE Sorsele -> Sorsele kommun 0
+FI Polvijärvi -> Polvijärven kunta 0
+NL Lingewaard -> Gemeente Lingewaard 1
+NO Rødøy ->  
+FI Pomarkku ->  
+NO Røros ->  
+SE Sotenäs -> Sotenäs Kommun 0
+NL Lisse -> gemeente Lisse 0
+SE Staffanstorp ->  
+NO Røst -> Røst Kommune 0
+FI Pori -> Porin kaupunki 0
+FI Pornainen ->  
+NL Lochem -> Gemeentebelangen Lochem 0
+SE Stenungsund -> Stenungsunds kommun 0
+NO Salangen -> Salangen kommune 0
+FI Porvoo ->  
+SE Stockholm ->  
+NO Saltdal ->  
+NL Loon op Zand -> Gemeente Loon op Zand 0
+NO Samnanger ->  
+FI Posio -> Posion kunta 0
+SE Storfors -> Storfors Kommun 0
+NL Lopik -> Gemeente Lopik 0
+NO Sande -> Sande kommune 0
+NL Losser ->  
+FI Pudasjärvi -> Pudasjärven kaupunki 0
+SE Storuman -> Storumans kommun 0
+NL Maasdriel ->  
+FI Pukkila ->  
+SE Strängnäs ->  
+NO Sandefjord -> Sandefjord kommune 2
+NL Maasgouw ->  
+NO Sandnes ->  
+FI Punkalaidun -> Punkalaitumen kunta 0
+SE Strömstad -> Kommunfullmäktige Strömstad 0
+NO Sarpsborg ->  
+FI Puolanka ->  
+SE Strömsund ->  
+NO Sauda ->  
+NL Maashorst -> Gemeente Maashorst 2
+SE Sundbyberg ->  
+NO Sel ->  
+NL Maassluis ->  
+FI Puumala -> Puumalan kunta 0
+NO Selbu -> Selbu kommune 0
+NO Seljord ->  
+FI Pyhtää -> Pyhtään kunta 0
+SE Sundsvall -> Sundsvalls kommun 0
+NO Senja ->  
+FI Pyhäjoki ->  
+NL Maastricht -> Gemeente Maastricht 4
+SE Sunne ->  
+FI Pyhäjärvi ->  
+SE Surahammar ->  
+NO Sigdal -> SIgdal Kommune 1
+SE Svalöv ->  
+NL Medemblik -> Gemeente Medemblik 0
+FI Pyhäntä -> Pyhännän kunta 0
+NO Siljan ->  
+NL Meerssen ->  
+NO Sirdal ->  
+SE Svedala -> Svedala kommun 0
+NO Skaun ->  
+FI Pyhäranta -> Pyhärannan Kunta live-stream 0
+SE Svenljunga ->  
+NO Skien ->  
+NL Meierijstad -> Gemeente Meierijstad 1
+NO Skiptvet ->  
+NL Meppel ->  
+FI Pälkäne -> Pälkäneen kunta 0
+SE Säffle -> Säffle kommun 0
+FI Pöytyä ->  
+NO Skjervøy -> Skjervøy kommune 1
+NL Middelburg -> Gemeente Middelburg 0
+SE Säter -> Säters Kommun 0
+NO Skjåk ->  
+NL Midden-Delfland ->  
+FI Raahe -> Raahen kaupunki – City of Raahe 0
+SE Sävsjö ->  
+NO Smøla ->  
+FI Raasepori ->  
+SE Söderhamn ->  
+NO Snåase/Snåsa ->  
+NL Midden-Drenthe -> Gemeenteraad Midden-Drenthe 0
+FI Raisio -> Raision kaupunki 0
+SE Söderköping -> Söderköpings kommun 0
+NO Sogndal -> Sogndal kommune 0
+NL Midden-Groningen -> Gemeenteraad Midden-Groningen 4
+FI Rantasalmi ->  
+SE Södertälje ->  
+NO Sokndal -> Sokndal kommune 1
+FI Ranua -> Ranuan kunta 0
+SE Sölvesborg -> Sölvesborgs kommun 0
+NL Moerdijk -> Gemeente Moerdijk 0
+NO Sola ->  
+SE Tanum ->  
+NO Solund ->  
+NO Sortland/Suortá ->  
+FI Rauma -> Rauman kaupunki - City of Rauma 0
+NL Molenlanden -> Gemeente Molenlanden 2
+NO Stad ->  
+SE Tibro -> Tibro Kommun-TV 0
+NO Stange ->  
+SE Tidaholm ->  
+NO Stavanger ->  
+FI Rautalampi -> Rautalammin kunta 0
+NL Montferland -> Raad Montferland 0
+NO Steigen ->  
+FI Rautavaara ->  
+SE Tierp -> Tierps kommun 0
+NO Steinkjer ->  
+FI Rautjärvi ->  
+SE Timrå ->  
+NL Montfoort -> Gemeente Montfoort 0
+FI Reisjärvi -> Reisjärven kunta 0
+NO Stjørdal -> Stjørdal Kommune 17
+NL Mook en Middelaar -> Gemeente Mook en Middelaar 0
+SE Tingsryd -> Tingsryds kommun 0
+NO Stor-Elvdal -> Stor-Elvdal kommune 0
+NL Neder-Betuwe -> Gemeentebelangen Neder-Betuwe 0
+SE Tjörn -> Tjörns kommun 0
+FI Riihimäki -> Riihimäen kaupunki - City of Riihimäki 0
+NO Stord ->  
+SE Tomelilla ->  
+FI Ristijärvi ->  
+NO Storfjord/Omasvuotna/Omasvuono ->  
+FI Rovaniemi ->  
+NO Strand ->  
+NL Nederweert -> Gemeente Nederweert 0
+NO Stranda ->  
+SE Torsby -> Torsby kommun 0
+NO Stryn ->  
+SE Torsås ->  
+FI Ruokolahti -> Ruokolahden kunta 0
+SE Tranemo ->  
+FI Ruovesi ->  
+NL Nieuwegein -> Gemeente Nieuwegein 0
+NO Sula -> Sula kommune 0
+SE Tranås ->  
+NL Nieuwkoop ->  
+SE Trelleborg ->  
+NO Suldal ->  
+NL Nijkerk ->  
+FI Rusko -> Ruskon seurakunta 0
+SE Trollhättan ->  
+NO Sunndal ->  
+SE Trosa ->  
+NO Sunnfjord ->  
+NL Nijmegen -> Gemeente Nijmegen 0
+SE Tyresö ->  
+FI Rääkkylä -> Rääkkylän kunta 0
+NO Surnadal ->  
+FI Saarijärvi ->  
+NO Sveio ->  
+NO Sykkylven ->  
+NL Nissewaard -> Gemeente Nissewaard 10
+FI Salla -> Sallan kunta 0
+NO Sømna ->  
+NL Noardeast-Fryslân ->  
+SE Täby -> Täby kommun 2
+SE Töreboda ->  
+NO Søndre Land -> Søndre Land kommune 0
+FI Salo -> City of Salo - Salon kaupunki 0
+NL Noord-Beveland -> Gemeente Noord-Beveland 0
+NO Sør-Aurdal ->  
+FI Saltvik ->  
+NL Noordenveld ->  
+FI Sastamala ->  
+NL Noordoostpolder ->  
+SE Uddevalla -> Uddevalla kommun 0
+FI Sauvo ->  
+NO Sør-Fron -> Sør-Fron kommune 0
+NL Noordwijk ->  
+FI Savitaipale ->  
+NO Sør-Odal ->  
+NL Nuenen, Gerwen en Nederwetten ->  
+NO Sør-Varanger ->  
+SE Ulricehamn -> Ulricehamns kommun 0
+FI Savonlinna -> Savonlinnan Kaupunki 0
+NL Nunspeet -> Gemeente Nunspeet 0
+NO Sørfold -> Sørfold Kommune 0
+NL Oegstgeest ->  
+SE Umeå -> Kommunal Umeå 0
+NO Sørreisa ->  
+FI Savukoski -> Savukosken kunta 0
+NO Time ->  
+NL Oirschot -> Gemeente Oirschot 0
+NO Tingvoll ->  
+SE Upplands Väsby -> Upplands Väsby kommun 0
+NO Tinn ->  
+FI Seinäjoki -> Seinäjoen kaupunki 0
+NL Oisterwijk -> Gemeente Oisterwijk 0
+FI Sievi ->  
+NO Tokke -> Tokke Kommune 0
+FI Siikainen ->  
+SE Upplands-Bro -> Upplands-Bro kommun 1
+NO Tolga ->  
+FI Siikajoki ->  
+NL Oldambt -> Gemeente Oldambt 0
+SE Uppsala -> Funktionsrätt Uppsala kommun 0
+NL Oldebroek -> Gemeente Oldebroek 0
+FI Siikalatva -> Siikalatvan kunta 0
+NL Oldenzaal ->  
+FI Siilinjärvi ->  
+NO Tromsø -> Politiske møter i Tromsø kommune 63
+SE Uppvidinge -> Uppvidinge Kommun 0
+FI Simo ->  
+SE Vadstena ->  
+SE Vaggeryd ->  
+NL Olst-Wijhe -> Gemeente Olst-Wijhe 0
+FI Sipoo -> Sipoon kunta - Sibbo kommun 0
+NL Ommen ->  
+NO Trondheim -> Trondheim kommune 0
+SE Valdemarsvik -> Valdemarsviks kommun 0
+NO Trysil ->  
+NL Oost Gelre -> Gemeente Oost Gelre 0
+FI Siuntio -> Siuntion kunta Sjundeå kommun 0
+NO Træna ->  
+SE Vallentuna -> Vallentuna kommun 0
+NL Oosterhout -> Gemeenteraad Oosterhout 1
+NO Tvedestrand -> Tvedestrand kommune 0
+FI Sodankylä -> Sodankylän kunta 0
+SE Vansbro -> Vansbro kommun 0
+FI Soini ->  
+SE Vara ->  
+FI Somero ->  
+NO Tydal -> Tydal kommune 0
+NL Ooststellingwerf -> Gemeente Ooststellingwerf 0
+SE Varberg ->  
+NL Oostzaan ->  
+SE Vaxholm ->  
+NL Opmeer ->  
+SE Vellinge ->  
+FI Sonkajärvi -> Sonkajärven kunta, Sonkajarvi Municipality 0
+NO Tynset -> Tynset Kommune 0
+SE Vetlanda ->  
+NO Tysnes ->  
+NL Opsterland -> Gemeente Opsterland 0
+NO Tysvær ->  
+FI Sotkamo -> Sotkamon kunta 0
+SE Vilhelmina -> Vilhelmina kommun 0
+FI Sottunga ->  
+FI Sulkava ->  
+NL Oss -> Gemeente Oss 0
+FI Sund ->  
+NO Tønsberg -> Tønsberg Kommune 0
+SE Vimmerby -> Vimmerby kommun 0
+NL Oude IJsselstreek ->  
+FI Suomussalmi ->  
+NO Ullensaker ->  
+FI Suonenjoki ->  
+NO Ullensvang ->  
+SE Vindeln -> Vindelns Kommun 0
+NL Ouder-Amstel -> Gemeenteraad Ouder-Amstel 0
+SE Vingåker ->  
+NO Ulstein -> Ulstein kommune 0
+FI Sysmä -> Sysmän Kunta 0
+NO Ulvik ->  
+NL Oudewater -> Gemeente Oudewater 0
+FI Säkylä ->  
+SE Vänersborg -> Vänersborgs kommun 0
+NO Unjárga/Nesseby ->  
+SE Vännäs ->  
+NO Utsira ->  
+NL Overbetuwe -> Gemeentebelangen Overbetuwe 0
+FI Taipalsaari -> Taipalsaaren kunta 0
+SE Värmdö ->  
+NO Vadsø ->  
+FI Taivalkoski ->  
+SE Värnamo ->  
+NO Vaksdal ->  
+FI Taivassalo ->  
+NO Valle ->  
+NL Papendrecht -> Gemeente Papendrecht 0
+FI Tammela ->  
+NO Vang ->  
+NL Peel en Maas ->  
+SE Västervik -> Västerviks kommun 0
+SE Västerås ->  
+NO Vanylven -> Vanylven kommune 0
+NL Pekela -> Gemeente Pekela 0
+FI Tampere -> Tampereen kaupunki 1
+NO Vardø ->  
+NL Pijnacker-Nootdorp ->  
+SE Växjö -> Växjö kommun 0
+NO Vefsn ->  
+NO Vega ->  
+FI Tervo -> Tervon kunta 0
+SE Vårgårda -> Vårgårda kommun 0
+NL Purmerend -> Gemeente Purmerend 0
+SE Ydre ->  
+NO Vegårshei -> Vegårshei kommune 0
+FI Tervola -> Tervola kunta 0
+NL Putten -> Gemeente Putten 0
+NO Vennesla -> Vennesla kommune 0
+FI Teuva -> Teuvan Kunta 0
+SE Ystad -> Ystads kommun 0
+SE Älmhult ->  
+NL Raalte -> Gemeente Raalte 2
+NO Verdal -> Verdal kommune 0
+FI Tohmajärvi -> Tohmajärven kunta 0
+NO Vestby ->  
+FI Toholampi ->  
+SE Älvdalen -> Älvdalens kommun 0
+NO Vestnes ->  
+NL Reimerswaal -> Gemeente Reimerswaal 0
+FI Toivakka ->  
+NO Vestre Slidre ->  
+NL Renkum ->  
+FI Tornio ->  
+SE Älvkarleby -> Älvkarleby Kommun 0
+NO Vestre Toten ->  
+SE Älvsbyn ->  
+NO Vestvågøy ->  
+NL Renswoude -> Gemeente Renswoude 0
+NO Vevelstad ->  
+NL Reusel-De Mierden ->  
+SE Ängelholm -> Ängelholms kommun 0
+NL Rheden ->  
+NO Vik -> Vik Kommune 0
+NO Vindafjord ->  
+SE Åmål -> Åmåls kommun 0
+NL Rhenen -> Gemeente Rhenen 0
+NO Vinje ->  
+FI Turku -> Turun kaupunki - Åbo stad - City of Turku 0
+SE Ånge ->  
+NL Ridderkerk ->  
+NO Volda ->  
+FI Tuusniemi ->  
+NO Voss ->  
+FI Tuusula ->  
+SE Åre -> Åre kommun 0
+NO Vågan ->  
+NL Rijssen-Holten -> Gemeente Rijssen-Holten 0
+NO Vågå ->  
+FI Tyrnävä -> Tyrnävän kunta 0
+SE Årjäng -> Årjängs Kommun 0
+FI Ulvila ->  
+NL Rijswijk -> Gemeenteraad Rijswijk 0
+SE Åsele ->  
+NO Våler (Innlandet) -> Valer Kommune 0
+NO Våler (Viken) -> Valer Kommune 0
+FI Urjala -> Urjalan kunta 0
+NL Roerdalen -> Gemeente Roerdalen 0
+NO Værøy ->  
+SE Åstorp -> Åstorps kommun 0
+FI Utajärvi ->  
+NO Åfjord ->  
+NO Ål ->  
+SE Åtvidaberg -> Åtvidabergs kommun 0
+FI Utsjoki -> Utsjoen kunta 0
+NL Roermond -> Gemeente Roermond 0
+NO Ålesund -> Ålesund kommune 0
+FI Uurainen -> Uuraisten kunta 0
+NL Roosendaal -> Gemeenteraad Roosendaal 0
+SE Öckerö -> Öckerö kommun 1
+NO Åmli ->  
+FI Uusikaarlepyy ->  
+SE Ödeshög ->  
+NO Åmot ->  
+FI Uusikaupunki ->  
+SE Örebro ->  
+NL Rotterdam -> Gemeenteraad van Rotterdam 0
+NO Årdal ->  
+FI Vaala ->  
+SE Örkelljunga ->  
+NO Ås ->  
+NO Åseral ->  
+NL Rozendaal -> Gemeente Rozendaal 0
+NO Åsnes ->  
+NL Rucphen ->  
+SE Örnsköldsvik -> Örnsköldsviks Kommun 0
+FI Vaasa -> Vaasan kaupunki - Vasa stad - City of Vaasa 0
+NL Schagen ->  
+NO Øksnes -> Øksnes kommune 1
+FI Valkeakoski -> Valkeakosken kaupunginvaltuuston kokoukset 0
+NO Ørland ->  
+SE Östersund -> Östersunds kommun 0
+NL Scherpenzeel -> Gemeente Scherpenzeel 0
+FI Vantaa ->  
+NL Schiedam ->  
+NL Schiermonnikoog ->  
+SE Österåker -> Österåkers kommun 0
+FI Varkaus -> Varkauden kaupunki 0
+NL Schouwen-Duiveland ->  
+NO Ørsta -> Ørsta kommune 2
+FI Vehmaa ->  
+NO Østre Toten ->  
+FI Vesanto ->  
+SE Östhammar -> Östhammars kommun 0
+NL Simpelveld -> Gemeente Simpelveld 0
+FI Vesilahti ->  
+FI Veteli ->  
+NO Øvre Eiker -> Øvre Eiker kommune 0
+SE Östra Göinge -> Östra Göinge Kommun 0
+NL Sint-Michielsgestel -> Gemeente Sint-Michielsgestel 0
+FI Vieremä -> Vieremän kunta Official 0
+NL Sittard-Geleen ->  
+NO Øyer -> Øyer kommune 0
+SE Överkalix -> Överkalix Kommun 0
+NO Øygarden ->  
+NO Øystre Slidre ->  
+FI Vihti -> Vihdin kunta 0
+NL Sliedrecht -> Gemeente Sliedrecht 0
+FI Viitasaari ->  
+SE Övertorneå -> ÖVERTORNEÅ KOMMUN 0
+NL Sluis ->  
+NL Smallingerland ->  
+FI Vimpeli -> Vimpelin kunta 0
+FI Virolahti ->  
+FI Virrat -> Virtain Kaupunki 0
+NL Soest -> Gemeente Soest 3
+FI Vårdö ->  
+NL Someren -> Gemeente Someren 0
+FI Vöyri -> Vörå Kommun - Vöyrin kunta 0
+NL Son en Breugel ->  
+FI Ylitornio ->  
+FI Ylivieska ->  
+NL Stadskanaal -> gemeenteraad Stadskanaal 1
+FI Ylöjärvi -> Ylöjärven kaupunki 0
+FI Ypäjä ->  
+NL Staphorst -> Gemeente Staphorst 0
+FI Ähtäri ->  
+NL Stede Broec ->  
+FI Äänekoski ->  
+NL Steenbergen ->  
+NL Steenwijkerland -> Gemeenteraad Steenwijkerland 0
+NL Stein -> Gemeente Stein 0
+NL Stichtse Vecht ->  
+NL Súdwest-Fryslân -> Gemeente Súdwest-Fryslân 0
+NL Terneuzen -> Gemeente Terneuzen 0
+NL Terschelling ->  
+NL Texel ->  
+NL Teylingen ->  
+NL Tholen ->  
+NL Tiel ->  
+NL Tilburg -> Gemeenteraad Tilburg 12
+NL Tubbergen -> gemeente Tubbergen 0
+NL Twenterand ->  
+NL Tynaarlo ->  
+NL Tytsjerksteradiel -> Gemeenteraad Tytsjerksteradiel 0
+NL Uitgeest ->  
+NL Uithoorn -> Gemeente Uithoorn 0
+NL Urk -> Gemeente Urk 0
+NL Utrecht -> Gemeenteraad Utrecht 1
+NL Utrechtse Heuvelrug ->  
+NL Vaals -> Gemeente Vaals 0
+NL Valkenburg aan de Geul -> Gemeente Valkenburg aan de Geul 0
+NL Valkenswaard -> Gemeente Valkenswaard 0
+NL Veendam -> Gemeente Veendam 0
+NL Veenendaal ->  
+NL Veere ->  
+NL Veldhoven -> Gemeente Veldhoven 0
+NL Velsen -> Raad van Velsen 4
+NL Venlo -> Gemeenteraad Venlo 0
+NL Venray ->  
+NL Vijfheerenlanden -> Gemeente Vijfheerenlanden 0
+NL Vlaardingen -> Gemeente Vlaardingen 0
+NL Vlieland -> Gemeente Vlieland 0
+NL Vlissingen -> Gemeente Vlissingen 0
+NL Voerendaal -> Gemeente Voerendaal 0
+NL Voorne aan Zee -> Gemeente Voorne aan Zee 0
+NL Voorschoten -> Gemeenteraad Voorschoten 0
+NL Voorst -> Gemeente Voorst 0
+NL Vught -> Gemeente Vught 0
+NL Waadhoeke -> Gemeente Waadhoeke 0
+NL Waalre ->  
+NL Waalwijk ->  
+NL Waddinxveen -> Gemeente Waddinxveen 0
+NL Wageningen -> Gemeente Wageningen 0
+NL Wassenaar -> Gemeente Wassenaar 0
+NL Waterland ->  
+NL Weert ->  
+NL West Betuwe -> gemeente West Betuwe 0
+NL West Maas en Waal -> Gemeente West Maas en Waal 0
+NL Westerkwartier -> Gemeente Westerkwartier 0
+NL Westerveld -> Gemeente Westerveld 0
+NL Westervoort ->  
+NL Westerwolde -> Gemeente Westerwolde 0
+NL Westland -> Gemeente Westland 0
+NL Weststellingwerf -> Gemeente Weststellingwerf 0
+NL Wierden -> Gemeente Wierden 2
+NL Wijchen -> Gemeente Wijchen 1
+NL Wijdemeren -> Gemeente Wijdemeren 0
+NL Wijk bij Duurstede -> Gemeente Wijk bij Duurstede 0
+NL Winterswijk ->  
+NL Woensdrecht -> Gemeente Woensdrecht 0
+NL Woerden -> Gemeente Woerden 0
+NL Wormerland ->  
+NL Woudenberg -> Gemeente Woudenberg 0
+NL Zaanstad -> Raad Zaanstad 0
+NL Zaltbommel ->  
+NL Zandvoort ->  
+NL Zeewolde ->  
+NL Zeist -> Griffie Gemeenteraad Zeist 0
+NL Zevenaar ->  
+NL Zoetermeer -> Gemeente Zoetermeer 0
+NL Zoeterwoude ->  
+NL Zuidplas -> Gemeente Zuidplas 1
+NL Zundert -> Gemeente Zundert 0
+NL Zutphen -> Raad Zutphen 0
+NL Zwartewaterland -> Gemeente Zwartewaterland 0
+NL Zwijndrecht -> Gemeente Zwijndrecht 0
+NL Zwolle -> Gemeente Zwolle 0
+
+--- stderr ---
