@@ -1,0 +1,18 @@
+ok 18696 https://raw.githubusercontent.com/factbook/factbook.json/master/north-america/sb.json
+ok 58820 https://relief.unboundmedicine.com/relief/view/The-World-Factbook/563198/all/Saint_Pierre_and_Miquelon?q=South
+ok 3208 https://www.gov.uk/api/search.json?q=children+in+low+income+families+local+area+statistics&count=8&fields=title%2Clink%2Cpublic_timestamp
+ok 24107 https://www.gov.uk/api/content/government/collections/children-in-low-income-families-local-area-statistics
+ok 102680 https://www.gov.uk/api/content/universal-credit
+ok 20367 https://www.gov.uk/api/content/government/statistics/children-in-low-income-families-local-area-statistics-2022-to-2025
+ok 3074 https://www.gov.uk/api/search.json?q=schools+pupils+and+their+characteristics&count=8&fields=title%2Clink%2Cpublic_timestamp
+ok 9919 https://www.gov.uk/api/content/government/statistics/schools-pupils-and-their-characteristics-january-2026
+ok 13179 https://www.gov.uk/api/content/government/statistics/schools-pupils-and-their-characteristics-january-2025
+ok 29349 https://www.gov.uk/api/content/government/statistics/schools-pupils-and-their-characteristics-january-2019
+ok 12600 https://www.arcgis.com/sharing/rest/search?q=Counties+and+Unitary+Authorities+December+2024+Boundaries+UK+BUC&f=json&num=10
+ok 18185 https://www.arcgis.com/sharing/rest/search?q=Local+Authority+Districts+December+2024+Boundaries+UK+BUC&f=json&num=10
+FAIL https://www.gov.scot/api/search?q=pupil+census+supplementary+statistics&type=publication: HTTP Error 404: Not Found
+ok 8489 https://statswales.gov.wales/Catalogue/Education-and-Skills/Schools-and-Teachers/Schools-Census/Pupil-Level-Annual-School-Census/Pupils
+ok 37970 https://www.education-ni.gov.uk/topics/statistics-and-research/statistics
+ok 17080 https://www.arcgis.com/sharing/rest/search?q=Counties+Ireland+Tailte+Eireann+boundaries+generalised&f=json&num=10
+ok 68560 https://data.gov.ie/api/3/action/package_search?q=post-primary+schools+enrolment&rows=10
+ok 16184 https://data.gov.ie/api/3/action/package_search?q=Pobal+HP+deprivation+index&rows=5
