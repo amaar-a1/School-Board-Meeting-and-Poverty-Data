@@ -132,6 +132,7 @@ window.SOURCES = [
       { title: "Manitoba: Enrolment Report, October 1, 2025 (Manitoba Education)", url: "https://www.edu.gov.mb.ca/k12/finance/sch_enrol/enrolment_2025.pdf" },
       { title: "Nova Scotia: Public School Enrolment by RCE/CSAP and School, 2025–26 (Nova Scotia Open Data)", url: "https://data.novascotia.ca/Education/Nova-Scotia-Public-School-Enrolment-by-RCE-CSAP-and/cjnf-ywvt" },
       { title: "New Brunswick: student enrolment by school and grade, 2024–25 (GNB open data)", url: "https://open.canada.ca/data/en/dataset/712e7355-91d7-7b4f-9d46-1e7b5561cd95" },
+      { title: "Saskatchewan: Active List of Saskatchewan Schools/Programs, K-12 headcount as of September 30, 2024 (Ministry of Education; school figures summed by division; schools listed as fewer than 10 count as 5)", url: "https://publications.saskatchewan.ca/#/products/83293" },
       { title: "Northwest Territories: JK-12 Education System Performance Measures Technical Report 2024-25, Table 6 (full-time-equivalent enrolment, grades 1–12, by education body)", url: "https://www.ece.gov.nt.ca/sites/ece/files/resources/jk-12_annual_pm_report_2024-25_final.pdf" },
       { title: "Newfoundland and Labrador: Community Accounts, Enrolment 1990-2026 (province-wide, used for NLSchools)", url: "https://nl.communityaccounts.ca/table.asp?_=vb7En4WVgbOxz7ZjS6rIxpuixqOVko7Lqomyv4yplszCmJ6-x84_" },
       { title: "Newfoundland and Labrador French board: Conseil scolaire francophone provincial (“more than 400 students”)", url: "https://csfp.nl.ca/a-propos/" },
@@ -139,7 +140,7 @@ window.SOURCES = [
       { title: "Yukon French board: People for Education, Canadian Education Blueprint (413 students, 2025–26)", url: "https://peopleforeducation.ca/blueprints/" },
       { title: "Nunavut French board: Radio Canada International, September 3, 2025 (116 students at École des Trois-Soleils)", url: "https://www.rcinet.ca/regard-sur-arctique/2025/09/03/plus-deleves-plus-de-depenses-dans-les-ecoles-francophones-des-territoires/" }
     ],
-    note: "The provincial files are official. The last five sources fill in boards with no provincial file and are noted in the “Enrollment note” column; NLSchools uses the province-wide total, which also includes the French board's roughly 400 students. Saskatchewan's official school list (publications.saskatchewan.ca) couldn't be downloaded: the site's security certificate didn't check out, and it isn't archived elsewhere, so Saskatchewan has no enrollment yet. PEI's French board and the Yukon First Nation School Board also have no figure. The years differ by province (see the Enrollment year column)."
+    note: "The provincial files are official. The last five sources fill in boards with no provincial file and are noted in the “Enrollment note” column; NLSchools uses the province-wide total, which also includes the French board's roughly 400 students. Lloydminster's two divisions report to both Alberta and Saskatchewan, so each side shows that province's count, which may overlap. PEI's French board and the Yukon First Nation School Board also have no figure. The years differ by province (see the Enrollment year column)."
   },
   {
     only: "Canada",

@@ -53,7 +53,9 @@ def main(src, yt, dst):
             e = enr.get(r["District ID"], {})
             w.writerow({**{c: r.get(c, "") for c in cols}, "Province": NAMES[r["Province"]],
                         "Enrollment": e.get("Enrollment", ""), "Enrollment year": e.get("Enrollment year", ""),
-                        "Enrollment note": e.get("Enrollment note", ""),
+                        "Enrollment note": "; ".join(x for x in [e.get("Enrollment note", ""),
+                            "Lloydminster's division reports to both provinces; this is this province's count, which may overlap with the other side's"
+                            if "Lloydminster" in r["District"] and e else ""] if x),
                         "Available Board Meetings": n, "Meetings source": url if n else "",
                         # Ontario's border file (2015) lists old web addresses, many of them dead.
                         "Website": "" if r["Province"] == "ON" else r.get("Website", "")})

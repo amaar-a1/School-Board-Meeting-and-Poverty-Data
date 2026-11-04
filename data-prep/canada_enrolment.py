@@ -19,7 +19,7 @@ def norm(s):
 def main(raw, build, dst):
     raw = Path(raw)
     boards = list(csv.DictReader(open(build, newline="", encoding="utf-8")))
-    out = {}
+    out, notes = {}, {}
     by_prov = lambda p: [b for b in boards if b["Province"] == p]
 
     def put(bid, n, year, src):
@@ -107,11 +107,36 @@ def main(raw, build, dst):
             if not bid:
                 print("  Ontario board not in the border file (school authorities and provincial schools):", r[ncol])
             put(bid, r["n"], "2024-2025", "Ontario Ministry of Education, School Information and Student Demographics (Ontario Data Catalogue)")
+    # Saskatchewan: Active List of Saskatchewan Schools/Programs, K-12 headcount, September 30, 2024
+    # (publications.saskatchewan.ca). Schools listed as "<10" count as 5.
+    f = Path(__file__).with_name("inputs") / "canada" / "enrolment" / "sk_active_schools_2024.pdf"
+    if f.exists():
+        txt = subprocess.run(["pdftotext", "-layout", str(f), "-"], capture_output=True, text=True).stdout
+        tot, small = {}, {}
+        for line in txt.splitlines():
+            m = re.match(r"^\s*(?:\d+\s+)?(\S.*?)\s+(SD|RCSSD)\s+(\d+)\s{2,}.*?(<10|\d[\d,]*)\s*$", line)
+            fr = re.match(r"^\s*(?:\d+\s+)?Conseil des écoles fransaskoises \d+\s{2,}.*?(<10|\d[\d,]*)\s*$", line)
+            if m:
+                key, v = (m.group(2), int(m.group(3))), m.group(4)
+            elif fr:
+                key, v = ("CEF", 0), fr.group(1)
+            else:
+                continue
+            tot[key] = tot.get(key, 0) + (5 if v == "<10" else int(v.replace(",", "")))
+            small[key] = small.get(key, 0) + (v == "<10")
+        src = "Saskatchewan Ministry of Education, Active List of Saskatchewan Schools/Programs (K-12 headcount)"
+        for b in by_prov("SK"):
+            num = re.search(r"No\. (\d+)", b["District"])
+            key = ("CEF", 0) if b["Board type"] == "Francophone" else (("RCSSD" if "Catholic" in b["Board type"] else "SD"), int(num.group(1))) if num else None
+            if key in tot:
+                put(b["District ID"], tot[key], "September 30, 2024", src)
+                if small[key]:
+                    notes[b["District ID"]] = f"{small[key]} small school(s) listed as fewer than 10 students are counted as 5 each"
     with open(dst, "w", newline="", encoding="utf-8") as fo:
         w = csv.writer(fo)
-        w.writerow(["District ID", "Enrollment", "Enrollment year", "Enrollment source"])
+        w.writerow(["District ID", "Enrollment", "Enrollment year", "Enrollment source", "Enrollment note"])
         for bid, (n, y, s) in sorted(out.items()):
-            w.writerow([bid, n, y, s])
+            w.writerow([bid, n, y, s, notes.get(bid, "")])
     got = {b["Province"] for b in boards if b["District ID"] in out}
     for p in sorted({b["Province"] for b in boards}):
         bs = by_prov(p)
