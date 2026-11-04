@@ -105,6 +105,7 @@ window.SOURCES = [
       { title: "Enrollment: Repères et références statistiques 2025, chapter 11, La France d'outre-mer (tables 11.01: 358 primary and 484 secondary students, start of the 2024 school year)", url: "https://www.education.gouv.fr/sites/default/files/2025-07/rers2025-chapitre-11-441744.pdf" },
       { title: "Meetings: Territorial Council deliberations in the official gazette of Saint-Pierre-et-Miquelon (session dates)", url: "https://www.jo-spm.fr/" },
       { title: "Territorial Council rules: Code général des collectivités territoriales, book IV (Saint-Pierre-et-Miquelon)", url: "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070633/LEGISCTA000006135519/" },
+      { title: "Unemployment (stand-in for poverty): CIA World Factbook, Saint Pierre and Miquelon (8.7%, 2015 est.; population below poverty line: NA)", url: "https://relief.unboundmedicine.com/relief/view/The-World-Factbook/563198/all/Saint_Pierre_and_Miquelon" },
       { title: "Poverty: IEDOM, Saint-Pierre-et-Miquelon key figures 2023 (poverty rate listed as not available)", url: "https://www.iedom.fr/IMG/pdf/st_pierre_et_miquelon_2023_chiffres_cles.pdf" },
       { title: "Map outline: Natural Earth 1:10m admin-0 map units", url: "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/" }
     ],

@@ -255,7 +255,7 @@
     if (!data()) return "The data is still loading — try again in a moment.";
     if (/saint.pierre|miquelon/i.test(q)) {   // before district names: a South Dakota district is called "Pierre"
       const r = all.find((x) => x._fr);
-      if (r) return districtCard(r) + (r["Meetings note"] ? `<p class="ask-note">${esc(r["Meetings note"])}</p>` : "");
+      if (r) return districtCard(r).replace("Child poverty (ages 5–17): not available", `Unemployment (stand-in for poverty): ${esc(r["Unemployment rate (stand-in for poverty)"] || "–")} (2015 est.)`) + (r["Meetings note"] ? `<p class="ask-note">${esc(r["Meetings note"])}</p>` : "");
     }
     const stateList = findStates(q);
     const s = q.toLowerCase();

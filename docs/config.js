@@ -39,7 +39,11 @@ window.SITE_CONFIG = {
     // Saint-Pierre-et-Miquelon (France): its own button. No elected school board, no child poverty figure.
     { name: "Saint-Pierre-et-Miquelon (France)", button: "Saint-Pierre-et-Miquelon", file: "data/spm.csv", country: "FR",
       recordLabel: "School systems", textColumns: ["District ID", "Enrollment year"],
-      note: "Saint-Pierre-et-Miquelon, a French overseas collectivity next to Newfoundland. It has no elected school board: its schools are run by the French state's education office (Service de l'Éducation nationale), which reports to the Académie de Normandie and holds no public meetings. As a stand-in, like Puerto Rico's, the meeting count is the official sessions of the elected Territorial Council (Conseil territorial): at least 12 from January 2025 to October 2026, found from the dates on the deliberations it publishes in its official gazette; these are written records, not recordings, so they aren't comparable with CivicSearch's counts. Enrollment is from France's Ministry of Education (start of the 2024 school year, public and private schools under contract). No child poverty rate is published for the archipelago (France's statistics office lists it as not available).",
+      sizeYearNote: "Grouped by student enrollment at the start of the 2024 school year (France's Ministry of Education).",
+      localeNote: "Saint-Pierre-et-Miquelon is counted as a town (its main town, Saint-Pierre, has about 5,500 people); this isn't an NCES locale.",
+      compare: { title: "Unemployment (stand-in for poverty): with vs. without meetings", by: "Available Board Meetings",
+        metric: "Unemployment rate (stand-in for poverty)", withLabel: "With 1+ meetings", withoutLabel: "With no meetings" },
+      note: "Saint-Pierre-et-Miquelon, a French overseas collectivity next to Newfoundland. It has no elected school board: its schools are run by the French state's education office (Service de l'Éducation nationale), which reports to the Académie de Normandie and holds no public meetings. As a stand-in, like Puerto Rico's, the meeting count is the official sessions of the elected Territorial Council (Conseil territorial): at least 12 from January 2025 to October 2026, found from the dates on the deliberations it publishes in its official gazette; these are written records, not recordings, so they aren't comparable with CivicSearch's counts. Enrollment is from France's Ministry of Education (start of the 2024 school year, public and private schools under contract). No child poverty rate is published for the archipelago, so its unemployment rate stands in: 8.7% (2015 estimate, CIA World Factbook), which isn't comparable with the child poverty rates elsewhere on this site.",
       footer: "Saint-Pierre-et-Miquelon as of November 2026. Sources are listed on the Sources tab." }
   ],
   // "All" button: every US district, territory school system and Canadian board together.
@@ -50,7 +54,7 @@ window.SITE_CONFIG = {
       us: "Children 5–17 in poverty (Census SAIPE 2024)",
       territories: "Children 5–17 in poverty (Census; 2020 Census for all but Puerto Rico)",
       canada: "Children 0–17 in low income (Statistics Canada LIM-AT, 2021 Census)",
-      france: "Not available (no child poverty rate is published for Saint-Pierre-et-Miquelon)"
+      france: "Unemployment rate, 2015 estimate (CIA World Factbook): a stand-in, since no poverty rate is published for Saint-Pierre-et-Miquelon"
     },
     chart: { type: "scatter", x: "Child poverty rate", y: "Available Board Meetings" },
     sizeYearNote: "Districts and boards are grouped by student enrollment: US districts 2023 (NCES); Canadian boards each province's latest published figures (none yet for PEI's French board or the Yukon First Nation School Board).",

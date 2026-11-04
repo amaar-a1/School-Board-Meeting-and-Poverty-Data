@@ -81,7 +81,7 @@
         Country: ca ? "Canada" : fr ? "France (Saint-Pierre-et-Miquelon)" : terr ? "U.S. territories" : "United States",
         "State or province": ca ? r.Province : (terr || fr) ? r.Territory : (ps.names[r.State] || r.State),
         "Available Board Meetings": r["Available Board Meetings"] ?? "",
-        [c.metric]: pct(ca ? r["Percentage of Children Ages 0-17 in Low Income"] : r["Percentage of Children Ages 5-17 in Poverty"]),
+        [c.metric]: pct(ca ? r["Percentage of Children Ages 0-17 in Low Income"] : fr ? r["Unemployment rate (stand-in for poverty)"] : r["Percentage of Children Ages 5-17 in Poverty"]),
         "Poverty measure": ca ? c.measures.canada : fr ? c.measures.france : terr ? c.measures.territories : c.measures.us,
         Children: ca ? r["Children Ages 0-17"] : r["Children Ages 5-17"],
         Enrollment: r.Enrollment ?? "",
@@ -300,7 +300,7 @@
     const all = sizeStats(current.rows.filter((r) => String(r.Locale || "").trim()), denom);
     const left = current.rows.filter((r) => !String(r.Locale || "").trim()).length;
     const ca = current.country === "CA" || (current.parent && current.parent.country === "CA");
-    $("locale-note").textContent = (ca ? "Boards are grouped by an estimated locale (see below)." : current.combined
+    $("locale-note").textContent = (current.localeNote ? current.localeNote : ca ? "Boards are grouped by an estimated locale (see below)." : current.combined
       ? "US districts are grouped by NCES locale (2023); Canadian boards by an estimated locale (see below)."
       : "Districts are grouped by NCES locale (2023): Urban (a city), Suburban, Town or Rural.") +
       (left ? ` ${left.toLocaleString()} ${label} without a locale are left out of this tab.` : "");
