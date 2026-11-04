@@ -1,0 +1,12 @@
+ok 110 https://archive.org/wayback/available?url=publications.saskatchewan.ca/api/v1/products/83293/formats/95844/download -> None
+wayback publications.saskatchewan.ca/api/v1/products/83293/formats/95844/download: {}
+ok 87 https://archive.org/wayback/available?url=publications.saskatchewan.ca/api/v1/products/83293 -> None
+wayback publications.saskatchewan.ca/api/v1/products/83293: {}
+ok 97 https://archive.org/wayback/available?url=publications.saskatchewan.ca/api/v1/categories/2303/products -> None
+wayback publications.saskatchewan.ca/api/v1/categories/2303/products: {}
+FAIL https://web.archive.org/cdx/search/cdx?url=publications.saskatchewan.ca/api/v1/products/*&output=json&limit=200&filter=statuscode:200: HTTP Error 504: Gateway Time-out
+ok 125534 https://www.princeedwardisland.ca/en/node/71985 -> pe_node_71985.html
+ok 125534 https://www.princeedwardisland.ca/en/node/78851 -> pe_node_78851.html
+ok 1346155 https://www.ece.gov.nt.ca/sites/ece/files/resources/jk-12_annual_pm_report_2024-25_final.pdf -> nt_pm_2024_25.pdf
+ok 0 https://open.yukon.ca/data/api/3/action/package_search?q=school%20enrolment&rows=10 -> None
+ok 42829 https://nl.communityaccounts.ca/table.asp?_=vb7En4WVgbOxz7ZjS6rIxpuixqOVko7Lqomyv4yplszCmJ6-x84_ -> nl_enrolment.html
