@@ -1,0 +1,57 @@
+District,Region,Status,Available Board Meetings,Poverty rate or stand-in,Poverty measure,Population,Children Ages 0-14 (estimated),Enrollment,Enrollment year,Locale,People per km² (estimated),District ID
+Anguilla,Caribbean,Territory of the United Kingdom,0,23.00%,"People below the national poverty line, all ages (CIA World Factbook, 2002 estimate)",19416,4039,,,Mixed,213,ISLE-AIA
+Antigua and Barbuda,Caribbean,Independent country,0,11.00%,"Unemployment rate, a stand-in for poverty (CIA World Factbook, 2014 estimate)",94209,16458,15880,2023,Mixed,213,ISLE-ATG
+Aruba,Caribbean,Territory of the Netherlands,0,7.70%,"Unemployment rate, a stand-in for poverty (CIA World Factbook, 2016 estimate)",108785,17970,16086,2024,Suburban,604,ISLE-ABW
+Bahamas,Caribbean,Independent country,0,9.30%,"People below the national poverty line, all ages (CIA World Factbook, 2010 estimate)",403033,70726,53378,2024,Rural,40,ISLE-BHS
+Bahrain,Asia and the Indian Ocean,Independent country,0,1.10%,"Unemployment rate, a stand-in for poverty (World Bank / ILO estimate, 2025)",1600366,294794,231526,2024,Urban,2106,ISLE-BHR
+Barbados,Caribbean,Independent country,0,25.70%,"People below the national poverty line, all ages (World Bank, 2016)",282623,48226,34771,2024,Suburban,657,ISLE-BRB
+Bermuda,Europe and the North Atlantic,Territory of the United Kingdom,0,11.00%,"People below the national poverty line, all ages (CIA World Factbook, 2008 estimate)",64555,8620,6861,2023,Suburban,1195,ISLE-BMU
+British Virgin Islands,Caribbean,Territory of the United Kingdom,0,2.90%,"Unemployment rate, a stand-in for poverty (CIA World Factbook, 2015 estimate)",39732,5596,3926,2024,Mixed,263,ISLE-VGB
+Cabo Verde,Africa and the South Atlantic,Independent country,0,24.80%,"People below the national poverty line, all ages (World Bank, 2023)",527326,130223,116998,2022,Mixed,131,ISLE-CPV
+Cayman Islands,Caribbean,Territory of the United Kingdom,0,4.00%,"Unemployment rate, a stand-in for poverty (CIA World Factbook, 2008 estimate)",75844,12178,8383,2024,Mixed,287,ISLE-CYM
+Comoros,Africa and the South Atlantic,Independent country,0,46.10%,"People below the national poverty line, all ages (World Bank, 2024)",882847,325504,187950,2022,Mixed,395,ISLE-COM
+Cook Islands,Pacific,"Self-governing, in free association with New Zealand",0,13.10%,"Unemployment rate, a stand-in for poverty (CIA World Factbook, 2005 estimate)",7592,1382,,,Rural,32,ISLE-COK
+Curaçao,Caribbean,Territory of the Netherlands,0,13.00%,"Unemployment rate, a stand-in for poverty (CIA World Factbook, 2013 estimate)",156263,22820,21388,2024,Mixed,352,ISLE-CUW
+Cyprus,Asia and the Indian Ocean,Independent country,0,12.70%,"Children under 18 below 60% of the median income (Eurostat EU-SILC, 2025)",1370754,220430,121826,2024,Mixed,148,ISLE-CYP
+Dominica,Caribbean,Independent country,0,29.00%,"People below the national poverty line, all ages (CIA World Factbook, 2009 estimate)",65871,11601,10249,2023,Rural,88,ISLE-DMA
+Falkland Islands,Africa and the South Atlantic,Territory of the United Kingdom,0,1.00%,"Unemployment rate, a stand-in for poverty (CIA World Factbook, 2016 estimate)",3142,,,,Rural,0,ISLE-FLK
+Faroe Islands,Europe and the North Atlantic,Territory of Denmark,0,10.00%,"People below the national poverty line, all ages (CIA World Factbook, 2015 estimate)",54900,10909,,,Rural,39,ISLE-FRO
+Federated States of Micronesia,Pacific,Independent country,0,41.20%,"People below the national poverty line, all ages (World Bank, 2013)",113683,35803,,,Mixed,162,ISLE-FSM
+Fiji,Pacific,Independent country,0,24.10%,"People below the national poverty line, all ages (World Bank, 2019)",933154,250351,227551,2024,Rural,51,ISLE-FJI
+French Polynesia,Pacific,Territory of France,0,19.70%,"People below the national poverty line, all ages (CIA World Factbook, 2009 estimate)",282465,52122,,,Rural,74,ISLE-PYF
+Greenland,Europe and the North Atlantic,Territory of Denmark,0,16.20%,"People below the national poverty line, all ages (CIA World Factbook, 2015 estimate)",56831,11787,,,Rural,0,ISLE-GRL
+Grenada,Caribbean,Independent country,0,25.00%,"People below the national poverty line, all ages (World Bank, 2018)",117303,22300,20778,2024,Mixed,341,ISLE-GRD
+Guernsey,Europe and the North Atlantic,Territory of the United Kingdom,0,6.30%,"Unemployment rate, a stand-in for poverty (CIA World Factbook, 2024 estimate)",67923,9713,,,Suburban,871,ISLE-GGY
+Iceland,Europe and the North Atlantic,Independent country,0,9.80%,"Children under 18 below 60% of the median income (Eurostat EU-SILC, 2020)",392404,68741,69370,2023,Rural,4,ISLE-ISL
+Isle of Man,Europe and the North Atlantic,Territory of the United Kingdom,0,2.00%,"Unemployment rate, a stand-in for poverty (CIA World Factbook,  estimate)",84118,11697,,,Mixed,147,ISLE-IMN
+Jamaica,Caribbean,Independent country,0,7.80%,"People below the national poverty line, all ages (World Bank, 2024)",2837077,518759,388192,2024,Mixed,262,ISLE-JAM
+Jersey,Europe and the North Atlantic,Territory of the United Kingdom,0,6.30%,"Unemployment rate, a stand-in for poverty (CIA World Factbook, 2024 estimate)",103944,17670,,,Suburban,896,ISLE-JEY
+Kiribati,Pacific,Independent country,0,5.50%,"People below the national poverty line, all ages (World Bank, 2023)",136488,46903,34303,2024,Mixed,168,ISLE-KIR
+Maldives,Asia and the Indian Ocean,Independent country,0,5.40%,"People below the national poverty line, all ages (World Bank, 2019)",529676,100832,78619,2023,Suburban,1777,ISLE-MDV
+Malta,Europe and the North Atlantic,Independent country,0,20.80%,"Children under 18 below 60% of the median income (Eurostat EU-SILC, 2025)",579704,74777,59760,2023,Suburban,1835,ISLE-MLT
+Marshall Islands,Pacific,Independent country,0,7.20%,"People below the national poverty line, all ages (World Bank, 2019)",36282,12298,10378,2024,Mixed,200,ISLE-MHL
+Mauritius,Africa and the South Atlantic,Independent country,0,8.40%,"People below the national poverty line, all ages (World Bank, 2023)",1243741,180804,184925,2024,Suburban,613,ISLE-MUS
+Montserrat,Caribbean,Territory of the United Kingdom,0,5.60%,"Unemployment rate, a stand-in for poverty (CIA World Factbook, 2017 estimate)",5468,864,,,Rural,54,ISLE-MSR
+Nauru,Pacific,Independent country,0,23.00%,"Unemployment rate, a stand-in for poverty (CIA World Factbook, 2011 estimate)",12025,4468,3362,2025,Suburban,573,ISLE-NRU
+New Caledonia,Pacific,Territory of France,0,17.00%,"People below the national poverty line, all ages (CIA World Factbook, 2008 estimate)",295333,62284,,,Rural,16,ISLE-NCL
+Niue,Pacific,"Self-governing, in free association with New Zealand",0,12.00%,"Unemployment rate, a stand-in for poverty (CIA World Factbook, 2001 estimate)",1815,,,,Rural,7,ISLE-NIU
+Norfolk Island,Pacific,Territory of Australia,0,,,1739,,,,Rural,48,ISLE-NFK
+Palau,Pacific,Independent country,0,24.90%,"People below the national poverty line, all ages (CIA World Factbook, 2006 estimate)",17663,3168,2838,2024,Rural,38,ISLE-PLW
+"Saint Helena, Ascension and Tristan da Cunha",Africa and the South Atlantic,Territory of the United Kingdom,0,14.00%,"Unemployment rate, a stand-in for poverty (CIA World Factbook, 1998 estimate)",7943,1136,,,Rural,65,ISLE-SHN
+Saint Kitts and Nevis,Caribbean,Independent country,0,4.50%,"Unemployment rate, a stand-in for poverty (CIA World Factbook, 1997 estimate)",46922,8604,9014,2023,Mixed,180,ISLE-KNA
+Saint Lucia,Caribbean,Independent country,0,25.00%,"People below the national poverty line, all ages (World Bank, 2015)",180149,31067,24635,2024,Mixed,297,ISLE-LCA
+Saint Vincent and the Grenadines,Caribbean,Independent country,0,18.00%,"Unemployment rate, a stand-in for poverty (World Bank / ILO estimate, 2025)",99924,20855,21676,2024,Mixed,257,ISLE-VCT
+Saint-Barthélemy,Caribbean,Territory of France,0,,,7079,984,,,Mixed,283,ISLE-BLM
+Saint-Martin (French part),Caribbean,Territory of France,0,,,24941,5252,,,Mixed,499,ISLE-MAF
+Samoa,Pacific,Independent country,0,21.90%,"People below the national poverty line, all ages (World Bank, 2018)",219306,83470,58593,2016,Rural,78,ISLE-WSM
+Seychelles,Africa and the South Atlantic,Independent country,0,25.30%,"People below the national poverty line, all ages (World Bank, 2018)",122730,24259,17683,2024,Mixed,270,ISLE-SYC
+Singapore,Asia and the Indian Ocean,Independent country,0,2.82%,"Unemployment rate, a stand-in for poverty (World Bank / ILO estimate, 2025)",6111175,714345,402562,2023,Urban,8617,ISLE-SGP
+Sint Maarten (Dutch part),Caribbean,Territory of the Netherlands,0,12.00%,"Unemployment rate, a stand-in for poverty (CIA World Factbook, 2012 estimate)",43923,6503,6390,2014,Suburban,1292,ISLE-SXM
+Solomon Islands,Pacific,Independent country,0,12.70%,"People below the national poverty line, all ages (World Bank, 2012)",838645,306588,139207,2012,Rural,30,ISLE-SLB
+São Tomé and Príncipe,Africa and the South Atlantic,Independent country,0,55.50%,"People below the national poverty line, all ages (World Bank, 2017)",240254,89988,63047,2017,Mixed,249,ISLE-STP
+Tonga,Pacific,Independent country,0,20.60%,"People below the national poverty line, all ages (World Bank, 2021)",103742,36226,31776,2024,Mixed,145,ISLE-TON
+Trinidad and Tobago,Caribbean,Independent country,0,20.00%,"People below the national poverty line, all ages (CIA World Factbook, 2014 estimate)",1367764,239253,217686,2024,Mixed,267,ISLE-TTO
+Turks and Caicos Islands,Caribbean,Territory of the United Kingdom,0,10.00%,"Unemployment rate, a stand-in for poverty (CIA World Factbook, 1997 estimate)",46855,7485,6677,2024,Rural,49,ISLE-TCA
+Tuvalu,Pacific,Independent country,0,26.30%,"People below the national poverty line, all ages (World Bank, 2010)",9492,3135,2477,2024,Mixed,365,ISLE-TUV
+Vanuatu,Pacific,Independent country,0,15.90%,"People below the national poverty line, all ages (World Bank, 2019)",335169,127236,116593,2023,Rural,27,ISLE-VUT
+Wallis and Futuna,Pacific,Territory of France,0,8.80%,"Unemployment rate, a stand-in for poverty (CIA World Factbook, 2013 estimate)",15998,3168,,,Mixed,113,ISLE-WLF

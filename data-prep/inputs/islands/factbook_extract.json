@@ -1,0 +1,4067 @@
+{
+ "COM": {
+  "Economy": {
+   "Population below poverty line": {
+    "text": "44.8% (2020 est.)",
+    "note": "<strong>note:</strong> % of population with income below national poverty line"
+   },
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "3.9% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "3.8% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "3.9% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "8.9% (2024 est.)"
+    },
+    "male": {
+     "text": "8.3% (2024 est.)"
+    },
+    "female": {
+     "text": "9.6% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "911,707 (2025 est.)"
+    },
+    "male": {
+     "text": "441,215"
+    },
+    "female": {
+     "text": "470,492"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "32.6% (male 146,480/female 146,626)"
+    },
+    "15-64 years": {
+     "text": "62.8% (male 271,139/female 294,231)"
+    },
+    "65 years and over": {
+     "text": "4.6% (2024 est.) (male 18,139/female 23,526)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "2,235 sq km"
+    },
+    "land": {
+     "text": "2,235 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Union of the Comoros"
+    },
+    "conventional short form": {
+     "text": "Comoros"
+    },
+    "local long form": {
+     "text": "Udzima wa Komori (Comorian)/Union des Comores (French)/Al Ittihad al Qumuri (Arabic)"
+    },
+    "local short form": {
+     "text": "Komori (Comorian)/Les Comores (French)/Juzur al Qamar (Arabic)"
+    },
+    "former": {
+     "text": "Comorian State, Federal Islamic Republic of the Comoros"
+    },
+    "etymology": {
+     "text": "name derives from the Arabic <em>al qamar</em>, meaning \"the moon\""
+    }
+   }
+  },
+  "_file": "africa/cn.json"
+ },
+ "CPV": {
+  "Economy": {
+   "Population below poverty line": {
+    "text": "35.2% (2015 est.)",
+    "note": "<b>note:</b> % of population with income below national poverty line"
+   },
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "11.9% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "12% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "12.3% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "28.2% (2024 est.)"
+    },
+    "male": {
+     "text": "24.6% (2024 est.)"
+    },
+    "female": {
+     "text": "33.8% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "611,014 (2024 est.)"
+    },
+    "male": {
+     "text": "297,106"
+    },
+    "female": {
+     "text": "313,908"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "26.4% (male 80,973/female 80,129)"
+    },
+    "15-64 years": {
+     "text": "67.2% (male 201,084/female 209,676)"
+    },
+    "65 years and over": {
+     "text": "6.4% (2024 est.) (male 15,049/female 24,103)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "4,033 sq km"
+    },
+    "land": {
+     "text": "4,033 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Republic of Cabo Verde"
+    },
+    "conventional short form": {
+     "text": "Cabo Verde"
+    },
+    "local long form": {
+     "text": "Republica de Cabo Verde"
+    },
+    "local short form": {
+     "text": "Cabo Verde"
+    },
+    "etymology": {
+     "text": "the name derives from the Cape Verde (Green Cape) peninsula on the Senegalese coast, the westernmost point of Africa and the nearest mainland to the islands"
+    }
+   }
+  },
+  "_file": "africa/cv.json"
+ },
+ "MUS": {
+  "Economy": {
+   "Population below poverty line": {
+    "text": "10.3% (2017 est.)",
+    "note": "<b>note:</b> % of population with income below national poverty line"
+   },
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "5.5% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "5.6% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "6.4% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "16.6% (2024 est.)"
+    },
+    "male": {
+     "text": "15.3% (2024 est.)"
+    },
+    "female": {
+     "text": "18.4% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "1,311,375 (2025 est.)"
+    },
+    "male": {
+     "text": "639,707"
+    },
+    "female": {
+     "text": "671,668"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "15.1% (male 100,973/female 96,711)"
+    },
+    "15-64 years": {
+     "text": "71% (male 462,833/female 467,509)"
+    },
+    "65 years and over": {
+     "text": "13.9% (2024 est.) (male 75,464/female 107,014)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "2,040 sq km"
+    },
+    "land": {
+     "text": "2,030 sq km"
+    },
+    "water": {
+     "text": "10 sq km"
+    },
+    "note": "<strong>note:</strong> includes Agalega Islands, Cargados Carajos Shoals (Saint Brandon), and Rodrigues"
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Republic of Mauritius"
+    },
+    "conventional short form": {
+     "text": "Mauritius"
+    },
+    "local long form": {
+     "text": "Republic of Mauritius"
+    },
+    "local short form": {
+     "text": "Mauritius"
+    },
+    "etymology": {
+     "text": "named after Prince Maurice VAN NASSAU, stadtholder (governor) of the Dutch Republic, in 1598"
+    },
+    "note": "<strong>note:</strong> pronounced mahr-ish-us"
+   }
+  },
+  "_file": "africa/mp.json"
+ },
+ "SYC": {
+  "Economy": {
+   "Population below poverty line": {
+    "text": "25.3% (2018 est.)",
+    "note": "<b>note:</b> % of population with income below national poverty line"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "98,187 (2024 est.)"
+    },
+    "male": {
+     "text": "50,973"
+    },
+    "female": {
+     "text": "47,214"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "17.7% (male 8,912/female 8,439)"
+    },
+    "15-64 years": {
+     "text": "72.4% (male 37,841/female 33,210)"
+    },
+    "65 years and over": {
+     "text": "10% (2024 est.) (male 4,220/female 5,565)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "455 sq km"
+    },
+    "land": {
+     "text": "455 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Republic of Seychelles"
+    },
+    "conventional short form": {
+     "text": "Seychelles"
+    },
+    "local long form": {
+     "text": "Republic of Seychelles"
+    },
+    "local short form": {
+     "text": "Seychelles"
+    },
+    "etymology": {
+     "text": "named by French Captain Corneille Nicholas MORPHEY after Jean Moreau de S&Eacute;CHELLES, the finance minister of France, in 1756; the British changed the spelling of the name in 1815 when they acquired the islands"
+    }
+   }
+  },
+  "_file": "africa/se.json"
+ },
+ "SHN": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "7,943 (2024 est.)"
+    },
+    "male": {
+     "text": "3,978"
+    },
+    "female": {
+     "text": "3,965"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "14.3% (male 579/female 556)"
+    },
+    "15-64 years": {
+     "text": "66.5% (male 2,626/female 2,655)"
+    },
+    "65 years and over": {
+     "text": "19.2% (2024 est.) (male 773/female 754)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "394 sq km"
+    },
+    "land": {
+     "text": "122 sq km Saint Helena Island"
+    },
+    "water": {
+     "text": "0 sq km"
+    },
+    "note": "88 sq km Ascension Island, 184 sq km Tristan da Cunha island group (includes Tristan (98 sq km), Inaccessible, Nightingale, and Gough islands)"
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Saint Helena, Ascension, and Tristan da Cunha"
+    },
+    "conventional short form": {
+     "text": "none"
+    },
+    "etymology": {
+     "text": "on the feast day of Saint Helena in 1502, Spanish navigator Joao da NOVA (sailing for Portugal) sighted and named the island that now bears the saint's name; da NOVA originally named Ascension \"Conception Island\" in honor of the Virgin Mary, but Portuguese navigator Afonso de ALBUQUERQUE later found the island on the feast day of the Ascension in 1508 and renamed it; Portuguese explorer Tristao da CUNHA sighted the third island in 1506 and named it after himself (the name was later anglicized)"
+    }
+   },
+   "Dependency status": {
+    "text": "overseas territory of the UK"
+   }
+  },
+  "_file": "africa/sh.json"
+ },
+ "STP": {
+  "Economy": {
+   "Population below poverty line": {
+    "text": "55.5% (2017 est.)",
+    "note": "<b>note:</b> % of population with income below national poverty line"
+   },
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "9.2% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "9.1% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "9% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "8.6% (2024 est.)"
+    },
+    "male": {
+     "text": "8% (2024 est.)"
+    },
+    "female": {
+     "text": "9.2% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "223,561 (2024 est.)"
+    },
+    "male": {
+     "text": "111,553"
+    },
+    "female": {
+     "text": "112,008"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "36.4% (male 41,337/female 40,106)"
+    },
+    "15-64 years": {
+     "text": "60.3% (male 67,101/female 67,775)"
+    },
+    "65 years and over": {
+     "text": "3.2% (2024 est.) (male 3,115/female 4,127)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "964 sq km"
+    },
+    "land": {
+     "text": "964 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Democratic Republic of Sao Tome and Principe"
+    },
+    "conventional short form": {
+     "text": "Sao Tome and Principe"
+    },
+    "local long form": {
+     "text": "Republica Democratica de Sao Tome e Principe"
+    },
+    "local short form": {
+     "text": "Sao Tome e Principe"
+    },
+    "etymology": {
+     "text": "Sao Tome was named after Saint THOMAS the Apostle by the Portuguese who discovered the island on 21 December 1470 (or 1471), the saint's feast day; Principe is a shortening of the original Portuguese name of \"Ilha do Principe\" (Isle of the Prince), referring to Prince ALPHONSO of Portugal"
+    }
+   }
+  },
+  "_file": "africa/tp.json"
+ },
+ "SLB": {
+  "Economy": {
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "1.5% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "1.5% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "1.5% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "3% (2024 est.)"
+    },
+    "male": {
+     "text": "2.6% (2024 est.)"
+    },
+    "female": {
+     "text": "3.4% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "738,774 (2025 est.)"
+    },
+    "male": {
+     "text": "377,067"
+    },
+    "female": {
+     "text": "361,707"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "30.6% (male 114,246/female 108,020)"
+    },
+    "15-64 years": {
+     "text": "64.2% (male 238,708/female 227,636)"
+    },
+    "65 years and over": {
+     "text": "5.3% (2024 est.) (male 18,016/female 20,173)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "28,896 sq km"
+    },
+    "land": {
+     "text": "27,986 sq km"
+    },
+    "water": {
+     "text": "910 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "none"
+    },
+    "conventional short form": {
+     "text": "Solomon Islands"
+    },
+    "local long form": {
+     "text": "none"
+    },
+    "local short form": {
+     "text": "Solomon Islands"
+    },
+    "former": {
+     "text": "British Solomon Islands"
+    },
+    "etymology": {
+     "text": "Spanish explorer Alvaro de MENDANA named the isles in 1568 after the wealthy biblical King SOLOMON in the mistaken belief that the islands contained great riches"
+    }
+   }
+  },
+  "_file": "australia-oceania/bp.json"
+ },
+ "COK": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "7,592 (2025 est.)"
+    },
+    "male": {
+     "text": "3,890"
+    },
+    "female": {
+     "text": "3,702"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "18.2% (male 738/female 671)"
+    },
+    "15-64 years": {
+     "text": "65.9% (male 2,634/female 2,479)"
+    },
+    "65 years and over": {
+     "text": "16% (2024 est.) (male 608/female 631)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "236 sq km"
+    },
+    "land": {
+     "text": "236 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "none"
+    },
+    "conventional short form": {
+     "text": "Cook Islands"
+    },
+    "former": {
+     "text": "Hervey Islands"
+    },
+    "etymology": {
+     "text": "named after Captain James COOK, the British explorer who visited the islands in 1773 and 1777"
+    }
+   },
+   "Dependency status": {
+    "text": "self-governing in free association with New Zealand; Cook Islands is fully responsible for internal affairs and conducts its own international relations, including establishing diplomatic relationships with foreign countries; New Zealand has a constitutional responsibility to respond to requests for assistance with foreign affairs, disasters, and defense&nbsp;"
+   }
+  },
+  "_file": "australia-oceania/cw.json"
+ },
+ "FJI": {
+  "Economy": {
+   "Population below poverty line": {
+    "text": "24.1% (2019 est.)",
+    "note": "<b>note:</b> % of population with income below national poverty line"
+   },
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "4.4% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "4.4% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "4.5% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "15.5% (2024 est.)"
+    },
+    "male": {
+     "text": "11.8% (2024 est.)"
+    },
+    "female": {
+     "text": "22.5% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "951,611 (2024 est.)"
+    },
+    "male": {
+     "text": "482,304"
+    },
+    "female": {
+     "text": "469,307"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "24.7% (male 119,910/female 114,904)"
+    },
+    "15-64 years": {
+     "text": "66.4% (male 323,339/female 308,921)"
+    },
+    "65 years and over": {
+     "text": "8.9% (2024 est.) (male 39,055/female 45,482)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "18,274 sq km"
+    },
+    "land": {
+     "text": "18,274 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Republic of Fiji"
+    },
+    "conventional short form": {
+     "text": "Fiji"
+    },
+    "local long form": {
+     "text": "Republic of Fiji (English)/ Matanitu ko Viti (Fijian)"
+    },
+    "local short form": {
+     "text": "Fiji (English)/ Viti (Fijian)"
+    },
+    "etymology": {
+     "text": "the Fijians called their home Viti, but the neighboring Tongans called it Fisi; in the Anglicized spelling of the Tongan pronunciation -- promulgated by explorer Captain James COOK -- the designation became Fiji"
+    }
+   }
+  },
+  "_file": "australia-oceania/fj.json"
+ },
+ "FSM": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "99,603 (2024 est.)"
+    },
+    "male": {
+     "text": "48,708"
+    },
+    "female": {
+     "text": "50,895"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "27% (male 13,673/female 13,239)"
+    },
+    "15-64 years": {
+     "text": "67.3% (male 32,527/female 34,487)"
+    },
+    "65 years and over": {
+     "text": "5.7% (2024 est.) (male 2,508/female 3,169)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "702 sq km"
+    },
+    "land": {
+     "text": "702 sq km"
+    },
+    "water": {
+     "text": "0 sq km (fresh water only)"
+    },
+    "note": "<strong>note:</strong> includes Pohnpei (Ponape), Chuuk (Truk) Islands, Yap Islands, and Kosrae (Kosaie)"
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Federated States of Micronesia"
+    },
+    "conventional short form": {
+     "text": "none"
+    },
+    "local long form": {
+     "text": "Federated States of Micronesia"
+    },
+    "local short form": {
+     "text": "none"
+    },
+    "former": {
+     "text": "New Philippines; Caroline Islands; Trust Territory of the Pacific Islands, Ponape, Truk, and Yap Districts"
+    },
+    "abbreviation": {
+     "text": "FSM"
+    },
+    "etymology": {
+     "text": "the name is a 19th-century construct of two Greek words, <em>mikros </em>(small) and <em>nesoi </em>(islands), and refers to its thousands of small islands in the western Pacific Ocean"
+    }
+   }
+  },
+  "_file": "australia-oceania/fm.json"
+ },
+ "PYF": {
+  "Economy": {
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "11.8% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "11.8% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "11.9% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "36.9% (2024 est.)"
+    },
+    "male": {
+     "text": "33.5% (2024 est.)"
+    },
+    "female": {
+     "text": "41.5% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "305,507 (2025 est.)"
+    },
+    "male": {
+     "text": "156,084"
+    },
+    "female": {
+     "text": "149,423"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "20.3% (male 31,659/female 30,006)"
+    },
+    "15-64 years": {
+     "text": "68.7% (male 107,162/female 101,228)"
+    },
+    "65 years and over": {
+     "text": "11% (2024 est.) (male 16,317/female 17,168)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "4,167 sq km (118 islands and atolls; 67 are inhabited)"
+    },
+    "land": {
+     "text": "3,827 sq km"
+    },
+    "water": {
+     "text": "340 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Overseas Lands of French Polynesia"
+    },
+    "conventional short form": {
+     "text": "French Polynesia"
+    },
+    "local long form": {
+     "text": "Pays d'outre-mer de la Polyn&eacute;sie fran&ccedil;aise"
+    },
+    "local short form": {
+     "text": "Polyn&eacute;sie Fran&ccedil;aise"
+    },
+    "former": {
+     "text": "Establishments in Oceania, French Establishments in Oceania"
+    },
+    "etymology": {
+     "text": "the term \"Polynesia\" is an 18th-century construct composed of two Greek words, <em>poly </em>(many) and <em>nesoi </em>(islands), and refers to the more than 1,000 islands scattered over the central and southern Pacific Ocean"
+    }
+   },
+   "Dependency status": {
+    "text": "overseas country of France",
+    "note": "<strong>note:</strong> overseas territory of France from 1946-2003; overseas collectivity of France since 2003, but it is often referred to as an overseas country due to its degree of autonomy"
+   }
+  },
+  "_file": "australia-oceania/fp.json"
+ },
+ "KIR": {
+  "Economy": {
+   "Population below poverty line": {
+    "text": "21.9% (2019 est.)",
+    "note": "<strong>note:</strong> % of population with income below national poverty line"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "116,545 (2024 est.)"
+    },
+    "male": {
+     "text": "56,364"
+    },
+    "female": {
+     "text": "60,181"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "26.8% (male 15,895/female 15,304)"
+    },
+    "15-64 years": {
+     "text": "67.9% (male 38,046/female 41,059)"
+    },
+    "65 years and over": {
+     "text": "5.4% (2024 est.) (male 2,423/female 3,818)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "811 sq km"
+    },
+    "land": {
+     "text": "811 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    },
+    "note": "<strong>note:</strong> includes three island groups -- Gilbert Islands, Line Islands, and Phoenix Islands -- dispersed over about 3.5 million sq km (1.35 million sq mi)"
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Republic of Kiribati"
+    },
+    "conventional short form": {
+     "text": "Kiribati"
+    },
+    "local long form": {
+     "text": "Republic of Kiribati"
+    },
+    "local short form": {
+     "text": "Kiribati"
+    },
+    "former": {
+     "text": "Gilbert Islands"
+    },
+    "etymology": {
+     "text": "the name is the local pronunciation of \"Gilbert,\" the former designation of the islands; originally named after explorer Thomas GILBERT, who mapped many of the islands in 1788"
+    },
+    "note": "<strong>note:</strong> pronounced keer-ree-bahss"
+   }
+  },
+  "_file": "australia-oceania/kr.json"
+ },
+ "NCL": {
+  "Economy": {
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "11.2% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "11% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "10.8% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "32.7% (2024 est.)"
+    },
+    "male": {
+     "text": "30.2% (2024 est.)"
+    },
+    "female": {
+     "text": "35.7% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "307,612 (2025 est.)"
+    },
+    "male": {
+     "text": "153,036"
+    },
+    "female": {
+     "text": "154,576"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "20.7% (male 32,238/female 30,858)"
+    },
+    "15-64 years": {
+     "text": "68.4% (male 104,825/female 103,349)"
+    },
+    "65 years and over": {
+     "text": "10.8% (2024 est.) (male 14,326/female 18,571)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "18,575 sq km"
+    },
+    "land": {
+     "text": "18,275 sq km"
+    },
+    "water": {
+     "text": "300 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Territory of New Caledonia and Dependencies"
+    },
+    "conventional short form": {
+     "text": "New Caledonia"
+    },
+    "local long form": {
+     "text": "Territoire des Nouvelle-Cal&eacute;donie et d&eacute;pendances"
+    },
+    "local short form": {
+     "text": "Nouvelle-Cal&eacute;donie"
+    },
+    "etymology": {
+     "text": "the name came from British explorer Captain James COOK in 1774 and uses the Latin name for Scotland, Caledonia"
+    }
+   },
+   "Dependency status": {
+    "text": "special collectivity of France",
+    "note": "<strong>note:</strong> independence referenda took place in 2018, 2020, and 2021, with a majority voting in each case to reject independence in favor of the status quo"
+   }
+  },
+  "_file": "australia-oceania/nc.json"
+ },
+ "NIU": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "1,815 (2024 est.)"
+    },
+    "male": {
+     "text": "877 (2024 est.)"
+    },
+    "female": {
+     "text": "938 (2024 est.)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "260 sq km"
+    },
+    "land": {
+     "text": "260 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "none"
+    },
+    "conventional short form": {
+     "text": "Niue"
+    },
+    "former": {
+     "text": "Savage Island"
+    },
+    "etymology": {
+     "text": "the origin of the name is obscure; in Niuean, the word translates as \"behold the coconut;\" the former name, Savage Island, was the result of an acrimonious meeting in 1774 between English explorer Captain James COOK and local people"
+    },
+    "note": "<strong>note:</strong> pronunciation falls between nyu-way and new-way, but not like new-wee"
+   },
+   "Dependency status": {
+    "text": "self-governing in free association with New Zealand since 1974; Niue is fully responsible for internal affairs; under the Niue Constitution Act of 1974, New Zealand provides necessary economic and administrative assistance to Niue, as well as assistance with foreign affairs, defense, and security if requested"
+   }
+  },
+  "_file": "australia-oceania/ne.json"
+ },
+ "NFK": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "1,739 (2021)"
+    },
+    "male": {
+     "text": "823"
+    },
+    "female": {
+     "text": "916"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "36 sq km"
+    },
+    "land": {
+     "text": "36 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Territory of Norfolk Island"
+    },
+    "conventional short form": {
+     "text": "Norfolk Island"
+    },
+    "etymology": {
+     "text": "named by British explorer Captain James COOK after Edward HOWARD, the ninth Duke of Norfolk, in 1774"
+    }
+   },
+   "Dependency status": {
+    "text": "administered as a territory of Australia; administered by the Australian Government through the Department of Infrastructure, Transport, Cities, &amp; Regional Development"
+   }
+  },
+  "_file": "australia-oceania/nf.json"
+ },
+ "VUT": {
+  "Economy": {
+   "Population below poverty line": {
+    "text": "15.9% (2019 est.)",
+    "note": "<b>note:</b> % of population with income below national poverty line"
+   },
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "5.1% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "5.1% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "5.2% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "11.6% (2024 est.)"
+    },
+    "male": {
+     "text": "9.6% (2024 est.)"
+    },
+    "female": {
+     "text": "14% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "318,007 (2024 est.)"
+    },
+    "male": {
+     "text": "157,932"
+    },
+    "female": {
+     "text": "160,075"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "31.1% (male 50,584/female 48,475)"
+    },
+    "15-64 years": {
+     "text": "63.8% (male 99,496/female 103,425)"
+    },
+    "65 years and over": {
+     "text": "5% (2024 est.) (male 7,852/female 8,175)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "12,189 sq km"
+    },
+    "land": {
+     "text": "12,189 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    },
+    "note": "<strong>note:</strong> includes more than 80 islands, about 65 of which are inhabited"
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Republic of Vanuatu"
+    },
+    "conventional short form": {
+     "text": "Vanuatu"
+    },
+    "local long form": {
+     "text": "Ripablik blong Vanuatu"
+    },
+    "local short form": {
+     "text": "Vanuatu"
+    },
+    "former": {
+     "text": "New Hebrides"
+    },
+    "etymology": {
+     "text": "the name means \"Our land forever\" in several of the Austronesian languages spoken on the islands; the former name, New Hebrides, was given by Captain James COOK in 1774 because he thought they looked similar to the Hebrides islands off the coast of Scotland"
+    }
+   }
+  },
+  "_file": "australia-oceania/nh.json"
+ },
+ "NRU": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "9,930 (2025 est.)"
+    },
+    "male": {
+     "text": "4,874"
+    },
+    "female": {
+     "text": "5,056"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "29.6% (male 1,493/female 1,433)"
+    },
+    "15-64 years": {
+     "text": "66% (male 3,220/female 3,309)"
+    },
+    "65 years and over": {
+     "text": "4.4% (2024 est.) (male 143/female 294)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "21 sq km"
+    },
+    "land": {
+     "text": "21 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Republic of Nauru"
+    },
+    "conventional short form": {
+     "text": "Nauru"
+    },
+    "local long form": {
+     "text": "Republic of Nauru"
+    },
+    "local short form": {
+     "text": "Nauru"
+    },
+    "former": {
+     "text": "Pleasant Island"
+    },
+    "etymology": {
+     "text": "the island name may derive from the Nauruan word \"anaoero\" meaning \"I go to the beach\"; the former name, Pleasant Island, came from British navigator John Frean, who visited in 1798"
+    }
+   }
+  },
+  "_file": "australia-oceania/nr.json"
+ },
+ "PLW": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "21,947 (2025 est.)"
+    },
+    "male": {
+     "text": "11,257"
+    },
+    "female": {
+     "text": "10,690"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "17.5% (male 1,976/female 1,849)"
+    },
+    "15-64 years": {
+     "text": "71.3% (male 8,647/female 6,935)"
+    },
+    "65 years and over": {
+     "text": "11.2% (2024 est.) (male 612/female 1,845)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "459 sq km"
+    },
+    "land": {
+     "text": "459 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Republic of Palau"
+    },
+    "conventional short form": {
+     "text": "Palau"
+    },
+    "local long form": {
+     "text": "Beluu er a Belau"
+    },
+    "local short form": {
+     "text": "Belau"
+    },
+    "former": {
+     "text": "Trust Territory of the Pacific Islands, Palau District"
+    },
+    "etymology": {
+     "text": "from the Palauan name for the islands, Belau, which likely derives from the Palauan word <em>beluu</em>, meaning \"village\""
+    }
+   }
+  },
+  "_file": "australia-oceania/ps.json"
+ },
+ "MHL": {
+  "Economy": {
+   "Population below poverty line": {
+    "text": "7.2% (2019 est.)",
+    "note": "<b>note:</b> % of population with income below national poverty line"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "82,011 (2024 est.)"
+    },
+    "male": {
+     "text": "41,581"
+    },
+    "female": {
+     "text": "40,430"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "30% (male 12,538/female 12,072)"
+    },
+    "15-64 years": {
+     "text": "64.3% (male 26,750/female 25,944)"
+    },
+    "65 years and over": {
+     "text": "5.7% (2024 est.) (male 2,293/female 2,414)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "181 sq km"
+    },
+    "land": {
+     "text": "181 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    },
+    "note": "<strong>note:</strong> the archipelago includes 11,673 sq km (4,507 sq mi) of lagoon and encompasses the atolls of Bikini, Enewetak, Kwajalein, Majuro, Rongelap, and Utirik"
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Republic of the Marshall Islands"
+    },
+    "conventional short form": {
+     "text": "Marshall Islands"
+    },
+    "local long form": {
+     "text": "Republic of the Marshall Islands"
+    },
+    "local short form": {
+     "text": "Marshall Islands"
+    },
+    "former": {
+     "text": "Trust Territory of the Pacific Islands, Marshall Islands District"
+    },
+    "abbreviation": {
+     "text": "RMI"
+    },
+    "etymology": {
+     "text": "named after British Captain John MARSHALL, who charted many of the islands in 1788"
+    }
+   }
+  },
+  "_file": "australia-oceania/rm.json"
+ },
+ "TON": {
+  "Economy": {
+   "Population below poverty line": {
+    "text": "20.6% (2021 est.)",
+    "note": "<strong>note:</strong> % of population with income below national poverty line"
+   },
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "2.2% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "2.3% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "2.4% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "6.3% (2024 est.)"
+    },
+    "male": {
+     "text": "3.9% (2024 est.)"
+    },
+    "female": {
+     "text": "10% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "104,519 (2025 est.)"
+    },
+    "male": {
+     "text": "52,421"
+    },
+    "female": {
+     "text": "52,098"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "29.3% (male 15,627/female 15,142)"
+    },
+    "15-64 years": {
+     "text": "63.2% (male 33,445/female 32,867)"
+    },
+    "65 years and over": {
+     "text": "7.4% (2024 est.) (male 3,534/female 4,274)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "747 sq km"
+    },
+    "land": {
+     "text": "717 sq km"
+    },
+    "water": {
+     "text": "30 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Kingdom of Tonga"
+    },
+    "conventional short form": {
+     "text": "Tonga"
+    },
+    "local long form": {
+     "text": "Pule'anga Fakatu'i 'o Tonga"
+    },
+    "local short form": {
+     "text": "Tonga"
+    },
+    "former": {
+     "text": "Friendly Islands"
+    },
+    "etymology": {
+     "text": "the name is of local origin and is said to mean \"island;\" the former name, the Friendly Islands, came from Captain James COOK in 1773, based on the welcome he received from the inhabitants"
+    }
+   }
+  },
+  "_file": "australia-oceania/tn.json"
+ },
+ "TUV": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "11,824 (2025 est.)"
+    },
+    "male": {
+     "text": "5,865"
+    },
+    "female": {
+     "text": "5,959"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "29.2% (male 1,754/female 1,672)"
+    },
+    "15-64 years": {
+     "text": "63.2% (male 3,736/female 3,675)"
+    },
+    "65 years and over": {
+     "text": "7.6% (2024 est.) (male 326/female 570)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "26 sq km"
+    },
+    "land": {
+     "text": "26 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "none"
+    },
+    "conventional short form": {
+     "text": "Tuvalu"
+    },
+    "local long form": {
+     "text": "none"
+    },
+    "local short form": {
+     "text": "Tuvalu"
+    },
+    "former": {
+     "text": "Ellice Islands"
+    },
+    "etymology": {
+     "text": "the name in the local language means \"group of eight\" or \"eight standing together,\" referring to eight of the country's nine islands; the remaining island, Nui, was left out of the original grouping because its inhabitants spoke a different language; the former name was given in honor of Canadian shipping company owner Alexander Ellice, who owned a ship that visited the islands in 1819"
+    }
+   }
+  },
+  "_file": "australia-oceania/tv.json"
+ },
+ "WLF": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "15,998 (2025 est.)"
+    },
+    "male": {
+     "text": "8,217"
+    },
+    "female": {
+     "text": "7,781"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "19.8% (male 1,643/female 1,511)"
+    },
+    "15-64 years": {
+     "text": "67.5% (male 5,535/female 5,247)"
+    },
+    "65 years and over": {
+     "text": "12.7% (2024 est.) (male 1,023/female 1,005)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "142 sq km"
+    },
+    "land": {
+     "text": "142 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    },
+    "note": "<strong>note:</strong> includes Ile Uvea (Wallis Island), Ile Futuna (Futuna Island), Ile Alofi, and 20 islets"
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Territory of the Wallis and Futuna Islands"
+    },
+    "conventional short form": {
+     "text": "Wallis and Futuna"
+    },
+    "local long form": {
+     "text": "Territoire des Iles Wallis et Futuna"
+    },
+    "local short form": {
+     "text": "Wallis et Futuna"
+    },
+    "former": {
+     "text": "Hoorn Islands is the former name of the Futuna Islands"
+    },
+    "etymology": {
+     "text": "Wallis Island is named after British Captain Samuel WALLIS, who visited in 1767; Futuna is a local name, and the meaning is unclear"
+    }
+   },
+   "Dependency status": {
+    "text": "overseas collectivity of France"
+   }
+  },
+  "_file": "australia-oceania/wf.json"
+ },
+ "WSM": {
+  "Economy": {
+   "Population below poverty line": {
+    "text": "21.9% (2018 est.)",
+    "note": "<b>note:</b> % of population with income below national poverty line"
+   },
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "4.6% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "5% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "5.1% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "11.9% (2024 est.)"
+    },
+    "male": {
+     "text": "7.4% (2024 est.)"
+    },
+    "female": {
+     "text": "20.9% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "210,223 (2025 est.)"
+    },
+    "male": {
+     "text": "106,542"
+    },
+    "female": {
+     "text": "103,681"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "26.9% (male 28,952/female 27,173)"
+    },
+    "15-64 years": {
+     "text": "65.9% (male 70,225/female 67,427)"
+    },
+    "65 years and over": {
+     "text": "7.2% (2024 est.) (male 6,743/female 8,333)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "2,831 sq km"
+    },
+    "land": {
+     "text": "2,821 sq km"
+    },
+    "water": {
+     "text": "10 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Independent State of Samoa"
+    },
+    "conventional short form": {
+     "text": "Samoa"
+    },
+    "local long form": {
+     "text": "Malo Sa'oloto Tuto'atasi o Samoa"
+    },
+    "local short form": {
+     "text": "Samoa"
+    },
+    "former": {
+     "text": "Western Samoa"
+    },
+    "etymology": {
+     "text": "the name's meaning and origin are unclear; some assert that it can mean \"place of the moa bird\" of Polynesian mythology, or it could be a local chieftain's name"
+    }
+   }
+  },
+  "_file": "australia-oceania/ws.json"
+ },
+ "ABW": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "125,063 (2024 est.)"
+    },
+    "male": {
+     "text": "59,101"
+    },
+    "female": {
+     "text": "65,962"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "17.2% (male 10,815/female 10,747)"
+    },
+    "15-64 years": {
+     "text": "65.7% (male 39,621/female 42,487)"
+    },
+    "65 years and over": {
+     "text": "17.1% (2024 est.) (male 8,665/female 12,728)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "180 sq km"
+    },
+    "land": {
+     "text": "180 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Country of Aruba"
+    },
+    "conventional short form": {
+     "text": "Aruba"
+    },
+    "local long form": {
+     "text": "Land Aruba (Dutch); Pais Aruba (Papiamento)"
+    },
+    "local short form": {
+     "text": "Aruba"
+    },
+    "etymology": {
+     "text": "the origin of the island's name is unclear; according to tradition, the name comes from the Spanish phrase <em>oro hubo</em> (\"there was gold\"), but no gold was ever found on the island; other possible sources are either the local word <em>oruba</em> (\"well-situated\") or a combination of two Carib Indian words, <em>ora </em>and <em>oubao</em> (\"shell\" and \"island,\" respectively)"
+    }
+   },
+   "Dependency status": {
+    "text": "one of four constituent countries of the Kingdom of the Netherlands; full autonomy in internal affairs obtained in 1986 upon separation from the Netherlands Antilles; Dutch government responsible for defense and foreign affairs",
+    "note": "<strong>note: </strong>the other three constituent countries in the Kingdom of the Netherlands are the Netherlands, Sint Maarten, and Curacao"
+   }
+  },
+  "_file": "central-america-n-caribbean/aa.json"
+ },
+ "ATG": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "102,634 (2024 est.)"
+    },
+    "male": {
+     "text": "48,311"
+    },
+    "female": {
+     "text": "54,323"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "21.8% (male 11,384/female 11,034)"
+    },
+    "15-64 years": {
+     "text": "67.6% (male 32,312/female 37,094)"
+    },
+    "65 years and over": {
+     "text": "10.5% (2024 est.) (male 4,615/female 6,195)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "443 sq km (Antigua 280 sq km; Barbuda 161 sq km)"
+    },
+    "land": {
+     "text": "443 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    },
+    "note": "<strong>note:</strong> includes Redonda, 1.6 sq km"
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Antigua and Barbuda"
+    },
+    "conventional short form": {
+     "text": "Antigua and Barbuda"
+    },
+    "etymology": {
+     "text": "<em>antiguo </em>is Spanish for \"ancient\" or \"old;\" Christopher COLUMBUS named the island in 1493, after the church of Santa Maria la Antigua (Old Saint Mary's) in Seville, Spain; <em>barbuda </em>is Spanish for \"bearded\" and may refer to the island's lichen-covered fig trees"
+    }
+   }
+  },
+  "_file": "central-america-n-caribbean/ac.json"
+ },
+ "AIA": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "19,416 (2024 est.)"
+    },
+    "male": {
+     "text": "9,107"
+    },
+    "female": {
+     "text": "10,309"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "20.8% (male 2,056/female 1,992)"
+    },
+    "15-64 years": {
+     "text": "67.5% (male 5,958/female 7,147)"
+    },
+    "65 years and over": {
+     "text": "11.7% (2024 est.) (male 1,093/female 1,170)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "91 sq km"
+    },
+    "land": {
+     "text": "91 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "none"
+    },
+    "conventional short form": {
+     "text": "Anguilla"
+    },
+    "etymology": {
+     "text": "in 1493, Christopher COLUMBUS named the island Anguilla, meaning \"eel\" in Spanish, because of the island's elongated shape"
+    }
+   },
+   "Dependency status": {
+    "text": "overseas territory of the UK"
+   }
+  },
+  "_file": "central-america-n-caribbean/av.json"
+ },
+ "BRB": {
+  "Economy": {
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "7.6% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "7.9% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "8.4% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "23.7% (2024 est.)"
+    },
+    "male": {
+     "text": "27.5% (2024 est.)"
+    },
+    "female": {
+     "text": "19.6% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "304,139 (2024 est.)"
+    },
+    "male": {
+     "text": "146,587"
+    },
+    "female": {
+     "text": "157,552"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "16.6% (male 25,273/female 25,284)"
+    },
+    "15-64 years": {
+     "text": "67% (male 100,328/female 103,536)"
+    },
+    "65 years and over": {
+     "text": "16.3% (2024 est.) (male 20,986/female 28,732)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "430 sq km"
+    },
+    "land": {
+     "text": "430 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "none"
+    },
+    "conventional short form": {
+     "text": "Barbados"
+    },
+    "etymology": {
+     "text": "the name is the plural of the Spanish word <em>barbado</em> and means \"the bearded ones,\" which could refer either to the beard-like leaves of the island's fig trees or to the beards of Carib inhabitants"
+    }
+   }
+  },
+  "_file": "central-america-n-caribbean/bb.json"
+ },
+ "BHS": {
+  "Economy": {
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "8.5% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "8.7% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "9.3% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "17.8% (2024 est.)"
+    },
+    "male": {
+     "text": "17.8% (2024 est.)"
+    },
+    "female": {
+     "text": "17.8% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "415,306 (2025 est.)"
+    },
+    "male": {
+     "text": "192,055"
+    },
+    "female": {
+     "text": "223,251"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "21.4% (male 41,675/female 46,363)"
+    },
+    "15-64 years": {
+     "text": "70% (male 132,626/female 154,866)"
+    },
+    "65 years and over": {
+     "text": "8.6% (2024 est.) (male 15,799/female 19,533)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "13,880 sq km"
+    },
+    "land": {
+     "text": "10,010 sq km"
+    },
+    "water": {
+     "text": "3,870 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Commonwealth of The Bahamas"
+    },
+    "conventional short form": {
+     "text": "The Bahamas"
+    },
+    "etymology": {
+     "text": "name may be derived from the Spanish <em>baha mar</em>, meaning \"low sea,\" which describes the shallow waters of the Bahama Banks; alternatively, it may be a form of the local name Guanahani, which is of unknown origin and meaning"
+    }
+   }
+  },
+  "_file": "central-america-n-caribbean/bf.json"
+ },
+ "CYM": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "66,653 (2024 est.)"
+    },
+    "male": {
+     "text": "32,379"
+    },
+    "female": {
+     "text": "34,274"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "17.4% (male 5,845/female 5,767)"
+    },
+    "15-64 years": {
+     "text": "65.9% (male 21,480/female 22,456)"
+    },
+    "65 years and over": {
+     "text": "16.7% (2024 est.) (male 5,054/female 6,051)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "264 sq km"
+    },
+    "land": {
+     "text": "264 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "none"
+    },
+    "conventional short form": {
+     "text": "Cayman Islands"
+    },
+    "etymology": {
+     "text": "Spanish explorers named the islands in the early 16th century, using the Carib word for marine crocodiles, <em>caiman</em>"
+    }
+   },
+   "Dependency status": {
+    "text": "overseas territory of the UK"
+   }
+  },
+  "_file": "central-america-n-caribbean/cj.json"
+ },
+ "DMA": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "74,661 (2024 est.)"
+    },
+    "male": {
+     "text": "37,753"
+    },
+    "female": {
+     "text": "36,908"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "20.7% (male 7,891/female 7,530)"
+    },
+    "15-64 years": {
+     "text": "65.6% (male 25,000/female 24,009)"
+    },
+    "65 years and over": {
+     "text": "13.7% (2024 est.) (male 4,862/female 5,369)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "751 sq km"
+    },
+    "land": {
+     "text": "751 sq km"
+    },
+    "water": {
+     "text": "NEGL"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Commonwealth of Dominica"
+    },
+    "conventional short form": {
+     "text": "Dominica"
+    },
+    "etymology": {
+     "text": "the island was named by explorer Christopher COLUMBUS for the day of the week on which he spotted it, Sunday (<em>Domingo </em>in Spanish, <em>dominica dies </em>in Latin), 3 November 1493"
+    }
+   }
+  },
+  "_file": "central-america-n-caribbean/do.json"
+ },
+ "GRD": {
+  "Economy": {
+   "Population below poverty line": {
+    "text": "25% (2018 est.)",
+    "note": "<strong>note:</strong> % of population with income below national poverty line"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "114,621 (2024 est.)"
+    },
+    "male": {
+     "text": "58,168"
+    },
+    "female": {
+     "text": "56,453"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "21.9% (male 13,095/female 12,003)"
+    },
+    "15-64 years": {
+     "text": "65.3% (male 38,129/female 36,726)"
+    },
+    "65 years and over": {
+     "text": "12.8% (2024 est.) (male 6,944/female 7,724)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "344 sq km"
+    },
+    "land": {
+     "text": "344 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "none"
+    },
+    "conventional short form": {
+     "text": "Grenada"
+    },
+    "etymology": {
+     "text": "origin of the name remains obscure; some sources attribute the designation to Spanish influence (most likely named for the Spanish city of Granada); in Spanish <em>granada </em>means \"pomegranate\""
+    }
+   }
+  },
+  "_file": "central-america-n-caribbean/gj.json"
+ },
+ "JAM": {
+  "Economy": {
+   "Population below poverty line": {
+    "text": "16.7% (2021 est.)",
+    "note": "<strong>note:</strong> % of population with income below national poverty line"
+   },
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "4.9% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "4.4% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "4.1% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "14.5% (2024 est.)"
+    },
+    "male": {
+     "text": "12.9% (2024 est.)"
+    },
+    "female": {
+     "text": "16.4% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "2,938,503 (2025 est.)"
+    },
+    "male": {
+     "text": "1,453,759"
+    },
+    "female": {
+     "text": "1,484,744"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "23.8% (male 342,691/female 329,773)"
+    },
+    "15-64 years": {
+     "text": "65.7% (male 914,364/female 941,816)"
+    },
+    "65 years and over": {
+     "text": "10.4% (2024 est.) (male 140,440/female 154,629)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "10,991 sq km"
+    },
+    "land": {
+     "text": "10,831 sq km"
+    },
+    "water": {
+     "text": "160 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "none"
+    },
+    "conventional short form": {
+     "text": "Jamaica"
+    },
+    "etymology": {
+     "text": "from the Arawak word <em>xaymaca</em>, meaning \"Land of Wood and Water\" or possibly \"Land of Springs\""
+    }
+   }
+  },
+  "_file": "central-america-n-caribbean/jm.json"
+ },
+ "MSR": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "5,468 (2024 est.)"
+    },
+    "male": {
+     "text": "2,728"
+    },
+    "female": {
+     "text": "2,740"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "15.8% (male 446/female 420)"
+    },
+    "15-64 years": {
+     "text": "76.1% (male 2,062/female 2,101)"
+    },
+    "65 years and over": {
+     "text": "8% (2024 est.) (male 220/female 219)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "102 sq km"
+    },
+    "land": {
+     "text": "102 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "none"
+    },
+    "conventional short form": {
+     "text": "Montserrat"
+    },
+    "etymology": {
+     "text": "explorer Christopher COLUMBUS named the island in 1493 after the Benedictine abbey Santa Maria de Montserrat, near Barcelona, Spain"
+    }
+   },
+   "Dependency status": {
+    "text": "overseas territory of the UK"
+   }
+  },
+  "_file": "central-america-n-caribbean/mh.json"
+ },
+ "KNA": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "55,434 (2025 est.)"
+    },
+    "male": {
+     "text": "27,748"
+    },
+    "female": {
+     "text": "27,686"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "19.2% (male 5,314/female 5,277)"
+    },
+    "15-64 years": {
+     "text": "68.1% (male 18,944/female 18,575)"
+    },
+    "65 years and over": {
+     "text": "12.7% (2024 est.) (male 3,341/female 3,682)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "261 sq km (Saint Kitts 168 sq km; Nevis 93 sq km)"
+    },
+    "land": {
+     "text": "261 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Federation of Saint Kitts and Nevis"
+    },
+    "conventional short form": {
+     "text": "Saint Kitts and Nevis"
+    },
+    "former": {
+     "text": "Federation of Saint Christopher and Nevis"
+    },
+    "etymology": {
+     "text": "explorer Christopher COLUMBUS visited the islands in 1493 and named one for his own patron saint; a common nickname for Christopher during the following centuries was Kit or Kitt, and Saint Kitts is still referred to as Saint Christopher; the name of Nevis is said to derive from the original Spanish name \"Las Nieves\" (The Snows) and refers to its cloud-topped mountain"
+    },
+    "note": "<strong>note:</strong> Nevis is pronounced NEE-vis"
+   }
+  },
+  "_file": "central-america-n-caribbean/sc.json"
+ },
+ "LCA": {
+  "Economy": {
+   "Population below poverty line": {
+    "text": "25% (2015 est.)",
+    "note": "<b>note:</b> % of population with income below national poverty line"
+   },
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "11% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "11.1% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "16% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "29% (2024 est.)"
+    },
+    "male": {
+     "text": "31.4% (2024 est.)"
+    },
+    "female": {
+     "text": "26.3% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "168,462 (2025 est.)"
+    },
+    "male": {
+     "text": "81,678"
+    },
+    "female": {
+     "text": "86,784"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "17.9% (male 15,505/female 14,607)"
+    },
+    "15-64 years": {
+     "text": "66.7% (male 54,260/female 57,747)"
+    },
+    "65 years and over": {
+     "text": "15.4% (2024 est.) (male 11,752/female 14,167)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "616 sq km"
+    },
+    "land": {
+     "text": "606 sq km"
+    },
+    "water": {
+     "text": "10 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "none"
+    },
+    "conventional short form": {
+     "text": "Saint Lucia"
+    },
+    "etymology": {
+     "text": "believed to be named after Saint LUCY (Sainte ALOUSIE) of Syracuse by French sailors who were shipwrecked on the island on 13 December 1502, the saint's feast day"
+    },
+    "note": "<strong>note:</strong> pronounced saynt-LOO-shuh"
+   }
+  },
+  "_file": "central-america-n-caribbean/st.json"
+ },
+ "BLM": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "7,079 (2025 est.)"
+    },
+    "male": {
+     "text": "3,730"
+    },
+    "female": {
+     "text": "3,349"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "13.9% (male 506/female 479)"
+    },
+    "15-64 years": {
+     "text": "63.1% (male 2,413/female 2,057)"
+    },
+    "65 years and over": {
+     "text": "23% (2024 est.) (male 818/female 813)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "25 sq km"
+    },
+    "land": {
+     "text": "25 sq km"
+    },
+    "water": {
+     "text": "negligible"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Overseas Collectivity of Saint Barthelemy"
+    },
+    "conventional short form": {
+     "text": "Saint Barthelemy"
+    },
+    "local long form": {
+     "text": "Collectivit&eacute; d'outre mer de Saint-Barth&eacute;lemy"
+    },
+    "local short form": {
+     "text": "Saint-Barth&eacute;lemy"
+    },
+    "abbreviation": {
+     "text": "Saint-Barth (French)/ St. Barts or St. Barths (English)"
+    },
+    "etymology": {
+     "text": "explorer Christopher COLUMBUS named the island in honor of his brother Bartolomeo in 1493"
+    }
+   },
+   "Dependency status": {
+    "text": "overseas collectivity of France"
+   }
+  },
+  "_file": "central-america-n-caribbean/tb.json"
+ },
+ "TTO": {
+  "Economy": {
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "4.6% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "4.3% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "4.4% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "11.1% (2024 est.)"
+    },
+    "male": {
+     "text": "10.3% (2024 est.)"
+    },
+    "female": {
+     "text": "12% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "1,410,170 (2025 est.)"
+    },
+    "male": {
+     "text": "708,677"
+    },
+    "female": {
+     "text": "701,493"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "18.7% (male 134,508/female 129,180)"
+    },
+    "15-64 years": {
+     "text": "67.2% (male 481,606/female 465,150)"
+    },
+    "65 years and over": {
+     "text": "14.1% (2024 est.) (male 92,146/female 106,376)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "5,128 sq km"
+    },
+    "land": {
+     "text": "5,128 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Republic of Trinidad and Tobago"
+    },
+    "conventional short form": {
+     "text": "Trinidad and Tobago"
+    },
+    "etymology": {
+     "text": "explorer Christopher COLUMBUS named the larger island \"La Isla de la Trinidad\" (The Island of the Trinity) in 1498, possibly because of the three mountain peaks on the island; COLUMBUS may have gotten the name Tobago, spelled \"tobaco\" in Spanish, from the tobacco grown and smoked locally, or from its elongated cigar shape&nbsp;"
+    }
+   }
+  },
+  "_file": "central-america-n-caribbean/td.json"
+ },
+ "TCA": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "60,439 (2024 est.)"
+    },
+    "male": {
+     "text": "30,389"
+    },
+    "female": {
+     "text": "30,050"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "20.4% (male 6,288/female 6,056)"
+    },
+    "15-64 years": {
+     "text": "73.2% (male 22,232/female 22,011)"
+    },
+    "65 years and over": {
+     "text": "6.4% (2024 est.) (male 1,869/female 1,983)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "948 sq km"
+    },
+    "land": {
+     "text": "948 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "none"
+    },
+    "conventional short form": {
+     "text": "Turks and Caicos Islands"
+    },
+    "abbreviation": {
+     "text": "TCA"
+    },
+    "etymology": {
+     "text": "the Turks Islands are named after the Turk's cap cactus, which is native to the islands and appears on the flag and coat of arms; the name Caicos may derive from <em>caya hico</em>, a phrase meaning “string of islands” in the Lucayan (Arawak) language, or from the Spanish word <em>cayo</em>, meaning \"rock\""
+    }
+   },
+   "Dependency status": {
+    "text": "overseas territory of the UK"
+   }
+  },
+  "_file": "central-america-n-caribbean/tk.json"
+ },
+ "CUW": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "153,289 (2024 est.)"
+    },
+    "male": {
+     "text": "73,755"
+    },
+    "female": {
+     "text": "79,534"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "19.2% (male 15,069/female 14,337)"
+    },
+    "15-64 years": {
+     "text": "62.3% (male 47,258/female 48,217)"
+    },
+    "65 years and over": {
+     "text": "18.5% (2024 est.) (male 11,428/female 16,980)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "444 sq km"
+    },
+    "land": {
+     "text": "444 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Country of Curacao"
+    },
+    "conventional short form": {
+     "text": "Curacao"
+    },
+    "local long form": {
+     "text": "Land Curacao (Dutch)/ Pais Korsou (Papiamento)"
+    },
+    "local short form": {
+     "text": "Curacao (Dutch)/ Korsou (Papiamento)"
+    },
+    "former": {
+     "text": "Netherlands Antilles; Curacao and Dependencies"
+    },
+    "etymology": {
+     "text": "the origin of the name is disputed; many historians now agree that the name derives from a similar-sounding word the original inhabitants used to describe themselves"
+    }
+   },
+   "Dependency status": {
+    "text": "one of four constituent countries of the Kingdom of the Netherlands; full autonomy in internal affairs granted in 2010; Dutch government responsible for defense and foreign affairs",
+    "note": "<strong>note: </strong>the other three constituent countries in the Kingdom of the Netherlands are the Netherlands, Aruba, and Sint Maarten"
+   }
+  },
+  "_file": "central-america-n-caribbean/uc.json"
+ },
+ "VCT": {
+  "Economy": {
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "18.1% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "18.6% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "19.5% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "41.4% (2024 est.)"
+    },
+    "male": {
+     "text": "41.4% (2024 est.)"
+    },
+    "female": {
+     "text": "41.4% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "100,647 (2024 est.)"
+    },
+    "male": {
+     "text": "51,249"
+    },
+    "female": {
+     "text": "49,398"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "18.8% (male 9,527/female 9,353)"
+    },
+    "15-64 years": {
+     "text": "68.2% (male 35,401/female 33,288)"
+    },
+    "65 years and over": {
+     "text": "13% (2024 est.) (male 6,321/female 6,757)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "389 sq km (Saint Vincent 344 sq km)"
+    },
+    "land": {
+     "text": "389 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "none"
+    },
+    "conventional short form": {
+     "text": "Saint Vincent and the Grenadines"
+    },
+    "etymology": {
+     "text": "explorer Christopher COLUMBUS named the island after Saint VINCENT of Saragossa because 22 January 1498, the day of discovery, was the saint's feast day"
+    }
+   }
+  },
+  "_file": "central-america-n-caribbean/vc.json"
+ },
+ "VGB": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "40,102 (2024 est.)"
+    },
+    "male": {
+     "text": "19,042"
+    },
+    "female": {
+     "text": "21,060"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "16.6% (male 3,298/female 3,351)"
+    },
+    "15-64 years": {
+     "text": "71.3% (male 13,455/female 15,152)"
+    },
+    "65 years and over": {
+     "text": "12.1% (2024 est.) (male 2,289/female 2,557)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "151 sq km"
+    },
+    "land": {
+     "text": "151 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    },
+    "note": "<strong>note:</strong> comprised of 16 inhabited and more than 20 uninhabited islands; includes the islands of Tortola, Anegada, Virgin Gorda, Jost van Dyke"
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "none"
+    },
+    "conventional short form": {
+     "text": "British Virgin Islands"
+    },
+    "abbreviation": {
+     "text": "BVI"
+    },
+    "etymology": {
+     "text": "the islets, cays, and rocks surrounding the major islands reminded explorer Christopher COLUMBUS in 1493 of Saint Ursula and her 11,000 virgin followers (Santa Ursula y las Once Mil Virgenes), which over time was shortened to the Virgins (las Virgenes)"
+    }
+   },
+   "Dependency status": {
+    "text": "overseas territory of the UK; internal self-governing"
+   }
+  },
+  "_file": "central-america-n-caribbean/vi.json"
+ },
+ "SGP": {
+  "Economy": {
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "3.2% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "3.5% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "3.6% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "7.8% (2024 est.)"
+    },
+    "male": {
+     "text": "5.6% (2024 est.)"
+    },
+    "female": {
+     "text": "10.8% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "6,080,545 (2025 est.)"
+    },
+    "male": {
+     "text": "3,040,862"
+    },
+    "female": {
+     "text": "3,039,683"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "14.6% (male 455,536/female 424,969)"
+    },
+    "15-64 years": {
+     "text": "71.1% (male 2,157,441/female 2,126,799)"
+    },
+    "65 years and over": {
+     "text": "14.3% (2024 est.) (male 400,653/female 463,061)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "719 sq km"
+    },
+    "land": {
+     "text": "709.2 sq km"
+    },
+    "water": {
+     "text": "10 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Republic of Singapore"
+    },
+    "conventional short form": {
+     "text": "Singapore"
+    },
+    "local long form": {
+     "text": "Republic of Singapore"
+    },
+    "local short form": {
+     "text": "Singapore"
+    },
+    "etymology": {
+     "text": "name derives from the Sanskrit words <em>simha </em>(lion) and <em>pur </em>(city); according to  Malayan folklore, an Indian prince visited Singapore in the 7th century and mistook the first animal he saw for a lion, which is not native to the country"
+    }
+   }
+  },
+  "_file": "east-n-southeast-asia/sn.json"
+ },
+ "FRO": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "52,933 (2024 est.)"
+    },
+    "male": {
+     "text": "27,400"
+    },
+    "female": {
+     "text": "25,533"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "20% (male 5,489/female 5,122)"
+    },
+    "15-64 years": {
+     "text": "61.5% (male 17,188/female 15,346)"
+    },
+    "65 years and over": {
+     "text": "18.5% (2024 est.) (male 4,723/female 5,065)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "1,393 sq km"
+    },
+    "land": {
+     "text": "1,393 sq km"
+    },
+    "water": {
+     "text": "0 sq km (some lakes and streams)"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "none"
+    },
+    "conventional short form": {
+     "text": "Faroe Islands"
+    },
+    "local long form": {
+     "text": "none"
+    },
+    "local short form": {
+     "text": "Foroyar"
+    },
+    "etymology": {
+     "text": "the archipelago's name derives from the Old Norse name Faeroyar, meaning \"sheep islands;\" <em>faer </em>means \"sheep,\" and -<em>oyar </em>means \"islands\""
+    }
+   },
+   "Dependency status": {
+    "text": "part of the Kingdom of Denmark; self-governing overseas administrative division of Denmark since 1948"
+   }
+  },
+  "_file": "europe/fo.json"
+ },
+ "GGY": {
+  "Economy": {
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "6.3% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "6.2% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "6.2% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment; entry includes Jersey and Guernsey"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "14.1% (2024 est.)"
+    },
+    "male": {
+     "text": "14.2% (2024 est.)"
+    },
+    "female": {
+     "text": "13.9% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "67,923 (2025 est.)"
+    },
+    "male": {
+     "text": "33,760"
+    },
+    "female": {
+     "text": "34,163"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "14.3% (male 4,999/female 4,717)"
+    },
+    "15-64 years": {
+     "text": "64.1% (male 21,937/female 21,547)"
+    },
+    "65 years and over": {
+     "text": "21.5% (2024 est.) (male 6,776/female 7,811)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "78 sq km"
+    },
+    "land": {
+     "text": "78 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    },
+    "note": "<strong>note:</strong> includes Alderney, Guernsey, Herm, Sark, and some other smaller islands"
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Bailiwick of Guernsey"
+    },
+    "conventional short form": {
+     "text": "Guernsey"
+    },
+    "former": {
+     "text": "Norman Isles"
+    },
+    "etymology": {
+     "text": "the name is of Old Norse origin; the meaning of the root \"Guern(s)\" is unclear but may refer to a person's name, Grani, or to the color green; the \"-ey\" ending means \"island\""
+    }
+   },
+   "Dependency status": {
+    "text": "British crown dependency"
+   }
+  },
+  "_file": "europe/gk.json"
+ },
+ "IMN": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "92,666 (2025 est.)"
+    },
+    "male": {
+     "text": "46,543"
+    },
+    "female": {
+     "text": "46,123"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "16% (male 7,701/female 7,100)"
+    },
+    "15-64 years": {
+     "text": "61.9% (male 29,035/female 28,044)"
+    },
+    "65 years and over": {
+     "text": "22.1% (2024 est.) (male 9,595/female 10,794)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "572 sq km"
+    },
+    "land": {
+     "text": "572 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "none"
+    },
+    "conventional short form": {
+     "text": "Isle of Man"
+    },
+    "local long form": {
+     "text": "Ellan Vannin"
+    },
+    "abbreviation": {
+     "text": "I.O.M."
+    },
+    "etymology": {
+     "text": "the name \"man\" may be derived from the Gaelic word for \"mountain;\" the local name is from the words <em>ellan</em>, or \"island,\" and Vannin, a form of the name Mannan"
+    }
+   },
+   "Dependency status": {
+    "text": "British crown dependency"
+   }
+  },
+  "_file": "europe/im.json"
+ },
+ "JEY": {
+  "Economy": {
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "6.3% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "6.2% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "6.2% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment; entry includes Jersey and Guernsey"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "14.1% (2024 est.)"
+    },
+    "male": {
+     "text": "14.2% (2024 est.)"
+    },
+    "female": {
+     "text": "13.9% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "103,944 (2025 est.)"
+    },
+    "male": {
+     "text": "51,317"
+    },
+    "female": {
+     "text": "52,627"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "17% (male 9,082/female 8,530)"
+    },
+    "15-64 years": {
+     "text": "64.6% (male 33,840/female 32,989)"
+    },
+    "65 years and over": {
+     "text": "18.3% (2024 est.) (male 8,106/female 10,840)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "116 sq km"
+    },
+    "land": {
+     "text": "116 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Bailiwick of Jersey"
+    },
+    "conventional short form": {
+     "text": "Jersey"
+    },
+    "former": {
+     "text": "Norman Isles"
+    },
+    "etymology": {
+     "text": "the name is of Old Norse origin, with -<em>ey</em> meaning \"island;\" \"Jer(s)\" may derive from a person with the Scandinavian name Geirr, meaning \"spear\""
+    }
+   },
+   "Dependency status": {
+    "text": "British crown dependency"
+   }
+  },
+  "_file": "europe/je.json"
+ },
+ "MLT": {
+  "Economy": {
+   "Population below poverty line": {
+    "text": "16.7% (2021 est.)",
+    "note": "<b>note:</b> % of population with income below national poverty line"
+   },
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "2.8% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "3.2% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "3% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "7.8% (2024 est.)"
+    },
+    "male": {
+     "text": "9.6% (2024 est.)"
+    },
+    "female": {
+     "text": "5.7% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "521,828 (2025 est.)"
+    },
+    "male": {
+     "text": "271,180"
+    },
+    "female": {
+     "text": "250,648"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "14.5% (male 35,034/female 33,181)"
+    },
+    "15-64 years": {
+     "text": "62.4% (male 151,836/female 141,248)"
+    },
+    "65 years and over": {
+     "text": "23.1% (2024 est.) (male 50,153/female 58,278)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "316 sq km"
+    },
+    "land": {
+     "text": "316 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Republic of Malta"
+    },
+    "conventional short form": {
+     "text": "Malta"
+    },
+    "local long form": {
+     "text": "Repubblika ta' Malta"
+    },
+    "local short form": {
+     "text": "Malta"
+    },
+    "etymology": {
+     "text": "the origin is unclear; the name may come from the ancient term <em>mel</em>, meaning \"high\" and probably referring to the island's rocks; the ancient Greeks called the island \"Melite,\" possibly from the Greek word <em>meli,</em> meaning \"honey\" and referring to the island's honey production"
+    }
+   }
+  },
+  "_file": "europe/mt.json"
+ },
+ "BHR": {
+  "Economy": {
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "1.2% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "1.2% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "1.4% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "5.2% (2024 est.)"
+    },
+    "male": {
+     "text": "2.5% (2024 est.)"
+    },
+    "female": {
+     "text": "12.4% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "1,566,888 (2024 est.)"
+    },
+    "male": {
+     "text": "940,022"
+    },
+    "female": {
+     "text": "626,866"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "18.1% (male 143,399/female 139,667)"
+    },
+    "15-64 years": {
+     "text": "77.7% (male 762,190/female 454,616)"
+    },
+    "65 years and over": {
+     "text": "4.3% (2024 est.) (male 34,433/female 32,583)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "760 sq km"
+    },
+    "land": {
+     "text": "760 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Kingdom of Bahrain"
+    },
+    "conventional short form": {
+     "text": "Bahrain"
+    },
+    "local long form": {
+     "text": "Mamlakat al Bahrayn"
+    },
+    "local short form": {
+     "text": "Al Bahrayn"
+    },
+    "former": {
+     "text": "Dilmun, Tylos, Awal, Mishmahig, Bahrayn, State of Bahrain"
+    },
+    "etymology": {
+     "text": "the name means \"the two seas\" in Arabic and refers to the water bodies on each side of the archipelago"
+    }
+   }
+  },
+  "_file": "middle-east/ba.json"
+ },
+ "BMU": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "72,800 (2024 est.)"
+    },
+    "male": {
+     "text": "35,401"
+    },
+    "female": {
+     "text": "37,399"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "16.4% (male 6,133/female 5,817)"
+    },
+    "15-64 years": {
+     "text": "60.9% (male 22,247/female 22,113)"
+    },
+    "65 years and over": {
+     "text": "22.7% (2024 est.) (male 7,021/female 9,469)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "54 sq km"
+    },
+    "land": {
+     "text": "54 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "none"
+    },
+    "conventional short form": {
+     "text": "Bermuda"
+    },
+    "former": {
+     "text": "Somers Islands"
+    },
+    "etymology": {
+     "text": "named after Juan de BERMUDEZ, an early 16th-century Spanish sea captain and the first European explorer of the archipelago"
+    }
+   },
+   "Dependency status": {
+    "text": "overseas territory of the UK"
+   }
+  },
+  "_file": "north-america/bd.json"
+ },
+ "FLK": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "3,142 (2021)"
+    },
+    "male": {
+     "text": "1,645"
+    },
+    "female": {
+     "text": "1,497"
+    },
+    "note": "<strong>note:</strong> data include all persons usually resident in the islands at the time of the 2021 census"
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "12,173 sq km"
+    },
+    "land": {
+     "text": "12,173 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    },
+    "note": "<strong>note:</strong> includes the two main islands of East and West Falkland and about 200 small islands"
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "none"
+    },
+    "conventional short form": {
+     "text": "Falkland Islands (Islas Malvinas)"
+    },
+    "etymology": {
+     "text": "the archipelago takes its name from the Falkland Sound, the strait separating the two main islands; the channel was named after the Fifth Viscount of FALKLAND, who sponsored an expedition to the islands in 1690; the Spanish name for the archipelago derives from the French \"Iles Malouines,\" meaning Islands of Malo, the name French explorer Louis-Antoine de BOUGAINVILLE gave the islands in 1764 in honor of the French port of Saint-Malo"
+    }
+   },
+   "Dependency status": {
+    "text": "overseas territory of the UK; also claimed by Argentina"
+   }
+  },
+  "_file": "south-america/fk.json"
+ },
+ "MDV": {
+  "Economy": {
+   "Population below poverty line": {
+    "text": "5.4% (2019 est.)",
+    "note": "<b>note:</b> % of population with income below national poverty line"
+   },
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "4.7% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "4.3% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "4.5% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "16.1% (2024 est.)"
+    },
+    "male": {
+     "text": "20% (2024 est.)"
+    },
+    "female": {
+     "text": "9.5% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "388,858 (2024 est.)"
+    },
+    "male": {
+     "text": "197,739"
+    },
+    "female": {
+     "text": "191,119"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "22.4% (male 44,321/female 42,626)"
+    },
+    "15-64 years": {
+     "text": "71.5% (male 143,021/female 135,044)"
+    },
+    "65 years and over": {
+     "text": "6.1% (2024 est.) (male 10,397/female 13,449)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "298 sq km"
+    },
+    "land": {
+     "text": "298 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Republic of Maldives"
+    },
+    "conventional short form": {
+     "text": "Maldives"
+    },
+    "local long form": {
+     "text": "Dhivehi Raajjeyge Jumhooriyyaa"
+    },
+    "local short form": {
+     "text": "Dhivehi Raajje"
+    },
+    "etymology": {
+     "text": "the origin of the name is obscure but may derive from the Sanskrit word <em>maladvipa</em>, meaning \"garland of islands;\" the local name, Dhivehi Raajje, means \"land of the Dhivehi people\" in the local language"
+    }
+   }
+  },
+  "_file": "south-asia/mv.json"
+ },
+ "CYP": {
+  "Economy": {
+   "Population below poverty line": {
+    "text": "13.9% (2021 est.)",
+    "note": "<b>note:</b> % of population with income below national poverty line"
+   },
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "5.7% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "6.1% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "6.9% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "15.6% (2024 est.)"
+    },
+    "male": {
+     "text": "17.4% (2024 est.)"
+    },
+    "female": {
+     "text": "13.7% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "1,332,293 (2025 est.)"
+    },
+    "male": {
+     "text": "681,128"
+    },
+    "female": {
+     "text": "651,165"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "15.6% (male 105,533/female 100,099)"
+    },
+    "15-64 years": {
+     "text": "70% (male 486,569/female 437,651)"
+    },
+    "65 years and over": {
+     "text": "14.4% (2024 est.) (male 83,094/female 107,579)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "9,251 sq km (of which 3,355 sq km are in north Cyprus)"
+    },
+    "land": {
+     "text": "9,241 sq km"
+    },
+    "water": {
+     "text": "10 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Republic of Cyprus"
+    },
+    "conventional short form": {
+     "text": "Cyprus"
+    },
+    "local long form": {
+     "text": "Kypriaki Dimokratia (Greek)/ Kibris Cumhuriyeti (Turkish)"
+    },
+    "local short form": {
+     "text": "Kypros (Greek)/ Kibris (Turkish)"
+    },
+    "etymology": {
+     "text": "the Greek name for the island is Kupros, which is probably derived from the Sumerian <em>kabar</em>, meaning \"copper\" or \"bronze;\" copper mines were located on the island in antiquity"
+    },
+    "note": "<strong>note:</strong> the Turkish Cypriot community, which administers the northern part of the island, refers to itself as the \"Turkish Republic of Northern Cyprus\" or \"TRNC\" (\"Kuzey Kibris Turk Cumhuriyeti\" or \"KKTC\")"
+   }
+  },
+  "_file": "europe/cy.json"
+ },
+ "ISL": {
+  "Economy": {
+   "Population below poverty line": {
+    "text": "8.8% (2017 est.)",
+    "note": "<b>note:</b> % of population with income below national poverty line"
+   },
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "3.2% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "3.6% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "3.8% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "7.6% (2024 est.)"
+    },
+    "male": {
+     "text": "8.3% (2024 est.)"
+    },
+    "female": {
+     "text": "7% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "364,036 (2024 est.)"
+    },
+    "male": {
+     "text": "182,268"
+    },
+    "female": {
+     "text": "181,768"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "19.8% (male 36,692/female 35,239)"
+    },
+    "15-64 years": {
+     "text": "63.2% (male 116,210/female 113,810)"
+    },
+    "65 years and over": {
+     "text": "17.1% (2024 est.) (male 29,366/female 32,719)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "103,000 sq km"
+    },
+    "land": {
+     "text": "100,250 sq km"
+    },
+    "water": {
+     "text": "2,750 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "none"
+    },
+    "conventional short form": {
+     "text": "Iceland"
+    },
+    "local long form": {
+     "text": "none"
+    },
+    "local short form": {
+     "text": "Island"
+    },
+    "etymology": {
+     "text": "Floki VILGERDARSON, an early Norse explorer of the island in the 10th century, applied the name \"Land of Ice,\" from the local words <em>ís </em>(ice) and <em>land </em>(land)"
+    }
+   }
+  },
+  "_file": "europe/ic.json"
+ },
+ "GRL": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "57,751 (2024 est.)"
+    },
+    "male": {
+     "text": "29,843"
+    },
+    "female": {
+     "text": "27,908"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "20.4% (male 5,964/female 5,798)"
+    },
+    "15-64 years": {
+     "text": "67.1% (male 20,050/female 18,711)"
+    },
+    "65 years and over": {
+     "text": "12.5% (2024 est.) (male 3,829/female 3,399)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "2,166,086 sq km"
+    },
+    "land": {
+     "text": "2,166,086 sq km (approximately 1,710,000 sq km ice-covered)"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "none"
+    },
+    "conventional short form": {
+     "text": "Greenland"
+    },
+    "local long form": {
+     "text": "none"
+    },
+    "local short form": {
+     "text": "Kalaallit Nunaat"
+    },
+    "etymology": {
+     "text": "named by Norse navigator Erik THORVALDSSON (Erik the Red) in A.D. 985 to attract settlers to the island; the original Greenlandic name, Kalaallit Nunaat, means \"land of the people\""
+    }
+   },
+   "Dependency status": {
+    "text": "part of the Kingdom of Denmark; self-governing overseas administrative division of Denmark since 1979"
+   }
+  },
+  "_file": "north-america/gl.json"
+ },
+ "SXM": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "46,738 (2025 est.)"
+    },
+    "male": {
+     "text": "23,071"
+    },
+    "female": {
+     "text": "23,667"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "18.4% (male 4,409/female 4,114)"
+    },
+    "15-64 years": {
+     "text": "66.3% (male 15,158/female 15,496)"
+    },
+    "65 years and over": {
+     "text": "15.2% (2024 est.) (male 3,250/female 3,788)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "34 sq km"
+    },
+    "land": {
+     "text": "34 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    },
+    "note": "<strong>note:</strong> Dutch part of the island of Saint Martin"
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Country of Sint Maarten"
+    },
+    "conventional short form": {
+     "text": "Sint Maarten"
+    },
+    "local long form": {
+     "text": "Land Sint Maarten (Dutch)/ Country of Sint Maarten (English)"
+    },
+    "local short form": {
+     "text": "Sint Maarten (Dutch and English)"
+    },
+    "former": {
+     "text": "Netherlands Antilles; Curacao and Dependencies"
+    },
+    "etymology": {
+     "text": "explorer Christopher COLUMBUS named the island in 1493 after Saint MARTIN of Tours because he visited on 11 November, the saint's feast day"
+    }
+   },
+   "Dependency status": {
+    "text": "one of four constituent countries of the Kingdom of the Netherlands; full autonomy in internal affairs granted in 2010; Dutch government responsible for defense and foreign affairs",
+    "note": "<strong>note: </strong>the other three constituent countries in the Kingdom of the Netherlands are the Netherlands, Aruba, and Curacao"
+   }
+  },
+  "_file": "central-america-n-caribbean/nn.json"
+ },
+ "MAF": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "33,093 (2025 est.)"
+    },
+    "male": {
+     "text": "15,825"
+    },
+    "female": {
+     "text": "17,268"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "24.7% (male 4,039/female 4,100)"
+    },
+    "15-64 years": {
+     "text": "64.5% (male 10,216/female 11,068)"
+    },
+    "65 years and over": {
+     "text": "10.8% (2024 est.) (male 1,536/female 2,037)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "50 sq km"
+    },
+    "land": {
+     "text": "50 sq km"
+    },
+    "water": {
+     "text": "negligible"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Overseas Collectivity of Saint Martin"
+    },
+    "conventional short form": {
+     "text": "Saint Martin"
+    },
+    "local long form": {
+     "text": "Collectivit&eacute; d'outre mer de Saint-Martin"
+    },
+    "local short form": {
+     "text": "Saint-Martin"
+    },
+    "etymology": {
+     "text": "explorer Christopher COLUMBUS named the island after Saint MARTIN of Tours during a visit on 11 November 1493, the saint's feast day"
+    }
+   },
+   "Dependency status": {
+    "text": "overseas collectivity of France",
+    "note": "<strong>note:</strong> the only French overseas collectivity that is part of the EU"
+   }
+  },
+  "_file": "central-america-n-caribbean/rn.json"
+ }
+}

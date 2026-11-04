@@ -148,5 +148,32 @@ window.STATE_RULES = {
         rule: "Schools are run by school boards (foundations or associations, public and private), which aren't elected and have no duty to hold public meetings." }
     ],
     note: "Dutch municipalities fund school buildings and set local education policy, but don't run schools. Check the current law before relying on this."
+  },
+  newzealand: {
+    title: "Rules for school board meetings",
+    checked: "November 4, 2026",
+    laws: [
+      { state: "New Zealand", covers: "School boards (one per school)", threshold: "",
+        rule: "Board meetings are open to the public unless the board excludes them for an item (Local Government Official Information and Meetings Act 1987, which applies to school boards); no requirement to record or stream was found." }
+    ],
+    note: "Each New Zealand state school has its own elected board, so the site's areas aren't boards. Check the current law before relying on this."
+  },
+  germany: {
+    title: "Rules for district council and school committee meetings",
+    checked: "November 4, 2026",
+    laws: [
+      { state: "Germany", covers: "District councils (Kreistage) and city councils, and their school committees", threshold: "",
+        rule: "Meetings are generally public under each state's local government law (Landkreisordnung, Gemeindeordnung); recording or streaming usually needs the council's rules to allow it and the members' consent, so few are streamed." }
+    ],
+    note: "German schools are run jointly: the state (Land) employs teachers and sets the curriculum, and the district or city (the Schulträger) builds and runs the schools. Check each state's law before relying on this."
+  },
+  islands: {
+    title: "Rules for education ministry meetings",
+    checked: "November 4, 2026",
+    laws: [
+      { state: "Island countries and territories", covers: "Education ministries and departments", threshold: "",
+        rule: "Not checked for each island. Their schools are run by a government ministry or department, which doesn't hold public board meetings the way a US school board does." }
+    ],
+    note: "Rules for the islands' education bodies weren't researched; check each place's own law."
   }
 };

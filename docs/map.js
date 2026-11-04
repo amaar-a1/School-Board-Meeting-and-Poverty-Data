@@ -2,7 +2,7 @@
 // colored by the site's data. app.js calls SiteMap.show() when the tab or the data set changes.
 (function () {
   const $ = (id) => document.getElementById(id);
-  const LAYERS = ["unsd", "elsd", "territories", "scsd", "canada", "spm", "uk", "ireland", ...Object.values({ NO: "norway", SE: "sweden", FI: "finland", DK: "denmark", NL: "netherlands" })];   // files in data/map/; scsd only when ticked
+  const LAYERS = ["world", "unsd", "elsd", "territories", "scsd", "canada", "spm", "uk", "ireland", "norway", "sweden", "finland", "denmark", "netherlands", "germany", "new-zealand", "islands"];   // files in data/map/; scsd only when ticked
   // Canadian boards overlap (public and Catholic, English and French). The main layer shows one
   // board per place; "canada2" holds the overlapping ones and shows when its box is ticked.
   // Quebec's French boards cover all of Quebec; elsewhere the public (or English) board does.
@@ -10,11 +10,13 @@
   const caMainRow = (r) => !!r && (r.pseudo || ["Public", "English public", "Special status"].includes(r["Board type"]) ||
     r["Board type"] === (r.Province === "Quebec" ? "French" : "English"));
   // The Nordic countries and the Netherlands: municipalities, IDs like "NO-0301" (map file per country).
-  const EU = { NO: "norway", SE: "sweden", FI: "finland", DK: "denmark", NL: "netherlands" };
-  const EU_NAMES = { NO: "Norway", SE: "Sweden", FI: "Finland", DK: "Denmark", NL: "Netherlands" };
+  // Also Germany, New Zealand and the island countries ("ISLE-JAM"), which share the same handling.
+  const EU = { NO: "norway", SE: "sweden", FI: "finland", DK: "denmark", NL: "netherlands", DE: "germany", NZ: "new-zealand", ISLE: "islands" };
+  const EU_NAMES = { NO: "Norway", SE: "Sweden", FI: "Finland", DK: "Denmark", NL: "Netherlands", DE: "Germany", NZ: "New Zealand", ISLE: "the island countries" };
   const EU_POV = "Percentage of Children in Low Income";
-  const euOf = (id) => { const c = String(id).slice(0, 2); return String(id)[2] === "-" && EU[c] ? c : null; };
-  const DRAW = ["unsd", "elsd", "territories", "scsd", "canada", "canada2", "spm", "uk", "ireland", ...Object.values(EU)];
+  const povCol = (eu) => (eu === "ISLE" ? "Poverty rate or stand-in" : EU_POV);
+  const euOf = (id) => { const c = String(id).split("-")[0]; return String(id).includes("-") && EU[c] ? c : null; };
+  const DRAW = ["world", "unsd", "elsd", "territories", "scsd", "canada", "canada2", "spm", "uk", "ireland", ...Object.values(EU)];
   const gid = (f) => f.properties.GEOID || f.properties.id;
   const isCA = (id) => String(id).startsWith("CA-");
   const isFR = (id) => String(id).startsWith("FR-");   // Saint-Pierre-et-Miquelon (France)
@@ -39,7 +41,10 @@
     Sweden: [[55.3, 11.0], [69.1, 24.2]],
     Finland: [[59.7, 19.4], [70.1, 31.6]],
     Denmark: [[54.5, 8.0], [57.8, 15.2]],
-    Netherlands: [[50.7, 3.3], [53.6, 7.3]]
+    Netherlands: [[50.7, 3.3], [53.6, 7.3]],
+    Germany: [[47.2, 5.8], [55.1, 15.1]],
+    "New Zealand": [[-47.4, 166.3], [-34.3, 178.7]],
+    World: [[-58, -170], [75, 180]]
   };
   const SCALES = {
     poverty: {
@@ -102,6 +107,7 @@
     let v = row ? toNumber(row[row[sc.column] === undefined && sc.caColumn ? sc.caColumn : sc.column]) : NaN;
     if (metric === "poverty" && row && isNaN(v) && row[UK_POV]) v = toNumber(row[UK_POV]);
     if (metric === "poverty" && row && isNaN(v) && row[EU_POV]) v = toNumber(row[EU_POV]);
+    if (metric === "poverty" && row && isNaN(v) && row["Poverty rate or stand-in"]) v = toNumber(row["Poverty rate or stand-in"]);
     // Saint-Pierre-et-Miquelon has no poverty rate; its unemployment rate stands in.
     if (metric === "poverty" && row && isNaN(v) && row["Unemployment rate (stand-in for poverty)"]) v = toNumber(row["Unemployment rate (stand-in for poverty)"]);
     // Where CivicSearch has none, the meetings map uses counts from the district's own sources.
@@ -118,6 +124,9 @@
     const fr = current && current.country === "FR";
     if (isFR(geoid) || fr) return isFR(geoid) && fr;   // Saint-Pierre-et-Miquelon's view fades everything else
     const eu = current && EU[current.country] ? current.country : null;
+    // One state or region of these countries (Germany's states, the island regions).
+    const sub = current && current.parent && EU[current.parent.country] && current.parent.groups;
+    if (sub) { const r = rowFor(geoid); return euOf(geoid) === current.parent.country && !!r && r[sub.column] === current.name; }
     if (euOf(geoid) || eu) return euOf(geoid) === eu;
     const ie = current && current.country === "IE";
     if (isIE(geoid) || ie) return isIE(geoid) && ie;
@@ -131,9 +140,13 @@
     return !fips[current.state] || geoid.startsWith(fips[current.state]);
   }
 
+  // Countries the site doesn't cover: grey outlines only (data/map/world.json, Natural Earth).
+  const isWorld = (f) => String(gid(f)).startsWith("W-");
+  const WORLD_STYLE = { fillColor: "#cfcfcf", fillOpacity: 0.35, color: "#9a9a9a", weight: 0.5 };
   const undefinedArea = (f) => /^School District Not Defined$/i.test(f.properties.NAME || "");
 
   function style(feature) {
+    if (isWorld(feature)) return WORLD_STYLE;
     if (undefinedArea(feature)) return { fillColor: NO_DISTRICT, fillOpacity: 0.9, color: "#8a9a80", weight: 0.3, dashArray: "2 3" };
     const f = window.SiteFilters;
     let on = inView(gid(feature));
@@ -147,21 +160,22 @@
   const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
   function tip(feature) {
+    if (isWorld(feature)) return `<div class="map-tip"><strong>${esc(feature.properties.NAME)}</strong>Not covered on this site yet</div>`;
     const r = rowFor(gid(feature));
     if (r && r.Province) return caTip(r);
     if (undefinedArea(feature)) return `<div class="map-tip"><strong>No school district</strong>Area the Census leaves outside any district, mostly national parks and other federal land (e.g. Grand Canyon, Yellowstone) or water</div>`;
     if (!r) return `<div class="map-tip"><strong>${esc(feature.properties.NAME)}</strong>Available board meetings: 0<br>No poverty data for this district</div>`;
     const eu = euOf(r["District ID"]);
-    const place = eu ? EU_NAMES[eu] : [r.County, r.State || r.Territory || r.Nation].filter(Boolean).join(", ");
+    const place = eu === "ISLE" ? r.Status || "" : eu ? EU_NAMES[eu] : [r.County, r.State || r.Territory || r.Nation].filter(Boolean).join(", ");
     const ukPov = r[UK_POV] !== undefined;
-    const pov = toNumber(r[ukPov ? UK_POV : eu ? EU_POV : "Percentage of Children Ages 5-17 in Poverty"]);
+    const pov = toNumber(r[ukPov ? UK_POV : eu ? povCol(eu) : "Percentage of Children Ages 5-17 in Poverty"]);
     const unemp = toNumber(r["Unemployment rate (stand-in for poverty)"]);
     const meet = toNumber(r["Available Board Meetings"]);
     const enr = toNumber(r.Enrollment);
     const note = [r["Map note"], r.Notes || r["Poverty figures"], r["Meetings note"], r["Other meetings source"] && `Other meetings: ${r["Other meetings source"]}`].filter(Boolean).map((x) => String(x).replace(/\.\s*$/, "")).join(". ");
     return `<div class="map-tip"><strong>${esc(r.District)}${place ? `, ${esc(place)}` : ""}</strong>` +
       (isNaN(pov) && !isNaN(unemp) ? `Unemployment (stand-in for poverty): ${unemp.toFixed(1)}% (${String(r["District ID"]).startsWith("IE-") ? "Census 2022" : "2015 est."})<br>`
-        : `${ukPov ? "Children under 16 in low income" : eu ? `Children in low income (${{ NO: "0–17, 2022–24", SE: "0–19, 2024", FI: "under 18", DK: "0–17, 50% line, 2024", NL: "CBS, 2024" }[eu]})` : "Child poverty"}: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>`) +
+        : `${ukPov ? "Children under 16 in low income" : eu === "ISLE" ? esc(r["Poverty measure"] || "Poverty") : eu ? `Children in low income (${{ NO: "0–17, 2022–24", SE: "0–19, 2024", FI: "under 18", DK: "0–17, 50% line, 2024", NL: "CBS, 2024", DE: "under 15 on SGB II benefits, 2023", NZ: "60% line, 2025" }[eu]})` : "Child poverty"}: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>`) +
       `Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}` +
       (toNumber(r["Other Board Meetings"]) > 0 ? ` on CivicSearch; ${toNumber(r["Other Board Meetings"]).toLocaleString()} from other sources (see note)` : "") + `<br>` +
       `Enrollment: ${isNaN(enr) ? "not reported" : enr.toLocaleString()}` +
@@ -197,9 +211,9 @@
       items.push(`<span class="map-faded">Saint-Pierre-et-Miquelon: unemployment rate (2015 est.) in place of child poverty, which isn't published there</span>`);
     if (current && current.country === "FR") faded.push("outside Saint-Pierre-et-Miquelon");
     if (current && current.country === "IE") faded.push("outside Ireland");
-    if (euv) faded.push(`outside ${euv === "NL" ? "the Netherlands" : EU_NAMES[euv]}`);
+    if (euv && !current.state) faded.push(`outside ${euv === "NL" ? "the Netherlands" : EU_NAMES[euv]}`);
     if ((euv || (current && current.combined)) && $("map-metric").value === "poverty")
-      items.push(`<span class="map-faded">${euv ? EU_NAMES[euv] : "Nordic countries and the Netherlands"}: each country's own child low-income measure, not comparable with each other or with the US rate</span>`);
+      items.push(`<span class="map-faded">${euv === "ISLE" ? "Islands: the best figure available for each (child low income, the national poverty line or unemployment), not comparable with each other" : `${euv ? EU_NAMES[euv] : "Other countries"}: each country's own child low-income measure, not comparable with each other or with the US rate`}</span>`);
     if (current && (current.country === "IE" || current.combined) && $("map-metric").value === "poverty")
       items.push(`<span class="map-faded">Ireland: unemployment rate (Census 2022) in place of child poverty, which isn't published for ETB areas</span>`);
     const ukv = current && (current.country === "UK" || (current.parent && current.parent.country === "UK"));
@@ -208,12 +222,16 @@
       items.push(`<span class="map-faded">UK: children under 16 in relative low income (DWP, 2024–25), not the same measure as the US or Canadian rates</span>`);
     if (ca && $("map-metric").value === "poverty") items.push(`<span class="map-faded">${current.combined ? "Canadian boards" : "Canada"}: share of children 0–17 in low income (LIM-AT, 2020), not the same measure as the US child poverty rate</span>`);
     if (window.SiteFilters && window.SiteFilters.active()) faded.push("that don't match the filters");
+    items.push(`<span><i style="background:${WORLD_STYLE.fillColor};border:1px solid ${WORLD_STYLE.color}"></i>Country not covered on this site</span>`);
     if (faded.length) items.push(`<span class="map-faded">Faded: districts ${faded.join(" or ")}</span>`);
     $("map-legend").innerHTML = items.join("");
   }
 
+  // Islands are too small to see at a world zoom, so each also gets a dot (data/map/islands.json).
+  let islandDots = [];
   function restyle() {
     Object.values(layers).forEach((l) => l.setStyle(style));
+    islandDots.forEach(({ dot, f }) => { const st = style(f); dot.setStyle({ fillColor: st.fillColor, fillOpacity: st.fillOpacity, opacity: st.fillOpacity }); });
     legend();
   }
 
@@ -232,6 +250,15 @@
     if (current.combined) return jump("United States and Canada");
     if (current.country === "FR") return jump("Saint-Pierre-et-Miquelon");
     if (current.country === "IE") return jump("Ireland");
+    const euc = EU[current.country] ? current.country : null;
+    if (euc && (euc === "ISLE" || current.parent)) {
+      let b = null;
+      layers[EU[euc]] && layers[EU[euc]].eachLayer((f) => {
+        if (inView(gid(f.feature))) b = b ? b.extend(f.getBounds()) : L.latLngBounds(f.getBounds().getSouthWest(), f.getBounds().getNorthEast());
+      });
+      if (b) { map.fitBounds(b, { padding: [10, 10] }); $("map-jump").value = ""; }
+      return;
+    }
     if (EU_NAMES[current.country]) return jump(EU_NAMES[current.country]);
     if (current.country === "CA" && !current.parent) return jump("Canada");
     if (current.country === "UK" && !current.parent) return jump("United Kingdom");
@@ -269,7 +296,7 @@
       if (r.State && r["District ID"]) fips[r.State] = r["District ID"].slice(0, 2);
     }));
     const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    map = L.map("map", { preferCanvas: true, minZoom: 2, zoomSnap: 0.25 });
+    map = L.map("map", { preferCanvas: true, minZoom: 2, zoomSnap: 0.25 }).setView([30, 0], 2);   // a view first: the island dots need one
     L.tileLayer(`https://{s}.basemaps.cartocdn.com/${dark ? "dark_all" : "light_all"}/{z}/{x}/{y}{r}.png`, {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
       subdomains: "abcd", maxZoom: 14
@@ -321,6 +348,19 @@
       });
       if (name !== "scsd" && name !== "canada2") layers[name].addTo(map);
     });
+    if (layers.islands) layers.islands.eachLayer((l) => {
+      // Countries across the date line (Fiji, Kiribati): centre on the largest island instead.
+      let c = l.getBounds().getCenter();
+      if (l.getBounds().getEast() - l.getBounds().getWest() > 180) {
+        const g = l.feature.geometry, polys = g.type === "MultiPolygon" ? g.coordinates : [g.coordinates];
+        const big = polys.reduce((a, p) => (p[0].length > a[0].length ? p : a));
+        c = L.latLngBounds(big[0].map(([x, y]) => [y, x])).getCenter();
+      }
+      const dot = L.circleMarker(c, { renderer, radius: 5, weight: 1, color: "#333", fillOpacity: 0.85 }).addTo(map);
+      dot.bindTooltip(() => tip(l.feature), { sticky: true });
+      dot.on("click", () => map.fitBounds(l.getBounds(), { maxZoom: 10 }));
+      islandDots.push({ dot, f: l.feature });
+    });
     // Saint-Pierre-et-Miquelon is tiny and has no poverty figure, so a label keeps its meeting count visible.
     const spmRow = lookup["FR-SPM"];
     if (spmRow && layers.spm && layers.spm.getLayers().length) {
@@ -349,7 +389,7 @@
     const groups = new Map();
     DRAW.forEach((n) => layers[n] && layers[n].eachLayer((l) => {
       const p = l.feature.properties;
-      if (undefinedArea(l.feature)) return;
+      if (undefinedArea(l.feature) || isWorld(l.feature)) return;
       const r = rowFor(gid(l.feature));
       const id = (r && r["District ID"]) || (r && r.District) || gid(l.feature);
       const place = r ? (euOf(r["District ID"]) ? EU_NAMES[euOf(r["District ID"])] : [r.County, r.State || r.Territory || r.Province || r.Nation].filter(Boolean).join(", ")) : "";
@@ -445,7 +485,7 @@
       if (!loading) {
         loading = Promise.all([...LAYERS, "aliases"].map((n) => fetch(`data/map/${n}.json`).then((r) => {
           if (!r.ok) {
-            if (n === "canada" || n === "spm" || n === "uk" || n === "ireland" || Object.values(EU).includes(n)) return null;   // the US map still works without these borders
+            if (n === "world" || n === "canada" || n === "spm" || n === "uk" || n === "ireland" || Object.values(EU).includes(n)) return null;   // the US map still works without these borders
             throw new Error(`HTTP ${r.status}`);
           }
           return r.json();
@@ -453,7 +493,7 @@
           .then((files) => { aliases = files.pop(); build(datasets, files); $("map-status").textContent = ""; })
           .catch((e) => { $("map-status").textContent = `Couldn't load the map (${e.message}).`; throw e; });
       }
-      loading.then(() => { map.invalidateSize(); restyle(); zoomToCurrent(); }).catch(() => {});
+      loading.then(() => { map.invalidateSize(); restyle(); zoomToCurrent(); }).catch((e) => console.error("map:", e && e.stack));
     }
   };
 })();
