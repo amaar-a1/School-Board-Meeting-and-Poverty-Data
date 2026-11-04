@@ -237,7 +237,10 @@
     const poverty = (r) => toNumber(r[cmp.metric]);
     const withM = rows.filter((r) => meetings(r) > 0), withoutM = rows.filter((r) => meetings(r) === 0);
     const totalMeetings = rows.reduce((a, r) => a + (meetings(r) || 0), 0);
-    const totalEnroll = rows.reduce((a, r) => a + (toNumber(r[enrollCol]) || 0), 0);
+    // Per-student figures use only rows that have an enrollment figure (some Canadian boards don't).
+    const enrolled = rows.filter((r) => toNumber(r[enrollCol]) > 0);
+    const totalEnroll = enrolled.reduce((a, r) => a + toNumber(r[enrollCol]), 0);
+    const enrolledMeetings = enrolled.reduce((a, r) => a + (meetings(r) || 0), 0);
     const avgMeetings = rows.length ? totalMeetings / rows.length : NaN;
     const avgPoverty = avg(rows.map(poverty).filter((v) => !isNaN(v)));
     return {
@@ -246,7 +249,7 @@
       avgMeetings,
       povWith: avg(withM.map(poverty).filter((v) => !isNaN(v))),
       povWithout: avg(withoutM.map(poverty).filter((v) => !isNaN(v))),
-      per10k: totalEnroll ? (totalMeetings / totalEnroll) * 10000 : NaN,
+      per10k: totalEnroll ? (enrolledMeetings / totalEnroll) * 10000 : NaN,
       perPovPoint: avgPoverty ? avgMeetings / avgPoverty : NaN
     };
   }
@@ -324,12 +327,7 @@
     $("locale-merged").hidden = !current.combined;
     if (current.combined) {
       const located = current.rows.filter((r) => mergedLocale(r.Locale));
-      // Canada has no enrollment, so per-student figures only work for groups without Canadian boards.
-      const stats = (rows) => {
-        const st = sizeStats(rows, denom);
-        if (denom === "Enrollment" && rows.some((r) => !(toNumber(r.Enrollment) > 0) && String(r.Locale || "").startsWith("Canada: "))) st.per10k = NaN;
-        return st;
-      };
+      const stats = (rows) => sizeStats(rows, denom);
       const merged = MERGED_LOCALES.map((g) => ({ name: g.name, s: stats(located.filter((r) => mergedLocale(r.Locale) === g.name)) }))
         .filter((g) => g.s.n);
       fill($("locale-merged-table"), merged, stats(located));
@@ -379,9 +377,11 @@
     $("size-missing").textContent = enrollCol
       ? `This tab needs ${missing}, which aren't available for ${current.name}.`
       : current.sizeNote || "This tab needs an “Enrollment” column in the data.";
-    $("size-missing").hidden = ok;
-    $("size-content").hidden = !ok;
-    if (!ok) return;
+    const anyEnroll = ok && current.rows.some((r) => toNumber(r[enrollCol]) > 0);
+    if (ok && !anyEnroll) $("size-missing").textContent = `No enrollment figures are available for ${current.name} yet, so its ${((current.recordLabel || cfg.recordLabel || "districts")).toLowerCase()} can't be grouped by size.`;
+    $("size-missing").hidden = ok && anyEnroll;
+    $("size-content").hidden = !(ok && anyEnroll);
+    if (!ok || !anyEnroll) return;
     const enroll = (r) => toNumber(r[enrollCol]);
     const rows = current.rows.filter((r) => !isNaN(enroll(r)));
     const range = (t) => (t.max == null ? `${t.min.toLocaleString()}+` : `${t.min.toLocaleString()}–${t.max.toLocaleString()}`);
@@ -390,7 +390,7 @@
     const all = sizeStats(rows, enrollCol);
     const label = ((current && current.recordLabel) || cfg.recordLabel || "records").toLowerCase();
     const left = current.rows.length - rows.length;
-    $("size-note").textContent = "Districts are grouped by student enrollment (2023)." +
+    $("size-note").textContent = (current.sizeYearNote || (current.parent && current.parent.sizeYearNote) || "Districts are grouped by student enrollment (2023).") +
       (left ? ` ${left.toLocaleString()} ${label} without an enrollment figure are left out of this tab.` : "");
 
     // This state's rules on recording or streaming meetings (state views only)
@@ -433,7 +433,7 @@
     statCard(overall, "Meetings per poverty point", fixed(all.perPovPoint, 3), "meeting-to-poverty-rate ratio");
 
     // Table
-    const cols = ["Tier", "Enrollment", "Districts", "With meetings", "Avg meetings",
+    const cols = ["Tier", "Enrollment", label[0].toUpperCase() + label.slice(1), "With meetings", "Avg meetings",
       "Poverty: with meetings", "Poverty: without", "Meetings per 10,000 students", "Meetings per poverty point"];
     const cells = (name, rng, s) => s.n ? [name, rng, s.n.toLocaleString(), `${pct(s.shareWith)} (${s.nWith})`, fixed(s.avgMeetings, 2),
       s.nWith ? `${pct(s.povWith)} (${s.nWith})` : "–", s.nWithout ? `${pct(s.povWithout)} (${s.nWithout})` : "–",

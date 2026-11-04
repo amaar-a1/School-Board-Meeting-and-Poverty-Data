@@ -123,6 +123,20 @@ window.SOURCES = [
   },
   {
     only: "Canada",
+    group: "Canada: enrollment",
+    items: [
+      { title: "Ontario: School Information and Student Demographics, 2024–25 (school enrolment summed by board; Ontario Data Catalogue)", url: "https://data.ontario.ca/dataset/school-information-and-student-demographics" },
+      { title: "Quebec: Évolution de l'effectif des centres de services scolaires et des commissions scolaires, September 2022 (Ministry of Education)", url: "https://cdn-contenu.quebec.ca/cdn-contenu/education/indicateurs-statistiques/Previsions_effectif_scolaire/Faits_saillants/evolution-effectif-scolaire.pdf" },
+      { title: "British Columbia: BC Schools – Student Headcount by Grade, 2025/26 public schools (DataBC)", url: "https://catalogue.data.gov.bc.ca/dataset/7114187e-305c-4a79-acbb-3294ba0f53c8" },
+      { title: "Alberta: student enrolment by school authority, 2024/25 (Alberta Open Data)", url: "https://open.alberta.ca/opendata/ccbcf0fb-615e-44a0-b7ec-681e2ea4e1e7" },
+      { title: "Manitoba: Enrolment Report, October 1, 2025 (Manitoba Education)", url: "https://www.edu.gov.mb.ca/k12/finance/sch_enrol/enrolment_2025.pdf" },
+      { title: "Nova Scotia: Public School Enrolment by RCE/CSAP and School, 2025–26 (Nova Scotia Open Data)", url: "https://data.novascotia.ca/Education/Nova-Scotia-Public-School-Enrolment-by-RCE-CSAP-and/cjnf-ywvt" },
+      { title: "New Brunswick: student enrolment by school and grade, 2024–25 (GNB open data)", url: "https://open.canada.ca/data/en/dataset/712e7355-91d7-7b4f-9d46-1e7b5561cd95" }
+    ],
+    note: "Saskatchewan's school list (with headcounts) couldn't be downloaded because its server's security certificate didn't check out, so Saskatchewan has no enrollment yet; Prince Edward Island, Newfoundland and Labrador and the territories don't publish board-level figures in these files. The years differ by province (see the Enrollment year column)."
+  },
+  {
+    only: "Canada",
     group: "Canada: board meetings",
     items: [
       { title: "Each board's own YouTube channel (listed in the “Meetings source” column)", url: "https://www.youtube.com/" },
