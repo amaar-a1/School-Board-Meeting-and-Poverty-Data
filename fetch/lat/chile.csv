@@ -1,0 +1,346 @@
+District,District ID
+Iquique,CL-01101
+Alto Hospicio,CL-01107
+Pozo Almonte,CL-01401
+Camiña,CL-01402
+Colchane,CL-01403
+Huara,CL-01404
+Pica,CL-01405
+Antofagasta,CL-02101
+Mejillones,CL-02102
+Sierra Gorda,CL-02103
+Taltal,CL-02104
+Calama,CL-02201
+Ollagüe,CL-02202
+San Pedro De Atacama,CL-02203
+Tocopilla,CL-02301
+María Elena,CL-02302
+Copiapó,CL-03101
+Caldera,CL-03102
+Tierra Amarilla,CL-03103
+Chañaral,CL-03201
+Diego De Almagro,CL-03202
+Vallenar,CL-03301
+Alto Del Carmen,CL-03302
+Freirina,CL-03303
+Huasco,CL-03304
+La Serena,CL-04101
+Coquimbo,CL-04102
+Andacollo,CL-04103
+La Higuera,CL-04104
+Paiguano,CL-04105
+Vicuña,CL-04106
+Illapel,CL-04201
+Canela,CL-04202
+Los Vilos,CL-04203
+Salamanca,CL-04204
+Ovalle,CL-04301
+Combarbalá,CL-04302
+Monte Patria,CL-04303
+Punitaqui,CL-04304
+Río Hurtado,CL-04305
+Valparaíso,CL-05101
+Casablanca,CL-05102
+Concón,CL-05103
+Juan Fernández,CL-05104
+Puchuncaví,CL-05105
+Quintero,CL-05107
+Viña Del Mar,CL-05109
+Isla De Pascua,CL-05201
+Los Andes,CL-05301
+Calle Larga,CL-05302
+Rinconada,CL-05303
+San Esteban,CL-05304
+La Ligua,CL-05401
+Cabildo,CL-05402
+Papudo,CL-05403
+Petorca,CL-05404
+Zapallar,CL-05405
+Quillota,CL-05501
+Calera,CL-05502
+Hijuelas,CL-05503
+La Cruz,CL-05504
+Nogales,CL-05506
+San Antonio,CL-05601
+Algarrobo,CL-05602
+Cartagena,CL-05603
+El Quisco,CL-05604
+El Tabo,CL-05605
+Santo Domingo,CL-05606
+San Felipe,CL-05701
+Catemu,CL-05702
+Llaillay,CL-05703
+Panquehue,CL-05704
+Putaendo,CL-05705
+Santa María,CL-05706
+Quilpué,CL-05801
+Limache,CL-05802
+Olmué,CL-05803
+Villa Alemana,CL-05804
+Rancagua,CL-06101
+Codegua,CL-06102
+Coinco,CL-06103
+Coltauco,CL-06104
+Doñihue,CL-06105
+Graneros,CL-06106
+Las Cabras,CL-06107
+Machalí,CL-06108
+Malloa,CL-06109
+Mostazal,CL-06110
+Olivar,CL-06111
+Peumo,CL-06112
+Pichidegua,CL-06113
+Quinta De Tilcoco,CL-06114
+Rengo,CL-06115
+Requínoa,CL-06116
+San Vicente,CL-06117
+Pichilemu,CL-06201
+La Estrella,CL-06202
+Litueche,CL-06203
+Marchihue,CL-06204
+Navidad,CL-06205
+Paredones,CL-06206
+San Fernando,CL-06301
+Chépica,CL-06302
+Chimbarongo,CL-06303
+Lolol,CL-06304
+Nancagua,CL-06305
+Palmilla,CL-06306
+Peralillo,CL-06307
+Placilla,CL-06308
+Pumanque,CL-06309
+Santa Cruz,CL-06310
+Talca,CL-07101
+Constitución,CL-07102
+Curepto,CL-07103
+Empedrado,CL-07104
+Maule,CL-07105
+Pelarco,CL-07106
+Pencahue,CL-07107
+Río Claro,CL-07108
+San Clemente,CL-07109
+San Rafael,CL-07110
+Cauquenes,CL-07201
+Chanco,CL-07202
+Pelluhue,CL-07203
+Curicó,CL-07301
+Hualañé,CL-07302
+Licantén,CL-07303
+Molina,CL-07304
+Rauco,CL-07305
+Romeral,CL-07306
+Sagrada Familia,CL-07307
+Teno,CL-07308
+Vichuquén,CL-07309
+Linares,CL-07401
+Colbún,CL-07402
+Longaví,CL-07403
+Parral,CL-07404
+Retiro,CL-07405
+San Javier,CL-07406
+Villa Alegre,CL-07407
+Yerbas Buenas,CL-07408
+Concepción,CL-08101
+Coronel,CL-08102
+Chiguayante,CL-08103
+Florida,CL-08104
+Hualqui,CL-08105
+Lota,CL-08106
+Penco,CL-08107
+San Pedro De La Paz,CL-08108
+Santa Juana,CL-08109
+Talcahuano,CL-08110
+Tomé,CL-08111
+Hualpén,CL-08112
+Lebu,CL-08201
+Arauco,CL-08202
+Cañete,CL-08203
+Contulmo,CL-08204
+Curanilahue,CL-08205
+Los Álamos,CL-08206
+Tirúa,CL-08207
+Los Ángeles,CL-08301
+Antuco,CL-08302
+Cabrero,CL-08303
+Laja,CL-08304
+Mulchén,CL-08305
+Nacimiento,CL-08306
+Negrete,CL-08307
+Quilaco,CL-08308
+Quilleco,CL-08309
+San Rosendo,CL-08310
+Santa Bárbara,CL-08311
+Tucapel,CL-08312
+Yumbel,CL-08313
+Alto Biobío,CL-08314
+Temuco,CL-09101
+Carahue,CL-09102
+Cunco,CL-09103
+Curarrehue,CL-09104
+Freire,CL-09105
+Galvarino,CL-09106
+Gorbea,CL-09107
+Lautaro,CL-09108
+Loncoche,CL-09109
+Melipeuco,CL-09110
+Nueva Imperial,CL-09111
+Padre Las Casas,CL-09112
+Perquenco,CL-09113
+Pitrufquén,CL-09114
+Pucón,CL-09115
+Saavedra,CL-09116
+Teodoro Schmidt,CL-09117
+Toltén,CL-09118
+Vilcún,CL-09119
+Villarrica,CL-09120
+Cholchol,CL-09121
+Angol,CL-09201
+Collipulli,CL-09202
+Curacautín,CL-09203
+Ercilla,CL-09204
+Lonquimay,CL-09205
+Los Sauces,CL-09206
+Lumaco,CL-09207
+Purén,CL-09208
+Renaico,CL-09209
+Traiguén,CL-09210
+Victoria,CL-09211
+Puerto Montt,CL-10101
+Calbuco,CL-10102
+Cochamó,CL-10103
+Fresia,CL-10104
+Frutillar,CL-10105
+Los Muermos,CL-10106
+Llanquihue,CL-10107
+Maullín,CL-10108
+Puerto Varas,CL-10109
+Castro,CL-10201
+Ancud,CL-10202
+Chonchi,CL-10203
+Curaco De Vélez,CL-10204
+Dalcahue,CL-10205
+Puqueldón,CL-10206
+Queilén,CL-10207
+Quellón,CL-10208
+Quemchi,CL-10209
+Quinchao,CL-10210
+Osorno,CL-10301
+Puerto Octay,CL-10302
+Purranque,CL-10303
+Puyehue,CL-10304
+Río Negro,CL-10305
+San Juan De La Costa,CL-10306
+San Pablo,CL-10307
+Chaitén,CL-10401
+Futaleufú,CL-10402
+Hualaihué,CL-10403
+Palena,CL-10404
+Coyhaique,CL-11101
+Lago Verde,CL-11102
+Aysén,CL-11201
+Cisnes,CL-11202
+Guaitecas,CL-11203
+Cochrane,CL-11301
+O’higgins,CL-11302
+Tortel,CL-11303
+Chile Chico,CL-11401
+Río Ibáñez,CL-11402
+Punta Arenas,CL-12101
+Laguna Blanca,CL-12102
+Río Verde,CL-12103
+San Gregorio,CL-12104
+Cabo De Hornos,CL-12201
+Porvenir,CL-12301
+Primavera,CL-12302
+Timaukel,CL-12303
+Natales,CL-12401
+Torres Del Paine,CL-12402
+Santiago,CL-13101
+Cerrillos,CL-13102
+Cerro Navia,CL-13103
+Conchalí,CL-13104
+El Bosque,CL-13105
+Estación Central,CL-13106
+Huechuraba,CL-13107
+Independencia,CL-13108
+La Cisterna,CL-13109
+La Florida,CL-13110
+La Granja,CL-13111
+La Pintana,CL-13112
+La Reina,CL-13113
+Las Condes,CL-13114
+Lo Barnechea,CL-13115
+Lo Espejo,CL-13116
+Lo Prado,CL-13117
+Macul,CL-13118
+Maipú,CL-13119
+Ñuñoa,CL-13120
+Pedro Aguirre Cerda,CL-13121
+Peñalolén,CL-13122
+Providencia,CL-13123
+Pudahuel,CL-13124
+Quilicura,CL-13125
+Quinta Normal,CL-13126
+Recoleta,CL-13127
+Renca,CL-13128
+San Joaquín,CL-13129
+San Miguel,CL-13130
+San Ramón,CL-13131
+Vitacura,CL-13132
+Puente Alto,CL-13201
+Pirque,CL-13202
+San José De Maipo,CL-13203
+Colina,CL-13301
+Lampa,CL-13302
+Tiltil,CL-13303
+San Bernardo,CL-13401
+Buin,CL-13402
+Calera De Tango,CL-13403
+Paine,CL-13404
+Melipilla,CL-13501
+Alhué,CL-13502
+Curacaví,CL-13503
+María Pinto,CL-13504
+San Pedro,CL-13505
+Talagante,CL-13601
+El Monte,CL-13602
+Isla De Maipo,CL-13603
+Padre Hurtado,CL-13604
+Peñaflor,CL-13605
+Valdivia,CL-14101
+Corral,CL-14102
+Lanco,CL-14103
+Los Lagos,CL-14104
+Máfil,CL-14105
+Mariquina,CL-14106
+Paillaco,CL-14107
+Panguipulli,CL-14108
+La Unión,CL-14201
+Futrono,CL-14202
+Lago Ranco,CL-14203
+Río Bueno,CL-14204
+Arica,CL-15101
+Camarones,CL-15102
+Putre,CL-15201
+General Lagos,CL-15202
+Chillán,CL-16101
+Bulnes,CL-16102
+Chillán Viejo,CL-16103
+El Carmen,CL-16104
+Pemuco,CL-16105
+Pinto,CL-16106
+Quillón,CL-16107
+San Ignacio,CL-16108
+Yungay,CL-16109
+Quirihue,CL-16201
+Cobquecura,CL-16202
+Coelemu,CL-16203
+Ninhue,CL-16204
+Portezuelo,CL-16205
+Ránquil,CL-16206
+Treguaco,CL-16207
+San Carlos,CL-16301
+Coihueco,CL-16302
+Ñiquén,CL-16303
+San Fabián,CL-16304
+San Nicolás,CL-16305
