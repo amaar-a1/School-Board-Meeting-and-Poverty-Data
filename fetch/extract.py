@@ -1,14 +1,7 @@
-# Temporary: list every video title on the Nordic/Dutch channels that had a loose match, for a strict recount.
-import json, os, subprocess, sys, time
+# Temporary: German district and city councils on YouTube (council and school-committee meetings).
+import os, subprocess, sys
 subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-U", "yt-dlp"], check=True)
-OUT = "fetch/out/nordic_yt2"; os.makedirs(OUT, exist_ok=True)
-res = {}
-for url in json.load(open("fetch/yt_channels.json")):
-    titles = []
-    for tab in ("/videos", "/streams"):
-        r = subprocess.run([sys.executable, "-m", "yt_dlp", "--flat-playlist", "-J", "--no-warnings", url + tab], capture_output=True, text=True, timeout=600)
-        if r.returncode == 0:
-            titles += [e.get("title") or "" for e in json.loads(r.stdout).get("entries") or []]
-        time.sleep(1)
-    res[url] = titles
-    json.dump(res, open(f"{OUT}/titles.json", "w"), ensure_ascii=False)
+OUT = "fetch/out/de_yt"; os.makedirs(OUT, exist_ok=True)
+r = subprocess.run([sys.executable, "fetch/nordic_youtube.py", OUT, "DE"], capture_output=True, text=True, timeout=19000,
+                   env={**os.environ, "NORDIC_DATA": "fetch/de", "EXTRA_Q_DE": "{} Stadtrat Sitzung|{} Schulausschuss"})
+open(f"{OUT}/log.txt", "w").write(r.stdout[-20000:] + "\n---\n" + r.stderr[-3000:])

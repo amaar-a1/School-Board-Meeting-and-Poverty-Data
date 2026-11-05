@@ -8,7 +8,7 @@ Usage: python3 nordic_youtube.py OUTDIR [CC ...]   (writes OUTDIR/{cc}_youtube.c
 """
 import csv, json, os, re, subprocess, sys, threading, time, unicodedata
 
-TR = str.maketrans({"ø": "o", "Ø": "o", "æ": "ae", "Æ": "ae", "đ": "d", "ŋ": "n", "ŧ": "t"})
+TR = str.maketrans({"ø": "o", "Ø": "o", "æ": "ae", "Æ": "ae", "đ": "d", "ŋ": "n", "ŧ": "t", "þ": "th", "Þ": "th", "ð": "d", "Ð": "d"})
 C = {
     "NO": dict(file="norway", q="{} kommune kommunestyre møte", chan=r"kommune|kommunestyre|kommunestyret|kommunal|politikk",
                edu=r"oppvekst|skole|utdanning|barn og unge|levek[aå]r|kultur og oppvekst|helse og oppvekst",
@@ -22,11 +22,17 @@ C = {
     "DK": dict(file="denmark", q="{} kommune byrådsmøde", chan=r"kommune|byr[aå]d|kommunalbestyrelse",
                edu=r"b[øo]rn|skole|uddannelse|unge|dagtilbud",
                meet=r"udvalg|m[øo]de|byr[aå]d"),
+    # Iceland: councils (bæjarstjórn, sveitarstjórn, borgarstjórn) and education committees (fræðsluráð, skólanefnd).
+    "IS": dict(file="iceland", q="{} bæjarstjórnarfundur", chan=r"b[æa]r|borg|hreppur|sveitarf[ée]lag|bygg[dð]|kaupsta[dð]|stj[óo]rn",
+               edu=r"fr[æa]ðslu|sk[óo]la|mennta|fr[íi]stund", meet=r"fund|stj[óo]rn|nefnd|r[áa]ð"),
+    # Germany: district councils (Kreistag) and city councils, and their school committees (Schulausschuss).
+    "DE": dict(file="germany", q="{} Kreistag Sitzung", chan=r"kreis|stadt|kreistag|landratsamt|rat\b|region|städteregion|bürgerschaft|abgeordnetenhaus",
+               edu=r"schul|bildung", meet=r"ausschuss|sitzung|kreistag|stadtrat|ratssitzung|stadtverordnet|bürgerschaft"),
     "NL": dict(file="netherlands", q="gemeente {} raadsvergadering", chan=r"gemeente|gemeenteraad|raad|griffie",
                edu=r"onderwijs|jeugd|school|kind",
                meet=r"commissie|raad|vergadering|beeldvorm|oordeelvorm"),
 }
-GENERIC = set("kommune kommun kunta kaupunki stad gemeente municipality the og och ja en de het".split())
+GENERIC = set("kommune kommun kunta kaupunki stad gemeente municipality the og och ja en de het city district stadt kreis landkreis".split())
 ANY_MEET = {cc: re.compile(c["meet"], re.I) for cc, c in C.items()}
 
 
@@ -51,10 +57,21 @@ def names(name):
     return [p.strip() for p in re.split(r"/| - ", base) if p.strip()]
 
 
+IS_SUFFIX = r"(urborg|borg|arkaupsta[dð]ur|kaupsta[dð]ur|arb[æa]r|sb[æa]r|b[æa]r|hreppur|sveitarf[ée]lag|bygg[dð])$"
+
+
 def is_channel_for(cc, name, channel):
     if not re.search(C[cc]["chan"], channel, re.I):
         return False
     have = words(channel)
+    if cc == "IS":   # "Hafnarfjarðarkaupstaður" posts as "Hafnarfjarðarbær": compare the stem before the suffix
+        main = [w for w in name.split() if not re.match(r"sveitarf[ée]lag", w, re.I)] or name.split()
+        stem = words(re.sub(IS_SUFFIX, "", main[0], flags=re.I))
+        stem = stem[0] if stem else ""
+        if len(stem) < 4:   # "Árborg": the suffix is most of the name, so match the whole word
+            whole = words(main[0])
+            return bool(whole) and whole[0] in have
+        return any(h.startswith(stem[:max(4, len(stem) - 1)]) for h in have)
     for n in names(name):
         want = [w for w in words(n) if w not in GENERIC] or words(n)
         # "Københavns Kommune" matches "København"; Finnish channels use the genitive ("Helsingin kaupunki").
@@ -77,9 +94,10 @@ def run(cc, outdir):
             out = [r["District ID"], name, "", "", "", "", "", ""]
             try:
                 chans = {}
-                for e in ytdlp(f"ytsearch15:{c['q'].format(' '.join(names(name)))}").get("entries") or []:
-                    if e.get("channel_url") and e.get("channel"):
-                        chans[e["channel_url"]] = e["channel"]
+                for q in [c["q"]] + [x for x in os.environ.get(f"EXTRA_Q_{cc}", "").split("|") if x]:
+                    for e in ytdlp(f"ytsearch15:{q.format(' '.join(names(name)))}").get("entries") or []:
+                        if e.get("channel_url") and e.get("channel"):
+                            chans[e["channel_url"]] = e["channel"]
                 exact = lambda ch: any(all(w in words(ch) for w in words(n)) for n in names(name))
                 pick = sorted([(u, ch) for u, ch in chans.items() if is_channel_for(cc, name, ch)], key=lambda x: not exact(x[1]))
                 if pick:
@@ -96,6 +114,7 @@ def run(cc, outdir):
                         t = [v for v in m if edu.search(v)]
                         uniq = {re.sub(r"\b(del|osa|deel|part)\s*\d+\b|\(\d\)", "", v, flags=re.I).strip().lower() for v in t}
                         seen[url] = (len(uniq), len(m), t[:3])
+                        TITLES[url] = vids
                     n, nm, ex = seen[url]
                     out[2:7] = [chan, url, n, nm, " / ".join(ex)]
             except Exception as e:
@@ -107,7 +126,10 @@ def run(cc, outdir):
             time.sleep(1.5)
 
 
+TITLES = {}   # channel URL -> every video title, for a strict recount (written to OUTDIR/titles.json)
+
 if __name__ == "__main__":
     outdir = sys.argv[1]; os.makedirs(outdir, exist_ok=True)
     ts = [threading.Thread(target=run, args=(cc, outdir)) for cc in (sys.argv[2:] or list(C))]
     [t.start() for t in ts]; [t.join() for t in ts]
+    json.dump(TITLES, open(os.path.join(outdir, "titles.json"), "w", encoding="utf-8"), ensure_ascii=False)
