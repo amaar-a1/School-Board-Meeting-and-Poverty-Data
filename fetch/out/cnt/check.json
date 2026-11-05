@@ -1,0 +1,8 @@
+{
+ "https://api.counterapi.dev/v1/sbmpd-test-check/visitors/up": {
+  "error": "HTTP Error 410: Gone"
+ },
+ "https://api.counterapi.dev/v1/sbmpd-test-check/visitors/": {
+  "error": "HTTP Error 410: Gone"
+ }
+}
