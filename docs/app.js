@@ -2,6 +2,7 @@
   const cfg = window.SITE_CONFIG;
   const $ = (id) => document.getElementById(id);
   let datasets = [];   // [{ name, columns, rows, numeric: Set }]
+  let booted = false;   // set once the first view is shown, so loading doesn't rewrite a shared link
   let combined = null; // the "All" view: every data set's rows in shared columns (see cfg.combined)
   let current = null;
   let sort = { col: null, dir: 1 };
@@ -48,9 +49,36 @@
     return { ...opts, name, columns, rows, numeric, percent };
   }
 
+  // Each data set's own poverty column (the measures differ from country to country).
+  const RANK = "Poverty rank in country";
+  function povColumn(d) {
+    if (d.simple) return d.simple.pov;
+    return { CA: "Percentage of Children Ages 0-17 in Low Income", UK: "Percentage of Children Under 16 in Low Income",
+      IE: "Poverty rate (region, all ages)", FR: "Unemployment rate (stand-in for poverty)" }[d.country] || "Percentage of Children Ages 5-17 in Poverty";
+  }
+
+  // A comparable poverty figure across countries: where each place falls among the places in its own
+  // country (0 = lowest poverty, 100 = highest), using the country's own measure. For the islands and
+  // microstates, which are each one place, it's the rank among them all.
+  function addRanks(d) {
+    const col = povColumn(d);
+    const vals = d.rows.map((r) => toNumber(r[col])).filter((v) => !isNaN(v)).sort((a, b) => a - b);
+    if (vals.length < 3) return;
+    const below = (v) => { let lo = 0, hi = vals.length; while (lo < hi) { const m = (lo + hi) >> 1; if (vals[m] < v) lo = m + 1; else hi = m; } return lo; };
+    const upto = (v) => { let lo = 0, hi = vals.length; while (lo < hi) { const m = (lo + hi) >> 1; if (vals[m] <= v) lo = m + 1; else hi = m; } return lo; };
+    d.rows.forEach((r) => {
+      const v = toNumber(r[col]);
+      r[RANK] = isNaN(v) ? "" : String(Math.round(((below(v) + upto(v)) / 2) / vals.length * 100));
+    });
+    const at = d.columns.indexOf(col);
+    if (!d.columns.includes(RANK)) d.columns.splice(at >= 0 ? at + 1 : d.columns.length, 0, RANK);
+    d.numeric.add(RANK);
+  }
+
   async function load() {
     try {
       datasets = await Promise.all(cfg.dataFiles.map(async (d) => parse(d.name, await fetchCsv(d.file), d)));
+      datasets.forEach(addRanks);
       datasets.forEach((d) => {
         if (!d.note) return;
         const withMeetings = d.rows.filter((r) => toNumber(r[cmpFor(d).by]) > 0).length;
@@ -66,8 +94,19 @@
     renderTabs();
     renderCoverage();
     setupFilters();
-    window.SiteData = { datasets, combined, config: cfg, setView, select: (key) => selectDataset(key ? stateDataset(key) : datasets.find((d) => d.name === cfg.perState.from)) };
-    selectDataset(datasets.find((d) => d.name === (cfg.perState && cfg.perState.from)) || datasets[0]);
+    window.SiteData = { datasets, combined, config: cfg, setView, keyOf, fromKey,
+      select: (key, keepPlace) => selectDataset((key && fromKey(key)) || datasets.find((d) => d.name === cfg.perState.from), keepPlace) };
+    // A shared link opens its view (and, with ?place=, zooms the map to that place).
+    const q = new URLSearchParams(location.search);
+    const start = fromKey(q.get("d")) || datasets.find((d) => d.name === (cfg.perState && cfg.perState.from)) || datasets[0];
+    selectDataset(start, true);
+    booted = true;
+    const place = q.get("place");
+    if (place) {
+      setView("map");
+      history.replaceState(null, "", `${location.pathname}${location.search}#map`);
+      if (window.SiteMap) window.SiteMap.show(current, datasets), window.SiteMap.focus(place);
+    }
   }
 
   // The "All" view: US districts, territory school systems and Canadian boards in one table, with
@@ -82,7 +121,7 @@
         District: r.District, Country: d.country === "ISLE" ? r.District : d.name, "State or province": sp.place ? r[sp.place] : "",
         "Available Board Meetings": r["Available Board Meetings"] ?? "",
         [c.metric]: pct(r[sp.pov]), "Poverty measure": sp.measureColumn ? r[sp.measureColumn] : sp.measure, Children: r[sp.children] ?? "", Enrollment: r.Enrollment ?? "",
-        Locale: r.Locale ? `${d.localePrefix || d.name}: ${r.Locale}` : "", "Other Board Meetings": "", "District ID": r["District ID"]
+        Locale: r.Locale ? `${d.localePrefix || d.name}: ${r.Locale}` : "", "Other Board Meetings": "", [RANK]: r[RANK] ?? "", "District ID": r["District ID"]
       });
       out.push({
         District: r.District,
@@ -97,6 +136,7 @@
         // Canada's locales are estimates, not NCES types, so they stay separate groups here.
         Locale: r.Locale && (ca || uk || ie) ? `${ca ? "Canada" : uk ? "UK" : "Ireland"}: ${r.Locale}` : r.Locale ?? "",
         "Other Board Meetings": r["Other Board Meetings"] ?? "",   // DC, Hawaiʻi and Vermont boards' own sites
+        [RANK]: r[RANK] ?? "",
         "District ID": r["District ID"]
       });
     }));
@@ -226,10 +266,39 @@
     });
     sel.addEventListener("change", () => { if (sel.value) selectDataset(stateDataset(sel.value)); });
     tabs.appendChild(sel);
+    const share = document.createElement("button");
+    share.type = "button";
+    share.className = "share-button";
+    share.textContent = "Copy link";
+    share.title = "Copy a link to this view";
+    share.addEventListener("click", async () => {
+      try { await navigator.clipboard.writeText(location.href); share.textContent = "Link copied"; }
+      catch (e) { window.prompt("Copy this link:", location.href); }
+      setTimeout(() => { share.textContent = "Copy link"; }, 2000);
+    });
+    tabs.appendChild(share);
   }
 
-  function selectDataset(ds) {
+  // Shareable links: ?d=<view>&place=<District ID>#<tab>. The view key is "US", a state code ("OH"),
+  // a country code ("CA", "NO", "ISLE"), a region of one ("CA:ON", "DE:BY"), "territories" or "ALL".
+  const keyOf = (ds) => (!ds ? "" : ds.combined ? "ALL" : ds.state ? ds.state : ds.country || "US");
+  function fromKey(key) {
+    if (!key) return null;
+    if (key === "ALL") return combined;
+    if (key === "US") return datasets.find((d) => d.name === cfg.perState.from);
+    return datasets.find((d) => d.country === key && !d.state) || stateDataset(key);
+  }
+  function setUrl(params) {
+    const q = new URLSearchParams(location.search);
+    Object.entries(params).forEach(([k, v]) => (v ? q.set(k, v) : q.delete(k)));
+    const s = q.toString();
+    history.replaceState(null, "", `${location.pathname}${s ? `?${s.replace(/%3A/g, ":")}` : ""}${location.hash}`);
+  }
+  window.SiteLinks = { place: (id) => setUrl({ place: id }), set: setUrl };
+
+  function selectDataset(ds, keepPlace) {
     current = ds;
+    if (booted) setUrl(keepPlace ? { d: keyOf(ds) } : { d: keyOf(ds), place: "" });
     sort = { col: null, dir: 1 };
     const sel = $("state-select");
     document.querySelectorAll(".country-button").forEach((b) => b.setAttribute("aria-selected", String(!current.state && b.dataset.name === current.name)));
@@ -573,6 +642,48 @@
         (missing ? ` · ${missing.toLocaleString()} without a figure` : ""));
     });
     renderCompare();
+    renderByCountry();
+  }
+
+  // Pearson correlation and a plain-language description of its strength.
+  function correlation(pairs) {
+    const p = pairs.filter(([a, b]) => isFinite(a) && isFinite(b));
+    const n = p.length;
+    if (n < 3) return null;
+    const mx = p.reduce((t, [a]) => t + a, 0) / n, my = p.reduce((t, [, b]) => t + b, 0) / n;
+    let sxx = 0, syy = 0, sxy = 0;
+    p.forEach(([a, b]) => { sxx += (a - mx) ** 2; syy += (b - my) ** 2; sxy += (a - mx) * (b - my); });
+    if (!sxx || !syy) return { n, r: NaN, words: "no variation" };
+    const r = sxy / Math.sqrt(sxx * syy), a = Math.abs(r);
+    const words = a < 0.1 ? "no clear relationship" : `${a < 0.3 ? "weak" : a < 0.5 ? "moderate" : "strong"} ${r > 0 ? "positive" : "negative"}`;
+    return { n, r, words };
+  }
+
+  // "All" view: for each country, how poverty (its rank within the country) relates to meetings.
+  function renderByCountry() {
+    const el = $("by-country");
+    el.hidden = !(current && current.combined);
+    if (el.hidden) return;
+    const by = {};
+    current.rows.forEach((r) => { (by[r.Country] = by[r.Country] || []).push(r); });
+    // The islands are each their own "country": group them together.
+    const islands = datasets.find((d) => d.country === "ISLE");
+    const islandNames = new Set(islands ? islands.rows.map((r) => r.District) : []);
+    const groups = {};
+    Object.entries(by).forEach(([c, rows]) => { const k = islandNames.has(c) ? "Islands and microstates" : c; (groups[k] = groups[k] || []).push(...rows); });
+    const t = $("by-country-table");
+    t.tHead.innerHTML = "<tr><th>Country</th><th class=\"num\">Places</th><th class=\"num\">With meetings</th><th class=\"num\">Avg meetings</th><th class=\"num\">Correlation (r)</th><th>Relationship</th></tr>";
+    const body = t.tBodies[0];
+    body.innerHTML = "";
+    Object.entries(groups).sort((a, b) => b[1].length - a[1].length).forEach(([c, rows]) => {
+      const m = rows.map((r) => toNumber(r["Available Board Meetings"]) || 0);
+      const withM = m.filter((v) => v > 0).length;
+      const cor = withM ? correlation(rows.map((r, i) => [toNumber(r[RANK]), m[i]])) : null;
+      const tr = body.insertRow();
+      [c, rows.length.toLocaleString(), `${(100 * withM / rows.length).toFixed(1)}% (${withM.toLocaleString()})`, (m.reduce((a, b) => a + b, 0) / rows.length).toFixed(2),
+        cor && isFinite(cor.r) ? cor.r.toFixed(2) : "–", !withM ? "No meetings found" : cor ? cor.words : "Too few places"]
+        .forEach((v, i) => { const td = tr.insertCell(); td.textContent = v; if (i && i < 5) td.className = "num"; });
+    });
   }
 
   const canCompare = () => { const c = cmpFor(current); return c && current.numeric.has(c.by) && current.numeric.has(c.metric); };
@@ -724,7 +835,7 @@
         borderDash: opts.dash || [], pointRadius: 0, pointHoverRadius: 0, fill: false, order: 0 },
       subtitle: [
         `${opts.title || "Line of best fit"}: ${yName} = ${sig(m)} × ${xName} ${b < 0 ? "−" : "+"} ${sig(Math.abs(b))}`,
-        `R² ${r2 > 0 && r2 < 0.001 ? "< 0.001" : `= ${r2.toFixed(3)}`} (0 = no fit, 1 = perfect fit) · ${n.toLocaleString()} ${((current && current.recordLabel) || cfg.recordLabel || "points").toLowerCase()}`
+        `R² ${r2 > 0 && r2 < 0.001 ? "< 0.001" : `= ${r2.toFixed(3)}`} (0 = no fit, 1 = perfect fit) · correlation r = ${(Math.sign(m) * Math.sqrt(r2)).toFixed(2)}, ${(correlation(pts.map((q) => [q.x, q.y])) || {}).words || ""} · ${n.toLocaleString()} ${((current && current.recordLabel) || cfg.recordLabel || "points").toLowerCase()}`
       ]
     };
   }

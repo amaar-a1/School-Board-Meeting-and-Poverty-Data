@@ -168,3 +168,5 @@ footer { padding: 8px 16px 40px; font-size: .85rem; }
 
 /* Coverage line under the site title: countries, territories, districts and visitors. */
 .coverage { margin: 0.25rem 0 0.5rem; font-weight: 600; opacity: 0.9; }
+
+.share-button { margin-left: 0.5rem; }

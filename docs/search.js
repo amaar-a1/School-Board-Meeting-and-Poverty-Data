@@ -17,8 +17,10 @@
     const { datasets, config } = window.SiteData;
     names = config.perState.names;
     datasets.forEach((ds) => ds.rows.forEach((r) => {
-      const place = r.State ? names[r.State] : r.Territory;
-      index.push({ row: r, terr: !r.State, label: [r.County, r.State || r.Territory].filter(Boolean).join(", "),
+      const other = ds.country && ds.country !== "US";   // another country's data set
+      const region = r.Province || r.Nation || r.Region || r.State || r.Territory || "";
+      const place = other ? [region !== r.District ? region : "", ds.country === "ISLE" ? "" : ds.name].filter(Boolean).join(", ") : r.State ? names[r.State] : r.Territory;
+      index.push({ row: r, ds, terr: !other && !r.State, label: other ? place : [r.County, r.State || r.Territory].filter(Boolean).join(", "),
         text: norm(`${r.District} ${r.County || ""} ${r.State || ""} ${place || ""}`), size: num(r.Enrollment) || 0 });
     }));
     const box = $("find-input");
@@ -73,14 +75,18 @@
     hide();
     const r = picked.row;
     $("find-input").value = r.District;
-    const pov = num(r[POV]), meet = num(r[MEET]), enr = num(r.Enrollment), kids = num(r["Children Ages 5-17"]);
+    const povCol = [POV, "Percentage of Children Ages 0-17 in Low Income", "Percentage of Children Under 16 in Low Income", "Percentage of Children in Low Income",
+      "Poverty rate or stand-in", "Poverty rate (region, all ages)", "Unemployment rate (stand-in for poverty)"].find((c) => String(r[c] ?? "").trim() !== "");
+    const us = povCol === POV;
+    const pov = num(r[povCol]), meet = num(r[MEET]), enr = num(r.Enrollment), kids = num(r["Children Ages 5-17"]);
     const note = [r.Notes || r["Poverty figures"], r["Other meetings source"] && `Other meetings: ${r["Other meetings source"]}`].filter(Boolean).join(". ");
-    const where = picked.terr ? "the U.S. territories" : names[r.State];
+    const where = picked.ds.country && picked.ds.country !== "US" ? (picked.ds.button || picked.ds.name) : picked.terr ? "the U.S. territories" : names[r.State];
+    const povLabel = us ? "Child poverty (ages 5–17)" : r["Poverty measure"] || picked.ds.simple && picked.ds.simple.measure ? "Poverty (its country's own measure)" : povCol;
     $("find-card").innerHTML =
       `<div class="find-head"><div><h2>${esc(r.District)}</h2><p class="muted">${esc(picked.label)}</p></div>` +
       `<button type="button" class="find-close" data-act="close" aria-label="Close">×</button></div>` +
       `<div class="stats compare">` +
-      stat("Child poverty (ages 5–17)", isNaN(pov) ? "–" : `${pov.toFixed(1)}%`, kids > 0 ? `${num(r["Children Ages 5-17 in Poverty"]).toLocaleString()} of ${kids.toLocaleString()} children` : "") +
+      stat(povLabel, isNaN(pov) ? "–" : `${pov.toFixed(1)}%`, us && kids > 0 ? `${num(r["Children Ages 5-17 in Poverty"]).toLocaleString()} of ${kids.toLocaleString()} children` : String(r["Poverty rank in country"] ?? "") !== "" ? `rank ${r["Poverty rank in country"]} of 100 in its country` : "") +
       stat("Available board meetings", isNaN(meet) ? "0" : meet.toLocaleString(), isNaN(meet) ? "no school board" : r.State ? "on CivicSearch" : "") +
       (num(r["Other Board Meetings"]) > 0 ? stat("Board meetings from other sources", num(r["Other Board Meetings"]).toLocaleString(), "not CivicSearch; see note") : "") +
       stat("Enrollment", isNaN(enr) ? "–" : enr.toLocaleString(), isNaN(enr) ? "not reported" : "students") +
@@ -101,7 +107,9 @@
     if (!act || !picked) return;
     const sd = window.SiteData, r = picked.row;
     if (act === "close") { $("find-card").hidden = true; return; }
-    sd.select(picked.terr ? "territories" : r.State);
+    const key = picked.ds.country && picked.ds.country !== "US" ? sd.keyOf(picked.ds) : picked.terr ? "territories" : r.State;
+    sd.select(key);
+    if (act !== "close" && window.SiteLinks) window.SiteLinks.place(r["District ID"]);
     if (act === "map") {
       sd.setView("map");
       history.replaceState(null, "", "#map");

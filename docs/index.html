@@ -90,6 +90,12 @@
       <div id="compare-body" class="stats compare"></div>
     </section>
 
+    <section id="by-country" class="card" hidden>
+      <h2>Poverty and meetings, country by country</h2>
+      <p class="note">Each country uses its own poverty measure, so the comparison is within each country: the correlation between a place's poverty rank in its country and its meeting count. Positive means poorer places have more meetings; near 0 means no relationship.</p>
+      <div class="table-wrap"><table id="by-country-table" class="data-table"><thead></thead><tbody></tbody></table></div>
+    </section>
+
     <section id="chart-section" class="card" hidden>
       <div class="card-head">
         <h2>Chart</h2>
@@ -237,6 +243,7 @@
               <select id="map-metric">
                 <option value="poverty">Child poverty rate</option>
                 <option value="meetings">Available board meetings</option>
+                <option value="rank">Poverty rank within its country</option>
               </select>
             </label>
             <label>Go to <select id="map-jump"></select></label>

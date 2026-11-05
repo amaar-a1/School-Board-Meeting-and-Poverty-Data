@@ -56,6 +56,13 @@
       colors: ["#fef0d9", "#fdd49e", "#fdbb84", "#fc8d59", "#e34a33", "#b30000"],
       labels: ["Under 10%", "10–15%", "15–20%", "20–25%", "25–30%", "30% or more"]
     },
+    // Comparable across countries: where a place falls among its own country's places (app.js adds it).
+    rank: {
+      column: "Poverty rank in country",
+      breaks: [20, 40, 60, 80],
+      colors: ["#f2f0f7", "#cbc9e2", "#9e9ac8", "#756bb1", "#54278f"],
+      labels: ["Lowest fifth (0–19)", "20–39", "40–59", "60–79", "Highest fifth (80–100)"]
+    },
     meetings: {
       column: "Available Board Meetings",
       breaks: [1, 5, 15, 30],
@@ -183,7 +190,7 @@
         : `${ukPov ? "Children under 16 in low income" : eu === "ISLE" ? esc(r["Poverty measure"] || "Poverty") : eu ? `Children in low income (${{ NO: "0–17, 2022–24", SE: "0–19, 2024", FI: "under 18", DK: "0–17, 50% line, 2024", NL: "CBS, 2024", DE: "under 15 on SGB II benefits, 2023", NZ: "60% line, 2025", IS: "national rate", CH: "0–17 on social assistance" }[eu]})` : "Child poverty"}: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>`) +
       `Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}` +
       (toNumber(r["Other Board Meetings"]) > 0 ? ` on CivicSearch; ${toNumber(r["Other Board Meetings"]).toLocaleString()} from other sources (see note)` : "") + `<br>` +
-      `Enrollment: ${isNaN(enr) ? "not reported" : enr.toLocaleString()}` +
+      `Enrollment: ${isNaN(enr) ? "not reported" : enr.toLocaleString()}` + rankLine(r) +
       (r.Locale ? `<br>Locale${/^(UK|IE)-/.test(r["District ID"]) || eu ? " (estimated)" : ""}: ${esc(r.Locale)}` : "") +
       (note ? `<div class="tip-note">${esc(note)}</div>` : "") + "</div>";
   }
@@ -208,9 +215,12 @@
       `Children (0–17) in low income: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}${r.pseudo && !r.own ? " (province-wide rate)" : ""}<br>` +
       `Board meetings found: ${isNaN(meet) ? 0 : meet.toLocaleString()}` +
       (toNumber(r.Enrollment) > 0 ? `<br>Enrollment: ${toNumber(r.Enrollment).toLocaleString()} (${esc(r["Enrollment year"])}${r["Enrollment note"] ? `; ${esc(r["Enrollment note"])}` : ""})` : "") +
-      (r.Locale ? `<br>Locale (estimated): ${esc(r.Locale)}` : "") +
+      (r.Locale ? `<br>Locale (estimated): ${esc(r.Locale)}` : "") + rankLine(r) +
       (note ? `<div class="tip-note">${esc(note)}</div>` : "") + "</div>";
   }
+
+  const rankLine = (r) => (String(r["Poverty rank in country"] ?? "") !== ""
+    ? `<br>Poverty rank in its country: ${esc(r["Poverty rank in country"])} of 100 (100 = highest)` : "");
 
   const ukView = () => current && (current.country === "UK" || (current.parent && current.parent.country === "UK"));
 
@@ -238,6 +248,8 @@
       items.push(`<span class="map-faded">UK: children under 16 in relative low income (DWP, 2024–25), not the same measure as the US or Canadian rates</span>`);
     if (ca && $("map-metric").value === "poverty") items.push(`<span class="map-faded">${current.combined ? "Canadian boards" : "Canada"}: share of children 0–17 in low income (LIM-AT, 2020), not the same measure as the US child poverty rate</span>`);
     if (window.SiteFilters && window.SiteFilters.active()) faded.push("that don't match the filters");
+    if ($("map-metric").value === "rank")
+      items.push(`<span class="map-faded">Rank within each country: where a place's poverty figure falls among its own country's places, so colours compare across countries even though the measures differ</span>`);
     items.push(`<span><i style="background:${WORLD_STYLE.fillColor};border:1px solid ${WORLD_STYLE.color}"></i>Country not covered on this site</span>`);
     if (faded.length) items.push(`<span class="map-faded">Faded: districts ${faded.join(" or ")}</span>`);
     $("map-legend").innerHTML = items.join("");
@@ -475,6 +487,8 @@
 
   function focusEntry(e) {
     if (!e) return;
+    const id = e.row && e.row["District ID"];
+    if (id && window.SiteLinks) window.SiteLinks.place(id);
     hideResults();
     $("map-search").value = e.name;
     [["scsd", "map-secondary"], ["canada2", "map-canada-overlap"]].forEach(([n, box]) => {
@@ -497,7 +511,7 @@
     rowFor: (geoid) => rowFor(geoid),
     restyle: () => { if (map) restyle(); },
     // Zooms to and outlines a district by its District ID (used by the site-wide search).
-    focus: (id) => loading && loading.then(() => { map.invalidateSize(); focusEntry(byId.get(id)); }),
+    focus: (id) => loading && loading.then(() => { map.invalidateSize(); focusEntry(byId.get(id) || [...byId.values()].find((g) => g.row && g.row["District ID"] === id)); }),
     show(ds, datasets) {
       current = ds;
       if (!loading) {
