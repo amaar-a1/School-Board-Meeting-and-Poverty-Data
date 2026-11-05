@@ -1,0 +1,17 @@
+ok 1889 https://www.geoboundaries.org/api/current/gbOpen/CHL/ADM3/
+CHL ADM3 Chile 345 https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CHL/ADM3/geoBoundaries-CHL-ADM3_simplified.geojson
+ok 10859002 https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09592ced973a3448cf66b6100b741b64c0d/releaseData/gbOpen/CHL/ADM3/geoBoundaries-CHL-ADM3_simplified.geojson
+ok 1920 https://www.geoboundaries.org/api/current/gbOpen/PHL/ADM3/
+PHL ADM3 Philippines 1647 https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PHL/ADM3/geoBoundaries-PHL-ADM3_simplified.geojson
+ok 7071267 https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09592ced973a3448cf66b6100b741b64c0d/releaseData/gbOpen/PHL/ADM3/geoBoundaries-PHL-ADM3_simplified.geojson
+ok 17647 https://observatorio.ministeriodesarrollosocial.gob.cl/pobreza-comunal
+ok 20520 https://observatorio.ministeriodesarrollosocial.gob.cl/pobreza-comunal-2022
+ok 117950 https://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/pobreza-comunal/2022/Estimaciones_Indice_Pobreza_Multidimensional_Comunas_2022.xlsx
+ok 53824 https://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/pobreza-comunal/2022/Estimaciones_Tasa_Pobreza_Ingresos_Comunas_2022.xlsx
+FAIL https://datosabiertos.mineduc.cl/matricula-en-educacion-escolar/: HTTP Error 404: Not Found
+ok 61613 https://datosabiertos.mineduc.cl/resumen-de-matricula-por-establecimiento-educacional/
+FAIL https://psa.gov.ph/statistics/poverty: HTTP Error 403: Forbidden
+FAIL https://psa.gov.ph/statistics/poverty/small-area-estimates: HTTP Error 403: Forbidden
+FAIL https://psa.gov.ph/content/2021-city-and-municipal-level-poverty-estimates: HTTP Error 403: Forbidden
+FAIL https://www.deped.gov.ph/learner-information-system/: HTTP Error 403: Forbidden
+ok 7364 https://data.gov.ph/index/public/dataset/search?q=enrollment
