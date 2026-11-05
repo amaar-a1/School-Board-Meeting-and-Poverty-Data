@@ -1,0 +1,3 @@
+FAIL https://www.iedom.fr/guadeloupe/Publications: HTTP Error 404: Not Found
+FAIL https://www.iedom.fr/guadeloupe/publications/rapports-annuels: HTTP Error 404: Not Found
+FAIL https://www.iedom.fr/guadeloupe/Statistiques: HTTP Error 404: Not Found
