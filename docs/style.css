@@ -170,3 +170,7 @@ footer { padding: 8px 16px 40px; font-size: .85rem; }
 .coverage { margin: 0.25rem 0 0.5rem; font-weight: 600; opacity: 0.9; }
 
 .share-button { margin-left: 0.5rem; }
+
+/* Language menu, top right of the header. */
+.lang-select { float: right; font-size: 0.9rem; display: inline-flex; gap: 0.35rem; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+@media (max-width: 600px) { .lang-select { float: none; display: flex; justify-content: flex-start; margin-bottom: 0.5rem; } }
