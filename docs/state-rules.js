@@ -171,7 +171,7 @@ window.STATE_RULES = {
     title: "Rules for education ministry meetings",
     checked: "November 4, 2026",
     laws: [
-      { state: "Island countries and territories", covers: "Education ministries and departments", threshold: "",
+      { state: "Islands and microstates", covers: "Education ministries and departments", threshold: "",
         rule: "Not checked for each island. Their schools are run by a government ministry or department, which doesn't hold public board meetings the way a US school board does." }
     ],
     note: "Rules for the islands' education bodies weren't researched; check each place's own law."
@@ -186,5 +186,16 @@ window.STATE_RULES = {
         rule: "Committee meetings are closed to the public; their minutes (fundargerðir) are published and go to the council for approval." }
     ],
     note: "Icelandic municipalities run compulsory schools through their council and an education committee. Check the current law before relying on this."
+  },
+  switzerland: {
+    title: "Rules for cantonal parliament and school board meetings",
+    checked: "November 5, 2026",
+    laws: [
+      { state: "Switzerland", covers: "Cantonal parliaments", threshold: "",
+        rule: "Sittings are public under each canton's constitution and parliament law; many cantons stream them on their own websites, but there's no national requirement." },
+      { state: "Switzerland", covers: "Municipal school boards (Schulpflege, Schulkommission)", threshold: "",
+        rule: "Where they exist, their meetings are usually closed, under each canton's municipal and education law; decisions are published." }
+    ],
+    note: "Each canton sets its own rules for schools and their boards. Check the canton's law before relying on this."
   }
 };

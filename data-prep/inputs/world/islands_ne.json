@@ -614,5 +614,65 @@
 "POP_EST": 1641172,
 "CONTINENT": "Asia",
 "SUBREGION": "Western Asia"
+},
+{
+"NAME": "Luxembourg",
+"NAME_LONG": "Luxembourg",
+"ADM0_A3": "LUX",
+"ISO_A3": "LUX",
+"ISO_A2": "LU",
+"SOVEREIGNT": "Luxembourg",
+"POP_EST": 619896,
+"CONTINENT": "Europe",
+"SUBREGION": "Western Europe",
+"MICRO": true
+},
+{
+"NAME": "Liechtenstein",
+"NAME_LONG": "Liechtenstein",
+"ADM0_A3": "LIE",
+"ISO_A3": "LIE",
+"ISO_A2": "LI",
+"SOVEREIGNT": "Liechtenstein",
+"POP_EST": 38019,
+"CONTINENT": "Europe",
+"SUBREGION": "Western Europe",
+"MICRO": true
+},
+{
+"NAME": "San Marino",
+"NAME_LONG": "San Marino",
+"ADM0_A3": "SMR",
+"ISO_A3": "SMR",
+"ISO_A2": "SM",
+"SOVEREIGNT": "San Marino",
+"POP_EST": 33860,
+"CONTINENT": "Europe",
+"SUBREGION": "Southern Europe",
+"MICRO": true
+},
+{
+"NAME": "Monaco",
+"NAME_LONG": "Monaco",
+"ADM0_A3": "MCO",
+"ISO_A3": "MCO",
+"ISO_A2": "MC",
+"SOVEREIGNT": "Monaco",
+"POP_EST": 38964,
+"CONTINENT": "Europe",
+"SUBREGION": "Western Europe",
+"MICRO": true
+},
+{
+"NAME": "Andorra",
+"NAME_LONG": "Andorra",
+"ADM0_A3": "AND",
+"ISO_A3": "AND",
+"ISO_A2": "AD",
+"SOVEREIGNT": "Andorra",
+"POP_EST": 77142,
+"CONTINENT": "Europe",
+"SUBREGION": "Southern Europe",
+"MICRO": true
 }
 ]

@@ -171,8 +171,8 @@ window.SOURCES = [
     note: "The Ministry of Education's school directory (Education Counts) and data.govt.nz both refused automated downloads, so school and enrollment counts by area aren't included. The Chatham Islands aren't in Stats NZ's regional figures. Built by data-prep/build_nz.py."
   },
   {
-    only: "Island countries and territories",
-    group: "Island countries and territories",
+    only: "Islands and microstates",
+    group: "Islands and microstates",
     items: [
       { title: "Children below 60% of the median income (Malta, Cyprus): Eurostat ilc_li02", url: "https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table" },
       { title: "National poverty line, unemployment, population, enrollment (primary and secondary): World Bank World Development Indicators (SI.POV.NAHC, SL.UEM.TOTL.ZS, SP.POP.TOTL, SP.POP.0014.TO.ZS, SE.PRM.ENRL, SE.SEC.ENRL)", url: "https://data.worldbank.org/" },
@@ -182,6 +182,17 @@ window.SOURCES = [
       { title: "Borders: Natural Earth 1:10m admin-0 countries", url: "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/" }
     ],
     note: "Many of these figures are old (some Factbook poverty rates are from surveys more than ten years old); each row's “Poverty measure” names the source and year. Locales are estimates from population over land area. Built by data-prep/build_islands.py."
+  },
+  {
+    only: "Switzerland",
+    group: "Switzerland: cantons, child social assistance and pupils",
+    items: [
+      { title: "Child poverty: Federal Statistical Office (BFS), social assistance recipients by canton and age (px-x-1304030000_121), social assistance rate for ages 0–17, 2025", url: "https://www.pxweb.bfs.admin.ch/pxweb/de/px-x-1304030000_121/" },
+      { title: "Pupils: BFS, compulsory school pupils by school canton (px-x-1502010100_101), 2024/25", url: "https://www.pxweb.bfs.admin.ch/pxweb/de/px-x-1502010100_101/" },
+      { title: "Meetings (stand-in): cantonal parliaments' and cantons' YouTube channels (in the “Meetings source” column), checked by hand; regioTVplus and swissbroadcast for Basel-Landschaft and Schaffhausen", url: "https://www.youtube.com/" },
+      { title: "Borders: Natural Earth 1:10m admin-1 states and provinces", url: "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/" }
+    ],
+    note: "Children 0–17 are worked out from the number on social assistance and the rate. Locales are estimates. Built by data-prep/build_switzerland.py."
   },
   {
     only: "Iceland",

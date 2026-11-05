@@ -85,14 +85,28 @@ ISLAND_CHANNELS = {
     "VUT": ("https://www.youtube.com/channel/UCxEEMV6ADp7-h5yFPxqTidw", "all"),   # Vanuatu Parliament
     "MSR": ("https://www.youtube.com/channel/UCSrOT5JzaIXcr1btNC9LaTQ", "all"),   # Montserrat Legislative Assembly
     "VCT": ("https://www.youtube.com/channel/UCnSUlj13EVE449biHplmLlw", "filter"),   # API SVG (government information service)
+    "MCO": ("https://www.youtube.com/channel/UCrUztlaGkaqr6AeONbmfcCw", "all"),   # Conseil National TV (Monaco)
+    "AND": ("https://www.youtube.com/channel/UC8DPQPM6kHQ7ygyPgDicHyA", "all"),   # Consell General (Andorra)
+}
+# Why an island shows 0 meetings, where the reason is more specific than "nothing found".
+ZERO_NOTES = {
+    "IMN": "No school board meets in public. Tynwald's YouTube channel posts Tynwald Day and committee videos but not its sittings, which it streams on its own website",
+    "GGY": "No school board meets in public. The States of Guernsey's YouTube channel posts government news, not States meetings, which are streamed elsewhere",
+    "FLK": "No school board meets in public. Falkland Islands Television's channel reports on the Legislative Assembly but doesn't post its sittings",
+    "LUX": "Luxembourg's communes run primary schools, but no school board meets in public. The Chamber of Deputies streams its sittings on its own website (Chamber TV), not on YouTube",
+    "LIE": "No school board meets in public. No recorded sittings of the Landtag were found on YouTube",
+    "SMR": "No school board meets in public. Only party channels post clips of the Consiglio Grande e Generale on YouTube, not full sittings",
+    "GRL": "No school board meets in public. KNR, the public broadcaster, posts only a few clips of Inatsisartut sittings",
 }
 LEGIS_WORDS = re.compile(r"house of assembly|house of representatives|parliament|parlement|legislative (assembly|council)|national assembly|"
                          r"\bsenate\b|lower house|tynwald|states (assembly|of deliberation|meeting)|\bthe states\b|majlis|nitijela|maneaba|"
                          r"\bcongr[eè]s|\bcongress\b|assembl[ée]e|assembleia|conseil territorial|inatsisartut|fono|ολομέλεια|βουλ|مجلس|"
-                         r"olbiil|regional council|sitting|séance|sessão|sess[ãa]o plen|plen[áa]ri", re.I)
+                         r"olbiil|regional council|sitting|séance|sessão|sess[ãa]o plen|plen[áa]ri|kantonsrat|grosse[nr]? rat|landrat|grand conseil|"
+                         r"gran consiglio|parlement jurassien|consell general|conseil national|landtag", re.I)
 SITTING = re.compile(r"sitting|session|séance|seance|sess[ãa]o|meeting|plen[aá]r|plénière|συνεδρ|ολομέλεια|جلسة|vergadering|"
                      r"the honourable the (house|senate)|house of (assembly|representatives)|\bsenate\b|maneaba|ataatsimiinne|states meeting|"
-                     r"question (time|hour)|budget (debate|address)|\bcrs\b|nitijela|regular session", re.I)
+                     r"question (time|hour)|budget (debate|address)|\bcrs\b|nitijela|regular session|"
+                     r"sitzung|kantonsrat|grosse[nr]? rat|landrat|grand conseil|gran consiglio|seduta|sessione|sessi[óo]|consell general|conseil national", re.I)
 NUMBERED = re.compile(r"\b\d+(st|nd|rd|th|ª|º|e|ème)?\s+(sitting|meeting|day|session|séance|sessão|reunião)|\bday\s+\d+|\bmeeting\s*(no\.?|#)\s*\d+|"
                       r"\bpublic meeting\s*#?\s*\d+|الانعقاد|دور", re.I)
 NOT_SITTING = re.compile(r"how to|interview|trailer|promo|highlight|tour of|visit|youth|children|mock|explain|documentar|podcast|shorts|"
@@ -154,13 +168,21 @@ def main():
     es = json.load(open(os.path.join(IN, "islands", "eurostat_ilc_li02.json")))
     ids, size = es["id"], es["size"]; cat = {k: list(es["dimension"][k]["category"]["index"]) for k in ids}
     def esv(geo, t):
+        if geo == "LU":   # in a second Eurostat download
+            ids2, size2 = lu["id"], lu["size"]; cat2 = {k: list(lu["dimension"][k]["category"]["index"]) for k in ids2}
+            if t not in cat2["time"]: return None
+            sel = dict(freq="A", statinfo="MED_EI", unit="PC", rskpovth="B_60", sex="T", age="Y_LT18", geo=geo, time=t); i = 0
+            for k, n in zip(ids2, size2): i = i * n + cat2[k].index(sel[k])
+            return lu["value"].get(str(i))
         sel = dict(freq="A", statinfo="MED_EI", unit="PC", rskpovth="B_60", sex="T", age="Y_LT18", geo=geo, time=t); i = 0
         for k, s in zip(ids, size): i = i * s + cat[k].index(sel[k])
         return es["value"].get(str(i))
-    ISO2 = {"MLT": "MT", "CYP": "CY", "ISL": "IS"}
+    ISO2 = {"MLT": "MT", "CYP": "CY", "ISL": "IS", "LUX": "LU"}
+    lu = json.load(open(os.path.join(IN, "islands", "eurostat_ilc_li02_lu_ch.json")))
     titles = {}
-    for f in ("islands_titles.json", "islands_titles_extra.json", "islands_titles_parlview.json"):
-        p = os.path.join(IN, "islands", "youtube", f)
+    for f in ("islands/youtube/islands_titles.json", "islands/youtube/islands_titles_extra.json", "islands/youtube/islands_titles_parlview.json",
+              "switzerland/youtube/titles.json"):   # the last has the microstates' parliaments
+        p = os.path.join(IN, f)
         if os.path.exists(p): titles.update(json.load(open(p, encoding="utf-8")))
     names = {}
     for line in open(__file__, encoding="utf-8"):
@@ -175,7 +197,7 @@ def main():
         name = NAMES.get(n["NAME"], n["NAME"])
         rate = measure = ""
         if iso in ISO2:
-            t = max((t for t in cat["time"] if esv(ISO2[iso], t) is not None), default=None)
+            t = max((t for t in set(cat["time"]) | {"2023", "2024", "2025"} if esv(ISO2[iso], t) is not None), default=None)
             if t: rate, measure = esv(ISO2[iso], t), f"Children under 18 below 60% of the median income (Eurostat EU-SILC, {t})"
         if rate == "":
             y, v = latest("SI.POV.NAHC", iso)
@@ -210,7 +232,7 @@ def main():
         sov = n["SOVEREIGNT"]
         status = "Independent country" if sov in (n["NAME"], n["NAME_LONG"]) or iso in ("FSM", "KNA", "VCT", "ATG", "STP", "BHS", "MHL", "SLB") else f"Territory of {'the United Kingdom' if sov == 'United Kingdom' else 'the Netherlands' if sov == 'Netherlands' else sov}"
         if iso in ("COK", "NIU"): status = "Self-governing, in free association with New Zealand"
-        out.append({"District": name, "Region": REGION.get(n["SUBREGION"], n["SUBREGION"]), "Status": status,
+        out.append({"District": name, "Region": "European microstates" if n.get("MICRO") else REGION.get(n["SUBREGION"], n["SUBREGION"]), "Status": status,
                     "Available Board Meetings": 0, "Meetings source": "", "Meetings note": "",
                     "Poverty rate or stand-in": f"{rate:.2f}%" if rate != "" else "", "Poverty measure": measure,
                     "Population": round(pop) if pop else "", "Children Ages 0-14 (estimated)": round(pop * share / 100) if pop and share else "",
@@ -219,14 +241,15 @@ def main():
     for r in out:
         iso = r["District ID"].split("-", 1)[1]
         url, mode = ISLAND_CHANNELS.get(iso, ("", ""))
-        if url and url in titles:
-            n, _ = sittings(titles[url], mode)
+        n = sittings(titles[url], mode)[0] if url and url in titles else 0
+        if n:
             r["Available Board Meetings"] = n
             r["Meetings source"] = url
             r["Meetings note"] = (f"Stand-in: recorded sittings (and committee meetings) of the legislature on {names.get(iso, 'its YouTube channel')}, one per day; "
                                   "no school board meets in public")
         else:
-            r["Meetings note"] = "No school board meets in public, and no recorded sittings of the legislature were found on YouTube"
+            r["Meetings note"] = ZERO_NOTES.get(iso, "No school board meets in public, and no recorded sittings of the legislature were found on YouTube "
+                                                     "(the search found only news, party or other countries' channels); it may stream on its own website")
     cols = list(out[0])
     with open(os.path.join(DOCS, "islands.csv"), "w", newline="", encoding="utf-8") as fo:
         w = csv.DictWriter(fo, fieldnames=cols); w.writeheader(); w.writerows(out)

@@ -14,9 +14,9 @@
   };
   // The Nordic countries and the Netherlands share one layout (r._eu is the country's name).
   const EU_POV = "Percentage of Children in Low Income";
-  const EU_RE = /\b(norw\w*|swed\w*|finn?\w*|denmark|danish|netherlands|dutch|holland|german\w*|iceland\w*|new zealand|islands?|island countries)\b/i;
+  const EU_RE = /\b(norw\w*|swed\w*|finn?\w*|denmark|danish|netherlands|dutch|holland|german\w*|iceland\w*|swiss|switzerland|new zealand|islands?|island countries|microstates?|luxembourg|liechtenstein|monaco|andorra|san marino)\b/i;
   const EU_OF = (q) => { const m = (q.match(EU_RE) || [])[1]; if (!m) return null; const w = m.toLowerCase();
-    return w.startsWith("norw") ? "Norway" : w.startsWith("swed") ? "Sweden" : w.startsWith("fin") ? "Finland" : /^(denmark|danish)$/.test(w) ? "Denmark" : w.startsWith("german") ? "Germany" : w.startsWith("iceland") ? "Iceland" : w === "new zealand" ? "New Zealand" : w.startsWith("island") ? "Island countries and territories" : "Netherlands"; };
+    return w.startsWith("norw") ? "Norway" : w.startsWith("swed") ? "Sweden" : w.startsWith("fin") ? "Finland" : /^(denmark|danish)$/.test(w) ? "Denmark" : w.startsWith("german") ? "Germany" : w.startsWith("iceland") ? "Iceland" : /^(swiss|switzerland)$/.test(w) ? "Switzerland" : w === "new zealand" ? "New Zealand" : /^(island|micro|luxem|liech|monaco|andorra|san marino)/.test(w) ? "Islands and microstates" : "Netherlands"; };
   const val = (r, m) => num(r[r._eu ? (m.col === POV ? r._pov : m.col === "Children Ages 5-17" ? r._kids : m.col) : r._ca && m.caCol ? m.caCol : r._uk && m.ukCol ? m.ukCol : r._ie && m.col === POV ? "Poverty rate (region, all ages)" : r._fr && m.col === POV ? "Unemployment rate (stand-in for poverty)" : m.col]);
   const UK_POV = "Percentage of Children Under 16 in Low Income";
   const povOf = (r) => num(r[r._eu ? r._pov : r._ca ? CA_POV : r._uk ? UK_POV : r._ie ? "Poverty rate (region, all ages)" : r._fr ? "Unemployment rate (stand-in for poverty)" : POV]);
@@ -116,10 +116,10 @@
     else if (/saint.pierre|miquelon/i.test(q)) { rows = all.filter((r) => r._fr); label = "Saint-Pierre-et-Miquelon"; }
     else if (/\b(uk|united kingdom|britain|british)\b/i.test(q)) { rows = all.filter((r) => r._uk); label = "the United Kingdom"; }
     else if (/\b(ireland|irish|etbs?)\b/i.test(q) && !/northern ireland/i.test(q)) { rows = all.filter((r) => r._ie); label = "Ireland"; }
-    else if (EU_OF(q) && !/virgin|mariana|samoa|guam|puerto/i.test(q)) { const c = EU_OF(q); rows = all.filter((r) => r._eu === c); label = c === "Netherlands" ? "the Netherlands" : c === "Island countries and territories" ? "island countries and territories" : c; }
+    else if (EU_OF(q) && !/virgin|mariana|samoa|guam|puerto/i.test(q)) { const c = EU_OF(q); rows = all.filter((r) => r._eu === c); label = c === "Netherlands" ? "the Netherlands" : c === "Islands and microstates" ? "islands and microstates" : c; }
     else if (/\bnordic|scandinavi/i.test(q)) { rows = all.filter((r) => r._eu && r._eu !== "Netherlands"); label = "the Nordic countries"; }
     else rows = all.filter((r) => !r._terr && !r._ca && !r._fr && !r._uk && !r._ie && !r._eu);
-    const unit = rows.length && rows.every((r) => r._eu === "Island countries and territories") ? "places" : rows.length && rows.every((r) => r._eu === "New Zealand") ? "areas" : rows.length && rows.every((r) => r._eu === "Germany") ? "districts" : rows.length && rows.every((r) => r._eu) ? "municipalities" : rows.length && rows.every((r) => r._ca || r._ie) ? "boards" : rows.length && rows.every((r) => r._uk) ? "councils" : "districts";
+    const unit = rows.length && rows.every((r) => r._eu === "Islands and microstates") ? "places" : rows.length && rows.every((r) => r._eu === "New Zealand") ? "areas" : rows.length && rows.every((r) => r._eu === "Germany") ? "districts" : rows.length && rows.every((r) => r._eu === "Switzerland") ? "cantons" : rows.length && rows.every((r) => r._eu) ? "municipalities" : rows.length && rows.every((r) => r._ca || r._ie) ? "boards" : rows.length && rows.every((r) => r._uk) ? "councils" : "districts";
     const locale = findLocale(q);
     if (locale && unit === "districts") { rows = rows.filter((r) => r.Locale === locale); label = `${locale.toLowerCase()} districts in ${label}`; }
     else label = `${unit} in ${label}`;
@@ -178,7 +178,7 @@
     const { rows, label } = scopeRows(stateList, q);
     const list = rows.filter((r) => !isNaN(val(r, m)))
       .sort((a, b) => (val(a, m) - val(b, m)) * (low ? 1 : -1)).slice(0, n);
-    const mLabel = rows.length && rows[0]._eu === "Island countries and territories" && metricKey === "poverty" ? "poverty rate (or stand-in)" : rows.length && rows[0]._eu && metricKey === "poverty" ? "child low-income rate (each country's own measure)" : rows.length && rows[0]._ca && m.caLabel ? m.caLabel : rows.length && rows[0]._ie && metricKey === "poverty" ? "poverty rate (all ages, each board's region)" : rows.length && rows[0]._fr && metricKey === "poverty" ? "unemployment rate (stand-in for poverty)" : m.label;
+    const mLabel = rows.length && rows[0]._eu === "Islands and microstates" && metricKey === "poverty" ? "poverty rate (or stand-in)" : rows.length && rows[0]._eu && metricKey === "poverty" ? "child low-income rate (each country's own measure)" : rows.length && rows[0]._ca && m.caLabel ? m.caLabel : rows.length && rows[0]._ie && metricKey === "poverty" ? "poverty rate (all ages, each board's region)" : rows.length && rows[0]._fr && metricKey === "poverty" ? "unemployment rate (stand-in for poverty)" : m.label;
     if (!list.length) return `I couldn't find any ${esc(label)} with a ${mLabel}${rows.some((r) => r._ca) && metricKey === "enrollment" ? " (a few Canadian boards have no enrollment figure)" : ""}.`;
     if (metricKey === "meetings" && !low && num(list[0][MEET]) === 0) return `None of the ${esc(label)} have available board meetings on record.`;
     return `<p>${low ? "Lowest" : "Highest"} ${mLabel} among ${esc(label)}:</p><ol>` +
