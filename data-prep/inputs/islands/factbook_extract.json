@@ -4063,5 +4063,334 @@
    }
   },
   "_file": "central-america-n-caribbean/rn.json"
+ },
+ "LUX": {
+  "Economy": {
+   "Population below poverty line": {
+    "text": "17.3% (2021 est.)",
+    "note": "<b>note:</b> % of population with income below national poverty line"
+   },
+   "Unemployment rate": {
+    "Unemployment rate 2024": {
+     "text": "6% (2024 est.)"
+    },
+    "Unemployment rate 2023": {
+     "text": "5.2% (2023 est.)"
+    },
+    "Unemployment rate 2022": {
+     "text": "4.6% (2022 est.)"
+    },
+    "note": "<b>note:</b> % of labor force seeking employment"
+   },
+   "Youth unemployment rate (ages 15-24)": {
+    "total": {
+     "text": "20.2% (2024 est.)"
+    },
+    "male": {
+     "text": "16.9% (2024 est.)"
+    },
+    "female": {
+     "text": "24.2% (2024 est.)"
+    },
+    "note": "<b>note:</b> % of labor force ages 15-24 seeking employment"
+   }
+  },
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "671,254 (2024 est.)"
+    },
+    "male": {
+     "text": "338,702"
+    },
+    "female": {
+     "text": "332,552"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "16.7% (male 57,921/female 54,484)"
+    },
+    "15-64 years": {
+     "text": "67.1% (male 231,214/female 219,497)"
+    },
+    "65 years and over": {
+     "text": "16.1% (2024 est.) (male 49,567/female 58,571)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "2,586 sq km"
+    },
+    "land": {
+     "text": "2,586 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Grand Duchy of Luxembourg"
+    },
+    "conventional short form": {
+     "text": "Luxembourg"
+    },
+    "local long form": {
+     "text": "Grand Duch&eacute; de Luxembourg"
+    },
+    "local short form": {
+     "text": "Luxembourg"
+    },
+    "etymology": {
+     "text": "probably derived from an early Celtic or Germanic form of the name, Lucilinburhuc, that was thought to mean \"little fortress;\" the name first referred to the city and was later used for the country"
+    }
+   }
+  },
+  "_file": "europe/lu.json"
+ },
+ "LIE": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "40,547 (2025 est.)"
+    },
+    "male": {
+     "text": "20,215"
+    },
+    "female": {
+     "text": "20,332"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "15.3% (male 3,412/female 2,732)"
+    },
+    "15-64 years": {
+     "text": "63.9% (male 12,814/female 12,921)"
+    },
+    "65 years and over": {
+     "text": "20.8% (2024 est.) (male 3,846/female 4,547)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "160 sq km"
+    },
+    "land": {
+     "text": "160 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Principality of Liechtenstein"
+    },
+    "conventional short form": {
+     "text": "Liechtenstein"
+    },
+    "local long form": {
+     "text": "Fuerstentum Liechtenstein"
+    },
+    "local short form": {
+     "text": "Liechtenstein"
+    },
+    "etymology": {
+     "text": "named after the Liechtenstein family that purchased and united the counties of Schellenburg and Vaduz in 1719; the family name was taken from its Austrian castle of the same name, which in German means \"light stone\""
+    }
+   }
+  },
+  "_file": "europe/ls.json"
+ },
+ "MCO": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "32,047 (2025 est.)"
+    },
+    "male": {
+     "text": "15,467"
+    },
+    "female": {
+     "text": "16,580"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "9.1% (male 1,485/female 1,408)"
+    },
+    "15-64 years": {
+     "text": "53.8% (male 8,620/female 8,490)"
+    },
+    "65 years and over": {
+     "text": "37.1% (2024 est.) (male 5,261/female 6,549)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "2 sq km"
+    },
+    "land": {
+     "text": "2 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Principality of Monaco"
+    },
+    "conventional short form": {
+     "text": "Monaco"
+    },
+    "local long form": {
+     "text": "Principaut&eacute; de Monaco"
+    },
+    "local short form": {
+     "text": "Monaco"
+    },
+    "etymology": {
+     "text": "founded as a Greek colony in the 6th century B.C., the name's origin is unclear; it could derive from the Greek term <em>monoikos</em> (solitary), the Ligurian word <em>monegu</em> (rock), or the Basque word <em>muno</em> (mountain)"
+    }
+   }
+  },
+  "_file": "europe/mn.json"
+ },
+ "AND": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "85,370 (2024 est.)"
+    },
+    "male": {
+     "text": "43,652"
+    },
+    "female": {
+     "text": "41,718"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "12% (male 5,276/female 4,954)"
+    },
+    "15-64 years": {
+     "text": "67.7% (male 29,562/female 28,201)"
+    },
+    "65 years and over": {
+     "text": "20.4% (2024 est.) (male 8,814/female 8,563)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "468 sq km"
+    },
+    "land": {
+     "text": "468 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Principality of Andorra"
+    },
+    "conventional short form": {
+     "text": "Andorra"
+    },
+    "local long form": {
+     "text": "Principat d'Andorra"
+    },
+    "local short form": {
+     "text": "Andorra"
+    },
+    "etymology": {
+     "text": "the origin of the country's name is obscure; may originate from the Navarrese word <em>andurrial, </em>meaning \"shrub-covered land;\" alternatively, may derive from the Arabic <em>ad-darra</em> meaning \"the forest,\" a reference to its location; many other theories exist"
+    }
+   }
+  },
+  "_file": "europe/an.json"
+ },
+ "SMR": {
+  "Economy": {},
+  "People and Society": {
+   "Population": {
+    "total": {
+     "text": "35,291 (2025 est.)"
+    },
+    "male": {
+     "text": "17,035"
+    },
+    "female": {
+     "text": "18,256"
+    }
+   },
+   "Age structure": {
+    "0-14 years": {
+     "text": "14.2% (male 2,614/female 2,387)"
+    },
+    "15-64 years": {
+     "text": "64.3% (male 10,916/female 11,648)"
+    },
+    "65 years and over": {
+     "text": "21.5% (2024 est.) (male 3,414/female 4,116)"
+    }
+   }
+  },
+  "Geography": {
+   "Area": {
+    "total ": {
+     "text": "61 sq km"
+    },
+    "land": {
+     "text": "61 sq km"
+    },
+    "water": {
+     "text": "0 sq km"
+    }
+   }
+  },
+  "Government": {
+   "Country name": {
+    "conventional long form": {
+     "text": "Republic of San Marino"
+    },
+    "conventional short form": {
+     "text": "San Marino"
+    },
+    "local long form": {
+     "text": "Repubblica di San Marino"
+    },
+    "local short form": {
+     "text": "San Marino"
+    },
+    "etymology": {
+     "text": "named after Saint MARINUS, who founded a monastic settlement on Monte Titano in the early 4th century"
+    }
+   }
+  },
+  "_file": "europe/sm.json"
  }
 }

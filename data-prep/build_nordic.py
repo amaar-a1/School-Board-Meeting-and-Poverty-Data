@@ -8,6 +8,9 @@ Municipalities run schools in these countries, so each municipality is the board
   Finland  THL Sotkanet 228: at-risk-of-poverty rate for children (60% of median), latest year
   Denmark  Statistics Denmark LABY07: children 0-17 in relative poverty (50% of median), 2024
   Netherlands CBS 86132NED: children in poverty (CBS's "not much but sufficient" criterion), 2024
+- Where a municipality's child rate isn't published, the next best figure is used and the "Poverty note"
+  column says so: the all-ages low-income rate (Norway: SSB 12944 all ages; Finland: Sotkanet 3099),
+  else the unemployment rate (Finland: Sotkanet 181), else the national child rate (Christiansø).
 - Pupils: SSB 11980 (2025); Kolada N15835 (F-9, home municipality, 2025); Statistics Finland 133w
   (2025); Statistics Denmark LABY23 (Oct 2025); CBS 85701NED (primary, special and secondary by
   municipality of residence, 2025/26).
@@ -98,6 +101,51 @@ def meetings(cc):
     return out
 
 
+def fallback(cc, rows, put):
+    """Fill in a figure for municipalities whose child rate isn't published (see the docstring)."""
+    P = "Percentage of Children in Low Income"
+    missing = lambda: [k for k, r in rows.items() if not r[P]]
+    if cc == "NO":
+        d = json.load(open(os.path.join(IN, "no_lowincome_allages.json")))
+        ids, size = d["id"], d["size"]; cat = {k: list(d["dimension"][k]["category"]["index"]) for k in ids}
+        lab = d["dimension"]["Region"]["category"]["label"]
+        def val(code):
+            sel = {"Region": code, "Alder": "999A", "ContentsCode": "EUskalaSeksti", "Tid": cat["Tid"][-1]}; i = 0
+            for k, n in zip(ids, size): i = i * n + cat[k].index(sel[k])
+            return d["value"][i]
+        want = set(missing())
+        for code, name in lab.items():
+            v = val(code)
+            if v is None or re.search(r"\((\d{4})?-\d{4}\)", name): continue
+            k = next((rows_k for rows_k in want if norm(rows[rows_k]["District"]) in {norm(x) for x in re.split(r"\s+-\s+|/", name)}), None)
+            if k:
+                rows[k][P] = f"{v:.2f}%"
+                rows[k]["Poverty note"] = f"All ages, {cat['Tid'][-1]} (the child rate isn't published for this small municipality)"
+    elif cc == "FI":
+        reg = {r["id"]: r for r in json.load(open(os.path.join(IN, "fi_regions.json")))}
+        for fname, note in (("fi_3099_lowincome_all.json", "All ages, {y} (the child rate isn't published for this small municipality)"),
+                            ("fi_181_unemployment.json", "Unemployment rate, {y}, as a stand-in (no low-income rate is published)")):
+            best = {}
+            for v in json.load(open(os.path.join(IN, fname))):
+                if v["region"] in reg and v.get("value") is not None and (v["region"] not in best or v["year"] > best[v["region"]]["year"]):
+                    best[v["region"]] = v
+            want = set(missing())
+            for rid, v in best.items():
+                code = str(reg[rid]["code"]).zfill(3) if str(reg[rid]["code"]).isdigit() else None
+                if code in want:
+                    rows[code][P] = f"{v['value']:.2f}%"
+                    rows[code]["Poverty note"] = note.format(y=v["year"])
+        if "588" in rows and not rows["588"][P] and rows.get("507", {}).get(P):   # Pertunmaa merged into Mäntyharju
+            rows["588"][P] = rows["507"][P]
+            rows["588"]["Poverty note"] = "Merged into Mäntyharju; shown with Mäntyharju's child rate"
+    elif cc == "DK":
+        for r in csv.DictReader(open(os.path.join(IN, "dk_LABY07.csv"), encoding="utf-8-sig"), delimiter=";"):
+            if r["KOMGRP"] == "All Denmark":
+                for k in missing():
+                    rows[k][P] = f"{float(r['INDHOLD']):.2f}%"
+                    rows[k]["Poverty note"] = "Denmark's national child rate (Christiansø isn't part of a municipality, so has no figure of its own)"
+
+
 def locale(kids, share, area):
     dens = kids / share / area if area else 0
     return ("Urban" if dens >= 2000 else "Suburban" if dens >= 500 else "Mixed" if dens >= 100 else "Rural"), round(dens)
@@ -110,7 +158,7 @@ def main():
         for f in geo["features"]:
             p = f["properties"]
             rows[p["LAU_ID"]] = {"District": p["LAU_NAME"], "Available Board Meetings": 0, "Meetings source": "",
-                                 "Children": "", "Children in Low Income": "", "Percentage of Children in Low Income": "",
+                                 "Children": "", "Children in Low Income": "", "Percentage of Children in Low Income": "", "Poverty note": "",
                                  "Enrollment": "", "Enrollment year": "", "District ID": f"{cc}-{p['LAU_ID']}", "_area": area_km2(f["geometry"]),
                                  "_dens": p.get("POP_DENS_2023") if cc != "FI" else None}
         if cc == "NL":   # Brielle, Hellevoetsluis and Westvoorne merged into Voorne aan Zee (GM1992) in 2023
@@ -191,6 +239,7 @@ def main():
                     tot[v["Regiokenmerken"].strip()] = tot.get(v["Regiokenmerken"].strip(), 0) + v["LeerlingenStudenten_1"]
             for g, n in tot.items():
                 put(code=g, **{"Enrollment": n, "Enrollment year": "2025/26"})
+        fallback(cc, rows, put)
         meet = meetings(cc)
         for k, r in rows.items():
             if r["District ID"] in meet:
@@ -209,7 +258,7 @@ def main():
             out.append(r)
         out.sort(key=lambda r: r["District"])
         cols = ["District", "Locale", "Available Board Meetings", "Meetings source", "Children", "Children in Low Income",
-                "Percentage of Children in Low Income", "Enrollment", "Enrollment year", "People per km² (estimated)", "District ID"]
+                "Percentage of Children in Low Income", "Poverty note", "Enrollment", "Enrollment year", "People per km² (estimated)", "District ID"]
         with open(os.path.join(DOCS, f"{key}.csv"), "w", newline="", encoding="utf-8") as fo:
             w = csv.DictWriter(fo, fieldnames=cols); w.writeheader(); w.writerows(out)
         for f in geo["features"]:

@@ -4,6 +4,9 @@ Each ETB is made of local authority areas (Education and Training Boards Act 201
 - Poverty stand-in: Ireland publishes no local child poverty rate, so the unemployment rate from
   Census 2022 stands in (CSO SAP2022T8T1LEA22, principal economic status of people aged 15+):
   (looking for first job + short-term + long-term unemployed) / (those + at work).
+- Poverty: Ireland publishes no local child poverty rate, so each ETB gets the overall at-risk-of-poverty
+  rate (all ages, below 60% of the median income) of the NUTS 2 region it lies in (Eurostat ilc_li41,
+  latest year); the unemployment rate stays as a second, local stand-in.
 - Children 5-17: Census 2022 (CSO Census Hub layer CensusHub2022_T1_1_LA), which also gives the
   31 local authority borders.
 - Meetings: none found; ETBs' YouTube channels (etb_youtube.json) post no board meetings.
@@ -27,6 +30,27 @@ ETB = {
     "Mayo, Sligo and Leitrim ETB": ["Mayo", "Sligo", "Leitrim"], "Tipperary ETB": ["Tipperary"],
     "Waterford and Wexford ETB": ["Waterford", "Wexford"],
 }
+# NUTS 2 regions (2016-): IE04 Northern and Western, IE05 Southern, IE06 Eastern and Midland.
+NUTS2 = {"IE04": ["Cavan", "Donegal", "Galway City", "Galway County", "Leitrim", "Mayo", "Monaghan", "Roscommon", "Sligo"],
+         "IE05": ["Carlow", "Clare", "Cork City", "Cork County", "Kerry", "Kilkenny", "Limerick", "Tipperary", "Waterford", "Wexford"],
+         "IE06": ["Dublin City", "Dún Laoghaire-Rathdown", "Fingal", "South Dublin", "Kildare", "Laois", "Longford", "Louth", "Meath", "Offaly", "Westmeath", "Wicklow"]}
+REGION_NAME = {"IE04": "Northern and Western", "IE05": "Southern", "IE06": "Eastern and Midland"}
+
+
+def arop():
+    """{NUTS 2 code: (rate, year)} from Eurostat ilc_li41."""
+    d = json.load(open(os.path.join(IN, "eurostat_ilc_li41.json")))
+    ids, size = d["id"], d["size"]; cat = {k: list(d["dimension"][k]["category"]["index"]) for k in ids}
+    out = {}
+    for g in cat["geo"]:
+        for t in sorted(cat["time"], reverse=True):
+            sel = {k: cat[k][0] for k in ids}; sel.update(geo=g, time=t); i = 0
+            for k, n in zip(ids, size): i = i * n + cat[k].index(sel[k])
+            if str(i) in d["value"]:
+                out[g] = (d["value"][str(i)], t); break
+    return out
+
+
 def key(s):
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
     s = re.sub(r"\b(council|and county|city and county|county council|city council)\b", " ", s)
@@ -59,14 +83,21 @@ def main():
         kids = sum(float(p.get(f"T1_1AGE{a}T") or (float(p.get(f"T1_1AGE{a}M") or 0) + float(p.get(f"T1_1AGE{a}F") or 0))) for a in range(5, 18))
         p["_kids"] = kids
     rows, feats = [], []
+    ar = arop()
     for i, (etb, las) in enumerate(ETB.items()):
+        reg = {g for g, members in NUTS2.items() for l in las if l in members}
+        assert len(reg) == 1, (etb, reg)
+        reg = reg.pop()
         work = sum(lab[l]["work"] for l in las); un = sum(lab[l]["unemp"] for l in las)
         kids = sum(f["properties"]["_kids"] for f in geo["features"] if la_of_feat[id(f)] in las)
         eid = "IE-" + re.sub(r"\W+", "", unicodedata.normalize("NFKD", etb).encode("ascii", "ignore").decode())[:30]
         rows.append({"District": etb, "Region": geo and next((f["properties"]["PROVINCE"] for f in geo["features"] if la_of_feat[id(f)] in las), ""),
                      "Local authority areas": ", ".join(las), "Available Board Meetings": 0,
                      "Meetings note": "No board meetings found on the ETB's YouTube channel; ETBs publish board minutes on their own websites",
-                     "Children Ages 5-17": round(kids), "Unemployment rate (stand-in for poverty)": f"{100 * un / (un + work):.2f}%",
+                     "Children Ages 5-17": round(kids),
+                     "Poverty rate (region, all ages)": f"{ar[reg][0]:.2f}%",
+                     "Poverty note": f"Overall at-risk-of-poverty rate of the {REGION_NAME[reg]} region, {ar[reg][1]} (Eurostat); no local or child rate is published",
+                     "Unemployment rate (Census 2022)": f"{100 * un / (un + work):.2f}%",
                      "District ID": eid})
         for f in geo["features"]:
             if la_of_feat[id(f)] in las:
@@ -94,7 +125,7 @@ def main():
         f["geometry"]["coordinates"] = rnd(f["geometry"]["coordinates"])
     json.dump({"type": "FeatureCollection", "features": feats}, open(os.path.join(HERE, "..", "docs", "data", "map", "ireland.json"), "w"), separators=(",", ":"))
     print(len(rows), "ETBs;", len(feats), "shapes; unmatched local authorities:", miss)
-    for r in rows: print(" ", r["District"], r["Unemployment rate (stand-in for poverty)"], r["Children Ages 5-17"])
+    for r in rows: print(" ", r["District"], r["Poverty rate (region, all ages)"], r["Unemployment rate (Census 2022)"], r["Children Ages 5-17"])
 
 
 if __name__ == "__main__":

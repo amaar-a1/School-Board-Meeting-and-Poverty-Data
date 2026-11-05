@@ -88,7 +88,7 @@
         Country: ca ? "Canada" : fr ? "France (Saint-Pierre-et-Miquelon)" : uk ? "United Kingdom" : ie ? "Ireland" : terr ? "U.S. territories" : "United States",
         "State or province": ca ? r.Province : uk ? r.Nation : ie ? r.Region : (terr || fr) ? r.Territory : (ps.names[r.State] || r.State),
         "Available Board Meetings": r["Available Board Meetings"] ?? "",
-        [c.metric]: pct(ca ? r["Percentage of Children Ages 0-17 in Low Income"] : (fr || ie) ? r["Unemployment rate (stand-in for poverty)"]
+        [c.metric]: pct(ca ? r["Percentage of Children Ages 0-17 in Low Income"] : ie ? r["Poverty rate (region, all ages)"] : fr ? r["Unemployment rate (stand-in for poverty)"]
           : uk ? r["Percentage of Children Under 16 in Low Income"] : r["Percentage of Children Ages 5-17 in Poverty"]),
         "Poverty measure": ca ? c.measures.canada : fr ? c.measures.france : uk ? c.measures.uk : ie ? c.measures.ireland : terr ? c.measures.territories : c.measures.us,
         Children: ca ? r["Children Ages 0-17"] : uk ? r["Children Under 16"] : r["Children Ages 5-17"],
@@ -266,7 +266,7 @@
   // use NCES locale types; Canadian boards an estimate from Statistics Canada population sizes.
   const US_LOCALES = ["Urban", "Suburban", "Town", "Mixed", "Rural"];   // "Mixed": the European estimates
   // Countries whose locales are density estimates, labelled "UK: Urban" and so on in "All".
-  const DENSITY_COUNTRIES = ["UK", "Ireland", "Norway", "Sweden", "Finland", "Denmark", "Netherlands", "Germany", "New Zealand", "Islands"];
+  const DENSITY_COUNTRIES = ["UK", "Ireland", "Norway", "Sweden", "Finland", "Denmark", "Netherlands", "Germany", "New Zealand", "Islands", "Iceland", "Switzerland"];
   const DENSITY_RE = new RegExp(`^(${DENSITY_COUNTRIES.join("|")}): `);
   const CA_LOCALES = ["Large urban", "Medium urban", "Small urban", "Rural", "Province-wide"];
   // Shared groups for the US and Canada together: the closest match between NCES types and

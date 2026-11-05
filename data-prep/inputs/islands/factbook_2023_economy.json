@@ -723,6 +723,68 @@
     }
    }
   },
-  "MAF": {}
+  "MAF": {},
+  "LUX": {
+   "Population below poverty line": {
+    "text": "17.5% (2018 est.)"
+   },
+   "Unemployment rate": {
+    "Unemployment rate 2021": {
+     "text": "5.23% (2021 est.)"
+    },
+    "Unemployment rate 2020": {
+     "text": "6.77% (2020 est.)"
+    },
+    "Unemployment rate 2019": {
+     "text": "5.59% (2019 est.)"
+    }
+   }
+  },
+  "LIE": {
+   "Population below poverty line": {
+    "text": "NA"
+   },
+   "Unemployment rate": {
+    "Unemployment rate 2015": {
+     "text": "2.4% (2015)"
+    },
+    "Unemployment rate 2014": {
+     "text": "2.4% (2014)"
+    }
+   }
+  },
+  "MCO": {
+   "Population below poverty line": {
+    "text": "NA"
+   },
+   "Unemployment rate": {
+    "Unemployment rate 2012": {
+     "text": "2% (2012)"
+    }
+   }
+  },
+  "AND": {
+   "Unemployment rate": {
+    "Unemployment rate 2016": {
+     "text": "3.7% (2016 est.)"
+    },
+    "Unemployment rate 2015": {
+     "text": "4.1% (2015 est.)"
+    }
+   }
+  },
+  "SMR": {
+   "Population below poverty line": {
+    "text": "NA"
+   },
+   "Unemployment rate": {
+    "Unemployment rate 2017": {
+     "text": "8.1% (2017 est.)"
+    },
+    "Unemployment rate 2016": {
+     "text": "8.6% (2016 est.)"
+    }
+   }
+  }
  }
 }
