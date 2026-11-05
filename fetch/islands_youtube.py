@@ -38,8 +38,22 @@ QUERIES = {
     "TTO": "Parliament of Trinidad and Tobago House of Representatives sitting", "TCA": "Turks and Caicos House of Assembly sitting",
     "TUV": "Tuvalu Parliament sitting", "VUT": "Parliament of Vanuatu sitting", "WLF": "Assemblée territoriale Wallis et Futuna séance",
 }
-LEGIS = re.compile(r"parliament|parlament|assembly|assembl[ée]e|assembleia|house of|legislat|congr[eè]s|congress|staten|tynwald|"
-                   r"states|majlis|nitijela|fono|inatsisartut|l[øo]gting|council|conseil|βουλ|senate|maneaba|kelulau|government|gov|ministry|nation", re.I)
+# Swiss cantonal parliaments and the European microstates' parliaments (same method).
+EUROPE = {
+    "CH-ZH": "Kantonsrat Zürich Sitzung", "CH-BE": "Grosser Rat Bern Session", "CH-LU": "Kantonsrat Luzern Session",
+    "CH-UR": "Landrat Uri Sitzung", "CH-SZ": "Kantonsrat Schwyz Sitzung", "CH-OW": "Kantonsrat Obwalden Sitzung",
+    "CH-NW": "Landrat Nidwalden Sitzung", "CH-GL": "Landrat Glarus Sitzung", "CH-ZG": "Kantonsrat Zug Sitzung",
+    "CH-FR": "Grand Conseil Fribourg session", "CH-SO": "Kantonsrat Solothurn Session", "CH-BS": "Grosser Rat Basel-Stadt Sitzung",
+    "CH-BL": "Landrat Basel-Landschaft Sitzung", "CH-SH": "Kantonsrat Schaffhausen Sitzung", "CH-AR": "Kantonsrat Appenzell Ausserrhoden Sitzung",
+    "CH-AI": "Grosser Rat Appenzell Innerrhoden Session", "CH-SG": "Kantonsrat St. Gallen Session", "CH-GR": "Grosser Rat Graubünden Session",
+    "CH-AG": "Grosser Rat Aargau Sitzung", "CH-TG": "Grosser Rat Thurgau Sitzung", "CH-TI": "Gran Consiglio ticinese seduta",
+    "CH-VD": "Grand Conseil vaudois séance", "CH-VS": "Grand Conseil valaisan session", "CH-NE": "Grand Conseil neuchâtelois session",
+    "CH-GE": "Grand Conseil Genève séance", "CH-JU": "Parlement jurassien séance",
+    "LUX": "Chambre des Députés Luxembourg séance publique", "LIE": "Landtag Liechtenstein Sitzung", "MCO": "Conseil National Monaco séance publique",
+    "AND": "Consell General Andorra sessió", "SMR": "Consiglio Grande e Generale San Marino seduta",
+}
+LEGIS = re.compile(LEGIS = re.compile(r"parliament|parlament|assembly|assembl[ée]e|assembleia|house of|legislat|congr[eè]s|congress|staten|tynwald|"
+                   r"states|majlis|nitijela|fono|inatsisartut|l[øo]gting|council|conseil|βουλ|senate|maneaba|kelulau|government|gov|ministry|nation|kantonsrat|grosser rat|grand conseil|landrat|gran consiglio|landtag|consell|consiglio|chambre|kanton|canton", re.I)
 
 
 def ytdlp(*a):
@@ -49,10 +63,10 @@ def ytdlp(*a):
     return json.loads(r.stdout)
 
 
-def main(outdir):
+def main(outdir, which="islands"):
     os.makedirs(outdir, exist_ok=True)
     found, titles = {}, {}
-    for iso, q in QUERIES.items():
+    for iso, q in (EUROPE if which == "europe" else QUERIES).items():
         chans = {}
         try:
             for e in ytdlp(f"ytsearch25:{q}").get("entries") or []:
@@ -79,4 +93,4 @@ def main(outdir):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(sys.argv[1], *(sys.argv[2:3]))
