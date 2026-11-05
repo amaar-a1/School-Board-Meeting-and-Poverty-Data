@@ -37,6 +37,89 @@ NAMES = {"Antigua and Barb.": "Antigua and Barbuda", "St. Kitts and Nevis": "Sai
          "Saint Helena": "Saint Helena, Ascension and Tristan da Cunha"}
 # Figures found by hand where neither the World Bank nor the Factbook has one.
 MANUAL = {"NFK": (2.8, "Unemployment rate, a stand-in for poverty (Australian Bureau of Statistics, 2021 Census: 33 of 1,187 in the labour force)")}
+# Meetings: no island has a school board (a ministry runs the schools), so, as for Saint-Pierre-et-Miquelon,
+# the stand-in is the elected legislature's sittings on its YouTube channel (islands_youtube.py finds
+# them; checked by hand). "all": the legislature's own channel, where every dated sitting counts;
+# "filter": a government channel or public broadcaster, where only titles naming the legislature count.
+ISLAND_CHANNELS = {
+    "AIA": ("https://www.youtube.com/channel/UCjiAiUlclJclXnl21fFCwuA", "all"),   # Anguilla House of Assembly
+    "ATG": ("https://www.youtube.com/channel/UCK3jWfTQ9Z-3I8nsZoh-YDQ", "filter"),   # GovernmentOf AntiguaBarbuda
+    "BHS": ("https://www.youtube.com/channel/UCzPJSjQcWfBBwsUutIGFh2w", "all"),   # Bahamas Parliament
+    "BHR": ("https://www.youtube.com/channel/UCfxhU2lYxn1IwNUSSxsyiaQ", "all"),   # مجلس النواب Council of Representatives
+    "BRB": ("https://www.youtube.com/channel/UCnAo0XVbxFF2UCpkIkAS-6A", "all"),   # Barbados Parliament Channel
+    "VGB": ("https://www.youtube.com/channel/UCVDl37r5uaMsdQkgzFkXAJg", "all"),   # House of Assembly VI
+    "CPV": ("https://www.youtube.com/channel/UC5ACfRTTXZPcxtPyWQ6idGA", "all"),   # Assembleia Nacional de Cabo Verde
+    "CYM": ("https://www.youtube.com/channel/UCGVlgTtKrEQHpXgoGNH_e7w", "filter"),   # Cayman Islands Government
+    "COK": ("https://www.youtube.com/channel/UC6NJVTHu-5eMP88UrGi7KqA", "all"),   # Cook Islands Parliament
+    "CYP": ("https://www.youtube.com/channel/UC16VW_MkPM-9zu_E3wYweOw", "all"),   # HoR Cyprus
+    "DMA": ("https://www.youtube.com/channel/UCPhmdFljqjcsh6eeQz7_W6Q", "filter"),   # Government of Dominica
+    "FLK": ("https://www.youtube.com/channel/UCh0L8fHZWyH6X6fvw8u-58Q", "filter"),   # Falkland Islands Television
+    "FSM": ("https://www.youtube.com/channel/UCo_dc4xUi_eA5poaFqHeGpA", "all"),   # FSM CONGRESS LIVE STREAMING
+    "FJI": ("https://www.youtube.com/channel/UCxLeKmHqzi8lXSt7iahHCSg", "all"),   # PARLIAMENT OF THE REPUBLIC OF FIJI
+    "PYF": ("https://www.youtube.com/channel/UCloO4Y-IYevM0CI40h-gUoQ", "all"),   # AssembleePolynesie
+    "GRL": ("https://www.youtube.com/channel/UCIjOAtv53RHerlfl98fZmcQ", "filter"),   # Kalaallit Nunaata Radioa | KNR TV
+    "GRD": ("https://www.youtube.com/channel/UCHuhtDvg1bcJC9aP7ZjBHfw", "all"),   # Grenada Houses of Parliament HOPGrenada
+    "GGY": ("https://www.youtube.com/channel/UCC7bV5KJPlbGILCAVj3Th_A", "filter"),   # States of Guernsey
+    "IMN": ("https://www.youtube.com/channel/UC7GKuEIT2_CMuGM-i6q-hXQ", "all"),   # Tynwald - the Parliament of the Isle of Man
+    "JAM": ("https://www.youtube.com/channel/UC8X0kkF7HNdWUxTMjAagJxw", "filter"),   # pbcjamaica
+    "JEY": ("https://www.youtube.com/channel/UC_YQyGJnnapagsgpDBwpsDg", "all"),   # States Assembly – Jersey’s elected parliament
+    "KIR": ("https://www.youtube.com/channel/UC6hL4ApJbKNXZZHYuVxRM4A", "all"),   # Maneaba ni Maungatabu
+    "MDV": ("https://www.youtube.com/channel/UCCNGwK1wJExFHdRxUzcbZtg", "all"),   # People's Majlis
+    "MHL": ("https://www.youtube.com/channel/UCaC1H0k4_JELFWyRmbhsD4g", "all"),   # Nitijela - Parliament of Marshall Islands
+    "MUS": ("https://www.youtube.com/channel/UCpRbEVvMAHS45Y1mbHLwbbQ", "all"),   # Mauritius National Assembly
+    "NCL": ("https://www.youtube.com/channel/UC8EZmJGsQHhhXQxB4gtxtiQ", "all"),   # Congrès de la Nouvelle-Calédonie
+    "NFK": ("https://www.youtube.com/channel/UCcB_GOAFVvtOogfua9xFooA", "all"),   # Norfolk Island Regional Council
+    "PLW": ("https://www.youtube.com/channel/UCc7VufcUmUXMkZutIR7H9Jg", "all"),   # The Senate, Palau National Congress
+    "SHN": ("https://www.youtube.com/channel/UCBFgWiNkm0VVvAyBWH0CkkQ", "filter"),   # St Helena Government
+    "KNA": ("https://www.youtube.com/channel/UCMM3pFsfN2CYHpUa-xMbKQg", "filter"),   # ZIZOnline
+    "LCA": ("https://www.youtube.com/channel/UC4al3A_gysYEIzAM1L2qZbg", "filter"),   # Saint Lucia Government
+    "MAF": ("https://www.youtube.com/channel/UCjbcair9XWLnDqRjEpYa4ig", "filter"),   # Collectivité de Saint-Martin Our News
+    "WSM": ("https://www.youtube.com/channel/UCr3GMtN93gkstVvc0FAu83Q", "all"),   # Samoa Parliament
+    "SYC": ("https://www.youtube.com/channel/UCTqupZT9yhkwOG3nmtRluig", "all"),   # The National Assembly of Seychelles
+    "SGP": ("https://www.youtube.com/channel/UC1NBkF4mXpQXvokXgRomh9w", "filter"),   # MDDI Singapore
+    "SXM": ("https://www.youtube.com/channel/UCUJgZueTkFd-iJzYvKgJ-qg", "all"),   # Sint Maarten Parliament
+    "SLB": ("https://www.youtube.com/channel/UCqGCc68Oy5I19akSiXsm5Ow", "all"),   # National Parliament of Solomon Islands
+    "STP": ("https://www.youtube.com/channel/UCOX7tuDH1IF2wsJ8mdjpT9A", "all"),   # Assembleia Nacional de São Tomé e Príncipe
+    "TTO": ("https://www.youtube.com/channel/UCDvTAcd3t8yEAIiM-Ck49lg", "all"),   # ParlView (the Parliament of Trinidad and Tobago's broadcast channel)
+    "TCA": ("https://www.youtube.com/channel/UChNtWbhuWfZMjZtAnrE7SEQ", "all"),   # Parliament of the Turks and Caicos Islands
+    "VUT": ("https://www.youtube.com/channel/UCxEEMV6ADp7-h5yFPxqTidw", "all"),   # Vanuatu Parliament
+    "MSR": ("https://www.youtube.com/channel/UCSrOT5JzaIXcr1btNC9LaTQ", "all"),   # Montserrat Legislative Assembly
+    "VCT": ("https://www.youtube.com/channel/UCnSUlj13EVE449biHplmLlw", "filter"),   # API SVG (government information service)
+}
+LEGIS_WORDS = re.compile(r"house of assembly|house of representatives|parliament|parlement|legislative (assembly|council)|national assembly|"
+                         r"\bsenate\b|lower house|tynwald|states (assembly|of deliberation|meeting)|\bthe states\b|majlis|nitijela|maneaba|"
+                         r"\bcongr[eè]s|\bcongress\b|assembl[ée]e|assembleia|conseil territorial|inatsisartut|fono|ολομέλεια|βουλ|مجلس|"
+                         r"olbiil|regional council|sitting|séance|sessão|sess[ãa]o plen|plen[áa]ri", re.I)
+SITTING = re.compile(r"sitting|session|séance|seance|sess[ãa]o|meeting|plen[aá]r|plénière|συνεδρ|ολομέλεια|جلسة|vergadering|"
+                     r"the honourable the (house|senate)|house of (assembly|representatives)|\bsenate\b|maneaba|ataatsimiinne|states meeting|"
+                     r"question (time|hour)|budget (debate|address)|\bcrs\b|nitijela|regular session", re.I)
+NUMBERED = re.compile(r"\b\d+(st|nd|rd|th|ª|º|e|ème)?\s+(sitting|meeting|day|session|séance|sessão|reunião)|\bday\s+\d+|\bmeeting\s*(no\.?|#)\s*\d+|"
+                      r"\bpublic meeting\s*#?\s*\d+|الانعقاد|دور", re.I)
+NOT_SITTING = re.compile(r"how to|interview|trailer|promo|highlight|tour of|visit|youth|children|mock|explain|documentar|podcast|shorts|"
+                         r"announcement|press (conference|briefing)|remarks|message|speech|discours|ομιλία|ceremon|cérémon|signing|sign |"
+                         r"delegat|recebe|calls on|courtesy|in 90 seconds|cosac|personalit|clerk's corner|update|outreach|getting to know|"
+                         r"know the house|luncheon|showcase|workshop|training|validation|forum|conference|launch|tynwald day|wins at|hustings|know your house|released|news", re.I)
+MONTHS = "jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec|janv|févr|fevr|mars|avr|mai|juin|juil|août|aout|sept|déc|janeiro|fevereiro|março|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro"
+
+
+def sitting_key(t):
+    """One key per sitting day: its date in any common format, else the title without part markers."""
+    s = t.lower()
+    m = re.search(r"\b(\d{1,2})(?:st|nd|rd|th)?[\s./-]+(" + MONTHS + r")\w*\.?,?[\s./-]+(\d{4})", s) \
+        or re.search(r"\b(" + MONTHS + r")\w*\.?\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{4})", s)
+    if m: return "d" + "-".join(sorted(m.groups()))
+    m = re.search(r"\b(\d{1,2})[./-](\d{1,2})[./-](\d{2,4})\b", s) or re.search(r"\b(\d{4})[./-](\d{1,2})[./-](\d{1,2})\b", s)
+    if m: return "n" + "-".join(str(int(x)) for x in m.groups())
+    return re.sub(r"\b(part|pt|parte|partie|session)\s*\w+\b|\(\d\)|\d/\d|[-–|]", " ", s).split("  ")[0].strip()
+
+
+def sittings(titles, mode):
+    dated = lambda t: re.search(r"\b(19|20)\d{2}\b|\b\d{1,2}[./-]\d{1,2}[./-]\d{2,4}\b", t)
+    keep = [t for t in titles if SITTING.search(t) and not NOT_SITTING.search(t) and (dated(t) or NUMBERED.search(t))
+            and (mode == "all" or LEGIS_WORDS.search(t))]
+    return len({sitting_key(t) for t in keep}), keep
+
+
 pct = lambda s: float(re.match(r"\s*([\d.]+)%", s).group(1)) if s and re.match(r"\s*([\d.]+)%", s) else None
 year = lambda s: (re.search(r"\((\d{4})", s or "") or [None, ""])[1]
 num = lambda s: float(re.match(r"\s*([\d,.]+)", s).group(1).replace(",", "")) if s and re.match(r"\s*[\d,.]*\d", s) else None
@@ -75,6 +158,14 @@ def main():
         for k, s in zip(ids, size): i = i * s + cat[k].index(sel[k])
         return es["value"].get(str(i))
     ISO2 = {"MLT": "MT", "CYP": "CY", "ISL": "IS"}
+    titles = {}
+    for f in ("islands_titles.json", "islands_titles_extra.json", "islands_titles_parlview.json"):
+        p = os.path.join(IN, "islands", "youtube", f)
+        if os.path.exists(p): titles.update(json.load(open(p, encoding="utf-8")))
+    names = {}
+    for line in open(__file__, encoding="utf-8"):
+        m = re.match(r'\s+"([A-Z]{3})": \("([^"]+)", "(all|filter)"\),\s+# (.+)', line)
+        if m: names[m.group(1)] = m.group(4).strip()
     out = []
     for iso, n in sorted(ne.items(), key=lambda x: NAMES.get(x[1]["NAME"], x[1]["NAME"])):
         if iso == "ISL":   # Iceland has its own data set (municipalities), docs/data/iceland.csv
@@ -120,11 +211,22 @@ def main():
         status = "Independent country" if sov in (n["NAME"], n["NAME_LONG"]) or iso in ("FSM", "KNA", "VCT", "ATG", "STP", "BHS", "MHL", "SLB") else f"Territory of {'the United Kingdom' if sov == 'United Kingdom' else 'the Netherlands' if sov == 'Netherlands' else sov}"
         if iso in ("COK", "NIU"): status = "Self-governing, in free association with New Zealand"
         out.append({"District": name, "Region": REGION.get(n["SUBREGION"], n["SUBREGION"]), "Status": status,
-                    "Available Board Meetings": 0,
+                    "Available Board Meetings": 0, "Meetings source": "", "Meetings note": "",
                     "Poverty rate or stand-in": f"{rate:.2f}%" if rate != "" else "", "Poverty measure": measure,
                     "Population": round(pop) if pop else "", "Children Ages 0-14 (estimated)": round(pop * share / 100) if pop and share else "",
                     "Enrollment": enr, "Enrollment year": ey, "Locale": loc, "People per km² (estimated)": round(dens) if dens else "",
                     "District ID": f"ISLE-{iso}"})
+    for r in out:
+        iso = r["District ID"].split("-", 1)[1]
+        url, mode = ISLAND_CHANNELS.get(iso, ("", ""))
+        if url and url in titles:
+            n, _ = sittings(titles[url], mode)
+            r["Available Board Meetings"] = n
+            r["Meetings source"] = url
+            r["Meetings note"] = (f"Stand-in: recorded sittings (and committee meetings) of the legislature on {names.get(iso, 'its YouTube channel')}, one per day; "
+                                  "no school board meets in public")
+        else:
+            r["Meetings note"] = "No school board meets in public, and no recorded sittings of the legislature were found on YouTube"
     cols = list(out[0])
     with open(os.path.join(DOCS, "islands.csv"), "w", newline="", encoding="utf-8") as fo:
         w = csv.DictWriter(fo, fieldnames=cols); w.writeheader(); w.writerows(out)

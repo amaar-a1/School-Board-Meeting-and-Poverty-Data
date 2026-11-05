@@ -178,6 +178,7 @@ window.SOURCES = [
       { title: "National poverty line, unemployment, population, enrollment (primary and secondary): World Bank World Development Indicators (SI.POV.NAHC, SL.UEM.TOTL.ZS, SP.POP.TOTL, SP.POP.0014.TO.ZS, SE.PRM.ENRL, SE.SEC.ENRL)", url: "https://data.worldbank.org/" },
       { title: "Norfolk Island unemployment: Australian Bureau of Statistics, 2021 Census QuickStats (Norfolk Island)", url: "https://www.abs.gov.au/census/find-census-data/quickstats/2021/SAL90004" },
       { title: "Where the World Bank has none: CIA World Factbook (2026 edition, and the November 2023 edition for poverty and unemployment), via the factbook.json archive", url: "https://github.com/factbook/factbook.json" },
+      { title: "Meetings (stand-in): each legislature's YouTube channel, found with data-prep/islands_youtube.py and checked by hand (listed in the “Meetings source” column); sittings counted once per day", url: "https://www.youtube.com/" },
       { title: "Borders: Natural Earth 1:10m admin-0 countries", url: "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/" }
     ],
     note: "Many of these figures are old (some Factbook poverty rates are from surveys more than ten years old); each row's “Poverty measure” names the source and year. Locales are estimates from population over land area. Built by data-prep/build_islands.py."
