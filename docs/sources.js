@@ -198,6 +198,29 @@ window.SOURCES = [
     note: "Children 0–17 are worked out from the number on social assistance and the rate. Locales are estimates. Built by data-prep/build_switzerland.py."
   },
   {
+    only: "Chile",
+    group: "Chile: comunas, poverty and enrollment",
+    items: [
+      { title: "Income poverty by comuna: Ministerio de Desarrollo Social y Familia, small-area estimates (SAE) 2024", url: "https://observatorio.ministeriodesarrollosocial.gob.cl/pobreza-comunal-2024" },
+      { title: "Multidimensional poverty by comuna: the same small-area estimates, 2024", url: "https://observatorio.ministeriodesarrollosocial.gob.cl/pobreza-comunal-2024" },
+      { title: "Enrollment: Mineduc, Resumen de Matrícula por Establecimiento Educacional 2026 (added up by comuna; COD_DEPE gives who runs each school)", url: "https://datosabiertos.mineduc.cl/resumen-de-matricula-por-establecimiento-educacional/" },
+      { title: "Borders: geoBoundaries (gbOpen) Chile ADM3, simplified", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings (stand-in): each municipality's or council's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/build_latam.py. Comunas are matched to borders by name; Pozo Almonte has no border in the file."
+  },
+  {
+    only: "Colombia",
+    group: "Colombia: municipalities, poverty and enrollment",
+    items: [
+      { title: "Multidimensional poverty by municipality: DANE, Medida de pobreza multidimensional de fuente censal (2018 census)", url: "https://www.dane.gov.co/index.php/estadisticas-por-tema/pobreza-y-condiciones-de-vida/pobreza-y-desigualdad/medida-de-pobreza-multidimensional-de-fuente-censal" },
+      { title: "Enrollment (estimated) and the education authority: Ministry of Education statistics by municipality, 2024 (datos.gov.co, nudc-7mev)", url: "https://www.datos.gov.co/Educaci-n/MEN_ESTADISTICAS_EN_EDUCACION_EN_PREESCOLAR-B-SICA-Y-MEDIA_POR_MUNICIPIO/nudc-7mev" },
+      { title: "Borders: geoBoundaries (gbOpen) Colombia ADM1 and ADM2, simplified", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings (stand-in): each council's or municipality's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/build_latam.py. Municipalities are matched to borders by name within their department (found from where each border lies). Barranquilla, Colosó, Providencia and Puerto Santander have no border in the file."
+  },
+  {
     only: "Iceland",
     group: "Iceland: municipalities, children and council meetings",
     items: [
