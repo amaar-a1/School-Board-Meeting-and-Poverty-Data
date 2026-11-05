@@ -1,0 +1,57 @@
+AIA -> Anguilla House of Assembly
+ATG -> GovernmentOf AntiguaBarbuda
+ABW -> Boletinextra Aruba
+BHS -> Bahamas Parliament
+BHR -> مجلس النواب Council of Representatives
+BRB -> Barbados Parliament Channel
+BMU -> bernewsdotcom
+VGB -> House of Assembly VI
+CPV -> Assembleia Nacional de Cabo Verde
+CYM -> Cayman Islands Government
+COM -> ACMC, la chaîne Comorienne
+COK -> Cook Islands Parliament
+CUW -> Tweede Kamer der Staten-Generaal
+CYP -> HoR Cyprus
+DMA -> Government of Dominica
+FLK -> Falkland Islands Television
+FRO -> None
+FSM -> FSM CONGRESS LIVE STREAMING
+FJI -> PARLIAMENT OF THE REPUBLIC OF FIJI
+PYF -> AssembleePolynesie
+GRL -> Kalaallit Nunaata Radioa | KNR TV
+GRD -> Grenada Houses of Parliament HOPGrenada
+GGY -> States of Guernsey
+IMN -> Tynwald - the Parliament of the Isle of Man
+JAM -> pbcjamaica
+JEY -> States Assembly – Jersey’s elected parliament
+KIR -> Maneaba ni Maungatabu
+MDV -> People's Majlis
+MLT -> ONE News Malta
+MHL -> Nitijela - Parliament of Marshall Islands
+MUS -> Mauritius National Assembly
+MSR -> House of Assembly VI
+NRU -> The National Assembly of Seychelles
+NCL -> Congrès de la Nouvelle-Calédonie
+NIU -> Legislative Assembly of Alberta
+NFK -> Norfolk Island Regional Council
+PLW -> The Senate, Palau National Congress
+SHN -> St Helena Government
+KNA -> ZIZOnline
+LCA -> Saint Lucia Government
+VCT -> Saint Lucia Government
+BLM -> Conseil économique social et environnemental
+MAF -> Collectivité de Saint-Martin Our News
+WSM -> Samoa Parliament
+SYC -> The National Assembly of Seychelles
+SGP -> MDDI Singapore
+SXM -> Sint Maarten Parliament
+SLB -> National Parliament of Solomon Islands
+STP -> Assembleia Nacional de São Tomé e Príncipe
+TON -> Papua New Guinea Parliament 
+TTO -> Parliament of Trinidad and Tobago
+TCA -> Parliament of the Turks and Caicos Islands
+TUV -> FijiGovernment
+VUT -> Vanuatu Parliament
+WLF -> Congrès de la Nouvelle-Caledonie
+
+---
