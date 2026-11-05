@@ -1,0 +1,1136 @@
+{
+  "results" :
+    [
+      {
+        "resource" :
+          {
+            "name" : "EDUCACION BASICA MUNICIPIO",
+            "id" : "r2hh-kc6c",
+            "resource_name" : null,
+            "parent_fxf" : [ "nudc-7mev" ],
+            "description" : "Contiene información estadística de los niveles preescolar, básica y media relacionada con indicadores sectoriales por Municipio sin atípicos.",
+            "attribution" : "Ministerio de Educación Nacional MinEducación, Bogotá, D.C",
+            "attribution_link" : "https://www.mineducacion.gov.co/portal/",
+            "contact_email" : null,
+            "type" : "filter",
+            "updatedAt" : "2025-12-19T22:59:19.000Z",
+            "createdAt" : "2018-02-27T03:34:04.000Z",
+            "metadata_updated_at" : "2025-12-19T22:59:19.000Z",
+            "data_updated_at" : "2025-11-13T21:34:21.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 20,
+                "page_views_last_month" : 98,
+                "page_views_total" : 7612,
+                "page_views_last_week_log" : 4.392317422778761,
+                "page_views_last_month_log" : 6.6293566200796095,
+                "page_views_total_log" : 12.894249362864231
+              },
+            "columns_name" : [ "MUNICIPIO", "DEPARTAMENTO", "ETC" ],
+            "columns_field_name" : [ "municipio", "departamento", "etc" ],
+            "columns_datatype" : [ "Text", "Text", "Text" ],
+            "columns_description" :
+              [
+                "Nombre del  Municipio",
+                "Nombre del Departamento",
+                "Nombre de la ETC"
+              ],
+            "columns_format" : [ {}, {}, {} ],
+            "download_count" : 345,
+            "provenance" : "community",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2018-02-27T03:34:04.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Educación",
+            "domain_tags" :
+              [
+                "municipio",
+                "ministerio educación",
+                "estadísticas preescolar básica media"
+              ],
+            "domain_metadata" :
+              [
+                { "key" : "Información-de-Datos_Idioma", "value" : "Español" },
+                {
+                  "key" : "Información-de-Datos_Cobertura-Geográfica",
+                  "value" : "Nacional"
+                },
+                {
+                  "key" : "Información-de-Datos_Frecuencia-de-Actualización",
+                  "value" : "Anual"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Sector",
+                  "value" : "Educación"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Área-o-dependencia",
+                  "value" : "Oficina Asesora de Planeación y Finanzas"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Nombre-de-la-Entidad",
+                  "value" : "Ministerio de Educación Nacional"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Orden",
+                  "value" : "Nacional"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Municipio",
+                  "value" : "Bogotá D.C."
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Departamento",
+                  "value" : "Bogotá D.C."
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "www.datos.gov.co",
+            "license" : "Creative Commons Attribution | Share Alike 4.0 International"
+          },
+        "permalink" : "https://www.datos.gov.co/d/r2hh-kc6c",
+        "link" : "https://www.datos.gov.co/Educación/EDUCACION-BASICA-MUNICIPIO/r2hh-kc6c",
+        "owner" :
+          {
+            "id" : "d3ph-2pd3",
+            "user_type" : "interactive",
+            "display_name" : "LEAM ALBERTO"
+          },
+        "creator" :
+          {
+            "id" : "d3ph-2pd3",
+            "user_type" : "interactive",
+            "display_name" : "LEAM ALBERTO"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "EDUCACION ARAUCA",
+            "id" : "uxpq-ybt6",
+            "resource_name" : null,
+            "parent_fxf" : [ "nudc-7mev" ],
+            "description" : "Contiene información estadística de los niveles preescolar, básica y media relacionada con indicadores sectoriales por Municipio sin atípicos.",
+            "attribution" : "Ministerio de Educación Nacional MinEducación, Bogotá, D.C",
+            "attribution_link" : "https://www.mineducacion.gov.co/portal/",
+            "contact_email" : null,
+            "type" : "filter",
+            "updatedAt" : "2025-12-19T23:31:43.000Z",
+            "createdAt" : "2018-01-26T16:29:03.000Z",
+            "metadata_updated_at" : "2025-12-19T23:31:43.000Z",
+            "data_updated_at" : "2025-11-13T21:34:21.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 17,
+                "page_views_last_month" : 85,
+                "page_views_total" : 4593,
+                "page_views_last_week_log" : 4.169925001442312,
+                "page_views_last_month_log" : 6.426264754702098,
+                "page_views_total_log" : 12.165535141377923
+              },
+            "columns_name" : [ "MUNICIPIO", "ETC", "DEPARTAMENTO" ],
+            "columns_field_name" : [ "municipio", "etc", "departamento" ],
+            "columns_datatype" : [ "Text", "Text", "Text" ],
+            "columns_description" :
+              [
+                "Nombre del  Municipio",
+                "Nombre de la ETC",
+                "Nombre del Departamento"
+              ],
+            "columns_format" : [ {}, {}, {} ],
+            "download_count" : 155,
+            "provenance" : "community",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2018-01-26T16:29:02.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Educación",
+            "domain_tags" :
+              [
+                "ministerio educación",
+                "estadísticas preescolar básica media",
+                "municipio"
+              ],
+            "domain_metadata" :
+              [
+                { "key" : "Información-de-Datos_Idioma", "value" : "Español" },
+                {
+                  "key" : "Información-de-Datos_Cobertura-Geográfica",
+                  "value" : "Nacional"
+                },
+                {
+                  "key" : "Información-de-Datos_Frecuencia-de-Actualización",
+                  "value" : "Anual"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Sector",
+                  "value" : "Educación"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Área-o-dependencia",
+                  "value" : "Oficina Asesora de Planeación y Finanzas"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Nombre-de-la-Entidad",
+                  "value" : "Ministerio de Educación Nacional"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Orden",
+                  "value" : "Nacional"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Municipio",
+                  "value" : "Bogotá D.C."
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Departamento",
+                  "value" : "Bogotá D.C."
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "www.datos.gov.co",
+            "license" : "Creative Commons Attribution | Share Alike 4.0 International"
+          },
+        "permalink" : "https://www.datos.gov.co/d/uxpq-ybt6",
+        "link" : "https://www.datos.gov.co/Educación/EDUCACION-ARAUCA/uxpq-ybt6",
+        "owner" :
+          {
+            "id" : "8qhr-b7da",
+            "user_type" : "interactive",
+            "display_name" : "angela rivas"
+          },
+        "creator" :
+          {
+            "id" : "8qhr-b7da",
+            "user_type" : "interactive",
+            "display_name" : "angela rivas"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "educación",
+            "id" : "3p8i-zcgt",
+            "resource_name" : null,
+            "parent_fxf" : [ "nudc-7mev" ],
+            "description" : "Contiene información estadística de los niveles preescolar, básica y media relacionada con indicadores sectoriales por Municipio sin atípicos.",
+            "attribution" : "Ministerio de Educación Nacional MinEducación, Bogotá, D.C",
+            "attribution_link" : "https://www.mineducacion.gov.co/portal/",
+            "contact_email" : null,
+            "type" : "filter",
+            "updatedAt" : "2025-12-19T22:45:00.000Z",
+            "createdAt" : "2018-06-05T19:13:51.000Z",
+            "metadata_updated_at" : "2025-12-19T22:45:00.000Z",
+            "data_updated_at" : "2025-11-13T21:34:21.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 36,
+                "page_views_last_month" : 143,
+                "page_views_total" : 4311,
+                "page_views_last_week_log" : 5.20945336562895,
+                "page_views_last_month_log" : 7.169925001442313,
+                "page_views_total_log" : 12.074141462752507
+              },
+            "columns_name" : [ "MUNICIPIO", "DEPARTAMENTO", "ETC" ],
+            "columns_field_name" : [ "municipio", "departamento", "etc" ],
+            "columns_datatype" : [ "Text", "Text", "Text" ],
+            "columns_description" :
+              [
+                "Nombre del  Municipio",
+                "Nombre del Departamento",
+                "Nombre de la ETC"
+              ],
+            "columns_format" : [ {}, {}, {} ],
+            "download_count" : 225,
+            "provenance" : "community",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2018-06-05T19:13:50.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Educación",
+            "domain_tags" :
+              [
+                "estadísticas preescolar básica media",
+                "municipio",
+                "ministerio educación"
+              ],
+            "domain_metadata" :
+              [
+                { "key" : "Información-de-Datos_Idioma", "value" : "Español" },
+                {
+                  "key" : "Información-de-Datos_Cobertura-Geográfica",
+                  "value" : "Nacional"
+                },
+                {
+                  "key" : "Información-de-Datos_Frecuencia-de-Actualización",
+                  "value" : "Anual"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Sector",
+                  "value" : "Educación"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Área-o-dependencia",
+                  "value" : "Oficina Asesora de Planeación y Finanzas"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Nombre-de-la-Entidad",
+                  "value" : "Ministerio de Educación Nacional"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Orden",
+                  "value" : "Nacional"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Municipio",
+                  "value" : "Bogotá D.C."
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Departamento",
+                  "value" : "Bogotá D.C."
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "www.datos.gov.co",
+            "license" : "Creative Commons Attribution | Share Alike 4.0 International"
+          },
+        "permalink" : "https://www.datos.gov.co/d/3p8i-zcgt",
+        "link" : "https://www.datos.gov.co/Educación/educación/3p8i-zcgt",
+        "owner" :
+          {
+            "id" : "jb54-jug4",
+            "user_type" : "interactive",
+            "display_name" : "cmyorlye8910"
+          },
+        "creator" :
+          {
+            "id" : "jb54-jug4",
+            "user_type" : "interactive",
+            "display_name" : "cmyorlye8910"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Estadisticas Educacion colegio 13 ciudades principales",
+            "id" : "pzkp-6sn2",
+            "resource_name" : null,
+            "parent_fxf" : [ "nudc-7mev" ],
+            "description" : "Contiene información estadística de los niveles preescolar, básica y media relacionada con indicadores sectoriales por Municipio sin atípicos.",
+            "attribution" : "Ministerio de Educación Nacional MinEducación, Bogotá, D.C",
+            "attribution_link" : "https://www.mineducacion.gov.co/portal/",
+            "contact_email" : null,
+            "type" : "filter",
+            "updatedAt" : "2025-12-19T23:26:36.000Z",
+            "createdAt" : "2018-09-24T18:25:11.000Z",
+            "metadata_updated_at" : "2025-12-19T23:26:36.000Z",
+            "data_updated_at" : "2025-11-13T21:34:21.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 19,
+                "page_views_last_month" : 88,
+                "page_views_total" : 2748,
+                "page_views_last_week_log" : 4.321928094887363,
+                "page_views_last_month_log" : 6.475733430966398,
+                "page_views_total_log" : 11.424691191512952
+              },
+            "columns_name" : [ "ETC", "DEPARTAMENTO", "MUNICIPIO" ],
+            "columns_field_name" : [ "etc", "departamento", "municipio" ],
+            "columns_datatype" : [ "Text", "Text", "Text" ],
+            "columns_description" :
+              [
+                "Nombre de la ETC",
+                "Nombre del Departamento",
+                "Nombre del  Municipio"
+              ],
+            "columns_format" : [ {}, {}, {} ],
+            "download_count" : 177,
+            "provenance" : "community",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2018-09-24T18:25:11.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Educación",
+            "domain_tags" :
+              [
+                "municipio",
+                "estadísticas preescolar básica media",
+                "ministerio educación"
+              ],
+            "domain_metadata" :
+              [
+                { "key" : "Información-de-Datos_Idioma", "value" : "Español" },
+                {
+                  "key" : "Información-de-Datos_Cobertura-Geográfica",
+                  "value" : "Nacional"
+                },
+                {
+                  "key" : "Información-de-Datos_Frecuencia-de-Actualización",
+                  "value" : "Anual"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Sector",
+                  "value" : "Educación"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Área-o-dependencia",
+                  "value" : "Oficina Asesora de Planeación y Finanzas"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Nombre-de-la-Entidad",
+                  "value" : "Ministerio de Educación Nacional"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Orden",
+                  "value" : "Nacional"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Municipio",
+                  "value" : "Bogotá D.C."
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Departamento",
+                  "value" : "Bogotá D.C."
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "www.datos.gov.co",
+            "license" : "Creative Commons Attribution | Share Alike 4.0 International"
+          },
+        "permalink" : "https://www.datos.gov.co/d/pzkp-6sn2",
+        "link" : "https://www.datos.gov.co/Educación/Estadisticas-Educacion-colegio-13-ciudades-princip/pzkp-6sn2",
+        "owner" :
+          {
+            "id" : "6xub-dum9",
+            "user_type" : "interactive",
+            "display_name" : "bromerot"
+          },
+        "creator" :
+          {
+            "id" : "6xub-dum9",
+            "user_type" : "interactive",
+            "display_name" : "bromerot"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Datos educacion",
+            "id" : "2a76-5evx",
+            "resource_name" : null,
+            "parent_fxf" : [ "sras-4t5p" ],
+            "description" : "Contiene información estadística de los niveles preescolar, básica y media relacionada con indicadores sectoriales por Entidad Territorial Certificada, este conjunto de datos ha sido actualizado en octubre de 2016 ampliando la información registrada.",
+            "attribution" : "Ministerio de Educación Nacional - MinEducación, Bogotá D.C.",
+            "attribution_link" : "http://www.mineducacion.gov.co",
+            "contact_email" : null,
+            "type" : "filter",
+            "updatedAt" : "2025-12-19T23:11:04.000Z",
+            "createdAt" : "2017-04-11T02:44:37.000Z",
+            "metadata_updated_at" : "2025-12-19T23:11:04.000Z",
+            "data_updated_at" : "2025-11-13T21:28:53.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 40,
+                "page_views_last_month" : 186,
+                "page_views_total" : 12911,
+                "page_views_last_week_log" : 5.357552004618084,
+                "page_views_last_month_log" : 7.546894459887637,
+                "page_views_total_log" : 13.656424863277781
+              },
+            "columns_name" : [ "AÑO", "ETC", "CÓDIGO_ETC" ],
+            "columns_field_name" : [ "ano", "nombre_etc", "cod_etc" ],
+            "columns_datatype" : [ "Number", "Text", "Number" ],
+            "columns_description" :
+              [
+                "Vigencia del indicador",
+                "Nombre Entidad Territorial Certificada o Nombre Secretaría de Educación Certificada.",
+                "Código Entidad Territorial Certificada o Código de Secretaría de Educación Certificada."
+              ],
+            "columns_format" : [ {}, {}, {} ],
+            "download_count" : 1238,
+            "provenance" : "community",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2016-10-27T21:47:50.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Educación",
+            "domain_tags" :
+              [
+                "ministerio educación estadísticas preescolar básica media entidad  territorial"
+              ],
+            "domain_metadata" :
+              [
+                { "key" : "Información-de-Datos_Idioma", "value" : "Español" },
+                {
+                  "key" : "Información-de-Datos_Cobertura-Geográfica",
+                  "value" : "Nacional"
+                },
+                {
+                  "key" : "Información-de-Datos_Frecuencia-de-Actualización",
+                  "value" : "Anual"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Sector",
+                  "value" : "Educación"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Área-o-dependencia",
+                  "value" : "Oficina Asesora de Planeación y Finanzas"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Nombre-de-la-Entidad",
+                  "value" : "Ministerio de Educación Nacional"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Orden",
+                  "value" : "Nacional"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Municipio",
+                  "value" : "Bogotá D.C."
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Departamento",
+                  "value" : "Bogotá D.C."
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "www.datos.gov.co",
+            "license" : "Creative Commons Attribution | Share Alike 4.0 International"
+          },
+        "permalink" : "https://www.datos.gov.co/d/2a76-5evx",
+        "link" : "https://www.datos.gov.co/Educación/Datos-educacion/2a76-5evx",
+        "owner" :
+          {
+            "id" : "8win-pspu",
+            "user_type" : "interactive",
+            "display_name" : "Is2552"
+          },
+        "creator" :
+          {
+            "id" : "8win-pspu",
+            "user_type" : "interactive",
+            "display_name" : "Is2552"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "datos cesar",
+            "id" : "2urr-ge94",
+            "resource_name" : null,
+            "parent_fxf" : [ "nudc-7mev" ],
+            "description" : "Contiene información estadística de los niveles preescolar, básica y media relacionada con indicadores sectoriales por Municipio sin atípicos.",
+            "attribution" : "Ministerio de Educación Nacional MinEducación, Bogotá, D.C",
+            "attribution_link" : "https://www.mineducacion.gov.co/portal/",
+            "contact_email" : null,
+            "type" : "filter",
+            "updatedAt" : "2025-12-19T22:42:17.000Z",
+            "createdAt" : "2017-09-08T01:34:28.000Z",
+            "metadata_updated_at" : "2025-12-19T22:42:17.000Z",
+            "data_updated_at" : "2025-11-13T21:34:21.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 19,
+                "page_views_last_month" : 77,
+                "page_views_total" : 2790,
+                "page_views_last_week_log" : 4.321928094887363,
+                "page_views_last_month_log" : 6.285402218862249,
+                "page_views_total_log" : 11.446566409066069
+              },
+            "columns_name" : [ "MUNICIPIO", "ETC", "DEPARTAMENTO" ],
+            "columns_field_name" : [ "municipio", "etc", "departamento" ],
+            "columns_datatype" : [ "Text", "Text", "Text" ],
+            "columns_description" :
+              [
+                "Nombre del  Municipio",
+                "Nombre de la ETC",
+                "Nombre del Departamento"
+              ],
+            "columns_format" : [ {}, {}, {} ],
+            "download_count" : 95,
+            "provenance" : "community",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2016-10-27T14:50:37.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Educación",
+            "domain_tags" :
+              [
+                "ministerio educación",
+                "municipio",
+                "estadísticas preescolar básica media"
+              ],
+            "domain_metadata" :
+              [
+                { "key" : "Información-de-Datos_Idioma", "value" : "Español" },
+                {
+                  "key" : "Información-de-Datos_Cobertura-Geográfica",
+                  "value" : "Nacional"
+                },
+                {
+                  "key" : "Información-de-Datos_Frecuencia-de-Actualización",
+                  "value" : "Anual"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Sector",
+                  "value" : "Educación"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Área-o-dependencia",
+                  "value" : "Oficina Asesora de Planeación y Finanzas"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Nombre-de-la-Entidad",
+                  "value" : "Ministerio de Educación Nacional"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Orden",
+                  "value" : "Nacional"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Municipio",
+                  "value" : "Bogotá D.C."
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Departamento",
+                  "value" : "Bogotá D.C."
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "www.datos.gov.co",
+            "license" : "Creative Commons Attribution | Share Alike 4.0 International"
+          },
+        "permalink" : "https://www.datos.gov.co/d/2urr-ge94",
+        "link" : "https://www.datos.gov.co/Educación/datos-cesar/2urr-ge94",
+        "owner" :
+          {
+            "id" : "2fds-hh7b",
+            "user_type" : "interactive",
+            "display_name" : "Haysal Aguirre"
+          },
+        "creator" :
+          {
+            "id" : "2fds-hh7b",
+            "user_type" : "interactive",
+            "display_name" : "Haysal Aguirre"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "TMM",
+            "id" : "ck4m-nkyk",
+            "resource_name" : null,
+            "parent_fxf" : [ "nudc-7mev" ],
+            "description" : "Contiene información estadística de los niveles preescolar, básica y media relacionada con indicadores sectoriales por Municipio sin atípicos.",
+            "attribution" : "Ministerio de Educación Nacional MinEducación, Bogotá, D.C",
+            "attribution_link" : "https://www.mineducacion.gov.co/portal/",
+            "contact_email" : null,
+            "type" : "filter",
+            "updatedAt" : "2025-12-19T22:41:21.000Z",
+            "createdAt" : "2017-09-08T00:29:52.000Z",
+            "metadata_updated_at" : "2025-12-19T22:41:21.000Z",
+            "data_updated_at" : "2025-11-13T21:34:21.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 25,
+                "page_views_last_month" : 105,
+                "page_views_total" : 2684,
+                "page_views_last_week_log" : 4.700439718141093,
+                "page_views_last_month_log" : 6.727920454563199,
+                "page_views_total_log" : 11.390706372872776
+              },
+            "columns_name" : [ "ETC", "DEPARTAMENTO", "MUNICIPIO" ],
+            "columns_field_name" : [ "etc", "departamento", "municipio" ],
+            "columns_datatype" : [ "Text", "Text", "Text" ],
+            "columns_description" :
+              [
+                "Nombre de la ETC",
+                "Nombre del Departamento",
+                "Nombre del  Municipio"
+              ],
+            "columns_format" : [ {}, {}, {} ],
+            "download_count" : 214,
+            "provenance" : "community",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2016-10-27T14:50:37.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Educación",
+            "domain_tags" :
+              [
+                "estadísticas preescolar básica media",
+                "municipio",
+                "ministerio educación"
+              ],
+            "domain_metadata" :
+              [
+                { "key" : "Información-de-Datos_Idioma", "value" : "Español" },
+                {
+                  "key" : "Información-de-Datos_Cobertura-Geográfica",
+                  "value" : "Nacional"
+                },
+                {
+                  "key" : "Información-de-Datos_Frecuencia-de-Actualización",
+                  "value" : "Anual"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Sector",
+                  "value" : "Educación"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Área-o-dependencia",
+                  "value" : "Oficina Asesora de Planeación y Finanzas"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Nombre-de-la-Entidad",
+                  "value" : "Ministerio de Educación Nacional"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Orden",
+                  "value" : "Nacional"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Municipio",
+                  "value" : "Bogotá D.C."
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Departamento",
+                  "value" : "Bogotá D.C."
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "www.datos.gov.co",
+            "license" : "Creative Commons Attribution | Share Alike 4.0 International"
+          },
+        "permalink" : "https://www.datos.gov.co/d/ck4m-nkyk",
+        "link" : "https://www.datos.gov.co/Educación/TMM/ck4m-nkyk",
+        "owner" :
+          {
+            "id" : "rhig-wp9n",
+            "user_type" : "interactive",
+            "display_name" : "Felix Jose"
+          },
+        "creator" :
+          {
+            "id" : "rhig-wp9n",
+            "user_type" : "interactive",
+            "display_name" : "Felix Jose"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "EDUCACIÓN sedes y estudaintes por municipio",
+            "id" : "h5bs-kd8p",
+            "resource_name" : null,
+            "parent_fxf" : [ "nudc-7mev" ],
+            "description" : "Contiene información estadística de los niveles preescolar, básica y media relacionada con indicadores sectoriales por Municipio sin atípicos.",
+            "attribution" : "Ministerio de Educación Nacional MinEducación, Bogotá, D.C",
+            "attribution_link" : "https://www.mineducacion.gov.co/portal/",
+            "contact_email" : null,
+            "type" : "filter",
+            "updatedAt" : "2025-12-19T23:31:41.000Z",
+            "createdAt" : "2018-09-26T03:58:14.000Z",
+            "metadata_updated_at" : "2025-12-19T23:31:41.000Z",
+            "data_updated_at" : "2025-11-13T21:34:21.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 10,
+                "page_views_last_month" : 66,
+                "page_views_total" : 2736,
+                "page_views_last_week_log" : 3.4594316186372978,
+                "page_views_last_month_log" : 6.066089190457772,
+                "page_views_total_log" : 11.418379719364957
+              },
+            "columns_name" : [ "MUNICIPIO", "DEPARTAMENTO", "ETC" ],
+            "columns_field_name" : [ "municipio", "departamento", "etc" ],
+            "columns_datatype" : [ "Text", "Text", "Text" ],
+            "columns_description" :
+              [
+                "Nombre del  Municipio",
+                "Nombre del Departamento",
+                "Nombre de la ETC"
+              ],
+            "columns_format" : [ {}, {}, {} ],
+            "download_count" : 193,
+            "provenance" : "community",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2018-09-26T03:58:14.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Educación",
+            "domain_tags" :
+              [
+                "municipio",
+                "estadísticas preescolar básica media",
+                "ministerio educación"
+              ],
+            "domain_metadata" :
+              [
+                { "key" : "Información-de-Datos_Idioma", "value" : "Español" },
+                {
+                  "key" : "Información-de-Datos_Cobertura-Geográfica",
+                  "value" : "Nacional"
+                },
+                {
+                  "key" : "Información-de-Datos_Frecuencia-de-Actualización",
+                  "value" : "Anual"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Sector",
+                  "value" : "Educación"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Área-o-dependencia",
+                  "value" : "Oficina Asesora de Planeación y Finanzas"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Nombre-de-la-Entidad",
+                  "value" : "Ministerio de Educación Nacional"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Orden",
+                  "value" : "Nacional"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Municipio",
+                  "value" : "Bogotá D.C."
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Departamento",
+                  "value" : "Bogotá D.C."
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "www.datos.gov.co",
+            "license" : "Creative Commons Attribution | Share Alike 4.0 International"
+          },
+        "permalink" : "https://www.datos.gov.co/d/h5bs-kd8p",
+        "link" : "https://www.datos.gov.co/Educación/EDUCACIÓN-sedes-y-estudaintes-por-municipio/h5bs-kd8p",
+        "owner" :
+          {
+            "id" : "ehgd-ne83",
+            "user_type" : "interactive",
+            "display_name" : "juan carlos meneses"
+          },
+        "creator" :
+          {
+            "id" : "ehgd-ne83",
+            "user_type" : "interactive",
+            "display_name" : "juan carlos meneses"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Educacion Tado",
+            "id" : "w7rr-nzgp",
+            "resource_name" : null,
+            "parent_fxf" : [ "nudc-7mev" ],
+            "description" : "Contiene información estadística de los niveles preescolar, básica y media relacionada con indicadores sectoriales por Municipio sin atípicos.",
+            "attribution" : "Ministerio de Educación Nacional MinEducación, Bogotá, D.C",
+            "attribution_link" : "https://www.mineducacion.gov.co/portal/",
+            "contact_email" : null,
+            "type" : "filter",
+            "updatedAt" : "2025-12-19T22:57:14.000Z",
+            "createdAt" : "2018-08-26T00:31:06.000Z",
+            "metadata_updated_at" : "2025-12-19T22:57:14.000Z",
+            "data_updated_at" : "2025-11-13T21:34:21.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 8,
+                "page_views_last_month" : 44,
+                "page_views_total" : 1898,
+                "page_views_last_week_log" : 3.1699250014423126,
+                "page_views_last_month_log" : 5.491853096329675,
+                "page_views_total_log" : 10.891024190149498
+              },
+            "columns_name" : [ "DEPARTAMENTO", "MUNICIPIO", "ETC" ],
+            "columns_field_name" : [ "departamento", "municipio", "etc" ],
+            "columns_datatype" : [ "Text", "Text", "Text" ],
+            "columns_description" :
+              [
+                "Nombre del Departamento",
+                "Nombre del  Municipio",
+                "Nombre de la ETC"
+              ],
+            "columns_format" : [ {}, {}, {} ],
+            "download_count" : 71,
+            "provenance" : "community",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2018-08-26T00:31:06.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Educación",
+            "domain_tags" :
+              [
+                "ministerio educación",
+                "municipio",
+                "estadísticas preescolar básica media"
+              ],
+            "domain_metadata" :
+              [
+                { "key" : "Información-de-Datos_Idioma", "value" : "Español" },
+                {
+                  "key" : "Información-de-Datos_Cobertura-Geográfica",
+                  "value" : "Nacional"
+                },
+                {
+                  "key" : "Información-de-Datos_Frecuencia-de-Actualización",
+                  "value" : "Anual"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Sector",
+                  "value" : "Educación"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Área-o-dependencia",
+                  "value" : "Oficina Asesora de Planeación y Finanzas"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Nombre-de-la-Entidad",
+                  "value" : "Ministerio de Educación Nacional"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Orden",
+                  "value" : "Nacional"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Municipio",
+                  "value" : "Bogotá D.C."
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Departamento",
+                  "value" : "Bogotá D.C."
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "www.datos.gov.co",
+            "license" : "Creative Commons Attribution | Share Alike 4.0 International"
+          },
+        "permalink" : "https://www.datos.gov.co/d/w7rr-nzgp",
+        "link" : "https://www.datos.gov.co/Educación/Educacion-Tado/w7rr-nzgp",
+        "owner" :
+          {
+            "id" : "wi47-twjk",
+            "user_type" : "interactive",
+            "display_name" : "caricoa"
+          },
+        "creator" :
+          {
+            "id" : "wi47-twjk",
+            "user_type" : "interactive",
+            "display_name" : "caricoa"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "G. Educación 2011-2017",
+            "id" : "nh8k-693u",
+            "resource_name" : null,
+            "parent_fxf" : [ "nudc-7mev" ],
+            "description" : "Contiene información estadística de los niveles preescolar, básica y media relacionada con indicadores sectoriales por Municipio sin atípicos.",
+            "attribution" : "Ministerio de Educación Nacional MinEducación, Bogotá, D.C",
+            "attribution_link" : "https://www.mineducacion.gov.co/portal/",
+            "contact_email" : null,
+            "type" : "filter",
+            "updatedAt" : "2025-12-19T23:05:39.000Z",
+            "createdAt" : "2018-09-27T21:39:31.000Z",
+            "metadata_updated_at" : "2025-12-19T23:05:39.000Z",
+            "data_updated_at" : "2025-11-13T21:34:21.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 10,
+                "page_views_last_month" : 49,
+                "page_views_total" : 1811,
+                "page_views_last_week_log" : 3.4594316186372978,
+                "page_views_last_month_log" : 5.643856189774724,
+                "page_views_total_log" : 10.823367240046235
+              },
+            "columns_name" : [ "MUNICIPIO", "ETC", "DEPARTAMENTO" ],
+            "columns_field_name" : [ "municipio", "etc", "departamento" ],
+            "columns_datatype" : [ "Text", "Text", "Text" ],
+            "columns_description" :
+              [
+                "Nombre del  Municipio",
+                "Nombre de la ETC",
+                "Nombre del Departamento"
+              ],
+            "columns_format" : [ {}, {}, {} ],
+            "download_count" : 20,
+            "provenance" : "community",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2018-09-27T21:39:31.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Educación",
+            "domain_tags" :
+              [
+                "municipio",
+                "ministerio educación",
+                "estadísticas preescolar básica media"
+              ],
+            "domain_metadata" :
+              [
+                { "key" : "Información-de-Datos_Idioma", "value" : "Español" },
+                {
+                  "key" : "Información-de-Datos_Cobertura-Geográfica",
+                  "value" : "Nacional"
+                },
+                {
+                  "key" : "Información-de-Datos_Frecuencia-de-Actualización",
+                  "value" : "Anual"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Sector",
+                  "value" : "Educación"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Área-o-dependencia",
+                  "value" : "Oficina Asesora de Planeación y Finanzas"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Nombre-de-la-Entidad",
+                  "value" : "Ministerio de Educación Nacional"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Orden",
+                  "value" : "Nacional"
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Municipio",
+                  "value" : "Bogotá D.C."
+                },
+                {
+                  "key" : "Información-de-la-Entidad_Departamento",
+                  "value" : "Bogotá D.C."
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "www.datos.gov.co",
+            "license" : "Creative Commons Attribution | Share Alike 4.0 International"
+          },
+        "permalink" : "https://www.datos.gov.co/d/nh8k-693u",
+        "link" : "https://www.datos.gov.co/Educación/G-Educación-2011-2017/nh8k-693u",
+        "owner" :
+          {
+            "id" : "yf6y-67y8",
+            "user_type" : "interactive",
+            "display_name" : "AlvaroRomero"
+          },
+        "creator" :
+          {
+            "id" : "yf6y-67y8",
+            "user_type" : "interactive",
+            "display_name" : "AlvaroRomero"
+          }
+      }
+    ],
+  "resultSetSize" : 500,
+  "timings" : { "serviceMillis" : 57, "searchMillis" : [ 9, 23 ] },
+  "warnings" : []
+}

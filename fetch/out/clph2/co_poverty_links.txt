@@ -1,0 +1,6 @@
+https://www.dane.gov.co/files/operaciones/PM/anex-PM-PoblacionVictima-2025.xlsx
+https://www.dane.gov.co/files/operaciones/PM/anex-PMPDET-2025.xlsx
+https://www.dane.gov.co/files/operaciones/PM/anex-PMultidimensional-2025.xlsx
+https://www.dane.gov.co/files/operaciones/PM/anex-PMultidimensional-Departamental-2025.xlsx
+https://www.dane.gov.co/index.php/estadisticas-por-tema/pobreza-y-condiciones-de-vida/pobreza-y-desigualdad/medida-de-pobreza-multidimensional-de-fuente-censal
+

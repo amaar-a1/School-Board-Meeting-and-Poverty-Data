@@ -1,0 +1,12 @@
+ok 20394 https://observatorio.ministeriodesarrollosocial.gob.cl/pobreza-comunal-2024
+ok 60618 https://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/pobreza-comunal/2024/SAE_ingresos_2024.xlsx
+ok 56485 https://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/pobreza-comunal/2024/SAE_multidimensional_2024.xlsx
+ok 61613 https://datosabiertos.mineduc.cl/resumen-de-matricula-por-establecimiento-educacional/
+ok 730483 https://datosabiertos.mineduc.cl/wp-content/uploads/2026/10/Resumen-de-Matricula-EE-2026.rar
+ok 1894 https://www.geoboundaries.org/api/current/gbOpen/COL/ADM2/
+COL ADM2 1122
+ok 10603608 https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09592ced973a3448cf66b6100b741b64c0d/releaseData/gbOpen/COL/ADM2/geoBoundaries-COL-ADM2_simplified.geojson
+ok 77502 https://www.dane.gov.co/index.php/estadisticas-por-tema/pobreza-y-condiciones-de-vida/pobreza-multidimensional
+FAIL https://www.dane.gov.co/index.php/estadisticas-por-tema/pobreza-y-condiciones-de-vida/pobreza-y-desigualdad/medida-de-pobreza-multidimensional-municipal-de-fuente-censal: HTTP Error 404: Not Found
+ok 44592 https://www.datos.gov.co/api/catalog/v1?q=estadisticas%20educacion%20preescolar%20basica%20media%20municipio&limit=10
+ok 5413 https://www.datos.gov.co/resource/nudc-7mev.json?$limit=5
