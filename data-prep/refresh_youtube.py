@@ -40,6 +40,16 @@ def channels():
     return sorted(urls)
 
 
+# Any title that might be a meeting in one of the site's languages, or carries a date; the builds' own
+# rules then decide which count. Everything else is dropped so the saved file stays small.
+MAYBE = re.compile(r"meeting|sitting|session|committee|council|board|cabinet|scrutiny|panel|forum|assembly|house|senate|parliament|"
+                   r"séance|seance|conseil|réunion|assembl|sitzung|ausschuss|kreistag|stadtrat|rat\b|landrat|kantonsrat|grosse[nr]? rat|"
+                   r"m[øo]te|m[oö]te|utvalg|udvalg|kommunestyre|bystyre|byr[aå]d|kommunalbestyrelse|n[aä]mnd|fullm[aä]ktige|sammantr|"
+                   r"kokous|valtuusto|lautakunta|vergadering|commissie|gemeenteraad|raad|fund|stj[óo]rn|nefnd|seduta|consiglio|sessi|"
+                   r"consell|parlament|assembleia|sessão|plen|majlis|maneaba|nitijela|tynwald|states|συνεδρ|βουλ|جلس|مجلس|"
+                   r"\d{1,2}[./-]\d{1,2}[./-]\d{2,4}|\b20\d\d\b|^\s*\d+\s{2,}\S", re.I)   # the last: Akureyri's numbered agenda items
+
+
 def titles_of(url):
     out = []
     for tab in ("/videos", "/streams"):
@@ -71,6 +81,7 @@ def main():
         else:
             res[u] = old[u]; failed += 1   # keep the last good list if a listing comes back empty
         print(f"{i + 1}/{len(urls)} {len(res[u])} {u}", flush=True)
+    res = {u: [t for t in v if MAYBE.search(t)] for u, v in res.items()}   # keep the file small: only titles that could be meetings
     json.dump({"refreshed": datetime.date.today().isoformat(), "titles": res}, open(OUT, "w", encoding="utf-8"), ensure_ascii=False)
     print(len(res), "channels;", failed, "kept from the last refresh")
 

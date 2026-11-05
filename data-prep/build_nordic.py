@@ -93,9 +93,10 @@ COUNCIL = {
     "SE": (r"kommunfullm[aä]ktige|fullm[aä]ktige", r"sammantr[aä]de|m[oö]te|\d"),
     "FI": (r"valtuusto|fullmäktige", r"kokous|sammantr[aä]de|\d"),
     "DK": (r"byr[aå]d|kommunalbestyrelse", r"m[øo]de|\d"),
-    "NL": (r"gemeenteraad|raadsvergadering|\braad\b", r"vergadering|\d"),
+    "NL": (r"gemeenteraad|raadsvergadering", r"vergadering|\d{1,2}[ .-]+(\w+|\d{1,2})[ .-]+20\d\d"),
 }
-COUNCIL_NOT = r"ungdom|youth|jongeren|kinder|valg|election|verkiezing|vaalit|kosning|debatt om|intervju|interview"
+COUNCIL_NOT = (r"ungdom|youth|jongeren|kinder|valg|election|verkiezing|vaalit|kosning|debatt om|intervju|interview|motie|kerstgroet|"
+               r"webinar|in actie|petitie|eftersnack|video-referat|referat|sammanfattning|highlights|uitleg|terugblik")
 
 
 def council_count(cc, titles):
