@@ -372,7 +372,7 @@
     draw("trend-meetings", "bar", my, my.map((y) => meet[y]), "Meetings recorded");
     $("trend-meetings-note").textContent = my.length
       ? `Dated meetings for ${withDates.length.toLocaleString()} ${label}, from the dates in their recordings' titles (undated recordings are left out, and the current year is partial).`
-      : "Meeting dates aren't available here: the US and Canadian counts are totals without dates, and recordings without a date in their title can't be placed in a year.";
+      : "Meeting dates aren't available here: the US counts (CivicSearch) are totals without dates, and recordings without a date in their title can't be placed in a year.";
     const py = Object.keys(pov).sort();
     draw("trend-poverty", "line", py, py.map((y) => +(pov[y].reduce((a, b) => a + b, 0) / pov[y].length).toFixed(2)), "Average poverty rate (%)");
     // In "All", each country's measure differs, so draw one line per country instead of one average.
@@ -387,8 +387,8 @@
       ch.update();
     }
     $("trend-poverty-note").textContent = py.length
-      ? `Average of the ${label}' rates each year (${povRows.length.toLocaleString()} ${label}; each country's own measure). Available for Germany, Finland, the Netherlands, Switzerland and New Zealand.`
-      : "Only one year of poverty figures is on the site for this view. Several years are available for Germany, Finland, the Netherlands, Switzerland and New Zealand.";
+      ? `Average of the ${label}' rates each year (${povRows.length.toLocaleString()} ${label}; each country's own measure). Available for the UK, Germany, Finland, the Netherlands, Switzerland and New Zealand.`
+      : "Only one year of poverty figures is on the site for this view. Several years are available for the UK, Germany, Finland, the Netherlands, Switzerland and New Zealand.";
   }
 
   const avg = (vals) => (vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : NaN);
