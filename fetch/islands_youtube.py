@@ -52,7 +52,7 @@ EUROPE = {
     "LUX": "Chambre des Députés Luxembourg séance publique", "LIE": "Landtag Liechtenstein Sitzung", "MCO": "Conseil National Monaco séance publique",
     "AND": "Consell General Andorra sessió", "SMR": "Consiglio Grande e Generale San Marino seduta",
 }
-LEGIS = re.compile(LEGIS = re.compile(r"parliament|parlament|assembly|assembl[ée]e|assembleia|house of|legislat|congr[eè]s|congress|staten|tynwald|"
+LEGIS = re.compile(r"parliament|parlament|assembly|assembl[ée]e|assembleia|house of|legislat|congr[eè]s|congress|staten|tynwald|"
                    r"states|majlis|nitijela|fono|inatsisartut|l[øo]gting|council|conseil|βουλ|senate|maneaba|kelulau|government|gov|ministry|nation|kantonsrat|grosser rat|grand conseil|landrat|gran consiglio|landtag|consell|consiglio|chambre|kanton|canton", re.I)
 
 
