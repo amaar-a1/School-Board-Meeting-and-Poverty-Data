@@ -3,7 +3,7 @@
 The channels were found once (canada_youtube.py, uk_youtube.py, nordic_youtube.py, islands_youtube.py)
 and checked by hand; this script doesn't search for new ones, so no new wrong matches can creep in.
 It writes data-prep/inputs/youtube_titles.json ({"refreshed": date, "titles": {channel URL: [titles]}}),
-which build_uk.py, finish_canada.py, build_nordic.py, build_iceland.py, build_islands.py and
+which build_uk.py, finish_canada.py, build_germany.py, build_nordic.py, build_iceland.py, build_islands.py and
 build_switzerland.py read in place of their older title lists, then recount with their own rules.
 Run by .github/workflows/refresh-meetings.yml. Usage: python3 data-prep/refresh_youtube.py
 """
@@ -27,6 +27,8 @@ def channels():
     from_csv(os.path.join(IN, "canada_channels.csv"))
     for cc in ("NO", "SE", "FI", "DK", "NL"):
         from_csv(os.path.join(IN, "nordic", "youtube", f"{cc}_youtube.csv"))
+    import build_germany as de
+    from_csv(os.path.join(IN, "germany", "youtube", "DE_youtube.csv"), keep=lambda r: r.get("Channel") and de.channel_ok(r["Channel"], "(city)" in r["District"] or r["District"] in ("Berlin", "Hamburg"), r["District"]))
     for f in ("IS_youtube.csv", "IS_youtube_rerun.csv"):
         from_csv(os.path.join(IN, "iceland", "youtube", f))
     from build_islands import ISLAND_CHANNELS

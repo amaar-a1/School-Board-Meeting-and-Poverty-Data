@@ -3,7 +3,7 @@ Ahrweiler,Rhineland-Palatinate,District,Mixed,0,,,,,17317,1472,8.50%,2021:8.9; 2
 Aichach-Friedberg,Bavaria,District,Mixed,0,,,,,21303,1023,4.80%,2021:3.1; 2022:4.4; 2023:4.8,176,,DE-DE275
 Alb-Donau-Kreis,Baden-Württemberg,District,Mixed,0,,,,,31639,1930,6.10%,2021:4.7; 2022:5.9; 2023:6.1,149,,DE-DE145
 Altenburger Land,Thuringia,District,Mixed,0,,,,,10159,1839,18.10%,2021:15.4; 2022:17.1; 2023:18.1,155,,DE-DEG0M
-Altenkirchen (Westerwald),Rhineland-Palatinate,District,Mixed,0,,,,,19333,2223,11.50%,2021:8.8; 2022:11.2; 2023:11.5,206,,DE-DEB13
+Altenkirchen (Westerwald),Rhineland-Palatinate,District,Mixed,2,Council (stand-in),https://www.youtube.com/channel/UCNWSeT05nrL9Onb-CPeVWLA,,,19333,2223,11.50%,2021:8.8; 2022:11.2; 2023:11.5,206,,DE-DEB13
 Altmarkkreis Salzwedel,Saxony-Anhalt,District,Rural,0,,,,,10175,1221,12.00%,2021:11.0; 2022:11.9; 2023:12.0,35,,DE-DEE04
 Altötting,Bavaria,District,Mixed,0,,,,,16935,1219,7.20%,2021:5.9; 2022:7.1; 2023:7.2,202,,DE-DE214
 Alzey-Worms,Rhineland-Palatinate,District,Mixed,0,,,,,19669,1810,9.20%,2021:8.6; 2022:9.4; 2023:9.2,224,,DE-DEB3B
@@ -18,27 +18,27 @@ Aschaffenburg (district),Bavaria,District,Mixed,0,,,,,23881,1791,7.50%,2021:6.8;
 Augsburg (city),Bavaria,District-free city,Urban,0,,,,,39853,4982,12.50%,2021:11.6; 2022:12.7; 2023:12.5,2041,,DE-DE271
 Augsburg (district),Bavaria,District,Mixed,0,,,,,40730,2566,6.30%,2021:5.1; 2022:6.0; 2023:6.3,245,,DE-DE276
 Aurich,Lower Saxony,District,Mixed,0,,,,,25040,3556,14.20%,2021:14.5; 2022:14.5; 2023:14.2,148,,DE-DE947
-Bad Dürkheim,Rhineland-Palatinate,District,Mixed,0,,,,,17946,1633,9.10%,2021:8.0; 2022:9.0; 2023:9.1,226,,DE-DEB3C
+Bad Dürkheim,Rhineland-Palatinate,District,Mixed,1,Council (stand-in),https://www.youtube.com/channel/UCGVq7kydGELR5AJDClN-6nA,2026-10-26,2026:1,17946,1633,9.10%,2021:8.0; 2022:9.0; 2023:9.1,226,,DE-DEB3C
 Bad Kissingen,Bavaria,District,Rural,0,,,,,13995,994,7.10%,2021:5.4; 2022:7.3; 2023:7.1,91,,DE-DE265
 Bad Kreuznach,Rhineland-Palatinate,District,Mixed,0,,,,,22904,3069,13.40%,2021:12.6; 2022:13.7; 2023:13.4,191,,DE-DEB14
 Bad Tölz-Wolfratshausen,Bavaria,District,Mixed,0,,,,,19079,954,5.00%,2021:4.1; 2022:5.6; 2023:5.0,120,,DE-DE216
 "Baden-Baden, Stadtkreis",Baden-Württemberg,District,Mixed,0,,,,,7065,1053,14.90%,2021:10.2; 2022:13.8; 2023:14.9,408,,DE-DE121
 Bamberg (city),Bavaria,District-free city,Suburban,0,,,,,9690,853,8.80%,2021:8.1; 2022:9.7; 2023:8.8,1384,,DE-DE241
 Bamberg (district),Bavaria,District,Mixed,0,,,,,21777,915,4.20%,2021:3.0; 2022:4.0; 2023:4.2,127,,DE-DE245
-Barnim,Brandenburg,District,Mixed,0,,,,,26628,2530,9.50%,2021:9.0; 2022:9.6; 2023:9.5,135,,DE-DE405
+Barnim,Brandenburg,District,Mixed,14,Council (stand-in),https://www.youtube.com/channel/UCg5oodknYQjAKe8MoSXsKhw,2024-03-13,2021:5; 2022:4; 2023:4; 2024:1,26628,2530,9.50%,2021:9.0; 2022:9.6; 2023:9.5,135,,DE-DE405
 Bautzen,Saxony,District,Mixed,0,,,,,39402,3467,8.80%,2021:7.1; 2022:8.7; 2023:8.8,128,,DE-DED2C
 Bayreuth (city),Bavaria,District-free city,Suburban,0,,,,,8110,998,12.30%,2021:11.0; 2022:12.3; 2023:12.3,1090,,DE-DE242
 Bayreuth (district),Bavaria,District,Rural,0,,,,,14043,660,4.70%,2021:3.4; 2022:4.8; 2023:4.7,81,,DE-DE246
 Berchtesgadener Land,Bavaria,District,Mixed,0,,,,,14538,989,6.80%,2021:5.7; 2022:7.0; 2023:6.8,126,,DE-DE215
 Bergstraße,Hesse,District,Mixed,0,,,,,38698,4528,11.70%,2021:10.7; 2022:11.9; 2023:11.7,386,,DE-DE715
-Berlin,Berlin,District-free city,Urban,0,,,,,511418,122229,23.90%,2021:25.2; 2022:24.4; 2023:23.9,4343,,DE-DE300
+Berlin,Berlin,District-free city,Urban,36,Council (stand-in),https://www.youtube.com/channel/UCxQc6GwaiSanFM7v5DypbTA,2026-09-10,2020:1; 2025:19; 2026:16,511418,122229,23.90%,2021:25.2; 2022:24.4; 2023:23.9,4343,,DE-DE300
 Bernkastel-Wittlich,Rhineland-Palatinate,District,Rural,0,,,,,15375,1414,9.20%,2021:7.1; 2022:9.7; 2023:9.2,98,,DE-DEB22
 Biberach,Baden-Württemberg,District,Mixed,0,,,,,32810,1739,5.30%,2021:4.3; 2022:5.4; 2023:5.3,147,,DE-DE146
 Bielefeld (city),North Rhine-Westphalia,District-free city,Suburban,0,,,,,47344,9563,20.20%,2021:20.7; 2022:21.1; 2023:20.2,1280,,DE-DEA41
 Birkenfeld,Rhineland-Palatinate,District,Mixed,0,,,,,11022,1973,17.90%,2021:16.8; 2022:18.3; 2023:17.9,106,,DE-DEB15
 Bochum (city),North Rhine-Westphalia,District-free city,Urban,0,,,,,46275,11013,23.80%,2021:25.1; 2022:24.7; 2023:23.8,2468,,DE-DEA51
 Bodenseekreis,Baden-Württemberg,District,Mixed,0,,,,,31030,2296,7.40%,2021:5.7; 2022:7.6; 2023:7.4,496,,DE-DE147
-Bonn (city),North Rhine-Westphalia,District-free city,Urban,0,,,,,43893,7945,18.10%,2021:19.3; 2022:18.9; 2023:18.1,2371,,DE-DEA22
+Bonn (city),North Rhine-Westphalia,District-free city,Urban,7,Council (stand-in),https://www.youtube.com/channel/UCktuw3J0Uj2Let1Vt4CTonA,2023-06-19,2021:4; 2023:1,43893,7945,18.10%,2021:19.3; 2022:18.9; 2023:18.1,2371,,DE-DEA22
 Borken,North Rhine-Westphalia,District,Mixed,0,,,,,58539,5034,8.60%,2021:7.4; 2022:8.7; 2023:8.6,268,,DE-DEA34
 Bottrop (city),North Rhine-Westphalia,District-free city,Suburban,0,,,,,16372,3242,19.80%,2021:20.5; 2022:19.6; 2023:19.8,1187,,DE-DEA31
 Brandenburg an der Havel (city),Brandenburg,District-free city,Mixed,0,,,,,9180,1937,21.10%,2021:21.1; 2022:22.2; 2023:21.1,378,,DE-DE401
@@ -46,7 +46,7 @@ Braunschweig (city),Lower Saxony,District-free city,Suburban,0,,,,,31085,4601,14
 Breisgau-Hochschwarzwald,Baden-Württemberg,District,Mixed,0,,,,,40289,3102,7.70%,2021:6.4; 2022:7.8; 2023:7.7,199,,DE-DE132
 Bremen (city),Bremen,District-free city,Suburban,0,,,,,83979,24690,29.40%,2021:30.2; 2022:30.3; 2023:29.4,1888,,DE-DE501
 Bremerhaven (city),Bremen,District-free city,Suburban,0,,,,,17968,6361,35.40%,2021:34.3; 2022:35.2; 2023:35.4,1462,,DE-DE502
-Burgenlandkreis,Saxony-Anhalt,District,Mixed,0,,,,,21181,3558,16.80%,2021:14.1; 2022:16.1; 2023:16.8,124,,DE-DEE08
+Burgenlandkreis,Saxony-Anhalt,District,Mixed,6,Council (stand-in),https://www.youtube.com/channel/UC-PUiuFgCcIUKdkUssCD3mA,2026-03-30,2025:4; 2026:2,21181,3558,16.80%,2021:14.1; 2022:16.1; 2023:16.8,124,,DE-DEE08
 Böblingen,Baden-Württemberg,District,Suburban,0,,,,,61087,4887,8.00%,2021:6.9; 2022:8.2; 2023:8.0,639,,DE-DE112
 Börde,Saxony-Anhalt,District,Rural,0,,,,,21878,1882,8.60%,2021:8.5; 2022:9.1; 2023:8.6,71,,DE-DEE07
 Calw,Baden-Württemberg,District,Mixed,0,,,,,24053,1804,7.50%,2021:5.7; 2022:7.1; 2023:7.5,202,,DE-DE12A
@@ -55,7 +55,7 @@ Cham,Bavaria,District,Rural,0,,,,,17410,992,5.70%,2021:4.2; 2022:5.4; 2023:5.7,8
 Chemnitz (city),Saxony,District-free city,Suburban,0,,,,,32438,6423,19.80%,2021:16.0; 2022:18.0; 2023:19.8,1110,,DE-DED41
 Cloppenburg,Lower Saxony,District,Mixed,0,,,,,29570,2780,9.40%,2021:8.2; 2022:9.4; 2023:9.4,125,,DE-DE948
 Coburg (city),Bavaria,District-free city,Suburban,0,,,,,4929,848,17.20%,2021:14.5; 2022:17.3; 2023:17.2,854,,DE-DE243
-Coburg (district),Bavaria,District,Mixed,0,,,,,11398,707,6.20%,2021:6.3; 2022:6.8; 2023:6.2,143,,DE-DE247
+Coburg (district),Bavaria,District,Mixed,2,Council (stand-in),https://www.youtube.com/channel/UCuzeIW_LLF1UD9SBoRrOH6w,2021-02-25,2020:1; 2021:1,11398,707,6.20%,2021:6.3; 2022:6.8; 2023:6.2,143,,DE-DE247
 Cochem-Zell,Rhineland-Palatinate,District,Rural,0,,,,,7898,758,9.60%,2021:7.7; 2022:10.6; 2023:9.6,87,,DE-DEB1C
 Coesfeld,North Rhine-Westphalia,District,Mixed,0,,,,,33420,2874,8.60%,2021:7.2; 2022:8.6; 2023:8.6,204,,DE-DEA35
 Cottbus (city),Brandenburg,District-free city,Suburban,0,,,,,11918,2729,22.90%,2021:22.9; 2022:23.3; 2023:22.9,576,,DE-DE402
@@ -77,13 +77,13 @@ Dortmund (city),North Rhine-Westphalia,District-free city,Urban,0,,,,,86535,2648
 Dresden (city),Saxony,District-free city,Suburban,0,,,,,78218,10090,12.90%,2021:12.0; 2022:13.2; 2023:12.9,1741,,DE-DED21
 Duisburg (city),North Rhine-Westphalia,District-free city,Urban,0,,,,,75678,22779,30.10%,2021:31.0; 2022:31.0; 2023:30.1,2349,,DE-DEA12
 Düren,North Rhine-Westphalia,District,Mixed,0,,,,,40252,6440,16.00%,2021:16.2; 2022:16.6; 2023:16.0,299,,DE-DEA26
-Düsseldorf (city),North Rhine-Westphalia,District-free city,Urban,0,,,,,81345,13503,16.60%,2021:17.9; 2022:17.9; 2023:16.6,2998,,DE-DEA11
+Düsseldorf (city),North Rhine-Westphalia,District-free city,Urban,3,Council (stand-in),https://www.youtube.com/channel/UC7LXjkshoynFTQDHTnQovIA,2024,2024:1,81345,13503,16.60%,2021:17.9; 2022:17.9; 2023:16.6,2998,,DE-DEA11
 Ebersberg,Bavaria,District,Mixed,0,,,,,22538,902,4.00%,2021:2.8; 2022:4.4; 2023:4.0,263,,DE-DE218
 Eichsfeld,Thuringia,District,Mixed,0,,,,,14761,1048,7.10%,2021:6.1; 2022:7.4; 2023:7.1,109,,DE-DEG06
 Eichstätt,Bavaria,District,Mixed,0,,,,,22246,1090,4.90%,2021:2.8; 2022:4.1; 2023:4.9,112,,DE-DE219
 Eifelkreis Bitburg-Prüm,Rhineland-Palatinate,District,Rural,0,,,,,14531,1017,7.00%,2021:5.5; 2022:7.2; 2023:7.0,62,,DE-DEB23
 Eisenach (city),Thuringia,District-free city,Mixed,0,,,,,5443,582,10.70%,2021:9.2; 2022:10.2; 2023:10.7,405,Merged into the Wartburgkreis in July 2021; shown with the Wartburgkreis figure,DE-DEG0N
-Elbe-Elster,Brandenburg,District,Rural,0,,,,,11772,1507,12.80%,2021:11.7; 2022:12.7; 2023:12.8,52,,DE-DE407
+Elbe-Elster,Brandenburg,District,Rural,8,Council (stand-in),https://www.youtube.com/channel/UCnBnbDGungNgYvXMggQvq_g,2025,2020:1; 2025:1,11772,1507,12.80%,2021:11.7; 2022:12.7; 2023:12.8,52,,DE-DE407
 Emden (city),Lower Saxony,District-free city,Mixed,0,,,,,6913,1562,22.60%,2021:24.0; 2022:24.6; 2023:22.6,454,,DE-DE942
 Emmendingen,Baden-Württemberg,District,Mixed,0,,,,,25161,1736,6.90%,2021:5.7; 2022:7.2; 2023:6.9,251,,DE-DE133
 Emsland,Lower Saxony,District,Mixed,0,,,,,50683,3953,7.80%,2021:6.9; 2022:7.9; 2023:7.8,116,,DE-DE949
@@ -105,7 +105,7 @@ Frankfurt am Main (city),Hesse,District-free city,Urban,0,,,,,106566,17797,16.70
 "Freiburg im Breisgau, Stadtkreis",Baden-Württemberg,District,Suburban,0,,,,,31668,4307,13.60%,2021:13.3; 2022:13.8; 2023:13.6,1548,,DE-DE131
 Freising,Bavaria,District,Mixed,0,,,,,26946,1293,4.80%,2021:3.2; 2022:4.4; 2023:4.8,231,,DE-DE21B
 Freudenstadt,Baden-Württemberg,District,Mixed,0,,,,,17423,1254,7.20%,2021:5.9; 2022:7.1; 2023:7.2,140,,DE-DE12C
-Freyung-Grafenau,Bavaria,District,Rural,0,,,,,10186,530,5.20%,2021:3.4; 2022:5.0; 2023:5.2,80,,DE-DE225
+Freyung-Grafenau,Bavaria,District,Rural,3,Council (stand-in),https://www.youtube.com/channel/UC72bJ1OXsrP2D9Sh8KreOhQ,2020-10-12,2020:3,10186,530,5.20%,2021:3.4; 2022:5.0; 2023:5.2,80,,DE-DE225
 Friesland (DE),Lower Saxony,District,Mixed,0,,,,,13191,1491,11.30%,2021:10.2; 2022:11.1; 2023:11.3,166,,DE-DE94A
 Fulda,Hesse,District,Mixed,0,,,,,31653,3165,10.00%,2021:8.2; 2022:9.9; 2023:10.0,161,,DE-DE732
 Fürstenfeldbruck,Bavaria,District,Suburban,0,,,,,32533,2082,6.40%,2021:6.0; 2022:6.8; 2023:6.4,500,,DE-DE21C
@@ -121,14 +121,14 @@ Goslar,Lower Saxony,District,Mixed,0,,,,,14514,2816,19.40%,2021:18.2; 2022:19.0;
 Gotha,Thuringia,District,Mixed,0,,,,,17199,2012,11.70%,2021:11.1; 2022:11.8; 2023:11.7,146,,DE-DEG0C
 Grafschaft Bentheim,Lower Saxony,District,Mixed,0,,,,,21794,2049,9.40%,2021:7.8; 2022:9.8; 2023:9.4,147,,DE-DE94B
 Greiz,Thuringia,District,Mixed,0,,,,,11104,1077,9.70%,2021:7.6; 2022:9.3; 2023:9.7,112,,DE-DEG0L
-Groß-Gerau,Hesse,District,Suburban,0,,,,,41360,6039,14.60%,2021:14.4; 2022:14.4; 2023:14.6,607,,DE-DE717
+Groß-Gerau,Hesse,District,Suburban,3,Council (stand-in),https://www.youtube.com/channel/UC4XLasXsQdz0k0YHi8OPEXg,2017-06,2017:3,41360,6039,14.60%,2021:14.4; 2022:14.4; 2023:14.6,607,,DE-DE717
 Göppingen,Baden-Württemberg,District,Mixed,0,,,,,38130,4271,11.20%,2021:9.4; 2022:10.8; 2023:11.2,404,,DE-DE114
 Görlitz,Saxony,District,Mixed,0,,,,,30336,4277,14.10%,2021:12.4; 2022:14.1; 2023:14.1,119,,DE-DED2D
 Göttingen,Lower Saxony,District,Mixed,0,,,,,41118,5757,14.00%,2021:12.2; 2022:13.5; 2023:14.0,188,,DE-DE91C
 Günzburg,Bavaria,District,Mixed,0,,,,,19312,869,4.50%,2021:3.6; 2022:4.3; 2023:4.5,171,,DE-DE278
 Gütersloh,North Rhine-Westphalia,District,Mixed,0,,,,,54089,5463,10.10%,2021:8.8; 2022:9.8; 2023:10.1,376,,DE-DEA42
 Hagen (city),North Rhine-Westphalia,District-free city,Suburban,0,,,,,28899,8467,29.30%,2021:30.4; 2022:29.8; 2023:29.3,1198,,DE-DEA53
-Halle (Saale) (city),Saxony-Anhalt,District-free city,Suburban,0,,,,,29688,7689,25.90%,2021:26.5; 2022:27.2; 2023:25.9,1696,,DE-DEE02
+Halle (Saale) (city),Saxony-Anhalt,District-free city,Suburban,1,School committee,https://www.youtube.com/channel/UCzYtRYcXjgsYzuZwAvb0nOw,2022-01-14,2022:1,29688,7689,25.90%,2021:26.5; 2022:27.2; 2023:25.9,1696,,DE-DEE02
 Hamburg,Hamburg,District-free city,Urban,0,,,,,265637,53393,20.10%,2021:19.1; 2022:20.2; 2023:20.1,2616,,DE-DE600
 Hameln-Pyrmont,Lower Saxony,District,Mixed,0,,,,,20360,4092,20.10%,2021:18.3; 2022:20.4; 2023:20.1,189,,DE-DE923
 Hamm (city),North Rhine-Westphalia,District-free city,Suburban,0,,,,,25835,4573,17.70%,2021:18.4; 2022:18.5; 2023:17.7,795,,DE-DEA54
@@ -151,13 +151,13 @@ Hildburghausen,Thuringia,District,Rural,0,,,,,7401,533,7.20%,2021:5.6; 2022:7.4;
 Hildesheim,Lower Saxony,District,Mixed,0,,,,,35486,5713,16.10%,2021:15.2; 2022:16.4; 2023:16.1,222,,DE-DE925
 Hochsauerlandkreis,North Rhine-Westphalia,District,Mixed,0,,,,,35119,3687,10.50%,2021:9.7; 2022:11.1; 2023:10.5,134,,DE-DEA57
 Hochtaunuskreis,Hesse,District,Suburban,0,,,,,35175,3412,9.70%,2021:9.2; 2022:10.4; 2023:9.7,500,,DE-DE718
-Hof (city),Bavaria,District-free city,Suburban,0,,,,,6417,1322,20.60%,2021:22.1; 2022:22.1; 2023:20.6,818,,DE-DE244
+Hof (city),Bavaria,District-free city,Suburban,4,Council (stand-in),https://www.youtube.com/channel/UC6XyroOdxz2zHaQRcXfKDmw,2022-10-17,2021:1; 2022:3,6417,1322,20.60%,2021:22.1; 2022:22.1; 2023:20.6,818,,DE-DE244
 Hof (district),Bavaria,District,Mixed,0,,,,,11623,1000,8.60%,2021:6.9; 2022:8.1; 2023:8.6,104,,DE-DE249
 Hohenlohekreis,Baden-Württemberg,District,Mixed,0,,,,,17130,891,5.20%,2021:3.4; 2022:5.2; 2023:5.2,149,,DE-DE119
 Holzminden,Lower Saxony,District,Rural,0,,,,,8533,1374,16.10%,2021:14.7; 2022:17.2; 2023:16.1,95,,DE-DE926
 Höxter,North Rhine-Westphalia,District,Mixed,0,,,,,19089,2081,10.90%,2021:9.1; 2022:11.3; 2023:10.9,116,,DE-DEA44
 Ilm-Kreis,Thuringia,District,Mixed,0,,,,,13883,1819,13.10%,2021:11.4; 2022:13.0; 2023:13.1,126,,DE-DEG0F
-Ingolstadt (city),Bavaria,District-free city,Suburban,0,,,,,21175,2096,9.90%,2021:9.7; 2022:10.7; 2023:9.9,1080,,DE-DE211
+Ingolstadt (city),Bavaria,District-free city,Suburban,6,Council (stand-in),https://www.youtube.com/channel/UCxXRL4X4BlzeP55vCtjdwhQ,2019-07,2018:2; 2019:2,21175,2096,9.90%,2021:9.7; 2022:10.7; 2023:9.9,1080,,DE-DE211
 Jena (city),Thuringia,District-free city,Suburban,0,,,,,13948,1367,9.80%,2021:9.8; 2022:10.2; 2023:9.8,956,,DE-DEG03
 Jerichower Land,Saxony-Anhalt,District,Rural,0,,,,,11228,1370,12.20%,2021:11.2; 2022:13.1; 2023:12.2,57,,DE-DEE06
 Kaiserslautern (city),Rhineland-Palatinate,District-free city,Suburban,0,,,,,12680,2523,19.90%,2021:21.1; 2022:20.4; 2023:19.9,718,,DE-DEB32
@@ -172,17 +172,17 @@ Kempten (Allgäu) (city),Bavaria,District-free city,Suburban,0,,,,,9220,774,8.40
 Kiel (city),Schleswig-Holstein,District-free city,Urban,0,,,,,31029,8005,25.80%,2021:26.8; 2022:26.5; 2023:25.8,2156,,DE-DEF02
 Kitzingen,Bavaria,District,Mixed,0,,,,,13291,691,5.20%,2021:3.8; 2022:5.3; 2023:5.2,134,,DE-DE268
 Kleve,North Rhine-Westphalia,District,Mixed,0,,,,,44443,4978,11.20%,2021:10.3; 2022:11.2; 2023:11.2,266,,DE-DEA1B
-Koblenz (city),Rhineland-Palatinate,District-free city,Suburban,0,,,,,14276,2598,18.20%,2021:17.3; 2022:18.6; 2023:18.2,1134,,DE-DEB11
+Koblenz (city),Rhineland-Palatinate,District-free city,Suburban,13,Council (stand-in),https://www.youtube.com/channel/UCFMb0FEloI9WiRlDVqRlyzA,2026-10-29,2025:6; 2026:7,14276,2598,18.20%,2021:17.3; 2022:18.6; 2023:18.2,1134,,DE-DEB11
 Konstanz,Baden-Württemberg,District,Mixed,0,,,,,40569,4138,10.20%,2021:8.9; 2022:10.1; 2023:10.2,379,,DE-DE138
-Krefeld (city),North Rhine-Westphalia,District-free city,Suburban,0,,,,,32056,7469,23.30%,2021:23.4; 2022:23.8; 2023:23.3,1710,,DE-DEA14
+Krefeld (city),North Rhine-Westphalia,District-free city,Suburban,24,Council (stand-in),https://www.youtube.com/channel/UCO0pCulGw2o2O-rbGuO3eVA,2026-11-05,2023:3; 2024:7; 2025:7; 2026:7,32056,7469,23.30%,2021:23.4; 2022:23.8; 2023:23.3,1710,,DE-DEA14
 Kronach,Bavaria,District,Rural,0,,,,,7543,437,5.80%,2021:5.3; 2022:6.1; 2023:5.8,100,,DE-DE24A
 Kulmbach,Bavaria,District,Mixed,0,,,,,8755,578,6.60%,2021:5.7; 2022:7.0; 2023:6.6,109,,DE-DE24B
 Kusel,Rhineland-Palatinate,District,Mixed,0,,,,,9307,1163,12.50%,2021:10.0; 2022:11.9; 2023:12.5,121,,DE-DEB3G
 Kyffhäuserkreis,Thuringia,District,Rural,0,,,,,8578,1424,16.60%,2021:15.4; 2022:17.0; 2023:16.6,70,,DE-DEG0A
 Köln (city),North Rhine-Westphalia,District-free city,Urban,0,,,,,135678,28492,21.00%,2021:21.6; 2022:21.7; 2023:21.0,2640,,DE-DEA23
-Lahn-Dill-Kreis,Hesse,District,Mixed,0,,,,,36121,5599,15.50%,2021:13.9; 2022:15.3; 2023:15.5,239,,DE-DE722
+Lahn-Dill-Kreis,Hesse,District,Mixed,12,Council (stand-in),https://www.youtube.com/channel/UCm5CODOrr3X-Urg_Y_wQ0jQ,2026-09-28,2025:7; 2026:5,36121,5599,15.50%,2021:13.9; 2022:15.3; 2023:15.5,239,,DE-DE722
 Landau in der Pfalz (city),Rhineland-Palatinate,District-free city,Suburban,0,,,,,6361,986,15.50%,2021:14.7; 2022:15.6; 2023:15.5,581,,DE-DEB33
-Landkreis Rostock,Mecklenburg-Vorpommern,District,Rural,0,,,,,29922,3082,10.30%,2021:8.8; 2022:10.0; 2023:10.3,65,,DE-DE80K
+Landkreis Rostock,Mecklenburg-Vorpommern,District,Rural,7,Council (stand-in),https://www.youtube.com/channel/UCcPRQdAjL5QYuK1srnuFy1g,2026-10-07,2025:2; 2026:5,29922,3082,10.30%,2021:8.8; 2022:10.0; 2023:10.3,65,,DE-DE80K
 Landsberg am Lech,Bavaria,District,Mixed,0,,,,,18171,854,4.70%,2021:3.2; 2022:4.3; 2023:4.7,162,,DE-DE21E
 Landshut (city),Bavaria,District-free city,Suburban,0,,,,,9856,1104,11.20%,2021:9.1; 2022:12.1; 2023:11.2,1065,,DE-DE221
 Landshut (district),Bavaria,District,Mixed,0,,,,,24784,1165,4.70%,2021:3.6; 2022:4.4; 2023:4.7,120,,DE-DE227
@@ -201,7 +201,7 @@ Lörrach,Baden-Württemberg,District,Mixed,0,,,,,35768,3541,9.90%,2021:8.3; 2022
 Lübeck (city),Schleswig-Holstein,District-free city,Suburban,0,,,,,26688,5818,21.80%,2021:22.8; 2022:22.6; 2023:21.8,1142,,DE-DEF03
 Lüchow-Dannenberg,Lower Saxony,District,Rural,0,,,,,5772,843,14.60%,2021:14.0; 2022:14.7; 2023:14.6,38,,DE-DE934
 Lüneburg (district),Lower Saxony,District,Mixed,0,,,,,25323,3089,12.20%,2021:11.8; 2022:12.8; 2023:12.2,136,,DE-DE935
-Magdeburg (city),Saxony-Anhalt,District-free city,Suburban,0,,,,,30551,6416,21.00%,2021:20.9; 2022:21.9; 2023:21.0,1268,,DE-DEE03
+Magdeburg (city),Saxony-Anhalt,District-free city,Suburban,114,Council (stand-in),https://www.youtube.com/channel/UC-sV4v_gedLb1K1uPl7IXkQ,2026-09-24,2020:14; 2021:17; 2022:16; 2023:18; 2024:16; 2025:18; 2026:15,30551,6416,21.00%,2021:20.9; 2022:21.9; 2023:21.0,1268,,DE-DEE03
 Main-Kinzig-Kreis,Hesse,District,Mixed,0,,,,,60962,8108,13.30%,2021:12.4; 2022:13.1; 2023:13.3,301,,DE-DE719
 Main-Spessart,Bavaria,District,Rural,0,,,,,16803,958,5.70%,2021:4.4; 2022:5.4; 2023:5.7,96,,DE-DE26A
 Main-Tauber-Kreis,Baden-Württemberg,District,Mixed,0,,,,,18391,1379,7.50%,2021:6.0; 2022:7.5; 2023:7.5,102,,DE-DE11B
@@ -209,8 +209,8 @@ Main-Taunus-Kreis,Hesse,District,Suburban,0,,,,,35442,3544,10.00%,2021:8.8; 2022
 Mainz (city),Rhineland-Palatinate,District-free city,Urban,0,,,,,27915,4187,15.00%,2021:15.6; 2022:16.1; 2023:15.0,2361,,DE-DEB35
 Mainz-Bingen,Rhineland-Palatinate,District,Mixed,0,,,,,30270,2543,8.40%,2021:7.9; 2022:8.9; 2023:8.4,349,,DE-DEB3J
 "Mannheim, Stadtkreis",Baden-Württemberg,District,Urban,0,,,,,41273,8131,19.70%,2021:19.2; 2022:20.2; 2023:19.7,2265,,DE-DE126
-Mansfeld-Südharz,Saxony-Anhalt,District,Rural,0,,,,,14397,2836,19.70%,2021:19.5; 2022:19.8; 2023:19.7,90,,DE-DEE0A
-Marburg-Biedenkopf,Hesse,District,Mixed,0,,,,,32463,3798,11.70%,2021:10.5; 2022:11.9; 2023:11.7,192,,DE-DE724
+Mansfeld-Südharz,Saxony-Anhalt,District,Rural,28,Council (stand-in),https://www.youtube.com/channel/UClv938kEY-lmxEtVAalhYpg,2026-09-30,2021:1; 2022:3; 2023:6; 2024:7; 2025:5; 2026:6,14397,2836,19.70%,2021:19.5; 2022:19.8; 2023:19.7,90,,DE-DEE0A
+Marburg-Biedenkopf,Hesse,District,Mixed,1,Council (stand-in),https://www.youtube.com/channel/UCGez20cBhQEYeZDzOtqXK3Q,,,32463,3798,11.70%,2021:10.5; 2022:11.9; 2023:11.7,192,,DE-DE724
 Mayen-Koblenz,Rhineland-Palatinate,District,Mixed,0,,,,,30676,3006,9.80%,2021:8.5; 2022:9.8; 2023:9.8,269,,DE-DEB17
 Mecklenburgische Seenplatte,Mecklenburg-Vorpommern,District,Rural,0,,,,,30233,4928,16.30%,2021:15.1; 2022:16.2; 2023:16.3,48,,DE-DE80J
 Meißen,Saxony,District,Mixed,0,,,,,31444,3019,9.60%,2021:8.4; 2022:9.7; 2023:9.6,167,,DE-DED2E
@@ -237,13 +237,13 @@ Neumünster (city),Schleswig-Holstein,District-free city,Suburban,0,,,,,10364,24
 Neunkirchen,Saarland,District,Suburban,0,,,,,17257,3797,22.00%,2021:22.0; 2022:22.9; 2023:22.0,534,,DE-DEC03
 Neustadt a. d. Aisch-Bad Windsheim,Bavaria,District,Rural,0,,,,,14643,908,6.20%,2021:5.3; 2022:6.2; 2023:6.2,80,,DE-DE25A
 Neustadt a. d. Waldnaab,Bavaria,District,Rural,0,,,,,13684,766,5.60%,2021:4.4; 2022:5.8; 2023:5.6,68,,DE-DE237
-Neustadt an der Weinstraße (city),Rhineland-Palatinate,District-free city,Mixed,0,,,,,7366,1127,15.30%,2021:15.0; 2022:16.0; 2023:15.3,452,,DE-DEB36
-Neuwied,Rhineland-Palatinate,District,Mixed,0,,,,,27729,3244,11.70%,2021:10.8; 2022:11.8; 2023:11.7,305,,DE-DEB18
-Nienburg (Weser),Lower Saxony,District,Rural,0,,,,,17236,3051,17.70%,2021:16.7; 2022:18.0; 2023:17.7,88,,DE-DE927
-Nordfriesland,Schleswig-Holstein,District,Rural,0,,,,,21983,2462,11.20%,2021:10.1; 2022:11.3; 2023:11.2,83,,DE-DEF07
+Neustadt an der Weinstraße (city),Rhineland-Palatinate,District-free city,Mixed,22,Council (stand-in),https://www.youtube.com/channel/UCF9sl8_AOTZNyDtomARdSgw,,,7366,1127,15.30%,2021:15.0; 2022:16.0; 2023:15.3,452,,DE-DEB36
+Neuwied,Rhineland-Palatinate,District,Mixed,1,Council (stand-in),https://www.youtube.com/channel/UC-q6MZIJh-Bp6dpSBmpWKtg,,,27729,3244,11.70%,2021:10.8; 2022:11.8; 2023:11.7,305,,DE-DEB18
+Nienburg (Weser),Lower Saxony,District,Rural,1,Council (stand-in),https://www.youtube.com/channel/UCl1jbt208Zx70qf-y7vAiyw,,,17236,3051,17.70%,2021:16.7; 2022:18.0; 2023:17.7,88,,DE-DE927
+Nordfriesland,Schleswig-Holstein,District,Rural,20,Council (stand-in),https://www.youtube.com/channel/UCfFb7mI0Ley_EMubzgI3DNw,,,21983,2462,11.20%,2021:10.1; 2022:11.3; 2023:11.2,83,,DE-DEF07
 Nordhausen,Thuringia,District,Mixed,0,,,,,10034,1796,17.90%,2021:16.8; 2022:17.9; 2023:17.9,114,,DE-DEG07
 Nordsachsen,Saxony,District,Mixed,0,,,,,26580,2924,11.00%,2021:10.2; 2022:11.2; 2023:11.0,100,,DE-DED53
-Nordwestmecklenburg,Mecklenburg-Vorpommern,District,Rural,0,,,,,20364,2342,11.50%,2021:11.0; 2022:12.1; 2023:11.5,76,,DE-DE80M
+Nordwestmecklenburg,Mecklenburg-Vorpommern,District,Rural,38,Council (stand-in),https://www.youtube.com/channel/UC_Z8q1vaj9HHG92RYri9yCA,2026-03-05,2021:4; 2026:1,20364,2342,11.50%,2021:11.0; 2022:12.1; 2023:11.5,76,,DE-DE80M
 Northeim,Lower Saxony,District,Rural,0,,,,,16071,2459,15.30%,2021:13.5; 2022:15.5; 2023:15.3,100,,DE-DE918
 Nürnberg (city),Bavaria,District-free city,Urban,0,,,,,70746,11673,16.50%,2021:15.3; 2022:16.4; 2023:16.5,2854,,DE-DE254
 Nürnberger Land,Bavaria,District,Mixed,0,,,,,24153,1280,5.30%,2021:4.6; 2022:5.3; 2023:5.3,212,,DE-DE259
@@ -251,7 +251,7 @@ Oberallgäu,Bavaria,District,Mixed,0,,,,,22545,924,4.10%,2021:2.9; 2022:3.7; 202
 Oberbergischer Kreis,North Rhine-Westphalia,District,Mixed,0,,,,,40893,4294,10.50%,2021:9.5; 2022:11.0; 2023:10.5,301,,DE-DEA2A
 Oberhausen (city),North Rhine-Westphalia,District-free city,Urban,0,,,,,30461,8285,27.20%,2021:28.1; 2022:28.8; 2023:27.2,2774,,DE-DEA17
 Oberhavel,Brandenburg,District,Mixed,0,,,,,29319,2375,8.10%,2021:7.9; 2022:8.4; 2023:8.1,123,,DE-DE40A
-Oberspreewald-Lausitz,Brandenburg,District,Rural,0,,,,,13051,1918,14.70%,2021:13.1; 2022:14.0; 2023:14.7,93,,DE-DE40B
+Oberspreewald-Lausitz,Brandenburg,District,Rural,3,Council (stand-in),https://www.youtube.com/channel/UCracb8hDVTnrxtvXZB_x3UA,2022-06-30,2021:1; 2022:2,13051,1918,14.70%,2021:13.1; 2022:14.0; 2023:14.7,93,,DE-DE40B
 Odenwaldkreis,Hesse,District,Mixed,0,,,,,12606,1513,12.00%,2021:11.7; 2022:12.4; 2023:12.0,151,,DE-DE71B
 Oder-Spree,Brandenburg,District,Rural,0,,,,,23080,2516,10.90%,2021:10.4; 2022:11.4; 2023:10.9,82,,DE-DE40C
 Offenbach (district),Hesse,District,Suburban,0,,,,,52967,6833,12.90%,2021:12.8; 2022:13.1; 2023:12.9,1012,,DE-DE71C
@@ -259,7 +259,7 @@ Offenbach am Main (city),Hesse,District-free city,Urban,0,,,,,20008,3942,19.70%,
 Oldenburg (Oldenburg) (city),Lower Saxony,District-free city,Suburban,0,,,,,22497,4274,19.00%,2021:20.4; 2022:20.1; 2023:19.0,1730,,DE-DE943
 Oldenburg (district),Lower Saxony,District,Mixed,0,,,,,18708,1646,8.80%,2021:8.0; 2022:9.3; 2023:8.8,124,,DE-DE94D
 Olpe,North Rhine-Westphalia,District,Mixed,0,,,,,18756,1613,8.60%,2021:7.3; 2022:8.8; 2023:8.6,188,,DE-DEA59
-Ortenaukreis,Baden-Württemberg,District,Mixed,0,,,,,65189,5867,9.00%,2021:7.7; 2022:9.0; 2023:9.0,241,,DE-DE134
+Ortenaukreis,Baden-Württemberg,District,Mixed,1,Council (stand-in),https://www.youtube.com/channel/UCYan3fTerMadCd_98BA_fOQ,2020-07-21,2020:1,65189,5867,9.00%,2021:7.7; 2022:9.0; 2023:9.0,241,,DE-DE134
 Osnabrück (city),Lower Saxony,District-free city,Suburban,0,,,,,20669,4030,19.50%,2021:19.0; 2022:19.2; 2023:19.5,1382,,DE-DE944
 Osnabrück (district),Lower Saxony,District,Mixed,0,,,,,53071,3874,7.30%,2021:6.0; 2022:7.7; 2023:7.3,168,,DE-DE94E
 Ostalbkreis,Baden-Württemberg,District,Mixed,0,,,,,46227,3559,7.70%,2021:6.5; 2022:7.9; 2023:7.7,210,,DE-DE11D
@@ -267,7 +267,7 @@ Ostallgäu,Bavaria,District,Mixed,0,,,,,21437,900,4.20%,2021:3.3; 2022:4.6; 2023
 Osterholz,Lower Saxony,District,Mixed,0,,,,,16491,1468,8.90%,2021:8.2; 2022:9.3; 2023:8.9,176,,DE-DE936
 Ostholstein,Schleswig-Holstein,District,Mixed,0,,,,,23333,2613,11.20%,2021:10.4; 2022:11.3; 2023:11.2,148,,DE-DEF08
 Ostprignitz-Ruppin,Brandenburg,District,Rural,0,,,,,12161,1447,11.90%,2021:10.8; 2022:11.7; 2023:11.9,40,,DE-DE40D
-Paderborn,North Rhine-Westphalia,District,Mixed,0,,,,,46401,5707,12.30%,2021:11.6; 2022:12.8; 2023:12.3,255,,DE-DEA47
+Paderborn,North Rhine-Westphalia,District,Mixed,4,Council (stand-in),https://www.youtube.com/channel/UCnHqAlq3HoYDbzfsBU1KKjw,2022-12-19,2022:4,46401,5707,12.30%,2021:11.6; 2022:12.8; 2023:12.3,255,,DE-DEA47
 Passau (city),Bavaria,District-free city,Suburban,0,,,,,6205,956,15.40%,2021:13.1; 2022:14.6; 2023:15.4,815,,DE-DE222
 Passau (district),Bavaria,District,Mixed,0,,,,,26144,1909,7.30%,2021:6.3; 2022:7.2; 2023:7.3,128,,DE-DE228
 Peine,Lower Saxony,District,Mixed,0,,,,,20986,3106,14.80%,2021:14.0; 2022:15.7; 2023:14.8,258,,DE-DE91A
@@ -281,10 +281,10 @@ Potsdam-Mittelmark,Brandenburg,District,Rural,0,,,,,30583,1835,6.00%,2021:4.7; 2
 Prignitz,Brandenburg,District,Rural,0,,,,,8956,1523,17.00%,2021:16.7; 2022:17.9; 2023:17.0,36,,DE-DE40F
 Rastatt,Baden-Württemberg,District,Mixed,0,,,,,32391,2915,9.00%,2021:7.5; 2022:9.2; 2023:9.0,320,,DE-DE124
 Ravensburg,Baden-Württemberg,District,Mixed,0,,,,,43370,2993,6.90%,2021:5.4; 2022:7.0; 2023:6.9,178,,DE-DE148
-Recklinghausen,North Rhine-Westphalia,District,Suburban,0,,,,,87797,19579,22.30%,2021:23.4; 2022:23.3; 2023:22.3,826,,DE-DEA36
+Recklinghausen,North Rhine-Westphalia,District,Suburban,1,Council (stand-in),https://www.youtube.com/channel/UCEKw7HUsRqXqBRbBbjfLZdQ,2013-11-25,2013:1,87797,19579,22.30%,2021:23.4; 2022:23.3; 2023:22.3,826,,DE-DEA36
 Regen,Bavaria,District,Rural,0,,,,,10312,691,6.70%,2021:5.2; 2022:6.6; 2023:6.7,80,,DE-DE229
 Regensburg (city),Bavaria,District-free city,Suburban,0,,,,,18242,1915,10.50%,2021:9.4; 2022:10.5; 2023:10.5,1905,,DE-DE232
-Regensburg (district),Bavaria,District,Mixed,0,,,,,29491,1593,5.40%,2021:3.9; 2022:5.3; 2023:5.4,141,,DE-DE238
+Regensburg (district),Bavaria,District,Mixed,2,Council (stand-in),https://www.youtube.com/channel/UCvCi4uq-q4VIL8nXtPl-btQ,2025-07-21,2024:1; 2025:1,29491,1593,5.40%,2021:3.9; 2022:5.3; 2023:5.4,141,,DE-DE238
 Region Hannover,Lower Saxony,District,Suburban,0,,,,,157120,30638,19.50%,2021:19.7; 2022:20.3; 2023:19.5,504,,DE-DE929
 Regionalverband Saarbrücken,Saarland,District,Suburban,0,,,,,43599,11554,26.50%,2021:27.8; 2022:27.9; 2023:26.5,810,,DE-DEC01
 Rems-Murr-Kreis,Baden-Württemberg,District,Suburban,0,,,,,64286,6300,9.80%,2021:8.7; 2022:9.8; 2023:9.8,513,,DE-DE116
@@ -320,10 +320,10 @@ Schaumburg,Lower Saxony,District,Mixed,0,,,,,20880,2610,12.50%,2021:12.4; 2022:1
 Schleswig-Flensburg,Schleswig-Holstein,District,Rural,0,,,,,29120,3232,11.10%,2021:10.4; 2022:11.2; 2023:11.1,100,,DE-DEF0C
 Schmalkalden-Meiningen,Thuringia,District,Mixed,0,,,,,15583,1200,7.70%,2021:6.9; 2022:8.1; 2023:7.7,102,,DE-DEG0B
 Schwabach (city),Bavaria,District-free city,Suburban,0,,,,,5870,552,9.40%,2021:8.8; 2022:9.6; 2023:9.4,998,,DE-DE255
-Schwalm-Eder-Kreis,Hesse,District,Mixed,0,,,,,24217,2712,11.20%,2021:9.5; 2022:11.4; 2023:11.2,117,,DE-DE735
+Schwalm-Eder-Kreis,Hesse,District,Mixed,8,Council (stand-in),https://www.youtube.com/channel/UCSq6R9VGbjfn8YH4w2wjwkw,2026-09-21,2024:1; 2025:3; 2026:3,24217,2712,11.20%,2021:9.5; 2022:11.4; 2023:11.2,117,,DE-DE735
 Schwandorf,Bavaria,District,Mixed,0,,,,,20945,1278,6.10%,2021:4.7; 2022:6.6; 2023:6.1,103,,DE-DE239
 Schwarzwald-Baar-Kreis,Baden-Württemberg,District,Mixed,0,,,,,31583,2874,9.10%,2021:7.8; 2022:9.3; 2023:9.1,209,,DE-DE136
-Schweinfurt (city),Bavaria,District-free city,Suburban,0,,,,,7477,1413,18.90%,2021:17.8; 2022:18.8; 2023:18.9,1549,,DE-DE262
+Schweinfurt (city),Bavaria,District-free city,Suburban,2,Council (stand-in),https://www.youtube.com/channel/UCKDyAuUDsw0gVyessdqGjCw,2026-10-27,2026:2,7477,1413,18.90%,2021:17.8; 2022:18.8; 2023:18.9,1549,,DE-DE262
 Schweinfurt (district),Bavaria,District,Mixed,0,,,,,16542,728,4.40%,2021:3.9; 2022:4.5; 2023:4.4,136,,DE-DE26B
 Schwerin (city),Mecklenburg-Vorpommern,District-free city,Suburban,0,,,,,12503,2851,22.80%,2021:22.6; 2022:23.1; 2023:22.8,1032,,DE-DE804
 Schwäbisch Hall,Baden-Württemberg,District,Mixed,0,,,,,30535,2290,7.50%,2021:5.8; 2022:7.5; 2023:7.5,135,,DE-DE11A
@@ -333,12 +333,12 @@ Sigmaringen,Baden-Württemberg,District,Mixed,0,,,,,19158,1092,5.70%,2021:4.6; 2
 Soest,North Rhine-Westphalia,District,Mixed,0,,,,,41671,4792,11.50%,2021:10.7; 2022:11.7; 2023:11.5,228,,DE-DEA5B
 Solingen (city),North Rhine-Westphalia,District-free city,Suburban,0,,,,,23257,4465,19.20%,2021:19.0; 2022:19.3; 2023:19.2,1843,,DE-DEA19
 Sonneberg,Thuringia,District,Mixed,0,,,,,6563,597,9.10%,2021:8.4; 2022:10.5; 2023:9.1,131,,DE-DEG0H
-Speyer (city),Rhineland-Palatinate,District-free city,Suburban,0,,,,,6478,771,11.90%,2021:11.2; 2022:11.1; 2023:11.9,1308,,DE-DEB38
+Speyer (city),Rhineland-Palatinate,District-free city,Suburban,3,School committee,https://www.youtube.com/channel/UCjLpuQwqUF7-M6R9INNi5yg,2026-10-22,2023:1; 2026:2,6478,771,11.90%,2021:11.2; 2022:11.1; 2023:11.9,1308,,DE-DEB38
 Spree-Neiße,Brandenburg,District,Rural,0,,,,,13110,1403,10.70%,2021:10.1; 2022:11.1; 2023:10.7,68,,DE-DE40G
 St. Wendel,Saarland,District,Mixed,0,,,,,10713,1221,11.40%,2021:8.5; 2022:11.3; 2023:11.4,186,,DE-DEC06
 Stade,Lower Saxony,District,Mixed,0,,,,,30609,4744,15.50%,2021:14.2; 2022:15.4; 2023:15.5,175,,DE-DE939
 Starnberg,Bavaria,District,Mixed,0,,,,,19990,960,4.80%,2021:3.8; 2022:5.2; 2023:4.8,327,,DE-DE21L
-Steinburg,Schleswig-Holstein,District,Mixed,0,,,,,17845,2409,13.50%,2021:13.0; 2022:13.6; 2023:13.5,130,,DE-DEF0E
+Steinburg,Schleswig-Holstein,District,Mixed,28,Council (stand-in),https://www.youtube.com/channel/UChqMiXFUJ10agkSTRf2uhDA,2025-09-29,2020:1; 2021:6; 2022:8; 2023:5; 2024:5; 2025:3,17845,2409,13.50%,2021:13.0; 2022:13.6; 2023:13.5,130,,DE-DEF0E
 Steinfurt,North Rhine-Westphalia,District,Mixed,0,,,,,67153,6850,10.20%,2021:9.4; 2022:10.3; 2023:10.2,251,,DE-DEA37
 Stendal,Saxony-Anhalt,District,Rural,0,,,,,13319,2664,20.00%,2021:19.0; 2022:20.5; 2023:20.0,45,,DE-DEE0D
 Stormarn,Schleswig-Holstein,District,Mixed,0,,,,,35819,3474,9.70%,2021:8.6; 2022:9.8; 2023:9.7,323,,DE-DEF0F
@@ -361,15 +361,15 @@ Tübingen (district),Baden-Württemberg,District,Mixed,0,,,,,33250,2627,7.90%,20
 Uckermark,Brandenburg,District,Rural,0,,,,,13874,2692,19.40%,2021:18.3; 2022:18.7; 2023:19.4,39,,DE-DE40I
 Uelzen,Lower Saxony,District,Rural,0,,,,,11778,1637,13.90%,2021:12.1; 2022:14.6; 2023:13.9,63,,DE-DE93A
 "Ulm, Stadtkreis",Baden-Württemberg,District,Suburban,0,,,,,17633,2028,11.50%,2021:9.5; 2022:11.3; 2023:11.5,1088,,DE-DE144
-Unna,North Rhine-Westphalia,District,Suburban,0,,,,,53957,9227,17.10%,2021:17.1; 2022:17.4; 2023:17.1,728,,DE-DEA5C
-Unstrut-Hainich-Kreis,Thuringia,District,Rural,0,,,,,12632,1920,15.20%,2021:12.7; 2022:14.4; 2023:15.2,98,,DE-DEG09
+Unna,North Rhine-Westphalia,District,Suburban,3,Council (stand-in),https://www.youtube.com/channel/UCUhqgxHrMLSBh6sR-3l0gFg,2023-12-12,2023:3,53957,9227,17.10%,2021:17.1; 2022:17.4; 2023:17.1,728,,DE-DEA5C
+Unstrut-Hainich-Kreis,Thuringia,District,Rural,7,Council (stand-in),https://www.youtube.com/channel/UCJ0HR1FQrJCrFP7O7pKFJhQ,,,12632,1920,15.20%,2021:12.7; 2022:14.4; 2023:15.2,98,,DE-DEG09
 Unterallgäu,Bavaria,District,Mixed,0,,,,,22513,833,3.70%,2021:2.3; 2022:3.1; 2023:3.7,119,,DE-DE27C
 Vechta,Lower Saxony,District,Mixed,0,,,,,23605,1983,8.40%,2021:9.2; 2022:9.9; 2023:8.4,180,,DE-DE94F
 Verden,Lower Saxony,District,Mixed,0,,,,,21062,2148,10.20%,2021:9.6; 2022:10.4; 2023:10.2,177,,DE-DE93B
 Viersen,North Rhine-Westphalia,District,Suburban,0,,,,,40307,4595,11.40%,2021:11.1; 2022:12.0; 2023:11.4,532,,DE-DEA1E
 Vogelsbergkreis,Hesse,District,Rural,0,,,,,13224,1375,10.40%,2021:8.3; 2022:10.1; 2023:10.4,70,,DE-DE725
 Vogtlandkreis,Saxony,District,Mixed,0,,,,,26119,3030,11.60%,2021:9.5; 2022:11.4; 2023:11.6,157,,DE-DED44
-Vorpommern-Greifswald,Mecklenburg-Vorpommern,District,Rural,0,,,,,27061,4167,15.40%,2021:14.7; 2022:16.0; 2023:15.4,58,,DE-DE80N
+Vorpommern-Greifswald,Mecklenburg-Vorpommern,District,Rural,8,Council (stand-in),https://www.youtube.com/channel/UCCmqCiYjVeJI8m-zd9J1P4g,2026-09-28,2025:3; 2026:5,27061,4167,15.40%,2021:14.7; 2022:16.0; 2023:15.4,58,,DE-DE80N
 Vorpommern-Rügen,Mecklenburg-Vorpommern,District,Rural,0,,,,,25179,3626,14.40%,2021:13.5; 2022:14.5; 2023:14.4,68,,DE-DE80L
 Vulkaneifel,Rhineland-Palatinate,District,Rural,0,,,,,7722,602,7.80%,2021:6.4; 2022:8.1; 2023:7.8,65,,DE-DEB24
 Waldeck-Frankenberg,Hesse,District,Rural,0,,,,,20991,2183,10.40%,2021:9.2; 2022:10.9; 2023:10.4,85,,DE-DE736
@@ -378,7 +378,7 @@ Warendorf,North Rhine-Westphalia,District,Mixed,0,,,,,41428,4557,11.00%,2021:10.
 Wartburgkreis,Thuringia,District,Rural,0,,,,,15169,1623,10.70%,2021:9.2; 2022:10.2; 2023:10.7,90,,DE-DEG0P
 Weiden i. d. Opf (city),Bavaria,District-free city,Suburban,0,,,,,5326,751,14.10%,2021:14.3; 2022:15.0; 2023:14.1,598,,DE-DE233
 Weilheim-Schongau,Bavaria,District,Mixed,0,,,,,20971,1195,5.70%,2021:4.4; 2022:5.8; 2023:5.7,145,,DE-DE21N
-Weimar (city),Thuringia,District-free city,Suburban,0,,,,,8595,1272,14.80%,2021:13.6; 2022:14.8; 2023:14.8,783,,DE-DEG05
+Weimar (city),Thuringia,District-free city,Suburban,1,Council (stand-in),https://www.youtube.com/channel/UCLPeiqkCngVYLI7Q29Vnk6g,2026-11-04,2026:1,8595,1272,14.80%,2021:13.6; 2022:14.8; 2023:14.8,783,,DE-DEG05
 Weimarer Land,Thuringia,District,Mixed,0,,,,,11639,1257,10.80%,2021:8.9; 2022:11.1; 2023:10.8,103,,DE-DEG0G
 Weißenburg-Gunzenhausen,Bavaria,District,Rural,0,,,,,13718,988,7.20%,2021:5.6; 2022:7.9; 2023:7.2,99,,DE-DE25C
 Werra-Meißner-Kreis,Hesse,District,Rural,0,,,,,12450,1681,13.50%,2021:13.8; 2022:14.1; 2023:13.5,96,,DE-DE737
@@ -386,7 +386,7 @@ Wesel,North Rhine-Westphalia,District,Mixed,0,,,,,62700,9468,15.10%,2021:14.6; 2
 Wesermarsch,Lower Saxony,District,Mixed,0,,,,,11996,1919,16.00%,2021:16.1; 2022:17.1; 2023:16.0,111,,DE-DE94G
 Westerwaldkreis,Rhineland-Palatinate,District,Mixed,0,,,,,29717,2496,8.40%,2021:6.6; 2022:7.9; 2023:8.4,211,,DE-DEB1B
 Wetteraukreis,Hesse,District,Mixed,0,,,,,44310,4520,10.20%,2021:9.2; 2022:10.3; 2023:10.2,283,,DE-DE71E
-Wiesbaden (city),Hesse,District-free city,Suburban,0,,,,,41210,8737,21.20%,2021:20.7; 2022:21.6; 2023:21.2,1448,,DE-DE714
+Wiesbaden (city),Hesse,District-free city,Suburban,25,Council (stand-in),https://www.youtube.com/channel/UCHWUOiBFAdMOLCFkpsTdmEA,2026-09-30,2023:3; 2024:6; 2025:9; 2026:7,41210,8737,21.20%,2021:20.7; 2022:21.6; 2023:21.2,1448,,DE-DE714
 Wilhelmshaven (city),Lower Saxony,District-free city,Suburban,0,,,,,9460,2914,30.80%,2021:32.5; 2022:31.6; 2023:30.8,730,,DE-DE945
 Wittenberg,Saxony-Anhalt,District,Rural,0,,,,,14485,2057,14.20%,2021:14.0; 2022:14.5; 2023:14.2,64,,DE-DEE0E
 Wittmund,Lower Saxony,District,Rural,0,,,,,7308,1045,14.30%,2021:11.7; 2022:14.6; 2023:14.3,86,,DE-DE94H
@@ -399,4 +399,4 @@ Würzburg (city),Bavaria,District-free city,Suburban,0,,,,,14653,1670,11.40%,202
 Würzburg (district),Bavaria,District,Mixed,0,,,,,23887,836,3.50%,2021:3.1; 2022:3.8; 2023:3.5,167,,DE-DE26C
 Zollernalbkreis,Baden-Württemberg,District,Mixed,0,,,,,27723,2190,7.90%,2021:5.8; 2022:7.3; 2023:7.9,211,,DE-DE143
 Zweibrücken (city),Rhineland-Palatinate,District-free city,Mixed,0,,,,,4517,736,16.30%,2021:15.2; 2022:17.0; 2023:16.3,470,,DE-DEB3A
-Zwickau,Saxony,District,Mixed,0,,,,,37942,4591,12.10%,2021:10.2; 2022:11.5; 2023:12.1,325,,DE-DED45
+Zwickau,Saxony,District,Mixed,14,Council (stand-in),https://www.youtube.com/channel/UCR7Ybc9H91OaWZM2WCoupXw,2023-03,2016:1; 2019:2; 2020:2; 2021:1; 2022:2; 2023:1,37942,4591,12.10%,2021:10.2; 2022:11.5; 2023:12.1,325,,DE-DED45

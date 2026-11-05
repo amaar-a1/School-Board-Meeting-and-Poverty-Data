@@ -44,11 +44,28 @@ def eurostat(path, **fixed):
 SCHOOL = re.compile(r"(schul|bildungs)\w*ausschuss|ausschuss f[üu]r (schule|bildung)", re.I)
 COUNCIL = re.compile(r"kreistag|stadtrat|stadtverordnet|gemeinderat|ratssitzung|b[üu]rgerschaft|abgeordnetenhaus|städteregionstag|regionsversammlung", re.I)
 SITZ = re.compile(r"sitzung|\d{1,2}\.\s*\w+\s+20\d\d|\d{1,2}\.\d{1,2}\.\d{2,4}|live|übertragung", re.I)
-NOT_T = re.compile(r"jugend|kinder|wahl|kandidat|interview|imagefilm|trailer|erklärt|bürgermeister(in)? im gespräch", re.I)
-NOT_CHANNELS = set()   # channel names checked by hand and found wrong (filled after the search)
+NOT_T = re.compile(r"jugend|kinder|wahl|kandidat|interview|imagefilm|trailer|erklärt|bürgermeister(in)? im gespräch|wichtiges aus|einblicke|"
+                   r"nachlese|statement|haushaltsrede|informationen aus|oberbürgermeister|neues von|workshop|kompakt|ausschnitt|"
+                   r"wiedergewählt|beigeordnet|das ist|neue video|aus der .*sitzung|heute im kreistag|zur \d+\. ratssitzung|fraktionen", re.I)
+# Channels checked by hand: only the council's or administration's own channel counts. Party groups,
+# churches, youth councils, local TV and the like are dropped, and so is a city's channel matched to the
+# surrounding district (or the reverse), since they're different councils.
+UNOFFICIAL = re.compile(r"\b(cdu|csu|spd|afd|fdp|gr[üu]ne|linke|diebasis|heimat|bund\b|jugend|kirchen|feuerwehr|partnerschaft|stadtecho|"
+                        r"regional-fernsehen|stadttheater|sozialdemokratie|kreisverband|fraktion|kreisgruppe|kreisjugendring)", re.I)
+CITYLIKE = re.compile(r"^(stadt|stadtverwaltung|hansestadt|große kreisstadt|landeshauptstadt|bundesstadt|livestream stadt|ratssitzung stadt|gremien stadt)\b|\bstadt$", re.I)
+DISTRICTLIKE = re.compile(r"landkreis|\bkreis\b|kreisverwaltung|landratsamt", re.I)
+NOT_CHANNELS = {"Stadt Frankfurt am Main"}   # matched to Frankfurt (Oder) as well; kept only for Frankfurt am Main (see below)
 
 
-def meetings(k):
+def channel_ok(channel, is_city, name):
+    if UNOFFICIAL.search(channel): return False
+    if is_city and DISTRICTLIKE.search(channel) and not re.search(r"stadt", channel, re.I): return False
+    if not is_city and CITYLIKE.search(channel) and not DISTRICTLIKE.search(channel): return False
+    if channel == "Stadt Frankfurt am Main": return name.startswith("Frankfurt am Main")
+    return True
+
+
+def meetings(k, is_city=False, name=""):
     """(count, channel URL, counted titles, kind) for NUTS id k."""
     import json as _j
     from meeting_dates import parse
@@ -59,19 +76,20 @@ def meetings(k):
     titles.update(shared_titles())
     r = rows.get(f"DE-{k}") or {}
     url = r.get("Channel URL", "")
-    if not url or r.get("Channel") in NOT_CHANNELS or url not in titles:
+    if not url or not channel_ok(r.get("Channel", ""), is_city, name) or url not in titles:
         return 0, "", [], ""
     vids = [t for t in titles[url] if SITZ.search(t) and not NOT_T.search(t)]
     for rx, kind in ((SCHOOL, "School committee"), (COUNCIL, "Council (stand-in)")):
         keep = [t for t in vids if rx.search(t)]
-        keys = {parse(t) or re.sub(r"\b(teil|part)\s*\d+\b|\(\d\)|\d/\d", "", t, flags=re.I).strip().lower() for t in keep}
+        # One key per sitting: its date, else the title without part or agenda-item markers ("TOP 18 - 36", "Teil 2").
+        keys = {parse(t) or re.sub(r"[:,]?\s*top\s*[\d\s.,\-–bis]+|\b(teil|part)\s*\d+\b|\(\d\)|\d/\d", "", t, flags=re.I).strip(" ,:-–").lower() for t in keep}
         if keys: return len(keys), url, keep, kind
     return 0, "", [], ""
 
 
-def meeting_cols(k):
+def meeting_cols(k, is_city, name):
     from meeting_dates import summary
-    n, url, keep, kind = meetings(k)
+    n, url, keep, kind = meetings(k, is_city, name)
     latest, years = summary(keep) if n else ("", "")
     return {"Available Board Meetings": n, "Meetings type": kind, "Meetings source": url, "Latest meeting": latest, "Meetings by year": years}
 
@@ -103,7 +121,7 @@ def main():
         rows.append({"District": name, "State": LAND[k[:3]],
                      "Type": "District-free city" if "Kreisfreie Stadt" in p["NAME_LATN"] or k in ("DE300", "DE600", "DE501", "DE502") else "District",
                      "Locale": "" if d is None else "Urban" if d >= 2000 else "Suburban" if d >= 500 else "Mixed" if d >= 100 else "Rural",
-                     **meeting_cols(k), "Children": round(c) if c else "",
+                     **meeting_cols(k, "Kreisfreie Stadt" in p["NAME_LATN"] or k in ("DE300", "DE600", "DE501", "DE502"), name), "Children": round(c) if c else "",
                      "Children in Low Income": round(c * r / 100) if c and r is not None else "",
                      "Percentage of Children in Low Income": f"{r:.2f}%" if r is not None else "",
                      "Poverty by year": "; ".join(f"{y}:{v}" for y, v in sorted(hist.get(k, {}).items())),

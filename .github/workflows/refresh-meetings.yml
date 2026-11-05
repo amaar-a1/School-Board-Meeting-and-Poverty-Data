@@ -1,6 +1,6 @@
 name: Refresh YouTube meeting counts (monthly)
 
-# Lists every video on the YouTube channels already used for meeting counts (UK, Canada, the Nordic
+# Lists every video on the YouTube channels already used for meeting counts (UK, Canada, Germany, the Nordic
 # countries, Iceland, the islands and microstates, Switzerland), rebuilds those data files and commits
 # them; the push to main then redeploys the site. It doesn't search for new channels.
 on:
@@ -29,6 +29,7 @@ jobs:
         run: |
           python3 data-prep/build_uk.py
           python3 data-prep/finish_canada.py data-prep/inputs/canada/canada_build.csv data-prep/inputs/canada/canada_youtube.csv docs/data/canada.csv
+          python3 data-prep/build_germany.py
           python3 data-prep/build_nordic.py
           python3 data-prep/build_iceland.py
           python3 data-prep/build_islands.py

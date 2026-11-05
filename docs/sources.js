@@ -157,6 +157,7 @@ window.SOURCES = [
       { title: "Child poverty: Bertelsmann Stiftung, Wegweiser Kommune, indicator “Kinderarmut” (children under 15 receiving SGB II basic income support), 2023, CC0 licence", url: "https://www.wegweiser-kommune.de/daten/kinderarmut" },
       { title: "Children under 15: Eurostat demo_r_pjanaggr3 (population on 1 January by broad age group, NUTS 3)", url: "https://ec.europa.eu/eurostat/databrowser/view/demo_r_pjanaggr3/default/table" },
       { title: "Density: Eurostat demo_r_d3dens (population density, NUTS 3)", url: "https://ec.europa.eu/eurostat/databrowser/view/demo_r_d3dens/default/table" },
+      { title: "Meetings: each district's or city's own YouTube channel (in the “Meetings source” column), found with data-prep/nordic_youtube.py and filtered in data-prep/build_germany.py", url: "https://www.youtube.com/" },
       { title: "Borders: Eurostat GISCO NUTS 2021, level 3, 1:10 million", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics" }
     ],
     note: "Wegweiser Kommune's districts were matched to the NUTS borders by name (data-prep/inputs/germany/de_ww_search.json); six that the search missed were matched by hand. Built by data-prep/build_germany.py."
