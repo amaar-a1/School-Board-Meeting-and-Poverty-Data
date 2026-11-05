@@ -1929,6 +1929,336 @@
 "countryiso3code": "VUT",
 "date": "2010",
 "value": 20256
+},
+{
+"countryiso3code": "AND",
+"date": "2024",
+"value": 5245
+},
+{
+"countryiso3code": "AND",
+"date": "2023",
+"value": 5063
+},
+{
+"countryiso3code": "AND",
+"date": "2022",
+"value": 4892
+},
+{
+"countryiso3code": "AND",
+"date": "2021",
+"value": 4803
+},
+{
+"countryiso3code": "AND",
+"date": "2020",
+"value": 4636
+},
+{
+"countryiso3code": "AND",
+"date": "2019",
+"value": 4567
+},
+{
+"countryiso3code": "AND",
+"date": "2018",
+"value": 4513
+},
+{
+"countryiso3code": "AND",
+"date": "2017",
+"value": 4492
+},
+{
+"countryiso3code": "AND",
+"date": "2016",
+"value": 4425
+},
+{
+"countryiso3code": "AND",
+"date": "2015",
+"value": 4395
+},
+{
+"countryiso3code": "AND",
+"date": "2014",
+"value": 4319
+},
+{
+"countryiso3code": "AND",
+"date": "2013",
+"value": 4239
+},
+{
+"countryiso3code": "AND",
+"date": "2012",
+"value": 4208
+},
+{
+"countryiso3code": "AND",
+"date": "2011",
+"value": 4159
+},
+{
+"countryiso3code": "AND",
+"date": "2010",
+"value": 4059
+},
+{
+"countryiso3code": "LIE",
+"date": "2021",
+"value": 3208
+},
+{
+"countryiso3code": "LIE",
+"date": "2020",
+"value": 3263
+},
+{
+"countryiso3code": "LIE",
+"date": "2019",
+"value": 3258
+},
+{
+"countryiso3code": "LIE",
+"date": "2018",
+"value": 3087
+},
+{
+"countryiso3code": "LIE",
+"date": "2017",
+"value": 3240
+},
+{
+"countryiso3code": "LIE",
+"date": "2016",
+"value": 3272
+},
+{
+"countryiso3code": "LIE",
+"date": "2015",
+"value": 3349
+},
+{
+"countryiso3code": "LIE",
+"date": "2014",
+"value": 3387
+},
+{
+"countryiso3code": "LIE",
+"date": "2012",
+"value": 3277
+},
+{
+"countryiso3code": "LIE",
+"date": "2011",
+"value": 3298
+},
+{
+"countryiso3code": "LIE",
+"date": "2010",
+"value": 3274
+},
+{
+"countryiso3code": "LUX",
+"date": "2024",
+"value": 53672
+},
+{
+"countryiso3code": "LUX",
+"date": "2023",
+"value": 52258
+},
+{
+"countryiso3code": "LUX",
+"date": "2022",
+"value": 50744
+},
+{
+"countryiso3code": "LUX",
+"date": "2021",
+"value": 49408
+},
+{
+"countryiso3code": "LUX",
+"date": "2020",
+"value": 49070
+},
+{
+"countryiso3code": "LUX",
+"date": "2019",
+"value": 48943
+},
+{
+"countryiso3code": "LUX",
+"date": "2018",
+"value": 48749
+},
+{
+"countryiso3code": "LUX",
+"date": "2017",
+"value": 48211
+},
+{
+"countryiso3code": "LUX",
+"date": "2016",
+"value": 47715
+},
+{
+"countryiso3code": "LUX",
+"date": "2015",
+"value": 47027
+},
+{
+"countryiso3code": "LUX",
+"date": "2014",
+"value": 46872
+},
+{
+"countryiso3code": "LUX",
+"date": "2013",
+"value": 46256
+},
+{
+"countryiso3code": "LUX",
+"date": "2012",
+"value": 44237
+},
+{
+"countryiso3code": "LUX",
+"date": "2011",
+"value": 43177
+},
+{
+"countryiso3code": "LUX",
+"date": "2010",
+"value": 42536
+},
+{
+"countryiso3code": "MCO",
+"date": "2024",
+"value": 3469
+},
+{
+"countryiso3code": "MCO",
+"date": "2023",
+"value": 3478
+},
+{
+"countryiso3code": "MCO",
+"date": "2022",
+"value": 3415
+},
+{
+"countryiso3code": "MCO",
+"date": "2021",
+"value": 3411
+},
+{
+"countryiso3code": "MCO",
+"date": "2020",
+"value": 3392
+},
+{
+"countryiso3code": "MCO",
+"date": "2019",
+"value": 3370
+},
+{
+"countryiso3code": "MCO",
+"date": "2018",
+"value": 3426
+},
+{
+"countryiso3code": "MCO",
+"date": "2017",
+"value": 3426
+},
+{
+"countryiso3code": "MCO",
+"date": "2016",
+"value": 3319
+},
+{
+"countryiso3code": "MCO",
+"date": "2015",
+"value": 3297
+},
+{
+"countryiso3code": "MCO",
+"date": "2014",
+"value": 3085
+},
+{
+"countryiso3code": "MCO",
+"date": "2013",
+"value": 3042
+},
+{
+"countryiso3code": "MCO",
+"date": "2012",
+"value": 3024
+},
+{
+"countryiso3code": "MCO",
+"date": "2011",
+"value": 3060
+},
+{
+"countryiso3code": "MCO",
+"date": "2010",
+"value": 2999
+},
+{
+"countryiso3code": "SMR",
+"date": "2024",
+"value": 1676
+},
+{
+"countryiso3code": "SMR",
+"date": "2023",
+"value": 1715
+},
+{
+"countryiso3code": "SMR",
+"date": "2022",
+"value": 1735
+},
+{
+"countryiso3code": "SMR",
+"date": "2021",
+"value": 1696
+},
+{
+"countryiso3code": "SMR",
+"date": "2020",
+"value": 1729
+},
+{
+"countryiso3code": "SMR",
+"date": "2019",
+"value": 1674
+},
+{
+"countryiso3code": "SMR",
+"date": "2018",
+"value": 1653
+},
+{
+"countryiso3code": "SMR",
+"date": "2012",
+"value": 1633
+},
+{
+"countryiso3code": "SMR",
+"date": "2011",
+"value": 1660
+},
+{
+"countryiso3code": "SMR",
+"date": "2010",
+"value": 1624
 }
 ],
 "SE.PRM.ENRL": [
@@ -4176,6 +4506,336 @@
 "countryiso3code": "VUT",
 "date": "2010",
 "value": 41834
+},
+{
+"countryiso3code": "AND",
+"date": "2024",
+"value": 4218
+},
+{
+"countryiso3code": "AND",
+"date": "2023",
+"value": 4271
+},
+{
+"countryiso3code": "AND",
+"date": "2022",
+"value": 4099
+},
+{
+"countryiso3code": "AND",
+"date": "2021",
+"value": 4110
+},
+{
+"countryiso3code": "AND",
+"date": "2020",
+"value": 4246
+},
+{
+"countryiso3code": "AND",
+"date": "2019",
+"value": 4322
+},
+{
+"countryiso3code": "AND",
+"date": "2018",
+"value": 4325
+},
+{
+"countryiso3code": "AND",
+"date": "2017",
+"value": 4263
+},
+{
+"countryiso3code": "AND",
+"date": "2016",
+"value": 4248
+},
+{
+"countryiso3code": "AND",
+"date": "2015",
+"value": 4164
+},
+{
+"countryiso3code": "AND",
+"date": "2014",
+"value": 4065
+},
+{
+"countryiso3code": "AND",
+"date": "2013",
+"value": 4068
+},
+{
+"countryiso3code": "AND",
+"date": "2012",
+"value": 4130
+},
+{
+"countryiso3code": "AND",
+"date": "2011",
+"value": 4263
+},
+{
+"countryiso3code": "AND",
+"date": "2010",
+"value": 4367
+},
+{
+"countryiso3code": "LIE",
+"date": "2021",
+"value": 1984
+},
+{
+"countryiso3code": "LIE",
+"date": "2020",
+"value": 1978
+},
+{
+"countryiso3code": "LIE",
+"date": "2019",
+"value": 1979
+},
+{
+"countryiso3code": "LIE",
+"date": "2018",
+"value": 1999
+},
+{
+"countryiso3code": "LIE",
+"date": "2017",
+"value": 2005
+},
+{
+"countryiso3code": "LIE",
+"date": "2016",
+"value": 1998
+},
+{
+"countryiso3code": "LIE",
+"date": "2015",
+"value": 1977
+},
+{
+"countryiso3code": "LIE",
+"date": "2014",
+"value": 1929
+},
+{
+"countryiso3code": "LIE",
+"date": "2012",
+"value": 1980
+},
+{
+"countryiso3code": "LIE",
+"date": "2011",
+"value": 2014
+},
+{
+"countryiso3code": "LIE",
+"date": "2010",
+"value": 2067
+},
+{
+"countryiso3code": "LUX",
+"date": "2024",
+"value": 43020
+},
+{
+"countryiso3code": "LUX",
+"date": "2023",
+"value": 42250
+},
+{
+"countryiso3code": "LUX",
+"date": "2022",
+"value": 41473
+},
+{
+"countryiso3code": "LUX",
+"date": "2021",
+"value": 40575
+},
+{
+"countryiso3code": "LUX",
+"date": "2020",
+"value": 40018
+},
+{
+"countryiso3code": "LUX",
+"date": "2019",
+"value": 39146
+},
+{
+"countryiso3code": "LUX",
+"date": "2018",
+"value": 38173
+},
+{
+"countryiso3code": "LUX",
+"date": "2017",
+"value": 37452
+},
+{
+"countryiso3code": "LUX",
+"date": "2016",
+"value": 36626
+},
+{
+"countryiso3code": "LUX",
+"date": "2015",
+"value": 35920
+},
+{
+"countryiso3code": "LUX",
+"date": "2014",
+"value": 35435
+},
+{
+"countryiso3code": "LUX",
+"date": "2013",
+"value": 35250
+},
+{
+"countryiso3code": "LUX",
+"date": "2012",
+"value": 35397
+},
+{
+"countryiso3code": "LUX",
+"date": "2011",
+"value": 35099
+},
+{
+"countryiso3code": "LUX",
+"date": "2010",
+"value": 35187
+},
+{
+"countryiso3code": "MCO",
+"date": "2024",
+"value": 2068
+},
+{
+"countryiso3code": "MCO",
+"date": "2023",
+"value": 2024
+},
+{
+"countryiso3code": "MCO",
+"date": "2022",
+"value": 1956
+},
+{
+"countryiso3code": "MCO",
+"date": "2021",
+"value": 1932
+},
+{
+"countryiso3code": "MCO",
+"date": "2020",
+"value": 1971
+},
+{
+"countryiso3code": "MCO",
+"date": "2019",
+"value": 1989
+},
+{
+"countryiso3code": "MCO",
+"date": "2018",
+"value": 2018
+},
+{
+"countryiso3code": "MCO",
+"date": "2017",
+"value": 2018
+},
+{
+"countryiso3code": "MCO",
+"date": "2016",
+"value": 2001
+},
+{
+"countryiso3code": "MCO",
+"date": "2015",
+"value": 1959
+},
+{
+"countryiso3code": "MCO",
+"date": "2014",
+"value": 1752
+},
+{
+"countryiso3code": "MCO",
+"date": "2013",
+"value": 1753
+},
+{
+"countryiso3code": "MCO",
+"date": "2012",
+"value": 1766
+},
+{
+"countryiso3code": "MCO",
+"date": "2011",
+"value": 1760
+},
+{
+"countryiso3code": "MCO",
+"date": "2010",
+"value": 1820
+},
+{
+"countryiso3code": "SMR",
+"date": "2024",
+"value": 1388
+},
+{
+"countryiso3code": "SMR",
+"date": "2023",
+"value": 1462
+},
+{
+"countryiso3code": "SMR",
+"date": "2022",
+"value": 1503
+},
+{
+"countryiso3code": "SMR",
+"date": "2021",
+"value": 1558
+},
+{
+"countryiso3code": "SMR",
+"date": "2020",
+"value": 1603
+},
+{
+"countryiso3code": "SMR",
+"date": "2019",
+"value": 1653
+},
+{
+"countryiso3code": "SMR",
+"date": "2018",
+"value": 1698
+},
+{
+"countryiso3code": "SMR",
+"date": "2012",
+"value": 1574
+},
+{
+"countryiso3code": "SMR",
+"date": "2011",
+"value": 1563
+},
+{
+"countryiso3code": "SMR",
+"date": "2010",
+"value": 1577
 }
 ],
 "SL.UEM.TOTL.ZS": [
@@ -6018,6 +6678,86 @@
 "countryiso3code": "VUT",
 "date": "2010",
 "value": 4.681
+},
+{
+"countryiso3code": "LUX",
+"date": "2025",
+"value": 6.343
+},
+{
+"countryiso3code": "LUX",
+"date": "2024",
+"value": 6.4
+},
+{
+"countryiso3code": "LUX",
+"date": "2023",
+"value": 5.184
+},
+{
+"countryiso3code": "LUX",
+"date": "2022",
+"value": 4.588
+},
+{
+"countryiso3code": "LUX",
+"date": "2021",
+"value": 5.571
+},
+{
+"countryiso3code": "LUX",
+"date": "2020",
+"value": 6.766
+},
+{
+"countryiso3code": "LUX",
+"date": "2019",
+"value": 5.592
+},
+{
+"countryiso3code": "LUX",
+"date": "2018",
+"value": 5.589
+},
+{
+"countryiso3code": "LUX",
+"date": "2017",
+"value": 5.523
+},
+{
+"countryiso3code": "LUX",
+"date": "2016",
+"value": 6.669
+},
+{
+"countryiso3code": "LUX",
+"date": "2015",
+"value": 6.796
+},
+{
+"countryiso3code": "LUX",
+"date": "2014",
+"value": 6.044
+},
+{
+"countryiso3code": "LUX",
+"date": "2013",
+"value": 6.045
+},
+{
+"countryiso3code": "LUX",
+"date": "2012",
+"value": 5.03
+},
+{
+"countryiso3code": "LUX",
+"date": "2011",
+"value": 5.122
+},
+{
+"countryiso3code": "LUX",
+"date": "2010",
+"value": 4.423
 }
 ],
 "SP.POP.0014.TO.ZS": [
@@ -9620,6 +10360,406 @@
 "countryiso3code": "VUT",
 "date": "2010",
 "value": 38.2396457465451
+},
+{
+"countryiso3code": "AND",
+"date": "2025",
+"value": 11.6181871912864
+},
+{
+"countryiso3code": "AND",
+"date": "2024",
+"value": 11.8852784134249
+},
+{
+"countryiso3code": "AND",
+"date": "2023",
+"value": 12.2476996141288
+},
+{
+"countryiso3code": "AND",
+"date": "2022",
+"value": 12.6560441628505
+},
+{
+"countryiso3code": "AND",
+"date": "2021",
+"value": 13.0405099312818
+},
+{
+"countryiso3code": "AND",
+"date": "2020",
+"value": 13.4001033858878
+},
+{
+"countryiso3code": "AND",
+"date": "2019",
+"value": 13.716516178807
+},
+{
+"countryiso3code": "AND",
+"date": "2018",
+"value": 14.2199515712727
+},
+{
+"countryiso3code": "AND",
+"date": "2017",
+"value": 14.7541094729707
+},
+{
+"countryiso3code": "AND",
+"date": "2016",
+"value": 15.093895250168
+},
+{
+"countryiso3code": "AND",
+"date": "2015",
+"value": 15.3186418837939
+},
+{
+"countryiso3code": "AND",
+"date": "2014",
+"value": 15.4739140458657
+},
+{
+"countryiso3code": "AND",
+"date": "2013",
+"value": 15.5445616974871
+},
+{
+"countryiso3code": "AND",
+"date": "2012",
+"value": 15.5191712002499
+},
+{
+"countryiso3code": "AND",
+"date": "2011",
+"value": 15.4943882339329
+},
+{
+"countryiso3code": "AND",
+"date": "2010",
+"value": 14.9679082100463
+},
+{
+"countryiso3code": "LIE",
+"date": "2025",
+"value": 14.2269736842105
+},
+{
+"countryiso3code": "LIE",
+"date": "2024",
+"value": 14.2626034612491
+},
+{
+"countryiso3code": "LIE",
+"date": "2023",
+"value": 14.3466841759685
+},
+{
+"countryiso3code": "LIE",
+"date": "2022",
+"value": 14.4072538596536
+},
+{
+"countryiso3code": "LIE",
+"date": "2021",
+"value": 14.4939043130827
+},
+{
+"countryiso3code": "LIE",
+"date": "2020",
+"value": 14.5755410529574
+},
+{
+"countryiso3code": "LIE",
+"date": "2019",
+"value": 14.6488033298647
+},
+{
+"countryiso3code": "LIE",
+"date": "2018",
+"value": 14.6688172889046
+},
+{
+"countryiso3code": "LIE",
+"date": "2017",
+"value": 14.7395675090157
+},
+{
+"countryiso3code": "LIE",
+"date": "2016",
+"value": 14.84647082281
+},
+{
+"countryiso3code": "LIE",
+"date": "2015",
+"value": 14.9679144385027
+},
+{
+"countryiso3code": "LIE",
+"date": "2014",
+"value": 15.1173898419105
+},
+{
+"countryiso3code": "LIE",
+"date": "2013",
+"value": 15.2912489840152
+},
+{
+"countryiso3code": "LIE",
+"date": "2012",
+"value": 15.5920809935648
+},
+{
+"countryiso3code": "LIE",
+"date": "2011",
+"value": 15.8411337349564
+},
+{
+"countryiso3code": "LIE",
+"date": "2010",
+"value": 16.1076155950942
+},
+{
+"countryiso3code": "LUX",
+"date": "2025",
+"value": 15.7458959355783
+},
+{
+"countryiso3code": "LUX",
+"date": "2024",
+"value": 15.7772392561468
+},
+{
+"countryiso3code": "LUX",
+"date": "2023",
+"value": 15.8199242818352
+},
+{
+"countryiso3code": "LUX",
+"date": "2022",
+"value": 15.8788481775567
+},
+{
+"countryiso3code": "LUX",
+"date": "2021",
+"value": 15.9352870802188
+},
+{
+"countryiso3code": "LUX",
+"date": "2020",
+"value": 15.9743861769085
+},
+{
+"countryiso3code": "LUX",
+"date": "2019",
+"value": 16.0193368517632
+},
+{
+"countryiso3code": "LUX",
+"date": "2018",
+"value": 16.0943659030326
+},
+{
+"countryiso3code": "LUX",
+"date": "2017",
+"value": 16.1825193987214
+},
+{
+"countryiso3code": "LUX",
+"date": "2016",
+"value": 16.351674190154
+},
+{
+"countryiso3code": "LUX",
+"date": "2015",
+"value": 16.5619030228116
+},
+{
+"countryiso3code": "LUX",
+"date": "2014",
+"value": 16.746902183976
+},
+{
+"countryiso3code": "LUX",
+"date": "2013",
+"value": 16.9137587224523
+},
+{
+"countryiso3code": "LUX",
+"date": "2012",
+"value": 17.0661882766187
+},
+{
+"countryiso3code": "LUX",
+"date": "2011",
+"value": 17.3590970797402
+},
+{
+"countryiso3code": "LUX",
+"date": "2010",
+"value": 17.6569243806783
+},
+{
+"countryiso3code": "MCO",
+"date": "2025",
+"value": 13.7711588117159
+},
+{
+"countryiso3code": "MCO",
+"date": "2024",
+"value": 13.4723408661438
+},
+{
+"countryiso3code": "MCO",
+"date": "2023",
+"value": 13.1788019970993
+},
+{
+"countryiso3code": "MCO",
+"date": "2022",
+"value": 12.9008643386461
+},
+{
+"countryiso3code": "MCO",
+"date": "2021",
+"value": 12.7845407117087
+},
+{
+"countryiso3code": "MCO",
+"date": "2020",
+"value": 12.7961524815705
+},
+{
+"countryiso3code": "MCO",
+"date": "2019",
+"value": 12.5469049305938
+},
+{
+"countryiso3code": "MCO",
+"date": "2018",
+"value": 12.2986803653566
+},
+{
+"countryiso3code": "MCO",
+"date": "2017",
+"value": 12.2551621635968
+},
+{
+"countryiso3code": "MCO",
+"date": "2016",
+"value": 12.1861251207211
+},
+{
+"countryiso3code": "MCO",
+"date": "2015",
+"value": 12.2724923143891
+},
+{
+"countryiso3code": "MCO",
+"date": "2014",
+"value": 12.5345992028344
+},
+{
+"countryiso3code": "MCO",
+"date": "2013",
+"value": 12.7895167433069
+},
+{
+"countryiso3code": "MCO",
+"date": "2012",
+"value": 12.9987611996197
+},
+{
+"countryiso3code": "MCO",
+"date": "2011",
+"value": 13.1445994314416
+},
+{
+"countryiso3code": "MCO",
+"date": "2010",
+"value": 13.2072911484011
+},
+{
+"countryiso3code": "SMR",
+"date": "2025",
+"value": 11.8504728572492
+},
+{
+"countryiso3code": "SMR",
+"date": "2024",
+"value": 12.2569310026503
+},
+{
+"countryiso3code": "SMR",
+"date": "2023",
+"value": 12.6954717260802
+},
+{
+"countryiso3code": "SMR",
+"date": "2022",
+"value": 13.0404810794955
+},
+{
+"countryiso3code": "SMR",
+"date": "2021",
+"value": 13.2084749439583
+},
+{
+"countryiso3code": "SMR",
+"date": "2020",
+"value": 13.398622316177
+},
+{
+"countryiso3code": "SMR",
+"date": "2019",
+"value": 13.6770265200704
+},
+{
+"countryiso3code": "SMR",
+"date": "2018",
+"value": 14.0145097528129
+},
+{
+"countryiso3code": "SMR",
+"date": "2017",
+"value": 14.3507475711211
+},
+{
+"countryiso3code": "SMR",
+"date": "2016",
+"value": 14.6700232718118
+},
+{
+"countryiso3code": "SMR",
+"date": "2015",
+"value": 14.9213887495944
+},
+{
+"countryiso3code": "SMR",
+"date": "2014",
+"value": 15.0731642229174
+},
+{
+"countryiso3code": "SMR",
+"date": "2013",
+"value": 15.1338488994646
+},
+{
+"countryiso3code": "SMR",
+"date": "2012",
+"value": 15.1808524942853
+},
+{
+"countryiso3code": "SMR",
+"date": "2011",
+"value": 15.2973359445429
+},
+{
+"countryiso3code": "SMR",
+"date": "2010",
+"value": 15.3656505624765
 }
 ],
 "SP.POP.TOTL": [
@@ -13222,6 +14362,406 @@
 "countryiso3code": "VUT",
 "date": "2010",
 "value": 238248
+},
+{
+"countryiso3code": "AND",
+"date": "2025",
+"value": 82904
+},
+{
+"countryiso3code": "AND",
+"date": "2024",
+"value": 81938
+},
+{
+"countryiso3code": "AND",
+"date": "2023",
+"value": 80856
+},
+{
+"countryiso3code": "AND",
+"date": "2022",
+"value": 79705
+},
+{
+"countryiso3code": "AND",
+"date": "2021",
+"value": 78364
+},
+{
+"countryiso3code": "AND",
+"date": "2020",
+"value": 77380
+},
+{
+"countryiso3code": "AND",
+"date": "2019",
+"value": 76474
+},
+{
+"countryiso3code": "AND",
+"date": "2018",
+"value": 75162
+},
+{
+"countryiso3code": "AND",
+"date": "2017",
+"value": 73763
+},
+{
+"countryiso3code": "AND",
+"date": "2016",
+"value": 72181
+},
+{
+"countryiso3code": "AND",
+"date": "2015",
+"value": 72174
+},
+{
+"countryiso3code": "AND",
+"date": "2014",
+"value": 73737
+},
+{
+"countryiso3code": "AND",
+"date": "2013",
+"value": 75194
+},
+{
+"countryiso3code": "AND",
+"date": "2012",
+"value": 76834
+},
+{
+"countryiso3code": "AND",
+"date": "2011",
+"value": 77783
+},
+{
+"countryiso3code": "AND",
+"date": "2010",
+"value": 80706
+},
+{
+"countryiso3code": "LIE",
+"date": "2025",
+"value": 41024
+},
+{
+"countryiso3code": "LIE",
+"date": "2024",
+"value": 40450
+},
+{
+"countryiso3code": "LIE",
+"date": "2023",
+"value": 39846
+},
+{
+"countryiso3code": "LIE",
+"date": "2022",
+"value": 39493
+},
+{
+"countryiso3code": "LIE",
+"date": "2021",
+"value": 39182
+},
+{
+"countryiso3code": "LIE",
+"date": "2020",
+"value": 38901
+},
+{
+"countryiso3code": "LIE",
+"date": "2019",
+"value": 38563
+},
+{
+"countryiso3code": "LIE",
+"date": "2018",
+"value": 38246
+},
+{
+"countryiso3code": "LIE",
+"date": "2017",
+"value": 37962
+},
+{
+"countryiso3code": "LIE",
+"date": "2016",
+"value": 37716
+},
+{
+"countryiso3code": "LIE",
+"date": "2015",
+"value": 37494
+},
+{
+"countryiso3code": "LIE",
+"date": "2014",
+"value": 37248
+},
+{
+"countryiso3code": "LIE",
+"date": "2013",
+"value": 36984
+},
+{
+"countryiso3code": "LIE",
+"date": "2012",
+"value": 36657
+},
+{
+"countryiso3code": "LIE",
+"date": "2011",
+"value": 36312
+},
+{
+"countryiso3code": "LIE",
+"date": "2010",
+"value": 36022
+},
+{
+"countryiso3code": "LUX",
+"date": "2025",
+"value": 686970
+},
+{
+"countryiso3code": "LUX",
+"date": "2024",
+"value": 677012
+},
+{
+"countryiso3code": "LUX",
+"date": "2023",
+"value": 666430
+},
+{
+"countryiso3code": "LUX",
+"date": "2022",
+"value": 653103
+},
+{
+"countryiso3code": "LUX",
+"date": "2021",
+"value": 640064
+},
+{
+"countryiso3code": "LUX",
+"date": "2020",
+"value": 630419
+},
+{
+"countryiso3code": "LUX",
+"date": "2019",
+"value": 620001
+},
+{
+"countryiso3code": "LUX",
+"date": "2018",
+"value": 607950
+},
+{
+"countryiso3code": "LUX",
+"date": "2017",
+"value": 596336
+},
+{
+"countryiso3code": "LUX",
+"date": "2016",
+"value": 582014
+},
+{
+"countryiso3code": "LUX",
+"date": "2015",
+"value": 569604
+},
+{
+"countryiso3code": "LUX",
+"date": "2014",
+"value": 556319
+},
+{
+"countryiso3code": "LUX",
+"date": "2013",
+"value": 543360
+},
+{
+"countryiso3code": "LUX",
+"date": "2012",
+"value": 530946
+},
+{
+"countryiso3code": "LUX",
+"date": "2011",
+"value": 518347
+},
+{
+"countryiso3code": "LUX",
+"date": "2010",
+"value": 506953
+},
+{
+"countryiso3code": "MCO",
+"date": "2025",
+"value": 38341
+},
+{
+"countryiso3code": "MCO",
+"date": "2024",
+"value": 38631
+},
+{
+"countryiso3code": "MCO",
+"date": "2023",
+"value": 38956
+},
+{
+"countryiso3code": "MCO",
+"date": "2022",
+"value": 38931
+},
+{
+"countryiso3code": "MCO",
+"date": "2021",
+"value": 38527
+},
+{
+"countryiso3code": "MCO",
+"date": "2020",
+"value": 38050
+},
+{
+"countryiso3code": "MCO",
+"date": "2019",
+"value": 38109
+},
+{
+"countryiso3code": "MCO",
+"date": "2018",
+"value": 38154
+},
+{
+"countryiso3code": "MCO",
+"date": "2017",
+"value": 37678
+},
+{
+"countryiso3code": "MCO",
+"date": "2016",
+"value": 37276
+},
+{
+"countryiso3code": "MCO",
+"date": "2015",
+"value": 36757
+},
+{
+"countryiso3code": "MCO",
+"date": "2014",
+"value": 36128
+},
+{
+"countryiso3code": "MCO",
+"date": "2013",
+"value": 35447
+},
+{
+"countryiso3code": "MCO",
+"date": "2012",
+"value": 34711
+},
+{
+"countryiso3code": "MCO",
+"date": "2011",
+"value": 33946
+},
+{
+"countryiso3code": "MCO",
+"date": "2010",
+"value": 33163
+},
+{
+"countryiso3code": "SMR",
+"date": "2025",
+"value": 34109
+},
+{
+"countryiso3code": "SMR",
+"date": "2024",
+"value": 33977
+},
+{
+"countryiso3code": "SMR",
+"date": "2023",
+"value": 33860
+},
+{
+"countryiso3code": "SMR",
+"date": "2022",
+"value": 33755
+},
+{
+"countryiso3code": "SMR",
+"date": "2021",
+"value": 34252
+},
+{
+"countryiso3code": "SMR",
+"date": "2020",
+"value": 34770
+},
+{
+"countryiso3code": "SMR",
+"date": "2019",
+"value": 34663
+},
+{
+"countryiso3code": "SMR",
+"date": "2018",
+"value": 34522
+},
+{
+"countryiso3code": "SMR",
+"date": "2017",
+"value": 33825
+},
+{
+"countryiso3code": "SMR",
+"date": "2016",
+"value": 33101
+},
+{
+"countryiso3code": "SMR",
+"date": "2015",
+"value": 32897
+},
+{
+"countryiso3code": "SMR",
+"date": "2014",
+"value": 32655
+},
+{
+"countryiso3code": "SMR",
+"date": "2013",
+"value": 33041
+},
+{
+"countryiso3code": "SMR",
+"date": "2012",
+"value": 33469
+},
+{
+"countryiso3code": "SMR",
+"date": "2011",
+"value": 32620
+},
+{
+"countryiso3code": "SMR",
+"date": "2010",
+"value": 33270
 }
 ],
 "SI.POV.NAHC": [
@@ -13564,6 +15104,11 @@
 "countryiso3code": "VUT",
 "date": "2019",
 "value": 15.9
+},
+{
+"countryiso3code": "LUX",
+"date": "2021",
+"value": 17.3
 }
 ]
 }

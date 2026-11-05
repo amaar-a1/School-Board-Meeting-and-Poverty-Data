@@ -103,6 +103,7 @@ window.SOURCES = [
     group: "Norway: municipalities, child low income and pupils",
     items: [
       { title: "Child low income: Statistics Norway table 12944, persistent low income (EU scale, 60% of the median), children 0–17, 2022–2024", url: "https://www.ssb.no/en/statbank/table/12944/" },
+      { title: "Where the child rate isn't published (13 small municipalities): Statistics Norway table 12944, all ages, 2022–2024", url: "https://www.ssb.no/en/statbank/table/12944/" },
       { title: "Pupils: Statistics Norway table 11980, pupils in compulsory school, 2025", url: "https://www.ssb.no/en/statbank/table/11980/" },
       { title: "Borders and density: Eurostat GISCO Local Administrative Units (LAU) 2023", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" }
     ],
@@ -123,6 +124,7 @@ window.SOURCES = [
     group: "Finland: municipalities, child low income and pupils",
     items: [
       { title: "Child low income: THL Sotkanet indicator 228, children under 18 in low-income households, 2022–2024 (latest year per municipality)", url: "https://sotkanet.fi/sotkanet/en/metadata/indicators/228" },
+      { title: "Where the child rate isn't published (Åland and other small municipalities): THL Sotkanet indicator 3099, the municipality's overall low-income rate", url: "https://sotkanet.fi/sotkanet/en/metadata/indicators/3099" },
       { title: "Pupils: Statistics Finland table 133w, comprehensive school pupils, 2025", url: "https://pxdata.stat.fi/PxWeb/pxweb/en/StatFin/StatFin__opiskt/" },
       { title: "Borders and density: Eurostat GISCO Local Administrative Units (LAU) 2023", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" }
     ],
@@ -169,27 +171,53 @@ window.SOURCES = [
     note: "The Ministry of Education's school directory (Education Counts) and data.govt.nz both refused automated downloads, so school and enrollment counts by area aren't included. The Chatham Islands aren't in Stats NZ's regional figures. Built by data-prep/build_nz.py."
   },
   {
-    only: "Island countries and territories",
-    group: "Island countries and territories",
+    only: "Islands and microstates",
+    group: "Islands and microstates",
     items: [
-      { title: "Children below 60% of the median income (Malta, Cyprus, Iceland): Eurostat ilc_li02", url: "https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table" },
+      { title: "Children below 60% of the median income (Malta, Cyprus): Eurostat ilc_li02", url: "https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table" },
       { title: "National poverty line, unemployment, population, enrollment (primary and secondary): World Bank World Development Indicators (SI.POV.NAHC, SL.UEM.TOTL.ZS, SP.POP.TOTL, SP.POP.0014.TO.ZS, SE.PRM.ENRL, SE.SEC.ENRL)", url: "https://data.worldbank.org/" },
+      { title: "Norfolk Island unemployment: Australian Bureau of Statistics, 2021 Census QuickStats (Norfolk Island)", url: "https://www.abs.gov.au/census/find-census-data/quickstats/2021/SAL90004" },
       { title: "Where the World Bank has none: CIA World Factbook (2026 edition, and the November 2023 edition for poverty and unemployment), via the factbook.json archive", url: "https://github.com/factbook/factbook.json" },
+      { title: "Meetings (stand-in): each legislature's YouTube channel, found with data-prep/islands_youtube.py and checked by hand (listed in the “Meetings source” column); sittings counted once per day", url: "https://www.youtube.com/" },
       { title: "Borders: Natural Earth 1:10m admin-0 countries", url: "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/" }
     ],
     note: "Many of these figures are old (some Factbook poverty rates are from surveys more than ten years old); each row's “Poverty measure” names the source and year. Locales are estimates from population over land area. Built by data-prep/build_islands.py."
+  },
+  {
+    only: "Switzerland",
+    group: "Switzerland: cantons, child social assistance and pupils",
+    items: [
+      { title: "Child poverty: Federal Statistical Office (BFS), social assistance recipients by canton and age (px-x-1304030000_121), social assistance rate for ages 0–17, 2025", url: "https://www.pxweb.bfs.admin.ch/pxweb/de/px-x-1304030000_121/" },
+      { title: "Pupils: BFS, compulsory school pupils by school canton (px-x-1502010100_101), 2024/25", url: "https://www.pxweb.bfs.admin.ch/pxweb/de/px-x-1502010100_101/" },
+      { title: "Meetings (stand-in): cantonal parliaments' and cantons' YouTube channels (in the “Meetings source” column), checked by hand; regioTVplus and swissbroadcast for Basel-Landschaft and Schaffhausen", url: "https://www.youtube.com/" },
+      { title: "Borders: Natural Earth 1:10m admin-1 states and provinces", url: "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/" }
+    ],
+    note: "Children 0–17 are worked out from the number on social assistance and the rate. Locales are estimates. Built by data-prep/build_switzerland.py."
+  },
+  {
+    only: "Iceland",
+    group: "Iceland: municipalities, children and council meetings",
+    items: [
+      { title: "Children 6–15 and population: Statistics Iceland MAN02005 (population by sex, age and municipality, 1 January 2026)", url: "https://px.hagstofa.is/pxis/pxweb/is/Ibuar/Ibuar__mannfjoldi__2_byggdir__sveitarfelog/MAN02005.px" },
+      { title: "Child low income (national): Eurostat ilc_li02, children under 18 below 60% of the median income, 2020", url: "https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table" },
+      { title: "Checked but not used: Statistics Iceland LIF01140, child low income by residence (its “total” row is higher than both the capital area and the rest of the country)", url: "https://px.hagstofa.is/pxis/pxweb/is/Samfelag/Samfelag__lifskjor__3_fjarhagsstada__1_einstaklingar/LIF01140.px" },
+      { title: "Borders: Eurostat GISCO LAU 2023 (names taken from Statistics Iceland's municipality codes, since eight LAU names are wrong)", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
+      { title: "Meetings: each municipality's own YouTube channel (in the “Meetings source” column); videos of council meetings, one per meeting", url: "https://www.youtube.com/" }
+    ],
+    note: "Locales are estimates from population over area. Skagabyggð and Tálknafjarðarhreppur merged into Húnabyggð and Vesturbyggð in 2024 and are drawn as part of them. Built by data-prep/build_iceland.py."
   },
   {
     only: "Ireland",
     group: "Ireland: Education and Training Boards, unemployment and children",
     items: [
       { title: "ETB areas: Education and Training Boards Act 2013, Schedule 1 (each ETB's local authority areas)", url: "https://www.irishstatutebook.ie/eli/2013/act/11/schedule/1/enacted/en/html" },
-      { title: "Unemployment (stand-in for poverty): CSO Census 2022, SAP2022T8T1LEA22, population aged 15 and over by principal economic status (local electoral areas, added up by council area)", url: "https://data.gov.ie/dataset/sap2022t8t1lea22-population-aged-15-years-and-over-by-principal-economic-status-and-sex" },
+      { title: "Poverty: Eurostat ilc_li41, at-risk-of-poverty rate by NUTS 2 region (Northern and Western, Southern, Eastern and Midland), 2025", url: "https://ec.europa.eu/eurostat/databrowser/view/ilc_li41/default/table" },
+      { title: "Unemployment: CSO Census 2022, SAP2022T8T1LEA22, population aged 15 and over by principal economic status (local electoral areas, added up by council area)", url: "https://data.gov.ie/dataset/sap2022t8t1lea22-population-aged-15-years-and-over-by-principal-economic-status-and-sex" },
       { title: "Children 5–17 and council borders: CSO Census 2022 Census Hub, Table 1.1 by local authority", url: "https://services-eu1.arcgis.com/BuS9rtTsYEV5C0xh/arcgis/rest/services/CensusHub2022_T1_1_LA/FeatureServer" },
       { title: "Meetings: the ETBs' YouTube channels (no board meetings posted)", url: "https://www.youtube.com/" },
       { title: "ETB sector overview (Education and Training Boards Ireland)", url: "https://www.etbi.ie/" }
     ],
-    note: "Locales are estimates: population (children 5–17 divided by 0.178, their share of Ireland's population in Census 2022) over each ETB's land area; urban 2,000+ people per km², suburban 500–2,000, mixed 100–500, rural under 100. The Department of Education's school list couldn't be downloaded (gov.ie refused automated access), so there's no enrollment by ETB. The unemployment rate counts people who say their main status is unemployed or looking for a first job."
+    note: "Locales are estimates: population (children 5–17 divided by 0.178, their share of Ireland's population in Census 2022) over each ETB's land area; urban 2,000+ people per km², suburban 500–2,000, mixed 100–500, rural under 100. The Department of Education's school list couldn't be downloaded (gov.ie refused automated access), so there's no enrollment by ETB. Each board gets its region's overall poverty rate, so boards in the same region share a figure. The unemployment rate counts people who say their main status is unemployed or looking for a first job."
   },
   {
     only: "United Kingdom",
