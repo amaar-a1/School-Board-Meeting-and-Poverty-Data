@@ -1,0 +1,14 @@
+ok 49203 https://www.iedom.fr/Guadeloupe <- https://www.iedom.fr/saint-martin/
+base https://www.iedom.fr/Guadeloupe
+ok 56154 https://www.iedom.fr/Publications <- https://www.iedom.fr/Publications
+ok 32628 https://www.iedom.fr/Statistiques <- https://www.iedom.fr/Statistiques
+ok 36592 https://www.iedom.fr/Rapport-annuel-economique-de-Saint-Barthelemy-2025 <- https://www.iedom.fr/Rapport-annuel-economique-de-Saint-Barthelemy-2025
+ok 4473044 https://www.iedom.fr/IMG/pdf/ra_iedom_2025_ed._2026_-_saint-barthelemy.pdf <- https://www.iedom.fr/IMG/pdf/ra_iedom_2025_ed._2026_-_saint-barthelemy.pdf
+ok 1580554 https://www.iedom.fr/IMG/pdf/infographie_rapport_annuel_economique_saint-barthelemy_2025.pdf <- https://www.iedom.fr/IMG/pdf/infographie_rapport_annuel_economique_saint-barthelemy_2025.pdf
+ok 4473044 https://www.iedom.fr/IMG/pdf/ra_iedom_2025_ed._2026_-_saint-barthelemy.pdf <- https://www.iedom.fr/IMG/pdf/ra_iedom_2025_ed._2026_-_saint-barthelemy.pdf
+ok 1580554 https://www.iedom.fr/IMG/pdf/infographie_rapport_annuel_economique_saint-barthelemy_2025.pdf <- https://www.iedom.fr/IMG/pdf/infographie_rapport_annuel_economique_saint-barthelemy_2025.pdf
+ok 36558 https://www.iedom.fr/Rapport-annuel-economique-de-Saint-Martin-2025 <- https://www.iedom.fr/Rapport-annuel-economique-de-Saint-Martin-2025
+ok 5039798 https://www.iedom.fr/IMG/pdf/rapport_annuel_saint-martin_bd.pdf <- https://www.iedom.fr/IMG/pdf/rapport_annuel_saint-martin_bd.pdf
+ok 633482 https://www.iedom.fr/IMG/pdf/infographie_rapport_annuel_economique_saint-martin_2025.pdf <- https://www.iedom.fr/IMG/pdf/infographie_rapport_annuel_economique_saint-martin_2025.pdf
+ok 5039798 https://www.iedom.fr/IMG/pdf/rapport_annuel_saint-martin_bd.pdf <- https://www.iedom.fr/IMG/pdf/rapport_annuel_saint-martin_bd.pdf
+ok 633482 https://www.iedom.fr/IMG/pdf/infographie_rapport_annuel_economique_saint-martin_2025.pdf <- https://www.iedom.fr/IMG/pdf/infographie_rapport_annuel_economique_saint-martin_2025.pdf
