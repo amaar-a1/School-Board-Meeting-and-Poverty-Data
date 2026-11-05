@@ -36,6 +36,18 @@ def main():
             n, p = num(r[ni_]), num(r[pi_])
             pov[r[1]] = (n, n / p)
     lookup = {r["LAD24CD"]: r["CTYUA24CD"] for r in csv.DictReader(open(os.path.join(IN, "ons_lad24_ctyua24_lookup.csv")))}
+    # Every year in the table (FYE 2022-2025), added up the same way, for "Poverty by year".
+    hist = {}
+    for fy in ("2022", "2023", "2024", "2025"):
+        nc, pc = cols.index(f"Number of children  FYE {fy}"), next(i for i, c in enumerate(cols) if c.startswith(f"Percentage of children  FYE {fy}"))
+        yr = {}
+        for r in rows[head + 1:]:
+            if len(r) > pc and r[1] and num(r[nc]) and num(r[pc]):
+                n, k = num(r[nc]), num(r[nc]) / num(r[pc])
+                for key in {r[1], lookup.get(r[1]) if r[1].startswith("E07") else None, "N-EA" if r[1].startswith("N09") else None} - {None}:
+                    a = yr.setdefault(key, [0, 0]); a[0] += n; a[1] += k
+        for key, (n, k) in yr.items():
+            hist.setdefault(key, {})[fy] = round(100 * n / k, 2)
     agg = {}
     for code, (n, k) in pov.items():
         if code.startswith("E07"):
@@ -73,18 +85,28 @@ def main():
         out.append({"District": name, "Nation": nat, "Available Board Meetings": 0, "Meetings source": "",
                     "Children Under 16": round(k) if k else "", "Children Under 16 in Low Income": round(n) if n else "",
                     "Percentage of Children Under 16 in Low Income": f"{100 * n / k:.2f}%" if k else "",
+                    "Poverty by year": "; ".join(f"{y}:{v}" for y, v in sorted(hist.get(rid, {}).items())),
                     "Enrollment": round(enr) if enr else "", "Enrollment year": ey if enr else "", "District ID": "UK-" + rid})
     # Meetings: council committee meetings on YouTube (data-prep/uk_youtube.py), with hand-checked fixes
     yt = {r["District ID"]: r for r in csv.DictReader(open(os.path.join(IN, "uk_youtube.csv"), encoding="utf-8"))} if os.path.exists(os.path.join(IN, "uk_youtube.csv")) else {}
     bad = {r["District"] for r in csv.DictReader(open(os.path.join(IN, "uk_channels.csv"), encoding="utf-8"))} if os.path.exists(os.path.join(IN, "uk_channels.csv")) else set()
+    from shared_titles import shared_titles
+    from meeting_dates import summary as date_summary
+    import uk_youtube as ukt
+    fresh = shared_titles()
     for r in out:
         y = yt.get(r["District ID"], {})
-        n = int(y.get("Meetings") or 0) if r["District"] not in bad else 0
+        url = y.get("Channel URL", "")
+        n, kept = (int(y.get("Meetings") or 0), []) if r["District"] not in bad else (0, [])
+        if n and url in fresh:   # recount from the monthly refresh, with uk_youtube.py's rules
+            vids = fresh[url]
+            kept = [v for v in vids if re.search(r"board", v, re.I) and ukt.MEET.search(v)] if "Education Authority" in r["District"] \
+                else [v for v in vids if ukt.EDU.search(v) and ukt.MEET.search(v)]
+            n = len({re.sub(r"\b(part|pt)\s*\d+\b|\(\d\)", "", v, flags=re.I).strip().lower() for v in kept})
         r["Available Board Meetings"] = n
-        r["Meetings source"] = y.get("Channel URL", "") if n else ""
+        r["Meetings source"] = url if n else ""
+        r["Latest meeting"], r["Meetings by year"] = date_summary(kept) if n else ("", "")
     out.sort(key=lambda r: (r["Nation"], r["District"]))
-    with open(OUT_CSV, "w", newline="", encoding="utf-8") as fo:
-        w = csv.DictWriter(fo, fieldnames=list(out[0])); w.writeheader(); w.writerows(out)
     # Estimated locale from population density: people = children / 0.185 (their share of the
     # population), over land area. Urban 2,000+ per km², suburban 500-2,000, mixed 100-500, rural under 100.
     area = {}
@@ -98,7 +120,7 @@ def main():
     path = OUT_CSV if "OUT_CSV" in globals() else os.path.join(HERE, "..", "docs", "data", "ireland.csv")
     data = out
     with open(path, "w", newline="", encoding="utf-8") as fo:
-        w = csv.DictWriter(fo, fieldnames=list(data[0])); w.writeheader(); w.writerows(data)
+        w = csv.DictWriter(fo, fieldnames=list(data[0]), restval=""); w.writeheader(); w.writerows(data)
     def rnd(c):
         return [rnd(x) for x in c] if isinstance(c[0], list) else [round(c[0], 4), round(c[1], 4)]
     for f in feats:

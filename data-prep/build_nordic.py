@@ -93,6 +93,8 @@ def meetings(cc):
     if not os.path.exists(f):
         return {}
     titles = json.load(open(tf, encoding="utf-8")) if os.path.exists(tf) else {}
+    from shared_titles import shared_titles
+    titles.update(shared_titles())
     out = {}
     for r in csv.DictReader(open(f, encoding="utf-8")):
         if not r["Channel URL"]:

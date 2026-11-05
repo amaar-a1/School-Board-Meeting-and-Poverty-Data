@@ -70,6 +70,8 @@ def main():
     pupils = {BFS[plab["Schulkanton"][k]]: pv(Schulkanton=k, Jahr=pyear) for k in pcat["Schulkanton"] if plab["Schulkanton"][k] in BFS}
     chans = json.load(open(os.path.join(IN, "youtube", "channels.json"), encoding="utf-8"))
     titles = json.load(open(os.path.join(IN, "youtube", "titles.json"), encoding="utf-8"))
+    from shared_titles import shared_titles
+    titles.update(shared_titles())
     url_of = {c["name"]: c["url"] for x in chans.values() for c in x.get("channels", [])}
     geo = json.load(open(os.path.join(IN, "ch_cantons.geojson"), encoding="utf-8"))
     rows, feats = [], []

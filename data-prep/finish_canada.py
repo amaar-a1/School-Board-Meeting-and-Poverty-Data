@@ -26,6 +26,20 @@ def main(src, yt, dst):
                 counts.pop(r["District ID"], None)
             elif r.get("Meetings"):
                 counts[r["District ID"]] = (int(r["Meetings"]), r["Channel URL"])
+    # Recount from the monthly refresh (refresh_youtube.py) with canada_youtube.py's rules, except where a
+    # Meetings figure was set by hand; also the latest meeting date and meetings per year.
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from shared_titles import shared_titles
+    from meeting_dates import summary as date_summary
+    import canada_youtube as cyt
+    fresh, dates = shared_titles(), {}
+    handset = {r["District ID"] for r in csv.DictReader(open(hand, newline="", encoding="utf-8")) if r.get("Meetings")} if os.path.exists(hand) else set()
+    for k, (n, url) in list(counts.items()):
+        if url in fresh:
+            kept = [t for t in fresh[url] if cyt.MEETING.search(t) and not cyt.NOT.search(t)]
+            if k not in handset:
+                counts[k] = (len({re.sub(r"\b(part|partie|pt)\s*\d+\b|\(\d\)|[-–|:]\s*$", "", t, flags=re.I).strip().lower() for t in kept}), url)
+            dates[k] = date_summary(kept)
     rows = list(csv.DictReader(open(src, newline="", encoding="utf-8")))
     # Enrolment from each province's figures (data-prep/canada_enrolment.py)
     enr = {}
@@ -37,7 +51,7 @@ def main(src, yt, dst):
     if os.path.exists(xf):
         for r in csv.DictReader(open(xf, newline="", encoding="utf-8")):
             enr.setdefault(r["District ID"], r)
-    cols = ["District", "Province", "Board type", "Locale", "Enrollment", "Enrollment year", "Enrollment note", "Available Board Meetings", "Meetings source", "Children Ages 0-17",
+    cols = ["District", "Province", "Board type", "Locale", "Enrollment", "Enrollment year", "Enrollment note", "Available Board Meetings", "Meetings source", "Latest meeting", "Meetings by year", "Children Ages 0-17",
             "Children Ages 0-17 in Low Income", "Percentage of Children Ages 0-17 in Low Income", "How poverty was calculated",
             "Website", "District ID"]
     with open(dst, "w", newline="", encoding="utf-8") as f:
@@ -57,6 +71,7 @@ def main(src, yt, dst):
                             "Lloydminster's division reports to both provinces; this is this province's count, which may overlap with the other side's"
                             if "Lloydminster" in r["District"] and e else ""] if x),
                         "Available Board Meetings": n, "Meetings source": url if n else "",
+                        "Latest meeting": dates.get(r["District ID"], ("", ""))[0] if n else "", "Meetings by year": dates.get(r["District ID"], ("", ""))[1] if n else "",
                         # Ontario's border file (2015) lists old web addresses, many of them dead.
                         "Website": "" if r["Province"] == "ON" else r.get("Website", "")})
     print(len(rows), "boards;", sum(1 for r in rows if counts.get(r["District ID"], (0,))[0] > 0), "with meetings")

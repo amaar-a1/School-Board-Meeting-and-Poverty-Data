@@ -1,0 +1,43 @@
+name: Refresh YouTube meeting counts (monthly)
+
+# Lists every video on the YouTube channels already used for meeting counts (UK, Canada, the Nordic
+# countries, Iceland, the islands and microstates, Switzerland), rebuilds those data files and commits
+# them; the push to main then redeploys the site. It doesn't search for new channels.
+on:
+  schedule:
+    - cron: "41 3 4 * *"   # the 4th of each month
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-meetings
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install tools
+        run: python3 -m pip install -q -U yt-dlp openpyxl
+      - name: List the channels' videos
+        run: timeout 18000 python3 data-prep/refresh_youtube.py || echo "::warning::The refresh stopped early; rebuilding with what it got."
+      - name: Rebuild the data files
+        run: |
+          python3 data-prep/build_uk.py
+          python3 data-prep/finish_canada.py data-prep/inputs/canada/canada_build.csv data-prep/inputs/canada/canada_youtube.csv docs/data/canada.csv
+          python3 data-prep/build_nordic.py
+          python3 data-prep/build_iceland.py
+          python3 data-prep/build_islands.py
+          python3 data-prep/build_switzerland.py
+      - name: Commit
+        run: |
+          git add data-prep/inputs/youtube_titles.json docs/data
+          if git diff --cached --quiet; then echo "Nothing changed"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Monthly refresh of YouTube meeting counts"
+          git pull --rebase origin main && git push

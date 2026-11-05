@@ -67,6 +67,8 @@ def main():
     for f in ("titles.json", "titles_rerun.json"):
         p = os.path.join(IN, "youtube", f)
         if os.path.exists(p): titles.update(json.load(open(p, encoding="utf-8")))
+    from shared_titles import shared_titles
+    titles.update(shared_titles())
     shapes, ids_of = {}, {}
     for f in geo["features"]:
         lid = MERGED.get(f["properties"]["LAU_ID"], f["properties"]["LAU_ID"])

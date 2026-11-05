@@ -184,6 +184,8 @@ def main():
               "switzerland/youtube/titles.json"):   # the last has the microstates' parliaments
         p = os.path.join(IN, f)
         if os.path.exists(p): titles.update(json.load(open(p, encoding="utf-8")))
+    from shared_titles import shared_titles
+    titles.update(shared_titles())
     names = {}
     for line in open(__file__, encoding="utf-8"):
         m = re.match(r'\s+"([A-Z]{3})": \("([^"]+)", "(all|filter)"\),\s+# (.+)', line)
