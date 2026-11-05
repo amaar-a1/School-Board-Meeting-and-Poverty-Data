@@ -1,9 +1,9 @@
 # Temporary: list two more island legislature channels.
 import json, os, subprocess, sys, time
 subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-U", "yt-dlp"], check=True)
-OUT = "fetch/out/isl2"; os.makedirs(OUT, exist_ok=True)
+OUT = "fetch/out/isl3"; os.makedirs(OUT, exist_ok=True)
 res = {}
-for url in ("https://www.youtube.com/channel/UCSrOT5JzaIXcr1btNC9LaTQ", "https://www.youtube.com/channel/UCnSUlj13EVE449biHplmLlw"):
+for url in ("https://www.youtube.com/channel/UCDvTAcd3t8yEAIiM-Ck49lg",):
     vids = []
     for tab in ("/videos", "/streams"):
         r = subprocess.run([sys.executable, "-m", "yt_dlp", "--flat-playlist", "-J", "--no-warnings", url + tab], capture_output=True, text=True, timeout=900)
