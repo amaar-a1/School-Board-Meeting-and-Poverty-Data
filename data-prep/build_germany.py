@@ -8,6 +8,10 @@ the districts (Landkreise) and district-free cities (kreisfreie Städte) are the
   basic income support (SGB II), 2023. Eisenach merged into the Wartburgkreis in 2021; the NUTS 2021
   border still shows it, with the Wartburgkreis figure.
 - Children under 15 and density: Eurostat demo_r_pjanaggr3 and demo_r_d3dens (latest year).
+- Meetings: recordings on the district's or city's own YouTube channel (data-prep/nordic_youtube.py,
+  country DE; channels in inputs/germany/youtube/, wrong matches dropped in NOT_CHANNELS): sittings of
+  its school committee (Schulausschuss, Bildungsausschuss) if any, otherwise of the council itself
+  (Kreistag, Stadtrat, Bürgerschaft) as a stand-in, counted once per day.
 - Locale (estimated): Eurostat's people per km²: urban 2,000+, suburban 500-2,000, mixed 100-500, rural under 100.
 Usage: python3 data-prep/build_germany.py
 """
@@ -37,6 +41,41 @@ def eurostat(path, **fixed):
     return out
 
 
+SCHOOL = re.compile(r"(schul|bildungs)\w*ausschuss|ausschuss f[üu]r (schule|bildung)", re.I)
+COUNCIL = re.compile(r"kreistag|stadtrat|stadtverordnet|gemeinderat|ratssitzung|b[üu]rgerschaft|abgeordnetenhaus|städteregionstag|regionsversammlung", re.I)
+SITZ = re.compile(r"sitzung|\d{1,2}\.\s*\w+\s+20\d\d|\d{1,2}\.\d{1,2}\.\d{2,4}|live|übertragung", re.I)
+NOT_T = re.compile(r"jugend|kinder|wahl|kandidat|interview|imagefilm|trailer|erklärt|bürgermeister(in)? im gespräch", re.I)
+NOT_CHANNELS = set()   # channel names checked by hand and found wrong (filled after the search)
+
+
+def meetings(k):
+    """(count, channel URL, counted titles, kind) for NUTS id k."""
+    import json as _j
+    from meeting_dates import parse
+    from shared_titles import shared_titles
+    yd = os.path.join(IN, "youtube")
+    rows = {r["District ID"]: r for r in csv.DictReader(open(os.path.join(yd, "DE_youtube.csv"), encoding="utf-8"))} if os.path.exists(os.path.join(yd, "DE_youtube.csv")) else {}
+    titles = _j.load(open(os.path.join(yd, "titles.json"), encoding="utf-8")) if os.path.exists(os.path.join(yd, "titles.json")) else {}
+    titles.update(shared_titles())
+    r = rows.get(f"DE-{k}") or {}
+    url = r.get("Channel URL", "")
+    if not url or r.get("Channel") in NOT_CHANNELS or url not in titles:
+        return 0, "", [], ""
+    vids = [t for t in titles[url] if SITZ.search(t) and not NOT_T.search(t)]
+    for rx, kind in ((SCHOOL, "School committee"), (COUNCIL, "Council (stand-in)")):
+        keep = [t for t in vids if rx.search(t)]
+        keys = {parse(t) or re.sub(r"\b(teil|part)\s*\d+\b|\(\d\)|\d/\d", "", t, flags=re.I).strip().lower() for t in keep}
+        if keys: return len(keys), url, keep, kind
+    return 0, "", [], ""
+
+
+def meeting_cols(k):
+    from meeting_dates import summary
+    n, url, keep, kind = meetings(k)
+    latest, years = summary(keep) if n else ("", "")
+    return {"Available Board Meetings": n, "Meetings type": kind, "Meetings source": url, "Latest meeting": latest, "Meetings by year": years}
+
+
 def main():
     search = json.load(open(os.path.join(IN, "de_ww_search.json"), encoding="utf-8"))
     urls = json.load(open(os.path.join(IN, "de_ww_urls.json")))
@@ -64,7 +103,7 @@ def main():
         rows.append({"District": name, "State": LAND[k[:3]],
                      "Type": "District-free city" if "Kreisfreie Stadt" in p["NAME_LATN"] or k in ("DE300", "DE600", "DE501", "DE502") else "District",
                      "Locale": "" if d is None else "Urban" if d >= 2000 else "Suburban" if d >= 500 else "Mixed" if d >= 100 else "Rural",
-                     "Available Board Meetings": 0, "Children": round(c) if c else "",
+                     **meeting_cols(k), "Children": round(c) if c else "",
                      "Children in Low Income": round(c * r / 100) if c and r is not None else "",
                      "Percentage of Children in Low Income": f"{r:.2f}%" if r is not None else "",
                      "Poverty by year": "; ".join(f"{y}:{v}" for y, v in sorted(hist.get(k, {}).items())),

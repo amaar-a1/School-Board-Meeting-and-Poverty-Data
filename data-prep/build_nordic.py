@@ -86,6 +86,26 @@ def strict_count(cc, titles):
     return len({re.sub(r"\b(del|osa|deel|part|video)\s*\d+(\s*(av|af|van|/)\s*\d+)?\b|\(\d\)|\d/\d\s*$", "", t, flags=re.I).strip().lower() for t in keep}), keep
 
 
+# Full council meetings, the stand-in where the education committee isn't recorded (in Sweden, Finland
+# and Denmark committees meet in private, but councils meet in public and approve their school business).
+COUNCIL = {
+    "NO": (r"kommunestyre|bystyre", r"m[øo]te|\d"),
+    "SE": (r"kommunfullm[aä]ktige|fullm[aä]ktige", r"sammantr[aä]de|m[oö]te|\d"),
+    "FI": (r"valtuusto|fullmäktige", r"kokous|sammantr[aä]de|\d"),
+    "DK": (r"byr[aå]d|kommunalbestyrelse", r"m[øo]de|\d"),
+    "NL": (r"gemeenteraad|raadsvergadering|\braad\b", r"vergadering|\d"),
+}
+COUNCIL_NOT = r"ungdom|youth|jongeren|kinder|valg|election|verkiezing|vaalit|kosning|debatt om|intervju|interview"
+
+
+def council_count(cc, titles):
+    body, mw = (re.compile(x, re.I) for x in COUNCIL[cc])
+    keep = [t for t in titles if body.search(t) and mw.search(t) and not re.search(COUNCIL_NOT, t, re.I)]
+    from meeting_dates import parse
+    keys = {(parse(t) or re.sub(r"\b(del|osa|deel|part)\s*\d+\b|\(\d\)|\d/\d", "", t, flags=re.I).strip().lower()) for t in keep}
+    return len(keys), keep
+
+
 def meetings(cc):
     """{District ID: (count, channel URL, examples)} from the YouTube search and title lists."""
     f = os.path.join(IN, "youtube", f"{cc}_youtube.csv")
@@ -100,7 +120,11 @@ def meetings(cc):
         if not r["Channel URL"]:
             continue
         n, ex = strict_count(cc, titles[r["Channel URL"]]) if r["Channel URL"] in titles else (0, [])
-        out[r["District ID"]] = (n, r["Channel URL"], ex)   # ex: every counted title
+        kind = "Education committee" if n else ""
+        if not n and r["Channel URL"] in titles:
+            n, ex = council_count(cc, titles[r["Channel URL"]])
+            kind = "Council (stand-in)" if n else ""
+        out[r["District ID"]] = (n, r["Channel URL"], ex, kind)   # ex: every counted title
     return out
 
 
@@ -252,7 +276,8 @@ def main():
         meet = meetings(cc)
         for k, r in rows.items():
             if r["District ID"] in meet:
-                n, url, ex = meet[r["District ID"]]
+                n, url, ex, kind = meet[r["District ID"]]
+                r["Meetings type"] = kind
                 r["Available Board Meetings"] = n
                 r["Meetings source"] = url
                 if n: r["Latest meeting"], r["Meetings by year"] = date_summary(ex)
@@ -267,7 +292,7 @@ def main():
                 r["Locale"], r["People per km² (estimated)"] = locale(basis, SHARE[cc], area)
             out.append(r)
         out.sort(key=lambda r: r["District"])
-        cols = ["District", "Locale", "Available Board Meetings", "Meetings source", "Latest meeting", "Meetings by year", "Children", "Children in Low Income",
+        cols = ["District", "Locale", "Available Board Meetings", "Meetings type", "Meetings source", "Latest meeting", "Meetings by year", "Children", "Children in Low Income",
                 "Percentage of Children in Low Income", "Poverty note", "Poverty by year", "Enrollment", "Enrollment year", "People per km² (estimated)", "District ID"]
         with open(os.path.join(DOCS, f"{key}.csv"), "w", newline="", encoding="utf-8") as fo:
             w = csv.DictWriter(fo, fieldnames=cols, restval=""); w.writeheader(); w.writerows(out)

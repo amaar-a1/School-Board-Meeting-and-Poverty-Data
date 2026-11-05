@@ -25,11 +25,14 @@ C = {
     # Iceland: councils (bæjarstjórn, sveitarstjórn, borgarstjórn) and education committees (fræðsluráð, skólanefnd).
     "IS": dict(file="iceland", q="{} bæjarstjórnarfundur", chan=r"b[æa]r|borg|hreppur|sveitarf[ée]lag|bygg[dð]|kaupsta[dð]|stj[óo]rn",
                edu=r"fr[æa]ðslu|sk[óo]la|mennta|fr[íi]stund", meet=r"fund|stj[óo]rn|nefnd|r[áa]ð"),
+    # Germany: district councils (Kreistag) and city councils, and their school committees (Schulausschuss).
+    "DE": dict(file="germany", q="{} Kreistag Sitzung", chan=r"kreis|stadt|kreistag|landratsamt|rat\b|region|städteregion|bürgerschaft|abgeordnetenhaus",
+               edu=r"schul|bildung", meet=r"ausschuss|sitzung|kreistag|stadtrat|ratssitzung|stadtverordnet|bürgerschaft"),
     "NL": dict(file="netherlands", q="gemeente {} raadsvergadering", chan=r"gemeente|gemeenteraad|raad|griffie",
                edu=r"onderwijs|jeugd|school|kind",
                meet=r"commissie|raad|vergadering|beeldvorm|oordeelvorm"),
 }
-GENERIC = set("kommune kommun kunta kaupunki stad gemeente municipality the og och ja en de het".split())
+GENERIC = set("kommune kommun kunta kaupunki stad gemeente municipality the og och ja en de het city district stadt kreis landkreis".split())
 ANY_MEET = {cc: re.compile(c["meet"], re.I) for cc, c in C.items()}
 
 

@@ -176,6 +176,7 @@ window.SOURCES = [
     items: [
       { title: "Children below 60% of the median income (Malta, Cyprus): Eurostat ilc_li02", url: "https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table" },
       { title: "National poverty line, unemployment, population, enrollment (primary and secondary): World Bank World Development Indicators (SI.POV.NAHC, SL.UEM.TOTL.ZS, SP.POP.TOTL, SP.POP.0014.TO.ZS, SE.PRM.ENRL, SE.SEC.ENRL)", url: "https://data.worldbank.org/" },
+      { title: "Saint-Martin and Saint-Barthélemy unemployment: IEDOM, annual economic reports 2025 (Rapport annuel économique de Saint-Martin, de Saint-Barthélemy)", url: "https://www.iedom.fr/Rapport-annuel-economique-de-Saint-Martin-2025" },
       { title: "Norfolk Island unemployment: Australian Bureau of Statistics, 2021 Census QuickStats (Norfolk Island)", url: "https://www.abs.gov.au/census/find-census-data/quickstats/2021/SAL90004" },
       { title: "Where the World Bank has none: CIA World Factbook (2026 edition, and the November 2023 edition for poverty and unemployment), via the factbook.json archive", url: "https://github.com/factbook/factbook.json" },
       { title: "Meetings (stand-in): each legislature's YouTube channel, found with data-prep/islands_youtube.py and checked by hand (listed in the “Meetings source” column); sittings counted once per day", url: "https://www.youtube.com/" },

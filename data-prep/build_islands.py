@@ -36,7 +36,9 @@ NAMES = {"Antigua and Barb.": "Antigua and Barbuda", "St. Kitts and Nevis": "Sai
          "Micronesia": "Federated States of Micronesia", "São Tomé and Principe": "São Tomé and Príncipe",
          "Saint Helena": "Saint Helena, Ascension and Tristan da Cunha"}
 # Figures found by hand where neither the World Bank nor the Factbook has one.
-MANUAL = {"NFK": (2.8, "Unemployment rate, a stand-in for poverty (Australian Bureau of Statistics, 2021 Census: 33 of 1,187 in the labour force)")}
+MANUAL = {"NFK": (2.8, "Unemployment rate, a stand-in for poverty (Australian Bureau of Statistics, 2021 Census: 33 of 1,187 in the labour force)"),
+          "MAF": (27.0, "Unemployment rate, a stand-in for poverty (census definition, 2023; IEDOM annual report on Saint-Martin, 2025 edition)"),
+          "BLM": (1.9, "Unemployment rate, a stand-in for poverty (ILO definition, 2021; IEDOM annual report on Saint-Barthélemy, 2025 edition)")}
 # Meetings: no island has a school board (a ministry runs the schools), so, as for Saint-Pierre-et-Miquelon,
 # the stand-in is the elected legislature's sittings on its YouTube channel (islands_youtube.py finds
 # them; checked by hand). "all": the legislature's own channel, where every dated sitting counts;
