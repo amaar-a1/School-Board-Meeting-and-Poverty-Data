@@ -167,9 +167,10 @@ window.SOURCES = [
     group: "New Zealand: child poverty areas",
     items: [
       { title: "Child low income: Stats NZ, Child poverty statistics, year ended June 2025, Table 4.02 (below 60% of the median income before housing costs, by regional council area)", url: "https://www.stats.govt.nz/information-releases/child-poverty-statistics-year-ended-june-2025/" },
+      { title: "Enrollment: students enrolled in primary and secondary schools by region, July 2025 (Ministry of Education roll returns), via Figure.NZ", url: "https://figure.nz/chart/POTlO8r1L2X6mKJc" },
       { title: "Borders: Natural Earth 1:10m admin-1 states and provinces (regions merged where Stats NZ combines them)", url: "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/" }
     ],
-    note: "The Ministry of Education's school directory (Education Counts) and data.govt.nz both refused automated downloads, so school and enrollment counts by area aren't included. The Chatham Islands aren't in Stats NZ's regional figures. Built by data-prep/build_nz.py."
+    note: "Enrollment for combined areas adds up their regions. The Chatham Islands aren't in Stats NZ's regional figures. Built by data-prep/build_nz.py."
   },
   {
     only: "Islands and microstates",

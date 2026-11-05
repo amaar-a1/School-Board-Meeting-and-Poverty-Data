@@ -5,6 +5,8 @@ board. Stats NZ publishes child poverty for 12 regional council areas (some comb
 site shows those areas, with 0 meetings.
 - Child low income: Stats NZ, Child poverty statistics, year ended June 2025, Table 4.02: children in
   households below 60% of the median equivalised disposable income before housing costs (BHC).
+- Enrollment: students in primary and secondary schools at July 2025 (Ministry of Education roll returns,
+  via Figure.NZ), added up the way Stats NZ combines regions (inputs/nz/school_rolls_july2025.csv).
 - Borders: Natural Earth 1:10m admin-1 regions, merged the way Stats NZ combines them.
 - Locale (estimated): children / 0.22 (their approximate share of the population) over each area.
 Usage: python3 data-prep/build_nz.py
@@ -38,6 +40,7 @@ def main():
             vals.setdefault(reg, (v[1], v[5]))   # rate (%), number of children (000s)
         if reg and v and re.fullmatch(r"20\d\d", str(v[0])) and isinstance(v[1], (int, float)):
             hist.setdefault(reg, {}).setdefault(str(v[0]), v[1])
+    roll = {r["Regional Council Area"]: int(r["Number of Students"]) for r in csv.DictReader(open(os.path.join(IN, "school_rolls_july2025.csv"), encoding="utf-8"))}
     geo = json.load(open(os.path.join(IN, "nz_regions.geojson"), encoding="utf-8"))
     by = {f["properties"]["iso_3166_2"]: f["geometry"] for f in geo["features"]}
     rows, feats = [], []
@@ -52,6 +55,7 @@ def main():
         rows.append({"District": name, "Locale": "Urban" if dens >= 2000 else "Suburban" if dens >= 500 else "Mixed" if dens >= 100 else "Rural",
                      "Available Board Meetings": 0, "Children": kids, "Children in Low Income": round(n * 1000),
                      "Percentage of Children in Low Income": f"{rate:.2f}%",
+                     "Enrollment": sum(roll[p.strip()] for p in name.split("/")), "Enrollment year": "July 2025",
                      "Poverty by year": "; ".join(f"{y}:{x}" for y, x in sorted(hist.get(name, {}).items())), "People per km² (estimated)": round(dens),
                      "District ID": f"NZ-{CODE[name]}"})
         rnd = lambda c: [rnd(x) for x in c] if isinstance(c[0], list) else [round(c[0], 3), round(c[1], 3)]
