@@ -1,0 +1,3514 @@
+{
+  "id" : "nudc-7mev",
+  "name" : "MEN_ESTADISTICAS_EN_EDUCACION_EN_PREESCOLAR, BÁSICA Y MEDIA_POR_MUNICIPIO",
+  "assetType" : "dataset",
+  "attribution" : "Ministerio de Educación Nacional MinEducación, Bogotá, D.C",
+  "attributionLink" : "https://www.mineducacion.gov.co/portal/",
+  "averageRating" : 0,
+  "category" : "Educación",
+  "createdAt" : 1477577323,
+  "description" : "Contiene información estadística de los niveles preescolar, básica y media relacionada con indicadores sectoriales por Municipio sin atípicos, desde el 2011 hasta 2024.\n\nNOTA: Para las tasas de cobertura bruta y neta  2019 y 2018  se realizarron con las proyecciones de población Censo 2018.\n\nCabe mencionar que los datos de cada indicador esta con punto decimal, al momento de exportar los datos se multiplica por 100, para convertirlo a porcentajes.\n\n\npara el detalle de las notas explicativas, por favor consulte el siguiente link http://bi.mineducacion.gov.co:8380/eportal/web/planeacion-basica/documentos?p_p_id=110_INSTANCE_ex7X&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_110_INSTANCE_ex7X_struts_action=%2Fdocument_library_display%2Fview_file_entry&_110_INSTANCE_ex7X_redirect=http%3A%2F%2Fbi.mineducacion.gov.co%3A8380%2Feportal%2Fweb%2Fplaneacion-basica%2Fdocumentos%2F-%2Fdocument_library_display%2Fex7X%2Fview%2F111648%3F_110_INSTANCE_ex7X_redirect%3Dhttp%253A%252F%252Fbi.mineducacion.gov.co%253A8380%252Feportal%252Fweb%252Fplaneacion-basica%252Fdocumentos%253Fp_p_id%253D110_INSTANCE_ex7X%2526p_p_lifecycle%253D0%2526p_p_state%253Dnormal%2526p_p_mode%253Dview%2526p_p_col_id%253Dcolumn-1%2526p_p_col_count%253D1&_110_INSTANCE_ex7X_fileEntryId=111654",
+  "diciBackend" : false,
+  "displayType" : "table",
+  "downloadCount" : 28950,
+  "hideFromCatalog" : false,
+  "hideFromDataJson" : false,
+  "licenseId" : "CC_40_BY_SA",
+  "locked" : false,
+  "newBackend" : true,
+  "numberOfComments" : 0,
+  "oid" : 35973320,
+  "provenance" : "official",
+  "publicationAppendEnabled" : false,
+  "publicationDate" : 1607724203,
+  "publicationGroup" : 13874365,
+  "publicationStage" : "published",
+  "rowsUpdatedAt" : 1763069661,
+  "rowsUpdatedBy" : "ymvt-n7h8",
+  "tableId" : 17854671,
+  "totalTimesRated" : 0,
+  "viewCount" : 180248,
+  "viewLastModified" : 1789678004,
+  "viewType" : "tabular",
+  "approvals" : [ {
+    "reviewedAt" : 1533370893,
+    "reviewedAutomatically" : true,
+    "state" : "approved",
+    "submissionId" : 3016002,
+    "submissionObject" : "public_audience_request",
+    "submissionOutcome" : "change_audience",
+    "submittedAt" : 1533370893,
+    "targetAudience" : "public",
+    "workflowId" : 2188,
+    "submissionDetails" : {
+      "permissionType" : "READ"
+    },
+    "submissionOutcomeApplication" : {
+      "failureCount" : 0,
+      "status" : "success"
+    },
+    "submitter" : {
+      "id" : "ymvt-n7h8",
+      "displayName" : "Ministerio de Educación Nacional"
+    }
+  } ],
+  "clientContext" : {
+    "clientContextVariables" : [ ],
+    "inheritedVariables" : { }
+  },
+  "columns" : [ {
+    "id" : 513724195,
+    "name" : "AÑO",
+    "dataTypeName" : "text",
+    "description" : "Vigencia del indicador",
+    "fieldName" : "a_o",
+    "position" : 1,
+    "renderTypeName" : "text",
+    "tableColumnId" : 115204121,
+    "width" : 136,
+    "cachedContents" : {
+      "non_null" : "15707",
+      "largest" : "2024",
+      "null" : "0",
+      "top" : [ {
+        "item" : "2019",
+        "count" : "1123"
+      }, {
+        "item" : "2014",
+        "count" : "1122"
+      }, {
+        "item" : "2016",
+        "count" : "1122"
+      }, {
+        "item" : "2015",
+        "count" : "1122"
+      }, {
+        "item" : "2011",
+        "count" : "1122"
+      }, {
+        "item" : "2024",
+        "count" : "1122"
+      }, {
+        "item" : "2012",
+        "count" : "1122"
+      }, {
+        "item" : "2021",
+        "count" : "1122"
+      }, {
+        "item" : "2020",
+        "count" : "1122"
+      }, {
+        "item" : "2013",
+        "count" : "1122"
+      }, {
+        "item" : "2017",
+        "count" : "1122"
+      }, {
+        "item" : "2018",
+        "count" : "1122"
+      }, {
+        "item" : "2023",
+        "count" : "1121"
+      }, {
+        "item" : "2022",
+        "count" : "1121"
+      } ],
+      "smallest" : "2011",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : { }
+  }, {
+    "id" : 513724196,
+    "name" : "CÓDIGO_MUNICIPIO",
+    "dataTypeName" : "text",
+    "description" : "Código DANE del Municipio",
+    "fieldName" : "c_digo_municipio",
+    "position" : 2,
+    "renderTypeName" : "text",
+    "tableColumnId" : 115204092,
+    "width" : 292,
+    "cachedContents" : {
+      "non_null" : "15707",
+      "largest" : "99773",
+      "null" : "0",
+      "top" : [ {
+        "item" : "68271",
+        "count" : "14"
+      }, {
+        "item" : "25123",
+        "count" : "14"
+      }, {
+        "item" : "19824",
+        "count" : "14"
+      }, {
+        "item" : "73347",
+        "count" : "14"
+      }, {
+        "item" : "13655",
+        "count" : "14"
+      }, {
+        "item" : "94887",
+        "count" : "14"
+      }, {
+        "item" : "50270",
+        "count" : "14"
+      }, {
+        "item" : "52110",
+        "count" : "14"
+      }, {
+        "item" : "23815",
+        "count" : "14"
+      }, {
+        "item" : "41799",
+        "count" : "14"
+      }, {
+        "item" : "86571",
+        "count" : "14"
+      }, {
+        "item" : "73275",
+        "count" : "14"
+      }, {
+        "item" : "15401",
+        "count" : "14"
+      }, {
+        "item" : "73408",
+        "count" : "14"
+      }, {
+        "item" : "66088",
+        "count" : "14"
+      }, {
+        "item" : "52203",
+        "count" : "14"
+      }, {
+        "item" : "27160",
+        "count" : "14"
+      }, {
+        "item" : "13654",
+        "count" : "14"
+      }, {
+        "item" : "52323",
+        "count" : "14"
+      }, {
+        "item" : "15172",
+        "count" : "14"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : { }
+  }, {
+    "id" : 513724197,
+    "name" : "MUNICIPIO",
+    "dataTypeName" : "text",
+    "description" : "Nombre del  Municipio",
+    "fieldName" : "municipio",
+    "position" : 3,
+    "renderTypeName" : "text",
+    "tableColumnId" : 39701071,
+    "width" : 208,
+    "cachedContents" : {
+      "non_null" : "15707",
+      "largest" : "Zona Bananera",
+      "null" : "0",
+      "top" : [ {
+        "item" : "Buenavista",
+        "count" : "56"
+      }, {
+        "item" : "La Unión",
+        "count" : "56"
+      }, {
+        "item" : "Villanueva",
+        "count" : "56"
+      }, {
+        "item" : "San Andrés",
+        "count" : "42"
+      }, {
+        "item" : "San Pedro",
+        "count" : "42"
+      }, {
+        "item" : "Guadalupe",
+        "count" : "42"
+      }, {
+        "item" : "La Victoria",
+        "count" : "42"
+      }, {
+        "item" : "Córdoba",
+        "count" : "42"
+      }, {
+        "item" : "Santa Bárbara",
+        "count" : "42"
+      }, {
+        "item" : "San Francisco",
+        "count" : "42"
+      }, {
+        "item" : "Albania",
+        "count" : "42"
+      }, {
+        "item" : "Granada",
+        "count" : "42"
+      }, {
+        "item" : "Sucre",
+        "count" : "42"
+      }, {
+        "item" : "Nariño",
+        "count" : "42"
+      }, {
+        "item" : "Bolívar",
+        "count" : "42"
+      }, {
+        "item" : "Argelia",
+        "count" : "42"
+      }, {
+        "item" : "Sabanalarga",
+        "count" : "42"
+      }, {
+        "item" : "El Peñón",
+        "count" : "42"
+      }, {
+        "item" : "Belén",
+        "count" : "28"
+      }, {
+        "item" : "San Pablo",
+        "count" : "28"
+      } ],
+      "smallest" : "Abejorral",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : { }
+  }, {
+    "id" : 513724198,
+    "name" : "CÓDIGO_DEPARTAMENTO",
+    "dataTypeName" : "text",
+    "description" : "Código DANE del Departamento ",
+    "fieldName" : "c_digo_departamento",
+    "position" : 4,
+    "renderTypeName" : "text",
+    "tableColumnId" : 115204095,
+    "width" : 328,
+    "cachedContents" : {
+      "non_null" : "15707",
+      "largest" : "99",
+      "null" : "0",
+      "top" : [ {
+        "item" : "15",
+        "count" : "1722"
+      }, {
+        "item" : "25",
+        "count" : "1624"
+      }, {
+        "item" : "5",
+        "count" : "1500"
+      }, {
+        "item" : "68",
+        "count" : "1218"
+      }, {
+        "item" : "52",
+        "count" : "896"
+      }, {
+        "item" : "73",
+        "count" : "658"
+      }, {
+        "item" : "13",
+        "count" : "644"
+      }, {
+        "item" : "76",
+        "count" : "588"
+      }, {
+        "item" : "19",
+        "count" : "588"
+      }, {
+        "item" : "54",
+        "count" : "560"
+      }, {
+        "item" : "41",
+        "count" : "518"
+      }, {
+        "item" : "27",
+        "count" : "421"
+      }, {
+        "item" : "47",
+        "count" : "420"
+      }, {
+        "item" : "23",
+        "count" : "420"
+      }, {
+        "item" : "50",
+        "count" : "406"
+      }, {
+        "item" : "17",
+        "count" : "378"
+      }, {
+        "item" : "70",
+        "count" : "364"
+      }, {
+        "item" : "20",
+        "count" : "350"
+      }, {
+        "item" : "8",
+        "count" : "276"
+      }, {
+        "item" : "85",
+        "count" : "266"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : { }
+  }, {
+    "id" : 513724199,
+    "name" : "DEPARTAMENTO",
+    "dataTypeName" : "text",
+    "description" : "Nombre del Departamento",
+    "fieldName" : "departamento",
+    "position" : 5,
+    "renderTypeName" : "text",
+    "tableColumnId" : 39701073,
+    "width" : 244,
+    "cachedContents" : {
+      "non_null" : "15707",
+      "largest" : "Vichada",
+      "null" : "0",
+      "top" : [ {
+        "item" : "Antioquia",
+        "count" : "1750"
+      }, {
+        "item" : "Boyacá",
+        "count" : "1722"
+      }, {
+        "item" : "Cundinamarca",
+        "count" : "1624"
+      }, {
+        "item" : "Santander",
+        "count" : "1218"
+      }, {
+        "item" : "Nariño",
+        "count" : "896"
+      }, {
+        "item" : "Tolima",
+        "count" : "658"
+      }, {
+        "item" : "Bolívar",
+        "count" : "644"
+      }, {
+        "item" : "Cauca",
+        "count" : "588"
+      }, {
+        "item" : "Valle del Cauca",
+        "count" : "588"
+      }, {
+        "item" : "Norte de Santander",
+        "count" : "560"
+      }, {
+        "item" : "Huila",
+        "count" : "518"
+      }, {
+        "item" : "Chocó",
+        "count" : "421"
+      }, {
+        "item" : "Magdalena",
+        "count" : "420"
+      }, {
+        "item" : "Córdoba",
+        "count" : "420"
+      }, {
+        "item" : "Meta",
+        "count" : "406"
+      }, {
+        "item" : "Caldas",
+        "count" : "378"
+      }, {
+        "item" : "Sucre",
+        "count" : "364"
+      }, {
+        "item" : "Cesar",
+        "count" : "350"
+      }, {
+        "item" : "Atlántico",
+        "count" : "322"
+      }, {
+        "item" : "Casanare",
+        "count" : "266"
+      } ],
+      "smallest" : "Amazonas",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : { }
+  }, {
+    "id" : 513724200,
+    "name" : "CÓDIGO_ETC",
+    "dataTypeName" : "text",
+    "description" : "Código DANE de la ETC",
+    "fieldName" : "c_digo_etc",
+    "position" : 6,
+    "renderTypeName" : "text",
+    "tableColumnId" : 115204105,
+    "width" : 220,
+    "cachedContents" : {
+      "non_null" : "15707",
+      "largest" : "7740",
+      "null" : "0",
+      "top" : [ {
+        "item" : "3769",
+        "count" : "1560"
+      }, {
+        "item" : "3758",
+        "count" : "1519"
+      }, {
+        "item" : "3785",
+        "count" : "1412"
+      }, {
+        "item" : "3808",
+        "count" : "1066"
+      }, {
+        "item" : "3798",
+        "count" : "793"
+      }, {
+        "item" : "3815",
+        "count" : "598"
+      }, {
+        "item" : "3767",
+        "count" : "572"
+      }, {
+        "item" : "3777",
+        "count" : "533"
+      }, {
+        "item" : "3801",
+        "count" : "507"
+      }, {
+        "item" : "3790",
+        "count" : "455"
+      }, {
+        "item" : "3817",
+        "count" : "442"
+      }, {
+        "item" : "3789",
+        "count" : "378"
+      }, {
+        "item" : "3794",
+        "count" : "364"
+      }, {
+        "item" : "3796",
+        "count" : "364"
+      }, {
+        "item" : "3781",
+        "count" : "351"
+      }, {
+        "item" : "3773",
+        "count" : "338"
+      }, {
+        "item" : "3813",
+        "count" : "325"
+      }, {
+        "item" : "3779",
+        "count" : "312"
+      }, {
+        "item" : "3764",
+        "count" : "260"
+      }, {
+        "item" : "3825",
+        "count" : "234"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : { }
+  }, {
+    "id" : 513724201,
+    "name" : "ETC",
+    "dataTypeName" : "text",
+    "description" : "Nombre de la ETC",
+    "fieldName" : "etc",
+    "position" : 7,
+    "renderTypeName" : "text",
+    "tableColumnId" : 39701075,
+    "width" : 136,
+    "cachedContents" : {
+      "non_null" : "15707",
+      "largest" : "Zipaquirá",
+      "null" : "0",
+      "top" : [ {
+        "item" : "Boyacá (ETC)",
+        "count" : "1680"
+      }, {
+        "item" : "Antioquia (ETC)",
+        "count" : "1636"
+      }, {
+        "item" : "Cundinamarca (ETC)",
+        "count" : "1520"
+      }, {
+        "item" : "Santander (ETC)",
+        "count" : "1148"
+      }, {
+        "item" : "Nariño (ETC)",
+        "count" : "854"
+      }, {
+        "item" : "Tolima (ETC)",
+        "count" : "644"
+      }, {
+        "item" : "Bolívar (ETC)",
+        "count" : "616"
+      }, {
+        "item" : "Cauca (ETC)",
+        "count" : "574"
+      }, {
+        "item" : "Norte de Santander (ETC)",
+        "count" : "546"
+      }, {
+        "item" : "Huila (ETC)",
+        "count" : "490"
+      }, {
+        "item" : "Valle del Cauca (ETC)",
+        "count" : "476"
+      }, {
+        "item" : "Chocó (ETC)",
+        "count" : "407"
+      }, {
+        "item" : "Magdalena (ETC)",
+        "count" : "392"
+      }, {
+        "item" : "Meta (ETC)",
+        "count" : "392"
+      }, {
+        "item" : "Córdoba (ETC)",
+        "count" : "378"
+      }, {
+        "item" : "Caldas (ETC)",
+        "count" : "364"
+      }, {
+        "item" : "Sucre (ETC)",
+        "count" : "350"
+      }, {
+        "item" : "Cesar (ETC)",
+        "count" : "336"
+      }, {
+        "item" : "Atlántico (ETC)",
+        "count" : "280"
+      }, {
+        "item" : "Casanare (ETC)",
+        "count" : "252"
+      } ],
+      "smallest" : "Amazonas (ETC)",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : { }
+  }, {
+    "id" : 513724202,
+    "name" : "POBLACIÓN_5_16",
+    "dataTypeName" : "text",
+    "description" : "Población en edad teórica de estudiar (5 a 16 años) según proyecciones de población del DANE",
+    "fieldName" : "poblaci_n_5_16",
+    "position" : 8,
+    "renderTypeName" : "text",
+    "tableColumnId" : 115204096,
+    "width" : 268,
+    "cachedContents" : {
+      "non_null" : "15701",
+      "largest" : "9998",
+      "null" : "6",
+      "top" : [ {
+        "item" : "1857",
+        "count" : "10"
+      }, {
+        "item" : "974",
+        "count" : "10"
+      }, {
+        "item" : "1039",
+        "count" : "10"
+      }, {
+        "item" : "1181",
+        "count" : "10"
+      }, {
+        "item" : "1823",
+        "count" : "10"
+      }, {
+        "item" : "475",
+        "count" : "10"
+      }, {
+        "item" : "1004",
+        "count" : "9"
+      }, {
+        "item" : "589",
+        "count" : "9"
+      }, {
+        "item" : "2018",
+        "count" : "9"
+      }, {
+        "item" : "476",
+        "count" : "9"
+      }, {
+        "item" : "1186",
+        "count" : "9"
+      }, {
+        "item" : "469",
+        "count" : "9"
+      }, {
+        "item" : "1176",
+        "count" : "9"
+      }, {
+        "item" : "844",
+        "count" : "9"
+      }, {
+        "item" : "1510",
+        "count" : "9"
+      }, {
+        "item" : "470",
+        "count" : "8"
+      }, {
+        "item" : "478",
+        "count" : "8"
+      }, {
+        "item" : "1080",
+        "count" : "8"
+      }, {
+        "item" : "1210",
+        "count" : "8"
+      }, {
+        "item" : "591",
+        "count" : "8"
+      } ],
+      "smallest" : "1",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : { }
+  }, {
+    "id" : 513724251,
+    "name" : "TASA_MATRICULACIÓN_5_16",
+    "dataTypeName" : "number",
+    "description" : "Proporción de la población entre 5 y 16 años que se encuentra asistiendo al sistema educativo. Cuando las proyecciones de población del DANE no capturan adecuadamente los flujos migratorios internos, puede alcanzar valores mayores al 100%. ",
+    "fieldName" : "tasa_matriculaci_n_5_16",
+    "position" : 9,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049747,
+    "width" : 376,
+    "cachedContents" : {
+      "non_null" : "15592",
+      "largest" : "279.03",
+      "null" : "115",
+      "top" : [ {
+        "item" : "82.7",
+        "count" : "15"
+      }, {
+        "item" : "88.4",
+        "count" : "14"
+      }, {
+        "item" : "79.8",
+        "count" : "14"
+      }, {
+        "item" : "85.1",
+        "count" : "14"
+      }, {
+        "item" : "87.3",
+        "count" : "14"
+      }, {
+        "item" : "91.9",
+        "count" : "14"
+      }, {
+        "item" : "79.1",
+        "count" : "14"
+      }, {
+        "item" : "92.7",
+        "count" : "13"
+      }, {
+        "item" : "96.1",
+        "count" : "13"
+      }, {
+        "item" : "76.6",
+        "count" : "13"
+      }, {
+        "item" : "78.3",
+        "count" : "13"
+      }, {
+        "item" : "81",
+        "count" : "13"
+      }, {
+        "item" : "84.2",
+        "count" : "13"
+      }, {
+        "item" : "88.3",
+        "count" : "13"
+      }, {
+        "item" : "90.5",
+        "count" : "13"
+      }, {
+        "item" : "81.2",
+        "count" : "12"
+      }, {
+        "item" : "85.7",
+        "count" : "12"
+      }, {
+        "item" : "84.5",
+        "count" : "12"
+      }, {
+        "item" : "73.8",
+        "count" : "12"
+      }, {
+        "item" : "91",
+        "count" : "12"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724264,
+    "name" : "COBERTURA_NETA",
+    "dataTypeName" : "number",
+    "description" : "Es la relación entre el número de estudiantes matriculados en transición, primaria, secundaria y media que tienen la edad teórica (5 a 16 años) y el total de la población correspondiente a esa misma edad. Cuando las proyecciones de población del DANE no capturan adecuadamente los flujos migratorios internos, puede alcanzar valores mayores al 100%",
+    "fieldName" : "cobertura_neta",
+    "position" : 10,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049760,
+    "width" : 268,
+    "cachedContents" : {
+      "non_null" : "15596",
+      "largest" : "264.54",
+      "null" : "111",
+      "top" : [ {
+        "item" : "87.4",
+        "count" : "26"
+      }, {
+        "item" : "84.7",
+        "count" : "21"
+      }, {
+        "item" : "85",
+        "count" : "21"
+      }, {
+        "item" : "90.8",
+        "count" : "20"
+      }, {
+        "item" : "86.2",
+        "count" : "20"
+      }, {
+        "item" : "81.2",
+        "count" : "20"
+      }, {
+        "item" : "84.6",
+        "count" : "19"
+      }, {
+        "item" : "84.2",
+        "count" : "18"
+      }, {
+        "item" : "90.5",
+        "count" : "18"
+      }, {
+        "item" : "87",
+        "count" : "18"
+      }, {
+        "item" : "88.1",
+        "count" : "18"
+      }, {
+        "item" : "87.6",
+        "count" : "18"
+      }, {
+        "item" : "78.2",
+        "count" : "18"
+      }, {
+        "item" : "88.7",
+        "count" : "17"
+      }, {
+        "item" : "84.4",
+        "count" : "17"
+      }, {
+        "item" : "88.4",
+        "count" : "17"
+      }, {
+        "item" : "91",
+        "count" : "17"
+      }, {
+        "item" : "81.8",
+        "count" : "17"
+      }, {
+        "item" : "95.3",
+        "count" : "17"
+      }, {
+        "item" : "80.9",
+        "count" : "17"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724243,
+    "name" : "COBERTURA_NETA_TRANSICIÓN",
+    "dataTypeName" : "number",
+    "description" : "Es la relación entre el número de estudiantes matriculados en transición que tienen la edad teórica para cursar este nivel (5 años) y el total de la población correspondiente a esa misma edad. Cuando las proyecciones de población del DANE no capturan adecuadamente los flujos migratorios internos, puede alcanzar valores mayores al 100%. ",
+    "fieldName" : "cobertura_neta_transici_n",
+    "position" : 11,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049739,
+    "width" : 400,
+    "cachedContents" : {
+      "non_null" : "15655",
+      "largest" : "150.47",
+      "null" : "52",
+      "top" : [ {
+        "item" : "50",
+        "count" : "108"
+      }, {
+        "item" : "66.67",
+        "count" : "63"
+      }, {
+        "item" : "60",
+        "count" : "54"
+      }, {
+        "item" : "57.14",
+        "count" : "37"
+      }, {
+        "item" : "75",
+        "count" : "37"
+      }, {
+        "item" : "62.5",
+        "count" : "32"
+      }, {
+        "item" : "55.56",
+        "count" : "31"
+      }, {
+        "item" : "40",
+        "count" : "29"
+      }, {
+        "item" : "66.7",
+        "count" : "27"
+      }, {
+        "item" : "42.86",
+        "count" : "26"
+      }, {
+        "item" : "53.85",
+        "count" : "24"
+      }, {
+        "item" : "33.33",
+        "count" : "23"
+      }, {
+        "item" : "63.64",
+        "count" : "21"
+      }, {
+        "item" : "58.33",
+        "count" : "20"
+      }, {
+        "item" : "46.15",
+        "count" : "19"
+      }, {
+        "item" : "56",
+        "count" : "19"
+      }, {
+        "item" : "68",
+        "count" : "19"
+      }, {
+        "item" : "70",
+        "count" : "19"
+      }, {
+        "item" : "61.54",
+        "count" : "18"
+      }, {
+        "item" : "57.1",
+        "count" : "18"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724248,
+    "name" : "COBERTURA_NETA_PRIMARIA",
+    "dataTypeName" : "number",
+    "description" : "Es la relación entre el número de estudiantes matriculados en primaria que tienen la edad teórica para cursar este nivel (6 a 10 años) y el total de la población correspondiente a esa misma edad. Cuando las proyecciones de población del DANE no capturan adecuadamente los flujos migratorios internos, puede alcanzar valores mayores al 100%. ",
+    "fieldName" : "cobertura_neta_primaria",
+    "position" : 12,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049744,
+    "width" : 376,
+    "cachedContents" : {
+      "non_null" : "15616",
+      "largest" : "254.96",
+      "null" : "91",
+      "top" : [ {
+        "item" : "100",
+        "count" : "25"
+      }, {
+        "item" : "80",
+        "count" : "20"
+      }, {
+        "item" : "88.1",
+        "count" : "19"
+      }, {
+        "item" : "85.2",
+        "count" : "18"
+      }, {
+        "item" : "88.7",
+        "count" : "18"
+      }, {
+        "item" : "84",
+        "count" : "18"
+      }, {
+        "item" : "92.5",
+        "count" : "18"
+      }, {
+        "item" : "91",
+        "count" : "17"
+      }, {
+        "item" : "87.4",
+        "count" : "17"
+      }, {
+        "item" : "93",
+        "count" : "17"
+      }, {
+        "item" : "90",
+        "count" : "17"
+      }, {
+        "item" : "75",
+        "count" : "17"
+      }, {
+        "item" : "84.3",
+        "count" : "17"
+      }, {
+        "item" : "90.2",
+        "count" : "17"
+      }, {
+        "item" : "90.9",
+        "count" : "17"
+      }, {
+        "item" : "90.5",
+        "count" : "17"
+      }, {
+        "item" : "86.1",
+        "count" : "17"
+      }, {
+        "item" : "88",
+        "count" : "17"
+      }, {
+        "item" : "84.2",
+        "count" : "16"
+      }, {
+        "item" : "79.9",
+        "count" : "16"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724236,
+    "name" : "COBERTURA_NETA_SECUNDARIA",
+    "dataTypeName" : "number",
+    "description" : "Es la relación entre el número de estudiantes matriculados en secundaria que tienen la edad teórica para cursar este nivel (11 a 14 años) y el total de la población correspondiente a esa misma edad. Cuando las proyecciones de población del DANE no capturan adecuadamente los flujos migratorios internos, puede alcanzar valores mayores al 100%. ",
+    "fieldName" : "cobertura_neta_secundaria",
+    "position" : 13,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049732,
+    "width" : 400,
+    "cachedContents" : {
+      "non_null" : "15613",
+      "largest" : "229.44",
+      "null" : "94",
+      "top" : [ {
+        "item" : "0",
+        "count" : "30"
+      }, {
+        "item" : "73.9",
+        "count" : "21"
+      }, {
+        "item" : "75",
+        "count" : "20"
+      }, {
+        "item" : "70.5",
+        "count" : "18"
+      }, {
+        "item" : "80",
+        "count" : "18"
+      }, {
+        "item" : "64.2",
+        "count" : "18"
+      }, {
+        "item" : "66",
+        "count" : "18"
+      }, {
+        "item" : "65.8",
+        "count" : "18"
+      }, {
+        "item" : "78.4",
+        "count" : "18"
+      }, {
+        "item" : "67.3",
+        "count" : "17"
+      }, {
+        "item" : "71.7",
+        "count" : "17"
+      }, {
+        "item" : "76.2",
+        "count" : "17"
+      }, {
+        "item" : "66.9",
+        "count" : "17"
+      }, {
+        "item" : "63.4",
+        "count" : "17"
+      }, {
+        "item" : "64.3",
+        "count" : "17"
+      }, {
+        "item" : "68.1",
+        "count" : "16"
+      }, {
+        "item" : "69.8",
+        "count" : "16"
+      }, {
+        "item" : "70.2",
+        "count" : "15"
+      }, {
+        "item" : "69",
+        "count" : "15"
+      }, {
+        "item" : "65.4",
+        "count" : "15"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724263,
+    "name" : "COBERTURA_NETA_MEDIA",
+    "dataTypeName" : "number",
+    "description" : "\t Es la relación entre el número de estudiantes matriculados en media que tienen la edad teórica para cursar este nivel (15 a 16 años) y el total de la población correspondiente a esa misma edad. Cuando las proyecciones de población del DANE no capturan adecuadamente los flujos migratorios internos, puede alcanzar valores mayores al 100%. ",
+    "fieldName" : "cobertura_neta_media",
+    "position" : 14,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049759,
+    "width" : 340,
+    "cachedContents" : {
+      "non_null" : "15614",
+      "largest" : "170.26",
+      "null" : "93",
+      "top" : [ {
+        "item" : "0",
+        "count" : "57"
+      }, {
+        "item" : "50",
+        "count" : "54"
+      }, {
+        "item" : "40",
+        "count" : "43"
+      }, {
+        "item" : "37.5",
+        "count" : "26"
+      }, {
+        "item" : "37.6",
+        "count" : "25"
+      }, {
+        "item" : "33.33",
+        "count" : "24"
+      }, {
+        "item" : "25",
+        "count" : "24"
+      }, {
+        "item" : "35.1",
+        "count" : "22"
+      }, {
+        "item" : "38.1",
+        "count" : "20"
+      }, {
+        "item" : "44.7",
+        "count" : "20"
+      }, {
+        "item" : "37.2",
+        "count" : "19"
+      }, {
+        "item" : "40.4",
+        "count" : "19"
+      }, {
+        "item" : "38.6",
+        "count" : "19"
+      }, {
+        "item" : "38.9",
+        "count" : "19"
+      }, {
+        "item" : "42.86",
+        "count" : "19"
+      }, {
+        "item" : "33.3",
+        "count" : "19"
+      }, {
+        "item" : "31.4",
+        "count" : "18"
+      }, {
+        "item" : "33.2",
+        "count" : "18"
+      }, {
+        "item" : "50.7",
+        "count" : "18"
+      }, {
+        "item" : "45.1",
+        "count" : "17"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724259,
+    "name" : "COBERTURA_BRUTA",
+    "dataTypeName" : "number",
+    "description" : "Es la relación entre el número de estudiantes matriculados en transición, primaria, secundaria y media respecto a la población en edad teórica para cursar estos niveles (5 a 16 años). En algunos casos la demanda social es mayor a la población en edad teórica para cursar educación preescolar, básica y media (5 a 16 años), explicada por estudiantes en extraedad, por lo que el indicador toma valores superiores al 100%. ",
+    "fieldName" : "cobertura_bruta",
+    "position" : 15,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049755,
+    "width" : 280,
+    "cachedContents" : {
+      "non_null" : "15639",
+      "largest" : "10448",
+      "null" : "68",
+      "top" : [ {
+        "item" : "100",
+        "count" : "23"
+      }, {
+        "item" : "100.7",
+        "count" : "18"
+      }, {
+        "item" : "88.5",
+        "count" : "17"
+      }, {
+        "item" : "101.7",
+        "count" : "17"
+      }, {
+        "item" : "98.1",
+        "count" : "16"
+      }, {
+        "item" : "97.2",
+        "count" : "16"
+      }, {
+        "item" : "96.1",
+        "count" : "16"
+      }, {
+        "item" : "101.8",
+        "count" : "15"
+      }, {
+        "item" : "105.1",
+        "count" : "15"
+      }, {
+        "item" : "93.8",
+        "count" : "15"
+      }, {
+        "item" : "100.6",
+        "count" : "15"
+      }, {
+        "item" : "106.8",
+        "count" : "15"
+      }, {
+        "item" : "96.3",
+        "count" : "14"
+      }, {
+        "item" : "97.9",
+        "count" : "14"
+      }, {
+        "item" : "87.3",
+        "count" : "14"
+      }, {
+        "item" : "105.4",
+        "count" : "14"
+      }, {
+        "item" : "103.7",
+        "count" : "14"
+      }, {
+        "item" : "98.7",
+        "count" : "14"
+      }, {
+        "item" : "93.4",
+        "count" : "14"
+      }, {
+        "item" : "106.1",
+        "count" : "14"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724268,
+    "name" : "COBERTURA_BRUTA_TRANSICIÓN",
+    "dataTypeName" : "number",
+    "description" : "Es la relación entre el número de estudiantes matriculados en transición respecto a la población en edad teórica para cursar este nivel (5 años). En algunos casos la demanda social es mayor a la población en edad teórica para cursar este nivel (5 años), explicada por estudiantes en extraedad, por lo que el indicador toma valores superiores al 100%. ",
+    "fieldName" : "cobertura_bruta_transici_n",
+    "position" : 16,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049764,
+    "width" : 412,
+    "cachedContents" : {
+      "non_null" : "15610",
+      "largest" : "259.29",
+      "null" : "97",
+      "top" : [ {
+        "item" : "100",
+        "count" : "129"
+      }, {
+        "item" : "80",
+        "count" : "52"
+      }, {
+        "item" : "66.67",
+        "count" : "46"
+      }, {
+        "item" : "50",
+        "count" : "42"
+      }, {
+        "item" : "75",
+        "count" : "40"
+      }, {
+        "item" : "83.33",
+        "count" : "33"
+      }, {
+        "item" : "87.5",
+        "count" : "29"
+      }, {
+        "item" : "88.89",
+        "count" : "25"
+      }, {
+        "item" : "60",
+        "count" : "24"
+      }, {
+        "item" : "90",
+        "count" : "22"
+      }, {
+        "item" : "71.43",
+        "count" : "22"
+      }, {
+        "item" : "85.71",
+        "count" : "20"
+      }, {
+        "item" : "70",
+        "count" : "19"
+      }, {
+        "item" : "77.78",
+        "count" : "16"
+      }, {
+        "item" : "91.3",
+        "count" : "15"
+      }, {
+        "item" : "95",
+        "count" : "15"
+      }, {
+        "item" : "88.24",
+        "count" : "15"
+      }, {
+        "item" : "90.91",
+        "count" : "15"
+      }, {
+        "item" : "73.33",
+        "count" : "15"
+      }, {
+        "item" : "65",
+        "count" : "15"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724245,
+    "name" : "COBERTURA_BRUTA_PRIMARIA",
+    "dataTypeName" : "number",
+    "description" : "Es la relación entre el número de estudiantes matriculados en primaria respecto a la población en edad teórica para cursar este nivel (6 a 10 años). En algunos casos la demanda social es mayor a la población en edad teórica para cursar este nivel (6 a 10 años), explicada por estudiantes en extraedad, por lo que el indicador toma valores superiores al 100%. ",
+    "fieldName" : "cobertura_bruta_primaria",
+    "position" : 17,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049741,
+    "width" : 388,
+    "cachedContents" : {
+      "non_null" : "15626",
+      "largest" : "10936",
+      "null" : "81",
+      "top" : [ {
+        "item" : "100",
+        "count" : "57"
+      }, {
+        "item" : "111",
+        "count" : "16"
+      }, {
+        "item" : "109.9",
+        "count" : "15"
+      }, {
+        "item" : "107.6",
+        "count" : "14"
+      }, {
+        "item" : "102.7",
+        "count" : "13"
+      }, {
+        "item" : "112.5",
+        "count" : "13"
+      }, {
+        "item" : "93.6",
+        "count" : "13"
+      }, {
+        "item" : "110",
+        "count" : "12"
+      }, {
+        "item" : "101.1",
+        "count" : "12"
+      }, {
+        "item" : "111.5",
+        "count" : "12"
+      }, {
+        "item" : "121.7",
+        "count" : "12"
+      }, {
+        "item" : "105.5",
+        "count" : "12"
+      }, {
+        "item" : "91.3",
+        "count" : "12"
+      }, {
+        "item" : "107.3",
+        "count" : "12"
+      }, {
+        "item" : "122.2",
+        "count" : "12"
+      }, {
+        "item" : "105.1",
+        "count" : "12"
+      }, {
+        "item" : "95.3",
+        "count" : "12"
+      }, {
+        "item" : "108.9",
+        "count" : "11"
+      }, {
+        "item" : "113.6",
+        "count" : "11"
+      }, {
+        "item" : "94.8",
+        "count" : "11"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724237,
+    "name" : "COBERTURA_BRUTA_SECUNDARIA",
+    "dataTypeName" : "number",
+    "description" : "Es la relación entre el número de estudiantes matriculados en secundaria respecto a la población en edad teórica para cursar este nivel (11 a 14 años). En algunos casos la demanda social es mayor a la población en edad teórica para cursar este nivel (11 a 14 años), explicada por estudiantes en extraedad, por lo que el indicador toma valores superiores al 100%. ",
+    "fieldName" : "cobertura_bruta_secundaria",
+    "position" : 18,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049733,
+    "width" : 412,
+    "cachedContents" : {
+      "non_null" : "15619",
+      "largest" : "11065",
+      "null" : "88",
+      "top" : [ {
+        "item" : "100",
+        "count" : "60"
+      }, {
+        "item" : "0",
+        "count" : "30"
+      }, {
+        "item" : "91.7",
+        "count" : "15"
+      }, {
+        "item" : "93.6",
+        "count" : "15"
+      }, {
+        "item" : "102.8",
+        "count" : "15"
+      }, {
+        "item" : "103.3",
+        "count" : "14"
+      }, {
+        "item" : "99.2",
+        "count" : "14"
+      }, {
+        "item" : "96.2",
+        "count" : "14"
+      }, {
+        "item" : "113",
+        "count" : "13"
+      }, {
+        "item" : "102.5",
+        "count" : "13"
+      }, {
+        "item" : "89.4",
+        "count" : "13"
+      }, {
+        "item" : "96",
+        "count" : "13"
+      }, {
+        "item" : "89.9",
+        "count" : "13"
+      }, {
+        "item" : "110.5",
+        "count" : "13"
+      }, {
+        "item" : "100.6",
+        "count" : "12"
+      }, {
+        "item" : "101.3",
+        "count" : "12"
+      }, {
+        "item" : "101.9",
+        "count" : "12"
+      }, {
+        "item" : "95.7",
+        "count" : "12"
+      }, {
+        "item" : "79.6",
+        "count" : "12"
+      }, {
+        "item" : "104.7",
+        "count" : "12"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724267,
+    "name" : "COBERTURA_BRUTA_MEDIA",
+    "dataTypeName" : "number",
+    "description" : "\t Es la relación entre el número de estudiantes matriculados en media respecto a la población en edad teórica para cursar este nivel (15 a 16 años). En algunos casos la demanda social es mayor a la población en edad teórica para cursar este nivel (15 a 16 años), explicada por estudiantes en extraedad, por lo que el indicador toma valores superiores al 100%. ",
+    "fieldName" : "cobertura_bruta_media",
+    "position" : 19,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049763,
+    "width" : 352,
+    "cachedContents" : {
+      "non_null" : "15580",
+      "largest" : "489.62",
+      "null" : "127",
+      "top" : [ {
+        "item" : "0",
+        "count" : "49"
+      }, {
+        "item" : "100",
+        "count" : "46"
+      }, {
+        "item" : "50",
+        "count" : "26"
+      }, {
+        "item" : "66.67",
+        "count" : "25"
+      }, {
+        "item" : "75",
+        "count" : "23"
+      }, {
+        "item" : "80",
+        "count" : "18"
+      }, {
+        "item" : "63.5",
+        "count" : "16"
+      }, {
+        "item" : "60",
+        "count" : "16"
+      }, {
+        "item" : "62.5",
+        "count" : "15"
+      }, {
+        "item" : "66.7",
+        "count" : "14"
+      }, {
+        "item" : "72.9",
+        "count" : "14"
+      }, {
+        "item" : "70.9",
+        "count" : "14"
+      }, {
+        "item" : "76.4",
+        "count" : "14"
+      }, {
+        "item" : "64.6",
+        "count" : "14"
+      }, {
+        "item" : "61.8",
+        "count" : "14"
+      }, {
+        "item" : "68.1",
+        "count" : "13"
+      }, {
+        "item" : "87.8",
+        "count" : "13"
+      }, {
+        "item" : "81.5",
+        "count" : "13"
+      }, {
+        "item" : "83.33",
+        "count" : "13"
+      }, {
+        "item" : "66.3",
+        "count" : "13"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724241,
+    "name" : "TAMAÑO_PROMEDIO_DE_GRUPO",
+    "dataTypeName" : "number",
+    "description" : "Corresponde al número promedio de estudiantes por grupo. Para su cálculo considera la matrícula y el número de grupos tanto del sector oficial como del no oficial",
+    "fieldName" : "tama_o_promedio_de_grupo",
+    "position" : 20,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049737,
+    "width" : 388,
+    "cachedContents" : {
+      "non_null" : "7572",
+      "largest" : "54.03",
+      "null" : "8135",
+      "top" : [ {
+        "item" : "24",
+        "count" : "13"
+      }, {
+        "item" : "27.21",
+        "count" : "12"
+      }, {
+        "item" : "25.47",
+        "count" : "12"
+      }, {
+        "item" : "24.5",
+        "count" : "11"
+      }, {
+        "item" : "20.75",
+        "count" : "11"
+      }, {
+        "item" : "23",
+        "count" : "11"
+      }, {
+        "item" : "24.47",
+        "count" : "10"
+      }, {
+        "item" : "22",
+        "count" : "10"
+      }, {
+        "item" : "27",
+        "count" : "10"
+      }, {
+        "item" : "20",
+        "count" : "10"
+      }, {
+        "item" : "26.25",
+        "count" : "10"
+      }, {
+        "item" : "26",
+        "count" : "10"
+      }, {
+        "item" : "26.14",
+        "count" : "10"
+      }, {
+        "item" : "21",
+        "count" : "9"
+      }, {
+        "item" : "22.33",
+        "count" : "9"
+      }, {
+        "item" : "28",
+        "count" : "9"
+      }, {
+        "item" : "23.5",
+        "count" : "9"
+      }, {
+        "item" : "23.17",
+        "count" : "9"
+      }, {
+        "item" : "27.5",
+        "count" : "9"
+      }, {
+        "item" : "17.17",
+        "count" : "8"
+      } ],
+      "smallest" : "3",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724262,
+    "name" : "SEDES_CONECTADAS_A_INTERNET",
+    "dataTypeName" : "number",
+    "description" : "Indica el porcentaje de sedes oficiales de Una Entidad Territorial Certificada que se encuentran conectadas a una red de Internet.",
+    "fieldName" : "sedes_conectadas_a_internet",
+    "position" : 21,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049758,
+    "width" : 424,
+    "cachedContents" : {
+      "non_null" : "7768",
+      "largest" : "100",
+      "null" : "7939",
+      "top" : [ {
+        "item" : "0",
+        "count" : "284"
+      }, {
+        "item" : "100",
+        "count" : "200"
+      }, {
+        "item" : "33.33",
+        "count" : "170"
+      }, {
+        "item" : "50",
+        "count" : "166"
+      }, {
+        "item" : "16.67",
+        "count" : "148"
+      }, {
+        "item" : "25",
+        "count" : "135"
+      }, {
+        "item" : "20",
+        "count" : "123"
+      }, {
+        "item" : "12.5",
+        "count" : "95"
+      }, {
+        "item" : "11.11",
+        "count" : "90"
+      }, {
+        "item" : "66.67",
+        "count" : "89"
+      }, {
+        "item" : "14.29",
+        "count" : "83"
+      }, {
+        "item" : "22.22",
+        "count" : "80"
+      }, {
+        "item" : "28.57",
+        "count" : "78"
+      }, {
+        "item" : "40",
+        "count" : "71"
+      }, {
+        "item" : "18.18",
+        "count" : "71"
+      }, {
+        "item" : "42.86",
+        "count" : "70"
+      }, {
+        "item" : "21.43",
+        "count" : "67"
+      }, {
+        "item" : "15.38",
+        "count" : "63"
+      }, {
+        "item" : "8.33",
+        "count" : "60"
+      }, {
+        "item" : "60",
+        "count" : "56"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724238,
+    "name" : "DESERCIÓN",
+    "dataTypeName" : "number",
+    "description" : "Tasa de deserción intra - anual del sector oficial. Identifica la proporción de alumnos matriculados que por factores culturales, coyunturales o de prestación del servicio educativo, abandonan sus estudios durante el año lectivo.",
+    "fieldName" : "deserci_n",
+    "position" : 22,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049734,
+    "width" : 208,
+    "cachedContents" : {
+      "non_null" : "15565",
+      "largest" : "27.9",
+      "null" : "142",
+      "top" : [ {
+        "item" : "0",
+        "count" : "61"
+      }, {
+        "item" : "1.9",
+        "count" : "48"
+      }, {
+        "item" : "2.48",
+        "count" : "48"
+      }, {
+        "item" : "2.81",
+        "count" : "46"
+      }, {
+        "item" : "2.64",
+        "count" : "44"
+      }, {
+        "item" : "2.35",
+        "count" : "44"
+      }, {
+        "item" : "2.39",
+        "count" : "43"
+      }, {
+        "item" : "3.39",
+        "count" : "43"
+      }, {
+        "item" : "3.36",
+        "count" : "43"
+      }, {
+        "item" : "2.34",
+        "count" : "43"
+      }, {
+        "item" : "3.27",
+        "count" : "42"
+      }, {
+        "item" : "2.95",
+        "count" : "42"
+      }, {
+        "item" : "1.71",
+        "count" : "42"
+      }, {
+        "item" : "2.11",
+        "count" : "42"
+      }, {
+        "item" : "2.24",
+        "count" : "40"
+      }, {
+        "item" : "3.18",
+        "count" : "40"
+      }, {
+        "item" : "3.19",
+        "count" : "40"
+      }, {
+        "item" : "2.03",
+        "count" : "40"
+      }, {
+        "item" : "2.01",
+        "count" : "40"
+      }, {
+        "item" : "2.19",
+        "count" : "39"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724254,
+    "name" : "DESERCIÓN_TRANSICIÓN",
+    "dataTypeName" : "number",
+    "description" : "Tasa de deserción intra - anual del sector oficial en transición. Identifica la proporción de alumnos matriculados que por factores culturales, coyunturales o de prestación del servicio educativo, abandonan sus estudios durante el año lectivo.",
+    "fieldName" : "deserci_n_transici_n",
+    "position" : 23,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049750,
+    "width" : 340,
+    "cachedContents" : {
+      "non_null" : "14804",
+      "largest" : "42.86",
+      "null" : "903",
+      "top" : [ {
+        "item" : "0",
+        "count" : "1357"
+      }, {
+        "item" : "3.13",
+        "count" : "67"
+      }, {
+        "item" : "3.45",
+        "count" : "67"
+      }, {
+        "item" : "3.33",
+        "count" : "64"
+      }, {
+        "item" : "2.86",
+        "count" : "64"
+      }, {
+        "item" : "3.03",
+        "count" : "63"
+      }, {
+        "item" : "4.17",
+        "count" : "63"
+      }, {
+        "item" : "2.33",
+        "count" : "60"
+      }, {
+        "item" : "3.57",
+        "count" : "60"
+      }, {
+        "item" : "4.35",
+        "count" : "59"
+      }, {
+        "item" : "2.94",
+        "count" : "58"
+      }, {
+        "item" : "3.85",
+        "count" : "57"
+      }, {
+        "item" : "4.76",
+        "count" : "56"
+      }, {
+        "item" : "2.7",
+        "count" : "55"
+      }, {
+        "item" : "2.17",
+        "count" : "55"
+      }, {
+        "item" : "4",
+        "count" : "54"
+      }, {
+        "item" : "5.26",
+        "count" : "53"
+      }, {
+        "item" : "5",
+        "count" : "53"
+      }, {
+        "item" : "3.23",
+        "count" : "52"
+      }, {
+        "item" : "3.7",
+        "count" : "50"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724258,
+    "name" : "DESERCIÓN_PRIMARIA",
+    "dataTypeName" : "number",
+    "description" : "\t Tasa de deserción intra - anual del sector oficial en primaria. Identifica la proporción de alumnos matriculados que por factores culturales, coyunturales o de prestación del servicio educativo, abandonan sus estudios durante el año lectivo.",
+    "fieldName" : "deserci_n_primaria",
+    "position" : 24,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049754,
+    "width" : 316,
+    "cachedContents" : {
+      "non_null" : "15465",
+      "largest" : "18.31",
+      "null" : "242",
+      "top" : [ {
+        "item" : "0",
+        "count" : "407"
+      }, {
+        "item" : "1.5",
+        "count" : "55"
+      }, {
+        "item" : "1.61",
+        "count" : "52"
+      }, {
+        "item" : "1.21",
+        "count" : "51"
+      }, {
+        "item" : "1.45",
+        "count" : "49"
+      }, {
+        "item" : "2",
+        "count" : "47"
+      }, {
+        "item" : "1.57",
+        "count" : "47"
+      }, {
+        "item" : "1.83",
+        "count" : "47"
+      }, {
+        "item" : "1.4",
+        "count" : "45"
+      }, {
+        "item" : "2.51",
+        "count" : "45"
+      }, {
+        "item" : "1.04",
+        "count" : "45"
+      }, {
+        "item" : "1.1",
+        "count" : "45"
+      }, {
+        "item" : "1.41",
+        "count" : "45"
+      }, {
+        "item" : "2.44",
+        "count" : "44"
+      }, {
+        "item" : "1.79",
+        "count" : "44"
+      }, {
+        "item" : "1.74",
+        "count" : "44"
+      }, {
+        "item" : "1.81",
+        "count" : "44"
+      }, {
+        "item" : "1.42",
+        "count" : "44"
+      }, {
+        "item" : "1.32",
+        "count" : "44"
+      }, {
+        "item" : "1.96",
+        "count" : "44"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724252,
+    "name" : "DESERCIÓN_SECUNDARIA",
+    "dataTypeName" : "number",
+    "description" : "\t Tasa de deserción intra - anual del sector oficial en secundaria. Identifica la proporción de alumnos matriculados que por factores culturales, coyunturales o de prestación del servicio educativo, abandonan sus estudios durante el año lectivo.",
+    "fieldName" : "deserci_n_secundaria",
+    "position" : 25,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049748,
+    "width" : 340,
+    "cachedContents" : {
+      "non_null" : "15437",
+      "largest" : "47.14",
+      "null" : "270",
+      "top" : [ {
+        "item" : "0",
+        "count" : "211"
+      }, {
+        "item" : "2.33",
+        "count" : "43"
+      }, {
+        "item" : "3.07",
+        "count" : "37"
+      }, {
+        "item" : "3.58",
+        "count" : "36"
+      }, {
+        "item" : "3.05",
+        "count" : "36"
+      }, {
+        "item" : "2.61",
+        "count" : "36"
+      }, {
+        "item" : "2.44",
+        "count" : "36"
+      }, {
+        "item" : "4.23",
+        "count" : "36"
+      }, {
+        "item" : "3.23",
+        "count" : "35"
+      }, {
+        "item" : "2.68",
+        "count" : "34"
+      }, {
+        "item" : "2.86",
+        "count" : "33"
+      }, {
+        "item" : "3.31",
+        "count" : "33"
+      }, {
+        "item" : "2.02",
+        "count" : "33"
+      }, {
+        "item" : "3.26",
+        "count" : "32"
+      }, {
+        "item" : "3.14",
+        "count" : "32"
+      }, {
+        "item" : "2.38",
+        "count" : "32"
+      }, {
+        "item" : "2.88",
+        "count" : "32"
+      }, {
+        "item" : "4.24",
+        "count" : "31"
+      }, {
+        "item" : "3.45",
+        "count" : "31"
+      }, {
+        "item" : "3.74",
+        "count" : "31"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724265,
+    "name" : "DESERCIÓN_MEDIA",
+    "dataTypeName" : "number",
+    "description" : "Tasa de deserción intra - anual del sector oficial en media. Identifica la proporción de alumnos matriculados que por factores culturales, coyunturales o de prestación del servicio educativo, abandonan sus estudios durante el año lectivo.",
+    "fieldName" : "deserci_n_media",
+    "position" : 26,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049761,
+    "width" : 280,
+    "cachedContents" : {
+      "non_null" : "14973",
+      "largest" : "62.5",
+      "null" : "734",
+      "top" : [ {
+        "item" : "0",
+        "count" : "787"
+      }, {
+        "item" : "3.23",
+        "count" : "65"
+      }, {
+        "item" : "2",
+        "count" : "57"
+      }, {
+        "item" : "1.89",
+        "count" : "56"
+      }, {
+        "item" : "3.45",
+        "count" : "55"
+      }, {
+        "item" : "2.44",
+        "count" : "55"
+      }, {
+        "item" : "2.63",
+        "count" : "53"
+      }, {
+        "item" : "4.17",
+        "count" : "52"
+      }, {
+        "item" : "2.22",
+        "count" : "52"
+      }, {
+        "item" : "2.7",
+        "count" : "52"
+      }, {
+        "item" : "2.33",
+        "count" : "51"
+      }, {
+        "item" : "2.27",
+        "count" : "51"
+      }, {
+        "item" : "3.13",
+        "count" : "51"
+      }, {
+        "item" : "2.94",
+        "count" : "49"
+      }, {
+        "item" : "2.86",
+        "count" : "48"
+      }, {
+        "item" : "1.96",
+        "count" : "48"
+      }, {
+        "item" : "1.52",
+        "count" : "47"
+      }, {
+        "item" : "2.46",
+        "count" : "47"
+      }, {
+        "item" : "3.03",
+        "count" : "47"
+      }, {
+        "item" : "1.69",
+        "count" : "46"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724257,
+    "name" : "APROBACIÓN",
+    "dataTypeName" : "number",
+    "description" : "Tasa de aprobación de estudiantes del sector oficial. Identifica el porcentaje de alumnos en educación preescolar, básica y media que aprueba de acuerdo con los planes y programas de estudio vigentes.",
+    "fieldName" : "aprobaci_n",
+    "position" : 27,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049753,
+    "width" : 374,
+    "cachedContents" : {
+      "non_null" : "15682",
+      "largest" : "100",
+      "null" : "25",
+      "top" : [ {
+        "item" : "100",
+        "count" : "38"
+      }, {
+        "item" : "94.66",
+        "count" : "23"
+      }, {
+        "item" : "97.2",
+        "count" : "22"
+      }, {
+        "item" : "94.47",
+        "count" : "21"
+      }, {
+        "item" : "95.98",
+        "count" : "21"
+      }, {
+        "item" : "92.36",
+        "count" : "21"
+      }, {
+        "item" : "90.92",
+        "count" : "21"
+      }, {
+        "item" : "95.56",
+        "count" : "20"
+      }, {
+        "item" : "93.33",
+        "count" : "20"
+      }, {
+        "item" : "89.32",
+        "count" : "20"
+      }, {
+        "item" : "92.26",
+        "count" : "19"
+      }, {
+        "item" : "95.64",
+        "count" : "19"
+      }, {
+        "item" : "91.61",
+        "count" : "19"
+      }, {
+        "item" : "92.77",
+        "count" : "19"
+      }, {
+        "item" : "90.08",
+        "count" : "19"
+      }, {
+        "item" : "92.95",
+        "count" : "18"
+      }, {
+        "item" : "89.93",
+        "count" : "18"
+      }, {
+        "item" : "92.07",
+        "count" : "18"
+      }, {
+        "item" : "93.74",
+        "count" : "18"
+      }, {
+        "item" : "88.83",
+        "count" : "18"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724242,
+    "name" : "APROBACIÓN_TRANSICIÓN",
+    "dataTypeName" : "number",
+    "description" : "Tasa de aprobación de estudiantes del sector oficial en transición. Identifica el porcentaje de alumnos en este nivel educativo que aprueba de acuerdo con los planes y programas de estudio vigentes.",
+    "fieldName" : "aprobaci_n_transici_n",
+    "position" : 28,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049738,
+    "width" : 352,
+    "cachedContents" : {
+      "non_null" : "15614",
+      "largest" : "52.71",
+      "null" : "93",
+      "top" : [ {
+        "item" : "0",
+        "count" : "11136"
+      }, {
+        "item" : "0.19",
+        "count" : "48"
+      }, {
+        "item" : "0.18",
+        "count" : "47"
+      }, {
+        "item" : "0.17",
+        "count" : "42"
+      }, {
+        "item" : "0.2",
+        "count" : "40"
+      }, {
+        "item" : "0.14",
+        "count" : "39"
+      }, {
+        "item" : "0.38",
+        "count" : "38"
+      }, {
+        "item" : "0.27",
+        "count" : "38"
+      }, {
+        "item" : "0.28",
+        "count" : "37"
+      }, {
+        "item" : "0.34",
+        "count" : "37"
+      }, {
+        "item" : "0.45",
+        "count" : "36"
+      }, {
+        "item" : "0.48",
+        "count" : "36"
+      }, {
+        "item" : "0.31",
+        "count" : "35"
+      }, {
+        "item" : "0.13",
+        "count" : "35"
+      }, {
+        "item" : "0.41",
+        "count" : "35"
+      }, {
+        "item" : "0.47",
+        "count" : "35"
+      }, {
+        "item" : "0.24",
+        "count" : "35"
+      }, {
+        "item" : "0.33",
+        "count" : "33"
+      }, {
+        "item" : "0.21",
+        "count" : "33"
+      }, {
+        "item" : "0.23",
+        "count" : "32"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724246,
+    "name" : "APROBACIÓN_PRIMARIA",
+    "dataTypeName" : "number",
+    "description" : "Tasa de aprobación de estudiantes del sector oficial en primaria. Identifica el porcentaje de alumnos en este nivel educativo que aprueba de acuerdo con los planes y programas de estudio vigentes.",
+    "fieldName" : "aprobaci_n_primaria",
+    "position" : 29,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049742,
+    "width" : 328,
+    "cachedContents" : {
+      "non_null" : "15682",
+      "largest" : "100",
+      "null" : "25",
+      "top" : [ {
+        "item" : "100",
+        "count" : "194"
+      }, {
+        "item" : "92.05",
+        "count" : "25"
+      }, {
+        "item" : "93.06",
+        "count" : "24"
+      }, {
+        "item" : "93.75",
+        "count" : "24"
+      }, {
+        "item" : "96.86",
+        "count" : "23"
+      }, {
+        "item" : "98.3",
+        "count" : "23"
+      }, {
+        "item" : "93.41",
+        "count" : "23"
+      }, {
+        "item" : "91.67",
+        "count" : "23"
+      }, {
+        "item" : "93.81",
+        "count" : "23"
+      }, {
+        "item" : "96.89",
+        "count" : "22"
+      }, {
+        "item" : "93.53",
+        "count" : "22"
+      }, {
+        "item" : "94.81",
+        "count" : "22"
+      }, {
+        "item" : "98.5",
+        "count" : "22"
+      }, {
+        "item" : "98.18",
+        "count" : "22"
+      }, {
+        "item" : "97.63",
+        "count" : "22"
+      }, {
+        "item" : "94.07",
+        "count" : "22"
+      }, {
+        "item" : "95.06",
+        "count" : "21"
+      }, {
+        "item" : "97.89",
+        "count" : "21"
+      }, {
+        "item" : "95.09",
+        "count" : "21"
+      }, {
+        "item" : "97.27",
+        "count" : "21"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724249,
+    "name" : "APROBACIÓN_SECUNDARIA",
+    "dataTypeName" : "number",
+    "description" : "Tasa de aprobación de estudiantes del sector oficial en secundaria. Identifica el porcentaje de alumnos en este nivel educativo que aprueba de acuerdo con los planes y programas de estudio vigentes.",
+    "fieldName" : "aprobaci_n_secundaria",
+    "position" : 30,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049745,
+    "width" : 352,
+    "cachedContents" : {
+      "non_null" : "15653",
+      "largest" : "100",
+      "null" : "54",
+      "top" : [ {
+        "item" : "100",
+        "count" : "132"
+      }, {
+        "item" : "85.71",
+        "count" : "22"
+      }, {
+        "item" : "88.46",
+        "count" : "19"
+      }, {
+        "item" : "90",
+        "count" : "19"
+      }, {
+        "item" : "86.11",
+        "count" : "18"
+      }, {
+        "item" : "0",
+        "count" : "18"
+      }, {
+        "item" : "92.31",
+        "count" : "18"
+      }, {
+        "item" : "89",
+        "count" : "18"
+      }, {
+        "item" : "88.51",
+        "count" : "17"
+      }, {
+        "item" : "89.67",
+        "count" : "17"
+      }, {
+        "item" : "92.05",
+        "count" : "17"
+      }, {
+        "item" : "92.68",
+        "count" : "16"
+      }, {
+        "item" : "88.76",
+        "count" : "16"
+      }, {
+        "item" : "91.21",
+        "count" : "16"
+      }, {
+        "item" : "88.89",
+        "count" : "16"
+      }, {
+        "item" : "87.5",
+        "count" : "16"
+      }, {
+        "item" : "80",
+        "count" : "16"
+      }, {
+        "item" : "91.67",
+        "count" : "15"
+      }, {
+        "item" : "87.27",
+        "count" : "15"
+      }, {
+        "item" : "93.33",
+        "count" : "15"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724260,
+    "name" : "APROBACIÓN_MEDIA",
+    "dataTypeName" : "number",
+    "description" : "Tasa de aprobación de estudiantes del sector oficial en media. Identifica el porcentaje de alumnos en este nivel educativo que aprueba de acuerdo con los planes y programas de estudio vigentes.",
+    "fieldName" : "aprobaci_n_media",
+    "position" : 31,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049756,
+    "width" : 292,
+    "cachedContents" : {
+      "non_null" : "15606",
+      "largest" : "100",
+      "null" : "101",
+      "top" : [ {
+        "item" : "100",
+        "count" : "542"
+      }, {
+        "item" : "94.74",
+        "count" : "54"
+      }, {
+        "item" : "92.86",
+        "count" : "52"
+      }, {
+        "item" : "93.33",
+        "count" : "52"
+      }, {
+        "item" : "92.31",
+        "count" : "51"
+      }, {
+        "item" : "93.75",
+        "count" : "48"
+      }, {
+        "item" : "90.91",
+        "count" : "46"
+      }, {
+        "item" : "94.44",
+        "count" : "41"
+      }, {
+        "item" : "94.12",
+        "count" : "40"
+      }, {
+        "item" : "88.89",
+        "count" : "40"
+      }, {
+        "item" : "96.67",
+        "count" : "39"
+      }, {
+        "item" : "93.55",
+        "count" : "39"
+      }, {
+        "item" : "91.67",
+        "count" : "38"
+      }, {
+        "item" : "90",
+        "count" : "37"
+      }, {
+        "item" : "87.5",
+        "count" : "36"
+      }, {
+        "item" : "96.15",
+        "count" : "36"
+      }, {
+        "item" : "96.77",
+        "count" : "35"
+      }, {
+        "item" : "95.45",
+        "count" : "34"
+      }, {
+        "item" : "96.3",
+        "count" : "33"
+      }, {
+        "item" : "96",
+        "count" : "33"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724266,
+    "name" : "REPROBACIÓN",
+    "dataTypeName" : "number",
+    "description" : "Tasa de reprobación de estudiantes del sector oficial. Identifica el porcentaje de alumnos en educación preescolar, básica y media que reprueba de acuerdo con los planes y programas de estudio vigentes.",
+    "fieldName" : "reprobaci_n",
+    "position" : 32,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049762,
+    "width" : 232,
+    "cachedContents" : {
+      "non_null" : "15621",
+      "largest" : "49.39",
+      "null" : "86",
+      "top" : [ {
+        "item" : "0",
+        "count" : "1654"
+      }, {
+        "item" : "0.03",
+        "count" : "92"
+      }, {
+        "item" : "0.05",
+        "count" : "78"
+      }, {
+        "item" : "0.04",
+        "count" : "74"
+      }, {
+        "item" : "0.07",
+        "count" : "67"
+      }, {
+        "item" : "0.06",
+        "count" : "65"
+      }, {
+        "item" : "0.02",
+        "count" : "59"
+      }, {
+        "item" : "0.08",
+        "count" : "56"
+      }, {
+        "item" : "0.09",
+        "count" : "55"
+      }, {
+        "item" : "0.01",
+        "count" : "54"
+      }, {
+        "item" : "0.13",
+        "count" : "49"
+      }, {
+        "item" : "0.11",
+        "count" : "47"
+      }, {
+        "item" : "0.14",
+        "count" : "46"
+      }, {
+        "item" : "0.12",
+        "count" : "44"
+      }, {
+        "item" : "0.19",
+        "count" : "42"
+      }, {
+        "item" : "0.15",
+        "count" : "37"
+      }, {
+        "item" : "0.1",
+        "count" : "36"
+      }, {
+        "item" : "0.16",
+        "count" : "36"
+      }, {
+        "item" : "0.21",
+        "count" : "36"
+      }, {
+        "item" : "0.22",
+        "count" : "33"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724256,
+    "name" : "REPROBACIÓN_TRANSICIÓN",
+    "dataTypeName" : "number",
+    "description" : "Tasa de reprobación de estudiantes del sector oficial en transición. Identifica el porcentaje de alumnos en este nivel educativo que reprueba de acuerdo con los planes y programas de estudio vigentes.",
+    "fieldName" : "reprobaci_n_transici_n",
+    "position" : 33,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049752,
+    "width" : 364,
+    "cachedContents" : {
+      "non_null" : "15614",
+      "largest" : "52.71",
+      "null" : "93",
+      "top" : [ {
+        "item" : "0",
+        "count" : "11136"
+      }, {
+        "item" : "0.19",
+        "count" : "48"
+      }, {
+        "item" : "0.18",
+        "count" : "47"
+      }, {
+        "item" : "0.17",
+        "count" : "42"
+      }, {
+        "item" : "0.2",
+        "count" : "40"
+      }, {
+        "item" : "0.14",
+        "count" : "39"
+      }, {
+        "item" : "0.38",
+        "count" : "38"
+      }, {
+        "item" : "0.27",
+        "count" : "38"
+      }, {
+        "item" : "0.28",
+        "count" : "37"
+      }, {
+        "item" : "0.34",
+        "count" : "37"
+      }, {
+        "item" : "0.45",
+        "count" : "36"
+      }, {
+        "item" : "0.48",
+        "count" : "36"
+      }, {
+        "item" : "0.31",
+        "count" : "35"
+      }, {
+        "item" : "0.13",
+        "count" : "35"
+      }, {
+        "item" : "0.41",
+        "count" : "35"
+      }, {
+        "item" : "0.47",
+        "count" : "35"
+      }, {
+        "item" : "0.24",
+        "count" : "35"
+      }, {
+        "item" : "0.33",
+        "count" : "33"
+      }, {
+        "item" : "0.21",
+        "count" : "33"
+      }, {
+        "item" : "0.23",
+        "count" : "32"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724250,
+    "name" : "REPROBACIÓN_PRIMARIA",
+    "dataTypeName" : "number",
+    "description" : "Tasa de reprobación de estudiantes del sector oficial en primaria. Identifica el porcentaje de alumnos en este nivel educativo que reprueba de acuerdo con los planes y programas de estudio vigentes.",
+    "fieldName" : "reprobaci_n_primaria",
+    "position" : 34,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049746,
+    "width" : 340,
+    "cachedContents" : {
+      "non_null" : "15610",
+      "largest" : "51.97",
+      "null" : "97",
+      "top" : [ {
+        "item" : "0",
+        "count" : "3070"
+      }, {
+        "item" : "0.03",
+        "count" : "35"
+      }, {
+        "item" : "0.02",
+        "count" : "35"
+      }, {
+        "item" : "4",
+        "count" : "29"
+      }, {
+        "item" : "3.13",
+        "count" : "26"
+      }, {
+        "item" : "4.09",
+        "count" : "26"
+      }, {
+        "item" : "4.23",
+        "count" : "25"
+      }, {
+        "item" : "0.07",
+        "count" : "25"
+      }, {
+        "item" : "5.56",
+        "count" : "25"
+      }, {
+        "item" : "4.72",
+        "count" : "24"
+      }, {
+        "item" : "0.04",
+        "count" : "24"
+      }, {
+        "item" : "1.52",
+        "count" : "24"
+      }, {
+        "item" : "4.97",
+        "count" : "24"
+      }, {
+        "item" : "4.3",
+        "count" : "24"
+      }, {
+        "item" : "3.66",
+        "count" : "23"
+      }, {
+        "item" : "4.39",
+        "count" : "23"
+      }, {
+        "item" : "4.01",
+        "count" : "23"
+      }, {
+        "item" : "5.07",
+        "count" : "23"
+      }, {
+        "item" : "3.18",
+        "count" : "23"
+      }, {
+        "item" : "2.4",
+        "count" : "23"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724244,
+    "name" : "REPROBACIÓN_SECUNDARIA",
+    "dataTypeName" : "number",
+    "description" : "Tasa de reprobación de estudiantes del sector oficial en secundaria. Identifica el porcentaje de alumnos en este nivel educativo que reprueba de acuerdo con los planes y programas de estudio vigentes.",
+    "fieldName" : "reprobaci_n_secundaria",
+    "position" : 35,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049740,
+    "width" : 364,
+    "cachedContents" : {
+      "non_null" : "15601",
+      "largest" : "76.97",
+      "null" : "106",
+      "top" : [ {
+        "item" : "0",
+        "count" : "3040"
+      }, {
+        "item" : "0.07",
+        "count" : "23"
+      }, {
+        "item" : "0.17",
+        "count" : "19"
+      }, {
+        "item" : "9.09",
+        "count" : "19"
+      }, {
+        "item" : "8.33",
+        "count" : "19"
+      }, {
+        "item" : "10",
+        "count" : "18"
+      }, {
+        "item" : "11.11",
+        "count" : "18"
+      }, {
+        "item" : "9.79",
+        "count" : "17"
+      }, {
+        "item" : "8.62",
+        "count" : "17"
+      }, {
+        "item" : "5.71",
+        "count" : "17"
+      }, {
+        "item" : "0.06",
+        "count" : "17"
+      }, {
+        "item" : "4.67",
+        "count" : "17"
+      }, {
+        "item" : "7.1",
+        "count" : "16"
+      }, {
+        "item" : "4.05",
+        "count" : "16"
+      }, {
+        "item" : "4.19",
+        "count" : "16"
+      }, {
+        "item" : "6.7",
+        "count" : "16"
+      }, {
+        "item" : "5.49",
+        "count" : "16"
+      }, {
+        "item" : "8.19",
+        "count" : "16"
+      }, {
+        "item" : "10.85",
+        "count" : "16"
+      }, {
+        "item" : "5.13",
+        "count" : "16"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724239,
+    "name" : "REPROBACIÓN_MEDIA",
+    "dataTypeName" : "number",
+    "description" : "Tasa de reprobación de estudiantes del sector oficial en media. Identifica el porcentaje de alumnos en este nivel educativo que reprueba de acuerdo con los planes y programas de estudio vigentes.",
+    "fieldName" : "reprobaci_n_media",
+    "position" : 36,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049735,
+    "width" : 304,
+    "cachedContents" : {
+      "non_null" : "15562",
+      "largest" : "67.86",
+      "null" : "145",
+      "top" : [ {
+        "item" : "0",
+        "count" : "2883"
+      }, {
+        "item" : "5.88",
+        "count" : "40"
+      }, {
+        "item" : "6.67",
+        "count" : "39"
+      }, {
+        "item" : "3.7",
+        "count" : "34"
+      }, {
+        "item" : "6.25",
+        "count" : "33"
+      }, {
+        "item" : "5.26",
+        "count" : "32"
+      }, {
+        "item" : "1.89",
+        "count" : "31"
+      }, {
+        "item" : "3.45",
+        "count" : "31"
+      }, {
+        "item" : "5.56",
+        "count" : "31"
+      }, {
+        "item" : "2.27",
+        "count" : "31"
+      }, {
+        "item" : "2.34",
+        "count" : "30"
+      }, {
+        "item" : "2.56",
+        "count" : "30"
+      }, {
+        "item" : "2.7",
+        "count" : "30"
+      }, {
+        "item" : "2.04",
+        "count" : "30"
+      }, {
+        "item" : "5",
+        "count" : "29"
+      }, {
+        "item" : "3.33",
+        "count" : "29"
+      }, {
+        "item" : "4.76",
+        "count" : "29"
+      }, {
+        "item" : "0.81",
+        "count" : "29"
+      }, {
+        "item" : "2.63",
+        "count" : "29"
+      }, {
+        "item" : "3.13",
+        "count" : "28"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724255,
+    "name" : "REPITENCIA",
+    "dataTypeName" : "number",
+    "description" : "Tasa de repitencia del sector oficial. Corresponde al porcentaje de alumnos matriculados en un año escolar en transición, primaria, secundaria y media que se encuentran repitiendo el mismo grado cursado el año anterior.",
+    "fieldName" : "repitencia",
+    "position" : 37,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049751,
+    "width" : 220,
+    "cachedContents" : {
+      "non_null" : "15564",
+      "largest" : "37.47",
+      "null" : "143",
+      "top" : [ {
+        "item" : "0",
+        "count" : "891"
+      }, {
+        "item" : "0.05",
+        "count" : "56"
+      }, {
+        "item" : "0.09",
+        "count" : "54"
+      }, {
+        "item" : "0.15",
+        "count" : "53"
+      }, {
+        "item" : "0.3",
+        "count" : "52"
+      }, {
+        "item" : "0.2",
+        "count" : "51"
+      }, {
+        "item" : "0.06",
+        "count" : "51"
+      }, {
+        "item" : "0.22",
+        "count" : "50"
+      }, {
+        "item" : "0.16",
+        "count" : "50"
+      }, {
+        "item" : "0.1",
+        "count" : "50"
+      }, {
+        "item" : "0.08",
+        "count" : "48"
+      }, {
+        "item" : "0.12",
+        "count" : "48"
+      }, {
+        "item" : "0.25",
+        "count" : "47"
+      }, {
+        "item" : "0.32",
+        "count" : "47"
+      }, {
+        "item" : "0.36",
+        "count" : "47"
+      }, {
+        "item" : "0.26",
+        "count" : "47"
+      }, {
+        "item" : "0.19",
+        "count" : "46"
+      }, {
+        "item" : "0.24",
+        "count" : "46"
+      }, {
+        "item" : "0.04",
+        "count" : "45"
+      }, {
+        "item" : "0.34",
+        "count" : "45"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724253,
+    "name" : "REPITENCIA_TRANSICIÓN",
+    "dataTypeName" : "number",
+    "description" : "Tasa de repitencia del sector oficial. Corresponde al porcentaje de alumnos matriculados en transición que se encuentran repitiendo el mismo grado cursado el año anterior.",
+    "fieldName" : "repitencia_transici_n",
+    "position" : 38,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049749,
+    "width" : 352,
+    "cachedContents" : {
+      "non_null" : "15548",
+      "largest" : "66.67",
+      "null" : "159",
+      "top" : [ {
+        "item" : "0",
+        "count" : "8119"
+      }, {
+        "item" : "0.29",
+        "count" : "54"
+      }, {
+        "item" : "0.39",
+        "count" : "54"
+      }, {
+        "item" : "0.26",
+        "count" : "51"
+      }, {
+        "item" : "0.23",
+        "count" : "51"
+      }, {
+        "item" : "0.43",
+        "count" : "50"
+      }, {
+        "item" : "0.41",
+        "count" : "49"
+      }, {
+        "item" : "0.36",
+        "count" : "48"
+      }, {
+        "item" : "0.21",
+        "count" : "47"
+      }, {
+        "item" : "0.17",
+        "count" : "45"
+      }, {
+        "item" : "0.28",
+        "count" : "45"
+      }, {
+        "item" : "0.19",
+        "count" : "44"
+      }, {
+        "item" : "0.24",
+        "count" : "44"
+      }, {
+        "item" : "0.3",
+        "count" : "43"
+      }, {
+        "item" : "0.34",
+        "count" : "43"
+      }, {
+        "item" : "0.78",
+        "count" : "43"
+      }, {
+        "item" : "0.75",
+        "count" : "43"
+      }, {
+        "item" : "0.35",
+        "count" : "43"
+      }, {
+        "item" : "0.45",
+        "count" : "42"
+      }, {
+        "item" : "0.31",
+        "count" : "42"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724240,
+    "name" : "REPITENCIA_PRIMARIA",
+    "dataTypeName" : "number",
+    "description" : "Tasa de repitencia del sector oficial. Corresponde al porcentaje de alumnos matriculados en primaria que se encuentran repitiendo el mismo grado cursado el año anterior.",
+    "fieldName" : "repitencia_primaria",
+    "position" : 39,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049736,
+    "width" : 328,
+    "cachedContents" : {
+      "non_null" : "15559",
+      "largest" : "50.76",
+      "null" : "148",
+      "top" : [ {
+        "item" : "0",
+        "count" : "1422"
+      }, {
+        "item" : "0.15",
+        "count" : "56"
+      }, {
+        "item" : "0.52",
+        "count" : "54"
+      }, {
+        "item" : "0.12",
+        "count" : "53"
+      }, {
+        "item" : "0.85",
+        "count" : "51"
+      }, {
+        "item" : "0.25",
+        "count" : "51"
+      }, {
+        "item" : "0.16",
+        "count" : "49"
+      }, {
+        "item" : "0.13",
+        "count" : "49"
+      }, {
+        "item" : "0.97",
+        "count" : "48"
+      }, {
+        "item" : "0.37",
+        "count" : "48"
+      }, {
+        "item" : "0.24",
+        "count" : "48"
+      }, {
+        "item" : "0.67",
+        "count" : "48"
+      }, {
+        "item" : "0.45",
+        "count" : "47"
+      }, {
+        "item" : "0.39",
+        "count" : "46"
+      }, {
+        "item" : "0.18",
+        "count" : "46"
+      }, {
+        "item" : "0.21",
+        "count" : "46"
+      }, {
+        "item" : "0.23",
+        "count" : "45"
+      }, {
+        "item" : "0.26",
+        "count" : "44"
+      }, {
+        "item" : "0.4",
+        "count" : "44"
+      }, {
+        "item" : "1.06",
+        "count" : "43"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724247,
+    "name" : "REPITENCIA_SECUNDARIA",
+    "dataTypeName" : "number",
+    "description" : "Tasa de repitencia del sector oficial. Corresponde al porcentaje de alumnos matriculados en secundaria que se encuentran repitiendo el mismo grado cursado el año anterior.",
+    "fieldName" : "repitencia_secundaria",
+    "position" : 40,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049743,
+    "width" : 352,
+    "cachedContents" : {
+      "non_null" : "15555",
+      "largest" : "55.07",
+      "null" : "152",
+      "top" : [ {
+        "item" : "0",
+        "count" : "1612"
+      }, {
+        "item" : "0.32",
+        "count" : "47"
+      }, {
+        "item" : "0.36",
+        "count" : "43"
+      }, {
+        "item" : "0.19",
+        "count" : "40"
+      }, {
+        "item" : "0.23",
+        "count" : "39"
+      }, {
+        "item" : "0.57",
+        "count" : "38"
+      }, {
+        "item" : "0.26",
+        "count" : "38"
+      }, {
+        "item" : "0.6",
+        "count" : "38"
+      }, {
+        "item" : "0.17",
+        "count" : "37"
+      }, {
+        "item" : "0.7",
+        "count" : "36"
+      }, {
+        "item" : "0.25",
+        "count" : "36"
+      }, {
+        "item" : "0.24",
+        "count" : "36"
+      }, {
+        "item" : "0.65",
+        "count" : "35"
+      }, {
+        "item" : "0.73",
+        "count" : "35"
+      }, {
+        "item" : "0.15",
+        "count" : "35"
+      }, {
+        "item" : "0.3",
+        "count" : "35"
+      }, {
+        "item" : "0.16",
+        "count" : "34"
+      }, {
+        "item" : "0.83",
+        "count" : "34"
+      }, {
+        "item" : "0.84",
+        "count" : "33"
+      }, {
+        "item" : "0.28",
+        "count" : "33"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  }, {
+    "id" : 513724261,
+    "name" : "REPITENCIA_MEDIA",
+    "dataTypeName" : "number",
+    "description" : "Tasa de repitencia del sector oficial. Corresponde al porcentaje de alumnos matriculados en media que se encuentran repitiendo el mismo grado cursado el año anterior.",
+    "fieldName" : "repitencia_media",
+    "position" : 41,
+    "renderTypeName" : "number",
+    "tableColumnId" : 125049757,
+    "width" : 292,
+    "cachedContents" : {
+      "non_null" : "15568",
+      "largest" : "36.84",
+      "null" : "139",
+      "top" : [ {
+        "item" : "0",
+        "count" : "4423"
+      }, {
+        "item" : "0.47",
+        "count" : "56"
+      }, {
+        "item" : "0.4",
+        "count" : "54"
+      }, {
+        "item" : "0.56",
+        "count" : "53"
+      }, {
+        "item" : "0.53",
+        "count" : "51"
+      }, {
+        "item" : "0.35",
+        "count" : "50"
+      }, {
+        "item" : "0.55",
+        "count" : "50"
+      }, {
+        "item" : "0.68",
+        "count" : "49"
+      }, {
+        "item" : "0.48",
+        "count" : "49"
+      }, {
+        "item" : "0.38",
+        "count" : "49"
+      }, {
+        "item" : "0.25",
+        "count" : "48"
+      }, {
+        "item" : "0.44",
+        "count" : "48"
+      }, {
+        "item" : "0.85",
+        "count" : "48"
+      }, {
+        "item" : "0.27",
+        "count" : "47"
+      }, {
+        "item" : "0.52",
+        "count" : "46"
+      }, {
+        "item" : "0.87",
+        "count" : "46"
+      }, {
+        "item" : "0.37",
+        "count" : "46"
+      }, {
+        "item" : "0.36",
+        "count" : "46"
+      }, {
+        "item" : "0.88",
+        "count" : "45"
+      }, {
+        "item" : "0.54",
+        "count" : "45"
+      } ],
+      "smallest" : "0",
+      "count" : "15707",
+      "cardinality" : "15707"
+    },
+    "format" : {
+      "precisionStyle" : "percentage",
+      "percentScale" : "100",
+      "view" : "percent_bar_and_text"
+    }
+  } ],
+  "grants" : [ {
+    "inherited" : false,
+    "type" : "viewer",
+    "flags" : [ "public" ]
+  } ],
+  "license" : {
+    "name" : "Creative Commons Attribution | Share Alike 4.0 International",
+    "logoUrl" : "images/licenses/cc30bysa.png",
+    "termsLink" : "http://creativecommons.org/licenses/by-sa/4.0/legalcode"
+  },
+  "metadata" : {
+    "custom_fields" : {
+      "Información de la Entidad" : {
+        "Municipio" : "Bogotá D.C.",
+        "Nombre de la Entidad" : "Ministerio de Educación Nacional - MinEducación, Bogotá D.C.",
+        "DIVIPOLA Municipio" : "11001",
+        "Orden" : "Nacional",
+        "Sector" : "Planeación",
+        "Área o dependencia" : "Oficina TIC",
+        "Departamento" : "Bogotá D.C."
+      },
+      "Información de Datos" : {
+        "Cobertura Geográfica" : "Municipal",
+        "Idioma" : "Español",
+        "Frecuencia de Actualización" : "Anual"
+      }
+    }
+  },
+  "owner" : {
+    "id" : "ymvt-n7h8",
+    "displayName" : "Ministerio de Educación Nacional",
+    "profileImageUrlLarge" : "/api/users/ymvt-n7h8/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/ymvt-n7h8/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/ymvt-n7h8/profile_images/TINY",
+    "screenName" : "Ministerio de Educación Nacional",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "query" : {
+    "orderBys" : [ {
+      "ascending" : false,
+      "expression" : {
+        "columnId" : 513724195,
+        "type" : "column"
+      }
+    } ]
+  },
+  "rights" : [ "read" ],
+  "tableAuthor" : {
+    "id" : "ymvt-n7h8",
+    "displayName" : "Ministerio de Educación Nacional",
+    "profileImageUrlLarge" : "/api/users/ymvt-n7h8/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/ymvt-n7h8/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/ymvt-n7h8/profile_images/TINY",
+    "screenName" : "Ministerio de Educación Nacional",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "tags" : [ "ministerio educación", "estadísticas preescolar básica media", "municipio", "estadisticas", "educación preescolar", "educacion basica", "educación media", "educación" ],
+  "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+}
