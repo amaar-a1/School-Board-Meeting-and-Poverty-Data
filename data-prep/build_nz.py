@@ -9,7 +9,7 @@ site shows those areas, with 0 meetings.
 - Locale (estimated): children / 0.22 (their approximate share of the population) over each area.
 Usage: python3 data-prep/build_nz.py
 """
-import csv, json, os, sys
+import csv, json, os, re, sys
 import openpyxl
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from geo_area import area_km2
@@ -29,13 +29,15 @@ CODE = {"Northland": "NTL", "Auckland": "AUK", "Waikato": "WKO", "Bay of Plenty"
 
 def main():
     ws = openpyxl.load_workbook(os.path.join(IN, "nz_cp2025.xlsx"), read_only=True)["Table4.02"]
-    vals, reg = {}, None
+    vals, reg, hist = {}, None, {}
     for row in ws.iter_rows(values_only=True):
         v = [c for c in row if c is not None]
         if len(v) == 1 and isinstance(v[0], str):
             reg = v[0][:-7] if v[0].endswith(" region") else None   # "All regions" and notes end a block
         elif reg and v and str(v[0]) == "2025":
             vals.setdefault(reg, (v[1], v[5]))   # rate (%), number of children (000s)
+        if reg and v and re.fullmatch(r"20\d\d", str(v[0])) and isinstance(v[1], (int, float)):
+            hist.setdefault(reg, {}).setdefault(str(v[0]), v[1])
     geo = json.load(open(os.path.join(IN, "nz_regions.geojson"), encoding="utf-8"))
     by = {f["properties"]["iso_3166_2"]: f["geometry"] for f in geo["features"]}
     rows, feats = [], []
@@ -49,7 +51,8 @@ def main():
         dens = kids / 0.22 / area_km2(gm)
         rows.append({"District": name, "Locale": "Urban" if dens >= 2000 else "Suburban" if dens >= 500 else "Mixed" if dens >= 100 else "Rural",
                      "Available Board Meetings": 0, "Children": kids, "Children in Low Income": round(n * 1000),
-                     "Percentage of Children in Low Income": f"{rate:.2f}%", "People per km² (estimated)": round(dens),
+                     "Percentage of Children in Low Income": f"{rate:.2f}%",
+                     "Poverty by year": "; ".join(f"{y}:{x}" for y, x in sorted(hist.get(name, {}).items())), "People per km² (estimated)": round(dens),
                      "District ID": f"NZ-{CODE[name]}"})
         rnd = lambda c: [rnd(x) for x in c] if isinstance(c[0], list) else [round(c[0], 3), round(c[1], 3)]
         feats.append({"type": "Feature", "properties": {"id": f"NZ-{CODE[name]}", "NAME": name}, "geometry": {"type": "MultiPolygon", "coordinates": rnd(polys)}})

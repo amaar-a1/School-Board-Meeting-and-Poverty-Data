@@ -45,13 +45,14 @@ def main():
         hit = [h for h in v["hits"] if h["friendlyUrl"] == urls.get(k)]
         if hit and k not in FIX: name_of[hit[0]["name"]] = k
     for k, n in FIX.items(): name_of[n] = k
-    rate = {}
+    rate, hist = {}, {}
     for f in sorted(glob.glob(os.path.join(IN, "de_ww_*.csv"))):
         text = open(f, encoding="latin-1").read()
         for row in csv.reader(io.StringIO(text), delimiter=";"):
             if len(row) >= 4 and row[0] in name_of and re.match(r"[\d,]+$", row[3].strip()):
                 rate[name_of[row[0]]] = float(row[3].replace(",", "."))
-    if "DEG0P" in rate: rate.setdefault("DEG0N", rate["DEG0P"])
+                hist[name_of[row[0]]] = {y: float(x.replace(",", ".")) for y, x in zip(("2021", "2022", "2023"), row[1:4]) if re.match(r"[\d,]+$", x.strip())}
+    if "DEG0P" in rate: rate.setdefault("DEG0N", rate["DEG0P"]); hist.setdefault("DEG0N", hist.get("DEG0P", {}))
     kids = eurostat("es_de_pop.json", age="Y_LT15", sex="T", unit="NR")
     dens = eurostat("es_de_dens.json")
     geo = json.load(open(os.path.join(IN, "nuts3_2021_de.geojson"), encoding="utf-8"))
@@ -66,6 +67,7 @@ def main():
                      "Available Board Meetings": 0, "Children": round(c) if c else "",
                      "Children in Low Income": round(c * r / 100) if c and r is not None else "",
                      "Percentage of Children in Low Income": f"{r:.2f}%" if r is not None else "",
+                     "Poverty by year": "; ".join(f"{y}:{v}" for y, v in sorted(hist.get(k, {}).items())),
                      "People per km² (estimated)": round(d) if d else "",
                      "Map note": "Merged into the Wartburgkreis in July 2021; shown with the Wartburgkreis figure" if k == "DEG0N" else "",
                      "District ID": f"DE-{k}"})

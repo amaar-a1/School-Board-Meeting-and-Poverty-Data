@@ -18,6 +18,7 @@ Usage: python3 data-prep/build_iceland.py
 import csv, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from geo_area import area_km2
+from meeting_dates import summary as date_summary
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 IN = os.path.join(HERE, "inputs", "iceland")
@@ -85,6 +86,7 @@ def main():
             n = sum(1 for t in vids if re.match(r"\s*1\s{2,}\S", t))
         rows.append({"District": name, "Locale": "Urban" if dens >= 2000 else "Suburban" if dens >= 500 else "Mixed" if dens >= 100 else "Rural",
                      "Available Board Meetings": n, "Meetings source": url,
+                     **dict(zip(("Latest meeting", "Meetings by year"), date_summary(council) if n else ("", ""))),
                      "Population": tot, "Children": kids, "Percentage of Children in Low Income": f"{rate:.2f}%",
                      "Poverty note": f"Iceland's national rate, {ty} (Eurostat); no local child rate is published",
                      "People per km² (estimated)": round(dens), "District ID": f"IS-{lid}"})

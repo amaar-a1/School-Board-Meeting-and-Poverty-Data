@@ -121,7 +121,8 @@
         District: r.District, Country: d.country === "ISLE" ? r.District : d.name, "State or province": sp.place ? r[sp.place] : "",
         "Available Board Meetings": r["Available Board Meetings"] ?? "",
         [c.metric]: pct(r[sp.pov]), "Poverty measure": sp.measureColumn ? r[sp.measureColumn] : sp.measure, Children: r[sp.children] ?? "", Enrollment: r.Enrollment ?? "",
-        Locale: r.Locale ? `${d.localePrefix || d.name}: ${r.Locale}` : "", "Other Board Meetings": "", [RANK]: r[RANK] ?? "", "District ID": r["District ID"]
+        Locale: r.Locale ? `${d.localePrefix || d.name}: ${r.Locale}` : "", "Other Board Meetings": "", [RANK]: r[RANK] ?? "",
+        "Latest meeting": r["Latest meeting"] ?? "", "Meetings by year": r["Meetings by year"] ?? "", "Poverty by year": r["Poverty by year"] ?? "", "District ID": r["District ID"]
       });
       out.push({
         District: r.District,
@@ -137,10 +138,12 @@
         Locale: r.Locale && (ca || uk || ie) ? `${ca ? "Canada" : uk ? "UK" : "Ireland"}: ${r.Locale}` : r.Locale ?? "",
         "Other Board Meetings": r["Other Board Meetings"] ?? "",   // DC, Hawaiʻi and Vermont boards' own sites
         [RANK]: r[RANK] ?? "",
+        "Latest meeting": r["Latest meeting"] ?? "", "Meetings by year": r["Meetings by year"] ?? "", "Poverty by year": r["Poverty by year"] ?? "",
         "District ID": r["District ID"]
       });
     }));
-    const text = Papa.unparse({ fields: Object.keys(out[0]), data: out.map((r) => Object.values(r)) });
+    const fields = [...new Set(out.flatMap((r) => Object.keys(r)))];
+    const text = Papa.unparse({ fields, data: out.map((r) => fields.map((f) => r[f] ?? "")) });
     const ds = parse(c.name, text, { ...c, combined: true });
     const withMeetings = ds.rows.filter((r) => toNumber(r[c.compare.by]) > 0).length;
     ds.note = (c.note || "").replace("{rows}", ds.rows.length.toLocaleString()).replace("{withMeetings}", withMeetings.toLocaleString());
@@ -326,6 +329,7 @@
     if (view === "size") renderSize();
     if (view === "locale") renderLocale();
     if (view === "map" && window.SiteMap) window.SiteMap.show(current, datasets);
+    if (view === "trends") renderTrends();
   }
 
   // Switches between the "Overview", "By district size", "State rules" and "Sources" views.
@@ -337,6 +341,54 @@
     if (name === "size" && current) renderSize();
     if (name === "locale" && current) renderLocale();
     if (name === "map" && current && window.SiteMap) window.SiteMap.show(current, datasets);
+    if (name === "trends" && current) renderTrends();
+  }
+
+  // "Trends" tab: meetings per year (from the dates in the recordings' titles, where the data has
+  // them) and average child poverty per year (where a country publishes several years).
+  const trendCharts = {};
+  function yearMap(v) {
+    const out = {};
+    String(v || "").split(";").forEach((p) => { const [y, n] = p.split(":").map((x) => x && x.trim()); if (/^\d{4}$/.test(y) && !isNaN(Number(n))) out[y] = Number(n); });
+    return out;
+  }
+  function renderTrends() {
+    const rows = current.rows;
+    const label = ((current.recordLabel || cfg.recordLabel || "districts")).toLowerCase();
+    const meet = {}, withDates = rows.filter((r) => r["Meetings by year"]);
+    withDates.forEach((r) => Object.entries(yearMap(r["Meetings by year"])).forEach(([y, n]) => { meet[y] = (meet[y] || 0) + n; }));
+    const pov = {}, povRows = rows.filter((r) => r["Poverty by year"]);
+    povRows.forEach((r) => Object.entries(yearMap(r["Poverty by year"])).forEach(([y, v]) => { (pov[y] = pov[y] || []).push(v); }));
+    const draw = (id, type, labels, data, yTitle) => {
+      if (trendCharts[id]) trendCharts[id].destroy();
+      const accent = cssVar("--accent"), text = cssVar("--muted"), grid = cssVar("--border");
+      trendCharts[id] = !labels.length ? null : new Chart($(id), { type,
+        data: { labels, datasets: [{ label: yTitle, data, backgroundColor: accent, borderColor: accent, tension: 0.2, pointRadius: 4 }] },
+        options: { maintainAspectRatio: false, plugins: { legend: { display: false } },
+          scales: { x: { ticks: { color: text }, grid: { color: grid } }, y: { beginAtZero: true, title: { display: true, text: yTitle, color: text }, ticks: { color: text }, grid: { color: grid } } } } });
+      $(id).closest(".chart-wrap").hidden = !labels.length;
+    };
+    const my = Object.keys(meet).sort();
+    draw("trend-meetings", "bar", my, my.map((y) => meet[y]), "Meetings recorded");
+    $("trend-meetings-note").textContent = my.length
+      ? `Dated meetings for ${withDates.length.toLocaleString()} ${label}, from the dates in their recordings' titles (undated recordings are left out, and the current year is partial).`
+      : "Meeting dates aren't available here: the US and Canadian counts are totals without dates, and recordings without a date in their title can't be placed in a year.";
+    const py = Object.keys(pov).sort();
+    draw("trend-poverty", "line", py, py.map((y) => +(pov[y].reduce((a, b) => a + b, 0) / pov[y].length).toFixed(2)), "Average poverty rate (%)");
+    // In "All", each country's measure differs, so draw one line per country instead of one average.
+    if (current.combined && trendCharts["trend-poverty"]) {
+      const byC = {};
+      povRows.forEach((r) => Object.entries(yearMap(r["Poverty by year"])).forEach(([y, v]) => { ((byC[r.Country] = byC[r.Country] || {})[y] = byC[r.Country][y] || []).push(v); }));
+      const palette = ["#1f77b4", "#d62728", "#2ca02c", "#9467bd", "#ff7f0e", "#17becf"];
+      const ch = trendCharts["trend-poverty"];
+      ch.data.datasets = Object.entries(byC).map(([c, ys], i) => ({ label: c, borderColor: palette[i % palette.length], backgroundColor: palette[i % palette.length],
+        tension: 0.2, pointRadius: 4, spanGaps: true, data: py.map((y) => (ys[y] ? +(ys[y].reduce((a, b) => a + b, 0) / ys[y].length).toFixed(2) : null)) }));
+      ch.options.plugins.legend.display = true;
+      ch.update();
+    }
+    $("trend-poverty-note").textContent = py.length
+      ? `Average of the ${label}' rates each year (${povRows.length.toLocaleString()} ${label}; each country's own measure). Available for Germany, Finland, the Netherlands, Switzerland and New Zealand.`
+      : "Only one year of poverty figures is on the site for this view. Several years are available for Germany, Finland, the Netherlands, Switzerland and New Zealand.";
   }
 
   const avg = (vals) => (vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : NaN);
@@ -1124,7 +1176,7 @@
   document.querySelectorAll(".links a").forEach((a) => a.addEventListener("click", () => {
     setView(a.dataset.viewLink || "overview");
   }));
-  const viewFromHash = () => { if (["#size", "#locale", "#map", "#rules", "#sources"].includes(location.hash)) setView(location.hash.slice(1)); };
+  const viewFromHash = () => { if (["#size", "#locale", "#map", "#trends", "#rules", "#sources"].includes(location.hash)) setView(location.hash.slice(1)); };
   viewFromHash();
   window.addEventListener("hashchange", viewFromHash);
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {

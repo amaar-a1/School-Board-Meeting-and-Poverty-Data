@@ -17,6 +17,7 @@ import csv, json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from geo_area import area_km2
 from build_islands import sittings
+from meeting_dates import summary as date_summary
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 IN = os.path.join(HERE, "inputs", "switzerland")
@@ -59,9 +60,10 @@ def main():
     cat, lab, v = jsonstat("bfs_social_assistance.json")
     age = next(k for k, t in lab["Altersklasse"].items() if t.startswith("0-17"))
     ab = list(lab["Absolut / relativ"]); year = cat["Jahr"][-1]
-    sa = {}
+    sa, hist = {}, {}
     for k in cat["Kanton"]:
         t = lab["Kanton"][k]
+        if t in BFS: hist[BFS[t]] = {y: v(Kanton=k, Altersklasse=age, **{"Absolut / relativ": ab[1], "Jahr": y}) for y in cat["Jahr"]}
         if t in BFS: sa[BFS[t]] = (v(Kanton=k, Altersklasse=age, **{"Absolut / relativ": ab[0], "Jahr": year}), v(Kanton=k, Altersklasse=age, **{"Absolut / relativ": ab[1], "Jahr": year}))
     pcat, plab, pv = jsonstat("bfs_pupils.json")
     pyear = pcat["Jahr"][-1]
@@ -78,16 +80,18 @@ def main():
         dens = (kids / 0.19 / area_km2(f["geometry"])) if kids else 0
         url, mode, cname = CHANNELS.get(code, (None, None, None))
         url = url or (url_of.get(cname) if cname else None)
-        n, note = 0, "No school board meets above the municipal level; no recorded sittings of the cantonal parliament were found on YouTube (most stream on their own websites)"
+        n, kept, note = 0, [], "No school board meets above the municipal level; no recorded sittings of the cantonal parliament were found on YouTube (most stream on their own websites)"
         if url and url in titles:
             vids = titles[url]
             if code in NAMEWORDS: vids = [t for t in vids if re.search(NAMEWORDS[code], t, re.I)]
-            n = sittings(vids, mode)[0]
+            n, kept = sittings(vids, mode)
             if n: note = f"Stand-in: recorded sittings of the cantonal parliament on {cname}'s YouTube channel, one per day"
         rows.append({"District": NAME.get(code, f["properties"]["name"]), "Language": LANG.get(code, "German"),
                      "Locale": "Urban" if dens >= 2000 else "Suburban" if dens >= 500 else "Mixed" if dens >= 100 else "Rural",
-                     "Available Board Meetings": n, "Meetings source": url if n else "", "Meetings note": note,
+                     "Available Board Meetings": n, "Meetings source": url if n else "",
+                     **dict(zip(("Latest meeting", "Meetings by year"), date_summary(kept) if n else ("", ""))), "Meetings note": note,
                      "Children": kids, "Children in Low Income": round(n_sa), "Percentage of Children in Low Income": f"{rate:.2f}%",
+                     "Poverty by year": "; ".join(f"{y}:{x}" for y, x in sorted(hist[code].items()) if x is not None),
                      "Enrollment": round(pupils[code]), "Enrollment year": pyear, "People per km² (estimated)": round(dens), "District ID": f"CH-{code}"})
         rnd = lambda c: [rnd(x) for x in c] if isinstance(c[0], list) else [round(c[0], 4), round(c[1], 4)]
         feats.append({"type": "Feature", "properties": {"id": f"CH-{code}", "NAME": rows[-1]["District"]}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})

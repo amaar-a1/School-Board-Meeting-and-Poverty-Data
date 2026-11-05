@@ -26,6 +26,7 @@ Usage: python3 data-prep/build_nordic.py
 import csv, json, os, re, sys, unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from geo_area import area_km2
+from meeting_dates import summary as date_summary
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 IN = os.path.join(HERE, "inputs", "nordic")
@@ -82,7 +83,7 @@ def strict_count(cc, titles):
     unit, topic = (re.compile(x, re.I) for x in STRICT[cc])
     mw = re.compile(MEETW.get(cc, "."), re.I)
     keep = [t for t in titles if unit.search(t) and topic.search(t) and mw.search(t) and not re.search(NOT, t, re.I)]
-    return len({re.sub(r"\b(del|osa|deel|part|video)\s*\d+(\s*(av|af|van|/)\s*\d+)?\b|\(\d\)|\d/\d\s*$", "", t, flags=re.I).strip().lower() for t in keep}), keep[:3]
+    return len({re.sub(r"\b(del|osa|deel|part|video)\s*\d+(\s*(av|af|van|/)\s*\d+)?\b|\(\d\)|\d/\d\s*$", "", t, flags=re.I).strip().lower() for t in keep}), keep
 
 
 def meetings(cc):
@@ -97,7 +98,7 @@ def meetings(cc):
         if not r["Channel URL"]:
             continue
         n, ex = strict_count(cc, titles[r["Channel URL"]]) if r["Channel URL"] in titles else (0, [])
-        out[r["District ID"]] = (n, r["Channel URL"], ex)
+        out[r["District ID"]] = (n, r["Channel URL"], ex)   # ex: every counted title
     return out
 
 
@@ -206,14 +207,17 @@ def main():
                 if t: put(code=v["municipality"], **{"Enrollment": round(t[0]["value"]), "Enrollment year": "2025"})
         elif cc == "FI":
             reg = {r["id"]: r for r in json.load(open(os.path.join(IN, "fi_regions.json")))}
-            vals = {}
+            vals, hist = {}, {}
             for v in json.load(open(os.path.join(IN, "fi_228.json"))):
+                if v["region"] in reg and v.get("value") is not None:
+                    hist.setdefault(v["region"], {})[v["year"]] = v["value"]
                 if v["region"] in reg and v.get("value") is not None and (v["region"] not in vals or v["year"] > vals[v["region"]]["year"]):
                     vals[v["region"]] = v
             for rid, v in vals.items():
                 code = str(int(reg[rid]["code"]))
                 kids = round(v["absValue"] / v["value"] * 100) if v.get("absValue") and v["value"] else ""
-                put(code=code, name=reg[rid]["name"], **{"Percentage of Children in Low Income": f"{v['value']:.2f}%", "Children in Low Income": v.get("absValue") or "", "Children": kids})
+                put(code=code, name=reg[rid]["name"], **{"Percentage of Children in Low Income": f"{v['value']:.2f}%", "Children in Low Income": v.get("absValue") or "", "Children": kids,
+                                                         "Poverty by year": "; ".join(f"{y}:{hist[rid][y]}" for y in sorted(hist[rid]))})
             for code, (lab, (n,)) in jsonstat("fi_pupils.json", "alue_23_20250101").items():
                 if code.startswith("KU") and n: put(code=str(int(code[2:])), name=lab, **{"Enrollment": n, "Enrollment year": "2025"})
         elif cc == "DK":
@@ -225,14 +229,17 @@ def main():
                 nm = alias.get(norm(r["KOMGRP"]), norm(r["KOMGRP"]))
                 if nm in byname: rows[byname[nm]].update({"Enrollment": int(r["INDHOLD"]), "Enrollment year": "October 2025"})
         elif cc == "NL":
-            best = {}
+            best, hist = {}, {}
             for v in json.load(open(os.path.join(IN, "nl_childpoverty.json")))["value"]:
                 g = v["RegioS"].strip()
+                if g.startswith("GM") and v["KinderenArmRelatief_4"] is not None:
+                    hist.setdefault(g, {})[v["Perioden"][:4]] = v["KinderenArmRelatief_4"]
                 if g.startswith("GM") and v["KinderenArmRelatief_4"] is not None and (g not in best or v["Perioden"] > best[g]["Perioden"]):
                     best[g] = v
             for g, v in best.items():
                 put(code=g, **{"Percentage of Children in Low Income": f"{v['KinderenArmRelatief_4']:.2f}%", "Children": round(v["KinderenTotaal_1"] * 1000),
-                               "Children in Low Income": round(v["KinderenTotaal_1"] * 10 * v["KinderenArmRelatief_4"])})   # CBS counts are in thousands
+                               "Children in Low Income": round(v["KinderenTotaal_1"] * 10 * v["KinderenArmRelatief_4"]),   # CBS counts are in thousands
+                               "Poverty by year": "; ".join(f"{y}:{hist[g][y]}" for y in sorted(hist[g]))})
             tot = {}
             for v in json.load(open(os.path.join(IN, "nl_pupils.json")))["value"]:
                 if v["LeerlingenStudenten_1"]:
@@ -246,6 +253,7 @@ def main():
                 n, url, ex = meet[r["District ID"]]
                 r["Available Board Meetings"] = n
                 r["Meetings source"] = url
+                if n: r["Latest meeting"], r["Meetings by year"] = date_summary(ex)
         out = []
         for k, r in rows.items():
             basis = float(r["Enrollment"] or 0) if cc == "DK" else float(r["Children"] or 0)
@@ -257,10 +265,10 @@ def main():
                 r["Locale"], r["People per km² (estimated)"] = locale(basis, SHARE[cc], area)
             out.append(r)
         out.sort(key=lambda r: r["District"])
-        cols = ["District", "Locale", "Available Board Meetings", "Meetings source", "Children", "Children in Low Income",
-                "Percentage of Children in Low Income", "Poverty note", "Enrollment", "Enrollment year", "People per km² (estimated)", "District ID"]
+        cols = ["District", "Locale", "Available Board Meetings", "Meetings source", "Latest meeting", "Meetings by year", "Children", "Children in Low Income",
+                "Percentage of Children in Low Income", "Poverty note", "Poverty by year", "Enrollment", "Enrollment year", "People per km² (estimated)", "District ID"]
         with open(os.path.join(DOCS, f"{key}.csv"), "w", newline="", encoding="utf-8") as fo:
-            w = csv.DictWriter(fo, fieldnames=cols); w.writeheader(); w.writerows(out)
+            w = csv.DictWriter(fo, fieldnames=cols, restval=""); w.writeheader(); w.writerows(out)
         for f in geo["features"]:
             f["properties"] = {"id": f"{cc}-{f['properties']['LAU_ID']}", "NAME": f["properties"]["LAU_NAME"]}
         json.dump(geo, open(os.path.join(DOCS, "map", f"{key}.json"), "w"), separators=(",", ":"))

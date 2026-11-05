@@ -233,7 +233,7 @@ def main():
         status = "Independent country" if sov in (n["NAME"], n["NAME_LONG"]) or iso in ("FSM", "KNA", "VCT", "ATG", "STP", "BHS", "MHL", "SLB") else f"Territory of {'the United Kingdom' if sov == 'United Kingdom' else 'the Netherlands' if sov == 'Netherlands' else sov}"
         if iso in ("COK", "NIU"): status = "Self-governing, in free association with New Zealand"
         out.append({"District": name, "Region": "European microstates" if n.get("MICRO") else REGION.get(n["SUBREGION"], n["SUBREGION"]), "Status": status,
-                    "Available Board Meetings": 0, "Meetings source": "", "Meetings note": "",
+                    "Available Board Meetings": 0, "Meetings source": "", "Latest meeting": "", "Meetings by year": "", "Meetings note": "",
                     "Poverty rate or stand-in": f"{rate:.2f}%" if rate != "" else "", "Poverty measure": measure,
                     "Population": round(pop) if pop else "", "Children Ages 0-14 (estimated)": round(pop * share / 100) if pop and share else "",
                     "Enrollment": enr, "Enrollment year": ey, "Locale": loc, "People per km² (estimated)": round(dens) if dens else "",
@@ -241,8 +241,10 @@ def main():
     for r in out:
         iso = r["District ID"].split("-", 1)[1]
         url, mode = ISLAND_CHANNELS.get(iso, ("", ""))
-        n = sittings(titles[url], mode)[0] if url and url in titles else 0
+        n, kept = sittings(titles[url], mode) if url and url in titles else (0, [])
         if n:
+            from meeting_dates import summary as date_summary
+            r["Latest meeting"], r["Meetings by year"] = date_summary(kept)
             r["Available Board Meetings"] = n
             r["Meetings source"] = url
             r["Meetings note"] = (f"Stand-in: recorded sittings (and committee meetings) of the legislature on {names.get(iso, 'its YouTube channel')}, one per day; "

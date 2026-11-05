@@ -22,6 +22,7 @@
         <a href="#size" data-view-link="size">By district size</a>
         <a href="#locale" data-view-link="locale">By locale</a>
         <a href="#map" data-view-link="map">Map</a>
+        <a href="#trends" data-view-link="trends">Trends</a>
         <a href="#rules" data-view-link="rules">State rules</a>
         <a href="#sources" data-view-link="sources">Sources</a>
       </nav>
@@ -50,6 +51,7 @@
       <button type="button" role="tab" data-view-tab="locale" aria-selected="false">By locale</button>
       <button type="button" role="tab" data-view-tab="rules" aria-selected="false">State rules</button>
       <button type="button" role="tab" data-view-tab="map" aria-selected="false">Map</button>
+      <button type="button" role="tab" data-view-tab="trends" aria-selected="false">Trends</button>
       <button type="button" role="tab" data-view-tab="sources" aria-selected="false">Sources</button>
     </div>
 
@@ -232,6 +234,19 @@
           <div class="chart-box"><canvas id="locale-meetings-chart" role="img" aria-label="Bar chart: average available meetings by locale"></canvas></div>
         </section>
       </div>
+    </div>
+
+    <div data-view="trends" hidden>
+      <section class="card">
+        <h2>Recorded meetings by year</h2>
+        <p id="trend-meetings-note" class="note"></p>
+        <div class="chart-box chart-wrap"><canvas id="trend-meetings" role="img" aria-label="Meetings by year"></canvas></div>
+      </section>
+      <section class="card">
+        <h2>Child poverty over time</h2>
+        <p id="trend-poverty-note" class="note"></p>
+        <div class="chart-box chart-wrap"><canvas id="trend-poverty" role="img" aria-label="Child poverty by year"></canvas></div>
+      </section>
     </div>
 
     <div data-view="map" hidden>
