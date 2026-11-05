@@ -22,6 +22,7 @@
         <a href="#size" data-view-link="size">By district size</a>
         <a href="#locale" data-view-link="locale">By locale</a>
         <a href="#map" data-view-link="map">Map</a>
+        <a href="#trends" data-view-link="trends">Trends</a>
         <a href="#rules" data-view-link="rules">State rules</a>
         <a href="#sources" data-view-link="sources">Sources</a>
       </nav>
@@ -50,6 +51,7 @@
       <button type="button" role="tab" data-view-tab="locale" aria-selected="false">By locale</button>
       <button type="button" role="tab" data-view-tab="rules" aria-selected="false">State rules</button>
       <button type="button" role="tab" data-view-tab="map" aria-selected="false">Map</button>
+      <button type="button" role="tab" data-view-tab="trends" aria-selected="false">Trends</button>
       <button type="button" role="tab" data-view-tab="sources" aria-selected="false">Sources</button>
     </div>
 
@@ -88,6 +90,12 @@
     <section id="compare" class="card" hidden>
       <h2 id="compare-title"></h2>
       <div id="compare-body" class="stats compare"></div>
+    </section>
+
+    <section id="by-country" class="card" hidden>
+      <h2>Poverty and meetings, country by country</h2>
+      <p class="note">Each country uses its own poverty measure, so the comparison is within each country: the correlation between a place's poverty rank in its country and its meeting count. Positive means poorer places have more meetings; near 0 means no relationship.</p>
+      <div class="table-wrap"><table id="by-country-table" class="data-table"><thead></thead><tbody></tbody></table></div>
     </section>
 
     <section id="chart-section" class="card" hidden>
@@ -228,6 +236,19 @@
       </div>
     </div>
 
+    <div data-view="trends" hidden>
+      <section class="card">
+        <h2>Recorded meetings by year</h2>
+        <p id="trend-meetings-note" class="note"></p>
+        <div class="chart-box chart-wrap"><canvas id="trend-meetings" role="img" aria-label="Meetings by year"></canvas></div>
+      </section>
+      <section class="card">
+        <h2>Child poverty over time</h2>
+        <p id="trend-poverty-note" class="note"></p>
+        <div class="chart-box chart-wrap"><canvas id="trend-poverty" role="img" aria-label="Child poverty by year"></canvas></div>
+      </section>
+    </div>
+
     <div data-view="map" hidden>
       <section class="card">
         <div class="card-head">
@@ -237,6 +258,7 @@
               <select id="map-metric">
                 <option value="poverty">Child poverty rate</option>
                 <option value="meetings">Available board meetings</option>
+                <option value="rank">Poverty rank within its country</option>
               </select>
             </label>
             <label>Go to <select id="map-jump"></select></label>
@@ -320,5 +342,6 @@
   <script src="app.js"></script>
   <script src="assistant.js"></script>
   <script src="search.js"></script>
+  <script src="i18n.js"></script>
 </body>
 </html>

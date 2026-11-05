@@ -157,6 +157,7 @@ window.SOURCES = [
       { title: "Child poverty: Bertelsmann Stiftung, Wegweiser Kommune, indicator “Kinderarmut” (children under 15 receiving SGB II basic income support), 2023, CC0 licence", url: "https://www.wegweiser-kommune.de/daten/kinderarmut" },
       { title: "Children under 15: Eurostat demo_r_pjanaggr3 (population on 1 January by broad age group, NUTS 3)", url: "https://ec.europa.eu/eurostat/databrowser/view/demo_r_pjanaggr3/default/table" },
       { title: "Density: Eurostat demo_r_d3dens (population density, NUTS 3)", url: "https://ec.europa.eu/eurostat/databrowser/view/demo_r_d3dens/default/table" },
+      { title: "Meetings: each district's or city's own YouTube channel (in the “Meetings source” column), found with data-prep/nordic_youtube.py and filtered in data-prep/build_germany.py", url: "https://www.youtube.com/" },
       { title: "Borders: Eurostat GISCO NUTS 2021, level 3, 1:10 million", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics" }
     ],
     note: "Wegweiser Kommune's districts were matched to the NUTS borders by name (data-prep/inputs/germany/de_ww_search.json); six that the search missed were matched by hand. Built by data-prep/build_germany.py."
@@ -166,9 +167,10 @@ window.SOURCES = [
     group: "New Zealand: child poverty areas",
     items: [
       { title: "Child low income: Stats NZ, Child poverty statistics, year ended June 2025, Table 4.02 (below 60% of the median income before housing costs, by regional council area)", url: "https://www.stats.govt.nz/information-releases/child-poverty-statistics-year-ended-june-2025/" },
+      { title: "Enrollment: students enrolled in primary and secondary schools by region, July 2025 (Ministry of Education roll returns), via Figure.NZ", url: "https://figure.nz/chart/POTlO8r1L2X6mKJc" },
       { title: "Borders: Natural Earth 1:10m admin-1 states and provinces (regions merged where Stats NZ combines them)", url: "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/" }
     ],
-    note: "The Ministry of Education's school directory (Education Counts) and data.govt.nz both refused automated downloads, so school and enrollment counts by area aren't included. The Chatham Islands aren't in Stats NZ's regional figures. Built by data-prep/build_nz.py."
+    note: "Enrollment for combined areas adds up their regions. The Chatham Islands aren't in Stats NZ's regional figures. Built by data-prep/build_nz.py."
   },
   {
     only: "Islands and microstates",
@@ -176,6 +178,7 @@ window.SOURCES = [
     items: [
       { title: "Children below 60% of the median income (Malta, Cyprus): Eurostat ilc_li02", url: "https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table" },
       { title: "National poverty line, unemployment, population, enrollment (primary and secondary): World Bank World Development Indicators (SI.POV.NAHC, SL.UEM.TOTL.ZS, SP.POP.TOTL, SP.POP.0014.TO.ZS, SE.PRM.ENRL, SE.SEC.ENRL)", url: "https://data.worldbank.org/" },
+      { title: "Saint-Martin and Saint-Barthélemy unemployment: IEDOM, annual economic reports 2025 (Rapport annuel économique de Saint-Martin, de Saint-Barthélemy)", url: "https://www.iedom.fr/Rapport-annuel-economique-de-Saint-Martin-2025" },
       { title: "Norfolk Island unemployment: Australian Bureau of Statistics, 2021 Census QuickStats (Norfolk Island)", url: "https://www.abs.gov.au/census/find-census-data/quickstats/2021/SAL90004" },
       { title: "Where the World Bank has none: CIA World Factbook (2026 edition, and the November 2023 edition for poverty and unemployment), via the factbook.json archive", url: "https://github.com/factbook/factbook.json" },
       { title: "Meetings (stand-in): each legislature's YouTube channel, found with data-prep/islands_youtube.py and checked by hand (listed in the “Meetings source” column); sittings counted once per day", url: "https://www.youtube.com/" },

@@ -36,7 +36,9 @@ NAMES = {"Antigua and Barb.": "Antigua and Barbuda", "St. Kitts and Nevis": "Sai
          "Micronesia": "Federated States of Micronesia", "São Tomé and Principe": "São Tomé and Príncipe",
          "Saint Helena": "Saint Helena, Ascension and Tristan da Cunha"}
 # Figures found by hand where neither the World Bank nor the Factbook has one.
-MANUAL = {"NFK": (2.8, "Unemployment rate, a stand-in for poverty (Australian Bureau of Statistics, 2021 Census: 33 of 1,187 in the labour force)")}
+MANUAL = {"NFK": (2.8, "Unemployment rate, a stand-in for poverty (Australian Bureau of Statistics, 2021 Census: 33 of 1,187 in the labour force)"),
+          "MAF": (27.0, "Unemployment rate, a stand-in for poverty (census definition, 2023; IEDOM annual report on Saint-Martin, 2025 edition)"),
+          "BLM": (1.9, "Unemployment rate, a stand-in for poverty (ILO definition, 2021; IEDOM annual report on Saint-Barthélemy, 2025 edition)")}
 # Meetings: no island has a school board (a ministry runs the schools), so, as for Saint-Pierre-et-Miquelon,
 # the stand-in is the elected legislature's sittings on its YouTube channel (islands_youtube.py finds
 # them; checked by hand). "all": the legislature's own channel, where every dated sitting counts;
@@ -184,6 +186,8 @@ def main():
               "switzerland/youtube/titles.json"):   # the last has the microstates' parliaments
         p = os.path.join(IN, f)
         if os.path.exists(p): titles.update(json.load(open(p, encoding="utf-8")))
+    from shared_titles import shared_titles
+    titles.update(shared_titles())
     names = {}
     for line in open(__file__, encoding="utf-8"):
         m = re.match(r'\s+"([A-Z]{3})": \("([^"]+)", "(all|filter)"\),\s+# (.+)', line)
@@ -233,7 +237,7 @@ def main():
         status = "Independent country" if sov in (n["NAME"], n["NAME_LONG"]) or iso in ("FSM", "KNA", "VCT", "ATG", "STP", "BHS", "MHL", "SLB") else f"Territory of {'the United Kingdom' if sov == 'United Kingdom' else 'the Netherlands' if sov == 'Netherlands' else sov}"
         if iso in ("COK", "NIU"): status = "Self-governing, in free association with New Zealand"
         out.append({"District": name, "Region": "European microstates" if n.get("MICRO") else REGION.get(n["SUBREGION"], n["SUBREGION"]), "Status": status,
-                    "Available Board Meetings": 0, "Meetings source": "", "Meetings note": "",
+                    "Available Board Meetings": 0, "Meetings source": "", "Latest meeting": "", "Meetings by year": "", "Meetings note": "",
                     "Poverty rate or stand-in": f"{rate:.2f}%" if rate != "" else "", "Poverty measure": measure,
                     "Population": round(pop) if pop else "", "Children Ages 0-14 (estimated)": round(pop * share / 100) if pop and share else "",
                     "Enrollment": enr, "Enrollment year": ey, "Locale": loc, "People per km² (estimated)": round(dens) if dens else "",
@@ -241,8 +245,10 @@ def main():
     for r in out:
         iso = r["District ID"].split("-", 1)[1]
         url, mode = ISLAND_CHANNELS.get(iso, ("", ""))
-        n = sittings(titles[url], mode)[0] if url and url in titles else 0
+        n, kept = sittings(titles[url], mode) if url and url in titles else (0, [])
         if n:
+            from meeting_dates import summary as date_summary
+            r["Latest meeting"], r["Meetings by year"] = date_summary(kept)
             r["Available Board Meetings"] = n
             r["Meetings source"] = url
             r["Meetings note"] = (f"Stand-in: recorded sittings (and committee meetings) of the legislature on {names.get(iso, 'its YouTube channel')}, one per day; "
