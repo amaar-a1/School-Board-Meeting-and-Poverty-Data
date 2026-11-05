@@ -1,8 +1,8 @@
-name: Fetch pages for world research (temporary)
+name: Fetch pages for gap research (temporary)
 
 on:
   push:
-    branches: [claude/world-fetch]
+    branches: [claude/gap-fetch]
     paths: [fetch/urls.txt, fetch/paginate.txt, fetch/extract.py]
 
 permissions:

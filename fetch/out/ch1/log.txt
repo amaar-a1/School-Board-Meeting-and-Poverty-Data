@@ -1,9 +1,0 @@
-ok 37981 https://www.pxweb.bfs.admin.ch/api/v1/de/
-ok 19578 https://api.worldbank.org/v2/country/LUX;LIE;MCO;AND;SMR;CHE/indicator/SE.PRM.ENRL?format=json&per_page=2000&date=2010:2025
-ok 19768 https://api.worldbank.org/v2/country/LUX;LIE;MCO;AND;SMR;CHE/indicator/SE.SEC.ENRL?format=json&per_page=2000&date=2010:2025
-ok 23561 https://api.worldbank.org/v2/country/LUX;LIE;MCO;AND;SMR;CHE/indicator/SI.POV.NAHC?format=json&per_page=2000&date=2010:2025
-ok 23882 https://api.worldbank.org/v2/country/LUX;LIE;MCO;AND;SMR;CHE/indicator/SL.UEM.TOTL.ZS?format=json&per_page=2000&date=2010:2025
-ok 18909 https://api.worldbank.org/v2/country/LUX;LIE;MCO;AND;SMR;CHE/indicator/SP.POP.TOTL?format=json&per_page=2000&date=2010:2025
-ok 23076 https://api.worldbank.org/v2/country/LUX;LIE;MCO;AND;SMR;CHE/indicator/SP.POP.0014.TO.ZS?format=json&per_page=2000&date=2010:2025
-ok 12449 https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_li02?geo=LU&geo=CH&age=Y_LT18&sinceTimePeriod=2018
-ok 3810 https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_li41?geo=CH01&geo=CH02&geo=CH03&geo=CH04&geo=CH05&geo=CH06&geo=CH07&sinceTimePeriod=2018

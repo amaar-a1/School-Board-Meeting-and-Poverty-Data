@@ -1,6 +1,0 @@
-
----
-  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/islands_youtube.py", line 55
-    LEGIS = re.compile(LEGIS = re.compile(r"parliament|parlament|assembly|assembl[ée]e|assembleia|house of|legislat|congr[eè]s|congress|staten|tynwald|"
-                      ^
-SyntaxError: '(' was never closed
