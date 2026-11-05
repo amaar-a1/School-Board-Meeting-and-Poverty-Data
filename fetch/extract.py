@@ -1,6 +1,6 @@
 # Temporary: IEDOM Guadeloupe publications (Saint-Martin and Saint-Barthélemy reports).
 import os, re, time, urllib.request
-OUT = "fetch/out/gap2"; os.makedirs(OUT, exist_ok=True)
+OUT = "fetch/out/gap3"; os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "school-board-research-script (github.com/amaar-a1)"}
 log = []
 def get(url, name=None):
@@ -11,8 +11,9 @@ def get(url, name=None):
         log.append(f"ok {len(d)} {r.geturl()} <- {url}"); return d, r.geturl()
     except Exception as e:
         log.append(f"FAIL {url}: {e}"); return None, url
-pages = ["https://www.iedom.fr/guadeloupe/Publications", "https://www.iedom.fr/guadeloupe/publications/rapports-annuels",
-         "https://www.iedom.fr/guadeloupe/Statistiques"]
+_, base = get("https://www.iedom.fr/saint-martin/")
+log.append("base " + base)
+pages = [urllib.request.urljoin(base, x) for x in ("Publications", "Statistiques")]
 found = set()
 for u in pages:
     d, final = get(u, re.sub(r"\W+", "_", u)[-40:] + ".html")
