@@ -1,19 +1,29 @@
-# Temporary: Switzerland part 2: BFS table titles (themes 13 and 15), parliaments on YouTube.
-import json, os, subprocess, sys, time, urllib.request
-OUT = "fetch/out/ch2"; os.makedirs(OUT, exist_ok=True)
-UA = {"User-Agent": "school-board-research-script (github.com/amaar-a1)", "Accept": "application/json"}
-root = json.load(open("fetch/out/ch1/bfs_root.json"))
-titles = {}
-for x in root:
-    i = x["dbid"]
-    if not (i.startswith("px-x-13") or i.startswith("px-x-15")): continue
+# Temporary: Switzerland part 3: social assistance by canton and age; compulsory-school pupils by canton.
+import json, os, re, time, urllib.request
+OUT = "fetch/out/ch3"; os.makedirs(OUT, exist_ok=True)
+UA = {"User-Agent": "school-board-research-script (github.com/amaar-a1)", "Accept": "application/json", "Content-Type": "application/json"}
+B = "https://www.pxweb.bfs.admin.ch/api/v1/de/"
+log = []
+def table(tid, keepall):
+    u = f"{B}{tid}/{tid}.px"
+    meta = json.loads(urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=120).read())
+    json.dump(meta, open(f"{OUT}/{tid}_meta.json", "w"), ensure_ascii=False)
+    q = []
+    for v in meta["variables"]:
+        if re.search(keepall, v["text"], re.I): vals = v["values"]
+        elif re.search(r"^jahr", v["text"], re.I): vals = v["values"][-2:]
+        else: vals = [v["values"][0]]
+        q.append({"code": v["code"], "selection": {"filter": "item", "values": vals}})
+    body = json.dumps({"query": q, "response": {"format": "json-stat2"}}).encode()
     try:
-        m = json.loads(urllib.request.urlopen(urllib.request.Request(f"https://www.pxweb.bfs.admin.ch/api/v1/de/{i}/{i}.px", headers=UA), timeout=120).read())
-        titles[i] = {"title": m.get("title"), "vars": [(v["code"], v["text"], v["valueTexts"][:6], len(v["values"])) for v in m["variables"]]}
+        d = urllib.request.urlopen(urllib.request.Request(u, headers=UA, data=body), timeout=300).read()
+        open(f"{OUT}/{tid}.json", "wb").write(d); log.append(f"ok {tid} {len(d)}")
     except Exception as e:
-        titles[i] = {"error": str(e)[:100]}
-    time.sleep(0.7)
-json.dump(titles, open(f"{OUT}/bfs_titles.json", "w"), ensure_ascii=False, indent=0)
-subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-U", "yt-dlp"], check=True)
-r = subprocess.run([sys.executable, "fetch/islands_youtube.py", f"{OUT}/yt", "europe"], capture_output=True, text=True, timeout=12000)
-open(f"{OUT}/yt_log.txt", "w").write(r.stdout[-20000:] + "\n---\n" + r.stderr[-3000:])
+        b = ""
+        try: b = e.read().decode()[:300]
+        except Exception: pass
+        log.append(f"FAIL {tid} {e} {b}")
+    time.sleep(1)
+table("px-x-1304030000_121", r"kanton|altersklasse|absolut")
+table("px-x-1502010100_101", r"kanton")
+open(f"{OUT}/log.txt", "w").write("\n".join(log))
