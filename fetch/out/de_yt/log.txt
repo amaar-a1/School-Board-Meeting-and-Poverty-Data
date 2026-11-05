@@ -1,0 +1,403 @@
+DE Ahrweiler -> Kreisverwaltung Ahrweiler 0
+DE Aichach-Friedberg ->  
+DE Alb-Donau-Kreis ->  
+DE Altenburger Land ->  
+DE Altenkirchen (Westerwald) -> Kreisverwaltung Altenkirchen 0
+DE Altmarkkreis Salzwedel ->  
+DE Altötting ->  
+DE Alzey-Worms ->  
+DE Amberg (city) ->  
+DE Amberg-Sulzbach ->  
+DE Ammerland ->  
+DE Anhalt-Bitterfeld ->  
+DE Ansbach (city) -> Jugendrat Ansbach 0
+DE Ansbach (district) -> Jugendrat Ansbach 0
+DE Aschaffenburg (city) -> BUND Orts- und Kreisgruppe Aschaffenburg 0
+DE Aschaffenburg (district) -> BUND Orts- und Kreisgruppe Aschaffenburg 0
+DE Augsburg (city) ->  
+DE Augsburg (district) ->  
+DE Aurich ->  
+DE Bad Dürkheim -> Kreisverwaltung Bad Dürkheim 0
+DE Bad Kissingen ->  
+DE Bad Kreuznach ->  
+DE Bad Tölz-Wolfratshausen ->  
+DE Baden-Baden, Stadtkreis ->  
+DE Bamberg (city) -> Landkreis Bamberg 0
+DE Bamberg (district) -> Landkreis Bamberg 0
+DE Barnim -> Kreisverwaltung Barnim 0
+DE Bautzen -> Bautzen - Der Landkreis 0
+DE Bayreuth (city) -> Kirchenkreis Bayreuth 0
+DE Bayreuth (district) -> Kirchenkreis Bayreuth 0
+DE Berchtesgadener Land ->  
+DE Bergstraße ->  
+DE Berlin -> Abgeordnetenhaus von Berlin 73
+DE Bernkastel-Wittlich ->  
+DE Biberach ->  
+DE Bielefeld (city) -> Stadt Bielefeld 1
+DE Birkenfeld ->  
+DE Bochum (city) -> Grüne im Rat Bochum 0
+DE Bodenseekreis ->  
+DE Bonn (city) -> Bundesstadt Bonn 0
+DE Borken -> Stadt Borken 0
+DE Bottrop (city) ->  
+DE Brandenburg an der Havel (city) ->  
+DE Braunschweig (city) -> Stadt Braunschweig 0
+DE Breisgau-Hochschwarzwald -> Landratsamt Breisgau-Hochschwarzwald 0
+DE Bremen (city) ->  
+DE Bremerhaven (city) ->  
+DE Burgenlandkreis -> Burgenlandkreis 0
+DE Böblingen ->  
+DE Börde ->  
+DE Calw ->  
+DE Celle ->  
+DE Cham ->  
+DE Chemnitz (city) ->  
+DE Cloppenburg -> Landkreis Cloppenburg WIRISTHIER 0
+DE Coburg (city) -> Landkreis Coburg 0
+DE Coburg (district) -> Landkreis Coburg 0
+DE Cochem-Zell ->  
+DE Coesfeld -> Kreis Coesfeld 0
+DE Cottbus (city) ->  
+DE Cuxhaven ->  
+DE Dachau -> Landratsamt Dachau 0
+DE Dahme-Spreewald ->  
+DE Darmstadt (city) -> Landkreis Darmstadt-Dieburg 0
+DE Darmstadt-Dieburg -> Landkreis Darmstadt-Dieburg 0
+DE Deggendorf ->  
+DE Delmenhorst (city) ->  
+DE Dessau-Roßlau (city) ->  
+DE Diepholz ->  
+DE Dillingen a.d. Donau ->  
+DE Dingolfing-Landau ->  
+DE Dithmarschen -> Kreis Dithmarschen 0
+DE Donau-Ries ->  
+DE Donnersbergkreis ->  
+DE Dortmund (city) ->  
+DE Dresden (city) -> Stadtrat Dresden 0
+DE Duisburg (city) ->  
+DE Düren ->  
+DE Düsseldorf (city) -> Landeshauptstadt Düsseldorf 0
+DE Ebersberg ->  
+DE Eichsfeld ->  
+DE Eichstätt -> Altes Stadttheater Eichstätt 0
+DE Eifelkreis Bitburg-Prüm ->  
+DE Eisenach (city) ->  
+DE Elbe-Elster -> Landkreis Elbe-Elster 0
+DE Emden (city) ->  
+DE Emmendingen ->  
+DE Emsland ->  
+DE Ennepe-Ruhr-Kreis -> AfD Kreistagsfraktion Ennepe-Ruhr 0
+DE Enzkreis -> Enzkreis 0
+DE Erding ->  
+DE Erfurt (city) ->  
+DE Erlangen (city) -> Stadt Erlangen 1
+DE Erlangen-Höchstadt -> Die Linke Erlangen / Erlangen-Höchstadt 0
+DE Erzgebirgskreis -> Landratsamt Erzgebirgskreis 0
+DE Essen (city) -> Stadt Essen 0
+DE Esslingen -> Landkreis Esslingen 0
+DE Euskirchen ->  
+DE Flensburg (city) -> Stadt Flensburg 0
+DE Forchheim ->  
+DE Frankenthal (Pfalz) (city) -> Stadt Frankenthal 0
+DE Frankfurt (Oder) (city) -> Stadt Frankfurt am Main 0
+DE Frankfurt am Main (city) -> Stadt Frankfurt am Main 0
+DE Freiburg im Breisgau, Stadtkreis ->  
+DE Freising -> SPD-Kreisverband Freising 0
+DE Freudenstadt ->  
+DE Freyung-Grafenau -> Landratsamt Freyung-Grafenau 0
+DE Friesland (DE) ->  
+DE Fulda -> CDU Stadtverband Fulda 0
+DE Fürstenfeldbruck -> Landratsamt Fürstenfeldbruck 0
+DE Fürth (city) -> Stadt Fürth 0
+DE Fürth (district) -> Stadt Fürth 0
+DE Garmisch-Partenkirchen ->  
+DE Gelsenkirchen (city) ->  
+DE Gera (city) ->  
+DE Germersheim -> Stadt Germersheim 0
+DE Gießen (district) ->  
+DE Gifhorn ->  
+DE Goslar ->  
+DE Gotha -> Sozialdemokratie im Landkreis Gotha 0
+DE Grafschaft Bentheim ->  
+DE Greiz ->  
+DE Groß-Gerau -> Kreisverwaltung Groß-Gerau 0
+DE Göppingen -> Stadtverwaltung Göppingen 0
+DE Görlitz -> Stadtverwaltung Görlitz 0
+DE Göttingen ->  
+DE Günzburg ->  
+DE Gütersloh -> SPDStadtverband Gütersloh 0
+DE Hagen (city) ->  
+DE Halle (Saale) (city) -> Stadtrat Halle (Saale) 1
+DE Hamburg ->  
+DE Hameln-Pyrmont -> Landkreis Hameln-Pyrmont 0
+DE Hamm (city) ->  
+DE Harburg -> dieBasis Kreisverband Harburg 0
+DE Harz ->  
+DE Havelland ->  
+DE Haßberge ->  
+DE Heidekreis ->  
+DE Heidelberg, Stadtkreis ->  
+DE Heidenheim -> Heidenheim Stadt 0
+DE Heilbronn (district) ->  
+DE Heilbronn, Stadtkreis ->  
+DE Heinsberg ->  
+DE Helmstedt ->  
+DE Herford -> CDU-Kreistagsfraktion Herford 0
+DE Herne (city) ->  
+DE Hersfeld-Rotenburg -> Evangelischer Kirchenkreis Hersfeld-Rotenburg 0
+DE Herzogtum Lauenburg ->  
+DE Hildburghausen ->  
+DE Hildesheim ->  
+DE Hochsauerlandkreis ->  
+DE Hochtaunuskreis ->  
+DE Hof (city) -> Stadt Hof 0
+DE Hof (district) ->  
+DE Hohenlohekreis ->  
+DE Holzminden ->  
+DE Höxter ->  
+DE Ilm-Kreis ->  
+DE Ingolstadt (city) -> Stadt Ingolstadt 0
+DE Jena (city) -> Jena - Lichtstadt (Stadtverwaltung) 0
+DE Jerichower Land ->  
+DE Kaiserslautern (city) -> STADTECHO Kaiserslautern 0
+DE Kaiserslautern (district) -> STADTECHO Kaiserslautern 0
+DE Karlsruhe (district) -> Stadt Karlsruhe 0
+DE Karlsruhe, Stadtkreis ->  
+DE Kassel (city) ->  
+DE Kassel (district) -> AfDtv Landkreis Kassel 0
+DE Kaufbeuren (city) -> Stadt Kaufbeuren 1
+DE Kelheim ->  
+DE Kempten (Allgäu) (city) ->  
+DE Kiel (city) ->  
+DE Kitzingen ->  
+DE Kleve -> FDP Kreisverband Kleve-Geldern 0
+DE Koblenz (city) -> Stadtverwaltung Koblenz 0
+DE Konstanz -> Stadt Konstanz 0
+DE Krefeld (city) -> Ratssitzung Stadt Krefeld 0
+DE Kronach ->  
+DE Kulmbach ->  
+DE Kusel ->  
+DE Kyffhäuserkreis -> Die Heimat Kyffhäuserkreis 0
+DE Köln (city) ->  
+DE Lahn-Dill-Kreis -> Lahn-Dill-Kreis 0
+DE Landau in der Pfalz (city) ->  
+DE Landkreis Rostock -> Landkreis Rostock 0
+DE Landsberg am Lech ->  
+DE Landshut (city) ->  
+DE Landshut (district) ->  
+DE Leer -> SPD im Kreis Leer 0
+DE Leipzig ->  
+DE Leipzig (city) ->  
+DE Leverkusen (city) ->  
+DE Lichtenfels ->  
+DE Limburg-Weilburg ->  
+DE Lindau (Bodensee) -> Stadt Lindau 0
+DE Lippe ->  
+DE Ludwigsburg ->  
+DE Ludwigshafen am Rhein (city) ->  
+DE Ludwigslust-Parchim ->  
+DE Lörrach -> Jugendrat Lörrach 0
+DE Lübeck (city) ->  
+DE Lüchow-Dannenberg -> Landkreis Lüchow-Dannenberg 0
+DE Lüneburg (district) -> Hansestadt Lüneburg 0
+DE Magdeburg (city) -> Landeshauptstadt Magdeburg 2
+DE Main-Kinzig-Kreis -> AfD-Kreistagsfraktion im Main-Kinzig Kreis 0
+DE Main-Spessart -> Landkreis Main-Spessart 0
+DE Main-Tauber-Kreis ->  
+DE Main-Taunus-Kreis ->  
+DE Mainz (city) -> AfD-Stadtratsfraktion Mainz 0
+DE Mainz-Bingen ->  
+DE Mannheim, Stadtkreis ->  
+DE Mansfeld-Südharz -> Landkreis Mansfeld-Südharz 0
+DE Marburg-Biedenkopf -> Marburg-Biedenkopf – Mein Landkreis 0
+DE Mayen-Koblenz ->  
+DE Mecklenburgische Seenplatte ->  
+DE Meißen -> Stadt Meißen 0
+DE Memmingen (city) -> FDP Kreisverband Memmingen 0
+DE Merzig-Wadern ->  
+DE Mettmann -> Kreis Mettmann 0
+DE Miesbach ->  
+DE Miltenberg ->  
+DE Minden-Lübbecke ->  
+DE Mittelsachsen ->  
+DE Märkisch-Oderland ->  
+DE Märkischer Kreis -> Märkischer Kreis 0
+DE Mönchengladbach (city) -> Stadt Mönchengladbach 0
+DE Mühldorf a. Inn ->  
+DE Mülheim an der Ruhr (city) ->  
+DE München (city) -> RFM Regional-Fernsehen- München 0
+DE München (district) -> RFM Regional-Fernsehen- München 0
+DE Münster (city) -> CDU-Fraktion im Rat der Stadt Münster 0
+DE Neckar-Odenwald-Kreis ->  
+DE Neu-Ulm ->  
+DE Neuburg-Schrobenhausen -> Landratsamt Neuburg-Schrobenhausen 0
+DE Neumarkt i. d. OPf. -> Stadt Neumarkt i.d.OPf. 0
+DE Neumünster (city) ->  
+DE Neunkirchen -> Landkreis Neunkirchen 0
+DE Neustadt a. d. Aisch-Bad Windsheim ->  
+DE Neustadt a. d. Waldnaab ->  
+DE Neustadt an der Weinstraße (city) -> Stadtverwaltung Neustadt an der Weinstraße 0
+DE Neuwied -> Kreisverwaltung Neuwied 0
+DE Nienburg (Weser) -> Landkreis Nienburg/Weser 0
+DE Nordfriesland -> Kreis Nordfriesland 0
+DE Nordhausen -> Kreisjugendring Nordhausen 0
+DE Nordsachsen ->  
+DE Nordwestmecklenburg -> Landkreis Nordwestmecklenburg 0
+DE Northeim -> Kreisfeuerwehr Landkreis Northeim 0
+DE Nürnberg (city) -> Stadt Nürnberg 1
+DE Nürnberger Land ->  
+DE Oberallgäu ->  
+DE Oberbergischer Kreis -> Oberbergischer Kreis 0
+DE Oberhausen (city) -> Stadt Oberhausen Livestreams 0
+DE Oberhavel ->  
+DE Oberspreewald-Lausitz -> Landkreis Oberspreewald-Lausitz 0
+DE Odenwaldkreis ->  
+DE Oder-Spree ->  
+DE Offenbach (district) ->  
+DE Offenbach am Main (city) ->  
+DE Oldenburg (Oldenburg) (city) -> Stadt Oldenburg 0
+DE Oldenburg (district) -> Stadt Oldenburg 0
+DE Olpe ->  
+DE Ortenaukreis -> DER ORTENAUKREIS 0
+DE Osnabrück (city) -> SPD-Kreistagsfraktion Osnabrück 0
+DE Osnabrück (district) -> SPD-Kreistagsfraktion Osnabrück 0
+DE Ostalbkreis ->  
+DE Ostallgäu ->  
+DE Osterholz ->  
+DE Ostholstein ->  
+DE Ostprignitz-Ruppin ->  
+DE Paderborn -> Kreis Paderborn 0
+DE Passau (city) ->  
+DE Passau (district) ->  
+DE Peine ->  
+DE Pfaffenhofen a. d. Ilm ->  
+DE Pforzheim, Stadtkreis ->  
+DE Pinneberg ->  
+DE Pirmasens (city) -> Stadt Pirmasens 0
+DE Plön ->  
+DE Potsdam (city) -> Landeshauptstadt Potsdam 0
+DE Potsdam-Mittelmark ->  
+DE Prignitz ->  
+DE Rastatt ->  
+DE Ravensburg ->  
+DE Recklinghausen -> Kreis Recklinghausen 0
+DE Regen -> Stadt Regen 0
+DE Regensburg (city) -> Landkreis Regensburg 0
+DE Regensburg (district) -> Landkreis Regensburg 0
+DE Region Hannover ->  
+DE Regionalverband Saarbrücken ->  
+DE Rems-Murr-Kreis -> Grüner Kreisverband Rems-Murr 0
+DE Remscheid (city) ->  
+DE Rendsburg-Eckernförde ->  
+DE Reutlingen -> Stadt Reutlingen 0
+DE Rhein-Erft-Kreis -> CDU Kreistagsfraktion Rhein-Erft-Kreis 0
+DE Rhein-Hunsrück-Kreis ->  
+DE Rhein-Kreis Neuss ->  
+DE Rhein-Lahn-Kreis ->  
+DE Rhein-Neckar-Kreis -> CDU Kreistagsfraktion Rhein-Neckar 0
+DE Rhein-Pfalz-Kreis ->  
+DE Rhein-Sieg-Kreis ->  
+DE Rheingau-Taunus-Kreis ->  
+DE Rheinisch-Bergischer Kreis -> Rheinisch-Bergischer Kreis 0
+DE Rhön-Grabfeld ->  
+DE Rosenheim (city) ->  
+DE Rosenheim (district) ->  
+DE Rostock (city) -> Landkreis Rostock 0
+DE Rotenburg (Wümme) ->  
+DE Roth -> Stadt Roth 0
+DE Rottal-Inn ->  
+DE Rottweil ->  
+DE Saale-Holzland-Kreis ->  
+DE Saale-Orla-Kreis ->  
+DE Saalekreis ->  
+DE Saalfeld-Rudolstadt ->  
+DE Saarlouis ->  
+DE Saarpfalz-Kreis ->  
+DE Salzgitter (city) -> Stadt Salzgitter 0
+DE Salzlandkreis ->  
+DE Schaumburg ->  
+DE Schleswig-Flensburg ->  
+DE Schmalkalden-Meiningen ->  
+DE Schwabach (city) ->  
+DE Schwalm-Eder-Kreis -> Schwalm-Eder-Kreis 0
+DE Schwandorf ->  
+DE Schwarzwald-Baar-Kreis ->  
+DE Schweinfurt (city) -> Livestream Stadt Schweinfurt 0
+DE Schweinfurt (district) -> Livestream Stadt Schweinfurt 0
+DE Schwerin (city) ->  
+DE Schwäbisch Hall ->  
+DE Segeberg -> Jugend im Kreistag Segeberg 0
+DE Siegen-Wittgenstein ->  
+DE Sigmaringen ->  
+DE Soest -> Stadt Soest 0
+DE Solingen (city) -> Jugendstadtrat Solingen 0
+DE Sonneberg ->  
+DE Speyer (city) -> Gremien Stadt Speyer 3
+DE Spree-Neiße ->  
+DE St. Wendel ->  
+DE Stade ->  
+DE Starnberg ->  
+DE Steinburg -> Kreisverwaltung Steinburg 0
+DE Steinfurt ->  
+DE Stendal ->  
+DE Stormarn ->  
+DE Straubing (city) -> Stadt Straubing 0
+DE Straubing-Bogen ->  
+DE Stuttgart, Stadtkreis ->  
+DE Städteregion Aachen ->  
+DE Suhl (city) ->  
+DE Sächsische Schweiz-Osterzgebirge ->  
+DE Sömmerda ->  
+DE Südliche Weinstraße -> Landkreis Südliche Weinstraße 0
+DE Südwestpfalz ->  
+DE Teltow-Fläming ->  
+DE Tirschenreuth ->  
+DE Traunstein -> Große Kreisstadt Traunstein 0
+DE Trier (city) ->  
+DE Trier-Saarburg ->  
+DE Tuttlingen ->  
+DE Tübingen (district) ->  
+DE Uckermark ->  
+DE Uelzen ->  
+DE Ulm, Stadtkreis ->  
+DE Unna -> Kreis Unna 0
+DE Unstrut-Hainich-Kreis -> Landratsamt Unstrut-Hainich-Kreis 0
+DE Unterallgäu ->  
+DE Vechta ->  
+DE Verden ->  
+DE Viersen ->  
+DE Vogelsbergkreis ->  
+DE Vogtlandkreis ->  
+DE Vorpommern-Greifswald -> Landkreis Vorpommern-Greifswald 1
+DE Vorpommern-Rügen ->  
+DE Vulkaneifel -> Landkreis Vulkaneifel 0
+DE Waldeck-Frankenberg ->  
+DE Waldshut ->  
+DE Warendorf -> Stadt Warendorf 0
+DE Wartburgkreis ->  
+DE Weiden i. d. Opf (city) ->  
+DE Weilheim-Schongau ->  
+DE Weimar (city) -> Stadt Weimar 0
+DE Weimarer Land ->  
+DE Weißenburg-Gunzenhausen ->  
+DE Werra-Meißner-Kreis -> Partnerschaft für Demokratie im Werra-Meißner-Kreis 0
+DE Wesel ->  
+DE Wesermarsch ->  
+DE Westerwaldkreis ->  
+DE Wetteraukreis ->  
+DE Wiesbaden (city) -> Landeshauptstadt Wiesbaden 0
+DE Wilhelmshaven (city) ->  
+DE Wittenberg -> Landkreis Wittenberg 0
+DE Wittmund ->  
+DE Wolfenbüttel ->  
+DE Wolfsburg (city) ->  
+DE Worms (city) -> Stadt Worms 0
+DE Wunsiedel i. Fichtelgebirge ->  
+DE Wuppertal (city) -> AfD-Fraktion im Rat der Stadt Wuppertal 1
+DE Würzburg (city) ->  
+DE Würzburg (district) ->  
+DE Zollernalbkreis ->  
+DE Zweibrücken (city) ->  
+DE Zwickau -> Landkreis Zwickau 1
+
+---
