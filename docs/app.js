@@ -64,6 +64,7 @@
       return;
     }
     renderTabs();
+    renderCoverage();
     setupFilters();
     window.SiteData = { datasets, combined, config: cfg, setView, select: (key) => selectDataset(key ? stateDataset(key) : datasets.find((d) => d.name === cfg.perState.from)) };
     selectDataset(datasets.find((d) => d.name === (cfg.perState && cfg.perState.from)) || datasets[0]);
@@ -106,6 +107,33 @@
     return ds;
   }
 
+  // The line under the title: how many countries and territories the site has data for, how many
+  // districts and boards, and how many people have visited (a free counter, abacus.jasoncameron.dev;
+  // each browser is counted once, so it's an estimate of visitors, not page views).
+  function renderCoverage() {
+    const box = $("coverage");
+    if (!box) return;
+    const countries = new Set(), territories = new Set();
+    let units = 0;
+    datasets.forEach((d) => {
+      units += d.rows.length;
+      if (d.state === "territories") d.rows.forEach((r) => territories.add(`US:${r.Territory}`));
+      else if (d.country === "FR") territories.add("FR:SPM");
+      else if (d.country === "ISLE") d.rows.forEach((r) => (r.Status === "Independent country" ? countries : territories).add(r.District));
+      else countries.add(d.country || "US");
+    });
+    const text = `Data for ${countries.size} countries and ${territories.size} territories · ${units.toLocaleString()} school districts, boards and their equivalents`;
+    box.textContent = text;
+    box.hidden = false;
+    const NS = "https://abacus.jasoncameron.dev", KEY = "amaar-a1-school-board-data/visitors";
+    let seen = false;
+    try { seen = localStorage.getItem("sbmpd-visited") === "1"; } catch (e) { /* private mode */ }
+    fetch(`${NS}/${seen ? "get" : "hit"}/${KEY}`).then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then((j) => {
+      if (!seen) { try { localStorage.setItem("sbmpd-visited", "1"); } catch (e) { /* ignore */ } }
+      if (typeof j.value === "number") box.textContent = `${text} · ${j.value.toLocaleString()} visitors`;
+    }).catch(() => {});
+  }
+
   // One state's view: its own data set if there is one (the territories), otherwise
   // the national rows for that state.
   const stateCache = {};
@@ -143,13 +171,15 @@
     tabs.hidden = false;
     tabs.innerHTML = '<span class="tabs-label">Data:</span>';
     // One button per country-wide data set: the US (perState.from) and any with a `country`.
-    const buttons = datasets.filter((d) => (ps && d.name === ps.from) || d.country);
+    // In alphabetical order of their labels; "All" goes last.
+    const buttons = datasets.filter((d) => (ps && d.name === ps.from) || d.country)
+      .sort((a, b) => (a.button || a.name).localeCompare(b.button || b.name));
     buttons.forEach((d, i) => {
       const b = document.createElement("button");
       b.type = "button";
       b.role = "tab";
       b.className = "country-button";
-      if (i === 0) b.id = "national-button";
+      if (ps && d.name === ps.from) b.id = "national-button";
       b.dataset.name = d.name;
       b.textContent = d.button || d.name;
       b.addEventListener("click", () => selectDataset(d));
@@ -178,11 +208,17 @@
       sel.appendChild(g);
       return g;
     };
-    const us = group("United States");
-    Object.entries(ps ? ps.names : {}).sort((a, b) => a[1].localeCompare(b[1]))
-      .forEach(([abbr, name]) => us.appendChild(new Option(name, abbr)));
-    Object.entries((ps && ps.after) || {}).forEach(([key, name]) => us.appendChild(new Option(name, key)));
-    others.forEach((d) => {
+    // Country groups in alphabetical order, the United States among them.
+    const addUS = () => {
+      const us = group("United States");
+      Object.entries(ps ? ps.names : {}).sort((a, b) => a[1].localeCompare(b[1]))
+        .forEach(([abbr, name]) => us.appendChild(new Option(name, abbr)));
+      Object.entries((ps && ps.after) || {}).forEach(([key, name]) => us.appendChild(new Option(name, key)));
+    };
+    const sorted = [...others, { usMarker: true, name: "United States" }]
+      .sort((a, b) => ((a.groups && a.groups.label) || a.name).localeCompare((b.groups && b.groups.label) || b.name));
+    sorted.forEach((d) => {
+      if (d.usMarker) return addUS();
       const g = group(d.groups.label || d.name);
       Object.entries(d.groups.names).sort((a, b) => a[1].localeCompare(b[1]))
         .filter(([, name]) => d.rows.some((r) => r[d.groups.column] === name))
