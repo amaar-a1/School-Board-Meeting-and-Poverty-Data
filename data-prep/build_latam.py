@@ -36,7 +36,8 @@ ALIAS = {"CL": {"paiguano": "paihuano", "marchigue": "marchihue", "aisen": "ayse
          "CO": {"bogota": "bogotadc", "bogotadistritocapital": "bogotadc", "sanandres": "sanandres", "cartagena": "cartagenadeindias",
                 "guadalajaradebuga": "buga", "santafedebogota": "bogotadc", "sanandresdetumaco": "tumaco", "sanjosedecucuta": "cucuta",
                 "sanjosedetoluviejo": "toluviejo", "villadesandiegodeubate": "ubate", "tiquisio": "tiquiso", "papunahua": "papunauacordepartamental",
-                "colosoricaurte": "coloso", "elsantuario": "santuario"}}
+                "colosoricaurte": "coloso", "elsantuario": "santuario"},
+         "MX": {"tlaquepaque": "sanpedrotlaquepaque"}}
 EDU = re.compile(r"comisi[óo]n (de )?educaci[óo]n|educaci[óo]n.*comisi[óo]n|comisi[óo]n de cultura y educaci[óo]n", re.I)
 COUNCIL = re.compile(r"sesi[óo]n|plenaria|concejo", re.I)
 COUNCIL_MUST = re.compile(r"concejo|sesi[óo]n (ordinaria|extraordinaria|plenaria|n[°º.]|del concejo)|plenaria", re.I)
@@ -68,24 +69,56 @@ def centroid(geom):
 
 
 _CACHE = {}
+DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil"}
+# Brazil: municipal chambers (câmara municipal) and their education committees, in Portuguese.
+RULES = {"BR": (re.compile(r"comiss[ãa]o (permanente )?de educa[çc][ãa]o|educa[çc][ãa]o.*comiss[ãa]o", re.I),
+                re.compile(r"sess[ãa]o|c[âa]mara", re.I),
+                re.compile(r"sess[ãa]o (ordin[áa]ria|extraordin[áa]ria|solene|especial|de |da |n[°º.]|\d)|\d+[ªa]? sess[ãa]o|sess[ãa]o plen", re.I),
+                re.compile(r"live session|entrevista|not[íi]cias|resumo|podcast|programa|campanha|candidat|anivers[áa]rio|festa|hino|desfile|"
+                           r"homenagem|solene|culto|missa|show|jogo|futebol|sess[ãa]o de fotos|mirim|mirins|parlamento jovem|c[âa]mara jovem|estudantil", re.I))}
+
+# Mexico: the town council (cabildo, ayuntamiento) and its education committee (comisión edilicia de educación).
+# Some titles come back machine-translated into English. Other committees' sessions don't count as council
+# meetings, and municipal election councils (consejo municipal electoral) aren't the town council.
+RULES["MX"] = (re.compile(r"comisi[óo]n (edilicia )?(de |del )?[\"“]?((salud|cultura|deporte|ciencia)s? y )?educaci[óo]n|educaci[óo]n.*comisi[óo]n|"
+                          r"education(al)? (committee|commission)|(committee|commission) (on|of|for) education", re.I),
+               re.compile(r"sesi[óo]n|session", re.I),
+               re.compile(r"^(?!.*(comisi[óo]n|comit[ée]|consejo|committee|commission|board|electoral)).*(sesi[óo]n (ordinaria|extraordinaria|solemne|p[úu]blica|abierta|"
+                          r"de cabildo|del? (h\.? )?(cabildo|ayuntamiento|concejo)|n[°º.]|\d)|\d+\S* sesi[óo]n|"
+                          r"(ordinary|extraordinary|solemn|open|public) (town |city )?(council )?(session|meeting)|council (session|meeting)|cabildo abierto)", re.I),
+               re.compile(NOT_T.pattern + r"|consejo municipal electoral|consejo municipal \d|junta municipal \d|electoral", re.I))
+
+
+def session_key(cc, t):
+    """A key for an undated title. Brazilian chambers often post one clip per speaker ("Fulano - Pequeno Expediente da
+    85ª Sessão Ordinária"), so there the session's number and kind (and year, when given) identify the meeting."""
+    if cc == "BR":
+        m = re.search(r"(\d+)\s*[ªºa°o]?\.?\s*sess[ãa]o\s+(ordin|extra|solen|espec)", t, re.I)
+        if m:
+            y = re.search(r"\b(20\d\d)\b", t)
+            return f"{m.group(1)} {m.group(2).lower()} {y.group(1) if y else ''}"
+    return re.sub(r"\b(parte|part)\s*\d+\b|\(\d\)|\d/\d", "", t, flags=re.I).strip().lower()
 
 
 def meetings(cc, did):
-    d = os.path.join(IN, {"CL": "chile", "CO": "colombia"}[cc], "youtube")
-    p = os.path.join(d, f"{cc}_youtube.csv")
-    if not os.path.exists(p): return 0, "", [], ""
+    d = os.path.join(IN, DIRS[cc], "youtube")
+    files = sorted(f for f in os.listdir(d) if re.fullmatch(rf"{cc}(_\d+)?_youtube\.csv", f)) if os.path.isdir(d) else []   # one file, or one per shard
+    if not files: return 0, "", [], ""
     if cc not in _CACHE:
-        titles = json.load(open(os.path.join(d, "titles.json"), encoding="utf-8")) if os.path.exists(os.path.join(d, "titles.json")) else {}
+        titles = {}
+        for f in sorted(os.listdir(d)):
+            if re.fullmatch(r"titles(_\d+)?\.json", f): titles.update(json.load(open(os.path.join(d, f), encoding="utf-8")))
         titles.update(shared_titles())
-        _CACHE[cc] = ({r["District ID"]: r for r in csv.DictReader(open(p, encoding="utf-8"))}, titles)
+        _CACHE[cc] = ({r["District ID"]: r for f in files for r in csv.DictReader(open(os.path.join(d, f), encoding="utf-8"))}, titles)
     rows, titles = _CACHE[cc]
     r = rows.get(did) or {}
     url = r.get("Channel URL", "")
     if not url or url not in titles or url in NOT_CHANNELS.get(cc, set()): return 0, "", [], ""
-    vids = [t for t in titles[url] if not NOT_T.search(t)]
-    for keep, kind in (([t for t in vids if EDU.search(t)], "Education committee"),
-                       ([t for t in vids if COUNCIL.search(t) and COUNCIL_MUST.search(t) and not EDU.search(t)], "Council (stand-in)")):
-        keys = {parse_date(t) or re.sub(r"\b(parte|part)\s*\d+\b|\(\d\)|\d/\d", "", t, flags=re.I).strip().lower() for t in keep}
+    edu, council, must, not_t = RULES.get(cc, (EDU, COUNCIL, COUNCIL_MUST, NOT_T))
+    vids = [t for t in titles[url] if not not_t.search(t)]
+    for keep, kind in (([t for t in vids if edu.search(t)], "Education committee"),
+                       ([t for t in vids if council.search(t) and must.search(t) and not edu.search(t)], "Council (stand-in)")):
+        keys = {parse_date(t) or session_key(cc, t) for t in keep}
         if keys: return len(keys), url, keep, kind
     return 0, "", [], ""
 
@@ -93,6 +126,16 @@ def meetings(cc, did):
 # Channels checked by hand and found to be another place's (by channel URL). The search matched on the name, and
 # many of these names exist in other Spanish-speaking countries too, or in both Chile and Colombia.
 NOT_CHANNELS = {
+    "MX": {"https://www.youtube.com/channel/UCJ_QgHV7jNH5PWK-hD3ZigA",    # Santa Ana, Costa Rica ("Gobierno Local"), not Oaxaca's
+           "https://www.youtube.com/channel/UC_NzgVf7xT5SWA3dsBUOh6g",    # Coyotepec, Estado de México (2019-2021 term), not Puebla's
+           "https://www.youtube.com/channel/UC-RQwxdFz9c8an1SthCk27A",    # Tamazula de Gordiano, Jalisco, not Tamazula, Durango
+           "https://www.youtube.com/channel/UCfm4ANhQp5dTff6rmh7RJzQ",    # Santa Cruz de La Palma (Spain), not Santa Cruz, Sonora
+           "https://www.youtube.com/channel/UCKoEOfBTuO570QHJ_2NpdCw",    # Esperanza, Santa Fe (Argentina), not Puebla's
+           "https://www.youtube.com/channel/UCK-_PQD2Ey6dvQmphdsqlzg",    # Atizapán de Zaragoza's council, not Atizapán's
+           "https://www.youtube.com/channel/UC2DrRwc-AyOPhOUjizUFJMA",    # election boards, not town councils: Actopan (Veracruz),
+           "https://www.youtube.com/channel/UC9rp_w5KZKax5MOoDDxKDAw",    # Chiconcuac
+           "https://www.youtube.com/channel/UCn1zNwM4qlnZL01gFzbwgDw"},   # and Villa Victoria
+    "BR": {"https://www.youtube.com/channel/UCwL8TsjsmqixFQKK4fIdU1g"},   # Aveiro, Portugal (Assembleia Municipal), not Pará's
     "CL": {"https://www.youtube.com/channel/UC70nQc3caJyhIQQHlwBb_RA",    # La Molina, Lima (Peru), not Molina
            "https://www.youtube.com/channel/UCgvUIPWaySeDAGe-oUTSDUA",    # La Unión, Costa Rica ("Concejo de Distrito")
            "https://www.youtube.com/channel/UCQgCHXXxl4IyPg0GEULz2RA",    # San Carlos, Costa Rica
@@ -120,22 +163,31 @@ def owners(cc, rows):
     Villanuevas), so the search found the same channel for several. A channel counts for one district only:
     the one whose longer full name, or whose department, the channel name gives; if none does, for none.
     A channel naming a different department is dropped."""
+    if cc not in _CACHE: return {}
     yt = _CACHE[cc][0]
     words = lambda s: " " + re.sub(r"[^a-z]+", " ", unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()) + " "
     regions = {words(r["Region"]).strip() for r in rows if r.get("Region")}
+    names = {words(r["District"]).strip() for r in rows}
     by = {}
     for r in rows:
         y = yt.get(r["District ID"]) or {}
         if y.get("Channel URL"): by.setdefault(y["Channel URL"], []).append(r)
     own = {}
     for url, rs in by.items():
-        ch = words((yt.get(rs[0]["District ID"]) or {}).get("Channel", ""))
+        raw = (yt.get(rs[0]["District ID"]) or {}).get("Channel", "")
+        ch = words(raw)
         if FOREIGN.search(ch): continue
+        # Brazilian channel names often end with the state's abbreviation ("Rio Negro - PR", "Belém PB", "(SC)").
+        abbr = {a for a in re.findall(r"(?:[-/(–]\s*|\s)([A-Z]{2})\b\)?\s*$", raw.strip())} if cc == "BR" else set()
         def score(r):
             nm = words(r["District"]).strip()
             if " " + nm + " " not in ch: return -1
+            if any(len(o) > len(nm) and " " + nm + " " in " " + o + " " and " " + o + " " in ch for o in names): return -1   # "Alfredo Chaves", not Chaves
             other = any(" " + g + " " in ch for g in regions - {words(r["Region"]).strip()} if " " + g + " " not in " " + nm + " ")
             named = " " + words(r["Region"]).strip() + " " in ch or (cc == "CO" and words(r["Region"]).split()[0] in ch.split())
+            if abbr:
+                own_abbr = next((a for a, c in BR_ABBR.items() if BR_UF[c] == r["Region"]), "")
+                named, other = named or own_abbr in abbr, other or bool(abbr - {own_abbr})
             return -1 if other and not named else len(nm) + (100 if named else 0)
         sc = sorted(((score(r), r["District ID"]) for r in rs), reverse=True)
         if sc[0][0] < 0: continue
@@ -155,11 +207,14 @@ def write(cc, key, rows, feats):
     cols = ["District", "Region", "Locale", "Available Board Meetings", "Meetings type", "Meetings source", "Latest meeting", "Meetings by year",
             "Population", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
+    extra = [c for c in ("Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households") if any(r.get(c) not in (None, "") for r in rows)]
+    pov = "Poverty rate (all ages)"
+    cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
     rows.sort(key=lambda r: r["District"])
     with open(os.path.join(DOCS, f"{key}.csv"), "w", newline="", encoding="utf-8") as fo:
         w = csv.DictWriter(fo, fieldnames=cols, restval="", extrasaction="ignore"); w.writeheader(); w.writerows(rows)
     json.dump({"type": "FeatureCollection", "features": feats}, open(os.path.join(DOCS, "map", f"{key}.json"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
-    print(cc, len(rows), "rows; poverty", sum(1 for r in rows if r["Poverty rate (all ages)"]), "; enrollment", sum(1 for r in rows if r["Enrollment"]),
+    print(cc, len(rows), "rows; poverty", sum(1 for r in rows if r.get(pov)), "; enrollment", sum(1 for r in rows if r["Enrollment"]),
           "; meetings", sum(1 for r in rows if r["Available Board Meetings"]), "; no border", [r["District"] for r in rows if not r.get("_geo")][:10])
 
 
@@ -246,6 +301,133 @@ def colombia():
     write("CO", "colombia", rows, feats)
 
 
+def adm_match(cc, rows, adm2, adm1, state_of_adm1):
+    """Borders for rows ({"name", "state", "id"}): exact (state, name) first, then a prefix match within the
+    state, then a name unique in the country; a border is never used twice. Returns {id: feature}."""
+    full = lambda s: re.sub(r"\bDr\.\s*", "Doctor ", re.sub(r"\bGral\.\s*", "General ", str(s)))   # Nuevo León's abbreviations
+    keyed, dup = {}, []
+    for f in adm2:
+        c = centroid(f["geometry"])
+        st = next((state_of_adm1[id(a)] for a in adm1 if pip(c, a["geometry"])), None)
+        n = norm(full(f["properties"]["shapeName"])); n = ALIAS.get(cc, {}).get(n, n)
+        if (st, n) in keyed: dup.append((n, f))   # e.g. a border whose centre falls just over a state line
+        else: keyed[(st, n)] = f
+    key = lambda r: ALIAS.get(cc, {}).get(norm(full(r["name"])), norm(full(r["name"])))
+    bare = lambda k: re.sub(r"^(el|la|los|las|o|a|os|as)(?=[a-z]{4})", "", k)   # "El Carmen" / "Carmen"
+    out = {r["id"]: keyed.get((r["state"], key(r))) for r in rows}
+    used = {id(f) for f in out.values() if f}
+    for r in rows:
+        if out[r["id"]]: continue
+        n = key(r)
+        f = next((g for (d, k), g in keyed.items() if id(g) not in used and d == r["state"] and (k.startswith(n) or n.startswith(k)) and min(len(k), len(n)) >= 5), None)
+        f = f or next((g for (d, k), g in keyed.items() if id(g) not in used and d == r["state"] and (bare(k) == bare(n) or (len(n) >= 12 and n in k))), None)
+        if not f:
+            same = [g for (d, k), g in keyed.items() if k == n and id(g) not in used] + [g for k, g in dup if k == n and id(g) not in used]
+            f = same[0] if len(same) == 1 else None
+        if f: used.add(id(f)); out[r["id"]] = f
+    return out
+
+
+MX_ISO = {"AGU": "01", "BCN": "02", "BCS": "03", "CAM": "04", "COA": "05", "COL": "06", "CHP": "07", "CHH": "08", "CMX": "09", "DIF": "09", "DUR": "10",
+          "GUA": "11", "GRO": "12", "HID": "13", "JAL": "14", "MEX": "15", "MIC": "16", "MOR": "17", "NAY": "18", "NLE": "19", "OAX": "20", "PUE": "21",
+          "QUE": "22", "ROO": "23", "SLP": "24", "SIN": "25", "SON": "26", "TAB": "27", "TAM": "28", "TLA": "29", "VER": "30", "YUC": "31", "ZAC": "32"}
+MX_STATE = {"México": "Estado de México", "Coahuila de Zaragoza": "Coahuila", "Michoacán de Ocampo": "Michoacán", "Veracruz de Ignacio de la Llave": "Veracruz"}
+
+
+def mexico():
+    """2,469 municipalities. Schools are run by each state's education authority (the federal SEP pays for most
+    basic education), not by municipalities; town councils (cabildos) stand in for meetings."""
+    ws = openpyxl.load_workbook(os.path.join(IN, "mexico", "coneval_pobreza_municipal_2020.xlsx"), read_only=True)["Concentrado municipal"]
+    con = {str(r[3]): r for r in ws.iter_rows(values_only=True) if r and r[3] and re.fullmatch(r"\d{5}", str(r[3]))}
+    num = lambda v: int(v) if str(v).strip().isdigit() else None
+    it = {}
+    for r in csv.DictReader(open(os.path.join(IN, "mexico", "inegi_iter_2020_municipal.csv"), encoding="utf-8")):
+        it[r["ENTIDAD"] + r["MUN"]] = r
+    adm1 = json.load(open(os.path.join(IN, "mexico", "gb_MEX_ADM1.geojson"), encoding="utf-8"))["features"]
+    st = {id(f): MX_ISO.get(f["properties"]["shapeISO"].split("-")[-1]) for f in adm1}
+    adm2 = json.load(open(os.path.join(IN, "mexico", "gb_MEX_ADM2.geojson"), encoding="utf-8"))["features"]
+    geo = adm_match("MX", [{"name": r[4], "state": c[:2], "id": c} for c, r in con.items()], adm2, adm1, st)
+    rows, feats = [], []
+    for code, r in con.items():
+        i = it.get(code, {})
+        a, b, c6, d, e = (num(i.get(k)) for k in ("P_6A11", "P6A11_NOA", "P_12A14", "P12A14NOA", "P15A17A"))
+        enr = (a - b) + (c6 - d) + e if None not in (a, b, c6, d, e) else ""
+        kids = sum(x for x in (num(i.get("P_6A11")), num(i.get("P_12A14")), num(i.get("P_15A17"))) if x) or ""
+        pop = num(i.get("POBTOT")) or (int(r[7]) if r[7] else 0)
+        f = geo.get(code); area = area_km2(f["geometry"]) if f else 0
+        dens = pop / area if area and pop else 0
+        pct = lambda v: f"{float(v):.2f}%" if isinstance(v, (int, float)) else ""
+        did = f"MX-{code}"
+        rows.append({"District": str(r[4]), "Region": MX_STATE.get(str(r[2]), str(r[2])), "Population": pop,
+                     "Poverty rate (all ages)": pct(r[10]), "Extreme poverty (all ages)": pct(r[19]),
+                     "Poverty by year": "; ".join(f"{y}:{float(v):.1f}" for y, v in zip((2010, 2015, 2020), r[8:11]) if isinstance(v, (int, float))),
+                     "Poverty note": "Multidimensional poverty (income below the poverty line and at least one social deprivation), all ages, 2020 (CONEVAL); no child rate is published by municipality",
+                     "Enrollment": enr, "Enrollment year": "2020 (estimated: census count of children 6–17 attending school)" if enr != "" else "",
+                     "Children 6–17": kids, "School system": "State education authority",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
+        if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": str(r[4])}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    write("MX", "mexico", rows, feats)
+
+
+BR_UF = {"11": "Rondônia", "12": "Acre", "13": "Amazonas", "14": "Roraima", "15": "Pará", "16": "Amapá", "17": "Tocantins",
+         "21": "Maranhão", "22": "Piauí", "23": "Ceará", "24": "Rio Grande do Norte", "25": "Paraíba", "26": "Pernambuco",
+         "27": "Alagoas", "28": "Sergipe", "29": "Bahia", "31": "Minas Gerais", "32": "Espírito Santo", "33": "Rio de Janeiro",
+         "35": "São Paulo", "41": "Paraná", "42": "Santa Catarina", "43": "Rio Grande do Sul", "50": "Mato Grosso do Sul",
+         "51": "Mato Grosso", "52": "Goiás", "53": "Distrito Federal"}
+BR_ABBR = {"RO": "11", "AC": "12", "AM": "13", "RR": "14", "PA": "15", "AP": "16", "TO": "17", "MA": "21", "PI": "22", "CE": "23",
+           "RN": "24", "PB": "25", "PE": "26", "AL": "27", "SE": "28", "BA": "29", "MG": "31", "ES": "32", "RJ": "33", "SP": "35",
+           "PR": "41", "SC": "42", "RS": "43", "MS": "50", "MT": "51", "GO": "52", "DF": "53"}
+
+
+def brazil():
+    """5,570 municipalities. Municipalities run most early-years schools (the rede municipal, under a municipal
+    education secretariat and council); the municipal chamber (câmara municipal) stands in for meetings."""
+    import xlrd
+    d = os.path.join(IN, "brazil")
+    sh = xlrd.open_workbook(os.path.join(d, "ibge_estimativa_populacao_2025.xls")).sheet_by_name("Municípios")
+    pop = {}
+    for i in range(2, sh.nrows):
+        v = sh.row_values(i)
+        uf, mun = str(v[1]).replace(".0", "").strip(), str(v[2]).replace(".0", "").strip()
+        if uf.isdigit() and mun.isdigit():
+            n = v[4] if isinstance(v[4], float) else re.sub(r"\(.*?\)|\D", "", str(v[4]).split("(")[0])
+            pop[f"{int(uf):02d}{int(mun):05d}"] = (str(v[3]).strip(), int(n) if n not in ("", None) else None)
+    siafi = {r[0].strip(): r[4].strip() for r in csv.reader(open(os.path.join(d, "tesouro_tabmun_siafi_ibge.csv"), encoding="latin-1"), delimiter=";") if len(r) > 4}
+    fam = {}
+    for r in csv.DictReader(open(os.path.join(d, "bolsa_familia_familias_202509.csv"), encoding="utf-8")):
+        c = siafi.get(r["siafi"].strip())
+        if c: fam[c] = fam.get(c, 0) + int(float(r["familias"]))
+    extra = {}   # census tables saved from SIDRA: {ibge7: {column: value}}
+    for f in sorted(os.listdir(d)):
+        if f.startswith("br_") and f.endswith(".csv"):
+            for r in csv.DictReader(open(os.path.join(d, f), encoding="utf-8")):
+                extra.setdefault(r["ibge7"], {}).update({k: v for k, v in r.items() if k != "ibge7"})
+    adm1 = json.load(open(os.path.join(d, "gb_BRA_ADM1.geojson"), encoding="utf-8"))["features"]
+    st = {id(f): BR_ABBR.get(f["properties"]["shapeISO"].split("-")[-1]) for f in adm1}
+    adm2 = json.load(open(os.path.join(d, "gb_BRA_ADM2.geojson"), encoding="utf-8"))["features"]
+    geo = adm_match("BR", [{"name": n, "state": c[:2], "id": c} for c, (n, _) in pop.items()], adm2, adm1, st)
+    rows, feats = [], []
+    for code, (name, people) in sorted(pop.items()):
+        x = extra.get(code, {}); hh = int(x["Households"]) if x.get("Households", "").isdigit() else None
+        n = lambda k: int(x[k]) if x.get(k, "").isdigit() else None
+        res, q, h, z = n("Residents"), n("Up to 1/4 minimum wage per person"), n("Over 1/4 to 1/2 minimum wage per person"), n("No income")
+        poor = f"{100 * (q + h + z) / res:.2f}%" if res and None not in (q, h, z) else ""
+        extreme = f"{100 * (q + z) / res:.2f}%" if res and None not in (q, z) else ""
+        f = geo.get(code); area = area_km2(f["geometry"]) if f else 0
+        dens = people / area if area and people else 0
+        did = f"BR-{code}"
+        rows.append({"District": name, "Region": BR_UF[code[:2]], "Population": people or "",
+                     "Poverty rate (all ages)": poor, "Extreme poverty (all ages)": extreme,
+                     "Poverty note": "Residents of households with income up to half the minimum wage per person (R$606 a month in 2022), all ages, 2022 census; extreme: up to a quarter; both include households with no income",
+                     "Bolsa Família families per 100 households": f"{100 * fam[code] / hh:.2f}" if hh and code in fam else "",
+                     "Bolsa Família families": fam.get(code, ""), "Households": hh or "",
+                     "Enrollment": x.get("Enrollment", ""), "Enrollment year": x.get("Enrollment year", ""),
+                     "Children 6–17": x.get("Children 6–17", ""), "School system": "Municipal and state school networks",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
+        if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    write("BR", "brazil", rows, feats)
+
+
 if __name__ == "__main__":
-    chile()
-    colombia()
+    which = sys.argv[1:] or ["chile", "colombia", "mexico", "brazil"]
+    for w in which: globals()[w]()

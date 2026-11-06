@@ -344,8 +344,8 @@
     if (name === "trends" && current) renderTrends();
   }
 
-  // "Trends" tab: meetings per year (from the dates in the recordings' titles, where the data has
-  // them) and average child poverty per year (where a country publishes several years).
+  // "Trends" tab: meetings per year (from the dates in the recordings' titles, or CivicSearch's monthly
+  // counts for US districts) and average child poverty per year (where a country publishes several years).
   const trendCharts = {};
   function yearMap(v) {
     const out = {};
@@ -356,6 +356,7 @@
     const rows = current.rows;
     const label = ((current.recordLabel || cfg.recordLabel || "districts")).toLowerCase();
     const meet = {}, withDates = rows.filter((r) => r["Meetings by year"]);
+    const isUS = (r) => (r.Country || current.name) === "United States";
     withDates.forEach((r) => Object.entries(yearMap(r["Meetings by year"])).forEach(([y, n]) => { meet[y] = (meet[y] || 0) + n; }));
     const pov = {}, povRows = rows.filter((r) => r["Poverty by year"]);
     povRows.forEach((r) => Object.entries(yearMap(r["Poverty by year"])).forEach(([y, v]) => { (pov[y] = pov[y] || []).push(v); }));
@@ -371,8 +372,11 @@
     const my = Object.keys(meet).sort();
     draw("trend-meetings", "bar", my, my.map((y) => meet[y]), "Meetings recorded");
     $("trend-meetings-note").textContent = my.length
-      ? `Dated meetings for ${withDates.length.toLocaleString()} ${label}, from the dates in their recordings' titles (undated recordings are left out, and the current year is partial).`
-      : "Meeting dates aren't available here: the US counts (CivicSearch) are totals without dates, and recordings without a date in their title can't be placed in a year.";
+      ? `Dated meetings for ${withDates.length.toLocaleString()} ${label}` + (withDates.some(isUS)
+          ? (withDates.every(isUS) ? ", from CivicSearch's monthly counts, which run from January 2025 to early 2026 (only 2025 is complete)."
+            : ". US districts' dates are CivicSearch's monthly counts, which run from January 2025 to early 2026; elsewhere they're the dates in recordings' titles (undated recordings are left out). The current year is partial.")
+          : ", from the dates in their recordings' titles (undated recordings are left out, and the current year is partial).")
+      : "Meeting dates aren't available here: recordings without a date in their title can't be placed in a year.";
     const py = Object.keys(pov).sort();
     draw("trend-poverty", "line", py, py.map((y) => +(pov[y].reduce((a, b) => a + b, 0) / pov[y].length).toFixed(2)), "Average poverty rate (%)");
     // In "All", each country's measure differs, so draw one line per country instead of one average.
@@ -423,7 +427,7 @@
   // use NCES locale types; Canadian boards an estimate from Statistics Canada population sizes.
   const US_LOCALES = ["Urban", "Suburban", "Town", "Mixed", "Rural"];   // "Mixed": the European estimates
   // Countries whose locales are density estimates, labelled "UK: Urban" and so on in "All".
-  const DENSITY_COUNTRIES = ["UK", "Ireland", "Norway", "Sweden", "Finland", "Denmark", "Netherlands", "Germany", "New Zealand", "Islands", "Iceland", "Switzerland", "Chile", "Colombia"];
+  const DENSITY_COUNTRIES = ["UK", "Ireland", "Norway", "Sweden", "Finland", "Denmark", "Netherlands", "Germany", "New Zealand", "Islands", "Iceland", "Switzerland", "Chile", "Colombia", "Mexico", "Brazil"];
   const DENSITY_RE = new RegExp(`^(${DENSITY_COUNTRIES.join("|")}): `);
   const CA_LOCALES = ["Large urban", "Medium urban", "Small urban", "Rural", "Province-wide"];
   // Shared groups for the US and Canada together: the closest match between NCES types and
@@ -472,7 +476,7 @@
     $("locale-note").textContent = ((current.localeNote || (current.parent && current.parent.localeNote)) ? (current.localeNote || current.parent.localeNote) : ca ? "Boards are grouped by an estimated locale (see below)." : current.combined
       ? "US districts are grouped by NCES locale (2023); Canadian boards by an estimated locale (see below)."
       : "Districts are grouped by NCES locale (2023): Urban (a city), Suburban, Town or Rural.") +
-      (left ? ` ${left.toLocaleString()} ${label} without a locale are left out of this tab.` : "");
+      (left === 1 ? ` 1 ${label.replace(/ies$/, "y").replace(/(?<!s)s$/, "")} without a locale is left out of this tab.` : left ? ` ${left.toLocaleString()} ${label} without a locale are left out of this tab.` : "");
     $("locale-def").textContent = (current.localeDef || (current.parent && current.parent.localeDef)) ? (current.localeDef || current.parent.localeDef)
       : ca || current.combined
       ? "Canada's locales are estimates, after Statistics Canada's population centre sizes: each census subdivision (municipality) with 100,000+ people is large urban; one with at least 150 people per km² (the OECD's rural cutoff) is medium urban (30,000–99,999 people) or small urban (1,000–29,999); the rest are rural. A board takes the locale where most of its children live; boards serving a whole province or territory are “Province-wide”. They aren't the same as the US NCES locales." + (current.combined ? " UK, Irish, other European, New Zealand and island locales are estimates from population density (urban 2,000+ people per km², suburban 500–2,000, mixed 100–500, rural under 100)." : "")

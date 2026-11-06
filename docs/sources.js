@@ -152,15 +152,16 @@ window.SOURCES = [
   },
   {
     only: "Germany",
-    group: "Germany: districts, child poverty and population",
+    group: "Germany: districts, child poverty, population and pupils",
     items: [
       { title: "Child poverty: Bertelsmann Stiftung, Wegweiser Kommune, indicator “Kinderarmut” (children under 15 receiving SGB II basic income support), 2023, CC0 licence", url: "https://www.wegweiser-kommune.de/daten/kinderarmut" },
       { title: "Children under 15: Eurostat demo_r_pjanaggr3 (population on 1 January by broad age group, NUTS 3)", url: "https://ec.europa.eu/eurostat/databrowser/view/demo_r_pjanaggr3/default/table" },
       { title: "Density: Eurostat demo_r_d3dens (population density, NUTS 3)", url: "https://ec.europa.eu/eurostat/databrowser/view/demo_r_d3dens/default/table" },
+      { title: "Enrollment: Statistische Ämter des Bundes und der Länder, Regionaldatenbank Deutschland, table 21111-01-03-4 (pupils at general schools by school type and district, start of the 2024/25 school year), Datenlizenz Deutschland – Namensnennung 2.0", url: "https://www.regionalstatistik.de/genesis/online?operation=table&code=21111-01-03-4" },
       { title: "Meetings: each district's or city's own YouTube channel (in the “Meetings source” column), found with data-prep/nordic_youtube.py and filtered in data-prep/build_germany.py", url: "https://www.youtube.com/" },
       { title: "Borders: Eurostat GISCO NUTS 2021, level 3, 1:10 million", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics" }
     ],
-    note: "Wegweiser Kommune's districts were matched to the NUTS borders by name (data-prep/inputs/germany/de_ww_search.json); six that the search missed were matched by hand. Built by data-prep/build_germany.py."
+    note: "Wegweiser Kommune's districts were matched to the NUTS borders by name (data-prep/inputs/germany/de_ww_search.json); six that the search missed were matched by hand. The Regionaldatenbank's districts (German district codes) were matched to the NUTS districts by name within each state, keeping each city apart from the surrounding district of the same name; Eisenach, merged into the Wartburgkreis in 2021, is counted there. Built by data-prep/build_germany.py."
   },
   {
     only: "New Zealand",
@@ -221,10 +222,37 @@ window.SOURCES = [
     note: "Built by data-prep/build_latam.py. Municipalities are matched to borders by name within their department (found from where each border lies). Barranquilla, Colosó, Providencia and Puerto Santander have no border in the file."
   },
   {
+    only: "Brazil",
+    group: "Brazil: municipalities, poverty and enrollment",
+    items: [
+      { title: "Poverty: IBGE, Censo Demográfico 2022, table 10296 (residents by household income per person, in minimum wages), via SIDRA", url: "https://sidra.ibge.gov.br/tabela/10296" },
+      { title: "Bolsa Família families by municipality, September 2025: Portal da Transparência (Novo Bolsa Família, pagamentos)", url: "https://portaldatransparencia.gov.br/download-de-dados/novo-bolsa-familia/202509" },
+      { title: "Municipal codes (SIAFI to IBGE): Tesouro Nacional, Tabela de Municípios", url: "https://www.tesourotransparente.gov.br/ckan/dataset/lista-de-municipios-do-siafi" },
+      { title: "Population: IBGE, Estimativas da População 2025", url: "https://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2025/estimativa_dou_2025.xls" },
+      { title: "Households: IBGE, Censo Demográfico 2022, table 4712, via SIDRA", url: "https://sidra.ibge.gov.br/tabela/4712" },
+      { title: "Enrollment (estimated) and children 6–17: IBGE, Censo Demográfico 2022, tables 10058 (people 6–17 attending school) and 9514 (population by age), via SIDRA", url: "https://sidra.ibge.gov.br/tabela/10058" },
+      { title: "Borders: geoBoundaries (gbOpen) Brazil ADM1 and ADM2, simplified", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings (stand-in): each chamber's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/build_latam.py. Municipalities are matched to borders by name within their state."
+  },
+  {
+    only: "Mexico",
+    group: "Mexico: municipalities, poverty and enrollment",
+    items: [
+      { title: "Poverty by municipality: CONEVAL, Medición de la pobreza municipal 2010–2020 (concentrado de indicadores)", url: "https://www.coneval.org.mx/Medicion/Paginas/Pobreza-municipio-2010-2020.aspx" },
+      { title: "Enrollment (estimated), children 6–17 and population: INEGI, Censo de Población y Vivienda 2020, Principales resultados por localidad (ITER), municipal totals", url: "https://www.inegi.org.mx/programas/ccpv/2020/#datos_abiertos" },
+      { title: "Borders: geoBoundaries (gbOpen) Mexico ADM1 and ADM2 (2012 municipalities), simplified", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings (stand-in): each municipality's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/build_latam.py. Municipalities are matched to borders by name within their state; 12 created after 2012 have no border in the file."
+  },
+  {
     only: "Iceland",
     group: "Iceland: municipalities, children and council meetings",
     items: [
       { title: "Children 6–15 and population: Statistics Iceland MAN02005 (population by sex, age and municipality, 1 January 2026)", url: "https://px.hagstofa.is/pxis/pxweb/is/Ibuar/Ibuar__mannfjoldi__2_byggdir__sveitarfelog/MAN02005.px" },
+      { title: "Enrollment: Statistics Iceland SKO02102 (compulsory school pupils by school, autumn 2025), added up by the municipality each school is in", url: "https://px.hagstofa.is/pxis/pxweb/is/Samfelag/Samfelag__skolamal__2_grunnskolastig__0_gsNemendur/SKO02102.px" },
       { title: "Child low income (national): Eurostat ilc_li02, children under 18 below 60% of the median income, 2020", url: "https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table" },
       { title: "Checked but not used: Statistics Iceland LIF01140, child low income by residence (its “total” row is higher than both the capital area and the rest of the country)", url: "https://px.hagstofa.is/pxis/pxweb/is/Samfelag/Samfelag__lifskjor__3_fjarhagsstada__1_einstaklingar/LIF01140.px" },
       { title: "Borders: Eurostat GISCO LAU 2023 (names taken from Statistics Iceland's municipality codes, since eight LAU names are wrong)", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
@@ -241,6 +269,9 @@ window.SOURCES = [
       { title: "Unemployment: CSO Census 2022, SAP2022T8T1LEA22, population aged 15 and over by principal economic status (local electoral areas, added up by council area)", url: "https://data.gov.ie/dataset/sap2022t8t1lea22-population-aged-15-years-and-over-by-principal-economic-status-and-sex" },
       { title: "Children 5–17 and council borders: CSO Census 2022 Census Hub, Table 1.1 by local authority", url: "https://services-eu1.arcgis.com/BuS9rtTsYEV5C0xh/arcgis/rest/services/CensusHub2022_T1_1_LA/FeatureServer" },
       { title: "Meetings: the ETBs' YouTube channels (no board meetings posted)", url: "https://www.youtube.com/" },
+      { title: "Other meetings: board minutes on the ETBs' websites (Dublin and Dún Laoghaire, Kerry, Limerick and Clare, Waterford and Wexford, Kilkenny and Carlow), listed November 2026", url: "https://www.ddletb.ie/minutes/" },
+      { title: "Enrollment: Department of Education, Data on Individual Schools, primary and special schools 2024/25 (census date 30 September 2024)", url: "https://www.gov.ie/en/department-of-education/collections/primary-schools-enrolment-figures/" },
+      { title: "Enrollment: Department of Education, Data on Individual Schools, post-primary schools 2024/25", url: "https://www.gov.ie/en/department-of-education/collections/post-primary-schools-enrolment-figures/" },
       { title: "ETB sector overview (Education and Training Boards Ireland)", url: "https://www.etbi.ie/" }
     ],
     note: "Locales are estimates: population (children 5–17 divided by 0.178, their share of Ireland's population in Census 2022) over each ETB's land area; urban 2,000+ people per km², suburban 500–2,000, mixed 100–500, rural under 100. The Department of Education's school list couldn't be downloaded (gov.ie refused automated access), so there's no enrollment by ETB. Each board gets its region's overall poverty rate, so boards in the same region share a figure. The unemployment rate counts people who say their main status is unemployed or looking for a first job."
@@ -256,7 +287,8 @@ window.SOURCES = [
       { title: "Wales pupils: Schools' census results, January 2025, Table 5", url: "https://www.gov.wales/schools-census-results-january-2025" },
       { title: "Northern Ireland pupils: Annual enrolments at schools and in funded pre-school education, 2025/26 (primary 164,713, post-primary 156,766, special 7,729)", url: "https://datavis.nisra.gov.uk/DEstatistics/annual-enrolments-schools-and-funded-pre-school-education-northern-ireland-202526.html" },
       { title: "Borders: ONS Counties and Unitary Authorities (December 2024) Boundaries UK BUC", url: "https://geoportal.statistics.gov.uk/" },
-      { title: "Meetings: each council's own YouTube channel (listed in the “Meetings source” column); videos whose titles name an education, schools, children's or young people's committee, panel or forum", url: "https://www.youtube.com/" }
+      { title: "Meetings: each council's own YouTube channel (listed in the “Meetings source” column); videos whose titles name an education, schools, children's or young people's committee, panel or forum", url: "https://www.youtube.com/" },
+      { title: "Other meetings: each council's ModernGov committee system (public web service: GetCommittees, GetMeetings), education and children's committees, 2010 to November 2026 (the site is in the “Other meetings source” column)", url: "https://www.moderngov.co.uk/" }
     ],
     note: "Locales are estimates: population (children under 16 divided by 0.185, their share of the UK population) over each council's land area from the ONS borders; urban 2,000+ people per km², suburban 500–2,000, mixed 100–500, rural under 100. England's pupil counts come from the register of schools (each school's latest census figure), so they can differ a little from the published census totals. Northern Ireland's Education Authority covers all 11 of its council areas. Channels the search wrongly matched (for example Bradford on Avon Town Council for Bradford) were checked by hand and left out (data-prep/inputs/uk/uk_channels.csv)."
   },

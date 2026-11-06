@@ -106,6 +106,41 @@ def main():
         r["Available Board Meetings"] = n
         r["Meetings source"] = url if n else ""
         r["Latest meeting"], r["Meetings by year"] = date_summary(kept) if n else ("", "")
+    # Other meetings: the council's education and children's committee meetings listed in its ModernGov committee
+    # system (public web service GetCommittees / GetMeetings), 2010 to the collection date. These are listed meetings,
+    # not recordings, so they go in their own column. Committees that aren't councillors' meetings about children's
+    # services and schools (schools forums, SACREs, appeals, admissions, partnerships, single-member decision days) are
+    # left out, and so are two councils matched to another body's site (Hull to Kingston upon Thames's, the City of
+    # London to the Greater London Authority's).
+    mg_path = os.path.join(IN, "uk_moderngov_committees.json")
+    mg = json.load(open(mg_path, encoding="utf-8")) if os.path.exists(mg_path) else {}
+    import datetime
+    YES = re.compile(r"children|education|schools?\b|young people|learning|families", re.I)
+    KIND = re.compile(r"committee|scrutiny|panel|board|cabinet|sub-?group|executive|commission|^education$", re.I)
+    NO = re.compile(r"forum|sacre|religious|appeal|admission|placement|partnership|trust|working group|training|joint consultative|advisory|"
+                    r"corporate parent|in care council|adoption|fostering|building schools|employment|skills board|safeguarding (children )?(partnership|board)|"
+                    r"health and wellbeing|music|governor|transport|cabinet member|portfolio|decision day|executive member|lead member|deputy mayor|"
+                    r"licensing|planning|standards|pension|youth offending|staff|employ|appointment|personnel|joint negotiating|disabilit", re.I)
+    WRONG_SITE = {"UK-E06000010", "UK-E09000001"}
+    collected = datetime.date(2026, 11, 6)
+    for r in out:
+        v = mg.get(r["District ID"]) or {}
+        if not v.get("host") or r["District ID"] in WRONG_SITE: continue
+        dates = set()
+        for c in v["committees"]:
+            if not (YES.search(c["title"]) and KIND.search(c["title"])) or NO.search(c["title"]): continue
+            for m in c.get("meetings") or []:
+                try:
+                    dd, mm, yy = map(int, m.split()[0].split("/")); x = datetime.date(yy, mm, dd)
+                except ValueError:
+                    continue
+                if x <= collected: dates.add(x)
+        if dates:
+            r["Other Board Meetings"] = len(dates)
+            r["Other meetings source"] = f"education and children's committee meetings listed on the council's committee site ({v['host']}), 2010 to November 2026"
+            if not r.get("Latest meeting"):
+                r["Latest meeting"] = max(dates).isoformat()
+                r["Meetings by year"] = "; ".join(f"{y}:{n}" for y, n in sorted(__import__("collections").Counter(x.year for x in dates).items()))
     out.sort(key=lambda r: (r["Nation"], r["District"]))
     # Estimated locale from population density: people = children / 0.185 (their share of the
     # population), over land area. Urban 2,000+ per km², suburban 500-2,000, mixed 100-500, rural under 100.
@@ -120,7 +155,7 @@ def main():
     path = OUT_CSV if "OUT_CSV" in globals() else os.path.join(HERE, "..", "docs", "data", "ireland.csv")
     data = out
     with open(path, "w", newline="", encoding="utf-8") as fo:
-        w = csv.DictWriter(fo, fieldnames=list(data[0]), restval=""); w.writeheader(); w.writerows(data)
+        w = csv.DictWriter(fo, fieldnames=list(dict.fromkeys(k for r in data for k in r)), restval=""); w.writeheader(); w.writerows(data)
     def rnd(c):
         return [rnd(x) for x in c] if isinstance(c[0], list) else [round(c[0], 4), round(c[1], 4)]
     for f in feats:

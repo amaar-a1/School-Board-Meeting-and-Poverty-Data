@@ -94,6 +94,38 @@ def meeting_cols(k, is_city, name):
     return {"Available Board Meetings": n, "Meetings type": kind, "Meetings source": url, "Latest meeting": latest, "Meetings by year": years}
 
 
+AGS_LAND = {"01": "DEF", "02": "DE6", "03": "DE9", "04": "DE5", "05": "DEA", "06": "DE7", "07": "DEB", "08": "DE1", "09": "DE2", "10": "DEC",
+            "11": "DE3", "12": "DE4", "13": "DE8", "14": "DED", "15": "DEE", "16": "DEG"}
+
+
+def pupils(features):
+    """Pupils at general schools (allgemeinbildende Schulen, all school types) by district at the start of the 2024/25
+    school year: Regionaldatenbank Deutschland table 21111-01-03-4, downloaded as CSV. Its districts carry German
+    district codes (AGS), matched to the NUTS 2021 districts by name within each state, keeping cities and the
+    surrounding district of the same name apart. Berlin and Hamburg are their own states."""
+    import unicodedata
+    path = os.path.join(IN, "de_regionalstatistik_21111-01-03-4_pupils_2024.csv")
+    if not os.path.exists(path): return {}
+    def key(s):
+        city = bool(re.search(r"kreisfreie stadt", s, re.I))
+        s = unicodedata.normalize("NFKD", re.sub(r"\(.*?\)", "", s)).encode("ascii", "ignore").decode().lower()
+        s = re.sub(r"\b(kreisfreie stadt|landkreis|kreis|hansestadt|stadt|universitatsstadt|wissenschaftsstadt|landeshauptstadt|freie und|"
+                   r"klingenstadt|documenta-stadt|statutarstadt|grosse kreisstadt|regionalverband|stadteregion|region|eifelkreis|saalekreis)\b", "", s)
+        return re.sub(r"[^a-z]", "", s) + ("|city" if city else "")
+    nuts = {}
+    for f in features:
+        p = f["properties"]; nuts.setdefault((p["NUTS_ID"][:3], key(p["NAME_LATN"])), []).append(p["NUTS_ID"])
+    out = {}
+    for r in csv.reader(open(path, encoding="latin-1"), delimiter=";"):
+        if len(r) < 6 or r[3] != "Insgesamt" or not r[5].isdigit(): continue
+        if r[1] in ("11", "02"): out[{"11": "DE300", "02": "DE600"}[r[1]]] = int(r[5]); continue
+        if len(r[1]) != 5: continue
+        hit = [x for x in nuts.get((AGS_LAND[r[1][:2]], key(r[2])), []) if x not in out]
+        if len(hit) == 1: out[hit[0]] = int(r[5])
+        else: print("pupils: no district for", r[1], r[2].strip())
+    return out
+
+
 def main():
     search = json.load(open(os.path.join(IN, "de_ww_search.json"), encoding="utf-8"))
     urls = json.load(open(os.path.join(IN, "de_ww_urls.json")))
@@ -114,6 +146,7 @@ def main():
     dens = eurostat("es_de_dens.json")
     geo = json.load(open(os.path.join(IN, "nuts3_2021_de.geojson"), encoding="utf-8"))
     rows, feats = [], []
+    enr = pupils(geo["features"])
     for f in geo["features"]:
         p = f["properties"]; k = p["NUTS_ID"]
         name = re.sub(r",\s*Kreisfreie Stadt$", " (city)", p["NAME_LATN"]).replace(", Landkreis", " (district)")
@@ -125,6 +158,7 @@ def main():
                      "Children in Low Income": round(c * r / 100) if c and r is not None else "",
                      "Percentage of Children in Low Income": f"{r:.2f}%" if r is not None else "",
                      "Poverty by year": "; ".join(f"{y}:{v}" for y, v in sorted(hist.get(k, {}).items())),
+                     "Enrollment": enr.get(k, ""), "Enrollment year": "2024/25" if k in enr else "",
                      "People per km² (estimated)": round(d) if d else "",
                      "Map note": "Merged into the Wartburgkreis in July 2021; shown with the Wartburgkreis figure" if k == "DEG0N" else "",
                      "District ID": f"DE-{k}"})
@@ -136,6 +170,7 @@ def main():
     json.dump({"type": "FeatureCollection", "features": feats}, open(os.path.join(DOCS, "map", "germany.json"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
     print(len(rows), "districts; child poverty for", sum(1 for r in rows if r["Percentage of Children in Low Income"]), "; children for", sum(1 for r in rows if r["Children"]))
     print("missing:", [r["District"] for r in rows if not r["Percentage of Children in Low Income"]])
+    print("pupils for", sum(1 for r in rows if r["Enrollment"]), "districts;", sum(r["Enrollment"] or 0 for r in rows), "in all; none for", [r["District"] for r in rows if not r["Enrollment"]])
 
 
 if __name__ == "__main__":

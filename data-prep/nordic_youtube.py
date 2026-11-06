@@ -4,7 +4,7 @@ For each municipality in docs/data/{country}.csv: search YouTube once for its co
 channel whose name has the municipality's name and a word like "kommune" or "gemeente", list its
 videos and count titles naming a meeting (committee, council) about schools, education or children
 in that country's language. Also records every meeting video found, for the notes.
-Usage: python3 nordic_youtube.py OUTDIR [CC ...]   (writes OUTDIR/{cc}_youtube.csv, one thread per country)
+Usage: python3 nordic_youtube.py OUTDIR [CC | CC:k/n ...]   (writes OUTDIR/{cc}_youtube.csv, one thread per country or shard)
 """
 import csv, json, os, re, subprocess, sys, threading, time, unicodedata
 
@@ -33,11 +33,17 @@ C = {
                edu=r"educaci[óo]n|escuela|liceo|daem|slep", meet=r"sesi[óo]n|concejo|comisi[óo]n"),
     "CO": dict(file="colombia", q="concejo de {} sesión", chan=r"concejo|alcald|municipio|gobernaci",
                edu=r"educaci[óo]n|escuela|colegio", meet=r"sesi[óo]n|plenaria|concejo|comisi[óo]n"),
+    # Mexico: town councils (cabildo / ayuntamiento); Brazil: municipal chambers (câmara municipal) and their
+    # education committees. Both name the state in the query, since many town names repeat across states.
+    "MX": dict(file="mexico", q="sesión de cabildo {} {region}", chan=r"ayuntamiento|municipio|municipal|gobierno|cabildo|h\.? ?ayto|alcald|presidencia",
+               edu=r"educaci[óo]n|escuela", meet=r"sesi[óo]n|cabildo|comisi[óo]n"),
+    "BR": dict(file="brazil", q="sessão câmara municipal {} {region}", chan=r"c[âa]mara|legislativo|vereador|cm[a-z]{1,3}\b",
+               edu=r"educa[çc][ãa]o|escola|ensino", meet=r"sess[ãa]o|reuni[ãa]o|audi[êe]ncia|comiss[ãa]o"),
     "NL": dict(file="netherlands", q="gemeente {} raadsvergadering", chan=r"gemeente|gemeenteraad|raad|griffie",
                edu=r"onderwijs|jeugd|school|kind",
                meet=r"commissie|raad|vergadering|beeldvorm|oordeelvorm"),
 }
-GENERIC = set("kommune kommun kunta kaupunki stad gemeente municipality the og och ja en de het city district stadt kreis landkreis del la el los las".split())
+GENERIC = set("kommune kommun kunta kaupunki stad gemeente municipality the og och ja en de het city district stadt kreis landkreis del la el los las do da dos das e".split())
 ANY_MEET = {cc: re.compile(c["meet"], re.I) for cc, c in C.items()}
 
 
@@ -86,21 +92,28 @@ def is_channel_for(cc, name, channel):
     return False
 
 
-def run(cc, outdir):
+def run(cc, outdir, shard=None):
+    """shard "k/n" keeps every n-th row starting at k (written to {cc}_{k}_youtube.csv), to split a big country over runs."""
     c = C[cc]
     rows = list(csv.DictReader(open(f"{os.environ.get('NORDIC_DATA', 'docs/data')}/{c['file']}.csv", encoding="utf-8")))
+    tag = cc
+    if shard:
+        k, n = map(int, shard.split("/")); rows = rows[k::n]; tag = f"{cc}_{k}"
     edu, meet = re.compile(c["edu"], re.I), ANY_MEET[cc]
     seen = {}
-    with open(f"{outdir}/{cc}_youtube.csv", "w", newline="", encoding="utf-8") as f:
+    with open(f"{outdir}/{tag}_youtube.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["District ID", "District", "Channel", "Channel URL", "Meetings", "All meeting videos", "Example titles", "Error"])
+        deadline = float(os.environ.get("NORDIC_DEADLINE", "0"))   # epoch seconds: stop in time to save titles.json
         for r in rows:
+            if deadline and time.time() > deadline:
+                print(cc, tag, "deadline reached; stopping.", flush=True); return
             name = r["District"]
             out = [r["District ID"], name, "", "", "", "", "", ""]
             try:
                 chans = {}
                 for q in [c["q"]] + [x for x in os.environ.get(f"EXTRA_Q_{cc}", "").split("|") if x]:
-                    for e in ytdlp(f"ytsearch15:{q.format(' '.join(names(name)))}").get("entries") or []:
+                    for e in ytdlp(f"ytsearch15:{q.format(' '.join(names(name)), region=r.get('Region', '')).strip()}").get("entries") or []:
                         if e.get("channel_url") and e.get("channel"):
                             chans[e["channel_url"]] = e["channel"]
                 exact = lambda ch: any(all(w in words(ch) for w in words(n)) for n in names(name))
@@ -135,6 +148,7 @@ TITLES = {}   # channel URL -> every video title, for a strict recount (written 
 
 if __name__ == "__main__":
     outdir = sys.argv[1]; os.makedirs(outdir, exist_ok=True)
-    ts = [threading.Thread(target=run, args=(cc, outdir)) for cc in (sys.argv[2:] or list(C))]
+    # countries as CC, or CC:k/n for one shard of a country
+    ts = [threading.Thread(target=run, args=(a.split(":")[0], outdir, a.split(":")[1] if ":" in a else None)) for a in (sys.argv[2:] or list(C))]
     [t.start() for t in ts]; [t.join() for t in ts]
     json.dump(TITLES, open(os.path.join(outdir, "titles.json"), "w", encoding="utf-8"), ensure_ascii=False)

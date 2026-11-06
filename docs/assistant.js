@@ -14,9 +14,9 @@
   };
   // The Nordic countries and the Netherlands share one layout (r._eu is the country's name).
   const EU_POV = "Percentage of Children in Low Income";
-  const EU_RE = /\b(norw\w*|swed\w*|finn?\w*|denmark|danish|netherlands|dutch|holland|german\w*|iceland\w*|swiss|switzerland|chile\w*|colombia\w*|new zealand|islands?|island countries|microstates?|luxembourg|liechtenstein|monaco|andorra|san marino)\b/i;
+  const EU_RE = /\b(norw\w*|swed\w*|finn?\w*|denmark|danish|netherlands|dutch|holland|german\w*|iceland\w*|swiss|switzerland|chile\w*|colombia\w*|mexic\w*|brazil\w*|brasil\w*|new zealand|islands?|island countries|microstates?|luxembourg|liechtenstein|monaco|andorra|san marino)\b/i;
   const EU_OF = (q) => { const m = (q.match(EU_RE) || [])[1]; if (!m) return null; const w = m.toLowerCase();
-    return w.startsWith("norw") ? "Norway" : w.startsWith("swed") ? "Sweden" : w.startsWith("fin") ? "Finland" : /^(denmark|danish)$/.test(w) ? "Denmark" : w.startsWith("german") ? "Germany" : w.startsWith("iceland") ? "Iceland" : /^(swiss|switzerland)$/.test(w) ? "Switzerland" : w.startsWith("chile") ? "Chile" : w.startsWith("colombia") ? "Colombia" : w === "new zealand" ? "New Zealand" : /^(island|micro|luxem|liech|monaco|andorra|san marino)/.test(w) ? "Islands and microstates" : "Netherlands"; };
+    return w.startsWith("norw") ? "Norway" : w.startsWith("swed") ? "Sweden" : w.startsWith("fin") ? "Finland" : /^(denmark|danish)$/.test(w) ? "Denmark" : w.startsWith("german") ? "Germany" : w.startsWith("iceland") ? "Iceland" : /^(swiss|switzerland)$/.test(w) ? "Switzerland" : w.startsWith("chile") ? "Chile" : w.startsWith("colombia") ? "Colombia" : w.startsWith("mexic") ? "Mexico" : /^bra[sz]il/.test(w) ? "Brazil" : w === "new zealand" ? "New Zealand" : /^(island|micro|luxem|liech|monaco|andorra|san marino)/.test(w) ? "Islands and microstates" : "Netherlands"; };
   const val = (r, m) => num(r[r._eu ? (m.col === POV ? r._pov : m.col === "Children Ages 5-17" ? r._kids : m.col) : r._ca && m.caCol ? m.caCol : r._uk && m.ukCol ? m.ukCol : r._ie && m.col === POV ? "Poverty rate (region, all ages)" : r._fr && m.col === POV ? "Unemployment rate (stand-in for poverty)" : m.col]);
   const UK_POV = "Percentage of Children Under 16 in Low Income";
   const povOf = (r) => num(r[r._eu ? r._pov : r._ca ? CA_POV : r._uk ? UK_POV : r._ie ? "Poverty rate (region, all ages)" : r._fr ? "Unemployment rate (stand-in for poverty)" : POV]);
@@ -69,7 +69,8 @@
     const found = [];
     let rest = q.toLowerCase();
     Object.entries(states).sort((a, b) => b[1].length - a[1].length).forEach(([abbr, name]) => {
-      const re = new RegExp(`\\b${name.toLowerCase()}\\b`);
+      // Whole words, accents included ("Michoacán"); not when it ends a longer place name ("Ecatepec de Morelos").
+      const re = new RegExp(`(?<![\\p{L}])(?<!\\b(?:de|del|do|da|dos|das) )${name.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?![\\p{L}])`, "u");
       if (re.test(rest)) { found.push(abbr); rest = rest.replace(re, " "); }
     });
     (q.match(/\b[A-Z]{2}\b/g) || []).forEach((code) => { if (states[code] && !found.includes(code)) found.push(code); });
@@ -145,7 +146,8 @@
         `<li>Poverty rate (all ages, its region): ${esc(r["Poverty rate (region, all ages)"] || "–")}</li>` +
         `<li>Unemployment (Census 2022): ${esc(r["Unemployment rate (Census 2022)"] || "–")}</li>` +
         `<li>Children 5–17: ${num(r["Children Ages 5-17"]).toLocaleString()}</li>` +
-        `<li>Board meetings found: ${num(r[MEET]) || 0}</li>` + (r.Locale ? `<li>Locale (estimated): ${esc(r.Locale)}</li>` : "") + `</ul>` +
+        `<li>Board meetings found: ${num(r[MEET]) || 0}</li>` +
+        (num(r["Other Board Meetings"]) > 0 ? `<li>Board meetings with minutes on the ETB's website: ${num(r["Other Board Meetings"]).toLocaleString()}${r["Latest meeting"] ? ` (latest ${esc(r["Latest meeting"])})` : ""}</li>` : "") + (r.Locale ? `<li>Locale (estimated): ${esc(r.Locale)}</li>` : "") + `</ul>` +
         `<p class="ask-note">${esc(r["Poverty note"] || "")}.</p></div>`;
     }
     if (r._eu) {
@@ -156,12 +158,13 @@
         `<li>Meetings found: ${isNaN(m) ? 0 : m.toLocaleString()}</li>` +
         `<li>Pupils: ${isNaN(e) ? "not reported" : `${e.toLocaleString()}${r["Enrollment year"] ? ` (${esc(r["Enrollment year"])})` : ""}`}</li>` +
         (r.Locale ? `<li>Locale (estimated): ${esc(r.Locale)}</li>` : "") + `</ul>` +
-        `<p class="ask-note">${isl ? "One education ministry or department runs its schools. This figure isn't comparable with other places' rates." : r._eu === "New Zealand" ? "A Stats NZ child poverty area (each school has its own board)." : r._eu === "Germany" ? "A district (Kreis or kreisfreie Stadt), which runs local schools' buildings and staff other than teachers." : r._eu === "Chile" ? `A comuna; its public schools are run by ${esc(r["School system"] || "the municipality or a SLEP")}.` : r._eu === "Colombia" ? `A municipality; its schools are run by ${esc(r["School system"] || "a certified territorial entity")}.` : `A municipality, which runs local schools. ${esc(r._eu)}'s child low-income measure isn't the same as the US or other countries' rates.`}</p></div>`;
+        `<p class="ask-note">${isl ? "One education ministry or department runs its schools. This figure isn't comparable with other places' rates." : r._eu === "New Zealand" ? "A Stats NZ child poverty area (each school has its own board)." : r._eu === "Germany" ? "A district (Kreis or kreisfreie Stadt), which runs local schools' buildings and staff other than teachers." : r._eu === "Chile" ? `A comuna; its public schools are run by ${esc(r["School system"] || "the municipality or a SLEP")}.` : r._eu === "Colombia" ? `A municipality; its schools are run by ${esc(r["School system"] || "a certified territorial entity")}.` : r._eu === "Mexico" ? "A municipality; its public schools are run by the state education authority, so its town council stands in." : r._eu === "Brazil" ? "A municipality, which runs most early-years public schools; its municipal chamber stands in for a school board."  : `A municipality, which runs local schools. ${esc(r._eu)}'s child low-income measure isn't the same as the US or other countries' rates.`}</p></div>`;
     }
-    const pov = num(r[POV]), meet = num(r[MEET]), enr = num(r.Enrollment);
+    const pov = povOf(r), meet = num(r[MEET]), enr = num(r.Enrollment);
     const note = r.Notes || r["Poverty figures"] || "";
+    const povLabel = r._uk ? "Children under 16 in low income" : r._ca ? "Children 0–17 in low income" : "Child poverty (ages 5–17)";
     return `<div class="ask-card"><strong>${esc(r.District)}${r.County ? `, ${esc(r.County)}` : ""}${r._place ? `, ${esc(r._place)}` : ""}</strong><ul>` +
-      `<li>Child poverty (ages 5–17): ${isNaN(pov) ? "not available" : pov.toFixed(1) + "%"}` +
+      `<li>${povLabel}: ${isNaN(pov) ? "not available" : pov.toFixed(1) + "%"}` +
       (!(num(r["Children Ages 5-17"]) > 0) ? "" : ` (${num(r["Children Ages 5-17 in Poverty"]).toLocaleString()} of ${num(r["Children Ages 5-17"]).toLocaleString()} children)`) + `</li>` +
       `<li>Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}</li>` +
       (num(r["Other Board Meetings"]) > 0 ? `<li>Board meetings from other sources: ${num(r["Other Board Meetings"]).toLocaleString()} (${esc(r["Other meetings source"])})</li>` : "") +
@@ -178,7 +181,7 @@
     const { rows, label } = scopeRows(stateList, q);
     const list = rows.filter((r) => !isNaN(val(r, m)))
       .sort((a, b) => (val(a, m) - val(b, m)) * (low ? 1 : -1)).slice(0, n);
-    const mLabel = rows.length && rows[0]._eu === "Islands and microstates" && metricKey === "poverty" ? "poverty rate (or stand-in)" : rows.length && (rows[0]._eu === "Chile" || rows[0]._eu === "Colombia") && metricKey === "poverty" ? "poverty rate (all ages)" : rows.length && rows[0]._eu && metricKey === "poverty" ? "child low-income rate (each country's own measure)" : rows.length && rows[0]._ca && m.caLabel ? m.caLabel : rows.length && rows[0]._ie && metricKey === "poverty" ? "poverty rate (all ages, each board's region)" : rows.length && rows[0]._fr && metricKey === "poverty" ? "unemployment rate (stand-in for poverty)" : m.label;
+    const mLabel = rows.length && rows[0]._eu === "Islands and microstates" && metricKey === "poverty" ? "poverty rate (or stand-in)" : rows.length && (rows[0]._eu === "Chile" || rows[0]._eu === "Colombia" || rows[0]._eu === "Mexico" || rows[0]._eu === "Brazil") && metricKey === "poverty" ? "poverty rate (all ages)" : rows.length && rows[0]._eu && metricKey === "poverty" ? "child low-income rate (each country's own measure)" : rows.length && rows[0]._ca && m.caLabel ? m.caLabel : rows.length && rows[0]._ie && metricKey === "poverty" ? "poverty rate (all ages, each board's region)" : rows.length && rows[0]._fr && metricKey === "poverty" ? "unemployment rate (stand-in for poverty)" : m.label;
     if (!list.length) return `I couldn't find any ${esc(label)} with a ${mLabel}${rows.some((r) => r._ca) && metricKey === "enrollment" ? " (a few Canadian boards have no enrollment figure)" : ""}.`;
     if (metricKey === "meetings" && !low && num(list[0][MEET]) === 0) return `None of the ${esc(label)} have available board meetings on record.`;
     return `<p>${low ? "Lowest" : "Highest"} ${mLabel} among ${esc(label)}:</p><ol>` +
@@ -199,10 +202,14 @@
     const { rows, label } = scopeRows(stateList, q);
     if (!rows.length) return `I couldn't find any ${esc(label)}.`;
     const s = summary(rows);
+    // Countries whose only local figure is for all ages (or a stand-in) get their own wording.
+    const allAges = rows.every((r) => r._pov === "Poverty rate (all ages)"), ie = rows.every((r) => r._ie);
+    const pLabel = s.ca ? "child low-income rate (ages 0–17)" : allAges ? "poverty rate (all ages)" : ie ? "poverty rate (all ages, each board's region)" : rows.every((r) => r._eu) ? "child low-income rate (each country's own measure)" : "child poverty rate";
+    const pShort = s.ca ? "child low income" : allAges || ie ? "poverty" : "child poverty";
     return `<p>${esc(label[0].toUpperCase() + label.slice(1))} (${s.n.toLocaleString()}):</p><ul>` +
-      `<li>Average ${s.ca ? "child low-income rate (ages 0–17)" : "child poverty rate"}: ${pct(s.avgPov)}</li>` +
-      `<li>With available board meetings: ${s.withM.toLocaleString()} (${pct((100 * s.withM) / s.n)}), ${s.meetings.toLocaleString()} meetings in all</li>` +
-      `<li>Average ${s.ca ? "child low income" : "child poverty"}, with meetings vs. without: ${pct(s.povWith)} vs. ${pct(s.povWithout)}</li></ul>` +
+      `<li>Average ${pLabel}: ${pct(s.avgPov)}</li>` +
+      `<li>With ${rows.every((r) => r._eu) ? "meetings found" : "available board meetings"}: ${s.withM.toLocaleString()} (${pct((100 * s.withM) / s.n)}), ${s.meetings.toLocaleString()} meetings in all</li>` +
+      `<li>Average ${pShort}, with meetings vs. without: ${pct(s.povWith)} vs. ${pct(s.povWithout)}</li></ul>` +
       (s.ca ? `<p class="ask-note">Canada's low-income measure (LIM-AT, 2021 Census) isn't the same as the US child poverty rate.</p>` : "");
   }
 

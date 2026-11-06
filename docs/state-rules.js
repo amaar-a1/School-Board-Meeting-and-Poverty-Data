@@ -209,6 +209,28 @@ window.STATE_RULES = {
     ],
     note: "Check the current law before relying on this."
   },
+  brazil: {
+    title: "Rules for municipal chamber (câmara municipal) meetings",
+    checked: "November 6, 2026",
+    laws: [
+      { state: "Brazil", covers: "Municipal chambers (câmaras municipais)", threshold: "",
+        rule: "Chamber sessions are public under each municipality's organic law (lei orgânica) and the Constitution's principle of publicity (art. 37); the Access to Information Law (Lei 12.527/2011) requires municipalities over 10,000 people to publish information online. No federal law requires sessions to be streamed, though many chambers do." },
+      { state: "Brazil", covers: "Public schools", threshold: "",
+        rule: "Under the education law (LDB, Lei 9.394/1996) municipalities offer early childhood education and, with the states, primary education; most have a municipal education council (conselho municipal de educação), an appointed body. Schools have their own school councils." }
+    ],
+    note: "Rules differ by municipality. Check its organic law and chamber's internal rules before relying on this."
+  },
+  mexico: {
+    title: "Rules for town council (cabildo) meetings",
+    checked: "November 6, 2026",
+    laws: [
+      { state: "Mexico", covers: "Town councils (cabildos / ayuntamientos)", threshold: "",
+        rule: "Cabildo sessions are public under each state's municipal law (ley orgánica municipal), with closed sessions allowed for listed matters; the General Transparency Law requires minutes and agreements to be published. Several states require sessions to be streamed online; others don't." },
+      { state: "Mexico", covers: "Public schools", threshold: "",
+        rule: "Basic education is run by each state's education authority under the General Education Law; municipalities have no school board. Schools' parent bodies (Consejos de Participación Escolar) meet at school level." }
+    ],
+    note: "Rules differ by state. Check the state's municipal law before relying on this."
+  },
   colombia: {
     title: "Rules for municipal council meetings",
     checked: "November 6, 2026",
