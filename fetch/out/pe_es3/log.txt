@@ -1,0 +1,72 @@
+== Spain poverty by age
+ERR -Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 15, in step
+    try: log.write(f"== {name} ({time.time()-t:.0f}s)\n{f()}\n\n")
+                                                        ~^^
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 33, in es_pov
+    m = [x for x in municipal(d) if "Total" in x["meta"] and "Población con ingresos por unidad de consumo por debajo 60% de la mediana" in x["meta"]]
+                    ~~~~~~~~~^^^
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 22, in municipal
+    md = s.get("MetaData") or []
+         ^^^^^
+AttributeError: 'str' object has no attribute 'get'
+
+
+== Spain demographics
+ERR Traceback (most recent call last):
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 15, in step
+    try: log.write(f"== {name} ({time.time()-t:.0f}s)\n{f()}\n\n")
+                                                        ~^^
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 41, in es_dem
+    res += municipal(d); time.sleep(1)
+           ~~~~~~~~~^^^
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 22, in municipal
+    md = s.get("MetaData") or []
+         ^^^^^
+AttributeError: 'str' object has no attribute 'get'
+
+
+== Peru poverty map 2018 text (0s)
+0  chars 1387550; sample:     1 372
+      120502     000      CARHUAMAYO                                        6 554      22,2          60,3             665
+      120503     000      ONDORES                                           1 075      19,6          41,4           1 062
+      120504     000      ULCUMAYO                                          3 890      38,8          64,8             304
+      120600              SATIPO                                          239 105      31,9          39,1
+      120601     000      SATIPO                                           42 647      16,1          27,6           1 383
+      120602     000      COVIRIALI                                         6 573      22,6          52,8             813
+      120603     099      LLAYLLA                                           7 548      16,3          40,3           1 153
+      120604     000      MAZAMARI                                         43 191      28,5          41,8             904
+      120605     000      PAMPA HERMOSA                                     3 654      32,7          64,9             395
+      120606     000      PANGOA                                           65 356      29,9          46,6             787
+      120607     000      RÍO NEGRO                                        34 427      27,0          40,4             949
+      120608     000      RÍO TAMBO                                        29 909      41,2          62,4             303
+      120609     099      VIZCATÁN DEL ENE                                  5 800      16,3          40,3           1 154
+      120700              TARMA                                            91 849      18,7          26,8
+                                                                                                              Continúa…
+
+
+
+
+128                                                                             Instituto Nacional de Estadística e Informática
+                                     Anexo N° 2
+      PERÚ: POBLACIÓN, POBREZA MONETARIA TOTAL, UBICACIÓN DE LA POBREZA TOTAL,
+                           SEGÚN PROVINCIA Y DISTRITO, 2018
+
+                  Sufijo                                                                                   Ubicación
+                                                                          Población
+                 distrito                                                           Intervalo de confianza pobreza
+                                                         
+
+== Peru district borders
+ERR unner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 15, in step
+    try: log.write(f"== {name} ({time.time()-t:.0f}s)\n{f()}\n\n")
+                                                        ~^^
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 55, in pe_geo
+    z = zipfile.ZipFile("/tmp/per.zip"); names = [i.filename for i in z.infolist()]; z.extractall("/tmp/per")
+  File "/usr/lib/python3.14/zipfile/__init__.py", line 1471, in __init__
+    self._RealGetContents()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/zipfile/__init__.py", line 1538, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+
