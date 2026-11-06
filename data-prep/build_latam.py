@@ -33,14 +33,20 @@ DOCS = os.path.join(HERE, "..", "docs", "data")
 norm = lambda s: re.sub(r"[^a-z]", "", unicodedata.normalize("NFKD", str(s)).encode("ascii", "ignore").decode().lower())
 ALIAS = {"CL": {"paiguano": "paihuano", "marchigue": "marchihue", "aisen": "aysen", "coihaique": "coyhaique", "llayllay": "llaillay", "padrelascasas": "padrelascasas",
                 "ohiggins": "ohiggins", "trehuaco": "treguaco", "lascabras": "lascabras", "cabodehornos": "cabodehornos"},
-         "CO": {"bogota": "bogotadc", "bogotadistritocapital": "bogotadc", "sanandres": "sanandres", "cartagena": "cartagenadeindias",
+         # Colombia: the borders file's longer names for four municipalities
+         "CO": {"distritoespecialindustrialyportuariodebarr": "barranquilla", "ricaurtecoloso": "coloso",
+                "santanderararacuara": "puertosantander", "providenciasantaisabel": "providencia",
+                "bogota": "bogotadc", "bogotadistritocapital": "bogotadc", "sanandres": "sanandres", "cartagena": "cartagenadeindias",
                 "guadalajaradebuga": "buga", "santafedebogota": "bogotadc", "sanandresdetumaco": "tumaco", "sanjosedecucuta": "cucuta",
                 "sanjosedetoluviejo": "toluviejo", "villadesandiegodeubate": "ubate", "tiquisio": "tiquiso", "papunahua": "papunauacordepartamental",
                 "colosoricaurte": "coloso", "elsantuario": "santuario"},
          "MX": {"tlaquepaque": "sanpedrotlaquepaque"},
          # Spain: the borders file's older or other-language names
          "ES": {"maomahon": "mao", "castellplatjadaro": "castelldaroplatjadaroisagaro", "santcarlesdelarapita": "larapita",
-                "alcocerdeplanes": "alcosser", "villanuevadecastellon": "castello"}}
+                "alcocerdeplanes": "alcosser", "villanuevadecastellon": "castello",
+                "aldehueladejerte": "aldehueladeljerte", "alfarp": "alfarb", "facheca": "fageca", "herbes": "herbers",
+                "labisbaldefalset": "labisbaldemontsant", "santamariarivarredonda": "santamariaribarredonda", "goni": "valdegoni",
+                "candin": "valledeancares"}}
 EDU = re.compile(r"comisi[óo]n (de )?educaci[óo]n|educaci[óo]n.*comisi[óo]n|comisi[óo]n de cultura y educaci[óo]n", re.I)
 COUNCIL = re.compile(r"sesi[óo]n|plenaria|concejo", re.I)
 COUNCIL_MUST = re.compile(r"concejo|sesi[óo]n (ordinaria|extraordinaria|plenaria|n[°º.]|del concejo)|plenaria", re.I)
@@ -265,12 +271,14 @@ def write(cc, key, rows, feats):
     cols = ["District", "Region", "Locale", "Available Board Meetings", "Meetings type", "Meetings source", "Latest meeting", "Meetings by year",
             "Population", "Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
-    extra = [c for c in ("Province", "Autonomous community", "Children under 18 (estimated)", "Poverty year", "Poverty range", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households") if any(r.get(c) not in (None, "") for r in rows)]
+    extra = [c for c in ("Province", "Autonomous community", "Children under 18 (estimated)", "Poverty year", "Poverty range", "Poverty rate (region, all ages)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households") if any(r.get(c) not in (None, "") for r in rows)]
     pov = "Percentage of Children in Low Income" if any(r.get("Percentage of Children in Low Income") for r in rows) else "Poverty rate (all ages)"
     cols = [c for c in cols if c not in ("Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)") or any(r.get(c) not in (None, "") for r in rows)]
     cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
     for c in ("Autonomous community", "Province"):
         if c in cols: cols.remove(c); cols.insert(cols.index("Region") + 1, c)
+    # Spain's regional stand-in rate goes near the end, out of the summary figures (the first number columns).
+    if "Poverty rate (region, all ages)" in cols: cols.remove("Poverty rate (region, all ages)"); cols.insert(len(cols) - 1, "Poverty rate (region, all ages)")
     rows.sort(key=lambda r: r["District"])
     with open(os.path.join(DOCS, f"{key}.csv"), "w", newline="", encoding="utf-8") as fo:
         w = csv.DictWriter(fo, fieldnames=cols, restval="", extrasaction="ignore"); w.writeheader(); w.writerows(rows)
@@ -296,7 +304,10 @@ def chile():
     geo = json.load(open(os.path.join(IN, "chile", "gb_CHL_ADM3.geojson"), encoding="utf-8"))
     by_name = {}
     for f in geo["features"]:
-        n = norm(f["properties"]["shapeName"]); by_name[ALIAS["CL"].get(n, n)] = f
+        n = norm(f["properties"]["shapeName"])
+        # The borders file names Pozo Almonte (Tarapacá) "Tocopilla" too; the real Tocopilla is further south.
+        if n == "tocopilla" and centroid(f["geometry"])[1] > -21.5: n = "pozoalmonte"
+        by_name[ALIAS["CL"].get(n, n)] = f
     rows, feats = [], []
     for code, r in inc.items():
         e = enr.get(str(int(code))) or enr.get(code) or {}
@@ -509,6 +520,25 @@ ES_CCAA = {"Andalucía": "04 11 14 18 21 23 29 41", "Aragón": "22 44 50", "Astu
            "Cataluña": "08 17 25 43", "Comunitat Valenciana": "03 12 46", "Extremadura": "06 10", "Galicia": "15 27 32 36",
            "Madrid": "28", "Murcia": "30", "Navarra": "31", "País Vasco": "01 20 48", "La Rioja": "26", "Ceuta": "51", "Melilla": "52"}
 ES_CCAA = {c: k for k, v in ES_CCAA.items() for c in v.split()}
+ES_NUTS2 = {"Galicia": "ES11", "Asturias": "ES12", "Cantabria": "ES13", "País Vasco": "ES21", "Navarra": "ES22", "La Rioja": "ES23",
+            "Aragón": "ES24", "Madrid": "ES30", "Castilla y León": "ES41", "Castilla-La Mancha": "ES42", "Extremadura": "ES43",
+            "Cataluña": "ES51", "Comunitat Valenciana": "ES52", "Illes Balears": "ES53", "Andalucía": "ES61", "Murcia": "ES62",
+            "Ceuta": "ES63", "Melilla": "ES64", "Canarias": "ES70"}
+
+
+def es_region_poverty():
+    """{NUTS 2 code: (rate, year)}: Eurostat's at-risk-of-poverty rate (all ages, below 60% of the national median
+    income) for each autonomous community (ilc_li41), latest year."""
+    d = json.load(open(os.path.join(IN, "spain", "eurostat_ilc_li41_es.json")))
+    ids, size = d["id"], d["size"]; cat = {k: list(d["dimension"][k]["category"]["index"]) for k in ids}
+    out = {}
+    for g in cat["geo"]:
+        for t in sorted(cat["time"], reverse=True):
+            sel = {k: cat[k][0] for k in ids}; sel.update(geo=g, time=t); i = 0
+            for k, n in zip(ids, size): i = i * n + cat[k].index(sel[k])
+            if str(i) in d["value"]:
+                out[g] = (d["value"][str(i)], t); break
+    return out
 
 
 def es_parts(n):
@@ -548,6 +578,10 @@ def peru():
     only as a 95% confidence interval; the midpoint is shown."""
     dist, prov = peru_poverty()
     geo = {f["properties"]["IDDIST"]: f for f in json.load(open(os.path.join(IN, "peru", "peru_distrital_simple.geojson"), encoding="utf-8"))["features"] if f.get("geometry")}
+    # Putumayo province (2014) took two of Maynas's districts, which got new codes; the borders file has the old ones.
+    # Putumayo's old border also covers Rosa Panduro and Yaguas, made from it.
+    for old, new in (("160109", "160801"), ("160114", "160803")):
+        if old in geo and new not in geo: geo[new] = geo.pop(old)
     rows, feats = [], []
     for code, d in sorted(dist.items()):
         f = geo.get(code); area = area_km2(f["geometry"]) if f else 0
@@ -570,6 +604,7 @@ def spain():
     d = os.path.join(IN, "spain")
     dem = json.load(open(os.path.join(d, "ine_adrh_demographics.json"), encoding="utf-8"))
     pov = json.load(open(os.path.join(d, "ine_adrh_under18_below60.json"), encoding="utf-8"))
+    reg = es_region_poverty()
     adm1 = json.load(open(os.path.join(d, "gb_ESP_ADM2.geojson"), encoding="utf-8"))["features"]
     pn = {norm(v): k for k, v in ES_PROV.items()}
     pn.update({"balearsilles": "07", "coruna": "15", "palmaslas": "35", "riojala": "26", "alava": "01"})
@@ -603,10 +638,18 @@ def spain():
         rows.append({"District": name, "_names": parts, "Region": ES_PROV[code[:2]], "Autonomous community": ES_CCAA[code[:2]], "Population": people or "",
                      "Percentage of Children in Low Income": f"{p[y]:.1f}%" if p else "", "Poverty year": y,
                      "Poverty by year": "; ".join(f"{k}:{v:.1f}" for k, v in sorted(p.items())),
-                     "Poverty note": "People under 18 in households below 60% of the national median income per consumption unit (INE, household income atlas)" if p else "Not published for this municipality (INE leaves out small municipalities)",
+                     "Poverty rate (region, all ages)": "" if p else f"{reg[ES_NUTS2[ES_CCAA[code[:2]]]][0]:.1f}%",
+                     "Poverty note": "People under 18 in households below 60% of the national median income per consumption unit (INE, household income atlas)" if p else
+                         f"No child figure: INE leaves out small municipalities. In its place, {ES_CCAA[code[:2]]}'s overall poverty rate (all ages, below 60% of the national median income; Eurostat, {reg[ES_NUTS2[ES_CCAA[code[:2]]]][1]})",
                      "Children under 18 (estimated)": kids, "School system": f"{ES_CCAA[code[:2]]} education department",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    # Land that belongs to no single municipality (Bardenas Reales, facerías, comunidades and ledanías shared by
+    # several towns): drawn on the map only, like the US areas outside every school district.
+    used = {id(f) for f in geo.values()}
+    for i, f in enumerate(x for x in adm3 if id(x) not in used):
+        feats.append({"type": "Feature", "properties": {"id": f"ES-SHARED-{i}", "NAME": f"Shared land (no municipality): {f['properties']['shapeName']}"},
+                      "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
     write("ES", "spain", rows, feats)
 
 

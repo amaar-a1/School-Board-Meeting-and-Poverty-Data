@@ -177,7 +177,9 @@
   // Countries the site doesn't cover: grey outlines only (data/map/world.json, Natural Earth).
   const isWorld = (f) => String(gid(f)).startsWith("W-");
   const WORLD_STYLE = { fillColor: "#cfcfcf", fillOpacity: 0.35, color: "#9a9a9a", weight: 0.5 };
-  const undefinedArea = (f) => /^School District Not Defined$/i.test(f.properties.NAME || "");
+  const undefinedArea = (f) => /^School District Not Defined$/i.test(f.properties.NAME || "") || sharedLand(f);
+  // Spain: land shared by several towns (Bardenas Reales, facerías, comunidades), part of no single municipality.
+  const sharedLand = (f) => /^ES-SHARED-/.test(f.properties.id || "");
 
   function style(feature) {
     if (isWorld(feature)) return WORLD_STYLE;
@@ -197,6 +199,7 @@
     if (isWorld(feature)) return `<div class="map-tip"><strong>${esc(feature.properties.NAME)}</strong>Not covered on this site yet</div>`;
     const r = rowFor(gid(feature));
     if (r && r.Province) return caTip(r);
+    if (sharedLand(feature)) return `<div class="map-tip"><strong>${esc(String(feature.properties.NAME).replace(/^Shared land \(no municipality\): /, ""))}</strong>Land shared by several towns (a facería, comunidad or similar), part of no single municipality</div>`;
     if (undefinedArea(feature)) return `<div class="map-tip"><strong>No school district</strong>Area the Census leaves outside any district, mostly national parks and other federal land (e.g. Grand Canyon, Yellowstone) or water</div>`;
     if (!r) return `<div class="map-tip"><strong>${esc(feature.properties.NAME)}</strong>Available board meetings: 0<br>No poverty data for this district</div>`;
     const eu = euOf(r["District ID"]);
@@ -209,7 +212,8 @@
     const enr = toNumber(r.Enrollment);
     const note = [r["Map note"], r["Poverty note"], r.Notes || r["Poverty figures"], r["Meetings note"], r["Other meetings source"] && `Other meetings: ${r["Other meetings source"]}`].filter(Boolean).map((x) => String(x).replace(/\.\s*$/, "")).join(". ");
     return `<div class="map-tip"><strong>${esc(r.District)}${place ? `, ${esc(place)}` : ""}</strong>` +
-      (!isNaN(iePov) ? `Poverty rate (all ages, its region): ${iePov.toFixed(1)}%<br>Unemployment (Census 2022): ${esc(r["Unemployment rate (Census 2022)"] || "–")}<br>`
+      (!isNaN(iePov) && eu === "ES" ? `Child low-income rate: not published (small municipality)<br>Poverty rate of its region (all ages, Eurostat): ${iePov.toFixed(1)}%<br>`
+        : !isNaN(iePov) ? `Poverty rate (all ages, its region): ${iePov.toFixed(1)}%<br>Unemployment (Census 2022): ${esc(r["Unemployment rate (Census 2022)"] || "–")}<br>`
         : isNaN(pov) && !isNaN(unemp) ? `Unemployment (stand-in for poverty): ${unemp.toFixed(1)}% (2015 est.)<br>`
         : `${ukPov ? "Children under 16 in low income" : eu === "ISLE" ? esc(r["Poverty measure"] || "Poverty") : eu === "CL" || eu === "CO" || eu === "MX" || eu === "BR" || eu === "PE" ? `Poverty (${eu === "CL" ? "all ages, income, 2024" : eu === "BR" ? "all ages, income up to ½ minimum wage per person, 2022" : eu === "PE" ? "all ages, monetary, 2018" : eu === "MX" ? "all ages, multidimensional, 2020" : "all ages, multidimensional, 2018"})` : eu ? `Children in low income (${{ NO: "0–17, 2022–24", SE: "0–19, 2024", FI: "under 18", DK: "0–17, 50% line, 2024", NL: "CBS, 2024", DE: "under 15 on SGB II benefits, 2023", NZ: "60% line, 2025", IS: "national rate", CH: "0–17 on social assistance", ES: "under 18, 60% line, 2024", CL: "all ages, income, 2024", CO: "all ages, multidimensional, 2018" }[eu]})` : "Child poverty"}: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>`) +
       `Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}` +
@@ -252,8 +256,8 @@
   function legend() {
     const sc = SCALES[$("map-metric").value];
     const items = $("map-metric").value === "locale"
-      ? [...LOCALES.filter((g) => !current || current.rows.some((r) => g.keys.includes(String(r.Locale || "").trim().replace(/^[^:]+:\s*/, ""))))
-          .map((g) => `<span><i style="background:${g.color}"></i>${g.label}</span>`),
+      // Every kind, not just the current view's: the map also draws the neighbouring countries.
+      ? [...LOCALES.map((g) => `<span><i style="background:${g.color}"></i>${g.label}</span>`),
         `<span><i style="background:${NO_DATA}"></i>No locale</span>`,
         `<span class="map-faded">Locale: the US uses NCES's locale codes and Canada Statistics Canada's population centre sizes; elsewhere it's estimated from population density (see the By locale tab)</span>`]
       : sc.labels.map((l, i) => `<span><i style="background:${sc.colors[i]}"></i>${l}</span>`);
@@ -265,6 +269,7 @@
     else if (ca && !current.combined) faded.push("outside Canada");
     if ((current && (current.country === "FR" || current.combined)) && $("map-metric").value === "poverty")
       items.push(`<span class="map-faded">Saint-Pierre-et-Miquelon: unemployment rate (2015 est.) in place of child poverty, which isn't published there</span>`);
+    if (euv === "ES" || (current && current.combined)) items.push(`<span><i style="background:${NO_DISTRICT}"></i>Spain: land shared by several towns, part of no municipality</span>`);
     if (current && current.country === "FR") faded.push("outside Saint-Pierre-et-Miquelon");
     if (current && current.country === "IE") faded.push("outside Ireland");
     if (euv && !current.state) faded.push(`outside ${euv === "NL" ? "the Netherlands" : EU_NAMES[euv]}`);
@@ -274,6 +279,8 @@
       items.push(`<span class="map-faded">Ireland: overall poverty rate of each board's region (Eurostat), since no local or child rate is published</span>`);
     const ukv = current && (current.country === "UK" || (current.parent && current.parent.country === "UK"));
     if (ukv && !current.state) faded.push("outside the United Kingdom");
+    if ((euv === "ES" || (current && current.combined)) && $("map-metric").value === "poverty")
+      items.push(`<span class="map-faded">Spain: small municipalities with no child figure from INE show their region's overall poverty rate (all ages, Eurostat 2025)</span>`);
     if ((ukv || (current && current.combined)) && $("map-metric").value === "poverty")
       items.push(`<span class="map-faded">UK: children under 16 in relative low income (DWP, 2024–25), not the same measure as the US or Canadian rates</span>`);
     if (ca && $("map-metric").value === "poverty") items.push(`<span class="map-faded">${current.combined ? "Canadian boards" : "Canada"}: share of children 0–17 in low income (LIM-AT, 2020), not the same measure as the US child poverty rate</span>`);

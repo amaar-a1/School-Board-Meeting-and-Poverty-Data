@@ -242,6 +242,7 @@ window.SOURCES = [
     items: [
       { title: "Child poverty: INE, Atlas de Distribución de Renta de los Hogares (ADRH), relative poverty thresholds by sex and age group (one table per province), people under 18 below 60% of the median income per consumption unit, 2019–2024", url: "https://www.ine.es/dynt3/inebase/index.htm?padre=12385&capsel=12384" },
       { title: "Population and share under 18: INE, ADRH demographic indicators (one table per province), 2024", url: "https://www.ine.es/dynt3/inebase/index.htm?padre=12385&capsel=12384" },
+      { title: "Regional poverty rate for small municipalities without a child figure: Eurostat, at-risk-of-poverty rate by NUTS 2 region (ilc_li41), all ages, 2025", url: "https://ec.europa.eu/eurostat/databrowser/view/ilc_li41/default/table" },
       { title: "Borders: geoBoundaries (gbOpen) Spain ADM2 (provinces) and ADM3 (municipalities), simplified further with mapshaper", url: "https://www.geoboundaries.org/" },
       { title: "Meetings (stand-in): each town council's YouTube channel (in the “Meetings source” column), searched for municipalities of 5,000+ people", url: "https://www.youtube.com/" }
     ],

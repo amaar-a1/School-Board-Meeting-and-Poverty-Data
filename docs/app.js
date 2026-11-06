@@ -804,7 +804,6 @@
   function renderSubset(id, test, noteText) {
     const col = urbanColumn(), el = $(id);
     el.hidden = !col || !canCompare();
-    $(`${id}-link`).hidden = el.hidden;
     if (el.hidden) return;
     const rows = current.rows.filter((r) => test(r[col]));
     fillCompare($(`${id}-body`), rows);
@@ -1174,10 +1173,6 @@
     setView(v);
     history.replaceState(null, "", v === "overview" ? location.pathname + location.search : `#${v}`);
   });
-  // Header links: "By district size" and "Sources" open those views; the others jump to a section of the overview.
-  document.querySelectorAll(".links a").forEach((a) => a.addEventListener("click", () => {
-    setView(a.dataset.viewLink || "overview");
-  }));
   const viewFromHash = () => { if (["#size", "#locale", "#map", "#trends", "#rules", "#sources"].includes(location.hash)) setView(location.hash.slice(1)); };
   viewFromHash();
   window.addEventListener("hashchange", viewFromHash);
