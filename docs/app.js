@@ -476,7 +476,7 @@
     $("locale-note").textContent = ((current.localeNote || (current.parent && current.parent.localeNote)) ? (current.localeNote || current.parent.localeNote) : ca ? "Boards are grouped by an estimated locale (see below)." : current.combined
       ? "US districts are grouped by NCES locale (2023); Canadian boards by an estimated locale (see below)."
       : "Districts are grouped by NCES locale (2023): Urban (a city), Suburban, Town or Rural.") +
-      (left ? ` ${left.toLocaleString()} ${label} without a locale are left out of this tab.` : "");
+      (left === 1 ? ` 1 ${label.replace(/ies$/, "y").replace(/(?<!s)s$/, "")} without a locale is left out of this tab.` : left ? ` ${left.toLocaleString()} ${label} without a locale are left out of this tab.` : "");
     $("locale-def").textContent = (current.localeDef || (current.parent && current.parent.localeDef)) ? (current.localeDef || current.parent.localeDef)
       : ca || current.combined
       ? "Canada's locales are estimates, after Statistics Canada's population centre sizes: each census subdivision (municipality) with 100,000+ people is large urban; one with at least 150 people per km² (the OECD's rural cutoff) is medium urban (30,000–99,999 people) or small urban (1,000–29,999); the rest are rural. A board takes the locale where most of its children live; boards serving a whole province or territory are “Province-wide”. They aren't the same as the US NCES locales." + (current.combined ? " UK, Irish, other European, New Zealand and island locales are estimates from population density (urban 2,000+ people per km², suburban 500–2,000, mixed 100–500, rural under 100)." : "")

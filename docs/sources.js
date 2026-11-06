@@ -222,8 +222,9 @@ window.SOURCES = [
   },
   {
     only: "Brazil",
-    group: "Brazil: municipalities, poverty stand-in and enrollment",
+    group: "Brazil: municipalities, poverty and enrollment",
     items: [
+      { title: "Poverty: IBGE, Censo Demográfico 2022, table 10296 (residents by household income per person, in minimum wages), via SIDRA", url: "https://sidra.ibge.gov.br/tabela/10296" },
       { title: "Bolsa Família families by municipality, September 2025: Portal da Transparência (Novo Bolsa Família, pagamentos)", url: "https://portaldatransparencia.gov.br/download-de-dados/novo-bolsa-familia/202509" },
       { title: "Municipal codes (SIAFI to IBGE): Tesouro Nacional, Tabela de Municípios", url: "https://www.tesourotransparente.gov.br/ckan/dataset/lista-de-municipios-do-siafi" },
       { title: "Population: IBGE, Estimativas da População 2025", url: "https://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2025/estimativa_dou_2025.xls" },

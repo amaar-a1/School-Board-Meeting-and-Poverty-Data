@@ -188,9 +188,8 @@ def write(cc, key, rows, feats):
     cols = ["District", "Region", "Locale", "Available Board Meetings", "Meetings type", "Meetings source", "Latest meeting", "Meetings by year",
             "Population", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
-    extra = [c for c in ("Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families", "Households") if any(r.get(c) not in (None, "") for r in rows)]
-    pov = "Bolsa Família families per 100 households" if cc == "BR" else "Poverty rate (all ages)"   # Brazil's stand-in
-    cols = [pov if c == "Poverty rate (all ages)" else c for c in cols]
+    extra = [c for c in ("Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households") if any(r.get(c) not in (None, "") for r in rows)]
+    pov = "Poverty rate (all ages)"
     cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
     rows.sort(key=lambda r: r["District"])
     with open(os.path.join(DOCS, f"{key}.csv"), "w", newline="", encoding="utf-8") as fo:
@@ -379,7 +378,7 @@ def brazil():
     for r in csv.DictReader(open(os.path.join(d, "bolsa_familia_familias_202509.csv"), encoding="utf-8")):
         c = siafi.get(r["siafi"].strip())
         if c: fam[c] = fam.get(c, 0) + int(float(r["familias"]))
-    extra = {}   # optional census and school census tables: {ibge7: {column: value}}
+    extra = {}   # census tables saved from SIDRA: {ibge7: {column: value}}
     for f in sorted(os.listdir(d)):
         if f.startswith("br_") and f.endswith(".csv"):
             for r in csv.DictReader(open(os.path.join(d, f), encoding="utf-8")):
@@ -391,13 +390,18 @@ def brazil():
     rows, feats = [], []
     for code, (name, people) in sorted(pop.items()):
         x = extra.get(code, {}); hh = int(x["Households"]) if x.get("Households", "").isdigit() else None
+        n = lambda k: int(x[k]) if x.get(k, "").isdigit() else None
+        res, q, h, z = n("Residents"), n("Up to 1/4 minimum wage per person"), n("Over 1/4 to 1/2 minimum wage per person"), n("No income")
+        poor = f"{100 * (q + h + z) / res:.2f}%" if res and None not in (q, h, z) else ""
+        extreme = f"{100 * (q + z) / res:.2f}%" if res and None not in (q, z) else ""
         f = geo.get(code); area = area_km2(f["geometry"]) if f else 0
         dens = people / area if area and people else 0
         did = f"BR-{code}"
         rows.append({"District": name, "Region": BR_UF[code[:2]], "Population": people or "",
-                     "Bolsa Família families per 100 households": f"{100 * fam[code] / hh:.2f}%" if hh and code in fam else "",
+                     "Poverty rate (all ages)": poor, "Extreme poverty (all ages)": extreme,
+                     "Poverty note": "Residents of households with income up to half the minimum wage per person (R$606 a month in 2022), all ages, 2022 census; extreme: up to a quarter; both include households with no income",
+                     "Bolsa Família families per 100 households": f"{100 * fam[code] / hh:.2f}" if hh and code in fam else "",
                      "Bolsa Família families": fam.get(code, ""), "Households": hh or "",
-                     "Poverty note": "Stand-in for poverty: families receiving Bolsa Família (September 2025) per 100 households (2022 census); Brazil publishes no recent poverty rate by municipality",
                      "Enrollment": x.get("Enrollment", ""), "Enrollment year": x.get("Enrollment year", ""),
                      "Children 6–17": x.get("Children 6–17", ""), "School system": "Municipal and state school networks",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
