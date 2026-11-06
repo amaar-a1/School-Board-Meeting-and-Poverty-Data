@@ -104,21 +104,21 @@
     if (busy || lang === "en") return;
     busy = true;
     muts.forEach((m) => { if (m.type === "characterData") translateNode(m.target); else m.addedNodes.forEach(walk); });
-    if (muts.some((m) => m.target.id === "tabs")) resort();
+    if (muts.some((m) => m.target.id === "tabs" || m.target.id === "country-select")) resort();
     busy = false;
   });
 
-  // Keep the country buttons in alphabetical order in the chosen language ("All" stays last).
+  // Keep the country menu in alphabetical order in the chosen language ("All" stays last).
   function resort() {
-    const tabs = document.getElementById("tabs");
-    if (!tabs) return;
-    const bs = [...tabs.querySelectorAll(".country-button")];
-    const all = bs.filter((b) => (b.dataset.name || "").startsWith("All"));
-    const rest = bs.filter((b) => !all.includes(b)).sort((a, b) => a.textContent.localeCompare(b.textContent, lang));
+    const sel = document.getElementById("country-select");
+    if (!sel) return;
+    const os = [...sel.options], keep = sel.value;
+    const all = os.filter((o) => (o.value || "").startsWith("All"));
+    const rest = os.filter((o) => !all.includes(o)).sort((a, b) => a.textContent.localeCompare(b.textContent, lang));
     const want = [...rest, ...all];
-    if (want.every((b, i) => b === bs[i])) return;   // already in order (moving them would loop the observer)
-    const anchor = tabs.querySelector("#state-select");
-    want.forEach((b) => tabs.insertBefore(b, anchor));
+    if (want.every((o, i) => o === os[i])) return;   // already in order (moving them would loop the observer)
+    want.forEach((o) => sel.appendChild(o));
+    sel.value = keep;
   }
 
   function setLang(l) {

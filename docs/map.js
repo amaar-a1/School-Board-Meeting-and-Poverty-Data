@@ -77,6 +77,22 @@
     }
   };
   const NO_DATA = "#9e9e9e";
+  // Color by locale: one color per kind of place, from city to countryside. Canada's own groups (large, medium and
+  // small urban centres) share the colors of the closest US kinds. In "All", Canadian and European locales carry a
+  // "Canada: " or country prefix, which is dropped here.
+  const LOCALES = [
+    { keys: ["Urban", "Large urban"], color: "#08519c", label: "Urban (Canada: large urban centre)" },
+    { keys: ["Suburban", "Medium urban"], color: "#6baed6", label: "Suburban (Canada: medium urban centre)" },
+    { keys: ["Town", "Small urban"], color: "#fdae6b", label: "Town (Canada: small urban centre)" },
+    { keys: ["Mixed"], color: "#9e74c9", label: "Mixed (estimated; outside the US and Canada)" },
+    { keys: ["Rural"], color: "#41ab5d", label: "Rural" },
+    { keys: ["Province-wide"], color: "#bdbdbd", label: "Canada: province- or territory-wide board" }
+  ];
+  const localeColor = (row) => {
+    const loc = String((row && row.Locale) || "").trim().replace(/^[^:]+:\s*/, "");
+    const g = LOCALES.find((x) => x.keys.includes(loc));
+    return g ? g.color : NO_DATA;
+  };
   const NO_DISTRICT = "#e3eedd";   // areas outside any school district (national parks, federal land, water)
 
   let searchIndex = [], highlight = null, active = -1, byId = new Map();
@@ -119,6 +135,7 @@
 
   function color(row) {
     const metric = $("map-metric").value, sc = SCALES[metric];
+    if (metric === "locale") return localeColor(row);
     let v = row ? toNumber(row[row[sc.column] === undefined && sc.caColumn ? sc.caColumn : sc.column]) : NaN;
     if (metric === "poverty" && row && isNaN(v) && row[UK_POV]) v = toNumber(row[UK_POV]);
     if (metric === "poverty" && row && isNaN(v) && row[EU_POV]) v = toNumber(row[EU_POV]);
@@ -234,7 +251,12 @@
 
   function legend() {
     const sc = SCALES[$("map-metric").value];
-    const items = sc.labels.map((l, i) => `<span><i style="background:${sc.colors[i]}"></i>${l}</span>`);
+    const items = $("map-metric").value === "locale"
+      ? [...LOCALES.filter((g) => !current || current.rows.some((r) => g.keys.includes(String(r.Locale || "").trim().replace(/^[^:]+:\s*/, ""))))
+          .map((g) => `<span><i style="background:${g.color}"></i>${g.label}</span>`),
+        `<span><i style="background:${NO_DATA}"></i>No locale</span>`,
+        `<span class="map-faded">Locale: the US uses NCES's locale codes and Canada Statistics Canada's population centre sizes; elsewhere it's estimated from population density (see the By locale tab)</span>`]
+      : sc.labels.map((l, i) => `<span><i style="background:${sc.colors[i]}"></i>${l}</span>`);
     const ca = current && (current.country === "CA" || current.parent || current.combined);
     const euv = current && EU[current.country] ? current.country : null;
     if ((!ca || current.combined) && !(current && (current.country === "FR" || current.country === "IE" || euv)) && !ukView()) items.push(`<span><i style="background:${NO_DISTRICT}"></i>No school district (mostly national parks and federal land)</span>`);

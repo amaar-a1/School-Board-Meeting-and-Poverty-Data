@@ -32,7 +32,7 @@
   <main class="wrap">
     <div id="status" class="status">Loading data…</div>
 
-    <div id="tabs" class="tabs" role="tablist" aria-label="Data set" hidden></div>
+    <div id="tabs" class="tabs" hidden></div>
     <p id="dataset-note" class="note dataset-note"></p>
 
     <section id="find" class="find" aria-label="Find a district" hidden>
@@ -45,14 +45,17 @@
     </section>
     <section id="find-card" class="card find-card" aria-live="polite" hidden></section>
 
-    <div class="tabs view-tabs" role="tablist" aria-label="Page views">
-      <button type="button" role="tab" data-view-tab="overview" aria-selected="true">Overview</button>
-      <button type="button" role="tab" data-view-tab="size" aria-selected="false">By district size</button>
-      <button type="button" role="tab" data-view-tab="locale" aria-selected="false">By locale</button>
-      <button type="button" role="tab" data-view-tab="rules" aria-selected="false">State rules</button>
-      <button type="button" role="tab" data-view-tab="map" aria-selected="false">Map</button>
-      <button type="button" role="tab" data-view-tab="trends" aria-selected="false">Trends</button>
-      <button type="button" role="tab" data-view-tab="sources" aria-selected="false">Sources</button>
+    <div class="tabs view-tabs">
+      <label class="tabs-label" for="view-select">Show:</label>
+      <select id="view-select">
+        <option data-view-tab="overview" value="overview">Overview</option>
+        <option data-view-tab="size" value="size">By district size</option>
+        <option data-view-tab="locale" value="locale">By locale</option>
+        <option data-view-tab="rules" value="rules">State rules</option>
+        <option data-view-tab="map" value="map">Map</option>
+        <option data-view-tab="trends" value="trends">Trends</option>
+        <option data-view-tab="sources" value="sources">Sources</option>
+      </select>
     </div>
 
     <section id="filters" class="card filters" aria-label="Filters" hidden>
@@ -259,6 +262,7 @@
                 <option value="poverty">Child poverty rate</option>
                 <option value="meetings">Available board meetings</option>
                 <option value="rank">Poverty rank within its country</option>
+                <option value="locale">Locale (city, suburb, town, rural)</option>
               </select>
             </label>
             <label>Go to <select id="map-jump"></select></label>
