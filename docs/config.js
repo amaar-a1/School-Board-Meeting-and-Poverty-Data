@@ -8,7 +8,7 @@ window.SITE_CONFIG = {
     { name: "United States", file: "data/national.csv", textColumns: ["District ID"],
       // {rows} and {withMeetings} are filled in from the data when the page loads.
       note: "{rows} school districts in the 50 states and DC. Meeting counts are available for {withMeetings} of them; the rest show 0.",
-      footer: "Poverty figures are for children ages 5–17. Meeting counts are refreshed daily from CivicSearch. Sources are listed on the Sources tab." },
+      footer: "Poverty figures are for children ages 5–17. Meeting counts are refreshed daily from CivicSearch; meetings by year and the latest meeting month are from CivicSearch\u2019s monthly counts, collected on 6 November 2026. Sources are listed on the Sources tab." },
     // The territories share one menu entry (see perState.after). They have no meeting
     // counts or school-district poverty figures, so this view only lists their school systems.
     { name: "U.S. territories", file: "data/territories.csv", state: "territories", textColumns: ["District ID"],
