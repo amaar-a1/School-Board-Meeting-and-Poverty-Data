@@ -69,7 +69,7 @@ def centroid(geom):
 
 
 _CACHE = {}
-DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil"}
+DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru"}
 # Brazil: municipal chambers (câmara municipal) and their education committees, in Portuguese.
 RULES = {"BR": (re.compile(r"comiss[ãa]o (permanente )?de educa[çc][ãa]o|educa[çc][ãa]o.*comiss[ãa]o", re.I),
                 re.compile(r"sess[ãa]o|c[âa]mara", re.I),
@@ -87,6 +87,16 @@ RULES["MX"] = (re.compile(r"comisi[óo]n (edilicia )?(de |del )?[\"“]?((salud|
                           r"de cabildo|del? (h\.? )?(cabildo|ayuntamiento|concejo)|n[°º.]|\d)|\d+\S* sesi[óo]n|"
                           r"(ordinary|extraordinary|solemn|open|public) (town |city )?(council )?(session|meeting)|council (session|meeting)|cabildo abierto)", re.I),
                re.compile(NOT_T.pattern + r"|consejo municipal electoral|consejo municipal \d|junta municipal \d|electoral", re.I))
+
+# Peru: the district or provincial council (concejo municipal) and its education committee. A provincial council
+# is also the council of the province's capital district. Ceremonial sessions (sesión solemne, for anniversaries),
+# cooking demonstrations (sesiones demostrativas) and the citizen-security committees (CODISEC, COPROSEC) aren't
+# council meetings.
+RULES["PE"] = (re.compile(r"comisi[óo]n (ordinaria )?(de |del )?((cultura|deporte)s? y )?educaci[óo]n|educaci[óo]n.*comisi[óo]n", re.I),
+               re.compile(r"sesi[óo]n", re.I),
+               re.compile(r"sesi[óo]n (ordinaria |extraordinaria |descentralizada )?(de |del )(h\.? |honorable )?(concejo|consejo municipal)|"
+                          r"sesi[óo]n (ordinaria|extraordinaria|descentralizada)|(ordinaria|extraordinaria) de concejo", re.I),
+               re.compile(NOT_T.pattern + r"|solemne|demostrativa|codisec|coprosec|cosoc|comit[ée]|regional|delegados|ministros|gimnasia|miss |audiencia|congreso", re.I))
 
 
 def session_key(cc, t):
@@ -112,7 +122,7 @@ def meetings(cc, did):
         _CACHE[cc] = ({r["District ID"]: r for f in files for r in csv.DictReader(open(os.path.join(d, f), encoding="utf-8"))}, titles)
     rows, titles = _CACHE[cc]
     r = rows.get(did) or {}
-    url = r.get("Channel URL", "")
+    url = CHECKED[cc].get(did, "") if cc in CHECKED else r.get("Channel URL", "")
     if not url or url not in titles or url in NOT_CHANNELS.get(cc, set()): return 0, "", [], ""
     edu, council, must, not_t = RULES.get(cc, (EDU, COUNCIL, COUNCIL_MUST, NOT_T))
     vids = [t for t in titles[url] if not not_t.search(t)]
@@ -153,6 +163,36 @@ NOT_CHANNELS = {
            "https://www.youtube.com/channel/UC3rOsD5LY68opkbDQnSjA7A",    # Santiago, Chile's capital
            "https://www.youtube.com/channel/UC3t9uauFej-XiU3VoNWKB-A"},   # Santiago, Dominican Republic (Ayuntamiento)
 }
+
+# Peru: most of what the search found are councils in Chile, Costa Rica, Argentina and Colombia with the same
+# names, so there only channels checked by hand as Peruvian count, for the district given (by district ID).
+_PE = "https://www.youtube.com/channel/"
+CHECKED = {"PE": {k: _PE + v for k, v in {
+    "PE-150101": "UCJ3f5r4cWt0aB_wRZPSejWQ", "PE-080101": "UCF9ojHlJloZwKDOzA5GrxFw", "PE-140101": "UCN4jLG_fhtebv1JQ9DWgzxQ",
+    "PE-040701": "UCIQQUl10eKVVSgwJI8jluIg", "PE-150111": "UCW2rXxUyC1IeRK4GRBRPY7A", "PE-150113": "UCjABI3bxBiscyimOSuzLzhA",
+    "PE-150115": "UCLifOhcJ6XAaF0GU2T6VARg", "PE-150121": "UCMdFUMIO9LIHpLbDmVxXEIA", "PE-150129": "UCKVQ8NsWNtZIdP9ZF4IVZ6w",
+    "PE-150131": "UCn2gaVv77AER_KNaJGZ28RQ", "PE-150135": "UCKkBxaHbSsY8IEsGsd8HXtw", "PE-150143": "UC8TDnlG1GaYFMmxeXNnFi_Q",
+    "PE-150701": "UCrenDH8TgyAz2jiuy_PdJ0A", "PE-150801": "UCqgZKEyw08kgfRDxNOaYQpA", "PE-150122": "UC8FiOrR4JKMX1gbFTcCqlqA",
+    "PE-170101": "UCn8fgzTt7vyGxx7XJjxthiw", "PE-200101": "UCVdp_iUn0qDLlSppUMNCmUA", "PE-200401": "UC9OicPMGlOBEXqGAoH7S0SA",
+    "PE-021201": "UCWVJkvnKmur8dg786wJJ70w",   # Huaylas province, whose capital is Caraz
+    "PE-021809": "UCil_Yf91yaQaMDVVAhcCz0g", "PE-050401": "UC23J1HNLtE_1_9faXqs4JCQ", "PE-070105": "UCfPiN3_pIi8YNAKk0EWdEUg",
+    "PE-080914": "UCWaGrJ3wuoM-BIdWIgHdAlQ", "PE-130107": "UCvetP1TUv-tFpImEjYPKG1g", "PE-130208": "UCf8-pfi_bQoFtQj98CGTArw",
+    "PE-150104": "UC9YnoLRTJW74orZDh-UOhFQ", "PE-150106": "UCpg-im9SD9DTIn84XTe6fgg", "PE-150110": "UCK-IYgrmoXvBZKCqhK98bBw",
+    "PE-150114": "UC70nQc3caJyhIQQHlwBb_RA", "PE-150116": "UCQQL72xP2L6lkFtEO9wkhkw", "PE-150128": "UCPHXgqgMGHiHF-jjgvExELg",
+    "PE-150130": "UC4zMDhTiNWkVZ8q8zcoITuw", "PE-150140": "UC-AkDvXd88-mhcirAdr4JRg", "PE-150142": "UCRs70NeKnDQvTZqTjzAg0JQ",
+    "PE-170102": "UCHlJ6WzNpVWg_KaF7aguEng", "PE-220201": "UCTjCeb9ggDIlwLxWzR1rS-g", "PE-250105": "UCGiUuor7J9yFe8J9p4aNY3Q",
+    "PE-250107": "UC-oSE57lL79rK3aepmY5bpw", "PE-250202": "UCH7p0VMERLz61DF3qglwmGg", "PE-050115": "UC9Xe1vm8VStutAoJUBJqpmQ",
+    "PE-110107": "UCI2tQgwzoXnRCILyieLJuFg", "PE-080108": "UCZltJAIVktGErXGt5HsVpsw", "PE-070106": "UC5388UeYO6oj4JXq4HHFeuw",
+    "PE-040101": "UC44tK57rCBV2scQtcTs87Jg", "PE-150117": "UC_yuEQsrS22GNLqT7R0xlGg", "PE-150120": "UCEGsSBdm3eOa8cjrVrEBwxw",
+    "PE-150124": "UCObrdr2CkkwbTnAdnr-Ruaw", "PE-150141": "UCN8I6t7LjFnrSD5dIgvCEDw", "PE-070104": "UCe53Z9uqvbc51ssQ3R27Y_Q",
+    "PE-080104": "UChAF18cDdXeN3vbIrKc1VeQ", "PE-080106": "UCKYFe4ppuLoPv39yGWgoI_A", "PE-120601": "UC2WBf-K3u8jsLfprLePFh1g",
+    "PE-060601": "UCcmZgayO2jPPu6_lrzXWozw", "PE-060801": "UCSqamMwpS4xdDMsZdj8b6QQ", "PE-010201": "UCGcKt1ovycMtsjdjS-C4rxQ",
+    "PE-021101": "UCGwdDewNh0gGIPHc5Sa1XKg", "PE-080401": "UC5M9-m2D_7aDca4tDUrhhOA", "PE-080909": "UCqNq2lecGmASUVTDmASeH6w",
+    "PE-081304": "UCDWro981gzoQK5jCQ_2vZ0Q", "PE-080408": "UC_0O2U4ZAciJH8RTVxOC3kA", "PE-230101": "UCZUeshy-Ud8IoVczaZ9--6w",
+    "PE-230302": "UC0adRZGi3WxiiC90oI0LtKw", "PE-230102": "UCJbL9DCPxUWwtWG2t2SZI0Q", "PE-070103": "UCEgNm3Xfil0I_KKFZshSvrg",
+    "PE-100102": "UC8uANJ7Nvq5BoPzzlwl--cg", "PE-110106": "UCGoE7OI_OeSJFjEi8W-IyIw", "PE-110113": "UCoJvYlcpRqgTSjp0Ezz5KnA",
+    "PE-140201": "UCPwi3vEslpVHjLBUqoXMSnw", "PE-150201": "UCF1bNMCs61IWDnlmbiK3AbQ", "PE-190202": "UCH89lak3ghSiNpbk2gqKb4A",
+    "PE-050404": "UCSZGko_PnCjJ5eJdMrGS0Ig", "PE-051101": "UCRi0Aa6053U1MDx1o8YuvJg", "PE-022001": "UCL-VQ_WuOhUUbc0UjK-i6Tw"}.items()}}
 
 
 FOREIGN = re.compile(r"deliberante|distrital de carmen alto|municipalidad distrital|provincial", re.I)   # Argentina's and Peru's councils
@@ -201,20 +241,21 @@ def write(cc, key, rows, feats):
     own = owners(cc, rows)
     for r in rows:
         n, url, keep, kind = meetings(cc, r["District ID"])
-        if url and own.get(url) != r["District ID"]: n, url, keep, kind = 0, "", [], ""
+        if url and cc not in CHECKED and own.get(url) != r["District ID"]: n, url, keep, kind = 0, "", [], ""
         latest, years = date_summary(keep) if n else ("", "")
         r.update({"Available Board Meetings": n, "Meetings type": kind, "Meetings source": url, "Latest meeting": latest, "Meetings by year": years})
     cols = ["District", "Region", "Locale", "Available Board Meetings", "Meetings type", "Meetings source", "Latest meeting", "Meetings by year",
             "Population", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
-    extra = [c for c in ("Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households") if any(r.get(c) not in (None, "") for r in rows)]
+    extra = [c for c in ("Province", "Poverty range", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households") if any(r.get(c) not in (None, "") for r in rows)]
     pov = "Poverty rate (all ages)"
     cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
+    if "Province" in cols: cols.remove("Province"); cols.insert(cols.index("Region") + 1, "Province")
     rows.sort(key=lambda r: r["District"])
     with open(os.path.join(DOCS, f"{key}.csv"), "w", newline="", encoding="utf-8") as fo:
         w = csv.DictWriter(fo, fieldnames=cols, restval="", extrasaction="ignore"); w.writeheader(); w.writerows(rows)
     json.dump({"type": "FeatureCollection", "features": feats}, open(os.path.join(DOCS, "map", f"{key}.json"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
-    print(cc, len(rows), "rows; poverty", sum(1 for r in rows if r.get(pov)), "; enrollment", sum(1 for r in rows if r["Enrollment"]),
+    print(cc, len(rows), "rows; poverty", sum(1 for r in rows if r.get(pov)), "; enrollment", sum(1 for r in rows if r.get("Enrollment")),
           "; meetings", sum(1 for r in rows if r["Available Board Meetings"]), "; no border", [r["District"] for r in rows if not r.get("_geo")][:10])
 
 
@@ -453,6 +494,26 @@ def peru_poverty():
     for m in re.finditer(r"^\s*(\d{4})00\s{2,}([A-ZÁÉÍÓÚÑÜ][A-ZÁÉÍÓÚÑÜ .'-]+?)\s{2,}\d", t, re.M):
         prov.setdefault(m.group(1), es_title(m.group(2)))
     return dist, prov
+
+
+def peru():
+    """1,874 districts. Schools are run by the regional education directorates and their local units (UGEL), not by
+    the districts; the district council (concejo municipal) stands in for meetings. INEI publishes district poverty
+    only as a 95% confidence interval; the midpoint is shown."""
+    dist, prov = peru_poverty()
+    geo = {f["properties"]["IDDIST"]: f for f in json.load(open(os.path.join(IN, "peru", "peru_distrital_simple.geojson"), encoding="utf-8"))["features"] if f.get("geometry")}
+    rows, feats = [], []
+    for code, d in sorted(dist.items()):
+        f = geo.get(code); area = area_km2(f["geometry"]) if f else 0
+        dens = d["pop"] / area if area and d["pop"] else 0
+        did = f"PE-{code}"
+        rows.append({"District": d["name"], "Region": PE_DEPT[code[:2]], "Province": prov.get(code[:4], ""), "Population": d["pop"],
+                     "Poverty rate (all ages)": f"{(d['lo'] + d['hi']) / 2:.2f}%", "Poverty range": f"{d['lo']:.1f}–{d['hi']:.1f}%",
+                     "Poverty note": "Share of people below the monetary poverty line, all ages, 2018 (INEI poverty map): midpoint of the 95% confidence interval; no child rate is published by district",
+                     "School system": "Regional education directorate (UGEL)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
+        if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": d["name"]}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    write("PE", "peru", rows, feats)
 
 
 if __name__ == "__main__":

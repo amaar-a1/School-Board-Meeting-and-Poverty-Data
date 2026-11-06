@@ -237,6 +237,17 @@ window.SOURCES = [
     note: "Built by data-prep/build_latam.py. Municipalities are matched to borders by name within their state."
   },
   {
+    only: "Peru",
+    group: "Peru: districts, poverty and population",
+    items: [
+      { title: "Poverty and population: INEI, Mapa de pobreza monetaria provincial y distrital 2018, Anexo 1 (95% confidence interval of the monetary poverty rate and 2018 population by district)", url: "https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1718/Libro.pdf" },
+      { title: "Borders: district boundaries (INEI), as GeoJSON by Juan Eladio Sánchez Rosas (peru-geojson)", url: "https://github.com/juaneladio/peru-geojson" },
+      { title: "Meetings (stand-in): each council's YouTube channel, checked by hand (in the “Meetings source” column)", url: "https://www.youtube.com/" },
+      { title: "Checked but not used: the Ministry of Education's enrollment statistics (ESCALE) and the national open data portal, which refuse automated downloads", url: "https://escale.minedu.gob.pe/" }
+    ],
+    note: "Built by data-prep/build_latam.py. Districts are matched to borders by their INEI code (ubigeo); 50 have no border in the file."
+  },
+  {
     only: "Mexico",
     group: "Mexico: municipalities, poverty and enrollment",
     items: [

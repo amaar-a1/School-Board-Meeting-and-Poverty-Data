@@ -33,7 +33,7 @@
       "Ask about the data": "Poser une question", "Language": "Langue", "Show on map": "Voir sur la carte", "Show in data table": "Voir dans le tableau",
       "United States": "États-Unis", "United Kingdom": "Royaume-Uni", "Germany": "Allemagne", "Denmark": "Danemark", "Finland": "Finlande",
       "Iceland": "Islande", "Ireland": "Irlande", "Netherlands": "Pays-Bas", "New Zealand": "Nouvelle-Zélande", "Norway": "Norvège",
-      "Sweden": "Suède", "Switzerland": "Suisse", "Canada": "Canada", "Saint-Pierre-et-Miquelon": "Saint-Pierre-et-Miquelon", "Chile": "Chili", "Colombia": "Colombie", "Mexico": "Mexique", "Brazil": "Brésil",
+      "Sweden": "Suède", "Switzerland": "Suisse", "Canada": "Canada", "Saint-Pierre-et-Miquelon": "Saint-Pierre-et-Miquelon", "Chile": "Chili", "Colombia": "Colombie", "Mexico": "Mexique", "Brazil": "Brésil", "Peru": "Pérou",
       "Notes and sources are in English.": "Les notes et les sources sont en anglais."
     },
     es: {
@@ -65,7 +65,7 @@
       "Ask about the data": "Preguntar sobre los datos", "Language": "Idioma", "Show on map": "Ver en el mapa", "Show in data table": "Ver en la tabla",
       "United States": "Estados Unidos", "United Kingdom": "Reino Unido", "Germany": "Alemania", "Denmark": "Dinamarca", "Finland": "Finlandia",
       "Iceland": "Islandia", "Ireland": "Irlanda", "Netherlands": "Países Bajos", "New Zealand": "Nueva Zelanda", "Norway": "Noruega",
-      "Sweden": "Suecia", "Switzerland": "Suiza", "Canada": "Canadá", "Saint-Pierre-et-Miquelon": "San Pedro y Miquelón", "Chile": "Chile", "Colombia": "Colombia", "Mexico": "México", "Brazil": "Brasil",
+      "Sweden": "Suecia", "Switzerland": "Suiza", "Canada": "Canadá", "Saint-Pierre-et-Miquelon": "San Pedro y Miquelón", "Chile": "Chile", "Colombia": "Colombia", "Mexico": "México", "Brazil": "Brasil", "Peru": "Perú",
       "Notes and sources are in English.": "Las notas y las fuentes están en inglés."
     }
   };
