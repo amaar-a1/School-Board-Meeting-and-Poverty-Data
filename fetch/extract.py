@@ -1,177 +1,101 @@
-# Temporary: download the files found for the next data gaps, and look further where the first pass failed.
-# Writes to fetch/out/g2/ (files over 90 MB are summarised instead of kept).
-import json, os, re, urllib.request, urllib.parse, time, traceback, zipfile, io, csv
-OUT = "fetch/out/g2"; os.makedirs(OUT, exist_ok=True)
+# Temporary: second pass for the data gaps. Writes to fetch/out/g3/.
+import json, os, re, urllib.request, urllib.parse, time, traceback, zipfile, io, csv, subprocess
+OUT = "fetch/out/g3"; os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
 log = open(f"{OUT}/log.txt", "w")
-
-
 def get(url, n=None, data=None, hdr=None, method=None, timeout=300):
     req = urllib.request.Request(url, data=data, headers={**UA, **(hdr or {})}, method=method)
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.status, r.headers.get("Content-Type", ""), r.read() if n is None else r.read(n)
-
-
 def step(name, f):
     t = time.time()
-    try:
-        res = f()
-        log.write(f"== {name} ({time.time()-t:.0f}s)\n{res}\n\n")
-    except Exception:
-        log.write(f"== {name}\nERR {traceback.format_exc()[-1200:]}\n\n")
+    try: res = f(); log.write(f"== {name} ({time.time()-t:.0f}s)\n{res}\n\n")
+    except Exception: log.write(f"== {name}\nERR {traceback.format_exc()[-800:]}\n\n")
     log.flush(); time.sleep(2)
+def curl(name, url, extra=()):
+    r = subprocess.run(["curl", "-sSL", "--retry", "5", "--retry-all-errors", "--retry-delay", "20", "-m", "1800", "-A", UA["User-Agent"], *extra, "-o", f"{OUT}/{name}", "-w", "%{http_code} %{size_download}", url], capture_output=True, text=True)
+    return r.stdout + " " + r.stderr[-300:]
 
-
-def save(name, url, **kw):
-    s, ct, b = get(url, **kw)
-    open(f"{OUT}/{name}", "wb").write(b)
-    return f"{s} {ct} {len(b)} bytes -> {name}"
-
-
-# --- CivicSearch: keep the app script to find how it loads a place's meetings
+# CivicSearch search API: what one place's results look like
 def civic():
-    s, ct, b = get("https://schools.civicsearch.org/main.js")
-    open(f"{OUT}/civic_main.js", "wb").write(b)
-    t = b.decode("utf-8", "replace")
-    hits = sorted(set(re.findall(r'["\'`]([^"\'`]{0,60}(?:api|get_|search|meeting)[^"\'`]{0,60})["\'`]', t)))
-    return f"{len(b)} bytes\n" + "\n".join(h for h in hits if "/" in h or "get_" in h)[:20000]
-step("civicsearch main.js", civic)
-
-# --- Germany: Regionalstatistik GENESIS REST (POST with credentials in headers)
-def genesis():
+    pl = json.loads(get("https://schools.civicsearch.org/api/get_place_list")[2])
     out = []
-    for base in ["https://www.regionalstatistik.de/genesisws/rest/2020", "https://www-genesis.destatis.de/genesisWS/rest/2020"]:
-        h = {"username": "GAST", "password": "GAST", "Content-Type": "application/x-www-form-urlencoded"}
-        try:
-            s, ct, b = get(base + "/helloworld/logincheck", data=b"language=de", hdr=h, method="POST", n=2000); out.append(f"{base} logincheck {s} {b[:300]!r}")
-        except Exception as e:
-            out.append(f"{base} logincheck ERR {e}")
-        for name in ["21111-01-03-4", "21111-02-06-4", "21111-01-04-4", "21111-02-01-4"]:
-            body = urllib.parse.urlencode({"name": name, "area": "all", "compress": "false", "format": "ffcsv", "language": "de"}).encode()
+    for p in pl[:2]:
+        for q in [{"keywords": "meeting", "lonlat": f"{p['longitude']},{p['latitude']}", "search_radius": "0"},
+                  {"keywords": "board", "lonlat": f"{p['longitude']},{p['latitude']}", "search_radius": "0", "start_date": "2020-01-01", "end_date": "2026-12-31"}]:
+            u = "https://schools.civicsearch.org/api/search?" + urllib.parse.urlencode(q)
             try:
-                s, ct, b = get(base + "/data/tablefile", data=body, hdr=h, method="POST")
-                fn = f"de_{name}_{'rs' if 'regional' in base else 'ds'}.csv"
-                open(f"{OUT}/{fn}", "wb").write(b); out.append(f"{name} {s} {ct} {len(b)} {b[:300]!r}")
+                s, ct, b = get(u); open(f"{OUT}/civic_search_{len(out)}.json", "wb").write(b)
+                d = json.loads(b)
+                out.append(f"{u} {s} {len(b)} type {type(d).__name__} keys {list(d)[:20] if isinstance(d, dict) else len(d)}\n{b[:2500]!r}")
             except Exception as e:
-                out.append(f"{name} ERR {e}")
+                out.append(f"{u} ERR {e}")
             time.sleep(2)
     return "\n".join(out)
-step("genesis POST", genesis)
+step("civicsearch search", civic)
 
-# --- Iceland: pupils by school (SKO02102), metadata and all data
-def iceland():
-    u = "https://px.hagstofa.is/pxis/api/v1/is/Samfelag/skolamal/2_grunnskolastig/0_gsNemendur/SKO02102.px"
-    s, ct, meta = get(u); open(f"{OUT}/is_SKO02102_meta.json", "wb").write(meta)
-    m = json.loads(meta)
-    q = {"query": [{"code": v["code"], "selection": {"filter": "item", "values": v["values"] if v["code"].lower().startswith(("sk", "school", "ár", "ar", "year")) or len(v["values"]) < 3 else [v["values"][0]]}} for v in m["variables"]],
-         "response": {"format": "csv"}}
-    # keep every school and the latest year; for other variables take their first value (usually the total)
-    for qq, v in zip(q["query"], m["variables"]):
-        txt = (v.get("text") or "").lower()
-        if "ár" in txt or "year" in txt: qq["selection"]["values"] = [v["values"][-1]]
-        elif "skól" in txt: qq["selection"]["values"] = v["values"]
-        else: qq["selection"]["values"] = [v["values"][0]]
-    s, ct, b = get(u, data=json.dumps(q).encode(), hdr={"Content-Type": "application/json"}, method="POST")
-    open(f"{OUT}/is_SKO02102.csv", "wb").write(b)
-    return json.dumps([(v["code"], v["text"], len(v["values"]), v["valueTexts"][:3], v["valueTexts"][-2:]) for v in m["variables"]], ensure_ascii=False) + f"\n{len(b)} bytes"
-step("iceland SKO02102", iceland)
-step("iceland schools register", lambda: save("is_grunnskolar.html", "https://island.is/grunnskolar"))
+# INEP school census summary 2025 (retry with curl)
+def inep():
+    s = curl("br_sinopse_2025.zip", "https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopse_estatistica_censo_escolar_2025.zip")
+    z = zipfile.ZipFile(f"{OUT}/br_sinopse_2025.zip"); info = "\n".join(f"{i.filename} {i.file_size}" for i in z.infolist())
+    xl = [i for i in z.infolist() if i.filename.lower().endswith((".xlsx", ".xls"))]
+    big = max(xl, key=lambda i: i.file_size); open(f"{OUT}/br_sinopse_2025.xlsx", "wb").write(z.read(big)); os.remove(f"{OUT}/br_sinopse_2025.zip")
+    return s + "\n" + info
+step("inep sinopse 2025", inep)
 
-# --- Ireland: school-level enrolment (primary and post-primary)
-step("ireland primary 2024/25", lambda: save("ie_primary_2024_25.xlsx", "https://assets.gov.ie/static/documents/09fe3ad4/Data_on_Individual_Schools_Mainstream_2024_25.xlsx"))
-step("ireland primary latest", lambda: save("ie_primary_latest.xlsx", "https://assets.gov.ie/static/documents/8e1b86ab/Data_on_Individual_Schools_Mainstream..xlsx"))
-def ie_pp():
-    s, ct, b = get("https://www.gov.ie/en/department-of-education/collections/post-primary-schools-enrolment-figures/")
-    t = b.decode("utf-8", "replace")
-    xs = sorted(set(re.findall(r'href=["\']([^"\']+\.xlsx?)["\']', t)))
-    out = "\n".join(xs)
-    pick = [x for x in xs if re.search(r"202[45]", x)] or xs[-1:]
-    for i, x in enumerate(pick[:3]):
-        out += "\n" + save(f"ie_postprimary_{i}.xlsx", urllib.parse.urljoin("https://www.gov.ie/", x))
-    return out
-step("ireland post-primary", ie_pp)
+# Brazil population and households by municipality (IBGE file server)
+step("ibge ftp estimativa 2025", lambda: curl("br_pop_2025.xls", "https://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2025/estimativa_dou_2025.xls"))
+step("ibge ftp listing censo 2022", lambda: get("https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/", 200000)[2].decode("utf-8", "replace")[:6000])
+step("sidra api", lambda: get("https://apisidra.ibge.gov.br/values/t/4709/n6/3550308/v/93", 5000, timeout=120)[2][:500])
 
-# --- Ireland ETBs: board minutes pages (for meeting counts)
-ETB = ["https://www.cdetb.ie", "https://www.ddletb.ie", "https://www.cmetb.ie", "https://www.cetb.ie", "https://www.corketb.ie", "https://www.donegaletb.ie",
-       "https://www.gretb.ie", "https://www.kwetb.ie", "https://www.kerryetb.ie", "https://www.kcetb.ie", "https://www.lcetb.ie", "https://www.lmetb.ie",
-       "https://www.loetb.ie", "https://www.msletb.ie", "https://www.tipperaryetb.ie", "https://www.wwetb.ie"]
-def etbs():
-    out = []
-    for u in ETB:
-        try:
-            s, ct, b = get(u, timeout=60); t = b.decode("utf-8", "replace")
-            hs = sorted(set(urllib.parse.urljoin(u, h) for h in re.findall(r'href=["\']([^"\']+)["\']', t) if re.search(r"board|minute|meeting|governance|about", h, re.I)))
-            out.append(f"{u} {s} {len(b)}\n  " + "\n  ".join(hs[:40]))
-        except Exception as e:
-            out.append(f"{u} ERR {e}")
-        time.sleep(2)
-    return "\n".join(out)
-step("ireland ETB sites", etbs)
+# Bolsa Família, September 2025: families per municipality
+def bf():
+    s = curl("bf.zip", "https://portaldatransparencia.gov.br/download-de-dados/novo-bolsa-familia/202509")
+    z = zipfile.ZipFile(f"{OUT}/bf.zip"); n = z.namelist()[0]
+    rd = csv.reader(io.TextIOWrapper(z.open(n), encoding="latin-1"), delimiter=";")
+    hdr = next(rd); cnt = {}; val = {}
+    im = [i for i, h in enumerate(hdr) if "SIAFI" in h.upper()][0]; iv = [i for i, h in enumerate(hdr) if "VALOR" in h.upper()][0]
+    iu = [i for i, h in enumerate(hdr) if h.strip().upper() == "UF"][0]; inm = [i for i, h in enumerate(hdr) if "NOME MUNIC" in h.upper()][0]
+    names = {}
+    for r in rd:
+        k = r[im]; cnt[k] = cnt.get(k, 0) + 1; val[k] = val.get(k, 0) + float(r[iv].replace(".", "").replace(",", ".") or 0); names[k] = (r[iu], r[inm])
+    with open(f"{OUT}/br_bolsa_familia_202509.csv", "w", newline="") as fo:
+        w = csv.writer(fo); w.writerow(["siafi", "uf", "municipio", "familias", "valor"])
+        for k in sorted(cnt): w.writerow([k, *names[k], cnt[k], round(val[k], 2)])
+    os.remove(f"{OUT}/bf.zip")
+    return f"{s} {hdr} {len(cnt)} municipalities, {sum(cnt.values())} families"
+step("bolsa familia", bf)
+# SIAFI to IBGE municipality codes (Tesouro Nacional table)
+step("siafi-ibge", lambda: curl("br_siafi_ibge.csv", "https://www.tesourotransparente.gov.br/ckan/dataset/abb968cb-3710-4f85-89cf-875c91b9c7f6/resource/eebb3bc6-9eea-4496-8bcf-304f33155282/download/TABMUN.csv"))
 
-# --- Mexico: CONEVAL municipal poverty 2020, INEGI census 2020 by locality (school attendance), borders
-step("coneval concentrado", lambda: save("mx_coneval_2020.zip", "https://www.coneval.org.mx/Medicion/Documents/Pobreza_municipal/2020/Concentrado_indicadores_de_pobreza_2020.zip"))
-def coneval_pages():
-    out = []
-    for u in ["https://www.coneval.org.mx/Medicion/Paginas/Pobreza-municipio-2010-2020.aspx", "https://www.coneval.org.mx/Medicion/Paginas/Pobreza_municipal.aspx",
-              "https://www.coneval.org.mx/Medicion/Paginas/pobreza-municipal-grupos-poblacion.aspx"]:
-        try:
-            s, ct, b = get(u); t = b.decode("utf-8", "replace")
-            out.append(f"{u} {s}\n  " + "\n  ".join(sorted(set(re.findall(r'href=["\']([^"\']+\.(?:zip|xlsx?|csv))["\']', t, re.I)))))
-        except Exception as e:
-            out.append(f"{u} ERR {e}")
-    return "\n".join(out)
-step("coneval pages", coneval_pages)
+# Mexico: INEGI census 2020, municipal totals
 def iter_mx():
-    s, ct, b = get("https://www.inegi.org.mx/contenidos/programas/ccpv/2020/datosabiertos/iter/iter_00_cpv2020_csv.zip", timeout=900)
-    out = f"{s} {ct} {len(b)}"
-    z = zipfile.ZipFile(io.BytesIO(b)); out += "\n" + "\n".join(z.namelist())
-    name = [n for n in z.namelist() if n.lower().endswith(".csv")][0]
+    s = curl("iter.zip", "https://www.inegi.org.mx/contenidos/programas/ccpv/2020/datosabiertos/iter/iter_00_cpv2020_csv.zip")
+    z = zipfile.ZipFile(f"{OUT}/iter.zip")
+    name = [n for n in z.namelist() if "conjunto_de_datos" in n and n.lower().endswith(".csv")][0]
     rows = csv.reader(io.TextIOWrapper(z.open(name), encoding="utf-8-sig", errors="replace"))
-    hdr = next(rows); out += "\n" + ",".join(hdr)
+    hdr = next(rows); n = 0
     with open(f"{OUT}/mx_iter_municipal.csv", "w", newline="") as fo:
         w = csv.writer(fo); w.writerow(hdr)
         for r in rows:
-            if len(r) > 5 and r[hdr.index("LOC")] == "0000" and r[hdr.index("MUN")] != "000": w.writerow(r)   # municipal totals
-    return out
+            if len(r) > 5 and r[hdr.index("LOC")] == "0000" and r[hdr.index("MUN")] != "000": w.writerow(r); n += 1
+    os.remove(f"{OUT}/iter.zip")
+    return f"{s} {n} municipalities\n" + ",".join(hdr)
 step("inegi iter 2020", iter_mx)
-step("geoboundaries MEX ADM2", lambda: save("mx_adm2.geojson", "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MEX/ADM2/geoBoundaries-MEX-ADM2_simplified.geojson"))
 
-# --- Brazil: school census summary, census 2022 income tables, Bolsa Família by municipality, borders
-def inep():
-    s, ct, b = get("https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopse_estatistica_censo_escolar_2025.zip", timeout=900)
-    z = zipfile.ZipFile(io.BytesIO(b)); names = z.namelist()
-    keep = [n for n in names if n.lower().endswith((".xlsx", ".xls"))]
-    for n in keep:
-        open(f"{OUT}/br_sinopse_2025.xlsx", "wb").write(z.read(n)); break
-    return f"{len(b)} bytes\n" + "\n".join(f"{i.filename} {i.file_size}" for i in z.infolist())
-step("inep sinopse 2025", inep)
-def sidra():
-    s, ct, b = get("https://servicodados.ibge.gov.br/api/v3/agregados", timeout=600)
-    d = json.loads(b); out = []
-    for p in d:
-        for a in p.get("agregados", []):
-            nm = a.get("nome", "")
-            if re.search(r"rendimento", nm, re.I) and re.search(r"censo|2022", p.get("nome", "") + nm, re.I):
-                out.append(f"{a['id']} | {p.get('nome')} | {nm}")
-    return "\n".join(out[:300])
-step("sidra income tables", sidra)
-def bf():
+# Germany: Regionalatlas (statistical offices' map service) layers, to find pupils by Kreis
+def ra():
     out = []
-    for ym in ["202509", "202508", "202506"]:
-        u = f"https://portaldatransparencia.gov.br/download-de-dados/novo-bolsa-familia/{ym}"
+    for u in ["https://www.gis-idmz.nrw.de/arcgis/rest/services/stba/regionalatlas/MapServer?f=json",
+              "https://regionalatlas.statistikportal.de/"]:
         try:
-            s, ct, b = get(u, n=2000, method="HEAD") if False else get(u, n=2000)
-            out.append(f"{u} {s} {ct} {b[:200]!r}")
-            break
+            s, ct, b = get(u, 3_000_000); t = b.decode("utf-8", "replace")
+            if u.endswith("json"):
+                d = json.loads(t); out.append(f"{u} {s} layers {len(d.get('layers', []))}: " + "; ".join(f"{l['id']}:{l['name']}" for l in d.get("layers", [])[:400]))
+            else:
+                out.append(f"{u} {s} {len(b)}\n" + "\n".join(sorted(set(re.findall(r'(?:src|href)=["\']([^"\']+)["\']', t)))[:60]))
         except Exception as e:
             out.append(f"{u} ERR {e}")
     return "\n".join(out)
-step("bolsa familia probe", bf)
-step("geoboundaries BRA ADM2", lambda: save("br_adm2.geojson", "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BRA/ADM2/geoBoundaries-BRA-ADM2_simplified.geojson"))
-
-# keep only what fits in git
-for f in os.listdir(OUT):
-    p = os.path.join(OUT, f)
-    if os.path.getsize(p) > 90_000_000:
-        log.write(f"removed {f} ({os.path.getsize(p)} bytes): too big for git\n"); os.remove(p)
+step("regionalatlas", ra)
 log.close()
