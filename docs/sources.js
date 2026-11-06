@@ -221,6 +221,20 @@ window.SOURCES = [
     note: "Built by data-prep/build_latam.py. Municipalities are matched to borders by name within their department (found from where each border lies). Barranquilla, Colosó, Providencia and Puerto Santander have no border in the file."
   },
   {
+    only: "Brazil",
+    group: "Brazil: municipalities, poverty stand-in and enrollment",
+    items: [
+      { title: "Bolsa Família families by municipality, September 2025: Portal da Transparência (Novo Bolsa Família, pagamentos)", url: "https://portaldatransparencia.gov.br/download-de-dados/novo-bolsa-familia/202509" },
+      { title: "Municipal codes (SIAFI to IBGE): Tesouro Nacional, Tabela de Municípios", url: "https://www.tesourotransparente.gov.br/ckan/dataset/lista-de-municipios-do-siafi" },
+      { title: "Population: IBGE, Estimativas da População 2025", url: "https://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2025/estimativa_dou_2025.xls" },
+      { title: "Households: IBGE, Censo Demográfico 2022 (SIDRA)", url: "https://sidra.ibge.gov.br/pesquisa/censo-demografico/demografico-2022/inicial" },
+      { title: "Enrollment: INEP, Sinopse Estatística da Educação Básica 2025", url: "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/sinopses-estatisticas/educacao-basica" },
+      { title: "Borders: geoBoundaries (gbOpen) Brazil ADM1 and ADM2, simplified", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings (stand-in): each chamber's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/build_latam.py. Municipalities are matched to borders by name within their state."
+  },
+  {
     only: "Mexico",
     group: "Mexico: municipalities, poverty and enrollment",
     items: [

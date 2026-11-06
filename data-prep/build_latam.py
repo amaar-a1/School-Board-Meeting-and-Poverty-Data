@@ -189,12 +189,14 @@ def write(cc, key, rows, feats):
             "Population", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
     extra = [c for c in ("Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families", "Households") if any(r.get(c) not in (None, "") for r in rows)]
+    pov = "Bolsa Família families per 100 households" if cc == "BR" else "Poverty rate (all ages)"   # Brazil's stand-in
+    cols = [pov if c == "Poverty rate (all ages)" else c for c in cols]
     cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
     rows.sort(key=lambda r: r["District"])
     with open(os.path.join(DOCS, f"{key}.csv"), "w", newline="", encoding="utf-8") as fo:
         w = csv.DictWriter(fo, fieldnames=cols, restval="", extrasaction="ignore"); w.writeheader(); w.writerows(rows)
     json.dump({"type": "FeatureCollection", "features": feats}, open(os.path.join(DOCS, "map", f"{key}.json"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
-    print(cc, len(rows), "rows; poverty", sum(1 for r in rows if r["Poverty rate (all ages)"]), "; enrollment", sum(1 for r in rows if r["Enrollment"]),
+    print(cc, len(rows), "rows; poverty", sum(1 for r in rows if r.get(pov)), "; enrollment", sum(1 for r in rows if r["Enrollment"]),
           "; meetings", sum(1 for r in rows if r["Available Board Meetings"]), "; no border", [r["District"] for r in rows if not r.get("_geo")][:10])
 
 
@@ -348,6 +350,60 @@ def mexico():
     write("MX", "mexico", rows, feats)
 
 
+BR_UF = {"11": "Rondônia", "12": "Acre", "13": "Amazonas", "14": "Roraima", "15": "Pará", "16": "Amapá", "17": "Tocantins",
+         "21": "Maranhão", "22": "Piauí", "23": "Ceará", "24": "Rio Grande do Norte", "25": "Paraíba", "26": "Pernambuco",
+         "27": "Alagoas", "28": "Sergipe", "29": "Bahia", "31": "Minas Gerais", "32": "Espírito Santo", "33": "Rio de Janeiro",
+         "35": "São Paulo", "41": "Paraná", "42": "Santa Catarina", "43": "Rio Grande do Sul", "50": "Mato Grosso do Sul",
+         "51": "Mato Grosso", "52": "Goiás", "53": "Distrito Federal"}
+BR_ABBR = {"RO": "11", "AC": "12", "AM": "13", "RR": "14", "PA": "15", "AP": "16", "TO": "17", "MA": "21", "PI": "22", "CE": "23",
+           "RN": "24", "PB": "25", "PE": "26", "AL": "27", "SE": "28", "BA": "29", "MG": "31", "ES": "32", "RJ": "33", "SP": "35",
+           "PR": "41", "SC": "42", "RS": "43", "MS": "50", "MT": "51", "GO": "52", "DF": "53"}
+
+
+def brazil():
+    """5,570 municipalities. Municipalities run most early-years schools (the rede municipal, under a municipal
+    education secretariat and council); the municipal chamber (câmara municipal) stands in for meetings."""
+    import xlrd
+    d = os.path.join(IN, "brazil")
+    sh = xlrd.open_workbook(os.path.join(d, "ibge_estimativa_populacao_2025.xls")).sheet_by_name("Municípios")
+    pop = {}
+    for i in range(2, sh.nrows):
+        v = sh.row_values(i)
+        uf, mun = str(v[1]).replace(".0", "").strip(), str(v[2]).replace(".0", "").strip()
+        if uf.isdigit() and mun.isdigit():
+            n = v[4] if isinstance(v[4], float) else re.sub(r"\(.*?\)|\D", "", str(v[4]).split("(")[0])
+            pop[f"{int(uf):02d}{int(mun):05d}"] = (str(v[3]).strip(), int(n) if n not in ("", None) else None)
+    siafi = {r[0].strip(): r[4].strip() for r in csv.reader(open(os.path.join(d, "tesouro_tabmun_siafi_ibge.csv"), encoding="latin-1"), delimiter=";") if len(r) > 4}
+    fam = {}
+    for r in csv.DictReader(open(os.path.join(d, "bolsa_familia_familias_202509.csv"), encoding="utf-8")):
+        c = siafi.get(r["siafi"].strip())
+        if c: fam[c] = fam.get(c, 0) + int(float(r["familias"]))
+    extra = {}   # optional census and school census tables: {ibge7: {column: value}}
+    for f in sorted(os.listdir(d)):
+        if f.startswith("br_") and f.endswith(".csv"):
+            for r in csv.DictReader(open(os.path.join(d, f), encoding="utf-8")):
+                extra.setdefault(r["ibge7"], {}).update({k: v for k, v in r.items() if k != "ibge7"})
+    adm1 = json.load(open(os.path.join(d, "gb_BRA_ADM1.geojson"), encoding="utf-8"))["features"]
+    st = {id(f): BR_ABBR.get(f["properties"]["shapeISO"].split("-")[-1]) for f in adm1}
+    adm2 = json.load(open(os.path.join(d, "gb_BRA_ADM2.geojson"), encoding="utf-8"))["features"]
+    geo = adm_match("BR", [{"name": n, "state": c[:2], "id": c} for c, (n, _) in pop.items()], adm2, adm1, st)
+    rows, feats = [], []
+    for code, (name, people) in sorted(pop.items()):
+        x = extra.get(code, {}); hh = int(x["Households"]) if x.get("Households", "").isdigit() else None
+        f = geo.get(code); area = area_km2(f["geometry"]) if f else 0
+        dens = people / area if area and people else 0
+        did = f"BR-{code}"
+        rows.append({"District": name, "Region": BR_UF[code[:2]], "Population": people or "",
+                     "Bolsa Família families per 100 households": f"{100 * fam[code] / hh:.2f}%" if hh and code in fam else "",
+                     "Bolsa Família families": fam.get(code, ""), "Households": hh or "",
+                     "Poverty note": "Stand-in for poverty: families receiving Bolsa Família (September 2025) per 100 households (2022 census); Brazil publishes no recent poverty rate by municipality",
+                     "Enrollment": x.get("Enrollment", ""), "Enrollment year": x.get("Enrollment year", ""),
+                     "Children 6–17": x.get("Children 6–17", ""), "School system": "Municipal and state school networks",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
+        if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    write("BR", "brazil", rows, feats)
+
+
 if __name__ == "__main__":
-    which = sys.argv[1:] or ["chile", "colombia", "mexico"]
+    which = sys.argv[1:] or ["chile", "colombia", "mexico", "brazil"]
     for w in which: globals()[w]()
