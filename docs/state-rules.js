@@ -197,5 +197,25 @@ window.STATE_RULES = {
         rule: "Where they exist, their meetings are usually closed, under each canton's municipal and education law; decisions are published." }
     ],
     note: "Each canton sets its own rules for schools and their boards. Check the canton's law before relying on this."
+  },
+  chile: {
+    title: "Rules for municipal council meetings",
+    checked: "November 6, 2026",
+    laws: [
+      { state: "Chile", covers: "Municipal councils (concejos municipales)", threshold: "",
+        rule: "Council sessions are public (Ley Orgánica Constitucional de Municipalidades, 18.695), and municipalities must publish their minutes under the transparency law (20.285); streaming isn't required, though many councils stream." },
+      { state: "Chile", covers: "Local Public Education Services (SLEP)", threshold: "",
+        rule: "Each SLEP has a local education council (Consejo Local de Educación Pública) of parents, students, teachers and others (Ley 21.040); no requirement to record or stream its meetings was found." }
+    ],
+    note: "Check the current law before relying on this."
+  },
+  colombia: {
+    title: "Rules for municipal council meetings",
+    checked: "November 6, 2026",
+    laws: [
+      { state: "Colombia", covers: "Municipal councils (concejos municipales)", threshold: "",
+        rule: "Council sessions are public (Ley 136 de 1994); many councils broadcast them on local TV, Facebook or YouTube, but no national requirement to stream was found." }
+    ],
+    note: "Schools are run by certified territorial entities (departments, districts and larger municipalities). Check the current law before relying on this."
   }
 };

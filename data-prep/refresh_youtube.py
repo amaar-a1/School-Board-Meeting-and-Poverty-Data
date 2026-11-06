@@ -29,6 +29,9 @@ def channels():
         from_csv(os.path.join(IN, "nordic", "youtube", f"{cc}_youtube.csv"))
     import build_germany as de
     from_csv(os.path.join(IN, "germany", "youtube", "DE_youtube.csv"), keep=lambda r: r.get("Channel") and de.channel_ok(r["Channel"], "(city)" in r["District"] or r["District"] in ("Berlin", "Hamburg"), r["District"]))
+    import build_latam as la
+    for cc, d in (("CL", "chile"), ("CO", "colombia")):
+        from_csv(os.path.join(IN, d, "youtube", f"{cc}_youtube.csv"), keep=lambda r, cc=cc: r.get("Channel URL") not in la.NOT_CHANNELS[cc])
     for f in ("IS_youtube.csv", "IS_youtube_rerun.csv"):
         from_csv(os.path.join(IN, "iceland", "youtube", f))
     from build_islands import ISLAND_CHANNELS

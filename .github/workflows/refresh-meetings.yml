@@ -34,6 +34,7 @@ jobs:
           python3 data-prep/build_iceland.py
           python3 data-prep/build_islands.py
           python3 data-prep/build_switzerland.py
+          python3 data-prep/build_latam.py
       - name: Commit
         run: |
           git add data-prep/inputs/youtube_titles.json docs/data

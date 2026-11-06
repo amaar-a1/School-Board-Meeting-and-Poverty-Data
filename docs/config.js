@@ -147,6 +147,30 @@ window.SITE_CONFIG = {
       sizeYearNote: "Cantons are grouped by pupils in compulsory school, 2024/25 (Federal Statistical Office).",
       note: "Switzerland's {rows} cantons, which each run their own school system through an education department and school law. Many municipalities or school communities also elect a school board (Schulpflege, Schulkommission or commission scolaire), but there are about 2,000 of them and no poverty figures below the canton, so the site shows the cantons. Child poverty is the share of children 0–17 receiving social assistance in 2025 (Federal Statistical Office), which leaves out poor families not on assistance, so it's lower than income-based rates elsewhere. The meeting count is a stand-in: sittings of the cantonal parliament (Kantonsrat, Grosser Rat, Landrat, Grand Conseil or Gran Consiglio), which passes the canton's school law and budget, recorded on YouTube and counted once per day, found for {withMeetings} cantons; most cantonal parliaments stream on their own websites, so 0 often means that.",
       footer: "Swiss cantons as of November 2026. Sources are listed on the Sources tab." },
+    // Chile: 345 comunas; schools run by the municipality or a Local Public Education Service (SLEP).
+    { name: "Chile", file: "data/chile.csv", country: "CL", recordLabel: "Comunas", textColumns: ["District ID", "Enrollment year"],
+      simple: { pov: "Poverty rate (all ages)", children: "Children", measure: "People in income poverty, all ages (Ministerio de Desarrollo Social, small-area estimates 2024)", rules: "chile", place: "Region" },
+      groups: { column: "Region", label: "Chile", names: {"OHIGGI": " O'Higgins", "ANTOFA": "Antofagasta", "ARICAY": "Arica y Parinacota", "ATACAM": "Atacama", "AYSEN": "Aysén", "BIOBIO": "Biobío", "COQUIM": "Coquimbo", "LAARAU": "La Araucanía", "LOSLAG": "Los Lagos", "LOSRIO": "Los Ríos", "MAGALL": "Magallanes", "MAULE": "Maule", "METROP": "Metropolitana", "TARAPA": "Tarapacá", "VALPAR": "Valparaíso", "NUBLE": "Ñuble"} },
+      chart: { type: "scatter", x: "Poverty rate (all ages)", y: "Available Board Meetings" },
+      compare: { title: "Poverty: comunas with vs. without council sessions found", by: "Available Board Meetings",
+        metric: "Poverty rate (all ages)", withLabel: "With 1+ sessions found", withoutLabel: "With no sessions found" },
+      localeNote: "Comunas are grouped by an estimated locale (see below).",
+      localeDef: "Locales are estimates from population density (projected population over the comuna's area): urban 2,000+ people per km², suburban 500–2,000, mixed 100–500, rural under 100.",
+      sizeYearNote: "Comunas are grouped by school enrollment in 2026 (Mineduc), all schools in the comuna.",
+      note: "Chile's {rows} comunas. Public schools are run either by the municipality (its education department, DAEM, or a municipal corporation) or, where the 2017 New Public Education reform has reached, by a Local Public Education Service (SLEP) with its own local council; the School system column says which. Poverty is the share of people of all ages in income poverty in 2024 (Ministerio de Desarrollo Social y Familia small-area estimates; the multidimensional rate is in its own column), since no child rate is published by comuna. The meeting count is a stand-in: sessions of the elected municipal council (concejo municipal), which approves the municipality's education plan and budget, recorded on the municipality's or council's YouTube channel (its education committee where recorded) and counted once per day, found for {withMeetings} comunas; many councils stream on Facebook or their own sites instead.",
+      footer: "Chilean comunas as of November 2026. Sources are listed on the Sources tab." },
+    // Colombia: 1,122 municipalities; schools run by certified territorial entities (ETC).
+    { name: "Colombia", file: "data/colombia.csv", country: "CO", recordLabel: "Municipalities", textColumns: ["District ID", "Enrollment year"],
+      simple: { pov: "Poverty rate (all ages)", children: "Children", measure: "Multidimensional poverty, all ages (DANE, 2018 census)", rules: "colombia", place: "Region" },
+      groups: { column: "Region", label: "Colombia", names: {"AMAZON": "Amazonas", "ANTIOQ": "Antioquia", "ARAUCA": "Arauca", "ARCHIP": "Archipiélago de San Andrés, Providencia y Santa Catalina", "ATLANT": "Atlántico", "BOGOTA": "Bogotá, D.C.", "BOLIVA": "Bolívar", "BOYACA": "Boyacá", "CALDAS": "Caldas", "CAQUET": "Caquetá", "CASANA": "Casanare", "CAUCA": "Cauca", "CESAR": "Cesar", "CHOCO": "Chocó", "CUNDIN": "Cundinamarca", "CORDOB": "Córdoba", "GUAINI": "Guainía", "GUAVIA": "Guaviare", "HUILA": "Huila", "LAGUAJ": "La Guajira", "MAGDAL": "Magdalena", "META": "Meta", "NARINO": "Nariño", "NORTED": "Norte de Santander", "PUTUMA": "Putumayo", "QUINDI": "Quindio", "RISARA": "Risaralda", "SANTAN": "Santander", "SUCRE": "Sucre", "TOLIMA": "Tolima", "VALLED": "Valle del Cauca", "VAUPES": "Vaupés", "VICHAD": "Vichada"} },
+      chart: { type: "scatter", x: "Poverty rate (all ages)", y: "Available Board Meetings" },
+      compare: { title: "Poverty: municipalities with vs. without council sessions found", by: "Available Board Meetings",
+        metric: "Poverty rate (all ages)", withLabel: "With 1+ sessions found", withoutLabel: "With no sessions found" },
+      localeNote: "Municipalities are grouped by an estimated locale (see below).",
+      localeDef: "Locales are estimates from population density (children 5–16 divided by 0.19, their approximate share of the population, over the municipality's area): urban 2,000+ people per km², suburban 500–2,000, mixed 100–500, rural under 100.",
+      sizeYearNote: "Municipalities are grouped by estimated enrollment in 2024: children 5–16 times the net enrollment rate (Ministry of Education).",
+      note: "Colombia's {rows} municipalities. Schools are run by 96 certified territorial entities (ETC): departments, districts and the larger municipalities; the School system column names the one in charge. Poverty is the share of people of all ages who are multidimensionally poor (DANE, 2018 census), since no child or income rate is published by municipality. The meeting count is a stand-in: sessions of the elected municipal council (concejo municipal) on its YouTube channel (its education committee where recorded), counted once per day, found for {withMeetings} municipalities; many councils stream on Facebook instead.",
+      footer: "Colombian municipalities as of November 2026. Sources are listed on the Sources tab." },
     // Germany: 400 districts and district-free cities (the school authorities), with each state's view.
     { name: "Germany", file: "data/germany.csv", country: "DE", recordLabel: "Districts", textColumns: ["District ID"],
       simple: { pov: "Percentage of Children in Low Income", children: "Children", measure: "Children under 15 receiving basic income support (SGB II), 2023 (Bertelsmann Stiftung, Wegweiser Kommune)", rules: "germany", place: "State" },
@@ -190,7 +214,7 @@ window.SITE_CONFIG = {
   ],
   // "All" button: every US district, territory school system and Canadian board together.
   combined: {
-    name: "All: United States, U.S. territories, Canada, Saint-Pierre-et-Miquelon, the United Kingdom, Ireland, the Nordic countries (with Iceland), the Netherlands, Switzerland, Germany, New Zealand and island countries", button: "All", recordLabel: "Districts and boards",
+    name: "All: United States, U.S. territories, Canada, Saint-Pierre-et-Miquelon, the United Kingdom, Ireland, the Nordic countries (with Iceland), the Netherlands, Switzerland, Germany, New Zealand, Chile, Colombia and island countries", button: "All", recordLabel: "Districts and boards",
     textColumns: ["District ID"], metric: "Child poverty rate",
     measures: {
       us: "Children 5–17 in poverty (Census SAIPE 2024)",

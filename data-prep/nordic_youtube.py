@@ -28,11 +28,16 @@ C = {
     # Germany: district councils (Kreistag) and city councils, and their school committees (Schulausschuss).
     "DE": dict(file="germany", q="{} Kreistag Sitzung", chan=r"kreis|stadt|kreistag|landratsamt|rat\b|region|städteregion|bürgerschaft|abgeordnetenhaus",
                edu=r"schul|bildung", meet=r"ausschuss|sitzung|kreistag|stadtrat|ratssitzung|stadtverordnet|bürgerschaft"),
+    # Chile and Colombia: municipal councils (concejo municipal) and their education committees.
+    "CL": dict(file="chile", q="concejo municipal {} sesión", chan=r"municipalidad|concejo|muni\b|alcald|comuna",
+               edu=r"educaci[óo]n|escuela|liceo|daem|slep", meet=r"sesi[óo]n|concejo|comisi[óo]n"),
+    "CO": dict(file="colombia", q="concejo de {} sesión", chan=r"concejo|alcald|municipio|gobernaci",
+               edu=r"educaci[óo]n|escuela|colegio", meet=r"sesi[óo]n|plenaria|concejo|comisi[óo]n"),
     "NL": dict(file="netherlands", q="gemeente {} raadsvergadering", chan=r"gemeente|gemeenteraad|raad|griffie",
                edu=r"onderwijs|jeugd|school|kind",
                meet=r"commissie|raad|vergadering|beeldvorm|oordeelvorm"),
 }
-GENERIC = set("kommune kommun kunta kaupunki stad gemeente municipality the og och ja en de het city district stadt kreis landkreis".split())
+GENERIC = set("kommune kommun kunta kaupunki stad gemeente municipality the og och ja en de het city district stadt kreis landkreis del la el los las".split())
 ANY_MEET = {cc: re.compile(c["meet"], re.I) for cc, c in C.items()}
 
 
