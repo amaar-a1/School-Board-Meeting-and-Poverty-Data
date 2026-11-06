@@ -212,33 +212,23 @@
   function renderTabs() {
     const tabs = $("tabs"), ps = cfg.perState;
     tabs.hidden = false;
-    tabs.innerHTML = '<span class="tabs-label">Data:</span>';
-    // One button per country-wide data set: the US (perState.from) and any with a `country`.
-    // In alphabetical order of their labels; "All" goes last.
-    const buttons = datasets.filter((d) => (ps && d.name === ps.from) || d.country)
+    tabs.innerHTML = '<label class="tabs-label" for="country-select">Country:</label>';
+    // A menu with one entry per country-wide data set: the US (perState.from) and any with a `country`,
+    // in alphabetical order of their labels; "All" goes last.
+    const countries = datasets.filter((d) => (ps && d.name === ps.from) || d.country)
       .sort((a, b) => (a.button || a.name).localeCompare(b.button || b.name));
-    buttons.forEach((d, i) => {
-      const b = document.createElement("button");
-      b.type = "button";
-      b.role = "tab";
-      b.className = "country-button";
-      if (ps && d.name === ps.from) b.id = "national-button";
-      b.dataset.name = d.name;
-      b.textContent = d.button || d.name;
-      b.addEventListener("click", () => selectDataset(d));
-      tabs.appendChild(b);
+    const csel = document.createElement("select");
+    csel.id = "country-select";
+    const byName = {};
+    [...countries, ...(combined ? [combined] : [])].forEach((d) => {
+      const o = new Option(d.button || d.name, d.name);
+      o.className = "country-option";
+      if (d === combined) o.title = combined.name;
+      csel.add(o);
+      byName[d.name] = d;
     });
-    if (combined) {
-      const b = document.createElement("button");
-      b.type = "button";
-      b.role = "tab";
-      b.className = "country-button";
-      b.dataset.name = combined.name;
-      b.textContent = combined.button || combined.name;
-      b.title = combined.name;
-      b.addEventListener("click", () => selectDataset(combined));
-      tabs.appendChild(b);
-    }
+    csel.addEventListener("change", () => { if (byName[csel.value]) selectDataset(byName[csel.value]); });
+    tabs.appendChild(csel);
     const sel = document.createElement("select");
     sel.id = "state-select";
     sel.setAttribute("aria-label", "State or province");
@@ -304,7 +294,14 @@
     if (booted) setUrl(keepPlace ? { d: keyOf(ds) } : { d: keyOf(ds), place: "" });
     sort = { col: null, dir: 1 };
     const sel = $("state-select");
-    document.querySelectorAll(".country-button").forEach((b) => b.setAttribute("aria-selected", String(!current.state && b.dataset.name === current.name)));
+    // The country menu shows the country of a state's or region's view too.
+    const csel = $("country-select");
+    if (csel) {
+      const nat = current.combined ? current : current.state
+        ? datasets.find((d) => d.name === current.sourcesAs) || datasets.find((d) => d.name === cfg.perState.from)
+        : current;
+      csel.value = nat ? nat.name : "";
+    }
     if (sel) { sel.value = current.state || ""; sel.classList.toggle("active", !!current.state); }
     $("dataset-note").textContent = current.note || "";
     $("footer").textContent = current.footer || "";
@@ -336,7 +333,7 @@
   function setView(name) {
     view = name;
     document.querySelectorAll("[data-view]").forEach((el) => { el.hidden = el.dataset.view !== name; });
-    document.querySelectorAll("[data-view-tab]").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.viewTab === name)));
+    if ($("view-select").value !== name) $("view-select").value = name;
     $("filters").hidden = !current || !["overview", "map"].includes(name);
     if (name === "size" && current) renderSize();
     if (name === "locale" && current) renderLocale();
@@ -1172,10 +1169,11 @@
   $("search").addEventListener("input", renderTable);
   $("download").addEventListener("click", download);
   ["x-col", "y-col", "chart-type", "chart-limit"].forEach((id) => $(id).addEventListener("change", renderChart));
-  document.querySelectorAll("[data-view-tab]").forEach((b) => b.addEventListener("click", () => {
-    setView(b.dataset.viewTab);
-    history.replaceState(null, "", b.dataset.viewTab === "overview" ? location.pathname + location.search : `#${b.dataset.viewTab}`);
-  }));
+  $("view-select").addEventListener("change", () => {
+    const v = $("view-select").value;
+    setView(v);
+    history.replaceState(null, "", v === "overview" ? location.pathname + location.search : `#${v}`);
+  });
   // Header links: "By district size" and "Sources" open those views; the others jump to a section of the overview.
   document.querySelectorAll(".links a").forEach((a) => a.addEventListener("click", () => {
     setView(a.dataset.viewLink || "overview");
