@@ -287,12 +287,13 @@ def adm_match(cc, rows, adm2, adm1, state_of_adm1):
     """Borders for rows ({"name", "state", "id"}): exact (state, name) first, then a prefix match within the
     state, then a name unique in the country; a border is never used twice. Returns {id: feature}."""
     full = lambda s: re.sub(r"\bDr\.\s*", "Doctor ", re.sub(r"\bGral\.\s*", "General ", str(s)))   # Nuevo León's abbreviations
-    keyed = {}
+    keyed, dup = {}, []
     for f in adm2:
         c = centroid(f["geometry"])
         st = next((state_of_adm1[id(a)] for a in adm1 if pip(c, a["geometry"])), None)
         n = norm(full(f["properties"]["shapeName"])); n = ALIAS.get(cc, {}).get(n, n)
-        keyed.setdefault((st, n), f)
+        if (st, n) in keyed: dup.append((n, f))   # e.g. a border whose centre falls just over a state line
+        else: keyed[(st, n)] = f
     key = lambda r: ALIAS.get(cc, {}).get(norm(full(r["name"])), norm(full(r["name"])))
     bare = lambda k: re.sub(r"^(el|la|los|las|o|a|os|as)(?=[a-z]{4})", "", k)   # "El Carmen" / "Carmen"
     out = {r["id"]: keyed.get((r["state"], key(r))) for r in rows}
@@ -303,7 +304,7 @@ def adm_match(cc, rows, adm2, adm1, state_of_adm1):
         f = next((g for (d, k), g in keyed.items() if id(g) not in used and d == r["state"] and (k.startswith(n) or n.startswith(k)) and min(len(k), len(n)) >= 5), None)
         f = f or next((g for (d, k), g in keyed.items() if id(g) not in used and d == r["state"] and (bare(k) == bare(n) or (len(n) >= 12 and n in k))), None)
         if not f:
-            same = [g for (d, k), g in keyed.items() if k == n and id(g) not in used]
+            same = [g for (d, k), g in keyed.items() if k == n and id(g) not in used] + [g for k, g in dup if k == n and id(g) not in used]
             f = same[0] if len(same) == 1 else None
         if f: used.add(id(f)); out[r["id"]] = f
     return out
