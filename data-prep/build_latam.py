@@ -428,6 +428,33 @@ def brazil():
     write("BR", "brazil", rows, feats)
 
 
+PE_DEPT = {"01": "Amazonas", "02": "Áncash", "03": "Apurímac", "04": "Arequipa", "05": "Ayacucho", "06": "Cajamarca", "07": "Callao",
+           "08": "Cusco", "09": "Huancavelica", "10": "Huánuco", "11": "Ica", "12": "Junín", "13": "La Libertad", "14": "Lambayeque",
+           "15": "Lima", "16": "Loreto", "17": "Madre de Dios", "18": "Moquegua", "19": "Pasco", "20": "Piura", "21": "Puno",
+           "22": "San Martín", "23": "Tacna", "24": "Tumbes", "25": "Ucayali"}
+
+
+def es_title(s):
+    """'SAN JUAN DE LOPECANCHA' -> 'San Juan de Lopecancha'."""
+    small = {"de", "del", "la", "las", "los", "el", "y", "e", "en"}
+    w = s.strip().lower().split()
+    return " ".join(x if (i and x in small) else x[:1].upper() + x[1:] for i, x in enumerate(w))
+
+
+def peru_poverty():
+    """INEI, Mapa de pobreza monetaria provincial y distrital 2018, Anexo 1 (text of the PDF): per district its ubigeo,
+    2018 population and the 95% confidence interval of the share of people in monetary poverty; and province names."""
+    t = open(os.path.join(IN, "peru", "inei_mapa_pobreza_2018_anexo.txt"), encoding="utf-8").read()
+    num = lambda x: float(x.replace(" ", "").replace(",", "."))
+    dist = {}
+    for m in re.finditer(r"^\s*(\d{6})\s+(\d{3})\s+(.+?)\s{2,}(\d{1,3}(?: \d{3})*)\s+(\d{1,3},\d)\s+(\d{1,3},\d)\s+(\d{1,3}(?: \d{3})?)\s*$", t, re.M):
+        dist[m.group(1)] = {"name": es_title(m.group(3)), "pop": int(num(m.group(4))), "lo": num(m.group(5)), "hi": num(m.group(6)), "rank": int(num(m.group(7)))}
+    prov = {}
+    for m in re.finditer(r"^\s*(\d{4})00\s{2,}([A-ZÁÉÍÓÚÑÜ][A-ZÁÉÍÓÚÑÜ .'-]+?)\s{2,}\d", t, re.M):
+        prov.setdefault(m.group(1), es_title(m.group(2)))
+    return dist, prov
+
+
 if __name__ == "__main__":
     which = sys.argv[1:] or ["chile", "colombia", "mexico", "brazil"]
     for w in which: globals()[w]()

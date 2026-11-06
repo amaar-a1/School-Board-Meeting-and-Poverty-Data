@@ -39,6 +39,12 @@ C = {
                edu=r"educaci[óo]n|escuela", meet=r"sesi[óo]n|cabildo|comisi[óo]n"),
     "BR": dict(file="brazil", q="sessão câmara municipal {} {region}", chan=r"c[âa]mara|legislativo|vereador|cm[a-z]{1,3}\b",
                edu=r"educa[çc][ãa]o|escola|ensino", meet=r"sess[ãa]o|reuni[ãa]o|audi[êe]ncia|comiss[ãa]o"),
+    # Peru: district municipal councils (concejo municipal); Spain: town council plenary sessions (pleno), in the
+    # co-official languages too. Both name the department / province in the query.
+    "PE": dict(file="peru", q="sesión de concejo municipalidad {} {region}", chan=r"municipalidad|concejo|muni\b|mdl|mpp|alcald",
+               edu=r"educaci[óo]n|escuela|ugel", meet=r"sesi[óo]n|concejo|comisi[óo]n"),
+    "ES": dict(file="spain", q="pleno ayuntamiento {} {region}", chan=r"ayuntamiento|ajuntament|concello|udala|ayto|ajto|concejo|municipal|ple\b|pleno",
+               edu=r"educaci[óo]n|educaci[óo]|ensenyament|escolar|ense[ñn]anza|hezkuntza", meet=r"pleno|\bple\b|plenari|sesi[óo]n|sessi[óo]|comisi[óo]n|comissi[óo]|consejo escolar|osoko bilkura"),
     "NL": dict(file="netherlands", q="gemeente {} raadsvergadering", chan=r"gemeente|gemeenteraad|raad|griffie",
                edu=r"onderwijs|jeugd|school|kind",
                meet=r"commissie|raad|vergadering|beeldvorm|oordeelvorm"),
