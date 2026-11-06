@@ -89,6 +89,17 @@ RULES["MX"] = (re.compile(r"comisi[óo]n (edilicia )?(de |del )?[\"“]?((salud|
                re.compile(NOT_T.pattern + r"|consejo municipal electoral|consejo municipal \d|junta municipal \d|electoral", re.I))
 
 
+def session_key(cc, t):
+    """A key for an undated title. Brazilian chambers often post one clip per speaker ("Fulano - Pequeno Expediente da
+    85ª Sessão Ordinária"), so there the session's number and kind (and year, when given) identify the meeting."""
+    if cc == "BR":
+        m = re.search(r"(\d+)\s*[ªºa°o]?\.?\s*sess[ãa]o\s+(ordin|extra|solen|espec)", t, re.I)
+        if m:
+            y = re.search(r"\b(20\d\d)\b", t)
+            return f"{m.group(1)} {m.group(2).lower()} {y.group(1) if y else ''}"
+    return re.sub(r"\b(parte|part)\s*\d+\b|\(\d\)|\d/\d", "", t, flags=re.I).strip().lower()
+
+
 def meetings(cc, did):
     d = os.path.join(IN, DIRS[cc], "youtube")
     files = sorted(f for f in os.listdir(d) if re.fullmatch(rf"{cc}(_\d+)?_youtube\.csv", f)) if os.path.isdir(d) else []   # one file, or one per shard
@@ -107,7 +118,7 @@ def meetings(cc, did):
     vids = [t for t in titles[url] if not not_t.search(t)]
     for keep, kind in (([t for t in vids if edu.search(t)], "Education committee"),
                        ([t for t in vids if council.search(t) and must.search(t) and not edu.search(t)], "Council (stand-in)")):
-        keys = {parse_date(t) or re.sub(r"\b(parte|part)\s*\d+\b|\(\d\)|\d/\d", "", t, flags=re.I).strip().lower() for t in keep}
+        keys = {parse_date(t) or session_key(cc, t) for t in keep}
         if keys: return len(keys), url, keep, kind
     return 0, "", [], ""
 
