@@ -1,0 +1,317 @@
+== civicsearch main.js (0s)
+1692158 bytes
+!==i||!l||!l.route.index||xe(c.search)||(c.search=c.search?c.search.replace(/^\?/,
+)),t})(e),i=-1!==e.last_mention.link.search(/.*&t=[0-9]+s?/);return
+/search
+/search?${Lt(i)}
+/search?${s}${a}
+/search?k=${encodeURIComponent(n)}
+/search?k=${e}
+/search?k=${e}${n?
+/search?k=${e}&l=${i.queryText}
+/search?k=${i}
+/search?k=${i}${n?
+/search?k=${r}&l=${i}
+/search?l=${t}&k=${e.name}
+/search?t=${e.queryText}
+/search?t=${e.toLowerCase().replace(/[^a-z0-9]+/g,
+/search?t=${i.queryText}${n?
+/search?t=${i}${n?
+/search?t=${r.queryText}
+/search?t=affordable-housing
+/search?t=bicycle-transportation
+>${e.last_meeting_title}</a>\n        </div>\n    
+><strong>${e.name}</strong></a>\n            <p>${e.num_meetings} meetings</p>\n            <a href=
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap);
+See https://docs.mapbox.com/api/overview/#access-tokens-and-token-scopes
+get_keywords
+get_place?${e}
+get_place_list
+get_summary
+get_summary?${Lt({topic_query_id:n,location_query_id:r})}
+get_topics_by_city?query_id=${e.queryText}
+https://api.mapbox.com
+https://civicsearch.org
+https://civicsearch.org/
+https://civicsearch.org/cities
+https://civicsearch.org/feature/all
+https://civicsearch.org/subscribe
+https://civicsearch.org/topics
+https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap
+https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap
+https://onelook.com/?c=about&sel=civicsearch#feedback
+https://schools.civicsearch.org/api/
+
+== genesis POST (25s)
+https://www.regionalstatistik.de/genesisws/rest/2020 logincheck 200 b'{"Status":"Sie wurden erfolgreich an- und abgemeldet! Bei mehr als 10 parallelen Requests wurden l\xc3\xa4nger als 15 Minuten laufende Requests beendet.","Username":"GAST"}'
+21111-01-03-4 ERR HTTP Error 401: 
+21111-02-06-4 ERR HTTP Error 401: 
+21111-01-04-4 ERR HTTP Error 401: 
+21111-02-01-4 ERR HTTP Error 401: 
+https://www-genesis.destatis.de/genesisWS/rest/2020 logincheck ERR HTTP Error 307: Temporary Redirect
+21111-01-03-4 ERR HTTP Error 307: Temporary Redirect
+21111-02-06-4 ERR HTTP Error 307: Temporary Redirect
+21111-01-04-4 ERR HTTP Error 307: Temporary Redirect
+21111-02-01-4 ERR HTTP Error 307: Temporary Redirect
+
+== iceland SKO02102 (2s)
+[["Skóli", "Skóli", 253, ["Alls", "Austurbæjarskóli", "Álftamýrarskóli"], ["Villingaholtsskóli", "Þingborgarskóli"]], ["Ár", "Ár", 25, ["2001", "2002", "2003"], ["2024", "2025"]], ["Bekkur", "Bekkur", 13, ["Alls", "Drengir", "Stúlkur"], ["9. bekkur", "10. bekkur"]]]
+6695 bytes
+
+== iceland schools register (1s)
+200 text/html; charset=utf-8 216919 bytes -> is_grunnskolar.html
+
+== ireland primary 2024/25 (0s)
+200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 1020162 bytes -> ie_primary_2024_25.xlsx
+
+== ireland primary latest (0s)
+200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 986203 bytes -> ie_primary_latest.xlsx
+
+== ireland post-primary (1s)
+https://assets.gov.ie/static/documents/09fe3ad4/Data_on_Individual_Schools_PPOD_2024_25.xlsx
+https://assets.gov.ie/static/documents/d5fbb204/Data_on_Individual_Schools_post_primary..xlsx
+https://assets.gov.ie/static/documents/post-primary-schools-20192020.xlsx
+https://assets.gov.ie/static/documents/post-primary-schools-20202021.xlsx
+https://assets.gov.ie/static/documents/post-primary-schools-20212022-dfce3d90-386a-49bd-a30f-36ede87e45e5.xlsx
+https://assets.gov.ie/static/documents/post-primary-schools-20222023.xlsx
+https://assets.gov.ie/static/documents/post-primary-schools-20232024.xlsx
+https://assets.gov.ie/static/documents/post-primary-schools-list-19621963.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-19631964.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-19641965.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-19651966.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-19661967.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-19671968.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-19691970.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-19721973.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-19731974.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-19751976.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-19781979.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-19801981.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-19831984.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-19881989.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-19931994.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-19971998.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-19981999.xlsx
+https://assets.gov.ie/static/documents/post-primary-schools-list-19992000.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-20002001.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-20012002.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-20022003.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-20032004.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-20042005.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-20052006.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-20062007.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-20072008.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-20082009.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-20092010.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-20102011.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-20112012.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-20122013.xls
+https://assets.gov.ie/static/documents/post-primary-schools-list-20132014.xlsx
+https://assets.gov.ie/static/documents/post-primary-schools-list-20142015.xlsx
+https://assets.gov.ie/static/documents/post-primary-schools-list-20152016.xlsx
+https://assets.gov.ie/static/documents/post-primary-schools-list-20162017.xlsx
+https://assets.gov.ie/static/documents/post-primary-schools-list-20182019.xlsx
+https://assets.gov.ie/static/documents/post-primary-schools-lists-20172018.xlsx
+200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 265708 bytes -> ie_postprimary_0.xlsx
+200 application/octet-stream 272560 bytes -> ie_postprimary_1.xlsx
+
+== ireland ETB sites (119s)
+https://www.cdetb.ie ERR <urlopen error [Errno -2] Name or service not known>
+https://www.ddletb.ie 200 128990
+  https://www.ddletb.ie/about-our-schools/
+  https://www.ddletb.ie/corporate-about-us/
+  https://www.ddletb.ie/corporate/corporate-about-us/
+  https://www.ddletb.ie/corporate/corporate-about-us/accessibility/
+  https://www.ddletb.ie/corporate/corporate-about-us/contact-head-office/
+  https://www.ddletb.ie/corporate/corporate-about-us/publications/annual-reports/
+  https://www.ddletb.ie/corporate/corporate-about-us/publications/publications-corporate/
+  https://www.ddletb.ie/corporate/corporate-about-us/publications/publications-financial/
+  https://www.ddletb.ie/corporate/corporate-about-us/publications/publications-policies/
+  https://www.ddletb.ie/minutes/
+  https://www.ddletb.ie/schools/about-our-schools/
+  https://www.ddletb.ie/schools/about-our-schools/etb-supports-for-schools/
+https://www.cmetb.ie 200 348627
+  https://www.cmetb.ie/about-us/
+  https://www.cmetb.ie/cmetb-board/
+https://www.cetb.ie ERR <urlopen error _ssl.c:1063: The handshake operation timed out>
+https://www.corketb.ie 200 926711
+  https://www.corketb.ie/about-cork-etb/
+  https://www.corketb.ie/wp-content/uploads/2026/06/Cork-Education-and-Training-Board-Menu-Background.jpg
+  https://www.corketb.ie/wp-content/uploads/2026/06/cropped-Cork-Education-and-Training-Board-Favicon-180x180.png.webp
+  https://www.corketb.ie/wp-content/uploads/2026/06/cropped-Cork-Education-and-Training-Board-Favicon-192x192.png.webp
+  https://www.corketb.ie/wp-content/uploads/2026/06/cropped-Cork-Education-and-Training-Board-Favicon-32x32.png.webp
+  https://www.facebook.com/CorkEducationandTrainingBoard
+  https://www.linkedin.com/company/cork-education-and-training-board
+https://www.donegaletb.ie 200 140852
+  https://www.donegaletb.ie/donegal-etb/about-us/
+  https://www.donegaletb.ie/donegal-etb/board-members/
+https://www.gretb.ie ERR HTTP Error 403: Forbidden
+https://www.kwetb.ie 200 456070
+  https://kwetb.ie/about-us-2/
+  https://kwetb.ie/about-us-2/access-to-information/
+  https://kwetb.ie/about-us-2/accessibility/
+  https://kwetb.ie/about-us-2/financial-information-funding/
+  https://kwetb.ie/about-us-2/governance/
+  https://kwetb.ie/about-us-2/osd/
+  https://kwetb.ie/about-us-2/procurement/
+  https://kwetb.ie/about-us-2/publications/
+  https://kwetb.ie/about-us/accessibility/
+  https://kwetb.ie/kwetb-board-meeting-24th-march-2026-2-2-2-2-2/
+  https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4982.3897338832785!2d-6.049431078390189!3d52.981352884201414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867b0cbaa80c33b%3A0xcb1c3d588c90c154!2sKildare%20and%20Wicklow%20Education%20and%20Training%20Board!5e0!3m2!1sen!2sie!4v1638352068377!5m2!1sen!2sie
+  https://www.kwetb.ie/about-us
+https://www.kerryetb.ie 200 480209
+  https://kerryetb.ie/board/
+  https://kerryetb.ie/kerry-education-and-training-board-unveils-expanded-facilities-in-south-kerry-further-education-and-training-centre/
+  https://kerryetb.ie/lyreacrompane-primary-school-embraces-new-chapter-as-kerry-education-and-training-boards-fourth-community-national-school/
+  https://kerryetb.ie/staff-login-and-board/
+  https://kerryetb.ie/staff-login-and-board/staff-login/
+  https://www.facebook.com/Kerryeducationandtrainingboard/
+  https://www.linkedin.com/company/kerry-education-and-training-board/
+https://www.kcetb.ie 200 281393
+  https://kcetb.ie/en/about-us/
+  https://kcetb.ie/en/about-us/organisational-structure/
+  https://kcetb.ie/en/corporate/board-members/
+  https://www.facebook.com/people/Kilkenny-and-Carlow-Education-and-Training-Board-KCETB/100086424541598/
+  https://www.linkedin.com/company/kilkenny-and-carlow-education-and-training-board-kcetb/posts/?feedView=all
+https://www.lcetb.ie 200 197665
+  https://lcetb.ie/about-us/
+  https://lcetb.ie/board/#section-1
+  https://lcetb.ie/governance/
+  https://www.linkedin.com/company/limerick-&#038;-clare-education-&#038;-training-board
+https://www.lmetb.ie ERR HTTP Error 403: Forbidden
+https://www.loetb.ie 200 753405
+  https://loetb.ie/board/
+  https://loetb.ie/further-education-and-training-fet-service/quality-assurance/governance-and-management-of-quality-assurance/
+  https://loetb.ie/further-education-and-training-fet-service/quality-assurance/governance-and-management-of-quality-assurance/loetb-senior-management-team/
+  https://loetb.ie/organisation-support-development/about-laois-and-offaly-etb/
+  https://loetb.ie/organisation-support-development/corporate-services/board-and-committees/
+https://www.msletb.ie 200 294470
+  https://msletb.ie/about-us/
+  https://msletb.ie/about-us/corporate/
+  https://msletb.ie/about-us/corporate/access-to-information/
+  https://msletb.ie/about-us/corporate/access-to-information/data-protection/
+  https://msletb.ie/about-us/corporate/access-to-information/email-disclaimer/
+  https://msletb.ie/about-us/corporate/access-to-information/freedom-of-information/
+  https://msletb.ie/about-us/corporate/access-to-information/protected-disclosures-draft/
+  https://msletb.ie/about-us/corporate/access-to-information/protected-disclosures/
+  https://msletb.ie/about-us/corporate/access-to-information/publication-scheme/
+  https://msletb.ie/about-us/corporate/access-to-information/publication-scheme/financial-information/
+  https://msletb.ie/about-us/corporate/access-to-information/publication-scheme/functions-and-public-services-provided/
+  https://msletb.ie/about-us/corporate/access-to-information/publication-scheme/functions-and-public-services-provided/self-financing-night-classes/
+  https://msletb.ie/about-us/corporate/access-to-information/publication-scheme/information-about-the-foi-body/
+  https://msletb.ie/about-us/corporate/access-to-information/publication-scheme/information-about-the-foi-body/establishment-of-organisation/
+  https://msletb.ie/about-us/corporate/access-to-information/publication-scheme/information-about-the-foi-body/governance-management/
+  https://msletb.ie/about-us/corporate/access-to-information/publication-scheme/information-about-the-foi-body/pay-grading-structures/
+  https://msletb.ie/about-us/corporate/access-to-information/publication-scheme/information-about-the-foi-body/roles-responsibilities-and-functions/
+  https://msletb.ie/about-us/corporate/access-to-information/publication-scheme/information-about-the-foi-body/service-level-agreements-memorandum-of-understanding/
+  https://msletb.ie/about-us/corporate/access-to-information/publication-scheme/information-routinely-published-and-miscellaneous/
+  https://msletb.ie/about-us/corporate/board-members/
+  https://msletb.ie/about-us/corporate/customer-service-2/
+  https://msletb.ie/about-us/corporate/customer-service-3/
+  https://msletb.ie/about-us/corporate/customer-service-4/
+  https://msletb.ie/about-us/corporate/customer-service/
+  https://msletb.ie/about-us/corporate/procurement/
+  https://msletb.ie/about-us/policies-and-procedures/
+  https://msletb.ie/about-us/publications/
+  https://msletb.ie/about-us/who-we-are/
+  https://msletb.ie/further-education-and-training-fet/quality-assurance-qa/governance-and-management-of-quality/
+  https://msletb.ie/governance-and-management-of-qa/
+https://www.tipperaryetb.ie ERR HTTP Error 403: Forbidden
+https://www.wwetb.ie 200 193186
+  https://www.wwetb.ie/about/
+  https://www.wwetb.ie/about/customer-care/
+  https://www.wwetb.ie/about/organisation/
+  https://www.wwetb.ie/about/organisation/capital-projects/
+  https://www.wwetb.ie/about/organisation/compliance/
+  https://www.wwetb.ie/about/organisation/compliance/accessibility-statement/
+  https://www.wwetb.ie/about/organisation/finance/
+  https://www.wwetb.ie/about/organisation/human-resources/
+  https://www.wwetb.ie/about/organisation/human-resources/recruitment/
+  https://www.wwetb.ie/about/organisation/human-resources/vacancies/
+  https://www.wwetb.ie/about/organisation/quality/
+  https://www.wwetb.ie/about/organisation/the-board-of-wwetb/
+  https://www.wwetb.ie/about/organisation/vision-mission-values/
+  https://www.wwetb.ie/about/publications/
+  https://www.wwetb.ie/about/realt/
+  https://www.wwetb.ie/about/safety-health-and-welfare/
+  https://www.wwetb.ie/lets-talk-about-community-and-inclusion-this-september/
+
+== coneval concentrado (3s)
+200 application/x-zip-compressed 4401534 bytes -> mx_coneval_2020.zip
+
+== coneval pages (1s)
+https://www.coneval.org.mx/Medicion/Paginas/Pobreza-municipio-2010-2020.aspx 200
+  /Medicion/Documents/Pobreza_municipal/2020/Concentrado_indicadores_de_pobreza_2020.zip
+https://www.coneval.org.mx/Medicion/Paginas/Pobreza_municipal.aspx ERR HTTP Error 404: Not Found
+https://www.coneval.org.mx/Medicion/Paginas/pobreza-municipal-grupos-poblacion.aspx ERR HTTP Error 404: Not Found
+
+== inegi iter 2020 (22s)
+200 application/x-zip-compressed 36615814
+iter_00_cpv2020/catalogos/
+iter_00_cpv2020/catalogos/tam_loc.csv.csv
+iter_00_cpv2020/conjunto_de_datos/
+iter_00_cpv2020/conjunto_de_datos/conjunto_de_datos_iter_00CSV20.csv
+iter_00_cpv2020/diccionario_datos/
+iter_00_cpv2020/diccionario_datos/diccionario_datos_iter_00CSV20.csv
+iter_00_cpv2020/metadatos/
+iter_00_cpv2020/metadatos/metadatos_iter_00_cpv2020.txt
+tam_loc,descripcion
+
+== geoboundaries MEX ADM2 (1s)
+200 application/octet-stream 17217528 bytes -> mx_adm2.geojson
+
+== inep sinopse 2025
+ERR eeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 11, in get
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 487, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.14/urllib/request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/usr/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.14/urllib/request.py", line 1369, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 1324, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 104] Connection reset by peer>
+
+
+== sidra income tables
+ERR rd-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 11, in get
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 487, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.14/urllib/request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/usr/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.14/urllib/request.py", line 1369, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 1324, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 110] Connection timed out>
+
+
+== bolsa familia probe (1s)
+https://portaldatransparencia.gov.br/download-de-dados/novo-bolsa-familia/202509 200 application/x-zip-compressed b"PK\x03\x04\x14\x00\x00\x00\x08\x00C\xad\x91\\\xeb\x9d\xcb\x98\xcd]\x0b\x14P\x7f\x83}\x1b\x00\x00\x00202509_NovoBolsaFamilia.csv\xc4Y\xc9\x92\xc34\x10\xbdS\xc5?\xb88R\xe0\xd2\xbe\x14'\xc5\xd6d48R\x90\xec\x01\xe6\x93\xa9\xe2\xc4\x0f\xd1-GJ\x80\x02\x87\xe1\xc0,\x99\xd8\xb1\xf5\xdc\xaf_/\xea\xf9\xea\xf2K\x19\xa6t\xb9\xfa\xf5\x978\x05\xf7\xd5w\xf5L\xf6/>\xb7\x13\xdb\x0b\xbcL\xbf\xcd\xe1\x9c\x86\xcb\x16\xc3\xf4\xeb5\xa4\xa1\x04\xf7\x12\xe0\x83\x98.\xfe~\x1a\xaf\xbc\xbe\x0c/\xee=e?\x85\x19O\xc4P\x1eN\xb4[\xfep\xe6\xdd-)\x0fW\x97'\xbf\xb8\xaf\xbe\xfc\xe2+F\x98$\x16>"
+
+== geoboundaries BRA ADM2 (1s)
+200 application/octet-stream 41459218 bytes -> br_adm2.geojson
+
