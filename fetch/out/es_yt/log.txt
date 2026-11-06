@@ -1,0 +1,563 @@
+rín de la Torre ->  
+ES Álora -> Ayuntamiento de Álora 0
+ES Archidona -> Comunicación Ilustre Ayuntamiento de Archidona 0
+ES Rivas-Vaciamadrid -> Ayuntamiento de Rivas Vaciamadrid 1
+ES Benalmádena -> Ayuntamiento de Benalmádena 0
+ES San Agustín del Guadalix -> Ayuntamiento de San Agustin del Guadalix 0
+ES San Lorenzo de El Escorial -> Plenos Ayuntamiento de San Lorenzo de El Escorial 1
+ES Cártama -> Ayuntamiento de Cártama 0
+ES Coín -> Ayuntamiento de Coín 0
+ES San Martín de Valdeiglesias -> Ayuntamiento San Martín de Valdeiglesias 0
+ES Fuengirola ->  
+ES Manilva ->  
+ES Mijas ->  
+ES Sevilla la Nueva -> Sevilla la Nueva Ayuntamiento 0
+ES Nerja -> Ayuntamiento de Nerja 0
+ES Rincón de la Victoria -> Ayuntamiento Rincón de la Victoria 0
+ES Torrejón de Ardoz -> Ayuntamiento de Torrejón de Ardoz 0
+ES Torrox -> Ayuntamiento Torrox 0
+ES Torrelodones -> Ayuntamiento de Torrelodones 0
+ES Villanueva del Trabuco ->  
+ES Valdemorillo -> Ayuntamiento Valdemorillo (Canal Valdemorillo) 0
+ES Abanilla -> Ayuntamiento de Abanilla 0
+ES Valdetorres de Jarama ->  
+ES Águilas -> Ayuntamiento de Águilas 0
+ES Villa del Prado -> Ayuntamiento Villa del Prado 0
+ES Alguazas -> Ayuntamiento de Alguazas 0
+ES Villanueva de la Cañada -> Ayuntamiento de Villanueva de la Cañada 0
+ES Archena ->  
+ES Villarejo de Salvanés -> Ayuntamiento de Villarejo de Salvanés 0
+ES Blanca -> Ayuntamiento de Blanca 0
+ES Tres Cantos ->  
+ES Calasparra -> Ayuntamiento Calasparra 0
+ES Algarrobo -> Ayuntamiento Villa de Algarrobo 0
+ES Alhaurín el Grande ->  
+ES Antequera ->  
+ES Benahavís -> Ayuntamiento de Benahavís 0
+ES Campillos ->  
+ES Casares -> Ayuntamiento Casares 0
+ES Estepona ->  
+ES Málaga -> AYUNTAMIENTO VÉLEZ-MÁLAGA 0
+ES Marbella ->  
+ES Mollina ->  
+ES Pizarra ->  
+ES Ronda -> Ayuntamiento de Ronda 0
+ES Vélez-Málaga -> AYUNTAMIENTO VÉLEZ-MÁLAGA 0
+ES Torremolinos ->  
+ES Abarán ->  
+ES Alcantarilla ->  
+ES Alhama de Murcia -> Ayuntamiento de Alhama de Murcia 0
+ES Beniel ->  
+ES Bullas -> Ayuntamiento de Bullas 0
+ES Caravaca de la Cruz -> Ayuntamiento de Caravaca de la Cruz 0
+ES Cehegín ->  
+ES Cartagena -> Ayuntamiento de Cartagena 4
+ES Cieza -> Ayuntamiento de Cieza 0
+ES Ceutí -> Ayuntamiento de Ceutí 0
+ES Fuente Álamo de Murcia -> Ayuntamiento de Fuente Álamo de Murcia 0
+ES Fortuna -> Excmo. Ayuntamiento de Fortuna 0
+ES Librilla -> VideoPleno Librilla 0
+ES Jumilla ->  
+ES Lorca ->  
+ES Lorquí -> Ayuntamiento de Lorquí 0
+ES Mazarrón -> Ayuntamiento de Mazarrón 0
+ES Moratalla -> Ayuntamiento de Moratalla Canal Oficial 0
+ES Murcia -> Ayuntamiento de Murcia 0
+ES Molina de Segura -> Ayuntamiento de Molina de Segura 2
+ES San Javier -> Ayuntamiento San Javier 0
+ES Torre-Pacheco -> Ayuntamiento de Torre-Pacheco 0
+ES Mula -> Canal TIC Ayuntamiento de Mula 0
+ES Totana ->  
+ES Yecla ->  
+ES Puerto Lumbreras -> Ayuntamiento de Puerto Lumbreras 0
+ES San Pedro del Pinatar ->  
+ES Los Alcázares -> Ayuntamiento Los Alcázares 0
+ES Antsoain ->  
+ES Las Torres de Cotillas -> Ayuntamiento de Las Torres de Cotillas 0
+ES La Unión ->  
+ES Baztan -> Ayuntamiento de Nuevo Baztán 0
+ES Cintruénigo ->  
+ES Santomera -> Ayuntamiento de Santomera 0
+ES Eguesibar ->  
+ES Alsasua ->  
+ES Aranguren ->  
+ES Burlata ->  
+ES Estella-Lizarra -> Ayuntamiento de Estella-Lizarra Udala 0
+ES Corella ->  
+ES Iruña ->  
+ES San Adrián ->  
+ES Elortzibar ->  
+ES Uharte ->  
+ES Azkoien ->  
+ES Tudela -> Tudela Ayuntamiento 0
+ES Barañain -> Ayuntamiento de Barañáin / Barañaingo Udala 0
+ES Tafalla -> Ayuntamiento de Tafalla-Tafallako Udala 0
+ES Berriozar ->  
+ES Atarrabia ->  
+ES Allariz ->  
+ES Berriobeiti ->  
+ES O Barco de Valdeorras ->  
+ES Zizur Nagusia ->  
+ES Celanova ->  
+ES Ourense ->  
+ES Barbadás -> Concello de Barbadás 0
+ES San Cibrao das Viñas ->  
+ES O Carballiño ->  
+ES Aller ->  
+ES Cangas del Narcea ->  
+ES Xinzo de Limia -> Concello de Xinzo de Limia 0
+ES Carreño ->  
+ES O Pereiro de Aguiar ->  
+ES Verín ->  
+ES Corvera de Asturias -> Ayuntamiento de Corvera de Asturias - Plenos 0
+ES Gozón ->  
+ES Avilés -> Ayuntamiento de Avilés 0
+ES Langreo -> Ayuntamiento de Langreo 0
+ES Cangas de Onís ->  
+ES Lena ->  
+ES Castrillón -> Ayto Castrillón 0
+ES Llanera -> Ayuntamiento de Llanera 0
+ES Mieres -> AYUNTAMIENTO DE MIERES (ASTURIAS) 0
+ES Gijón -> Ayuntamiento de Gijón - Xixón 0
+ES Navia ->  
+ES Grado -> Ayuntamiento de Grado (Asturias) 0
+ES Laviana ->  
+ES Oviedo -> PSOE Ayuntamiento de Oviedo Conceyu d'Uviéu 4
+ES Valdés -> Ayuntamiento de Valdés 0
+ES Piloña -> ayuntamiento pilona 0
+ES Ribadesella ->  
+ES Llanes -> Ayuntamiento de Llanes 0
+ES Nava -> Nava Ayuntamiento 0
+ES Siero -> Ayuntamiento de Siero 0
+ES Noreña -> Ayuntamiento de Noreña 0
+ES Parres ->  
+ES Villaviciosa -> Ayuntamiento de Villaviciosa - Asturias 0
+ES Pravia -> Ayuntamiento Pravia 0
+ES Venta de Baños -> Ayuntamiento de Venta de Baños 0
+ES San Martín del Rey Aurelio ->  
+ES Tineo -> Canal TV Ayuntamiento de Tineo 0
+ES Palencia -> Ayuntamiento de Palencia 0
+ES Aguilar de Campoo ->  
+ES Agaete -> Ilustre Ayuntamiento de la Villa de Agaete 0
+ES Antigua ->  
+ES Guardo -> Ayuntamiento de Guardo 0
+ES Arucas ->  
+ES Villamuriel de Cerrato -> Ayuntamiento de Villamuriel de Cerrato 0
+ES Agüimes ->  
+ES Gáldar -> Ayuntamiento de Gáldar 0
+ES Arrecife -> Excmo. Ayuntamiento Arrecife 0
+ES Firgas -> Ayuntamiento de la Villa de Firgas 0
+ES Haría -> Ayuntamiento de Haría Lanzarote 0
+ES Mogán ->  
+ES La Oliva -> Ayuntamiento de La Oliva 0
+ES Las Palmas de Gran Canaria ->  
+ES San Bartolomé -> Ayuntamiento de San Bartolomé 0
+ES La Aldea de San Nicolás ->  
+ES Santa Lucía de Tirajana ->  
+ES Teguise -> Ayuntamiento Teguise 1
+ES Teror -> Ayuntamiento Teror 0
+ES Tinajo -> Ayuntamiento Tinajo Comunicación 0
+ES Valsequillo de Gran Canaria ->  
+ES Yaiza -> Ayuntamiento de Yaiza 0
+ES Bueu -> Concello de Bueu 0
+ES Cambados -> Transparencia Concello de Cambados 0
+ES A Estrada ->  
+ES O Grove ->  
+ES Lalín -> Concello de Lalín 0
+ES Meaño ->  
+ES Mos -> Concello Mos 0
+ES Pontevedra ->  
+ES Poio -> Salón de Plenos - Concello de Poio 0
+ES Ponte Caldelas -> Concello de Ponte Caldelas 0
+ES Ribadumia -> Concello Ribadumia 0
+ES Salceda de Caselas -> Concello de Salceda de Caselas 0
+ES Ingenio -> Ayuntamiento de Ingenio 31
+ES Sanxenxo -> Concello de Sanxenxo 0
+ES Moya -> Ayuntamiento de la Villa de Moya 0
+ES Soutomaior ->  
+ES Tui ->  
+ES Pájara -> Ayuntamiento de Pájara 0
+ES Vigo ->  
+ES Puerto del Rosario ->  
+ES Vilagarcía de Arousa ->  
+ES Cerdedo-Cotobade -> Concello de Cerdedo-Cotobade 0
+ES San Bartolomé de Tirajana -> Ilustre Ayuntamiento de la Villa de San Bartolomé de Tirajana 0
+ES Carbajosa de la Sagrada -> Ayuntamiento de Carbajosa de la Sagrada 0
+ES Santa Brígida -> Ayuntamiento de Santa Brígida 0
+ES Santa María de Guía de Gran Canaria ->  
+ES Telde ->  
+ES Tías ->  
+ES Tuineje ->  
+ES Vega de San Mateo ->  
+ES Guijuelo -> Ayuntamiento Guijuelo 0
+ES Baiona -> Concello de Baiona 0
+ES Caldas de Reis -> Concello Caldas de Reis 0
+ES Cangas -> Concello de Cangas Oficial 0
+ES Gondomar ->  
+ES A Guarda ->  
+ES Salamanca -> Ayuntamiento de Salamanca 0
+ES Villamayor ->  
+ES Marín -> Concello de Marín 0
+ES Moaña ->  
+ES Nigrán -> Concello de Nigrán 0
+ES O Porriño ->  
+ES Adeje -> Ayuntamiento de Adeje 0
+ES Arico ->  
+ES Breña Alta ->  
+ES Ponteareas -> Concello de Ponteareas 0
+ES Redondela ->  
+ES O Rosal ->  
+ES Salvaterra de Miño -> Concello Salvaterra de Miño 0
+ES Candelaria -> Ayuntamiento de Candelaria 0
+ES Silleda ->  
+ES Tomiño ->  
+ES La Guancha ->  
+ES Valga ->  
+ES Güímar ->  
+ES Vilaboa ->  
+ES Vilanova de Arousa ->  
+ES San Cristóbal de La Laguna -> Excmo. Ayuntamiento de San Cristóbal de La Laguna 0
+ES Béjar ->  
+ES Ciudad Rodrigo -> Ayto Ciudad Rodrigo 0
+ES La Matanza de Acentejo -> Ayuntamiento de La Matanza de Acentejo 0
+ES Peñaranda de Bracamonte ->  
+ES Santa Marta de Tormes ->  
+ES El Paso -> Ayuntamiento de El Paso 0
+ES Villares de la Reina ->  
+ES Arafo ->  
+ES Los Realejos -> Ayuntamiento de Los Realejos 0
+ES San Miguel de Abona ->  
+ES Arona -> Ayuntamiento de Arona 1
+ES Santa Cruz de la Palma -> Ayuntamiento Santa Cruz de La Palma 0
+ES Breña Baja ->  
+ES Santa Úrsula -> Ayuntamiento Santa Úrsula 0
+ES Granadilla de Abona -> Ayuntamiento de Granadilla de Abona 0
+ES Guía de Isora ->  
+ES El Sauzal -> Ayuntamiento de El Sauzal, Tenerife 0
+ES Icod de los Vinos -> Ayuntamiento de Icod de los Vinos 0
+ES Tegueste -> Ayuntamiento de Tegueste 0
+ES Los Llanos de Aridane ->  
+ES La Victoria de Acentejo ->  
+ES El Astillero -> Ayuntamiento de Astillero 0
+ES Camargo ->  
+ES La Orotava -> Ayuntamiento La Orotava 0
+ES Castro-Urdiales -> Ayuntamiento Castro Urdiales 0
+ES Los Corrales de Buelna ->  
+ES Puerto de la Cruz -> Puerto de la Cruz | Ayuntamiento 0
+ES Laredo -> Ayuntamiento de Laredo 0
+ES Medio Cudeyo -> Ayuntamiento de Medio Cudeyo 0
+ES El Rosario -> Ayuntamiento de El Rosario 0
+ES Piélagos -> Ayuntamiento de Piélagos (Oficial) 0
+ES Reinosa ->  
+ES San Sebastián de la Gomera -> Ayto. de San Sebastián de La Gomera 0
+ES Santa Cruz de Bezana ->  
+ES Santander ->  
+ES Suances ->  
+ES Cuéllar -> Ayuntamiento Cuéllar 0
+ES Santa Cruz de Tenerife -> Ayuntamiento de Santa Cruz de Tenerife 0
+ES Santiago del Teide ->  
+ES Tacoronte ->  
+ES Valverde ->  
+ES Palazuelos de Eresma ->  
+ES Villa de Mazo ->  
+ES Cabezón de la Sal ->  
+ES Segovia -> Ayuntamiento de Segovia 0
+ES Cartes -> Ayuntamiento de Cartes 0
+ES Alcalá del Río ->  
+ES Colindres ->  
+ES Almensilla ->  
+ES Entrambasaguas ->  
+ES Aznalcóllar ->  
+ES Bollullos de la Mitación ->  
+ES Marina de Cudeyo -> Ayuntamiento de Marina de Cudeyo 0
+ES Brenes -> Ayuntamiento de Brenes Comunicación 0
+ES Miengo -> Ayuntamiento de Miengo 0
+ES Las Cabezas de San Juan -> Ayuntamiento Las Cabezas de San Juan 2
+ES Polanco -> Ayuntamiento de Polanco 0
+ES La Campana -> Ayuntamiento La Campana 0
+ES Reocín ->  
+ES Carmona ->  
+ES Santa María de Cayón ->  
+ES Castilblanco de los Arroyos ->  
+ES Santoña ->  
+ES Constantina ->  
+ES Torrelavega ->  
+ES Dos Hermanas -> Ayuntamiento de Dos Hermanas. #doshermanas 0
+ES El Espinar -> Plenos Ayuntamiento El Espinar 0
+ES Espartinas -> Ayuntamiento Espartinas 0
+ES Real Sitio de San Ildefonso -> Ayuntamiento del Real Sitio de San Ildefonso 0
+ES Fuentes de Andalucía ->  
+ES Gerena -> Ayuntamiento de Gerena 0
+ES Guillena -> Plenos Ayuntamiento de Guillena 0
+ES Alcalá de Guadaíra -> Ayuntamiento Alcalá de Guadaíra 1
+ES La Algaba -> Ayuntamiento de La Algaba 1
+ES Lebrija -> Ayuntamiento de Lebrija 1
+ES Arahal -> Ayuntamiento de Arahal 0
+ES Benacazón ->  
+ES Bormujos -> Ayuntamiento de Bormujos 0
+ES Mairena del Alcor -> Ayuntamiento Mairena del Alcor 0
+ES Marchena ->  
+ES Burguillos -> Ayuntamiento de Burguillos 0
+ES Morón de la Frontera -> Ayuntamiento de Morón de la Frontera 0
+ES Camas -> Ayuntamiento Camas 0
+ES Osuna ->  
+ES Cantillana -> Concejalía Ayuntamiento Cantillana 0
+ES Palomares del Río -> Ayuntamiento Palomares del Río 0
+ES Pedrera ->  
+ES La Puebla de Cazalla ->  
+ES Casariche -> Ayto. de Casariche Sevilla 0
+ES Castilleja de la Cuesta -> Ayuntamiento de Castilleja de la Cuesta 0
+ES La Rinconada -> Ayuntamiento de La Rinconada 0
+ES San Juan de Aznalfarache ->  
+ES Coria del Río -> Ayuntamiento Coria del Río 0
+ES Santiponce -> Ayuntamiento de Santiponce 2
+ES Écija -> Ayuntamiento Ecija 0
+ES Estepa ->  
+ES Tocina -> Agrupacion Municipal Socialista Tocina 0
+ES Gelves -> Ayuntamiento de Gelves 0
+ES Umbrete -> Ayuntamiento de Umbrete 0
+ES Valencina de la Concepción ->  
+ES Gines -> Ayto Gines 0
+ES Villanueva del Río y Minas ->  
+ES Herrera -> Ayuntamiento de Herrera 0
+ES El Viso del Alcor -> Ayuntamiento El Viso del Alcor 0
+ES El Cuervo de Sevilla ->  
+ES Lora del Río -> Ayuntamiento Lora del Rio 0
+ES Soria -> Ayto Soria 0
+ES Alcover ->  
+ES L'Ametlla de Mar ->  
+ES L'Arboç -> Ajuntament de l'Arboç 0
+ES Mairena del Aljarafe -> Ayuntamiento de Mairena del Aljarafe 0
+ES Montellano -> Ayuntamiento Montellano 0
+ES Cambrils -> Ajuntament Cambrils 0
+ES Olivares -> Ayuntamiento de Olivares 0
+ES La Sénia -> Ajuntament de la Sénia 0
+ES Los Palacios y Villafranca ->  
+ES Paradas ->  
+ES Cunit -> Ajuntament de Cunit 0
+ES Pilas -> Ayuntamiento de Pilas 0
+ES Mont-roig del Camp -> Ajuntament de Mont-roig del Camp 0
+ES La Puebla del Río -> Ayuntamiento de La Puebla del Río 0
+ES Els Pallaresos ->  
+ES Salteras -> Ayuntamiento de Salteras 0
+ES Riudoms -> Ajuntament de Riudoms 0
+ES Roquetes ->  
+ES Sanlúcar la Mayor -> AYUNTAMIENTO DE SANLÚCAR LA MAYOR 0
+ES La Selva del Camp ->  
+ES Torredembarra -> Torredembarra Ajuntament 0
+ES Ulldecona -> Ajuntament Ulldecona 0
+ES Vandellòs i l'Hospitalet de l'Infant ->  
+ES Vila-seca ->  
+ES Salou -> Ajuntament de Salou 0
+ES Alcañiz -> Ayuntamiento de Alcañiz 0
+ES Teruel -> Ayuntamiento de Teruel 0
+ES Argés ->  
+ES Sevilla -> Ayuntamiento de Sevilla 51
+ES Carranque -> Ayuntamiento de Carranque 0
+ES Consuegra ->  
+ES Tomares -> Ayuntamiento de Tomares 0
+ES Chozas de Canales ->  
+ES Fuensalida -> Ayuntamiento de Fuensalida 0
+ES Utrera -> Secretaría General. Ayuntamiento de Utrera 0
+ES Villanueva del Ariscal -> Ayuntamiento de Villanueva del Ariscal 0
+ES Madridejos -> Ayuntamiento de Madridejos 0
+ES Villaverde del Río -> AYUNTAMIENTO VILLAVERDE DEL RIO 0
+ES Mocejón ->  
+ES Isla Mayor -> Ayuntamiento de Isla Mayor 0
+ES Nambroca -> Ayuntamiento de Nambroca Nambroca 0
+ES Ocaña ->  
+ES Almazán -> Ayuntamiento de Almazán -Soria- 0
+ES Alcanar ->  
+ES Ontígola -> Ayto Ontigola 0
+ES Quintanar de la Orden ->  
+ES Altafulla -> Ajuntament d'Altafulla 0
+ES Seseña -> Ayuntamiento Seseña 0
+ES Amposta -> Ajuntament d'Amposta 0
+ES Talavera de la Reina -> Ayuntamiento Talavera de la Reina 0
+ES Calafell ->  
+ES El Catllar ->  
+ES Torrijos ->  
+ES Constantí ->  
+ES Villacañas -> Ayuntamiento Villacanas 0
+ES Montblanc -> Ajuntament de Montblanc 0
+ES Móra d'Ebre ->  
+ES Los Yébenes -> Ayuntamiento de Los Yébenes 0
+ES Yepes ->  
+ES Yuncos -> Ayuntamiento de Yuncos 0
+ES Reus -> Reus_cat (Ajuntament de Reus) 0
+ES Albaida -> Ajuntament Albaida 0
+ES Alberic -> Ajuntament d'Alberic 0
+ES Roda de Berà -> Ajuntament Roda de Berà 0
+ES La Ràpita -> Ajuntament de la Ràpita 0
+ES Alcàsser -> TV Ajuntament Alcàsser 0
+ES Tarragona ->  
+ES L'Alcúdia -> Ajuntament de l'Alcudia de Crespins 0
+ES Tortosa -> Ajuntament de Tortosa 0
+ES Aldaia -> Ajuntament d'Aldaia 0
+ES Valls -> Ajuntament de Valls 0
+ES Algemesí ->  
+ES El Vendrell ->  
+ES Almàssera -> AJUNTAMENT D'ALMÀSSERA 0
+ES Deltebre -> Ajuntament de Deltebre 0
+ES Ayora -> Ayuntamiento de Ayora 0
+ES La Canonja -> Ajuntament de la Canonja 0
+ES Andorra ->  
+ES Añover de Tajo ->  
+ES Bargas -> Ayuntamiento de Bargas 0
+ES Benaguasil -> Ayuntamiento de Benaguasil 0
+ES Casarrubios del Monte -> AYUNTAMIENTO DE CASARRUBIOS DEL MONTE 0
+ES Benifaió -> Ajuntament de Benifaió 0
+ES Corral de Almaguer ->  
+ES Esquivias ->  
+ES Bétera -> Ayuntamiento de Bétera 0
+ES Illescas -> Ayuntamiento de Illescas 0
+ES Burjassot -> Ajuntament de Burjassot - IMCJB 0
+ES Méntrida -> AYUNTAMIENTO DE MÉNTRIDA 0
+ES Canet d'En Berenguer -> Ajuntament de Canet d'en Berenguer 0
+ES Mora -> MoraTV Ayuntamiento de Mora 0
+ES Carlet -> Ajuntament de Carlet 0
+ES Numancia de la Sagra ->  
+ES Olías del Rey -> Ayuntamiento de Olías del Rey 0
+ES Quart de Poblet -> Ayuntamiento de Quart de Poblet 0
+ES La Puebla de Montalbán -> Ayuntamiento La Puebla de Montalbán 0
+ES Cheste ->  
+ES Recas -> Ayuntamiento de Recas 0
+ES Chiva -> Ayuntamiento de Chiva 0
+ES Sonseca -> Comunicación Ayuntamiento de Sonseca 0
+ES Foios -> Ajuntament de Foios 0
+ES Godella ->  
+ES Toledo -> Ayuntamiento de Toledo 0
+ES Ugena -> Ayuntamiento De Ugena 0
+ES Xeraco -> Ajuntament de Xeraco 0
+ES El Viso de San Juan ->  
+ES Yeles -> Ayuntamiento de Yeles 0
+ES Llíria -> Ajuntament de Llíria 0
+ES Yuncler -> Ayuntamiento de Yuncler (Ayto Yuncler) 0
+ES Massamagrell -> Ajuntament de Massamagrell 0
+ES Alaquàs -> Ajuntament d'Alaquas 0
+ES Albal ->  
+ES Meliana -> Ajuntament de Meliana 0
+ES Moncada -> Ajuntament de Moncada 1
+ES Alboraya -> Ayuntamiento de Alboraya 0
+ES Alzira ->  
+ES Museros -> Ajuntament de Museros 0
+ES L'Alcúdia de Crespins -> Ajuntament de l'Alcudia de Crespins 0
+ES Oliva -> Ajuntament Oliva 0
+ES Alfafar -> Ajuntament Alfafar 0
+ES Alginet -> Canal Oficial de l'Ajuntament d'Alginet 0
+ES Ontinyent -> Ajuntament d'Ontinyent 0
+ES Almussafes ->  
+ES Bellreguard -> Ajuntament de Bellreguard 0
+ES Paterna -> Ayuntamiento de Paterna 0
+ES Benetússer -> Ayuntamiento de Benetússer 0
+ES Picassent -> Ajuntament de Picassent 0
+ES Benigànim -> AJUNTAMENT DE BENIGÀNIM 0
+ES La Pobla de Vallbona ->  
+ES Puçol ->  
+ES Requena ->  
+ES Buñol -> Ayuntamiento Buñol 0
+ES Canals -> Ajuntament de Canals 0
+ES Rocafort -> Ajuntament de Rocafort 0
+ES Carcaixent -> Ajuntament de Carcaixent 0
+ES Sedaví -> Ajuntament de Sedaví 0
+ES Sueca ->  
+ES Catarroja -> Ajuntament de Catarroja 0
+ES Tavernes de la Valldigna -> Ajuntament de Tavernes de la Valldigna 0
+ES Turís ->  
+ES Cullera -> Molt Il·lustre Ajuntament de Cullera 0
+ES València ->  
+ES Xirivella -> Ajuntament de Xirivella 0
+ES Castelló -> Ajuntament de Castelló 0
+ES Aldeamayor de San Martín -> Plenos de Aldeamayor de San Martín 0
+ES Cigales ->  
+ES L'Eliana -> Ajuntament de l'Eliana 0
+ES Íscar -> Ayuntamiento de Iscar 0
+ES Medina del Campo -> Ayuntamiento de Medina del Campo 0
+ES Simancas -> Ayuntamiento Simancas 0
+ES Gandia -> Ajuntament Gandia 1
+ES Tudela de Duero -> Turismo Ayto. Tudela de Duero 0
+ES Zaratán ->  
+ES Abanto y Ciérvana-Abanto Zierbena ->  
+ES Guadassuar -> Ajuntament de Guadassuar 0
+ES Arrigorriaga ->  
+ES Xàtiva ->  
+ES Basauri -> Basauriko Udala · Ayuntamiento de Basauri 0
+ES Manises -> Ayuntamiento de Manises 0
+ES Bermeo ->  
+ES Durango ->  
+ES Elorrio ->  
+ES Massanassa -> Ajuntament de Massanassa 0
+ES Galdakao ->  
+ES Getxo -> Getxo Udala 0
+ES Mislata -> MislataTV Ayto. Mislata 1
+ES Gernika-Lumo ->  
+ES Lekeitio ->  
+ES Mungia ->  
+ES Ondarroa ->  
+ES Montserrat -> Ajuntament de Montserrat 0
+ES Valle de Trápaga-Trapagaran ->  
+ES Náquera ->  
+ES Ortuella ->  
+ES Sopela ->  
+ES L'Olleria -> Ajuntament L'Olleria 0
+ES Balmaseda ->  
+ES Paiporta ->  
+ES Derio ->  
+ES Picanya ->  
+ES Benavente ->  
+ES La Pobla de Farnals -> Ajuntament de La Pobla de Farnals 0
+ES Zamora -> Ayuntamiento de Zamora 0
+ES La Almunia de Doña Godina ->  
+ES El Puig de Santa Maria -> Ajuntament del Puig de Santa Maria 0
+ES Calatayud -> Ayuntamiento Calatayud 0
+ES Rafelbunyol -> Ajuntament Rafelbunyol 0
+ES Cuarte de Huerva -> Plenos de Cuarte de Huerva 0
+ES María de Huerva -> Ayuntamiento María de Huerva 0
+ES La Puebla de Alfindén ->  
+ES Riba-roja de Túria -> Ajuntament de Riba-roja de Túria 0
+ES Sagunto ->  
+ES Tauste -> AYUNTAMIENTO TAUSTE 0
+ES Silla -> Ajuntament de Silla 0
+ES Tavernes Blanques -> Ajuntament de Tavernes Blanques 0
+ES Torrent -> Ajuntament de Torrent 0
+ES Utiel -> PLENOS AYUNTAMIENTO UTIEL 0
+ES Vilamarxant -> Plenos Ayuntamiento Vilamarxant 0
+ES San Antonio de Benagéber ->  
+ES Arroyo de la Encomienda -> Ayuntamiento de Arroyo de la Encomienda 0
+ES Cistérniga ->  
+ES Laguna de Duero -> Canal oficial del Ayuntamiento Laguna de Duero 0
+ES Zaragoza -> Ayuntamiento de Zaragoza 61
+ES Peñafiel -> Ayuntamiento de Peñafiel 0
+ES Ceuta ->  
+ES Tordesillas ->  
+ES Valladolid -> Ayuntamiento Valladolid 0
+ES Abadiño ->  
+ES Amorebieta-Etxano ->  
+ES Barakaldo ->  
+ES Berango ->  
+ES Bilbao ->  
+ES Etxebarri ->  
+ES Ermua -> Ermuko Udala · Ayuntamiento de Ermua 0
+ES Gorliz ->  
+ES Güeñes ->  
+ES Leioa ->  
+ES Markina-Xemein ->  
+ES Muskiz -> Ayuntamiento de Muskiz Muskizko Udala 0
+ES Portugalete -> Ayuntamiento Portugalete 0
+ES Santurtzi ->  
+ES Sestao -> Sestao Udala - Ayuntamiento 0
+ES Urduliz ->  
+ES Zalla ->  
+ES Erandio -> Ayuntamiento De La Anteiglesia De Erandio 0
+ES Toro -> Excelentísimo Ayuntamiento Toro 0
+ES Alagón -> Ayuntamiento de Alagón 0
+ES Borja ->  
+ES Caspe -> Caspe, canal oficial Excmo Ayuntamiento de Caspe 0
+ES Ejea de los Caballeros ->  
+ES La Muela ->  
+ES Tarazona -> Ayuntamiento de Tarazona 0
+ES Utebo -> Ayuntamiento Utebo 0
+ES Zuera -> Ayuntamiento de Zuera 0
+ES Melilla ->  
+
+---
