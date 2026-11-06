@@ -1,0 +1,27 @@
+s_client:
+CONNECTED(00000003)
+---
+no peer certificate available
+---
+No client certificate CA names sent
+Negotiated TLS1.3 group: <NULL>
+---
+SSL handshake has read 0 bytes and written 1562 bytes
+Verification: OK
+---
+New, (NONE), Cipher is (NONE)
+Protocol: TLSv1.3
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+
+Connecting to 200.130.24.15
+write:errno=104
+
+AIA None
+age_codes_9514 49969
+age_codes_9514b 49969
