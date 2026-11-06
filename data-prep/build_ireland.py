@@ -57,6 +57,40 @@ def key(s):
     return re.sub(r"[^a-z]", "", s)
 
 
+def school_la(la, county):
+    """Map the Department of Education's local authority names (some from before the 2014 mergers, e.g.
+    "Tipperary (NR) County Council", "Limerick City Council") to the ETB areas above."""
+    s = re.sub(r"\(.*?\)|county council|city council|council", " ", (la or county or "").lower()).strip()
+    s = re.sub(r"\s+", " ", s)
+    city = "city" in (la or "").lower()
+    if s in ("cork", "galway"): return f"{s.title()} {'City' if city else 'County'}"
+    if s == "dublin": return "Dublin City"
+    if s.startswith("dun laoghaire"): return "Dún Laoghaire-Rathdown"
+    return s.title()
+
+
+def enrolment():
+    """Pupils in state-aided primary (mainstream and special) and post-primary schools, 2024/25, by ETB area."""
+    import openpyxl
+    out = {}
+    def add(la, county, n):
+        a = school_la(la, county)
+        etb = next((e for e, las in ETB.items() if a in las), None)
+        assert etb, (la, county, a)
+        out[etb] = out.get(etb, 0) + int(n or 0)
+    wb = openpyxl.load_workbook(os.path.join(IN, "ie_primary_schools_2024_25.xlsx"), read_only=True, data_only=True)
+    for sheet in ("Mainstream Schools by Standard", "Special Schools"):
+        rows = wb[sheet].iter_rows(values_only=True); next(rows); hdr = list(next(rows))
+        for r in rows:
+            if r and r[1]: add(r[hdr.index("Local Authority Description")], r[hdr.index("County Description")], r[hdr.index("Enrolment per Return")])
+    wb = openpyxl.load_workbook(os.path.join(IN, "ie_postprimary_schools_2024_25.xlsx"), read_only=True, data_only=True)
+    rows = wb["Programme & Year"].iter_rows(values_only=True); next(rows); hdr = list(next(rows))
+    tot = next(i for i, h in enumerate(hdr) if str(h).startswith("Total"))
+    for r in rows:
+        if r and r[1]: add(r[hdr.index("Local Authority")], r[hdr.index("County")], r[tot])
+    return out
+
+
 def main():
     # unemployment by local authority, from local electoral areas
     lab = {}
@@ -84,6 +118,7 @@ def main():
         p["_kids"] = kids
     rows, feats = [], []
     ar = arop()
+    enr = enrolment()
     for i, (etb, las) in enumerate(ETB.items()):
         reg = {g for g, members in NUTS2.items() for l in las if l in members}
         assert len(reg) == 1, (etb, reg)
@@ -98,6 +133,8 @@ def main():
                      "Poverty rate (region, all ages)": f"{ar[reg][0]:.2f}%",
                      "Poverty note": f"Overall at-risk-of-poverty rate of the {REGION_NAME[reg]} region, {ar[reg][1]} (Eurostat); no local or child rate is published",
                      "Unemployment rate (Census 2022)": f"{100 * un / (un + work):.2f}%",
+                     "Enrollment": enr[etb], "Enrollment year": "2024/25",
+                     "Enrollment note": "All pupils in state-aided primary, special and post-primary schools in the ETB's area (Department of Education), not only the ETB's own schools",
                      "District ID": eid})
         for f in geo["features"]:
             if la_of_feat[id(f)] in las:
