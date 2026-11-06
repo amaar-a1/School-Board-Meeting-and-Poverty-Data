@@ -40,7 +40,7 @@ ALIAS = {"CL": {"paiguano": "paihuano", "marchigue": "marchihue", "aisen": "ayse
 EDU = re.compile(r"comisi[óo]n (de )?educaci[óo]n|educaci[óo]n.*comisi[óo]n|comisi[óo]n de cultura y educaci[óo]n", re.I)
 COUNCIL = re.compile(r"sesi[óo]n|plenaria|concejo", re.I)
 COUNCIL_MUST = re.compile(r"concejo|sesi[óo]n (ordinaria|extraordinaria|plenaria|n[°º.]|del concejo)|plenaria", re.I)
-NOT_T = re.compile(r"cuenta p[úu]blica|entrevista|noticias|resumen|capsula|cápsula|juvenil|infantil|niñ|elecci|campaña|candidat|aniversario|fiesta|"
+NOT_T = re.compile(r"live session|cuenta p[úu]blica|entrevista|noticias|resumen|capsula|cápsula|juvenil|infantil|niñ|elecci|campaña|candidat|aniversario|fiesta|"
                    r"himno|desfile|tedeum|te deum|saludo|felicit|programa|podcast|rendici[óo]n", re.I)
 
 
@@ -67,16 +67,21 @@ def centroid(geom):
     return (cx / (3 * a), cy / (3 * a)) if a else tuple(ring[0])
 
 
+_CACHE = {}
+
+
 def meetings(cc, did):
     d = os.path.join(IN, {"CL": "chile", "CO": "colombia"}[cc], "youtube")
     p = os.path.join(d, f"{cc}_youtube.csv")
     if not os.path.exists(p): return 0, "", [], ""
-    rows = {r["District ID"]: r for r in csv.DictReader(open(p, encoding="utf-8"))}
-    titles = json.load(open(os.path.join(d, "titles.json"), encoding="utf-8")) if os.path.exists(os.path.join(d, "titles.json")) else {}
-    titles.update(shared_titles())
+    if cc not in _CACHE:
+        titles = json.load(open(os.path.join(d, "titles.json"), encoding="utf-8")) if os.path.exists(os.path.join(d, "titles.json")) else {}
+        titles.update(shared_titles())
+        _CACHE[cc] = ({r["District ID"]: r for r in csv.DictReader(open(p, encoding="utf-8"))}, titles)
+    rows, titles = _CACHE[cc]
     r = rows.get(did) or {}
     url = r.get("Channel URL", "")
-    if not url or url not in titles or r.get("Channel") in NOT_CHANNELS.get(cc, set()): return 0, "", [], ""
+    if not url or url not in titles or url in NOT_CHANNELS.get(cc, set()): return 0, "", [], ""
     vids = [t for t in titles[url] if not NOT_T.search(t)]
     for keep, kind in (([t for t in vids if EDU.search(t)], "Education committee"),
                        ([t for t in vids if COUNCIL.search(t) and COUNCIL_MUST.search(t) and not EDU.search(t)], "Council (stand-in)")):
@@ -85,12 +90,66 @@ def meetings(cc, did):
     return 0, "", [], ""
 
 
-NOT_CHANNELS = {"CL": set(), "CO": set()}   # channels checked by hand and found wrong (filled after the search)
+# Channels checked by hand and found to be another place's (by channel URL). The search matched on the name, and
+# many of these names exist in other Spanish-speaking countries too, or in both Chile and Colombia.
+NOT_CHANNELS = {
+    "CL": {"https://www.youtube.com/channel/UC70nQc3caJyhIQQHlwBb_RA",    # La Molina, Lima (Peru), not Molina
+           "https://www.youtube.com/channel/UCgvUIPWaySeDAGe-oUTSDUA",    # La Unión, Costa Rica ("Concejo de Distrito")
+           "https://www.youtube.com/channel/UCQgCHXXxl4IyPg0GEULz2RA",    # San Carlos, Costa Rica
+           "https://www.youtube.com/channel/UC3rWA_wd9eyOA1T0WuMTZQg",    # San Ramón, Costa Rica (regidores, cantonal)
+           "https://www.youtube.com/channel/UCZXpwy8DfsnN1x61GBQB0ZA",    # Santa Cruz, Bolivia
+           "https://www.youtube.com/channel/UCdjGfVXeZ7nu1QYlS49q91g",    # El Retiro, Antioquia (Colombia's Retiro)
+           "https://www.youtube.com/channel/UCe1pVTpAU89txiLiGPFe3YA"},   # La Calera, Cundinamarca (Colombia's)
+    "CO": {"https://www.youtube.com/channel/UCj983fAuispRHiUb9KfZH0Q",    # Santa Lucía, Corrientes (Argentina)
+           "https://www.youtube.com/channel/UCzxvBsAVswjwc6dRN4uglWA",    # a Colón with "Sesión de Cabildo" (Mexico/Panama)
+           "https://www.youtube.com/channel/UClJErJ8eEEUQ6cIJOfn1TFw",    # La Chorrera, Panama
+           "https://www.youtube.com/channel/UCkV-Fcci5WXRTNKk3EI43cg",    # San Marcos, El Salvador
+           "https://www.youtube.com/channel/UChP0E7AeiBDBKFRrYBhrEgw",    # San Cristóbal, Táchira (Venezuela)
+           "https://www.youtube.com/channel/UCZaI4dep0kp5vZa3gCsEwLQ",    # Santo Domingo, Chile ("I.M.")
+           "https://www.youtube.com/channel/UCK7OgXBRvGeUy0op536HsNg",    # Villarrica, Chile ("Cuenta Pública")
+           "https://www.youtube.com/channel/UC3rOsD5LY68opkbDQnSjA7A",    # Santiago, Chile's capital
+           "https://www.youtube.com/channel/UC3t9uauFej-XiU3VoNWKB-A"},   # Santiago, Dominican Republic (Ayuntamiento)
+}
+
+
+FOREIGN = re.compile(r"deliberante|distrital de carmen alto|municipalidad distrital|provincial", re.I)   # Argentina's and Peru's councils
+
+
+def owners(cc, rows):
+    """Which district each channel belongs to. Many places share a name (Colombia has three Granadas and four
+    Villanuevas), so the search found the same channel for several. A channel counts for one district only:
+    the one whose longer full name, or whose department, the channel name gives; if none does, for none.
+    A channel naming a different department is dropped."""
+    yt = _CACHE[cc][0]
+    words = lambda s: " " + re.sub(r"[^a-z]+", " ", unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()) + " "
+    regions = {words(r["Region"]).strip() for r in rows if r.get("Region")}
+    by = {}
+    for r in rows:
+        y = yt.get(r["District ID"]) or {}
+        if y.get("Channel URL"): by.setdefault(y["Channel URL"], []).append(r)
+    own = {}
+    for url, rs in by.items():
+        ch = words((yt.get(rs[0]["District ID"]) or {}).get("Channel", ""))
+        if FOREIGN.search(ch): continue
+        def score(r):
+            nm = words(r["District"]).strip()
+            if " " + nm + " " not in ch: return -1
+            other = any(" " + g + " " in ch for g in regions - {words(r["Region"]).strip()} if " " + g + " " not in " " + nm + " ")
+            named = " " + words(r["Region"]).strip() + " " in ch or (cc == "CO" and words(r["Region"]).split()[0] in ch.split())
+            return -1 if other and not named else len(nm) + (100 if named else 0)
+        sc = sorted(((score(r), r["District ID"]) for r in rs), reverse=True)
+        if sc[0][0] < 0: continue
+        if len(sc) > 1 and sc[0][0] == sc[1][0]: continue
+        own[url] = sc[0][1]
+    return own
 
 
 def write(cc, key, rows, feats):
+    meetings(cc, "")
+    own = owners(cc, rows)
     for r in rows:
         n, url, keep, kind = meetings(cc, r["District ID"])
+        if url and own.get(url) != r["District ID"]: n, url, keep, kind = 0, "", [], ""
         latest, years = date_summary(keep) if n else ("", "")
         r.update({"Available Board Meetings": n, "Meetings type": kind, "Meetings source": url, "Latest meeting": latest, "Meetings by year": years})
     cols = ["District", "Region", "Locale", "Available Board Meetings", "Meetings type", "Meetings source", "Latest meeting", "Meetings by year",
