@@ -1,142 +1,177 @@
-# Temporary: find the exact files and API fields for the next data gaps (US meeting dates, enrollment for
-# Germany/Iceland/Ireland, Mexico, Brazil). Writes short reports to fetch/out/disc/.
-import json, os, re, urllib.request, urllib.parse, time, traceback
-OUT = "fetch/out/disc"; os.makedirs(OUT, exist_ok=True)
+# Temporary: download the files found for the next data gaps, and look further where the first pass failed.
+# Writes to fetch/out/g2/ (files over 90 MB are summarised instead of kept).
+import json, os, re, urllib.request, urllib.parse, time, traceback, zipfile, io, csv
+OUT = "fetch/out/g2"; os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
 log = open(f"{OUT}/log.txt", "w")
 
 
-def get(url, n=3_000_000, data=None, hdr=None):
-    req = urllib.request.Request(url, data=data, headers={**UA, **(hdr or {})})
-    with urllib.request.urlopen(req, timeout=120) as r:
-        return r.status, r.headers.get("Content-Type", ""), r.headers.get("Content-Length", ""), r.read(n)
-
-
-def head(url):
-    try:
-        req = urllib.request.Request(url, headers=UA, method="HEAD")
-        with urllib.request.urlopen(req, timeout=60) as r:
-            return f"{r.status} {r.headers.get('Content-Type','')} {r.headers.get('Content-Length','')}"
-    except Exception as e:
-        return f"ERR {e}"
+def get(url, n=None, data=None, hdr=None, method=None, timeout=300):
+    req = urllib.request.Request(url, data=data, headers={**UA, **(hdr or {})}, method=method)
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.status, r.headers.get("Content-Type", ""), r.read() if n is None else r.read(n)
 
 
 def step(name, f):
+    t = time.time()
     try:
         res = f()
-        log.write(f"== {name}\n{res}\n\n")
+        log.write(f"== {name} ({time.time()-t:.0f}s)\n{res}\n\n")
     except Exception:
-        log.write(f"== {name}\nERR {traceback.format_exc()[-1500:]}\n\n")
+        log.write(f"== {name}\nERR {traceback.format_exc()[-1200:]}\n\n")
     log.flush(); time.sleep(2)
 
 
-def links(url, pat):
-    s, ct, cl, b = get(url)
-    t = b.decode("utf-8", "replace")
-    hrefs = sorted(set(re.findall(r'(?:href|src)=["\']([^"\']+)["\']', t)))
-    return f"{s} {ct} {len(b)}\n" + "\n".join(urllib.parse.urljoin(url, h) for h in hrefs if re.search(pat, h, re.I))[:12000]
+def save(name, url, **kw):
+    s, ct, b = get(url, **kw)
+    open(f"{OUT}/{name}", "wb").write(b)
+    return f"{s} {ct} {len(b)} bytes -> {name}"
 
 
-# --- CivicSearch: find the API the site uses for a place's meetings
+# --- CivicSearch: keep the app script to find how it loads a place's meetings
 def civic():
-    out = []
-    s, ct, cl, b = get("https://schools.civicsearch.org/")
-    t = b.decode("utf-8", "replace"); open(f"{OUT}/civic_home.html", "w").write(t)
-    js = sorted(set(re.findall(r'src=["\']([^"\']+\.js[^"\']*)["\']', t)))
-    out.append("home %s %d; scripts %s" % (s, len(b), js))
-    for j in js[:12]:
-        u = urllib.parse.urljoin("https://schools.civicsearch.org/", j)
-        try:
-            _, _, _, jb = get(u, 20_000_000); jt = jb.decode("utf-8", "replace")
-            apis = sorted(set(re.findall(r'["\'`](/?api/[A-Za-z0-9_/\-]+)', jt)))
-            out.append(f"{u} {len(jb)} apis: {apis}")
-            for m in re.finditer(r'api/get_[a-z_]+', jt):
-                out.append("  ctx: " + jt[max(0, m.start() - 200): m.end() + 200].replace("\n", " "))
-                if len(out) > 80: break
-        except Exception as e:
-            out.append(f"{u} ERR {e}")
-    _, _, _, pb = get("https://schools.civicsearch.org/api/get_place_list", 50_000_000)
-    pl = json.loads(pb); open(f"{OUT}/civic_places.json", "wb").write(pb)
-    first = pl[0] if isinstance(pl, list) else pl
-    out.append("place list type %s len %d first %s" % (type(pl).__name__, len(pl), json.dumps(first)[:800]))
-    return "\n".join(out)
-step("civicsearch", civic)
+    s, ct, b = get("https://schools.civicsearch.org/main.js")
+    open(f"{OUT}/civic_main.js", "wb").write(b)
+    t = b.decode("utf-8", "replace")
+    hits = sorted(set(re.findall(r'["\'`]([^"\'`]{0,60}(?:api|get_|search|meeting)[^"\'`]{0,60})["\'`]', t)))
+    return f"{len(b)} bytes\n" + "\n".join(h for h in hits if "/" in h or "get_" in h)[:20000]
+step("civicsearch main.js", civic)
 
-
-def civic_try():
-    pl = json.load(open(f"{OUT}/civic_places.json"))
-    p = pl[0] if isinstance(pl, list) else None
-    out = []
-    keys = list(p.keys()) if isinstance(p, dict) else []
-    pid = p.get("id") or p.get("place_id") or p.get("slug") or p.get("name") if isinstance(p, dict) else ""
-    for path in ["api/get_place?place=%s", "api/get_meetings?place=%s", "api/get_meeting_list?place=%s", "api/get_place_meetings?place=%s",
-                 "api/get_place_info?place=%s", "api/place/%s", "api/get_videos?place=%s"]:
-        u = "https://schools.civicsearch.org/" + path % urllib.parse.quote(str(pid))
-        try:
-            s, ct, cl, b = get(u, 200_000); out.append(f"{u} {s} {ct} {b[:600]!r}")
-        except Exception as e:
-            out.append(f"{u} ERR {e}")
-    return f"keys {keys}\n" + "\n".join(out)
-step("civicsearch try", civic_try)
-
-
-# --- Germany: Regionalstatistik GENESIS REST, pupils by Kreis (21111) and population by age (12411)
+# --- Germany: Regionalstatistik GENESIS REST (POST with credentials in headers)
 def genesis():
     out = []
     for base in ["https://www.regionalstatistik.de/genesisws/rest/2020", "https://www-genesis.destatis.de/genesisWS/rest/2020"]:
-        for user, pw in (("GAST", "GAST"),):
-            u = f"{base}/helloworld/logincheck?username={user}&password={pw}&language=de"
+        h = {"username": "GAST", "password": "GAST", "Content-Type": "application/x-www-form-urlencoded"}
+        try:
+            s, ct, b = get(base + "/helloworld/logincheck", data=b"language=de", hdr=h, method="POST", n=2000); out.append(f"{base} logincheck {s} {b[:300]!r}")
+        except Exception as e:
+            out.append(f"{base} logincheck ERR {e}")
+        for name in ["21111-01-03-4", "21111-02-06-4", "21111-01-04-4", "21111-02-01-4"]:
+            body = urllib.parse.urlencode({"name": name, "area": "all", "compress": "false", "format": "ffcsv", "language": "de"}).encode()
             try:
-                s, ct, cl, b = get(u, 5000); out.append(f"{u} {s} {b[:300]!r}")
+                s, ct, b = get(base + "/data/tablefile", data=body, hdr=h, method="POST")
+                fn = f"de_{name}_{'rs' if 'regional' in base else 'ds'}.csv"
+                open(f"{OUT}/{fn}", "wb").write(b); out.append(f"{name} {s} {ct} {len(b)} {b[:300]!r}")
             except Exception as e:
-                out.append(f"{u} ERR {e}")
-            for q in ["find/find?term=21111&category=tables&pagelength=50", "catalogue/tables?selection=21111*&pagelength=50"]:
-                u = f"{base}/{q}&username={user}&password={pw}&language=de"
-                try:
-                    s, ct, cl, b = get(u, 60000); out.append(f"{u} {s} {b[:6000]!r}")
-                except Exception as e:
-                    out.append(f"{u} ERR {e}")
+                out.append(f"{name} ERR {e}")
+            time.sleep(2)
     return "\n".join(out)
-step("genesis", genesis)
+step("genesis POST", genesis)
 
+# --- Iceland: pupils by school (SKO02102), metadata and all data
+def iceland():
+    u = "https://px.hagstofa.is/pxis/api/v1/is/Samfelag/skolamal/2_grunnskolastig/0_gsNemendur/SKO02102.px"
+    s, ct, meta = get(u); open(f"{OUT}/is_SKO02102_meta.json", "wb").write(meta)
+    m = json.loads(meta)
+    q = {"query": [{"code": v["code"], "selection": {"filter": "item", "values": v["values"] if v["code"].lower().startswith(("sk", "school", "ár", "ar", "year")) or len(v["values"]) < 3 else [v["values"][0]]}} for v in m["variables"]],
+         "response": {"format": "csv"}}
+    # keep every school and the latest year; for other variables take their first value (usually the total)
+    for qq, v in zip(q["query"], m["variables"]):
+        txt = (v.get("text") or "").lower()
+        if "ár" in txt or "year" in txt: qq["selection"]["values"] = [v["values"][-1]]
+        elif "skól" in txt: qq["selection"]["values"] = v["values"]
+        else: qq["selection"]["values"] = [v["values"][0]]
+    s, ct, b = get(u, data=json.dumps(q).encode(), hdr={"Content-Type": "application/json"}, method="POST")
+    open(f"{OUT}/is_SKO02102.csv", "wb").write(b)
+    return json.dumps([(v["code"], v["text"], len(v["values"]), v["valueTexts"][:3], v["valueTexts"][-2:]) for v in m["variables"]], ensure_ascii=False) + f"\n{len(b)} bytes"
+step("iceland SKO02102", iceland)
+step("iceland schools register", lambda: save("is_grunnskolar.html", "https://island.is/grunnskolar"))
 
-# --- Iceland: PX-Web tables under education
-def hagstofa():
+# --- Ireland: school-level enrolment (primary and post-primary)
+step("ireland primary 2024/25", lambda: save("ie_primary_2024_25.xlsx", "https://assets.gov.ie/static/documents/09fe3ad4/Data_on_Individual_Schools_Mainstream_2024_25.xlsx"))
+step("ireland primary latest", lambda: save("ie_primary_latest.xlsx", "https://assets.gov.ie/static/documents/8e1b86ab/Data_on_Individual_Schools_Mainstream..xlsx"))
+def ie_pp():
+    s, ct, b = get("https://www.gov.ie/en/department-of-education/collections/post-primary-schools-enrolment-figures/")
+    t = b.decode("utf-8", "replace")
+    xs = sorted(set(re.findall(r'href=["\']([^"\']+\.xlsx?)["\']', t)))
+    out = "\n".join(xs)
+    pick = [x for x in xs if re.search(r"202[45]", x)] or xs[-1:]
+    for i, x in enumerate(pick[:3]):
+        out += "\n" + save(f"ie_postprimary_{i}.xlsx", urllib.parse.urljoin("https://www.gov.ie/", x))
+    return out
+step("ireland post-primary", ie_pp)
+
+# --- Ireland ETBs: board minutes pages (for meeting counts)
+ETB = ["https://www.cdetb.ie", "https://www.ddletb.ie", "https://www.cmetb.ie", "https://www.cetb.ie", "https://www.corketb.ie", "https://www.donegaletb.ie",
+       "https://www.gretb.ie", "https://www.kwetb.ie", "https://www.kerryetb.ie", "https://www.kcetb.ie", "https://www.lcetb.ie", "https://www.lmetb.ie",
+       "https://www.loetb.ie", "https://www.msletb.ie", "https://www.tipperaryetb.ie", "https://www.wwetb.ie"]
+def etbs():
     out = []
-    def walk(path, depth):
-        u = "https://px.hagstofa.is/pxis/api/v1/is/" + path
-        s, ct, cl, b = get(u, 500_000); items = json.loads(b)
-        for it in items:
-            out.append("  " * depth + f"{path}/{it.get('id')} [{it.get('type')}] {it.get('text')}")
-            if it.get("type") == "l" and depth < 2:
-                walk(f"{path}/{it['id']}".strip("/"), depth + 1); time.sleep(0.5)
-    walk("Samfelag/skolamal", 0)
+    for u in ETB:
+        try:
+            s, ct, b = get(u, timeout=60); t = b.decode("utf-8", "replace")
+            hs = sorted(set(urllib.parse.urljoin(u, h) for h in re.findall(r'href=["\']([^"\']+)["\']', t) if re.search(r"board|minute|meeting|governance|about", h, re.I)))
+            out.append(f"{u} {s} {len(b)}\n  " + "\n  ".join(hs[:40]))
+        except Exception as e:
+            out.append(f"{u} ERR {e}")
+        time.sleep(2)
     return "\n".join(out)
-step("hagstofa", hagstofa)
+step("ireland ETB sites", etbs)
 
+# --- Mexico: CONEVAL municipal poverty 2020, INEGI census 2020 by locality (school attendance), borders
+step("coneval concentrado", lambda: save("mx_coneval_2020.zip", "https://www.coneval.org.mx/Medicion/Documents/Pobreza_municipal/2020/Concentrado_indicadores_de_pobreza_2020.zip"))
+def coneval_pages():
+    out = []
+    for u in ["https://www.coneval.org.mx/Medicion/Paginas/Pobreza-municipio-2010-2020.aspx", "https://www.coneval.org.mx/Medicion/Paginas/Pobreza_municipal.aspx",
+              "https://www.coneval.org.mx/Medicion/Paginas/pobreza-municipal-grupos-poblacion.aspx"]:
+        try:
+            s, ct, b = get(u); t = b.decode("utf-8", "replace")
+            out.append(f"{u} {s}\n  " + "\n  ".join(sorted(set(re.findall(r'href=["\']([^"\']+\.(?:zip|xlsx?|csv))["\']', t, re.I)))))
+        except Exception as e:
+            out.append(f"{u} ERR {e}")
+    return "\n".join(out)
+step("coneval pages", coneval_pages)
+def iter_mx():
+    s, ct, b = get("https://www.inegi.org.mx/contenidos/programas/ccpv/2020/datosabiertos/iter/iter_00_cpv2020_csv.zip", timeout=900)
+    out = f"{s} {ct} {len(b)}"
+    z = zipfile.ZipFile(io.BytesIO(b)); out += "\n" + "\n".join(z.namelist())
+    name = [n for n in z.namelist() if n.lower().endswith(".csv")][0]
+    rows = csv.reader(io.TextIOWrapper(z.open(name), encoding="utf-8-sig", errors="replace"))
+    hdr = next(rows); out += "\n" + ",".join(hdr)
+    with open(f"{OUT}/mx_iter_municipal.csv", "w", newline="") as fo:
+        w = csv.writer(fo); w.writerow(hdr)
+        for r in rows:
+            if len(r) > 5 and r[hdr.index("LOC")] == "0000" and r[hdr.index("MUN")] != "000": w.writerow(r)   # municipal totals
+    return out
+step("inegi iter 2020", iter_mx)
+step("geoboundaries MEX ADM2", lambda: save("mx_adm2.geojson", "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MEX/ADM2/geoBoundaries-MEX-ADM2_simplified.geojson"))
 
-# --- Ireland: Department of Education school-level enrolment files
-step("ireland primary", lambda: links("https://www.gov.ie/en/department-of-education/collections/primary-schools-enrolment-figures/", r"\.(xlsx?|csv|ods)|/publications?/|/collections?/"))
-step("ireland data on individual schools", lambda: links("https://www.gov.ie/en/collection/63363b-data-on-individual-schools", r"\.(xlsx?|csv|ods)|/publications?/|/collections?/"))
-step("ireland cso enrol", lambda: get("https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/EDA42/JSON-stat/2.0/en", 3000)[3][:3000])
+# --- Brazil: school census summary, census 2022 income tables, Bolsa Família by municipality, borders
+def inep():
+    s, ct, b = get("https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopse_estatistica_censo_escolar_2025.zip", timeout=900)
+    z = zipfile.ZipFile(io.BytesIO(b)); names = z.namelist()
+    keep = [n for n in names if n.lower().endswith((".xlsx", ".xls"))]
+    for n in keep:
+        open(f"{OUT}/br_sinopse_2025.xlsx", "wb").write(z.read(n)); break
+    return f"{len(b)} bytes\n" + "\n".join(f"{i.filename} {i.file_size}" for i in z.infolist())
+step("inep sinopse 2025", inep)
+def sidra():
+    s, ct, b = get("https://servicodados.ibge.gov.br/api/v3/agregados", timeout=600)
+    d = json.loads(b); out = []
+    for p in d:
+        for a in p.get("agregados", []):
+            nm = a.get("nome", "")
+            if re.search(r"rendimento", nm, re.I) and re.search(r"censo|2022", p.get("nome", "") + nm, re.I):
+                out.append(f"{a['id']} | {p.get('nome')} | {nm}")
+    return "\n".join(out[:300])
+step("sidra income tables", sidra)
+def bf():
+    out = []
+    for ym in ["202509", "202508", "202506"]:
+        u = f"https://portaldatransparencia.gov.br/download-de-dados/novo-bolsa-familia/{ym}"
+        try:
+            s, ct, b = get(u, n=2000, method="HEAD") if False else get(u, n=2000)
+            out.append(f"{u} {s} {ct} {b[:200]!r}")
+            break
+        except Exception as e:
+            out.append(f"{u} ERR {e}")
+    return "\n".join(out)
+step("bolsa familia probe", bf)
+step("geoboundaries BRA ADM2", lambda: save("br_adm2.geojson", "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BRA/ADM2/geoBoundaries-BRA-ADM2_simplified.geojson"))
 
-# --- Mexico
-step("coneval page", lambda: links("https://www.coneval.org.mx/Medicion/Paginas/Pobreza-municipio-2010-2020.aspx", r"\.(zip|xlsx?|csv)"))
-step("coneval groups page", lambda: links("https://www.coneval.org.mx/Medicion/Paginas/Pobreza-municipal-por-grupos-de-poblacion-2020.aspx", r"\.(zip|xlsx?|csv)"))
-step("coneval zip head", lambda: head("https://www.coneval.org.mx/Medicion/Documents/Pobreza_municipal/2020/Concentrado_indicadores_de_pobreza_2020.zip"))
-step("inegi iter head", lambda: head("https://www.inegi.org.mx/contenidos/programas/ccpv/2020/datosabiertos/iter/iter_00_cpv2020_csv.zip"))
-step("datos.gob.mx matricula", lambda: get("https://www.datos.gob.mx/busca/api/3/action/package_search?q=matricula%20municipio&rows=20", 400_000)[3][:8000])
-step("sep planeacion", lambda: links("https://www.planeacion.sep.gob.mx/estadisticaeindicadores.aspx", r"\.(zip|xlsx?|csv)|estad"))
-step("geoboundaries MEX", lambda: get("https://www.geoboundaries.org/api/current/gbOpen/MEX/ADM2/", 5000)[3][:3000])
-
-# --- Brazil
-def misocial():
-    u = ("https://aplicacoes.mds.gov.br/sagi/servicos/misocial?q=*:*&fq=tipo_s:mes_mu&fq=anomes_s:202412*&rows=2&wt=json")
-    s, ct, cl, b = get(u, 300_000)
-    return b[:6000]
-step("mds misocial", misocial)
-step("mds vis data", lambda: links("https://aplicacoes.cidadania.gov.br/vis/data3/data-explorer.php", r"\.(csv|json|php)"))
-step("ibge sidra census 2022 income table search", lambda: get("https://servicodados.ibge.gov.br/api/v3/agregados?pesquisa=CD", 2_000_000)[3][:12000])
-step("inep sinopse", lambda: links("https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/sinopses-estatisticas/educacao-basica", r"\.(zip|xlsx?)"))
-step("geoboundaries BRA", lambda: get("https://www.geoboundaries.org/api/current/gbOpen/BRA/ADM2/", 5000)[3][:3000])
+# keep only what fits in git
+for f in os.listdir(OUT):
+    p = os.path.join(OUT, f)
+    if os.path.getsize(p) > 90_000_000:
+        log.write(f"removed {f} ({os.path.getsize(p)} bytes): too big for git\n"); os.remove(p)
 log.close()
