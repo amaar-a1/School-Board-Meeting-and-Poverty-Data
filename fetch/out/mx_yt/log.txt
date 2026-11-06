@@ -1,0 +1,775 @@
+0
+MX San Pedro Juchatengo ->  
+MX Santa Inés de Zaragoza ->  
+MX San Pedro Mixtepec - Dto. 22 ->  
+MX Santa Isabel ->  
+MX San Pedro Molinos ->  
+MX Santa Isabel Xiloxoxtla ->  
+MX San Pedro Mártir Quiechapa ->  
+MX Santa Lucía Monteverde ->  
+MX San Pedro Nopala ->  
+MX Santa Lucía del Camino ->  
+MX San Pedro Ocotepec ->  
+MX Santa María Alotepec ->  
+MX San Pedro Quiatoni ->  
+MX Santa María Atzompa ->  
+MX San Pedro Tapanatepec ->  
+MX Santa María Chachoápam ->  
+MX San Pedro Teozacoalco ->  
+MX Santa María Chimalapa ->  
+MX San Pedro Tidaá ->  
+MX Santa María Cortijo ->  
+MX San Pedro Totolápam ->  
+MX Santa María Ecatepec ->  
+MX Santa María Guienagati ->  
+MX San Pedro Yeloixtlahuaca ->  
+MX San Pedro Yólox ->  
+MX Santa María Huazolotitlán ->  
+MX San Pedro del Gallo ->  
+MX Santa María Ixcatlán ->  
+MX San Pedro y San Pablo Ayutla ->  
+MX Santa María Jalapa del Marqués ->  
+MX San Pedro y San Pablo Tequixtepec ->  
+MX Santa María Lachixío ->  
+MX San Rafael ->  
+MX Santa María Nativitas ->  
+MX San Salvador ->  
+MX Santa María Ozolotepec ->  
+MX San Salvador el Seco ->  
+MX Santa María Peñoles ->  
+MX San Sebastián Abasolo ->  
+MX Santa María Quiegolani ->  
+MX Santa María Tataltepec ->  
+MX San Sebastián Ixcapa ->  
+MX Santa María Temaxcalapa ->  
+MX San Sebastián Río Hondo ->  
+MX Santa María Teopoxco ->  
+MX San Sebastián Teitipac ->  
+MX Santa María Texcatitlán ->  
+MX San Sebastián Tutla ->  
+MX Santa María Tlalixtac ->  
+MX San Simón Almolongas ->  
+MX Santa María Totolapilla ->  
+MX San Simón de Guerrero ->  
+MX Santa María Yalina ->  
+MX San Vicente Lachixío ->  
+MX Santa María Yolotepec ->  
+MX San Vicente Tancuayalab ->  
+MX Santa María Yucuhiti ->  
+MX Sanctórum de Lázaro Cárdenas ->  
+MX Santa María Zaniza ->  
+MX Santa María de la Paz ->  
+MX Santa Ana -> H. Ayuntamiento Santa Ana Sonora 0
+MX Santa María del Oro ->  
+MX Santa Ana Cuauhtémoc ->  
+MX Santa María del Rosario ->  
+MX Santa Ana Nopalucan ->  
+MX Santa María del Tule ->  
+MX Santa Ana Tlapacoyan ->  
+MX Santiago ->  
+MX Santa Ana Zegache ->  
+MX Santiago Apoala ->  
+MX Santa Apolonia Teacalco ->  
+MX Santiago Astata ->  
+MX Santa Catalina Quierí ->  
+MX Santiago Ayuquililla ->  
+MX Santiago Camotlán ->  
+MX Santiago Choápam ->  
+MX Santa Catarina -> Gobierno Municipal De Santa Catarina, N.L. 0
+MX Santiago Huajolotitlán ->  
+MX Santa Catarina Ayometla ->  
+MX Santiago Ihuitlán Plumas ->  
+MX Santa Catarina Ixtepeji ->  
+MX Santiago Ixcuintla ->  
+MX Santa Catarina Lachatao ->  
+MX Santiago Jamiltepec ->  
+MX Santa Catarina Mechoacán ->  
+MX Santa Catarina Quiané ->  
+MX Santa Catarina Tayata ->  
+MX Santiago Juxtlahuaca -> Gobierno Municipal Santiago Juxtlahuaca 2019 - 2021 0
+MX Santa Catarina Tlaltempan ->  
+MX Santiago Lalopa ->  
+MX Santa Catarina Zapoquila ->  
+MX Santiago Laxopa ->  
+MX Santiago Maravatío ->  
+MX Santiago Miahuatlán ->  
+MX Santa Cruz -> Ayuntamiento Santa Cruz de La Palma 0
+MX Santiago Minas ->  
+MX Santa Cruz Amilpas ->  
+MX Santiago Nejapilla ->  
+MX Santa Cruz Mixtepec ->  
+MX Santiago Nundiche ->  
+MX Santa Cruz Papalutla ->  
+MX Santa Cruz Tacache de Mina ->  
+MX Santiago Papasquiaro ->  
+MX Santiago Sochiapan ->  
+MX Santa Cruz Tayata ->  
+MX Santa Cruz Xitla ->  
+MX Santiago Tamazola ->  
+MX Santa Cruz Zenzontepec ->  
+MX Santiago Tenango ->  
+MX Santa Cruz de Juventino Rosas ->  
+MX Santiago Tetepec ->  
+MX Santa Gertrudis ->  
+MX Santiago Textitlán ->  
+MX Santa Inés Yatzeche ->  
+MX Santiago Tillo ->  
+MX Santa Inés del Monte ->  
+MX Santiago Tulantepec de Lugo Guerrero ->  
+MX Santa Isabel Cholula ->  
+MX Santiago Xanica ->  
+MX Santiago Yaitepec ->  
+MX Santa Lucía Miahuatlán ->  
+MX Santiago Yolomécatl ->  
+MX Santa Lucía Ocotlán ->  
+MX Santiago Yucuyachi ->  
+MX Santa Magdalena Jicotlán ->  
+MX Santiago Zoochila ->  
+MX Santa María Apazco ->  
+MX Santiago del Río ->  
+MX Santa María Camotlán ->  
+MX Santo Domingo ->  
+MX Santa María Chilchotla ->  
+MX Santo Domingo Armenta ->  
+MX Santa María Colotepec ->  
+MX Santo Domingo Ingenio ->  
+MX Santa María Coyotepec ->  
+MX Santo Domingo Nuxaá ->  
+MX Santa María Guelacé ->  
+MX Santo Domingo Petapa ->  
+MX Santa María Huatulco ->  
+MX Santo Domingo Tehuantepec ->  
+MX Santa María Ipalapa ->  
+MX Santo Domingo Tepuxtepec ->  
+MX Santa María Jacatepec ->  
+MX Santo Domingo Tomaltepec ->  
+MX Santa María Jaltianguis ->  
+MX Santo Domingo Tonalá ->  
+MX Santa María Mixtequilla ->  
+MX Santo Domingo Yanhuitlán ->  
+MX Santa María Nduayaco ->  
+MX Santa María Petapa ->  
+MX Santo Domingo Zanatepec -> H. Ayuntamiento Santo Domingo Zanatepec  0
+MX Santa María Pápalo ->  
+MX Santo Tomás ->  
+MX Santa María Sola ->  
+MX Santo Tomás Jalieza ->  
+MX Santa María Tecomavaca ->  
+MX Santo Tomás Ocotepec ->  
+MX Santa María Temaxcaltepec ->  
+MX Santos Reyes Nopala ->  
+MX Santa María Tepantlali ->  
+MX Santos Reyes Tepejillo ->  
+MX Santa María Tlahuitoltepec ->  
+MX Satevó ->  
+MX Santa María Tonameca ->  
+MX Santa María Xadani ->  
+MX Sayula -> Gobierno Municipal de Sayula Jalisco 0
+MX Santa María Yavesía ->  
+MX Senguio ->  
+MX Santa María Yosoyúa ->  
+MX Seyé ->  
+MX Santa María Zacatepec ->  
+MX Silacayoápam ->  
+MX Santa María Zoquitlán ->  
+MX Siltepec ->  
+MX Sinaloa ->  
+MX Santa María de los Ángeles -> H. Ayuntamiento de Santa María de los Ángeles 0
+MX Singuilucan ->  
+MX Santa María del Oro ->  
+MX Sitio de Xitlapehua ->  
+MX Santa María del Río ->  
+MX Socoltenango ->  
+MX Santa María la Asunción ->  
+MX Soledad Atzompa ->  
+MX Santiago Amoltepec ->  
+MX Soledad de Doblado ->  
+MX Santiago Apóstol ->  
+MX Solidaridad ->  
+MX Santiago Atitlán ->  
+MX Soltepec ->  
+MX Santiago Cacaloxtepec ->  
+MX Soteapan ->  
+MX Santiago Chazumba ->  
+MX Sotuta ->  
+MX Santiago Comaltepec ->  
+MX Soyaniquilpan de Juárez ->  
+MX Santiago Huauclilla ->  
+MX Suaqui Grande ->  
+MX Santiago Ixcuintepec ->  
+MX Suchiate ->  
+MX Santiago Ixtayutla ->  
+MX Sudzal ->  
+MX Santiago Jocotepec ->  
+MX Suma ->  
+MX Santiago Lachiguiri ->  
+MX Susticacán ->  
+MX Santiago Laollaga ->  
+MX Sáric ->  
+MX Santiago Llano Grande ->  
+MX Tabasco ->  
+MX Santiago Matatlán ->  
+MX Tacámbaro ->  
+MX Santiago Miltepec ->  
+MX Tahmek ->  
+MX Santiago Nacaltepec ->  
+MX Santiago Niltepec ->  
+MX Talpa de Allende -> H Ayuntamiento Talpa de Allende 0
+MX Santiago Nuyoó ->  
+MX Tamasopo ->  
+MX Santiago Pinotepa Nacional ->  
+MX Tamazula de Gordiano ->  
+MX Santiago Suchilquitongo ->  
+MX Tamazunchale ->  
+MX Santiago Tapextla ->  
+MX Tampacán ->  
+MX Santiago Tepetlapa ->  
+MX Tampico ->  
+MX Santiago Texcalcingo ->  
+MX Tamuín ->  
+MX Santiago Tilantongo ->  
+MX Tancoco ->  
+MX Santiago Tlazoyaltepec ->  
+MX Tanetze de Zaragoza ->  
+MX Santiago Tuxtla ->  
+MX Santiago Xiacuí ->  
+MX Tangancícuaro -> Gobierno Municipal de Tangancícuaro 0
+MX Santiago Yaveo ->  
+MX Taniche ->  
+MX Santiago Yosondúa ->  
+MX Tanquián de Escobedo ->  
+MX Santiago Zacatepec ->  
+MX Tantoyuca -> Tantoyuca Gobierno Oficial 0
+MX Santiago de Anaya -> Ayuntamiento Municipal de Santiago de Anaya Hgo. 0
+MX Tapalapa ->  
+MX Santiago el Pinar ->  
+MX Tapilula ->  
+MX Santo Domingo Albarradas ->  
+MX Taretan ->  
+MX Santo Domingo Chihuitán ->  
+MX Tarímbaro ->  
+MX Santo Domingo Ixcatlán ->  
+MX Tatahuicapan de Juárez ->  
+MX Santo Domingo Ozolotepec ->  
+MX Tatatila ->  
+MX Santo Domingo Roayaga ->  
+MX Teabo ->  
+MX Santo Domingo Teojomulco ->  
+MX Tecali de Herrera ->  
+MX Santo Domingo Tlatayápam ->  
+MX Tecamachalco ->  
+MX Santo Domingo Tonaltepec ->  
+MX Santo Domingo Xagacía ->  
+MX Techaluta de Montenegro -> Municipio de Techaluta De Montenegro 0
+MX Santo Domingo Yodohino ->  
+MX Tecoh ->  
+MX Santo Domingo de Morelos ->  
+MX Tecolutla ->  
+MX Santo Tomás Hueyotlipan ->  
+MX Tecomán ->  
+MX Santo Tomás Mazaltepec ->  
+MX Tecpatán ->  
+MX Santo Tomás Tamazulapan ->  
+MX Santos Reyes Pápalo ->  
+MX Tecámac -> Gobierno Municipal de Tecámac 0
+MX Santos Reyes Yucuná ->  
+MX Tehuipango ->  
+MX Saucillo ->  
+MX Tejupilco ->  
+MX Sayula de Alemán ->  
+MX Tekantó ->  
+MX Seybaplaya ->  
+MX Tekit ->  
+MX Sierra Mojada ->  
+MX Telchac Pueblo ->  
+MX Silao ->  
+MX Teloloapan ->  
+MX Simojovel ->  
+MX Sinanché ->  
+MX Sitalá ->  
+MX Temascalapa -> H. Ayuntamiento Temascalapa 0
+MX Sochiapa ->  
+MX Temascaltepec ->  
+MX Soconusco ->  
+MX Temixco ->  
+MX Soledad Etla ->  
+MX Temoaya ->  
+MX Soledad de Graciano Sánchez ->  
+MX Tempoal ->  
+MX Solosuchiapa ->  
+MX Tenabo ->  
+MX Sombrerete ->  
+MX Tenampa ->  
+MX Soto la Marina ->  
+MX Soyaló ->  
+MX Tenancingo -> Ayuntamiento de Tenancingo, México. 0
+MX Soyopa ->  
+MX Tenango de Doria ->  
+MX Suchiapa ->  
+MX Sucilá ->  
+MX Sultepec ->  
+MX Tenango del Valle -> Ayuntamiento de Tenango del Valle 0
+MX Sunuapa ->  
+MX Tenochtitlán ->  
+MX Susupuato ->  
+MX Teocaltiche ->  
+MX Súchil ->  
+MX Teococuilco de Marcos Pérez ->  
+MX Tacotalpa ->  
+MX Teolocholco ->  
+MX Tahdziú ->  
+MX Teopantlán ->  
+MX Tala -> Gobierno municipal de Tala Tala 0
+MX Teotihuacán -> Ayuntamiento Teotihuacán 2019-2021 0
+MX Tamalín ->  
+MX Teotitlán del Valle ->  
+MX Teotongo ->  
+MX Tepakán ->  
+MX Tepalcingo ->  
+MX Tepango de Rodríguez ->  
+MX Tepatlaxco ->  
+MX Tamazula -> Gobierno de Tamazula 0
+MX Tepeaca ->  
+MX Tamazulápam del Espíritu Santo ->  
+MX Tepechitlán ->  
+MX Tamiahua ->  
+MX Tepehuacán de Guerrero ->  
+MX Tampamolón Corona ->  
+MX Tepeji del Río de Ocampo ->  
+MX Tampico Alto ->  
+MX Tepemaxalco ->  
+MX Tancanhuitz ->  
+MX Tepetitla de Lardizábal ->  
+MX Tancítaro ->  
+MX Tangamandapio ->  
+MX Tepetlaoxtoc -> Municipio de Tepetlaoxtoc 0
+MX Tepetlán ->  
+MX Tanhuato -> H Ayuntamiento de Tanhuato Michoacán 0
+MX Tanlajás ->  
+MX Tepetzintla -> H. Ayuntamiento De Tepetzintla Puebla 0
+MX Tantima ->  
+MX Tepexco ->  
+MX Tepeyahualco ->  
+MX Tepeyanco ->  
+MX Tapachula -> Ayuntamiento de Tapachula 2427 0
+MX Tapalpa ->  
+MX Tarandacuao ->  
+MX Tepic -> H. XL Ayuntamiento de Tepic Capital del Cambio 0
+MX Tarimoro ->  
+MX Tepoztlán -> Ayuntamiento Tepoztlán 0
+MX Tasquillo -> Asamblea Municipal Tasquillo 0
+MX Tataltepec de Valdés ->  
+MX Tequila ->  
+MX Taxco de Alarcón ->  
+MX Tequixquiac ->  
+MX Tetecala ->  
+MX Teapa ->  
+MX Tetela del Volcán ->  
+MX Tetepango ->  
+MX Tetiz ->  
+MX Tetlatlahuca ->  
+MX Texcaltitlán ->  
+MX Tecalitlán -> Gobierno Ciudadano de Tecalitlan, Jalisco  0
+MX Texcatepec ->  
+MX Tecate -> Ayuntamiento de Tecate 0
+MX Tecoanapa ->  
+MX Texhuacán ->  
+MX Teya ->  
+MX Tezoatlán de Segura y Luna ->  
+MX Tezontepec de Aldama -> Gobierno De Tezontepec De Aldama 0
+MX Tecolotlán -> Gobierno de Tecolotlán 0
+MX Teúl de González Ortega ->  
+MX Tianguistenco -> Ayuntamiento De Tianguistenco 0
+MX Tecomatlán ->  
+MX Ticul ->  
+MX Tecozautla ->  
+MX Tecuala -> XXXVI H. Ayuntamiento tecuala 0
+MX Tehuacán ->  
+MX Tierra Blanca ->  
+MX Tihuatlán ->  
+MX Tehuitzingo ->  
+MX Tila -> Ayuntamiento Tila Radio 0
+MX Tekal de Venegas ->  
+MX Tekax ->  
+MX Timilpan ->  
+MX Tekom ->  
+MX Telchac Puerto ->  
+MX Tingambato -> H. Ayuntamiento de Tingambato Mich. 0
+MX Tinum ->  
+MX Temamatla -> Ayuntamiento Temamatla 0
+MX Tixcacalcupul ->  
+MX Tixmehuac ->  
+MX Temascalcingo ->  
+MX Tixtla de Guerrero ->  
+MX Tizayuca ->  
+MX Temax ->  
+MX Tlachichilco ->  
+MX Temoac ->  
+MX Tlacoachistlahuaca ->  
+MX Temozón ->  
+MX Temósachic ->  
+MX Tenamaxtlán ->  
+MX Tlacojalpan ->  
+MX Tenampulco ->  
+MX Tlacolulan ->  
+MX Tlacotepec Plumas ->  
+MX Tenancingo ->  
+MX Tlacotepec de Mejía -> H. Ayuntamiento Tlacotepec de Mejía 0
+MX Tenango del Aire ->  
+MX Tenejapa ->  
+MX Tlahualilo ->  
+MX Tenosique ->  
+MX Tlahuelilpan ->  
+MX Tlajomulco de Zúñiga ->  
+MX Tlalixcoyan ->  
+MX Tlalixtaquilla de Maldonado ->  
+MX Tlalnelhuayocan ->  
+MX Teocelo -> Municipio Teocelo 0
+MX Teocuitatlán de Corona ->  
+MX Teoloyucan -> Ayuntamiento de Teoloyucan 0
+MX Teopisca ->  
+MX Tlalnepantla de Baz -> Gobierno de Tlalnepantla de Baz 0
+MX Teotitlán de Flores Magón ->  
+MX Tlalpujahua ->  
+MX Tlaltenango de Sánchez Román ->  
+MX Teotlalco ->  
+MX Tlaltizapán -> Ayuntamiento Tlaltizapán de Zapata 0
+MX Tepache ->  
+MX Tepalcatepec ->  
+MX Tlanchinol ->  
+MX Tlaola ->  
+MX Tlapacoya ->  
+MX Tlapanalá ->  
+MX Tepanco de López ->  
+MX Tepatitlán de Morelos -> Gobierno de Tepatitlán de Morelos, Jalisco 0
+MX Tepatlaxco de Hidalgo ->  
+MX Tlaquepaque -> Gobierno de Tlaquepaque 0
+MX Tlaquiltenango ->  
+MX Tepeapulco ->  
+MX Tepecoacuilco de Trujano ->  
+MX Tlatlaya ->  
+MX Tlaxco ->  
+MX Tepehuanes ->  
+MX Tlaxcoapan ->  
+MX Tepelmeme Villa de Morelos ->  
+MX Tlazazalca ->  
+MX Tepeojuma ->  
+MX Tláhuac ->  
+MX Tepetitlán ->  
+MX Tochimilco -> Tochimilco H. Ayuntamiento 0
+MX Tepetlixpa ->  
+MX Tepetongo ->  
+MX Tocumbo ->  
+MX Tolimán ->  
+MX Tepetzintla ->  
+MX Tepexi de Rodríguez ->  
+MX Tepeyahualco de Cuauhtémoc ->  
+MX Toluca -> Ayuntamiento de Toluca 0
+MX Tepezalá ->  
+MX Tomatlán ->  
+MX Tepotzotlán ->  
+MX Tequila ->  
+MX Tequisquiapan ->  
+MX Terrenate ->  
+MX Tetela de Ocampo ->  
+MX Teteles de Avila Castillo ->  
+MX Tetipac ->  
+MX Tonalá -> Gobierno Tonalá 0
+MX Tetla de la Solidaridad ->  
+MX Tonatico -> Gobierno Municipal Tonatico 2025  0
+MX Teuchitlán ->  
+MX Tonayán ->  
+MX Texcalyacac ->  
+MX Topia ->  
+MX Totatiche ->  
+MX Totolapa ->  
+MX Texcoco ->  
+MX Totoltepec de Guerrero ->  
+MX Texistepec ->  
+MX Teziutlán ->  
+MX Tototlán -> Tototlán Gobierno Municipal 0
+MX Tezonapa ->  
+MX Trancoso ->  
+MX Trincheras ->  
+MX Tezoyuca ->  
+MX Trinidad Zaachila ->  
+MX Tianguismanalco ->  
+MX Tula ->  
+MX Tianguistengo ->  
+MX Tulancingo de Bravo ->  
+MX Tultepec -> Gobierno Municipal Tultepec 0
+MX Tierra Blanca ->  
+MX Tierra Nueva ->  
+MX Tulum -> Ayuntamiento de Tulum 0
+MX Tumbiscatío ->  
+MX Tijuana ->  
+MX Tilapa ->  
+MX Turicato ->  
+MX Timucuy ->  
+MX Tuxcueca ->  
+MX Tingüindín ->  
+MX Tuxpan ->  
+MX Tiquicheo de Nicolás Romero ->  
+MX Tuxpan ->  
+MX Tixkokob ->  
+MX Tixpéhual ->  
+MX Tuxtla Chico ->  
+MX Tizapán el Alto -> GOBIERNO MUNICIPAL, TIZAPAN EL ALTO 0
+MX Tuzamapan de Galeana ->  
+MX Tizimín ->  
+MX Tuzantán ->  
+MX Tlachichuca ->  
+MX Tlacoapa ->  
+MX Tlacolula de Matamoros ->  
+MX Tlacotalpan ->  
+MX Tzimol ->  
+MX Tlacotepec de Benito Juárez ->  
+MX Tzitzio ->  
+MX Tlacuilotepec ->  
+MX Tzucacab ->  
+MX Tlahuapan ->  
+MX Uayma ->  
+MX Tlahuiltepa ->  
+MX Umán ->  
+MX Tlalchapa ->  
+MX Unión Juárez ->  
+MX Tlalixtac de Cabrera ->  
+MX Unión de Tula ->  
+MX Uriangato ->  
+MX Tlalmanalco ->  
+MX Ursulo Galván ->  
+MX Tlalnepantla ->  
+MX Tlalpan ->  
+MX Uruapan -> Comunicacion Social Presidencia Uruapan 0
+MX Tlaltenango ->  
+MX Valerio Trujano ->  
+MX Tlaltetela ->  
+MX Tlanalapa ->  
+MX Valle Hermoso ->  
+MX Tlanepantla ->  
+MX Tlapa de Comonfort ->  
+MX Tlapacoyan ->  
+MX Tlapehuala ->  
+MX Valle de Chalco Solidaridad -> Gobierno Valle de Chalco Solidaridad 0
+MX Tlaquilpa ->  
+MX Tlatlauquitepec ->  
+MX Valle de Juárez ->  
+MX Valle de Zaragoza ->  
+MX Valparaíso ->  
+MX Vega de Alatorre ->  
+MX Tlaxcala ->  
+MX Venustiano Carranza ->  
+MX Venustiano Carranza ->  
+MX Tlaxco ->  
+MX Tlayacapan ->  
+MX Veracruz -> Ayuntamiento de Córdoba Veracruz 0
+MX Vicente Guerrero ->  
+MX Tlilapan ->  
+MX Tocatlán ->  
+MX Victoria ->  
+MX Tochtepec -> Ayuntamiento Tochtepec 0
+MX Viesca ->  
+MX Tolcayuca ->  
+MX Villa Comaltitlán ->  
+MX Villa Corzo ->  
+MX Tolimán ->  
+MX Villa García ->  
+MX Tomatlán ->  
+MX Villa Guerrero ->  
+MX Villa Hidalgo ->  
+MX Tonalá ->  
+MX Villa Hidalgo ->  
+MX Tonanitla ->  
+MX Villa Hidalgo ->  
+MX Tonaya ->  
+MX Villa Pesqueira ->  
+MX Villa Sola de Vega ->  
+MX Villa Tejúpam de la Unión ->  
+MX Tonila ->  
+MX Villa Victoria -> CONSEJO MUNICIPAL No.115 VILLA VICTORIA 0
+MX Torreón -> Ayuntamiento de Torreón 0
+MX Totolac ->  
+MX Villa de Arista ->  
+MX Villa de Chilapa de Díaz ->  
+MX Totolapan ->  
+MX Villa de Etla ->  
+MX Totontepec Villa de Morelos ->  
+MX Villa de Ramos ->  
+MX Villa de Tamazulápam del Progreso ->  
+MX Villa de Tututepec de Melchor Ocampo ->  
+MX Totutla ->  
+MX Villa de la Paz ->  
+MX Villa del Carbón ->  
+MX Villagrán ->  
+MX Tres Valles ->  
+MX Villaldama ->  
+MX Villanueva ->  
+MX Trinidad García de la Cadena ->  
+MX Xalapa ->  
+MX Tubutama ->  
+MX Tula de Allende ->  
+MX Xalisco ->  
+MX Tulcingo ->  
+MX Xalpatláhuac ->  
+MX Xayacatlán de Bravo ->  
+MX Xico ->  
+MX Tultitlán -> Gobierno de Tultitlán 0
+MX Xicotepec ->  
+MX Tumbalá ->  
+MX Xicoténcatl ->  
+MX Tunkás ->  
+MX Xiutetelco ->  
+MX Tuxcacuesco ->  
+MX Xochiapulco ->  
+MX Xochicoatlán ->  
+MX Xochiltepec ->  
+MX Xochistlahuaca ->  
+MX Tuxpan -> Gobierno de Tuxpan 0
+MX Xochitlán Todos Santos ->  
+MX Tuxpan -> XLI. Ayuntamiento de Tuxpan, Nayarit 0
+MX Tuxtilla ->  
+MX Xonacatlán ->  
+MX Xoxocotla ->  
+MX Yahualica de González Gallo ->  
+MX Yanga ->  
+MX Tuxtla Gutiérrez -> Ayuntamiento Tuxtla Gutierrez 0
+MX Yauhquemehcan ->  
+MX Tuzantla ->  
+MX Yaxcabá ->  
+MX Tzicatlacoyan ->  
+MX Yaxkukul ->  
+MX Yecuatla ->  
+MX Tzintzuntzan ->  
+MX Tzompantepec ->  
+MX Yobaín ->  
+MX Yuriria -> Yuriria Gobierno Municipal. 0
+MX Técpan de Galeana ->  
+MX Ucú ->  
+MX Yutanduchi de Guerrero ->  
+MX Zacapala ->  
+MX Unión Hidalgo ->  
+MX Zacapu -> H. Ayuntamiento Zacapu 0
+MX Unión de San Antonio ->  
+MX Zacatelco ->  
+MX Ures ->  
+MX Urique ->  
+MX Zacatlán ->  
+MX Uruachi ->  
+MX Uxpanapa ->  
+MX Zacoalco de Torres ->  
+MX Valladolid -> H. Ayuntamiento Valladolid 2018-2021 0
+MX Zacualpan ->  
+MX Valle de Bravo ->  
+MX Valle de Guadalupe ->  
+MX Zacualtipán de Ángeles ->  
+MX Valle de Santiago ->  
+MX Vallecillo ->  
+MX Vanegas ->  
+MX Zapopan -> Gobierno de Zapopan 0
+MX Venado ->  
+MX Venustiano Carranza ->  
+MX Zapotitlán ->  
+MX Venustiano Carranza ->  
+MX Vetagrande ->  
+MX Zapotitlán Palmas ->  
+MX Zapotitlán de Méndez ->  
+MX Vicente Guerrero ->  
+MX Victoria ->  
+MX Villa Aldama ->  
+MX Zapotlanejo -> gobierno zapotlanejo 0
+MX Villa Corona -> Villa Corona Gobierno Municipal  0
+MX Zapotlán del Rey ->  
+MX Villa Díaz Ordaz ->  
+MX Villa González Ortega ->  
+MX Zaragoza ->  
+MX Villa Guerrero ->  
+MX Zaragoza ->  
+MX Zautla ->  
+MX Villa Hidalgo ->  
+MX Zentla ->  
+MX Villa Hidalgo ->  
+MX Zihuateutla ->  
+MX Villa Juárez ->  
+MX Villa Purificación -> GOBIERNO DE VILLA PURIFICACION JALISCO 0
+MX Zimapán -> Presidencia Municipal de Zimapán Hgo. 0
+MX Villa Talea de Castro ->  
+MX Villa Unión ->  
+MX Zinacantepec -> Ayuntamiento de Zinacantepec 0
+MX Zinacatepec ->  
+MX Villa de Allende ->  
+MX Zináparo ->  
+MX Villa de Arriaga ->  
+MX Zirándaro ->  
+MX Zitácuaro ->  
+MX Zongozotla ->  
+MX Villa de Cos ->  
+MX Zoquiapan ->  
+MX Zozocolco de Hidalgo ->  
+MX Villa de Guadalupe ->  
+MX Villa de Reyes ->  
+MX Zumpango ->  
+MX Villa de Tezontepec ->  
+MX Álvaro Obregón ->  
+MX Ánimas Trujano ->  
+MX Villa de Zaachila ->  
+MX Villa de Álvarez ->  
+MX Villaflores -> H. Ayuntamiento de Villaflores 0
+MX Villagrán ->  
+MX Villamar ->  
+MX Vista Hermosa -> H. Ayuntamiento Vista Hermosa 0
+MX Xalatlaco ->  
+MX Xaloztoc ->  
+MX Xaltocan ->  
+MX Xichú ->  
+MX Xicohtzinco ->  
+MX Xicotlán ->  
+MX Xilitla ->  
+MX Xocchel ->  
+MX Xochiatipan ->  
+MX Xochihuehuetlán ->  
+MX Xochimilco ->  
+MX Xochitepec ->  
+MX Xochitlán de Vicente Suárez ->  
+MX Xoxocotla ->  
+MX Yahualica ->  
+MX Yajalón ->  
+MX Yaonáhuac ->  
+MX Yautepec ->  
+MX Yaxe ->  
+MX Yecapixtla ->  
+MX Yehualtepec ->  
+MX Yogana ->  
+MX Yurécuaro ->  
+MX Yécora ->  
+MX Zacapoaxtla ->  
+MX Zacatecas ->  
+MX Zacatepec ->  
+MX Zacazonapan ->  
+MX Zacualpan ->  
+MX Zacualpan ->  
+MX Zamora -> Buen Gobierno Zamora  0
+MX Zapotiltic ->  
+MX Zapotitlán Lagunas ->  
+MX Zapotitlán Tablas ->  
+MX Zapotitlán de Vadillo -> GOBIERNO ZAPOTITLAN DE VADILLO 0
+MX Zapotlán de Juárez ->  
+MX Zapotlán el Grande -> Gobierno de Zapotlán el Grande 0
+MX Zaragoza ->  
+MX Zaragoza ->  
+MX Zempoala ->  
+MX Zihuatanejo de Azueta ->  
+MX Ziltlaltépec de Trinidad Sánchez Santos ->  
+MX Zimatlán de Álvarez ->  
+MX Zinacantán ->  
+MX Zinapécuaro ->  
+MX Ziracuaretiro ->  
+MX Zitlala ->  
+MX Zongolica ->  
+MX Zontecomatlán de López y Fuentes ->  
+MX Zoquitlán ->  
+MX Zumpahuacán ->  
+MX Álamo Temapache ->  
+MX Álvaro Obregón ->  
+MX Ónavas ->  
+
+---
