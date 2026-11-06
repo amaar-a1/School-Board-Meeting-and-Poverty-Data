@@ -75,7 +75,7 @@ RULES = {"BR": (re.compile(r"comiss[ãa]o (permanente )?de educa[çc][ãa]o|educ
                 re.compile(r"sess[ãa]o|c[âa]mara", re.I),
                 re.compile(r"sess[ãa]o (ordin[áa]ria|extraordin[áa]ria|solene|especial|de |da |n[°º.]|\d)|\d+[ªa]? sess[ãa]o|sess[ãa]o plen", re.I),
                 re.compile(r"live session|entrevista|not[íi]cias|resumo|podcast|programa|campanha|candidat|anivers[áa]rio|festa|hino|desfile|"
-                           r"homenagem|solene|culto|missa|show|jogo|futebol|sess[ãa]o de fotos", re.I))}
+                           r"homenagem|solene|culto|missa|show|jogo|futebol|sess[ãa]o de fotos|mirim|mirins|parlamento jovem|c[âa]mara jovem|estudantil", re.I))}
 
 # Mexico: the town council (cabildo, ayuntamiento) and its education committee (comisión edilicia de educación).
 # Some titles come back machine-translated into English. Other committees' sessions don't count as council
@@ -124,7 +124,7 @@ NOT_CHANNELS = {
            "https://www.youtube.com/channel/UC2DrRwc-AyOPhOUjizUFJMA",    # election boards, not town councils: Actopan (Veracruz),
            "https://www.youtube.com/channel/UC9rp_w5KZKax5MOoDDxKDAw",    # Chiconcuac
            "https://www.youtube.com/channel/UCn1zNwM4qlnZL01gFzbwgDw"},   # and Villa Victoria
-    "BR": set(),
+    "BR": {"https://www.youtube.com/channel/UCwL8TsjsmqixFQKK4fIdU1g"},   # Aveiro, Portugal (Assembleia Municipal), not Pará's
     "CL": {"https://www.youtube.com/channel/UC70nQc3caJyhIQQHlwBb_RA",    # La Molina, Lima (Peru), not Molina
            "https://www.youtube.com/channel/UCgvUIPWaySeDAGe-oUTSDUA",    # La Unión, Costa Rica ("Concejo de Distrito")
            "https://www.youtube.com/channel/UCQgCHXXxl4IyPg0GEULz2RA",    # San Carlos, Costa Rica
@@ -156,19 +156,27 @@ def owners(cc, rows):
     yt = _CACHE[cc][0]
     words = lambda s: " " + re.sub(r"[^a-z]+", " ", unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()) + " "
     regions = {words(r["Region"]).strip() for r in rows if r.get("Region")}
+    names = {words(r["District"]).strip() for r in rows}
     by = {}
     for r in rows:
         y = yt.get(r["District ID"]) or {}
         if y.get("Channel URL"): by.setdefault(y["Channel URL"], []).append(r)
     own = {}
     for url, rs in by.items():
-        ch = words((yt.get(rs[0]["District ID"]) or {}).get("Channel", ""))
+        raw = (yt.get(rs[0]["District ID"]) or {}).get("Channel", "")
+        ch = words(raw)
         if FOREIGN.search(ch): continue
+        # Brazilian channel names often end with the state's abbreviation ("Rio Negro - PR", "Belém PB", "(SC)").
+        abbr = {a for a in re.findall(r"(?:[-/(–]\s*|\s)([A-Z]{2})\b\)?\s*$", raw.strip())} if cc == "BR" else set()
         def score(r):
             nm = words(r["District"]).strip()
             if " " + nm + " " not in ch: return -1
+            if any(len(o) > len(nm) and " " + nm + " " in " " + o + " " and " " + o + " " in ch for o in names): return -1   # "Alfredo Chaves", not Chaves
             other = any(" " + g + " " in ch for g in regions - {words(r["Region"]).strip()} if " " + g + " " not in " " + nm + " ")
             named = " " + words(r["Region"]).strip() + " " in ch or (cc == "CO" and words(r["Region"]).split()[0] in ch.split())
+            if abbr:
+                own_abbr = next((a for a, c in BR_ABBR.items() if BR_UF[c] == r["Region"]), "")
+                named, other = named or own_abbr in abbr, other or bool(abbr - {own_abbr})
             return -1 if other and not named else len(nm) + (100 if named else 0)
         sc = sorted(((score(r), r["District ID"]) for r in rs), reverse=True)
         if sc[0][0] < 0: continue
