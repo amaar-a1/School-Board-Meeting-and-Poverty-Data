@@ -1,0 +1,481 @@
+== civicsearch
+home 200 1692; scripts ['/main.js']
+https://schools.civicsearch.org/main.js 1692158 apis: []
+place list type list len 1213 first {"last_meeting_link": "https://www.youtube.com/watch?v=ME28eb38XDY", "last_meeting_title": "Warren Township Board of Education Meeting January 5, 2026", "latitude": 40.63234677608026, "longitude": -74.51459084754855, "name": "Warren Township School District, New Jersey", "num_meetings": 14, "query_id": "warren-township-school-district-new-jersey", "state_name": "New Jersey"}
+
+== civicsearch try
+keys ['last_meeting_link', 'last_meeting_title', 'latitude', 'longitude', 'name', 'num_meetings', 'query_id', 'state_name']
+https://schools.civicsearch.org/api/get_place?place=Warren%20Township%20School%20District%2C%20New%20Jersey ERR HTTP Error 400: Bad Request
+https://schools.civicsearch.org/api/get_meetings?place=Warren%20Township%20School%20District%2C%20New%20Jersey ERR HTTP Error 404: Not Found
+https://schools.civicsearch.org/api/get_meeting_list?place=Warren%20Township%20School%20District%2C%20New%20Jersey ERR HTTP Error 404: Not Found
+https://schools.civicsearch.org/api/get_place_meetings?place=Warren%20Township%20School%20District%2C%20New%20Jersey ERR HTTP Error 404: Not Found
+https://schools.civicsearch.org/api/get_place_info?place=Warren%20Township%20School%20District%2C%20New%20Jersey ERR HTTP Error 404: Not Found
+https://schools.civicsearch.org/api/place/Warren%20Township%20School%20District%2C%20New%20Jersey ERR HTTP Error 404: Not Found
+https://schools.civicsearch.org/api/get_videos?place=Warren%20Township%20School%20District%2C%20New%20Jersey ERR HTTP Error 404: Not Found
+
+== genesis
+https://www.regionalstatistik.de/genesisws/rest/2020/helloworld/logincheck?username=GAST&password=GAST&language=de ERR HTTP Error 405: 
+https://www.regionalstatistik.de/genesisws/rest/2020/find/find?term=21111&category=tables&pagelength=50&username=GAST&password=GAST&language=de ERR HTTP Error 405: 
+https://www.regionalstatistik.de/genesisws/rest/2020/catalogue/tables?selection=21111*&pagelength=50&username=GAST&password=GAST&language=de ERR HTTP Error 405: 
+https://www-genesis.destatis.de/genesisWS/rest/2020/helloworld/logincheck?username=GAST&password=GAST&language=de 200 b'<!doctype html>\n<html lang="de">\n  <head>\n    <meta charset="utf-8" />\n    <meta name="viewport" content="width=device-width, user-scalable=yes" />\n    <meta name="theme-color" content="#000000" />\n    <meta\n      http-equiv="Content-Security-Policy"\n      content="\n      default-src \'none\';\n      b'
+https://www-genesis.destatis.de/genesisWS/rest/2020/find/find?term=21111&category=tables&pagelength=50&username=GAST&password=GAST&language=de 200 b'<!doctype html>\n<html lang="de">\n  <head>\n    <meta charset="utf-8" />\n    <meta name="viewport" content="width=device-width, user-scalable=yes" />\n    <meta name="theme-color" content="#000000" />\n    <meta\n      http-equiv="Content-Security-Policy"\n      content="\n      default-src \'none\';\n      base-uri \'none\';\n      object-src \'none\';\n      font-src \'self\';\n      script-src \'self\' https://code.highcharts.com/12.5.0/lib/jspdf.js https://code.highcharts.com/12.5.0/lib/svg2pdf.js;\n      style-src \'self\' \'sha256-IO+Y1yEBEpZphZrJXe5us6Rbf6kFWpmO1AwABrsU7rA=\' \'sha256-1y5QuuM0ntDrCXrvhcsMpVtTYJn5oAfrUZz63lyc+oA=\';\n      media-src \'self\' https://www-genesis.destatis.de/genesis/misc/ https://www-genesis.destatis.de/genesis-old/misc/ blob:;\n      img-src \'self\' https://www-genesis.destatis.de/genesis/misc/ https://www-genesis.destatis.de/genesis-old/misc/ blob: data:;\n      connect-src \'self\' https://www-genesis.destatis.de http://genesis-test-web01-neu https://ergebnisse.prodzen.de;\n      child-src \'none\';\n      require-trusted-types-for \'script\'; \n      trusted-types react-dom highcharts gor default \'allow-duplicates\'"\n    />\n\n    <meta\n      name="description"\n      content="GENESIS-Online ist eine Datenbank, die tief gegliederte Ergebnisse der amtlichen Statistik enth\xc3\xa4lt. Sie wird kontinuierlich ausgebaut. Der Tabellenabruf erfolgt unentgeltlich und kann variabel auf den individuellen Bedarf angepasst werden. Die Abspeicherung der Ergebnisse ist in verschiedenen Formaten m\xc3\xb6glich."\n    />\n    <meta name="referrer" content="origin" />\n    <link rel="stylesheet" href="/datenbank/online/custom.css" />\n    <link rel="icon" href="/datenbank/online/favicon.ico" />\n    <meta name="google-site-verification" content="caIlWtGfQf8FlKFmI5t6geZsLkO5JA24QMFE1wlcztU" />\n    <style>\n      body {\n        overflow: hidden;\n        display: none;\n      }\n    </style>\n    <title>GENESIS-Online</title>\n    <script type="module" crossorigin src="/datenbank/online/assets/index-Sn8tL7Gs.js"></script>\n    <link rel="modulepreload" crossorigin href="/datenbank/online/assets/src-B77i94xi.js">\n    <link rel="stylesheet" crossorigin href="/datenbank/online/assets/src-Qw6N7NgU.css">\n    <link rel="stylesheet" crossorigin href="/datenbank/online/assets/index-Bj8GOjXn.css">\n  </head>\n\n  <body class="gor-webapp">\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id="root"></div>\n    <div id="searchInputRoot"></div>\n    <div id="modalsRoot"></div>\n  </body>\n</html>\n'
+https://www-genesis.destatis.de/genesisWS/rest/2020/catalogue/tables?selection=21111*&pagelength=50&username=GAST&password=GAST&language=de 200 b'<!doctype html>\n<html lang="de">\n  <head>\n    <meta charset="utf-8" />\n    <meta name="viewport" content="width=device-width, user-scalable=yes" />\n    <meta name="theme-color" content="#000000" />\n    <meta\n      http-equiv="Content-Security-Policy"\n      content="\n      default-src \'none\';\n      base-uri \'none\';\n      object-src \'none\';\n      font-src \'self\';\n      script-src \'self\' https://code.highcharts.com/12.5.0/lib/jspdf.js https://code.highcharts.com/12.5.0/lib/svg2pdf.js;\n      style-src \'self\' \'sha256-IO+Y1yEBEpZphZrJXe5us6Rbf6kFWpmO1AwABrsU7rA=\' \'sha256-1y5QuuM0ntDrCXrvhcsMpVtTYJn5oAfrUZz63lyc+oA=\';\n      media-src \'self\' https://www-genesis.destatis.de/genesis/misc/ https://www-genesis.destatis.de/genesis-old/misc/ blob:;\n      img-src \'self\' https://www-genesis.destatis.de/genesis/misc/ https://www-genesis.destatis.de/genesis-old/misc/ blob: data:;\n      connect-src \'self\' https://www-genesis.destatis.de http://genesis-test-web01-neu https://ergebnisse.prodzen.de;\n      child-src \'none\';\n      require-trusted-types-for \'script\'; \n      trusted-types react-dom highcharts gor default \'allow-duplicates\'"\n    />\n\n    <meta\n      name="description"\n      content="GENESIS-Online ist eine Datenbank, die tief gegliederte Ergebnisse der amtlichen Statistik enth\xc3\xa4lt. Sie wird kontinuierlich ausgebaut. Der Tabellenabruf erfolgt unentgeltlich und kann variabel auf den individuellen Bedarf angepasst werden. Die Abspeicherung der Ergebnisse ist in verschiedenen Formaten m\xc3\xb6glich."\n    />\n    <meta name="referrer" content="origin" />\n    <link rel="stylesheet" href="/datenbank/online/custom.css" />\n    <link rel="icon" href="/datenbank/online/favicon.ico" />\n    <meta name="google-site-verification" content="caIlWtGfQf8FlKFmI5t6geZsLkO5JA24QMFE1wlcztU" />\n    <style>\n      body {\n        overflow: hidden;\n        display: none;\n      }\n    </style>\n    <title>GENESIS-Online</title>\n    <script type="module" crossorigin src="/datenbank/online/assets/index-Sn8tL7Gs.js"></script>\n    <link rel="modulepreload" crossorigin href="/datenbank/online/assets/src-B77i94xi.js">\n    <link rel="stylesheet" crossorigin href="/datenbank/online/assets/src-Qw6N7NgU.css">\n    <link rel="stylesheet" crossorigin href="/datenbank/online/assets/index-Bj8GOjXn.css">\n  </head>\n\n  <body class="gor-webapp">\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id="root"></div>\n    <div id="searchInputRoot"></div>\n    <div id="modalsRoot"></div>\n  </body>\n</html>\n'
+
+== hagstofa
+Samfelag/skolamal/0_yfirlit [l] Yfirlit
+  Samfelag/skolamal/0_yfirlit/yfirlit [l] Yfirlit
+    Samfelag/skolamal/0_yfirlit/yfirlit/SKO00000.px [t] Fjöldi nemenda að hausti eftir skólastigi 1997-2025
+    Samfelag/skolamal/0_yfirlit/yfirlit/SKO00002.px [t] Skólasókn eftir kyni, aldri og landsvæðum 1999-2025
+    Samfelag/skolamal/0_yfirlit/yfirlit/SKO00003.px [t] Nemendur ofan grunnskóla eftir skólastigi, skólum, lögheimili, kennsluformi og kyni 1997-2025
+    Samfelag/skolamal/0_yfirlit/yfirlit/SKO00003a.px [t] Nemendur ofan grunnskóla eftir skólastigi, skólum, lögheimili og kyni 1997-2025
+    Samfelag/skolamal/0_yfirlit/yfirlit/SKO00003b.px [t] Nemendur ofan grunnskóla eftir skólum, lögheimili, kennsluformi og kyni 1997-2025
+    Samfelag/skolamal/0_yfirlit/yfirlit/SKO00004.px [t] Nemendur ofan grunnskóla eftir skólastigi, ríkisfangi, námssviðum og kyni 1997-2025
+    Samfelag/skolamal/0_yfirlit/yfirlit/SKO00005.px [t] Nemendur ofan grunnskóla eftir skólastigi, lögheimili, aldri, kyni og formi 1997-2025
+    Samfelag/skolamal/0_yfirlit/yfirlit/SKO00005a.px [t] Nemendur ofan grunnskóla eftir skólastigi, lögheimili, aldri og kyni 1997-2025
+    Samfelag/skolamal/0_yfirlit/yfirlit/SKO00005b.px [t] Nemendur ofan grunnskóla eftir lögheimili, aldri, kennsluformi og kyni 1997-2025
+    Samfelag/skolamal/0_yfirlit/yfirlit/SKO00006.px [t] Nemendur ofan grunnskóla, rekstrarform skóla, skólastig og kyn 1997-2025
+    Samfelag/skolamal/0_yfirlit/yfirlit/SKO00012.px [t] Nemendur ofan grunnskóla eftir skólastigi, aldri, bakgrunni og kyni 1997-2025
+    Samfelag/skolamal/0_yfirlit/yfirlit/SKO00013.px [t] Nemendur ofan grunnskóla eftir skólastigi, lögheimili, bakgrunni og kyni 1997-2025
+    Samfelag/skolamal/0_yfirlit/yfirlit/SKO00031.px [t] Tekjur eftir menntun, kyni og aldri 1990-2022
+  Samfelag/skolamal/0_yfirlit/yfirlit_eldra [l] Yfirlit - eldra efni
+    Samfelag/skolamal/0_yfirlit/yfirlit_eldra/SKO00001.px [t] Skráðir nemendur í framhalds- og háskólum eftir námsbraut og kyni  2007-2014
+    Samfelag/skolamal/0_yfirlit/yfirlit_eldra/SKO00001b.px [t] Skráðir nemendur í framhalds- og háskólum eftir tegund náms og kyni 2007-2014
+    Samfelag/skolamal/0_yfirlit/yfirlit_eldra/SKO00007.px [t] Nemendur og nám til 24 ára aldurs  
+    Samfelag/skolamal/0_yfirlit/yfirlit_eldra/SKO00008.px [t] Próf við 24 ára aldur     
+    Samfelag/skolamal/0_yfirlit/yfirlit_eldra/SKO00011.px [t] Uppruni og skólasókn nemenda fæddra 1988-1994
+Samfelag/skolamal/1_leikskolastig [l] Leikskólastig
+  Samfelag/skolamal/1_leikskolastig/0_lsNemendur [l] Nemendur
+    Samfelag/skolamal/1_leikskolastig/0_lsNemendur/SKO01000.px [t] Börn og leikskólar í desember 1998-2024
+    Samfelag/skolamal/1_leikskolastig/0_lsNemendur/SKO01001.px [t] Börn í leikskólum eftir aldri, lengd viðveru og rekstrarformi 1998-2024
+    Samfelag/skolamal/1_leikskolastig/0_lsNemendur/SKO01101.px [t] Börn í leikskólum eftir aldri, kyni og landsvæðum 1998-2024
+    Samfelag/skolamal/1_leikskolastig/0_lsNemendur/SKO01102.px [t] Börn í leikskólum eftir kyni, aldri, landsvæðum og lengd viðveru 1998-2024
+    Samfelag/skolamal/1_leikskolastig/0_lsNemendur/SKO01103.px [t] Börn í leikskólum með erlent móðurmál 1998-2024
+    Samfelag/skolamal/1_leikskolastig/0_lsNemendur/SKO01104.px [t] Börn í leikskólum með erlent móðurmál eftir aldri og kyni 1998-2024
+    Samfelag/skolamal/1_leikskolastig/0_lsNemendur/SKO01105.px [t] Börn í leikskólum sem nutu sérstaks stuðnings 1998-2024
+    Samfelag/skolamal/1_leikskolastig/0_lsNemendur/SKO01106.px [t] Börn í leikskólum með erlent ríkisfang 2001-2024
+    Samfelag/skolamal/1_leikskolastig/0_lsNemendur/SKO01108.px [t] Börn í leikskólum á skólaskyldualdri 1998-2024
+    Samfelag/skolamal/1_leikskolastig/0_lsNemendur/SKO01109.px [t] Börn í leikskólum eftir bakgrunni 2008-2024
+    Samfelag/skolamal/1_leikskolastig/0_lsNemendur/SKO01112.px [t] Fjöldi innflytjenda í skóla skipt eftir skólastigi og búsetu 2008-2017
+    Samfelag/skolamal/1_leikskolastig/0_lsNemendur/SKO01113.px [t] Fjöldi innflytjenda í skóla skipt eftir skólastigi og fæðingarsvæði 2008-2017
+    Samfelag/skolamal/1_leikskolastig/0_lsNemendur/SKO01114.px [t] Fjöldi innflytjenda í skóla skipt eftir skólastigi og flokkuðum fæðingarlöndum 2008-2017
+  Samfelag/skolamal/1_leikskolastig/1_lsStarfsfolk [l] Starfsfólk
+    Samfelag/skolamal/1_leikskolastig/1_lsStarfsfolk/SKO01300.px [t] Starfsfólk í leikskólum eftir kyni, starfssviðum og rekstraraðilum 1998-2024
+    Samfelag/skolamal/1_leikskolastig/1_lsStarfsfolk/SKO01301.px [t] Starfsfólk í leikskólum eftir aldri, menntun og landsvæðum 1998-2024
+    Samfelag/skolamal/1_leikskolastig/1_lsStarfsfolk/SKO01302.px [t] Starfsfólk í leikskólum eftir starfshlutfalli 1998-2024
+    Samfelag/skolamal/1_leikskolastig/1_lsStarfsfolk/SKO01303.px [t] Starfsfólk í leikskólum eftir menntun 1998-2024
+    Samfelag/skolamal/1_leikskolastig/1_lsStarfsfolk/SKO01304.px [t] Starfsfólk við uppeldi og menntun eftir kyni, réttindum og prófgráðu 2020-2024
+    Samfelag/skolamal/1_leikskolastig/1_lsStarfsfolk/SKO01305.px [t] Starfsfólk í leikskólum eftir bakgrunni 2020-2024
+    Samfelag/skolamal/1_leikskolastig/1_lsStarfsfolk/SKO01310.px [t] Brottfall starfsfólks í leikskólum eftir starfi 1998-2024
+    Samfelag/skolamal/1_leikskolastig/1_lsStarfsfolk/SKO01311.px [t] Brottfall starfsfólks við uppeldi og menntun eftir menntun 1998-2024
+    Samfelag/skolamal/1_leikskolastig/1_lsStarfsfolk/SKO01321.px [t] Stöðugildi í leikskólum eftir störfum og menntun 1994-2024
+    Samfelag/skolamal/1_leikskolastig/1_lsStarfsfolk/SKO01322.px [t] Starfsfólk í launuðu leyfi 1998-2024
+  Samfelag/skolamal/1_leikskolastig/2_lsSkolahald [l] Skólahald
+    Samfelag/skolamal/1_leikskolastig/2_lsSkolahald/SKO01201.px [t] Leikskólar, fjöldi barna og barngildi eftir rekstraraðilum 1998-2024
+    Samfelag/skolamal/1_leikskolastig/2_lsSkolahald/SKO01202.px [t] Starfstími leikskóla eftir landsvæðum 1998-2024
+  Samfelag/skolamal/1_leikskolastig/3_lsEldraefni [l] Eldra efni
+    Samfelag/skolamal/1_leikskolastig/3_lsEldraefni/SKO01111.px [t] Skólasókn í leikskóla eftir bakgrunni, kyni og aldri 2008-2017
+Samfelag/skolamal/2_grunnskolastig [l] Grunnskólastig
+  Samfelag/skolamal/2_grunnskolastig/0_gsNemendur [l] Nemendur
+    Samfelag/skolamal/2_grunnskolastig/0_gsNemendur/SKO02101.px [t] Nemendur í grunnskólum eftir kyni og landsvæðum 1997-2025
+    Samfelag/skolamal/2_grunnskolastig/0_gsNemendur/SKO02102.px [t] Grunnskólanemendur eftir bekkjum og skóla 2001-2025
+    Samfelag/skolamal/2_grunnskolastig/0_gsNemendur/SKO02103.px [t] Grunnskólanemendur með erlent móðurmál 1997-2025
+    Samfelag/skolamal/2_grunnskolastig/0_gsNemendur/SKO02103b.px [t] Nemendur með erlent móðurmál eftir árgangi 2006-2025
+    Samfelag/skolamal/2_grunnskolastig/0_gsNemendur/SKO02105.px [t] Fjöldi nemenda á hvern kennara 1998-2024
+    Samfelag/skolamal/2_grunnskolastig/0_gsNemendur/SKO02106.px [t] Meðalfjöldi nemenda eftir bekkjardeildum 2002-2025
+    Samfelag/skolamal/2_grunnskolastig/0_gsNemendur/SKO02107.px [t] Nemendur sem njóta sérkennslu eða stuðnings 2004-2023
+    Samfelag/skolamal/2_grunnskolastig/0_gsNemendur/SKO02107a.px [t] Sérkennslunemendur með formlega greiningu og stuðning til íslenskunáms 2010-2023
+    Samfelag/skolamal/2_grunnskolastig/0_gsNemendur/SKO02108.px [t] Ríkisfang grunnskólanema 2006-2025
+    Samfelag/skolamal/2_grunnskolastig/0_gsNemendur/SKO02108b.px [t] Nemendur í grunnskólum eftir bakgrunni 2006-2025
+    Samfelag/skolamal/2_grunnskolastig/0_gsNemendur/SKO02109.px [t] Grunnskólanemendur sem læra erlend tungumál eftir fjölda tungumála 1999-2023
+    Samfelag/skolamal/2_grunnskolastig/0_gsNemendur/SKO02110.px [t] Fjöldi grunnskólanema sem lærir hvert erlent tungumál 1999-2023
+    Samfelag/skolamal/2_grunnskolastig/0_gsNemendur/SKO02120.px [t] Nemendur með breytt fyrirkomulag kennslu vegna kórónuveirunnar (Covid-19) 2019-2023
+  Samfelag/skolamal/2_grunnskolastig/1_gsStarfsfolk [l] Starfsfólk
+    Samfelag/skolamal/2_grunnskolastig/1_gsStarfsfolk/SKO02301.px [t] Starfsfólk við kennslu eftir kyni, landsvæðum og kennsluréttindum 1998-2024
+    Samfelag/skolamal/2_grunnskolastig/1_gsStarfsfolk/SKO02302.px [t] Starfsfólk við kennslu eftir kyni, réttindum, menntun og búsetu 1998-2024
+    Samfelag/skolamal/2_grunnskolastig/1_gsStarfsfolk/SKO02302b.px [t] Starfsfólk við kennslu eftir kyni, réttindum og prófgráðu 2020-2024
+    Samfelag/skolamal/2_grunnskolastig/1_gsStarfsfolk/SKO02303.px [t] Starfsfólk við kennslu eftir kyni, aldri og réttindum 1998-2024
+    Samfelag/skolamal/2_grunnskolastig/1_gsStarfsfolk/SKO02304.px [t] Starfsfólk við kennslu eftir stöðugildum, búsetu og réttindum 1998-2024
+    Samfelag/skolamal/2_grunnskolastig/1_gsStarfsfolk/SKO02305.px [t] Starfsfólk við kennslu í grunnskólum eftir starfssviði 1998-2024
+    Samfelag/skolamal/2_grunnskolastig/1_gsStarfsfolk/SKO02306.px [t] Brottfall starfsfólks við kennslu í grunnskólum eftir stöðuhlutfalli 1999-2024
+    Samfelag/skolamal/2_grunnskolastig/1_gsStarfsfolk/SKO02307.px [t] Starfsfólk í grunnskólum eftir starfssviðum og kyni 1998-2024
+    Samfelag/skolamal/2_grunnskolastig/1_gsStarfsfolk/SKO02308.px [t] Meðalaldur starfsfólks við kennslu 1998-2024
+  Samfelag/skolamal/2_grunnskolastig/2_gsSkolahald [l] Skólahald
+    Samfelag/skolamal/2_grunnskolastig/2_gsSkolahald/SKO02202.px [t] Rekstrarform grunnskóla og fjöldi nemenda 1998-2025
+    Samfelag/skolamal/2_grunnskolastig/2_gsSkolahald/SKO02203.px [t] Fjöldi skóladaga eftir bekkjum 2002-2023
+    Samfelag/skolamal/2_grunnskolastig/2_gsSkolahald/SKO02204.px [t] Skóladagar 1999-2023
+    Samfelag/skolamal/2_grunnskolastig/2_gsSkolahald/SKO02205.px [t] Nemendastundir eftir námsgreinum og bekk 2000-2023
+    Samfelag/skolamal/2_grunnskolastig/2_gsSkolahald/SKO02206.px [t] Vikulegar kennslustundir til sérkennslu og stuðnings 2004-2023
+    Samfelag/skolamal/2_grunnskolastig/2_gsSkolahald/SKO02208.px [t] Meðalfjöldi og skipting skóladaga 2019-2023
+    Samfelag/skolamal/2_grunnskolastig/2_gsSkolahald/SKO02210.px [t] Skólar með breytt fyrirkomulag kennslu vegna kórónuveirunnar (Covid-19) 2019-2023
+  Samfelag/skolamal/2_grunnskolastig/4_gseldraefni [l] Eldra efni
+    Samfelag/skolamal/2_grunnskolastig/4_gseldraefni/SKO02104.px [t] Nemendur í 5 ára bekk 1998-2016    
+    Samfelag/skolamal/2_grunnskolastig/4_gseldraefni/SKO02201.px [t] Einsetning grunnskóla eftir landssvæðum 1998-2020
+Samfelag/skolamal/3_framhaldsskolastig [l] Framhaldsskóla- og viðbótarstig
+  Samfelag/skolamal/3_framhaldsskolastig/0_fsNemendur [l] Nemendur
+    Samfelag/skolamal/3_framhaldsskolastig/0_fsNemendur/SKO03104.px [t] Nemendur eftir skólastigi, tegund náms, almennu sviði og kyni 1997-2025
+    Samfelag/skolamal/3_framhaldsskolastig/0_fsNemendur/SKO03105.px [t] Nemendur eftir skólastigi, tegund náms, afmörkuðu sviði og kyni 1997-2025
+    Samfelag/skolamal/3_framhaldsskolastig/0_fsNemendur/SKO03106.px [t] Nemendur eftir skólastigi, tegund náms, einstöku sviði og kyni 1997-2025
+    Samfelag/skolamal/3_framhaldsskolastig/0_fsNemendur/SKO03106b.px [t] Nemendur eftir skólastigi, tegund náms, námsbraut og kyni 1997-2025
+    Samfelag/skolamal/3_framhaldsskolastig/0_fsNemendur/SKO03107.px [t] Nemendur eftir skólastigi, almennu sviði náms, aldri og kyni 1997-2025
+    Samfelag/skolamal/3_framhaldsskolastig/0_fsNemendur/SKO03107b.px [t] Nemendur eftir skólastigi, tegund náms, aldri og kyni 1997-2025
+    Samfelag/skolamal/3_framhaldsskolastig/0_fsNemendur/SKO03107c.px [t] Flokkun náms á framhaldsskólastigi og viðbótarstigi samkvæmt ÍSNÁM2008 1997-2025
+    Samfelag/skolamal/3_framhaldsskolastig/0_fsNemendur/SKO03108.px [t] Skólasókn á framhaldsskólastigi eftir kyni, aldri og landsvæðum 1999-2025
+    Samfelag/skolamal/3_framhaldsskolastig/0_fsNemendur/SKO03109.px [t] Nýnemar á framhaldsskólastigi eftir kyni, aldri, tegund náms, bakgrunni og kennsluformi 1997-2017
+    Samfelag/skolamal/3_framhaldsskolastig/0_fsNemendur/SKO03110a.px [t] Nýnemar í bóknámi á framhaldsskólastigi eftir kyni, aldri og lögheimili 1997-2017
+    Samfelag/skolamal/3_framhaldsskolastig/0_fsNemendur/SKO03110b.px [t] Nýnemar í starfsnámi á framhaldsskólastigi eftir kyni, aldri, almennu sviði og lögheimili 1997-2017
+    Samfelag/skolamal/3_framhaldsskolastig/0_fsNemendur/SKO03111.px [t] Framhaldsskólanemar sem læra erlend tungumál eftir önn, tungumáli og kyni 1999-2019
+    Samfelag/skolamal/3_framhaldsskolastig/0_fsNemendur/SKO03112.px [t] Framhaldsskólanemar sem læra erlend tungumál eftir önn, fjölda tungumála og kyni 1999-2019
+    Samfelag/skolamal/3_framhaldsskolastig/0_fsNemendur/SKO03131.px [t] Skólasókn í framhaldsskóla eftir bakgrunni, kyni og aldri 2008-2017
+    Samfelag/skolamal/3_framhaldsskolastig/0_fsNemendur/SKO03132.px [t] Fjöldi innflytjenda í skóla skipt eftir skólastigi og búsetu 2008-2017
+    Samfelag/skolamal/3_framhaldsskolastig/0_fsNemendur/SKO03133.px [t] Fjöldi innflytjenda í skóla skipt eftir skólastigi og fæðingarsvæði 2008-2017
+    Samfelag/skolamal/3_framhaldsskolastig/0_fsNemendur/SKO03134.px [t] Fjöldi innflytjenda í skóla skipt eftir skólastigi og flokkuðum fæðingarlöndum 2008-2017
+    Samfelag/skolamal/3_framhaldsskolastig/0_fsNemendur/SKO03135.px [t] Fjöldi innflytjenda í skóla skipt eftir skólastigi og lengd dvalar 2008-2017
+  Samfelag/skolamal/3_framhaldsskolastig/1_fsProf [l] Brautskráningar
+    Samfelag/skolamal/3_framhaldsskolastig/1_fsProf/SKO03200.px [t] Brautskráðir stúdentar eftir kyni 1847-2025
+    Samfelag/skolamal/3_framhaldsskolastig/1_fsProf/SKO03201.px [t] Brautskráðir stúdentar eftir landsvæði, aldursflokki og kyni 1995-2025
+    Samfelag/skolamal/3_framhaldsskolastig/1_fsProf/SKO03202.px [t] Brautskráðir nemendur á framhaldsskólastigi og viðbótarstigi eftir skólastigi, landsvæði, aldursflokki og kyni 1995-2025
+    Samfelag/skolamal/3_framhaldsskolastig/1_fsProf/SKO03202a.px [t] Brautskráðir nemendur á framhaldsskólastigi og viðbótarstigi eftir bakgrunni, aldursflokki og kyni 1995-2025
+    Samfelag/skolamal/3_framhaldsskolastig/1_fsProf/SKO03203.px [t] Brautskráningar á framhaldsskólastigi eftir próftegund, aldursflokki og kyni 1995-2025
+    Samfelag/skolamal/3_framhaldsskolastig/1_fsProf/SKO03204.px [t] Brautskráningar með stúdentspróf eftir námsleið, tegund stúdentsprófs og kyni 1995-2025
+    Samfelag/skolamal/3_framhaldsskolastig/1_fsProf/SKO03206.px [t] Brautskráningar úr almennu námi og starfsnámi á framhaldsskólastigi eftir almennu sviði, próftegund og kyni 1995-2025
+    Samfelag/skolamal/3_framhaldsskolastig/1_fsProf/SKO03206a.px [t] Brautskráningar á framhaldsskólastigi eftir einstöku sviði, próftegund og kyni 1995-2025
+    Samfelag/skolamal/3_framhaldsskolastig/1_fsProf/SKO03206c.px [t] Brautskráningar úr almennu námi og starfsnámi á framhaldsskólastigi eftir námsbraut, prófgráðu og kyni 1995-2025
+    Samfelag/skolamal/3_framhaldsskolastig/1_fsProf/SKO03207.px [t] Brautskráningar á viðbótarstigi eftir próftegund, aldursflokki og kyni 1995-2025
+    Samfelag/skolamal/3_framhaldsskolastig/1_fsProf/SKO03208.px [t] Brautskráningar á viðbótarstigi eftir almennu sviði, próftegund og kyni 1995-2025
+    Samfelag/skolamal/3_framhaldsskolastig/1_fsProf/SKO03208a.px [t] Brautskráningar á viðbótarstigi eftir einstöku sviði, próftegund og kyni 1995-2025
+    Samfelag/skolamal/3_framhaldsskolastig/1_fsProf/SKO03208b.px [t] Brautskráningar á viðbótarstigi eftir námsbraut, próftegund og kyni 1995-2025
+    Samfelag/skolamal/3_framhaldsskolastig/1_fsProf/SKO03223.px [t] Brautskráningarhlutfall og árgangsbrotthvarf af framhaldsskólastigi 1995-2023
+    Samfelag/skolamal/3_framhaldsskolastig/1_fsProf/SKO03224.px [t] Brautskráningarhlutfall og árgangsbrotthvarf af framhaldsskólastigi eftir bakgrunni 1995-2023
+    Samfelag/skolamal/3_framhaldsskolastig/1_fsProf/SKO03225.px [t] Brautskráningarhlutfall og árgangsbrotthvarf af framhaldsskólastigi eftir menntun foreldra 2012-2023
+    Samfelag/skolamal/3_framhaldsskolastig/1_fsProf/SKO03226.px [t] Brautskráningarhlutfall og árgangsbrotthvarf af framhaldsskólastigi eftir aldri við flutning til Íslands 2012-2022
+    Samfelag/skolamal/3_framhaldsskolastig/1_fsProf/SKO03227.px [t] Staða brautskráðra af framhaldsskólastigi ári eftir útskrift 2018-2019
+  Samfelag/skolamal/3_framhaldsskolastig/2_fsStarfsfolk [l] Starfsfólk
+    Samfelag/skolamal/3_framhaldsskolastig/2_fsStarfsfolk/SKO03305.px [t] Starfsfólk við kennslu eftir kyni, réttindum, starfsheiti, tegund og aðsetri skóla 2011-2021
+    Samfelag/skolamal/3_framhaldsskolastig/2_fsStarfsfolk/SKO03306.px [t] Starfsfólk við kennslu eftir kyni, réttindum, aldri, stöðuhlutfalli og menntun 2011-2021
+    Samfelag/skolamal/3_framhaldsskolastig/2_fsStarfsfolk/SKO03307.px [t] Starfsfólk eftir kyni, starfsheiti, tegund og aðsetri skóla 2011-2021
+    Samfelag/skolamal/3_framhaldsskolastig/2_fsStarfsfolk/SKO03308.px [t] Starfsfólk eftir kyni, aldri, stöðuhlutfalli og menntun 2011-2021
+  Samfelag/skolamal/3_framhaldsskolastig/3_fsSkolahald [l] Skólahald
+    Samfelag/skolamal/3_framhaldsskolastig/3_fsSkolahald/SKO03401.px [t] Starfstími framhaldsskóla 2001-2012
+  Samfelag/skolamal/3_framhaldsskolastig/4_fseldra [l] Framhaldsskólastig - eldra efni
+    Samfelag/skolamal/3_framhaldsskolastig/4_fseldra/SKO03101.px [t] Skráðir nemendur á framhalds- og viðbótarstigi eftir skólum, tegund náms, námsbraut og kyni 2007-2014     
+    Samfelag/skolamal/3_framhaldsskolastig/4_fseldra/SKO03102.px [t] Skráðir nemendur í skólum á framhaldsskólastigi eftir kennsluformi og tegund skóla 1997-2014   
+    Samfelag/skolamal/3_framhaldsskolastig/4_fseldra/SKO03103.px [t] Skráðir nemendur í skólum á framhaldsskólastigi eftir kyni og kennsluformi 2001-2014   
+    Samfelag/skolamal/3_framhaldsskolastig/4_fseldra/SKO03104.px [t] Nemendur eftir námsbrautum og kyni 1975-2006
+    Samfelag/skolamal/3_framhaldsskolastig/4_fseldra/SKO03105.px [t] Nemendur á framhaldsskólastigi eftir námsbraut, kyni, aldri og lögheimili 1997-2006
+    Samfelag/skolamal/3_framhaldsskolastig/4_fseldra/SKO03106.px [t] Nemendur eftir skólum, kyni og lögheimili 1997-2006
+    Samfelag/skolamal/3_framhaldsskolastig/4_fseldra/SKO03121.px [t] Brottfall úr framhaldsskólum eftir kyni, aldri og og kennsluformi 2002-2003
+    Samfelag/skolamal/3_framhaldsskolastig/4_fseldra/SKO03122.px [t] Brottfall úr framhaldsskólum eftir kyni, námsári og kennsluformi 2002-2003
+    Samfelag/skolamal/3_framhaldsskolastig/4_fseldra/SKO03204.px [t] Brautskráðir stúdentar eftir námsbraut, tegund stúdentsprófs, kyni og ári 1995-2005
+    Samfelag/skolamal/3_framhaldsskolastig/4_fseldra/SKO03205.px [t] Fjöldi brautskráninga í starfsnámi á framhaldsskólastigi eftir námsbraut, prófgráðu, kyni og ári 1995-2005
+    Samfelag/skolamal/3_framhaldsskolastig/4_fseldra/SKO03211.px [t] Brautskráðir stúdentar eftir landsvæði, aldursflokki og kyni 1995-2016
+    Samfelag/skolamal/3_framhaldsskolastig/4_fseldra/SKO03212.px [t] Brautskráðir nemendur eftir skólastigi, landsvæði, aldursflokki og kyni 1995-2016
+    Samfelag/skolamal/3_framhaldsskolastig/4_fseldra/SKO03213.px [t] Brautskráningar á framhaldsskólastigi eftir próftegund, aldursflokki og kyni 1995-2016
+    Samfelag/skolamal/3_framhaldsskolastig/4_fseldra/SKO03217.px [t] Brautskráningar á viðbótarstigi eftir próftegund, aldursflokki og kyni 1995-2016
+    Samfelag/skolamal/3_framhaldsskolastig/4_fseldra/SKO03301.px [t] Starfsfólk við kennslu eftir kyni, réttindum, starfsheiti, tegund og aðsetri skóla  1999-2012
+    Samfelag/skolamal/3_framhaldsskolastig/4_fseldra/SKO03302.px [t] Starfsfólk við kennslu eftir kyni, réttindum, aldri, stöðuhlutfalli og menntun 1999-2012
+    Samfelag/skolamal/3_framhaldsskolastig/4_fseldra/SKO03303.px [t] Starfsfólk eftir kyni, starfsheiti, tegund og aðsetri skóla 1999-2012
+    Samfelag/skolamal/3_framhaldsskolastig/4_fseldra/SKO03304.px [t] Starfsfólk eftir kyni, aldri, stöðuhlutfalli og menntun 1999-2012
+Samfelag/skolamal/4_haskolastig [l] Háskóla- og doktorsstig
+  Samfelag/skolamal/4_haskolastig/0_hsNemendur [l] Nemendur
+    Samfelag/skolamal/4_haskolastig/0_hsNemendur/SKO04103.px [t] Nemendur eftir skólastigi, tegund náms, almennu sviði og kyni 1997-2025
+    Samfelag/skolamal/4_haskolastig/0_hsNemendur/SKO04104.px [t] Nemendur eftir skólastigi, tegund náms, afmörkuðu sviði og kyni 1997-2025
+    Samfelag/skolamal/4_haskolastig/0_hsNemendur/SKO04105.px [t] Nemendur eftir skólastigi, tegund náms, einstöku sviði og kyni 1997-2025
+    Samfelag/skolamal/4_haskolastig/0_hsNemendur/SKO04105b.px [t] Nemendur eftir skólastigi, tegund náms, námsbraut og kyni 1997-2025
+    Samfelag/skolamal/4_haskolastig/0_hsNemendur/SKO04106.px [t] Nemendur eftir skólastigi, almennu sviði náms, aldri og kyni 1997-2025
+    Samfelag/skolamal/4_haskolastig/0_hsNemendur/SKO04106a.px [t] Flokkun náms á háskólastigi og doktorsstigi samkvæmt ÍSNÁM2008 1997-2025
+    Samfelag/skolamal/4_haskolastig/0_hsNemendur/SKO04107.px [t] Nemendur í námi erlendis eftir löndum, almennum sviðum náms og kyni 1997-2025
+    Samfelag/skolamal/4_haskolastig/0_hsNemendur/SKO04108.px [t] Skólasókn á háskólastigi eftir kyni, aldri og lögheimili 1999-2025
+    Samfelag/skolamal/4_haskolastig/0_hsNemendur/SKO04121.px [t] Nýnemar á háskólastigi og doktorsstigi eftir almennu sviði, landsvæði, kyni og aldri 1997-2017
+    Samfelag/skolamal/4_haskolastig/0_hsNemendur/SKO04122.px [t] Nýnemar á háskólastigi og doktorsstigi eftir afmörkuðu sviði, ríkisfangi, kyni og aldri 1997-2017
+    Samfelag/skolamal/4_haskolastig/0_hsNemendur/SKO04125.px [t] Endurskráðir nemar á háskólastigi og doktorsstigi eftir stigi, kyni og aldri 1997-2010
+    Samfelag/skolamal/4_haskolastig/0_hsNemendur/SKO04126.px [t] Endurinnritunarhlutfall í þriggja ára bakkalárnámi 2011-2018
+    Samfelag/skolamal/4_haskolastig/0_hsNemendur/SKO04128.px [t] Nettó innritunarhlutfall á háskólastigi og doktorsstigi eftir kyni 1997-2017
+    Samfelag/skolamal/4_haskolastig/0_hsNemendur/SKO04141.px [t] Skólasókn í háskóla eftir bakgrunni, kyni og aldri 2008-2017
+    Samfelag/skolamal/4_haskolastig/0_hsNemendur/SKO04142.px [t] Fjöldi innflytjenda í skóla skipt eftir skólastigi og búsetu 2008-2017
+    Samfelag/skolamal/4_haskolastig/0_hsNemendur/SKO04143.px [t] Fjöldi innflytjenda í skóla skipt eftir skólastigi og fæðingarsvæði 2008-2017
+    Samfelag/skolamal/4_haskolastig/0_hsNemendur/SKO04144.px [t] Fjöldi innflytjenda í skóla skipt eftir skólastigi og flokkuðum fæðingarlöndum 2008-2017
+    Samfelag/skolamal/4_haskolastig/0_hsNemendur/SKO04145.px [t] Fjöldi innflytjenda í skóla skipt eftir skólastigi og lengd dvalar 2008-2017
+  Samfelag/skolamal/4_haskolastig/1_hsProf [l] Brautskráningar
+    Samfelag/skolamal/4_haskolastig/1_hsProf/SKO04201.px [t] Brautskráðir nemendur á háskólastigi og doktorsstigi eftir skólastigi, landsvæði, aldursflokki og kyni 1995-2025
+    Samfelag/skolamal/4_haskolastig/1_hsProf/SKO04201a.px [t] Brautskráðir nemendur á háskólastigi og doktorsstigi eftir bakgrunni, aldursflokki og kyni 1995-2025
+    Samfelag/skolamal/4_haskolastig/1_hsProf/SKO04203.px [t] Brautskráningar á háskólastigi og doktorsstigi eftir prófgráðu, aldursflokki og kyni 1995-2025
+    Samfelag/skolamal/4_haskolastig/1_hsProf/SKO04205.px [t] Brautskráningar á háskólastigi og doktorsstigi eftir almennu sviði, prófgráðu og kyni 1995-2025
+    Samfelag/skolamal/4_haskolastig/1_hsProf/SKO04205b.px [t] Brautskráningar á háskólastigi og doktorsstigi eftir einstöku sviði, prófgráðu og kyni 1995-2025
+    Samfelag/skolamal/4_haskolastig/1_hsProf/SKO04205c.px [t] Brautskráningar á háskólastigi og doktorsstigi eftir námsbraut, prófgráðu og kyni 1995-2025
+    Samfelag/skolamal/4_haskolastig/1_hsProf/SKO04206.px [t] Brautskráningarhlutfall nemenda á háskólastigi 2004-2022
+    Samfelag/skolamal/4_haskolastig/1_hsProf/SKO04207.px [t] Brautskráningarhlutfall og árgangsbrotthvarf í þriggja ára bakkalárnámi 2004-2023
+    Samfelag/skolamal/4_haskolastig/1_hsProf/SKO04208.px [t] Brautskráningarhlutfall og árgangsbrotthvarf í þriggja ára bakkalárnámi eftir bakgrunni 2011-2023
+    Samfelag/skolamal/4_haskolastig/1_hsProf/SKO04208a.px [t] Brautskráningarhlutfall og árgangsbrotthvarf í þriggja ára bakkalárnámi eftir rekstrarformi 2014-2023
+    Samfelag/skolamal/4_haskolastig/1_hsProf/SKO04208b.px [t] Brautskráningarhlutfall og árgangsbrotthvarf í þriggja ára bakkalárnámi eftir námssviði 2014-2023
+    Samfelag/skolamal/4_haskolastig/1_hsProf/SKO04209.px [t] Brautskráningarhlutfall og árgangsbrotthvarf í þriggja ára bakkalárnámi eftir menntun foreldra 2011-2023
+    Samfelag/skolamal/4_haskolastig/1_hsProf/SKO04209a.px [t] Brottfall af háskólastigi eftir kyni, aldri, kennsluformi og prófgráðu 2002-2003
+    Samfelag/skolamal/4_haskolastig/1_hsProf/SKO04209b.px [t] Brottfall af háskólastigi eftir kyni, námsári, kennsluformi og umfangi náms 2002-2003
+    Samfelag/skolamal/4_haskolastig/1_hsProf/SKO04210.px [t] Doktorsvarnir Íslendinga eftir kyni 1987-2006
+    Samfelag/skolamal/4_haskolastig/1_hsProf/SKO04211.px [t] Doktorsvarnir Íslendinga eftir námslandi 1997-2006
+    Samfelag/skolamal/4_haskolastig/1_hsProf/SKO04212.px [t] Doktorsvarnir Íslendinga eftir fræðasviði 1997-2006
+  Samfelag/skolamal/4_haskolastig/2_hsStarfsfolk [l] Starfsfólk
+    Samfelag/skolamal/4_haskolastig/2_hsStarfsfolk/SKO04301.px [t] Starfsfólk eftir starfsheiti, tegund og aðsetri skóla 2012-2023
+    Samfelag/skolamal/4_haskolastig/2_hsStarfsfolk/SKO04302.px [t] Starfsfólk eftir aldri, stöðuhlutfalli og menntun 2012-2023
+  Samfelag/skolamal/4_haskolastig/3_hseldra [l] Háskólastig - eldra efni
+    Samfelag/skolamal/4_haskolastig/3_hseldra/SKO04100.px [t] Skráðir nemendur á háskóla- og doktorsstigi eftir skólum, tegund náms og kyni 2007-2014    
+    Samfelag/skolamal/4_haskolastig/3_hseldra/SKO04101.px [t] Skráðir nemendur í skólum á háskólastigi eftir kennsluformi og tegund skóla 1997-2014   
+    Samfelag/skolamal/4_haskolastig/3_hseldra/SKO04102.px [t] Skráðir nemendur í skólum á háskólastigi eftir kyni og kennsluformi 2001-2014
+    Samfelag/skolamal/4_haskolastig/3_hseldra/SKO04103.px [t] Nemendur, námsbrautir og kyn 1975-2006
+    Samfelag/skolamal/4_haskolastig/3_hseldra/SKO04104.px [t] Nemendur á háskólastigi eftir námsbrautum, lögheimili nemenda, kyni og aldri 1999-2006
+    Samfelag/skolamal/4_haskolastig/3_hseldra/SKO04105.px [t] Nemendur eftir háskólum, lögheimili nemenda og kyni 1997-2006
+    Samfelag/skolamal/4_haskolastig/3_hseldra/SKO04107.px [t] Nemendur í námi erlendis eftir löndum og kyni 1997-2001
+    Samfelag/skolamal/4_haskolastig/3_hseldra/SKO04202.px [t] Brautskráningar á háskólastigi eftir prófgráðu, aldursflokki og kyni 1995-2005
+    Samfelag/skolamal/4_haskolastig/3_hseldra/SKO04204.px [t] Brautskráningar á háskólastigi eftir námsbraut, prófgráðu, kyni og ári 1995-2005
+    Samfelag/skolamal/4_haskolastig/3_hseldra/SKO04211.px [t] Brautskráðir nemendur eftir skólastigi, landsvæði, aldursflokki og kyni 1995-2016
+    Samfelag/skolamal/4_haskolastig/3_hseldra/SKO04213.px [t] Brautskráningar á háskólastigi og doktorsstigi eftir prófgráðu, aldursflokki og kyni 1995-2016
+    Samfelag/skolamal/4_haskolastig/3_hseldra/SKO04391.px [t] Starfsfólk eftir starfsheiti, tegund og aðsetri skóla 1999-2012
+    Samfelag/skolamal/4_haskolastig/3_hseldra/SKO04392.px [t] Starfsfólk eftir aldri, stöðuhlutfalli og menntun 1999-2012
+Samfelag/skolamal/5_menntunarstada [l] Menntunarstaða
+  Samfelag/skolamal/5_menntunarstada/SKO00001.px [t] Mannfjöldi eftir menntunarstöðu samkvæmt ISCED 2011 menntunarflokkuninni 2003-2024
+  Samfelag/skolamal/5_menntunarstada/SKO00002.px [t] Mannfjöldi eftir menntunarstöðu samkvæmt ISCED 2011 2003-2024, hlutfallsleg skipting
+  Samfelag/skolamal/5_menntunarstada/SKO00003.px [t] Mannfjöldi 25-64 ára eftir menntunarstöðu og stöðu á vinnumarkaði samkvæmt ISCED 2011 menntunarflokkuninni 2003-2024
+  Samfelag/skolamal/5_menntunarstada/SKO00004.px [t] Mannfjöldi 25-64 ára eftir menntunarstöðu og stöðu á vinnumarkaði samkvæmt ISCED 2011 menntunarflokkuninni 2003-2024, hlutfallsleg skipting
+  Samfelag/skolamal/5_menntunarstada/SKO00005.px [t] Mannfjöldi 16-74 ára eftir menntunarstöðu og stöðu á vinnumarkaði samkvæmt ISCED 2011 menntunarflokkuninni 2003-2024
+  Samfelag/skolamal/5_menntunarstada/SKO00006.px [t] Mannfjöldi 16-74 ára eftir menntunarstöðu og stöðu á vinnumarkaði samkvæmt ISCED 2011 menntunarflokkuninni 2003-2024, hlutfallsleg skipting
+  Samfelag/skolamal/5_menntunarstada/SKO00007.px [t] Mannfjöldi eftir menntunarstöðu samkvæmt stigum í ISCED 2011 menntunarflokkuninni 2003-2020
+  Samfelag/skolamal/5_menntunarstada/SKO00009.px [t] Mannfjöldi eftir menntunarstöðu samkvæmt ISCED97 menntunarflokkuninni 2003-2013
+  Samfelag/skolamal/5_menntunarstada/SKO00010.px [t] Mannfjöldi eftir menntunarstöðu samkvæmt ISCED97 2003-2013, hlutfallsleg skipting      
+Samfelag/skolamal/6_simenntun [l] Símenntun
+  Samfelag/skolamal/6_simenntun/SKO00011.px [t] Símenntun eftir kyni, menntunarstöðu og tegund símenntunar samkvæmt ISCED 2011 menntunarflokkuninni 2003-2024
+  Samfelag/skolamal/6_simenntun/SKO00012.px [t] Símenntun eftir kyni, aldri, stöðu á vinnumarkaði og tegund símenntunar samkvæmt ISCED 2011 menntunarflokkuninni 2003-2024
+  Samfelag/skolamal/6_simenntun/SKO00021.px [t] Símenntun eftir kyni, menntunarstöðu og tegund símenntunar samkvæmt ISCED97 menntunarflokkuninni 2003-2013  
+  Samfelag/skolamal/6_simenntun/SKO00022.px [t] Símenntun eftir kyni, aldri, stöðu á vinnumarkaði og tegund símenntunar samkvæmt ISCED97 menntunarflokkuninni 2003-2013  
+
+== ireland primary
+200 text/html; charset=utf-8 385763
+https://www.gov.ie/en/publications/
+https://assets.gov.ie/static/documents/09fe3ad4/Data_on_Individual_Schools_Mainstream_2024_25.xlsx
+https://assets.gov.ie/static/documents/8e1b86ab/Data_on_Individual_Schools_Mainstream..xlsx
+https://assets.gov.ie/static/documents/primary-and-special-schools-2012-2013.xls
+https://assets.gov.ie/static/documents/primary-and-special-schools-2013-2014.xlsx
+https://assets.gov.ie/static/documents/primary-and-special-schools-2014-2015.xls
+https://assets.gov.ie/static/documents/primary-and-special-schools-2015-2016.xlsx
+https://assets.gov.ie/static/documents/primary-and-special-schools-2016-2017.xlsx
+https://assets.gov.ie/static/documents/primary-schools-1974-1975.xls
+https://assets.gov.ie/static/documents/primary-schools-1975-1976.xls
+https://assets.gov.ie/static/documents/primary-schools-1976-1977.xls
+https://assets.gov.ie/static/documents/primary-schools-1977-1978.xls
+https://assets.gov.ie/static/documents/primary-schools-1978-1979.xls
+https://assets.gov.ie/static/documents/primary-schools-1979-1980.xls
+https://assets.gov.ie/static/documents/primary-schools-1980-1981.xls
+https://assets.gov.ie/static/documents/primary-schools-1981-1982.xls
+https://assets.gov.ie/static/documents/primary-schools-1982-1983.xls
+https://assets.gov.ie/static/documents/primary-schools-1983-1984.xls
+https://assets.gov.ie/static/documents/primary-schools-1993-1994.xls
+https://assets.gov.ie/static/documents/primary-schools-1994-1995.xls
+https://assets.gov.ie/static/documents/primary-schools-1995-1996.xls
+https://assets.gov.ie/static/documents/primary-schools-1996-1997.xls
+https://assets.gov.ie/static/documents/primary-schools-1997-1998.xls
+https://assets.gov.ie/static/documents/primary-schools-1998-1999.xls
+https://assets.gov.ie/static/documents/primary-schools-1999-2000.xls
+https://assets.gov.ie/static/documents/primary-schools-2000-2001.xls
+https://assets.gov.ie/static/documents/primary-schools-2001-2002.xls
+https://assets.gov.ie/static/documents/primary-schools-2002-2003.xls
+https://assets.gov.ie/static/documents/primary-schools-2003-2004.xls
+https://assets.gov.ie/static/documents/primary-schools-2004-2005.xls
+https://assets.gov.ie/static/documents/primary-schools-2005-2006.xls
+https://assets.gov.ie/static/documents/primary-schools-2006-2007.xls
+https://assets.gov.ie/static/documents/primary-schools-2007-2008.xls
+https://assets.gov.ie/static/documents/primary-schools-2008-2009.xls
+https://assets.gov.ie/static/documents/primary-schools-2009-2010.xls
+https://assets.gov.ie/static/documents/primary-schools-2010-2011.xls
+https://assets.gov.ie/static/documents/primary-schools-2011-2012.xls
+https://assets.gov.ie/static/documents/primary-schools-2017-2018.xlsx
+https://assets.gov.ie/static/documents/primary-schools-2018-2019.xlsx
+https://assets.gov.ie/static/documents/primary-schools-20192020.xlsx
+https://assets.gov.ie/static/documents/primary-schools-20202021.xlsx
+https://assets.gov.ie/static/documents/primary-schools-20212022.xlsx
+https://assets.gov.ie/static/documents/primary-schools-20222023.xlsx
+https://assets.gov.ie/static/documents/primary-schools-20232024.xlsx
+https://www.gov.ie/en/department-of-education/collections/primary-schools-enrolment-figures/
+https://www.gov.ie/en/govie-team/publications/about-ai-search-on-govie/
+
+== ireland data on individual schools
+200 text/html; charset=utf-8 335376
+https://www.gov.ie/en/publications/
+https://www.gov.ie/en/department-of-education/collections/class-size-information-at-individual-primary-school-level/
+https://www.gov.ie/en/department-of-education/collections/data-on-individual-schools/
+https://www.gov.ie/en/department-of-education/collections/enrolment-figures-for-previous-years-in-post-primary-boarding-schools/
+https://www.gov.ie/en/department-of-education/collections/post-primary-schools-enrolment-figures/
+https://www.gov.ie/en/department-of-education/collections/primary-schools-enrolment-figures/
+https://www.gov.ie/en/department-of-education/collections/school-enrolment-figures-for-previous-years-at-post-primary-level/
+https://www.gov.ie/en/department-of-education/collections/school-enrolment-figures-for-previous-years-in-fee-paying-schools-post-primary-level/
+https://www.gov.ie/en/department-of-education/publications/education-statistics/
+https://www.gov.ie/en/govie-team/publications/about-ai-search-on-govie/
+
+== ireland cso enrol
+b'{"class":"dataset","dimension":{"STATISTIC":{"category":{"index":["EDA42"],"label":{"EDA42":"Primary Pupils"},"unit":{"EDA42":{"decimals":0,"label":"Number","position":"end"}}},"label":"Statistic"},"C02076V02508":{"category":{"index":["005","006","007","008","009","010","011","012","013","237","283","-"],"label":{"005":"5 years","006":"6 years","007":"7 years","008":"8 years","009":"9 years","010":"10 years","011":"11 years","012":"12 years","013":"13 years","237":"4 years and under","283":"14 years and over","-":"All ages"}},"label":"Age"},"C02447V03042":{"category":{"index":["1","11","110","111","112","113","114","115","116","117","118","121","122","130"],"label":{"1":"All first level school programmes","11":"All mainstream national school programmes","110":"All first level education institutions aided by the Department of Education and Skills","111":"Junior infants","112":"Senior infants","113":"1st class","114":"2nd class","115":"3rd class","116":"4th class","117":"5th class","118":"6th class","121":"Pupils with special needs in mainstream national schools","122":"Pupils in special national schools","130":"Pupils in private primary schools"}},"label":"School Programme"},"TLIST(A1)":{"category":{"index":["2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024","2025","2026"],"label":{"2000":"1999-2000","2001":"2000-2001","2002":"2001-2002","2003":"2002-2003","2004":"2003-2004","2005":"2004-2005","2006":"2005-2006","2007":"2006-2007","2008":"2007-2008","2009":"2008-2009","2010":"2009-2010","2011":"2010-2011","2012":"2011-2012","2013":"2012-2013","2014":"2013-2014","2015":"2014-2015","2016":"2015-2016","2017":"2016-2017","2018":"2017-2018","2019":"2018-2019","2020":"2019-2020","2021":"2020-2021","2022":"2021-2022","2023":"2022-2023","2024":"2023-2024","2025":"2024-2025","2026":"2025-2026"}},"label":"Academic Year"}},"extension":{"matrix":"EDA42","reasons":["Planned release"],"language":{"code":"en","name":"English"},"elimination":{"C02076V02508":null,"C02447V03042":null},"contact":{"name":"Helen Maxwell","email":"statistics@education.gov.ie","phone":"(+353) 1 889 6558"},"subject":{"code":41,"value":"Department of Education and Youth"},"product":{"code":"DOEP","value":"Primary Level Education"},"official":true,"copyright":{"name":"Department of Education and Youth","code":"DES","href":"https://www.education.ie"},"exceptional":false,"reservation":false,"archive":false,"experimental":false,"analytical":false},"href":"https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/EDA42/PX/2013/en","id":["STATISTIC","C02076V02508","C02447V03042","TLIST(A1)"],"label":"Primary Pupils","link":{"alternate":[{"type":"text/csv","href":"https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/EDA42/CSV/1.0/en"},{"type":"application/json","href":"https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/EDA42/J'
+
+== coneval page
+200 text/html; charset=utf-8 124682
+https://www.coneval.org.mx/Medicion/Documents/Pobreza_municipal/2020/Concentrado_indicadores_de_pobreza_2020.zip
+
+== coneval groups page
+ERR or-grupos-de-poblacion-2020.aspx", r"\.(zip|xlsx?|csv)"))
+                                        ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 34, in links
+    s, ct, cl, b = get(url)
+                   ~~~^^^^^
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 11, in get
+    with urllib.request.urlopen(req, timeout=120) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 493, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.14/urllib/request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.14/urllib/request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.14/urllib/request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+
+
+== coneval zip head
+200 text/html 2339
+
+== inegi iter head
+200 text/html 
+
+== datos.gob.mx matricula
+ERR oard-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 128, in <lambda>
+    step("datos.gob.mx matricula", lambda: get("https://www.datos.gob.mx/busca/api/3/action/package_search?q=matricula%20municipio&rows=20", 400_000)[3][:8000])
+                                           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 11, in get
+    with urllib.request.urlopen(req, timeout=120) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 493, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.14/urllib/request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.14/urllib/request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.14/urllib/request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+
+
+== sep planeacion
+ERR ile "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 34, in links
+    s, ct, cl, b = get(url)
+                   ~~~^^^^^
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 11, in get
+    with urllib.request.urlopen(req, timeout=120) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 487, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.14/urllib/request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/usr/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.14/urllib/request.py", line 1369, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 1324, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>
+
+
+== geoboundaries MEX
+b'{"boundaryID": "MEX-ADM2-50627088", "boundaryName": "Mexico", "boundaryISO": "MEX", "boundaryYearRepresented": "2012", "boundaryType": "ADM2", "boundaryCanonical": "municipios", "boundarySource": "World Bank", "boundaryLicense": "Creative Commons Attribution 4.0 (CC BY 4.0)", "licenseDetail": "nan", "licenseSource": "datacatalog.worldbank.org/public-licenses#cc-by", "boundarySourceURL": "datacatalog.worldbank.org/dataset/mexico-municipalities-2012", "sourceDataUpdateDate": "Thu Jan 19 07:31:04 2023", "buildDate": "Dec 12, 2023", "Continent": "Latin America and the Caribbean", "UNSDG-region": "Latin America and the Caribbean", "UNSDG-subregion": "Central America", "worldBankIncomeGroup": "Upper-middle-income Countries", "admUnitCount": "2457", "meanVertices": "1338.0", "minVertices": "24", "maxVertices": "26740", "meanPerimeterLengthKM": "153.0922532997985", "minPerimeterLengthKM": "6.468680801726872", "maxPerimeterLengthKM": "2327.6965051016427", "meanAreaSqKM": "799.8571740550497", "minAreaSqKM": "2.212457344637895", "maxAreaSqKM": "53122.737100883074", "staticDownloadLink": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MEX/ADM2/geoBoundaries-MEX-ADM2-all.zip", "gjDownloadURL": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MEX/ADM2/geoBoundaries-MEX-ADM2.geojson", "tjDownloadURL": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MEX/ADM2/geoBoundaries-MEX-ADM2.topojson", "imagePreview": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MEX/ADM2/geoBoundaries-MEX-ADM2-PREVIEW.png", "simplifiedGeometryGeoJSON": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MEX/ADM2/geoBoundaries-MEX-ADM2_simplified.geojson"}'
+
+== mds misocial
+b'<!DOCTYPE html>\n<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">\n\n<head>\n    <meta charset="utf-8" />\n  <!-- Google Tag Manager -->\n  <script type="text">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':\n  new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],\n  j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=\n  \'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);\n  })(window,document,\'script\',\'dataLayer\',\'GTM-NHZSKTD\');</script>\n  <!-- End Google Tag Manager -->\n\n        <script type="application/ld+json">\n        {\n            "@context": "https://schema.org",\n            "@type": "Organization",\n            "url": "https://www.gov.br/mds",\n            "logo": "https://www.gov.br/mds/logo.png"\n        }</script>\n        <script type="application/ld+json">\n        {\n            "@context": "https://schema.org",\n            "@type": "WebSite",\n            "url": "https://www.gov.br/mds",\n            "potentialAction": {\n              "@type": "SearchAction",\n              "target": "https://www.gov.br/mds/search?SearchableText={search_term_string}",\n              "query-input": "required name=search_term_string"\n            }\n        }</script>\n\n    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n\n    \n        <base href="https://www.gov.br/mds/pt-br/avisos/avisos/" /><!--[if lt IE 7]></base><![endif]-->\n    \n\n    \n        <meta property="og:title" content="Avisos" />\n<meta property="og:description" content="" />\n<meta property="og:type" content="article" />\n<meta property="og:url" content="https://www.gov.br/mds/pt-br/avisos/avisos" />\n<meta property="og:image" content="https://www.gov.br/mds/logo.png" />\n\n<meta property="og:locale" content="pt_BR" />\n<meta property="og:site_name" content="Minist\xc3\xa9rio do Desenvolvimento e Assist\xc3\xaancia Social, Fam\xc3\xadlia e Combate \xc3\xa0 Fome" />\n\n\n  \n\n  \n  \n  <script type="text">\n    (function() {\n        var po = document.createElement(\'script\');\n        po.async = true;\n        po.src = document.location.protocol + \'//connect.facebook.net/pt_BR/all.js#xfbml=1\';\n        var head = document.getElementsByTagName(\'head\')[0];\n        head.appendChild(po);\n    }());\n    </script>\n\n\n\n  \n\n  <meta name="twitter:card" content="summary_large_image" />\n  <meta name="twitter:site" content="@" />\n  \n\n\n\n\n\n<meta property="creator.productor" content="https://www.gov.br/planalto/pt-br" />\n\n\n\n  \n    <link rel="stylesheet" type="text/css" href="https://www.gov.br/mds/portal_css/Sunburst%20Theme/reset-cachekey-53b6aacf7d42ee2949a0fb825504ce35.css" media="screen" />\n    <link rel="stylesheet" type="text/css" href="https://www.gov.br/mds/portal_css/Sunburst%20Theme/base-cachekey-57cadd4237ceb21431e083047a47709c.css" />\n    <style type="text/css" media="screen">@import url(https://www.gov.br/mds/portal_css/Sunburst%20Theme/resourceplone.app.jquerytools.dateinput-cachekey-23a37157d60e39cc959cd7a04333775b.css);</style>\n    <link rel="stylesheet" type="text/css" href="https://www.gov.br/mds/portal_css/Sunburst%20Theme/resourceplone.formwidget.datetimestyles-cachekey-5849be26c5765b346b5f3bec10c5fd3b.css" />\n    <style type="text/css" media="screen">@import url(https://www.gov.br/mds/portal_css/Sunburst%20Theme/jquery.autocomplete-cachekey-9f5033ee8d788258d57df8b54936b657.css);</style>\n    <link rel="stylesheet" type="text/css" href="https://www.gov.br/mds/portal_css/Sunburst%20Theme/embedder-cachekey-f82e92a5c995392ffe8df6f2219b1055.css" media="screen" />\n    <style type="text/css" media="screen">@import url(https://www.gov.br/mds/portal_css/Sunburst%20Theme/resourcecollective.pollscsscollective.polls-cachekey-0d0209ba3665b9424d184b7df3f5b60b.css);</style>\n    <link rel="stylesheet" type="text/css" href="https://www.gov.br/mds/portal_css/Sunburst%20Theme/ploneCustom-cachekey-208f006697f848931bd2c5cb866e9c26.css" />\n        <!--[if lt IE 8]>    \n    \n    <link rel="stylesheet" type="text/css" href="https://www.gov.br/mds/portal_css/Sunburst%20Theme/IEFixes-cachekey-fd60873194358a3f02ae5ca48a565ec9.css" media="screen" />\n        <![endif]-->\n    \n    <link rel="stylesheet" type="text/css" href="https://www.gov.br/mds/portal_css/Sunburst%20Theme/resourcelgpd.plugindsgov.min-cachekey-10709cc619e4499c59c6744173d32e1f.css" media="screen" />\n    <style type="text/css" media="all">@import url(https://www.gov.br/mds/portal_css/Sunburst%20Theme/resourcepas.plugins.loginunicologinunico-cachekey-99b3593b06f5b5abdeff6dfb00a2c848.css);</style>\n    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css" media="screen" />\n    <link rel="stylesheet" type="text/css" href="https://www.gov.br/mds/portal_css/Sunburst%20Theme/resourcegovbr.policycanais-cachekey-d19b4c7ed9812929006de1bf34885b5a.css" media="screen" />\n\n  \n  \n    <script type="text/javascript" src="https://www.gov.br/mds/portal_javascripts/Sunburst%20Theme/resourceplone.app.jquery-cachekey-be1dbd65ae56d22286c7c204b687ca42.js"></script>\n    <script type="text/javascript" src="https://www.gov.br/mds/portal_javascripts/Sunburst%20Theme/resourcegovbr.policyfolder_contents-cachekey-eeaf2bb98699fcaeb0746d26ae0b0d4e.js"></script>\n    <script type="text/javascript" src="https://www.gov.br/mds/portal_javascripts/Sunburst%20Theme/resourcegovbr.policycookiebar_1_3_57-cachekey-8f28bf1ff94e3989a7bff2ba03d4db0e.js"></script>\n    <script type="text/javascript" src="https://www.gov.br/mds/portal_javascripts/Sunburst%20Theme/resourcegovbr.policyapplication_cookiebar_1_3_57-cachekey-5db1eab106970191493f5bdf50034b4c.js"></script>\n    <script type="text/javascript" src="https://www.gov.br/mds/portal_javascripts/Sunburst%20Theme/register_function-cachekey-beacd441f05922bafe916a14931a4553.js"></script>\n    <script type="text/javascript" src="https://www.gov.br/mds/portal_javascripts/Sunburst%20Theme/resourceplone.formwidget.recurrencejquery.tmpl-beta1-cachekey-3fb033ed73f70ac1eff6552159'
+
+== mds vis data
+200 text/html;charset=utf-8 207885
+https://aplicacoes.cidadania.gov.br/vis/data3/data-explorer.php
+https://ead.mds.gov.br/webview.php/srv/www/htdocs/badiunetdata/files/1/2071fuxudv5wzwfjlzdk_packge/pages/pbf.html
+https://ead.mds.gov.br/webview.php/srv/www/htdocs/badiunetdata/files/1/2923hilrfsmytljpy7h9_packge/index.html
+https://www.php.net/
+
+== ibge sidra census 2022 income table search
+ERR  step("ibge sidra census 2022 income table search", lambda: get("https://servicodados.ibge.gov.br/api/v3/agregados?pesquisa=CD", 2_000_000)[3][:12000])
+                                                               ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 11, in get
+    with urllib.request.urlopen(req, timeout=120) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 487, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.14/urllib/request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/usr/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.14/urllib/request.py", line 1369, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 1324, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error timed out>
+
+
+== inep sinopse
+200 text/html;charset=utf-8 232808
+https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopse_estatistica_censo_escolar_2023.zip
+https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopse_estatistica_censo_escolar_2024.zip
+https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopse_estatistica_censo_escolar_2025.zip
+https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopses_estatisticas_censo_escolar_2020.zip
+https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopses_estatisticas_censo_escolar_2021.zip
+https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopses_estatisticas_censo_escolar_2022.zip
+https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopses_estatisticas_pesquisa_covid19_censo_escolar_2020.zip
+https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopses_estatisticas_pesquisa_covid19_censo_escolar_2021.zip
+https://download.inep.gov.br/download/censo/1997/basica/Censo_97.zip
+https://download.inep.gov.br/download/censo/1998/basica/censo-miolo-98.zip
+https://download.inep.gov.br/download/censo/1999/basica/SINOPSE_1999.zip
+https://download.inep.gov.br/download/censo/2000/basica/sinopse2000.zip
+https://download.inep.gov.br/download/censo/2001/sinopse/Sinopse_2001_26_05_02.zip
+https://download.inep.gov.br/download/censo/2002/sinopse/sinopse_2002.zip
+https://download.inep.gov.br/download/censo/2005/Censo2005.zip
+https://download.inep.gov.br/download/censo/2006/resultados_censo_escolar2006.zip
+https://download.inep.gov.br/download/censo/2008/sinopse_docente_08_ultimaV_08_abril.zip
+https://download.inep.gov.br/download/censo/2009/sinopse_professor.zip
+https://download.inep.gov.br/download/censo/2009/sinopse_professor2009_4.zip
+https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_educacao_basica/sinopse_educacao_basica_1995.xlsm
+https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_educacao_basica/sinopse_educacao_basica_1996.xls
+https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_educacao_basica/sinopse_estatistica_da_educacao_basica_2007.zip
+https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_educacao_basica/sinopse_estatistica_da_educacao_basica_2008.zip
+https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_educacao_basica/sinopse_estatistica_da_educacao_basica_2009.zip
+https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_educacao_basica/sinopse_estatistica_da_educacao_basica_2010.zip
+https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_educacao_basica/sinopse_estatistica_da_educacao_basica_2011.zip
+https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_educacao_basica/sinopse_estatistica_da_educacao_basica_2012.zip
+https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_educacao_basica/sinopse_estatistica_da_educacao_basica_2013.zip
+https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_educacao_basica/sinopse_estatistica_da_educacao_basica_2014.zip
+https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_educacao_basica/sinopse_estatistica_da_educacao_basica_2015.zip
+https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_educacao_basica/sinopse_estatistica_da_educacao_basica_2016.zip
+https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_educacao_basica/sinopse_estatistica_da_educacao_basica_2017.zip
+https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_educacao_basica/sinopse_estatistica_da_educacao_basica_2018.zip
+https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_educacao_basica/sinopse_estatistica_educacao_basica_2019.zip
+
+== geoboundaries BRA
+b'{"boundaryID": "BRA-ADM2-56859067", "boundaryName": "Brazil", "boundaryISO": "BRA", "boundaryYearRepresented": "2020", "boundaryType": "ADM2", "boundaryCanonical": "municipality", "boundarySource": "Instituto Brasileiro de Geografia e Estat\\u00edstica (IBGE), OCHA ROLAC", "boundaryLicense": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)", "licenseDetail": "nan", "licenseSource": "data.humdata.org/dataset/brazil-administrative-level-0-boundaries", "boundarySourceURL": "data.humdata.org/dataset/brazil-administrative-level-0-boundaries", "sourceDataUpdateDate": "Thu Jan 19 07:31:04 2023", "buildDate": "Dec 12, 2023", "Continent": "Latin America and the Caribbean", "UNSDG-region": "Latin America and the Caribbean", "UNSDG-subregion": "South America", "worldBankIncomeGroup": "Upper-middle-income Countries", "admUnitCount": "5570", "meanVertices": "295.0", "minVertices": "12", "maxVertices": "5330", "meanPerimeterLengthKM": "175.943620769146", "minPerimeterLengthKM": "8.099032690128102", "maxPerimeterLengthKM": "3314.302631671455", "meanAreaSqKM": "1525.5265065969395", "minAreaSqKM": "3.397999698838788", "maxAreaSqKM": "159534.13982841358", "staticDownloadLink": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BRA/ADM2/geoBoundaries-BRA-ADM2-all.zip", "gjDownloadURL": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BRA/ADM2/geoBoundaries-BRA-ADM2.geojson", "tjDownloadURL": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BRA/ADM2/geoBoundaries-BRA-ADM2.topojson", "imagePreview": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BRA/ADM2/geoBoundaries-BRA-ADM2-PREVIEW.png", "simplifiedGeometryGeoJSON": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BRA/ADM2/geoBoundaries-BRA-ADM2_simplified.geojson"}'
+
