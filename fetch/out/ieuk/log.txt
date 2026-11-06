@@ -1,0 +1,18 @@
+City of Dublin ETB: 0 minutes links; pages ['https://www.cityofdublinetb.ie/']; errors ['https://www.cdetb.ie/about-us/board/ <urlopen error [Errno -2] Name or service not known>']
+Dublin and Dún Laoghaire ETB: 121 minutes links; pages ['https://www.ddletb.ie/minutes/', 'https://www.ddletb.ie/minutes/?lang=ga', 'https://www.ddletb.ie/minutes/', 'https://www.ddletb.ie/minutes/?s=', 'https://www.ddletb.ie/minutes/#%20', 'https://www.ddletb.ie/minutes/#top', 'https://www.ddletb.ie/minutes/?lang=ga', 'https://www.ddletb.ie/minutes/?lang=ga#top', 'https://www.ddletb.ie/minutes/?s=', 'https://www.ddletb.ie/minutes/?s=#%20', 'https://www.ddletb.ie/minutes/?s=#top']; errors []
+Cavan and Monaghan ETB: 0 minutes links; pages ['https://www.cmetb.ie/cmetb-board/']; errors []
+Cork ETB: 0 minutes links; pages ['https://www.corketb.ie/about-cork-etb/', 'https://www.corketb.ie/organisation/board-members/']; errors []
+Donegal ETB: 0 minutes links; pages ['https://www.donegaletb.ie/donegal-etb/board-members/', 'https://www.donegaletb.ie/donegal-etb/about-us/']; errors []
+Galway and Roscommon ETB: 0 minutes links; pages []; errors ['https://www.gretb.ie/about-us/board/ HTTP Error 403: Forbidden']
+Kerry ETB: 1 minutes links; pages ['https://kerryetb.ie/board/']; errors []
+Kildare and Wicklow ETB: 0 minutes links; pages ['https://kwetb.ie/about-us-2/governance/', 'https://kwetb.ie/about-us-2/publications/']; errors []
+Kilkenny and Carlow ETB: 1 minutes links; pages ['https://kcetb.ie/en/corporate/board-members/', 'https://kcetb.ie/en/about-us/']; errors []
+Limerick and Clare ETB: 14 minutes links; pages ['https://lcetb.ie/board/', 'https://lcetb.ie/governance/', 'https://lcetb.ie/board-meeting-minutes/', 'https://lcetb.ie/category/board-meeting-minutes/', 'https://lcetb.ie/board-meeting-minutes/', 'https://lcetb.ie/board-meeting-minutes/#html', 'https://lcetb.ie/category/board-meeting-minutes/', 'https://lcetb.ie/category/board-meeting-minutes/#html']; errors []
+Longford and Westmeath ETB: 0 minutes links; pages ['https://www.lwetb.ie/', 'https://www.lwetb.ie/wp-content/uploads/2020/06/board.png']; errors []
+Louth and Meath ETB: 0 minutes links; pages []; errors ['https://www.lmetb.ie/about-us/board/ HTTP Error 403: Forbidden']
+Laois and Offaly ETB: 0 minutes links; pages ['https://loetb.ie/board/', 'https://loetb.ie/organisation-support-development/corporate-services/board-and-committees/']; errors []
+Mayo, Sligo and Leitrim ETB: 0 minutes links; pages ['https://msletb.ie/about-us/corporate/board-members/', 'https://msletb.ie/about-us/corporate/']; errors []
+Tipperary ETB: 0 minutes links; pages []; errors ['https://www.tipperaryetb.ie/about-us/board/ HTTP Error 403: Forbidden']
+Waterford and Wexford ETB: 66 minutes links; pages ['https://www.wwetb.ie/about/organisation/the-board-of-wwetb/', 'https://www.wwetb.ie/about/organisation/the-board-of-wwetb/board-minutes/', 'https://www.wwetb.ie/about/organisation/the-board-of-wwetb/board-minutes/', 'https://www.wwetb.ie/about/organisation/the-board-of-wwetb/board-minutes/#content']; errors []
+UK: ModernGov found for 99 of 208 councils
+UK committees: 1417

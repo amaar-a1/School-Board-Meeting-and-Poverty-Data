@@ -1,0 +1,351 @@
+{
+ "City of Dublin ETB": {
+  "pages": [
+   "https://www.cityofdublinetb.ie/"
+  ],
+  "errors": [
+   "https://www.cdetb.ie/about-us/board/ <urlopen error [Errno -2] Name or service not known>"
+  ],
+  "minutes": {}
+ },
+ "Dublin and Dún Laoghaire ETB": {
+  "pages": [
+   "https://www.ddletb.ie/minutes/",
+   "https://www.ddletb.ie/minutes/?lang=ga",
+   "https://www.ddletb.ie/minutes/",
+   "https://www.ddletb.ie/minutes/?s=",
+   "https://www.ddletb.ie/minutes/#%20",
+   "https://www.ddletb.ie/minutes/#top",
+   "https://www.ddletb.ie/minutes/?lang=ga",
+   "https://www.ddletb.ie/minutes/?lang=ga#top",
+   "https://www.ddletb.ie/minutes/?s=",
+   "https://www.ddletb.ie/minutes/?s=#%20",
+   "https://www.ddletb.ie/minutes/?s=#top"
+  ],
+  "errors": [],
+  "minutes": {
+   "https://www.ddletb.ie/wp-content/uploads/2026/10/BP-26-089-Board-Meeting-Minutes-15th-June-2026.pdf": "DDLETB Minutes 15th June",
+   "https://www.ddletb.ie/wp-content/uploads/2026/08/BP26077-DDLETB-Board-Minutes-18th-May-2026.pdf": "DDLETB Minutes 18th May",
+   "https://www.ddletb.ie/wp-content/uploads/2026/08/BP-26-076-DDLETB-Special-Board-Meeting-Minutes-8th-May-2026.pdf": "DDLETB Minutes 8th May &#8211; Special Board Minutes",
+   "https://www.ddletb.ie/wp-content/uploads/2026/06/BP-26-045-DDLETB-Board-Meeting-Minutes-25th-March-2026.pdf": "DDLETB Minutes 25th March 2026",
+   "https://www.ddletb.ie/wp-content/uploads/2026/04/Minutes-DDLETB-Board-Meeting-25th-February-2026.pdf": "DDLETB Minutes 25th February 2026",
+   "https://www.ddletb.ie/wp-content/uploads/2026/04/Minutes-DDLETB-Board-Meeting-17th-November-2025.pdf": "DDLETB Minutes 17th November 2025",
+   "https://www.ddletb.ie/wp-content/uploads/2026/03/Minutes-DDLETB-Board-Meeting-20th-October-2025.pdf": "DDLETB Minutes 20th October 2025",
+   "https://www.ddletb.ie/wp-content/uploads/2026/03/DDLETB-Board-Meeting-Minutes-15th-September-2025.pdf": "DDLETB Minutes 15th September 2025",
+   "https://www.ddletb.ie/wp-content/uploads/2025/10/DDLETB-Board-Meeting-Minutes-16th-June-2025.pdf": "DDLETB Minutes 16th June 2025",
+   "https://www.ddletb.ie/wp-content/uploads/2025/10/BP25057-DDLETB-Board-Meeting-Minutes-19th-May-2025.pdf": "DDLETB Minutes 19th May 2025",
+   "https://www.ddletb.ie/wp-content/uploads/2025/10/DDLETB-Board-Meeting-Minutes-26th-March-2025.pdf": "DDLETB Minutes 26th March 2025",
+   "https://www.ddletb.ie/wp-content/uploads/2025/04/DDLETB-Board-Meeting-Minutes-24th-February-2025.pdf": "DDLETB Minutes 24th February 2025",
+   "https://www.ddletb.ie/wp-content/uploads/2025/04/DDLETB-Board-Meeting-Minutes-20th-January-2025.pdf": "DDLETB Minutes 20th January 2025",
+   "https://www.ddletb.ie/wp-content/uploads/2025/02/DDLETB-Board-Meeting-Minutes-25th-November-2024_Eng.pdf": "DDLETB Minutes 25th November 2024",
+   "https://www.ddletb.ie/wp-content/uploads/2025/02/DDLETB-Board-Meeting-Minutes-18th-November-2024_Eng.pdf": "DDLETB Minutes 18th November 2024",
+   "https://www.ddletb.ie/wp-content/uploads/2025/02/DDLETB-Board-Meeting-Minutes-21st-October-2024_Eng.pdf": "DDLETB Minutes 21st October 2024",
+   "https://www.ddletb.ie/wp-content/uploads/2025/02/DDLETB-Board-Meeting-Minutes-16th-September-2024_Eng.pdf": "DDLETB Minutes 16th September 2024",
+   "https://www.ddletb.ie/wp-content/uploads/2024/11/DDLETB-Board-Meeting-Minutes-19th-August-2024-at-4.50pm.pdf": "DDLETB Minutes 19th August 2024 @ 4.50pm",
+   "https://www.ddletb.ie/wp-content/uploads/2024/11/DDLETB-Board-Meeting-Minutes-19th-August-2024-at-4.30pm.pdf": "DDLETB Minutes 19th August 2024 @ 4.30pm",
+   "https://www.ddletb.ie/wp-content/uploads/2024/11/BP-24-005-DDLETB-Board-Meeting-Minutes-17th-June-2024.pdf": "DDLETB Minutes 17th June 2024",
+   "https://www.ddletb.ie/wp-content/uploads/2024/11/DDLETB-Board-Meeting-Minutes-20th-May-2024.pdf": "DDLETB Minutes 20th May 2024",
+   "https://www.ddletb.ie/wp-content/uploads/2024/06/DDLETB-Board-Meeting-Minutes-25th-March-2024.pdf": "DDLETB Minutes 25th March 2024",
+   "https://www.ddletb.ie/wp-content/uploads/2024/06/DDLETB-Board-Meeting-Minutes-26th-February-2024.pdf": "DDLETB Minutes 26th February 2024",
+   "https://www.ddletb.ie/wp-content/uploads/2024/04/DDLETB-Board-Meeting-Minutes-20th-November-2023.pdf": "DDLETB Minutes 20th November 2023",
+   "https://www.ddletb.ie/wp-content/uploads/2024/08/DDLETB-Board-Meeting-Minutes-16th-October-2023.pdf": "DDLETB Minutes 16th October 2023",
+   "https://www.ddletb.ie/wp-content/uploads/2024/04/DDLETB-Minutes-18th-September-2023.pdf": "DDLETB Minutes 18th September 2023",
+   "https://www.ddletb.ie/wp-content/uploads/2024/04/DDLETB-Board-Minutes-19th-June-2023.pdf": "DDLETB Minutes 19th June 2023",
+   "https://www.ddletb.ie/wp-content/uploads/2023/08/ETB-Minutes-15th-May-2023.pdf": "DDLETB Minutes 15th May 2023",
+   "https://www.ddletb.ie/wp-content/uploads/2023/08/ETB-Minutes-27th-March-2023.pdf": "DDLETB Minutes 27th March 2023",
+   "https://www.ddletb.ie/wp-content/uploads/2023/04/ETB-Minutes-27th-February-2023.pdf": "DDLETB Minutes 27th February 2023",
+   "https://www.ddletb.ie/wp-content/uploads/2023/03/ETB-minutes-16th-January-2023.pdf": "DDLETB Minutes 16th January 2023",
+   "https://www.ddletb.ie/wp-content/uploads/2023/03/ETB-Minutes-21st-November-2022.pdf": "DDLETB Minutes 21 November 2022",
+   "https://www.ddletb.ie/wp-content/uploads/2022/12/ETB-minutes-17th-October-2022-V-1.pdf": "DDLETB Minutes 17 October 2022",
+   "https://www.ddletb.ie/wp-content/uploads/2022/12/ETB-minutes-20th-June-2022-V-1.pdf": "DDLETB Minutes 22 June 2022",
+   "https://www.ddletb.ie/wp-content/uploads/2022/07/ETB-minutes-28th-March-2022-English.pdf": "DDLETB Minutes 28 March 2022",
+   "https://www.ddletb.ie/wp-content/uploads/2022/07/ETB-Minutes-28th-February-2022-English.pdf": "DDLETB Minutes 28 February 2022",
+   "https://www.ddletb.ie/wp-content/uploads/2022/07/ETB-Minutes-17th-January-2022-English.pdf": "DDLETB Minutes 17 January 2022",
+   "https://www.ddletb.ie/wp-content/uploads/2022/07/ETB-minutes-15th-November-2021-update.pdf": "DDLETB Minutes 15 November 2021",
+   "https://www.ddletb.ie/wp-content/uploads/2022/05/DDLETB-Minutes-18th-October-2021.pdf": "DDLETB Minutes October 2021",
+   "https://www.ddletb.ie/wp-content/uploads/2022/05/DDLETB-Minutes-September-2021.pdf": "DDLETB Minutes September 2021",
+   "https://www.ddletb.ie/wp-content/uploads/2022/05/DDLETB-Minutes-21-June-21.pdf": "DDLETB Minutes June 2021",
+   "https://www.ddletb.ie/wp-content/uploads/2022/07/ETB-Minutes-May-2021-update.pdf": "DDLETB Minutes May 2021",
+   "https://www.ddletb.ie/wp-content/uploads/2022/05/DDLETB-Minutes-March-2021.pdf": "DDLETB Minutes March 2021",
+   "https://www.ddletb.ie/wp-content/uploads/2022/05/DDLETB-Minutes-23rd-February-2021.pdf": "DDLETB Minutes February 2021",
+   "https://www.ddletb.ie/wp-content/uploads/2021/09/ETB-minutes-18th-January-2021-2.pdf": "DDLETB Minutes January 2021",
+   "https://www.ddletb.ie/wp-content/uploads/2021/09/ETB-minutes-16th-November-2020-signed.pdf": "DDLETB Board Minutes 16th November 2020",
+   "https://www.ddletb.ie/wp-content/uploads/2025/04/BoM-ETB-minutes-19th-October-2020.pdf": "DDLETB Board Minutes 19th October 2020",
+   "https://www.ddletb.ie/wp-content/uploads/2025/04/BoM-DDLETB-minutes-21st-Sep-2020.pdf": "DDLETB Board Minutes 21st September 2020",
+   "https://www.ddletb.ie/wp-content/uploads/2025/04/BoM-DDLETB-Minutes-15th-June-2020.pdf": "DDLETB Board Minutes 15th June 2020",
+   "https://www.ddletb.ie/wp-content/uploads/2021/02/DDLETB-meeting-Minutes-18.5.2020.pdf": "DDLETB Board Minutes 18 May 2020",
+   "https://www.ddletb.ie/wp-content/uploads/2021/09/DDLETB-meeting-Minutes-30.3.2020.pdf": "DDLETB Board Minutes 30 March 2020",
+   "https://www.ddletb.ie/wp-content/uploads/2021/02/DDLETB-meeting-Minutes-25.2.2020.pdf": "DDLETB Board Minutes 25 February 2020",
+   "https://www.ddletb.ie/wp-content/uploads/2021/02/DDLETB-ETB-meeting-Minutes-18th-November-2019.pdf": "DDLETB Board Minutes 18th November 2019",
+   "https://www.ddletb.ie/wp-content/uploads/2020/01/7.-Minutes-ETB-meeting-21-October-2019.pdf": "DDLETB Board Minutes 21 October 2019",
+   "https://www.ddletb.ie/wp-content/uploads/2020/01/6.-Minutes-ETB-meeting-16th-Sep-2019.pdf": "DDLETB Board Minutes 16th September 2019",
+   "https://www.ddletb.ie/wp-content/uploads/2020/01/5.-Minutes-2nd-Post-election-ETB-meeting-19th-Aug-2019.pdf": "DDLETB Board Minutes 19th August 2019 (2nd Post Election)",
+   "https://www.ddletb.ie/wp-content/uploads/2020/01/4.-Minutes-1st-Post-election-ETB-meeting-19th-Aug-2019.pdf": "DDLETB Board Minutes 19th August 2019 (1st Post Election)",
+   "https://www.ddletb.ie/wp-content/uploads/2020/01/3.-Minutes-ETB-Meeting-29th-April-2019.pdf": "DDLETB Board Minutes 29th April 2019",
+   "https://www.ddletb.ie/wp-content/uploads/2020/01/2.-Minutes-ETB-Meeting-26th-March-2019.pdf": "DDLETB Board Minutes 26th March 2019",
+   "https://www.ddletb.ie/wp-content/uploads/2020/01/1.-Minutes-ETB-meeting-21.1.19.pdf": "DDLETB Board Minutes 21 January 2019",
+   "https://www.ddletb.ie/wp-content/uploads/2019/02/Minutes-ETB-meeting-19-11-18.pdf": "DDLETB Board Minutes 19th November 2018",
+   "https://www.ddletb.ie/wp-content/uploads/2019/01/Minutes-ETB-meeting-17-09-18-for-website.pdf": "DDLETB Board Minutes 17th September 2018",
+   "https://www.ddletb.ie/wp-content/uploads/2018/12/4-Minutes-ETB-meeting-16-July-2018.pdf": "DDLETB Board Minutes 16th July 2018",
+   "https://www.ddletb.ie/wp-content/uploads/2018/12/3-Minutes-ETB-meeting-21-May-2018-.pdf": "DDLETB Board Minutes 21st May 2018",
+   "https://www.ddletb.ie/wp-content/uploads/2018/12/2-Minutes-ETB-meeting-20-March-2018.pdf": "DDLETB Board Minutes 28th March 2018",
+   "https://www.ddletb.ie/wp-content/uploads/2018/12/1-Minutes-29th-Jan-2018-ETB-Meeting.pdf": "DDLETB Board Minutes 29th January 2018",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-17th-July-2017.pdf": "DDLETB Board Minutes 17th July 2017",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-15th-May-2017.pdf": "DDLETB Board Minutes 15th May 2017",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-20th-March-2017.pdf": "DDLETB Board Minutes 20th March 2017",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-6th-February-2017.pdf": "DDLETB Board Minutes 6th February 2017",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-19th-September-2016.pdf": "DDLETB Board Minutes 19th September 2016",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-18th-July-2016.pdf": "DDLETB Board Minutes 18th July 2016",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-30th-May-2016.pdf": "DDLETB Board Minutes 30th May 2016",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-9th-Mar-2016.pdf": "DDLETB Board Minutes 9th March 2016",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-18th-Jan-2016.pdf": "DDLETB Board Minutes 18th January 2016",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-16th-November-2015.pdf": "DDLETB Board Minutes 16th November 2015",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-21st-September-2015.pdf": "DDLETB Board Minutes 21st September 2015",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-15th-June-2015.pdf": "DDLETB Board Minutes 15th June 2015",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-20th-April-2015.pdf": "DDLETB Board Minutes 20th April 2015",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-24th-March-2015.pdf": "DDLETB Board Minutes 24th March 2015",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-5th-November-2014.pdf": "DDLETB Board Minutes 5th November 2014",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-20th-October-2014.pdf": "DDLETB Board Minutes 20th October 2014",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-9th-September-2014.pdf": "DDLETB Board Minutes 9th September 2014",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-27th-August-2014.pdf": "DDLETB Board Minutes 27th August 2014",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-16th-June-2014.pdf": "DDLETB Board Minutes 16th June 2014",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-26th-May-2014.pdf": "DDLETB Board Minutes 26th May 2014",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-16th-December-2013.pdf": "DDLETB Board Minutes 16th December 2013",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-16th-September-2013.pdf": "DDLETB Board Minutes 16th September 2013",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-21st-October-2013.pdf": "DDLETB Board Minutes 21st October 2013",
+   "https://www.ddletb.ie/wp-content/uploads/2018/09/DDLETB-Board-Minutes-15th-July-2013.pdf": "DDLETB Board Minutes 15th July 2013",
+   "https://www.ddletb.ie/wp-content/uploads/2024/07/DDLETB-Board-Meeting-Minutes-25th-March-2024_GAE.pdf": "25 Marta 2024",
+   "https://www.ddletb.ie/wp-content/uploads/2024/08/DDLETB-Board-Meeting-Minutes-16th-October-2023_GAE.pdf": "16 Deireadh Fómhair 2023",
+   "https://www.ddletb.ie/wp-content/uploads/2023/08/ETB-Minutes-15th-May-2023-en-ga-IH-C.pdf": "15 Bealtaine 2023",
+   "https://www.ddletb.ie/wp-content/uploads/2023/08/ETB-Minutes-27th-March-2023-en-ga-IH-C.pdf": "27 Marta 2023",
+   "https://www.ddletb.ie/wp-content/uploads/2023/04/ETB-Minutes-27th-February-2023-en-ga-IH-C.pdf": "27 Feabhra 2023",
+   "https://www.ddletb.ie/wp-content/uploads/2023/03/ETB-minutes-16th-January-2023-en-ga-IH-C.pdf": "16 Eanáir 2023",
+   "https://www.ddletb.ie/wp-content/uploads/2023/03/ETB-Minutes-21st-November-2022-en-ga-IH-C-2.pdf": "21 Samhain 2022",
+   "https://www.ddletb.ie/wp-content/uploads/2022/12/ETB-minutes-17th-October-2022-V-1-en-ga-IH-C.pdf": "17 Deireadh Fómhair 2022",
+   "https://www.ddletb.ie/wp-content/uploads/2022/12/ETB-minutes-20th-June-2022-en-ga-IH-C-1.pdf": "20 Meitheamh 2022",
+   "https://www.ddletb.ie/wp-content/uploads/2022/07/ETB-minutes-28th-March-2022-V-2-2-en_ie-ga-R-C.pdf": "28 Marta 2022",
+   "https://www.ddletb.ie/wp-content/uploads/2022/07/ETB-minutes-28th-February-2022.pdf": "28 Feabhra 2022",
+   "https://www.ddletb.ie/wp-content/uploads/2022/07/ETB-Minutes-17th-January-2022.pdf": "17 Eanáir 2022",
+   "https://www.ddletb.ie/wp-content/uploads/2022/07/ETB-minutes-15th-November-2021-en_ie-ga-R-C-1.pdf": "15 Samhain 2021",
+   "https://www.ddletb.ie/wp-content/uploads/2022/07/ETB-minutes-18th-October-2021-en_ie-ga-R-C.pdf": "18 Deireadh Fómhair 2021",
+   "https://www.ddletb.ie/wp-content/uploads/2022/07/ETB-minutes-September-2021-en_ie-ga-R-C.pdf": "Meán Fómhair 2021",
+   "https://www.ddletb.ie/wp-content/uploads/2022/07/Draft-Minutes-June-2021-en_ie-ga-R-C.pdf": "Meitheamh 2021",
+   "https://www.ddletb.ie/wp-content/uploads/2022/07/Draft-ETB-Minutes-May-2021-en_ie-ga-R-C.pdf": "Bealtaine 2021",
+   "https://www.ddletb.ie/wp-content/uploads/2022/07/ETB-minutes-March-2021-en_ie-ga-R-C.pdf": "Marta 2021",
+   "https://www.ddletb.ie/wp-content/uploads/2022/07/ETB-minutes-23rd-February-2021-en_ie-ga-R-C.pdf": "23rd Feabhra 2021",
+   "https://www.ddletb.ie/wp-content/uploads/2021/09/ETB-minutes-18th-January-2021-2-en_ie-ga-R-C.pdf": "18 Eanáir 2021",
+   "https://www.ddletb.ie/wp-content/uploads/2021/09/ETB-minutes-16th-November-2020-signed-en_ie-ga-R-C.pdf": "16 Samhain 2020",
+   "https://www.ddletb.ie/wp-content/uploads/2021/09/DDLETB-meeting-Minutes-18th-May-2020-en_ie-ga-R-C.pdf": "18 Bealtaine 2020",
+   "https://www.ddletb.ie/wp-content/uploads/2023/02/DDLETB-meeting-Minutes-30th-March-2020-en_ie-ga-R-C.pdf": "30 Márta 2020",
+   "https://www.ddletb.ie/wp-content/uploads/2021/09/DDLETB-meeting-Minutes-25th-February-2020-en_ie-ga-R-C.pdf": "25 Feabhra 2020",
+   "https://www.ddletb.ie/wp-content/uploads/2021/09/DDLETB-meeting-Minutes-18th-November-2019-en_ie-ga-R-C.pdf": "18 Samhain 2019",
+   "https://www.ddletb.ie/wp-content/uploads/2022/09/7.-Minutes-ETB-meeting-21-October-2019-002-en_ie-ga-T-C.pdf": "21 Deireadh Fómhair 2019",
+   "https://www.ddletb.ie/wp-content/uploads/2021/09/DDLETB-meeting-Minutes-16th-Sep-2019.pdf-en_ie-ga-R-C.pdf": "16 Meán Fómhair 2019",
+   "https://www.ddletb.ie/wp-content/uploads/2021/09/DDLETB-meeting-Minutes-2nd-Post-election-ETB-meeting-19th-Aug-2019.pdf-en_ie-ga-R-C.pdf": "19 Lúnasa 2019 (2)",
+   "https://www.ddletb.ie/wp-content/uploads/2021/09/DDLETB-meeting-Minutes-1st-Post-election-ETB-19th-Aug-2019.pdf-en_ie-ga-R-C.pdf": "19 Lúnasa 2019 (1)",
+   "https://www.ddletb.ie/wp-content/uploads/2023/02/DDLETB-meeting-Minutes-29th-April-2019-ETB-Meeting.pdf-en_ie-ga-R-C.pdf": "29 Aibreán 2019",
+   "https://www.ddletb.ie/wp-content/uploads/2021/09/DDLETB-meeting-Minutes-26th-March-2019-ETB-Meeting.pdf-en_ie-ga-R-C.pdf": "26 Márta 2019"
+  }
+ },
+ "Cavan and Monaghan ETB": {
+  "pages": [
+   "https://www.cmetb.ie/cmetb-board/"
+  ],
+  "errors": [],
+  "minutes": {}
+ },
+ "Cork ETB": {
+  "pages": [
+   "https://www.corketb.ie/about-cork-etb/",
+   "https://www.corketb.ie/organisation/board-members/"
+  ],
+  "errors": [],
+  "minutes": {}
+ },
+ "Donegal ETB": {
+  "pages": [
+   "https://www.donegaletb.ie/donegal-etb/board-members/",
+   "https://www.donegaletb.ie/donegal-etb/about-us/"
+  ],
+  "errors": [],
+  "minutes": {}
+ },
+ "Galway and Roscommon ETB": {
+  "pages": [],
+  "errors": [
+   "https://www.gretb.ie/about-us/board/ HTTP Error 403: Forbidden"
+  ],
+  "minutes": {}
+ },
+ "Kerry ETB": {
+  "pages": [
+   "https://kerryetb.ie/board/"
+  ],
+  "errors": [],
+  "minutes": {
+   "https://kerryetb.ie/board/minutes-downloads/": "Minutes"
+  }
+ },
+ "Kildare and Wicklow ETB": {
+  "pages": [
+   "https://kwetb.ie/about-us-2/governance/",
+   "https://kwetb.ie/about-us-2/publications/"
+  ],
+  "errors": [],
+  "minutes": {}
+ },
+ "Kilkenny and Carlow ETB": {
+  "pages": [
+   "https://kcetb.ie/en/corporate/board-members/",
+   "https://kcetb.ie/en/about-us/"
+  ],
+  "errors": [],
+  "minutes": {
+   "https://kcetb.ie/corporate/board-members/minutes-of-kcetb-meetings/": "Minutes of meetings"
+  }
+ },
+ "Limerick and Clare ETB": {
+  "pages": [
+   "https://lcetb.ie/board/",
+   "https://lcetb.ie/governance/",
+   "https://lcetb.ie/board-meeting-minutes/",
+   "https://lcetb.ie/category/board-meeting-minutes/",
+   "https://lcetb.ie/board-meeting-minutes/",
+   "https://lcetb.ie/board-meeting-minutes/#html",
+   "https://lcetb.ie/category/board-meeting-minutes/",
+   "https://lcetb.ie/category/board-meeting-minutes/#html"
+  ],
+  "errors": [],
+  "minutes": {
+   "https://lcetb.ie/board-meeting-minutes-2024-2-2/": "Board Meeting Minutes 2026",
+   "https://lcetb.ie/board-meeting-minutes-2024-2/": "Board Meeting Minutes 2025",
+   "https://lcetb.ie/board-meeting-minutes-2024/": "Board Meeting Minutes 2024",
+   "https://lcetb.ie/board-meeting-minutes-2023/": "Board Meeting Minutes 2023",
+   "https://lcetb.ie/board-meeting-minutes-2022/": "Board Meeting Minutes 2022",
+   "https://lcetb.ie/board-meeting-minutes-2021-2/": "Board Meeting Minutes 2021",
+   "https://lcetb.ie/board-meeting-minutes-2020/": "Board Meeting Minutes 2020",
+   "https://lcetb.ie/board-meeting-minutes-2024-2-2/#respond": "0",
+   "https://lcetb.ie/board-meeting-minutes-2024-2/#respond": "0",
+   "https://lcetb.ie/board-meeting-minutes-2024/#respond": "0",
+   "https://lcetb.ie/board-meeting-minutes-2023/#respond": "0",
+   "https://lcetb.ie/board-meeting-minutes-2022/#respond": "0",
+   "https://lcetb.ie/board-meeting-minutes-2021-2/#respond": "0",
+   "https://lcetb.ie/board-meeting-minutes-2020/#respond": "0"
+  }
+ },
+ "Longford and Westmeath ETB": {
+  "pages": [
+   "https://www.lwetb.ie/",
+   "https://www.lwetb.ie/wp-content/uploads/2020/06/board.png"
+  ],
+  "errors": [],
+  "minutes": {}
+ },
+ "Louth and Meath ETB": {
+  "pages": [],
+  "errors": [
+   "https://www.lmetb.ie/about-us/board/ HTTP Error 403: Forbidden"
+  ],
+  "minutes": {}
+ },
+ "Laois and Offaly ETB": {
+  "pages": [
+   "https://loetb.ie/board/",
+   "https://loetb.ie/organisation-support-development/corporate-services/board-and-committees/"
+  ],
+  "errors": [],
+  "minutes": {}
+ },
+ "Mayo, Sligo and Leitrim ETB": {
+  "pages": [
+   "https://msletb.ie/about-us/corporate/board-members/",
+   "https://msletb.ie/about-us/corporate/"
+  ],
+  "errors": [],
+  "minutes": {}
+ },
+ "Tipperary ETB": {
+  "pages": [],
+  "errors": [
+   "https://www.tipperaryetb.ie/about-us/board/ HTTP Error 403: Forbidden"
+  ],
+  "minutes": {}
+ },
+ "Waterford and Wexford ETB": {
+  "pages": [
+   "https://www.wwetb.ie/about/organisation/the-board-of-wwetb/",
+   "https://www.wwetb.ie/about/organisation/the-board-of-wwetb/board-minutes/",
+   "https://www.wwetb.ie/about/organisation/the-board-of-wwetb/board-minutes/",
+   "https://www.wwetb.ie/about/organisation/the-board-of-wwetb/board-minutes/#content"
+  ],
+  "errors": [],
+  "minutes": {
+   "https://www.wwetb.ie/wp-content/uploads/2026/06/January-2026-Board-Minutes.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2026/06/February-24th-2026.pdf": "WWETB Board Minutes &#8211; February 2026",
+   "https://www.wwetb.ie/wp-content/uploads/2026/05/March-24th-2026.pdf": "WWETB Board Minutes – March 2026",
+   "https://www.wwetb.ie/wp-content/uploads/2026/06/May-12th-2026.pdf": "WWETB Board Minutes – May 2026",
+   "https://www.wwetb.ie/wp-content/uploads/2026/09/WWETB-Board-Minutes-June-2026.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2026/06/January-2025-Minutes-WWETB-meeting-14.01.25-1.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2026/06/February-Minutes-WWETB-meeting-25.02.25-1.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2026/06/March-2025-Meeting-Minutes-25.03.25.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2026/06/May-2025-Meeting-Minutes.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2026/06/WWETB-Board-Minutes-June.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2025/11/Minutes-WWETB-meeting-09.09.25.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2026/06/November-Minutes-WWETB-meeting-11.11.25-1.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2024/03/January-9th-2024.pdf": "WWETB Board Minutes &#8211; January 2024",
+   "https://www.wwetb.ie/wp-content/uploads/2024/03/February-27th-2024.pdf": "WWETB Board Minutes – February 2024",
+   "https://www.wwetb.ie/wp-content/uploads/2024/03/Minutes-WWETB-meeting-27.02.24.docx": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2024/05/March-26th-2024-signature.pdf": "WWETB Board Minutes – March 2024",
+   "https://www.wwetb.ie/wp-content/uploads/2024/05/Minutes-WWETB-meeting-26.03.24.docx": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2026/06/Minutes-WWETB-meeting-14.05.24.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2026/06/Minutes-1-WWETB-post-election-meeting-03.09.24.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2026/06/Minutes-WWETB-mtg.-after-post-election-meeting-03.09.24.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2025/02/October-1st-2024-1.pdf": "WWETB Board Minutes – October 2024",
+   "https://www.wwetb.ie/wp-content/uploads/2026/06/November-2024-Minutes-WWETB-meeting-25.11.24.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2023/04/January-10th-2023.pdf": "WWETB Board Minutes &#8211; January 2023",
+   "https://www.wwetb.ie/wp-content/uploads/2023/04/February-28th-2023.pdf": "WWETB Board Minutes &#8211; February 2023",
+   "https://www.wwetb.ie/wp-content/uploads/2023/05/WWETB-Board-Minutes-–-March-2023.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2023/07/May-9th-2023.pdf": "WWETB Board Minutes – May 2023",
+   "https://www.wwetb.ie/wp-content/uploads/2023/10/June-27th-2023.pdf": "WWETB Board Minutes &#8211; June 2023",
+   "https://www.wwetb.ie/wp-content/uploads/2023/11/WWETB-Board-Minutes-September-2023.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2024/01/November-14th-2023.pdf": "WWETB Board Minutes &#8211; November 2023",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/WWETB-Minutes-11-Jan-2022.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/February-22nd-2022-2.pdf": "WWETB Board Minutes &#8211; February 2022",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/March-29th-2022.pdf": "WWETB Board Minutes &#8211; March 2022",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/May-10th-2022.pdf": "WWETB Board Minutes &#8211; May 2022",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/June-28th-2022.pdf": "WWETB Board Minutes &#8211; June 2022",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/September-13th-2022.pdf": "WWETB Board Minutes &#8211; September 2022",
+   "https://www.wwetb.ie/wp-content/uploads/2023/01/WWETB-Board-Minutes-November-2022-1.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/January-12th-2021.pdf": "WWETB Board Minutes &#8211; January 2021",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/Minutes-23022021.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/March-30th-2021.pdf": "WWETB Board Minutes &#8211; March 2021",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/May-11th-2021.pdf": "WWETB Board Minutes &#8211; May 2021",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/June-29-2021.pdf": "WWETB Board Minutes &#8211; June 2021",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/September-14-2021.pdf": "WWETB Board Minutes &#8211; September 2021",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/WWETB-Minutes-16-Nov-2021.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/January-2020.pdf": "WWETB Board Minutes &#8211; January 2020",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/February-2020.pdf": "WWETB Board Minutes &#8211; February 2020",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/March-2020.pdf": "WWETB Board Minutes &#8211; March 2020",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/may-2020.pdf": "WWETB Board Minutes &#8211; May 2020",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/July-2020.pdf": "WWETB Board Minutes &#8211; July 2020",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/15th-September-2020.pdf": "WWETB Board Minutes &#8211; September 2020",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/10th-November-2020-signed.pdf": "WWETB Board Minutes &#8211; November 2020",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/8th-December-2020-signed.pdf": "WWETB Board Minutes &#8211; December 2020",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/Minutes-of-Board-meeting-January-8th-2019..pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/Minutes-March-2019.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/May-28th-2019.pdf": "WWETB Board Minutes &#8211; May 2019",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/August-27th-2019-1-Post-Election-Meeting.pdf": "WWETB Board Minutes &#8211; August 2019 (1)",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/August-27th-2-Meeting-after-Post-Election-Meeting.pdf": "WWETB Board Minutes &#8211; August 2019 (2)",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/September-2019.pdf": "WWETB Board Minutes &#8211; September 2019",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/November-2019.pdf": "WWETB Board Minutes &#8211; November 2019",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/January-2018-Minutes.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/March-Minutes-1a.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/March-Minutes-1b.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/March-Minutes-2.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/Minutes-May-18.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/July-Minutes.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/September-Minutes.pdf": "View/Download",
+   "https://www.wwetb.ie/wp-content/uploads/2022/12/Board-Minutes-Nov-18.pdf": "View/Download"
+  }
+ }
+}

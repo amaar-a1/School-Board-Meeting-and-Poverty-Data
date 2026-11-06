@@ -1,0 +1,117 @@
+== apisidra table descriptions (54s)
+4712 ERR HTTP Error 403: Forbidden
+4714 ERR HTTP Error 403: Forbidden
+9514 ERR HTTP Error 403: Forbidden
+9606 ERR HTTP Error 403: Forbidden
+9605 ERR HTTP Error 403: Forbidden
+9923 ERR HTTP Error 403: Forbidden
+10050 ERR HTTP Error 403: Forbidden
+10051 ERR HTTP Error 403: Forbidden
+10052 ERR HTTP Error 403: Forbidden
+10053 ERR HTTP Error 403: Forbidden
+10054 ERR HTTP Error 403: Forbidden
+10055 ERR HTTP Error 403: Forbidden
+10056 ERR HTTP Error 403: Forbidden
+10057 ERR HTTP Error 403: Forbidden
+10058 ERR HTTP Error 403: Forbidden
+10059 ERR HTTP Error 403: Forbidden
+10060 ERR HTTP Error 403: Forbidden
+10061 ERR HTTP Error 403: Forbidden
+10062 ERR HTTP Error 403: Forbidden
+10063 ERR HTTP Error 403: Forbidden
+10064 ERR HTTP Error 403: Forbidden
+10065 ERR HTTP Error 403: Forbidden
+10066 ERR HTTP Error 403: Forbidden
+10067 ERR HTTP Error 403: Forbidden
+10068 ERR HTTP Error 403: Forbidden
+10069 ERR HTTP Error 403: Forbidden
+10070 ERR HTTP Error 403: Forbidden
+10071 ERR HTTP Error 403: Forbidden
+10072 ERR HTTP Error 403: Forbidden
+10073 ERR HTTP Error 403: Forbidden
+10074 ERR HTTP Error 403: Forbidden
+10075 ERR HTTP Error 403: Forbidden
+10076 ERR HTTP Error 403: Forbidden
+10077 ERR HTTP Error 403: Forbidden
+10078 ERR HTTP Error 403: Forbidden
+10079 ERR HTTP Error 403: Forbidden
+10080 ERR HTTP Error 403: Forbidden
+10081 ERR HTTP Error 403: Forbidden
+10082 ERR HTTP Error 403: Forbidden
+10083 ERR HTTP Error 403: Forbidden
+10084 ERR HTTP Error 403: Forbidden
+10085 ERR HTTP Error 403: Forbidden
+10086 ERR HTTP Error 403: Forbidden
+10087 ERR HTTP Error 403: Forbidden
+10088 ERR HTTP Error 403: Forbidden
+10089 ERR HTTP Error 403: Forbidden
+10090 ERR HTTP Error 403: Forbidden
+10091 ERR HTTP Error 403: Forbidden
+10092 ERR HTTP Error 403: Forbidden
+10093 ERR HTTP Error 403: Forbidden
+10094 ERR HTTP Error 403: Forbidden
+10095 ERR HTTP Error 403: Forbidden
+10096 ERR HTTP Error 403: Forbidden
+10097 ERR HTTP Error 403: Forbidden
+10098 ERR HTTP Error 403: Forbidden
+10099 ERR HTTP Error 403: Forbidden
+10100 ERR HTTP Error 403: Forbidden
+10101 ERR HTTP Error 403: Forbidden
+10102 ERR HTTP Error 403: Forbidden
+10103 ERR HTTP Error 403: Forbidden
+10104 ERR HTTP Error 403: Forbidden
+10105 ERR HTTP Error 403: Forbidden
+10106 ERR HTTP Error 403: Forbidden
+10107 ERR HTTP Error 403: Forbidden
+10108 ERR HTTP Error 403: Forbidden
+10109 ERR HTTP Error 403: Forbidden
+10110 ERR HTTP Error 403: Forbidden
+10111 ERR HTTP Error 403: Forbidden
+10112 ERR HTTP Error 403: Forbidden
+10113 ERR HTTP Error 403: Forbidden
+10114 ERR HTTP Error 403: Forbidden
+10115 ERR HTTP Error 403: Forbidden
+10116 ERR HTTP Error 403: Forbidden
+10117 ERR HTTP Error 403: Forbidden
+10118 ERR HTTP Error 403: Forbidden
+10119 ERR HTTP Error 403: Forbidden
+10120 ERR HTTP Error 403: Forbidden
+10121 ERR HTTP Error 403: Forbidden
+10122 ERR HTTP Error 403: Forbidden
+10123 ERR HTTP Error 403: Forbidden
+10124 ERR HTTP Error 403: Forbidden
+10280 ERR HTTP Error 403: Forbidden
+10281 ERR HTTP Error 403: Forbidden
+10282 ERR HTTP Error 403: Forbidden
+10283 ERR HTTP Error 403: Forbidden
+10284 ERR HTTP Error 403: Forbidden
+10285 ERR HTTP Error 403: Forbidden
+10286 ERR HTTP Error 403: Forbidden
+10287 ERR HTTP Error 403: Forbidden
+10288 ERR HTTP Error 403: Forbidden
+10289 ERR HTTP Error 403: Forbidden
+10290 ERR HTTP Error 403: Forbidden
+10291 ERR HTTP Error 403: Forbidden
+10292 ERR HTTP Error 403: Forbidden
+10293 ERR HTTP Error 403: Forbidden
+10294 ERR HTTP Error 403: Forbidden
+10295 ERR HTTP Error 403: Forbidden
+10296 ERR HTTP Error 403: Forbidden
+10297 ERR HTTP Error 403: Forbidden
+10298 ERR HTTP Error 403: Forbidden
+10299 ERR HTTP Error 403: Forbidden
+
+== apisidra values (2s)
+households_4712 4991791 bytes b'[\r\n  {\r\n    "NC": "N\xc3\xadvel Territorial (C\xc3\xb3digo)",\r\n    "NN": "N\xc3\xadvel Territorial",\r\n    "MC": "Unidade de Medida (C\xc3\xb3digo)",\r\n    "MN": "Unidade de Medida",\r\n    "V": "Valor",\r\n    "D1C": "Munic\xc3\xadpio (C\xc3\xb3digo)",\r\n    "D1N": "Munic\xc3\xadpio",\r\n    "D2C": "Vari\xc3\xa1vel (C\xc3\xb3digo)",\r\n    "D2N": "Vari\xc3\xa1vel",\r\n '
+age_9514 ERR HTTP Error 400: Bad Request
+
+== inep sinopse 2025 (1s)
+AIA None
+
+
+== ireland and uk (2365s)
+
+
+== brazil youtube 3-5 (7902s)
+exit 0
+
