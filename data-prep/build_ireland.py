@@ -91,6 +91,41 @@ def enrolment():
     return out
 
 
+def minutes_counts():
+    """Board meetings with minutes on the ETB's own website (inputs/ireland/ie_etb_minutes.json: links to the
+    minutes files on each ETB's minutes pages, collected November 2026). One meeting per date in the link text or
+    file name; a minutes file dated only by month counts when no other meeting that month is dated."""
+    import html, urllib.parse
+    sys.path.insert(0, HERE)
+    from meeting_dates import parse
+    path = os.path.join(IN, "ie_etb_minutes.json")
+    if not os.path.exists(path): return {}
+    out = {}
+    for etb, v in json.load(open(path, encoding="utf-8")).items():
+        days, months = set(), set()
+        for u, t in v["minutes"].items():
+            name = re.sub(r"\.(pdf|docx?)$", "", urllib.parse.unquote(u.rsplit("/", 1)[-1]), flags=re.I).replace("-", " ").replace("_", " ")
+            t = html.unescape(t)
+            cands = [parse(t), parse(name)]
+            m8 = re.search(r"\b(\d{2})(\d{2})(20\d{2})\b", name)            # 23022021
+            if m8: cands.append((int(m8.group(3)), int(m8.group(2)), int(m8.group(1))))
+            m6 = re.search(r"\b(\d{2}) (\d{2}) (\d{2}) Board", name)         # 26 06 23 Board Minutes
+            if m6: cands.insert(0, (2000 + int(m6.group(1)), int(m6.group(2)), int(m6.group(3))))
+            full = [c for c in cands if c and c[1] and c[2] and 2010 <= c[0] <= 2026]
+            mon = [c for c in cands if c and c[1] and 2010 <= c[0] <= 2026]
+            if full: days.add(full[0])
+            elif mon: months.add(mon[0][:2])
+        months -= {d[:2] for d in days}
+        keys = sorted(days) + sorted((y, m, 0) for y, m in months)
+        if keys:
+            per = {}
+            for y, m, d in keys: per[y] = per.get(y, 0) + 1
+            latest = max(keys)
+            out[etb] = (len(keys), f"{latest[0]:04d}-{latest[1]:02d}" + (f"-{latest[2]:02d}" if latest[2] else ""),
+                        "; ".join(f"{y}:{per[y]}" for y in sorted(per)), (v.get("pages") or [""])[0])
+    return out
+
+
 def main():
     # unemployment by local authority, from local electoral areas
     lab = {}
@@ -119,6 +154,7 @@ def main():
     rows, feats = [], []
     ar = arop()
     enr = enrolment()
+    mins = minutes_counts()
     for i, (etb, las) in enumerate(ETB.items()):
         reg = {g for g, members in NUTS2.items() for l in las if l in members}
         assert len(reg) == 1, (etb, reg)
@@ -136,12 +172,17 @@ def main():
                      "Enrollment": enr[etb], "Enrollment year": "2024/25",
                      "Enrollment note": "All pupils in state-aided primary, special and post-primary schools in the ETB's area (Department of Education), not only the ETB's own schools",
                      "District ID": eid})
+        if etb in mins:
+            n, latest, years, page = mins[etb]
+            rows[-1].update({"Meetings note": "No board meetings found on the ETB's YouTube channel; the count from other sources is board meetings whose minutes the ETB publishes on its website",
+                             "Other Board Meetings": n, "Other meetings source": f"board meetings with minutes on the ETB's website ({page})",
+                             "Latest meeting": latest, "Meetings by year": years})
         for f in geo["features"]:
             if la_of_feat[id(f)] in las:
                 feats.append({"type": "Feature", "properties": {"id": eid, "NAME": f["properties"]["LOCAL_AUTHORITY"].title()}, "geometry": f["geometry"]})
     miss = [f["properties"]["LOCAL_AUTHORITY"] for f in geo["features"] if not la_of_feat[id(f)]]
     with open(os.path.join(HERE, "..", "docs", "data", "ireland.csv"), "w", newline="", encoding="utf-8") as fo:
-        w = csv.DictWriter(fo, fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)
+        w = csv.DictWriter(fo, fieldnames=list(dict.fromkeys(k for r in rows for k in r)), restval=""); w.writeheader(); w.writerows(rows)
     # Estimated locale from population density: people = children / 0.178 (their share of the
     # population), over land area. Urban 2,000+ per km², suburban 500-2,000, mixed 100-500, rural under 100.
     area = {}
@@ -155,7 +196,7 @@ def main():
     path = OUT_CSV if "OUT_CSV" in globals() else os.path.join(HERE, "..", "docs", "data", "ireland.csv")
     data = rows
     with open(path, "w", newline="", encoding="utf-8") as fo:
-        w = csv.DictWriter(fo, fieldnames=list(data[0])); w.writeheader(); w.writerows(data)
+        w = csv.DictWriter(fo, fieldnames=list(dict.fromkeys(k for r in data for k in r)), restval=""); w.writeheader(); w.writerows(data)
     def rnd(c):
         return [rnd(x) for x in c] if isinstance(c[0], list) else [round(c[0], 4), round(c[1], 4)]
     for f in feats:
