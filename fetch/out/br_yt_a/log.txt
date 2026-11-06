@@ -1,0 +1,527 @@
+- Paraná 0
+BR Arroio do Padre ->  
+BR Igrejinha -> Câmara Municipal de Igrejinha 11
+BR Nova Londrina ->  
+BR Áurea ->  
+BR Inhacorá ->  
+BR Barracão ->  
+BR Itapuca ->  
+BR Novo Itacolomi -> Câmara Municipal de Novo Itacolomi - PR 0
+BR Barros Cassal ->  
+BR Jaboticaba ->  
+BR Boa Vista do Incra ->  
+BR Jari ->  
+BR Boqueirão do Leão ->  
+BR Lagoa Vermelha -> TV Câmara Lagoa Vermelha 3
+BR Palmeira -> Câmara Municipal de Palmeira 1
+BR Caçapava do Sul -> Câmara de Vereadores de Caçapava do Sul 0
+BR Linha Nova ->  
+BR Caiçara ->  
+BR Maratá ->  
+BR Paranapoema -> TV CÂMARA PARANAPOEMA 0
+BR Campinas do Sul ->  
+BR Candiota ->  
+BR Mata -> Sessões da Câmara de Vereadores do Município de Mata/RS 0
+BR Miraguaí ->  
+BR Peabiru -> TV Câmara Peabiru 0
+BR Morrinhos do Sul ->  
+BR Muliterno ->  
+BR Nova Bassano ->  
+BR Pinhalão -> Câmara Municipal de Pinhalão 1
+BR Capão da Canoa -> Câmara Municipal de Capão da Canoa 1
+BR Nova Pádua -> Câmara Municipal de Nova Pádua. 0
+BR Pitangueiras -> Câmara Municipal Pitangueiras 0
+BR Carazinho ->  
+BR Catuípe ->  
+BR Cerro Grande do Sul ->  
+BR Porto Amazonas -> CÂMARA DE VEREADORES DE PORTO AMAZONAS 0
+BR Chuí ->  
+BR Nova Santa Rita -> Câmara Nova Santa Rita 0
+BR Condor ->  
+BR Novo Barreiro ->  
+BR Coronel Pilar ->  
+BR Presidente Castelo Branco -> Câmara Municipal de Presidente Castelo Branco 0
+BR Panambi -> Câmara de Vereadores de Panambi 2
+BR Cruz Alta -> TV Câmara Cruz Alta 0
+BR Passa Sete ->  
+BR Quatro Pontes -> Câmara Municipal de Quatro Pontes 2
+BR Dilermando de Aguiar ->  
+BR Pedro Osório ->  
+BR Dom Pedrito ->  
+BR Pinhal Grande ->  
+BR Encruzilhada do Sul ->  
+BR Planalto ->  
+BR Ernestina ->  
+BR Rancho Alegre -> Câmara Municipal de Rancho Alegre 0
+BR Porto Lucena ->  
+BR Espumoso ->  
+BR Reserva do Iguaçu ->  
+BR Progresso ->  
+BR Eugênio de Castro ->  
+BR Quinze de Novembro ->  
+BR Rio Branco do Ivaí -> CAMARA RIO BRANCO DO IVAI 0
+BR Feliz ->  
+BR Fortaleza dos Valos ->  
+BR Rio Pardo -> Câmara Municipal de Vereadores de Rio Pardo / RS 2
+BR Rosário do Ivaí -> Camara Rosário do Ivaí 4
+BR Ronda Alta ->  
+BR Gentil -> Câmara Municipal Valentim Gentil 0
+BR Santa Cecília do Pavão ->  
+BR Salto do Jacuí -> Câmara Vereadores Salto do Jacuí RS 0
+BR Gramado Xavier ->  
+BR Santa Clara do Sul ->  
+BR Harmonia ->  
+BR Santa Izabel do Oeste -> Legislativo Municipal de Santa Izabel do Oeste  0
+BR Sant'Ana do Livramento ->  
+BR Ibiaçá ->  
+BR Santo Antônio do Palma ->  
+BR Ilópolis ->  
+BR Santo Expedito do Sul ->  
+BR Ipiranga do Sul ->  
+BR Santa Tereza do Oeste -> Câmara Municipal de Santa Tereza do Oeste 0
+BR Itati ->  
+BR Santo Inácio ->  
+BR Jacutinga ->  
+BR São João do Triunfo ->  
+BR São Jerônimo -> Câmara Municipal de São Jerônimo-RS 0
+BR São José do Hortêncio ->  
+BR Júlio de Castilhos -> Câmara Municipal de Júlio de Castilhos 0
+BR Lajeado do Bugre ->  
+BR Maçambará ->  
+BR Marcelino Ramos ->  
+BR Mato Leitão -> CÂMARA DE VEREADORES MATO LEITÃO  0
+BR Monte Alegre dos Campos ->  
+BR São José dos Pinhais -> Câmara de São José dos Pinhais 6
+BR São Leopoldo -> TV Câmara São Leopoldo 5
+BR Morro Reuter ->  
+BR São Pedro do Paraná -> Camara Sao Pedro do Parana 0
+BR São Miguel das Missões ->  
+BR Nicolau Vergueiro ->  
+BR Sengés ->  
+BR Nova Bréscia ->  
+BR São Pedro do Sul -> Câmara de Vereadores São Pedro do Sul 0
+BR Tamarana -> Câmara Municipal de Tamarana 0
+BR São Vendelino ->  
+BR Nova Petrópolis -> Câmara Nova Petrópolis 1
+BR Sede Nova ->  
+BR Sério ->  
+BR Terra Boa -> Câmara Municipal de Terra Boa / Paraná 0
+BR Sinimbu -> Câmara Sinimbu 0
+BR Tomazina -> Câmara Municipal de Tomazina 0
+BR Ubiratã -> CÂMARA MUNICIPAL DE VEREADORES DE NOVA UBIRATÃ-MT 0
+BR Tapes -> Câmara Municipal de Tapes / RS 0
+BR Ventania -> Câmara Municipal Ventania 0
+BR Terra de Areia ->  
+BR Vitorino -> Câmara Municipal de Vitorino 0
+BR Tramandaí -> Câmara Municipal de Tramandaí / RS 0
+BR Novo Hamburgo -> TV Câmara Novo Hamburgo 5
+BR Água Doce -> CÂMARA MUNICIPAL DE VEREADORES DE ÁGUA DOCE 0
+BR Três Forquilhas ->  
+BR Paim Filho ->  
+BR Tunas ->  
+BR Paraí ->  
+BR Ubiretama ->  
+BR Anchieta -> Câmara Municipal de Anchieta ES 0
+BR Arabutã -> Câmara Municipal de Vereadores Arabutã 0
+BR Vale do Sol -> Câmara de Vereadores de Vale do Sol 1
+BR Ascurra ->  
+BR Vespasiano Corrêa -> Câmara de Vereadores de Vespasiano Corrêa 0
+BR Vila Lângaro ->  
+BR Balneário Gaivota -> Câmara Municipal de Balneário Gaivota / SC 0
+BR Vitória das Missões ->  
+BR Benedito Novo ->  
+BR Anastácio ->  
+BR Bom Jesus -> Câmara Municipal de Bom Jesus - PB 0
+BR Aral Moreira -> Camara Municipal de Aral Moreira  0
+BR Brunópolis -> Câmara Municipal de Vereadores de Brunópolis 0
+BR Capão Alto ->  
+BR Bonito -> Câmara Municipal de Bonito MS 0
+BR Cassilândia -> Câmara Municipal de Cassilândia 0
+BR Coxim -> Camara Coxim 0
+BR Fátima do Sul ->  
+BR Canoinhas -> Câmara de Vereadores de Canoinhas 0
+BR Itaporã ->  
+BR Jateí ->  
+BR Cerro Negro -> Câmara Municipal de Vereadores de Cerro Negro 0
+BR Coronel Freitas ->  
+BR Mundo Novo -> TV Câmara Mundo Novo 0
+BR Cunhataí ->  
+BR Paraíso das Águas -> Camara Paraiso das Aguas 0
+BR Passo Fundo -> Tv Câmara Passo Fundo 14
+BR Entre Rios -> Câmara De Vereadores Entre Rios SC 0
+BR Ribas do Rio Pardo ->  
+BR Formosa do Sul ->  
+BR São Gabriel do Oeste -> Câmara Municipal de São Gabriel do Oeste 1
+BR Taquarussu ->  
+BR Garuva -> Câmara Municipal de Vereadores de Garuva / SC 0
+BR Guaraciaba -> Câmara de Vereadores de Guaraciaba Santa Catarina 0
+BR Alta Floresta -> TV Câmara Alta Floresta 1
+BR Ibicaré ->  
+BR Imbuia ->  
+BR Ipumirim ->  
+BR Apiacás -> CÂMARA MUNICIPAL DE APIACÁS  0
+BR Barão de Melgaço ->  
+BR Itaiópolis -> Câmara Municipal de Itaiópolis - SC 0
+BR Cáceres -> Câmara Municipal de Cáceres 4
+BR Jaborá -> Câmara Municipal de Jaborá 0
+BR Canarana -> Câmara Municipal Vereadores Canarana 0
+BR Colíder -> Câmara Colíder 1
+BR Pelotas -> Rede Câmara Pelotas 3
+BR Pinheiro Machado ->  
+BR Pontão ->  
+BR Porto Vera Cruz ->  
+BR Putinga ->  
+BR Relvado ->  
+BR Cuiabá -> Câmara Municipal de Cuiabá 83
+BR Figueirópolis D'Oeste ->  
+BR Indiavaí ->  
+BR Jangada ->  
+BR Roca Sales -> Câmara de Vereadores Roca Sales 0
+BR Joinville -> Câmara de Vereadores de Joinville 262
+BR Lambari D'Oeste ->  
+BR Roque Gonzales ->  
+BR Salvador do Sul ->  
+BR Lajeado Grande -> Camara de Vereadores Lajeado Grande 0
+BR Mirassol d'Oeste -> Câmara Municipal de Mirassol D'Oeste 0
+BR Nova Lacerda ->  
+BR Nova Ubiratã -> CÂMARA MUNICIPAL DE VEREADORES DE NOVA UBIRATÃ-MT 0
+BR Lontras -> Câmara de Vereadores de Lontras - SC 0
+BR Paranatinga -> Camara Municipal de Paranatinga 0
+BR Pontal do Araguaia ->  
+BR Major Vieira -> Câmara de Vereadores de Major Vieira - SC 1
+BR Porto Estrela -> Câmara Municipal de Porto Estrela-MT 0
+BR Ribeirão Cascalheira ->  
+BR Meleiro -> Camara Municipal Meleiro 0
+BR São José do Rio Claro -> Câmara Municipal De São José Ro Rio Claro 0
+BR Santa Cruz do Xingu -> Câmara Municipal Santa Cruz do Xingu MT 0
+BR Santa Maria -> TV Câmara Santa Maria 59
+BR São Félix do Araguaia ->  
+BR Morro da Fumaça -> Câmara de Morro da Fumaça 0
+BR Santa Tereza ->  
+BR Tangará da Serra ->  
+BR Santo Antônio das Missões ->  
+BR São Domingos do Sul ->  
+BR Vale de São Domingos -> Câmara de Vale de São Domingos 0
+BR São João do Polêsine ->  
+BR Nova Maringá ->  
+BR São José do Norte ->  
+BR São Luiz Gonzaga ->  
+BR Nova Veneza -> Câmara de Vereadores de Nova Veneza 80
+BR Água Fria de Goiás -> Câmara Municipal Água Fria de Goiás 0
+BR São Paulo das Missões -> Câmara Municipal de São Paulo das Missões / RS 0
+BR Paial -> Camara Paial 0
+BR Alto Paraíso de Goiás -> Câmara Municipal Vereadores Alto Paraíso de Goiás 0
+BR São Sepé ->  
+BR Anhanguera ->  
+BR Papanduva -> Câmara Municipal de Papanduva / SC 0
+BR Aragarças -> Câmara Municipal de Aragarças 0
+BR Sapiranga -> Câmara Municipal de Sapiranga 0
+BR Avelinópolis -> Câmara Municipal de Avelinópolis Goiás 0
+BR Selbach ->  
+BR Bonfinópolis -> Câmara Municipal de Bonfinópolis 0
+BR Sertão Santana -> Camara Sertao Santana 0
+BR Buritinópolis ->  
+BR Soledade -> Câmara de Vereadores de Soledade 0
+BR Caiapônia -> Câmara Municipal de Caiapônia Goiás. 0
+BR Campo Alegre de Goiás ->  
+BR Taquari -> Câmara Taquari 0
+BR Tio Hugo ->  
+BR Penha -> Câmara de Vereadores de Penha 7
+BR Três Arroios ->  
+BR Catalão -> Câmara Municipal de Catalão CMC 0
+BR Pinheiro Preto ->  
+BR Ponte Serrada ->  
+BR Cidade Ocidental -> Câmara Municipal de Cidade Ocidental 0
+BR Presidente Getúlio -> Câmara Municipal de Presidente Getúlio / SC 0
+BR Cristalina -> Câmara Municipal de Cristalina Goiás 0
+BR Damolândia ->  
+BR Estrela do Norte ->  
+BR Três Passos -> Câmara Municipal de Três Passos - RS 1
+BR Rio do Campo -> Câmara Municipal de Vereadores de Rio do Campo S/C 0
+BR Tupanciretã ->  
+BR Rio Rufino ->  
+BR Unistalda ->  
+BR Salto Veloso ->  
+BR Formoso -> Câmara Municipal de Campo Formoso 1
+BR Vanini ->  
+BR Goiânia ->  
+BR Guaraíta ->  
+BR Santa Terezinha -> Câmara de Santa Terezinha - PB 0
+BR Iaciara ->  
+BR São Bonifácio ->  
+BR Viamão -> Câmara Municipal de Viamão 3
+BR São João Batista ->  
+BR Iporá -> Câmara Municipal Iporá 3
+BR Itapaci ->  
+BR Vila Nova do Sul -> TV CÂMARA • VILA NOVA DO SUL 🥈 1
+BR São José do Cerrito -> Câmara Vereadores São José do Cerrito 0
+BR Xangri-lá ->  
+BR São Pedro de Alcântara ->  
+BR Ivolândia -> Câmara Municipal de vereadores de Ivolândia-Go 0
+BR Angélica ->  
+BR Joviânia -> Camara Municipal de Joviânia 0
+BR Bataguassu -> CÂMARA DE BATAGUASSU-MS 1
+BR Mambaí -> Câmara Municipal de Mambaí 0
+BR Sombrio -> Câmara Municipal de Sombrio / SC 16
+BR Minaçu -> Câmara Municipal de Minaçu 0
+BR Montividiu do Norte ->  
+BR Caarapó -> TV Câmara Caarapó MS 0
+BR Mutunópolis ->  
+BR Timbé do Sul -> Câmara Timbé do Sul 0
+BR Corguinho ->  
+BR Dois Irmãos do Buriti ->  
+BR Glória de Dourados ->  
+BR Nova Crixás -> Câmara Municipal de Nova Crixás - Goiás  0
+BR Ivinhema ->  
+BR Treze Tílias -> Câmara Municipal de Vereadores de Treze Tílias 0
+BR Ladário -> TV Câmara Municipal de Ladário - MS 0
+BR Novo Gama -> Tv Câmara Novo Gama 0
+BR Nioaque ->  
+BR Urubici -> Câmara Municipal de Vereadores de Urubici 0
+BR Paranhos ->  
+BR Palestina de Goiás -> CÂMARA MUNICIPAL DE PALESTINA DE GOIÁS 0
+BR Vidal Ramos -> Câmara Vidal Ramos 0
+BR Xaxim ->  
+BR Paraúna -> Câmara Municipal De Paraúna 0
+BR Rio Negro -> Câmara Municipal Rio Negro - PR 0
+BR Pirenópolis -> Camara Municipal Pirenopolis 0
+BR Ajuricaba -> Câmara Municipal de Ajuricaba / RS 0
+BR Selvíria -> Câmara Municipal de Selvíria-MS 0
+BR Portelândia -> Câmara Municipal de Portelândia-GO 0
+BR Alto Alegre -> Câmara de Vereadores de Alto Alegre RS 0
+BR Rio Quente ->  
+BR Anta Gorda ->  
+BR Arroio do Sal ->  
+BR Santa Fé de Goiás -> TV Câmara Santa Fé de Goiás 0
+BR Três Lagoas -> TV Câmara Três Lagoas 7
+BR Augusto Pestana ->  
+BR Alto Boa Vista ->  
+BR Barão do Triunfo ->  
+BR Santa Tereza de Goiás -> Câmara Municipal De Santa Tereza De Goiás 0
+BR Araguainha ->  
+BR Barra Funda ->  
+BR Boa Vista do Cadeado ->  
+BR São Francisco de Goiás -> Câmara Municipal de São Francisco de Goiás 0
+BR Bom Retiro do Sul ->  
+BR São Miguel do Passa Quatro -> Câmara Municipal de São Miguel do Passa Quatro 0
+BR Barra do Garças -> Câmara Municipal de Barra do Garças 1
+BR Butiá -> Câmara de Vereadores de São Pedro do Butiá 0
+BR Caibaté ->  
+BR Simolândia -> Câmara de Simolândia Goiás 0
+BR Campina das Missões ->  
+BR Cândido Godói ->  
+BR Trindade -> Câmara Municipal de Trindade 1
+BR Capão Bonito do Sul -> Câmara Municipal de Capão Bonito do Sul 0
+BR Uruana -> Câmara Municipal de Uruana 0
+BR Capitão -> Câmara de Vereadores de Capitão - RS 0
+BR Caseiros ->  
+BR Vila Boa -> Câmara de Vila Boa-GO 0
+BR Cerro Grande ->  
+BR Chiapetta ->  
+BR Colorado ->  
+BR Coronel Bicaco ->  
+BR Cristal do Sul ->  
+BR Dezesseis de Novembro ->  
+BR Dom Pedro de Alcântara ->  
+BR Encantado -> Câmara de Vereadores de Encantado 1
+BR Campo Novo do Parecis -> Câmara Municipal Campo Novo do Parecis 22
+BR Castanheira -> Câmara de Castanheira 0
+BR Comodoro -> Câmara Municipal de Comodoro-MT 0
+BR Denise ->  
+BR General Carneiro ->  
+BR Itanhangá -> CÂMARA MUNICIPAL DE ITANHANGÁ 0
+BR Erechim -> TV Câmara Erechim 18
+BR Esperança do Sul ->  
+BR Estrela Velha ->  
+BR Juara -> Câmara Municipal de Juara 1
+BR Fazenda Vilanova ->  
+BR Forquetinha ->  
+BR Luciara -> Câmara de Luciara Ao vivo 0
+BR General Câmara ->  
+BR Nortelândia ->  
+BR Gramado dos Loureiros ->  
+BR Guarani das Missões ->  
+BR Nova Brasilândia -> Câmara Municipal de Nova Brasilândia D'Oeste - RO 0
+BR Ibarama ->  
+BR Novo Mundo -> Câmara Municipal de Novo Mundo - MT 0
+BR Ijuí -> Câmara Municipal de  Ijuí 0
+BR Ipê ->  
+BR Pedra Preta -> CÂMARA MUNICIPAL DE PEDRA PRETA - MT 1
+BR Pontes e Lacerda -> Câmara Municipal Pontes e Lacerda 0
+BR Primavera do Leste ->  
+BR Itaqui -> Câmara de Vereadores de Itaqui 3
+BR Jacuizinho ->  
+BR Jóia ->  
+BR Rio Branco -> Câmara Municipal de Rio Branco MT 0
+BR São Pedro da Cipa ->  
+BR Santa Rita do Trivelato ->  
+BR Serra Nova Dourada -> Câmara Municipal de Serra Nova Dourada 0
+BR Lajeado -> Câmara Municipal de Vereadores de Lajeado RS 2
+BR Terra Nova do Norte ->  
+BR Machadinho -> Câmara Municipal de Machadinho D ́Oeste 0
+BR Vera -> Câmara Municipal de Vera - MT 2
+BR Marau -> Câmara de Vereadores de Marau 0
+BR Abadia de Goiás -> Câmara Municipal Abadia de Goiás 0
+BR Mato Castelhano ->  
+BR Montauri ->  
+BR Águas Lindas de Goiás -> Câmara Municipal de Águas Lindas de Goiás 0
+BR Amaralina -> Câmara Municipal de Amaralina 0
+BR Morro Redondo -> TVCamara Morro Redondo 1
+BR Não-Me-Toque ->  
+BR Aparecida de Goiânia -> Câmara de Aparecida de Goiânia 5
+BR Nova Boa Vista ->  
+BR Araguapaz -> Câmara Municipal de Araguapaz GO 0
+BR Nova Palma -> Câmara de Vereadores de Nova Palma 0
+BR Barro Alto -> Câmara Municipal de Barro Alto - GO 0
+BR Novo Cabrais -> Câmara Municipal de Vereadores de Novo Cabrais 0
+BR Brazabrantes ->  
+BR Cachoeira Alta -> Câmara Municipal Cachoeira Alta 0
+BR Osório -> Câmara de Vereadores Osório 0
+BR Caldazinha ->  
+BR Campos Belos ->  
+BR Pantano Grande -> Câmara de Vereadores de Pantano Grande 1
+BR Cavalcante -> Câmara Municipal de Cavalcante - Goiás 0
+BR Colinas do Sul ->  
+BR Passo do Sobrado -> Câmara Municipal de Vereadores de Passo do Sobrado 0
+BR Pejuçara ->  
+BR Crixás -> Câmara Municipal de Nova Crixás - Goiás  0
+BR Diorama ->  
+BR Pinheirinho do Vale -> Câmara de Vereadores Pinheirinho do Vale RS 0
+BR Fazenda Nova -> CÂMARA MUNICIPAL DE FAZENDA NOVA-GO 0
+BR Poço das Antas ->  
+BR Divinópolis de Goiás -> Camara Municipal de Divinópolis de Goiás 0
+BR Porto Mauá -> Câmara de Vereadores de  Porto Mauá 0
+BR Goiás -> TV Câmara Municipal de Gameleira de Goiás  0
+BR Protásio Alves -> Câmara de Vereadores de Protásio Alves 0
+BR Guarinos ->  
+BR Redentora ->  
+BR Riozinho ->  
+BR Rondinha ->  
+BR Indiara -> Camara municipal Indiara 0
+BR Salvador das Missões ->  
+BR Itaberaí ->  
+BR Itapuranga -> Camara Municipal de Itapuranga 0
+BR Jaraguá -> Câmara Municipal de Jaraguá Goiás 0
+BR Santa Cruz do Sul -> TV Câmara - Santa Cruz do Sul 15
+BR Lagoa Santa -> Câmara Minicipal Lagoa Santa Goiás 0
+BR Marzagão -> Câmara Municipal de Vereadores Marzagão 0
+BR Moiporá -> Câmara Legislativa Moiporá 0
+BR Santa Rosa -> TV Câmara Santa Rosa RS 36
+BR Morro Agudo de Goiás ->  
+BR Santo Antônio da Patrulha ->  
+BR São Borja -> Câmara de Vereadores de São Borja 0
+BR Nerópolis -> Câmara Muncipal de Nerópolis 0
+BR São João da Urtiga -> Câmara de Vereadores São João da Urtiga 0
+BR Nova Iguaçu de Goiás -> CÂMARA MUNICIPAL DE NOVA IGUAÇU DE GOIÁS 0
+BR São José do Inhacorá ->  
+BR São Lourenço do Sul -> Câmara Municipal de São Lourenço do Sul / RS 0
+BR São Nicolau ->  
+BR São Sebastião do Caí ->  
+BR São Vicente do Sul ->  
+BR Segredo ->  
+BR Orizona -> Câmara Municipal de Orizona 6
+BR Palmelo ->  
+BR Sertão -> Camara Sertao Santana 0
+BR Petrolina de Goiás -> Câmara Municipal de Petrolina de Goiás 0
+BR Sobradinho -> Câmara de Vereadores de Sobradinho RS 0
+BR Planaltina ->  
+BR Professor Jamil -> Camara Municipal de Professor Jamil 0
+BR Rubiataba -> Câmara Municipal de Rubiataba 0
+BR Santa Isabel -> Câmara Municipal Santa Isabel do Ivaí PR 3
+BR Taquara -> Câmara de Taquara 3
+BR Santo Antônio da Barra -> CÂMARA MUNICIPAL DE BARRA DE SANTO ANTÔNIO 0
+BR São João da Paraúna -> Câmara Municipal São João da Paraúna 0
+BR Teutônia -> Câmara de Vereadores Teutônia 0
+BR Travesseiro ->  
+BR Três Palmeiras ->  
+BR Tupanci do Sul ->  
+BR São Simão -> Câmara São Simão Goiás 0
+BR União da Serra ->  
+BR Vale Real ->  
+BR Taquaral de Goiás -> Câmara Municipal de Taquaral Goiás 0
+BR Viadutos ->  
+BR Vila Maria ->  
+BR Westfália ->  
+BR Anaurilândia ->  
+BR Turvânia -> Câmara Turvânia 0
+BR Bandeirantes -> Câmara  Municipal de Bandeirantes - MS 0
+BR Brasilândia ->  
+BR Chapadão do Sul ->  
+BR Valparaíso de Goiás -> TV Câmara Valparaíso de Goiás 3
+BR Deodápolis ->  
+BR Brasília ->  
+BR Figueirão ->  
+BR Itaquiraí -> Câmara Municipal de Itaquiraí 0
+BR Juti ->  
+BR Naviraí -> Câmara Municipal de Naviraí 1
+BR Paranaíba -> TV CÂMARA PARANAÍBA - MS 0
+BR Rio Brilhante -> Câmara Municipal de Rio Brilhante - MS 0
+BR Sete Quedas ->  
+BR Terenos -> Câmara Municipal de Terenos 0
+BR Alto Araguaia -> Câmara Municipal Alto Araguaia 0
+BR Araguaiana -> Câmara Municipal de Araguaiana 0
+BR Barra do Bugres -> Câmara Municipa de Barra do Bugres - MT 0
+BR Campinápolis -> Câmara Municipal de Campinápolis 0
+BR Carlinda ->  
+BR Colniza -> CAMARA COLNIZA 2
+BR Curvelândia ->  
+BR Gaúcha do Norte -> CÂMARA MUNICIPAL DE GAÚCHA DO NORTE 0
+BR Ipiranga do Norte -> Câmara Municipal de Ipiranga do Norte - MT 0
+BR Jauru -> Câmara Municipal de Jauru MT 0
+BR Lucas do Rio Verde -> Câmara Municipal de Lucas do Rio Verde - MT 0
+BR Nobres -> Câmara Municipal de Nobres 0
+BR Nova Santa Helena ->  
+BR Nova Xavantina -> Câmara Municipal de Nova Xavantina 0
+BR Novo Santo Antônio ->  
+BR Ponte Branca ->  
+BR Poxoréu -> Câmara Municipal de Poxoréu - MT 1
+BR Ribeirãozinho ->  
+BR São José do Xingu ->  
+BR Salto do Céu -> Camara Municipal de Salto do Céu-MT 0
+BR Sapezal -> Câmara Sapezal 0
+BR Tapurah -> Câmara Municipal de Tapurah 0
+BR Várzea Grande -> Câmara Municipal de Várzea Grande 2
+BR Nova Monte Verde -> Câmara Municipal de Nova Monte Verde 0
+BR Água Limpa -> Camara Municipal De Água Limpa  0
+BR Alvorada do Norte -> Câmara Municipal de Alvorada do Norte Goiás 0
+BR Anicuns -> TV Câmara Municipal de Anicuns 0
+BR Aragoiânia ->  
+BR Baliza ->  
+BR Bonópolis -> Câmara Municipal de Bonópolis - GO 0
+BR Cabeceiras -> Camara Municipal Cabeceiras do Piauí 0
+BR Caldas Novas -> Câmara Municipal de Caldas Novas 1
+BR Campo Limpo de Goiás -> Câmara Municipal de Campo Limpo de Goiás 0
+BR Caturaí ->  
+BR Cocalzinho de Goiás ->  
+BR Cristianópolis -> Câmara Municipal De Cristianópolis 2
+BR Davinópolis -> Câmara Municipal de Davinópolis 0
+BR Faina ->  
+BR Gameleira de Goiás -> TV Câmara Municipal de Gameleira de Goiás  0
+BR Goianira -> Câmara de Goianira 0
+BR Guarani de Goiás -> Câmara Municipal de Guarani de Goiás 0
+BR Inaciolândia -> Câmara de Inaciolândia 0
+BR Israelândia -> Câmara Municipal de Israelândia 0
+BR Itapirapuã -> Câmara Municipal Itapirapuã 0
+BR Jandaia -> Câmara Municipal de Jandaia - Goiás 0
+BR Jussara -> CÂMARA DE JUSSARA - GO 0
+BR Mara Rosa ->  
+BR Mineiros -> Câmara Municipal de Mineiros 0
+BR Morrinhos -> TV Câmara Morrinhos CE 1
+BR Nazário -> Câmara Nazário 0
+BR Nova Glória ->  
+BR Novo Planalto ->  
+BR Palmeiras de Goiás -> Câmara Municipal de Palmeiras de Goiás 0
+BR Perolândia -> Câmara Municipal De Perolândia 0
+BR Pires do Rio -> Câmara Municipal Pires do Rio 0
+BR Posse -> Câmara Municipal de Posse Goiás  0
+BR Rio Verde -> tv camara rio verde 1
+BR Santa Helena de Goiás -> Câmara Municipal de Santa Helena de Goiás 0
+BR Santa Terezinha de Goiás ->  
+BR São João d'Aliança -> CÂMARA MUNICIPAL DE SÃO JOÃO D' ALIANÇA  0
+BR São Patrício -> CÂMARA MUNICIPAL DE SÃO PATRÍCIO 0
+BR Sítio d'Abadia ->  
+BR Trombas -> Câmara Municipal de Trombas 0
+BR Urutaí -> Câmara Municipal Urutaí 0
+BR Vila Propício -> Câmara Municipal de Vila Propício 0
+
+---
