@@ -1,0 +1,17 @@
+table 30830: {'status': 'No puede mostrarse por restricciones de volumen'}
+table 30902: {'status': 'No puede mostrarse por restricciones de volumen'}
+table 31103: {'status': 'No puede mostrarse por restricciones de volumen'}
+table 31256: {'status': 'No puede mostrarse por restricciones de volumen'}
+== Spain poverty by age (0s)
+50 tables; 22143 municipal series; example [{'code': '02001', 'name': 'Abengibre', 'meta': ['Total', 'Menos de 18 años', 'Dato base', 'Población con ingresos por unidad de consumo por debajo 60% de la mediana'], 'data': {}}, {'code': '02001', 'name': 'Abengibre', 'meta': ['Total', 'De 18 a 64 años', 'Dato base', 'Población con ingresos por unidad de consumo por debajo 60% de la mediana'], 'data': {}}]
+
+table 30832: {'status': 'No puede mostrarse por restricciones de volumen'}
+== Spain demographics (0s)
+56959 municipal series; kinds ['Edad media de la población | Dato base', 'Población | Dato base', 'Porcentaje de hogares unipersonales | Dato base', 'Porcentaje de población de 65 y más años | Dato base', 'Porcentaje de población española | Dato base', 'Porcentaje de población menor de 18 años | Dato base', 'Tamaño medio del hogar | Dato base']
+
+== Peru district borders (0s)
+1871306 bytes; 1834 features; props {'OBJECTID': 1, 'IDDIST': '230110', 'IDDPTO': '23', 'IDPROV': '2301', 'NOMBDIST': 'CORONEL GREGORIO ALBARRACIN LANCHIPA', 'NOMBPROV': 'TACNA', 'NOMBDEP': 'TACNA', 'DCTO': 'LEY', 'LEY': '27415', 'FECHA': '02/02/2001', 'NOM_CAP': 'ALFONSO UGARTE', 'SHAPE_LENG': 0.570509667, 'SHAPE_AREA': 0.0161399587, 'SHAPE_LE_1': 0.57019506331, 'SHAPE_AR_1': 0.01598980139, 'AREA_MINAM': 18834.14}
+
+== Spain municipal borders (0s)
+18613175 bytes; 8205 features; props {'shapeName': 'Villarejo-Periesteban', 'shapeISO': '', 'shapeID': '28895703B91436656566713', 'shapeGroup': 'ESP', 'shapeType': 'ADM3'}
+
