@@ -1,0 +1,889 @@
+d Distrital de Parcona 0
+PE Baños ->  
+PE Salas ->  
+PE Queropalca ->  
+PE San Juan Bautista ->  
+PE San Francisco de Asís ->  
+PE Subtanjalla ->  
+PE Chavinillo ->  
+PE Yauca del Rosario ->  
+PE Chacabamba ->  
+PE Alto Larán ->  
+PE Jacas Chico ->  
+PE Chincha Baja ->  
+PE Pampamarca ->  
+PE Grocio Prado ->  
+PE Ica ->  
+PE San Juan de Yánac ->  
+PE Los Aquijes ->  
+PE Pachacútec ->  
+PE Sunampe -> MUNI SUNAMPE Chincha 0
+PE Nasca ->  
+PE El Ingenio ->  
+PE Pueblo Nuevo -> Municipalidad Distrital de Pueblo Nuevo 1
+PE Vista Alegre ->  
+PE San José de los Molinos ->  
+PE Llipata ->  
+PE Santiago ->  
+PE Santa Cruz -> Concejo Municipal de Santa Cruz 11
+PE Pisco ->  
+PE Humay ->  
+PE Tate -> MUNICIPALIDAD DISTRITAL DE TATE 0
+PE Paracas ->  
+PE Chincha Alta ->  
+PE Chavín ->  
+PE El Carmen ->  
+PE Pueblo Nuevo -> Municipalidad Distrital de Pueblo Nuevo 1
+PE San Clemente -> Municipalidad de San Clemente 0
+PE San Pedro de Huacarpana ->  
+PE Huancayo ->  
+PE Tambo de Mora ->  
+PE Chacapampa ->  
+PE Changuillo ->  
+PE Chilca ->  
+PE Marcona ->  
+PE Chupuro ->  
+PE Palpa ->  
+PE Cullhuas ->  
+PE Río Grande ->  
+PE Huacrapuquio ->  
+PE Tibillo ->  
+PE Huancano ->  
+PE Huancán ->  
+PE Independencia -> Municipalidad de Independencia 0
+PE Huayucachi ->  
+PE Pariahuanca ->  
+PE Pucara ->  
+PE Quilcas ->  
+PE San Andrés -> Municipalidad San Andrés, Petén 1
+PE San Jeronimo de Tunán ->  
+PE Túpac Amaru Inca ->  
+PE Sapallanga ->  
+PE Carhuacallanga ->  
+PE Santo Domingo de Acobamba ->  
+PE Chicche ->  
+PE Concepción -> Municipalidad Concepción 0
+PE Chongos Alto ->  
+PE Andamarca ->  
+PE Colca ->  
+PE Cochas ->  
+PE El Tambo ->  
+PE Heroínas Toledo ->  
+PE Hualhuas ->  
+PE Mariscal Castilla ->  
+PE Huasicancha ->  
+PE Mito ->  
+PE Ingenio ->  
+PE Orcotuna ->  
+PE Pilcomayo ->  
+PE Santa Rosa de Ocopa ->  
+PE Quichuay ->  
+PE Perené ->  
+PE San Agustín ->  
+PE San Luis de Shuaro ->  
+PE Saño ->  
+PE Vitoc ->  
+PE Sicaya ->  
+PE Acolla ->  
+PE Viques ->  
+PE Ataura ->  
+PE Aco ->  
+PE Curicaca ->  
+PE Chambará ->  
+PE Huamali ->  
+PE Comas ->  
+PE Huertas ->  
+PE Manzanares ->  
+PE Julcan ->  
+PE Matahuasi ->  
+PE Llocllapampa ->  
+PE Masma ->  
+PE Nueve de Julio ->  
+PE Molinos ->  
+PE San José de Quero ->  
+PE Muqui ->  
+PE Paca ->  
+PE Chanchamayo -> Municipalidad Provincial de Chanchamayo 0
+PE Pancan ->  
+PE Pichanaqui ->  
+PE Pomacancha ->  
+PE San Lorenzo ->  
+PE Sausa ->  
+PE Tunan Marca ->  
+PE Yauyos ->  
+PE Carhuamayo ->  
+PE Ulcumayo ->  
+PE Coviriali ->  
+PE San Ramón -> Municipalidad de San Ramón 1
+PE Mazamari ->  
+PE Jauja ->  
+PE Pangoa ->  
+PE Apata ->  
+PE Canchayllo ->  
+PE Río Tambo ->  
+PE El Mantaro ->  
+PE Tarma ->  
+PE Huaripampa ->  
+PE Huaricolca ->  
+PE Janjaillo ->  
+PE La Unión -> Municipalidad de La Union 0
+PE Leonor Ordóñez ->  
+PE Palcamayo ->  
+PE Marco ->  
+PE Tapo ->  
+PE Masma Chicche ->  
+PE Chacapalpa ->  
+PE Monobamba ->  
+PE Marcapomacocha ->  
+PE Muquiyauyo ->  
+PE Paccha ->  
+PE Paccha ->  
+PE Santa Rosa de Sacco ->  
+PE Parco ->  
+PE Ricrán ->  
+PE Yauli ->  
+PE San Pedro de Chunán ->  
+PE Ahuac ->  
+PE Sincos ->  
+PE Huáchac ->  
+PE Yauli ->  
+PE San Juan de Iscos ->  
+PE Tres de Diciembre ->  
+PE Trujillo ->  
+PE Junín -> Concejo Municipal Junin 0
+PE Ondores ->  
+PE Florencia de Mora ->  
+PE Satipo -> Municipalidad Provincial de Satipo 0
+PE La Esperanza -> Concejo Municipal de Esperanza 7
+PE Llaylla ->  
+PE Pampa Hermosa ->  
+PE Moche -> Municipalidad Distrital de Moche 0
+PE Salaverry ->  
+PE Víctor Larco Herrera ->  
+PE Río Negro -> Sesiones Concejo I. Municipalidad de Río Negro 0
+PE Chicama ->  
+PE Vizcatán del Ene ->  
+PE Magdalena de Cao ->  
+PE Acobamba ->  
+PE Rázuri ->  
+PE Huasahuasi ->  
+PE Palca ->  
+PE San Pedro de Cajas ->  
+PE La Oroya ->  
+PE Casa Grande -> Municipalidad Casa Grande 0
+PE Huay-huay ->  
+PE Morococha ->  
+PE Bambamarca ->  
+PE Santa Bárbara de Carhuacaya ->  
+PE Longotea ->  
+PE Suitucancha ->  
+PE Ucuncha ->  
+PE Chupaca ->  
+PE Pacanga ->  
+PE Chongos Bajo ->  
+PE Julcán ->  
+PE Huamancaca Chico ->  
+PE Carabamba ->  
+PE San Juan de Jarpa ->  
+PE Otuzco ->  
+PE Yanacancha ->  
+PE Charat ->  
+PE El Porvenir -> Ilustre Municipalidad de Porvenir 0
+PE La Cuesta ->  
+PE Huanchaco ->  
+PE Paranday ->  
+PE Laredo ->  
+PE Sinsicap ->  
+PE Poroto ->  
+PE San Pedro de Lloc ->  
+PE Simbal ->  
+PE Jequetepeque ->  
+PE Ascope ->  
+PE Chocope ->  
+PE Paiján -> Muni Paiján 0
+PE Santiago de Cao ->  
+PE San José -> Municipalidad de San José 0
+PE Bolívar -> Honorable Concejo Deliberante Bolívar 0
+PE Buldibuyo ->  
+PE Condormarca ->  
+PE Huancaspata ->  
+PE Uchumarca ->  
+PE Huayo ->  
+PE Chepén ->  
+PE Parcoy ->  
+PE Pueblo Nuevo -> Municipalidad Distrital de Pueblo Nuevo 1
+PE Pias ->  
+PE Calamarca ->  
+PE Taurija ->  
+PE Huaso ->  
+PE Huamachuco ->  
+PE Agallpampa ->  
+PE Cochorco ->  
+PE Huaranchal ->  
+PE Marcabal ->  
+PE Mache ->  
+PE Sarín ->  
+PE Salpo ->  
+PE Usquil ->  
+PE Santiago de Chuco -> Municipalidad Provincial de Santiago de Chuco 0
+PE Guadalupe ->  
+PE Cachicadan ->  
+PE Mollepata ->  
+PE Pacasmayo -> municipalidad provincial de pacasmayo 0
+PE Santa Cruz de Chuca ->  
+PE Tayabamba ->  
+PE Cascas ->  
+PE Chillia ->  
+PE Marmot ->  
+PE Huaylillas ->  
+PE Virú ->  
+PE Ongón ->  
+PE Guadalupito ->  
+PE Pataz ->  
+PE Chongoyape ->  
+PE Santiago de Challas ->  
+PE Etén Puerto ->  
+PE Urpay ->  
+PE La Victoria ->  
+PE Chugay ->  
+PE Monsefu ->  
+PE Curgos ->  
+PE Oyotún ->  
+PE Sanagoran ->  
+PE Pimentel ->  
+PE Sartimbamba ->  
+PE Santa Rosa -> Concejo Santa Rosa de Cabal 0
+PE Angasmarca ->  
+PE Cayaltí ->  
+PE Mollebamba ->  
+PE Pomalca ->  
+PE Quiruvilca ->  
+PE Tumán ->  
+PE Sitabamba ->  
+PE Cañaris ->  
+PE Lucma ->  
+PE Manuel Antonio Mesones Muro ->  
+PE Sayapullo ->  
+PE Pueblo Nuevo ->  
+PE Chao ->  
+PE Chochope ->  
+PE Jayanca ->  
+PE Chiclayo -> Municipalidad Provincial de Chiclayo - OFICIAL 0
+PE Morrope ->  
+PE Etén ->  
+PE Olmos ->  
+PE José Leonardo Ortiz ->  
+PE Salas ->  
+PE Lagunas ->  
+PE Túcume ->  
+PE Nueva Arica ->  
+PE Ancón ->  
+PE Picsi ->  
+PE Reque ->  
+PE Barranco -> Municipalidad de Barranco 0
+PE Saña ->  
+PE Patapo ->  
+PE Carabayllo -> Municipalidad de Carabayllo 0
+PE Pucala ->  
+PE Chorrillos ->  
+PE Ferreñafe -> Municipalidad de Ferreñafe 0
+PE Comas -> Municipalidad de Comas 0
+PE Incahuasi ->  
+PE Independencia ->  
+PE Pitipo ->  
+PE Lambayeque ->  
+PE Illimo ->  
+PE Mochumi ->  
+PE Motupe ->  
+PE La Molina -> Municipalidad de La Molina  0
+PE Pacora ->  
+PE Lince -> Municipalidad de Lince 0
+PE Lurigancho ->  
+PE San José -> Municipalidad de San José 0
+PE Magdalena del Mar -> Municipalidad de Magdalena del Mar 0
+PE Miraflores -> Municipalidad Miraflores 0
+PE Pucusana -> Municipalidad Distrital de Pucusana 0
+PE Punta Hermosa -> MUNICIPALIDAD PUNTA HERMOSA 0
+PE Rímac -> Municipalidad del Rímac 0
+PE San Borja -> Municipalidad San Borja 0
+PE San Juan de Lurigancho ->  
+PE San Luis ->  
+PE San Miguel -> Municipalidad de San Miguel 0
+PE Santa María del Mar ->  
+PE Santiago de Surco -> MUNICIPALIDAD DE SANTIAGO DE SURCO 0
+PE Villa el Salvador -> Municipalidad Villa El Salvador 0
+PE Barranca -> Municipalidad de Barranca 0
+PE Pativilca -> Municipalidad Distrital de Pativilca 2015 0
+PE Supe Puerto ->  
+PE Copa ->  
+PE Huancapón ->  
+PE Canta ->  
+PE Huamantanga ->  
+PE Lachaqui ->  
+PE Lima -> Municipalidad de Lima 3
+PE Ate ->  
+PE Santa Rosa de Quives ->  
+PE Breña ->  
+PE Chaclacayo ->  
+PE Asia -> Municipalidad Distrital de Asia 0
+PE Cieneguilla ->  
+PE Cerro Azul ->  
+PE Coayllo ->  
+PE Lunahuana ->  
+PE El Agustino -> Municipalidad de El Agustino 0
+PE Nuevo Imperial ->  
+PE Quilmana ->  
+PE San Luis ->  
+PE Zuñiga ->  
+PE Atavillos Alto ->  
+PE Jesús María -> Municipalidad de Jesús María 0
+PE Aucallama ->  
+PE Ihuari ->  
+PE Pacaraos ->  
+PE La Victoria -> Municipalidad de La Victoria 0
+PE Santa Cruz de Andamarca ->  
+PE Veintisiete de Noviembre ->  
+PE Antioquia ->  
+PE Los Olivos -> Municipalidad de Los Olivos oficial 0
+PE Carampoma ->  
+PE Lurín ->  
+PE Cuenca ->  
+PE Huanza ->  
+PE Pueblo Libre -> Municipalidad de Pueblo Libre - Oficial 0
+PE Lahuaytambo ->  
+PE Pachacámac ->  
+PE Laraos ->  
+PE Puente Piedra ->  
+PE Ricardo Palma ->  
+PE Punta Negra ->  
+PE San Bartolo -> Municipalidad Distrital de San Bartolo 0
+PE San Isidro -> Municipalidad de San Isidro 0
+PE San Antonio -> Municipalidad de San Antonio 0
+PE San Juan de Miraflores ->  
+PE San Damian ->  
+PE San Juan de Tantaranche ->  
+PE San Mateo -> concejo municipal san mateo boyacá 0
+PE San Pedro de Casta ->  
+PE San Martín de Porres -> Municipalidad de San Martín de Porres  0
+PE Sangallaya ->  
+PE Santa Anita ->  
+PE Santa Eulalia ->  
+PE Santa Rosa ->  
+PE Santiago de Tuna ->  
+PE Surco -> MUNICIPALIDAD DE SANTIAGO DE SURCO 0
+PE Surquillo -> Municipalidad de Surquillo 0
+PE Ambar ->  
+PE Checras ->  
+PE Villa María del Triunfo -> MUNICIPALIDAD DE VILLA MARÍA DEL TRIUNFO 0
+PE Paramonga ->  
+PE Huaura -> Municipalidad Distrital de Huaura 0
+PE Supe ->  
+PE Paccho ->  
+PE Cajatambo ->  
+PE Santa María ->  
+PE Gorgor ->  
+PE Vegueta ->  
+PE Andajes ->  
+PE Manas ->  
+PE Arahuay ->  
+PE Cochamarca ->  
+PE Huaros ->  
+PE Pachangara ->  
+PE San Buenaventura ->  
+PE Alis ->  
+PE San Vicente de Cañete ->  
+PE Ayaviri ->  
+PE Calango ->  
+PE Cacra ->  
+PE Chilca ->  
+PE Catahuasi ->  
+PE Imperial ->  
+PE Cochas ->  
+PE Mala ->  
+PE Hongos ->  
+PE Pacarán ->  
+PE Huancaya ->  
+PE San Antonio -> Municipalidad de San Antonio 1
+PE Huantan ->  
+PE Santa Cruz de Flores ->  
+PE Laraos ->  
+PE Huaral ->  
+PE Madean ->  
+PE Atavillos Bajo ->  
+PE Omas ->  
+PE Quinches ->  
+PE Chancay -> Municipalidad Distrital de Chancay 0
+PE San Joaquín ->  
+PE Lampián ->  
+PE Tanta ->  
+PE San Miguel de Acos ->  
+PE Tomas ->  
+PE Sumbilca ->  
+PE Viñac ->  
+PE Iquitos ->  
+PE Fernando Lores ->  
+PE Las Amazonas ->  
+PE Napo ->  
+PE Matucana -> Municipalidad Provincial Huarochirí - Matucana 0
+PE Torres Causana ->  
+PE Callahuanca ->  
+PE San Juan Bautista ->  
+PE Chicla ->  
+PE Balsapuerto ->  
+PE Huachupampa ->  
+PE Lagunas ->  
+PE Huarochirí -> Municipalidad Provincial Huarochirí - Matucana 0
+PE Teniente Cesar Lopez Rojas ->  
+PE Langa ->  
+PE Parinari ->  
+PE Maríatana ->  
+PE Trompeteros ->  
+PE San Andrés de Tupicocha ->  
+PE Ramon Castilla ->  
+PE San Bartolomé ->  
+PE Yavari ->  
+PE San Juan de Iris ->  
+PE Requena ->  
+PE San Lorenzo de Quinti ->  
+PE Capelo ->  
+PE Maquia ->  
+PE San Mateo de Otao ->  
+PE Saquena ->  
+PE San Pedro de Huancayre ->  
+PE Tapiche ->  
+PE Santa Cruz de Cocachacra ->  
+PE Yaquerana ->  
+PE Santiago de Anchucaya ->  
+PE Santo Domingo de los Ollero ->  
+PE Inahuaya -> MUNICIPALIDAD DE INAHUAYA 0
+PE Pampa Hermosa ->  
+PE Vargas Guerra ->  
+PE Huacho -> Muni Huacho 0
+PE Cahuapanas ->  
+PE Caleta de Carquín ->  
+PE Morona ->  
+PE Hualmay ->  
+PE Andoas ->  
+PE Rosa Panduro ->  
+PE Leoncio Prado -> MUNICIPALIDAD PROVINCIAL LEONCIO PRADO 2019 - 2022 0
+PE Yaguas ->  
+PE Santa Leonor ->  
+PE Sayan ->  
+PE Inambari -> Municipalidad Distrital de Inambari 0
+PE Oyón ->  
+PE Laberinto ->  
+PE Caujul ->  
+PE Fitzcarrald ->  
+PE Navan ->  
+PE Huepetuhe ->  
+PE Yauyos ->  
+PE Iberia ->  
+PE Ayauca ->  
+PE Moquegua -> COMISION SUSPENSION ALCALDE A. CARDENAS MOQUEGUA 0
+PE Azangaro ->  
+PE Cuchumbaya ->  
+PE Carania ->  
+PE Chocos ->  
+PE San Cristóbal ->  
+PE Colonia ->  
+PE Omate ->  
+PE Huampara ->  
+PE Coalaque ->  
+PE Huangascar ->  
+PE La Capilla ->  
+PE Huañec ->  
+PE Matalaque ->  
+PE Lincha ->  
+PE Quinistaquillas ->  
+PE Yunga ->  
+PE El Algarrobal ->  
+PE Chaupimarca ->  
+PE Huariaca ->  
+PE Ninacaca ->  
+PE Paucartambo ->  
+PE Simón Bolívar ->  
+PE Tinyahuarco ->  
+PE Yanacancha ->  
+PE Chacayan -> Municipalidad de Chacayán 0
+PE Miraflores -> Municipalidad Miraflores 0
+PE Paucar ->  
+PE Putinza ->  
+PE Santa Ana de Tusi ->  
+PE Quinocay ->  
+PE Vilcabamba ->  
+PE San Pedro de Pilas ->  
+PE Chontabamba ->  
+PE Tauripampa ->  
+PE Palcazu ->  
+PE Tupe ->  
+PE Puerto Bermúdez ->  
+PE Vitis ->  
+PE Alto Nanay ->  
+PE Constitución -> Municipalidad de Constitución 0
+PE Indiana ->  
+PE Mazan ->  
+PE Castilla ->  
+PE Cura Mori ->  
+PE Punchana ->  
+PE Belén -> Muni Belen 0
+PE La Arena -> Municipalidad de Punta Arenas 0
+PE Yurimaguas ->  
+PE Jeberos ->  
+PE Las Lomas ->  
+PE Santa Cruz -> Concejo Municipal de Santa Cruz 6
+PE Veintiséis de Octubre ->  
+PE Frías ->  
+PE Nauta ->  
+PE Tigre ->  
+PE Lagunas ->  
+PE Urarinas ->  
+PE Pacaipampa ->  
+PE Pebas ->  
+PE Sapillica ->  
+PE San Pablo ->  
+PE Suyo ->  
+PE Alto Tapiche ->  
+PE Canchaque ->  
+PE Emilio San Martín ->  
+PE Huarmaca ->  
+PE Puinahua ->  
+PE San Miguel de el Faique ->  
+PE Soplin ->  
+PE Sondorillo ->  
+PE Jenaro Herrera ->  
+PE Contamana ->  
+PE Padre Márquez ->  
+PE Sarayacu ->  
+PE Buenos Aires -> Municipalidad Buenos Aires 0
+PE Barranca ->  
+PE La Matanza -> Honorable Concejo Deliberante La Matanza 0
+PE Manseriche -> Municipalidad Manseriche 0
+PE Pastaza ->  
+PE Putumayo ->  
+PE Salitral -> muni salitral 0
+PE Teniente Manuel Clavero ->  
+PE Santa Catalina de Mossa ->  
+PE Yamango ->  
+PE Amotape ->  
+PE Tambopata -> Municipalidad Tambopata 0
+PE Colan ->  
+PE Las Piedras ->  
+PE Tamarindo ->  
+PE Manu ->  
+PE Sullana -> MUNICIPALIDAD DE BELLAVISTA-SULLANA 0
+PE Madre de Dios ->  
+PE Ignacio Escudero ->  
+PE Iñapari ->  
+PE Marcavelica ->  
+PE Tahuamanu ->  
+PE Querecotillo ->  
+PE Carumas ->  
+PE Samegua ->  
+PE Pariñas ->  
+PE Torata ->  
+PE La Brea ->  
+PE Chojata ->  
+PE Los Órganos ->  
+PE Ichuña -> MUNICIPALIDAD DISTRITAL DE ICHUÑA 0
+PE Sechura -> MUNICIPALIDAD PROVINCIAL DE SECHURA COMUNICACIONES 0
+PE Lloque ->  
+PE Bernal ->  
+PE Puquina ->  
+PE Vice ->  
+PE Ubinas ->  
+PE Puno ->  
+PE Ilo ->  
+PE Amantani ->  
+PE Pacocha ->  
+PE Capachica ->  
+PE Huachón ->  
+PE Coata ->  
+PE Huayllay ->  
+PE Pallanchacra ->  
+PE Mañazo ->  
+PE San Fco.de Asis de Yarusyacán ->  
+PE Ticlacayan ->  
+PE Pichacani -> MUNICIPALIDAD DISTRITAL DE PICHACANI LARAQUERI 0
+PE Vicco ->  
+PE San Antonio -> Municipalidad de San Antonio 0
+PE Yanahuanca ->  
+PE Vilque ->  
+PE Goyllarisquizga ->  
+PE Achaya ->  
+PE San Pedro de Pillao ->  
+PE Asillo ->  
+PE Tapuc ->  
+PE Chupa ->  
+PE Muñani ->  
+PE Oxapampa -> Municipalidad Provincial De Oxapampa 0
+PE Saman ->  
+PE Huancabamba ->  
+PE San José -> Municipalidad de San José 0
+PE Pozuzo ->  
+PE Santiago de Pupuja ->  
+PE Villa Rica ->  
+PE Macusani ->  
+PE Ayapata ->  
+PE Corani ->  
+PE Piura -> Municipalidad de Piura 0
+PE Ituata ->  
+PE Catacaos ->  
+PE San Gabán ->  
+PE El Tallán ->  
+PE Juli ->  
+PE Huacullani ->  
+PE Pisacoma ->  
+PE Zepita ->  
+PE Capazo ->  
+PE La Unión -> Municipalidad de La Union 0
+PE Santa Rosa -> Concejo Municipal de Santa Rosa de Osos 2
+PE Tambo Grande ->  
+PE Huancané ->  
+PE Ayabaca ->  
+PE Huatasani ->  
+PE Jilili ->  
+PE Pusi ->  
+PE Montero ->  
+PE Taraco ->  
+PE Paimas ->  
+PE Sicchez ->  
+PE Huancabamba ->  
+PE Lampa -> Municipalidad de Lampa 0
+PE El Carmen de la Frontera ->  
+PE Calapuja ->  
+PE Lalaquiz ->  
+PE Ocuviri ->  
+PE Sondor ->  
+PE Paratia ->  
+PE Santa Lucia ->  
+PE Ayaviri ->  
+PE Cupi ->  
+PE Chulucanas -> MUNICIPALIDAD PROVINCIAL - CHULUCANAS 0
+PE Macari ->  
+PE Chalaco ->  
+PE Orurillo ->  
+PE Morropon ->  
+PE Umachiri ->  
+PE San Juan de Bigote ->  
+PE Conima ->  
+PE Tilali ->  
+PE Ananea ->  
+PE Quilcapuncu ->  
+PE Juliaca ->  
+PE Cabanillas ->  
+PE San Miguel -> Municipalidad de San Miguel 0
+PE Cuyocuyo ->  
+PE Patambuco ->  
+PE Santo Domingo -> Municipalidad de Santo Domingo 0
+PE Quiaca ->  
+PE Paita ->  
+PE Yanahuaya ->  
+PE Arenal ->  
+PE San Pedro de Putina Puncu ->  
+PE La Huaca ->  
+PE Anapia ->  
+PE Vichayal ->  
+PE Cuturapi ->  
+PE Bellavista -> MUNICIPALIDAD DE BELLAVISTA-SULLANA 0
+PE Tinicachi ->  
+PE Lancones ->  
+PE Moyobamba ->  
+PE Miguel Checa ->  
+PE Habana ->  
+PE Soritor ->  
+PE Salitral -> muni salitral 0
+PE Bellavista -> Municipalidad de Bellavista 0
+PE Bajo Biavo ->  
+PE El Alto -> Municipalidad de Puente Alto 0
+PE San Pablo ->  
+PE Lobitos ->  
+PE San José de Sisa ->  
+PE Máncora ->  
+PE Bellavista de la Unión ->  
+PE Cristo Nos Valga ->  
+PE Rinconada Llicuar ->  
+PE Acora ->  
+PE Atuncolla ->  
+PE Chucuito ->  
+PE Huata ->  
+PE San Martín -> Municipalidad de San Martín de Porres  0
+PE Paucarcolla ->  
+PE Shatoja ->  
+PE Platería ->  
+PE Alto Saposoa ->  
+PE Piscoyacu ->  
+PE Tiquillaca ->  
+PE Tingo de Saposoa ->  
+PE Azángaro ->  
+PE Alonso de Alvarado ->  
+PE Arapa ->  
+PE Caynarachi ->  
+PE Caminaca ->  
+PE Pinto Recodo ->  
+PE José Domingo Choquehuanca ->  
+PE San Roque de Cumbaza ->  
+PE Potoni ->  
+PE Tabalosos ->  
+PE San Antón ->  
+PE Juanjui ->  
+PE San Juan de Salinas ->  
+PE Tirapata ->  
+PE Huicungo ->  
+PE Ajoyani ->  
+PE Pajarillo ->  
+PE Coasa ->  
+PE Buenos Aires -> Municipalidad Buenos Aires 0
+PE Crucero ->  
+PE Pilluana ->  
+PE Ollachea ->  
+PE San Cristóbal ->  
+PE Shamboyacu ->  
+PE Usicayos ->  
+PE Tres Unidos ->  
+PE Desaguadero ->  
+PE Awajun ->  
+PE Kelluyo ->  
+PE Nueva Cajamarca ->  
+PE Pomata ->  
+PE Posic ->  
+PE Ilave ->  
+PE Yorongos ->  
+PE Pilcuyo ->  
+PE Tarapoto ->  
+PE Conduriri ->  
+PE Cacatachi ->  
+PE Cojata ->  
+PE Chipurana ->  
+PE Inchupalla ->  
+PE Huimbayoc ->  
+PE Rosaspata ->  
+PE La Banda de Shilcayo ->  
+PE Papaplaya ->  
+PE Vilque Chico ->  
+PE Sauce ->  
+PE Cabanilla ->  
+PE Tocache ->  
+PE Nicasio ->  
+PE Pólvora ->  
+PE Palca ->  
+PE Uchiza ->  
+PE Pucará ->  
+PE Vilavila ->  
+PE Antauta ->  
+PE Llalli ->  
+PE Alto de la Alianza -> Muni Alto de la Alianza 0
+PE Ciudad Nueva ->  
+PE Pachia ->  
+PE Nuñoa -> Municipalidad de Ñuñoa 0
+PE Santa Rosa -> Concejo Municipal de Santa Rosa de Osos 2
+PE Pocollay -> Municipalidad de Pocollay - Tacna - Perú 0
+PE Moho ->  
+PE Crnel.gregorio Albarracín Lanchipa ->  
+PE Huayrapata ->  
+PE Candarave ->  
+PE Putina ->  
+PE Camilaca ->  
+PE Pedro Vilca Apaza ->  
+PE Huanuara ->  
+PE Sina ->  
+PE Locumba ->  
+PE Cabana ->  
+PE Ite ->  
+PE Caracoto ->  
+PE Héroes Albarracín ->  
+PE Sandia ->  
+PE Estique-pampa ->  
+PE Limbani ->  
+PE Susapaya ->  
+PE Phara ->  
+PE Ticaco ->  
+PE San Juan del Oro ->  
+PE Corrales ->  
+PE Alto Inambari ->  
+PE Pampas de Hospital ->  
+PE Yunguyo ->  
+PE San Juan de la Virgen ->  
+PE Copani ->  
+PE Casitas ->  
+PE Ollaraya ->  
+PE Zarumilla ->  
+PE Unicachi ->  
+PE Matapalo ->  
+PE Calzada ->  
+PE Callería ->  
+PE Jepelacio ->  
+PE Iparia ->  
+PE Yantalo ->  
+PE Alto Biavo ->  
+PE Huallaga ->  
+PE San Rafael -> Municipalidad San Rafael de Heredia 0
+PE Yarinacocha -> Municipalidad Yarinacocha 0
+PE Agua Blanca ->  
+PE Santa Rosa ->  
+PE Manantay -> Municipalidad Distrital de Manantay 0
+PE Saposoa ->  
+PE El Eslabón ->  
+PE Sacanche ->  
+PE Lamas ->  
+PE Sepahua -> Municipalidad Distrital de Sepahua 0
+PE Barranquita ->  
+PE Yurua ->  
+PE Cuñumbuqui ->  
+PE Irazola ->  
+PE Rumisapa ->  
+PE Neshuya ->  
+PE Shanao ->  
+PE Purús ->  
+PE Zapatero ->  
+PE Campanilla ->  
+PE Pachiza ->  
+PE Picota ->  
+PE Caspisapa ->  
+PE Pucacaca ->  
+PE San Hilarión ->  
+PE Tingo de Ponasa ->  
+PE Rioja -> Municipalidad Provincial de Rioja - Oficial 0
+PE Elias Soplin Vargas ->  
+PE Pardo Miguel ->  
+PE San Fernando ->  
+PE Yuracyacu ->  
+PE Alberto Leveau ->  
+PE Chazuta ->  
+PE El Porvenir ->  
+PE Juan Guerra ->  
+PE Morales ->  
+PE San Antonio -> Municipalidad de San Antonio 1
+PE Shapaja ->  
+PE Nuevo Progreso ->  
+PE Shunte ->  
+PE Tacna -> Municipalidad Provincial de Tacna 0
+PE Calana -> Municipalidad Distrital de Calana Tacna 0
+PE Inclán ->  
+PE Palca ->  
+PE Sama ->  
+PE La Yarada los Palos ->  
+PE Cairani ->  
+PE Curibaya ->  
+PE Quilahuani ->  
+PE Ilabaya -> Municipalidad Distrital Ilabaya 0
+PE Tarata ->  
+PE Estique ->  
+PE Sitajara ->  
+PE Tarucachi ->  
+PE Tumbes -> Municipalidad Provincial De Tumbes 0
+PE La Cruz -> Concejo Municipal de Santa Cruz 6
+PE San Jacinto ->  
+PE Zorritos ->  
+PE Canoas de Punta Sal ->  
+PE Aguas Verdes ->  
+PE Papayal ->  
+PE Campoverde ->  
+PE Masisea ->  
+PE Nueva Requena ->  
+PE Raymondi ->  
+PE Tahuania ->  
+PE Padre Abad -> MUNICIPALIDAD PROVINCIAL PADRE ABAD 0
+PE Curimaná ->  
+PE Alexander Von Humboldt ->  
+
+---
