@@ -1,98 +1,77 @@
-# Temporary: third pass. CivicSearch monthly meeting counts for every place; Brazil census tables; INEP; Regionalatlas.
-import json, os, re, urllib.request, urllib.parse, time, traceback, subprocess
-OUT = "fetch/out/g4"; os.makedirs(OUT, exist_ok=True)
-UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
+# Temporary: fourth pass. Irish ETB minutes and UK ModernGov committees; Brazil census tables (apisidra) and INEP; Brazil YouTube shards 3-5.
+import json, os, re, subprocess, sys, time, traceback, urllib.request
+T0 = time.time()
+OUT = "fetch/out/g5"; os.makedirs(OUT, exist_ok=True)
+UA = "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"
 log = open(f"{OUT}/log.txt", "w")
-def get(url, n=None, timeout=300):
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.status, r.headers.get("Content-Type", ""), r.read() if n is None else r.read(n)
 def step(name, f):
     t = time.time()
     try: res = f(); log.write(f"== {name} ({time.time()-t:.0f}s)\n{res}\n\n")
     except Exception: log.write(f"== {name}\nERR {traceback.format_exc()[-800:]}\n\n")
     log.flush()
+def get(url, timeout=120):
+    with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=timeout) as r:
+        return r.read()
 
 def sidra():
-    for attempt in range(3):
-        try:
-            d = json.loads(get("https://servicodados.ibge.gov.br/api/v3/agregados", timeout=600)[2]); break
-        except Exception as e:
-            err = e; time.sleep(30)
-    else:
-        raise err
     out = []
-    for p in d:
-        for a in p.get("agregados", []):
-            nm = a.get("nome", "")
-            if re.search(r"rendimento|frequent|escola|pobreza|matr", nm, re.I) and re.search(r"2022", p.get("nome", "") + nm):
-                out.append(f"{a['id']} | {p.get('nome')} | {nm}")
-    json.dump(d, open(f"{OUT}/sidra_agregados.json", "w"))
-    return "\n".join(out[:400])
-step("sidra tables", sidra)
-def sidra_meta():
-    out = []
-    for t in re.findall(r"^(\d+) \|", open(f"{OUT}/log.txt").read(), re.M)[:60]:
+    ids = [4712, 4714, 9514, 9606, 9605, 9923] + list(range(10050, 10125)) + list(range(10280, 10300))
+    for t in ids:
         try:
-            m = json.loads(get(f"https://servicodados.ibge.gov.br/api/v3/agregados/{t}/metadados", timeout=120)[2])
-            lv = m.get("nivelTerritorial", {}).get("Administrativo", [])
-            if "N6" in lv:
-                out.append(f"{t} {m.get('nome')} | vars: " + "; ".join(f"{v['id']}:{v['nome']}" for v in m.get("variaveis", [])[:8]) +
-                           " | cls: " + "; ".join(f"{c['id']}:{c['nome']}[" + ", ".join(f"{x['id']}:{x['nome']}" for x in c.get("categorias", [])[:14]) + "]" for c in m.get("classificacoes", [])))
+            b = get(f"https://apisidra.ibge.gov.br/desctabapi.aspx?c={t}", 60).decode("utf-8", "replace")
+            ttl = re.search(r'id="lblNomeTabela"[^>]*>(.*?)<', b, re.S)
+            lv = "N6" if re.search(r"N6\b|Munic", b) else ""
+            out.append(f"{t} | {lv} | {re.sub(r'\s+', ' ', ttl.group(1)).strip() if ttl else b[:120]!r}")
+            open(f"{OUT}/sidra_{t}.html", "w").write(b) if re.search(r"rendimento|frequen|escola|domic", b, re.I) else None
         except Exception as e:
             out.append(f"{t} ERR {e}")
-        time.sleep(1)
+        time.sleep(0.5)
     return "\n".join(out)
-step("sidra metadata (municipal tables)", sidra_meta)
+step("apisidra table descriptions", sidra)
+def sidra_vals():
+    out = []
+    for name, path in [("households_4712", "t/4712/n6/all/v/all/p/all"), ("age_9514", "t/9514/n6/all/v/allxp/p/all/c2/6794/c287/93070,93084,93085,93086,93087,93088,93089,93090,93091,93092,93093,93094,93095,93096,93097,93098,93099,6653")]:
+        try:
+            b = get("https://apisidra.ibge.gov.br/values/" + path, 900); open(f"{OUT}/sidra_{name}.json", "wb").write(b)
+            out.append(f"{name} {len(b)} bytes {b[:300]!r}")
+        except Exception as e:
+            out.append(f"{name} ERR {e}")
+    return "\n".join(out)
+step("apisidra values", sidra_vals)
 
 def inep():
-    r = subprocess.run(["curl", "-v", "-sSL", "--retry", "5", "--retry-all-errors", "--retry-delay", "30", "-m", "2400", "-A", UA["User-Agent"],
+    # The runner's trust store lacks the issuing CA's intermediate certificate; fetch it from the address the
+    # server's own certificate names (Authority Information Access) and verify against it.
+    host = "download.inep.gov.br"
+    s = subprocess.run(f"echo | openssl s_client -connect {host}:443 -servername {host} 2>/dev/null | openssl x509 -noout -text", shell=True, capture_output=True, text=True).stdout
+    aia = re.search(r"CA Issuers - URI:(\S+)", s)
+    out = f"AIA {aia.group(1) if aia else None}\n"
+    if not aia: return out + s[-1500:]
+    subprocess.run(["curl", "-sSL", "-m", "60", "-o", "/tmp/int.crt", aia.group(1)])
+    pem = subprocess.run("openssl x509 -inform DER -in /tmp/int.crt 2>/dev/null || openssl x509 -in /tmp/int.crt", shell=True, capture_output=True, text=True).stdout
+    open("/tmp/bundle.pem", "w").write(open("/etc/ssl/certs/ca-certificates.crt").read() + "\n" + pem)
+    r = subprocess.run(["curl", "-sSL", "--cacert", "/tmp/bundle.pem", "--retry", "5", "--retry-all-errors", "--retry-delay", "30", "-m", "2400", "-A", UA,
                         "-o", f"{OUT}/br_sinopse_2025.zip", "-w", "%{http_code} %{size_download}",
                         "https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopse_estatistica_censo_escolar_2025.zip"], capture_output=True, text=True)
-    out = r.stdout + "\n" + r.stderr[-1500:]
+    out += r.stdout + "\n" + r.stderr[-800:]
     import zipfile
-    if os.path.exists(f"{OUT}/br_sinopse_2025.zip") and zipfile.is_zipfile(f"{OUT}/br_sinopse_2025.zip"):
-        z = zipfile.ZipFile(f"{OUT}/br_sinopse_2025.zip"); out += "\n" + "\n".join(f"{i.filename} {i.file_size}" for i in z.infolist())
-        xl = max((i for i in z.infolist() if i.filename.lower().endswith((".xlsx", ".xls"))), key=lambda i: i.file_size)
-        open(f"{OUT}/br_sinopse_2025.xlsx", "wb").write(z.read(xl))
-    if os.path.exists(f"{OUT}/br_sinopse_2025.zip"): os.remove(f"{OUT}/br_sinopse_2025.zip")
+    z = f"{OUT}/br_sinopse_2025.zip"
+    if os.path.exists(z) and zipfile.is_zipfile(z):
+        zf = zipfile.ZipFile(z); out += "\n" + "\n".join(f"{i.filename} {i.file_size}" for i in zf.infolist())
+        xl = max((i for i in zf.infolist() if i.filename.lower().endswith((".xlsx", ".xls"))), key=lambda i: i.file_size)
+        open(f"{OUT}/br_sinopse_2025" + os.path.splitext(xl.filename)[1], "wb").write(zf.read(xl))
+    if os.path.exists(z): os.remove(z)
     return out
 step("inep sinopse 2025", inep)
 
-def ra():
-    s, ct, b = get("https://regionalatlas.statistikportal.de/"); t = b.decode("utf-8", "replace")
-    out = []
-    for j in sorted(set(re.findall(r'src=["\']([^"\']+\.js)["\']', t))):
-        u = urllib.parse.urljoin("https://regionalatlas.statistikportal.de/", j)
-        try:
-            _, _, jb = get(u); jt = jb.decode("utf-8", "replace")
-            urls = sorted(set(re.findall(r'https?://[^"\'\s]+(?:MapServer|FeatureServer|rest/services|\.json)[^"\'\s]*', jt)))
-            ai = sorted(set(re.findall(r'\bAI\d{4,6}\b|\bai\d{4,6}\b', jt)))[:50]
-            out.append(f"{u} {len(jb)} urls {urls[:30]} ids {ai}")
-            if "config" in u.lower() or urls: open(f"{OUT}/ra_{os.path.basename(u)}", "wb").write(jb)
-        except Exception as e:
-            out.append(f"{u} ERR {e}")
-    return "\n".join(out)
-step("regionalatlas app", ra)
+step("ireland and uk", lambda: subprocess.run([sys.executable, "fetch/ieuk.py"], capture_output=True, text=True, timeout=7200).stderr[-2000:])
 
-def civic():
-    pl = json.loads(get("https://schools.civicsearch.org/api/get_place_list")[2])
-    res = {}; t0 = time.time()
-    for i, p in enumerate(pl):
-        q = {"keywords": "board", "lonlat": f"{p['longitude']},{p['latitude']}", "search_radius": "0", "start_date": "2000-01-01", "end_date": "2026-12-31"}
-        for attempt in range(3):
-            try:
-                d = json.loads(get("https://schools.civicsearch.org/api/search?" + urllib.parse.urlencode(q), timeout=120)[2])
-                res[p["query_id"]] = {"num_meetings": p["num_meetings"], "last_meeting_title": p["last_meeting_title"],
-                                      "locations": d.get("location_counts"), "months": d.get("matched_meeting_counts")}
-                break
-            except Exception as e:
-                res[p["query_id"]] = {"error": str(e)}; time.sleep(10)
-        time.sleep(1)
-        if time.time() - t0 > 4.5 * 3600: break
-    json.dump(res, open(f"{OUT}/civic_months.json", "w"))
-    ok = [v for v in res.values() if "months" in v]
-    full = sum(1 for v in ok if sum((v["months"] or {}).values()) == v["num_meetings"])
-    return f"{len(res)} of {len(pl)} places; {len(ok)} answered; {full} with monthly counts adding up to the place's total"
-step("civicsearch months", civic)
+def br():
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-U", "yt-dlp"], check=True)
+    o = "fetch/out/br_yt_b"; os.makedirs(o, exist_ok=True)
+    env = {**os.environ, "NORDIC_DATA": "fetch/latam", "NORDIC_DEADLINE": str(T0 + 5.3 * 3600), "EXTRA_Q_BR": "câmara municipal de {} {region} sessão ordinária"}
+    r = subprocess.run([sys.executable, "fetch/nordic_youtube.py", o, "BR:3/6", "BR:4/6", "BR:5/6"], capture_output=True, text=True, timeout=20500, env=env)
+    open(f"{o}/log.txt", "w").write(r.stdout[-20000:] + "\n---\n" + r.stderr[-3000:])
+    return f"exit {r.returncode}"
+step("brazil youtube 3-5", br)
 log.close()
