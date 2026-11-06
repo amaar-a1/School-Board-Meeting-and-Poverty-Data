@@ -77,6 +77,17 @@ RULES = {"BR": (re.compile(r"comiss[ãa]o (permanente )?de educa[çc][ãa]o|educ
                 re.compile(r"live session|entrevista|not[íi]cias|resumo|podcast|programa|campanha|candidat|anivers[áa]rio|festa|hino|desfile|"
                            r"homenagem|solene|culto|missa|show|jogo|futebol|sess[ãa]o de fotos", re.I))}
 
+# Mexico: the town council (cabildo, ayuntamiento) and its education committee (comisión edilicia de educación).
+# Some titles come back machine-translated into English. Other committees' sessions don't count as council
+# meetings, and municipal election councils (consejo municipal electoral) aren't the town council.
+RULES["MX"] = (re.compile(r"comisi[óo]n (edilicia )?(de |del )?[\"“]?((salud|cultura|deporte|ciencia)s? y )?educaci[óo]n|educaci[óo]n.*comisi[óo]n|"
+                          r"education(al)? (committee|commission)|(committee|commission) (on|of|for) education", re.I),
+               re.compile(r"sesi[óo]n|session", re.I),
+               re.compile(r"^(?!.*(comisi[óo]n|comit[ée]|consejo|committee|commission|board|electoral)).*(sesi[óo]n (ordinaria|extraordinaria|solemne|p[úu]blica|abierta|"
+                          r"de cabildo|del? (h\.? )?(cabildo|ayuntamiento|concejo)|n[°º.]|\d)|\d+\S* sesi[óo]n|"
+                          r"(ordinary|extraordinary|solemn|open|public) (town |city )?(council )?(session|meeting)|council (session|meeting)|cabildo abierto)", re.I),
+               re.compile(NOT_T.pattern + r"|consejo municipal electoral|consejo municipal \d|junta municipal \d|electoral", re.I))
+
 
 def meetings(cc, did):
     d = os.path.join(IN, DIRS[cc], "youtube")
@@ -104,7 +115,16 @@ def meetings(cc, did):
 # Channels checked by hand and found to be another place's (by channel URL). The search matched on the name, and
 # many of these names exist in other Spanish-speaking countries too, or in both Chile and Colombia.
 NOT_CHANNELS = {
-    "MX": set(), "BR": set(),
+    "MX": {"https://www.youtube.com/channel/UCJ_QgHV7jNH5PWK-hD3ZigA",    # Santa Ana, Costa Rica ("Gobierno Local"), not Oaxaca's
+           "https://www.youtube.com/channel/UC_NzgVf7xT5SWA3dsBUOh6g",    # Coyotepec, Estado de México (2019-2021 term), not Puebla's
+           "https://www.youtube.com/channel/UC-RQwxdFz9c8an1SthCk27A",    # Tamazula de Gordiano, Jalisco, not Tamazula, Durango
+           "https://www.youtube.com/channel/UCfm4ANhQp5dTff6rmh7RJzQ",    # Santa Cruz de La Palma (Spain), not Santa Cruz, Sonora
+           "https://www.youtube.com/channel/UCKoEOfBTuO570QHJ_2NpdCw",    # Esperanza, Santa Fe (Argentina), not Puebla's
+           "https://www.youtube.com/channel/UCK-_PQD2Ey6dvQmphdsqlzg",    # Atizapán de Zaragoza's council, not Atizapán's
+           "https://www.youtube.com/channel/UC2DrRwc-AyOPhOUjizUFJMA",    # election boards, not town councils: Actopan (Veracruz),
+           "https://www.youtube.com/channel/UC9rp_w5KZKax5MOoDDxKDAw",    # Chiconcuac
+           "https://www.youtube.com/channel/UCn1zNwM4qlnZL01gFzbwgDw"},   # and Villa Victoria
+    "BR": set(),
     "CL": {"https://www.youtube.com/channel/UC70nQc3caJyhIQQHlwBb_RA",    # La Molina, Lima (Peru), not Molina
            "https://www.youtube.com/channel/UCgvUIPWaySeDAGe-oUTSDUA",    # La Unión, Costa Rica ("Concejo de Distrito")
            "https://www.youtube.com/channel/UCQgCHXXxl4IyPg0GEULz2RA",    # San Carlos, Costa Rica
