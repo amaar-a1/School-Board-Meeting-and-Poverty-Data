@@ -1,0 +1,707 @@
+unicipal Girardot 0
+CO Granada -> Concejo Municipal Granada Meta 0
+CO Guachetá -> Prensa Concejo Guacheta 0
+CO Guaduas -> CONCEJO MUNICIPAL DE GUADUAS  0
+CL Las Condes -> Municipalidad de Las Condes 1
+CO Guasca -> Concejo Municipal Guasca Cundinamarca 0
+CO Guataquí ->  
+CO Guatavita -> Concejo Municipal de Guatavita 0
+CO Guayabal De Síquima ->  
+CO Guayabetal ->  
+CO Gutiérrez ->  
+CL Lo Barnechea -> I Municipalidad Lo Barnechea 0
+CO Jerusalén ->  
+CL Lo Espejo -> Municipalidad de Lo Espejo 0
+CO Junín -> Honorable Concejo Deliberante de Junín 0
+CO La Calera -> Concejo Municipal La Calera 0
+CL Lo Prado -> Municipalidad Lo Prado 0
+CO La Mesa ->  
+CO La Palma ->  
+CO La Peña ->  
+CO La Vega ->  
+CO Lenguazaque ->  
+CO Machetá ->  
+CL Macul -> Municipalidad de Macul 2
+CL Maipú ->  
+CL Ñuñoa -> Municipalidad de Ñuñoa 0
+CL Pedro Aguirre Cerda ->  
+CO Madrid -> Concejo Madrid Cundinamarca 0
+CL Peñalolén ->  
+CO Manta ->  
+CO Medina ->  
+CO Mosquera ->  
+CO Nariño -> NARIÑO GOBERNACION 0
+CO Nemocón ->  
+CL Providencia -> Municipalidad de Providencia 0
+CO Nilo ->  
+CO Nimaima ->  
+CO Nocaima -> Alcaldia Nocaima 0
+CL Pudahuel -> Ilustre Municipalidad de Pudahuel 0
+CO Venecia -> Concejo Venecia Antioquia 0
+CO Pacho ->  
+CO Paime ->  
+CO Pandi ->  
+CO Paratebueno ->  
+CL Quilicura -> Municipalidad Quilicura 0
+CO Pasca -> Alcaldía Pasca 0
+CO Puerto Salgar ->  
+CO Pulí ->  
+CO Quebradanegra ->  
+CO Quetame ->  
+CL Quinta Normal -> Municipalidad de Quinta Normal 0
+CO Quipile ->  
+CO Apulo -> Prensa Alcaldía Apulo 0
+CO Ricaurte ->  
+CO San Antonio Del Tequendama ->  
+CO San Bernardo ->  
+CL Recoleta -> Recoleta Televisión Comunal 0
+CO San Cayetano -> Honorable Concejo Deliberante de San Cayetano 0
+CO San Francisco ->  
+CO San Juan De Rioseco ->  
+CO Sasaima ->  
+CL Renca -> Municipalidad de Renca 0
+CO Sesquilé -> Alcaldía Sesquilé 0
+CL San Joaquín ->  
+CO Sibaté -> Concejo Municipal de Sibaté 1
+CO Silvania ->  
+CO Simijaca ->  
+CL San Miguel -> Municipalidad de San Miguel 0
+CO Soacha -> Concejo Municipal de Soacha 5
+CL San Ramón -> Municipalidad de San Ramón 1
+CO Sopó -> Concejo Municipal de Sopó 24
+CL Vitacura -> Municipalidad de Vitacura 0
+CO Subachoque -> Concejo Subachoque Municipal 0
+CL Puente Alto -> Municipalidad de Puente Alto 0
+CO Suesca -> Alcaldía Suesca 0
+CO Supatá ->  
+CL Pirque -> Municipalidad de Pirque 0
+CO Susa -> Concejo Municipal de Susa 0
+CL San José De Maipo -> Ilustre Municipalidad de San José de Maipo 0
+CO Sutatausa ->  
+CL Colina -> Muni Colina 0
+CO Tabio -> Concejo Municipal De Tabio 1
+CO Tausa -> CONCEJO MUNICIPAL DE TAUSA 0
+CL Lampa -> Municipalidad de Lampa 0
+CO Tena ->  
+CL Tiltil ->  
+CL San Bernardo ->  
+CL Buin -> Concejo Municipal de Buin 0
+CO Tenjo -> Concejo Municipal de Tenjo 3
+CL Calera De Tango -> Muni Calera de Tango 0
+CO Tibacuy ->  
+CL Paine -> Videos Web - Il. Municipalidad de Torres del Paine 0
+CO Tibirita ->  
+CO Tocaima ->  
+CO Tocancipá -> CONCEJO MUNICIPAL DE TOCANCIPÁ 0
+CL Melipilla -> Ilustre Municipalidad de Melipilla 0
+CO Topaipí ->  
+CO Ubalá ->  
+CL Alhué -> I. Municipalidad de Alhué 1
+CO Ubaque -> concejo @concejo-ubaque-cundinamarca.gov.co 0
+CO Villa De San Diego De Ubaté ->  
+CL Curacaví -> Ilustre Municipalidad de Curacaví 0
+CO Une ->  
+CO Útica ->  
+CO Vergara ->  
+CL María Pinto -> Actas Concejo I. Municipal María Pinto 0
+CO Vianí ->  
+CL San Pedro -> Municipalidad de San Pedro de Atacama 0
+CO Villagómez ->  
+CO Villapinzón ->  
+CL Talagante -> Muni Talagante 0
+CL El Monte ->  
+CO Villeta -> CONCEJO MUNICIPAL DE VILLETA 0
+CO Viotá ->  
+CO Yacopí ->  
+CO Zipacón ->  
+CL Isla De Maipo -> Municipalidad Isla de Maipo 0
+CL Padre Hurtado ->  
+CO Zipaquirá -> Concejo zipaquirá 1
+CL Peñaflor -> Municipalidad de Peñaflor 0
+CO Quibdó ->  
+CL Valdivia ->  
+CO Acandí -> Alcaldía de Acandí 0
+CL Corral -> Municipalidad Corral 0
+CO Alto Baudó -> Alcaldia Alto Baudo 0
+CL Lanco -> Concejos - Ilustre Municipalidad de Lanco 0
+CO Atrato -> Concejo Municipal de El Carmen de Atrato, Chocó 0
+CL Los Lagos -> Concejo Municipal I. Municipalidad de Los Lagos 0
+CO Bagadó ->  
+CL Máfil -> Municipalidad de Máfil 0
+CO Bahía Solano -> Alcaldía de Bahía Solano 0
+CO Bajo Baudó ->  
+CO Bojayá ->  
+CL Mariquina -> Municipalidad de Mariquina 0
+CO El Cantón Del San Pablo ->  
+CO Carmen Del Darién ->  
+CL Paillaco ->  Municipalidad de Paillaco 0
+CO Cértegui ->  
+CO Condoto -> concejo munipal de condoto 0
+CO El Carmen De Atrato -> Concejo Municipal de El Carmen de Atrato, Chocó 0
+CL Panguipulli -> I. Municipalidad de Panguipulli 0
+CO El Litoral Del San Juan -> MUNICIPIO EL LITORAL DEL SAN JUAN 0
+CO Istmina ->  
+CO Juradó ->  
+CO Lloró ->  
+CO Medio Atrato ->  
+CO Medio Baudó ->  
+CL La Unión -> Municipalidad de La Union 0
+CO Medio San Juan ->  
+CO Nóvita ->  
+CL Futrono -> Ilustre Municipalidad de Futrono  0
+CO Nuquí ->  
+CO Río Iró ->  
+CO Río Quito ->  
+CL Lago Ranco -> Informática Municipalidad Lago Ranco 0
+CO Riosucio -> Concejo Riosucio Caldas 0
+CO San José Del Palmar ->  
+CL Río Bueno -> Ilustre Municipalidad de Río Bueno 0
+CO Sipí ->  
+CO Tadó ->  
+CO Unguía ->  
+CO Unión Panamericana ->  
+CL Arica -> Municipalidad de Arica 3
+CO Neiva -> Concejo de Neiva 0
+CL Camarones -> Municipalidad de Camarones 0
+CO Acevedo ->  
+CO Agrado ->  
+CL Putre -> Ilustre Municipalidad de Putre 0
+CO Aipe -> AIPE HUILA ALCALDIA 0
+CL General Lagos ->  
+CO Algeciras ->  
+CO Altamira -> Concejo Altamira Huila 0
+CL Chillán -> Municipalidad de Chillán 0
+CO Baraya -> Concejo de Baraya 0
+CO Campoalegre ->  
+CL Bulnes -> Municipalidad de Bulnes  0
+CO Colombia ->  
+CL Chillán Viejo ->  
+CO Elías ->  
+CO Garzón -> CONCEJO MUNICIPAL GARZÓN HUILA 0
+CO Gigante ->  
+CL El Carmen -> Municipalidad de El Carmen 0
+CO Guadalupe ->  
+CO Hobo ->  
+CL Pemuco -> Municipalidad de Pemuco 0
+CO Íquira ->  
+CO Isnos ->  
+CO La Argentina ->  
+CL Pinto -> Ilustre Municipalidad de Pinto 0
+CO La Plata -> Concejo Deliberante La Plata 0
+CO Nátaga ->  
+CO Oporapa ->  
+CO Paicol ->  
+CL Quillón -> Municipalidad Quillon 0
+CO Palermo -> Alcaldia Palermo 0
+CO Palestina ->  
+CO Pital ->  
+CL San Ignacio -> Municipalidad de San ignacio 0
+CO Pitalito -> Concejo Pitalito 0
+CL Yungay -> Municipalidad de Yungay 0
+CO Rivera ->  
+CO Saladoblanco ->  
+CL Quirihue -> Municipalidad de Quirihue 0
+CO San Agustín ->  
+CL Cobquecura ->  
+CO Santa María ->  
+CO Suaza ->  
+CL Coelemu -> Comunicaciones Municipalidad de Coelemu 0
+CO Tarqui ->  
+CO Tesalia ->  
+CO Tello ->  
+CL Ninhue -> Municipalidad Ninhue 0
+CO Teruel ->  
+CO Timaná ->  
+CO Villavieja ->  
+CL Portezuelo -> Municipalidad de Portezuelo 0
+CO Yaguará ->  
+CL Ránquil -> Municipalidad de Ránquil 0
+CO Riohacha -> Concejo Distrital Riohacha 0
+CL Treguaco ->  
+CO Albania -> Alcaldía Albania Santander 0
+CO Barrancas -> Alcaldía Municipal de Barrancas 0
+CO Dibulla -> Concejo Dibulla Guajira 0
+CO Distracción ->  
+CL San Carlos -> Municipalidad San Carlos 0
+CO El Molino ->  
+CL Coihueco ->  
+CO Fonseca ->  
+CO Hatonuevo ->  
+CL Ñiquén -> Ilustre Municipalidad de Ñiquén 0
+CO La Jagua Del Pilar -> BUZON DEL MUNICIPIO LA JAGUA DEL PILAR CONTACTENOS 0
+CL San Fabián -> Municipalidad de San Fabián 0
+CO Maicao -> CONCEJO MAICAO 0
+CO Manaure ->  
+CL San Nicolás -> Municipalidad de San Nicolás 0
+CO San Juan Del Cesar ->  
+CO Uribia ->  
+CO Urumita ->  
+CO Villanueva -> Concejo Villanueva Casanare 0
+CO Santa Marta -> Concejo Distrital de Santa Marta  0
+CO Algarrobo ->  
+CO Aracataca ->  
+CO Ariguaní ->  
+CO Cerro De San Antonio ->  
+CO Chivolo ->  
+CO Ciénaga -> Concejo De Ciénaga Magdalena 0
+CO Concordia -> Concejo Deliberante Concordia 0
+CO El Banco ->  
+CO El Piñón ->  
+CO El Retén ->  
+CO Fundación ->  
+CO Guamal ->  
+CO Nueva Granada ->  
+CO Pedraza ->  
+CO Pijiño Del Carmen ->  
+CO Pivijay ->  
+CO Plato -> alcaldía Municipal Plato Magdalena 0
+CO Puebloviejo ->  
+CO Remolino ->  
+CO Sabanas De San Ángel ->  
+CO Salamina ->  
+CO San Sebastián De Buenavista ->  
+CO San Zenón ->  
+CO Santa Ana ->  
+CO Santa Bárbara De Pinto ->  
+CO Sitionuevo ->  
+CO Tenerife ->  
+CO Zapayán ->  
+CO Zona Bananera ->  
+CO Villavicencio -> Concejo de Villavicencio - Oficial 0
+CO Acacías -> Alcaldía Acacías 0
+CO Barranca De Upía ->  
+CO Cabuyaro ->  
+CO Castilla La Nueva -> Concejo Municipal de Castilla La Nueva 0
+CO Cubarral ->  
+CO Cumaral -> Concejo Municipal De Cumaral 0
+CO El Calvario ->  
+CO El Castillo -> Concejo Municipal El Castillo Meta 0
+CO El Dorado ->  
+CO Fuente De Oro ->  
+CO Granada -> Concejo Municipal Granada Meta 0
+CO Guamal ->  
+CO Mapiripán ->  
+CO Mesetas ->  
+CO La Macarena ->  
+CO Uribe -> Concejo Uribe Med 0
+CO Lejanías ->  
+CO Puerto Concordia ->  
+CO Puerto Gaitán -> Concejo de Puerto Gaitán 1
+CO Puerto López ->  
+CO Puerto Lleras ->  
+CO Puerto Rico ->  
+CO Restrepo -> Concejo Municipal de Restrepo Meta 0
+CO San Carlos De Guaroa ->  
+CO San Juan De Arama ->  
+CO San Juanito ->  
+CO San Martín -> Concejo Deliberante de San Martín de los Andes 0
+CO Vistahermosa ->  
+CO Pasto -> Concejo Municipal de Pasto Oficial 0
+CO Albán ->  
+CO Aldana ->  
+CO Ancuya ->  
+CO Arboleda ->  
+CO Barbacoas ->  
+CO Belén -> Alcaldia Belen de Umbria 0
+CO Buesaco ->  
+CO Colón -> Municipio de Colón 0
+CO Consacá -> Alcaldía Municipio de Consacá 0
+CO Contadero ->  
+CO Córdoba -> Concejo Deliberante de Córdoba 1
+CO Cuaspud Carlosama ->  
+CO Cumbal ->  
+CO Cumbitara ->  
+CO Chachagüí -> Concejo Municipal de Chachagui 1
+CO El Charco ->  
+CO El Peñol ->  
+CO El Rosario -> Concejo Municipal de Rosario 145
+CO El Tablón De Gómez ->  
+CO El Tambo ->  
+CO Funes ->  
+CO Guachucal ->  
+CO Guaitarilla ->  
+CO Gualmatán ->  
+CO Iles ->  
+CO Imués ->  
+CO Ipiales -> CONCEJO MUNICIPAL IPIALES NARIÑO 0
+CO La Cruz -> Concejo Municipal de Santa Cruz 10
+CO La Florida ->  
+CO La Llanada ->  
+CO La Tola ->  
+CO La Unión -> Concejo La Unión 3
+CO Leiva ->  
+CO Linares ->  
+CO Los Andes -> Concejo Deliberante de San Martín de los Andes 0
+CO Magüí ->  
+CO Mallama ->  
+CO Mosquera ->  
+CO Nariño -> NARIÑO GOBERNACION 0
+CO Olaya Herrera ->  
+CO Ospina ->  
+CO Francisco Pizarro ->  
+CO Policarpa ->  
+CO Potosí ->  
+CO Providencia ->  
+CO Puerres ->  
+CO Pupiales ->  
+CO Ricaurte ->  
+CO Roberto Payán ->  
+CO Samaniego -> Alcaldia de Samaniego 0
+CO Sandoná -> Alcaldía de Sandoná 0
+CO San Bernardo ->  
+CO San Lorenzo -> Alcaldía Ciudadana de San Lorenzo 1
+CO San Pablo ->  
+CO San Pedro De Cartago ->  
+CO Santa Bárbara -> Concejo Municipal Santa Bárbara 0
+CO Santacruz ->  
+CO Sapuyes -> Alcaldia Sapuyes Narino 0
+CO Taminango ->  
+CO Tangua ->  
+CO San Andrés De Tumaco ->  
+CO Túquerres ->  
+CO Yacuanquer ->  
+CO San José De Cúcuta -> Alcaldía San José de Cúcuta 0
+CO Ábrego ->  
+CO Arboledas ->  
+CO Bochalema ->  
+CO Bucarasica ->  
+CO Cácota ->  
+CO Cáchira ->  
+CO Chinácota ->  
+CO Chitagá ->  
+CO Convención ->  
+CO Cucutilla -> Gobierno Digital Municipio de Cucutilla 0
+CO Durania ->  
+CO El Carmen -> Alcaldía de El Carmen 0
+CO El Tarra ->  
+CO El Zulia ->  
+CO Gramalote ->  
+CO Hacarí ->  
+CO Herrán ->  
+CO Labateca ->  
+CO La Esperanza -> Concejo Municipal de Esperanza 10
+CO La Playa ->  
+CO Los Patios ->  
+CO Lourdes ->  
+CO Mutiscua ->  
+CO Ocaña ->  
+CO Pamplona ->  
+CO Pamplonita -> ALCALDÍA MUNICIPAL DE PAMPLONITA  0
+CO Puerto Santander -> Alcaldía Puerto Santander 0
+CO Ragonvalia ->  
+CO Salazar ->  
+CO San Calixto ->  
+CO San Cayetano -> Honorable Concejo Deliberante de San Cayetano 0
+CO Santiago -> Alcaldia de Santiago 0
+CO Sardinata ->  
+CO Silos ->  
+CO Teorama ->  
+CO Tibú -> Alcaldía de Tibú 0
+CO Toledo ->  
+CO Villa Caro ->  
+CO Villa Del Rosario -> Alcaldía de Villa del Rosario 0
+CO Armenia -> Sesiones Concejo Municipal de Armenia Antioquia 0
+CO Buenavista ->  
+CO Calarcá -> Concejo Municipal de Calarcá 0
+CO Circasia ->  
+CO Córdoba -> Concejo Deliberante de Córdoba 1
+CO Filandia ->  
+CO Génova ->  
+CO La Tebaida -> Alcaldía de La Tebaida 0
+CO Montenegro ->  
+CO Pijao ->  
+CO Quimbaya -> Alcaldía de Quimbaya 0
+CO Salento ->  
+CO Pereira -> Concejo Pereira 0
+CO Apía ->  
+CO Balboa ->  
+CO Belén De Umbría -> Alcaldia Belen de Umbria 0
+CO Dosquebradas -> Concejo Municipal de Dosquebradas  0
+CO Guática ->  
+CO La Celia ->  
+CO La Virginia -> Concejo La Virginia 0
+CO Marsella -> Concejo Municipal Marsella Risaralda 0
+CO Mistrató ->  
+CO Pueblo Rico ->  
+CO Quinchía ->  
+CO Santa Rosa De Cabal -> Concejo Santa Rosa de Cabal 0
+CO Santuario ->  
+CO Bucaramanga -> Concejo Bucaramanga videos de las Actas 0
+CO Aguada ->  
+CO Albania -> Alcaldía Albania Santander 0
+CO Aratoca ->  
+CO Barbosa -> CONCEJO DE BARBOSA ANTIOQUIA 1
+CO Barichara -> Concejo Barichara Santander 0
+CO Barrancabermeja -> Concejo Barrancabermeja 3
+CO Betulia ->  
+CO Bolívar -> Honorable Concejo Deliberante Bolívar 0
+CO Cabrera ->  
+CO California ->  
+CO Capitanejo ->  
+CO Carcasí ->  
+CO Cepitá ->  
+CO Cerrito -> Prensa Concejo Municipal El Cerrito - Valle 0
+CO Charalá ->  
+CO Charta ->  
+CO Chima ->  
+CO Chipatá ->  
+CO Cimitarra -> Municipio Cimitarra Santander 0
+CO Concepción ->  
+CO Confines ->  
+CO Contratación ->  
+CO Coromoro ->  
+CO Curití ->  
+CO El Carmen De Chucuri -> Alcaldía de El Carmen de Chucuri, Santander 0
+CO El Guacamayo ->  
+CO El Peñón ->  
+CO El Playón -> Alcaldía de El Playón 0
+CO Encino ->  
+CO Enciso ->  
+CO Florián ->  
+CO Floridablanca ->  
+CO Galán ->  
+CO Gámbita ->  
+CO Girón ->  
+CO Guaca ->  
+CO Guadalupe ->  
+CO Guapotá ->  
+CO Guavatá ->  
+CO Güepsa ->  
+CO Hato ->  
+CO Jesús María -> Concejo Deliberante de Jesús María 0
+CO Jordán ->  
+CO La Belleza ->  
+CO Landázuri -> Alcaldía Landázuri Santander 0
+CO La Paz -> Concejo Municipal de La Paz 0
+CO Lebrija ->  
+CO Los Santos -> Concejo de Los Santos 0
+CO Macaravita ->  
+CO Málaga ->  
+CO Matanza -> Honorable Concejo Deliberante La Matanza 0
+CO Mogotes ->  
+CO Molagavita ->  
+CO Ocamonte ->  
+CO Oiba -> Municipio de Oiba Santander 0
+CO Onzaga ->  
+CO Palmar ->  
+CO Palmas Del Socorro ->  
+CO Páramo -> Concejo Municipal Páramo Santander 0
+CO Piedecuesta -> Concejo Municipal de Piedecuesta 0
+CO Pinchote ->  
+CO Puente Nacional -> CONCEJO PUENTE NACIONAL 0
+CO Puerto Parra ->  
+CO Puerto Wilches ->  
+CO Rionegro -> Concejo Municipal de Rionegro  1
+CO Sabana De Torres -> Municipio de Sabana de Torres 0
+CO San Andrés ->  
+CO San Benito ->  
+CO San Gil -> Concejo San Gil 0
+CO San Joaquín ->  
+CO San José De Miranda ->  
+CO San Miguel ->  
+CO San Vicente De Chucurí -> Alcaldía San Vicente de Chucurí 0
+CO Santa Bárbara -> Concejo Municipal Santa Bárbara 0
+CO Santa Helena Del Opón ->  
+CO Simacota ->  
+CO Socorro ->  
+CO Suaita ->  
+CO Sucre -> Municipio del Cantón Sucre 0
+CO Suratá ->  
+CO Tona ->  
+CO Valle De San José ->  
+CO Vélez ->  
+CO Vetas ->  
+CO Villanueva -> Concejo Villanueva Casanare 0
+CO Zapatoca ->  
+CO Sincelejo -> Concejo de Sincelejo 0
+CO Buenavista ->  
+CO Caimito ->  
+CO Colosó ->  
+CO Corozal ->  
+CO Coveñas ->  
+CO Chalán ->  
+CO El Roble ->  
+CO Galeras ->  
+CO Guaranda -> MUNICIPIO DE GUARANDA 1
+CO La Unión -> Concejo La Unión 3
+CO Los Palmitos ->  
+CO Majagual ->  
+CO Morroa ->  
+CO Ovejas ->  
+CO Palmito ->  
+CO Sampués -> CONCEJO MUNICIPAL DE SAMPUÉS SUCRE  0
+CO San Benito Abad ->  
+CO San Juan De Betulia ->  
+CO San Marcos -> Alcaldia San Marcos 0
+CO San Onofre ->  
+CO San Pedro -> Concejo Municipal San Pedro 0
+CO San Luis De Sincé ->  
+CO Sucre -> Municipio del Cantón Sucre 0
+CO Santiago De Tolú ->  
+CO San José De Toluviejo ->  
+CO Ibagué -> CONCEJO DE IBAGUÉ 0
+CO Alpujarra ->  
+CO Alvarado ->  
+CO Ambalema ->  
+CO Anzoátegui -> concejo anzoategui tolima 0
+CO Armero ->  
+CO Ataco ->  
+CO Cajamarca ->  
+CO Carmen De Apicalá ->  
+CO Casabianca ->  
+CO Chaparral -> Sistemas y TIC Alcaldía de Chaparral 0
+CO Coello ->  
+CO Coyaima ->  
+CO Cunday ->  
+CO Dolores -> Concejo Deliberante de Villa Dolores 0
+CO Espinal -> Concejo De El Espinal 1
+CO Falan ->  
+CO Flandes -> Concejo Municipal de Flandes Tolima 0
+CO Fresno ->  
+CO Guamo ->  
+CO Herveo ->  
+CO Honda ->  
+CO Icononzo ->  
+CO Lérida -> Alcaldía Municipal de Lérida - Tolima  0
+CO Líbano -> Concejo Municipal Libano Tolima 0
+CO San Sebastián De Mariquita -> Alcaldía San Sebastián de Mariquita 0
+CO Melgar ->  
+CO Murillo ->  
+CO Natagaima ->  
+CO Ortega ->  
+CO Palocabildo -> Concejo Palocabildo Tolima 0
+CO Piedras ->  
+CO Planadas ->  
+CO Prado -> Concejo Mpal Prado Tol 0
+CO Purificación ->  
+CO Rioblanco -> Alcaldía Municipal Rioblanco - Tolima 0
+CO Roncesvalles ->  
+CO Rovira ->  
+CO Saldaña -> Alcaldia de Saldana 0
+CO San Antonio -> Concejo Deliberante de San Antonio Oeste 0
+CO San Luis -> Concejo Deliberante San Luis 1
+CO Santa Isabel ->  
+CO Suárez ->  
+CO Valle De San Juan -> Municipio Valle de San Juan – Tolima  0
+CO Venadillo ->  
+CO Villahermosa ->  
+CO Villarrica -> Concejo Municipal Villarrica 0
+CO Cali -> Concejo de Cali 0
+CO Alcalá ->  
+CO Andalucía -> Concejo Municipal Andalucía Valle 0
+CO Ansermanuevo -> Equipo de Comunicaciones - Alcaldía de Ansermanuevo 0
+CO Argelia -> Concejo Municipal Argelia de María, Antioquia 0
+CO Bolívar -> Honorable Concejo Deliberante Bolívar 0
+CO Buenaventura -> CONCEJO DISTRITAL DE BUENAVENTURA 0
+CO Guadalajara De Buga -> Alcaldía de Guadalajara de Buga 0
+CO Bugalagrande -> Alcaldía de Bugalagrande 0
+CO Caicedonia ->  
+CO Calima ->  
+CO Candelaria -> CONCEJO MUNICIPAL DE CANDELARIA 0
+CO Cartago -> Concejo de Cartago 0
+CO Dagua -> Concejo de Dagua-valle 0
+CO El Águila ->  
+CO El Cairo ->  
+CO El Cerrito -> Prensa Concejo El Cerrito V 0
+CO El Dovio ->  
+CO Florida ->  
+CO Ginebra ->  
+CO Guacarí -> Concejo De Guacari 0
+CO Jamundí -> CONCEJO JAMUNDI 0
+CO La Cumbre ->  
+CO La Unión -> Concejo La Unión 3
+CO La Victoria -> Alcaldia Municipal de La Victoria Valle del Cauca 0
+CO Obando -> Concejo de Obando Valle 0
+CO Palmira -> CONCEJO DE PALMIRA 1
+CO Pradera ->  
+CO Restrepo -> Concejo Municipal de Restrepo Meta 0
+CO Riofrío -> Alcaldía Riofrío Valle del Cauca - Oficial 0
+CO Roldanillo ->  
+CO San Pedro -> Concejo Municipal San Pedro 0
+CO Sevilla ->  
+CO Toro ->  
+CO Trujillo ->  
+CO Tuluá -> Concejo Municipal Tuluá 0
+CO Ulloa ->  
+CO Versalles -> Alcaldía Municipal de Versalles 0
+CO Vijes ->  
+CO Yotoco -> Alcaldía de Yotoco Valle del Cauca 0
+CO Yumbo -> Concejo Mpal De Yumbo 0
+CO Zarzal -> Concejo Municipal de Zarzal Valle 0
+CO Arauca ->  
+CO Arauquita ->  
+CO Cravo Norte ->  
+CO Fortul ->  
+CO Puerto Rondón ->  
+CO Saravena -> Alcaldía de Saravena 0
+CO Tame -> CONCEJO MUNICIPAL DE TAME 0
+CO Yopal -> Concejo Municipal de Yopal 1
+CO Aguazul -> Concejo Municipal De Aguazul Casanare 0
+CO Chámeza ->  
+CO Hato Corozal ->  
+CO La Salina ->  
+CO Maní -> CONCEJO MUNICIPAL DE MANI 0
+CO Monterrey -> Concejo Monterrey 0
+CO Nunchía ->  
+CO Orocué ->  
+CO Paz De Ariporo -> Concejo Paz de Ariporo 0
+CO Pore ->  
+CO Recetor ->  
+CO Sabanalarga -> Alcaldía de Sabanalarga 0
+CO Sácama ->  
+CO San Luis De Palenque ->  
+CO Támara ->  
+CO Tauramena ->  
+CO Trinidad ->  
+CO Villanueva -> Concejo Villanueva Casanare 0
+CO Mocoa ->  
+CO Colón ->  
+CO Orito -> concejomunicipal orito-putumayo 0
+CO Puerto Asís -> Concejo Puerto Asís 0
+CO Puerto Caicedo ->  
+CO Puerto Guzmán ->  
+CO Puerto Leguízamo ->  
+CO Sibundoy ->  
+CO San Francisco ->  
+CO San Miguel ->  
+CO Santiago -> Alcaldia de Santiago 0
+CO Valle Del Guamuez ->  
+CO Villagarzón ->  
+CO San Andrés ->  
+CO Providencia ->  
+CO Leticia ->  
+CO El Encanto ->  
+CO La Chorrera -> Alcaldía De La Chorrera 0
+CO La Pedrera ->  
+CO La Victoria -> Alcaldia Municipal de La Victoria Valle del Cauca 0
+CO Mirití - Paraná ->  
+CO Puerto Alegría ->  
+CO Puerto Arica ->  
+CO Puerto Nariño ->  
+CO Puerto Santander -> Alcaldía Puerto Santander 0
+CO Tarapacá ->  
+CO Inírida ->  
+CO Barrancominas ->  
+CO Mapiripana ->  
+CO San Felipe ->  
+CO Puerto Colombia -> Alcaldía de Puerto Colombia 0
+CO La Guadalupe ->  
+CO Cacahual ->  
+CO Pana Pana ->  
+CO Morichal ->  
+CO San José Del Guaviare ->  
+CO Calamar ->  
+CO El Retorno ->  
+CO Miraflores ->  
+CO Mitú ->  
+CO Carurú ->  
+CO Pacoa ->  
+CO Taraira ->  
+CO Papunahua ->  
+CO Yavaraté ->  
+CO Puerto Carreño ->  
+CO La Primavera ->  
+CO Santa Rosalía ->  
+CO Cumaribo ->  
+
+---
