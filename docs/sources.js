@@ -237,6 +237,28 @@ window.SOURCES = [
     note: "Built by data-prep/build_latam.py. Municipalities are matched to borders by name within their state."
   },
   {
+    only: "Spain",
+    group: "Spain: municipalities, child poverty and population",
+    items: [
+      { title: "Child poverty: INE, Atlas de Distribución de Renta de los Hogares (ADRH), relative poverty thresholds by sex and age group (one table per province), people under 18 below 60% of the median income per consumption unit, 2019–2024", url: "https://www.ine.es/dynt3/inebase/index.htm?padre=12385&capsel=12384" },
+      { title: "Population and share under 18: INE, ADRH demographic indicators (one table per province), 2024", url: "https://www.ine.es/dynt3/inebase/index.htm?padre=12385&capsel=12384" },
+      { title: "Borders: geoBoundaries (gbOpen) Spain ADM2 (provinces) and ADM3 (municipalities), simplified further with mapshaper", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings (stand-in): each town council's YouTube channel (in the “Meetings source” column), searched for municipalities of 5,000+ people", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/build_latam.py. Municipalities are matched to borders by name within their province (either form of a two-language name)."
+  },
+  {
+    only: "Peru",
+    group: "Peru: districts, poverty and population",
+    items: [
+      { title: "Poverty and population: INEI, Mapa de pobreza monetaria provincial y distrital 2018, Anexo 1 (95% confidence interval of the monetary poverty rate and 2018 population by district)", url: "https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1718/Libro.pdf" },
+      { title: "Borders: district boundaries (INEI), as GeoJSON by Juan Eladio Sánchez Rosas (peru-geojson)", url: "https://github.com/juaneladio/peru-geojson" },
+      { title: "Meetings (stand-in): each council's YouTube channel, checked by hand (in the “Meetings source” column)", url: "https://www.youtube.com/" },
+      { title: "Checked but not used: the Ministry of Education's enrollment statistics (ESCALE) and the national open data portal, which refuse automated downloads", url: "https://escale.minedu.gob.pe/" }
+    ],
+    note: "Built by data-prep/build_latam.py. Districts are matched to borders by their INEI code (ubigeo); 50 have no border in the file."
+  },
+  {
     only: "Mexico",
     group: "Mexico: municipalities, poverty and enrollment",
     items: [

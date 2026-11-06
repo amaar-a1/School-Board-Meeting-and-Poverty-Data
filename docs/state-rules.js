@@ -220,6 +220,28 @@ window.STATE_RULES = {
     ],
     note: "Rules differ by municipality. Check its organic law and chamber's internal rules before relying on this."
   },
+  spain: {
+    title: "Rules for town council (pleno) meetings",
+    checked: "November 6, 2026",
+    laws: [
+      { state: "Spain", covers: "Town councils (plenos de los ayuntamientos)", threshold: "",
+        rule: "Plenary sessions are public under the Local Government Act (Ley 7/1985, art. 70), except for matters affecting people's honour or privacy; councils may broadcast them, and several autonomous communities' laws or many councils' own rules require it. Committee meetings (comisiones informativas) aren't public." },
+      { state: "Spain", covers: "Public schools", threshold: "",
+        rule: "Each autonomous community's education department runs public schools under the Education Act (LOE as amended by LOMLOE). Municipalities maintain infant and primary school buildings and can have a municipal school council (consejo escolar municipal); each school has an elected school council (consejo escolar)." }
+    ],
+    note: "Rules differ by autonomous community and council. Check the council's own rules (reglamento orgánico) before relying on this."
+  },
+  peru: {
+    title: "Rules for district council (concejo municipal) meetings",
+    checked: "November 6, 2026",
+    laws: [
+      { state: "Peru", covers: "District and provincial councils (concejos municipales)", threshold: "",
+        rule: "Council sessions are public under the Organic Law of Municipalities (Ley 27972, art. 13), except for matters that could affect privacy or security; the Transparency Law (Ley 27806) requires agreements and ordinances to be published. No national law requires sessions to be streamed." },
+      { state: "Peru", covers: "Public schools", threshold: "",
+        rule: "Public schools are run by the regional governments' education directorates and their local units (UGEL) under the General Education Law (Ley 28044); districts have no school board. Each school has a council (CONEI) and a parents' association (APAFA)." }
+    ],
+    note: "Check the current law and the council's internal rules (reglamento interno del concejo) before relying on this."
+  },
   mexico: {
     title: "Rules for town council (cabildo) meetings",
     checked: "November 6, 2026",
