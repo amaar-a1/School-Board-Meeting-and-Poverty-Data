@@ -1,0 +1,6 @@
+9680=Total:202044547 ; 9681=Até 1/4 de salário mínimo:21081892 ; 9682=Mais de 1/4 a 1/2 salário mínimo:37359033 ; 9683=Mais de 1/2 a 1 salário mínimo:59068254 ; 9684=Mais de 1 a 2 salários mínimos:46218616 ; 9685=Mais de 2 a 3 salários mínimos:14889060 ; 9686=Mais de 3 a 5 salários mínimos:10201828 ; 9687=Mais de 5 a 10 salários mínimos:5631566 ; 9688=Mais de 10 a 15 salários mínimos:1172026 ; 9689=Mais de 15 a 20 salários mínimos:359415 ; 9690=Mais de 20 salários mínimos:291833 ; 9692=Sem rendimento:5771024
+region 1 3121591
+region 2 12425443
+region 3 11553479
+region 4 8251938
+region 5 3675290
