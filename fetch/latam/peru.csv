@@ -1,0 +1,1875 @@
+District ID,District,Region
+PE-010101,Chachapoyas,Amazonas
+PE-010102,Asunción,Amazonas
+PE-010103,Balsas,Amazonas
+PE-010104,Cheto,Amazonas
+PE-010105,Chiliquín,Amazonas
+PE-010106,Chuquibamba,Amazonas
+PE-010107,Granada,Amazonas
+PE-010108,Huancas,Amazonas
+PE-010109,La Jalca,Amazonas
+PE-010110,Leimebamba,Amazonas
+PE-010111,Levanto,Amazonas
+PE-010112,Magdalena,Amazonas
+PE-010113,Mariscal Castilla,Amazonas
+PE-010114,Molinopampa,Amazonas
+PE-010115,Montevideo,Amazonas
+PE-010116,Olleros,Amazonas
+PE-010117,Quinjalca,Amazonas
+PE-010118,San Francisco de Daguas,Amazonas
+PE-010119,San Isidro de Maino,Amazonas
+PE-010120,Soloco,Amazonas
+PE-010121,Sonche,Amazonas
+PE-010201,Bagua,Amazonas
+PE-010202,Aramango,Amazonas
+PE-010203,Copallín,Amazonas
+PE-010204,El Parco,Amazonas
+PE-010205,Imaza,Amazonas
+PE-010206,La Peca,Amazonas
+PE-010301,Jumbilla,Amazonas
+PE-010302,Chisquilla,Amazonas
+PE-010303,Churuja,Amazonas
+PE-010304,Corosha,Amazonas
+PE-010305,Cuispes,Amazonas
+PE-010306,Florida,Amazonas
+PE-010307,Jazán,Amazonas
+PE-010308,Recta,Amazonas
+PE-010309,San Carlos,Amazonas
+PE-010310,Shipasbamba,Amazonas
+PE-010311,Valera,Amazonas
+PE-010312,Yambrasbamba,Amazonas
+PE-010401,Nieva,Amazonas
+PE-010402,El Cenepa,Amazonas
+PE-010403,Río Santiago,Amazonas
+PE-010501,Lamud,Amazonas
+PE-010502,Camporredondo,Amazonas
+PE-010503,Cocabamba,Amazonas
+PE-010504,Colcamar,Amazonas
+PE-010505,Conila,Amazonas
+PE-010506,Inguilpata,Amazonas
+PE-010507,Longuita,Amazonas
+PE-010508,Lonya Chico,Amazonas
+PE-010509,Luya,Amazonas
+PE-010510,Luya Viejo,Amazonas
+PE-010511,María,Amazonas
+PE-010512,Ocalli,Amazonas
+PE-010513,Ocumal,Amazonas
+PE-010514,Pisuquia,Amazonas
+PE-010515,Providencia,Amazonas
+PE-010516,San Cristóbal,Amazonas
+PE-010517,San Francisco del Yeso,Amazonas
+PE-010518,San Jeronimo,Amazonas
+PE-010519,San Juan de Lopecancha,Amazonas
+PE-010520,Santa Catalina,Amazonas
+PE-010521,Santo Tomás,Amazonas
+PE-010522,Tingo,Amazonas
+PE-010523,Trita,Amazonas
+PE-010601,San Nicolás,Amazonas
+PE-010602,Chirimoto,Amazonas
+PE-010603,Cochamal,Amazonas
+PE-010604,Huambo,Amazonas
+PE-010605,Limabamba,Amazonas
+PE-010606,Longar,Amazonas
+PE-010607,Mariscal Benavides,Amazonas
+PE-010608,Milpuc,Amazonas
+PE-010609,Omia,Amazonas
+PE-010610,Santa Rosa,Amazonas
+PE-010611,Totora,Amazonas
+PE-010612,Vista Alegre,Amazonas
+PE-010701,Bagua Grande,Amazonas
+PE-010702,Cajaruro,Amazonas
+PE-010703,Cumba,Amazonas
+PE-010704,El Milagro,Amazonas
+PE-010705,Jamalca,Amazonas
+PE-010706,Lonya Grande,Amazonas
+PE-010707,Yamón,Amazonas
+PE-020101,Huaraz,Áncash
+PE-020102,Cochabamba,Áncash
+PE-020103,Colcabamba,Áncash
+PE-020104,Huanchay,Áncash
+PE-020105,Independencia,Áncash
+PE-020106,Jangas,Áncash
+PE-020107,La Libertad,Áncash
+PE-020108,Olleros,Áncash
+PE-020109,Pampas,Áncash
+PE-020110,Pariacoto,Áncash
+PE-020111,Pira,Áncash
+PE-020112,Tarica,Áncash
+PE-020201,Aija,Áncash
+PE-020202,Coris,Áncash
+PE-020203,Huacllan,Áncash
+PE-020204,La Merced,Áncash
+PE-020205,Succha,Áncash
+PE-020301,Llamellín,Áncash
+PE-020302,Aczo,Áncash
+PE-020303,Chaccho,Áncash
+PE-020304,Chingas,Áncash
+PE-020305,Mirgas,Áncash
+PE-020306,San Juan de Rontoy,Áncash
+PE-020401,Chacas,Áncash
+PE-020402,Acochaca,Áncash
+PE-020501,Chiquián,Áncash
+PE-020502,Abelardo Pardo Lezameta,Áncash
+PE-020503,Antonio Raymondi,Áncash
+PE-020504,Aquia,Áncash
+PE-020505,Cajacay,Áncash
+PE-020506,Canis,Áncash
+PE-020507,Colquioc,Áncash
+PE-020508,Huallanca,Áncash
+PE-020509,Huasta,Áncash
+PE-020510,Huayllacayán,Áncash
+PE-020511,La Primavera,Áncash
+PE-020512,Mangas,Áncash
+PE-020513,Pacllón,Áncash
+PE-020514,San Miguel de Corpanqui,Áncash
+PE-020515,Ticllos,Áncash
+PE-020601,Carhuaz,Áncash
+PE-020602,Acopampa,Áncash
+PE-020603,Amashca,Áncash
+PE-020604,Anta,Áncash
+PE-020605,Ataquero,Áncash
+PE-020606,Marcará,Áncash
+PE-020607,Pariahuanca,Áncash
+PE-020608,San Miguel de Aco,Áncash
+PE-020609,Shilla,Áncash
+PE-020610,Tinco,Áncash
+PE-020611,Yungar,Áncash
+PE-020701,San Luis,Áncash
+PE-020702,San Nicolás,Áncash
+PE-020703,Yauya,Áncash
+PE-020801,Casma,Áncash
+PE-020802,Buena Vista Alta,Áncash
+PE-020803,Comandante Noel,Áncash
+PE-020804,Yaután,Áncash
+PE-020901,Corongo,Áncash
+PE-020902,Aco,Áncash
+PE-020903,Bambas,Áncash
+PE-020904,Cusca,Áncash
+PE-020905,La Pampa,Áncash
+PE-020906,Yánac,Áncash
+PE-020907,Yupán,Áncash
+PE-021001,Huari,Áncash
+PE-021002,Anra,Áncash
+PE-021003,Cajay,Áncash
+PE-021004,Chavín de Huántar,Áncash
+PE-021005,Huacachi,Áncash
+PE-021006,Huacchis,Áncash
+PE-021007,Huachis,Áncash
+PE-021008,Huantar,Áncash
+PE-021009,Masin,Áncash
+PE-021010,Paucas,Áncash
+PE-021011,Ponto,Áncash
+PE-021012,Rahuapampa,Áncash
+PE-021013,Rapayan,Áncash
+PE-021014,San Marcos,Áncash
+PE-021015,San Pedro de Chana,Áncash
+PE-021016,Uco,Áncash
+PE-021101,Huarmey,Áncash
+PE-021102,Cochapeti,Áncash
+PE-021103,Culebras,Áncash
+PE-021104,Huayan,Áncash
+PE-021105,Malvas,Áncash
+PE-021201,Caraz,Áncash
+PE-021202,Huallanca,Áncash
+PE-021203,Huata,Áncash
+PE-021204,Huaylas,Áncash
+PE-021205,Mato,Áncash
+PE-021206,Pamparomás,Áncash
+PE-021207,Pueblo Libre,Áncash
+PE-021208,Santa Cruz,Áncash
+PE-021209,Santo Toribio,Áncash
+PE-021210,Yuracmarca,Áncash
+PE-021301,Piscobamba,Áncash
+PE-021302,Casca,Áncash
+PE-021303,Eleazar Guzmán Barrón,Áncash
+PE-021304,Fidel Olivas Escudero,Áncash
+PE-021305,Llama,Áncash
+PE-021306,Llumpa,Áncash
+PE-021307,Lucma,Áncash
+PE-021308,Musga,Áncash
+PE-021401,Ocros,Áncash
+PE-021402,Acas,Áncash
+PE-021403,Cajamarquilla,Áncash
+PE-021404,Carhuapampa,Áncash
+PE-021405,Cochas,Áncash
+PE-021406,Congas,Áncash
+PE-021407,Llipa,Áncash
+PE-021408,San Cristóbal Raján,Áncash
+PE-021409,San Pedro,Áncash
+PE-021410,Santiago de Chilcas,Áncash
+PE-021501,Cabana,Áncash
+PE-021502,Bolognesi,Áncash
+PE-021503,Conchucos,Áncash
+PE-021504,Huacaschuque,Áncash
+PE-021505,Huandoval,Áncash
+PE-021506,Lacabamba,Áncash
+PE-021507,Llapo,Áncash
+PE-021508,Pallasca,Áncash
+PE-021509,Pampas,Áncash
+PE-021510,Santa Rosa,Áncash
+PE-021511,Tauca,Áncash
+PE-021601,Pomabamba,Áncash
+PE-021602,Huayllán,Áncash
+PE-021603,Parobamba,Áncash
+PE-021604,Quinuabamba,Áncash
+PE-021701,Recuay,Áncash
+PE-021702,Cátac,Áncash
+PE-021703,Cotaparaco,Áncash
+PE-021704,Huayllapampa,Áncash
+PE-021705,Llacllin,Áncash
+PE-021706,Marca,Áncash
+PE-021707,Pampas Chico,Áncash
+PE-021708,Pararin,Áncash
+PE-021709,Tapacocha,Áncash
+PE-021710,Ticapampa,Áncash
+PE-021801,Chimbote,Áncash
+PE-021802,Cáceres del Perú,Áncash
+PE-021803,Coishco,Áncash
+PE-021804,Macate,Áncash
+PE-021805,Moro,Áncash
+PE-021806,Nepeña,Áncash
+PE-021807,Samanco,Áncash
+PE-021808,Santa,Áncash
+PE-021809,Nuevo Chimbote,Áncash
+PE-021901,Sihuas,Áncash
+PE-021902,Acobamba,Áncash
+PE-021903,Alfonso Ugarte,Áncash
+PE-021904,Cashapampa,Áncash
+PE-021905,Chingalpo,Áncash
+PE-021906,Huayllabamba,Áncash
+PE-021907,Quiches,Áncash
+PE-021908,Ragash,Áncash
+PE-021909,San Juan,Áncash
+PE-021910,Sicsibamba,Áncash
+PE-022001,Yungay,Áncash
+PE-022002,Cascapara,Áncash
+PE-022003,Mancos,Áncash
+PE-022004,Matacoto,Áncash
+PE-022005,Quillo,Áncash
+PE-022006,Ranrahirca,Áncash
+PE-022007,Shupluy,Áncash
+PE-022008,Yanama,Áncash
+PE-030101,Abancay,Apurímac
+PE-030102,Chacoche,Apurímac
+PE-030103,Circa,Apurímac
+PE-030104,Curahuasi,Apurímac
+PE-030105,Huanipaca,Apurímac
+PE-030106,Lambrama,Apurímac
+PE-030107,Pichirhua,Apurímac
+PE-030108,San Pedro de Cachora,Apurímac
+PE-030109,Tamburco,Apurímac
+PE-030201,Andahuaylas,Apurímac
+PE-030202,Andarapa,Apurímac
+PE-030203,Chiara,Apurímac
+PE-030204,Huancarama,Apurímac
+PE-030205,Huancaray,Apurímac
+PE-030206,Huayana,Apurímac
+PE-030207,Kishuara,Apurímac
+PE-030208,Pacobamba,Apurímac
+PE-030209,Pacucha,Apurímac
+PE-030210,Pampachiri,Apurímac
+PE-030211,Pomacocha,Apurímac
+PE-030212,San Antonio de Cachi,Apurímac
+PE-030213,San Jerónimo,Apurímac
+PE-030214,San Miguel de Chaccrampa,Apurímac
+PE-030215,Santa María de Chicmo,Apurímac
+PE-030216,Talavera,Apurímac
+PE-030217,Tumay Huaraca,Apurímac
+PE-030218,Turpo,Apurímac
+PE-030219,Kaquiabamba,Apurímac
+PE-030220,José María Arguedas,Apurímac
+PE-030301,Antabamba,Apurímac
+PE-030302,El Oro,Apurímac
+PE-030303,Huaquirca,Apurímac
+PE-030304,Juan Espinoza Medrano,Apurímac
+PE-030305,Oropesa,Apurímac
+PE-030306,Pachaconas,Apurímac
+PE-030307,Sabaino,Apurímac
+PE-030401,Chalhuanca,Apurímac
+PE-030402,Capaya,Apurímac
+PE-030403,Caraybamba,Apurímac
+PE-030404,Chapimarca,Apurímac
+PE-030405,Colcabamba,Apurímac
+PE-030406,Cotaruse,Apurímac
+PE-030407,Huayllo,Apurímac
+PE-030408,Justo Apu Sahuaraura,Apurímac
+PE-030409,Lucre,Apurímac
+PE-030410,Pocohuanca,Apurímac
+PE-030411,San Juan de Chacña,Apurímac
+PE-030412,Sañayca,Apurímac
+PE-030413,Soraya,Apurímac
+PE-030414,Tapairihua,Apurímac
+PE-030415,Tintay,Apurímac
+PE-030416,Toraya,Apurímac
+PE-030417,Yanaca,Apurímac
+PE-030501,Tambobamba,Apurímac
+PE-030502,Cotabambas,Apurímac
+PE-030503,Coyllurqui,Apurímac
+PE-030504,Haquira,Apurímac
+PE-030505,Mara,Apurímac
+PE-030506,Challhuahuacho,Apurímac
+PE-030601,Chincheros,Apurímac
+PE-030602,Anco-huallo,Apurímac
+PE-030603,Cocharcas,Apurímac
+PE-030604,Huaccana,Apurímac
+PE-030605,Ocobamba,Apurímac
+PE-030606,Ongoy,Apurímac
+PE-030607,Uranmarca,Apurímac
+PE-030608,Ranracancha,Apurímac
+PE-030609,Rocchacc,Apurímac
+PE-030610,El Porvenir,Apurímac
+PE-030611,Los Chankas,Apurímac
+PE-030701,Chuquibambilla,Apurímac
+PE-030702,Curpahuasi,Apurímac
+PE-030703,Gamarra,Apurímac
+PE-030704,Huayllati,Apurímac
+PE-030705,Mamara,Apurímac
+PE-030706,Micaela Bastidas,Apurímac
+PE-030707,Pataypampa,Apurímac
+PE-030708,Progreso,Apurímac
+PE-030709,San Antonio,Apurímac
+PE-030710,Santa Rosa,Apurímac
+PE-030711,Turpay,Apurímac
+PE-030712,Vilcabamba,Apurímac
+PE-030713,Virundo,Apurímac
+PE-030714,Curasco,Apurímac
+PE-040101,Arequipa,Arequipa
+PE-040102,Alto Selva Alegre,Arequipa
+PE-040103,Cayma,Arequipa
+PE-040104,Cerro Colorado,Arequipa
+PE-040105,Characato,Arequipa
+PE-040106,Chiguata,Arequipa
+PE-040107,Jacobo Hunter,Arequipa
+PE-040108,La Joya,Arequipa
+PE-040109,Maríano Melgar,Arequipa
+PE-040110,Miraflores,Arequipa
+PE-040111,Mollebaya,Arequipa
+PE-040112,Paucarpata,Arequipa
+PE-040113,Pocsi,Arequipa
+PE-040114,Polobaya,Arequipa
+PE-040115,Quequeña,Arequipa
+PE-040116,Sabandia,Arequipa
+PE-040117,Sachaca,Arequipa
+PE-040118,San Juan de Siguas,Arequipa
+PE-040119,San Juan de Tarucani,Arequipa
+PE-040120,Santa Isabel de Siguas,Arequipa
+PE-040121,Santa Rita de Siguas,Arequipa
+PE-040122,Socabaya,Arequipa
+PE-040123,Tiabaya,Arequipa
+PE-040124,Uchumayo,Arequipa
+PE-040125,Vitor,Arequipa
+PE-040126,Yanahuara,Arequipa
+PE-040127,Yarabamba,Arequipa
+PE-040128,Yura,Arequipa
+PE-040129,José Luis Bustamante y Rivero,Arequipa
+PE-040201,Camana,Arequipa
+PE-040202,José María Quimper,Arequipa
+PE-040203,Maríano Nicolás Valcarcel,Arequipa
+PE-040204,Mariscal Cáceres,Arequipa
+PE-040205,Nicolás de Piérola,Arequipa
+PE-040206,Ocoña,Arequipa
+PE-040207,Quilca,Arequipa
+PE-040208,Samuel Pastor,Arequipa
+PE-040301,Caravelí,Arequipa
+PE-040302,Acari,Arequipa
+PE-040303,Atico,Arequipa
+PE-040304,Atiquipa,Arequipa
+PE-040305,Bella Unión,Arequipa
+PE-040306,Cahuacho,Arequipa
+PE-040307,Chala,Arequipa
+PE-040308,Chaparra,Arequipa
+PE-040309,Huanuhuanu,Arequipa
+PE-040310,Jaqui,Arequipa
+PE-040311,Lomas,Arequipa
+PE-040312,Quicacha,Arequipa
+PE-040313,Yauca,Arequipa
+PE-040401,Aplao,Arequipa
+PE-040402,Andagua,Arequipa
+PE-040403,Ayo,Arequipa
+PE-040404,Chachas,Arequipa
+PE-040405,Chilcaymarca,Arequipa
+PE-040406,Choco,Arequipa
+PE-040407,Huancarqui,Arequipa
+PE-040408,Machaguay,Arequipa
+PE-040409,Orcopampa,Arequipa
+PE-040410,Pampacolca,Arequipa
+PE-040411,Tipán,Arequipa
+PE-040412,Uñón,Arequipa
+PE-040413,Uraca,Arequipa
+PE-040414,Viraco,Arequipa
+PE-040501,Chivay,Arequipa
+PE-040502,Achoma,Arequipa
+PE-040503,Cabanaconde,Arequipa
+PE-040504,Callalli,Arequipa
+PE-040505,Caylloma,Arequipa
+PE-040506,Coporaque,Arequipa
+PE-040507,Huambo,Arequipa
+PE-040508,Huanca,Arequipa
+PE-040509,Ichupampa,Arequipa
+PE-040510,Lari,Arequipa
+PE-040511,Lluta,Arequipa
+PE-040512,Maca,Arequipa
+PE-040513,Madrigal,Arequipa
+PE-040514,San Antonio de Chuca,Arequipa
+PE-040515,Sibayo,Arequipa
+PE-040516,Tapay,Arequipa
+PE-040517,Tisco,Arequipa
+PE-040518,Tuti,Arequipa
+PE-040519,Yanque,Arequipa
+PE-040520,Majes,Arequipa
+PE-040601,Chuquibamba,Arequipa
+PE-040602,Andaray,Arequipa
+PE-040603,Cayarani,Arequipa
+PE-040604,Chichas,Arequipa
+PE-040605,Iray,Arequipa
+PE-040606,Río Grande,Arequipa
+PE-040607,Salamanca,Arequipa
+PE-040608,Yanaquihua,Arequipa
+PE-040701,Mollendo,Arequipa
+PE-040702,Cocachacra,Arequipa
+PE-040703,Dean Valdivia,Arequipa
+PE-040704,Islay,Arequipa
+PE-040705,Mejia,Arequipa
+PE-040706,Punta de Bombón,Arequipa
+PE-040801,Cotahuasi,Arequipa
+PE-040802,Alca,Arequipa
+PE-040803,Charcana,Arequipa
+PE-040804,Huaynacotas,Arequipa
+PE-040805,Pampamarca,Arequipa
+PE-040806,Puyca,Arequipa
+PE-040807,Quechualla,Arequipa
+PE-040808,Sayla,Arequipa
+PE-040809,Tauria,Arequipa
+PE-040810,Tomepampa,Arequipa
+PE-040811,Toro,Arequipa
+PE-050101,Ayacucho,Ayacucho
+PE-050102,Acocro,Ayacucho
+PE-050103,Acos Vinchos,Ayacucho
+PE-050104,Carmen Alto,Ayacucho
+PE-050105,Chiara,Ayacucho
+PE-050106,Ocros,Ayacucho
+PE-050107,Pacaycasa,Ayacucho
+PE-050108,Quinua,Ayacucho
+PE-050109,San José de Ticllas,Ayacucho
+PE-050110,San Juan Bautista,Ayacucho
+PE-050111,Santiago de Pischa,Ayacucho
+PE-050112,Socos,Ayacucho
+PE-050113,Tambillo,Ayacucho
+PE-050114,Vinchos,Ayacucho
+PE-050115,Jesús Nazareno,Ayacucho
+PE-050116,Andrés Avelino Cáceres Dorregaray,Ayacucho
+PE-050201,Cangallo,Ayacucho
+PE-050202,Chuschi,Ayacucho
+PE-050203,Los Morochucos,Ayacucho
+PE-050204,María Parado de Bellido,Ayacucho
+PE-050205,Paras,Ayacucho
+PE-050206,Totos,Ayacucho
+PE-050301,Sancos,Ayacucho
+PE-050302,Carapo,Ayacucho
+PE-050303,Sacsamarca,Ayacucho
+PE-050304,Santiago de Lucanamarca,Ayacucho
+PE-050401,Huanta,Ayacucho
+PE-050402,Ayahuanco,Ayacucho
+PE-050403,Huamanguilla,Ayacucho
+PE-050404,Iguain,Ayacucho
+PE-050405,Luricocha,Ayacucho
+PE-050406,Santillana,Ayacucho
+PE-050407,Sivia,Ayacucho
+PE-050408,Llochegua,Ayacucho
+PE-050409,Canayre,Ayacucho
+PE-050410,Uchuraccay,Ayacucho
+PE-050411,Pucacolpa,Ayacucho
+PE-050412,Chaca,Ayacucho
+PE-050501,San Miguel,Ayacucho
+PE-050502,Anco,Ayacucho
+PE-050503,Ayna,Ayacucho
+PE-050504,Chilcas,Ayacucho
+PE-050505,Chungui,Ayacucho
+PE-050506,Luis Carranza,Ayacucho
+PE-050507,Santa Rosa,Ayacucho
+PE-050508,Tambo,Ayacucho
+PE-050509,Samugari,Ayacucho
+PE-050510,Anchihuay,Ayacucho
+PE-050511,Oroncoy,Ayacucho
+PE-050601,Puquio,Ayacucho
+PE-050602,Aucara,Ayacucho
+PE-050603,Cabana,Ayacucho
+PE-050604,Carmen Salcedo,Ayacucho
+PE-050605,Chaviña,Ayacucho
+PE-050606,Chipao,Ayacucho
+PE-050607,Huac-huas,Ayacucho
+PE-050608,Laramate,Ayacucho
+PE-050609,Leoncio Prado,Ayacucho
+PE-050610,Llauta,Ayacucho
+PE-050611,Lucanas,Ayacucho
+PE-050612,Ocaña,Ayacucho
+PE-050613,Otoca,Ayacucho
+PE-050614,Saisa,Ayacucho
+PE-050615,San Cristóbal,Ayacucho
+PE-050616,San Juan,Ayacucho
+PE-050617,San Pedro,Ayacucho
+PE-050618,San Pedro de Palco,Ayacucho
+PE-050619,Sancos,Ayacucho
+PE-050620,Santa Ana de Huaycahuacho,Ayacucho
+PE-050621,Santa Lucía,Ayacucho
+PE-050701,Coracora,Ayacucho
+PE-050702,Chumpi,Ayacucho
+PE-050703,Coronel Castañeda,Ayacucho
+PE-050704,Pacapausa,Ayacucho
+PE-050705,Pullo,Ayacucho
+PE-050706,Puyusca,Ayacucho
+PE-050707,San Francisco de Ravacayco,Ayacucho
+PE-050708,Upahuacho,Ayacucho
+PE-050801,Pausa,Ayacucho
+PE-050802,Colta,Ayacucho
+PE-050803,Corculla,Ayacucho
+PE-050804,Lampa,Ayacucho
+PE-050805,Marcabamba,Ayacucho
+PE-050806,Oyolo,Ayacucho
+PE-050807,Pararca,Ayacucho
+PE-050808,San Javier de Alpabamba,Ayacucho
+PE-050809,San José de Ushua,Ayacucho
+PE-050810,Sara Sara,Ayacucho
+PE-050901,Querobamba,Ayacucho
+PE-050902,Belén,Ayacucho
+PE-050903,Chalcos,Ayacucho
+PE-050904,Chilcayoc,Ayacucho
+PE-050905,Huacaña,Ayacucho
+PE-050906,Morcolla,Ayacucho
+PE-050907,Paico,Ayacucho
+PE-050908,San Pedro de Larcay,Ayacucho
+PE-050909,San Salvador de Quije,Ayacucho
+PE-050910,Santiago de Paucaray,Ayacucho
+PE-050911,Soras,Ayacucho
+PE-051001,Huancapi,Ayacucho
+PE-051002,Alcamenca,Ayacucho
+PE-051003,Apongo,Ayacucho
+PE-051004,Asquipata,Ayacucho
+PE-051005,Canaria,Ayacucho
+PE-051006,Cayara,Ayacucho
+PE-051007,Colca,Ayacucho
+PE-051008,Huamanquiquia,Ayacucho
+PE-051009,Huancaraylla,Ayacucho
+PE-051010,Huaya,Ayacucho
+PE-051011,Sarhua,Ayacucho
+PE-051012,Vilcanchos,Ayacucho
+PE-051101,Vilcas Huamán,Ayacucho
+PE-051102,Accomarca,Ayacucho
+PE-051103,Carhuanca,Ayacucho
+PE-051104,Concepcion,Ayacucho
+PE-051105,Huambalpa,Ayacucho
+PE-051106,Independencia,Ayacucho
+PE-051107,Saurama,Ayacucho
+PE-051108,Vischongo,Ayacucho
+PE-060101,Cajamarca,Cajamarca
+PE-060102,Asuncion,Cajamarca
+PE-060103,Chetilla,Cajamarca
+PE-060104,Cospán,Cajamarca
+PE-060105,Encañada,Cajamarca
+PE-060106,Jesús,Cajamarca
+PE-060107,Llacanora,Cajamarca
+PE-060108,Los Baños del Inca,Cajamarca
+PE-060109,Magdalena,Cajamarca
+PE-060110,Matara,Cajamarca
+PE-060111,Namora,Cajamarca
+PE-060112,San Juan,Cajamarca
+PE-060201,Cajabamba,Cajamarca
+PE-060202,Cachachi,Cajamarca
+PE-060203,Condebamba,Cajamarca
+PE-060204,Sitacocha,Cajamarca
+PE-060301,Celendin,Cajamarca
+PE-060302,Chumuch,Cajamarca
+PE-060303,Cortegana,Cajamarca
+PE-060304,Huasmin,Cajamarca
+PE-060305,Jorge Chávez,Cajamarca
+PE-060306,José Gálvez,Cajamarca
+PE-060307,Miguel Iglesias,Cajamarca
+PE-060308,Oxamarca,Cajamarca
+PE-060309,Sorochuco,Cajamarca
+PE-060310,Sucre,Cajamarca
+PE-060311,Utco,Cajamarca
+PE-060312,La Libertad de Pallán,Cajamarca
+PE-060401,Chota,Cajamarca
+PE-060402,Anguia,Cajamarca
+PE-060403,Chadin,Cajamarca
+PE-060404,Chiguirip,Cajamarca
+PE-060405,Chimban,Cajamarca
+PE-060406,Choropampa,Cajamarca
+PE-060407,Cochabamba,Cajamarca
+PE-060408,Conchan,Cajamarca
+PE-060409,Huambos,Cajamarca
+PE-060410,Lajas,Cajamarca
+PE-060411,Llama,Cajamarca
+PE-060412,Miracosta,Cajamarca
+PE-060413,Paccha,Cajamarca
+PE-060414,Pion,Cajamarca
+PE-060415,Querocoto,Cajamarca
+PE-060416,San Juan de Licupis,Cajamarca
+PE-060417,Tacabamba,Cajamarca
+PE-060418,Tocmoche,Cajamarca
+PE-060419,Chalamarca,Cajamarca
+PE-060501,Contumazá,Cajamarca
+PE-060502,Chilete,Cajamarca
+PE-060503,Cupisnique,Cajamarca
+PE-060504,Guzmango,Cajamarca
+PE-060505,San Benito,Cajamarca
+PE-060506,Santa Cruz de Toled,Cajamarca
+PE-060507,Tantarica,Cajamarca
+PE-060508,Yonán,Cajamarca
+PE-060601,Cutervo,Cajamarca
+PE-060602,Callayuc,Cajamarca
+PE-060603,Choros,Cajamarca
+PE-060604,Cujillo,Cajamarca
+PE-060605,La Ramada,Cajamarca
+PE-060606,Pimpingos,Cajamarca
+PE-060607,Querocotillo,Cajamarca
+PE-060608,San Andrés de Cutervo,Cajamarca
+PE-060609,San Juan de Cutervo,Cajamarca
+PE-060610,San Luis de Lucma,Cajamarca
+PE-060611,Santa Cruz,Cajamarca
+PE-060612,Santo Domingo de la Capilla,Cajamarca
+PE-060613,Santo Tomas,Cajamarca
+PE-060614,Socota,Cajamarca
+PE-060615,Toribio Casanova,Cajamarca
+PE-060701,Bambamarca,Cajamarca
+PE-060702,Chugur,Cajamarca
+PE-060703,Hualgayoc,Cajamarca
+PE-060801,Jaén,Cajamarca
+PE-060802,Bellavista,Cajamarca
+PE-060803,Chontali,Cajamarca
+PE-060804,Colasay,Cajamarca
+PE-060805,Huabal,Cajamarca
+PE-060806,Las Pirias,Cajamarca
+PE-060807,Pomahuaca,Cajamarca
+PE-060808,Pucará,Cajamarca
+PE-060809,Sallique,Cajamarca
+PE-060810,San Felipe,Cajamarca
+PE-060811,San José del Alto,Cajamarca
+PE-060812,Santa Rosa,Cajamarca
+PE-060901,San Ignacio,Cajamarca
+PE-060902,Chirinos,Cajamarca
+PE-060903,Huarango,Cajamarca
+PE-060904,La Coipa,Cajamarca
+PE-060905,Namballe,Cajamarca
+PE-060906,San José de Lourdes,Cajamarca
+PE-060907,Tabaconas,Cajamarca
+PE-061001,Pedro Galvez,Cajamarca
+PE-061002,Chancay,Cajamarca
+PE-061003,Eduardo Villanueva,Cajamarca
+PE-061004,Gregorio Pita,Cajamarca
+PE-061005,Ichocan,Cajamarca
+PE-061006,José Manuel Quiroz,Cajamarca
+PE-061007,José Sabogal,Cajamarca
+PE-061101,San Miguel,Cajamarca
+PE-061102,Bolívar,Cajamarca
+PE-061103,Calquis,Cajamarca
+PE-061104,Catilluc,Cajamarca
+PE-061105,El Prado,Cajamarca
+PE-061106,La Florida,Cajamarca
+PE-061107,Llapa,Cajamarca
+PE-061108,Nanchoc,Cajamarca
+PE-061109,Niepos,Cajamarca
+PE-061110,San Gregorio,Cajamarca
+PE-061111,San Silvestre de Cochán,Cajamarca
+PE-061112,Tongod,Cajamarca
+PE-061113,Unión Agua Blanca,Cajamarca
+PE-061201,San Pablo,Cajamarca
+PE-061202,San Bernardino,Cajamarca
+PE-061203,San Luis,Cajamarca
+PE-061204,Tumbadén,Cajamarca
+PE-061301,Santa Cruz,Cajamarca
+PE-061302,Andabamba,Cajamarca
+PE-061303,Catache,Cajamarca
+PE-061304,Chancaybaños,Cajamarca
+PE-061305,La Esperanza,Cajamarca
+PE-061306,Ninabamba,Cajamarca
+PE-061307,Pulán,Cajamarca
+PE-061308,Saucepampa,Cajamarca
+PE-061309,Sexi,Cajamarca
+PE-061310,Uticyacu,Cajamarca
+PE-061311,Yauyucán,Cajamarca
+PE-070101,Callao,Callao
+PE-070102,Bellavista,Callao
+PE-070103,Carmen de la Legua Reynoso,Callao
+PE-070104,La Perla,Callao
+PE-070105,La Punta,Callao
+PE-070106,Ventanilla,Callao
+PE-070107,Mi Perú,Callao
+PE-080101,Cusco,Cusco
+PE-080102,Ccorca,Cusco
+PE-080103,Poroy,Cusco
+PE-080104,San Jerónimo,Cusco
+PE-080105,San Sebastián,Cusco
+PE-080106,Santiago,Cusco
+PE-080107,Saylla,Cusco
+PE-080108,Wanchaq,Cusco
+PE-080201,Acomayo,Cusco
+PE-080202,Acopia,Cusco
+PE-080203,Acos,Cusco
+PE-080204,Mosoc Llacta,Cusco
+PE-080205,Pomacanchi,Cusco
+PE-080206,Rondocán,Cusco
+PE-080207,Sangarara,Cusco
+PE-080301,Anta,Cusco
+PE-080302,Ancahuasi,Cusco
+PE-080303,Cachimayo,Cusco
+PE-080304,Chinchaypujio,Cusco
+PE-080305,Huarocondo,Cusco
+PE-080306,Limatambo,Cusco
+PE-080307,Mollepata,Cusco
+PE-080308,Pucyura,Cusco
+PE-080309,Zurite,Cusco
+PE-080401,Calca,Cusco
+PE-080402,Coya,Cusco
+PE-080403,Lamay,Cusco
+PE-080404,Lares,Cusco
+PE-080405,Pisac,Cusco
+PE-080406,San Salvador,Cusco
+PE-080407,Taray,Cusco
+PE-080408,Yanatile,Cusco
+PE-080501,Yanaoca,Cusco
+PE-080502,Checca,Cusco
+PE-080503,Kunturkanki,Cusco
+PE-080504,Langui,Cusco
+PE-080505,Layo,Cusco
+PE-080506,Pampamarca,Cusco
+PE-080507,Quehue,Cusco
+PE-080508,Túpac Amaru,Cusco
+PE-080601,Sicuani,Cusco
+PE-080602,Checacupe,Cusco
+PE-080603,Combapata,Cusco
+PE-080604,Marangani,Cusco
+PE-080605,Pitumarca,Cusco
+PE-080606,San Pablo,Cusco
+PE-080607,San Pedro,Cusco
+PE-080608,Tinta,Cusco
+PE-080701,Santo Tomás,Cusco
+PE-080702,Capacmarca,Cusco
+PE-080703,Chamaca,Cusco
+PE-080704,Colquemarca,Cusco
+PE-080705,Livitaca,Cusco
+PE-080706,Llusco,Cusco
+PE-080707,Quiñota,Cusco
+PE-080708,Velille,Cusco
+PE-080801,Espinar,Cusco
+PE-080802,Condoroma,Cusco
+PE-080803,Coporaque,Cusco
+PE-080804,Ocoruro,Cusco
+PE-080805,Pallpata,Cusco
+PE-080806,Pichigua,Cusco
+PE-080807,Suyckutambo,Cusco
+PE-080808,Alto Pichigua,Cusco
+PE-080901,Santa Ana,Cusco
+PE-080902,Echarate,Cusco
+PE-080903,Huayopata,Cusco
+PE-080904,Maranura,Cusco
+PE-080905,Ocobamba,Cusco
+PE-080906,Quellouno,Cusco
+PE-080907,Kimbiri,Cusco
+PE-080908,Santa Teresa,Cusco
+PE-080909,Vilcabamba,Cusco
+PE-080910,Pichari,Cusco
+PE-080911,Inkawasi,Cusco
+PE-080912,Villa Virgen,Cusco
+PE-080913,Villa Kintiarina,Cusco
+PE-080914,Megantoni,Cusco
+PE-081001,Paruro,Cusco
+PE-081002,Accha,Cusco
+PE-081003,Ccapi,Cusco
+PE-081004,Colcha,Cusco
+PE-081005,Huanoquite,Cusco
+PE-081006,Omacha,Cusco
+PE-081007,Paccaritambo,Cusco
+PE-081008,Pillpinto,Cusco
+PE-081009,Yaurisque,Cusco
+PE-081101,Paucartambo,Cusco
+PE-081102,Caicay,Cusco
+PE-081103,Challabamba,Cusco
+PE-081104,Colquepata,Cusco
+PE-081105,Huancarani,Cusco
+PE-081106,Kosñipata,Cusco
+PE-081201,Urcos,Cusco
+PE-081202,Andahuaylillas,Cusco
+PE-081203,Camanti,Cusco
+PE-081204,Ccarhuayo,Cusco
+PE-081205,Ccatca,Cusco
+PE-081206,Cusipata,Cusco
+PE-081207,Huaro,Cusco
+PE-081208,Lucre,Cusco
+PE-081209,Marcapata,Cusco
+PE-081210,Ocongate,Cusco
+PE-081211,Oropesa,Cusco
+PE-081212,Quiquijana,Cusco
+PE-081301,Urubamba,Cusco
+PE-081302,Chinchero,Cusco
+PE-081303,Huayllabamba,Cusco
+PE-081304,Machupicchu,Cusco
+PE-081305,Maras,Cusco
+PE-081306,Ollantaytambo,Cusco
+PE-081307,Yucay,Cusco
+PE-090101,Huancavelica,Huancavelica
+PE-090102,Acobambilla,Huancavelica
+PE-090103,Acoria,Huancavelica
+PE-090104,Conayca,Huancavelica
+PE-090105,Cuenca,Huancavelica
+PE-090106,Huachocolpa,Huancavelica
+PE-090107,Huayllahuara,Huancavelica
+PE-090108,Izcuchaca,Huancavelica
+PE-090109,Laria,Huancavelica
+PE-090110,Manta,Huancavelica
+PE-090111,Mariscal Cáceres,Huancavelica
+PE-090112,Moya,Huancavelica
+PE-090113,Nuevo Occoro,Huancavelica
+PE-090114,Palca,Huancavelica
+PE-090115,Pilchaca,Huancavelica
+PE-090116,Vilca,Huancavelica
+PE-090117,Yauli,Huancavelica
+PE-090118,Ascensión,Huancavelica
+PE-090119,Huando,Huancavelica
+PE-090201,Acobamba,Huancavelica
+PE-090202,Andabamba,Huancavelica
+PE-090203,Anta,Huancavelica
+PE-090204,Caja,Huancavelica
+PE-090205,Marcas,Huancavelica
+PE-090206,Paucara,Huancavelica
+PE-090207,Pomacocha,Huancavelica
+PE-090208,Rosario,Huancavelica
+PE-090301,Lircay,Huancavelica
+PE-090302,Anchonga,Huancavelica
+PE-090303,Callanmarca,Huancavelica
+PE-090304,Ccochaccasa,Huancavelica
+PE-090305,Chincho,Huancavelica
+PE-090306,Congalla,Huancavelica
+PE-090307,Huanca-huanca,Huancavelica
+PE-090308,Huayllay Grande,Huancavelica
+PE-090309,Julcamarca,Huancavelica
+PE-090310,San Antonio de Antaparco,Huancavelica
+PE-090311,Santo Tomás de Pata,Huancavelica
+PE-090312,Secclla,Huancavelica
+PE-090401,Castrovirreyna,Huancavelica
+PE-090402,Arma,Huancavelica
+PE-090403,Aurahua,Huancavelica
+PE-090404,Capillas,Huancavelica
+PE-090405,Chupamarca,Huancavelica
+PE-090406,Cocas,Huancavelica
+PE-090407,Huachos,Huancavelica
+PE-090408,Huamatambo,Huancavelica
+PE-090409,Mollepampa,Huancavelica
+PE-090410,San Juan,Huancavelica
+PE-090411,Santa Ana,Huancavelica
+PE-090412,Tantara,Huancavelica
+PE-090413,Ticrapo,Huancavelica
+PE-090501,Churcampa,Huancavelica
+PE-090502,Anco,Huancavelica
+PE-090503,Chinchihuasi,Huancavelica
+PE-090504,El Carmen,Huancavelica
+PE-090505,La Merced,Huancavelica
+PE-090506,Locroja,Huancavelica
+PE-090507,Paucarbamba,Huancavelica
+PE-090508,San Miguel de Mayocc,Huancavelica
+PE-090509,San Pedro de Coris,Huancavelica
+PE-090510,Pachamarca,Huancavelica
+PE-090511,Cosme,Huancavelica
+PE-090601,Huaytará,Huancavelica
+PE-090602,Ayavi,Huancavelica
+PE-090603,Córdova,Huancavelica
+PE-090604,Huayacundo Arma,Huancavelica
+PE-090605,Laramarca,Huancavelica
+PE-090606,Ocoyo,Huancavelica
+PE-090607,Pilpichaca,Huancavelica
+PE-090608,Querco,Huancavelica
+PE-090609,Quito-arma,Huancavelica
+PE-090610,San Antonio de Cusicancha,Huancavelica
+PE-090611,San Francisco de Sangayaico,Huancavelica
+PE-090612,San Isidro,Huancavelica
+PE-090613,Santiago de Chocorvos,Huancavelica
+PE-090614,Santiago de Quirahuara,Huancavelica
+PE-090615,Santo Domingo de Capillas,Huancavelica
+PE-090616,Tambo,Huancavelica
+PE-090701,Pampas,Huancavelica
+PE-090702,Acostambo,Huancavelica
+PE-090703,Acraquia,Huancavelica
+PE-090704,Ahuaycha,Huancavelica
+PE-090705,Colcabamba,Huancavelica
+PE-090706,Daniel Hernandez,Huancavelica
+PE-090707,Huachocolpa,Huancavelica
+PE-090709,Huaribamba,Huancavelica
+PE-090710,Ñahuimpuquio,Huancavelica
+PE-090711,Pazos,Huancavelica
+PE-090713,Quishuar,Huancavelica
+PE-090714,Salcabamba,Huancavelica
+PE-090715,Salcahuasi,Huancavelica
+PE-090716,San Marcos de Rocchac,Huancavelica
+PE-090717,Surcubamba,Huancavelica
+PE-090718,Tintay Puncu,Huancavelica
+PE-090719,Quichuas,Huancavelica
+PE-090720,Andaymarca,Huancavelica
+PE-090721,Roble,Huancavelica
+PE-090722,Pichos,Huancavelica
+PE-090723,Santiago de Tucuma,Huancavelica
+PE-100101,Huanuco,Huánuco
+PE-100102,Amarilis,Huánuco
+PE-100103,Chinchao,Huánuco
+PE-100104,Churubamba,Huánuco
+PE-100105,Margos,Huánuco
+PE-100106,Quisqui,Huánuco
+PE-100107,San Francisco de Cayrán,Huánuco
+PE-100108,San Pedro de Chaulan,Huánuco
+PE-100109,Santa María del Valle,Huánuco
+PE-100110,Yarumayo,Huánuco
+PE-100111,Pillco Marca,Huánuco
+PE-100112,Yacus,Huánuco
+PE-100113,San Pablo de Pillao,Huánuco
+PE-100201,Ambo,Huánuco
+PE-100202,Cayna,Huánuco
+PE-100203,Colpas,Huánuco
+PE-100204,Conchamarca,Huánuco
+PE-100205,Huacar,Huánuco
+PE-100206,San Francisco,Huánuco
+PE-100207,San Rafael,Huánuco
+PE-100208,Tomay Kichwa,Huánuco
+PE-100301,La Unión,Huánuco
+PE-100307,Chuquis,Huánuco
+PE-100311,Marías,Huánuco
+PE-100313,Pachas,Huánuco
+PE-100316,Quivilla,Huánuco
+PE-100317,Ripan,Huánuco
+PE-100321,Shunqui,Huánuco
+PE-100322,Sillapata,Huánuco
+PE-100323,Yanas,Huánuco
+PE-100401,Huacaybamba,Huánuco
+PE-100402,Canchabamba,Huánuco
+PE-100403,Cochabamba,Huánuco
+PE-100404,Pinra,Huánuco
+PE-100501,Llata,Huánuco
+PE-100502,Arancay,Huánuco
+PE-100503,Chavín de Pariarca,Huánuco
+PE-100504,Jacas Grande,Huánuco
+PE-100505,Jircan,Huánuco
+PE-100506,Miraflores,Huánuco
+PE-100507,Monzón,Huánuco
+PE-100508,Punchao,Huánuco
+PE-100509,Puños,Huánuco
+PE-100510,Singa,Huánuco
+PE-100511,Tantamayo,Huánuco
+PE-100601,Rupa-rupa,Huánuco
+PE-100602,Daniel Alomia Robles,Huánuco
+PE-100603,Hermilio Valdizán,Huánuco
+PE-100604,José Crespo y Castillo,Huánuco
+PE-100605,Luyando,Huánuco
+PE-100606,Maríano Dámaso Beraun,Huánuco
+PE-100607,Pucayacu,Huánuco
+PE-100608,Castillo Grande,Huánuco
+PE-100609,Pueblo Nuevo,Huánuco
+PE-100610,Santo Domingo de Anda,Huánuco
+PE-100701,Huacrachuco,Huánuco
+PE-100702,Cholon,Huánuco
+PE-100703,San Buenaventura,Huánuco
+PE-100704,La Morada,Huánuco
+PE-100705,Santa Rosa de Alto Yanajanca,Huánuco
+PE-100801,Panao,Huánuco
+PE-100802,Chaglla,Huánuco
+PE-100803,Molino,Huánuco
+PE-100804,Umari,Huánuco
+PE-100901,Puerto Inca,Huánuco
+PE-100902,Codo del Pozuzo,Huánuco
+PE-100903,Honoria,Huánuco
+PE-100904,Tournavista,Huánuco
+PE-100905,Yuyapichis,Huánuco
+PE-101001,Jesús,Huánuco
+PE-101002,Baños,Huánuco
+PE-101003,Jivia,Huánuco
+PE-101004,Queropalca,Huánuco
+PE-101005,Rondos,Huánuco
+PE-101006,San Francisco de Asís,Huánuco
+PE-101007,San Miguel de Cauri,Huánuco
+PE-101101,Chavinillo,Huánuco
+PE-101102,Cahuac,Huánuco
+PE-101103,Chacabamba,Huánuco
+PE-101104,Aparicio Pomares,Huánuco
+PE-101105,Jacas Chico,Huánuco
+PE-101106,Obas,Huánuco
+PE-101107,Pampamarca,Huánuco
+PE-101108,Choras,Huánuco
+PE-110101,Ica,Ica
+PE-110102,La Tinguiña,Ica
+PE-110103,Los Aquijes,Ica
+PE-110104,Ocucaje,Ica
+PE-110105,Pachacútec,Ica
+PE-110106,Parcona,Ica
+PE-110107,Pueblo Nuevo,Ica
+PE-110108,Salas,Ica
+PE-110109,San José de los Molinos,Ica
+PE-110110,San Juan Bautista,Ica
+PE-110111,Santiago,Ica
+PE-110112,Subtanjalla,Ica
+PE-110113,Tate,Ica
+PE-110114,Yauca del Rosario,Ica
+PE-110201,Chincha Alta,Ica
+PE-110202,Alto Larán,Ica
+PE-110203,Chavín,Ica
+PE-110204,Chincha Baja,Ica
+PE-110205,El Carmen,Ica
+PE-110206,Grocio Prado,Ica
+PE-110207,Pueblo Nuevo,Ica
+PE-110208,San Juan de Yánac,Ica
+PE-110209,San Pedro de Huacarpana,Ica
+PE-110210,Sunampe,Ica
+PE-110211,Tambo de Mora,Ica
+PE-110301,Nasca,Ica
+PE-110302,Changuillo,Ica
+PE-110303,El Ingenio,Ica
+PE-110304,Marcona,Ica
+PE-110305,Vista Alegre,Ica
+PE-110401,Palpa,Ica
+PE-110402,Llipata,Ica
+PE-110403,Río Grande,Ica
+PE-110404,Santa Cruz,Ica
+PE-110405,Tibillo,Ica
+PE-110501,Pisco,Ica
+PE-110502,Huancano,Ica
+PE-110503,Humay,Ica
+PE-110504,Independencia,Ica
+PE-110505,Paracas,Ica
+PE-110506,San Andrés,Ica
+PE-110507,San Clemente,Ica
+PE-110508,Túpac Amaru Inca,Ica
+PE-120101,Huancayo,Junín
+PE-120104,Carhuacallanga,Junín
+PE-120105,Chacapampa,Junín
+PE-120106,Chicche,Junín
+PE-120107,Chilca,Junín
+PE-120108,Chongos Alto,Junín
+PE-120111,Chupuro,Junín
+PE-120112,Colca,Junín
+PE-120113,Cullhuas,Junín
+PE-120114,El Tambo,Junín
+PE-120116,Huacrapuquio,Junín
+PE-120117,Hualhuas,Junín
+PE-120119,Huancán,Junín
+PE-120120,Huasicancha,Junín
+PE-120121,Huayucachi,Junín
+PE-120122,Ingenio,Junín
+PE-120124,Pariahuanca,Junín
+PE-120125,Pilcomayo,Junín
+PE-120126,Pucara,Junín
+PE-120127,Quichuay,Junín
+PE-120128,Quilcas,Junín
+PE-120129,San Agustín,Junín
+PE-120130,San Jeronimo de Tunán,Junín
+PE-120132,Saño,Junín
+PE-120133,Sapallanga,Junín
+PE-120134,Sicaya,Junín
+PE-120135,Santo Domingo de Acobamba,Junín
+PE-120136,Viques,Junín
+PE-120201,Concepción,Junín
+PE-120202,Aco,Junín
+PE-120203,Andamarca,Junín
+PE-120204,Chambará,Junín
+PE-120205,Cochas,Junín
+PE-120206,Comas,Junín
+PE-120207,Heroínas Toledo,Junín
+PE-120208,Manzanares,Junín
+PE-120209,Mariscal Castilla,Junín
+PE-120210,Matahuasi,Junín
+PE-120211,Mito,Junín
+PE-120212,Nueve de Julio,Junín
+PE-120213,Orcotuna,Junín
+PE-120214,San José de Quero,Junín
+PE-120215,Santa Rosa de Ocopa,Junín
+PE-120301,Chanchamayo,Junín
+PE-120302,Perené,Junín
+PE-120303,Pichanaqui,Junín
+PE-120304,San Luis de Shuaro,Junín
+PE-120305,San Ramón,Junín
+PE-120306,Vitoc,Junín
+PE-120401,Jauja,Junín
+PE-120402,Acolla,Junín
+PE-120403,Apata,Junín
+PE-120404,Ataura,Junín
+PE-120405,Canchayllo,Junín
+PE-120406,Curicaca,Junín
+PE-120407,El Mantaro,Junín
+PE-120408,Huamali,Junín
+PE-120409,Huaripampa,Junín
+PE-120410,Huertas,Junín
+PE-120411,Janjaillo,Junín
+PE-120412,Julcan,Junín
+PE-120413,Leonor Ordóñez,Junín
+PE-120414,Llocllapampa,Junín
+PE-120415,Marco,Junín
+PE-120416,Masma,Junín
+PE-120417,Masma Chicche,Junín
+PE-120418,Molinos,Junín
+PE-120419,Monobamba,Junín
+PE-120420,Muqui,Junín
+PE-120421,Muquiyauyo,Junín
+PE-120422,Paca,Junín
+PE-120423,Paccha,Junín
+PE-120424,Pancan,Junín
+PE-120425,Parco,Junín
+PE-120426,Pomacancha,Junín
+PE-120427,Ricrán,Junín
+PE-120428,San Lorenzo,Junín
+PE-120429,San Pedro de Chunán,Junín
+PE-120430,Sausa,Junín
+PE-120431,Sincos,Junín
+PE-120432,Tunan Marca,Junín
+PE-120433,Yauli,Junín
+PE-120434,Yauyos,Junín
+PE-120501,Junín,Junín
+PE-120502,Carhuamayo,Junín
+PE-120503,Ondores,Junín
+PE-120504,Ulcumayo,Junín
+PE-120601,Satipo,Junín
+PE-120602,Coviriali,Junín
+PE-120603,Llaylla,Junín
+PE-120604,Mazamari,Junín
+PE-120605,Pampa Hermosa,Junín
+PE-120606,Pangoa,Junín
+PE-120607,Río Negro,Junín
+PE-120608,Río Tambo,Junín
+PE-120609,Vizcatán del Ene,Junín
+PE-120701,Tarma,Junín
+PE-120702,Acobamba,Junín
+PE-120703,Huaricolca,Junín
+PE-120704,Huasahuasi,Junín
+PE-120705,La Unión,Junín
+PE-120706,Palca,Junín
+PE-120707,Palcamayo,Junín
+PE-120708,San Pedro de Cajas,Junín
+PE-120709,Tapo,Junín
+PE-120801,La Oroya,Junín
+PE-120802,Chacapalpa,Junín
+PE-120803,Huay-huay,Junín
+PE-120804,Marcapomacocha,Junín
+PE-120805,Morococha,Junín
+PE-120806,Paccha,Junín
+PE-120807,Santa Bárbara de Carhuacaya,Junín
+PE-120808,Santa Rosa de Sacco,Junín
+PE-120809,Suitucancha,Junín
+PE-120810,Yauli,Junín
+PE-120901,Chupaca,Junín
+PE-120902,Ahuac,Junín
+PE-120903,Chongos Bajo,Junín
+PE-120904,Huáchac,Junín
+PE-120905,Huamancaca Chico,Junín
+PE-120906,San Juan de Iscos,Junín
+PE-120907,San Juan de Jarpa,Junín
+PE-120908,Tres de Diciembre,Junín
+PE-120909,Yanacancha,Junín
+PE-130101,Trujillo,La Libertad
+PE-130102,El Porvenir,La Libertad
+PE-130103,Florencia de Mora,La Libertad
+PE-130104,Huanchaco,La Libertad
+PE-130105,La Esperanza,La Libertad
+PE-130106,Laredo,La Libertad
+PE-130107,Moche,La Libertad
+PE-130108,Poroto,La Libertad
+PE-130109,Salaverry,La Libertad
+PE-130110,Simbal,La Libertad
+PE-130111,Víctor Larco Herrera,La Libertad
+PE-130201,Ascope,La Libertad
+PE-130202,Chicama,La Libertad
+PE-130203,Chocope,La Libertad
+PE-130204,Magdalena de Cao,La Libertad
+PE-130205,Paiján,La Libertad
+PE-130206,Rázuri,La Libertad
+PE-130207,Santiago de Cao,La Libertad
+PE-130208,Casa Grande,La Libertad
+PE-130301,Bolívar,La Libertad
+PE-130302,Bambamarca,La Libertad
+PE-130303,Condormarca,La Libertad
+PE-130304,Longotea,La Libertad
+PE-130305,Uchumarca,La Libertad
+PE-130306,Ucuncha,La Libertad
+PE-130401,Chepén,La Libertad
+PE-130402,Pacanga,La Libertad
+PE-130403,Pueblo Nuevo,La Libertad
+PE-130501,Julcán,La Libertad
+PE-130502,Calamarca,La Libertad
+PE-130503,Carabamba,La Libertad
+PE-130504,Huaso,La Libertad
+PE-130601,Otuzco,La Libertad
+PE-130602,Agallpampa,La Libertad
+PE-130604,Charat,La Libertad
+PE-130605,Huaranchal,La Libertad
+PE-130606,La Cuesta,La Libertad
+PE-130608,Mache,La Libertad
+PE-130610,Paranday,La Libertad
+PE-130611,Salpo,La Libertad
+PE-130613,Sinsicap,La Libertad
+PE-130614,Usquil,La Libertad
+PE-130701,San Pedro de Lloc,La Libertad
+PE-130702,Guadalupe,La Libertad
+PE-130703,Jequetepeque,La Libertad
+PE-130704,Pacasmayo,La Libertad
+PE-130705,San José,La Libertad
+PE-130801,Tayabamba,La Libertad
+PE-130802,Buldibuyo,La Libertad
+PE-130803,Chillia,La Libertad
+PE-130804,Huancaspata,La Libertad
+PE-130805,Huaylillas,La Libertad
+PE-130806,Huayo,La Libertad
+PE-130807,Ongón,La Libertad
+PE-130808,Parcoy,La Libertad
+PE-130809,Pataz,La Libertad
+PE-130810,Pias,La Libertad
+PE-130811,Santiago de Challas,La Libertad
+PE-130812,Taurija,La Libertad
+PE-130813,Urpay,La Libertad
+PE-130901,Huamachuco,La Libertad
+PE-130902,Chugay,La Libertad
+PE-130903,Cochorco,La Libertad
+PE-130904,Curgos,La Libertad
+PE-130905,Marcabal,La Libertad
+PE-130906,Sanagoran,La Libertad
+PE-130907,Sarín,La Libertad
+PE-130908,Sartimbamba,La Libertad
+PE-131001,Santiago de Chuco,La Libertad
+PE-131002,Angasmarca,La Libertad
+PE-131003,Cachicadan,La Libertad
+PE-131004,Mollebamba,La Libertad
+PE-131005,Mollepata,La Libertad
+PE-131006,Quiruvilca,La Libertad
+PE-131007,Santa Cruz de Chuca,La Libertad
+PE-131008,Sitabamba,La Libertad
+PE-131101,Cascas,La Libertad
+PE-131102,Lucma,La Libertad
+PE-131103,Marmot,La Libertad
+PE-131104,Sayapullo,La Libertad
+PE-131201,Virú,La Libertad
+PE-131202,Chao,La Libertad
+PE-131203,Guadalupito,La Libertad
+PE-140101,Chiclayo,Lambayeque
+PE-140102,Chongoyape,Lambayeque
+PE-140103,Etén,Lambayeque
+PE-140104,Etén Puerto,Lambayeque
+PE-140105,José Leonardo Ortiz,Lambayeque
+PE-140106,La Victoria,Lambayeque
+PE-140107,Lagunas,Lambayeque
+PE-140108,Monsefu,Lambayeque
+PE-140109,Nueva Arica,Lambayeque
+PE-140110,Oyotún,Lambayeque
+PE-140111,Picsi,Lambayeque
+PE-140112,Pimentel,Lambayeque
+PE-140113,Reque,Lambayeque
+PE-140114,Santa Rosa,Lambayeque
+PE-140115,Saña,Lambayeque
+PE-140116,Cayaltí,Lambayeque
+PE-140117,Patapo,Lambayeque
+PE-140118,Pomalca,Lambayeque
+PE-140119,Pucala,Lambayeque
+PE-140120,Tumán,Lambayeque
+PE-140201,Ferreñafe,Lambayeque
+PE-140202,Cañaris,Lambayeque
+PE-140203,Incahuasi,Lambayeque
+PE-140204,Manuel Antonio Mesones Muro,Lambayeque
+PE-140205,Pitipo,Lambayeque
+PE-140206,Pueblo Nuevo,Lambayeque
+PE-140301,Lambayeque,Lambayeque
+PE-140302,Chochope,Lambayeque
+PE-140303,Illimo,Lambayeque
+PE-140304,Jayanca,Lambayeque
+PE-140305,Mochumi,Lambayeque
+PE-140306,Morrope,Lambayeque
+PE-140307,Motupe,Lambayeque
+PE-140308,Olmos,Lambayeque
+PE-140309,Pacora,Lambayeque
+PE-140310,Salas,Lambayeque
+PE-140311,San José,Lambayeque
+PE-140312,Túcume,Lambayeque
+PE-150101,Lima,Lima
+PE-150102,Ancón,Lima
+PE-150103,Ate,Lima
+PE-150104,Barranco,Lima
+PE-150105,Breña,Lima
+PE-150106,Carabayllo,Lima
+PE-150107,Chaclacayo,Lima
+PE-150108,Chorrillos,Lima
+PE-150109,Cieneguilla,Lima
+PE-150110,Comas,Lima
+PE-150111,El Agustino,Lima
+PE-150112,Independencia,Lima
+PE-150113,Jesús María,Lima
+PE-150114,La Molina,Lima
+PE-150115,La Victoria,Lima
+PE-150116,Lince,Lima
+PE-150117,Los Olivos,Lima
+PE-150118,Lurigancho,Lima
+PE-150119,Lurín,Lima
+PE-150120,Magdalena del Mar,Lima
+PE-150121,Pueblo Libre,Lima
+PE-150122,Miraflores,Lima
+PE-150123,Pachacámac,Lima
+PE-150124,Pucusana,Lima
+PE-150125,Puente Piedra,Lima
+PE-150126,Punta Hermosa,Lima
+PE-150127,Punta Negra,Lima
+PE-150128,Rímac,Lima
+PE-150129,San Bartolo,Lima
+PE-150130,San Borja,Lima
+PE-150131,San Isidro,Lima
+PE-150132,San Juan de Lurigancho,Lima
+PE-150133,San Juan de Miraflores,Lima
+PE-150134,San Luis,Lima
+PE-150135,San Martín de Porres,Lima
+PE-150136,San Miguel,Lima
+PE-150137,Santa Anita,Lima
+PE-150138,Santa María del Mar,Lima
+PE-150139,Santa Rosa,Lima
+PE-150140,Santiago de Surco,Lima
+PE-150141,Surquillo,Lima
+PE-150142,Villa el Salvador,Lima
+PE-150143,Villa María del Triunfo,Lima
+PE-150201,Barranca,Lima
+PE-150202,Paramonga,Lima
+PE-150203,Pativilca,Lima
+PE-150204,Supe,Lima
+PE-150205,Supe Puerto,Lima
+PE-150301,Cajatambo,Lima
+PE-150302,Copa,Lima
+PE-150303,Gorgor,Lima
+PE-150304,Huancapón,Lima
+PE-150305,Manas,Lima
+PE-150401,Canta,Lima
+PE-150402,Arahuay,Lima
+PE-150403,Huamantanga,Lima
+PE-150404,Huaros,Lima
+PE-150405,Lachaqui,Lima
+PE-150406,San Buenaventura,Lima
+PE-150407,Santa Rosa de Quives,Lima
+PE-150501,San Vicente de Cañete,Lima
+PE-150502,Asia,Lima
+PE-150503,Calango,Lima
+PE-150504,Cerro Azul,Lima
+PE-150505,Chilca,Lima
+PE-150506,Coayllo,Lima
+PE-150507,Imperial,Lima
+PE-150508,Lunahuana,Lima
+PE-150509,Mala,Lima
+PE-150510,Nuevo Imperial,Lima
+PE-150511,Pacarán,Lima
+PE-150512,Quilmana,Lima
+PE-150513,San Antonio,Lima
+PE-150514,San Luis,Lima
+PE-150515,Santa Cruz de Flores,Lima
+PE-150516,Zuñiga,Lima
+PE-150601,Huaral,Lima
+PE-150602,Atavillos Alto,Lima
+PE-150603,Atavillos Bajo,Lima
+PE-150604,Aucallama,Lima
+PE-150605,Chancay,Lima
+PE-150606,Ihuari,Lima
+PE-150607,Lampián,Lima
+PE-150608,Pacaraos,Lima
+PE-150609,San Miguel de Acos,Lima
+PE-150610,Santa Cruz de Andamarca,Lima
+PE-150611,Sumbilca,Lima
+PE-150612,Veintisiete de Noviembre,Lima
+PE-150701,Matucana,Lima
+PE-150702,Antioquia,Lima
+PE-150703,Callahuanca,Lima
+PE-150704,Carampoma,Lima
+PE-150705,Chicla,Lima
+PE-150706,Cuenca,Lima
+PE-150707,Huachupampa,Lima
+PE-150708,Huanza,Lima
+PE-150709,Huarochirí,Lima
+PE-150710,Lahuaytambo,Lima
+PE-150711,Langa,Lima
+PE-150712,Laraos,Lima
+PE-150713,Maríatana,Lima
+PE-150714,Ricardo Palma,Lima
+PE-150715,San Andrés de Tupicocha,Lima
+PE-150716,San Antonio,Lima
+PE-150717,San Bartolomé,Lima
+PE-150718,San Damian,Lima
+PE-150719,San Juan de Iris,Lima
+PE-150720,San Juan de Tantaranche,Lima
+PE-150721,San Lorenzo de Quinti,Lima
+PE-150722,San Mateo,Lima
+PE-150723,San Mateo de Otao,Lima
+PE-150724,San Pedro de Casta,Lima
+PE-150725,San Pedro de Huancayre,Lima
+PE-150726,Sangallaya,Lima
+PE-150727,Santa Cruz de Cocachacra,Lima
+PE-150728,Santa Eulalia,Lima
+PE-150729,Santiago de Anchucaya,Lima
+PE-150730,Santiago de Tuna,Lima
+PE-150731,Santo Domingo de los Ollero,Lima
+PE-150732,Surco,Lima
+PE-150801,Huacho,Lima
+PE-150802,Ambar,Lima
+PE-150803,Caleta de Carquín,Lima
+PE-150804,Checras,Lima
+PE-150805,Hualmay,Lima
+PE-150806,Huaura,Lima
+PE-150807,Leoncio Prado,Lima
+PE-150808,Paccho,Lima
+PE-150809,Santa Leonor,Lima
+PE-150810,Santa María,Lima
+PE-150811,Sayan,Lima
+PE-150812,Vegueta,Lima
+PE-150901,Oyón,Lima
+PE-150902,Andajes,Lima
+PE-150903,Caujul,Lima
+PE-150904,Cochamarca,Lima
+PE-150905,Navan,Lima
+PE-150906,Pachangara,Lima
+PE-151001,Yauyos,Lima
+PE-151002,Alis,Lima
+PE-151003,Ayauca,Lima
+PE-151004,Ayaviri,Lima
+PE-151005,Azangaro,Lima
+PE-151006,Cacra,Lima
+PE-151007,Carania,Lima
+PE-151008,Catahuasi,Lima
+PE-151009,Chocos,Lima
+PE-151010,Cochas,Lima
+PE-151011,Colonia,Lima
+PE-151012,Hongos,Lima
+PE-151013,Huampara,Lima
+PE-151014,Huancaya,Lima
+PE-151015,Huangascar,Lima
+PE-151016,Huantan,Lima
+PE-151017,Huañec,Lima
+PE-151018,Laraos,Lima
+PE-151019,Lincha,Lima
+PE-151020,Madean,Lima
+PE-151021,Miraflores,Lima
+PE-151022,Omas,Lima
+PE-151023,Putinza,Lima
+PE-151024,Quinches,Lima
+PE-151025,Quinocay,Lima
+PE-151026,San Joaquín,Lima
+PE-151027,San Pedro de Pilas,Lima
+PE-151028,Tanta,Lima
+PE-151029,Tauripampa,Lima
+PE-151030,Tomas,Lima
+PE-151031,Tupe,Lima
+PE-151032,Viñac,Lima
+PE-151033,Vitis,Lima
+PE-160101,Iquitos,Loreto
+PE-160102,Alto Nanay,Loreto
+PE-160103,Fernando Lores,Loreto
+PE-160104,Indiana,Loreto
+PE-160105,Las Amazonas,Loreto
+PE-160106,Mazan,Loreto
+PE-160107,Napo,Loreto
+PE-160108,Punchana,Loreto
+PE-160110,Torres Causana,Loreto
+PE-160112,Belén,Loreto
+PE-160113,San Juan Bautista,Loreto
+PE-160201,Yurimaguas,Loreto
+PE-160202,Balsapuerto,Loreto
+PE-160205,Jeberos,Loreto
+PE-160206,Lagunas,Loreto
+PE-160210,Santa Cruz,Loreto
+PE-160211,Teniente Cesar Lopez Rojas,Loreto
+PE-160301,Nauta,Loreto
+PE-160302,Parinari,Loreto
+PE-160303,Tigre,Loreto
+PE-160304,Trompeteros,Loreto
+PE-160305,Urarinas,Loreto
+PE-160401,Ramon Castilla,Loreto
+PE-160402,Pebas,Loreto
+PE-160403,Yavari,Loreto
+PE-160404,San Pablo,Loreto
+PE-160501,Requena,Loreto
+PE-160502,Alto Tapiche,Loreto
+PE-160503,Capelo,Loreto
+PE-160504,Emilio San Martín,Loreto
+PE-160505,Maquia,Loreto
+PE-160506,Puinahua,Loreto
+PE-160507,Saquena,Loreto
+PE-160508,Soplin,Loreto
+PE-160509,Tapiche,Loreto
+PE-160510,Jenaro Herrera,Loreto
+PE-160511,Yaquerana,Loreto
+PE-160601,Contamana,Loreto
+PE-160602,Inahuaya,Loreto
+PE-160603,Padre Márquez,Loreto
+PE-160604,Pampa Hermosa,Loreto
+PE-160605,Sarayacu,Loreto
+PE-160606,Vargas Guerra,Loreto
+PE-160701,Barranca,Loreto
+PE-160702,Cahuapanas,Loreto
+PE-160703,Manseriche,Loreto
+PE-160704,Morona,Loreto
+PE-160705,Pastaza,Loreto
+PE-160706,Andoas,Loreto
+PE-160801,Putumayo,Loreto
+PE-160802,Rosa Panduro,Loreto
+PE-160803,Teniente Manuel Clavero,Loreto
+PE-160804,Yaguas,Loreto
+PE-170101,Tambopata,Madre de Dios
+PE-170102,Inambari,Madre de Dios
+PE-170103,Las Piedras,Madre de Dios
+PE-170104,Laberinto,Madre de Dios
+PE-170201,Manu,Madre de Dios
+PE-170202,Fitzcarrald,Madre de Dios
+PE-170203,Madre de Dios,Madre de Dios
+PE-170204,Huepetuhe,Madre de Dios
+PE-170301,Iñapari,Madre de Dios
+PE-170302,Iberia,Madre de Dios
+PE-170303,Tahuamanu,Madre de Dios
+PE-180101,Moquegua,Moquegua
+PE-180102,Carumas,Moquegua
+PE-180103,Cuchumbaya,Moquegua
+PE-180104,Samegua,Moquegua
+PE-180105,San Cristóbal,Moquegua
+PE-180106,Torata,Moquegua
+PE-180201,Omate,Moquegua
+PE-180202,Chojata,Moquegua
+PE-180203,Coalaque,Moquegua
+PE-180204,Ichuña,Moquegua
+PE-180205,La Capilla,Moquegua
+PE-180206,Lloque,Moquegua
+PE-180207,Matalaque,Moquegua
+PE-180208,Puquina,Moquegua
+PE-180209,Quinistaquillas,Moquegua
+PE-180210,Ubinas,Moquegua
+PE-180211,Yunga,Moquegua
+PE-180301,Ilo,Moquegua
+PE-180302,El Algarrobal,Moquegua
+PE-180303,Pacocha,Moquegua
+PE-190101,Chaupimarca,Pasco
+PE-190102,Huachón,Pasco
+PE-190103,Huariaca,Pasco
+PE-190104,Huayllay,Pasco
+PE-190105,Ninacaca,Pasco
+PE-190106,Pallanchacra,Pasco
+PE-190107,Paucartambo,Pasco
+PE-190108,San Fco.de Asis de Yarusyacán,Pasco
+PE-190109,Simón Bolívar,Pasco
+PE-190110,Ticlacayan,Pasco
+PE-190111,Tinyahuarco,Pasco
+PE-190112,Vicco,Pasco
+PE-190113,Yanacancha,Pasco
+PE-190201,Yanahuanca,Pasco
+PE-190202,Chacayan,Pasco
+PE-190203,Goyllarisquizga,Pasco
+PE-190204,Paucar,Pasco
+PE-190205,San Pedro de Pillao,Pasco
+PE-190206,Santa Ana de Tusi,Pasco
+PE-190207,Tapuc,Pasco
+PE-190208,Vilcabamba,Pasco
+PE-190301,Oxapampa,Pasco
+PE-190302,Chontabamba,Pasco
+PE-190303,Huancabamba,Pasco
+PE-190304,Palcazu,Pasco
+PE-190305,Pozuzo,Pasco
+PE-190306,Puerto Bermúdez,Pasco
+PE-190307,Villa Rica,Pasco
+PE-190308,Constitución,Pasco
+PE-200101,Piura,Piura
+PE-200104,Castilla,Piura
+PE-200105,Catacaos,Piura
+PE-200107,Cura Mori,Piura
+PE-200108,El Tallán,Piura
+PE-200109,La Arena,Piura
+PE-200110,La Unión,Piura
+PE-200111,Las Lomas,Piura
+PE-200114,Tambo Grande,Piura
+PE-200115,Veintiséis de Octubre,Piura
+PE-200201,Ayabaca,Piura
+PE-200202,Frías,Piura
+PE-200203,Jilili,Piura
+PE-200204,Lagunas,Piura
+PE-200205,Montero,Piura
+PE-200206,Pacaipampa,Piura
+PE-200207,Paimas,Piura
+PE-200208,Sapillica,Piura
+PE-200209,Sicchez,Piura
+PE-200210,Suyo,Piura
+PE-200301,Huancabamba,Piura
+PE-200302,Canchaque,Piura
+PE-200303,El Carmen de la Frontera,Piura
+PE-200304,Huarmaca,Piura
+PE-200305,Lalaquiz,Piura
+PE-200306,San Miguel de el Faique,Piura
+PE-200307,Sondor,Piura
+PE-200308,Sondorillo,Piura
+PE-200401,Chulucanas,Piura
+PE-200402,Buenos Aires,Piura
+PE-200403,Chalaco,Piura
+PE-200404,La Matanza,Piura
+PE-200405,Morropon,Piura
+PE-200406,Salitral,Piura
+PE-200407,San Juan de Bigote,Piura
+PE-200408,Santa Catalina de Mossa,Piura
+PE-200409,Santo Domingo,Piura
+PE-200410,Yamango,Piura
+PE-200501,Paita,Piura
+PE-200502,Amotape,Piura
+PE-200503,Arenal,Piura
+PE-200504,Colan,Piura
+PE-200505,La Huaca,Piura
+PE-200506,Tamarindo,Piura
+PE-200507,Vichayal,Piura
+PE-200601,Sullana,Piura
+PE-200602,Bellavista,Piura
+PE-200603,Ignacio Escudero,Piura
+PE-200604,Lancones,Piura
+PE-200605,Marcavelica,Piura
+PE-200606,Miguel Checa,Piura
+PE-200607,Querecotillo,Piura
+PE-200608,Salitral,Piura
+PE-200701,Pariñas,Piura
+PE-200702,El Alto,Piura
+PE-200703,La Brea,Piura
+PE-200704,Lobitos,Piura
+PE-200705,Los Órganos,Piura
+PE-200706,Máncora,Piura
+PE-200801,Sechura,Piura
+PE-200802,Bellavista de la Unión,Piura
+PE-200803,Bernal,Piura
+PE-200804,Cristo Nos Valga,Piura
+PE-200805,Vice,Piura
+PE-200806,Rinconada Llicuar,Piura
+PE-210101,Puno,Puno
+PE-210102,Acora,Puno
+PE-210103,Amantani,Puno
+PE-210104,Atuncolla,Puno
+PE-210105,Capachica,Puno
+PE-210106,Chucuito,Puno
+PE-210107,Coata,Puno
+PE-210108,Huata,Puno
+PE-210109,Mañazo,Puno
+PE-210110,Paucarcolla,Puno
+PE-210111,Pichacani,Puno
+PE-210112,Platería,Puno
+PE-210113,San Antonio,Puno
+PE-210114,Tiquillaca,Puno
+PE-210115,Vilque,Puno
+PE-210201,Azángaro,Puno
+PE-210202,Achaya,Puno
+PE-210203,Arapa,Puno
+PE-210204,Asillo,Puno
+PE-210205,Caminaca,Puno
+PE-210206,Chupa,Puno
+PE-210207,José Domingo Choquehuanca,Puno
+PE-210208,Muñani,Puno
+PE-210209,Potoni,Puno
+PE-210210,Saman,Puno
+PE-210211,San Antón,Puno
+PE-210212,San José,Puno
+PE-210213,San Juan de Salinas,Puno
+PE-210214,Santiago de Pupuja,Puno
+PE-210215,Tirapata,Puno
+PE-210301,Macusani,Puno
+PE-210302,Ajoyani,Puno
+PE-210303,Ayapata,Puno
+PE-210304,Coasa,Puno
+PE-210305,Corani,Puno
+PE-210306,Crucero,Puno
+PE-210307,Ituata,Puno
+PE-210308,Ollachea,Puno
+PE-210309,San Gabán,Puno
+PE-210310,Usicayos,Puno
+PE-210401,Juli,Puno
+PE-210402,Desaguadero,Puno
+PE-210403,Huacullani,Puno
+PE-210404,Kelluyo,Puno
+PE-210405,Pisacoma,Puno
+PE-210406,Pomata,Puno
+PE-210407,Zepita,Puno
+PE-210501,Ilave,Puno
+PE-210502,Capazo,Puno
+PE-210503,Pilcuyo,Puno
+PE-210504,Santa Rosa,Puno
+PE-210505,Conduriri,Puno
+PE-210601,Huancané,Puno
+PE-210602,Cojata,Puno
+PE-210603,Huatasani,Puno
+PE-210604,Inchupalla,Puno
+PE-210605,Pusi,Puno
+PE-210606,Rosaspata,Puno
+PE-210607,Taraco,Puno
+PE-210608,Vilque Chico,Puno
+PE-210701,Lampa,Puno
+PE-210702,Cabanilla,Puno
+PE-210703,Calapuja,Puno
+PE-210704,Nicasio,Puno
+PE-210705,Ocuviri,Puno
+PE-210706,Palca,Puno
+PE-210707,Paratia,Puno
+PE-210708,Pucará,Puno
+PE-210709,Santa Lucia,Puno
+PE-210710,Vilavila,Puno
+PE-210801,Ayaviri,Puno
+PE-210802,Antauta,Puno
+PE-210803,Cupi,Puno
+PE-210804,Llalli,Puno
+PE-210805,Macari,Puno
+PE-210806,Nuñoa,Puno
+PE-210807,Orurillo,Puno
+PE-210808,Santa Rosa,Puno
+PE-210809,Umachiri,Puno
+PE-210901,Moho,Puno
+PE-210902,Conima,Puno
+PE-210903,Huayrapata,Puno
+PE-210904,Tilali,Puno
+PE-211001,Putina,Puno
+PE-211002,Ananea,Puno
+PE-211003,Pedro Vilca Apaza,Puno
+PE-211004,Quilcapuncu,Puno
+PE-211005,Sina,Puno
+PE-211101,Juliaca,Puno
+PE-211102,Cabana,Puno
+PE-211103,Cabanillas,Puno
+PE-211104,Caracoto,Puno
+PE-211105,San Miguel,Puno
+PE-211201,Sandia,Puno
+PE-211202,Cuyocuyo,Puno
+PE-211203,Limbani,Puno
+PE-211204,Patambuco,Puno
+PE-211205,Phara,Puno
+PE-211206,Quiaca,Puno
+PE-211207,San Juan del Oro,Puno
+PE-211208,Yanahuaya,Puno
+PE-211209,Alto Inambari,Puno
+PE-211210,San Pedro de Putina Puncu,Puno
+PE-211301,Yunguyo,Puno
+PE-211302,Anapia,Puno
+PE-211303,Copani,Puno
+PE-211304,Cuturapi,Puno
+PE-211305,Ollaraya,Puno
+PE-211306,Tinicachi,Puno
+PE-211307,Unicachi,Puno
+PE-220101,Moyobamba,San Martín
+PE-220102,Calzada,San Martín
+PE-220103,Habana,San Martín
+PE-220104,Jepelacio,San Martín
+PE-220105,Soritor,San Martín
+PE-220106,Yantalo,San Martín
+PE-220201,Bellavista,San Martín
+PE-220202,Alto Biavo,San Martín
+PE-220203,Bajo Biavo,San Martín
+PE-220204,Huallaga,San Martín
+PE-220205,San Pablo,San Martín
+PE-220206,San Rafael,San Martín
+PE-220301,San José de Sisa,San Martín
+PE-220302,Agua Blanca,San Martín
+PE-220303,San Martín,San Martín
+PE-220304,Santa Rosa,San Martín
+PE-220305,Shatoja,San Martín
+PE-220401,Saposoa,San Martín
+PE-220402,Alto Saposoa,San Martín
+PE-220403,El Eslabón,San Martín
+PE-220404,Piscoyacu,San Martín
+PE-220405,Sacanche,San Martín
+PE-220406,Tingo de Saposoa,San Martín
+PE-220501,Lamas,San Martín
+PE-220502,Alonso de Alvarado,San Martín
+PE-220503,Barranquita,San Martín
+PE-220504,Caynarachi,San Martín
+PE-220505,Cuñumbuqui,San Martín
+PE-220506,Pinto Recodo,San Martín
+PE-220507,Rumisapa,San Martín
+PE-220508,San Roque de Cumbaza,San Martín
+PE-220509,Shanao,San Martín
+PE-220510,Tabalosos,San Martín
+PE-220511,Zapatero,San Martín
+PE-220601,Juanjui,San Martín
+PE-220602,Campanilla,San Martín
+PE-220603,Huicungo,San Martín
+PE-220604,Pachiza,San Martín
+PE-220605,Pajarillo,San Martín
+PE-220701,Picota,San Martín
+PE-220702,Buenos Aires,San Martín
+PE-220703,Caspisapa,San Martín
+PE-220704,Pilluana,San Martín
+PE-220705,Pucacaca,San Martín
+PE-220706,San Cristóbal,San Martín
+PE-220707,San Hilarión,San Martín
+PE-220708,Shamboyacu,San Martín
+PE-220709,Tingo de Ponasa,San Martín
+PE-220710,Tres Unidos,San Martín
+PE-220801,Rioja,San Martín
+PE-220802,Awajun,San Martín
+PE-220803,Elias Soplin Vargas,San Martín
+PE-220804,Nueva Cajamarca,San Martín
+PE-220805,Pardo Miguel,San Martín
+PE-220806,Posic,San Martín
+PE-220807,San Fernando,San Martín
+PE-220808,Yorongos,San Martín
+PE-220809,Yuracyacu,San Martín
+PE-220901,Tarapoto,San Martín
+PE-220902,Alberto Leveau,San Martín
+PE-220903,Cacatachi,San Martín
+PE-220904,Chazuta,San Martín
+PE-220905,Chipurana,San Martín
+PE-220906,El Porvenir,San Martín
+PE-220907,Huimbayoc,San Martín
+PE-220908,Juan Guerra,San Martín
+PE-220909,La Banda de Shilcayo,San Martín
+PE-220910,Morales,San Martín
+PE-220911,Papaplaya,San Martín
+PE-220912,San Antonio,San Martín
+PE-220913,Sauce,San Martín
+PE-220914,Shapaja,San Martín
+PE-221001,Tocache,San Martín
+PE-221002,Nuevo Progreso,San Martín
+PE-221003,Pólvora,San Martín
+PE-221004,Shunte,San Martín
+PE-221005,Uchiza,San Martín
+PE-230101,Tacna,Tacna
+PE-230102,Alto de la Alianza,Tacna
+PE-230103,Calana,Tacna
+PE-230104,Ciudad Nueva,Tacna
+PE-230105,Inclán,Tacna
+PE-230106,Pachia,Tacna
+PE-230107,Palca,Tacna
+PE-230108,Pocollay,Tacna
+PE-230109,Sama,Tacna
+PE-230110,Crnel.gregorio Albarracín Lanchipa,Tacna
+PE-230111,La Yarada los Palos,Tacna
+PE-230201,Candarave,Tacna
+PE-230202,Cairani,Tacna
+PE-230203,Camilaca,Tacna
+PE-230204,Curibaya,Tacna
+PE-230205,Huanuara,Tacna
+PE-230206,Quilahuani,Tacna
+PE-230301,Locumba,Tacna
+PE-230302,Ilabaya,Tacna
+PE-230303,Ite,Tacna
+PE-230401,Tarata,Tacna
+PE-230402,Héroes Albarracín,Tacna
+PE-230403,Estique,Tacna
+PE-230404,Estique-pampa,Tacna
+PE-230405,Sitajara,Tacna
+PE-230406,Susapaya,Tacna
+PE-230407,Tarucachi,Tacna
+PE-230408,Ticaco,Tacna
+PE-240101,Tumbes,Tumbes
+PE-240102,Corrales,Tumbes
+PE-240103,La Cruz,Tumbes
+PE-240104,Pampas de Hospital,Tumbes
+PE-240105,San Jacinto,Tumbes
+PE-240106,San Juan de la Virgen,Tumbes
+PE-240201,Zorritos,Tumbes
+PE-240202,Casitas,Tumbes
+PE-240203,Canoas de Punta Sal,Tumbes
+PE-240301,Zarumilla,Tumbes
+PE-240302,Aguas Verdes,Tumbes
+PE-240303,Matapalo,Tumbes
+PE-240304,Papayal,Tumbes
+PE-250101,Callería,Ucayali
+PE-250102,Campoverde,Ucayali
+PE-250103,Iparia,Ucayali
+PE-250104,Masisea,Ucayali
+PE-250105,Yarinacocha,Ucayali
+PE-250106,Nueva Requena,Ucayali
+PE-250107,Manantay,Ucayali
+PE-250201,Raymondi,Ucayali
+PE-250202,Sepahua,Ucayali
+PE-250203,Tahuania,Ucayali
+PE-250204,Yurua,Ucayali
+PE-250301,Padre Abad,Ucayali
+PE-250302,Irazola,Ucayali
+PE-250303,Curimaná,Ucayali
+PE-250304,Neshuya,Ucayali
+PE-250305,Alexander Von Humboldt,Ucayali
+PE-250401,Purús,Ucayali
