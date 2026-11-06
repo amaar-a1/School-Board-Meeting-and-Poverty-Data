@@ -37,7 +37,10 @@ ALIAS = {"CL": {"paiguano": "paihuano", "marchigue": "marchihue", "aisen": "ayse
                 "guadalajaradebuga": "buga", "santafedebogota": "bogotadc", "sanandresdetumaco": "tumaco", "sanjosedecucuta": "cucuta",
                 "sanjosedetoluviejo": "toluviejo", "villadesandiegodeubate": "ubate", "tiquisio": "tiquiso", "papunahua": "papunauacordepartamental",
                 "colosoricaurte": "coloso", "elsantuario": "santuario"},
-         "MX": {"tlaquepaque": "sanpedrotlaquepaque"}}
+         "MX": {"tlaquepaque": "sanpedrotlaquepaque"},
+         # Spain: the borders file's older or other-language names
+         "ES": {"maomahon": "mao", "castellplatjadaro": "castelldaroplatjadaroisagaro", "santcarlesdelarapita": "larapita",
+                "alcocerdeplanes": "alcosser", "villanuevadecastellon": "castello"}}
 EDU = re.compile(r"comisi[óo]n (de )?educaci[óo]n|educaci[óo]n.*comisi[óo]n|comisi[óo]n de cultura y educaci[óo]n", re.I)
 COUNCIL = re.compile(r"sesi[óo]n|plenaria|concejo", re.I)
 COUNCIL_MUST = re.compile(r"concejo|sesi[óo]n (ordinaria|extraordinaria|plenaria|n[°º.]|del concejo)|plenaria", re.I)
@@ -69,7 +72,7 @@ def centroid(geom):
 
 
 _CACHE = {}
-DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru"}
+DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain"}
 # Brazil: municipal chambers (câmara municipal) and their education committees, in Portuguese.
 RULES = {"BR": (re.compile(r"comiss[ãa]o (permanente )?de educa[çc][ãa]o|educa[çc][ãa]o.*comiss[ãa]o", re.I),
                 re.compile(r"sess[ãa]o|c[âa]mara", re.I),
@@ -207,7 +210,7 @@ def owners(cc, rows):
     yt = _CACHE[cc][0]
     words = lambda s: " " + re.sub(r"[^a-z]+", " ", unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()) + " "
     regions = {words(r["Region"]).strip() for r in rows if r.get("Region")}
-    names = {words(r["District"]).strip() for r in rows}
+    names = {words(x).strip() for r in rows for x in r.get("_names") or [r["District"]]}
     by = {}
     for r in rows:
         y = yt.get(r["District ID"]) or {}
@@ -220,8 +223,9 @@ def owners(cc, rows):
         # Brazilian channel names often end with the state's abbreviation ("Rio Negro - PR", "Belém PB", "(SC)").
         abbr = {a for a in re.findall(r"(?:[-/(–]\s*|\s)([A-Z]{2})\b\)?\s*$", raw.strip())} if cc == "BR" else set()
         def score(r):
-            nm = words(r["District"]).strip()
-            if " " + nm + " " not in ch: return -1
+            alts = [words(x).strip() for x in r.get("_names") or [r["District"]]]   # Spain: "Alacant / Alicante"
+            nm = next((a for a in alts if " " + a + " " in ch), "")
+            if not nm: return -1
             if any(len(o) > len(nm) and " " + nm + " " in " " + o + " " and " " + o + " " in ch for o in names): return -1   # "Alfredo Chaves", not Chaves
             other = any(" " + g + " " in ch for g in regions - {words(r["Region"]).strip()} if " " + g + " " not in " " + nm + " ")
             named = " " + words(r["Region"]).strip() + " " in ch or (cc == "CO" and words(r["Region"]).split()[0] in ch.split())
@@ -245,12 +249,14 @@ def write(cc, key, rows, feats):
         latest, years = date_summary(keep) if n else ("", "")
         r.update({"Available Board Meetings": n, "Meetings type": kind, "Meetings source": url, "Latest meeting": latest, "Meetings by year": years})
     cols = ["District", "Region", "Locale", "Available Board Meetings", "Meetings type", "Meetings source", "Latest meeting", "Meetings by year",
-            "Population", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
+            "Population", "Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
-    extra = [c for c in ("Province", "Poverty range", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households") if any(r.get(c) not in (None, "") for r in rows)]
-    pov = "Poverty rate (all ages)"
+    extra = [c for c in ("Province", "Autonomous community", "Children under 18 (estimated)", "Poverty year", "Poverty range", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households") if any(r.get(c) not in (None, "") for r in rows)]
+    pov = "Percentage of Children in Low Income" if any(r.get("Percentage of Children in Low Income") for r in rows) else "Poverty rate (all ages)"
+    cols = [c for c in cols if c not in ("Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)") or any(r.get(c) not in (None, "") for r in rows)]
     cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
-    if "Province" in cols: cols.remove("Province"); cols.insert(cols.index("Region") + 1, "Province")
+    for c in ("Autonomous community", "Province"):
+        if c in cols: cols.remove(c); cols.insert(cols.index("Region") + 1, c)
     rows.sort(key=lambda r: r["District"])
     with open(os.path.join(DOCS, f"{key}.csv"), "w", newline="", encoding="utf-8") as fo:
         w = csv.DictWriter(fo, fieldnames=cols, restval="", extrasaction="ignore"); w.writeheader(); w.writerows(rows)
@@ -475,6 +481,32 @@ PE_DEPT = {"01": "Amazonas", "02": "Áncash", "03": "Apurímac", "04": "Arequipa
            "22": "San Martín", "23": "Tacna", "24": "Tumbes", "25": "Ucayali"}
 
 
+# Spain's provinces by INE code (the first two digits of a municipality's code).
+ES_PROV = {"01": "Álava", "02": "Albacete", "03": "Alicante", "04": "Almería", "05": "Ávila", "06": "Badajoz", "07": "Illes Balears",
+           "08": "Barcelona", "09": "Burgos", "10": "Cáceres", "11": "Cádiz", "12": "Castellón", "13": "Ciudad Real", "14": "Córdoba",
+           "15": "A Coruña", "16": "Cuenca", "17": "Girona", "18": "Granada", "19": "Guadalajara", "20": "Gipuzkoa", "21": "Huelva",
+           "22": "Huesca", "23": "Jaén", "24": "León", "25": "Lleida", "26": "La Rioja", "27": "Lugo", "28": "Madrid", "29": "Málaga",
+           "30": "Murcia", "31": "Navarra", "32": "Ourense", "33": "Asturias", "34": "Palencia", "35": "Las Palmas", "36": "Pontevedra",
+           "37": "Salamanca", "38": "Santa Cruz de Tenerife", "39": "Cantabria", "40": "Segovia", "41": "Sevilla", "42": "Soria",
+           "43": "Tarragona", "44": "Teruel", "45": "Toledo", "46": "Valencia", "47": "Valladolid", "48": "Bizkaia", "49": "Zamora",
+           "50": "Zaragoza", "51": "Ceuta", "52": "Melilla"}
+ES_CCAA = {"Andalucía": "04 11 14 18 21 23 29 41", "Aragón": "22 44 50", "Asturias": "33", "Illes Balears": "07", "Canarias": "35 38",
+           "Cantabria": "39", "Castilla y León": "05 09 24 34 37 40 42 47 49", "Castilla-La Mancha": "02 13 16 19 45",
+           "Cataluña": "08 17 25 43", "Comunitat Valenciana": "03 12 46", "Extremadura": "06 10", "Galicia": "15 27 32 36",
+           "Madrid": "28", "Murcia": "30", "Navarra": "31", "País Vasco": "01 20 48", "La Rioja": "26", "Ceuta": "51", "Melilla": "52"}
+ES_CCAA = {c: k for k, v in ES_CCAA.items() for c in v.split()}
+
+
+def es_parts(n):
+    """INE names put articles last and give co-official forms with a slash: 'Rozas de Madrid, Las' -> ['Las Rozas de Madrid'],
+    'Poble Nou de Benitatxell, el/Benitachell' -> ['el Poble Nou de Benitatxell', 'Benitachell']."""
+    out = []
+    for x in n.split("/"):
+        m = re.fullmatch(r"(.+?), (la|las|el|els|los|les|l'|o|os|a|as|lo|la|sa|ses|es|s')", x.strip(), re.I)
+        out.append((m.group(2)[0].upper() + m.group(2)[1:] + ("" if m.group(2).endswith("'") else " ") + m.group(1)) if m else x.strip())
+    return out
+
+
 def es_title(s):
     """'SAN JUAN DE LOPECANCHA' -> 'San Juan de Lopecancha'."""
     small = {"de", "del", "la", "las", "los", "el", "y", "e", "en"}
@@ -514,6 +546,54 @@ def peru():
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": d["name"]}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
     write("PE", "peru", rows, feats)
+
+
+def spain():
+    """8,132 municipalities. Schools are run by each autonomous community's education department; municipalities
+    look after primary school buildings. The town council's plenary session (pleno) stands in for meetings.
+    Child poverty: INE's household income atlas (ADRH), people under 18 below 60% of the national median income
+    per consumption unit; INE suppresses it for small municipalities."""
+    d = os.path.join(IN, "spain")
+    dem = json.load(open(os.path.join(d, "ine_adrh_demographics.json"), encoding="utf-8"))
+    pov = json.load(open(os.path.join(d, "ine_adrh_under18_below60.json"), encoding="utf-8"))
+    adm1 = json.load(open(os.path.join(d, "gb_ESP_ADM2.geojson"), encoding="utf-8"))["features"]
+    pn = {norm(v): k for k, v in ES_PROV.items()}
+    pn.update({"balearsilles": "07", "coruna": "15", "palmaslas": "35", "riojala": "26", "alava": "01"})
+    st = {id(f): pn[norm(f["properties"]["shapeName"])] for f in adm1}
+    adm3 = json.load(open(os.path.join(d, "gb_ESP_ADM3_simplified.geojson"), encoding="utf-8"))["features"]
+    geo = {}
+    # Names as INE writes them, then each form of a two-language name on either side ("Alacant/Alicante" in INE,
+    # "Alicante/Alacant" in the borders file).
+    for alt in range(4):
+        todo = [c for c in dem if c not in geo]
+        used = {id(f) for f in geo.values()}
+        cand = []
+        for f in adm3:
+            if id(f) in used: continue
+            ns = f["properties"]["shapeName"].split("/")
+            for n in (ns if alt % 2 else [f["properties"]["shapeName"]]):
+                cand.append({"properties": {"shapeName": n}, "geometry": f["geometry"], "_f": f})
+        rows_ = [{"name": (es_parts(dem[c]["name"]) * 2)[alt // 2] if alt >= 2 else dem[c]["name"] if alt == 0 else es_parts(dem[c]["name"])[0], "state": c[:2], "id": c} for c in todo]
+        got = adm_match("ES", rows_, cand, adm1, st)
+        for k, v in got.items():
+            if v and id(v["_f"]) not in {id(g) for g in geo.values()}: geo[k] = v["_f"]
+    rows, feats = [], []
+    for code, x in sorted(dem.items()):
+        parts = es_parts(x["name"]); name = " / ".join(parts)
+        people = int(x["pop"]) if x.get("pop") else 0
+        kids = round(people * x["pct18"] / 100) if people and x.get("pct18") is not None else ""
+        p = pov.get(code, {}); y = max(p) if p else ""
+        f = geo.get(code); area = area_km2(f["geometry"]) if f else 0
+        dens = people / area if area and people else 0
+        did = f"ES-{code}"
+        rows.append({"District": name, "_names": parts, "Region": ES_PROV[code[:2]], "Autonomous community": ES_CCAA[code[:2]], "Population": people or "",
+                     "Percentage of Children in Low Income": f"{p[y]:.1f}%" if p else "", "Poverty year": y,
+                     "Poverty by year": "; ".join(f"{k}:{v:.1f}" for k, v in sorted(p.items())),
+                     "Poverty note": "People under 18 in households below 60% of the national median income per consumption unit (INE, household income atlas)" if p else "Not published for this municipality (INE leaves out small municipalities)",
+                     "Children under 18 (estimated)": kids, "School system": f"{ES_CCAA[code[:2]]} education department",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
+        if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    write("ES", "spain", rows, feats)
 
 
 if __name__ == "__main__":
