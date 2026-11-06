@@ -209,6 +209,17 @@ window.STATE_RULES = {
     ],
     note: "Check the current law before relying on this."
   },
+  mexico: {
+    title: "Rules for town council (cabildo) meetings",
+    checked: "November 6, 2026",
+    laws: [
+      { state: "Mexico", covers: "Town councils (cabildos / ayuntamientos)", threshold: "",
+        rule: "Cabildo sessions are public under each state's municipal law (ley orgánica municipal), with closed sessions allowed for listed matters; the General Transparency Law requires minutes and agreements to be published. Several states require sessions to be streamed online; others don't." },
+      { state: "Mexico", covers: "Public schools", threshold: "",
+        rule: "Basic education is run by each state's education authority under the General Education Law; municipalities have no school board. Schools' parent bodies (Consejos de Participación Escolar) meet at school level." }
+    ],
+    note: "Rules differ by state. Check the state's municipal law before relying on this."
+  },
   colombia: {
     title: "Rules for municipal council meetings",
     checked: "November 6, 2026",

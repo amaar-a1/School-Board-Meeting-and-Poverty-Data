@@ -171,6 +171,18 @@ window.SITE_CONFIG = {
       sizeYearNote: "Municipalities are grouped by estimated enrollment in 2024: children 5–16 times the net enrollment rate (Ministry of Education).",
       note: "Colombia's {rows} municipalities. Schools are run by 96 certified territorial entities (ETC): departments, districts and the larger municipalities; the School system column names the one in charge. Poverty is the share of people of all ages who are multidimensionally poor (DANE, 2018 census), since no child or income rate is published by municipality. The meeting count is a stand-in: sessions of the elected municipal council (concejo municipal) on its YouTube channel (its education committee where recorded), counted once per day, found for {withMeetings} municipalities; many councils stream on Facebook instead.",
       footer: "Colombian municipalities as of November 2026. Sources are listed on the Sources tab." },
+    // Mexico: 2,469 municipalities; schools run by each state's education authority, so town councils stand in.
+    { name: "Mexico", file: "data/mexico.csv", country: "MX", recordLabel: "Municipalities", textColumns: ["District ID", "Enrollment year"],
+      simple: { pov: "Poverty rate (all ages)", children: "Children 6–17", measure: "Multidimensional poverty, all ages (CONEVAL, 2020)", rules: "mexico", place: "Region" },
+      groups: { column: "Region", label: "Mexico", names: {"AGUASCALIENTES": "Aguascalientes", "BAJACALIFORNIA": "Baja California", "BAJACALIFORNIASUR": "Baja California Sur", "CAMPECHE": "Campeche", "CHIAPAS": "Chiapas", "CHIHUAHUA": "Chihuahua", "CIUDADDEMEXICO": "Ciudad de México", "COAHUILA": "Coahuila", "COLIMA": "Colima", "DURANGO": "Durango", "ESTADODEMEXICO": "Estado de México", "GUANAJUATO": "Guanajuato", "GUERRERO": "Guerrero", "HIDALGO": "Hidalgo", "JALISCO": "Jalisco", "MICHOACAN": "Michoacán", "MORELOS": "Morelos", "NAYARIT": "Nayarit", "NUEVOLEON": "Nuevo León", "OAXACA": "Oaxaca", "PUEBLA": "Puebla", "QUERETARO": "Querétaro", "QUINTANAROO": "Quintana Roo", "SANLUISPOTOSI": "San Luis Potosí", "SINALOA": "Sinaloa", "SONORA": "Sonora", "TABASCO": "Tabasco", "TAMAULIPAS": "Tamaulipas", "TLAXCALA": "Tlaxcala", "VERACRUZ": "Veracruz", "YUCATAN": "Yucatán", "ZACATECAS": "Zacatecas"} },
+      chart: { type: "scatter", x: "Poverty rate (all ages)", y: "Available Board Meetings" },
+      compare: { title: "Poverty: municipalities with vs. without council sessions found", by: "Available Board Meetings",
+        metric: "Poverty rate (all ages)", withLabel: "With 1+ sessions found", withoutLabel: "With no sessions found" },
+      localeNote: "Municipalities are grouped by an estimated locale (see below).",
+      localeDef: "Locales are estimates from population density (2020 census population over the municipality's area): urban 2,000+ people per km², suburban 500–2,000, mixed 100–500, rural under 100.",
+      sizeYearNote: "Municipalities are grouped by estimated enrollment: children 6–17 counted as attending school in the 2020 census (INEGI).",
+      note: "Mexico's {rows} municipalities. Mexican municipalities don't run schools: public basic education is run by each state's education authority (mostly paid for by the federal Secretaría de Educación Pública), so there's no local school board. Poverty is the share of people of all ages in multidimensional poverty (income below the poverty line and at least one social deprivation) in 2020 (CONEVAL; extreme poverty and the 2010 and 2015 rates are in their own columns), since no child rate is published by municipality. Enrollment is an estimate: children 6–17 the 2020 census counted as attending school. The meeting count is a stand-in: sessions of the elected town council (cabildo, the ayuntamiento's governing body) on the municipality's YouTube channel (its education committee where recorded), counted once per day, found for {withMeetings} municipalities; many councils stream on Facebook instead. 12 municipalities created after 2012 have no border on the map.",
+      footer: "Mexican municipalities as of November 2026. Sources are listed on the Sources tab." },
     // Germany: 400 districts and district-free cities (the school authorities), with each state's view.
     { name: "Germany", file: "data/germany.csv", country: "DE", recordLabel: "Districts", textColumns: ["District ID"],
       simple: { pov: "Percentage of Children in Low Income", children: "Children", measure: "Children under 15 receiving basic income support (SGB II), 2023 (Bertelsmann Stiftung, Wegweiser Kommune)", rules: "germany", place: "State" },
@@ -214,7 +226,7 @@ window.SITE_CONFIG = {
   ],
   // "All" button: every US district, territory school system and Canadian board together.
   combined: {
-    name: "All: United States, U.S. territories, Canada, Saint-Pierre-et-Miquelon, the United Kingdom, Ireland, the Nordic countries (with Iceland), the Netherlands, Switzerland, Germany, New Zealand, Chile, Colombia and island countries", button: "All", recordLabel: "Districts and boards",
+    name: "All: United States, U.S. territories, Canada, Saint-Pierre-et-Miquelon, the United Kingdom, Ireland, the Nordic countries (with Iceland), the Netherlands, Switzerland, Germany, New Zealand, Chile, Colombia, Mexico and island countries", button: "All", recordLabel: "Districts and boards",
     textColumns: ["District ID"], metric: "Child poverty rate",
     measures: {
       us: "Children 5–17 in poverty (Census SAIPE 2024)",
