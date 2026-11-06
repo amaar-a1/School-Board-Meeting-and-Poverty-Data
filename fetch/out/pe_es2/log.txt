@@ -1,0 +1,98 @@
+== ES table 30662 metadata 200 application/json;charset=UTF-8 41
+La operación indicada no existe (TABLA)
+
+
+== ES table 30662 series (first page) 200 application/json;charset=UTF-8 8988905
+[{"Id":6192073, "COD":"ADRH6192073", "FK_Operacion":353, "Nombre":"Albacete distrito 05. Total. Menos de 18 años. Dato base. Población con ingresos por unidad de consumo por debajo 40% de la mediana. ", "Decimales":1, "FK_Periodicidad":12, "FK_Publicacion":507, "FK_Clasificacion":null, "FK_Escala":1, "FK_Unidad":101}
+,{"Id":6192072, "COD":"ADRH6192072", "FK_Operacion":353, "Nombre":"Albacete distrito 05. Total. Menos de 18 años. Dato base. Población con ingresos por unidad de consumo por debajo 50% de la mediana. ", "Decimales":1, "FK_Periodicidad":12, "FK_Publicacion":507, "FK_Clasificacion":null, "FK_Escala":1, "FK_Unidad":101}
+,{"Id":6192071, "COD":"ADRH6192071", "FK_Operacion":353, "Nombre":"Albacete distrito 05. Total. Menos de 18 años. Dato base. Población con ingresos por unidad de consumo por debajo 60% de la mediana. ", "Decimales":1, "FK_Periodicidad":12, "FK_Publicacion":507, "FK_Clasificacion":null, "FK_Escala":1, "FK_Unidad":101}
+,{"Id":6192070, "COD":"ADRH6192070", "FK_Operacion":353, "Nombre":"Albacete distrito 05. Total. Menos de 18 años. Dato base. Población con ingresos por unidad de consumo por encima 140% de la mediana. ", "Decimales":1, "FK_Periodicidad":12, "FK_Publicacion":507, "FK_Clasificacion":null, "FK_Escala":1, "FK_Unidad":101}
+,{"Id":6192069, "COD":"ADRH6192069", "FK_Operacion":353, "Nombre":"Albacete distrito 05. Total. Menos de 18 años. Dato base. Población con ingresos por unidad de consumo por encima 160% de la mediana. ", "Decimales":1, "FK_Periodicidad":12, "FK_Publicacion":507, "FK_Clasificacion":null, "FK_Escala":1, "FK_Unidad":101}
+,{"Id":6192068, "COD":"ADRH6192068", "FK_Operacion":353, "Nombre":"Albacete distrito 05. Total. Menos de 18 años. Dato base. Población con ingresos por unidad de consumo por encima 200% de la mediana. ", "Decimales":1, "FK_Periodicidad":12, "FK_Publicacion":507, "FK_Clasificacion":null, "FK_Escala":1, "FK_Unidad":101}
+,{"Id":6192061, "COD":"ADRH6192061", "FK_Operacion":353, "Nombre":"Albacete distrito 05. Total. De 18 a 64 años. Dato base. Población con ingresos por unidad de consumo por debajo 40% de la mediana. ", "Decimales":1, "FK_Periodicidad":12, "FK_Publicacion":507, "FK_Clasificacion":null, "FK_Escala":1, "FK_Unidad":101}
+,{"Id":6192060, "COD":"ADRH6192060", "FK_Operacion":353, "Nombre":"Albacete distrito 05. Total. De 18 a 64 años. Dato base. Población con ingresos por unidad de consumo por debajo 50% de la mediana. ", "Decimales":1, "FK_Periodicidad":12, "FK_Publicacion":507, "FK_Clasificacion":null, "FK_Escala":1, "FK_Unidad":101}
+,{"Id":6192059, "COD":"ADRH6192059", "FK_Operacion":353, "Nombre":"Albacete distrito 05. Total. De 18 a 64 años. Dato base. Población con ingresos por unidad de consumo por debajo 60% de la mediana. ", "Decimales":1, "FK_Periodicidad":12, "FK_Publicacion":507, "FK_Clasificacion":null, "FK_Escala":1, "FK_Unidad":101}
+,{"Id":6192058, "COD":"ADRH6192058", "FK_Operacion":353, "Nombre":"Albacete distrito 05. Total. De 18 a 64 año
+
+== ES table 30662 data nult=1 200 application/json;charset=UTF-8 11359405
+[{"COD":"ADRH6192073", "Nombre":"Albacete distrito 05. Total. Menos de 18 años. Dato base. Población con ingresos por unidad de consumo por debajo 40% de la mediana. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":16.4}
+]
+}
+,{"COD":"ADRH6192072", "Nombre":"Albacete distrito 05. Total. Menos de 18 años. Dato base. Población con ingresos por unidad de consumo por debajo 50% de la mediana. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":24.3}
+]
+}
+,{"COD":"ADRH6192071", "Nombre":"Albacete distrito 05. Total. Menos de 18 años. Dato base. Población con ingresos por unidad de consumo por debajo 60% de la mediana. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":33.1}
+]
+}
+,{"COD":"ADRH6192070", "Nombre":"Albacete distrito 05. Total. Menos de 18 años. Dato base. Población con ingresos por unidad de consumo por encima 140% de la mediana. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":14.7}
+]
+}
+,{"COD":"ADRH6192069", "Nombre":"Albacete distrito 05. Total. Menos de 18 años. Dato base. Población con ingresos por unidad de consumo por encima 160% de la mediana. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":9.1}
+]
+}
+,{"COD":"ADRH6192068", "Nombre":"Albacete distrito 05. Total. Menos de 18 años. Dato base. Población con ingresos por unidad de consumo por encima 200% de la mediana. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":3.4}
+]
+}
+,{"COD":"ADRH6192061", "Nombre":"Albacete distrito 05. Total. De 18 a 64 años. Dato base. Población con ingresos por unidad de consumo por debajo 40% de la mediana. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":12.3}
+]
+}
+,{"COD":"ADRH6192060", "Nombre":"Albacete distrito 05. Total. De 18 a 64 años. Dato base. Población con ingreso
+
+== HDX Peru COD-AB 200 application/json;charset=utf-8 35590
+{"help": "https://data.humdata.org/api/3/action/help_show?name=package_show", "success": true, "result": {"archived": false, "batch": "354343cf-2888-407a-a123-3abb8685629e", "caveats": "[HDX dataset name edited 2018 05 10]", "cod_level": "cod-enhanced", "creator_user_id": "e1f96c47-dc8d-4c92-a096-5e15ea8abf10", "data_update_frequency": "365", "dataset_date": "[2020-07-14T00:00:00 TO 2025-10-30T23:59:59]", "dataset_preview": "resource_id", "dataset_source": "Instituto Geogr\u00e1fico Nacional - IGN", "due_date": "2026-10-30T23:59:59", "has_geodata": true, "has_showcases": false, "id": "54fc7f4d-f4c0-4892-91f6-2fe7c1ecf363", "is_requestdata_type": false, "isopen": false, "last_modified": "2026-01-26T16:06:20.816993", "license_id": "cc-by-igo", "license_title": "Creative Commons Attribution for Intergovernmental Organisations (CC BY-IGO)", "license_url": "http://creativecommons.org/licenses/by/3.0/igo/legalcode", "maintainer": "0ad0784a-b5e1-45d4-bf2d-5530f5d1d239", "metadata_created": "2015-07-24T16:35:54.613193", "metadata_modified": "2026-08-14T06:39:33.294563", "methodology": "Other", "methodology_other": "Dataset: Direct Observational Data/Anecdotal Data", "name": "cod-ab-per", "notes": "Peru administrative level 0-3 boundaries (COD-AB) dataset version 01.  \n  \nThis dataset is structured into 3 levels:  \n- Admin 1: 25   \n- Admin 2: 196   \n- Admin 3: 1873   \n  \n  \nDates associated with this dataset:  \n- 30 October 2025: dataset reviewed for accuracy and completeness  \n- 14 July 2020: valid for use by the humanitarian community  \n- 24 July 2015: last edit to the dataset before publishing  \n- 24 July 2015: boundaries created by the source  \n  \nContributed by [OCHA Latin America and the Caribbean (ROLAC)](https://data.humdata.org/organization/ocha-rolac).  \nQuality assured, configured, and published by [OCHA Field Information Services (FIS)](https://data.humdata.org/organization/ocha-fiss) and [HDX](https://data.humdata.org/organization/hdx).  \n  \nPart of the dataset: [Global Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-global)", "num_resources": 4, "num_tags": 3, "organization": {"id": "b3a25ac4-ac05-4991-923c-d25f47bef1ec", "name": "ocha-fiss", "title": "OCHA Field Information Services Section (FISS)", "type": "organization", "description": "UN Office for the Coordination of Humanitarian Affairs - Field Information Services Section based in Geneva, Switzerland.\r\n\r\nGeneric e-mail (ocha-fis-data@un.org)", "image_url": "", "created": "2014-08-15T06:32:04.343540", "is_organization": true, "approval_status": "approved", "state": "active"}, "owner_org": "b3a25ac4-ac05-4991-923c-d25f47bef1ec", "package_creator": "laurastefania", "pageviews_last_14_days": 63, "private": false, "qa_completed": false, "solr_additions": "{\"countries\": [\"Peru\"]}", "state": "active", "subnational": "1", "title": "Peru - Subnational Administrative Boundaries", "total_res_downloads": 5700, "type": "dataset", "updated_by_script": "HDX Scraper: COD-AB Country (2026-08-14T06:39:33.082938)", "url": null, "version": null, "groups": [{"description": "", "display_name": "Peru", "id": "per", "image_display_url": "", "name": "per", "title": "Peru"}], "resources": [{"alt_url": "https://data.humdata.org/dataset/54fc7f4d-f4c0-4892-91f6-2fe7c1ecf363/resource/b45a5d27-dbcb-4c7a-a550-5564a9558ab2/download/", "cache_last_updated": null, "cache_url": null, "created": "2025-12-18T17:31:12.237849", "datastore_active": false, "description": "Peru administrative level 0-3 boundaries (COD-AB), Geodatabase", "download_url": "https://data.humdata.org/dataset/54fc7f4d-f4c0-4892-91f6-2fe7c1ecf363/resource/b45a5d27-dbcb-4c7a-a550-5564a9558ab2/download/per_admin_boundaries.gdb.zip", "format": "Geodatabase", "hash": "e1626518", "hdx_rel_url": "/dataset/54fc7f4d-f4c0-4892-91f6-2fe7c1ecf363/resource/b45a5d27-dbcb-4c7a-a550-5564a9558ab2/download/per_admin_boundaries.gdb.zip", "id": "b45a5d27-dbcb-4c7a-a550-5564a9558ab2", "last_modi
+
+== INEI search mapa de pobreza distrital 200 text/html; charset=utf-8 34888
+  <!DOCTYPE html>
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="google-site-verification" content="nkEPKuK-j3faZ-AIIrVt5F8LGKQehdTR3i79x_jnYLk" />
+    <meta charset="UTF-8"
+
+== INEI search pobreza monetaria distrital 200 text/html; charset=utf-8 32827
+  <!DOCTYPE html>
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="google-site-verification" content="nkEPKuK-j3faZ-AIIrVt5F8LGKQehdTR3i79x_jnYLk" />
+    <meta charset="UTF-8"
+
+== INEI poverty map 2018 book 200 application/pdf 43656339
+%PDF-1.4%����
+5548 0 obj<</Linearized 1/L 43618663/O 5550/E 274431/N 303/T 43507581/H [ 494 5201]
+
+== ESCALE padron page 200 text/html 15315
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Verification — Check Point</title>
+ 
+
+== ESCALE magnitudes 200 text/html 15295
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Verification — Check Point</title>
+ 
+
+== ESCALE descargas 200 text/html 15347
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Verification — Check Point</title>
+ 
+
