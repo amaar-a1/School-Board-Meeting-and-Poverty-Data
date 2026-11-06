@@ -1,0 +1,16 @@
+30830: ERR Traceback (most recent call last):
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 18, in <module>
+    rd = csv.reader(io.StringIO(t), delimiter="\t" if t.count("\t") > t.count(";") else ";")
+                    ~~~~~~~~~~~^^^
+MemoryError
+
+30902 row {'Municipios': '08001 Abrera', 'Distritos': '', 'Secciones': '', 'Sexo': 'Total', 'Tramos de edad': 'Menos de 18 años', 'Distribución de la renta por unidad de consumo': 'Población con ingresos por unidad de consumo por debajo 40% de la mediana', 'Periodo': '2024', 'Total': '5,6'}
+30902 row {'Municipios': '08001 Abrera', 'Distritos': '', 'Secciones': '', 'Sexo': 'Total', 'Tramos de edad': 'Menos de 18 años', 'Distribución de la renta por unidad de consumo': 'Población con ingresos por unidad de consumo por debajo 40% de la mediana', 'Periodo': '2023', 'Total': '7,6'}
+30902: 470415727 bytes, header ['Municipios', 'Distritos', 'Secciones', 'Sexo', 'Tramos de edad', 'Distribución de la renta por unidad de consumo', 'Periodo', 'Total'], 2427300 rows, kept 269700
+31103 row {'Municipios': '28001 Acebeda, La', 'Distritos': '', 'Secciones': '', 'Sexo': 'Total', 'Tramos de edad': 'Menos de 18 años', 'Distribución de la renta por unidad de consumo': 'Población con ingresos por unidad de consumo por debajo 40% de la mediana', 'Periodo': '2024', 'Total': '.'}
+31103 row {'Municipios': '28001 Acebeda, La', 'Distritos': '', 'Secciones': '', 'Sexo': 'Total', 'Tramos de edad': 'Menos de 18 años', 'Distribución de la renta por unidad de consumo': 'Población con ingresos por unidad de consumo por debajo 40% de la mediana', 'Periodo': '2023', 'Total': '.'}
+31103: 506678274 bytes, header ['Municipios', 'Distritos', 'Secciones', 'Sexo', 'Tramos de edad', 'Distribución de la renta por unidad de consumo', 'Periodo', 'Total'], 2705940 rows, kept 300660
+31256 row {'Municipios': '46001 Ademuz', 'Distritos': '', 'Secciones': '', 'Sexo': 'Total', 'Tramos de edad': 'Menos de 18 años', 'Distribución de la renta por unidad de consumo': 'Población con ingresos por unidad de consumo por debajo 40% de la mediana', 'Periodo': '2024', 'Total': '18,6'}
+31256 row {'Municipios': '46001 Ademuz', 'Distritos': '', 'Secciones': '', 'Sexo': 'Total', 'Tramos de edad': 'Menos de 18 años', 'Distribución de la renta por unidad de consumo': 'Población con ingresos por unidad de consumo por debajo 40% de la mediana', 'Periodo': '2023', 'Total': '.'}
+31256: 241864929 bytes, header ['Municipios', 'Distritos', 'Secciones', 'Sexo', 'Tramos de edad', 'Distribución de la renta por unidad de consumo', 'Periodo', 'Total'], 1345680 rows, kept 149520
+total kept 719880, municipal 45360
