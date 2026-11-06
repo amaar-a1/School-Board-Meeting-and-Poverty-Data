@@ -152,15 +152,16 @@ window.SOURCES = [
   },
   {
     only: "Germany",
-    group: "Germany: districts, child poverty and population",
+    group: "Germany: districts, child poverty, population and pupils",
     items: [
       { title: "Child poverty: Bertelsmann Stiftung, Wegweiser Kommune, indicator “Kinderarmut” (children under 15 receiving SGB II basic income support), 2023, CC0 licence", url: "https://www.wegweiser-kommune.de/daten/kinderarmut" },
       { title: "Children under 15: Eurostat demo_r_pjanaggr3 (population on 1 January by broad age group, NUTS 3)", url: "https://ec.europa.eu/eurostat/databrowser/view/demo_r_pjanaggr3/default/table" },
       { title: "Density: Eurostat demo_r_d3dens (population density, NUTS 3)", url: "https://ec.europa.eu/eurostat/databrowser/view/demo_r_d3dens/default/table" },
+      { title: "Enrollment: Statistische Ämter des Bundes und der Länder, Regionaldatenbank Deutschland, table 21111-01-03-4 (pupils at general schools by school type and district, start of the 2024/25 school year), Datenlizenz Deutschland – Namensnennung 2.0", url: "https://www.regionalstatistik.de/genesis/online?operation=table&code=21111-01-03-4" },
       { title: "Meetings: each district's or city's own YouTube channel (in the “Meetings source” column), found with data-prep/nordic_youtube.py and filtered in data-prep/build_germany.py", url: "https://www.youtube.com/" },
       { title: "Borders: Eurostat GISCO NUTS 2021, level 3, 1:10 million", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics" }
     ],
-    note: "Wegweiser Kommune's districts were matched to the NUTS borders by name (data-prep/inputs/germany/de_ww_search.json); six that the search missed were matched by hand. Built by data-prep/build_germany.py."
+    note: "Wegweiser Kommune's districts were matched to the NUTS borders by name (data-prep/inputs/germany/de_ww_search.json); six that the search missed were matched by hand. The Regionaldatenbank's districts (German district codes) were matched to the NUTS districts by name within each state, keeping each city apart from the surrounding district of the same name; Eisenach, merged into the Wartburgkreis in 2021, is counted there. Built by data-prep/build_germany.py."
   },
   {
     only: "New Zealand",
