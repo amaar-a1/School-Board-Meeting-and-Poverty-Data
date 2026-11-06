@@ -1,0 +1,397 @@
+== civicsearch search (20s)
+https://schools.civicsearch.org/api/search?keywords=meeting&lonlat=-74.51459084754855%2C40.63234677608026&search_radius=0 200 92807 type dict keys ['location_counts', 'matched_meeting_counts', 'meeting_counts', 'num_places', 'num_results', 'num_snippets', 'places', 'points_of_interest', 'related_keywords', 'results', 'summary', 'topic_counts']
+b'{"location_counts":[[["warren-township-school-district-new-jersey","Warren Township School District, New Jersey"],14]],"matched_meeting_counts":{"month_2025-01":2,"month_2025-02":1,"month_2025-03":1,"month_2025-04":1,"month_2025-05":1,"month_2025-06":1,"month_2025-07":1,"month_2025-08":1,"month_2025-09":1,"month_2025-10":1,"month_2025-11":1,"month_2025-12":1,"month_2026-01":1},"meeting_counts":{"month_2025-01":1306,"month_2025-02":1570,"month_2025-03":1821,"month_2025-04":1568,"month_2025-05":1651,"month_2025-06":1748,"month_2025-07":1055,"month_2025-08":1487,"month_2025-09":1802,"month_2025-10":1873,"month_2025-11":1551,"month_2025-12":1398,"month_2026-01":916,"month_2026-02":1,"state_Alabama":126,"state_Alaska":63,"state_Arizona":354,"state_Arkansas":146,"state_California":1737,"state_Colorado":302,"state_Connecticut":496,"state_Delaware":26,"state_Florida":405,"state_Georgia":186,"state_Idaho":167,"state_Illinois":594,"state_Indiana":747,"state_Iowa":377,"state_Kansas":117,"state_Kentucky":220,"state_Louisiana":136,"state_Maine":133,"state_Maryland":281,"state_Massachusetts":184,"state_Michigan":641,"state_Minnesota":608,"state_Mississippi":102,"state_Missouri":353,"state_Montana":21,"state_Nebraska":125,"state_Nevada":64,"state_New Hampshire":49,"state_New Jersey":1032,"state_New Mexico":131,"state_New York":1726,"state_North Carolina":547,"state_North Dakota":90,"state_Ohio":1313,"state_Oklahoma":83,"state_Oregon":450,"state_Pennsylvania":1453,"state_Rhode Island":4,"state_South Carolina":220,"state_South Dakota":144,"state_Tennessee":109,"state_Texas":1393,"state_Utah":159,"state_Virginia":576,"state_Washington":463,"state_West":105,"state_Wisconsin":924,"state_Wyoming":65},"num_places":1,"num_results":14,"num_snippets":269,"places":[{"centroid_lat":40.63234677608026,"centroid_lon":-74.51459084754855,"county_name":"","display_name":"Warren Township School District, New Jersey","place_name":"Warren Township School District sb","query_id":"warren-township-school-district-new-jersey","st_fips":983416980,"state_name":"New Jersey"}],"points_of_interest":[],"related_keywords":["meetings","forum","regular meeting","board retreat","public hearing","topic","executive session"],"results":[{"date":"2026-01-05","distance":0,"has_approximate_timings":false,"location":"Warren Township School District, New Jersey","location_query_id":"warren-township-school-district-new-jersey","snippets":[{"text":"The adequate notice of this regular <mark>meeting</mark> as require'
+https://schools.civicsearch.org/api/search?keywords=board&lonlat=-74.51459084754855%2C40.63234677608026&search_radius=0&start_date=2020-01-01&end_date=2026-12-31 200 186907 type dict keys ['location_counts', 'matched_meeting_counts', 'meeting_counts', 'num_places', 'num_results', 'num_snippets', 'places', 'points_of_interest', 'related_keywords', 'results', 'summary', 'topic_counts']
+b'{"location_counts":[[["warren-township-school-district-new-jersey","Warren Township School District, New Jersey"],14]],"matched_meeting_counts":{"month_2025-01":2,"month_2025-02":1,"month_2025-03":1,"month_2025-04":1,"month_2025-05":1,"month_2025-06":1,"month_2025-07":1,"month_2025-08":1,"month_2025-09":1,"month_2025-10":1,"month_2025-11":1,"month_2025-12":1,"month_2026-01":1},"meeting_counts":{"month_2025-01":1306,"month_2025-02":1570,"month_2025-03":1821,"month_2025-04":1568,"month_2025-05":1651,"month_2025-06":1748,"month_2025-07":1055,"month_2025-08":1487,"month_2025-09":1802,"month_2025-10":1873,"month_2025-11":1551,"month_2025-12":1398,"month_2026-01":916,"month_2026-02":1,"state_Alabama":126,"state_Alaska":63,"state_Arizona":354,"state_Arkansas":146,"state_California":1737,"state_Colorado":302,"state_Connecticut":496,"state_Delaware":26,"state_Florida":405,"state_Georgia":186,"state_Idaho":167,"state_Illinois":594,"state_Indiana":747,"state_Iowa":377,"state_Kansas":117,"state_Kentucky":220,"state_Louisiana":136,"state_Maine":133,"state_Maryland":281,"state_Massachusetts":184,"state_Michigan":641,"state_Minnesota":608,"state_Mississippi":102,"state_Missouri":353,"state_Montana":21,"state_Nebraska":125,"state_Nevada":64,"state_New Hampshire":49,"state_New Jersey":1032,"state_New Mexico":131,"state_New York":1726,"state_North Carolina":547,"state_North Dakota":90,"state_Ohio":1313,"state_Oklahoma":83,"state_Oregon":450,"state_Pennsylvania":1453,"state_Rhode Island":4,"state_South Carolina":220,"state_South Dakota":144,"state_Tennessee":109,"state_Texas":1393,"state_Utah":159,"state_Virginia":576,"state_Washington":463,"state_West":105,"state_Wisconsin":924,"state_Wyoming":65},"num_places":1,"num_results":14,"num_snippets":530,"places":[{"centroid_lat":40.63234677608026,"centroid_lon":-74.51459084754855,"county_name":"","display_name":"Warren Township School District, New Jersey","place_name":"Warren Township School District sb","query_id":"warren-township-school-district-new-jersey","st_fips":983416980,"state_name":"New Jersey"}],"points_of_interest":[],"related_keywords":["committee","board members","administration","authority","public","agenda","board member"],"results":[{"date":"2026-01-05","distance":0,"has_approximate_timings":false,"location":"Warren Township School District, New Jersey","location_query_id":"warren-township-school-district-new-jersey","snippets":[{"text":"The adequate notice of this regular meeting as required by the Open Public '
+https://schools.civicsearch.org/api/search?keywords=meeting&lonlat=-84.35294972668615%2C39.08952886353854&search_radius=0 200 86340 type dict keys ['location_counts', 'matched_meeting_counts', 'meeting_counts', 'num_places', 'num_results', 'num_snippets', 'places', 'points_of_interest', 'related_keywords', 'results', 'summary', 'topic_counts']
+b'{"location_counts":[[["forest-hills-local-ohio","Forest Hills Local, Ohio"],11]],"matched_meeting_counts":{"month_2025-01":1,"month_2025-02":1,"month_2025-03":1,"month_2025-04":1,"month_2025-05":1,"month_2025-06":1,"month_2025-08":1,"month_2025-09":1,"month_2025-10":1,"month_2025-11":1,"month_2025-12":1},"meeting_counts":{"month_2025-01":1306,"month_2025-02":1570,"month_2025-03":1821,"month_2025-04":1568,"month_2025-05":1651,"month_2025-06":1748,"month_2025-07":1055,"month_2025-08":1487,"month_2025-09":1802,"month_2025-10":1873,"month_2025-11":1551,"month_2025-12":1398,"month_2026-01":916,"month_2026-02":1,"state_Alabama":126,"state_Alaska":63,"state_Arizona":354,"state_Arkansas":146,"state_California":1737,"state_Colorado":302,"state_Connecticut":496,"state_Delaware":26,"state_Florida":405,"state_Georgia":186,"state_Idaho":167,"state_Illinois":594,"state_Indiana":747,"state_Iowa":377,"state_Kansas":117,"state_Kentucky":220,"state_Louisiana":136,"state_Maine":133,"state_Maryland":281,"state_Massachusetts":184,"state_Michigan":641,"state_Minnesota":608,"state_Mississippi":102,"state_Missouri":353,"state_Montana":21,"state_Nebraska":125,"state_Nevada":64,"state_New Hampshire":49,"state_New Jersey":1032,"state_New Mexico":131,"state_New York":1726,"state_North Carolina":547,"state_North Dakota":90,"state_Ohio":1313,"state_Oklahoma":83,"state_Oregon":450,"state_Pennsylvania":1453,"state_Rhode Island":4,"state_South Carolina":220,"state_South Dakota":144,"state_Tennessee":109,"state_Texas":1393,"state_Utah":159,"state_Virginia":576,"state_Washington":463,"state_West":105,"state_Wisconsin":924,"state_Wyoming":65},"num_places":1,"num_results":11,"num_snippets":277,"places":[{"centroid_lat":39.08952886353854,"centroid_lon":-84.35294972668615,"county_name":"","display_name":"Forest Hills Local, Ohio","place_name":"Forest Hills Local sb","query_id":"forest-hills-local-ohio","st_fips":983904734,"state_name":"Ohio"}],"points_of_interest":[],"related_keywords":["work session","workshop","special meeting","meetings","regular meeting","organizational meeting","public hearing","topic","executive session"],"results":[{"date":"2025-12-17","distance":0,"has_approximate_timings":false,"location":"Forest Hills Local, Ohio","location_query_id":"forest-hills-local-ohio","snippets":[{"text":"approval of Technology and Facilities committee <mark>meeting</mark> and the approval of minutes for regular <mark>meeting</mark> from November.. I\'ll make a motion to approve items 3.1 and 3'
+https://schools.civicsearch.org/api/search?keywords=board&lonlat=-84.35294972668615%2C39.08952886353854&search_radius=0&start_date=2020-01-01&end_date=2026-12-31 200 133773 type dict keys ['location_counts', 'matched_meeting_counts', 'meeting_counts', 'num_places', 'num_results', 'num_snippets', 'places', 'points_of_interest', 'related_keywords', 'results', 'summary', 'topic_counts']
+b'{"location_counts":[[["forest-hills-local-ohio","Forest Hills Local, Ohio"],11]],"matched_meeting_counts":{"month_2025-01":1,"month_2025-02":1,"month_2025-03":1,"month_2025-04":1,"month_2025-05":1,"month_2025-06":1,"month_2025-08":1,"month_2025-09":1,"month_2025-10":1,"month_2025-11":1,"month_2025-12":1},"meeting_counts":{"month_2025-01":1306,"month_2025-02":1570,"month_2025-03":1821,"month_2025-04":1568,"month_2025-05":1651,"month_2025-06":1748,"month_2025-07":1055,"month_2025-08":1487,"month_2025-09":1802,"month_2025-10":1873,"month_2025-11":1551,"month_2025-12":1398,"month_2026-01":916,"month_2026-02":1,"state_Alabama":126,"state_Alaska":63,"state_Arizona":354,"state_Arkansas":146,"state_California":1737,"state_Colorado":302,"state_Connecticut":496,"state_Delaware":26,"state_Florida":405,"state_Georgia":186,"state_Idaho":167,"state_Illinois":594,"state_Indiana":747,"state_Iowa":377,"state_Kansas":117,"state_Kentucky":220,"state_Louisiana":136,"state_Maine":133,"state_Maryland":281,"state_Massachusetts":184,"state_Michigan":641,"state_Minnesota":608,"state_Mississippi":102,"state_Missouri":353,"state_Montana":21,"state_Nebraska":125,"state_Nevada":64,"state_New Hampshire":49,"state_New Jersey":1032,"state_New Mexico":131,"state_New York":1726,"state_North Carolina":547,"state_North Dakota":90,"state_Ohio":1313,"state_Oklahoma":83,"state_Oregon":450,"state_Pennsylvania":1453,"state_Rhode Island":4,"state_South Carolina":220,"state_South Dakota":144,"state_Tennessee":109,"state_Texas":1393,"state_Utah":159,"state_Virginia":576,"state_Washington":463,"state_West":105,"state_Wisconsin":924,"state_Wyoming":65},"num_places":1,"num_results":11,"num_snippets":413,"places":[{"centroid_lat":39.08952886353854,"centroid_lon":-84.35294972668615,"county_name":"","display_name":"Forest Hills Local, Ohio","place_name":"Forest Hills Local sb","query_id":"forest-hills-local-ohio","st_fips":983904734,"state_name":"Ohio"}],"points_of_interest":[],"related_keywords":["committee","board members","administration","authority","public","agenda","policy committee","board member"],"results":[{"date":"2025-12-17","distance":0,"has_approximate_timings":false,"location":"Forest Hills Local, Ohio","location_query_id":"forest-hills-local-ohio","snippets":[{"text":"17 2025 <mark>Board</mark> of Education. > > I\'d like to roll. >","timestamp":0.0,"topic_id":-1},{"text":"Tonight I have the honor of recognizing two members of the <mark>Board</mark> of Education who decided to step away whe'
+
+== inep sinopse 2025
+ERR Traceback (most recent call last):
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 12, in step
+    try: res = f(); log.write(f"== {name} ({time.time()-t:.0f}s)\n{res}\n\n")
+               ~^^
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 40, in inep
+    z = zipfile.ZipFile(f"{OUT}/br_sinopse_2025.zip"); info = "\n".join(f"{i.filename} {i.file_size}" for i in z.infolist())
+  File "/usr/lib/python3.14/zipfile/__init__.py", line 1453, in __init__
+    self.fp = io.open(file, filemode)
+              ~~~~~~~^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fetch/out/g3/br_sinopse_2025.zip'
+
+
+== ibge ftp estimativa 2025 (1s)
+200 830976 
+
+== ibge ftp listing censo 2022 (1s)
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /Censos/Censo_Demografico_2022</title>
+ </head>
+ <body>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div>
+    <div class="max-width topo">
+        <a href="https://www.ibge.gov.br/">
+            <img class="logo" src="https://www.ibge.gov.br/explica/images/logo.jpg" alt="Logo IBGE" />
+        </a>
+        <form target="_blank" class="busca" action="https://www.ibge.gov.br/busca.html">
+            <label for="ibgeSearch" style="display: block;text-indent: -99999999px;font-size: 0;opacity: 0;">Busque no
+                Portal IBGE</label>
+            <input type="hidden" name="searchphrase" value="all" />
+            <input id="ibgeSearch" class="busca-campo" name="searchword" type="search"
+                placeholder="Buscar no Portal IBGE">
+            <input class="busca-botao" type="submit" value="Buscar">
+        </form>
+    </div>
+
+    <div class="titulo sem-busca sem-dados">
+        <h1 class="content-width">Downloads | Estat�sticas</h1>
+    </div>
+
+</div>
+
+<div
+    style="padding: 0;border-radius: 6px;margin: 20px auto 30px;font-family: &quot;Open Sans&quot;, Arial, sans-serif;max-width: 850px;text-align: center;">
+    <p style="text-align: center;font-size: 18px;">
+        Todos os arquivos aqui dispon&iacute;veis s&atilde;o p&uacute;blicos.
+    </p>
+</div>
+
+<style>
+    html,
+    body,
+    p,
+    ol,
+    ul,
+    li,
+    dl,
+    dt,
+    dd,
+    blockquote,
+    figure,
+    fieldset,
+    legend,
+    textarea,
+    pre,
+    iframe,
+    hr,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #6b6b6f;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 100%;
+        font-weight: normal
+    }
+
+    ul {
+        list-style: none
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+        margin: 0;
+    }
+
+    html {
+        box-sizing: border-box
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit
+    }
+
+    img,
+    embed,
+    iframe,
+    object,
+    video {
+        height: auto;
+        max-width: 100%
+    }
+
+    audio {
+        max-width: 100%
+    }
+
+    iframe {
+        border: 0;
+        width: 100%;
+        height: 450px;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0
+    }
+
+    td,
+    th {
+        padding: 0;
+        text-align: left
+    }
+
+    .clearfix:after {
+        content: ".";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    /* ESTRUTURA */
+
+    .max-width,
+    .content-width {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .max-width {
+        max-width: 850px;
+    }
+
+    .content-width {
+        max-width: 800px;
+        position: relative;
+    }
+
+    input,
+    select {
+        height: 32px;
+        width: 100%;
+        padding: 5px 13px;
+        font-size: 14px;
+        background: #ffffff;
+        border: 1px solid #e0dfdf;
+        border-radius: 4px;
+    }
+
+    input[type=submit],
+    button {
+        height: 32px;
+        padding: 5px 13px;
+        border: 0;
+        border-radius: 3px;
+        transition: background-color 150ms linear;
+        cursor: pointer;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 25px 0 12px;
+        color: #211915;
+    }
+
+    h2:first-child {
+        margin: 0 0 12px;
+    }
+
+    h2.saiba-mais-titulo {
+        background: #1a84ad;
+        padding: 15px 25px;
+        font-size: 20px;
+        border-radius: 10px 10px 0 0;
+        font-weight: 700;
+        margin: 25px 0 0;
+        color: #ffffff;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 25px 0 12px;
+        color: #e4853c;
+    }
+
+    h4 {
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #eb9c5a;
+    }
+
+    @media only screen and (max-width: 1200px) {
+
+        .max-width,
+        .content-width {
+            padding: 0 25px;
+        }
+    }
+
+
+    /* HEADER */
+
+    .logo {
+        width: 160px;
+    }
+
+    .topo {
+        height: auto;
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .busca {
+        width: 215px;
+        float: right;
+        position: relative;
+        padding: 5px 0px;
+        margin: 0;
+    }
+
+    .busca-campo {
+        background: #f0efef;
+        border: 1px solid #e0dfdf;
+    }
+
+    .busca-botao {
+        width: 35px;
+        font-size: 0;
+        background: #0c326f url(https://www.ibge.gov.br/explica/images/busca.png) no-repeat center center/15px;
+        border-radius: 0 3px 3px 0;
+        position: absolute;
+        top: 5px;
+        right: 0;
+    }
+
+    .busca-botao:hover {
+        background-color: #0c652d;
+    }
+
+    .titulo {
+        clear: both;
+        float: none;
+        background: #0c326f;
+        min-height: 100px;
+        padding: 21px 0 40px;
+    }
+
+    .titulo.sem-busca {
+        min-height: 120px;
+    }
+
+    .titulo.sem-busca.sem-dados {
+        min-height: 90px;
+        padding: 28px 0;
+        margin-bottom: 45px;
+    }
+
+    h1 {
+        font-size: 28px;
+        font-weight: 700;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .navegacao-uf {
+        position: relative;
+        height: 38px;
+        top: -21px;
+        text-align: center;
+        border-color: #aba8a8;
+        font-size: 15px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    h2#localidade {
+        background: #dadada;
+        margin: -30px 0 0;
+        text-align: center;
+        padding: 28px 0 0px;
+        font-size: 16px;
+        color: #14457c;
+        position: relative;
+    }
+
+    h2#localidade:after {
+        content: "";
+        display: block;
+        margin: 5px auto 9px;
+        width: 800px;
+        height: 0px;
+        border-bottom: 1px solid #c3c3c8;
+        l
+
+== sidra api (0s)
+b'[\r\n  {\r\n    "NC": "N\xc3\xadvel Territorial (C\xc3\xb3digo)",\r\n    "NN": "N\xc3\xadvel Territorial",\r\n    "MC": "Unidade de Medida (C\xc3\xb3digo)",\r\n    "MN": "Unidade de Medida",\r\n    "V": "Valor",\r\n    "D1C": "Munic\xc3\xadpio (C\xc3\xb3digo)",\r\n    "D1N": "Munic\xc3\xadpio",\r\n    "D2C": "Vari\xc3\xa1vel (C\xc3\xb3digo)",\r\n    "D2N": "Vari\xc3\xa1vel",\r\n    "D3C": "Ano (C\xc3\xb3digo)",\r\n    "D3N": "Ano"\r\n  },\r\n  {\r\n    "NC": "6",\r\n    "NN": "Munic\xc3\xadpio",\r\n    "MC": "45",\r\n    "MN": "Pessoas",\r\n    "V": "11451999",\r\n    "D1C": "3550308",\r\n    "D1N": "S\xc3\xa3o P'
+
+== bolsa familia (35s)
+200 336289417  ['MÊS COMPETÊNCIA', 'MÊS REFERÊNCIA', 'UF', 'CÓDIGO MUNICÍPIO SIAFI', 'NOME MUNICÍPIO', 'CPF FAVORECIDO', 'NIS FAVORECIDO', 'NOME FAVORECIDO', 'VALOR PARCELA'] 5570 municipalities, 19104530 families
+
+== siafi-ibge (2s)
+200 435942 
+
+== inegi iter 2020 (13s)
+200 36615814  2469 municipalities
+ENTIDAD,NOM_ENT,MUN,NOM_MUN,LOC,NOM_LOC,LONGITUD,LATITUD,ALTITUD,POBTOT,POBFEM,POBMAS,P_0A2,P_0A2_F,P_0A2_M,P_3YMAS,P_3YMAS_F,P_3YMAS_M,P_5YMAS,P_5YMAS_F,P_5YMAS_M,P_12YMAS,P_12YMAS_F,P_12YMAS_M,P_15YMAS,P_15YMAS_F,P_15YMAS_M,P_18YMAS,P_18YMAS_F,P_18YMAS_M,P_3A5,P_3A5_F,P_3A5_M,P_6A11,P_6A11_F,P_6A11_M,P_8A14,P_8A14_F,P_8A14_M,P_12A14,P_12A14_F,P_12A14_M,P_15A17,P_15A17_F,P_15A17_M,P_18A24,P_18A24_F,P_18A24_M,P_15A49_F,P_60YMAS,P_60YMAS_F,P_60YMAS_M,REL_H_M,POB0_14,POB15_64,POB65_MAS,P_0A4,P_0A4_F,P_0A4_M,P_5A9,P_5A9_F,P_5A9_M,P_10A14,P_10A14_F,P_10A14_M,P_15A19,P_15A19_F,P_15A19_M,P_20A24,P_20A24_F,P_20A24_M,P_25A29,P_25A29_F,P_25A29_M,P_30A34,P_30A34_F,P_30A34_M,P_35A39,P_35A39_F,P_35A39_M,P_40A44,P_40A44_F,P_40A44_M,P_45A49,P_45A49_F,P_45A49_M,P_50A54,P_50A54_F,P_50A54_M,P_55A59,P_55A59_F,P_55A59_M,P_60A64,P_60A64_F,P_60A64_M,P_65A69,P_65A69_F,P_65A69_M,P_70A74,P_70A74_F,P_70A74_M,P_75A79,P_75A79_F,P_75A79_M,P_80A84,P_80A84_F,P_80A84_M,P_85YMAS,P_85YMAS_F,P_85YMAS_M,PROM_HNV,PNACENT,PNACENT_F,PNACENT_M,PNACOE,PNACOE_F,PNACOE_M,PRES2015,PRES2015_F,PRES2015_M,PRESOE15,PRESOE15_F,PRESOE15_M,P3YM_HLI,P3YM_HLI_F,P3YM_HLI_M,P3HLINHE,P3HLINHE_F,P3HLINHE_M,P3HLI_HE,P3HLI_HE_F,P3HLI_HE_M,P5_HLI,P5_HLI_NHE,P5_HLI_HE,PHOG_IND,POB_AFRO,POB_AFRO_F,POB_AFRO_M,PCON_DISC,PCDISC_MOT,PCDISC_VIS,PCDISC_LENG,PCDISC_AUD,PCDISC_MOT2,PCDISC_MEN,PCON_LIMI,PCLIM_CSB,PCLIM_VIS,PCLIM_HACO,PCLIM_OAUD,PCLIM_MOT2,PCLIM_RE_CO,PCLIM_PMEN,PSIND_LIM,P3A5_NOA,P3A5_NOA_F,P3A5_NOA_M,P6A11_NOA,P6A11_NOAF,P6A11_NOAM,P12A14NOA,P12A14NOAF,P12A14NOAM,P15A17A,P15A17A_F,P15A17A_M,P18A24A,P18A24A_F,P18A24A_M,P8A14AN,P8A14AN_F,P8A14AN_M,P15YM_AN,P15YM_AN_F,P15YM_AN_M,P15YM_SE,P15YM_SE_F,P15YM_SE_M,P15PRI_IN,P15PRI_INF,P15PRI_INM,P15PRI_CO,P15PRI_COF,P15PRI_COM,P15SEC_IN,P15SEC_INF,P15SEC_INM,P15SEC_CO,P15SEC_COF,P15SEC_COM,P18YM_PB,P18YM_PB_F,P18YM_PB_M,GRAPROES,GRAPROES_F,GRAPROES_M,PEA,PEA_F,PEA_M,PE_INAC,PE_INAC_F,PE_INAC_M,POCUPADA,POCUPADA_F,POCUPADA_M,PDESOCUP,PDESOCUP_F,PDESOCUP_M,PSINDER,PDER_SS,PDER_IMSS,PDER_ISTE,PDER_ISTEE,PAFIL_PDOM,PDER_SEGP,PDER_IMSSB,PAFIL_IPRIV,PAFIL_OTRAI,P12YM_SOLT,P12YM_CASA,P12YM_SEPA,PCATOLICA,PRO_CRIEVA,POTRAS_REL,PSIN_RELIG,TOTHOG,HOGJEF_F,HOGJEF_M,POBHOG,PHOGJEF_F,PHOGJEF_M,VIVTOT,TVIVHAB,TVIVPAR,VIVPAR_HAB,VIVPARH_CV,TVIVPARHAB,VIVPAR_DES,VIVPAR_UT,OCUPVIVPAR,PROM_OCUP,PRO_OCUP_C,VPH_PISODT,VPH_PISOTI,VPH_1DOR,VPH_2YMASD,VPH_1CUART,VPH_2CUART,VPH_3YMASC,VPH_C_ELEC,VPH_S_ELEC,VPH_AGUADV,VPH_AEASP,VPH_AGUAFV,VPH_TINACO,VPH_CISTER,VPH_EXCSA,VPH_LETR,VPH_DRENAJ,VPH_NODREN,VPH_C_SERV,VPH_NDEAED,VPH_DSADMA,VPH_NDACMM,VPH_SNBIEN,VPH_REFRI,VPH_LAVAD,VPH_HMICRO,VPH_AUTOM,VPH_MOTO,VPH_BICI,VPH_RADIO,VPH_TV,VPH_PC,VPH_TELEF,VPH_CEL,VPH_INTER,VPH_STVP,VPH_SPMVPI,VPH_CVJ,VPH_SINRTV,VPH_SINLTC,VPH_SINCINT,VPH_SINTIC,TAMLOC
+
+== regionalatlas (2s)
+https://www.gis-idmz.nrw.de/arcgis/rest/services/stba/regionalatlas/MapServer?f=json 200 layers 1: 0:verwaltungsgrenzen_gesamt
+https://regionalatlas.statistikportal.de/ 200 23959
+#
+#collapseLayers
+#collapseLegend
+#collapseMetaInfo
+#collapseOpenData
+#collapseRenderer
+#collapseThemas
+#panelLayers
+#panelLegend
+#panelMetaInfo
+#panelOpenData
+#panelRenderer
+#panelThemas
+/open-sans/open-sans.css
+_impressum.html
+_intro.html
+app/css/calcite-maps-arcgis-4.x.min-v0.10.css
+app/css/calcite-maps-bootstrap.min-v0.10.css
+app/css/esri-icon-font-modif.css
+app/css/styles.css
+app/img/StatistischeÄmter-BundLänder_Logo_web.svg
+app/img/loading-throb.gif
+app/img/logo.png
+app/js/datauri.js
+chartist/chartist-plugin-legend.js
+chartist/chartist-plugin-tooltip2.js
+chartist/chartist-plugins.css
+chartist/chartist.js
+chartist/chartist.min.css
+https://www.gis-rest.nrw.de/jsapi/4.15/
+https://www.gis-rest.nrw.de/jsapi/4.15/dgrid/css/dgrid.css
+https://www.gis-rest.nrw.de/jsapi/4.15/dijit/themes/claro/claro.css
+https://www.gis-rest.nrw.de/jsapi/4.15/dojox/widget/Dialog/Dialog.css
+https://www.gis-rest.nrw.de/jsapi/4.15/esri/css/main.css
+https://www.statistikportal.de
+shariff-3.2.1/shariff.complete.css
+shariff-3.2.1/shariff.complete.js
+
