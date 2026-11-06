@@ -12,6 +12,9 @@ sveitarstjórn, borgarstjórn), where school matters come up, stream their meeti
   Iceland's split by residence (LIF01140) isn't used: its "total" row is higher than both parts.
 - Meetings: council meetings on the municipality's own YouTube channel (data-prep/nordic_youtube.py,
   country IS), counted once per meeting (parts and continuations together).
+- Enrollment: pupils by school, autumn 2025 (Statistics Iceland SKO02102), added up by the municipality each
+  school is in (SCHOOLS below, checked by hand; the table lists schools in municipality-number order). Schools whose
+  figure isn't published ("."), closed schools and the online school Ásgarður (whose municipality isn't given) are left out.
 - Locale (estimated): population over area: urban 2,000+ per km², suburban 500-2,000, mixed 100-500, rural under 100.
 Usage: python3 data-prep/build_iceland.py
 """
@@ -28,6 +31,54 @@ NOT_COUNCIL = {"Kvikmyndafjelag Borgarfjarðar"}   # a film society the search m
 PER_ITEM = {"Bæjarstjórn Akureyrar"}   # Akureyri posts each agenda item as its own clip
 NOT_MEETING = re.compile(r"kynningarfund|kosning|íbúafund|aætlun um fundi|áætlun um fundi", re.I)
 COUNCIL = re.compile(r"b[æa]jarstj[óo]rn|borgarstj[óo]rn|sveitarstj[óo]rn|hreppsnefnd", re.I)
+
+
+SCHOOLS = {   # municipality code: compulsory schools in it, as named in SKO02102
+    "0000": "Austurbæjarskóli|Álftamýrarskóli|Árbæjarskóli|Ártúnsskóli|Barnaskóli Hjallastefnunnar Reykjavík|Borgaskóli|Breiðagerðisskóli|Breiðholtsskóli|"
+            "Brúarskóli|Dalskóli|Engjaskóli|Fellaskóli (Reykjavík)|Foldaskóli|Fossvogsskóli|Grandaskóli|Hagaskóli|Hamraskóli|Háteigsskóli|Hlíðaskóli|"
+            "Hólabrekkuskóli|Húsaskóli|Hvassaleitisskóli|Ingunnarskóli|Klettaskóli|Klébergsskóli|Landakotsskóli|Langholtsskóli|Laugalækjarskóli|"
+            "Laugarnesskóli|Melaskóli|Norðlingaskóli|Réttarholtsskóli|Rimaskóli|Selásskóli|Seljaskóli|Skóli Ísaks Jónssonar|Suðurhlíðarskóli|"
+            "Sæmundarskóli|Tjarnarskóli|Vesturbæjarskóli|Víkurskóli (Reykjavík)|Vogaskóli|Waldorfskólinn Sólstafir|Ölduselsskóli",
+    "1000": "Arnarskóli|Álfhólsskóli|Barnaskóli Kársness|Hörðuvallaskóli|Kársnesskóli|Kópavogsskóli|Kóraskóli|Lindaskóli|Salaskóli|Smáraskóli|"
+            "Snælandsskóli|Vatnsendaskóli|Waldorfskólinn Lækjarbotnum",
+    "1100": "Mýrarhúsaskóli|Valhúsaskóli",
+    "1300": "Alþjóðaskólinn á Íslandi|Álftanesskóli|Barnaskóli Hjallastefnunnar Garðabæ|Flataskóli|Garðaskóli|Hofsstaðaskóli|Sjálandsskóli|Urriðaholtsskóli",
+    "1400": "Áslandsskóli|Barnaskóli Hjallastefnunnar Hafnarfirði|Engidalsskóli|Hraunvallaskóli|Hvaleyrarskóli|Lækjarskóli|NÚ|Setbergsskóli|"
+            "Skarðshlíðarskóli|Víðistaðaskóli|Öldutúnsskóli",
+    "1604": "Helgafellsskóli|Krikaskóli|Kvíslarskóli|Lágafellsskóli|Varmárskóli",
+    "2000": "Akurskóli|Háaleitisskóli (Reykjanesbæ)|Heiðarskóli (Reykjanesbæ)|Holtaskóli|Myllubakkaskóli|Njarðvíkurskóli|Stapaskóli",
+    "2506": "Stóru-Vogaskóli", "2510": "Gerðaskóli|Sandgerðisskóli", "3000": "Brekkubæjarskóli|Grundaskóli",
+    "3511": "Heiðarskóli (Hvalfjarðarsveit)", "3609": "Grunnskóli Borgarfjarðar|Grunnskólinn í Borgarnesi", "3709": "Grunnskóli Grundarfjarðar",
+    "3714": "Grunnskóli Snæfellsbæjar", "3716": "Grunnskólinn í Stykkishólmi", "3811": "Auðarskóli", "4100": "Grunnskóli Bolungarvíkur",
+    "4200": "Grunnskóli Önundarfjarðar|Grunnskólinn á Ísafirði|Grunnskólinn á Suðureyri|Grunnskólinn Þingeyri", "4502": "Reykhólaskóli",
+    "4604": "Bíldudalsskóli|Patreksskóli|Tálknafjarðarskóli", "4803": "Súðavíkurskóli", "4902": "Grunnskóli Drangsness",
+    "4911": "Grunnskólinn á Hólmavík", "5508": "Grunnskóli Húnaþings vestra", "5609": "Höfðaskóli", "5613": "Húnaskóli",
+    "5716": "Árskóli|Grunnskólinn austan Vatna|Varmahlíðarskóli",
+    "6000": "Brekkuskóli|Giljaskóli|Glerárskóli|Hlíðarskóli|Hríseyjarskóli|Lundarskóli|Naustaskóli|Oddeyrarskóli|Síðuskóli",
+    "6100": "Borgarhólsskóli|Öxarfjarðarskóli", "6250": "Grunnskóli Fjallabyggðar", "6400": "Árskógarskóli|Dalvíkurskóli",
+    "6513": "Hrafnagilsskóli", "6515": "Þelamerkurskóli", "6601": "Valsárskóli", "6602": "Grenivíkurskóli",
+    "6613": "Reykjahlíðarskóli|Stórutjarnaskóli|Þingeyjarskóli", "6710": "Grunnskólinn á Þórshöfn",
+    "7300": "Breiðdals- og Stöðvarfjarðarskóli|Eskifjarðarskóli|Grunnskóli Fáskrúðsfjarðar|Grunnskóli Reyðarfjarðar|Nesskóli",
+    "7400": "Brúarásskóli|Djúpavogsskóli|Egilsstaðaskóli|Fellaskóli (Fellabæ)|Seyðisfjarðarskóli", "7502": "Vopnafjarðarskóli",
+    "8000": "Grunnskóli Vestmannaeyja", "8200": "Barnaskólinn á Eyrarbakka og Stokkseyri|Stekkjaskóli|Sunnulækjarskóli|Vallaskóli",
+    "8401": "Grunnskóli Hornafjarðar|Grunnskólinn í Hofgarði", "8508": "Víkurskóli (Vík í Mýrdal)", "8509": "Kirkjubæjarskóli",
+    "8613": "Hvolsskóli", "8614": "Grunnskólinn Hellu|Laugalandsskóli í Holtum", "8710": "Flúðaskóli", "8716": "Grunnskólinn í Hveragerði",
+    "8717": "Grunnskólinn í Þorlákshöfn", "8719": "Kerhólsskóli", "8720": "Þjórsárskóli", "8721": "Bláskógaskóli Laugarvatni|Reykholtsskóli",
+    "8722": "Flóaskóli",
+}
+
+
+def pupils():
+    rows = list(csv.reader(open(os.path.join(IN, "is_SKO02102_pupils_by_school_2025.csv"), encoding="utf-8-sig")))
+    n = {r[0]: int(r[1]) for r in rows[1:] if r[1].strip().isdigit()}
+    out, seen = {}, set()
+    for code, names in SCHOOLS.items():
+        for s in names.split("|"):
+            assert s in n, s
+            out[code] = out.get(code, 0) + n[s]; seen.add(s)
+    left = sorted(set(n) - seen - {"Alls", "Ásgarður"})
+    assert not left, left
+    return out, rows[0][1].split()[0]
 
 
 def meeting_key(t):
@@ -75,6 +126,7 @@ def main():
         g = f["geometry"]; polys = g["coordinates"] if g["type"] == "MultiPolygon" else [g["coordinates"]]
         shapes.setdefault(lid, []).extend(polys)
     rows, feats = [], []
+    enr, enr_year = pupils()
     for lid, polys in sorted(shapes.items(), key=lambda x: lab[x[0]]):
         name = lab[lid]; gm = {"type": "MultiPolygon", "coordinates": polys}
         tot, kids = people.get(lid, (0, 0))
@@ -89,7 +141,7 @@ def main():
         rows.append({"District": name, "Locale": "Urban" if dens >= 2000 else "Suburban" if dens >= 500 else "Mixed" if dens >= 100 else "Rural",
                      "Available Board Meetings": n, "Meetings source": url,
                      **dict(zip(("Latest meeting", "Meetings by year"), date_summary(council) if n else ("", ""))),
-                     "Population": tot, "Children": kids, "Percentage of Children in Low Income": f"{rate:.2f}%",
+                     "Population": tot, "Children": kids, "Enrollment": enr.get(lid, ""), "Enrollment year": f"Autumn {enr_year}" if lid in enr else "", "Percentage of Children in Low Income": f"{rate:.2f}%",
                      "Poverty note": f"Iceland's national rate, {ty} (Eurostat); no local child rate is published",
                      "People per km² (estimated)": round(dens), "District ID": f"IS-{lid}"})
         rnd = lambda c: [rnd(x) for x in c] if isinstance(c[0], list) else [round(c[0], 4), round(c[1], 4)]

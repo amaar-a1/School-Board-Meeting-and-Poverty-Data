@@ -88,7 +88,7 @@
       `<div class="stats compare">` +
       stat(povLabel, isNaN(pov) ? "–" : `${pov.toFixed(1)}%`, us && kids > 0 ? `${num(r["Children Ages 5-17 in Poverty"]).toLocaleString()} of ${kids.toLocaleString()} children` : String(r["Poverty rank in country"] ?? "") !== "" ? `rank ${r["Poverty rank in country"]} of 100 in its country` : "") +
       stat("Available board meetings", isNaN(meet) ? "0" : meet.toLocaleString(), isNaN(meet) ? "no school board" : r.State ? "on CivicSearch" : "") +
-      (num(r["Other Board Meetings"]) > 0 ? stat("Board meetings from other sources", num(r["Other Board Meetings"]).toLocaleString(), "not CivicSearch; see note") : "") +
+      (num(r["Other Board Meetings"]) > 0 ? stat("Board meetings from other sources", num(r["Other Board Meetings"]).toLocaleString(), r.State ? "not CivicSearch; see note" : "listed or minuted, not recorded; see note") : "") +
       stat("Enrollment", isNaN(enr) ? "–" : enr.toLocaleString(), isNaN(enr) ? "not reported" : "students") +
       stat("Locale", r.Locale || "–", "") + `</div>` +
       (note ? `<p class="note">${esc(note)}</p>` : "") +

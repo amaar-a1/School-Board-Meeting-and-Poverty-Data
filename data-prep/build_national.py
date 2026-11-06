@@ -15,6 +15,11 @@ CivicSearch places are matched to districts by federal ID when CivicSearch names
 district "District NNNNNNN", otherwise by name within the same state, with distance
 between CivicSearch's map point and the NCES district office breaking ties.
 REPORT_CSV lists every CivicSearch place and what it was matched to, for checking.
+
+"Latest meeting" is the latest month with a meeting (with the day from the title of the place's latest
+meeting, when it agrees), and both it and "Meetings by year" come from inputs/civicsearch_months.json: CivicSearch's own monthly meeting counts for each
+place, from its search (keyword "board", the place's own meetings only), collected on 6 November 2026.
+That file is a snapshot, so those yearly counts can trail the daily total by the meetings added since.
 """
 import csv
 import json
@@ -22,6 +27,9 @@ import math
 import os
 import re
 import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from meeting_dates import parse as parse_date  # noqa: E402
 
 LOCALE = {1: "Urban", 2: "Suburban", 3: "Town", 4: "Rural"}
 
@@ -236,6 +244,8 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
         states.setdefault(d["state"], []).append(d)
 
     places = json.load(open(civic_path))
+    months_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "inputs", "civicsearch_months.json")
+    months = json.load(open(months_path)) if os.path.exists(months_path) else {}
     report = []
     for p in places:
         state = p["state_name"]
@@ -266,6 +276,20 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
         if match:
             km = distance_km((p.get("latitude"), p.get("longitude")), (match["lat"], match["lon"]))
             match["meetings"] += p["num_meetings"] or 0
+            if p["num_meetings"]:
+                for ym, n in months.get(p.get("query_id"), {}).get("months", {}).items():
+                    match.setdefault("years", {})[ym[:4]] = match.setdefault("years", {}).get(ym[:4], 0) + n
+                found = parse_date(p.get("last_meeting_title") or "")
+                ms = sorted(months.get(p.get("query_id"), {}).get("months", {}))
+                # US titles write dates month first ("1/5/26"), which the shared parser can read day first,
+                # so a title's date is used only when it falls in the latest month CivicSearch counts.
+                latest = ms[-1] if ms else ""
+                if found and found[1] and found[2] and f"{found[0]:04d}-{found[1]:02d}" == latest:
+                    latest += f"-{found[2]:02d}"
+                elif found and found[1] and found[2] and f"{found[0]:04d}-{found[2]:02d}" == latest and found[1] <= 31:
+                    latest += f"-{found[1]:02d}"
+                if latest > match.get("latest", ""):
+                    match["latest"] = latest
             report.append([p["name"], state, p["num_meetings"], match["leaid"], match["name"], how, f"{km:.0f}" if km < 1e8 else ""])
         else:
             report.append([p["name"], state, p["num_meetings"], "", "", "not matched", ""])
@@ -274,10 +298,11 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
         w = csv.writer(f)
         w.writerow(["District", "State", "County", "Available Board Meetings", "Children Ages 5-17", "Children Ages 5-17 in Poverty",
                     "Percentage of Children Ages 5-17 in Poverty", "Locale", "Enrollment", "District ID", "Notes",
-                    "Other Board Meetings", "Other meetings source"])
+                    "Other Board Meetings", "Other meetings source", "Latest meeting", "Meetings by year"])
         for d in districts:
             w.writerow([d["name"], d["state"], d["county"], d["meetings"], d["kids"], d["poor"], d["pct"], d["locale"], d["enrollment"], d["leaid"], d["note"],
-                        other.get(d["leaid"], {}).get("Other Board Meetings", ""), other.get(d["leaid"], {}).get("Other meetings source", "")])
+                        other.get(d["leaid"], {}).get("Other Board Meetings", ""), other.get(d["leaid"], {}).get("Other meetings source", ""),
+                        d.get("latest", "") if d["meetings"] else "", "; ".join(f"{y}:{n}" for y, n in sorted(d.get("years", {}).items())) if d["meetings"] else ""])
     with open(report_path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["CivicSearch name", "State", "Meetings", "Matched LEAID", "Matched district (Census name)", "How", "Distance km"])
