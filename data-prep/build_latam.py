@@ -101,6 +101,20 @@ RULES["PE"] = (re.compile(r"comisi[óo]n (ordinaria )?(de |del )?((cultura|depor
                           r"sesi[óo]n (ordinaria|extraordinaria|descentralizada)|(ordinaria|extraordinaria) de concejo", re.I),
                re.compile(NOT_T.pattern + r"|solemne|demostrativa|codisec|coprosec|cosoc|comit[ée]|regional|delegados|ministros|gimnasia|miss |audiencia|congreso", re.I))
 
+# Spain: the town council's plenary session (pleno; ple or plenari in Catalan and Valencian, osoko bilkura in Basque)
+# and any council committee that covers education ("Comisión de Euskera, Cultura, Educación..."). Children's and
+# youth plenaries, committee meetings and "en pleno ..." phrases aren't council meetings.
+RULES["ES"] = (re.compile(r"^(?!.*(sant jordi|homenat|reglament|agenda urbana|districte de|distrito de|consultiva)).*(comisi[óo]n|comissi[óo])\b[^|]{0,70}\beducaci[óo]n?\b", re.I),
+               re.compile(r"\bple(no|nari|nario)?s?\b|plenaria|pl[eè]n[àa]ria|osoko bilkura", re.I),
+               re.compile(r"^(?!.*(comisi[óo]n|comissi[óo]|junta de gobierno)).*(^|[\s\-|.:\[(\"'»«])(ple|pleno|plenari|plenario)(\s+(ordinari[oa]?|extraordinari[oa]?|urgent[e]?|municipal|del?\b|do\b|de l|d'|d’|corporatiu|\d)|[\s\-_.:(\[|]*\d|\s*$)|"
+                          r"sesi[óo]n plenaria|sessi[óo] pl[eè]n[àa]ria|osoko bilkura", re.I),
+               re.compile(NOT_T.pattern + r"|escolar|jove|joven|xiquet|mayores|majors|consell|consejo|resum|avance|previa|"
+                          r"teaser|prueba|declaraci|\ben pleno\b|\ba pleno\b|pleno empleo|jornada|concierto|concert|pregón|preg[oó]", re.I))
+
+# Spain: a committee covering education counts only when at least this many of its sessions are posted; otherwise the
+# council's plenaries do (one stray committee clip shouldn't replace 160 plenaries).
+MIN_EDU = {"ES": 3}
+
 
 def session_key(cc, t):
     """A key for an undated title. Brazilian chambers often post one clip per speaker ("Fulano - Pequeno Expediente da
@@ -132,7 +146,7 @@ def meetings(cc, did):
     for keep, kind in (([t for t in vids if edu.search(t)], "Education committee"),
                        ([t for t in vids if council.search(t) and must.search(t) and not edu.search(t)], "Council (stand-in)")):
         keys = {parse_date(t) or session_key(cc, t) for t in keep}
-        if keys: return len(keys), url, keep, kind
+        if len(keys) >= (MIN_EDU.get(cc, 1) if kind == "Education committee" else 1): return len(keys), url, keep, kind
     return 0, "", [], ""
 
 
