@@ -1,62 +1,65 @@
-# Temporary: (1) which current commune each orphaned French border piece (an old commune merged into another) lies in,
-# from geo.api.gouv.fr; (2) borders of municipalities still missing from the map (Mexico, Spain) from OpenStreetMap
-# (Overpass API), searched within their state or province.
-import json, os, subprocess, time, traceback, urllib.parse, urllib.request
-OUT = "fetch/out/gaps1"; os.makedirs(OUT, exist_ok=True)
-UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
+# Temporary: borders of municipalities created recently, from official sources.
+# Mexico: INEGI's Marco Geoestadístico web service (wscatgeo), one municipality per request.
+# Spain: IGN's INSPIRE WFS of administrative units, features in a small box around each town.
+import json, os, time, traceback, urllib.parse, urllib.request
+OUT = "fetch/out/gaps2"; os.makedirs(OUT, exist_ok=True)
+UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)", "Accept": "*/*"}
 log = open(f"{OUT}/log.txt", "w")
-def get(u, t=180, data=None):
-    err = None
-    for a in range(3):
-        try:
-            with urllib.request.urlopen(urllib.request.Request(u, headers=UA, data=data), timeout=t) as r: return r.read()
-        except Exception as e:
-            err = e; time.sleep(5 + 10 * a)
-    raise err
+def get(u, t=120):
+    with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=t) as r:
+        return r.status, r.headers.get("Content-Type", ""), r.read()
 def step(name, f):
     try: log.write(f"== {name}\n{f()}\n\n")
-    except Exception: log.write(f"== {name}\nERR {traceback.format_exc()[-1200:]}\n\n")
+    except Exception: log.write(f"== {name}\nERR {traceback.format_exc()[-1500:]}\n\n")
     log.flush()
 
-def orphans():
-    pts = json.load(open("fetch/fr_orphans.json")); res = {}; miss = []
-    for p in pts:
-        try:
-            d = json.loads(get(f"https://geo.api.gouv.fr/communes?lat={p['lat']}&lon={p['lon']}&fields=code,nom", 60))
-            if d: res[p["code"]] = {"code": d[0]["code"], "nom": d[0]["nom"]}
-            else: miss.append(p["code"])
-        except Exception as e:
-            miss.append(p["code"])
-        time.sleep(0.12)
-    json.dump(res, open(f"{OUT}/fr_orphan_to_commune.json", "w"), ensure_ascii=False)
-    return f"{len(res)} of {len(pts)} placed; not placed: {miss[:30]}"
-step("France: orphaned pieces -> current commune", orphans)
-
-subprocess.run("npm install -g osmtogeojson >/dev/null 2>&1", shell=True)
-WANT = [("MX-17034", "Coatetelco", "MX-MOR", 6), ("MX-07125", "Honduras de la Sierra", "MX-CHP", 6), ("MX-17036", "Hueyapan", "MX-MOR", 6),
-        ("MX-02006", "San Quintín", "MX-BCN", 6), ("MX-04012", "Seybaplaya", "MX-CAM", 6), ("MX-17035", "Xoxocotla", "MX-MOR", 6),
-        ("ES-41904", "El Palmar de Troya", "ES-SE", 8), ("ES-18077", "Fornes", "ES-GR", 8), ("ES-14901", "Fuente Carreteros", "ES-CO", 8),
-        ("ES-14902", "La Guijarrosa", "ES-CO", 8), ("ES-21902", "La Zarza-Perrunal", "ES-H", 8), ("ES-11903", "San Martín del Tesorillo", "ES-CA", 8),
-        ("ES-18916", "Torrenueva Costa", "ES-GR", 8), ("ES-48916", "Usansolo", "ES-BI", 8)]
-def osm():
-    out, feats = [], []
-    for did, name, iso, lvl in WANT:
-        q = (f'[out:json][timeout:120];area["ISO3166-2"="{iso}"]->.a;'
-             f'rel(area.a)["boundary"="administrative"]["admin_level"="{lvl}"]["name"~"^{name}$",i];out geom;')
-        try:
-            raw = get("https://overpass-api.de/api/interpreter", 240, urllib.parse.urlencode({"data": q}).encode())
-            open("/tmp/o.json", "wb").write(raw)
-            r = subprocess.run("osmtogeojson /tmp/o.json", shell=True, capture_output=True, text=True)
-            g = json.loads(r.stdout)
-            polys = [f for f in g["features"] if f["geometry"]["type"] in ("Polygon", "MultiPolygon")]
-            for f in polys:
-                f["properties"] = {"id": did, "NAME": name, "osm": f["properties"].get("id"), "osm_name": f["properties"].get("name") or f["properties"].get("tags", {}).get("name")}
-            feats += polys[:1]
-            out.append(f"{did} {name}: {len(polys)} polygon(s) {[p['properties']['osm'] for p in polys]}")
-        except Exception as e:
-            out.append(f"{did} {name}: ERR {str(e)[:150]}")
-        time.sleep(3)
-    json.dump({"type": "FeatureCollection", "features": feats}, open(f"{OUT}/osm_missing.geojson", "w"), ensure_ascii=False)
+MX = ["17034", "07125", "17036", "02006", "04012", "17035"]
+def mexico():
+    out = []
+    for c in MX:
+        ent, mun = c[:2], c[2:]
+        got = False
+        for u in [f"https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgem/{ent}{mun}",
+                  f"https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgem/{ent}/{mun}",
+                  f"https://gaia.inegi.org.mx/wscatgeo/geo/mgem/{ent}{mun}",
+                  f"https://gaia.inegi.org.mx/wscatgeo/geo/mgem/{ent}/{mun}"]:
+            try:
+                st, ct, b = get(u)
+                open(f"{OUT}/mx_{c}_{len(out)}.raw", "wb").write(b)
+                out.append(f"{c} {u} -> {st} {ct} {len(b)} bytes: {b[:160]!r}")
+                if st == 200 and b[:1] in (b"{", b"[") and b'"coordinates"' in b:
+                    open(f"{OUT}/mx_{c}.json", "wb").write(b); got = True; break
+            except Exception as e:
+                out.append(f"{c} {u} -> ERR {str(e)[:150]}")
+            time.sleep(1)
+        if not got: out.append(f"{c}: no geometry")
     return "\n".join(out)
-step("OpenStreetMap: missing municipalities", osm)
+step("Mexico: INEGI wscatgeo", mexico)
+
+ES = {"ES-41904": (-5.81, 37.06), "ES-18077": (-3.85, 36.95), "ES-14901": (-5.13, 37.68), "ES-14902": (-4.85, 37.63),
+      "ES-21902": (-6.88, 37.69), "ES-11903": (-5.32, 36.35), "ES-18916": (-3.48, 36.70), "ES-48916": (-2.815, 43.218)}
+WFS = "https://www.ign.es/wfs-inspire/unidades-administrativas"
+def spain():
+    out = []
+    try:
+        st, ct, b = get(WFS + "?service=WFS&request=GetCapabilities", 60)
+        open(f"{OUT}/es_caps.xml", "wb").write(b); out.append(f"capabilities {st} {ct} {len(b)}")
+    except Exception as e: out.append(f"capabilities ERR {str(e)[:150]}")
+    for did, (x, y) in ES.items():
+        d = 0.06
+        for fmt in ["application/json", None]:
+            q = {"service": "WFS", "version": "2.0.0", "request": "GetFeature", "typenames": "au:AdministrativeUnit",
+                 "srsName": "urn:ogc:def:crs:EPSG::4326", "bbox": f"{y-d},{x-d},{y+d},{x+d},urn:ogc:def:crs:EPSG::4326", "count": "60"}
+            if fmt: q["outputFormat"] = fmt
+            try:
+                st, ct, b = get(WFS + "?" + urllib.parse.urlencode(q), 180)
+                ext = "json" if b[:1] == b"{" else "xml"
+                open(f"{OUT}/es_{did}.{ext}", "wb").write(b)
+                out.append(f"{did} fmt={fmt} -> {st} {ct} {len(b)} bytes: {b[:120]!r}")
+                if st == 200 and len(b) > 2000 and b"Exception" not in b[:600]: break
+            except Exception as e:
+                out.append(f"{did} fmt={fmt} -> ERR {str(e)[:150]}")
+            time.sleep(2)
+    return "\n".join(out)
+step("Spain: IGN INSPIRE WFS", spain)
 log.close()
