@@ -282,6 +282,7 @@
       (!isNaN(iePov) && eu === "ES" ? `Child low-income rate: not published (small municipality)<br>Poverty rate of its region (all ages, Eurostat): ${iePov.toFixed(1)}%<br>`
         : !isNaN(iePov) && eu === "EC" ? `Consumption poverty: no estimate (outside the survey)<br>Poverty rate of the Galápagos province (2010, reported by BBC News in 2013): ${iePov.toFixed(1)}%<br>`
         : !isNaN(iePov) && eu === "BR" ? `Poverty: no figure of its own (created in 2025, after the census)<br>Rate of Sorriso, which it was part of (2022): ${iePov.toFixed(1)}%<br>`
+        : !isNaN(iePov) && eu === "MX" ? `Poverty: no figure of its own (made after CONEVAL's 2020 figures)<br>Rate of ${esc((String(r["Poverty note"] || "").match(/^Made from (.+?) and/) || [, "the municipality it was part of"])[1])}, which it was part of (2020): ${iePov.toFixed(1)}%<br>`
         : !isNaN(iePov) && eu === "FRA" ? `Commune poverty rate: not published<br>Poverty rate of the whole département (all ages): ${iePov.toFixed(1)}%<br>`
         : !isNaN(iePov) ? `Poverty rate (all ages, its region): ${iePov.toFixed(1)}%<br>Unemployment (Census 2022): ${esc(r["Unemployment rate (Census 2022)"] || "–")}<br>`
         : isNaN(pov) && !isNaN(unemp) ? `Unemployment (stand-in for poverty): ${unemp.toFixed(1)}% (2015 est.)<br>`
