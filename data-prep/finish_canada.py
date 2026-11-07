@@ -77,6 +77,8 @@ def main(src, yt, dst):
     print(len(rows), "boards;", sum(1 for r in rows if counts.get(r["District ID"], (0,))[0] > 0), "with meetings")
     import canada_locales   # province- and territory-wide boards: the locale where most of the province's children live
     canada_locales.apply(dst)
+    import canada_first_nations   # First Nations reserves outside every board (Rest of Ontario and Alberta)
+    canada_first_nations.apply(dst)
 
 
 if __name__ == "__main__":
