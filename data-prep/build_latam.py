@@ -179,6 +179,18 @@ def meetings(cc, did):
 # Channels checked by hand and found to be another place's (by channel URL). The search matched on the name, and
 # many of these names exist in other Spanish-speaking countries too, or in both Chile and Colombia.
 NOT_CHANNELS = {
+    # Ecuador: channels of a town with the same name elsewhere (checked by their videos' titles)
+    "EC": {
+        "https://www.youtube.com/channel/UCZaI4dep0kp5vZa3gCsEwLQ",   # Santo Domingo (Chile): "I.M." and Chilean council terms
+        "https://www.youtube.com/channel/UCQSNpiNkO1HiGbGdqBjzNoQ",   # San Miguel (Chile): its PLADECO
+        "https://www.youtube.com/channel/UCT1O2zd6JGvB8RHXfCSmUxg",   # San Fernando (Chile): "agenda comunal"
+        "https://www.youtube.com/channel/UCvjGChO7WnaVGeYmY4p97Ig",   # Santa Ana: no sign it is Ecuadorian
+        "https://www.youtube.com/channel/UCQhuEql9HplzsCZ4Oxv5yew",   # El Carmen: no sign it is Ecuadorian
+        "https://www.youtube.com/channel/UCU8hYDWnuwJ28rsbTtND1LA",   # San Vicente: English titles, another country
+        "https://www.youtube.com/channel/UCZXpwy8DfsnN1x61GBQB0ZA",   # Santa Cruz: no sign it is Ecuadorian (Bolivia?)
+        "https://www.youtube.com/channel/UCAMrQUisobtjKiSE4vWvu9g",   # Lo Espejo (Chile)
+        "https://www.youtube.com/channel/UCTW3WKCTHx5N1jkO_T-6R2A",   # Santa Rosa de Osos (Colombia)
+    },
     "MX": {"https://www.youtube.com/channel/UCJ_QgHV7jNH5PWK-hD3ZigA",    # Santa Ana, Costa Rica ("Gobierno Local"), not Oaxaca's
            "https://www.youtube.com/channel/UC_NzgVf7xT5SWA3dsBUOh6g",    # Coyotepec, Estado de México (2019-2021 term), not Puebla's
            "https://www.youtube.com/channel/UC-RQwxdFz9c8an1SthCk27A",    # Tamazula de Gordiano, Jalisco, not Tamazula, Durango
@@ -238,6 +250,9 @@ CHECKED = {"PE": {k: _PE + v for k, v in {
     "PE-050404": "UCSZGko_PnCjJ5eJdMrGS0Ig", "PE-051101": "UCRi0Aa6053U1MDx1o8YuvJg", "PE-022001": "UCL-VQ_WuOhUUbc0UjK-i6Tw"}.items()}}
 
 
+FR_FOREIGN = re.compile(r"municipalit[ée]|qu[ée]bec|\bqc\b|belgique|suisse|\bcanton\b|\bcom\.?\s*com", re.I)
+FR_JOIN = {"de", "du", "des", "d", "sur", "sous", "les", "lez", "en", "la", "le", "aux", "au", "et"}
+FR_BEFORE = {"de", "d", "du", "ville", "mairie", "commune", "cite", "officiel", "conseil", "municipal", "ma", "agglo", "metropole", "hotel"}
 FOREIGN = re.compile(r"deliberante|distrital de carmen alto|municipalidad distrital|provincial", re.I)   # Argentina's and Peru's councils
 
 
@@ -266,6 +281,12 @@ def owners(cc, rows):
             alts = [words(x).strip() for x in r.get("_names") or [r["District"]]]   # Spain: "Alacant / Alicante"
             nm = next((a for a in alts if " " + a + " " in ch), "")
             if not nm: return -1
+            if cc == "FRA":
+                # French names are often the start of a longer one (Saint-Joseph-du-Lac, Saint-Paul-lès-Dax) or the end of
+                # one (La Côte-Saint-André), and Quebec's municipalities share many: the name must stand on its own.
+                if FR_FOREIGN.search(raw): return -1
+                i = ch.index(" " + nm + " "); before = ch[:i].split()[-1:] or [""]; after = ch[i + len(nm) + 2:].split()[:1] or [""]
+                if after[0] in FR_JOIN or (before[0] and before[0] not in FR_BEFORE): return -1
             if any(len(o) > len(nm) and " " + nm + " " in " " + o + " " and " " + o + " " in ch for o in names): return -1   # "Alfredo Chaves", not Chaves
             other = any(" " + g + " " in ch for g in regions - {words(r["Region"]).strip()} if " " + g + " " not in " " + nm + " ")
             named = " " + words(r["Region"]).strip() + " " in ch or (cc == "CO" and words(r["Region"]).split()[0] in ch.split())
