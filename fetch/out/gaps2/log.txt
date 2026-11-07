@@ -1,0 +1,27 @@
+== Mexico: INEGI wscatgeo
+17034 https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgem/17034 -> 200 application/json;charset=utf-8 7060 bytes: b'{"type":"FeatureCollection","metadatos":{"Fuente_informacion_vectorial":"INEGI. Marco Geoestad\xc3\xadstico, diciembre de 2025","Fuente_informacion_estadistica":"INEG'
+07125 https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgem/07125 -> 200 application/json;charset=utf-8 14809 bytes: b'{"type":"FeatureCollection","metadatos":{"Fuente_informacion_vectorial":"INEGI. Marco Geoestad\xc3\xadstico, diciembre de 2025","Fuente_informacion_estadistica":"INEG'
+17036 https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgem/17036 -> 200 application/json;charset=utf-8 14192 bytes: b'{"type":"FeatureCollection","metadatos":{"Fuente_informacion_vectorial":"INEGI. Marco Geoestad\xc3\xadstico, diciembre de 2025","Fuente_informacion_estadistica":"INEG'
+02006 https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgem/02006 -> 200 application/json;charset=utf-8 1514581 bytes: b'{"type":"FeatureCollection","metadatos":{"Fuente_informacion_vectorial":"INEGI. Marco Geoestad\xc3\xadstico, diciembre de 2025","Fuente_informacion_estadistica":"INEG'
+04012 https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgem/04012 -> 200 application/json;charset=utf-8 54933 bytes: b'{"type":"FeatureCollection","metadatos":{"Fuente_informacion_vectorial":"INEGI. Marco Geoestad\xc3\xadstico, diciembre de 2025","Fuente_informacion_estadistica":"INEG'
+17035 https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgem/17035 -> 200 application/json;charset=utf-8 12387 bytes: b'{"type":"FeatureCollection","metadatos":{"Fuente_informacion_vectorial":"INEGI. Marco Geoestad\xc3\xadstico, diciembre de 2025","Fuente_informacion_estadistica":"INEG'
+
+== Spain: IGN INSPIRE WFS
+capabilities 200 text/xml;charset=UTF-8 32115
+ES-41904 fmt=application/json -> ERR HTTP Error 400: Bad Request
+ES-41904 fmt=None -> 200 text/xml; subtype="gml/3.2.1";charset=UTF-8 26521772 bytes: b'<?xml version=\'1.0\' encoding=\'UTF-8\'?>\n<wfs:FeatureCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:'
+ES-18077 fmt=application/json -> ERR HTTP Error 400: Bad Request
+ES-18077 fmt=None -> 200 text/xml; subtype="gml/3.2.1";charset=UTF-8 26531653 bytes: b'<?xml version=\'1.0\' encoding=\'UTF-8\'?>\n<wfs:FeatureCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:'
+ES-14901 fmt=application/json -> ERR HTTP Error 400: Bad Request
+ES-14901 fmt=None -> 200 text/xml; subtype="gml/3.2.1";charset=UTF-8 26857910 bytes: b'<?xml version=\'1.0\' encoding=\'UTF-8\'?>\n<wfs:FeatureCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:'
+ES-14902 fmt=application/json -> ERR HTTP Error 400: Bad Request
+ES-14902 fmt=None -> 200 text/xml; subtype="gml/3.2.1";charset=UTF-8 26635180 bytes: b'<?xml version=\'1.0\' encoding=\'UTF-8\'?>\n<wfs:FeatureCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:'
+ES-21902 fmt=application/json -> ERR HTTP Error 400: Bad Request
+ES-21902 fmt=None -> 200 text/xml; subtype="gml/3.2.1";charset=UTF-8 26667686 bytes: b'<?xml version=\'1.0\' encoding=\'UTF-8\'?>\n<wfs:FeatureCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:'
+ES-11903 fmt=application/json -> ERR HTTP Error 400: Bad Request
+ES-11903 fmt=None -> 200 text/xml; subtype="gml/3.2.1";charset=UTF-8 27531760 bytes: b'<?xml version=\'1.0\' encoding=\'UTF-8\'?>\n<wfs:FeatureCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:'
+ES-18916 fmt=application/json -> ERR HTTP Error 400: Bad Request
+ES-18916 fmt=None -> 200 text/xml; subtype="gml/3.2.1";charset=UTF-8 26505705 bytes: b'<?xml version=\'1.0\' encoding=\'UTF-8\'?>\n<wfs:FeatureCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:'
+ES-48916 fmt=application/json -> ERR HTTP Error 400: Bad Request
+ES-48916 fmt=None -> 200 text/xml; subtype="gml/3.2.1";charset=UTF-8 25155312 bytes: b'<?xml version=\'1.0\' encoding=\'UTF-8\'?>\n<wfs:FeatureCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:'
+
