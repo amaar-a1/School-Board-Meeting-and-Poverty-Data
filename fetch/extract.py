@@ -1,8 +1,7 @@
-# Temporary: (1) First Nations reserves and settlements inside Canada's "Rest of Ontario/Alberta" map areas, from
-# the 2021 census subdivision borders (this repo's statcan-csd-2021 release), with mapshaper; (2) IBGE's 2024/2025
-# municipal borders for Mato Grosso (Boa Esperança do Norte).
-import json, os, subprocess, time, traceback, urllib.request, zipfile
-OUT = "fetch/out/ca_reserves2"; os.makedirs(OUT, exist_ok=True)
+# Temporary: (1) the 4 First Nations settlements (CSDTYPE "S-É") missed for an encoding mix-up; (2) look for borders
+# of municipalities missing from the map in geoBoundaries' humanitarian and authoritative collections.
+import json, os, re, subprocess, time, traceback, unicodedata, urllib.request, zipfile
+OUT = "fetch/out/ca_reserves3"; os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
 log = open(f"{OUT}/log.txt", "w")
 def get(u, t=900):
@@ -21,38 +20,37 @@ def step(name, f):
     log.flush()
 log.write(run("npm install -g mapshaper@0.6 >/dev/null 2>&1; mapshaper -v") + "\n")
 
-def reserves():
+def settlements():
     open("/tmp/csd.zip", "wb").write(get("https://github.com/amaar-a1/School-Board-Meeting-and-Poverty-Data/releases/download/statcan-csd-2021/lcsd000b21a_e.zip"))
     zipfile.ZipFile("/tmp/csd.zip").extractall("/tmp/csd")
     shp = [os.path.join(dp, f) for dp, _, fs in os.walk("/tmp/csd") for f in fs if f.endswith(".shp")][0]
-    out = [run(f"mapshaper -i {shp} -info 2>&1 | head -30")]
-    out.append(run(f"mapshaper -i {shp} encoding=utf8 -filter \"PRUID == '35' || PRUID == '48'\" -proj wgs84 "
-                   f"-join fetch/ca_rest.geojson point-method fields=id "
-                   f"-filter \"id == 'CA-ON-REST' || id == 'CA-AB-REST'\" "
-                   f"-each \"area_km2 = Math.round(this.area / 1e5) / 10\" "
-                   f"-o /tmp/rest_all.json format=geojson"))
-    g = json.load(open("/tmp/rest_all.json"))
-    types = {}
-    for f in g["features"]: types[f["properties"]["CSDTYPE"]] = types.get(f["properties"]["CSDTYPE"], 0) + 1
-    out.append(f"subdivisions inside the Rest-of areas: {len(g['features'])}; types {types}")
-    fn = {"type": "FeatureCollection", "features": [f for f in g["features"] if f["properties"]["CSDTYPE"] in ("IRI", "S-É", "TI", "IGD", "NL")]}
-    json.dump(fn, open("/tmp/fn.json", "w"))
-    out.append(run(f"mapshaper -i /tmp/fn.json -simplify 4% keep-shapes -o {OUT}/ca_rest_first_nations.geojson format=geojson precision=0.0001"))
-    out.append("kept: " + "; ".join(f"{f['properties']['CSDNAME']} ({f['properties']['CSDTYPE']}, {f['properties']['id']}, {f['properties']['area_km2']} km²)" for f in fn["features"][:200]))
+    out = [run(f"mapshaper -i {shp} encoding=latin1 -filter \"(PRUID == '35' || PRUID == '48') && CSDTYPE.indexOf('S-') === 0\" -proj wgs84 "
+               f"-join fetch/ca_rest.geojson point-method fields=id -filter \"id == 'CA-ON-REST' || id == 'CA-AB-REST'\" "
+               f"-each \"area_km2 = Math.round(this.area / 1e5) / 10\" -simplify 4% keep-shapes -o {OUT}/ca_rest_settlements.geojson format=geojson precision=0.0001")]
+    g = json.load(open(f"{OUT}/ca_rest_settlements.geojson"))
+    out.append("; ".join(f"{f['properties']['CSDNAME']} ({f['properties']['CSDTYPE']}, {f['properties']['id']})" for f in g["features"]))
     return "\n".join(out)
-step("Canada: First Nations lands in the Rest-of areas", reserves)
+step("Canada: First Nations settlements", settlements)
 
-def ibge():
+def norm(s):
+    return re.sub(r"[^a-z]", "", unicodedata.normalize("NFKD", str(s)).encode("ascii", "ignore").decode().lower())
+def borders():
+    miss = json.load(open("fetch/missing_borders.json"))
     out = []
-    for y in ("2025", "2024"):
-        u = f"https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_{y}/UFs/MT/MT_Municipios_{y}.zip"
-        try:
-            b = get(u, 300); open(f"/tmp/mt{y}.zip", "wb").write(b); zipfile.ZipFile(f"/tmp/mt{y}.zip").extractall(f"/tmp/mt{y}")
-            shp = [os.path.join(dp, f) for dp, _, fs in os.walk(f"/tmp/mt{y}") for f in fs if f.endswith(".shp")][0]
-            out.append(f"{y}: {len(b)} bytes")
-            out.append(run(f"mapshaper -i {shp} encoding=utf8 -filter \"CD_MUN == '5101837'\" -proj wgs84 -simplify 5% keep-shapes -o {OUT}/br_5101837_{y}.geojson format=geojson precision=0.0001"))
-        except Exception as e:
-            out.append(f"{y}: {e}")
+    for cc, iso, adm in (("PE", "PER", "ADM3"), ("MX", "MEX", "ADM2"), ("ES", "ESP", "ADM3"), ("ES", "ESP", "ADM4")):
+        for coll in ("gbHumanitarian", "gbAuthoritative", "gbOpen"):
+            try:
+                meta = json.loads(get(f"https://www.geoboundaries.org/api/current/{coll}/{iso}/{adm}/", 120))
+                u = meta.get("simplifiedGeometryGeoJSON") or meta.get("gjDownloadURL")
+                g = json.loads(get(u))
+                names = {}
+                for f in g["features"]: names.setdefault(norm(f["properties"].get("shapeName")), []).append(f)
+                found = [{"id": did, "name": n, "region": reg, "features": names[norm(n)]} for did, n, reg in miss[cc] if norm(n) in names]
+                json.dump(found, open(f"{OUT}/new_{cc}_{coll}_{adm}.json", "w"), ensure_ascii=False)
+                out.append(f"{cc} {coll} {adm}: year {meta.get('boundaryYearRepresented')} ({str(meta.get('boundarySource'))[:80]}), {len(g['features'])} features; "
+                           f"{len(found)} of {len(miss[cc])} missing found by name: {[x['name'] for x in found][:20]}")
+            except Exception as e:
+                out.append(f"{cc} {coll} {adm}: {str(e)[:120]}")
     return "\n".join(out)
-step("Brazil: Boa Esperança do Norte (IBGE)", ibge)
+step("Borders for municipalities missing from the map", borders)
 log.close()
