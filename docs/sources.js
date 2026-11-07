@@ -255,7 +255,7 @@ window.SOURCES = [
     items: [
       { title: "Poverty and population: INEI, Mapa de pobreza monetaria provincial y distrital 2018, Anexo 1 (95% confidence interval of the monetary poverty rate and 2018 population by district)", url: "https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1718/Libro.pdf" },
       { title: "Borders: district boundaries (INEI), as GeoJSON by Juan Eladio Sánchez Rosas (peru-geojson)", url: "https://github.com/juaneladio/peru-geojson" },
-      { title: "Borders of 47 districts created since: Instituto Geográfico Nacional, via OCHA and geoBoundaries (gbHumanitarian PER ADM3), checked to lie inside the district each was made from", url: "https://www.geoboundaries.org/" },
+      { title: "Borders of the 48 districts created since: Instituto Geográfico Nacional, via OCHA and geoBoundaries (gbHumanitarian PER ADM3), checked to lie inside the district each was made from", url: "https://www.geoboundaries.org/" },
       { title: "Meetings (stand-in): each council's YouTube channel, checked by hand (in the “Meetings source” column)", url: "https://www.youtube.com/" },
       { title: "Checked but not used: the Ministry of Education's enrollment statistics (ESCALE) and the national open data portal, which refuse automated downloads", url: "https://escale.minedu.gob.pe/" }
     ],
