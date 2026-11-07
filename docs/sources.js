@@ -279,6 +279,7 @@ window.SOURCES = [
     items: [
       { title: "Poverty: INEC and the World Bank, consumption poverty map by canton (2010 census with the 2013-14 Encuesta de Condiciones de Vida), as published on the Humanitarian Data Exchange by the British Red Cross Maps Team", url: "https://data.humdata.org/dataset/947e78a1-0e3d-4f6f-a956-4d6f80915d84" },
       { title: "National NBI rates for 2001-2022 (2022: 39.8% of people, 49.4% of children): INEC, Pobreza por Necesidades Básicas Insatisfechas, methodology book", url: "https://www.ecuadorencifras.gob.ec/documentos/web-inec/Bibliotecas/Libros/NBI_VersionLibroMetodologico.pdf" },
+      { title: "Galápagos poverty rate (about 31%, measure not stated): BBC News, 2013", url: "https://www.bbc.com/news/world-latin-america-22812108" },
       { title: "Unmet basic needs: INEC, Pobreza por necesidades básicas insatisfechas (NBI), 2010 census, by canton", url: "https://www.ecuadorencifras.gob.ec/pobreza-por-necesidades-basicas-insatisfechas/" },
       { title: "Pupils: Ministry of Education (MINEDUC), Registro Administrativo Histórico 2009-2024, start of the 2024-25 school year, by school", url: "https://www.datosabiertos.gob.ec/dataset/5d1838d2-4efb-44a3-8c36-eebb5a8f798a" },
       { title: "Borders: geoBoundaries (gbOpen) Ecuador ADM1 (provinces) and ADM2 (cantons), simplified further with mapshaper", url: "https://www.geoboundaries.org/" },
