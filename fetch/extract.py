@@ -1,16 +1,17 @@
-# Temporary: first-level region borders (geoBoundaries ADM1) for Finland and the Netherlands, to give each
-# municipality its region (maakunta / provincie) for the site's region menu.
+# Temporary: Statistics Finland's municipality-to-region correspondence (kunta -> maakunta), for the site's region menu.
 import json, os, time, urllib.request
-OUT = "fetch/out/adm1"; os.makedirs(OUT, exist_ok=True)
-UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
+OUT = "fetch/out/fi_regions"; os.makedirs(OUT, exist_ok=True)
+UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)", "Accept": "application/json"}
 log = open(f"{OUT}/log.txt", "w")
-for c in ("FIN", "NLD"):
-    u = f"https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/{c}/ADM1/geoBoundaries-{c}-ADM1_simplified.geojson"
-    for a in range(3):
-        try:
-            with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=300) as r: b = r.read()
-            g = json.loads(b); open(f"{OUT}/gb_{c}_ADM1.geojson", "wb").write(b)
-            log.write(f"{c}: {len(b)} bytes, {len(g['features'])} features: {sorted(f['properties']['shapeName'] for f in g['features'])}\n"); break
-        except Exception as e:
-            log.write(f"{c} try {a}: {e}\n"); time.sleep(20)
+for date in ("20260101", "20250101", "20240101"):
+    u = (f"https://data.stat.fi/api/classifications/v2/correspondenceTables/kunta_1_{date}%23maakunta_1_{date}/maps"
+         "?content=data&meta=max&lang=en&format=json")
+    try:
+        with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=120) as r: b = r.read()
+        d = json.loads(b)
+        json.dump(d, open(f"{OUT}/kunta_maakunta_{date}.json", "w"), ensure_ascii=False)
+        log.write(f"{date}: {len(b)} bytes, {len(d)} entries; first {json.dumps(d[:1], ensure_ascii=False)[:600]}\n")
+        break
+    except Exception as e:
+        log.write(f"{date}: {e}\n"); time.sleep(5)
 log.close()
