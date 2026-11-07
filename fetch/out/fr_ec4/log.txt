@@ -1,0 +1,6 @@
+== Pupils by school (with school id)
+1124955 bytes; head b'\xef\xbb\xbfnumero_ecole;secteur;nombre_total_eleves\r\n0110613G;PUBLIC;53.0\r\n0110550N;PUBLIC;16.0\r\n0110552R;PUBLIC;80.0\r\n0110558X;PUBLIC;70.0\r\n0110564D;PUBLIC;112.0\r\n0110868J;PUBLIC;92.0\r\n0110869K;PUBLIC;166.0\r\n0110941N;PUBLIC;293.0\r\n0111027G;PRIVE SOUS CONTRAT;29.0\r\n0110636G;PUBLIC;15.0\r\n0110637H;PUBLIC;24.0\r\n0110643P;PUBLIC;20.0\r\n0110850P;PUBLIC;33.0\r\n0110733M;PUBLIC;45.0\r\n0110657E;PUBLIC;39.0\r\n0110916L;P'
+
+== School directory: id -> INSEE commune
+1966438 bytes; head b'\xef\xbb\xbfidentifiant_de_l_etablissement;code_commune;nom_commune\r\n0011247A;01194;Jassans-Riottier\r\n0021642Z;02676;Saint-Erme-Outre-et-Ramecourt\r\n0022229M;02141;La Capelle\r\n0061775X;06140;Le Tignet\r\n0090211F;09121;Ferri\xc3\xa8res-sur-Ari\xc3\xa8ge\r\n0110109J;11032;Bellegarde-du-Raz\xc3\xa8s\r\n0131071U;13080;Le Puy-Sainte-R\xc3\xa9parade\r\n0134619A;13001;Aix-en-Provence\r\n0141504J;14366;Lisieux\r\n0161259G;16032;Bassac\r\n0171077D;1734'
+
