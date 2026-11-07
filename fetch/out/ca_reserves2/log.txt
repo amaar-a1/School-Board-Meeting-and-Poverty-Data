@@ -1,0 +1,54 @@
+$ npm install -g mapshaper@0.6 >/dev/null 2>&1; mapshaper -v
+0.6.121
+
+== Canada: First Nations lands in the Rest-of areas
+$ mapshaper -i /tmp/csd/lcsd000b21a_e.shp -info 2>&1 | head -30
+[info] 
+=======================================
+Layer:    lcsd000b21a_e
+---------------------------------------
+Type:     polygon
+Records:  5,161
+Bounds:   3689321.4628571793,659305.0028571747,9015750.722857185,5242009.105714321
+CRS:      +proj=lcc +lat_1=49 +lat_2=77 +lat_0=63.390675 +lon_0=-91.86666666666666 +x_0=6200000 +y_0=3000000 +datum=NAD83
+Source:   /tmp/csd/lcsd000b21a_e.shp
+
+Attribute data
+----------+----------------------------
+ Field    | First value
+----------+----------------------------
+ CSDNAME  | 'Division No.  1, Subd. V'
+ CSDTYPE  | 'SNO'
+ CSDUID   | '1001101'
+ DGUID    | '2021A00051001101'
+ LANDAREA | 870.8928
+ PRUID    | '10'
+----------+----------------------------
+
+
+$ mapshaper -i /tmp/csd/lcsd000b21a_e.shp encoding=utf8 -filter "PRUID == '35' || PRUID == '48'" -proj wgs84 -join fetch/ca_rest.geojson point-method fields=id -f
+[filter] Retained 1,000 of 5,161 features
+[join] Joined data from 2 source records to 86 target records
+[join] 914 target records received no data
+[filter] Retained 86 of 1,000 features
+[o] Wrote /tmp/rest_all.json
+
+subdivisions inside the Rest-of areas: 86; types {'NO': 9, 'IRI': 67, 'TV': 1, 'S-�': 4, 'ID': 5}
+$ mapshaper -i /tmp/fn.json -simplify 4% keep-shapes -o fetch/out/ca_reserves2/ca_rest_first_nations.geojson format=geojson precision=0.0001
+[simplify] Repaired 8 intersections
+[o] Wrote fetch/out/ca_reserves2/ca_rest_first_nations.geojson
+
+kept: Whitefish Lake 6 (IRI, CA-ON-REST, 221 km²); Mattagami 71 (IRI, CA-ON-REST, 48 km²); Matachewan 72 (IRI, CA-ON-REST, 40.9 km²); Abitibi 70 (IRI, CA-ON-REST, 79.4 km²); Fort Albany (Part) 67 (IRI, CA-ON-REST, 3.5 km²); Factory Island 1 (IRI, CA-ON-REST, 3.3 km²); Moose Factory 68 (IRI, CA-ON-REST, 169.9 km²); Flying Post 73 (IRI, CA-ON-REST, 59 km²); Serpent River 7 (IRI, CA-ON-REST, 81 km²); Garden River 14 (IRI, CA-ON-REST, 223.2 km²); Rankin Location 15D (IRI, CA-ON-REST, 15.6 km²); Gros Cap 49 (IRI, CA-ON-REST, 36.4 km²); Gull River 55 (IRI, CA-ON-REST, 40.9 km²); Ginoogaming First Nation (IRI, CA-ON-REST, 69.9 km²); Ojibway Nation of Saugeen (Savant Lake) (IRI, CA-ON-REST, 60.5 km²); Osnaburgh 63A (IRI, CA-ON-REST, 55.2 km²); Lac des Mille Lacs 22A1 (IRI, CA-ON-REST, 17.4 km²); Neguaguon Lake 25D (IRI, CA-ON-REST, 65.4 km²); Rainy Lake 18C (IRI, CA-ON-REST, 17.9 km²); Seine River 23A (IRI, CA-ON-REST, 20.9 km²); Sturgeon Falls 23 (IRI, CA-ON-REST, 26.5 km²); Whitefish Bay 32A (IRI, CA-ON-REST, 20 km²); Slate Falls (IRI, CA-ON-REST, 74.4 km²); Fort Albany (Part) 67 (IRI, CA-ON-REST, 368.3 km²); Attawapiskat 91A (IRI, CA-ON-REST, 1.8 km²); Marten Falls 65 (IRI, CA-ON-REST, 81.7 km²); Fort Hope 64 (IRI, CA-ON-REST, 257 km²); Cat Lake 63C (IRI, CA-ON-REST, 17.3 km²); Osnaburgh 63B (IRI, CA-ON-REST, 138.4 km²); Lac Seul 28 (IRI, CA-ON-REST, 392.2 km²); Wabigoon Lake 27 (IRI, CA-ON-REST, 47.4 km²); English River 21 (IRI, CA-ON-REST, 39.5 km²); Weagamow Lake 87 (IRI, CA-ON-REST, 92 km²); Northwest Angle 33B (IRI, CA-ON-REST, 12.4 km²); Wabaseemoong (IRI, CA-ON-REST, 92.4 km²); Shoal Lake 34B2 (IRI, CA-ON-REST, 1.9 km²); Lake of the Woods 37 (IRI, CA-ON-REST, 11.9 km²); Poplar Hill (IRI, CA-ON-REST, 7.1 km²); Shoal Lake 39A (IRI, CA-ON-REST, 32.6 km²); Deer Lake (IRI, CA-ON-REST, 14.8 km²); Sandy Lake 88 (IRI, CA-ON-REST, 47.1 km²); Kitchenuhmaykoosib Aaki 84 (IRI, CA-ON-REST, 644.2 km²); Sachigo Lake 1 (IRI, CA-ON-REST, 31.8 km²); Pikangikum 14 (IRI, CA-ON-REST, 8.6 km²); Fort Severn 89 (IRI, CA-ON-REST, 43.3 km²); Webequie (IRI, CA-ON-REST, 543.6 km²); North Spirit Lake (IRI, CA-ON-REST, 18.2 km²); Shoal Lake (Part) 40 (IRI, CA-ON-REST, 4.9 km²); Wabauskang 21 (IRI, CA-ON-REST, 31.4 km²); Wunnumin 1 (IRI, CA-ON-REST, 66.6 km²); Wapekeka 2 (IRI, CA-ON-REST, 28.1 km²); The Dalles 38C (IRI, CA-ON-REST, 34.1 km²); Neskantaga (IRI, CA-ON-REST, 10.3 km²); Bearskin Lake (IRI, CA-ON-REST, 175.9 km²); Kasabonika Lake (IRI, CA-ON-REST, 128.3 km²); Muskrat Dam Lake (IRI, CA-ON-REST, 25.7 km²); Kingfisher Lake 1 (IRI, CA-ON-REST, 9.1 km²); Wawakapewin (IRI, CA-ON-REST, 59.4 km²); Kee-Way-Win (IRI, CA-ON-REST, 206.1 km²); Blood 148 (IRI, CA-AB-REST, 1420.9 km²); Blood 148A (IRI, CA-AB-REST, 18.2 km²); Eden Valley 216 (IRI, CA-AB-REST, 17.5 km²); Tsuu T'ina Nation 145 (IRI, CA-AB-REST, 284.1 km²); Alexander 134 (IRI, CA-AB-REST, 72.1 km²); Stoney 142, 143, 144 (IRI, CA-AB-REST, 452.1 km²); Stoney 142B (IRI, CA-AB-REST, 71.8 km²); Allison Bay 219 (IRI, CA-AB-REST, 17.1 km²)
+
+== Brazil: Boa Esperança do Norte (IBGE)
+2025: 9476597 bytes
+$ mapshaper -i /tmp/mt2025/MT_Municipios_2025.shp encoding=utf8 -filter "CD_MUN == '5101837'" -proj wgs84 -simplify 5% keep-shapes -o fetch/out/ca_reserves2/br_51
+[filter] Retained 1 of 142 features
+[o] Wrote fetch/out/ca_reserves2/br_5101837_2025.geojson
+
+2024: 9020114 bytes
+$ mapshaper -i /tmp/mt2024/MT_Municipios_2024.shp encoding=utf8 -filter "CD_MUN == '5101837'" -proj wgs84 -simplify 5% keep-shapes -o fetch/out/ca_reserves2/br_51
+[filter] Retained 1 of 142 features
+[o] Wrote fetch/out/ca_reserves2/br_5101837_2024.geojson
+
+
