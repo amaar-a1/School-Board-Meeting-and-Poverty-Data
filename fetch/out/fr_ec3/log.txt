@@ -1,0 +1,65 @@
+== Pupils by school, rentrée 2025
+982707 bytes; head b'\xef\xbb\xbfcode_commune_insee;secteur;nombre_total_eleves\r\n11120;PUBLIC;53.0\r\n11800;PUBLIC;16.0\r\n11250;PUBLIC;80.0\r\n11220;PUBLIC;70.0\r\n11400;PUBLIC;112.0\r\n11110;PUBLIC;92.0\r\n11110;PUBLIC;166.0\r\n11130;PUBLIC;293.0\r\n11130;PRIVE SOUS CONTRAT;29.0\r\n11320;PUBLIC;15.0\r\n11220;PUBLIC;24.0\r\n11220;PUBLIC;20.0\r\n11350;'
+
+== Pupils by school, rentrée 2025 (text year)
+982707 bytes; head b'\xef\xbb\xbfcode_commune_insee;secteur;nombre_total_eleves\r\n11120;PUBLIC;53.0\r\n11800;PUBLIC;16.0\r\n11250;PUBLIC;80.0\r\n11220;PUBLIC;70.0\r\n11400;PUBLIC;112.0\r\n11110;PUBLIC;92.0\r\n11110;PUBLIC;166.0\r\n11130;PUBLIC;293.0\r\n11130;PRIVE SOUS CONTRAT;29.0\r\n11320;PUBLIC;15.0\r\n11220;PUBLIC;24.0\r\n11220;PUBLIC;20.0\r\n11350;'
+
+== Communes 971
+108255 bytes; head b'{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"MultiPolygon","coordinates":[[[[-61.54884,16.25312],[-61.54687,16.2536],[-61.54654,16.25414],[-61.54684,16.25812],[-61.54674,16.25943],[-61.54743,16.26029],[-61.54751,16.26219],[-61.54717,16.26327],[-61.54748,16.2659],[-61'
+
+== Communes 972
+123467 bytes; head b'{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-61.14848,14.8059],[-61.1534,14.80576],[-61.15484,14.80631],[-61.15674,14.80633],[-61.15692,14.80742],[-61.15757,14.80783],[-61.15993,14.80821],[-61.16157,14.80741],[-61.16226,14.80768],[-61.16219'
+
+== Communes 973
+165929 bytes; head b'{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-53.10089,3.22992],[-53.10394,3.23681],[-53.11228,3.25023],[-53.11098,3.26363],[-53.11818,3.26347],[-53.13715,3.27022],[-53.14569,3.27585],[-53.17106,3.31675],[-53.15913,3.33411],[-53.15334,3.3502'
+
+== Communes 974
+102713 bytes; head b'{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[55.38596,-21.18588],[55.38576,-21.18552],[55.38605,-21.17821],[55.38703,-21.17687],[55.38513,-21.17701],[55.38399,-21.17879],[55.38346,-21.18073],[55.38235,-21.18155],[55.38231,-21.18332],[55.3806'
+
+== Communes 976
+149729 bytes; head b'{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[45.09578,-12.71593],[45.09512,-12.73243],[45.09048,-12.73297],[45.08218,-12.73383],[45.08163,-12.7339],[45.06507,-12.7344],[45.049,-12.74429],[45.0432,-12.74815],[45.04308,-12.74781],[45.04293,-12'
+
+== datosabiertos.gob.ec: AMIE estudiantes
+
+
+== datosabiertos.gob.ec: registro administrativo educación instituciones educativas
+* Registro de Matrícula - MINEDUC (Ministerio de Educación)
+    - MINEDUC_RegistroAdministrativoHistorico_2009-2024Inicio [CSV] https://www.datosabiertos.gob.ec/dataset/5d1838d2-4efb-44a3-8c36-eebb5a8f798a/resource/59db7bb5-eb6b-4a7a-a06a-d1f93ac7506a/download/registro-administrativo-historico_2009-2024-inicio.csv
+    - MINEDUC_RegistroAdministrativoHistorico_2009-2024Inicio. [XLSX] https://www.datosabiertos.gob.ec/dataset/5d1838d2-4efb-44a3-8c36-eebb5a8f798a/resource/caeb9754-e779-4834-930d-ec4ff256a7c4/download/registro-administrativo-historico_2009-2024-inicio.xlsx
+    - MINEDUC_diccionario_RegistroAdministrativoHistorico_2009-2023 [XLSX] https://www.datosabiertos.gob.ec/dataset/5d1838d2-4efb-44a3-8c36-eebb5a8f798a/resource/7357071e-19cb-466f-bfc3-1c2fc02271ae/download/mineduc_diccionario_registroadministrativohistorico_2009-2023inicio.xlsx
+    - MINEDUC_metadato_RegistroAdministrativoHistorico_2009-2024 [XLSX] https://www.datosabiertos.gob.ec/dataset/5d1838d2-4efb-44a3-8c36-eebb5a8f798a/resource/6d560726-9dcd-4f66-8fcc-c7a71c1d7ab6/download/metadato_registroadministrativo_2009_2024_inicio.xlsx
+* Descomposición de la Matrícula - MINEDUC (Ministerio de Educación)
+    - MINEDUC_RegistroAdministrativoHistorico_2009-2024Fin [CSV] https://www.datosabiertos.gob.ec/dataset/137ebd87-8998-4c1b-aa3f-ad6daf411b6d/resource/e4a967a3-7bed-44eb-92d7-d23a1f2129d3/download/registro-administrativo-historico_2009-2024-fin.csv
+    - MINEDUC_RegistroAdministrativoHistorico_2009-2024Fin [XLSX] https://www.datosabiertos.gob.ec/dataset/137ebd87-8998-4c1b-aa3f-ad6daf411b6d/resource/a0125d36-24b4-483d-b0af-b4d5f07cc06b/download/registro-administrativo-historico_2009-2024-fin.xlsx
+    - MINEDUC_diccionario_RegistroAdministrativoHistorico_2009-2022fin [XLSX] https://www.datosabiertos.gob.ec/dataset/137ebd87-8998-4c1b-aa3f-ad6daf411b6d/resource/dcf47d22-508d-41c6-add2-3c0a06b35f13/download/mineduc_diccionario_registroadministrativohistorico_2009-2022fin.xlsx
+    - MINEDUC_metadato_RegistroAdministrativoHistorico_2009-2024Fin.xlsx [XLSX] https://www.datosabiertos.gob.ec/dataset/137ebd87-8998-4c1b-aa3f-ad6daf411b6d/resource/156ca9ba-3cbe-4a36-87af-6b3a45318266/download/mineduc_metadato_registroadministrativo_2009-2024fin.xlsx
+
+== datosabiertos.gob.ec: población cantón censo 2022
+* Registro Estadístico de Defunciones Generales 2022 (Instituto Nacional de Estadística y Censos)
+    - INEC_DEFUNCIONESGENERALES_2022.CSV [CSV] https://www.datosabiertos.gob.ec/dataset/18025173-7ce6-4e88-8740-c8ea92b4f713/resource/a7d83710-96ef-49a8-8ea9-7776a9384880/download/edg_2022_csv.csv
+    - INEC_DEFUNCIONESGENERALES_DD_2022.ods [XLS] https://www.datosabiertos.gob.ec/dataset/18025173-7ce6-4e88-8740-c8ea92b4f713/resource/566b2295-fc09-4085-b1be-e3972ecc2cf8/download/diccionario-de-defunciones-generales-2022.xlsx
+    - INEC_DEFUNCIONESGENERALES_PM_2022.ods [XLS] https://www.datosabiertos.gob.ec/dataset/18025173-7ce6-4e88-8740-c8ea92b4f713/resource/8e341ca4-760b-4e15-9fa1-de399c9039c9/download/metadatos-de-defunciones-generales-2022.xlsx
+* Registro Estadístico de Defunciones Generales 2024 (Instituto Nacional de Estadística y Censos)
+    - INEC_DEFUNCIONESGENERALES_2024.CSV [CSV] https://www.datosabiertos.gob.ec/dataset/07a6d0d3-2adc-4b63-87c4-f34197864a64/resource/d291fe38-bd5c-48ea-96ab-18482ec77939/download/edg_2024_csv.csv
+    - INEC_DEFUNCIONESGENERALES_DD_2024.ods [XLS] https://www.datosabiertos.gob.ec/dataset/07a6d0d3-2adc-4b63-87c4-f34197864a64/resource/7d5a0614-0300-4944-9124-ab30f1c6843d/download/diccionario-de-defunciones-generales-2024.ods
+    - INEC_DEFUNCIONESGENERALES_PM_2024.ods [XLS] https://www.datosabiertos.gob.ec/dataset/07a6d0d3-2adc-4b63-87c4-f34197864a64/resource/ca0a4e65-9053-4cc4-b6ed-884df7c9a779/download/metadatos_de_defunciones_generales_2024.ods
+* Registro Estadístico de Defunciones Generales 2023 (Instituto Nacional de Estadística y Censos)
+    - INEC_DEFUNCIONESGENERALES_2023.CSV [CSV] https://www.datosabiertos.gob.ec/dataset/2a952b84-05a0-4cd9-9463-6a727cdadca8/resource/9faefcfe-5546-46de-8fc0-b4f12bcfdefa/download/edg_2023_csv.csv
+    - INEC_DEFUNCIONESGENERALES_DD_2023.ods [XLS] https://www.datosabiertos.gob.ec/dataset/2a952b84-05a0-4cd9-9463-6a727cdadca8/resource/0a98f1e6-3399-484a-8174-5f6be127a18d/download/diccionario-de-defunciones-generales-2023.ods
+    - INEC_DEFUNCIONESGENERALES_PM_2023.ods [XLS] https://www.datosabiertos.gob.ec/dataset/2a952b84-05a0-4cd9-9463-6a727cdadca8/resource/560876d2-467a-4e4d-9c0b-647f15376dd3/download/metadatos_de_defunciones_generales_2023.ods
+* Registro Estadístico de Defunciones Generales 2021 (Instituto Nacional de Estadística y Censos)
+    - INEC_DEFUNCIONESGENERALES_2021.CSV [CSV] https://www.datosabiertos.gob.ec/dataset/d76d1914-39b0-4004-83b8-7a91f98ce8be/resource/48856f9a-c91d-4e5b-8dbb-9cd55a2f6d07/download/edg_2021_csv.csv
+    - INEC_DEFUNCIONESGENERALES_DD_2021.ods [XLS] https://www.datosabiertos.gob.ec/dataset/d76d1914-39b0-4004-83b8-7a91f98ce8be/resource/a09505d3-beca-451a-8204-676f6da7e33a/download/diccionario-de-defunciones-generales-2021.ods
+    - INEC_DEFUNCIONESGENERALES_PM_2021.ods [XLS] https://www.datosabiertos.gob.ec/dataset/d76d1914-39b0-4004-83b8-7a91f98ce8be/resource/5d1ba280-d4e5-4d16-8b6b-5f07c4410f96/download/metadatos-de-defunciones-generales-2021.ods
+* Registro Estadístico de Divorcios-2022 (Instituto Nacional de Estadística y Censos)
+    - INEC_Divorcios_2022 [CSV] https://www.datosabiertos.gob.ec/dataset/c04a48c6-163c-472d-9340-2aa6045f18b2/resource/7d13c967-609b-4cc8-9434-5de8badca5b9/download/inec_divorcios_2022.csv
+    - INEC_Divorcios_DD_ 2022 [ODS] https://www.datosabiertos.gob.ec/dataset/c04a48c6-163c-472d-9340-2aa6045f18b2/resource/1445936c-b9b7-415c-94df-8888d5456256/download/inec_divorcios_dd_-2022.ods
+    - INEC_Divorcios_PM_ 2022 [ODS] https://www.datosabiertos.gob.ec/dataset/c04a48c6-163c-472d-9340-2aa6045f18b2/resource/d90b54e8-20f1-42ce-9fca-0c2078973171/download/inec_divorcios_pm_-2022.ods
+* Registro Estadístico de Matrimonios-2022 (Instituto Nacional de Estadística y Censos)
+    - INEC_Matrimonios_2022 [CSV] https://www.datosabiertos.gob.ec/dataset/52e5fdad-dff6-4630-b387-e8ee81a1d496/resource/c395abee-a8b2-4598-a614-f03857ccd2fe/download/inec_matrimonios_2022.csv
+    - INEC_Matrimonios_DD_2022 [ODS] https://www.datosabiertos.gob.ec/dataset/52e5fdad-dff6-4630-b387-e8ee81a1d496/resource/957cbddb-311f-4a1b-ab20-4ac97bb12e7c/download/inec_matrimonios_dd_2022.ods
+    - INEC_Matrimonios_PM_ 2022 [ODS] https://www.datosabiertos.gob.ec/dataset/52e5fdad-dff6-4630-b387-e8ee81a1d496/resource/bd38fb01-ac0e-4cff-9426-6baa6e51abcd/download/inec_matrimonios_pm_-2022.ods
+
+== datosabiertos.gob.ec: pobreza NBI cantonal 2022
+
+
