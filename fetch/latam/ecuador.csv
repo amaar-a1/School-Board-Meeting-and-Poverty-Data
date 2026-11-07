@@ -1,0 +1,222 @@
+District ID,District,Region
+EC-0101,Cuenca,Azuay
+EC-0102,Girón,Azuay
+EC-0103,Gualaceo,Azuay
+EC-0104,Nabón,Azuay
+EC-0105,Paute,Azuay
+EC-0106,Pucará,Azuay
+EC-0107,San Fernando,Azuay
+EC-0108,Santa Isabel,Azuay
+EC-0109,Sigsig,Azuay
+EC-0110,Oña,Azuay
+EC-0111,Chordeleg,Azuay
+EC-0112,El Pan,Azuay
+EC-0113,Sevilla de Oro,Azuay
+EC-0114,Guachapala,Azuay
+EC-0115,Camilo Ponce Enríquez,Azuay
+EC-0201,Guaranda,Bolivar
+EC-0202,Chillanes,Bolivar
+EC-0203,Chimbo,Bolivar
+EC-0204,Echeandía,Bolivar
+EC-0205,San Miguel,Bolivar
+EC-0206,Caluma,Bolivar
+EC-0207,Las Naves,Bolivar
+EC-0301,Azogues,Cañar
+EC-0302,Biblián,Cañar
+EC-0303,Cañar,Cañar
+EC-0304,La Troncal,Cañar
+EC-0305,El Tambo,Cañar
+EC-0306,Déleg,Cañar
+EC-0307,Suscal,Cañar
+EC-0401,Tulcán,Carchi
+EC-0402,Bolívar (De Carchi),Carchi
+EC-0403,Espejo,Carchi
+EC-0404,Mira,Carchi
+EC-0405,Montúfar,Carchi
+EC-0406,San Pedro de Huaca,Carchi
+EC-0501,Latacunga,Cotopaxi
+EC-0502,La Maná,Cotopaxi
+EC-0503,Pangua,Cotopaxi
+EC-0504,Pujilí,Cotopaxi
+EC-0505,Salcedo,Cotopaxi
+EC-0506,Saquisilí,Cotopaxi
+EC-0507,Sigchos,Cotopaxi
+EC-0601,Riobamba,Chimborazo
+EC-0602,Alausí,Chimborazo
+EC-0603,Colta,Chimborazo
+EC-0604,Chambo,Chimborazo
+EC-0605,Chunchi,Chimborazo
+EC-0606,Guamote,Chimborazo
+EC-0607,Guano,Chimborazo
+EC-0608,Pallatanga,Chimborazo
+EC-0609,Penipe,Chimborazo
+EC-0610,Cumanda,Chimborazo
+EC-0701,Machala,El Oro
+EC-0702,Arenillas,El Oro
+EC-0703,Atahualpa,El Oro
+EC-0704,Balsas,El Oro
+EC-0705,Chilla,El Oro
+EC-0706,El Guabo,El Oro
+EC-0707,Huaquillas,El Oro
+EC-0708,Marcabelí,El Oro
+EC-0709,Pasaje,El Oro
+EC-0710,Piñas,El Oro
+EC-0711,Portovelo,El Oro
+EC-0712,Santa Rosa,El Oro
+EC-0713,Zaruma,El Oro
+EC-0714,Las Lajas,El Oro
+EC-0801,Esmeraldas,Esmeraldas
+EC-0802,Eloy Alfaro,Esmeraldas
+EC-0803,Muisne,Esmeraldas
+EC-0804,Quinindé,Esmeraldas
+EC-0805,San Lorenzo,Esmeraldas
+EC-0806,Atacames,Esmeraldas
+EC-0807,Rioverde,Esmeraldas
+EC-0901,Guayaquil,Guayas
+EC-0902,Alfredo Baquerizo Moreno,Guayas
+EC-0903,Balao,Guayas
+EC-0904,Balzar,Guayas
+EC-0905,Colimes,Guayas
+EC-0906,Daule,Guayas
+EC-0907,Duran,Guayas
+EC-0908,El Empalme,Guayas
+EC-0909,El Triunfo,Guayas
+EC-0910,Milagro,Guayas
+EC-0911,Naranjal,Guayas
+EC-0912,Naranjito,Guayas
+EC-0913,Palestina,Guayas
+EC-0914,Pedro Carbo,Guayas
+EC-0916,Samborondón,Guayas
+EC-0918,Santa Lucia,Guayas
+EC-0919,Urbina Jado,Guayas
+EC-0920,San Jacinto de Yaguachi,Guayas
+EC-0921,Playas,Guayas
+EC-0922,Simón Bolívar,Guayas
+EC-0923,Coronel Marcelino Maridueña,Guayas
+EC-0924,Lomas de Sargentillo,Guayas
+EC-0925,Nobol (Piedrahita),Guayas
+EC-0927,General Antonio Elizalde (Bucay),Guayas
+EC-0928,Isidro Ayora,Guayas
+EC-1001,Ibarra,Imbabura
+EC-1002,Antonio Ante,Imbabura
+EC-1003,Cotacachi,Imbabura
+EC-1004,Otavalo,Imbabura
+EC-1005,Pimampiro,Imbabura
+EC-1006,San Miguel de Urcuquí,Imbabura
+EC-1101,Loja,Loja
+EC-1102,Calvas,Loja
+EC-1103,Catamayo,Loja
+EC-1104,Celica,Loja
+EC-1105,Chaguarpamba,Loja
+EC-1106,Espíndola,Loja
+EC-1107,Gonzanama,Loja
+EC-1108,Macará,Loja
+EC-1109,Paltas,Loja
+EC-1110,Puyango,Loja
+EC-1111,Saraguro,Loja
+EC-1112,Sozoranga,Loja
+EC-1113,Zapotillo,Loja
+EC-1114,Pindal,Loja
+EC-1115,Quilanga,Loja
+EC-1116,Olmedo,Loja
+EC-1201,Babahoyo,Los Ríos
+EC-1202,Baba,Los Ríos
+EC-1203,Montalvo,Los Ríos
+EC-1204,Puebloviejo,Los Ríos
+EC-1205,Quevedo,Los Ríos
+EC-1206,Urdaneta,Los Ríos
+EC-1207,Ventanas,Los Ríos
+EC-1208,Vinces,Los Ríos
+EC-1209,Palenque,Los Ríos
+EC-1210,Buena Fé,Los Ríos
+EC-1211,Valencia,Los Ríos
+EC-1212,Mocache,Los Ríos
+EC-1213,Quinsaloma,Los Ríos
+EC-1301,Portoviejo,Manabí
+EC-1302,Bolivar (De Manabí),Manabí
+EC-1303,Chone,Manabí
+EC-1304,El Carmen,Manabí
+EC-1305,Flavio Alfaro,Manabí
+EC-1306,Jipijapa,Manabí
+EC-1307,Junín,Manabí
+EC-1308,Manta,Manabí
+EC-1309,Montecristi,Manabí
+EC-1310,Paján,Manabí
+EC-1311,Pichincha,Manabí
+EC-1312,Rocafuerte,Manabí
+EC-1313,Santa Ana,Manabí
+EC-1314,Sucre,Manabí
+EC-1315,Tosagua,Manabí
+EC-1316,24 de Mayo,Manabí
+EC-1317,Pedernales,Manabí
+EC-1318,Olmedo,Manabí
+EC-1319,Puerto López,Manabí
+EC-1320,Jama,Manabí
+EC-1321,Jaramijo,Manabí
+EC-1322,San Vicente,Manabí
+EC-1401,Morona,Morona Santiago
+EC-1402,Gualaquiza,Morona Santiago
+EC-1403,Limón Indanza,Morona Santiago
+EC-1404,Palora,Morona Santiago
+EC-1405,Santiago,Morona Santiago
+EC-1406,Sucúa,Morona Santiago
+EC-1407,Huamboya,Morona Santiago
+EC-1408,San Juan Bosco,Morona Santiago
+EC-1409,Taisha,Morona Santiago
+EC-1410,Logroño,Morona Santiago
+EC-1411,Pablo VI,Morona Santiago
+EC-1412,Tiwintza,Morona Santiago
+EC-1501,Tena,Napo
+EC-1503,Archidona,Napo
+EC-1504,El Chaco,Napo
+EC-1507,Quijos,Napo
+EC-1509,Carlos Julio Arosemena Tola,Napo
+EC-1601,Pastaza,Pastaza
+EC-1602,Mera,Pastaza
+EC-1603,Santa Clara,Pastaza
+EC-1604,Arajuno,Pastaza
+EC-1701,Quito,Pichincha
+EC-1702,Cayambe,Pichincha
+EC-1703,Mejía,Pichincha
+EC-1704,Pedro Moncayo,Pichincha
+EC-1705,Rumiñahui,Pichincha
+EC-1707,San Miguel de Los Bancos,Pichincha
+EC-1708,Pedro Vicente Maldonado,Pichincha
+EC-1709,Puerto Quito,Pichincha
+EC-1801,Ambato,Tungurahua
+EC-1802,Baños de Agua Santa,Tungurahua
+EC-1803,Cevallos,Tungurahua
+EC-1804,Mocha,Tungurahua
+EC-1805,Patate,Tungurahua
+EC-1806,Quero,Tungurahua
+EC-1807,San Pedro de Pelileo,Tungurahua
+EC-1808,Santiago de Píllaro,Tungurahua
+EC-1809,Tisaleo,Tungurahua
+EC-1901,Zamora,Zamora Chinchipe
+EC-1902,Chinchipe,Zamora Chinchipe
+EC-1903,Nangaritza,Zamora Chinchipe
+EC-1904,Yacuambi,Zamora Chinchipe
+EC-1905,Yantzaza,Zamora Chinchipe
+EC-1906,El Pangui,Zamora Chinchipe
+EC-1907,Centinela del Condor,Zamora Chinchipe
+EC-1908,Palanda,Zamora Chinchipe
+EC-1909,Paquisha,Zamora Chinchipe
+EC-2001,San Cristóbal,Galapagos
+EC-2002,Isabela,Galapagos
+EC-2003,Santa Cruz,Galapagos
+EC-2101,Lago Agrio,Sucumbios
+EC-2102,Gonzalo Pizarro,Sucumbios
+EC-2103,Putumayo,Sucumbios
+EC-2104,Shushufindi,Sucumbios
+EC-2105,Sucumbíos,Sucumbios
+EC-2106,Cascales,Sucumbios
+EC-2107,Cuyabeno,Sucumbios
+EC-2201,Orellana,Orellana
+EC-2202,Aguarico,Orellana
+EC-2203,La Joya de los Sachas,Orellana
+EC-2204,Loreto,Orellana
+EC-2301,Santo Domingo,Santo Domingo
+EC-2302,La Concordia,Santo Domingo
+EC-2401,Santa Elena,Peninsula de Sta. Elena
+EC-2402,La Libertad,Peninsula de Sta. Elena
+EC-2403,Salinas,Peninsula de Sta. Elena

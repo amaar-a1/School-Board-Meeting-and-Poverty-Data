@@ -45,6 +45,11 @@ C = {
                edu=r"educaci[óo]n|escuela|ugel", meet=r"sesi[óo]n|concejo|comisi[óo]n"),
     "ES": dict(file="spain", q="pleno ayuntamiento {} {region}", chan=r"ayuntamiento|ajuntament|concello|udala|ayto|ajto|concejo|municipal|ple\b|pleno",
                edu=r"educaci[óo]n|educaci[óo]|ensenyament|escolar|ense[ñn]anza|hezkuntza", meet=r"pleno|\bple\b|plenari|sesi[óo]n|sessi[óo]|comisi[óo]n|comissi[óo]|consejo escolar|osoko bilkura"),
+    # France: town councils (conseil municipal); Ecuador: cantonal councils (concejo municipal of the GAD).
+    "FR": dict(file="france", q="conseil municipal {} {region}", chan=r"ville|mairie|commune|municipal|conseil|agglo|m[ée]tropole|cit[ée]",
+               edu=r"[ée]ducation|scolaire|[ée]cole|enfance|jeunesse", meet=r"conseil municipal|s[ée]ance|commission|conseil"),
+    "EC": dict(file="ecuador", q="sesión de concejo municipal {} {region}", chan=r"municipio|municipal|gad|alcald|concejo|gobierno|cant[óo]n",
+               edu=r"educaci[óo]n|escuela|colegio", meet=r"sesi[óo]n|concejo|comisi[óo]n"),
     "NL": dict(file="netherlands", q="gemeente {} raadsvergadering", chan=r"gemeente|gemeenteraad|raad|griffie",
                edu=r"onderwijs|jeugd|school|kind",
                meet=r"commissie|raad|vergadering|beeldvorm|oordeelvorm"),
