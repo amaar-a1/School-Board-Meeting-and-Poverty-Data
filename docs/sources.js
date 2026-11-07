@@ -270,7 +270,7 @@ window.SOURCES = [
       { title: "Pupils: Ministry of Education, pupils in nursery and primary schools by school, rentrée 2025 (fr-en-ecoles-effectifs-nb_classes), placed in communes with the school directory (fr-en-annuaire-education)", url: "https://data.education.gouv.fr/explore/dataset/fr-en-ecoles-effectifs-nb_classes/" },
       { title: "Borders: communes and départements (simplified), france-geojson by Grégoire David, simplified further with mapshaper", url: "https://github.com/gregoiredavid/france-geojson" },
       { title: "Borders of 47 communes formed by recent mergers: the French government's geographic API (geo.api.gouv.fr)", url: "https://geo.api.gouv.fr/" },
-      { title: "Meetings (stand-in): each town council's YouTube channel (in the “Meetings source” column), searched for communes of 10,000+ people", url: "https://www.youtube.com/" }
+      { title: "Meetings (stand-in): each town council's YouTube channel (in the “Meetings source” column), searched for communes of 2,000+ people", url: "https://www.youtube.com/" }
     ],
     note: "Built by data-prep/build_latam.py. Communes are matched to borders by their INSEE code."
   },

@@ -179,6 +179,13 @@ def meetings(cc, did):
 # Channels checked by hand and found to be another place's (by channel URL). The search matched on the name, and
 # many of these names exist in other Spanish-speaking countries too, or in both Chile and Colombia.
 NOT_CHANNELS = {
+    # France: Quebec towns with a French commune's name (checked by their videos' titles)
+    "FRA": {
+        "https://www.youtube.com/channel/UCNsIi4vI4it0sAn8Afu4l7w",   # Montréal (Quebec), Outremont borough
+        "https://www.youtube.com/channel/UCy70F0jEYrWzl91rLqNgnHg",   # Saint-Colomban (Quebec): "séance ordinaire du conseil municipal"
+        "https://www.youtube.com/channel/UCtmxC4mDsr1ZOjz82jOIcfw",   # Saint-Urbain (Charlevoix, Quebec)
+        "https://www.youtube.com/channel/UCe2bGobWvN5-V3lm1bxSA3Q",   # Carignan (Quebec): "séance du conseil de la ville"
+    },
     # Ecuador: channels of a town with the same name elsewhere (checked by their videos' titles)
     "EC": {
         "https://www.youtube.com/channel/UCZaI4dep0kp5vZa3gCsEwLQ",   # Santo Domingo (Chile): "I.M." and Chilean council terms
