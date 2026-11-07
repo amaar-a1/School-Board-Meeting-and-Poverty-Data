@@ -70,6 +70,16 @@
       const v = toNumber(r[col]);
       r[RANK] = isNaN(v) ? "" : String(Math.round(((below(v) + upto(v)) / 2) / vals.length * 100));
     });
+    // Spain's small municipalities have no child figure: they get the average rank of the municipalities in their
+    // autonomous community that have one (marked as estimated).
+    if (d.country === "ES") {
+      const sum = {}, n = {};
+      d.rows.forEach((r) => { if (r[RANK] !== "") { const k = r["Autonomous community"]; sum[k] = (sum[k] || 0) + Number(r[RANK]); n[k] = (n[k] || 0) + 1; } });
+      d.rows.forEach((r) => {
+        const k = r["Autonomous community"];
+        if (r[RANK] === "" && n[k]) { r[RANK] = String(Math.round(sum[k] / n[k])); r._rankEst = true; }
+      });
+    }
     const at = d.columns.indexOf(col);
     if (!d.columns.includes(RANK)) d.columns.splice(at >= 0 ? at + 1 : d.columns.length, 0, RANK);
     d.numeric.add(RANK);
@@ -121,7 +131,7 @@
         District: r.District, Country: d.country === "ISLE" ? r.District : d.name, "State or province": sp.place ? r[sp.place] : "",
         "Available Board Meetings": r["Available Board Meetings"] ?? "",
         [c.metric]: pct(r[sp.pov]), "Poverty measure": sp.measureColumn ? r[sp.measureColumn] : sp.measure, Children: r[sp.children] ?? "", Enrollment: r.Enrollment ?? "",
-        Locale: r.Locale ? `${d.localePrefix || d.name}: ${r.Locale}` : "", "Other Board Meetings": "", [RANK]: r[RANK] ?? "",
+        Locale: r.Locale ? `${d.localePrefix || d.name}: ${r.Locale}` : "", "Other Board Meetings": "", [RANK]: r[RANK] ?? "", _rankEst: r._rankEst,
         "Latest meeting": r["Latest meeting"] ?? "", "Meetings by year": r["Meetings by year"] ?? "", "Poverty by year": r["Poverty by year"] ?? "", "District ID": r["District ID"]
       });
       out.push({
@@ -137,7 +147,7 @@
         // Canada's locales are estimates, not NCES types, so they stay separate groups here.
         Locale: r.Locale && (ca || uk || ie) ? `${ca ? "Canada" : uk ? "UK" : "Ireland"}: ${r.Locale}` : r.Locale ?? "",
         "Other Board Meetings": r["Other Board Meetings"] ?? "",   // DC, Hawaiʻi and Vermont boards' own sites
-        [RANK]: r[RANK] ?? "",
+        [RANK]: r[RANK] ?? "", _rankEst: r._rankEst,
         "Latest meeting": r["Latest meeting"] ?? "", "Meetings by year": r["Meetings by year"] ?? "", "Poverty by year": r["Poverty by year"] ?? "",
         "District ID": r["District ID"]
       });
@@ -731,7 +741,7 @@
     Object.entries(groups).sort((a, b) => b[1].length - a[1].length).forEach(([c, rows]) => {
       const m = rows.map((r) => toNumber(r["Available Board Meetings"]) || 0);
       const withM = m.filter((v) => v > 0).length;
-      const cor = withM ? correlation(rows.map((r, i) => [toNumber(r[RANK]), m[i]])) : null;
+      const cor = withM ? correlation(rows.map((r, i) => [r._rankEst ? NaN : toNumber(r[RANK]), m[i]])) : null;
       const tr = body.insertRow();
       [c, rows.length.toLocaleString(), `${(100 * withM / rows.length).toFixed(1)}% (${withM.toLocaleString()})`, (m.reduce((a, b) => a + b, 0) / rows.length).toFixed(2),
         cor && isFinite(cor.r) ? cor.r.toFixed(2) : "–", !withM ? "No meetings found" : cor ? cor.words : "Too few places"]
