@@ -274,7 +274,7 @@ window.SOURCES = [
       { title: "Borders of 47 communes formed by recent mergers: the French government's geographic API (geo.api.gouv.fr)", url: "https://geo.api.gouv.fr/" },
       { title: "Meetings (stand-in): each town council's YouTube channel (in the “Meetings source” column), searched for communes of 2,000+ people", url: "https://www.youtube.com/" }
     ],
-    note: "Built by data-prep/build_latam.py. Communes are matched to borders by their INSEE code."
+    note: "Built by data-prep/build_latam.py. Communes are matched to borders by their INSEE code. The border file predates some mergers, which left 492 former communes with no current code; each was placed in the commune it lies in today with geo.api.gouv.fr and drawn as part of it."
   },
   {
     only: "Ecuador",
