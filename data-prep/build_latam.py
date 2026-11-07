@@ -339,12 +339,22 @@ def write(cc, key, rows, feats):
                 feats.append({"type": "Feature", "properties": {"id": f["properties"]["id"], "NAME": r["District"]},
                               "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
                 r["_geo"] = True
+                # Its locale, from its own border (the main file had none to measure).
+                area, pop = area_km2(f["geometry"]), toint(r.get("Population"))
+                if not r.get("Locale") and area and pop:
+                    r["Locale"] = loc(pop / area)
+                    if "People per km² (estimated)" in r: r["People per km² (estimated)"] = round(pop / area)
     rows.sort(key=lambda r: r["District"])
     with open(os.path.join(DOCS, f"{key}.csv"), "w", newline="", encoding="utf-8") as fo:
         w = csv.DictWriter(fo, fieldnames=cols, restval="", extrasaction="ignore"); w.writeheader(); w.writerows(rows)
     json.dump({"type": "FeatureCollection", "features": feats}, open(os.path.join(DOCS, "map", f"{key}.json"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
     print(cc, len(rows), "rows; poverty", sum(1 for r in rows if r.get(pov)), "; enrollment", sum(1 for r in rows if r.get("Enrollment")),
           "; meetings", sum(1 for r in rows if r["Available Board Meetings"]), "; no border", [r["District"] for r in rows if not r.get("_geo")][:10])
+
+
+def toint(v):
+    try: return int(float(str(v).replace(",", "")))
+    except (TypeError, ValueError): return 0
 
 
 def loc(d):
@@ -498,6 +508,14 @@ def mexico():
                      "Children 6–17": kids, "School system": "State education authority",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": str(r[4])}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    # Created after CONEVAL's 2020 figures, so they have none of their own: the rate of the municipality each was
+    # made from stands in, in a column of its own (as Brazil's Boa Esperança do Norte does).
+    for new, old in (("MX-07125", "MX-07080"), ("MX-04012", "MX-04004")):
+        n, o = (next((r for r in rows if r["District ID"] == k), None) for k in (new, old))
+        if n and o and not n["Poverty rate (all ages)"]:
+            n["Poverty rate (region, all ages)"] = o["Poverty rate (all ages)"]
+            n["Poverty note"] = (f"Made from {o['District']} and not in CONEVAL's 2020 figures: {o['District']}'s rate "
+                                 "(multidimensional poverty, all ages, 2020) as a stand-in")
     write("MX", "mexico", rows, feats)
 
 

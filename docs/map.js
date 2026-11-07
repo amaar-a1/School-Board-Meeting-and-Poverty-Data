@@ -244,14 +244,17 @@
   function style(feature) {
     if (isWorld(feature)) return WORLD_STYLE;
     if (undefinedArea(feature)) return { fillColor: NO_DISTRICT, fillOpacity: 0.9, color: "#8a9a80", weight: 0.3, dashArray: "2 3" };
-    if (frSmall && /^FRA-REST-/.test(gid(feature))) return { fillOpacity: 0, opacity: 0, interactive: false };
+    // With France's small communes drawn, each département's group of them stays underneath, unseen but clickable
+    // (the communes are drawn on top, so it answers only between them).
+    if (frSmall && /^FRA-REST-/.test(gid(feature))) return { fillOpacity: 0, opacity: 0, interactive: true };
     const f = window.SiteFilters;
     let on = inView(gid(feature));
     if (on && f && f.active()) {
       const r = rowFor(gid(feature));
       on = !!r && f.test(r);
     }
-    return { fillColor: color(rowFor(gid(feature)), gid(feature)), fillOpacity: on ? 0.85 : 0.35, color: "#555", weight: on ? 0.4 : 0.2 };
+    // opacity and interactive undo the hidden state above (setStyle keeps options it isn't given).
+    return { fillColor: color(rowFor(gid(feature)), gid(feature)), fillOpacity: on ? 0.85 : 0.35, opacity: 1, color: "#555", weight: on ? 0.4 : 0.2, interactive: true };
   }
 
   const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -279,6 +282,7 @@
       (!isNaN(iePov) && eu === "ES" ? `Child low-income rate: not published (small municipality)<br>Poverty rate of its region (all ages, Eurostat): ${iePov.toFixed(1)}%<br>`
         : !isNaN(iePov) && eu === "EC" ? `Consumption poverty: no estimate (outside the survey)<br>Poverty rate of the Galápagos province (2010, reported by BBC News in 2013): ${iePov.toFixed(1)}%<br>`
         : !isNaN(iePov) && eu === "BR" ? `Poverty: no figure of its own (created in 2025, after the census)<br>Rate of Sorriso, which it was part of (2022): ${iePov.toFixed(1)}%<br>`
+        : !isNaN(iePov) && eu === "MX" ? `Poverty: no figure of its own (made after CONEVAL's 2020 figures)<br>Rate of ${esc((String(r["Poverty note"] || "").match(/^Made from (.+?) and/) || [, "the municipality it was part of"])[1])}, which it was part of (2020): ${iePov.toFixed(1)}%<br>`
         : !isNaN(iePov) && eu === "FRA" ? `Commune poverty rate: not published<br>Poverty rate of the whole département (all ages): ${iePov.toFixed(1)}%<br>`
         : !isNaN(iePov) ? `Poverty rate (all ages, its region): ${iePov.toFixed(1)}%<br>Unemployment (Census 2022): ${esc(r["Unemployment rate (Census 2022)"] || "–")}<br>`
         : isNaN(pov) && !isNaN(unemp) ? `Unemployment (stand-in for poverty): ${unemp.toFixed(1)}% (2015 est.)<br>`
@@ -470,10 +474,22 @@
       if (r.State && r["District ID"]) fips[r.State] = r["District ID"].slice(0, 2);
     }));
     const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    map = L.map("map", { preferCanvas: true, minZoom: 2, zoomSnap: 0.25 }).setView([30, 0], 2);   // a view first: the island dots need one
+    // One copy of the world: the map can't be dragged past its edges, and can't be zoomed out further than the world
+    // fills the map (the minimum zoom follows the map's size).
+    const WORLD = L.latLngBounds([[-85, -180], [85, 180]]);
+    map = L.map("map", { preferCanvas: true, minZoom: 1, zoomSnap: 0.25, maxBounds: WORLD, maxBoundsViscosity: 1, worldCopyJump: false })
+      .setView([30, 0], 2);   // a view first: the island dots need one
+    const fitMinZoom = () => {
+      const sz = map.getSize();
+      const z = Math.max(1, Math.ceil(Math.log2(Math.max(sz.x, sz.y) / 256) * 4) / 4);
+      map.setMinZoom(z);
+      if (map.getZoom() < z) map.setZoom(z);
+    };
+    fitMinZoom();
+    map.on("resize", fitMinZoom);
     L.tileLayer(`https://{s}.basemaps.cartocdn.com/${dark ? "dark_all" : "light_all"}/{z}/{x}/{y}{r}.png`, {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-      subdomains: "abcd", maxZoom: 14
+      subdomains: "abcd", maxZoom: 14, noWrap: true, bounds: WORLD
     }).addTo(map);
     const renderer = L.canvas({ padding: 0.3 });
     const files = {};
@@ -534,7 +550,7 @@
       onEachFeature: (f, l) => {
         l.bindTooltip(() => tip(f), { sticky: true });
         l.on("click", (e) => { map.fitBounds(l.getBounds(), { maxZoom: 11 }); clickNote(f, e.latlng); });
-        l.on("mouseover", () => l.setStyle({ weight: 2, color: "#111" }));
+        l.on("mouseover", () => l.setStyle({ weight: 2, color: "#111", opacity: 1 }));
         l.on("mouseout", () => l.setStyle(style(f)));
       }
     });
@@ -548,12 +564,15 @@
         onEachFeature: (f, l) => {
           l.bindTooltip(() => tip(f), { sticky: true });
           l.on("click", (e) => { map.fitBounds(l.getBounds(), { maxZoom: 11 }); clickNote(f, e.latlng); });
-          l.on("mouseover", () => l.setStyle({ weight: 2, color: "#111" }));
+          l.on("mouseover", () => l.setStyle({ weight: 2, color: "#111", opacity: 1 }));
           l.on("mouseout", () => l.setStyle(style(f)));
         }
       });
       if (name !== "scsd" && name !== "canada2") layers[name].addTo(map);
     });
+    // France's groups of small communes go underneath: their simplified borders overlap the larger communes' edges,
+    // which should answer the mouse there.
+    if (layers.france) layers.france.eachLayer((l) => { if (/^FRA-REST-/.test(gid(l.feature))) l.bringToBack(); });
     if (layers.islands) layers.islands.eachLayer((l) => {
       // Countries across the date line (Fiji, Kiribati): centre on the largest island instead.
       let c = l.getBounds().getCenter();

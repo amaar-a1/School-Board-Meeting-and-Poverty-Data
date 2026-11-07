@@ -245,6 +245,7 @@ window.SOURCES = [
       { title: "Population and share under 18: INE, ADRH demographic indicators (one table per province), 2024", url: "https://www.ine.es/dynt3/inebase/index.htm?padre=12385&capsel=12384" },
       { title: "Regional poverty rate for small municipalities without a child figure: Eurostat, at-risk-of-poverty rate by NUTS 2 region (ilc_li41), all ages, 2025", url: "https://ec.europa.eu/eurostat/databrowser/view/ilc_li41/default/table" },
       { title: "Borders: geoBoundaries (gbOpen) Spain ADM2 (provinces) and ADM3 (municipalities), simplified further with mapshaper", url: "https://www.geoboundaries.org/" },
+      { title: "Borders of the 8 municipalities created since 2014 (El Palmar de Troya, Fornes, Fuente Carreteros, La Guijarrosa, La Zarza-Perrunal, San Martín del Tesorillo, Torrenueva Costa, Usansolo): IGN, INSPIRE administrative units service, checked to lie inside the town each was split from", url: "https://www.ign.es/wfs-inspire/unidades-administrativas?service=WFS&request=GetCapabilities" },
       { title: "Meetings (stand-in): each town council's YouTube channel (in the “Meetings source” column), searched for municipalities of 5,000+ people", url: "https://www.youtube.com/" }
     ],
     note: "Built by data-prep/build_latam.py. Municipalities are matched to borders by name within their province (either form of a two-language name)."
@@ -274,7 +275,7 @@ window.SOURCES = [
       { title: "Borders of 47 communes formed by recent mergers: the French government's geographic API (geo.api.gouv.fr)", url: "https://geo.api.gouv.fr/" },
       { title: "Meetings (stand-in): each town council's YouTube channel (in the “Meetings source” column), searched for communes of 2,000+ people", url: "https://www.youtube.com/" }
     ],
-    note: "Built by data-prep/build_latam.py. Communes are matched to borders by their INSEE code."
+    note: "Built by data-prep/build_latam.py. Communes are matched to borders by their INSEE code. The border file predates some mergers, which left 492 former communes with no current code; each was placed in the commune it lies in today with geo.api.gouv.fr and drawn as part of it."
   },
   {
     only: "Ecuador",
@@ -296,12 +297,13 @@ window.SOURCES = [
     group: "Mexico: municipalities, poverty and enrollment",
     items: [
       { title: "Borders of 6 municipalities created since 2012: INEGI, via the UN and geoBoundaries (gbAuthoritative MEX ADM2), checked to lie inside the municipality each was made from", url: "https://www.geoboundaries.org/" },
+      { title: "Borders of 6 more (Coatetelco, Honduras de la Sierra, Hueyapan, San Quintín, Seybaplaya, Xoxocotla): INEGI, Marco Geoestadístico, diciembre de 2025, from its geographic web service (wscatgeo), checked the same way", url: "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgem/17034" },
       { title: "Poverty by municipality: CONEVAL, Medición de la pobreza municipal 2010–2020 (concentrado de indicadores)", url: "https://www.coneval.org.mx/Medicion/Paginas/Pobreza-municipio-2010-2020.aspx" },
       { title: "Enrollment (estimated), children 6–17 and population: INEGI, Censo de Población y Vivienda 2020, Principales resultados por localidad (ITER), municipal totals", url: "https://www.inegi.org.mx/programas/ccpv/2020/#datos_abiertos" },
       { title: "Borders: geoBoundaries (gbOpen) Mexico ADM1 and ADM2 (2012 municipalities), simplified", url: "https://www.geoboundaries.org/" },
       { title: "Meetings (stand-in): each municipality's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
     ],
-    note: "Built by data-prep/build_latam.py. Municipalities are matched to borders by name within their state; 12 created after 2012 have no border in the file."
+    note: "Built by data-prep/build_latam.py. Municipalities are matched to borders by name within their state; the 12 created after 2012 have borders of their own from INEGI (above)."
   },
   {
     only: "Iceland",
