@@ -2,7 +2,7 @@
 // colored by the site's data. app.js calls SiteMap.show() when the tab or the data set changes.
 (function () {
   const $ = (id) => document.getElementById(id);
-  const LAYERS = ["world", "unsd", "elsd", "territories", "scsd", "canada", "spm", "uk", "ireland", "norway", "sweden", "finland", "denmark", "netherlands", "germany", "new-zealand", "islands", "iceland", "switzerland", "chile", "colombia", "brazil", "mexico", "peru", "spain", "france", "ecuador"];   // files in data/map/; scsd only when ticked
+  const LAYERS = ["world", "unsd", "elsd", "territories", "scsd", "canada", "spm", "uk", "ireland", "norway", "sweden", "finland", "denmark", "netherlands", "germany", "new-zealand", "islands", "iceland", "switzerland", "chile", "colombia", "brazil", "mexico", "peru", "spain", "france", "ecuador", "canada-fn"];   // files in data/map/; scsd only when ticked
   // Canadian boards overlap (public and Catholic, English and French). The main layer shows one
   // board per place; "canada2" holds the overlapping ones and shows when its box is ticked.
   // Quebec's French boards cover all of Quebec; elsewhere the public (or English) board does.
@@ -18,7 +18,7 @@
   const ALL_AGES = new Set(["CL", "CO", "MX", "BR", "PE", "FRA", "EC"]);
   const povCol = (eu) => (eu === "ISLE" ? "Poverty rate or stand-in" : ALL_AGES.has(eu) ? "Poverty rate (all ages)" : EU_POV);
   const euOf = (id) => { const c = String(id).split("-")[0]; return String(id).includes("-") && EU[c] ? c : null; };
-  const DRAW = ["world", "unsd", "elsd", "territories", "scsd", "canada", "canada2", "spm", "uk", "ireland", ...Object.values(EU)];
+  const DRAW = ["world", "unsd", "elsd", "territories", "scsd", "canada", "canada2", "canada-fn", "spm", "uk", "ireland", ...Object.values(EU)];
   const gid = (f) => f.properties.GEOID || f.properties.id;
   const isCA = (id) => String(id).startsWith("CA-");
   const isFR = (id) => String(id).startsWith("FR-");   // Saint-Pierre-et-Miquelon (France)
@@ -148,7 +148,7 @@
     if (!row) return NaN;
     const sc = SCALES.poverty;
     let v = toNumber(row[row[sc.column] === undefined && sc.caColumn ? sc.caColumn : sc.column]);
-    for (const c of [UK_POV, EU_POV, "Poverty rate (all ages)", "Poverty rate or stand-in", "Poverty rate (region, all ages)", "Unemployment rate (stand-in for poverty)"])
+    for (const c of [UK_POV, EU_POV, "Poverty rate (all ages)", "Poverty rate or stand-in", "Poverty rate (region, all ages)", "Unemployment rate (stand-in for poverty)", "Low-income rate of the surrounding area (children 0-17)"])
       if (isNaN(v) && row[c]) v = toNumber(row[c]);
     if (isNaN(v) && last && row["Unmet basic needs (NBI, 2010)"]) v = toNumber(row["Unmet basic needs (NBI, 2010)"]);
     if (isNaN(v) && last && row["Poverty by year"]) {
@@ -278,6 +278,7 @@
     return `<div class="map-tip"><strong>${esc(r.District)}${place ? `, ${esc(place)}` : ""}</strong>` +
       (!isNaN(iePov) && eu === "ES" ? `Child low-income rate: not published (small municipality)<br>Poverty rate of its region (all ages, Eurostat): ${iePov.toFixed(1)}%<br>`
         : !isNaN(iePov) && eu === "EC" ? `Consumption poverty: no estimate (outside the survey)<br>Poverty rate of the Galápagos province (2010, reported by BBC News in 2013): ${iePov.toFixed(1)}%<br>`
+        : !isNaN(iePov) && eu === "BR" ? `Poverty: no figure of its own (created in 2025, after the census)<br>Rate of Sorriso, which it was part of (2022): ${iePov.toFixed(1)}%<br>`
         : !isNaN(iePov) && eu === "FRA" ? `Commune poverty rate: not published<br>Poverty rate of the whole département (all ages): ${iePov.toFixed(1)}%<br>`
         : !isNaN(iePov) ? `Poverty rate (all ages, its region): ${iePov.toFixed(1)}%<br>Unemployment (Census 2022): ${esc(r["Unemployment rate (Census 2022)"] || "–")}<br>`
         : isNaN(pov) && !isNaN(unemp) ? `Unemployment (stand-in for poverty): ${unemp.toFixed(1)}% (2015 est.)<br>`
@@ -311,6 +312,7 @@
     return `<div class="map-tip"><strong>${esc(r.District)}, ${esc(r.Province)}</strong>` +
       (r.pseudo ? "Not a school board<br>" : `${esc(r["Board type"])} board<br>`) +
       `Children (0–17) in low income: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}${r.pseudo && !r.own ? " (province-wide rate)" : ""}<br>` +
+      (isNaN(pov) && r["Low-income rate of the surrounding area (children 0-17)"] ? `Surrounding area's rate (stand-in; none is published for reserves): ${esc(r["Low-income rate of the surrounding area (children 0-17)"])}<br>` : "") +
       `Board meetings found: ${isNaN(meet) ? 0 : meet.toLocaleString()}` +
       (toNumber(r.Enrollment) > 0 ? `<br>Enrollment: ${toNumber(r.Enrollment).toLocaleString()} (${esc(r["Enrollment year"])}${r["Enrollment note"] ? `; ${esc(r["Enrollment note"])}` : ""})` : "") +
       (r.Locale ? `<br>Locale (estimated): ${esc(r.Locale)}${/whole province or territory/.test(r["How poverty was calculated"] || "") ? " (serves the whole province or territory: the locale where most of the province's children live)" : ""}` : "") + rankLine(r, r["District ID"]) +
@@ -438,7 +440,7 @@
       const uk = current.parent.country === "UK";
       const pre = uk ? `UK-${current.state.split(":")[1]}` : `CA-${current.state.split(":")[1]}-`;
       let b = null;
-      (uk ? ["uk"] : ["canada", "canada2"]).forEach((n) => layers[n] && layers[n].eachLayer((f) => {
+      (uk ? ["uk"] : ["canada", "canada2", "canada-fn"]).forEach((n) => layers[n] && layers[n].eachLayer((f) => {
         if (gid(f.feature).startsWith(pre)) b = b ? b.extend(f.getBounds()) : L.latLngBounds(f.getBounds().getSouthWest(), f.getBounds().getNorthEast());
       }));
       if (b) { map.fitBounds(b, { padding: [10, 10] }); $("map-jump").value = ""; }
@@ -735,7 +737,7 @@
       if (!loading) {
         loading = Promise.all([...LAYERS, "aliases"].map((n) => fetch(`data/map/${n}.json`).then((r) => {
           if (!r.ok) {
-            if (n === "world" || n === "canada" || n === "spm" || n === "uk" || n === "ireland" || Object.values(EU).includes(n)) return null;   // the US map still works without these borders
+            if (n === "world" || n === "canada" || n === "canada-fn" || n === "spm" || n === "uk" || n === "ireland" || Object.values(EU).includes(n)) return null;   // the US map still works without these borders
             throw new Error(`HTTP ${r.status}`);
           }
           return r.json();

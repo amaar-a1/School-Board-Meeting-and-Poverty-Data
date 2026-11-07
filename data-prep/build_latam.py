@@ -321,6 +321,17 @@ def write(cc, key, rows, feats):
         if c in cols: cols.remove(c); cols.insert(cols.index("Region") + 1, c)
     # Spain's regional stand-in rate goes near the end, out of the summary figures (the first number columns).
     if "Poverty rate (region, all ages)" in cols: cols.remove("Poverty rate (region, all ages)"); cols.insert(len(cols) - 1, "Poverty rate (region, all ages)")
+    # Newer borders for places the main borders file lacks (districts and municipalities created since), checked to lie
+    # inside the place they were made from: inputs/<country>/extra_borders.geojson.
+    xf = os.path.join(IN, DIRS.get(cc, key), "extra_borders.geojson")
+    if os.path.exists(xf):
+        have = {f["properties"]["id"] for f in feats}
+        for f in json.load(open(xf, encoding="utf-8"))["features"]:
+            r = next((r for r in rows if r["District ID"] == f["properties"]["id"]), None)
+            if r and f["properties"]["id"] not in have and f.get("geometry"):
+                feats.append({"type": "Feature", "properties": {"id": f["properties"]["id"], "NAME": r["District"]},
+                              "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+                r["_geo"] = True
     rows.sort(key=lambda r: r["District"])
     with open(os.path.join(DOCS, f"{key}.csv"), "w", newline="", encoding="utf-8") as fo:
         w = csv.DictWriter(fo, fieldnames=cols, restval="", extrasaction="ignore"); w.writeheader(); w.writerows(rows)
@@ -539,6 +550,12 @@ def brazil():
                      "Children 6–17": x.get("Children 6–17", ""), "School system": "Municipal and state school networks",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    # Boa Esperança do Norte (2025) was a district of Sorriso at the 2022 census, so it has no figures of its own:
+    # Sorriso's rate stands in, in a column of its own.
+    new, old = next((r for r in rows if r["District ID"] == "BR-5101837"), None), next((r for r in rows if r["District ID"] == "BR-5107925"), None)
+    if new and old and not new.get("Poverty rate (all ages)") and old.get("Poverty rate (all ages)"):
+        new["Poverty rate (region, all ages)"] = old["Poverty rate (all ages)"]
+        new["Poverty note"] = "Created in 2025 from Sorriso, after the 2022 census: Sorriso's rate (all ages, household income up to half the minimum wage per person, 2022) as a stand-in"
     write("BR", "brazil", rows, feats)
 
 
