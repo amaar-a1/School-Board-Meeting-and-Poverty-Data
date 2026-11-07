@@ -1,12 +1,15 @@
 """Gives Canada's province- and territory-wide boards a locale like the other boards': the locale where most
 of the province's children live, from the other boards in that province (children aged 0-17). Where the
 province-wide boards are the only ones (Prince Edward Island, Newfoundland and Labrador, the Yukon, Nunavut),
-they're rural: all four are far below the urban density cutoffs.
+they're rural (Prince Edward Island: small urban, as a third of its children live in Charlottetown and Summerside).
 
 finish_canada.py calls it on docs/data/canada.csv; or run: python3 data-prep/canada_locales.py docs/data/canada.csv
 """
 import csv, sys
 
+# Prince Edward Island: about a third of its children live in Charlottetown and Summerside, the rest in small
+# towns and the countryside; Canada's in-between class is small urban.
+SET = {"Prince Edward Island": "Small urban"}
 NOTE = "Serves the whole province or territory; its locale is where most of the province's children live (from the other boards there), or rural where it's the only board"
 
 
@@ -23,7 +26,7 @@ def apply(path):
         kids[r["Province"]][r["Locale"]] += k
     for r in wide:
         by = kids.get(r["Province"])
-        r["Locale"] = max(by, key=by.get) if by else "Rural"
+        r["Locale"] = SET.get(r["Province"]) or (max(by, key=by.get) if by else "Rural")
     with open(path, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=cols); w.writeheader(); w.writerows(rows)
     return {r["District"]: (r["Province"], r["Locale"]) for r in wide}

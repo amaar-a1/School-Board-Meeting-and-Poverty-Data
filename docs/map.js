@@ -142,10 +142,60 @@
     return s === "" ? NaN : Number(s);
   };
 
-  function color(row) {
+  // The poverty figure a place is coloured by: its own measure, else the stand-ins in order. With `last`, also a
+  // figure the map would otherwise lack: Ecuador's 2010 NBI rate (the Galápagos) or the place's latest earlier year.
+  function povValue(row, last) {
+    if (!row) return NaN;
+    const sc = SCALES.poverty;
+    let v = toNumber(row[row[sc.column] === undefined && sc.caColumn ? sc.caColumn : sc.column]);
+    for (const c of [UK_POV, EU_POV, "Poverty rate (all ages)", "Poverty rate or stand-in", "Poverty rate (region, all ages)", "Unemployment rate (stand-in for poverty)"])
+      if (isNaN(v) && row[c]) v = toNumber(row[c]);
+    if (isNaN(v) && last && row["Unmet basic needs (NBI, 2010)"]) v = toNumber(row["Unmet basic needs (NBI, 2010)"]);
+    if (isNaN(v) && last && row["Poverty by year"]) {
+      const ys = String(row["Poverty by year"]).split(";").map((x) => x.split(":")).filter((x) => x.length === 2).sort((a, b) => a[0].localeCompare(b[0]));
+      if (ys.length) v = toNumber(ys[ys.length - 1][1]);
+    }
+    return v;
+  }
+  // Which country's places a place is ranked among (Saint-Pierre-et-Miquelon among the islands).
+  const countryOf = (id) => { id = String(id || ""); return isCA(id) ? "CA" : isUK(id) ? "UK" : isIE(id) ? "IE" : isFR(id) ? "ISLE" : euOf(id) || "US"; };
+  let rankPool = null;
+  // A rank for a place whose data has none but whose map figure is known: where that figure falls among its
+  // country's places (marked as estimated).
+  function rankFallback(row, id) {
+    const v = povValue(row, true);
+    if (isNaN(v)) return "";
+    if (!rankPool) {
+      rankPool = {};
+      Object.entries(lookup).forEach(([k, r]) => { const x = povValue(r); if (!isNaN(x) && !r.pseudo) (rankPool[countryOf(k)] = rankPool[countryOf(k)] || []).push(x); });
+    }
+    const pool = rankPool[countryOf(id)] || [];
+    if (!pool.length) return "";
+    const lo = pool.filter((x) => x < v).length, hi = pool.filter((x) => x <= v).length;
+    return String(Math.round(((lo + hi) / 2) / pool.length * 100));
+  }
+  let localePool = null;
+  // A locale for a place whose data has none: the most common one in its county (US), province or region.
+  function localeFallback(row, id) {
+    if (!row) return "";
+    if (!localePool) {
+      localePool = {};
+      Object.entries(lookup).forEach(([k, r]) => {
+        if (!r.Locale || r.pseudo) return;
+        const key = `${countryOf(k)}|${r.County || r.Province || r.Region || ""}`;
+        localePool[key] = localePool[key] || {}; localePool[key][r.Locale] = (localePool[key][r.Locale] || 0) + 1;
+      });
+    }
+    const m = localePool[`${countryOf(id)}|${row.County || row.Province || row.Region || ""}`];
+    return m ? Object.entries(m).sort((a, b) => b[1] - a[1])[0][0] : "";
+  }
+
+  function color(row, id) {
     const metric = $("map-metric").value, sc = SCALES[metric];
-    if (metric === "locale") return localeColor(row);
+    if (metric === "locale") return localeColor(row && !row.Locale ? { Locale: localeFallback(row, id) } : row);
+    if (metric === "rank" && row && String(row[sc.column] ?? "") === "") { const k = rankFallback(row, id); if (k !== "") row = { [sc.column]: k }; }
     let v = row ? toNumber(row[row[sc.column] === undefined && sc.caColumn ? sc.caColumn : sc.column]) : NaN;
+    if (metric === "poverty") v = povValue(row, true);
     if (metric === "poverty" && row && isNaN(v) && row[UK_POV]) v = toNumber(row[UK_POV]);
     if (metric === "poverty" && row && isNaN(v) && row[EU_POV]) v = toNumber(row[EU_POV]);
     if (metric === "poverty" && row && isNaN(v) && row["Poverty rate (all ages)"]) v = toNumber(row["Poverty rate (all ages)"]);   // Chile, Colombia
@@ -200,7 +250,7 @@
       const r = rowFor(gid(feature));
       on = !!r && f.test(r);
     }
-    return { fillColor: color(rowFor(gid(feature))), fillOpacity: on ? 0.85 : 0.35, color: "#555", weight: on ? 0.4 : 0.2 };
+    return { fillColor: color(rowFor(gid(feature)), gid(feature)), fillOpacity: on ? 0.85 : 0.35, color: "#555", weight: on ? 0.4 : 0.2 };
   }
 
   const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -231,11 +281,13 @@
         : isNaN(pov) && !isNaN(unemp) ? `Unemployment (stand-in for poverty): ${unemp.toFixed(1)}% (2015 est.)<br>`
         : `${ukPov ? "Children under 16 in low income" : eu === "ISLE" ? esc(r["Poverty measure"] || "Poverty") : ALL_AGES.has(eu) ? `Poverty (${eu === "FRA" ? "all ages, 60% of median, 2023" : eu === "EC" ? "all ages, consumption, 2014 estimate" : eu === "CL" ? "all ages, income, 2024" : eu === "BR" ? "all ages, income up to ½ minimum wage per person, 2022" : eu === "PE" ? "all ages, monetary, 2018" : eu === "MX" ? "all ages, multidimensional, 2020" : "all ages, multidimensional, 2018"})` : eu ? `Children in low income (${{ NO: "0–17, 2022–24", SE: "0–19, 2024", FI: "under 18", DK: "0–17, 50% line, 2024", NL: "CBS, 2024", DE: "under 15 on SGB II benefits, 2023", NZ: "60% line, 2025", IS: "national rate", CH: "0–17 on social assistance", ES: "under 18, 60% line, 2024", CL: "all ages, income, 2024", CO: "all ages, multidimensional, 2018" }[eu]})` : "Child poverty"}: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>`) +
       (!isNaN(frKids) ? `Children under 18 in poverty, whole département: ${frKids.toFixed(1)}%<br>` : "") +
+      (isNaN(povValue(r)) && !isNaN(povValue(r, true)) ? `Shown on the map: ${povValue(r, true).toFixed(1)}% (${r["Unmet basic needs (NBI, 2010)"] ? "unmet basic needs, 2010" : "its latest earlier figure"})<br>` : "") +
       `Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}` +
       (toNumber(r["Other Board Meetings"]) > 0 ? `${r.State ? " on CivicSearch" : meet > 0 ? " recorded" : ""}; ${toNumber(r["Other Board Meetings"]).toLocaleString()} from ${r.State ? "other sources" : "the council's or board's own records"} (see note)` : "") + `<br>` +
-      `Enrollment: ${isNaN(enr) ? "not reported" : enr.toLocaleString()}` + rankLine(r) +
+      `Enrollment: ${isNaN(enr) ? "not reported" : enr.toLocaleString()}` + rankLine(r, gid(feature)) +
       (r["Latest meeting"] ? `<br>Latest recorded meeting: ${esc(r["Latest meeting"])}` : "") +
-      (r.Locale ? `<br>Locale${/^(UK|IE)-/.test(r["District ID"]) || eu ? " (estimated)" : ""}: ${esc(r.Locale)}` : "") +
+      (r.Locale ? `<br>Locale${/^(UK|IE)-/.test(r["District ID"]) || eu ? " (estimated)" : ""}: ${esc(r.Locale)}`
+        : localeFallback(r, gid(feature)) ? `<br>Locale (estimated from its area's other places): ${esc(localeFallback(r, gid(feature)))}` : "") +
       (note ? `<div class="tip-note">${esc(note)}</div>` : "") + "</div>";
   }
 
@@ -259,11 +311,13 @@
       `Children (0–17) in low income: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}${r.pseudo && !r.own ? " (province-wide rate)" : ""}<br>` +
       `Board meetings found: ${isNaN(meet) ? 0 : meet.toLocaleString()}` +
       (toNumber(r.Enrollment) > 0 ? `<br>Enrollment: ${toNumber(r.Enrollment).toLocaleString()} (${esc(r["Enrollment year"])}${r["Enrollment note"] ? `; ${esc(r["Enrollment note"])}` : ""})` : "") +
-      (r.Locale ? `<br>Locale (estimated): ${esc(r.Locale)}` : "") + rankLine(r) +
+      (r.Locale ? `<br>Locale (estimated): ${esc(r.Locale)}` : "") + rankLine(r, r["District ID"]) +
       (note ? `<div class="tip-note">${esc(note)}</div>` : "") + "</div>";
   }
 
-  const rankLine = (r) => (String(r["Poverty rank in country"] ?? "") !== ""
+  const rankLine = (r, id) => (String(r["Poverty rank in country"] ?? "") === "" && id && rankFallback(r, id) !== ""
+    ? `<br>Poverty rank in its country: ${rankFallback(r, id)} of 100 (100 = highest); estimated from the figure the map shows for it`
+    : String(r["Poverty rank in country"] ?? "") !== ""
     ? `<br>Poverty rank in its country: ${esc(r["Poverty rank in country"])} of 100 (100 = highest)${r._rankEst ? (r.pseudo && r.Province ? "; estimated: where its rate falls among the country's boards" : "; estimated from the places in its region that have a figure") : ""}` : "");
 
   const ukView = () => current && (current.country === "UK" || (current.parent && current.parent.country === "UK"));
@@ -428,7 +482,7 @@
     });
     (files.france ? files.france.features : []).filter((f) => f.properties.pseudo).forEach((f) => {
       const p = f.properties, rk = frRank[p.dep];
-      lookup[gid(f)] = { District: `Smaller communes of ${p.dep}`, Region: p.dep, pseudo: true, "Available Board Meetings": 0,
+      lookup[gid(f)] = { District: `Smaller communes of ${p.dep}`, Region: p.dep, pseudo: true, "Available Board Meetings": 0, Locale: "Rural",
         "Poverty rate (all ages)": p.pct ?? "", "Child poverty rate (département)": p.child ?? "",
         "Poverty rank in country": rk ? String(Math.round(rk[0] / rk[1])) : "", _rankEst: !!rk,
         "Map note": `${Number(p.communes).toLocaleString()} communes (${Number(p.pop).toLocaleString()} people) that INSEE publishes no poverty rate for, as they have too few households; shown with ${p.dep}'s rate, and not counted in France's data` };
@@ -590,6 +644,16 @@
 
   window.SiteMap = {
     rowFor: (geoid) => rowFor(geoid),
+    // Areas drawn grey (no figure) in the current colouring, for checking: [{layer, id, name}].
+    grays: () => {
+      const out = [];
+      Object.entries(layers).forEach(([n, l]) => l.eachLayer((f) => {
+        const ft = f.feature;
+        if (!ft || isWorld(ft) || undefinedArea(ft)) return;
+        if (style(ft).fillColor === NO_DATA) out.push({ layer: n, id: gid(ft), name: (rowFor(gid(ft)) || {}).District || ft.properties.NAME || "" });
+      }));
+      return out;
+    },
     restyle: () => { if (map) restyle(); },
     // Zooms to and outlines a district by its District ID (used by the site-wide search).
     focus: (id) => loading && loading.then(() => { map.invalidateSize(); focusEntry(byId.get(id) || [...byId.values()].find((g) => g.row && g.row["District ID"] === id)); }),

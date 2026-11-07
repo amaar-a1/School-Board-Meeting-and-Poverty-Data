@@ -735,7 +735,8 @@ def france():
                          "People below 60% of the national median standard of living, all ages, 2023 (INSEE, Filosofi); INSEE publishes no child rate by commune, so the département's rate for under-18s is given too",
                      "Enrollment": pu.get("total", ""), "Enrollment year": "2025-26 (nursery and primary schools)" if pu else "",
                      "Public school enrollment": pu.get("public", ""), "School system": "Commune (school buildings); Ministry of Education (teachers)",
-                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
+                     # Mayotte has no commune populations here: its overall density (256,518 people in 2017 on 374 km², about 690 per km²)
+                     "Locale": loc(dens) if dens else "Suburban" if dp == "976" else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": x["name"]}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
     # Map only: each département's communes without a published rate, together.
     for k, f in sorted(geo.items()):
