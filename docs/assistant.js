@@ -154,6 +154,7 @@
       const p = num(r[r._pov]), m = num(r[MEET]), e = num(r.Enrollment), isl = !!r["Poverty measure"];
       return `<div class="ask-card"><strong>${esc(r.District)}${isl ? "" : `, ${esc(r._eu)}`}</strong><ul>` +
         `<li>${isl ? esc(r["Poverty measure"] || "Poverty") : r["Poverty note"] ? "Poverty (see note)" : "Children in low income"}: ${isNaN(p) ? "not published" : p.toFixed(1) + "%"}${num(r.Children) > 0 && !r["Poverty note"] ? ` (of ${num(r.Children).toLocaleString()} children)` : ""}</li>` +
+        (isNaN(p) && r["Poverty rate (region, all ages)"] ? `<li>Poverty rate of its region (all ages): ${esc(r["Poverty rate (region, all ages)"])}</li>` : "") +
         (r["Poverty note"] ? `<li>${esc(r["Poverty note"])}</li>` : "") +
         `<li>Meetings found: ${isNaN(m) ? 0 : m.toLocaleString()}</li>` +
         `<li>Pupils: ${isNaN(e) ? "not reported" : `${e.toLocaleString()}${r["Enrollment year"] ? ` (${esc(r["Enrollment year"])})` : ""}`}</li>` +
