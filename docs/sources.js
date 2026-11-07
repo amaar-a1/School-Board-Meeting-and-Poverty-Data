@@ -225,6 +225,7 @@ window.SOURCES = [
     only: "Brazil",
     group: "Brazil: municipalities, poverty and enrollment",
     items: [
+      { title: "Border of Boa Esperança do Norte (created 2025): IBGE, Malha Municipal 2025, Mato Grosso", url: "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2025/UFs/MT/" },
       { title: "Poverty: IBGE, Censo Demográfico 2022, table 10296 (residents by household income per person, in minimum wages), via SIDRA", url: "https://sidra.ibge.gov.br/tabela/10296" },
       { title: "Bolsa Família families by municipality, September 2025: Portal da Transparência (Novo Bolsa Família, pagamentos)", url: "https://portaldatransparencia.gov.br/download-de-dados/novo-bolsa-familia/202509" },
       { title: "Municipal codes (SIAFI to IBGE): Tesouro Nacional, Tabela de Municípios", url: "https://www.tesourotransparente.gov.br/ckan/dataset/lista-de-municipios-do-siafi" },
@@ -254,6 +255,7 @@ window.SOURCES = [
     items: [
       { title: "Poverty and population: INEI, Mapa de pobreza monetaria provincial y distrital 2018, Anexo 1 (95% confidence interval of the monetary poverty rate and 2018 population by district)", url: "https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1718/Libro.pdf" },
       { title: "Borders: district boundaries (INEI), as GeoJSON by Juan Eladio Sánchez Rosas (peru-geojson)", url: "https://github.com/juaneladio/peru-geojson" },
+      { title: "Borders of the 48 districts created since: Instituto Geográfico Nacional, via OCHA and geoBoundaries (gbHumanitarian PER ADM3), checked to lie inside the district each was made from", url: "https://www.geoboundaries.org/" },
       { title: "Meetings (stand-in): each council's YouTube channel, checked by hand (in the “Meetings source” column)", url: "https://www.youtube.com/" },
       { title: "Checked but not used: the Ministry of Education's enrollment statistics (ESCALE) and the national open data portal, which refuse automated downloads", url: "https://escale.minedu.gob.pe/" }
     ],
@@ -268,7 +270,8 @@ window.SOURCES = [
       { title: "Overseas départements' poverty rates (Guadeloupe, Martinique, French Guiana, Mayotte): INSEE, Revenus et patrimoine des ménages, édition 2024, fiche 1.21 (Filosofi 2021 and the 2017 Budget de famille survey)", url: "https://www.insee.fr/fr/statistiques/fichier/7941411/RPM2024-F21.pdf" },
       { title: "Population: INSEE, populations de référence 2023 (municipal population)", url: "https://api.insee.fr/melodi/file/DS_POPULATIONS_REFERENCE/DS_POPULATIONS_REFERENCE_2023_CSV_FR" },
       { title: "Pupils: Ministry of Education, pupils in nursery and primary schools by school, rentrée 2025 (fr-en-ecoles-effectifs-nb_classes), placed in communes with the school directory (fr-en-annuaire-education)", url: "https://data.education.gouv.fr/explore/dataset/fr-en-ecoles-effectifs-nb_classes/" },
-      { title: "Borders: communes and départements (simplified), france-geojson by Grégoire David; communes without a poverty rate merged by département with mapshaper", url: "https://github.com/gregoiredavid/france-geojson" },
+      { title: "Borders: communes and départements (simplified), france-geojson by Grégoire David, simplified further with mapshaper", url: "https://github.com/gregoiredavid/france-geojson" },
+      { title: "Borders of 47 communes formed by recent mergers: the French government's geographic API (geo.api.gouv.fr)", url: "https://geo.api.gouv.fr/" },
       { title: "Meetings (stand-in): each town council's YouTube channel (in the “Meetings source” column), searched for communes of 10,000+ people", url: "https://www.youtube.com/" }
     ],
     note: "Built by data-prep/build_latam.py. Communes are matched to borders by their INSEE code."
@@ -292,6 +295,7 @@ window.SOURCES = [
     only: "Mexico",
     group: "Mexico: municipalities, poverty and enrollment",
     items: [
+      { title: "Borders of 6 municipalities created since 2012: INEGI, via the UN and geoBoundaries (gbAuthoritative MEX ADM2), checked to lie inside the municipality each was made from", url: "https://www.geoboundaries.org/" },
       { title: "Poverty by municipality: CONEVAL, Medición de la pobreza municipal 2010–2020 (concentrado de indicadores)", url: "https://www.coneval.org.mx/Medicion/Paginas/Pobreza-municipio-2010-2020.aspx" },
       { title: "Enrollment (estimated), children 6–17 and population: INEGI, Censo de Población y Vivienda 2020, Principales resultados por localidad (ITER), municipal totals", url: "https://www.inegi.org.mx/programas/ccpv/2020/#datos_abiertos" },
       { title: "Borders: geoBoundaries (gbOpen) Mexico ADM1 and ADM2 (2012 municipalities), simplified", url: "https://www.geoboundaries.org/" },
@@ -373,6 +377,7 @@ window.SOURCES = [
     only: "Canada",
     group: "Canada: school board borders",
     items: [
+      { title: "First Nations reserves and settlements outside every school board (Ontario and Alberta): Statistics Canada, 2021 census subdivision boundaries (lcsd000b21a_e), types IRI and S-É", url: "https://github.com/amaar-a1/School-Board-Meeting-and-Poverty-Data/releases/tag/statcan-csd-2021" },
       { title: "British Columbia: school district boundaries (DataBC)", url: "https://catalogue.data.gov.bc.ca/dataset/school-districts-of-bc" },
       { title: "Alberta: public and separate school authority boundaries, 2025 (Alberta geospatial services)", url: "https://geospatial.alberta.ca/titan/rest/services" },
       { title: "Saskatchewan: schools and school divisions (Government of Saskatchewan map service)", url: "https://gis.saskatchewan.ca/arcgis/rest/services/Education/SchoolsAndDivisions/MapServer" },
