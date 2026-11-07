@@ -19,7 +19,7 @@ window.SITE_CONFIG = {
     // Canada: its own button and its own provinces in the menu. Kept apart from the US figures,
     // because its low-income measure (ages 0-17, LIM-AT) isn't the same as the US one (ages 5-17, SAIPE).
     { name: "Canada", file: "data/canada.csv", country: "CA", recordLabel: "Boards",
-      groups: { column: "Province", label: "Canada",
+      groups: { column: "Province", label: "Canada", word: "province or territory",
         names: { AB: "Alberta", BC: "British Columbia", MB: "Manitoba", NB: "New Brunswick", NL: "Newfoundland and Labrador",
           NS: "Nova Scotia", NT: "Northwest Territories", NU: "Nunavut", ON: "Ontario", PE: "Prince Edward Island", QC: "Quebec",
           SK: "Saskatchewan", YT: "Yukon" } },
@@ -47,7 +47,7 @@ window.SITE_CONFIG = {
       footer: "Saint-Pierre-et-Miquelon as of November 2026. Sources are listed on the Sources tab." },
     // United Kingdom: its own button and nations. Child poverty is DWP's relative low income (children under 16).
     { name: "United Kingdom", file: "data/uk.csv", country: "UK", recordLabel: "Councils", textColumns: ["District ID", "Enrollment year"],
-      groups: { column: "Nation", label: "United Kingdom",
+      groups: { column: "Nation", label: "United Kingdom", word: "nation",
         names: { E: "England", S: "Scotland", W: "Wales", N: "Northern Ireland" } },
       chart: { type: "scatter", x: "Percentage of Children Under 16 in Low Income", y: "Available Board Meetings" },
       compare: {
@@ -62,6 +62,7 @@ window.SITE_CONFIG = {
       footer: "UK education authorities as of November 2026. Sources are listed on the Sources tab." },
     // Ireland: its own button. No local child poverty rate, so Census 2022 unemployment stands in.
     { name: "Ireland", file: "data/ireland.csv", country: "IE", recordLabel: "Boards", textColumns: ["District ID", "Enrollment year"],
+      groups: { column: "Region", label: "Ireland", word: "province" },
       chart: { type: "bar", x: "District", y: "Poverty rate (region, all ages)" },
       compare: { title: "Poverty rate (each board's region): boards with vs. without meetings found", by: "Available Board Meetings",
         metric: "Poverty rate (region, all ages)", withLabel: "With 1+ meetings found", withoutLabel: "With no meetings found" },
@@ -72,6 +73,7 @@ window.SITE_CONFIG = {
       footer: "Irish Education and Training Boards as of November 2026. Sources are listed on the Sources tab." },
     // Norway: municipalities run schools. Child low income is the national statistics office's own measure.
     { name: "Norway", file: "data/norway.csv", country: "NO", recordLabel: "Municipalities", textColumns: ["District ID", "Enrollment year"],
+      groups: { column: "Region", label: "Norway", word: "county" },
       simple: { pov: "Percentage of Children in Low Income", children: "Children", measure: "Statistics Norway: children 0–17 in households with persistent low income (below 60% of the median, three-year period 2022–2024)", rules: "norway" },
       chart: { type: "scatter", x: "Percentage of Children in Low Income", y: "Available Board Meetings" },
       compare: { title: "Child low income: municipalities with vs. without meetings found", by: "Available Board Meetings",
@@ -83,6 +85,7 @@ window.SITE_CONFIG = {
       footer: "Norway municipalities as of November 2026. Sources are listed on the Sources tab." },
     // Sweden: municipalities run schools. Child low income is the national statistics office's own measure.
     { name: "Sweden", file: "data/sweden.csv", country: "SE", recordLabel: "Municipalities", textColumns: ["District ID", "Enrollment year"],
+      groups: { column: "Region", label: "Sweden", word: "county" },
       simple: { pov: "Percentage of Children in Low Income", children: "Children", measure: "Statistics Sweden: people 0–19 with a low economic standard (household income below 60% of the median, adjusted for household size), 2024", rules: "sweden" },
       chart: { type: "scatter", x: "Percentage of Children in Low Income", y: "Available Board Meetings" },
       compare: { title: "Child low income: municipalities with vs. without meetings found", by: "Available Board Meetings",
@@ -94,6 +97,7 @@ window.SITE_CONFIG = {
       footer: "Sweden municipalities as of November 2026. Sources are listed on the Sources tab." },
     // Finland: municipalities run schools. Child low income is the national statistics office's own measure.
     { name: "Finland", file: "data/finland.csv", country: "FI", recordLabel: "Municipalities", textColumns: ["District ID", "Enrollment year"],
+      groups: { column: "Region", label: "Finland", word: "region" },
       simple: { pov: "Percentage of Children in Low Income", children: "Children", measure: "THL (Sotkanet): children under 18 in low-income households (below 60% of the median), latest year 2022–2024", rules: "finland" },
       chart: { type: "scatter", x: "Percentage of Children in Low Income", y: "Available Board Meetings" },
       compare: { title: "Child low income: municipalities with vs. without meetings found", by: "Available Board Meetings",
@@ -105,6 +109,7 @@ window.SITE_CONFIG = {
       footer: "Finland municipalities as of November 2026. Sources are listed on the Sources tab." },
     // Denmark: municipalities run schools. Child low income is the national statistics office's own measure.
     { name: "Denmark", file: "data/denmark.csv", country: "DK", recordLabel: "Municipalities", textColumns: ["District ID", "Enrollment year"],
+      groups: { column: "Region", label: "Denmark", word: "region" },
       simple: { pov: "Percentage of Children in Low Income", children: "Children", measure: "Statistics Denmark: children 0–17 in relative poverty (below 50% of the median), 2024", rules: "denmark" },
       chart: { type: "scatter", x: "Percentage of Children in Low Income", y: "Available Board Meetings" },
       compare: { title: "Child low income: municipalities with vs. without meetings found", by: "Available Board Meetings",
@@ -116,6 +121,7 @@ window.SITE_CONFIG = {
       footer: "Denmark municipalities as of November 2026. Sources are listed on the Sources tab." },
     // Netherlands: municipalities run schools. Child low income is the national statistics office's own measure.
     { name: "Netherlands", file: "data/netherlands.csv", country: "NL", recordLabel: "Municipalities", textColumns: ["District ID", "Enrollment year"],
+      groups: { column: "Region", label: "Netherlands", word: "province" },
       simple: { pov: "Percentage of Children in Low Income", children: "Children", measure: "CBS: children in households below CBS's poverty line (its “not much but sufficient” budget), 2024", rules: "netherlands" },
       chart: { type: "scatter", x: "Percentage of Children in Low Income", y: "Available Board Meetings" },
       compare: { title: "Child low income: municipalities with vs. without meetings found", by: "Available Board Meetings",
@@ -127,6 +133,7 @@ window.SITE_CONFIG = {
       footer: "Netherlands municipalities as of November 2026. Sources are listed on the Sources tab." },
     // Iceland: municipalities run the compulsory schools; councils stream their meetings, where school matters come up.
     { name: "Iceland", file: "data/iceland.csv", country: "IS", recordLabel: "Municipalities", textColumns: ["District ID", "Enrollment year"],
+      groups: { column: "Region", label: "Iceland", word: "region" },
       simple: { pov: "Percentage of Children in Low Income", children: "Children", measure: "Children under 18 below 60% of the median income: Iceland's national rate (Eurostat), since no local rate is published", rules: "iceland" },
       chart: { type: "scatter", x: "Children", y: "Available Board Meetings" },
       compare: { title: "Child low income: municipalities with vs. without meetings found", by: "Available Board Meetings",
@@ -138,6 +145,7 @@ window.SITE_CONFIG = {
       footer: "Icelandic municipalities as of November 2026. Sources are listed on the Sources tab." },
     // Switzerland: the 26 cantons run the schools; child social assistance rate by canton.
     { name: "Switzerland", file: "data/switzerland.csv", country: "CH", recordLabel: "Cantons", textColumns: ["District ID", "Enrollment year"],
+      groups: { column: "Region", label: "Switzerland", word: "region" },
       simple: { pov: "Percentage of Children in Low Income", children: "Children", measure: "Children 0–17 receiving social assistance (Federal Statistical Office, 2025)", rules: "switzerland" },
       chart: { type: "scatter", x: "Percentage of Children in Low Income", y: "Enrollment" },
       compare: { title: "Child social assistance: cantons with vs. without parliament sittings found", by: "Available Board Meetings",
@@ -150,7 +158,7 @@ window.SITE_CONFIG = {
     // Chile: 345 comunas; schools run by the municipality or a Local Public Education Service (SLEP).
     { name: "Chile", file: "data/chile.csv", country: "CL", recordLabel: "Comunas", textColumns: ["District ID", "Enrollment year"],
       simple: { pov: "Poverty rate (all ages)", children: "Children", measure: "People in income poverty, all ages (Ministerio de Desarrollo Social, small-area estimates 2024)", rules: "chile", place: "Region" },
-      groups: { column: "Region", label: "Chile", names: {"OHIGGI": " O'Higgins", "ANTOFA": "Antofagasta", "ARICAY": "Arica y Parinacota", "ATACAM": "Atacama", "AYSEN": "Aysén", "BIOBIO": "Biobío", "COQUIM": "Coquimbo", "LAARAU": "La Araucanía", "LOSLAG": "Los Lagos", "LOSRIO": "Los Ríos", "MAGALL": "Magallanes", "MAULE": "Maule", "METROP": "Metropolitana", "TARAPA": "Tarapacá", "VALPAR": "Valparaíso", "NUBLE": "Ñuble"} },
+      groups: { column: "Region", label: "Chile", word: "region", names: {"OHIGGI": " O'Higgins", "ANTOFA": "Antofagasta", "ARICAY": "Arica y Parinacota", "ATACAM": "Atacama", "AYSEN": "Aysén", "BIOBIO": "Biobío", "COQUIM": "Coquimbo", "LAARAU": "La Araucanía", "LOSLAG": "Los Lagos", "LOSRIO": "Los Ríos", "MAGALL": "Magallanes", "MAULE": "Maule", "METROP": "Metropolitana", "TARAPA": "Tarapacá", "VALPAR": "Valparaíso", "NUBLE": "Ñuble"} },
       chart: { type: "scatter", x: "Poverty rate (all ages)", y: "Available Board Meetings" },
       compare: { title: "Poverty: comunas with vs. without council sessions found", by: "Available Board Meetings",
         metric: "Poverty rate (all ages)", withLabel: "With 1+ sessions found", withoutLabel: "With no sessions found" },
@@ -162,7 +170,7 @@ window.SITE_CONFIG = {
     // Colombia: 1,122 municipalities; schools run by certified territorial entities (ETC).
     { name: "Colombia", file: "data/colombia.csv", country: "CO", recordLabel: "Municipalities", textColumns: ["District ID", "Enrollment year"],
       simple: { pov: "Poverty rate (all ages)", children: "Children", measure: "Multidimensional poverty, all ages (DANE, 2018 census)", rules: "colombia", place: "Region" },
-      groups: { column: "Region", label: "Colombia", names: {"AMAZON": "Amazonas", "ANTIOQ": "Antioquia", "ARAUCA": "Arauca", "ARCHIP": "Archipiélago de San Andrés, Providencia y Santa Catalina", "ATLANT": "Atlántico", "BOGOTA": "Bogotá, D.C.", "BOLIVA": "Bolívar", "BOYACA": "Boyacá", "CALDAS": "Caldas", "CAQUET": "Caquetá", "CASANA": "Casanare", "CAUCA": "Cauca", "CESAR": "Cesar", "CHOCO": "Chocó", "CUNDIN": "Cundinamarca", "CORDOB": "Córdoba", "GUAINI": "Guainía", "GUAVIA": "Guaviare", "HUILA": "Huila", "LAGUAJ": "La Guajira", "MAGDAL": "Magdalena", "META": "Meta", "NARINO": "Nariño", "NORTED": "Norte de Santander", "PUTUMA": "Putumayo", "QUINDI": "Quindio", "RISARA": "Risaralda", "SANTAN": "Santander", "SUCRE": "Sucre", "TOLIMA": "Tolima", "VALLED": "Valle del Cauca", "VAUPES": "Vaupés", "VICHAD": "Vichada"} },
+      groups: { column: "Region", label: "Colombia", word: "department", names: {"AMAZON": "Amazonas", "ANTIOQ": "Antioquia", "ARAUCA": "Arauca", "ARCHIP": "Archipiélago de San Andrés, Providencia y Santa Catalina", "ATLANT": "Atlántico", "BOGOTA": "Bogotá, D.C.", "BOLIVA": "Bolívar", "BOYACA": "Boyacá", "CALDAS": "Caldas", "CAQUET": "Caquetá", "CASANA": "Casanare", "CAUCA": "Cauca", "CESAR": "Cesar", "CHOCO": "Chocó", "CUNDIN": "Cundinamarca", "CORDOB": "Córdoba", "GUAINI": "Guainía", "GUAVIA": "Guaviare", "HUILA": "Huila", "LAGUAJ": "La Guajira", "MAGDAL": "Magdalena", "META": "Meta", "NARINO": "Nariño", "NORTED": "Norte de Santander", "PUTUMA": "Putumayo", "QUINDI": "Quindio", "RISARA": "Risaralda", "SANTAN": "Santander", "SUCRE": "Sucre", "TOLIMA": "Tolima", "VALLED": "Valle del Cauca", "VAUPES": "Vaupés", "VICHAD": "Vichada"} },
       chart: { type: "scatter", x: "Poverty rate (all ages)", y: "Available Board Meetings" },
       compare: { title: "Poverty: municipalities with vs. without council sessions found", by: "Available Board Meetings",
         metric: "Poverty rate (all ages)", withLabel: "With 1+ sessions found", withoutLabel: "With no sessions found" },
@@ -174,7 +182,7 @@ window.SITE_CONFIG = {
     // Mexico: 2,469 municipalities; schools run by each state's education authority, so town councils stand in.
     { name: "Mexico", file: "data/mexico.csv", country: "MX", recordLabel: "Municipalities", textColumns: ["District ID", "Enrollment year"],
       simple: { pov: "Poverty rate (all ages)", children: "Children 6–17", measure: "Multidimensional poverty, all ages (CONEVAL, 2020)", rules: "mexico", place: "Region" },
-      groups: { column: "Region", label: "Mexico", names: {"AGUASCALIENTES": "Aguascalientes", "BAJACALIFORNIA": "Baja California", "BAJACALIFORNIASUR": "Baja California Sur", "CAMPECHE": "Campeche", "CHIAPAS": "Chiapas", "CHIHUAHUA": "Chihuahua", "CIUDADDEMEXICO": "Ciudad de México", "COAHUILA": "Coahuila", "COLIMA": "Colima", "DURANGO": "Durango", "ESTADODEMEXICO": "Estado de México", "GUANAJUATO": "Guanajuato", "GUERRERO": "Guerrero", "HIDALGO": "Hidalgo", "JALISCO": "Jalisco", "MICHOACAN": "Michoacán", "MORELOS": "Morelos", "NAYARIT": "Nayarit", "NUEVOLEON": "Nuevo León", "OAXACA": "Oaxaca", "PUEBLA": "Puebla", "QUERETARO": "Querétaro", "QUINTANAROO": "Quintana Roo", "SANLUISPOTOSI": "San Luis Potosí", "SINALOA": "Sinaloa", "SONORA": "Sonora", "TABASCO": "Tabasco", "TAMAULIPAS": "Tamaulipas", "TLAXCALA": "Tlaxcala", "VERACRUZ": "Veracruz", "YUCATAN": "Yucatán", "ZACATECAS": "Zacatecas"} },
+      groups: { column: "Region", label: "Mexico", word: "state", names: {"AGUASCALIENTES": "Aguascalientes", "BAJACALIFORNIA": "Baja California", "BAJACALIFORNIASUR": "Baja California Sur", "CAMPECHE": "Campeche", "CHIAPAS": "Chiapas", "CHIHUAHUA": "Chihuahua", "CIUDADDEMEXICO": "Ciudad de México", "COAHUILA": "Coahuila", "COLIMA": "Colima", "DURANGO": "Durango", "ESTADODEMEXICO": "Estado de México", "GUANAJUATO": "Guanajuato", "GUERRERO": "Guerrero", "HIDALGO": "Hidalgo", "JALISCO": "Jalisco", "MICHOACAN": "Michoacán", "MORELOS": "Morelos", "NAYARIT": "Nayarit", "NUEVOLEON": "Nuevo León", "OAXACA": "Oaxaca", "PUEBLA": "Puebla", "QUERETARO": "Querétaro", "QUINTANAROO": "Quintana Roo", "SANLUISPOTOSI": "San Luis Potosí", "SINALOA": "Sinaloa", "SONORA": "Sonora", "TABASCO": "Tabasco", "TAMAULIPAS": "Tamaulipas", "TLAXCALA": "Tlaxcala", "VERACRUZ": "Veracruz", "YUCATAN": "Yucatán", "ZACATECAS": "Zacatecas"} },
       chart: { type: "scatter", x: "Poverty rate (all ages)", y: "Available Board Meetings" },
       compare: { title: "Poverty: municipalities with vs. without council sessions found", by: "Available Board Meetings",
         metric: "Poverty rate (all ages)", withLabel: "With 1+ sessions found", withoutLabel: "With no sessions found" },
@@ -186,7 +194,7 @@ window.SITE_CONFIG = {
     // Brazil: 5,570 municipalities, which run most early-years schools; municipal chambers stand in for meetings.
     { name: "Brazil", file: "data/brazil.csv", country: "BR", recordLabel: "Municipalities", textColumns: ["District ID", "Enrollment year"],
       simple: { pov: "Poverty rate (all ages)", children: "Children 6–17", measure: "Household income up to ½ minimum wage per person, all ages (2022 census)", rules: "brazil", place: "Region" },
-      groups: { column: "Region", label: "Brazil", names: {"ACRE": "Acre", "ALAGOAS": "Alagoas", "AMAPA": "Amapá", "AMAZONAS": "Amazonas", "BAHIA": "Bahia", "CEARA": "Ceará", "DISTRITOFEDERAL": "Distrito Federal", "ESPIRITOSANTO": "Espírito Santo", "GOIAS": "Goiás", "MARANHAO": "Maranhão", "MATOGROSSO": "Mato Grosso", "MATOGROSSODOSUL": "Mato Grosso do Sul", "MINASGERAIS": "Minas Gerais", "PARA": "Pará", "PARAIBA": "Paraíba", "PARANA": "Paraná", "PERNAMBUCO": "Pernambuco", "PIAUI": "Piauí", "RIODEJANEIRO": "Rio de Janeiro", "RIOGRANDEDONORTE": "Rio Grande do Norte", "RIOGRANDEDOSUL": "Rio Grande do Sul", "RONDONIA": "Rondônia", "RORAIMA": "Roraima", "SANTACATARINA": "Santa Catarina", "SAOPAULO": "São Paulo", "SERGIPE": "Sergipe", "TOCANTINS": "Tocantins"} },
+      groups: { column: "Region", label: "Brazil", word: "state", names: {"ACRE": "Acre", "ALAGOAS": "Alagoas", "AMAPA": "Amapá", "AMAZONAS": "Amazonas", "BAHIA": "Bahia", "CEARA": "Ceará", "DISTRITOFEDERAL": "Distrito Federal", "ESPIRITOSANTO": "Espírito Santo", "GOIAS": "Goiás", "MARANHAO": "Maranhão", "MATOGROSSO": "Mato Grosso", "MATOGROSSODOSUL": "Mato Grosso do Sul", "MINASGERAIS": "Minas Gerais", "PARA": "Pará", "PARAIBA": "Paraíba", "PARANA": "Paraná", "PERNAMBUCO": "Pernambuco", "PIAUI": "Piauí", "RIODEJANEIRO": "Rio de Janeiro", "RIOGRANDEDONORTE": "Rio Grande do Norte", "RIOGRANDEDOSUL": "Rio Grande do Sul", "RONDONIA": "Rondônia", "RORAIMA": "Roraima", "SANTACATARINA": "Santa Catarina", "SAOPAULO": "São Paulo", "SERGIPE": "Sergipe", "TOCANTINS": "Tocantins"} },
       chart: { type: "scatter", x: "Poverty rate (all ages)", y: "Available Board Meetings" },
       compare: { title: "Poverty: municipalities with vs. without chamber sessions found", by: "Available Board Meetings",
         metric: "Poverty rate (all ages)", withLabel: "With 1+ sessions found", withoutLabel: "With no sessions found" },
@@ -198,7 +206,7 @@ window.SITE_CONFIG = {
     // Peru: 1,874 districts; schools run by the regional education directorates (UGEL), so district councils stand in.
     { name: "Peru", file: "data/peru.csv", country: "PE", recordLabel: "Districts", textColumns: ["District ID", "Province", "Poverty range"],
       simple: { pov: "Poverty rate (all ages)", children: "Children", measure: "Monetary poverty, all ages (INEI poverty map, 2018; midpoint of the range)", rules: "peru", place: "Region" },
-      groups: { column: "Region", label: "Peru", names: {"AMAZONAS": "Amazonas", "ANCASH": "Áncash", "APURIMAC": "Apurímac", "AREQUIPA": "Arequipa", "AYACUCHO": "Ayacucho", "CAJAMARCA": "Cajamarca", "CALLAO": "Callao", "CUSCO": "Cusco", "HUANCAVELICA": "Huancavelica", "HUANUCO": "Huánuco", "ICA": "Ica", "JUNIN": "Junín", "LALIBERTAD": "La Libertad", "LAMBAYEQUE": "Lambayeque", "LIMA": "Lima", "LORETO": "Loreto", "MADREDEDIOS": "Madre de Dios", "MOQUEGUA": "Moquegua", "PASCO": "Pasco", "PIURA": "Piura", "PUNO": "Puno", "SANMARTIN": "San Martín", "TACNA": "Tacna", "TUMBES": "Tumbes", "UCAYALI": "Ucayali"} },
+      groups: { column: "Region", label: "Peru", word: "region", names: {"AMAZONAS": "Amazonas", "ANCASH": "Áncash", "APURIMAC": "Apurímac", "AREQUIPA": "Arequipa", "AYACUCHO": "Ayacucho", "CAJAMARCA": "Cajamarca", "CALLAO": "Callao", "CUSCO": "Cusco", "HUANCAVELICA": "Huancavelica", "HUANUCO": "Huánuco", "ICA": "Ica", "JUNIN": "Junín", "LALIBERTAD": "La Libertad", "LAMBAYEQUE": "Lambayeque", "LIMA": "Lima", "LORETO": "Loreto", "MADREDEDIOS": "Madre de Dios", "MOQUEGUA": "Moquegua", "PASCO": "Pasco", "PIURA": "Piura", "PUNO": "Puno", "SANMARTIN": "San Martín", "TACNA": "Tacna", "TUMBES": "Tumbes", "UCAYALI": "Ucayali"} },
       chart: { type: "scatter", x: "Poverty rate (all ages)", y: "Available Board Meetings" },
       compare: { title: "Poverty: districts with vs. without council sessions found", by: "Available Board Meetings",
         metric: "Poverty rate (all ages)", withLabel: "With 1+ sessions found", withoutLabel: "With no sessions found" },
@@ -210,7 +218,7 @@ window.SITE_CONFIG = {
     // Spain: 8,132 municipalities; schools run by each autonomous community, so town council plenaries stand in.
     { name: "Spain", file: "data/spain.csv", country: "ES", recordLabel: "Municipalities", textColumns: ["District ID", "Autonomous community", "Poverty year"],
       simple: { pov: "Percentage of Children in Low Income", children: "Children under 18 (estimated)", measure: "People under 18 below 60% of the national median income (INE household income atlas, 2024)", rules: "spain", place: "Region" },
-      groups: { column: "Region", label: "Spain", names: {"ACORUNA": "A Coruña", "ALBACETE": "Albacete", "ALICANTE": "Alicante", "ALMERIA": "Almería", "ASTURIAS": "Asturias", "BADAJOZ": "Badajoz", "BARCELONA": "Barcelona", "BIZKAIA": "Bizkaia", "BURGOS": "Burgos", "CANTABRIA": "Cantabria", "CASTELLON": "Castellón", "CEUTA": "Ceuta", "CIUDADREAL": "Ciudad Real", "CUENCA": "Cuenca", "CACERES": "Cáceres", "CADIZ": "Cádiz", "CORDOBA": "Córdoba", "GIPUZKOA": "Gipuzkoa", "GIRONA": "Girona", "GRANADA": "Granada", "GUADALAJARA": "Guadalajara", "HUELVA": "Huelva", "HUESCA": "Huesca", "ILLESBALEARS": "Illes Balears", "JAEN": "Jaén", "LARIOJA": "La Rioja", "LASPALMAS": "Las Palmas", "LEON": "León", "LLEIDA": "Lleida", "LUGO": "Lugo", "MADRID": "Madrid", "MELILLA": "Melilla", "MURCIA": "Murcia", "MALAGA": "Málaga", "NAVARRA": "Navarra", "OURENSE": "Ourense", "PALENCIA": "Palencia", "PONTEVEDRA": "Pontevedra", "SALAMANCA": "Salamanca", "SANTACRUZDETENERIFE": "Santa Cruz de Tenerife", "SEGOVIA": "Segovia", "SEVILLA": "Sevilla", "SORIA": "Soria", "TARRAGONA": "Tarragona", "TERUEL": "Teruel", "TOLEDO": "Toledo", "VALENCIA": "Valencia", "VALLADOLID": "Valladolid", "ZAMORA": "Zamora", "ZARAGOZA": "Zaragoza", "ALAVA": "Álava", "AVILA": "Ávila"} },
+      groups: { column: "Region", label: "Spain", word: "province", names: {"ACORUNA": "A Coruña", "ALBACETE": "Albacete", "ALICANTE": "Alicante", "ALMERIA": "Almería", "ASTURIAS": "Asturias", "BADAJOZ": "Badajoz", "BARCELONA": "Barcelona", "BIZKAIA": "Bizkaia", "BURGOS": "Burgos", "CANTABRIA": "Cantabria", "CASTELLON": "Castellón", "CEUTA": "Ceuta", "CIUDADREAL": "Ciudad Real", "CUENCA": "Cuenca", "CACERES": "Cáceres", "CADIZ": "Cádiz", "CORDOBA": "Córdoba", "GIPUZKOA": "Gipuzkoa", "GIRONA": "Girona", "GRANADA": "Granada", "GUADALAJARA": "Guadalajara", "HUELVA": "Huelva", "HUESCA": "Huesca", "ILLESBALEARS": "Illes Balears", "JAEN": "Jaén", "LARIOJA": "La Rioja", "LASPALMAS": "Las Palmas", "LEON": "León", "LLEIDA": "Lleida", "LUGO": "Lugo", "MADRID": "Madrid", "MELILLA": "Melilla", "MURCIA": "Murcia", "MALAGA": "Málaga", "NAVARRA": "Navarra", "OURENSE": "Ourense", "PALENCIA": "Palencia", "PONTEVEDRA": "Pontevedra", "SALAMANCA": "Salamanca", "SANTACRUZDETENERIFE": "Santa Cruz de Tenerife", "SEGOVIA": "Segovia", "SEVILLA": "Sevilla", "SORIA": "Soria", "TARRAGONA": "Tarragona", "TERUEL": "Teruel", "TOLEDO": "Toledo", "VALENCIA": "Valencia", "VALLADOLID": "Valladolid", "ZAMORA": "Zamora", "ZARAGOZA": "Zaragoza", "ALAVA": "Álava", "AVILA": "Ávila"} },
       chart: { type: "scatter", x: "Percentage of Children in Low Income", y: "Available Board Meetings" },
       compare: { title: "Child poverty: municipalities with vs. without council meetings found", by: "Available Board Meetings",
         metric: "Percentage of Children in Low Income", withLabel: "With 1+ meetings found", withoutLabel: "With no meetings found" },
@@ -222,7 +230,7 @@ window.SITE_CONFIG = {
     // Germany: 400 districts and district-free cities (the school authorities), with each state's view.
     { name: "Germany", file: "data/germany.csv", country: "DE", recordLabel: "Districts", textColumns: ["District ID", "Enrollment year"],
       simple: { pov: "Percentage of Children in Low Income", children: "Children", measure: "Children under 15 receiving basic income support (SGB II), 2023 (Bertelsmann Stiftung, Wegweiser Kommune)", rules: "germany", place: "State" },
-      groups: { column: "State", label: "Germany",
+      groups: { column: "State", label: "Germany", word: "state",
         names: { BW: "Baden-Württemberg", BY: "Bavaria", BE: "Berlin", BB: "Brandenburg", HB: "Bremen", HH: "Hamburg", HE: "Hesse",
           MV: "Mecklenburg-Vorpommern", NI: "Lower Saxony", NW: "North Rhine-Westphalia", RP: "Rhineland-Palatinate", SL: "Saarland",
           SN: "Saxony", ST: "Saxony-Anhalt", SH: "Schleswig-Holstein", TH: "Thuringia" } },
@@ -236,6 +244,7 @@ window.SITE_CONFIG = {
       footer: "German districts as of November 2026. Sources are listed on the Sources tab." },
     // New Zealand: every school has its own elected board, so the site shows Stats NZ's 12 child poverty areas.
     { name: "New Zealand", file: "data/new-zealand.csv", country: "NZ", recordLabel: "Areas", textColumns: ["District ID", "Enrollment year"],
+      groups: { column: "Region", label: "New Zealand", word: "island" },
       simple: { pov: "Percentage of Children in Low Income", children: "Children", measure: "Stats NZ: children in households below 60% of the median income before housing costs, year ended June 2025", rules: "newzealand" },
       chart: { type: "bar", x: "District", y: "Percentage of Children in Low Income" },
       compare: { title: "Child low income: areas with vs. without meetings found", by: "Available Board Meetings",
@@ -249,7 +258,7 @@ window.SITE_CONFIG = {
     { name: "Islands and microstates", button: "Islands & microstates", file: "data/islands.csv", country: "ISLE", recordLabel: "Islands",
       textColumns: ["District ID", "Enrollment year"], localePrefix: "Islands",
       simple: { pov: "Poverty rate or stand-in", children: "Children Ages 0-14 (estimated)", measureColumn: "Poverty measure", rules: "islands", place: "Region" },
-      groups: { column: "Region", label: "Islands and microstates",
+      groups: { column: "Region", label: "Islands and microstates", word: "region or island", each: "District",
         names: { CAR: "Caribbean", PAC: "Pacific", EUR: "Europe and the North Atlantic", ASI: "Asia and the Indian Ocean", AFR: "Africa and the South Atlantic", MIC: "European microstates" } },
       chart: { type: "scatter", x: "Poverty rate or stand-in", y: "Enrollment" },
       compare: { title: "Poverty (or stand-in): islands with vs. without legislature sittings found", by: "Available Board Meetings",

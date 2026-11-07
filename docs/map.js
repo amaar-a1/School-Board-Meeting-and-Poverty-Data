@@ -160,10 +160,10 @@
     const eu = current && EU[current.country] ? current.country : null;
     // One state or region of these countries (Germany's states, the island regions).
     const sub = current && current.parent && EU[current.parent.country] && current.parent.groups;
-    if (sub) { const r = rowFor(geoid); return euOf(geoid) === current.parent.country && !!r && r[sub.column] === current.name; }
+    if (sub) { const r = rowFor(geoid); return euOf(geoid) === current.parent.country && !!r && r[current.groupCol || sub.column] === current.name; }
     if (euOf(geoid) || eu) return euOf(geoid) === eu;
     const ie = current && current.country === "IE";
-    if (isIE(geoid) || ie) return isIE(geoid) && ie;
+    if (isIE(geoid) || ie) { const r = rowFor(geoid); return isIE(geoid) && ie && (!current.state || (!!r && r.Region === current.name)); }
     const uk = current && (current.country === "UK" || (current.parent && current.parent.country === "UK"));
     if (isUK(geoid) || uk) return isUK(geoid) && uk && (!current.state || geoid.startsWith(`UK-${current.state.split(":")[1]}`));
     const ca = current && (current.country === "CA" || (current.parent && current.parent.country === "CA"));
@@ -318,11 +318,11 @@
     if (current.state === "territories") return jump("Puerto Rico");
     if (current.combined) return jump("United States and Canada");
     if (current.country === "FR") return jump("Saint-Pierre-et-Miquelon");
-    if (current.country === "IE") return jump("Ireland");
+    if (current.country === "IE" && !current.state) return jump("Ireland");
     const euc = EU[current.country] ? current.country : null;
-    if (euc && (euc === "ISLE" || current.parent)) {
+    if ((euc && (euc === "ISLE" || current.parent)) || current.country === "IE") {
       let b = null;
-      layers[EU[euc]] && layers[EU[euc]].eachLayer((f) => {
+      layers[euc ? EU[euc] : "ireland"] && layers[euc ? EU[euc] : "ireland"].eachLayer((f) => {
         if (inView(gid(f.feature))) b = b ? b.extend(f.getBounds()) : L.latLngBounds(f.getBounds().getSouthWest(), f.getBounds().getNorthEast());
       });
       if (b) { map.fitBounds(b, { padding: [10, 10] }); $("map-jump").value = ""; }

@@ -308,3 +308,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+    import add_regions   # the Region column for the site's region menu
+    for k in ("norway", "sweden", "denmark", "finland", "netherlands"):
+        add_regions.add(k)
