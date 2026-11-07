@@ -1,0 +1,430 @@
+{
+  "observations" : [ {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "NR",
+      "FILOSOFI_MEASURE" : "GI_SL"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "EUR_YR",
+      "FILOSOFI_MEASURE" : "D9_SL"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "PT",
+      "FILOSOFI_MEASURE" : "S_SOC_BEN_DI_MIN_SOC"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "EUR_YR",
+      "FILOSOFI_MEASURE" : "D7_SL"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "EUR_YR",
+      "FILOSOFI_MEASURE" : "D2_SL"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "EUR_YR",
+      "FILOSOFI_MEASURE" : "D6_SL"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "EUR_YR",
+      "FILOSOFI_MEASURE" : "Q3_SL"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "EUR_YR",
+      "FILOSOFI_MEASURE" : "D3_SL"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "EUR_YR",
+      "FILOSOFI_MEASURE" : "D1_SL"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "NR",
+      "FILOSOFI_MEASURE" : "IR_D9_D1_SL"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "PT",
+      "FILOSOFI_MEASURE" : "S_SOC_BEN_DI_HOU_BEN"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "PT",
+      "FILOSOFI_MEASURE" : "S_EI_DI"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "PT",
+      "FILOSOFI_MEASURE" : "S_EI_DI_N_SAL"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "PT",
+      "FILOSOFI_MEASURE" : "S_INC_ASS_DI"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "PT",
+      "FILOSOFI_MEASURE" : "S_EI_DI_SAL"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "PT",
+      "FILOSOFI_MEASURE" : "S_DIR_TAX_DI"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "EUR_YR",
+      "FILOSOFI_MEASURE" : "D4_SL"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "EUR_YR",
+      "FILOSOFI_MEASURE" : "D8_SL"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "A",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "PT",
+      "FILOSOFI_MEASURE" : "PR_MD60"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : {
+        "value" : 16.8
+      }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "NR",
+      "FILOSOFI_MEASURE" : "S80S20_SL"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "A",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "EUR_YR",
+      "FILOSOFI_MEASURE" : "MED_SL"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : {
+        "value" : 33650.0
+      }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "PT",
+      "FILOSOFI_MEASURE" : "S_SOC_BEN_DI_FAM_BEN"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "EUR_YR",
+      "FILOSOFI_MEASURE" : "Q1_SL"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "EUR_YR",
+      "FILOSOFI_MEASURE" : "IQR_SL"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "PT",
+      "FILOSOFI_MEASURE" : "S_EI_DI_UNE"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "PT",
+      "FILOSOFI_MEASURE" : "S_SOC_BEN_DI"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  }, {
+    "attributes" : {
+      "OBS_STATUS" : "O",
+      "UNIT_MULT" : "0",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2026-COM-75056",
+      "TIME_PERIOD" : "2023",
+      "UNIT_MEASURE" : "PT",
+      "FILOSOFI_MEASURE" : "S_RET_PEN_DI"
+    },
+    "measures" : {
+      "OBS_VALUE_NIVEAU" : { }
+    }
+  } ],
+  "identifier" : "DS_FILOSOFI_CC",
+  "paging" : {
+    "first" : "https://api.insee.fr/melodi/data/DS_FILOSOFI_CC?GEO=COM-75056&maxResult=200&page=1"
+  },
+  "publisher" : {
+    "id" : "INSEE",
+    "label" : [ {
+      "content" : "Institut national de la statistique et des etudes economiques (INSEE)",
+      "lang" : "fr"
+    }, {
+      "content" : "National Institute of Statistics and Economic Studies",
+      "lang" : "en"
+    } ]
+  },
+  "title" : {
+    "en" : "Standard of living, poverty rate, and composition of disposable income in 2023",
+    "fr" : "Niveau de vie, taux de pauvreté, décomposition du revenu disponible en 2023"
+  }
+}
