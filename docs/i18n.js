@@ -71,7 +71,6 @@
   };
   const params = new URLSearchParams(location.search);
   let lang = params.get("lang");
-  try { lang = lang || localStorage.getItem("sbmpd-lang"); } catch (e) { /* private mode */ }
   if (!T[lang]) lang = "en";
   const orig = new WeakMap();   // node -> its English text, so switching back works
 
@@ -101,29 +100,42 @@
   }
   let busy = false;
   const obs = new MutationObserver((muts) => {
-    if (busy || lang === "en") return;
+    if (busy) return;
     busy = true;
-    muts.forEach((m) => { if (m.type === "characterData") translateNode(m.target); else m.addedNodes.forEach(walk); });
-    if (muts.some((m) => m.target.id === "tabs" || m.target.id === "country-select")) resort();
+    if (lang !== "en") muts.forEach((m) => { if (m.type === "characterData") translateNode(m.target); else m.addedNodes.forEach(walk); });
+    const sels = new Set();
+    muts.forEach((m) => {
+      const t = m.target.nodeType === 1 ? m.target : m.target.parentElement;
+      if (t && t.closest && t.closest("select")) sels.add(t.closest("select"));
+      m.addedNodes.forEach((n) => { if (n.nodeType === 1) { if (n.tagName === "SELECT") sels.add(n); n.querySelectorAll && n.querySelectorAll("select").forEach((x) => sels.add(x)); } });
+    });
+    sels.forEach(sortSelect);
     busy = false;
   });
 
-  // Keep the country menu in alphabetical order in the chosen language ("All" stays last).
-  function resort() {
-    const sel = document.getElementById("country-select");
-    if (!sel) return;
-    const os = [...sel.options], keep = sel.value;
-    const all = os.filter((o) => (o.value || "").startsWith("All"));
-    const rest = os.filter((o) => !all.includes(o)).sort((a, b) => a.textContent.localeCompare(b.textContent, lang));
-    const want = [...rest, ...all];
-    if (want.every((o, i) => o === os[i])) return;   // already in order (moving them would loop the observer)
-    want.forEach((o) => sel.appendChild(o));
-    sel.value = keep;
+  // Every menu is in alphabetical order in the chosen language. On top stay the choices that mean "no choice" or
+  // "everything" (an empty value: "Any", "All states", "—"; and "All" in the country menu), and "Whole region" in
+  // each region's group. Option groups are sorted by their labels too.
+  const pinned = (o) => o.value === "" || (o.closest("#country-select") && /^All\b/.test(o.value)) || o.textContent === T[lang]?.["Whole region"] || o.textContent === "Whole region";
+  const cmp = (a, b) => a.localeCompare(b, lang, { numeric: true, sensitivity: "base" });
+  function order(parent) {
+    const kids = [...parent.children];
+    const opts = kids.filter((k) => k.tagName === "OPTION"), groups = kids.filter((k) => k.tagName === "OPTGROUP");
+    groups.forEach(order);
+    const want = [...opts.filter(pinned), ...opts.filter((o) => !pinned(o)).sort((a, b) => cmp(a.textContent, b.textContent)),
+      ...groups.sort((a, b) => cmp(a.label, b.label))];
+    if (want.every((o, i) => o === kids[i])) return false;   // already in order (moving them would loop the observer)
+    want.forEach((o) => parent.appendChild(o));
+    return true;
   }
+  function sortSelect(sel) {
+    const keep = sel.value;
+    if (order(sel)) sel.value = keep;
+  }
+  const resort = () => document.querySelectorAll("select").forEach(sortSelect);
 
   function setLang(l) {
     lang = T[l] ? l : "en";
-    try { localStorage.setItem("sbmpd-lang", lang); } catch (e) { /* ignore */ }
     document.documentElement.lang = lang;
     busy = true; walk(document.body); resort(); busy = false;
     const note = document.getElementById("lang-note");

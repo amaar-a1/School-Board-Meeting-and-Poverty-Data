@@ -244,14 +244,17 @@
   function style(feature) {
     if (isWorld(feature)) return WORLD_STYLE;
     if (undefinedArea(feature)) return { fillColor: NO_DISTRICT, fillOpacity: 0.9, color: "#8a9a80", weight: 0.3, dashArray: "2 3" };
-    if (frSmall && /^FRA-REST-/.test(gid(feature))) return { fillOpacity: 0, opacity: 0, interactive: false };
+    // With France's small communes drawn, each département's group of them stays underneath, unseen but clickable
+    // (the communes are drawn on top, so it answers only between them).
+    if (frSmall && /^FRA-REST-/.test(gid(feature))) return { fillOpacity: 0, opacity: 0, interactive: true };
     const f = window.SiteFilters;
     let on = inView(gid(feature));
     if (on && f && f.active()) {
       const r = rowFor(gid(feature));
       on = !!r && f.test(r);
     }
-    return { fillColor: color(rowFor(gid(feature)), gid(feature)), fillOpacity: on ? 0.85 : 0.35, color: "#555", weight: on ? 0.4 : 0.2 };
+    // opacity and interactive undo the hidden state above (setStyle keeps options it isn't given).
+    return { fillColor: color(rowFor(gid(feature)), gid(feature)), fillOpacity: on ? 0.85 : 0.35, opacity: 1, color: "#555", weight: on ? 0.4 : 0.2, interactive: true };
   }
 
   const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -546,7 +549,7 @@
       onEachFeature: (f, l) => {
         l.bindTooltip(() => tip(f), { sticky: true });
         l.on("click", (e) => { map.fitBounds(l.getBounds(), { maxZoom: 11 }); clickNote(f, e.latlng); });
-        l.on("mouseover", () => l.setStyle({ weight: 2, color: "#111" }));
+        l.on("mouseover", () => l.setStyle({ weight: 2, color: "#111", opacity: 1 }));
         l.on("mouseout", () => l.setStyle(style(f)));
       }
     });
@@ -560,12 +563,15 @@
         onEachFeature: (f, l) => {
           l.bindTooltip(() => tip(f), { sticky: true });
           l.on("click", (e) => { map.fitBounds(l.getBounds(), { maxZoom: 11 }); clickNote(f, e.latlng); });
-          l.on("mouseover", () => l.setStyle({ weight: 2, color: "#111" }));
+          l.on("mouseover", () => l.setStyle({ weight: 2, color: "#111", opacity: 1 }));
           l.on("mouseout", () => l.setStyle(style(f)));
         }
       });
       if (name !== "scsd" && name !== "canada2") layers[name].addTo(map);
     });
+    // France's groups of small communes go underneath: their simplified borders overlap the larger communes' edges,
+    // which should answer the mouse there.
+    if (layers.france) layers.france.eachLayer((l) => { if (/^FRA-REST-/.test(gid(l.feature))) l.bringToBack(); });
     if (layers.islands) layers.islands.eachLayer((l) => {
       // Countries across the date line (Fiji, Kiribati): centre on the largest island instead.
       let c = l.getBounds().getCenter();

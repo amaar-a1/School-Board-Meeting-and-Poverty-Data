@@ -117,7 +117,8 @@
       select: (key, keepPlace) => selectDataset((key && fromKey(key)) || datasets.find((d) => d.name === cfg.perState.from), keepPlace) };
     // A shared link opens its view (and, with ?place=, zooms the map to that place).
     const q = new URLSearchParams(location.search);
-    const start = fromKey(q.get("d")) || datasets.find((d) => d.name === (cfg.perState && cfg.perState.from)) || datasets[0];
+    // Without a link to a view, the site opens on every country together ("All").
+    const start = fromKey(q.get("d")) || combined || datasets.find((d) => d.name === (cfg.perState && cfg.perState.from)) || datasets[0];
     selectDataset(start, true);
     booted = true;
     const place = q.get("place");
@@ -164,6 +165,9 @@
     const fields = [...new Set(out.flatMap((r) => Object.keys(r)))];
     const text = Papa.unparse({ fields, data: out.map((r) => fields.map((f) => r[f] ?? "")) });
     const ds = parse(c.name, text, { ...c, combined: true });
+    // _rankEst marks an estimated rank; it stays on the rows but isn't a column to show, chart or download.
+    ds.columns = ds.columns.filter((col) => !col.startsWith("_"));
+    if (ds.numeric) [...ds.numeric].forEach((col) => { if (col.startsWith("_")) ds.numeric.delete(col); });
     const withMeetings = ds.rows.filter((r) => toNumber(r[c.compare.by]) > 0).length;
     ds.note = (c.note || "").replace("{rows}", ds.rows.length.toLocaleString()).replace("{withMeetings}", withMeetings.toLocaleString());
     return ds;
@@ -309,8 +313,8 @@
     const tabs = $("tabs"), ps = cfg.perState;
     tabs.hidden = false;
     tabs.innerHTML = '<label class="tabs-label" for="country-select">Country:</label>';
-    // A menu with one entry per country-wide data set: the US (perState.from) and any with a `country`,
-    // in alphabetical order of their labels; "All" goes last.
+    // A menu with one entry per country-wide data set: the US (perState.from) and any with a `country`, and "All"
+    // (i18n.js keeps it in alphabetical order, with "All" first).
     const countries = datasets.filter((d) => (ps && d.name === ps.from) || d.country)
       .sort((a, b) => (a.button || a.name).localeCompare(b.button || b.name));
     const csel = document.createElement("select");
