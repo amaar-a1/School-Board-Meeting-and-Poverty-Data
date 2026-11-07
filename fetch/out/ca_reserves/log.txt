@@ -1,0 +1,24 @@
+== Canada: First Nations lands in the Rest-of areas
+ERR Traceback (most recent call last):
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 17, in step
+    try: log.write(f"== {name}\n{f()}\n\n")
+                                 ~^^
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 23, in reserves
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+
+
+== Newer borders (geoBoundaries current)
+PE: ERR hon3.14/urllib/request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.14/urllib/request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+
+MX: geoBoundaries 2012 (World Bank), 2457 features; found 3 of 12 missing by name: ['Emiliano Zapata', 'Hueyapan', 'Xoxocotla']
+ES: geoBoundaries 2018 (Open Data ESRI, IGN Central Registry of Cartography Area), 8205 features; found 0 of 8 missing by name: []
+BR: geoBoundaries 2020 (Instituto Brasileiro de Geografia e Estatística (IBGE), OCHA ROLAC), 5570 features; found 0 of 1 missing by name: []
+
