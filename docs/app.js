@@ -78,9 +78,13 @@
         if (r[RANK] === "" && !isNaN(v)) { r[RANK] = String(Math.round(((below(v) + upto(v)) / 2) / vals.length * 100)); r._rankEst = true; }
       });
     }
-    // Spain's small municipalities have no child figure: they get the average rank of the municipalities in their
-    // autonomous community that have one (marked as estimated).
+    // Spain's small municipalities have no child figure: they're ranked by their province's estimate (marked as
+    // estimated); any without one get the average rank of their autonomous community's municipalities.
     if (d.country === "ES") {
+      d.rows.forEach((r) => {
+        const v = toNumber(r["Child low-income rate (estimated from its province)"]);
+        if (r[RANK] === "" && !isNaN(v)) { r[RANK] = String(Math.round(((below(v) + upto(v)) / 2) / vals.length * 100)); r._rankEst = true; }
+      });
       const sum = {}, n = {};
       d.rows.forEach((r) => { if (r[RANK] !== "") { const k = r["Autonomous community"]; sum[k] = (sum[k] || 0) + Number(r[RANK]); n[k] = (n[k] || 0) + 1; } });
       d.rows.forEach((r) => {

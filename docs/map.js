@@ -148,7 +148,7 @@
     if (!row) return NaN;
     const sc = SCALES.poverty;
     let v = toNumber(row[row[sc.column] === undefined && sc.caColumn ? sc.caColumn : sc.column]);
-    for (const c of [UK_POV, EU_POV, "Poverty rate (all ages)", "Poverty rate or stand-in", "Poverty rate (region, all ages)", "Unemployment rate (stand-in for poverty)", "Low-income rate of the surrounding area (children 0-17)"])
+    for (const c of [UK_POV, EU_POV, "Poverty rate (all ages)", "Poverty rate or stand-in", "Poverty rate (region, all ages)", "Child low-income rate (estimated from its province)", "Unemployment rate (stand-in for poverty)", "Low-income rate of the surrounding area (children 0-17)"])
       if (isNaN(v) && row[c]) v = toNumber(row[c]);
     if (isNaN(v) && last && row["Unmet basic needs (NBI, 2010)"]) v = toNumber(row["Unmet basic needs (NBI, 2010)"]);
     if (isNaN(v) && last && row["Poverty by year"]) {
@@ -274,12 +274,13 @@
     const pov = toNumber(r[ukPov ? UK_POV : eu ? povCol(eu) : "Percentage of Children Ages 5-17 in Poverty"]);
     const unemp = toNumber(r["Unemployment rate (stand-in for poverty)"]);
     const frKids = toNumber(r["Child poverty rate (département)"]);
-    const iePov = toNumber(r["Poverty rate (region, all ages)"]);
+    const iePov = toNumber(r["Poverty rate (region, all ages)"]), esEst = toNumber(r["Child low-income rate (estimated from its province)"]);
     const meet = toNumber(r["Available Board Meetings"]);
     const enr = toNumber(r.Enrollment);
-    const note = [r["Map note"], r["Poverty note"], r.Notes || r["Poverty figures"], r["Meetings note"], r["Other meetings source"] && `Other meetings: ${r["Other meetings source"]}`].filter(Boolean).map((x) => String(x).replace(/\.\s*$/, "")).join(". ");
+    const note = [r["Map note"], r["Poverty note"], r["Locale note"], r.Notes || r["Poverty figures"], r["Meetings note"], r["Other meetings source"] && `Other meetings: ${r["Other meetings source"]}`].filter(Boolean).map((x) => String(x).replace(/\.\s*$/, "")).join(". ");
     return `<div class="map-tip"><strong>${esc(r.District)}${place ? `, ${esc(place)}` : ""}</strong>` +
-      (!isNaN(iePov) && eu === "ES" ? `Child low-income rate: not published (small municipality)<br>Poverty rate of its region (all ages, Eurostat): ${iePov.toFixed(1)}%<br>`
+      (!isNaN(esEst) ? `Child low-income rate: not published (small municipality)<br>Estimate from its province's smaller municipalities: ${esEst.toFixed(1)}%<br>`
+        : !isNaN(iePov) && eu === "ES" ? `Child low-income rate: not published (small municipality)<br>Poverty rate of its region (all ages, Eurostat): ${iePov.toFixed(1)}%<br>`
         : !isNaN(iePov) && eu === "EC" ? `Consumption poverty: no estimate (outside the survey)<br>Poverty rate of the Galápagos province (2010, reported by BBC News in 2013): ${iePov.toFixed(1)}%<br>`
         : !isNaN(iePov) && eu === "BR" ? `Poverty: no figure of its own (created in 2025, after the census)<br>Rate of Sorriso, which it was part of (2022): ${iePov.toFixed(1)}%<br>`
         : !isNaN(iePov) && eu === "MX" ? `Poverty: no figure of its own (made after CONEVAL's 2020 figures)<br>Rate of ${esc((String(r["Poverty note"] || "").match(/^Made from (.+?) and/) || [, "the municipality it was part of"])[1])}, which it was part of (2020): ${iePov.toFixed(1)}%<br>`
@@ -326,7 +327,7 @@
   const rankLine = (r, id) => (String(r["Poverty rank in country"] ?? "") === "" && id && rankFallback(r, id) !== ""
     ? `<br>Poverty rank in its country: ${rankFallback(r, id)} of 100 (100 = highest); estimated from the figure the map shows for it`
     : String(r["Poverty rank in country"] ?? "") !== ""
-    ? `<br>Poverty rank in its country: ${esc(r["Poverty rank in country"])} of 100 (100 = highest)${r._rankEst ? (r.pseudo && r.Province ? "; estimated: where its rate falls among the country's boards" : r["Poverty rate (region, all ages)"] ? "; estimated from its region's rate" : "; estimated from the places in its region that have a figure") : ""}` : "");
+    ? `<br>Poverty rank in its country: ${esc(r["Poverty rank in country"])} of 100 (100 = highest)${r._rankEst ? (r.pseudo && r.Province ? "; estimated: where its rate falls among the country's boards" : r["Child low-income rate (estimated from its province)"] ? "; estimated: where its province's estimate falls among Spain's municipalities" : r["Poverty rate (region, all ages)"] ? "; estimated from its region's rate" : "; estimated from the places in its region that have a figure") : ""}` : "");
 
   const ukView = () => current && (current.country === "UK" || (current.parent && current.parent.country === "UK"));
 
@@ -361,13 +362,13 @@
     const ukv = current && (current.country === "UK" || (current.parent && current.parent.country === "UK"));
     if (ukv && !current.state) faded.push("outside the United Kingdom");
     if ((euv === "ES" || (current && current.combined)) && $("map-metric").value === "poverty")
-      items.push(`<span class="map-faded">Spain: small municipalities with no child figure from INE show their region's overall poverty rate (all ages, Eurostat 2025)</span>`);
+      items.push(`<span class="map-faded">Spain: small municipalities with no child figure from INE show an estimate from their province's smaller municipalities that have one</span>`);
     if ((ukv || (current && current.combined)) && $("map-metric").value === "poverty")
       items.push(`<span class="map-faded">UK: children under 16 in relative low income (DWP, 2024–25), not the same measure as the US or Canadian rates</span>`);
     if (ca && $("map-metric").value === "poverty") items.push(`<span class="map-faded">${current.combined ? "Canadian boards" : "Canada"}: share of children 0–17 in low income (LIM-AT, 2020), not the same measure as the US child poverty rate</span>`);
     if (window.SiteFilters && window.SiteFilters.active()) faded.push("that don't match the filters");
     if ((euv === "ES" || (current && current.combined)) && $("map-metric").value === "rank")
-      items.push(`<span class="map-faded">Spain: small municipalities with no child figure get the average rank of their region's municipalities that have one</span>`);
+      items.push(`<span class="map-faded">Spain: small municipalities with no child figure are ranked by their province's estimate</span>`);
     if ($("map-metric").value === "rank")
       items.push(`<span class="map-faded">Rank within each country: where a place's poverty figure falls among its own country's places, so colours compare across countries even though the measures differ</span>`);
     items.push(`<span><i style="background:${WORLD_STYLE.fillColor};border:1px solid ${WORLD_STYLE.color}"></i>Country not covered on this site</span>`);
