@@ -45,7 +45,8 @@ def censo_pages():
               "https://www.ecuadorencifras.gob.ec/tabulados-censo-2022/", "https://www.censoecuador.gob.ec/data-censo/"):
         try:
             t = get(u, 60).decode("utf-8", "replace")
-            out.append(f"{u}: {len(t)} chars; files: {sorted(set(re.findall(r'href=[\"\\']([^\"\\']+\\.(?:xlsx?|zip|csv))', t, re.I)))[:80]}")
+            files = sorted(set(re.findall(r"""href=["']([^"']+\.(?:xlsx?|zip|csv))""", t, re.I)))[:80]
+            out.append(f"{u}: {len(t)} chars; files: {files}")
         except Exception as e: out.append(f"{u}: {e}")
     return "\n".join(out)
 step("INEC census 2022 pages", censo_pages)
