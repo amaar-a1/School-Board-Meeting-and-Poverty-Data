@@ -1,0 +1,12 @@
+63982654 bytes
+delimiter ';'; header ['Anio_lectivo', 'Zona', 'Provincia', 'Cod_Provincia', 'Canton', 'Cod_Canton', 'Parroquia', 'Cod_Parroquia', 'Nombre_Institucion', 'AMIE', 'Tipo_Educacion', 'Sostenimiento', 'Area', 'Regimen_Escolar', 'Jurisdiccion', 'Docentes_Femenino', 'Docentes_Masculino', 'Total_Docentes', 'Estudiantes_Femenino', 'Estudiantes_Masculino', 'Total_Estudiantes', 'Ecuatoriana', 'Colombiana', 'Venezolana', 'Peruana', 'Otros_Paises_de_America', 'Otros_Continentes']
+row ['2009-2010 Inicio', 'Zona 6', 'AZUAY', '01', 'CUENCA', '0101', 'EL SAGRARIO', '010104', 'UNIDAD EDUCATIVA PARTICULAR ROSA DE JESUS CORDERO', '01B00002', 'Ordinario', 'Particular', 'Urbana', 'Sierra', 'Intercultural', '86', '10', '96', '1473', '0', '1473', '1455', '0', '0', '0', '18', '0']
+row ['2009-2010 Inicio', 'Zona 6', 'AZUAY', '01', 'CUENCA', '0101', 'MONAY', '010109', 'CEBCI', '01B00010', 'Ordinario', 'Particular', 'Urbana', 'Sierra', 'Intercultural Bilingüe', '19', '6', '25', '148', '179', '327', '311', '3', '0', '0', '9', '4']
+row ['2009-2010 Inicio', 'Zona 6', 'AZUAY', '01', 'CUENCA', '0101', 'BAÑOS', '010151', 'CENTRO EDUCATIVO ROUSSEAU', '01B00019', 'Ordinario', 'Particular', 'Rural', 'Sierra', 'Intercultural Bilingüe', '9', '1', '10', '17', '23', '40', '39', '0', '0', '0', '1', '0']
+year col None ; canton code 5 cod_canton; canton name 4; total 20 total_estudiantes; sostenimiento 11
+years []
+Traceback (most recent call last):
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 41, in <module>
+    if len(r) <= max(x for x in (yr, cc, tot) if x is not None) or r[yr] != last: continue
+                                                                   ~^^^^
+TypeError: list indices must be integers or slices, not NoneType
