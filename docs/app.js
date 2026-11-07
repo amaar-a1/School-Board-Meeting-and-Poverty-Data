@@ -70,6 +70,14 @@
       const v = toNumber(r[col]);
       r[RANK] = isNaN(v) ? "" : String(Math.round(((below(v) + upto(v)) / 2) / vals.length * 100));
     });
+    // France's overseas communes have only their département's rate: they get where that rate falls among
+    // France's communes (marked as estimated).
+    if (d.country === "FRA") {
+      d.rows.forEach((r) => {
+        const v = toNumber(r["Poverty rate (region, all ages)"]);
+        if (r[RANK] === "" && !isNaN(v)) { r[RANK] = String(Math.round(((below(v) + upto(v)) / 2) / vals.length * 100)); r._rankEst = true; }
+      });
+    }
     // Spain's small municipalities have no child figure: they get the average rank of the municipalities in their
     // autonomous community that have one (marked as estimated).
     if (d.country === "ES") {
@@ -104,6 +112,7 @@
     renderTabs();
     renderCoverage();
     setupFilters();
+    datasets.forEach(groupNames);   // region names for the countries whose config lists none
     window.SiteData = { datasets, combined, config: cfg, setView, keyOf, fromKey,
       select: (key, keepPlace) => selectDataset((key && fromKey(key)) || datasets.find((d) => d.name === cfg.perState.from), keepPlace) };
     // A shared link opens its view (and, with ?place=, zooms the map to that place).
@@ -201,24 +210,101 @@
     const parent = country ? datasets.find((d) => d.country === country) : null;
     const nat = parent || datasets.find((d) => d.name === ps.from);
     if (!nat) return null;
-    const groupCol = parent ? parent.groups.column : ps.column;
-    const name = parent ? parent.groups.names[code] : ps.names[abbr];
+    // "ISLE:CAR~ANGUILLA": one place within a region (the islands).
+    const [gcode, item] = String(code).split("~");
+    const regionName = parent ? groupNames(parent)[gcode] : ps.names[abbr];
+    const itemName = item && parent && parent.groups.each
+      ? (nat.rows.find((r) => r[parent.groups.column] === regionName && slug(r[parent.groups.each]) === item) || {})[parent.groups.each] : null;
+    if (item && !itemName) return null;
+    const groupCol = itemName ? parent.groups.each : parent ? parent.groups.column : ps.column;
+    const name = itemName || regionName;
+    if (!name) return null;
     // The other country's file names its provinces in full ("Ontario"); the menu keys are codes.
-    const rows = nat.rows.filter((r) => r[groupCol] === (parent ? name : code));
+    const rows = nat.rows.filter((r) => (itemName ? r[parent.groups.column] === regionName && r[groupCol] === name : r[groupCol] === (parent ? name : code)));
     const withMeetings = rows.filter((r) => toNumber(r[cmpFor(nat).by]) > 0).length;
     const label = (nat.recordLabel || cfg.recordLabel || "records").toLowerCase();
     if (parent && parent.groupNotes && parent.groupNotes[code]) {
-      return (stateCache[abbr] = { ...nat, name, state: abbr, rows, sourcesAs: nat.name, parent: nat,
+      return (stateCache[abbr] = { ...nat, name, state: abbr, rows, sourcesAs: nat.name, parent: nat, groupCol,
         columns: nat.columns.filter((c) => c !== groupCol), note: parent.groupNotes[code] });
     }
-    return (stateCache[abbr] = { ...nat, name, state: abbr, rows, sourcesAs: nat.name, parent: parent || undefined,
+    return (stateCache[abbr] = { ...nat, name, state: abbr, rows, sourcesAs: nat.name, parent: parent || undefined, groupCol,
       columns: nat.columns.filter((c) => c !== groupCol),
-      note: rows.length === 1
-        ? `1 ${["UK", "ISLE"].includes(nat.country) ? "" : "school "}${label.replace(/s$/, "")} in ${name}. ${withMeetings ? "Its meeting count is available." : "No meeting count is available, so it shows 0."}`
-        : `${rows.length.toLocaleString()} ${["UK", "ISLE"].includes(nat.country) ? "" : "school "}${label} in ${name}. Meeting counts are available for ${withMeetings.toLocaleString()} of them; the rest show 0.` });
+      note: itemName ? `${name} (${regionName}). ${withMeetings ? "Its meeting count is available." : "No meeting count is available, so it shows 0."}`
+        : rows.length === 1
+        ? `1 ${!nat.country || ["CA", "IE"].includes(nat.country) ? "school " : ""}${label.replace(/s$/, "")} in ${name}. ${withMeetings ? "Its meeting count is available." : "No meeting count is available, so it shows 0."}`
+        : `${rows.length.toLocaleString()} ${!nat.country || ["CA", "IE"].includes(nat.country) ? "school " : ""}${label} in ${name}. Meeting counts are available for ${withMeetings.toLocaleString()} of them; the rest show 0.` });
   }
 
-  // "Data:" row: a button for the national data and a menu with every state.
+  // The country (or "All") a view belongs to: a state's or region's view gives its country.
+  function countryOf(ds) {
+    if (!ds || ds.combined || !ds.state) return ds;
+    return datasets.find((d) => d.name === ds.sourcesAs) || datasets.find((d) => d.name === cfg.perState.from);
+  }
+
+  // A data set's regions as {code: name}: from its config, or else every value of its region column.
+  const slug = (v) => String(v).normalize("NFKD").replace(/[^\w]/g, "").toUpperCase();
+  function groupNames(d) {
+    if (!d.groups) return {};
+    if (!d.groups.names) {
+      d.groups.names = {};
+      d.rows.forEach((r) => { const v = r[d.groups.column]; if (v) d.groups.names[slug(v)] = v; });
+    }
+    return d.groups.names;
+  }
+
+  // The region menu lists only the chosen country's regions (all of them in "All"). Where a country's regions
+  // have places of their own to pick (the islands), each region's places are listed under it.
+  let stateMenuFor = null;
+  function fillStateMenu(nat) {
+    const sel = $("state-select"), ps = cfg.perState;
+    if (!sel || stateMenuFor === nat) return;
+    stateMenuFor = nat;
+    sel.innerHTML = "";
+    const isUS = !nat || (ps && nat.name === ps.from);
+    const one = !nat || !nat.combined;
+    const others = datasets.filter((d) => d.country && d.groups && (!one || d === nat));
+    const word = isUS ? "state" : nat.combined ? "state, province or region" : (nat.groups && nat.groups.word) || "region";
+    sel.add(new Option(`${isUS ? "All states" : nat.combined ? "Choose a state, province or region" : `Choose ${/^[aeiou]/.test(word) ? "an" : "a"} ${word}`}…`, ""));
+    const group = (label) => {
+      if (one) return sel;
+      const g = document.createElement("optgroup");
+      g.label = label;
+      sel.appendChild(g);
+      return g;
+    };
+    const addUS = () => {
+      const us = group("United States");
+      Object.entries(ps ? ps.names : {}).sort((a, b) => a[1].localeCompare(b[1]))
+        .forEach(([abbr, name]) => us.appendChild(new Option(name, abbr)));
+      Object.entries((ps && ps.after) || {}).forEach(([key, name]) => us.appendChild(new Option(name, key)));
+    };
+    const addCountry = (d) => {
+      const names = Object.entries(groupNames(d)).sort((a, b) => a[1].localeCompare(b[1]))
+        .filter(([, name]) => d.rows.some((r) => r[d.groups.column] === name));
+      if (d.groups.each) {
+        // One optgroup per region: the whole region first, then each of its places.
+        names.forEach(([code, name]) => {
+          const g = document.createElement("optgroup");
+          g.label = one ? name : `${d.groups.label}: ${name}`;
+          sel.appendChild(g);
+          g.appendChild(new Option("Whole region", `${d.country}:${code}`));
+          d.rows.filter((r) => r[d.groups.column] === name).map((r) => r[d.groups.each]).sort((a, b) => a.localeCompare(b))
+            .forEach((p) => g.appendChild(new Option(p, `${d.country}:${code}~${slug(p)}`)));
+        });
+        return;
+      }
+      const g = group(d.groups.label || d.name);
+      names.forEach(([code, name]) => g.appendChild(new Option(name.trim(), `${d.country}:${code}`)));
+    };
+    if (isUS) addUS();
+    else if (one) { if (nat.groups) addCountry(nat); }
+    else [...others, { usMarker: true, name: "United States" }]
+      .sort((a, b) => ((a.groups && a.groups.label) || a.name).localeCompare((b.groups && b.groups.label) || b.name))
+      .forEach((d) => (d.usMarker ? addUS() : addCountry(d)));
+    sel.hidden = sel.options.length <= 1;
+  }
+
+  // "Data:" row: a menu of countries and a menu of the chosen country's regions.
   function renderTabs() {
     const tabs = $("tabs"), ps = cfg.perState;
     tabs.hidden = false;
@@ -241,33 +327,8 @@
     tabs.appendChild(csel);
     const sel = document.createElement("select");
     sel.id = "state-select";
-    sel.setAttribute("aria-label", "State or province");
-    const others = datasets.filter((d) => d.country && d.groups);
-    sel.add(new Option(others.length ? "Choose a state or province…" : "Choose a state…", ""));
-    const group = (label) => {
-      if (!others.length) return sel;
-      const g = document.createElement("optgroup");
-      g.label = label;
-      sel.appendChild(g);
-      return g;
-    };
-    // Country groups in alphabetical order, the United States among them.
-    const addUS = () => {
-      const us = group("United States");
-      Object.entries(ps ? ps.names : {}).sort((a, b) => a[1].localeCompare(b[1]))
-        .forEach(([abbr, name]) => us.appendChild(new Option(name, abbr)));
-      Object.entries((ps && ps.after) || {}).forEach(([key, name]) => us.appendChild(new Option(name, key)));
-    };
-    const sorted = [...others, { usMarker: true, name: "United States" }]
-      .sort((a, b) => ((a.groups && a.groups.label) || a.name).localeCompare((b.groups && b.groups.label) || b.name));
-    sorted.forEach((d) => {
-      if (d.usMarker) return addUS();
-      const g = group(d.groups.label || d.name);
-      Object.entries(d.groups.names).sort((a, b) => a[1].localeCompare(b[1]))
-        .filter(([, name]) => d.rows.some((r) => r[d.groups.column] === name))
-        .forEach(([code, name]) => g.appendChild(new Option(name, `${d.country}:${code}`)));
-    });
-    sel.addEventListener("change", () => { if (sel.value) selectDataset(stateDataset(sel.value)); });
+    sel.setAttribute("aria-label", "State, province or region");
+    sel.addEventListener("change", () => { if (sel.value) selectDataset(stateDataset(sel.value)); else if (current && current.state) selectDataset(countryOf(current)); });
     tabs.appendChild(sel);
     const share = document.createElement("button");
     share.type = "button";
@@ -295,7 +356,7 @@
     const q = new URLSearchParams(location.search);
     Object.entries(params).forEach(([k, v]) => (v ? q.set(k, v) : q.delete(k)));
     const s = q.toString();
-    history.replaceState(null, "", `${location.pathname}${s ? `?${s.replace(/%3A/g, ":")}` : ""}${location.hash}`);
+    history.replaceState(null, "", `${location.pathname}${s ? `?${s.replace(/%3A/g, ":").replace(/%7E/g, "~")}` : ""}${location.hash}`);
   }
   window.SiteLinks = { place: (id) => setUrl({ place: id }), set: setUrl };
 
@@ -303,6 +364,7 @@
     current = ds;
     if (booted) setUrl(keepPlace ? { d: keyOf(ds) } : { d: keyOf(ds), place: "" });
     sort = { col: null, dir: 1 };
+    fillStateMenu(countryOf(current));
     const sel = $("state-select");
     // The country menu shows the country of a state's or region's view too.
     const csel = $("country-select");
@@ -434,7 +496,7 @@
   // use NCES locale types; Canadian boards an estimate from Statistics Canada population sizes.
   const US_LOCALES = ["Urban", "Suburban", "Town", "Mixed", "Rural"];   // "Mixed": the European estimates
   // Countries whose locales are density estimates, labelled "UK: Urban" and so on in "All".
-  const DENSITY_COUNTRIES = ["UK", "Ireland", "Norway", "Sweden", "Finland", "Denmark", "Netherlands", "Germany", "New Zealand", "Islands", "Iceland", "Switzerland", "Chile", "Colombia", "Mexico", "Brazil", "Peru", "Spain"];
+  const DENSITY_COUNTRIES = ["UK", "Ireland", "Norway", "Sweden", "Finland", "Denmark", "Netherlands", "Germany", "New Zealand", "Islands", "Iceland", "Switzerland", "Chile", "Colombia", "Mexico", "Brazil", "Peru", "Spain", "France", "Ecuador"];
   const DENSITY_RE = new RegExp(`^(${DENSITY_COUNTRIES.join("|")}): `);
   const CA_LOCALES = ["Large urban", "Medium urban", "Small urban", "Rural", "Province-wide"];
   // Shared groups for the US and Canada together: the closest match between NCES types and

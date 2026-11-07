@@ -1,13 +1,13 @@
-District,Locale,Available Board Meetings,Children,Children in Low Income,Percentage of Children in Low Income,Enrollment,Enrollment year,Poverty by year,People per km² (estimated),District ID
-Northland,Rural,0,48276,15400,31.90%,31598,July 2025,2019:30.5; 2020:33.1; 2021:25.8; 2025:31.9,18,NZ-NTL
-Auckland,Mixed,0,407658,90500,22.20%,298179,July 2025,2019:21.8; 2020:22; 2021:20; 2025:22.2,401,NZ-AUK
-Waikato,Rural,0,120642,26300,21.80%,87511,July 2025,2019:24.2; 2020:24; 2021:22.4; 2025:21.8,23,NZ-WKO
-Bay of Plenty,Rural,0,85062,20500,24.10%,58126,July 2025,2019:24; 2020:20.1; 2021:25.2; 2025:24.1,31,NZ-BOP
-Gisborne / Hawke's Bay,Rural,0,57055,9300,16.30%,39637,July 2025,2019:24.4; 2020:21.9; 2021:20.1; 2025:16.3,11,NZ-GIS-HKB
-Taranaki,Rural,0,33607,8200,24.40%,21731,July 2025,2019:22; 2020:18.2; 2021:28.4; 2025:24.4,21,NZ-TKI
-Manawatū-Whanganui,Rural,0,61261,13600,22.20%,41651,July 2025,2019:27.5; 2020:25.7; 2021:23.6; 2025:22.2,13,NZ-MWT
-Wellington,Rural,0,110615,19800,17.90%,81501,July 2025,2019:17.1; 2020:12.9; 2021:14.5; 2025:17.9,60,NZ-WGN
-Tasman / Nelson / Marlborough / West Coast,Rural,0,41081,7600,18.50%,28192,July 2025,2019:25; 2020:19.3; 2021:20.5; 2025:18.5,4,NZ-TNMW
-Canterbury,Rural,0,144670,28500,19.70%,104521,July 2025,2019:15.9; 2020:21.6; 2021:17.9; 2025:19.7,14,NZ-CAN
-Otago,Rural,0,47343,9800,20.70%,34572,July 2025,2019:22.1; 2020:21.6; 2021:20.7; 2025:20.7,7,NZ-OTA
-Southland,Rural,0,24364,6700,27.50%,16987,July 2025,2019:28.9; 2020:27.6; 2021:16.9; 2025:27.5,4,NZ-STL
+District,Region,Locale,Available Board Meetings,Children,Children in Low Income,Percentage of Children in Low Income,Enrollment,Enrollment year,Poverty by year,People per km² (estimated),District ID
+Northland,North Island,Rural,0,48276,15400,31.90%,31598,July 2025,2019:30.5; 2020:33.1; 2021:25.8; 2025:31.9,18,NZ-NTL
+Auckland,North Island,Mixed,0,407658,90500,22.20%,298179,July 2025,2019:21.8; 2020:22; 2021:20; 2025:22.2,401,NZ-AUK
+Waikato,North Island,Rural,0,120642,26300,21.80%,87511,July 2025,2019:24.2; 2020:24; 2021:22.4; 2025:21.8,23,NZ-WKO
+Bay of Plenty,North Island,Rural,0,85062,20500,24.10%,58126,July 2025,2019:24; 2020:20.1; 2021:25.2; 2025:24.1,31,NZ-BOP
+Gisborne / Hawke's Bay,North Island,Rural,0,57055,9300,16.30%,39637,July 2025,2019:24.4; 2020:21.9; 2021:20.1; 2025:16.3,11,NZ-GIS-HKB
+Taranaki,North Island,Rural,0,33607,8200,24.40%,21731,July 2025,2019:22; 2020:18.2; 2021:28.4; 2025:24.4,21,NZ-TKI
+Manawatū-Whanganui,North Island,Rural,0,61261,13600,22.20%,41651,July 2025,2019:27.5; 2020:25.7; 2021:23.6; 2025:22.2,13,NZ-MWT
+Wellington,North Island,Rural,0,110615,19800,17.90%,81501,July 2025,2019:17.1; 2020:12.9; 2021:14.5; 2025:17.9,60,NZ-WGN
+Tasman / Nelson / Marlborough / West Coast,South Island,Rural,0,41081,7600,18.50%,28192,July 2025,2019:25; 2020:19.3; 2021:20.5; 2025:18.5,4,NZ-TNMW
+Canterbury,South Island,Rural,0,144670,28500,19.70%,104521,July 2025,2019:15.9; 2020:21.6; 2021:17.9; 2025:19.7,14,NZ-CAN
+Otago,South Island,Rural,0,47343,9800,20.70%,34572,July 2025,2019:22.1; 2020:21.6; 2021:20.7; 2025:20.7,7,NZ-OTA
+Southland,South Island,Rural,0,24364,6700,27.50%,16987,July 2025,2019:28.9; 2020:27.6; 2021:16.9; 2025:27.5,4,NZ-STL

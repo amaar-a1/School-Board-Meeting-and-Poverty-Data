@@ -260,6 +260,34 @@ window.SOURCES = [
     note: "Built by data-prep/build_latam.py. Districts are matched to borders by their INEI code (ubigeo); 50 have no border in the file."
   },
   {
+    only: "France",
+    group: "France: communes, poverty, population and pupils",
+    items: [
+      { title: "Poverty: INSEE, Filosofi 2023, poverty rate (60% of the median standard of living) and median standard of living by commune and département (dataset DS_FILOSOFI_CC)", url: "https://api.insee.fr/melodi/file/DS_FILOSOFI_CC/DS_FILOSOFI_CC_2023_CSV_FR" },
+      { title: "Child poverty by département: INSEE, Filosofi 2023, poverty rate by age group (dataset DS_FILOSOFI_SAGE_LOG_TP_NIVVIE)", url: "https://api.insee.fr/melodi/file/DS_FILOSOFI_SAGE_LOG_TP_NIVVIE/DS_FILOSOFI_SAGE_LOG_TP_NIVVIE_2023_CSV_FR" },
+      { title: "Overseas départements' poverty rates (Guadeloupe, Martinique, French Guiana, Mayotte): INSEE, Revenus et patrimoine des ménages, édition 2024, fiche 1.21 (Filosofi 2021 and the 2017 Budget de famille survey)", url: "https://www.insee.fr/fr/statistiques/fichier/7941411/RPM2024-F21.pdf" },
+      { title: "Population: INSEE, populations de référence 2023 (municipal population)", url: "https://api.insee.fr/melodi/file/DS_POPULATIONS_REFERENCE/DS_POPULATIONS_REFERENCE_2023_CSV_FR" },
+      { title: "Pupils: Ministry of Education, pupils in nursery and primary schools by school, rentrée 2025 (fr-en-ecoles-effectifs-nb_classes), placed in communes with the school directory (fr-en-annuaire-education)", url: "https://data.education.gouv.fr/explore/dataset/fr-en-ecoles-effectifs-nb_classes/" },
+      { title: "Borders: communes and départements (simplified), france-geojson by Grégoire David; communes without a poverty rate merged by département with mapshaper", url: "https://github.com/gregoiredavid/france-geojson" },
+      { title: "Meetings (stand-in): each town council's YouTube channel (in the “Meetings source” column), searched for communes of 10,000+ people", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/build_latam.py. Communes are matched to borders by their INSEE code."
+  },
+  {
+    only: "Ecuador",
+    group: "Ecuador: cantons, poverty, population and pupils",
+    items: [
+      { title: "Poverty: INEC and the World Bank, consumption poverty map by canton (2010 census with the 2013-14 Encuesta de Condiciones de Vida), as published on the Humanitarian Data Exchange by the British Red Cross Maps Team", url: "https://data.humdata.org/dataset/947e78a1-0e3d-4f6f-a956-4d6f80915d84" },
+      { title: "National NBI rates for 2001-2022 (2022: 39.8% of people, 49.4% of children): INEC, Pobreza por Necesidades Básicas Insatisfechas, methodology book", url: "https://www.ecuadorencifras.gob.ec/documentos/web-inec/Bibliotecas/Libros/NBI_VersionLibroMetodologico.pdf" },
+      { title: "Unmet basic needs: INEC, Pobreza por necesidades básicas insatisfechas (NBI), 2010 census, by canton", url: "https://www.ecuadorencifras.gob.ec/pobreza-por-necesidades-basicas-insatisfechas/" },
+      { title: "Pupils: Ministry of Education (MINEDUC), Registro Administrativo Histórico 2009-2024, start of the 2024-25 school year, by school", url: "https://www.datosabiertos.gob.ec/dataset/5d1838d2-4efb-44a3-8c36-eebb5a8f798a" },
+      { title: "Borders: geoBoundaries (gbOpen) Ecuador ADM1 (provinces) and ADM2 (cantons), simplified further with mapshaper", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings (stand-in): each cantonal council's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" },
+      { title: "Checked but not used: the 2022 census results site, which refuses automated downloads", url: "https://www.censoecuador.gob.ec/" }
+    ],
+    note: "Built by data-prep/build_latam.py. Cantons are matched to borders by name within their province."
+  },
+  {
     only: "Mexico",
     group: "Mexico: municipalities, poverty and enrollment",
     items: [

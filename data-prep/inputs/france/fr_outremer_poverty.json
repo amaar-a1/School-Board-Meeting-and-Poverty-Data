@@ -1,0 +1,7 @@
+{"source": "INSEE, Revenus et patrimoine des ménages, édition 2024, fiche 1.21, figure 1 (RPM2024-F21)",
+ "url": "https://www.insee.fr/fr/statistiques/fichier/7941411/RPM2024-F21.pdf",
+ "departements": {
+  "972": {"name": "Martinique", "rate": 26.8, "median": 19770, "year": "2021", "basis": "Filosofi 2021"},
+  "971": {"name": "Guadeloupe", "rate": 34.5, "median": 15720, "year": "2017", "basis": "Budget de famille survey 2017"},
+  "973": {"name": "Guyane", "rate": 52.9, "median": 11040, "year": "2017", "basis": "Budget de famille survey 2017"},
+  "976": {"name": "Mayotte", "rate": 77.3, "median": 3120, "year": "2017", "basis": "Budget de famille survey 2017"}}}
