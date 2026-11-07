@@ -1,0 +1,794 @@
+lle de Saint-Prix 0
+FR2 Saint-Rémy -> Ville de Saint-Rémy-de-Provence 0
+FR2 Salernes ->  
+FR2 Saint-Quentin-la-Poterie ->  
+FR2 Saint-Pée-sur-Nivelle ->  
+FR2 Saint-Saturnin ->  
+FR2 Salindres ->  
+FR2 Saint-Rogatien ->  
+FR2 Saint-Romain-le-Puy ->  
+FR2 Saint-Quentin-de-Baron ->  
+FR2 Sallertaine ->  
+FR2 Saint-Renan ->  
+FR2 Saint-Sauveur -> Ville de Saint-Sauveur 0
+FR2 Saint-Rémy-sur-Avre ->  
+FR2 Saint-Romain-en-Gal ->  
+FR2 Salles-sur-Mer ->  
+FR2 Saint-Savin ->  
+FR2 Saint-Sauveur ->  
+FR2 Saint-Saëns ->  
+FR2 Saint-Rémy-lès-Chevreuse ->  
+FR2 Saint-Siméon-de-Bressieux ->  
+FR2 Salses-le-Château ->  
+FR2 Saint-Sauveur-le-Vicomte ->  
+FR2 Saint-Saturnin-lès-Avignon ->  
+FR2 Samoreau ->  
+FR2 Saint-Sulpice-et-Cameyrac ->  
+FR2 Saint-Savournin ->  
+FR2 Saint-Sauveur-d'Aunis ->  
+FR2 Saint-Symphorien-d'Ozon -> Mairie de Saint-Symphorien-d'Ozon Chaîne officielle 0
+FR2 Sancoins ->  
+FR2 Saint-Thibéry ->  
+FR2 Sanguinet ->  
+FR2 Saint-Savinien ->  
+FR2 Santes ->  
+FR2 Saint-Urbain -> Conseil Municipal Saint-Urbain - Charlevoix 0
+FR2 Sarlat-la-Canéda ->  
+FR2 Saint-Sever -> Ville de Saint-Sever 0
+FR2 Saint-Vallier ->  
+FR2 Saint-Sulpice-de-Royan ->  
+FR2 Saint-Seurin-sur-l'Isle ->  
+FR2 Saint-Soupplets ->  
+FR2 Saint-Venant ->  
+FR2 Sarrians ->  
+FR2 Sartène ->  
+FR2 Saint-Sylvestre-sur-Lot ->  
+FR2 Saint-Sulpice-sur-Lèze ->  
+FR2 Satolas-et-Bonce ->  
+FR2 Saint-Victor-la-Coste ->  
+FR2 Saint-Thibault-des-Vignes -> Mairie de Saint Thibault des Vignes Officiel 0
+FR2 Saint-Tropez ->  
+FR2 Saint-Vincent-de-Tyrosse ->  
+FR2 Saint-Sébastien-de-Morsent ->  
+FR2 Saint-Valery-sur-Somme ->  
+FR2 Saint-Thégonnec Loc-Eguiner ->  
+FR2 Saulcy-sur-Meurthe ->  
+FR2 Saint-Valery-en-Caux ->  
+FR2 Saint-Xandre ->  
+FR2 Saint-Vallier-de-Thiey ->  
+FR2 Saint-Varent ->  
+FR2 Saint-Yvi ->  
+FR2 Saulx-les-Chartreux ->  
+FR2 Saint-Victor-de-Cessieu ->  
+FR2 Saint-Éloy-les-Mines ->  
+FR2 Saint-Victor -> Municipalité de Saint-Victor 0
+FR2 Saint-Vincent-de-Paul ->  
+FR2 Saint-Vigor-le-Grand ->  
+FR2 Saussan ->  
+FR2 Saint-Witz ->  
+FR2 Saint-Étienne-de-Montluc ->  
+FR2 Saint-Yrieix-sur-Charente ->  
+FR2 Saint-Étienne-du-Bois ->  
+FR2 Saint-Vrain ->  
+FR2 Sauveterre ->  
+FR2 Saint-Éloi -> Ville de Saint-Eloi 0
+FR2 Saint-Évarzec ->  
+FR2 Saint-Yrieix-la-Perche ->  
+FR2 Sainte-Anne-d'Auray ->  
+FR2 Saint-Étienne-de-Fontbellon ->  
+FR2 Saverdun ->  
+FR2 Saint-Zacharie ->  
+FR2 Saint-Étienne-des-Oullières ->  
+FR2 Saint-Étienne-de-Crossey ->  
+FR2 Saint-Étienne-de-Tulmont ->  
+FR2 Sayat ->  
+FR2 Scaër ->  
+FR2 Sainte-Colombe ->  
+FR2 Saint-Étienne-du-Grès ->  
+FR2 Sainte-Eulalie ->  
+FR2 Saint-Étienne-lès-Remiremont ->  
+FR2 Sainte-Anastasie-sur-Issole ->  
+FR2 Schweighouse-sur-Moder ->  
+FR2 Sainte-Bazeille ->  
+FR2 Scorbé-Clairvaux ->  
+FR2 Sainte-Croix-en-Plaine ->  
+FR2 Sainte-Flaive-des-Loups ->  
+FR2 Sainte-Foy -> Ville de Sainte-Foy-lès-Lyon 0
+FR2 Sainte-Anne -> Ville Sainte-Anne Guadeloupe 0
+FR2 Sainte-Foy-de-Peyrolières ->  
+FR2 Seiches-sur-le-Loir ->  
+FR2 Sainte-Gemmes-sur-Loire ->  
+FR2 Sainte-Féréole ->  
+FR2 Seillons-Source-d'Argens ->  
+FR2 Sainte-Catherine -> Ville de Sainte-Catherine 0
+FR2 Sainte-Luce -> Commune de Sainte Luce (97228) 0
+FR2 Sainte-Hélène -> Ville de Sainte-Hélène 0
+FR2 Sainte-Marguerite-sur-Duclair ->  
+FR2 Seltz ->  
+FR2 Sainte-Marie-aux-Chênes ->  
+FR2 Sainte-Cécile-les-Vignes ->  
+FR2 Sainte-Marie-de-Ré ->  
+FR2 Sainte-Mère-Église ->  
+FR2 Semussac ->  
+FR2 Sainte-Maure-de-Touraine ->  
+FR2 Sainte-Florine ->  
+FR2 Senones ->  
+FR2 Sainte-Reine-de-Bretagne ->  
+FR2 Sainte-Foy-la-Grande ->  
+FR2 Sainte-Sigolène ->  
+FR2 Sainte-Geneviève ->  
+FR2 Septème -> Ville Septèmes-les-Vallons 0
+FR2 Saintry-sur-Seine ->  
+FR2 Sainte-Tulle ->  
+FR2 Saleilles ->  
+FR2 Sainte-Marguerite ->  
+FR2 Serre-les-Sapins ->  
+FR2 Salazie ->  
+FR2 Salies-de-Béarn -> Mairie de Salies-de-Béarn 0
+FR2 Sales -> Mairie DE CRANVES SALES 0
+FR2 Servon-sur-Vilaine ->  
+FR2 Sainte-Marie-aux-Mines ->  
+FR2 Salins-les-Bains ->  
+FR2 Sainte-Menehould ->  
+FR2 Sallebœuf ->  
+FR2 Salles-la-Source ->  
+FR2 Sevrier ->  
+FR2 Sainte-Rose -> Municipalité de Sainte-Rose-du-Nord 0
+FR2 Salouël ->  
+FR2 Samois-sur-Seine ->  
+FR2 Salles ->  
+FR2 Sierentz -> Commune de SIERENTZ 0
+FR2 San-Nicolao ->  
+FR2 Sillé-le-Guillaume ->  
+FR2 Sangatte ->  
+FR2 Saintes-Maries-de-la-Mer ->  
+FR2 Sissonne ->  
+FR2 Sallèles-d'Aude ->  
+FR2 Salbris ->  
+FR2 Santeny -> MAIRIE DE SANTENY 0
+FR2 Samatan -> Ville de Samatan 0
+FR2 Saleux ->  
+FR2 Smarves ->  
+FR2 Samoëns -> Mairie Samoëns 0
+FR2 Solaize ->  
+FR2 Sargé-lès-le-Mans ->  
+FR2 Sallaumines -> Ville de Sallaumines 0
+FR2 Salles-d'Aude ->  
+FR2 Solliès-Ville -> Mairie de Solliès-Ville 0
+FR2 Salomé ->  
+FR2 Sarre-Union ->  
+FR2 Samer ->  
+FR2 Sancé ->  
+FR2 Sartilly-Baie-Bocage ->  
+FR2 San-Martino-di-Lota ->  
+FR2 Sorbiers ->  
+FR2 Sanilhac -> Commune SANILHAC 0
+FR2 Sospel ->  
+FR2 Sandillon -> Commune de Sandillon - Officiel 0
+FR2 Sanvignes-les-Mines ->  
+FR2 Soucieu-en-Jarrest ->  
+FR2 Santec ->  
+FR2 Sathonay-Village ->  
+FR2 Sarralbe ->  
+FR2 Saujon ->  
+FR2 Sarrola-Carcopino ->  
+FR2 Saultain ->  
+FR2 Sausheim ->  
+FR2 Souillac ->  
+FR2 Sare ->  
+FR2 Sauvagnon ->  
+FR2 Soultz-Haut-Rhin ->  
+FR2 Sarras ->  
+FR2 Sarry ->  
+FR2 Savenay -> Ville de Savenay 0
+FR2 Sourcieux-les-Mines -> Mairie de Sourcieux-les-Mines 0
+FR2 Sarzeau -> Commune de Sarzeau 0
+FR2 Sathonay-Camp ->  
+FR2 Savonnières ->  
+FR2 Saubens ->  
+FR2 Saucats ->  
+FR2 Saulieu -> Ville de Saulieu 0
+FR2 Spay ->  
+FR2 Saulnes ->  
+FR2 Steenwerck ->  
+FR2 Saulxures-lès-Nancy -> Mairie de Saulxures-lès-Nancy 0
+FR2 Sully-sur-Loire ->  
+FR2 Saulxures-sur-Moselotte ->  
+FR2 Saône -> Ville de Villefranche-sur-Saône - officiel 0
+FR2 Sausset-les-Pins ->  
+FR2 Sauvian ->  
+FR2 Sury-le-Comtal ->  
+FR2 Sautron -> villede sautron 0
+FR2 Sèvremont ->  
+FR2 Sauzé-entre-Bois ->  
+FR2 Schirrhein ->  
+FR2 Séez ->  
+FR2 Savigné-l'Évêque ->  
+FR2 Savigneux ->  
+FR2 Saïx ->  
+FR2 Scionzier -> Ville de Scionzier 0
+FR2 Saze ->  
+FR2 Seichamps ->  
+FR2 Sénas ->  
+FR2 Scherwiller ->  
+FR2 Seillans ->  
+FR2 Sérifontaine ->  
+FR2 Schœneck ->  
+FR2 Schirmeck ->  
+FR2 Sévérac d'Aveyron ->  
+FR2 Scy-Chazelles ->  
+FR2 Sciez ->  
+FR2 Selongey ->  
+FR2 Seignosse -> Seignosse Ma Ville 0
+FR2 Tain-l'Hermitage ->  
+FR2 Segonzac ->  
+FR2 Semur-en-Auxois ->  
+FR2 Senonches ->  
+FR2 Seilh ->  
+FR2 Selles-sur-Cher -> Ville de Selles-sur-Cher 0
+FR2 Tallard -> Ville de Tallard 0
+FR2 Tarascon-sur-Ariège ->  
+FR2 Seloncourt ->  
+FR2 Taupont ->  
+FR2 Septfonds ->  
+FR2 Semblançay ->  
+FR2 Sennecey-le-Grand ->  
+FR2 Teloché ->  
+FR2 Semoy ->  
+FR2 Sens-de-Bretagne ->  
+FR2 Tencin ->  
+FR2 Serpaize ->  
+FR2 Sequedin ->  
+FR2 Servon ->  
+FR2 Sennecey-lès-Dijon ->  
+FR2 Serres-Castet ->  
+FR2 Seurre ->  
+FR2 Septeuil ->  
+FR2 Terres-de-Caux ->  
+FR2 Serémange-Erzange ->  
+FR2 Seyssuel ->  
+FR2 Sergy ->  
+FR2 Tessy-Bocage ->  
+FR2 Seyssel ->  
+FR2 Servian ->  
+FR2 Theix-Noyalo ->  
+FR2 Sigean ->  
+FR2 Sillingy -> Mairie de La Balme de Sillingy 0
+FR2 Sessenheim ->  
+FR2 Thil ->  
+FR2 Simiane-Collongue ->  
+FR2 Thoiry ->  
+FR2 Sinnamary -> Ville de Sinnamary 0
+FR2 Seyssins -> Ville de Seyssins 0
+FR2 Thue et Mue ->  
+FR2 Sizun ->  
+FR2 Sisteron -> Ville de Sisteron 0
+FR2 Signes ->  
+FR2 Sochaux ->  
+FR2 Sinceny ->  
+FR2 Solesmes ->  
+FR2 Thury-Harcourt-le-Hom ->  
+FR2 Sixt-sur-Aff ->  
+FR2 Soisy-sur-Seine ->  
+FR2 Soignolles-en-Brie ->  
+FR2 Solliès-Toucas -> Ville de Sollies-Toucas 0
+FR2 Théza ->  
+FR2 Sommières ->  
+FR2 Sorigny ->  
+FR2 Soliers ->  
+FR2 Soorts-Hossegor -> Ville de Soorts-Hossegor 0
+FR2 Tigery ->  
+FR2 Sorèze ->  
+FR2 Tinténiac ->  
+FR2 Souchez ->  
+FR2 Soual ->  
+FR2 Tonnerre ->  
+FR2 Soues ->  
+FR2 Sonnaz ->  
+FR2 Soulac-sur-Mer ->  
+FR2 Sorède -> mairie de sorède 0
+FR2 Soufflenheim ->  
+FR2 Soubise ->  
+FR2 Tosse ->  
+FR2 Soullans ->  
+FR2 Soultz-sous-Forêts ->  
+FR2 Souffelweyersheim ->  
+FR2 Souppes-sur-Loing ->  
+FR2 Sourdeval ->  
+FR2 Spicheren ->  
+FR2 Toulouges -> Ville de Toulouges 0
+FR2 Soyons ->  
+FR2 Stenay ->  
+FR2 Tourouvre au Perche ->  
+FR2 Souleuvre en Bocage ->  
+FR2 Sulniac ->  
+FR2 Tourves ->  
+FR2 Trans-en-Provence ->  
+FR2 Soultzmatt ->  
+FR2 Steenvoorde ->  
+FR2 Soustons ->  
+FR2 Surzur ->  
+FR2 Staffelfelden ->  
+FR2 Treize-Septiers ->  
+FR2 Sèvres-Anxaumont ->  
+FR2 Sucé-sur-Erdre ->  
+FR2 Tresserve ->  
+FR2 Surgères ->  
+FR2 Suippes ->  
+FR2 Sussargues ->  
+FR2 Ségny ->  
+FR2 Survilliers ->  
+FR2 Sébazac-Concourès ->  
+FR2 Trilport ->  
+FR2 Suze-la-Rousse ->  
+FR2 Sées ->  
+FR2 Séné ->  
+FR2 Sémalens ->  
+FR2 Trosly-Breuil ->  
+FR2 Séméac ->  
+FR2 Sérignan -> Ville de Sérignan 0
+FR2 Sérent ->  
+FR2 Séreilhac ->  
+FR2 Truchtersheim ->  
+FR2 Sérézin-du-Rhône ->  
+FR2 Trégastel ->  
+FR2 Taillades ->  
+FR2 Trélissac ->  
+FR2 Talensac ->  
+FR2 Sérignan-du-Comtat ->  
+FR2 Sézanne ->  
+FR2 Trémuson ->  
+FR2 Taden ->  
+FR2 Taissy -> Mairie Taissy 0
+FR2 Taninges ->  
+FR2 Taulé ->  
+FR2 Talange ->  
+FR2 Telgruc-sur-Mer ->  
+FR2 Talmont-Saint-Hilaire ->  
+FR2 Tullins -> Ville de Tullins 0
+FR2 Targon ->  
+FR2 Tavaux ->  
+FR2 Tence ->  
+FR2 Taluyers ->  
+FR2 Terrasson-Lavilledieu ->  
+FR2 Tartas ->  
+FR2 Uchaud ->  
+FR2 Tavel ->  
+FR2 Templemars ->  
+FR2 Templeuve-en-Pévèle ->  
+FR2 Ternay ->  
+FR2 Unieux -> Ville d'Unieux 0
+FR2 Terranjou ->  
+FR2 Terres-de-Haute-Charente ->  
+FR2 Teyran ->  
+FR2 Terville -> Ville de Terville 0
+FR2 Terval ->  
+FR2 Ussel ->  
+FR2 Theys ->  
+FR2 Uzès ->  
+FR2 Vair-sur-Loire ->  
+FR2 Thise -> Ville de Thise 0
+FR2 Thaon-les-Vosges -> Ville de Thaon-les-Vosges 0
+FR2 Val d'Arry ->  
+FR2 Thann ->  
+FR2 Val de Briey ->  
+FR2 Thomery ->  
+FR2 Thiant ->  
+FR2 Thierville-sur-Meuse ->  
+FR2 Thuir ->  
+FR2 Val-Couesnon ->  
+FR2 Thiviers -> Ville de Thiviers 0
+FR2 Thuré ->  
+FR2 Thizy-les-Bourgs ->  
+FR2 Val-d'Arguenon ->  
+FR2 Val-de-Moder ->  
+FR2 Thézan-lès-Béziers ->  
+FR2 Thorigné-Fouillard ->  
+FR2 Thumeries ->  
+FR2 Thourotte ->  
+FR2 Thyez ->  
+FR2 Valdahon ->  
+FR2 Thurins ->  
+FR2 Thônes -> Mairie de Thônes Communication 0
+FR2 Valence -> Ville de Bourg-lès-Valence 0
+FR2 Tignieu-Jameyzieu -> Ville de Tignieu-Jameyzieu 0
+FR2 Théding ->  
+FR2 Tigy ->  
+FR2 Tomblaine ->  
+FR2 Tiercé ->  
+FR2 Valensole ->  
+FR2 Tonnay-Charente ->  
+FR2 Valleiry ->  
+FR2 Torigny-les-Villes ->  
+FR2 Torcy ->  
+FR2 Tinchebray-Bocage ->  
+FR2 Toucy ->  
+FR2 Touques ->  
+FR2 Tonneins -> Ville de Tonneins 0
+FR2 Tourrette-Levens ->  
+FR2 Valloire-sur-Cisse ->  
+FR2 Toufflers ->  
+FR2 Valognes ->  
+FR2 Tournan-en-Brie -> VILLE DE TOURNAN-EN-BRIE OFFICIEL (Tournan-en-Brie Officiel) 0
+FR2 Tourville-la-Rivière ->  
+FR2 Torreilles ->  
+FR2 Toulenne ->  
+FR2 Vals-les-Bains ->  
+FR2 Tourrettes ->  
+FR2 Traînou ->  
+FR2 Toury ->  
+FR2 Tournus -> Ville de Tournus Service Communication 0
+FR2 Varennes-Jarcy ->  
+FR2 Treffiagat ->  
+FR2 Varennes-sur-Seine ->  
+FR2 Tourrettes-sur-Loup -> Mairie de Tourrettes-sur-Loup (officiel) 0
+FR2 Tremblay-les-Villages ->  
+FR2 Varreddes ->  
+FR2 Trept ->  
+FR2 Tresses -> Mairie de Tresses 0
+FR2 Trieux ->  
+FR2 Troarn ->  
+FR2 Toussieu ->  
+FR2 Vaulnaveys-le-Haut ->  
+FR2 Trith-Saint-Léger ->  
+FR2 Treffléan ->  
+FR2 Trouville-sur-Mer ->  
+FR2 Vay ->  
+FR2 Trèbes ->  
+FR2 Trouillas ->  
+FR2 Veigy-Foncenex ->  
+FR2 Tréguier ->  
+FR2 Truyes ->  
+FR2 Venarey-les-Laumes ->  
+FR2 Tressange ->  
+FR2 Trélon ->  
+FR2 Trévoux ->  
+FR2 Trégueux -> Ville Trégueux 0
+FR2 Téteghem-Coudekerque-Village ->  
+FR2 Trélivan ->  
+FR2 Trignac ->  
+FR2 Vendenheim -> Commune de Vendenheim 0
+FR2 Ugine -> Mairie Ugine 0
+FR2 Vendres ->  
+FR2 Urt ->  
+FR2 Tréméven ->  
+FR2 Vennecy ->  
+FR2 Uxegney ->  
+FR2 Vailhauquès ->  
+FR2 Trois-Rivières -> Ville de Trois-Rivières 0
+FR2 Turckheim -> Ville de Turckheim 0
+FR2 Vaivre-et-Montoille ->  
+FR2 Uckange ->  
+FR2 Val d'Oingt ->  
+FR2 Verdun-sur-Garonne -> Mairie de Verdun-sur-Garonne 0
+FR2 Urcuit ->  
+FR2 Trouy ->  
+FR2 Val en Vignes ->  
+FR2 Ustaritz ->  
+FR2 Trébeurden -> Ville de Trébeurden 0
+FR2 Vagney ->  
+FR2 Val-au-Perche -> Commune de Val-au-Perche 0
+FR2 Vermelles ->  
+FR2 Trégunc ->  
+FR2 Val-d'Usiers ->  
+FR2 Vernet ->  
+FR2 Trémentines ->  
+FR2 Val-du-Layon ->  
+FR2 Tucquegnieux ->  
+FR2 Ucel ->  
+FR2 Verneuil-sur-Vienne ->  
+FR2 Valdivienne ->  
+FR2 Vaison-la-Romaine -> Ville de Vaison-la-Romaine 0
+FR2 Ungersheim ->  
+FR2 Vernou-sur-Brenne ->  
+FR2 Val d'Erdre-Auxence ->  
+FR2 Valencin ->  
+FR2 Ussac ->  
+FR2 Verquin ->  
+FR2 Valergues ->  
+FR2 Vallet ->  
+FR2 Val de Virvée ->  
+FR2 Vert-Saint-Denis -> Ville de Vert-Saint-Denis 0
+FR2 Vallons-de-l'Erdre ->  
+FR2 Verton ->  
+FR2 Uzerche ->  
+FR2 Valras-Plage ->  
+FR2 Vailly-sur-Aisne ->  
+FR2 Val d'Anast ->  
+FR2 Val-Revermont ->  
+FR2 Veuzain-sur-Loire ->  
+FR2 Val d'Oust ->  
+FR2 Val-d'Izé ->  
+FR2 Varangéville ->  
+FR2 Val-Cenis ->  
+FR2 Veyre-Monton ->  
+FR2 Varennes-le-Grand ->  
+FR2 Val-d'Arc ->  
+FR2 Vias ->  
+FR2 Vic-la-Gardiole ->  
+FR2 Val-de-Scie ->  
+FR2 Varilhes ->  
+FR2 Vieux-Berquin ->  
+FR2 Valdallière ->  
+FR2 Vaugneray ->  
+FR2 Val-de-Cognac ->  
+FR2 Vaux-sur-Mer ->  
+FR2 Vif -> Ville de Vif 0
+FR2 Vald'Yerre ->  
+FR2 Vignoux-sur-Barangeon ->  
+FR2 Valdoie ->  
+FR2 Veauche -> Ville de Veauche 0
+FR2 Valence-en-Poitou ->  
+FR2 Valencisse ->  
+FR2 Velleron ->  
+FR2 Valençay ->  
+FR2 Valgelon-La Rochette ->  
+FR2 Vendat ->  
+FR2 Valleroy ->  
+FR2 Villaines-la-Juhel ->  
+FR2 Villars-les-Dombes ->  
+FR2 Vallon-Pont-d'Arc -> Mairie de Vallon Pont d'Arc 0
+FR2 Villebarou ->  
+FR2 Valorbiquet ->  
+FR2 Vallières-sur-Fier ->  
+FR2 Vendin-le-Vieil -> Mairie de Vendin le Vieil 0
+FR2 Villefranche-de-Lauragais -> Mairie Villefranche de Lauragais 0
+FR2 Villejust ->  
+FR2 Vals-près-le-Puy ->  
+FR2 Valmont ->  
+FR2 Venerque -> Mairie Venerque 0
+FR2 Villemoisson-sur-Orge ->  
+FR2 Valréas ->  
+FR2 Ventiseri ->  
+FR2 Vergèze ->  
+FR2 Varennes-Vauzelles ->  
+FR2 Villeneuve ->  
+FR2 Varetz ->  
+FR2 Varces-Allières-et-Risset ->  
+FR2 Vernaison ->  
+FR2 Vaucresson ->  
+FR2 Varennes-sur-Allier ->  
+FR2 Verneuil-en-Halatte ->  
+FR2 Villeneuve-de-la-Raho -> Ville de Villeneuve de la Raho 0
+FR2 Vaulx-Milieu ->  
+FR2 Varois-et-Chaignot ->  
+FR2 Vaujours ->  
+FR2 Villeneuve-lès-Béziers ->  
+FR2 Vernosc-lès-Annonay ->  
+FR2 Vayres ->  
+FR2 Vaux-sur-Seine -> Mairie de Vaux-sur-Seine (compte officiel) 0
+FR2 Villenoy ->  
+FR2 Villers-Outréaux ->  
+FR2 Velaux -> Ville de Velaux 0
+FR2 Verny ->  
+FR2 Veigné ->  
+FR2 Vendargues -> Ville de Vendargues 0
+FR2 Villers-sous-Saint-Leu ->  
+FR2 Verson ->  
+FR2 Venansault ->  
+FR2 Vendays-Montalivet ->  
+FR2 Villevaudé ->  
+FR2 Villiers-sur-Orge ->  
+FR2 Vendeuvre-sur-Barse ->  
+FR2 Vimoutiers ->  
+FR2 Venelles ->  
+FR2 Vert-le-Petit ->  
+FR2 Vescovato ->  
+FR2 Vendin-lès-Béthune ->  
+FR2 Venette ->  
+FR2 Ventabren ->  
+FR2 Veynes -> Commune de Veynes 0
+FR2 Vincey ->  
+FR2 Verfeil ->  
+FR2 Verberie -> Mairie Verberie 0
+FR2 Vinça ->  
+FR2 Vezin-le-Coquet -> Mairie Vezin le Coquet 0
+FR2 Verlinghem ->  
+FR2 Vic-Fezensac ->  
+FR2 Vern-sur-Seiche ->  
+FR2 Vitry-aux-Loges ->  
+FR2 Vernantes ->  
+FR2 Vieillevigne ->  
+FR2 Viuz-en-Sallaz ->  
+FR2 Verneuil d'Avre et d'Iton ->  
+FR2 Vieux-Habitants ->  
+FR2 Verniolle ->  
+FR2 Verneuil-l'Étang ->  
+FR2 Vigneux-de-Bretagne -> Commune Vigneux-de-Bretagne 0
+FR2 Viviers-lès-Montagnes ->  
+FR2 Vernou-la-Celle-sur-Seine ->  
+FR2 Village-Neuf ->  
+FR2 Vernouillet -> Ville de Vernouillet 28 0
+FR2 Vernègues ->  
+FR2 Voglans ->  
+FR2 Villard-de-Lans ->  
+FR2 Verrières-en-Anjou ->  
+FR2 Versonnex ->  
+FR2 Vert-le-Grand ->  
+FR2 Ville-di-Pietrabugno ->  
+FR2 Vertaizon ->  
+FR2 Vervins ->  
+FR2 Volvic -> Ville de Volvic 0
+FR2 Villedieu-sur-Indre -> Ville de Villedieu-sur-Indre 0
+FR2 Vesseaux ->  
+FR2 Vexin-sur-Epte ->  
+FR2 Villefranche-sur-Mer -> Mairie de Villefranche-sur-Mer 0
+FR2 Vouillé ->  
+FR2 Veyrier-du-Lac ->  
+FR2 Villelongue-de-la-Salanque ->  
+FR2 Vouneuil-sur-Vienne ->  
+FR2 Villemur-sur-Tarn ->  
+FR2 Vrigne aux Bois ->  
+FR2 Veyrac ->  
+FR2 Vérines ->  
+FR2 Villeneuve-de-Berg -> Mairie de Villeneuve-de-Berg - Ardèche 0
+FR2 Wallers ->  
+FR2 Vibraye ->  
+FR2 Viarmes -> Ville de Viarmes 0
+FR2 Vic-le-Comte ->  
+FR2 Vieux-Charmont ->  
+FR2 Vic-en-Bigorre -> Mairie de Vic-en-Bigorre 2
+FR2 Vienne-en-Val ->  
+FR2 Wassy ->  
+FR2 Villeneuve-en-Retz -> Mairie de Villeneuve-en-Retz 0
+FR2 Vieux-Thann ->  
+FR2 Vignacourt ->  
+FR2 Villeneuve-sur-Yonne -> Mairie de Villeneuve-sur-Yonne 0
+FR2 Vignoc ->  
+FR2 Villers-Bocage ->  
+FR2 Weitbruch ->  
+FR2 Willems -> Mairie de Willems 0
+FR2 Villages du Lac de Paladru ->  
+FR2 Villers-Semeuse ->  
+FR2 Villabé -> mairie de villabe 0
+FR2 Wingles ->  
+FR2 Villars ->  
+FR2 Wissous -> Ville de Wissous 0
+FR2 Villard-Bonnot ->  
+FR2 Villette-d'Anthon ->  
+FR2 Ville-la-Grand ->  
+FR2 Wolfisheim -> Mairie de Wolfisheim 0
+FR2 Villiers-Saint-Frédéric ->  
+FR2 Villaz ->  
+FR2 Ychoux ->  
+FR2 Villié-Morgon ->  
+FR2 Villedoux -> Mairie de Villedoux 0
+FR2 Villedieu-les-Poêles-Rouffigny ->  
+FR2 Villefranche-sur-Cher ->  
+FR2 Vinassan ->  
+FR2 Yssingeaux ->  
+FR2 Villefranque ->  
+FR2 Villelaure ->  
+FR2 Zillisheim ->  
+FR2 Villemandeur ->  
+FR2 Villemoustaussou ->  
+FR2 Échenoz-la-Méline ->  
+FR2 Villeneuve-Saint-Germain ->  
+FR2 Vineuil ->  
+FR2 Villeneuve-en-Perseigne ->  
+FR2 École-Valentin -> Mairie Ecole-Valentin 0
+FR2 Viriat ->  
+FR2 Villenauxe-la-Grande ->  
+FR2 Écouflant ->  
+FR2 Villeneuve-sur-Aisne ->  
+FR2 Villeneuve-de-Marsan ->  
+FR2 Villeneuve-la-Guyard ->  
+FR2 Vitry-sur-Orne ->  
+FR2 Villerest ->  
+FR2 Égreville ->  
+FR2 Villennes-sur-Seine -> Mairie Villennes-sur-Seine 0
+FR2 Émerainville -> Cap'em - Cap Émerainville Malnoue 0
+FR2 Viviers ->  
+FR2 Villers-Saint-Paul ->  
+FR2 Vivy -> Commune de Vivy 0
+FR2 Villers-Bretonneux ->  
+FR2 Villers-sur-Mer -> Villers-sur-Mer 0
+FR2 Villers-le-Lac ->  
+FR2 Épouville ->  
+FR2 Villeveyrac ->  
+FR2 Volmerange-les-Mines ->  
+FR2 Villette-de-Vienne ->  
+FR2 Étain ->  
+FR2 Villiers-sur-Morin ->  
+FR2 Villieu-Loyes-Mollon ->  
+FR2 Vonnas ->  
+FR2 Voujeaucourt ->  
+FR2 Vimy ->  
+FR2 Étival-Clairefontaine ->  
+FR2 Vimines ->  
+FR2 Étréchy ->  
+FR2 Évenos ->  
+FR2 Vindry-sur-Turdine ->  
+FR2 Vouvray ->  
+FR2 Vinay ->  
+FR2 Vinon-sur-Verdon ->  
+FR2 Évrecy ->  
+FR2 Viry ->  
+FR2 Violaines ->  
+FR2 Vémars ->  
+FR2 Ézy-sur-Eure ->  
+FR2 Vitry-en-Artois -> mairie de vitry-en-artois 0
+FR2 Vivier-au-Court ->  
+FR2 Vittel -> Ville de Vittel 0
+FR2 Wahagnies ->  
+FR2 Vivonne ->  
+FR2 Viviers-du-Lac ->  
+FR2 Warmeriville ->  
+FR2 Volgelsheim ->  
+FR2 Vizille ->  
+FR2 Wavrin ->  
+FR2 Volstroff ->  
+FR2 Volx ->  
+FR2 Voreppe -> Communication ville de Voreppe 0
+FR2 Weyersheim ->  
+FR2 Vouillé ->  
+FR2 Vouneuil-sous-Biard ->  
+FR2 Wimille ->  
+FR2 Wisches ->  
+FR2 Vourles ->  
+FR2 Vouziers ->  
+FR2 Wittisheim ->  
+FR2 Vulaines-sur-Seine ->  
+FR2 Véretz ->  
+FR2 Woustviller ->  
+FR2 Walincourt-Selvigny ->  
+FR2 Yerville ->  
+FR2 Wasselonne ->  
+FR2 Vézeronce-Curtin ->  
+FR2 Warhem ->  
+FR2 Yvrac -> Mairie d'Yvrac - Gironde 0
+FR2 Èze ->  
+FR2 Waziers ->  
+FR2 Échiré ->  
+FR2 Écouché-les-Vallées ->  
+FR2 Égletons ->  
+FR2 Watten -> Ville de Watten 0
+FR2 Wignehies ->  
+FR2 Wingersheim les Quatre Bans ->  
+FR2 Éleu-dit-Leauwette ->  
+FR2 Wervicq-Sud ->  
+FR2 Épernon -> Mairie Épernon 0
+FR2 Wimereux ->  
+FR2 Wissembourg ->  
+FR2 Wizernes ->  
+FR2 Wintzenheim -> Mairie de Wintzenheim 0
+FR2 Épône ->  
+FR2 Xertigny ->  
+FR2 Étel ->  
+FR2 Yffiniac ->  
+FR2 Witry-lès-Reims ->  
+FR2 Étrelles ->  
+FR2 Yvré-l'Évêque ->  
+FR2 Échenevex ->  
+FR2 Étupes ->  
+FR2 Évian-les-Bains ->  
+FR2 Wormhout -> Ville de Wormhout 0
+FR2 Éclaron-Braucourt-Sainte-Livière ->  
+FR2 Écouen -> Ville d'Écouen 0
+FR2 Yenne ->  
+FR2 Évry-Grégy-sur-Yerre ->  
+FR2 Égly ->  
+FR2 Ytrac ->  
+FR2 Éloyes ->  
+FR2 Épinac ->  
+FR2 Équihen-Plage ->  
+FR2 Zonza ->  
+FR2 Étiolles -> Ville d'Étiolles 0
+FR2 Échillais ->  
+FR2 Écommoy ->  
+FR2 Étrembières -> Mairie d'Etrembières 0
+FR2 Écrouves ->  
+FR2 Évellys ->  
+FR2 Éguilles ->  
+FR2 Évin-Malmaison ->  
+FR2 Éperlecques ->  
+FR2 Ézanville ->  
+FR2 Épron ->  
+FR2 Étaules ->  
+FR2 Étoile-sur-Rhône ->  
+FR2 Étrépagny ->  
+FR2 Évette-Salbert ->  
+FR2 Évron -> Ville d'Évron 0
+FR2 Œting ->  
+
+---
