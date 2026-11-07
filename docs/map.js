@@ -95,7 +95,7 @@
     { keys: ["Town", "Small urban"], color: "#fdae6b", label: "Town (Canada: small urban centre)" },
     { keys: ["Mixed"], color: "#9e74c9", label: "Mixed (estimated; outside the US and Canada)" },
     { keys: ["Rural"], color: "#41ab5d", label: "Rural" },
-    { keys: ["Province-wide"], color: "#bdbdbd", label: "Canada: province- or territory-wide board" }
+    { keys: ["Province-wide"], color: "#bdbdbd", label: "Canada: province- or territory-wide board", hide: true }
   ];
   const localeColor = (row) => {
     const loc = String((row && row.Locale) || "").trim().replace(/^[^:]+:\s*/, "");
@@ -264,7 +264,7 @@
   }
 
   const rankLine = (r) => (String(r["Poverty rank in country"] ?? "") !== ""
-    ? `<br>Poverty rank in its country: ${esc(r["Poverty rank in country"])} of 100 (100 = highest)${r._rankEst ? "; estimated: the average of the places in its region that have a figure" : ""}` : "");
+    ? `<br>Poverty rank in its country: ${esc(r["Poverty rank in country"])} of 100 (100 = highest)${r._rankEst ? (r.pseudo && r.Province ? "; estimated: where its rate falls among the country's boards" : "; estimated from the places in its region that have a figure") : ""}` : "");
 
   const ukView = () => current && (current.country === "UK" || (current.parent && current.parent.country === "UK"));
 
@@ -272,7 +272,7 @@
     const sc = SCALES[$("map-metric").value];
     const items = $("map-metric").value === "locale"
       // Every kind, not just the current view's: the map also draws the neighbouring countries.
-      ? [...LOCALES.map((g) => `<span><i style="background:${g.color}"></i>${g.label}</span>`),
+      ? [...LOCALES.filter((g) => !g.hide).map((g) => `<span><i style="background:${g.color}"></i>${g.label}</span>`),
         `<span><i style="background:${NO_DATA}"></i>No locale</span>`,
         `<span class="map-faded">Locale: the US uses NCES's locale codes and Canada Statistics Canada's population centre sizes; elsewhere it's estimated from population density (see the By locale tab)</span>`]
       : sc.labels.map((l, i) => `<span><i style="background:${sc.colors[i]}"></i>${l}</span>`);
@@ -400,9 +400,18 @@
     // Areas outside every board (e.g. Ontario's Far North) are map-only: they get a row here from
     // their own properties, with the province-wide rate and 0 meetings, but no row in the data.
     const caNames = ((window.SITE_CONFIG.dataFiles.find((d) => d.country === "CA") || {}).groups || {}).names || {};
+    // Their rank: where their rate falls among Canada's boards (marked as estimated).
+    const caVals = Object.values(lookup).filter((r) => /^CA-/.test(r["District ID"] || "")).map((r) => toNumber(r["Percentage of Children Ages 0-17 in Low Income"])).filter((v) => !isNaN(v));
+    const caRank = (v) => {
+      v = toNumber(v); if (isNaN(v) || !caVals.length) return "";
+      const lo = caVals.filter((x) => x < v).length, hi = caVals.filter((x) => x <= v).length;
+      return String(Math.round(((lo + hi) / 2) / caVals.length * 100));
+    };
     files.canada.features.filter((f) => f.properties.pseudo).forEach((f) => {
       const p = f.properties, prov = caNames[p.province] || p.province;
       lookup[gid(f)] = { District: `Rest of ${prov} (no school board)`, Province: prov, "Board type": "No school board", pseudo: true, own: !!p.own,
+        Locale: "Rural",   // the Far North, national parks and reserves
+        "Poverty rank in country": caRank(p.pct), _rankEst: caRank(p.pct) !== "",
         "Percentage of Children Ages 0-17 in Low Income": p.pct ?? "", "Available Board Meetings": 0,
         "How poverty was calculated": `Not a school board: the part of ${prov} outside every public board's border` +
           (p.province === "ON" ? ", mostly the Far North (unorganized land and First Nations reserves, whose schools are run by First Nations or small school authorities)"

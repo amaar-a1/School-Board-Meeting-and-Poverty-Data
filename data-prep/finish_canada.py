@@ -75,6 +75,8 @@ def main(src, yt, dst):
                         # Ontario's border file (2015) lists old web addresses, many of them dead.
                         "Website": "" if r["Province"] == "ON" else r.get("Website", "")})
     print(len(rows), "boards;", sum(1 for r in rows if counts.get(r["District ID"], (0,))[0] > 0), "with meetings")
+    import canada_locales   # province- and territory-wide boards: the locale where most of the province's children live
+    canada_locales.apply(dst)
 
 
 if __name__ == "__main__":
