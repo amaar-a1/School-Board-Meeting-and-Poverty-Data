@@ -1,0 +1,29 @@
+$ npm install -g mapshaper@0.6 >/dev/null 2>&1; mapshaper -v
+0.6.121
+
+== Canada: First Nations settlements
+$ mapshaper -i /tmp/csd/lcsd000b21a_e.shp encoding=latin1 -filter "(PRUID == '35' || PRUID == '48') && CSDTYPE.indexOf('S-') === 0" -proj wgs84 -join fetch/ca_res
+[filter] Retained 7 of 5,161 features
+[join] Joined data from 1 source record to 4 target records
+[join] 3 target records received no data
+[join] 1/2 source records could not be joined
+[filter] Retained 4 of 7 features
+[simplify] Repaired 720 intersections
+[o] Wrote fetch/out/ca_reserves3/ca_rest_settlements.geojson
+
+Aroland (S-É, CA-ON-REST); Lansdowne House (S-É, CA-ON-REST); Summer Beaver (S-É, CA-ON-REST); Peawanuck (S-É, CA-ON-REST)
+
+== Borders for municipalities missing from the map
+PE gbHumanitarian ADM3: year 2015 (Instituto Geográfico Nacional - IGN, HDX), 1873 features; 47 of 48 missing found by name: ['Acopampa', 'Alexander Von Humboldt', 'Amantani', 'Anchihuay', 'Andaymarca', 'Andrés Avelino Cáceres Dorregaray', 'Bellavista', 'Canayre', 'Castillo Grande', 'Chaca', 'Constitución', 'Cosme', 'El Parco', 'El Porvenir', 'Goyllarisquizga', 'Inkawasi', 'José María Arguedas', 'La Morada', 'La Punta', 'La Yarada los Palos']
+PE gbAuthoritative ADM3: HTTP Error 404: Not Found
+PE gbOpen ADM3: HTTP Error 404: Not Found
+MX gbHumanitarian ADM2: year 2020 (Instituto Nacional de Estadística y Geografía (INEGI), HDX), 2457 features; 3 of 12 missing found by name: ['Emiliano Zapata', 'Hueyapan', 'Xoxocotla']
+MX gbAuthoritative ADM2: year 01-02-2018 to 10-12-2019 (Instituto Nacional de Estadística y Geografía, UNSALB), 2463 features; 8 of 12 missing found by name: ['Capitán Luis Ángel Vidal', 'El Parral', 'Emiliano Zapata', 'Hueyapan', 'Mezcalapa', 'Puerto Morelos', 'Rincón Chamula San Pedro', 'Xoxocotla']
+MX gbOpen ADM2: year 2012 (World Bank), 2457 features; 3 of 12 missing found by name: ['Emiliano Zapata', 'Hueyapan', 'Xoxocotla']
+ES gbHumanitarian ADM3: HTTP Error 404: Not Found
+ES gbAuthoritative ADM3: HTTP Error 404: Not Found
+ES gbOpen ADM3: year 2018 (Open Data ESRI, IGN Central Registry of Cartography Area), 8205 features; 0 of 8 missing found by name: []
+ES gbHumanitarian ADM4: HTTP Error 404: Not Found
+ES gbAuthoritative ADM4: HTTP Error 404: Not Found
+ES gbOpen ADM4: HTTP Error 404: Not Found
+
