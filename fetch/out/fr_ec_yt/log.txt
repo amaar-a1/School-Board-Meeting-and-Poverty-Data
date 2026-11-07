@@ -1,0 +1,568 @@
+ntan 0
+FR Arras -> Ville Arras 0
+FR Roubaix -> Ville de Roubaix 0
+FR Avion ->  
+FR Saint-André-lez-Lille ->  
+FR Béthune ->  
+FR Bruay-la-Buissière ->  
+FR Seclin -> Mairie de Seclin 0
+FR Somain -> Ville de Somain 0
+FR Valenciennes ->  
+FR Calais -> Ville de Calais 1
+FR Courrières ->  
+FR Harnes ->  
+FR Wambrechies -> Ville de Wambrechies 0
+FR Wattignies ->  
+FR Lens -> Agglo Lens-Liévin 0
+FR Lillers -> Ville de Lillers 0
+FR Beauvais -> Beauvais et son agglo 𝘛𝘝 0
+FR Marck -> Ville de Marck 0
+FR Clermont -> Vigilance Citoyenne Clermont Métropole 1
+FR Nœux-les-Mines ->  
+FR Creil -> Ville de Creil 0
+FR Outreau -> Ville d'Outreau 0
+FR Méru -> Mairie de Méru 0
+FR Saint-Omer -> Ville De Saint-Omer 0
+FR Nogent-sur-Oise -> Ville de Nogent sur Oise Officiel 0
+FR Beaumont -> Mairie Beaumont 0
+FR Pont-Sainte-Maxence -> Ville de Pont-Sainte-Maxence 0
+FR Alençon ->  
+FR Flers -> Flers Ville et Agglo 0
+FR Auchel -> Ville d'Auchel 0
+FR Berck -> Ville de Berck-sur-Mer 0
+FR Clermont-Ferrand -> Ville de Clermont-Ferrand 0
+FR Boulogne-sur-Mer -> Ville Boulogne-sur-Mer 0
+FR Gerzat -> Ville de Gerzat 0
+FR Pont-du-Château ->  
+FR Bully-les-Mines -> Ville de Bully-les-Mines 0
+FR Thiers -> Ville de Thiers 2
+FR Carvin -> AGGLOMERATION HENIN-CARVIN 0
+FR Bayonne -> Ville de Bayonne 0
+FR Billère -> Ville de Billère 0
+FR Étaples -> Ville d'Étaples sur mer 0
+FR Lons ->  
+FR Hénin-Beaumont ->  
+FR Orthez -> Mairie Orthez 0
+FR Liévin -> Agglo Lens-Liévin 0
+FR Saint-Jean-de-Luz ->  
+FR Longuenesse ->  
+FR Méricourt ->  
+FR Oignies ->  
+FR Lourdes -> Ville de Lourdes 0
+FR Argelès-sur-Mer -> Ville d'Argelès-sur-Mer 0
+FR Saint-Martin-Boulogne -> Ville de Saint-Martin-Boulogne 0
+FR Canet-en-Roussillon ->  
+FR Pia ->  
+FR Aubière -> Ville d'Aubière 0
+FR Saint-Estève ->  
+FR Bischwiller ->  
+FR Chamalières -> Ville de Chamalières 0
+FR Erstein ->  
+FR Hœnheim ->  
+FR Cournon-d'Auvergne -> Ville de Cournon-d'Auvergne 0
+FR Lingolsheim ->  
+FR Issoire ->  
+FR Ostwald ->  
+FR Riom -> Ville de Riom 0
+FR Schiltigheim -> Canal Schilick - Ville de Schiltigheim 0
+FR Strasbourg -> Strasbourg Ta Ville 0
+FR Anglet -> Ville Anglet 0
+FR Colmar ->  
+FR Illzach ->  
+FR Biarritz -> Ville de Biarritz 0
+FR Mulhouse -> Ville de Mulhouse 0
+FR Hendaye -> Ville d'Hendaye Hendaiako Herriko Etxea 0
+FR Riedisheim -> Ville de Riedisheim 0
+FR Oloron-Sainte-Marie -> Ville d'OLORON-SAINTE-MARIE 0
+FR Saint-Louis -> Ville de Saint-Louis 0
+FR Wittenheim ->  
+FR Brignais -> Ville de Brignais 0
+FR Caluire-et-Cuire -> Ville de Caluire et Cuire 0
+FR Pau -> Ville de Pau 0
+FR Écully ->  
+FR Urrugne ->  
+FR Givors -> Ville de Givors Officiel 0
+FR Tarbes -> Mairie de Tarbes 0
+FR Cabestany ->  
+FR Lyon -> Ville de Lyon 0
+FR Saint-Fons ->  
+FR Perpignan -> Ville de Perpignan 0
+FR Saint-Cyprien ->  
+FR Saint-Genis-Laval -> Ville Saint-Genis-Laval 0
+FR Bischheim ->  
+FR Tassin-la-Demi-Lune -> Mairie de Tassin la Demi-Lune 0
+FR Brumath -> Ville de Brumath 0
+FR Vénissieux -> Ville de Vénissieux 0
+FR Haguenau -> Ville de Haguenau 0
+FR Illkirch-Graffenstaden ->  
+FR Villeurbanne -> Ville de Villeurbanne 2
+FR Obernai -> Ville d'Obernai 0
+FR Corbas -> Ville de Corbas 0
+FR Saverne -> Ecole Municipale de Musique de Saverne 0
+FR Feyzin -> Ville de Feyzin 0
+FR Sélestat -> Ville de Sélestat 0
+FR Meyzieu -> Ville de Meyzieu 0
+FR Cernay -> Ville de Cernay 0
+FR Rillieux-la-Pape -> Ville de Rillieux-la-Pape 0
+FR Guebwiller -> Ville de Guebwiller 0
+FR Héricourt -> VILLE D'HERICOURT 0
+FR Kingersheim -> Ville de Kingersheim 0
+FR Pfastatt -> Mairie DE PFASTATT 0
+FR Autun -> Ville Autun 0
+FR Le Creusot ->  
+FR Rixheim -> Ville de Rixheim 0
+FR Wittelsheim -> Ville de Wittelsheim 0
+FR Montceau-les-Mines -> Ville de Montceau-les-Mines // Officielle 0
+FR Belleville-en-Beaujolais -> Réussir Ensemble Belleville-en-Beaujolais 0
+FR Bron ->  
+FR La Flèche -> La Flèche, Ville et Communauté de communes 0
+FR Craponne ->  
+FR Sablé-sur-Sarthe ->  
+FR Francheville -> FRANCHEVILLE NATURELLEMENT 0
+FR Albertville -> Municipalité Albertville 0
+FR La Motte-Servolex ->  
+FR Grigny-sur-Rhône -> Ville de Grigny-sur-Rhône 0
+FR Oullins-Pierre-Bénite -> Ville d'Oullins-Pierre-Bénite 0
+FR Sainte-Foy-lès-Lyon -> Ville de Sainte-Foy-lès-Lyon 0
+FR Annemasse -> Ville d'Annemasse 1
+FR Tarare -> Ville Tarare 0
+FR Cluses ->  
+FR Vaulx-en-Velin -> Vaulx-en-Velin Ville 0
+FR Passy -> Commune de Passy Pays du Mont-Blanc 0
+FR Villefranche-sur-Saône -> Ville de Villefranche-sur-Saône - officiel 0
+FR Rumilly -> Ville de Rumilly 0
+FR Sallanches ->  
+FR Chassieu -> Ville de Chassieu 0
+FR Fillière -> Commune de Fillière 0
+FR Décines-Charpieu -> Ville de Decines-Charpieu 0
+FR Genas -> Ville de Genas 0
+FR Mions -> CM_Ville_de_Mions 0
+FR Saint-Priest -> Ville de Saint-Priest 0
+FR Vesoul ->  
+FR Chalon-sur-Saône ->  
+FR Mâcon ->  
+FR Allonnes ->  
+FR Paris -> Ville de Paris 9
+FR Le Mans ->  
+FR Bois-Guillaume -> Mairie Bois-Guillaume 0
+FR Aix-les-Bains -> Mairie d'Aix-les-Bains 0
+FR Canteleu -> Ville de Canteleu 0
+FR Déville-lès-Rouen ->  
+FR Elbeuf -> Ville Elbeuf sur Seine 0
+FR Le Grand-Quevilly ->  
+FR Maromme -> Maromme Ma Ville 0
+FR Chambéry -> Ville de Chambéry 5
+FR Mont-Saint-Aignan ->  
+FR Oissel -> Ville Oissel sur Seine 0
+FR Annecy -> Ville Annecy 0
+FR Bonneville -> Bonneville School District 93 0
+FR Rouen -> Ville de Rouen 0
+FR Gaillard ->  
+FR Sotteville-lès-Rouen ->  
+FR La Roche-sur-Foron -> Ville de La Roche-sur-Foron 0
+FR Avon -> Ville d'Avon - 77 0
+FR Saint-Julien-en-Genevois ->  
+FR Thonon-les-Bains -> Ville de Thonon-les-Bains 0
+FR Bussy-Saint-Georges -> Ville de Bussy-Saint-Georges 0
+FR Champs-sur-Marne ->  
+FR Vétraz-Monthoux -> Commune de Vétraz-Monthoux 0
+FR Claye-Souilly -> Ville de Claye-Souilly 0
+FR Barentin -> Barentin Cité des Arts 0
+FR Bolbec ->  
+FR Coulommiers -> Ville de Coulommiers 0
+FR Caudebec-lès-Elbeuf ->  
+FR Dammartin-en-Goële -> Mairie de Dammartin-en-Goële 0
+FR Fontainebleau -> Ville de Fontainebleau - officiel 0
+FR Dieppe -> Ville de / City of Dieppe 0
+FR Lieusaint ->  
+FR Meaux -> Ville de Meaux 0
+FR Fécamp -> Ville de Fécamp 0
+FR Le Havre -> Le Havre Seine Métropole 0
+FR Melun -> Ville de Melun 0
+FR Moissy-Cramayel ->  
+FR Montivilliers -> Ville de Montivilliers 0
+FR Montévrain -> MAIRIE DE MONTÉVRAIN 0
+FR Port-Jérôme-sur-Seine ->  
+FR Le Petit-Quevilly ->  
+FR Nemours -> Ville Nemours 0
+FR Saint-Étienne-du-Rouvray -> Ville de Saint-Étienne-du-Rouvray 0
+FR Ozoir-la-Ferrière -> Ville d'Ozoir-la-Ferrière 0
+FR Provins ->  
+FR Yvetot -> Ville Yvetot 0
+FR Saint-Fargeau-Ponthierry -> Ville Saint-Fargeau-Ponthierry 0
+FR Brie-Comte-Robert -> Ville de Brie-Comte-Robert 0
+FR Serris -> Ville de Serris 0
+FR Cesson -> Ville de Cesson 0
+FR Torcy ->  
+FR Chelles -> Faire Ville Ensemble Chelles 2020 0
+FR Vaux-le-Pénil -> Ville de Vaux-le-Pénil 0
+FR Achères -> Ville d'Achères 0
+FR Combs-la-Ville -> Mairie de Combs-la-Ville 0
+FR Aubergenville ->  
+FR Dammarie-les-Lys -> Ville de Dammarie-lès-Lys 0
+FR Carrières-sous-Poissy -> Ville de Carrières-sous-Poissy 1
+FR La Celle-Saint-Cloud ->  
+FR La Ferté-sous-Jouarre -> Ville de La Ferté-sous-Jouarre 0
+FR Lagny-sur-Marne -> Ville de Lagny-sur-Marne 1
+FR Chatou -> Ville de Chatou 0
+FR Lognes -> Mairie de Lognes 0
+FR Les Clayes-sous-Bois -> Mairie Les Clayes sous Bois 0
+FR Le Mée-sur-Seine ->  
+FR Mitry-Mory ->  
+FR Croissy-sur-Seine -> Mairie de Croissy-sur-Seine 0
+FR Montereau-Fault-Yonne -> Ville de Montereau-fault-Yonne - Officiel 0
+FR Moret-Loing-et-Orvanne -> Ville de Moret-Loing-et-Orvanne 0
+FR Fontenay-le-Fleury -> Ville de Fontenay-le-Fleury 1
+FR Noisiel -> Ville de Noisiel 0
+FR Pontault-Combault ->  
+FR Houilles -> Ville de Houilles 0
+FR Roissy-en-Brie ->  
+FR Maisons-Laffitte -> Ville de Maisons-Laffitte, Cité du Cheval® 0
+FR Savigny-le-Temple -> Ville de Savigny-le-Temple 0
+FR Thorigny-sur-Marne ->  
+FR Mantes-la-Ville -> Ville Mantes-la-Jolie 0
+FR Maurepas ->  
+FR Vaires-sur-Marne -> Ville de Vaires-sur-Marne 0
+FR Villeparisis -> Villeparisis 0
+FR Montigny-le-Bretonneux -> Ville de Montigny-le-Bretonneux 0
+FR Le Pecq ->  
+FR Andrésy -> Ville d'Andrésy 0
+FR Bois-d'Arcy -> Ville de Bois d'Arcy 0
+FR Poissy -> Ville de Poissy 0
+FR Carrières-sur-Seine -> Ville de Carrières-sur-Seine 0
+FR Saint-Cyr-l'École -> Ville de Saint-Cyr-l'École 0
+FR Chanteloup-les-Vignes -> Ville de Chanteloup-les-Vignes 0
+FR Le Chesnay-Rocquencourt ->  
+FR Sartrouville -> Ville de Sartrouville 0
+FR Conflans-Sainte-Honorine ->  
+FR Triel-sur-Seine ->  
+FR Verneuil-sur-Seine ->  
+FR Élancourt -> Mairie d'Elancourt 0
+FR Le Vésinet ->  
+FR Guyancourt -> Ville de Guyancourt 1
+FR Viroflay -> Ville de Viroflay 0
+FR Limay -> Ville de Limay 0
+FR Mantes-la-Jolie -> Ville Mantes-la-Jolie 0
+FR Bressuire -> VILLE DE BRESSUIRE 1
+FR Marly-le-Roi -> Ville de Marly-le-Roi 0
+FR Parthenay -> Ville de Parthenay  0
+FR Montesson -> Ville de Montesson 0
+FR Les Mureaux ->  
+FR Abbeville -> Abbeville Demain avec Angelo Tonolli 0
+FR Albi -> Ville d'Albi 0
+FR Plaisir -> Ville de Plaisir 0
+FR Gaillac -> Ville de Gaillac 0
+FR Rambouillet -> Mairie de Rambouillet 0
+FR Lavaur ->  
+FR Castelsarrasin -> Ville de Castelsarrasin 0
+FR Saint-Germain-en-Laye -> Ville de Saint-Germain-en-Laye 0
+FR Trappes -> Ville de Trappes 0
+FR Montauban -> Ville de Montauban 4
+FR Vélizy-Villacoublay ->  
+FR Versailles ->  
+FR Brignoles -> Ville de Brignoles 0
+FR Villepreux -> Sylvie Sevin Montel - Tous Pour Villepreux 2020 0
+FR La Crau ->  
+FR Voisins-le-Bretonneux ->  
+FR Draguignan -> La Ville de Draguignan 0
+FR Fréjus ->  
+FR Niort -> Ville de Niort 2
+FR Thouars -> Ville de Thouars 0
+FR Hyères -> Ville d'Hyères 0
+FR Le Luc ->  
+FR Amiens -> Amiens & Métropole  0
+FR Ollioules -> Mairie Ollioules (mairieollioules) 0
+FR Roquebrune-sur-Argens ->  
+FR Sainte-Maxime ->  
+FR Castres -> Ville de Castres 0
+FR Saint-Raphaël -> Municipalité Saint-Raphaël 0
+FR Graulhet -> Mairie de Graulhet 0
+FR La Seyne-sur-Mer -> Chaîne TV Mairie de la Seyne sur Mer 0
+FR Mazamet -> Ville de Mazamet 0
+FR Solliès-Pont -> Ville de SOLLIES-PONT 0
+FR Moissac -> Ville de Moissac 1
+FR La Valette-du-Var ->  
+FR Le Beausset ->  
+FR Apt ->  
+FR Bollène -> Ville de Bollène 0
+FR Cogolin -> Ville de Cogolin 0
+FR Cavaillon -> Ville de Cavaillon 0
+FR Cuers -> Ville de Cuers 0
+FR La Farlède ->  
+FR La Garde ->  
+FR Monteux -> Ville de Monteux 0
+FR La Londe-les-Maures ->  
+FR Pernes-les-Fontaines ->  
+FR Le Muy ->  
+FR Le Pontet ->  
+FR Le Pradet ->  
+FR Vedène -> Ville de Vedène 0
+FR Saint-Cyr-sur-Mer -> Ville de Saint Cyr Sur Mer 0
+FR Challans ->  
+FR Les Herbiers ->  
+FR Saint-Maximin-la-Sainte-Baume -> Ville de Saint-Maximin-la-Sainte-Baume 0
+FR La Roche-sur-Yon -> La Roche-sur-Yon, Ville & Agglomération 0
+FR Saint-Hilaire-de-Riez -> Ville de Saint Hilaire de Riez 0
+FR Châtellerault ->  
+FR Sanary-sur-Mer -> Ville de Sanary-sur-Mer 0
+FR Six-Fours-les-Plages ->  
+FR Couzeix -> Ville de Couzeix 0
+FR Panazol -> Ville Panazol 0
+FR Toulon -> Ville de Toulon 0
+FR Épinal -> Ville d'Épinal 0
+FR Vidauban -> ville de Vidauban 0
+FR Avignon ->  
+FR Carpentras ->  
+FR Auxerre -> Agglo.Auxerrois - Ville d'Auxerre 0
+FR L'Isle-sur-la-Sorgue ->  
+FR Belfort -> Ville de Belfort 0
+FR Orange -> Ville d'Orange 0
+FR Athis-Mons -> Ville d'Athis-Mons 0
+FR Pertuis -> Ville de Pertuis 0
+FR Brétigny-sur-Orge -> Ville de Brétigny-sur-Orge 0
+FR Sorgues -> Ville de Sorgues 0
+FR Chilly-Mazarin -> Ville de Chilly-Mazarin 0
+FR Aizenay -> Ville Aizenay 0
+FR Dourdan -> Ville de Dourdan 0
+FR Fontenay-le-Comte -> Ville Fontenay le Comte 0
+FR Épinay-sous-Sénart ->  
+FR Montaigu-Vendée ->  
+FR Étampes -> Mairie d'Étampes 1
+FR Les Sables-d'Olonne -> Les Sables d'Olonne Agglomération 0
+FR Fleury-Mérogis -> Mairie Fleury-Mérogis 0
+FR Buxerolles -> Ville de Buxerolles 0
+FR Grigny -> Ville de Grigny-sur-Rhône 0
+FR Poitiers -> Ville de Poitiers 0
+FR Juvisy-sur-Orge -> Mairie de Juvisy-sur-Orge 0
+FR Limoges -> Limoges Métropole 0
+FR Massy -> Ville de Massy 0
+FR Saint-Junien -> Ville de Saint-Junien 0
+FR Montgeron ->  
+FR Saint-Dié-des-Vosges ->  
+FR Morsang-sur-Orge ->  
+FR Palaiseau -> Ville de Palaiseau 0
+FR Sens -> Ville de Sens 0
+FR Sainte-Geneviève-des-Bois ->  
+FR Arpajon -> Ville Arpajon 0
+FR Bondoufle ->  
+FR Saint-Michel-sur-Orge -> Ville Saint-Michel-sur-Orge 0
+FR Savigny-sur-Orge ->  
+FR Brunoy ->  
+FR Vigneux-sur-Seine ->  
+FR Viry-Châtillon ->  
+FR Corbeil-Essonnes -> La ville de Corbeil-Essonnes 0
+FR Les Ulis ->  
+FR Draveil ->  
+FR Asnières-sur-Seine ->  
+FR Épinay-sur-Orge -> Ville d'Épinay-sur-Orge 0
+FR Bois-Colombes -> Ville de Bois-Colombes 0
+FR Évry-Courcouronnes -> Ville d'Évry-Courcouronnes officiel 0
+FR Bourg-la-Reine -> Ville de Bourg-la-Reine 0
+FR Gif-sur-Yvette ->  
+FR Igny -> Ville Igny 0
+FR Châtillon -> Ville de Châtillon 1
+FR Longjumeau -> Ville de Longjumeau 0
+FR Clamart -> Ville de Clamart 0
+FR Mennecy -> Ville de Mennecy 0
+FR Colombes -> Ville de Colombes 0
+FR Morangis -> Mairie Morangis 0
+FR Fontenay-aux-Roses -> Ville de Fontenay-aux-Roses 0
+FR Orsay -> Ville d'Orsay 0
+FR Ris-Orangis ->  
+FR La Garenne-Colombes -> Ville de La Garenne-Colombes 0
+FR Saint-Germain-lès-Arpajon ->  
+FR Issy-les-Moulineaux ->  
+FR Saint-Pierre-du-Perray -> Ville de Saint Pierre du Perray 0
+FR Malakoff -> Ville de Malakoff 1
+FR Verrières-le-Buisson -> Ville de Verrières-le-Buisson 0
+FR Montrouge -> Ville de Montrouge 1
+FR Neuilly-sur-Seine ->  
+FR Puteaux ->  
+FR Villebon-sur-Yvette -> Mairie de Villebon sur Yvette 0
+FR Saint-Cloud -> Ville de Saint-Cloud 0
+FR Yerres -> Mairie Yerres 0
+FR Sèvres ->  
+FR Antony -> Ville d'Antony 0
+FR Vanves -> Ville de Vanves 0
+FR Bagneux ->  
+FR Villeneuve-la-Garenne -> Ville de Villeneuve-la-Garenne Officiel 0
+FR Boulogne-Billancourt -> Ville de Boulogne-Billancourt 0
+FR Châtenay-Malabry ->  
+FR Aulnay-sous-Bois -> Mairie d'Aulnay-sous-Bois 0
+FR Le Blanc-Mesnil ->  
+FR Chaville -> Mairie Chaville 0
+FR Bondy ->  
+FR Clichy -> Ville de Clichy-sous-Bois 0
+FR Clichy-sous-Bois -> Ville de Clichy-sous-Bois 0
+FR Courbevoie -> Ville Courbevoie 0
+FR Drancy -> Ville de Drancy 0
+FR Garches ->  
+FR Épinay-sur-Seine -> Mairie d'Épinay-sur-Seine 0
+FR Gennevilliers -> Ville de Gennevilliers 0
+FR Les Lilas ->  
+FR Levallois-Perret ->  
+FR Montfermeil ->  
+FR Meudon -> Meudon Conseil Municipal ~ Questions & Réponses 0
+FR Neuilly-Plaisance -> Ville de Neuilly-Plaisance 0
+FR Noisy-le-Grand -> Ville de Noisy-le-Grand 0
+FR Pantin ->  
+FR Le Pré-Saint-Gervais ->  
+FR Nanterre -> Ville de Nanterre 3
+FR Le Plessis-Robinson ->  
+FR Romainville -> Ville de Romainville 0
+FR Rueil-Malmaison -> Ville de Rueil-Malmaison 0
+FR Saint-Denis -> Ville de Saint-Denis 0
+FR Sceaux -> Ville de Sceaux 0
+FR Sevran -> Ville Sevran 0
+FR Tremblay-en-France ->  
+FR Suresnes -> Ville de Suresnes 0
+FR Villepinte -> Ville de Villepinte 0
+FR Ville-d'Avray -> Mairie Ville-d'Avray 0
+FR Alfortville -> Mairie d'Alfortville 0
+FR Boissy-Saint-Léger -> Mairie de Boissy-Saint-Léger 0
+FR Aubervilliers -> Actualités de la Ville d'Aubervilliers 0
+FR Bagnolet -> Conseil Citoyen La Noue Jean Lolive Bagnolet 0
+FR Bry-sur-Marne -> Ville de Bry-sur-Marne 0
+FR Bobigny -> Ville de Bobigny 0
+FR Champigny-sur-Marne -> Ville de Champigny-sur-Marne 0
+FR Le Bourget ->  
+FR Chennevières-sur-Marne ->  
+FR La Courneuve ->  
+FR Dugny -> Ville de Dugny 0
+FR Choisy-le-Roi -> Ville de Choisy-le-Roi 1
+FR Gagny -> Ville de Gagny 0
+FR Livry-Gargan ->  
+FR Fontenay-sous-Bois -> Ville de Fontenay-sous-Bois 0
+FR Gentilly -> Ville de Gentilly 0
+FR Ivry-sur-Seine ->  
+FR Montreuil -> Ville de Montreuil 0
+FR Le Kremlin-Bicêtre ->  
+FR Maisons-Alfort -> Ville de Maisons-Alfort 0
+FR Neuilly-sur-Marne -> Ville de Neuilly-sur-Marne 0
+FR Orly -> Ville d'Orly 0
+FR Noisy-le-Sec -> Ville de Noisy-le-Sec Officiel 0
+FR Le Perreux-sur-Marne ->  
+FR Les Pavillons-sous-Bois ->  
+FR Le Raincy ->  
+FR La Queue-en-Brie -> Ville La Queue en Brie 0
+FR Rosny-sous-Bois -> Ville de Rosny-sous-Bois 0
+FR Saint-Maur-des-Fossés -> Ville de Saint-Maur-des-Fossés 0
+FR Saint-Ouen-sur-Seine -> Mairie de Saint-Ouen-sur-Seine 0
+FR Sucy-en-Brie ->  
+FR Valenton -> Ville de Valenton 0
+FR Stains -> Ville de Stains TV 1
+FR Villemomble -> Ville de Villemomble 0
+FR Villejuif -> Ville de Villejuif 0
+FR Villetaneuse -> Mairie de Villetaneuse 0
+FR Villeneuve-Saint-Georges -> Ville de Villeneuve-Saint-Georges 0
+FR Arcueil ->  
+FR Vincennes ->  
+FR Bonneuil-sur-Marne ->  
+FR Cachan ->  
+FR Charenton-le-Pont ->  
+FR Argenteuil -> Ville d'Argenteuil 1
+FR Chevilly-Larue -> Ville de Chevilly-Larue 0
+FR Créteil ->  
+FR Beaumont-sur-Oise -> Mairie Beaumont Sur Oise 0
+FR Fresnes -> Ville de Fresnes 0
+FR Cergy -> Ville de Cergy 0
+FR L'Haÿ-les-Roses -> Mairie de L'Haÿ-les-Roses 0
+FR Deuil-la-Barre -> Ville de Deuil-La Barre 2
+FR Joinville-le-Pont -> Ville de Joinville-le-Pont 0
+FR Eaubonne -> Ville Eaubonne 0
+FR Éragny ->  
+FR Limeil-Brévannes -> Ville de Limeil-Brévannes 0
+FR Fosses -> VILLE DE FOSSES 0
+FR Garges-lès-Gonesse ->  
+FR Nogent-sur-Marne -> Ville Nogent-sur-Marne 0
+FR Ormesson-sur-Marne ->  
+FR Goussainville -> Réussir Goussainville En Commun 2020 0
+FR Le Plessis-Trévise ->  
+FR Saint-Mandé ->  
+FR L'Isle-Adam -> Mairie de L'Isle-Adam 0
+FR Louvres ->  
+FR Saint-Maurice -> Ville de Saint-Maurice 0
+FR Montmagny -> Ville de Montmagny 0
+FR Thiais -> Ville de Thiais 0
+FR Osny ->  
+FR Pierrelaye ->  
+FR Villecresnes -> Villecresnes Avenir 2
+FR Saint-Brice-sous-Forêt -> Ville de Saint-Brice-sous-Forêt 0
+FR Saint-Leu-la-Forêt ->  
+FR Villeneuve-le-Roi -> Villeneuve-le-Roi - L'officielle 0
+FR Villiers-sur-Marne ->  
+FR Sannois -> Ville de Sannois 0
+FR Soisy-sous-Montmorency -> Ville de Soisy-sous-Montmorency 0
+FR Vitry-sur-Seine -> Ville de Vitry-sur-Seine 0
+FR Vauréal -> Ville de Vauréal 0
+FR Arnouville -> Ville d'Arnouville 0
+FR Les Abymes ->  
+FR Capesterre-Belle-Eau -> Ville de Capesterre Belle-Eau  0
+FR Bezons -> Ville de Bezons 0
+FR Cormeilles-en-Parisis ->  
+FR Domont ->  
+FR Lamentin -> VILLE DU LAMENTIN-MARTINIQUE 2
+FR Enghien-les-Bains ->  
+FR Le Moule ->  
+FR Ermont -> Ville d'Ermont 0
+FR Pointe-à-Pitre -> Ville de Pointe-à-Pitre 1
+FR Franconville ->  
+FR Saint-François ->  
+FR Sainte-Rose -> Municipalité de Sainte-Rose-du-Nord 0
+FR Gonesse -> Ville de Gonesse 0
+FR Fort-de-France ->  
+FR Herblay-sur-Seine ->  
+FR Le Lamentin ->  
+FR Jouy-le-Moutier -> Ville de Jouy-le-Moutier 0
+FR Rivière-Salée -> Communication Mairie de Rivière-Salée 0
+FR Saint-Esprit ->  
+FR Montigny-lès-Cormeilles -> Mairie Montigny-lès-Cormeilles 0
+FR Sainte-Marie -> Municipalité de Sainte-Marie-Madeleine 0
+FR Montmorency -> Ville de Montmorency 0
+FR La Trinité -> Ville de La Trinité 0
+FR Persan -> Ville de Persan 0
+FR Kourou -> Ville de Kourou 0
+FR Mana ->  
+FR Pontoise -> Ville de Pontoise 1
+FR Remire-Montjoly ->  
+FR Saint-Gratien ->  
+FR Apatou ->  
+FR Saint-Ouen-l'Aumône -> Mairie de Saint-Ouen l'Aumône 0
+FR Bras-Panon -> Ville de Bras-Panon 0
+FR Petite-Île ->  
+FR La Possession ->  
+FR Sarcelles -> Ville de Sarcelles 0
+FR Saint-Benoît ->  
+FR Taverny -> Ville Taverny 0
+FR Saint-Joseph -> Municipalité de Saint-Joseph-du-Lac 0
+FR Villiers-le-Bel ->  
+FR Saint-Louis -> Ville de Saint-Louis 0
+FR Baie-Mahault -> Ville de Baie-Mahault 0
+FR Le Gosier ->  
+FR Saint-Pierre -> Mairie de Saint-Pierre du Vauvray En vidéo 1
+FR Sainte-Suzanne ->  
+FR Morne-à-l'Eau -> Ville de Morne-à-L'Eau 0
+FR Petit-Bourg -> Ville de Petit-Bourg Officiel 0
+FR Saint-Claude -> Ville de Saint-Claude Guadeloupe 0
+FR Sainte-Anne -> Ville Sainte-Anne Guadeloupe 0
+FR Ducos ->  
+FR Le François ->  
+FR Rivière-Pilote -> Ville de Rivière-Pilote 0
+FR Le Robert ->  
+FR Saint-Joseph -> Ville de Saint-Joseph 0
+FR Schœlcher ->  
+FR Cayenne ->  
+FR Macouria -> Ville de Macouria 1
+FR Matoury ->  
+FR Saint-Laurent-du-Maroni -> Ville de Saint-Laurent du Maroni 0
+FR Les Avirons ->  
+FR L'Étang-Salé -> Ville de L'Étang-Salé 0
+FR Le Port ->  
+FR Saint-André -> Ville LA COTE SAINT ANDRE 0
+FR Saint-Denis -> Ville de Saint-Denis 0
+FR Saint-Leu -> Ville de Saint-Leu d'Esserent 0
+FR Saint-Paul -> Ville de Saint-Paul-lès-Dax 0
+FR Sainte-Marie -> Municipalité de Sainte-Marie-Madeleine 0
+FR Le Tampon ->  
+
+---
