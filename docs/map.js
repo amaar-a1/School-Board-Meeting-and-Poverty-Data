@@ -319,7 +319,7 @@
   const rankLine = (r, id) => (String(r["Poverty rank in country"] ?? "") === "" && id && rankFallback(r, id) !== ""
     ? `<br>Poverty rank in its country: ${rankFallback(r, id)} of 100 (100 = highest); estimated from the figure the map shows for it`
     : String(r["Poverty rank in country"] ?? "") !== ""
-    ? `<br>Poverty rank in its country: ${esc(r["Poverty rank in country"])} of 100 (100 = highest)${r._rankEst ? (r.pseudo && r.Province ? "; estimated: where its rate falls among the country's boards" : "; estimated from the places in its region that have a figure") : ""}` : "");
+    ? `<br>Poverty rank in its country: ${esc(r["Poverty rank in country"])} of 100 (100 = highest)${r._rankEst ? (r.pseudo && r.Province ? "; estimated: where its rate falls among the country's boards" : r["Poverty rate (region, all ages)"] ? "; estimated from its region's rate" : "; estimated from the places in its region that have a figure") : ""}` : "");
 
   const ukView = () => current && (current.country === "UK" || (current.parent && current.parent.country === "UK"));
 
@@ -343,7 +343,7 @@
     if ((euv === "FRA" || (current && current.combined)) && $("map-metric").value === "poverty")
       items.push(`<span class="map-faded">France overseas: Guadeloupe, Martinique, French Guiana and Mayotte have no commune rates, so each commune shows its département's rate (INSEE; Guadeloupe, French Guiana and Mayotte from a 2017 survey)</span>`);
     if (euv === "EC" || (current && current.combined)) items.push(`<span><i style="background:${NO_DISTRICT}"></i>Ecuador: zones whose canton is disputed, part of no canton</span>`);
-    if (euv === "FRA" || (current && current.combined)) items.push(`<span class="map-faded">France: each département's smaller communes, which have no published rate, are drawn together with the département's rate</span>`);
+    if (euv === "FRA" || (current && current.combined)) items.push(`<span class="map-faded">France: communes too small for INSEE to publish a rate show their département's rate</span>`);
     if (current && current.country === "FR") faded.push("outside Saint-Pierre-et-Miquelon");
     if (current && current.country === "IE") faded.push("outside Ireland");
     if (euv && !current.state) faded.push(`outside ${euv === "NL" ? "the Netherlands" : EU_NAMES[euv]}`);

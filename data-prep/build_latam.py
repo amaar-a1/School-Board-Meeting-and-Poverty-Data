@@ -700,8 +700,8 @@ def france():
     """The communes INSEE publishes a poverty rate for (Filosofi 2023: those with enough tax households, about
     2,000+ people), in mainland France, Corsica and Réunion. Communes own and run the buildings of nursery and
     primary schools; the national education ministry employs the teachers. The town council (conseil municipal)
-    stands in for meetings. Each département's smaller communes are drawn together on the map (map only), with
-    the département's rate."""
+    stands in for meetings. Every other commune (too few households for INSEE to publish a rate) is listed too,
+    with its département's rate in a column of its own."""
     d = os.path.join(IN, "france")
     ins = json.load(open(os.path.join(d, "fr_insee_2023.json"), encoding="utf-8"))
     pupils = json.load(open(os.path.join(d, "fr_ecoles_eleves_2025.json"), encoding="utf-8"))["by_commune"]
@@ -718,34 +718,29 @@ def france():
     dep_of = lambda c: c[:3] if c.startswith("97") else c[:2]
     rows, feats = [], []
     for code, x in sorted(ins["communes"].items()):
-        if dep_of(code) not in deps or ("PR_MD60" not in x and dep_of(code) not in om): continue
+        if dep_of(code) not in deps: continue
         dp = dep_of(code); dx = ins["departements"].get(dp, {})
+        # Communes INSEE publishes no rate for (too few tax households): the département's rate, 2023.
+        small = "PR_MD60" not in x and dp not in om and dx.get("PR_MD60") is not None
         f = geo.get(code); area = area_km2(f["geometry"]) if f else 0
         dens = x["pop"] / area if area and x.get("pop") else 0
         pu = pupils.get(code, {})
         did = f"FRA-{code}"
         o = om.get(dp) if "PR_MD60" not in x else None
         rows.append({"District": x["name"], "Region": deps[dp], "Population": x.get("pop") or "",
-                     "Poverty rate (all ages)": f"{x['PR_MD60']:.1f}%" if not o else "",
-                     "Poverty rate (region, all ages)": f"{o['rate']:.1f}%" if o else "",
+                     "Poverty rate (all ages)": f"{x['PR_MD60']:.1f}%" if "PR_MD60" in x else "",
+                     "Poverty rate (region, all ages)": f"{o['rate']:.1f}%" if o else f"{dx['PR_MD60']:.1f}%" if small else "",
                      "Child poverty rate (département)": f"{dx['child']:.1f}%" if dx.get("child") is not None else "",
                      "Median standard of living (€ per year)": round(x["MED_SL"]) if x.get("MED_SL") else "",
                      "Poverty note": (f"No commune figure: {deps[dp]}'s overall rate, {o['year']} (INSEE, {o['basis']}; people below 60% of mainland France's median standard of living)"
                                       + ("" if dp == "972" else "; from a survey, so not comparable with the other départements' figures")) if o else
+                         "No commune figure (too few households): the département's rate, 2023" if small else
                          "People below 60% of the national median standard of living, all ages, 2023 (INSEE, Filosofi); INSEE publishes no child rate by commune, so the département's rate for under-18s is given too",
                      "Enrollment": pu.get("total", ""), "Enrollment year": "2025-26 (nursery and primary schools)" if pu else "",
                      "Public school enrollment": pu.get("public", ""), "School system": "Commune (school buildings); Ministry of Education (teachers)",
                      # Mayotte has no commune populations here: its overall density (256,518 people in 2017 on 374 km², about 690 per km²)
                      "Locale": loc(dens) if dens else "Suburban" if dp == "976" else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": x["name"]}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
-    # Map only: each département's communes without a published rate, together.
-    for k, f in sorted(geo.items()):
-        if not k.startswith("REST-") or k[5:] not in deps: continue
-        dp = k[5:]; dx = ins["departements"].get(dp, {})
-        small = [c for c, x in ins["communes"].items() if dep_of(c) == dp and "PR_MD60" not in x]
-        feats.append({"type": "Feature", "properties": {"id": f"FRA-REST-{dp}", "NAME": f"Smaller communes of {deps[dp]}", "pseudo": True, "dep": deps[dp],
-                      "pct": dx.get("PR_MD60"), "child": dx.get("child"), "communes": len(small), "pop": sum(ins["communes"][c].get("pop") or 0 for c in small)},
-                      "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
     write("FRA", "france", rows, feats)
 
 

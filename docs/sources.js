@@ -268,7 +268,8 @@ window.SOURCES = [
       { title: "Overseas départements' poverty rates (Guadeloupe, Martinique, French Guiana, Mayotte): INSEE, Revenus et patrimoine des ménages, édition 2024, fiche 1.21 (Filosofi 2021 and the 2017 Budget de famille survey)", url: "https://www.insee.fr/fr/statistiques/fichier/7941411/RPM2024-F21.pdf" },
       { title: "Population: INSEE, populations de référence 2023 (municipal population)", url: "https://api.insee.fr/melodi/file/DS_POPULATIONS_REFERENCE/DS_POPULATIONS_REFERENCE_2023_CSV_FR" },
       { title: "Pupils: Ministry of Education, pupils in nursery and primary schools by school, rentrée 2025 (fr-en-ecoles-effectifs-nb_classes), placed in communes with the school directory (fr-en-annuaire-education)", url: "https://data.education.gouv.fr/explore/dataset/fr-en-ecoles-effectifs-nb_classes/" },
-      { title: "Borders: communes and départements (simplified), france-geojson by Grégoire David; communes without a poverty rate merged by département with mapshaper", url: "https://github.com/gregoiredavid/france-geojson" },
+      { title: "Borders: communes and départements (simplified), france-geojson by Grégoire David, simplified further with mapshaper", url: "https://github.com/gregoiredavid/france-geojson" },
+      { title: "Borders of 47 communes formed by recent mergers: the French government's geographic API (geo.api.gouv.fr)", url: "https://geo.api.gouv.fr/" },
       { title: "Meetings (stand-in): each town council's YouTube channel (in the “Meetings source” column), searched for communes of 10,000+ people", url: "https://www.youtube.com/" }
     ],
     note: "Built by data-prep/build_latam.py. Communes are matched to borders by their INSEE code."
