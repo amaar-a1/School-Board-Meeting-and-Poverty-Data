@@ -735,7 +735,8 @@ def france():
                          "People below 60% of the national median standard of living, all ages, 2023 (INSEE, Filosofi); INSEE publishes no child rate by commune, so the département's rate for under-18s is given too",
                      "Enrollment": pu.get("total", ""), "Enrollment year": "2025-26 (nursery and primary schools)" if pu else "",
                      "Public school enrollment": pu.get("public", ""), "School system": "Commune (school buildings); Ministry of Education (teachers)",
-                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
+                     # Mayotte has no commune populations here: its overall density (256,518 people in 2017 on 374 km², about 690 per km²)
+                     "Locale": loc(dens) if dens else "Suburban" if dp == "976" else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": x["name"]}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
     # Map only: each département's communes without a published rate, together.
     for k, f in sorted(geo.items()):
@@ -777,9 +778,11 @@ def ecuador():
         rows.append({"District": x["name"], "Region": prov.get(code[:2], ""), "Population": people or "",
                      "Poverty rate (all ages)": f"{x['pov']:.2f}%" if est else "",
                      "Poverty standard error": f"{x['pov_se']:.2f}" if est else "",
+                     # Galápagos: the province's 2010 poverty rate as reported by BBC News (2013; the measure isn't stated there)
+                     "Poverty rate (region, all ages)": "" if est else "31.0%",
                      "Unmet basic needs (NBI, 2010)": f"{x['nbi2010']:.1f}%" if "nbi2010" in x else "",
                      "Poverty note": "Share of people below the consumption poverty line, all ages (INEC and World Bank poverty map: 2010 census with the 2013-14 living conditions survey); population from the 2010 census" if est else
-                         "No consumption poverty estimate: the Galápagos were outside the 2013-14 living conditions survey; INEC's unmet basic needs (NBI) rate is given",
+                         "No consumption poverty estimate: the Galápagos were outside the 2013-14 living conditions survey. Shown instead: the Galápagos province's poverty rate of about 31% in 2010, as reported by BBC News (2013), which doesn't say how it was measured, so it isn't comparable with the other cantons; INEC's unmet basic needs (NBI) rate is given too",
                      "Enrollment": round(p["total"]) if p.get("total") else "", "Enrollment year": pup.get("year", "") if p else "",
                      "Public school enrollment": round(p["fiscal"]) if p.get("fiscal") else "",
                      "School system": "Ministry of Education (zone and district)",
