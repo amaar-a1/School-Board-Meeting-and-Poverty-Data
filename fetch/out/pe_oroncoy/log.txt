@@ -1,0 +1,23 @@
+$ npm install -g mapshaper@0.6 >/dev/null 2>&1; mapshaper -v
+0.6.121
+
+source Instituto Geográfico Nacional - IGN, HDX 2015
+$ mapshaper -i fetch/pe_lamar_old.geojson -dissolve -o /tmp/old_union.json format=geojson
+[dissolve] Dissolved 10 features into 1 feature
+[o] Wrote /tmp/old_union.json
+$ mapshaper -i /tmp/per3.geojson -clip /tmp/old_union.json -each 'a=this.area' -filter 'a > 1e6' -o /tmp/new_in.json format=geojson
+[filter] Retained 26 of 31 features
+[o] Wrote /tmp/new_in.json
+newer districts overlapping La Mar: Acocro, Acos Vinchos, Anchihuay, Anco, Andarapa, Ayna, Chilcas, Chungui, Huaccana, Huamanguilla, Inkawasi, Kaquiabamba, Kimbiri, Luis Carranza, Ocobamba, Ocros, Oronccoy, Samugari, San Miguel, Santa Rosa, Sivia, Tambo, Uchuraccay, Vilcabamba, Villa Kintiarina, Villa Virgen
+$ mapshaper -i /tmp/new_in.json -dissolve -o /tmp/new_union.json format=geojson
+[dissolve] Dissolved 26 features into 1 feature
+[o] Wrote /tmp/new_union.json
+$ mapshaper -i /tmp/old_union.json -erase /tmp/new_union.json -explode -each 'km2=Math.round(this.area/1e6)' -filter 'km2 >= 5' -o fetch/out/pe_oroncoy/gap.geojson format=geojson precision=0.0001
+[explode] Exploded 1 feature into 11 features
+[filter] Retained 0 of 11 features
+[o] Wrote fetch/out/pe_oroncoy/gap.geojson
+Traceback (most recent call last):
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 25, in <module>
+    log.write(f"gaps of 5+ km2: {[f['properties'] for f in gap['features']]}\n")
+                                                           ~~~^^^^^^^^^^^^
+KeyError: 'features'
