@@ -244,6 +244,7 @@
   function style(feature) {
     if (isWorld(feature)) return WORLD_STYLE;
     if (undefinedArea(feature)) return { fillColor: NO_DISTRICT, fillOpacity: 0.9, color: "#8a9a80", weight: 0.3, dashArray: "2 3" };
+    if (frSmall && /^FRA-REST-/.test(gid(feature))) return { fillOpacity: 0, opacity: 0, interactive: false };
     const f = window.SiteFilters;
     let on = inView(gid(feature));
     if (on && f && f.active()) {
@@ -343,7 +344,7 @@
     if ((euv === "FRA" || (current && current.combined)) && $("map-metric").value === "poverty")
       items.push(`<span class="map-faded">France overseas: Guadeloupe, Martinique, French Guiana and Mayotte have no commune rates, so each commune shows its département's rate (INSEE; Guadeloupe, French Guiana and Mayotte from a 2017 survey)</span>`);
     if (euv === "EC" || (current && current.combined)) items.push(`<span><i style="background:${NO_DISTRICT}"></i>Ecuador: zones whose canton is disputed, part of no canton</span>`);
-    if (euv === "FRA" || (current && current.combined)) items.push(`<span class="map-faded">France: communes too small for INSEE to publish a rate show their département's rate</span>`);
+    if (euv === "FRA" || (current && current.combined)) items.push(`<span class="map-faded">France: communes too small for INSEE to publish a rate show their département's rate; tick “Smaller French communes” to draw each one</span>`);
     if (current && current.country === "FR") faded.push("outside Saint-Pierre-et-Miquelon");
     if (current && current.country === "IE") faded.push("outside Ireland");
     if (euv && !current.state) faded.push(`outside ${euv === "NL" ? "the Netherlands" : EU_NAMES[euv]}`);
@@ -376,6 +377,34 @@
     Object.values(layers).forEach((l) => l.setStyle(style));
     islandDots.forEach(({ dot, f }) => { const st = style(f); dot.setStyle({ fillColor: st.fillColor, fillOpacity: st.fillOpacity, opacity: st.fillOpacity }); });
     legend();
+  }
+
+  // France's 29,500 small communes: drawn only when "Smaller French communes" is ticked (they're loaded then), in
+  // place of each département's single map-only area.
+  let frSmall = false, frSmallLoading = null, makeLayer = null;
+  function setFrSmall(on) {
+    if (on === undefined) on = !!($("map-fr-small") && $("map-fr-small").checked);
+    if ($("map-fr-small")) $("map-fr-small").checked = on;
+    if (!on) {
+      frSmall = false;
+      if (layers["france-small"]) layers["france-small"].remove();
+      restyle();
+      return Promise.resolve();
+    }
+    if (!frSmallLoading) {
+      $("map-status").textContent = "Loading France's smaller communes…";
+      frSmallLoading = fetch("data/map/france-small.json").then((r) => r.json()).then((fc) => {
+        layers["france-small"] = makeLayer(fc);
+        layers["france-small"].eachLayer((l) => { const g = byId.get(gid(l.feature)); if (g && !g.layers.includes(l)) g.layers.push(l); });
+        $("map-status").textContent = "";
+      });
+    }
+    return frSmallLoading.then(() => {
+      if (!$("map-fr-small").checked) return;
+      frSmall = true;
+      layers["france-small"].addTo(map);
+      restyle();
+    });
   }
 
   function setSecondary() {
@@ -498,6 +527,15 @@
     const caMain = (f) => { const r = lookup[gid(f)]; return caMainRow(r) || (!!r && stand[r.Province] === r); };
     files.canada2 = { type: "FeatureCollection", features: files.canada.features.filter((f) => !caMain(f)) };
     files.canada.features = files.canada.features.filter(caMain);
+    makeLayer = (fc) => L.geoJSON(fc, {
+      renderer, style,
+      onEachFeature: (f, l) => {
+        l.bindTooltip(() => tip(f), { sticky: true });
+        l.on("click", (e) => { map.fitBounds(l.getBounds(), { maxZoom: 11 }); clickNote(f, e.latlng); });
+        l.on("mouseover", () => l.setStyle({ weight: 2, color: "#111" }));
+        l.on("mouseout", () => l.setStyle(style(f)));
+      }
+    });
     DRAW.forEach((name) => {
       const fc = files[name];
       // Puerto Rico's border is in the unified-district file; the other territories use the territory outlines.
@@ -540,6 +578,7 @@
     sel.addEventListener("change", () => sel.value && jump(sel.value));
     $("map-metric").addEventListener("change", restyle);
     $("map-secondary").addEventListener("change", setSecondary);
+    if ($("map-fr-small")) $("map-fr-small").addEventListener("change", () => setFrSmall());
     if ($("map-canada-overlap")) $("map-canada-overlap").addEventListener("change", setSecondary);
     legend();
     buildSearch();
@@ -570,6 +609,12 @@
     searchIndex = [...groups.values()].filter((g) => g.layers.length).map((g) => ({
       ...g, text: norm(`${g.name} ${g.place}`), size: Number(String((g.row || {}).Enrollment || "").replace(/,/g, "")) || 0
     }));
+    // France's small communes are searchable before their layer is loaded: picking one loads it.
+    Object.entries(lookup).forEach(([id, r]) => {
+      if (!/^FRA-\d/.test(id) || groups.has(id)) return;
+      const g = { name: r.District, place: r.Region, layers: [], row: r, frSmall: true, text: norm(`${r.District} ${r.Region}`), size: Number(String(r.Enrollment || "").replace(/,/g, "")) || 0 };
+      groups.set(id, g); searchIndex.push(g);
+    });
     const box = $("map-search");
     box.addEventListener("input", showResults);
     box.addEventListener("keydown", (e) => {
@@ -623,6 +668,7 @@
 
   function focusEntry(e) {
     if (!e) return;
+    if (e.frSmall && !e.layers.length) return setFrSmall(true).then(() => e.layers.length && focusEntry(e));
     const id = e.row && e.row["District ID"];
     if (id && window.SiteLinks) window.SiteLinks.place(id);
     hideResults();
@@ -681,7 +727,9 @@
     },
     restyle: () => { if (map) restyle(); },
     // Zooms to and outlines a district by its District ID (used by the site-wide search).
-    focus: (id) => loading && loading.then(() => { map.invalidateSize(); focusEntry(byId.get(id) || [...byId.values()].find((g) => g.row && g.row["District ID"] === id)); }),
+    focus: (id) => loading && loading.then(() => (!byId.has(id) && /^FRA-/.test(id) ? setFrSmall(true) : null)).then(() => {
+      map.invalidateSize(); focusEntry(byId.get(id) || [...byId.values()].find((g) => g.row && g.row["District ID"] === id));
+    }),
     show(ds, datasets) {
       current = ds;
       if (!loading) {

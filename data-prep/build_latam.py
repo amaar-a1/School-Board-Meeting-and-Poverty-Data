@@ -716,7 +716,7 @@ def france():
     for c, n in om_names.items():
         ins["communes"].setdefault(c, {"name": n, "pop": None})
     dep_of = lambda c: c[:3] if c.startswith("97") else c[:2]
-    rows, feats = [], []
+    rows, feats, small_feats = [], [], []
     for code, x in sorted(ins["communes"].items()):
         if dep_of(code) not in deps: continue
         dp = dep_of(code); dx = ins["departements"].get(dp, {})
@@ -740,8 +740,21 @@ def france():
                      "Public school enrollment": pu.get("public", ""), "School system": "Commune (school buildings); Ministry of Education (teachers)",
                      # Mayotte has no commune populations here: its overall density (256,518 people in 2017 on 374 km², about 690 per km²)
                      "Locale": loc(dens) if dens else "Suburban" if dp == "976" else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
-        if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": x["name"]}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+        if f: (small_feats if small else feats).append({"type": "Feature", "properties": {"id": did, "NAME": x["name"]}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    # The map draws the small communes only when asked ("Smaller French communes", data/map/france-small.json);
+    # otherwise each département's small communes are one map-only area, with the département's rate.
+    merged = json.load(open(os.path.join(d, "fr_communes_map_merged.geojson"), encoding="utf-8"))["features"]
+    for f in merged:
+        k = f["properties"]["grp"]
+        if not k.startswith("REST-") or k[5:] not in deps or not f.get("geometry"): continue
+        dp = k[5:]; dx = ins["departements"].get(dp, {})
+        sm = [c for c, x in ins["communes"].items() if dep_of(c) == dp and "PR_MD60" not in x]
+        feats.append({"type": "Feature", "properties": {"id": f"FRA-REST-{dp}", "NAME": f"Smaller communes of {deps[dp]}", "pseudo": True, "dep": deps[dp],
+                      "pct": dx.get("PR_MD60"), "child": dx.get("child"), "communes": len(sm), "pop": sum(ins["communes"][c].get("pop") or 0 for c in sm)},
+                      "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
     write("FRA", "france", rows, feats)
+    json.dump({"type": "FeatureCollection", "features": small_feats}, open(os.path.join(DOCS, "map", "france-small.json"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
+    print("  small communes on their own map layer:", len(small_feats))
 
 
 EC_PROV_CAPS = {}
