@@ -1,0 +1,19 @@
+== France: orphaned pieces -> current commune
+492 of 492 placed; not placed: []
+
+== OpenStreetMap: missing municipalities
+MX-17034 Coatetelco: ERR HTTP Error 406: Not Acceptable
+MX-07125 Honduras de la Sierra: ERR HTTP Error 406: Not Acceptable
+MX-17036 Hueyapan: ERR <urlopen error [Errno 101] Network is unreachable>
+MX-02006 San Quintín: ERR <urlopen error [Errno 101] Network is unreachable>
+MX-04012 Seybaplaya: ERR <urlopen error [Errno 101] Network is unreachable>
+MX-17035 Xoxocotla: ERR <urlopen error [Errno 101] Network is unreachable>
+ES-41904 El Palmar de Troya: ERR HTTP Error 406: Not Acceptable
+ES-18077 Fornes: ERR HTTP Error 406: Not Acceptable
+ES-14901 Fuente Carreteros: ERR HTTP Error 406: Not Acceptable
+ES-14902 La Guijarrosa: ERR <urlopen error [Errno 101] Network is unreachable>
+ES-21902 La Zarza-Perrunal: ERR <urlopen error [Errno 101] Network is unreachable>
+ES-11903 San Martín del Tesorillo: ERR <urlopen error [Errno 101] Network is unreachable>
+ES-18916 Torrenueva Costa: ERR <urlopen error [Errno 101] Network is unreachable>
+ES-48916 Usansolo: ERR <urlopen error [Errno 101] Network is unreachable>
+
