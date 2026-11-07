@@ -242,6 +242,28 @@ window.STATE_RULES = {
     ],
     note: "Check the current law and the council's internal rules (reglamento interno del concejo) before relying on this."
   },
+  france: {
+    title: "Rules for town council (conseil municipal) meetings",
+    checked: "November 7, 2026",
+    laws: [
+      { state: "France", covers: "Town councils (conseils municipaux)", threshold: "",
+        rule: "Council meetings are public under the General Code of Local Authorities (Code général des collectivités territoriales, art. L2121-18), and may be broadcast by audiovisual means; the council can vote to sit in private (huis clos). Minutes and decisions must be published." },
+      { state: "France", covers: "Nursery and primary schools", threshold: "",
+        rule: "Communes own, build and maintain their écoles and employ their non-teaching staff (Code de l'éducation, art. L212-4 and following); the Ministry of Education employs the teachers. Each school has a school council (conseil d'école), which isn't public. Collèges are run by the départements and lycées by the regions." }
+    ],
+    note: "Check the current code and the council's own rules (règlement intérieur) before relying on this."
+  },
+  ecuador: {
+    title: "Rules for cantonal council (concejo municipal) meetings",
+    checked: "November 7, 2026",
+    laws: [
+      { state: "Ecuador", covers: "Cantonal councils (concejos municipales of the GADs)", threshold: "",
+        rule: "Council sessions are public under the Organic Code of Territorial Organization (COOTAD, art. 318), with ordinary sessions at least weekly, and citizens may take part through the 'silla vacía'; the Transparency Law (LOTAIP) requires councils' acts to be published. No national law requires sessions to be streamed." },
+      { state: "Ecuador", covers: "Public schools", threshold: "",
+        rule: "Public schools are run by the Ministry of Education through its zones and districts under the Organic Law of Intercultural Education (LOEI); cantons have no school board. Each school has a school government (gobierno escolar)." }
+    ],
+    note: "Check the current law and the council's own rules before relying on this."
+  },
   mexico: {
     title: "Rules for town council (cabildo) meetings",
     checked: "November 6, 2026",

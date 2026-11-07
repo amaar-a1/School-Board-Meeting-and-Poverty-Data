@@ -33,6 +33,9 @@ DOCS = os.path.join(HERE, "..", "docs", "data")
 norm = lambda s: re.sub(r"[^a-z]", "", unicodedata.normalize("NFKD", str(s)).encode("ascii", "ignore").decode().lower())
 ALIAS = {"CL": {"paiguano": "paihuano", "marchigue": "marchihue", "aisen": "aysen", "coihaique": "coyhaique", "llayllay": "llaillay", "padrelascasas": "padrelascasas",
                 "ohiggins": "ohiggins", "trehuaco": "treguaco", "lascabras": "lascabras", "cabodehornos": "cabodehornos"},
+         # Ecuador: the borders file's abbreviations and older names
+         "EC": {"crnelmarcelinomariduena": "coronelmarcelinomariduena", "gnralantonioelizalde": "generalantonioelizaldebucay",
+                "pablosexto": "pablovi", "salitre": "urbinajado"},
          # Colombia: the borders file's longer names for four municipalities
          "CO": {"distritoespecialindustrialyportuariodebarr": "barranquilla", "ricaurtecoloso": "coloso",
                 "santanderararacuara": "puertosantander", "providenciasantaisabel": "providencia",
@@ -78,7 +81,7 @@ def centroid(geom):
 
 
 _CACHE = {}
-DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain"}
+DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador"}
 # Brazil: municipal chambers (câmara municipal) and their education committees, in Portuguese.
 RULES = {"BR": (re.compile(r"comiss[ãa]o (permanente )?de educa[çc][ãa]o|educa[çc][ãa]o.*comiss[ãa]o", re.I),
                 re.compile(r"sess[ãa]o|c[âa]mara", re.I),
@@ -117,9 +120,26 @@ RULES["ES"] = (re.compile(r"^(?!.*(sant jordi|homenat|reglament|agenda urbana|di
                re.compile(NOT_T.pattern + r"|escolar|jove|joven|xiquet|mayores|majors|consell|consejo|resum|avance|previa|"
                           r"teaser|prueba|declaraci|\ben pleno\b|\ba pleno\b|pleno empleo|jornada|concierto|concert|pregón|preg[oó]", re.I))
 
+# France: the town council (conseil municipal) and its committee covering schools (commission des affaires
+# scolaires / éducation / enfance). Children's and youth councils (conseil municipal des enfants / des jeunes),
+# New Year greetings (vœux) and ceremonies aren't council meetings.
+FR_NOT = re.compile(r"jeunes|enfants|\bcmj\b|\bcme\b|junior|interview|reportage|v[œo]eux|c[ée]r[ée]monie|inauguration|comm[ée]moration|bande.annonce|teaser|"
+                    r"extrait|r[ée]sum[ée]|portrait|f[êe]te|concert|clip|spot|campagne|[ée]lection|candidat|replay des|d[ée]bat d.orientation citoyen", re.I)
+RULES["FRA"] = (re.compile(r"^(?!.*(conseil municipal des|conseil d.[ée]cole)).*commission\b[^|]{0,60}(scolaire|[ée]ducation|enfance)", re.I),
+                re.compile(r"conseil municipal|conseil communautaire|s[ée]ance", re.I),
+                re.compile(r"^(?!.*(commission|communautaire|conseil des? (jeunes|enfants|sages|quartier))).*(conseil municipal|s[ée]ance (publique |ordinaire |extraordinaire )?du conseil)", re.I),
+                FR_NOT)
+# Ecuador: the cantonal council (concejo municipal / cantonal) of the GAD and its education committee; ceremonial
+# and commemorative sessions (sesión solemne, conmemorativa) aren't counted.
+RULES["EC"] = (re.compile(r"comisi[óo]n (permanente )?(de |del )?((cultura|deporte)s? y )?educaci[óo]n|educaci[óo]n.*comisi[óo]n", re.I),
+               re.compile(r"sesi[óo]n", re.I),
+               re.compile(r"^(?!.*(solemne|conmemorativa|comisi[óo]n)).*(sesi[óo]n (ordinaria|extraordinaria|de concejo|del concejo|del (i\. |ilustre )?concejo)|"
+                          r"(ordinaria|extraordinaria) (de|del) concejo|concejo (municipal|cantonal)[^|]{0,30}sesi[óo]n)", re.I),
+               re.compile(NOT_T.pattern + r"|solemne|conmemorativa|parroquial|provincial|junta|consejo cantonal de protecci", re.I))
+
 # Spain: a committee covering education counts only when at least this many of its sessions are posted; otherwise the
 # council's plenaries do (one stray committee clip shouldn't replace 160 plenaries).
-MIN_EDU = {"ES": 3}
+MIN_EDU = {"ES": 3, "FRA": 3, "EC": 3}
 
 
 def session_key(cc, t):
@@ -271,7 +291,8 @@ def write(cc, key, rows, feats):
     cols = ["District", "Region", "Locale", "Available Board Meetings", "Meetings type", "Meetings source", "Latest meeting", "Meetings by year",
             "Population", "Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
-    extra = [c for c in ("Province", "Autonomous community", "Children under 18 (estimated)", "Poverty year", "Poverty range", "Poverty rate (region, all ages)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households") if any(r.get(c) not in (None, "") for r in rows)]
+    extra = [c for c in ("Province", "Autonomous community", "Children under 18 (estimated)", "Poverty year", "Poverty range", "Poverty rate (region, all ages)",
+                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households") if any(r.get(c) not in (None, "") for r in rows)]
     pov = "Percentage of Children in Low Income" if any(r.get("Percentage of Children in Low Income") for r in rows) else "Poverty rate (all ages)"
     cols = [c for c in cols if c not in ("Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)") or any(r.get(c) not in (None, "") for r in rows)]
     cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
@@ -651,6 +672,93 @@ def spain():
         feats.append({"type": "Feature", "properties": {"id": f"ES-SHARED-{i}", "NAME": f"Shared land (no municipality): {f['properties']['shapeName']}"},
                       "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
     write("ES", "spain", rows, feats)
+
+
+
+def france():
+    """The communes INSEE publishes a poverty rate for (Filosofi 2023: those with enough tax households, about
+    2,000+ people), in mainland France, Corsica and Réunion. Communes own and run the buildings of nursery and
+    primary schools; the national education ministry employs the teachers. The town council (conseil municipal)
+    stands in for meetings. Each département's smaller communes are drawn together on the map (map only), with
+    the département's rate."""
+    d = os.path.join(IN, "france")
+    ins = json.load(open(os.path.join(d, "fr_insee_2023.json"), encoding="utf-8"))
+    pupils = json.load(open(os.path.join(d, "fr_ecoles_eleves_2025.json"), encoding="utf-8"))["by_commune"]
+    geo = {f["properties"]["grp"]: f for f in json.load(open(os.path.join(d, "fr_communes_map_2023.geojson"), encoding="utf-8"))["features"] if f.get("geometry")}
+    deps = {f["properties"]["code"]: f["properties"]["nom"] for f in json.load(open(os.path.join(d, "fr_departements.geojson"), encoding="utf-8"))["features"]}
+    deps["974"] = "La Réunion"
+    dep_of = lambda c: c[:3] if c.startswith("97") else c[:2]
+    rows, feats = [], []
+    for code, x in sorted(ins["communes"].items()):
+        if "PR_MD60" not in x or dep_of(code) not in deps: continue
+        dp = dep_of(code); dx = ins["departements"].get(dp, {})
+        f = geo.get(code); area = area_km2(f["geometry"]) if f else 0
+        dens = x["pop"] / area if area and x.get("pop") else 0
+        pu = pupils.get(code, {})
+        did = f"FRA-{code}"
+        rows.append({"District": x["name"], "Region": deps[dp], "Population": x.get("pop") or "",
+                     "Poverty rate (all ages)": f"{x['PR_MD60']:.1f}%",
+                     "Child poverty rate (département)": f"{dx['child']:.1f}%" if dx.get("child") is not None else "",
+                     "Median standard of living (€ per year)": round(x["MED_SL"]) if x.get("MED_SL") else "",
+                     "Poverty note": "People below 60% of the national median standard of living, all ages, 2023 (INSEE, Filosofi); INSEE publishes no child rate by commune, so the département's rate for under-18s is given too",
+                     "Enrollment": pu.get("total", ""), "Enrollment year": "2025-26 (nursery and primary schools)" if pu else "",
+                     "Public school enrollment": pu.get("public", ""), "School system": "Commune (school buildings); Ministry of Education (teachers)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
+        if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": x["name"]}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    # Map only: each département's communes without a published rate, together.
+    for k, f in sorted(geo.items()):
+        if not k.startswith("REST-") or k[5:] not in deps: continue
+        dp = k[5:]; dx = ins["departements"].get(dp, {})
+        small = [c for c, x in ins["communes"].items() if dep_of(c) == dp and "PR_MD60" not in x]
+        feats.append({"type": "Feature", "properties": {"id": f"FRA-REST-{dp}", "NAME": f"Smaller communes of {deps[dp]}", "pseudo": True, "dep": deps[dp],
+                      "pct": dx.get("PR_MD60"), "child": dx.get("child"), "communes": len(small), "pop": sum(ins["communes"][c].get("pop") or 0 for c in small)},
+                      "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    write("FRA", "france", rows, feats)
+
+
+EC_PROV_CAPS = {}
+
+
+def ecuador():
+    """221 cantons. Schools are run by the national Ministry of Education through its zones and districts; the
+    cantonal council (concejo municipal of the GAD) stands in for meetings. Poverty: INEC and the World Bank's
+    small-area estimate of consumption poverty (2010 census with the 2013-14 living conditions survey), all ages;
+    also INEC's unmet basic needs (NBI) rate from the 2010 census."""
+    d = os.path.join(IN, "ecuador")
+    pv = json.load(open(os.path.join(d, "ec_poverty_cantons.json"), encoding="utf-8"))
+    prov = {c: re.sub(r"\s+", " ", n).strip() for c, n in pv["provinces"].items()}
+    pupils_f = os.path.join(d, "ec_pupils_by_canton.json")
+    pup = json.load(open(pupils_f, encoding="utf-8")) if os.path.exists(pupils_f) else {"by_canton": {}, "year": ""}
+    adm1 = json.load(open(os.path.join(d, "gb_ECU_ADM1.geojson"), encoding="utf-8"))["features"]
+    pn = {norm(n): c for c, n in prov.items()}
+    st = {id(f): pn.get(norm(f["properties"]["shapeName"])) for f in adm1}
+    adm2 = [f for f in json.load(open(os.path.join(d, "gb_ECU_ADM2.geojson"), encoding="utf-8"))["features"] if f.get("geometry")]
+    geo = adm_match("EC", [{"name": x["name"], "state": c[:2], "id": c} for c, x in pv["cantons"].items()], adm2, adm1, st)
+    rows, feats = [], []
+    for code, x in sorted(pv["cantons"].items()):
+        f = geo.get(code); area = area_km2(f["geometry"]) if f else 0
+        people = x.get("pop2010") or 0
+        dens = people / area if area and people else 0
+        p = pup["by_canton"].get(code, {})
+        did = f"EC-{code}"
+        est = "pov" in x and not (x["pov"] == 0 and x.get("pov_se") == 0)   # Galápagos: outside the survey, shown as 0
+        rows.append({"District": x["name"], "Region": prov.get(code[:2], ""), "Population": people or "",
+                     "Poverty rate (all ages)": f"{x['pov']:.2f}%" if est else "",
+                     "Poverty standard error": f"{x['pov_se']:.2f}" if est else "",
+                     "Unmet basic needs (NBI, 2010)": f"{x['nbi2010']:.1f}%" if "nbi2010" in x else "",
+                     "Poverty note": "Share of people below the consumption poverty line, all ages (INEC and World Bank poverty map: 2010 census with the 2013-14 living conditions survey); population from the 2010 census" if est else
+                         "No consumption poverty estimate: the Galápagos were outside the 2013-14 living conditions survey; INEC's unmet basic needs (NBI) rate is given",
+                     "Enrollment": round(p["total"]) if p.get("total") else "", "Enrollment year": pup.get("year", "") if p else "",
+                     "Public school enrollment": round(p["fiscal"]) if p.get("fiscal") else "",
+                     "School system": "Ministry of Education (zone and district)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
+        if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": x["name"]}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    # Map only: the zones whose canton is disputed (zonas no delimitadas), part of no canton.
+    used = {id(f) for f in geo.values() if f}
+    for i, f in enumerate(f for f in adm2 if id(f) not in used):
+        feats.append({"type": "Feature", "properties": {"id": f"EC-SHARED-{i}", "NAME": f"Zone with no canton: {f['properties']['shapeName']}"},
+                      "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    write("EC", "ecuador", rows, feats)
 
 
 if __name__ == "__main__":
