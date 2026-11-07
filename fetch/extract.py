@@ -1,31 +1,23 @@
-# Temporary: French primary-school pupils by school with the school's INSEE commune code (the pupils file's
-# "code_commune_insee" is the postal code), from the school directory (annuaire de l'éducation).
-import os, time, traceback, urllib.parse, urllib.request
-OUT = "fetch/out/fr_ec4"; os.makedirs(OUT, exist_ok=True)
+# Temporary: two PDFs the user pointed to, as text: INSEE's poverty in the overseas departments (RPM 2024, F21)
+# and INEC's NBI methodology book (Ecuador).
+import os, subprocess, time, traceback, urllib.request
+OUT = "fetch/out/pdfs1"; os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
 log = open(f"{OUT}/log.txt", "w")
-def get(u, t=900):
-    err = None
-    for a in range(3):
-        try:
-            with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=t) as r: return r.read()
-        except urllib.error.HTTPError as e:
-            err = Exception(f"HTTP {e.code}: {e.read()[:400]!r}"); time.sleep(5)
-        except Exception as e:
-            err = e; time.sleep(10)
-    raise err
-def step(name, f):
-    try: log.write(f"== {name}\n{f()}\n\n")
-    except Exception: log.write(f"== {name}\nERR {traceback.format_exc()[-900:]}\n\n")
-    log.flush()
-def save(name, u):
-    b = get(u); open(f"{OUT}/{name}", "wb").write(b); return f"{len(b)} bytes; head {b[:400]!r}"
-api = "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/"
-step("Pupils by school (with school id)", lambda: save("fr_ecoles_2025_uai.csv", api + "fr-en-ecoles-effectifs-nb_classes/exports/csv?" + urllib.parse.urlencode(
-    {"select": "numero_ecole,secteur,nombre_total_eleves", "where": "rentree_scolaire = date'2025'", "delimiter": ";"})))
-step("School directory: id -> INSEE commune", lambda: save("fr_annuaire_uai_commune.csv", api + "fr-en-annuaire-education/exports/csv?" + urllib.parse.urlencode(
-    {"select": "identifiant_de_l_etablissement,code_commune,nom_commune", "delimiter": ";"})))
+subprocess.run(["sudo", "apt-get", "install", "-y", "-qq", "poppler-utils"], capture_output=True)
+for name, u in (("insee_rpm2024_f21", "https://www.insee.fr/fr/statistiques/fichier/7941411/RPM2024-F21.pdf"),
+                ("inec_nbi_libro", "https://www.ecuadorencifras.gob.ec/documentos/web-inec/Bibliotecas/Libros/NBI_VersionLibroMetodologico.pdf")):
+    try:
+        b = None
+        for a in range(3):
+            try:
+                with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=300) as r: b = r.read(); break
+            except Exception as e:
+                log.write(f"{name} try {a}: {e}\n"); time.sleep(15)
+        open(f"/tmp/{name}.pdf", "wb").write(b)
+        r = subprocess.run(["pdftotext", "-layout", f"/tmp/{name}.pdf", f"{OUT}/{name}.txt"], capture_output=True, text=True)
+        t = open(f"{OUT}/{name}.txt", encoding="utf-8", errors="replace").read()
+        log.write(f"{name}: {len(b)} bytes pdf, {len(t)} chars text, rc {r.returncode} {r.stderr[:200]}\n")
+    except Exception:
+        log.write(f"{name}: ERR {traceback.format_exc()[-600:]}\n")
 log.close()
-
-# --- Ecuador ---
-exec(compile(open('fetch/ec_amie.py').read(), 'ec_amie', 'exec'), {'__name__': 'ec'})
