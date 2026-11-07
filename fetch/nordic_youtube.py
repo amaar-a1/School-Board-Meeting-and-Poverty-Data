@@ -48,6 +48,8 @@ C = {
     # France: town councils (conseil municipal); Ecuador: cantonal councils (concejo municipal of the GAD).
     "FR": dict(file="france", q="conseil municipal {} {region}", chan=r"ville|mairie|commune|municipal|conseil|agglo|m[ée]tropole|cit[ée]",
                edu=r"[ée]ducation|scolaire|[ée]cole|enfance|jeunesse", meet=r"conseil municipal|s[ée]ance|commission|conseil"),
+    "FR2": dict(file="france2", q="conseil municipal {} {region}", chan=r"ville|mairie|commune|municipal|conseil|agglo|m[ée]tropole|cit[ée]",
+                edu=r"[ée]ducation|scolaire|[ée]cole|enfance|jeunesse", meet=r"conseil municipal|s[ée]ance|commission|conseil"),
     "EC": dict(file="ecuador", q="sesión de concejo municipal {} {region}", chan=r"municipio|municipal|gad|alcald|concejo|gobierno|cant[óo]n",
                edu=r"educaci[óo]n|escuela|colegio", meet=r"sesi[óo]n|concejo|comisi[óo]n"),
     "NL": dict(file="netherlands", q="gemeente {} raadsvergadering", chan=r"gemeente|gemeenteraad|raad|griffie",
