@@ -1,0 +1,126 @@
+1.21 Niveau de vie et pauvreté par région
+
+
+Au niveau régional, les statistiques sur la                        niveaux de vie sont plus faibles qu’au niveau
+pauvreté et les niveaux de vie sont calculées                      national à la fois parmi les plus pauvres et parmi
+à partir du dispositif Filosofi pour disposer de                   les plus aisés. Avec un rapport interdécile de 2,8,
+données suffisamment précises. Cette source                        les Pays de la Loire et la Bretagne sont les régions
+diffère de la source ERFS qui fait référence pour                  les moins inégalitaires. Pour les autres régions
+le calcul des statistiques nationales   sources.                   métropolitaines, le rapport interdécile est
+                                                                   compris entre 3,0 et 3,4, soit relativement proche
+En 2021, le niveau de vie médian annuel est
+                                                                   de la moyenne nationale (3,4).
+le plus élevé dans les régions Île‑de‑France,
+25 210 euros, et Auvergne‑Rhône‑Alpes,                             Le taux de pauvreté est variable d’une
+23 800 euros   figure 1. À l’opposé, les                           région à l’autre. Les régions d’outre‑mer sont
+niveaux de vie médians sont les plus faibles                       particulièrement touchées par la pauvreté.
+en Outre‑mer et, dans une moindre mesure,                          En France métropolitaine, la pauvreté est
+dans les Hauts‑de‑France et en Occitanie avec,                     la plus marquée en Corse (18,1 %), dans les
+respectivement 21 420 euros et 22 010 euros.                       Hauts‑de‑France (18,0 %), en Occitanie (17,5 %),
+Ces écarts renvoient en partie au profil des                       en Provence‑Alpes‑Côte d’Azur (17,4 %) et en
+populations selon l’activité, la catégorie                         Île‑de‑France (16,1 %). Dans les Pays de la Loire et
+socioprofessionnelle, le niveau de diplôme                         en Bretagne, la part des personnes en situation
+ou l’âge : par exemple, en Martinique, il y a en                   de pauvreté est la plus basse (respectivement
+proportion moins d’actifs en emploi, et parmi                      11,0 % et 11,1 %) ; dans ces deux régions,
+eux plus d’ouvriers et moins de cadres qu’en                       l’intensité de la pauvreté est aussi la plus
+Île‑de‑France.                                                     faible (respectivement 18,5 % et 18,8 %, contre
+                                                                   20,9 % au niveau national).
+Au sein des régions, les inégalités de niveaux
+de vie sont les plus fortes en Outre‑mer, en                       Les disparités départementales peuvent être
+Île‑de‑France et, dans une moindre mesure                          fortes au sein d’une région. En Île‑de‑France, les
+en Corse et en Provence‑Alpes‑Côte d’Azur. En                      Hauts‑de‑Seine et Paris sont les départements
+Île‑de‑France, le rapport interdécile D9/D1 est de                 avec les niveaux de vie médians les plus hauts,
+4,4 ; les 10 % les plus aisés disposent d’un niveau                alors qu’en Seine‑Saint‑Denis, le niveau de vie
+de vie particulièrement élevé, supérieur ou égal                   médian (19 020 euros) est le plus bas de France
+à 50 670 euros (9e décile), contre 41 180 euros                    métropolitaine et le taux de pauvreté est le plus
+au niveau national (hors Guadeloupe, Guyane                        élevé (28,4 %)   figure 2. Dans les Pays de la
+et Mayotte). En Provence‑Alpes‑Côte d’Azur,                        Loire, les disparités départementales sont fortes
+les inégalités tiennent davantage aux faibles                      également : le niveau de vie médian et le 9e décile
+niveaux de vie des personnes les plus modestes.                    de la Loire‑Atlantique sont nettement supérieurs
+En Corse et dans les régions d’outre‑mer, les                      à ceux des autres départements de la région.
+
+
+
+
+      Sources
+  Filosofi, ERFS : voir annexe Sources et méthodes.
+
+
+
+
+      Définitions
+  Le taux de pauvreté correspond au pourcentage de la
+  population dont le niveau de vie est inférieur à 60 % du               Pour en savoir plus
+  niveau de vie médian de France métropolitaine, même                 • « Principaux résultats sur les revenus et la pauvreté
+  si le dispositif Filosofi couvre aussi La Réunion et la               des ménages en 2021 », Insee Résultats, janvier 2024.
+  Martinique.                                                         • « Structure et distribution des revenus, inégalités des
+  Niveau de vie, médiane, rapport interdécile D9/D1,                    niveaux de vie en 2020 », Chiffres détaillés, Insee,
+  décile, intensité de la pauvreté : voir Glossaire.                    janvier 2023.
+
+
+
+
+118                                                          Revenus et patrimoine des ménages – Insee Références – Édition 2024
+      1. Niveau de vie et pauvreté par région en 2021
+
+                                                        Niveau de vie annuel (en euros)         Rapport      Taux de     Intensité de
+                        Région                                                                interdécile   pauvreté1    la pauvreté
+                                                        1er décile    Médian      9e décile
+                                                                                                 D9/D1        (en %)        (en %)
+                                                           (D1)                     (D9)
+Île‑de‑France                                            11 480       25 210      50 670         4,4          16,1           23,7
+Auvergne‑Rhône‑Alpes                                     12 620       23 800      42 670         3,4          13,3           20,2
+Bretagne                                                 13 460       23 240      38 010         2,8          11,1           18,8
+Pays de la Loire                                         13 490       23 050      37 410         2,8          11,0           18,5
+Grand Est                                                12 050       22 960      40 350         3,3          15,1           20,8
+Provence‑Alpes‑Côte d’Azur                               11 300       22 820      41 140         3,6          17,4           22,0
+Centre‑Val de Loire                                      12 600       22 780      37 510         3,0          13,5           19,7
+Bourgogne‑Franche‑Comté                                  12 660       22 750      38 500         3,0          13,4           19,1
+Nouvelle‑Aquitaine                                       12 500       22 710      38 310         3,1          13,8           19,9
+Normandie                                                12 570       22 480      37 170         3,0          13,7           19,3
+Corse                                                    11 180       22 390      40 320         3,6          18,1           21,2
+Occitanie                                                11 410       22 010      38 180         3,3          17,5           21,0
+Hauts‑de‑France                                          11 490       21 420      36 680         3,2          18,0           19,5
+Martinique                                                9 360       19 770      39 070         4,2          26,8           24,1
+La Réunion                                                8 820       17 070      37 890         4,3          36,1           24,0
+France métropolitaine, Martinique et La Réunion          11 960       23 000      41 180         3,4          15,3           20,9
+Guadeloupe                                                7 200       15 720      35 280         4,9          34,5           24,8
+Guyane                                                    4 320       11 040      33 720         7,8          52,9           40,4
+Mayotte                                                       0        3 120      21 240          ns          77,3           87,3
+ns : non significatif.
+1 Les personnes pauvres sont celles dont le niveau de vie est inférieur à 60 % du niveau de vie médian de la France métropolitaine.
+Note : Les données de la Guadeloupe, de la Guyane et de Mayotte sont issues de l’enquête Budget de famille de 2017 et ne sont
+donc pas à comparer aux autres régions.
+Lecture : En 2021, le niveau de vie médian est de 25 210 euros en Île‑de‑France.
+Champ : France, personnes appartenant à des ménages fiscaux vivant dans un logement ordinaire dont le revenu disponible est
+positif ou nul.
+Sources : Insee‑DGFiP‑Cnaf‑Cnav‑CCMSA, fichier localisé social et fiscal (Filosofi) 2021 ; Insee, enquête Budget de famille 2017 (pour
+la Guadeloupe, la Guyane et Mayotte).
+
+
+      2. Taux de pauvreté par département en 2021
+ en %
+
+9,1    13,0   17,0   25,0   77,3
+
+
+
+
+                                                                                                                                     © IGN-Insee-Dares 2024
+
+
+
+
+Notes : Les personnes pauvres sont celles dont le niveau de vie est inférieur à 60 % du niveau de vie médian de la France
+métropolitaine. Les données de la Guadeloupe, de la Guyane et de Mayotte sont issues de l’enquête Budget de famille de 2017 et
+ne sont donc pas à comparer aux autres régions.
+Lecture : En 2021, le taux de pauvreté est de 28,4 % en Seine‑Saint‑Denis.
+Champ : France, personnes appartenant à des ménages fiscaux vivant dans un logement ordinaire dont le revenu disponible est
+positif ou nul.
+Sources : Insee‑DGFiP‑Cnaf‑Cnav‑CCMSA, fichier localisé social et fiscal (Filosofi) 2021 ; Insee, enquête Budget de famille 2017 (pour
+la Guadeloupe, la Guyane et Mayotte).
+
+
+
+Insee Références – Édition 2024 – Fiche 1.21 – Niveau de vie et pauvreté par région                                                 119
+

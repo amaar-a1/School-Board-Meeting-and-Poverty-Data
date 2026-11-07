@@ -1,0 +1,916 @@
+                            LIBRO
+                    METODOLÓGICO
+
+
+
+
+¿Cómo se mide la pobreza en
+Ecuador a partir de los censos?
+
+El método NBI explicado
+
+
+
+
+                               1
+¿Cómo se mide la pobreza en Ecuador a partir de los censos?
+El método NBI explicado.
+
+
+
+
+Créditos Institucionales
+
+
+
+Eva María Mera Intriago
+Directora Ejecutiva
+
+Marianita Granda
+Subdirectora General
+
+Andrea Molina
+Coordinadora General Técnica de Innovación en Métricas y Análisis de la
+Información
+
+Galo Egas
+Director de Innovación en Métricas y Metodologías
+
+
+
+
+Elaboración
+Verónica Coronel
+Lorena Parreño
+Galo Egas
+
+
+
+
+Citar como: INEC (2025). ¿Cómo medimos la pobreza a partir de los censos?
+El método NBI explicado.
+
+
+
+Propiedad Intelectual: © INEC –Instituto Nacional de Estadística y Censos. Juan Larrea
+N15-36 y José Riofrío.CódigoPostal:170402/Quito–Ecuador.Teléfono:(593-2)2232303–
+2232012-2232151
+
+
+
+
+                                                                                    2
+Contenido
+
+1.      Antecedentes......................................................................................................... 5
+2.      Fundamentos conceptuales: la pobreza y su medición .............................. 6
+3.      El método de Necesidades Básicas Insatisfechas ......................................... 8
+     Identificación de la población en situación de pobreza ................................. 8
+     Necesidades básicas que integran el Indicador ................................................ 9
+     Definición conceptual de dimensiones, indicadores y umbrales ............... 10
+        Dependencia económica del hogar..................................................................... 10
+        Niños en edad escolar .......................................................................................... 11
+        Características físicas de la vivienda................................................................... 12
+        Disponibilidad de servicios básicos ..................................................................... 13
+        Estado del hacinamiento del hogar .................................................................... 14
+     Criterios de agregación ........................................................................................ 14
+4.      Principales resultados ....................................................................................... 15
+5.      Referencias........................................................................................................... 21
+6.      Anexos .................................................................................................................. 22
+
+
+
+
+                                                                                                                                  3
+Introducción
+
+El presente documento tiene como objetivo proporcionar una descripción exhaustiva y
+sistemática de la metodología vigente para la medición de la pobreza por Necesidades
+Básicas Insatisfechas (NBI) a partir de los censos de población y vivienda en Ecuador. A
+diferencia de la pobreza monetaria, que restringe el análisis a la capacidad de consumo,
+el enfoque multidimensional de la NBI incorpora dimensiones fundamentales para la
+calidad de vida. Su aplicación directa con información censal, sin depender de variables
+monetarias de vivienda, permite obtener estimaciones de alta desagregación geográfica,
+lo que convierte al indicador en un insumo primordial para la planificación y el diseño de
+políticas públicas, especialmente en el contexto del Modelo de Equidad Territorial (MET)
+que orienta la asignación de recursos del gobierno central.
+
+El enfoque de NBI fue desarrollado conceptual y metodológicamente por la Comisión
+Económica para América Latina y el Caribe (CEPAL) a finales de los años ochenta (CEPAL,
+1988) y representó la primera aproximación estructurada para evaluar las condiciones de
+vida mediante indicadores no monetarios en la región. En Ecuador, el Instituto Nacional
+de Estadística y Censos (INEC) adaptó progresivamente esta metodología: primero, para
+su aplicación en la Encuesta de Condiciones de Vida (ECV) durante la década de 1990;
+posteriormente, para su incorporación en la Encuesta Nacional de Empleo, Desempleo y
+Subempleo (ENEMDU) y en los Censos de Población y Vivienda a partir de la década del
+2010.
+
+Hasta la fecha, la disponibilidad de información metodológica se ha limitado
+principalmente a fichas técnicas que sintetizan conceptos, procedimientos de cálculo y
+sintaxis, sin ofrecer una exposición integral de los fundamentos conceptuales ni de la
+lógica metodológica que sustentaron la adaptación nacional del esquema original de la
+CEPAL. Esta publicación busca subsanar esa brecha, documentando de manera
+estructurada las bases conceptuales y operativas que sustentan la medición censal de la
+pobreza por NBI en el país. Con ello, se pretende garantizar la replicabilidad del proceso
+en futuros ejercicios censales, trascendiendo la dependencia de resúmenes operativos,
+así como identificar aprendizajes metodológicos y operativos que fortalezcan la
+capacidad institucional para el análisis de datos censales y su aplicación en la
+planificación de políticas.
+
+El documento se organiza en cuatro secciones. La primera presenta los antecedentes
+históricos y técnicos de la aplicación y adaptación del método en Ecuador. La segunda
+desarrolla una revisión conceptual sobre la pobreza y su medición desde enfoques
+multidimensionales. La tercera analiza en detalle los componentes del indicador, sus
+definiciones operativas y criterios de clasificación. Finalmente, la cuarta sección expone
+los principales resultados nacionales del indicador, con énfasis en la identificación de
+patrones de privación estructural.
+
+
+
+
+                                                                                        4
+   1. Antecedentes
+
+El método de Necesidades Básicas Insatisfechas (NBI) se formuló como una estrategia
+para medir pobreza desde la perspectiva de las privaciones estructurales,
+complementando los enfoques tradicionales basados en el ingreso. Su diseño se sustenta
+en la identificación de carencias observables en los hogares, particularmente en vivienda,
+servicios básicos, educación y saneamiento, que permiten clasificar situaciones
+deficitarias que comprometen estándares mínimos de bienestar. Este enfoque se basa en
+la identificación directa de condiciones materiales, lo que posibilita una lectura más
+consistente con los problemas estructurales del desarrollo.
+
+En Ecuador, la primera estimación del NBI fue realizada por CELADE en 1988 como parte
+de un ejercicio regional de actualización de la situación de pobreza en América Latina
+(CEPAL, 1988). El procedimiento utilizó una sub muestra del IV Censo de Población y III
+de Vivienda de 1982, aplicando un conjunto preliminar de umbrales y criterios de
+clasificación. A pesar de su carácter exploratorio, la metodología permitió generar
+estimaciones nacionales, por área geográfica y provinciales, lo que evidenció un patrón
+generalizado de privaciones, donde el 67,2% de los hogares presentaba al menos una
+necesidad básica insatisfecha, que abarcan el 71,2% de la población. Asimismo, la
+información mostró una fuerte diferenciación geográfica, con niveles considerablemente
+más altos en áreas rurales (90,6%) que en las urbanas (43,4%).
+
+El análisis territorial evidenció que, en la década de 1980, la mayor concentración relativa
+de hogares con NBI se registraba en la Sierra (48,5%), seguida de la Costa (46,9%) y, en
+menor proporción, el resto del país (4,6%). De manera más específica, únicamente las
+provincias de Pichincha (40%) y Galápagos (45%) presentaban incidencias inferiores al
+50%, mientras que ocho provincias se situaban entre el 62% y el 78%, y veintiuna
+provincias alcanzaban niveles entre el 78% y el 94% (CEPAL, 1988).
+
+La metodología desarrollada por CEPAL sirvió posteriormente como insumo para la
+definición de la medición oficial, siguiendo las recomendaciones de la CEPAL y
+consolidándose como la primera medición multidimensional de la pobreza en el país. La
+primera adaptación nacional se realizó utilizando la Encuesta de Condiciones de Vida
+(ECV) de 1995, lo que implicó la armonización de variables y la adecuación de umbrales
+a una fuente basada en encuesta. En esta primera implementación, la incidencia de
+pobreza por NBI fue del 53,6% de la población, con una brecha marcada entre áreas
+rurales (88,8%) y urbanas (29,2%). A diferencia de los patrones observados en los años
+ochenta, la Amazonía registró la mayor incidencia (76,3%), seguida de la Costa (57,1%) y
+la Sierra (46,9%) (INEC, s. f.).
+
+Posteriormente, en enero de 2011, el INEC oficializó la metodología del indicador
+mediante la Comisión Especial Interinstitucional de Estadísticas de la Pobreza,
+conformada por el INEC, la Secretaría Nacional de Planificación y Desarrollo –SENPLADES
+(actual Secretaría Técnica de Planificación) y el entonces Ministerio Coordinador de
+Desarrollo Social. En esta instancia se ratificaron y adaptaron los aspectos centrales de la
+medición: la selección de las variables y categorías, los umbrales de privación, la forma
+de agregación de los componentes, la unidad de análisis, la periodicidad anual del
+
+
+                                                                                          5
+indicador y a la Encuesta Nacional de Empleo, Desempleo y Subempleo (ENEMDU) como
+fuente principal de información. El documento de ficha metodológica incluyó los datos
+correspondientes al período 2008–2010. (INEC, SENPLADES & MCDS, 2011).
+
+Para posibilitar la medición a partir de los censos de población y vivienda, la Comisión
+Interinstitucional de Pobreza homologó la metodología aprobada mediante un acta
+oficial el 9 de diciembre de 2011. Esta homologación consistió en la armonización de
+definiciones, categorías y umbrales de privación aplicables al Censo (INEC, 2011). Gracias
+a este proceso, el indicador pudo ser replicado a partir de la información censal,
+aprovechando la capacidad de los censos para ofrecer datos desagregados a escalas
+territoriales —como cantones y parroquias— y reforzando su utilidad para la
+planificación y el diseño de políticas públicas.
+
+Actualmente, el indicador de NBI se encuentra incorporado en instrumentos normativos
+nacionales. En particular, el artículo 192 del Código Orgánico de Organización Territorial,
+Autonomía y Descentralización (COOTAD) 1 establece al NBI como uno de los criterios
+para la distribución de recursos del Estado hacia los gobiernos autónomos
+descentralizados. La identificación de privaciones en vivienda, servicios y educación
+proporciona un insumo metodológicamente robusto para orientar la asignación de
+recursos hacia los territorios con mayores niveles de déficit estructural.
+
+
+    2. Fundamentos conceptuales: la pobreza y su medición
+
+La medición de pobreza de un país constituye un insumo técnico fundamental para la
+política social, sustentada en la búsqueda de garantía de derechos económicos y sociales
+de la población. El propósito central de una medida de identificación es diagnosticar de
+manera sistemática las carencias o vulnerabilidades que afectan las condiciones mínimas
+para una vida digna. Esta identificación permite transformar principios normativos en
+criterios operativos, estableciendo una línea base objetiva para la asignación de recursos,
+el diseño de intervenciones focalizadas y la evaluación del impacto de las políticas
+públicas.
+
+La construcción de una métrica parte de la definición del constructo. La pobreza, en su
+concepto más amplio, está asociada a condiciones de vida que vulneran la dignidad de
+las personas, limitan sus derechos y libertades fundamentales, impiden la satisfacción de
+sus necesidades básicas e imposibilitan su plena integración social. Comúnmente el
+enfoque se relaciona con el concepto de “bienestar”, entendido como la satisfacción de
+necesidades preconcebidas como ilimitadas en un mundo de recursos limitados (Añazco
+& Jácome Pérez, 2016).
+
+Esta compleja definición requiere ser analizada desde un entendimiento concreto. Estos
+esfuerzos por comprender la pobreza han dado lugar a dos concepciones metodológicas
+
+
+1
+  Los siete criterios de distribución establecidos en el Art. 192 del COOTAD son: tamaño y densidad
+poblacional, necesidades básicas insatisfechas, logros en el mejoramiento de la calidad de vida, capacidad
+fiscal, esfuerzo administrativo y el cumplimiento de las metas del Plan Nacional de Desarrollo y del plan
+de desarrollo del GAD.
+
+                                                                                                        6
+fundamentales: la pobreza como fenómeno “unidimensional” y la pobreza como
+fenómeno “multidimensional”.
+
+La primera concepción, predominante en la economía tradicional, define la pobreza en
+términos de la insuficiencia de recursos económicos para satisfacer necesidades básicas
+de consumo. El método principal para medirla es el enfoque de la línea de pobreza (LP),
+que clasifica a una persona como pobre si su consumo o ingreso familiar per cápita está
+por debajo de un umbral monetario específico, el cual generalmente se calcula en
+función del costo de adquirir una canasta básica de bienes alimentarios y no alimentarios
+esenciales. Esta aproximación se basa en la idea de que los ingresos determinan el nivel
+de bienestar y la capacidad de subsistencia de las personas (Altimir, 1979).
+
+Por otro lado, la concepción multidimensional entiende la pobreza como un fenómeno
+más complejo que abarca múltiples carencias o privaciones en diversas dimensiones del
+bienestar, más allá del ingreso. Inspirada por el enfoque de las "capacidades" de Amartya
+Sen, esta perspectiva evalúa la falta de oportunidades y libertades fundamentales para
+que las personas puedan llevar una vida valiosa, más que solo su nivel de consumo.
+(Alkire & Santos, 2013)
+
+A pesar de la diversidad de aproximaciones teóricas para conceptualizar la pobreza,
+existe un consenso amplio en reconocer su naturaleza multidimensional. Este enfoque
+sostiene que los elementos esenciales para que una persona pueda satisfacer sus
+necesidades fundamentales y desarrollar sus capacidades trascienden cualquier
+característica única, exigiendo una consideración integral de múltiples dimensiones de
+su bienestar. (Alkire & Foster, 2007)
+
+En Ecuador, el indicador de pobreza por necesidades básicas insatisfechas, adopta la
+definición realizada por la CEPAL sobre pobreza a partir de un enfoque multidimensional,
+como la situación de aquellos hogares que no logran reunir, en forma relativamente
+estable, los recursos necesarios para satisfacer las necesidades básicas de sus miembros
+(CEPAL, 1988).
+
+La literatura económica y social distingue también la pobreza a partir de dos
+concepciones temporales: la estructural y la coyuntural. La pobreza estructural se refiere
+a un núcleo persistente de carencias arraigado en fallas sistémicas de la economía y la
+sociedad, como la desigualdad histórica y el bajo nivel educativo permanente (Melucci,
+1989). Por otro lado, la pobreza coyuntural describe una privación temporal causada por
+fluctuaciones a corto plazo o eventos inesperados, como el desempleo momentáneo.
+Esta distinción metodológica se traduce, en términos operativos, en que la pobreza
+estructural se mide con indicadores de stock (propiedades permanentes), mientras que
+la coyuntural se mide con indicadores de flujo (ingresos o gastos fluctuantes) (Feres y
+Mancero, 1999).
+
+En este marco conceptual, la metodología de medición de la pobreza por Necesidades
+Básicas Insatisfechas (NBI) tiene una concepción predominantemente estructural. Esto se
+debe a que los indicadores que comúnmente utiliza (calidad de la vivienda, acceso a
+servicios sanitarios, nivel educativo) capturan carencias que responden a la acumulación
+
+
+                                                                                        7
+histórica de privaciones y barreras de acceso a derechos sociales fundamentales. El
+método NBI identifica privaciones persistentes que no varían significativamente con las
+fluctuaciones económicas, siendo su principal fortaleza la medición de la pobreza
+arraigada y de largo plazo.
+
+
+   3. El método de Necesidades Básicas Insatisfechas
+
+Identificación de la población en situación de pobreza
+
+La definición multidimensional de la pobreza es compatible con al menos dos
+mecanismos para determinar cuáles hogares son pobres. Una primera posibilidad es
+evaluar directamente si los hogares han logrado satisfacer sus necesidades básicas,
+consultando sobre los bienes y servicios de que disponen. La segunda alternativa
+consiste en medir los recursos del hogar, usualmente sus ingresos o consumo, y estimar
+si estos son suficientes para que el hogar pueda gozar de un nivel de vida aceptable, de
+acuerdo con los estándares sociales prevalecientes. La aplicación de uno de estos dos
+mecanismos es el proceso conocido según Feres y Mancero (1999) como de
+"identificación".
+
+Estas alternativas de "identificación" se conocen como los métodos "directo" e
+"indirecto", respectivamente. Si bien ambos buscan medir el mismo fenómeno, sus
+enfoques difieren tanto en aspectos conceptuales como empíricos. En cuanto a lo
+conceptual, una diferencia importante radica en que el método directo relaciona el
+bienestar con el consumo efectivamente realizado, mientras que el método indirecto lo
+vincula con la posibilidad o la capacidad de realizar dicho consumo.
+
+Aunque la posibilidad de considerar tanto mecanismos directos como indirectos de
+medición se constituye como una fortaleza teórica del enfoque multidimensional de la
+pobreza, la metodología de medición mediante las Necesidades Básicas Insatisfechas
+(NBI) a partir de censos de población generalmente se centra en la identificación de
+carencias mediante métodos directos. Esto responde a las limitaciones en cuanto a la
+exhaustividad y detalle de la información socioeconómica disponible comúnmente en
+operativos censales.
+
+Esta definición constituye el punto de partida de la construcción de la metodología para
+definición de pobreza. Una vez definido el concepto de pobreza desde una perspectiva
+multidimensional y su concepción temporal, en la siguiente sección se exponen los
+criterios que permiten hacer operativa su medición. Asimismo, se formularán criterios
+para clasificar a la población de acuerdo con la exposición a las distintas carencias.
+
+
+Desde una perspectiva operativa, la universalidad de los censos de población y vivienda
+los convierte en herramientas importantes para la identificación de vulnerabilidades a
+niveles mínimos de desagregación, orientando la búsqueda de una medida adaptable a
+este tipo de fuentes. No obstante, ello implica considerar las limitaciones en cuanto a
+exhaustividad de información disponible a partir de un censo de población y vivienda.
+
+
+                                                                                      8
+Para la aplicación de este método, se elige una serie de indicadores observables que
+permiten constatar si los hogares satisfacen o no algunas de sus necesidades
+consideradas como básicas a partir del consumo efectivamente realizado. Esto permite
+la "identificación" de los hogares pobres, tomando en cuenta aspectos cruciales que no
+se reflejan necesariamente en el nivel de ingreso de un hogar, y aprovechando el
+inmenso potencial de desagregación geográfica que permite la información censal.
+
+Necesidades básicas que integran el Indicador
+
+El proceso de definición de las necesidades consideradas como “básicas” implica
+seleccionar los aspectos que se quiere evaluar (establecer las dimensiones relevantes),
+determinar el o los indicadores con los que se va a medir la insatisfacción de dichas
+necesidades y fijar los umbrales que permiten identificar la no satisfacción de ellas. Este
+proceso supone no solo alcanzar acuerdos normativos, sino evaluar su posibilidad de
+medición sobre la base de la información disponible, ya sea en los censos o en otras
+fuentes de datos.
+
+El enfoque crucial de esta etapa adquiere especial relevancia considerando que se trata
+de identificar aquellos aspectos o características que permiten a los individuos el acceso
+a bienes y servicios esenciales para la vida digna. Específicamente, se consideran como
+básicas aquellas necesidades relacionadas con la calidad de la vivienda, la disponibilidad
+de servicios sanitarios e hídricos, la educación y la capacidad económica mínima de
+subsistencia del hogar, asumiendo que la insatisfacción en cualquiera de estos puntos
+clave indica un estado de pobreza estructural que no depende de ingresos monetarios
+puntuales.
+
+La concepción original de CEPAL sobre Necesidades Básicas Insatisfechas (NBI) define
+cuatro necesidades básicas: i) acceso a una vivienda adecuada, que garantice un estándar
+mínimo de habitabilidad considerando la calidad constructiva y la ausencia de
+hacinamiento; ii) acceso a servicios básicos que aseguren niveles sanitarios mínimos,
+referidos al origen y abastecimiento de agua y a la disponibilidad de servicios higiénicos
+y sistemas de eliminación de excretas; iii) acceso a la educación básica, medido mediante
+la asistencia escolar de niños en edad primaria; y iv) capacidad económica del hogar para
+alcanzar niveles mínimos de consumo, estimada a partir de un indicador de probabilidad
+de insuficiencia de ingresos.
+
+En todos los indicadores, CEPAL buscó capturar condiciones persistentes de privación
+(por ejemplo, calidad de la vivienda o acceso a saneamiento), como factores vinculados
+a la reproducción intergeneracional de la pobreza, entre ellos el acceso a la educación
+básica y la capacidad económica del hogar.
+
+Desde su réplica en la ECV de 1994, el componente de acceso a vivienda adecuada fue
+desagregado, separando el indicador de hacinamiento como un quinto componente. De
+este modo, el enfoque actualmente vigente quedó conformado por cinco dimensiones:
+
+
+
+
+                                                                                         9
+     1.    Características físicas de la vivienda.
+     2.    Disponibilidad de servicios básicos de la vivienda.
+     3.    Dependencia económica del hogar.
+     4.    Niños en edad escolar asistiendo a clases.
+     5.    Estado de hacinamiento del hogar.
+
+Ilustración 1: Dimensiones del indicador de pobreza por Necesidades Básicas Insatisfechas en Ecuador
+
+
+
+
+     Disponibilidad                            Características
+                                                físicas de la                           Estado del
+      de servicios                                                                     hacinamiento
+        básicos                                   vivienda
+
+
+
+
+                                                                          Niños (6-12)
+                         Dependencia
+                                                                          asistiendo a
+                          económica
+                                                                             clases
+
+
+Fuente: INEC, documentos metodológicos relativos al indicador de pobreza por NBI   .
+
+A continuación, se detalla los aspectos específicos de la pobreza estructural que cada
+uno de los componentes busca capturar, así como su propósito operativo, es decir, los
+indicadores que los integran y los umbrales definidos para determinar quienes presentan
+carencias o privaciones.
+
+Definición conceptual de dimensiones, indicadores y umbrales
+
+Dependencia económica del hogar
+
+Este componente evalúa la carga que recae sobre la población en edad productiva para
+sostener a los miembros dependientes. Su inclusión parte del reconocimiento de que un
+hogar cuya estructura demográfica presenta una alta proporción de personas
+dependientes enfrenta mayores riesgos de pobreza estructural, dado que la capacidad
+de generación de ingresos se ve limitada por la carga de cuidado y la menor
+disponibilidad de adultos en condiciones de trabajar.
+
+Dado que los censos no registran el ingreso familiar, se ha desarrollado una medida
+alternativa para estimar la capacidad económica de los hogares. Su objetivo es identificar
+aquellos que tienen una baja probabilidad de disponer de los recursos suficientes para
+
+
+                                                                                                       10
+adquirir bienes y servicios básicos. De esta forma, el indicador sirve como una
+aproximación a la "probabilidad de insuficiencia de ingresos" y a la vulnerabilidad para
+alcanzar niveles mínimos de consumo.
+
+Operativamente, esta medida combina dos indicadores clave para aproximar la
+capacidad de generación de ingresos del hogar.
+
+   a) El nivel educativo de los representantes (jefes) del hogar; y,
+   b) La razón de dependencia
+
+Por un lado, se busca que el nivel educativo de los representantes (jefes) del hogar
+constituya una aproximación de su potencial inserción laboral y tipo de ocupación. Su
+uso se fundamenta en la relación que existe entre el nivel educativo y los distintos grados
+de precariedad de las ocupaciones, de acuerdo a cada grupo etario. El nivel educativo se
+asocia o se considera un requisito para el acceso al mercado laboral. De acuerdo a esto,
+y admitiendo que el jefe es por lo general el único o bien el principal perceptor de
+ingresos del hogar, se definió el umbral como un nivel crítico de educación apuntando
+básicamente a la característica de ser o no alfabeto
+
+Por otro, la razón de dependencia se define como el cociente entre el número de
+miembros del hogar respecto al número de personas ocupadas, e indica el número de
+personas en el hogar por cada persona ocupada. Se trata de un indicador que intenta
+captar la magnitud y diversidad de las necesidades de cada hogar no solo en función de
+su tamaño, sino también de las dificultades crecientes que un mayor tamaño del hogar
+plantea.
+
+Se considera que existe privación cuando se cumplen dos condiciones simultáneas
+respecto a ambos indicadores: el representante de hogar tiene 3 o menos años de
+escolaridad que aproxima la capacidad de al menos leer o escribir y que existan más de
+3 personas por cada persona ocupada en el hogar.
+
+Niños en edad escolar
+
+La educación, especialmente durante los primeros años de formación, es un eje
+fundamental para la integración social y un factor determinante en la interrupción del
+ciclo de la pobreza. La ausencia en el acceso a la educación no solo limita las
+oportunidades futuras de los individuos, sino que también suele ser un reflejo de los
+bajos niveles educativos de sus padres, perpetuando así las condiciones de
+vulnerabilidad.
+
+Esta dimensión, centrada en la asistencia a la educación formal de niños en edad escolar,
+refleja la capacidad del hogar para garantizar el ejercicio efectivo de este derecho. Al
+mismo tiempo, constituye un indicador indirecto de las condiciones estructurales que
+facilitan o restringen la formación de capital humano. Su inclusión en el método de
+Necesidades Básicas Insatisfechas (NBI) responde a la evidencia de que la inasistencia
+escolar es el reflejo de hogares que enfrentan restricciones económicas, carecen de
+infraestructura educativa cercana, o viven en contextos de precariedad laboral.
+
+                                                                                        11
+La identificación de privaciones en esta dimensión considera un único indicador:
+asistencia a algún establecimiento de educación regular o formal. Se considera como
+privado a un hogar, cuando al menos un niño o niña de entre 6 a 12 años no asiste a un
+centro educativo.
+
+La decisión metodológica de utilizar un criterio de suficiencia —donde un solo caso es
+suficiente para considerar al hogar como privado en esta dimensión— subraya que la
+interrupción del proceso formativo representa una carencia grave con consecuencias a
+largo plazo. Este hecho impacta directamente en las oportunidades futuras de empleo,
+los niveles de ingresos y la movilidad social del individuo.
+
+El umbral para esta medición se fundamenta en una normativa previa sobre la educación
+primaria. Al momento, existe una nueva normativa vigente, limitando la coherencia con
+el marco institucional del país y subrayando la necesidad de revisar los umbrales
+actualmente utilizados.
+
+Características físicas de la vivienda
+
+Constituye uno de los componentes centrales de la medición de necesidades básicas
+insatisfechas, pues permite identificar condiciones estructurales mínimas asociadas a la
+habitabilidad y a la protección frente a riesgos ambientales. Conceptualmente, este
+componente parte de la premisa de que una vivienda adecuada debe ofrecer seguridad
+física y resguardo; por tanto, materiales precarios o no durables reflejan carencias
+estructurales que afectan directamente el bienestar de los miembros del hogar.
+
+En el enfoque original propuesto por la CEPAL, la vivienda se considera un espacio
+fundamental para la reproducción de las condiciones de vida y, en consecuencia, sus
+atributos constructivos constituyen necesidades básicas que deben satisfacerse para
+garantizar un estándar mínimo de dignidad. A partir de esta lógica, la dimensión
+considera dos indicadores
+
+    a) Material predominante del piso, asociados con la exposición a humedad y
+        enfermedades; y,
+    b) Material predominante de las paredes externas, considerando que determinan la
+        estabilidad estructural y la protección frente a condiciones climáticas.
+
+Desde el punto de vista operativo, los criterios de clasificación se basan en la
+identificación de materiales considerados inadecuados o precarios, tales como tierra en
+el caso del piso o materiales ligeros y no permanentes en paredes.
+
+Se considera privado en esta dimensión un hogar que reside en una vivienda con piso
+de “tierra” u “otros materiales”, o el material de las paredes exteriores es de “caña no
+revestida” u “otro material”.
+
+
+
+
+                                                                                     12
+Disponibilidad de servicios básicos
+
+Conceptualmente, este componente se sustenta en la idea de que el acceso adecuado a
+servicios como agua segura, saneamiento y eliminación apropiada de excretas es
+indispensable para preservar la salud de los miembros del hogar, prevenir enfermedades
+transmisibles y garantizar un entorno compatible con estándares mínimos de vida digna.
+
+Su inclusión responde a que estas necesidades básicas se reconocen como derechos
+asociados al hábitat adecuado y han sido reiterados en la literatura internacional sobre
+pobreza multidimensional. La carencia de servicios básicos se vincula, además, con
+desigualdades estructurales persistentes entre zonas urbanas y rurales, así como con
+brechas territoriales que afectan de manera diferencial a grupos históricamente
+rezagados.
+
+Desde el punto de vista operativo, este componente identifica privación a partir de 3
+indicadores:
+
+   a) El sistema de abastecimiento de agua,
+   b) La forma de recepción de agua en la vivienda y,
+   c) El sistema de eliminación de excretas.
+
+El primero de ellos tiene como objetivo la identificación del operador encargado
+de la provisión de agua y el segundo, si el servicio llega hasta la vivienda o fuera
+de ella. Por otro lado, el tercer indicador que compone la dimensión hace
+referencia a la posibilidad de contar con un sistema de saneamiento adecuado.
+
+Un hogar se considera privado cuando la vivienda en que reside presenta un
+sistema de abastecimiento de agua no adecuado, un sistema de eliminación de
+excretas insuficiente o inexistente, o ambos. Se consideran “adecuados” aquellos
+sistemas alineados con estándares técnicos que representan mayor probabilidad
+de potabilidad (empresas públicas o municipales) o un tratamiento sanitario
+mínimo (Juntas de agua/organizaciones comunitarias/Gad parroquial). Se
+clasifican también como “no adecuados” a quienes independientemente de la
+fuente de provisión de agua, ésta no llega por tubería hasta el interior de la
+vivienda. En el caso del saneamiento, se consideran deficitarias la ausencia de
+inodoros, la descarga a pozos ciegos, directo al mar, río, lago o quebrada, o si
+tienen letrina.
+
+La presencia de al menos uno de estos déficits es suficiente para clasificar al hogar
+como privado en esta dimensión. Esta decisión metodológica se fundamenta en
+el principio de suficiencia crítica, ampliamente utilizado en mediciones
+multidimensionales, el cual establece que una sola carencia grave en un servicio
+fundamental implica que la necesidad básica no está satisfecha (CEPAL, 1988).
+
+
+
+
+                                                                                     13
+Estado del hacinamiento del hogar
+
+El hacinamiento es un indicador primario de la calidad de vida y las condiciones de salud
+de los miembros de un hogar. Esta condición se define como la falta de espacio suficiente
+para garantizar una habitabilidad digna y se asocia directamente con un mayor riesgo
+de propagación de enfermedades contagiosas, la pérdida de privacidad, el incremento
+del estrés psicológico y dificultades significativas para el desarrollo y el rendimiento
+académico de niños y jóvenes.
+
+Para su medición, se establece que un hogar se encuentra en hacinamiento crítico
+cuando el número de personas por cuarto exclusivo para dormir en el hogar supera el
+umbral de tres. Metodológicamente, se define como dormitorio cualquier habitación de
+la vivienda que esté destinada o sea utilizada principalmente para dormir, excluyendo de
+este cálculo espacios como cocinas, baños, salas o comedores.
+
+
+
+Criterios de agregación
+
+El enfoque de la medición está diseñado a nivel de hogar, es decir, que las privaciones
+detectadas se consideran compartidas por todos sus miembros. Esta decisión
+metodológica se fundamenta en el principio de que las condiciones habitacionales,
+educativas o de infraestructura afectan de manera conjunta a quienes residen en el
+mismo entorno.
+
+Con el propósito de clasificar a la población en condición de pobreza o no pobreza por
+NBI, se adopta el criterio de suficiencia: un hogar se considera pobre por NBI cuando
+presenta al menos una necesidad básica insatisfecha (CEPAL, 1988). Este principio refleja
+la concepción original del método, que sostiene que cualquier privación grave en una
+dimensión fundamental es suficiente para comprometer las condiciones mínimas de
+bienestar.
+
+Desde el punto de vista operativo, esta regla implica que las cinco dimensiones del
+indicador —características físicas de la vivienda, acceso a servicios básicos, dependencia
+económica, asistencia escolar y hacinamiento— reciben un peso equivalente. Ninguna
+dimensión tiene prioridad sobre otra, y todas contribuyen por igual a la identificación de
+la pobreza. Por ejemplo, una carencia en el material del piso o la inasistencia escolar de
+un menor son considerados déficits de magnitud comparable para efectos de
+clasificación.
+
+A diferencia de metodologías más recientes, como el Índice de Pobreza Multidimensional
+(IPM), el método de NBI no incorpora intensidades, brechas ni severidades de la
+privación, tampoco establece ponderaciones diferenciales entre dimensiones. Esto
+significa que el indicador captura la ocurrencia de la pobreza en su forma más general.
+Se trata, por tanto, de una medida dicotómica (pobre/no pobre) orientada a identificar
+hogares en situación crítica dentro de un marco conceptual histórico y normativo.
+
+
+
+
+                                                                                       14
+    4. Principales resultados
+
+
+A lo largo de las últimas dos décadas, se ha observado una reducción significativa en la
+pobreza medida por Necesidades Básicas Insatisfechas (NBI). La evolución muestra una
+tendencia decreciente tanto a nivel de hogares como de personas: en hogares, la
+incidencia disminuyó de 70.5% en 2001 a 37.1% en 2022 (una reducción de 33.4 puntos
+porcentuales), mientras que en personas, la reducción fue de 73.9% a 39.8% en el mismo
+período (una disminución de 34.1 puntos porcentuales).
+
+
+           Tabla 1: Evolución de la pobreza por NBI según los censos. Censos 2001-2025
+
+             Pobreza por Hogares con NBI    Personas con NBI
+                NBI      Número Porcentaje Número Porcentaje
+                2001    1.966.758   70,5   8.668.274    73,9
+                2010    2.126.004   56,2   8.605.803    60,1
+                2022    1.925.141   37,1   6.713.750    39,8
+       Fuente: INEC, Censos de Población y Vivienda de Ecuador 2001-2022
+
+
+La ligera diferencia en los porcentajes entre hogares y personas se explica por la
+metodología de los indicadores de NBI: cuando un hogar es clasificado como pobre,
+todas las personas que lo conforman se consideran en situación de pobreza. Dado que
+los hogares más pobres suelen tener en promedio un mayor número de miembros, esto
+generalmente resulta en porcentajes ligeramente más altos a nivel de personas que de
+hogares.
+
+En los análisis que siguen, se presentarán exclusivamente porcentajes calculados a nivel
+de personas, ya que esta perspectiva permite una caracterización más detallada de la
+población afectada según dimensiones como edad, etnia, área geográfica y sexo,
+proporcionando así un perfil más completo de la pobreza por NBI en el país. Es
+importante, sin embargo, precisar que la metodología de pobreza por Necesidades
+Básicas captura deficiencias inherentes a las características específicas de las personas en
+cada grupo poblacional.
+
+El gráfico 1 muestra la composición de la pobreza por Necesidades Básicas Insatisfechas
+(NBI). Este análisis permite identificar no solo la magnitud del fenómeno, sino también
+de alguna forma su intensidad y características. La población se clasifica según su
+condición de pobreza, distinguiendo entre quienes presentan carencias en una única
+dimensión (pobreza unidimensional) y quienes las experimentan en múltiples
+dimensiones simultáneamente.
+
+Gráfico 1: Composición de la pobreza por Necesidades Básicas Insatisfechas. Censos 2010-2022
+
+                                                                                               15
+.
+
+
+
+
+       Fuente: INEC, Censos de Población y Vivienda de Ecuador 2010-2022
+
+
+La evolución entre 2010 y 2022 muestra transformaciones significativas en la estructura
+de la pobreza por NBI. Se observa una reducción consistente en todos los grupos: la
+población no pobre aumentó su proporción, mientras que disminuyó tanto la población
+con pobreza unidimensional como aquella con pobreza en más de una dimensión.
+
+Un cambio estructural notable es la recomposición de la pobreza por NBI. Así, en 2010,
+la pobreza multidimensional (más de una carencia) constituía el principal componente
+entre la población pobre. Para 2022, sin embargo, la pobreza unidimensional asociada
+específicamente a la falta de acceso a servicios básicos pasó a ser la forma de pobreza
+predominante.
+
+
+
+
+                                                                                    16
+Gráfico 2: Evolución de las carencias en cada dimensión del NBI, Censos 2010-2022
+
+
+
+
+       Fuente: INEC, Censos de Población y Vivienda de Ecuador 2010-2022
+
+
+El análisis de la incidencia de carencias por cada dimensión individual del NBI revela una
+evolución diferenciada en la satisfacción de necesidades básicas durante la última
+década.
+
+Las dimensiones vinculadas a las condiciones de la vivienda y el acceso a servicios básicos
+presentan las mayores prevalencias de carencias, tanto en 2010 como en 2022.
+Particularmente, la disponibilidad de servicios básicos, que afectaba al 49,3% de la
+población en 2010, se redujo al 29,6% en 2022, constituyéndose aún como la privación
+más extendida. En menor medida, el hacinamiento descendió del 26,5% al 14,1%,
+mientras que las características físicas de la vivienda mejoraron del 12,7% al 7% en el
+mismo período.
+
+Las carencias menos prevalentes, como la dependencia económica y la asistencia escolar,
+también mostraron reducciones significativas, pasando del 5,9% al 3,6% y del 5,3% al
+2,1% respectivamente, en 2022.
+
+
+
+
+                                                                                        17
+Gráfico 3: Porcentaje de población pobre por NBI según grupo etario. Censo 2022
+
+
+
+
+       Fuente: INEC, Censos de Población y Vivienda de Ecuador 2022
+
+
+El gráfico 3 muestra el porcentaje de población pobre por NBI en cada grupo etario,
+clasificados de acuerdo a las principales etapas de vida de las personas. Los grupos más
+jóvenes presentan la mayor vulnerabilidad: aproximadamente la mitad de niños (49,4%)
+y adolescentes (45,4%) experimentan privaciones básicas, porcentajes que disminuyen
+progresivamente a medida que aumenta la edad, alcanzando los niveles más bajos entre
+adultos de 45 a 64 años (32,5% con NBI) y adultos mayores (36,5%).
+
+La mayor incidencia de NBI en edades tempranas no necesariamente indica privaciones
+individuales asociadas a características específicas de estos grupos, sino que más bien
+podría reflejar su concentración en hogares que, por su tamaño y composición, enfrentan
+mayores desafíos para superar los umbrales establecidos en las dimensiones
+habitacionales y de servicios.
+
+
+
+
+                                                                                     18
+Gráfico 4: Porcentaje de población pobre por NBI, según área de residencia. Censo 2022
+
+
+
+
+        Fuente: INEC, Censos de Población y Vivienda de Ecuador 2022
+
+
+La distribución territorial de la pobreza por Necesidades Básicas Insatisfechas (NBI) en
+Ecuador revela una profunda desigualdad entre ámbitos geográficos. Mientras en áreas
+urbanas solo el 27,1% de la población presenta carencias básicas, en zonas rurales esta
+proporción se eleva al 61,4%, una diferencia de 34,3 puntos porcentuales que evidencia
+una brecha estructural. Esta disparidad significa que la población rural enfrenta una
+probabilidad 2,3 veces mayor de experimentar privaciones, generalmente en
+dimensiones como acceso a servicios básicos, características de la vivienda y
+hacinamiento.
+
+Gráfico 5: Porcentaje de población pobre por NBI, según sexo. Censo 2022
+
+
+
+
+        Fuente: INEC, Censos de Población y Vivienda de Ecuador 2022
+
+
+
+
+                                                                                         19
+En el país, la pobreza por Necesidades Básicas Insatisfechas (NBI) según sexo presenta
+una situación equivalente entre mujeres (39,4% con NBI) y hombres (40,2% con NBI), con
+una diferencia mínima de solo 0,8 puntos porcentuales. Esta prácticamente idéntica
+incidencia sugiere que el indicador de NBI -que mide principalmente carencias a nivel de
+hogar- afecta por igual a todos los miembros de los hogares clasificados como pobres,
+independientemente de su sexo. Sin embargo, ello puede atribuirse a que el NBI evalúa
+privaciones compartidas dentro del hogar, como acceso a servicios básicos y
+características de la vivienda, donde todos los residentes experimentan condiciones
+similares.
+
+Esta aparente equidad no debe interpretarse como ausencia de desigualdades de
+género, ya que dimensiones no capturadas por el NBI -como participación económica,
+acceso a recursos y toma de decisiones- pueden presentar patrones diferenciados que
+requieren análisis complementarios.
+
+Gráfico 6: Porcentaje de población pobre por NBI, según autoidentificación étnica. Censo 2022
+
+
+
+
+        Fuente: INEC, Censos de Población y Vivienda de Ecuador 2022
+
+
+La incidencia de pobreza por Necesidades Básicas Insatisfechas (NBI) en Ecuador
+evidencia importantes desigualdades entre grupos étnicos, que reflejan históricas
+exclusiones estructurales. Mientras la población blanca presenta la menor tasa (25,5%
+con NBI) seguida de los mestizos (33,8%), los grupos históricamente marginados
+enfrentan proporciones significativamente mayores: afrodescendientes (48,5%),
+indígenas (68,5%) y montubios (70,0%). Esta brecha muestra que las poblaciones
+indígenas y montubias tienen casi el triple de probabilidades de experimentar
+privaciones básicas en comparación con la población blanca o doble frente a la mestiza.
+
+
+
+
+                                                                                                20
+   5. Referencias
+
+CEPAL. (1988). Ecuador: Mapa de necesidades básicas insatisfechas. Comisión Económica
+para       América         Latina      y      el      Caribe.        Obtenido     de
+https://repositorio.cepal.org/handle/11362/34763
+
+Instituto Nacional de Estadística y Censos. (s. f.). Condiciones de vida de los ecuatorianos:
+Resultados de la Encuesta de Condiciones de Vida – Quinta Ronda. INEC. Obtenido de
+https://www.ecuadorencifras.gob.ec/documentos/web-
+inec/ECV/Publicaciones/ECV_Folleto_Pobreza.pdf
+
+INEC. (2011). Acta de homologación de NBI para Censo (acta_NBI_homologada.pdf).
+Quito: INEC. Obtenido de ecuadorencifras.gob.ec
+
+Alkire, S., & Foster, J. (2007). Cunting and Multidimensional Poverty Measurement. OPHI
+Working Paper7.
+
+Alkire, S., & Santos, M. E. (2013). A multidimensional Approach: Poverty Measurement y
+Beyond. Oxford: Springer.
+
+Altimit, O. (1979). La dimensión de la pobreza en América Latina. Santiago de Chile: CEPAL:
+Cuadernos de la CEPAL, (27).
+
+Añazco, R., & Jácome Pérez, F. (2016). Medición de la Pobreza Multidimensional en
+Ecuador.                   Obtenido                   de                 chrome-
+extension://efaidnbmnhttps://www.ecuadorencifras.gob.ec/documentos/web-
+inec/Sitios/Pobreza_Multidimensional/assets/ipm-metodologia-oficial.pdf
+
+Feres, J., & Mancero, X. (1999). El método de las necesidades básicas insatisfechas (NBI) y
+sus aplicaciones en América Latina. CEPAL.
+
+Melucci, A. (1989). Nomads of the present: Social movements and individual needs in
+contemporary society. Sociológica México, 27, 229-233.
+
+
+
+
+                                                                                          21
+    6. Anexos
+
+Cuadro 1. Componentes, indicadores y umbrales considerados para el indicador de
+Pobreza por NBI.
+ COMPONENTE               INDICADOR                          UMBRAL
+ 1.    Dependencia        Años de escolaridad de la/el       El representante del hogar tiene 3 o
+ económica     del        representante del hogar.           menos años de escolaridad; y, Existen
+ hogar                    Número de personas por cada        más de 3 personas por cada persona
+                          persona ocupada en el hogar.       ocupada en el hogar.
+
+ 2. Niños en edad         Asistencia a clases                Existen en el hogar niños de 6 a 12 años
+ escolar                                                     que no asisten a clases
+
+ 3.     Características   Material predominante de las       El material del piso de la vivienda es de
+ físicas de la vivienda   paredes                            “tierra” u “otros materiales”, o el material
+                                                             de las paredes exteriores es de “caña no
+                          Material predominante del piso     revestida” u “otro material”.
+
+
+ 4. Disponibilidad de     Fuente de suministro de agua       La vivienda no tiene servicio higiénico o
+ servicios básicos                                           cuenta con inodoro o escusado
+                                                             conectado a pozo ciego, inodoro o
+                          Forma de recepción del agua        escusado con descarga directa al mar, río,
+                          en la vivienda                     lago o quebrada o tiene letrina; o, el agua
+                                                             que obtiene la vivienda proviene de pozo,
+                                                             carro o tanquero repartidor u otras
+                          Forma de       eliminación    de
+                                                             fuentes (río, vertiente, acequia, canal,
+                          excretas
+                                                             grieta o agua lluvia); o, el agua que recibe
+                                                             la vivienda es por tubería fuera de la
+                          Fuente de suministro de agua       vivienda pero dentro del edificio, lote o
+                                                             terreno; por tubería fuera del edificio, lote
+                                                             o terreno; o no recibe agua por tubería,
+                                                             sino por otros medios.
+ 5.    Estado      de     Número de personas por             Se considera el umbral de hacinamiento
+ hacinamiento      del    cuarto exclusivo para dormir.      crítico, que es cuando en el hogar existen
+ hogar                                                       en promedio más de tres personas por
+                                                             cada cuarto utilizado para dormir.
+
+                                                             Nota: Para fines de cálculo del indicador,
+                                                             cuando el número de cuartos exclusivos
+                                                             para dormir de un hogar es 0, se asume la
+                                                             existencia de 1 dormitorio conforme
+                                                             metodología vigente del indicador de
+                                                             hacinamiento.
+Fuente: INEC, documentos metodológicos relativos al indicador de pobreza por NBI.
+
+
+
+
+                                                                                                    22
+¿ C Ó M O S E M I D E L A
+     P O B R E Z A E N
+E C U A D O R A P A R T I R
+  D E L O S C E N S O S ?
+
+   EL MÉTODO NBI EXPLICADO
+
+
+
+
+                              23
+

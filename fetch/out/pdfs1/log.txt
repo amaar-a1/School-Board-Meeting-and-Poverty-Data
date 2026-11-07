@@ -1,0 +1,2 @@
+insee_rpm2024_f21: 482247 bytes pdf, 9898 chars text, rc 0 
+inec_nbi_libro: 1748934 bytes pdf, 49760 chars text, rc 0 
