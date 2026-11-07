@@ -70,6 +70,14 @@
       const v = toNumber(r[col]);
       r[RANK] = isNaN(v) ? "" : String(Math.round(((below(v) + upto(v)) / 2) / vals.length * 100));
     });
+    // France's overseas communes have only their département's rate: they get where that rate falls among
+    // France's communes (marked as estimated).
+    if (d.country === "FRA") {
+      d.rows.forEach((r) => {
+        const v = toNumber(r["Poverty rate (region, all ages)"]);
+        if (r[RANK] === "" && !isNaN(v)) { r[RANK] = String(Math.round(((below(v) + upto(v)) / 2) / vals.length * 100)); r._rankEst = true; }
+      });
+    }
     // Spain's small municipalities have no child figure: they get the average rank of the municipalities in their
     // autonomous community that have one (marked as estimated).
     if (d.country === "ES") {

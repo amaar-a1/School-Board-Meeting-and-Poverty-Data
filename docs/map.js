@@ -54,6 +54,10 @@
     Spain: [[35.9, -9.4], [43.8, 4.4]],
     France: [[41.3, -5.2], [51.1, 9.6]],
     "La Réunion": [[-21.4, 55.2], [-20.85, 55.85]],
+    Guadeloupe: [[15.8, -61.85], [16.55, -61.0]],
+    Martinique: [[14.38, -61.25], [14.9, -60.8]],
+    "French Guiana": [[2.1, -54.6], [5.8, -51.6]],
+    Mayotte: [[-13.05, 45.0], [-12.6, 45.3]],
     Ecuador: [[-5.1, -81.1], [1.5, -75.2]],
     Colombia: [[-4.3, -79.1], [12.6, -66.8]],
     "New Zealand": [[-47.4, 166.3], [-34.3, 178.7]],
@@ -222,6 +226,7 @@
     const note = [r["Map note"], r["Poverty note"], r.Notes || r["Poverty figures"], r["Meetings note"], r["Other meetings source"] && `Other meetings: ${r["Other meetings source"]}`].filter(Boolean).map((x) => String(x).replace(/\.\s*$/, "")).join(". ");
     return `<div class="map-tip"><strong>${esc(r.District)}${place ? `, ${esc(place)}` : ""}</strong>` +
       (!isNaN(iePov) && eu === "ES" ? `Child low-income rate: not published (small municipality)<br>Poverty rate of its region (all ages, Eurostat): ${iePov.toFixed(1)}%<br>`
+        : !isNaN(iePov) && eu === "FRA" ? `Commune poverty rate: not published<br>Poverty rate of the whole département (all ages): ${iePov.toFixed(1)}%<br>`
         : !isNaN(iePov) ? `Poverty rate (all ages, its region): ${iePov.toFixed(1)}%<br>Unemployment (Census 2022): ${esc(r["Unemployment rate (Census 2022)"] || "–")}<br>`
         : isNaN(pov) && !isNaN(unemp) ? `Unemployment (stand-in for poverty): ${unemp.toFixed(1)}% (2015 est.)<br>`
         : `${ukPov ? "Children under 16 in low income" : eu === "ISLE" ? esc(r["Poverty measure"] || "Poverty") : ALL_AGES.has(eu) ? `Poverty (${eu === "FRA" ? "all ages, 60% of median, 2023" : eu === "EC" ? "all ages, consumption, 2014 estimate" : eu === "CL" ? "all ages, income, 2024" : eu === "BR" ? "all ages, income up to ½ minimum wage per person, 2022" : eu === "PE" ? "all ages, monetary, 2018" : eu === "MX" ? "all ages, multidimensional, 2020" : "all ages, multidimensional, 2018"})` : eu ? `Children in low income (${{ NO: "0–17, 2022–24", SE: "0–19, 2024", FI: "under 18", DK: "0–17, 50% line, 2024", NL: "CBS, 2024", DE: "under 15 on SGB II benefits, 2023", NZ: "60% line, 2025", IS: "national rate", CH: "0–17 on social assistance", ES: "under 18, 60% line, 2024", CL: "all ages, income, 2024", CO: "all ages, multidimensional, 2018" }[eu]})` : "Child poverty"}: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>`) +
@@ -280,6 +285,8 @@
     if ((current && (current.country === "FR" || current.combined)) && $("map-metric").value === "poverty")
       items.push(`<span class="map-faded">Saint-Pierre-et-Miquelon: unemployment rate (2015 est.) in place of child poverty, which isn't published there</span>`);
     if (euv === "ES" || (current && current.combined)) items.push(`<span><i style="background:${NO_DISTRICT}"></i>Spain: land shared by several towns, part of no municipality</span>`);
+    if ((euv === "FRA" || (current && current.combined)) && $("map-metric").value === "poverty")
+      items.push(`<span class="map-faded">France overseas: Guadeloupe, Martinique, French Guiana and Mayotte have no commune rates, so each commune shows its département's rate (INSEE; Guadeloupe, French Guiana and Mayotte from a 2017 survey)</span>`);
     if (euv === "EC" || (current && current.combined)) items.push(`<span><i style="background:${NO_DISTRICT}"></i>Ecuador: zones whose canton is disputed, part of no canton</span>`);
     if (euv === "FRA" || (current && current.combined)) items.push(`<span class="map-faded">France: each département's smaller communes, which have no published rate, are drawn together with the département's rate</span>`);
     if (current && current.country === "FR") faded.push("outside Saint-Pierre-et-Miquelon");

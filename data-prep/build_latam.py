@@ -708,20 +708,31 @@ def france():
     geo = {f["properties"]["grp"]: f for f in json.load(open(os.path.join(d, "fr_communes_map_2023.geojson"), encoding="utf-8"))["features"] if f.get("geometry")}
     deps = {f["properties"]["code"]: f["properties"]["nom"] for f in json.load(open(os.path.join(d, "fr_departements.geojson"), encoding="utf-8"))["features"]}
     deps["974"] = "La Réunion"
+    # Overseas départements with no commune rates: each commune gets its département's rate (INSEE's regional table)
+    # in a column of its own, as Spain's small municipalities do.
+    om = json.load(open(os.path.join(d, "fr_outremer_poverty.json"), encoding="utf-8"))["departements"]
+    om_names = json.load(open(os.path.join(d, "fr_outremer_commune_names.json"), encoding="utf-8"))
+    for k, v in om.items(): deps[k] = v["name"]
+    for c, n in om_names.items():
+        ins["communes"].setdefault(c, {"name": n, "pop": None})
     dep_of = lambda c: c[:3] if c.startswith("97") else c[:2]
     rows, feats = [], []
     for code, x in sorted(ins["communes"].items()):
-        if "PR_MD60" not in x or dep_of(code) not in deps: continue
+        if dep_of(code) not in deps or ("PR_MD60" not in x and dep_of(code) not in om): continue
         dp = dep_of(code); dx = ins["departements"].get(dp, {})
         f = geo.get(code); area = area_km2(f["geometry"]) if f else 0
         dens = x["pop"] / area if area and x.get("pop") else 0
         pu = pupils.get(code, {})
         did = f"FRA-{code}"
+        o = om.get(dp) if "PR_MD60" not in x else None
         rows.append({"District": x["name"], "Region": deps[dp], "Population": x.get("pop") or "",
-                     "Poverty rate (all ages)": f"{x['PR_MD60']:.1f}%",
+                     "Poverty rate (all ages)": f"{x['PR_MD60']:.1f}%" if not o else "",
+                     "Poverty rate (region, all ages)": f"{o['rate']:.1f}%" if o else "",
                      "Child poverty rate (département)": f"{dx['child']:.1f}%" if dx.get("child") is not None else "",
                      "Median standard of living (€ per year)": round(x["MED_SL"]) if x.get("MED_SL") else "",
-                     "Poverty note": "People below 60% of the national median standard of living, all ages, 2023 (INSEE, Filosofi); INSEE publishes no child rate by commune, so the département's rate for under-18s is given too",
+                     "Poverty note": (f"No commune figure: {deps[dp]}'s overall rate, {o['year']} (INSEE, {o['basis']}; people below 60% of mainland France's median standard of living)"
+                                      + ("" if dp == "972" else "; from a survey, so not comparable with the other départements' figures")) if o else
+                         "People below 60% of the national median standard of living, all ages, 2023 (INSEE, Filosofi); INSEE publishes no child rate by commune, so the département's rate for under-18s is given too",
                      "Enrollment": pu.get("total", ""), "Enrollment year": "2025-26 (nursery and primary schools)" if pu else "",
                      "Public school enrollment": pu.get("public", ""), "School system": "Commune (school buildings); Ministry of Education (teachers)",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
