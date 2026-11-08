@@ -296,9 +296,10 @@ window.SOURCES = [
       { title: "Children on family benefit: Statistics Poland, Local Data Bank (BDL), variable 259889: share of children aged 0-17 whose parents receive the family benefit, 2024", url: "https://bdl.stat.gov.pl/bdl/start" },
       { title: "Social assistance: Statistics Poland, Local Data Bank (BDL), variable 1548717: beneficiaries of community social assistance per 10,000 people, 2024", url: "https://bdl.stat.gov.pl/bdl/start" },
       { title: "Borders, population and density: Eurostat GISCO Local Administrative Units (LAU) 2024, simplified with mapshaper", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
+      { title: "Pupils: Ministry of National Education, SIO, “Uczniowie szkół w roku 2025”: pupils by school, 2025/26, summed by gmina (dane.gov.pl, “Dane jednostkowe przedszkoli, szkół i placówek oświatowych”)", url: "https://dane.gov.pl/pl/dataset/288" },
       { title: "Meetings: each council's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
     ],
-    note: "Built by data-prep/build_latam.py. Gminy are matched to borders by their Statistics Poland unit code."
+    note: "Built by data-prep/build_latam.py (pupils: data-prep/prep_poland_pupils.py). Gminy are matched to borders by their Statistics Poland unit code."
   },
   {
     only: "Japan",

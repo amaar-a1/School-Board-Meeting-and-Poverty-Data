@@ -946,14 +946,15 @@ def poland():
         pop = int(p["POP_2024"]) if p.get("POP_2024") else ""
         dens = p.get("POP_DENS_2024") or 0
         did = f"PL-{u}"
-        enr = pup.get(u, "")
+        pp = pup.get(u, {}); enr = pp.get("pupils", "")
         rows.append({"District": name, "Region": PL_VOIV.get(u[2:4], ""), "Population": pop,
                      "Percentage of Children in Low Income": f"{share[y]:.1f}%" if share else "", "Poverty year": y,
                      "Poverty note": "Share of children aged 0-17 whose parents receive the means-tested family benefit (zasiłek rodzinny), "
                                      f"{y} (Statistics Poland, Local Data Bank)" if share else "",
                      "Children on family benefit": round(kids[max(kids)]) if kids else "",
                      "Social assistance (% of people)": f"{sa[max(sa)] / 100:.1f}%" if sa else "",
-                     "Enrollment": enr, "Enrollment year": "2024-25 (primary schools)" if enr != "" else "",
+                     "Enrollment": enr, "Public school enrollment": pp.get("pupils_public", ""),
+                     "Enrollment year": f"{pp['year']} (primary schools, public and non-public)" if enr != "" else "",
                      "School system": f"Gmina ({PL_KIND[u[-1]]})",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
