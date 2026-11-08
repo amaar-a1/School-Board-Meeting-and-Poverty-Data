@@ -1,0 +1,67 @@
+{
+ "created": "2026-02-16T13:32:37Z",
+ "data_date": "2025-11-25",
+ "openness_score": 4,
+ "jsonld_download_url": "https://api.dane.gov.pl/resources/1254769,wykaz-szko-i-placowek-oswiatowych-wg-stanu-bazy-sio-na-30092025/jsonld",
+ "jsonld_file_size": 478467382,
+ "csv_file_size": 29124679,
+ "is_chart_creation_blocked": false,
+ "has_high_value_data": false,
+ "download_url": "https://api.dane.gov.pl/resources/1254769,wykaz-szko-i-placowek-oswiatowych-wg-stanu-bazy-sio-na-30092025/file",
+ "title": "Wykaz szkół i placówek oświatowych wg stanu bazy SIO na 30.09.2025",
+ "regions": [
+  {
+   "region_id": "85633723",
+   "hierarchy_label": "Polska",
+   "name": "Polska",
+   "is_additional": false
+  }
+ ],
+ "visualization_types": [
+  "table"
+ ],
+ "views_count": 4566,
+ "csv_download_url": "https://api.dane.gov.pl/resources/1254769,wykaz-szko-i-placowek-oswiatowych-wg-stanu-bazy-sio-na-30092025/csv",
+ "file_url": "https://api.dane.gov.pl/media/resources/20260216/Wykaz_szk%C3%B3%C5%82_i_plac%C3%B3wek_o%C5%9Bwiatowych_30.09.2025_.xlsx",
+ "has_high_value_data_from_ec_list": false,
+ "file_size": 18244988,
+ "downloads_count": 8136,
+ "has_dynamic_data": false,
+ "files": [
+  {
+   "openness_score": 2,
+   "file_size": 18244988,
+   "compressed_file_format": null,
+   "format": "xlsx",
+   "download_url": "https://api.dane.gov.pl/resources/1254769,wykaz-szko-i-placowek-oswiatowych-wg-stanu-bazy-sio-na-30092025/file"
+  },
+  {
+   "openness_score": 4,
+   "file_size": 478467382,
+   "compressed_file_format": null,
+   "format": "jsonld",
+   "download_url": "https://api.dane.gov.pl/resources/1254769,wykaz-szko-i-placowek-oswiatowych-wg-stanu-bazy-sio-na-30092025/jsonld"
+  },
+  {
+   "openness_score": 3,
+   "file_size": 29124679,
+   "compressed_file_format": null,
+   "format": "csv",
+   "download_url": "https://api.dane.gov.pl/resources/1254769,wykaz-szko-i-placowek-oswiatowych-wg-stanu-bazy-sio-na-30092025/csv"
+  }
+ ],
+ "media_type": "file",
+ "link": "https://api.dane.gov.pl/media/resources/20260216/Wykaz_szk%C3%B3%C5%82_i_plac%C3%B3wek_o%C5%9Bwiatowych_30.09.2025_.xlsx",
+ "description": "<p>Wykaz szkół i placówek oświatowych według stanu na dzień 30 września 2025 r. - dane z systemu informacji oświatowej (SIO). Zawiera m.in. dane adresowe szkół i placówek oświatowych.</p>",
+ "contains_protected_data": false,
+ "verified": "2026-02-16T14:21:25Z",
+ "special_signs": [],
+ "has_research_data": false,
+ "modified": "2026-02-16T13:56:58Z",
+ "language": "pl",
+ "csv_file_url": "https://api.dane.gov.pl/media/resources/20260216/Wykaz_szk%C3%B3%C5%82_i_plac%C3%B3wek_o%C5%9Bwiatowych_30.09.2025_.csv",
+ "category": "Nauka i Oświata",
+ "supplements": [],
+ "format": "xlsx",
+ "jsonld_file_url": "https://api.dane.gov.pl/media/resources/20260216/Wykaz_szk%C3%B3%C5%82_i_plac%C3%B3wek_o%C5%9Bwiatowych_30.09.2025_.jsonld"
+}

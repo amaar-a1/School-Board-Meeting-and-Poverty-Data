@@ -1,0 +1,51 @@
+{
+ "data_date": "2025-11-25",
+ "file_size": 17353635,
+ "files": [
+  {
+   "file_size": 17353635,
+   "download_url": "https://api.dane.gov.pl/resources/1254005,uczniowie-szko-w-roku-2025/file",
+   "compressed_file_format": null,
+   "openness_score": 2,
+   "format": "xlsx"
+  }
+ ],
+ "category": "Administracja Publiczna",
+ "has_high_value_data": false,
+ "created": "2026-02-16T08:18:46Z",
+ "jsonld_file_url": null,
+ "has_dynamic_data": false,
+ "downloads_count": 249,
+ "csv_download_url": null,
+ "csv_file_size": null,
+ "download_url": "https://api.dane.gov.pl/resources/1254005,uczniowie-szko-w-roku-2025/file",
+ "supplements": [],
+ "regions": [
+  {
+   "name": "Polska",
+   "region_id": "85633723",
+   "is_additional": false,
+   "hierarchy_label": "Polska"
+  }
+ ],
+ "is_chart_creation_blocked": false,
+ "language": "pl",
+ "verified": "2026-02-16T09:11:32Z",
+ "openness_score": 2,
+ "format": "xlsx",
+ "visualization_types": [],
+ "link": "https://api.dane.gov.pl/media/resources/20260216/Szkoly_2025.xlsx",
+ "has_research_data": false,
+ "title": "Uczniowie szkół w roku 2025",
+ "views_count": 303,
+ "jsonld_download_url": null,
+ "description": "<p>Dane statystyczne o uczniach szkół w roku szkolnym 2025/2026.</p>",
+ "jsonld_file_size": null,
+ "special_signs": [],
+ "modified": "2026-02-16T08:18:46Z",
+ "media_type": "file",
+ "file_url": "https://api.dane.gov.pl/media/resources/20260216/Szkoly_2025.xlsx",
+ "contains_protected_data": false,
+ "csv_file_url": null,
+ "has_high_value_data_from_ec_list": false
+}

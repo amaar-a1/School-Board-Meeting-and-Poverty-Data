@@ -1,0 +1,2 @@
+1254005 Uczniowie szkół w roku 2025 xlsx 17353635 https://api.dane.gov.pl/resources/1254005,uczniowie-szko-w-roku-2025/file
+1254769 Wykaz szkół i placówek oświatowych wg stanu bazy SIO na 30.09.2025 xlsx 18244988 https://api.dane.gov.pl/resources/1254769,wykaz-szko-i-placowek-oswiatowych-wg-stanu-bazy-sio-na-30092025/file
