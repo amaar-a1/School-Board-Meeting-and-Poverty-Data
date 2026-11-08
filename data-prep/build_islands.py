@@ -60,14 +60,20 @@ EXTRA = {
     "GIB": dict(name="Gibraltar", region="Europe and the North Atlantic", status="Territory of the United Kingdom", rate=1.0,
                 measure="Unemployment rate, a stand-in for poverty (CIA World Factbook, 2016 estimate)",
                 pop=29733, kids=5940, enr=6262, ey="September 2023 (government schools, Gibraltar Health Authority)", land=6.5),
-    "SJM": dict(name="Svalbard", region="Europe and the North Atlantic", status="Part of Norway", rate=None,
-                measure="No poverty or unemployment figure is published for Svalbard (Statistics Norway's income and labour statistics leave it out)",
+    # Svalbard: NAV's monthly tables count 14 (January 2025) and 11 (July 2025) people fully unemployed in "Svalbard and
+    # other areas" but suppress the rate; Statistics Norway counts about 2,500 people employed there (2022, Rapporter
+    # 2023/36: 383 more than in 2008, an 18% rise). 12.5 / (2,511 + 12.5) = 0.5%.
+    "SJM": dict(name="Svalbard", region="Europe and the North Atlantic", status="Part of Norway", rate=0.5,
+                measure="Unemployment rate, an estimate standing in for poverty: about 12 people fully unemployed (NAV, January and July 2025) "
+                        "out of about 2,500 in work (Statistics Norway, 2022); Norway's poverty statistics leave Svalbard out",
                 pop=2933, kids=None, enr=None, ey="", land=61022),
     "CHT": dict(name="Chatham Islands", region="Pacific", status="Part of New Zealand", rate=2.9,
                 measure="Unemployed people as a share of everyone aged 15 and over, a stand-in for poverty (Stats NZ, 2023 Census: 15 people)",
                 pop=615, kids=99, enr=None, ey="", land=966),
-    "PCN": dict(name="Pitcairn Islands", region="Pacific", status="Territory of the United Kingdom", rate=None,
-                measure="No poverty or unemployment figure is published for Pitcairn (about 50 people)",
+    # Pitcairn: the Pitcairn Island Economic Review (Solomon Leonard for the UK government, January 2014), paragraphs 11 and 234.
+    "PCN": dict(name="Pitcairn Islands", region="Pacific", status="Territory of the United Kingdom", rate=0.0,
+                measure="Unemployment rate, a stand-in for poverty: all 31 working-age adults held part-time government jobs (Pitcairn Island Economic Review, 2014); "
+                        "average household income was about NZ$27,000 a year, a third of New Zealand's",
                 pop=50, kids=None, enr=None, ey="", land=47),
     "TKL": dict(name="Tokelau", region="Pacific", status="Territory of New Zealand", rate=3.9,
                 measure="People below the basic-needs poverty line, all ages (Tokelau Household Income and Expenditure Survey, 2015/16)",
