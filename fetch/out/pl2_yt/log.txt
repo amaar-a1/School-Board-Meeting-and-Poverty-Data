@@ -1,0 +1,193 @@
+PL2 Warszawa -> Rada m.st. Warszawy 0
+PL2 Kraków -> Rada Miasta Krakowa - Przejrzysty Kraków 14
+PL2 Wrocław -> Akcja Miasto Wrocław 0
+PL2 Łódź -> Rada Miejska w Łodzi 0
+PL2 Poznań -> Miasto Poznań 0
+PL2 Szczecin -> Rada Miasta Szczecin 0
+PL2 Gdańsk -> Portal Miasta Gdańska 0
+PL2 Bydgoszcz -> Miasto Bydgoszcz 1
+PL2 Lublin -> Starostwo Powiatowe w Lublinie 0
+PL2 Katowice ->  
+PL2 Częstochowa ->  
+PL2 Radom -> Rada Miasta Szczecin 0
+PL2 Białystok -> Rada Miasta Białystok kanał nieoficjalny  1
+PL2 Gdynia -> Jakub Ubych - Rada Miasta Gdyni / Wykładowca / AI 0
+PL2 Rzeszów -> Rada Młodzieży Rzeszowa 0
+PL2 Sosnowiec -> SosnowiecTV - oficjalny kanał miasta 0
+PL2 Toruń ->  
+PL2 Gliwice -> Starostwo Powiatowe w Gliwicach 0
+PL2 Kielce -> Sesje Rady Miasta Kielce 0
+PL2 Bielsko-Biała ->  
+PL2 Olsztyn ->  
+PL2 Zabrze ->  
+PL2 Zielona Góra -> Marcin Pabierowski Prezydent Miasta Zielona Góra 0
+PL2 Ruda Śląska -> Rada Miasta Ruda Śląska 0
+PL2 Bytom -> Miasto Bytom 0
+PL2 Tychy ->  
+PL2 Dąbrowa Górnicza -> Młodzieżowa Rada Miasta Dąbrowa Górnicza 0
+PL2 Rybnik -> Miasto Rybnik 0
+PL2 Płock -> Sesja Rady Miasta Płocka - transmisja 0
+PL2 Opole -> Miasto Opole 0
+PL2 Tarnów -> Tarnów - Oficjalny Profil Miasta 0
+PL2 Gorzów Wielkopolski ->  
+PL2 Elbląg -> Gmina Elbląg 0
+PL2 Koszalin ->  
+PL2 Chorzów -> Miasto Chorzów 0
+PL2 Włocławek -> Gmina Włocławek 0
+PL2 Wałbrzych -> Rada Miejska Wałbrzycha 0
+PL2 Piaseczno -> Rada Miejska w Piasecznie 0
+PL2 Kalisz -> Urząd Miasta Kalisza 0
+PL2 Legnica -> Miasto Legnica 0
+PL2 Grudziądz -> Grudziądz UM 0
+PL2 Jaworzno -> Miasto Jaworzno 1
+PL2 Słupsk ->  
+PL2 Nowy Sącz -> Miasto Nowy Sącz - Sesje Rady Miasta 0
+PL2 Jelenia Góra ->  
+PL2 Jastrzębie-Zdrój -> Miasto Jastrzębie-Zdrój 0
+PL2 Piła -> Rada Powiatu Piła i Rada Miasta Piły. Samorządy? 0
+PL2 Siedlce -> Rada Siedlec 0
+PL2 Mysłowice ->  
+PL2 Wieliczka -> Gmina Wieliczki 0
+PL2 Ostrów Wielkopolski -> eSesje Rady Gminy - Gmina Ostrów Wielkopolski 0
+PL2 Lubin -> Sesje Rady Miejskiej w Lubsku 0
+PL2 Konin ->  
+PL2 Piotrków Trybunalski ->  
+PL2 Gniezno ->  
+PL2 Suwałki -> Miasto Suwałki 0
+PL2 Ostrowiec Świętokrzyski -> Urząd Miasta w Ostrowcu Świętokrzyskim 0
+PL2 Żory ->  
+PL2 Inowrocław -> Miasto Inowrocław 0
+PL2 Stargard ->  
+PL2 Pabianice -> Gmina Pabianice 0
+PL2 Pruszków -> Rada Miasta Pruszkowa 1
+PL2 Ełk -> Miasto Ełk 0
+PL2 Siemianowice Śląskie ->  
+PL2 Głogów -> Gmina Głogów 0
+PL2 Zamość -> Miasto Zamość 0
+PL2 Tarnowskie Góry ->  
+PL2 Leszno ->  
+PL2 Chełm -> e-SESJA Rady Powiatu w Chełmie 0
+PL2 Łomża ->  
+PL2 Tomaszów Mazowiecki ->  
+PL2 Tczew -> Miasto Tczew 0
+PL2 Mielec ->  
+PL2 Swarzędz ->  
+PL2 Przemyśl -> Miasto Przemyśl 0
+PL2 Grodzisk Mazowiecki ->  
+PL2 Stalowa Wola -> Miasto Stalowa Wola 1
+PL2 Biała Podlaska -> Miasto Biała Podlaska 9
+PL2 Będzin -> Urząd Miasta Będzin 0
+PL2 Kędzierzyn-Koźle -> Sesja Rady Miasta Kędzierzyn-Koźle 66
+PL2 Zgierz -> Urząd Miasta Zgierza 0
+PL2 Świdnica -> Urząd Miejski Świdnica 0
+PL2 Nysa -> Miasto Nysa 0
+PL2 Legionowo ->  
+PL2 Piekary Śląskie ->  
+PL2 Rumia -> Sesje Rady Miejskiej Rumi - Urząd Miasta Rumi 1
+PL2 Pszczyna ->  
+PL2 Żukowo -> Gmina Żukowo 0
+PL2 Bełchatów ->  
+PL2 Wołomin ->  
+PL2 Września -> Września - Miasto w Centrum Zainteresowania 0
+PL2 Zawiercie ->  
+PL2 Racibórz -> Miasto Racibórz 0
+PL2 Olkusz -> Starostwo Powiatowe w Olkuszu 0
+PL2 Ostrołęka -> Urząd Miasta Ostrołęki 0
+PL2 Jarocin -> Gmina Jarocin 0
+PL2 Wejherowo -> Wejherowo Miasto do Życia 0
+PL2 Marki -> Miasto Marki 0
+PL2 Myślenice -> Miasto i Gmina Myślenice 0
+PL2 Starogard Gdański ->  
+PL2 Świętochłowice -> Urząd Miejski w Świętochłowicach 0
+PL2 Wodzisław Śląski -> Miasto Wodzisław Śląski 0
+PL2 Ząbki -> Miasto Ząbki 0
+PL2 Czechowice-Dziedzice -> Gmina Czechowice-Dziedzice 1
+PL2 Skierniewice ->  
+PL2 Starachowice -> Starostwo Powiatowe w Starachowicach 0
+PL2 Skawina -> Urząd Miasta i Gminy w Skawinie 0
+PL2 Krosno ->  
+PL2 Chrzanów -> Rada Miasta Chrzanów - transmisje z sesji 0
+PL2 Długołęka -> Rada Gminy Długołęka 0
+PL2 Puławy ->  
+PL2 Otwock -> Rada Powiatu Otwockiego 0
+PL2 Tarnobrzeg ->  
+PL2 Kołobrzeg -> Urząd Miasta Kołobrzeg 47
+PL2 Dębica -> Urząd Gminy Dębica 0
+PL2 Radomsko -> Urząd Miejski w Radomiu 0
+PL2 Śrem ->  
+PL2 Andrychów ->  
+PL2 Ciechanów -> Urząd Gminy Ciechanów 0
+PL2 Mikołów -> Sesje Rady Miasta Mikołów Rm 0
+PL2 Kutno -> Gmina Kutno 0
+PL2 Mińsk Mazowiecki ->  
+PL2 Skarżysko-Kamienna -> Urząd Miasta Skarżysko Kamienna 0
+PL2 Wyszków -> Gmina Wyszków 0
+PL2 Czerwionka-Leszczyny -> Gmina i Miasto Czerwionka-Leszczyny 0
+PL2 Świnoujście ->  
+PL2 Krotoszyn -> Rada Miejska w Krotoszynie 0
+PL2 Sieradz ->  
+PL2 Police ->  
+PL2 Lesznowola ->  
+PL2 Pruszcz Gdański ->  
+PL2 Chojnice -> Gmina Chojnice 0
+PL2 Bolesławiec -> Sesje Rady Gminy w Bolesławcu 0
+PL2 Żyrardów ->  
+PL2 Zduńska Wola ->  
+PL2 Kwidzyn -> Sesja Rady Gminy Kwidzyn 0
+PL2 Szczecinek ->  
+PL2 Malbork -> Sesje Malbork 0
+PL2 Goleniów -> Gmina Goleniów 0
+PL2 Kórnik -> Rada Miasta i Gminy Kórnik 0
+PL2 Nowa Sól ->  
+PL2 Knurów ->  
+PL2 Komorniki -> Gmina Komorniki  0
+PL2 Brzesko -> Posiedzenia Sesji Rady Miejskiej Brześć Kujawski 0
+PL2 Świdnik -> Urząd Miasta Świdnik TV 0
+PL2 Jarosław -> Urząd Miasta Jarosławia 0
+PL2 Wadowice -> Relacje z sesji i komisji Rady Miejskiej w Wadowicach 0
+PL2 Dopiewo ->  
+PL2 Aleksandrów Łódzki -> Rada Miejska w Aleksandrowie Łódzkim 0
+PL2 Oświęcim -> Gmina Oświęcim 0
+PL2 Kartuzy -> Starostwo Powiatowe w Kartuzach 0
+PL2 Mosina -> Gmina Mosina 0
+PL2 Kluczbork -> Rada Powiatu w Kluczborku 0
+PL2 Oleśnica -> Gmina Oleśnica 0
+PL2 Lębork -> Urząd Miejski w Lęborku 0
+PL2 Żary -> Starostwo Powiatowe Żary 0
+PL2 Tarnowo Podgórne -> Puls Gminy Tarnowo Podgórne 1
+PL2 Sanok -> Miasto Sanok 0
+PL2 Brzeg -> UM Brzeg Dolny 0
+PL2 Niepołomice -> KWW Niepołomice Nasza Wspólna Gmina  0
+PL2 Oborniki -> Gmina Oborniki Śląskie 0
+PL2 Nowy Targ -> Nasze Miasto Nowy Targ 0
+PL2 Środa Wielkopolska -> Środa Wielkopolska Gmina 0
+PL2 Luboń ->  
+PL2 Sochaczew -> Miasto Sochaczew 0
+PL2 Jasło -> Miasto Jasło 0
+PL2 Trzebinia -> Gmina Trzebinia 0
+PL2 Kęty -> Gmina Kęty 0
+PL2 Pruszcz Gdański ->  
+PL2 Oława ->  
+PL2 Łomianki -> Rada Miejska Łomianki 0
+PL2 Cieszyn -> Miasto Cieszyn 0
+PL2 Świecie -> Świecie .UM 0
+PL2 Opoczno -> Gmina Opoczno 84
+PL2 Końskie ->  
+PL2 Ostróda -> Rada Miasta Ostróda 0
+PL2 Iława -> Gmina Iława 0
+PL2 Radzymin ->  
+PL2 Sopot ->  
+PL2 Mława ->  
+PL2 Dzierżoniów ->  
+PL2 Krzeszowice -> Urząd Gminy Krzeszów nad Sanem 0
+PL2 Ożarów Mazowiecki -> Urząd Miejski w Ożarowie Mazowieckim 0
+PL2 Wolsztyn -> Urząd Miejski w Wolsztynie 0
+PL2 Kraśnik -> Miasto Kraśnik 0
+PL2 Gryfino ->  
+PL2 Wejherowo -> Wejherowo Miasto do Życia 0
+PL2 Busko-Zdrój ->  
+PL2 Siechnice -> Urząd Miejski w Siechnicach 0
+PL2 Kąty Wrocławskie -> Gmina Kąty Wrocławskie - transmisja sesji 0
+PL2 Dobra (Szczecińska) -> Transmisje Sesji Rady Gminy Dobra 0
+
+---
