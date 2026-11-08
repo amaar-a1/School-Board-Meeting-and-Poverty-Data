@@ -1,0 +1,5 @@
+features 1642 {'adm1_psgc': 1000000000, 'adm2_psgc': 1001300000, 'adm3_psgc': 1001301000, 'adm3_en': 'Baungon', 'geo_level': 'Mun', 'len_crs': 137250, 'area_crs': 421498505, 'len_km': 137, 'area_km2': 421}
+mapshaper 0 [simplify] Repaired 0 intersections; 418 intersections could not be repaired
+[o] Wrote fetch/out/ph5/ph_municities.json
+
+ok t2a
