@@ -313,6 +313,19 @@ window.SOURCES = [
     note: "Built by data-prep/prep_japan.py and data-prep/build_latam.py. Municipalities are matched to borders and figures by their local government code; designated cities' wards are merged into their city."
   },
   {
+    only: "Portugal",
+    group: "Portugal: municipalities, minimum income and population",
+    items: [
+      { title: "Minimum income (stand-in): INE, social insertion income (RSI) beneficiaries per 1,000 people of working age (indicator 0013420), 2025", url: "https://www.ine.pt/ine/json_indicador/pindica.jsp?op=2&varcd=0013420&lang=PT" },
+      { title: "Family benefit: INE, children and young people receiving the abono de família (indicator 0010284), 2022", url: "https://www.ine.pt/ine/json_indicador/pindica.jsp?op=2&varcd=0010284&lang=PT" },
+      { title: "Median income: INE, median gross declared income per taxpayer (indicator 0012749), 2024", url: "https://www.ine.pt/ine/json_indicador/pindica.jsp?op=2&varcd=0012749&lang=PT" },
+      { title: "Population by age: INE, annual population estimates (indicator 0008273), 2023", url: "https://www.ine.pt/ine/json_indicador/pindica.jsp?op=2&varcd=0008273&lang=PT" },
+      { title: "Borders: Eurostat GISCO Local Administrative Units (LAU) 2024 (parishes), merged into municipalities with mapshaper", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
+      { title: "Meetings (stand-in): each municipality's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_portugal.py and data-prep/build_latam.py. Municipalities are matched by their code (DTMN)."
+  },
+  {
     only: "Ecuador",
     group: "Ecuador: cantons, poverty, population and pupils",
     items: [

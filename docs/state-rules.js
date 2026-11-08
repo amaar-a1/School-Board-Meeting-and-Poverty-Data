@@ -286,6 +286,17 @@ window.STATE_RULES = {
     ],
     note: "Check the current law and the board's own rules before relying on this."
   },
+  portugal: {
+    title: "Rules for municipal assembly and council meetings",
+    checked: "November 8, 2026",
+    laws: [
+      { state: "Portugal", covers: "Municipal assemblies and councils", threshold: "",
+        rule: "Meetings of the municipal assembly are public, and the council (câmara municipal) holds at least one public meeting a month (Law 75/2013, art. 49); since 2021 sessions may be streamed, and many municipalities do so. Minutes are published." },
+      { state: "Portugal", covers: "Schools", threshold: "",
+        rule: "Since Decree-Law 21/2019, municipalities run school buildings, non-teaching staff, meals and transport for pre-school and basic education; the Ministry of Education employs teachers. Each municipality has an education council (conselho municipal de educação)." }
+    ],
+    note: "Check the current law and the municipality's own rules before relying on this."
+  },
   ecuador: {
     title: "Rules for cantonal council (concejo municipal) meetings",
     checked: "November 7, 2026",

@@ -2,7 +2,7 @@
 // colored by the site's data. app.js calls SiteMap.show() when the tab or the data set changes.
 (function () {
   const $ = (id) => document.getElementById(id);
-  const LAYERS = ["world", "unsd", "elsd", "territories", "scsd", "canada", "spm", "uk", "ireland", "norway", "sweden", "finland", "denmark", "netherlands", "germany", "new-zealand", "islands", "iceland", "switzerland", "chile", "colombia", "brazil", "mexico", "peru", "spain", "france", "ecuador", "italy", "poland", "japan", "canada-fn"];   // files in data/map/; scsd only when ticked
+  const LAYERS = ["world", "unsd", "elsd", "territories", "scsd", "canada", "spm", "uk", "ireland", "norway", "sweden", "finland", "denmark", "netherlands", "germany", "new-zealand", "islands", "iceland", "switzerland", "chile", "colombia", "brazil", "mexico", "peru", "spain", "france", "ecuador", "italy", "poland", "japan", "portugal", "canada-fn"];   // files in data/map/; scsd only when ticked
   // Canadian boards overlap (public and Catholic, English and French). The main layer shows one
   // board per place; "canada2" holds the overlapping ones and shows when its box is ticked.
   // Quebec's French boards cover all of Quebec; elsewhere the public (or English) board does.
@@ -11,11 +11,11 @@
     r["Board type"] === (r.Province === "Quebec" ? "French" : "English"));
   // The Nordic countries and the Netherlands: municipalities, IDs like "NO-0301" (map file per country).
   // Also Germany, New Zealand and the island countries ("ISLE-JAM"), which share the same handling.
-  const EU = { NO: "norway", SE: "sweden", FI: "finland", DK: "denmark", NL: "netherlands", DE: "germany", NZ: "new-zealand", ISLE: "islands", IS: "iceland", CH: "switzerland", CL: "chile", CO: "colombia", MX: "mexico", BR: "brazil", PE: "peru", ES: "spain", FRA: "france", EC: "ecuador", IT: "italy", PL: "poland", JP: "japan" };
-  const EU_NAMES = { NO: "Norway", SE: "Sweden", FI: "Finland", DK: "Denmark", NL: "Netherlands", DE: "Germany", NZ: "New Zealand", ISLE: "the islands and microstates", IS: "Iceland", CH: "Switzerland", CL: "Chile", CO: "Colombia", MX: "Mexico", BR: "Brazil", PE: "Peru", ES: "Spain", FRA: "France", EC: "Ecuador", IT: "Italy", PL: "Poland", JP: "Japan" };
+  const EU = { NO: "norway", SE: "sweden", FI: "finland", DK: "denmark", NL: "netherlands", DE: "germany", NZ: "new-zealand", ISLE: "islands", IS: "iceland", CH: "switzerland", CL: "chile", CO: "colombia", MX: "mexico", BR: "brazil", PE: "peru", ES: "spain", FRA: "france", EC: "ecuador", IT: "italy", PL: "poland", JP: "japan", PT: "portugal" };
+  const EU_NAMES = { NO: "Norway", SE: "Sweden", FI: "Finland", DK: "Denmark", NL: "Netherlands", DE: "Germany", NZ: "New Zealand", ISLE: "the islands and microstates", IS: "Iceland", CH: "Switzerland", CL: "Chile", CO: "Colombia", MX: "Mexico", BR: "Brazil", PE: "Peru", ES: "Spain", FRA: "France", EC: "Ecuador", IT: "Italy", PL: "Poland", JP: "Japan", PT: "Portugal" };
   const EU_POV = "Percentage of Children in Low Income";
   // Countries whose map figure is an all-ages poverty rate (no child rate by place).
-  const ALL_AGES = new Set(["CL", "CO", "MX", "BR", "PE", "FRA", "EC", "IT", "JP"]);
+  const ALL_AGES = new Set(["CL", "CO", "MX", "BR", "PE", "FRA", "EC", "IT", "JP", "PT"]);
   const povCol = (eu) => (eu === "ISLE" ? "Poverty rate or stand-in" : ALL_AGES.has(eu) ? "Poverty rate (all ages)" : EU_POV);
   const euOf = (id) => { const c = String(id).split("-")[0]; return String(id).includes("-") && EU[c] ? c : null; };
   const DRAW = ["world", "unsd", "elsd", "territories", "scsd", "canada", "canada2", "canada-fn", "spm", "uk", "ireland", ...Object.values(EU)];
@@ -64,8 +64,11 @@
     "Italy": [[35.4, 6.6], [47.1, 18.6]],
     "Poland": [[49.0, 14.1], [54.9, 24.2]],
     "Japan": [[24.0, 122.9], [45.6, 146.0]],
+    "Portugal": [[32.6, -31.3], [42.2, -6.2]],
     World: [[-58, -170], [75, 180]]
   };
+  // Countries whose poverty figure is a welfare rate, far lower than a poverty rate: a map scale of their own.
+  const OWN_SCALE = { JP: "welfare", PT: "welfarePT" };
   const SCALES = {
     poverty: {
       column: "Percentage of Children Ages 5-17 in Poverty",
@@ -79,6 +82,11 @@
       breaks: [0.5, 1, 1.5, 2, 3],
       colors: ["#fef0d9", "#fdd49e", "#fdbb84", "#fc8d59", "#e34a33", "#b30000"],
       labels: ["Under 0.5%", "0.5–1%", "1–1.5%", "1.5–2%", "2–3%", "3% or more"]
+    },
+    welfarePT: {
+      breaks: [1, 2, 3, 5, 8],
+      colors: ["#fef0d9", "#fdd49e", "#fdbb84", "#fc8d59", "#e34a33", "#b30000"],
+      labels: ["Under 1%", "1–2%", "2–3%", "3–5%", "5–8%", "8% or more"]
     },
     // Comparable across countries: where a place falls among its own country's places (app.js adds it).
     rank: {
@@ -216,7 +224,7 @@
     if (metric === "meetings" && row && !(v > 0) && toNumber(row["Other Board Meetings"]) > 0) v = toNumber(row["Other Board Meetings"]);
     if (metric === "meetings" && isNaN(v)) v = 0;   // no meetings found counts as 0
     if (isNaN(v)) return NO_DATA;
-    const s2 = metric === "poverty" && euOf(id) === "JP" ? SCALES.welfare : sc;
+    const s2 = metric === "poverty" && OWN_SCALE[euOf(id)] ? SCALES[OWN_SCALE[euOf(id)]] : sc;
     const i = s2.breaks.findIndex((b) => v < b);
     return s2.colors[i === -1 ? s2.colors.length - 1 : i];
   }
@@ -298,7 +306,7 @@
         : !isNaN(iePov) && eu === "FRA" ? `Commune poverty rate: not published<br>Poverty rate of the whole département (all ages): ${iePov.toFixed(1)}%<br>`
         : !isNaN(iePov) ? `Poverty rate (all ages, its region): ${iePov.toFixed(1)}%<br>Unemployment (Census 2022): ${esc(r["Unemployment rate (Census 2022)"] || "–")}<br>`
         : isNaN(pov) && !isNaN(unemp) ? `Unemployment (stand-in for poverty): ${unemp.toFixed(1)}% (2015 est.)<br>`
-        : `${ukPov ? "Children under 16 in low income" : eu === "ISLE" ? esc(r["Poverty measure"] || "Poverty") : ALL_AGES.has(eu) ? `Poverty (${eu === "JP" ? "welfare recipients, all ages, FY2024" : eu === "IT" ? "stand-in: filers with income of €10,000 or less, 2023" : eu === "FRA" ? "all ages, 60% of median, 2023" : eu === "EC" ? "all ages, consumption, 2014 estimate" : eu === "CL" ? "all ages, income, 2024" : eu === "BR" ? "all ages, income up to ½ minimum wage per person, 2022" : eu === "PE" ? "all ages, monetary, 2018" : eu === "MX" ? "all ages, multidimensional, 2020" : "all ages, multidimensional, 2018"})` : eu ? `Children in low income (${{ NO: "0–17, 2022–24", SE: "0–19, 2024", FI: "under 18", DK: "0–17, 50% line, 2024", NL: "CBS, 2024", DE: "under 15 on SGB II benefits, 2023", NZ: "60% line, 2025", IS: "national rate", CH: "0–17 on social assistance", ES: "under 18, 60% line, 2024", CL: "all ages, income, 2024", CO: "all ages, multidimensional, 2018", PL: "0–17 on family benefit, 2024" }[eu]})` : "Child poverty"}: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>`) +
+        : `${ukPov ? "Children under 16 in low income" : eu === "ISLE" ? esc(r["Poverty measure"] || "Poverty") : ALL_AGES.has(eu) ? `Poverty (${eu === "PT" ? "stand-in: minimum-income (RSI) recipients per 100 of working age, 2025" : eu === "JP" ? "welfare recipients, all ages, FY2024" : eu === "IT" ? "stand-in: filers with income of €10,000 or less, 2023" : eu === "FRA" ? "all ages, 60% of median, 2023" : eu === "EC" ? "all ages, consumption, 2014 estimate" : eu === "CL" ? "all ages, income, 2024" : eu === "BR" ? "all ages, income up to ½ minimum wage per person, 2022" : eu === "PE" ? "all ages, monetary, 2018" : eu === "MX" ? "all ages, multidimensional, 2020" : "all ages, multidimensional, 2018"})` : eu ? `Children in low income (${{ NO: "0–17, 2022–24", SE: "0–19, 2024", FI: "under 18", DK: "0–17, 50% line, 2024", NL: "CBS, 2024", DE: "under 15 on SGB II benefits, 2023", NZ: "60% line, 2025", IS: "national rate", CH: "0–17 on social assistance", ES: "under 18, 60% line, 2024", CL: "all ages, income, 2024", CO: "all ages, multidimensional, 2018", PL: "0–17 on family benefit, 2024" }[eu]})` : "Child poverty"}: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>`) +
       (!isNaN(frKids) ? `Children under 18 in poverty, whole département: ${frKids.toFixed(1)}%<br>` : "") +
       (isNaN(povValue(r)) && !isNaN(povValue(r, true)) ? `Shown on the map: ${povValue(r, true).toFixed(1)}% (${r["Unmet basic needs (NBI, 2010)"] ? "unmet basic needs, 2010" : `its latest earlier figure, ${String(r["Poverty by year"] || "").split(";").map((x) => x.trim().split(":")[0]).sort().pop()}`})<br>` : "") +
       `Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}` +
@@ -351,7 +359,10 @@
         `<span class="map-faded">Locale: the US uses NCES's locale codes and Canada Statistics Canada's population centre sizes; elsewhere it's estimated from population density (see the By locale tab)</span>`]
       : sc.labels.map((l, i) => `<span><i style="background:${sc.colors[i]}"></i>${l}</span>`);
     const jpv = current && current.country === "JP";
-    if (jpv && $("map-metric").value === "poverty") items.splice(0, items.length, ...SCALES.welfare.labels.map((l, i) => `<span><i style="background:${SCALES.welfare.colors[i]}"></i>${l}</span>`));
+    const own = current && OWN_SCALE[current.country];
+    if (own && $("map-metric").value === "poverty") items.splice(0, items.length, ...SCALES[own].labels.map((l, i) => `<span><i style="background:${SCALES[own].colors[i]}"></i>${l}</span>`));
+    if ((current && (current.country === "PT" || current.combined)) && $("map-metric").value === "poverty")
+      items.push(`<span class="map-faded">Portugal: people on the minimum-income benefit (RSI) per 100 of working age, on its own scale${current.country === "PT" ? "" : " (under 1% to 8% or more)"}</span>`);
     if ((jpv || (current && current.combined)) && $("map-metric").value === "poverty")
       items.push(`<span class="map-faded">Japan: the welfare rate (people on public assistance), on its own scale${jpv ? "" : " (under 0.5% to 3% or more)"}; published for designated and core cities, and each prefecture's rate elsewhere</span>`);
     const ca = current && (current.country === "CA" || current.parent || current.combined);

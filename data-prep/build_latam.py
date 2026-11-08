@@ -82,7 +82,7 @@ def centroid(geom):
 
 
 _CACHE = {}
-DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan"}
+DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium"}
 # Brazil: municipal chambers (câmara municipal) and their education committees, in Portuguese.
 RULES = {"BR": (re.compile(r"comiss[ãa]o (permanente )?de educa[çc][ãa]o|educa[çc][ãa]o.*comiss[ãa]o", re.I),
                 re.compile(r"sess[ãa]o|c[âa]mara", re.I),
@@ -349,7 +349,7 @@ def write(cc, key, rows, feats):
             "Population", "Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
     extra = [c for c in ("Province", "Autonomous community", "Children under 18 (estimated)", "Poverty year", "Poverty range", "Poverty rate (region, all ages)", ES_EST,
-                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)", "Welfare rate basis", "Unemployment rate (2020 census)", "Children under 15") if any(r.get(c) not in (None, "") for r in rows)]
+                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)", "Welfare rate basis", "Unemployment rate (2020 census)", "Children under 15", "Children on family benefit (% of under-20s)", "Median income (€ per taxpayer)") if any(r.get(c) not in (None, "") for r in rows)]
     pov = "Percentage of Children in Low Income" if any(r.get("Percentage of Children in Low Income") for r in rows) else "Poverty rate (all ages)"
     cols = [c for c in cols if c not in ("Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)") or any(r.get(c) not in (None, "") for r in rows)]
     cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
@@ -999,6 +999,40 @@ def japan():
                      "Meetings by year": years if n else ""})
         if f: feats.append({"type": "Feature", "properties": {"id": f"JP-{c}", "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
     write("JP", "japan", rows, feats)
+
+
+PT_DIST = {"01": "Aveiro", "02": "Beja", "03": "Braga", "04": "Bragança", "05": "Castelo Branco", "06": "Coimbra", "07": "Évora", "08": "Faro",
+           "09": "Guarda", "10": "Leiria", "11": "Lisboa", "12": "Portalegre", "13": "Porto", "14": "Santarém", "15": "Setúbal",
+           "16": "Viana do Castelo", "17": "Vila Real", "18": "Viseu", "31": "Madeira", "32": "Madeira"}
+
+
+def portugal():
+    """308 municipalities (municípios). Since 2019 they run more of public schooling (buildings, non-teaching staff,
+    meals, transport for pre-school and basic education); the Ministry of Education employs teachers. The municipal
+    assembly (assembleia municipal) and council (câmara municipal) meet in public; their sessions stand in for
+    meetings. Poverty stand-in: social insertion income (RSI) beneficiaries per 100 people of working age, 2025."""
+    d = os.path.join(IN, "portugal")
+    ine = json.load(open(os.path.join(d, "pt_ine.json"), encoding="utf-8"))
+    geo = {f["properties"]["muni"]: f for f in json.load(open(os.path.join(d, "pt_municipalities.geojson"), encoding="utf-8"))["features"]}
+    rows, feats = [], []
+    for code, x in sorted(ine.items()):
+        f = geo.get(code); p = f["properties"] if f else {}
+        pop = x.get("pop") or p.get("POP") or 0
+        dens = pop / p["AREA"] if pop and p.get("AREA") else 0
+        region = PT_DIST.get(code[:2]) or ("Açores" if code[:2] >= "41" else "")
+        did = f"PT-{code}"
+        rsi = x.get("rsi_per1000")
+        rows.append({"District": x["name"], "Region": region, "Population": round(pop) if pop else "",
+                     "Poverty rate (all ages)": f"{rsi / 10:.2f}%" if rsi is not None else "",
+                     "Poverty note": f"Stand-in: people receiving the social insertion income (rendimento social de inserção), Portugal's minimum-income benefit, "
+                                     f"per 100 people of working age, {x.get('rsi_per1000_year', '')} (INE, from Social Security records); Portugal publishes no poverty rate by municipality",
+                     "Children on family benefit (% of under-20s)": f"{100 * x['abono_children'] / x['u20']:.0f}%" if x.get("abono_children") and x.get("u20") else "",
+                     "Median income (€ per taxpayer)": round(x["median_income"]) if x.get("median_income") else "",
+                     "Children under 18 (estimated)": round(x["u18"]) if x.get("u18") else "",
+                     "School system": "Ministry of Education (teachers); municipality (buildings, staff, meals, transport)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
+        if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": x["name"]}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    write("PT", "portugal", rows, feats)
 
 
 EC_PROV_CAPS = {}
