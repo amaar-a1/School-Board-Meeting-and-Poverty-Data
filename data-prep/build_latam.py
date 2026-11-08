@@ -218,6 +218,9 @@ def meetings(cc, did):
 # Channels checked by hand and found to be another place's (by channel URL). The search matched on the name, and
 # many of these names exist in other Spanish-speaking countries too, or in both Chile and Colombia.
 NOT_CHANNELS = {
+    # Philippines: the city council of Alaminos (Pangasinan) found for Alaminos (Laguna), and Sogod's council for Leyte
+    "PH": {"https://www.youtube.com/channel/UCBKHEP2wS5tUvztcvvO_zbg",
+           "https://www.youtube.com/channel/UCA6Oz5eN0eNmiKC9agQ6iEw"},
     # Portugal: Brazilian municipal chambers with a Portuguese town's name (checked by their videos' titles)
     "PT": {"https://www.youtube.com/channel/UC4Q-Xy8kTVVcUxlqSprl6Kw",   # Rolim de Moura (Rondônia), not Moura
            "https://www.youtube.com/channel/UCWXrV0wJl28CErzmErc4BfQ",   # São Vicente (São Paulo), not São Vicente (Madeira)
