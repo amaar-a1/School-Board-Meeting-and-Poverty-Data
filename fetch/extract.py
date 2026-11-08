@@ -1,12 +1,18 @@
 # Temporary: where Belgium's integration-income dashboard (stat.mi-is.be) gets its data by municipality; and
 # Portugal's pupils by municipality (INE indicators found through dados.gov.pt).
 import html, json, os, re, time, traceback, urllib.parse, urllib.request
-OUT = "fetch/out/bp4"; os.makedirs(OUT, exist_ok=True)
+OUT = "fetch/out/bp5"; os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)", "Accept": "*/*"}
 log = open(f"{OUT}/log.txt", "w")
 def get(u, t=200, hdr=None):
-    with urllib.request.urlopen(urllib.request.Request(u, headers={**UA, **(hdr or {})}), timeout=t) as r:
-        return r.read()
+    err = None
+    for a in range(4):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(u, headers={**UA, **(hdr or {})}), timeout=t) as r:
+                return r.read()
+        except Exception as e:
+            err = e; time.sleep(30 * (a + 1))
+    raise err
 def step(name, f):
     try: log.write(f"== {name}\n{f()}\n\n")
     except Exception: log.write(f"== {name}\nERR {traceback.format_exc()[-1500:]}\n\n")
@@ -49,5 +55,4 @@ def pt_pupils():
             if v and re.search(r"matricul|alunos", ds.get("title") or "", re.I): out.append(f"{v} | {ds.get('title')}")
         time.sleep(1)
     return "\n".join(sorted(set(out)))
-step("Portugal: pupils indicators", pt_pupils)
 log.close()
