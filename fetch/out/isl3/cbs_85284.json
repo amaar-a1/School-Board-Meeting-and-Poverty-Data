@@ -1,0 +1,365 @@
+{
+  "odata.metadata":"https://opendata.cbs.nl/ODataApi/OData/85284NED/$metadata#Cbs.OData.WebAPI.TypedDataSet","value":[
+    {
+      "ID":0,"InkomensgrensCN":"T001587","CaribischNederland":"CN01  ","Perioden":"2018JJ00","ParticuliereHuishoudens_1":10150,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":23650,"PersonenRelatief_4":null,"Kinderen_5":5100,"KinderenRelatief_6":null
+    },{
+      "ID":1,"InkomensgrensCN":"T001587","CaribischNederland":"CN01  ","Perioden":"2019JJ00","ParticuliereHuishoudens_1":10600,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":24300,"PersonenRelatief_4":null,"Kinderen_5":5150,"KinderenRelatief_6":null
+    },{
+      "ID":2,"InkomensgrensCN":"T001587","CaribischNederland":"CN01  ","Perioden":"2020JJ00","ParticuliereHuishoudens_1":10950,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":25100,"PersonenRelatief_4":null,"Kinderen_5":5300,"KinderenRelatief_6":null
+    },{
+      "ID":3,"InkomensgrensCN":"T001587","CaribischNederland":"CN01  ","Perioden":"2021JJ00","ParticuliereHuishoudens_1":11300,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":25900,"PersonenRelatief_4":null,"Kinderen_5":5450,"KinderenRelatief_6":null
+    },{
+      "ID":4,"InkomensgrensCN":"T001587","CaribischNederland":"CN01  ","Perioden":"2022JJ00","ParticuliereHuishoudens_1":12050,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":27150,"PersonenRelatief_4":null,"Kinderen_5":5600,"KinderenRelatief_6":null
+    },{
+      "ID":5,"InkomensgrensCN":"T001587","CaribischNederland":"GM9001","Perioden":"2018JJ00","ParticuliereHuishoudens_1":8100,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":19150,"PersonenRelatief_4":null,"Kinderen_5":4050,"KinderenRelatief_6":null
+    },{
+      "ID":6,"InkomensgrensCN":"T001587","CaribischNederland":"GM9001","Perioden":"2019JJ00","ParticuliereHuishoudens_1":8500,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":19800,"PersonenRelatief_4":null,"Kinderen_5":4100,"KinderenRelatief_6":null
+    },{
+      "ID":7,"InkomensgrensCN":"T001587","CaribischNederland":"GM9001","Perioden":"2020JJ00","ParticuliereHuishoudens_1":8900,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":20550,"PersonenRelatief_4":null,"Kinderen_5":4250,"KinderenRelatief_6":null
+    },{
+      "ID":8,"InkomensgrensCN":"T001587","CaribischNederland":"GM9001","Perioden":"2021JJ00","ParticuliereHuishoudens_1":9200,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":21250,"PersonenRelatief_4":null,"Kinderen_5":4400,"KinderenRelatief_6":null
+    },{
+      "ID":9,"InkomensgrensCN":"T001587","CaribischNederland":"GM9001","Perioden":"2022JJ00","ParticuliereHuishoudens_1":9850,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":22400,"PersonenRelatief_4":null,"Kinderen_5":4550,"KinderenRelatief_6":null
+    },{
+      "ID":10,"InkomensgrensCN":"T001587","CaribischNederland":"GM9002","Perioden":"2018JJ00","ParticuliereHuishoudens_1":1300,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":2900,"PersonenRelatief_4":null,"Kinderen_5":700,"KinderenRelatief_6":null
+    },{
+      "ID":11,"InkomensgrensCN":"T001587","CaribischNederland":"GM9002","Perioden":"2019JJ00","ParticuliereHuishoudens_1":1350,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":2900,"PersonenRelatief_4":null,"Kinderen_5":700,"KinderenRelatief_6":null
+    },{
+      "ID":12,"InkomensgrensCN":"T001587","CaribischNederland":"GM9002","Perioden":"2020JJ00","ParticuliereHuishoudens_1":1300,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":2950,"PersonenRelatief_4":null,"Kinderen_5":700,"KinderenRelatief_6":null
+    },{
+      "ID":13,"InkomensgrensCN":"T001587","CaribischNederland":"GM9002","Perioden":"2021JJ00","ParticuliereHuishoudens_1":1350,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":3000,"PersonenRelatief_4":null,"Kinderen_5":700,"KinderenRelatief_6":null
+    },{
+      "ID":14,"InkomensgrensCN":"T001587","CaribischNederland":"GM9002","Perioden":"2022JJ00","ParticuliereHuishoudens_1":1400,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":3050,"PersonenRelatief_4":null,"Kinderen_5":700,"KinderenRelatief_6":null
+    },{
+      "ID":15,"InkomensgrensCN":"T001587","CaribischNederland":"GM9003","Perioden":"2018JJ00","ParticuliereHuishoudens_1":750,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":1600,"PersonenRelatief_4":null,"Kinderen_5":350,"KinderenRelatief_6":null
+    },{
+      "ID":16,"InkomensgrensCN":"T001587","CaribischNederland":"GM9003","Perioden":"2019JJ00","ParticuliereHuishoudens_1":750,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":1600,"PersonenRelatief_4":null,"Kinderen_5":350,"KinderenRelatief_6":null
+    },{
+      "ID":17,"InkomensgrensCN":"T001587","CaribischNederland":"GM9003","Perioden":"2020JJ00","ParticuliereHuishoudens_1":750,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":1600,"PersonenRelatief_4":null,"Kinderen_5":350,"KinderenRelatief_6":null
+    },{
+      "ID":18,"InkomensgrensCN":"T001587","CaribischNederland":"GM9003","Perioden":"2021JJ00","ParticuliereHuishoudens_1":750,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":1600,"PersonenRelatief_4":null,"Kinderen_5":350,"KinderenRelatief_6":null
+    },{
+      "ID":19,"InkomensgrensCN":"T001587","CaribischNederland":"GM9003","Perioden":"2022JJ00","ParticuliereHuishoudens_1":800,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":1700,"PersonenRelatief_4":null,"Kinderen_5":350,"KinderenRelatief_6":null
+    },{
+      "ID":20,"InkomensgrensCN":"A049259","CaribischNederland":"CN01  ","Perioden":"2018JJ00","ParticuliereHuishoudens_1":9550,"ParticuliereHuishoudensRelatief_2":100,"Personen_3":20400,"PersonenRelatief_4":100,"Kinderen_5":4450,"KinderenRelatief_6":100
+    },{
+      "ID":21,"InkomensgrensCN":"A049259","CaribischNederland":"CN01  ","Perioden":"2019JJ00","ParticuliereHuishoudens_1":9950,"ParticuliereHuishoudensRelatief_2":100,"Personen_3":21050,"PersonenRelatief_4":100,"Kinderen_5":4550,"KinderenRelatief_6":100
+    },{
+      "ID":22,"InkomensgrensCN":"A049259","CaribischNederland":"CN01  ","Perioden":"2020JJ00","ParticuliereHuishoudens_1":10250,"ParticuliereHuishoudensRelatief_2":100,"Personen_3":21550,"PersonenRelatief_4":100,"Kinderen_5":4650,"KinderenRelatief_6":100
+    },{
+      "ID":23,"InkomensgrensCN":"A049259","CaribischNederland":"CN01  ","Perioden":"2021JJ00","ParticuliereHuishoudens_1":10600,"ParticuliereHuishoudensRelatief_2":100,"Personen_3":22150,"PersonenRelatief_4":100,"Kinderen_5":4800,"KinderenRelatief_6":100
+    },{
+      "ID":24,"InkomensgrensCN":"A049259","CaribischNederland":"CN01  ","Perioden":"2022JJ00","ParticuliereHuishoudens_1":11350,"ParticuliereHuishoudensRelatief_2":100,"Personen_3":23400,"PersonenRelatief_4":100,"Kinderen_5":5000,"KinderenRelatief_6":100
+    },{
+      "ID":25,"InkomensgrensCN":"A049259","CaribischNederland":"GM9001","Perioden":"2018JJ00","ParticuliereHuishoudens_1":7600,"ParticuliereHuishoudensRelatief_2":100,"Personen_3":16400,"PersonenRelatief_4":100,"Kinderen_5":3500,"KinderenRelatief_6":100
+    },{
+      "ID":26,"InkomensgrensCN":"A049259","CaribischNederland":"GM9001","Perioden":"2019JJ00","ParticuliereHuishoudens_1":7950,"ParticuliereHuishoudensRelatief_2":100,"Personen_3":17000,"PersonenRelatief_4":100,"Kinderen_5":3600,"KinderenRelatief_6":100
+    },{
+      "ID":27,"InkomensgrensCN":"A049259","CaribischNederland":"GM9001","Perioden":"2020JJ00","ParticuliereHuishoudens_1":8300,"ParticuliereHuishoudensRelatief_2":100,"Personen_3":17500,"PersonenRelatief_4":100,"Kinderen_5":3700,"KinderenRelatief_6":100
+    },{
+      "ID":28,"InkomensgrensCN":"A049259","CaribischNederland":"GM9001","Perioden":"2021JJ00","ParticuliereHuishoudens_1":8600,"ParticuliereHuishoudensRelatief_2":100,"Personen_3":18050,"PersonenRelatief_4":100,"Kinderen_5":3850,"KinderenRelatief_6":100
+    },{
+      "ID":29,"InkomensgrensCN":"A049259","CaribischNederland":"GM9001","Perioden":"2022JJ00","ParticuliereHuishoudens_1":9250,"ParticuliereHuishoudensRelatief_2":100,"Personen_3":19200,"PersonenRelatief_4":100,"Kinderen_5":4050,"KinderenRelatief_6":100
+    },{
+      "ID":30,"InkomensgrensCN":"A049259","CaribischNederland":"GM9002","Perioden":"2018JJ00","ParticuliereHuishoudens_1":1250,"ParticuliereHuishoudensRelatief_2":100,"Personen_3":2550,"PersonenRelatief_4":100,"Kinderen_5":650,"KinderenRelatief_6":100
+    },{
+      "ID":31,"InkomensgrensCN":"A049259","CaribischNederland":"GM9002","Perioden":"2019JJ00","ParticuliereHuishoudens_1":1250,"ParticuliereHuishoudensRelatief_2":100,"Personen_3":2600,"PersonenRelatief_4":100,"Kinderen_5":650,"KinderenRelatief_6":100
+    },{
+      "ID":32,"InkomensgrensCN":"A049259","CaribischNederland":"GM9002","Perioden":"2020JJ00","ParticuliereHuishoudens_1":1250,"ParticuliereHuishoudensRelatief_2":100,"Personen_3":2600,"PersonenRelatief_4":100,"Kinderen_5":650,"KinderenRelatief_6":100
+    },{
+      "ID":33,"InkomensgrensCN":"A049259","CaribischNederland":"GM9002","Perioden":"2021JJ00","ParticuliereHuishoudens_1":1300,"ParticuliereHuishoudensRelatief_2":100,"Personen_3":2650,"PersonenRelatief_4":100,"Kinderen_5":650,"KinderenRelatief_6":100
+    },{
+      "ID":34,"InkomensgrensCN":"A049259","CaribischNederland":"GM9002","Perioden":"2022JJ00","ParticuliereHuishoudens_1":1300,"ParticuliereHuishoudensRelatief_2":100,"Personen_3":2650,"PersonenRelatief_4":100,"Kinderen_5":650,"KinderenRelatief_6":100
+    },{
+      "ID":35,"InkomensgrensCN":"A049259","CaribischNederland":"GM9003","Perioden":"2018JJ00","ParticuliereHuishoudens_1":700,"ParticuliereHuishoudensRelatief_2":100,"Personen_3":1450,"PersonenRelatief_4":100,"Kinderen_5":300,"KinderenRelatief_6":100
+    },{
+      "ID":36,"InkomensgrensCN":"A049259","CaribischNederland":"GM9003","Perioden":"2019JJ00","ParticuliereHuishoudens_1":750,"ParticuliereHuishoudensRelatief_2":100,"Personen_3":1450,"PersonenRelatief_4":100,"Kinderen_5":300,"KinderenRelatief_6":100
+    },{
+      "ID":37,"InkomensgrensCN":"A049259","CaribischNederland":"GM9003","Perioden":"2020JJ00","ParticuliereHuishoudens_1":750,"ParticuliereHuishoudensRelatief_2":100,"Personen_3":1450,"PersonenRelatief_4":100,"Kinderen_5":300,"KinderenRelatief_6":100
+    },{
+      "ID":38,"InkomensgrensCN":"A049259","CaribischNederland":"GM9003","Perioden":"2021JJ00","ParticuliereHuishoudens_1":750,"ParticuliereHuishoudensRelatief_2":100,"Personen_3":1450,"PersonenRelatief_4":100,"Kinderen_5":300,"KinderenRelatief_6":100
+    },{
+      "ID":39,"InkomensgrensCN":"A049259","CaribischNederland":"GM9003","Perioden":"2022JJ00","ParticuliereHuishoudens_1":800,"ParticuliereHuishoudensRelatief_2":100,"Personen_3":1550,"PersonenRelatief_4":100,"Kinderen_5":300,"KinderenRelatief_6":100
+    },{
+      "ID":40,"InkomensgrensCN":"A050905","CaribischNederland":"CN01  ","Perioden":"2018JJ00","ParticuliereHuishoudens_1":950,"ParticuliereHuishoudensRelatief_2":10,"Personen_3":1750,"PersonenRelatief_4":9,"Kinderen_5":450,"KinderenRelatief_6":10
+    },{
+      "ID":41,"InkomensgrensCN":"A050905","CaribischNederland":"CN01  ","Perioden":"2019JJ00","ParticuliereHuishoudens_1":950,"ParticuliereHuishoudensRelatief_2":9,"Personen_3":1650,"PersonenRelatief_4":8,"Kinderen_5":400,"KinderenRelatief_6":9
+    },{
+      "ID":42,"InkomensgrensCN":"A050905","CaribischNederland":"CN01  ","Perioden":"2020JJ00","ParticuliereHuishoudens_1":800,"ParticuliereHuishoudensRelatief_2":8,"Personen_3":1500,"PersonenRelatief_4":7,"Kinderen_5":400,"KinderenRelatief_6":8
+    },{
+      "ID":43,"InkomensgrensCN":"A050905","CaribischNederland":"CN01  ","Perioden":"2021JJ00","ParticuliereHuishoudens_1":900,"ParticuliereHuishoudensRelatief_2":9,"Personen_3":1700,"PersonenRelatief_4":8,"Kinderen_5":450,"KinderenRelatief_6":9
+    },{
+      "ID":44,"InkomensgrensCN":"A050905","CaribischNederland":"CN01  ","Perioden":"2022JJ00","ParticuliereHuishoudens_1":900,"ParticuliereHuishoudensRelatief_2":8,"Personen_3":1650,"PersonenRelatief_4":7,"Kinderen_5":400,"KinderenRelatief_6":8
+    },{
+      "ID":45,"InkomensgrensCN":"A050905","CaribischNederland":"GM9001","Perioden":"2018JJ00","ParticuliereHuishoudens_1":750,"ParticuliereHuishoudensRelatief_2":10,"Personen_3":1400,"PersonenRelatief_4":8,"Kinderen_5":350,"KinderenRelatief_6":10
+    },{
+      "ID":46,"InkomensgrensCN":"A050905","CaribischNederland":"GM9001","Perioden":"2019JJ00","ParticuliereHuishoudens_1":750,"ParticuliereHuishoudensRelatief_2":9,"Personen_3":1300,"PersonenRelatief_4":8,"Kinderen_5":300,"KinderenRelatief_6":8
+    },{
+      "ID":47,"InkomensgrensCN":"A050905","CaribischNederland":"GM9001","Perioden":"2020JJ00","ParticuliereHuishoudens_1":650,"ParticuliereHuishoudensRelatief_2":8,"Personen_3":1200,"PersonenRelatief_4":7,"Kinderen_5":300,"KinderenRelatief_6":8
+    },{
+      "ID":48,"InkomensgrensCN":"A050905","CaribischNederland":"GM9001","Perioden":"2021JJ00","ParticuliereHuishoudens_1":750,"ParticuliereHuishoudensRelatief_2":9,"Personen_3":1350,"PersonenRelatief_4":8,"Kinderen_5":350,"KinderenRelatief_6":9
+    },{
+      "ID":49,"InkomensgrensCN":"A050905","CaribischNederland":"GM9001","Perioden":"2022JJ00","ParticuliereHuishoudens_1":700,"ParticuliereHuishoudensRelatief_2":8,"Personen_3":1350,"PersonenRelatief_4":7,"Kinderen_5":350,"KinderenRelatief_6":8
+    },{
+      "ID":50,"InkomensgrensCN":"A050905","CaribischNederland":"GM9002","Perioden":"2018JJ00","ParticuliereHuishoudens_1":150,"ParticuliereHuishoudensRelatief_2":11,"Personen_3":250,"PersonenRelatief_4":10,"Kinderen_5":100,"KinderenRelatief_6":13
+    },{
+      "ID":51,"InkomensgrensCN":"A050905","CaribischNederland":"GM9002","Perioden":"2019JJ00","ParticuliereHuishoudens_1":150,"ParticuliereHuishoudensRelatief_2":11,"Personen_3":250,"PersonenRelatief_4":10,"Kinderen_5":100,"KinderenRelatief_6":12
+    },{
+      "ID":52,"InkomensgrensCN":"A050905","CaribischNederland":"GM9002","Perioden":"2020JJ00","ParticuliereHuishoudens_1":100,"ParticuliereHuishoudensRelatief_2":9,"Personen_3":200,"PersonenRelatief_4":8,"Kinderen_5":50,"KinderenRelatief_6":9
+    },{
+      "ID":53,"InkomensgrensCN":"A050905","CaribischNederland":"GM9002","Perioden":"2021JJ00","ParticuliereHuishoudens_1":100,"ParticuliereHuishoudensRelatief_2":9,"Personen_3":200,"PersonenRelatief_4":8,"Kinderen_5":50,"KinderenRelatief_6":9
+    },{
+      "ID":54,"InkomensgrensCN":"A050905","CaribischNederland":"GM9002","Perioden":"2022JJ00","ParticuliereHuishoudens_1":100,"ParticuliereHuishoudensRelatief_2":8,"Personen_3":200,"PersonenRelatief_4":7,"Kinderen_5":50,"KinderenRelatief_6":8
+    },{
+      "ID":55,"InkomensgrensCN":"A050905","CaribischNederland":"GM9003","Perioden":"2018JJ00","ParticuliereHuishoudens_1":50,"ParticuliereHuishoudensRelatief_2":8,"Personen_3":100,"PersonenRelatief_4":7,"Kinderen_5":50,"KinderenRelatief_6":9
+    },{
+      "ID":56,"InkomensgrensCN":"A050905","CaribischNederland":"GM9003","Perioden":"2019JJ00","ParticuliereHuishoudens_1":50,"ParticuliereHuishoudensRelatief_2":9,"Personen_3":100,"PersonenRelatief_4":8,"Kinderen_5":50,"KinderenRelatief_6":8
+    },{
+      "ID":57,"InkomensgrensCN":"A050905","CaribischNederland":"GM9003","Perioden":"2020JJ00","ParticuliereHuishoudens_1":50,"ParticuliereHuishoudensRelatief_2":6,"Personen_3":100,"PersonenRelatief_4":5,"Kinderen_5":0,"KinderenRelatief_6":6
+    },{
+      "ID":58,"InkomensgrensCN":"A050905","CaribischNederland":"GM9003","Perioden":"2021JJ00","ParticuliereHuishoudens_1":50,"ParticuliereHuishoudensRelatief_2":6,"Personen_3":100,"PersonenRelatief_4":6,"Kinderen_5":0,"KinderenRelatief_6":8
+    },{
+      "ID":59,"InkomensgrensCN":"A050905","CaribischNederland":"GM9003","Perioden":"2022JJ00","ParticuliereHuishoudens_1":50,"ParticuliereHuishoudensRelatief_2":8,"Personen_3":100,"PersonenRelatief_4":7,"Kinderen_5":50,"KinderenRelatief_6":8
+    },{
+      "ID":60,"InkomensgrensCN":"A049253","CaribischNederland":"CN01  ","Perioden":"2018JJ00","ParticuliereHuishoudens_1":1750,"ParticuliereHuishoudensRelatief_2":18,"Personen_3":3350,"PersonenRelatief_4":16,"Kinderen_5":850,"KinderenRelatief_6":19
+    },{
+      "ID":61,"InkomensgrensCN":"A049253","CaribischNederland":"CN01  ","Perioden":"2019JJ00","ParticuliereHuishoudens_1":1750,"ParticuliereHuishoudensRelatief_2":17,"Personen_3":3250,"PersonenRelatief_4":15,"Kinderen_5":800,"KinderenRelatief_6":18
+    },{
+      "ID":62,"InkomensgrensCN":"A049253","CaribischNederland":"CN01  ","Perioden":"2020JJ00","ParticuliereHuishoudens_1":1450,"ParticuliereHuishoudensRelatief_2":14,"Personen_3":2900,"PersonenRelatief_4":14,"Kinderen_5":750,"KinderenRelatief_6":17
+    },{
+      "ID":63,"InkomensgrensCN":"A049253","CaribischNederland":"CN01  ","Perioden":"2021JJ00","ParticuliereHuishoudens_1":1550,"ParticuliereHuishoudensRelatief_2":15,"Personen_3":3050,"PersonenRelatief_4":14,"Kinderen_5":800,"KinderenRelatief_6":17
+    },{
+      "ID":64,"InkomensgrensCN":"A049253","CaribischNederland":"CN01  ","Perioden":"2022JJ00","ParticuliereHuishoudens_1":1500,"ParticuliereHuishoudensRelatief_2":13,"Personen_3":2900,"PersonenRelatief_4":12,"Kinderen_5":800,"KinderenRelatief_6":16
+    },{
+      "ID":65,"InkomensgrensCN":"A049253","CaribischNederland":"GM9001","Perioden":"2018JJ00","ParticuliereHuishoudens_1":1400,"ParticuliereHuishoudensRelatief_2":18,"Personen_3":2650,"PersonenRelatief_4":16,"Kinderen_5":650,"KinderenRelatief_6":19
+    },{
+      "ID":66,"InkomensgrensCN":"A049253","CaribischNederland":"GM9001","Perioden":"2019JJ00","ParticuliereHuishoudens_1":1400,"ParticuliereHuishoudensRelatief_2":17,"Personen_3":2550,"PersonenRelatief_4":15,"Kinderen_5":600,"KinderenRelatief_6":17
+    },{
+      "ID":67,"InkomensgrensCN":"A049253","CaribischNederland":"GM9001","Perioden":"2020JJ00","ParticuliereHuishoudens_1":1150,"ParticuliereHuishoudensRelatief_2":14,"Personen_3":2350,"PersonenRelatief_4":13,"Kinderen_5":600,"KinderenRelatief_6":16
+    },{
+      "ID":68,"InkomensgrensCN":"A049253","CaribischNederland":"GM9001","Perioden":"2021JJ00","ParticuliereHuishoudens_1":1300,"ParticuliereHuishoudensRelatief_2":15,"Personen_3":2500,"PersonenRelatief_4":14,"Kinderen_5":650,"KinderenRelatief_6":17
+    },{
+      "ID":69,"InkomensgrensCN":"A049253","CaribischNederland":"GM9001","Perioden":"2022JJ00","ParticuliereHuishoudens_1":1250,"ParticuliereHuishoudensRelatief_2":13,"Personen_3":2400,"PersonenRelatief_4":13,"Kinderen_5":650,"KinderenRelatief_6":16
+    },{
+      "ID":70,"InkomensgrensCN":"A049253","CaribischNederland":"GM9002","Perioden":"2018JJ00","ParticuliereHuishoudens_1":250,"ParticuliereHuishoudensRelatief_2":19,"Personen_3":500,"PersonenRelatief_4":19,"Kinderen_5":150,"KinderenRelatief_6":22
+    },{
+      "ID":71,"InkomensgrensCN":"A049253","CaribischNederland":"GM9002","Perioden":"2019JJ00","ParticuliereHuishoudens_1":250,"ParticuliereHuishoudensRelatief_2":20,"Personen_3":500,"PersonenRelatief_4":19,"Kinderen_5":150,"KinderenRelatief_6":23
+    },{
+      "ID":72,"InkomensgrensCN":"A049253","CaribischNederland":"GM9002","Perioden":"2020JJ00","ParticuliereHuishoudens_1":200,"ParticuliereHuishoudensRelatief_2":16,"Personen_3":400,"PersonenRelatief_4":15,"Kinderen_5":100,"KinderenRelatief_6":19
+    },{
+      "ID":73,"InkomensgrensCN":"A049253","CaribischNederland":"GM9002","Perioden":"2021JJ00","ParticuliereHuishoudens_1":200,"ParticuliereHuishoudensRelatief_2":15,"Personen_3":400,"PersonenRelatief_4":14,"Kinderen_5":100,"KinderenRelatief_6":17
+    },{
+      "ID":74,"InkomensgrensCN":"A049253","CaribischNederland":"GM9002","Perioden":"2022JJ00","ParticuliereHuishoudens_1":200,"ParticuliereHuishoudensRelatief_2":14,"Personen_3":350,"PersonenRelatief_4":13,"Kinderen_5":100,"KinderenRelatief_6":16
+    },{
+      "ID":75,"InkomensgrensCN":"A049253","CaribischNederland":"GM9003","Perioden":"2018JJ00","ParticuliereHuishoudens_1":100,"ParticuliereHuishoudensRelatief_2":15,"Personen_3":200,"PersonenRelatief_4":15,"Kinderen_5":50,"KinderenRelatief_6":17
+    },{
+      "ID":76,"InkomensgrensCN":"A049253","CaribischNederland":"GM9003","Perioden":"2019JJ00","ParticuliereHuishoudens_1":100,"ParticuliereHuishoudensRelatief_2":14,"Personen_3":200,"PersonenRelatief_4":13,"Kinderen_5":50,"KinderenRelatief_6":17
+    },{
+      "ID":77,"InkomensgrensCN":"A049253","CaribischNederland":"GM9003","Perioden":"2020JJ00","ParticuliereHuishoudens_1":100,"ParticuliereHuishoudensRelatief_2":11,"Personen_3":150,"PersonenRelatief_4":11,"Kinderen_5":50,"KinderenRelatief_6":13
+    },{
+      "ID":78,"InkomensgrensCN":"A049253","CaribischNederland":"GM9003","Perioden":"2021JJ00","ParticuliereHuishoudens_1":50,"ParticuliereHuishoudensRelatief_2":10,"Personen_3":150,"PersonenRelatief_4":10,"Kinderen_5":50,"KinderenRelatief_6":14
+    },{
+      "ID":79,"InkomensgrensCN":"A049253","CaribischNederland":"GM9003","Perioden":"2022JJ00","ParticuliereHuishoudens_1":100,"ParticuliereHuishoudensRelatief_2":11,"Personen_3":150,"PersonenRelatief_4":10,"Kinderen_5":50,"KinderenRelatief_6":13
+    },{
+      "ID":80,"InkomensgrensCN":"A049254","CaribischNederland":"CN01  ","Perioden":"2018JJ00","ParticuliereHuishoudens_1":2200,"ParticuliereHuishoudensRelatief_2":23,"Personen_3":4400,"PersonenRelatief_4":21,"Kinderen_5":1150,"KinderenRelatief_6":26
+    },{
+      "ID":81,"InkomensgrensCN":"A049254","CaribischNederland":"CN01  ","Perioden":"2019JJ00","ParticuliereHuishoudens_1":2250,"ParticuliereHuishoudensRelatief_2":23,"Personen_3":4400,"PersonenRelatief_4":21,"Kinderen_5":1100,"KinderenRelatief_6":24
+    },{
+      "ID":82,"InkomensgrensCN":"A049254","CaribischNederland":"CN01  ","Perioden":"2020JJ00","ParticuliereHuishoudens_1":2100,"ParticuliereHuishoudensRelatief_2":20,"Personen_3":4200,"PersonenRelatief_4":20,"Kinderen_5":1100,"KinderenRelatief_6":24
+    },{
+      "ID":83,"InkomensgrensCN":"A049254","CaribischNederland":"CN01  ","Perioden":"2021JJ00","ParticuliereHuishoudens_1":2150,"ParticuliereHuishoudensRelatief_2":20,"Personen_3":4250,"PersonenRelatief_4":19,"Kinderen_5":1100,"KinderenRelatief_6":23
+    },{
+      "ID":84,"InkomensgrensCN":"A049254","CaribischNederland":"CN01  ","Perioden":"2022JJ00","ParticuliereHuishoudens_1":2050,"ParticuliereHuishoudensRelatief_2":18,"Personen_3":4050,"PersonenRelatief_4":17,"Kinderen_5":1050,"KinderenRelatief_6":21
+    },{
+      "ID":85,"InkomensgrensCN":"A049254","CaribischNederland":"GM9001","Perioden":"2018JJ00","ParticuliereHuishoudens_1":1700,"ParticuliereHuishoudensRelatief_2":23,"Personen_3":3450,"PersonenRelatief_4":21,"Kinderen_5":900,"KinderenRelatief_6":25
+    },{
+      "ID":86,"InkomensgrensCN":"A049254","CaribischNederland":"GM9001","Perioden":"2019JJ00","ParticuliereHuishoudens_1":1750,"ParticuliereHuishoudensRelatief_2":22,"Personen_3":3450,"PersonenRelatief_4":20,"Kinderen_5":850,"KinderenRelatief_6":23
+    },{
+      "ID":87,"InkomensgrensCN":"A049254","CaribischNederland":"GM9001","Perioden":"2020JJ00","ParticuliereHuishoudens_1":1650,"ParticuliereHuishoudensRelatief_2":20,"Personen_3":3350,"PersonenRelatief_4":19,"Kinderen_5":850,"KinderenRelatief_6":23
+    },{
+      "ID":88,"InkomensgrensCN":"A049254","CaribischNederland":"GM9001","Perioden":"2021JJ00","ParticuliereHuishoudens_1":1800,"ParticuliereHuishoudensRelatief_2":21,"Personen_3":3450,"PersonenRelatief_4":19,"Kinderen_5":850,"KinderenRelatief_6":23
+    },{
+      "ID":89,"InkomensgrensCN":"A049254","CaribischNederland":"GM9001","Perioden":"2022JJ00","ParticuliereHuishoudens_1":1700,"ParticuliereHuishoudensRelatief_2":18,"Personen_3":3350,"PersonenRelatief_4":17,"Kinderen_5":850,"KinderenRelatief_6":21
+    },{
+      "ID":90,"InkomensgrensCN":"A049254","CaribischNederland":"GM9002","Perioden":"2018JJ00","ParticuliereHuishoudens_1":350,"ParticuliereHuishoudensRelatief_2":27,"Personen_3":650,"PersonenRelatief_4":26,"Kinderen_5":200,"KinderenRelatief_6":31
+    },{
+      "ID":91,"InkomensgrensCN":"A049254","CaribischNederland":"GM9002","Perioden":"2019JJ00","ParticuliereHuishoudens_1":350,"ParticuliereHuishoudensRelatief_2":27,"Personen_3":700,"PersonenRelatief_4":26,"Kinderen_5":200,"KinderenRelatief_6":32
+    },{
+      "ID":92,"InkomensgrensCN":"A049254","CaribischNederland":"GM9002","Perioden":"2020JJ00","ParticuliereHuishoudens_1":300,"ParticuliereHuishoudensRelatief_2":23,"Personen_3":600,"PersonenRelatief_4":22,"Kinderen_5":200,"KinderenRelatief_6":28
+    },{
+      "ID":93,"InkomensgrensCN":"A049254","CaribischNederland":"GM9002","Perioden":"2021JJ00","ParticuliereHuishoudens_1":250,"ParticuliereHuishoudensRelatief_2":21,"Personen_3":550,"PersonenRelatief_4":21,"Kinderen_5":150,"KinderenRelatief_6":26
+    },{
+      "ID":94,"InkomensgrensCN":"A049254","CaribischNederland":"GM9002","Perioden":"2022JJ00","ParticuliereHuishoudens_1":250,"ParticuliereHuishoudensRelatief_2":19,"Personen_3":500,"PersonenRelatief_4":18,"Kinderen_5":150,"KinderenRelatief_6":22
+    },{
+      "ID":95,"InkomensgrensCN":"A049254","CaribischNederland":"GM9003","Perioden":"2018JJ00","ParticuliereHuishoudens_1":150,"ParticuliereHuishoudensRelatief_2":21,"Personen_3":300,"PersonenRelatief_4":20,"Kinderen_5":50,"KinderenRelatief_6":24
+    },{
+      "ID":96,"InkomensgrensCN":"A049254","CaribischNederland":"GM9003","Perioden":"2019JJ00","ParticuliereHuishoudens_1":150,"ParticuliereHuishoudensRelatief_2":20,"Personen_3":250,"PersonenRelatief_4":19,"Kinderen_5":50,"KinderenRelatief_6":24
+    },{
+      "ID":97,"InkomensgrensCN":"A049254","CaribischNederland":"GM9003","Perioden":"2020JJ00","ParticuliereHuishoudens_1":150,"ParticuliereHuishoudensRelatief_2":19,"Personen_3":250,"PersonenRelatief_4":18,"Kinderen_5":50,"KinderenRelatief_6":21
+    },{
+      "ID":98,"InkomensgrensCN":"A049254","CaribischNederland":"GM9003","Perioden":"2021JJ00","ParticuliereHuishoudens_1":150,"ParticuliereHuishoudensRelatief_2":17,"Personen_3":250,"PersonenRelatief_4":17,"Kinderen_5":50,"KinderenRelatief_6":21
+    },{
+      "ID":99,"InkomensgrensCN":"A049254","CaribischNederland":"GM9003","Perioden":"2022JJ00","ParticuliereHuishoudens_1":100,"ParticuliereHuishoudensRelatief_2":15,"Personen_3":250,"PersonenRelatief_4":15,"Kinderen_5":50,"KinderenRelatief_6":20
+    },{
+      "ID":100,"InkomensgrensCN":"A049255","CaribischNederland":"CN01  ","Perioden":"2018JJ00","ParticuliereHuishoudens_1":2600,"ParticuliereHuishoudensRelatief_2":27,"Personen_3":5300,"PersonenRelatief_4":26,"Kinderen_5":1350,"KinderenRelatief_6":31
+    },{
+      "ID":101,"InkomensgrensCN":"A049255","CaribischNederland":"CN01  ","Perioden":"2019JJ00","ParticuliereHuishoudens_1":2650,"ParticuliereHuishoudensRelatief_2":27,"Personen_3":5300,"PersonenRelatief_4":25,"Kinderen_5":1350,"KinderenRelatief_6":30
+    },{
+      "ID":102,"InkomensgrensCN":"A049255","CaribischNederland":"CN01  ","Perioden":"2020JJ00","ParticuliereHuishoudens_1":2450,"ParticuliereHuishoudensRelatief_2":24,"Personen_3":5050,"PersonenRelatief_4":23,"Kinderen_5":1300,"KinderenRelatief_6":28
+    },{
+      "ID":103,"InkomensgrensCN":"A049255","CaribischNederland":"CN01  ","Perioden":"2021JJ00","ParticuliereHuishoudens_1":2500,"ParticuliereHuishoudensRelatief_2":24,"Personen_3":5000,"PersonenRelatief_4":22,"Kinderen_5":1300,"KinderenRelatief_6":27
+    },{
+      "ID":104,"InkomensgrensCN":"A049255","CaribischNederland":"CN01  ","Perioden":"2022JJ00","ParticuliereHuishoudens_1":2450,"ParticuliereHuishoudensRelatief_2":22,"Personen_3":4850,"PersonenRelatief_4":21,"Kinderen_5":1300,"KinderenRelatief_6":26
+    },{
+      "ID":105,"InkomensgrensCN":"A049255","CaribischNederland":"GM9001","Perioden":"2018JJ00","ParticuliereHuishoudens_1":2050,"ParticuliereHuishoudensRelatief_2":27,"Personen_3":4200,"PersonenRelatief_4":25,"Kinderen_5":1050,"KinderenRelatief_6":30
+    },{
+      "ID":106,"InkomensgrensCN":"A049255","CaribischNederland":"GM9001","Perioden":"2019JJ00","ParticuliereHuishoudens_1":2100,"ParticuliereHuishoudensRelatief_2":26,"Personen_3":4200,"PersonenRelatief_4":25,"Kinderen_5":1050,"KinderenRelatief_6":29
+    },{
+      "ID":107,"InkomensgrensCN":"A049255","CaribischNederland":"GM9001","Perioden":"2020JJ00","ParticuliereHuishoudens_1":1950,"ParticuliereHuishoudensRelatief_2":24,"Personen_3":4050,"PersonenRelatief_4":23,"Kinderen_5":1000,"KinderenRelatief_6":28
+    },{
+      "ID":108,"InkomensgrensCN":"A049255","CaribischNederland":"GM9001","Perioden":"2021JJ00","ParticuliereHuishoudens_1":2050,"ParticuliereHuishoudensRelatief_2":24,"Personen_3":4050,"PersonenRelatief_4":22,"Kinderen_5":1000,"KinderenRelatief_6":26
+    },{
+      "ID":109,"InkomensgrensCN":"A049255","CaribischNederland":"GM9001","Perioden":"2022JJ00","ParticuliereHuishoudens_1":2000,"ParticuliereHuishoudensRelatief_2":21,"Personen_3":3950,"PersonenRelatief_4":21,"Kinderen_5":1050,"KinderenRelatief_6":25
+    },{
+      "ID":110,"InkomensgrensCN":"A049255","CaribischNederland":"GM9002","Perioden":"2018JJ00","ParticuliereHuishoudens_1":350,"ParticuliereHuishoudensRelatief_2":30,"Personen_3":750,"PersonenRelatief_4":30,"Kinderen_5":250,"KinderenRelatief_6":38
+    },{
+      "ID":111,"InkomensgrensCN":"A049255","CaribischNederland":"GM9002","Perioden":"2019JJ00","ParticuliereHuishoudens_1":400,"ParticuliereHuishoudensRelatief_2":30,"Personen_3":750,"PersonenRelatief_4":29,"Kinderen_5":250,"KinderenRelatief_6":36
+    },{
+      "ID":112,"InkomensgrensCN":"A049255","CaribischNederland":"GM9002","Perioden":"2020JJ00","ParticuliereHuishoudens_1":300,"ParticuliereHuishoudensRelatief_2":26,"Personen_3":650,"PersonenRelatief_4":26,"Kinderen_5":200,"KinderenRelatief_6":33
+    },{
+      "ID":113,"InkomensgrensCN":"A049255","CaribischNederland":"GM9002","Perioden":"2021JJ00","ParticuliereHuishoudens_1":300,"ParticuliereHuishoudensRelatief_2":25,"Personen_3":650,"PersonenRelatief_4":25,"Kinderen_5":200,"KinderenRelatief_6":30
+    },{
+      "ID":114,"InkomensgrensCN":"A049255","CaribischNederland":"GM9002","Perioden":"2022JJ00","ParticuliereHuishoudens_1":300,"ParticuliereHuishoudensRelatief_2":24,"Personen_3":600,"PersonenRelatief_4":23,"Kinderen_5":150,"KinderenRelatief_6":27
+    },{
+      "ID":115,"InkomensgrensCN":"A049255","CaribischNederland":"GM9003","Perioden":"2018JJ00","ParticuliereHuishoudens_1":200,"ParticuliereHuishoudensRelatief_2":27,"Personen_3":350,"PersonenRelatief_4":25,"Kinderen_5":100,"KinderenRelatief_6":27
+    },{
+      "ID":116,"InkomensgrensCN":"A049255","CaribischNederland":"GM9003","Perioden":"2019JJ00","ParticuliereHuishoudens_1":200,"ParticuliereHuishoudensRelatief_2":26,"Personen_3":350,"PersonenRelatief_4":24,"Kinderen_5":100,"KinderenRelatief_6":30
+    },{
+      "ID":117,"InkomensgrensCN":"A049255","CaribischNederland":"GM9003","Perioden":"2020JJ00","ParticuliereHuishoudens_1":150,"ParticuliereHuishoudensRelatief_2":23,"Personen_3":300,"PersonenRelatief_4":22,"Kinderen_5":100,"KinderenRelatief_6":27
+    },{
+      "ID":118,"InkomensgrensCN":"A049255","CaribischNederland":"GM9003","Perioden":"2021JJ00","ParticuliereHuishoudens_1":150,"ParticuliereHuishoudensRelatief_2":20,"Personen_3":300,"PersonenRelatief_4":20,"Kinderen_5":100,"KinderenRelatief_6":25
+    },{
+      "ID":119,"InkomensgrensCN":"A049255","CaribischNederland":"GM9003","Perioden":"2022JJ00","ParticuliereHuishoudens_1":150,"ParticuliereHuishoudensRelatief_2":19,"Personen_3":300,"PersonenRelatief_4":19,"Kinderen_5":100,"KinderenRelatief_6":24
+    },{
+      "ID":120,"InkomensgrensCN":"A049256","CaribischNederland":"CN01  ","Perioden":"2018JJ00","ParticuliereHuishoudens_1":2950,"ParticuliereHuishoudensRelatief_2":31,"Personen_3":6100,"PersonenRelatief_4":30,"Kinderen_5":1550,"KinderenRelatief_6":35
+    },{
+      "ID":121,"InkomensgrensCN":"A049256","CaribischNederland":"CN01  ","Perioden":"2019JJ00","ParticuliereHuishoudens_1":3050,"ParticuliereHuishoudensRelatief_2":31,"Personen_3":6150,"PersonenRelatief_4":29,"Kinderen_5":1550,"KinderenRelatief_6":34
+    },{
+      "ID":122,"InkomensgrensCN":"A049256","CaribischNederland":"CN01  ","Perioden":"2020JJ00","ParticuliereHuishoudens_1":2950,"ParticuliereHuishoudensRelatief_2":29,"Personen_3":6050,"PersonenRelatief_4":28,"Kinderen_5":1550,"KinderenRelatief_6":33
+    },{
+      "ID":123,"InkomensgrensCN":"A049256","CaribischNederland":"CN01  ","Perioden":"2021JJ00","ParticuliereHuishoudens_1":3000,"ParticuliereHuishoudensRelatief_2":28,"Personen_3":6000,"PersonenRelatief_4":27,"Kinderen_5":1550,"KinderenRelatief_6":32
+    },{
+      "ID":124,"InkomensgrensCN":"A049256","CaribischNederland":"CN01  ","Perioden":"2022JJ00","ParticuliereHuishoudens_1":2900,"ParticuliereHuishoudensRelatief_2":25,"Personen_3":5800,"PersonenRelatief_4":25,"Kinderen_5":1550,"KinderenRelatief_6":30
+    },{
+      "ID":125,"InkomensgrensCN":"A049256","CaribischNederland":"GM9001","Perioden":"2018JJ00","ParticuliereHuishoudens_1":2300,"ParticuliereHuishoudensRelatief_2":30,"Personen_3":4800,"PersonenRelatief_4":29,"Kinderen_5":1200,"KinderenRelatief_6":34
+    },{
+      "ID":126,"InkomensgrensCN":"A049256","CaribischNederland":"GM9001","Perioden":"2019JJ00","ParticuliereHuishoudens_1":2400,"ParticuliereHuishoudensRelatief_2":30,"Personen_3":4900,"PersonenRelatief_4":29,"Kinderen_5":1200,"KinderenRelatief_6":33
+    },{
+      "ID":127,"InkomensgrensCN":"A049256","CaribischNederland":"GM9001","Perioden":"2020JJ00","ParticuliereHuishoudens_1":2350,"ParticuliereHuishoudensRelatief_2":29,"Personen_3":4850,"PersonenRelatief_4":28,"Kinderen_5":1200,"KinderenRelatief_6":32
+    },{
+      "ID":128,"InkomensgrensCN":"A049256","CaribischNederland":"GM9001","Perioden":"2021JJ00","ParticuliereHuishoudens_1":2400,"ParticuliereHuishoudensRelatief_2":28,"Personen_3":4850,"PersonenRelatief_4":27,"Kinderen_5":1200,"KinderenRelatief_6":32
+    },{
+      "ID":129,"InkomensgrensCN":"A049256","CaribischNederland":"GM9001","Perioden":"2022JJ00","ParticuliereHuishoudens_1":2350,"ParticuliereHuishoudensRelatief_2":25,"Personen_3":4700,"PersonenRelatief_4":24,"Kinderen_5":1200,"KinderenRelatief_6":30
+    },{
+      "ID":130,"InkomensgrensCN":"A049256","CaribischNederland":"GM9002","Perioden":"2018JJ00","ParticuliereHuishoudens_1":400,"ParticuliereHuishoudensRelatief_2":34,"Personen_3":850,"PersonenRelatief_4":33,"Kinderen_5":250,"KinderenRelatief_6":41
+    },{
+      "ID":131,"InkomensgrensCN":"A049256","CaribischNederland":"GM9002","Perioden":"2019JJ00","ParticuliereHuishoudens_1":400,"ParticuliereHuishoudensRelatief_2":33,"Personen_3":850,"PersonenRelatief_4":32,"Kinderen_5":250,"KinderenRelatief_6":40
+    },{
+      "ID":132,"InkomensgrensCN":"A049256","CaribischNederland":"GM9002","Perioden":"2020JJ00","ParticuliereHuishoudens_1":400,"ParticuliereHuishoudensRelatief_2":31,"Personen_3":800,"PersonenRelatief_4":31,"Kinderen_5":250,"KinderenRelatief_6":39
+    },{
+      "ID":133,"InkomensgrensCN":"A049256","CaribischNederland":"GM9002","Perioden":"2021JJ00","ParticuliereHuishoudens_1":400,"ParticuliereHuishoudensRelatief_2":32,"Personen_3":800,"PersonenRelatief_4":31,"Kinderen_5":250,"KinderenRelatief_6":37
+    },{
+      "ID":134,"InkomensgrensCN":"A049256","CaribischNederland":"GM9002","Perioden":"2022JJ00","ParticuliereHuishoudens_1":350,"ParticuliereHuishoudensRelatief_2":27,"Personen_3":700,"PersonenRelatief_4":27,"Kinderen_5":200,"KinderenRelatief_6":32
+    },{
+      "ID":135,"InkomensgrensCN":"A049256","CaribischNederland":"GM9003","Perioden":"2018JJ00","ParticuliereHuishoudens_1":200,"ParticuliereHuishoudensRelatief_2":32,"Personen_3":400,"PersonenRelatief_4":29,"Kinderen_5":100,"KinderenRelatief_6":32
+    },{
+      "ID":136,"InkomensgrensCN":"A049256","CaribischNederland":"GM9003","Perioden":"2019JJ00","ParticuliereHuishoudens_1":200,"ParticuliereHuishoudensRelatief_2":30,"Personen_3":400,"PersonenRelatief_4":28,"Kinderen_5":100,"KinderenRelatief_6":36
+    },{
+      "ID":137,"InkomensgrensCN":"A049256","CaribischNederland":"GM9003","Perioden":"2020JJ00","ParticuliereHuishoudens_1":200,"ParticuliereHuishoudensRelatief_2":28,"Personen_3":400,"PersonenRelatief_4":26,"Kinderen_5":100,"KinderenRelatief_6":33
+    },{
+      "ID":138,"InkomensgrensCN":"A049256","CaribischNederland":"GM9003","Perioden":"2021JJ00","ParticuliereHuishoudens_1":200,"ParticuliereHuishoudensRelatief_2":27,"Personen_3":350,"PersonenRelatief_4":25,"Kinderen_5":100,"KinderenRelatief_6":30
+    },{
+      "ID":139,"InkomensgrensCN":"A049256","CaribischNederland":"GM9003","Perioden":"2022JJ00","ParticuliereHuishoudens_1":200,"ParticuliereHuishoudensRelatief_2":25,"Personen_3":400,"PersonenRelatief_4":25,"Kinderen_5":100,"KinderenRelatief_6":32
+    },{
+      "ID":140,"InkomensgrensCN":"A049257","CaribischNederland":"CN01  ","Perioden":"2018JJ00","ParticuliereHuishoudens_1":3600,"ParticuliereHuishoudensRelatief_2":38,"Personen_3":7450,"PersonenRelatief_4":36,"Kinderen_5":1900,"KinderenRelatief_6":42
+    },{
+      "ID":141,"InkomensgrensCN":"A049257","CaribischNederland":"CN01  ","Perioden":"2019JJ00","ParticuliereHuishoudens_1":3750,"ParticuliereHuishoudensRelatief_2":38,"Personen_3":7600,"PersonenRelatief_4":36,"Kinderen_5":1900,"KinderenRelatief_6":42
+    },{
+      "ID":142,"InkomensgrensCN":"A049257","CaribischNederland":"CN01  ","Perioden":"2020JJ00","ParticuliereHuishoudens_1":3700,"ParticuliereHuishoudensRelatief_2":36,"Personen_3":7550,"PersonenRelatief_4":35,"Kinderen_5":1900,"KinderenRelatief_6":40
+    },{
+      "ID":143,"InkomensgrensCN":"A049257","CaribischNederland":"CN01  ","Perioden":"2021JJ00","ParticuliereHuishoudens_1":3750,"ParticuliereHuishoudensRelatief_2":35,"Personen_3":7450,"PersonenRelatief_4":34,"Kinderen_5":1850,"KinderenRelatief_6":39
+    },{
+      "ID":144,"InkomensgrensCN":"A049257","CaribischNederland":"CN01  ","Perioden":"2022JJ00","ParticuliereHuishoudens_1":3700,"ParticuliereHuishoudensRelatief_2":33,"Personen_3":7350,"PersonenRelatief_4":31,"Kinderen_5":1850,"KinderenRelatief_6":37
+    },{
+      "ID":145,"InkomensgrensCN":"A049257","CaribischNederland":"GM9001","Perioden":"2018JJ00","ParticuliereHuishoudens_1":2850,"ParticuliereHuishoudensRelatief_2":37,"Personen_3":5900,"PersonenRelatief_4":36,"Kinderen_5":1450,"KinderenRelatief_6":41
+    },{
+      "ID":146,"InkomensgrensCN":"A049257","CaribischNederland":"GM9001","Perioden":"2019JJ00","ParticuliereHuishoudens_1":3000,"ParticuliereHuishoudensRelatief_2":38,"Personen_3":6100,"PersonenRelatief_4":36,"Kinderen_5":1450,"KinderenRelatief_6":41
+    },{
+      "ID":147,"InkomensgrensCN":"A049257","CaribischNederland":"GM9001","Perioden":"2020JJ00","ParticuliereHuishoudens_1":3000,"ParticuliereHuishoudensRelatief_2":36,"Personen_3":6150,"PersonenRelatief_4":35,"Kinderen_5":1500,"KinderenRelatief_6":40
+    },{
+      "ID":148,"InkomensgrensCN":"A049257","CaribischNederland":"GM9001","Perioden":"2021JJ00","ParticuliereHuishoudens_1":3000,"ParticuliereHuishoudensRelatief_2":35,"Personen_3":6000,"PersonenRelatief_4":33,"Kinderen_5":1450,"KinderenRelatief_6":38
+    },{
+      "ID":149,"InkomensgrensCN":"A049257","CaribischNederland":"GM9001","Perioden":"2022JJ00","ParticuliereHuishoudens_1":3000,"ParticuliereHuishoudensRelatief_2":33,"Personen_3":6000,"PersonenRelatief_4":31,"Kinderen_5":1500,"KinderenRelatief_6":37
+    },{
+      "ID":150,"InkomensgrensCN":"A049257","CaribischNederland":"GM9002","Perioden":"2018JJ00","ParticuliereHuishoudens_1":500,"ParticuliereHuishoudensRelatief_2":39,"Personen_3":1000,"PersonenRelatief_4":38,"Kinderen_5":300,"KinderenRelatief_6":47
+    },{
+      "ID":151,"InkomensgrensCN":"A049257","CaribischNederland":"GM9002","Perioden":"2019JJ00","ParticuliereHuishoudens_1":500,"ParticuliereHuishoudensRelatief_2":39,"Personen_3":1000,"PersonenRelatief_4":39,"Kinderen_5":300,"KinderenRelatief_6":48
+    },{
+      "ID":152,"InkomensgrensCN":"A049257","CaribischNederland":"GM9002","Perioden":"2020JJ00","ParticuliereHuishoudens_1":450,"ParticuliereHuishoudensRelatief_2":37,"Personen_3":950,"PersonenRelatief_4":36,"Kinderen_5":300,"KinderenRelatief_6":45
+    },{
+      "ID":153,"InkomensgrensCN":"A049257","CaribischNederland":"GM9002","Perioden":"2021JJ00","ParticuliereHuishoudens_1":500,"ParticuliereHuishoudensRelatief_2":38,"Personen_3":1000,"PersonenRelatief_4":37,"Kinderen_5":250,"KinderenRelatief_6":43
+    },{
+      "ID":154,"InkomensgrensCN":"A049257","CaribischNederland":"GM9002","Perioden":"2022JJ00","ParticuliereHuishoudens_1":450,"ParticuliereHuishoudensRelatief_2":35,"Personen_3":900,"PersonenRelatief_4":34,"Kinderen_5":250,"KinderenRelatief_6":40
+    },{
+      "ID":155,"InkomensgrensCN":"A049257","CaribischNederland":"GM9003","Perioden":"2018JJ00","ParticuliereHuishoudens_1":300,"ParticuliereHuishoudensRelatief_2":39,"Personen_3":550,"PersonenRelatief_4":39,"Kinderen_5":150,"KinderenRelatief_6":46
+    },{
+      "ID":156,"InkomensgrensCN":"A049257","CaribischNederland":"GM9003","Perioden":"2019JJ00","ParticuliereHuishoudens_1":250,"ParticuliereHuishoudensRelatief_2":37,"Personen_3":500,"PersonenRelatief_4":35,"Kinderen_5":150,"KinderenRelatief_6":42
+    },{
+      "ID":157,"InkomensgrensCN":"A049257","CaribischNederland":"GM9003","Perioden":"2020JJ00","ParticuliereHuishoudens_1":250,"ParticuliereHuishoudensRelatief_2":34,"Personen_3":450,"PersonenRelatief_4":32,"Kinderen_5":100,"KinderenRelatief_6":38
+    },{
+      "ID":158,"InkomensgrensCN":"A049257","CaribischNederland":"GM9003","Perioden":"2021JJ00","ParticuliereHuishoudens_1":250,"ParticuliereHuishoudensRelatief_2":33,"Personen_3":450,"PersonenRelatief_4":31,"Kinderen_5":100,"KinderenRelatief_6":36
+    },{
+      "ID":159,"InkomensgrensCN":"A049257","CaribischNederland":"GM9003","Perioden":"2022JJ00","ParticuliereHuishoudens_1":250,"ParticuliereHuishoudensRelatief_2":30,"Personen_3":450,"PersonenRelatief_4":29,"Kinderen_5":100,"KinderenRelatief_6":36
+    },{
+      "ID":160,"InkomensgrensCN":"A049258","CaribischNederland":"CN01  ","Perioden":"2018JJ00","ParticuliereHuishoudens_1":600,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":3250,"PersonenRelatief_4":null,"Kinderen_5":650,"KinderenRelatief_6":null
+    },{
+      "ID":161,"InkomensgrensCN":"A049258","CaribischNederland":"CN01  ","Perioden":"2019JJ00","ParticuliereHuishoudens_1":600,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":3250,"PersonenRelatief_4":null,"Kinderen_5":600,"KinderenRelatief_6":null
+    },{
+      "ID":162,"InkomensgrensCN":"A049258","CaribischNederland":"CN01  ","Perioden":"2020JJ00","ParticuliereHuishoudens_1":650,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":3600,"PersonenRelatief_4":null,"Kinderen_5":650,"KinderenRelatief_6":null
+    },{
+      "ID":163,"InkomensgrensCN":"A049258","CaribischNederland":"CN01  ","Perioden":"2021JJ00","ParticuliereHuishoudens_1":700,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":3750,"PersonenRelatief_4":null,"Kinderen_5":650,"KinderenRelatief_6":null
+    },{
+      "ID":164,"InkomensgrensCN":"A049258","CaribischNederland":"CN01  ","Perioden":"2022JJ00","ParticuliereHuishoudens_1":700,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":3700,"PersonenRelatief_4":null,"Kinderen_5":600,"KinderenRelatief_6":null
+    },{
+      "ID":165,"InkomensgrensCN":"A049258","CaribischNederland":"GM9001","Perioden":"2018JJ00","ParticuliereHuishoudens_1":500,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":2700,"PersonenRelatief_4":null,"Kinderen_5":550,"KinderenRelatief_6":null
+    },{
+      "ID":166,"InkomensgrensCN":"A049258","CaribischNederland":"GM9001","Perioden":"2019JJ00","ParticuliereHuishoudens_1":550,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":2800,"PersonenRelatief_4":null,"Kinderen_5":500,"KinderenRelatief_6":null
+    },{
+      "ID":167,"InkomensgrensCN":"A049258","CaribischNederland":"GM9001","Perioden":"2020JJ00","ParticuliereHuishoudens_1":600,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":3100,"PersonenRelatief_4":null,"Kinderen_5":550,"KinderenRelatief_6":null
+    },{
+      "ID":168,"InkomensgrensCN":"A049258","CaribischNederland":"GM9001","Perioden":"2021JJ00","ParticuliereHuishoudens_1":600,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":3200,"PersonenRelatief_4":null,"Kinderen_5":550,"KinderenRelatief_6":null
+    },{
+      "ID":169,"InkomensgrensCN":"A049258","CaribischNederland":"GM9001","Perioden":"2022JJ00","ParticuliereHuishoudens_1":600,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":3200,"PersonenRelatief_4":null,"Kinderen_5":500,"KinderenRelatief_6":null
+    },{
+      "ID":170,"InkomensgrensCN":"A049258","CaribischNederland":"GM9002","Perioden":"2018JJ00","ParticuliereHuishoudens_1":50,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":350,"PersonenRelatief_4":null,"Kinderen_5":100,"KinderenRelatief_6":null
+    },{
+      "ID":171,"InkomensgrensCN":"A049258","CaribischNederland":"GM9002","Perioden":"2019JJ00","ParticuliereHuishoudens_1":50,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":300,"PersonenRelatief_4":null,"Kinderen_5":50,"KinderenRelatief_6":null
+    },{
+      "ID":172,"InkomensgrensCN":"A049258","CaribischNederland":"GM9002","Perioden":"2020JJ00","ParticuliereHuishoudens_1":50,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":350,"PersonenRelatief_4":null,"Kinderen_5":50,"KinderenRelatief_6":null
+    },{
+      "ID":173,"InkomensgrensCN":"A049258","CaribischNederland":"GM9002","Perioden":"2021JJ00","ParticuliereHuishoudens_1":50,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":350,"PersonenRelatief_4":null,"Kinderen_5":100,"KinderenRelatief_6":null
+    },{
+      "ID":174,"InkomensgrensCN":"A049258","CaribischNederland":"GM9002","Perioden":"2022JJ00","ParticuliereHuishoudens_1":50,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":350,"PersonenRelatief_4":null,"Kinderen_5":50,"KinderenRelatief_6":null
+    },{
+      "ID":175,"InkomensgrensCN":"A049258","CaribischNederland":"GM9003","Perioden":"2018JJ00","ParticuliereHuishoudens_1":50,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":150,"PersonenRelatief_4":null,"Kinderen_5":50,"KinderenRelatief_6":null
+    },{
+      "ID":176,"InkomensgrensCN":"A049258","CaribischNederland":"GM9003","Perioden":"2019JJ00","ParticuliereHuishoudens_1":50,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":150,"PersonenRelatief_4":null,"Kinderen_5":50,"KinderenRelatief_6":null
+    },{
+      "ID":177,"InkomensgrensCN":"A049258","CaribischNederland":"GM9003","Perioden":"2020JJ00","ParticuliereHuishoudens_1":50,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":150,"PersonenRelatief_4":null,"Kinderen_5":50,"KinderenRelatief_6":null
+    },{
+      "ID":178,"InkomensgrensCN":"A049258","CaribischNederland":"GM9003","Perioden":"2021JJ00","ParticuliereHuishoudens_1":50,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":150,"PersonenRelatief_4":null,"Kinderen_5":0,"KinderenRelatief_6":null
+    },{
+      "ID":179,"InkomensgrensCN":"A049258","CaribischNederland":"GM9003","Perioden":"2022JJ00","ParticuliereHuishoudens_1":50,"ParticuliereHuishoudensRelatief_2":null,"Personen_3":150,"PersonenRelatief_4":null,"Kinderen_5":0,"KinderenRelatief_6":null
+    }
+  ]
+}

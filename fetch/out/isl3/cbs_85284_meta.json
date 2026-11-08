@@ -1,0 +1,23 @@
+{
+  "odata.metadata":"https://opendata.cbs.nl/ODataApi/OData/85284NED/$metadata#Cbs.OData.WebAPI.DataProperties","value":[
+    {
+      "odata.type":"Cbs.OData.Dimension","ID":0,"Position":0,"ParentID":null,"Type":"Dimension","Key":"InkomensgrensCN","Title":"Inkomensgrens CN","Description":""
+    },{
+      "odata.type":"Cbs.OData.Dimension","ID":1,"Position":1,"ParentID":null,"Type":"Dimension","Key":"CaribischNederland","Title":"Caribisch Nederland","Description":""
+    },{
+      "odata.type":"Cbs.OData.TimeDimension","ID":2,"Position":2,"ParentID":null,"Type":"TimeDimension","Key":"Perioden","Title":"Perioden","Description":"","ReleasePolicy":true
+    },{
+      "odata.type":"Cbs.OData.Topic","ID":3,"Position":3,"ParentID":null,"Type":"Topic","Key":"ParticuliereHuishoudens_1","Title":"Particuliere huishoudens","Description":"Aantal particuliere huishoudens per 31 december van het verslagjaar, met inkomen. \r\nEen particulier huishouden bestaat uit \u00e9\u00e9n of meer personen die samen een woonruimte bewonen en zichzelf niet-bedrijfsmatig voorzien van de dagelijkse behoeften.\r\n","Datatype":"Long","Unit":"aantal","Decimals":0,"Default":"Missing"
+    },{
+      "odata.type":"Cbs.OData.Topic","ID":4,"Position":4,"ParentID":null,"Type":"Topic","Key":"ParticuliereHuishoudensRelatief_2","Title":"Particuliere huishoudens relatief","Description":"Het aantal huishoudens als percentage van de totale populatie huishoudens waarvoor een ijkpunt voor het sociaal minimum gedefinieerd is.","Datatype":"Long","Unit":"%","Decimals":0,"Default":"Impossible"
+    },{
+      "odata.type":"Cbs.OData.Topic","ID":5,"Position":5,"ParentID":null,"Type":"Topic","Key":"Personen_3","Title":"Personen","Description":"Het aantal personen in particuliere huishoudens met waargenomen inkomen.","Datatype":"Long","Unit":"aantal","Decimals":0,"Default":"Missing"
+    },{
+      "odata.type":"Cbs.OData.Topic","ID":6,"Position":6,"ParentID":null,"Type":"Topic","Key":"PersonenRelatief_4","Title":"Personen relatief","Description":"Het aantal personen als percentage van de totale populatie personen in huishoudens waarvoor een ijkpunt voor het sociaal minimum gedefinieerd is.","Datatype":"Long","Unit":"%","Decimals":0,"Default":"Impossible"
+    },{
+      "odata.type":"Cbs.OData.Topic","ID":7,"Position":7,"ParentID":null,"Type":"Topic","Key":"Kinderen_5","Title":"Kinderen","Description":"Het aantal minderjarige kinderen in particuliere huishoudens met waargenomen inkomen.","Datatype":"Long","Unit":"aantal","Decimals":0,"Default":"Missing"
+    },{
+      "odata.type":"Cbs.OData.Topic","ID":8,"Position":8,"ParentID":null,"Type":"Topic","Key":"KinderenRelatief_6","Title":"Kinderen relatief","Description":"Het aantal minderjarige kinderen als percentage van de totale populatie minderjarige kinderen in huishoudens waarvoor een ijkpunt voor het sociaal minimum gedefinieerd is.","Datatype":"Long","Unit":"%","Decimals":0,"Default":"Impossible"
+    }
+  ]
+}
