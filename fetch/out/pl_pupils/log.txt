@@ -1,11 +1,15 @@
+danegov liczba uczniów SIO ok
+danegov uczniowie szkoły SIO ok
+danegov dane SIO uczniowie ok
+probe 429 {'Content-Type': 'application/json; charset=utf-8', 'Retry-After': '30063 sek', 'X-Rate-Limit-Limit': '7d', 'X-Rate-Limit-Remaining': '9999', 'X-Rate-Limit-Reset': '2026-11-15T16:11:04.7208182Z', 'Date': 'Sun, 08 Nov 2026 16:11:04 GMT', 'Connection': 'close', 'Set-Cookie': 'cookie=85e497491d001d5aeeddc2fb199ff06a;max-age=1800;Path=/;HttpOnly', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'content-length': '105'} b'{\r\n  "errorResult": "Przekroczono limit wywo\xc5\x82a\xc5\x84 API! Maksymalna ilo\xc5\x9b\xc4\x87 \xc5\xbc\xc4\x85da\xc5\x84 to 100 na 12 godz."\r\n}'
 retry 0 HTTP Error 429: Too Many Requests https://bdl.stat.gov.pl/api/v1/variables/search?name=uczniowie&level=6&page-size=100&page=0&format=json&lang=pl
 retry 1 HTTP Error 429: Too Many Requests https://bdl.stat.gov.pl/api/v1/variables/search?name=uczniowie&level=6&page-size=100&page=0&format=json&lang=pl
 retry 2 HTTP Error 429: Too Many Requests https://bdl.stat.gov.pl/api/v1/variables/search?name=uczniowie&level=6&page-size=100&page=0&format=json&lang=pl
 retry 3 HTTP Error 429: Too Many Requests https://bdl.stat.gov.pl/api/v1/variables/search?name=uczniowie&level=6&page-size=100&page=0&format=json&lang=pl
 retry 4 HTTP Error 429: Too Many Requests https://bdl.stat.gov.pl/api/v1/variables/search?name=uczniowie&level=6&page-size=100&page=0&format=json&lang=pl
 Traceback (most recent call last):
-  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 24, in <module>
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 39, in <module>
     d = get(f"{BDL}/variables/search?name={urllib.parse.quote('uczniowie')}&level=6&page-size=100&page={page}&format=json&lang=pl")
-  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 20, in get
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 35, in get
     raise RuntimeError("gave up: " + u)
 RuntimeError: gave up: https://bdl.stat.gov.pl/api/v1/variables/search?name=uczniowie&level=6&page-size=100&page=0&format=json&lang=pl
