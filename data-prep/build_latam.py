@@ -173,7 +173,7 @@ RULES["BE"] = (re.compile(r"commissie[^|]{0,40}onderwijs|onderwijs[^|]{0,20}comm
 # Panlungsod: regular and special sessions); youth councils (Sangguniang Kabataan) and news aren't counted.
 RULES["PH"] = (re.compile(r"local school board|\blsb\b|committee on (basic )?education", re.I),
                re.compile(r"session|sesyon|sangguniang|\bsb\b|\bsp\b", re.I),
-               re.compile(r"^(?!.*(kabataan|\bsk\b|youth|barangay)).*((regular|special|inaugural|ordinary|regualr)\s+(session|sesyon)|sangguniang (bayan|panlungsod|panlalawigan)[^|]{0,40}session|\d+(st|nd|rd|th)\s+(regular|special)\s+session|session\s+no\.?\s*\d+)", re.I),
+               re.compile(r"^(?!.*(kabataan|\bsk\b|youth|barangay)).*((regular|special|inaugural|ordinary|regualr)\s+(session|sesyon)|sangguniang (bayan|panlungsod|panlalawigan)[^|]{0,40}session|\d+(st|nd|rd|th)\s+(regular|special)\s+session|session\s+no\.?\s*\d+|\b(sb|sp)\s+(regular\s+)?session|pulong\s+(karaniwan|regular))", re.I),
                re.compile(r"live session|interview|news|balita|festival|fiesta|pageant|concert|award|tour|launch|podcast|campaign|election", re.I))
 
 # Spain: a committee covering education counts only when at least this many of its sessions are posted; otherwise the
@@ -1122,7 +1122,9 @@ def philippines():
                 "est2018": "PSA withheld San Juan's 2021 figure as unreliable; shown instead, in a separate column kept out of the averages, its 2018 figure",
                 "est": "A municipality of the BARMM Special Geographic Area, created in 2024 from villages of Cotabato province, so it has no estimate of its own; shown instead, in a separate column kept out of the averages, Cotabato province's 2021 rate"}[src]
         did = f"PH-{code}"
-        rows.append({"District": name, "Region": x.get("region", ""), "Province": x.get("province", ""), "Population": x.get("pop2021") or "",
+        # Channel names: "City Council of Manila", "Mati City", "Sangguniang Bayan ng Paombong": the name without "City of" counts too.
+        base = re.sub(r"^City of ", "", x["name"]); alts = [name] + ([base, f"{base} City"] if base != x["name"] else [])
+        rows.append({"District": name, "_names": alts, "Region": x.get("region", ""), "Province": x.get("province", ""), "Population": x.get("pop2021") or "",
                      "Poverty rate (all ages)": f"{x['pov2021']:.1f}%" if x.get("pov2021") is not None else "",
                      "Poverty rate (region, all ages)": f"{x['est_pov2018']:.1f}%" if src == "est2018" else f"{x['est_pov2021']:.1f}%" if src == "est" else "",
                      "Poverty by year": years, "Poverty note": note,
