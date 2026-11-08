@@ -83,48 +83,58 @@ def meetings_in(page_links, text, year=None):
     return keys, titles
 
 
+SKIP_T = re.compile(r"市議会|町議会|村議会|区議会|議会定例会|議会臨時会|総合教育会議|農業委員会|選挙管理委員会|監査委員|社会教育委員|審議会|協議会")
+SCORE = [(re.compile(r"教育委員会.*(会議録|議事録|会議)|(会議録|議事録|定例会).*教育委員会"), 60), (re.compile(r"会議録|議事録|会議の?概要|会議結果|開催状況|定例会|臨時会"), 25),
+         (re.compile(r"^教育委員会$|教育委員会について|教育委員会の?(紹介|概要|組織)"), 30), (re.compile(r"教育委員会"), 15), (re.compile(r"サイトマップ|site ?map", re.I), 12),
+         (re.compile(r"教育|学校"), 6), (re.compile(r"子育て|組織|課・|各課|部署|行政|市政|町政|村政|区政"), 3), (re.compile(r"(令和|平成)\s*\d+\s*年度?"), 4)]
+BAD_URL = re.compile(r"\.(pdf|docx?|xlsx?|jpe?g|png|gif|zip)$|mailto:|javascript:|/en/|/english/|/foreign|/kr/|/cn/", re.I)
+
+
+def score(t, u):
+    if SKIP_T.search(t) or BAD_URL.search(u): return 0
+    s = sum(v for r, v in SCORE if r.search(t))
+    if re.search(r"kyoiku|kyouiku|education|iinkai", u, re.I): s += 4
+    if re.search(r"kaigiroku|gijiroku|teireikai|kaigi", u, re.I): s += 8
+    return s
+
+
 def one(m):
-    robots, out = {}, {"code": m["code"], "name": m["name"], "site": m["site"], "board": "", "pages": [], "meetings": 0, "years": {}, "examples": [], "error": ""}
+    robots = {}
+    out = {"code": m["code"], "name": m["name"], "site": m["site"], "board": "", "pages": [], "meetings": 0, "years": {}, "examples": [], "error": "", "visited": 0}
     try:
         home, page = fetch(m["site"], robots); time.sleep(1)
-        cand = [(u, t) for u, t in links(home, page) if BOARD.search(t) and same_site(u, home) and not NOT_LINK.search(t)]
-        cand.sort(key=lambda x: (x[1] != "教育委員会", len(x[1])))
-        board = None
-        for u, t in cand[:3]:
-            try:
-                bu, bp = fetch(u, robots); time.sleep(1)
-            except Exception: continue
-            board = (bu, bp); break
-        if not board: out["error"] = "no board link"; return out
-        out["board"] = board[0]
-        todo = [(u, t) for u, t in links(*board) if MEET_LINK.search(t) and not NOT_LINK.search(t) and same_site(u, board[0])]
-        # a board page often links to an "教育委員会について / 会議" page first
-        seen, keys, titles = set(), set(), []
-        k, ts = meetings_in(links(*board), "")
-        keys |= k; titles += ts
-        depth = 0
-        while todo and len(seen) < 8:
-            u, t = todo.pop(0)
-            if u in seen or u.lower().endswith((".pdf", ".doc", ".docx", ".xls", ".xlsx")): continue
-            seen.add(u)
-            try:
-                pu, pp = fetch(u, robots); time.sleep(1)
-            except Exception: continue
-            pl = links(pu, pp)
-            e = ERA.search(t)
-            py = ((1 if e.group(2) == "元" else int(e.group(2))) + (2018 if e.group(1) == "令和" else 1988)) if e else None
-            k, ts = meetings_in(pl, html.unescape(re.sub(r"<[^>]+>", "\n", pp)).translate(Z2H), py)
-            if k: out["pages"].append(pu)
-            keys |= k; titles += ts
-            # year pages (令和6年度 会議録) under a minutes page
-            for u2, t2 in pl:
-                if u2 not in seen and same_site(u2, pu) and (MEET_LINK.search(t2) or re.search(r"(令和|平成)\s*\d+\s*年度?", t2)) and not NOT_LINK.search(t2):
-                    todo.append((u2, t2))
-        out["meetings"] = len(keys)
-        out["years"] = dict(Counter(str(k[0]) for k in keys if k[0]))
-        out["examples"] = titles[:5]
     except Exception as e:
-        out["error"] = f"{type(e).__name__}: {str(e)[:120]}"
+        out["error"] = f"home {type(e).__name__}: {str(e)[:100]}"; return out
+    import heapq
+    heap, seen, keys, titles = [], {home}, set(), []
+    def push(base, pg, year=None):
+        for u, t in links(base, pg):
+            if u in seen or not same_site(u, home): continue
+            sc = score(t, u)
+            if sc: seen.add(u); heapq.heappush(heap, (-sc, len(seen), u, t))
+    push(home, page)
+    while heap and out["visited"] < 30:
+        sc, _, u, t = heapq.heappop(heap)
+        try:
+            pu, pp = fetch(u, robots); time.sleep(1)
+        except Exception: continue
+        out["visited"] += 1
+        if not out["board"] and re.search(r"教育委員会", t): out["board"] = pu
+        e = ERA.search(t)
+        py = ((1 if e.group(2) == "元" else int(e.group(2))) + (2018 if e.group(1) == "令和" else 1988)) if e else None
+        pl = [(x, y) for x, y in links(pu, pp) if not SKIP_T.search(y)]
+        body = html.unescape(re.sub(r"<[^>]+>", "\n", pp)).translate(Z2H)
+        body = "\n".join(l for l in body.split("\n") if not SKIP_T.search(l))
+        # count only on pages about the board's meetings (the page's link text or heading says so)
+        head = (t + " " + (re.search(r"<title>(.*?)</title>", pp, re.S | re.I) or [None, ""])[1])
+        if re.search(r"教育委員会", head) or re.search(r"教育委員会", body[:3000]):
+            k, ts = meetings_in(pl, body, py)
+            if k: out["pages"].append(pu); keys |= k; titles += ts
+        push(pu, pp)
+    out["meetings"] = len(keys)
+    out["years"] = dict(Counter(str(k[0]) for k in keys if k[0]))
+    out["examples"] = titles[:5]
+    if not keys and not out["board"]: out["error"] = "no board page found"
     return out
 
 
