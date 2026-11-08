@@ -1,0 +1,819 @@
+nticello Brianza ->  
+IT Offida ->  
+IT Castel Guelfo di Bologna ->  
+IT Monticelli Brusati ->  
+IT Lasa ->  
+IT Sarteano ->  
+IT Guardavalle ->  
+IT Sabbioneta ->  
+IT Polverigi ->  
+IT Moretta ->  
+IT Isola del Gran Sasso d'Italia ->  
+IT San Giovanni Bianco ->  
+IT Andrano -> Comune di Andrano 0
+IT Prizzi ->  
+IT San Martino in Pensilis ->  
+IT Chiesina Uzzanese ->  
+IT Isorella ->  
+IT Storo ->  
+IT Dorno ->  
+IT Castellazzo Bormida ->  
+IT Berbenno di Valtellina ->  
+IT Ormelle -> Comune di Ormelle 0
+IT Calvenzano ->  
+IT Dipignano ->  
+IT Montecarlo ->  
+IT Salve ->  
+IT Campo Calabro -> Comune Campo Calabro 0
+IT Collebeato ->  
+IT Sant'Ambrogio di Torino ->  
+IT Cappelle sul Tavo ->  
+IT Gambara ->  
+IT Specchia ->  
+IT Rosciano ->  
+IT Condove ->  
+IT Firenzuola ->  
+IT Santa Sofia ->  
+IT Gonars ->  
+IT Carimate ->  
+IT Brivio -> Comune di Brivio 0
+IT Solbiate Arno ->  
+IT Gavi ->  
+IT Travacò Siccomario ->  
+IT Edolo ->  
+IT Comun Nuovo ->  
+IT Santa Lucia del Mela ->  
+IT Piadena Drizzona ->  
+IT Castro dei Volsci ->  
+IT Sotto il Monte Giovanni XXIII ->  
+IT Loiano -> Comune Loiano 0
+IT Santo Stefano Quisquina ->  
+IT Monastier di Treviso ->  
+IT Torrenova ->  
+IT Borghetto Lodigiano ->  
+IT Mazzarrone -> COMUNE DI MAZZARRONE 0
+IT Mineo ->  
+IT Bogliasco ->  
+IT Morcone ->  
+IT Grisignano di Zocco ->  
+IT Castelraimondo ->  
+IT Arcade ->  
+IT Sori -> COMUNE DI SORI 0
+IT Maida -> Comune di San Pietro a Maida 0
+IT Villastellone -> Comune Villastellone 0
+IT Villarosa ->  
+IT Venetico ->  
+IT Torretta ->  
+IT Mezzago -> Comune Mezzago 0
+IT Ossona -> Comune di Ossona 0
+IT Casarile -> Comune di Casarile (MI) 0
+IT Irsina ->  
+IT Valledoria ->  
+IT Valbrembo ->  
+IT Massalengo ->  
+IT Mogliano -> Comune Mogliano Veneto 0
+IT Cesiomaggiore -> Comune Di Cesiomaggiore 0
+IT Covo ->  
+IT Limatola ->  
+IT Leffe ->  
+IT Saint-Vincent -> CENTRO CONGRESSI COMUNE DI SAINT-VINCENT 0
+IT Lugagnano Val d'Arda ->  
+IT Pedavena -> Comune di Pedavena 0
+IT Montecchia di Crosara ->  
+IT Carpineti ->  
+IT Monsampolo del Tronto -> Comune Monsampolo del Tronto 0
+IT Canneto sull'Oglio ->  
+IT Canonica d'Adda -> Comune di Canonica D'Adda 0
+IT Ventasso ->  
+IT Morgano ->  
+IT Grignasco ->  
+IT San Quirino ->  
+IT Limido Comasco ->  
+IT Morazzone ->  
+IT Rombiolo ->  
+IT Pietramelara -> Comune di Pietramelara 0
+IT Villa Lagarina -> Comune Villa Lagarina 0
+IT Solarolo ->  
+IT Burago di Molgora -> Comune di Burago di Molgora 0
+IT Ripa Teatina ->  
+IT Baiano ->  
+IT Bettona ->  
+IT Brienza ->  
+IT Albese con Cassano ->  
+IT Torano Castello ->  Comune  di Torano Castello 0
+IT Vezzano sul Crostolo -> Comune di Vezzano sul Crostolo 0
+IT Spezzano della Sila ->  
+IT Nogarole Rocca -> Comune di Nogarole Rocca 0
+IT Peschici ->  
+IT Realmonte ->  
+IT Medole ->  
+IT Galzignano Terme ->  
+IT San Salvatore Telesino ->  
+IT Torrevecchia Teatina ->  
+IT Piancastagnaio ->  
+IT Terricciola ->  
+IT Bisuschio ->  
+IT Tribano ->  
+IT Tertenia ->  
+IT Castel Frentano -> Comune di Castel Frentano 0
+IT San Benedetto Val di Sambro ->  
+IT Châtillon ->  
+IT Gorgo al Monticano ->  
+IT Furnari ->  
+IT Cigliano -> Comune di Cigliano 0
+IT Miradolo Terme -> Comune Miradolo Terme 0
+IT Santo Stefano di Camastra ->  
+IT Fumane -> Comune di Fumane 0
+IT Trivento ->  
+IT Revello ->  
+IT Bernezzo ->  
+IT Vigolzone ->  
+IT Bellinzago Lombardo ->  
+IT Oggiona con Santo Stefano ->  
+IT Siculiana ->  
+IT Talmassons ->  
+IT Piglio ->  
+IT Bariano -> Comune di Bariano 0
+IT Tramonti ->  
+IT Locate Varesino ->  
+IT Arcevia ->  
+IT Mistretta ->  
+IT Rapolla -> Comune di Rapolla 0
+IT Palazzo Pignano ->  
+IT Gazzo ->  
+IT Mirabella Imbaccari -> Comune Mirabella_Imbaccari 0
+IT Salorno sulla strada del vino ->  
+IT San Bartolomeo in Galdo ->  
+IT Sersale ->  
+IT Carpiano -> Comune di Carpiano - Milano 0
+IT Grosio ->  
+IT Borgorose ->  
+IT Piraino -> Comune Piraino 0
+IT Malgrate ->  
+IT Avio -> Comune di Avio 0
+IT Ponte Lambro -> Comune di Ponte Lambro 0
+IT Cessalto ->  
+IT Atina ->  
+IT Invorio ->  
+IT Offlaga ->  
+IT Casazza -> Comune di Casazza 0
+IT Usini ->  
+IT Bagolino ->  
+IT Cannara ->  
+IT Vestone ->  
+IT Canossa ->  
+IT Castel di Iudica ->  
+IT Ischitella ->  
+IT Sardara ->  
+IT Acqualagna -> Comune di Acqualagna 0
+IT Givoletto ->  
+IT Roncà ->  
+IT Anguillara Veneta ->  
+IT Arcidosso ->  
+IT Santo Stefano Belbo ->  
+IT Vertemate con Minoprio ->  
+IT Numana ->  
+IT Sant'Antonino di Susa -> Comune di Sant'Antonino di Susa 0
+IT Centro Valle Intelvi ->  
+IT Sirolo -> Comune di Sirolo 0
+IT Cusano Mutri ->  
+IT Colonna -> Comune di Colonna 0
+IT Canale Monterano -> Comune di Canale Monterano 0
+IT Nova Ponente ->  
+IT Appignano ->  
+IT Loiri Porto San Paolo -> Comune di Loiri Porto San Paolo 0
+IT Roana -> Comune di Roana 0
+IT Sossano ->  
+IT Cene -> Comune Cene 0
+IT Mesero -> Città di Mesero 0
+IT Supersano ->  
+IT Bova Marina ->  
+IT Cavriana ->  
+IT Ragalna ->  
+IT Bozzolo ->  
+IT Calascibetta ->  
+IT Positano -> Comune di Positano 0
+IT Brentonico ->  
+IT Fara Vicentino ->  
+IT Sant'Angelo a Cupolo -> Comune di Sant'Angelo a Cupolo 0
+IT Livorno Ferraris ->  
+IT Civate ->  
+IT Val Brembilla -> Comune Val Brembilla 0
+IT Chignolo Po ->  
+IT Ballabio ->  
+IT San Benedetto dei Marsi ->  
+IT Rovetta ->  
+IT Olmedo ->  
+IT Rolo -> Comune di Rolo 0
+IT Aidone ->  
+IT Airasca -> Comune di Airasca 0
+IT Garda -> Comune di Riva del Garda 0
+IT Altomonte ->  
+IT San Michele all'Adige ->  
+IT Valdidentro -> Comune Valdidentro 0
+IT Montopoli di Sabina ->  
+IT Aiello del Sabato ->  
+IT Casirate d'Adda ->  
+IT Chiusa di Pesio ->  
+IT Val della Torre ->  
+IT Decimoputzu -> Comune Decimoputzu 0
+IT Boffalora sopra Ticino ->  
+IT Caldonazzo ->  
+IT Lenola ->  
+IT Valvasone Arzene ->  
+IT Contigliano ->  
+IT Ronco Scrivia -> Comune Ronco Scrivia 0
+IT Liscate ->  
+IT Bormio ->  
+IT Madone ->  
+IT Agordo ->  
+IT Buttrio ->  
+IT Tarzo ->  
+IT Brogliano ->  
+IT Santa Croce di Magliano ->  
+IT Norma ->  
+IT Roccagorga ->  
+IT San Carlo Canavese ->  
+IT Nuvolento ->  
+IT Castions di Strada ->  
+IT San Lorenzo di Sebato ->  
+IT Giano dell'Umbria ->  
+IT Pecetto Torinese -> Comune Pecetto Torinese 0
+IT Comezzano-Cizzago ->  
+IT Orsogna ->  
+IT San Pietro in Gu ->  
+IT Bulgarograsso -> Comune Bulgarograsso 1
+IT Quart ->  
+IT Francavilla in Sinni ->  
+IT Civitella di Romagna ->  
+IT Stanghella ->  
+IT Sant'Angelo in Vado ->  
+IT Bardello con Malgesso e Bregano ->  
+IT Falerna ->  
+IT Moiano ->  
+IT Torricella -> Comune di Torricella Taverne Canale streaming 0
+IT Albuzzano ->  
+IT Castelmassa ->  
+IT Paderno d'Adda -> Comune di Paderno d'Adda 0
+IT Bolognetta -> IlComuneDiBolognettaInforma Comune Bolognetta 0
+IT Massa Martana ->  
+IT Delia ->  
+IT Rose ->  
+IT Vasanello -> Consiglio Comunale Vasanello 0
+IT Cercemaggiore ->  
+IT Villar Perosa ->  
+IT San Genesio ed Uniti ->  
+IT Prato allo Stelvio ->  
+IT Parcines ->  
+IT Polesella -> Comune di Polesella 0
+IT Palau -> Ufficio Turismo - Comune di Palau 0
+IT Mongrando ->  
+IT Amaseno ->  
+IT Monghidoro -> Comune di Monghidoro 0
+IT San Giovanni a Piro ->  
+IT Bellagio ->  
+IT Paladina ->  
+IT Cursi -> COMUNE DI CURSI 0
+IT Gravedona ed Uniti ->  
+IT Vescovato ->  
+IT Paduli ->  
+IT Portopalo di Capo Passero ->  
+IT Castel Morrone ->  
+IT San Calogero ->  
+IT Arnesano -> COMUNE ARNESANO 0
+IT Squillace ->  
+IT Castelforte -> Comune Castelforte 0
+IT Premariacco ->  
+IT Nibionno ->  
+IT Verolavecchia -> Comune Verolavecchia 0
+IT Diano d'Alba ->  
+IT Roccalumera -> comune roccalumera 0
+IT Bisacquino ->  
+IT Orgosolo ->  
+IT San Pietro a Maida -> Amministrazione Comunale San Pietro a Maida 0
+IT Sabbio Chiese ->  
+IT Maletto -> Comune di Maletto - Città della Fragola 0
+IT Sant'Omobono Terme ->  
+IT Merone ->  
+IT Capalbio -> Comune di Capalbio 0
+IT Grumolo delle Abbadesse ->  
+IT Latronico ->  
+IT Lograto ->  
+IT San Gregorio Magno ->  
+IT San Vito di Leguzzano ->  
+IT Vicovaro ->  
+IT Manta -> Comune di Manta 0
+IT San Salvatore Monferrato ->  
+IT Salizzole ->  
+IT Ussana ->  
+IT Bisaccia -> Comune Bisaccia 0
+IT Tollo ->  
+IT Suisio ->  
+IT Carpineto Romano ->  
+IT Castagnaro ->  
+IT Urago d'Oglio ->  
+IT Cavalese ->  
+IT Renate ->  
+IT San Martino in Strada ->  
+IT Pofi ->  
+IT Pomarico ->  
+IT Costermano sul Garda ->  
+IT Nizza di Sicilia -> Comune Nizza di Sicilia 0
+IT Santa Maria Nuova ->  
+IT Ariano nel Polesine ->  
+IT Tarvisio ->  
+IT Piobesi Torinese -> Comune di Piobesi Torinese 0
+IT Grizzana Morandi ->  
+IT Ora ->  
+IT Scarlino -> Comune di Scarlino 0
+IT Cenate Sotto ->  
+IT Vaiano Cremasco -> Comune Vaiano Cremasco 0
+IT Sogliano Cavour ->  
+IT Allumiere ->  
+IT Capoliveri ->  
+IT Oppido Lucano ->  
+IT Mogoro ->  
+IT Casalbuttano ed Uniti ->  
+IT Piedimonte Etneo -> Comune Piedimonte Etneo 0
+IT Beinette -> COMUNE BEINETTE 0
+IT Travedona-Monate ->  
+IT Levate ->  
+IT Saint-Christophe ->  
+IT Agnadello ->  
+IT Pravisdomini ->  
+IT Pompiano ->  
+IT Nusco -> Comune di Nusco 0
+IT Briatico ->  
+IT Cittiglio ->  
+IT Fiesso Umbertiano ->  
+IT Romagnano Sesia ->  
+IT Altavilla Irpina ->  
+IT Platì ->  
+IT Borgofranco d'Ivrea ->  
+IT Prignano sulla Secchia -> Comune di Prignano sulla Secchia 0
+IT Vizzolo Predabissi ->  
+IT Sondalo ->  
+IT Scafa -> Comune di Scafa Amministrazione Comunale 0
+IT Gibellina ->  
+IT Sale ->  
+IT Bagnaria Arsa ->  
+IT Cernusco Lombardone ->  
+IT Gaglianico ->  
+IT Marciano della Chiana ->  
+IT Sant'Eufemia d'Aspromonte ->  
+IT Bari Sardo ->  
+IT Calangianus ->  
+IT Minervino di Lecce -> Comune di Minervino di Lecce 0
+IT Morano Calabro ->  
+IT Cornedo all'Isarco ->  
+IT Saluggia -> Comune di Saluggia 0
+IT Masate ->  
+IT Bolsena ->  
+IT Bovolenta -> Comune Bovolenta 0
+IT Rogno ->  
+IT Somaglia ->  
+IT Ponderano ->  
+IT Bobbio ->  
+IT Sant'Angelo dei Lombardi ->  
+IT Fiè allo Sciliar ->  
+IT Annone Veneto -> Comune di Annone Veneto (VE) 0
+IT Carpino ->  
+IT Bene Vagienna ->  
+IT Bienno ->  
+IT San Secondo di Pinerolo ->  
+IT Pietragalla -> Pietragalla BC Bene Comune 0
+IT Vernate ->  
+IT San Leonardo in Passiria ->  
+IT Dubino ->  
+IT Tribiano -> Comune di Tribiano 0
+IT Colli del Tronto ->  
+IT Orsago ->  
+IT Quarona ->  
+IT Carpignano Salentino ->  
+IT Scoppito ->  
+IT Naso ->  
+IT Oliveto Citra ->  
+IT Battaglia Terme ->  
+IT Fornovo San Giovanni ->  
+IT Taino ->  
+IT Castrocielo ->  
+IT Serracapriola ->  
+IT Marsico Nuovo ->  
+IT Pernumia ->  
+IT Sperone ->  
+IT Trana ->  
+IT Baunei ->  
+IT Occhieppo Inferiore ->  
+IT Marchirolo ->  
+IT Dovera ->  
+IT San Martino di Venezze -> Comune San Martino di Venezze 0
+IT Spotorno -> Comune di Spotorno 0
+IT Voghiera ->  
+IT Maniace -> Comitato Cittadino Maniace 0
+IT San Rocco al Porto ->  
+IT Mathi ->  
+IT San Giovanni di Fassa ->  
+IT Falciano del Massico ->  
+IT Romans d'Isonzo ->  
+IT Baldissero Torinese -> Comune di Baldissero Torinese 0
+IT Gressan ->  
+IT Villasimius ->  
+IT Carasco ->  
+IT San Paolo Bel Sito ->  
+IT Casole d'Elsa -> Comune Casole d'Elsa 0
+IT Corchiano ->  
+IT Valgreghentino -> Comune Valgreghentino 0
+IT Castelplanio ->  
+IT Palomonte ->  
+IT Tuoro sul Trasimeno ->  
+IT Aci Bonaccorsi ->  
+IT Calvagese della Riviera ->  
+IT Arborea ->  
+IT Leggiuno ->  
+IT Sangano ->  
+IT Lattarico ->  
+IT Oriolo Romano ->  
+IT Piegaro -> Comune “ComunePiegaroLive” di Piegaro 0
+IT Germignaga ->  
+IT Sarsina ->  
+IT Ronco Briantino ->  
+IT Serre ->  
+IT Lascari -> Comune di Lascari 0
+IT Guarene -> COMUNE DI GUARENE - Segreteria 0
+IT Castel di Casio ->  
+IT Sedegliano ->  
+IT Tromello -> Comune di Tromello 0
+IT Basiano ->  
+IT Castagnole delle Lanze ->  
+IT Paderno Franciacorta ->  
+IT Tiriolo ->  
+IT Colonnella ->  
+IT Pradamano ->  
+IT Saponara ->  
+IT San Pietro in Guarano ->  
+IT Moliterno ->  
+IT Alanno ->  
+IT Pescina -> Comune di Pescina 0
+IT Siliqua ->  
+IT Cartigliano ->  
+IT Montese -> Comune di Montese 0
+IT Tione di Trento ->  
+IT Francavilla di Sicilia ->  
+IT Lauro ->  
+IT Pontelongo ->  
+IT Vidor ->  
+IT Ardesio ->  
+IT Stigliano -> Comune di Stigliano 0
+IT Acquaviva Picena ->  
+IT Fauglia ->  
+IT San Martino in Passiria ->  
+IT San Possidonio ->  
+IT Casola di Napoli ->  
+IT Zapponeta ->  
+IT Castrignano de' Greci ->  
+IT Atella -> Comune di Atella - Diretta Consiglio Comunale  0
+IT Narzole -> Comune di Narzole 0
+IT Mondavio ->  
+IT Artogne ->  
+IT Fonni ->  
+IT Montecalvo Irpino ->  
+IT Porto Azzurro ->  
+IT Pontecurone ->  
+IT Collesano -> Comune Collesano 0
+IT Sergnano ->  
+IT Novella ->  
+IT Lestizza ->  
+IT Gambellara ->  
+IT Godiasco Salice Terme ->  
+IT Gallicano -> Comune di Gallicano 0
+IT Ceranesi ->  
+IT Bressana Bottarone -> Comune di Bressana Bottarone 0
+IT Pescaglia -> Sindaco Comune di Pescaglia 0
+IT Riccò del Golfo di Spezia -> Comune di Riccò del Golfo di Spezia 0
+IT Magliano in Toscana ->  
+IT Pavone Canavese ->  
+IT Neviano degli Arduini -> Comune di Neviano degli Arduini 0
+IT Casciago ->  
+IT Antegnate ->  
+IT Cerreto Sannita ->  
+IT Chiarano ->  
+IT Serra de' Conti ->  
+IT Solopaca ->  
+IT Pieve di Cadore ->  
+IT Millesimo ->  
+IT Pozzolengo ->  
+IT Portovenere ->  
+IT Malcesine -> Comune di Malcesine 0
+IT Caltavuturo -> Comune Caltavuturo 0
+IT Follina ->  
+IT Valdisotto ->  
+IT Sordio ->  
+IT Altidona ->  
+IT Vo' -> comune vo 0
+IT Pratola Serra ->  
+IT Bellano ->  
+IT Esperia ->  
+IT Villarbasse ->  
+IT Remedello ->  
+IT Mignanego ->  
+IT Dobbiaco ->  
+IT Pitigliano -> Comune Pitigliano 0
+IT Alia -> CONSIGLIO COMUNALE DI ALIA (PA) 0
+IT Colliano ->  
+IT Cuasso al Monte ->  
+IT Buddusò ->  
+IT Torrevecchia Pia ->  
+IT Morro d'Oro ->  
+IT Pont-Saint-Martin ->  
+IT Bosco Chiesanuova ->  
+IT Cerreto d'Esi ->  
+IT Miggiano ->  
+IT Badia ->  
+IT Lugo di Vicenza ->  
+IT Molteno ->  
+IT Credaro ->  
+IT Faggiano -> Comune di Faggiano 0
+IT Montemesola ->  
+IT Casalfiumanese ->  
+IT Villa Minozzo ->  
+IT Ardenno ->  
+IT Villanterio ->  
+IT Asso ->  
+IT Citerna ->  
+IT Cavaglià ->  
+IT Azzano Mella ->  
+IT Bagnoli di Sopra ->  
+IT Magliano de' Marsi -> Comune Magliano de' Marsi 0
+IT Deliceto ->  
+IT Valfabbrica ->  
+IT Petacciato ->  
+IT Saracena ->  
+IT Romanengo ->  
+IT Mairano ->  
+IT Montaione ->  
+IT Termeno sulla strada del vino ->  
+IT Vellezzo Bellini ->  
+IT Puegnago del Garda -> Comune di Puegnago del Garda 0
+IT Carrè ->  
+IT Teulada ->  
+IT San Nicola Manfredi ->  
+IT Cuveglio ->  
+IT Roncofreddo ->  
+IT Ferrazzano ->  
+IT Valdaora ->  
+IT Fagnano Castello ->  
+IT Ripalta Cremasca ->  
+IT Endine Gaiano ->  
+IT Loreo ->  
+IT Viggiano ->  
+IT Sant'Oreste -> Comune Sant'Oreste 0
+IT Bibiana ->  
+IT Abbadia Lariana ->  
+IT Magliano Sabina ->  
+IT Castelbelforte ->  
+IT San Lorenzo in Campo ->  
+IT Goro ->  
+IT Spongano ->  
+IT San Felice del Benaco ->  
+IT Costa di Mezzate ->  
+IT Folgaria ->  
+IT Ornavasso ->  
+IT San Vito -> Comune di San Vito Chietino 0
+IT Frigento ->  
+IT Rotonda ->  
+IT Monasterace ->  
+IT Lucignano ->  
+IT Forno Canavese ->  
+IT Viano -> Comune di Viano - Reggio Emilia 0
+IT Ghemme ->  
+IT Camposanto ->  
+IT Senna Comasco ->  
+IT Cassina Rizzardi ->  
+IT Saludecio ->  
+IT Falzes ->  
+IT Pozzonovo ->  
+IT Cucciago -> COMUNE CUCCIAGO 0
+IT Falerone ->  
+IT Naz-Sciaves ->  
+IT Rotondi ->  
+IT Castione della Presolana ->  
+IT Veniano ->  
+IT Polverara ->  
+IT Chignolo d'Isola ->  
+IT Lusia ->  
+IT Bonorva ->  
+IT San Luca ->  
+IT Isola Rizza ->  
+IT Rio -> Comune Rio nell'Elba 0
+IT Ceregnano ->  
+IT Bedonia -> COMUNE DI BEDONIA 0
+IT San Pietro in Lama ->  
+IT Vinchiaturo -> Comune di Vinchiaturo 0
+IT Coazze ->  
+IT Cimadolmo ->  
+IT Satriano -> Comune di Satriano di Lucania 0
+IT Settingiano ->  
+IT Montelupone ->  
+IT Buguggiate -> Comune di Buguggiate 0
+IT Montegalda ->  
+IT Tufino ->  
+IT Dresano ->  
+IT Carolei ->  
+IT Belfiore ->  
+IT Ciminna -> Comune di Ciminna 0
+IT San Gillio ->  
+IT Zinasco ->  
+IT Vandoies ->  
+IT Fenegrò ->  
+IT Casale Corte Cerro ->  
+IT Marene ->  
+IT Cattolica Eraclea -> Comune di Cattolica Eraclea 0
+IT Ostra Vetere ->  
+IT San Candido ->  
+IT Marano Marchesato ->  
+IT Monsano ->  
+IT Serle ->  
+IT Bagnoregio ->  
+IT Rodi Garganico ->  
+IT Caposele ->  
+IT Nanto ->  
+IT Cavedine ->  
+IT Ruoti -> Comune di Ruoti 0
+IT Serrara Fontana ->  
+IT Costigliole Saluzzo ->  
+IT Villamassargia ->  
+IT Gais ->  
+IT Caselle Lurani ->  
+IT Montalto Dora ->  
+IT Ordona ->  
+IT Delebio -> Comune di Delebio 0
+IT Pocapaglia ->  
+IT Montello -> Comune di Volpago del Montello 0
+IT Sanfrè ->  
+IT Masone ->  
+IT Cengio ->  
+IT Torrecuso ->  
+IT Montefalcione ->  
+IT Collazzone ->  
+IT Cafasse ->  
+IT Correzzana ->  
+IT Caprino Bergamasco ->  
+IT Saint-Pierre ->  
+IT Varzi ->  
+IT Montefano -> comune montefano 0
+IT Gazoldo degli Ippoliti ->  
+IT Rio di Pusteria ->  
+IT Sperlonga ->  
+IT Gesualdo ->  
+IT Ponza ->  
+IT Tronzano Vercellese ->  
+IT Bono ->  
+IT Pinzolo -> Comune Pinzolo 0
+IT Oulx ->  
+IT Marano Principato ->  
+IT Aldeno -> Comune Aldeno 0
+IT Faicchio ->  
+IT Grottazzolina ->  
+IT Pastrengo ->  
+IT Sale Marasino ->  
+IT Biandronno ->  
+IT Castel Ivano ->  
+IT Ospedaletti ->  
+IT Sorano -> Comune Sorano 0
+IT Piscina ->  
+IT Forano ->  
+IT Dongo ->  
+IT Casamarciano ->  
+IT Bosisio Parini ->  
+IT Pont Canavese ->  
+IT Persico Dosimo ->  
+IT Balsorano ->  
+IT Albosaggia ->  
+IT Pontida ->  
+IT Sogliano al Rubicone ->  
+IT Neive ->  
+IT Sesto ed Uniti ->  
+IT San Giusto Canavese ->  
+IT Santa Marina ->  
+IT Alta Valle Intelvi ->  
+IT Marliana -> Comune di Marliana 0
+IT Aquileia ->  
+IT Gioia Sannitica ->  
+IT San Raffaele Cimena ->  
+IT Carlazzo ->  
+IT Scandriglia ->  
+IT Bressanvido ->  
+IT Limbadi ->  
+IT Brancaleone ->  
+IT Cantagallo -> Comune Cantagallo 0
+IT Melissa -> Comune Melissa 0
+IT Sospirolo ->  
+IT Marta ->  
+IT Scalenghe ->  
+IT Bibbona -> Comune di Bibbona 0
+IT Amandola ->  
+IT Valledolmo -> Comune Valledolmo 0
+IT Gagliano Castelferrato ->  
+IT Banchette ->  
+IT Casalmaiocco ->  
+IT Foglianise ->  
+IT Baiso -> Consiglio Comunale Baiso 0
+IT Castelnuovo Don Bosco ->  
+IT Grezzago ->  
+IT Val di Vizze ->  
+IT Vibonati ->  
+IT Dosolo ->  
+IT Stienta ->  
+IT Furci Siculo ->  
+IT Marebbe ->  
+IT Robassomero ->  
+IT Cinto Caomaggiore -> Comune di Cinto Caomaggiore 0
+IT San Fratello ->  
+IT Contursi Terme ->  
+IT Borgo Tossignano ->  
+IT San Lorenzo del Vallo ->  
+IT Moscufo ->  
+IT Pove del Grappa -> Comune “Comune di Pove del Grappa” Pove 0
+IT Ceppaloni -> Comune di Ceppaloni 0
+IT Viguzzolo ->  
+IT Castelliri ->  
+IT San Pietro di Morubio ->  
+IT Ome ->  
+IT Rocca Imperiale -> Comune di Rocca Imperiale 0
+IT Caltabellotta ->  
+IT Fiumefreddo Bruzio ->  
+IT Corno di Rosazzo ->  
+IT Balangero ->  
+IT Maslianico ->  
+IT Castiraga Vidardo ->  
+IT Morolo -> Comune di Morolo 0
+IT Sarnano ->  
+IT Roccamonfina ->  
+IT Bivona -> Città di Bivona 0
+IT Filago ->  
+IT Vicoforte ->  
+IT Polesine Zibello ->  
+IT Agna ->  
+IT Menaggio ->  
+IT Brebbia ->  
+IT Roccabernarda ->  
+IT Sospiro ->  
+IT Polcenigo ->  
+IT Chienes ->  
+IT Volano ->  
+IT Cogollo del Cengio ->  
+IT Altino -> Comune di Altino 0
+IT Villafrati -> Comune di Villafrati Consiglio Comunale 0
+IT Marano di Valpolicella ->  
+IT Narcao ->  
+IT Cugliate-Fabiasco ->  
+IT Santadi ->  
+IT Posada ->  
+IT Marone ->  
+IT Miane ->  
+IT Bagnoli Irpino ->  
+IT Foresto Sparso ->  
+IT Orgiano ->  
+IT Terre d'Adige ->  
+IT Caronia ->  
+IT Trappeto ->  
+IT Gaggi ->  
+IT Civitella Roveto ->  
+IT Baone ->  
+IT Casella ->  
+IT Velturno ->  
+IT Daverio ->  
+IT Valli del Pasubio ->  
+IT Bosconero ->  
+IT San Vito Romano ->  
+IT San Ginesio ->  
+IT Perosa Argentina ->  
+IT San Giovanni Incarico ->  
+IT Lozzo Atestino ->  
+IT Morciano di Leuca ->  
+IT Corio ->  
+IT Patrica -> Comune di Patrica 0
+IT Val Liona -> COMUNE VAL LIONA 0
+IT Arsiero ->  
+IT Cianciana ->  
+IT Vallelunga Pratameno -> Comune di Vallelunga Pratameno 0
+IT Montorso Vicentino ->  
+IT Delianuova ->  
+IT Caselette ->  
+IT Scena ->  
+IT Fonzaso ->  
+IT Castel Ritaldi ->  
+IT Sicignano degli Alburni ->  
+IT Casnigo ->  
+IT Auronzo di Cadore ->  
+IT San Genesio Atesino ->  
+IT Maleo ->  
+IT San Pietro Viminario ->  
+IT Manocalzati ->  
+IT Savignone ->  
+IT San Demetrio Corone ->  
+IT Caramagna Piemonte ->  
+IT Torrazza Piemonte ->  
+IT Rocca d'Evandro ->  
+
+---
