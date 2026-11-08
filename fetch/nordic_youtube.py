@@ -58,6 +58,8 @@ C = {
     # Poland: council sessions (sesja rady gminy / rady miejskiej) and their education committees (komisja oświaty).
     "PL": dict(file="poland", q="sesja rady {} {region}", chan=r"gmin|miast|urz[aą]d|rada|sesj|starostw|ug\b|um\b",
                edu=r"o[sś]wiat|edukacj|szk[oó][lł]", meet=r"sesj|posiedzeni|komisj|obrad"),
+    "PL2": dict(file="poland2", q="sesja rady {} {region}", chan=r"gmin|miast|urz[aą]d|rada|sesj|starostw|ug\b|um\b",
+                edu=r"o[sś]wiat|edukacj|szk[oó][lł]", meet=r"sesj|posiedzeni|komisj|obrad"),
     "NL": dict(file="netherlands", q="gemeente {} raadsvergadering", chan=r"gemeente|gemeenteraad|raad|griffie",
                edu=r"onderwijs|jeugd|school|kind",
                meet=r"commissie|raad|vergadering|beeldvorm|oordeelvorm"),
@@ -105,7 +107,8 @@ def is_channel_for(cc, name, channel):
     for n in names(name):
         want = [w for w in words(n) if w not in GENERIC] or words(n)
         # "Københavns Kommune" matches "København"; Finnish channels use the genitive ("Helsingin kaupunki").
-        ok = lambda w: any(h == w or h == w + "s" or (cc == "FI" and len(h) <= len(w) + 4 and h[:max(3, len(w) - 3)] == w[:max(3, len(w) - 3)]) for h in have)
+        # Finnish and Polish channels use other cases ("Helsingin kaupunki", "Rada Miasta Krakowa", "Rada Miejska w Łodzi").
+        ok = lambda w: any(h == w or h == w + "s" or (cc in ("FI", "PL", "PL2") and len(h) <= len(w) + 4 and h[:max(3, len(w) - 3)] == w[:max(3, len(w) - 3)]) for h in have)
         if all(ok(w) for w in want):
             return True
     return False
@@ -136,7 +139,9 @@ def run(cc, outdir, shard=None):
                         if e.get("channel_url") and e.get("channel"):
                             chans[e["channel_url"]] = e["channel"]
                 exact = lambda ch: any(all(w in words(ch) for w in words(n)) for n in names(name))
-                pick = sorted([(u, ch) for u, ch in chans.items() if is_channel_for(cc, name, ch)], key=lambda x: not exact(x[1]))
+                # Polish city councils have their own channels ("Rada Miasta Krakowa"): prefer those to the city's.
+                pick = sorted([(u, ch) for u, ch in chans.items() if is_channel_for(cc, name, ch)],
+                              key=lambda x: (cc.startswith("PL") and not re.search(r"\brad[ay]\b", x[1], re.I), not exact(x[1])))
                 if pick:
                     url, chan = pick[0]
                     if url not in seen:
