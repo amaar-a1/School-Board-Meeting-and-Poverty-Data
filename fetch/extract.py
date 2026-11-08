@@ -1,3 +1,4 @@
+# retry after the rate limit window
 # Temporary: Poland's primary-school pupils by gmina from the Local Data Bank (BDL), slowly (anonymous users may make
 # 100 requests per 15 minutes), plus county (powiat) names to tell apart gminy with the same name.
 import json, os, time, traceback, urllib.parse, urllib.request
