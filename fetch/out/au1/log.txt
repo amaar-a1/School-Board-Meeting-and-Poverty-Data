@@ -1,0 +1,9 @@
+gcp files 129
+saved Metadata_2021_GCP_DataPack_R1_R2.xlsx
+lga ['LGA_2021_AUST_GDA2020.CPG', 'LGA_2021_AUST_GDA2020.dbf', 'LGA_2021_AUST_GDA2020.prj', 'LGA_2021_AUST_GDA2020.sbn', 'LGA_2021_AUST_GDA2020.sbx', 'LGA_2021_AUST_GDA2020.shp', 'LGA_2021_AUST_GDA2020.shp.xml', 'LGA_2021_AUST_GDA2020.shx', 'LGA_2021_AUST_GDA2020.xml']
+mapshaper 0 [filter] Retained 566 of 566 features
+[simplify] Repaired 41 intersections
+[o] Wrote fetch/out/au1/lga2021.json
+
+dss Expanded DSS Benefit and Payment Recipient Demographics - June 2026 1025883
+dss Expanded DSS Benefit and Payment Recipient Demographics - March 2026 944285
