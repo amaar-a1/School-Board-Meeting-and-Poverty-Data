@@ -2,7 +2,7 @@ name: Fetch pages for world research (temporary)
 
 on:
   push:
-    branches: [claude/world-fetch]
+    branches: [claude/world-fetch, claude/pl-pupils]
     paths: [fetch/urls.txt, fetch/paginate.txt, fetch/extract.py]
 
 permissions:
