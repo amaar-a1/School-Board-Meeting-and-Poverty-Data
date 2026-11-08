@@ -349,7 +349,7 @@ def write(cc, key, rows, feats):
             "Population", "Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
     extra = [c for c in ("Province", "Autonomous community", "Children under 18 (estimated)", "Poverty year", "Poverty range", "Poverty rate (region, all ages)", ES_EST,
-                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)", "Welfare rate basis", "Unemployment rate (2020 census)", "Children under 15", "Children on family benefit (% of under-20s)", "Median income (€ per taxpayer)") if any(r.get(c) not in (None, "") for r in rows)]
+                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)", "Welfare rate basis", "Unemployment rate (2020 census)", "Children under 15", "Children on family benefit (% of under-20s)", "Median income (€ per taxpayer)", "Children under 18", "Mean income (€ per tax return)") if any(r.get(c) not in (None, "") for r in rows)]
     pov = "Percentage of Children in Low Income" if any(r.get("Percentage of Children in Low Income") for r in rows) else "Poverty rate (all ages)"
     cols = [c for c in cols if c not in ("Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)") or any(r.get(c) not in (None, "") for r in rows)]
     cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
@@ -1033,6 +1033,38 @@ def portugal():
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": x["name"]}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
     write("PT", "portugal", rows, feats)
+
+
+def belgium():
+    """565 municipalities (after the 2025 mergers). Municipalities run their own primary schools (municipal
+    education, gemeentelijk onderwijs / enseignement communal) alongside the communities' and the free (mostly Catholic)
+    networks; the town council (gemeenteraad / conseil communal) is their school board. Poverty stand-in: people
+    receiving the integration income (leefloon / revenu d'intégration), per 100 inhabitants, 2025 (PPS Social Integration)."""
+    d = os.path.join(IN, "belgium")
+    be = json.load(open(os.path.join(d, "be_data.json"), encoding="utf-8"))
+    ris = json.load(open(os.path.join(d, "be_ris_2025.json"), encoding="utf-8"))
+    geo = {f["properties"]["refnis"]: f for f in json.load(open(os.path.join(d, "be_municipalities_2025.geojson"), encoding="utf-8"))["features"]}
+    rows, feats = [], []
+    for code, x in sorted(be.items()):
+        f = geo.get(code); p = f["properties"] if f else {}
+        reg = x["region_nl"]
+        name = (x["nl"] if reg == "Vlaams Gewest" else x["fr"] if reg == "Waals Gewest" else (x["fr"] if x["fr"] == x["nl"] else f"{x['fr']} / {x['nl']}"))
+        name = re.sub(r"\s*\((?:à partir de|vanaf) 2025\)|\s*\([^)]*\)$", "", name).strip()
+        prov = "Brussels" if x["province_nl"] == "Brussels" else re.sub(r"^(Provincie|Province)\s+(de |du |d’|d')?", "", x["province_nl"] if reg == "Vlaams Gewest" else x["province_fr"])
+        pop = x.get("pop") or p.get("POP") or 0
+        dens = pop / p["AREA"] if pop and p.get("AREA") else 0
+        r = ris.get(code)
+        did = f"BE-{code}"
+        rows.append({"District": name, "Region": prov, "Population": round(pop) if pop else "",
+                     "Poverty rate (all ages)": f"{r['per1000'] / 10:.2f}%" if r else "",
+                     "Poverty note": "Stand-in: people receiving the integration income (leefloon / revenu d'intégration), Belgium's minimum-income benefit paid by the "
+                                     "municipality's social welfare centre (OCMW / CPAS), during 2025, per 100 inhabitants (PPS Social Integration); Belgium publishes no poverty rate by municipality" if r else "",
+                     "Children under 18": x.get("u18") or "",
+                     "Mean income (€ per tax return)": x.get("income_per_return") or "",
+                     "School system": "Municipality (its own primary schools), alongside the community's and the free schools",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
+        if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    write("BE", "belgium", rows, feats)
 
 
 EC_PROV_CAPS = {}

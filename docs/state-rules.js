@@ -297,6 +297,17 @@ window.STATE_RULES = {
     ],
     note: "Check the current law and the municipality's own rules before relying on this."
   },
+  belgium: {
+    title: "Rules for town council (gemeenteraad / conseil communal) meetings",
+    checked: "November 8, 2026",
+    laws: [
+      { state: "Belgium", covers: "Town councils", threshold: "",
+        rule: "Council meetings are public, except for matters about individuals (Flanders: Decree on Local Government of 2017, art. 28; Wallonia: Code de la démocratie locale, art. L1122-20; Brussels: the New Municipal Law, art. 93). Flemish councils must make an audio or video recording or a detailed record of their meetings public since 2019; elsewhere many councils stream." },
+      { state: "Belgium", covers: "Schools", threshold: "",
+        rule: "Education is run by the language communities. Municipalities organise their own primary (and some secondary) schools in the official subsidised network, with the town council as the governing body; the communities and the free networks run the rest." }
+    ],
+    note: "Check the current law and the council's own rules before relying on this."
+  },
   ecuador: {
     title: "Rules for cantonal council (concejo municipal) meetings",
     checked: "November 7, 2026",

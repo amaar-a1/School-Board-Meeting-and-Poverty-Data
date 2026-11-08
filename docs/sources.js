@@ -326,6 +326,19 @@ window.SOURCES = [
     note: "Built by data-prep/prep_portugal.py and data-prep/build_latam.py. Municipalities are matched by their code (DTMN)."
   },
   {
+    only: "Belgium",
+    group: "Belgium: municipalities, integration income, income and population",
+    items: [
+      { title: "Integration income (stand-in): PPS Social Integration, revenu d'intégration / leefloon beneficiaries by municipality, 2025 (stat.mi-is.be)", url: "https://stat.mi-is.be/fr/dashboard/ris_cities?menu=map" },
+      { title: "Income: Statbel, fiscal statistics on income by municipality (TF_PSNL_INC_TAX_MUNTY), 2023", url: "https://statbel.fgov.be/en/open-data/fiscal-statistics-income" },
+      { title: "Population and children under 18: Statbel, population by place of residence and age (TF_SOC_POP_STRUCT_2025)", url: "https://statbel.fgov.be/en/open-data" },
+      { title: "Municipality codes and names: Statbel, REFNIS code list (1 January 2025)", url: "https://statbel.fgov.be/en/open-data/code-refnis-0" },
+      { title: "Borders: Eurostat GISCO Local Administrative Units (LAU) 2024, merged into the 2025 municipalities with mapshaper", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
+      { title: "Meetings: each municipality's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_belgium.py and data-prep/build_latam.py. Municipalities are matched by their REFNIS code; the 2025 mergers are in data-prep/inputs/belgium/be_mergers_2025.json."
+  },
+  {
     only: "Ecuador",
     group: "Ecuador: cantons, poverty, population and pupils",
     items: [
