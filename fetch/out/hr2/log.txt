@@ -1,0 +1,5 @@
+ERR wb_sae.pdf <urlopen error [Errno 104] Connection reset by peer>
+ERR ir_2024.pdf <urlopen error [Errno 104] Connection reset by peer>
+ERR ir_page.html <urlopen error [Errno 104] Connection reset by peer>
+ERR kartom.html <urlopen error [Errno 104] Connection reset by peer>
+ERR dzs_en.pdf <urlopen error [Errno 104] Connection reset by peer>
