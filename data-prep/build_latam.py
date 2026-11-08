@@ -138,9 +138,25 @@ RULES["EC"] = (re.compile(r"comisi[óo]n (permanente )?(de |del )?((cultura|depo
                           r"(ordinaria|extraordinaria) (de|del) concejo|concejo (municipal|cantonal)[^|]{0,30}sesi[óo]n)", re.I),
                re.compile(NOT_T.pattern + r"|solemne|conmemorativa|parroquial|provincial|junta|consejo cantonal de protecci", re.I))
 
+# Italy: the town council (consiglio comunale) and its education committee (commissione istruzione / scuola);
+# children's and youth councils (consiglio comunale dei ragazzi) and ceremonies aren't counted.
+RULES["IT"] = (re.compile(r"commission[ei][^|]{0,50}(istruzione|scuol|scolastic|educazion|servizi educativi)", re.I),
+               re.compile(r"consiglio comunale|seduta|sessione", re.I),
+               re.compile(r"^(?!.*(commission|ragazzi|giovani|bambini|junior)).*(consiglio comunale|seduta (del |di )?consiglio|seduta consiliare|consiglio comunale)", re.I),
+               re.compile(r"live session|intervista|\btg\b|notiziario|spot|promo|festa|concerto|premiazion|inaugurazion|cerimonia|ragazzi|bambini|elezion|"
+                          r"campagna|candidat|messa|processione|auguri", re.I))
+# Poland: council sessions (sesja rady gminy / rady miejskiej) and the education committee (komisja oświaty);
+# youth and seniors' councils (młodzieżowa rada, rada seniorów) and ceremonies aren't counted.
+RULES["PL"] = (re.compile(r"komisj[aiy][^|]{0,60}(o[sś]wiat|edukacj|szk[oó][lł])", re.I),
+               re.compile(r"sesj|obrad", re.I),
+               re.compile(r"^(?!.*(komisj|m[lł]odzie[zż]ow|senior|dzieci)).*(sesj[aię]\s+(rady|nadzwyczajn|zwyczajn|absolutoryjn|bud[zż]etow|nr)|"
+                          r"\b[ivxlc]+\.?\s+(nadzwyczajna\s+)?sesj|\d+\.?\s+(nadzwyczajna\s+)?sesj|obrady\s+(sesji|rady)|sesja\s+\d)", re.I),
+               re.compile(r"live session|wywiad|spot|reklam|festyn|koncert|do[zż]ynk|msza|[zż]yczenia|m[lł]odzie[zż]ow|senior|wybory|kampani|kandydat|"
+                          r"relacja z|transmisja meczu", re.I))
+
 # Spain: a committee covering education counts only when at least this many of its sessions are posted; otherwise the
 # council's plenaries do (one stray committee clip shouldn't replace 160 plenaries).
-MIN_EDU = {"ES": 3, "FRA": 3, "EC": 3}
+MIN_EDU = {"ES": 3, "FRA": 3, "EC": 3, "IT": 3, "PL": 3}
 
 
 def session_key(cc, t):
@@ -151,7 +167,7 @@ def session_key(cc, t):
         if m:
             y = re.search(r"\b(20\d\d)\b", t)
             return f"{m.group(1)} {m.group(2).lower()} {y.group(1) if y else ''}"
-    return re.sub(r"\b(parte|part)\s*\d+\b|\(\d\)|\d/\d", "", t, flags=re.I).strip().lower()
+    return re.sub(r"\b(parte|part|cz[eę][sś][cć])\s*\d+\b|\(\d\)|\d/\d", "", t, flags=re.I).strip().lower()
 
 
 def meetings(cc, did):

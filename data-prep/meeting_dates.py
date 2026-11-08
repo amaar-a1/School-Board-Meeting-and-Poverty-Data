@@ -8,18 +8,18 @@ import re
 
 MONTHS = {}
 for i, names in enumerate([
-    "january jan januar janvier gennaio enero janeiro gener januari tammikuu janúar ιανουαρίου",
-    "february feb februar février fevrier febbraio febrero fevereiro febrer februari helmikuu febrúar φεβρουαρίου",
-    "march mar märz maerz mars marzo março marc maart maaliskuu ματίου μαρτίου",
-    "april apr avril aprile abril abril huhtikuu apríl απριλίου",
-    "may mai maggio mayo maio maig mei toukokuu maí μαΐου",
-    "june jun juni juin giugno junio junho juny kesäkuu júní ιουνίου",
-    "july jul juli juillet luglio julio julho juliol heinäkuu júlí ιουλίου",
-    "august aug august août aout agosto agost augustus elokuu ágúst αυγούστου",
-    "september sep sept september septembre settembre septiembre setembro setembre syyskuu σεπτεμβρίου",
-    "october oct oktober octobre ottobre octubre outubro octubre lokakuu október οκτωβρίου",
-    "november nov november novembre noviembre novembro novembre marraskuu nóvember νοεμβρίου",
-    "december dec dezember desember décembre decembre dicembre diciembre dezembro desembre joulukuu desember δεκεμβρίου",
+    "january jan januar janvier gennaio enero janeiro gener januari tammikuu janúar ιανουαρίου stycznia styczeń styczen",
+    "february feb februar février fevrier febbraio febrero fevereiro febrer februari helmikuu febrúar φεβρουαρίου lutego luty",
+    "march mar märz maerz mars marzo março marc maart maaliskuu ματίου μαρτίου marca marzec",
+    "april apr avril aprile abril abril huhtikuu apríl απριλίου kwietnia kwiecień kwiecien",
+    "may mai maggio mayo maio maig mei toukokuu maí μαΐου maja maj",
+    "june jun juni juin giugno junio junho juny kesäkuu júní ιουνίου czerwca czerwiec",
+    "july jul juli juillet luglio julio julho juliol heinäkuu júlí ιουλίου lipca lipiec",
+    "august aug august août aout agosto agost augustus elokuu ágúst αυγούστου sierpnia sierpień sierpien",
+    "september sep sept september septembre settembre septiembre setembro setembre syyskuu σεπτεμβρίου września wrzesień wrzesnia wrzesien",
+    "october oct oktober octobre ottobre octubre outubro octubre lokakuu október οκτωβρίου października październik pazdziernika pazdziernik",
+    "november nov november novembre noviembre novembro novembre marraskuu nóvember νοεμβρίου listopada listopad",
+    "december dec dezember desember décembre decembre dicembre diciembre dezembro desembre joulukuu desember δεκεμβρίου grudnia grudzień grudzien",
 ], start=1):
     for n in names.split():
         MONTHS.setdefault(n, i)
