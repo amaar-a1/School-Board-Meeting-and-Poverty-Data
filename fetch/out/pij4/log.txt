@@ -1,0 +1,20 @@
+== Japan: welfare rate tables
+tstat groups: ['000001244596', '000001229625', '000001218960', '000001206620', '000001166946', '000001157292', '000001155606', '000001150607', '000001137806', '000001125455', '000001114036', '000001089175', '000001075809', '000001070700', '000001065118']
+files 1083; rate tables 3
+000040255679 2023 ">被保護実人員数及び保護率（人口千対），都道府県－指定都市－中核市×月・１か月平均別 被保護者調査 令和５年度被保護者調査 / 月次調査 / 確定値 調査年月   2023年度 公開（更新）日   2025-03-14 <a href="/stat-search/file-download?
+000040150855 2022 r">被保護実人員及び保護率（人口千対），都道府県－指定都市－中核市×月・１か月平均別 被保護者調査 令和４年度被保護者調査 / 月次調査 / 確定値 調査年月   2022年度 公開（更新）日   2024-03-06 <a href="/stat-search/file-download?
+000032172587 2020 arator">被保護実人員及び保護率（人口千対），都道府県－指定都市－中核市×月・１か月平均別 被保護者調査 令和２年度被保護者調査 / 月次調査 調査年月   2020年度 公開（更新）日   2022-03-02 <a href="/stat-search/file-download?
+(83s)
+
+== Japan: municipal websites (Wikidata)
+2114 rows; with website 2102; sample [{'item': 'http://www.wikidata.org/entity/Q274384', 'name': 'いわき市', 'code': '072044', 'site': 'https://www.city.iwaki.lg.jp/'}, {'item': 'http://www.wikidata.org/entity/Q275123', 'name': '西区', 'code': '271063', 'site': 'https://www.city.osaka.lg.jp/nishi/'}, {'item': 'http://www.wikidata.org/entity/Q290326', 'name': '韮崎市', 'code': '192074', 'site': 'https://www.city.nirasaki.lg.jp/'}]
+(14s)
+
+== Poland: pupils
+search ERR HTTP Error 429: Too Many Requests
+search ERR HTTP Error 429: Too Many Requests
+search ERR HTTP Error 429: Too Many Requests
+search ERR HTTP Error 429: Too Many Requests
+[]
+(363s)
+
