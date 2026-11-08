@@ -1,0 +1,7 @@
+ok ssb_arbeid_en.html 175360
+ok ssb_arbeid_no.html 184399
+ok ssb_okonomi_en.html 173744
+ERR ssb_inntekt_no.html HTTP Error 404: Not Found
+ERR ssb_levekar_no.html HTTP Error 404: Not Found
+ok ssb_rapp2023_36.pdf 708291
+ok pcn_econ.pdf 1082183
