@@ -2,7 +2,7 @@ name: Fetch pages for territory research (temporary)
 
 on:
   push:
-    branches: [claude/territory-fetch]
+    branches: [claude/territory-fetch, claude/pl-fetch]
     paths: [fetch/urls.txt, fetch/paginate.txt, fetch/extract.py]
 
 permissions:

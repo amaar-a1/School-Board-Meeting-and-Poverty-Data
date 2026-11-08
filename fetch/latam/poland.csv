@@ -1,0 +1,2478 @@
+District,Region,District ID
+M.st.Warszawa od 2002,Mazowieckie,PL-071412865011
+Kraków,Małopolskie,PL-011212161011
+Wrocław,Dolnośląskie,PL-030210564011
+Łódź,Łódzkie,PL-051011661011
+Poznań,Wielkopolskie,PL-023016264011
+Gdańsk,Pomorskie,PL-042214361011
+Szczecin,Zachodniopomorskie,PL-023216562011
+Lublin,Lubelskie,PL-060611163011
+Bydgoszcz,Kujawsko-pomorskie,PL-040410661011
+Białystok,Podlaskie,PL-062013761011
+Katowice,Śląskie,PL-012414869011
+Gdynia,Pomorskie,PL-042214362011
+Częstochowa,Śląskie,PL-012414664011
+Rzeszów,Podkarpackie,PL-061813563011
+Radom,Mazowieckie,PL-071422763011
+Toruń,Kujawsko-pomorskie,PL-040410663011
+Sosnowiec,Śląskie,PL-012415075011
+Kielce,Świętokrzyskie,PL-052615261011
+Gliwice,Śląskie,PL-012414766011
+Olsztyn,Warmińsko-mazurskie,PL-042815662011
+Bielsko-Biała,Śląskie,PL-012414461011
+Zabrze,Śląskie,PL-012414778011
+Bytom,Śląskie,PL-012414562011
+Zielona Góra,Lubuskie,PL-020811462011
+Rybnik,Śląskie,PL-012414973011
+Ruda Śląska,Śląskie,PL-012414872011
+Opole,Opolskie,PL-031613261011
+Tychy,Śląskie,PL-012415177011
+Gorzów Wielkopolski,Lubuskie,PL-020811361011
+Dąbrowa Górnicza,Śląskie,PL-012415065011
+Elbląg,Warmińsko-mazurskie,PL-042815461011
+Płock,Mazowieckie,PL-071427062011
+Koszalin,Zachodniopomorskie,PL-023216361011
+Tarnów,Małopolskie,PL-011212463011
+Włocławek,Kujawsko-pomorskie,PL-040410864011
+Chorzów,Śląskie,PL-012414863011
+Wałbrzych od 2013,Dolnośląskie,PL-030210365011
+Piaseczno,Mazowieckie,PL-071413018043
+Kalisz,Wielkopolskie,PL-023015761011
+Legnica,Dolnośląskie,PL-030210262011
+Grudziądz,Kujawsko-pomorskie,PL-040410762011
+Jaworzno,Śląskie,PL-012415068011
+Słupsk,Pomorskie,PL-042214163011
+Jastrzębie-Zdrój,Śląskie,PL-012414967011
+Nowy Sącz,Małopolskie,PL-011212262011
+Siedlce,Mazowieckie,PL-071427164011
+Jelenia Góra,Dolnośląskie,PL-030210161011
+Mysłowice,Śląskie,PL-012414870011
+Piła,Wielkopolskie,PL-023016019011
+Ostrów Wielkopolski,Wielkopolskie,PL-023015717011
+Wieliczka,Małopolskie,PL-011212019053
+Suwałki,Podlaskie,PL-062013963011
+Lubin,Dolnośląskie,PL-030210211011
+Inowrocław,Kujawsko-pomorskie,PL-040416707011
+Konin,Wielkopolskie,PL-023015862011
+Stargard,Zachodniopomorskie,PL-023216614011
+Piotrków Trybunalski,Łódzkie,PL-051011762011
+Pruszków,Mazowieckie,PL-071413021021
+Gniezno,Wielkopolskie,PL-023015803011
+Siemianowice Śląskie,Śląskie,PL-012414874011
+Ostrowiec Świętokrzyski,Świętokrzyskie,PL-052615207011
+Głogów,Dolnośląskie,PL-030210203011
+Żory,Śląskie,PL-012414979011
+Tarnowskie Góry,Śląskie,PL-012414513041
+Pabianice,Łódzkie,PL-051011508021
+Leszno,Wielkopolskie,PL-023015963011
+Ełk,Warmińsko-mazurskie,PL-042815505011
+Łomża,Podlaskie,PL-062013862011
+Zamość,Lubelskie,PL-060611064011
+Tomaszów Mazowiecki,Łódzkie,PL-051011716011
+Chełm,Lubelskie,PL-060611062011
+Mielec,Podkarpackie,PL-061813611011
+Tczew,Pomorskie,PL-042214214011
+Swarzędz,Wielkopolskie,PL-023016121163
+Przemyśl,Podkarpackie,PL-061813462011
+Grodzisk Mazowiecki,Mazowieckie,PL-071413005043
+Stalowa Wola,Podkarpackie,PL-061813618011
+Biała Podlaska,Lubelskie,PL-060610961011
+Kędzierzyn-Koźle,Opolskie,PL-031613203011
+Będzin,Śląskie,PL-012415001011
+Nysa,Opolskie,PL-031613107053
+Zgierz,Łódzkie,PL-051011520031
+Rumia,Pomorskie,PL-042214015021
+Świdnica,Dolnośląskie,PL-030210319011
+Pszczyna,Śląskie,PL-012415110053
+Legionowo,Mazowieckie,PL-071412908011
+Bełchatów,Łódzkie,PL-051011701011
+Piekary Śląskie,Śląskie,PL-012414571011
+Wołomin,Mazowieckie,PL-071412934123
+Żukowo,Pomorskie,PL-042214005083
+Racibórz,Śląskie,PL-012414911011
+Września,Wielkopolskie,PL-023015830053
+Ostrołęka,Mazowieckie,PL-071422661011
+Zawiercie,Śląskie,PL-012415016021
+Wejherowo,Pomorskie,PL-042214015031
+Olkusz,Małopolskie,PL-011212312053
+Myślenice,Małopolskie,PL-011212009033
+Jarocin,Wielkopolskie,PL-023015706023
+Świętochłowice,Śląskie,PL-012414876011
+Marki,Mazowieckie,PL-071412934021
+Ząbki,Mazowieckie,PL-071412934031
+Starogard Gdański,Pomorskie,PL-042214213031
+Skierniewice,Łódzkie,PL-051011963011
+Wodzisław Śląski,Śląskie,PL-012414915041
+Starachowice,Świętokrzyskie,PL-052615211011
+Czechowice-Dziedzice,Śląskie,PL-012414402043
+Krosno,Podkarpackie,PL-061813361011
+Skawina,Małopolskie,PL-011212006113
+Długołęka,Dolnośląskie,PL-030210423022
+Chrzanów,Małopolskie,PL-011212303033
+Otwock,Mazowieckie,PL-071412917021
+Puławy,Lubelskie,PL-060611214011
+Tarnobrzeg,Podkarpackie,PL-061813664011
+Kołobrzeg,Zachodniopomorskie,PL-023216308011
+Dębica,Podkarpackie,PL-061813603011
+Radomsko,Łódzkie,PL-051011712011
+Śrem,Wielkopolskie,PL-023016126043
+Andrychów,Małopolskie,PL-011212318013
+Ciechanów,Mazowieckie,PL-071422502011
+Mikołów,Śląskie,PL-012415108021
+Skarżysko-Kamienna,Świętokrzyskie,PL-052615210011
+Kutno,Łódzkie,PL-051011902011
+Czerwionka-Leszczyny,Śląskie,PL-012414912013
+Mińsk Mazowiecki,Mazowieckie,PL-071412912011
+Krotoszyn,Wielkopolskie,PL-023015712043
+Wyszków,Mazowieckie,PL-071422635053
+Police,Zachodniopomorskie,PL-023216611043
+Świnoujście,Zachodniopomorskie,PL-023216663011
+Chojnice,Pomorskie,PL-042217202011
+Sieradz,Łódzkie,PL-051011814011
+Żyrardów,Mazowieckie,PL-071427338011
+Lesznowola,Mazowieckie,PL-071413018032
+Zduńska Wola,Łódzkie,PL-051011819011
+Pruszcz Gdański,Pomorskie,PL-042214004042
+Szczecinek,Zachodniopomorskie,PL-023216415011
+Bolesławiec,Dolnośląskie,PL-030210101011
+Goleniów,Zachodniopomorskie,PL-023216604023
+Kwidzyn,Pomorskie,PL-042214207011
+Komorniki,Wielkopolskie,PL-023016121072
+Malbork,Pomorskie,PL-042214209011
+Świdnik,Lubelskie,PL-060611117011
+Kórnik,Wielkopolskie,PL-023016121093
+Wadowice,Małopolskie,PL-011212318093
+Nowa Sól,Lubuskie,PL-020811404011
+Dopiewo,Wielkopolskie,PL-023016121052
+Knurów,Śląskie,PL-012414705011
+Oświęcim,Małopolskie,PL-011212313011
+Brzesko,Małopolskie,PL-011212402023
+Mosina,Wielkopolskie,PL-023016121103
+Jarosław,Podkarpackie,PL-061813404011
+Oleśnica,Dolnośląskie,PL-030210414011
+Aleksandrów Łódzki,Łódzkie,PL-051011520043
+Żary,Lubuskie,PL-020811411021
+Kartuzy,Pomorskie,PL-042214005023
+Sanok,Podkarpackie,PL-061813317011
+Kluczbork,Opolskie,PL-031613204023
+Oborniki,Wielkopolskie,PL-023016116013
+Lębork,Pomorskie,PL-042214108011
+Środa Wielkopolska,Wielkopolskie,PL-023016125043
+Tarnowo Podgórne,Wielkopolskie,PL-023016121172
+Sochaczew,Mazowieckie,PL-071427328011
+Brzeg,Opolskie,PL-031613101011
+Kęty,Małopolskie,PL-011212313043
+Niepołomice,Małopolskie,PL-011212019043
+Oława,Dolnośląskie,PL-030210415011
+Nowy Targ,Małopolskie,PL-011216911011
+Cieszyn,Śląskie,PL-012414403011
+Luboń,Wielkopolskie,PL-023016121011
+Świecie,Kujawsko-pomorskie,PL-040416814093
+Jasło,Podkarpackie,PL-061813305011
+Końskie,Świętokrzyskie,PL-052615205033
+Trzebinia,Małopolskie,PL-011212303053
+Iława,Warmińsko-mazurskie,PL-042815407011
+Pruszcz Gdański,Pomorskie,PL-042214004011
+Sopot,Pomorskie,PL-042214364011
+Łomianki,Mazowieckie,PL-071413032053
+Krzeszowice,Małopolskie,PL-011212006063
+Opoczno,Łódzkie,PL-051011707043
+Ożarów Mazowiecki,Mazowieckie,PL-071413032063
+Ostróda,Warmińsko-mazurskie,PL-042815415011
+Kraśnik,Lubelskie,PL-060611207011
+Radzymin,Mazowieckie,PL-071412934093
+Wejherowo,Pomorskie,PL-042214015102
+Mława,Mazowieckie,PL-071422513011
+Busko-Zdrój,Świętokrzyskie,PL-052615301013
+Dzierżoniów,Dolnośląskie,PL-030210302021
+Siechnice,Dolnośląskie,PL-030210423083
+Wolsztyn,Wielkopolskie,PL-023015929033
+Kąty Wrocławskie,Dolnośląskie,PL-030210423043
+Gryfino,Zachodniopomorskie,PL-023216606043
+Dobra (Szczecińska),Zachodniopomorskie,PL-023216611012
+Brwinów,Mazowieckie,PL-071413021033
+Szamotuły,Wielkopolskie,PL-023016124073
+Rawicz,Wielkopolskie,PL-023015922053
+Czeladź,Śląskie,PL-012415001021
+Nakło nad Notecią,Kujawsko-pomorskie,PL-040416710033
+Żywiec,Śląskie,PL-012414417011
+Chełmiec,Małopolskie,PL-011212210022
+Zabierzów,Małopolskie,PL-011212006162
+Wieluń,Łódzkie,PL-051011817093
+Myszków,Śląskie,PL-012414609011
+Strzelce Opolskie,Opolskie,PL-031613211053
+Augustów,Podlaskie,PL-062013901011
+Pleszew,Wielkopolskie,PL-023015720063
+Zgorzelec,Dolnośląskie,PL-030210125021
+Świebodzin,Lubuskie,PL-020811408053
+Reda,Pomorskie,PL-042214015011
+Puck,Pomorskie,PL-042214011072
+Nowy Dwór Mazowiecki,Mazowieckie,PL-071413014011
+Bochnia,Małopolskie,PL-011212001011
+Góra Kalwaria,Mazowieckie,PL-071413018013
+Kobyłka,Mazowieckie,PL-071412934011
+Brodnica,Kujawsko-pomorskie,PL-040410702011
+Czerwonak,Wielkopolskie,PL-023016121042
+Bielawa,Dolnośląskie,PL-030210302011
+Gostyń,Wielkopolskie,PL-023015904023
+Nowy Tomyśl,Wielkopolskie,PL-023015915043
+Zielonki,Małopolskie,PL-011212006172
+Kozienice,Mazowieckie,PL-071422707053
+Giżycko,Warmińsko-mazurskie,PL-042815506011
+Ropczyce,Podkarpackie,PL-061813515033
+Łuków,Lubelskie,PL-060611211011
+Łask,Łódzkie,PL-051011803023
+Polkowice,Dolnośląskie,PL-030210216043
+Jędrzejów,Świętokrzyskie,PL-052615302023
+Tarnów,Małopolskie,PL-011212416092
+Namysłów,Opolskie,PL-031613106023
+Grójec,Mazowieckie,PL-071427306053
+Skoczów,Śląskie,PL-012414403103
+Białe Błota,Kujawsko-pomorskie,PL-040410603012
+Limanowa,Małopolskie,PL-011212207072
+Sulechów,Lubuskie,PL-020811409063
+Łowicz,Łódzkie,PL-051011905011
+Pisz,Warmińsko-mazurskie,PL-042815516033
+Brzozów,Podkarpackie,PL-061813302013
+Dębica,Podkarpackie,PL-061813603042
+Gorlice,Małopolskie,PL-011212205011
+Wągrowiec,Wielkopolskie,PL-023016028011
+Grybów,Małopolskie,PL-011212210042
+Jasienica,Śląskie,PL-012414402052
+Zakopane,Małopolskie,PL-011216917011
+Szubin,Kujawsko-pomorskie,PL-040416710053
+Trzebnica,Dolnośląskie,PL-030210420033
+Kętrzyn,Warmińsko-mazurskie,PL-042815608011
+Konstancin-Jeziorna,Mazowieckie,PL-071413018023
+Bytów,Pomorskie,PL-042214101023
+Kobierzyce,Dolnośląskie,PL-030210423052
+Prudnik,Opolskie,PL-031613110043
+Kłodzko,Dolnośląskie,PL-030210308021
+Biłgoraj,Lubelskie,PL-060611002011
+Turek,Wielkopolskie,PL-023015827011
+Staszów,Świętokrzyskie,PL-052615312073
+Trzebownisko,Podkarpackie,PL-061813516132
+Kolbuszowa,Podkarpackie,PL-061813506023
+Rokietnica,Wielkopolskie,PL-023016121132
+Pułtusk,Mazowieckie,PL-071422524043
+Kępno,Wielkopolskie,PL-023015708033
+Strzegom,Dolnośląskie,PL-030210319063
+Nowy Targ,Małopolskie,PL-011216911092
+Czernica,Dolnośląskie,PL-030210423012
+Zamość,Lubelskie,PL-060611020142
+Sokółka,Podlaskie,PL-062013711083
+Bielsk Podlaski,Podlaskie,PL-062013803011
+Mogilno,Kujawsko-pomorskie,PL-040416709033
+Sędziszów Małopolski,Podkarpackie,PL-061813515043
+Ostrzeszów,Wielkopolskie,PL-023015718073
+Jelcz-Laskowice,Dolnośląskie,PL-030210415033
+Międzyrzecz,Lubuskie,PL-020811303023
+Wałcz,Zachodniopomorskie,PL-023216417011
+Raszyn,Mazowieckie,PL-071413021062
+Stary Sącz,Małopolskie,PL-011212210163
+Żagań,Lubuskie,PL-020811410021
+Nowogard,Zachodniopomorskie,PL-023216604043
+Kościan,Wielkopolskie,PL-023015911011
+Trzcianka,Wielkopolskie,PL-023016002073
+Jabłonna,Mazowieckie,PL-071412908022
+Lubliniec,Śląskie,PL-012414507011
+Kościerzyna,Pomorskie,PL-042217206011
+Koronowo,Kujawsko-pomorskie,PL-040410603043
+Milicz,Dolnośląskie,PL-030210413033
+Stare Babice,Mazowieckie,PL-071413032072
+Morąg,Warmińsko-mazurskie,PL-042815415083
+Piastów,Mazowieckie,PL-071413021011
+Żnin,Kujawsko-pomorskie,PL-040416719063
+Koluszki,Łódzkie,PL-051011506073
+Gryfice,Zachodniopomorskie,PL-023216605023
+Błonie,Mazowieckie,PL-071413032013
+Białogard,Zachodniopomorskie,PL-023216301011
+Łęczna,Lubelskie,PL-060611110033
+Głuchołazy,Opolskie,PL-031613107013
+Czarny Dunajec,Małopolskie,PL-011216911033
+Boguchwała,Podkarpackie,PL-061813516033
+Niemce,Lubelskie,PL-060611109112
+Orzesze,Śląskie,PL-012415108031
+Wolbrom,Małopolskie,PL-011212312073
+Szczytno,Warmińsko-mazurskie,PL-042815617011
+Świebodzice,Dolnośląskie,PL-030210319021
+Łańcut,Podkarpackie,PL-061813510042
+Szemud,Pomorskie,PL-042214015092
+Miękinia,Dolnośląskie,PL-030210418033
+Ostrów Mazowiecka,Mazowieckie,PL-071422616011
+Płońsk,Mazowieckie,PL-071422520011
+Krapkowice,Opolskie,PL-031613205023
+Strzelin,Dolnośląskie,PL-030210417043
+Wołów,Dolnośląskie,PL-030210422033
+Kosakowo,Pomorskie,PL-042214011052
+Sulejówek,Mazowieckie,PL-071412912151
+Pobiedziska,Wielkopolskie,PL-023016121123
+Bartoszyce,Warmińsko-mazurskie,PL-042815601011
+Bogatynia,Dolnośląskie,PL-030210125033
+Sandomierz,Świętokrzyskie,PL-052615309011
+Czersk,Pomorskie,PL-042217202043
+Nisko,Podkarpackie,PL-061813612053
+Lubicz,Kujawsko-pomorskie,PL-040410615042
+Józefów,Mazowieckie,PL-071412917011
+Kolbudy,Pomorskie,PL-042214004032
+Gorzyce,Śląskie,PL-012414915062
+Łaziska Górne,Śląskie,PL-012415108011
+Oborniki Śląskie,Dolnośląskie,PL-030210420013
+Libiąż,Małopolskie,PL-011212303043
+Olecko,Warmińsko-mazurskie,PL-042815513043
+Wasilków,Podlaskie,PL-062013702133
+Sierakowice,Pomorskie,PL-042214005042
+Nowa Sarzyna,Podkarpackie,PL-061813608053
+Dąbrowa Tarnowska,Małopolskie,PL-011212404023
+Wieliszew,Mazowieckie,PL-071412908052
+Grajewo,Podlaskie,PL-062013904011
+Zambrów,Podlaskie,PL-062013814011
+Głubczyce,Opolskie,PL-031613102033
+Bochnia,Małopolskie,PL-011212001022
+Suchy Las,Wielkopolskie,PL-023016121152
+Obrowo,Kujawsko-pomorskie,PL-040410615072
+Ząbkowice Śląskie,Dolnośląskie,PL-030210324053
+Mrągowo,Warmińsko-mazurskie,PL-042815610011
+Jawor,Dolnośląskie,PL-030210105011
+Nowa Ruda,Dolnośląskie,PL-030210308041
+Grodzisk Wielkopolski,Wielkopolskie,PL-023015905023
+Brzeszcze,Małopolskie,PL-011212313023
+Kostrzyn,Wielkopolskie,PL-023016121083
+Łapy,Podlaskie,PL-062013702063
+Tłuszcz,Mazowieckie,PL-071412934113
+Rydułtowy,Śląskie,PL-012414915031
+Działdowo,Warmińsko-mazurskie,PL-042815403011
+Choszczno,Zachodniopomorskie,PL-023216402023
+Słubice,Lubuskie,PL-020811305053
+Wschowa,Lubuskie,PL-020811412033
+Kalwaria Zebrzydowska,Małopolskie,PL-011212318033
+Leżajsk,Podkarpackie,PL-061813608042
+Środa Śląska,Dolnośląskie,PL-030210418043
+Strzyżów,Podkarpackie,PL-061813519043
+Nidzica,Warmińsko-mazurskie,PL-042815611043
+Lubartów,Lubelskie,PL-060611108011
+Głogów Małopolski,Podkarpackie,PL-061813516063
+Siedlce,Mazowieckie,PL-071427126082
+Kłobuck,Śląskie,PL-012414606013
+Tuchola,Kujawsko-pomorskie,PL-040416816063
+Redzikowo,Pomorskie,PL-042214112082
+Lubań,Dolnośląskie,PL-030210110011
+Chojnice,Pomorskie,PL-042217202032
+Michałowice,Mazowieckie,PL-071413021042
+Koło,Wielkopolskie,PL-023015809011
+Ostrów Wielkopolski,Wielkopolskie,PL-023015717042
+Dębno,Zachodniopomorskie,PL-023216410033
+Nasielsk,Mazowieckie,PL-071413014043
+Pińczów,Świętokrzyskie,PL-052615308043
+Konstantynów Łódzki,Łódzkie,PL-051011508011
+Jabłonka,Małopolskie,PL-011216911052
+Ryki,Lubelskie,PL-060611216043
+Warka,Mazowieckie,PL-071427306113
+Gołdap,Warmińsko-mazurskie,PL-042815518033
+Oświęcim,Małopolskie,PL-011212313062
+Hajnówka,Podlaskie,PL-062013805011
+Szprotawa,Lubuskie,PL-020811410073
+Bieruń,Śląskie,PL-012415114011
+Wronki,Wielkopolskie,PL-023016124083
+Miechów,Małopolskie,PL-011212008053
+Gdów,Małopolskie,PL-011212019022
+Liszki,Małopolskie,PL-011212006072
+Włoszczowa,Świętokrzyskie,PL-052615313063
+Łuków,Lubelskie,PL-060611211052
+Myślibórz,Zachodniopomorskie,PL-023216410043
+Juchnowiec Kościelny,Podlaskie,PL-062013702052
+Osielsko,Kujawsko-pomorskie,PL-040410603062
+Ozimek,Opolskie,PL-031613209083
+Lubin,Dolnośląskie,PL-030210211022
+Góra,Dolnośląskie,PL-030210204013
+Żabno,Małopolskie,PL-011212416153
+Sokołów Podlaski,Mazowieckie,PL-071427129011
+Nadarzyn,Mazowieckie,PL-071413021052
+Barlinek,Zachodniopomorskie,PL-023216410013
+Pasłęk,Warmińsko-mazurskie,PL-042815404073
+Pilzno,Podkarpackie,PL-061813603063
+Halinów,Mazowieckie,PL-071412912073
+Kocmyrzów-Luborzyca,Małopolskie,PL-011212006052
+Barczewo,Warmińsko-mazurskie,PL-042815614013
+Wilamowice,Śląskie,PL-012414402093
+Pyrzyce,Zachodniopomorskie,PL-023216412053
+Supraśl,Podlaskie,PL-062013702093
+Zielonka,Mazowieckie,PL-071412934041
+Złotów,Wielkopolskie,PL-023016031011
+Sanok,Podkarpackie,PL-061813317052
+Choroszcz,Podlaskie,PL-062013702013
+Ozorków,Łódzkie,PL-051011520021
+Chełmno,Kujawsko-pomorskie,PL-040410704011
+Świdnica,Dolnośląskie,PL-030210319072
+Luzino,Pomorskie,PL-042214015072
+Grodków,Opolskie,PL-031613101033
+Morawica,Świętokrzyskie,PL-052615204123
+Rogoźno,Wielkopolskie,PL-023016116023
+Tomaszów Lubelski,Lubelskie,PL-060611018011
+Miastko,Pomorskie,PL-042214101063
+Międzychód,Wielkopolskie,PL-023015914033
+Kruszwica,Kujawsko-pomorskie,PL-040416707063
+Biskupiec,Warmińsko-mazurskie,PL-042815614023
+Serock,Mazowieckie,PL-071412908043
+Łańcut,Podkarpackie,PL-061813510011
+Mszana Dolna,Małopolskie,PL-011212207092
+Kostrzyn nad Odrą,Lubuskie,PL-020811301011
+Pawłowice,Śląskie,PL-012415110042
+Wręczyca Wielka,Śląskie,PL-012414606092
+Krasnystaw,Lubelskie,PL-060611006011
+Sokołów Małopolski,Podkarpackie,PL-061813516113
+Chodzież,Wielkopolskie,PL-023016001011
+Garwolin,Mazowieckie,PL-071427103011
+Łochów,Mazowieckie,PL-071427133053
+Starogard Gdański,Pomorskie,PL-042214213122
+Nieporęt,Mazowieckie,PL-071412908032
+Lubsko,Lubuskie,PL-020811411063
+Pyskowice,Śląskie,PL-012414705021
+Olesno,Opolskie,PL-031613208033
+Szydłowiec,Mazowieckie,PL-071422730053
+Bystrzyca Kłodzka,Dolnośląskie,PL-030210308063
+Kamienna Góra,Dolnośląskie,PL-030210107011
+Murowana Goślina,Wielkopolskie,PL-023016121113
+Nowa Dęba,Podkarpackie,PL-061813620043
+Śmigiel,Wielkopolskie,PL-023015911053
+Sztum,Pomorskie,PL-042214216053
+Mińsk Mazowiecki,Mazowieckie,PL-071412912112
+Gostynin,Mazowieckie,PL-071427004011
+Tuchów,Małopolskie,PL-011212416103
+Gorlice,Małopolskie,PL-011212205042
+Krosno Odrzańskie,Lubuskie,PL-020811402063
+Sierpc,Mazowieckie,PL-071427027011
+Wielka Wieś,Małopolskie,PL-011212006152
+Nowy Dwór Gdański,Pomorskie,PL-042214010023
+Piekoszów,Świętokrzyskie,PL-052615204143
+Radlin,Śląskie,PL-012414915021
+Świlcza,Podkarpackie,PL-061813516122
+Łącko,Małopolskie,PL-011212210092
+Sulejów,Łódzkie,PL-051011710093
+Rabka-Zdrój,Małopolskie,PL-011216911123
+Syców,Dolnośląskie,PL-030210414073
+Kłodzko,Dolnośląskie,PL-030210308072
+Milanówek,Mazowieckie,PL-071413005011
+Solec Kujawski,Kujawsko-pomorskie,PL-040410603083
+Przasnysz,Mazowieckie,PL-071422622011
+Zgierz,Łódzkie,PL-051011520092
+Zbrosławice,Śląskie,PL-012414513092
+Lędziny,Śląskie,PL-012415114031
+Drawsko Pomorskie,Zachodniopomorskie,PL-023216403023
+Drezdenko,Lubuskie,PL-020811306023
+Ustrzyki Dolne,Podkarpackie,PL-061813301083
+Mogilany,Małopolskie,PL-011212006092
+Daleszyce,Świętokrzyskie,PL-052615204053
+Tczew,Pomorskie,PL-042214214062
+Oleśnica,Dolnośląskie,PL-030210414062
+Opole Lubelskie,Lubelskie,PL-060611212053
+Kościerzyna,Pomorskie,PL-042217206042
+Zławieś Wielka,Kujawsko-pomorskie,PL-040410615092
+Brzeg Dolny,Dolnośląskie,PL-030210422013
+Strzelce Krajeńskie,Lubuskie,PL-020811306043
+Biecz,Małopolskie,PL-011212205023
+Pionki,Mazowieckie,PL-071422725011
+Lwówek Śląski,Dolnośląskie,PL-030210112033
+Miedźna,Śląskie,PL-012415110032
+Radzionków,Śląskie,PL-012414513031
+Braniewo,Warmińsko-mazurskie,PL-042815402011
+Wiązowna,Mazowieckie,PL-071412917082
+Opalenica,Wielkopolskie,PL-023015915053
+Nowe Skalmierzyce,Wielkopolskie,PL-023015717023
+Konopnica,Lubelskie,PL-060611109082
+Ostróda,Warmińsko-mazurskie,PL-042815415092
+Rawa Mazowiecka,Łódzkie,PL-051011913011
+Hrubieszów,Lubelskie,PL-060611004011
+Jasło,Podkarpackie,PL-061813305042
+Kościan,Wielkopolskie,PL-023015911032
+Ustroń,Śląskie,PL-012414403021
+Karczew,Mazowieckie,PL-071412917043
+Maków Podhalański,Małopolskie,PL-011216915063
+Oława,Dolnośląskie,PL-030210415042
+Lisia Góra,Małopolskie,PL-011212416032
+Krynica-Zdrój,Małopolskie,PL-011212210073
+Gubin,Lubuskie,PL-020811402011
+Ziębice,Dolnośląskie,PL-030210324063
+Skaryszew,Mazowieckie,PL-071422725103
+Stęszew,Wielkopolskie,PL-023016121143
+Łazy,Śląskie,PL-012415016053
+Dobczyce,Małopolskie,PL-011212009013
+Jastków,Lubelskie,PL-060611109072
+Proszowice,Małopolskie,PL-011212014053
+Porąbka,Śląskie,PL-012414402082
+Czernichów,Małopolskie,PL-011212006012
+Biała Podlaska,Lubelskie,PL-060610901032
+Międzyrzec Podlaski,Lubelskie,PL-060610901011
+Rypin,Kujawsko-pomorskie,PL-040410712011
+Mykanów,Śląskie,PL-012414604112
+Stąporków,Świętokrzyskie,PL-052615205083
+Kołbaskowo,Zachodniopomorskie,PL-023216611022
+Stargard,Zachodniopomorskie,PL-023216614102
+Węgorzewo,Warmińsko-mazurskie,PL-042815519033
+Chełm,Lubelskie,PL-060611003032
+Bolesławiec,Dolnośląskie,PL-030210101022
+Łodygowice,Śląskie,PL-012414417082
+Kożuchów,Lubuskie,PL-020811404043
+Złocieniec,Zachodniopomorskie,PL-023216403063
+Kazimierza Wielka,Świętokrzyskie,PL-052615303033
+Rymanów,Podkarpackie,PL-061813307083
+Sułkowice,Małopolskie,PL-011212009073
+Górno,Świętokrzyskie,PL-052615204062
+Sępólno Krajeńskie,Kujawsko-pomorskie,PL-040416813023
+Pelplin,Pomorskie,PL-042214214043
+Sulęcin,Lubuskie,PL-020811307043
+Dobre Miasto,Warmińsko-mazurskie,PL-042815614033
+Stawiguda,Warmińsko-mazurskie,PL-042815614112
+Jedlicze,Podkarpackie,PL-061813307043
+Głusk,Lubelskie,PL-060611109052
+Trzebiatów,Zachodniopomorskie,PL-023216605083
+Pawłów,Świętokrzyskie,PL-052615211042
+Chęciny,Świętokrzyskie,PL-052615204033
+Andrespol,Łódzkie,PL-051011506022
+Nowogrodziec,Dolnośląskie,PL-030210101043
+Przeworsk,Podkarpackie,PL-061813414062
+Gniezno,Wielkopolskie,PL-023015803032
+Janów Lubelski,Lubelskie,PL-060611205053
+Jedlińsk,Mazowieckie,PL-071422725052
+Świdwin,Zachodniopomorskie,PL-023216416011
+Poddębice,Łódzkie,PL-051011811033
+Przeworsk,Podkarpackie,PL-061813414011
+Dębno,Małopolskie,PL-011212402042
+Skarszewy,Pomorskie,PL-042214213093
+Wólka,Lubelskie,PL-060611109142
+Lidzbark Warmiński,Warmińsko-mazurskie,PL-042815609011
+Odolanów,Wielkopolskie,PL-023015717033
+Żyraków,Podkarpackie,PL-061813603072
+Raba Wyżna,Małopolskie,PL-011216911112
+Klucze,Małopolskie,PL-011212312042
+Korzenna,Małopolskie,PL-011212210062
+Limanowa,Małopolskie,PL-011212207011
+Węgierska Górka,Śląskie,PL-012414417152
+Nowy Wiśnicz,Małopolskie,PL-011212001063
+Zwoleń,Mazowieckie,PL-071422736053
+Kobylnica,Pomorskie,PL-042214112062
+Zelów,Łódzkie,PL-051011701083
+Gniew,Pomorskie,PL-042214214023
+Władysławowo,Pomorskie,PL-042214011043
+Radzyń Podlaski,Lubelskie,PL-060610915011
+Brusy,Pomorskie,PL-042217202023
+Radomyśl Wielki,Podkarpackie,PL-061813611083
+Skrzyszów,Małopolskie,PL-011212416082
+Złotoryja,Dolnośląskie,PL-030210126021
+Boguszów-Gorce,Dolnośląskie,PL-030210321011
+Barcin,Kujawsko-pomorskie,PL-040416719013
+Dęblin,Lubelskie,PL-060611216011
+Żmigród,Dolnośląskie,PL-030210420063
+Koziegłowy,Śląskie,PL-012414609023
+Zdzieszowice,Opolskie,PL-031613205053
+Wieruszów,Łódzkie,PL-051011818073
+Zakrzew,Mazowieckie,PL-071422725132
+Przemęt,Wielkopolskie,PL-023015929012
+Sianów,Zachodniopomorskie,PL-023216309073
+Mońki,Podlaskie,PL-062013908063
+Błaszki,Łódzkie,PL-051011814023
+Ślesin,Wielkopolskie,PL-023015810123
+Dukla,Podkarpackie,PL-061813307023
+Połczyn-Zdrój,Zachodniopomorskie,PL-023216416033
+Ustka,Pomorskie,PL-042214112011
+Żórawina,Dolnośląskie,PL-030210423092
+Grudziądz,Kujawsko-pomorskie,PL-040410706012
+Godów,Śląskie,PL-012414915052
+Dywity,Warmińsko-mazurskie,PL-042815614042
+Trzemeszno,Wielkopolskie,PL-023015803093
+Parczew,Lubelskie,PL-060610913043
+Chełmża,Kujawsko-pomorskie,PL-040410615011
+Słomniki,Małopolskie,PL-011212006123
+Nowa Wieś Lęborska,Pomorskie,PL-042214108042
+Zbąszyń,Wielkopolskie,PL-023015915063
+Mielec,Podkarpackie,PL-061813611052
+Jedlnia-Letnisko,Mazowieckie,PL-071422725063
+Podegrodzie,Małopolskie,PL-011212210142
+Gniewkowo,Kujawsko-pomorskie,PL-040416707033
+Iłża,Mazowieckie,PL-071422725033
+Szczytno,Warmińsko-mazurskie,PL-042815617062
+Bukowina Tatrzańska,Małopolskie,PL-011216917032
+Biłgoraj,Lubelskie,PL-060611002032
+Jaktorów,Mazowieckie,PL-071413005052
+Garwolin,Mazowieckie,PL-071427103042
+Chorkówka,Podkarpackie,PL-061813307012
+Kamień Pomorski,Zachodniopomorskie,PL-023216607033
+Siemiatycze,Podlaskie,PL-062013810011
+Lipno,Kujawsko-pomorskie,PL-040410808011
+Michałowice,Małopolskie,PL-011212006082
+Prażmów,Mazowieckie,PL-071413018052
+Czarna,Podkarpackie,PL-061813603032
+Miejsce Piastowe,Podkarpackie,PL-061813307072
+Żuromin,Mazowieckie,PL-071422537063
+Wilkowice,Śląskie,PL-012414402102
+Rakoniewice,Wielkopolskie,PL-023015905043
+Strumień,Śląskie,PL-012414403113
+Iława,Warmińsko-mazurskie,PL-042815407032
+Świerklaniec,Śląskie,PL-012414513072
+Kozy,Śląskie,PL-012414402072
+Lidzbark,Warmińsko-mazurskie,PL-042815403043
+Poniatowa,Lubelskie,PL-060611212063
+Goleszów,Śląskie,PL-012414403072
+Jarosław,Podkarpackie,PL-061813404042
+Głowno,Łódzkie,PL-051011520011
+Olsztynek,Warmińsko-mazurskie,PL-042815614093
+Bełchatów,Łódzkie,PL-051011701022
+Chojna,Zachodniopomorskie,PL-023216606033
+Wojnicz,Małopolskie,PL-011212416133
+Łęczyca,Łódzkie,PL-051011904011
+Wyrzysk,Wielkopolskie,PL-023016019083
+Człuchów,Pomorskie,PL-042217203011
+Witkowo,Wielkopolskie,PL-023015803103
+Stryków,Łódzkie,PL-051011520083
+Krasne,Podkarpackie,PL-061813516092
+Pszów,Śląskie,PL-012414915011
+Sobótka,Dolnośląskie,PL-030210423073
+Słupca,Wielkopolskie,PL-023015823011
+Stare Miasto,Wielkopolskie,PL-023015810112
+Wąbrzeźno,Kujawsko-pomorskie,PL-040410717011
+Buk,Wielkopolskie,PL-023016121033
+Kłomnice,Śląskie,PL-012414604052
+Radziechowy-Wieprz,Śląskie,PL-012414417102
+Praszka,Opolskie,PL-031613208043
+Tuszyn,Łódzkie,PL-051011506113
+Łobez,Zachodniopomorskie,PL-023216418023
+Więcbork,Kujawsko-pomorskie,PL-040416813043
+Siewierz,Śląskie,PL-012415001073
+Wieprz,Małopolskie,PL-011212318102
+Dobrcz,Kujawsko-pomorskie,PL-040410603032
+Otmuchów,Opolskie,PL-031613107063
+Suszec,Śląskie,PL-012415110062
+Pilchowice,Śląskie,PL-012414705042
+Zebrzydowice,Śląskie,PL-012414403122
+Bełżyce,Lubelskie,PL-060611109013
+Leżajsk,Podkarpackie,PL-061813608011
+Gierałtowice,Śląskie,PL-012414705032
+Brzostek,Podkarpackie,PL-061813603023
+Bodzechów,Świętokrzyskie,PL-052615207032
+Zagórz,Podkarpackie,PL-061813317073
+Świerklany,Śląskie,PL-012414912052
+Gorzyce,Podkarpackie,PL-061813620022
+Ostrów Mazowiecka,Mazowieckie,PL-071422616072
+Krobia,Wielkopolskie,PL-023015904033
+Jeleśnia,Śląskie,PL-012414417042
+Głogówek,Opolskie,PL-031613110023
+Koźmin Wielkopolski,Wielkopolskie,PL-023015712033
+Bobrowniki,Śląskie,PL-012415001042
+Miedziana Góra,Świętokrzyskie,PL-052615204102
+Moszczenica,Łódzkie,PL-051011710062
+Niemodlin,Opolskie,PL-031613209073
+Żurawica,Podkarpackie,PL-061813413102
+Twardogóra,Dolnośląskie,PL-030210414083
+Darłowo,Zachodniopomorskie,PL-023216313011
+Kowala,Mazowieckie,PL-071422725072
+Żary,Lubuskie,PL-020811411102
+Ełk,Warmińsko-mazurskie,PL-042815505022
+Tarczyn,Mazowieckie,PL-071413018063
+Siedlec,Wielkopolskie,PL-023015929022
+Szczucin,Małopolskie,PL-011212404073
+Blachownia,Śląskie,PL-012414604013
+Janikowo,Kujawsko-pomorskie,PL-040416707053
+Lewin Brzeski,Opolskie,PL-031613101043
+Sława,Lubuskie,PL-020811412013
+Przygodzice,Wielkopolskie,PL-023015717052
+Poczesna,Śląskie,PL-012414604132
+Chocianów,Dolnośląskie,PL-030210216013
+Pniewy,Wielkopolskie,PL-023016124063
+Chojnów,Dolnośląskie,PL-030210209011
+Zduńska Wola,Łódzkie,PL-051011819042
+Zakliczyn,Małopolskie,PL-011212416143
+Alwernia,Małopolskie,PL-011212303013
+Golina,Wielkopolskie,PL-023015810013
+Psary,Śląskie,PL-012415001062
+Wągrowiec,Wielkopolskie,PL-023016028072
+Chełmek,Małopolskie,PL-011212313033
+Stara Biała,Mazowieckie,PL-071427019132
+Prabuty,Pomorskie,PL-042214207043
+Puławy,Lubelskie,PL-060611214092
+Zblewo,Pomorskie,PL-042214213132
+Istebna,Śląskie,PL-012414403092
+Bestwina,Śląskie,PL-012414402022
+Wołczyn,Opolskie,PL-031613204043
+Rozprza,Łódzkie,PL-051011710083
+Zagnańsk,Świętokrzyskie,PL-052615204192
+Kcynia,Kujawsko-pomorskie,PL-040416710013
+Rzekuń,Mazowieckie,PL-071422615102
+Witnica,Lubuskie,PL-020811301073
+Lubartów,Lubelskie,PL-060611108072
+Żarów,Dolnośląskie,PL-030210319083
+Łomża,Podlaskie,PL-062013807022
+Włodawa,Lubelskie,PL-060610919011
+Wisznia Mała,Dolnośląskie,PL-030210420042
+Czarna,Podkarpackie,PL-061813510032
+Wałcz,Zachodniopomorskie,PL-023216417052
+Trąbki Wielkie,Pomorskie,PL-042214004082
+Niedrzwica Duża,Lubelskie,PL-060611109102
+Aleksandrów Kujawski,Kujawsko-pomorskie,PL-040410801042
+Przecław,Podkarpackie,PL-061813611073
+Sochaczew,Mazowieckie,PL-071427328072
+Inowrocław,Kujawsko-pomorskie,PL-040416707042
+Łęczyce,Pomorskie,PL-042214015082
+Skołyszyn,Podkarpackie,PL-061813305092
+Masłów,Świętokrzyskie,PL-052615204092
+Brzeziny,Łódzkie,PL-051011521011
+Pysznica,Podkarpackie,PL-061813618032
+Wola Krzysztoporska,Łódzkie,PL-051011710102
+Stryszawa,Małopolskie,PL-011216915072
+Dębe Wielkie,Mazowieckie,PL-071412912052
+Koszęcin,Śląskie,PL-012414507062
+Węgrów,Mazowieckie,PL-071427133011
+Kłodawa,Wielkopolskie,PL-023015809063
+Poronin,Małopolskie,PL-011216917052
+Warta,Łódzkie,PL-051011814093
+Wiązownica,Podkarpackie,PL-061813404112
+Susz,Warmińsko-mazurskie,PL-042815407063
+Sławno,Zachodniopomorskie,PL-023216313021
+Brenna,Śląskie,PL-012414403042
+Gostynin,Mazowieckie,PL-071427004022
+Pleśna,Małopolskie,PL-011212416042
+Biskupice,Małopolskie,PL-011212019012
+Sędziszów,Świętokrzyskie,PL-052615302063
+Wieleń,Wielkopolskie,PL-023016002083
+Kańczuga,Podkarpackie,PL-061813414053
+Gogolin,Opolskie,PL-031613205013
+Celestynów,Mazowieckie,PL-071412917032
+Wolin,Zachodniopomorskie,PL-023216607063
+Kleszczewo,Wielkopolskie,PL-023016121062
+Kramsk,Wielkopolskie,PL-023015810052
+Teresin,Mazowieckie,PL-071427328082
+Czudec,Podkarpackie,PL-061813519012
+Lipno,Kujawsko-pomorskie,PL-040410808062
+Kazimierz Biskupi,Wielkopolskie,PL-023015810032
+Tyczyn,Podkarpackie,PL-061813516143
+Skwierzyna,Lubuskie,PL-020811303053
+Działoszyn,Łódzkie,PL-051011809013
+Aleksandrów Kujawski,Kujawsko-pomorskie,PL-040410801011
+Rzezawa,Małopolskie,PL-011212001072
+Czempiń,Wielkopolskie,PL-023015911023
+Raszków,Wielkopolskie,PL-023015717063
+Paczków,Opolskie,PL-031613107073
+Kwidzyn,Pomorskie,PL-042214207032
+Tomaszów Mazowiecki,Łódzkie,PL-051011716092
+Stężyca,Pomorskie,PL-042214005062
+Klembów,Mazowieckie,PL-071412934072
+Rzgów,Łódzkie,PL-051011506103
+Przodkowo,Pomorskie,PL-042214005032
+Lubaczów,Podkarpackie,PL-061813409011
+Mszczonów,Mazowieckie,PL-071427338023
+Somonino,Pomorskie,PL-042214005052
+Baranów Sandomierski,Podkarpackie,PL-061813620013
+Szaflary,Małopolskie,PL-011216911142
+Golub-Dobrzyń,Kujawsko-pomorskie,PL-040410705011
+Kołobrzeg,Zachodniopomorskie,PL-023216308042
+Strawczyn,Świętokrzyskie,PL-052615204182
+Łososina Dolna,Małopolskie,PL-011212210102
+Ryglice,Małopolskie,PL-011212416063
+Jordanów,Małopolskie,PL-011216915052
+Jerzmanowice-Przeginia,Małopolskie,PL-011212006042
+Czarnków,Wielkopolskie,PL-023016002022
+Kłaj,Małopolskie,PL-011212019032
+Buczkowice,Śląskie,PL-012414402032
+Pszczółki,Pomorskie,PL-042214004062
+Kowalewo Pomorskie,Kujawsko-pomorskie,PL-040410705043
+Gąbin,Mazowieckie,PL-071427019063
+Świątniki Górne,Małopolskie,PL-011212006143
+Czaplinek,Zachodniopomorskie,PL-023216403013
+Tomaszów Lubelski,Lubelskie,PL-060611018112
+Korczyna,Podkarpackie,PL-061813307052
+Żabia Wola,Mazowieckie,PL-071413005062
+Pcim,Małopolskie,PL-011212009042
+Muszyna,Małopolskie,PL-011212210113
+Pajęczno,Łódzkie,PL-051011809043
+Leszno,Mazowieckie,PL-071413032042
+Czosnów,Mazowieckie,PL-071413014022
+Małogoszcz,Świętokrzyskie,PL-052615302033
+Olszewo-Borki,Mazowieckie,PL-071422615092
+Gołuchów,Wielkopolskie,PL-023015720052
+Połaniec,Świętokrzyskie,PL-052615312053
+Brześć Kujawski,Kujawsko-pomorskie,PL-040410818043
+Kadzidło,Mazowieckie,PL-071422615052
+Łysomice,Kujawsko-pomorskie,PL-040410615062
+Ciężkowice,Małopolskie,PL-011212416013
+Zaleszany,Podkarpackie,PL-061813618062
+Bodzentyn,Świętokrzyskie,PL-052615204023
+Skała,Małopolskie,PL-011212006103
+Lipowa,Śląskie,PL-012414417062
+Sicienko,Kujawsko-pomorskie,PL-040410603072
+Deszczno,Lubuskie,PL-020811301032
+Radymno,Podkarpackie,PL-061813404082
+Orneta,Warmińsko-mazurskie,PL-042815609053
+Żychlin,Łódzkie,PL-051011902113
+Bychawa,Lubelskie,PL-060611109033
+Strzelno,Kujawsko-pomorskie,PL-040416709043
+Mstów,Śląskie,PL-012414604102
+Brzeźnica,Małopolskie,PL-011212318022
+Przysucha,Mazowieckie,PL-071422723063
+Rudziniec,Śląskie,PL-012414705052
+Konopiska,Śląskie,PL-012414604072
+Błażowa,Podkarpackie,PL-061813516023
+Człuchów,Pomorskie,PL-042217203032
+Jastrowie,Wielkopolskie,PL-023016031023
+Lesko,Podkarpackie,PL-061813321033
+Sieradz,Łódzkie,PL-051011814082
+Izabelin,Mazowieckie,PL-071413032022
+Małkinia Górna,Mazowieckie,PL-071422616052
+Mełgiew,Lubelskie,PL-060611117022
+Biała Rawska,Łódzkie,PL-051011913023
+Opatów,Świętokrzyskie,PL-052615306043
+Turek,Wielkopolskie,PL-023015827082
+Hażlach,Śląskie,PL-012414403082
+Chmielnik,Świętokrzyskie,PL-052615204043
+Krzyżanowice,Śląskie,PL-012414911042
+Przemyśl,Podkarpackie,PL-061813413082
+Czarna Białostocka,Podlaskie,PL-062013702023
+Wisła,Śląskie,PL-012414403031
+Lubawa,Warmińsko-mazurskie,PL-042815407021
+Opatówek,Wielkopolskie,PL-023015707083
+Nowa Ruda,Dolnośląskie,PL-030210308112
+Rydzyna,Wielkopolskie,PL-023015913043
+Łabiszyn,Kujawsko-pomorskie,PL-040416719043
+Poraj,Śląskie,PL-012414609042
+Kuźnia Raciborska,Śląskie,PL-012414911053
+Pilawa,Mazowieckie,PL-071427103103
+Szczebrzeszyn,Lubelskie,PL-060611020133
+Wierzchosławice,Małopolskie,PL-011212416112
+Krokowa,Pomorskie,PL-042214011062
+Kamionka Wielka,Małopolskie,PL-011212210052
+Puck,Pomorskie,PL-042214011031
+Zawadzkie,Opolskie,PL-031613211073
+Łosice,Mazowieckie,PL-071427110023
+Lubawa,Warmińsko-mazurskie,PL-042815407052
+Dobrzyniewo Duże,Podlaskie,PL-062013702032
+Nowa Wieś Wielka,Kujawsko-pomorskie,PL-040410603052
+Biała Piska,Warmińsko-mazurskie,PL-042815516013
+Piątnica,Podlaskie,PL-062013807052
+Międzyrzec Podlaski,Lubelskie,PL-060610901102
+Niebylec,Podkarpackie,PL-061813519032
+Fabianki,Kujawsko-pomorskie,PL-040410818072
+Jaworzyna Śląska,Dolnośląskie,PL-030210319043
+Bartoszyce,Warmińsko-mazurskie,PL-042815601032
+Iwonicz-Zdrój,Podkarpackie,PL-061813307033
+Piaski,Lubelskie,PL-060611117033
+Skoki,Wielkopolskie,PL-023016028053
+Chynów,Mazowieckie,PL-071427306032
+Godziesze Wielkie,Wielkopolskie,PL-023015707042
+Łukowica,Małopolskie,PL-011212207082
+Tuliszków,Wielkopolskie,PL-023015827073
+Ciechocinek,Kujawsko-pomorskie,PL-040410801021
+Lubawka,Dolnośląskie,PL-030210107033
+Czerwieńsk,Lubuskie,PL-020811409033
+Brody,Świętokrzyskie,PL-052615211022
+Łubniany,Opolskie,PL-031613209052
+Dobra,Małopolskie,PL-011212207032
+Spytkowice,Małopolskie,PL-011212318062
+Krasocin,Świętokrzyskie,PL-052615313022
+Lubień,Małopolskie,PL-011212009022
+Ożarów,Świętokrzyskie,PL-052615306053
+Blizanów,Wielkopolskie,PL-023015707012
+Nowe Miasto Lubawskie,Warmińsko-mazurskie,PL-042815412011
+Dąbrowa Białostocka,Podlaskie,PL-062013711013
+Frysztak,Podkarpackie,PL-061813519022
+Sompolno,Wielkopolskie,PL-023015810103
+Lipsko,Mazowieckie,PL-071422709033
+Zabłudów,Podlaskie,PL-062013702143
+Złotów,Wielkopolskie,PL-023016031082
+Myszyniec,Mazowieckie,PL-071422615083
+Bieliny,Świętokrzyskie,PL-052615204012
+Wiskitki,Mazowieckie,PL-071427338053
+Grębów,Podkarpackie,PL-061813620032
+Lelis,Mazowieckie,PL-071422615062
+Piwniczna-Zdrój,Małopolskie,PL-011212210133
+Włoszakowice,Wielkopolskie,PL-023015913072
+Strzałkowo,Wielkopolskie,PL-023015823072
+Turawa,Opolskie,PL-031613209132
+Gaszowice,Śląskie,PL-012414912022
+Lipno,Wielkopolskie,PL-023015913022
+Czarnków,Wielkopolskie,PL-023016002011
+Jeżowe,Podkarpackie,PL-061813612032
+Kietrz,Opolskie,PL-031613102043
+Słupca,Wielkopolskie,PL-023015823062
+Biała,Opolskie,PL-031613110013
+Kolno,Podlaskie,PL-062013806011
+Miłosław,Wielkopolskie,PL-023015830023
+Rudnik nad Sanem,Podkarpackie,PL-061813612063
+Iwanowice,Małopolskie,PL-011212006032
+Milówka,Śląskie,PL-012414417092
+Zbuczyn,Mazowieckie,PL-071427126132
+Drzewica,Łódzkie,PL-051011707023
+Lyski,Śląskie,PL-012414912042
+Białobrzegi,Mazowieckie,PL-071422701013
+Krzywda,Lubelskie,PL-060611211042
+Szydłowo,Wielkopolskie,PL-023016019062
+Żerków,Wielkopolskie,PL-023015706043
+Kowary,Dolnośląskie,PL-030210106021
+Czchów,Małopolskie,PL-011212402033
+Pionki,Mazowieckie,PL-071422725082
+Mysłakowice,Dolnośląskie,PL-030210106072
+Nowe,Kujawsko-pomorskie,PL-040416814063
+Siepraw,Małopolskie,PL-011212009062
+Chybie,Śląskie,PL-012414403052
+Duszniki,Wielkopolskie,PL-023016124022
+Żelazków,Wielkopolskie,PL-023015707112
+Bobowa,Małopolskie,PL-011212205033
+Działdowo,Warmińsko-mazurskie,PL-042815403022
+Kleczew,Wielkopolskie,PL-023015810043
+Bolków,Dolnośląskie,PL-030210105023
+Majdan Królewski,Podkarpackie,PL-061813506032
+Santok,Lubuskie,PL-020811301062
+Brodnica,Kujawsko-pomorskie,PL-040410702032
+Lutomiersk,Łódzkie,PL-051011508063
+Krzywiń,Wielkopolskie,PL-023015911043
+Chojnów,Dolnośląskie,PL-030210209022
+Bukowno,Małopolskie,PL-011212312011
+Rędziny,Śląskie,PL-012414604152
+Chełmża,Kujawsko-pomorskie,PL-040410615022
+Rzepin,Lubuskie,PL-020811305043
+Kaźmierz,Wielkopolskie,PL-023016124032
+Gózd,Mazowieckie,PL-071422725022
+Imielin,Śląskie,PL-012415114021
+Tarnów Opolski,Opolskie,PL-031613209112
+Radłów,Małopolskie,PL-011212416053
+Woźniki,Śląskie,PL-012414507083
+Komprachcice,Opolskie,PL-031613209042
+Ścinawa,Dolnośląskie,PL-030210211043
+Kłodawa,Lubuskie,PL-020811301042
+Osieczna,Wielkopolskie,PL-023015913033
+Prusice,Dolnośląskie,PL-030210420023
+Sieroszewice,Wielkopolskie,PL-023015717072
+Bierutów,Dolnośląskie,PL-030210414023
+Puszczykowo,Wielkopolskie,PL-023016121021
+Kudowa-Zdrój,Dolnośląskie,PL-030210308031
+Pomiechówek,Mazowieckie,PL-071413014052
+Leśna,Dolnośląskie,PL-030210110033
+Pruchnik,Podkarpackie,PL-061813404073
+Łapsze Niżne,Małopolskie,PL-011216911082
+Stegna,Pomorskie,PL-042214010042
+Toszek,Śląskie,PL-012414705073
+Chorzele,Mazowieckie,PL-071422622023
+Nieborów,Łódzkie,PL-051011905092
+Borne Sulinowo,Zachodniopomorskie,PL-023216415043
+Stanin,Lubelskie,PL-060611211072
+Wojaszówka,Podkarpackie,PL-061813307092
+Wierzbica,Mazowieckie,PL-071422725112
+Pruszcz,Kujawsko-pomorskie,PL-040416814083
+Pakość,Kujawsko-pomorskie,PL-040416707073
+Hrubieszów,Lubelskie,PL-060611004042
+Dzierżoniów,Dolnośląskie,PL-030210302052
+Dobrodzień,Opolskie,PL-031613208013
+Kunów,Świętokrzyskie,PL-052615207053
+Suchedniów,Świętokrzyskie,PL-052615210053
+Szczurowa,Małopolskie,PL-011212402072
+Zator,Małopolskie,PL-011212313093
+Dobrzeń Wielki,Opolskie,PL-031613209032
+Gryfów Śląski,Dolnośląskie,PL-030210112013
+Koniusza,Małopolskie,PL-011212014012
+Wyry,Śląskie,PL-012415108052
+Kościelisko,Małopolskie,PL-011216917042
+Sośnicowice,Śląskie,PL-012414705063
+Słupno,Mazowieckie,PL-071427019122
+Mniów,Świętokrzyskie,PL-052615204112
+Wysokie Mazowieckie,Podlaskie,PL-062013813011
+Wolanów,Mazowieckie,PL-071422725122
+Łobżenica,Wielkopolskie,PL-023016019043
+Pabianice,Łódzkie,PL-051011508072
+Nowogród Bobrzański,Lubuskie,PL-020811409053
+Tarnowiec,Podkarpackie,PL-061813305112
+Kurzętnik,Warmińsko-mazurskie,PL-042815412042
+Babice,Małopolskie,PL-011212303022
+Dębnica Kaszubska,Pomorskie,PL-042214112032
+Purda,Warmińsko-mazurskie,PL-042815614102
+Kutno,Łódzkie,PL-051011902062
+Haczów,Podkarpackie,PL-061813302042
+Garbów,Lubelskie,PL-060611109042
+Prószków,Opolskie,PL-031613209103
+Maków Mazowiecki,Mazowieckie,PL-071422611011
+Lubsza,Opolskie,PL-031613101052
+Lubaczów,Podkarpackie,PL-061813409042
+Gródek nad Dunajcem,Małopolskie,PL-011212210032
+Zarszyn,Podkarpackie,PL-061813317082
+Pieszyce,Dolnośląskie,PL-030210302033
+Giżycko,Warmińsko-mazurskie,PL-042815506042
+Zgorzelec,Dolnośląskie,PL-030210125072
+Bielsk,Mazowieckie,PL-071427019012
+Ogrodzieniec,Śląskie,PL-012415016063
+Czernikowo,Kujawsko-pomorskie,PL-040410615032
+Sucha Beskidzka,Małopolskie,PL-011216915021
+Golub-Dobrzyń,Kujawsko-pomorskie,PL-040410705032
+Nawojowa,Małopolskie,PL-011212210122
+Szczecinek,Zachodniopomorskie,PL-023216415062
+Mrocza,Kujawsko-pomorskie,PL-040416710023
+Kamienna Góra,Dolnośląskie,PL-030210107022
+Budzów,Małopolskie,PL-011216915032
+Puszcza Mariańska,Mazowieckie,PL-071427338032
+Złotniki Kujawskie,Kujawsko-pomorskie,PL-040416707092
+Miejska Górka,Wielkopolskie,PL-023015922033
+Tokarnia,Małopolskie,PL-011212009082
+Nowa Słupia,Świętokrzyskie,PL-052615204133
+Dubiecko,Podkarpackie,PL-061813413023
+Zawoja,Małopolskie,PL-011216915082
+Dębowiec,Podkarpackie,PL-061813305032
+Jodłownik,Małopolskie,PL-011212207042
+Zambrów,Podlaskie,PL-062013814052
+Gromnik,Małopolskie,PL-011212416022
+Święciechowa,Wielkopolskie,PL-023015913052
+Skarbimierz,Opolskie,PL-031613101022
+Lwówek,Wielkopolskie,PL-023015915023
+Pieńsk,Dolnośląskie,PL-030210125043
+Radzanowo,Mazowieckie,PL-071427019102
+Łopuszno,Świętokrzyskie,PL-052615204083
+Korsze,Warmińsko-mazurskie,PL-042815608043
+Białobrzegi,Podkarpackie,PL-061813510022
+Dzierzgoń,Pomorskie,PL-042214216013
+Dąbrówka,Mazowieckie,PL-071412934052
+Koniecpol,Śląskie,PL-012414604063
+Mrozy,Mazowieckie,PL-071412912123
+Lubraniec,Kujawsko-pomorskie,PL-040410818123
+Nowy Żmigród,Podkarpackie,PL-061813305072
+Piotrków Kujawski,Kujawsko-pomorskie,PL-040410811053
+Rawa Mazowiecka,Łódzkie,PL-051011913042
+Dąbrowa Chełmińska,Kujawsko-pomorskie,PL-040410603022
+Łapanów,Małopolskie,PL-011212001052
+Nałęczów,Lubelskie,PL-060611214083
+Kołaczyce,Podkarpackie,PL-061813305053
+Biskupiec,Warmińsko-mazurskie,PL-042815412022
+Nowe Miasto nad Wartą,Wielkopolskie,PL-023016125032
+Byczyna,Opolskie,PL-031613204013
+Milejów,Lubelskie,PL-060611110042
+Bojszowy,Śląskie,PL-012415114042
+Świeszyno,Zachodniopomorskie,PL-023216309082
+Będzino,Zachodniopomorskie,PL-023216309012
+Maszewo,Zachodniopomorskie,PL-023216604033
+Czarne,Pomorskie,PL-042217203023
+Tryńcza,Podkarpackie,PL-061813414082
+Krzepice,Śląskie,PL-012414606023
+Orły,Podkarpackie,PL-061813413072
+Karlino,Zachodniopomorskie,PL-023216301033
+Sieraków,Wielkopolskie,PL-023015914043
+Zagórów,Wielkopolskie,PL-023015823083
+Ochotnica Dolna,Małopolskie,PL-011216911102
+Debrzno,Pomorskie,PL-042217203043
+Wojkowice,Śląskie,PL-012415001031
+Janowiec Wielkopolski,Kujawsko-pomorskie,PL-040416719033
+Płońsk,Mazowieckie,PL-071422520092
+Trawniki,Lubelskie,PL-060611117052
+Bratian,Warmińsko-mazurskie,PL-042815412052
+Jabłonowo Pomorskie,Kujawsko-pomorskie,PL-040410702073
+Radków,Dolnośląskie,PL-030210308123
+Pawłosiów,Podkarpackie,PL-061813404062
+Warta Bolesławiecka,Dolnośląskie,PL-030210101062
+Końskowola,Lubelskie,PL-060611214052
+Orzysz,Warmińsko-mazurskie,PL-042815516023
+Korfantów,Opolskie,PL-031613107033
+Werbkowice,Lubelskie,PL-060611004082
+Łużna,Małopolskie,PL-011212205062
+Sobków,Świętokrzyskie,PL-052615302082
+Jabłonna,Lubelskie,PL-060611109062
+Ryńsk,Kujawsko-pomorskie,PL-040410717052
+Krzymów,Wielkopolskie,PL-023015810062
+Tuszów Narodowy,Podkarpackie,PL-061813611092
+Rajcza,Śląskie,PL-012414417112
+Kołbiel,Mazowieckie,PL-071412917052
+Sławno,Zachodniopomorskie,PL-023216313062
+Budzyń,Wielkopolskie,PL-023016001023
+Główczyce,Pomorskie,PL-042214112042
+Baranów,Wielkopolskie,PL-023015708012
+Olsztyn,Śląskie,PL-012414604123
+Brudzeń Duży,Mazowieckie,PL-071427019032
+Bobolice,Zachodniopomorskie,PL-023216309033
+Tomice,Małopolskie,PL-011212318082
+Piaski,Wielkopolskie,PL-023015904052
+Krzyż Wielkopolski,Wielkopolskie,PL-023016002043
+Skórzec,Mazowieckie,PL-071427126092
+Tworóg,Śląskie,PL-012414513082
+Gorzkowice,Łódzkie,PL-051011710032
+Dąbrowa,Opolskie,PL-031613209022
+Bojanowo,Wielkopolskie,PL-023015922013
+Łęczyca,Łódzkie,PL-051011904052
+Laskowa,Małopolskie,PL-011212207062
+Kępice,Pomorskie,PL-042214112053
+Urzędów,Lubelskie,PL-060611207083
+Kalety,Śląskie,PL-012414513011
+Strzyżewice,Lubelskie,PL-060611109122
+Łyse,Mazowieckie,PL-071422615072
+Dwikozy,Świętokrzyskie,PL-052615309022
+Szczerców,Łódzkie,PL-051011701072
+Mogielnica,Mazowieckie,PL-071427306073
+Skierniewice,Łódzkie,PL-051011915082
+Reńska Wieś,Opolskie,PL-031613203062
+Żarki,Śląskie,PL-012414609053
+Osiek,Małopolskie,PL-011212313052
+Kotuń,Mazowieckie,PL-071427126032
+Mirsk,Dolnośląskie,PL-030210112043
+Radoszyce,Świętokrzyskie,PL-052615205043
+Dobroń,Łódzkie,PL-051011508042
+Nowiny,Świętokrzyskie,PL-052615204172
+Podgórzyn,Dolnośląskie,PL-030210106082
+Gnojnik,Małopolskie,PL-011212402052
+Borzęcin,Małopolskie,PL-011212402012
+Poręba,Śląskie,PL-012415016011
+Krasnystaw,Lubelskie,PL-060611006052
+Zbąszynek,Lubuskie,PL-020811408063
+Brańszczyk,Mazowieckie,PL-071422635012
+Suwałki,Podlaskie,PL-062013912072
+Gardeja,Pomorskie,PL-042214207022
+Płoty,Zachodniopomorskie,PL-023216605043
+Głuszyca,Dolnośląskie,PL-030210321053
+Łubianka,Kujawsko-pomorskie,PL-040410615052
+Mrągowo,Warmińsko-mazurskie,PL-042815610032
+Samborzec,Świętokrzyskie,PL-052615309072
+Książ Wielkopolski,Wielkopolskie,PL-023016126033
+Pilica,Śląskie,PL-012415016073
+Ustka,Pomorskie,PL-042214112102
+Zaklików,Podkarpackie,PL-061813618053
+Polanów,Zachodniopomorskie,PL-023216309063
+Cmolas,Podkarpackie,PL-061813506012
+Koło,Wielkopolskie,PL-023015809072
+Mierzęcice,Śląskie,PL-012415001052
+Rychwał,Wielkopolskie,PL-023015810073
+Krośnice,Dolnośląskie,PL-030210413022
+Ciechanowiec,Podlaskie,PL-062013813023
+Annopol,Lubelskie,PL-060611207023
+Nekla,Wielkopolskie,PL-023015830033
+Kolno,Podlaskie,PL-062013806032
+Mirzec,Świętokrzyskie,PL-052615211032
+Okonek,Wielkopolskie,PL-023016031053
+Radzyń Podlaski,Lubelskie,PL-060610915062
+Jeżów Sudecki,Dolnośląskie,PL-030210106062
+Władysławów,Wielkopolskie,PL-023015827092
+Wińsko,Dolnośląskie,PL-030210422022
+Świnna,Śląskie,PL-012414417132
+Ulanów,Podkarpackie,PL-061813612073
+Wolbórz,Łódzkie,PL-051011710113
+Igołomia-Wawrzeńczyce,Małopolskie,PL-011212006022
+Raciąż,Mazowieckie,PL-071422520102
+Barwice,Zachodniopomorskie,PL-023216415023
+Przemków,Dolnośląskie,PL-030210216053
+Mszana Dolna,Małopolskie,PL-011212207021
+Goworowo,Mazowieckie,PL-071422615042
+Chmielno,Pomorskie,PL-042214005012
+Jonkowo,Warmińsko-mazurskie,PL-042815614072
+Sobolew,Mazowieckie,PL-071427103112
+Kamienica,Małopolskie,PL-011212207052
+Iwierzyce,Podkarpackie,PL-061813515012
+Krzemieniewo,Wielkopolskie,PL-023015913012
+Żelechów,Mazowieckie,PL-071427103143
+Gołańcz,Wielkopolskie,PL-023016028033
+Węgliniec,Dolnośląskie,PL-030210125063
+Bodzanów,Mazowieckie,PL-071427019023
+Wielopole Skrzyńskie,Podkarpackie,PL-061813515052
+Kunice,Dolnośląskie,PL-030210209042
+Łowicz,Łódzkie,PL-051011905072
+Krośniewice,Łódzkie,PL-051011902043
+Grodzisko Dolne,Podkarpackie,PL-061813608022
+Grabów nad Prosną,Wielkopolskie,PL-023015718033
+Cyców,Lubelskie,PL-060611110012
+Jeżewo,Kujawsko-pomorskie,PL-040416814042
+Kobylin,Wielkopolskie,PL-023015712023
+Izbica,Lubelskie,PL-060611006043
+Ksawerów,Łódzkie,PL-051011508052
+Siennica,Mazowieckie,PL-071412912133
+Rudniki,Opolskie,PL-031613208062
+Lubomia,Śląskie,PL-012414915072
+Elbląg,Warmińsko-mazurskie,PL-042815404012
+Olesno,Małopolskie,PL-011212404052
+Popielów,Opolskie,PL-031613209092
+Dobrzyca,Wielkopolskie,PL-023015720033
+Wadowice Górne,Podkarpackie,PL-061813611102
+Zduny,Wielkopolskie,PL-023015712063
+Kętrzyn,Warmińsko-mazurskie,PL-042815608032
+Choceń,Kujawsko-pomorskie,PL-040410818052
+Mszana,Śląskie,PL-012414915092
+Bojanów,Podkarpackie,PL-061813618022
+Czorsztyn,Małopolskie,PL-011216911042
+Jaraczewo,Wielkopolskie,PL-023015706013
+Darłowo,Zachodniopomorskie,PL-023216313032
+Ujście,Wielkopolskie,PL-023016019073
+Wiśniowa,Podkarpackie,PL-061813519052
+Bolesław,Małopolskie,PL-011212312032
+Jasienica Rosielna,Podkarpackie,PL-061813302052
+Szczytniki,Wielkopolskie,PL-023015707102
+Kąkolewnica,Lubelskie,PL-060610915042
+Bierawa,Opolskie,PL-031613203022
+Narol,Podkarpackie,PL-061813409053
+Wiśniowa,Małopolskie,PL-011212009092
+Ciechanów,Mazowieckie,PL-071422502022
+Dydnia,Podkarpackie,PL-061813302032
+Lubasz,Wielkopolskie,PL-023016002052
+Szerzyny,Małopolskie,PL-011212416162
+Nozdrzec,Podkarpackie,PL-061813302062
+Ostrów,Podkarpackie,PL-061813515022
+Poniec,Wielkopolskie,PL-023015904073
+Lądek-Zdrój,Dolnośląskie,PL-030210308083
+Sławno,Łódzkie,PL-051011707072
+Kaczory,Wielkopolskie,PL-023016019033
+Klimontów,Świętokrzyskie,PL-052615309033
+Radgoszcz,Małopolskie,PL-011212404062
+Cewice,Pomorskie,PL-042214108032
+Bliżyn,Świętokrzyskie,PL-052615210022
+Miedźno,Śląskie,PL-012414606042
+Rudna,Dolnośląskie,PL-030210211032
+Jaworze,Śląskie,PL-012414402062
+Baboszewo,Mazowieckie,PL-071422520032
+Długosiodło,Mazowieckie,PL-071422635022
+Kamieniec Ząbkowicki,Dolnośląskie,PL-030210324033
+Bogoria,Świętokrzyskie,PL-052615312013
+Gniewino,Pomorskie,PL-042214015052
+Leśnica,Opolskie,PL-031613211043
+Włocławek,Kujawsko-pomorskie,PL-040410818132
+Chmielnik,Podkarpackie,PL-061813516042
+Kurów,Lubelskie,PL-060611214062
+Krajenka,Wielkopolskie,PL-023016031033
+Babiak,Wielkopolskie,PL-023015809022
+Ujazd,Łódzkie,PL-051011716103
+Osiek,Świętokrzyskie,PL-052615312043
+Mikołajki,Warmińsko-mazurskie,PL-042815610023
+Krzykosy,Wielkopolskie,PL-023016125022
+Sońsk,Mazowieckie,PL-071422502092
+Nowa Sól,Lubuskie,PL-020811404052
+Łasin,Kujawsko-pomorskie,PL-040410706033
+Koźminek,Wielkopolskie,PL-023015707053
+Niedźwiedź,Małopolskie,PL-011212207102
+Ruciane-Nida,Warmińsko-mazurskie,PL-042815516043
+Łubowo,Wielkopolskie,PL-023015803062
+Drobin,Mazowieckie,PL-071427019053
+Brójce,Łódzkie,PL-051011506032
+Osiecznica,Dolnośląskie,PL-030210101052
+Rypin,Kujawsko-pomorskie,PL-040410712042
+Dobroszyce,Dolnośląskie,PL-030210414032
+Czerniejewo,Wielkopolskie,PL-023015803023
+Białogard,Zachodniopomorskie,PL-023216301022
+Ozorków,Łódzkie,PL-051011520062
+Nowa Karczma,Pomorskie,PL-042217206072
+Rakszawa,Podkarpackie,PL-061813510062
+Miłkowice,Dolnośląskie,PL-030210209062
+Radomyśl nad Sanem,Podkarpackie,PL-061813618042
+Resko,Zachodniopomorskie,PL-023216418043
+Strzeleczki,Opolskie,PL-031613205033
+Ciasna,Śląskie,PL-012414507032
+Gubin,Lubuskie,PL-020811402052
+Głogów,Dolnośląskie,PL-030210203022
+Stoczek Łukowski,Lubelskie,PL-060611211082
+Bogdaniec,Lubuskie,PL-020811301022
+Osięciny,Kujawsko-pomorskie,PL-040410811042
+Pełczyce,Zachodniopomorskie,PL-023216402053
+Izbica Kujawska,Kujawsko-pomorskie,PL-040410818083
+Lubochnia,Łódzkie,PL-051011716062
+Kostomłoty,Dolnośląskie,PL-030210418012
+Chrząstowice,Opolskie,PL-031613209012
+Łambinowice,Opolskie,PL-031613107042
+Żagań,Lubuskie,PL-020811410092
+Piecki,Warmińsko-mazurskie,PL-042815610042
+Lubiszyn,Lubuskie,PL-020811301052
+Szamocin,Wielkopolskie,PL-023016001053
+Czerwińsk nad Wisłą,Mazowieckie,PL-071422520043
+Łoniów,Świętokrzyskie,PL-052615309052
+Prochowice,Dolnośląskie,PL-030210209073
+Jastrzębia,Mazowieckie,PL-071422725042
+Rzgów,Wielkopolskie,PL-023015810082
+Glinojeck,Mazowieckie,PL-071422502033
+Łagiewniki,Dolnośląskie,PL-030210302062
+Kłecko,Wielkopolskie,PL-023015803053
+Nowe Miasto nad Pilicą,Mazowieckie,PL-071427306083
+Trojanów,Mazowieckie,PL-071427103122
+Charsznica,Małopolskie,PL-011212008012
+Trzebieszów,Lubelskie,PL-060611211092
+Dobrzyń nad Wisłą,Kujawsko-pomorskie,PL-040410808043
+Stopnica,Świętokrzyskie,PL-052615301063
+Skępe,Kujawsko-pomorskie,PL-040410808073
+Turośń Kościelna,Podlaskie,PL-062013702112
+Nowy Staw,Pomorskie,PL-042214209073
+Dolice,Zachodniopomorskie,PL-023216614042
+Czermin,Podkarpackie,PL-061813611032
+Jadów,Mazowieckie,PL-071412934063
+Liw,Mazowieckie,PL-071427133042
+Szadek,Łódzkie,PL-051011819023
+Otyń,Lubuskie,PL-020811404073
+Stanisławów,Mazowieckie,PL-071412912142
+Jemielnica,Opolskie,PL-031613211022
+Błędów,Mazowieckie,PL-071427306022
+Borek Wielkopolski,Wielkopolskie,PL-023015904013
+Przytyk,Mazowieckie,PL-071422725093
+Pawłowiczki,Opolskie,PL-031613203042
+Słopnice,Małopolskie,PL-011212207112
+Kraśnik,Lubelskie,PL-060611207052
+Strzegowo,Mazowieckie,PL-071422513052
+Świerzawa,Dolnośląskie,PL-030210126043
+Żołynia,Podkarpackie,PL-061813510072
+Hyżne,Podkarpackie,PL-061813516072
+Złotoryja,Dolnośląskie,PL-030210126062
+Miasteczko Śląskie,Śląskie,PL-012414513021
+Jeziorany,Warmińsko-mazurskie,PL-042815614063
+Gietrzwałd,Warmińsko-mazurskie,PL-042815614052
+Zarzecze,Podkarpackie,PL-061813414092
+Kotlin,Wielkopolskie,PL-023015706032
+Kochanowice,Śląskie,PL-012414507052
+Susiec,Lubelskie,PL-060611018082
+Gorzów Śląski,Opolskie,PL-031613208023
+Sadki,Kujawsko-pomorskie,PL-040416710042
+Świdnica,Lubuskie,PL-020811409072
+Raniżów,Podkarpackie,PL-061813506052
+Wierzbinek,Wielkopolskie,PL-023015810132
+Trzyciąż,Małopolskie,PL-011212312062
+Zaniemyśl,Wielkopolskie,PL-023016125052
+Lubichowo,Pomorskie,PL-042214213062
+Jutrosin,Wielkopolskie,PL-023015922023
+Szczytna,Dolnośląskie,PL-030210308143
+Pacanów,Świętokrzyskie,PL-052615301043
+Szczekociny,Śląskie,PL-012415016083
+Widawa,Łódzkie,PL-051011803042
+Nowa Sucha,Mazowieckie,PL-071427328052
+Przasnysz,Mazowieckie,PL-071422622072
+Sławków,Śląskie,PL-012415001081
+Kalisz Pomorski,Zachodniopomorskie,PL-023216403033
+Dragacz,Kujawsko-pomorskie,PL-040416814022
+Biały Dunajec,Małopolskie,PL-011216917022
+Wiązów,Dolnośląskie,PL-030210417053
+Kamień,Podkarpackie,PL-061813516082
+Rząśnik,Mazowieckie,PL-071422635032
+Kłoczew,Lubelskie,PL-060611216022
+Ryczywół,Wielkopolskie,PL-023016116032
+Gościeradów,Lubelskie,PL-060611207042
+Bystra-Sidzina,Małopolskie,PL-011216915042
+Cedry Wielkie,Pomorskie,PL-042214004022
+Cekcyn,Kujawsko-pomorskie,PL-040416816012
+Stryszów,Małopolskie,PL-011212318072
+Postomino,Zachodniopomorskie,PL-023216313052
+Uście Gorlickie,Małopolskie,PL-011212205102
+Złoczew,Łódzkie,PL-051011814113
+Kościelec,Wielkopolskie,PL-023015809082
+Wąsosz,Dolnośląskie,PL-030210204043
+Staroźreby,Mazowieckie,PL-071427019142
+Stronie Śląskie,Dolnośląskie,PL-030210308133
+Międzylesie,Dolnośląskie,PL-030210308103
+Lubień Kujawski,Kujawsko-pomorskie,PL-040410818113
+Biesiekierz,Zachodniopomorskie,PL-023216309022
+Sieniawa,Podkarpackie,PL-061813414073
+Stara Kiszewa,Pomorskie,PL-042217206082
+Cieszanów,Podkarpackie,PL-061813409023
+Uniejów,Łódzkie,PL-051011811043
+Rybno,Warmińsko-mazurskie,PL-042815403062
+Ćmielów,Świętokrzyskie,PL-052615207043
+Iłowo-Osada,Warmińsko-mazurskie,PL-042815403032
+Księżpol,Lubelskie,PL-060611002082
+Głowaczów,Mazowieckie,PL-071422707023
+Piszczac,Lubelskie,PL-060610901113
+Modliborzyce,Lubelskie,PL-060611205063
+Górzno,Mazowieckie,PL-071427103052
+Jasień,Lubuskie,PL-020811411043
+Krasnobród,Lubelskie,PL-060611020043
+Lipinki,Małopolskie,PL-011212205052
+Prostki,Warmińsko-mazurskie,PL-042815505042
+Unisław,Kujawsko-pomorskie,PL-040410704072
+Wielichowo,Wielkopolskie,PL-023015905053
+Wielgie,Kujawsko-pomorskie,PL-040410808092
+Kikół,Kujawsko-pomorskie,PL-040410808053
+Szczawnica,Małopolskie,PL-011216911023
+Nędza,Śląskie,PL-012414911062
+Krościenko nad Dunajcem,Małopolskie,PL-011216911062
+Reszel,Warmińsko-mazurskie,PL-042815608053
+Goczałkowice-Zdrój,Śląskie,PL-012415110012
+Iwkowa,Małopolskie,PL-011212402062
+Stawiszyn,Wielkopolskie,PL-023015707093
+Opatów,Śląskie,PL-012414606052
+Jednorożec,Mazowieckie,PL-071422622042
+Dynów,Podkarpackie,PL-061813516052
+Rogowo,Kujawsko-pomorskie,PL-040416719052
+Sierpc,Mazowieckie,PL-071427027052
+Laszki,Podkarpackie,PL-061813404052
+Przedbórz,Łódzkie,PL-051011712113
+Łagów,Świętokrzyskie,PL-052615204073
+Lubenia,Podkarpackie,PL-061813516102
+Kobylanka,Zachodniopomorskie,PL-023216614062
+Pietrowice Wielkie,Śląskie,PL-012414911072
+Sitno,Lubelskie,PL-060611020092
+Rzepiennik Strzyżewski,Małopolskie,PL-011212416072
+Mieszkowice,Zachodniopomorskie,PL-023216606053
+Kamień Krajeński,Kujawsko-pomorskie,PL-040416813013
+Poświętne,Mazowieckie,PL-071412934082
+Pyzdry,Wielkopolskie,PL-023015830043
+Kamionka,Lubelskie,PL-060611108053
+Potęgowo,Pomorskie,PL-042214112072
+Wojcieszków,Lubelskie,PL-060611211102
+Pawonków,Śląskie,PL-012414507072
+Radziejowice,Mazowieckie,PL-071427338042
+Lubań,Dolnośląskie,PL-030210110042
+Linia,Pomorskie,PL-042214015062
+Malanów,Wielkopolskie,PL-023015827052
+Drwinia,Małopolskie,PL-011212001032
+Raciechowice,Małopolskie,PL-011212009052
+Łyszkowice,Łódzkie,PL-051011905082
+Augustów,Podlaskie,PL-062013901022
+Lidzbark Warmiński,Warmińsko-mazurskie,PL-042815609032
+Wierzchlas,Łódzkie,PL-051011817102
+Szepietowo,Podlaskie,PL-062013813093
+Magnuszew,Mazowieckie,PL-071422707063
+Bielsk Podlaski,Podlaskie,PL-062013803032
+Herby,Śląskie,PL-012414507042
+Tymbark,Małopolskie,PL-011212207122
+Ujazd,Opolskie,PL-031613211063
+Czernichów,Śląskie,PL-012414417022
+Marcinowice,Dolnośląskie,PL-030210319052
+Maciejowice,Mazowieckie,PL-071427103073
+Siedliszcze,Lubelskie,PL-060611003113
+Wodzisław,Świętokrzyskie,PL-052615302093
+Przeciszów,Małopolskie,PL-011212313082
+Józefów,Lubelskie,PL-060611002073
+Markowa,Podkarpackie,PL-061813510052
+Iłowa,Lubuskie,PL-020811410043
+Lasowice Wielkie,Opolskie,PL-031613204032
+Brzyska,Podkarpackie,PL-061813305022
+Wąchock,Świętokrzyskie,PL-052615211053
+Węgorzyno,Zachodniopomorskie,PL-023216418053
+Waśniów,Świętokrzyskie,PL-052615207062
+Margonin,Wielkopolskie,PL-023016001043
+Chełm Śląski,Śląskie,PL-012415114052
+Kazimierz Dolny,Lubelskie,PL-060611214043
+Osiek Mały,Wielkopolskie,PL-023015809102
+Kleszczów,Łódzkie,PL-051011701042
+Chodel,Lubelskie,PL-060611212012
+Suchowola,Podlaskie,PL-062013711093
+Olszyna,Dolnośląskie,PL-030210110053
+Lanckorona,Małopolskie,PL-011212318042
+Dzikowiec,Podkarpackie,PL-061813506062
+Lubowidz,Mazowieckie,PL-071422537033
+Gilowice,Śląskie,PL-012414417032
+Sośnie,Wielkopolskie,PL-023015717082
+Medyka,Podkarpackie,PL-061813413062
+Kobyla Góra,Wielkopolskie,PL-023015718042
+Wielbark,Warmińsko-mazurskie,PL-042815617083
+Sobienie-Jeziory,Mazowieckie,PL-071412917072
+Rytwiany,Świętokrzyskie,PL-052615312062
+Torzym,Lubuskie,PL-020811307053
+Trzciel,Lubuskie,PL-020811303063
+Koprzywnica,Świętokrzyskie,PL-052615309043
+Kamieniec,Wielkopolskie,PL-023015905032
+Tychowo,Zachodniopomorskie,PL-023216301043
+Ornontowice,Śląskie,PL-012415108042
+Sędziejowice,Łódzkie,PL-051011803032
+Mieroszów,Dolnośląskie,PL-030210321063
+Niwiska,Podkarpackie,PL-061813506042
+Tarnogród,Lubelskie,PL-060611002123
+Branice,Opolskie,PL-031613102022
+Pątnów,Łódzkie,PL-051011817072
+Niedźwiada,Lubelskie,PL-060611108092
+Wohyń,Lubelskie,PL-060610915082
+Zabrodzie,Mazowieckie,PL-071422635062
+Mircze,Lubelskie,PL-060611004052
+Belsk Duży,Mazowieckie,PL-071427306012
+Ośno Lubuskie,Lubuskie,PL-020811305033
+Brzeźnio,Łódzkie,PL-051011814042
+Dobiegniew,Lubuskie,PL-020811306013
+Przywidz,Pomorskie,PL-042214004052
+Górowo Iławeckie,Warmińsko-mazurskie,PL-042815601052
+Cybinka,Lubuskie,PL-020811305013
+Roźwienica,Podkarpackie,PL-061813404102
+Chodzież,Wielkopolskie,PL-023016001032
+Kalinowo,Warmińsko-mazurskie,PL-042815505032
+Iwaniska,Świętokrzyskie,PL-052615306023
+Brzeziny,Łódzkie,PL-051011521022
+Zalewo,Warmińsko-mazurskie,PL-042815407073
+Galewice,Łódzkie,PL-051011818032
+Rokiciny,Łódzkie,PL-051011716072
+Karsin,Pomorskie,PL-042217206032
+Skalbmierz,Świętokrzyskie,PL-052615303053
+Bralin,Wielkopolskie,PL-023015708022
+Zakrzówek,Lubelskie,PL-060611207102
+Zwierzyniec,Lubelskie,PL-060611020153
+Żyrzyn,Lubelskie,PL-060611214112
+Obrazów,Świętokrzyskie,PL-052615309062
+Oleszyce,Podkarpackie,PL-061813409063
+Kwilcz,Wielkopolskie,PL-023015914022
+Cegłów,Mazowieckie,PL-071412912043
+Wysoka,Wielkopolskie,PL-023016019093
+Chełmno,Kujawsko-pomorskie,PL-040410704022
+Babimost,Lubuskie,PL-020811409013
+Wartkowice,Łódzkie,PL-051011811052
+Grabica,Łódzkie,PL-051011710042
+Lipnica Wielka,Małopolskie,PL-011216911072
+Warlubie,Kujawsko-pomorskie,PL-040416814112
+Bobrowo,Kujawsko-pomorskie,PL-040410702022
+Kroczyce,Śląskie,PL-012415016042
+Międzyzdroje,Zachodniopomorskie,PL-023216607043
+Józefów nad Wisłą,Lubelskie,PL-060611212023
+Wojciechów,Lubelskie,PL-060611109132
+Łabowa,Małopolskie,PL-011212210082
+Gruta,Kujawsko-pomorskie,PL-040410706022
+Dynów,Podkarpackie,PL-061813516011
+Czyżew,Podlaskie,PL-062013813033
+Maków,Łódzkie,PL-051011915062
+Terespol,Lubelskie,PL-060610901162
+Tolkmicko,Warmińsko-mazurskie,PL-042815404093
+Rejowiec,Lubelskie,PL-060611003153
+Lipie,Śląskie,PL-012414606032
+Baranowo,Mazowieckie,PL-071422615012
+Sadlinki,Pomorskie,PL-042214207062
+Niechanowo,Wielkopolskie,PL-023015803082
+Połajewo,Wielkopolskie,PL-023016002062
+Ożarowice,Śląskie,PL-012414513062
+Grybów,Małopolskie,PL-011212210011
+Spiczyn,Lubelskie,PL-060611110062
+Polanica-Zdrój,Dolnośląskie,PL-030210308051
+Malechowo,Zachodniopomorskie,PL-023216313042
+Kargowa,Lubuskie,PL-020811409043
+Gołcza,Małopolskie,PL-011212008022
+Orońsko,Mazowieckie,PL-071422730042
+Trzydnik Duży,Lubelskie,PL-060611207072
+Bircza,Podkarpackie,PL-061813413013
+Brudzew,Wielkopolskie,PL-023015827022
+Piława Górna,Dolnośląskie,PL-030210302041
+Wróblew,Łódzkie,PL-051011814102
+Stary Targ,Pomorskie,PL-042214216042
+Dzwola,Lubelskie,PL-060611205032
+Łabunie,Lubelskie,PL-060611020052
+Jerzmanowa,Dolnośląskie,PL-030210203032
+Naruszewo,Mazowieckie,PL-071422520072
+Krasnosielc,Mazowieckie,PL-071422611042
+Grodziczno,Warmińsko-mazurskie,PL-042815412032
+Zakroczym,Mazowieckie,PL-071413014063
+Skoroszyce,Opolskie,PL-031613107092
+Zawonia,Dolnośląskie,PL-030210420052
+Michałowo,Podlaskie,PL-062013702073
+Iłów,Mazowieckie,PL-071427328032
+Opinogóra Górna,Mazowieckie,PL-071422502072
+Janów,Śląskie,PL-012414604032
+Dobre,Mazowieckie,PL-071412912063
+Przechlewo,Pomorskie,PL-042217203062
+Dobra,Wielkopolskie,PL-023015827033
+Dźwierzuty,Warmińsko-mazurskie,PL-042815617022
+Mikstat,Wielkopolskie,PL-023015718063
+Zawidz,Mazowieckie,PL-071427027072
+Lubiewo,Kujawsko-pomorskie,PL-040416816042
+Dorohusk,Lubelskie,PL-060611003042
+Wydminy,Warmińsko-mazurskie,PL-042815506102
+Sulików,Dolnośląskie,PL-030210125052
+Wielowieś,Śląskie,PL-012414705082
+Domaradz,Podkarpackie,PL-061813302022
+Wilczyn,Wielkopolskie,PL-023015810142
+Dębowiec,Śląskie,PL-012414403062
+Dolsk,Wielkopolskie,PL-023016126023
+Szklarska Poręba,Dolnośląskie,PL-030210106041
+Sokołów Podlaski,Mazowieckie,PL-071427129082
+Małdyty,Warmińsko-mazurskie,PL-042815415052
+Banie,Zachodniopomorskie,PL-023216606012
+Przyłęk,Mazowieckie,PL-071422736032
+Piechowice,Dolnośląskie,PL-030210106031
+Gidle,Łódzkie,PL-051011712032
+Manowo,Zachodniopomorskie,PL-023216309042
+Wiśniew,Mazowieckie,PL-071427126112
+Borki,Lubelskie,PL-060610915022
+Dąbie,Wielkopolskie,PL-023015809043
+Pępowo,Wielkopolskie,PL-023015904042
+Harasiuki,Podkarpackie,PL-061813612012
+Brzeziny,Wielkopolskie,PL-023015707022
+Siemiatycze,Podlaskie,PL-062013810092
+Włodawa,Lubelskie,PL-060610919062
+Skulsk,Wielkopolskie,PL-023015810092
+Trzciana,Małopolskie,PL-011212001082
+Popów,Śląskie,PL-012414606072
+Nowosolna,Łódzkie,PL-051011506082
+Kolonowskie,Opolskie,PL-031613211033
+Malczyce,Dolnośląskie,PL-030210418022
+Sulęczyno,Pomorskie,PL-042214005072
+Szczuczyn,Podlaskie,PL-062013904053
+Przystajń,Śląskie,PL-012414606082
+Sępopol,Warmińsko-mazurskie,PL-042815601063
+Czarna Dąbrówka,Pomorskie,PL-042214101032
+Mieścisko,Wielkopolskie,PL-023016028043
+Kock,Lubelskie,PL-060611108063
+Drohiczyn,Podlaskie,PL-062013810023
+Baborów,Opolskie,PL-031613102013
+Sułoszowa,Małopolskie,PL-011212006132
+Raczki,Podlaskie,PL-062013912052
+Gozdowo,Mazowieckie,PL-071427027022
+Bisztynek,Warmińsko-mazurskie,PL-042815601043
+Tykocin,Podlaskie,PL-062013702123
+Firlej,Lubelskie,PL-060611108032
+Gomunice,Łódzkie,PL-051011712042
+Frampol,Lubelskie,PL-060611002053
+Mała Wieś,Mazowieckie,PL-071427019082
+Ryjewo,Pomorskie,PL-042214207052
+Lubomierz,Dolnośląskie,PL-030210112023
+Sochocin,Mazowieckie,PL-071422520113
+Śliwice,Kujawsko-pomorskie,PL-040416816052
+Damnica,Pomorskie,PL-042214112022
+Somianka,Mazowieckie,PL-071422635042
+Nowe Brzesko,Małopolskie,PL-011212014033
+Ludwin,Lubelskie,PL-060611110022
+Sanniki,Mazowieckie,PL-071427004043
+Barciany,Warmińsko-mazurskie,PL-042815608022
+Leoncin,Mazowieckie,PL-071413014032
+Młodzieszyn,Mazowieckie,PL-071427328042
+Kołaczkowo,Wielkopolskie,PL-023015830012
+Piątek,Łódzkie,PL-051011904063
+Drawsko,Wielkopolskie,PL-023016002032
+Lubycza Królewska,Lubelskie,PL-060611018053
+Żarnów,Łódzkie,PL-051011707083
+Kamieńsk,Łódzkie,PL-051011712053
+Kisielice,Warmińsko-mazurskie,PL-042815407043
+Stawiski,Podlaskie,PL-062013806053
+Wicko,Pomorskie,PL-042214108052
+Pieniężno,Warmińsko-mazurskie,PL-042815402053
+Puchaczów,Lubelskie,PL-060611110052
+Żegocina,Małopolskie,PL-011212001092
+Lipnica Murowana,Małopolskie,PL-011212001042
+Mochowo,Mazowieckie,PL-071427027032
+Ulan-Majorat,Lubelskie,PL-060610915072
+Kuryłówka,Podkarpackie,PL-061813608032
+Kałuszyn,Mazowieckie,PL-071412912093
+Sienno,Mazowieckie,PL-071422709053
+Sadowne,Mazowieckie,PL-071427133072
+Korytnica,Mazowieckie,PL-071427133032
+Zapolice,Łódzkie,PL-051011819032
+Chlewiska,Mazowieckie,PL-071422730012
+Golczewo,Zachodniopomorskie,PL-023216607023
+Skarżysko Kościelne,Świętokrzyskie,PL-052615210042
+Białaczów,Łódzkie,PL-051011707013
+Załuski,Mazowieckie,PL-071422520122
+Ropa,Małopolskie,PL-011212205082
+Turobin,Lubelskie,PL-060611002143
+Głuchów,Łódzkie,PL-051011915022
+Wysokie Mazowieckie,Podlaskie,PL-062013813102
+Chociwel,Zachodniopomorskie,PL-023216614023
+Lipiany,Zachodniopomorskie,PL-023216412033
+Łaszczów,Lubelskie,PL-060611018063
+Trzebiel,Lubuskie,PL-020811411082
+Grajewo,Podlaskie,PL-062013904022
+Lądek,Wielkopolskie,PL-023015823022
+Stara Błotnica,Mazowieckie,PL-071422701042
+Nowy Korczyn,Świętokrzyskie,PL-052615301033
+Michów,Lubelskie,PL-060611108082
+Promna,Mazowieckie,PL-071422701022
+Chodecz,Kujawsko-pomorskie,PL-040410818063
+Godziszów,Lubelskie,PL-060611205042
+Baranów,Mazowieckie,PL-071413005032
+Radomsko,Łódzkie,PL-051011712122
+Szastarka,Lubelskie,PL-060611207062
+Jordanów,Małopolskie,PL-011216915011
+Stromiec,Mazowieckie,PL-071422701052
+Skrwilno,Kujawsko-pomorskie,PL-040410712052
+Braniewo,Warmińsko-mazurskie,PL-042815402022
+Zembrzyce,Małopolskie,PL-011216915092
+Osie,Kujawsko-pomorskie,PL-040416814072
+Kamienica Polska,Śląskie,PL-012414604042
+Niegowa,Śląskie,PL-012414609032
+Ryn,Warmińsko-mazurskie,PL-042815506083
+Łąck,Mazowieckie,PL-071427019072
+Grzegorzew,Wielkopolskie,PL-023015809052
+Jasieniec,Mazowieckie,PL-071427306062
+Krościenko Wyżne,Podkarpackie,PL-061813307062
+Subkowy,Pomorskie,PL-042214214052
+Dygowo,Zachodniopomorskie,PL-023216308022
+Marklowice,Śląskie,PL-012414915082
+Kosów Lacki,Mazowieckie,PL-071427129053
+Legnickie Pole,Dolnośląskie,PL-030210209052
+Mordy,Mazowieckie,PL-071427126053
+Świętajno,Warmińsko-mazurskie,PL-042815617072
+Cisek,Opolskie,PL-031613203032
+Przytoczna,Lubuskie,PL-020811303032
+Mirosławiec,Zachodniopomorskie,PL-023216417033
+Gościno,Zachodniopomorskie,PL-023216308033
+Świdwin,Zachodniopomorskie,PL-023216416062
+Karczmiska,Lubelskie,PL-060611212032
+Wilkołaz,Lubelskie,PL-060611207092
+Kaliska,Pomorskie,PL-042214213052
+Walim,Dolnośląskie,PL-030210321082
+Biała,Łódzkie,PL-051011817012
+Lipka,Wielkopolskie,PL-023016031042
+Grabów,Łódzkie,PL-051011904043
+Kozłowo,Warmińsko-mazurskie,PL-042815611032
+Grębocice,Dolnośląskie,PL-030210216032
+Bukowsko,Podkarpackie,PL-061813317032
+Parzęczew,Łódzkie,PL-051011520073
+Izbicko,Opolskie,PL-031613211012
+Szczyrk,Śląskie,PL-012414402011
+Drużbice,Łódzkie,PL-051011701032
+Krzanowice,Śląskie,PL-012414911033
+Stara Kamienica,Dolnośląskie,PL-030210106092
+Chłopice,Podkarpackie,PL-061813404032
+Raków,Świętokrzyskie,PL-052615204162
+Borowa,Podkarpackie,PL-061813611022
+Burzenin,Łódzkie,PL-051011814052
+Szczawno-Zdrój,Dolnośląskie,PL-030210321031
+Jodłowa,Podkarpackie,PL-061813603052
+Łaskarzew,Mazowieckie,PL-071427103062
+Dzierzkowice,Lubelskie,PL-060611207032
+Koszyce,Małopolskie,PL-011212014023
+Męcinka,Dolnośląskie,PL-030210105032
+Sokoły,Podlaskie,PL-062013813082
+Wielka Nieszawka,Kujawsko-pomorskie,PL-040410615082
+Solina,Podkarpackie,PL-061813321052
+Bulkowo,Mazowieckie,PL-071427019042
+Rozogi,Warmińsko-mazurskie,PL-042815617052
+Zduny,Łódzkie,PL-051011905102
+Wyszogród,Mazowieckie,PL-071427019153
+Ciepielów,Mazowieckie,PL-071422709023
+Fredropol,Podkarpackie,PL-061813413032
+Stolno,Kujawsko-pomorskie,PL-040410704062
+Brańsk,Podlaskie,PL-062013803052
+Lipnica,Pomorskie,PL-042214101052
+Osiek Jasielski,Podkarpackie,PL-061813305082
+Łęka Opatowska,Wielkopolskie,PL-023015708042
+Walce,Opolskie,PL-031613205042
+Kuślin,Wielkopolskie,PL-023015915012
+Kornowac,Śląskie,PL-012414911022
+Małomice,Lubuskie,PL-020811410053
+Kiszkowo,Wielkopolskie,PL-023015803042
+Pokrzywnica,Mazowieckie,PL-071422524032
+Lisków,Wielkopolskie,PL-023015707062
+Latowicz,Mazowieckie,PL-071412912103
+Stoszowice,Dolnośląskie,PL-030210324042
+Padew Narodowa,Podkarpackie,PL-061813611062
+Jastrząb,Mazowieckie,PL-071422730023
+Włodowice,Śląskie,PL-012415016093
+Krasiczyn,Podkarpackie,PL-061813413042
+Terespol,Lubelskie,PL-060610901021
+Adamów,Lubelskie,PL-060611211032
+Sawin,Lubelskie,PL-060611003102
+Sadkowice,Łódzkie,PL-051011913062
+Wiślica,Świętokrzyskie,PL-052615301083
+Policzna,Mazowieckie,PL-071422736022
+Kobiór,Śląskie,PL-012415110022
+Sokolniki,Łódzkie,PL-051011818062
+Wiśniewo,Mazowieckie,PL-071422513102
+Jakubów,Mazowieckie,PL-071412912082
+Malbork,Pomorskie,PL-042214209042
+Bytom Odrzański,Lubuskie,PL-020811404023
+Tyszowce,Lubelskie,PL-060611018123
+Radwanice,Dolnośląskie,PL-030210216062
+Wilga,Mazowieckie,PL-071427103132
+Płośnica,Warmińsko-mazurskie,PL-042815403052
+Bedlno,Łódzkie,PL-051011902022
+Rutki,Podlaskie,PL-062013814032
+Wieniawa,Mazowieckie,PL-071422723082
+Grunwald,Warmińsko-mazurskie,PL-042815415032
+Drelów,Lubelskie,PL-060610901042
+Nielisz,Lubelskie,PL-060611020072
+Radecznica,Lubelskie,PL-060611020082
+Goszczanów,Łódzkie,PL-051011814062
+Jarocin,Podkarpackie,PL-061813612022
+Radziejów,Kujawsko-pomorskie,PL-040410811011
+Mokrsko,Łódzkie,PL-051011817042
+Granowo,Wielkopolskie,PL-023015905012
+Doruchów,Wielkopolskie,PL-023015718022
+Pasym,Warmińsko-mazurskie,PL-042815617043
+Buczek,Łódzkie,PL-051011803012
+Śniadowo,Podlaskie,PL-062013807072
+Murów,Opolskie,PL-031613209062
+Nowe Miasteczko,Lubuskie,PL-020811404063
+Niemcza,Dolnośląskie,PL-030210302073
+Pokój,Opolskie,PL-031613106032
+Międzybórz,Dolnośląskie,PL-030210414053
+Skąpe,Lubuskie,PL-020811408032
+Borów,Dolnośląskie,PL-030210417012
+Miączyn,Lubelskie,PL-060611020062
+Bielawy,Łódzkie,PL-051011905022
+Gromadka,Dolnośląskie,PL-030210101032
+Bargłów Kościelny,Podlaskie,PL-062013901032
+Potok Górny,Lubelskie,PL-060611002112
+Damasławek,Wielkopolskie,PL-023016028022
+Widuchowa,Zachodniopomorskie,PL-023216606092
+Biały Bór,Zachodniopomorskie,PL-023216415033
+Dłutów,Łódzkie,PL-051011508032
+Recz,Zachodniopomorskie,PL-023216402063
+Bardo,Dolnośląskie,PL-030210324013
+Choczewo,Pomorskie,PL-042214015042
+Grodziec,Wielkopolskie,PL-023015810022
+Ostrów Lubelski,Lubelskie,PL-060611108103
+Sękowa,Małopolskie,PL-011212205092
+Radymno,Podkarpackie,PL-061813404021
+Rozdrażew,Wielkopolskie,PL-023015712052
+Miłakowo,Warmińsko-mazurskie,PL-042815415063
+Zbiczno,Kujawsko-pomorskie,PL-040410702102
+Gąsawa,Kujawsko-pomorskie,PL-040416719023
+Trzcinica,Wielkopolskie,PL-023015708072
+Dąbie,Lubuskie,PL-020811402042
+Rząśnia,Łódzkie,PL-051011809052
+Tułowice,Opolskie,PL-031613209123
+Kawęczyn,Wielkopolskie,PL-023015827042
+Domaniów,Dolnośląskie,PL-030210415022
+Borowie,Mazowieckie,PL-071427103032
+Dobromierz,Dolnośląskie,PL-030210319032
+Kluczewsko,Świętokrzyskie,PL-052615313012
+Dąbrowa Biskupia,Kujawsko-pomorskie,PL-040416707022
+Moszczenica,Małopolskie,PL-011212205072
+Sejny,Podlaskie,PL-062013909011
+Gostycyn,Kujawsko-pomorskie,PL-040416816022
+Świedziebnia,Kujawsko-pomorskie,PL-040410702092
+Jedwabne,Podlaskie,PL-062013807013
+Dobre,Kujawsko-pomorskie,PL-040410811032
+Bukowiec,Kujawsko-pomorskie,PL-040416814012
+Solec-Zdrój,Świętokrzyskie,PL-052615301052
+Lisewo,Kujawsko-pomorskie,PL-040410704042
+Janów Podlaski,Lubelskie,PL-060610901052
+Płoniawy-Bramura,Mazowieckie,PL-071422611062
+Gródek,Podlaskie,PL-062013702042
+Brzuze,Kujawsko-pomorskie,PL-040410712022
+Pniewy,Mazowieckie,PL-071427306092
+Zakrzewo,Wielkopolskie,PL-023016031072
+Karniewo,Mazowieckie,PL-071422611032
+Książ Wielki,Małopolskie,PL-011212008043
+Smętowo Graniczne,Pomorskie,PL-042214213112
+Udanin,Dolnośląskie,PL-030210418052
+Zagrodno,Dolnośląskie,PL-030210126052
+Panki,Śląskie,PL-012414606062
+Szlichtyngowa,Lubuskie,PL-020811412023
+Przybiernów,Zachodniopomorskie,PL-023216604062
+Czerniewice,Łódzkie,PL-051011716042
+Rudnik,Śląskie,PL-012414911082
+Stary Zamość,Lubelskie,PL-060611020112
+Trzcińsko-Zdrój,Zachodniopomorskie,PL-023216606083
+Czermin,Wielkopolskie,PL-023015720022
+Łączna,Świętokrzyskie,PL-052615210032
+Żółkiewka,Lubelskie,PL-060611006112
+Drzycim,Kujawsko-pomorskie,PL-040416814032
+Tczów,Mazowieckie,PL-071422736042
+Serniki,Lubelskie,PL-060611108122
+Turośl,Podlaskie,PL-062013806062
+Pakosław,Wielkopolskie,PL-023015922042
+Żytno,Łódzkie,PL-051011712142
+Lipnik,Świętokrzyskie,PL-052615306032
+Mokobody,Mazowieckie,PL-071427126042
+Garbatka-Letnisko,Mazowieckie,PL-071422707012
+Rusiec,Łódzkie,PL-051011701062
+Horodło,Lubelskie,PL-060611004032
+Gronowo Elbląskie,Warmińsko-mazurskie,PL-042815404032
+Czarny Bór,Dolnośląskie,PL-030210321042
+Ostrowite,Wielkopolskie,PL-023015823042
+Stężyca,Lubelskie,PL-060611216052
+Miłomłyn,Warmińsko-mazurskie,PL-042815415073
+Brodnica,Wielkopolskie,PL-023016126012
+Zabór,Lubuskie,PL-020811409092
+Ceków-Kolonia,Wielkopolskie,PL-023015707032
+Łagów,Lubuskie,PL-020811408022
+Olszanka,Opolskie,PL-031613101062
+Czerwin,Mazowieckie,PL-071422615032
+Mniszków,Łódzkie,PL-051011707032
+Ostroróg,Wielkopolskie,PL-023016124053
+Skierbieszów,Lubelskie,PL-060611020102
+Regimin,Mazowieckie,PL-071422502082
+Zatory,Mazowieckie,PL-071422524072
+Suchożebry,Mazowieckie,PL-071427126102
+Spytkowice,Małopolskie,PL-011216911132
+Wierzbica,Lubelskie,PL-060611003122
+Pierzchnica,Świętokrzyskie,PL-052615204153
+Stepnica,Zachodniopomorskie,PL-023216604073
+Nagłowice,Świętokrzyskie,PL-052615302042
+Zadzim,Łódzkie,PL-051011811062
+Pogorzela,Wielkopolskie,PL-023015904063
+Olszanica,Podkarpackie,PL-061813321042
+Kruszyna,Śląskie,PL-012414604082
+Szczawin Kościelny,Mazowieckie,PL-071427004052
+Osjaków,Łódzkie,PL-051011817053
+Miastków Kościelny,Mazowieckie,PL-071427103082
+Mycielin,Wielkopolskie,PL-023015707072
+Dołhobyczów,Lubelskie,PL-060611004022
+Mielno,Zachodniopomorskie,PL-023216309053
+Przykona,Wielkopolskie,PL-023015827062
+Głowno,Łódzkie,PL-051011520052
+Jedlina-Zdrój,Dolnośląskie,PL-030210321021
+Słońsk,Lubuskie,PL-020811307032
+Repki,Mazowieckie,PL-071427129062
+Drawno,Zachodniopomorskie,PL-023216402033
+Rachanie,Lubelskie,PL-060611018072
+Rogowo,Kujawsko-pomorskie,PL-040410712032
+Ładzice,Łódzkie,PL-051011712092
+Dobryszyce,Łódzkie,PL-051011712022
+Goniądz,Podlaskie,PL-062013908013
+Tarłów,Świętokrzyskie,PL-052615306072
+Krzeszyce,Lubuskie,PL-020811307012
+Dziadowa Kłoda,Dolnośląskie,PL-030210414042
+Rajgród,Podlaskie,PL-062013904043
+Bartniczka,Kujawsko-pomorskie,PL-040410702062
+Działoszyce,Świętokrzyskie,PL-052615308013
+Rogów,Łódzkie,PL-051011521052
+Solec nad Wisłą,Mazowieckie,PL-071422709063
+Cieszków,Dolnośląskie,PL-030210413012
+Łomazy,Lubelskie,PL-060610901092
+Jeziora Wielkie,Kujawsko-pomorskie,PL-040416709022
+Kowale Oleckie,Warmińsko-mazurskie,PL-042815513032
+Lututów,Łódzkie,PL-051011818043
+Człopa,Zachodniopomorskie,PL-023216417023
+Nowe Miasto,Mazowieckie,PL-071422520083
+Łaziska,Lubelskie,PL-060611212042
+Szumowo,Podlaskie,PL-062013814042
+Bieżuń,Mazowieckie,PL-071422537013
+Secemin,Świętokrzyskie,PL-052615313052
+Baćkowice,Świętokrzyskie,PL-052615306012
+Łękawica,Śląskie,PL-012414417072
+Domaniewice,Łódzkie,PL-051011905042
+Lelów,Śląskie,PL-012414604092
+Sztabin,Podlaskie,PL-062013901072
+Niechlów,Dolnośląskie,PL-030210204032
+Gać,Podkarpackie,PL-061813414032
+Troszyn,Mazowieckie,PL-071422615112
+Dobrzany,Zachodniopomorskie,PL-023216614033
+Białośliwie,Wielkopolskie,PL-023016019022
+Przeworno,Dolnośląskie,PL-030210417032
+Płużnica,Kujawsko-pomorskie,PL-040410717042
+Krzywcza,Podkarpackie,PL-061813413052
+Łaskarzew,Mazowieckie,PL-071427103021
+Topólka,Kujawsko-pomorskie,PL-040410811072
+Przelewice,Zachodniopomorskie,PL-023216412042
+Wisznice,Lubelskie,PL-060610901182
+Liniewo,Pomorskie,PL-042217206052
+Stoczek,Mazowieckie,PL-071427133082
+Świercze,Mazowieckie,PL-071422524052
+Kampinos,Mazowieckie,PL-071413032032
+Sośno,Kujawsko-pomorskie,PL-040416813032
+Lipowiec Kościelny,Mazowieckie,PL-071422513032
+Tuczno,Zachodniopomorskie,PL-023216417043
+Knyszyn,Podlaskie,PL-062013908043
+Potok Wielki,Lubelskie,PL-060611205072
+Rojewo,Kujawsko-pomorskie,PL-040416707082
+Tłuchowo,Kujawsko-pomorskie,PL-040410808082
+Siemkowice,Łódzkie,PL-051011809062
+Stupsk,Mazowieckie,PL-071422513062
+Fajsławice,Lubelskie,PL-060611006022
+Dziemiany,Pomorskie,PL-042217206022
+Obrzycko,Wielkopolskie,PL-023016124042
+Komarów-Osada,Lubelskie,PL-060611020032
+Kozłów,Małopolskie,PL-011212008032
+Żarnowiec,Śląskie,PL-012415016102
+Brochów,Mazowieckie,PL-071427328022
+Gizałki,Wielkopolskie,PL-023015720042
+Radzyń Chełmiński,Kujawsko-pomorskie,PL-040410706043
+Waganiec,Kujawsko-pomorskie,PL-040410801082
+Adamów,Lubelskie,PL-060611020012
+Kotla,Dolnośląskie,PL-030210203042
+Michałów,Świętokrzyskie,PL-052615308032
+Siekierczyn,Dolnośląskie,PL-030210110072
+Gowarczów,Świętokrzyskie,PL-052615205023
+Mały Płock,Podlaskie,PL-062013806042
+Sulmierzyce,Łódzkie,PL-051011809082
+Chocz,Wielkopolskie,PL-023015720013
+Stara Kornica,Mazowieckie,PL-071427110062
+Sorkwity,Warmińsko-mazurskie,PL-042815610052
+Ostrówek,Łódzkie,PL-051011817062
+Rzeczyca,Łódzkie,PL-051011716082
+Lipsk,Podlaskie,PL-062013901043
+Łukta,Warmińsko-mazurskie,PL-042815415042
+Czarnożyły,Łódzkie,PL-051011817022
+Platerów,Mazowieckie,PL-071427110042
+Besko,Podkarpackie,PL-061813317022
+Dmosin,Łódzkie,PL-051011521032
+Wola Mysłowska,Lubelskie,PL-060611211112
+Oksa,Świętokrzyskie,PL-052615302052
+Dąbrowa,Kujawsko-pomorskie,PL-040416709012
+Szydłów,Świętokrzyskie,PL-052615312083
+Stare Pole,Pomorskie,PL-042214209082
+Horyniec-Zdrój,Podkarpackie,PL-061813409032
+Nowa Brzeźnica,Łódzkie,PL-051011809032
+Bierzwnik,Zachodniopomorskie,PL-023216402012
+Kluki,Łódzkie,PL-051011701052
+Brąszewice,Łódzkie,PL-051011814032
+Lubanie,Kujawsko-pomorskie,PL-040410818102
+Polanka Wielka,Małopolskie,PL-011212313072
+Obryte,Mazowieckie,PL-071422524022
+Skórcz,Pomorskie,PL-042214213102
+Kijewo Królewskie,Kujawsko-pomorskie,PL-040410704032
+Radziłów,Podlaskie,PL-062013904032
+Gielniów,Mazowieckie,PL-071422723023
+Stare Bogaczowice,Dolnośląskie,PL-030210321072
+Grzmiąca,Zachodniopomorskie,PL-023216415052
+Wielgomłyny,Łódzkie,PL-051011712132
+Kije,Świętokrzyskie,PL-052615308022
+Siemień,Lubelskie,PL-060610913062
+Jaświły,Podlaskie,PL-062013908032
+Radziejów,Kujawsko-pomorskie,PL-040410811062
+Kodrąb,Łódzkie,PL-051011712072
+Kuczbork-Osada,Mazowieckie,PL-071422537022
+Góra Świętej Małgorzaty,Łódzkie,PL-051011904032
+Niegosławice,Lubuskie,PL-020811410062
+Kazanów,Mazowieckie,PL-071422736012
+Aleksandrów,Łódzkie,PL-051011710012
+Grębków,Mazowieckie,PL-071427133022
+Kobiele Wielkie,Łódzkie,PL-051011712062
+Pielgrzymka,Dolnośląskie,PL-030210126032
+Różan,Mazowieckie,PL-071422611073
+Marciszów,Dolnośląskie,PL-030210107042
+Złota,Świętokrzyskie,PL-052615308052
+Gnojno,Świętokrzyskie,PL-052615301022
+Kęsowo,Kujawsko-pomorskie,PL-040416816032
+Suchy Dąb,Pomorskie,PL-042214004072
+Lichnowy,Pomorskie,PL-042214209032
+Jawornik Polski,Podkarpackie,PL-061813414043
+Karpacz,Dolnośląskie,PL-030210106011
+Wąwolnica,Lubelskie,PL-060611214102
+Paszowice,Dolnośląskie,PL-030210105052
+Zbójno,Kujawsko-pomorskie,PL-040410705062
+Szydłowo,Mazowieckie,PL-071422513082
+Tuchomie,Pomorskie,PL-042214101102
+Wilków,Opolskie,PL-031613106052
+Paradyż,Łódzkie,PL-051011707052
+Jejkowice,Śląskie,PL-012414912032
+Młynary,Warmińsko-mazurskie,PL-042815404063
+Mucharz,Małopolskie,PL-011212318052
+Pszczew,Lubuskie,PL-020811303042
+Ujsoły,Śląskie,PL-012414417142
+Strzelce Wielkie,Łódzkie,PL-051011809072
+Lubrza,Opolskie,PL-031613110032
+Wilków,Lubelskie,PL-060611212072
+Imielno,Świętokrzyskie,PL-052615302012
+Lgota Wielka,Łódzkie,PL-051011712082
+Rokietnica,Podkarpackie,PL-061813404092
+Zwierzyn,Lubuskie,PL-020811306052
+Wodynie,Mazowieckie,PL-071427126122
+Olszówka,Wielkopolskie,PL-023015809092
+Komańcza,Podkarpackie,PL-061813317042
+Słubice,Mazowieckie,PL-071427019112
+Moryń,Zachodniopomorskie,PL-023216606063
+Parysów,Mazowieckie,PL-071427103092
+Krzeszów,Podkarpackie,PL-061813612042
+Leśna Podlaska,Lubelskie,PL-060610901082
+Ojrzeń,Mazowieckie,PL-071422502062
+Sarnaki,Mazowieckie,PL-071427110052
+Ruda-Huta,Lubelskie,PL-060611003092
+Kołczygłowy,Pomorskie,PL-042214101042
+Wysokie,Lubelskie,PL-060611109152
+Krzczonów,Lubelskie,PL-060611109092
+Urszulin,Lubelskie,PL-060610919052
+Kamień,Lubelskie,PL-060611003062
+Jabłonna Lacka,Mazowieckie,PL-071427129042
+Suchań,Zachodniopomorskie,PL-023216614113
+Górzyca,Lubuskie,PL-020811305022
+Lniano,Kujawsko-pomorskie,PL-040416814052
+Filipów,Podlaskie,PL-062013912022
+Rzeczniów,Mazowieckie,PL-071422709042
+Bądkowo,Kujawsko-pomorskie,PL-040410801052
+Radłów,Opolskie,PL-031613208052
+Janowice Wielkie,Dolnośląskie,PL-030210106052
+Uchanie,Lubelskie,PL-060611004072
+Sułów,Lubelskie,PL-060611020122
+Grabów nad Pilicą,Mazowieckie,PL-071422707042
+Zalesie,Lubelskie,PL-060610901192
+Czemierniki,Lubelskie,PL-060610915033
+Wierzchowo,Zachodniopomorskie,PL-023216403052
+Złoty Stok,Dolnośląskie,PL-030210324073
+Dalików,Łódzkie,PL-051011811012
+Czarnocin,Łódzkie,PL-051011710022
+Obsza,Lubelskie,PL-060611002102
+Adamówka,Podkarpackie,PL-061813414022
+Zawichost,Świętokrzyskie,PL-052615309093
+Krzyżanów,Łódzkie,PL-051011902052
+Rejowiec Fabryczny,Lubelskie,PL-060611003011
+Winnica,Mazowieckie,PL-071422524062
+Duszniki-Zdrój,Dolnośląskie,PL-030210308011
+Siemyśl,Zachodniopomorskie,PL-023216308062
+Stary Dzików,Podkarpackie,PL-061813409072
+Papowo Biskupie,Kujawsko-pomorskie,PL-040410704052
+Miastkowo,Podlaskie,PL-062013807032
+Borkowice,Mazowieckie,PL-071422723012
+Kondratowice,Dolnośląskie,PL-030210417022
+Szczutowo,Mazowieckie,PL-071427027062
+Kocierzew Południowy,Łódzkie,PL-051011905062
+Mściwojów,Dolnośląskie,PL-030210105042
+Potworów,Mazowieckie,PL-071422723052
+Rusinów,Mazowieckie,PL-071422723072
+Rogóźno,Kujawsko-pomorskie,PL-040410706052
+Raciąż,Mazowieckie,PL-071422520021
+Świerzno,Zachodniopomorskie,PL-023216607052
+Lutocin,Mazowieckie,PL-071422537042
+Świeradów-Zdrój,Dolnośląskie,PL-030210110021
+Puńsk,Podlaskie,PL-062013909042
+Wąsewo,Mazowieckie,PL-071422616102
+Ulhówek,Lubelskie,PL-060611018132
+Radomin,Kujawsko-pomorskie,PL-040410705052
+Fałków,Świętokrzyskie,PL-052615205012
+Łukowa,Lubelskie,PL-060611002092
+Klukowo,Podlaskie,PL-062013813042
+Rejowiec Fabryczny,Lubelskie,PL-060611003082
+Nowy Duninów,Mazowieckie,PL-071427019092
+Cedynia,Zachodniopomorskie,PL-023216606023
+Zbójna,Podlaskie,PL-062013807092
+Łubnice,Świętokrzyskie,PL-052615312022
+Cielądz,Łódzkie,PL-051011913032
+Stare Kurowo,Lubuskie,PL-020811306032
+Przedecz,Wielkopolskie,PL-023015809113
+Trzcianne,Podlaskie,PL-062013908072
+Słupia,Świętokrzyskie,PL-052615302072
+Wleń,Dolnośląskie,PL-030210112053
+Bledzew,Lubuskie,PL-020811303012
+Miedzichowo,Wielkopolskie,PL-023015915032
+Nowodwór,Lubelskie,PL-060611216032
+Bolimów,Łódzkie,PL-051011915013
+Goraj,Lubelskie,PL-060611002063
+Czastary,Łódzkie,PL-051011818022
+Masłowice,Łódzkie,PL-051011712102
+Dąbrówno,Warmińsko-mazurskie,PL-042815415022
+Wyszki,Podlaskie,PL-062013803082
+Bolesławiec,Łódzkie,PL-051011818013
+Markusy,Warmińsko-mazurskie,PL-042815404042
+Kowal,Kujawsko-pomorskie,PL-040410818092
+Nowogród,Podlaskie,PL-062013807043
+Ciechocin,Kujawsko-pomorskie,PL-040410705022
+Dobra,Zachodniopomorskie,PL-023216418013
+Łubnice,Łódzkie,PL-051011818052
+Szypliszki,Podlaskie,PL-062013912082
+Bejsce,Świętokrzyskie,PL-052615303012
+Mietków,Dolnośląskie,PL-030210423062
+Abramów,Lubelskie,PL-060611108022
+Parchowo,Pomorskie,PL-042214101072
+Tereszpol,Lubelskie,PL-060611002132
+Komarówka Podlaska,Lubelskie,PL-060610915052
+Sejny,Podlaskie,PL-062013909052
+Sławoborze,Zachodniopomorskie,PL-023216416052
+Boćki,Podlaskie,PL-062013803042
+Podkowa Leśna,Mazowieckie,PL-071413005021
+Radzanów,Mazowieckie,PL-071422701032
+Osiek,Kujawsko-pomorskie,PL-040410702082
+Szreńsk,Mazowieckie,PL-071422513072
+Andrzejewo,Mazowieckie,PL-071422616022
+Kiełczygłów,Łódzkie,PL-051011809022
+Gniewoszów,Mazowieckie,PL-071422707032
+Książki,Kujawsko-pomorskie,PL-040410717032
+Gaworzyce,Dolnośląskie,PL-030210216022
+Tarnawatka,Lubelskie,PL-060611018092
+Perzów,Wielkopolskie,PL-023015708052
+Zawidów,Dolnośląskie,PL-030210125011
+Grodzisk,Podlaskie,PL-062013810042
+Wojciechowice,Świętokrzyskie,PL-052615306082
+Konstantynów,Lubelskie,PL-060610901072
+Lipusz,Pomorskie,PL-042217206062
+Sadowie,Świętokrzyskie,PL-052615306062
+Oleśnica,Świętokrzyskie,PL-052615312033
+Siennica Różana,Lubelskie,PL-060611006102
+Polska Cerekiew,Opolskie,PL-031613203052
+Ustronie Morskie,Zachodniopomorskie,PL-023216308072
+Rościszewo,Mazowieckie,PL-071427027042
+Mirów,Mazowieckie,PL-071422730032
+Wodzierady,Łódzkie,PL-051011803052
+Borzechów,Lubelskie,PL-060611109022
+Sieciechów,Mazowieckie,PL-071422707072
+Górzno,Kujawsko-pomorskie,PL-040410702053
+Wijewo,Wielkopolskie,PL-023015913062
+Brzozie,Kujawsko-pomorskie,PL-040410702042
+Wietrzychowice,Małopolskie,PL-011212416122
+Wądroże Wielkie,Dolnośląskie,PL-030210105062
+Strzelce,Łódzkie,PL-051011902102
+Janów,Podlaskie,PL-062013711022
+Trzeszczany,Lubelskie,PL-060611004062
+Krypno,Podlaskie,PL-062013908052
+Świątki,Warmińsko-mazurskie,PL-042815614122
+Świecie nad Osą,Kujawsko-pomorskie,PL-040410706062
+Biszcza,Lubelskie,PL-060611002042
+Ostrówek,Lubelskie,PL-060611108112
+Wąpielsk,Kujawsko-pomorskie,PL-040410712062
+Smyków,Świętokrzyskie,PL-052615205072
+Karnice,Zachodniopomorskie,PL-023216605032
+Serokomla,Lubelskie,PL-060611211062
+Mieleszyn,Wielkopolskie,PL-023015803072
+Stare Czarnowo,Zachodniopomorskie,PL-023216606072
+Stubno,Podkarpackie,PL-061813413092
+Rytro,Małopolskie,PL-011212210152
+Osieck,Mazowieckie,PL-071412917063
+Inowłódz,Łódzkie,PL-051011716053
+Rymań,Zachodniopomorskie,PL-023216308052
+Wielkie Oczy,Podkarpackie,PL-061813409082
+Szczaniec,Lubuskie,PL-020811408042
+Świnice Warckie,Łódzkie,PL-051011904072
+Hajnówka,Podlaskie,PL-062013805062
+Kuźnica,Podlaskie,PL-062013711052
+Studzienice,Pomorskie,PL-042214101082
+Wieczfnia Kościelna,Mazowieckie,PL-071422513092
+Daszyna,Łódzkie,PL-051011904022
+Górowo Iławeckie,Warmińsko-mazurskie,PL-042815601021
+Dąbrowa Zielona,Śląskie,PL-012414604022
+Wizna,Podlaskie,PL-062013807082
+Rychtal,Wielkopolskie,PL-023015708063
+Wola Uhruska,Lubelskie,PL-060610919072
+Rewal,Zachodniopomorskie,PL-023216605072
+Tuczępy,Świętokrzyskie,PL-052615301072
+Łopiennik Górny,Lubelskie,PL-060611006072
+Dębowa Kłoda,Lubelskie,PL-060610913012
+Stary Lubotyń,Mazowieckie,PL-071422616082
+Lubrza,Lubuskie,PL-020811408012
+Miedzna,Mazowieckie,PL-071427133062
+Czarnocin,Świętokrzyskie,PL-052615303022
+Orchowo,Wielkopolskie,PL-023015823032
+Dziwnów,Zachodniopomorskie,PL-023216607013
+Janowiec,Lubelskie,PL-060611214032
+Baranów,Lubelskie,PL-060611214022
+Nowe Piekuty,Podlaskie,PL-062013813072
+Gzy,Mazowieckie,PL-071422524012
+Grabowiec,Lubelskie,PL-060611020022
+Stara Dąbrowa,Zachodniopomorskie,PL-023216614092
+Przyrów,Śląskie,PL-012414604143
+Krasnopol,Podlaskie,PL-062013909032
+Konopnica,Łódzkie,PL-051011817032
+Szelków,Mazowieckie,PL-071422611102
+Świekatowo,Kujawsko-pomorskie,PL-040416814102
+Jabłoń,Lubelskie,PL-060610913022
+Kraszewice,Wielkopolskie,PL-023015718052
+Trzebielino,Pomorskie,PL-042214101092
+Borzytuchom,Pomorskie,PL-042214101012
+Ślemień,Śląskie,PL-012414417122
+Telatyn,Lubelskie,PL-060611018102
+Brańsk,Podlaskie,PL-062013803021
+Brojce,Zachodniopomorskie,PL-023216605012
+Gołymin-Ośrodek,Mazowieckie,PL-071422502042
+Czernice Borowe,Mazowieckie,PL-071422622032
+Rychliki,Warmińsko-mazurskie,PL-042815404082
+Jastarnia,Pomorskie,PL-042214011023
+Domaszowice,Opolskie,PL-031613106012
+Bielany,Mazowieckie,PL-071427129022
+Brzeźnica,Lubuskie,PL-020811410032
+Nurzec-Stacja,Podlaskie,PL-062013810072
+Jedwabno,Warmińsko-mazurskie,PL-042815617032
+Pałecznica,Małopolskie,PL-011212014042
+Dominowo,Wielkopolskie,PL-023016125012
+Zębowice,Opolskie,PL-031613208072
+Skórcz,Pomorskie,PL-042214213021
+Kraśniczyn,Lubelskie,PL-060611006062
+Stary Dzierzgoń,Pomorskie,PL-042214216032
+Wojcieszów,Dolnośląskie,PL-030210126011
+Miłki,Warmińsko-mazurskie,PL-042815506062
+Wilczyce,Świętokrzyskie,PL-052615309082
+Rybno,Mazowieckie,PL-071427328062
+Wojsławice,Lubelskie,PL-060611003132
+Sztutowo,Pomorskie,PL-042214010052
+Nowy Kawęczyn,Łódzkie,PL-051011915072
+Żukowice,Dolnośląskie,PL-030210203062
+Odrzywół,Mazowieckie,PL-071422723043
+Sterdyń,Mazowieckie,PL-071427129092
+Hańsk,Lubelskie,PL-060610919032
+Srokowo,Warmińsko-mazurskie,PL-042815608062
+Milanów,Lubelskie,PL-060610913032
+Pęczniew,Łódzkie,PL-051011811022
+Dzierzążnia,Mazowieckie,PL-071422520052
+Krotoszyce,Dolnośląskie,PL-030210209032
+Zakrzewo,Kujawsko-pomorskie,PL-040410801092
+Mikołajki Pomorskie,Pomorskie,PL-042214216022
+Morzeszczyn,Pomorskie,PL-042214214032
+Ręczno,Łódzkie,PL-051011710072
+Rzeczenica,Pomorskie,PL-042217203072
+Boronów,Śląskie,PL-012414507022
+Bytoń,Kujawsko-pomorskie,PL-040410811022
+Świętajno,Warmińsko-mazurskie,PL-042815513052
+Siedlisko,Lubuskie,PL-020811404082
+Słaboszów,Małopolskie,PL-011212008072
+Nowogródek Pomorski,Zachodniopomorskie,PL-023216410052
+Stare Juchy,Warmińsko-mazurskie,PL-042815505052
+Grudusk,Mazowieckie,PL-071422502052
+Wąsosz,Podlaskie,PL-062013904062
+Lubomino,Warmińsko-mazurskie,PL-042815609042
+Baruchowo,Kujawsko-pomorskie,PL-040410818022
+Pakosławice,Opolskie,PL-031613107082
+Mędrzechów,Małopolskie,PL-011212404042
+Leśniowice,Lubelskie,PL-060611003072
+Kowal,Kujawsko-pomorskie,PL-040410818011
+Jordanów Śląski,Dolnośląskie,PL-030210423032
+Krasne,Mazowieckie,PL-071422622052
+Rąbino,Zachodniopomorskie,PL-023216416042
+Milejewo,Warmińsko-mazurskie,PL-042815404052
+Sabnie,Mazowieckie,PL-071427129072
+Zaręby Kościelne,Mazowieckie,PL-071422616112
+Krzęcin,Zachodniopomorskie,PL-023216402042
+Kodeń,Lubelskie,PL-060610901062
+Lipinki Łużyckie,Lubuskie,PL-020811411052
+Pacyna,Mazowieckie,PL-071427004032
+Krzynowłoga Mała,Mazowieckie,PL-071422622062
+Miłoradz,Pomorskie,PL-042214209062
+Grabowo,Podlaskie,PL-062013806022
+Narew,Podlaskie,PL-062013805082
+Kolsko,Lubuskie,PL-020811404032
+Skomlin,Łódzkie,PL-051011817082
+Nowe Ostrowy,Łódzkie,PL-051011902082
+Gorzków,Lubelskie,PL-060611006032
+Chrzypsko Wielkie,Wielkopolskie,PL-023015914012
+Radowo Małe,Zachodniopomorskie,PL-023216418032
+Banie Mazurskie,Warmińsko-mazurskie,PL-042815518012
+Łęki Szlacheckie,Łódzkie,PL-051011710052
+Rybczewice,Lubelskie,PL-060611117042
+Radziemice,Małopolskie,PL-011212014062
+Boniewo,Kujawsko-pomorskie,PL-040410818032
+Aleksandrów,Lubelskie,PL-060611002022
+Siemiątkowo,Mazowieckie,PL-071422537052
+Bojadła,Lubuskie,PL-020811409022
+Wieliczki,Warmińsko-mazurskie,PL-042815513062
+Bobowo,Pomorskie,PL-042214213042
+Gręboszów,Małopolskie,PL-011212404032
+Raciążek,Kujawsko-pomorskie,PL-040410801072
+Trzebiechów,Lubuskie,PL-020811409082
+Jarczów,Lubelskie,PL-060611018032
+Kamiennik,Opolskie,PL-031613107022
+Będków,Łódzkie,PL-051011716022
+Jeżów,Łódzkie,PL-051011521043
+Brody,Lubuskie,PL-020811411033
+Koczała,Pomorskie,PL-042217203052
+Bałtów,Świętokrzyskie,PL-052615207022
+Narewka,Podlaskie,PL-062013805092
+Jeleniewo,Podlaskie,PL-062013912032
+Żelechlinek,Łódzkie,PL-051011716112
+Koneck,Kujawsko-pomorskie,PL-040410801062
+Lipce Reymontowskie,Łódzkie,PL-051011915052
+Klwów,Mazowieckie,PL-071422723032
+Ińsko,Zachodniopomorskie,PL-023216614053
+Bełżec,Lubelskie,PL-060611018022
+Smołdzino,Pomorskie,PL-042214112092
+Kiernozia,Łódzkie,PL-051011905053
+Frombork,Warmińsko-mazurskie,PL-042815402033
+Poświętne,Podlaskie,PL-062013702082
+Kiwity,Warmińsko-mazurskie,PL-042815609022
+Świerczów,Opolskie,PL-031613106042
+Batorz,Lubelskie,PL-060611205012
+Korycin,Podlaskie,PL-062013711032
+Baligród,Podkarpackie,PL-061813321012
+Lubniewice,Lubuskie,PL-020811307023
+Sidra,Podlaskie,PL-062013711072
+Miasteczko Krajeńskie,Wielkopolskie,PL-023016019053
+Bobrowice,Lubuskie,PL-020811402022
+Warnice,Zachodniopomorskie,PL-023216412062
+Łeba,Pomorskie,PL-042214108021
+Witonia,Łódzkie,PL-051011904082
+Czarna Woda,Pomorskie,PL-042214213013
+Krupski Młyn,Śląskie,PL-012414513052
+Przewóz,Lubuskie,PL-020811411072
+Bobrowniki,Kujawsko-pomorskie,PL-040410808023
+Krynice,Lubelskie,PL-060611018042
+Tarnówka,Wielkopolskie,PL-023016031062
+Bakałarzewo,Podlaskie,PL-062013912012
+Uścimów,Lubelskie,PL-060611108132
+Pozezdrze,Warmińsko-mazurskie,PL-042815519022
+Opatowiec,Świętokrzyskie,PL-052615303043
+Słupia Konecka,Świętokrzyskie,PL-052615205062
+Dębowa Łąka,Kujawsko-pomorskie,PL-040410717022
+Kobylin-Borzymy,Podlaskie,PL-062013813052
+Kruklanki,Warmińsko-mazurskie,PL-042815506052
+Ostaszewo,Pomorskie,PL-042214010032
+Bielice,Zachodniopomorskie,PL-023216412012
+Janowiec Kościelny,Warmińsko-mazurskie,PL-042815611012
+Kulesze Kościelne,Podlaskie,PL-062013813062
+Sypniewo,Mazowieckie,PL-071422611092
+Radzanów,Mazowieckie,PL-071422513042
+Osina,Zachodniopomorskie,PL-023216604052
+Poświętne,Łódzkie,PL-051011707062
+Starcza,Śląskie,PL-012414604162
+Tuplice,Lubuskie,PL-020811411092
+Chąśno,Łódzkie,PL-051011905032
+Marianowo,Zachodniopomorskie,PL-023216614082
+Markuszów,Lubelskie,PL-060611214072
+Nowinka,Podlaskie,PL-062013901052
+Ciepłowody,Dolnośląskie,PL-030210324022
+Ruda Maleniecka,Świętokrzyskie,PL-052615205052
+Goszczyn,Mazowieckie,PL-071427306042
+Białopole,Lubelskie,PL-060611003022
+Ułęż,Lubelskie,PL-060611216062
+Chodów,Wielkopolskie,PL-023015809032
+Hel,Pomorskie,PL-042214011011
+Chrostkowo,Kujawsko-pomorskie,PL-040410808032
+Joniec,Mazowieckie,PL-071422520062
+Kowiesy,Łódzkie,PL-051011915042
+Przesmyki,Mazowieckie,PL-071427126072
+Żmudź,Lubelskie,PL-060611003142
+Kolno,Warmińsko-mazurskie,PL-042815614082
+Przerośl,Podlaskie,PL-062013912042
+Gawłuszowice,Podkarpackie,PL-061813611042
+Tuczna,Lubelskie,PL-060610901172
+Boleszkowice,Zachodniopomorskie,PL-023216410022
+Dzierzgowo,Mazowieckie,PL-071422513022
+Klonowa,Łódzkie,PL-051011814072
+Olszanka,Mazowieckie,PL-071427110032
+Szudziałowo,Podlaskie,PL-062013711102
+Gozdnica,Lubuskie,PL-020811410011
+Godkowo,Warmińsko-mazurskie,PL-042815404022
+Maszewo,Lubuskie,PL-020811402072
+Sulmierzyce,Wielkopolskie,PL-023015712011
+Jemielno,Dolnośląskie,PL-030210204022
+Rokitno,Lubelskie,PL-060610901122
+Rudnik,Lubelskie,PL-060611006092
+Osieczna,Pomorskie,PL-042214213072
+Krynki,Podlaskie,PL-062013711043
+Chrzanów,Lubelskie,PL-060611205022
+Wapno,Wielkopolskie,PL-023016028062
+Wyśmierzyce,Mazowieckie,PL-071422701063
+Czeremcha,Podlaskie,PL-062013805032
+Zakrzew,Lubelskie,PL-060611109162
+Dubeninki,Warmińsko-mazurskie,PL-042815518022
+Huszlew,Mazowieckie,PL-071427110012
+Bolesław,Małopolskie,PL-011212404012
+Strachówka,Mazowieckie,PL-071412934102
+Brzeżno,Zachodniopomorskie,PL-023216416022
+Brok,Mazowieckie,PL-071422616043
+Wilczęta,Warmińsko-mazurskie,PL-042815402072
+Budry,Warmińsko-mazurskie,PL-042815519012
+Godzianów,Łódzkie,PL-051011915032
+Czerwonka,Mazowieckie,PL-071422611022
+Moskorzew,Świętokrzyskie,PL-052615313032
+Irządze,Śląskie,PL-012415016032
+Janowo,Warmińsko-mazurskie,PL-042815611022
+Dziadkowice,Podlaskie,PL-062013810032
+Perlejewo,Podlaskie,PL-062013810082
+Słupia,Łódzkie,PL-051011915092
+Hanna,Lubelskie,PL-060610919022
+Domanice,Mazowieckie,PL-071427126012
+Nur,Mazowieckie,PL-071422616062
+Giby,Podlaskie,PL-062013909022
+Jeziorzany,Lubelskie,PL-060611108042
+Zawady,Podlaskie,PL-062013702152
+Czajków,Wielkopolskie,PL-023015718012
+Jasionówka,Podlaskie,PL-062013908022
+Wierzbno,Mazowieckie,PL-071427133092
+Racławice,Małopolskie,PL-011212008062
+Rzewnie,Mazowieckie,PL-071422611082
+Ruja,Dolnośląskie,PL-030210209082
+Oporów,Łódzkie,PL-051011902092
+Orla,Podlaskie,PL-062013803062
+Obrzycko,Wielkopolskie,PL-023016124011
+Lelkowo,Warmińsko-mazurskie,PL-042815402042
+Boguty-Pianki,Mazowieckie,PL-071422616032
+Paprotnia,Mazowieckie,PL-071427126062
+Stoczek Łukowski,Lubelskie,PL-060611211021
+Kozielice,Zachodniopomorskie,PL-023216412022
+Czarna,Podkarpackie,PL-061813301032
+Płoskinia,Warmińsko-mazurskie,PL-042815402062
+Korczew,Mazowieckie,PL-071427126022
+Radków,Świętokrzyskie,PL-052615313042
+Bytnica,Lubuskie,PL-020811402032
+Płaska,Podlaskie,PL-062013901062
+Sosnowica,Lubelskie,PL-060610913072
+Konarzyny,Pomorskie,PL-042217202052
+Osiek,Pomorskie,PL-042214213082
+Sławatycze,Lubelskie,PL-060610901142
+Łęknica,Lubuskie,PL-020811411011
+Powidz,Wielkopolskie,PL-023015823052
+Czarnia,Mazowieckie,PL-071422615022
+Wyryki,Lubelskie,PL-060610919082
+Rutka-Tartak,Podlaskie,PL-062013912062
+Koszarawa,Śląskie,PL-012414417052
+Chotcza,Mazowieckie,PL-071422709012
+Łanięta,Łódzkie,PL-051011902072
+Nowy Dwór,Podlaskie,PL-062013711062
+Kołaki Kościelne,Podlaskie,PL-062013814022
+Sosnówka,Lubelskie,PL-060610901152
+Pęcław,Dolnośląskie,PL-030210203052
+Kleszczele,Podlaskie,PL-062013805073
+Dubienka,Lubelskie,PL-060611003052
+Wymiarki,Lubuskie,PL-020811410082
+Budziszewice,Łódzkie,PL-051011716032
+Jaśliska,Podkarpackie,PL-061813307102
+Rossosz,Lubelskie,PL-060610901132
+Białowieża,Podlaskie,PL-062013805022
+Mielnik,Podlaskie,PL-062013810052
+Lutowiska,Podkarpackie,PL-061813301052
+Wiżajny,Podlaskie,PL-062013912092
+Lewin Kłodzki,Dolnośląskie,PL-030210308092
+Tyrawa Wołoska,Podkarpackie,PL-061813317062
+Przytuły,Podlaskie,PL-062013807062
+Suraż,Podlaskie,PL-062013702103
+Ceranów,Mazowieckie,PL-071427129032
+Stary Brus,Lubelskie,PL-060610919042
+Dąbrowice,Łódzkie,PL-051011902033
+Czyże,Podlaskie,PL-062013805042
+Nieszawa,Kujawsko-pomorskie,PL-040410801031
+Regnów,Łódzkie,PL-051011913052
+Krempna,Podkarpackie,PL-061813305062
+Cisna,Podkarpackie,PL-061813321022
+Rudka,Podlaskie,PL-062013803072
+Młynarze,Mazowieckie,PL-071422611052
+Milejczyce,Podlaskie,PL-062013810062
+Nowe Warpno,Zachodniopomorskie,PL-023216611033
+Platerówka,Dolnośląskie,PL-030210110062
+Szulborze Wielkie,Mazowieckie,PL-071422616092
+Podedwórze,Lubelskie,PL-060610913052
+Dubicze Cerkiewne,Podlaskie,PL-062013805052
+Krynica Morska,Pomorskie,PL-042214010011
