@@ -1,0 +1,16 @@
+cod-ps-phl: Philippines - Subnational Population Statistics [2022-01-01T00:00:00 TO 2025-12-31T23:59:59]
+  PHL_AdminBoundaries_TabularData.xlsx XLSX https://data.humdata.org/dataset/5a466c38-32a2-47de-ba36-70530505df98/resource/5698ede3-f3bd-4df2-9722-5dfed31c2022/download/phl_adminboundaries_tabulardata.xls
+  phl_admpop_2022_2023_2024_2025_v2.xlsx XLSX https://data.humdata.org/dataset/5a466c38-32a2-47de-ba36-70530505df98/resource/ee2a8606-6328-42e6-8ecb-2d14c04bceb6/download/phl_admpop_2022_2023_2024_2025_v2.x
+  phl_admpop_adm0_2022.csv CSV https://data.humdata.org/dataset/5a466c38-32a2-47de-ba36-70530505df98/resource/76aa2e54-90f2-455a-9135-b2401c7fdeb1/download/phl_admpop_adm0_2022.csv
+  phl_admpop_adm1_2022.csv CSV https://data.humdata.org/dataset/5a466c38-32a2-47de-ba36-70530505df98/resource/f80291eb-3e22-4716-bc1a-b046de27d067/download/phl_admpop_adm1_2022.csv
+  phl_admpop_adm2_2022_v2.csv CSV https://data.humdata.org/dataset/5a466c38-32a2-47de-ba36-70530505df98/resource/04cad68c-f7fb-43b0-94bf-af78eea7f982/download/phl_admpop_adm2_2022_v2.csv
+  phl_admpop_adm0_2023.csv CSV https://data.humdata.org/dataset/5a466c38-32a2-47de-ba36-70530505df98/resource/433f52ce-9008-4d0c-bc0b-ba261c50e875/download/phl_admpop_adm0_2023.csv
+  phl_admpop_adm1_2023.csv CSV https://data.humdata.org/dataset/5a466c38-32a2-47de-ba36-70530505df98/resource/312f524e-5eb4-4f14-b049-842a6c28d681/download/phl_admpop_adm1_2023.csv
+  phl_admpop_adm2_2023_v2.csv CSV https://data.humdata.org/dataset/5a466c38-32a2-47de-ba36-70530505df98/resource/9674dcdc-066d-40f0-ae8f-bee6763d5d0b/download/phl_admpop_adm2_2023_v2.csv
+  phl_admpop_adm0_2024.csv CSV https://data.humdata.org/dataset/5a466c38-32a2-47de-ba36-70530505df98/resource/171c1c5e-5bd9-4c74-882c-2418955f04cb/download/phl_admpop_adm0_2024.csv
+  phl_admpop_adm1_2024_v1.csv CSV https://data.humdata.org/dataset/5a466c38-32a2-47de-ba36-70530505df98/resource/52471b46-d7df-46be-810a-d8bb6a56ff4f/download/phl_admpop_adm1_2024_v1.csv
+  phl_admpop_adm2_2024_v2.csv CSV https://data.humdata.org/dataset/5a466c38-32a2-47de-ba36-70530505df98/resource/75f203a5-f8e8-48e0-b07d-cc603e143893/download/phl_admpop_adm2_2024_v2.csv
+  phl_admpop_adm0_2025.csv CSV https://data.humdata.org/dataset/5a466c38-32a2-47de-ba36-70530505df98/resource/1a38ff94-a583-47c6-86cc-42477d53c682/download/phl_admpop_adm0_2025.csv
+  phl_admpop_adm1_2025.csv CSV https://data.humdata.org/dataset/5a466c38-32a2-47de-ba36-70530505df98/resource/82b35f27-1df3-4950-b492-352cbd7b124f/download/phl_admpop_adm1_2025.csv
+  phl_admpop_adm2_2025_v2.csv CSV https://data.humdata.org/dataset/5a466c38-32a2-47de-ba36-70530505df98/resource/13940b8a-0806-4022-a4ed-844c488efc7a/download/phl_admpop_adm2_2025_v2.csv
+ERR philippines-2020-census-of-population-and-housing HTTP Error 404: Not Found
