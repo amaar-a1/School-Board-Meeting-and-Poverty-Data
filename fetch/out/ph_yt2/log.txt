@@ -1,0 +1,730 @@
+PHR Hinundayan ->  
+PHR Ibajay ->  
+PHR Imelda ->  
+PHR Indang ->  
+PHR Inopacan ->  
+PHR Isabela ->  
+PHR Itogon ->  
+PHR Janiuay ->  
+PHR Jiabong ->  
+PHR Kalayaan (Palawan) ->  
+PHR Kalingalan Caluang ->  
+PHR Kapalong ->  
+PHR Kapangan ->  
+PHR Kasibu ->  
+PHR Katipunan ->  
+PHR Kawit ->  
+PHR Kayapa ->  
+PHR Kiamba -> Sangguniang Bayan Of Kiamba 0
+PHR Kiblawan ->  
+PHR Kitaotao ->  
+PHR Kitcharao ->  
+PHR Kolambugan ->  
+PHR La Castellana ->  
+PHR La Libertad (Negros Oriental) ->  
+PHR La Paz (Abra) ->  
+PHR La Paz (Tarlac) ->  
+PHR La Trinidad ->  
+PHR Labangan ->  
+PHR Labason ->  
+PHR Labo ->  
+PHR Labrador ->  
+PHR Lagangilang ->  
+PHR Lagawe ->  
+PHR Lagayan ->  
+PHR Lagonglong ->  
+PHR Lagonoy ->  
+PHR Laguindingan ->  
+PHR Lala ->  
+PHR Langiden ->  
+PHR Lanuza ->  
+PHR Laoang ->  
+PHR Laurel ->  
+PHR Lawaan ->  
+PHR Lazi ->  
+PHR Lemery (Iloilo) ->  
+PHR Leon ->  
+PHR Libagon ->  
+PHR Libona ->  
+PHR Licab ->  
+PHR Licuan-Baay ->  
+PHR Liloy ->  
+PHR Limay ->  
+PHR Linapacan ->  
+PHR Loay ->  
+PHR Looc (Occidental Mindoro) ->  
+PHR Looc (Romblon) ->  
+PHR Loon ->  
+PHR Lopez -> Municipality of Lopez, Quezon 0
+PHR Lopez Jaena ->  
+PHR Loreto (Agusan del Sur) ->  
+PHR Los Baños ->  
+PHR Lubang ->  
+PHR Lubuagan ->  
+PHR Lugait ->  
+PHR Lumba-Bayabao ->  
+PHR Luna (Apayao) ->  
+PHR Luna (Isabela) ->  
+PHR Lupon ->  
+PHR Lutayan ->  
+PHR M'Lang ->  
+PHR Ma-Ayon ->  
+PHR Mabinay ->  
+PHR Mabini (Bohol) ->  
+PHR Mabini (Davao de Oro) ->  
+PHR Mabini (Pangasinan) ->  
+PHR Macabebe ->  
+PHR Maconacon ->  
+PHR Macrohon ->  
+PHR Madalum ->  
+PHR Maddela ->  
+PHR Madridejos ->  
+PHR Magallanes (Agusan del Norte) ->  
+PHR Magdalena ->  
+PHR Magsaysay (Lanao del Norte) ->  
+PHR Magsingal ->  
+PHR Mahayag ->  
+PHR Mahinog ->  
+PHR Mainit ->  
+PHR Maitum ->  
+PHR Malangas ->  
+PHR Malibcong ->  
+PHR Malidegao ->  
+PHR Malinao (Aklan) ->  
+PHR Malinao (Albay) ->  
+PHR Malitbog (Bukidnon) ->  
+PHR Malitbog (Southern Leyte) ->  
+PHR Mallig ->  
+PHR Maluso ->  
+PHR Mamasapano ->  
+PHR Mamburao ->  
+PHR Mambusao ->  
+PHR Manabo ->  
+PHR Manapla ->  
+PHR Manay ->  
+PHR Mandaon ->  
+PHR Mangatarem -> Mangatarem ang bayan ko  0
+PHR Mangudadatu ->  
+PHR Manito ->  
+PHR Manjuyod ->  
+PHR Mankayan ->  
+PHR Manolo Fortich ->  
+PHR Mansalay ->  
+PHR Manticao ->  
+PHR Manukan ->  
+PHR Mapanas ->  
+PHR Mapandan ->  
+PHR Mapun ->  
+PHR Marabut ->  
+PHR Maragondon ->  
+PHR Maragusan -> MIO LGU MARAGUSAN 0
+PHR Maramag ->  
+PHR Marantao ->  
+PHR Marcos ->  
+PHR Margosatubig ->  
+PHR Maria ->  
+PHR Maria Aurora ->  
+PHR Maribojoc ->  
+PHR Marihatag ->  
+PHR Marilao ->  
+PHR Maripipi ->  
+PHR Mariveles ->  
+PHR Marogong ->  
+PHR Masantol ->  
+PHR Masinloc ->  
+PHR Masiu ->  
+PHR Maslog ->  
+PHR Mataasnakahoy ->  
+PHR Matag-Ob ->  
+PHR Matalam ->  
+PHR Matalom ->  
+PHR Matanog ->  
+PHR Matnog ->  
+PHR Matuguinao ->  
+PHR Matungao ->  
+PHR Mauban ->  
+PHR Mawab ->  
+PHR Mayantoc ->  
+PHR Maydolong ->  
+PHR Mayorga ->  
+PHR Mayoyao ->  
+PHR Medellin ->  
+PHR Medina ->  
+PHR Mendez ->  
+PHR Merida ->  
+PHR Mexico ->  
+PHR Miagao ->  
+PHR Midsalip ->  
+PHR Midsayap ->  
+PHR Milagros ->  
+PHR Milaor ->  
+PHR Mina ->  
+PHR Minalin -> Sanggunian Bayan of Minalin 0
+PHR Minglanilla ->  
+PHR Moalboal ->  
+PHR Mobo ->  
+PHR Mogpog ->  
+PHR Moises Padilla ->  
+PHR Molave ->  
+PHR Moncada ->  
+PHR Mondragon ->  
+PHR Monkayo -> Local Government Unit of Monkayo 0
+PHR Monreal ->  
+PHR Montevista ->  
+PHR Morong (Bataan) ->  
+PHR Morong (Rizal) ->  
+PHR Motiong ->  
+PHR Mulondo ->  
+PHR Munai ->  
+PHR Mutia ->  
+PHR Naawan -> LGU Naawan  0
+PHR Nabalawag ->  
+PHR Nabas ->  
+PHR Nabua -> LGU nabua 0
+PHR Nabunturan ->  
+PHR Naga ->  
+PHR Nagbukel ->  
+PHR Nagcarlan ->  
+PHR Nagtipunan ->  
+PHR Naguilian (Isabela) ->  
+PHR Naguilian (La Union) ->  
+PHR Naic -> Sangguniang Bayan ng Naic Cavite 0
+PHR Nampicuan ->  
+PHR Narra ->  
+PHR Narvacan ->  
+PHR Nasugbu ->  
+PHR Natividad ->  
+PHR Natonin ->  
+PHR Naujan ->  
+PHR Naval ->  
+PHR New Bataan ->  
+PHR New Corella ->  
+PHR New Lucena ->  
+PHR New Washington ->  
+PHR Norala ->  
+PHR Northern Kabuntalan ->  
+PHR Norzagaray ->  
+PHR Noveleta ->  
+PHR Nueva Era ->  
+PHR Nueva Valencia ->  
+PHR Numancia ->  
+PHR Nunungan ->  
+PHR Oas ->  
+PHR Obando ->  
+PHR Ocampo ->  
+PHR Odiongan ->  
+PHR Old Kaabakan ->  
+PHR Old Panamao ->  
+PHR Olutanga ->  
+PHR Opol ->  
+PHR Orani ->  
+PHR Oras ->  
+PHR Orion -> Municipality of Orion 0
+PHR Ormoc City ->  
+PHR Oton ->  
+PHR Padre Burgos (Quezon) ->  
+PHR Padre Burgos (Southern Leyte) ->  
+PHR Padre Garcia ->  
+PHR Paete ->  
+PHR Pagagawan ->  
+PHR Pagalungan ->  
+PHR Pagayawan ->  
+PHR Pagbilao ->  
+PHR Paglat ->  
+PHR Pagsanghan ->  
+PHR Pagsanjan ->  
+PHR Pakil ->  
+PHR Palanas ->  
+PHR Palapag ->  
+PHR Palauig ->  
+PHR Palo ->  
+PHR Palompon ->  
+PHR Paluan ->  
+PHR Pambujan ->  
+PHR Pamplona (Cagayan) ->  
+PHR Pamplona (Camarines Sur) ->  
+PHR Pamplona (Negros Oriental) ->  
+PHR Panaon ->  
+PHR Panay ->  
+PHR Pandag ->  
+PHR Pandami ->  
+PHR Pandan (Antique) ->  
+PHR Pandan (Catanduanes) ->  
+PHR Pandi ->  
+PHR Panganiban ->  
+PHR Pangantucan ->  
+PHR Pangil ->  
+PHR Panglao ->  
+PHR Panglima Estino ->  
+PHR Panglima Sugala ->  
+PHR Paniqui ->  
+PHR Panitan ->  
+PHR Pantabangan ->  
+PHR Pantao Ragat ->  
+PHR Pantar ->  
+PHR Pantukan ->  
+PHR Panukulan ->  
+PHR Paoay ->  
+PHR Paombong -> Sangguniang Bayan ng Paombong, Bulacan 0
+PHR Paracale ->  
+PHR Paracelis ->  
+PHR Paranas ->  
+PHR Parang (Maguindanao) ->  
+PHR Parang (Sulu) ->  
+PHR Pasacao ->  
+PHR Pasay City ->  
+PHR Pasil ->  
+PHR Pastrana ->  
+PHR Pasuquin ->  
+PHR Pata ->  
+PHR Pateros ->  
+PHR Patikul ->  
+PHR Patnanungan ->  
+PHR Patnongon ->  
+PHR Pavia ->  
+PHR Payao ->  
+PHR Perez ->  
+PHR Peñablanca ->  
+PHR Peñaranda ->  
+PHR Peñarrubia ->  
+PHR Piagapo ->  
+PHR Piat ->  
+PHR Picong ->  
+PHR Piddig ->  
+PHR Pigkawayan ->  
+PHR Pikit ->  
+PHR Pila ->  
+PHR Pilar (Abra) ->  
+PHR Pilar (Bataan) ->  
+PHR Pilar (Bohol) ->  
+PHR Pilar (Capiz) ->  
+PHR Pilar (Cebu) ->  
+PHR Pilar (Sorsogon) ->  
+PHR Pilar (Surigao del Norte) ->  
+PHR Pili ->  
+PHR Pililla ->  
+PHR Pinabacdao ->  
+PHR Pinamalayan ->  
+PHR Pinamungajan ->  
+PHR Pinili ->  
+PHR Pio Duran ->  
+PHR Pio V. Corpus ->  
+PHR Pitogo (Quezon) ->  
+PHR Piñan ->  
+PHR Placer (Masbate) ->  
+PHR Placer (Surigao del Norte) ->  
+PHR Plaridel (Bulacan) -> Municipality of Plaridel 0
+PHR Plaridel (Misamis Occidental) -> Municipality of Plaridel 0
+PHR Plaridel (Quezon) -> Municipality of Plaridel 0
+PHR Pola ->  
+PHR Polanco ->  
+PHR Polillo ->  
+PHR Polomolok -> Sangguniang Bayan ng Polomolok 0
+PHR Pontevedra (Capiz) ->  
+PHR Pontevedra (Negros Occidental) ->  
+PHR Poona Bayabao ->  
+PHR Poona Piagapo ->  
+PHR Porac ->  
+PHR Poro ->  
+PHR Pototan ->  
+PHR Pozorrubio ->  
+PHR Pres. Manuel A. Roxas ->  
+PHR Presentacion ->  
+PHR President Carlos P. Garcia ->  
+PHR President Roxas (Capiz) ->  
+PHR President Roxas (Cotabato) ->  
+PHR Prieto Diaz ->  
+PHR Prosperidad ->  
+PHR Pualas ->  
+PHR Pudtol ->  
+PHR Puerto Galera ->  
+PHR Pugo ->  
+PHR Pulilan ->  
+PHR Pulupandan ->  
+PHR Pura ->  
+PHR Quezon (Bukidnon) ->  
+PHR Quezon (Isabela) ->  
+PHR Quezon (Nueva Ecija) ->  
+PHR Quezon (Nueva Vizcaya) ->  
+PHR Quezon (Palawan) ->  
+PHR Quezon (Quezon) ->  
+PHR Quinapondan ->  
+PHR Quirino (Isabela) ->  
+PHR Ragay ->  
+PHR Rajah Buayan ->  
+PHR Ramon ->  
+PHR Ramon Magsaysay ->  
+PHR Ramos ->  
+PHR Rapu-Rapu ->  
+PHR Real ->  
+PHR Reina Mercedes ->  
+PHR Remedios T. Romualdez ->  
+PHR Rizal (Cagayan) ->  
+PHR Rizal (Kalinga) ->  
+PHR Rizal (Laguna) ->  
+PHR Rizal (Nueva Ecija) ->  
+PHR Rizal (Occidental Mindoro) ->  
+PHR Rizal (Zamboanga del Norte) ->  
+PHR Rodriguez ->  
+PHR Ronda ->  
+PHR Rosales ->  
+PHR Rosario (Agusan del Sur) ->  
+PHR Rosario (Batangas) ->  
+PHR Rosario (Cavite) ->  
+PHR Rosario (Northern Samar) ->  
+PHR Roseller Lim ->  
+PHR Roxas (Isabela) ->  
+PHR Roxas (Oriental Mindoro) ->  
+PHR Roxas (Palawan) ->  
+PHR Sabangan ->  
+PHR Sablan ->  
+PHR Sablayan ->  
+PHR Sabtang ->  
+PHR Sadanga ->  
+PHR Sagada ->  
+PHR Sagay ->  
+PHR Sagbayan ->  
+PHR Saguday ->  
+PHR Saguiaran ->  
+PHR Sagñay ->  
+PHR Saint Bernard ->  
+PHR Salay ->  
+PHR Salcedo (Eastern Samar) ->  
+PHR Sallapadan ->  
+PHR Salug ->  
+PHR Salvador ->  
+PHR Salvador Benedicto ->  
+PHR Samal ->  
+PHR Samboan ->  
+PHR Sampaloc ->  
+PHR San Agustin (Isabela) ->  
+PHR San Agustin (Romblon) ->  
+PHR San Agustin (Surigao del Sur) ->  
+PHR San Andres (Catanduanes) ->  
+PHR San Andres (Romblon) ->  
+PHR San Antonio (Northern Samar) ->  
+PHR San Antonio (Nueva Ecija) ->  
+PHR San Antonio (Quezon) ->  
+PHR San Antonio (Zambales) ->  
+PHR San Clemente ->  
+PHR San Dionisio ->  
+PHR San Enrique (Iloilo) ->  
+PHR San Enrique (Negros Occidental) ->  
+PHR San Esteban ->  
+PHR San Fabian ->  
+PHR San Felipe ->  
+PHR San Fernando (Bukidnon) ->  
+PHR San Fernando (Camarines Sur) ->  
+PHR San Fernando (Cebu) ->  
+PHR San Fernando (Masbate) ->  
+PHR San Fernando (Romblon) ->  
+PHR San Francisco (Agusan del Sur) ->  
+PHR San Francisco (Cebu) ->  
+PHR San Francisco (Quezon) ->  
+PHR San Francisco (Southern Leyte) ->  
+PHR San Francisco (Surigao del Norte) ->  
+PHR San Gabriel ->  
+PHR San Guillermo ->  
+PHR San Ildefonso (Bulacan) ->  
+PHR San Ildefonso (Ilocos Sur) ->  
+PHR San Isidro (Abra) ->  
+PHR San Isidro (Bohol) ->  
+PHR San Isidro (Davao Oriental) ->  
+PHR San Isidro (Isabela) ->  
+PHR San Isidro (Leyte) ->  
+PHR San Isidro (Northern Samar) ->  
+PHR San Isidro (Nueva Ecija) ->  
+PHR San Isidro (Surigao del Norte) ->  
+PHR San Jacinto (Masbate) ->  
+PHR San Jacinto (Pangasinan) ->  
+PHR San Joaquin ->  
+PHR San Jorge ->  
+PHR San Jose (Antique) ->  
+PHR San Jose (Batangas) ->  
+PHR San Jose (Camarines Sur) ->  
+PHR San Jose (Dinagat Islands) ->  
+PHR San Jose (Negros Oriental) ->  
+PHR San Jose (Northern Samar) ->  
+PHR San Jose (Occidental Mindoro) ->  
+PHR San Jose (Romblon) ->  
+PHR San Jose City -> City of San Jose, CA 0
+PHR San Jose De Buan ->  
+PHR San Juan (Abra) ->  
+PHR San Juan (Batangas) ->  
+PHR San Juan (Ilocos Sur) ->  
+PHR San Juan (La Union) ->  
+PHR San Juan (Siquijor) ->  
+PHR San Juan (Southern Leyte) ->  
+PHR San Julian ->  
+PHR San Leonardo ->  
+PHR San Lorenzo ->  
+PHR San Lorenzo Ruiz ->  
+PHR San Luis (Agusan del Sur) ->  
+PHR San Luis (Aurora) ->  
+PHR San Luis (Batangas) ->  
+PHR San Luis (Pampanga) ->  
+PHR San Manuel (Pangasinan) ->  
+PHR San Manuel (Tarlac) ->  
+PHR San Marcelino ->  
+PHR San Mariano ->  
+PHR San Mateo (Isabela) ->  
+PHR San Mateo (Rizal) -> Municipal Government of San Mateo Rizal 0
+PHR San Miguel (Catanduanes) ->  
+PHR San Miguel (Leyte) ->  
+PHR San Miguel (Surigao del Sur) ->  
+PHR San Miguel (Zamboanga del Sur) ->  
+PHR San Narciso (Quezon) ->  
+PHR San Narciso (Zambales) ->  
+PHR San Nicolas (Batangas) ->  
+PHR San Nicolas (Ilocos Norte) ->  
+PHR San Pablo (Isabela) ->  
+PHR San Pablo (Zamboanga del Sur) ->  
+PHR San Pascual (Batangas) ->  
+PHR San Pascual (Masbate) ->  
+PHR San Policarpo ->  
+PHR San Quintin (Abra) ->  
+PHR San Quintin (Pangasinan) ->  
+PHR San Rafael (Bulacan) ->  
+PHR San Rafael (Iloilo) ->  
+PHR San Remigio (Antique) ->  
+PHR San Remigio (Cebu) ->  
+PHR San Ricardo ->  
+PHR San Roque ->  
+PHR San Sebastian ->  
+PHR San Simon ->  
+PHR San Teodoro ->  
+PHR San Vicente (Ilocos Sur) ->  
+PHR San Vicente (Palawan) ->  
+PHR Sanchez Mira ->  
+PHR Santa Ana (Cagayan) ->  
+PHR Santa Ana (Pampanga) ->  
+PHR Santa Barbara (Iloilo) ->  
+PHR Santa Barbara (Pangasinan) ->  
+PHR Santa Catalina (Ilocos Sur) ->  
+PHR Santa Catalina (Negros Oriental) ->  
+PHR Santa Cruz (Ilocos Sur) ->  
+PHR Santa Cruz (Laguna) ->  
+PHR Santa Cruz (Marinduque) ->  
+PHR Santa Cruz (Occidental Mindoro) ->  
+PHR Santa Cruz (Zambales) ->  
+PHR Santa Elena ->  
+PHR Santa Fe (Cebu) ->  
+PHR Santa Fe (Leyte) ->  
+PHR Santa Fe (Nueva Vizcaya) ->  
+PHR Santa Fe (Romblon) ->  
+PHR Santa Ignacia ->  
+PHR Santa Josefa ->  
+PHR Santa Lucia ->  
+PHR Santa Magdalena ->  
+PHR Santa Margarita ->  
+PHR Santa Maria (Bulacan) ->  
+PHR Santa Maria (Ilocos Sur) ->  
+PHR Santa Maria (Laguna) ->  
+PHR Santa Maria (Romblon) ->  
+PHR Santa Monica ->  
+PHR Santa Praxedes ->  
+PHR Santa Rita (Pampanga) ->  
+PHR Santa Rita (Samar (Western)) ->  
+PHR Santa Rosa ->  
+PHR Santa Teresita (Batangas) ->  
+PHR Santa Teresita (Cagayan) ->  
+PHR Santander ->  
+PHR Santiago (Agusan del Norte) ->  
+PHR Santo Domingo (Albay) ->  
+PHR Santo Domingo (Ilocos Sur) ->  
+PHR Santo Domingo (Nueva Ecija) ->  
+PHR Santo Niño (Cagayan) ->  
+PHR Santo Niño (South Cotabato) ->  
+PHR Santo Tomas (Davao del Norte) -> Sangguniang Bayan of Santo Tomas 0
+PHR Santo Tomas (Isabela) ->  
+PHR Santo Tomas (Pangasinan) ->  
+PHR Santol ->  
+PHR Sapa-Sapa ->  
+PHR Sapad ->  
+PHR Sapang Dalaga ->  
+PHR Sapi-An ->  
+PHR Sara ->  
+PHR Sarangani ->  
+PHR Sariaya ->  
+PHR Sarrat ->  
+PHR Sasmuan ->  
+PHR Sawata ->  
+PHR Science City of Muñoz ->  
+PHR Sebaste ->  
+PHR Sen. Ninoy Aquino ->  
+PHR Sergio Osmeña Sr. ->  
+PHR Sevilla ->  
+PHR Shariff Saydona Mustapha ->  
+PHR Siasi ->  
+PHR Siaton ->  
+PHR Siay ->  
+PHR Siayan ->  
+PHR Sibalom ->  
+PHR Sibonga ->  
+PHR Sibuco ->  
+PHR Sibulan ->  
+PHR Sibunag ->  
+PHR Sibutad ->  
+PHR Sibutu ->  
+PHR Sierra Bullones ->  
+PHR Sigay ->  
+PHR Sigma ->  
+PHR Sikatuna ->  
+PHR Silago ->  
+PHR Silang -> Sangguniang Bayan ng Silang Cavite 0
+PHR Simunul ->  
+PHR Sinacaban ->  
+PHR Sinait ->  
+PHR Sindangan ->  
+PHR Siniloan ->  
+PHR Siocon ->  
+PHR Sipocot ->  
+PHR Siquijor ->  
+PHR Sirawai ->  
+PHR Siruma ->  
+PHR Sison (Pangasinan) ->  
+PHR Sison (Surigao del Norte) ->  
+PHR Sitangkai ->  
+PHR Socorro (Surigao del Norte) ->  
+PHR Sofronio Española -> SANGGUNIANG BAYAN SOFRONIO ESPAÑOLA  0
+PHR Sogod (Cebu) ->  
+PHR Sogod (Southern Leyte) -> Sangguniang Bayan of Sogod, So. Leyte 0
+PHR Solana ->  
+PHR Solano ->  
+PHR Solsona ->  
+PHR Sominot ->  
+PHR South Ubian ->  
+PHR South Upi ->  
+PHR Sto. Tomas ->  
+PHR Sual ->  
+PHR Subic ->  
+PHR Sugbongcogon ->  
+PHR Sugpon ->  
+PHR Sulat ->  
+PHR Sulop ->  
+PHR Sultan Dumalondong ->  
+PHR Sultan Naga Dimaporo ->  
+PHR Sultan Sa Barongis ->  
+PHR Sumilao ->  
+PHR Sumisip ->  
+PHR Surallah ->  
+PHR Suyo ->  
+PHR T'Boli ->  
+PHR Taal ->  
+PHR Tabango ->  
+PHR Tabina ->  
+PHR Tabogon ->  
+PHR Tabontabon ->  
+PHR Tabuan-Lasa ->  
+PHR Tabuelan ->  
+PHR Tadian ->  
+PHR Taft ->  
+PHR Tagana-An ->  
+PHR Tagapul-An ->  
+PHR Tagbina ->  
+PHR Tagkawayan -> Municipality of Tagkawayan 0
+PHR Tago ->  
+PHR Tagoloan (Lanao del Norte) ->  
+PHR Tagoloan (Misamis Oriental) ->  
+PHR Tagoloan II ->  
+PHR Tagudin ->  
+PHR Talacogon ->  
+PHR Talaingod ->  
+PHR Talakag ->  
+PHR Talavera ->  
+PHR Talayan ->  
+PHR Talibon ->  
+PHR Talisay (Batangas) ->  
+PHR Talisay (Camarines Norte) ->  
+PHR Talisayan ->  
+PHR Talitay ->  
+PHR Tambulig ->  
+PHR Tampakan ->  
+PHR Tamparan ->  
+PHR Tampilisan ->  
+PHR Tanauan ->  
+PHR Tangalan -> LGU Tangalan 0
+PHR Tangcal ->  
+PHR Tantangan ->  
+PHR Tanza -> Municipal Government of Tanza 0
+PHR Tapaz ->  
+PHR Tapul ->  
+PHR Taraka ->  
+PHR Tarragona ->  
+PHR Tayasan ->  
+PHR Taysan ->  
+PHR Taytay (Palawan) ->  
+PHR Taytay (Rizal) ->  
+PHR Tayug ->  
+PHR Tayum ->  
+PHR Teresa ->  
+PHR Ternate ->  
+PHR Tibiao ->  
+PHR Tigaon ->  
+PHR Tigbao ->  
+PHR Tigbauan ->  
+PHR Tineg -> LGU - Tineg, Abra 0
+PHR Tinglayan ->  
+PHR Tingloy ->  
+PHR Tinoc ->  
+PHR Tipo-Tipo ->  
+PHR Titay ->  
+PHR Tiwi ->  
+PHR Toboso ->  
+PHR Tolosa ->  
+PHR Torrijos ->  
+PHR Trinidad ->  
+PHR Tuao ->  
+PHR Tuba ->  
+PHR Tubajon ->  
+PHR Tubay ->  
+PHR Tublay ->  
+PHR Tubo ->  
+PHR Tubod (Surigao del Norte) ->  
+PHR Tubungan ->  
+PHR Tuburan (Basilan) ->  
+PHR Tuburan (Cebu) ->  
+PHR Tudela (Cebu) ->  
+PHR Tudela (Misamis Occidental) ->  
+PHR Tugaya ->  
+PHR Tuguegarao City ->  
+PHR Tugunan ->  
+PHR Tukuran ->  
+PHR Tulunan ->  
+PHR Tunga ->  
+PHR Tungawan ->  
+PHR Turtle Islands ->  
+PHR Tuy ->  
+PHR Ubay ->  
+PHR Umingan ->  
+PHR Unisan ->  
+PHR Upi ->  
+PHR Urbiztondo ->  
+PHR Uson ->  
+PHR Uyugan ->  
+PHR Valderrama ->  
+PHR Valencia (Bohol) ->  
+PHR Valencia (Negros Oriental) ->  
+PHR Valladolid ->  
+PHR Vallehermoso ->  
+PHR Veruela ->  
+PHR Victoria (Laguna) ->  
+PHR Victoria (Northern Samar) ->  
+PHR Victoria (Oriental Mindoro) -> LGU Victoria 0
+PHR Victoria (Tarlac) -> LGU Victoria 0
+PHR Viga ->  
+PHR Villaba ->  
+PHR Villanueva ->  
+PHR Villareal ->  
+PHR Villasis ->  
+PHR Villaverde ->  
+PHR Vincenzo A. Sagun ->  
+PHR Vintar ->  
+PHR Vinzons ->  
+PHR Virac ->  
+PHR Zamboanguita ->  
+PHR Zaragoza ->  
+PHR Zarraga ->  
+PHR Zumarraga ->  
+
+---
