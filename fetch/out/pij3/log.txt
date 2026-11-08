@@ -1,0 +1,14 @@
+== Poland: BDL
+search uczniowie ERR HTTP Error 429: Too Many Requests
+search szkoły podstawowe ERR HTTP Error 429: Too Many Requests
+variables: {"259889": "family_benefit_share", "259888": "family_benefit_children", "1548717": "social_assistance_per10k"}
+259889 2024: 3918 values
+259888 2024: 3918 values
+1548717 2024: 3918 values
+(1151s)
+
+== Japan: welfare survey
+pages 60, files 1350
+[{"id": "000031579881", "ctx": "t-separator\">被保護実人員，都道府県－指定都市－中核市×市部－郡部別（１か月平均） 被保護者調査 平成27年度被保護者調査 / 月次調査 調査年月   2015年度 公開（更新）日   2017-06-07 <a href=\"/stat-search/file-download?", "page": "https://www.e-stat.go.jp/stat-search/files?page=1&toukei=00450312&tstat=000001089175&layout=dataset"}, {"id": "000031579882", "ctx": "ss=\"stat-separator\">被保護実人員，都道府県－指定都市－中核市×市部－郡部別 被保護者調査 平成27年度被保護者調査 / 月次調査 調査年月   2015年度 公開（更新）日   2017-06-07 <a href=\"/stat-search/file-download?", "page": "https://www.e-stat.go.jp/stat-search/files?page=1&toukei=00450312&tstat=000001089175&layout=dataset"}, {"id": "000031579883", "ctx": "rator\">被保護実人員及び保護率（人口千対），都道府県－指定都市－中核市×月・１か月平均別 被保護者調査 平成27年度被保護者調査 / 月次調査 調査年月   2015年度 公開（更新）日   2017-06-07 <a href=\"/stat-search/file-download?", "page": "https://www.e-stat.go.jp/stat-search/files?page=1&toukei=00450312&tstat=000001089175&layout=dataset"}, {"id": "000031396346", "ctx": "t-separator\">被保護実人員，都道府県－指定都市－中核市×市部－郡部別（１か月平均） 被保護者調査 平成26年度被保護者調査 / 月次調査 調査年月   2014年度 公開（更新）日   2016-03-23 <a href=\"/stat-search/file-download?", "page": "https://www.e-stat.go.jp/stat-search/files?page=1&toukei=00450312&tstat=000001075809&layout=dataset"}, {"id": "000031396347", "ctx": "ss=\"stat-separator\">被保護実人員，都道府県－指定都市－中核市×市部－郡部別 被保護者調査 平成26年度被保護者調査 / 月次調査 調査年月   2014年度 公開（更新）日   2016-03-23 <a href=\"/stat-search/file-download?", "page": "https://www.e-stat.go.jp/stat-search/files?page=1&toukei=00450312&tstat=000001075809&layout=dataset"}, {"id": "000031396348", "ctx": "rator\">被保護実人員及び保護率（人口千対），都道府県－指定都市－中核市×月・１か月平均別 被保護者調査 平成26年度被保護者調査 / 月次調査 調査年月   2014年度 公開（更新）日   2016-03-23 <a href=\"/stat-search/file-download?", "page": "https://www.e-stat.go.jp/stat-search/files?page=1&toukei=00450312&tstat=000001075809&layout=dataset"}]
+(177s)
+

@@ -1,0 +1,1002 @@
+[
+{
+"id": 862,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie",
+"n3": "ogółem",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 863,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie",
+"n3": "prowadzone przez organy samorządowe",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 2330,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie",
+"n3": "prowadzone przez jednostki samorządu gminnego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 2331,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie",
+"n3": "prowadzone przez samorząd powiatowy - powiaty ziemskie",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 6760,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie",
+"n3": "prowadzone przez samorząd powiatowy - miasta na prawach powiatu",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 2332,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie",
+"n3": "prowadzone przez jednostki samorządu wojewódzkiego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 864,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie",
+"n3": "prowadzone przez jednostki administracji rządowej (centralnej)",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 865,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie",
+"n3": "prowadzone przez organizacje społeczne",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 6761,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie",
+"n3": "prowadzone przez organizacje społeczne i stowarzyszenia",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 2333,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie",
+"n3": "prowadzone przez organizacje wyznaniowe",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 2334,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie",
+"n3": "prowadzone przez pozostałe organizacje",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269383,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie - mężczyźni",
+"n3": "ogółem",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269431,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie - mężczyźni",
+"n3": "prowadzone przez jednostki samorządu gminnego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269443,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie - mężczyźni",
+"n3": "prowadzone przez samorząd powiatowy - powiaty ziemskie",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269455,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie - mężczyźni",
+"n3": "prowadzone przez samorząd powiatowy - miasta na prawach powiatu",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269466,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie - mężczyźni",
+"n3": "prowadzone przez jednostki samorządu wojewódzkiego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269482,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie - mężczyźni",
+"n3": "prowadzone przez jednostki administracji rządowej (centralnej)",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269494,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie - mężczyźni",
+"n3": "prowadzone przez organizacje społeczne i stowarzyszenia",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269506,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie - mężczyźni",
+"n3": "prowadzone przez organizacje wyznaniowe",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269514,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie - mężczyźni",
+"n3": "prowadzone przez pozostałe organizacje",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269380,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie - kobiety",
+"n3": "ogółem",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269428,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie - kobiety",
+"n3": "prowadzone przez jednostki samorządu gminnego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269440,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie - kobiety",
+"n3": "prowadzone przez samorząd powiatowy - powiaty ziemskie",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269452,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie - kobiety",
+"n3": "prowadzone przez samorząd powiatowy - miasta na prawach powiatu",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269463,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie - kobiety",
+"n3": "prowadzone przez jednostki samorządu wojewódzkiego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269479,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie - kobiety",
+"n3": "prowadzone przez jednostki administracji rządowej (centralnej)",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269491,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie - kobiety",
+"n3": "prowadzone przez organizacje społeczne i stowarzyszenia",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269503,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie - kobiety",
+"n3": "prowadzone przez organizacje wyznaniowe",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269523,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie - kobiety",
+"n3": "prowadzone przez pozostałe organizacje",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 377984,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie",
+"n3": "ogółem",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 377982,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie",
+"n3": "prowadzone przez jednostki samorządu gminnego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 377981,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie",
+"n3": "prowadzone przez samorząd powiatowy - powiaty ziemskie",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 377980,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie",
+"n3": "prowadzone przez samorząd powiatowy - miasta na prawach powiatu",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 377979,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie",
+"n3": "prowadzone przez jednostki samorządu wojewódzkiego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 377978,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie",
+"n3": "prowadzone przez jednostki administracji rządowej (centralnej)",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 377976,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie",
+"n3": "prowadzone przez organizacje społeczne i stowarzyszenia",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 377975,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie",
+"n3": "prowadzone przez organizacje wyznaniowe",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 377974,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie",
+"n3": "prowadzone przez pozostałe organizacje",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378020,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie - kobiety",
+"n3": "ogółem",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378018,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie - kobiety",
+"n3": "prowadzone przez jednostki samorządu gminnego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378017,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie - kobiety",
+"n3": "prowadzone przez samorząd powiatowy - powiaty ziemskie",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378016,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie - kobiety",
+"n3": "prowadzone przez samorząd powiatowy - miasta na prawach powiatu",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378015,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie - kobiety",
+"n3": "prowadzone przez jednostki samorządu wojewódzkiego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378014,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie - kobiety",
+"n3": "prowadzone przez jednostki administracji rządowej (centralnej)",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378012,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie - kobiety",
+"n3": "prowadzone przez organizacje społeczne i stowarzyszenia",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378011,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie - kobiety",
+"n3": "prowadzone przez organizacje wyznaniowe",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378010,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie - kobiety",
+"n3": "prowadzone przez pozostałe organizacje",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378233,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie - mężczyźni",
+"n3": "ogółem",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378231,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie - mężczyźni",
+"n3": "prowadzone przez jednostki samorządu gminnego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378230,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie - mężczyźni",
+"n3": "prowadzone przez samorząd powiatowy - powiaty ziemskie",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378229,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie - mężczyźni",
+"n3": "prowadzone przez samorząd powiatowy - miasta na prawach powiatu",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378228,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie - mężczyźni",
+"n3": "prowadzone przez jednostki samorządu wojewódzkiego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378227,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie - mężczyźni",
+"n3": "prowadzone przez jednostki administracji rządowej (centralnej)",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378225,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie - mężczyźni",
+"n3": "prowadzone przez organizacje społeczne i stowarzyszenia",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378224,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie - mężczyźni",
+"n3": "prowadzone przez organizacje wyznaniowe",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378223,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe dla dzieci i młodzieży bez specjalnych",
+"n2": "uczniowie w 1 klasie - mężczyźni",
+"n3": "prowadzone przez pozostałe organizacje",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 914,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie",
+"n3": "ogółem",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 915,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie",
+"n3": "prowadzone przez organy samorządowe",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 2360,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie",
+"n3": "prowadzone przez jednostki samorządu gminnego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 2361,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie",
+"n3": "prowadzone przez samorząd powiatowy - powiaty ziemskie",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 6770,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie",
+"n3": "prowadzone przez samorząd powiatowy - miasta na prawach powiatu",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 2362,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie",
+"n3": "prowadzone przez jednostki samorządu wojewódzkiego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 916,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie",
+"n3": "prowadzone przez jednostki administracji rządowej (centralnej)",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 917,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie",
+"n3": "prowadzone przez organizacje społeczne",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 6771,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie",
+"n3": "prowadzone przez organizacje społeczne i stowarzyszenia",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 2363,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie",
+"n3": "prowadzone przez organizacje wyznaniowe",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 2364,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie",
+"n3": "prowadzone przez pozostałe organizacje",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269382,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie - mężczyźni",
+"n3": "ogółem",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269430,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie - mężczyźni",
+"n3": "prowadzone przez jednostki samorządu gminnego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269442,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie - mężczyźni",
+"n3": "prowadzone przez samorząd powiatowy - powiaty ziemskie",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269454,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie - mężczyźni",
+"n3": "prowadzone przez samorząd powiatowy - miasta na prawach powiatu",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269465,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie - mężczyźni",
+"n3": "prowadzone przez jednostki samorządu wojewódzkiego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269481,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie - mężczyźni",
+"n3": "prowadzone przez jednostki administracji rządowej (centralnej)",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269493,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie - mężczyźni",
+"n3": "prowadzone przez organizacje społeczne i stowarzyszenia",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269505,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie - mężczyźni",
+"n3": "prowadzone przez organizacje wyznaniowe",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269513,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie - mężczyźni",
+"n3": "prowadzone przez pozostałe organizacje",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269379,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie - kobiety",
+"n3": "ogółem",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269427,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie - kobiety",
+"n3": "prowadzone przez jednostki samorządu gminnego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269439,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie - kobiety",
+"n3": "prowadzone przez samorząd powiatowy - powiaty ziemskie",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269451,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie - kobiety",
+"n3": "prowadzone przez samorząd powiatowy - miasta na prawach powiatu",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269462,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie - kobiety",
+"n3": "prowadzone przez jednostki samorządu wojewódzkiego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269478,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie - kobiety",
+"n3": "prowadzone przez jednostki administracji rządowej (centralnej)",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269490,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie - kobiety",
+"n3": "prowadzone przez organizacje społeczne i stowarzyszenia",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269502,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie - kobiety",
+"n3": "prowadzone przez organizacje wyznaniowe",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 269522,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie - kobiety",
+"n3": "prowadzone przez pozostałe organizacje",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 377996,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie w 1 klasie",
+"n3": "ogółem",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 377994,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie w 1 klasie",
+"n3": "prowadzone przez jednostki samorządu gminnego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 377993,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie w 1 klasie",
+"n3": "prowadzone przez samorząd powiatowy - powiaty ziemskie",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 377992,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie w 1 klasie",
+"n3": "prowadzone przez samorząd powiatowy - miasta na prawach powiatu",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 377991,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie w 1 klasie",
+"n3": "prowadzone przez jednostki samorządu wojewódzkiego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 377990,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie w 1 klasie",
+"n3": "prowadzone przez jednostki administracji rządowej (centralnej)",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 377988,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie w 1 klasie",
+"n3": "prowadzone przez organizacje społeczne i stowarzyszenia",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 377987,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie w 1 klasie",
+"n3": "prowadzone przez organizacje wyznaniowe",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 377986,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie w 1 klasie",
+"n3": "prowadzone przez pozostałe organizacje",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378032,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie w 1 klasie - kobiety",
+"n3": "ogółem",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378030,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie w 1 klasie - kobiety",
+"n3": "prowadzone przez jednostki samorządu gminnego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378029,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie w 1 klasie - kobiety",
+"n3": "prowadzone przez samorząd powiatowy - powiaty ziemskie",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378028,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie w 1 klasie - kobiety",
+"n3": "prowadzone przez samorząd powiatowy - miasta na prawach powiatu",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378027,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie w 1 klasie - kobiety",
+"n3": "prowadzone przez jednostki samorządu wojewódzkiego",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+},
+{
+"id": 378026,
+"subjectId": "P1781",
+"n1": "szkoły podstawowe specjalne dla dzieci i młodzieży",
+"n2": "uczniowie w 1 klasie - kobiety",
+"n3": "prowadzone przez jednostki administracji rządowej (centralnej)",
+"n4": null,
+"n5": null,
+"measureUnitName": "osoba"
+}
+]
