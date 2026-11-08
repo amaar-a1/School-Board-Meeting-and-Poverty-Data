@@ -69,6 +69,9 @@ C = {
     # Croatia: city and municipal councils (gradsko vijeće, općinsko vijeće) and their sessions (sjednica).
     "HR": dict(file="croatia", q="gradsko vijeće {} sjednica", chan=r"grad|op[cć]ina|vije[cć]e|city|municipality|tv",
                edu=r"obrazovanj|[sš]kol|odgoj", meet=r"sjednica|vije[cć]e"),
+    # Philippines: city and municipal councils (Sangguniang Bayan / Panlungsod) and their sessions; the province is in the query.
+    "PH": dict(file="philippines", q="Sangguniang Bayan {} {region} regular session", chan=r"sangguniang|municipal|munisipyo|city|lgu|bayan|panlungsod|town|government|\\bsb\\b|\\bsp\\b",
+               edu=r"school board|education", meet=r"session|sesyon|sangguniang"),
     "NL": dict(file="netherlands", q="gemeente {} raadsvergadering", chan=r"gemeente|gemeenteraad|raad|griffie",
                edu=r"onderwijs|jeugd|school|kind",
                meet=r"commissie|raad|vergadering|beeldvorm|oordeelvorm"),
