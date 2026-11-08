@@ -154,9 +154,24 @@ RULES["PL"] = (re.compile(r"komisj[aiy][^|]{0,60}(o[sś]wiat|edukacj|szk[oó][l�
                re.compile(r"live session|uroczyst|wywiad|spot|reklam|festyn|koncert|do[zż]ynk|msza|[zż]yczenia|m[lł]odzie[zż]ow|senior|wybory|kampani|kandydat|"
                           r"relacja z|transmisja meczu", re.I))
 
+# Portugal: the municipal assembly (assembleia municipal) and the council's public meetings (reunião de câmara);
+# children's and youth assemblies and ceremonies aren't counted.
+RULES["PT"] = (re.compile(r"comiss[ãa]o[^|]{0,40}educa[çc][ãa]o|conselho municipal de educa[çc][ãa]o", re.I),
+               re.compile(r"sess[ãa]o|reuni[ãa]o|assembleia", re.I),
+               re.compile(r"^(?!.*(infantil|jovem|jovens|crian[çc]as|juvenil|escolas?\b)).*(assembleia municipal|sess[ãa]o (ordin[áa]ria|extraordin[áa]ria)|"
+                          r"reuni[ãa]o (ordin[áa]ria |extraordin[áa]ria |p[úu]blica )?(da |de )?c[âa]mara|reuni[ãa]o (ordin[áa]ria|extraordin[áa]ria|p[úu]blica))", re.I),
+               re.compile(r"live session|entrevista|not[íi]cias|reportagem|festa|concerto|hino|desfile|homenagem|solene|missa|prociss[ãa]o|"
+                          r"assembleia municipal (infantil|jovem|das crian)|parlamento dos jovens|vereador|c[âa]mara municipal de .{0,30} - [A-Z]{2}\b|brasil", re.I))
+# Belgium: town council meetings in Dutch (gemeenteraad, zitting) or French (conseil communal, séance), and education
+# committees (commissie onderwijs, commission enseignement); youth councils and ceremonies aren't counted.
+RULES["BE"] = (re.compile(r"commissie[^|]{0,40}onderwijs|onderwijs[^|]{0,20}commissie|commission[^|]{0,40}enseignement", re.I),
+               re.compile(r"gemeenteraad|conseil communal|zitting|s[ée]ance|raadszitting|conseil de ville", re.I),
+               re.compile(r"^(?!.*(jeugd|kinder|jongeren|des enfants|des jeunes|cce\b|ccj\b|ocmw-raad|cpas)).*(gemeenteraad|raadszitting|conseil communal|conseil de ville|s[ée]ance du conseil)", re.I),
+               re.compile(r"live session|interview|nieuws|journal|feest|f[êe]te|concert|hommage|c[ée]r[ée]monie|plechtig|verkiezing|[ée]lection|campagne", re.I))
+
 # Spain: a committee covering education counts only when at least this many of its sessions are posted; otherwise the
 # council's plenaries do (one stray committee clip shouldn't replace 160 plenaries).
-MIN_EDU = {"ES": 3, "FRA": 3, "EC": 3, "IT": 3, "PL": 3}
+MIN_EDU = {"ES": 3, "FRA": 3, "EC": 3, "IT": 3, "PL": 3, "PT": 3, "BE": 3}
 
 
 def session_key(cc, t):
@@ -196,6 +211,10 @@ def meetings(cc, did):
 # Channels checked by hand and found to be another place's (by channel URL). The search matched on the name, and
 # many of these names exist in other Spanish-speaking countries too, or in both Chile and Colombia.
 NOT_CHANNELS = {
+    # Portugal: Brazilian municipal chambers with a Portuguese town's name (checked by their videos' titles)
+    "PT": {"https://www.youtube.com/channel/UC4Q-Xy8kTVVcUxlqSprl6Kw",   # Rolim de Moura (Rondônia), not Moura
+           "https://www.youtube.com/channel/UCWXrV0wJl28CErzmErc4BfQ",   # São Vicente (São Paulo), not São Vicente (Madeira)
+           "https://www.youtube.com/channel/UCHDBrzikMNrcFv7g0oX4pgQ"},  # Óbidos (Pará): numbered chamber sessions, not Óbidos
     # Italy: one of Rome's districts (municipi), not Rome's city council
     "IT": {"https://www.youtube.com/channel/UCTzjPrb12wVS2Io2QN_Mo0g"},   # Municipio Roma VI
     # France: Quebec towns with a French commune's name (checked by their videos' titles)
