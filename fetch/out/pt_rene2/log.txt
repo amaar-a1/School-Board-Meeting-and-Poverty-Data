@@ -1,0 +1,40 @@
+ERR https://backoffice.dgeec.min-educ.pt/api/ficheiros/6abe735fc30ad7414f70ea62 <urlopen error [Errno -2] Name or service not known>
+got ReNE2025_PRT_NUTS_I_II_XLSX.zip 190857
+skip ReNE2025_PRT_NUTS_I_II_ODS.zip
+skip ReNE2025_Vol_I_Norte.pdf
+got ReNE2025_Vol_I_Norte_XLSX.zip 2814578
+skip ReNE2025_Vol_I_Norte_ODS.zip
+skip ReNE2025_Vol_II_Centro.pdf
+got ReNE2025_Vol_II_Centro_XLSX.zip 2483048
+skip ReNE2025_Vol_II_Centro_ODS.zip
+skip ReNE2025_Vol_III_OesteVT.pdf
+got ReNE2025_Vol_III_OesteVT_XLSX.zip 1109905
+skip ReNE2025_Vol_III_OesteVT_ODS.zip
+skip ReNE2025_Vol_IV_GLisboa.pdf
+got ReNE2025_Vol_IV_GLisboa_XLSX.zip 288854
+skip ReNE2025_Vol_IV_GLisboa_ODS.zip
+skip ReNE2025_Vol_V_PSetubal.pdf
+got ReNE2025_Vol_V_PSetubal_XLSX.zip 285450
+skip ReNE2025_Vol_V_PSetubal_ODS.zip
+skip ReNE2025_Vol_VI_Alentejo.pdf
+got ReNE2025_Vol_VI_Alentejo_XLSX.zip 1513933
+skip ReNE2025_Vol_VI_Alentejo_ODS.zip
+skip ReNE2025_Vol_VII_Algarve.pdf
+got ReNE2025_Vol_VII_Algarve_XLSX.zip 494862
+skip ReNE2025_Vol_VII_Algarve_ODS.zip
+skip ReNE2025_Vol_IX_RAMadeira.pdf
+got ReNE2025_Vol_IX_RAMadeira_XLSX.zip 319989
+skip ReNE2025_Vol_IX_RAMadeira_ODS.zip
+skip ReNE2025_Vol_VIII_RAAcores.pdf
+got ReNE2025_Vol_VIII_RAAcores_XLSX.zip 552205
+skip ReNE2025_Vol_VIII_RAAcores_ODS.zip
+skip Flyer_RegioesEmNumeros-Educacao_20232024.pdf
+skip ReNE2024_PRT_NUTS_I_II_XLSX.zip
+skip ReNE2024_PRT_NUTS_I_II_ODS.zip
+skip ReNE2024_Vol_I_Norte.pdf
+skip ReNE2024_Vol_I_Norte_XLSX.zip
+skip ReNE2024_Vol_I_Norte_ODS.zip
+skip ReNE2024_Vol_II_Centro.pdf
+skip ReNE2024_Vol_II_Centro_XLSX.zip
+skip ReNE2024_Vol_II_Centro_ODS.zip
+skip ReNE2024_Vol_III_OesteVT.pdf
