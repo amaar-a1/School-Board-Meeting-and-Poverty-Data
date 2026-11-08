@@ -1,0 +1,1029 @@
+{
+  "odata.metadata":"https://opendata.cbs.nl/ODataApi/OData/83698NED/$metadata#Cbs.OData.WebAPI.TypedDataSet","value":[
+    {
+      "ID":15,"Geslacht":"T001038","Leeftijd":"10000","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":33229
+    },{
+      "ID":31,"Geslacht":"T001038","Leeftijd":"10000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":27611
+    },{
+      "ID":47,"Geslacht":"T001038","Leeftijd":"10000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":3348
+    },{
+      "ID":63,"Geslacht":"T001038","Leeftijd":"10000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":2270
+    },{
+      "ID":335,"Geslacht":"T001038","Leeftijd":"10010","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":295
+    },{
+      "ID":351,"Geslacht":"T001038","Leeftijd":"10010","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":247
+    },{
+      "ID":367,"Geslacht":"T001038","Leeftijd":"10010","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":33
+    },{
+      "ID":383,"Geslacht":"T001038","Leeftijd":"10010","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":15
+    },{
+      "ID":655,"Geslacht":"T001038","Leeftijd":"10100","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":306
+    },{
+      "ID":671,"Geslacht":"T001038","Leeftijd":"10100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":248
+    },{
+      "ID":687,"Geslacht":"T001038","Leeftijd":"10100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":41
+    },{
+      "ID":703,"Geslacht":"T001038","Leeftijd":"10100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":17
+    },{
+      "ID":975,"Geslacht":"T001038","Leeftijd":"10200","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":327
+    },{
+      "ID":991,"Geslacht":"T001038","Leeftijd":"10200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":272
+    },{
+      "ID":1007,"Geslacht":"T001038","Leeftijd":"10200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":33
+    },{
+      "ID":1023,"Geslacht":"T001038","Leeftijd":"10200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":22
+    },{
+      "ID":1295,"Geslacht":"T001038","Leeftijd":"10300","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":314
+    },{
+      "ID":1311,"Geslacht":"T001038","Leeftijd":"10300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":255
+    },{
+      "ID":1327,"Geslacht":"T001038","Leeftijd":"10300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":35
+    },{
+      "ID":1343,"Geslacht":"T001038","Leeftijd":"10300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":24
+    },{
+      "ID":1615,"Geslacht":"T001038","Leeftijd":"10400","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":350
+    },{
+      "ID":1631,"Geslacht":"T001038","Leeftijd":"10400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":286
+    },{
+      "ID":1647,"Geslacht":"T001038","Leeftijd":"10400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":41
+    },{
+      "ID":1663,"Geslacht":"T001038","Leeftijd":"10400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":23
+    },{
+      "ID":1935,"Geslacht":"T001038","Leeftijd":"10500","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":360
+    },{
+      "ID":1951,"Geslacht":"T001038","Leeftijd":"10500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":291
+    },{
+      "ID":1967,"Geslacht":"T001038","Leeftijd":"10500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":53
+    },{
+      "ID":1983,"Geslacht":"T001038","Leeftijd":"10500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":16
+    },{
+      "ID":2255,"Geslacht":"T001038","Leeftijd":"10600","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":345
+    },{
+      "ID":2271,"Geslacht":"T001038","Leeftijd":"10600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":288
+    },{
+      "ID":2287,"Geslacht":"T001038","Leeftijd":"10600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":37
+    },{
+      "ID":2303,"Geslacht":"T001038","Leeftijd":"10600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":20
+    },{
+      "ID":2575,"Geslacht":"T001038","Leeftijd":"10700","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":353
+    },{
+      "ID":2591,"Geslacht":"T001038","Leeftijd":"10700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":293
+    },{
+      "ID":2607,"Geslacht":"T001038","Leeftijd":"10700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":44
+    },{
+      "ID":2623,"Geslacht":"T001038","Leeftijd":"10700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":16
+    },{
+      "ID":2895,"Geslacht":"T001038","Leeftijd":"10800","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":334
+    },{
+      "ID":2911,"Geslacht":"T001038","Leeftijd":"10800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":282
+    },{
+      "ID":2927,"Geslacht":"T001038","Leeftijd":"10800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":30
+    },{
+      "ID":2943,"Geslacht":"T001038","Leeftijd":"10800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":22
+    },{
+      "ID":3215,"Geslacht":"T001038","Leeftijd":"10900","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":334
+    },{
+      "ID":3231,"Geslacht":"T001038","Leeftijd":"10900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":282
+    },{
+      "ID":3247,"Geslacht":"T001038","Leeftijd":"10900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":33
+    },{
+      "ID":3263,"Geslacht":"T001038","Leeftijd":"10900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":19
+    },{
+      "ID":3535,"Geslacht":"T001038","Leeftijd":"11000","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":331
+    },{
+      "ID":3551,"Geslacht":"T001038","Leeftijd":"11000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":270
+    },{
+      "ID":3567,"Geslacht":"T001038","Leeftijd":"11000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":37
+    },{
+      "ID":3583,"Geslacht":"T001038","Leeftijd":"11000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":24
+    },{
+      "ID":3855,"Geslacht":"T001038","Leeftijd":"11100","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":356
+    },{
+      "ID":3871,"Geslacht":"T001038","Leeftijd":"11100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":291
+    },{
+      "ID":3887,"Geslacht":"T001038","Leeftijd":"11100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":44
+    },{
+      "ID":3903,"Geslacht":"T001038","Leeftijd":"11100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":21
+    },{
+      "ID":4175,"Geslacht":"T001038","Leeftijd":"11200","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":369
+    },{
+      "ID":4191,"Geslacht":"T001038","Leeftijd":"11200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":304
+    },{
+      "ID":4207,"Geslacht":"T001038","Leeftijd":"11200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":43
+    },{
+      "ID":4223,"Geslacht":"T001038","Leeftijd":"11200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":22
+    },{
+      "ID":4495,"Geslacht":"T001038","Leeftijd":"11300","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":360
+    },{
+      "ID":4511,"Geslacht":"T001038","Leeftijd":"11300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":304
+    },{
+      "ID":4527,"Geslacht":"T001038","Leeftijd":"11300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":38
+    },{
+      "ID":4543,"Geslacht":"T001038","Leeftijd":"11300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":18
+    },{
+      "ID":4815,"Geslacht":"T001038","Leeftijd":"11400","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":351
+    },{
+      "ID":4831,"Geslacht":"T001038","Leeftijd":"11400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":289
+    },{
+      "ID":4847,"Geslacht":"T001038","Leeftijd":"11400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":45
+    },{
+      "ID":4863,"Geslacht":"T001038","Leeftijd":"11400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":17
+    },{
+      "ID":5135,"Geslacht":"T001038","Leeftijd":"11500","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":402
+    },{
+      "ID":5151,"Geslacht":"T001038","Leeftijd":"11500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":330
+    },{
+      "ID":5167,"Geslacht":"T001038","Leeftijd":"11500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":50
+    },{
+      "ID":5183,"Geslacht":"T001038","Leeftijd":"11500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":22
+    },{
+      "ID":5455,"Geslacht":"T001038","Leeftijd":"11600","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":387
+    },{
+      "ID":5471,"Geslacht":"T001038","Leeftijd":"11600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":309
+    },{
+      "ID":5487,"Geslacht":"T001038","Leeftijd":"11600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":53
+    },{
+      "ID":5503,"Geslacht":"T001038","Leeftijd":"11600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":25
+    },{
+      "ID":5775,"Geslacht":"T001038","Leeftijd":"11700","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":353
+    },{
+      "ID":5791,"Geslacht":"T001038","Leeftijd":"11700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":294
+    },{
+      "ID":5807,"Geslacht":"T001038","Leeftijd":"11700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":34
+    },{
+      "ID":5823,"Geslacht":"T001038","Leeftijd":"11700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":25
+    },{
+      "ID":6095,"Geslacht":"T001038","Leeftijd":"11800","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":297
+    },{
+      "ID":6111,"Geslacht":"T001038","Leeftijd":"11800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":249
+    },{
+      "ID":6127,"Geslacht":"T001038","Leeftijd":"11800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":30
+    },{
+      "ID":6143,"Geslacht":"T001038","Leeftijd":"11800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":18
+    },{
+      "ID":6415,"Geslacht":"T001038","Leeftijd":"11900","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":271
+    },{
+      "ID":6431,"Geslacht":"T001038","Leeftijd":"11900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":234
+    },{
+      "ID":6447,"Geslacht":"T001038","Leeftijd":"11900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":25
+    },{
+      "ID":6463,"Geslacht":"T001038","Leeftijd":"11900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":12
+    },{
+      "ID":6735,"Geslacht":"T001038","Leeftijd":"12000","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":272
+    },{
+      "ID":6751,"Geslacht":"T001038","Leeftijd":"12000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":224
+    },{
+      "ID":6767,"Geslacht":"T001038","Leeftijd":"12000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":30
+    },{
+      "ID":6783,"Geslacht":"T001038","Leeftijd":"12000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":18
+    },{
+      "ID":7055,"Geslacht":"T001038","Leeftijd":"12100","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":275
+    },{
+      "ID":7071,"Geslacht":"T001038","Leeftijd":"12100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":229
+    },{
+      "ID":7087,"Geslacht":"T001038","Leeftijd":"12100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":24
+    },{
+      "ID":7103,"Geslacht":"T001038","Leeftijd":"12100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":22
+    },{
+      "ID":7375,"Geslacht":"T001038","Leeftijd":"12200","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":310
+    },{
+      "ID":7391,"Geslacht":"T001038","Leeftijd":"12200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":265
+    },{
+      "ID":7407,"Geslacht":"T001038","Leeftijd":"12200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":29
+    },{
+      "ID":7423,"Geslacht":"T001038","Leeftijd":"12200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":16
+    },{
+      "ID":7695,"Geslacht":"T001038","Leeftijd":"12300","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":365
+    },{
+      "ID":7711,"Geslacht":"T001038","Leeftijd":"12300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":304
+    },{
+      "ID":7727,"Geslacht":"T001038","Leeftijd":"12300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":24
+    },{
+      "ID":7743,"Geslacht":"T001038","Leeftijd":"12300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":37
+    },{
+      "ID":8015,"Geslacht":"T001038","Leeftijd":"12400","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":389
+    },{
+      "ID":8031,"Geslacht":"T001038","Leeftijd":"12400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":310
+    },{
+      "ID":8047,"Geslacht":"T001038","Leeftijd":"12400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":43
+    },{
+      "ID":8063,"Geslacht":"T001038","Leeftijd":"12400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":36
+    },{
+      "ID":8335,"Geslacht":"T001038","Leeftijd":"12500","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":392
+    },{
+      "ID":8351,"Geslacht":"T001038","Leeftijd":"12500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":323
+    },{
+      "ID":8367,"Geslacht":"T001038","Leeftijd":"12500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":32
+    },{
+      "ID":8383,"Geslacht":"T001038","Leeftijd":"12500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":37
+    },{
+      "ID":8655,"Geslacht":"T001038","Leeftijd":"12600","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":386
+    },{
+      "ID":8671,"Geslacht":"T001038","Leeftijd":"12600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":330
+    },{
+      "ID":8687,"Geslacht":"T001038","Leeftijd":"12600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":33
+    },{
+      "ID":8703,"Geslacht":"T001038","Leeftijd":"12600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":23
+    },{
+      "ID":8975,"Geslacht":"T001038","Leeftijd":"12700","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":394
+    },{
+      "ID":8991,"Geslacht":"T001038","Leeftijd":"12700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":338
+    },{
+      "ID":9007,"Geslacht":"T001038","Leeftijd":"12700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":31
+    },{
+      "ID":9023,"Geslacht":"T001038","Leeftijd":"12700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":25
+    },{
+      "ID":9295,"Geslacht":"T001038","Leeftijd":"12800","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":416
+    },{
+      "ID":9311,"Geslacht":"T001038","Leeftijd":"12800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":343
+    },{
+      "ID":9327,"Geslacht":"T001038","Leeftijd":"12800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":36
+    },{
+      "ID":9343,"Geslacht":"T001038","Leeftijd":"12800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":37
+    },{
+      "ID":9615,"Geslacht":"T001038","Leeftijd":"12900","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":484
+    },{
+      "ID":9631,"Geslacht":"T001038","Leeftijd":"12900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":408
+    },{
+      "ID":9647,"Geslacht":"T001038","Leeftijd":"12900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":36
+    },{
+      "ID":9663,"Geslacht":"T001038","Leeftijd":"12900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":40
+    },{
+      "ID":9935,"Geslacht":"T001038","Leeftijd":"13000","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":542
+    },{
+      "ID":9951,"Geslacht":"T001038","Leeftijd":"13000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":465
+    },{
+      "ID":9967,"Geslacht":"T001038","Leeftijd":"13000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":42
+    },{
+      "ID":9983,"Geslacht":"T001038","Leeftijd":"13000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":35
+    },{
+      "ID":10255,"Geslacht":"T001038","Leeftijd":"13100","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":518
+    },{
+      "ID":10271,"Geslacht":"T001038","Leeftijd":"13100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":445
+    },{
+      "ID":10287,"Geslacht":"T001038","Leeftijd":"13100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":31
+    },{
+      "ID":10303,"Geslacht":"T001038","Leeftijd":"13100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":42
+    },{
+      "ID":10575,"Geslacht":"T001038","Leeftijd":"13200","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":555
+    },{
+      "ID":10591,"Geslacht":"T001038","Leeftijd":"13200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":470
+    },{
+      "ID":10607,"Geslacht":"T001038","Leeftijd":"13200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":43
+    },{
+      "ID":10623,"Geslacht":"T001038","Leeftijd":"13200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":42
+    },{
+      "ID":10895,"Geslacht":"T001038","Leeftijd":"13300","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":574
+    },{
+      "ID":10911,"Geslacht":"T001038","Leeftijd":"13300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":459
+    },{
+      "ID":10927,"Geslacht":"T001038","Leeftijd":"13300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":56
+    },{
+      "ID":10943,"Geslacht":"T001038","Leeftijd":"13300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":59
+    },{
+      "ID":11215,"Geslacht":"T001038","Leeftijd":"13400","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":588
+    },{
+      "ID":11231,"Geslacht":"T001038","Leeftijd":"13400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":481
+    },{
+      "ID":11247,"Geslacht":"T001038","Leeftijd":"13400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":52
+    },{
+      "ID":11263,"Geslacht":"T001038","Leeftijd":"13400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":55
+    },{
+      "ID":11535,"Geslacht":"T001038","Leeftijd":"13500","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":585
+    },{
+      "ID":11551,"Geslacht":"T001038","Leeftijd":"13500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":484
+    },{
+      "ID":11567,"Geslacht":"T001038","Leeftijd":"13500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":53
+    },{
+      "ID":11583,"Geslacht":"T001038","Leeftijd":"13500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":48
+    },{
+      "ID":11855,"Geslacht":"T001038","Leeftijd":"13600","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":620
+    },{
+      "ID":11871,"Geslacht":"T001038","Leeftijd":"13600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":520
+    },{
+      "ID":11887,"Geslacht":"T001038","Leeftijd":"13600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":54
+    },{
+      "ID":11903,"Geslacht":"T001038","Leeftijd":"13600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":46
+    },{
+      "ID":12175,"Geslacht":"T001038","Leeftijd":"13700","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":583
+    },{
+      "ID":12191,"Geslacht":"T001038","Leeftijd":"13700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":487
+    },{
+      "ID":12207,"Geslacht":"T001038","Leeftijd":"13700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":49
+    },{
+      "ID":12223,"Geslacht":"T001038","Leeftijd":"13700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":47
+    },{
+      "ID":12495,"Geslacht":"T001038","Leeftijd":"13800","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":550
+    },{
+      "ID":12511,"Geslacht":"T001038","Leeftijd":"13800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":465
+    },{
+      "ID":12527,"Geslacht":"T001038","Leeftijd":"13800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":44
+    },{
+      "ID":12543,"Geslacht":"T001038","Leeftijd":"13800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":41
+    },{
+      "ID":12815,"Geslacht":"T001038","Leeftijd":"13900","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":591
+    },{
+      "ID":12831,"Geslacht":"T001038","Leeftijd":"13900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":484
+    },{
+      "ID":12847,"Geslacht":"T001038","Leeftijd":"13900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":69
+    },{
+      "ID":12863,"Geslacht":"T001038","Leeftijd":"13900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":38
+    },{
+      "ID":13135,"Geslacht":"T001038","Leeftijd":"14000","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":561
+    },{
+      "ID":13151,"Geslacht":"T001038","Leeftijd":"14000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":465
+    },{
+      "ID":13167,"Geslacht":"T001038","Leeftijd":"14000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":55
+    },{
+      "ID":13183,"Geslacht":"T001038","Leeftijd":"14000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":41
+    },{
+      "ID":13455,"Geslacht":"T001038","Leeftijd":"14100","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":541
+    },{
+      "ID":13471,"Geslacht":"T001038","Leeftijd":"14100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":462
+    },{
+      "ID":13487,"Geslacht":"T001038","Leeftijd":"14100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":48
+    },{
+      "ID":13503,"Geslacht":"T001038","Leeftijd":"14100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":31
+    },{
+      "ID":13775,"Geslacht":"T001038","Leeftijd":"14200","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":609
+    },{
+      "ID":13791,"Geslacht":"T001038","Leeftijd":"14200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":499
+    },{
+      "ID":13807,"Geslacht":"T001038","Leeftijd":"14200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":67
+    },{
+      "ID":13823,"Geslacht":"T001038","Leeftijd":"14200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":43
+    },{
+      "ID":14095,"Geslacht":"T001038","Leeftijd":"14300","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":549
+    },{
+      "ID":14111,"Geslacht":"T001038","Leeftijd":"14300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":461
+    },{
+      "ID":14127,"Geslacht":"T001038","Leeftijd":"14300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":57
+    },{
+      "ID":14143,"Geslacht":"T001038","Leeftijd":"14300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":31
+    },{
+      "ID":14415,"Geslacht":"T001038","Leeftijd":"14400","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":546
+    },{
+      "ID":14431,"Geslacht":"T001038","Leeftijd":"14400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":460
+    },{
+      "ID":14447,"Geslacht":"T001038","Leeftijd":"14400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":53
+    },{
+      "ID":14463,"Geslacht":"T001038","Leeftijd":"14400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":33
+    },{
+      "ID":14735,"Geslacht":"T001038","Leeftijd":"14500","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":519
+    },{
+      "ID":14751,"Geslacht":"T001038","Leeftijd":"14500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":429
+    },{
+      "ID":14767,"Geslacht":"T001038","Leeftijd":"14500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":54
+    },{
+      "ID":14783,"Geslacht":"T001038","Leeftijd":"14500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":36
+    },{
+      "ID":15055,"Geslacht":"T001038","Leeftijd":"14600","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":469
+    },{
+      "ID":15071,"Geslacht":"T001038","Leeftijd":"14600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":391
+    },{
+      "ID":15087,"Geslacht":"T001038","Leeftijd":"14600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":43
+    },{
+      "ID":15103,"Geslacht":"T001038","Leeftijd":"14600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":35
+    },{
+      "ID":15375,"Geslacht":"T001038","Leeftijd":"14700","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":439
+    },{
+      "ID":15391,"Geslacht":"T001038","Leeftijd":"14700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":375
+    },{
+      "ID":15407,"Geslacht":"T001038","Leeftijd":"14700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":44
+    },{
+      "ID":15423,"Geslacht":"T001038","Leeftijd":"14700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":20
+    },{
+      "ID":15695,"Geslacht":"T001038","Leeftijd":"14800","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":428
+    },{
+      "ID":15711,"Geslacht":"T001038","Leeftijd":"14800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":364
+    },{
+      "ID":15727,"Geslacht":"T001038","Leeftijd":"14800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":38
+    },{
+      "ID":15743,"Geslacht":"T001038","Leeftijd":"14800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":26
+    },{
+      "ID":16015,"Geslacht":"T001038","Leeftijd":"14900","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":471
+    },{
+      "ID":16031,"Geslacht":"T001038","Leeftijd":"14900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":390
+    },{
+      "ID":16047,"Geslacht":"T001038","Leeftijd":"14900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":58
+    },{
+      "ID":16063,"Geslacht":"T001038","Leeftijd":"14900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":23
+    },{
+      "ID":16335,"Geslacht":"T001038","Leeftijd":"15000","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":421
+    },{
+      "ID":16351,"Geslacht":"T001038","Leeftijd":"15000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":342
+    },{
+      "ID":16367,"Geslacht":"T001038","Leeftijd":"15000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":47
+    },{
+      "ID":16383,"Geslacht":"T001038","Leeftijd":"15000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":32
+    },{
+      "ID":16655,"Geslacht":"T001038","Leeftijd":"15100","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":442
+    },{
+      "ID":16671,"Geslacht":"T001038","Leeftijd":"15100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":345
+    },{
+      "ID":16687,"Geslacht":"T001038","Leeftijd":"15100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":57
+    },{
+      "ID":16703,"Geslacht":"T001038","Leeftijd":"15100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":40
+    },{
+      "ID":16975,"Geslacht":"T001038","Leeftijd":"15200","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":422
+    },{
+      "ID":16991,"Geslacht":"T001038","Leeftijd":"15200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":353
+    },{
+      "ID":17007,"Geslacht":"T001038","Leeftijd":"15200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":49
+    },{
+      "ID":17023,"Geslacht":"T001038","Leeftijd":"15200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":20
+    },{
+      "ID":17295,"Geslacht":"T001038","Leeftijd":"15300","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":448
+    },{
+      "ID":17311,"Geslacht":"T001038","Leeftijd":"15300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":363
+    },{
+      "ID":17327,"Geslacht":"T001038","Leeftijd":"15300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":50
+    },{
+      "ID":17343,"Geslacht":"T001038","Leeftijd":"15300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":35
+    },{
+      "ID":17615,"Geslacht":"T001038","Leeftijd":"15400","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":463
+    },{
+      "ID":17631,"Geslacht":"T001038","Leeftijd":"15400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":380
+    },{
+      "ID":17647,"Geslacht":"T001038","Leeftijd":"15400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":55
+    },{
+      "ID":17663,"Geslacht":"T001038","Leeftijd":"15400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":28
+    },{
+      "ID":17935,"Geslacht":"T001038","Leeftijd":"15500","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":424
+    },{
+      "ID":17951,"Geslacht":"T001038","Leeftijd":"15500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":348
+    },{
+      "ID":17967,"Geslacht":"T001038","Leeftijd":"15500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":47
+    },{
+      "ID":17983,"Geslacht":"T001038","Leeftijd":"15500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":29
+    },{
+      "ID":18255,"Geslacht":"T001038","Leeftijd":"15600","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":504
+    },{
+      "ID":18271,"Geslacht":"T001038","Leeftijd":"15600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":423
+    },{
+      "ID":18287,"Geslacht":"T001038","Leeftijd":"15600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":47
+    },{
+      "ID":18303,"Geslacht":"T001038","Leeftijd":"15600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":34
+    },{
+      "ID":18575,"Geslacht":"T001038","Leeftijd":"15700","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":472
+    },{
+      "ID":18591,"Geslacht":"T001038","Leeftijd":"15700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":409
+    },{
+      "ID":18607,"Geslacht":"T001038","Leeftijd":"15700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":36
+    },{
+      "ID":18623,"Geslacht":"T001038","Leeftijd":"15700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":27
+    },{
+      "ID":18895,"Geslacht":"T001038","Leeftijd":"15800","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":494
+    },{
+      "ID":18911,"Geslacht":"T001038","Leeftijd":"15800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":413
+    },{
+      "ID":18927,"Geslacht":"T001038","Leeftijd":"15800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":53
+    },{
+      "ID":18943,"Geslacht":"T001038","Leeftijd":"15800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":28
+    },{
+      "ID":19215,"Geslacht":"T001038","Leeftijd":"15900","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":481
+    },{
+      "ID":19231,"Geslacht":"T001038","Leeftijd":"15900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":386
+    },{
+      "ID":19247,"Geslacht":"T001038","Leeftijd":"15900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":62
+    },{
+      "ID":19263,"Geslacht":"T001038","Leeftijd":"15900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":33
+    },{
+      "ID":19535,"Geslacht":"T001038","Leeftijd":"16000","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":474
+    },{
+      "ID":19551,"Geslacht":"T001038","Leeftijd":"16000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":398
+    },{
+      "ID":19567,"Geslacht":"T001038","Leeftijd":"16000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":47
+    },{
+      "ID":19583,"Geslacht":"T001038","Leeftijd":"16000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":29
+    },{
+      "ID":19855,"Geslacht":"T001038","Leeftijd":"16100","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":499
+    },{
+      "ID":19871,"Geslacht":"T001038","Leeftijd":"16100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":427
+    },{
+      "ID":19887,"Geslacht":"T001038","Leeftijd":"16100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":50
+    },{
+      "ID":19903,"Geslacht":"T001038","Leeftijd":"16100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":22
+    },{
+      "ID":20175,"Geslacht":"T001038","Leeftijd":"16200","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":486
+    },{
+      "ID":20191,"Geslacht":"T001038","Leeftijd":"16200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":408
+    },{
+      "ID":20207,"Geslacht":"T001038","Leeftijd":"16200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":50
+    },{
+      "ID":20223,"Geslacht":"T001038","Leeftijd":"16200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":28
+    },{
+      "ID":20495,"Geslacht":"T001038","Leeftijd":"16300","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":488
+    },{
+      "ID":20511,"Geslacht":"T001038","Leeftijd":"16300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":402
+    },{
+      "ID":20527,"Geslacht":"T001038","Leeftijd":"16300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":50
+    },{
+      "ID":20543,"Geslacht":"T001038","Leeftijd":"16300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":36
+    },{
+      "ID":20815,"Geslacht":"T001038","Leeftijd":"16400","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":428
+    },{
+      "ID":20831,"Geslacht":"T001038","Leeftijd":"16400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":359
+    },{
+      "ID":20847,"Geslacht":"T001038","Leeftijd":"16400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":41
+    },{
+      "ID":20863,"Geslacht":"T001038","Leeftijd":"16400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":28
+    },{
+      "ID":21135,"Geslacht":"T001038","Leeftijd":"16500","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":429
+    },{
+      "ID":21151,"Geslacht":"T001038","Leeftijd":"16500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":363
+    },{
+      "ID":21167,"Geslacht":"T001038","Leeftijd":"16500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":42
+    },{
+      "ID":21183,"Geslacht":"T001038","Leeftijd":"16500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":24
+    },{
+      "ID":21455,"Geslacht":"T001038","Leeftijd":"16600","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":394
+    },{
+      "ID":21471,"Geslacht":"T001038","Leeftijd":"16600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":337
+    },{
+      "ID":21487,"Geslacht":"T001038","Leeftijd":"16600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":38
+    },{
+      "ID":21503,"Geslacht":"T001038","Leeftijd":"16600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":19
+    },{
+      "ID":21775,"Geslacht":"T001038","Leeftijd":"16700","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":374
+    },{
+      "ID":21791,"Geslacht":"T001038","Leeftijd":"16700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":321
+    },{
+      "ID":21807,"Geslacht":"T001038","Leeftijd":"16700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":35
+    },{
+      "ID":21823,"Geslacht":"T001038","Leeftijd":"16700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":18
+    },{
+      "ID":22095,"Geslacht":"T001038","Leeftijd":"16800","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":357
+    },{
+      "ID":22111,"Geslacht":"T001038","Leeftijd":"16800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":295
+    },{
+      "ID":22127,"Geslacht":"T001038","Leeftijd":"16800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":42
+    },{
+      "ID":22143,"Geslacht":"T001038","Leeftijd":"16800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":20
+    },{
+      "ID":22415,"Geslacht":"T001038","Leeftijd":"16900","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":307
+    },{
+      "ID":22431,"Geslacht":"T001038","Leeftijd":"16900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":258
+    },{
+      "ID":22447,"Geslacht":"T001038","Leeftijd":"16900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":29
+    },{
+      "ID":22463,"Geslacht":"T001038","Leeftijd":"16900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":20
+    },{
+      "ID":22735,"Geslacht":"T001038","Leeftijd":"17000","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":303
+    },{
+      "ID":22751,"Geslacht":"T001038","Leeftijd":"17000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":248
+    },{
+      "ID":22767,"Geslacht":"T001038","Leeftijd":"17000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":26
+    },{
+      "ID":22783,"Geslacht":"T001038","Leeftijd":"17000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":29
+    },{
+      "ID":23055,"Geslacht":"T001038","Leeftijd":"17100","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":263
+    },{
+      "ID":23071,"Geslacht":"T001038","Leeftijd":"17100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":214
+    },{
+      "ID":23087,"Geslacht":"T001038","Leeftijd":"17100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":32
+    },{
+      "ID":23103,"Geslacht":"T001038","Leeftijd":"17100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":17
+    },{
+      "ID":23375,"Geslacht":"T001038","Leeftijd":"17200","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":245
+    },{
+      "ID":23391,"Geslacht":"T001038","Leeftijd":"17200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":207
+    },{
+      "ID":23407,"Geslacht":"T001038","Leeftijd":"17200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":23
+    },{
+      "ID":23423,"Geslacht":"T001038","Leeftijd":"17200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":15
+    },{
+      "ID":23695,"Geslacht":"T001038","Leeftijd":"17300","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":247
+    },{
+      "ID":23711,"Geslacht":"T001038","Leeftijd":"17300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":204
+    },{
+      "ID":23727,"Geslacht":"T001038","Leeftijd":"17300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":22
+    },{
+      "ID":23743,"Geslacht":"T001038","Leeftijd":"17300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":21
+    },{
+      "ID":24015,"Geslacht":"T001038","Leeftijd":"17400","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":227
+    },{
+      "ID":24031,"Geslacht":"T001038","Leeftijd":"17400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":181
+    },{
+      "ID":24047,"Geslacht":"T001038","Leeftijd":"17400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":28
+    },{
+      "ID":24063,"Geslacht":"T001038","Leeftijd":"17400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":18
+    },{
+      "ID":24335,"Geslacht":"T001038","Leeftijd":"17500","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":207
+    },{
+      "ID":24351,"Geslacht":"T001038","Leeftijd":"17500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":169
+    },{
+      "ID":24367,"Geslacht":"T001038","Leeftijd":"17500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":20
+    },{
+      "ID":24383,"Geslacht":"T001038","Leeftijd":"17500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":18
+    },{
+      "ID":24655,"Geslacht":"T001038","Leeftijd":"17600","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":200
+    },{
+      "ID":24671,"Geslacht":"T001038","Leeftijd":"17600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":168
+    },{
+      "ID":24687,"Geslacht":"T001038","Leeftijd":"17600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":21
+    },{
+      "ID":24703,"Geslacht":"T001038","Leeftijd":"17600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":11
+    },{
+      "ID":24975,"Geslacht":"T001038","Leeftijd":"17700","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":168
+    },{
+      "ID":24991,"Geslacht":"T001038","Leeftijd":"17700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":142
+    },{
+      "ID":25007,"Geslacht":"T001038","Leeftijd":"17700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":18
+    },{
+      "ID":25023,"Geslacht":"T001038","Leeftijd":"17700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":8
+    },{
+      "ID":25295,"Geslacht":"T001038","Leeftijd":"17800","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":179
+    },{
+      "ID":25311,"Geslacht":"T001038","Leeftijd":"17800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":148
+    },{
+      "ID":25327,"Geslacht":"T001038","Leeftijd":"17800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":15
+    },{
+      "ID":25343,"Geslacht":"T001038","Leeftijd":"17800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":16
+    },{
+      "ID":25615,"Geslacht":"T001038","Leeftijd":"17900","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":165
+    },{
+      "ID":25631,"Geslacht":"T001038","Leeftijd":"17900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":140
+    },{
+      "ID":25647,"Geslacht":"T001038","Leeftijd":"17900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":10
+    },{
+      "ID":25663,"Geslacht":"T001038","Leeftijd":"17900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":15
+    },{
+      "ID":25935,"Geslacht":"T001038","Leeftijd":"18000","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":134
+    },{
+      "ID":25951,"Geslacht":"T001038","Leeftijd":"18000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":96
+    },{
+      "ID":25967,"Geslacht":"T001038","Leeftijd":"18000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":23
+    },{
+      "ID":25983,"Geslacht":"T001038","Leeftijd":"18000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":15
+    },{
+      "ID":26255,"Geslacht":"T001038","Leeftijd":"18100","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":123
+    },{
+      "ID":26271,"Geslacht":"T001038","Leeftijd":"18100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":105
+    },{
+      "ID":26287,"Geslacht":"T001038","Leeftijd":"18100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":6
+    },{
+      "ID":26303,"Geslacht":"T001038","Leeftijd":"18100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":12
+    },{
+      "ID":26575,"Geslacht":"T001038","Leeftijd":"18200","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":108
+    },{
+      "ID":26591,"Geslacht":"T001038","Leeftijd":"18200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":87
+    },{
+      "ID":26607,"Geslacht":"T001038","Leeftijd":"18200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":12
+    },{
+      "ID":26623,"Geslacht":"T001038","Leeftijd":"18200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":9
+    },{
+      "ID":26895,"Geslacht":"T001038","Leeftijd":"18300","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":89
+    },{
+      "ID":26911,"Geslacht":"T001038","Leeftijd":"18300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":72
+    },{
+      "ID":26927,"Geslacht":"T001038","Leeftijd":"18300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":7
+    },{
+      "ID":26943,"Geslacht":"T001038","Leeftijd":"18300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":10
+    },{
+      "ID":27215,"Geslacht":"T001038","Leeftijd":"18400","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":64
+    },{
+      "ID":27231,"Geslacht":"T001038","Leeftijd":"18400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":48
+    },{
+      "ID":27247,"Geslacht":"T001038","Leeftijd":"18400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":8
+    },{
+      "ID":27263,"Geslacht":"T001038","Leeftijd":"18400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":8
+    },{
+      "ID":27535,"Geslacht":"T001038","Leeftijd":"18500","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":64
+    },{
+      "ID":27551,"Geslacht":"T001038","Leeftijd":"18500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":51
+    },{
+      "ID":27567,"Geslacht":"T001038","Leeftijd":"18500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":10
+    },{
+      "ID":27583,"Geslacht":"T001038","Leeftijd":"18500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":3
+    },{
+      "ID":27855,"Geslacht":"T001038","Leeftijd":"18600","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":65
+    },{
+      "ID":27871,"Geslacht":"T001038","Leeftijd":"18600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":54
+    },{
+      "ID":27887,"Geslacht":"T001038","Leeftijd":"18600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":2
+    },{
+      "ID":27903,"Geslacht":"T001038","Leeftijd":"18600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":9
+    },{
+      "ID":28175,"Geslacht":"T001038","Leeftijd":"18700","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":45
+    },{
+      "ID":28191,"Geslacht":"T001038","Leeftijd":"18700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":37
+    },{
+      "ID":28207,"Geslacht":"T001038","Leeftijd":"18700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":4
+    },{
+      "ID":28223,"Geslacht":"T001038","Leeftijd":"18700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":4
+    },{
+      "ID":28495,"Geslacht":"T001038","Leeftijd":"18800","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":50
+    },{
+      "ID":28511,"Geslacht":"T001038","Leeftijd":"18800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":41
+    },{
+      "ID":28527,"Geslacht":"T001038","Leeftijd":"18800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":3
+    },{
+      "ID":28543,"Geslacht":"T001038","Leeftijd":"18800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":6
+    },{
+      "ID":28815,"Geslacht":"T001038","Leeftijd":"18900","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":37
+    },{
+      "ID":28831,"Geslacht":"T001038","Leeftijd":"18900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":31
+    },{
+      "ID":28847,"Geslacht":"T001038","Leeftijd":"18900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":2
+    },{
+      "ID":28863,"Geslacht":"T001038","Leeftijd":"18900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":4
+    },{
+      "ID":29135,"Geslacht":"T001038","Leeftijd":"19000","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":25
+    },{
+      "ID":29151,"Geslacht":"T001038","Leeftijd":"19000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":19
+    },{
+      "ID":29167,"Geslacht":"T001038","Leeftijd":"19000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":5
+    },{
+      "ID":29183,"Geslacht":"T001038","Leeftijd":"19000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":1
+    },{
+      "ID":29455,"Geslacht":"T001038","Leeftijd":"19100","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":23
+    },{
+      "ID":29471,"Geslacht":"T001038","Leeftijd":"19100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":14
+    },{
+      "ID":29487,"Geslacht":"T001038","Leeftijd":"19100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":4
+    },{
+      "ID":29503,"Geslacht":"T001038","Leeftijd":"19100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":5
+    },{
+      "ID":29775,"Geslacht":"T001038","Leeftijd":"19200","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":16
+    },{
+      "ID":29791,"Geslacht":"T001038","Leeftijd":"19200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":10
+    },{
+      "ID":29807,"Geslacht":"T001038","Leeftijd":"19200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":4
+    },{
+      "ID":29823,"Geslacht":"T001038","Leeftijd":"19200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":2
+    },{
+      "ID":30095,"Geslacht":"T001038","Leeftijd":"19300","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":18
+    },{
+      "ID":30111,"Geslacht":"T001038","Leeftijd":"19300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":15
+    },{
+      "ID":30127,"Geslacht":"T001038","Leeftijd":"19300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":2
+    },{
+      "ID":30143,"Geslacht":"T001038","Leeftijd":"19300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":1
+    },{
+      "ID":30415,"Geslacht":"T001038","Leeftijd":"19400","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":8
+    },{
+      "ID":30431,"Geslacht":"T001038","Leeftijd":"19400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":7
+    },{
+      "ID":30447,"Geslacht":"T001038","Leeftijd":"19400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":1
+    },{
+      "ID":30463,"Geslacht":"T001038","Leeftijd":"19400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":30735,"Geslacht":"T001038","Leeftijd":"19500","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":9
+    },{
+      "ID":30751,"Geslacht":"T001038","Leeftijd":"19500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":8
+    },{
+      "ID":30767,"Geslacht":"T001038","Leeftijd":"19500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":30783,"Geslacht":"T001038","Leeftijd":"19500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":1
+    },{
+      "ID":31055,"Geslacht":"T001038","Leeftijd":"19600","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":7
+    },{
+      "ID":31071,"Geslacht":"T001038","Leeftijd":"19600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":4
+    },{
+      "ID":31087,"Geslacht":"T001038","Leeftijd":"19600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":3
+    },{
+      "ID":31103,"Geslacht":"T001038","Leeftijd":"19600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":31375,"Geslacht":"T001038","Leeftijd":"19700","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":8
+    },{
+      "ID":31391,"Geslacht":"T001038","Leeftijd":"19700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":7
+    },{
+      "ID":31407,"Geslacht":"T001038","Leeftijd":"19700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":1
+    },{
+      "ID":31423,"Geslacht":"T001038","Leeftijd":"19700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":31695,"Geslacht":"T001038","Leeftijd":"19800","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":3
+    },{
+      "ID":31711,"Geslacht":"T001038","Leeftijd":"19800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":3
+    },{
+      "ID":31727,"Geslacht":"T001038","Leeftijd":"19800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":31743,"Geslacht":"T001038","Leeftijd":"19800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":32015,"Geslacht":"T001038","Leeftijd":"19900","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":2
+    },{
+      "ID":32031,"Geslacht":"T001038","Leeftijd":"19900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":1
+    },{
+      "ID":32047,"Geslacht":"T001038","Leeftijd":"19900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":1
+    },{
+      "ID":32063,"Geslacht":"T001038","Leeftijd":"19900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":32335,"Geslacht":"T001038","Leeftijd":"19901","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":2
+    },{
+      "ID":32351,"Geslacht":"T001038","Leeftijd":"19901","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":1
+    },{
+      "ID":32367,"Geslacht":"T001038","Leeftijd":"19901","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":32383,"Geslacht":"T001038","Leeftijd":"19901","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":1
+    },{
+      "ID":32655,"Geslacht":"T001038","Leeftijd":"19902","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":32671,"Geslacht":"T001038","Leeftijd":"19902","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":32687,"Geslacht":"T001038","Leeftijd":"19902","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":32703,"Geslacht":"T001038","Leeftijd":"19902","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":32975,"Geslacht":"T001038","Leeftijd":"19903","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":32991,"Geslacht":"T001038","Leeftijd":"19903","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":33007,"Geslacht":"T001038","Leeftijd":"19903","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":33023,"Geslacht":"T001038","Leeftijd":"19903","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":33295,"Geslacht":"T001038","Leeftijd":"19904","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":33311,"Geslacht":"T001038","Leeftijd":"19904","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":33327,"Geslacht":"T001038","Leeftijd":"19904","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":33343,"Geslacht":"T001038","Leeftijd":"19904","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":33615,"Geslacht":"T001038","Leeftijd":"19905","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":33631,"Geslacht":"T001038","Leeftijd":"19905","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":33647,"Geslacht":"T001038","Leeftijd":"19905","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":33663,"Geslacht":"T001038","Leeftijd":"19905","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":33935,"Geslacht":"T001038","Leeftijd":"22300","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":2
+    },{
+      "ID":33951,"Geslacht":"T001038","Leeftijd":"22300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":1
+    },{
+      "ID":33967,"Geslacht":"T001038","Leeftijd":"22300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":1
+    },{
+      "ID":33983,"Geslacht":"T001038","Leeftijd":"22300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":0
+    },{
+      "ID":34255,"Geslacht":"T001038","Leeftijd":"70100","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":1592
+    },{
+      "ID":34271,"Geslacht":"T001038","Leeftijd":"70100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":1308
+    },{
+      "ID":34287,"Geslacht":"T001038","Leeftijd":"70100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":183
+    },{
+      "ID":34303,"Geslacht":"T001038","Leeftijd":"70100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":101
+    },{
+      "ID":34575,"Geslacht":"T001038","Leeftijd":"70200","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":1726
+    },{
+      "ID":34591,"Geslacht":"T001038","Leeftijd":"70200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":1436
+    },{
+      "ID":34607,"Geslacht":"T001038","Leeftijd":"70200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":197
+    },{
+      "ID":34623,"Geslacht":"T001038","Leeftijd":"70200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":93
+    },{
+      "ID":34895,"Geslacht":"T001038","Leeftijd":"70300","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":1767
+    },{
+      "ID":34911,"Geslacht":"T001038","Leeftijd":"70300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":1458
+    },{
+      "ID":34927,"Geslacht":"T001038","Leeftijd":"70300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":207
+    },{
+      "ID":34943,"Geslacht":"T001038","Leeftijd":"70300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":102
+    },{
+      "ID":35215,"Geslacht":"T001038","Leeftijd":"70400","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":1710
+    },{
+      "ID":35231,"Geslacht":"T001038","Leeftijd":"70400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":1416
+    },{
+      "ID":35247,"Geslacht":"T001038","Leeftijd":"70400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":192
+    },{
+      "ID":35263,"Geslacht":"T001038","Leeftijd":"70400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":102
+    },{
+      "ID":35535,"Geslacht":"T001038","Leeftijd":"70500","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":1611
+    },{
+      "ID":35551,"Geslacht":"T001038","Leeftijd":"70500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":1332
+    },{
+      "ID":35567,"Geslacht":"T001038","Leeftijd":"70500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":150
+    },{
+      "ID":35583,"Geslacht":"T001038","Leeftijd":"70500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":129
+    },{
+      "ID":35855,"Geslacht":"T001038","Leeftijd":"70600","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":2072
+    },{
+      "ID":35871,"Geslacht":"T001038","Leeftijd":"70600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":1742
+    },{
+      "ID":35887,"Geslacht":"T001038","Leeftijd":"70600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":168
+    },{
+      "ID":35903,"Geslacht":"T001038","Leeftijd":"70600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":162
+    },{
+      "ID":36175,"Geslacht":"T001038","Leeftijd":"70700","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":2777
+    },{
+      "ID":36191,"Geslacht":"T001038","Leeftijd":"70700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":2320
+    },{
+      "ID":36207,"Geslacht":"T001038","Leeftijd":"70700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":224
+    },{
+      "ID":36223,"Geslacht":"T001038","Leeftijd":"70700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":233
+    },{
+      "ID":36495,"Geslacht":"T001038","Leeftijd":"70800","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":2929
+    },{
+      "ID":36511,"Geslacht":"T001038","Leeftijd":"70800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":2440
+    },{
+      "ID":36527,"Geslacht":"T001038","Leeftijd":"70800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":269
+    },{
+      "ID":36543,"Geslacht":"T001038","Leeftijd":"70800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":220
+    },{
+      "ID":36815,"Geslacht":"T001038","Leeftijd":"70900","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":2806
+    },{
+      "ID":36831,"Geslacht":"T001038","Leeftijd":"70900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":2347
+    },{
+      "ID":36847,"Geslacht":"T001038","Leeftijd":"70900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":280
+    },{
+      "ID":36863,"Geslacht":"T001038","Leeftijd":"70900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":179
+    },{
+      "ID":37135,"Geslacht":"T001038","Leeftijd":"71000","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":2326
+    },{
+      "ID":37151,"Geslacht":"T001038","Leeftijd":"71000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":1949
+    },{
+      "ID":37167,"Geslacht":"T001038","Leeftijd":"71000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":237
+    },{
+      "ID":37183,"Geslacht":"T001038","Leeftijd":"71000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":140
+    },{
+      "ID":37455,"Geslacht":"T001038","Leeftijd":"71100","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":2196
+    },{
+      "ID":37471,"Geslacht":"T001038","Leeftijd":"71100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":1783
+    },{
+      "ID":37487,"Geslacht":"T001038","Leeftijd":"71100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":258
+    },{
+      "ID":37503,"Geslacht":"T001038","Leeftijd":"71100","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":155
+    },{
+      "ID":37775,"Geslacht":"T001038","Leeftijd":"71200","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":2375
+    },{
+      "ID":37791,"Geslacht":"T001038","Leeftijd":"71200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":1979
+    },{
+      "ID":37807,"Geslacht":"T001038","Leeftijd":"71200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":245
+    },{
+      "ID":37823,"Geslacht":"T001038","Leeftijd":"71200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":151
+    },{
+      "ID":38095,"Geslacht":"T001038","Leeftijd":"71300","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":2375
+    },{
+      "ID":38111,"Geslacht":"T001038","Leeftijd":"71300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":1994
+    },{
+      "ID":38127,"Geslacht":"T001038","Leeftijd":"71300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":238
+    },{
+      "ID":38143,"Geslacht":"T001038","Leeftijd":"71300","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":143
+    },{
+      "ID":38415,"Geslacht":"T001038","Leeftijd":"71400","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":1861
+    },{
+      "ID":38431,"Geslacht":"T001038","Leeftijd":"71400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":1574
+    },{
+      "ID":38447,"Geslacht":"T001038","Leeftijd":"71400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":186
+    },{
+      "ID":38463,"Geslacht":"T001038","Leeftijd":"71400","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":101
+    },{
+      "ID":38735,"Geslacht":"T001038","Leeftijd":"71500","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":1285
+    },{
+      "ID":38751,"Geslacht":"T001038","Leeftijd":"71500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":1054
+    },{
+      "ID":38767,"Geslacht":"T001038","Leeftijd":"71500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":131
+    },{
+      "ID":38783,"Geslacht":"T001038","Leeftijd":"71500","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":100
+    },{
+      "ID":39055,"Geslacht":"T001038","Leeftijd":"71600","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":919
+    },{
+      "ID":39071,"Geslacht":"T001038","Leeftijd":"71600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":767
+    },{
+      "ID":39087,"Geslacht":"T001038","Leeftijd":"71600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":84
+    },{
+      "ID":39103,"Geslacht":"T001038","Leeftijd":"71600","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":68
+    },{
+      "ID":39375,"Geslacht":"T001038","Leeftijd":"71700","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":518
+    },{
+      "ID":39391,"Geslacht":"T001038","Leeftijd":"71700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":408
+    },{
+      "ID":39407,"Geslacht":"T001038","Leeftijd":"71700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":56
+    },{
+      "ID":39423,"Geslacht":"T001038","Leeftijd":"71700","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":54
+    },{
+      "ID":39695,"Geslacht":"T001038","Leeftijd":"71800","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":261
+    },{
+      "ID":39711,"Geslacht":"T001038","Leeftijd":"71800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":214
+    },{
+      "ID":39727,"Geslacht":"T001038","Leeftijd":"71800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":21
+    },{
+      "ID":39743,"Geslacht":"T001038","Leeftijd":"71800","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":26
+    },{
+      "ID":40015,"Geslacht":"T001038","Leeftijd":"71900","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":90
+    },{
+      "ID":40031,"Geslacht":"T001038","Leeftijd":"71900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":65
+    },{
+      "ID":40047,"Geslacht":"T001038","Leeftijd":"71900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":16
+    },{
+      "ID":40063,"Geslacht":"T001038","Leeftijd":"71900","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":9
+    },{
+      "ID":40335,"Geslacht":"T001038","Leeftijd":"72000","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":29
+    },{
+      "ID":40351,"Geslacht":"T001038","Leeftijd":"72000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":23
+    },{
+      "ID":40367,"Geslacht":"T001038","Leeftijd":"72000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":5
+    },{
+      "ID":40383,"Geslacht":"T001038","Leeftijd":"72000","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":1
+    },{
+      "ID":40655,"Geslacht":"T001038","Leeftijd":"22200","BurgerlijkeStaat":"T001019","CaribischNederland":"CN01  ","Perioden":"2026JJ00","BevolkingOp1Januari_1":4
+    },{
+      "ID":40671,"Geslacht":"T001038","Leeftijd":"22200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9001","Perioden":"2026JJ00","BevolkingOp1Januari_1":2
+    },{
+      "ID":40687,"Geslacht":"T001038","Leeftijd":"22200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9002","Perioden":"2026JJ00","BevolkingOp1Januari_1":1
+    },{
+      "ID":40703,"Geslacht":"T001038","Leeftijd":"22200","BurgerlijkeStaat":"T001019","CaribischNederland":"GM9003","Perioden":"2026JJ00","BevolkingOp1Januari_1":1
+    }
+  ]
+}
