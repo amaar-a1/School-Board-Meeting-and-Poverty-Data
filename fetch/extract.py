@@ -1,21 +1,17 @@
-# Temporary: Croatia. DZS small-area poverty estimates (report and presentation), GISCO LAU 2024 borders for HR.
-import json, os, traceback, urllib.request
-OUT = "fetch/out/hr1"; os.makedirs(OUT, exist_ok=True)
+# Temporary: Croatia, from the Ministry of Regional Development: the World Bank / DZS poverty-map report and the 2024
+# development index with its indicators (unemployment rate, income per inhabitant) for every city and municipality.
+import os, urllib.parse, urllib.request
+OUT = "fetch/out/hr2"; os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
 log = open(f"{OUT}/log.txt", "w")
-def get(u, t=900):
-    with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=t) as r: return r.read()
-for name, u in {"dzs_sae.pdf": "https://web.dzs.hr/hrv/important/PressCorner/Mapiranje%20i%20procjena%20geografske%20raspodjele%20rizika%20od%20siromastva%20i%20socijalne%20iskljucenosti%20za%20mala%20podrucja%20Republike%20Hrvatske.pdf",
-                "dzs_sae_pres.pdf": "https://web.dzs.hr/Hrv/important/PressCorner/Prezentacije/Mapiranje%20i%20procjena%20geografske%20raspodjele%20rizika%20od%20siromastva%20i%20socijalne%20iskljucenosti%20za%20mala%20podrucja%20RH%20-%20Prezentacija.pdf",
-                "dzs_2022.pdf": "https://novi-web.dzs.hr/media/pprhctvu/zudp-2023-1-1-pokazatelji-siromaštva-i-socijalne-isključenosti-u-2022.pdf".replace("š", "%C5%A1").replace("č", "%C4%8D")}.items():
+q = lambda u: urllib.parse.quote(u, safe=":/%?=&")
+for name, u in {"wb_sae.pdf": "https://razvoj.gov.hr/UserDocsImages/Istaknute%20teme/Kartom%20siroma%C5%A1tva/Croatia%20Small-Area%20Estimation%20of%20Consumption-Based%20Poverty%20(Poverty%20Maps).pdf",
+                "ir_2024.pdf": q("https://razvoj.gov.hr/UserDocsImages/O ministarstvu/Regionalni razvoj/indeks razvijenosti/Vrijednosti indeksa razvijenosti i pokazatelja za izračun indeksa razvijenosti.pdf"),
+                "ir_page.html": "https://razvoj.gov.hr/o-ministarstvu/regionalni-razvoj/indeks-razvijenosti/112",
+                "kartom.html": "https://razvoj.gov.hr/istaknute-teme/kartom-siromastva/3949",
+                "dzs_en.pdf": "https://web.dzs.hr/Eng/important/PressCorner/Mapping%20and%20estimation%20of%20the%20geographical%20distribution%20of%20risk%20of%20poverty%20and%20social%20exclusion%20for%20small%20areas%20of%20the%20Republic%20of%20Croatia.pdf"}.items():
     try:
-        b = get(u); open(f"{OUT}/{name}", "wb").write(b); log.write(f"ok {name} {len(b)}\n")
+        with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=300) as r: b = r.read()
+        open(f"{OUT}/{name}", "wb").write(b); log.write(f"ok {name} {len(b)}\n")
     except Exception as e: log.write(f"ERR {name} {str(e)[:150]}\n")
-log.flush()
-try:
-    g = json.loads(get("https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2024_4326.geojson", 1800))
-    hr = [f for f in g["features"] if f["properties"].get("CNTR_CODE") == "HR"]
-    json.dump({"type": "FeatureCollection", "features": hr}, open(f"{OUT}/lau_HR.geojson", "w"))
-    log.write(f"lau HR {len(hr)} {hr[0]['properties'] if hr else ''}\n")
-except Exception: log.write(traceback.format_exc()[-800:])
 log.close()
