@@ -1,0 +1,79 @@
+== Portugal
+0010284 abono_children: Beneficiárias/os descendentes ou equiparados do abono de família para crianças e jovens da segurança social (N.º) por Local de residência (NUTS - 2013); Anual - | last 2022 | dims {'Descricao_Dim': [{'dim_num': '1', 'abrv': 'Período de referência dos dados', 'versao': 'XXXXX'}, {'dim_num': '2', 'abrv': 'Local de residência (NUTS - 2013)', 'versao': '03505'}], 'Categoria_Dim': [{'Dim_Num1_S7A2014': [{'dim_num': '1', 'cat_id': 'S7A2014', 'categ_cod': 'S7A2014', 'categ_dsg': '20
+   2022: 42265 bytes, 344 values
+0010283 abono_all: Beneficiárias/os do abono de família para crianças e jovens da segurança social (N.º) por Local de residência (NUTS - 2013); Anual - Instituto de Informática | last 2022 | dims {'Descricao_Dim': [{'dim_num': '1', 'abrv': 'Período de referência dos dados', 'versao': 'XXXXX'}, {'dim_num': '2', 'abrv': 'Local de residência (NUTS - 2013)', 'versao': '03505'}], 'Categoria_Dim': [{'Dim_Num1_S7A2014': [{'dim_num': '1', 'cat_id': 'S7A2014', 'categ_cod': 'S7A2014', 'categ_dsg': '20
+   2022: 42088 bytes, 344 values
+0013420 rsi_per1000_working_age: Beneficiárias/os do rendimento social de inserção, da segurança social por 1000 habitantes em idade ativa (‰) por Local de residência (NUTS - 2024); Anual - Ins | last 2025 | dims {'Descricao_Dim': [{'dim_num': '1', 'abrv': 'Período de referência dos dados', 'versao': 'XXXXX', 'nota_dsg': 'Dados revistos para o período de 2023 a 2024, na sequência da revisão das Estimativas Anuais de População Residente, divulgada pelo INE em 22 de junho de 2026.'}, {'dim_num': '2', 'abrv': '
+   2025: 43057 bytes, 347 values
+0013417 rsi_n: Beneficiárias/os do rendimento social de inserção, da segurança social (N.º) por Local de residência (NUTS - 2024); Anual - Instituto de Informática | last 2025 | dims {'Descricao_Dim': [{'dim_num': '1', 'abrv': 'Período de referência dos dados', 'versao': 'XXXXX'}, {'dim_num': '2', 'abrv': 'Local de residência (NUTS - 2024)', 'versao': '05257'}], 'Categoria_Dim': [{'Dim_Num1_S7A2023': [{'dim_num': '1', 'cat_id': 'S7A2023', 'categ_cod': 'S7A2023', 'categ_dsg': '20
+   2025: 41929 bytes, 347 values
+0012749 median_income_taxpayer: Valor mediano do rendimento bruto declarado por sujeito passivo (€) por Localização geográfica (NUTS - 2024); Anual - INE, Estatísticas do Rendimento ao nível l | last 2024 | dims {'Descricao_Dim': [{'dim_num': '1', 'abrv': 'Período de referência dos dados', 'versao': 'XXXXX'}, {'dim_num': '2', 'abrv': 'Localização geográfica (NUTS - 2024)', 'versao': '05807'}], 'Categoria_Dim': [{'Dim_Num1_S7A2018': [{'dim_num': '1', 'cat_id': 'S7A2018', 'categ_cod': 'S7A2018', 'categ_dsg': 
+   2024: 590885 bytes, 3439 values
+0008273 pop_age: População residente (N.º) por Local de residência (NUTS - 2013), Sexo e Grupo etário; Anual - INE, Estimativas anuais da população residente | last 2023 | dims {'Descricao_Dim': [{'dim_num': '1', 'abrv': 'Período de referência dos dados', 'versao': 'XXXXX', 'nota_dsg': 'A partir de 2021, as Estimativas Anuais de População Residente são de base administrativa. Até 2020, as Estimativas Anuais de População Residente são definitivas e assentes nos recenseament
+   2023: 4312375 bytes, 19608 values
+0012751 ERR <urlopen error timed out>
+DGEEC Alunos matriculados na educação pré-escolar e nos ensinos básico, secundário e pós-secundário não superior em estabelecimentos de ensino 5d3883f9454ae3512f130282
+   2019/2020 | xlsx | https://www.dgeec.mec.pt/np4/408/%7B$clientServletPath%7D/?newsId=887&fileName=DGEEC_AlunosMatriculados_Continente1920.xlsx
+   2018/2019 | xlsx | https://www.dgeec.mec.pt/np4/408/%7B$clientServletPath%7D/?newsId=887&fileName=DGEEC_AlunosMatriculados_Continente1819.xlsx
+   2017/2018 | xlsx | https://www.dgeec.mec.pt/np4/408/%7B$clientServletPath%7D/?newsId=887&fileName=DGEEC_AlunosMatriculados_Continente1718.xlsx
+   2016/2017 | xlsx | https://www.dgeec.mec.pt/np4/408/%7B$clientServletPath%7D/?newsId=887&fileName=DGEEC_AlunosMatriculados_Continente16172.xlsx
+   2015/2016 | xlsx | https://www.dgeec.mec.pt/np4/408/%7B$clientServletPath%7D/?newsId=887&fileName=DGEEC_AlunosMatriculados_Continente1516_1.xlsx
+   2014/2015 | xlsx | https://www.dgeec.mec.pt/np4/408/%7B$clientServletPath%7D/?newsId=887&fileName=DGEEC_AlunosMatriculados_Continente1415_1.xlsx
+   2013/2014 | xlsx | https://www.dgeec.mec.pt/np4/408/%7B$clientServletPath%7D/?newsId=887&fileName=DGEEC_AlunosMatriculados_Continente1314_1.xlsx
+   2012/2013 | xlsx | https://www.dgeec.mec.pt/np4/408/%7B$clientServletPath%7D/?newsId=887&fileName=DGEEC_AlunosMatriculados_Continente12131.xlsx
+   2011/2012 | xlsx | https://www.dgeec.mec.pt/np4/408/%7B$clientServletPath%7D/?newsId=887&fileName=DGEEC_AlunosMatriculados_Continente11121.xlsx
+   2010/2011 | xlsx | https://www.dgeec.mec.pt/np4/408/%7B$clientServletPath%7D/?newsId=887&fileName=DGEEC_AlunosMatriculados_Continente11121.xlsx
+   2009/2010 | xlsx | https://www.dgeec.mec.pt/np4/408/%7B$clientServletPath%7D/?newsId=887&fileName=DGEEC_AlunosMatriculados_Continente09101.xlsx
+   2008/2009 | xlsx | https://www.dgeec.mec.pt/np4/408/%7B$clientServletPath%7D/?newsId=887&fileName=DGEEC_AlunosMatriculados_Continente08091.xlsx
+   2007/2008 | xlsx | https://www.dgeec.mec.pt/np4/408/%7B$clientServletPath%7D/?newsId=887&fileName=DGEEC_AlunosMatriculados_Continente07081.xlsx
+   2006/2007 | xlsx | https://www.dgeec.mec.pt/np4/408/%7B$clientServletPath%7D/?newsId=887&fileName=DGEEC_AlunosMatriculados_Continente06071.xlsx
+   2005/2006 | xlsx | https://www.dgeec.mec.pt/np4/408/%7B$clientServletPath%7D/?newsId=887&fileName=DGEEC_AlunosMatriculados_Continente05061.xlsx
+   2004/2005 | xlsx | https://www.dgeec.mec.pt/np4/408/%7B$clientServletPath%7D/?newsId=887&fileName=DGEEC_AlunosMatriculados_Continente04051.xlsx
+   2003/2004 | xlsx | https://www.dgeec.mec.pt/np4/408/%7B$clientServletPath%7D/?newsId=887&fileName=DGEEC_AlunosMatriculados_Continente03041.xlsx
+   downloaded 2018/2019 3298
+   downloaded 2019/2020 3298
+DGEEC Indicadores gerais da educação 5d385f4e454ae3079533be59
+   4.15. Número médio de alunos por docente em exercício de funções no 3.º ciclo do ensino básico e no ensino secundário | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_4_15.asp
+   Número médio de alunos por docente | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_3_13.asp
+   Número médio de crianças por educador de infância em exercício de funções | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_2_9.asp
+   Crianças e alunos matriculados/inscritos, por nível de ensino, em Portugal | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_1_1.asp
+   Distribuição das crianças e dos alunos matriculados/inscritos, por natureza do estabelecimento de ensino e nível de ensino, em Portugal | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_1_4.asp
+   Alunos matriculados, em ofertas de educação e formação orientadas para jovens, por nível de ensino e ciclo de estudos, em Portugal  | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_1_2.asp
+   Crianças inscritas, por sexo, em Portugal | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_2_2.asp
+   Crianças inscritas, por natureza do estabelecimento de ensino, no Continente | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_2_1.asp
+   Alunos matriculados no ensino básico, por sexo, em Portugal | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_3_3.asp
+   Alunos matriculados no ensino básico, por natureza do estabelecimento de ensino, em Portugal | web page | http://w3.dgeec.mec.pt/dse/eef/indicadores/Indicador_3_2.asp
+   Alunos matriculados no ensino básico, por ciclo de estudos, em Portugal | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_3_1.asp
+   Alunos matriculados no ensino secundário, por natureza do estabelecimento de ensino, em Portugal | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_4_1.asp
+   Alunos matriculados no ensino secundário, por sexo, em Portugal | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_4_2.asp
+   Alunos matriculados no ensino secundário por oferta de educação e formação, em Portugal | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_4_3.asp
+   Alunos matriculados no ensino secundário, em cursos de dupla certificação nas ofertas de educação e formação orientadas para jovens, por orientação do currículo, no Continente | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_4_5.asp
+   Alunos matriculados, em ofertas de educação e formação orientadas para adultos, por nível de ensino e ciclo de estudos, em Portugal | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_1_3.asp
+   Taxa de participação em cursos de dupla certificação nas ofertas do ensino secundário orientadas para jovens, no Continente  | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_4_4.asp
+   Inscritos no 1.º ano pela 1.ª vez  no ensino superior, por natureza do estabelecimento e tipo de ensino, em Portugal | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_5_2.asp
+   Inscritos no ensino superior, por nível de formação, em Portugal  | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_5_3.asp
+   Inscritos no ensino superior, por natureza do estabelecimento e tipo de ensino, em Portugal | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_5_4.asp
+   Inscritos no ensino superior, por sexo, em Portugal | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_5_5.asp
+   Vagas para cursos de formação inicial no ensino superior, por natureza do estabelecimento e tipo de ensino, em Portugal | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_5_1.asp
+   Taxa de retenção e desistência no ensino básico, por ciclo de estudos, sexo e NUTS I e II | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_3_8.asp
+   Taxa de retenção e desistência no ensino básico, por ciclo de estudos e o respetivo ano terminal, no Continente | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_3_7.asp
+   Taxa de retenção e desistência no ensino básico, por ciclo de estudos e NUTS I e II | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_3_6.asp
+   Taxa de retenção e desistência no ensino básico, por ciclo de estudos, em Portugal | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_3_5.asp
+   Taxa de transição/conclusão, por nível de ensino e ciclo de estudos, em Portugal | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_1_6.asp
+   Taxa de conclusão no ensino secundário, por orientação curricular, em Portugal  | web page | https://estatisticas-educacao.dgeec.mec.pt/indicadores/Indicador_4_8.asp
+   Taxa de retenção e desistência no ensino secundário, por NUTS I e II | web page | http://w3.dgeec.mec.pt/dse/eef/indicadores/Indicador_4_9.asp
+   Taxa de retenção e desistência no ensino secundário, por sexo e NUTS I e II | web page | http://w3.dgeec.mec.pt/dse/eef/indicadores/Indicador_4_10.asp
+(498s)
+
+== Belgium
+https://stat.mi-is.be/fr: 42172 bytes; ['/fr/dashboard/growth_ris_scatter?menu=Scatterplots', '/fr/dashboard/ratio_piis_ris?menu=map', '/fr/dashboard/ratio_piise_ris?menu=map', '/fr/dashboard/ris_18_24?menu=map', '/fr/dashboard/ris_25?menu=drilldown', '/fr/dashboard/ris_age?menu=linecharts', '/fr/dashboard/ris_categories?menu=linecharts', '/fr/dashboard/ris_cities?menu=map', '/fr/dashboard/ris_classiques?menu=linecharts', '/fr/dashboard/ris_entities?menu=drilldown', '/fr/dashboard/ris_genre?menu=linecharts', '/fr/dashboard/ris_growth?menu=map', '/fr/dashboard/ris_moins_25?menu=drilldown', '/fr/dashboard/ris_nationalite?menu=linecharts', '/fr/dashboard/ris_path_length_age?menu=linecharts', '/fr/dashboard/ris_path_length_category_fr?menu=linecharts', '/fr/dashboard/ris_path_length_genre_fr?menu=linecharts', '/fr/dashboard/ris_path_length_nationalite_fr?menu=linecharts', '/fr/dashboard/ris_scatter?menu=Scatterplots', '/fr/form/export/exportdashboard']
+https://stat.mi-is.be/nl: 42038 bytes; ['/nl/dashboard/gpmis_leefloon_ratio?menu=map', '/nl/dashboard/growth_ris_scatter?menu=Scatterplots', '/nl/dashboard/leefloon_25?menu=drilldown', '/nl/dashboard/leefloon_categorien?menu=linecharts', '/nl/dashboard/leefloon_geslacht?menu=linecharts', '/nl/dashboard/leefloon_jonger_25?menu=drilldown', '/nl/dashboard/leefloon_klassieken?menu=linecharts', '/nl/dashboard/leefloon_leeftijd?menu=linecharts', '/nl/dashboard/leefloon_nationaliteit?menu=linecharts', '/nl/dashboard/ratio_piis_ris?menu=map', '/nl/dashboard/ris_18_24?menu=map', '/nl/dashboard/ris_cities?menu=map', '/nl/dashboard/ris_entities?menu=drilldown', '/nl/dashboard/ris_growth?menu=map', '/nl/dashboard/ris_path_length_category_nl?menu=linecharts', '/nl/dashboard/ris_path_length_geslacht_nl?menu=linecharts', '/nl/dashboard/ris_path_length_leeftijd?menu=linecharts', '/nl/dashboard/ris_path_length_nationaliteit_nl?menu=linecharts', '/nl/dashboard/ris_scatter?menu=Scatterplots', '/nl/form/export/exportdashboard']
+https://stat.mi-is.be/fr/dashboard/ris_ris_par_commune: ERR HTTP Error 404: Not Found
+https://www.mi-is.be/fr/etudes-publications-statistiques/statistiques: ERR HTTP Error 404: Not Found
+https://www.mi-is.be/nl/studies-publicaties-statistieken/statistieken: ERR HTTP Error 404: Not Found
+/en/open-data/population-place-residence-nationality-marital-status-age-and-sex-16: ['/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/Columns%20description.xlsx', 'https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2025.xlsx', 'https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2025.zip']
+  zip 2551751: ['TF_SOC_POP_STRUCT_2025.txt']
+  header ['CD_REFNIS', 'TX_DESCR_NL', 'TX_DESCR_FR', 'CD_DSTR_REFNIS', 'TX_ADM_DSTR_DESCR_NL', 'TX_ADM_DSTR_DESCR_FR', 'CD_PROV_REFNIS', 'TX_PROV_DESCR_NL', 'TX_PROV_DESCR_FR', 'CD_RGN_REFNIS', 'TX_RGN_DESCR_NL', 'TX_RGN_DESCR_FR', 'CD_SEX', 'CD_NATLTY', 'TX_NATLTY_NL', 'TX_NATLTY_FR', 'CD_CIV_STS', 'TX_CIV_STS_NL', 'TX_CIV_STS_FR', 'CD_AGE', 'MS_POPULATION']
+  565 municipalities
+(21s)
+
