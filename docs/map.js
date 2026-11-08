@@ -405,6 +405,9 @@
       items.push(`<span class="map-faded">Spain: small municipalities with no child figure are ranked by their province's estimate</span>`);
     if ($("map-metric").value === "rank")
       items.push(`<span class="map-faded">Rank within each country: where a place's poverty figure falls among its own country's places, so colours compare across countries even though the measures differ</span>`);
+    // Places shown with no figure in this colouring (Svalbard and Pitcairn publish no poverty figure).
+    if ((euv === "ISLE" || (current && current.combined)) && ["poverty", "rank"].includes($("map-metric").value) && Object.values(layers).some((l) => l.getLayers().some((f) => f.feature && !isWorld(f.feature) && !undefinedArea(f.feature) && style(f.feature).fillColor === NO_DATA)))
+      items.push(`<span><i style="background:${NO_DATA}"></i>No figure published</span>`);
     items.push(`<span><i style="background:${WORLD_STYLE.fillColor};border:1px solid ${WORLD_STYLE.color}"></i>Country not covered on this site</span>`);
     if (faded.length) items.push(`<span class="map-faded">Faded: districts ${faded.join(" or ")}</span>`);
     $("map-legend").innerHTML = items.join("");
