@@ -1,0 +1,37 @@
+50 done; 27 with meetings
+100 done; 36 with meetings
+150 done; 42 with meetings
+200 done; 61 with meetings
+250 done; 80 with meetings
+300 done; 106 with meetings
+350 done; 124 with meetings
+400 done; 142 with meetings
+450 done; 175 with meetings
+500 done; 200 with meetings
+550 done; 226 with meetings
+600 done; 260 with meetings
+650 done; 294 with meetings
+700 done; 323 with meetings
+750 done; 358 with meetings
+800 done; 384 with meetings
+850 done; 406 with meetings
+900 done; 424 with meetings
+950 done; 443 with meetings
+1000 done; 467 with meetings
+1050 done; 498 with meetings
+1100 done; 518 with meetings
+1150 done; 554 with meetings
+1200 done; 580 with meetings
+1250 done; 592 with meetings
+1300 done; 612 with meetings
+1350 done; 638 with meetings
+1400 done; 654 with meetings
+1450 done; 671 with meetings
+1500 done; 697 with meetings
+1550 done; 712 with meetings
+1600 done; 735 with meetings
+1650 done; 754 with meetings
+1700 done; 774 with meetings
+finished 1741 783 with meetings
+
+---
