@@ -1,0 +1,585 @@
+0
+BEFR Beauraing ->  
+BEFR Pepinster ->  
+BEFR Orp-Jauche ->  
+BENL Wuustwezel -> Gemeenteraad Wuustwezel 0
+PT Montijo -> Município de Montijo 1
+BEFR Awans -> Commune d'Awans 0
+BEFR Bassenge ->  
+PT Guarda -> Municipio Guarda 0
+BENL Eeklo -> Stad Eeklo 0
+BEFR Le Roeulx ->  
+BENL Sint-Katelijne-Waver -> Gemeente Sint-Katelijne-Waver 0
+PT Alcobaça -> Município de Alcobaça 0
+BEFR Yvoir -> Commune Yvoir 0
+BENL Bornem -> Gemeente Bornem 0
+BEFR Bertrix ->  
+BEFR Messancy -> Commune de Messancy 0
+PT Évora ->  
+BENL Zele -> Gemeente Zele 0
+PT Ovar ->  
+PT Beja -> Município de Beja 0
+BENL Zonhoven -> Gemeente Zonhoven 0
+BEFR Silly -> Commune de Silly 0
+BEFR Jalhay -> Commune de Jalhay 0
+BENL Kortenberg -> Gemeente Kortenberg 0
+BEFR Habay ->  
+BEFR Neufchâteau -> Commune de Neufchâteau 0
+PT Bragança -> Câmara Municipal de Bragança-PA 0
+BENL Kontich -> Lokaal bestuur Kontich 0
+PT Felgueiras -> Município de Felgueiras 0
+BENL Denderleeuw -> Lokaal Bestuur Denderleeuw 0
+BEFR Quévy ->  
+BEFR Mont-Saint-Guibert -> Commune de Mont-Saint-Guibert 0
+BEFR Brunehaut ->  
+BENL Dilsen-Stokkem -> Stad Dilsen-Stokkem 0
+BENL Erpe-Mere -> Gemeente Erpe-Mere 0
+BEFR Sombreffe -> Commune de Sombreffe 0
+BEFR Estinnes ->  
+BENL Koksijde ->  
+PT Tomar -> Câmara Municipal de Tomar do Geru 0
+BENL Blankenberge ->  
+PT Pombal -> Município de Pombal 0
+BEFR Trooz -> Commune de Trooz 0
+BEFR Chastre -> Commune de Chastre 0
+PT Vila Real ->  
+BENL Torhout -> Lokaal Bestuur Torhout 0
+BENL Meise -> Jeugdraad Meise 0
+BEFR Waimes ->  
+PT Águeda ->  
+BENL Sint-Gillis-Waas ->  
+BEFR Fernelmont -> Administration Communale Fernelmont 0
+BENL Wingene -> Gemeente Wingene 0
+BENL Poperinge ->  
+PT Torres Novas -> Município de Torres Novas 0
+BEFR Antoing -> Ville Antoing 0
+PT Fafe -> Assembleia Municipal de Fafe 0
+BEFR Floreffe -> Commune de Floreffe Officiel 0
+BENL Schilde -> Gemeente Schilde 0
+BENL Diepenbeek -> Gemeente Diepenbeek 0
+BEFR Gesves -> Administration communale de Gesves 0
+BEFR Vielsalm ->  
+PT Angra do Heroísmo -> Câmara do Comércio e Indústria de Angra do Heroísmo 0
+BENL Lebbeke -> Gemeente Lebbeke 0
+BEFR Assesse -> Commune Assesse 0
+BENL Ranst -> Gemeente Ranst 0
+PT Alenquer -> Município de Alenquer 0
+BEFR Dalhem -> Commune de Dalhem 0
+PT Olhão ->  
+BEFR Beauvechain -> Administration communale Beauvechain 0
+BENL Middelkerke -> Gemeentebestuur Middelkerke 0
+BENL Boom -> Gemeente Boom 0
+BEFR Walhain -> Commune de Walhain 0
+PT Benavente -> Município de Benavente 0
+BENL Haaltert ->  
+BEFR Chièvres -> Conseil Communal Chièvres 0
+BENL Lede ->  
+BEFR La Hulpe -> Administration communale de La Hulpe 0
+BENL Kasterlee -> Gemeente Kasterlee 8
+BEFR Beaumont ->  
+PT Câmara de Lobos -> Câmara Municipal Câmara de Lobos 0
+PT Odemira -> Município de Odemira 0
+BENL Herzele -> Lokaal Bestuur Herzele 0
+BEFR Hamois -> Commune de Hamois 0
+BENL Stekene -> Gemeente Stekene 0
+BEFR Villers-Le-Bouillet -> Commune de Villers-le-Bouillet 0
+BEFR Hensies ->  
+BENL Destelbergen -> Lokaal bestuur Destelbergen 0
+BEFR Stavelot -> Villede Stavelot 0
+BENL Kalmthout -> Gemeente Kalmthout 0
+PT Peniche -> Município Peniche 0
+BEFR Braives -> Commune de Braives 0
+BENL Beerse -> Lokaal bestuur Beerse 0
+PT Silves -> Município Silves 0
+BEFR Saint-Georges-sur-Meuse -> Commune de Saint-Georges-sur-Meuse 0
+BENL Essen -> Gemeente Essen 0
+BEFR Vaux-sur-Sûre -> Commune de Vaux-sur-Sûre 0
+PT Lourinhã -> Município Lourinhã 1
+BENL Merchtem -> Gemeente Merchtem 0
+BEFR Anhée -> Administration communale Anhée 0
+BEFR Lontzen ->  
+BENL Londerzeel -> Gemeente Londerzeel 0
+PT Ílhavo -> Assembleia Municipal Ílhavo 0
+BENL Bredene ->  
+BEFR Ittre ->  
+BEFR Etalle ->  
+BEFR Quiévrain ->  
+BEFR Lobbes ->  
+BENL Wervik -> Stad Wervik 0
+BENL Rotselaar -> Lokaal Bestuur Rotselaar 1
+BEFR Ramillies ->  
+PT Lagoa -> Município de Lagoa 0
+PT Trofa -> Município da Trofa 0
+BENL Putte ->  
+BEFR Engis ->  
+BEFR Pecq -> Commune de Pecq  0
+BENL Stabroek ->  
+BENL Bree -> Stad Bree 0
+BEFR Attert ->  
+BENL Sint-Genesius-Rode ->  
+BENL Riemst ->  
+PT Lagos -> Assembleia Municipal Lagos 0
+BEFR Somme-Leuze -> Conseil communal Somme-Leuze 0
+PT Fundão -> Câmara Municipal de Fundão 0
+BEFR Nandrin ->  
+BEFR Hastière ->  
+PT Esposende ->  
+BENL Wemmel -> Gemeente Wemmel 0
+BENL Leopoldsburg -> Gemeente Leopoldsburg 0
+BEFR Florenville -> Ville de Florenville 0
+BEFR Remicourt -> Commune de Remicourt 0
+BEFR Limbourg ->  
+PT Albergaria-a-Velha -> Município de Albergaria-a-Velha 0
+PT Chaves -> Câmara de Alfredo Chaves 0
+BENL Duffel -> Lokaal bestuur Duffel 0
+BEFR Ellezelles ->  
+BENL Ternat -> Gemeente Ternat 0
+BEFR Léglise ->  
+BENL Landen ->  
+BEFR Incourt -> Commune-Incourt 0
+BENL Diksmuide -> Stad Diksmuide 0
+BEFR Celles ->  
+BENL Malle ->  
+BENL Lille ->  
+BEFR Viroinval -> Administration communale de Viroinval 0
+BENL Kruisem ->  
+BENL Laakdal ->  
+PT Abrantes -> Município de Abrantes 0
+BEFR Héron ->  
+BEFR Nassogne -> Commune de Nassogne 0
+PT Vizela -> Municipio de Vizela 0
+BENL Machelen ->  
+BENL Rumst -> Gemeente Rumst 0
+BEFR Thimister-Clermont -> Administration communale de Thimister-Clermont 0
+BEFR Saint-Hubert -> Ville Saint-Hubert 0
+PT Cantanhede -> Município de Cantanhede 0
+BENL Peer -> Stad Peer 0
+BEFR Paliseul ->  
+BEFR Hotton ->  
+PT Montemor-o-Velho -> Município Montemor-o-Velho 0
+BEFR Gouvy ->  
+PT Tavira ->  
+BENL Bonheiden -> Gemeentebestuur Bonheiden 0
+BEFR Comblain-au-Pont ->  
+BENL Beernem -> Gemeente Beernem 0
+BEFR Marchin -> Commune de MARCHIN 0
+BEFR Rumes ->  
+BENL Zulte ->  
+BEFR Amblève ->  
+BENL Tremelo -> Gemeente Tremelo 0
+BEFR Butgenbach ->  
+PT Porto de Mós -> Município Porto de Mós 0
+PT Espinho -> Município Espinho 1
+BENL Ravels -> Lokaal bestuur Ravels 0
+BEFR Ohey -> Administration communale Ohey 0
+BEFR Bullange ->  
+BENL Anzegem -> Gemeentebestuur Anzegem 0
+PT Ribeira Grande ->  
+BEFR Havelange ->  
+PT Rio Maior -> Municipio de Rio Maior 0
+BEFR Houyet -> Administration communale de Houyet 0
+BENL Haacht -> Gemeente Haacht 0
+BENL Brakel -> Gemeente Brakel 0
+BEFR Libin -> Commune de Libin 0
+BENL Berlare ->  
+BENL Buggenhout ->  
+BEFR Ferrières -> Ville de Ferrières-en-Brie 0
+BEFR Bouillon ->  
+PT Portalegre -> Câmara Municipal de Portalegre 0
+PT Santiago do Cacém -> Município Santiago do Cacém 0
+BEFR Houffalize ->  
+BENL Opwijk -> Gemeente Opwijk 0
+BENL Lummen -> Gemeente Lummen 0
+BEFR Clavier -> Commune Clavier 0
+BEFR Chiny ->  
+BENL Lubbeek ->  
+BEFR Sivry-Rance ->  
+BEFR Momignies ->  
+PT Anadia -> Município de Anadia 0
+BENL Aartselaar ->  
+PT Salvaterra de Magos -> Município Salvaterra de Magos 0
+BENL Herselt -> Gemeente Herselt 0
+BEFR Lens ->  
+BEFR Honnelles ->  
+BENL Oud-Turnhout ->  
+BEFR Tintigny ->  
+BEFR Cerfontaine ->  
+BENL Jabbeke ->  
+BENL Ichtegem -> Gemeentebestuur Ichtegem 0
+BEFR Verlaine ->  
+PT Azambuja -> Assembleia Municipal de Azambuja 0
+BEFR Anthisnes ->  
+BEFR Musson -> Conseil Communal des Enfants Musson 0
+PT Estarreja -> Município de Estarreja 0
+BENL Wezembeek-Oppem -> Gemeente Wezembeek-Oppem W-O 0
+BEFR Gedinne ->  
+PT Vale de Cambra -> Assembleia Municipal Vale de Cambra 0
+BENL Hamont-Achel -> Stad Hamont-Achel 0
+BEFR Olne -> Commune d'Olne 0
+BEFR Baelen ->  
+BENL Assenede -> Lokaal bestuur Assenede 0
+BEFR Merbes-le-Château ->  
+PT Tondela -> Câmara Municipal de Tondela 0
+BENL Liedekerke -> Gemeente Liedekerke 0
+BENL Kuurne ->  
+BEFR La Roche-en-Ardenne ->  
+BEFR Aubel -> Administration Communale d'Aubel 0
+PT Elvas -> Municipio Elvas 0
+BEFR Burg-Reuland ->  
+BENL Oosterzele -> Gemeente Oosterzele 0
+BENL Boechout -> Gemeente Boechout 0
+BEFR Faimes -> Maxime Toussaint (Conseil Communal de Faimes) 0
+BEFR Brugelette ->  
+PT Mirandela -> Município de Mirandela 0
+PT Oliveira do Bairro -> Oliveira do Bairro - Município 0
+BEFR Modave -> Commune de Modave Covid 0
+BEFR Saint-Léger -> Commune de Saint-Léger 0
+BENL Bocholt -> Gemeente Bocholt 0
+BENL Kraainem -> Gemeentebestuur Kraainem 0
+BEFR Froidchapelle ->  
+BEFR Manhay ->  
+PT Arcos de Valdevez -> Município Arcos de Valdevez 0
+BENL Affligem ->  
+PT Cartaxo -> Câmara Municipal do Cartaxo 0
+BEFR Oreye ->  
+BENL Zelzate -> Gemeente Zelzate 0
+BEFR Crisnée -> Commune de Crisnée 0
+PT Vagos ->  
+BENL Zandhoven ->  
+PT Machico -> Câmara Municipal de Machico 0
+BEFR Hélécine -> Conseil Communal d'Hélécine 0
+BENL Wommelgem -> Lokaal Bestuur Wommelgem 0
+BEFR Bièvre -> Commune Bièvre 0
+BEFR Mont-de-l’Enclus ->  
+BENL Keerbergen -> Gemeente Keerbergen 0
+PT Lamego -> Assembleia Municipal de Lamego 0
+BEFR Fexhe-le-Haut-Clocher ->  
+BENL Boortmeerbeek -> Gemeentebestuur Boortmeerbeek 1
+BEFR Hamoir ->  
+BEFR Lincent ->  
+BEFR Lierneux ->  
+BENL Gavere ->  
+PT Mealhada -> Câmara Municipal da Mealhada 0
+BENL Arendonk -> Lokaal bestuur Arendonk 0
+BEFR Geer ->  
+PT Amares ->  
+BEFR Burdinne -> Commune Burdinne 0
+BENL Hechtel-Eksel -> Lokaal bestuur Hechtel-Eksel 0
+BEFR Flobecq ->  
+BENL Herk-de-Stad -> Stadsbestuur Herk-de-Stad 0
+BEFR Stoumont -> Commune de Stoumont 0
+BEFR Berloz -> Commune de Berloz 0
+BENL Olen -> Gemeente Olen 0
+BENL Kortemark -> Lokaal bestuur KORTEMARK 0
+PT São João da Madeira -> Município São João da Madeira 0
+PT Monção -> Câmara Municipal de Monção 0
+BEFR Wasseiges ->  
+BEFR Erezée -> Commune d'Erezée 0
+BEFR Doische ->  
+BENL Zonnebeke -> Gemeentebestuur Zonnebeke 0
+BENL Steenokkerzeel -> Gemeente Steenokkerzeel 0
+PT Coruche -> Coruche | Reuniões Municipais 0
+BEFR Onhaye ->  
+BEFR Meix-devant-Virton ->  
+BENL Deerlijk -> Gemeente en OCMW Deerlijk 0
+BEFR Tinlot ->  
+BENL De Haan -> Gemeente De Haan 0
+PT Almeirim -> Municipio Almeirim 0
+BEFR Wellin -> Commune de Wellin 0
+PT Soure -> Município de Soure 0
+BENL Veurne ->  
+PT Entroncamento ->  
+BEFR Sainte-Ode -> Commune de Sainte-Ode 0
+BEFR Donceel ->  
+BENL Kinrooi ->  
+BENL Kampenhout -> Lokaal bestuur Kampenhout 0
+BEFR Tenneville ->  
+PT Vila Real de Santo António ->  
+BENL Hemiksem ->  
+BENL Rijkevorsel ->  
+BEFR Vresse-sur-Semois ->  
+BEFR Ouffet ->  
+PT Baião -> Município de Baião 0
+BENL Berlaar -> Gemeente Berlaar 0
+BENL Laarne -> Gemeentebestuur Laarne 0
+BEFR Fauvillers -> Commune de Fauvillers 0
+PT Póvoa de Lanhoso -> Município da Póvoa de Lanhoso 0
+BEFR Rendeux -> Commune de Rendeux 0
+BEFR Rouvroy ->  
+BEFR Trois-Ponts ->  
+BENL Roosdaal -> Gemeentebestuur Roosdaal 0
+BEFR Daverdisse ->  
+BENL Gistel -> Stad Gistel 0
+PT Nazaré -> Município da Nazaré 0
+PT Seia -> Municipio de Seia 0
+BEFR Tellin ->  
+BENL Wichelen ->  
+BENL Alken -> Gemeente Alken 0
+BEFR Martelange -> Commune de Martelange 1
+BENL Retie -> Gemeente Retie 0
+PT Sines -> Município de Sines 1
+BENL Staden -> Gemeente Staden 0
+BEFR Herbeumont ->  
+PT Arouca -> Município de Arouca 0
+BENL Vosselaar -> Lokaal bestuur Vosselaar 0
+PT Celorico de Basto -> Município Celorico de Basto 0
+BENL Ingelmunster -> Gemeenteraad Ingelmunster 0
+PT Alcochete ->  
+BENL Grobbendonk -> Lokaal bestuur Grobbendonk 0
+BENL Hoeilaart -> Lokaal bestuur Hoeilaart 0
+BENL Tielt-Winge ->  
+PT Oliveira do Hospital -> Município de Oliveira do Hospital 0
+BENL Oud-Heverlee -> Gemeente Oud-Heverlee 0
+PT Vila da Praia da Vitória ->  
+BENL Moorslede -> Gemeente Moorslede 0
+PT Mangualde ->  
+PT Arruda dos Vinhos -> Município de Arruda dos Vinhos 0
+BENL Waasmunster -> Gemeente Waasmunster 0
+PT Lousã ->  
+BENL Nieuwpoort -> Stad Nieuwpoort 0
+BENL Niel ->  
+PT São Pedro do Sul -> Municipio São Pedro do Sul 0
+BENL Bierbeek -> Verslagen Gemeente Bierbeek 0
+BENL Damme -> Stad Damme 0
+PT Cinfães -> Município Cinfães 1
+PT Valença -> TV Câmara de Valença-BA 0
+BENL Wijnegem ->  
+BENL De Panne ->  
+PT Condeixa-a-Nova ->  
+BENL Sint-Lievens-Houtem ->  
+BENL Hulshout -> Lokaal bestuur Hulshout 0
+BENL Begijnendijk ->  
+PT Caminha ->  
+PT Grândola -> Município Grândola 0
+BENL Avelgem -> Gemeente Avelgem 0
+BENL Houthulst -> Gemeentebestuur Houthulst 0
+PT Batalha -> Município da Batalha 0
+BENL Bertem ->  
+BENL Wielsbeke ->  
+BENL Meerhout -> Gemeenteraad Meerhout 0
+BENL Hooglede -> gemeentebestuur Hooglede 0
+BENL Oudenburg -> Stad Oudenburg 0
+PT Serpa ->  Município de Serpa 1
+BENL Holsbeek ->  
+BENL Huldenberg -> Gemeente Huldenberg 0
+PT Lagoa (R.A.A.) -> Câmara Municipal de Lagoa - Açores 0
+BENL Dessel -> Lokaal bestuur Dessel 0
+PT Montemor-o-Novo -> Município de Montemor-o-Novo 1
+BENL Ledegem -> Gemeentebestuur Ledegem 0
+BENL Kapelle-op-den-Bos -> Gemeenteraad Kapelle-op-den-Bos 0
+PT Bombarral -> Município do Bombarral 0
+PT Castelo de Paiva -> Assembleia Municipal Castelo de Paiva 0
+BENL Herenthout -> Herenthout-gemeenteraad 0
+BENL Ardooie ->  
+BENL Halen ->  
+BENL Lennik -> Gemeente Lennik 0
+PT Cadaval -> Município de Cadaval 0
+PT Ponte de Sor -> Município Ponte de Sor 0
+BENL Merksplas ->  
+BENL Lichtervelde -> Gemeente Lichtervelde 0
+BENL Gingelom ->  
+BENL Koekelare ->  
+BENL Zoutleeuw ->  
+PT Cabeceiras de Basto -> Assembleia Municipal de Cabeceiras de Basto 0
+BENL Boutersem -> Gemeente Boutersem 0
+BENL Schelle ->  
+PT Horta ->  
+BENL Dentergem -> Gemeente Dentergem 0
+BENL Lint -> Lokaal bestuur Lint 0
+PT Sertã -> Sertã Município 0
+BENL Hove ->  
+BENL Zwalm -> Gemeente Zwalm 0
+PT Moura -> Câmara Municipal de Rolim de Moura 2
+PT Peso da Régua -> Município Peso da Régua 0
+BENL As -> Gemeente As 0
+PT Castro Daire ->  
+PT Valpaços ->  
+BENL Langemark-Poelkapelle -> Lokaal bestuur Langemark-Poelkapelle 0
+BENL Sint-Martens-Latem -> Lokaal bestuur Sint-Martens-Latem 0
+PT Alcanena -> Município de Alcanena 0
+BENL Heuvelland ->  
+BENL Vorselaar -> Lokaal bestuur Vorselaar 0
+PT Macedo de Cavaleiros -> Câmara Municipal Macedo de Cavaleiros 0
+BENL Kortenaken ->  
+PT Ribeira Brava -> Município da Ribeira Brava 0
+BENL Oostrozebeke -> Gemeente Oostrozebeke 0
+BENL Wellen -> Gemeente Wellen 0
+PT Nelas -> Município de Nelas 0
+BENL Heers -> Gemeente Heers 0
+BENL Linter -> Gemeente Linter 0
+PT Vendas Novas -> Município de Vendas Novas 0
+PT Óbidos -> Câmara Municipal de Óbidos 2
+BENL Zutendaal -> Gemeente Zutendaal 0
+BENL Pittem -> Gemeente Pittem 0
+BENL Nieuwerkerken ->  
+PT Penacova -> Município de Penacova 0
+BENL Sint-Laureins ->  
+PT São Brás de Alportel -> Município de São Brás de Alportel 2
+BENL Hoegaarden -> Gemeente Hoegaarden 0
+BENL Kluisbergen ->  
+BENL Bekkevoort ->  
+BENL Kaprijke -> Gemeente Kaprijke 0
+PT Alcácer do Sal -> Câmara Municipal de Alcácer do Sal 0
+PT Estremoz -> Município Estremoz 0
+BENL Lierde -> Gemeente Lierde 0
+BENL Geetbets ->  
+BENL Wortegem-Petegem ->  
+BENL Drogenbos ->  
+PT Mira -> Município de Mira 0
+BENL Glabbeek -> Gemeente Glabbeek 0
+BENL Maarkedal -> Gemeente Maarkedal 0
+PT Vieira do Minho -> Município de Vieira do Minho 0
+PT Miranda do Corvo ->  
+BENL Lendelede ->  
+BENL Linkebeek ->  
+BENL Voeren ->  
+BENL Alveringem ->  
+PT Tábua -> Município de Tábua 0
+BENL Pepingen ->  
+BENL Lo-Reninge -> Stad Lo-Reninge 0
+BENL Vleteren ->  
+BENL Baarle-Hertog ->  
+PT Sobral de Monte Agraço -> Município de Sobral de Monte Agraço 0
+BENL Zuienkerke -> Gemeentebestuur Zuienkerke 0
+PT Calheta (R.A.M.) ->  
+BENL Spiere-Helkijn ->  
+BENL Bever -> Gemeente Bever-biévène 0
+BENL Mesen ->  
+BENL Horebeke ->  
+PT Ponte da Barca -> Município de Ponte da Barca 0
+BENL Herstappe ->  
+PT Ansião -> Município de Ansião 0
+PT Reguengos de Monsaraz -> Município de Reguengos de Monsaraz 0
+PT Gouveia -> Município de Gouveia 0
+PT Murtosa -> Videos Município Murtosa 0
+PT Vila Pouca de Aguiar -> Vila Pouca de Aguiar - Município 0
+PT Alijó -> Município Alijó 0
+PT Sever do Vouga -> Município de Sever do Vouga 0
+PT Arganil ->  
+PT Resende -> Município de Resende 0
+PT Sátão -> Município de Sátão 0
+PT Vouzela -> Município de Vouzela -Oficial 0
+PT Santa Comba Dão -> Município Santa Comba Dão 0
+PT Carregal do Sal ->  
+PT Mortágua ->  
+PT Oliveira de Frades -> Município de Oliveira de Frades 0
+PT Vila Franca do Campo -> Câmara Municipal de Vila Franca do Campo 0
+PT Montalegre -> Município de Montalegre 0
+PT Vila Nova de Cerveira -> Município Vila Nova de Cerveira 0
+PT Moimenta da Beira ->  
+PT Chamusca -> Município da Chamusca 0
+PT Idanha-a-Nova -> Município de Idanha-a-Nova 0
+PT Sabugal -> Município Sabugal 0
+PT Mogadouro -> Assembleia Municipal de Mogadouro 0
+PT Ferreira do Alentejo -> Município Ferreira do Alentejo 0
+PT Pinhel -> Município de Pinhel 0
+PT Aljustrel -> Município de Aljustrel 0
+PT Paredes de Coura ->  
+PT Alpiarça -> Câmara Municipal de Alpiarça 0
+PT Ponta do Sol ->  
+PT Vila Viçosa ->  
+PT Campo Maior -> Município de Campo Maior 0
+PT Castro Marim -> Município de Castro Marim 0
+PT Trancoso -> Município de Trancoso 0
+PT Tarouca ->  
+PT Ferreira do Zêzere -> Município de Ferreira do Zêzere 0
+PT Vila Nova da Barquinha ->  
+PT Melgaço -> Município de Melgaço 0
+PT Vinhais ->  
+PT Castro Verde -> Município de Castro Verde 0
+PT Aljezur -> Município de Aljezur 0
+PT Proença-a-Nova -> Município Proença-a-Nova 0
+PT Vila Nova de Poiares -> Município Vila Nova de Poiares 0
+PT Arraiolos ->  
+PT Penalva do Castelo -> Município Penalva do Castelo 0
+PT Almodôvar -> Município de Almodôvar 0
+PT Borba -> Câmara Municipal de Telêmaco Borba 0
+PT Vila do Bispo -> Municipio de Vila do Bispo 0
+PT São João da Pesqueira ->  
+PT Madalena -> Câmara Municipal de Madalena 0
+PT Santana -> Câmara Municipal de Santana da Vargem 0
+PT Terras de Bouro ->  
+PT Torre de Moncorvo -> Municipio Torre de Moncorvo 0
+PT Mação -> Município de Mação 0
+PT Celorico da Beira -> Município de Celorico da Beira 0
+PT Mondim de Basto -> Município de Mondim de Basto 0
+PT Santa Marta de Penaguião ->  
+PT Redondo -> Município de Redondo 0
+PT Belmonte -> TV CÂMARA DE BELMONTE-BA 0
+PT Ribeira de Pena ->  
+PT Porto Santo -> Município Porto Santo 0
+PT Vila Flor -> Município de Vila Flor 0
+PT Alvaiázere -> Município de Alvaiázere 0
+PT Miranda do Douro ->  
+PT Mértola -> Município de Mértola 0
+PT Nisa -> Município Nisa 0
+PT Povoação -> Município da Povoação 0
+PT Vila Nova de Foz Côa -> Município Vila Nova de Foz Côa 0
+PT Golegã -> Município de Golegã 0
+PT Portel -> Município de Portel 0
+PT Monchique -> Assembleia Municipal de Monchique 0
+PT Almeida ->  
+PT Vidigueira -> Municipio Vidigueira 0
+PT Penela -> Município de Penela 0
+PT Viana do Alentejo ->  
+PT Vila do Porto -> Municipio Vila do Porto 0
+PT Figueiró dos Vinhos ->  
+PT Sabrosa ->  
+PT Armamar ->  
+PT Murça -> Município de Murça 0
+PT Carrazeda de Ansiães ->  
+PT Alandroal ->  
+PT Ourique -> Município de Ourique 0
+PT Velas ->  
+PT Sernancelhe -> Município de Sernancelhe 0
+PT Figueira de Castelo Rodrigo -> Município de Figueira de Castelo Rodrigo 0
+PT Aguiar da Beira ->  
+PT Boticas -> Município Boticas 0
+PT Cuba -> Municipio Cuba 0
+PT Tabuaço -> Município de Tabuaço 0
+PT São Vicente -> Câmara Municipal de São Vicente 2
+PT Sousel -> Município de Sousel 1
+PT Lajes do Pico ->  
+PT Oleiros -> Município de Oleiros 0
+PT Mêda -> Município Mêda 0
+PT Nordeste ->  
+PT Vila Nova de Paiva ->  
+PT Penamacor -> Penamacor Município 0
+PT Alfândega da Fé ->  
+PT Fornos de Algodres -> Município de Fornos de Algodres 0
+PT Santa Cruz da Graciosa ->  
+PT Mora -> Município de Mora 0
+PT Constância -> Câmara Municipal de Constância 0
+PT Góis ->  
+PT Vimioso -> Vimioso Município 0
+PT Avis -> Município de Avis 0
+PT Pedrógão Grande -> Município de Pedrógão Grande 0
+PT Sardoal -> Município Sardoal 0
+PT Calheta (R.A.A.) ->  
+PT Mesão Frio -> Município de Mesão Frio 0
+PT Pampilhosa da Serra ->  
+PT São Roque do Pico ->  
+PT Gavião -> Banda Juvenil Do Município de Gavião - Topic 0
+PT Crato -> Câmara Municipal de Crato 0
+PT Vila Velha de Ródão ->  
+PT Vila de Rei ->  
+PT Freixo de Espada à Cinta ->  
+PT Alter do Chão -> Municipio Alter do Chão 0
+PT Fronteira -> Câmara Municipal de São João da Fronteira 0
+PT Castelo de Vide -> Câmara Municipal de Castelo de Vide 0
+PT Manteigas -> Municipio de Manteigas 0
+PT Marvão -> Município de Marvão 0
+PT Monforte ->  
+PT Arronches -> Município Arronches 0
+PT Castanheira de Pêra -> Município Castanheira de Pera 1
+PT Porto Moniz -> Município Porto Moniz 0
+PT Alcoutim -> Município Alcoutim 0
+PT Mourão -> Câmara Municipal - Campo Mourão 1
+PT Alvito ->  
+PT Penedono ->  
+PT Barrancos ->  
+PT Corvo ->  
+PT Santa Cruz das Flores -> Câmara Municipal de Santa Cruz das Flores 0
+PT Lajes das Flores ->  
+
+---
