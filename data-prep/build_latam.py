@@ -1048,6 +1048,8 @@ def portugal():
                      "Children on family benefit (% of under-20s)": f"{100 * x['abono_children'] / x['u20']:.0f}%" if x.get("abono_children") and x.get("u20") else "",
                      "Median income (€ per taxpayer)": round(x["median_income"]) if x.get("median_income") else "",
                      "Children under 18 (estimated)": round(x["u18"]) if x.get("u18") else "",
+                     "Enrollment": x.get("pupils", ""), "Public school enrollment": x.get("pupils_public", ""),
+                     "Enrollment year": f"{x['pupils_year']} (pre-school and basic education)" if x.get("pupils_year") else "",
                      "School system": "Ministry of Education (teachers); municipality (buildings, staff, meals, transport)",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": x["name"]}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})

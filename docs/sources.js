@@ -320,6 +320,7 @@ window.SOURCES = [
       { title: "Family benefit: INE, children and young people receiving the abono de família (indicator 0010284), 2022", url: "https://www.ine.pt/ine/json_indicador/pindica.jsp?op=2&varcd=0010284&lang=PT" },
       { title: "Median income: INE, median gross declared income per taxpayer (indicator 0012749), 2024", url: "https://www.ine.pt/ine/json_indicador/pindica.jsp?op=2&varcd=0012749&lang=PT" },
       { title: "Population by age: INE, annual population estimates (indicator 0008273), 2023", url: "https://www.ine.pt/ine/json_indicador/pindica.jsp?op=2&varcd=0008273&lang=PT" },
+      { title: "Pupils: DGEEC, Regiões em Números 2024/2025 - Educação, pupils by municipality (one workbook per municipality in each region's volume)", url: "https://www.dgeec.medu.pt/art/educacao-pre-escolar-basico-e-secundario/estatisticas/regioes/652d13f3121f641a986cc632" },
       { title: "Borders: Eurostat GISCO Local Administrative Units (LAU) 2024 (parishes), merged into municipalities with mapshaper", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
       { title: "Meetings (stand-in): each municipality's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
     ],
