@@ -313,6 +313,36 @@ window.SOURCES = [
     note: "Built by data-prep/prep_japan.py and data-prep/build_latam.py. Municipalities are matched to borders and figures by their local government code; designated cities' wards are merged into their city."
   },
   {
+    only: "Portugal",
+    group: "Portugal: municipalities, minimum income and population",
+    items: [
+      { title: "Minimum income (stand-in): INE, social insertion income (RSI) beneficiaries per 1,000 people of working age (indicator 0013420), 2025", url: "https://www.ine.pt/ine/json_indicador/pindica.jsp?op=2&varcd=0013420&lang=PT" },
+      { title: "Family benefit: INE, children and young people receiving the abono de família (indicator 0010284), 2022", url: "https://www.ine.pt/ine/json_indicador/pindica.jsp?op=2&varcd=0010284&lang=PT" },
+      { title: "Median income: INE, median gross declared income per taxpayer (indicator 0012749), 2024", url: "https://www.ine.pt/ine/json_indicador/pindica.jsp?op=2&varcd=0012749&lang=PT" },
+      { title: "Population by age: INE, annual population estimates (indicator 0008273), 2023", url: "https://www.ine.pt/ine/json_indicador/pindica.jsp?op=2&varcd=0008273&lang=PT" },
+      { title: "Pupils: DGEEC, Regiões em Números 2024/2025 - Educação, pupils by municipality (one workbook per municipality in each region's volume)", url: "https://www.dgeec.medu.pt/art/educacao-pre-escolar-basico-e-secundario/estatisticas/regioes/652d13f3121f641a986cc632" },
+      { title: "Borders: Eurostat GISCO Local Administrative Units (LAU) 2024 (parishes), merged into municipalities with mapshaper", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
+      { title: "Meetings (stand-in): each municipality's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_portugal.py and data-prep/build_latam.py. Municipalities are matched by their code (DTMN)."
+  },
+  {
+    only: "Belgium",
+    group: "Belgium: municipalities, integration income, income and population",
+    items: [
+      { title: "Integration income (stand-in): PPS Social Integration, revenu d'intégration / leefloon beneficiaries by municipality, 2025 (stat.mi-is.be)", url: "https://stat.mi-is.be/fr/dashboard/ris_cities?menu=map" },
+      { title: "Income: Statbel, fiscal statistics on income by municipality (TF_PSNL_INC_TAX_MUNTY), 2023", url: "https://statbel.fgov.be/en/open-data/fiscal-statistics-income" },
+      { title: "Population and children under 18: Statbel, population by place of residence and age (TF_SOC_POP_STRUCT_2025)", url: "https://statbel.fgov.be/en/open-data" },
+      { title: "Municipality codes and names: Statbel, REFNIS code list (1 January 2025)", url: "https://statbel.fgov.be/en/open-data/code-refnis-0" },
+      { title: "Pupils, Flanders: Flemish education department, Dataloep enrolments by school site, 1 February 2025 (nursery and primary, ordinary and special)", url: "https://opendata.dataplatform-onderwijs.vlaanderen.be/dataloep/inschrijvingen-leerplicht-instellingen-dataset-2024-2025-1feb.csv" },
+      { title: "Pupils, Wallonia and the German-speaking municipalities: IWEPS WalStat, pupils enrolled in nursery and primary schools by municipality, 2024", url: "https://www.odwb.be/explore/dataset/243300/" },
+      { title: "Pupils, Brussels: IBSA, origin and destination of pupils by municipality (tables 6.3.2.2 and 6.3.2.3), 2023-24", url: "https://ibsa.brussels/themes/enseignement/origine-destination-des-eleves" },
+      { title: "Borders: Eurostat GISCO Local Administrative Units (LAU) 2024, merged into the 2025 municipalities with mapshaper", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
+      { title: "Meetings: each municipality's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_belgium.py and data-prep/build_latam.py. Municipalities are matched by their REFNIS code; the 2025 mergers are in data-prep/inputs/belgium/be_mergers_2025.json."
+  },
+  {
     only: "Ecuador",
     group: "Ecuador: cantons, poverty, population and pupils",
     items: [
