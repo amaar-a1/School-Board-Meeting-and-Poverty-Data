@@ -183,7 +183,18 @@ window.SOURCES = [
       { title: "Norfolk Island unemployment: Australian Bureau of Statistics, 2021 Census QuickStats (Norfolk Island)", url: "https://www.abs.gov.au/census/find-census-data/quickstats/2021/SAL90004" },
       { title: "Where the World Bank has none: CIA World Factbook (2026 edition, and the November 2023 edition for poverty and unemployment), via the factbook.json archive", url: "https://github.com/factbook/factbook.json" },
       { title: "Meetings (stand-in): each legislature's YouTube channel, found with data-prep/islands_youtube.py and checked by hand (listed in the “Meetings source” column); sittings counted once per day", url: "https://www.youtube.com/" },
-      { title: "Borders: Natural Earth 1:10m admin-0 countries", url: "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/" }
+      { title: "Borders: Natural Earth 1:10m admin-0 countries", url: "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/" },
+      { title: "Bonaire, Sint Eustatius and Saba, child poverty: Statistics Netherlands (CBS), “Poverty on Bonaire, St Eustatius and Saba declined in 2024”", url: "https://www.cbs.nl/en-gb/news/2026/29/poverty-on-bonaire-st-eustatius-and-saba-declined-in-2024" },
+      { title: "Bonaire, Sint Eustatius and Saba, population by age (1 January 2026) and pupils (2025/26): CBS StatLine tables 83698NED and 84732NED", url: "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/84732NED/table" },
+      { title: "Christmas Island: Australian Bureau of Statistics, 2021 Census QuickStats", url: "https://abs.gov.au/census/find-census-data/quickstats/2021/LGA51710" },
+      { title: "Cocos (Keeling) Islands: Australian Bureau of Statistics, 2021 Census QuickStats", url: "https://abs.gov.au/census/find-census-data/quickstats/2021/LGA51860" },
+      { title: "Chatham Islands: Stats NZ, 2023 Census place summary (Chatham Islands Territory)", url: "https://tools.summaries.stats.govt.nz/places/TA/chatham-islands-territory" },
+      { title: "Tokelau: Tokelau 2015/16 Household Income and Expenditure Survey, poverty analysis (Tokelau National Statistics Office, Stats NZ and the Pacific Community)", url: "https://spccfpstore1.blob.core.windows.net/digitallibrary-docs/files/73/73d325a34d612e880335fea49896211f.pdf" },
+      { title: "Gibraltar pupils: Gibraltar Health Authority, Joint Strategic Needs Assessment, education (pupils in government schools, September 2023)", url: "https://www.gha.gi/jsna-education/" },
+      { title: "Svalbard population: Statistics Norway, table 07430 (all settlements, second half of 2026)", url: "https://www.ssb.no/statbank/table/07430/" },
+      { title: "Svalbard unemployment (estimate): NAV, Hovedtall om arbeidsmarkedet, January and July 2025 (fully unemployed, Svalbard and other areas); people in work: Statistics Norway, Samfunnsforhold på Svalbard (Rapporter 2023/36)", url: "https://www.ssb.no/virksomheter-foretak-og-regnskap/virksomheter-og-foretak/artikler/samfunnsforhold-pa-svalbard" },
+      { title: "Pitcairn: Pitcairn Island Economic Review (Solomon Leonard, for the UK government, January 2014)", url: "https://static1.squarespace.com/static/6526ff6fef608a3828c13d05/t/65600116a332be611d46c884/1700790554810/Pitcairn+Islands+Economic+Report+-+Final+Report.pdf" },
+      { title: "Borders of the places Natural Earth doesn't list on their own (Caribbean Netherlands, Christmas Island, Cocos, Gibraltar, Svalbard, Pitcairn, Tokelau): Eurostat GISCO countries 2024, 1:1 million; the Chatham Islands: Natural Earth admin-1", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/administrative-units/countries" }
     ],
     note: "Many of these figures are old (some Factbook poverty rates are from surveys more than ten years old); each row's “Poverty measure” names the source and year. Locales are estimates from population over land area. Built by data-prep/build_islands.py."
   },

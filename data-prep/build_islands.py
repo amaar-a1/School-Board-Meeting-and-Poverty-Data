@@ -39,6 +39,46 @@ NAMES = {"Antigua and Barb.": "Antigua and Barbuda", "St. Kitts and Nevis": "Sai
 MANUAL = {"NFK": (2.8, "Unemployment rate, a stand-in for poverty (Australian Bureau of Statistics, 2021 Census: 33 of 1,187 in the labour force)"),
           "MAF": (27.0, "Unemployment rate, a stand-in for poverty (census definition, 2023; IEDOM annual report on Saint-Martin, 2025 edition)"),
           "BLM": (1.9, "Unemployment rate, a stand-in for poverty (ILO definition, 2021; IEDOM annual report on Saint-Barthélemy, 2025 edition)")}
+# Places added in November 2026, which Natural Earth doesn't list on their own (borders: prep_islands_extra.py).
+# Figures found by hand from each place's statistics office (sources in docs/sources.js).
+EXTRA = {
+    "BON": dict(name="Bonaire", region="Caribbean", status="Special municipality of the Netherlands", rate=29.0,
+                measure="Children under 18 living in poverty (Statistics Netherlands, CBS, 2024; below the Caribbean Netherlands social minimum)",
+                pop=27611, kids=4202, enr=3764, ey="2025/26 (primary and secondary, CBS)", land=288),
+    "STA": dict(name="Sint Eustatius", region="Caribbean", status="Special municipality of the Netherlands", rate=35.0,
+                measure="Children under 18 living in poverty (Statistics Netherlands, CBS, 2024; below the Caribbean Netherlands social minimum)",
+                pop=3348, kids=587, enr=536, ey="2025/26 (primary and secondary, CBS)", land=21),
+    "SAB": dict(name="Saba", region="Caribbean", status="Special municipality of the Netherlands", rate=32.0,
+                measure="Children under 18 living in poverty (Statistics Netherlands, CBS, 2024; below the Caribbean Netherlands social minimum)",
+                pop=2270, kids=296, enr=252, ey="2025/26 (primary and secondary, CBS)", land=13),
+    "CXR": dict(name="Christmas Island", region="Asia and the Indian Ocean", status="Territory of Australia", rate=1.5,
+                measure="Unemployment rate, a stand-in for poverty (Australian Bureau of Statistics, 2021 Census: 12 people)",
+                pop=1692, kids=283, enr=212, ey="2021 (Census: pupils at government primary and secondary schools)", land=135),
+    "CCK": dict(name="Cocos (Keeling) Islands", region="Asia and the Indian Ocean", status="Territory of Australia", rate=2.0,
+                measure="Unemployment rate, a stand-in for poverty (Australian Bureau of Statistics, 2021 Census: 5 people)",
+                pop=593, kids=125, enr=82, ey="2021 (Census: pupils at government primary and secondary schools)", land=14),
+    "GIB": dict(name="Gibraltar", region="Europe and the North Atlantic", status="Territory of the United Kingdom", rate=1.0,
+                measure="Unemployment rate, a stand-in for poverty (CIA World Factbook, 2016 estimate)",
+                pop=29733, kids=5940, enr=6262, ey="September 2023 (government schools, Gibraltar Health Authority)", land=6.5),
+    # Svalbard: NAV's monthly tables count 14 (January 2025) and 11 (July 2025) people fully unemployed in "Svalbard and
+    # other areas" but suppress the rate; Statistics Norway counts about 2,500 people employed there (2022, Rapporter
+    # 2023/36: 383 more than in 2008, an 18% rise). 12.5 / (2,511 + 12.5) = 0.5%.
+    "SJM": dict(name="Svalbard", region="Europe and the North Atlantic", status="Part of Norway", rate=0.5,
+                measure="Unemployment rate, an estimate standing in for poverty: about 12 people fully unemployed (NAV, January and July 2025) "
+                        "out of about 2,500 in work (Statistics Norway, 2022); Norway's poverty statistics leave Svalbard out",
+                pop=2933, kids=None, enr=None, ey="", land=61022),
+    "CHT": dict(name="Chatham Islands", region="Pacific", status="Part of New Zealand", rate=2.9,
+                measure="Unemployed people as a share of everyone aged 15 and over, a stand-in for poverty (Stats NZ, 2023 Census: 15 people)",
+                pop=615, kids=99, enr=None, ey="", land=966),
+    # Pitcairn: the Pitcairn Island Economic Review (Solomon Leonard for the UK government, January 2014), paragraphs 11 and 234.
+    "PCN": dict(name="Pitcairn Islands", region="Pacific", status="Territory of the United Kingdom", rate=0.0,
+                measure="Unemployment rate, a stand-in for poverty: all 31 working-age adults held part-time government jobs (Pitcairn Island Economic Review, 2014); "
+                        "average household income was about NZ$27,000 a year, a third of New Zealand's",
+                pop=50, kids=None, enr=None, ey="", land=47),
+    "TKL": dict(name="Tokelau", region="Pacific", status="Territory of New Zealand", rate=3.9,
+                measure="People below the basic-needs poverty line, all ages (Tokelau Household Income and Expenditure Survey, 2015/16)",
+                pop=2453, kids=None, enr=None, ey="", land=12),
+}
 # Meetings: no island has a school board (a ministry runs the schools), so, as for Saint-Pierre-et-Miquelon,
 # the stand-in is the elected legislature's sittings on its YouTube channel (islands_youtube.py finds
 # them; checked by hand). "all": the legislature's own channel, where every dated sitting counts;
@@ -89,7 +129,14 @@ ISLAND_CHANNELS = {
     "VCT": ("https://www.youtube.com/channel/UCnSUlj13EVE449biHplmLlw", "filter"),   # API SVG (government information service)
     "MCO": ("https://www.youtube.com/channel/UCrUztlaGkaqr6AeONbmfcCw", "all"),   # Conseil National TV (Monaco)
     "AND": ("https://www.youtube.com/channel/UC8DPQPM6kHQ7ygyPgDicHyA", "all"),   # Consell General (Andorra)
+    "BON": ("https://www.youtube.com/channel/UCxqEdMrLfjuM_PiOW0nfFTg", "all"),   # Konseho Insular Bonaire (the Island Council)
+    "STA": ("https://www.youtube.com/channel/UCMHMQ2Ugkm8qLSudfNV-nzg", "all"),   # Island Council Sint Eustatius
+    "SAB": ("https://www.youtube.com/channel/UCAag5hACX3kH2zFmB3YvA7w", "filter"),   # Public Entity Saba
+    "CXR": ("https://www.youtube.com/channel/UCBskr7IINEHAYUmtMxOoTyg", "all"),   # Shire of Christmas Island
 }
+# A second channel whose sittings count too (still one per day): the government's channel, which posts some of the same meetings.
+MORE_CHANNELS = {"STA": ("https://www.youtube.com/channel/UCHPtYhBXgaCWac8QqxQVZlg", "filter", "Statia Government"),
+                 "SAB": ("https://www.youtube.com/channel/UCo-EbrFXLtZOo_XB50hUEbg", "all", "Island Council Saba")}
 # Why an island shows 0 meetings, where the reason is more specific than "nothing found".
 ZERO_NOTES = {
     "IMN": "No school board meets in public. Tynwald's YouTube channel posts Tynwald Day and committee videos but not its sittings, which it streams on its own website",
@@ -99,13 +146,19 @@ ZERO_NOTES = {
     "LIE": "No school board meets in public. No recorded sittings of the Landtag were found on YouTube",
     "SMR": "No school board meets in public. Only party channels post clips of the Consiglio Grande e Generale on YouTube, not full sittings",
     "GRL": "No school board meets in public. KNR, the public broadcaster, posts only a few clips of Inatsisartut sittings",
+    "CCK": "No school board meets in public (Western Australia's education department runs the school). No recordings of the Shire of Cocos (Keeling) Islands council were found on YouTube",
+    "GIB": "No school board meets in public. GBC News posts reports on the Gibraltar Parliament, not its sittings, and no other channel posts them",
+    "SJM": "No school board meets in public (the Longyearbyen Community Council runs the school). Its YouTube channel has only a few information videos, not its meetings",
+    "CHT": "No school board meets in public. No recordings of the Chatham Islands Council were found on YouTube",
+    "PCN": "No school board meets in public. No recordings of the Island Council were found on YouTube (a channel named Pitcairn Borough is a town in Pennsylvania)",
+    "TKL": "No school board meets in public. No recordings of the General Fono, Tokelau's national assembly, were found on YouTube",
 }
 LEGIS_WORDS = re.compile(r"house of assembly|house of representatives|parliament|parlement|legislative (assembly|council)|national assembly|"
                          r"\bsenate\b|lower house|tynwald|states (assembly|of deliberation|meeting)|\bthe states\b|majlis|nitijela|maneaba|"
                          r"\bcongr[eè]s|\bcongress\b|assembl[ée]e|assembleia|conseil territorial|inatsisartut|fono|ολομέλεια|βουλ|مجلس|"
-                         r"olbiil|regional council|sitting|séance|sessão|sess[ãa]o plen|plen[áa]ri|kantonsrat|grosse[nr]? rat|landrat|grand conseil|"
+                         r"olbiil|regional council|island council|konseho insular|central committee|sitting|séance|sessão|sess[ãa]o plen|plen[áa]ri|kantonsrat|grosse[nr]? rat|landrat|grand conseil|"
                          r"gran consiglio|parlement jurassien|consell general|conseil national|landtag", re.I)
-SITTING = re.compile(r"sitting|session|séance|seance|sess[ãa]o|meeting|plen[aá]r|plénière|συνεδρ|ολομέλεια|جلسة|vergadering|"
+SITTING = re.compile(r"reuni[oó]n|sitting|session|séance|seance|sess[ãa]o|meeting|plen[aá]r|plénière|συνεδρ|ολομέλεια|جلسة|vergadering|"
                      r"the honourable the (house|senate)|house of (assembly|representatives)|\bsenate\b|maneaba|ataatsimiinne|states meeting|"
                      r"question (time|hour)|budget (debate|address)|\bcrs\b|nitijela|regular session|"
                      r"sitzung|kantonsrat|grosse[nr]? rat|landrat|grand conseil|gran consiglio|seduta|sessione|sessi[óo]|consell general|conseil national", re.I)
@@ -183,7 +236,7 @@ def main():
     lu = json.load(open(os.path.join(IN, "islands", "eurostat_ilc_li02_lu_ch.json")))
     titles = {}
     for f in ("islands/youtube/islands_titles.json", "islands/youtube/islands_titles_extra.json", "islands/youtube/islands_titles_parlview.json",
-              "switzerland/youtube/titles.json"):   # the last has the microstates' parliaments
+              "islands/youtube/islands_titles_more.json", "switzerland/youtube/titles.json"):   # the last has the microstates' parliaments
         p = os.path.join(IN, f)
         if os.path.exists(p): titles.update(json.load(open(p, encoding="utf-8")))
     from shared_titles import shared_titles
@@ -242,16 +295,30 @@ def main():
                     "Population": round(pop) if pop else "", "Children Ages 0-14 (estimated)": round(pop * share / 100) if pop and share else "",
                     "Enrollment": enr, "Enrollment year": ey, "Locale": loc, "People per km² (estimated)": round(dens) if dens else "",
                     "District ID": f"ISLE-{iso}"})
+    for iso, e in EXTRA.items():
+        dens = e["pop"] / e["land"]
+        out.append({"District": e["name"], "Region": e["region"], "Status": e["status"],
+                    "Available Board Meetings": 0, "Meetings source": "", "Latest meeting": "", "Meetings by year": "", "Meetings note": "",
+                    "Poverty rate or stand-in": f"{e['rate']:.2f}%" if e["rate"] is not None else "", "Poverty measure": e["measure"],
+                    "Population": e["pop"], "Children Ages 0-14 (estimated)": e["kids"] or "", "Enrollment": e["enr"] or "", "Enrollment year": e["ey"],
+                    "Locale": "Urban" if dens >= 2000 else "Suburban" if dens >= 500 else "Mixed" if dens >= 100 else "Rural",
+                    "People per km² (estimated)": round(dens), "District ID": f"ISLE-{iso}"})
+    out.sort(key=lambda r: r["District"])
     for r in out:
         iso = r["District ID"].split("-", 1)[1]
         url, mode = ISLAND_CHANNELS.get(iso, ("", ""))
         n, kept = sittings(titles[url], mode) if url and url in titles else (0, [])
+        if iso in MORE_CHANNELS and MORE_CHANNELS[iso][0] in titles:
+            n2, kept2 = sittings(titles[MORE_CHANNELS[iso][0]], MORE_CHANNELS[iso][1])
+            kept = kept + kept2; n = len({sitting_key(t) for t in kept})
         if n:
             from meeting_dates import summary as date_summary
             r["Latest meeting"], r["Meetings by year"] = date_summary(kept)
             r["Available Board Meetings"] = n
             r["Meetings source"] = url
-            r["Meetings note"] = (f"Stand-in: recorded sittings (and committee meetings) of the legislature on {names.get(iso, 'its YouTube channel')}, one per day; "
+            on = names.get(iso, "its YouTube channel") + (f" and {MORE_CHANNELS[iso][2]}" if iso in MORE_CHANNELS else "")
+            body = "the island council" if iso in ("BON", "STA", "SAB") else "the shire council" if iso == "CXR" else "the legislature"
+            r["Meetings note"] = (f"Stand-in: recorded sittings (and committee meetings) of {body} on {on}, one per day; "
                                   "no school board meets in public")
         else:
             r["Meetings note"] = ZERO_NOTES.get(iso, "No school board meets in public, and no recorded sittings of the legislature were found on YouTube "
@@ -266,6 +333,9 @@ def main():
     shapes["features"] = feats
     feats = [{"type": "Feature", "properties": {"id": f"ISLE-{iso_of[f['properties']['ADM0_A3']]}", "NAME": f["properties"]["NAME"]},
               "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}} for f in shapes["features"]]
+    for f in json.load(open(os.path.join(IN, "islands", "extra_borders.geojson"), encoding="utf-8"))["features"]:
+        feats.append({"type": "Feature", "properties": {"id": f"ISLE-{f['properties']['ISO']}", "NAME": f["properties"]["NAME"]},
+                      "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
     json.dump({"type": "FeatureCollection", "features": feats}, open(os.path.join(DOCS, "map", "islands.json"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
     for r in out:
         print(f"{r['District'][:28]:28} {r['Region'][:12]:12} {r['Poverty rate or stand-in']:>7} {r['Poverty measure'][:55]:55} enr {r['Enrollment']!s:>7} {r['Enrollment year']} {r['Locale']}")
