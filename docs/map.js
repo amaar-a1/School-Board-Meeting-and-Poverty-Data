@@ -74,6 +74,12 @@
       colors: ["#fef0d9", "#fdd49e", "#fdbb84", "#fc8d59", "#e34a33", "#b30000"],
       labels: ["Under 10%", "10–15%", "15–20%", "20–25%", "25–30%", "30% or more"]
     },
+    // Japan's welfare rate is far lower than any poverty rate (few people claim welfare), so it has a scale of its own.
+    welfare: {
+      breaks: [0.5, 1, 1.5, 2, 3],
+      colors: ["#fef0d9", "#fdd49e", "#fdbb84", "#fc8d59", "#e34a33", "#b30000"],
+      labels: ["Under 0.5%", "0.5–1%", "1–1.5%", "1.5–2%", "2–3%", "3% or more"]
+    },
     // Comparable across countries: where a place falls among its own country's places (app.js adds it).
     rank: {
       column: "Poverty rank in country",
@@ -210,8 +216,9 @@
     if (metric === "meetings" && row && !(v > 0) && toNumber(row["Other Board Meetings"]) > 0) v = toNumber(row["Other Board Meetings"]);
     if (metric === "meetings" && isNaN(v)) v = 0;   // no meetings found counts as 0
     if (isNaN(v)) return NO_DATA;
-    const i = sc.breaks.findIndex((b) => v < b);
-    return sc.colors[i === -1 ? sc.colors.length - 1 : i];
+    const s2 = metric === "poverty" && euOf(id) === "JP" ? SCALES.welfare : sc;
+    const i = s2.breaks.findIndex((b) => v < b);
+    return s2.colors[i === -1 ? s2.colors.length - 1 : i];
   }
 
   // In a state's view (or the territories'), districts elsewhere are faded.
@@ -343,6 +350,10 @@
         `<span><i style="background:${NO_DATA}"></i>No locale</span>`,
         `<span class="map-faded">Locale: the US uses NCES's locale codes and Canada Statistics Canada's population centre sizes; elsewhere it's estimated from population density (see the By locale tab)</span>`]
       : sc.labels.map((l, i) => `<span><i style="background:${sc.colors[i]}"></i>${l}</span>`);
+    const jpv = current && current.country === "JP";
+    if (jpv && $("map-metric").value === "poverty") items.splice(0, items.length, ...SCALES.welfare.labels.map((l, i) => `<span><i style="background:${SCALES.welfare.colors[i]}"></i>${l}</span>`));
+    if ((jpv || (current && current.combined)) && $("map-metric").value === "poverty")
+      items.push(`<span class="map-faded">Japan: the welfare rate (people on public assistance), on its own scale${jpv ? "" : " (under 0.5% to 3% or more)"}; published for designated and core cities, and each prefecture's rate elsewhere</span>`);
     const ca = current && (current.country === "CA" || current.parent || current.combined);
     const euv = current && EU[current.country] ? current.country : null;
     if ((!ca || current.combined) && !(current && (current.country === "FR" || current.country === "IE" || euv)) && !ukView()) items.push(`<span><i style="background:${NO_DISTRICT}"></i>No school district (mostly national parks and federal land)</span>`);
