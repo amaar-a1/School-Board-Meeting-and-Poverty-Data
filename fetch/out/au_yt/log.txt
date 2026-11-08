@@ -1,0 +1,546 @@
+AU Adelaide Plains ->  
+AU Alexandrina ->  
+AU Adelaide Hills -> Adelaide Hills Council official 0
+AU Anangu Pitjantjatjara Yunkunytjatjara ->  
+AU Albury ->  
+AU Armidale Regional -> Armidale Regional Council 0
+AU Alpine -> Alpine Shire Council Videos 0
+AU Adelaide -> City of Adelaide 0
+AU Armadale ->  
+AU Aurukun -> Aurukun Shire Council Local Services 0
+AU Ballina ->  
+AU Albany -> The City of Albany 0
+AU Augusta Margaret River -> Shire of Augusta Margaret River 0
+AU Alice Springs ->  
+AU Banana -> Australian Banana Growers' Council 0
+AU Barcoo ->  
+AU Ararat -> Ararat Rural City Council 0
+AU Barunga West ->  
+AU Ballarat -> City of Ballarat 0
+AU Ashburton -> Shire of Ashburton 0
+AU Balranald ->  
+AU Australian Capital Territory ->  
+AU Bathurst Regional -> Bathurst Regional Council 0
+AU Barcaldine -> Barcaldine Regional Council 0
+AU Balonne -> Balonne Shire Council 0
+AU Bayside (Vic.) -> Bayside City Council 0
+AU Barossa -> The Barossa Council 0
+AU Banyule -> Banyule City Council 0
+AU Bellingen -> Bellingen Shire Council 0
+AU Barkly -> Barkly Regional Arts 0
+AU Bassendean -> Town of Bassendean Council 0
+AU Benalla -> Benalla Rural City Council 0
+AU Beverley ->  
+AU Bass Coast -> Bass Coast Shire Council 0
+AU Baw Baw ->  
+AU Bayside (NSW) -> Bayside Council 0
+AU Bland -> Bland Shire Council 0
+AU Bayswater ->  
+AU Bega Valley ->  
+AU Boddington ->  
+AU Belyuen ->  
+AU Boulia ->  
+AU Belmont -> City of Belmont 0
+AU Berrigan -> Berrigan Shire Council 0
+AU Break O'Day -> Break O'Day Council 0
+AU Brighton ->  
+AU Berri Barmera -> Berri Barmera Council 0
+AU Blacktown -> Greater Blacktown Business Chamber 0
+AU Blackall Tambo ->  
+AU Broken Hill -> Broken Hill City Council 0
+AU Broomehill-Tambellup ->  
+AU Blue Mountains -> Blue Mountains City Council 0
+AU Blayney -> Blayney Council 0
+AU Bogan -> Bogan Shire Council 0
+AU Buloke -> Buloke Shire Council 0
+AU Bourke ->  
+AU Boroondara -> City of Boroondara 0
+AU Boyup Brook ->  
+AU Burdekin -> Burdekin Shire Council 0
+AU Bridgetown-Greenbushes ->  
+AU Brewarrina -> Brewarrina Shire Council 0
+AU Brisbane -> Brisbane City Council Meetings 0
+AU Burnside -> City of Burnside 0
+AU Brimbank -> Brimbank City Council 0
+AU Byron ->  
+AU Broome -> Shire of Broome 0
+AU Brookton ->  
+AU Bulloo ->  
+AU Bruce Rock ->  
+AU Bunbury ->  
+AU Burke ->  
+AU Cambridge -> 22-CityView - Cambridge, MA 2
+AU Bundaberg -> Bundaberg Regional Council 0
+AU Campbelltown (NSW) -> Campbelltown City Council 0
+AU Burwood -> Burwood Council 0
+AU Burnie -> Burnie City Council 0
+AU Cabonne -> Cabonne Council 0
+AU Busselton -> City of Busselton 0
+AU Camden -> Camden Council NSW 0
+AU Canning -> City of Canning 0
+AU Campbelltown (SA) ->  
+AU Cardinia ->  
+AU Carpentaria ->  
+AU Cairns -> Cairns Regional Council 1
+AU Cassowary Coast -> Cassowary Coast Regional Council 0
+AU Canterbury-Bankstown -> City of Canterbury Bankstown 0
+AU Campaspe -> Campaspe Shire Council 2
+AU Carnamah ->  
+AU Canada Bay ->  
+AU Carrathool ->  
+AU Central Coast (Tas.) -> Central Coast Council Tasmania 0
+AU Capel -> Shire of Capel 0
+AU Ceduna -> Ceduna Regional Community Network 0
+AU Central Goldfields -> Central Goldfields Shire Council 0
+AU Carnarvon -> Shire of Carnarvon 0
+AU Central Darling -> Central Darling Shire Council 0
+AU Cessnock -> Cessnock City Council 0
+AU Charters Towers -> Charters Towers Regional Council 0
+AU Central Highlands (Qld) -> Central Highlands Regional Council 0
+AU Casey -> City of Casey 0
+AU Chapman Valley ->  
+AU Circular Head -> Circular Head Council 0
+AU Cherbourg ->  
+AU Clare and Gilbert Valleys ->  
+AU Clarence Valley ->  
+AU Central Coast (NSW) -> Central Coast Council - Live Stream 0
+AU Cobar ->  
+AU Clarence -> City of Clarence 0
+AU Central Desert ->  
+AU Central Highlands (Tas.) ->  
+AU Cloncurry -> Cloncurry Shire Council 0
+AU Colac Otway -> Colac Otway Shire Council 0
+AU Coffs Harbour -> City of Coffs Harbour 0
+AU Cook -> Cook Shire Council 0
+AU Charles Sturt -> City of Charles Sturt 0
+AU Coober Pedy ->  
+AU Coomalie ->  
+AU Coorow ->  
+AU Chittering -> Chittering Shire 0
+AU Coolgardie -> Shire of Coolgardie 0
+AU Claremont ->  
+AU Cleve ->  
+AU Corangamite -> Corangamite Shire Council 0
+AU Cockburn ->  
+AU Coorong -> Coorong District Council 0
+AU Collie ->  
+AU Coolamon ->  
+AU Cowra -> Cowra Council 0
+AU Copper Coast -> Copper Coast Council 0
+AU Coonamble ->  
+AU Cuballing ->  
+AU Cottesloe ->  
+AU Cootamundra-Gundagai Regional ->  
+AU Cunderdin ->  
+AU Croydon ->  
+AU Corrigin ->  
+AU Dardanup -> Shire of Dardanup 0
+AU Cranbrook -> Shire of Cranbrook 0
+AU Cumberland -> Cumberland City Council 1
+AU Darwin Waterfront Precinct ->  
+AU Cue ->  
+AU Dandaragan ->  
+AU Dalwallinu ->  
+AU Darwin ->  
+AU Darebin ->  
+AU Derwent Valley -> Derwent Valley Council 0
+AU Denmark ->  
+AU Derby-West Kimberley -> Shire of Derby West Kimberley 0
+AU Donnybrook-Balingup -> Shire of Donnybrook Balingup 0
+AU Diamantina ->  
+AU Devonport -> Devonport City Council 0
+AU Doomadgee ->  
+AU Douglas -> Douglas Shire Council 0
+AU Dowerin -> Shire of Dowerin 0
+AU Dumbleyung ->  
+AU East Arnhem ->  
+AU Dundas -> Shire of Dundas 0
+AU East Pilbara ->  
+AU Esperance ->  
+AU Dorset -> Dorset Council UK 1
+AU Exmouth ->  
+AU East Fremantle -> Town of East Fremantle 0
+AU Edward River -> Edward River Council 0
+AU Flinders (Qld) -> Flinders Shire Council 0
+AU Etheridge ->  
+AU Dubbo Regional -> Dubbo Regional Council 0
+AU Forbes -> Forbes Shire Council 0
+AU Dungog -> Dungog Shire Council 0
+AU East Gippsland ->  
+AU Fairfield -> Fairfield City Council 0
+AU Elliston ->  
+AU Flinders (Tas.) ->  
+AU Eurobodalla ->  
+AU Franklin Harbour ->  
+AU Fraser Coast -> Fraser Coast Regional Council 0
+AU Federation -> Federation Council 0
+AU Flinders Ranges ->  
+AU Fremantle -> City of Fremantle 0
+AU Frankston ->  
+AU Gannawarra ->  
+AU George Town -> George Town Council Tasmania 0
+AU Gawler -> Town of Gawler 0
+AU Gingin ->  
+AU Gilgandra ->  
+AU Glen Eira ->  
+AU Georges River -> Georges River Council 0
+AU Gladstone ->  
+AU Glamorgan-Spring Bay -> Glamorgan Spring Bay Council 0
+AU Glenorchy -> Glenorchy City Council 0
+AU Glen Innes Severn -> Glen Innes Severn Council 0
+AU Gnowangerup ->  
+AU Goomalling ->  
+AU Glenelg -> Glenelg Shire Council 0
+AU Goulburn Mulwaree ->  
+AU Golden Plains -> Golden Plains Shire Council 0
+AU Greater Bendigo ->  
+AU Gosnells -> City of Gosnells Council Meetings 0
+AU Gold Coast -> Council of the City of Gold Coast 0
+AU Grant ->  
+AU Greater Geraldton -> City of Greater Geraldton 0
+AU Griffith ->  
+AU Goondiwindi -> Goondiwindi Regional Council 0
+AU Goyder ->  
+AU Gympie -> Gympie Regional Council 0
+AU Greater Geelong -> City of Greater Geelong 0
+AU Greater Shepparton ->  
+AU Hawkesbury -> Hawkesbury City Council 0
+AU Gwydir ->  
+AU Hilltops -> Hilltops Council 0
+AU Greater Dandenong -> City of Greater Dandenong 0
+AU Harvey -> Shire of Harvey 0
+AU Greater Hume Shire ->  
+AU Gunnedah -> Gunnedah Shire Council 0
+AU Hepburn -> Hepburn Shire Council 0
+AU Halls Creek ->  
+AU Hobart -> City of Hobart 0
+AU Hope Vale ->  
+AU Hindmarsh -> Hindmarsh Shire Council 0
+AU Hay -> Hay Shire Council 0
+AU Holdfast Bay ->  
+AU Hinchinbrook ->  
+AU Horsham -> Horsham Rural City Council 0
+AU Hume -> Hume City Council 2
+AU Hobsons Bay -> Hobsons Bay City Council 0
+AU Huon Valley -> Huon Valley Council 0
+AU Indigo -> Indigo Shire Council 0
+AU Inverell ->  
+AU Hornsby -> Hornsby Shire Council 1
+AU Hunters Hill ->  
+AU Isaac -> Isaac Regional Council 0
+AU Junee ->  
+AU Kangaroo Island ->  
+AU Katanning ->  
+AU Ipswich -> Ipswich City Council TV 1
+AU Jerramungup ->  
+AU Inner West -> Inner West Council 1
+AU Irwin ->  
+AU Kempsey -> Kempsey Shire Council 1
+AU Kalamunda -> City of Kalamunda 0
+AU Kiama -> Kiama Municipal Council 0
+AU Joondalup -> City of Joondalup 0
+AU Karoonda East Murray -> District Council of Karoonda East Murray 0
+AU Kingborough -> Kingborough Council 0
+AU Katherine -> Katherine Town Council 0
+AU Kalgoorlie-Boulder -> City of Kalgoorlie-Boulder 0
+AU Kent ->  
+AU Kimba ->  
+AU Kingston (SA) ->  
+AU Knox -> Knox City Council 0
+AU Karratha -> City of Karratha 0
+AU Kojonup ->  
+AU Koorda ->  
+AU Kellerberrin ->  
+AU Kowanyama ->  
+AU Kulin ->  
+AU Kentish ->  
+AU Kwinana ->  
+AU King Island ->  
+AU Lake Grace ->  
+AU Lachlan -> Upper Lachlan Shire Council 0
+AU Lane Cove ->  
+AU Latrobe (Tas.) -> Latrobe Council 0
+AU Laverton ->  
+AU Launceston -> City of Launceston 0
+AU Leonora ->  
+AU Kingston (Vic.) -> Kingston City Council 4
+AU Light -> Light Regional Council 0
+AU Litchfield ->  
+AU Kondinin ->  
+AU Lithgow ->  
+AU Liverpool Plains -> Liverpool Plains Shire Council 0
+AU Lockhart River ->  
+AU Livingstone -> Livingstone Shire Council 0
+AU Ku-ring-gai -> Ku-ring-gai Council 0
+AU Kyogle ->  
+AU Lake Macquarie ->  
+AU Lockyer Valley -> Lockyer Valley Regional Council 2
+AU Longreach -> Longreach Regional Council 0
+AU Logan -> Logan City Council 0
+AU Latrobe (Vic.) -> Latrobe City Council 25
+AU MacDonnell ->  
+AU Loxton Waikerie ->  
+AU Maitland ->  
+AU Mackay ->  
+AU Manningham ->  
+AU Manjimup ->  
+AU Leeton -> Leeton Shire Council 0
+AU Mapoon ->  
+AU Maralinga Tjarutja ->  
+AU Maribyrnong ->  
+AU Lismore -> Lismore City Council 0
+AU Mareeba -> Mareeba Shire Council 0
+AU McKinlay -> McKinlay Shire 1
+AU Maroondah -> Maroondah City Council 0
+AU Liverpool -> Liverpool City Council Australia 0
+AU Meekatharra ->  
+AU Lockhart ->  
+AU Melville ->  
+AU Melbourne -> City of Melbourne 0
+AU Loddon -> Loddon Shire Council 0
+AU Menzies ->  
+AU Mid Murray -> Mid Murray Council IT 0
+AU Lower Eyre Peninsula ->  
+AU Mid-Coast ->  
+AU Mingenew ->  
+AU Macedon Ranges -> Macedon Ranges Shire Council 0
+AU Mildura -> Mildura Council 1
+AU Moira -> Moira Shire Council Official 0
+AU Mandurah ->  
+AU Mitchell ->  
+AU Moora ->  
+AU Mansfield -> Mansfield Shire Council 0
+AU Moree Plains -> Moree Plains Shire Council 0
+AU Moonee Valley -> Moonee Valley City Council 0
+AU Maranoa -> Maranoa Regional Council 0
+AU Mornington -> Mornington Peninsula Shire 0
+AU Morawa ->  
+AU Mosman Park ->  
+AU Marion -> City of Marion Council 0
+AU Moreton Bay -> City of Moreton Bay 0
+AU Meander Valley ->  
+AU Mosman ->  
+AU Mount Gambier -> City of Mount Gambier 0
+AU Mount Marshall ->  
+AU Mukinbudin ->  
+AU Mount Barker -> Mount Barker District Council 0
+AU Melton -> Melton City Council 0
+AU Mount Magnet -> Mount Magnet Shire 0
+AU Murray -> Shire of Murray 0
+AU Moyne -> Moyne Shire Council 0
+AU Murrindindi -> Murrindindi Shire Council 0
+AU Murchison ->  
+AU Merredin ->  
+AU Mid-Western Regional ->  
+AU Mitcham ->  
+AU Murray River -> Murray River Council 0
+AU Muswellbrook -> Muswellbrook Shire Council 0
+AU Murweh ->  
+AU Napranum ->  
+AU Nannup ->  
+AU Narembeen ->  
+AU Monash -> Monash Council 0
+AU Narrabri -> Narrabri Shire 0
+AU Narrogin ->  
+AU Narromine -> Narromine Shire Council Meetings 0
+AU Moorabool -> Moorabool Shire 0
+AU Newcastle -> City of Newcastle, Australia 0
+AU Ngaanyatjarraku -> Shire of Ngaanyatjarraku 0
+AU North Burnett -> North Burnett Regional Council 0
+AU Moreland ->  
+AU Northampton ->  
+AU Noosa -> NOOSA COUNCIL TV 1
+AU Northern Grampians -> Northern Grampians Shire Council 0
+AU Mornington Peninsula -> Mornington Peninsula Shire 0
+AU Norwood Payneham and St Peters ->  
+AU Northam -> Shire of Northam 0
+AU Northern Beaches ->  
+AU Northern Peninsula Area ->  
+AU Mount Alexander -> Mount Alexander Shire Council 0
+AU Onkaparinga -> City of Onkaparinga 0
+AU Palm Island ->  
+AU Oberon -> Oberon Council 0
+AU Mount Isa -> Mount Isa City Council 0
+AU Paroo ->  
+AU Orroroo Carrieton ->  
+AU Mount Remarkable ->  
+AU Parkes ->  
+AU Peppermint Grove ->  
+AU Mundaring ->  
+AU Penrith ->  
+AU Peterborough ->  
+AU Playford ->  
+AU Murray Bridge -> Rural City of Murray Bridge 0
+AU Port Augusta ->  
+AU Perth -> City of Perth 0
+AU Murrumbidgee -> Murrumbidgee Council 0
+AU Plantagenet ->  
+AU Nambucca Valley ->  
+AU Port Adelaide Enfield ->  
+AU Port Macquarie-Hastings -> Port Macquarie Hastings Council 0
+AU Naracoorte Lucindale -> Naracoorte Lucindale Council South Australia 0
+AU Port Lincoln -> City of Port Lincoln 0
+AU Port Pirie ->  
+AU Narrandera -> Narrandera Shire Council 0
+AU Port Stephens -> Port Stephens Council 0
+AU Nedlands ->  
+AU Quairading ->  
+AU Pyrenees -> Pyrenees Shire 0
+AU Queenscliffe ->  
+AU Quilpie -> Quilpie Shire Council 0
+AU Ravensthorpe ->  
+AU Nillumbik -> Nillumbik Shire Council 2
+AU Richmond -> Richmond Valley Council 1
+AU Rockhampton ->  
+AU Redland -> Redland City Council 0
+AU Roxby Downs ->  
+AU Sandstone ->  
+AU North Sydney -> North Sydney Council 0
+AU Richmond Valley -> Richmond Valley Council 1
+AU Northern Areas ->  
+AU Rockingham ->  
+AU Shark Bay ->  
+AU Northern Midlands -> Northern Midlands Council Tasmania 0
+AU Singleton ->  
+AU Nungarin ->  
+AU Ryde -> City of Ryde 0
+AU Somerset -> Somerset Regional Council 0
+AU South Gippsland ->  
+AU Orange -> Orange City Council 0
+AU Scenic Rim -> Scenic Rim Regional Council 0
+AU Palmerston ->  
+AU Southern Grampians -> Southern Grampians Shire Council 0
+AU Shellharbour -> Ray White Shellharbour City & South Wollongong 0
+AU Parramatta -> City of Parramatta 0
+AU Perenjori ->  
+AU Stirling -> City Stirling WA 0
+AU Pingelly ->  
+AU Snowy Monaro Regional -> Snowy Monaro Regional Council 0
+AU Strathfield ->  
+AU Pormpuraaw ->  
+AU Sorell -> Sorell Council 0
+AU Port Hedland -> Town of Port Hedland 0
+AU South Perth -> City of South Perth 0
+AU Port Phillip -> City of Port Phillip 0
+AU Southern Mallee -> Southern Mallee District Council 0
+AU Sunshine Coast -> Sunshine Coast Council 1
+AU Prospect ->  
+AU Queanbeyan-Palerang Regional -> Queanbeyan-Palerang Regional Council 0
+AU Stonnington -> City of Stonnington 0
+AU Swan -> City of Swan 0
+AU Randwick ->  
+AU Streaky Bay ->  
+AU Renmark Paringa -> Renmark Paringa Council 0
+AU Tablelands -> Tablelands Regional Council 0
+AU Robe ->  
+AU Surf Coast -> Surf Coast Shire Council 0
+AU Roper Gulf ->  
+AU Tasman -> Tasman Council 0
+AU Swan Hill -> Swan Hill Rural City Council 0
+AU Salisbury -> City of Salisbury 0
+AU Tammin ->  
+AU Temora -> Temora Shire Council 0
+AU Tatiara -> Tatiara District Council 0
+AU Serpentine-Jarrahdale -> Shire of Serpentine Jarrahdale 0
+AU Three Springs ->  
+AU Shoalhaven -> Eye on Shoalhaven Council 0
+AU Tenterfield -> TSC Tenterfield Shire Council 0
+AU Toowoomba -> Toowoomba Regional Council Meetings 0
+AU Tiwi Islands ->  
+AU Snowy Valleys -> Snowy Valleys Council 0
+AU Torres -> Torres Strait Island Regional Council 0
+AU Towong -> Towong Shire Council 0
+AU South Burnett -> South Burnett Regional Council 0
+AU Townsville -> Townsville City Council 1
+AU Southern Downs -> Southern Downs Regional Council 0
+AU Tweed -> Tweed Shire Council 0
+AU Southern Midlands ->  
+AU Unincorporated SA ->  
+AU Tumby Bay -> District Council of Tumby Bay 0
+AU Upper Gascoyne ->  
+AU Unincorporated NT ->  
+AU Strathbogie -> Strathbogie Shire 0
+AU Uralla -> Uralla Shire Council 0
+AU Victoria Park ->  
+AU Unley -> City of Unley 0
+AU Wagait ->  
+AU Upper Lachlan Shire -> Upper Lachlan Shire Council 0
+AU Subiaco -> City of Subiaco 0
+AU Wakefield -> Wakefield Regional Council SA 0
+AU Victoria Daly -> Victoria Daly Regional Council 0
+AU Walkerville -> Town of Walkerville 0
+AU Sutherland Shire -> Sutherland Shire Council 1
+AU Sydney -> North Sydney Council 0
+AU Vincent -> City of Vincent 0
+AU Wanneroo -> City of Wanneroo Council Meetings 0
+AU Wagin -> Shire of Wagin 0
+AU Tamworth Regional -> Tamworth Regional Council 0
+AU Warren -> Warren Shire Council 0
+AU Walgett ->  
+AU Wattle Range ->  
+AU Tea Tree Gully -> Tea Tree Gully Council 0
+AU Weipa -> Weipa Town Authority 0
+AU Wangaratta -> Rural City of Wangaratta 0
+AU West Arnhem ->  
+AU Waroona ->  
+AU West Daly ->  
+AU The Hills Shire -> Hills Shire Council 0
+AU Warrumbungle Shire ->  
+AU West Wimmera ->  
+AU Toodyay ->  
+AU Weddin -> Weddin Shire Council 0
+AU Torres Strait Island -> Torres Strait Island Regional Council 0
+AU Whitehorse -> Whitehorse City Council 0
+AU Trayning ->  
+AU Wentworth -> Wentworth Shire Council 0
+AU Unincorporated NSW ->  
+AU Unincorporated Vic ->  
+AU Whyalla -> Whyalla City Council 0
+AU West Coast -> West Coast Council 0
+AU Willoughby ->  
+AU Winton ->  
+AU West Torrens -> City of West Torrens 0
+AU Upper Hunter Shire -> Upper Hunter Shire Council 0
+AU Westonia ->  
+AU Wollongong -> Wollongong City Council 0
+AU Victor Harbor -> City of Victor Harbor 0
+AU Woollahra ->  
+AU Victoria Plains ->  
+AU Wujal Wujal ->  
+AU Whittlesea -> City of Whittlesea 0
+AU Wyndham-East Kimberley -> Shire of Wyndham East Kimberley 0
+AU Wagga Wagga -> Wagga Council 1
+AU Williams ->  
+AU Yarra ->  
+AU Walcha ->  
+AU Wandering ->  
+AU Yarriambiack ->  
+AU Waratah-Wynyard ->  
+AU York -> Shire of York 0
+AU Wingecarribee -> Wingecarribee Shire Council 0
+AU Warrnambool -> Warrnambool City 0
+AU Wollondilly -> Wollondilly Shire 0
+AU Woodanilling ->  
+AU Waverley -> Waverley Council 1
+AU Wudinna ->  
+AU Wyndham -> Sayeed Aslam - Wyndham City Council Elections 2024 0
+AU Yankalilla -> District Council of Yankalilla 0
+AU Yarrabah ->  
+AU Yilgarn ->  
+AU Wellington -> Wellington City Council 1
+AU West Arthur ->  
+AU West Tamar ->  
+AU Western Downs -> Western Downs Regional Council 0
+AU Whitsunday -> Whitsunday Regional Council 0
+AU Wickepin ->  
+AU Wiluna ->  
+AU Wodonga ->  
+AU Wongan-Ballidu ->  
+AU Woorabinda ->  
+AU Wyalkatchem ->  
+AU Yalgoo ->  
+AU Yarra Ranges -> Yarra Ranges Council 0
+AU Yass Valley -> Yass Valley Council 0
+AU Yorke Peninsula ->  
+
+---
