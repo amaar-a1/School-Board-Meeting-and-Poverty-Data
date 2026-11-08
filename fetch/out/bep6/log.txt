@@ -1,0 +1,2 @@
+113111844 bytes; 304 municipalities
+kinds: [(('111', 'Gewoon kleuteronderwijs'), 257305), (('121', 'Buitengewoon kleuteronderwijs'), 2827), (('211', 'Gewoon lager onderwijs'), 434100), (('221', 'Buitengewoon lager onderwijs'), 27421), (('311', 'Voltijds gewoon secundair onderwijs'), 485080), (('312', 'Deeltijds beroepssecundair onderwijs'), 861), (('321', 'Buitengewoon secundair onderwijs'), 25788)]
