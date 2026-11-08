@@ -1,0 +1,686 @@
+niszków -> Gmina Mniszkow 0
+PL Ostrowite -> Gmina Ostrowite 0
+PL Sadkowice -> Gmina Sadkowice 0
+PL Borów ->  
+PL Zatory -> Gmina Zatory 0
+PL Zabór -> Gmina Zabór 0
+PL Sokolniki -> Urząd Gminy Sokolniki 0
+PL Bargłów Kościelny -> Gmina Bargłów Kościelny 0
+PL Biały Bór ->  
+PL Czerwin -> Gmina Czerwin 0
+PL Pierzchnica -> Gmina Pierzchnica 0
+PL Bytom Odrzański -> Gmina Bytom Odrzański 0
+PL Regimin ->  
+PL Choczewo -> Gmina Choczewo 0
+PL Pogorzela -> Gmina Pogorzela 0
+PL Wierzbica -> UrządGminy Wierzbica 3
+PL Płośnica -> Rada Gminy Płośnica 0
+PL Radymno -> Gmina Radymno 0
+PL Osjaków ->  
+PL Grunwald -> Urząd Gminy Grunwald 0
+PL Zadzim -> Gmina Zadzim 0
+PL Gąsawa -> Gmina Gąsawa 0
+PL Mielno -> Gmina Mielno 0
+PL Goszczanów ->  
+PL Tułowice ->  
+PL Szczawin Kościelny -> Gmina Szczawin Kościelny 0
+PL Granowo ->  
+PL Słońsk -> gmina Słońsk 0
+PL Dołhobyczów ->  
+PL Dobromierz -> Gmina Dobromierz 0
+PL Śniadowo -> Gmina Śniadowo 0
+PL Jedlina-Zdrój -> Gmina Jedlina-Zdrój Sesje Rady Miasta 0
+PL Rogowo -> GMINA ROGOWO powiat żniński 0
+PL Pokój ->  
+PL Sejny -> Miasto Sejny 0
+PL Rachanie ->  
+PL Tarłów -> Gmina Tarłów 0
+PL Miączyn -> Gmina Miączyn 0
+PL Dobre -> Cała prawda o gminie Dobre 28
+PL Goniądz -> Gmina Goniądz 0
+PL Bartniczka -> Gmina Bartniczka 0
+PL Janów Podlaski ->  
+PL Rajgród ->  
+PL Potok Górny -> Gmina Potok Górny 0
+PL Cieszków ->  
+PL Solec nad Wisłą ->  
+PL Pniewy -> Urząd Gminy Pniewy 0
+PL Dłutów -> Gmina Dłutów 0
+PL Lututów -> Gmina Lututów 0
+PL Kowale Oleckie -> Urząd Gminy Kowale Oleckie Obrady Rady Gminy 0
+PL Smętowo Graniczne -> UG Smętowo Graniczne 0
+PL Grodziec -> Biblioteka Publiczna Gminy Grodziec 0
+PL Łaziska ->  
+PL Szlichtyngowa ->  
+PL Szumowo -> Gmina Szumowo 0
+PL Baćkowice ->  
+PL Stary Zamość ->  
+PL Rozdrażew -> Gmina Rozdrażew 0
+PL Łękawica -> Rada Gminy Łękawica 0
+PL Sztabin -> Rada Gminy Sztabin 0
+PL Żółkiewka -> Sesja Urząd Gminy Żółkiewka 0
+PL Dobrzany ->  
+PL Trzcinica -> Gmina Trzcinica 0
+PL Niechlów -> GMINA NIECHLÓW 0
+PL Turośl ->  
+PL Krzywcza ->  
+PL Białośliwie ->  
+PL Wisznice ->  
+PL Kawęczyn -> Gmina Kawęczyn 0
+PL Łaskarzew -> Gmina Łaskarzew 0
+PL Mokobody -> Gmina Mokobody 0
+PL Kampinos ->  
+PL Gronowo Elbląskie ->  
+PL Knyszyn ->  
+PL Kluczewsko -> Gmina Kluczewsko 0
+PL Liniewo -> Urząd Gminy Liniewo 0
+PL Siemkowice ->  
+PL Miłomłyn -> Gmina Miłomłyn 0
+PL Gostycyn -> Gmina Gostycyn 0
+PL Sośno -> Gmina Sośno 0
+PL Bukowiec ->  
+PL Obrzycko -> Miasto Obrzycko 0
+PL Łagów -> Gmina Łagów 0
+PL Potok Wielki -> Gmina Potok Wielki 0
+PL Ostroróg ->  
+PL Płoniawy-Bramura -> Gmina Płoniawy-Bramura 0
+PL Brochów -> Gmina Brochów 0
+PL Stupsk -> Gmina Stupsk 0
+PL Suchożebry -> Urząd Gminy Suchożebry 0
+PL Zakrzewo -> Gmina Zakrzewo 0
+PL Komarów-Osada ->  
+PL Adamów -> Gmina Adamów 0
+PL Stepnica ->  
+PL Gizałki ->  
+PL Gowarczów ->  
+PL Udanin -> Urząd Gminy Udanin 0
+PL Kotla ->  
+PL Olszanica -> Gmina Olszanica 0
+PL Przybiernów ->  
+PL Mały Płock ->  
+PL Stara Kornica -> Gmina Stara Kornica 2
+PL Sorkwity ->  
+PL Miastków Kościelny -> Miastkow Koscielny 0
+PL Trzcińsko-Zdrój -> Urząd Miejski Trzcińsko-Zdrój 0
+PL Łukta ->  
+PL Przykona ->  
+PL Lipsk -> Gmina Lipsk 0
+PL Repki ->  
+PL Besko ->  
+PL Drzycim -> Gmina Drzycim 0
+PL Dmosin -> Gmina Dmosin 0
+PL Ładzice ->  
+PL Dąbrowa -> Rada Gminy Dąbrowa Chełmińska 0
+PL Pakosław -> Gmina Pakosław 0
+PL Szydłów -> Miasto i Gmina Szydłów 0
+PL Krzeszyce -> Gmina Krzeszyce 0
+PL Garbatka-Letnisko ->  
+PL Nowa Brzeźnica -> UG NOWA BRZEŹNICA 0
+PL Bierzwnik -> Gmina Bierzwnik 0
+PL Działoszyce -> Gmina Działoszyce 0
+PL Lubanie ->  
+PL Czarny Bór -> Gmina Czarny Bór 0
+PL Kijewo Królewskie ->  
+PL Brodnica ->  
+PL Polanka Wielka -> Gmina Polanka-Wielka 0
+PL Łomazy -> Gmina Łomazy 0
+PL Grzmiąca ->  
+PL Olszanka -> Gmina Olszanka 0
+PL Radziłów -> Gmina Radziłów 0
+PL Człopa -> Człopa Miasto po drodze 0
+PL Jaświły -> Gmina Jaświły 0
+PL Wielgomłyny ->  
+PL Skierbieszów -> Gmina Skierbieszów 0
+PL Góra Świętej Małgorzaty ->  
+PL Radziejów ->  
+PL Bieżuń -> Gmina Bieżuń 0
+PL Spytkowice -> Gmina Spytkowice 0
+PL Grębków ->  
+PL Domaniewice ->  
+PL Niegosławice -> Gmina Niegosławice 0
+PL Gać ->  
+PL Nagłowice -> Gmina Nagłowice 0
+PL Marciszów -> Gmina Marciszów 0
+PL Kobiele Wielkie ->  
+PL Suchy Dąb ->  
+PL Przeworno -> Gmina Przeworno 0
+PL Kruszyna -> Rada Gminy Kruszyna 0
+PL Złota -> Sesje Rady Gminy Złota 0
+PL Wąwolnica -> Gmina Wąwolnica 0
+PL Topólka -> Gmina Topólka 0
+PL Mycielin -> Gmina Mycielin 0
+PL Lichnowy -> Gmina Lichnowy 0
+PL Stoczek -> Rada Miasta Stoczek Łukowski 0
+PL Tuchomie -> Gmina Tuchomie 0
+PL Głowno ->  
+PL Paszowice -> Urząd Gminy Paszowice 0
+PL Lipowiec Kościelny -> Gmina Lipowiec Kościelny 0
+PL Młynary -> Gmina Młynary 0
+PL Drawno -> Gmina Drawno 0
+PL Wilków -> Gmina Wilków Kanał Oficjalny 0
+PL Dobryszyce ->  
+PL Rojewo -> Gmina Rojewo 0
+PL Strzelce Wielkie -> Inicjatywa mieszkańców Gminy Strzelce Wielkie 0
+PL Dziadowa Kłoda ->  
+PL Mucharz -> Gmina Mucharz 0
+PL Lgota Wielka ->  
+PL Fajsławice -> Gmina Fajsławice 0
+PL Rogów ->  
+PL Lubrza -> Gmina Lubrza 0
+PL Olszówka -> Urząd Gminy Olszówka 0
+PL Kozłów -> Gmina Kozłów 0
+PL Jeziora Wielkie -> Gmina Jeziora Wielkie 0
+PL Parysów ->  
+PL Radzyń Chełmiński ->  
+PL Rokietnica -> Gmina Rokietnica 0
+PL Sarnaki ->  
+PL Nowe Miasto -> Młodzieżowa Rada Miasta Nowe Miasto Lubawskie 0
+PL Krzczonów ->  
+PL Michałów -> Gmina Michałów 0
+PL Komańcza -> Gmina Komańcza 0
+PL Secemin ->  
+PL Suchań -> Urząd Miejski Suchań 0
+PL Sulmierzyce -> Miasto Sulmierzyce 0
+PL Krzeszów -> Urząd Gminy Krzeszów nad Sanem 0
+PL Lelów -> Gmina Lelów 0
+PL Rzeczniów -> Gmina Rzeczniów 0
+PL Ostrówek -> Urząd Gminy Ostrówek 0
+PL Ruda-Huta -> Gmina Ruda-Huta 0
+PL Troszyn -> Gmina Troszyn 0
+PL Czarnożyły ->  
+PL Uchanie -> Gmina Uchanie 0
+PL Płużnica -> Gmina Płużnica 0
+PL Urszulin -> Sesje Rady Gminy Urszulin 0
+PL Wola Mysłowska -> UG Wola Mysłowska 0
+PL Czemierniki -> Gmina Czemierniki 0
+PL Przelewice ->  
+PL Stare Pole ->  
+PL Górzyca -> Gmina Górzyca 0
+PL Czarnocin ->  
+PL Kluki ->  
+PL Świercze -> Gmina Świercze 0
+PL Bądkowo ->  
+PL Krzyżanów -> SAMORZĄD GMINY KRZYŻANÓW 0
+PL Tuczno ->  
+PL Obryte -> Urząd Gminy Obryte 0
+PL Sułów -> Gmina Sułów 0
+PL Gielniów ->  
+PL Tłuchowo -> Gmina Tłuchowo 0
+PL Siemyśl -> Rada Gminy Siemyśl 0
+PL Dziemiany ->  
+PL Wierzchowo -> Gmina Wierzchowo 0
+PL Kije -> Gmina Kije 0
+PL Borkowice -> Gmina Borkowice 0
+PL Żarnowiec -> Gmina Żarnowiec - transmisje 0
+PL Kodrąb ->  
+PL Mściwojów ->  
+PL Obsza -> Gmina Obsza 0
+PL Waganiec ->  
+PL Kazanów ->  
+PL Rejowiec Fabryczny ->  
+PL Raciąż -> Urząd Miejski Raciąż 0
+PL Stary Dzików ->  
+PL Siekierczyn -> Gmina Siekierczyn 0
+PL Pielgrzymka -> Gmina Pielgrzymka 0
+PL Chocz ->  
+PL Gnojno ->  
+PL Puńsk -> Rada Gminy Puńsk 0
+PL Kondratowice -> Gmina Kondratowice 0
+PL Rzeczyca ->  
+PL Potworów -> Gmina Potworów 0
+PL Jawornik Polski -> Gmina Jawornik Polski 0
+PL Fałków -> Gmina Fałków 0
+PL Platerów -> Gmina Platerów 0
+PL Świerzno -> Gmina Świerzno 0
+PL Zbójno -> Gmina Zbójno 0
+PL Nowy Duninów -> Gmina Nowy Duninów 0
+PL Oksa -> Urząd Gminy Oksa 0
+PL Paradyż -> Gmina Paradyż 0
+PL Wąsewo -> Gmina Wąsewo 0
+PL Cielądz -> Gmina Cielądz 0
+PL Horyniec-Zdrój -> Urząd Gminy Horyniec-Zdrój 0
+PL Pszczew -> GMINA PSZCZEW 0
+PL Brąszewice ->  
+PL Łukowa -> Gmina Łukowa 0
+PL Słupia -> Gmina Słupia Konecka 0
+PL Skórcz ->  
+PL Nowodwór ->  
+PL Wilków -> Gmina Wilków Kanał Oficjalny 0
+PL Cedynia -> Gmina Cedynia (Urząd Miejski w Cedyni) 0
+PL Stare Bogaczowice ->  
+PL Masłowice ->  
+PL Stare Kurowo ->  
+PL Zwierzyn -> Urząd Gminy Zwierzyn 0
+PL Markusy ->  
+PL Siemień -> Gmina Siemień 0
+PL Słubice ->  
+PL Dobra -> Miasto i Gmina Dobra 0
+PL Wleń -> Gmina Wleń 0
+PL Leśna Podlaska ->  
+PL Kuczbork-Osada -> Gmina Kuczbork-Osada 0
+PL Mietków -> ARCHIWALNE Sesje Rady Gminy Mietków  0
+PL Bolimów -> UG BOLIMÓW 0
+PL Kołczygłowy -> Gmina Kołczygłowy 0
+PL Aleksandrów -> Urząd Gminy Aleksandrów 0
+PL Komarówka Podlaska -> Gmina Komarówka Podlaska 0
+PL Dąbrówno -> Gmina Dąbrówno 0
+PL Kamień -> Gmina Kamień 0
+PL Różan -> Gmina Różan 0
+PL Kowal ->  
+PL Kęsowo ->  
+PL Podkowa Leśna -> Miasto Podkowa Leśna 0
+PL Lniano -> Gmina Lniano 0
+PL Karpacz -> Miasto Karpacz 0
+PL Radłów -> Gmina Radłów 0
+PL Łubnice -> Gmina Łubnice 0
+PL Andrzejewo -> Gmina Andrzejewo 0
+PL Grabów nad Pilicą ->  
+PL Gaworzyce ->  
+PL Szydłowo -> Gmina Szydłowo 0
+PL Abramów -> Gmina Abramów 0
+PL Złoty Stok -> Gmina Złoty Stok 0
+PL Grodzisk -> Gmina Grodzisk Wielkopolski 0
+PL Jejkowice -> Gmina Jejkowice 0
+PL Sejny -> Miasto Sejny 0
+PL Adamówka -> Gmina Adamówka 0
+PL Sadowie -> Rada Gminy Sadowie 0
+PL Ujsoły -> Rada Gminy Ujsoły 0
+PL Radzanów -> UG Radzanów 0
+PL Winnica -> Gmina Winnica 0
+PL Kiełczygłów ->  
+PL Ustronie Morskie -> Pozytywne Forum Gminy Ustronie Morskie 0
+PL Imielno -> Gmina Imielno 0
+PL Papowo Biskupie ->  
+PL Tarnawatka ->  
+PL Borzechów -> Gmina Borzechów 0
+PL Wodynie -> Urząd Gminy Wodynie 0
+PL Szczutowo -> Urząd Gminy Szczutowo 0
+PL Wojciechowice -> Urząd Gminy Wojciechowice 0
+PL Brzozie ->  
+PL Rusinów ->  
+PL Moryń -> Gmina Moryń 0
+PL Oleśnica -> Gmina Oleśnica 0
+PL Janów -> Rada Gminy Janów 0
+PL Ojrzeń ->  
+PL Lutocin -> Gmina Lutocin 0
+PL Rościszewo ->  
+PL Świecie nad Osą -> Gmina Świecie nad Osą 0
+PL Wysokie -> Urząd Gminy Wysokie 0
+PL Ulhówek -> Urząd Gminy Ulhówek 0
+PL Sieciechów -> Gmina Sieciechów 0
+PL Klukowo ->  
+PL Smyków -> Gmina Smyków 0
+PL Jabłonna Lacka -> Gmina Jabłonna Lacka 0
+PL Zbójna ->  
+PL Wietrzychowice -> Gmina Wietrzychowice 0
+PL Filipów ->  
+PL Przedecz ->  
+PL Trzeszczany ->  
+PL Stare Czarnowo -> Moja Gmina Stare Czarnowo 0
+PL Inowłódz ->  
+PL Janowice Wielkie -> Rada Gminy Janowice Wielkie 0
+PL Bledzew -> Rada Gminy Bledzew 0
+PL Biszcza -> Urząd Gminy Biszcza 0
+PL Świnice Warckie ->  
+PL Karnice ->  
+PL Goraj -> Rada Gminy Goraj 0
+PL Zalesie -> Gmina Zalesie 0
+PL Wieczfnia Kościelna -> Gmina Wieczfnia Kościelna 0
+PL Dalików ->  
+PL Wyszki ->  
+PL Stubno -> Rada Gminy Stubno 0
+PL Wizna ->  
+PL Nowogród -> Gmina Nowogród Bobrzański 0
+PL Tuczępy ->  
+PL Zawichost -> Zawichost Gmina 0
+PL Rymań -> Gmina Rymań 0
+PL Szypliszki -> Gmina Szypliszki 0
+PL Hajnówka ->  
+PL Lubrza -> UG Lubrza 0
+PL Parchowo ->  
+PL Duszniki-Zdrój -> Urząd Miejski Duszniki-Zdrój 20
+PL Daszyna ->  
+PL Dziwnów ->  
+PL Sławoborze ->  
+PL Miastkowo ->  
+PL Rychtal ->  
+PL Gzy -> Gmina Gzy2021 0
+PL Osiek -> Gmina Osiek Mały 0
+PL Kocierzew Południowy -> Urząd Gminy Kocierzew Południowy 0
+PL Łopiennik Górny -> Urząd Gminy Łopiennik Górny 0
+PL Krasnopol ->  
+PL Rogóźno ->  
+PL Gniewoszów -> Gmina Gniewoszów 0
+PL Jabłoń -> Gmina Jabłoń 0
+PL Miedzna -> Urząd Gminy Miedźna 0
+PL Świeradów-Zdrój ->  
+PL Perzów ->  
+PL Ślemień -> Rada Gminy Ślemień 0
+PL Janowiec -> Gmina Janowiec Kościelny 0
+PL Konstantynów -> Gmina Konstantynów 0
+PL Radomin -> Gmina Radomin 0
+PL Gołymin-Ośrodek ->  
+PL Rejowiec Fabryczny ->  
+PL Grabowiec -> Urząd Gminy Grabowiec 0
+PL Domaszowice ->  
+PL Siennica Różana -> Urząd Gminy Siennica Różana 0
+PL Konopnica ->  
+PL Jedwabno ->  
+PL Łubnice -> Gmina Łubnice 0
+PL Skórcz ->  
+PL Mirów -> Gmina Mirów 0
+PL Kraszewice -> GMINA KRASZEWICE 0
+PL Trzcianne -> Gmina Trzcianne 0
+PL Górzno -> Urząd Miasta i Gminy Górzno 0
+PL Miedzichowo ->  
+PL Telatyn -> Urząd Gminy Telatyn 0
+PL Miłki -> Urząd Gminy Miłki 0
+PL Sztutowo ->  
+PL Wądroże Wielkie -> Urząd Gminy Wądroże Wielkie 0
+PL Czastary -> gmina czastary 0
+PL Czernice Borowe -> Gmina Czernice Borowe 0
+PL Krypno ->  
+PL Sterdyń -> Gmina Sterdyń 0
+PL Ostrówek -> Urząd Gminy Ostrówek 0
+PL Bolesławiec -> Gmina Bolesławiec 0
+PL Bielany -> Gmina Bielany 0
+PL Pęczniew -> Gmina Pęczniew 0
+PL Pałecznica -> Urząd Gminy Pałecznica 0
+PL Ciechocin -> Gmina Ciechocin 0
+PL Serokomla -> Gmina Serokomla 0
+PL Mikołajki Pomorskie -> Gmina Mikołajki Pomorskie 0
+PL Rytro ->  
+PL Kraśniczyn -> Urząd Gminy Kraśniczyn 0
+PL Bejsce -> Gmina Bejsce 0
+PL Boronów -> Gmina Boronów 0
+PL Wielkie Oczy ->  
+PL Wilczyce ->  
+PL Słaboszów ->  
+PL Kuźnica ->  
+PL Tereszpol -> Gmina Tereszpol 0
+PL Wąsosz ->  
+PL Górowo Iławeckie -> Gmina Górowo Iławeckie 0
+PL Boćki ->  
+PL Nowy Kawęczyn -> UG Nowy Kawęczyn 0
+PL Mędrzechów ->  
+PL Szreńsk -> Gmina Szreńsk - sesje Rady Gminy 0
+PL Wola Uhruska -> Gmina Wola Uhruska 0
+PL Hańsk -> Gmina Hańsk 0
+PL Krasne -> Gmina Krasne 0
+PL Dębowa Kłoda ->  
+PL Książki -> Gmina Książki 0
+PL Czarnocin ->  
+PL Dzierzążnia -> Gmina Dzierzążnia 0
+PL Zaręby Kościelne -> Gmina Zaręby Kościelne 0
+PL Baranów -> Gmina Baranów 0
+PL Morzeszczyn ->  
+PL Pacyna ->  
+PL Zawidów -> Gmina Miejska Zawidów 0
+PL Stara Dąbrowa -> nieoficjalnie gmina stara dąbrowa  0
+PL Bytoń -> Gmina Bytoń 0
+PL Narew -> Urząd Gminy Narew 0
+PL Lipusz -> Gmina Lipusz 0
+PL Szelków -> Gmina Szelków 0
+PL Nowogródek Pomorski -> SESJE RADY GMINY NOWOGRÓDEK POMORSKI 0
+PL Gorzków -> Gmina Gorzków 0
+PL Trzebielino ->  
+PL Polska Cerekiew -> Rada Polska Cerekiew 0
+PL Lubomino ->  
+PL Wodzierady ->  
+PL Łęki Szlacheckie -> Gmina Łęki Szlacheckie 0
+PL Leśniowice -> Gmina Leśniowice 0
+PL Brańsk -> Urząd Miasta Brańsk 0
+PL Wijewo -> Gmina Wijewo 0
+PL Aleksandrów -> Urząd Gminy Aleksandrów 0
+PL Rąbino -> Gmina Rąbino 0
+PL Rychliki -> UG Rychliki 0
+PL Krzęcin ->  
+PL Bobowo -> Rada Gminy Bobowo 0
+PL Strzelce -> Gmina Strzelce 0
+PL Jarczów ->  
+PL Krzynowłoga Mała ->  
+PL Świątki ->  
+PL Brzeźnica -> Gmina Brzeźnica 0
+PL Brody -> Gmina Brody 0
+PL Kolsko -> UG Kolsko 0
+PL Wąpielsk -> Gmina Wąpielsk 0
+PL Dominowo -> Urzad Gminy Dominowo 0
+PL Jeleniewo -> URZĄD GMINY JELENIEWO 0
+PL Chrzypsko Wielkie -> Gmina Chrzypsko Wielkie 0
+PL Mieleszyn -> Gmina Mieleszyn 0
+PL Stary Dzierzgoń -> Gmina Stary Dzierzgoń 0
+PL Klwów ->  
+PL Rybczewice -> Urząd Gminy Rybczewice 0
+PL Osieck -> Urząd Miasta i Gminy Osieck 0
+PL Kiernozia -> Gmina Kiernozia 0
+PL Rybno -> Gmina Rybno 0
+PL Świerczów ->  
+PL Siemiątkowo -> Urząd Gminy Siemiątkowo 0
+PL Żukowice ->  
+PL Szczaniec -> Gmina Szczaniec 0
+PL Lubniewice ->  
+PL Gręboszów ->  
+PL Srokowo -> Urząd Gminy Srokowo 0
+PL Kamiennik ->  
+PL Studzienice -> Gmina Studzienice 0
+PL Warnice -> Gmina Warnice 0
+PL Koczała ->  
+PL Krupski Młyn ->  
+PL Krotoszyce -> Gmina Krotoszyce 0
+PL Dąbrowa Zielona -> Gmina Dąbrowa Zielona 0
+PL Tarnówka ->  
+PL Żelechlinek -> Rada Gminy Żelechlinek 0
+PL Ręczno -> Gmina Ręczno 0
+PL Rewal -> Rada Gminy Rewal 0
+PL Opatowiec -> Gmina Opatowiec 0
+PL Ińsko -> Gmina Ińsko 0
+PL Świętajno -> Gmina Świętajno pow.olecki 0
+PL Stary Lubotyń -> Gmina Stary Lubotyń 0
+PL Frombork ->  
+PL Stare Juchy ->  
+PL Kruklanki -> Gmina Kruklanki 0
+PL Batorz ->  
+PL Orchowo -> Urząd Gminy Orchowo 0
+PL Baruchowo -> Gmina Baruchowo 0
+PL Kulesze Kościelne -> Gmina Kulesze Kościelne 0
+PL Sidra -> Gmina Sidra 0
+PL Kowal ->  
+PL Nowe Piekuty -> Urząd Gminy Nowe Piekuty 0
+PL Poświętne -> Gmina Poświętne 0
+PL Łeba -> Miasto Łeba 0
+PL Przyrów ->  
+PL Milejewo -> Gmina Milejewo 0
+PL Marianowo ->  
+PL Świekatowo -> Gmina Świekatowo 0
+PL Przewóz -> Gmina Przewóz 0
+PL Kodeń -> Gmina Kodeń 0
+PL Ruda Maleniecka -> Gmina Ruda Maleniecka 0
+PL Miłoradz ->  
+PL Borzytuchom -> Gmina Borzytuchom 0
+PL Bakałarzewo -> Gmina Bakałarzewo 0
+PL Skomlin ->  
+PL Chodów -> Gmina Chodów 0
+PL Radowo Małe ->  
+PL Słupia Konecka -> Gmina Słupia Konecka 0
+PL Brojce -> Urząd Gminy Brójce 0
+PL Kowiesy -> UG Kowiesy 0
+PL Ostaszewo ->  
+PL Jastarnia ->  
+PL Przerośl ->  
+PL Radziemice -> Gmina Radziemice 0
+PL Dzierzgowo ->  
+PL Bojadła ->  
+PL Sypniewo -> Gmina Sypniewo 0
+PL Nurzec-Stacja -> Gmina Nurzec-Stacja 0
+PL Raciążek ->  
+PL Zębowice ->  
+PL Gozdnica -> UM Gozdnica 0
+PL Starcza -> Gmina Starcza 0
+PL Będków ->  
+PL Wojcieszów -> Urząd Miasta Wojcieszów 0
+PL Jemielno -> Rada Gminy Jemielno 0
+PL Markuszów -> Gmina Markuszów 0
+PL Bałtów -> Gmina Bałtów 0
+PL Krynki ->  
+PL Wojsławice -> Urząd Gminy Wojsławice 0
+PL Koneck ->  
+PL Goszczyn -> Urząd Gminy Goszczyn 0
+PL Bełżec ->  
+PL Odrzywół ->  
+PL Czeremcha -> Gmina Czeremcha 0
+PL Bolesław ->  
+PL Milanów -> Gmina Milanow 0
+PL Poświętne -> Gmina Poświętne 0
+PL Hel -> Miasto Hel 0
+PL Zakrzewo -> Gmina Zakrzewo 0
+PL Korycin ->  
+PL Przesmyki ->  
+PL Wilczęta -> Gmina Wilczęta 0
+PL Miasteczko Krajeńskie ->  
+PL Rzeczenica -> Rada Gminy Rzeczenica 0
+PL Gawłuszowice -> Gmina Gawłuszowice 0
+PL Moskorzew -> Gmina Moskorzew 0
+PL Witonia -> W imieniu UG Witonia 0
+PL Perlejewo ->  
+PL Siedlisko -> UG Siedlisko 0
+PL Klonowa -> Gmina Klonowa 0
+PL Nur ->  
+PL Bobrowniki -> Gmina Bobrowniki 0
+PL Godkowo ->  
+PL Grudusk -> Gmina Grudusk 0
+PL Uścimów ->  
+PL Czajków -> Gmina Czajków 0
+PL Pakosławice ->  
+PL Rokitno -> Urząd Gminy Rokitno 0
+PL Rzewnie ->  
+PL Chrzanów ->  
+PL Dębowa Łąka -> Urząd Gminy Dębowa Łąka 0
+PL Jordanów Śląski -> Gmina Jordanów Śląski  0
+PL Obrzycko -> Miasto Obrzycko 0
+PL Zakrzew -> Gmina Zakrzew 0
+PL Sabnie -> Gmina Sabnie 0
+PL Bielice -> Gmina Bielice 0
+PL Stoczek Łukowski -> Rada Miasta Stoczek Łukowski 0
+PL Strachówka -> Gmina Strachówka 0
+PL Lipinki Łużyckie -> Gmina Lipinki Łużyckie 0
+PL Korczew -> Gmina Korczew 0
+PL Budry ->  
+PL Radzanów -> UG Radzanów 0
+PL Sosnowica ->  
+PL Tuplice ->  
+PL Irządze ->  
+PL Grabowo -> Gmina Grabowo 0
+PL Nowinka ->  
+PL Słupia -> Gmina Słupia Konecka 0
+PL Łęknica -> Łęknica UM 0
+PL Nowe Ostrowy -> Urząd Gminy Nowe Ostrowy 0
+PL Banie Mazurskie ->  
+PL Białopole -> Gmina Białopole 0
+PL Giby -> Urząd Gminy GIBY 0
+PL Rutka-Tartak -> URZĄD GMINY RUTKA-TARTAK 0
+PL Jasionówka ->  
+PL Boniewo -> Gmina Boniewo 0
+PL Chrostkowo -> Gmina Chrostkowo 0
+PL Nowy Dwór -> Gmina Nowy Dwór Gdański 0
+PL Ruja -> Gmina Ruja 0
+PL Wieliczki -> Gmina Wieliczki 0
+PL Żmudź -> Gmina Żmudź 0
+PL Lelkowo ->  
+PL Kleszczele -> Gmina Kleszczele 0
+PL Trzebiechów ->  
+PL Jaśliska ->  
+PL Tuczna -> Gmina Tuczna 0
+PL Kozielice -> Gmina Kozielice 0
+PL Jeżów -> Sesja Rady Gminy Jeżów Sudecki 0
+PL Radków ->  
+PL Lutowiska -> Sesje Rady Gminy Lutowiska 0
+PL Olszanka -> Gmina Olszanka 0
+PL Narewka ->  
+PL Konarzyny ->  
+PL Przytuły ->  
+PL Lipce Reymontowskie ->  
+PL Maszewo -> UG Maszewo 0
+PL Powidz -> Gmina Powidz 0
+PL Dąbrowice -> Miasto i Gmina Dąbrowice 0
+PL Smołdzino -> Gmina Smołdzino 0
+PL Rudnik -> Gmina Rudnik 0
+PL Koszarawa -> Sesja Rady Gminy Koszarawa 0
+PL Krempna -> Gmina Krempna 0
+PL Kiwity -> Gmina Kiwity 0
+PL Wapno ->  
+PL Milejczyce ->  
+PL Kołaki Kościelne ->  
+PL Baligród ->  
+PL Podedwórze ->  
+PL Bobrowice ->  
+PL Dubeninki ->  
+PL Dubienka ->  
+PL Czarna Woda -> Gmina Czarna Woda 0
+PL Brzeżno -> Gmina Brzeżno 0
+PL Rossosz -> Urząd Gminy Rossosz 0
+PL Godzianów ->  
+PL Krynice ->  
+PL Janowo ->  
+PL Pozezdrze -> Gmina Pozezdrze 0
+PL Wiżajny ->  
+PL Kobylin-Borzymy ->  
+PL Hanna ->  
+PL Suraż ->  
+PL Janowiec Kościelny -> Gmina Janowiec Kościelny 0
+PL Czyże ->  
+PL Jeziorzany ->  
+PL Wierzbno ->  
+PL Cisna -> Gmina Cisna 0
+PL Osina ->  
+PL Chąśno ->  
+PL Oporów ->  
+PL Nowe Warpno ->  
+PL Ciepłowody ->  
+PL Boguty-Pianki ->  
+PL Ułęż ->  
+PL Dubicze Cerkiewne -> Rada Gminy Dubicze Cerkiewne 0
+PL Czarna -> Gmina Czarna powiat dębicki 0
+PL Joniec -> Gmina Joniec 0
+PL Bytnica -> Gmina Bytnica 0
+PL Kolno -> Urząd Miasta Kolno Oficjalny kanał 0
+PL Boleszkowice -> Sesje Rady Gminy Boleszkowice 0
+PL Osiek ->  
+PL Szudziałowo -> Gmina Szudziałowo 0
+PL Czarnia -> Gmina Czarnia 0
+PL Chotcza ->  
+PL Sulmierzyce -> Miasto Sulmierzyce 0
+PL Sosnówka ->  
+PL Wymiarki ->  
+PL Osieczna -> Gmina Osieczna 0
+PL Wyśmierzyce -> Wyśmierzyce Moje Miasto 0
+PL Białowieża ->  
+PL Lewin Kłodzki ->  
+PL Huszlew -> Gmina Huszlew 0
+PL Ceranów -> Gmina Ceranów 0
+PL Brok -> Urząd Gminy Brok 0
+PL Nieszawa -> Gmina Miejska Nieszawa 0
+PL Czerwonka -> Gmina Czerwonka 0
+PL Rudka -> Gmina Rudka 0
+PL Dziadkowice ->  
+PL Platerówka -> Urząd Gminy Platerówka 0
+PL Domanice ->  
+PL Krynica Morska -> Gmina Miasta Krynica Morska 0
+PL Zawady ->  
+PL Racławice ->  
+PL Orla ->  
+PL Paprotnia ->  
+PL Płoskinia ->  
+PL Płaska ->  
+PL Sławatycze ->  
+PL Wyryki -> Gmina Wyryki 0
+PL Łanięta -> Urząd Gminy Łanięta 0
+PL Pęcław ->  
+PL Budziszewice -> Gmina Budziszewice 0
+PL Mielnik -> Gmina Mielnik 0
+PL Tyrawa Wołoska ->  
+PL Stary Brus -> Gmina Stary Brus 0
+PL Regnów ->  
+PL Młynarze -> Gmina Młynarze 0
+PL Szulborze Wielkie ->  
+
+---
