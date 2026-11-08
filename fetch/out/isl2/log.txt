@@ -1,0 +1,28 @@
+gisco ['BQ', 'CC', 'CX', 'GI', 'NZ', 'PN', 'SJ', 'TK']
+cbs 80
+BON UClVxAnE5f5Jqd1QhRR2k19Q ERR 'NoneType' object has no attribute 'get'
+BON UCRVqqkKT4xsPrUcxWWq1xiw ERR 'NoneType' object has no attribute 'get'
+BON: 69 results, channels ['Konseho Insular Bonaire', 'jobonaire', 'referendumbonaire']
+STA UCMHMQ2Ugkm8qLSudfNV-nzg ERR 'NoneType' object has no attribute 'get'
+STA: 80 results, channels ['Statia Government', 'Island Council Sint Eustatius', 'St. Eustatius SDA Church']
+SAB: 80 results, channels ['Public Entity Saba', 'Island Council Saba', 'SABA Islamic Center']
+CXR UCBskr7IINEHAYUmtMxOoTyg ERR 'NoneType' object has no attribute 'get'
+CXR: 63 results, channels ['Shire of Christmas Island']
+CCK: 40 results, channels []
+GIB UCnxYAT4MX0pzvbdY_FsUrZw ERR 'NoneType' object has no attribute 'get'
+GIB UCAeBrZZPy7E8uwwqIyTJrXA ERR 'NoneType' object has no attribute 'get'
+GIB UCYE4gcJv19RieaPD0zmdbjQ ERR 'NoneType' object has no attribute 'get'
+GIB: 120 results, channels ['GBC News', 'HM Government of Gibraltar', 'Your Gibraltar TV', 'Gibraltar Chronicle', 'Gibraltar Social Democrats', 'Together Gibraltar']
+SJM UCqVLHCCiaH69gWJ-qMujnuw ERR 'NoneType' object has no attribute 'get'
+SJM UCVf3aHUlX8wCxkvBRNAqN9A ERR 'NoneType' object has no attribute 'get'
+SJM: 40 results, channels ['Longyearbyen lokalstyre', 'Longyearbyen lokalstyre', 'Longyearbyen kulturhus']
+CHT UCLhVNiGfcmLeTAhxaf33Yvw ERR 'NoneType' object has no attribute 'get'
+CHT UCogJiR7zRBB9gZZRm9vO8WQ ERR 'NoneType' object has no attribute 'get'
+CHT UCBfEtMOGFIU1VBaFbKXAcXg ERR 'NoneType' object has no attribute 'get'
+CHT: 40 results, channels ['TAPinto Chatham ', 'YourTV Chatham-Kent', 'ChathamKentOntario', 'Chatham Journal TV', 'The Chatham Torch', 'ChathamHighSchool', 'Chatham House', 'BlackburnNews Chatham-Kent']
+PCN UCqEM-T2tRTWIes4tfgwfOwQ ERR 'NoneType' object has no attribute 'get'
+PCN UChptdQB-sROopi7FGr7vtMw ERR 'NoneType' object has no attribute 'get'
+PCN: 40 results, channels ['Pitcairn Borough', 'Bova, Crothers, and Rocco for Pitcairn Council']
+TKL UChlqjZjpr1S5HaKTX1RFkAA ERR 'NoneType' object has no attribute 'get'
+TKL UCY830o9ryba-Gu-6HQWmR2w ERR 'NoneType' object has no attribute 'get'
+TKL: 74 results, channels ['Tokelau Te Vakai', 'tileha tokelau']
