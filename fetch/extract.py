@@ -1,4 +1,4 @@
-# retry after the rate limit window
+# retry; log the limit headers; also look for the ministry (SIO) pupil counts on dane.gov.pl
 # Temporary: Poland's primary-school pupils by gmina from the Local Data Bank (BDL), slowly (anonymous users may make
 # 100 requests per 15 minutes), plus county (powiat) names to tell apart gminy with the same name.
 import json, os, time, traceback, urllib.parse, urllib.request
@@ -6,6 +6,21 @@ OUT = "fetch/out/pl_pupils"; os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)", "Accept": "application/json"}
 BDL = "https://bdl.stat.gov.pl/api/v1"
 log = open(f"{OUT}/log.txt", "w")
+import urllib.error
+# dane.gov.pl: datasets of pupils by school (SIO), saved as found
+try:
+    for q in ("liczba uczniów SIO", "uczniowie szkoły SIO", "dane SIO uczniowie"):
+        with urllib.request.urlopen(urllib.request.Request("https://api.dane.gov.pl/1.4/search?q=" + urllib.parse.quote(q) + "&per_page=50", headers=UA), timeout=120) as r:
+            open(f"{OUT}/danegov_{q.replace(' ', '_')}.json", "wb").write(r.read())
+        log.write(f"danegov {q} ok\n"); time.sleep(1)
+except Exception as e: log.write(f"danegov ERR {str(e)[:200]}\n")
+# one probe of the BDL, logging the status and every header (the limit headers say when it resets)
+try:
+    with urllib.request.urlopen(urllib.request.Request(f"{BDL}/units?level=0&format=json", headers=UA), timeout=120) as r:
+        log.write(f"probe {r.status} {dict(r.headers)}\n")
+except urllib.error.HTTPError as e: log.write(f"probe {e.code} {dict(e.headers)} {e.read()[:500]}\n")
+except Exception as e: log.write(f"probe ERR {e}\n")
+log.flush(); time.sleep(12)
 FIRST = [True]
 def get(u):
     # The first request checks whether the limit has reset: 5 tries 2 minutes apart (about 10 minutes), then stop.
