@@ -1,0 +1,729 @@
+District,Region,District ID
+Hinundayan,Southern Leyte,PH-0806404000
+Ibajay,Aklan,PH-0600406000
+Imelda,Zamboanga Sibugay,PH-0908304000
+Indang,Cavite,PH-0402110000
+Inopacan,Leyte,PH-0803721000
+Isabela,Negros Occidental,PH-1804514000
+Itogon,Benguet,PH-1401106000
+Janiuay,Iloilo,PH-0603023000
+Jiabong,Samar (Western),PH-0806009000
+Kalayaan (Palawan),Palawan,PH-1705321000
+Kalingalan Caluang,Sulu,PH-0906603000
+Kapalong,Davao del Norte,PH-1102305000
+Kapangan,Benguet,PH-1401108000
+Kasibu,Nueva Vizcaya,PH-0205009000
+Katipunan,Zamboanga del Norte,PH-0907203000
+Kawit,Cavite,PH-0402111000
+Kayapa,Nueva Vizcaya,PH-0205010000
+Kiamba,Sarangani,PH-1208003000
+Kiblawan,Davao del Sur,PH-1102406000
+Kitaotao,Bukidnon,PH-1001309000
+Kitcharao,Agusan del Norte,PH-1600206000
+Kolambugan,Lanao del Norte,PH-1003508000
+La Castellana,Negros Occidental,PH-1804517000
+La Libertad (Negros Oriental),Negros Oriental,PH-1804613000
+La Paz (Abra),Abra,PH-1400108000
+La Paz (Tarlac),Tarlac,PH-0306907000
+La Trinidad,Benguet,PH-1401110000
+Labangan,Zamboanga del Sur,PH-0907312000
+Labason,Zamboanga del Norte,PH-0907205000
+Labo,Camarines Norte,PH-0501606000
+Labrador,Pangasinan,PH-0105521000
+Lagangilang,Abra,PH-1400110000
+Lagawe,Ifugao,PH-1402704000
+Lagayan,Abra,PH-1400111000
+Lagonglong,Misamis Oriental,PH-1004313000
+Lagonoy,Camarines Sur,PH-0501717000
+Laguindingan,Misamis Oriental,PH-1004314000
+Lala,Lanao del Norte,PH-1003509000
+Langiden,Abra,PH-1400112000
+Lanuza,Surigao del Sur,PH-1606810000
+Laoang,Northern Samar,PH-0804808000
+Laurel,Batangas,PH-0401011000
+Lawaan,Eastern Samar,PH-0802612000
+Lazi,Siquijor,PH-1806103000
+Lemery (Iloilo),Iloilo,PH-0603027000
+Leon,Iloilo,PH-0603028000
+Libagon,Southern Leyte,PH-0806405000
+Libona,Bukidnon,PH-1001311000
+Licab,Nueva Ecija,PH-0304914000
+Licuan-Baay,Abra,PH-1400113000
+Liloy,Zamboanga del Norte,PH-0907206000
+Limay,Bataan,PH-0300806000
+Linapacan,Palawan,PH-1705313000
+Loay,Bohol,PH-0701228000
+Looc (Occidental Mindoro),Occidental Mindoro,PH-1705103000
+Looc (Romblon),Romblon,PH-1705907000
+Loon,Bohol,PH-0701230000
+Lopez,Quezon,PH-0405622000
+Lopez Jaena,Misamis Occidental,PH-1004208000
+Loreto (Agusan del Sur),Agusan del Sur,PH-1600305000
+Los Baños,Laguna,PH-0403411000
+Lubang,Occidental Mindoro,PH-1705104000
+Lubuagan,Kalinga,PH-1403206000
+Lugait,Misamis Oriental,PH-1004316000
+Lumba-Bayabao,Lanao del Sur,PH-1903611000
+Luna (Apayao),Apayao,PH-1408105000
+Luna (Isabela),Isabela,PH-0203116000
+Lupon,Davao Oriental,PH-1102507000
+Lutayan,Sultan Kudarat,PH-1206507000
+M'Lang,Cotabato,PH-1204710000
+Ma-Ayon,Capiz,PH-0601907000
+Mabinay,Negros Oriental,PH-1804614000
+Mabini (Bohol),Bohol,PH-0701231000
+Mabini (Davao de Oro),Davao de Oro,PH-1108203000
+Mabini (Pangasinan),Pangasinan,PH-0105523000
+Macabebe,Pampanga,PH-0305410000
+Maconacon,Isabela,PH-0203117000
+Macrohon,Southern Leyte,PH-0806408000
+Madalum,Lanao del Sur,PH-1903613000
+Maddela,Quirino,PH-0205704000
+Madridejos,Cebu,PH-0702228000
+Magallanes (Agusan del Norte),Agusan del Norte,PH-1600208000
+Magdalena,Laguna,PH-0403415000
+Magsaysay (Lanao del Norte),Lanao del Norte,PH-1003511000
+Magsingal,Ilocos Sur,PH-0102912000
+Mahayag,Zamboanga del Sur,PH-0907315000
+Mahinog,Camiguin,PH-1001803000
+Mainit,Surigao del Norte,PH-1606714000
+Maitum,Sarangani,PH-1208005000
+Malangas,Zamboanga Sibugay,PH-0908308000
+Malibcong,Abra,PH-1400115000
+Malidegao,Special Geographic Area (BARMM),PH-1999906000
+Malinao (Aklan),Aklan,PH-0600413000
+Malinao (Albay),Albay,PH-0500510000
+Malitbog (Bukidnon),Bukidnon,PH-1001313000
+Malitbog (Southern Leyte),Southern Leyte,PH-0806409000
+Mallig,Isabela,PH-0203119000
+Maluso,Basilan,PH-1900704000
+Mamasapano,Maguindanao,PH-1908813000
+Mamburao,Occidental Mindoro,PH-1705106000
+Mambusao,Capiz,PH-0601908000
+Manabo,Abra,PH-1400116000
+Manapla,Negros Occidental,PH-1804518000
+Manay,Davao Oriental,PH-1102508000
+Mandaon,Masbate,PH-0504110000
+Mangatarem,Pangasinan,PH-0105527000
+Mangudadatu,Maguindanao,PH-1908814000
+Manito,Albay,PH-0500511000
+Manjuyod,Negros Oriental,PH-1804615000
+Mankayan,Benguet,PH-1401111000
+Manolo Fortich,Bukidnon,PH-1001314000
+Mansalay,Oriental Mindoro,PH-1705207000
+Manticao,Misamis Oriental,PH-1004318000
+Manukan,Zamboanga del Norte,PH-0907207000
+Mapanas,Northern Samar,PH-0804812000
+Mapandan,Pangasinan,PH-0105528000
+Mapun,Tawi-tawi,PH-1907003000
+Marabut,Samar (Western),PH-0806010000
+Maragondon,Cavite,PH-0402113000
+Maragusan,Davao de Oro,PH-1108205000
+Maramag,Bukidnon,PH-1001315000
+Marantao,Lanao del Sur,PH-1903616000
+Marcos,Ilocos Norte,PH-0102813000
+Margosatubig,Zamboanga del Sur,PH-0907317000
+Maria,Siquijor,PH-1806104000
+Maria Aurora,Aurora,PH-0307707000
+Maribojoc,Bohol,PH-0701232000
+Marihatag,Surigao del Sur,PH-1606814000
+Marilao,Bulacan,PH-0301411000
+Maripipi,Biliran,PH-0807807000
+Mariveles,Bataan,PH-0300807000
+Marogong,Lanao del Sur,PH-1903631000
+Masantol,Pampanga,PH-0305412000
+Masinloc,Zambales,PH-0307106000
+Masiu,Lanao del Sur,PH-1903618000
+Maslog,Eastern Samar,PH-0802614000
+Mataasnakahoy,Batangas,PH-0401018000
+Matag-Ob,Leyte,PH-0803733000
+Matalam,Cotabato,PH-1204708000
+Matalom,Leyte,PH-0803734000
+Matanog,Maguindanao,PH-1908707000
+Matnog,Sorsogon,PH-0506212000
+Matuguinao,Samar (Western),PH-0806011000
+Matungao,Lanao del Norte,PH-1003513000
+Mauban,Quezon,PH-0405627000
+Mawab,Davao de Oro,PH-1108206000
+Mayantoc,Tarlac,PH-0306908000
+Maydolong,Eastern Samar,PH-0802615000
+Mayorga,Leyte,PH-0803735000
+Mayoyao,Ifugao,PH-1402706000
+Medellin,Cebu,PH-0702231000
+Medina,Misamis Oriental,PH-1004319000
+Mendez,Cavite,PH-0402114000
+Merida,Leyte,PH-0803736000
+Mexico,Pampanga,PH-0305413000
+Miagao,Iloilo,PH-0603030000
+Midsalip,Zamboanga del Sur,PH-0907318000
+Midsayap,Cotabato,PH-1204709000
+Milagros,Masbate,PH-0504112000
+Milaor,Camarines Sur,PH-0501721000
+Mina,Iloilo,PH-0603031000
+Minalin,Pampanga,PH-0305414000
+Minglanilla,Cebu,PH-0702232000
+Moalboal,Cebu,PH-0702233000
+Mobo,Masbate,PH-0504113000
+Mogpog,Marinduque,PH-1704004000
+Moises Padilla,Negros Occidental,PH-1804519000
+Molave,Zamboanga del Sur,PH-0907319000
+Moncada,Tarlac,PH-0306909000
+Mondragon,Northern Samar,PH-0804813000
+Monkayo,Davao de Oro,PH-1108207000
+Monreal,Masbate,PH-0504114000
+Montevista,Davao de Oro,PH-1108208000
+Morong (Bataan),Bataan,PH-0300808000
+Morong (Rizal),Rizal,PH-0405809000
+Motiong,Samar (Western),PH-0806012000
+Mulondo,Lanao del Sur,PH-1903619000
+Munai,Lanao del Norte,PH-1003514000
+Mutia,Zamboanga del Norte,PH-0907208000
+Naawan,Misamis Oriental,PH-1004320000
+Nabalawag,Special Geographic Area (BARMM),PH-1999904000
+Nabas,Aklan,PH-0600414000
+Nabua,Camarines Sur,PH-0501723000
+Nabunturan,Davao de Oro,PH-1108209000
+Naga,Zamboanga Sibugay,PH-0908309000
+Nagbukel,Ilocos Sur,PH-0102913000
+Nagcarlan,Laguna,PH-0403417000
+Nagtipunan,Quirino,PH-0205706000
+Naguilian (Isabela),Isabela,PH-0203120000
+Naguilian (La Union),La Union,PH-0103311000
+Naic,Cavite,PH-0402115000
+Nampicuan,Nueva Ecija,PH-0304918000
+Narra,Palawan,PH-1705315000
+Narvacan,Ilocos Sur,PH-0102914000
+Nasugbu,Batangas,PH-0401019000
+Natividad,Pangasinan,PH-0105529000
+Natonin,Mountain Province,PH-1404405000
+Naujan,Oriental Mindoro,PH-1705208000
+Naval,Biliran,PH-0807808000
+New Bataan,Davao de Oro,PH-1108210000
+New Corella,Davao del Norte,PH-1102314000
+New Lucena,Iloilo,PH-0603032000
+New Washington,Aklan,PH-0600415000
+Norala,South Cotabato,PH-1206311000
+Northern Kabuntalan,Maguindanao,PH-1908708000
+Norzagaray,Bulacan,PH-0301413000
+Noveleta,Cavite,PH-0402116000
+Nueva Era,Ilocos Norte,PH-0102814000
+Nueva Valencia,Guimaras,PH-0607903000
+Numancia,Aklan,PH-0600416000
+Nunungan,Lanao del Norte,PH-1003515000
+Oas,Albay,PH-0500512000
+Obando,Bulacan,PH-0301414000
+Ocampo,Camarines Sur,PH-0501725000
+Odiongan,Romblon,PH-1705909000
+Old Kaabakan,Special Geographic Area (BARMM),PH-1999902000
+Old Panamao,Sulu,PH-0906607000
+Olutanga,Zamboanga Sibugay,PH-0908310000
+Opol,Misamis Oriental,PH-1004321000
+Orani,Bataan,PH-0300809000
+Oras,Eastern Samar,PH-0802617000
+Orion,Bataan,PH-0300810000
+Ormoc City,Leyte,PH-0803738000
+Oton,Iloilo,PH-0603034000
+Padre Burgos (Quezon),Quezon,PH-0405629000
+Padre Burgos (Southern Leyte),Southern Leyte,PH-0806410000
+Padre Garcia,Batangas,PH-0401020000
+Paete,Laguna,PH-0403418000
+Pagagawan,Maguindanao,PH-1908815000
+Pagalungan,Maguindanao,PH-1908816000
+Pagayawan,Lanao del Sur,PH-1903620000
+Pagbilao,Quezon,PH-0405630000
+Paglat,Maguindanao,PH-1908817000
+Pagsanghan,Samar (Western),PH-0806026000
+Pagsanjan,Laguna,PH-0403419000
+Pakil,Laguna,PH-0403420000
+Palanas,Masbate,PH-0504115000
+Palapag,Northern Samar,PH-0804814000
+Palauig,Zambales,PH-0307108000
+Palo,Leyte,PH-0803739000
+Palompon,Leyte,PH-0803740000
+Paluan,Occidental Mindoro,PH-1705107000
+Pambujan,Northern Samar,PH-0804815000
+Pamplona (Cagayan),Cagayan,PH-0201518000
+Pamplona (Camarines Sur),Camarines Sur,PH-0501726000
+Pamplona (Negros Oriental),Negros Oriental,PH-1804616000
+Panaon,Misamis Occidental,PH-1004211000
+Panay,Capiz,PH-0601909000
+Pandag,Maguindanao,PH-1908818000
+Pandami,Sulu,PH-0906618000
+Pandan (Antique),Antique,PH-0600611000
+Pandan (Catanduanes),Catanduanes,PH-0502006000
+Pandi,Bulacan,PH-0301415000
+Panganiban,Catanduanes,PH-0502007000
+Pangantucan,Bukidnon,PH-1001316000
+Pangil,Laguna,PH-0403421000
+Panglao,Bohol,PH-0701233000
+Panglima Estino,Sulu,PH-0906616000
+Panglima Sugala,Tawi-tawi,PH-1907001000
+Paniqui,Tarlac,PH-0306910000
+Panitan,Capiz,PH-0601910000
+Pantabangan,Nueva Ecija,PH-0304920000
+Pantao Ragat,Lanao del Norte,PH-1003516000
+Pantar,Lanao del Norte,PH-1003523000
+Pantukan,Davao de Oro,PH-1108211000
+Panukulan,Quezon,PH-0405631000
+Paoay,Ilocos Norte,PH-0102816000
+Paombong,Bulacan,PH-0301416000
+Paracale,Camarines Norte,PH-0501608000
+Paracelis,Mountain Province,PH-1404406000
+Paranas,Samar (Western),PH-0806022000
+Parang (Maguindanao),Maguindanao,PH-1908709000
+Parang (Sulu),Sulu,PH-0906609000
+Pasacao,Camarines Sur,PH-0501727000
+Pasay City,4th District,PH-1381100000
+Pasil,Kalinga,PH-1403208000
+Pastrana,Leyte,PH-0803741000
+Pasuquin,Ilocos Norte,PH-0102817000
+Pata,Sulu,PH-0906610000
+Pateros,4th District,PH-1381701000
+Patikul,Sulu,PH-0906611000
+Patnanungan,Quezon,PH-0405632000
+Patnongon,Antique,PH-0600612000
+Pavia,Iloilo,PH-0603036000
+Payao,Zamboanga Sibugay,PH-0908311000
+Perez,Quezon,PH-0405633000
+Peñablanca,Cagayan,PH-0201519000
+Peñaranda,Nueva Ecija,PH-0304921000
+Peñarrubia,Abra,PH-1400117000
+Piagapo,Lanao del Sur,PH-1903621000
+Piat,Cagayan,PH-0201520000
+Picong,Lanao del Sur,PH-1903635000
+Piddig,Ilocos Norte,PH-0102818000
+Pigkawayan,Cotabato,PH-1204711000
+Pikit,Cotabato,PH-1204712000
+Pila,Laguna,PH-0403422000
+Pilar (Abra),Abra,PH-1400119000
+Pilar (Bataan),Bataan,PH-0300811000
+Pilar (Bohol),Bohol,PH-0701234000
+Pilar (Capiz),Capiz,PH-0601911000
+Pilar (Cebu),Cebu,PH-0702236000
+Pilar (Sorsogon),Sorsogon,PH-0506213000
+Pilar (Surigao del Norte),Surigao del Norte,PH-1606716000
+Pili,Camarines Sur,PH-0501728000
+Pililla,Rizal,PH-0405810000
+Pinabacdao,Samar (Western),PH-0806013000
+Pinamalayan,Oriental Mindoro,PH-1705209000
+Pinamungajan,Cebu,PH-0702237000
+Pinili,Ilocos Norte,PH-0102819000
+Pio Duran,Albay,PH-0500513000
+Pio V. Corpus,Masbate,PH-0504116000
+Pitogo (Quezon),Quezon,PH-0405634000
+Piñan,Zamboanga del Norte,PH-0907209000
+Placer (Masbate),Masbate,PH-0504117000
+Placer (Surigao del Norte),Surigao del Norte,PH-1606717000
+Plaridel (Bulacan),Bulacan,PH-0301417000
+Plaridel (Misamis Occidental),Misamis Occidental,PH-1004212000
+Plaridel (Quezon),Quezon,PH-0405635000
+Pola,Oriental Mindoro,PH-1705210000
+Polanco,Zamboanga del Norte,PH-0907210000
+Polillo,Quezon,PH-0405636000
+Polomolok,South Cotabato,PH-1206312000
+Pontevedra (Capiz),Capiz,PH-0601912000
+Pontevedra (Negros Occidental),Negros Occidental,PH-1804521000
+Poona Bayabao,Lanao del Sur,PH-1903622000
+Poona Piagapo,Lanao del Norte,PH-1003517000
+Porac,Pampanga,PH-0305415000
+Poro,Cebu,PH-0702238000
+Pototan,Iloilo,PH-0603037000
+Pozorrubio,Pangasinan,PH-0105530000
+Pres. Manuel A. Roxas,Zamboanga del Norte,PH-0907211000
+Presentacion,Camarines Sur,PH-0501729000
+President Carlos P. Garcia,Bohol,PH-0701235000
+President Roxas (Capiz),Capiz,PH-0601913000
+President Roxas (Cotabato),Cotabato,PH-1204713000
+Prieto Diaz,Sorsogon,PH-0506214000
+Prosperidad,Agusan del Sur,PH-1600306000
+Pualas,Lanao del Sur,PH-1903623000
+Pudtol,Apayao,PH-1408106000
+Puerto Galera,Oriental Mindoro,PH-1705211000
+Pugo,La Union,PH-0103312000
+Pulilan,Bulacan,PH-0301418000
+Pulupandan,Negros Occidental,PH-1804522000
+Pura,Tarlac,PH-0306911000
+Quezon (Bukidnon),Bukidnon,PH-1001317000
+Quezon (Isabela),Isabela,PH-0203122000
+Quezon (Nueva Ecija),Nueva Ecija,PH-0304922000
+Quezon (Nueva Vizcaya),Nueva Vizcaya,PH-0205011000
+Quezon (Palawan),Palawan,PH-1705317000
+Quezon (Quezon),Quezon,PH-0405637000
+Quinapondan,Eastern Samar,PH-0802618000
+Quirino (Isabela),Isabela,PH-0203123000
+Ragay,Camarines Sur,PH-0501730000
+Rajah Buayan,Maguindanao,PH-1908819000
+Ramon,Isabela,PH-0203124000
+Ramon Magsaysay,Zamboanga del Sur,PH-0907323000
+Ramos,Tarlac,PH-0306912000
+Rapu-Rapu,Albay,PH-0500515000
+Real,Quezon,PH-0405638000
+Reina Mercedes,Isabela,PH-0203125000
+Remedios T. Romualdez,Agusan del Norte,PH-1600212000
+Rizal (Cagayan),Cagayan,PH-0201521000
+Rizal (Kalinga),Kalinga,PH-1403211000
+Rizal (Laguna),Laguna,PH-0403423000
+Rizal (Nueva Ecija),Nueva Ecija,PH-0304923000
+Rizal (Occidental Mindoro),Occidental Mindoro,PH-1705108000
+Rizal (Zamboanga del Norte),Zamboanga del Norte,PH-0907212000
+Rodriguez,Rizal,PH-0405808000
+Ronda,Cebu,PH-0702239000
+Rosales,Pangasinan,PH-0105531000
+Rosario (Agusan del Sur),Agusan del Sur,PH-1600307000
+Rosario (Batangas),Batangas,PH-0401021000
+Rosario (Cavite),Cavite,PH-0402117000
+Rosario (Northern Samar),Northern Samar,PH-0804816000
+Roseller Lim,Zamboanga Sibugay,PH-0908312000
+Roxas (Isabela),Isabela,PH-0203126000
+Roxas (Oriental Mindoro),Oriental Mindoro,PH-1705212000
+Roxas (Palawan),Palawan,PH-1705318000
+Sabangan,Mountain Province,PH-1404407000
+Sablan,Benguet,PH-1401112000
+Sablayan,Occidental Mindoro,PH-1705109000
+Sabtang,Batanes,PH-0200905000
+Sadanga,Mountain Province,PH-1404408000
+Sagada,Mountain Province,PH-1404409000
+Sagay,Camiguin,PH-1001805000
+Sagbayan,Bohol,PH-0701236000
+Saguday,Quirino,PH-0205705000
+Saguiaran,Lanao del Sur,PH-1903625000
+Sagñay,Camarines Sur,PH-0501731000
+Saint Bernard,Southern Leyte,PH-0806412000
+Salay,Misamis Oriental,PH-1004322000
+Salcedo (Eastern Samar),Eastern Samar,PH-0802619000
+Sallapadan,Abra,PH-1400120000
+Salug,Zamboanga del Norte,PH-0907213000
+Salvador,Lanao del Norte,PH-1003518000
+Salvador Benedicto,Negros Occidental,PH-1804532000
+Samal,Bataan,PH-0300812000
+Samboan,Cebu,PH-0702240000
+Sampaloc,Quezon,PH-0405639000
+San Agustin (Isabela),Isabela,PH-0203127000
+San Agustin (Romblon),Romblon,PH-1705911000
+San Agustin (Surigao del Sur),Surigao del Sur,PH-1606815000
+San Andres (Catanduanes),Catanduanes,PH-0502008000
+San Andres (Romblon),Romblon,PH-1705912000
+San Antonio (Northern Samar),Northern Samar,PH-0804817000
+San Antonio (Nueva Ecija),Nueva Ecija,PH-0304924000
+San Antonio (Quezon),Quezon,PH-0405641000
+San Antonio (Zambales),Zambales,PH-0307109000
+San Clemente,Tarlac,PH-0306913000
+San Dionisio,Iloilo,PH-0603038000
+San Enrique (Iloilo),Iloilo,PH-0603039000
+San Enrique (Negros Occidental),Negros Occidental,PH-1804525000
+San Esteban,Ilocos Sur,PH-0102918000
+San Fabian,Pangasinan,PH-0105533000
+San Felipe,Zambales,PH-0307110000
+San Fernando (Bukidnon),Bukidnon,PH-1001318000
+San Fernando (Camarines Sur),Camarines Sur,PH-0501732000
+San Fernando (Cebu),Cebu,PH-0702241000
+San Fernando (Masbate),Masbate,PH-0504118000
+San Fernando (Romblon),Romblon,PH-1705913000
+San Francisco (Agusan del Sur),Agusan del Sur,PH-1600308000
+San Francisco (Cebu),Cebu,PH-0702242000
+San Francisco (Quezon),Quezon,PH-0405642000
+San Francisco (Southern Leyte),Southern Leyte,PH-0806413000
+San Francisco (Surigao del Norte),Surigao del Norte,PH-1606719000
+San Gabriel,La Union,PH-0103315000
+San Guillermo,Isabela,PH-0203128000
+San Ildefonso (Bulacan),Bulacan,PH-0301419000
+San Ildefonso (Ilocos Sur),Ilocos Sur,PH-0102919000
+San Isidro (Abra),Abra,PH-1400121000
+San Isidro (Bohol),Bohol,PH-0701237000
+San Isidro (Davao Oriental),Davao Oriental,PH-1102510000
+San Isidro (Isabela),Isabela,PH-0203129000
+San Isidro (Leyte),Leyte,PH-0803742000
+San Isidro (Northern Samar),Northern Samar,PH-0804818000
+San Isidro (Nueva Ecija),Nueva Ecija,PH-0304925000
+San Isidro (Surigao del Norte),Surigao del Norte,PH-1606720000
+San Jacinto (Masbate),Masbate,PH-0504119000
+San Jacinto (Pangasinan),Pangasinan,PH-0105534000
+San Joaquin,Iloilo,PH-0603040000
+San Jorge,Samar (Western),PH-0806025000
+San Jose (Antique),Antique,PH-0600613000
+San Jose (Batangas),Batangas,PH-0401022000
+San Jose (Camarines Sur),Camarines Sur,PH-0501733000
+San Jose (Dinagat Islands),Dinagat Islands,PH-1608506000
+San Jose (Negros Oriental),Negros Oriental,PH-1804617000
+San Jose (Northern Samar),Northern Samar,PH-0804819000
+San Jose (Occidental Mindoro),Occidental Mindoro,PH-1705110000
+San Jose (Romblon),Romblon,PH-1705914000
+San Jose City,Nueva Ecija,PH-0304926000
+San Jose De Buan,Samar (Western),PH-0806014000
+San Juan (Abra),Abra,PH-1400122000
+San Juan (Batangas),Batangas,PH-0401023000
+San Juan (Ilocos Sur),Ilocos Sur,PH-0102920000
+San Juan (La Union),La Union,PH-0103316000
+San Juan (Siquijor),Siquijor,PH-1806105000
+San Juan (Southern Leyte),Southern Leyte,PH-0806414000
+San Julian,Eastern Samar,PH-0802620000
+San Leonardo,Nueva Ecija,PH-0304927000
+San Lorenzo,Guimaras,PH-0607904000
+San Lorenzo Ruiz,Camarines Norte,PH-0501604000
+San Luis (Agusan del Sur),Agusan del Sur,PH-1600309000
+San Luis (Aurora),Aurora,PH-0307708000
+San Luis (Batangas),Batangas,PH-0401024000
+San Luis (Pampanga),Pampanga,PH-0305417000
+San Manuel (Pangasinan),Pangasinan,PH-0105535000
+San Manuel (Tarlac),Tarlac,PH-0306914000
+San Marcelino,Zambales,PH-0307111000
+San Mariano,Isabela,PH-0203131000
+San Mateo (Isabela),Isabela,PH-0203132000
+San Mateo (Rizal),Rizal,PH-0405811000
+San Miguel (Catanduanes),Catanduanes,PH-0502009000
+San Miguel (Leyte),Leyte,PH-0803743000
+San Miguel (Surigao del Sur),Surigao del Sur,PH-1606816000
+San Miguel (Zamboanga del Sur),Zamboanga del Sur,PH-0907324000
+San Narciso (Quezon),Quezon,PH-0405644000
+San Narciso (Zambales),Zambales,PH-0307112000
+San Nicolas (Batangas),Batangas,PH-0401025000
+San Nicolas (Ilocos Norte),Ilocos Norte,PH-0102820000
+San Pablo (Isabela),Isabela,PH-0203133000
+San Pablo (Zamboanga del Sur),Zamboanga del Sur,PH-0907325000
+San Pascual (Batangas),Batangas,PH-0401026000
+San Pascual (Masbate),Masbate,PH-0504120000
+San Policarpo,Eastern Samar,PH-0802621000
+San Quintin (Abra),Abra,PH-1400123000
+San Quintin (Pangasinan),Pangasinan,PH-0105537000
+San Rafael (Bulacan),Bulacan,PH-0301422000
+San Rafael (Iloilo),Iloilo,PH-0603042000
+San Remigio (Antique),Antique,PH-0600614000
+San Remigio (Cebu),Cebu,PH-0702243000
+San Ricardo,Southern Leyte,PH-0806415000
+San Roque,Northern Samar,PH-0804820000
+San Sebastian,Samar (Western),PH-0806015000
+San Simon,Pampanga,PH-0305418000
+San Teodoro,Oriental Mindoro,PH-1705213000
+San Vicente (Ilocos Sur),Ilocos Sur,PH-0102921000
+San Vicente (Palawan),Palawan,PH-1705319000
+Sanchez Mira,Cagayan,PH-0201522000
+Santa Ana (Cagayan),Cagayan,PH-0201523000
+Santa Ana (Pampanga),Pampanga,PH-0305419000
+Santa Barbara (Iloilo),Iloilo,PH-0603043000
+Santa Barbara (Pangasinan),Pangasinan,PH-0105538000
+Santa Catalina (Ilocos Sur),Ilocos Sur,PH-0102923000
+Santa Catalina (Negros Oriental),Negros Oriental,PH-1804618000
+Santa Cruz (Ilocos Sur),Ilocos Sur,PH-0102924000
+Santa Cruz (Laguna),Laguna,PH-0403426000
+Santa Cruz (Marinduque),Marinduque,PH-1704005000
+Santa Cruz (Occidental Mindoro),Occidental Mindoro,PH-1705111000
+Santa Cruz (Zambales),Zambales,PH-0307113000
+Santa Elena,Camarines Norte,PH-0501610000
+Santa Fe (Cebu),Cebu,PH-0702244000
+Santa Fe (Leyte),Leyte,PH-0803744000
+Santa Fe (Nueva Vizcaya),Nueva Vizcaya,PH-0205012000
+Santa Fe (Romblon),Romblon,PH-1705915000
+Santa Ignacia,Tarlac,PH-0306915000
+Santa Josefa,Agusan del Sur,PH-1600310000
+Santa Lucia,Ilocos Sur,PH-0102925000
+Santa Magdalena,Sorsogon,PH-0506215000
+Santa Margarita,Samar (Western),PH-0806016000
+Santa Maria (Bulacan),Bulacan,PH-0301423000
+Santa Maria (Ilocos Sur),Ilocos Sur,PH-0102926000
+Santa Maria (Laguna),Laguna,PH-0403427000
+Santa Maria (Romblon),Romblon,PH-1705917000
+Santa Monica,Surigao del Norte,PH-1606721000
+Santa Praxedes,Cagayan,PH-0201524000
+Santa Rita (Pampanga),Pampanga,PH-0305420000
+Santa Rita (Samar (Western)),Samar (Western),PH-0806017000
+Santa Rosa,Nueva Ecija,PH-0304928000
+Santa Teresita (Batangas),Batangas,PH-0401027000
+Santa Teresita (Cagayan),Cagayan,PH-0201525000
+Santander,Cebu,PH-0702245000
+Santiago (Agusan del Norte),Agusan del Norte,PH-1600210000
+Santo Domingo (Albay),Albay,PH-0500516000
+Santo Domingo (Ilocos Sur),Ilocos Sur,PH-0102928000
+Santo Domingo (Nueva Ecija),Nueva Ecija,PH-0304929000
+Santo Niño (Cagayan),Cagayan,PH-0201526000
+Santo Niño (South Cotabato),South Cotabato,PH-1206318000
+Santo Tomas (Davao del Norte),Davao del Norte,PH-1102318000
+Santo Tomas (Isabela),Isabela,PH-0203136000
+Santo Tomas (Pangasinan),Pangasinan,PH-0105540000
+Santol,La Union,PH-0103318000
+Sapa-Sapa,Tawi-tawi,PH-1907010000
+Sapad,Lanao del Norte,PH-1003519000
+Sapang Dalaga,Misamis Occidental,PH-1004213000
+Sapi-An,Capiz,PH-0601915000
+Sara,Iloilo,PH-0603044000
+Sarangani,Davao Occidental,PH-1108605000
+Sariaya,Quezon,PH-0405645000
+Sarrat,Ilocos Norte,PH-0102821000
+Sasmuan,Pampanga,PH-0305422000
+Sawata,Davao del Norte,PH-1102324000
+Science City of Muñoz,Nueva Ecija,PH-0304917000
+Sebaste,Antique,PH-0600615000
+Sen. Ninoy Aquino,Sultan Kudarat,PH-1206512000
+Sergio Osmeña Sr.,Zamboanga del Norte,PH-0907214000
+Sevilla,Bohol,PH-0701239000
+Shariff Saydona Mustapha,Maguindanao,PH-1908821000
+Siasi,Sulu,PH-0906612000
+Siaton,Negros Oriental,PH-1804619000
+Siay,Zamboanga Sibugay,PH-0908313000
+Siayan,Zamboanga del Norte,PH-0907215000
+Sibalom,Antique,PH-0600616000
+Sibonga,Cebu,PH-0702246000
+Sibuco,Zamboanga del Norte,PH-0907216000
+Sibulan,Negros Oriental,PH-1804620000
+Sibunag,Guimaras,PH-0607905000
+Sibutad,Zamboanga del Norte,PH-0907217000
+Sibutu,Tawi-tawi,PH-1907011000
+Sierra Bullones,Bohol,PH-0701240000
+Sigay,Ilocos Sur,PH-0102929000
+Sigma,Capiz,PH-0601916000
+Sikatuna,Bohol,PH-0701241000
+Silago,Southern Leyte,PH-0806416000
+Silang,Cavite,PH-0402118000
+Simunul,Tawi-tawi,PH-1907004000
+Sinacaban,Misamis Occidental,PH-1004214000
+Sinait,Ilocos Sur,PH-0102930000
+Sindangan,Zamboanga del Norte,PH-0907218000
+Siniloan,Laguna,PH-0403429000
+Siocon,Zamboanga del Norte,PH-0907219000
+Sipocot,Camarines Sur,PH-0501734000
+Siquijor,Siquijor,PH-1806106000
+Sirawai,Zamboanga del Norte,PH-0907220000
+Siruma,Camarines Sur,PH-0501735000
+Sison (Pangasinan),Pangasinan,PH-0105541000
+Sison (Surigao del Norte),Surigao del Norte,PH-1606722000
+Sitangkai,Tawi-tawi,PH-1907005000
+Socorro (Surigao del Norte),Surigao del Norte,PH-1606723000
+Sofronio Española,Palawan,PH-1705324000
+Sogod (Cebu),Cebu,PH-0702247000
+Sogod (Southern Leyte),Southern Leyte,PH-0806417000
+Solana,Cagayan,PH-0201527000
+Solano,Nueva Vizcaya,PH-0205013000
+Solsona,Ilocos Norte,PH-0102822000
+Sominot,Zamboanga del Sur,PH-0907340000
+South Ubian,Tawi-tawi,PH-1907006000
+South Upi,Maguindanao,PH-1908822000
+Sto. Tomas,Pampanga,PH-0305421000
+Sual,Pangasinan,PH-0105542000
+Subic,Zambales,PH-0307114000
+Sugbongcogon,Misamis Oriental,PH-1004323000
+Sugpon,Ilocos Sur,PH-0102931000
+Sulat,Eastern Samar,PH-0802622000
+Sulop,Davao del Sur,PH-1102414000
+Sultan Dumalondong,Lanao del Sur,PH-1903640000
+Sultan Naga Dimaporo,Lanao del Norte,PH-1003506000
+Sultan Sa Barongis,Maguindanao,PH-1908823000
+Sumilao,Bukidnon,PH-1001319000
+Sumisip,Basilan,PH-1900705000
+Surallah,South Cotabato,PH-1206313000
+Suyo,Ilocos Sur,PH-0102932000
+T'Boli,South Cotabato,PH-1206316000
+Taal,Batangas,PH-0401029000
+Tabango,Leyte,PH-0803745000
+Tabina,Zamboanga del Sur,PH-0907327000
+Tabogon,Cebu,PH-0702248000
+Tabontabon,Leyte,PH-0803746000
+Tabuan-Lasa,Basilan,PH-1900713000
+Tabuelan,Cebu,PH-0702249000
+Tadian,Mountain Province,PH-1404410000
+Taft,Eastern Samar,PH-0802623000
+Tagana-An,Surigao del Norte,PH-1606725000
+Tagapul-An,Samar (Western),PH-0806024000
+Tagbina,Surigao del Sur,PH-1606817000
+Tagkawayan,Quezon,PH-0405646000
+Tago,Surigao del Sur,PH-1606818000
+Tagoloan (Lanao del Norte),Lanao del Norte,PH-1003520000
+Tagoloan (Misamis Oriental),Misamis Oriental,PH-1004324000
+Tagoloan II,Lanao del Sur,PH-1903638000
+Tagudin,Ilocos Sur,PH-0102933000
+Talacogon,Agusan del Sur,PH-1600311000
+Talaingod,Davao del Norte,PH-1102322000
+Talakag,Bukidnon,PH-1001320000
+Talavera,Nueva Ecija,PH-0304930000
+Talayan,Maguindanao,PH-1908824000
+Talibon,Bohol,PH-0701243000
+Talisay (Batangas),Batangas,PH-0401030000
+Talisay (Camarines Norte),Camarines Norte,PH-0501611000
+Talisayan,Misamis Oriental,PH-1004325000
+Talitay,Maguindanao,PH-1908712000
+Tambulig,Zamboanga del Sur,PH-0907328000
+Tampakan,South Cotabato,PH-1206314000
+Tamparan,Lanao del Sur,PH-1903626000
+Tampilisan,Zamboanga del Norte,PH-0907221000
+Tanauan,Leyte,PH-0803748000
+Tangalan,Aklan,PH-0600417000
+Tangcal,Lanao del Norte,PH-1003521000
+Tantangan,South Cotabato,PH-1206315000
+Tanza,Cavite,PH-0402120000
+Tapaz,Capiz,PH-0601917000
+Tapul,Sulu,PH-0906614000
+Taraka,Lanao del Sur,PH-1903627000
+Tarragona,Davao Oriental,PH-1102511000
+Tayasan,Negros Oriental,PH-1804622000
+Taysan,Batangas,PH-0401032000
+Taytay (Palawan),Palawan,PH-1705320000
+Taytay (Rizal),Rizal,PH-0405813000
+Tayug,Pangasinan,PH-0105543000
+Tayum,Abra,PH-1400124000
+Teresa,Rizal,PH-0405814000
+Ternate,Cavite,PH-0402121000
+Tibiao,Antique,PH-0600617000
+Tigaon,Camarines Sur,PH-0501736000
+Tigbao,Zamboanga del Sur,PH-0907344000
+Tigbauan,Iloilo,PH-0603045000
+Tineg,Abra,PH-1400125000
+Tinglayan,Kalinga,PH-1403215000
+Tingloy,Batangas,PH-0401033000
+Tinoc,Ifugao,PH-1402710000
+Tipo-Tipo,Basilan,PH-1900706000
+Titay,Zamboanga Sibugay,PH-0908315000
+Tiwi,Albay,PH-0500518000
+Toboso,Negros Occidental,PH-1804529000
+Tolosa,Leyte,PH-0803749000
+Torrijos,Marinduque,PH-1704006000
+Trinidad,Bohol,PH-0701244000
+Tuao,Cagayan,PH-0201528000
+Tuba,Benguet,PH-1401113000
+Tubajon,Dinagat Islands,PH-1608507000
+Tubay,Agusan del Norte,PH-1600211000
+Tublay,Benguet,PH-1401114000
+Tubo,Abra,PH-1400126000
+Tubod (Surigao del Norte),Surigao del Norte,PH-1606727000
+Tubungan,Iloilo,PH-0603046000
+Tuburan (Basilan),Basilan,PH-1900707000
+Tuburan (Cebu),Cebu,PH-0702252000
+Tudela (Cebu),Cebu,PH-0702253000
+Tudela (Misamis Occidental),Misamis Occidental,PH-1004216000
+Tugaya,Lanao del Sur,PH-1903629000
+Tuguegarao City,Cagayan,PH-0201529000
+Tugunan,Special Geographic Area (BARMM),PH-1999908000
+Tukuran,Zamboanga del Sur,PH-0907330000
+Tulunan,Cotabato,PH-1204714000
+Tunga,Leyte,PH-0803750000
+Tungawan,Zamboanga Sibugay,PH-0908316000
+Turtle Islands,Tawi-tawi,PH-1907008000
+Tuy,Batangas,PH-0401034000
+Ubay,Bohol,PH-0701246000
+Umingan,Pangasinan,PH-0105544000
+Unisan,Quezon,PH-0405649000
+Upi,Maguindanao,PH-1908713000
+Urbiztondo,Pangasinan,PH-0105545000
+Uson,Masbate,PH-0504121000
+Uyugan,Batanes,PH-0200906000
+Valderrama,Antique,PH-0600618000
+Valencia (Bohol),Bohol,PH-0701247000
+Valencia (Negros Oriental),Negros Oriental,PH-1804623000
+Valladolid,Negros Occidental,PH-1804530000
+Vallehermoso,Negros Oriental,PH-1804624000
+Veruela,Agusan del Sur,PH-1600313000
+Victoria (Laguna),Laguna,PH-0403430000
+Victoria (Northern Samar),Northern Samar,PH-0804823000
+Victoria (Oriental Mindoro),Oriental Mindoro,PH-1705215000
+Victoria (Tarlac),Tarlac,PH-0306917000
+Viga,Catanduanes,PH-0502010000
+Villaba,Leyte,PH-0803751000
+Villanueva,Misamis Oriental,PH-1004326000
+Villareal,Samar (Western),PH-0806021000
+Villasis,Pangasinan,PH-0105547000
+Villaverde,Nueva Vizcaya,PH-0205014000
+Vincenzo A. Sagun,Zamboanga del Sur,PH-0907341000
+Vintar,Ilocos Norte,PH-0102823000
+Vinzons,Camarines Norte,PH-0501612000
+Virac,Catanduanes,PH-0502011000
+Zamboanguita,Negros Oriental,PH-1804625000
+Zaragoza,Nueva Ecija,PH-0304932000
+Zarraga,Iloilo,PH-0603047000
+Zumarraga,Samar (Western),PH-0806023000

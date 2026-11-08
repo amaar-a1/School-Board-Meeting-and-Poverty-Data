@@ -72,6 +72,8 @@ C = {
     # Philippines: city and municipal councils (Sangguniang Bayan / Panlungsod) and their sessions; the province is in the query.
     "PH": dict(file="philippines", q="Sangguniang Bayan {} {region} regular session", chan=r"sangguniang|municipal|munisipyo|city|lgu|bayan|panlungsod|town|government|\\bsb\\b|\\bsp\\b",
                edu=r"school board|education", meet=r"session|sesyon|sangguniang"),
+    "PHR": dict(file="philippines_retry", q="Sangguniang Bayan {} {region} regular session", chan=r"sangguniang|municipal|munisipyo|city|lgu|bayan|panlungsod|town|government",
+                edu=r"school board|education", meet=r"session|sesyon|sangguniang"),
     "NL": dict(file="netherlands", q="gemeente {} raadsvergadering", chan=r"gemeente|gemeenteraad|raad|griffie",
                edu=r"onderwijs|jeugd|school|kind",
                meet=r"commissie|raad|vergadering|beeldvorm|oordeelvorm"),
