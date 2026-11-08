@@ -1,0 +1,309 @@
+District,Region,District ID
+Lisboa,Lisboa,PT-1106
+Sintra,Lisboa,PT-1111
+Vila Nova de Gaia,Porto,PT-1317
+Porto,Porto,PT-1312
+Cascais,Lisboa,PT-1105
+Loures,Lisboa,PT-1107
+Braga,Braga,PT-0303
+Almada,Setúbal,PT-1503
+Amadora,Lisboa,PT-1115
+Seixal,Setúbal,PT-1510
+Oeiras,Lisboa,PT-1110
+Matosinhos,Porto,PT-1308
+Odivelas,Lisboa,PT-1116
+Gondomar,Porto,PT-1304
+Guimarães,Braga,PT-0308
+Coimbra,Coimbra,PT-0603
+Vila Franca de Xira,Lisboa,PT-1114
+Leiria,Leiria,PT-1009
+Santa Maria da Feira,Aveiro,PT-0109
+Vila Nova de Famalicão,Braga,PT-0312
+Maia,Porto,PT-1306
+Setúbal,Setúbal,PT-1512
+Barcelos,Braga,PT-0302
+Funchal,Madeira,PT-3103
+Viseu,Viseu,PT-1823
+Valongo,Porto,PT-1315
+Mafra,Lisboa,PT-1109
+Torres Vedras,Lisboa,PT-1113
+Loulé,Faro,PT-0808
+Viana do Castelo,Viana do Castelo,PT-1609
+Aveiro,Aveiro,PT-0105
+Barreiro,Setúbal,PT-1504
+Paredes,Porto,PT-1310
+Vila do Conde,Porto,PT-1316
+Faro,Faro,PT-0805
+Portimão,Faro,PT-0811
+Moita,Setúbal,PT-1506
+Palmela,Setúbal,PT-1508
+Ponta Delgada,Açores,PT-4203
+Penafiel,Porto,PT-1311
+Póvoa de Varzim,Porto,PT-1313
+Santo Tirso,Porto,PT-1314
+Oliveira de Azeméis,Aveiro,PT-0113
+Santarém,Santarém,PT-1416
+Figueira da Foz,Coimbra,PT-0605
+Montijo,Setúbal,PT-1507
+Albufeira,Faro,PT-0801
+Alcobaça,Leiria,PT-1001
+Sesimbra,Setúbal,PT-1511
+Évora,Évora,PT-0705
+Caldas da Rainha,Leiria,PT-1006
+Ovar,Aveiro,PT-0115
+Castelo Branco,Castelo Branco,PT-0502
+Felgueiras,Porto,PT-1303
+Paços de Ferreira,Porto,PT-1309
+Pombal,Leiria,PT-1015
+Amarante,Porto,PT-1301
+Vila Real,Vila Real,PT-1714
+Covilhã,Castelo Branco,PT-0503
+Águeda,Aveiro,PT-0101
+Marco de Canaveses,Porto,PT-1307
+Fafe,Braga,PT-0307
+Lousada,Porto,PT-1305
+Alenquer,Lisboa,PT-1101
+Vila Verde,Braga,PT-0313
+Olhão,Faro,PT-0810
+Ourém,Santarém,PT-1421
+Odemira,Beja,PT-0211
+Marinha Grande,Leiria,PT-1010
+Silves,Faro,PT-0813
+Santa Cruz,Madeira,PT-3108
+Ílhavo,Aveiro,PT-0110
+Ponte de Lima,Viana do Castelo,PT-1607
+Trofa,Porto,PT-1318
+Guarda,Guarda,PT-0907
+Lagos,Faro,PT-0807
+Beja,Beja,PT-0205
+Esposende,Braga,PT-0306
+Bragança,Bragança,PT-0402
+Chaves,Vila Real,PT-1703
+Tomar,Santarém,PT-1418
+Abrantes,Santarém,PT-1401
+Torres Novas,Santarém,PT-1419
+Cantanhede,Coimbra,PT-0602
+Angra do Heroísmo,Açores,PT-4301
+Tavira,Faro,PT-0814
+Benavente,Santarém,PT-1405
+Espinho,Aveiro,PT-0107
+Câmara de Lobos,Madeira,PT-3102
+Ribeira Grande,Açores,PT-4205
+Peniche,Leiria,PT-1014
+Santiago do Cacém,Setúbal,PT-1509
+Lourinhã,Lisboa,PT-1108
+Anadia,Aveiro,PT-0103
+Lagoa,Faro,PT-0806
+Estarreja,Aveiro,PT-0108
+Fundão,Castelo Branco,PT-0504
+Tondela,Viseu,PT-1821
+Albergaria-a-Velha,Aveiro,PT-0102
+Oliveira do Bairro,Aveiro,PT-0114
+Vizela,Braga,PT-0314
+Cartaxo,Santarém,PT-1406
+Montemor-o-Velho,Coimbra,PT-0610
+Vagos,Aveiro,PT-0118
+Porto de Mós,Leiria,PT-1016
+Lamego,Viseu,PT-1805
+Rio Maior,Santarém,PT-1414
+São João da Madeira,Aveiro,PT-0116
+Portalegre,Portalegre,PT-1214
+Almeirim,Santarém,PT-1403
+Salvaterra de Magos,Santarém,PT-1415
+Entroncamento,Santarém,PT-1410
+Azambuja,Lisboa,PT-1103
+Vila Real de Santo António,Faro,PT-0816
+Vale de Cambra,Aveiro,PT-0119
+Póvoa de Lanhoso,Braga,PT-0309
+Elvas,Portalegre,PT-1207
+Seia,Guarda,PT-0912
+Mirandela,Bragança,PT-0407
+Arouca,Aveiro,PT-0104
+Arcos de Valdevez,Viana do Castelo,PT-1601
+Alcochete,Setúbal,PT-1502
+Machico,Madeira,PT-3104
+Oliveira do Hospital,Coimbra,PT-0611
+Mealhada,Aveiro,PT-0111
+Vila da Praia da Vitória,Açores,PT-4302
+Amares,Braga,PT-0301
+Mangualde,Viseu,PT-1806
+Monção,Viana do Castelo,PT-1604
+Lousã,Coimbra,PT-0607
+Coruche,Santarém,PT-1409
+Cinfães,Viseu,PT-1804
+Soure,Coimbra,PT-0615
+Condeixa-a-Nova,Coimbra,PT-0604
+Baião,Porto,PT-1302
+Caminha,Viana do Castelo,PT-1602
+Nazaré,Leiria,PT-1011
+Batalha,Leiria,PT-1004
+Sines,Setúbal,PT-1513
+Montemor-o-Novo,Évora,PT-0706
+Celorico de Basto,Braga,PT-0305
+Castelo de Paiva,Aveiro,PT-0106
+Arruda dos Vinhos,Lisboa,PT-1102
+Ponte de Sor,Portalegre,PT-1213
+São Pedro do Sul,Viseu,PT-1816
+Cabeceiras de Basto,Braga,PT-0304
+Valença,Viana do Castelo,PT-1608
+Horta,Açores,PT-4701
+Grândola,Setúbal,PT-1505
+Sertã,Castelo Branco,PT-0509
+Serpa,Beja,PT-0213
+Peso da Régua,Vila Real,PT-1708
+Lagoa (R.A.A.),Açores,PT-4201
+Valpaços,Vila Real,PT-1712
+Bombarral,Leiria,PT-1005
+Macedo de Cavaleiros,Bragança,PT-0405
+Cadaval,Lisboa,PT-1104
+Nelas,Viseu,PT-1809
+Moura,Beja,PT-0210
+Óbidos,Leiria,PT-1012
+Castro Daire,Viseu,PT-1803
+Penacova,Coimbra,PT-0613
+Alcanena,Santarém,PT-1402
+Estremoz,Évora,PT-0704
+Ribeira Brava,Madeira,PT-3107
+Mira,Coimbra,PT-0608
+Vendas Novas,Évora,PT-0712
+Miranda do Corvo,Coimbra,PT-0609
+São Brás de Alportel,Faro,PT-0812
+Ansião,Leiria,PT-1003
+Alcácer do Sal,Setúbal,PT-1501
+Gouveia,Guarda,PT-0906
+Vieira do Minho,Braga,PT-0311
+Vila Pouca de Aguiar,Vila Real,PT-1713
+Tábua,Coimbra,PT-0616
+Sever do Vouga,Aveiro,PT-0117
+Sobral de Monte Agraço,Lisboa,PT-1112
+Arganil,Coimbra,PT-0601
+Calheta (R.A.M.),Madeira,PT-3101
+Sátão,Viseu,PT-1817
+Ponte da Barca,Viana do Castelo,PT-1606
+Santa Comba Dão,Viseu,PT-1814
+Reguengos de Monsaraz,Évora,PT-0711
+Oliveira de Frades,Viseu,PT-1810
+Murtosa,Aveiro,PT-0112
+Vila Franca do Campo,Açores,PT-4206
+Alijó,Vila Real,PT-1701
+Vila Nova de Cerveira,Viana do Castelo,PT-1610
+Resende,Viseu,PT-1813
+Moimenta da Beira,Viseu,PT-1807
+Vouzela,Viseu,PT-1824
+Sabugal,Guarda,PT-0911
+Carregal do Sal,Viseu,PT-1802
+Ferreira do Alentejo,Beja,PT-0208
+Mortágua,Viseu,PT-1808
+Aljustrel,Beja,PT-0201
+Montalegre,Vila Real,PT-1706
+Paredes de Coura,Viana do Castelo,PT-1605
+Chamusca,Santarém,PT-1407
+Ponta do Sol,Madeira,PT-3105
+Idanha-a-Nova,Castelo Branco,PT-0505
+Campo Maior,Portalegre,PT-1204
+Mogadouro,Bragança,PT-0408
+Trancoso,Guarda,PT-0913
+Pinhel,Guarda,PT-0910
+Ferreira do Zêzere,Santarém,PT-1411
+Alpiarça,Santarém,PT-1404
+Vila Nova da Barquinha,Santarém,PT-1420
+Vila Viçosa,Évora,PT-0714
+Vinhais,Bragança,PT-0412
+Castro Marim,Faro,PT-0804
+Aljezur,Faro,PT-0803
+Tarouca,Viseu,PT-1820
+Vila Nova de Poiares,Coimbra,PT-0617
+Melgaço,Viana do Castelo,PT-1603
+Penalva do Castelo,Viseu,PT-1811
+Castro Verde,Beja,PT-0206
+Almodôvar,Beja,PT-0202
+Proença-a-Nova,Castelo Branco,PT-0508
+Vila do Bispo,Faro,PT-0815
+Arraiolos,Évora,PT-0702
+Madalena,Açores,PT-4602
+Borba,Évora,PT-0703
+Torre de Moncorvo,Bragança,PT-0409
+São João da Pesqueira,Viseu,PT-1815
+Celorico da Beira,Guarda,PT-0903
+Santana,Madeira,PT-3109
+Redondo,Évora,PT-0710
+Terras de Bouro,Braga,PT-0310
+Porto Santo,Madeira,PT-3201
+Mação,Santarém,PT-1413
+Alvaiázere,Leiria,PT-1002
+Mondim de Basto,Vila Real,PT-1705
+Miranda do Douro,Bragança,PT-0406
+Santa Marta de Penaguião,Vila Real,PT-1711
+Mértola,Beja,PT-0209
+Belmonte,Castelo Branco,PT-0501
+Nisa,Portalegre,PT-1212
+Ribeira de Pena,Vila Real,PT-1709
+Vila Nova de Foz Côa,Guarda,PT-0914
+Vila Flor,Bragança,PT-0410
+Portel,Évora,PT-0709
+Povoação,Açores,PT-4204
+Almeida,Guarda,PT-0902
+Golegã,Santarém,PT-1412
+Penela,Coimbra,PT-0614
+Monchique,Faro,PT-0809
+Vila do Porto,Açores,PT-4101
+Vidigueira,Beja,PT-0214
+Sabrosa,Vila Real,PT-1710
+Viana do Alentejo,Évora,PT-0713
+Armamar,Viseu,PT-1801
+Figueiró dos Vinhos,Leiria,PT-1008
+Carrazeda de Ansiães,Bragança,PT-0403
+Murça,Vila Real,PT-1707
+Alandroal,Évora,PT-0701
+Ourique,Beja,PT-0212
+Velas,Açores,PT-4502
+Figueira de Castelo Rodrigo,Guarda,PT-0904
+Sernancelhe,Viseu,PT-1818
+Aguiar da Beira,Guarda,PT-0901
+Boticas,Vila Real,PT-1702
+Cuba,Beja,PT-0207
+São Vicente,Madeira,PT-3110
+Tabuaço,Viseu,PT-1819
+Lajes do Pico,Açores,PT-4601
+Sousel,Portalegre,PT-1215
+Oleiros,Castelo Branco,PT-0506
+Mêda,Guarda,PT-0909
+Nordeste,Açores,PT-4202
+Penamacor,Castelo Branco,PT-0507
+Vila Nova de Paiva,Viseu,PT-1822
+Alfândega da Fé,Bragança,PT-0401
+Fornos de Algodres,Guarda,PT-0905
+Santa Cruz da Graciosa,Açores,PT-4401
+Mora,Évora,PT-0707
+Constância,Santarém,PT-1408
+Góis,Coimbra,PT-0606
+Vimioso,Bragança,PT-0411
+Avis,Portalegre,PT-1203
+Pedrógão Grande,Leiria,PT-1013
+Sardoal,Santarém,PT-1417
+Mesão Frio,Vila Real,PT-1704
+Calheta (R.A.A.),Açores,PT-4501
+São Roque do Pico,Açores,PT-4603
+Pampilhosa da Serra,Coimbra,PT-0612
+Gavião,Portalegre,PT-1209
+Crato,Portalegre,PT-1206
+Vila Velha de Ródão,Castelo Branco,PT-0511
+Vila de Rei,Castelo Branco,PT-0510
+Alter do Chão,Portalegre,PT-1201
+Freixo de Espada à Cinta,Bragança,PT-0404
+Castelo de Vide,Portalegre,PT-1205
+Fronteira,Portalegre,PT-1208
+Manteigas,Guarda,PT-0908
+Marvão,Portalegre,PT-1210
+Monforte,Portalegre,PT-1211
+Arronches,Portalegre,PT-1202
+Castanheira de Pêra,Leiria,PT-1007
+Porto Moniz,Madeira,PT-3106
+Mourão,Évora,PT-0708
+Alcoutim,Faro,PT-0802
+Penedono,Viseu,PT-1812
+Alvito,Beja,PT-0203
+Santa Cruz das Flores,Açores,PT-4802
+Barrancos,Beja,PT-0204
+Lajes das Flores,Açores,PT-4801
+Corvo,Açores,PT-4901
