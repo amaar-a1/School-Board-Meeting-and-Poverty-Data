@@ -1,0 +1,974 @@
+
+PH Jipapad ->  
+PH Island Garden City of Samal ->  
+PH Gerona ->  
+PH Jasaan ->  
+PH Jordan ->  
+PH Ivana ->  
+PH Ginatilan ->  
+PH Jimenez ->  
+PH Josefina ->  
+PH Jagna ->  
+PH Jones ->  
+PH Kabacan ->  
+PH Jaro ->  
+PH Gloria -> LGU GLORIA ORIENTAL MINDORO 0
+PH Kabuntalan ->  
+PH Jimalalud ->  
+PH Jose Panganiban ->  
+PH Governor Generoso ->  
+PH Jomalig ->  
+PH Kalawit ->  
+PH Julita ->  
+PH Guiguinto ->  
+PH Kabugao ->  
+PH Jose Dalman ->  
+PH Kalilangan ->  
+PH Guindulman ->  
+PH Juban ->  
+PH Kapalawan ->  
+PH Kalamansig ->  
+PH Guipos ->  
+PH Kabayan ->  
+PH Kapatagan (Lanao del Sur) ->  
+PH Kalibo ->  
+PH Hadji Mohammad Ajul ->  
+PH Kawayan ->  
+PH Kadingilan ->  
+PH Kapai ->  
+PH Hagonoy (Davao del Sur) ->  
+PH Kiangan ->  
+PH Kapatagan (Lanao del Norte) ->  
+PH Hilongos ->  
+PH Kinoguitan ->  
+PH Kauswagan ->  
+PH Hingyon ->  
+PH Kumalarang ->  
+PH Kalayaan (Palawan) ->  
+PH Kananga ->  
+PH Hinundayan ->  
+PH Kiamba ->  
+PH La Paz (Abra) ->  
+PH Kibungan ->  
+PH Kapangan ->  
+PH La Trinidad ->  
+PH Ibajay ->  
+PH Kolambugan ->  
+PH Katipunan ->  
+PH La Libertad (Zamboanga del Norte) ->  
+PH Labo ->  
+PH Imelda ->  
+PH Lagawe ->  
+PH Kayapa ->  
+PH La Paz (Tarlac) ->  
+PH Indang ->  
+PH Laguindingan ->  
+PH Labason ->  
+PH Kiblawan ->  
+PH Inopacan ->  
+PH Lala ->  
+PH Lagangilang ->  
+PH Kitcharao ->  
+PH Langiden ->  
+PH Isabela ->  
+PH Lagonoy ->  
+PH La Libertad (Negros Oriental) ->  
+PH Lal-Lo ->  
+PH La Paz (Leyte) ->  
+PH Lanuza ->  
+PH Lamut ->  
+PH Itogon ->  
+PH Lantawan ->  
+PH Lapuyan ->  
+PH Jaen ->  
+PH Lasam ->  
+PH Lapinig ->  
+PH Labangan ->  
+PH Las Nieves ->  
+PH Lavezares ->  
+PH Lacub ->  
+PH Janiuay ->  
+PH Leganes ->  
+PH Leon T. Postigo ->  
+PH Laurel ->  
+PH Lianga ->  
+PH Lagonglong ->  
+PH Lebak ->  
+PH Libertad (Misamis Oriental) ->  
+PH Lakewood ->  
+PH Jiabong ->  
+PH Lambunao ->  
+PH Jolo ->  
+PH Leon ->  
+PH Lantapan ->  
+PH Jose Abad Santos ->  
+PH Lian ->  
+PH Jovellar ->  
+PH Libona ->  
+PH Libertad (Antique) ->  
+PH Kabasalan ->  
+PH Lidlidda ->  
+PH Libon ->  
+PH Kadayangan ->  
+PH Laoang ->  
+PH Liloan (Cebu) ->  
+PH Kalayaan (Laguna) ->  
+PH Las Navas ->  
+PH Laur ->  
+PH Licuan-Baay ->  
+PH Liliw ->  
+PH Kalingalan Caluang ->  
+PH Limay ->  
+PH Limasawa ->  
+PH Lingig ->  
+PH Lingayen ->  
+PH Lobo ->  
+PH Lazi ->  
+PH Kapalong ->  
+PH Kasibu ->  
+PH Loay ->  
+PH Loon ->  
+PH Lemery (Iloilo) ->  
+PH Lezo ->  
+PH Looc (Romblon) ->  
+PH Kawit ->  
+PH Loreto (Agusan del Sur) ->  
+PH Kibawe ->  
+PH Libagon ->  
+PH Lopez Jaena ->  
+PH Libmanan ->  
+PH Lubang ->  
+PH Luba ->  
+PH Kitaotao ->  
+PH Lucban ->  
+PH Licab ->  
+PH Lugait ->  
+PH La Castellana ->  
+PH Lila ->  
+PH Lumbaca-Unayan ->  
+PH La Paz (Agusan del Sur) ->  
+PH Lumba-Bayabao ->  
+PH Laak ->  
+PH Lumbayanague ->  
+PH Liloy ->  
+PH Lupao ->  
+PH Luna (Apayao) ->  
+PH Luuk ->  
+PH Labrador ->  
+PH Lupi ->  
+PH Linapacan ->  
+PH Maasin ->  
+PH Llorente ->  
+PH M'Lang ->  
+PH Mabini (Bohol) ->  
+PH Lagayan ->  
+PH Looc (Occidental Mindoro) ->  
+PH Mabuhay ->  
+PH Lake Sebu ->  
+PH Mabalacat City -> Mabalacat City ECCD 0
+PH Maco ->  
+PH Lambayong ->  
+PH Languyan ->  
+PH Lopez ->  
+PH Laoac ->  
+PH Madalum ->  
+PH Larena ->  
+PH Mabini (Davao de Oro) ->  
+PH Laua-An ->  
+PH Los Baños ->  
+PH Madridejos ->  
+PH Lawaan ->  
+PH Macabebe ->  
+PH Magallanes (Sorsogon) ->  
+PH Lemery (Batangas) ->  
+PH Lubuagan ->  
+PH Magpet ->  
+PH Luisiana ->  
+PH Leyte -> Sangguniang Bayan of Sogod, So. Leyte 0
+PH Magsaysay (Occidental Mindoro) ->  
+PH Maconacon ->  
+PH Lumbatan ->  
+PH Libacao ->  
+PH Mahaplag ->  
+PH Madamba ->  
+PH Luna (La Union) ->  
+PH Maigo ->  
+PH Libjo ->  
+PH Magalang ->  
+PH Libungan ->  
+PH Majayjay ->  
+PH Magarao ->  
+PH Ligawasan ->  
+PH Malabuyoc ->  
+PH Magsaysay (Davao del Sur) ->  
+PH Lutayan ->  
+PH Liloan (Southern Leyte) ->  
+PH Malasiqui ->  
+PH Magsaysay (Palawan) ->  
+PH Maasim ->  
+PH Linamon ->  
+PH Malilipot ->  
+PH Mahatao ->  
+PH Mabini (Batangas) ->  
+PH Llanera ->  
+PH Maimbung ->  
+PH Mabitac ->  
+PH Malita ->  
+PH Loboc ->  
+PH Makato ->  
+PH Macarthur ->  
+PH Lope De Vega ->  
+PH Malalag ->  
+PH Madalag ->  
+PH Loreto (Dinagat Islands) ->  
+PH Malungon -> 16th Sangguniang Bayan of Malungon 0
+PH Malay ->  
+PH Madrid ->  
+PH Lubao ->  
+PH Mambajao ->  
+PH Malimono ->  
+PH Magallanes (Cavite) ->  
+PH Lugus ->  
+PH Manaoag ->  
+PH Magdiwang ->  
+PH Lumban ->  
+PH Mangaldan ->  
+PH Magsaysay (Misamis Oriental) ->  
+PH Malitbog (Bukidnon) ->  
+PH Maguing ->  
+PH Luna (Isabela) ->  
+PH Manjuyod ->  
+PH Maluso ->  
+PH Mahinog ->  
+PH Manticao ->  
+PH Lupon ->  
+PH Mamburao ->  
+PH Maitum ->  
+PH Malabang ->  
+PH Mapun ->  
+PH Ma-Ayon ->  
+PH Malapatan ->  
+PH Manapla ->  
+PH Malidegao ->  
+PH Mabinay ->  
+PH Mangatarem ->  
+PH Maramag ->  
+PH Malinao (Albay) ->  
+PH Mabini (Pangasinan) ->  
+PH Mankayan ->  
+PH Macalelon ->  
+PH Maria ->  
+PH Mallig ->  
+PH Manukan ->  
+PH Marilao ->  
+PH Macrohon ->  
+PH Marabut ->  
+PH Mamasapano ->  
+PH Masantol ->  
+PH Maddela ->  
+PH Marantao ->  
+PH Manabo ->  
+PH Maria Aurora ->  
+PH Magallanes (Agusan del Norte) ->  
+PH Mataasnakahoy ->  
+PH Matanao ->  
+PH Mandaon ->  
+PH Magdalena ->  
+PH Maripipi ->  
+PH Matungao ->  
+PH Manito ->  
+PH Magsaysay (Lanao del Norte) ->  
+PH Masinloc ->  
+PH Mansalay ->  
+PH Maydolong ->  
+PH Magsingal ->  
+PH Matag-Ob ->  
+PH Mapandan ->  
+PH Medina ->  
+PH Mahayag ->  
+PH Matanog ->  
+PH Maragusan ->  
+PH Merida ->  
+PH Mainit ->  
+PH Mauban ->  
+PH Makilala ->  
+PH Margosatubig ->  
+PH Midsayap ->  
+PH Minalabac ->  
+PH Mayorga ->  
+PH Marihatag ->  
+PH Malangas ->  
+PH Mendez ->  
+PH Marogong ->  
+PH Mobo ->  
+PH Malibcong ->  
+PH Mexico ->  
+PH Maslog ->  
+PH Moncada ->  
+PH Malinao (Aklan) ->  
+PH Milagros ->  
+PH Matalom ->  
+PH Montevista ->  
+PH Malitbog (Southern Leyte) ->  
+PH Mulanay ->  
+PH Malvar ->  
+PH Minalin ->  
+PH Matuguinao ->  
+PH Mogpog ->  
+PH Mutia ->  
+PH Mambusao ->  
+PH Mayantoc ->  
+PH Nabua ->  
+PH Mondragon ->  
+PH Manay ->  
+PH Medellin ->  
+PH Mercedes (Eastern Samar) ->  
+PH Nagcarlan ->  
+PH Mangudadatu ->  
+PH Morong (Bataan) ->  
+PH Midsalip ->  
+PH Naic ->  
+PH Nasipit ->  
+PH Manolo Fortich ->  
+PH Mulondo ->  
+PH Mina ->  
+PH Mapanas ->  
+PH Naawan ->  
+PH Naujan ->  
+PH Moalboal ->  
+PH Maragondon ->  
+PH Nabunturan ->  
+PH New Lucena ->  
+PH Molave ->  
+PH Marcos ->  
+PH Nagtipunan ->  
+PH Norzagaray ->  
+PH Monreal ->  
+PH Maribojoc ->  
+PH Nampicuan ->  
+PH Numancia ->  
+PH Mariveles ->  
+PH Motiong ->  
+PH Murcia ->  
+PH Ocampo ->  
+PH Nasugbu ->  
+PH Masiu ->  
+PH Nabas ->  
+PH Matalam ->  
+PH Olutanga ->  
+PH Naval ->  
+PH Nagbukel ->  
+PH Matnog ->  
+PH Oras ->  
+PH New Washington ->  
+PH Naguilian (La Union) ->  
+PH Mawab ->  
+PH Oton ->  
+PH Noveleta ->  
+PH Mayoyao ->  
+PH Narvacan ->  
+PH Mercedes (Camarines Norte) ->  
+PH Padre Garcia ->  
+PH Nunungan ->  
+PH Miagao ->  
+PH Natonin ->  
+PH Pagayawan ->  
+PH Odiongan ->  
+PH Omar ->  
+PH Milaor ->  
+PH Orion ->  
+PH New Corella ->  
+PH Pagsanjan ->  
+PH Minglanilla ->  
+PH Padada ->  
+PH Palanan ->  
+PH Palimbang ->  
+PH Northern Kabuntalan ->  
+PH Paete ->  
+PH Moises Padilla ->  
+PH Pambujan ->  
+PH Nueva Valencia ->  
+PH Pagbilao ->  
+PH Pagudpud ->  
+PH Monkayo ->  
+PH Panaon ->  
+PH Obando ->  
+PH Morong (Rizal) ->  
+PH Palanas ->  
+PH Pandan (Antique) ->  
+PH Old Panamao ->  
+PH Pangantucan ->  
+PH Munai ->  
+PH Palo ->  
+PH Orani ->  
+PH Oslob ->  
+PH Panglima Sugala ->  
+PH Nabalawag ->  
+PH Pamplona (Cagayan) ->  
+PH Padre Burgos (Southern Leyte) ->  
+PH Pantabangan ->  
+PH Naga ->  
+PH Panay ->  
+PH Panukulan ->  
+PH Pagalungan ->  
+PH Naguilian (Isabela) ->  
+PH Pandan (Catanduanes) ->  
+PH Paracelis ->  
+PH Pagsanghan ->  
+PH Narra ->  
+PH Pangil ->  
+PH Pasacao ->  
+PH Pakil ->  
+PH Pangutaran ->  
+PH Natividad ->  
+PH Pasuquin ->  
+PH Palauig ->  
+PH Pantao Ragat ->  
+PH New Bataan ->  
+PH Paluan ->  
+PH Patnanungan ->  
+PH Paoay ->  
+PH Norala ->  
+PH Perez ->  
+PH Pamplona (Negros Oriental) ->  
+PH Paranas ->  
+PH Nueva Era ->  
+PH Piagapo ->  
+PH Pandami ->  
+PH Pidigan ->  
+PH Pasay City ->  
+PH Oas ->  
+PH Panganiban ->  
+PH Pilar (Abra) ->  
+PH Pata ->  
+PH Old Kaabakan ->  
+PH Panglima Estino ->  
+PH Patnongon ->  
+PH Pilar (Cebu) ->  
+PH Opol ->  
+PH Pililla ->  
+PH Panitan ->  
+PH Peñablanca ->  
+PH Ormoc City ->  
+PH Pinili ->  
+PH Pantukan ->  
+PH Piat ->  
+PH Padre Burgos (Quezon) ->  
+PH Pio V. Corpus ->  
+PH Paracale ->  
+PH Pigkawayan ->  
+PH Pagagawan ->  
+PH Placer (Masbate) ->  
+PH Pilar (Bataan) ->  
+PH Plaridel (Quezon) ->  
+PH Parang (Sulu) ->  
+PH Paglat ->  
+PH Pahamuddin ->  
+PH Polillo ->  
+PH Pilar (Sorsogon) ->  
+PH Pastrana ->  
+PH Pinabacdao ->  
+PH Palapag ->  
+PH Poona Bayabao ->  
+PH Pintuyan ->  
+PH Patikul ->  
+PH Palompon ->  
+PH Pototan ->  
+PH Pitogo (Quezon) ->  
+PH Payao ->  
+PH President Carlos P. Garcia ->  
+PH Placer (Surigao del Norte) ->  
+PH Pamplona (Camarines Sur) ->  
+PH Peñarrubia ->  
+PH Prieto Diaz ->  
+PH Pola ->  
+PH Piddig ->  
+PH Pandag ->  
+PH Puerto Galera ->  
+PH Polomolok ->  
+PH Pandi ->  
+PH Pila ->  
+PH Pura ->  
+PH Poona Piagapo ->  
+PH Panglao ->  
+PH Quezon (Nueva Vizcaya) ->  
+PH Pilar (Capiz) ->  
+PH Pozorrubio ->  
+PH President Quirino ->  
+PH Paniqui ->  
+PH Quinapondan ->  
+PH Pili ->  
+PH Pantar ->  
+PH Prosperidad ->  
+PH Pinamungajan ->  
+PH Rajah Buayan ->  
+PH Paombong ->  
+PH Pugo ->  
+PH Rapu-Rapu ->  
+PH Pio Duran ->  
+PH Parang (Maguindanao) ->  
+PH Quezon (Bukidnon) ->  
+PH Piñan ->  
+PH Rizal (Cagayan) ->  
+PH Pasil ->  
+PH Quezon (Palawan) ->  
+PH Plaridel (Misamis Occidental) ->  
+PH Quirino (Ilocos Sur) ->  
+PH Polangui ->  
+PH Rizal (Occidental Mindoro) ->  
+PH Pateros ->  
+PH Ronda ->  
+PH Ramon ->  
+PH Pontevedra (Negros Occidental) ->  
+PH Pavia ->  
+PH Real ->  
+PH Poro ->  
+PH Rosario (Cavite) ->  
+PH Peñaranda ->  
+PH Rizal (Kalinga) ->  
+PH Roxas (Isabela) ->  
+PH Presentacion ->  
+PH Picong ->  
+PH Rizal (Zamboanga del Norte) ->  
+PH Sablan ->  
+PH President Roxas (Cotabato) ->  
+PH Pikit ->  
+PH Rosales ->  
+PH Rosario (La Union) ->  
+PH Sagada ->  
+PH Pudtol ->  
+PH Pilar (Bohol) ->  
+PH Roxas (Oriental Mindoro) ->  
+PH Saguiaran ->  
+PH Pulupandan ->  
+PH Pilar (Surigao del Norte) ->  
+PH Salcedo (Eastern Samar) ->  
+PH Quezon (Nueva Ecija) ->  
+PH Sablayan ->  
+PH Pinamalayan ->  
+PH Pinukpuk ->  
+PH Salvador ->  
+PH Pitogo (Zamboanga del Sur) ->  
+PH Sagay ->  
+PH Plaridel (Bulacan) ->  
+PH Sampaloc ->  
+PH Quezon City -> Quezon City Government 0
+PH Sagñay ->  
+PH Salcedo (Ilocos Sur) ->  
+PH Polanco ->  
+PH San Andres (Catanduanes) ->  
+PH Ragay ->  
+PH Salvador Benedicto ->  
+PH Pontevedra (Capiz) ->  
+PH San Antonio (Nueva Ecija) ->  
+PH Ramos ->  
+PH San Agustin (Isabela) ->  
+PH Porac ->  
+PH San Andres (Quezon) ->  
+PH San Clemente ->  
+PH Remedios T. Romualdez ->  
+PH San Enrique (Negros Occidental) ->  
+PH Pres. Manuel A. Roxas ->  
+PH San Antonio (Quezon) ->  
+PH Rizal (Nueva Ecija) ->  
+PH Romblon ->  
+PH San Dionisio ->  
+PH President Roxas (Capiz) ->  
+PH San Fernando (Bukidnon) ->  
+PH Rosario (Batangas) ->  
+PH San Esteban ->  
+PH Pualas ->  
+PH San Fernando (Romblon) ->  
+PH Roseller Lim ->  
+PH San Fernando (Camarines Sur) ->  
+PH Pulilan ->  
+PH San Francisco (Southern Leyte) ->  
+PH Sabangan ->  
+PH San Francisco (Agusan del Sur) ->  
+PH Quezon (Isabela) ->  
+PH San Ildefonso (Bulacan) ->  
+PH Sadanga ->  
+PH San Francisco (Surigao del Norte) ->  
+PH Quezon (Quezon) ->  
+PH Saguday ->  
+PH San Isidro (Davao Oriental) ->  
+PH San Ildefonso (Ilocos Sur) ->  
+PH Salay ->  
+PH San Isidro (Nueva Ecija) ->  
+PH Quirino (Isabela) ->  
+PH San Isidro (Isabela) ->  
+PH Ramon Magsaysay ->  
+PH San Joaquin ->  
+PH Salug ->  
+PH San Isidro (Surigao del Norte) ->  
+PH San Jose (Camarines Sur) ->  
+PH Reina Mercedes ->  
+PH Samboan ->  
+PH San Jorge ->  
+PH Rizal (Laguna) ->  
+PH San Jose (Occidental Mindoro) ->  
+PH San Agustin (Surigao del Sur) ->  
+PH San Jose (Dinagat Islands) ->  
+PH Rodriguez ->  
+PH San Jose De Buan ->  
+PH San Antonio (Northern Samar) ->  
+PH San Benito ->  
+PH San Jose (Romblon) ->  
+PH Rosario (Agusan del Sur) ->  
+PH San Juan (La Union) ->  
+PH San Juan (Abra) ->  
+PH San Enrique (Iloilo) ->  
+PH San Juan (Siquijor) ->  
+PH Rosario (Northern Samar) ->  
+PH San Felipe ->  
+PH San Leonardo ->  
+PH San Lorenzo ->  
+PH San Luis (Aurora) ->  
+PH Roxas (Palawan) ->  
+PH San Fernando (Masbate) ->  
+PH San Luis (Batangas) ->  
+PH Sabtang ->  
+PH San Manuel (Pangasinan) ->  
+PH San Francisco (Quezon) ->  
+PH San Manuel (Tarlac) ->  
+PH Sagbayan ->  
+PH San Mateo (Isabela) ->  
+PH San Guillermo ->  
+PH San Mateo (Rizal) ->  
+PH Saint Bernard ->  
+PH San Miguel (Iloilo) ->  
+PH San Miguel (Catanduanes) ->  
+PH San Isidro (Bohol) ->  
+PH Sallapadan ->  
+PH San Narciso (Quezon) ->  
+PH San Miguel (Zamboanga del Sur) ->  
+PH San Nicolas (Pangasinan) ->  
+PH San Isidro (Northern Samar) ->  
+PH Samal ->  
+PH San Pascual (Masbate) ->  
+PH San Nicolas (Ilocos Norte) ->  
+PH San Jacinto (Pangasinan) ->  
+PH San Agustin (Romblon) ->  
+PH San Pascual (Batangas) ->  
+PH San Rafael (Bulacan) ->  
+PH San Jose (Batangas) ->  
+PH San Andres (Romblon) ->  
+PH San Jose (Northern Samar) ->  
+PH San Quintin (Pangasinan) ->  
+PH San Ricardo ->  
+PH San Jose City ->  
+PH San Antonio (Zambales) ->  
+PH San Teodoro ->  
+PH San Emilio ->  
+PH San Remigio (Cebu) ->  
+PH San Juan (Ilocos Sur) ->  
+PH San Vicente (Palawan) ->  
+PH San Fabian ->  
+PH San Simon ->  
+PH San Julian ->  
+PH San Vicente (Northern Samar) ->  
+PH Santa Ana (Pampanga) ->  
+PH San Luis (Agusan del Sur) ->  
+PH San Fernando (Cebu) ->  
+PH San Manuel (Isabela) ->  
+PH Santa Ana (Cagayan) ->  
+PH Santa Catalina (Negros Oriental) ->  
+PH San Francisco (Cebu) ->  
+PH San Mariano ->  
+PH Santa Catalina (Ilocos Sur) ->  
+PH San Miguel (Bulacan) ->  
+PH Santa Cruz (Marinduque) ->  
+PH San Gabriel ->  
+PH Santa Cruz (Laguna) ->  
+PH San Miguel (Surigao del Sur) ->  
+PH Santa Fe (Cebu) ->  
+PH Santa Elena ->  
+PH San Isidro (Abra) ->  
+PH San Nicolas (Batangas) ->  
+PH Santa Ignacia ->  
+PH Santa Fe (Romblon) ->  
+PH Santa Marcela ->  
+PH San Isidro (Leyte) ->  
+PH San Pablo (Zamboanga del Sur) ->  
+PH Santa Magdalena ->  
+PH Santa Maria (Ilocos Sur) ->  
+PH Santa Maria (Davao Occidental) ->  
+PH Santa Maria (Pangasinan) ->  
+PH San Jacinto (Masbate) ->  
+PH San Quintin (Abra) ->  
+PH Santa Maria (Romblon) ->  
+PH Santa Rita (Pampanga) ->  
+PH San Jose (Antique) ->  
+PH San Remigio (Antique) ->  
+PH Santa Rita (Samar (Western)) ->  
+PH San Jose (Negros Oriental) ->  
+PH Santa Teresita (Cagayan) ->  
+PH San Jose (Tarlac) ->  
+PH San Sebastian ->  
+PH Santander ->  
+PH Santo Domingo (Albay) ->  
+PH Santo Domingo (Ilocos Sur) ->  
+PH San Juan (Batangas) ->  
+PH San Vicente (Ilocos Sur) ->  
+PH Santo Niño (Samar (Western)) ->  
+PH Santo Tomas (La Union) ->  
+PH Santa -> Sangguniang Bayan - Santa Ilocos Sur 0
+PH Santo Niño (South Cotabato) ->  
+PH San Juan (Southern Leyte) ->  
+PH Sapad ->  
+PH Santa Barbara (Pangasinan) ->  
+PH San Lorenzo Ruiz ->  
+PH Santo Tomas (Pangasinan) ->  
+PH Santa Cruz (Ilocos Sur) ->  
+PH Sarangani ->  
+PH San Luis (Pampanga) ->  
+PH Sapang Dalaga ->  
+PH Santa Cruz (Zambales) ->  
+PH Sawata ->  
+PH Sariaya ->  
+PH San Marcelino ->  
+PH San Miguel (Bohol) ->  
+PH Santa Fe (Nueva Vizcaya) ->  
+PH Sergio Osmeña Sr. ->  
+PH Science City of Muñoz ->  
+PH Siasi ->  
+PH San Miguel (Leyte) ->  
+PH Santa Lucia ->  
+PH Sevilla ->  
+PH Sibagat ->  
+PH Santa Maria (Bulacan) ->  
+PH San Narciso (Zambales) ->  
+PH Sibulan ->  
+PH Siaton ->  
+PH San Pablo (Isabela) ->  
+PH Sierra Bullones ->  
+PH Santa Maria (Laguna) ->  
+PH Sibalom ->  
+PH Santa Praxedes ->  
+PH Silago ->  
+PH San Policarpo ->  
+PH Sibunag ->  
+PH San Rafael (Iloilo) ->  
+PH Sinacaban ->  
+PH Santa Teresita (Batangas) ->  
+PH Santiago (Ilocos Sur) ->  
+PH Sigay ->  
+PH Siocon ->  
+PH San Roque ->  
+PH Santo Niño (Cagayan) ->  
+PH San Vicente (Camarines Norte) ->  
+PH Siruma ->  
+PH Silang ->  
+PH Socorro (Oriental Mindoro) ->  
+PH Santo Tomas (Isabela) ->  
+PH Sanchez Mira ->  
+PH Sinait ->  
+PH Sogod (Southern Leyte) ->  
+PH Santa Barbara (Iloilo) ->  
+PH Sapa-Sapa ->  
+PH Santa Cruz (Davao del Sur) ->  
+PH Sipocot ->  
+PH Sominot ->  
+PH Sara ->  
+PH Santa Cruz (Occidental Mindoro) ->  
+PH Sison (Pangasinan) ->  
+PH Sasmuan ->  
+PH Sual ->  
+PH Santa Fe (Leyte) ->  
+PH Socorro (Surigao del Norte) ->  
+PH Sen. Ninoy Aquino ->  
+PH Sugpon ->  
+PH Santa Josefa ->  
+PH Shariff Saydona Mustapha ->  
+PH Sultan Kudarat ->  
+PH Solana ->  
+PH Sumilao ->  
+PH Santa Margarita ->  
+PH Siayan ->  
+PH South Ubian ->  
+PH Santa Maria (Isabela) ->  
+PH T'Boli ->  
+PH Sibuco ->  
+PH Subic ->  
+PH Santa Monica ->  
+PH Sulat ->  
+PH Tabogon ->  
+PH Santa Rosa ->  
+PH Sibutu ->  
+PH Sultan Mastura ->  
+PH Tadian ->  
+PH Santiago (Agusan del Norte) ->  
+PH Sikatuna ->  
+PH Sumisip ->  
+PH Santo Domingo (Nueva Ecija) ->  
+PH Tagbina ->  
+PH Simunul ->  
+PH Taal ->  
+PH Tagoloan (Misamis Oriental) ->  
+PH Siniloan ->  
+PH Santo Tomas (Davao del Norte) ->  
+PH Tabontabon ->  
+PH Talaingod ->  
+PH Santol ->  
+PH Sirawai ->  
+PH Taft ->  
+PH Talayan ->  
+PH Sapi-An ->  
+PH Sitangkai ->  
+PH Tagkawayan ->  
+PH Sarrat ->  
+PH Talisay (Camarines Norte) ->  
+PH Talusan ->  
+PH Sogod (Cebu) ->  
+PH Tagoloan II ->  
+PH Sebaste ->  
+PH Shariff Aguak ->  
+PH Talakag ->  
+PH Tampilisan ->  
+PH Solsona ->  
+PH Siay ->  
+PH Tangalan ->  
+PH Talibon ->  
+PH Sto. Tomas ->  
+PH Sibonga ->  
+PH Tanza ->  
+PH Talisayan ->  
+PH Tarangnan ->  
+PH Sibutad ->  
+PH Sugbongcogon ->  
+PH Taytay (Palawan) ->  
+PH Tambulig ->  
+PH Sigma ->  
+PH Silvino Lobos ->  
+PH Sultan Dumalondong ->  
+PH Teresa ->  
+PH Tanauan ->  
+PH Tigaon ->  
+PH Sindangan ->  
+PH Sultan Sa Barongis ->  
+PH Tangcal ->  
+PH Tineg ->  
+PH Suyo ->  
+PH Siquijor ->  
+PH Tapaz ->  
+PH Tipo-Tipo ->  
+PH Tabina ->  
+PH Sison (Surigao del Norte) ->  
+PH Tarragona ->  
+PH Toboso ->  
+PH Sofronio Española ->  
+PH Taytay (Rizal) ->  
+PH Tabuelan ->  
+PH Torrijos ->  
+PH Ternate ->  
+PH Tagapul-An ->  
+PH Solano ->  
+PH Tuba ->  
+PH Tigbao ->  
+PH Tagoloan (Lanao del Norte) ->  
+PH Tubay ->  
+PH South Upi ->  
+PH Sudipen ->  
+PH Talacogon ->  
+PH Tinglayan ->  
+PH Talavera ->  
+PH Titay ->  
+PH Sulop ->  
+PH Talisay (Batangas) ->  
+PH Tolosa ->  
+PH Tubod (Lanao del Norte) -> Municipality of Tubod 0
+PH Talugtug ->  
+PH Sultan Naga Dimaporo ->  
+PH Trento ->  
+PH Tuburan (Cebu) ->  
+PH Tamparan ->  
+PH Tubajon ->  
+PH Tandubas ->  
+PH Surallah ->  
+PH Tubigon ->  
+PH Tanudan ->  
+PH Tuguegarao City ->  
+PH Tumauini ->  
+PH Taraka ->  
+PH Tubod (Surigao del Norte) ->  
+PH Tabango ->  
+PH Turtle Islands ->  
+PH Ungkaya Pukan ->  
+PH Taysan ->  
+PH Tabuan-Lasa ->  
+PH Tudela (Cebu) ->  
+PH Tayum ->  
+PH Uson ->  
+PH Tagana-An ->  
+PH Tugunan ->  
+PH Valencia (Negros Oriental) ->  
+PH Tibiao ->  
+PH Tinambac ->  
+PH Tunga ->  
+PH Tago ->  
+PH Victoria (Laguna) ->  
+PH Tinoc ->  
+PH Tobias Fornier ->  
+PH Tagudin ->  
+PH Tuy ->  
+PH Tongkil ->  
+PH Talalora ->  
+PH Viga ->  
+PH Talipao ->  
+PH Tuao ->  
+PH Unisan ->  
+PH Tubaran ->  
+PH Talitay ->  
+PH Villasis ->  
+PH Tubo ->  
+PH Tampakan ->  
+PH Vintar ->  
+PH Tanay ->  
+PH Uyugan ->  
+PH Tuburan (Basilan) ->  
+PH Zamboanguita ->  
+PH Tantangan ->  
+PH Valladolid ->  
+PH Tugaya ->  
+PH Tapul ->  
+PH Victoria (Northern Samar) ->  
+PH Tulunan ->  
+PH Tayasan ->  
+PH Tupi ->  
+PH Villaba ->  
+PH Tayug ->  
+PH Umingan ->  
+PH Tiaong ->  
+PH Villaverde ->  
+PH Urbiztondo ->  
+PH Tigbauan ->  
+PH Vinzons ->  
+PH Tingloy ->  
+PH Valencia (Bohol) ->  
+PH Zaragoza ->  
+PH Tiwi ->  
+PH Veruela ->  
+PH Tomas Oppus ->  
+PH Victoria (Tarlac) ->  
+PH Trinidad ->  
+PH Tubao ->  
+PH Villareal ->  
+PH Vincenzo A. Sagun ->  
+PH Tublay ->  
+PH Wao ->  
+PH Tubungan ->  
+PH Zumarraga ->  
+PH Tudela (Misamis Occidental) ->  
+PH Tukuran ->  
+PH Tungawan ->  
+PH Ubay ->  
+PH Upi ->  
+PH Valderrama ->  
+PH Vallehermoso ->  
+PH Victoria (Oriental Mindoro) ->  
+PH Villanueva ->  
+PH Villaviciosa ->  
+PH Virac ->  
+PH Zarraga ->  
+
+---
