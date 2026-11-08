@@ -309,6 +309,8 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
         w.writerows(sorted(report, key=lambda r: (r[5] != "not matched", r[1], r[0])))
     matched = sum(1 for r in report if r[3])
     print(f"{len(districts)} districts; {matched} of {len(places)} CivicSearch places matched")
+    import fill_us_locales   # districts NCES gives no locale: the county's most common one, as an estimate
+    print(fill_us_locales.apply(out_path), "districts given an estimated locale")
 
 
 TERRITORIES = {"PR", "GU", "VI", "AS", "MP"}

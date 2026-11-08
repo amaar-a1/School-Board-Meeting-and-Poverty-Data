@@ -21,6 +21,7 @@ Both:
 Usage: python3 data-prep/build_latam.py
 """
 import csv, json, os, re, sys, unicodedata
+from collections import Counter
 import openpyxl
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from geo_area import area_km2
@@ -319,7 +320,7 @@ def write(cc, key, rows, feats):
     cols = ["District", "Region", "Locale", "Available Board Meetings", "Meetings type", "Meetings source", "Latest meeting", "Meetings by year",
             "Population", "Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
-    extra = [c for c in ("Province", "Autonomous community", "Children under 18 (estimated)", "Poverty year", "Poverty range", "Poverty rate (region, all ages)",
+    extra = [c for c in ("Province", "Autonomous community", "Children under 18 (estimated)", "Poverty year", "Poverty range", "Poverty rate (region, all ages)", ES_EST,
                          "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households") if any(r.get(c) not in (None, "") for r in rows)]
     pov = "Percentage of Children in Low Income" if any(r.get("Percentage of Children in Low Income") for r in rows) else "Poverty rate (all ages)"
     cols = [c for c in cols if c not in ("Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)") or any(r.get(c) not in (None, "") for r in rows)]
@@ -327,7 +328,8 @@ def write(cc, key, rows, feats):
     for c in ("Autonomous community", "Province"):
         if c in cols: cols.remove(c); cols.insert(cols.index("Region") + 1, c)
     # Spain's regional stand-in rate goes near the end, out of the summary figures (the first number columns).
-    if "Poverty rate (region, all ages)" in cols: cols.remove("Poverty rate (region, all ages)"); cols.insert(len(cols) - 1, "Poverty rate (region, all ages)")
+    for c in ("Poverty rate (region, all ages)", ES_EST):
+        if c in cols: cols.remove(c); cols.insert(len(cols) - 1, c)
     # Newer borders for places the main borders file lacks (districts and municipalities created since), checked to lie
     # inside the place they were made from: inputs/<country>/extra_borders.geojson.
     xf = os.path.join(IN, DIRS.get(cc, key), "extra_borders.geojson")
@@ -344,12 +346,25 @@ def write(cc, key, rows, feats):
                 if not r.get("Locale") and area and pop:
                     r["Locale"] = loc(pop / area)
                     if "People per km² (estimated)" in r: r["People per km² (estimated)"] = round(pop / area)
+    # Places still without a locale (no population or no border to measure): the most common locale in their
+    # region, as an estimate, said so in a column of its own.
+    known = {}
+    for r in rows:
+        if r.get("Locale"): known.setdefault(r.get("Region"), Counter())[r["Locale"]] += 1
+    for r in rows:
+        if not r.get("Locale") and known.get(r.get("Region")):
+            r["Locale"] = known[r.get("Region")].most_common(1)[0][0]
+            r["Locale note"] = f"Locale estimated: no population or border to measure, so it's the most common locale in {r.get('Region')}"
+    if any(r.get("Locale note") for r in rows) and "Locale note" not in cols: cols.insert(len(cols) - 1, "Locale note")
     rows.sort(key=lambda r: r["District"])
     with open(os.path.join(DOCS, f"{key}.csv"), "w", newline="", encoding="utf-8") as fo:
         w = csv.DictWriter(fo, fieldnames=cols, restval="", extrasaction="ignore"); w.writeheader(); w.writerows(rows)
     json.dump({"type": "FeatureCollection", "features": feats}, open(os.path.join(DOCS, "map", f"{key}.json"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
     print(cc, len(rows), "rows; poverty", sum(1 for r in rows if r.get(pov)), "; enrollment", sum(1 for r in rows if r.get("Enrollment")),
           "; meetings", sum(1 for r in rows if r["Available Board Meetings"]), "; no border", [r["District"] for r in rows if not r.get("_geo")][:10])
+
+
+ES_EST = "Child low-income rate (estimated from its province)"
 
 
 def toint(v):
@@ -710,6 +725,17 @@ def spain():
         got = adm_match("ES", rows_, cand, adm1, st)
         for k, v in got.items():
             if v and id(v["_f"]) not in {id(g) for g in geo.values()}: geo[k] = v["_f"]
+    # INE leaves out small municipalities' child figure. Estimate for each: the child low-income rate of the
+    # province's other small municipalities (under 10,000 people) that have a figure, weighted by their children;
+    # all of the province's municipalities with a figure if fewer than 3 small ones have one.
+    latest = {c: v[max(v)] for c, v in pov.items() if v}
+    weight = lambda c: (float(dem[c].get("pop") or 0) * (dem[c].get("pct18") or 18) / 100) or 1
+    prov_est = {}
+    for pr in {c[:2] for c in dem}:
+        have = [c for c in latest if c[:2] == pr and c in dem]
+        small = [c for c in have if float(dem[c].get("pop") or 0) < 10000]
+        use = small if len(small) >= 3 else have
+        if use: prov_est[pr] = (sum(latest[c] * weight(c) for c in use) / sum(weight(c) for c in use), len(use), use is small)
     rows, feats = [], []
     for code, x in sorted(dem.items()):
         parts = es_parts(x["name"]); name = " / ".join(parts)
@@ -722,8 +748,12 @@ def spain():
         rows.append({"District": name, "_names": parts, "Region": ES_PROV[code[:2]], "Autonomous community": ES_CCAA[code[:2]], "Population": people or "",
                      "Percentage of Children in Low Income": f"{p[y]:.1f}%" if p else "", "Poverty year": y,
                      "Poverty by year": "; ".join(f"{k}:{v:.1f}" for k, v in sorted(p.items())),
-                     "Poverty rate (region, all ages)": "" if p else f"{reg[ES_NUTS2[ES_CCAA[code[:2]]]][0]:.1f}%",
+                     ES_EST: "" if p or code[:2] not in prov_est else f"{prov_est[code[:2]][0]:.1f}%",
+                     "Poverty rate (region, all ages)": "" if p or code[:2] in prov_est else f"{reg[ES_NUTS2[ES_CCAA[code[:2]]]][0]:.1f}%",
                      "Poverty note": "People under 18 in households below 60% of the national median income per consumption unit (INE, household income atlas)" if p else
+                         (f"No child figure: INE leaves out small municipalities. Estimated from {ES_PROV[code[:2]]}'s {prov_est[code[:2]][1]} "
+                          f"{'smaller municipalities (under 10,000 people)' if prov_est[code[:2]][2] else 'municipalities'} that have one (same measure, weighted by their children)")
+                         if code[:2] in prov_est else
                          f"No child figure: INE leaves out small municipalities. In its place, {ES_CCAA[code[:2]]}'s overall poverty rate (all ages, below 60% of the national median income; Eurostat, {reg[ES_NUTS2[ES_CCAA[code[:2]]]][1]})",
                      "Children under 18 (estimated)": kids, "School system": f"{ES_CCAA[code[:2]]} education department",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})

@@ -76,7 +76,7 @@
     const r = picked.row;
     $("find-input").value = r.District;
     const povCol = [POV, "Percentage of Children Ages 0-17 in Low Income", "Percentage of Children Under 16 in Low Income", "Percentage of Children in Low Income",
-      "Poverty rate or stand-in", "Poverty rate (region, all ages)", "Unemployment rate (stand-in for poverty)"].find((c) => String(r[c] ?? "").trim() !== "");
+      "Poverty rate or stand-in", "Poverty rate (region, all ages)", "Child low-income rate (estimated from its province)", "Unemployment rate (stand-in for poverty)"].find((c) => String(r[c] ?? "").trim() !== "");
     const us = povCol === POV;
     const pov = num(r[povCol]), meet = num(r[MEET]), enr = num(r.Enrollment), kids = num(r["Children Ages 5-17"]);
     const note = [r.Notes || r["Poverty figures"], r["Other meetings source"] && `Other meetings: ${r["Other meetings source"]}`].filter(Boolean).join(". ");
