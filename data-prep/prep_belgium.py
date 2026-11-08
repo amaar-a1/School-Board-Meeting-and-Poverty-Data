@@ -84,6 +84,17 @@ def main(dirs):
                 if not c: continue
                 tot = sum(int(r[j]) for r in rows[head + 1:] if r[0] and isinstance(r[j], (int, float)) and not str(r[0]).startswith(("Région", "Total")))
                 out[c][key] = tot; out[c]["pupils_year"] = year
+    # Pupils, Flanders: the Flemish education department's enrolments by school site (Dataloep, 1 February 2025),
+    # summed on the runner by the site's municipality: nursery and primary, ordinary and special (vl_pupils_2425.json).
+    # Brussels's Dutch-language schools are in it too, but Brussels already has both languages' figures from IBSA. A
+    # Flemish municipality missing from it has no school (Herstappe).
+    files = [f for d in dirs for f in glob.glob(os.path.join(d, "vl_pupils_*.json"))]
+    if files:
+        vl = json.load(open(files[0], encoding="utf-8"))
+        for c, m in out.items():
+            if m["region_nl"] != "Vlaams Gewest": continue
+            p = vl["pupils"].get(c, {})
+            m["nursery"], m["primary"], m["pupils_year"] = p.get("nursery", 0), p.get("primary", 0), "2024-25"
     json.dump(out, open(os.path.join(IN, "be_data.json"), "w", encoding="utf-8"), ensure_ascii=False)
     print(len(out), "municipalities;", sum(1 for m in out.values() if m.get("pop")), "with population;", sum(1 for m in out.values() if m.get("income_per_return")), "with income;",
           sum(1 for m in out.values() if "primary" in m), "with pupils")

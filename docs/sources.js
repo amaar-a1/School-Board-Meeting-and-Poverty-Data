@@ -333,6 +333,9 @@ window.SOURCES = [
       { title: "Income: Statbel, fiscal statistics on income by municipality (TF_PSNL_INC_TAX_MUNTY), 2023", url: "https://statbel.fgov.be/en/open-data/fiscal-statistics-income" },
       { title: "Population and children under 18: Statbel, population by place of residence and age (TF_SOC_POP_STRUCT_2025)", url: "https://statbel.fgov.be/en/open-data" },
       { title: "Municipality codes and names: Statbel, REFNIS code list (1 January 2025)", url: "https://statbel.fgov.be/en/open-data/code-refnis-0" },
+      { title: "Pupils, Flanders: Flemish education department, Dataloep enrolments by school site, 1 February 2025 (nursery and primary, ordinary and special)", url: "https://opendata.dataplatform-onderwijs.vlaanderen.be/dataloep/inschrijvingen-leerplicht-instellingen-dataset-2024-2025-1feb.csv" },
+      { title: "Pupils, Wallonia and the German-speaking municipalities: IWEPS WalStat, pupils enrolled in nursery and primary schools by municipality, 2024", url: "https://www.odwb.be/explore/dataset/243300/" },
+      { title: "Pupils, Brussels: IBSA, origin and destination of pupils by municipality (tables 6.3.2.2 and 6.3.2.3), 2023-24", url: "https://ibsa.brussels/themes/enseignement/origine-destination-des-eleves" },
       { title: "Borders: Eurostat GISCO Local Administrative Units (LAU) 2024, merged into the 2025 municipalities with mapshaper", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
       { title: "Meetings: each municipality's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
     ],
