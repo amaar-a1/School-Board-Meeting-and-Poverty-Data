@@ -290,6 +290,17 @@ window.SOURCES = [
     note: "Built by data-prep/prep_italy.py and data-prep/build_latam.py. Comuni are matched to borders and figures by their ISTAT code."
   },
   {
+    only: "Poland",
+    group: "Poland: gminy, low income and pupils",
+    items: [
+      { title: "Children on family benefit: Statistics Poland, Local Data Bank (BDL), variable 259889: share of children aged 0-17 whose parents receive the family benefit, 2024", url: "https://bdl.stat.gov.pl/bdl/start" },
+      { title: "Social assistance: Statistics Poland, Local Data Bank (BDL), variable 1548717: beneficiaries of community social assistance per 10,000 people, 2024", url: "https://bdl.stat.gov.pl/bdl/start" },
+      { title: "Borders, population and density: Eurostat GISCO Local Administrative Units (LAU) 2024, simplified with mapshaper", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
+      { title: "Meetings: each council's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/build_latam.py. Gminy are matched to borders by their Statistics Poland unit code."
+  },
+  {
     only: "Ecuador",
     group: "Ecuador: cantons, poverty, population and pupils",
     items: [

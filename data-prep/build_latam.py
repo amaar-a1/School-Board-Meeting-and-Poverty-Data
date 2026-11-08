@@ -321,7 +321,7 @@ def write(cc, key, rows, feats):
             "Population", "Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
     extra = [c for c in ("Province", "Autonomous community", "Children under 18 (estimated)", "Poverty year", "Poverty range", "Poverty rate (region, all ages)", ES_EST,
-                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)") if any(r.get(c) not in (None, "") for r in rows)]
+                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)") if any(r.get(c) not in (None, "") for r in rows)]
     pov = "Percentage of Children in Low Income" if any(r.get("Percentage of Children in Low Income") for r in rows) else "Poverty rate (all ages)"
     cols = [c for c in cols if c not in ("Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)") or any(r.get(c) not in (None, "") for r in rows)]
     cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
@@ -867,6 +867,50 @@ def italy():
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
     write("IT", "italy", rows, feats)
+
+
+PL_VOIV = {"02": "Dolnośląskie", "04": "Kujawsko-pomorskie", "06": "Lubelskie", "08": "Lubuskie", "10": "Łódzkie", "12": "Małopolskie",
+           "14": "Mazowieckie", "16": "Opolskie", "18": "Podkarpackie", "20": "Podlaskie", "22": "Pomorskie", "24": "Śląskie",
+           "26": "Świętokrzyskie", "28": "Warmińsko-mazurskie", "30": "Wielkopolskie", "32": "Zachodniopomorskie"}
+PL_KIND = {"1": "urban gmina", "2": "rural gmina", "3": "urban-rural gmina"}
+
+
+def poland():
+    """2,477 municipalities (gminy), which run their nursery and primary schools. The town council (rada gminy or
+    rada miejska) is the elected body; since 2018 every council must record its sessions and publish the
+    recordings. Poverty: the share of children aged 0-17 whose parents receive the means-tested family benefit
+    (zasiłek rodzinny), 2024 (Statistics Poland, Local Data Bank)."""
+    d = os.path.join(IN, "poland")
+    bdl = json.load(open(os.path.join(d, "pl_bdl_2024.json"), encoding="utf-8"))
+    pup_f = os.path.join(d, "pl_pupils.json")
+    pup = json.load(open(pup_f, encoding="utf-8")) if os.path.exists(pup_f) else {}
+    geo = {f["properties"]["GISCO_ID"][5:]: f for f in json.load(open(os.path.join(d, "lau_PL.geojson"), encoding="utf-8"))["features"]}
+    names, vals = bdl["names"], bdl["values"]
+    units = [u for u in names if u[-1] in PL_KIND]
+    dup = Counter((u[2:4], names[u]) for u in units)
+    rows, feats = [], []
+    for u in sorted(units, key=lambda u: names[u]):
+        f = geo.get(u[:-1]); p = f["properties"] if f else {}
+        # Statistics Poland's names carry notes ("M.st.Warszawa od 2002", "Wałbrzych od 2013").
+        base = re.sub(r"\s+od \d{4}$", "", names[u]).replace("M.st.Warszawa", "Warszawa")
+        name = base + (f" ({PL_KIND[u[-1]]})" if dup[(u[2:4], names[u])] > 1 else "")
+        share = vals.get("259889", {}).get(u, {}); kids = vals.get("259888", {}).get(u, {}); sa = vals.get("1548717", {}).get(u, {})
+        y = max(share) if share else ""
+        pop = int(p["POP_2024"]) if p.get("POP_2024") else ""
+        dens = p.get("POP_DENS_2024") or 0
+        did = f"PL-{u}"
+        enr = pup.get(u, "")
+        rows.append({"District": name, "Region": PL_VOIV.get(u[2:4], ""), "Population": pop,
+                     "Percentage of Children in Low Income": f"{share[y]:.1f}%" if share else "", "Poverty year": y,
+                     "Poverty note": "Share of children aged 0-17 whose parents receive the means-tested family benefit (zasiłek rodzinny), "
+                                     f"{y} (Statistics Poland, Local Data Bank)" if share else "",
+                     "Children on family benefit": round(kids[max(kids)]) if kids else "",
+                     "Social assistance (% of people)": f"{sa[max(sa)] / 100:.1f}%" if sa else "",
+                     "Enrollment": enr, "Enrollment year": "2024-25 (primary schools)" if enr != "" else "",
+                     "School system": f"Gmina ({PL_KIND[u[-1]]})",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
+        if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    write("PL", "poland", rows, feats)
 
 
 EC_PROV_CAPS = {}
