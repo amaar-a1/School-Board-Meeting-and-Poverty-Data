@@ -279,6 +279,8 @@ CHECKED = {"PE": {k: _PE + v for k, v in {
 FR_FOREIGN = re.compile(r"municipalit[ée]|qu[ée]bec|\bqc\b|belgique|suisse|\bcanton\b|\bcom\.?\s*com", re.I)
 FR_JOIN = {"de", "du", "des", "d", "sur", "sous", "les", "lez", "en", "la", "le", "aux", "au", "et"}
 FR_BEFORE = {"de", "d", "du", "ville", "mairie", "commune", "cite", "officiel", "conseil", "municipal", "ma", "agglo", "metropole", "hotel"}
+# Poland: county councils (powiat, starostwo), youth councils and councillors' own channels aren't the gmina council.
+PL_NOT_OWN = re.compile(r"powiat|starostw|m[lł]odzie[zż]|radn[ya]\b|radnego|radnej|senior", re.I)
 FOREIGN = re.compile(r"deliberante|distrital de carmen alto|municipalidad distrital|provincial", re.I)   # Argentina's and Peru's councils
 
 
@@ -305,7 +307,14 @@ def owners(cc, rows):
         abbr = {a for a in re.findall(r"(?:[-/(–]\s*|\s)([A-Z]{2})\b\)?\s*$", raw.strip())} if cc == "BR" else set()
         def score(r):
             alts = [words(x).strip() for x in r.get("_names") or [r["District"]]]   # Spain: "Alacant / Alicante"
+            if cc == "PL":   # "(rural gmina)" isn't in channel names
+                alts = [re.sub(r" (urban|rural|urban rural) gmina$", "", a) for a in alts]
             nm = next((a for a in alts if " " + a + " " in ch), "")
+            if not nm and cc == "PL":
+                # Polish channels use other cases of the name: "Rada m.st. Warszawy", "Rada Miejska w Łodzi", "Rada Miasta Krakowa"
+                stem = lambda w: w[:max(4, len(w) - 2)]
+                nm = next((a for a in alts if all(any(c.startswith(stem(w)) and len(c) <= len(w) + 3 for c in ch.split()) for w in a.split())), "")
+            if cc == "PL" and PL_NOT_OWN.search(raw): return -1
             if not nm: return -1
             if cc == "FRA":
                 # French names are often the start of a longer one (Saint-Joseph-du-Lac, Saint-Paul-lès-Dax) or the end of
