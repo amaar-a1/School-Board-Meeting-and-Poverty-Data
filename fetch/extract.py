@@ -1,17 +1,16 @@
-# Temporary: Croatia, from the Ministry of Regional Development: the World Bank / DZS poverty-map report and the 2024
-# development index with its indicators (unemployment rate, income per inhabitant) for every city and municipality.
-import os, urllib.parse, urllib.request
-OUT = "fetch/out/hr2"; os.makedirs(OUT, exist_ok=True)
+# Temporary: Croatia poverty map, World Bank copies.
+import json, os, urllib.request
+OUT = "fetch/out/hr3"; os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
 log = open(f"{OUT}/log.txt", "w")
-q = lambda u: urllib.parse.quote(u, safe=":/%?=&")
-for name, u in {"wb_sae.pdf": "https://razvoj.gov.hr/UserDocsImages/Istaknute%20teme/Kartom%20siroma%C5%A1tva/Croatia%20Small-Area%20Estimation%20of%20Consumption-Based%20Poverty%20(Poverty%20Maps).pdf",
-                "ir_2024.pdf": q("https://razvoj.gov.hr/UserDocsImages/O ministarstvu/Regionalni razvoj/indeks razvijenosti/Vrijednosti indeksa razvijenosti i pokazatelja za izračun indeksa razvijenosti.pdf"),
-                "ir_page.html": "https://razvoj.gov.hr/o-ministarstvu/regionalni-razvoj/indeks-razvijenosti/112",
-                "kartom.html": "https://razvoj.gov.hr/istaknute-teme/kartom-siromastva/3949",
-                "dzs_en.pdf": "https://web.dzs.hr/Eng/important/PressCorner/Mapping%20and%20estimation%20of%20the%20geographical%20distribution%20of%20risk%20of%20poverty%20and%20social%20exclusion%20for%20small%20areas%20of%20the%20Republic%20of%20Croatia.pdf"}.items():
+for name, u in {"wb_page.html": "https://www.worldbank.org/en/country/croatia/publication/croatia-poverty-maps",
+                "wb_brief.html": "https://www.worldbank.org/en/country/croatia/brief/croatia-poverty-maps-a-policy-tool-to-combat-poverty-and-social-exclusion",
+                "md7891.html": "https://microdata.worldbank.org/catalog/7891/related-materials",
+                "md_search.json": "https://microdata.worldbank.org/index.php/api/catalog/search?sk=croatia%20poverty%20map&ps=50",
+                "dc_search.json": "https://datacatalogapi.worldbank.org/ddhxext/Search?qname=dataset&qterm=croatia%20poverty%20map&$top=20",
+                "infographic.html": "https://www.worldbank.org/en/news/infographic/2016/10/19/croatia-mapping-poverty"}.items():
     try:
-        with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=300) as r: b = r.read()
+        with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=180) as r: b = r.read()
         open(f"{OUT}/{name}", "wb").write(b); log.write(f"ok {name} {len(b)}\n")
     except Exception as e: log.write(f"ERR {name} {str(e)[:150]}\n")
 log.close()
