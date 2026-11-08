@@ -1,27 +1,28 @@
-# Temporary: Philippines. Border repo file list (faeldon/philippines-json-maps, latest), PSA OpenSTAT poverty tables by
-# region/province (metadata and 2021 data), and the HDX COD administrative boundaries' resource list.
-import json, os, urllib.request
-OUT = "fetch/out/ph4"; os.makedirs(OUT, exist_ok=True)
+# Temporary: Philippines. Every province's (and NCR district's) city and municipality borders from
+# faeldon/philippines-json-maps (latest, low resolution), merged and simplified with mapshaper; PSA OpenSTAT table 2a
+# (poverty incidence among population by region, province and highly urbanized city: 2018, 2021, 2023).
+import json, os, subprocess, time, urllib.request
+OUT = "fetch/out/ph5"; os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
 log = open(f"{OUT}/log.txt", "w")
 def get(u, data=None, t=300):
     req = urllib.request.Request(u, headers={**UA, **({"Content-Type": "application/json"} if data else {})}, data=data)
     with urllib.request.urlopen(req, timeout=t) as r: return r.read()
-try:
-    root = json.loads(get("https://api.github.com/repos/faeldon/philippines-json-maps/git/trees/master"))
-    sha = next(t["sha"] for t in root["tree"] if t["path"] == "latest")
-    tree = json.loads(get(f"https://api.github.com/repos/faeldon/philippines-json-maps/git/trees/{sha}?recursive=1"))
-    paths = [t["path"] for t in tree["tree"]]
-    json.dump(paths, open(f"{OUT}/latest_tree.json", "w")); log.write(f"tree {len(paths)} {paths[:30]}\n")
-except Exception as e: log.write(f"ERR tree {str(e)[:200]}\n")
-for tid in ("0023C3DP020.px", "0013C3DP010.px"):
+paths = [p for p in json.load(open("fetch/out/ph4/latest_tree.json")) if p.startswith("geojson/provdists/lowres/municities-provdist-")]
+feats = []
+for p in paths:
     try:
-        u = f"https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/3D/{tid}"
-        meta = json.loads(get(u)); json.dump(meta, open(f"{OUT}/{tid}_meta.json", "w"))
-        q = {"query": [], "response": {"format": "json-stat2"}}
-        open(f"{OUT}/{tid}_data.json", "wb").write(get(u, json.dumps(q).encode())); log.write(f"ok {tid}\n")
-    except Exception as e: log.write(f"ERR {tid} {str(e)[:200]}\n")
+        g = json.loads(get(f"https://raw.githubusercontent.com/faeldon/philippines-json-maps/master/latest/{p}"))
+        feats += g["features"]; time.sleep(0.2)
+    except Exception as e: log.write(f"ERR {p} {str(e)[:100]}\n")
+log.write(f"features {len(feats)} {feats[0]['properties'] if feats else ''}\n")
+json.dump({"type": "FeatureCollection", "features": feats}, open("/tmp/ph_all.json", "w"))
+subprocess.run("npm install -g mapshaper >/dev/null 2>&1", shell=True)
+r = subprocess.run(["mapshaper", "/tmp/ph_all.json", "-simplify", "25%", "keep-shapes", "-o", f"{OUT}/ph_municities.json", "format=geojson", "precision=0.0005"], capture_output=True, text=True)
+log.write(f"mapshaper {r.returncode} {r.stderr[-300:]}\n")
 try:
-    open(f"{OUT}/openstat_1F_FY.json", "wb").write(get("https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/1F/FY")); log.write("ok 1F/FY\n")
-except Exception as e: log.write(f"ERR 1F/FY {e}\n")
+    u = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/1F/FY/0041F3DF02A.px"
+    json.dump(json.loads(get(u)), open(f"{OUT}/t2a_meta.json", "w"))
+    open(f"{OUT}/t2a_data.json", "wb").write(get(u, json.dumps({"query": [], "response": {"format": "json-stat2"}}).encode())); log.write("ok t2a\n")
+except Exception as e: log.write(f"ERR t2a {str(e)[:200]}\n")
 log.close()
