@@ -1,0 +1,17 @@
+Metadata/2021Census_geog_desc_1st_2nd_3rd_release.xlsx
+Metadata/2021_GCP_Sequential_Template_R2.xlsx
+Metadata/Metadata_2021_GCP_DataPack_R1_R2.xlsx
+Readme/2021AboutDataPacks_readme.txt
+Readme/2021Formats_readme.txt
+Readme/2021POA_readme.txt
+Readme/CreativeCommons_Licensing_readme.txt
+Readme/esri_arcmap_readme.txt
+Readme/mapinfo_Shp_readme.txt
+Readme/Summary_of_changes.txt
+2021 Census GCP Local Government Areas for AUS/2021Census_G01_AUST_LGA.csv
+2021 Census GCP Local Government Areas for AUS/2021Census_G02_AUST_LGA.csv
+saved 2021Census_G01_AUST_LGA.csv
+saved 2021Census_G02_AUST_LGA.csv
+saved 2021Census_G04A_AUST_LGA.csv
+saved 2021Census_G04B_AUST_LGA.csv
+saved 2021Census_G15_AUST_LGA.csv
