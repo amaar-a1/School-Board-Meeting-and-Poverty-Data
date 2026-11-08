@@ -1,0 +1,558 @@
+HR Antunovac ->  
+HR Andrijaševci ->  
+HR Babina Greda ->  
+HR Bale - Valle ->  
+HR Barban ->  
+HR Bakar -> Grad Bakar - Sjednice Gradskog vijeća 0
+HR Baška ->  
+HR Baška Voda ->  
+HR Barilović ->  
+HR Bedekovčina ->  
+HR Bedenica ->  
+HR Bebrina ->  
+HR Beli Manastir ->  
+HR Belica ->  
+HR Bednja ->  
+HR Benkovac ->  
+HR Berek ->  
+HR Belišće -> Prozračimo Belišće TV - Karol Jurišić 0
+HR Bibinje -> Općina Bibinje 0
+HR Bilice -> Općina Bilice 0
+HR Beretinec ->  
+HR Biograd Na Moru ->  
+HR Biskupija ->  
+HR Bilje ->  
+HR Bizovac ->  
+HR Bistra ->  
+HR Bogdanovci ->  
+HR Bjelovar -> Grad Bjelovar 0
+HR Bosiljevo ->  
+HR Bol ->  
+HR Blato -> Općina Blato 0
+HR Brdovec ->  
+HR Bošnjaci ->  
+HR Borovo ->  
+HR Breznica ->  
+HR Brela ->  
+HR Brckovljani ->  
+HR Brod Moravice ->  
+HR Brestovac ->  
+HR Budinščina ->  
+HR Breznički Hum -> Općina Breznički Hum 0
+HR Brinje ->  
+HR Brodski Stupnik ->  
+HR Brtonigla - Verteneglio ->  
+HR Buzet -> Grad Buzet 0
+HR Buje - Buie ->  
+HR Bukovlje ->  
+HR Cerovlje ->  
+HR Cerna ->  
+HR Cernik ->  
+HR Cista Provo ->  
+HR Cestica ->  
+HR Cetingrad ->  
+HR Civljane ->  
+HR Cres ->  
+HR Crnac ->  
+HR Darda ->  
+HR Davor ->  
+HR Dekanovec ->  
+HR Crikvenica -> Internet Televizija Grad Crikvenica 0
+HR Dežanovac ->  
+HR Desinić ->  
+HR Daruvar ->  
+HR Domašinec ->  
+HR Dobrinj ->  
+HR Delnice ->  
+HR Donja Stubica ->  
+HR Donja Motičina ->  
+HR Dicmo ->  
+HR Donji Kraljevec ->  
+HR Donja Dubrava ->  
+HR Donji Andrijevci ->  
+HR Donji Miholjac ->  
+HR Donja Voća ->  
+HR Donji Lapac ->  
+HR Draganić ->  
+HR Dragalić ->  
+HR Donji Kukuruzari ->  
+HR Drenovci ->  
+HR Drenje ->  
+HR Donji Vidovec ->  
+HR Dubrava ->  
+HR Drnje ->  
+HR Draž ->  
+HR Dubrovačko Primorje ->  
+HR Drniš ->  
+HR Dugi Rat ->  
+HR Dubravica ->  
+HR Dubrovnik -> PR Grad Dubrovnik 0
+HR Dvor ->  
+HR Duga Resa ->  
+HR Dugo Selo ->  
+HR Ervenik ->  
+HR Dugopolje ->  
+HR Erdut ->  
+HR Ferdinandovac ->  
+HR Farkaševac ->  
+HR Ernestinovo ->  
+HR Fužine ->  
+HR Feričanci ->  
+HR Fažana - Fasana ->  
+HR Garčin ->  
+HR Funtana - Fontane ->  
+HR Galovac ->  
+HR Gola ->  
+HR Garešnica ->  
+HR Generalski Stol ->  
+HR Gornja Rijeka ->  
+HR Goričan ->  
+HR Gornji Bogićevci ->  
+HR Glina -> Grad Glina 0
+HR Gornja Stubica ->  
+HR Gospić ->  
+HR Gorjani ->  
+HR Gornji Kneginec ->  
+HR Gornja Vrba ->  
+HR Gradec ->  
+HR Grad Zagreb ->  
+HR Gornji Mihaljevec ->  
+HR Gračac ->  
+HR Gradina ->  
+HR Gradac ->  
+HR Grubišno Polje ->  
+HR Gračišće ->  
+HR Gradište ->  
+HR Gvozd ->  
+HR Gundinci ->  
+HR Grožnjan - Grisignana ->  
+HR Hrašćina ->  
+HR Hercegovac ->  
+HR Gunja ->  
+HR Hrvatska Kostajnica ->  
+HR Hrvace ->  
+HR Hlebine ->  
+HR Ilok ->  
+HR Hum Na Sutli ->  
+HR Hrvatska Dubica ->  
+HR Imotski ->  
+HR Hvar ->  
+HR Ivankovo ->  
+HR Ivanić-Grad -> Ivanić-Grad 0
+HR Jakovlje ->  
+HR Ivanec -> Grad Ivanec 0
+HR Jagodnjak ->  
+HR Janjina ->  
+HR Ivanska ->  
+HR Jalžabet ->  
+HR Jasenovac ->  
+HR Jakšić ->  
+HR Jasenice ->  
+HR Jelsa ->  
+HR Jarmina ->  
+HR Jelenje ->  
+HR Kali ->  
+HR Josipdol ->  
+HR Kamanje ->  
+HR Kalnik ->  
+HR Kaptol ->  
+HR Jastrebarsko -> Grad Jastrebarsko 0
+HR Kapela ->  
+HR Karojba ->  
+HR Jesenje ->  
+HR Kaštelir-Labinci - Castelliere-S. Domenica ->  
+HR Kalinovac -> Općina Kalinovac 0
+HR Karlovac -> Grad Karlovac 0
+HR Klakar ->  
+HR Kanfanar ->  
+HR Klenovnik ->  
+HR Karlobag ->  
+HR Kloštar Ivanić ->  
+HR Kaštela -> Grad Kaštela 0
+HR Kistanje ->  
+HR Kastav -> Grad Kastav 0
+HR Knin -> Grad Knin 0
+HR Klanjec ->  
+HR Kijevo ->  
+HR Konavle ->  
+HR Klana ->  
+HR Klinča Sela ->  
+HR Klis -> Općina Klis 0
+HR Koprivnica -> Grad Koprivnica 0
+HR Kloštar Podravski ->  
+HR Kneževi Vinogradi ->  
+HR Korčula ->  
+HR Kolan ->  
+HR Komiža ->  
+HR Koška ->  
+HR Konjščina ->  
+HR Končanica ->  
+HR Krapina ->  
+HR Koprivnički Bregi ->  
+HR Koprivnički Ivanec ->  
+HR Krašić ->  
+HR Kostrena ->  
+HR Kotoriba ->  
+HR Krk ->  
+HR Kraljevec Na Sutli ->  
+HR Kraljevica ->  
+HR Kukljica ->  
+HR Krapinske Toplice ->  
+HR Kravarsko ->  
+HR Križevci ->  
+HR Kutina -> Grad Kutina 0
+HR Križ -> Općina Križ 0
+HR Kršan ->  
+HR Lanišće ->  
+HR Krnjak ->  
+HR Kumrovec ->  
+HR Legrad ->  
+HR Kula Norinska ->  
+HR Levanjska Varoš ->  
+HR Kutjevo ->  
+HR Labin -> Grad Labin 0
+HR Lipovljani ->  
+HR Lasinja ->  
+HR Lastovo ->  
+HR Ljubešćica ->  
+HR Lekenik ->  
+HR Lokvičići ->  
+HR Lećevica ->  
+HR Lovinac ->  
+HR Lišane Ostrovičke ->  
+HR Lepoglava -> Grad Lepoglava 0
+HR Lobor ->  
+HR Ludbreg -> Grad Ludbreg 0
+HR Lipik ->  
+HR Lopar ->  
+HR Lumbarda ->  
+HR Ližnjan - Lisignano ->  
+HR Lovran ->  
+HR Majur ->  
+HR Lokve ->  
+HR Mali Bukovec ->  
+HR Lovas ->  
+HR Luka -> Općina Vela Luka 0
+HR Marija Bistrica ->  
+HR Lovreć ->  
+HR Lupoglav ->  
+HR Lukač ->  
+HR Marina -> Opcina Marina 0
+HR Magadenovac ->  
+HR Martinska Ves ->  
+HR Makarska -> Grad Makarska 0
+HR Mala Subotica ->  
+HR Malinska-Dubašnica ->  
+HR Mali Lošinj -> Grad Mali Lošinj 0
+HR Matulji -> Općina Matulji 0
+HR Marijanci ->  
+HR Marija Gorica ->  
+HR Martijanec ->  
+HR Markušica ->  
+HR Metković -> Grad Metković 0
+HR Marčana ->  
+HR Maruševec ->  
+HR Milna ->  
+HR Medulin ->  
+HR Mače ->  
+HR Motovun - Montona ->  
+HR Mikleuš ->  
+HR Mihovljan ->  
+HR Mursko Središće ->  
+HR Molve ->  
+HR Mljet ->  
+HR Mrkopalj ->  
+HR Mošćenička Draga ->  
+HR Muć ->  
+HR Murter - Kornati ->  
+HR Negoslavci ->  
+HR Nedelišće ->  
+HR Našice -> TV Našice 0
+HR Nijemci ->  
+HR Netretić ->  
+HR Nerežišća ->  
+HR Nova Bukovica ->  
+HR Nin ->  
+HR Nova Gradiška -> Grad Nova Gradiška 0
+HR Nova Kapela ->  
+HR Nova Rača ->  
+HR Novalja ->  
+HR Novi Golubovec ->  
+HR Novi Vinodolski ->  
+HR Novi Marof -> GRAD NOVI MAROF 0
+HR Novigrad -> Općina Novigrad Podravski 0
+HR Novigrad - Cittanova ->  
+HR Novigrad Podravski -> Općina Novigrad Podravski 0
+HR Novo Virje ->  
+HR Novska ->  
+HR Obrovac ->  
+HR Nuštar -> Općina Nuštar 0
+HR Okučani ->  
+HR Ogulin -> Grad Ogulin 0
+HR Okrug -> Opcina Okrug 0
+HR Omiš ->  
+HR Oprisavci ->  
+HR Omišalj ->  
+HR Opatija -> Grad Opatija - Sjednice Gradskog vijeća 0
+HR Orahovica ->  
+HR Oprtalj - Portole ->  
+HR Opuzen ->  
+HR Oriovac ->  
+HR Orebić ->  
+HR Orehovica ->  
+HR Orle ->  
+HR Oroslavje -> Grad Oroslavje 0
+HR Otok ->  
+HR Osijek -> Grad Osijek 0
+HR Ozalj ->  
+HR Otok ->  
+HR Otočac ->  
+HR Pakrac ->  
+HR Pag ->  
+HR Pakoštane ->  
+HR Perušić ->  
+HR Pašman ->  
+HR Petrijanec ->  
+HR Petlovac ->  
+HR Pazin -> Grad Pazin uživo 0
+HR Petrovsko ->  
+HR Pitomača ->  
+HR Petrinja -> Grad Petrinja 0
+HR Peteranec -> Općina Peteranec 0
+HR Pleternica ->  
+HR Pisarovina ->  
+HR Petrijevci ->  
+HR Plaški ->  
+HR Pirovac ->  
+HR Podbablje -> Opcina Podbablje 0
+HR Ploče ->  
+HR Pićan ->  
+HR Podgorač ->  
+HR Podstrana ->  
+HR Podgora -> Općina Podgora 0
+HR Plitvička Jezera -> Općina Plitvička Jezera 0
+HR Pokupsko ->  
+HR Podravske Sesvete ->  
+HR Podcrkavlje ->  
+HR Pojezerje ->  
+HR Popovac ->  
+HR Podravska Moslavina ->  
+HR Poličnik ->  
+HR Posedarje ->  
+HR Podturen -> Općina Podturen 0
+HR Poreč - Parenzo -> GRAD POREČ-PARENZO 0
+HR Požega -> Grad Požega 0
+HR Polača ->  
+HR Povljana ->  
+HR Popovača ->  
+HR Preko ->  
+HR Prelog -> Grad Prelog 0
+HR Postira ->  
+HR Prgomet ->  
+HR Pribislavec ->  
+HR Pregrada ->  
+HR Privlaka ->  
+HR Preseka ->  
+HR Primošten -> Općina Primošten 0
+HR Promina ->  
+HR Primorski Dolac ->  
+HR Proložac ->  
+HR Punitovci ->  
+HR Privlaka ->  
+HR Rab ->  
+HR Punat -> Općina Punat 0
+HR Rakovica ->  
+HR Pušća ->  
+HR Raša ->  
+HR Ribnik ->  
+HR Rakovec ->  
+HR Rovinj - Rovigno ->  
+HR Ravna Gora ->  
+HR Runovići ->  
+HR Rešetari ->  
+HR Sali ->  
+HR Rogoznica ->  
+HR Pula - Pola -> Grad Pula 0
+HR Rugvica ->  
+HR Seget -> Opcina Seget 0
+HR Saborsko ->  
+HR Pučišća ->  
+HR Semeljci ->  
+HR Radoboj ->  
+HR Satnica Đakovačka ->  
+HR Sibinj ->  
+HR Rasinja ->  
+HR Selnica ->  
+HR Sirač ->  
+HR Ražanac ->  
+HR Severin ->  
+HR Skradin ->  
+HR Slavonski Šamac ->  
+HR Rijeka -> Grad Rijeka - Gradska vijećnica 0
+HR Rovišće ->  
+HR Sinj -> Grad Sinj 0
+HR Smokvica -> Općinsko Vijeće Smokvica 0
+HR Ružić ->  
+HR Skrad ->  
+HR Sopje ->  
+HR Samobor ->  
+HR Stankovci ->  
+HR Selca ->  
+HR Stari Jankovci ->  
+HR Senj -> Grad Senj 0
+HR Staro Petrovo Selo ->  
+HR Sikirevci ->  
+HR Strizivojna ->  
+HR Suhopolje ->  
+HR Sisak -> Grad Sisak 0
+HR Supetar ->  
+HR Slatina ->  
+HR Sveta Marija ->  
+HR Slivno ->  
+HR Sveti Filip I Jakov ->  
+HR Sokolovac ->  
+HR Slavonski Brod -> SBTV-Slavonski Brod 0
+HR Sveti Ivan Žabno ->  
+HR Split ->  
+HR Sveti Lovreč ->  
+HR Stara Gradiška ->  
+HR Slunj -> Grad Slunj 0
+HR Sveti Petar U Šumi ->  
+HR Stari Mikanovci ->  
+HR Tar-Vabriga - Torre-Abrega ->  
+HR Ston ->  
+HR Solin -> Grad Solin 0
+HR Tkon ->  
+HR Stubičke Toplice ->  
+HR Sračinec ->  
+HR Tordinci ->  
+HR Sukošan ->  
+HR Sutivan ->  
+HR Stari Grad -> Općinsko vijeće Stari Grad Sarajevo 0
+HR Tribunj -> Općina Tribunj 0
+HR Starigrad ->  
+HR Trnovec Bartolovečki ->  
+HR Sveta Nedelja -> Grad Sveta Nedelja 0
+HR Strahoninec ->  
+HR Trpinja ->  
+HR Sveti Ilija ->  
+HR Stupnik ->  
+HR Udbina ->  
+HR Sveti Juraj Na Bregu ->  
+HR Sunja ->  
+HR Sveti Martin Na Muri ->  
+HR Valpovo -> Grad Valpovo 0
+HR Sućuraj ->  
+HR Sveti Đurđ ->  
+HR Sveta Nedelja -> Grad Sveta Nedelja 0
+HR Tinjan ->  
+HR Vela Luka -> Općina Vela Luka 0
+HR Sveti Ivan Zelina ->  
+HR Tompojevci ->  
+HR Velika Kopanica ->  
+HR Tounj ->  
+HR Sveti Križ Začretje ->  
+HR Velika Trnovitica ->  
+HR Sveti Petar Orehovec ->  
+HR Veliko Trgovišće ->  
+HR Viljevo ->  
+HR Svetvinčenat ->  
+HR Trilj -> GRAD TRILJ 0
+HR Vinodolska Općina ->  
+HR Tisno ->  
+HR Virovitica ->  
+HR Topusko ->  
+HR Trogir -> Grad Trogir 0
+HR Viškovci ->  
+HR Tovarnik ->  
+HR Tuhelj ->  
+HR Vižinada - Visinada ->  
+HR Trnava ->  
+HR Trpanj ->  
+HR Umag - Umago -> Grad Umag 0
+HR Vodnjan - Dignano -> Grad Vodnjan Citta di Dignano 0
+HR Vođinci ->  
+HR Tučepi -> Općina Tučepi 0
+HR Varaždin -> Grad Varaždin 0
+HR Vrbje ->  
+HR Unešić ->  
+HR Velika ->  
+HR Varaždinske Toplice ->  
+HR Velika Ludina ->  
+HR Velika Gorica ->  
+HR Vrbovsko -> Grad Vrbovsko 0
+HR Veliki Bukovec ->  
+HR Velika Pisanica ->  
+HR Vrlika ->  
+HR Veliko Trojstvo ->  
+HR Veliki Grđevac ->  
+HR Vrsi ->  
+HR Vinica ->  
+HR Vidovec ->  
+HR Zabok ->  
+HR Zagorska Sela ->  
+HR Vir -> Općina Vir 0
+HR Vinkovci -> Grad Vinkovci 0
+HR Zažablje ->  
+HR Vis ->  
+HR Virje ->  
+HR Zlatar ->  
+HR Zrinski Topolovac ->  
+HR Viškovo -> Općina Viškovo 0
+HR Čakovec ->  
+HR Vladislavci ->  
+HR Čačinci ->  
+HR Vojnić ->  
+HR Vratišinec ->  
+HR Čepin -> Općina Čepin 0
+HR Vrbnik ->  
+HR Đulovac ->  
+HR Vrgorac ->  
+HR Đurđevac ->  
+HR Šestanovac ->  
+HR Vrpolje -> Općina Vrpolje 0
+HR Šodolovci ->  
+HR Vuka ->  
+HR Štefanje ->  
+HR Zadar ->  
+HR Žakanje ->  
+HR Zagvozd ->  
+HR Zdenci ->  
+HR Župa Dubrovačka -> Općina Župa Dubrovačka 0
+HR Zlatar Bistrica ->  
+HR Čabar ->  
+HR Čavle ->  
+HR Čađavica ->  
+HR Đakovo ->  
+HR Đurmanec ->  
+HR Šandrovac ->  
+HR Šibenik -> Grad Šibenik 0
+HR Šolta ->  
+HR Štitar ->  
+HR Žminj ->  
+HR Županja -> Grad Županja - Službeni kanal 0
+HR Visoko -> RTV Visoko 1
+HR Višnjan - Visignano ->  
+HR Vodice -> Grad Vodice 0
+HR Voćin ->  
+HR Vrbanja ->  
+HR Vrbovec -> Grad Vrbovec 0
+HR Vrhovine ->  
+HR Vrsar - Orsera ->  
+HR Vukovar ->  
+HR Zadvarje ->  
+HR Zaprešić ->  
+HR Zemunik Donji ->  
+HR Zmijavci ->  
+HR Čaglin ->  
+HR Čazma ->  
+HR Čeminac ->  
+HR Đelekovec ->  
+HR Đurđenovac ->  
+HR Šenkovec ->  
+HR Škabrnja ->  
+HR Špišić Bukovica ->  
+HR Štrigova ->  
+HR Žumberak ->  
+
+---
