@@ -1,0 +1,7 @@
+ok 83698NED DataProperties 2750
+ERR 83698NED TypedDataSet HTTP Error 500: The given query is not allowed on this table. Please redefine your query so that it returns less than 10000 records.
+ok 83698NED dims
+ok 84732NED DataProperties 1112
+ok 84732NED TypedDataSet 614983
+ok 84732NED dims
+ok ssb

@@ -1,0 +1,37 @@
+{
+  "odata.metadata":"https://opendata.cbs.nl/ODataApi/OData/83698NED/$metadata#Cbs.OData.WebAPI.Perioden","value":[
+    {
+      "Key":"2011JJ00","Title":"2011","Description":"","Status":"Definitief"
+    },{
+      "Key":"2012JJ00","Title":"2012","Description":"","Status":"Definitief"
+    },{
+      "Key":"2013JJ00","Title":"2013","Description":"","Status":"Definitief"
+    },{
+      "Key":"2014JJ00","Title":"2014","Description":"","Status":"Definitief"
+    },{
+      "Key":"2015JJ00","Title":"2015","Description":"","Status":"Definitief"
+    },{
+      "Key":"2016JJ00","Title":"2016","Description":"","Status":"Definitief"
+    },{
+      "Key":"2017JJ00","Title":"2017","Description":null,"Status":"Definitief"
+    },{
+      "Key":"2018JJ00","Title":"2018","Description":null,"Status":"Definitief"
+    },{
+      "Key":"2019JJ00","Title":"2019","Description":null,"Status":"Definitief"
+    },{
+      "Key":"2020JJ00","Title":"2020","Description":null,"Status":"Definitief"
+    },{
+      "Key":"2021JJ00","Title":"2021","Description":null,"Status":"Definitief"
+    },{
+      "Key":"2022JJ00","Title":"2022","Description":null,"Status":"Definitief"
+    },{
+      "Key":"2023JJ00","Title":"2023","Description":null,"Status":"Definitief"
+    },{
+      "Key":"2024JJ00","Title":"2024","Description":null,"Status":"Definitief"
+    },{
+      "Key":"2025JJ00","Title":"2025","Description":null,"Status":"Definitief"
+    },{
+      "Key":"2026JJ00","Title":"2026","Description":null,"Status":"Definitief"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "odata.metadata":"https://opendata.cbs.nl/ODataApi/OData/84732NED/$metadata#Cbs.OData.WebAPI.CategoryGroups","value":[
+    {
+      "ID":0,"DimensionKey":"LeerlingEnStudentkenmerken","Title":"Primair onderwijs","Description":null,"ParentID":null
+    },{
+      "ID":1,"DimensionKey":"LeerlingEnStudentkenmerken","Title":"Leeftijd","Description":null,"ParentID":0
+    },{
+      "ID":2,"DimensionKey":"LeerlingEnStudentkenmerken","Title":"Voortgezet onderwijs en mbo","Description":null,"ParentID":null
+    },{
+      "ID":3,"DimensionKey":"LeerlingEnStudentkenmerken","Title":"Voortgezet onderwijs en mbo","Description":null,"ParentID":2
+    }
+  ]
+}

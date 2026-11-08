@@ -1,0 +1,261 @@
+{
+  "odata.metadata":"https://opendata.cbs.nl/ODataApi/OData/83698NED/$metadata#Cbs.OData.WebAPI.Leeftijd","value":[
+    {
+      "Key":"10000","Title":"Totaal","Description":"","CategoryGroupID":1
+    },{
+      "Key":"10010","Title":"0 jaar","Description":"","CategoryGroupID":3
+    },{
+      "Key":"10100","Title":"1 jaar","Description":"","CategoryGroupID":3
+    },{
+      "Key":"10200","Title":"2 jaar","Description":"","CategoryGroupID":3
+    },{
+      "Key":"10300","Title":"3 jaar","Description":"","CategoryGroupID":3
+    },{
+      "Key":"10400","Title":"4 jaar","Description":"","CategoryGroupID":3
+    },{
+      "Key":"10500","Title":"5 jaar","Description":"","CategoryGroupID":3
+    },{
+      "Key":"10600","Title":"6 jaar","Description":"","CategoryGroupID":3
+    },{
+      "Key":"10700","Title":"7 jaar","Description":"","CategoryGroupID":3
+    },{
+      "Key":"10800","Title":"8 jaar","Description":"","CategoryGroupID":3
+    },{
+      "Key":"10900","Title":"9 jaar","Description":"","CategoryGroupID":3
+    },{
+      "Key":"11000","Title":"10 jaar","Description":"","CategoryGroupID":4
+    },{
+      "Key":"11100","Title":"11 jaar","Description":"","CategoryGroupID":4
+    },{
+      "Key":"11200","Title":"12 jaar","Description":"","CategoryGroupID":4
+    },{
+      "Key":"11300","Title":"13 jaar","Description":"","CategoryGroupID":4
+    },{
+      "Key":"11400","Title":"14 jaar","Description":"","CategoryGroupID":4
+    },{
+      "Key":"11500","Title":"15 jaar","Description":"","CategoryGroupID":4
+    },{
+      "Key":"11600","Title":"16 jaar","Description":"","CategoryGroupID":4
+    },{
+      "Key":"11700","Title":"17 jaar","Description":"","CategoryGroupID":4
+    },{
+      "Key":"11800","Title":"18 jaar","Description":"","CategoryGroupID":4
+    },{
+      "Key":"11900","Title":"19 jaar","Description":"","CategoryGroupID":4
+    },{
+      "Key":"12000","Title":"20 jaar","Description":"","CategoryGroupID":5
+    },{
+      "Key":"12100","Title":"21 jaar","Description":"","CategoryGroupID":5
+    },{
+      "Key":"12200","Title":"22 jaar","Description":"","CategoryGroupID":5
+    },{
+      "Key":"12300","Title":"23 jaar","Description":"","CategoryGroupID":5
+    },{
+      "Key":"12400","Title":"24 jaar","Description":"","CategoryGroupID":5
+    },{
+      "Key":"12500","Title":"25 jaar","Description":"","CategoryGroupID":5
+    },{
+      "Key":"12600","Title":"26 jaar","Description":"","CategoryGroupID":5
+    },{
+      "Key":"12700","Title":"27 jaar","Description":"","CategoryGroupID":5
+    },{
+      "Key":"12800","Title":"28 jaar","Description":"","CategoryGroupID":5
+    },{
+      "Key":"12900","Title":"29 jaar","Description":"","CategoryGroupID":5
+    },{
+      "Key":"13000","Title":"30 jaar","Description":"","CategoryGroupID":6
+    },{
+      "Key":"13100","Title":"31 jaar","Description":"","CategoryGroupID":6
+    },{
+      "Key":"13200","Title":"32 jaar","Description":"","CategoryGroupID":6
+    },{
+      "Key":"13300","Title":"33 jaar","Description":"","CategoryGroupID":6
+    },{
+      "Key":"13400","Title":"34 jaar","Description":"","CategoryGroupID":6
+    },{
+      "Key":"13500","Title":"35 jaar","Description":"","CategoryGroupID":6
+    },{
+      "Key":"13600","Title":"36 jaar","Description":"","CategoryGroupID":6
+    },{
+      "Key":"13700","Title":"37 jaar","Description":"","CategoryGroupID":6
+    },{
+      "Key":"13800","Title":"38 jaar","Description":"","CategoryGroupID":6
+    },{
+      "Key":"13900","Title":"39 jaar","Description":"","CategoryGroupID":6
+    },{
+      "Key":"14000","Title":"40 jaar","Description":"","CategoryGroupID":7
+    },{
+      "Key":"14100","Title":"41 jaar","Description":"","CategoryGroupID":7
+    },{
+      "Key":"14200","Title":"42 jaar","Description":"","CategoryGroupID":7
+    },{
+      "Key":"14300","Title":"43 jaar","Description":"","CategoryGroupID":7
+    },{
+      "Key":"14400","Title":"44 jaar","Description":"","CategoryGroupID":7
+    },{
+      "Key":"14500","Title":"45 jaar","Description":"","CategoryGroupID":7
+    },{
+      "Key":"14600","Title":"46 jaar","Description":"","CategoryGroupID":7
+    },{
+      "Key":"14700","Title":"47 jaar","Description":"","CategoryGroupID":7
+    },{
+      "Key":"14800","Title":"48 jaar","Description":"","CategoryGroupID":7
+    },{
+      "Key":"14900","Title":"49 jaar","Description":"","CategoryGroupID":7
+    },{
+      "Key":"15000","Title":"50 jaar","Description":"","CategoryGroupID":8
+    },{
+      "Key":"15100","Title":"51 jaar","Description":"","CategoryGroupID":8
+    },{
+      "Key":"15200","Title":"52 jaar","Description":"","CategoryGroupID":8
+    },{
+      "Key":"15300","Title":"53 jaar","Description":"","CategoryGroupID":8
+    },{
+      "Key":"15400","Title":"54 jaar","Description":"","CategoryGroupID":8
+    },{
+      "Key":"15500","Title":"55 jaar","Description":"","CategoryGroupID":8
+    },{
+      "Key":"15600","Title":"56 jaar","Description":"","CategoryGroupID":8
+    },{
+      "Key":"15700","Title":"57 jaar","Description":"","CategoryGroupID":8
+    },{
+      "Key":"15800","Title":"58 jaar","Description":"","CategoryGroupID":8
+    },{
+      "Key":"15900","Title":"59 jaar","Description":"","CategoryGroupID":8
+    },{
+      "Key":"16000","Title":"60 jaar","Description":"","CategoryGroupID":9
+    },{
+      "Key":"16100","Title":"61 jaar","Description":"","CategoryGroupID":9
+    },{
+      "Key":"16200","Title":"62 jaar","Description":"","CategoryGroupID":9
+    },{
+      "Key":"16300","Title":"63 jaar","Description":"","CategoryGroupID":9
+    },{
+      "Key":"16400","Title":"64 jaar","Description":"","CategoryGroupID":9
+    },{
+      "Key":"16500","Title":"65 jaar","Description":"","CategoryGroupID":9
+    },{
+      "Key":"16600","Title":"66 jaar","Description":"","CategoryGroupID":9
+    },{
+      "Key":"16700","Title":"67 jaar","Description":"","CategoryGroupID":9
+    },{
+      "Key":"16800","Title":"68 jaar","Description":"","CategoryGroupID":9
+    },{
+      "Key":"16900","Title":"69 jaar","Description":"","CategoryGroupID":9
+    },{
+      "Key":"17000","Title":"70 jaar","Description":"","CategoryGroupID":10
+    },{
+      "Key":"17100","Title":"71 jaar","Description":"","CategoryGroupID":10
+    },{
+      "Key":"17200","Title":"72 jaar","Description":"","CategoryGroupID":10
+    },{
+      "Key":"17300","Title":"73 jaar","Description":"","CategoryGroupID":10
+    },{
+      "Key":"17400","Title":"74 jaar","Description":"","CategoryGroupID":10
+    },{
+      "Key":"17500","Title":"75 jaar","Description":"","CategoryGroupID":10
+    },{
+      "Key":"17600","Title":"76 jaar","Description":"","CategoryGroupID":10
+    },{
+      "Key":"17700","Title":"77 jaar","Description":"","CategoryGroupID":10
+    },{
+      "Key":"17800","Title":"78 jaar","Description":"","CategoryGroupID":10
+    },{
+      "Key":"17900","Title":"79 jaar","Description":"","CategoryGroupID":10
+    },{
+      "Key":"18000","Title":"80 jaar","Description":"","CategoryGroupID":11
+    },{
+      "Key":"18100","Title":"81 jaar","Description":"","CategoryGroupID":11
+    },{
+      "Key":"18200","Title":"82 jaar","Description":"","CategoryGroupID":11
+    },{
+      "Key":"18300","Title":"83 jaar","Description":"","CategoryGroupID":11
+    },{
+      "Key":"18400","Title":"84 jaar","Description":"","CategoryGroupID":11
+    },{
+      "Key":"18500","Title":"85 jaar","Description":"","CategoryGroupID":11
+    },{
+      "Key":"18600","Title":"86 jaar","Description":"","CategoryGroupID":11
+    },{
+      "Key":"18700","Title":"87 jaar","Description":"","CategoryGroupID":11
+    },{
+      "Key":"18800","Title":"88 jaar","Description":"","CategoryGroupID":11
+    },{
+      "Key":"18900","Title":"89 jaar","Description":"","CategoryGroupID":11
+    },{
+      "Key":"19000","Title":"90 jaar","Description":"","CategoryGroupID":12
+    },{
+      "Key":"19100","Title":"91 jaar","Description":"","CategoryGroupID":12
+    },{
+      "Key":"19200","Title":"92 jaar","Description":"","CategoryGroupID":12
+    },{
+      "Key":"19300","Title":"93 jaar","Description":"","CategoryGroupID":12
+    },{
+      "Key":"19400","Title":"94 jaar","Description":"","CategoryGroupID":12
+    },{
+      "Key":"19500","Title":"95 jaar","Description":"","CategoryGroupID":12
+    },{
+      "Key":"19600","Title":"96 jaar","Description":"","CategoryGroupID":12
+    },{
+      "Key":"19700","Title":"97 jaar","Description":"","CategoryGroupID":12
+    },{
+      "Key":"19800","Title":"98 jaar","Description":"","CategoryGroupID":12
+    },{
+      "Key":"19900","Title":"99 jaar","Description":"","CategoryGroupID":12
+    },{
+      "Key":"19901","Title":"100 jaar","Description":"","CategoryGroupID":13
+    },{
+      "Key":"19902","Title":"101 jaar","Description":"","CategoryGroupID":13
+    },{
+      "Key":"19903","Title":"102 jaar","Description":"","CategoryGroupID":13
+    },{
+      "Key":"19904","Title":"103 jaar","Description":"","CategoryGroupID":13
+    },{
+      "Key":"19905","Title":"104 jaar","Description":"","CategoryGroupID":13
+    },{
+      "Key":"22300","Title":"105 jaar of ouder","Description":"","CategoryGroupID":13
+    },{
+      "Key":"70100","Title":"0 tot 5 jaar","Description":"","CategoryGroupID":15
+    },{
+      "Key":"70200","Title":"5 tot 10 jaar","Description":"","CategoryGroupID":15
+    },{
+      "Key":"70300","Title":"10 tot 15 jaar","Description":"","CategoryGroupID":15
+    },{
+      "Key":"70400","Title":"15 tot 20 jaar","Description":"","CategoryGroupID":15
+    },{
+      "Key":"70500","Title":"20 tot 25 jaar","Description":"","CategoryGroupID":15
+    },{
+      "Key":"70600","Title":"25 tot 30 jaar","Description":"","CategoryGroupID":15
+    },{
+      "Key":"70700","Title":"30 tot 35 jaar","Description":"","CategoryGroupID":15
+    },{
+      "Key":"70800","Title":"35 tot 40 jaar","Description":"","CategoryGroupID":15
+    },{
+      "Key":"70900","Title":"40 tot 45 jaar","Description":"","CategoryGroupID":15
+    },{
+      "Key":"71000","Title":"45 tot 50 jaar","Description":"","CategoryGroupID":15
+    },{
+      "Key":"71100","Title":"50 tot 55 jaar","Description":"","CategoryGroupID":15
+    },{
+      "Key":"71200","Title":"55 tot 60 jaar","Description":"","CategoryGroupID":15
+    },{
+      "Key":"71300","Title":"60 tot 65 jaar","Description":"","CategoryGroupID":15
+    },{
+      "Key":"71400","Title":"65 tot 70 jaar","Description":"","CategoryGroupID":15
+    },{
+      "Key":"71500","Title":"70 tot 75 jaar","Description":"","CategoryGroupID":15
+    },{
+      "Key":"71600","Title":"75 tot 80 jaar","Description":"","CategoryGroupID":15
+    },{
+      "Key":"71700","Title":"80 tot 85 jaar","Description":"","CategoryGroupID":15
+    },{
+      "Key":"71800","Title":"85 tot 90 jaar","Description":"","CategoryGroupID":15
+    },{
+      "Key":"71900","Title":"90 tot 95 jaar","Description":"","CategoryGroupID":15
+    },{
+      "Key":"72000","Title":"95 tot 100 jaar","Description":"","CategoryGroupID":15
+    },{
+      "Key":"22200","Title":"100 jaar of ouder","Description":null,"CategoryGroupID":15
+    }
+  ]
+}

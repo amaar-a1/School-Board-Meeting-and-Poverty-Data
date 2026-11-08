@@ -1,0 +1,13 @@
+{
+  "odata.metadata":"https://opendata.cbs.nl/ODataApi/OData/84732NED/$metadata#Cbs.OData.WebAPI.CaribischNederland","value":[
+    {
+      "Key":"CN01  ","Title":"Caribisch Nederland","Description":"Caribisch Nederland is de benaming van de Nederlandse eilanden Bonaire, Sint Eustatius en Saba.","CategoryGroupID":null
+    },{
+      "Key":"GM9001","Title":"Bonaire","Description":"Bonaire is sinds 10 oktober 2010 een \"bijzondere gemeente\" van Nederland. Met deze nieuwe status als \"bijzondere gemeente\" is Bonaire officieel erkend als openbaar lichaam van Nederland. Dit is geregeld in de Wet Openbare lichamen BES.","CategoryGroupID":null
+    },{
+      "Key":"GM9002","Title":"Sint Eustatius","Description":"Sint Eustatius is sinds 10 oktober 2010 een \"bijzondere gemeente\" van Nederland. Met deze nieuwe status als \"bijzondere gemeente\" is Sint Eustatius officieel erkend als openbaar lichaam van Nederland. Dit is geregeld in de Wet Openbare lichamen BES.","CategoryGroupID":null
+    },{
+      "Key":"GM9003","Title":"Saba","Description":"Saba is sinds 10 oktober 2010 een \"bijzondere gemeente\" van Nederland. Met deze nieuwe status als \"bijzondere gemeente\" is Saba officieel erkend als openbaar lichaam van Nederland. Dit is geregeld in de Wet Openbare lichamen BES.","CategoryGroupID":null
+    }
+  ]
+}

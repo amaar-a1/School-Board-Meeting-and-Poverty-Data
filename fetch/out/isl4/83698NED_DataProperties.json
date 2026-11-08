@@ -1,0 +1,17 @@
+{
+  "odata.metadata":"https://opendata.cbs.nl/ODataApi/OData/83698NED/$metadata#Cbs.OData.WebAPI.DataProperties","value":[
+    {
+      "odata.type":"Cbs.OData.Dimension","ID":0,"Position":0,"ParentID":null,"Type":"Dimension","Key":"Geslacht","Title":"Geslacht","Description":""
+    },{
+      "odata.type":"Cbs.OData.Dimension","ID":1,"Position":1,"ParentID":null,"Type":"Dimension","Key":"Leeftijd","Title":"Leeftijd","Description":"Het aantal gehele jaren dat op 1 januari van het jaar van waarneming is verstreken sinds de geboortedatum van de persoon.\r\nTe berekenen als jaar van waarneming minus \u00e9\u00e9n, min het geboortejaar van de persoon."
+    },{
+      "odata.type":"Cbs.OData.Dimension","ID":2,"Position":2,"ParentID":null,"Type":"Dimension","Key":"BurgerlijkeStaat","Title":"Burgerlijke staat","Description":"Formele positie van een persoon waarbij wordt verwezen naar het huwelijk en het geregistreerd partnerschap.\r\nPer 1 januari 1998 is het geregistreerd partnerschap ingevoerd. Doorgaans worden het geregistreerd partnerschap en het huwelijk op dezelfde wijze behandeld.\r\n\r\nHuwelijk (wettig):\r\nWettelijke verbintenis tot het samenleven van twee personen.\r\nSinds april 2001 staat het huwelijk ook open voor personen van hetzelfde geslacht. \r\n\r\nGeregistreerd partnerschap:\r\nEen op het huwelijk lijkende relatie tussen twee personen van gelijk of van verschillend geslacht, vastgelegd in een akte van de Burgerlijke Stand. \r\nPer 1 januari 1998 is in Nederland het geregistreerd partnerschap ingevoerd. "
+    },{
+      "odata.type":"Cbs.OData.Dimension","ID":3,"Position":3,"ParentID":null,"Type":"Dimension","Key":"CaribischNederland","Title":"Caribisch Nederland","Description":"Caribisch Nederland is de benaming van de Nederlandse eilanden Bonaire, Sint Eustatius en Saba."
+    },{
+      "odata.type":"Cbs.OData.TimeDimension","ID":4,"Position":4,"ParentID":null,"Type":"TimeDimension","Key":"Perioden","Title":"Perioden","Description":"","ReleasePolicy":false
+    },{
+      "odata.type":"Cbs.OData.Topic","ID":5,"Position":5,"ParentID":null,"Type":"Topic","Key":"BevolkingOp1Januari_1","Title":"Bevolking op 1 januari","Description":"Bevolking:\r\nDe inwoners van een bepaald gebied.\r\nIn de bevolkingsaantallen zijn uitsluitend personen begrepen die zijn opgenomen in het bevolkingsregister van Caribisch Nederland.\r\nIn de bevolkingsregisters zijn niet opgenomen de op Caribisch Nederland wonende personen waarvoor uitzonderingsregels gelden met betrekking tot opneming in de bevolkingsregisters (bijvoorbeeld diplomaten en NAVO-militairen) en personen die niet legaal op Caribisch Nederland verblijven.\r\n","Datatype":"Long","Unit":"aantal","Decimals":0,"Default":"Impossible"
+    }
+  ]
+}

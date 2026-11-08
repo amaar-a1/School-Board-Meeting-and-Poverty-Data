@@ -1,0 +1,37 @@
+{
+  "odata.metadata":"https://opendata.cbs.nl/ODataApi/OData/83698NED/$metadata#Cbs.OData.WebAPI.CategoryGroups","value":[
+    {
+      "ID":0,"DimensionKey":"Leeftijd","Title":"Totaal","Description":"","ParentID":null
+    },{
+      "ID":1,"DimensionKey":"Leeftijd","Title":"Totaal leeftijd","Description":"","ParentID":0
+    },{
+      "ID":2,"DimensionKey":"Leeftijd","Title":"Afzonderlijke leeftijden per 10 jaar","Description":"","ParentID":null
+    },{
+      "ID":3,"DimensionKey":"Leeftijd","Title":"0 tot 10 jaar","Description":"","ParentID":2
+    },{
+      "ID":4,"DimensionKey":"Leeftijd","Title":"10 tot 20 jaar","Description":"","ParentID":2
+    },{
+      "ID":5,"DimensionKey":"Leeftijd","Title":"20 tot 30 jaar","Description":"","ParentID":2
+    },{
+      "ID":6,"DimensionKey":"Leeftijd","Title":"30 tot 40 jaar","Description":"","ParentID":2
+    },{
+      "ID":7,"DimensionKey":"Leeftijd","Title":"40 tot 50 jaar","Description":"","ParentID":2
+    },{
+      "ID":8,"DimensionKey":"Leeftijd","Title":"50 tot 60 jaar","Description":"","ParentID":2
+    },{
+      "ID":9,"DimensionKey":"Leeftijd","Title":"60 tot 70 jaar","Description":"","ParentID":2
+    },{
+      "ID":10,"DimensionKey":"Leeftijd","Title":"70 tot 80 jaar","Description":"","ParentID":2
+    },{
+      "ID":11,"DimensionKey":"Leeftijd","Title":"80 tot 90 jaar","Description":"","ParentID":2
+    },{
+      "ID":12,"DimensionKey":"Leeftijd","Title":"90 tot 100 jaar","Description":"","ParentID":2
+    },{
+      "ID":13,"DimensionKey":"Leeftijd","Title":"100 jaar of ouder","Description":"","ParentID":2
+    },{
+      "ID":14,"DimensionKey":"Leeftijd","Title":"Leeftijdsgroepen","Description":"","ParentID":null
+    },{
+      "ID":15,"DimensionKey":"Leeftijd","Title":"Vijf-jaarsgroepen","Description":"","ParentID":14
+    }
+  ]
+}

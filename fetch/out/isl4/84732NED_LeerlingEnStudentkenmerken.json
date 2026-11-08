@@ -1,0 +1,41 @@
+{
+  "odata.metadata":"https://opendata.cbs.nl/ODataApi/OData/84732NED/$metadata#Cbs.OData.WebAPI.LeerlingEnStudentkenmerken","value":[
+    {
+      "Key":"A025301","Title":"Totaal primair onderwijs","Description":"Totaal leerlingen in het primair onderwijs","CategoryGroupID":1
+    },{
+      "Key":"40000  ","Title":"Jonger dan 5 jaar","Description":"","CategoryGroupID":1
+    },{
+      "Key":"10500  ","Title":"5 jaar","Description":"","CategoryGroupID":1
+    },{
+      "Key":"10600  ","Title":"6 jaar","Description":"","CategoryGroupID":1
+    },{
+      "Key":"10700  ","Title":"7 jaar","Description":"","CategoryGroupID":1
+    },{
+      "Key":"10800  ","Title":"8 jaar","Description":"","CategoryGroupID":1
+    },{
+      "Key":"10900  ","Title":"9 jaar","Description":"","CategoryGroupID":1
+    },{
+      "Key":"11000  ","Title":"10 jaar","Description":"","CategoryGroupID":1
+    },{
+      "Key":"11100  ","Title":"11 jaar","Description":"","CategoryGroupID":1
+    },{
+      "Key":"20100  ","Title":"12 jaar of ouder","Description":"","CategoryGroupID":1
+    },{
+      "Key":"T001578","Title":"Totaal vo, cvq en mbo","Description":"Het totaal van de leerlingen in het voortgezet onderwijs en studenten in het middelbaar beroepsonderwijs op Caribisch Nederland; vanaf 2019/'20 inclusief cvq (Caribbean Vocational Qualification).\r\n\r\nBonaire: het voortgezet onderwijs (vo) en het middelbaar beroepsonderwijs (mbo) op Bonaire is gelijk aan het onderwijssysteem in Nederland. Het vo kent praktijkonderwijs, vmbo, havo en vwo en heeft Nederlands als instructietaal. Daarnaast zijn er speciale lesplaatsen voor kinderen die extra zorg nodig hebben. Op Bonaire is het mogelijk om op alle vier de mbo-niveaus onderwijs te volgen.  \r\n\r\nSaba: op Saba wordt voor het voortgezet onderwijs het Caribisch onderwijssysteem gevolgd, met Engels als instructietaal en Nederlands als sterke vreemde taal. Tot en met 2018/'19 konden leerlingen na een examen in het tweede leerjaar kiezen voor een (voorbereidend) beroepsgericht of academisch programma. Het mbo was vergelijkbaar met het Nederlandse systeem, maar exclusief de niveaus 3 en 4. Vanaf 2019/'20 is overgestapt naar een ander Caribisch systeem voor vo \u00e9n mbo. Dat systeem kent naast het praktijkonderwijs een onderbouw van drie leerjaren. Daarna kan worden gekozen voor twee niveaus van algemeen vormend onderwijs (enigszins vergelijkbaar met vwo en vmbo-t/havo) of een beroepsopleiding (enigszins vergelijkbaar met het mbo).\r\n\r\nSint Eustatius: Tot en met het schooljaar/studiejaar 2015/'16 werd op Sint Eustatius het Nederlandse onderwijssysteem gevolgd. Daarna werd voor het vo geleidelijk een Caribisch onderwijssysteem ingevoerd met Engels als instructietaal. Het mbo bleef nog even zoals in Nederland, maar exclusief de niveaus 3 en 4. Het Caribische systeem bestond, naast het praktijkonderwijs, uit een beroepsgerichte en een algemeen vormende leerweg van elk vier leerjaren. Vanaf 2019/'20 is op Sint Eustatius hetzelfde Caribische onderwijs systeem voor vo \u00e9n mbo ingevoerd als op Saba in datzelfde schooljaar/studiejaar. \r\n","CategoryGroupID":3
+    },{
+      "Key":"A049058","Title":"Totaal vo","Description":"Het totaal van de leerlingen in het voortgezet onderwijs in Caribisch Nederland; exclusief cvq (Caribbean Vocational Qualification).","CategoryGroupID":3
+    },{
+      "Key":"A049059","Title":"Praktijkonderwijs (vo)","Description":"Praktijkonderwijs, inclusief speciale lesplaatsen en exclusief de schakelklassen.\r\n\r\n","CategoryGroupID":3
+    },{
+      "Key":"A049060","Title":"Algemene leerjaren (vo)","Description":"Nederlandse systeem: voortgezet onderwijs leerjaren 1 en 2, inclusief de schakelklassen. Caribische systeem: 'lower forms' (2 cq 3 leerjaren) en leerjaren 1 en 2 van 'lower form vocational' en 'lower form academic' (Sint Eustatius 2015/'16 - 2018/'19).\r\n\r\n\r\n","CategoryGroupID":3
+    },{
+      "Key":"A049061","Title":"Algemeen vormend onderwijs (vo)","Description":"Nederlandse systeem: vmbo-g/t, havo en vwo leerjaar 3 en hoger. Caribisch systeem: 'lower form academc' leerjaar 3 en 4 (Sint Eustatius 2015/'16 - 2018/'19); C(S)EC en CAPE (leerjaar 3 en hoger).  CSEC: Caribbean Secondary Education Certificate, is (met eventueel aanvullende modules) te vergelijken met vmbo-t/havo. CAPE: Caribbean Advanced Proficiency Examination, is (met eventueel aanvullende modules) te vergelijken met vwo.\r\n\r\nVoor Sint Eustatius exclusief alle leerlingen uit de leerjaren 3 en 4 van het vmbo. Dit onderwijselement is niet te onderscheiden in een basisberoepsgerichte  leerweg (vmbo-bk) en een algemeen vormende leerweg (vmbo-t). Vmbo kon, in afbouw, nog tot 2018/'19 worden gevolgd.   \r\n","CategoryGroupID":3
+    },{
+      "Key":"A049062","Title":"Beroepsgericht - vo","Description":"Nederlandse systeem: Leerjaren 3 en 4 van vmbo-beroepsgericht (vmbo-b en vmbo-k). Caribisch systeem: leerjaren 3 en 4 van 'lower form vocational' (Sint Eustatius 2015/'16 - 2018/'19) en Tvet (vanaf leerjaar 3; Saba t/m 2018/'19). Vanaf 2019/'20 kennen Saba en Sint Eustatius eenzelfde Caribisch systeem. Hierbij gaan leerlingen vanuit het derde leerjaar van de 'lower forms' rechtstreeks naar het nieuwe 'cvq' (Caribbean Vocational Qualification). Dit is beroepsonderwijs enigszins te vergelijken met het mbo. Het cvq is daarom niet opgenomen in de categorie\u00ebn van het voortgezet onderwijs.\r\n\r\nVoor Sint Eustatius inclusief alle leerlingen uit de leerjaren 3 en 4 van het vmbo. Dit onderwijselement is niet te onderscheiden in een basisberoepsgerichte  leerweg (vmbo-bk) en een algemeen vormende leerweg (vmbo-t). Vmbo kon, in afbouw, nog tot 2018/'19 worden gevolgd.   \r\n","CategoryGroupID":3
+    },{
+      "Key":"A049063","Title":"Beroepsgericht - cvq","Description":"Vanaf 2019/'20 kennen Saba en Sint Eustatius eenzelfde Caribisch systeem voor beroepsonderwijs, het cvq-systeem (Caribbean Vocational Qualification). Dit is beroepsonderwijs enigszins te vergelijken met het mbo. Leerlingen kiezen vanuit het derde leerjaar van de 'lower forms' voor een vervolg in het algemeen vormend onderwijs of in het beroepsonderwijs (cvq). Leerlingen gaan eerst naar cvq-1, na afronding kunnen ze cvq-2 volgen. In de toekomst zullen er meer niveaus mogelijk zijn.\r\n","CategoryGroupID":3
+    },{
+      "Key":"A049166","Title":"Beroepsgericht - mbo","Description":"Middelbaar beroepsonderwijs (mbo) te vergelijken met het Nederlandse mbo. Op Caribisch Nederland zijn de mogelijkheden voor bekostigde opleidingen op mbo-niveau beperkt door de schaalgrootte. Vooral op Sint Eustatius en Saba, waar sinds het studiejaar 2012/'13 alleen de entreeopleiding wordt aangeboden en opleidingen op niveau 2 (basisberoepsopleiding). Op Bonaire is het al langer mogelijk om op alle vier de niveaus van het mbo onderwijs te volgen. Vanaf 2019/'20 kennen Saba en Sint Eustatius eenzelfde Caribisch systeem voor beroepsonderwijs, het cvq-systeem (Caribbean Vocational Qualification). Het cvq is niet opgenomen in de aantallen van deze categorie 'Beroepsgericht - mbo'.\r\n\r\n\r\n\r\n","CategoryGroupID":3
+    }
+  ]
+}
