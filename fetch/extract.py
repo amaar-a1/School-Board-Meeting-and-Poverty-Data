@@ -6,13 +6,17 @@ OUT = "fetch/out/pl_pupils"; os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)", "Accept": "application/json"}
 BDL = "https://bdl.stat.gov.pl/api/v1"
 log = open(f"{OUT}/log.txt", "w")
+FIRST = [True]
 def get(u):
-    for a in range(6):
+    # The first request checks whether the limit has reset: 5 tries 2 minutes apart (about 10 minutes), then stop.
+    tries, wait = (5, 120) if FIRST[0] else (6, 300)
+    for a in range(tries):
         try:
             with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=120) as r: d = json.loads(r.read())
-            time.sleep(12); return d
+            FIRST[0] = False; time.sleep(12); return d
         except Exception as e:
-            log.write(f"retry {a} {str(e)[:80]} {u[:120]}\n"); log.flush(); time.sleep(300)
+            log.write(f"retry {a} {str(e)[:80]} {u[:120]}\n"); log.flush()
+            if a < tries - 1: time.sleep(wait)
     raise RuntimeError("gave up: " + u)
 try:
     pv = []
