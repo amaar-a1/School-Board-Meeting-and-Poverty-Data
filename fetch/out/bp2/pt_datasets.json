@@ -1,0 +1,986 @@
+[
+{
+"q": "rendimento social de inserção",
+"title": "Valor processado do rendimento social de inserção da segurança social (€)",
+"varcd": "0013421",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento social de inserção",
+"title": "Valor processado do rendimento social de inserção da segurança social (€)",
+"varcd": "0010298",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento social de inserção",
+"title": "Beneficiárias/os do rendimento social de inserção, da segurança social (N.º)",
+"varcd": "0013417",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento social de inserção",
+"title": "Beneficiárias/os do rendimento social de inserção, da segurança social (N.º)",
+"varcd": "0004299",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento social de inserção",
+"title": "Beneficiárias/os do rendimento social de inserção, da segurança social (N.º)",
+"varcd": "0004300",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento social de inserção",
+"title": "Beneficiárias/os do rendimento social de inserção, da segurança social (N.º)",
+"varcd": "0008251",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento social de inserção",
+"title": "Beneficiárias/os do rendimento social de inserção, da segurança social (N.º)",
+"varcd": "0013418",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento social de inserção",
+"title": "Beneficiárias/os do rendimento social de inserção, da segurança social (N.º)",
+"varcd": "0010296",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento social de inserção",
+"title": "Beneficiárias/os do rendimento social de inserção, da segurança social (N.º)",
+"varcd": "0013419",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento social de inserção",
+"title": "Beneficiárias/os do rendimento social de inserção, da segurança social (N.º)",
+"varcd": "0010297",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento social de inserção",
+"title": "Valor processado do rendimento social de inserção da segurança social (€)",
+"varcd": "0010115",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento social de inserção",
+"title": "Beneficiárias/os do rendimento social de inserção, da segurança social por 1000 habitantes em idade ativa (‰)",
+"varcd": "0013420",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento social de inserção",
+"title": "Beneficiárias/os do rendimento social de inserção, da segurança social por 1000 habitantes em idade ativa (‰)",
+"varcd": "0004156",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento social de inserção",
+"title": "Beneficiárias/os do rendimento social de inserção, da segurança social por 1000 habitantes em idade ativa (‰)",
+"varcd": "0004155",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento social de inserção",
+"title": "Beneficiárias/os do rendimento social de inserção, da segurança social por 1000 habitantes em idade ativa (‰)",
+"varcd": "0008339",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento social de inserção",
+"title": "Beneficiárias/os do rendimento social de inserção, da segurança social (N.º)",
+"varcd": "0005982",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Imposto sobre o rendimento de pessoas singulares liquidado no total de rendimento bruto declarado (%)",
+"varcd": "0012669",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Imposto sobre o rendimento de pessoas singulares liquidado no total de rendimento bruto declarado (%)",
+"varcd": "0009766",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Rendimento bruto declarado (€)",
+"varcd": "0012665",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Rendimento bruto declarado (€)",
+"varcd": "0009770",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Distribuição do rendimento bruto declarado (€) dos sujeitos passivos",
+"varcd": "0012752",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Distribuição do rendimento bruto declarado dos agregados fiscais (€)",
+"varcd": "0012714",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Distribuição do rendimento bruto declarado dos agregados fiscais (€)",
+"varcd": "0009773",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Distribuição do rendimento bruto declarado (€) dos sujeitos passivos",
+"varcd": "0009939",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Distribuição do rendimento bruto declarado deduzido de IRS liquidado dos agregados fiscais (€)",
+"varcd": "0009774",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Distribuição do rendimento bruto declarado deduzido de IRS liquidado (€) dos sujeitos passivos",
+"varcd": "0012759",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Distribuição do rendimento bruto declarado deduzido de IRS liquidado dos agregados fiscais (€)",
+"varcd": "0012743",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Distribuição do rendimento bruto declarado deduzido de IRS liquidado (€) dos sujeitos passivos",
+"varcd": "0009940",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Rendimento bruto declarado por habitante (€)",
+"varcd": "0012670",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Rendimento bruto declarado por habitante (€)",
+"varcd": "0009759",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Rendimento bruto declarado por sujeito passivo (€)",
+"varcd": "0009933",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Rendimento bruto declarado por agregado fiscal (€)",
+"varcd": "0012674",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Rendimento bruto declarado deduzido do IRS liquidado (€)",
+"varcd": "0012668",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Rendimento bruto declarado deduzido do IRS liquidado (€)",
+"varcd": "0009775",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Rendimento bruto declarado por sujeito passivo (€)",
+"varcd": "0012748",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Rendimento bruto declarado por agregado fiscal (€)",
+"varcd": "0009762",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Valor mediano do rendimento bruto declarado por agregado fiscal (€)",
+"varcd": "0012712",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Valor mediano do rendimento bruto declarado por sujeito passivo (€)",
+"varcd": "0012749",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Rendimento bruto declarado deduzido do IRS liquidado por habitante (€)",
+"varcd": "0009761",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Valor mediano do rendimento bruto declarado por agregado fiscal (€)",
+"varcd": "0009763",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Coeficiente de Gini do rendimento bruto declarado por sujeito passivo (%)",
+"varcd": "0012753",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Rendimento bruto declarado deduzido do IRS liquidado por habitante (€)",
+"varcd": "0012672",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Coeficiente de Gini do rendimento bruto declarado por agregado fiscal (%)",
+"varcd": "0012715",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Coeficiente de Gini do rendimento bruto declarado por agregado fiscal (%)",
+"varcd": "0009941",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Valor mediano do rendimento bruto declarado por sujeito passivo (€)",
+"varcd": "0009934",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Coeficiente de Gini do rendimento bruto declarado por sujeito passivo (%)",
+"varcd": "0009950",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Rendimento bruto declarado deduzido do IRS liquidado por sujeito passivo (€)",
+"varcd": "0009936",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Rendimento bruto declarado deduzido do IRS liquidado por agregado fiscal (€)",
+"varcd": "0009765",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Rendimento bruto declarado deduzido do IRS liquidado por agregado fiscal (€)",
+"varcd": "0012740",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Rendimento bruto declarado deduzido do IRS liquidado por sujeito passivo (€)",
+"varcd": "0012756",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Valor mediano do rendimento bruto declarado deduzido do IRS liquidado por agregado fiscal (€)",
+"varcd": "0012741",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Coeficiente de Gini do rendimento bruto declarado deduzido do IRS liquidado por agregado fiscal (%)",
+"varcd": "0009942",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Coeficiente de Gini do rendimento bruto declarado deduzido do IRS liquidado por sujeito passivo (%)",
+"varcd": "0012760",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Coeficiente de Gini do rendimento bruto declarado deduzido do IRS liquidado por sujeito passivo (%)",
+"varcd": "0009943",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Coeficiente de Gini do rendimento bruto declarado deduzido do IRS liquidado por agregado fiscal (%)",
+"varcd": "0012744",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Valor mediano do rendimento bruto declarado deduzido do IRS liquidado por sujeito passivo (€)",
+"varcd": "0012757",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Valor mediano do rendimento bruto declarado deduzido do IRS liquidado por agregado fiscal (€)",
+"varcd": "0009953",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Valor mediano do rendimento bruto declarado deduzido do IRS liquidado por sujeito passivo (€)",
+"varcd": "0009954",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Desigualdade na distribuição do rendimento bruto declarado dos sujeitos passivos (P90/P10) ( N.º)",
+"varcd": "0009945",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Desigualdade na distribuição do rendimento bruto declarado dos agregados fiscais (P90/P10 - N.º)",
+"varcd": "0012717",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Desigualdade na distribuição do rendimento bruto declarado dos sujeitos passivos (P80/P20) ( N.º)",
+"varcd": "0009951",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Desigualdade na distribuição do rendimento bruto declarado dos agregados fiscais (P80/P20) ( N.º)",
+"varcd": "0009947",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Desigualdade na distribuição do rendimento bruto declarado dos sujeitos passivos (P80/P20 - N.º)",
+"varcd": "0012754",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Desigualdade na distribuição do rendimento bruto declarado dos agregados fiscais (P90/P10) ( N.º)",
+"varcd": "0009952",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Desigualdade na distribuição do rendimento bruto declarado dos sujeitos passivos (P90/P10 - N.º)",
+"varcd": "0012755",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Desigualdade na distribuição do rendimento bruto declarado dos agregados fiscais (P80/P20 - N.º)",
+"varcd": "0012716",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Desigualdade na distribuição do rendimento bruto declarado deduzido do IRS liquidado dos sujeitos passivos (P90/P10 - N.º)",
+"varcd": "0012762",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Desigualdade na distribuição do rendimento bruto declarado deduzido do IRS liquidado dos sujeitos passivos (P80/P20 - N.º)",
+"varcd": "0012761",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Desigualdade na distribuição do rendimento bruto declarado deduzido do IRS liquidado dos sujeitos passivos (P80/P20) ( N.º)",
+"varcd": "0009944",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Desigualdade na distribuição do rendimento bruto declarado deduzido do IRS liquidado dos agregados fiscais (P90/P10 - N.º)",
+"varcd": "0012746",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Desigualdade na distribuição do rendimento bruto declarado deduzido do IRS liquidado dos agregados fiscais (P80/P20 - N.º)",
+"varcd": "0012745",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Desigualdade na distribuição do rendimento bruto declarado deduzido do IRS liquidado dos sujeitos passivos (P90/P10) ( N.º)",
+"varcd": "0009946",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Desigualdade na distribuição do rendimento bruto declarado deduzido do IRS liquidado dos agregados fiscais (P90/P10) ( N.º)",
+"varcd": "0009949",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Desigualdade na distribuição do rendimento bruto declarado deduzido do IRS liquidado dos agregados fiscais (P80/P20) ( N.º)",
+"varcd": "0009948",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Proporção de sujeitos passivos que subiram dois ou mais decis na distribuição do rendimento bruto declarado deduzido do IRS liquidado (%)",
+"varcd": "0012935",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Proporção de sujeitos passivos que desceram dois ou mais decis na distribuição do rendimento bruto declarado deduzido do IRS liquidado (%)",
+"varcd": "0012936",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Proporção de sujeitos passivos que se deslocaram dois ou mais decis na distribuição do rendimento bruto declarado deduzido do IRS liquidado (%)",
+"varcd": "0012937",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Sujeitos Passivos (N.º)",
+"varcd": "0012751",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Agregados fiscais (N.º)",
+"varcd": "0012673",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Agregados fiscais (N.º)",
+"varcd": "0009767",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Sujeitos Passivos (N.º)",
+"varcd": "0009937",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Sujeitos Passivos (N.º)",
+"varcd": "0012758",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Agregados fiscais (N.º)",
+"varcd": "0012742",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Sujeitos Passivos (N.º)",
+"varcd": "0009938",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "rendimento bruto declarado",
+"title": "Agregados fiscais (N.º)",
+"varcd": "0009768",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Distribuição do rendimento bruto declarado (€) dos sujeitos passivos",
+"varcd": "0009939",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Distribuição do rendimento bruto declarado (€) dos sujeitos passivos",
+"varcd": "0012752",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Distribuição do rendimento bruto declarado deduzido de IRS liquidado (€) dos sujeitos passivos",
+"varcd": "0009940",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Distribuição do rendimento bruto declarado deduzido de IRS liquidado (€) dos sujeitos passivos",
+"varcd": "0012759",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Desigualdade na distribuição do rendimento bruto declarado dos sujeitos passivos (P90/P10) ( N.º)",
+"varcd": "0009945",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Desigualdade na distribuição do rendimento bruto declarado dos sujeitos passivos (P80/P20) ( N.º)",
+"varcd": "0009951",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Desigualdade na distribuição do rendimento bruto declarado dos sujeitos passivos (P90/P10 - N.º)",
+"varcd": "0012755",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Desigualdade na distribuição do rendimento bruto declarado dos sujeitos passivos (P80/P20 - N.º)",
+"varcd": "0012754",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Desigualdade na distribuição do rendimento bruto declarado deduzido do IRS liquidado dos sujeitos passivos (P80/P20) ( N.º)",
+"varcd": "0009944",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Desigualdade na distribuição do rendimento bruto declarado deduzido do IRS liquidado dos sujeitos passivos (P90/P10) ( N.º)",
+"varcd": "0009946",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Desigualdade na distribuição do rendimento bruto declarado deduzido do IRS liquidado dos sujeitos passivos (P80/P20 - N.º)",
+"varcd": "0012761",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Desigualdade na distribuição do rendimento bruto declarado deduzido do IRS liquidado dos sujeitos passivos (P90/P10 - N.º)",
+"varcd": "0012762",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Proporção de sujeitos passivos que desceram dois ou mais decis na distribuição do rendimento bruto declarado deduzido do IRS liquidado (%)",
+"varcd": "0012936",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Proporção de sujeitos passivos que subiram dois ou mais decis na distribuição do rendimento bruto declarado deduzido do IRS liquidado (%)",
+"varcd": "0012935",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Proporção de sujeitos passivos que se deslocaram dois ou mais decis na distribuição do rendimento bruto declarado deduzido do IRS liquidado (%)",
+"varcd": "0012937",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Sujeitos Passivos (N.º)",
+"varcd": "0009937",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Sujeitos Passivos (N.º)",
+"varcd": "0012751",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Sujeitos Passivos (N.º)",
+"varcd": "0012758",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Sujeitos Passivos (N.º)",
+"varcd": "0009938",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Sujeitos Passivos (N.º)",
+"varcd": "0009769",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "sujeitos passivos rendimento",
+"title": "Sujeitos Passivos (N.º)",
+"varcd": "0012747",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "alunos matriculados",
+"title": "Alunos matriculados na educação pré-escolar e nos ensinos básico, secundário e pós-secundário não superior em estabelecimentos de ensino",
+"varcd": "",
+"org": "Direção-Geral de Estatísticas da Educação e Ciência - DGEEC"
+},
+{
+"q": "alunos matriculados",
+"title": "Indicadores gerais da educação",
+"varcd": "",
+"org": "Direção-Geral de Estatísticas da Educação e Ciência - DGEEC"
+},
+{
+"q": "alunos ensino básico",
+"title": "Alunos matriculados na educação pré-escolar e nos ensinos básico, secundário e pós-secundário não superior em estabelecimentos de ensino",
+"varcd": "",
+"org": "Direção-Geral de Estatísticas da Educação e Ciência - DGEEC"
+},
+{
+"q": "alunos ensino básico",
+"title": "Estabelecimentos de ensino básico (1º ciclo) com menos de 10 alunos (N.º)",
+"varcd": "0009545",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "alunos ensino básico",
+"title": "Estabelecimentos de ensino básico (1º ciclo) com menos de 10 alunos (N.º)",
+"varcd": "0003919",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "alunos ensino básico",
+"title": "Estabelecimentos de ensino básico (1º ciclo) com menos de 21 alunos (N.º)",
+"varcd": "0009558",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "alunos ensino básico",
+"title": "Estabelecimentos de ensino básico (1º ciclo) com menos de 21 alunos (N.º)",
+"varcd": "0012583",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "alunos ensino básico",
+"title": "Estabelecimentos de ensino básico (1º ciclo) com menos de 21 alunos (N.º)",
+"varcd": "0006926",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "alunos ensino básico",
+"title": "Estabelecimentos de ensino básico (1º ciclo) com menos de 10 alunos (N.º)",
+"varcd": "0012431",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "alunos ensino básico",
+"title": "Estabelecimentos de ensino básico (1º ciclo) com menos de 21 alunos (N.º)",
+"varcd": "0006927",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "alunos ensino básico",
+"title": "Estabelecimentos de ensino básico (1º ciclo) com menos de 10 alunos (N.º)",
+"varcd": "0003893",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "alunos ensino básico",
+"title": "Indicadores gerais da educação",
+"varcd": "",
+"org": "Direção-Geral de Estatísticas da Educação e Ciência - DGEEC"
+},
+{
+"q": "alunos ensino básico",
+"title": "Beneficiários da Ação Social Escolar",
+"varcd": "",
+"org": "Município de Lisboa"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (Antes de qualquer transferência social - %)",
+"varcd": "0004208",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (Antes de qualquer transferência social - %)",
+"varcd": "0001840",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (Após transferências sociais - %) da população residente com 16 e mais anos de idade",
+"varcd": "0012257",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza persistente (%)",
+"varcd": "0014746",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (Após transferências sociais - %) da população residente com 18 e mais anos de idade",
+"varcd": "0013330",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (Após transferências sociais - %) da população empregada com 18 e mais anos de idade",
+"varcd": "0014080",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (Após transferências sociais - %) da população empregada com 18 e mais anos de idade",
+"varcd": "0009882",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (Após transferências sociais - %)",
+"varcd": "0009821",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (Após transferências sociais - %)",
+"varcd": "0004219",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (Após transferências sociais - %)",
+"varcd": "0014079",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (Após transferências sociais - %)",
+"varcd": "0001794",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (Após transferências sociais - %) da população residente com 18 e mais anos de idade",
+"varcd": "0004211",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (Série antiga - após transferências sociais - %) da população residente com 18 e mais anos de idade",
+"varcd": "0001846",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (Após transferências sociais - %)",
+"varcd": "0005382",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (Após transferências sociais - %)",
+"varcd": "0004206",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (Após transferências sociais - %)",
+"varcd": "0001813",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (Após transferências relativas a pensões - %)",
+"varcd": "0004207",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (Após transferências relativas a pensões - %)",
+"varcd": "0001814",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (%) da população residente em agregados domésticos privados sem crianças dependentes",
+"varcd": "0004210",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (%) da população residente em agregados domésticos privados com crianças dependentes",
+"varcd": "0004209",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (%) da população residente em agregados domésticos privados com crianças dependentes",
+"varcd": "0001847",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (%) da população residente em agregados domésticos privados sem crianças dependentes",
+"varcd": "0001848",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de risco de pobreza (Após transferências sociais - %) dos agregados domésticos privados compostos por um adulto que vive só",
+"varcd": "0005395",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "taxa de pobreza",
+"title": "Taxa de intensidade da pobreza (%)",
+"varcd": "0006263",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "abono de família",
+"title": "Valor processado do abono de família para crianças e jovens da segurança social (€)",
+"varcd": "0010285",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "abono de família",
+"title": "Valor processado do abono de família para crianças e jovens da segurança social (€)",
+"varcd": "0013410",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "abono de família",
+"title": "Beneficiárias/os do abono de família para crianças e jovens da segurança social (N.º)",
+"varcd": "0010283",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "abono de família",
+"title": "Beneficiárias/os do abono de família para crianças e jovens da segurança social (N.º)",
+"varcd": "0013408",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "abono de família",
+"title": "Beneficiárias/os descendentes ou equiparados do abono de família para crianças e jovens da segurança social (N.º)",
+"varcd": "0010284",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "abono de família",
+"title": "Beneficiárias/os descendentes ou equiparados do abono de família para crianças e jovens da segurança social (N.º)",
+"varcd": "0013409",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "abono de família",
+"title": "Beneficiárias/os do abono de família pré-natal da segurança social (N.º)",
+"varcd": "0006713",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "abono de família",
+"title": "Valor processado do abono de família para crianças e jovens da segurança social (€)",
+"varcd": "0006720",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "abono de família",
+"title": "Beneficiárias/os do abono de família para crianças e jovens da segurança social (N.º)",
+"varcd": "0006718",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "abono de família",
+"title": "Beneficiárias/os descendentes ou equiparados do abono de família para crianças e jovens da segurança social (N.º)",
+"varcd": "0006719",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "poder de compra",
+"title": "Fator dinamismo relativo de poder de compra",
+"varcd": "0008616",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "poder de compra",
+"title": "Proporção de poder de compra (% - no total do País)",
+"varcd": "0001355",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "poder de compra",
+"title": "Fator dinamismo relativo de poder de compra (-)",
+"varcd": "0014582",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "poder de compra",
+"title": "Proporção de poder de compra (% - no total do País)",
+"varcd": "0014581",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "poder de compra",
+"title": "Fator dinamismo relativo de poder de compra",
+"varcd": "0001356",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "poder de compra",
+"title": "Proporção de poder de compra (% - no total do País)",
+"varcd": "0008615",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "poder de compra",
+"title": "Poder de compra per capita",
+"varcd": "0001354",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "poder de compra",
+"title": "Poder de compra per capita",
+"varcd": "0008614",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "poder de compra",
+"title": "Poder de compra per capita",
+"varcd": "0014580",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "poder de compra",
+"title": "Poder de compra per capita",
+"varcd": "0001720",
+"org": "Instituto Nacional de Estatística"
+},
+{
+"q": "poder de compra",
+"title": "Locais de recolha de resíduos de equipamentos elétricos e eletrónicos (REEE)",
+"varcd": "",
+"org": "Agência Portuguesa do Ambiente"
+}
+]

@@ -1,0 +1,89 @@
+== Statbel fiscal statistics
+/en/open-data/fiscal-statistics-income: ['/sites/default/files/files/opendata/arbeid/Columns%20descriptions%20(partial).xlsx', 'https://statbel.fgov.be/sites/default/files/files/opendata/arbeid/TF_PSNL_INC_TAX_MUNTY.xlsx', 'https://statbel.fgov.be/sites/default/files/files/opendata/arbeid/TF_PSNL_INC_TAX_MUNTY.zip']
+  downloaded TF_PSNL_INC_TAX_MUNTY.xlsx 3703327
+  downloaded TF_PSNL_INC_TAX_MUNTY.zip 1163905
+/en/open-data/fiscal-statistics-income-0 ERR HTTP Error 404: Not Found
+/en/open-data/fiscal-statistics-income-1 ERR HTTP Error 404: Not Found
+/en/open-data/fiscal-statistics-income-municipality ERR HTTP Error 404: Not Found
+/nl/open-data/fiscale-statistiek-van-de-inkomens-0 ERR HTTP Error 404: Not Found
+(17s)
+
+== Portugal: INE indicators on dados.gov.pt
+[rendimento social de inserção] ERR HTTP Error 404: NOT FOUND
+[beneficiários do rendimento social] ERR HTTP Error 404: NOT FOUND
+[sujeitos passivos rendimento] ERR HTTP Error 404: NOT FOUND
+[alunos matriculados] ERR HTTP Error 404: NOT FOUND
+[alunos ensino básico] ERR HTTP Error 404: NOT FOUND
+[taxa de pobreza] ERR HTTP Error 404: NOT FOUND
+[beneficiários de prestações] ERR HTTP Error 404: NOT FOUND
+[abono de família] ERR HTTP Error 404: NOT FOUND
+[poder de compra] ERR HTTP Error 404: NOT FOUND
+0013421 | Valor processado do rendimento social de inserção da segurança social (€) | Instituto Nacional de Estatística
+0013417 | Beneficiárias/os do rendimento social de inserção, da segurança social (N.º) | Instituto Nacional de Estatística
+0013420 | Beneficiárias/os do rendimento social de inserção, da segurança social por 1000 habitantes em idade ativa (‰) | Instituto Nacional de Estatística
+0012669 | Imposto sobre o rendimento de pessoas singulares liquidado no total de rendimento bruto declarado (%) | Instituto Nacional de Estatística
+0012665 | Rendimento bruto declarado (€) | Instituto Nacional de Estatística
+0012752 | Distribuição do rendimento bruto declarado (€) dos sujeitos passivos | Instituto Nacional de Estatística
+0012714 | Distribuição do rendimento bruto declarado dos agregados fiscais (€) | Instituto Nacional de Estatística
+0009774 | Distribuição do rendimento bruto declarado deduzido de IRS liquidado dos agregados fiscais (€) | Instituto Nacional de Estatística
+0012759 | Distribuição do rendimento bruto declarado deduzido de IRS liquidado (€) dos sujeitos passivos | Instituto Nacional de Estatística
+0012670 | Rendimento bruto declarado por habitante (€) | Instituto Nacional de Estatística
+0009933 | Rendimento bruto declarado por sujeito passivo (€) | Instituto Nacional de Estatística
+0012674 | Rendimento bruto declarado por agregado fiscal (€) | Instituto Nacional de Estatística
+0012668 | Rendimento bruto declarado deduzido do IRS liquidado (€) | Instituto Nacional de Estatística
+0012712 | Valor mediano do rendimento bruto declarado por agregado fiscal (€) | Instituto Nacional de Estatística
+0012749 | Valor mediano do rendimento bruto declarado por sujeito passivo (€) | Instituto Nacional de Estatística
+0009761 | Rendimento bruto declarado deduzido do IRS liquidado por habitante (€) | Instituto Nacional de Estatística
+0012753 | Coeficiente de Gini do rendimento bruto declarado por sujeito passivo (%) | Instituto Nacional de Estatística
+0012715 | Coeficiente de Gini do rendimento bruto declarado por agregado fiscal (%) | Instituto Nacional de Estatística
+0009936 | Rendimento bruto declarado deduzido do IRS liquidado por sujeito passivo (€) | Instituto Nacional de Estatística
+0009765 | Rendimento bruto declarado deduzido do IRS liquidado por agregado fiscal (€) | Instituto Nacional de Estatística
+0012741 | Valor mediano do rendimento bruto declarado deduzido do IRS liquidado por agregado fiscal (€) | Instituto Nacional de Estatística
+0009942 | Coeficiente de Gini do rendimento bruto declarado deduzido do IRS liquidado por agregado fiscal (%) | Instituto Nacional de Estatística
+0012760 | Coeficiente de Gini do rendimento bruto declarado deduzido do IRS liquidado por sujeito passivo (%) | Instituto Nacional de Estatística
+0012757 | Valor mediano do rendimento bruto declarado deduzido do IRS liquidado por sujeito passivo (€) | Instituto Nacional de Estatística
+0009945 | Desigualdade na distribuição do rendimento bruto declarado dos sujeitos passivos (P90/P10) ( N.º) | Instituto Nacional de Estatística
+0012717 | Desigualdade na distribuição do rendimento bruto declarado dos agregados fiscais (P90/P10 - N.º) | Instituto Nacional de Estatística
+0009951 | Desigualdade na distribuição do rendimento bruto declarado dos sujeitos passivos (P80/P20) ( N.º) | Instituto Nacional de Estatística
+0009947 | Desigualdade na distribuição do rendimento bruto declarado dos agregados fiscais (P80/P20) ( N.º) | Instituto Nacional de Estatística
+0012754 | Desigualdade na distribuição do rendimento bruto declarado dos sujeitos passivos (P80/P20 - N.º) | Instituto Nacional de Estatística
+0009952 | Desigualdade na distribuição do rendimento bruto declarado dos agregados fiscais (P90/P10) ( N.º) | Instituto Nacional de Estatística
+0012755 | Desigualdade na distribuição do rendimento bruto declarado dos sujeitos passivos (P90/P10 - N.º) | Instituto Nacional de Estatística
+0012716 | Desigualdade na distribuição do rendimento bruto declarado dos agregados fiscais (P80/P20 - N.º) | Instituto Nacional de Estatística
+0012762 | Desigualdade na distribuição do rendimento bruto declarado deduzido do IRS liquidado dos sujeitos passivos (P90/P10 - N.º) | Instituto Nacional de Estatística
+0012761 | Desigualdade na distribuição do rendimento bruto declarado deduzido do IRS liquidado dos sujeitos passivos (P80/P20 - N.º) | Instituto Nacional de Estatística
+0009944 | Desigualdade na distribuição do rendimento bruto declarado deduzido do IRS liquidado dos sujeitos passivos (P80/P20) ( N.º) | Instituto Nacional de Estatística
+0012746 | Desigualdade na distribuição do rendimento bruto declarado deduzido do IRS liquidado dos agregados fiscais (P90/P10 - N.º) | Instituto Nacional de Estatística
+0012745 | Desigualdade na distribuição do rendimento bruto declarado deduzido do IRS liquidado dos agregados fiscais (P80/P20 - N.º) | Instituto Nacional de Estatística
+0009946 | Desigualdade na distribuição do rendimento bruto declarado deduzido do IRS liquidado dos sujeitos passivos (P90/P10) ( N.º) | Instituto Nacional de Estatística
+0009949 | Desigualdade na distribuição do rendimento bruto declarado deduzido do IRS liquidado dos agregados fiscais (P90/P10) ( N.º) | Instituto Nacional de Estatística
+0009948 | Desigualdade na distribuição do rendimento bruto declarado deduzido do IRS liquidado dos agregados fiscais (P80/P20) ( N.º) | Instituto Nacional de Estatística
+0012935 | Proporção de sujeitos passivos que subiram dois ou mais decis na distribuição do rendimento bruto declarado deduzido do IRS liquidado (%) | Instituto Nacional de Estatística
+0012936 | Proporção de sujeitos passivos que desceram dois ou mais decis na distribuição do rendimento bruto declarado deduzido do IRS liquidado (%) | Instituto Nacional de Estatística
+0012937 | Proporção de sujeitos passivos que se deslocaram dois ou mais decis na distribuição do rendimento bruto declarado deduzido do IRS liquidado (%) | Instituto Nacional de Estatística
+0012751 | Sujeitos Passivos (N.º) | Instituto Nacional de Estatística
+ | Alunos matriculados na educação pré-escolar e nos ensinos básico, secundário e pós-secundário não superior em estabelecimentos de ensino | Direção-Geral de Estatísticas da Educação e Ciência - DGEEC
+0009545 | Estabelecimentos de ensino básico (1º ciclo) com menos de 10 alunos (N.º) | Instituto Nacional de Estatística
+0009558 | Estabelecimentos de ensino básico (1º ciclo) com menos de 21 alunos (N.º) | Instituto Nacional de Estatística
+0004208 | Taxa de risco de pobreza (Antes de qualquer transferência social - %) | Instituto Nacional de Estatística
+0012257 | Taxa de risco de pobreza (Após transferências sociais - %) da população residente com 16 e mais anos de idade | Instituto Nacional de Estatística
+0014746 | Taxa de risco de pobreza persistente (%) | Instituto Nacional de Estatística
+0013330 | Taxa de risco de pobreza (Após transferências sociais - %) da população residente com 18 e mais anos de idade | Instituto Nacional de Estatística
+0014080 | Taxa de risco de pobreza (Após transferências sociais - %) da população empregada com 18 e mais anos de idade | Instituto Nacional de Estatística
+0009821 | Taxa de risco de pobreza (Após transferências sociais - %) | Instituto Nacional de Estatística
+0001846 | Taxa de risco de pobreza (Série antiga - após transferências sociais - %) da população residente com 18 e mais anos de idade | Instituto Nacional de Estatística
+0004207 | Taxa de risco de pobreza (Após transferências relativas a pensões - %) | Instituto Nacional de Estatística
+0004210 | Taxa de risco de pobreza (%) da população residente em agregados domésticos privados sem crianças dependentes | Instituto Nacional de Estatística
+0004209 | Taxa de risco de pobreza (%) da população residente em agregados domésticos privados com crianças dependentes | Instituto Nacional de Estatística
+0005395 | Taxa de risco de pobreza (Após transferências sociais - %) dos agregados domésticos privados compostos por um adulto que vive só | Instituto Nacional de Estatística
+0006263 | Taxa de intensidade da pobreza (%) | Instituto Nacional de Estatística
+0010285 | Valor processado do abono de família para crianças e jovens da segurança social (€) | Instituto Nacional de Estatística
+0010283 | Beneficiárias/os do abono de família para crianças e jovens da segurança social (N.º) | Instituto Nacional de Estatística
+0010284 | Beneficiárias/os descendentes ou equiparados do abono de família para crianças e jovens da segurança social (N.º) | Instituto Nacional de Estatística
+0006713 | Beneficiárias/os do abono de família pré-natal da segurança social (N.º) | Instituto Nacional de Estatística
+0008616 | Fator dinamismo relativo de poder de compra | Instituto Nacional de Estatística
+0001355 | Proporção de poder de compra (% - no total do País) | Instituto Nacional de Estatística
+0014582 | Fator dinamismo relativo de poder de compra (-) | Instituto Nacional de Estatística
+0001354 | Poder de compra per capita | Instituto Nacional de Estatística
+(29s)
+
