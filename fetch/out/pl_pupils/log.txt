@@ -1,0 +1,12 @@
+retry 0 HTTP Error 429: Too Many Requests https://bdl.stat.gov.pl/api/v1/variables/search?name=uczniowie&level=6&page-size=100&page=0&format=json&lang=pl
+retry 1 HTTP Error 429: Too Many Requests https://bdl.stat.gov.pl/api/v1/variables/search?name=uczniowie&level=6&page-size=100&page=0&format=json&lang=pl
+retry 2 HTTP Error 429: Too Many Requests https://bdl.stat.gov.pl/api/v1/variables/search?name=uczniowie&level=6&page-size=100&page=0&format=json&lang=pl
+retry 3 HTTP Error 429: Too Many Requests https://bdl.stat.gov.pl/api/v1/variables/search?name=uczniowie&level=6&page-size=100&page=0&format=json&lang=pl
+retry 4 HTTP Error 429: Too Many Requests https://bdl.stat.gov.pl/api/v1/variables/search?name=uczniowie&level=6&page-size=100&page=0&format=json&lang=pl
+retry 5 HTTP Error 429: Too Many Requests https://bdl.stat.gov.pl/api/v1/variables/search?name=uczniowie&level=6&page-size=100&page=0&format=json&lang=pl
+Traceback (most recent call last):
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 19, in <module>
+    d = get(f"{BDL}/variables/search?name={urllib.parse.quote('uczniowie')}&level=6&page-size=100&page={page}&format=json&lang=pl")
+  File "/home/runner/work/School-Board-Meeting-and-Poverty-Data/School-Board-Meeting-and-Poverty-Data/fetch/extract.py", line 15, in get
+    raise RuntimeError("gave up: " + u)
+RuntimeError: gave up: https://bdl.stat.gov.pl/api/v1/variables/search?name=uczniowie&level=6&page-size=100&page=0&format=json&lang=pl
