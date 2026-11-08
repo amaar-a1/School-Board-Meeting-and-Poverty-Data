@@ -1,0 +1,1644 @@
+Region,Province,Municipality/City,Poverty Incidence,Standard Error (SE),Coefficient of Variation (CV)
+NCR,1st district,Tondo,2.9,0.8,27.5
+NCR,1st district,Binondo,1.0,0.7,68.0
+NCR,1st district,Quiapo,2.1,0.9,42.4
+NCR,1st district,San Nicolas,2.4,1.4,57.0
+NCR,1st district,Santa Cruz,1.7,0.5,32.5
+NCR,1st district,Sampaloc,1.3,0.3,23.6
+NCR,1st district,San Miguel,1.4,0.9,67.4
+NCR,1st district,Ermita,1.5,1.0,68.7
+NCR,1st district,Intramuros,2.5,1.2,48.0
+NCR,1st district,Malate,1.8,0.5,29.1
+NCR,1st district,Paco,1.8,0.6,31.3
+NCR,1st district,Pandacan,1.9,0.6,33.0
+NCR,1st district,Port Area,11.9,6.8,57.5
+NCR,1st district,Santa Ana,2.2,0.6,29.0
+NCR,2nd district,Mandaluyong  City,1.8,0.8,45.1
+NCR,2nd district,Marikina  City,2.2,0.9,41.1
+NCR,2nd district,Pasig City,2.2,0.8,37.3
+NCR,2nd district,Quezon City,2.4,0.6,25.3
+NCR,2nd district,San Juan,1.5,0.6,42.5
+NCR,3rd district,Kalookan City,3.1,0.9,28.2
+NCR,3rd district,Malabon,4.0,1.7,41.4
+NCR,3rd district,Navotas,3.8,1.8,48.4
+NCR,3rd district,Valenzuela  City,3.7,1.3,33.4
+NCR,4th district,Las Piñas  City,2.8,1.0,37.8
+NCR,4th district,Makati  City,1.4,0.6,42.3
+NCR,4th district,Muntinlupa  City,2.4,1.2,49.6
+NCR,4th district,Parañaque  City,2.3,1.0,41.9
+NCR,4th district,Pasay City,1.7,0.5,26.4
+NCR,4th district,Pateros,3.0,1.9,64.9
+NCR,4th district,Taguig,2.7,1.1,41.5
+CAR,Abra,Bangued,16.8,2.1,12.7
+CAR,Abra,Boliney,50.6,9.5,18.9
+CAR,Abra,Bucay,36.2,5.8,16.1
+CAR,Abra,Bucloc,77.2,10.1,13.0
+CAR,Abra,Daguioman,32.2,8.8,27.3
+CAR,Abra,Danglas,32.0,7.3,22.8
+CAR,Abra,Dolores,33.5,5.0,15.0
+CAR,Abra,La Paz,36.0,5.4,14.9
+CAR,Abra,Lacub,67.2,9.5,14.2
+CAR,Abra,Lagangilang,27.5,4.5,16.5
+CAR,Abra,Lagayan,41.4,7.8,18.8
+CAR,Abra,Langiden,46.0,8.1,17.6
+CAR,Abra,Licuan-Baay (Licuan),46.7,8.4,18.0
+CAR,Abra,Luba,36.2,6.7,18.5
+CAR,Abra,Malibcong,55.6,8.8,15.8
+CAR,Abra,Manabo,34.9,6.9,19.8
+CAR,Abra,Peñarrubia,35.7,7.0,19.6
+CAR,Abra,Pidigan,25.9,4.9,18.9
+CAR,Abra,Pilar,42.8,6.2,14.4
+CAR,Abra,Sallapadan,62.0,8.2,13.2
+CAR,Abra,San Isidro,42.3,6.7,15.9
+CAR,Abra,San Juan,33.7,6.6,19.7
+CAR,Abra,San Quintin,28.7,6.7,23.3
+CAR,Abra,Tayum,23.7,4.4,18.7
+CAR,Abra,Tineg,43.2,8.6,19.9
+CAR,Abra,Tubo,56.4,9.4,16.6
+CAR,Abra,Villaviciosa,49.1,7.7,15.7
+CAR,Benguet,Atok,39.7,9.9,24.9
+CAR,Benguet,Baguio City,2.4,0.8,31.3
+CAR,Benguet,Bakun,53.7,9.6,17.9
+CAR,Benguet,Bokod,21.5,4.8,22.4
+CAR,Benguet,Buguias,42.0,8.1,19.2
+CAR,Benguet,Itogon,8.9,2.6,29.0
+CAR,Benguet,Kabayan,58.6,7.3,12.5
+CAR,Benguet,Kapangan,37.7,6.6,17.5
+CAR,Benguet,Kibungan,67.9,11.3,16.7
+CAR,Benguet,La Trinidad,5.4,1.5,27.3
+CAR,Benguet,Mankayan,16.5,4.3,26.2
+CAR,Benguet,Sablan,19.3,5.4,27.7
+CAR,Benguet,Tuba,14.2,3.2,22.7
+CAR,Benguet,Tublay,30.4,6.9,22.7
+CAR,Ifugao,Banaue,20.9,3.4,16.3
+CAR,Ifugao,Hungduan,29.9,5.8,19.3
+CAR,Ifugao,Kiangan,22.9,5.0,21.9
+CAR,Ifugao,Lagawe,19.9,3.5,17.4
+CAR,Ifugao,Lamut,18.2,3.3,18.3
+CAR,Ifugao,Mayoyao,34.1,4.1,11.9
+CAR,Ifugao,Alfonso Lista (Potia),37.1,4.5,12.2
+CAR,Ifugao,Aguinaldo,33.2,6.0,18.1
+CAR,Ifugao,Hingyon,25.2,5.7,22.7
+CAR,Ifugao,Tinoc,49.6,7.5,15.0
+CAR,Ifugao,Asipulo,47.5,9.3,19.5
+CAR,Kalinga,Balbalan,30.1,5.7,19.1
+CAR,Kalinga,Lubuagan,24.8,5.3,21.2
+CAR,Kalinga,Pasil,26.5,4.5,16.9
+CAR,Kalinga,Pinukpuk,29.9,4.3,14.5
+CAR,Kalinga,Rizal (Liwan),25.3,5.4,21.2
+CAR,Kalinga,Tabuk,17.3,2.8,16.3
+CAR,Kalinga,Tanudan,30.7,6.1,20.0
+CAR,Kalinga,Tinglayan,34.1,5.3,15.5
+CAR,Mountain Province,Barlig,27.4,8.3,30.4
+CAR,Mountain Province,Bauko,34.4,7.8,22.7
+CAR,Mountain Province,Besao,26.9,7.7,28.7
+CAR,Mountain Province,Bontoc,16.7,4.9,29.4
+CAR,Mountain Province,Natonin,37.4,9.2,24.5
+CAR,Mountain Province,Paracelis,46.7,10.0,21.4
+CAR,Mountain Province,Sabangan,26.0,8.1,31.1
+CAR,Mountain Province,Sadanga,39.0,10.9,27.8
+CAR,Mountain Province,Sagada,35.4,9.0,25.4
+CAR,Mountain Province,Tadian,36.2,7.2,20.0
+CAR,Apayao,Calanasan (Bayag),32.9,7.0,21.4
+CAR,Apayao,Conner,30.3,4.6,15.2
+CAR,Apayao,Flora,26.2,5.3,20.1
+CAR,Apayao,Kabugao,40.6,5.3,13.0
+CAR,Apayao,Luna,28.8,4.7,16.4
+CAR,Apayao,Pudtol,29.8,5.5,18.3
+CAR,Apayao,Santa Marcela,23.8,4.9,20.7
+Region I,Ilocos Norte,Adams,13.2,1.1,8.5
+Region I,Ilocos Norte,Bacarra,19.6,2.3,11.7
+Region I,Ilocos Norte,Badoc,12.6,1.4,11.3
+Region I,Ilocos Norte,Bangui,15.3,2.1,13.6
+Region I,Ilocos Norte,Batac,16.8,1.6,9.6
+Region I,Ilocos Norte,Burgos,22.6,5.3,23.5
+Region I,Ilocos Norte,Carasi,15.2,1.3,8.7
+Region I,Ilocos Norte,Currimao,16.3,2.1,13.1
+Region I,Ilocos Norte,Dingras,26.9,2.6,9.8
+Region I,Ilocos Norte,Dumalneg,21.6,5.7,26.3
+Region I,Ilocos Norte,Banna,17.8,2.2,12.2
+Region I,Ilocos Norte,Laoag City,9.9,0.8,8.2
+Region I,Ilocos Norte,Marcos,18.7,2.0,10.9
+Region I,Ilocos Norte,Nueva Era,24.9,2.7,10.7
+Region I,Ilocos Norte,Pagudpud,20.2,1.3,6.3
+Region I,Ilocos Norte,Paoay,14.9,1.2,7.9
+Region I,Ilocos Norte,Pasuquin,14.1,1.6,11.4
+Region I,Ilocos Norte,Piddig,16.3,2.6,16.1
+Region I,Ilocos Norte,Pinili,17.6,2.3,13.0
+Region I,Ilocos Norte,San Nicolas,12.3,1.1,9.2
+Region I,Ilocos Norte,Sarrat,14.0,1.9,13.5
+Region I,Ilocos Norte,Solsona,15.0,1.3,8.7
+Region I,Ilocos Norte,Vintar,16.8,2.0,12.0
+Region I,Ilocos Sur,Alilem,27.4,2.4,8.6
+Region I,Ilocos Sur,Banayoyo,20.9,2.6,12.6
+Region I,Ilocos Sur,Bantay,16.4,1.9,11.3
+Region I,Ilocos Sur,Burgos,26.5,3.2,12.2
+Region I,Ilocos Sur,Cabugao,20.7,2.4,11.4
+Region I,Ilocos Sur,Candon City,17.8,2.0,11.0
+Region I,Ilocos Sur,Caoayan,14.4,1.4,9.9
+Region I,Ilocos Sur,Cervantes,24.5,3.6,14.6
+Region I,Ilocos Sur,Galimuyod,20.6,2.8,13.8
+Region I,Ilocos Sur,Gregorio del Pilar,26.1,3.4,13.1
+Region I,Ilocos Sur,Lidlidda,17.3,3.4,19.9
+Region I,Ilocos Sur,Magsingal,18.1,2.5,13.9
+Region I,Ilocos Sur,Nagbukel,28.4,4.6,16.0
+Region I,Ilocos Sur,Narvacan,17.7,1.9,11.0
+Region I,Ilocos Sur,Quirino,27.2,4.3,15.8
+Region I,Ilocos Sur,Salcedo,22.7,2.8,12.5
+Region I,Ilocos Sur,San Emilio,23.7,4.7,19.9
+Region I,Ilocos Sur,San Esteban,15.7,2.9,18.6
+Region I,Ilocos Sur,San Ildefonso,15.4,2.4,15.4
+Region I,Ilocos Sur,San Juan,18.0,2.3,12.8
+Region I,Ilocos Sur,San Vicente,12.9,2.8,21.5
+Region I,Ilocos Sur,Santa,13.6,2.3,16.9
+Region I,Ilocos Sur,Santa Catalina,11.7,2.3,19.6
+Region I,Ilocos Sur,Santa Cruz,24.0,2.3,9.7
+Region I,Ilocos Sur,Santa Lucia,25.1,2.8,11.2
+Region I,Ilocos Sur,Santa Maria,16.9,2.1,12.7
+Region I,Ilocos Sur,Santiago,20.9,2.4,11.4
+Region I,Ilocos Sur,Santo Domingo,16.4,2.0,12.3
+Region I,Ilocos Sur,Sigay,27.2,5.5,20.1
+Region I,Ilocos Sur,Sinait,18.7,2.5,13.2
+Region I,Ilocos Sur,Sugpon,35.4,7.4,20.9
+Region I,Ilocos Sur,Suyo,24.4,4.4,18.1
+Region I,Ilocos Sur,Tagudin,20.6,1.9,9.3
+Region I,Ilocos Sur,Vigan City,12.4,1.6,12.9
+Region I,La Union,Agoo,21.3,2.2,10.3
+Region I,La Union,Aringay,26.0,3.5,13.4
+Region I,La Union,Bacnotan,21.1,1.8,8.4
+Region I,La Union,Bagulin,35.1,3.6,10.2
+Region I,La Union,Balaoan,26.6,2.2,8.2
+Region I,La Union,Bangar,27.9,3.3,11.9
+Region I,La Union,Bauang,20.3,2.2,10.7
+Region I,La Union,Burgos,26.2,2.8,10.6
+Region I,La Union,Caba,25.2,1.8,7.2
+Region I,La Union,Luna,24.7,2.9,11.8
+Region I,La Union,Naguilian,21.9,2.8,12.9
+Region I,La Union,Pugo,27.4,2.6,9.4
+Region I,La Union,Rosario,24.8,3.6,14.4
+Region I,La Union,San Fernando City,15.0,1.3,8.9
+Region I,La Union,San Gabriel,29.7,4.0,13.6
+Region I,La Union,San Juan,22.7,2.8,12.3
+Region I,La Union,Santo Tomas,22.7,1.4,6.3
+Region I,La Union,Santol,32.7,3.2,9.8
+Region I,La Union,Sudipen,25.8,3.6,14.0
+Region I,La Union,Tubao,26.2,3.5,13.3
+Region I,Pangasinan,Agno,28.4,3.3,11.5
+Region I,Pangasinan,Aguilar,26.0,2.1,8.1
+Region I,Pangasinan,Alaminos City,19.9,2.0,10.1
+Region I,Pangasinan,Alcala,20.3,1.5,7.5
+Region I,Pangasinan,Anda,25.9,2.1,8.0
+Region I,Pangasinan,Asungan,20.4,2.0,10.0
+Region I,Pangasinan,Balungo,21.4,2.1,10.0
+Region I,Pangasinan,Bani,21.0,1.1,5.3
+Region I,Pangasinan,Basista,24.6,1.2,5.0
+Region I,Pangasinan,Bautista,23.4,2.2,9.4
+Region I,Pangasinan,Bayambang,24.2,1.9,7.9
+Region I,Pangasinan,Binalonan,14.8,1.4,9.7
+Region I,Pangasinan,Binmaley,17.5,1.7,9.6
+Region I,Pangasinan,Bolinao,28.7,2.8,9.7
+Region I,Pangasinan,Bugallon,24.8,1.9,7.6
+Region I,Pangasinan,Burgos,28.7,2.8,9.8
+Region I,Pangasinan,Calasiao,17.2,1.9,11.1
+Region I,Pangasinan,Dagupan City,13.9,1.0,7.0
+Region I,Pangasinan,Dasol,25.3,2.4,9.6
+Region I,Pangasinan,Infanta,24.0,2.6,11.0
+Region I,Pangasinan,Labrador,18.6,1.8,9.9
+Region I,Pangasinan,Lingayen,18.3,1.1,5.8
+Region I,Pangasinan,Mabini,21.5,1.6,7.6
+Region I,Pangasinan,Malasiqui,24.5,1.5,6.3
+Region I,Pangasinan,Manaoag,22.3,2.5,11.2
+Region I,Pangasinan,Mangaldan,17.8,1.3,7.0
+Region I,Pangasinan,Mangatarem,25.5,2.0,8.0
+Region I,Pangasinan,Mapandan,21.3,2.1,10.0
+Region I,Pangasinan,Natividad,21.5,2.8,12.8
+Region I,Pangasinan,Possorubio,20.0,1.4,7.2
+Region I,Pangasinan,Rosales,17.9,1.9,10.4
+Region I,Pangasinan,San Carlos City,26.4,1.9,7.3
+Region I,Pangasinan,San Fabian,22.1,2.3,10.3
+Region I,Pangasinan,San Jacinto,21.1,2.6,12.3
+Region I,Pangasinan,San Miguel,21.3,2.1,10.0
+Region I,Pangasinan,San Nicolas,18.9,1.2,6.6
+Region I,Pangasinan,San Quintin,20.5,2.3,11.2
+Region I,Pangasinan,Santa Barbara,20.4,2.1,10.2
+Region I,Pangasinan,Santa Maria,18.3,2.5,13.8
+Region I,Pangasinan,Santo Tomas,17.5,1.2,6.6
+Region I,Pangasinan,Sison,18.9,1.7,8.8
+Region I,Pangasinan,Sual,26.7,1.3,4.9
+Region I,Pangasinan,Tayug,16.4,1.2,7.3
+Region I,Pangasinan,Umingan,22.9,2.2,9.6
+Region I,Pangasinan,Urbiztondo,31.7,3.0,9.6
+Region I,Pangasinan,Urdaneta City,14.4,1.2,8.4
+Region I,Pangasinan,Villasis,17.0,1.7,9.8
+Region I,Pangasinan,Laoac,21.0,1.2,5.9
+Region II,Batanes,Basco,5.1,1.9,36.8
+Region II,Batanes,Itbayat,12.6,4.2,33.4
+Region II,Batanes,Ivana,8.9,3.8,42.2
+Region II,Batanes,Mahatao,8.9,3.8,42.8
+Region II,Batanes,Sabtang,11.4,3.9,33.8
+Region II,Batanes,Uyugan,8.1,3.2,39.6
+Region II,Cagayan,Abulog,21.6,2.6,12.1
+Region II,Cagayan,Alcala,21.8,2.3,10.4
+Region II,Cagayan,Allacapan,21.2,2.6,12.4
+Region II,Cagayan,Amulung,27.9,2.1,7.5
+Region II,Cagayan,Aparri,15.4,1.7,11.2
+Region II,Cagayan,Baggao,22.6,1.9,8.6
+Region II,Cagayan,Ballesteros,22.7,2.5,11.1
+Region II,Cagayan,Buguey,22.4,2.3,10.2
+Region II,Cagayan,Calayan,27.7,4.1,14.9
+Region II,Cagayan,Camalaniugan,16.9,1.9,11.5
+Region II,Cagayan,Claveria,15.1,1.8,12.1
+Region II,Cagayan,Enrile,19.8,2.3,11.5
+Region II,Cagayan,Gattaran,19.2,1.9,9.9
+Region II,Cagayan,Gonzaga,16.6,2.4,14.5
+Region II,Cagayan,Iguig,19.5,2.3,11.7
+Region II,Cagayan,Lal-lo,16.7,2.2,13.1
+Region II,Cagayan,Lasam,18.2,2.2,11.8
+Region II,Cagayan,Pamplona,20.7,2.6,12.4
+Region II,Cagayan,Penablanca,18.2,2.4,13.0
+Region II,Cagayan,Piat,22.5,2.8,12.5
+Region II,Cagayan,Rizal,26.1,2.8,10.9
+Region II,Cagayan,Sanchez-Mira,13.4,2.2,16.6
+Region II,Cagayan,Santa Ana,16.3,2.7,16.2
+Region II,Cagayan,Santa Praxedes,17.2,3.7,21.4
+Region II,Cagayan,Santa Teresita,18.6,3.1,16.5
+Region II,Cagayan,Santo Nino,26.3,3.0,11.2
+Region II,Cagayan,Solana,22.5,2.0,8.8
+Region II,Cagayan,Tuao,22.7,2.3,10.2
+Region II,Cagayan,Tuguegarao City,8.5,1.1,12.9
+Region II,Isabela,Alicia,17.2,2.0,11.8
+Region II,Isabela,Angadanan,18.9,1.8,9.4
+Region II,Isabela,Aurora,16.4,1.9,11.9
+Region II,Isabela,Benito Soliven,25.4,2.9,11.3
+Region II,Isabela,Burgos,18.2,3.3,18.1
+Region II,Isabela,Cabagan,16.6,1.8,11.0
+Region II,Isabela,Cabatuan,12.7,2.1,16.8
+Region II,Isabela,Cauayan City,15.9,1.5,9.6
+Region II,Isabela,Cordon,16.3,2.0,12.4
+Region II,Isabela,Dinapigue,13.8,4.9,35.3
+Region II,Isabela,Divilican,23.6,4.1,17.4
+Region II,Isabela,Echague,15.2,1.4,9.2
+Region II,Isabela,Gamu,14.8,2.6,17.7
+Region II,Isabela,Ilagan,15.3,1.3,8.3
+Region II,Isabela,Jones,15.5,2.1,13.7
+Region II,Isabela,Luna,13.8,2.2,16.2
+Region II,Isabela,Maconacon,9.9,2.4,24.3
+Region II,Isabela,Delfin Albano,19.9,2.2,11.2
+Region II,Isabela,Mallig,23.8,2.7,11.4
+Region II,Isabela,Naguilian,18.7,2.0,10.5
+Region II,Isabela,Palanan,19.8,2.9,14.9
+Region II,Isabela,Quezon,23.8,3.4,14.2
+Region II,Isabela,Quirino,20.4,2.2,10.8
+Region II,Isabela,Ramon,16.3,2.1,13.1
+Region II,Isabela,Reina Mercedes,14.0,2.5,17.9
+Region II,Isabela,Roxas,15.8,2.1,13.2
+Region II,Isabela,San Agustin,11.8,2.0,17.1
+Region II,Isabela,San Guillermo,21.6,2.5,11.6
+Region II,Isabela,San Isidro,17.3,2.7,15.6
+Region II,Isabela,San Manuel,20.5,2.4,11.9
+Region II,Isabela,San Mariano,24.2,2.0,8.3
+Region II,Isabela,San Mateo,14.6,2.1,14.2
+Region II,Isabela,San Pablo,19.7,3.3,16.7
+Region II,Isabela,Santa Maria,24.4,2.9,11.8
+Region II,Isabela,Santiago City,10.8,1.6,14.3
+Region II,Isabela,Santo Tomas,18.5,2.4,12.9
+Region II,Isabela,Tumaini,19.8,1.8,9.0
+Region II,Nueva Vizcaya,Ambaguio,15.5,3.9,25.1
+Region II,Nueva Vizcaya,Aritao,16.2,2.1,13.1
+Region II,Nueva Vizcaya,Bagabag,13.4,2.2,16.2
+Region II,Nueva Vizcaya,Bambang,11.3,1.5,13.6
+Region II,Nueva Vizcaya,Bayombong,8.6,1.4,16.7
+Region II,Nueva Vizcaya,Diadi,17.6,2.1,12.1
+Region II,Nueva Vizcaya,Dupax del Norte,11.4,2.5,21.6
+Region II,Nueva Vizcaya,Dupax del Sur,15.4,2.5,16.4
+Region II,Nueva Vizcaya,Kasibu,13.6,2.1,15.5
+Region II,Nueva Vizcaya,Kayapa,16.1,2.4,14.9
+Region II,Nueva Vizcaya,Quezon,16.6,3.3,19.6
+Region II,Nueva Vizcaya,Santa Fe,11.4,2.6,23.1
+Region II,Nueva Vizcaya,Solano,10.1,1.7,17.3
+Region II,Nueva Vizcaya,Villaverde,11.1,2.7,24.4
+Region II,Nueva Vizcaya,Alfonso Castaneda,14.0,4.6,33.1
+Region II,Quirino,Aglipay,16.3,2.4,14.8
+Region II,Quirino,Cobarronguis,11.8,2.3,19.5
+Region II,Quirino,Diffun,17.5,1.9,10.6
+Region II,Quirino,Madella,14.4,2.0,13.9
+Region II,Quirino,Saguday,18.8,3.3,17.5
+Region II,Quirino,Nagtipunan,15.4,3.1,20.1
+Region III,Bataan,Abucay,7.0,2.1,29.5
+Region III,Bataan,Bagac,19.7,3.3,16.8
+Region III,Bataan,City of Balanga,5.9,1.2,21.1
+Region III,Bataan,Dinalupihan,11.7,1.9,16.2
+Region III,Bataan,Hermosa,12.6,2.0,16.0
+Region III,Bataan,Limay,7.4,2.4,32.5
+Region III,Bataan,Mariveles,7.2,1.8,24.7
+Region III,Bataan,Morong,20.8,4.8,22.9
+Region III,Bataan,Orani,10.4,1.8,17.6
+Region III,Bataan,Orion,9.5,1.8,19.0
+Region III,Bataan,Pilar,8.9,2.0,23.0
+Region III,Bataan,Samal,12.0,2.2,18.0
+Region III,Bulacan,Angat,7.8,1.9,24.9
+Region III,Bulacan,Balagtas,5.5,1.9,33.9
+Region III,Bulacan,Baliuag,5.7,1.3,22.6
+Region III,Bulacan,Bocaue,3.4,1.4,40.6
+Region III,Bulacan,Bulacan,3.6,1.3,36.9
+Region III,Bulacan,Bustos,8.1,2.0,24.3
+Region III,Bulacan,Calumpit,6.4,1.5,22.8
+Region III,Bulacan,Guiguinto,4.1,1.3,31.3
+Region III,Bulacan,Hagonoy,8.6,1.6,18.4
+Region III,Bulacan,Malolos,5.2,0.8,15.5
+Region III,Bulacan,Marilao,3.4,1.3,37.1
+Region III,Bulacan,Meycauayan,4.5,1.3,27.9
+Region III,Bulacan,Norzagaray,10.0,2.4,24.0
+Region III,Bulacan,Obando,6.8,2.1,30.8
+Region III,Bulacan,Pandi,7.6,1.7,22.0
+Region III,Bulacan,Paombong,7.1,1.8,25.5
+Region III,Bulacan,Plaridel,5.0,1.5,29.4
+Region III,Bulacan,Pulilan,6.9,1.4,20.8
+Region III,Bulacan,San Idelfonso,12.3,1.5,12.0
+Region III,Bulacan,San Jose Monte City,5.8,1.1,19.0
+Region III,Bulacan,San Miguel,11.8,1.6,13.5
+Region III,Bulacan,San Rafael,8.3,1.4,16.3
+Region III,Bulacan,Santa Maria,5.0,1.3,26.2
+Region III,Bulacan,Dona Remedios Trinidad,35.2,5.4,15.4
+Region III,Nueva Ecija,Allaga,25.4,3.6,14.2
+Region III,Nueva Ecija,Bongabon,21.7,2.8,13.0
+Region III,Nueva Ecija,Cabanatuan City,10.9,1.1,9.9
+Region III,Nueva Ecija,Cabiao,15.2,2.5,16.4
+Region III,Nueva Ecija,Carranglan,32.3,4.0,12.4
+Region III,Nueva Ecija,Cuyapo,27.2,2.4,8.9
+Region III,Nueva Ecija,Gabaldon,29.2,3.4,11.6
+Region III,Nueva Ecija,Gapan City,14.0,2.0,14.3
+Region III,Nueva Ecija,Gen Mamerio Natividad,26.8,3.1,11.4
+Region III,Nueva Ecija,Gen Tinio,15.7,3.3,20.8
+Region III,Nueva Ecija,Guimba,25.2,2.3,9.1
+Region III,Nueva Ecija,Jaen,19.0,2.7,14.2
+Region III,Nueva Ecija,Laur,31.2,3.5,11.1
+Region III,Nueva Ecija,Licab,25.5,4.1,16.1
+Region III,Nueva Ecija,Llanera,25.7,3.1,11.8
+Region III,Nueva Ecija,Lupao,26.4,3.3,12.3
+Region III,Nueva Ecija,Munoz City,21.4,2.6,12.0
+Region III,Nueva Ecija,Nampicuan,25.8,3.3,12.9
+Region III,Nueva Ecija,Palayan City,16.0,2.1,13.0
+Region III,Nueva Ecija,Pantabangan,21.8,3.2,14.5
+Region III,Nueva Ecija,Penafranda,11.3,3.1,27.1
+Region III,Nueva Ecija,Quezon,26.7,3.3,12.2
+Region III,Nueva Ecija,Rizal,19.3,2.4,12.5
+Region III,Nueva Ecija,San Antonio,17.2,3.3,18.9
+Region III,Nueva Ecija,San Isidro,11.8,2.7,22.5
+Region III,Nueva Ecija,Sab Jose City,19.1,2.2,11.7
+Region III,Nueva Ecija,San Leonardo,13.6,2.5,18.6
+Region III,Nueva Ecija,Santa Rosa,15.0,2.0,13.0
+Region III,Nueva Ecija,Santo Domingo,20.3,2.5,12.3
+Region III,Nueva Ecija,Talavera,18.3,1.8,10.1
+Region III,Nueva Ecija,Talugtug,36.0,3.0,8.3
+Region III,Nueva Ecija,Zaragoza,19.3,2.6,13.6
+Region III,Pampanga,Angeles City,5.0,1.1,22.4
+Region III,Pampanga,Apalit,9.1,2.1,22.7
+Region III,Pampanga,Arayat,8.7,1.6,18.3
+Region III,Pampanga,Bacolor,6.2,1.8,28.3
+Region III,Pampanga,Candaba,17.7,2.7,15.3
+Region III,Pampanga,Floridablanca,13.4,1.6,11.6
+Region III,Pampanga,Guagua,7.4,1.3,17.9
+Region III,Pampanga,Lubao,10.6,1.5,13.9
+Region III,Pampanga,Mabalacat,7.2,2.1,29.5
+Region III,Pampanga,Macabebe,9.2,1.9,20.9
+Region III,Pampanga,Magalang,8.1,1.9,23.4
+Region III,Pampanga,Masantol,9.1,2.2,24.0
+Region III,Pampanga,Mexico,7.7,1.4,18.5
+Region III,Pampanga,Minalin,9.0,2.1,22.8
+Region III,Pampanga,Porac,11.3,2.1,18.3
+Region III,Pampanga,San Fernando City,4.8,1.1,22.9
+Region III,Pampanga,San Luis,16.2,2.9,17.7
+Region III,Pampanga,San Simon,9.1,2.4,25.8
+Region III,Pampanga,Santa Ana,11.0,2.4,22.0
+Region III,Pampanga,Santa Rita,9.4,2.8,30.3
+Region III,Pampanga,Santo Tomas,6.0,2.3,39.3
+Region III,Pampanga,Sasmuan,11.5,2.3,20.3
+Region III,Tarlac,Anao,18.0,3.3,18.1
+Region III,Tarlac,Bamban,10.6,3.4,32.0
+Region III,Tarlac,Camiling,15.8,1.8,11.6
+Region III,Tarlac,Capas,13.2,2.5,19.3
+Region III,Tarlac,Concepcion,13.5,1.9,13.9
+Region III,Tarlac,Gerona,17.6,2.2,12.4
+Region III,Tarlac,La Paz,17.0,2.5,14.5
+Region III,Tarlac,Mayantoc,28.3,4.0,14.0
+Region III,Tarlac,Moncada,15.9,2.1,13.4
+Region III,Tarlac,Paniqui,12.8,1.6,12.5
+Region III,Tarlac,Pura,14.7,2.7,18.1
+Region III,Tarlac,Ramos,16.7,3.2,19.2
+Region III,Tarlac,San Clemente,18.2,3.1,17.3
+Region III,Tarlac,San Manuel,17.0,3.1,18.4
+Region III,Tarlac,Santa Ignacia,21.8,2.9,13.1
+Region III,Tarlac,Tarlac City,8.7,0.8,9.5
+Region III,Tarlac,Victoria,20.2,2.7,13.3
+Region III,Tarlac,San Jose,32.1,3.9,12.1
+Region III,Zambales,Botolan,17.4,2.4,14.0
+Region III,Zambales,Cabanglan,21.2,2.7,12.5
+Region III,Zambales,Candelabra,18.2,2.9,16.1
+Region III,Zambales,Castillejos,12.5,2.6,21.1
+Region III,Zambales,Iba,12.5,2.8,22.2
+Region III,Zambales,Masinloc,18.2,3.4,18.4
+Region III,Zambales,Olongapo City,4.5,1.6,35.1
+Region III,Zambales,Paluig,21.3,2.7,12.7
+Region III,Zambales,San Antonio,12.0,2.1,17.8
+Region III,Zambales,San Felipe,14.5,3.7,25.4
+Region III,Zambales,San Marcelino,14.8,2.0,13.5
+Region III,Zambales,San Narciso,10.7,2.1,19.4
+Region III,Zambales,Santa Cruz,18.7,2.7,14.3
+Region III,Zambales,Subic,11.5,2.5,21.8
+Region III,Aurora,Baler,9.6,2.2,23.4
+Region III,Aurora,Casiguran,19.7,3.5,17.5
+Region III,Aurora,Dilasag,19.2,3.9,20.4
+Region III,Aurora,Dinalungan,25.6,4.9,19.2
+Region III,Aurora,Dingalan,14.5,4.2,28.8
+Region III,Aurora,Dipaculao,17.9,3.1,17.3
+Region III,Aurora,Maria Aurora,13.2,2.0,15.4
+Region III,Aurora,San Luis,13.8,3.1,22.0
+Region IV-A,Batangas,Agoncillo,15.4,1.9,12.1
+Region IV-A,Batangas,Alitagtag,8.6,1.5,17.0
+Region IV-A,Batangas,Balayan,14.1,1.3,9.0
+Region IV-A,Batangas,Balete,17.2,2.8,16.2
+Region IV-A,Batangas,Batangas City,7.1,0.7,9.7
+Region IV-A,Batangas,Bauan,2.7,0.7,24.4
+Region IV-A,Batangas,Calaca,17.8,1.7,9.4
+Region IV-A,Batangas,Calatagan,21.9,2.4,10.8
+Region IV-A,Batangas,Cuenca,9.9,1.6,16.5
+Region IV-A,Batangas,Ibaan,12.1,1.8,15.0
+Region IV-A,Batangas,Laurel,21.8,2.5,11.3
+Region IV-A,Batangas,Lemery,14.3,1.3,8.9
+Region IV-A,Batangas,Lian,16.5,2.4,14.7
+Region IV-A,Batangas,Lipa City,3.9,0.6,16.3
+Region IV-A,Batangas,Lobo,19.1,2.1,10.7
+Region IV-A,Batangas,Mabini,11.7,1.5,12.9
+Region IV-A,Batangas,Malvar,6.5,1.5,22.2
+Region IV-A,Batangas,Mataas Na Kahoy,9.8,2.0,20.1
+Region IV-A,Batangas,Nasugbu,17.3,2.0,11.3
+Region IV-A,Batangas,Padre Garcia,16.5,2.5,15.4
+Region IV-A,Batangas,Rosario,16.8,1.4,8.1
+Region IV-A,Batangas,San Jose,11.2,1.7,15.3
+Region IV-A,Batangas,San Juan,15.4,1.7,11.0
+Region IV-A,Batangas,San Luis,9.5,1.6,17.1
+Region IV-A,Batangas,San Nicolas,5.3,1.5,27.5
+Region IV-A,Batangas,San Pascual,5.8,1.2,20.1
+Region IV-A,Batangas,Santa Teresita,9.4,2.0,20.8
+Region IV-A,Batangas,Santo Tomas,8.6,1.4,16.3
+Region IV-A,Batangas,Taal,4.1,1.0,23.2
+Region IV-A,Batangas,Talisay,5.6,1.5,26.3
+Region IV-A,Batangas,City Of Tanauan,4.0,0.7,16.6
+Region IV-A,Batangas,Taysan,16.6,2.0,12.2
+Region IV-A,Batangas,Tingloy,26.2,2.7,10.5
+Region IV-A,Batangas,Tuy,18.0,1.9,10.6
+Region IV-A,Cavite,Alfonso,13.8,1.6,11.9
+Region IV-A,Cavite,Amadeo,6.3,1.2,19.2
+Region IV-A,Cavite,Bacoor,3.6,0.6,17.1
+Region IV-A,Cavite,Carmona,3.4,1.7,48.4
+Region IV-A,Cavite,Cavite City,5.5,0.9,15.5
+Region IV-A,Cavite,Dasmariñas,5.3,0.8,15.8
+Region IV-A,Cavite,General Emilio Aguinaldo,13.7,2.1,15.4
+Region IV-A,Cavite,General Trias,3.5,1.0,29.3
+Region IV-A,Cavite,Imus,2.3,0.4,16.2
+Region IV-A,Cavite,Indang,6.7,0.9,13.5
+Region IV-A,Cavite,Kawit,4.8,1.1,22.5
+Region IV-A,Cavite,Magallanes,19.4,2.7,13.8
+Region IV-A,Cavite,Maragondon,16.3,2.2,13.3
+Region IV-A,Cavite,Mendez (Mendez-Nuñez),4.5,1.1,23.5
+Region IV-A,Cavite,Naic,8.4,1.5,18.1
+Region IV-A,Cavite,Noveleta,3.0,1.0,34.8
+Region IV-A,Cavite,Rosario,5.9,1.3,22.4
+Region IV-A,Cavite,Silang,11.0,1.3,11.6
+Region IV-A,Cavite,Tagaytay City,5.6,1.0,18.4
+Region IV-A,Cavite,Tanza,5.4,1.0,17.8
+Region IV-A,Cavite,Ternate,16.5,2.8,16.8
+Region IV-A,Cavite,Trece Martires City,4.3,1.3,30.9
+Region IV-A,Cavite,Gen. Mariano Alvarez,5.7,1.1,19.7
+Region IV-A,Laguna,Alaminos,6.4,1.6,25.5
+Region IV-A,Laguna,Bay,2.8,1.0,36.5
+Region IV-A,Laguna,Biñan,1.7,0.7,43.1
+Region IV-A,Laguna,Cabuyao,1.7,0.7,38.9
+Region IV-A,Laguna,Calamba City,2.0,0.5,25.9
+Region IV-A,Laguna,Calauan,12.0,1.9,16.1
+Region IV-A,Laguna,Cavinti,11.5,1.9,16.5
+Region IV-A,Laguna,Famy,11.0,2.5,22.6
+Region IV-A,Laguna,Kalayaan,12.8,5.0,39.4
+Region IV-A,Laguna,Liliw,7.6,1.5,19.2
+Region IV-A,Laguna,Los Baños,1.6,0.8,46.0
+Region IV-A,Laguna,Luisiana,8.2,1.5,17.9
+Region IV-A,Laguna,Lumban,7.2,1.7,23.5
+Region IV-A,Laguna,Mabitac,14.4,2.7,18.7
+Region IV-A,Laguna,Magdalena,13.8,2.1,15.2
+Region IV-A,Laguna,Majayjay,13.4,1.7,12.7
+Region IV-A,Laguna,Nagcarlan,7.3,1.2,16.9
+Region IV-A,Laguna,Paete,3.2,1.7,53.3
+Region IV-A,Laguna,Pagsanjan,2.8,0.9,32.9
+Region IV-A,Laguna,Pakil,8.9,2.2,24.6
+Region IV-A,Laguna,Pangil,7.4,2.2,29.3
+Region IV-A,Laguna,Pila,3.4,1.0,30.4
+Region IV-A,Laguna,Rizal,5.8,1.7,30.1
+Region IV-A,Laguna,San Pablo City,2.7,0.5,19.8
+Region IV-A,Laguna,San Pedro,1.4,0.6,41.1
+Region IV-A,Laguna,Santa Cruz,2.3,0.8,33.5
+Region IV-A,Laguna,Santa Maria,16.8,2.1,12.2
+Region IV-A,Laguna,Santa Rosa City,1.5,0.6,40.1
+Region IV-A,Laguna,Siniloan,11.4,2.2,19.7
+Region IV-A,Laguna,Victoria,3.7,1.5,39.1
+Region IV-A,Quezon,Agdangan,19.8,2.6,12.9
+Region IV-A,Quezon,Alabat,17.0,1.9,11.3
+Region IV-A,Quezon,Atimonan,12.7,1.4,11.1
+Region IV-A,Quezon,Buenavista,34.9,2.3,6.5
+Region IV-A,Quezon,Burdeos,39.3,3.8,9.6
+Region IV-A,Quezon,Calauag,25.8,1.8,6.8
+Region IV-A,Quezon,Candelaria,10.6,1.6,15.1
+Region IV-A,Quezon,Catanauan,27.8,2.0,7.1
+Region IV-A,Quezon,Dolores,13.3,2.5,18.4
+Region IV-A,Quezon,General Luna,27.5,2.5,9.0
+Region IV-A,Quezon,General Nakar,27.8,3.0,10.9
+Region IV-A,Quezon,Guinayangan,27.5,1.8,6.5
+Region IV-A,Quezon,Gumaca,16.7,1.6,9.3
+Region IV-A,Quezon,Infanta,15.0,2.3,15.2
+Region IV-A,Quezon,Jomalig,39.0,5.1,13.2
+Region IV-A,Quezon,Lopez,21.7,1.4,6.5
+Region IV-A,Quezon,Lucban,5.2,1.3,24.7
+Region IV-A,Quezon,Lucena City,3.6,0.9,24.7
+Region IV-A,Quezon,Macalelon,29.5,2.5,8.3
+Region IV-A,Quezon,Mauban,21.5,1.9,9.0
+Region IV-A,Quezon,Mulanay,31.5,2.5,7.9
+Region IV-A,Quezon,Padre Burgos,17.2,2.4,13.7
+Region IV-A,Quezon,Pagbilao,13.4,2.0,14.9
+Region IV-A,Quezon,Panukulan,34.5,3.3,9.5
+Region IV-A,Quezon,Patnanungan,36.0,5.7,15.8
+Region IV-A,Quezon,Perez,29.7,3.3,11.2
+Region IV-A,Quezon,Pitogo,24.2,2.0,8.2
+Region IV-A,Quezon,Plaridel,12.3,2.2,17.7
+Region IV-A,Quezon,Polillo,27.0,2.2,8.3
+Region IV-A,Quezon,Quezon,29.2,2.5,8.6
+Region IV-A,Quezon,Real,17.1,2.0,11.8
+Region IV-A,Quezon,Sampaloc,11.9,2.2,18.8
+Region IV-A,Quezon,San Andres,39.0,5.2,13.3
+Region IV-A,Quezon,San Antonio,16.7,2.4,14.4
+Region IV-A,Quezon,San Francisco (Aurora),41.4,3.3,7.9
+Region IV-A,Quezon,San Narciso,41.1,3.3,8.1
+Region IV-A,Quezon,Sariaya,14.5,1.7,11.8
+Region IV-A,Quezon,Tagkawayan,23.7,2.0,8.3
+Region IV-A,Quezon,Tayabas,10.5,1.4,13.0
+Region IV-A,Quezon,Tiaong,13.8,1.9,13.5
+Region IV-A,Quezon,Unisan,21.2,1.6,7.6
+Region IV-A,Rizal,Angono,2.4,1.2,49.4
+Region IV-A,Rizal,Antipolo City,3.6,1.0,29.3
+Region IV-A,Rizal,Baras,11.4,2.8,24.8
+Region IV-A,Rizal,Binangonan,4.0,0.8,19.5
+Region IV-A,Rizal,Cainta,1.4,0.8,56.6
+Region IV-A,Rizal,Cardona,5.5,1.6,28.3
+Region IV-A,Rizal,Jala-Jala,15.7,2.5,16.0
+Region IV-A,Rizal,Rodriguez (Montalban),4.5,1.6,35.3
+Region IV-A,Rizal,Morong,2.2,1.1,50.0
+Region IV-A,Rizal,Pililla,5.9,2.0,33.3
+Region IV-A,Rizal,San Mateo,2.2,0.8,37.6
+Region IV-A,Rizal,Tanay,10.5,2.0,18.9
+Region IV-A,Rizal,Taytay,3.2,1.5,47.1
+Region IV-A,Rizal,Teresa,3.3,1.6,47.3
+Region IV-B,Marinduque,Boac,26.5,2.3,8.6
+Region IV-B,Marinduque,Buenavista,36.9,4.8,13.0
+Region IV-B,Marinduque,Gasan,30.7,3.8,12.4
+Region IV-B,Marinduque,Mogpog,26.8,3.0,11.1
+Region IV-B,Marinduque,Santa Cruz,30.6,2.6,8.5
+Region IV-B,Marinduque,Torrijos,35.2,4.2,12.0
+Region IV-B,Occidental Mindoro,Abra de Ilog,37.5,6.1,16.4
+Region IV-B,Occidental Mindoro,Calintaan,34.2,6.4,18.7
+Region IV-B,Occidental Mindoro,Looc,32.4,5.5,17.0
+Region IV-B,Occidental Mindoro,Lubang,23.8,3.7,15.7
+Region IV-B,Occidental Mindoro,Magsaysay,38.3,6.0,15.8
+Region IV-B,Occidental Mindoro,Mamburao,28.9,5.3,18.2
+Region IV-B,Occidental Mindoro,Paluan,38.0,6.0,15.6
+Region IV-B,Occidental Mindoro,Rizal,36.0,5.4,15.0
+Region IV-B,Occidental Mindoro,Sablayan,34.8,4.5,12.9
+Region IV-B,Occidental Mindoro,San Jose,29.8,3.0,10.2
+Region IV-B,Occidental Mindoro,Santa Cruz,38.1,6.1,16.0
+Region IV-B,Oriental Mindoro,Baco,44.5,3.9,8.8
+Region IV-B,Oriental Mindoro,Bansud,39.0,5.6,14.4
+Region IV-B,Oriental Mindoro,Bongabong,35.8,3.4,9.4
+Region IV-B,Oriental Mindoro,Bulalacao,51.5,6.3,12.3
+Region IV-B,Oriental Mindoro,Calapan City,23.0,2.4,10.4
+Region IV-B,Oriental Mindoro,Gloria,35.5,3.7,10.5
+Region IV-B,Oriental Mindoro,Mansalay,41.8,5.5,13.2
+Region IV-B,Oriental Mindoro,Naujan,38.4,3.2,8.3
+Region IV-B,Oriental Mindoro,Pinamalayan,31.7,3.1,9.7
+Region IV-B,Oriental Mindoro,Pola,37.9,4.5,11.7
+Region IV-B,Oriental Mindoro,Puerto Galera,23.9,4.2,17.4
+Region IV-B,Oriental Mindoro,Roxas,29.7,3.8,12.9
+Region IV-B,Oriental Mindoro,San Teodoro,33.6,5.3,15.8
+Region IV-B,Oriental Mindoro,Socorro,36.8,4.2,11.5
+Region IV-B,Oriental Mindoro,Victoria,35.2,3.4,9.6
+Region IV-B,Palawan,Araceli,23.4,4.1,17.7
+Region IV-B,Palawan,Agutaya,36.1,8.6,23.9
+Region IV-B,Palawan,Araceli,35.1,5.8,16.5
+Region IV-B,Palawan,Balabac,44.2,8.0,18.0
+Region IV-B,Palawan,Bataraza,27.5,4.5,16.2
+Region IV-B,Palawan,Brooke's Point,26.7,3.7,13.7
+Region IV-B,Palawan,Busuanga,26.5,4.8,18.0
+Region IV-B,Palawan,Cagayancillo,36.6,7.7,21.1
+Region IV-B,Palawan,Coron,28.4,4.6,16.1
+Region IV-B,Palawan,Cuyo,20.4,3.5,17.2
+Region IV-B,Palawan,Dumaran,41.6,5.7,13.8
+Region IV-B,Palawan,El Nido,29.7,5.0,16.9
+Region IV-B,Palawan,Linapacan,18.1,5.3,29.5
+Region IV-B,Palawan,Magsaysay,17.6,3.6,20.6
+Region IV-B,Palawan,Narra,21.4,3.8,17.5
+Region IV-B,Palawan,Puerto Princesa City,15.5,2.2,14.2
+Region IV-B,Palawan,Quezon,34.0,5.6,16.5
+Region IV-B,Palawan,Roxas,24.9,3.4,13.6
+Region IV-B,Palawan,San Vicente,25.6,4.7,18.2
+Region IV-B,Palawan,Taytay,35.1,4.1,11.6
+Region IV-B,Palawan,Culion,28.5,4.7,16.3
+Region IV-B,Palawan,Rizal,32.7,5.9,18.2
+Region IV-B,Palawan,Sofronio Espanola,30.1,6.0,19.8
+Region IV-B,Romblon,Alcantara,37.3,6.5,17.4
+Region IV-B,Romblon,Banton,38.0,5.9,15.6
+Region IV-B,Romblon,Cajidiocan,50.4,6.5,12.8
+Region IV-B,Romblon,Calatrava,47.4,8.1,17.2
+Region IV-B,Romblon,Concepcion,41.9,4.9,11.6
+Region IV-B,Romblon,Corcuera,46.6,6.1,13.0
+Region IV-B,Romblon,Looc,48.8,6.3,12.9
+Region IV-B,Romblon,Magdiwang,45.9,6.7,14.5
+Region IV-B,Romblon,Odiongan,35.9,4.5,12.6
+Region IV-B,Romblon,Romblon,39.2,5.4,13.8
+Region IV-B,Romblon,San Agustin,43.5,6.1,14.0
+Region IV-B,Romblon,San Andres,45.5,6.7,14.7
+Region IV-B,Romblon,San Fernando,47.4,6.9,14.5
+Region IV-B,Romblon,San Jose,50.5,8.4,16.6
+Region IV-B,Romblon,Santa Fe,50.1,6.4,12.7
+Region IV-B,Romblon,Ferrol,45.7,7.6,16.6
+Region IV-B,Romblon,Santa Maria,45.7,8.0,17.5
+Region V,Albay,Bacacay,40.1,2.4,6.0
+Region V,Albay,Camalig,38.7,2.2,5.8
+Region V,Albay,Daraga (Locsin),29.7,2.0,6.7
+Region V,Albay,Guinobatan,37.2,2.2,5.9
+Region V,Albay,Jovellar,52.7,3.7,7.1
+Region V,Albay,Legazpi City,30.7,2.1,6.7
+Region V,Albay,Libon,48.3,2.7,5.6
+Region V,Albay,Ligao City,40.5,2.2,5.3
+Region V,Albay,Malilipot,37.3,3.4,9.0
+Region V,Albay,Malinao,40.2,2.8,7.0
+Region V,Albay,Manito,45.4,4.1,9.1
+Region V,Albay,Oas,42.9,2.2,5.1
+Region V,Albay,Pio Duran,51.3,3.0,5.8
+Region V,Albay,Polangui,37.8,2.4,6.2
+Region V,Albay,Rapu-Rapu,58.6,3.2,5.5
+Region V,Albay,Santo Domingo,34.2,2.8,8.3
+Region V,Albay,Tabacco City,35.1,2.3,6.5
+Region V,Albay,Tiwi,37.9,2.9,7.6
+Region V,Camarines Norte,Basud,38.3,2.8,7.4
+Region V,Camarines Norte,Capalonga,48.2,3.3,6.8
+Region V,Camarines Norte,Daet,21.0,2.1,9.9
+Region V,Camarines Norte,San Lorenzo Ruiz,45.4,5.1,11.3
+Region V,Camarines Norte,Jose Panganiban,37.3,3.0,7.9
+Region V,Camarines Norte,Labo,36.5,2.1,5.8
+Region V,Camarines Norte,Mercedes,43.4,3.0,7.0
+Region V,Camarines Norte,Paracale,35.6,2.8,7.8
+Region V,Camarines Norte,San Vicente,34.7,4.3,12.4
+Region V,Camarines Norte,Santa Elena,43.1,3.7,8.7
+Region V,Camarines Norte,Talisay,28.6,3.1,10.9
+Region V,Camarines Norte,Vinzons,42.1,3.4,8.1
+Region V,Camarines Sur,Baao,37.4,3.4,9.0
+Region V,Camarines Sur,Balatan,50.0,4.1,8.1
+Region V,Camarines Sur,Bato,40.1,2.9,7.1
+Region V,Camarines Sur,Bombon,35.1,5.1,14.4
+Region V,Camarines Sur,Buhi,44.0,2.7,6.2
+Region V,Camarines Sur,Bulaa,46.0,3.2,6.9
+Region V,Camarines Sur,Cabusao,46.1,5.6,12.0
+Region V,Camarines Sur,Calabanga,42.7,2.6,6.1
+Region V,Camarines Sur,Camaligan,29.4,4.0,13.5
+Region V,Camarines Sur,Canaman,32.4,2.8,8.5
+Region V,Camarines Sur,Caramoan,53.5,2.9,5.4
+Region V,Camarines Sur,Del Gallego,52.4,3.4,6.6
+Region V,Camarines Sur,Gainza,46.0,6.2,13.5
+Region V,Camarines Sur,Garchitorena,59.0,3.2,5.4
+Region V,Camarines Sur,Goa,41.2,2.8,6.8
+Region V,Camarines Sur,Iriga City,31.5,2.5,7.8
+Region V,Camarines Sur,Lagonoy,46.7,3.1,6.6
+Region V,Camarines Sur,Libmanan,46.9,2.7,5.7
+Region V,Camarines Sur,Lupi,49.9,3.4,6.7
+Region V,Camarines Sur,Magarao,40.3,4.7,11.7
+Region V,Camarines Sur,Milaor,36.6,3.3,8.9
+Region V,Camarines Sur,Minalabac,48.4,3.6,7.4
+Region V,Camarines Sur,Nabua,35.5,3.0,8.6
+Region V,Camarines Sur,Naga City,24.4,2.4,9.8
+Region V,Camarines Sur,Ocampo,43.8,3.1,7.1
+Region V,Camarines Sur,Pamplona,46.7,3.8,8.1
+Region V,Camarines Sur,Pasacao,48.7,4.7,9.6
+Region V,Camarines Sur,Pili,33.1,2.4,7.4
+Region V,Camarines Sur,Presentacion,50.2,4.6,9.1
+Region V,Camarines Sur,Ragay,46.4,3.1,6.6
+Region V,Camarines Sur,Sagnay,51.8,3.6,7.0
+Region V,Camarines Sur,San Fernando,41.6,3.1,7.6
+Region V,Camarines Sur,San Jose,39.1,3.2,8.1
+Region V,Camarines Sur,Sipocot,43.8,2.7,6.2
+Region V,Camarines Sur,Siruma,58.1,4.0,6.8
+Region V,Camarines Sur,Tigaon,41.9,2.9,6.9
+Region V,Camarines Sur,Tinambac,53.2,3.3,6.3
+Region V,Catanduanes,Bagamanoc,38.0,4.0,10.4
+Region V,Catanduanes,Baras,39.0,2.7,7.0
+Region V,Catanduanes,Bato,30.9,2.7,8.6
+Region V,Catanduanes,Caramoran,49.7,3.9,7.8
+Region V,Catanduanes,Gigmoto,41.5,4.2,10.0
+Region V,Catanduanes,Pandan,45.0,3.2,7.1
+Region V,Catanduanes,Panganiban,35.0,3.9,11.3
+Region V,Catanduanes,San Andres,36.6,2.6,7.1
+Region V,Catanduanes,San Miguel,36.5,2.9,7.9
+Region V,Catanduanes,Viga,41.2,2.8,6.7
+Region V,Catanduanes,Virac,22.7,1.5,6.4
+Region V,Masbate,Aroroy,45.5,3.2,7.0
+Region V,Masbate,Baleno,39.7,3.5,8.7
+Region V,Masbate,Balud,43.1,3.7,8.7
+Region V,Masbate,Batuan,37.0,4.2,11.4
+Region V,Masbate,Cataingan,41.5,2.8,6.6
+Region V,Masbate,Cawayan,47.6,3.2,6.7
+Region V,Masbate,Claveria,46.7,4.1,8.8
+Region V,Masbate,Dimasalang,41.3,3.3,7.9
+Region V,Masbate,Esperanza,45.5,3.5,7.6
+Region V,Masbate,Mandaon,41.1,3.3,8.1
+Region V,Masbate,Masbate City,28.9,2.3,8.0
+Region V,Masbate,Milagros,45.3,3.2,7.0
+Region V,Masbate,Mobo,37.4,3.0,8.0
+Region V,Masbate,Monreal,44.7,4.2,9.4
+Region V,Masbate,Palanas,40.4,3.2,8.0
+Region V,Masbate,Pio V. Corpuz,43.8,3.8,8.6
+Region V,Masbate,Placer,47.0,3.2,6.8
+Region V,Masbate,San Fernando,38.1,3.0,7.9
+Region V,Masbate,San Jacinto,39.1,3.7,9.5
+Region V,Masbate,San Pascual,52.7,3.4,6.5
+Region V,Masbate,Uson,42.9,2.9,6.8
+Region V,Sorsogon,Bacon,36.2,2.7,7.5
+Region V,Sorsogon,Barcelona,39.1,3.1,7.9
+Region V,Sorsogon,Bulan,38.8,2.6,6.6
+Region V,Sorsogon,Bulusan,32.9,2.6,8.0
+Region V,Sorsogon,Casiguran,38.9,3.1,7.9
+Region V,Sorsogon,Castilla,44.4,3.0,6.8
+Region V,Sorsogon,Donsol,47.3,3.1,6.6
+Region V,Sorsogon,Gubat,33.6,2.4,7.2
+Region V,Sorsogon,Irosin,34.2,2.7,7.9
+Region V,Sorsogon,Juban,41.6,3.3,8.0
+Region V,Sorsogon,Magallanes,44.6,3.5,7.8
+Region V,Sorsogon,Matnog,43.2,2.8,6.6
+Region V,Sorsogon,Pilar,44.3,2.5,5.5
+Region V,Sorsogon,Prieto Diaz,36.7,3.1,8.5
+Region V,Sorsogon,Santa Magdalena,35.8,3.8,10.6
+Region V,Sorsogon,Sorsogon City,27.6,2.3,8.3
+Region VI,Aklan,Altavas,48.9,4.6,9.4
+Region VI,Aklan,Balete,52.7,5.0,9.5
+Region VI,Aklan,Banga,39.6,2.9,7.4
+Region VI,Aklan,Batan,45.7,4.2,9.2
+Region VI,Aklan,Buruanga,47.0,4.5,9.5
+Region VI,Aklan,Ibajay,39.6,3.4,8.7
+Region VI,Aklan,Kalibo,24.9,3.3,13.2
+Region VI,Aklan,Lezo,39.1,4.1,10.6
+Region VI,Aklan,Libacao,62.3,4.3,6.9
+Region VI,Aklan,Madalag,63.3,4.2,6.6
+Region VI,Aklan,Makato,48.9,3.8,7.8
+Region VI,Aklan,Malay,24.8,4.7,19.0
+Region VI,Aklan,Malinao,43.3,4.0,9.2
+Region VI,Aklan,Nabas,36.9,3.5,9.5
+Region VI,Aklan,New Washington,42.0,4.2,10.1
+Region VI,Aklan,Numancia,24.4,2.9,11.7
+Region VI,Aklan,Tangalan,42.5,4.8,11.2
+Region VI,Antique,Anini-Y,45.4,4.0,8.9
+Region VI,Antique,Barbaza,46.3,3.6,7.7
+Region VI,Antique,Belizon,25.8,5.1,19.6
+Region VI,Antique,Bugasong,39.7,3.3,8.3
+Region VI,Antique,Caluya,49.7,5.6,11.3
+Region VI,Antique,Culasi,37.2,3.2,8.6
+Region VI,Antique,Tobias Fornier,44.1,3.6,8.1
+Region VI,Antique,Hamtic,38.5,3.4,8.9
+Region VI,Antique,Lauan-an,42.1,4.0,9.5
+Region VI,Antique,Libertad,37.3,4.9,13.2
+Region VI,Antique,Pandan,40.1,3.7,9.2
+Region VI,Antique,Patnongon,41.8,4.1,9.8
+Region VI,Antique,San Jose,23.8,3.0,12.5
+Region VI,Antique,San Remigio,55.5,4.1,7.3
+Region VI,Antique,Sebaste,43.0,6.2,14.4
+Region VI,Antique,Sibalom,37.5,2.8,7.5
+Region VI,Antique,Tibiao,49.6,4.3,8.7
+Region VI,Antique,Valderama,43.5,3.7,8.4
+Region VI,Capiz,Cuartero,27.3,4.7,17.3
+Region VI,Capiz,Dao,26.2,4.8,18.5
+Region VI,Capiz,Dumalag,15.6,3.8,24.4
+Region VI,Capiz,Dumarao,26.7,4.5,16.7
+Region VI,Capiz,Ivisan,20.2,4.6,22.6
+Region VI,Capiz,Jamindan,32.8,4.5,13.6
+Region VI,Capiz,Ma-ayon,25.5,4.0,15.7
+Region VI,Capiz,Mambusao,19.4,3.6,18.5
+Region VI,Capiz,Panay,23.1,3.5,15.0
+Region VI,Capiz,Panitan,22.1,4.1,18.6
+Region VI,Capiz,Pilar,22.2,4.2,18.7
+Region VI,Capiz,Pontevedra,17.8,3.5,19.5
+Region VI,Capiz,President Roxas,20.4,4.4,21.7
+Region VI,Capiz,Roxas City,12.1,2.7,22.4
+Region VI,Capiz,Sapi-An,24.3,4.9,20.1
+Region VI,Capiz,Sigma,17.5,3.7,21.0
+Region VI,Capiz,Tapaz,29.0,3.6,12.3
+Region VI,Iloilo,Ajuy,30.9,3.6,11.5
+Region VI,Iloilo,Alimodian,30.4,4.0,13.2
+Region VI,Iloilo,Anilao,31.5,4.5,14.2
+Region VI,Iloilo,Badiangan,18.5,2.9,15.8
+Region VI,Iloilo,Balasan,30.4,3.9,12.9
+Region VI,Iloilo,Banate,19.8,3.3,16.6
+Region VI,Iloilo,Barotac Nuevo,15.9,2.5,15.9
+Region VI,Iloilo,Barotac Viejo,26.2,3.8,14.5
+Region VI,Iloilo,Batad,33.1,4.7,14.3
+Region VI,Iloilo,Bingawan,26.8,5.6,20.7
+Region VI,Iloilo,Cabatuan,15.2,2.0,13.1
+Region VI,Iloilo,Calinog,29.6,3.5,11.8
+Region VI,Iloilo,Carles,46.8,5.2,11.1
+Region VI,Iloilo,Concepcion,48.4,4.7,9.6
+Region VI,Iloilo,Dingle,17.3,2.8,16.2
+Region VI,Iloilo,Duenas,22.3,3.1,13.9
+Region VI,Iloilo,Dumangas,16.0,2.3,14.5
+Region VI,Iloilo,Estancia,22.1,3.2,14.3
+Region VI,Iloilo,Guimbal,15.8,2.4,15.0
+Region VI,Iloilo,Igbaras,29.2,3.8,12.8
+Region VI,Iloilo,Iloilo City,7.6,1.0,13.3
+Region VI,Iloilo,Janiuay,25.8,2.8,10.9
+Region VI,Iloilo,Lambunao,23.2,3.3,14.1
+Region VI,Iloilo,Leganes,15.2,2.9,18.8
+Region VI,Iloilo,Lemery,33.8,4.2,12.3
+Region VI,Iloilo,Leon,33.7,4.4,13.1
+Region VI,Iloilo,Maasin,22.6,2.7,12.1
+Region VI,Iloilo,Miag-ao,26.1,2.9,11.0
+Region VI,Iloilo,Mina,15.5,2.9,18.5
+Region VI,Iloilo,New Lucena,16.8,2.9,17.3
+Region VI,Iloilo,Oton,15.8,2.2,14.2
+Region VI,Iloilo,Passi City,24.5,2.9,12.0
+Region VI,Iloilo,Pavia,10.2,2.1,20.3
+Region VI,Iloilo,Pototan,17.3,2.4,13.9
+Region VI,Iloilo,San Dionisio,42.3,4.6,10.9
+Region VI,Iloilo,San Enrique,28.3,3.7,13.0
+Region VI,Iloilo,San Joaquin,38.3,4.2,10.8
+Region VI,Iloilo,San Miguel,17.9,2.9,15.9
+Region VI,Iloilo,San Rafael,30.1,5.3,17.5
+Region VI,Iloilo,Santa Barbara,13.5,2.0,14.5
+Region VI,Iloilo,Sara,24.1,3.1,12.9
+Region VI,Iloilo,Tigbauan,23.3,3.0,12.9
+Region VI,Iloilo,Tubungan,35.5,4.2,11.8
+Region VI,Iloilo,Zarraga,15.4,2.6,16.7
+Region VI,Negros Occidental,Bacolod City,11.2,2.0,18.2
+Region VI,Negros Occidental,Bago City,20.7,3.0,14.5
+Region VI,Negros Occidental,Binalbagan,28.9,4.4,15.1
+Region VI,Negros Occidental,Cadiz City,27.3,3.4,12.5
+Region VI,Negros Occidental,Calatrava,39.1,3.4,8.7
+Region VI,Negros Occidental,Candoni,41.9,5.2,12.4
+Region VI,Negros Occidental,Cauayan,55.2,4.7,8.6
+Region VI,Negros Occidental,Enrique B. Magalona,24.7,3.2,12.8
+Region VI,Negros Occidental,Escalante City,25.6,3.8,14.8
+Region VI,Negros Occidental,Himamaylan City,31.4,3.6,11.4
+Region VI,Negros Occidental,Hinigaran,30.6,3.9,12.6
+Region VI,Negros Occidental,Hinoba-An (Asia),52.8,5.8,10.9
+Region VI,Negros Occidental,Ilog,39.1,4.9,12.4
+Region VI,Negros Occidental,Isabela,33.8,4.0,11.7
+Region VI,Negros Occidental,Kabankalan City,40.9,3.2,7.8
+Region VI,Negros Occidental,La Carlota City,19.3,3.4,17.5
+Region VI,Negros Occidental,La Castellana,29.7,5.2,17.6
+Region VI,Negros Occidental,Manapla,28.4,4.8,16.8
+Region VI,Negros Occidental,Moises Padilla (Magallon),40.6,5.5,13.5
+Region VI,Negros Occidental,Murcia,20.7,3.8,18.4
+Region VI,Negros Occidental,Pontevedra,20.4,3.3,16.1
+Region VI,Negros Occidental,Pulupandan,24.6,3.2,13.1
+Region VI,Negros Occidental,Sagay City,28.0,3.2,11.6
+Region VI,Negros Occidental,San Carlos City,34.0,4.4,12.8
+Region VI,Negros Occidental,San Enrique,21.8,5.1,23.4
+Region VI,Negros Occidental,Silay City,17.6,3.7,21.2
+Region VI,Negros Occidental,Sipalay City,45.9,5.0,11.0
+Region VI,Negros Occidental,Talisay City,15.7,2.9,18.7
+Region VI,Negros Occidental,Toboso,31.8,6.1,19.2
+Region VI,Negros Occidental,Valladolid,21.2,3.4,16.3
+Region VI,Negros Occidental,Victorias City,19.2,3.0,15.4
+Region VI,Negros Occidental,Salvador Benedicto,55.9,8.1,14.6
+Region VI,Guimaras,Buenavista,23.9,2.5,10.4
+Region VI,Guimaras,Jordan,17.7,3.3,18.4
+Region VI,Guimaras,Nueva Valencia,36.4,3.9,10.7
+Region VI,Guimaras,San Lorenzo,44.0,5.5,12.5
+Region VI,Guimaras,Sibunag,49.3,5.7,11.6
+Region VII,Bohol,Alburquerque,25.4,3.3,13.1
+Region VII,Bohol,Alicia,53.7,4.5,8.4
+Region VII,Bohol,Anda,49.6,4.2,8.5
+Region VII,Bohol,Antequera,36.8,3.1,8.4
+Region VII,Bohol,Baclayon,23.9,2.7,11.3
+Region VII,Bohol,Balilihan,51.9,2.9,5.5
+Region VII,Bohol,Batuan,46.8,3.4,7.3
+Region VII,Bohol,Bilar,47.9,3.5,7.4
+Region VII,Bohol,Buenavista,55.9,3.1,5.5
+Region VII,Bohol,Calape,40.4,2.7,6.6
+Region VII,Bohol,Canduay,52.3,3.0,5.8
+Region VII,Bohol,Carmen,55.2,3.3,5.9
+Region VII,Bohol,Catigbian,51.3,3.4,6.7
+Region VII,Bohol,Clarin,39.2,3.3,8.4
+Region VII,Bohol,Corella,32.0,4.1,12.9
+Region VII,Bohol,Cortes,26.9,3.6,13.4
+Region VII,Bohol,Dagohoy,56.0,4.2,7.5
+Region VII,Bohol,Danao,62.1,4.0,6.4
+Region VII,Bohol,Dauis,30.1,3.6,12.1
+Region VII,Bohol,Dimiao,42.4,3.6,8.4
+Region VII,Bohol,Duero,51.7,3.2,6.2
+Region VII,Bohol,Garcia Hernandez,46.8,2.8,6.0
+Region VII,Bohol,Guindulman,47.2,3.4,7.1
+Region VII,Bohol,Inabanga,47.1,2.4,5.0
+Region VII,Bohol,Jagna,36.4,2.2,6.1
+Region VII,Bohol,Jetafe,60.1,2.9,4.8
+Region VII,Bohol,Lila,42.6,3.8,8.9
+Region VII,Bohol,Loay,28.4,3.0,10.4
+Region VII,Bohol,Loboc,32.8,2.9,8.7
+Region VII,Bohol,Loon,38.8,2.2,5.6
+Region VII,Bohol,Mabini,58.4,3.2,5.5
+Region VII,Bohol,Maribojoc,24.9,2.9,11.7
+Region VII,Bohol,Panglao,33.3,4.2,12.5
+Region VII,Bohol,Pilar,67.1,3.9,5.8
+Region VII,Bohol,Pres. Carlos P. Garcia,62.1,3.7,5.9
+Region VII,Bohol,Sagbayan,48.8,3.8,7.7
+Region VII,Bohol,San Isidro,64.0,4.8,7.6
+Region VII,Bohol,San Miguel,53.6,4.1,7.6
+Region VII,Bohol,Sevilla,52.2,3.6,6.9
+Region VII,Bohol,Sierra Bullones,54.4,4.3,7.9
+Region VII,Bohol,Sikatuna,45.9,4.7,10.3
+Region VII,Bohol,Tagbilaran City,11.0,2.2,19.5
+Region VII,Bohol,Talibon,51.4,3.2,6.2
+Region VII,Bohol,Trinidad,56.6,3.8,6.7
+Region VII,Bohol,Tubigon,37.4,2.5,6.8
+Region VII,Bohol,Ubay,50.1,2.9,5.8
+Region VII,Bohol,Valencia,50.4,2.9,5.7
+Region VII,Bohol,Bien Unido,63.7,4.0,6.2
+Region VII,Cebu,Alcantara,51.2,4.5,8.8
+Region VII,Cebu,Alcoy,47.1,5.2,10.9
+Region VII,Cebu,Alegria,62.4,4.7,7.5
+Region VII,Cebu,Aloguinsan,49.4,4.9,9.9
+Region VII,Cebu,Argao,43.6,2.4,5.4
+Region VII,Cebu,Asturias,44.2,3.5,7.9
+Region VII,Cebu,Badian,53.5,3.2,5.9
+Region VII,Cebu,Balamban,37.6,3.5,9.2
+Region VII,Cebu,Bantayan,55.1,3.0,5.5
+Region VII,Cebu,Barili,40.7,2.6,6.5
+Region VII,Cebu,Bogo,37.0,3.1,8.5
+Region VII,Cebu,Boljoon,48.6,4.4,9.0
+Region VII,Cebu,Borbon,43.7,3.4,7.8
+Region VII,Cebu,Carcar,27.2,3.6,13.1
+Region VII,Cebu,Carmen,31.4,3.2,10.2
+Region VII,Cebu,Catmon,39.9,3.8,9.6
+Region VII,Cebu,Cebu City,13.9,1.5,10.7
+Region VII,Cebu,Compostela,27.8,4.0,14.5
+Region VII,Cebu,Consolacion,17.4,3.1,18.0
+Region VII,Cebu,Cordoba,25.9,3.8,14.7
+Region VII,Cebu,Daanbantayan,42.9,3.2,7.4
+Region VII,Cebu,Dalaguete,55.6,3.0,5.4
+Region VII,Cebu,Danao City,31.6,2.8,9.0
+Region VII,Cebu,Dumanjug,47.6,3.1,6.6
+Region VII,Cebu,Ginatilan,58.0,4.0,6.9
+Region VII,Cebu,Lapu-Lapu City,19.6,2.4,12.2
+Region VII,Cebu,Liloan,18.0,3.1,17.3
+Region VII,Cebu,Madridejos,50.6,4.1,8.0
+Region VII,Cebu,Malabuyoc,50.7,4.3,8.4
+Region VII,Cebu,Mandaue City,14.1,2.0,14.4
+Region VII,Cebu,Medellin,35.8,3.2,9.0
+Region VII,Cebu,Minglanilla,20.4,2.7,13.4
+Region VII,Cebu,Moalboal,48.9,3.4,6.9
+Region VII,Cebu,Naga,27.1,2.4,8.7
+Region VII,Cebu,Oslob,50.9,3.4,6.8
+Region VII,Cebu,Pilar,48.9,4.4,9.0
+Region VII,Cebu,Pinamungahan,46.4,3.3,7.1
+Region VII,Cebu,Poro,45.1,4.1,9.1
+Region VII,Cebu,Ronda,46.5,3.9,8.4
+Region VII,Cebu,Samboan,53.1,4.0,7.5
+Region VII,Cebu,San Fernando,26.2,3.5,13.2
+Region VII,Cebu,San Francisco,59.5,4.0,6.8
+Region VII,Cebu,San Remigio,45.7,3.2,7.0
+Region VII,Cebu,Santa Fe,56.2,5.4,9.6
+Region VII,Cebu,Santander,41.9,4.2,10.1
+Region VII,Cebu,Sibonga,41.8,3.2,7.7
+Region VII,Cebu,Sogod,44.7,3.8,8.5
+Region VII,Cebu,Tabogon,47.0,3.3,7.1
+Region VII,Cebu,Tabuelan,53.8,4.8,9.0
+Region VII,Cebu,Talisay City,18.0,2.6,14.3
+Region VII,Cebu,Toledo City,31.5,2.3,7.1
+Region VII,Cebu,Tuburan,45.9,2.6,5.7
+Region VII,Cebu,Tudela,42.7,6.1,14.2
+Region VII,Negros Oriental,Amlan,24.1,4.9,20.3
+Region VII,Negros Oriental,Ayungon,51.6,3.7,7.2
+Region VII,Negros Oriental,Bacong,20.8,2.5,11.9
+Region VII,Negros Oriental,Bais City,37.2,3.0,8.1
+Region VII,Negros Oriental,Basay,45.8,5.8,12.6
+Region VII,Negros Oriental,Bayawan City,42.6,3.3,7.7
+Region VII,Negros Oriental,Bindoy,59.9,3.7,6.2
+Region VII,Negros Oriental,Canlaon City,35.4,4.4,12.3
+Region VII,Negros Oriental,Dauin,32.4,3.4,10.6
+Region VII,Negros Oriental,Dumaguete City,7.4,1.4,18.6
+Region VII,Negros Oriental,Guihulngan,45.0,3.2,7.1
+Region VII,Negros Oriental,Jimalalud,50.2,3.7,7.3
+Region VII,Negros Oriental,La Libertad,50.2,3.5,6.9
+Region VII,Negros Oriental,Mabinay,48.8,3.4,7.0
+Region VII,Negros Oriental,Manjuyod,42.5,3.4,8.1
+Region VII,Negros Oriental,Pamplona,35.5,3.0,8.5
+Region VII,Negros Oriental,San Jose,28.7,4.4,15.3
+Region VII,Negros Oriental,Santa Catalina,39.5,3.6,9.1
+Region VII,Negros Oriental,Siaton,48.5,3.6,7.5
+Region VII,Negros Oriental,Sibulan,17.4,2.5,14.6
+Region VII,Negros Oriental,Tanjay City,27.1,3.1,11.4
+Region VII,Negros Oriental,Tayasan,48.5,3.5,7.2
+Region VII,Negros Oriental,Valencia,27.3,2.5,9.2
+Region VII,Negros Oriental,Vallehermoso,47.2,5.1,10.7
+Region VII,Negros Oriental,Zamboanguita,39.1,5.0,12.7
+Region VII,Siquijor,Enrique Villanueva,28.2,4.0,14.0
+Region VII,Siquijor,Larena,21.0,2.6,12.3
+Region VII,Siquijor,Lazi,39.5,3.5,8.8
+Region VII,Siquijor,Maria,39.1,3.3,8.3
+Region VII,Siquijor,San Juan,42.9,4.0,9.3
+Region VII,Siquijor,Siquijor,27.0,2.4,8.7
+Region VIII,Eastern Samar,Arteche,55.8,4.5,8.1
+Region VIII,Eastern Samar,Balangiga,44.2,4.8,10.9
+Region VIII,Eastern Samar,Balangkayan,48.6,5.1,10.6
+Region VIII,Eastern Samar,Borongan,37.6,2.9,7.7
+Region VIII,Eastern Samar,Can-avid,50.0,3.8,7.5
+Region VIII,Eastern Samar,Dolores,50.2,3.8,7.5
+Region VIII,Eastern Samar,General MacArthur,48.8,4.2,8.6
+Region VIII,Eastern Samar,Giporlos,44.9,4.2,9.3
+Region VIII,Eastern Samar,Guiuan,42.0,3.7,8.9
+Region VIII,Eastern Samar,Hernani,48.7,4.8,9.9
+Region VIII,Eastern Samar,Jipapad,60.6,5.2,8.6
+Region VIII,Eastern Samar,Lawaan,45.7,5.0,10.9
+Region VIII,Eastern Samar,Llorente,47.2,3.5,7.4
+Region VIII,Eastern Samar,Maslog,60.2,5.8,9.6
+Region VIII,Eastern Samar,Maydolong,49.1,4.2,8.5
+Region VIII,Eastern Samar,Mercedes,39.6,4.1,10.3
+Region VIII,Eastern Samar,Oras,51.1,4.0,7.9
+Region VIII,Eastern Samar,Quinapondon,51.9,4.2,8.2
+Region VIII,Eastern Samar,Salcedo,45.8,3.9,8.5
+Region VIII,Eastern Samar,San Julian,45.2,4.4,9.8
+Region VIII,Eastern Samar,Saan Policarpo,46.4,4.6,10.0
+Region VIII,Eastern Samar,Sulat,42.0,4.7,11.1
+Region VIII,Eastern Samar,Taft,42.2,3.9,9.2
+Region VIII,Leyte,Abuyog,35.4,2.0,5.5
+Region VIII,Leyte,Alangalang,34.9,2.5,7.1
+Region VIII,Leyte,Albuera,33.6,3.6,10.7
+Region VIII,Leyte,Babatngon,38.6,3.1,8.0
+Region VIII,Leyte,Barugo,36.6,2.8,7.6
+Region VIII,Leyte,Bato,36.4,2.7,7.5
+Region VIII,Leyte,Baybay,31.0,1.7,5.4
+Region VIII,Leyte,Burauen,33.3,1.9,5.6
+Region VIII,Leyte,Calubian,36.2,2.4,6.7
+Region VIII,Leyte,Capoocan,39.8,3.6,9.0
+Region VIII,Leyte,Carigara,32.1,2.2,6.9
+Region VIII,Leyte,Dagami,35.0,2.0,5.8
+Region VIII,Leyte,Dulag,33.6,2.3,6.9
+Region VIII,Leyte,Hilongos,30.6,2.1,6.9
+Region VIII,Leyte,Hindang,32.1,3.1,9.8
+Region VIII,Leyte,Inopacan,30.7,3.3,10.8
+Region VIII,Leyte,Isabel,23.7,2.4,10.1
+Region VIII,Leyte,Jaro,37.4,2.6,6.9
+Region VIII,Leyte,Javier (Bugho),36.7,2.7,7.4
+Region VIII,Leyte,Julita,33.3,2.9,8.6
+Region VIII,Leyte,Kananga,40.6,3.8,9.4
+Region VIII,Leyte,Lapaz,35.8,2.7,7.5
+Region VIII,Leyte,Leyte,46.7,3.5,7.4
+Region VIII,Leyte,MacArthur,36.6,3.0,8.1
+Region VIII,Leyte,Mahaplag,41.2,3.6,8.6
+Region VIII,Leyte,Matag-ob,35.7,3.4,9.4
+Region VIII,Leyte,Matalom,34.7,2.7,7.6
+Region VIII,Leyte,Mayorga,36.4,3.1,8.4
+Region VIII,Leyte,Merida,32.0,3.2,10.0
+Region VIII,Leyte,Ormoc City,28.3,1.8,6.5
+Region VIII,Leyte,Palo,24.6,1.8,7.4
+Region VIII,Leyte,Palompon,30.3,2.0,6.5
+Region VIII,Leyte,Pastrana,35.9,2.9,8.0
+Region VIII,Leyte,San Isidro,41.2,3.6,8.6
+Region VIII,Leyte,San Miguel,35.9,3.2,9.0
+Region VIII,Leyte,Santa Fe,31.4,3.9,12.3
+Region VIII,Leyte,Tabango,40.8,4.4,10.7
+Region VIII,Leyte,Tabontabon,36.8,3.4,9.2
+Region VIII,Leyte,Tacloban City,20.5,1.5,7.1
+Region VIII,Leyte,Tanauan,27.0,2.3,8.5
+Region VIII,Leyte,Tolosa,24.4,2.8,11.4
+Region VIII,Leyte,Tunga,23.1,3.5,15.3
+Region VIII,Leyte,Villaba,35.4,2.4,6.9
+Region VIII,Northern Samar,Allen,31.5,2.6,8.3
+Region VIII,Northern Samar,Biri,50.7,4.6,9.1
+Region VIII,Northern Samar,Bobon,45.9,3.3,7.1
+Region VIII,Northern Samar,Capul,41.6,4.6,11.1
+Region VIII,Northern Samar,Catarman,43.4,2.5,5.8
+Region VIII,Northern Samar,Catubig,52.8,3.0,5.6
+Region VIII,Northern Samar,Gamay,48.7,3.4,6.9
+Region VIII,Northern Samar,Laoang,47.6,2.8,5.8
+Region VIII,Northern Samar,Lapinig,51.9,4.5,8.7
+Region VIII,Northern Samar,Las Navas,57.1,3.2,5.6
+Region VIII,Northern Samar,Lavezares,45.6,3.6,7.8
+Region VIII,Northern Samar,Mapanas,58.4,5.1,8.8
+Region VIII,Northern Samar,Mondragon,52.2,3.6,6.8
+Region VIII,Northern Samar,Palapag,52.1,2.8,5.3
+Region VIII,Northern Samar,Pambujan,51.6,3.6,7.0
+Region VIII,Northern Samar,Rosario,41.6,3.9,9.4
+Region VIII,Northern Samar,San Antonio,32.5,4.1,12.6
+Region VIII,Northern Samar,San Isidro,43.6,3.9,8.9
+Region VIII,Northern Samar,San Jose,46.1,3.4,7.3
+Region VIII,Northern Samar,San Roque,52.7,4.0,7.6
+Region VIII,Northern Samar,San Vicente,43.5,4.7,10.8
+Region VIII,Northern Samar,Silvino Lobos,64.8,3.8,5.9
+Region VIII,Northern Samar,Victoria,37.7,3.7,9.8
+Region VIII,Northern Samar,Lope De Vega,58.2,4.7,8.0
+Region VIII,Samar (Western),Almagro,39.5,3.4,8.7
+Region VIII,Samar (Western),Basey,39.1,2.6,6.7
+Region VIII,Samar (Western),Calbayog City,38.7,1.9,4.9
+Region VIII,Samar (Western),Calbiga,39.0,3.0,7.6
+Region VIII,Samar (Western),Catbalogan,33.6,2.6,7.7
+Region VIII,Samar (Western),Daram,51.2,3.1,6.0
+Region VIII,Samar (Western),Gandara,43.8,2.2,5.0
+Region VIII,Samar (Western),Hinabangan,43.8,3.5,8.1
+Region VIII,Samar (Western),Jiabong,41.7,3.7,8.8
+Region VIII,Samar (Western),Marabut,44.4,3.2,7.3
+Region VIII,Samar (Western),Matuguinao,57.5,4.7,8.1
+Region VIII,Samar (Western),Motiong,45.9,3.9,8.6
+Region VIII,Samar (Western),Pinabacdao,45.0,3.2,7.0
+Region VIII,Samar (Western),San Jose de Buan,57.8,5.2,8.9
+Region VIII,Samar (Western),San Sebastian,43.0,3.7,8.6
+Region VIII,Samar (Western),Santa Margarita,40.7,3.5,8.6
+Region VIII,Samar (Western),Santa Rita,41.3,3.2,7.8
+Region VIII,Samar (Western),Santo Nino,45.3,4.7,10.4
+Region VIII,Samar (Western),Talalora,47.0,4.9,10.3
+Region VIII,Samar (Western),Tarangnan,46.3,3.2,6.9
+Region VIII,Samar (Western),Villareal,42.1,2.8,6.6
+Region VIII,Samar (Western),Paranas (Wright),42.5,2.9,6.9
+Region VIII,Samar (Western),Zumurraga,49.9,3.8,7.7
+Region VIII,Samar (Western),Tagapul-an,42.5,4.2,9.9
+Region VIII,Samar (Western),San Jorge,42.3,2.8,6.7
+Region VIII,Samar (Western),Pagsanghan,40.6,3.5,8.7
+Region VIII,Southern Leyte,Anahawan,29.7,3.7,12.5
+Region VIII,Southern Leyte,Bontoc,43.2,2.7,6.3
+Region VIII,Southern Leyte,Hinunangan,37.6,2.7,7.1
+Region VIII,Southern Leyte,Hinundayan,31.7,3.3,10.3
+Region VIII,Southern Leyte,Libagon,42.1,3.7,8.9
+Region VIII,Southern Leyte,Liloan,39.3,3.2,8.1
+Region VIII,Southern Leyte,Maasin City,31.4,2.0,6.3
+Region VIII,Southern Leyte,Macrohon,33.6,2.6,7.8
+Region VIII,Southern Leyte,Malitbog,40.6,2.9,7.2
+Region VIII,Southern Leyte,Padre Burgos,33.9,3.7,10.9
+Region VIII,Southern Leyte,Pintuyan,43.2,3.5,8.1
+Region VIII,Southern Leyte,Saint Bernard,42.7,3.0,6.9
+Region VIII,Southern Leyte,San Francisco,36.7,2.6,7.2
+Region VIII,Southern Leyte,San Juan (Cabalian)),33.6,3.0,9.0
+Region VIII,Southern Leyte,San Ricardo,42.5,3.4,8.0
+Region VIII,Southern Leyte,Silago,38.1,4.2,11.0
+Region VIII,Southern Leyte,Sogod,36.8,2.6,7.1
+Region VIII,Southern Leyte,Tomas Oppus,39.7,2.8,7.0
+Region VIII,Southern Leyte,Limasawa,37.3,4.9,13.1
+Region VIII,Biliran,Almera,26.8,3.5,13.0
+Region VIII,Biliran,Biliran,33.2,4.2,12.7
+Region VIII,Biliran,Cabucgayab,35.2,4.1,11.5
+Region VIII,Biliran,Caibiran,38.3,4.0,10.3
+Region VIII,Biliran,Culaba,35.5,3.5,9.9
+Region VIII,Biliran,Kawayan,33.5,3.5,10.4
+Region VIII,Biliran,Maripipi,28.0,3.5,12.5
+Region VIII,Biliran,Naval,27.8,2.4,8.6
+Region IX,Zamboanga del Norte,Dapitan City,40.0,4.5,11.3
+Region IX,Zamboanga del Norte,Dipolog City,26.8,5.2,19.5
+Region IX,Zamboanga del Norte,Katipunan,57.1,4.4,7.7
+Region IX,Zamboanga del Norte,La Libertad,45.0,7.5,16.7
+Region IX,Zamboanga del Norte,Labason,48.9,6.0,12.2
+Region IX,Zamboanga del Norte,Liloy,51.4,5.1,10.0
+Region IX,Zamboanga del Norte,Manukan,68.2,5.4,7.9
+Region IX,Zamboanga del Norte,Mutia,57.8,6.8,11.7
+Region IX,Zamboanga del Norte,Piñan,55.5,5.4,9.7
+Region IX,Zamboanga del Norte,Polanco,47.3,5.1,10.7
+Region IX,Zamboanga del Norte,Pres. Manuel A. Roxas,66.3,4.7,7.1
+Region IX,Zamboanga del Norte,Rizal,37.3,5.4,14.5
+Region IX,Zamboanga del Norte,Salug,60.2,5.3,8.7
+Region IX,Zamboanga del Norte,Sergio Osmeña Sr.,65.8,5.6,8.4
+Region IX,Zamboanga del Norte,Siayan,79.9,4.5,5.7
+Region IX,Zamboanga del Norte,Sibuco,68.2,5.2,7.7
+Region IX,Zamboanga del Norte,Sibutad,54.1,5.9,10.9
+Region IX,Zamboanga del Norte,Sindangan,56.8,4.5,7.9
+Region IX,Zamboanga del Norte,Siocon,63.6,5.8,9.2
+Region IX,Zamboanga del Norte,Sirawai,61.7,6.2,10.1
+Region IX,Zamboanga del Norte,Tampilisan,45.0,5.7,12.7
+Region IX,Zamboanga del Norte,Jose Dalman (Ponot),68.0,5.9,8.6
+Region IX,Zamboanga del Norte,Gutalac,70.4,4.6,6.6
+Region IX,Zamboanga del Norte,Baliguian,75.3,4.9,6.5
+Region IX,Zamboanga del Norte,Godod,71.1,6.8,9.6
+Region IX,Zamboanga del Norte,Bacungan (Leon T. Postigo),66.0,6.2,9.4
+Region IX,Zamboanga del Norte,Kalawit,65.8,6.8,10.3
+Region IX,Zamboanga del Sur,Aurora,31.5,4.0,12.7
+Region IX,Zamboanga del Sur,Bayog,43.6,6.1,14.0
+Region IX,Zamboanga del Sur,Dimataling,46.8,6.8,14.5
+Region IX,Zamboanga del Sur,Dinas,43.1,5.0,11.6
+Region IX,Zamboanga del Sur,Dumalinao,38.8,5.2,13.3
+Region IX,Zamboanga del Sur,Dumingag,42.8,4.6,10.7
+Region IX,Zamboanga del Sur,Kumalarang,45.9,6.4,14.0
+Region IX,Zamboanga del Sur,Labangan,33.9,4.6,13.5
+Region IX,Zamboanga del Sur,Lapuyan,53.0,5.7,10.7
+Region IX,Zamboanga del Sur,Mahayag,35.9,4.9,13.5
+Region IX,Zamboanga del Sur,Margosatubig,39.0,6.8,17.4
+Region IX,Zamboanga del Sur,Midsalip,52.7,6.4,12.2
+Region IX,Zamboanga del Sur,Molave,26.5,4.1,15.6
+Region IX,Zamboanga del Sur,Pagadian City,21.0,2.7,12.9
+Region IX,Zamboanga del Sur,Ramon Magsaysay,36.6,5.2,14.1
+Region IX,Zamboanga del Sur,San Miguel,41.6,6.4,15.4
+Region IX,Zamboanga del Sur,San Pablo,47.0,5.8,12.4
+Region IX,Zamboanga del Sur,Tabina,47.6,7.8,16.4
+Region IX,Zamboanga del Sur,Tambulig,38.0,5.3,14.0
+Region IX,Zamboanga del Sur,Tukuran,36.5,5.2,14.3
+Region IX,Zamboanga del Sur,Zamboanga City,19.9,2.0,10.2
+Region IX,Zamboanga del Sur,Lakewood,48.4,7.8,16.1
+Region IX,Zamboanga del Sur,Josefina,40.9,7.4,18.1
+Region IX,Zamboanga del Sur,Pitogo,49.8,7.9,15.8
+Region IX,Zamboanga del Sur,Sominot,54.5,7.1,13.1
+Region IX,Zamboanga del Sur,Vincenzo A. Sagun,46.5,6.3,13.4
+Region IX,Zamboanga del Sur,Guipos,36.0,5.7,16.0
+Region IX,Zamboanga del Sur,Tigbao,44.5,6.3,14.2
+Region IX,Zamboanga Sibugay,Alicia,54.0,6.3,11.6
+Region IX,Zamboanga Sibugay,Buug,40.2,5.4,13.5
+Region IX,Zamboanga Sibugay,Diplahan,43.9,5.8,13.2
+Region IX,Zamboanga Sibugay,Imelda,42.4,5.4,12.8
+Region IX,Zamboanga Sibugay,Ipil,32.2,3.6,11.0
+Region IX,Zamboanga Sibugay,Kabasalan,36.7,4.0,10.8
+Region IX,Zamboanga Sibugay,Mabuhay,68.9,5.7,8.2
+Region IX,Zamboanga Sibugay,Malangas,40.5,5.0,12.3
+Region IX,Zamboanga Sibugay,Naga,36.4,4.1,11.3
+Region IX,Zamboanga Sibugay,Olutanga,61.7,6.8,11.0
+Region IX,Zamboanga Sibugay,Payao,63.3,7.0,11.1
+Region IX,Zamboanga Sibugay,Roseller Lim,51.2,4.9,9.6
+Region IX,Zamboanga Sibugay,Siay,48.3,4.7,9.7
+Region IX,Zamboanga Sibugay,Talusan,66.5,7.8,11.8
+Region IX,Zamboanga Sibugay,Titay,45.1,4.5,10.0
+Region IX,Zamboanga Sibugay,Tungawan,59.5,5.8,9.8
+Region IX,Isabela City,Isabela City,23.0,2.9,12.6
+Region X,Bukidnon,Baungon,49.1,4.7,9.7
+Region X,Bukidnon,Damulog,52.2,4.9,9.4
+Region X,Bukidnon,Dangcagan,39.9,4.8,11.9
+Region X,Bukidnon,Don Carlos,42.0,3.3,7.9
+Region X,Bukidnon,Impasug-ong,46.1,4.7,10.1
+Region X,Bukidnon,Kadingilan,50.7,5.3,10.4
+Region X,Bukidnon,Kalilangan,51.3,5.1,9.9
+Region X,Bukidnon,Kibawe,46.8,3.2,6.9
+Region X,Bukidnon,Kitaotao,54.8,4.6,8.3
+Region X,Bukidnon,Lantapan,40.8,4.6,11.3
+Region X,Bukidnon,Libona,35.5,3.5,9.9
+Region X,Bukidnon,Malaybalay City,34.6,2.7,7.8
+Region X,Bukidnon,Malitbog,61.4,5.6,9.1
+Region X,Bukidnon,Manolo Fortich,33.5,3.3,9.9
+Region X,Bukidnon,Maramag,33.5,3.7,11.0
+Region X,Bukidnon,Pangantucan,53.2,3.8,7.1
+Region X,Bukidnon,Quezon,52.0,4.0,7.7
+Region X,Bukidnon,San Fernando,52.1,5.1,9.8
+Region X,Bukidnon,Sumilao,40.2,7.0,17.3
+Region X,Bukidnon,Talakag,50.3,3.9,7.8
+Region X,Bukidnon,Valencia City,35.8,3.1,8.5
+Region X,Bukidnon,Cabanglasan,45.2,5.2,11.4
+Region X,Camiguin,Catarman,58.4,4.3,7.4
+Region X,Camiguin,Guinsiliban,45.7,5.4,11.7
+Region X,Camiguin,Mahinog,45.9,4.0,8.7
+Region X,Camiguin,Mambajao,36.2,4.1,11.4
+Region X,Camiguin,Sagay,42.1,5.4,12.8
+Region X,Lanao del Norte,Bacolod,40.2,4.7,11.7
+Region X,Lanao del Norte,Baloi,48.3,3.9,8.0
+Region X,Lanao del Norte,Baroy,47.0,4.0,8.5
+Region X,Lanao del Norte,Iligan City,24.4,1.9,7.6
+Region X,Lanao del Norte,Kapatagan,47.6,3.3,7.0
+Region X,Lanao del Norte,Sultan Naga Dimaporo,59.9,3.8,6.4
+Region X,Lanao del Norte,Kauswagan,49.5,4.5,9.1
+Region X,Lanao del Norte,Kolambugan,41.7,3.3,8.0
+Region X,Lanao del Norte,Lala,37.0,3.1,8.5
+Region X,Lanao del Norte,Linamon,31.0,5.1,16.5
+Region X,Lanao del Norte,Magsaysay,59.2,3.8,6.4
+Region X,Lanao del Norte,Maigo,43.7,4.8,11.0
+Region X,Lanao del Norte,Matungao,59.3,5.6,9.5
+Region X,Lanao del Norte,Munai,67.5,3.6,5.4
+Region X,Lanao del Norte,Nunungan,67.9,4.1,6.1
+Region X,Lanao del Norte,Pantao Ragat,59.7,4.2,7.1
+Region X,Lanao del Norte,Poona Piagapo,66.8,3.9,5.8
+Region X,Lanao del Norte,Salvador,56.3,4.6,8.2
+Region X,Lanao del Norte,Sapad,62.0,4.5,7.3
+Region X,Lanao del Norte,Tagoloan,69.4,5.8,8.3
+Region X,Lanao del Norte,Tangcal,67.4,4.3,6.4
+Region X,Lanao del Norte,Tubad,48.3,3.1,6.4
+Region X,Lanao del Norte,Pantar,57.5,3.9,6.7
+Region X,Misamis Occidental,Aloran,42.7,2.9,6.9
+Region X,Misamis Occidental,Baliangao,37.7,4.0,10.6
+Region X,Misamis Occidental,Bonifacio,44.9,4.0,9.0
+Region X,Misamis Occidental,Calamba,41.4,3.3,7.9
+Region X,Misamis Occidental,Clarin,38.8,3.0,7.6
+Region X,Misamis Occidental,Concepcion,62.3,4.2,6.8
+Region X,Misamis Occidental,Jimenez,40.9,3.5,8.6
+Region X,Misamis Occidental,Lopez Jaena,49.3,3.5,7.2
+Region X,Misamis Occidental,Oroquieta City,30.7,3.1,10.2
+Region X,Misamis Occidental,Ozamis City,29.8,2.4,8.1
+Region X,Misamis Occidental,Panaon,40.2,4.3,10.7
+Region X,Misamis Occidental,Plaridel,35.2,3.0,8.5
+Region X,Misamis Occidental,Sapang Dalaga,43.9,3.3,7.5
+Region X,Misamis Occidental,Sinacaban,38.9,3.4,8.8
+Region X,Misamis Occidental,Tangub City,43.1,2.5,5.8
+Region X,Misamis Occidental,Tudela,38.0,3.2,8.4
+Region X,Misamis Occidental,Don Victoriano Chiongbian,65.7,5.2,7.8
+Region X,Misamis Oriental,Alubijid,53.7,4.0,7.4
+Region X,Misamis Oriental,Balingasag,51.2,2.7,5.2
+Region X,Misamis Oriental,Balingoan,46.4,5.5,11.9
+Region X,Misamis Oriental,Binuangan,52.7,6.3,12.0
+Region X,Misamis Oriental,Cagayan De Oro City,22.8,2.2,9.8
+Region X,Misamis Oriental,Claveria,57.1,3.4,6.0
+Region X,Misamis Oriental,El Salvador,38.8,3.8,9.7
+Region X,Misamis Oriental,Gingoog City,48.7,2.4,4.8
+Region X,Misamis Oriental,Gitaguim,50.3,4.9,9.8
+Region X,Misamis Oriental,Initao,48.9,4.4,9.0
+Region X,Misamis Oriental,Jasaan,42.1,4.2,9.9
+Region X,Misamis Oriental,Kinoguitan,55.7,4.0,7.1
+Region X,Misamis Oriental,Lagonglong,49.9,4.6,9.2
+Region X,Misamis Oriental,Laguindingan,52.2,5.2,9.9
+Region X,Misamis Oriental,Libertad,55.5,5.5,10.0
+Region X,Misamis Oriental,Lugait,40.6,5.8,14.3
+Region X,Misamis Oriental,Magsaysay,60.3,3.9,6.4
+Region X,Misamis Oriental,Manticao,48.4,4.0,8.3
+Region X,Misamis Oriental,Medina,41.0,3.3,8.1
+Region X,Misamis Oriental,Naawan,45.7,5.1,11.1
+Region X,Misamis Oriental,Opol,31.1,3.2,10.2
+Region X,Misamis Oriental,Salay,47.1,4.7,9.9
+Region X,Misamis Oriental,Sugbongcogon,45.4,5.8,12.8
+Region X,Misamis Oriental,Tagoloan,35.9,4.7,13.1
+Region X,Misamis Oriental,Talisayan,48.2,3.8,8.0
+Region X,Misamis Oriental,Villanueva,40.5,3.9,9.7
+Region XI,Davao del Norte,Asuncion (Saug),41.0,4.2,10.2
+Region XI,Davao del Norte,Carmen,28.0,3.5,12.5
+Region XI,Davao del Norte,Kapalong,21.5,4.0,18.5
+Region XI,Davao del Norte,New Corella,38.2,4.4,11.6
+Region XI,Davao del Norte,Panabo City,14.8,2.2,14.8
+Region XI,Davao del Norte,Island Garden City of Samal,32.8,2.8,8.6
+Region XI,Davao del Norte,Santo Tomas,23.5,4.2,17.9
+Region XI,Davao del Norte,Tagum City,15.0,2.8,18.7
+Region XI,Davao del Norte,Talaingod,62.6,9.5,15.2
+Region XI,Davao del Norte,Braulio E. Dujali,40.8,7.2,17.5
+Region XI,Davao del Norte,San Isidro,53.6,5.5,10.3
+Region XI,Davao del Sur,Bansalan,21.3,3.1,14.6
+Region XI,Davao del Sur,Davao City,13.2,1.3,9.4
+Region XI,Davao del Sur,Digos City,18.8,2.6,13.9
+Region XI,Davao del Sur,Hagonoy,22.9,3.2,14.0
+Region XI,Davao del Sur,Jose Abad Santos (Trinidad),72.3,4.1,5.6
+Region XI,Davao del Sur,Kiblawan,57.4,3.8,6.5
+Region XI,Davao del Sur,Magsaysay,40.0,4.6,11.5
+Region XI,Davao del Sur,Malalag,41.2,4.0,9.6
+Region XI,Davao del Sur,Malita,63.8,3.5,5.5
+Region XI,Davao del Sur,Matanao,40.7,3.2,8.0
+Region XI,Davao del Sur,Padada,14.6,2.5,17.5
+Region XI,Davao del Sur,Santa Cruz,27.3,3.6,13.0
+Region XI,Davao del Sur,Santa Maria,48.5,4.4,9.0
+Region XI,Davao del Sur,Sulop,36.9,4.0,10.9
+Region XI,Davao del Sur,Sarangani,72.1,5.0,6.9
+Region XI,Davao del Sur,Don Marcelino,66.5,5.4,8.1
+Region XI,Davao Oriental,Baganga,44.0,4.6,10.5
+Region XI,Davao Oriental,Banaybanay,32.5,4.4,13.6
+Region XI,Davao Oriental,Boston,36.6,5.5,15.0
+Region XI,Davao Oriental,Caraga,58.0,4.1,7.0
+Region XI,Davao Oriental,Cateel,53.5,4.8,8.9
+Region XI,Davao Oriental,Governor Generoso,55.7,4.9,8.9
+Region XI,Davao Oriental,Lupon,42.9,4.6,10.6
+Region XI,Davao Oriental,Manay,58.7,4.9,8.4
+Region XI,Davao Oriental,Mati  (Capital),33.9,3.8,11.1
+Region XI,Davao Oriental,San Isidro,47.4,5.2,11.0
+Region XI,Davao Oriental,Tarragona,62.3,5.4,8.6
+Region XI,Compostela Valley,Compostela,26.5,4.7,17.7
+Region XI,Compostela Valley,Laak (San Vicente),54.7,4.3,7.8
+Region XI,Compostela Valley,Mabini (Doña Alicia),29.8,4.1,13.9
+Region XI,Compostela Valley,Maco,30.6,2.6,8.6
+Region XI,Compostela Valley,Maragusan (San Mariano),35.6,4.7,13.2
+Region XI,Compostela Valley,Mawab,32.7,4.5,13.8
+Region XI,Compostela Valley,Monkayo,32.9,4.2,12.7
+Region XI,Compostela Valley,Montevista,41.3,4.6,11.1
+Region XI,Compostela Valley,Nabunturan,28.3,3.9,13.7
+Region XI,Compostela Valley,New Bataan,42.0,5.5,13.0
+Region XI,Compostela Valley,Pantukan,28.3,4.8,17.0
+Region XII,North Cotabato,Alamada,44.6,4.4,9.9
+Region XII,North Cotabato,Carmen,50.4,5.7,11.2
+Region XII,North Cotabato,Kabacan,35.0,3.3,9.5
+Region XII,North Cotabato,Kidapawan City,19.2,2.6,13.7
+Region XII,North Cotabato,Libungan,32.1,3.8,11.9
+Region XII,North Cotabato,Magpet,36.7,3.8,10.3
+Region XII,North Cotabato,Makilala,23.2,2.7,11.5
+Region XII,North Cotabato,Matalam,34.9,3.2,9.1
+Region XII,North Cotabato,Midsayap,33.0,2.9,8.6
+Region XII,North Cotabato,M'lang,34.5,3.1,9.1
+Region XII,North Cotabato,Pigkawayan,39.0,3.4,8.7
+Region XII,North Cotabato,Pikit,48.5,3.6,7.3
+Region XII,North Cotabato,President Roxas,35.3,3.8,10.8
+Region XII,North Cotabato,Tulunan,38.2,3.7,9.6
+Region XII,North Cotabato,Antipas,30.9,4.6,14.9
+Region XII,North Cotabato,Banisilan,43.8,4.5,10.2
+Region XII,North Cotabato,Aleosan,47.1,5.1,10.8
+Region XII,North Cotabato,Arakan,48.0,4.7,9.8
+Region XII,South Cotabato,Banga,31.3,3.6,11.4
+Region XII,South Cotabato,General Santos,22.5,2.9,13.1
+Region XII,South Cotabato,Koronodal City,21.7,2.7,12.5
+Region XII,South Cotabato,Norala,33.1,4.1,12.5
+Region XII,South Cotabato,Polomolok,22.8,3.4,15.1
+Region XII,South Cotabato,Surallah,30.5,3.4,11.1
+Region XII,South Cotabato,Tampakan,33.1,3.9,11.9
+Region XII,South Cotabato,Tantangan,38.2,4.4,11.5
+Region XII,South Cotabato,T'boli,52.7,3.8,7.3
+Region XII,South Cotabato,Tupi,34.7,4.5,12.8
+Region XII,South Cotabato,Santo Nino,32.1,4.7,14.5
+Region XII,South Cotabato,Lake Sebu,52.8,5.6,10.5
+Region XII,Sultan Kudarat,Bagumbayan,46.9,4.5,9.5
+Region XII,Sultan Kudarat,Colombio,54.4,5.7,10.5
+Region XII,Sultan Kudarat,Esperanza,33.2,3.5,10.5
+Region XII,Sultan Kudarat,Isulan,26.8,3.3,12.3
+Region XII,Sultan Kudarat,Kalamansig,50.6,4.9,9.6
+Region XII,Sultan Kudarat,Lebak,46.0,3.7,8.1
+Region XII,Sultan Kudarat,Lutayan,51.1,5.6,11.0
+Region XII,Sultan Kudarat,Lambayong,41.4,3.9,9.4
+Region XII,Sultan Kudarat,Palimbang,63.7,4.0,6.2
+Region XII,Sultan Kudarat,President Quirino,31.7,4.2,13.1
+Region XII,Sultan Kudarat,Tacurong City,18.5,2.5,13.6
+Region XII,Sultan Kudarat,Sen. Ninoy Aquino,47.6,4.6,9.6
+Region XII,Sarangani,Alabel,41.0,4.9,12.0
+Region XII,Sarangani,Glan,47.0,4.2,8.8
+Region XII,Sarangani,Kiamba,45.0,4.9,11.0
+Region XII,Sarangani,Maasim,52.2,5.8,11.2
+Region XII,Sarangani,Maitum,42.8,4.2,9.9
+Region XII,Sarangani,Malapatan,54.1,6.0,11.0
+Region XII,Sarangani,Malungon,45.3,4.1,9.0
+Region XII,Cotabato City,Cotobato City,29.4,5.4,18.4
+ARMM,Basilan,Lamitan,20.5,3.6,17.6
+ARMM,Basilan,Lantawan,28.2,5.0,17.8
+ARMM,Basilan,Maluso,36.7,6.3,17.3
+ARMM,Basilan,Sumisip,36.7,4.6,12.5
+ARMM,Basilan,Tipo-Tipo,31.6,6.3,20.0
+ARMM,Basilan,Tuburan,43.6,8.1,18.5
+ARMM,Basilan,Akbar,35.9,8.2,22.9
+ARMM,Basilan,Al-barka,32.3,5.9,18.2
+ARMM,Basilan,Hadji Mohammad Ajul,32.5,6.7,20.5
+ARMM,Basilan,Ungkaya Pukan,30.4,6.9,22.7
+ARMM,Basilan,Tabuan-Lasa,31.0,7.2,23.3
+ARMM,Lanao del Sur,Bacolod-Kalawi,25.8,4.0,15.5
+ARMM,Lanao del Sur,Balabagan,34.5,4.8,14.0
+ARMM,Lanao del Sur,Balindong (Watu),29.2,6.2,21.2
+ARMM,Lanao del Sur,Bayang,25.3,4.4,17.4
+ARMM,Lanao del Sur,Binidayan,22.7,4.0,17.8
+ARMM,Lanao del Sur,Bubong,31.2,5.9,19.0
+ARMM,Lanao del Sur,Butig,39.3,6.5,16.5
+ARMM,Lanao del Sur,Ganassi,31.3,4.3,13.8
+ARMM,Lanao del Sur,Kapai,36.2,6.2,17.2
+ARMM,Lanao del Sur,Lumba-Bayabao (Maguing),37.5,5.0,13.3
+ARMM,Lanao del Sur,Lumbatan,38.3,5.2,13.5
+ARMM,Lanao del Sur,Madalum,35.8,5.1,14.2
+ARMM,Lanao del Sur,Madamba,37.8,6.6,17.3
+ARMM,Lanao del Sur,Malabang,31.0,4.6,14.8
+ARMM,Lanao del Sur,Marantao,19.6,4.0,20.6
+ARMM,Lanao del Sur,Marawi City,24.2,3.4,14.1
+ARMM,Lanao del Sur,Masiu,31.0,5.7,18.3
+ARMM,Lanao del Sur,Mulondo,22.8,5.5,24.1
+ARMM,Lanao del Sur,Pagayawan (Tatarikan),39.2,6.9,17.6
+ARMM,Lanao del Sur,Piagapo,40.3,5.3,13.1
+ARMM,Lanao del Sur,Poona Bayabao  (Gata),25.2,4.5,17.7
+ARMM,Lanao del Sur,Pualas,25.7,4.9,19.1
+ARMM,Lanao del Sur,Ditsaan-Ramain,34.3,5.0,14.6
+ARMM,Lanao del Sur,Saguiaran,29.0,4.9,16.9
+ARMM,Lanao del Sur,Tamparan,37.2,5.6,15.1
+ARMM,Lanao del Sur,Taraka,35.7,4.5,12.5
+ARMM,Lanao del Sur,Tubaran,44.9,6.3,13.9
+ARMM,Lanao del Sur,Tugaya,31.0,5.8,18.8
+ARMM,Lanao del Sur,Wao,35.2,5.2,14.7
+ARMM,Lanao del Sur,Marogong,52.1,6.8,13.1
+ARMM,Lanao del Sur,Calanogas,53.7,8.8,16.3
+ARMM,Lanao del Sur,Buadiposo-Buntong,32.5,6.1,18.7
+ARMM,Lanao del Sur,Maguing,22.8,3.8,16.7
+ARMM,Lanao del Sur,Sultan Gumander,46.3,6.8,14.8
+ARMM,Lanao del Sur,Lumbayanague,44.0,9.5,21.6
+ARMM,Lanao del Sur,Bumbaran,47.1,8.3,17.7
+ARMM,Lanao del Sur,Tagoloan II,67.1,10.2,15.2
+ARMM,Lanao del Sur,Kapatagan,44.2,7.5,17.0
+ARMM,Lanao del Sur,Sultan Dumalondong,57.2,11.2,19.6
+ARMM,Lanao del Sur,Lumbaca-Unayan,31.8,7.6,24.0
+ARMM,Maguindanao,Ampatuan,56.3,8.0,14.1
+ARMM,Maguindanao,Buldon,61.1,6.1,10.0
+ARMM,Maguindanao,Buluan,51.7,11.7,22.5
+ARMM,Maguindanao,Datu Paglas,49.7,6.0,12.0
+ARMM,Maguindanao,Datu Piang,53.4,6.7,12.5
+ARMM,Maguindanao,Datu Odin Sinsuat (Dinaig),45.5,4.4,9.8
+ARMM,Maguindanao,Shariff Aguak (Maganoy),57.1,6.5,11.4
+ARMM,Maguindanao,Matanog,50.2,8.9,17.7
+ARMM,Maguindanao,Pagalungan,52.7,6.3,11.9
+ARMM,Maguindanao,Parang,43.1,5.1,11.8
+ARMM,Maguindanao,Sultan Kudarat (Nuling),55.6,4.1,7.5
+ARMM,Maguindanao,Sultan Sa Barongis (Lambayong),62.9,7.2,11.5
+ARMM,Maguindanao,Kabuntalan (Tumbao),66.5,6.9,10.3
+ARMM,Maguindanao,Upi,39.5,5.2,13.1
+ARMM,Maguindanao,Talayan,51.2,6.9,13.4
+ARMM,Maguindanao,South Upi,48.1,7.6,15.7
+ARMM,Maguindanao,Barira,54.1,7.4,13.6
+ARMM,Maguindanao,Gen. S. K. Pendatun,67.1,7.1,10.6
+ARMM,Maguindanao,Mamasapano,57.9,6.8,11.7
+ARMM,Maguindanao,Talitay,53.6,8.1,15.2
+ARMM,Maguindanao,Pagagawan,58.2,5.9,10.0
+ARMM,Maguindanao,Paglat,65.4,8.1,12.3
+ARMM,Maguindanao,Sultan Mastura,54.6,5.9,10.9
+ARMM,Maguindanao,Guindulungan,67.7,6.8,10.1
+ARMM,Maguindanao,Datu Saudi-Ampatuan,48.7,7.0,14.3
+ARMM,Maguindanao,Datu Unsay,56.5,9.2,16.2
+ARMM,Maguindanao,Datu Abdullah Sangki,59.5,7.6,12.7
+ARMM,Maguindanao,Rajah Buayan,58.9,7.9,13.4
+ARMM,Maguindanao,Datu Blah T. Sinsuat,53.6,7.5,13.9
+ARMM,Maguindanao,Datu Anggal Midtimbang,61.1,7.8,12.8
+ARMM,Maguindanao,Mangudadatu,60.3,8.2,13.7
+ARMM,Maguindanao,Pandag,70.1,8.6,12.3
+ARMM,Maguindanao,Northern Kabuntalan,44.3,6.4,14.5
+Sulu,Maguindanao,Indanan,39.6,4.9,12.4
+Sulu,Maguindanao,Jolo,41.0,6.3,15.5
+Sulu,Maguindanao,Kalingalan Caluang,46.9,7.0,14.8
+Sulu,Maguindanao,Luuk,46.2,7.1,15.4
+Sulu,Maguindanao,Maimbung,51.4,5.3,10.4
+Sulu,Maguindanao,Hadji Panglima Tahil (Marunggas),54.1,8.2,15.2
+Sulu,Maguindanao,Old Panamao,53.0,6.3,12.0
+Sulu,Maguindanao,Pangutaran,49.6,6.0,12.1
+Sulu,Maguindanao,Parang,48.8,4.7,9.5
+Sulu,Maguindanao,Pata,56.1,6.3,11.2
+Sulu,Maguindanao,Patikul,36.4,5.0,13.8
+Sulu,Maguindanao,Siasi,43.5,4.2,9.6
+Sulu,Maguindanao,Talipao,57.6,4.9,8.4
+Sulu,Maguindanao,Tapul,53.3,6.5,12.3
+Sulu,Maguindanao,Tongkil,50.9,6.0,11.7
+Sulu,Maguindanao,Panglima Estino (New Panamao),66.8,8.4,12.6
+Sulu,Maguindanao,Lugus,49.4,6.7,13.5
+Sulu,Maguindanao,Pandami,47.0,7.2,15.2
+Sulu,Maguindanao,Omar,46.6,8.9,19.2
+Tawi-tawi,Maguindanao,Panglima Sugala (Balimbing),47.1,5.3,11.3
+Tawi-tawi,Maguindanao,Bongao,28.7,4.1,14.3
+Tawi-tawi,Maguindanao,Mapun (Cagayan De Tawi-Tawi),41.9,6.1,14.5
+Tawi-tawi,Maguindanao,Simunul,31.5,6.1,19.3
+Tawi-tawi,Maguindanao,Sitangkai,39.0,7.0,18.0
+Tawi-tawi,Maguindanao,South Ubian,34.7,5.5,15.9
+Tawi-tawi,Maguindanao,Tandubas,39.9,5.6,14.0
+Tawi-tawi,Maguindanao,Turtle Islands,39.3,13.4,34.1
+Tawi-tawi,Maguindanao,Languyan,39.9,6.1,15.3
+Tawi-tawi,Maguindanao,Sapa-Sapa,39.3,5.5,14.1
+Tawi-tawi,Maguindanao,Sibutu,44.3,6.5,14.6
+Caraga,Agusan del Norte,Buenavista,38.0,3.2,8.5
+Caraga,Agusan del Norte,Butuan City,27.6,1.8,6.3
+Caraga,Agusan del Norte,Cabadbaran,28.4,2.7,9.6
+Caraga,Agusan del Norte,Carmen,40.6,5.2,12.7
+Caraga,Agusan del Norte,Jabonga,45.7,3.7,8.1
+Caraga,Agusan del Norte,Kitcharao,39.9,4.0,10.0
+Caraga,Agusan del Norte,Las Nieves,53.0,3.5,6.6
+Caraga,Agusan del Norte,Magallanes,28.6,4.3,15.1
+Caraga,Agusan del Norte,Nasipit,28.3,3.1,10.9
+Caraga,Agusan del Norte,Santiago,47.7,4.9,10.2
+Caraga,Agusan del Norte,Tubay,39.2,4.1,10.5
+Caraga,Agusan del Norte,Remedios T. Romualdez,41.0,4.7,11.5
+Caraga,Agusan del Sur,Bayugan,48.4,3.1,6.3
+Caraga,Agusan del Sur,Bunawan,54.2,3.8,7.1
+Caraga,Agusan del Sur,Esperanza,61.9,2.7,4.4
+Caraga,Agusan del Sur,La Paz,66.7,3.9,5.9
+Caraga,Agusan del Sur,Loreto,56.9,3.9,6.9
+Caraga,Agusan del Sur,Prosperidad,52.8,3.1,5.8
+Caraga,Agusan del Sur,Rosario,48.2,4.8,10.0
+Caraga,Agusan del Sur,San Francisco,39.7,2.6,6.4
+Caraga,Agusan del Sur,San Luis,62.0,2.8,4.5
+Caraga,Agusan del Sur,Santa Josefa,53.3,3.7,6.9
+Caraga,Agusan del Sur,Talacogon,58.0,4.0,6.8
+Caraga,Agusan del Sur,Trento,49.1,5.0,10.1
+Caraga,Agusan del Sur,Veruela,58.5,3.4,5.8
+Caraga,Agusan del Sur,Sibagat,59.4,3.7,6.2
+Caraga,Surigao del Norte,Alegria,57.2,4.9,8.5
+Caraga,Surigao del Norte,Bacuag,50.6,5.4,10.7
+Caraga,Surigao del Norte,Basilisa (Rizal),55.7,4.1,7.3
+Caraga,Surigao del Norte,Burgos,53.2,6.0,11.2
+Caraga,Surigao del Norte,Cagdiano,55.6,5.1,9.2
+Caraga,Surigao del Norte,Claver,49.8,4.7,9.5
+Caraga,Surigao del Norte,Dapa,52.2,3.7,7.1
+Caraga,Surigao del Norte,Del Carmen,58.9,4.2,7.1
+Caraga,Surigao del Norte,Dinagat,57.6,5.1,8.9
+Caraga,Surigao del Norte,General Luna,55.4,4.3,7.8
+Caraga,Surigao del Norte,Gigaquit,59.6,4.8,8.0
+Caraga,Surigao del Norte,Libjo (Albor),54.1,4.7,8.7
+Caraga,Surigao del Norte,Loreto,54.2,5.1,9.4
+Caraga,Surigao del Norte,Mainit,57.0,4.1,7.2
+Caraga,Surigao del Norte,Malimono,50.3,5.1,10.2
+Caraga,Surigao del Norte,Pilar,62.8,4.4,6.9
+Caraga,Surigao del Norte,Placer,47.7,4.2,8.9
+Caraga,Surigao del Norte,San Benito,62.6,5.1,8.2
+Caraga,Surigao del Norte,San Francisco (Anao-Aon),48.8,4.4,8.9
+Caraga,Surigao del Norte,San Isidro,51.7,5.6,10.8
+Caraga,Surigao del Norte,Santa Monica (Sapao),52.4,4.2,8.1
+Caraga,Surigao del Norte,Sison,52.1,4.9,9.5
+Caraga,Surigao del Norte,Socorro,52.1,5.9,11.4
+Caraga,Surigao del Norte,Surigao City,40.1,3.0,7.4
+Caraga,Surigao del Norte,Tagana-an,50.4,5.1,10.1
+Caraga,Surigao del Norte,Tubajon,56.3,5.4,9.6
+Caraga,Surigao del Norte,Tubod,47.8,4.5,9.4
+Caraga,Surigao del Norte,San Jose,46.7,4.4,9.4
+Caraga,Surigao del Sur,Barobo,45.7,4.4,9.6
+Caraga,Surigao del Sur,Bayabas,39.4,5.2,13.2
+Caraga,Surigao del Sur,Bislig,34.2,4.9,14.3
+Caraga,Surigao del Sur,Cagwait,39.4,4.9,12.3
+Caraga,Surigao del Sur,Cantilan,25.7,2.8,10.9
+Caraga,Surigao del Sur,Carmen,34.6,5.2,14.9
+Caraga,Surigao del Sur,Carrascal,32.7,3.9,11.9
+Caraga,Surigao del Sur,Cortes,36.4,4.9,13.5
+Caraga,Surigao del Sur,Hinatuan,43.6,3.1,7.1
+Caraga,Surigao del Sur,Lanuza,35.1,4.4,12.4
+Caraga,Surigao del Sur,Lianga,37.0,4.2,11.3
+Caraga,Surigao del Sur,Lingig,48.9,4.3,8.8
+Caraga,Surigao del Sur,Madrid,33.0,3.7,11.1
+Caraga,Surigao del Sur,Marihatag,50.3,4.4,8.8
+Caraga,Surigao del Sur,San Agustin,49.9,4.0,8.0
+Caraga,Surigao del Sur,San Miguel,50.5,3.7,7.3
+Caraga,Surigao del Sur,Tagbina,48.0,3.7,7.8
+Caraga,Surigao del Sur,Tago,37.5,3.2,8.5
+Caraga,Surigao del Sur,Tandag,26.3,2.7,10.3

@@ -1,0 +1,16 @@
+philippines-small-area-poverty-estimates: [2009-01-01T00:00:00 TO 2009-01-01T23:59:59] City and Municipal-level Small Area Poverty Estimates, 2009
+  res Sheet1-Table 1.csv CSV https://data.humdata.org/dataset/ac853860-8c99-4499-80eb-984ddd7c1149/resource/7a5e56c0-17bd-45b5-b8ce-4bfccd816f63/download/sheet1-table-1.csv
+  saved 73756
+philippines-population-projection-2020-2025-admin3: [2021-03-01T00:00:00 TO 2025-07-01T23:59:59] This data is about the Philippines population projection count 2020 to 2025 by city/municipality (admin3) based on 2015 Census
+  res PHL_Population Projections_Admin3_Midyear2020_2025.xlsx XLSX https://data.humdata.org/dataset/a8fa512a-0a12-4753-ba46-b722eaac6d66/resource/5f14f465-8de1-489c-976e-5aa2cfa4b489/download/phl_population-projection
+  saved 149324
+ok openstat_1F.json
+ok openstat_3D.json
+y", line 23, in <module>
+    z = zipfile.ZipFile(io.BytesIO(get("https://data.humdata.org/dataset/caf116df-f984-4deb-85ca-41b349d3f313/resource/0120c30e-ba8b-487d-83f5-a664eddd3a8e/download", 1800)))
+  File "/usr/lib/python3.14/zipfile/__init__.py", line 1471, in __init__
+    self._RealGetContents()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/zipfile/__init__.py", line 1538, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
