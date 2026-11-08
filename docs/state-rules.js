@@ -275,6 +275,17 @@ window.STATE_RULES = {
     ],
     note: "Check the current law and the council's own rules (statut gminy) before relying on this."
   },
+  japan: {
+    title: "Rules for board of education (教育委員会) meetings",
+    checked: "November 8, 2026",
+    laws: [
+      { state: "Japan", covers: "Municipal boards of education", threshold: "",
+        rule: "Board meetings are public, though the board can close part of a meeting for personnel and other listed matters by a two-thirds vote; since the 2015 reform the board must try to prepare and publish minutes (Act on the Organization and Operation of Local Educational Administration, art. 14). The mayor and the board also meet in a general education council (総合教育会議), which isn't counted here." },
+      { state: "Japan", covers: "Schools", threshold: "",
+        rule: "Each municipality's board of education runs its public elementary and lower secondary schools; prefectures pay most teachers and run most high schools." }
+    ],
+    note: "Check the current law and the board's own rules before relying on this."
+  },
   ecuador: {
     title: "Rules for cantonal council (concejo municipal) meetings",
     checked: "November 7, 2026",

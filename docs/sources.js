@@ -301,6 +301,18 @@ window.SOURCES = [
     note: "Built by data-prep/build_latam.py. Gminy are matched to borders by their Statistics Poland unit code."
   },
   {
+    only: "Japan",
+    group: "Japan: municipalities, welfare, pupils and boards of education",
+    items: [
+      { title: "Welfare rate: Ministry of Health, Labour and Welfare, 被保護者調査 (survey of welfare recipients), FY2024 final figures, table 8 (2-2), by prefecture, designated city and core city", url: "https://www.e-stat.go.jp/stat-search/files?toukei=00450312" },
+      { title: "Population, children under 15, area, pupils and unemployment: Statistics Bureau, 統計でみる市区町村のすがた 2026 (municipal basic data; 2020 census and 2024 school survey)", url: "https://www.e-stat.go.jp/stat-search/files?toukei=00200502" },
+      { title: "Borders: Ministry of Land, Infrastructure, Transport and Tourism, 国土数値情報 administrative areas (N03, 2021), as simplified by smartnews-smri/japan-topography", url: "https://github.com/smartnews-smri/japan-topography" },
+      { title: "Municipal websites: Wikidata (official website, P856, by local government code, P429)", url: "https://www.wikidata.org/" },
+      { title: "Meetings: each board of education's minutes or meeting pages (in the “Meetings source” column)", url: "https://www.e-stat.go.jp/" }
+    ],
+    note: "Built by data-prep/prep_japan.py and data-prep/build_latam.py. Municipalities are matched to borders and figures by their local government code; designated cities' wards are merged into their city."
+  },
+  {
     only: "Ecuador",
     group: "Ecuador: cantons, poverty, population and pupils",
     items: [

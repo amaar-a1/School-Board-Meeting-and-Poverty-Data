@@ -313,6 +313,7 @@ def write(cc, key, rows, feats):
     meetings(cc, "")
     own = owners(cc, rows)
     for r in rows:
+        if r.get("_own_meetings"): continue   # counted another way (Japan: board of education minutes)
         n, url, keep, kind = meetings(cc, r["District ID"])
         if url and cc not in CHECKED and own.get(url) != r["District ID"]: n, url, keep, kind = 0, "", [], ""
         latest, years = date_summary(keep) if n else ("", "")
@@ -321,7 +322,7 @@ def write(cc, key, rows, feats):
             "Population", "Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
     extra = [c for c in ("Province", "Autonomous community", "Children under 18 (estimated)", "Poverty year", "Poverty range", "Poverty rate (region, all ages)", ES_EST,
-                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)") if any(r.get(c) not in (None, "") for r in rows)]
+                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)", "Welfare rate basis", "Unemployment rate (2020 census)", "Children under 15") if any(r.get(c) not in (None, "") for r in rows)]
     pov = "Percentage of Children in Low Income" if any(r.get("Percentage of Children in Low Income") for r in rows) else "Poverty rate (all ages)"
     cols = [c for c in cols if c not in ("Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)") or any(r.get(c) not in (None, "") for r in rows)]
     cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
@@ -911,6 +912,66 @@ def poland():
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
     write("PL", "poland", rows, feats)
+
+
+def japan():
+    """1,741 municipalities (cities, towns, villages and Tokyo's special wards), each with its own board of education
+    (教育委員会), which runs its elementary and lower secondary schools and meets in public, usually monthly.
+    Poverty stand-in: the welfare rate (生活保護), people receiving public assistance as a share of the population,
+    FY2024 (Ministry of Health, Labour and Welfare). It's published for designated and core cities; every other
+    municipality gets its prefecture's rate outside those cities (the survey splits a prefecture by who runs the welfare
+    office, not by cities and towns: in Shimane and Hiroshima the towns run their own, so its town figure is empty)."""
+    d = os.path.join(IN, "japan")
+    mun = json.load(open(os.path.join(d, "jp_municipal.json"), encoding="utf-8"))
+    wel = json.load(open(os.path.join(d, "jp_welfare_2024.json"), encoding="utf-8"))
+    mf = os.path.join(d, "jp_minutes.json")
+    mins = {m["code"]: m for m in json.load(open(mf, encoding="utf-8"))} if os.path.exists(mf) else {}
+    geo = {f["properties"]["id"]: f for f in json.load(open(os.path.join(d, "jp_borders.geojson"), encoding="utf-8"))["features"]}
+    pref = {c[:2]: v for c, v in mun.items() if c.endswith("000")}
+    places = {c: v for c, v in mun.items() if not c.endswith("000") and c != "13100" and not (v["name"].endswith("区") and not c.startswith("131"))}
+    pref_en = lambda c: re.sub(r"-(ken|fu|to)$", "", pref[c[:2]]["en"])
+    own = {c for c, v in places.items() if v["name"] in wel["cities"] and wel["cities"][v["name"]]["total"]}
+    # Each prefecture outside its designated and core cities: recipients (monthly average) over people.
+    grp = {}
+    for c, v in places.items():
+        if c in own: continue
+        g = grp.setdefault(c[:2], [0, 0]); g[1] += v.get("pop") or 0
+    for pc, g in grp.items():
+        w = wel["prefectures"].get(pref[pc]["name"], {}).get("total")
+        g[0] = w / 12 if w else None
+    rows, feats = [], []
+    for c, v in sorted(places.items()):
+        pop = v.get("pop") or 0
+        if c in own:
+            rate, basis = wel["cities"][v["name"]]["total"] / 12 / pop * 100 if pop else None, f"Its own ({wel['cities'][v['name']]['kind']})"
+        else:
+            g = grp[c[:2]]
+            rate = g[0] / g[1] * 100 if g[0] and g[1] else None
+            basis = f"{pref_en(c)} outside its designated and core cities"
+        en = re.sub(r"-(shi|machi|cho|mura|son|ku)$", "", v["en"])
+        name = f"{en} ({v['name']})"
+        f = geo.get(f"JP-{c}")
+        dens = pop / v["area"] if pop and v.get("area") else 0
+        enr = (v.get("elementary") or 0) + (v.get("lower_secondary") or 0)
+        m = mins.get(c, {})
+        n = m.get("meetings") or 0
+        years = "; ".join(f"{y}:{k}" for y, k in sorted(m.get("years", {}).items()) if y != "?")
+        rows.append({"District": name, "Region": pref_en(c), "Population": round(pop) if pop else "",
+                     "Poverty rate (all ages)": f"{rate:.2f}%" if rate is not None else "",
+                     "Welfare rate basis": basis if rate is not None else "",
+                     "Poverty note": ("Welfare rate: people receiving public assistance (生活保護), monthly average for FY2024, as a share of the 2020 census population "
+                                      "(Ministry of Health, Labour and Welfare, survey of welfare recipients). "
+                                      + ("" if c in own else f"Published only for designated and core cities; this is the rate for {basis}")),
+                     "Unemployment rate (2020 census)": f"{100 * v['unemployed'] / v['labour_force']:.1f}%" if v.get("unemployed") and v.get("labour_force") else "",
+                     "Children under 15": round(v["under15"]) if v.get("under15") else "",
+                     "Enrollment": round(enr) if enr else "", "Enrollment year": "2024 (elementary and lower secondary schools)" if enr else "",
+                     "School system": "Board of education (教育委員会)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": f"JP-{c}", "_geo": bool(f),
+                     "_own_meetings": True, "Available Board Meetings": n, "Meetings type": "Board of education (minutes)" if n else "",
+                     "Meetings source": (m.get("pages") or [m.get("board", "")])[0] if n else "", "Latest meeting": max((y for y in m.get("years", {}) if y != "?"), default="") if n else "",
+                     "Meetings by year": years if n else ""})
+        if f: feats.append({"type": "Feature", "properties": {"id": f"JP-{c}", "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    write("JP", "japan", rows, feats)
 
 
 EC_PROV_CAPS = {}
