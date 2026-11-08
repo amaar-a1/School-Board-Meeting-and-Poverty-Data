@@ -1,0 +1,4 @@
+ERR dzs_sae.pdf <urlopen error [Errno 104] Connection reset by peer>
+ERR dzs_sae_pres.pdf <urlopen error [Errno 104] Connection reset by peer>
+ERR dzs_2022.pdf <urlopen error [Errno 110] Connection timed out>
+lau HR 556 {'GISCO_ID': 'HR_02658', 'CNTR_CODE': 'HR', 'LAU_NAME': 'Mihovljan', 'POP_2024': 1677.0, 'POP_DENS_2024': 64.03546303, 'AREA_KM2': 26.18861363, 'YEAR': 2024}
