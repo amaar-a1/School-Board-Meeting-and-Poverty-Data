@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<!-- virtual="include/head.html" -->
+<script src="/opendata/include/head.vm"></script>
+
+<body id="open-data-on">
+
+<script src="/opendata/include/header.vm"></script>
+
+<!--main-->
+<section class="grigia">
+	<div class="container">
+	<div class="row override pagine-interne pagina-risultati flex">
+      
+      <!--right-->
+      <div id="contenuto-card" class="col-md-12">
+        <h1 id="sec0">Pagina non trovata</h1>
+        
+        
+        <div class="row">
+            	<div class="col-lg-12 gutter-10">                   
+                        <div class="card">
+                        	<div class="row">
+                                <div class="col-lg-12">
+                                    <p style="text-align:center;">
+                                        <strong>Questo link non &egrave; raggiungibile.</strong>
+                                        Ci scusiamo per l'inconveniente. <br>
+                                        Cosa cercavi esattamente? <br>
+                                    </p>
+                                    <hr>
+                                    </div>
+                                   <div class="col-lg-12"> 
+                                    <a href="org.apache.velocity.tools.view.ViewContextTool@34d5ad5b" class="center-block"style="text-align:center;" >TORNA ALLA HOME</a>
+                                    </div>
+                                    <div class="col-lg-12"> 
+                                    <p style="text-align:center;">
+                                        oppure scegli quale area del portale ti interessa di pi&uacute;:
+                                    </p>
+                                    
+                                
+                                </div>
+                                <div class="col-lg-4">
+                                    <a href="org.apache.velocity.tools.view.ViewContextTool@34d5ad5b/opendata" class="btn  btn-lg btn-block btn-ciano pull-right-responsive">OPEN DATA</a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a href="org.apache.velocity.tools.view.ViewContextTool@34d5ad5b/esploraidati" class="btn  btn-lg btn-block btn-ciano pull-right-responsive">ESPLORA I DATI</a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a href="org.apache.velocity.tools.view.ViewContextTool@34d5ad5b/documentale" class="btn  btn-lg btn-block btn-ciano pull-right-responsive">DOCUMENTALE</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                         </div>
+                 </div>
+                
+            </div>
+            
+        <div class="clearfix"></div>
+        
+
+        </div><!--/right-->
+  	</div><!--/row-->
+</div><!--/container-->
+</section>    
+    
+   
+        
+    <!-- virtual="include/footer.html" -->    
+	 <script src="/opendata/include/footer.vm"></script>
+    <!-- SCRIPT SCROLL UP-->
+	<!-- virtual="include/scroll-script.html" -->
+    	<script>
+
+	$(function(){
+		$(window).scroll(function(){
+			if($(this).scrollTop()>200){$('#bttop').fadeIn();
+			}
+			else{
+				$('#bttop').fadeOut();
+				}
+			});
+			$('#bttop').click(function(){
+				$('body,html').animate({scrollTop:0},800);
+				});
+			});
+			
+			
+		$(function() {
+		  $('a[href*="#"]:not([href="#"])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			  var target = $(this.hash);
+			  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			  if (target.length) {
+				$('html, body').animate({
+				  scrollTop: target.offset().top
+				}, 800);
+				return false;
+			  }
+			}
+		  });
+		});
+	</script>
+	</body>
+    
+    
+</html>
+

@@ -1,0 +1,167 @@
+[
+{
+"id": "P2372",
+"name": "Wydatki budżetów powiatów - Wydatki w Działach: 852 - Pomoc społeczna i 853 - Pozostałe zadania w zakresie polityki społecznej",
+"parentId": "G569",
+"levels": [
+5
+],
+"hasVariables": true
+},
+{
+"id": "P2154",
+"name": "Wydatki budżetów województw - Wydatki w Działach: 852 - Pomoc społeczna i 853 - Pozostałe zadania w zakresie polityki społecznej",
+"parentId": "G569",
+"levels": [
+3
+],
+"hasVariables": true
+},
+{
+"id": "P3289",
+"name": "Wydatki w Dziale 852 - Pomoc społeczna",
+"parentId": "G425",
+"levels": [
+6
+],
+"hasVariables": true
+},
+{
+"id": "P3288",
+"name": "Wydatki w Dziale 852 - Pomoc społeczna",
+"parentId": "G197",
+"levels": [
+5
+],
+"hasVariables": true
+},
+{
+"id": "P3307",
+"name": "Wydatki w Dziale 852 - Pomoc społeczna",
+"parentId": "G201",
+"levels": [
+3
+],
+"hasVariables": true
+},
+{
+"id": "P1535",
+"name": "Wydatki w Dziale 801 - Oświata i wychowanie",
+"parentId": "G197",
+"levels": [
+5
+],
+"hasVariables": true
+},
+{
+"id": "P1582",
+"name": "Wydatki w Dziale 801 - Oświata i wychowanie",
+"parentId": "G201",
+"levels": [
+3
+],
+"hasVariables": true
+},
+{
+"id": "P2638",
+"name": "Wydatki w Dziale 801 - Oświata i wychowanie",
+"parentId": "G425",
+"levels": [
+6
+],
+"hasVariables": true
+},
+{
+"id": "P4013",
+"name": "Dzieci w wieku przedszkolnym, dzieci objęte wychowaniem przedszkolnym i odsetek dzieci objętych wychowaniem przedszkolnym",
+"parentId": "G251",
+"levels": [
+6
+],
+"hasVariables": true
+},
+{
+"id": "P3959",
+"name": "Wychowanie pozaszkolne",
+"parentId": "G622",
+"levels": [
+7
+],
+"hasVariables": true
+},
+{
+"id": "G622",
+"name": "WYCHOWANIE POZASZKOLNE",
+"parentId": "K20",
+"levels": [
+7
+],
+"hasVariables": false
+},
+{
+"id": "K19",
+"name": "WYCHOWANIE PRZEDSZKOLNE",
+"parentId": null,
+"levels": [
+6,
+7
+],
+"hasVariables": false
+},
+{
+"id": "G251",
+"name": "WYCHOWANIE PRZEDSZKOLNE",
+"parentId": "K19",
+"levels": [
+6,
+7
+],
+"hasVariables": false
+},
+{
+"id": "P3534",
+"name": "Wychowanie przedszkolne - wskaźniki",
+"parentId": "G251",
+"levels": [
+6
+],
+"hasVariables": true
+},
+{
+"id": "P2800",
+"name": "Wychowanie przedszkolne razem",
+"parentId": "G251",
+"levels": [
+6,
+7
+],
+"hasVariables": true
+},
+{
+"id": "P2638",
+"name": "Wydatki w Dziale 801 - Oświata i wychowanie",
+"parentId": "G425",
+"levels": [
+6
+],
+"hasVariables": true
+},
+{
+"id": "P1535",
+"name": "Wydatki w Dziale 801 - Oświata i wychowanie",
+"parentId": "G197",
+"levels": [
+5
+],
+"hasVariables": true
+},
+{
+"id": "P1582",
+"name": "Wydatki w Dziale 801 - Oświata i wychowanie",
+"parentId": "G201",
+"levels": [
+3
+],
+"hasVariables": true
+}
+]
