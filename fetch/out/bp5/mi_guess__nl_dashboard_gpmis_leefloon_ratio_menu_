@@ -1,0 +1,625 @@
+      <!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>GPMI studenten/LL ratio</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="/bundles/fac5f8f22297523426373918f312df54ecd3899e/css/app.css">
+  <style>
+    .color-palette {
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+    }
+
+    .color-palette-set {
+      margin-bottom: 15px;
+    }
+
+    .color-palette span {
+      display: none;
+      font-size: 12px;
+    }
+
+    .color-palette:hover span {
+      display: block;
+    }
+
+    .color-palette-box h4 {
+      position: absolute;
+      top: 100%;
+      left: 25px;
+      margin-top: -40px;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 12px;
+      display: block;
+      z-index: 7;
+    }
+  </style>
+      <link rel="stylesheet" href="/bundles/fac5f8f22297523426373918f312df54ecd3899e/css/map.css">
+  <link rel="icon" type="image/x-icon" href="/bundles/fac5f8f22297523426373918f312df54ecd3899e/static/favicon.png" />
+</head>
+<body class="hold-transition skin-yellow sidebar-mini">
+
+<div class="wrapper">
+  <header class="main-header">
+    <a href="/" class="logo">
+      <span class="logo-mini"><b>HOME</b></span>
+      <span class="logo-lg"><b>HOME</b></span>
+    </a>
+    <nav class="navbar navbar-static-top">
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Verberg/tonen het navigatiemenu</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            	<i class="fa fa-language"></i>
+              	nl
+            </a>
+            <ul class="dropdown-menu">
+	            	                                                                                                                                          <li>
+                                                              <a class="menuitem" href="/fr/dashboard/ratio_piise_ris?menu=map&amp;format=json">
+                            <abbr title="Français" lang="fr">Français</abbr>
+                        </a>
+                        <a class="menuitem" href="/nl/dashboard/gpmis_leefloon_ratio?menu=map&amp;format=json">
+                            <abbr title="Nederlands" lang="nl">Nederlands</abbr>
+                        </a>
+                                                     </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <aside class="main-sidebar">
+
+
+                                                                                    
+<!-- sidebar: style can be found in sidebar.less -->
+<section class="sidebar">
+    <!-- sidebar menu: : style can be found in sidebar.less -->
+    <ul class="sidebar-menu">
+        <li class="header">Dashboards</li>
+                                                <li>
+                            <a href="#">
+            <i class="fa fa-map-o"></i>
+            <span>Kaarten type A</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                <ul class="treeview-menu">
+                                                                                                                                                                      <li>        
+    <a href="/nl/dashboard/rmi_entities?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">RMI</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/ris_entities?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">Leefloon</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/leefloon_jonger_25?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">Leefloon jonger dan 25 jaar</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/leefloon_25?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">Leefloon 25 jaar of meer</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/recognized_refugees?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">LL  erkende vluchtelingen/subsidiair beschermden</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/gpmi_entities?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">GPMI</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/general_piis?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">GPMI algemeen</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/gpmi_studenten?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">GPMI student</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/gpmi_jonger_25?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">GPMI jonger dan 25 jaar</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/gpmi_25?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">GPMI 25 jaar of meer</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/beneficiaries_installation_grant?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">Installatiepremies</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/spi_entities?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">SPI</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/spi_jonger_25?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">SPI jonger dan 25 jaar</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/spi_25?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">SPI 25 jaar of meer</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/das_entities?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">RMH</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/financiele_steun_entities?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">Financiële steun</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/financiele_steun_jonger_25?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">Financiële steun jonger dan 25 jaar</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/financiele_steun_25?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">Financiële steun 25 jaar of meer</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/am_entities?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">MH</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/amu_entities?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">DMH</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/aam_entities?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">AMH</span>
+                    </a></li>
+                                                                                                                        </ul>
+                                    </li>
+                                                            <li>
+                            <a href="#">
+            <i class="fa fa-map"></i>
+            <span>Kaarten type B</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                                                <ul class="treeview-menu">
+                                                                                                                                                                      <li>        
+    <a href="/nl/dashboard/ris_cities?menu=map">
+                    <i class="fa fa-map cell" ></i>
+                            <span class="cell">LL per 1.000 inwoners</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/ris_18_24?menu=map">
+                    <i class="fa fa-map cell" ></i>
+                            <span class="cell">LL per 1.000 inwoners – 18-24 jaar</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/ris_growth?menu=map">
+                    <i class="fa fa-map cell" ></i>
+                            <span class="cell">Groeipercentage LL</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/ratio_piis_ris?menu=map">
+                    <i class="fa fa-map cell" ></i>
+                            <span class="cell">GMPI/LL ratio</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/piis_gen_cities?menu=map">
+                    <i class="fa fa-map cell" ></i>
+                            <span class="cell">Algemeen GPMI/LL ratio</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/gpmis_leefloon_ratio?menu=map">
+                    <i class="fa fa-map cell" ></i>
+                            <span class="cell">GPMI studenten/LL ratio</span>
+                    </a></li>
+                                                                                                                        </ul>
+                                    </li>
+                                                            <li>
+                            <a href="#">
+            <i class="fa fa-dot-circle-o"></i>
+            <span>Spreidingsdiagram</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                                                                        
+                                                                                                                                                                                                                                                                                                            
+                                                <ul class="treeview-menu">
+                                                                                                                                                                      <li>        
+    <a href="/nl/dashboard/ris_scatter?menu=Scatterplots">
+                    <i class="fa fa-dot-circle-o cell" ></i>
+                            <span class="cell">LL – Inkomen</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/growth_ris_scatter?menu=Scatterplots">
+                    <i class="fa fa-dot-circle-o cell" ></i>
+                            <span class="cell">Stijging LL/Inkomen</span>
+                    </a></li>
+                                                                                                                        </ul>
+                                    </li>
+                                                            <li>
+                            <a href="#">
+            <i class="fa fa-line-chart"></i>
+            <span>Grafieken in evolutie</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                <ul class="treeview-menu">
+                                                                                                                                                                      <li>        
+    <a href="/nl/dashboard/leefloon_klassieken?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">Leefloon type</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/leefloon_geslacht?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">Leefloon Geslacht</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/leefloon_categorien?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">Leefloon Categorie</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/leefloon_leeftijd?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">Leefloon Leeftijd</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/leefloon_nationaliteit?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">Leefloon Nationaliteit</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/gpmi-type?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">GPMI type</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/aam-amu?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">AMH-DMH</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/ase_geslacht?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">Financiële steun Geslacht</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/ase_categorieen?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">Financiële steun Categorie</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/ase_leeftijd?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">Financiële steun Leeftijd</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/ase_nationaliteit?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">Financiële steun Nationaliteit</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/ris_path_length_geslacht_nl?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">Leefloon trajectduur volgens geslacht</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/ris_path_length_category_nl?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">Leefloon trajectduur volgens de gezinscategorie</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/ris_path_length_leeftijd?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">Leefloon trajectduur volgens leeftijdscategorie</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/nl/dashboard/ris_path_length_nationaliteit_nl?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">Leefloon trajectduur volgens groep van nationaliteiten</span>
+                    </a></li>
+                                                                                                                        </ul>
+                                    </li>
+                                                            <li>
+                            <a href="#">
+            <i class="fa fa-clone"></i>
+            <span>Vergelijkende grafieken</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                                                                        
+                                                                                                                                                                                                
+                                                <ul class="treeview-menu">
+                                                                                                                                                                      <li>        
+    <a href="/nl/dashboard/comparedashboard?menu=AWgYNHIe-Sp0TD2f0TcY">
+                    <i class="fa fa-clone cell" ></i>
+                            <span class="cell">Selectie criteria</span>
+                    </a></li>
+                                                                                                                        </ul>
+                                    </li>
+                                                            <li>
+                                                            <a href="/nl/form/export/exportdashboard">
+                    <i class="fa fa-file-excel-o cell" ></i>
+                <span class="cell">Gegevens downloaden</span>
+    </a>
+
+                                        </li>
+                        </ul>
+</section>
+
+</aside>
+  <div class="content-wrapper">
+    <section class="content-header">
+      <h1>
+      		<i class="fa fa-map"></i> GPMI studenten/LL ratio
+	<div class="btn-group">
+		<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myInfoModal">
+			<i class="fa fa-info-circle" aria-hidden="true"></i>
+			<span class="sr-only">Ouvrir modal info</span>
+		</button>
+	</div>
+      </h1>
+      	<!-- Modal -->
+	<div class="modal fade" id="myInfoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">GPMI studenten/LL ratio</h4>
+	      </div>
+	      <div class="modal-body">
+	           <p>Het Ge&iuml;ndividualiseerd Project voor Maatschappelijke Integratie (GPMI) is een overeenkomst die wordt gesloten tussen een OCMW en een gerechtigde van het Recht op Maatschappelijke Integratie (RMI). Het stelt de middelen op waar de verschillende partijen (gerechtigde, OCMW, eventuele partner) gebruik van mogen maken om de doelstellingen te behalen in verband met maatschappelijke en/of professionele integratie van de gerechtigde. De overeenkomst is gebaseerd is op de verwachtingen en noden van de gerechtigde opgesteld in dialoog met een maatschappelijk werker, en is aanpasbaar in de tijd. Het is zowel bedoeld als instrument voor een ge&iuml;ndividualiseerde begeleiding en opvolging van de gerechtigde naar meer autonomie en onafhankelijkheid, als een responsabiliseringstool van deze laatste.</p>
+
+<p>Dit project kan twee vormen aannemen:</p>
+
+<ul>
+	<li>Het algemeen GPMI, dat op termijn zou moeten uitmonden in een arbeidsovereenkomst;</li>
+	<li>Een studieproject (bestemd voor jongeren van minder dan 25 jaar die studies willen aanvatten, hervatten of verderzetten).</li>
+</ul>
+
+<p>Meer informatie over het GPMI vind je op <a href="http://www.mi-is.be/fr" target="_blank">www.mi-is.be</a>.</p>
+	      </div>
+	      <div class="modal-footer">
+	      	<button type="button" class="btn btn-default pull-left not-display-window" data-dismiss="modal" id="AWdAu0xX-Sp0TD2f0Srg">Niet meer weergeven</button>
+	        <button type="button" class="btn btn-default" data-dismiss="modal" id="closeModal">Sluiten</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+		    </section>
+
+    <section class="content">
+    	<div id="flashbags">
+						
+						
+								</div>
+    <div class="row">
+	<div class="col-md-12">
+		<div class="box box-mistatis box-loading">
+			<div class="box-header with-border">
+            	<h2 class="box-title">Maak uw keuze</h2>
+
+            </div>
+			<div class="box-body">
+				<div class="col-xs-10 col-xs-offset-1" id="period-slider-container">
+
+						<label for="period-picker">Kies een periode</label>
+													<select class="" id="period-picker">
+																	<option value="202507-202606">van 07/2025 tot 06/2026</option>
+																	<option value="202501-202512">van 01/2025 tot 12/2025</option>
+																	<option value="202401-202412">van 01/2024 tot 12/2024</option>
+																	<option value="202301-202312">van 01/2023 tot 12/2023</option>
+																	<option value="202201-202212">van 01/2022 tot 12/2022</option>
+																	<option value="202101-202112">van 01/2021 tot 12/2021</option>
+																	<option value="202001-202012">van 01/2020 tot 12/2020</option>
+																	<option value="201901-201912">van 01/2019 tot 12/2019</option>
+																	<option value="201801-201812">van 01/2018 tot 12/2018</option>
+																	<option value="201701-201712">van 01/2017 tot 12/2017</option>
+																	<option value="201601-201612">van 01/2016 tot 12/2016</option>
+															</select>
+				</div>
+			</div>
+			<div class="box-footer">
+				<div class="btn-group">
+										<a class="btn btn-mistatis" id="download" href="#"  data-href="/nl/export/map/gpmis_leefloon_ratio/__period__.json">
+							<i class="fa fa-download"></i> Download de gegevens voor deze periode
+						</a>
+				</div>
+			</div>
+			<div class="overlay">
+				<i class="fa fa-refresh fa-spin"></i>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<h2>
+			Verdeling van de gemeenten volgens de ratio GPMI studenten/LL (%)
+			<small>
+							        Gegevens van 10/2026
+							</small>
+					</h2>
+	</div>
+</div>
+<div class="row">
+  <div class="col-md-9">
+    <div class="box box-mistatis box-loading">
+      <div class="box-header with-border">
+          <div class="pull-left">
+            <h3 class="box-title">Periode
+                              <span id="span-date">van 01/2016 tot 12/2016</span>
+                          </h3>
+            <div class="form-select-entity">
+               <label for="select-entity" class="sr-only">Selecteer een geografische entiteit</label>
+               <select id="select-entity">
+                 <option value="">Selecteer een entiteit</option>
+               </select>
+              <button type="submit" class="sr-only">Submit</button>
+            </div>
+          </div>
+          <div class="btn-group pull-right">
+          	<a id="saveAsPng" class="btn btn-default btn-xs" ><i class="fa fa-picture-o"></i></a>          </div>
+      </div>
+      <div class="box-body">
+        <div class="col-md-12">
+          <div class="row">
+              <div id="mistatis-map" style="height: 600px; width: 100%; position: relative;">
+                <div class="btn-group">
+                </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="" id="details-box">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="list-group btn-group-vertical btn-block" id="list-subregions">
+          </div>
+        </div>
+      </div>
+      <div class="box-body">
+      </div>
+    <!-- /.box-body -->
+      <div class="overlay">
+        <i class="fa fa-refresh fa-spin"></i>
+      </div>
+    </div>
+    <!-- /.box -->
+  </div>
+
+	<div class="col-md-3">
+		<div class="box box-mistatis">
+            <div class="box-header with-border">
+              	<h3 class="box-title">Legende</h3>
+
+				<div class="btn-group pull-right">
+
+                </div>
+            </div>
+            <div class="box-body">
+            	<div class="col-md-12">
+	            	<div class="row">
+
+
+                        <ul>
+                                                                                    <li id="key_1">
+                                    <i class="fa fa-square" style="color: #DE5B49;"></i>
+                                </li>
+                                                            <li id="key_2">
+                                    <i class="fa fa-square" style="color: #E37B40;"></i>
+                                </li>
+                                                            <li id="key_3">
+                                    <i class="fa fa-square" style="color: #F0CA4D;"></i>
+                                </li>
+                                                            <li id="key_4">
+                                    <i class="fa fa-square" style="color: #97D277;"></i>
+                                </li>
+                                                            <li id="key_5">
+                                    <i class="fa fa-square" style="color: #46B29D;"></i>
+                                </li>
+                                                                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </section>
+  </div>
+  <footer class="main-footer">
+    <img src="../../file/0bef15ebfa4030ed102a01b6df9e27b17e35c280/c5056e4e1a9630e7e4e036572eb7a7762d66b8b9/sppis-podmi.gif?name=sppis_podmi.gif&amp;type=image/gif" alt= "Logo van POD MI"><strong>Copyright &copy; 2026 <a href="https://www.mi-is.be/nl" target="_blank">POD Maatschappelijke Integratie</a>.</strong> Alle rechten voorbehouden. | <strong><a href="/nl/privacy">Privacy</a></strong> | <strong><a href="/nl/voorwaarden-hergebuik">Voorwaarden voor het hergebruik</a></strong> | <strong><a href="/nl/toegankelijkheidsverklaring">Toegankelijkheidsverklaring</a></strong>
+  </footer>
+</div>
+    <script type="text/javascript">
+		var euCookie = '\u003Cp\u003EWij\u0020gebruiken\u0020cookies\u0020op\u0020deze\u0020website\u0020om\u0020uw\u0020gebruikservaring\u0020te\u0020verbeteren.\u0020Door\u0020te\u0020klikken\u0020op\u0020een\u0020link\u0020op\u0020deze\u0020pagina,\u0020geeft\u0020u\u0020ons\u0020de\u0020toestemming\u0020om\u0020cookies\u0020in\u0020te\u0020stellen.\r\n\u003Ca\u0020href\u003D\u0022\/nl\/uw\u002Dprivacy\u0022\u0020class\u003D\u0022btn\u0020btn\u002Ddefault\u0022\u003EMeer\u0020weten\u003C\/a\u003E\u0020\u003Ca\u0020href\u003D\u0022\u0023\u0022\u0020id\u003D\u0022closeCookie\u0022\u0020class\u003D\u0022btn\u0020btn\u002Ddefault\u0022\u003E\u0026times\u003B\u0020Doorgaan\u003C\/a\u003E\u003C\/p\u003E';
+		var lang = 'nl';
+	</script>
+
+	<script src="/bundles/fac5f8f22297523426373918f312df54ecd3899e/js/app.js"></script>
+	<script src="/saveSvgAsPng.js"></script>
+<script src="/bundles/fac5f8f22297523426373918f312df54ecd3899e/static/js/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
+<script src="/bundles/fac5f8f22297523426373918f312df54ecd3899e/static/js/map.js"></script>
+
+<script>
+
+$(function() {
+
+	window.MapApp({
+		
+		mapPrototype: "\/nl\/js\/maps\/for\/cities\/__period__.js",
+		dataPrototype: "\/nl\/map\/gpmis_leefloon_ratio\/__time_id__.json",
+		dataSelectPrototype: "\/nl\/maps\/cities\/__period__\/map.json\u003Fslug\u003Dgpmis_leefloon_ratio",
+		locale: "nl",
+		name : "GPMI studenten/LL ratio",
+		colorUndefined : "#AAAAAA"
+	});
+
+});
+
+</script>
+
+
+	<script type="text/javascript">
+    //try to find wich sidemenu elements to activate
+    $(document).ready(function() {
+      var currentMenuLink = $('section.sidebar ul.sidebar-menu a[href="'+window.location.pathname + window.location.search+'"]');
+
+      if(currentMenuLink.length == 1){
+        currentMenuLink.parents('li').addClass('active');
+      }
+    });
+
+    // MATOMO
+    var _paq = window._paq = window._paq || [];
+
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    _paq.push(['requireCookieConsent']);
+
+    (function() {
+      var u="https://matomo.bosa.be/";
+
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '314']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+	</script>
+</body>
+</html>
+

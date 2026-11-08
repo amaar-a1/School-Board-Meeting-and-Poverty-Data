@@ -1,0 +1,702 @@
+      <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Revenu d&#039;intégration (RIS) par commune</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="/bundles/fac5f8f22297523426373918f312df54ecd3899e/css/app.css">
+  <style>
+    .color-palette {
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+    }
+
+    .color-palette-set {
+      margin-bottom: 15px;
+    }
+
+    .color-palette span {
+      display: none;
+      font-size: 12px;
+    }
+
+    .color-palette:hover span {
+      display: block;
+    }
+
+    .color-palette-box h4 {
+      position: absolute;
+      top: 100%;
+      left: 25px;
+      margin-top: -40px;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 12px;
+      display: block;
+      z-index: 7;
+    }
+  </style>
+      <link rel="stylesheet" href="/bundles/fac5f8f22297523426373918f312df54ecd3899e/css/map.css">
+  <link rel="icon" type="image/x-icon" href="/bundles/fac5f8f22297523426373918f312df54ecd3899e/static/favicon.png" />
+</head>
+<body class="hold-transition skin-yellow sidebar-mini">
+
+<div class="wrapper">
+  <header class="main-header">
+    <a href="/fr" class="logo">
+      <span class="logo-mini"><b>HOME</b></span>
+      <span class="logo-lg"><b>HOME</b></span>
+    </a>
+    <nav class="navbar navbar-static-top">
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Cacher/montrer le menu de navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            	<i class="fa fa-language"></i>
+              	fr
+            </a>
+            <ul class="dropdown-menu">
+	            	                                                                                                                                          <li>
+                                                              <a class="menuitem" href="/fr/dashboard/ris_cities?menu=map">
+                            <abbr title="Français" lang="fr">Français</abbr>
+                        </a>
+                        <a class="menuitem" href="/nl/dashboard/ris_cities?menu=map">
+                            <abbr title="Nederlands" lang="nl">Nederlands</abbr>
+                        </a>
+                                                     </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <aside class="main-sidebar">
+
+
+                                                                                    
+<!-- sidebar: style can be found in sidebar.less -->
+<section class="sidebar">
+    <!-- sidebar menu: : style can be found in sidebar.less -->
+    <ul class="sidebar-menu">
+        <li class="header">Tableaux de bord</li>
+                                                <li>
+                            <a href="#">
+            <i class="fa fa-map-o"></i>
+            <span>Cartes type A</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                <ul class="treeview-menu">
+                                                                                                                                                                      <li>        
+    <a href="/fr/dashboard/dis_entities?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">DIS</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ris_entities?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">RIS</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ris_moins_25?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">RIS moins de 25 ans</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ris_25?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">RIS 25 ans ou plus</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/recognized_refugees?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">RIS réfugiés reconnus/protection subsidiaire</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/piis_entities?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">PIIS</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/general_piis?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">PIIS général</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/piis_etudiants?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">PIIS étudiant</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/piis_moins_25?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">PIIS moins de 25 ans</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/piis_25?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">PIIS 25 ans ou plus</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/beneficiaries_installation_grant?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">Primes d’installation</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/isp_entities?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">ISP</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/isp_moins_25?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">ISP moins de 25 ans</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/isp_25?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">ISP 25 ans ou plus</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/das_entities?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">DAS</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ase_entities?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">ASE</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ase_moins_25?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">ASE moins de 25 ans</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ase_25?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">ASE 25 ans ou plus</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/am_entities?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">AM</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/amu_entities?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">AMU</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/aam_entities?menu=drilldown">
+                    <i class="fa fa-map-o cell" ></i>
+                            <span class="cell">AAM</span>
+                    </a></li>
+                                                                                                                        </ul>
+                                    </li>
+                                                            <li>
+                            <a href="#">
+            <i class="fa fa-map"></i>
+            <span>Cartes type B</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                                                <ul class="treeview-menu">
+                                                                                                                                                                      <li>        
+    <a href="/fr/dashboard/ris_cities?menu=map">
+                    <i class="fa fa-map cell" ></i>
+                            <span class="cell">RIS pour 1.000 habitants</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ris_18_24?menu=map">
+                    <i class="fa fa-map cell" ></i>
+                            <span class="cell">RIS pour 1.000 habitants – 18-24 ans</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ris_growth?menu=map">
+                    <i class="fa fa-map cell" ></i>
+                            <span class="cell">Taux de croissance RIS</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ratio_piis_ris?menu=map">
+                    <i class="fa fa-map cell" ></i>
+                            <span class="cell">Ratio PIIS/RIS</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/piis_gen_cities?menu=map">
+                    <i class="fa fa-map cell" ></i>
+                            <span class="cell">Ratio PIIS général/RIS</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ratio_piise_ris?menu=map">
+                    <i class="fa fa-map cell" ></i>
+                            <span class="cell">Ratio PIIS étudiant/RIS</span>
+                    </a></li>
+                                                                                                                        </ul>
+                                    </li>
+                                                            <li>
+                            <a href="#">
+            <i class="fa fa-dot-circle-o"></i>
+            <span>Nuages de points</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                                                                        
+                                                                                                                                                                                                                                                                                                            
+                                                <ul class="treeview-menu">
+                                                                                                                                                                      <li>        
+    <a href="/fr/dashboard/ris_scatter?menu=Scatterplots">
+                    <i class="fa fa-dot-circle-o cell" ></i>
+                            <span class="cell">RIS - Revenus</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/growth_ris_scatter?menu=Scatterplots">
+                    <i class="fa fa-dot-circle-o cell" ></i>
+                            <span class="cell">Taux de croissance RIS &amp; Revenus</span>
+                    </a></li>
+                                                                                                                        </ul>
+                                    </li>
+                                                            <li>
+                            <a href="#">
+            <i class="fa fa-line-chart"></i>
+            <span>Graphiques en évolution</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                <ul class="treeview-menu">
+                                                                                                                                                                      <li>        
+    <a href="/fr/dashboard/ris_classiques?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">RIS par type</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ris_genre?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">RIS par genre</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ris_categories?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">RIS par catégorie</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ris_age?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">RIS par âge</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ris_nationalite?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">RIS par nationalité</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/piis-type?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">PIIS par type</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/aam-amu?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">AAM-AMU</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ase_genre?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">ASE par genre</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ase_categories?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">ASE par catégorie</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ase_age?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">ASE par âge</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ase_nationalite?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">ASE par nationalités</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ris_path_length_genre_fr?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">Durée des trajectoires RIS selon le genre</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ris_path_length_category_fr?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">Durée des trajectoires RIS selon la catégorie familiale</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ris_path_length_age?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">Durée des trajectoires RIS selon la tranche d’âge</span>
+                    </a></li>
+                                                                                                                                                                                                                                          <li>        
+    <a href="/fr/dashboard/ris_path_length_nationalite_fr?menu=linecharts">
+                    <i class="fa fa-line-chart cell" ></i>
+                            <span class="cell">Durée des trajectoires RIS selon le groupe de nationalités</span>
+                    </a></li>
+                                                                                                                        </ul>
+                                    </li>
+                                                            <li>
+                            <a href="#">
+            <i class="fa fa-clone"></i>
+            <span>Graphiques comparatifs</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                                                                        
+                                                                                                                                                                                                
+                                                <ul class="treeview-menu">
+                                                                                                                                                                      <li>        
+    <a href="/fr/dashboard/comparedashboard?menu=AWgYNHIe-Sp0TD2f0TcY">
+                    <i class="fa fa-clone cell" ></i>
+                            <span class="cell">Sélection critères</span>
+                    </a></li>
+                                                                                                                        </ul>
+                                    </li>
+                                                            <li>
+                                                            <a href="/fr/form/export/exportdashboard">
+                    <i class="fa fa-file-excel-o cell" ></i>
+                <span class="cell">Téléchargement données</span>
+    </a>
+
+                                        </li>
+                        </ul>
+</section>
+
+</aside>
+  <div class="content-wrapper">
+    <section class="content-header">
+      <h1>
+      		<i class="fa fa-map"></i> Revenu d&#039;intégration (RIS) par commune
+	<div class="btn-group">
+		<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myInfoModal">
+			<i class="fa fa-info-circle" aria-hidden="true"></i>
+			<span class="sr-only">Ouvrir modal info</span>
+		</button>
+	</div>
+      </h1>
+      	<!-- Modal -->
+	<div class="modal fade" id="myInfoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Revenu d&#039;intégration (RIS) par commune</h4>
+	      </div>
+	      <div class="modal-body">
+	           <p>Le revenu d&#39;int&eacute;gration sociale est un revenu minimum destin&eacute; aux personnes qui ne disposent pas de ressources suffisantes, ne peuvent y pr&eacute;tendre par ailleurs, ni ne sont en mesure de se les procurer soit par leurs efforts personnels, soit par d&#39;autres moyens. Le revenu d&rsquo;int&eacute;gration sociale est un revenu index&eacute; qui doit permettre au b&eacute;n&eacute;ficiaire de mener une vie conforme &agrave; la dignit&eacute; humaine.</p>
+
+<p>Pour l&rsquo;obtenir vous devez &ecirc;tre Belge ou (membre de la famille d&rsquo;un) citoyen de l&rsquo;Union europ&eacute;enne, r&eacute;fugi&eacute;́ politique reconnu, b&eacute;n&eacute;ficiaire de la protection subsidiaire, apatride ou &eacute;tranger inscrit dans le registre de la population.</p>
+
+<p>Pour plus d&#39;informations concernant les conditions permettant de b&eacute;n&eacute;ficier d&#39;un revenu d&#39;int&eacute;gration sociale, veuillez consulter le site&nbsp;<a href="http://www.mi-is.be/fr" target="_blank">www.mi-is.be</a>.&nbsp;</p>
+	      </div>
+	      <div class="modal-footer">
+	      	<button type="button" class="btn btn-default pull-left not-display-window" data-dismiss="modal" id="AVvxHTkKGx1olgH-u8wm">Ne plus afficher</button>
+	        <button type="button" class="btn btn-default" data-dismiss="modal" id="closeModal">Fermer</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+			<div class="modal fade" id="myAltModal" tabindex="-1" role="dialog" aria-labelledby="myAltModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myAltModalLabel">Revenu d&#039;intégration (RIS) par commune</h4>
+		      </div>
+		      <div class="modal-body">
+		        	        		       			<h2>Donn&eacute;es</h2>
+
+<p>Ce site Internet distingue les chiffres mensuels et annuels afin de dresser le relev&eacute; du nombre de b&eacute;n&eacute;ficiaires d&#39;une mesure donn&eacute;e.</p>
+
+<h2>Chiffres mensuels</h2>
+
+<p>Les chiffres mensuels correspondent au nombre de b&eacute;n&eacute;ficiaires qui ont per&ccedil;u une intervention pour une mesure concern&eacute;e au cours du mois mentionn&eacute;. Il n&#39;est pas correct d&#39;additionner tous les chiffres mensuels pour obtenir les chiffres annuels. En effet, une m&ecirc;me personne peut b&eacute;n&eacute;ficier d&#39;un soutien pendant plusieurs p&eacute;riodes au cours d&#39;une m&ecirc;me ann&eacute;e. Pour conna&icirc;tre ces donn&eacute;es, il faut prendre le chiffre annuel.</p>
+
+<h2>Chiffres annuels</h2>
+
+<p>Les chiffres annuels correspondent au nombre de b&eacute;n&eacute;ficiaires qui ont per&ccedil;u une intervention pour une mesure concern&eacute;e au cours de l&#39;ann&eacute;e mentionn&eacute;e. Une personne peut b&eacute;n&eacute;ficier d&#39;une assistance pendant plusieurs mois et n&rsquo;&ecirc;tre comptabilis&eacute;e qu&#39;une seule fois.</p>
+	        			      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+				<div class="modal fade" id="mySubInfoModal" tabindex="-1" role="dialog" aria-labelledby="mySubInfoModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="mySubInfoLabel">Revenu d&#039;intégration (RIS) par commune</h4>
+		      </div>
+		      <div class="modal-body">
+		        	        	<p>Nombre de b&eacute;n&eacute;ficiaires du revenu d&rsquo;int&eacute;gration sociale pour 1.000 habitants &ndash; R&eacute;partition des communes en quintiles selon le nombre de b&eacute;n&eacute;ficiaires pour 1.000 habitants.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	    </section>
+
+    <section class="content">
+    	<div id="flashbags">
+						
+						
+								</div>
+    <div class="row">
+	<div class="col-md-12">
+		<div class="box box-mistatis box-loading">
+			<div class="box-header with-border">
+            	<h2 class="box-title">Faites votre sélection</h2>
+
+            </div>
+			<div class="box-body">
+				<div class="col-xs-10 col-xs-offset-1" id="period-slider-container">
+
+						<label for="period-picker">Choisissez une période</label>
+												<div class="btn-group">
+							<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myInfoModalMap">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                <span class="sr-only">Ouvrir modal info</span>
+              </button>
+						</div>
+
+						<!-- Modal -->
+						<div class="modal fade" id="myInfoModalMap" tabindex="-1" role="dialog" aria-labelledby="myInfoModalLabelMap">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="myInfoModalLabelMap">A propos des données</h4>
+						      </div>
+						      <div class="modal-body">
+						          					       		  <h2>Donn&eacute;es</h2>
+
+<p>Ce site Internet distingue les chiffres mensuels et annuels afin de dresser le relev&eacute; du nombre de b&eacute;n&eacute;ficiaires d&#39;une mesure donn&eacute;e.</p>
+
+<h2>Chiffres mensuels</h2>
+
+<p>Les chiffres mensuels correspondent au nombre de b&eacute;n&eacute;ficiaires qui ont per&ccedil;u une intervention pour une mesure concern&eacute;e au cours du mois mentionn&eacute;. Il n&#39;est pas correct d&#39;additionner tous les chiffres mensuels pour obtenir les chiffres annuels. En effet, une m&ecirc;me personne peut b&eacute;n&eacute;ficier d&#39;un soutien pendant plusieurs p&eacute;riodes au cours d&#39;une m&ecirc;me ann&eacute;e. Pour conna&icirc;tre ces donn&eacute;es, il faut prendre le chiffre annuel.</p>
+
+<h2>Chiffres annuels</h2>
+
+<p>Les chiffres annuels correspondent au nombre de b&eacute;n&eacute;ficiaires qui ont per&ccedil;u une intervention pour une mesure concern&eacute;e au cours de l&#39;ann&eacute;e mentionn&eacute;e. Une personne peut b&eacute;n&eacute;ficier d&#39;une assistance pendant plusieurs mois et n&rsquo;&ecirc;tre comptabilis&eacute;e qu&#39;une seule fois.</p>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+													<select class="" id="period-picker">
+																	<option value="202507-202606">de 07/2025 à 06/2026</option>
+																	<option value="202501-202512">de 01/2025 à 12/2025</option>
+																	<option value="202401-202412">de 01/2024 à 12/2024</option>
+																	<option value="202301-202312">de 01/2023 à 12/2023</option>
+																	<option value="202201-202212">de 01/2022 à 12/2022</option>
+																	<option value="202101-202112">de 01/2021 à 12/2021</option>
+																	<option value="202001-202012">de 01/2020 à 12/2020</option>
+																	<option value="201901-201912">de 01/2019 à 12/2019</option>
+																	<option value="201801-201812">de 01/2018 à 12/2018</option>
+																	<option value="201701-201712">de 01/2017 à 12/2017</option>
+																	<option value="201601-201612">de 01/2016 à 12/2016</option>
+															</select>
+				</div>
+			</div>
+			<div class="box-footer">
+				<div class="btn-group">
+										<a class="btn btn-mistatis" id="download" href="#"  data-href="/fr/export/map/ris_cities/__period__.json">
+							<i class="fa fa-download"></i> Télécharger les chiffres pour cette période
+						</a>
+				</div>
+			</div>
+			<div class="overlay">
+				<i class="fa fa-refresh fa-spin"></i>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<h2>
+			Répartition des communes selon le nombre de RIS pour 1.000 habitants (‰)
+			<small>
+							        Mise à jour du 10/2026
+							</small>
+							<div class="btn-group">
+					<button type="button" class="btn btn-default" data-toggle="modal" data-target="#mySubInfoModal">
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+            <span class="sr-only">Ouvrir modal info</span>
+          </button>
+				</div>
+					</h2>
+	</div>
+</div>
+<div class="row">
+  <div class="col-md-9">
+    <div class="box box-mistatis box-loading">
+      <div class="box-header with-border">
+          <div class="pull-left">
+            <h3 class="box-title">Période
+                              <span id="span-date">de 01/2016 à 12/2016</span>
+                          </h3>
+            <div class="form-select-entity">
+               <label for="select-entity" class="sr-only">Sélectionnez une entité géographique</label>
+               <select id="select-entity">
+                 <option value="">Sélectionnez une entité</option>
+               </select>
+              <button type="submit" class="sr-only">Submit</button>
+            </div>
+          </div>
+          <div class="btn-group pull-right">
+          	<a id="saveAsPng" class="btn btn-default btn-xs" ><i class="fa fa-picture-o"></i></a>          </div>
+      </div>
+      <div class="box-body">
+        <div class="col-md-12">
+          <div class="row">
+              <div id="mistatis-map" style="height: 600px; width: 100%; position: relative;">
+                <div class="btn-group">
+                </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="" id="details-box">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="list-group btn-group-vertical btn-block" id="list-subregions">
+          </div>
+        </div>
+      </div>
+      <div class="box-body">
+      </div>
+    <!-- /.box-body -->
+      <div class="overlay">
+        <i class="fa fa-refresh fa-spin"></i>
+      </div>
+    </div>
+    <!-- /.box -->
+  </div>
+
+	<div class="col-md-3">
+		<div class="box box-mistatis">
+            <div class="box-header with-border">
+              	<h3 class="box-title">Légende</h3>
+
+				<div class="btn-group pull-right">
+
+                </div>
+            </div>
+            <div class="box-body">
+            	<div class="col-md-12">
+	            	<div class="row">
+
+
+                        <ul>
+                                                                                    <li id="key_1">
+                                    <i class="fa fa-square" style="color: #46B29D;"></i>
+                                </li>
+                                                            <li id="key_2">
+                                    <i class="fa fa-square" style="color: #97D277;"></i>
+                                </li>
+                                                            <li id="key_3">
+                                    <i class="fa fa-square" style="color: #F0CA4D;"></i>
+                                </li>
+                                                            <li id="key_4">
+                                    <i class="fa fa-square" style="color: #E37B40;"></i>
+                                </li>
+                                                            <li id="key_5">
+                                    <i class="fa fa-square" style="color: #DE5B49;"></i>
+                                </li>
+                                                                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </section>
+  </div>
+  <footer class="main-footer">
+    <img src="../../file/0bef15ebfa4030ed102a01b6df9e27b17e35c280/c5056e4e1a9630e7e4e036572eb7a7762d66b8b9/sppis-podmi.gif?name=sppis_podmi.gif&amp;type=image/gif" alt= "Logo du SPP IS"> <strong>Copyright &copy; 2026 <a href="https://www.mi-is.be/fr" target="_blank">SPP Intégration Sociale</a>.</strong> Tous droits réservés. |  <strong><a href="/fr/vie-privee">Vie privée</a></strong> | <strong><a href="/fr/conditions-reutilisation">Conditions de réutilisation</a></strong> | <strong><a href="/fr/declaration-d-accessibilite">Déclaration d’accessibilité</a></strong>
+  </footer>
+</div>
+    <script type="text/javascript">
+		var euCookie = '\u003Cp\u003ECe\u0020site\u0020utilise\u0020des\u0020cookies\u0020pour\u0020optimiser\u0020votre\u0020navigation.\u0020En\u0020naviguant\u0020sur\u0020ce\u0020site,\u0020vous\u0020acceptez\u0020l\u0027utilisation\u0020des\u0020cookies.\r\n\u003Ca\u0020href\u003D\u0022\/fr\/declaration\u002Dde\u002Dconfidentialite\u0022\u0020class\u003D\u0022btn\u0020btn\u002Ddefault\u0022\u003EPlus\u0020d\u0020informations\u003C\/a\u003E\u0020\u003Ca\u0020href\u003D\u0022\u0023\u0022\u0020id\u003D\u0022closeCookie\u0022\u0020class\u003D\u0022btn\u0020btn\u002Ddefault\u0022\u003E\u0026times\u003B\u0020Continuer\u003C\/a\u003E\u003C\/p\u003E';
+		var lang = 'fr';
+	</script>
+
+	<script src="/bundles/fac5f8f22297523426373918f312df54ecd3899e/js/app.js"></script>
+	<script src="/saveSvgAsPng.js"></script>
+<script src="/bundles/fac5f8f22297523426373918f312df54ecd3899e/static/js/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
+<script src="/bundles/fac5f8f22297523426373918f312df54ecd3899e/static/js/map.js"></script>
+
+<script>
+
+$(function() {
+
+	window.MapApp({
+		
+		mapPrototype: "\/fr\/js\/maps\/for\/cities\/__period__.js",
+		dataPrototype: "\/fr\/map\/ris_cities\/__time_id__.json",
+		dataSelectPrototype: "\/fr\/maps\/cities\/__period__\/map.json\u003Fslug\u003Dris_cities",
+		locale: "fr",
+		name : "Revenu d&#039;intégration (RIS) par commune",
+		colorUndefined : "#AAAAAA"
+	});
+
+});
+
+</script>
+
+
+	<script type="text/javascript">
+    //try to find wich sidemenu elements to activate
+    $(document).ready(function() {
+      var currentMenuLink = $('section.sidebar ul.sidebar-menu a[href="'+window.location.pathname + window.location.search+'"]');
+
+      if(currentMenuLink.length == 1){
+        currentMenuLink.parents('li').addClass('active');
+      }
+    });
+
+    // MATOMO
+    var _paq = window._paq = window._paq || [];
+
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    _paq.push(['requireCookieConsent']);
+
+    (function() {
+      var u="https://matomo.bosa.be/";
+
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '314']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+	</script>
+</body>
+</html>
+

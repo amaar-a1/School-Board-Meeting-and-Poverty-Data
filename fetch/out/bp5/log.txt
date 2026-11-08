@@ -1,0 +1,15 @@
+== Belgium: integration income dashboard
+/nl/dashboard/gpmis_leefloon_ratio?menu=map: 43426 bytes; js ['/bundles/fac5f8f22297523426373918f312df54ecd3899e/js/app.js', '/bundles/fac5f8f22297523426373918f312df54ecd3899e/static/js/jvectormap/jquery-jvectormap-2.0.3.min.js', '/bundles/fac5f8f22297523426373918f312df54ecd3899e/static/js/map.js', '/saveSvgAsPng.js']; urls ['/nl/export/map/gpmis_leefloon_ratio/__period__.json', '/nl/form/export/exportdashboard']
+   /bundles/fac5f8f22297523426373918f312df54ecd3899e/js/app.js: ['/data/revisions/']
+/fr/dashboard/ris_cities?menu=map: 48453 bytes; js ['/bundles/fac5f8f22297523426373918f312df54ecd3899e/js/app.js', '/bundles/fac5f8f22297523426373918f312df54ecd3899e/static/js/jvectormap/jquery-jvectormap-2.0.3.min.js', '/bundles/fac5f8f22297523426373918f312df54ecd3899e/static/js/map.js', '/saveSvgAsPng.js']; urls ['/fr/export/map/ris_cities/__period__.json', '/fr/form/export/exportdashboard']
+   /bundles/fac5f8f22297523426373918f312df54ecd3899e/js/app.js: ['/data/revisions/']
+/nl/dashboard/ris_entities?menu=drilldown: 90500 bytes; js ['/bundles/fac5f8f22297523426373918f312df54ecd3899e/js/app.js', '/bundles/fac5f8f22297523426373918f312df54ecd3899e/static/js/drilldown.js', '/bundles/fac5f8f22297523426373918f312df54ecd3899e/static/js/justgage-custom.js', '/bundles/fac5f8f22297523426373918f312df54ecd3899e/static/js/jvectormap/jquery-jvectormap-2.0.3.min.js', '/bundles/fac5f8f22297523426373918f312df54ecd3899e/static/js/raphael.min.js', '/nl/js/maps/for/01000.js', '/saveSvgAsPng.js']; urls ['/nl/export/drilldown/ris_entities/__period__.json', '/nl/form/export/exportdashboard']
+   /bundles/fac5f8f22297523426373918f312df54ecd3899e/js/app.js: ['/data/revisions/']
+guess /api/dashboard/gpmis_leefloon_ratio: ERR <urlopen error timed out>
+guess /nl/api/dashboard/gpmis_leefloon_ratio: ERR <urlopen error timed out>
+guess /api/data/gpmis_leefloon_ratio: ERR HTTP Error 404: Not Found
+guess /nl/dashboard/gpmis_leefloon_ratio/data: ERR <urlopen error timed out>
+guess /nl/dashboard/gpmis_leefloon_ratio?menu=map&format=json: 43471 b'      <!DOCTYPE html>\n<html lang="nl">\n<head>\n  <meta charset="utf-8">\n  <meta http-equiv="X-UA-Compatible" content="IE=edge">\n  <title>GPMI studenten/LL ratio<'
+guess /nl/export/gpmis_leefloon_ratio: ERR <urlopen error timed out>
+guess /nl/dashboard/gpmis_leefloon_ratio/export?format=csv: ERR HTTP Error 404: Not Found
+
