@@ -2,7 +2,7 @@
 // colored by the site's data. app.js calls SiteMap.show() when the tab or the data set changes.
 (function () {
   const $ = (id) => document.getElementById(id);
-  const LAYERS = ["world", "unsd", "elsd", "territories", "scsd", "canada", "spm", "uk", "ireland", "norway", "sweden", "finland", "denmark", "netherlands", "germany", "new-zealand", "islands", "iceland", "switzerland", "chile", "colombia", "brazil", "mexico", "peru", "spain", "france", "ecuador", "italy", "poland", "japan", "portugal", "belgium", "canada-fn"];   // files in data/map/; scsd only when ticked
+  const LAYERS = ["world", "unsd", "elsd", "territories", "scsd", "canada", "spm", "uk", "ireland", "norway", "sweden", "finland", "denmark", "netherlands", "germany", "new-zealand", "islands", "iceland", "switzerland", "chile", "colombia", "brazil", "mexico", "peru", "spain", "france", "ecuador", "italy", "poland", "japan", "portugal", "belgium", "philippines", "canada-fn"];   // files in data/map/; scsd only when ticked
   // Canadian boards overlap (public and Catholic, English and French). The main layer shows one
   // board per place; "canada2" holds the overlapping ones and shows when its box is ticked.
   // Quebec's French boards cover all of Quebec; elsewhere the public (or English) board does.
@@ -11,11 +11,11 @@
     r["Board type"] === (r.Province === "Quebec" ? "French" : "English"));
   // The Nordic countries and the Netherlands: municipalities, IDs like "NO-0301" (map file per country).
   // Also Germany, New Zealand and the island countries ("ISLE-JAM"), which share the same handling.
-  const EU = { NO: "norway", SE: "sweden", FI: "finland", DK: "denmark", NL: "netherlands", DE: "germany", NZ: "new-zealand", ISLE: "islands", IS: "iceland", CH: "switzerland", CL: "chile", CO: "colombia", MX: "mexico", BR: "brazil", PE: "peru", ES: "spain", FRA: "france", EC: "ecuador", IT: "italy", PL: "poland", JP: "japan", PT: "portugal", BE: "belgium" };
-  const EU_NAMES = { NO: "Norway", SE: "Sweden", FI: "Finland", DK: "Denmark", NL: "Netherlands", DE: "Germany", NZ: "New Zealand", ISLE: "the islands and microstates", IS: "Iceland", CH: "Switzerland", CL: "Chile", CO: "Colombia", MX: "Mexico", BR: "Brazil", PE: "Peru", ES: "Spain", FRA: "France", EC: "Ecuador", IT: "Italy", PL: "Poland", JP: "Japan", PT: "Portugal", BE: "Belgium" };
+  const EU = { NO: "norway", SE: "sweden", FI: "finland", DK: "denmark", NL: "netherlands", DE: "germany", NZ: "new-zealand", ISLE: "islands", IS: "iceland", CH: "switzerland", CL: "chile", CO: "colombia", MX: "mexico", BR: "brazil", PE: "peru", ES: "spain", FRA: "france", EC: "ecuador", IT: "italy", PL: "poland", JP: "japan", PT: "portugal", BE: "belgium", PH: "philippines" };
+  const EU_NAMES = { NO: "Norway", SE: "Sweden", FI: "Finland", DK: "Denmark", NL: "Netherlands", DE: "Germany", NZ: "New Zealand", ISLE: "the islands and microstates", IS: "Iceland", CH: "Switzerland", CL: "Chile", CO: "Colombia", MX: "Mexico", BR: "Brazil", PE: "Peru", ES: "Spain", FRA: "France", EC: "Ecuador", IT: "Italy", PL: "Poland", JP: "Japan", PT: "Portugal", BE: "Belgium", PH: "Philippines" };
   const EU_POV = "Percentage of Children in Low Income";
   // Countries whose map figure is an all-ages poverty rate (no child rate by place).
-  const ALL_AGES = new Set(["CL", "CO", "MX", "BR", "PE", "FRA", "EC", "IT", "JP", "PT", "BE"]);
+  const ALL_AGES = new Set(["CL", "CO", "MX", "BR", "PE", "FRA", "EC", "IT", "JP", "PT", "BE", "PH"]);
   const povCol = (eu) => (eu === "ISLE" ? "Poverty rate or stand-in" : ALL_AGES.has(eu) ? "Poverty rate (all ages)" : EU_POV);
   const euOf = (id) => { const c = String(id).split("-")[0]; return String(id).includes("-") && EU[c] ? c : null; };
   const DRAW = ["world", "unsd", "elsd", "territories", "scsd", "canada", "canada2", "canada-fn", "spm", "uk", "ireland", ...Object.values(EU)];
@@ -66,6 +66,7 @@
     "Japan": [[24.0, 122.9], [45.6, 146.0]],
     "Portugal": [[32.6, -31.3], [42.2, -6.2]],
     "Belgium": [[49.45, 2.5], [51.55, 6.45]],
+    "Philippines": [[4.4, 116.8], [21.2, 127.0]],
     World: [[-58, -170], [75, 180]]
   };
   // Countries whose poverty figure is a welfare rate, far lower than a poverty rate: a map scale of their own.
@@ -312,7 +313,7 @@
         : !isNaN(iePov) && eu === "FRA" ? `Commune poverty rate: not published<br>Poverty rate of the whole département (all ages): ${iePov.toFixed(1)}%<br>`
         : !isNaN(iePov) ? `Poverty rate (all ages, its region): ${iePov.toFixed(1)}%<br>Unemployment (Census 2022): ${esc(r["Unemployment rate (Census 2022)"] || "–")}<br>`
         : isNaN(pov) && !isNaN(unemp) ? `Unemployment (stand-in for poverty): ${unemp.toFixed(1)}% (2015 est.)<br>`
-        : `${ukPov ? "Children under 16 in low income" : eu === "ISLE" ? esc(r["Poverty measure"] || "Poverty") : ALL_AGES.has(eu) ? `Poverty (${eu === "BE" ? "stand-in: integration income recipients per 100 inhabitants, 2025" : eu === "PT" ? "stand-in: minimum-income (RSI) recipients per 100 of working age, 2025" : eu === "JP" ? "welfare recipients, all ages, FY2024" : eu === "IT" ? "stand-in: filers with income of €10,000 or less, 2023" : eu === "FRA" ? "all ages, 60% of median, 2023" : eu === "EC" ? "all ages, consumption, 2014 estimate" : eu === "CL" ? "all ages, income, 2024" : eu === "BR" ? "all ages, income up to ½ minimum wage per person, 2022" : eu === "PE" ? "all ages, monetary, 2018" : eu === "MX" ? "all ages, multidimensional, 2020" : "all ages, multidimensional, 2018"})` : eu ? `Children in low income (${{ NO: "0–17, 2022–24", SE: "0–19, 2024", FI: "under 18", DK: "0–17, 50% line, 2024", NL: "CBS, 2024", DE: "under 15 on SGB II benefits, 2023", NZ: "60% line, 2025", IS: "national rate", CH: "0–17 on social assistance", ES: "under 18, 60% line, 2024", CL: "all ages, income, 2024", CO: "all ages, multidimensional, 2018", PL: "0–17 on family benefit, 2024" }[eu]})` : "Child poverty"}: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>`) +
+        : `${ukPov ? "Children under 16 in low income" : eu === "ISLE" ? esc(r["Poverty measure"] || "Poverty") : ALL_AGES.has(eu) ? `Poverty (${eu === "PH" ? "all ages, 2021" : eu === "BE" ? "stand-in: integration income recipients per 100 inhabitants, 2025" : eu === "PT" ? "stand-in: minimum-income (RSI) recipients per 100 of working age, 2025" : eu === "JP" ? "welfare recipients, all ages, FY2024" : eu === "IT" ? "stand-in: filers with income of €10,000 or less, 2023" : eu === "FRA" ? "all ages, 60% of median, 2023" : eu === "EC" ? "all ages, consumption, 2014 estimate" : eu === "CL" ? "all ages, income, 2024" : eu === "BR" ? "all ages, income up to ½ minimum wage per person, 2022" : eu === "PE" ? "all ages, monetary, 2018" : eu === "MX" ? "all ages, multidimensional, 2020" : "all ages, multidimensional, 2018"})` : eu ? `Children in low income (${{ NO: "0–17, 2022–24", SE: "0–19, 2024", FI: "under 18", DK: "0–17, 50% line, 2024", NL: "CBS, 2024", DE: "under 15 on SGB II benefits, 2023", NZ: "60% line, 2025", IS: "national rate", CH: "0–17 on social assistance", ES: "under 18, 60% line, 2024", CL: "all ages, income, 2024", CO: "all ages, multidimensional, 2018", PL: "0–17 on family benefit, 2024" }[eu]})` : "Child poverty"}: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>`) +
       (!isNaN(frKids) ? `Children under 18 in poverty, whole département: ${frKids.toFixed(1)}%<br>` : "") +
       (isNaN(povValue(r)) && !isNaN(povValue(r, true)) ? `Shown on the map: ${povValue(r, true).toFixed(1)}% (${r["Unmet basic needs (NBI, 2010)"] ? "unmet basic needs, 2010" : `its latest earlier figure, ${String(r["Poverty by year"] || "").split(";").map((x) => x.trim().split(":")[0]).sort().pop()}`})<br>` : "") +
       `Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}` +

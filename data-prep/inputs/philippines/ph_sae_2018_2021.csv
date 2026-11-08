@@ -1,0 +1,1613 @@
+psgc6,region,province,name,pov2018,pov2021,cv2018,cv2021,lo2018,hi2018,lo2021,hi2021
+133901,National Capital Region (NCR),1st district,Tondo,3.8,2.1,15.7,9.4,2.8,4.7,1.8,2.5
+133902,National Capital Region (NCR),1st district,Binondo,1.5,1.3,23.0,27.3,0.9,2.1,0.7,2.0
+133903,National Capital Region (NCR),1st district,Quiapo,4.0,2.6,18.7,19.3,2.8,5.3,1.8,3.4
+133904,National Capital Region (NCR),1st district,San Nicolas,4.0,2.7,30.3,21.7,2.0,6.0,1.7,3.7
+133905,National Capital Region (NCR),1st district,Santa Cruz,2.4,2.0,11.9,10.9,1.9,2.8,1.7,2.4
+133906,National Capital Region (NCR),1st district,Sampaloc,2.0,1.7,9.6,8.2,1.7,2.3,1.5,1.9
+133907,National Capital Region (NCR),1st district,San Miguel,4.6,2.6,19.6,25.9,3.1,6.1,1.5,3.7
+133908,National Capital Region (NCR),1st district,Ermita,2.9,2.1,15.7,22.0,2.1,3.6,1.3,2.9
+133909,National Capital Region (NCR),1st district,Intramuros,4.3,1.7,26.9,35.5,2.4,6.2,0.7,2.7
+133910,National Capital Region (NCR),1st district,Malate,2.7,1.7,11.9,15.8,2.2,3.2,1.3,2.2
+133911,National Capital Region (NCR),1st district,Paco,1.9,2.1,13.9,11.4,1.4,2.3,1.7,2.4
+133912,National Capital Region (NCR),1st district,Pandacan,2.2,1.9,13.0,15.0,1.7,2.6,1.4,2.4
+133913,National Capital Region (NCR),1st district,Port Area,6.5,1.3,38.7,65.8,2.4,10.6,0.0,2.6
+133914,National Capital Region (NCR),1st district,Santa Ana,2.4,1.9,12.5,11.2,1.9,2.9,1.6,2.3
+140101,Cordillera Administrative Region (CAR),Abra,Bangued,8.9,18.3,11.9,5.2,7.2,10.6,16.7,19.9
+140102,Cordillera Administrative Region (CAR),Abra,Boliney,33.0,5.6,13.5,5.3,25.7,40.3,5.1,6.1
+140103,Cordillera Administrative Region (CAR),Abra,Bucay,20.4,10.1,11.5,5.4,16.6,24.3,9.2,11.0
+140104,Cordillera Administrative Region (CAR),Abra,Bucloc,21.2,7.0,22.1,6.4,13.5,28.9,6.3,7.7
+140105,Cordillera Administrative Region (CAR),Abra,Daguioman,24.7,18.7,19.9,5.8,16.6,32.9,16.9,20.5
+140106,Cordillera Administrative Region (CAR),Abra,Danglas,23.2,8.7,13.6,9.7,18.0,28.4,7.3,10.1
+140107,Cordillera Administrative Region (CAR),Abra,Dolores,15.7,12.2,15.7,11.4,11.6,19.7,9.9,14.4
+140108,Cordillera Administrative Region (CAR),Abra,La Paz,19.8,36.1,13.6,9.6,15.4,24.3,30.4,41.8
+140109,Cordillera Administrative Region (CAR),Abra,Lacub,37.7,15.7,13.1,11.8,29.5,45.8,12.6,18.7
+140110,Cordillera Administrative Region (CAR),Abra,Lagangilang,19.4,13.8,10.8,25.1,15.9,22.8,8.1,19.5
+140111,Cordillera Administrative Region (CAR),Abra,Lagayan,32.9,25.7,14.6,16.9,25.0,40.8,18.5,32.8
+140112,Cordillera Administrative Region (CAR),Abra,Langiden,24.0,15.8,16.4,19.4,17.5,30.5,10.7,20.8
+140113,Cordillera Administrative Region (CAR),Abra,Licuan-Baay (Licuan),23.3,15.7,11.8,13.8,18.8,27.9,12.2,19.3
+140114,Cordillera Administrative Region (CAR),Abra,Luba,21.6,22.8,16.0,7.3,15.9,27.3,20.1,25.6
+140115,Cordillera Administrative Region (CAR),Abra,Malibcong,18.4,47.4,16.0,9.1,13.6,23.3,40.3,54.6
+140116,Cordillera Administrative Region (CAR),Abra,Manabo,16.7,18.2,18.0,13.5,11.8,21.7,14.2,22.2
+140117,Cordillera Administrative Region (CAR),Abra,Peñarrubia,16.2,23.4,16.6,14.5,11.8,20.6,17.9,29.0
+140118,Cordillera Administrative Region (CAR),Abra,Pidigan,15.2,22.3,13.9,17.1,11.8,18.7,16.1,28.6
+140119,Cordillera Administrative Region (CAR),Abra,Pilar,19.3,26.9,13.7,10.0,14.9,23.7,22.5,31.3
+140120,Cordillera Administrative Region (CAR),Abra,Sallapadan,20.0,17.2,17.1,19.2,14.4,25.6,11.8,22.6
+140121,Cordillera Administrative Region (CAR),Abra,San Isidro,20.3,21.9,14.0,15.0,15.6,25.0,16.5,27.3
+140122,Cordillera Administrative Region (CAR),Abra,San Juan,22.2,18.1,10.2,16.3,18.5,25.9,13.3,23.0
+140123,Cordillera Administrative Region (CAR),Abra,San Quintin,14.8,22.3,19.6,12.6,10.0,19.6,17.7,27.0
+140124,Cordillera Administrative Region (CAR),Abra,Tayum,17.9,13.5,15.0,13.0,13.5,22.4,10.6,16.3
+140125,Cordillera Administrative Region (CAR),Abra,Tineg,36.4,19.8,10.2,11.4,30.3,42.5,16.1,23.5
+140126,Cordillera Administrative Region (CAR),Abra,Tubo,23.6,20.2,12.0,15.6,19.0,28.2,15.0,25.4
+140127,Cordillera Administrative Region (CAR),Abra,Villaviciosa,19.9,19.1,17.0,18.1,14.4,25.5,13.4,24.8
+141101,Cordillera Administrative Region (CAR),Benguet,Atok,18.7,17.0,12.4,13.7,14.8,22.5,13.2,20.9
+141103,Cordillera Administrative Region (CAR),Benguet,Bakun,17.9,15.9,18.6,14.0,12.4,23.4,12.2,19.5
+141104,Cordillera Administrative Region (CAR),Benguet,Bokod,9.9,43.0,17.5,13.0,7.0,12.7,33.8,52.2
+141105,Cordillera Administrative Region (CAR),Benguet,Buguias,9.4,26.2,15.6,14.9,7.0,11.9,19.8,32.6
+141106,Cordillera Administrative Region (CAR),Benguet,Itogon,6.9,14.4,19.6,18.9,4.7,9.1,10.0,18.9
+141107,Cordillera Administrative Region (CAR),Benguet,Kabayan,19.1,11.3,14.2,17.0,14.7,23.6,8.2,14.5
+141108,Cordillera Administrative Region (CAR),Benguet,Kapangan,17.3,2.5,10.5,9.4,14.3,20.3,2.1,2.9
+141109,Cordillera Administrative Region (CAR),Benguet,Kibungan,28.1,7.9,12.7,23.8,22.2,33.9,4.8,11.0
+141110,Cordillera Administrative Region (CAR),Benguet,La Trinidad,2.3,7.1,21.7,20.7,1.5,3.1,4.7,9.5
+141111,Cordillera Administrative Region (CAR),Benguet,Mankayan,10.4,10.1,16.2,12.0,7.6,13.1,8.1,12.1
+141112,Cordillera Administrative Region (CAR),Benguet,Sablan,8.7,10.6,16.9,13.5,6.3,11.1,8.2,12.9
+141113,Cordillera Administrative Region (CAR),Benguet,Tuba,7.0,13.8,18.3,11.5,4.9,9.1,11.2,16.5
+141114,Cordillera Administrative Region (CAR),Benguet,Tublay,13.2,8.7,16.1,17.6,9.7,16.7,6.2,11.2
+142701,Cordillera Administrative Region (CAR),Ifugao,Banaue,19.2,12.0,9.8,21.0,16.1,22.3,7.9,16.2
+142702,Cordillera Administrative Region (CAR),Ifugao,Hungduan,21.2,4.1,11.9,10.7,17.1,25.4,3.4,4.8
+142703,Cordillera Administrative Region (CAR),Ifugao,Kiangan,14.9,10.6,10.9,15.1,12.2,17.5,7.9,13.2
+142704,Cordillera Administrative Region (CAR),Ifugao,Lagawe,12.2,5.6,9.7,27.3,10.3,14.2,3.1,8.2
+142705,Cordillera Administrative Region (CAR),Ifugao,Lamut,11.7,7.6,13.4,12.1,9.1,14.3,6.1,9.1
+142706,Cordillera Administrative Region (CAR),Ifugao,Mayoyao,17.4,9.1,9.4,14.9,14.7,20.1,6.9,11.4
+142707,Cordillera Administrative Region (CAR),Ifugao,Alfonso Lista (Potia),16.4,9.5,10.9,13.7,13.5,19.3,7.3,11.6
+142708,Cordillera Administrative Region (CAR),Ifugao,Aguinaldo,24.7,7.7,11.5,22.4,20.0,29.4,4.9,10.6
+142709,Cordillera Administrative Region (CAR),Ifugao,Hingyon,23.0,11.6,11.6,12.0,18.6,27.5,9.3,13.8
+142710,Cordillera Administrative Region (CAR),Ifugao,Tinoc,27.0,4.4,11.3,18.7,21.9,32.0,3.0,5.7
+142711,Cordillera Administrative Region (CAR),Ifugao,Asipulo,32.0,8.6,11.8,10.3,25.8,38.3,7.1,10.0
+143201,Cordillera Administrative Region (CAR),Kalinga,Balbalan,16.0,10.1,13.4,13.0,12.4,19.5,7.9,12.2
+143206,Cordillera Administrative Region (CAR),Kalinga,Lubuagan,20.2,7.5,11.2,12.9,16.5,24.0,5.9,9.1
+143208,Cordillera Administrative Region (CAR),Kalinga,Pasil,18.2,11.7,11.0,15.8,14.9,21.4,8.7,14.7
+143209,Cordillera Administrative Region (CAR),Kalinga,Pinukpuk,20.3,12.0,8.7,15.1,17.4,23.2,9.0,14.9
+143211,Cordillera Administrative Region (CAR),Kalinga,Rizal (Liwan),11.9,16.4,14.2,9.8,9.1,14.6,13.7,19.0
+143213,Cordillera Administrative Region (CAR),Kalinga,City of Tabuk,10.6,14.5,10.5,18.6,8.8,12.4,10.1,19.0
+143214,Cordillera Administrative Region (CAR),Kalinga,Tanudan,22.3,9.2,11.8,18.1,18.0,26.6,6.5,12.0
+143215,Cordillera Administrative Region (CAR),Kalinga,Tinglayan,27.7,7.8,9.0,17.6,23.6,31.8,5.6,10.1
+144401,Cordillera Administrative Region (CAR),Mountain Province,Barlig,14.4,9.7,17.0,16.4,10.4,18.5,7.1,12.4
+144402,Cordillera Administrative Region (CAR),Mountain Province,Bauko,21.8,11.0,10.0,12.1,18.2,25.3,8.8,13.2
+144403,Cordillera Administrative Region (CAR),Mountain Province,Besao,16.6,6.8,12.1,13.8,13.3,19.9,5.3,8.4
+144404,Cordillera Administrative Region (CAR),Mountain Province,Bontoc,10.0,4.5,15.2,9.9,7.5,12.5,3.8,5.2
+144405,Cordillera Administrative Region (CAR),Mountain Province,Natonin,23.1,15.1,14.4,14.4,17.6,28.6,11.5,18.7
+144406,Cordillera Administrative Region (CAR),Mountain Province,Paracelis,30.6,9.3,10.3,15.7,25.5,35.8,6.9,11.7
+144407,Cordillera Administrative Region (CAR),Mountain Province,Sabangan,14.0,17.3,13.0,14.4,11.0,17.1,13.2,21.5
+144408,Cordillera Administrative Region (CAR),Mountain Province,Sadanga,21.7,18.6,13.2,9.4,17.0,26.4,15.7,21.5
+144409,Cordillera Administrative Region (CAR),Mountain Province,Sagada,12.6,19.7,15.4,13.8,9.4,15.8,15.2,24.2
+144410,Cordillera Administrative Region (CAR),Mountain Province,Tadian,18.1,7.9,10.5,14.5,15.0,21.2,6.0,9.8
+148101,Cordillera Administrative Region (CAR),Apayao,Calanasan (Bayag),29.8,27.4,11.0,9.3,24.4,35.2,23.2,31.6
+148102,Cordillera Administrative Region (CAR),Apayao,Conner,23.7,24.9,8.5,9.4,20.3,27.0,21.1,28.8
+148103,Cordillera Administrative Region (CAR),Apayao,Flora,17.8,17.3,13.1,12.4,14.0,21.6,13.8,20.8
+148104,Cordillera Administrative Region (CAR),Apayao,Kabugao,35.3,19.1,10.4,12.1,29.3,41.4,15.3,22.9
+148105,Cordillera Administrative Region (CAR),Apayao,Luna,13.9,14.4,12.8,13.5,11.0,16.8,11.2,17.6
+148106,Cordillera Administrative Region (CAR),Apayao,Pudtol,21.0,20.5,9.7,9.9,17.7,24.4,17.1,23.8
+148107,Cordillera Administrative Region (CAR),Apayao,Santa Marcela,12.2,12.2,16.4,21.5,8.9,15.5,7.9,16.5
+012801,Region I (Ilocos Region),Ilocos Norte,Adams,5.6,9.2,80.3,52.9,0.0,13.0,1.2,17.2
+012802,Region I (Ilocos Region),Ilocos Norte,Bacarra,3.4,5.8,19.0,15.6,2.4,4.5,4.3,7.3
+012803,Region I (Ilocos Region),Ilocos Norte,Badoc,5.7,8.8,18.5,12.6,3.9,7.4,7.0,10.6
+012804,Region I (Ilocos Region),Ilocos Norte,Bangui,4.7,6.1,25.5,18.0,2.8,6.7,4.3,7.9
+012805,Region I (Ilocos Region),Ilocos Norte,City of Batac,4.1,4.0,18.1,15.3,2.9,5.4,3.0,5.0
+012806,Region I (Ilocos Region),Ilocos Norte,Burgos,4.4,6.2,29.4,19.4,2.2,6.5,4.2,8.2
+012807,Region I (Ilocos Region),Ilocos Norte,Carasi,6.7,6.0,58.0,40.7,0.3,13.1,2.0,10.0
+012808,Region I (Ilocos Region),Ilocos Norte,Currimao,4.3,5.0,24.2,20.6,2.6,6.0,3.3,6.7
+012809,Region I (Ilocos Region),Ilocos Norte,Dingras,6.0,8.2,17.9,12.4,4.3,7.8,6.5,9.9
+012810,Region I (Ilocos Region),Ilocos Norte,Dumalneg,7.2,9.1,60.3,29.0,0.1,14.3,4.7,13.4
+012811,Region I (Ilocos Region),Ilocos Norte,Banna,6.1,8.7,19.9,16.2,4.1,8.1,6.4,11.0
+012812,Region I (Ilocos Region),Ilocos Norte,City of Laoag,2.4,3.4,19.5,16.4,1.6,3.1,2.5,4.3
+012813,Region I (Ilocos Region),Ilocos Norte,Marcos,5.0,8.0,26.0,18.9,2.9,7.1,5.5,10.5
+012814,Region I (Ilocos Region),Ilocos Norte,Nueva Era,6.1,7.2,30.2,17.7,3.1,9.1,5.1,9.3
+012815,Region I (Ilocos Region),Ilocos Norte,Pagudpud,5.7,8.2,23.6,18.6,3.5,7.9,5.7,10.7
+012816,Region I (Ilocos Region),Ilocos Norte,Paoay,4.5,4.8,22.0,17.7,2.9,6.1,3.4,6.2
+012817,Region I (Ilocos Region),Ilocos Norte,Pasuquin,5.5,6.2,20.9,15.3,3.6,7.3,4.6,7.7
+012818,Region I (Ilocos Region),Ilocos Norte,Piddig,5.6,7.7,21.7,14.3,3.6,7.6,5.9,9.6
+012819,Region I (Ilocos Region),Ilocos Norte,Pinili,6.0,7.3,20.8,15.2,4.0,8.1,5.5,9.2
+012820,Region I (Ilocos Region),Ilocos Norte,San Nicolas,2.9,4.2,32.7,17.3,1.4,4.5,3.0,5.3
+012821,Region I (Ilocos Region),Ilocos Norte,Sarrat,4.7,5.5,23.0,15.0,2.9,6.4,4.2,6.9
+012822,Region I (Ilocos Region),Ilocos Norte,Solsona,6.2,7.3,25.2,17.4,3.6,8.8,5.2,9.3
+012823,Region I (Ilocos Region),Ilocos Norte,Vintar,4.2,6.6,21.3,13.3,2.7,5.6,5.2,8.1
+012901,Region I (Ilocos Region),Ilocos Sur,Alilem,8.7,22.6,24.7,14.3,5.2,12.2,17.3,28.0
+012902,Region I (Ilocos Region),Ilocos Sur,Banayoyo,6.1,12.5,30.4,19.8,3.0,9.1,8.4,16.6
+012903,Region I (Ilocos Region),Ilocos Sur,Bantay,3.2,12.0,25.5,11.4,1.9,4.5,9.7,14.3
+012904,Region I (Ilocos Region),Ilocos Sur,Burgos,6.5,18.6,21.1,9.6,4.2,8.7,15.7,21.5
+012905,Region I (Ilocos Region),Ilocos Sur,Cabugao,6.6,18.2,17.1,8.5,4.8,8.5,15.7,20.8
+012906,Region I (Ilocos Region),Ilocos Sur,City of Candon,5.6,15.6,16.6,7.9,4.1,7.1,13.6,17.6
+012907,Region I (Ilocos Region),Ilocos Sur,Caoayan,4.1,12.5,27.7,12.2,2.2,5.9,10.0,15.0
+012908,Region I (Ilocos Region),Ilocos Sur,Cervantes,11.2,22.8,21.8,11.5,7.2,15.2,18.5,27.1
+012909,Region I (Ilocos Region),Ilocos Sur,Galimuyod,6.9,15.2,21.4,12.4,4.5,9.3,12.1,18.3
+012910,Region I (Ilocos Region),Ilocos Sur,Gregorio del Pilar,9.7,19.3,24.6,17.8,5.8,13.7,13.7,25.0
+012911,Region I (Ilocos Region),Ilocos Sur,Lidlidda,6.8,14.2,29.7,16.4,3.5,10.1,10.4,18.0
+012912,Region I (Ilocos Region),Ilocos Sur,Magsingal,4.4,18.0,24.0,9.8,2.7,6.2,15.1,20.9
+012913,Region I (Ilocos Region),Ilocos Sur,Nagbukel,6.5,20.4,26.7,12.6,3.7,9.4,16.2,24.7
+012914,Region I (Ilocos Region),Ilocos Sur,Narvacan,6.2,16.1,17.2,9.0,4.5,8.0,13.7,18.5
+012915,Region I (Ilocos Region),Ilocos Sur,Quirino,11.0,22.9,21.8,12.0,7.0,14.9,18.4,27.5
+012916,Region I (Ilocos Region),Ilocos Sur,Salcedo,7.4,20.6,20.0,9.4,5.0,9.8,17.4,23.8
+012917,Region I (Ilocos Region),Ilocos Sur,San Emilio,10.8,21.6,26.1,16.8,6.2,15.4,15.7,27.6
+012918,Region I (Ilocos Region),Ilocos Sur,San Esteban,4.8,14.1,33.7,15.1,2.2,7.5,10.6,17.6
+012919,Region I (Ilocos Region),Ilocos Sur,San Ildefonso,3.8,10.5,26.6,16.2,2.2,5.5,7.7,13.4
+012920,Region I (Ilocos Region),Ilocos Sur,San Juan,4.9,16.6,14.0,9.5,3.7,6.0,14.0,19.2
+012921,Region I (Ilocos Region),Ilocos Sur,San Vicente,3.3,10.4,39.9,22.8,1.1,5.5,6.5,14.3
+012922,Region I (Ilocos Region),Ilocos Sur,Santa,4.8,13.1,27.4,10.4,2.6,6.9,10.9,15.4
+012923,Region I (Ilocos Region),Ilocos Sur,Santa Catalina,5.9,10.1,32.5,23.7,2.7,9.0,6.1,14.0
+012924,Region I (Ilocos Region),Ilocos Sur,Santa Cruz,6.9,19.2,14.1,6.6,5.3,8.6,17.1,21.2
+012925,Region I (Ilocos Region),Ilocos Sur,Santa Lucia,6.3,15.9,16.2,9.0,4.6,8.0,13.5,18.3
+012926,Region I (Ilocos Region),Ilocos Sur,Santa Maria,4.7,15.8,18.0,10.5,3.3,6.1,13.0,18.5
+012927,Region I (Ilocos Region),Ilocos Sur,Santiago,5.7,16.5,22.6,11.4,3.6,7.8,13.4,19.6
+012928,Region I (Ilocos Region),Ilocos Sur,Santo Domingo,4.3,12.9,19.5,10.8,2.9,5.7,10.6,15.2
+012929,Region I (Ilocos Region),Ilocos Sur,Sigay,9.5,18.3,31.3,24.8,4.6,14.3,10.8,25.7
+012930,Region I (Ilocos Region),Ilocos Sur,Sinait,5.6,17.7,19.3,9.9,3.9,7.4,14.8,20.6
+012931,Region I (Ilocos Region),Ilocos Sur,Sugpon,10.1,34.2,29.1,12.6,5.3,14.9,27.1,41.3
+012932,Region I (Ilocos Region),Ilocos Sur,Suyo,7.9,19.3,29.3,13.3,4.1,11.7,15.1,23.6
+012933,Region I (Ilocos Region),Ilocos Sur,Tagudin,6.4,17.2,15.9,8.4,4.7,8.1,14.8,19.6
+012934,Region I (Ilocos Region),Ilocos Sur,City of Vigan,2.4,8.7,23.6,15.3,1.5,3.4,6.5,10.9
+013301,Region I (Ilocos Region),La Union,Agoo,3.3,8.7,18.4,8.2,2.3,4.3,7.5,9.8
+013302,Region I (Ilocos Region),La Union,Aringay,4.4,10.7,21.9,11.2,2.8,6.0,8.8,12.7
+013303,Region I (Ilocos Region),La Union,Bacnotan,1.5,6.5,30.8,11.6,0.7,2.2,5.3,7.8
+013304,Region I (Ilocos Region),La Union,Bagulin,5.5,16.2,34.7,16.2,2.4,8.6,11.9,20.5
+013305,Region I (Ilocos Region),La Union,Balaoan,3.2,9.5,20.9,9.9,2.1,4.3,7.9,11.0
+013306,Region I (Ilocos Region),La Union,Bangar,3.8,10.0,24.5,12.2,2.3,5.4,8.0,12.0
+013307,Region I (Ilocos Region),La Union,Bauang,3.1,7.5,21.9,10.8,2.0,4.2,6.2,8.9
+013308,Region I (Ilocos Region),La Union,Burgos,4.0,10.7,39.0,17.7,1.5,6.6,7.6,13.8
+013309,Region I (Ilocos Region),La Union,Caba,3.1,10.5,33.8,13.9,1.4,4.8,8.1,12.9
+013310,Region I (Ilocos Region),La Union,Luna,3.3,8.7,18.8,9.7,2.3,4.3,7.3,10.1
+013311,Region I (Ilocos Region),La Union,Naguilian,2.8,9.0,19.9,9.9,1.9,3.7,7.5,10.5
+013312,Region I (Ilocos Region),La Union,Pugo,3.2,10.0,31.0,12.1,1.6,4.8,8.0,12.0
+013313,Region I (Ilocos Region),La Union,Rosario,3.6,10.7,20.3,9.7,2.4,4.7,9.0,12.4
+013314,Region I (Ilocos Region),La Union,City of San Fernando,1.3,5.1,29.9,13.3,0.6,1.9,4.0,6.2
+013315,Region I (Ilocos Region),La Union,San Gabriel,5.8,13.5,25.4,15.2,3.4,8.2,10.1,16.9
+013316,Region I (Ilocos Region),La Union,San Juan,1.8,7.3,29.7,11.1,0.9,2.7,6.0,8.6
+013317,Region I (Ilocos Region),La Union,Santo Tomas,3.4,10.5,24.3,11.3,2.0,4.7,8.6,12.5
+013318,Region I (Ilocos Region),La Union,Santol,5.3,16.9,26.9,14.5,3.0,7.7,12.9,21.0
+013319,Region I (Ilocos Region),La Union,Sudipen,4.0,11.3,26.1,12.5,2.3,5.6,9.0,13.6
+013320,Region I (Ilocos Region),La Union,Tubao,3.7,10.8,26.8,12.3,2.1,5.3,8.6,12.9
+015501,Region I (Ilocos Region),Pangasinan,Agno,11.7,23.2,19.9,9.7,7.9,15.5,19.5,26.9
+015502,Region I (Ilocos Region),Pangasinan,Aguilar,16.2,21.3,13.8,9.5,12.5,19.9,18.0,24.7
+015503,Region I (Ilocos Region),Pangasinan,City of Alaminos,7.8,17.5,16.4,7.9,5.7,9.8,15.2,19.8
+015504,Region I (Ilocos Region),Pangasinan,Alcala,12.2,17.1,15.2,10.4,9.2,15.3,14.2,20.1
+015505,Region I (Ilocos Region),Pangasinan,Anda,12.4,21.4,15.6,9.7,9.2,15.6,18.0,24.8
+015506,Region I (Ilocos Region),Pangasinan,Asingan,10.4,15.7,15.6,10.4,7.8,13.1,13.0,18.3
+015507,Region I (Ilocos Region),Pangasinan,Balungo,9.5,15.7,16.4,11.7,6.9,12.1,12.6,18.7
+015508,Region I (Ilocos Region),Pangasinan,Bani,10.6,20.0,14.6,8.8,8.1,13.1,17.1,22.9
+015509,Region I (Ilocos Region),Pangasinan,Basista,14.5,18.5,16.4,11.9,10.6,18.4,14.9,22.2
+015510,Region I (Ilocos Region),Pangasinan,Bautista,14.8,17.6,15.6,12.5,11.0,18.6,14.0,21.2
+015511,Region I (Ilocos Region),Pangasinan,Bayambang,14.7,19.4,8.5,5.9,12.6,16.7,17.5,21.3
+015512,Region I (Ilocos Region),Pangasinan,Binalonan,6.9,13.5,19.7,11.9,4.7,9.2,10.9,16.1
+015513,Region I (Ilocos Region),Pangasinan,Binmaley,6.6,15.2,18.3,9.8,4.6,8.5,12.8,17.7
+015514,Region I (Ilocos Region),Pangasinan,Bolinao,16.3,23.8,12.5,8.0,12.9,19.6,20.7,26.9
+015515,Region I (Ilocos Region),Pangasinan,Bugallon,15.3,19.5,13.2,8.6,12.0,18.6,16.7,22.2
+015516,Region I (Ilocos Region),Pangasinan,Burgos,12.3,19.9,16.7,11.6,8.9,15.6,16.1,23.7
+015517,Region I (Ilocos Region),Pangasinan,Calasiao,7.8,14.7,17.3,11.1,5.6,10.0,12.0,17.4
+015518,Region I (Ilocos Region),Pangasinan,City of Dagupan,9.2,14.4,18.3,11.7,6.4,12.0,11.6,17.2
+015519,Region I (Ilocos Region),Pangasinan,Dasol,13.1,23.0,14.6,9.2,10.0,16.3,19.5,26.4
+015520,Region I (Ilocos Region),Pangasinan,Infanta,12.8,21.0,17.8,13.0,9.0,16.5,16.5,25.5
+015521,Region I (Ilocos Region),Pangasinan,Labrador,10.5,17.3,24.1,13.1,6.3,14.6,13.6,21.0
+015522,Region I (Ilocos Region),Pangasinan,Lingayen,8.6,15.6,15.7,9.8,6.4,10.8,13.1,18.2
+015523,Region I (Ilocos Region),Pangasinan,Mabini,12.5,23.3,18.2,9.5,8.7,16.2,19.6,27.0
+015524,Region I (Ilocos Region),Pangasinan,Malasiqui,13.3,19.3,8.6,6.4,11.4,15.2,17.3,21.4
+015525,Region I (Ilocos Region),Pangasinan,Manaoag,9.4,18.1,17.5,9.7,6.7,12.1,15.2,21.0
+015526,Region I (Ilocos Region),Pangasinan,Mangaldan,9.0,14.1,15.5,9.2,6.7,11.3,12.0,16.3
+015527,Region I (Ilocos Region),Pangasinan,Mangatarem,14.6,21.9,8.9,5.7,12.5,16.8,19.8,23.9
+015528,Region I (Ilocos Region),Pangasinan,Mapandan,12.2,14.3,17.4,13.7,8.7,15.7,11.1,17.5
+015529,Region I (Ilocos Region),Pangasinan,Natividad,11.4,16.1,15.9,11.5,8.5,14.4,13.0,19.1
+015530,Region I (Ilocos Region),Pangasinan,Pozorrubio,7.7,13.2,17.5,9.8,5.5,9.9,11.1,15.3
+015531,Region I (Ilocos Region),Pangasinan,Rosales,11.8,16.0,12.3,9.6,9.5,14.2,13.5,18.5
+015532,Region I (Ilocos Region),Pangasinan,City of San Carlos,12.7,17.9,9.0,6.3,10.9,14.6,16.1,19.8
+015533,Region I (Ilocos Region),Pangasinan,San Fabian,11.5,17.2,12.2,9.0,9.2,13.8,14.6,19.8
+015534,Region I (Ilocos Region),Pangasinan,San Jacinto,13.3,16.8,13.5,10.1,10.4,16.3,14.0,19.6
+015535,Region I (Ilocos Region),Pangasinan,San Miguel,8.8,17.2,24.7,12.1,5.2,12.3,13.8,20.6
+015536,Region I (Ilocos Region),Pangasinan,San Nicolas,12.9,15.7,13.5,10.0,10.0,15.7,13.1,18.3
+015537,Region I (Ilocos Region),Pangasinan,San Quintin,11.7,18.6,16.3,10.5,8.6,14.8,15.4,21.9
+015538,Region I (Ilocos Region),Pangasinan,Santa Barbara,10.0,16.8,16.3,10.1,7.3,12.7,14.0,19.6
+015539,Region I (Ilocos Region),Pangasinan,Santa Maria,11.1,14.5,15.3,10.1,8.3,13.9,12.1,16.9
+015540,Region I (Ilocos Region),Pangasinan,Santo Tomas,10.7,15.3,24.8,19.3,6.3,15.1,10.5,20.2
+015541,Region I (Ilocos Region),Pangasinan,Sison,12.3,16.0,12.7,10.3,9.8,14.9,13.3,18.7
+015542,Region I (Ilocos Region),Pangasinan,Sual,10.1,22.7,20.0,11.0,6.8,13.4,18.6,26.8
+015543,Region I (Ilocos Region),Pangasinan,Tayug,8.1,14.4,18.2,9.9,5.7,10.5,12.0,16.7
+015544,Region I (Ilocos Region),Pangasinan,Umingan,12.8,19.0,9.6,6.9,10.8,14.8,16.8,21.1
+015545,Region I (Ilocos Region),Pangasinan,Urbiztondo,18.4,24.1,13.9,9.2,14.2,22.6,20.4,27.7
+015546,Region I (Ilocos Region),Pangasinan,City of Urdaneta,8.4,16.3,17.3,8.8,6.0,10.8,13.9,18.7
+015547,Region I (Ilocos Region),Pangasinan,Villasis,11.8,17.8,16.9,11.0,8.5,15.0,14.6,21.0
+015548,Region I (Ilocos Region),Pangasinan,Laoac,11.2,16.8,14.3,9.5,8.5,13.8,14.1,19.4
+020901,Region II (Cagayan Valley),Batanes,Basco,7.0,4.4,27.3,26.6,3.9,10.2,2.4,6.3
+020902,Region II (Cagayan Valley),Batanes,Itbayat,30.9,12.0,15.0,20.4,23.3,38.5,8.0,16.0
+020903,Region II (Cagayan Valley),Batanes,Ivana,7.0,5.7,43.0,45.6,2.1,12.0,1.4,9.9
+020904,Region II (Cagayan Valley),Batanes,Mahatao,17.8,7.8,25.1,33.8,10.5,25.2,3.5,12.2
+020905,Region II (Cagayan Valley),Batanes,Sabtang,21.7,6.6,17.3,39.5,15.5,27.9,2.3,10.9
+020906,Region II (Cagayan Valley),Batanes,Uyugan,13.2,5.9,29.4,50.2,6.8,19.6,1.0,10.8
+021501,Region II (Cagayan Valley),Cagayan,Abulug,14.8,10.7,14.4,14.6,11.3,18.3,8.2,13.3
+021502,Region II (Cagayan Valley),Cagayan,Alcala,14.7,12.6,12.6,11.7,11.6,17.7,10.2,15.0
+021503,Region II (Cagayan Valley),Cagayan,Allacapan,11.5,13.3,14.0,12.9,8.8,14.1,10.5,16.2
+021504,Region II (Cagayan Valley),Cagayan,Amulung,15.5,15.5,11.5,10.2,12.5,18.4,12.9,18.1
+021505,Region II (Cagayan Valley),Cagayan,Aparri,13.3,14.4,12.8,13.8,10.5,16.1,11.2,17.7
+021506,Region II (Cagayan Valley),Cagayan,Baggao,13.5,13.5,12.5,10.8,10.7,16.2,11.1,15.8
+021507,Region II (Cagayan Valley),Cagayan,Ballesteros,13.0,9.7,16.9,11.9,9.4,16.7,7.8,11.6
+021508,Region II (Cagayan Valley),Cagayan,Buguey,15.3,11.8,12.8,13.3,12.1,18.5,9.2,14.3
+021509,Region II (Cagayan Valley),Cagayan,Calayan,42.2,22.6,10.8,18.5,34.7,49.7,15.7,29.4
+021510,Region II (Cagayan Valley),Cagayan,Camalaniugan,13.5,10.0,13.9,16.4,10.4,16.6,7.3,12.7
+021511,Region II (Cagayan Valley),Cagayan,Claveria,11.1,6.5,14.4,15.9,8.5,13.8,4.8,8.2
+021512,Region II (Cagayan Valley),Cagayan,Enrile,10.2,11.1,16.7,15.2,7.4,13.0,8.3,13.9
+021513,Region II (Cagayan Valley),Cagayan,Gattaran,16.7,13.6,10.6,11.4,13.8,19.6,11.1,16.2
+021514,Region II (Cagayan Valley),Cagayan,Gonzaga,12.2,10.6,13.5,13.2,9.5,14.9,8.3,12.9
+021515,Region II (Cagayan Valley),Cagayan,Iguig,11.1,10.8,15.7,13.8,8.2,14.0,8.3,13.2
+021516,Region II (Cagayan Valley),Cagayan,Lal-lo,13.5,10.5,11.4,12.8,11.0,16.0,8.3,12.7
+021517,Region II (Cagayan Valley),Cagayan,Lasam,14.3,11.2,12.3,11.7,11.4,17.2,9.0,13.3
+021518,Region II (Cagayan Valley),Cagayan,Pamplona,16.4,12.0,14.2,15.9,12.6,20.2,8.8,15.1
+021519,Region II (Cagayan Valley),Cagayan,Peñablanca,27.7,10.2,13.2,14.0,21.7,33.7,7.8,12.5
+021520,Region II (Cagayan Valley),Cagayan,Piat,12.9,9.9,17.8,14.0,9.1,16.6,7.6,12.2
+021521,Region II (Cagayan Valley),Cagayan,Rizal,32.2,20.0,11.1,14.1,26.3,38.0,15.3,24.6
+021522,Region II (Cagayan Valley),Cagayan,Sanchez-Mira,8.3,8.1,19.0,17.2,5.7,10.9,5.8,10.4
+021523,Region II (Cagayan Valley),Cagayan,Santa Ana,13.9,13.2,16.9,14.8,10.0,17.7,10.0,16.4
+021524,Region II (Cagayan Valley),Cagayan,Santa Praxedes,12.2,7.9,24.1,25.1,7.4,17.1,4.7,11.2
+021525,Region II (Cagayan Valley),Cagayan,Santa Teresita,11.8,9.7,18.0,19.6,8.3,15.3,6.6,12.8
+021526,Region II (Cagayan Valley),Cagayan,Santo Niño,16.7,15.5,12.9,12.8,13.2,20.3,12.3,18.8
+021527,Region II (Cagayan Valley),Cagayan,Solana,10.7,12.2,14.7,12.1,8.1,13.3,9.8,14.7
+021528,Region II (Cagayan Valley),Cagayan,Tuao,11.8,10.7,12.7,13.8,9.3,14.2,8.3,13.2
+021529,Region II (Cagayan Valley),Cagayan,Tuguegarao City,4.2,4.9,17.2,13.5,3.0,5.4,3.8,5.9
+023101,Region II (Cagayan Valley),Isabela,Alicia,12.6,14.1,11.7,10.5,10.2,15.0,11.6,16.5
+023102,Region II (Cagayan Valley),Isabela,Angadanan,14.3,15.6,9.4,9.9,12.1,16.5,13.1,18.2
+023103,Region II (Cagayan Valley),Isabela,Aurora,11.2,13.2,13.4,12.6,8.8,13.7,10.5,15.9
+023104,Region II (Cagayan Valley),Isabela,Benito Soliven,19.7,20.5,11.9,11.3,15.9,23.6,16.7,24.3
+023105,Region II (Cagayan Valley),Isabela,Burgos,18.2,14.0,17.4,20.3,13.0,23.5,9.4,18.7
+023106,Region II (Cagayan Valley),Isabela,Cabagan,14.7,16.4,10.2,11.1,12.2,17.2,13.4,19.4
+023107,Region II (Cagayan Valley),Isabela,Cabatuan,11.0,11.1,14.8,12.9,8.3,13.7,8.7,13.4
+023108,Region II (Cagayan Valley),Isabela,City of Cauayan,12.6,14.4,11.2,8.5,10.3,14.9,12.4,16.4
+023109,Region II (Cagayan Valley),Isabela,Cordon,18.9,13.6,11.8,12.8,15.3,22.6,10.7,16.5
+023110,Region II (Cagayan Valley),Isabela,Dinapigue,44.8,18.9,17.6,26.4,31.9,57.8,10.7,27.2
+023111,Region II (Cagayan Valley),Isabela,Divilacan,47.6,24.6,10.9,15.1,39.1,56.1,18.5,30.7
+023112,Region II (Cagayan Valley),Isabela,Echague,15.0,13.4,9.3,8.6,12.7,17.3,11.5,15.3
+023113,Region II (Cagayan Valley),Isabela,Gamu,15.3,13.9,17.8,15.8,10.8,19.7,10.3,17.5
+023114,Region II (Cagayan Valley),Isabela,City of Ilagan,13.9,14.0,9.5,8.8,11.7,16.0,12.0,16.0
+023115,Region II (Cagayan Valley),Isabela,Jones,13.3,12.9,13.3,11.9,10.4,16.3,10.4,15.4
+023116,Region II (Cagayan Valley),Isabela,Luna,12.7,10.5,16.4,15.0,9.3,16.1,7.9,13.1
+023117,Region II (Cagayan Valley),Isabela,Maconacon,39.0,20.8,13.6,15.1,30.3,47.8,15.7,26.0
+023118,Region II (Cagayan Valley),Isabela,Delfin Albano,17.0,11.9,13.3,13.3,13.3,20.7,9.3,14.5
+023119,Region II (Cagayan Valley),Isabela,Mallig,16.3,15.3,13.3,13.9,12.8,19.9,11.8,18.8
+023120,Region II (Cagayan Valley),Isabela,Naguilian,14.2,14.6,13.5,13.0,11.0,17.3,11.5,17.7
+023121,Region II (Cagayan Valley),Isabela,Palanan,31.3,29.6,9.8,14.6,26.3,36.3,22.5,36.7
+023122,Region II (Cagayan Valley),Isabela,Quezon,22.7,17.4,14.5,13.9,17.3,28.2,13.4,21.3
+023123,Region II (Cagayan Valley),Isabela,Quirino,15.6,13.0,16.5,15.2,11.4,19.8,9.7,16.2
+023124,Region II (Cagayan Valley),Isabela,Ramon,13.4,15.0,13.7,14.9,10.4,16.4,11.3,18.6
+023125,Region II (Cagayan Valley),Isabela,Reina Mercedes,15.0,13.3,14.8,13.9,11.3,18.6,10.2,16.3
+023126,Region II (Cagayan Valley),Isabela,Roxas,13.5,13.2,15.1,13.7,10.1,16.8,10.3,16.2
+023127,Region II (Cagayan Valley),Isabela,San Agustin,12.4,11.8,14.8,16.3,9.4,15.4,8.7,15.0
+023128,Region II (Cagayan Valley),Isabela,San Guillermo,27.2,22.1,12.7,11.7,21.5,32.9,17.8,26.3
+023129,Region II (Cagayan Valley),Isabela,San Isidro,12.0,13.5,19.0,18.1,8.2,15.7,9.5,17.6
+023130,Region II (Cagayan Valley),Isabela,San Manuel,13.7,14.8,16.6,12.9,10.0,17.4,11.7,18.0
+023131,Region II (Cagayan Valley),Isabela,San Mariano,23.1,25.0,9.8,10.9,19.4,26.8,20.5,29.5
+023132,Region II (Cagayan Valley),Isabela,San Mateo,10.7,11.6,13.7,12.7,8.3,13.1,9.1,14.0
+023133,Region II (Cagayan Valley),Isabela,San Pablo,18.8,19.5,16.2,13.0,13.8,23.8,15.3,23.6
+023134,Region II (Cagayan Valley),Isabela,Santa Maria,21.8,18.4,14.0,11.2,16.8,26.8,15.0,21.7
+023135,Region II (Cagayan Valley),Isabela,City of Santiago,12.3,12.8,12.4,9.7,9.8,14.9,10.8,14.8
+023136,Region II (Cagayan Valley),Isabela,Santo Tomas,22.7,17.4,12.6,12.8,18.0,27.4,13.7,21.0
+023137,Region II (Cagayan Valley),Isabela,Tumauini,21.2,16.8,9.6,9.7,17.8,24.5,14.1,19.5
+025001,Region II (Cagayan Valley),Nueva Vizcaya,Ambaguio,53.5,20.0,11.1,15.9,43.7,63.2,14.7,25.2
+025002,Region II (Cagayan Valley),Nueva Vizcaya,Aritao,15.8,11.1,8.8,11.8,13.5,18.1,9.0,13.3
+025003,Region II (Cagayan Valley),Nueva Vizcaya,Bagabag,8.7,11.1,18.7,11.6,6.0,11.3,9.0,13.2
+025004,Region II (Cagayan Valley),Nueva Vizcaya,Bambang,8.2,7.7,16.2,13.2,6.0,10.4,6.0,9.4
+025005,Region II (Cagayan Valley),Nueva Vizcaya,Bayombong,6.8,6.2,18.6,17.6,4.7,8.9,4.4,8.0
+025006,Region II (Cagayan Valley),Nueva Vizcaya,Diadi,14.3,13.0,14.9,14.5,10.8,17.9,9.9,16.1
+025007,Region II (Cagayan Valley),Nueva Vizcaya,Dupax del Norte,14.2,10.0,17.8,13.9,10.1,18.4,7.8,12.3
+025008,Region II (Cagayan Valley),Nueva Vizcaya,Dupax del Sur,16.0,11.0,15.0,14.4,12.0,19.9,8.4,13.6
+025009,Region II (Cagayan Valley),Nueva Vizcaya,Kasibu,21.7,19.7,12.2,10.9,17.3,26.0,16.1,23.2
+025010,Region II (Cagayan Valley),Nueva Vizcaya,Kayapa,29.2,20.9,12.6,11.9,23.1,35.2,16.8,25.0
+025011,Region II (Cagayan Valley),Nueva Vizcaya,Quezon,14.8,10.8,17.3,20.5,10.6,19.0,7.2,14.4
+025012,Region II (Cagayan Valley),Nueva Vizcaya,Santa Fe,17.7,16.2,14.6,12.7,13.4,21.9,12.8,19.6
+025013,Region II (Cagayan Valley),Nueva Vizcaya,Solano,7.0,6.4,19.7,16.4,4.7,9.2,4.7,8.1
+025014,Region II (Cagayan Valley),Nueva Vizcaya,Villaverde,12.5,7.2,18.9,23.2,8.6,16.4,4.5,10.0
+025015,Region II (Cagayan Valley),Nueva Vizcaya,Alfonso Castaneda,22.9,15.1,18.9,29.1,15.8,30.1,7.9,22.4
+025701,Region II (Cagayan Valley),Quirino,Aglipay,11.6,11.6,13.3,11.4,9.1,14.1,9.4,13.8
+025702,Region II (Cagayan Valley),Quirino,Cabarroguis,9.3,7.4,17.8,16.4,6.6,12.1,5.4,9.4
+025703,Region II (Cagayan Valley),Quirino,Diffun,10.6,10.1,13.9,10.2,8.2,13.1,8.4,11.7
+025704,Region II (Cagayan Valley),Quirino,Maddela,9.3,8.8,14.1,10.8,7.1,11.4,7.2,10.4
+025705,Region II (Cagayan Valley),Quirino,Saguday,9.9,6.9,23.6,22.3,6.1,13.8,4.4,9.4
+025706,Region II (Cagayan Valley),Quirino,Nagtipunan,22.3,16.7,16.9,12.7,16.1,28.5,13.2,20.2
+030801,Region III (Central Luzon),Bataan,Abucay,5.3,7.8,21.5,13.0,3.4,7.2,6.2,9.5
+030802,Region III (Central Luzon),Bataan,Bagac,6.1,12.5,17.8,10.4,4.3,7.9,10.3,14.6
+030803,Region III (Central Luzon),Bataan,City of Balanga,3.4,7.0,17.7,15.4,2.4,4.4,5.2,8.8
+030804,Region III (Central Luzon),Bataan,Dinalupihan,6.4,11.1,12.3,9.8,5.1,7.6,9.3,12.9
+030805,Region III (Central Luzon),Bataan,Hermosa,9.0,13.6,13.5,10.4,7.0,11.0,11.3,15.9
+030806,Region III (Central Luzon),Bataan,Limay,7.2,10.5,18.8,11.9,5.0,9.4,8.4,12.6
+030807,Region III (Central Luzon),Bataan,Mariveles,4.9,10.6,19.6,11.2,3.3,6.5,8.7,12.6
+030808,Region III (Central Luzon),Bataan,Morong,10.0,16.4,18.2,12.2,7.0,13.0,13.1,19.7
+030809,Region III (Central Luzon),Bataan,Orani,6.7,8.8,12.6,11.4,5.3,8.0,7.1,10.4
+030810,Region III (Central Luzon),Bataan,Orion,8.5,9.8,15.5,13.5,6.3,10.7,7.6,12.0
+030811,Region III (Central Luzon),Bataan,Pilar,7.3,9.5,14.1,6.7,5.6,9.0,8.5,10.6
+030812,Region III (Central Luzon),Bataan,Samal,7.3,10.1,13.1,9.7,5.7,8.8,8.5,11.7
+031401,Region III (Central Luzon),Bulacan,Angat,4.6,16.5,16.5,9.7,3.4,5.9,13.9,19.1
+031402,Region III (Central Luzon),Bulacan,Balagtas,3.4,14.8,32.0,17.7,1.6,5.2,10.5,19.1
+031403,Region III (Central Luzon),Bulacan,City of Baliuag,4.0,11.2,14.1,9.7,3.1,4.9,9.4,13.0
+031404,Region III (Central Luzon),Bulacan,Bocaue,7.5,15.1,17.7,13.9,5.3,9.7,11.7,18.6
+031405,Region III (Central Luzon),Bulacan,Bulacan,4.0,12.0,18.5,15.2,2.8,5.2,9.0,15.1
+031406,Region III (Central Luzon),Bulacan,Bustos,4.3,13.5,18.8,11.7,3.0,5.6,10.9,16.1
+031407,Region III (Central Luzon),Bulacan,Calumpit,4.7,14.7,13.3,8.3,3.7,5.8,12.7,16.7
+031408,Region III (Central Luzon),Bulacan,Guiguinto,5.5,11.4,16.2,9.3,4.0,6.9,9.6,13.1
+031409,Region III (Central Luzon),Bulacan,Hagonoy,4.9,15.1,13.9,9.2,3.8,6.0,12.8,17.4
+031410,Region III (Central Luzon),Bulacan,City of Malolos,2.9,9.0,13.3,11.7,2.3,3.6,7.3,10.7
+031411,Region III (Central Luzon),Bulacan,Marilao,3.6,9.7,23.1,8.4,2.2,5.0,8.3,11.0
+031412,Region III (Central Luzon),Bulacan,City of Meycauayan,5.2,12.6,14.5,7.1,3.9,6.4,11.2,14.1
+031413,Region III (Central Luzon),Bulacan,Norzagaray,8.2,21.5,18.6,8.6,5.7,10.8,18.5,24.6
+031414,Region III (Central Luzon),Bulacan,Obando,4.7,13.2,19.3,13.5,3.2,6.1,10.3,16.2
+031415,Region III (Central Luzon),Bulacan,Pandi,7.1,21.0,13.3,10.1,5.5,8.6,17.5,24.5
+031416,Region III (Central Luzon),Bulacan,Paombong,5.2,12.6,20.1,21.1,3.5,6.9,8.2,17.0
+031417,Region III (Central Luzon),Bulacan,Plaridel,4.2,11.9,13.6,10.6,3.3,5.1,9.8,14.0
+031418,Region III (Central Luzon),Bulacan,Pulilan,4.6,14.3,15.9,11.1,3.4,5.8,11.7,17.0
+031419,Region III (Central Luzon),Bulacan,San Idelfonso,5.5,15.4,9.4,5.4,4.7,6.4,14.0,16.8
+031420,Region III (Central Luzon),Bulacan,City of San Jose del Monte,4.6,15.5,13.8,7.0,3.6,5.7,13.7,17.3
+031421,Region III (Central Luzon),Bulacan,San Miguel,6.5,18.0,10.6,5.7,5.4,7.7,16.3,19.8
+031422,Region III (Central Luzon),Bulacan,San Rafael,4.5,12.7,12.6,7.1,3.5,5.4,11.2,14.2
+031423,Region III (Central Luzon),Bulacan,Santa Maria,4.6,11.5,20.3,9.9,3.1,6.1,9.7,13.4
+031424,Region III (Central Luzon),Bulacan,Doña Remedios Trinidad,11.4,31.7,18.5,16.8,8.0,14.9,22.9,40.5
+034901,Region III (Central Luzon),Nueva Ecija,Aliaga,6.7,13.8,11.6,7.0,5.4,8.0,12.2,15.4
+034902,Region III (Central Luzon),Nueva Ecija,Bongabon,5.5,15.0,16.1,7.8,4.0,6.9,13.1,16.9
+034903,Region III (Central Luzon),Nueva Ecija,City of Cabanatuan,3.1,8.2,11.5,6.6,2.5,3.7,7.3,9.1
+034904,Region III (Central Luzon),Nueva Ecija,Cabiao,5.7,14.3,12.4,13.6,4.5,6.9,11.1,17.4
+034905,Region III (Central Luzon),Nueva Ecija,Carranglan,7.7,20.3,15.8,10.2,5.7,9.7,16.8,23.7
+034906,Region III (Central Luzon),Nueva Ecija,Cuyapo,5.9,14.9,10.7,7.6,4.9,6.9,13.1,16.8
+034907,Region III (Central Luzon),Nueva Ecija,Gabaldon,7.1,17.4,17.3,13.8,5.1,9.2,13.4,21.4
+034908,Region III (Central Luzon),Nueva Ecija,City of Gapan,5.4,12.3,12.2,11.7,4.3,6.4,9.9,14.6
+034909,Region III (Central Luzon),Nueva Ecija,Gen Mamerto Natividad,6.7,13.5,14.9,11.7,5.1,8.4,10.9,16.1
+034910,Region III (Central Luzon),Nueva Ecija,Gen Tinio,5.1,12.6,28.2,21.8,2.7,7.5,8.1,17.1
+034911,Region III (Central Luzon),Nueva Ecija,Guimba,4.3,14.5,13.0,12.7,3.4,5.2,11.5,17.6
+034912,Region III (Central Luzon),Nueva Ecija,Jaen,4.1,10.7,17.9,10.1,2.9,5.4,8.9,12.4
+034913,Region III (Central Luzon),Nueva Ecija,Laur,5.7,15.8,16.0,6.3,4.2,7.2,14.2,17.4
+034914,Region III (Central Luzon),Nueva Ecija,Licab,7.7,11.7,15.7,31.0,5.7,9.6,5.7,17.7
+034915,Region III (Central Luzon),Nueva Ecija,Llanera,3.8,12.1,19.1,13.1,2.6,5.0,9.5,14.7
+034916,Region III (Central Luzon),Nueva Ecija,Lupao,5.8,16.3,17.3,8.8,4.1,7.4,13.9,18.7
+034917,Region III (Central Luzon),Nueva Ecija,Science City of Muñoz,5.5,10.6,11.1,9.2,4.5,6.5,9.0,12.2
+034918,Region III (Central Luzon),Nueva Ecija,Nampicuan,6.6,10.7,14.8,14.3,5.0,8.2,8.2,13.2
+034919,Region III (Central Luzon),Nueva Ecija,City of Palayan,5.8,12.6,14.1,8.8,4.5,7.2,10.8,14.5
+034920,Region III (Central Luzon),Nueva Ecija,Pantabangan,16.0,19.7,6.6,12.0,14.3,17.8,15.8,23.5
+034921,Region III (Central Luzon),Nueva Ecija,Peñaranda,4.3,15.6,24.0,11.3,2.6,5.9,12.7,18.5
+034922,Region III (Central Luzon),Nueva Ecija,Quezon,5.9,14.0,17.4,8.0,4.2,7.6,12.2,15.8
+034923,Region III (Central Luzon),Nueva Ecija,Rizal,7.4,14.0,13.7,12.1,5.7,9.0,11.2,16.8
+034924,Region III (Central Luzon),Nueva Ecija,San Antonio,5.8,14.8,20.3,10.8,3.9,7.7,12.1,17.4
+034925,Region III (Central Luzon),Nueva Ecija,San Isidro,4.6,9.0,18.4,11.9,3.2,6.0,7.3,10.8
+034926,Region III (Central Luzon),Nueva Ecija,San Jose City,4.6,12.2,13.7,9.4,3.6,5.7,10.4,14.1
+034927,Region III (Central Luzon),Nueva Ecija,San Leonardo,5.1,11.6,17.3,12.1,3.7,6.6,9.3,14.0
+034928,Region III (Central Luzon),Nueva Ecija,Santa Rosa,4.0,9.6,13.2,8.6,3.1,4.9,8.2,11.0
+034929,Region III (Central Luzon),Nueva Ecija,Santo Domingo,4.6,11.6,20.9,12.8,3.0,6.2,9.1,14.0
+034930,Region III (Central Luzon),Nueva Ecija,Talavera,4.4,10.1,11.5,9.4,3.6,5.3,8.5,11.7
+034931,Region III (Central Luzon),Nueva Ecija,Talugtug,5.3,12.9,13.6,13.5,4.1,6.5,10.0,15.7
+034932,Region III (Central Luzon),Nueva Ecija,Zaragoza,3.8,11.2,17.3,11.0,2.7,4.9,9.2,13.3
+035402,Region III (Central Luzon),Pampanga,Apalit,4.7,9.5,24.0,16.0,2.8,6.6,7.0,12.1
+035403,Region III (Central Luzon),Pampanga,Arayat,6.4,16.2,12.5,12.1,5.1,7.7,13.0,19.4
+035404,Region III (Central Luzon),Pampanga,Bacolor,3.6,6.5,19.6,17.6,2.5,4.8,4.6,8.3
+035405,Region III (Central Luzon),Pampanga,Candaba,7.0,14.4,10.2,9.6,5.8,8.2,12.1,16.7
+035406,Region III (Central Luzon),Pampanga,Floridablanca,2.9,9.4,14.0,10.7,2.3,3.6,7.7,11.0
+035407,Region III (Central Luzon),Pampanga,Guagua,3.6,8.4,15.0,10.4,2.7,4.5,7.0,9.8
+035408,Region III (Central Luzon),Pampanga,Lubao,3.6,10.5,11.4,8.7,2.9,4.3,9.0,12.0
+035409,Region III (Central Luzon),Pampanga,Mabalacat City,4.4,8.1,15.0,5.1,3.3,5.5,7.4,8.7
+035410,Region III (Central Luzon),Pampanga,Macabebe,5.5,13.0,13.1,10.7,4.3,6.7,10.7,15.2
+035411,Region III (Central Luzon),Pampanga,Magalang,5.0,11.8,20.0,16.2,3.3,6.6,8.7,15.0
+035412,Region III (Central Luzon),Pampanga,Masantol,10.2,18.8,9.4,16.1,8.7,11.8,13.8,23.7
+035413,Region III (Central Luzon),Pampanga,Mexico,4.6,9.8,16.7,8.0,3.3,5.9,8.5,11.1
+035414,Region III (Central Luzon),Pampanga,Minalin,6.2,10.7,14.5,22.5,4.7,7.6,6.7,14.7
+035415,Region III (Central Luzon),Pampanga,Porac,5.6,11.1,13.8,14.9,4.3,6.9,8.4,13.9
+035416,Region III (Central Luzon),Pampanga,City of San Fernando,3.6,7.2,14.7,9.5,2.7,4.5,6.1,8.4
+035417,Region III (Central Luzon),Pampanga,San Luis,6.0,11.9,16.0,12.1,4.4,7.6,9.5,14.2
+035418,Region III (Central Luzon),Pampanga,San Simon,5.6,11.8,16.9,17.4,4.0,7.1,8.5,15.2
+035419,Region III (Central Luzon),Pampanga,Santa Ana,6.2,9.1,17.2,16.8,4.4,7.9,6.6,11.6
+035420,Region III (Central Luzon),Pampanga,Santa Rita,4.1,8.4,25.1,16.2,2.4,5.8,6.2,10.7
+035421,Region III (Central Luzon),Pampanga,Santo Tomas,4.3,9.2,25.2,10.0,2.5,6.0,7.7,10.8
+035422,Region III (Central Luzon),Pampanga,Sasmuan,6.1,14.6,16.8,17.9,4.4,7.8,10.3,18.9
+036901,Region III (Central Luzon),Tarlac,Anao,5.2,12.0,19.6,14.1,3.5,6.9,9.2,14.8
+036902,Region III (Central Luzon),Tarlac,Bamban,10.3,13.5,17.6,11.7,7.3,13.3,10.9,16.1
+036903,Region III (Central Luzon),Tarlac,Camiling,6.3,10.4,10.1,5.3,5.2,7.3,9.4,11.3
+036904,Region III (Central Luzon),Tarlac,Capas,8.7,11.4,16.0,9.6,6.4,11.0,9.6,13.2
+036905,Region III (Central Luzon),Tarlac,Concepcion,9.9,13.3,8.9,6.0,8.4,11.3,12.0,14.6
+036906,Region III (Central Luzon),Tarlac,Gerona,6.1,10.7,12.2,8.7,4.9,7.4,9.1,12.2
+036907,Region III (Central Luzon),Tarlac,La Paz,10.4,15.1,11.6,13.4,8.4,12.3,11.8,18.4
+036908,Region III (Central Luzon),Tarlac,Mayantoc,6.9,14.3,13.4,16.5,5.4,8.4,10.4,18.2
+036909,Region III (Central Luzon),Tarlac,Moncada,7.3,12.4,12.0,7.6,5.8,8.7,10.9,13.9
+036910,Region III (Central Luzon),Tarlac,Paniqui,4.6,9.8,15.1,8.6,3.4,5.7,8.5,11.2
+036911,Region III (Central Luzon),Tarlac,Pura,5.6,12.1,15.4,10.6,4.2,7.0,10.0,14.3
+036912,Region III (Central Luzon),Tarlac,Ramos,8.5,14.6,20.3,15.2,5.6,11.3,11.0,18.3
+036913,Region III (Central Luzon),Tarlac,San Clemente,5.1,11.6,20.4,14.4,3.4,6.8,8.8,14.3
+036914,Region III (Central Luzon),Tarlac,San Manuel,9.9,14.1,15.9,8.3,7.3,12.5,12.1,16.0
+036915,Region III (Central Luzon),Tarlac,Santa Ignacia,5.5,14.0,16.5,9.3,4.0,7.0,11.9,16.1
+036916,Region III (Central Luzon),Tarlac,City of Tarlac,5.2,10.0,11.9,5.6,4.2,6.3,9.1,10.9
+036917,Region III (Central Luzon),Tarlac,Victoria,8.5,15.7,11.5,7.8,6.9,10.1,13.7,17.7
+036918,Region III (Central Luzon),Tarlac,San Jose,12.1,21.5,14.9,14.6,9.1,15.0,16.3,26.6
+037101,Region III (Central Luzon),Zambales,Botolan,12.8,30.7,11.0,7.0,10.5,15.1,27.2,34.3
+037102,Region III (Central Luzon),Zambales,Cabangan,10.0,24.6,13.3,8.5,7.8,12.2,21.1,28.0
+037103,Region III (Central Luzon),Zambales,Candelabra,9.8,21.7,11.4,14.3,8.0,11.7,16.6,26.8
+037104,Region III (Central Luzon),Zambales,Castillejos,7.0,17.9,17.5,11.2,5.0,9.1,14.6,21.2
+037105,Region III (Central Luzon),Zambales,Iba,6.0,21.3,22.3,5.3,3.8,8.2,19.4,23.1
+037106,Region III (Central Luzon),Zambales,Masinloc,9.6,26.1,13.8,8.0,7.4,11.8,22.6,29.5
+037108,Region III (Central Luzon),Zambales,Palauig,10.3,28.9,14.8,9.2,7.8,12.8,24.5,33.3
+037109,Region III (Central Luzon),Zambales,San Antonio,7.3,20.7,16.9,6.6,5.3,9.3,18.5,23.0
+037110,Region III (Central Luzon),Zambales,San Felipe,9.3,21.0,17.0,9.5,6.7,11.9,17.7,24.3
+037111,Region III (Central Luzon),Zambales,San Marcelino,9.1,21.1,13.5,11.3,7.1,11.1,17.2,25.1
+037112,Region III (Central Luzon),Zambales,San Narciso,5.0,17.3,19.0,7.9,3.4,6.6,15.0,19.5
+037113,Region III (Central Luzon),Zambales,Santa Cruz,9.6,24.9,12.6,8.9,7.6,11.6,21.3,28.6
+037114,Region III (Central Luzon),Zambales,Subic,10.3,31.3,15.0,7.2,7.7,12.8,27.6,35.0
+037701,Region III (Central Luzon),Aurora,Baler,7.3,14.4,18.5,14.2,5.1,9.6,11.0,17.7
+037702,Region III (Central Luzon),Aurora,Casiguran,12.6,18.1,11.7,13.8,10.2,15.1,14.0,22.2
+037703,Region III (Central Luzon),Aurora,Dilasag,12.9,21.4,15.1,9.9,9.7,16.1,17.9,24.9
+037704,Region III (Central Luzon),Aurora,Dinalungan,14.7,17.0,15.9,14.2,10.9,18.6,13.0,20.9
+037705,Region III (Central Luzon),Aurora,Dingalan,12.7,28.5,16.8,6.3,9.2,16.3,25.5,31.4
+037706,Region III (Central Luzon),Aurora,Dipaculao,11.4,17.9,12.4,8.9,9.0,13.7,15.3,20.5
+037707,Region III (Central Luzon),Aurora,Maria Aurora,12.0,13.7,9.4,5.4,10.1,13.8,12.5,14.9
+037708,Region III (Central Luzon),Aurora,San Luis,10.9,20.1,14.3,6.7,8.4,13.5,17.9,22.3
+041001,Region IV-A (CALABARZON),Batangas,Agoncillo,12.5,8.3,14.7,17.8,9.5,15.5,5.9,10.7
+041002,Region IV-A (CALABARZON),Batangas,Alitagtag,16.0,10.0,15.1,21.1,12.0,20.0,6.5,13.4
+041003,Region IV-A (CALABARZON),Batangas,Balayan,10.4,9.3,12.0,13.6,8.4,12.5,7.2,11.3
+041004,Region IV-A (CALABARZON),Batangas,Balete,12.7,7.7,20.3,14.6,8.4,16.9,5.8,9.5
+041005,Region IV-A (CALABARZON),Batangas,Batangas City,8.6,6.2,9.5,10.2,7.2,9.9,5.2,7.3
+041006,Region IV-A (CALABARZON),Batangas,Bauan,7.6,10.7,12.6,16.0,6.0,9.2,7.8,13.5
+041007,Region IV-A (CALABARZON),Batangas,City of Calaca,10.3,10.7,13.6,15.0,8.0,12.6,8.1,13.3
+041008,Region IV-A (CALABARZON),Batangas,Calatagan,11.7,9.6,16.6,11.9,8.5,14.9,7.7,11.5
+041009,Region IV-A (CALABARZON),Batangas,Cuenca,11.7,11.0,15.8,16.1,8.6,14.7,8.1,13.9
+041010,Region IV-A (CALABARZON),Batangas,Ibaan,9.3,9.3,15.1,15.1,7.0,11.6,7.0,11.7
+041011,Region IV-A (CALABARZON),Batangas,Laurel,13.1,6.9,14.1,22.6,10.1,16.2,4.3,9.4
+041012,Region IV-A (CALABARZON),Batangas,Lemery,10.7,9.9,11.4,16.7,8.7,12.7,7.2,12.6
+041013,Region IV-A (CALABARZON),Batangas,Lian,10.7,9.4,16.5,13.6,7.8,13.6,7.3,11.5
+041014,Region IV-A (CALABARZON),Batangas,City of Lipa,10.0,12.0,8.5,9.5,8.6,11.4,10.2,13.9
+041015,Region IV-A (CALABARZON),Batangas,Lobo,20.5,8.1,14.0,13.2,15.8,25.3,6.4,9.9
+041016,Region IV-A (CALABARZON),Batangas,Mabini,9.8,7.2,12.3,15.1,7.8,11.8,5.4,9.0
+041017,Region IV-A (CALABARZON),Batangas,Malvar,9.4,7.8,17.8,17.2,6.7,12.2,5.6,10.0
+041018,Region IV-A (CALABARZON),Batangas,Mataas Na Kahoy,9.2,7.7,16.6,17.9,6.7,11.7,5.4,9.9
+041019,Region IV-A (CALABARZON),Batangas,Nasugbu,13.2,7.1,12.8,14.0,10.4,16.0,5.5,8.7
+041020,Region IV-A (CALABARZON),Batangas,Padre Garcia,20.9,9.0,13.5,12.8,16.3,25.6,7.1,10.9
+041021,Region IV-A (CALABARZON),Batangas,Rosario,11.9,8.5,11.4,12.4,9.7,14.2,6.8,10.3
+041022,Region IV-A (CALABARZON),Batangas,San Jose,9.2,9.9,14.4,12.3,7.1,11.4,7.9,11.9
+041023,Region IV-A (CALABARZON),Batangas,San Juan,13.0,9.6,11.0,15.3,10.7,15.4,7.2,12.0
+041024,Region IV-A (CALABARZON),Batangas,San Luis,15.7,6.0,15.1,17.7,11.8,19.6,4.3,7.8
+041025,Region IV-A (CALABARZON),Batangas,San Nicolas,19.6,8.0,14.3,17.3,15.0,24.2,5.7,10.3
+041026,Region IV-A (CALABARZON),Batangas,San Pascual,7.5,11.4,13.2,18.6,5.9,9.2,7.9,14.8
+041027,Region IV-A (CALABARZON),Batangas,Santa Teresita,10.8,5.9,15.6,15.9,8.0,13.5,4.4,7.5
+041028,Region IV-A (CALABARZON),Batangas,City of Santo Tomas,8.4,7.8,15.3,21.4,6.3,10.5,5.1,10.6
+041029,Region IV-A (CALABARZON),Batangas,Taal,8.8,9.5,12.9,16.5,7.0,10.7,6.9,12.0
+041030,Region IV-A (CALABARZON),Batangas,Talisay,10.7,6.4,15.5,13.0,8.0,13.5,5.0,7.7
+041031,Region IV-A (CALABARZON),Batangas,City of Tanauan,8.7,8.2,11.6,14.2,7.1,10.4,6.3,10.1
+041032,Region IV-A (CALABARZON),Batangas,Taysan,11.8,6.4,13.5,9.3,9.2,14.4,5.4,7.4
+041033,Region IV-A (CALABARZON),Batangas,Tingloy,19.1,9.3,17.2,16.5,13.7,24.5,6.8,11.9
+041034,Region IV-A (CALABARZON),Batangas,Tuy,11.9,6.1,14.3,13.0,9.1,14.7,4.8,7.4
+042101,Region IV-A (CALABARZON),Cavite,Alfonso,5.3,13.2,16.2,16.3,3.9,6.7,9.7,16.8
+042102,Region IV-A (CALABARZON),Cavite,Amadeo,4.7,9.6,16.8,13.7,3.4,6.0,7.4,11.7
+042103,Region IV-A (CALABARZON),Cavite,City of Bacoor,3.9,5.4,12.1,10.8,3.1,4.7,4.4,6.3
+042104,Region IV-A (CALABARZON),Cavite,City of Carmona,4.0,10.9,29.7,10.1,2.1,6.0,9.1,12.7
+042105,Region IV-A (CALABARZON),Cavite,City of Cavite,5.7,12.7,12.9,14.1,4.5,6.9,9.8,15.6
+042106,Region IV-A (CALABARZON),Cavite,City of Dasmariñas,5.3,8.8,9.7,27.0,4.5,6.2,4.9,12.7
+042107,Region IV-A (CALABARZON),Cavite,General Emilio Aguinaldo,13.1,16.1,16.8,16.3,9.5,16.7,11.8,20.4
+042108,Region IV-A (CALABARZON),Cavite,City of General Trias,3.8,11.2,24.3,14.6,2.3,5.3,8.5,13.9
+042109,Region IV-A (CALABARZON),Cavite,City of Imus,2.7,9.3,10.7,9.1,2.2,3.2,7.9,10.7
+042110,Region IV-A (CALABARZON),Cavite,Indang,4.0,10.2,15.1,11.4,3.0,5.0,8.3,12.2
+042111,Region IV-A (CALABARZON),Cavite,Kawit,5.7,10.1,18.0,14.2,4.0,7.3,7.8,12.5
+042112,Region IV-A (CALABARZON),Cavite,Magallanes,13.8,14.3,18.1,11.1,9.7,17.9,11.7,16.9
+042113,Region IV-A (CALABARZON),Cavite,Maragondon,6.1,11.3,18.4,15.5,4.3,8.0,8.4,14.2
+042114,Region IV-A (CALABARZON),Cavite,Mendez (Mendez-Nuñez),9.2,15.1,16.7,12.1,6.7,11.8,12.1,18.1
+042115,Region IV-A (CALABARZON),Cavite,Naic,6.0,11.7,15.9,12.2,4.5,7.6,9.3,14.0
+042116,Region IV-A (CALABARZON),Cavite,Noveleta,4.1,12.3,21.4,14.5,2.6,5.5,9.4,15.3
+042117,Region IV-A (CALABARZON),Cavite,Rosario,5.2,7.7,16.7,11.8,3.8,6.6,6.2,9.2
+042118,Region IV-A (CALABARZON),Cavite,Silang,5.8,12.5,12.1,10.9,4.7,7.0,10.3,14.7
+042119,Region IV-A (CALABARZON),Cavite,City of Tagaytay,5.4,15.3,15.7,18.3,4.0,6.7,10.7,19.9
+042120,Region IV-A (CALABARZON),Cavite,Tanza,5.2,11.9,16.6,20.0,3.8,6.7,8.0,15.7
+042121,Region IV-A (CALABARZON),Cavite,Ternate,11.4,5.6,24.7,13.4,6.8,16.1,4.3,6.8
+042122,Region IV-A (CALABARZON),Cavite,City of Trece Martires,5.9,11.5,24.3,12.5,3.5,8.2,9.2,13.9
+042123,Region IV-A (CALABARZON),Cavite,Gen. Mariano Alvarez,6.4,9.5,13.8,10.8,4.9,7.8,7.8,11.2
+043401,Region IV-A (CALABARZON),Laguna,Alaminos,2.6,9.5,23.3,22.5,1.6,3.6,6.0,13.1
+043402,Region IV-A (CALABARZON),Laguna,Bay,2.2,5.4,25.1,12.5,1.3,3.1,4.3,6.5
+043403,Region IV-A (CALABARZON),Laguna,City of Biñan,1.7,5.8,31.4,11.4,0.8,2.6,4.7,6.8
+043404,Region IV-A (CALABARZON),Laguna,City of Cabuyao,1.5,5.0,30.3,15.6,0.8,2.3,3.7,6.3
+043405,Region IV-A (CALABARZON),Laguna,City of Calamba,1.9,4.0,15.5,18.7,1.4,2.4,2.7,5.2
+043406,Region IV-A (CALABARZON),Laguna,Calauan,4.0,7.0,25.7,16.3,2.3,5.8,5.1,8.9
+043407,Region IV-A (CALABARZON),Laguna,Cavinti,2.7,9.6,27.1,15.8,1.5,3.8,7.1,12.1
+043408,Region IV-A (CALABARZON),Laguna,Famy,2.8,7.2,32.0,45.3,1.3,4.2,1.8,12.6
+043409,Region IV-A (CALABARZON),Laguna,Kalayaan,5.1,7.5,44.3,23.3,1.4,8.7,4.6,10.4
+043410,Region IV-A (CALABARZON),Laguna,Liliw,2.1,6.9,23.3,13.2,1.3,2.9,5.4,8.4
+043411,Region IV-A (CALABARZON),Laguna,Los Baños,1.6,7.5,26.8,16.5,0.9,2.3,5.4,9.5
+043412,Region IV-A (CALABARZON),Laguna,Luisiana,4.5,7.0,25.5,20.2,2.6,6.4,4.7,9.3
+043413,Region IV-A (CALABARZON),Laguna,Lumban,2.3,9.0,29.3,23.6,1.2,3.4,5.5,12.4
+043414,Region IV-A (CALABARZON),Laguna,Mabitac,3.0,9.8,27.4,16.8,1.6,4.3,7.1,12.5
+043415,Region IV-A (CALABARZON),Laguna,Magdalena,7.8,9.1,22.4,15.2,4.9,10.7,6.8,11.4
+043416,Region IV-A (CALABARZON),Laguna,Majayjay,3.1,12.1,19.9,13.2,2.1,4.1,9.5,14.8
+043417,Region IV-A (CALABARZON),Laguna,Nagcarlan,2.4,5.3,20.7,20.5,1.6,3.2,3.5,7.1
+043418,Region IV-A (CALABARZON),Laguna,Paete,5.4,7.0,31.5,17.6,2.6,8.2,5.0,9.1
+043419,Region IV-A (CALABARZON),Laguna,Pagsanjan,2.3,8.5,24.4,21.8,1.4,3.3,5.5,11.5
+043420,Region IV-A (CALABARZON),Laguna,Pakil,3.3,7.9,23.4,27.8,2.1,4.6,4.3,11.5
+043421,Region IV-A (CALABARZON),Laguna,Pangil,5.8,7.1,30.0,17.7,2.9,8.7,5.0,9.1
+043422,Region IV-A (CALABARZON),Laguna,Pila,2.4,6.3,22.4,14.8,1.5,3.2,4.8,7.8
+043423,Region IV-A (CALABARZON),Laguna,Rizal,1.6,6.0,30.1,10.2,0.8,2.3,5.0,7.0
+043424,Region IV-A (CALABARZON),Laguna,City of San Pablo,2.1,6.6,12.4,22.7,1.7,2.5,4.1,9.1
+043425,Region IV-A (CALABARZON),Laguna,City of San Pedro,2.0,6.0,22.1,19.9,1.3,2.7,4.0,8.0
+043426,Region IV-A (CALABARZON),Laguna,Santa Cruz,2.0,9.7,22.7,15.7,1.2,2.7,7.2,12.3
+043427,Region IV-A (CALABARZON),Laguna,Santa Maria,6.2,8.6,22.3,19.1,3.9,8.5,5.9,11.2
+043428,Region IV-A (CALABARZON),Laguna,City of Santa Rosa,1.3,3.7,31.0,14.5,0.6,2.0,2.8,4.5
+043429,Region IV-A (CALABARZON),Laguna,Siniloan,3.0,24.4,22.2,14.0,1.9,4.1,18.7,30.0
+043430,Region IV-A (CALABARZON),Laguna,Victoria,3.8,7.4,28.5,19.9,2.0,5.5,5.0,9.9
+045601,Region IV-A (CALABARZON),Quezon,Agdangan,14.0,25.5,20.1,9.8,9.4,18.6,21.4,29.6
+045602,Region IV-A (CALABARZON),Quezon,Alabat,15.5,15.6,16.9,10.4,11.2,19.7,12.9,18.2
+045603,Region IV-A (CALABARZON),Quezon,Atimonan,6.1,22.7,15.9,8.7,4.5,7.7,19.5,25.9
+045605,Region IV-A (CALABARZON),Quezon,Buenavista,24.9,25.0,11.8,7.6,20.1,29.7,21.8,28.1
+045606,Region IV-A (CALABARZON),Quezon,Burdeos,22.0,22.0,15.8,13.5,16.3,27.7,17.1,26.9
+045607,Region IV-A (CALABARZON),Quezon,Calauag,9.8,21.1,13.1,11.2,7.7,11.9,17.2,25.0
+045608,Region IV-A (CALABARZON),Quezon,Candelaria,6.2,15.8,14.8,16.2,4.7,7.7,11.6,20.1
+045610,Region IV-A (CALABARZON),Quezon,Catanauan,11.3,22.5,13.0,12.7,8.9,13.8,17.8,27.2
+045615,Region IV-A (CALABARZON),Quezon,Dolores,6.3,9.6,22.2,7.2,4.0,8.7,8.4,10.7
+045616,Region IV-A (CALABARZON),Quezon,General Luna,18.4,24.6,14.1,10.5,14.1,22.6,20.4,28.8
+045617,Region IV-A (CALABARZON),Quezon,General Nakar,18.6,16.1,18.8,9.3,12.9,24.3,13.6,18.6
+045618,Region IV-A (CALABARZON),Quezon,Guinayangan,17.0,17.2,13.7,12.4,13.2,20.9,13.7,20.8
+045619,Region IV-A (CALABARZON),Quezon,Gumaca,7.7,19.8,13.5,8.7,6.0,9.4,16.9,22.6
+045620,Region IV-A (CALABARZON),Quezon,Infanta,7.6,27.3,16.0,20.6,5.6,9.6,18.1,36.6
+045621,Region IV-A (CALABARZON),Quezon,Jomalig,25.8,12.8,20.7,13.8,17.0,34.5,9.9,15.7
+045622,Region IV-A (CALABARZON),Quezon,Lopez,9.1,23.6,13.1,15.6,7.1,11.0,17.6,29.6
+045623,Region IV-A (CALABARZON),Quezon,Lucban,4.0,19.8,19.3,11.3,2.7,5.3,16.2,23.5
+045625,Region IV-A (CALABARZON),Quezon,Macalelon,19.2,30.1,11.7,7.9,15.5,22.9,26.2,34.0
+045627,Region IV-A (CALABARZON),Quezon,Mauban,8.0,15.9,17.6,13.3,5.7,10.3,12.5,19.4
+045628,Region IV-A (CALABARZON),Quezon,Mulanay,21.1,20.3,13.4,13.6,16.5,25.8,15.8,24.9
+045629,Region IV-A (CALABARZON),Quezon,Padre Burgos,8.0,22.1,17.5,10.1,5.7,10.3,18.5,25.8
+045630,Region IV-A (CALABARZON),Quezon,Pagbilao,6.3,24.9,17.4,15.9,4.5,8.1,18.4,31.4
+045631,Region IV-A (CALABARZON),Quezon,Panukulan,22.3,26.0,17.1,21.9,16.0,28.6,16.6,35.4
+045632,Region IV-A (CALABARZON),Quezon,Patnanungan,24.1,21.3,24.8,12.7,14.3,34.0,16.8,25.8
+045633,Region IV-A (CALABARZON),Quezon,Perez,21.5,18.7,16.8,14.3,15.6,27.4,14.3,23.2
+045634,Region IV-A (CALABARZON),Quezon,Pitogo,8.7,25.9,18.3,16.3,6.1,11.3,18.9,32.8
+045635,Region IV-A (CALABARZON),Quezon,Plaridel,7.3,22.8,24.1,12.2,4.4,10.2,18.3,27.4
+045636,Region IV-A (CALABARZON),Quezon,Polillo,10.7,21.1,16.0,15.6,7.9,13.6,15.7,26.5
+045637,Region IV-A (CALABARZON),Quezon,Quezon,17.0,23.5,17.6,9.6,12.1,21.9,19.8,27.2
+045638,Region IV-A (CALABARZON),Quezon,Real,8.7,16.7,18.4,15.2,6.1,11.3,12.5,20.9
+045639,Region IV-A (CALABARZON),Quezon,Sampaloc,12.6,13.6,17.8,10.0,8.9,16.2,11.4,15.9
+045640,Region IV-A (CALABARZON),Quezon,San Andres,20.7,27.8,21.0,11.6,13.5,27.8,22.5,33.1
+045641,Region IV-A (CALABARZON),Quezon,San Antonio,16.5,17.8,15.1,11.1,12.4,20.6,14.5,21.0
+045642,Region IV-A (CALABARZON),Quezon,San Francisco (Aurora),24.2,30.2,14.6,9.8,18.4,29.9,25.4,35.1
+045644,Region IV-A (CALABARZON),Quezon,San Narciso,23.2,19.8,13.8,12.4,18.0,28.5,15.8,23.8
+045645,Region IV-A (CALABARZON),Quezon,Sariaya,6.3,14.8,15.8,10.4,4.7,8.0,12.3,17.3
+045646,Region IV-A (CALABARZON),Quezon,Tagkawayan,20.9,4.3,12.4,32.3,16.6,25.2,2.0,6.5
+045647,Region IV-A (CALABARZON),Quezon,City of Tayabas,6.3,12.9,14.5,13.7,4.8,7.8,10.0,15.8
+045648,Region IV-A (CALABARZON),Quezon,Tiaong,6.8,20.1,17.1,15.0,4.9,8.7,15.2,25.1
+045649,Region IV-A (CALABARZON),Quezon,Unisan,14.6,20.2,16.7,12.8,10.6,18.7,15.9,24.4
+045801,Region IV-A (CALABARZON),Rizal,Angono,4.1,6.1,30.5,11.0,2.0,6.1,5.0,7.2
+045802,Region IV-A (CALABARZON),Rizal,City of Antipolo,5.4,9.3,17.1,7.7,3.9,6.9,8.1,10.5
+045803,Region IV-A (CALABARZON),Rizal,Baras,6.4,7.6,40.0,20.1,2.2,10.6,5.1,10.1
+045804,Region IV-A (CALABARZON),Rizal,Binangonan,3.8,1.6,19.8,47.2,2.6,5.1,0.4,2.8
+045805,Region IV-A (CALABARZON),Rizal,Cainta,3.7,3.6,33.8,23.0,1.6,5.8,2.2,4.9
+045806,Region IV-A (CALABARZON),Rizal,Cardona,4.7,9.2,22.0,22.7,3.0,6.4,5.8,12.7
+045807,Region IV-A (CALABARZON),Rizal,Jala-Jala,12.4,6.3,19.2,26.8,8.5,16.3,3.5,9.1
+045808,Region IV-A (CALABARZON),Rizal,Rodriguez (Montalban),5.6,7.4,31.5,11.2,2.7,8.5,6.0,8.7
+045809,Region IV-A (CALABARZON),Rizal,Morong,3.8,9.0,28.6,22.1,2.0,5.6,5.7,12.3
+045810,Region IV-A (CALABARZON),Rizal,Pililla,5.1,8.8,27.0,22.9,2.9,7.4,5.5,12.2
+045811,Region IV-A (CALABARZON),Rizal,San Mateo,4.2,6.6,21.1,16.9,2.8,5.7,4.8,8.5
+045812,Region IV-A (CALABARZON),Rizal,Tanay,6.4,5.5,22.6,24.7,4.0,8.7,3.2,7.7
+045813,Region IV-A (CALABARZON),Rizal,Taytay,4.6,9.8,30.2,37.6,2.3,6.9,3.7,15.9
+045814,Region IV-A (CALABARZON),Rizal,Teresa,4.1,5.7,31.6,14.4,2.0,6.3,4.4,7.1
+174001,Region IV-B (MIMAROPA),Marinduque,Boac,13.4,14.7,8.8,4.9,11.5,15.4,13.5,15.8
+174002,Region IV-B (MIMAROPA),Marinduque,Buenavista,19.7,21.9,15.9,5.0,14.5,24.8,20.1,23.7
+174003,Region IV-B (MIMAROPA),Marinduque,Gasan,15.7,19.4,12.8,8.1,12.4,18.9,16.8,22.0
+174004,Region IV-B (MIMAROPA),Marinduque,Mogpog,12.1,23.0,12.3,4.6,9.7,14.5,21.3,24.8
+174005,Region IV-B (MIMAROPA),Marinduque,Santa Cruz,13.5,20.7,10.0,13.6,11.3,15.8,16.0,25.3
+174006,Region IV-B (MIMAROPA),Marinduque,Torrijos,20.3,10.1,11.4,7.9,16.5,24.2,8.8,11.4
+175101,Region IV-B (MIMAROPA),Occidental Mindoro,Abra de Ilog,20.5,37.3,17.4,4.6,14.6,26.3,34.4,40.1
+175102,Region IV-B (MIMAROPA),Occidental Mindoro,Calintaan,19.0,16.3,18.1,8.9,13.3,24.6,13.9,18.7
+175103,Region IV-B (MIMAROPA),Occidental Mindoro,Looc,13.3,28.4,21.5,11.7,8.6,18.0,22.9,33.8
+175104,Region IV-B (MIMAROPA),Occidental Mindoro,Lubang,9.5,22.3,21.7,7.8,6.1,12.9,19.4,25.1
+175105,Region IV-B (MIMAROPA),Occidental Mindoro,Magsaysay,21.0,15.3,15.1,8.5,15.8,26.2,13.2,17.5
+175106,Region IV-B (MIMAROPA),Occidental Mindoro,Mamburao,13.2,17.4,20.4,8.6,8.7,17.6,14.9,19.8
+175107,Region IV-B (MIMAROPA),Occidental Mindoro,Paluan,22.6,20.9,17.3,6.3,16.2,29.1,18.8,23.1
+175108,Region IV-B (MIMAROPA),Occidental Mindoro,Rizal,21.3,30.1,15.4,11.1,15.9,26.7,24.6,35.5
+175109,Region IV-B (MIMAROPA),Occidental Mindoro,Sablayan,12.8,28.3,17.2,6.9,9.2,16.5,25.1,31.5
+175110,Region IV-B (MIMAROPA),Occidental Mindoro,San Jose,15.3,22.0,13.1,14.7,12.0,18.6,16.6,27.3
+175111,Region IV-B (MIMAROPA),Occidental Mindoro,Santa Cruz,16.8,17.5,19.8,12.9,11.3,22.3,13.8,21.3
+175201,Region IV-B (MIMAROPA),Oriental Mindoro,Baco,16.8,34.4,10.8,5.8,13.8,19.8,31.1,37.8
+175202,Region IV-B (MIMAROPA),Oriental Mindoro,Bansud,16.2,16.5,18.3,10.8,11.3,21.1,13.5,19.4
+175203,Region IV-B (MIMAROPA),Oriental Mindoro,Bongabong,16.5,29.9,10.9,13.5,13.6,19.4,23.2,36.6
+175204,Region IV-B (MIMAROPA),Oriental Mindoro,Bulalacao,23.9,31.8,15.8,8.9,17.7,30.2,27.1,36.4
+175205,Region IV-B (MIMAROPA),Oriental Mindoro,City of Calapan,7.2,24.7,9.9,5.9,6.0,8.3,22.3,27.1
+175206,Region IV-B (MIMAROPA),Oriental Mindoro,Gloria,14.3,23.1,10.6,7.9,11.8,16.8,20.2,26.1
+175207,Region IV-B (MIMAROPA),Oriental Mindoro,Mansalay,23.3,33.5,13.4,8.8,18.2,28.4,28.6,38.3
+175208,Region IV-B (MIMAROPA),Oriental Mindoro,Naujan,12.4,18.2,8.7,12.1,10.6,14.2,14.6,21.9
+175209,Region IV-B (MIMAROPA),Oriental Mindoro,Pinamalayan,11.4,10.5,12.8,10.0,9.0,13.8,8.8,12.2
+175210,Region IV-B (MIMAROPA),Oriental Mindoro,Pola,14.9,18.1,14.1,5.5,11.4,18.3,16.5,19.8
+175211,Region IV-B (MIMAROPA),Oriental Mindoro,Puerto Galera,13.3,16.2,18.3,5.0,9.3,17.3,14.9,17.5
+175212,Region IV-B (MIMAROPA),Oriental Mindoro,Roxas,16.4,11.5,12.5,14.3,13.1,19.8,8.8,14.2
+175213,Region IV-B (MIMAROPA),Oriental Mindoro,San Teodoro,16.5,18.8,18.6,21.3,11.5,21.6,12.2,25.3
+175214,Region IV-B (MIMAROPA),Oriental Mindoro,Socorro,13.7,15.4,12.2,8.5,11.0,16.5,13.2,17.5
+175215,Region IV-B (MIMAROPA),Oriental Mindoro,Victoria,11.7,16.9,12.4,10.1,9.3,14.1,14.1,19.7
+175301,Region IV-B (MIMAROPA),Palawan,Aborlan,13.3,15.4,17.1,15.1,9.6,17.1,11.6,19.3
+175302,Region IV-B (MIMAROPA),Palawan,Agutaya,15.2,23.3,29.3,6.9,7.9,22.6,20.6,25.9
+175303,Region IV-B (MIMAROPA),Palawan,Araceli,19.2,39.1,14.3,7.9,14.7,23.7,34.0,44.2
+175304,Region IV-B (MIMAROPA),Palawan,Balabac,29.7,14.2,15.0,8.2,22.4,37.1,12.3,16.1
+175305,Region IV-B (MIMAROPA),Palawan,Bataraza,15.3,31.1,15.3,12.3,11.4,19.1,24.8,37.4
+175306,Region IV-B (MIMAROPA),Palawan,Brooke's Point,16.7,15.7,12.0,8.3,13.4,20.0,13.6,17.8
+175307,Region IV-B (MIMAROPA),Palawan,Busuanga,17.4,20.6,14.5,6.6,13.3,21.6,18.3,22.8
+175308,Region IV-B (MIMAROPA),Palawan,Cagayancillo,23.2,22.1,17.5,35.0,16.5,29.8,9.4,34.9
+175309,Region IV-B (MIMAROPA),Palawan,Coron,17.1,9.8,13.5,46.4,13.3,20.8,2.3,17.3
+175310,Region IV-B (MIMAROPA),Palawan,Cuyo,11.4,21.0,16.9,11.9,8.2,14.5,16.9,25.1
+175311,Region IV-B (MIMAROPA),Palawan,Dumaran,15.5,14.9,15.4,35.4,11.6,19.5,6.2,23.5
+175312,Region IV-B (MIMAROPA),Palawan,El Nido,16.3,15.3,12.6,15.7,13.0,19.7,11.4,19.3
+175313,Region IV-B (MIMAROPA),Palawan,Linapacan,21.8,15.9,15.0,20.2,16.5,27.2,10.6,21.2
+175314,Region IV-B (MIMAROPA),Palawan,Magsaysay,11.9,26.3,20.1,19.4,8.0,15.8,17.9,34.7
+175315,Region IV-B (MIMAROPA),Palawan,Narra,10.3,17.6,14.8,9.7,7.8,12.9,14.7,20.4
+175317,Region IV-B (MIMAROPA),Palawan,Quezon,18.8,14.2,14.5,23.9,14.3,23.3,8.6,19.8
+175318,Region IV-B (MIMAROPA),Palawan,Roxas,10.8,17.7,12.4,7.5,8.6,13.0,15.6,19.9
+175319,Region IV-B (MIMAROPA),Palawan,San Vicente,18.9,17.8,16.9,18.4,13.7,24.2,12.4,23.2
+175320,Region IV-B (MIMAROPA),Palawan,Taytay,17.9,25.2,12.1,6.0,14.3,21.5,22.7,27.7
+175321,Region IV-B (MIMAROPA),Palawan,Kalayaan,,18.2,,27.3,,,10.0,26.4
+175322,Region IV-B (MIMAROPA),Palawan,Culion,15.8,40.2,16.6,10.0,11.5,20.1,33.6,46.8
+175323,Region IV-B (MIMAROPA),Palawan,Rizal,20.1,14.6,16.5,12.5,14.7,25.6,11.6,17.6
+175324,Region IV-B (MIMAROPA),Palawan,Sofronio Española,17.4,21.3,17.9,9.4,12.3,22.5,18.0,24.6
+175901,Region IV-B (MIMAROPA),Romblon,Alcantara,21.2,16.1,13.6,12.3,16.4,25.9,12.8,19.3
+175902,Region IV-B (MIMAROPA),Romblon,Banton,16.7,24.8,16.9,10.0,12.1,21.4,20.8,28.9
+175903,Region IV-B (MIMAROPA),Romblon,Cajidiocan,28.7,35.2,12.1,8.8,23.0,34.4,30.1,40.3
+175904,Region IV-B (MIMAROPA),Romblon,Calatrava,22.6,27.3,16.9,11.3,16.4,28.9,22.2,32.3
+175905,Region IV-B (MIMAROPA),Romblon,Concepcion,17.2,20.7,16.0,13.6,12.7,21.7,16.0,25.3
+175906,Region IV-B (MIMAROPA),Romblon,Corcuera,19.9,10.1,13.6,7.9,15.5,24.3,8.8,11.4
+175907,Region IV-B (MIMAROPA),Romblon,Looc,20.2,39.6,13.8,6.8,15.6,24.8,35.2,44.1
+175908,Region IV-B (MIMAROPA),Romblon,Magdiwang,26.1,29.3,14.9,20.5,19.7,32.4,19.4,39.2
+175909,Region IV-B (MIMAROPA),Romblon,Odiongan,9.6,42.6,14.3,8.8,7.4,11.9,36.4,48.7
+175910,Region IV-B (MIMAROPA),Romblon,Romblon,21.7,38.6,12.3,10.2,17.3,26.1,32.1,45.1
+175911,Region IV-B (MIMAROPA),Romblon,San Agustin,25.4,27.4,12.4,15.2,20.2,30.5,20.5,34.3
+175912,Region IV-B (MIMAROPA),Romblon,San Andres,21.8,35.6,13.1,5.2,17.1,26.5,32.5,38.7
+175913,Region IV-B (MIMAROPA),Romblon,San Fernando,29.3,37.7,12.6,12.0,23.2,35.3,30.3,45.1
+175914,Region IV-B (MIMAROPA),Romblon,San Jose,27.9,40.0,18.8,7.8,19.3,36.6,34.9,45.1
+175915,Region IV-B (MIMAROPA),Romblon,Santa Fe,26.5,23.2,13.5,8.8,20.7,32.4,19.9,26.6
+175916,Region IV-B (MIMAROPA),Romblon,Ferrol,20.3,34.2,20.4,9.8,13.5,27.0,28.7,39.7
+175917,Region IV-B (MIMAROPA),Romblon,Santa Maria,19.4,40.1,18.7,3.6,13.5,25.4,37.7,42.5
+050501,Region V (Bicol Region),Albay,Bacacay,31.5,27.3,7.1,6.9,27.8,35.2,24.2,30.4
+050502,Region V (Bicol Region),Albay,Camalig,21.1,23.4,9.3,8.2,17.8,24.3,20.2,26.5
+050503,Region V (Bicol Region),Albay,Daraga (Locsin),13.5,15.5,10.9,8.8,11.1,15.9,13.2,17.7
+050504,Region V (Bicol Region),Albay,Guinobatan,25.6,21.9,7.7,7.4,22.4,28.9,19.2,24.6
+050505,Region V (Bicol Region),Albay,Jovellar,37.5,37.0,8.6,8.3,32.2,42.9,31.9,42.0
+050506,Region V (Bicol Region),Albay,City of Legazpi,13.8,17.6,9.1,5.8,11.7,15.8,15.9,19.3
+050507,Region V (Bicol Region),Albay,Libon,37.4,33.3,6.9,6.1,33.1,41.6,29.9,36.6
+050508,Region V (Bicol Region),Albay,City of Ligao,23.1,24.7,6.9,6.0,20.4,25.7,22.3,27.2
+050509,Region V (Bicol Region),Albay,Malilipot,26.1,21.3,11.1,11.1,21.3,30.9,17.4,25.2
+050510,Region V (Bicol Region),Albay,Malinao,33.7,28.3,7.5,7.4,29.5,37.8,24.8,31.7
+050511,Region V (Bicol Region),Albay,Manito,37.2,29.0,9.3,11.6,31.5,42.9,23.4,34.5
+050512,Region V (Bicol Region),Albay,Oas,34.2,31.4,5.8,6.0,31.0,37.5,28.3,34.5
+050513,Region V (Bicol Region),Albay,Pio Duran,37.5,31.4,7.6,7.2,32.8,42.2,27.7,35.1
+050514,Region V (Bicol Region),Albay,Polangui,21.3,22.3,8.1,6.3,18.5,24.2,20.0,24.6
+050515,Region V (Bicol Region),Albay,Rapu-Rapu,42.7,38.8,6.2,7.2,38.3,47.1,34.2,43.4
+050516,Region V (Bicol Region),Albay,Santo Domingo,23.0,17.9,12.9,11.0,18.1,27.9,14.7,21.1
+050517,Region V (Bicol Region),Albay,City of Tabaco,19.8,20.2,9.5,7.6,16.7,22.9,17.7,22.7
+050518,Region V (Bicol Region),Albay,Tiwi,23.6,24.7,11.9,8.6,19.0,28.2,21.2,28.2
+051601,Region V (Bicol Region),Camarines Norte,Basud,22.4,21.8,11.0,8.0,18.3,26.4,18.9,24.7
+051602,Region V (Bicol Region),Camarines Norte,Capalonga,38.7,32.4,8.1,7.5,33.6,43.9,28.4,36.4
+051603,Region V (Bicol Region),Camarines Norte,Daet,14.7,12.5,13.7,10.2,11.4,18.1,10.4,14.5
+051604,Region V (Bicol Region),Camarines Norte,San Lorenzo Ruiz,31.6,20.7,15.5,13.6,23.5,39.7,16.1,25.3
+051605,Region V (Bicol Region),Camarines Norte,Jose Panganiban,34.5,26.4,8.5,7.4,29.7,39.3,23.2,29.6
+051606,Region V (Bicol Region),Camarines Norte,Labo,25.1,24.1,8.1,5.8,21.7,28.4,21.8,26.4
+051607,Region V (Bicol Region),Camarines Norte,Mercedes,36.9,22.4,9.1,8.9,31.3,42.4,19.1,25.7
+051608,Region V (Bicol Region),Camarines Norte,Paracale,37.6,28.6,8.7,7.7,32.2,43.0,25.0,32.2
+051609,Region V (Bicol Region),Camarines Norte,San Vicente,27.2,22.1,16.2,13.4,20.0,34.5,17.3,27.0
+051610,Region V (Bicol Region),Camarines Norte,Santa Elena,35.8,23.6,11.7,11.4,28.9,42.7,19.2,28.1
+051611,Region V (Bicol Region),Camarines Norte,Talisay,24.5,14.2,11.5,12.6,19.8,29.1,11.3,17.2
+051612,Region V (Bicol Region),Camarines Norte,Vinzons,24.3,27.2,12.9,10.3,19.2,29.5,22.6,31.8
+051701,Region V (Bicol Region),Camarines Sur,Baao,26.2,35.4,10.7,7.9,21.6,30.8,30.7,40.0
+051702,Region V (Bicol Region),Camarines Sur,Balatan,38.4,48.8,12.1,9.7,30.7,46.0,41.0,56.5
+051703,Region V (Bicol Region),Camarines Sur,Bato,30.9,37.3,9.5,7.9,26.0,35.7,32.5,42.1
+051704,Region V (Bicol Region),Camarines Sur,Bombon,23.8,34.4,17.2,12.8,17.0,30.5,27.1,41.6
+051705,Region V (Bicol Region),Camarines Sur,Buhi,29.8,36.8,8.8,6.8,25.5,34.2,32.6,40.9
+051706,Region V (Bicol Region),Camarines Sur,Bula,25.1,42.6,10.7,6.7,20.7,29.4,38.0,47.3
+051707,Region V (Bicol Region),Camarines Sur,Cabusao,28.1,39.4,17.2,13.1,20.1,36.0,31.0,47.9
+051708,Region V (Bicol Region),Camarines Sur,Calabanga,26.8,38.1,8.0,6.2,23.2,30.3,34.2,42.0
+051709,Region V (Bicol Region),Camarines Sur,Camaligan,17.4,23.1,15.9,14.5,12.9,22.0,17.6,28.6
+051710,Region V (Bicol Region),Camarines Sur,Canaman,13.9,29.3,13.2,9.1,10.9,17.0,24.9,33.7
+051711,Region V (Bicol Region),Camarines Sur,Caramoan,25.3,45.1,9.7,6.0,21.3,29.4,40.6,49.5
+051712,Region V (Bicol Region),Camarines Sur,Del Gallego,30.6,39.9,9.7,7.7,25.7,35.5,34.8,45.0
+051713,Region V (Bicol Region),Camarines Sur,Gainza,26.1,28.8,16.0,12.9,19.2,33.0,22.7,35.0
+051714,Region V (Bicol Region),Camarines Sur,Garchitorena,41.2,53.2,7.8,6.6,35.9,46.4,47.4,59.1
+051715,Region V (Bicol Region),Camarines Sur,Goa,28.6,36.0,9.4,6.9,24.2,33.0,32.0,40.1
+051716,Region V (Bicol Region),Camarines Sur,City of Iriga,13.6,28.4,12.8,8.9,10.8,16.5,24.3,32.6
+051717,Region V (Bicol Region),Camarines Sur,Lagonoy,30.1,37.7,8.0,7.1,26.1,34.0,33.3,42.2
+051718,Region V (Bicol Region),Camarines Sur,Libmanan,29.5,40.7,6.8,5.4,26.2,32.8,37.1,44.4
+051719,Region V (Bicol Region),Camarines Sur,Lupi,20.6,38.3,12.5,7.8,16.4,24.9,33.4,43.2
+051720,Region V (Bicol Region),Camarines Sur,Magarao,16.3,31.0,18.7,11.2,11.3,21.3,25.3,36.7
+051721,Region V (Bicol Region),Camarines Sur,Milaor,17.7,27.6,14.8,10.5,13.4,22.0,22.8,32.3
+051722,Region V (Bicol Region),Camarines Sur,Minalabac,32.2,40.5,9.6,7.9,27.1,37.3,35.3,45.8
+051723,Region V (Bicol Region),Camarines Sur,Nabua,15.5,32.8,12.6,6.7,12.3,18.7,29.2,36.4
+051724,Region V (Bicol Region),Camarines Sur,City of Naga,9.1,21.4,17.8,9.5,6.5,11.8,18.0,24.7
+051725,Region V (Bicol Region),Camarines Sur,Ocampo,31.0,38.8,8.8,6.5,26.5,35.5,34.7,43.0
+051726,Region V (Bicol Region),Camarines Sur,Pamplona,30.8,36.8,12.2,10.2,24.6,37.0,30.6,42.9
+051727,Region V (Bicol Region),Camarines Sur,Pasacao,32.8,44.9,11.6,6.5,26.5,39.0,40.1,49.7
+051728,Region V (Bicol Region),Camarines Sur,Pili,16.1,29.9,13.3,7.9,12.5,19.6,26.0,33.8
+051729,Region V (Bicol Region),Camarines Sur,Presentacion,38.0,48.0,10.9,9.0,31.2,44.9,40.9,55.1
+051730,Region V (Bicol Region),Camarines Sur,Ragay,30.4,40.6,9.6,6.3,25.6,35.2,36.4,44.9
+051731,Region V (Bicol Region),Camarines Sur,Sagñay,33.9,45.0,11.2,7.2,27.7,40.2,39.7,50.3
+051732,Region V (Bicol Region),Camarines Sur,San Fernando,28.0,33.5,10.9,8.3,23.0,33.1,29.0,38.1
+051733,Region V (Bicol Region),Camarines Sur,San Jose,24.9,33.8,9.4,7.6,21.1,28.8,29.5,38.0
+051734,Region V (Bicol Region),Camarines Sur,Sipocot,29.1,36.9,9.1,6.9,24.8,33.5,32.7,41.1
+051735,Region V (Bicol Region),Camarines Sur,Siruma,37.8,49.7,9.7,7.3,31.7,43.8,43.7,55.7
+051736,Region V (Bicol Region),Camarines Sur,Tigaon,28.7,40.2,9.2,7.0,24.4,33.0,35.6,44.9
+051737,Region V (Bicol Region),Camarines Sur,Tinambac,36.8,47.7,7.4,6.0,32.3,41.2,43.0,52.4
+052001,Region V (Bicol Region),Catanduanes,Bagamanoc,22.7,30.0,14.4,7.9,17.3,28.1,26.1,33.9
+052002,Region V (Bicol Region),Catanduanes,Baras,25.7,20.5,10.6,10.0,21.2,30.1,17.1,23.9
+052003,Region V (Bicol Region),Catanduanes,Bato,14.6,18.3,16.0,10.5,10.7,18.4,15.2,21.5
+052004,Region V (Bicol Region),Catanduanes,Caramoran,34.9,32.4,9.1,6.4,29.6,40.1,29.0,35.8
+052005,Region V (Bicol Region),Catanduanes,Gigmoto,27.1,25.4,13.6,12.2,21.0,33.2,20.3,30.5
+052006,Region V (Bicol Region),Catanduanes,Pandan,22.8,32.7,11.8,6.4,18.3,27.2,29.2,36.1
+052007,Region V (Bicol Region),Catanduanes,Panganiban,21.9,25.3,13.7,8.9,17.0,26.9,21.6,29.1
+052008,Region V (Bicol Region),Catanduanes,San Andres,25.5,24.4,10.0,6.0,21.3,29.7,22.0,26.8
+052009,Region V (Bicol Region),Catanduanes,San Miguel,26.7,29.1,12.2,7.7,21.4,32.1,25.4,32.8
+052010,Region V (Bicol Region),Catanduanes,Viga,29.1,33.4,8.6,6.2,24.9,33.2,29.9,36.8
+052011,Region V (Bicol Region),Catanduanes,Virac,11.2,15.1,11.3,5.8,9.1,13.2,13.6,16.5
+054101,Region V (Bicol Region),Masbate,Aroroy,37.3,29.9,7.1,6.2,32.9,41.6,26.9,33.0
+054102,Region V (Bicol Region),Masbate,Baleno,33.1,24.2,9.1,9.1,28.1,38.0,20.6,27.8
+054103,Region V (Bicol Region),Masbate,Balud,31.7,28.5,8.3,8.6,27.4,36.1,24.4,32.5
+054104,Region V (Bicol Region),Masbate,Batuan,29.3,25.6,11.6,12.0,23.7,34.9,20.6,30.7
+054105,Region V (Bicol Region),Masbate,Cataingan,23.4,23.4,10.1,7.9,19.5,27.3,20.4,26.5
+054106,Region V (Bicol Region),Masbate,Cawayan,24.3,27.6,9.9,8.8,20.3,28.2,23.6,31.7
+054107,Region V (Bicol Region),Masbate,Claveria,36.3,33.5,9.9,8.1,30.4,42.3,29.1,38.0
+054108,Region V (Bicol Region),Masbate,Dimasalang,33.9,25.0,10.4,10.1,28.2,39.7,20.8,29.2
+054109,Region V (Bicol Region),Masbate,Esperanza,31.7,25.7,9.5,8.7,26.7,36.6,22.1,29.4
+054110,Region V (Bicol Region),Masbate,Mandaon,32.4,25.4,9.3,9.0,27.4,37.3,21.6,29.2
+054111,Region V (Bicol Region),Masbate,City of Masbate,19.6,15.9,11.2,11.2,16.0,23.2,13.0,18.9
+054112,Region V (Bicol Region),Masbate,Milagros,36.4,28.6,7.6,7.8,31.8,40.9,24.9,32.3
+054113,Region V (Bicol Region),Masbate,Mobo,24.7,23.2,10.3,8.5,20.5,28.8,19.9,26.4
+054114,Region V (Bicol Region),Masbate,Monreal,39.8,30.5,10.3,8.0,33.0,46.5,26.5,34.5
+054115,Region V (Bicol Region),Masbate,Palanas,30.5,26.6,10.0,7.0,25.5,35.5,23.5,29.6
+054116,Region V (Bicol Region),Masbate,Pio V. Corpuz,29.7,22.0,10.4,10.5,24.7,34.8,18.2,25.9
+054117,Region V (Bicol Region),Masbate,Placer,33.1,29.9,7.6,7.1,29.0,37.2,26.4,33.4
+054118,Region V (Bicol Region),Masbate,San Fernando,27.2,23.3,9.8,8.3,22.8,31.6,20.1,26.5
+054119,Region V (Bicol Region),Masbate,San Jacinto,27.1,22.8,10.9,7.9,22.2,31.9,19.8,25.8
+054120,Region V (Bicol Region),Masbate,San Pascual,38.2,34.4,9.7,8.3,32.1,44.3,29.7,39.1
+054121,Region V (Bicol Region),Masbate,Uson,36.5,27.4,7.9,7.0,31.7,41.2,24.2,30.5
+056202,Region V (Bicol Region),Sorsogon,Barcelona,28.4,21.1,9.2,9.0,24.0,32.7,18.0,24.3
+056203,Region V (Bicol Region),Sorsogon,Bulan,29.5,27.4,6.8,5.8,26.2,32.8,24.8,30.1
+056204,Region V (Bicol Region),Sorsogon,Bulusan,29.0,20.7,9.4,10.1,24.5,33.5,17.2,24.1
+056205,Region V (Bicol Region),Sorsogon,Casiguran,30.6,24.8,9.2,9.5,26.0,35.2,20.9,28.7
+056206,Region V (Bicol Region),Sorsogon,Castilla,35.4,31.6,8.6,8.2,30.4,40.4,27.3,35.8
+056207,Region V (Bicol Region),Sorsogon,Donsol,37.1,37.5,7.4,6.2,32.6,41.6,33.7,41.3
+056208,Region V (Bicol Region),Sorsogon,Gubat,26.4,22.1,8.2,8.4,22.8,29.9,19.0,25.1
+056209,Region V (Bicol Region),Sorsogon,Irosin,32.6,26.4,8.2,7.7,28.3,37.0,23.1,29.8
+056210,Region V (Bicol Region),Sorsogon,Juban,35.7,31.0,9.2,6.4,30.3,41.2,27.8,34.3
+056211,Region V (Bicol Region),Sorsogon,Magallanes,35.9,33.5,8.6,6.9,30.8,41.0,29.7,37.3
+056212,Region V (Bicol Region),Sorsogon,Matnog,37.1,33.0,6.8,7.5,33.0,41.3,28.9,37.0
+056213,Region V (Bicol Region),Sorsogon,Pilar,37.1,32.5,6.4,5.8,33.2,41.0,29.4,35.6
+056214,Region V (Bicol Region),Sorsogon,Prieto Diaz,34.0,29.1,9.5,7.9,28.7,39.3,25.3,32.9
+056215,Region V (Bicol Region),Sorsogon,Santa Magdalena,32.8,28.4,12.2,11.3,26.2,39.3,23.1,33.7
+056216,Region V (Bicol Region),Sorsogon,City of Sorsogon,18.1,20.6,9.7,6.6,15.2,21.0,18.3,22.8
+060401,Region VI (Western Visayas),Aklan,Altavas,14.6,21.7,13.9,11.6,11.3,18.0,17.5,25.8
+060402,Region VI (Western Visayas),Aklan,Balete,17.3,26.8,15.6,13.4,12.8,21.7,20.9,32.7
+060403,Region VI (Western Visayas),Aklan,Banga,10.6,14.7,12.1,10.7,8.5,12.7,12.1,17.3
+060404,Region VI (Western Visayas),Aklan,Batan,14.7,22.8,13.1,10.1,11.5,17.8,19.0,26.5
+060405,Region VI (Western Visayas),Aklan,Buruanga,16.4,24.2,17.5,11.8,11.7,21.1,19.5,28.9
+060406,Region VI (Western Visayas),Aklan,Ibajay,13.9,19.0,11.6,9.5,11.3,16.6,16.0,22.0
+060407,Region VI (Western Visayas),Aklan,Kalibo,6.9,9.8,19.6,8.8,4.7,9.1,8.4,11.2
+060408,Region VI (Western Visayas),Aklan,Lezo,9.9,15.9,18.2,14.6,6.9,12.8,12.1,19.7
+060409,Region VI (Western Visayas),Aklan,Libacao,25.7,35.4,10.3,7.8,21.3,30.0,30.8,39.9
+060410,Region VI (Western Visayas),Aklan,Madalag,21.7,34.2,12.0,6.6,17.4,26.0,30.5,37.9
+060411,Region VI (Western Visayas),Aklan,Makato,14.0,20.2,14.5,8.8,10.7,17.4,17.3,23.1
+060412,Region VI (Western Visayas),Aklan,Malay,13.4,16.4,24.3,11.4,8.0,18.7,13.3,19.5
+060413,Region VI (Western Visayas),Aklan,Malinao,14.6,24.3,13.2,8.8,11.4,17.8,20.8,27.8
+060414,Region VI (Western Visayas),Aklan,Nabas,16.9,20.9,11.9,9.6,13.6,20.2,17.6,24.2
+060415,Region VI (Western Visayas),Aklan,New Washington,11.4,13.4,16.0,12.7,8.4,14.3,10.6,16.2
+060416,Region VI (Western Visayas),Aklan,Numancia,6.6,11.0,19.5,15.5,4.5,8.7,8.2,13.8
+060417,Region VI (Western Visayas),Aklan,Tangalan,15.3,18.6,17.5,13.0,10.9,19.7,14.6,22.6
+060601,Region VI (Western Visayas),Antique,Anini-Y,18.8,22.1,10.8,10.3,15.4,22.1,18.3,25.9
+060602,Region VI (Western Visayas),Antique,Barbaza,19.9,22.2,11.0,8.1,16.3,23.5,19.2,25.1
+060603,Region VI (Western Visayas),Antique,Belison,13.2,13.9,19.9,12.5,8.9,17.5,11.0,16.8
+060604,Region VI (Western Visayas),Antique,Bugasong,19.9,27.2,9.6,7.5,16.8,23.1,23.9,30.6
+060605,Region VI (Western Visayas),Antique,Caluya,30.3,27.9,14.8,15.3,22.9,37.6,20.9,34.9
+060606,Region VI (Western Visayas),Antique,Culasi,22.6,24.4,9.3,8.0,19.1,26.1,21.2,27.6
+060607,Region VI (Western Visayas),Antique,Tobias Fornier,22.5,25.7,9.1,6.2,19.1,25.8,23.1,28.3
+060608,Region VI (Western Visayas),Antique,Hamtic,18.5,18.5,9.5,7.3,15.6,21.3,16.3,20.8
+060609,Region VI (Western Visayas),Antique,Laua-an,21.9,25.8,8.4,8.2,18.9,24.9,22.4,29.3
+060610,Region VI (Western Visayas),Antique,Libertad,19.7,25.2,14.2,9.5,15.1,24.3,21.2,29.1
+060611,Region VI (Western Visayas),Antique,Pandan,18.7,18.8,11.1,9.6,15.3,22.1,15.9,21.8
+060612,Region VI (Western Visayas),Antique,Patnongon,21.9,24.8,9.6,8.9,18.5,25.4,21.1,28.4
+060613,Region VI (Western Visayas),Antique,San Jose,10.4,8.2,14.8,13.8,7.8,12.9,6.3,10.1
+060614,Region VI (Western Visayas),Antique,San Remigio,33.1,40.7,7.0,5.9,29.3,36.9,36.8,44.7
+060615,Region VI (Western Visayas),Antique,Sebaste,21.2,19.9,15.1,15.2,15.9,26.4,14.9,24.9
+060616,Region VI (Western Visayas),Antique,Sibalom,17.7,19.6,8.4,7.4,15.2,20.1,17.2,22.0
+060617,Region VI (Western Visayas),Antique,Tibiao,20.7,31.3,11.2,8.3,16.9,24.5,27.0,35.6
+060618,Region VI (Western Visayas),Antique,Valderrama,42.6,32.9,9.6,9.5,35.9,49.3,27.8,38.1
+061901,Region VI (Western Visayas),Capiz,Cuartero,6.4,16.5,23.3,9.1,3.9,8.8,14.0,18.9
+061902,Region VI (Western Visayas),Capiz,Dao,6.6,13.3,26.9,12.8,3.7,9.5,10.5,16.1
+061903,Region VI (Western Visayas),Capiz,Dumalag,4.1,12.9,32.1,16.5,2.0,6.3,9.4,16.4
+061904,Region VI (Western Visayas),Capiz,Dumarao,8.2,21.2,19.4,10.5,5.6,10.8,17.6,24.9
+061905,Region VI (Western Visayas),Capiz,Ivisan,6.4,15.8,26.4,11.6,3.6,9.1,12.8,18.9
+061906,Region VI (Western Visayas),Capiz,Jamindan,12.8,20.7,15.3,11.1,9.6,16.0,16.9,24.5
+061907,Region VI (Western Visayas),Capiz,Ma-ayon,10.4,18.9,16.1,10.0,7.6,13.1,15.8,22.0
+061908,Region VI (Western Visayas),Capiz,Mambusao,4.8,14.2,26.5,10.8,2.7,6.9,11.7,16.7
+061909,Region VI (Western Visayas),Capiz,Panay,6.2,13.3,20.1,11.8,4.1,8.2,10.7,15.9
+061910,Region VI (Western Visayas),Capiz,Panitan,4.8,10.9,26.0,12.7,2.7,6.9,8.6,13.2
+061911,Region VI (Western Visayas),Capiz,Pilar,8.9,20.6,18.8,10.8,6.1,11.6,17.0,24.3
+061912,Region VI (Western Visayas),Capiz,Pontevedra,6.1,15.7,23.8,12.6,3.7,8.4,12.5,19.0
+061913,Region VI (Western Visayas),Capiz,President Roxas,6.9,15.2,25.5,12.4,4.0,9.8,12.1,18.3
+061914,Region VI (Western Visayas),Capiz,City of Roxas,7.3,9.5,22.7,10.7,4.6,10.1,7.8,11.2
+061915,Region VI (Western Visayas),Capiz,Sapi-An,9.0,24.5,27.0,10.8,5.0,12.9,20.1,28.8
+061916,Region VI (Western Visayas),Capiz,Sigma,6.4,14.7,24.8,15.2,3.8,9.0,11.0,18.3
+061917,Region VI (Western Visayas),Capiz,Tapaz,12.4,23.2,13.1,8.1,9.8,15.1,20.1,26.3
+063001,Region VI (Western Visayas),Iloilo,Ajuy,23.1,26.2,7.7,9.1,20.2,26.0,22.3,30.1
+063002,Region VI (Western Visayas),Iloilo,Alimodian,23.7,21.9,7.6,8.3,20.7,26.7,18.9,24.8
+063003,Region VI (Western Visayas),Iloilo,Anilao,22.6,27.3,9.8,9.9,19.0,26.3,22.9,31.7
+063004,Region VI (Western Visayas),Iloilo,Badiangan,16.0,20.6,10.0,11.0,13.3,18.6,16.9,24.3
+063005,Region VI (Western Visayas),Iloilo,Balasan,20.7,24.2,9.5,10.2,17.5,24.0,20.2,28.3
+063006,Region VI (Western Visayas),Iloilo,Banate,18.8,21.4,11.2,11.2,15.3,22.3,17.5,25.3
+063007,Region VI (Western Visayas),Iloilo,Barotac Nuevo,15.7,18.6,9.1,7.9,13.3,18.0,16.2,21.0
+063008,Region VI (Western Visayas),Iloilo,Barotac Viejo,19.5,23.2,10.8,9.5,16.0,23.0,19.6,26.9
+063009,Region VI (Western Visayas),Iloilo,Batad,23.8,27.0,11.7,10.7,19.2,28.3,22.2,31.8
+063010,Region VI (Western Visayas),Iloilo,Bingawan,22.4,26.0,14.5,13.3,17.0,27.7,20.3,31.6
+063012,Region VI (Western Visayas),Iloilo,Cabatuan,13.5,14.0,8.2,6.8,11.7,15.3,12.4,15.5
+063013,Region VI (Western Visayas),Iloilo,Calinog,27.0,26.8,7.3,6.7,23.8,30.2,23.8,29.7
+063014,Region VI (Western Visayas),Iloilo,Carles,35.8,35.9,7.6,8.4,31.3,40.3,30.9,40.8
+063015,Region VI (Western Visayas),Iloilo,Concepcion,29.2,32.5,9.7,10.8,24.5,33.9,26.7,38.3
+063016,Region VI (Western Visayas),Iloilo,Dingle,17.5,17.1,10.1,9.7,14.6,20.4,14.4,19.9
+063017,Region VI (Western Visayas),Iloilo,Dueñas,20.5,20.6,7.0,8.3,18.2,22.9,17.7,23.4
+063018,Region VI (Western Visayas),Iloilo,Dumangas,14.1,16.2,9.7,8.3,11.9,16.4,14.0,18.4
+063019,Region VI (Western Visayas),Iloilo,Estancia,22.8,23.0,9.7,10.9,19.2,26.4,18.9,27.2
+063020,Region VI (Western Visayas),Iloilo,Guimbal,11.5,11.9,11.3,10.3,9.3,13.6,9.9,13.9
+063021,Region VI (Western Visayas),Iloilo,Igbaras,25.5,25.7,9.0,7.3,21.7,29.2,22.6,28.8
+063023,Region VI (Western Visayas),Iloilo,Janiuay,21.6,22.7,7.5,6.6,19.0,24.3,20.2,25.1
+063025,Region VI (Western Visayas),Iloilo,Lambunao,22.0,24.8,6.2,5.8,19.7,24.2,22.5,27.2
+063026,Region VI (Western Visayas),Iloilo,Leganes,12.4,10.6,14.0,14.9,9.5,15.3,8.0,13.2
+063027,Region VI (Western Visayas),Iloilo,Lemery,19.8,27.9,9.0,8.7,16.9,22.7,23.9,31.9
+063028,Region VI (Western Visayas),Iloilo,Leon,22.1,22.3,7.2,7.6,19.5,24.7,19.5,25.0
+063029,Region VI (Western Visayas),Iloilo,Maasin,20.9,22.4,7.9,7.2,18.2,23.6,19.7,25.0
+063030,Region VI (Western Visayas),Iloilo,Miag-ao,17.4,16.2,6.5,6.1,15.6,19.3,14.6,17.8
+063031,Region VI (Western Visayas),Iloilo,Mina,16.1,16.7,11.5,12.5,13.0,19.1,13.3,20.1
+063032,Region VI (Western Visayas),Iloilo,New Lucena,12.0,12.8,15.4,12.8,9.0,15.1,10.1,15.5
+063034,Region VI (Western Visayas),Iloilo,Oton,11.7,9.5,11.5,10.6,9.5,13.9,7.9,11.2
+063035,Region VI (Western Visayas),Iloilo,City of Passi,21.1,23.0,7.2,7.9,18.6,23.6,20.0,26.0
+063036,Region VI (Western Visayas),Iloilo,Pavia,7.8,4.3,16.0,21.1,5.8,9.9,2.8,5.8
+063037,Region VI (Western Visayas),Iloilo,Pototan,15.4,15.0,7.6,8.6,13.4,17.3,12.9,17.1
+063038,Region VI (Western Visayas),Iloilo,San Dionisio,26.7,30.0,8.9,8.6,22.8,30.7,25.7,34.2
+063039,Region VI (Western Visayas),Iloilo,San Enrique,22.2,22.6,9.7,10.0,18.7,25.7,18.8,26.3
+063040,Region VI (Western Visayas),Iloilo,San Joaquin,26.2,27.8,7.3,6.3,23.0,29.3,24.9,30.7
+063041,Region VI (Western Visayas),Iloilo,San Miguel,14.0,12.1,13.7,14.7,10.9,17.1,9.1,15.0
+063042,Region VI (Western Visayas),Iloilo,San Rafael,21.3,25.0,15.3,13.0,15.9,26.7,19.7,30.4
+063043,Region VI (Western Visayas),Iloilo,Santa Barbara,11.4,11.0,9.7,10.0,9.6,13.2,9.2,12.8
+063044,Region VI (Western Visayas),Iloilo,Sara,19.8,24.6,8.0,7.5,17.2,22.4,21.6,27.7
+063045,Region VI (Western Visayas),Iloilo,Tigbauan,15.6,17.2,8.7,7.3,13.4,17.8,15.1,19.3
+063046,Region VI (Western Visayas),Iloilo,Tubungan,25.4,24.5,9.1,6.3,21.6,29.2,21.9,27.0
+063047,Region VI (Western Visayas),Iloilo,Zarraga,10.8,11.5,13.7,11.6,8.4,13.3,9.3,13.7
+064502,Region VI (Western Visayas),Negros Occidental,City of Bago,13.0,20.6,15.4,9.0,9.7,16.3,17.6,23.6
+064503,Region VI (Western Visayas),Negros Occidental,Binalbagan,16.4,23.6,16.5,11.4,12.0,20.9,19.2,28.1
+064504,Region VI (Western Visayas),Negros Occidental,City of Cadiz,24.9,22.9,10.5,10.8,20.6,29.1,18.8,26.9
+064505,Region VI (Western Visayas),Negros Occidental,Calatrava,34.0,32.0,10.4,8.4,28.1,39.8,27.6,36.4
+064506,Region VI (Western Visayas),Negros Occidental,Candoni,24.8,30.3,16.6,13.8,18.0,31.6,23.5,37.2
+064507,Region VI (Western Visayas),Negros Occidental,Cauayan,27.3,35.6,9.4,7.6,23.0,31.5,31.2,40.1
+064508,Region VI (Western Visayas),Negros Occidental,Enrique B. Magalona,21.6,18.0,13.3,7.8,16.9,26.3,15.7,20.3
+064509,Region VI (Western Visayas),Negros Occidental,City of Escalante,25.3,24.0,13.2,10.4,19.8,30.8,19.9,28.2
+064510,Region VI (Western Visayas),Negros Occidental,City of Himamaylan,24.0,25.4,11.4,10.2,19.5,28.4,21.2,29.7
+064511,Region VI (Western Visayas),Negros Occidental,Hinigaran,19.4,19.6,14.4,8.8,14.8,23.9,16.8,22.5
+064512,Region VI (Western Visayas),Negros Occidental,Hinoba-An (Asia),24.6,32.3,14.5,11.1,18.8,30.5,26.4,38.3
+064513,Region VI (Western Visayas),Negros Occidental,Ilog,16.9,28.2,14.6,11.2,12.8,21.0,23.0,33.4
+064514,Region VI (Western Visayas),Negros Occidental,Isabela,28.0,24.0,10.9,10.4,23.0,33.0,19.9,28.0
+064515,Region VI (Western Visayas),Negros Occidental,City of Kabankalan,28.6,27.4,11.1,7.9,23.4,33.8,23.9,31.0
+064516,Region VI (Western Visayas),Negros Occidental,City of La Carlota,12.4,13.5,17.3,16.1,8.8,15.9,9.9,17.1
+064517,Region VI (Western Visayas),Negros Occidental,La Castellana,27.0,26.4,16.0,8.5,19.9,34.1,22.7,30.2
+064518,Region VI (Western Visayas),Negros Occidental,Manapla,24.0,22.1,15.8,15.3,17.7,30.2,16.6,27.7
+064519,Region VI (Western Visayas),Negros Occidental,Moises Padilla (Magallon),32.3,33.1,11.6,11.6,26.1,38.5,26.8,39.4
+064520,Region VI (Western Visayas),Negros Occidental,Murcia,21.3,23.0,15.5,9.3,15.9,26.7,19.4,26.5
+064521,Region VI (Western Visayas),Negros Occidental,Pontevedra,12.5,19.2,14.6,14.1,9.5,15.5,14.7,23.6
+064522,Region VI (Western Visayas),Negros Occidental,Pulupandan,7.7,13.4,18.6,13.9,5.4,10.1,10.4,16.5
+064523,Region VI (Western Visayas),Negros Occidental,City of Sagay,24.1,22.9,11.4,9.2,19.6,28.6,19.4,26.4
+064524,Region VI (Western Visayas),Negros Occidental,City of San Carlos,28.1,29.8,14.2,9.4,21.5,34.6,25.1,34.4
+064525,Region VI (Western Visayas),Negros Occidental,San Enrique,10.4,12.6,24.7,23.2,6.2,14.6,7.8,17.5
+064526,Region VI (Western Visayas),Negros Occidental,City of Silay,17.6,16.3,16.1,12.7,12.9,22.3,12.9,19.7
+064527,Region VI (Western Visayas),Negros Occidental,City of Sipalay,23.5,30.7,14.5,10.6,17.9,29.1,25.4,36.1
+064528,Region VI (Western Visayas),Negros Occidental,City of Talisay,3.5,10.9,34.4,12.7,1.5,5.5,8.6,13.2
+064529,Region VI (Western Visayas),Negros Occidental,Toboso,20.3,28.7,20.9,13.9,13.3,27.2,22.1,35.2
+064530,Region VI (Western Visayas),Negros Occidental,Valladolid,10.3,15.8,18.9,11.3,7.1,13.5,12.9,18.8
+064531,Region VI (Western Visayas),Negros Occidental,City of Victorias,12.9,16.6,17.0,10.9,9.3,16.5,13.6,19.5
+064532,Region VI (Western Visayas),Negros Occidental,Salvador Benedicto,32.4,38.3,16.4,13.4,23.7,41.1,29.8,46.7
+067901,Region VI (Western Visayas),Guimaras,Buenavista,7.0,14.4,18.3,8.9,4.9,9.1,12.3,16.5
+067902,Region VI (Western Visayas),Guimaras,Jordan,10.3,14.6,21.0,12.3,6.8,13.9,11.7,17.6
+067903,Region VI (Western Visayas),Guimaras,Nueva Valencia,15.2,17.0,16.0,10.0,11.2,19.2,14.2,19.8
+067904,Region VI (Western Visayas),Guimaras,San Lorenzo,15.9,14.6,22.7,11.3,10.0,21.8,11.9,17.3
+067905,Region VI (Western Visayas),Guimaras,Sibunag,14.6,20.0,18.9,14.3,10.1,19.1,15.3,24.6
+071201,Region VII (Central Visayas),Bohol,Alburquerque,10.4,16.9,17.3,17.8,7.4,13.4,12.0,21.9
+071202,Region VII (Central Visayas),Bohol,Alicia,27.6,30.3,11.9,12.5,22.2,33.0,24.1,36.5
+071203,Region VII (Central Visayas),Bohol,Anda,25.4,26.1,11.2,10.4,20.6,30.2,21.6,30.5
+071204,Region VII (Central Visayas),Bohol,Antequera,15.6,18.3,14.0,10.8,12.0,19.2,15.1,21.6
+071205,Region VII (Central Visayas),Bohol,Baclayon,11.2,12.0,14.2,18.9,8.6,13.8,8.3,15.7
+071206,Region VII (Central Visayas),Bohol,Balilihan,20.5,23.0,9.2,9.1,17.4,23.6,19.6,26.5
+071207,Region VII (Central Visayas),Bohol,Batuan,23.3,30.5,10.6,10.1,19.2,27.4,25.4,35.6
+071208,Region VII (Central Visayas),Bohol,Bilar,20.1,23.4,10.8,12.1,16.5,23.7,18.7,28.0
+071209,Region VII (Central Visayas),Bohol,Buenavista,32.6,32.3,7.8,7.3,28.5,36.7,28.4,36.2
+071210,Region VII (Central Visayas),Bohol,Calape,17.4,22.2,8.4,9.4,14.9,19.9,18.8,25.7
+071211,Region VII (Central Visayas),Bohol,Candijay,21.4,25.6,10.4,10.6,17.8,25.0,21.1,30.0
+071212,Region VII (Central Visayas),Bohol,Carmen,25.0,31.9,9.2,7.4,21.2,28.8,28.0,35.9
+071213,Region VII (Central Visayas),Bohol,Catigbian,23.0,27.5,10.6,10.4,19.1,27.0,22.8,32.2
+071214,Region VII (Central Visayas),Bohol,Clarin,17.4,23.2,11.5,9.3,14.1,20.7,19.7,26.7
+071215,Region VII (Central Visayas),Bohol,Corella,10.1,12.9,21.4,21.8,6.5,13.7,8.3,17.6
+071216,Region VII (Central Visayas),Bohol,Cortes,12.5,14.5,14.4,15.5,9.5,15.5,10.8,18.2
+071217,Region VII (Central Visayas),Bohol,Dagohoy,27.5,31.8,11.7,10.3,22.2,32.8,26.5,37.2
+071218,Region VII (Central Visayas),Bohol,Danao,29.2,33.6,8.9,9.6,24.9,33.5,28.3,38.9
+071219,Region VII (Central Visayas),Bohol,Dauis,10.8,14.0,17.5,17.8,7.7,13.9,9.9,18.1
+071220,Region VII (Central Visayas),Bohol,Dimiao,22.2,22.6,8.7,9.1,19.1,25.3,19.2,26.0
+071221,Region VII (Central Visayas),Bohol,Duero,21.6,23.2,9.5,12.8,18.2,25.1,18.3,28.1
+071222,Region VII (Central Visayas),Bohol,Garcia Hernandez,17.6,22.2,10.3,9.5,14.6,20.6,18.7,25.7
+071223,Region VII (Central Visayas),Bohol,Guindulman,23.2,24.0,9.4,11.3,19.6,26.8,19.6,28.5
+071224,Region VII (Central Visayas),Bohol,Inabanga,25.4,29.9,7.2,7.2,22.4,28.4,26.4,33.5
+071225,Region VII (Central Visayas),Bohol,Jagna,17.9,20.8,9.3,10.3,15.1,20.7,17.3,24.3
+071226,Region VII (Central Visayas),Bohol,Jetafe,33.9,37.6,7.1,7.6,30.0,37.9,32.9,42.2
+071227,Region VII (Central Visayas),Bohol,Lila,17.9,17.9,12.2,14.2,14.3,21.5,13.7,22.1
+071228,Region VII (Central Visayas),Bohol,Loay,10.4,16.5,13.5,11.9,8.1,12.7,13.3,19.8
+071229,Region VII (Central Visayas),Bohol,Loboc,12.8,18.3,12.9,11.5,10.0,15.6,14.8,21.8
+071230,Region VII (Central Visayas),Bohol,Loon,17.8,21.1,6.8,8.6,15.8,19.8,18.1,24.1
+071231,Region VII (Central Visayas),Bohol,Mabini,26.9,28.9,9.6,7.5,22.6,31.2,25.4,32.5
+071232,Region VII (Central Visayas),Bohol,Maribojoc,10.8,15.0,14.0,11.9,8.3,13.3,12.1,18.0
+071233,Region VII (Central Visayas),Bohol,Panglao,12.6,16.8,18.3,16.9,8.8,16.4,12.1,21.4
+071234,Region VII (Central Visayas),Bohol,Pilar,31.3,34.4,9.2,9.1,26.5,36.1,29.2,39.5
+071235,Region VII (Central Visayas),Bohol,Pres. Carlos P. Garcia,36.5,36.8,7.9,9.1,31.7,41.3,31.3,42.3
+071236,Region VII (Central Visayas),Bohol,Sagbayan,21.5,25.0,9.1,11.1,18.2,24.8,20.5,29.6
+071237,Region VII (Central Visayas),Bohol,San Isidro,25.8,26.9,12.1,14.3,20.7,30.9,20.6,33.3
+071238,Region VII (Central Visayas),Bohol,San Miguel,27.1,32.1,9.5,10.1,22.8,31.4,26.7,37.4
+071239,Region VII (Central Visayas),Bohol,Sevilla,22.1,27.1,12.6,10.8,17.5,26.7,22.2,31.9
+071240,Region VII (Central Visayas),Bohol,Sierra Bullones,27.3,33.6,8.4,9.3,23.5,31.1,28.5,38.8
+071241,Region VII (Central Visayas),Bohol,Sikatuna,15.6,16.8,17.1,17.1,11.2,20.0,12.1,21.5
+071242,Region VII (Central Visayas),Bohol,City of Tagbilaran,3.4,10.5,22.9,15.2,2.1,4.7,7.8,13.1
+071243,Region VII (Central Visayas),Bohol,Talibon,26.5,29.5,6.9,8.0,23.5,29.5,25.6,33.4
+071244,Region VII (Central Visayas),Bohol,Trinidad,25.2,31.4,9.0,9.7,21.4,29.0,26.4,36.3
+071245,Region VII (Central Visayas),Bohol,Tubigon,16.3,23.4,9.9,7.6,13.7,18.9,20.4,26.3
+071246,Region VII (Central Visayas),Bohol,Ubay,25.7,30.6,7.0,6.9,22.7,28.7,27.2,34.1
+071247,Region VII (Central Visayas),Bohol,Valencia,22.0,24.9,6.5,8.6,19.7,24.3,21.4,28.5
+071248,Region VII (Central Visayas),Bohol,Bien Unido,32.0,38.7,9.5,8.4,27.1,36.9,33.4,44.1
+072201,Region VII (Central Visayas),Cebu,Alcantara,22.3,35.8,15.3,12.2,16.7,27.9,28.6,43.0
+072202,Region VII (Central Visayas),Cebu,Alcoy,22.9,46.3,15.8,12.8,17.0,28.8,36.6,56.1
+072203,Region VII (Central Visayas),Cebu,Alegria,23.2,45.3,14.2,9.1,17.8,28.6,38.5,52.1
+072204,Region VII (Central Visayas),Cebu,Aloguinsan,22.7,39.2,12.2,10.8,18.1,27.3,32.3,46.2
+072205,Region VII (Central Visayas),Cebu,Argao,15.9,35.0,8.4,6.5,13.8,18.0,31.3,38.7
+072206,Region VII (Central Visayas),Cebu,Asturias,26.0,42.5,9.6,7.4,21.9,30.1,37.3,47.7
+072207,Region VII (Central Visayas),Cebu,Badian,26.5,43.2,8.1,6.7,22.9,30.1,38.4,48.0
+072208,Region VII (Central Visayas),Cebu,Balamban,18.9,34.0,11.2,8.6,15.5,22.4,29.2,38.8
+072209,Region VII (Central Visayas),Cebu,Bantayan,23.5,41.3,9.0,7.8,20.1,27.0,36.0,46.6
+072210,Region VII (Central Visayas),Cebu,Barili,23.5,38.2,6.9,5.2,20.9,26.1,34.9,41.5
+072211,Region VII (Central Visayas),Cebu,City of Bogo,13.1,27.6,12.1,9.0,10.5,15.7,23.5,31.7
+072212,Region VII (Central Visayas),Cebu,Boljoon,23.3,47.1,12.9,9.2,18.4,28.2,39.9,54.2
+072213,Region VII (Central Visayas),Cebu,Borbon,20.7,39.8,11.1,7.6,16.9,24.5,34.8,44.8
+072214,Region VII (Central Visayas),Cebu,City of Carcar,13.8,30.7,14.5,11.2,10.5,17.1,25.1,36.4
+072215,Region VII (Central Visayas),Cebu,Carmen,14.1,29.3,11.0,9.9,11.5,16.7,24.5,34.1
+072216,Region VII (Central Visayas),Cebu,Catmon,16.1,35.4,12.0,9.1,13.0,19.2,30.1,40.7
+072218,Region VII (Central Visayas),Cebu,Compostela,12.4,24.8,10.9,11.8,10.1,14.7,20.0,29.6
+072219,Region VII (Central Visayas),Cebu,Consolacion,6.6,18.7,19.3,11.0,4.5,8.7,15.3,22.1
+072220,Region VII (Central Visayas),Cebu,Cordova,9.0,23.0,18.7,14.0,6.2,11.8,17.7,28.3
+072221,Region VII (Central Visayas),Cebu,Daanbantayan,17.8,35.8,11.3,8.1,14.5,21.1,31.0,40.6
+072222,Region VII (Central Visayas),Cebu,Dalaguete,25.2,45.0,7.5,6.3,22.1,28.3,40.4,49.7
+072223,Region VII (Central Visayas),Cebu,Danao City,14.3,29.6,7.8,8.3,12.5,16.1,25.6,33.6
+072224,Region VII (Central Visayas),Cebu,Dumanjug,22.3,37.9,7.5,8.0,19.5,25.1,32.9,42.9
+072225,Region VII (Central Visayas),Cebu,Ginatilan,19.8,41.7,13.8,10.1,15.4,24.2,34.8,48.7
+072227,Region VII (Central Visayas),Cebu,Liloan,7.2,18.8,19.3,16.8,4.9,9.5,13.6,24.0
+072228,Region VII (Central Visayas),Cebu,Madridejos,19.5,34.4,12.6,9.3,15.4,23.6,29.1,39.7
+072229,Region VII (Central Visayas),Cebu,Malabuyoc,27.0,50.4,10.9,8.6,22.2,31.8,43.3,57.5
+072231,Region VII (Central Visayas),Cebu,Medellin,20.2,39.1,9.7,8.4,16.9,23.5,33.7,44.5
+072232,Region VII (Central Visayas),Cebu,Minglanilla,7.7,17.5,17.3,11.7,5.6,9.8,14.1,20.9
+072233,Region VII (Central Visayas),Cebu,Moalboal,16.9,33.5,14.1,11.4,13.0,20.9,27.2,39.7
+072234,Region VII (Central Visayas),Cebu,City of Naga,15.3,26.0,10.4,7.9,12.7,17.9,22.6,29.4
+072235,Region VII (Central Visayas),Cebu,Oslob,22.6,42.8,9.2,8.0,19.2,26.1,37.2,48.4
+072236,Region VII (Central Visayas),Cebu,Pilar,23.5,45.3,13.2,9.8,18.4,28.6,38.0,52.7
+072237,Region VII (Central Visayas),Cebu,Pinamungahan,24.0,36.5,9.1,8.5,20.4,27.6,31.4,41.6
+072238,Region VII (Central Visayas),Cebu,Poro,21.0,44.6,11.5,8.8,17.1,25.0,38.2,51.0
+072239,Region VII (Central Visayas),Cebu,Ronda,21.2,39.0,11.4,9.9,17.3,25.2,32.6,45.3
+072240,Region VII (Central Visayas),Cebu,Samboan,21.6,44.4,10.8,9.6,17.8,25.4,37.3,51.4
+072241,Region VII (Central Visayas),Cebu,San Fernando,15.0,28.2,11.6,9.8,12.2,17.8,23.7,32.7
+072242,Region VII (Central Visayas),Cebu,San Francisco,31.7,54.3,9.7,5.5,26.6,36.8,49.4,59.2
+072243,Region VII (Central Visayas),Cebu,San Remigio,15.9,35.1,11.8,7.9,12.8,19.0,30.6,39.7
+072244,Region VII (Central Visayas),Cebu,Santa Fe,24.9,40.8,12.3,9.9,19.8,30.0,34.2,47.5
+072245,Region VII (Central Visayas),Cebu,Santander,18.7,35.1,14.4,11.8,14.3,23.1,28.3,42.0
+072246,Region VII (Central Visayas),Cebu,Sibonga,18.6,40.6,8.8,7.4,16.0,21.2,35.7,45.6
+072247,Region VII (Central Visayas),Cebu,Sogod,19.2,37.1,12.2,9.5,15.4,23.0,31.3,42.9
+072248,Region VII (Central Visayas),Cebu,Tabogon,21.5,37.6,10.0,7.9,18.1,25.0,32.7,42.5
+072249,Region VII (Central Visayas),Cebu,Tabuelan,22.2,44.6,12.7,10.9,17.6,26.8,36.6,52.6
+072250,Region VII (Central Visayas),Cebu,City of Talisay,8.2,19.2,12.3,10.2,6.6,9.9,16.0,22.4
+072251,Region VII (Central Visayas),Cebu,City of Toledo,17.2,32.4,8.7,6.8,14.7,19.7,28.8,36.0
+072252,Region VII (Central Visayas),Cebu,Tuburan,24.4,44.5,7.2,6.1,21.4,27.4,40.0,49.0
+072253,Region VII (Central Visayas),Cebu,Tudela,19.7,35.8,18.1,12.2,13.8,25.6,28.6,43.0
+074601,Region VII (Central Visayas),Negros Oriental,Amlan,12.7,21.1,20.6,18.7,8.4,17.0,14.6,27.6
+074602,Region VII (Central Visayas),Negros Oriental,Ayungon,30.5,38.4,8.5,6.7,26.2,34.8,34.2,42.6
+074603,Region VII (Central Visayas),Negros Oriental,Bacong,13.9,15.9,13.0,15.0,10.9,16.9,12.0,19.9
+074604,Region VII (Central Visayas),Negros Oriental,City of Bais,22.8,30.9,9.0,7.8,19.4,26.3,26.9,34.9
+074605,Region VII (Central Visayas),Negros Oriental,Basay,29.1,40.1,13.0,11.4,22.9,35.4,32.6,47.7
+074606,Region VII (Central Visayas),Negros Oriental,City of Bayawan,29.5,33.7,8.5,7.8,25.4,33.6,29.4,38.0
+074607,Region VII (Central Visayas),Negros Oriental,Bindoy,37.8,38.7,9.2,10.4,32.0,43.6,32.1,45.4
+074608,Region VII (Central Visayas),Negros Oriental,City of Canlaon,23.6,29.3,12.6,9.2,18.7,28.5,24.8,33.7
+074609,Region VII (Central Visayas),Negros Oriental,Dauin,17.5,24.0,11.0,10.5,14.4,20.6,19.8,28.1
+074610,Region VII (Central Visayas),Negros Oriental,City of Dumaguete,3.2,7.7,21.2,13.9,2.1,4.4,6.0,9.5
+074611,Region VII (Central Visayas),Negros Oriental,City of Guihulngan,31.7,39.4,7.8,7.2,27.6,35.8,34.8,44.1
+074612,Region VII (Central Visayas),Negros Oriental,Jimalalud,33.3,41.5,7.8,8.0,29.0,37.6,36.0,47.1
+074613,Region VII (Central Visayas),Negros Oriental,La Libertad,31.4,38.8,8.6,7.9,27.0,35.8,33.8,43.8
+074614,Region VII (Central Visayas),Negros Oriental,Mabinay,32.7,30.3,8.3,7.9,28.3,37.1,26.3,34.2
+074615,Region VII (Central Visayas),Negros Oriental,Manjuyod,25.1,29.0,9.3,8.9,21.3,28.9,24.8,33.3
+074616,Region VII (Central Visayas),Negros Oriental,Pamplona,25.6,28.9,8.9,12.3,21.8,29.4,23.1,34.8
+074617,Region VII (Central Visayas),Negros Oriental,San Jose,17.1,20.4,12.9,13.8,13.5,20.7,15.7,25.0
+074618,Region VII (Central Visayas),Negros Oriental,Santa Catalina,28.6,32.2,10.0,8.8,23.8,33.4,27.6,36.9
+074619,Region VII (Central Visayas),Negros Oriental,Siaton,30.7,37.9,8.0,7.3,26.8,34.7,33.3,42.4
+074620,Region VII (Central Visayas),Negros Oriental,Sibulan,10.9,13.4,13.7,13.1,8.4,13.4,10.5,16.3
+074621,Region VII (Central Visayas),Negros Oriental,City of Tanjay,18.9,26.0,9.4,7.4,15.9,21.9,22.9,29.2
+074622,Region VII (Central Visayas),Negros Oriental,Tayasan,29.2,36.8,7.8,7.8,25.4,33.0,32.1,41.5
+074623,Region VII (Central Visayas),Negros Oriental,Valencia,13.0,15.6,11.1,11.7,10.5,15.5,12.6,18.6
+074624,Region VII (Central Visayas),Negros Oriental,Vallehermoso,32.3,39.4,10.5,7.6,26.7,37.9,34.5,44.3
+074625,Region VII (Central Visayas),Negros Oriental,Zamboanguita,17.5,28.2,18.2,13.4,12.2,22.8,22.0,34.4
+076101,Region VII (Central Visayas),Siquijor,Enrique Villanueva,14.4,9.0,13.7,22.7,11.1,17.7,5.7,12.4
+076102,Region VII (Central Visayas),Siquijor,Larena,9.5,6.5,12.1,16.8,7.7,11.3,4.7,8.2
+076103,Region VII (Central Visayas),Siquijor,Lazi,20.3,9.4,12.6,16.4,16.0,24.6,6.9,11.9
+076104,Region VII (Central Visayas),Siquijor,Maria,24.9,9.6,8.8,15.4,21.3,28.5,7.1,12.0
+076105,Region VII (Central Visayas),Siquijor,San Juan,13.0,7.7,17.2,17.0,9.4,16.6,5.5,9.8
+076106,Region VII (Central Visayas),Siquijor,Siquijor,13.1,5.7,10.4,12.8,10.8,15.4,4.5,6.9
+082601,Region VIII (Eastern Visayas),Eastern Samar,Arteche,58.7,49.0,5.0,6.4,53.9,63.5,43.8,54.2
+082602,Region VIII (Eastern Visayas),Eastern Samar,Balangiga,50.1,35.9,6.5,10.9,44.7,55.4,29.5,42.4
+082603,Region VIII (Eastern Visayas),Eastern Samar,Balangkayan,50.4,38.9,6.6,10.0,45.0,55.9,32.5,45.3
+082604,Region VIII (Eastern Visayas),Eastern Samar,City of Borongan,37.4,26.5,4.6,7.1,34.6,40.3,23.4,29.6
+082605,Region VIII (Eastern Visayas),Eastern Samar,Can-avid,52.2,35.5,3.9,7.7,48.8,55.6,31.0,40.0
+082606,Region VIII (Eastern Visayas),Eastern Samar,Dolores,55.3,40.9,3.8,7.0,51.9,58.8,36.2,45.6
+082607,Region VIII (Eastern Visayas),Eastern Samar,General MacArthur,58.0,43.2,4.2,7.5,53.9,62.0,37.9,48.5
+082608,Region VIII (Eastern Visayas),Eastern Samar,Giporlos,51.6,41.7,5.4,7.8,47.0,56.1,36.3,47.1
+082609,Region VIII (Eastern Visayas),Eastern Samar,Guiuan,43.4,35.2,4.0,6.7,40.5,46.2,31.4,39.1
+082610,Region VIII (Eastern Visayas),Eastern Samar,Hernani,49.7,38.7,7.2,10.5,43.8,55.6,32.0,45.4
+082611,Region VIII (Eastern Visayas),Eastern Samar,Jipapad,65.5,51.9,5.0,9.3,60.1,70.8,44.0,59.9
+082612,Region VIII (Eastern Visayas),Eastern Samar,Lawaan,46.6,35.2,7.0,7.9,41.2,52.0,30.6,39.8
+082613,Region VIII (Eastern Visayas),Eastern Samar,Llorente,51.8,38.7,4.6,8.2,47.9,55.7,33.5,43.9
+082614,Region VIII (Eastern Visayas),Eastern Samar,Maslog,73.4,50.1,5.7,11.6,66.6,80.3,40.6,59.6
+082615,Region VIII (Eastern Visayas),Eastern Samar,Maydolong,46.4,33.2,6.2,9.9,41.7,51.1,27.8,38.6
+082616,Region VIII (Eastern Visayas),Eastern Samar,Mercedes,37.9,33.2,6.7,9.5,33.8,42.1,28.1,38.4
+082617,Region VIII (Eastern Visayas),Eastern Samar,Oras,55.2,39.7,3.6,7.6,51.9,58.5,34.7,44.6
+082618,Region VIII (Eastern Visayas),Eastern Samar,Quinapondan,51.3,42.0,4.5,7.6,47.5,55.0,36.8,47.2
+082619,Region VIII (Eastern Visayas),Eastern Samar,Salcedo,44.9,37.2,4.7,8.3,41.4,48.4,32.1,42.3
+082620,Region VIII (Eastern Visayas),Eastern Samar,San Julian,48.4,36.3,6.7,10.5,43.1,53.7,30.0,42.6
+082621,Region VIII (Eastern Visayas),Eastern Samar,San Policarpo,55.8,41.2,6.0,9.9,50.4,61.3,34.5,48.0
+082622,Region VIII (Eastern Visayas),Eastern Samar,Sulat,45.6,31.4,6.1,11.1,41.0,50.1,25.7,37.1
+082623,Region VIII (Eastern Visayas),Eastern Samar,Taft,47.6,38.7,5.4,6.9,43.4,51.8,34.3,43.1
+083701,Region VIII (Eastern Visayas),Leyte,Abuyog,28.2,27.8,6.3,7.0,25.3,31.1,24.6,31.0
+083702,Region VIII (Eastern Visayas),Leyte,Alangalang,31.1,30.7,6.5,7.3,27.7,34.4,27.0,34.4
+083703,Region VIII (Eastern Visayas),Leyte,Albuera,27.2,29.1,12.5,11.4,21.6,32.8,23.7,34.6
+083705,Region VIII (Eastern Visayas),Leyte,Babatngon,33.1,34.3,8.2,9.9,28.6,37.6,28.7,39.9
+083706,Region VIII (Eastern Visayas),Leyte,Barugo,26.5,27.0,7.9,8.3,23.1,29.9,23.3,30.6
+083707,Region VIII (Eastern Visayas),Leyte,Bato,29.2,31.5,8.5,7.5,25.1,33.2,27.6,35.4
+083708,Region VIII (Eastern Visayas),Leyte,City of Baybay,22.8,26.0,6.9,5.9,20.2,25.4,23.5,28.6
+083710,Region VIII (Eastern Visayas),Leyte,Burauen,27.8,28.2,5.8,7.3,25.2,30.4,24.8,31.6
+083713,Region VIII (Eastern Visayas),Leyte,Calubian,29.4,31.5,6.6,6.7,26.1,32.6,28.0,34.9
+083714,Region VIII (Eastern Visayas),Leyte,Capoocan,32.9,34.5,9.1,9.4,27.9,37.8,29.1,39.8
+083715,Region VIII (Eastern Visayas),Leyte,Carigara,25.0,26.5,6.7,8.1,22.2,27.8,23.0,30.1
+083717,Region VIII (Eastern Visayas),Leyte,Dagami,33.7,31.2,5.4,6.5,30.7,36.7,27.9,34.6
+083718,Region VIII (Eastern Visayas),Leyte,Dulag,24.6,27.6,7.4,7.3,21.6,27.6,24.2,30.9
+083719,Region VIII (Eastern Visayas),Leyte,Hilongos,26.1,29.8,7.3,7.0,22.9,29.2,26.4,33.2
+083720,Region VIII (Eastern Visayas),Leyte,Hindang,23.6,28.3,11.0,10.3,19.4,27.9,23.5,33.2
+083721,Region VIII (Eastern Visayas),Leyte,Inopacan,26.2,29.1,11.3,10.1,21.3,31.0,24.2,33.9
+083722,Region VIII (Eastern Visayas),Leyte,Isabel,17.8,24.3,12.0,12.2,14.3,21.3,19.5,29.2
+083723,Region VIII (Eastern Visayas),Leyte,Jaro,31.6,30.6,6.0,8.1,28.5,34.7,26.5,34.7
+083724,Region VIII (Eastern Visayas),Leyte,Javier (Bugho),30.7,29.2,8.0,8.1,26.7,34.7,25.3,33.1
+083725,Region VIII (Eastern Visayas),Leyte,Julita,28.4,32.1,8.9,8.4,24.2,32.5,27.7,36.6
+083726,Region VIII (Eastern Visayas),Leyte,Kananga,31.1,34.7,8.9,8.2,26.5,35.6,30.0,39.4
+083728,Region VIII (Eastern Visayas),Leyte,Lapaz,31.6,32.1,7.8,7.7,27.6,35.7,28.0,36.1
+083729,Region VIII (Eastern Visayas),Leyte,Leyte,36.9,38.4,7.6,7.0,32.3,41.6,34.0,42.9
+083730,Region VIII (Eastern Visayas),Leyte,MacArthur,29.6,30.0,8.2,8.7,25.7,33.6,25.7,34.3
+083731,Region VIII (Eastern Visayas),Leyte,Mahaplag,31.9,34.7,8.6,9.7,27.3,36.4,29.1,40.2
+083733,Region VIII (Eastern Visayas),Leyte,Matag-ob,29.2,32.8,9.6,11.0,24.6,33.8,26.9,38.8
+083734,Region VIII (Eastern Visayas),Leyte,Matalom,26.5,28.9,8.0,8.2,23.0,30.0,25.0,32.8
+083735,Region VIII (Eastern Visayas),Leyte,Mayorga,29.6,31.1,10.1,10.3,24.6,34.5,25.8,36.3
+083736,Region VIII (Eastern Visayas),Leyte,Merida,23.0,30.3,12.2,10.3,18.4,27.6,25.2,35.4
+083738,Region VIII (Eastern Visayas),Leyte,Ormoc City,22.1,25.5,7.3,5.3,19.5,24.8,23.3,27.7
+083739,Region VIII (Eastern Visayas),Leyte,Palo,18.6,20.1,9.7,9.6,15.6,21.5,16.9,23.3
+083740,Region VIII (Eastern Visayas),Leyte,Palompon,20.8,25.9,8.6,8.0,17.9,23.8,22.5,29.3
+083741,Region VIII (Eastern Visayas),Leyte,Pastrana,28.5,32.6,8.4,8.7,24.6,32.4,27.9,37.2
+083742,Region VIII (Eastern Visayas),Leyte,San Isidro,32.7,33.1,8.9,9.8,27.9,37.5,27.8,38.4
+083743,Region VIII (Eastern Visayas),Leyte,San Miguel,33.2,32.3,7.6,9.5,29.1,37.4,27.3,37.4
+083744,Region VIII (Eastern Visayas),Leyte,Santa Fe,27.9,31.5,10.3,9.3,23.2,32.7,26.7,36.4
+083745,Region VIII (Eastern Visayas),Leyte,Tabango,30.8,39.2,10.4,9.8,25.6,36.1,32.9,45.6
+083746,Region VIII (Eastern Visayas),Leyte,Tabontabon,30.6,27.3,8.8,11.0,26.2,35.1,22.3,32.2
+083748,Region VIII (Eastern Visayas),Leyte,Tanauan,20.9,24.7,8.0,7.9,18.2,23.7,21.5,27.9
+083749,Region VIII (Eastern Visayas),Leyte,Tolosa,21.0,24.8,12.6,12.4,16.6,25.3,19.7,29.8
+083750,Region VIII (Eastern Visayas),Leyte,Tunga,18.2,20.7,17.4,15.6,13.0,23.5,15.4,26.1
+083751,Region VIII (Eastern Visayas),Leyte,Villaba,26.3,32.7,8.4,7.7,22.6,29.9,28.6,36.9
+084801,Region VIII (Eastern Visayas),Northern Samar,Allen,24.0,18.1,10.6,13.0,19.8,28.1,14.3,22.0
+084802,Region VIII (Eastern Visayas),Northern Samar,Biri,41.8,26.5,9.7,16.9,35.1,48.4,19.2,33.9
+084803,Region VIII (Eastern Visayas),Northern Samar,Bobon,34.6,22.5,8.8,10.8,29.6,39.6,18.5,26.5
+084804,Region VIII (Eastern Visayas),Northern Samar,Capul,37.4,17.9,10.3,17.7,31.1,43.7,12.7,23.1
+084805,Region VIII (Eastern Visayas),Northern Samar,Catarman,30.3,20.6,5.1,8.8,27.7,32.8,17.6,23.6
+084806,Region VIII (Eastern Visayas),Northern Samar,Catubig,44.1,26.4,5.3,8.5,40.3,48.0,22.8,30.1
+084807,Region VIII (Eastern Visayas),Northern Samar,Gamay,33.5,26.3,7.1,9.2,29.5,37.4,22.3,30.3
+084808,Region VIII (Eastern Visayas),Northern Samar,Laoang,39.8,24.3,4.8,6.9,36.7,42.9,21.6,27.1
+084809,Region VIII (Eastern Visayas),Northern Samar,Lapinig,37.7,26.0,8.7,13.5,32.3,43.1,20.3,31.8
+084810,Region VIII (Eastern Visayas),Northern Samar,Las Navas,50.1,29.5,3.8,7.9,46.9,53.3,25.6,33.3
+084811,Region VIII (Eastern Visayas),Northern Samar,Lavezares,34.1,24.7,7.1,11.0,30.1,38.1,20.2,29.1
+084812,Region VIII (Eastern Visayas),Northern Samar,Mapanas,42.5,29.1,7.9,12.7,37.0,48.1,23.0,35.1
+084813,Region VIII (Eastern Visayas),Northern Samar,Mondragon,39.5,30.9,8.6,9.0,34.0,45.1,26.3,35.4
+084814,Region VIII (Eastern Visayas),Northern Samar,Palapag,40.0,24.4,5.9,9.3,36.1,43.9,20.7,28.2
+084815,Region VIII (Eastern Visayas),Northern Samar,Pambujan,44.7,32.4,5.5,9.4,40.7,48.7,27.3,37.4
+084816,Region VIII (Eastern Visayas),Northern Samar,Rosario,33.0,26.3,10.0,13.7,27.5,38.4,20.4,32.2
+084817,Region VIII (Eastern Visayas),Northern Samar,San Antonio,26.8,19.5,13.0,18.0,21.1,32.6,13.7,25.3
+084818,Region VIII (Eastern Visayas),Northern Samar,San Isidro,32.6,33.1,9.1,9.8,27.7,37.4,27.8,38.4
+084819,Region VIII (Eastern Visayas),Northern Samar,San Jose,32.1,23.7,8.8,10.7,27.5,36.7,19.5,27.8
+084820,Region VIII (Eastern Visayas),Northern Samar,San Roque,44.1,29.6,7.4,11.6,38.8,49.4,23.9,35.2
+084821,Region VIII (Eastern Visayas),Northern Samar,San Vicente,37.3,25.2,11.1,17.2,30.5,44.1,18.1,32.4
+084822,Region VIII (Eastern Visayas),Northern Samar,Silvino Lobos,56.9,39.5,5.6,9.8,51.7,62.2,33.2,45.9
+084823,Region VIII (Eastern Visayas),Northern Samar,Victoria,33.6,24.6,9.1,10.9,28.6,38.6,20.2,29.0
+084824,Region VIII (Eastern Visayas),Northern Samar,Lope De Vega,47.9,35.0,7.3,9.5,42.1,53.6,29.5,40.5
+086001,Region VIII (Eastern Visayas),Samar (Western),Almagro,30.3,33.9,10.1,10.0,25.2,35.3,28.4,39.5
+086002,Region VIII (Eastern Visayas),Samar (Western),Basey,26.9,28.6,6.9,7.1,23.8,29.9,25.2,31.9
+086003,Region VIII (Eastern Visayas),Samar (Western),City of Calbayog,23.7,25.9,5.1,5.6,21.7,25.6,23.6,28.3
+086004,Region VIII (Eastern Visayas),Samar (Western),Calbiga,24.9,28.1,8.9,9.0,21.2,28.5,23.9,32.3
+086005,Region VIII (Eastern Visayas),Samar (Western),City of Catbalogan,19.0,20.5,9.1,9.3,16.2,21.8,17.3,23.6
+086006,Region VIII (Eastern Visayas),Samar (Western),Daram,41.2,38.8,6.0,7.3,37.1,45.2,34.2,43.4
+086007,Region VIII (Eastern Visayas),Samar (Western),Gandara,31.3,35.2,5.6,5.9,28.5,34.2,31.7,38.6
+086008,Region VIII (Eastern Visayas),Samar (Western),Hinabangan,28.3,27.0,10.1,11.7,23.6,33.0,21.8,32.2
+086009,Region VIII (Eastern Visayas),Samar (Western),Jiabong,25.7,26.2,8.7,9.5,22.0,29.3,22.1,30.3
+086010,Region VIII (Eastern Visayas),Samar (Western),Marabut,27.4,31.3,11.0,9.2,22.5,32.4,26.5,36.0
+086011,Region VIII (Eastern Visayas),Samar (Western),Matuguinao,39.8,42.6,8.5,9.4,34.2,45.4,36.0,49.1
+086012,Region VIII (Eastern Visayas),Samar (Western),Motiong,30.9,29.9,8.9,11.3,26.3,35.4,24.3,35.4
+086013,Region VIII (Eastern Visayas),Samar (Western),Pinabacdao,30.4,34.9,8.3,9.1,26.3,34.6,29.7,40.1
+086014,Region VIII (Eastern Visayas),Samar (Western),San Jose de Buan,38.8,38.6,10.7,12.6,31.9,45.6,30.6,46.6
+086015,Region VIII (Eastern Visayas),Samar (Western),San Sebastian,27.8,26.9,11.2,12.6,22.6,32.9,21.3,32.5
+086016,Region VIII (Eastern Visayas),Samar (Western),Santa Margarita,25.5,31.5,9.8,8.3,21.4,29.6,27.2,35.8
+086017,Region VIII (Eastern Visayas),Samar (Western),Santa Rita,34.4,36.6,6.5,7.8,30.7,38.1,31.9,41.3
+086018,Region VIII (Eastern Visayas),Samar (Western),Santo Nino,30.7,34.6,10.6,11.5,25.3,36.0,28.1,41.1
+086019,Region VIII (Eastern Visayas),Samar (Western),Talalora,37.2,36.0,11.1,12.0,30.4,43.9,28.9,43.1
+086020,Region VIII (Eastern Visayas),Samar (Western),Tarangnan,29.9,33.5,8.8,7.6,25.6,34.2,29.4,37.7
+086021,Region VIII (Eastern Visayas),Samar (Western),Villareal,32.6,33.9,6.5,8.1,29.1,36.1,29.4,38.4
+086022,Region VIII (Eastern Visayas),Samar (Western),Paranas (Wright),26.4,26.5,7.2,8.6,23.3,29.6,22.8,30.3
+086023,Region VIII (Eastern Visayas),Samar (Western),Zumarraga,38.9,34.3,8.2,8.4,33.6,44.1,29.5,39.0
+086024,Region VIII (Eastern Visayas),Samar (Western),Tagapul-an,31.6,32.5,11.2,13.1,25.8,37.4,25.5,39.5
+086025,Region VIII (Eastern Visayas),Samar (Western),San Jorge,29.6,32.2,7.0,7.9,26.2,33.0,28.0,36.4
+086026,Region VIII (Eastern Visayas),Samar (Western),Pagsanghan,29.2,30.2,10.8,10.5,24.0,34.4,25.0,35.4
+086401,Region VIII (Eastern Visayas),Southern Leyte,Anahawan,23.6,24.8,11.2,12.2,19.3,28.0,19.8,29.7
+086402,Region VIII (Eastern Visayas),Southern Leyte,Bontoc,29.7,27.3,6.5,7.3,26.5,32.9,24.1,30.6
+086403,Region VIII (Eastern Visayas),Southern Leyte,Hinunangan,25.2,21.9,7.2,9.1,22.2,28.2,18.7,25.2
+086404,Region VIII (Eastern Visayas),Southern Leyte,Hinundayan,23.2,21.7,10.0,12.5,19.4,27.0,17.2,26.1
+086405,Region VIII (Eastern Visayas),Southern Leyte,Libagon,28.1,26.3,11.1,13.0,23.0,33.3,20.7,32.0
+086406,Region VIII (Eastern Visayas),Southern Leyte,Liloan,29.3,30.8,7.4,8.0,25.8,32.9,26.8,34.9
+086407,Region VIII (Eastern Visayas),Southern Leyte,City of Maasin,20.5,20.0,6.2,7.5,18.4,22.6,17.5,22.5
+086408,Region VIII (Eastern Visayas),Southern Leyte,Macrohon,23.2,21.8,9.1,10.4,19.7,26.6,18.1,25.6
+086409,Region VIII (Eastern Visayas),Southern Leyte,Malitbog,29.8,29.9,5.8,7.3,27.0,32.7,26.4,33.5
+086410,Region VIII (Eastern Visayas),Southern Leyte,Padre Burgos,24.0,23.0,10.8,13.0,19.7,28.2,18.1,27.9
+086411,Region VIII (Eastern Visayas),Southern Leyte,Pintuyan,27.3,25.3,9.5,10.0,23.0,31.5,21.1,29.5
+086412,Region VIII (Eastern Visayas),Southern Leyte,Saint Bernard,25.5,29.2,9.0,9.3,21.7,29.3,24.7,33.6
+086413,Region VIII (Eastern Visayas),Southern Leyte,San Francisco,27.5,26.4,8.0,10.2,23.9,31.1,21.9,30.8
+086414,Region VIII (Eastern Visayas),Southern Leyte,San Juan (Cabalian),24.5,24.9,9.2,9.8,20.8,28.2,20.9,28.9
+086415,Region VIII (Eastern Visayas),Southern Leyte,San Ricardo,30.6,28.2,10.4,12.9,25.4,35.9,22.2,34.2
+086416,Region VIII (Eastern Visayas),Southern Leyte,Silago,26.8,22.2,11.3,11.0,21.8,31.7,18.1,26.2
+086417,Region VIII (Eastern Visayas),Southern Leyte,Sogod,27.2,24.7,7.1,7.5,24.1,30.4,21.6,27.7
+086418,Region VIII (Eastern Visayas),Southern Leyte,Tomas Oppus,26.5,25.7,7.5,9.2,23.2,29.8,21.8,29.6
+086419,Region VIII (Eastern Visayas),Southern Leyte,Limasawa,22.5,27.0,16.2,19.4,16.5,28.5,18.4,35.6
+087801,Region VIII (Eastern Visayas),Biliran,Almeria,16.8,21.6,14.5,8.2,12.8,20.8,18.6,24.5
+087802,Region VIII (Eastern Visayas),Biliran,Biliran,22.4,25.5,11.2,10.6,18.3,26.6,21.1,30.0
+087803,Region VIII (Eastern Visayas),Biliran,Cabucgayan,27.9,29.8,13.1,7.9,21.8,33.9,25.9,33.7
+087804,Region VIII (Eastern Visayas),Biliran,Caibiran,31.1,31.0,9.7,7.9,26.2,36.1,27.0,35.0
+087805,Region VIII (Eastern Visayas),Biliran,Culaba,28.8,30.1,9.2,8.5,24.4,33.1,25.9,34.3
+087806,Region VIII (Eastern Visayas),Biliran,Kawayan,27.0,24.3,9.4,8.1,22.9,31.2,21.1,27.5
+087807,Region VIII (Eastern Visayas),Biliran,Maripipi,20.4,28.9,14.2,10.4,15.7,25.2,23.9,33.8
+087808,Region VIII (Eastern Visayas),Biliran,Naval,22.9,20.7,9.8,7.0,19.2,26.6,18.3,23.1
+097201,Region IX (Zamboanga Peninsula),Zamboanga del Norte,City of Dapitan,27.1,35.6,9.7,6.5,22.8,31.5,31.8,39.4
+097202,Region IX (Zamboanga Peninsula),Zamboanga del Norte,City of Dipolog,17.9,21.1,12.4,10.7,14.3,21.6,17.4,24.8
+097203,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Katipunan,52.9,47.5,5.5,5.3,48.0,57.7,43.3,51.6
+097204,Region IX (Zamboanga Peninsula),Zamboanga del Norte,La Libertad,53.0,46.1,8.5,8.6,45.6,60.4,39.6,52.5
+097205,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Labason,45.2,43.5,7.1,7.6,39.9,50.4,38.0,48.9
+097206,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Liloy,44.4,44.8,5.9,5.0,40.1,48.8,41.1,48.5
+097207,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Manukan,49.2,49.9,7.1,4.9,43.5,55.0,45.9,54.0
+097208,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Mutia,46.8,47.4,9.2,8.2,39.7,53.9,41.0,53.7
+097209,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Piñan,46.5,43.3,7.0,6.7,41.2,51.8,38.5,48.0
+097210,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Polanco,42.4,36.5,5.9,6.4,38.3,46.6,32.6,40.3
+097211,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Pres. Manuel A. Roxas,55.6,50.3,5.2,4.6,50.8,60.4,46.5,54.2
+097212,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Rizal,39.5,43.4,7.2,6.1,34.9,44.2,39.0,47.7
+097213,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Salug,49.4,51.3,6.2,5.9,44.3,54.4,46.3,56.3
+097214,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Sergio Osmeña Sr.,59.2,60.8,4.3,4.5,55.0,63.4,56.4,65.3
+097215,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Siayan,62.0,67.0,6.0,4.0,55.8,68.1,62.6,71.4
+097216,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Sibuco,58.6,58.7,6.6,5.2,52.2,64.9,53.6,63.7
+097217,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Sibutad,46.3,44.3,9.7,7.9,39.0,53.7,38.6,50.1
+097218,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Sindangan,37.1,47.5,8.7,4.1,31.8,42.4,44.3,50.7
+097219,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Siocon,51.4,47.3,5.7,5.1,46.5,56.2,43.3,51.3
+097220,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Sirawai,57.6,62.7,8.4,5.6,49.6,65.6,56.9,68.4
+097221,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Tampilisan,48.2,46.4,6.9,6.5,42.8,53.6,41.5,51.4
+097222,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Jose Dalman (Ponot),56.5,57.7,6.4,5.8,50.5,62.5,52.1,63.2
+097223,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Gutalac,59.7,57.4,5.3,4.5,54.5,64.8,53.1,61.6
+097224,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Baliguian,52.6,63.7,7.7,5.3,45.9,59.2,58.2,69.2
+097225,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Godod,59.3,58.2,7.0,5.1,52.5,66.1,53.3,63.1
+097226,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Bacungan (Leon T. Postigo),55.8,53.8,6.8,6.7,49.5,62.0,47.9,59.7
+097227,Region IX (Zamboanga Peninsula),Zamboanga del Norte,Kalawit,56.5,54.8,8.4,7.1,48.7,64.3,48.3,61.2
+097302,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Aurora,29.8,21.0,8.0,9.9,25.9,33.7,17.6,24.4
+097303,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Bayog,37.9,29.8,8.1,7.1,32.8,42.9,26.3,33.3
+097305,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Dimataling,36.6,30.1,10.6,11.9,30.2,42.9,24.2,36.0
+097306,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Dinas,36.8,34.0,9.0,7.3,31.4,42.3,29.9,38.1
+097307,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Dumalinao,32.8,22.7,7.6,10.2,28.7,36.9,18.9,26.5
+097308,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Dumingag,39.8,31.7,6.6,6.1,35.4,44.1,28.5,34.9
+097311,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Kumalarang,37.7,30.6,12.8,10.0,29.8,45.6,25.6,35.6
+097312,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Labangan,32.4,24.2,8.9,7.1,27.7,37.1,21.3,27.0
+097313,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Lapuyan,41.0,43.5,8.1,6.2,35.6,46.4,39.0,47.9
+097315,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Mahayag,35.4,26.1,7.5,8.3,31.0,39.7,22.5,29.7
+097317,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Margosatubig,32.3,30.8,15.9,9.3,23.8,40.8,26.1,35.5
+097318,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Midsalip,45.3,41.1,6.1,7.0,40.8,49.9,36.4,45.8
+097319,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Molave,18.6,18.3,14.7,9.8,14.1,23.1,15.3,21.2
+097322,Region IX (Zamboanga Peninsula),Zamboanga del Sur,City of Pagadian,14.1,13.4,13.2,11.8,11.0,17.1,10.8,16.0
+097323,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Ramon Magsaysay,32.6,25.8,8.6,8.9,28.0,37.2,22.0,29.5
+097324,Region IX (Zamboanga Peninsula),Zamboanga del Sur,San Miguel,32.7,31.9,11.3,9.4,26.6,38.8,27.0,36.9
+097325,Region IX (Zamboanga Peninsula),Zamboanga del Sur,San Pablo,38.8,29.7,7.4,8.0,34.1,43.5,25.8,33.6
+097327,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Tabina,37.9,30.8,10.6,11.8,31.3,44.5,24.8,36.7
+097328,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Tambulig,32.3,24.6,8.9,9.1,27.6,37.1,20.9,28.3
+097330,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Tukuran,33.4,23.1,10.9,11.3,27.4,39.3,18.8,27.4
+097333,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Lakewood,39.1,35.2,11.8,9.1,31.5,46.8,30.0,40.5
+097337,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Josefina,28.1,28.9,12.1,10.7,22.5,33.7,23.8,34.0
+097338,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Pitogo,36.9,33.8,11.9,8.3,29.7,44.1,29.2,38.5
+097340,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Sominot,38.4,35.5,9.4,8.2,32.5,44.3,30.7,40.3
+097341,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Vincenzo A. Sagun,30.8,28.1,11.3,9.4,25.1,36.5,23.7,32.4
+097343,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Guipos,31.6,27.2,11.0,10.8,25.9,37.4,22.4,32.1
+097344,Region IX (Zamboanga Peninsula),Zamboanga del Sur,Tigbao,39.5,30.0,9.7,11.1,33.2,45.8,24.5,35.5
+098301,Region IX (Zamboanga Peninsula),Zamboanga Sibugay,Alicia,37.3,34.4,8.6,8.3,32.1,42.6,29.7,39.1
+098302,Region IX (Zamboanga Peninsula),Zamboanga Sibugay,Buug,25.3,24.6,11.7,8.1,20.5,30.2,21.3,27.8
+098303,Region IX (Zamboanga Peninsula),Zamboanga Sibugay,Diplahan,28.9,28.2,11.7,9.1,23.3,34.5,24.0,32.5
+098304,Region IX (Zamboanga Peninsula),Zamboanga Sibugay,Imelda,29.3,30.2,11.7,9.4,23.6,34.9,25.6,34.9
+098305,Region IX (Zamboanga Peninsula),Zamboanga Sibugay,Ipil,22.3,18.3,11.3,11.4,18.2,26.4,14.9,21.8
+098306,Region IX (Zamboanga Peninsula),Zamboanga Sibugay,Kabasalan,30.1,26.5,8.6,9.1,25.8,34.4,22.6,30.5
+098307,Region IX (Zamboanga Peninsula),Zamboanga Sibugay,Mabuhay,42.9,40.8,9.7,8.3,36.1,49.8,35.3,46.4
+098308,Region IX (Zamboanga Peninsula),Zamboanga Sibugay,Malangas,30.8,33.3,11.4,7.9,25.0,36.6,29.0,37.6
+098309,Region IX (Zamboanga Peninsula),Zamboanga Sibugay,Naga,32.8,32.5,9.2,6.8,27.8,37.7,28.8,36.1
+098310,Region IX (Zamboanga Peninsula),Zamboanga Sibugay,Olutanga,36.6,27.6,11.7,9.5,29.6,43.7,23.2,31.9
+098311,Region IX (Zamboanga Peninsula),Zamboanga Sibugay,Payao,38.8,37.5,9.9,7.8,32.5,45.1,32.7,42.3
+098312,Region IX (Zamboanga Peninsula),Zamboanga Sibugay,Roseller Lim,32.3,29.4,8.4,9.6,27.8,36.7,24.7,34.0
+098313,Region IX (Zamboanga Peninsula),Zamboanga Sibugay,Siay,33.0,31.5,8.7,9.2,28.3,37.7,26.7,36.3
+098314,Region IX (Zamboanga Peninsula),Zamboanga Sibugay,Talusan,42.3,39.4,12.2,8.9,33.8,50.8,33.7,45.2
+098315,Region IX (Zamboanga Peninsula),Zamboanga Sibugay,Titay,33.5,28.8,8.8,9.3,28.7,38.4,24.4,33.2
+098316,Region IX (Zamboanga Peninsula),Zamboanga Sibugay,Tungawan,36.3,37.0,9.5,6.9,30.6,42.0,32.8,41.2
+101301,Region X (Northern Mindanao),Bukidnon,Baungon,34.7,39.0,9.5,9.5,29.2,40.1,32.9,45.1
+101302,Region X (Northern Mindanao),Bukidnon,Damulog,35.4,46.9,8.9,9.8,30.3,40.6,39.4,54.5
+101303,Region X (Northern Mindanao),Bukidnon,Dangcagan,27.6,29.8,11.7,13.3,22.3,33.0,23.3,36.3
+101304,Region X (Northern Mindanao),Bukidnon,Don Carlos,27.1,26.5,8.0,8.1,23.5,30.6,23.0,30.1
+101305,Region X (Northern Mindanao),Bukidnon,Impasug-ong,33.8,40.7,10.5,7.8,27.9,39.7,35.5,45.9
+101306,Region X (Northern Mindanao),Bukidnon,Kadingilan,33.6,34.4,9.3,7.1,28.5,38.8,30.4,38.4
+101307,Region X (Northern Mindanao),Bukidnon,Kalilangan,31.9,30.0,9.4,10.3,27.0,36.8,24.9,35.1
+101308,Region X (Northern Mindanao),Bukidnon,Kibawe,28.5,33.5,8.5,5.4,24.5,32.5,30.5,36.5
+101309,Region X (Northern Mindanao),Bukidnon,Kitaotao,35.6,37.6,7.2,5.2,31.4,39.8,34.4,40.8
+101310,Region X (Northern Mindanao),Bukidnon,Lantapan,33.9,38.1,9.0,8.5,28.9,38.9,32.8,43.5
+101311,Region X (Northern Mindanao),Bukidnon,Libona,27.7,33.1,11.8,8.7,22.4,33.1,28.4,37.9
+101312,Region X (Northern Mindanao),Bukidnon,City of Malaybalay,21.6,22.3,7.7,6.8,18.9,24.3,19.8,24.8
+101313,Region X (Northern Mindanao),Bukidnon,Malitbog,35.6,42.7,10.8,10.2,29.3,42.0,35.5,49.8
+101314,Region X (Northern Mindanao),Bukidnon,Manolo Fortich,23.1,25.2,8.8,11.3,19.8,26.4,20.5,29.9
+101315,Region X (Northern Mindanao),Bukidnon,Maramag,23.4,26.7,8.9,7.2,20.0,26.9,23.5,29.9
+101316,Region X (Northern Mindanao),Bukidnon,Pangantucan,31.7,31.9,9.3,9.5,26.9,36.6,26.9,36.9
+101317,Region X (Northern Mindanao),Bukidnon,Quezon,29.8,32.0,7.0,6.4,26.4,33.3,28.6,35.3
+101318,Region X (Northern Mindanao),Bukidnon,San Fernando,36.3,36.6,6.9,8.8,32.2,40.4,31.3,41.9
+101319,Region X (Northern Mindanao),Bukidnon,Sumilao,32.3,38.5,13.4,14.5,25.2,39.4,29.3,47.6
+101320,Region X (Northern Mindanao),Bukidnon,Talakag,43.4,39.4,5.1,6.8,39.7,47.1,35.0,43.8
+101321,Region X (Northern Mindanao),Bukidnon,City of Valencia,21.9,24.9,9.1,6.1,18.6,25.2,22.4,27.4
+101322,Region X (Northern Mindanao),Bukidnon,Cabanglasan,34.0,33.5,9.9,5.3,28.5,39.6,30.5,36.4
+101801,Region X (Northern Mindanao),Camiguin,Catarman,26.6,22.8,10.5,6.3,22.0,31.2,20.5,25.2
+101802,Region X (Northern Mindanao),Camiguin,Guinsiliban,30.4,28.1,13.9,9.9,23.4,37.3,23.5,32.6
+101803,Region X (Northern Mindanao),Camiguin,Mahinog,26.3,24.0,10.4,8.7,21.8,30.9,20.5,27.4
+101804,Region X (Northern Mindanao),Camiguin,Mambajao,21.4,15.0,11.2,8.2,17.5,25.4,13.0,17.0
+101805,Region X (Northern Mindanao),Camiguin,Sagay,32.7,31.9,10.5,6.3,27.0,38.4,28.6,35.3
+103501,Region X (Northern Mindanao),Lanao del Norte,Bacolod,20.4,26.4,12.1,12.2,16.4,24.5,21.1,31.7
+103502,Region X (Northern Mindanao),Lanao del Norte,Baloi,29.1,37.5,8.7,8.9,25.0,33.3,32.1,43.0
+103503,Region X (Northern Mindanao),Lanao del Norte,Baroy,17.1,23.4,12.0,8.7,13.7,20.5,20.1,26.8
+103505,Region X (Northern Mindanao),Lanao del Norte,Kapatagan,17.8,29.7,11.3,4.9,14.5,21.1,27.3,32.1
+103506,Region X (Northern Mindanao),Lanao del Norte,Sultan Naga Dimaporo,27.7,40.3,7.5,7.3,24.3,31.1,35.4,45.1
+103507,Region X (Northern Mindanao),Lanao del Norte,Kauswagan,23.2,26.4,12.4,8.8,18.5,28.0,22.6,30.3
+103508,Region X (Northern Mindanao),Lanao del Norte,Kolambugan,18.6,25.6,9.5,7.6,15.7,21.5,22.4,28.8
+103509,Region X (Northern Mindanao),Lanao del Norte,Lala,18.5,27.4,10.6,7.3,15.3,21.8,24.1,30.6
+103510,Region X (Northern Mindanao),Lanao del Norte,Linamon,20.5,30.1,13.0,11.2,16.1,24.9,24.6,35.6
+103511,Region X (Northern Mindanao),Lanao del Norte,Magsaysay,31.9,48.8,8.0,5.7,27.7,36.1,44.2,53.3
+103512,Region X (Northern Mindanao),Lanao del Norte,Maigo,18.8,28.6,12.7,8.7,14.8,22.7,24.5,32.6
+103513,Region X (Northern Mindanao),Lanao del Norte,Matungao,41.0,41.8,10.0,8.2,34.2,47.7,36.2,47.4
+103514,Region X (Northern Mindanao),Lanao del Norte,Munai,36.3,47.6,7.4,5.4,31.9,40.8,43.3,51.8
+103515,Region X (Northern Mindanao),Lanao del Norte,Nunungan,44.2,57.4,5.9,4.9,39.9,48.5,52.8,62.1
+103516,Region X (Northern Mindanao),Lanao del Norte,Pantao Ragat,42.5,45.8,7.2,4.7,37.5,47.6,42.3,49.3
+103517,Region X (Northern Mindanao),Lanao del Norte,Poona Piagapo,51.4,54.0,5.6,5.4,46.7,56.1,49.2,58.8
+103518,Region X (Northern Mindanao),Lanao del Norte,Salvador,29.1,36.9,10.1,7.0,24.3,34.0,32.6,41.1
+103519,Region X (Northern Mindanao),Lanao del Norte,Sapad,25.1,40.5,12.4,6.3,20.0,30.2,36.3,44.7
+103520,Region X (Northern Mindanao),Lanao del Norte,Tagoloan,36.5,55.9,14.0,4.8,28.1,44.8,51.5,60.3
+103521,Region X (Northern Mindanao),Lanao del Norte,Tangcal,44.1,56.3,8.9,4.3,37.6,50.6,52.4,60.3
+103522,Region X (Northern Mindanao),Lanao del Norte,Tubad,18.1,28.4,11.8,7.4,14.6,21.6,25.0,31.9
+103523,Region X (Northern Mindanao),Lanao del Norte,Pantar,36.7,45.2,7.7,8.6,32.1,41.4,38.8,51.6
+104201,Region X (Northern Mindanao),Misamis Occidental,Aloran,23.5,28.1,6.5,5.8,21.0,26.0,25.4,30.8
+104202,Region X (Northern Mindanao),Misamis Occidental,Baliangao,26.8,32.3,11.3,8.5,21.8,31.7,27.7,36.8
+104203,Region X (Northern Mindanao),Misamis Occidental,Bonifacio,35.0,33.3,6.4,7.0,31.3,38.6,29.5,37.1
+104204,Region X (Northern Mindanao),Misamis Occidental,Calamba,24.0,24.1,8.5,14.5,20.6,27.4,18.4,29.8
+104205,Region X (Northern Mindanao),Misamis Occidental,Clarin,22.5,24.2,8.7,7.8,19.3,25.7,21.1,27.3
+104206,Region X (Northern Mindanao),Misamis Occidental,Concepcion,49.9,49.9,7.0,6.5,44.2,55.6,44.6,55.2
+104207,Region X (Northern Mindanao),Misamis Occidental,Jimenez,20.4,21.5,9.9,6.1,17.1,23.8,19.4,23.7
+104208,Region X (Northern Mindanao),Misamis Occidental,Lopez Jaena,28.2,36.5,9.3,8.2,23.9,32.5,31.6,41.4
+104209,Region X (Northern Mindanao),Misamis Occidental,City of Oroquieta,15.6,20.5,8.8,5.1,13.3,17.8,18.7,22.2
+104210,Region X (Northern Mindanao),Misamis Occidental,City of Ozamiz,21.1,21.0,7.6,6.1,18.5,23.8,18.9,23.1
+104211,Region X (Northern Mindanao),Misamis Occidental,Panaon,18.1,22.6,13.9,9.3,14.0,22.2,19.2,26.1
+104212,Region X (Northern Mindanao),Misamis Occidental,Plaridel,23.8,27.1,8.3,7.6,20.5,27.0,23.7,30.5
+104213,Region X (Northern Mindanao),Misamis Occidental,Sapang Dalaga,35.4,37.2,7.0,6.4,31.3,39.5,33.3,41.2
+104214,Region X (Northern Mindanao),Misamis Occidental,Sinacaban,24.2,23.8,9.7,8.6,20.3,28.0,20.4,27.1
+104215,Region X (Northern Mindanao),Misamis Occidental,City of Tangub,27.5,27.3,6.5,6.0,24.6,30.4,24.7,30.0
+104216,Region X (Northern Mindanao),Misamis Occidental,Tudela,24.4,23.5,7.8,10.6,21.3,27.5,19.4,27.6
+104217,Region X (Northern Mindanao),Misamis Occidental,Don Victoriano Chiongbian,35.7,43.3,11.3,8.8,29.1,42.4,37.0,49.6
+104301,Region X (Northern Mindanao),Misamis Oriental,Alubijid,14.9,21.6,12.7,10.6,11.8,18.0,17.8,25.4
+104302,Region X (Northern Mindanao),Misamis Oriental,Balingasag,20.2,24.3,9.4,5.4,17.0,23.3,22.1,26.5
+104303,Region X (Northern Mindanao),Misamis Oriental,Balingoan,18.5,26.3,15.4,8.4,13.8,23.1,22.6,29.9
+104304,Region X (Northern Mindanao),Misamis Oriental,Binuangan,17.1,25.9,16.8,14.5,12.4,21.9,19.7,32.1
+104306,Region X (Northern Mindanao),Misamis Oriental,Claveria,22.1,30.1,10.0,9.7,18.5,25.7,25.3,34.9
+104307,Region X (Northern Mindanao),Misamis Oriental,City of El Salvador,13.3,23.5,15.6,8.0,9.9,16.8,20.4,26.6
+104308,Region X (Northern Mindanao),Misamis Oriental,City of Gingoog,22.7,27.8,6.3,5.2,20.4,25.1,25.4,30.2
+104309,Region X (Northern Mindanao),Misamis Oriental,Gitagum,15.8,29.7,18.1,4.4,11.1,20.6,27.5,31.8
+104310,Region X (Northern Mindanao),Misamis Oriental,Initao,17.0,25.5,13.8,7.6,13.2,20.9,22.3,28.7
+104311,Region X (Northern Mindanao),Misamis Oriental,Jasaan,16.7,25.5,12.7,10.1,13.2,20.2,21.3,29.8
+104312,Region X (Northern Mindanao),Misamis Oriental,Kinoguitan,17.1,27.0,11.5,9.2,13.9,20.3,22.9,31.1
+104313,Region X (Northern Mindanao),Misamis Oriental,Lagonglong,18.9,27.9,13.8,8.2,14.6,23.2,24.1,31.7
+104314,Region X (Northern Mindanao),Misamis Oriental,Laguindingan,15.2,23.6,15.6,10.3,11.3,19.1,19.6,27.6
+104315,Region X (Northern Mindanao),Misamis Oriental,Libertad,17.9,24.7,19.3,15.0,12.2,23.6,18.6,30.8
+104316,Region X (Northern Mindanao),Misamis Oriental,Lugait,14.1,22.2,18.0,11.4,9.9,18.3,18.0,26.4
+104317,Region X (Northern Mindanao),Misamis Oriental,Magsaysay,25.8,34.9,8.4,6.6,22.2,29.4,31.1,38.6
+104318,Region X (Northern Mindanao),Misamis Oriental,Manticao,17.7,25.2,15.1,11.5,13.3,22.1,20.4,29.9
+104319,Region X (Northern Mindanao),Misamis Oriental,Medina,18.2,28.5,11.2,8.3,14.8,21.5,24.6,32.4
+104320,Region X (Northern Mindanao),Misamis Oriental,Naawan,16.7,22.6,14.5,7.2,12.7,20.6,19.9,25.3
+104321,Region X (Northern Mindanao),Misamis Oriental,Opol,12.7,14.3,15.2,16.8,9.5,15.8,10.3,18.2
+104322,Region X (Northern Mindanao),Misamis Oriental,Salay,17.3,27.2,12.6,9.6,13.7,20.8,22.9,31.5
+104323,Region X (Northern Mindanao),Misamis Oriental,Sugbongcogon,17.9,26.2,15.7,11.1,13.3,22.5,21.4,31.0
+104324,Region X (Northern Mindanao),Misamis Oriental,Tagoloan,16.8,25.0,15.8,11.6,12.5,21.2,20.2,29.8
+104325,Region X (Northern Mindanao),Misamis Oriental,Talisayan,19.9,26.5,12.4,7.2,15.8,23.9,23.4,29.7
+104326,Region X (Northern Mindanao),Misamis Oriental,Villanueva,16.0,22.4,19.9,7.3,10.8,21.2,19.8,25.1
+112301,Region XI (Davao Region),Davao del Norte,Asuncion (Saug),18.1,17.0,12.5,9.1,14.4,21.8,14.4,19.5
+112303,Region XI (Davao Region),Davao del Norte,Carmen,14.2,14.0,12.3,11.4,11.3,17.0,11.4,16.7
+112305,Region XI (Davao Region),Davao del Norte,Kapalong,20.9,23.0,15.9,13.5,15.4,26.4,17.9,28.1
+112314,Region XI (Davao Region),Davao del Norte,New Corella,19.6,18.5,14.0,11.1,15.1,24.1,15.1,21.8
+112315,Region XI (Davao Region),Davao del Norte,City of Panabo,8.7,9.9,11.3,8.9,7.0,10.3,8.5,11.4
+112317,Region XI (Davao Region),Davao del Norte,Island Garden City of Samal,12.3,12.2,10.9,8.3,10.1,14.5,10.6,13.9
+112318,Region XI (Davao Region),Davao del Norte,Santo Tomas,12.1,10.7,14.9,11.7,9.1,15.0,8.6,12.7
+112319,Region XI (Davao Region),Davao del Norte,City of Tagum,5.5,8.4,15.6,7.0,4.1,6.9,7.5,9.4
+112322,Region XI (Davao Region),Davao del Norte,Talaingod,49.6,38.4,14.3,12.6,37.9,61.2,30.5,46.4
+112323,Region XI (Davao Region),Davao del Norte,Braulio E. Dujali,11.4,13.0,23.9,18.2,6.9,15.9,9.1,16.9
+112324,Region XI (Davao Region),Davao del Norte,San Isidro,25.1,19.0,13.9,12.3,19.4,30.9,15.1,22.8
+112401,Region XI (Davao Region),Davao del Sur,Bansalan,17.3,14.0,12.2,10.5,13.8,20.7,11.6,16.4
+112403,Region XI (Davao Region),Davao del Sur,City of Digos,5.5,8.9,16.3,10.7,4.0,6.9,7.3,10.5
+112404,Region XI (Davao Region),Davao del Sur,Hagonoy,14.1,15.5,11.8,8.5,11.4,16.9,13.3,17.6
+112406,Region XI (Davao Region),Davao del Sur,Kiblawan,29.9,21.4,11.3,10.5,24.3,35.5,17.8,25.1
+112407,Region XI (Davao Region),Davao del Sur,Magsaysay,23.5,21.3,10.4,6.7,19.5,27.6,19.0,23.7
+112408,Region XI (Davao Region),Davao del Sur,Malalag,17.4,19.2,12.0,9.7,14.0,20.8,16.1,22.3
+112410,Region XI (Davao Region),Davao del Sur,Matanao,21.0,17.9,8.2,9.4,18.2,23.9,15.1,20.6
+112411,Region XI (Davao Region),Davao del Sur,Padada,9.5,11.0,15.0,14.9,7.2,11.8,8.3,13.7
+112412,Region XI (Davao Region),Davao del Sur,Santa Cruz,20.7,18.2,13.4,8.9,16.2,25.3,15.6,20.9
+112414,Region XI (Davao Region),Davao del Sur,Sulop,16.1,16.0,11.8,11.1,13.0,19.3,13.1,18.9
+112501,Region XI (Davao Region),Davao Oriental,Baganga,36.4,26.2,5.6,7.4,33.0,39.7,23.0,29.4
+112502,Region XI (Davao Region),Davao Oriental,Banaybanay,26.1,25.3,5.7,11.8,23.6,28.5,20.4,30.2
+112503,Region XI (Davao Region),Davao Oriental,Boston,29.5,23.1,12.9,13.2,23.3,35.7,18.1,28.2
+112504,Region XI (Davao Region),Davao Oriental,Caraga,40.0,33.5,9.1,9.0,34.1,46.0,28.5,38.4
+112505,Region XI (Davao Region),Davao Oriental,Cateel,32.7,30.6,9.5,7.9,27.6,37.8,26.6,34.5
+112506,Region XI (Davao Region),Davao Oriental,Governor Generoso,35.1,31.5,9.6,7.8,29.5,40.6,27.5,35.6
+112507,Region XI (Davao Region),Davao Oriental,Lupon,26.1,24.7,10.5,7.2,21.5,30.6,21.8,27.7
+112508,Region XI (Davao Region),Davao Oriental,Manay,37.1,35.2,11.9,8.4,29.8,44.3,30.3,40.0
+112509,Region XI (Davao Region),Davao Oriental,City of Mati,21.5,21.8,9.8,5.8,18.0,25.0,19.7,23.9
+112510,Region XI (Davao Region),Davao Oriental,San Isidro,31.2,24.3,9.0,11.2,26.6,35.9,19.8,28.8
+112511,Region XI (Davao Region),Davao Oriental,Tarragona,38.2,34.5,10.9,8.2,31.4,45.0,29.8,39.1
+118201,Region XI (Davao Region),Davao de Oro,Compostela,25.3,17.2,5.9,9.1,22.8,27.7,14.6,19.8
+118202,Region XI (Davao Region),Davao de Oro,Laak (San Vicente),24.9,22.6,5.8,8.0,22.5,27.3,19.6,25.5
+118203,Region XI (Davao Region),Davao de Oro,Mabini (Doña Alicia),22.6,21.7,14.1,11.8,17.4,27.8,17.5,25.9
+118204,Region XI (Davao Region),Davao de Oro,Maco,19.8,17.2,7.8,9.8,17.3,22.4,14.4,19.9
+118205,Region XI (Davao Region),Davao de Oro,Maragusan (San Mariano),22.7,19.4,10.4,10.2,18.9,26.6,16.1,22.6
+118206,Region XI (Davao Region),Davao de Oro,Mawab,18.1,15.9,14.5,12.5,13.7,22.4,12.6,19.1
+118207,Region XI (Davao Region),Davao de Oro,Monkayo,28.0,23.3,9.0,7.7,23.9,32.2,20.4,26.2
+118208,Region XI (Davao Region),Davao de Oro,Montevista,27.9,18.5,10.0,7.7,23.3,32.4,16.2,20.9
+118209,Region XI (Davao Region),Davao de Oro,Nabunturan,17.5,13.7,11.7,12.5,14.1,20.9,10.9,16.5
+118210,Region XI (Davao Region),Davao de Oro,New Bataan,25.6,19.2,11.6,12.0,20.7,30.5,15.4,23.0
+118211,Region XI (Davao Region),Davao de Oro,Pantukan,27.8,29.8,13.7,7.2,21.5,34.0,26.3,33.3
+118601,Region XI (Davao Region),Davao Occidental,Don Marcelino,37.9,42.0,11.1,6.1,31.0,44.8,37.8,46.2
+118602,Region XI (Davao Region),Davao Occidental,Jose Abad Santos (Trinidad),47.2,55.3,7.7,4.0,41.2,53.1,51.7,58.9
+118603,Region XI (Davao Region),Davao Occidental,Malita,35.8,35.7,8.6,3.9,30.8,40.9,33.4,37.9
+118604,Region XI (Davao Region),Davao Occidental,Santa Maria,31.7,26.4,10.5,5.9,26.2,37.2,23.8,29.0
+118605,Region XI (Davao Region),Davao Occidental,Sarangani,35.5,29.0,11.9,8.5,28.5,42.4,25.0,33.1
+124701,Region XII (SOCCSKSARGEN),Cotabato,Alamada,44.3,48.0,11.4,6.6,36.1,52.5,42.7,53.2
+124702,Region XII (SOCCSKSARGEN),Cotabato,Carmen,39.3,40.5,12.4,6.4,31.2,47.4,36.3,44.8
+124703,Region XII (SOCCSKSARGEN),Cotabato,Kabacan,24.2,29.2,13.9,8.6,18.6,29.8,25.0,33.3
+124704,Region XII (SOCCSKSARGEN),Cotabato,City of Kidapawan,14.0,20.8,16.0,6.4,10.2,17.8,18.6,23.0
+124705,Region XII (SOCCSKSARGEN),Cotabato,Libungan,25.2,30.9,15.6,10.0,18.8,31.6,25.8,36.0
+124706,Region XII (SOCCSKSARGEN),Cotabato,Magpet,41.7,33.5,9.3,8.9,35.3,48.1,28.6,38.4
+124707,Region XII (SOCCSKSARGEN),Cotabato,Makilala,20.3,28.2,12.7,9.7,16.0,24.6,23.7,32.7
+124708,Region XII (SOCCSKSARGEN),Cotabato,Matalam,35.9,34.9,8.3,7.2,31.0,40.8,30.7,39.0
+124709,Region XII (SOCCSKSARGEN),Cotabato,Midsayap,24.7,27.2,11.6,5.7,19.9,29.5,24.6,29.7
+124710,Region XII (SOCCSKSARGEN),Cotabato,M'lang,20.6,28.3,14.8,7.5,15.7,25.5,24.8,31.8
+124711,Region XII (SOCCSKSARGEN),Cotabato,Pigkawayan,33.2,41.1,8.1,8.1,28.8,37.6,35.6,46.6
+124712,Region XII (SOCCSKSARGEN),Cotabato,Pikit,44.0,40.6,7.5,5.8,38.6,49.4,36.7,44.5
+124713,Region XII (SOCCSKSARGEN),Cotabato,President Roxas,37.5,38.5,9.2,9.0,31.7,43.3,32.8,44.2
+124714,Region XII (SOCCSKSARGEN),Cotabato,Tulunan,35.4,30.9,9.3,7.9,30.0,40.8,26.9,35.0
+124715,Region XII (SOCCSKSARGEN),Cotabato,Antipas,28.6,26.4,16.0,12.2,21.0,36.2,21.1,31.7
+124716,Region XII (SOCCSKSARGEN),Cotabato,Banisilan,43.0,41.6,9.2,8.6,36.4,49.6,35.7,47.6
+124717,Region XII (SOCCSKSARGEN),Cotabato,Aleosan,47.1,39.9,9.2,7.9,40.0,54.2,34.7,45.1
+124718,Region XII (SOCCSKSARGEN),Cotabato,Arakan,42.1,36.7,8.8,8.0,36.0,48.2,31.9,41.6
+126302,Region XII (SOCCSKSARGEN),South Cotabato,Banga,19.5,20.0,15.5,8.5,14.6,24.4,17.2,22.8
+126306,Region XII (SOCCSKSARGEN),South Cotabato,City of Koronadal,12.1,11.8,16.7,10.5,8.8,15.4,9.7,13.8
+126311,Region XII (SOCCSKSARGEN),South Cotabato,Norala,24.6,18.8,15.7,13.1,18.2,31.0,14.8,22.9
+126312,Region XII (SOCCSKSARGEN),South Cotabato,Polomolok,15.0,14.5,19.3,10.0,10.2,19.8,12.1,16.9
+126313,Region XII (SOCCSKSARGEN),South Cotabato,Surallah,17.9,18.6,16.4,13.0,13.0,22.8,14.6,22.5
+126314,Region XII (SOCCSKSARGEN),South Cotabato,Tampakan,30.9,18.2,13.3,16.6,24.2,37.6,13.3,23.2
+126315,Region XII (SOCCSKSARGEN),South Cotabato,Tantangan,26.8,21.3,15.3,10.6,20.1,33.5,17.6,25.1
+126316,Region XII (SOCCSKSARGEN),South Cotabato,T'boli,45.7,36.1,8.1,10.3,39.6,51.8,29.9,42.2
+126317,Region XII (SOCCSKSARGEN),South Cotabato,Tupi,22.5,22.4,17.9,10.4,15.9,29.1,18.5,26.2
+126318,Region XII (SOCCSKSARGEN),South Cotabato,Santo Nino,17.3,17.7,20.5,14.3,11.5,23.1,13.5,21.9
+126319,Region XII (SOCCSKSARGEN),South Cotabato,Lake Sebu,49.3,42.1,10.5,10.1,40.8,57.9,35.1,49.1
+126501,Region XII (SOCCSKSARGEN),Sultan Kudarat,Bagumbayan,33.1,34.5,11.7,6.8,26.7,39.5,30.6,38.4
+126502,Region XII (SOCCSKSARGEN),Sultan Kudarat,Columbio,36.2,45.0,13.0,12.3,28.5,43.9,35.9,54.1
+126503,Region XII (SOCCSKSARGEN),Sultan Kudarat,Esperanza,27.5,29.4,11.4,9.5,22.4,32.6,24.9,34.0
+126504,Region XII (SOCCSKSARGEN),Sultan Kudarat,Isulan,20.6,20.6,17.4,11.3,14.7,26.5,16.7,24.4
+126505,Region XII (SOCCSKSARGEN),Sultan Kudarat,Kalamansig,42.2,37.8,9.0,9.7,36.0,48.5,31.8,43.9
+126506,Region XII (SOCCSKSARGEN),Sultan Kudarat,Lebak,34.7,35.1,9.1,8.2,29.4,40.0,30.4,39.9
+126507,Region XII (SOCCSKSARGEN),Sultan Kudarat,Lutayan,39.9,41.0,13.2,12.3,31.2,48.6,32.7,49.3
+126508,Region XII (SOCCSKSARGEN),Sultan Kudarat,Lambayong,34.6,32.8,9.8,12.7,29.0,40.2,25.9,39.7
+126509,Region XII (SOCCSKSARGEN),Sultan Kudarat,Palimbang,60.5,54.1,6.8,9.0,53.8,67.2,46.0,62.1
+126510,Region XII (SOCCSKSARGEN),Sultan Kudarat,President Quirino,26.7,28.5,13.3,13.7,20.8,32.6,22.1,34.9
+126511,Region XII (SOCCSKSARGEN),Sultan Kudarat,City of Tacurong,10.3,15.4,19.8,7.8,7.0,13.6,13.4,17.4
+126512,Region XII (SOCCSKSARGEN),Sultan Kudarat,Sen. Ninoy Aquino,38.2,34.2,8.9,8.1,32.6,43.8,29.7,38.8
+128001,Region XII (SOCCSKSARGEN),Sarangani,Alabel,29.2,34.7,16.0,8.0,21.5,36.9,30.1,39.3
+128002,Region XII (SOCCSKSARGEN),Sarangani,Glan,39.3,45.2,7.8,5.6,34.2,44.4,41.1,49.4
+128003,Region XII (SOCCSKSARGEN),Sarangani,Kiamba,33.4,29.6,12.0,8.4,26.8,40.0,25.5,33.6
+128004,Region XII (SOCCSKSARGEN),Sarangani,Maasim,41.9,39.0,11.6,7.8,34.0,49.8,34.0,44.0
+128005,Region XII (SOCCSKSARGEN),Sarangani,Maitum,38.6,26.7,8.7,10.9,33.0,44.2,21.9,31.4
+128006,Region XII (SOCCSKSARGEN),Sarangani,Malapatan,45.7,52.9,10.5,4.5,37.8,53.6,49.0,56.8
+128007,Region XII (SOCCSKSARGEN),Sarangani,Malungon,34.2,37.8,9.9,6.3,28.6,39.8,33.8,41.7
+160201,Region XIII (Caraga),Agusan del Norte,Buenavista,24.8,32.2,8.4,5.9,21.4,28.2,29.1,35.3
+160203,Region XIII (Caraga),Agusan del Norte,City of Cabadbaran,19.0,27.9,10.7,6.0,15.7,22.4,25.2,30.7
+160204,Region XIII (Caraga),Agusan del Norte,Carmen,27.2,32.6,14.1,11.6,20.9,33.5,26.4,38.8
+160205,Region XIII (Caraga),Agusan del Norte,Jabonga,31.3,38.2,9.7,7.0,26.3,36.3,33.7,42.6
+160206,Region XIII (Caraga),Agusan del Norte,Kitcharao,23.9,30.5,12.4,10.8,19.0,28.7,25.1,36.0
+160207,Region XIII (Caraga),Agusan del Norte,Las Nieves,37.2,42.4,7.5,6.6,32.7,41.8,37.8,47.1
+160208,Region XIII (Caraga),Agusan del Norte,Magallanes,21.0,31.4,15.4,7.7,15.7,26.3,27.4,35.3
+160209,Region XIII (Caraga),Agusan del Norte,Nasipit,19.7,28.6,10.6,6.9,16.3,23.1,25.3,31.8
+160210,Region XIII (Caraga),Agusan del Norte,Santiago,28.7,41.8,14.9,8.7,21.7,35.7,35.8,47.7
+160211,Region XIII (Caraga),Agusan del Norte,Tubay,28.8,38.0,10.2,8.7,24.0,33.7,32.6,43.5
+160212,Region XIII (Caraga),Agusan del Norte,Remedios T. Romualdez,27.7,34.0,12.2,11.0,22.2,33.3,27.9,40.1
+160301,Region XIII (Caraga),Agusan del Sur,City of Bayugan,31.5,31.9,7.5,6.0,27.6,35.4,28.7,35.1
+160302,Region XIII (Caraga),Agusan del Sur,Bunawan,30.3,32.3,13.6,10.7,23.6,37.1,26.7,38.0
+160303,Region XIII (Caraga),Agusan del Sur,Esperanza,45.7,44.1,5.1,5.1,41.9,49.5,40.4,47.8
+160304,Region XIII (Caraga),Agusan del Sur,La Paz,50.1,48.1,7.3,7.3,44.1,56.1,42.3,53.8
+160305,Region XIII (Caraga),Agusan del Sur,Loreto,44.4,45.3,7.9,7.1,38.6,50.2,40.0,50.6
+160306,Region XIII (Caraga),Agusan del Sur,Prosperidad,34.2,37.6,7.6,6.1,30.0,38.5,33.8,41.4
+160307,Region XIII (Caraga),Agusan del Sur,Rosario,35.4,33.6,12.7,12.0,28.0,42.8,27.0,40.2
+160308,Region XIII (Caraga),Agusan del Sur,San Francisco,25.7,28.8,9.5,7.4,21.7,29.7,25.3,32.3
+160309,Region XIII (Caraga),Agusan del Sur,San Luis,47.3,48.0,7.2,6.9,41.8,52.9,42.5,53.4
+160310,Region XIII (Caraga),Agusan del Sur,Santa Josefa,31.0,29.9,10.4,11.9,25.7,36.3,24.0,35.7
+160311,Region XIII (Caraga),Agusan del Sur,Talacogon,36.2,42.8,9.8,8.1,30.4,42.0,37.1,48.5
+160312,Region XIII (Caraga),Agusan del Sur,Trento,29.6,28.2,13.0,8.5,23.3,35.9,24.3,32.1
+160313,Region XIII (Caraga),Agusan del Sur,Veruela,39.9,39.4,8.7,7.2,34.2,45.5,34.7,44.0
+160314,Region XIII (Caraga),Agusan del Sur,Sibagat,40.2,41.2,8.5,6.5,34.6,45.8,36.7,45.6
+166701,Region XIII (Caraga),Surigao del Norte,Alegria,37.4,30.5,8.5,10.7,32.1,42.6,25.2,35.9
+166702,Region XIII (Caraga),Surigao del Norte,Bacuag,31.8,32.2,11.9,8.9,25.5,38.0,27.5,36.9
+166704,Region XIII (Caraga),Surigao del Norte,Burgos,31.6,25.9,14.3,19.7,24.1,39.0,17.5,34.3
+166706,Region XIII (Caraga),Surigao del Norte,Claver,32.3,24.4,7.9,10.5,28.1,36.5,20.2,28.6
+166707,Region XIII (Caraga),Surigao del Norte,Dapa,38.1,30.9,6.6,10.3,34.0,42.3,25.7,36.2
+166708,Region XIII (Caraga),Surigao del Norte,Del Carmen,35.5,30.6,8.0,10.4,30.9,40.2,25.4,35.9
+166710,Region XIII (Caraga),Surigao del Norte,General Luna,40.7,27.7,7.0,11.4,36.0,45.4,22.5,32.9
+166711,Region XIII (Caraga),Surigao del Norte,Gigaquit,39.2,34.6,9.8,9.6,32.9,45.5,29.2,40.1
+166714,Region XIII (Caraga),Surigao del Norte,Mainit,39.0,31.3,8.1,9.6,33.8,44.1,26.3,36.2
+166715,Region XIII (Caraga),Surigao del Norte,Malimono,35.2,31.8,9.6,10.7,29.6,40.7,26.2,37.4
+166716,Region XIII (Caraga),Surigao del Norte,Pilar,37.4,28.6,8.7,12.2,32.1,42.7,22.8,34.4
+166717,Region XIII (Caraga),Surigao del Norte,Placer,32.7,29.5,9.2,10.5,27.7,37.6,24.4,34.6
+166718,Region XIII (Caraga),Surigao del Norte,San Benito,38.7,30.8,11.9,16.3,31.2,46.3,22.6,39.1
+166719,Region XIII (Caraga),Surigao del Norte,San Francisco (Anao-Aon),32.1,26.2,10.5,11.8,26.6,37.6,21.1,31.3
+166720,Region XIII (Caraga),Surigao del Norte,San Isidro,36.8,31.5,10.1,14.1,30.7,42.9,24.2,38.8
+166721,Region XIII (Caraga),Surigao del Norte,Santa Monica (Sapao),33.7,27.0,10.9,12.5,27.6,39.7,21.5,32.5
+166722,Region XIII (Caraga),Surigao del Norte,Sison,36.2,28.8,9.4,13.9,30.7,41.8,22.2,35.3
+166723,Region XIII (Caraga),Surigao del Norte,Socorro,32.0,29.0,13.0,13.5,25.2,38.8,22.5,35.4
+166724,Region XIII (Caraga),Surigao del Norte,City of Surigao,24.7,24.9,6.0,7.0,22.3,27.2,22.0,27.8
+166725,Region XIII (Caraga),Surigao del Norte,Tagana-an,37.2,30.2,8.3,11.9,32.1,42.3,24.3,36.1
+166727,Region XIII (Caraga),Surigao del Norte,Tubod,29.4,26.5,10.9,13.0,24.1,34.6,20.8,32.2
+166801,Region XIII (Caraga),Surigao del Norte,Barobo,33.2,31.7,11.0,7.0,27.2,39.2,28.0,35.4
+166802,Region XIII (Caraga),Surigao del Norte,Bayabas,31.1,37.5,15.5,11.7,23.2,39.0,30.3,44.8
+166803,Region XIII (Caraga),Surigao del Norte,City of Bislig,21.6,28.1,12.5,7.0,17.2,26.0,24.9,31.4
+166804,Region XIII (Caraga),Surigao del Norte,Cagwait,28.0,36.5,11.6,8.3,22.6,33.3,31.5,41.4
+166805,Region XIII (Caraga),Surigao del Norte,Cantilan,19.2,25.4,10.7,11.4,15.8,22.5,20.7,30.2
+166806,Region XIII (Caraga),Surigao del Norte,Carmen,27.3,29.6,15.3,17.6,20.5,34.2,21.0,38.1
+166807,Region XIII (Caraga),Surigao del Norte,Carrascal,23.0,22.9,15.6,12.9,17.1,29.0,18.1,27.8
+166808,Region XIII (Caraga),Surigao del Sur,Cortes,28.4,33.3,13.5,10.8,22.1,34.7,27.4,39.2
+166809,Region XIII (Caraga),Surigao del Sur,Hinatuan,31.3,32.0,8.0,8.4,27.2,35.4,27.6,36.5
+166810,Region XIII (Caraga),Surigao del Sur,Lanuza,29.5,30.9,10.5,11.4,24.4,34.6,25.0,36.7
+166811,Region XIII (Caraga),Surigao del Sur,Lianga,30.0,33.5,10.2,9.4,25.0,35.1,28.3,38.7
+166812,Region XIII (Caraga),Surigao del Sur,Lingig,36.3,32.2,9.1,10.5,30.9,41.8,26.6,37.7
+166813,Region XIII (Caraga),Surigao del Sur,Madrid,21.5,23.3,12.1,11.5,17.2,25.7,18.9,27.7
+166814,Region XIII (Caraga),Surigao del Sur,Marihatag,37.8,37.3,8.8,9.7,32.4,43.3,31.3,43.2
+166815,Region XIII (Caraga),Surigao del Sur,San Agustin,32.0,34.7,10.6,9.7,26.4,37.6,29.1,40.2
+166816,Region XIII (Caraga),Surigao del Sur,San Miguel,38.8,38.1,8.1,7.5,33.7,43.9,33.4,42.7
+166817,Region XIII (Caraga),Surigao del Sur,Tagbina,32.7,31.1,7.6,7.5,28.6,36.7,27.2,34.9
+166818,Region XIII (Caraga),Surigao del Sur,Tago,29.7,28.0,7.8,9.2,25.9,33.5,23.7,32.2
+166819,Region XIII (Caraga),Surigao del Sur,City of Tandag,19.1,20.8,10.6,8.8,15.8,22.5,17.8,23.8
+168501,Region XIII (Caraga),Dinagat Islands,Basilisa (Rizal),33.2,45.6,7.4,5.6,29.2,37.3,41.4,49.8
+168502,Region XIII (Caraga),Dinagat Islands,Cagdianao,36.8,39.0,8.7,9.3,31.5,42.1,33.0,45.0
+168503,Region XIII (Caraga),Dinagat Islands,Dinagat,35.3,30.8,10.3,8.8,29.3,41.3,26.3,35.3
+168504,Region XIII (Caraga),Dinagat Islands,Libjo (Albor),38.5,34.2,8.9,10.3,32.9,44.1,28.4,40.0
+168505,Region XIII (Caraga),Dinagat Islands,Loreto,31.5,30.0,9.9,14.1,26.4,36.6,23.1,37.0
+168506,Region XIII (Caraga),Dinagat Islands,San Jose,27.6,22.5,9.1,10.8,23.5,31.7,18.5,26.5
+168507,Region XIII (Caraga),Dinagat Islands,Tubajon,35.7,34.8,12.4,13.5,28.5,43.0,27.1,42.6
+150702,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Basilan,City of Lamitan,52.7,36.0,6.3,6.4,47.3,58.2,32.2,39.8
+150703,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Basilan,Lantawan,64.7,58.5,6.8,7.6,57.5,71.9,51.2,65.9
+150704,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Basilan,Maluso,72.8,59.8,5.0,5.4,66.7,78.8,54.5,65.1
+150705,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Basilan,Sumisip,72.2,48.9,4.3,6.2,67.1,77.3,43.9,53.9
+150706,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Basilan,Tipo-Tipo,76.6,62.3,5.3,5.9,69.9,83.3,56.3,68.3
+150707,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Basilan,Tuburan,75.5,61.8,6.9,7.7,67.0,84.1,54.0,69.6
+150708,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Basilan,Akbar,70.1,64.9,9.4,9.3,59.3,81.0,54.9,74.8
+150709,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Basilan,Al-barka,73.6,67.3,5.0,5.7,67.6,79.6,60.9,73.6
+150710,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Basilan,Hadji Mohammad Ajul,81.6,68.5,6.5,6.6,73.0,90.3,61.0,76.0
+150711,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Basilan,Ungkaya Pukan,76.8,57.4,5.3,8.3,70.1,83.4,49.5,65.2
+150712,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Basilan,Hadji Muhtamad,75.2,67.6,5.9,8.1,67.8,82.5,58.6,76.5
+150713,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Basilan,Tabuan-Lasa,85.9,73.4,4.1,6.2,80.2,91.6,66.0,80.9
+153601,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Bacolod-Kalawi,66.6,21.6,5.4,13.1,60.7,72.6,17.0,26.3
+153602,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Balabagan,73.5,32.4,4.5,16.7,68.0,78.9,23.5,41.3
+153603,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Balindong (Watu),67.4,25.5,3.7,12.4,63.3,71.4,20.3,30.7
+153604,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Bayang,70.4,18.5,3.9,10.2,65.9,74.9,15.4,21.6
+153605,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Binidayan,69.8,19.8,5.1,12.7,64.0,75.6,15.6,23.9
+153606,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Bubong,67.3,20.6,4.4,13.3,62.4,72.1,16.1,25.1
+153607,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Butig,80.7,23.1,5.4,16.3,73.5,87.9,16.9,29.3
+153609,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Ganassi,74.2,23.6,3.8,13.3,69.5,78.9,18.5,28.8
+153610,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Kapai,88.9,17.5,2.7,17.5,85.0,92.9,12.5,22.5
+153611,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Lumba-Bayabao (Maguing),76.6,19.3,2.9,13.6,72.9,80.2,15.0,23.6
+153612,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Lumbatan,76.9,26.5,4.4,10.7,71.3,82.4,21.8,31.2
+153613,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Madalum,74.0,21.1,3.2,14.8,70.1,77.9,15.9,26.2
+153614,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Madamba,76.5,23.5,4.4,14.3,70.9,82.0,18.0,29.1
+153615,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Malabang,71.0,10.8,3.7,22.8,66.7,75.4,6.8,14.9
+153616,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Marantao,67.3,26.3,4.0,11.8,62.8,71.7,21.2,31.4
+153617,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,City of Marawi,63.2,20.4,3.6,15.2,59.5,66.9,15.3,25.5
+153618,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Masiu,74.9,18.4,2.9,23.0,71.3,78.5,11.5,25.4
+153619,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Mulondo,78.2,40.3,3.5,15.7,73.7,82.7,30.0,50.7
+153620,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Pagayawan (Tatarikan),89.6,20.1,2.9,18.2,85.2,93.9,14.0,26.1
+153621,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Piagapo,83.9,15.6,2.5,22.4,80.6,87.3,9.9,21.4
+153622,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Poona Bayabao (Gata),72.3,15.4,4.4,17.1,67.1,77.4,11.1,19.7
+153623,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Pualas,75.9,26.3,4.2,13.0,70.7,81.1,20.6,31.9
+153624,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Ditsaan-Ramain,73.0,25.3,3.6,14.5,68.7,77.3,19.3,31.4
+153625,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Saguiaran,75.3,21.8,3.8,20.3,70.6,79.9,14.5,29.0
+153626,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Tamparan,73.6,19.9,3.5,14.2,69.4,77.8,15.3,24.5
+153627,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Taraka,72.9,19.4,4.5,19.0,67.5,78.2,13.4,25.5
+153628,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Tubaran,78.3,20.2,4.0,15.5,73.1,83.5,15.1,25.3
+153629,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Tugaya,70.3,26.3,5.1,14.2,64.4,76.3,20.1,32.4
+153630,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Wao,65.1,22.9,4.4,12.7,60.3,69.8,18.1,27.6
+153631,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Marogong,86.6,42.2,3.6,10.2,81.4,91.7,35.1,49.3
+153632,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Calanogas,86.1,24.7,3.2,11.9,81.6,90.6,19.9,29.6
+153633,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Buadiposo-Buntong,66.9,23.1,3.9,18.5,62.6,71.2,16.1,30.2
+153634,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Maguing,76.1,28.3,3.4,11.9,71.8,80.3,22.7,33.8
+153635,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Sultan Gumander,86.6,24.7,3.3,19.6,81.9,91.3,16.7,32.7
+153636,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Lumbayanague,76.5,23.7,4.0,22.3,71.5,81.5,15.0,32.3
+153637,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Bumbaran,75.7,32.0,4.7,12.5,69.9,81.6,25.4,38.5
+153638,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Tagoloan II,85.0,18.9,3.1,15.3,80.7,89.3,14.2,23.7
+153639,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Kapatagan,85.2,27.3,3.3,20.6,80.6,89.8,18.0,36.5
+153640,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Sultan Dumalondong,88.1,31.9,4.9,22.2,81.0,95.1,20.3,43.6
+153641,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Lanao del Sur,Lumbaca-Unayan,82.3,24.4,4.7,21.1,75.9,88.7,15.9,32.9
+153801,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Ampatuan,58.9,32.9,12.4,14.9,46.9,70.9,24.8,41.0
+153802,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Buldon,66.8,44.1,9.0,12.6,56.9,76.7,34.9,53.2
+153803,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Buluan,63.9,26.9,16.5,20.2,46.5,81.3,17.9,35.8
+153805,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Datu Paglas,65.1,38.2,9.1,13.5,55.3,74.8,29.7,46.7
+153806,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Datu Piang,52.1,40.6,17.2,18.5,37.4,66.9,28.3,53.0
+153807,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Datu Odin Sinsuat (Dinaig),48.0,30.9,9.0,12.6,40.9,55.1,24.5,37.4
+153808,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Shariff Aguak (Maganoy),62.9,37.6,12.1,18.4,50.4,75.3,26.3,49.0
+153809,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Matanog,64.7,51.4,11.6,9.9,52.4,77.0,43.0,59.8
+153810,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Pagalungan,61.2,44.2,12.0,15.9,49.1,73.2,32.6,55.8
+153811,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Parang,49.1,24.1,11.8,13.5,39.5,58.6,18.8,29.4
+153812,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Sultan Kudarat (Nuling),58.9,37.2,7.6,8.3,51.6,66.2,32.1,42.3
+153813,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Sultan Sa Barongis (Lambayong),67.1,49.5,9.8,10.6,56.3,77.9,40.9,58.2
+153814,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Kabuntalan (Tumbao),68.5,42.3,8.1,12.0,59.4,77.6,34.0,50.6
+153815,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Upi,51.0,39.1,7.9,9.9,44.3,57.6,32.7,45.5
+153816,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Talayan,70.8,52.8,9.4,10.8,59.9,81.7,43.4,62.1
+153817,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,South Upi,60.4,51.5,12.0,11.6,48.5,72.3,41.6,61.3
+153818,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Barira,65.7,40.9,9.0,14.0,55.9,75.4,31.5,50.3
+153819,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Gen. S. K. Pendatun,73.8,43.2,5.9,13.1,66.6,80.9,33.9,52.5
+153820,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Mamasapano,72.6,47.2,8.9,13.6,62.0,83.3,36.6,57.7
+153821,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Talitay,68.7,41.1,9.6,19.0,57.8,79.6,28.2,53.9
+153822,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Pagagawan,67.5,41.8,8.4,12.2,58.2,76.9,33.4,50.1
+153823,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Paglat,72.8,48.4,8.8,11.8,62.2,83.3,39.0,57.8
+153824,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Sultan Mastura,59.8,35.3,9.6,16.6,50.3,69.2,25.7,44.9
+153825,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Guindulungan,70.6,45.2,8.9,12.4,60.3,81.0,36.0,54.4
+153826,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Datu Saudi-Ampatuan,62.3,44.2,11.5,14.2,50.6,74.1,33.9,54.6
+153827,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Datu Unsay,67.6,41.1,11.0,18.6,55.4,79.8,28.5,53.7
+153828,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Datu Abdullah Sangki,67.1,25.4,8.2,20.5,58.1,76.2,16.8,33.9
+153829,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Rajah Buayan,73.3,38.8,6.9,13.1,64.9,81.6,30.4,47.1
+153830,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Datu Blah T. Sinsuat,70.4,48.1,7.7,12.7,61.6,79.3,38.1,58.2
+153831,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Datu Anggal Midtimbang,69.5,36.2,11.4,18.5,56.5,82.5,25.2,47.3
+153832,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Mangudadatu,52.0,37.6,15.0,13.7,39.2,64.8,29.1,46.1
+153833,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Pandag,70.2,48.4,10.2,11.2,58.4,81.9,39.5,57.4
+153834,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Northern Kabuntalan,65.5,40.3,9.7,16.6,55.0,76.0,29.3,51.3
+153835,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Datu Hoffer Ampatuan,70.3,51.5,7.1,13.1,62.1,78.5,40.4,62.7
+153836,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Datu Salibo,59.3,38.2,12.1,19.9,47.5,71.1,25.7,50.6
+153837,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Maguindanao,Shariff Saydona Mustapha,66.3,40.5,7.4,14.1,58.2,74.4,31.1,49.9
+156601,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Sulu,Indanan,69.8,42.4,6.7,8.2,62.2,77.4,36.8,48.1
+156602,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Sulu,Jolo,58.9,53.1,10.1,10.3,49.2,68.7,44.2,62.1
+156603,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Sulu,Kalingalan Caluang,78.7,61.4,6.3,9.5,70.6,86.9,51.9,71.0
+156604,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Sulu,Luuk,78.3,56.6,6.4,15.6,70.1,86.6,42.1,71.2
+156605,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Sulu,Maimbung,71.2,51.6,6.3,6.9,63.8,78.6,45.8,57.4
+156606,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Sulu,Hadji Panglima Tahil (Marunggas),78.5,64.1,7.9,5.4,68.3,88.7,58.5,69.8
+156607,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Sulu,Old Panamao,84.7,50.4,3.5,12.2,79.9,89.6,40.3,60.6
+156608,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Sulu,Pangutaran,76.8,62.3,4.8,4.8,70.7,82.8,57.4,67.3
+156609,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Sulu,Parang,77.2,69.7,2.9,7.3,73.5,80.9,61.3,78.1
+156610,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Sulu,Pata,87.3,57.7,3.8,7.9,81.9,92.8,50.2,65.2
+156611,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Sulu,Patikul,59.1,61.2,7.4,9.4,51.9,66.3,51.8,70.7
+156612,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Sulu,Siasi,70.9,54.1,3.3,10.5,67.1,74.8,44.7,63.4
+156613,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Sulu,Talipao,82.6,54.1,2.4,5.7,79.4,85.9,49.0,59.2
+156614,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Sulu,Tapul,76.8,70.7,4.9,6.0,70.7,82.9,63.8,77.7
+156615,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Sulu,Tongkil,80.7,63.0,4.8,9.3,74.4,87.0,53.4,72.7
+156616,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Sulu,Panglima Estino (New Panamao),85.4,68.3,4.5,5.8,79.1,91.7,61.7,74.9
+156617,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Sulu,Lugus,75.5,61.2,5.3,7.9,68.9,82.1,53.3,69.1
+156618,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Sulu,Pandami,70.1,61.9,6.5,8.0,62.6,77.5,53.8,70.1
+156619,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Sulu,Omar,79.4,68.5,6.1,8.2,71.4,87.4,59.2,77.8
+157001,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Tawi-tawi,Panglima Sugala (Balimbing),27.5,41.9,15.6,7.8,20.5,34.6,36.6,47.3
+157002,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Tawi-tawi,Bongao,17.3,22.1,16.8,7.6,12.5,22.1,19.3,24.8
+157003,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Tawi-tawi,Mapun (Cagayan De Tawi-Tawi),18.8,38.2,22.1,16.7,12.0,25.7,27.7,48.7
+157004,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Tawi-tawi,Simunul,14.6,26.8,27.6,10.9,8.0,21.3,22.0,31.6
+157005,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Tawi-tawi,Sitangkai,24.0,57.6,26.3,10.4,13.6,34.4,47.8,67.5
+157006,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Tawi-tawi,South Ubian,16.4,43.5,17.7,7.4,11.7,21.2,38.2,48.8
+157007,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Tawi-tawi,Tandubas,23.9,41.6,18.4,7.6,16.7,31.2,36.3,46.8
+157008,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Tawi-tawi,Turtle Islands,18.6,35.1,47.3,46.1,4.1,33.0,8.5,61.7
+157009,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Tawi-tawi,Languyan,17.0,39.7,20.0,6.5,11.4,22.6,35.5,43.9
+157010,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Tawi-tawi,Sapa-Sapa,24.8,37.2,17.2,7.9,17.8,31.8,32.4,42.0
+157011,Bangsamoro Autonomous Region in Muslim Mindanao (BARMM),Tawi-tawi,Sibutu,20.9,30.1,18.6,9.7,14.5,27.3,25.3,34.9
