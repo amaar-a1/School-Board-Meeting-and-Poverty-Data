@@ -63,6 +63,9 @@ C = {
                  edu=r"onderwijs|school", meet=r"gemeenteraad|raad|zitting|commissie|vergadering"),
     "BEFR": dict(file="belgium_fr", q="conseil communal {}", chan=r"commune|ville|conseil|administration communale",
                  edu=r"enseignement|[ée]cole|scolaire", meet=r"conseil communal|s[ée]ance|commission|conseil"),
+    # Australia: council meetings (ordinary and special meetings of the council).
+    "AU": dict(file="australia", q="{} council meeting {region}", chan=r"council|shire|city|municipal|regional|town",
+               edu=r"education|school", meet=r"meeting|council"),
     "NL": dict(file="netherlands", q="gemeente {} raadsvergadering", chan=r"gemeente|gemeenteraad|raad|griffie",
                edu=r"onderwijs|jeugd|school|kind",
                meet=r"commissie|raad|vergadering|beeldvorm|oordeelvorm"),
