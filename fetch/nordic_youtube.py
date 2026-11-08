@@ -52,6 +52,9 @@ C = {
                 edu=r"[ée]ducation|scolaire|[ée]cole|enfance|jeunesse", meet=r"conseil municipal|s[ée]ance|commission|conseil"),
     "EC": dict(file="ecuador", q="sesión de concejo municipal {} {region}", chan=r"municipio|municipal|gad|alcald|concejo|gobierno|cant[óo]n",
                edu=r"educaci[óo]n|escuela|colegio", meet=r"sesi[óo]n|concejo|comisi[óo]n"),
+    # Italy: town councils (consiglio comunale) and their education committees (commissione istruzione / scuola).
+    "IT": dict(file="italy", q="consiglio comunale {} {region}", chan=r"comune|citt[aà]|consiglio|municipio|comunale",
+               edu=r"istruzione|scuol|scolastic|educazion", meet=r"consiglio comunale|seduta|sessione|commissione|consiglio"),
     "NL": dict(file="netherlands", q="gemeente {} raadsvergadering", chan=r"gemeente|gemeenteraad|raad|griffie",
                edu=r"onderwijs|jeugd|school|kind",
                meet=r"commissie|raad|vergadering|beeldvorm|oordeelvorm"),

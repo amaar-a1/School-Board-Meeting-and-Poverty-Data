@@ -1,0 +1,3441 @@
+District,Region,District ID
+Roma,Lazio,IT-058091
+Milano,Lombardia,IT-015146
+Napoli,Campania,IT-063049
+Torino,Piemonte,IT-001272
+Palermo,Sicilia,IT-082053
+Genova,Liguria,IT-010025
+Bologna,Emilia-Romagna,IT-037006
+Firenze,Toscana,IT-048017
+Bari,Puglia,IT-072006
+Catania,Sicilia,IT-087015
+Verona,Veneto,IT-023091
+Venezia,Veneto,IT-027042
+Messina,Sicilia,IT-083048
+Padova,Veneto,IT-028060
+Trieste,Friuli-Venezia Giulia,IT-032006
+Brescia,Lombardia,IT-017029
+Parma,Emilia-Romagna,IT-034027
+Prato,Toscana,IT-100005
+Taranto,Puglia,IT-073027
+Modena,Emilia-Romagna,IT-036023
+Reggio nell'Emilia,Emilia-Romagna,IT-035033
+Reggio di Calabria,Calabria,IT-080063
+Perugia,Umbria,IT-054039
+Ravenna,Emilia-Romagna,IT-039014
+Livorno,Toscana,IT-049009
+Rimini,Emilia-Romagna,IT-099014
+Cagliari,Sardegna,IT-092009
+Foggia,Puglia,IT-071024
+Ferrara,Emilia-Romagna,IT-038008
+Latina,Lazio,IT-059011
+Salerno,Campania,IT-065116
+Giugliano in Campania,Campania,IT-063034
+Monza,Lombardia,IT-108033
+Sassari,Sardegna,IT-090064
+Bergamo,Lombardia,IT-016024
+Trento,Trentino-Alto Adige/Südtirol,IT-022205
+Pescara,Abruzzo,IT-068028
+Forlì,Emilia-Romagna,IT-040012
+Siracusa,Sicilia,IT-089017
+Vicenza,Veneto,IT-024116
+Terni,Umbria,IT-055032
+Bolzano,Trentino-Alto Adige/Südtirol,IT-021008
+Piacenza,Emilia-Romagna,IT-033032
+Novara,Piemonte,IT-003106
+Ancona,Marche,IT-042002
+Udine,Friuli-Venezia Giulia,IT-030129
+Andria,Puglia,IT-110001
+Arezzo,Toscana,IT-051002
+Cesena,Emilia-Romagna,IT-040007
+Pesaro,Marche,IT-041044
+Lecce,Puglia,IT-075035
+La Spezia,Liguria,IT-011015
+Barletta,Puglia,IT-110002
+Alessandria,Piemonte,IT-006003
+Guidonia Montecelio,Lazio,IT-058047
+Pisa,Toscana,IT-050026
+Lucca,Toscana,IT-046017
+Pistoia,Toscana,IT-047014
+Treviso,Veneto,IT-026086
+Catanzaro,Calabria,IT-079023
+Como,Lombardia,IT-013075
+Busto Arsizio,Lombardia,IT-012026
+Fiumicino,Lazio,IT-058120
+Brindisi,Puglia,IT-074001
+Grosseto,Toscana,IT-053011
+Torre del Greco,Campania,IT-063084
+Marsala,Sicilia,IT-081011
+Varese,Lombardia,IT-012133
+Sesto San Giovanni,Lombardia,IT-015209
+Pozzuoli,Campania,IT-063060
+Cinisello Balsamo,Lombardia,IT-015077
+Aprilia,Lazio,IT-059001
+Corigliano-Rossano,Calabria,IT-078157
+Casoria,Campania,IT-063023
+Asti,Piemonte,IT-005005
+Ragusa,Sicilia,IT-088009
+Carpi,Emilia-Romagna,IT-036005
+Caserta,Campania,IT-061022
+Pavia,Lombardia,IT-018110
+Cremona,Lombardia,IT-019036
+Gela,Sicilia,IT-085007
+Altamura,Puglia,IT-072004
+L'Aquila,Abruzzo,IT-066049
+Imola,Emilia-Romagna,IT-037032
+Quartu Sant'Elena,Sardegna,IT-092051
+Lamezia Terme,Calabria,IT-079160
+Viterbo,Lazio,IT-056059
+Massa,Toscana,IT-045010
+Vittoria,Sicilia,IT-088012
+Pomezia,Lazio,IT-058079
+Potenza,Basilicata,IT-076063
+Cosenza,Calabria,IT-078045
+Vigevano,Lombardia,IT-018177
+Castellammare di Stabia,Campania,IT-063024
+Afragola,Campania,IT-063002
+Olbia,Sardegna,IT-090047
+Viareggio,Toscana,IT-046033
+Legnano,Lombardia,IT-015118
+Fano,Marche,IT-041013
+Carrara,Toscana,IT-045003
+Matera,Basilicata,IT-077014
+Anzio,Lazio,IT-058007
+Faenza,Emilia-Romagna,IT-039010
+Savona,Liguria,IT-009056
+Acerra,Campania,IT-063001
+Caltanissetta,Sicilia,IT-085004
+Crotone,Calabria,IT-101010
+Marano di Napoli,Campania,IT-063041
+Molfetta,Puglia,IT-072029
+Cerignola,Puglia,IT-071020
+Benevento,Campania,IT-062008
+Cuneo,Piemonte,IT-004078
+Moncalieri,Piemonte,IT-001156
+Agrigento,Sicilia,IT-084001
+Foligno,Umbria,IT-054018
+Trapani,Sicilia,IT-081021
+Tivoli,Lazio,IT-058104
+Trani,Puglia,IT-110009
+Manfredonia,Puglia,IT-071029
+Montesilvano,Abruzzo,IT-068024
+Bisceglie,Puglia,IT-110003
+Modica,Sicilia,IT-088006
+Gallarate,Lombardia,IT-012070
+Bitonto,Puglia,IT-072011
+Sanremo,Liguria,IT-008055
+Bagheria,Sicilia,IT-082006
+Siena,Toscana,IT-052032
+Velletri,Lazio,IT-058111
+Pordenone,Friuli-Venezia Giulia,IT-093033
+Avellino,Campania,IT-064008
+Portici,Campania,IT-063059
+Civitavecchia,Lazio,IT-058032
+Teramo,Abruzzo,IT-067041
+Rho,Lombardia,IT-015182
+Acireale,Sicilia,IT-087004
+Cava de' Tirreni,Campania,IT-065037
+Mazara del Vallo,Sicilia,IT-081012
+Ardea,Lazio,IT-058117
+Rovigo,Veneto,IT-029041
+Ercolano,Campania,IT-063064
+Battipaglia,Campania,IT-065014
+Aversa,Campania,IT-061005
+Scandicci,Toscana,IT-048041
+Mantova,Lombardia,IT-020030
+San Severo,Puglia,IT-071051
+Sesto Fiorentino,Toscana,IT-048043
+Empoli,Toscana,IT-048014
+Misterbianco,Sicilia,IT-087029
+Chieti,Abruzzo,IT-069022
+Nettuno,Lazio,IT-058072
+Collegno,Piemonte,IT-001090
+Scafati,Campania,IT-065137
+Monopoli,Puglia,IT-072030
+Chioggia,Veneto,IT-027008
+Campi Bisenzio,Toscana,IT-048006
+Campobasso,Molise,IT-070006
+Paderno Dugnano,Lombardia,IT-015166
+Lecco,Lombardia,IT-097042
+Cologno Monzese,Lombardia,IT-015081
+San Benedetto del Tronto,Marche,IT-044066
+Corato,Puglia,IT-072020
+Rivoli,Piemonte,IT-001219
+Casalnuovo di Napoli,Campania,IT-063017
+Martina Franca,Puglia,IT-073013
+Lissone,Lombardia,IT-108028
+Marino,Lazio,IT-058057
+Capannori,Toscana,IT-046007
+Nichelino,Piemonte,IT-001164
+Settimo Torinese,Piemonte,IT-001265
+Vercelli,Piemonte,IT-002158
+Ascoli Piceno,Marche,IT-044007
+Rieti,Lazio,IT-057059
+Lodi,Lombardia,IT-098031
+Seregno,Lombardia,IT-108039
+Paternò,Sicilia,IT-087033
+Cascina,Toscana,IT-050008
+Alcamo,Sicilia,IT-081001
+Terracina,Lazio,IT-059032
+Senigallia,Marche,IT-042045
+Nocera Inferiore,Campania,IT-065078
+Frosinone,Lazio,IT-060038
+Biella,Piemonte,IT-096004
+Bassano del Grappa,Veneto,IT-024012
+Gravina in Puglia,Puglia,IT-072023
+Imperia,Liguria,IT-008031
+Alghero,Sardegna,IT-090003
+San Giorgio a Cremano,Campania,IT-063067
+Civitanova Marche,Marche,IT-043013
+San Donà di Piave,Veneto,IT-027033
+Desio,Lombardia,IT-108023
+Merano,Trentino-Alto Adige/Südtirol,IT-021051
+Rozzano,Lombardia,IT-015189
+Quarto,Campania,IT-063063
+Monterotondo,Lazio,IT-058065
+Sassuolo,Emilia-Romagna,IT-036040
+Avezzano,Abruzzo,IT-066006
+Ladispoli,Lazio,IT-058116
+Vasto,Abruzzo,IT-069099
+Macerata,Marche,IT-043023
+Carini,Sicilia,IT-082021
+Torre Annunziata,Campania,IT-063083
+Rovereto,Trentino-Alto Adige/Südtirol,IT-022161
+Cantù,Lombardia,IT-013041
+San Giuliano Milanese,Lombardia,IT-015195
+Barcellona Pozzo di Gotto,Sicilia,IT-083005
+Pomigliano d'Arco,Campania,IT-063057
+Albano Laziale,Lazio,IT-058003
+Fondi,Lazio,IT-059007
+Cesano Maderno,Lombardia,IT-108019
+Jesi,Marche,IT-042021
+Voghera,Lombardia,IT-018182
+Schio,Veneto,IT-024100
+Monreale,Sicilia,IT-082049
+Ciampino,Lazio,IT-058118
+Sciacca,Sicilia,IT-084041
+Fasano,Puglia,IT-074007
+Saronno,Lombardia,IT-012119
+Marcianise,Campania,IT-061049
+Città di Castello,Umbria,IT-054013
+Cerveteri,Lazio,IT-058029
+Mira,Veneto,IT-027023
+Eboli,Campania,IT-065050
+Segrate,Lombardia,IT-015205
+Formia,Lazio,IT-059008
+Grugliasco,Piemonte,IT-001120
+Maddaloni,Campania,IT-061048
+Pioltello,Lombardia,IT-015175
+Rende,Calabria,IT-078102
+Bollate,Lombardia,IT-015027
+Melito di Napoli,Campania,IT-063045
+Spoleto,Umbria,IT-054051
+Cisterna di Latina,Lazio,IT-059005
+Modugno,Puglia,IT-072027
+Caivano,Campania,IT-063011
+Chieri,Piemonte,IT-001078
+Fermo,Marche,IT-109006
+Caltagirone,Sicilia,IT-087011
+Casalecchio di Reno,Emilia-Romagna,IT-037011
+Belluno,Veneto,IT-025006
+Pinerolo,Piemonte,IT-001191
+Cento,Emilia-Romagna,IT-038004
+Brugherio,Lombardia,IT-108012
+Mugnano di Napoli,Campania,IT-063048
+Limbiate,Lombardia,IT-108027
+Cassino,Lazio,IT-060019
+Cernusco sul Naviglio,Lombardia,IT-015070
+Osimo,Marche,IT-042034
+Francavilla Fontana,Puglia,IT-074008
+Corsico,Lombardia,IT-015093
+Augusta,Sicilia,IT-089001
+Formigine,Emilia-Romagna,IT-036015
+Canicattì,Sicilia,IT-084011
+Conegliano,Veneto,IT-026021
+Riccione,Emilia-Romagna,IT-099013
+Licata,Sicilia,IT-084021
+Angri,Campania,IT-065007
+Pagani,Campania,IT-065088
+Lanciano,Abruzzo,IT-069046
+Crema,Lombardia,IT-019035
+Nola,Campania,IT-063050
+Gorizia,Friuli-Venezia Giulia,IT-031007
+Adrano,Sicilia,IT-087006
+Somma Vesuviana,Campania,IT-063079
+Nuoro,Sardegna,IT-091051
+Castelfranco Emilia,Emilia-Romagna,IT-036006
+Aosta,Valle d'Aosta/Vallée d'Aoste,IT-007003
+Castelfranco Veneto,Veneto,IT-026012
+Villafranca di Verona,Veneto,IT-023096
+San Lazzaro di Savena,Emilia-Romagna,IT-037054
+Fonte Nuova,Lazio,IT-058122
+Abbiategrasso,Lombardia,IT-015002
+Piombino,Toscana,IT-049012
+Sant'Antimo,Campania,IT-063073
+San Donato Milanese,Lombardia,IT-015192
+Lugo,Emilia-Romagna,IT-039012
+Casale Monferrato,Piemonte,IT-006039
+Venaria Reale,Piemonte,IT-001292
+Mascalucia,Sicilia,IT-087024
+Santa Maria Capua Vetere,Campania,IT-061083
+Termoli,Molise,IT-070078
+Valsamoggia,Emilia-Romagna,IT-037061
+Massafra,Puglia,IT-073015
+Arzano,Campania,IT-063005
+Camaiore,Toscana,IT-046005
+Favara,Sicilia,IT-084017
+Villaricca,Campania,IT-063087
+Montebelluna,Veneto,IT-026046
+Alba,Piemonte,IT-004003
+Treviglio,Lombardia,IT-016219
+Vibo Valentia,Calabria,IT-102047
+San Giuliano Terme,Toscana,IT-050031
+Nardò,Puglia,IT-075052
+Partinico,Sicilia,IT-082054
+Lucera,Puglia,IT-071028
+Sarno,Campania,IT-065135
+Avola,Sicilia,IT-089002
+Grottaglie,Puglia,IT-073008
+San Giuseppe Vesuviano,Campania,IT-063068
+Gubbio,Umbria,IT-054024
+Oristano,Sardegna,IT-095038
+Monfalcone,Friuli-Venezia Giulia,IT-031012
+Comiso,Sicilia,IT-088003
+Rosignano Marittimo,Toscana,IT-049017
+Verbania,Piemonte,IT-103072
+Milazzo,Sicilia,IT-083049
+Ostuni,Puglia,IT-074012
+Bra,Piemonte,IT-004029
+Manduria,Puglia,IT-073012
+Pontedera,Toscana,IT-050029
+Castel Volturno,Campania,IT-061027
+Rapallo,Liguria,IT-010046
+Desenzano del Garda,Lombardia,IT-017067
+Castelvetrano,Sicilia,IT-081006
+Marigliano,Campania,IT-063043
+Misilmeri,Sicilia,IT-082048
+Fabriano,Marche,IT-042017
+Cervia,Emilia-Romagna,IT-039007
+Mondragone,Campania,IT-061052
+Frattamaggiore,Campania,IT-063032
+Selargius,Sardegna,IT-092068
+Poggibonsi,Toscana,IT-052022
+Parabiago,Lombardia,IT-015168
+Belpasso,Sicilia,IT-087007
+Carmagnola,Piemonte,IT-001059
+Cecina,Toscana,IT-049007
+San Giovanni in Persiceto,Emilia-Romagna,IT-037053
+Mogliano Veneto,Veneto,IT-026043
+San Miniato,Toscana,IT-050032
+Gragnano,Campania,IT-063035
+Aci Catena,Sicilia,IT-087003
+Spinea,Veneto,IT-027038
+Canosa di Puglia,Puglia,IT-110004
+Alatri,Lazio,IT-060003
+Assisi,Umbria,IT-054001
+Chiavari,Liguria,IT-010015
+Novi Ligure,Piemonte,IT-006114
+Orta di Atella,Campania,IT-061053
+Fidenza,Emilia-Romagna,IT-034014
+Vittorio Veneto,Veneto,IT-026092
+Albignasego,Veneto,IT-028003
+Mirano,Veneto,IT-027024
+Garbagnate Milanese,Lombardia,IT-015105
+Quarrata,Toscana,IT-047017
+Jesolo,Veneto,IT-027019
+Scicli,Sicilia,IT-088011
+Buccinasco,Lombardia,IT-015036
+Tortona,Piemonte,IT-006174
+Giarre,Sicilia,IT-087017
+Gioia del Colle,Puglia,IT-072021
+Pontecagnano Faiano,Campania,IT-065099
+Montichiari,Lombardia,IT-017113
+Lainate,Lombardia,IT-015116
+San Giovanni Rotondo,Puglia,IT-071046
+Bresso,Lombardia,IT-015032
+Giussano,Lombardia,IT-108024
+Chivasso,Piemonte,IT-001082
+Sant'Anastasia,Campania,IT-063072
+Mesagne,Puglia,IT-074010
+Terlizzi,Puglia,IT-072043
+Vignola,Emilia-Romagna,IT-036046
+Erice,Sicilia,IT-081008
+Noicattaro,Puglia,IT-072032
+Vimercate,Lombardia,IT-108050
+Carbonia,Sardegna,IT-111009
+Cesenatico,Emilia-Romagna,IT-040008
+Porto Sant'Elpidio,Marche,IT-109034
+Boscoreale,Campania,IT-063008
+Scandiano,Emilia-Romagna,IT-035040
+Putignano,Puglia,IT-072036
+Triggiano,Puglia,IT-072046
+Conversano,Puglia,IT-072019
+Valdagno,Veneto,IT-024111
+Assemini,Sardegna,IT-092003
+Santeramo in Colle,Puglia,IT-072041
+Falconara Marittima,Marche,IT-042018
+Volla,Campania,IT-063089
+Roseto degli Abruzzi,Abruzzo,IT-067037
+Legnago,Veneto,IT-023044
+Arzignano,Veneto,IT-024008
+Seriate,Lombardia,IT-016198
+Galatina,Puglia,IT-075029
+Francavilla al Mare,Abruzzo,IT-069035
+Mariano Comense,Lombardia,IT-013143
+Enna,Sicilia,IT-086009
+San Giovanni Lupatoto,Veneto,IT-023071
+Gravina di Catania,Sicilia,IT-087019
+Correggio,Emilia-Romagna,IT-035020
+Bacoli,Campania,IT-063006
+Bagno a Ripoli,Toscana,IT-048001
+Iglesias,Sardegna,IT-111035
+Termini Imerese,Sicilia,IT-082070
+Sora,Lazio,IT-060074
+Niscemi,Sicilia,IT-085013
+Magenta,Lombardia,IT-015130
+Qualiano,Campania,IT-063062
+Noto,Sicilia,IT-089013
+Mirandola,Emilia-Romagna,IT-036022
+Peschiera Borromeo,Lombardia,IT-015171
+Portogruaro,Veneto,IT-027029
+Ruvo di Puglia,Puglia,IT-072038
+Mola di Bari,Puglia,IT-072028
+Fossano,Piemonte,IT-004089
+Montevarchi,Toscana,IT-051026
+Seveso,Lombardia,IT-108040
+San Giovanni la Punta,Sicilia,IT-087041
+Thiene,Veneto,IT-024105
+Castiglione delle Stiviere,Lombardia,IT-020017
+Pompei,Campania,IT-063058
+Sezze,Lazio,IT-059028
+Muggiò,Lombardia,IT-108034
+Dalmine,Lombardia,IT-016091
+Montecchio Maggiore,Veneto,IT-024061
+Nocera Superiore,Campania,IT-065079
+Albenga,Liguria,IT-009002
+Meda,Lombardia,IT-108030
+Giulianova,Abruzzo,IT-067025
+Cesano Boscone,Lombardia,IT-015074
+Ottaviano,Campania,IT-063051
+Vigonza,Veneto,IT-028100
+Capoterra,Sardegna,IT-092011
+Figline e Incisa Valdarno,Toscana,IT-048052
+Nova Milanese,Lombardia,IT-108035
+Orbassano,Piemonte,IT-001171
+Bressanone,Trentino-Alto Adige/Südtirol,IT-021011
+Copertino,Puglia,IT-075022
+Biancavilla,Sicilia,IT-087008
+Ventimiglia,Liguria,IT-008065
+Selvazzano Dentro,Veneto,IT-028086
+Frascati,Lazio,IT-058039
+Pietrasanta,Toscana,IT-046024
+Fucecchio,Toscana,IT-048019
+Genzano di Roma,Lazio,IT-058043
+Mentana,Lazio,IT-058059
+Ivrea,Piemonte,IT-001125
+Poggiomarino,Campania,IT-063055
+Capaccio Paestum,Campania,IT-065025
+Santarcangelo di Romagna,Emilia-Romagna,IT-099018
+Ceccano,Lazio,IT-060024
+Palestrina,Lazio,IT-058074
+Paese,Veneto,IT-026055
+Ortona,Abruzzo,IT-069058
+San Nicola la Strada,Campania,IT-061078
+Mondovì,Piemonte,IT-004130
+Comacchio,Emilia-Romagna,IT-038006
+Sulmona,Abruzzo,IT-066098
+Massarosa,Toscana,IT-046018
+Pachino,Sicilia,IT-089014
+Ginosa,Puglia,IT-073007
+Sarzana,Liguria,IT-011027
+Savigliano,Piemonte,IT-004215
+Pergine Valsugana,Trentino-Alto Adige/Südtirol,IT-022139
+Trezzano sul Naviglio,Lombardia,IT-015220
+Colle di Val d'Elsa,Toscana,IT-052012
+Corciano,Umbria,IT-054015
+Lumezzane,Lombardia,IT-017096
+Cardito,Campania,IT-063016
+Senago,Lombardia,IT-015206
+San Bonifacio,Veneto,IT-023069
+Mercato San Severino,Campania,IT-065067
+Lentini,Sicilia,IT-089011
+Casal di Principe,Campania,IT-061019
+Agropoli,Campania,IT-065002
+Palma di Montechiaro,Sicilia,IT-084027
+Cassano Magnago,Lombardia,IT-012040
+Bastia Umbra,Umbria,IT-054002
+Borgomanero,Piemonte,IT-003024
+Martellago,Veneto,IT-027021
+Sondrio,Lombardia,IT-014061
+Floridia,Sicilia,IT-089009
+Gorgonzola,Lombardia,IT-015108
+Montecatini-Terme,Toscana,IT-047011
+Suzzara,Lombardia,IT-020065
+Argenta,Emilia-Romagna,IT-038001
+Cortona,Toscana,IT-051017
+Porto Torres,Sardegna,IT-090058
+Trecate,Piemonte,IT-003149
+Ariano Irpino,Campania,IT-064005
+Bussolengo,Veneto,IT-023015
+Monsummano Terme,Toscana,IT-047009
+Sestu,Sardegna,IT-092074
+Romano di Lombardia,Lombardia,IT-016183
+Isernia,Molise,IT-094023
+Castel San Pietro Terme,Emilia-Romagna,IT-037020
+Piazza Armerina,Sicilia,IT-086014
+Recanati,Marche,IT-043044
+Cornaredo,Lombardia,IT-015087
+San Cataldo,Sicilia,IT-085016
+Castrovillari,Calabria,IT-078033
+Anagni,Lazio,IT-060006
+Cormano,Lombardia,IT-015086
+Rosolini,Sicilia,IT-089016
+Trentola Ducenta,Campania,IT-061094
+Colleferro,Lazio,IT-058034
+Feltre,Veneto,IT-025021
+Grottaferrata,Lazio,IT-058046
+Palo del Colle,Puglia,IT-072033
+Abano Terme,Veneto,IT-028001
+Follonica,Toscana,IT-053009
+Salsomaggiore Terme,Emilia-Romagna,IT-034032
+Minturno,Lazio,IT-059014
+Palazzolo sull'Oglio,Lombardia,IT-017133
+Rivalta di Torino,Piemonte,IT-001214
+Vico Equense,Campania,IT-063086
+Pontassieve,Toscana,IT-048033
+Oderzo,Veneto,IT-026051
+Sessa Aurunca,Campania,IT-061088
+Piove di Sacco,Veneto,IT-028065
+Montalto Uffugo,Calabria,IT-078081
+Novate Milanese,Lombardia,IT-015157
+Ferentino,Lazio,IT-060033
+Cittadella,Veneto,IT-028032
+Sacile,Friuli-Venezia Giulia,IT-093037
+Viadana,Lombardia,IT-020066
+Settimo Milanese,Lombardia,IT-015211
+Acquaviva delle Fonti,Puglia,IT-072001
+San Salvo,Abruzzo,IT-069083
+Lastra a Signa,Toscana,IT-048024
+Castellana Grotte,Puglia,IT-072017
+Ischia,Campania,IT-063037
+Arese,Lombardia,IT-015009
+Villabate,Sicilia,IT-082079
+Veroli,Lazio,IT-060085
+Cassano d'Adda,Lombardia,IT-015059
+Bellaria-Igea Marina,Emilia-Romagna,IT-099001
+Rovato,Lombardia,IT-017166
+Sabaudia,Lazio,IT-059024
+Montoro,Campania,IT-064121
+Zola Predosa,Emilia-Romagna,IT-037060
+Tremestieri Etneo,Sicilia,IT-087051
+Orvieto,Umbria,IT-055023
+Chiari,Lombardia,IT-017052
+Gaeta,Lazio,IT-059009
+Pescia,Toscana,IT-047012
+Giovinazzo,Puglia,IT-072022
+Gioia Tauro,Calabria,IT-080038
+Casamassima,Puglia,IT-072015
+Casarano,Puglia,IT-075016
+Gallipoli,Puglia,IT-075031
+Scorzè,Veneto,IT-027037
+Montemurlo,Toscana,IT-100003
+Anguillara Sabazia,Lazio,IT-058005
+Spoltore,Abruzzo,IT-068041
+Signa,Toscana,IT-048044
+Tradate,Lombardia,IT-012127
+Sant'Antonio Abate,Campania,IT-063074
+Acqui Terme,Piemonte,IT-006001
+Casalgrande,Emilia-Romagna,IT-035012
+Corbetta,Lombardia,IT-015085
+Cusano Milanino,Lombardia,IT-015098
+Pozzallo,Sicilia,IT-088008
+Monserrato,Sardegna,IT-092109
+Zagarolo,Lazio,IT-058114
+Ceglie Messapica,Puglia,IT-074003
+San Mauro Torinese,Piemonte,IT-001249
+Adria,Veneto,IT-029001
+Acri,Calabria,IT-078003
+Ghedi,Lombardia,IT-017078
+Bracciano,Lazio,IT-058013
+Castel Maggiore,Emilia-Romagna,IT-037019
+Santa Marinella,Lazio,IT-058097
+Castelfidardo,Marche,IT-042010
+Laives,Trentino-Alto Adige/Südtirol,IT-021040
+Melzo,Lombardia,IT-015142
+Budrio,Emilia-Romagna,IT-037008
+Borgo San Lorenzo,Toscana,IT-048004
+Caronno Pertusella,Lombardia,IT-012034
+Pavullo nel Frignano,Emilia-Romagna,IT-036030
+Noci,Puglia,IT-072031
+Rutigliano,Puglia,IT-072037
+Bronte,Sicilia,IT-087009
+Casavatore,Campania,IT-063021
+Calenzano,Toscana,IT-048005
+Ciriè,Piemonte,IT-001086
+Palmi,Calabria,IT-080057
+Valenza,Piemonte,IT-006177
+Aci Sant'Antonio,Sicilia,IT-087005
+Marsciano,Umbria,IT-054027
+Piossasco,Piemonte,IT-001194
+Ariccia,Lazio,IT-058009
+Melegnano,Lombardia,IT-015140
+Agliana,Toscana,IT-047002
+Savignano sul Rubicone,Emilia-Romagna,IT-040045
+Carate Brianza,Lombardia,IT-108015
+San Vito dei Normanni,Puglia,IT-074017
+Narni,Umbria,IT-055022
+Arcore,Lombardia,IT-108004
+Riva del Garda,Trentino-Alto Adige/Südtirol,IT-022153
+Rocca di Papa,Lazio,IT-058086
+Cordenons,Friuli-Venezia Giulia,IT-093017
+Capua,Campania,IT-061015
+Policoro,Basilicata,IT-077021
+Somma Lombardo,Lombardia,IT-012123
+Aci Castello,Sicilia,IT-087002
+Arco,Trentino-Alto Adige/Südtirol,IT-022006
+Ribera,Sicilia,IT-084033
+Tolentino,Marche,IT-043053
+Pianoro,Emilia-Romagna,IT-037047
+Domodossola,Piemonte,IT-103028
+Marcon,Veneto,IT-027020
+Isola di Capo Rizzuto,Calabria,IT-101013
+Villorba,Veneto,IT-026091
+Sona,Veneto,IT-023083
+Siderno,Calabria,IT-080088
+Saluzzo,Piemonte,IT-004203
+Albino,Lombardia,IT-016004
+Pescantina,Veneto,IT-023058
+Forio,Campania,IT-063031
+Polignano a Mare,Puglia,IT-072035
+Beinasco,Piemonte,IT-001024
+Santa Maria di Sala,Veneto,IT-027035
+Maranello,Emilia-Romagna,IT-036019
+Castelfiorentino,Toscana,IT-048010
+Sinnai,Sardegna,IT-092080
+Terzigno,Campania,IT-063082
+Sestri Levante,Liguria,IT-010059
+Valenzano,Puglia,IT-072048
+Monselice,Veneto,IT-028055
+Bareggio,Lombardia,IT-015012
+Brunico,Trentino-Alto Adige/Südtirol,IT-021013
+Grumo Nevano,Campania,IT-063036
+Melfi,Basilicata,IT-076048
+Carlentini,Sicilia,IT-089006
+Rubano,Veneto,IT-028072
+Lonato del Garda,Lombardia,IT-017092
+Tricase,Puglia,IT-075088
+Carovigno,Puglia,IT-074002
+Cerea,Veneto,IT-023025
+Pisticci,Basilicata,IT-077020
+Nerviano,Lombardia,IT-015154
+Bovisio-Masciago,Lombardia,IT-108010
+Baronissi,Campania,IT-065013
+Cercola,Campania,IT-063026
+San Felice a Cancello,Campania,IT-061075
+Vimodrone,Lombardia,IT-015242
+Preganziol,Veneto,IT-026063
+Campagna,Campania,IT-065022
+Fiorano Modenese,Emilia-Romagna,IT-036013
+Medicina,Emilia-Romagna,IT-037037
+Porto Mantovano,Lombardia,IT-020045
+Orta Nova,Puglia,IT-071036
+Cattolica,Emilia-Romagna,IT-099002
+Alpignano,Piemonte,IT-001008
+Gussago,Lombardia,IT-017081
+Reggello,Toscana,IT-048035
+Vedelago,Veneto,IT-026089
+Malnate,Lombardia,IT-012096
+Negrar di Valpolicella,Veneto,IT-023052
+Sant'Elpidio a Mare,Marche,IT-109037
+Adelfia,Puglia,IT-072002
+San Giovanni Valdarno,Toscana,IT-051033
+Bagnacavallo,Emilia-Romagna,IT-039002
+Fiano Romano,Lazio,IT-058036
+Cassano all'Ionio,Calabria,IT-078029
+Torremaggiore,Puglia,IT-071056
+San Casciano in Val di Pesa,Toscana,IT-048038
+Collesalvetti,Toscana,IT-049008
+San Martino Buon Albergo,Veneto,IT-023073
+Ispica,Sicilia,IT-088005
+Castenaso,Emilia-Romagna,IT-037021
+Martinsicuro,Abruzzo,IT-067047
+Caravaggio,Lombardia,IT-016053
+Giaveno,Piemonte,IT-001115
+Leini,Piemonte,IT-001130
+Umbertide,Umbria,IT-054056
+San Cesareo,Lazio,IT-058119
+Erba,Lombardia,IT-013095
+Palma Campania,Campania,IT-063052
+Lusciano,Campania,IT-061046
+Noale,Veneto,IT-027026
+Bovolone,Veneto,IT-023012
+Nonantola,Emilia-Romagna,IT-036027
+Samarate,Lombardia,IT-012118
+Castellaneta,Puglia,IT-073003
+Valeggio sul Mincio,Veneto,IT-023089
+Scordia,Sicilia,IT-087049
+Lonigo,Veneto,IT-024052
+Tarquinia,Lazio,IT-056050
+Concorezzo,Lombardia,IT-108021
+Saviano,Campania,IT-063076
+Este,Veneto,IT-028037
+Altopascio,Toscana,IT-046001
+Codroipo,Friuli-Venezia Giulia,IT-030027
+Grottammare,Marche,IT-044023
+Brusciano,Campania,IT-063010
+Lentate sul Seveso,Lombardia,IT-108054
+Cadoneghe,Veneto,IT-028016
+Darfo Boario Terme,Lombardia,IT-017065
+Valmontone,Lazio,IT-058110
+Azzano Decimo,Friuli-Venezia Giulia,IT-093005
+Carugate,Lombardia,IT-015051
+Molinella,Emilia-Romagna,IT-037039
+Palagiano,Puglia,IT-073021
+Copparo,Emilia-Romagna,IT-038007
+Galliate,Piemonte,IT-003068
+Pieve Emanuele,Lombardia,IT-015173
+San Giovanni in Fiore,Calabria,IT-078119
+Agrate Brianza,Lombardia,IT-108001
+Concesio,Lombardia,IT-017061
+Zevio,Veneto,IT-023097
+Codogno,Lombardia,IT-098019
+Palagonia,Sicilia,IT-087032
+Certaldo,Toscana,IT-048012
+Porto San Giorgio,Marche,IT-109033
+Casalpusterlengo,Lombardia,IT-098010
+Soliera,Emilia-Romagna,IT-036044
+Ponsacco,Toscana,IT-050028
+Todi,Umbria,IT-054052
+Porto Empedocle,Sicilia,IT-084028
+Potenza Picena,Marche,IT-043043
+Mortara,Lombardia,IT-018102
+Pianezza,Piemonte,IT-001189
+Besana in Brianza,Lombardia,IT-108008
+Silvi,Abruzzo,IT-067040
+Frattaminore,Campania,IT-063033
+Vinovo,Piemonte,IT-001309
+Sorrento,Campania,IT-063080
+Cassola,Veneto,IT-024026
+Castellarano,Emilia-Romagna,IT-035014
+San Vito al Tagliamento,Friuli-Venezia Giulia,IT-093041
+Mottola,Puglia,IT-073019
+Sava,Puglia,IT-073026
+Civita Castellana,Lazio,IT-056021
+Casalmaggiore,Lombardia,IT-019021
+Capurso,Puglia,IT-072014
+Pedara,Sicilia,IT-087034
+Sansepolcro,Toscana,IT-051034
+Volpiano,Piemonte,IT-001314
+Finale Emilia,Emilia-Romagna,IT-036012
+Castiglione del Lago,Umbria,IT-054009
+Sant'Arpino,Campania,IT-061087
+Cassano delle Murge,Puglia,IT-072016
+Campodarsego,Veneto,IT-028017
+Pontinia,Lazio,IT-059017
+Castelnuovo Rangone,Emilia-Romagna,IT-036007
+Vallefoglia,Marche,IT-041068
+Cerro Maggiore,Lombardia,IT-015072
+Borgo Virgilio,Lombardia,IT-020071
+Appiano sulla strada del vino,Trentino-Alto Adige/Südtirol,IT-021004
+Fiorenzuola d'Arda,Emilia-Romagna,IT-033021
+Teverola,Campania,IT-061092
+Porcia,Friuli-Venezia Giulia,IT-093032
+Dolo,Veneto,IT-027012
+Ospitaletto,Lombardia,IT-017127
+Merate,Lombardia,IT-097048
+Galatone,Puglia,IT-075030
+Città Sant'Angelo,Abruzzo,IT-068012
+Sasso Marconi,Emilia-Romagna,IT-037057
+San Marcellino,Campania,IT-061077
+Collecchio,Emilia-Romagna,IT-034009
+Paola,Calabria,IT-078091
+Santa Croce sull'Arno,Toscana,IT-050033
+Taurianova,Calabria,IT-080093
+Rubiera,Emilia-Romagna,IT-035036
+Cardano al Campo,Lombardia,IT-012032
+Laterza,Puglia,IT-073009
+Malo,Veneto,IT-024055
+Carmignano,Toscana,IT-100002
+Corridonia,Marche,IT-043015
+Pineto,Abruzzo,IT-067035
+Curtatone,Lombardia,IT-020021
+Rosà,Veneto,IT-024087
+Castellammare del Golfo,Sicilia,IT-081005
+Magione,Umbria,IT-054026
+Roncade,Veneto,IT-026069
+Guastalla,Emilia-Romagna,IT-035024
+Tavagnacco,Friuli-Venezia Giulia,IT-030118
+Vinci,Toscana,IT-048050
+Surbo,Puglia,IT-075083
+Oria,Puglia,IT-074011
+Rosarno,Calabria,IT-080069
+Sommacampagna,Veneto,IT-023082
+Leno,Lombardia,IT-017088
+San Giovanni Teatino,Abruzzo,IT-069081
+Mascali,Sicilia,IT-087023
+Sorso,Sardegna,IT-090069
+Opera,Lombardia,IT-015159
+Impruneta,Toscana,IT-048022
+Mondolfo,Marche,IT-041029
+Santa Maria a Vico,Campania,IT-061082
+Cesate,Lombardia,IT-015076
+Montelupo Fiorentino,Toscana,IT-048028
+Chiaravalle,Marche,IT-042014
+Gualdo Tadino,Umbria,IT-054023
+Villasanta,Lombardia,IT-108049
+Oleggio,Piemonte,IT-003108
+Omegna,Piemonte,IT-103050
+Rescaldina,Lombardia,IT-015181
+Castel San Giovanni,Emilia-Romagna,IT-033013
+Romano d'Ezzelino,Veneto,IT-024086
+Luino,Lombardia,IT-012092
+Massa Lubrense,Campania,IT-063044
+Orbetello,Toscana,IT-053018
+Cirò Marina,Calabria,IT-101008
+Misano Adriatico,Emilia-Romagna,IT-099005
+Fisciano,Campania,IT-065052
+San Giorgio Ionico,Puglia,IT-073024
+Solaro,Lombardia,IT-015213
+Ozzano dell'Emilia,Emilia-Romagna,IT-037046
+Busto Garolfo,Lombardia,IT-015041
+Marostica,Veneto,IT-024057
+Riposto,Sicilia,IT-087039
+Crevalcore,Emilia-Romagna,IT-037024
+Cassina de' Pecchi,Lombardia,IT-015060
+Bondeno,Emilia-Romagna,IT-038003
+Varedo,Lombardia,IT-108045
+Locorotondo,Puglia,IT-072025
+Castellanza,Lombardia,IT-012042
+Cossato,Piemonte,IT-096020
+Cefalù,Sicilia,IT-082027
+Fara in Sabina,Lazio,IT-057027
+Travagliato,Lombardia,IT-017188
+Urbino,Marche,IT-041067
+Trepuzzi,Puglia,IT-075087
+Amantea,Calabria,IT-078010
+Caselle Torinese,Piemonte,IT-001063
+Priverno,Lazio,IT-059019
+Fiesole,Toscana,IT-048015
+Taggia,Liguria,IT-008059
+Formello,Lazio,IT-058038
+Arona,Piemonte,IT-003008
+Porto Viro,Veneto,IT-029052
+Castel San Giorgio,Campania,IT-065034
+San Ferdinando di Puglia,Puglia,IT-110007
+Trinitapoli,Puglia,IT-110010
+Cervignano del Friuli,Friuli-Venezia Giulia,IT-030023
+Calderara di Reno,Emilia-Romagna,IT-037009
+Stezzano,Lombardia,IT-016207
+Artena,Lazio,IT-058011
+Castelfranco di Sotto,Toscana,IT-050009
+Dueville,Veneto,IT-024038
+Calolziocorte,Lombardia,IT-097013
+San Nicandro Garganico,Puglia,IT-071049
+Manerbio,Lombardia,IT-017103
+Borgo Valbelluna,Veneto,IT-025074
+Rezzato,Lombardia,IT-017161
+Leverano,Puglia,IT-075037
+Alzano Lombardo,Lombardia,IT-016008
+Latiano,Puglia,IT-074009
+Sant'Angelo Lodigiano,Lombardia,IT-098050
+Arzachena,Sardegna,IT-090006
+Santa Maria a Monte,Toscana,IT-050035
+Maglie,Puglia,IT-075039
+Squinzano,Puglia,IT-075079
+Vetralla,Lazio,IT-056057
+Greve in Chianti,Toscana,IT-048021
+Vieste,Puglia,IT-071060
+Bellizzi,Campania,IT-065158
+Noceto,Emilia-Romagna,IT-034025
+Novellara,Emilia-Romagna,IT-035028
+Casatenovo,Lombardia,IT-097016
+San Cipriano d'Aversa,Campania,IT-061074
+San Martino di Lupari,Veneto,IT-028077
+Quattro Castella,Emilia-Romagna,IT-035030
+Cavallino-Treporti,Veneto,IT-027044
+Castelnuovo del Garda,Veneto,IT-023022
+Montepulciano,Toscana,IT-052015
+Monteroni di Lecce,Puglia,IT-075048
+Veglie,Puglia,IT-075092
+Sarezzo,Lombardia,IT-017174
+Ponte San Nicolò,Veneto,IT-028069
+Latisana,Friuli-Venezia Giulia,IT-030046
+Lariano,Lazio,IT-058115
+Melilli,Sicilia,IT-089012
+Vigodarzere,Veneto,IT-028099
+Montespertoli,Toscana,IT-048030
+Tempio Pausania,Sardegna,IT-090070
+Capo d'Orlando,Sicilia,IT-083009
+Forlimpopoli,Emilia-Romagna,IT-040013
+Villacidro,Sardegna,IT-111096
+Casale sul Sile,Veneto,IT-026009
+Alba Adriatica,Abruzzo,IT-067001
+Monteprandone,Marche,IT-044045
+Calcinato,Lombardia,IT-017032
+Casandrino,Campania,IT-063020
+Carpenedolo,Lombardia,IT-017039
+Crispiano,Puglia,IT-073004
+Turi,Puglia,IT-072047
+Montefiascone,Lazio,IT-056036
+San Pietro Vernotico,Puglia,IT-074016
+Camponogara,Veneto,IT-027004
+San Pietro in Cariano,Veneto,IT-023076
+Ponzano Veneto,Veneto,IT-026059
+Montesarchio,Campania,IT-062043
+Palombara Sabina,Lazio,IT-058075
+Trebaseleghe,Veneto,IT-028093
+Sorbolo Mezzani,Emilia-Romagna,IT-034051
+Loreto,Marche,IT-042022
+Terrasini,Sicilia,IT-082071
+San Pietro in Casale,Emilia-Romagna,IT-037055
+Lavello,Basilicata,IT-076043
+Tezze sul Brenta,Veneto,IT-024104
+Spilamberto,Emilia-Romagna,IT-036045
+Castiglion Fiorentino,Toscana,IT-051012
+Cavallino,Puglia,IT-075020
+Fontanafredda,Friuli-Venezia Giulia,IT-093022
+Lanuvio,Lazio,IT-058050
+Granarolo dell'Emilia,Emilia-Romagna,IT-037030
+Gricignano di Aversa,Campania,IT-061043
+Casagiove,Campania,IT-061018
+Sedriano,Lombardia,IT-015204
+Quartucciu,Sardegna,IT-092105
+Muggia,Friuli-Venezia Giulia,IT-032003
+Ficarazzi,Sicilia,IT-082035
+Calcinaia,Toscana,IT-050004
+Salzano,Veneto,IT-027032
+Statte,Puglia,IT-073029
+Castel Goffredo,Lombardia,IT-020015
+Cairo Montenotte,Liguria,IT-009015
+Olgiate Olona,Lombardia,IT-012108
+Pollena Trocchia,Campania,IT-063056
+San Stino di Livenza,Veneto,IT-027036
+Villa San Giovanni,Calabria,IT-080096
+Osio Sotto,Lombardia,IT-016153
+Parete,Campania,IT-061054
+Villa Literno,Campania,IT-061099
+Patti,Sicilia,IT-083066
+Mazzano,Lombardia,IT-017107
+Lipari,Sicilia,IT-083041
+San Biagio di Callalta,Veneto,IT-026071
+Nicosia,Sicilia,IT-086012
+Canegrate,Lombardia,IT-015046
+Borgo San Dalmazzo,Piemonte,IT-004025
+Lana,Trentino-Alto Adige/Südtirol,IT-021041
+Chiampo,Veneto,IT-024029
+Varazze,Liguria,IT-009065
+Apricena,Puglia,IT-071004
+Montegranaro,Marche,IT-109018
+Rionero in Vulture,Basilicata,IT-076066
+Fagnano Olona,Lombardia,IT-012067
+Orzinuovi,Lombardia,IT-017125
+San Marco in Lamis,Puglia,IT-071047
+Calvizzano,Campania,IT-063012
+Seravezza,Toscana,IT-046028
+Arluno,Lombardia,IT-015010
+Porto Recanati,Marche,IT-043042
+Bagnolo Mella,Lombardia,IT-017009
+Campiglia Marittima,Toscana,IT-049002
+Grammichele,Sicilia,IT-087018
+Rivarolo Canavese,Piemonte,IT-001217
+Colli al Metauro,Marche,IT-041069
+Anzola dell'Emilia,Emilia-Romagna,IT-037001
+Gavardo,Lombardia,IT-017077
+Spresiano,Veneto,IT-026082
+Biassono,Lombardia,IT-108009
+Cicciano,Campania,IT-063027
+Montecorvino Rovella,Campania,IT-065073
+Lavagna,Liguria,IT-010028
+Piano di Sorrento,Campania,IT-063053
+Russi,Emilia-Romagna,IT-039016
+San Mauro Pascoli,Emilia-Romagna,IT-040041
+Morbegno,Lombardia,IT-014045
+Rottofreno,Emilia-Romagna,IT-033039
+Cavarzere,Veneto,IT-027006
+Bedizzole,Lombardia,IT-017014
+Mediglia,Lombardia,IT-015139
+Avigliana,Piemonte,IT-001013
+Pianiga,Veneto,IT-027028
+Casciana Terme Lari,Toscana,IT-050040
+Pontecorvo,Lazio,IT-060056
+Sala Consilina,Campania,IT-065114
+Leonforte,Sicilia,IT-086011
+San Prisco,Campania,IT-061081
+Trezzo sull'Adda,Lombardia,IT-015221
+Grumo Appula,Puglia,IT-072024
+San Gennaro Vesuviano,Campania,IT-063066
+Castel d'Azzano,Veneto,IT-023021
+Motta Sant'Anastasia,Sicilia,IT-087030
+Occhiobello,Veneto,IT-029033
+Borgosesia,Piemonte,IT-002016
+Solofra,Campania,IT-064101
+Rocca Priora,Lazio,IT-058088
+Sinalunga,Toscana,IT-052033
+Terranuova Bracciolini,Toscana,IT-051039
+Ugento,Puglia,IT-075090
+Olgiate Comasco,Lombardia,IT-013165
+Eraclea,Veneto,IT-027013
+Monte San Giovanni Campano,Lazio,IT-060044
+Scarperia e San Piero,Toscana,IT-048053
+Portomaggiore,Emilia-Romagna,IT-038019
+Barberino Tavarnelle,Toscana,IT-048054
+Sant'Agata di Militello,Sicilia,IT-083084
+Bibbiena,Toscana,IT-051004
+Cinisi,Sicilia,IT-082031
+Bernalda,Basilicata,IT-077003
+Ponte San Pietro,Lombardia,IT-016170
+Sant'Ambrogio di Valpolicella,Veneto,IT-023077
+San Severino Marche,Marche,IT-043047
+Raffadali,Sicilia,IT-084030
+Camposampiero,Veneto,IT-028019
+Tortoreto,Abruzzo,IT-067044
+Locri,Calabria,IT-080043
+Baranzate,Lombardia,IT-015250
+San Giorgio Bigarello,Lombardia,IT-020057
+Ronchi dei Legionari,Friuli-Venezia Giulia,IT-031016
+Fiume Veneto,Friuli-Venezia Giulia,IT-093021
+Serravalle Pistoiese,Toscana,IT-047020
+Monte di Procida,Campania,IT-063047
+Monte Compatri,Lazio,IT-058060
+Menfi,Sicilia,IT-084023
+Mestrino,Veneto,IT-028054
+Altavilla Vicentina,Veneto,IT-024004
+Portoferraio,Toscana,IT-049014
+Vecchiano,Toscana,IT-050037
+Monte Argentario,Toscana,IT-053016
+Spilimbergo,Friuli-Venezia Giulia,IT-093044
+Lauria,Basilicata,IT-076042
+Pero,Lombardia,IT-015170
+Torri di Quartesolo,Veneto,IT-024108
+Bitetto,Puglia,IT-072010
+Susegana,Veneto,IT-026083
+Lizzanello,Puglia,IT-075038
+Santa Maria la Carità,Campania,IT-063090
+Borgaro Torinese,Piemonte,IT-001028
+Castenedolo,Lombardia,IT-017043
+Crispano,Campania,IT-063030
+Cornedo Vicentino,Veneto,IT-024034
+Francofonte,Sicilia,IT-089010
+Carmiano,Puglia,IT-075014
+Casteldaccia,Sicilia,IT-082023
+Zero Branco,Veneto,IT-026095
+Isola della Scala,Veneto,IT-023040
+Barrafranca,Sicilia,IT-086004
+Alfonsine,Emilia-Romagna,IT-039001
+Mercogliano,Campania,IT-064049
+Pieve di Soligo,Veneto,IT-026057
+Bernareggio,Lombardia,IT-108007
+Amelia,Umbria,IT-055004
+Giffoni Valle Piana,Campania,IT-065056
+San Gregorio di Catania,Sicilia,IT-087042
+Maniago,Friuli-Venezia Giulia,IT-093025
+Montegrotto Terme,Veneto,IT-028057
+Stradella,Lombardia,IT-018153
+Lendinara,Veneto,IT-029029
+Monteforte Irpino,Campania,IT-064054
+Casier,Veneto,IT-026010
+Taviano,Puglia,IT-075085
+Scalea,Calabria,IT-078138
+Musile di Piave,Veneto,IT-027025
+Lonate Pozzolo,Lombardia,IT-012090
+Noventa Padovana,Veneto,IT-028058
+Sant'Ilario d'Enza,Emilia-Romagna,IT-035039
+Valderice,Sicilia,IT-081022
+Caldogno,Veneto,IT-024018
+Capaci,Sicilia,IT-082020
+Gardone Val Trompia,Lombardia,IT-017075
+San Michele al Tagliamento,Veneto,IT-027034
+Campobello di Mazara,Sicilia,IT-081004
+Inzago,Lombardia,IT-015114
+Bitritto,Puglia,IT-072012
+Trecastagni,Sicilia,IT-087050
+Valmadrera,Lombardia,IT-097083
+Montopoli in Val d'Arno,Toscana,IT-050022
+Montechiarugolo,Emilia-Romagna,IT-034023
+Taurisano,Puglia,IT-075084
+Monte Sant'Angelo,Puglia,IT-071033
+Nembro,Lombardia,IT-016144
+Carbonera,Veneto,IT-026008
+Creazzo,Veneto,IT-024036
+Priolo Gargallo,Sicilia,IT-089021
+Pulsano,Puglia,IT-073022
+Camisano Vicentino,Veneto,IT-024021
+Santa Croce Camerina,Sicilia,IT-088010
+Penne,Abruzzo,IT-068027
+Arenzano,Liguria,IT-010001
+Teano,Campania,IT-061091
+Margherita di Savoia,Puglia,IT-110005
+Siniscola,Sardegna,IT-091085
+Paullo,Lombardia,IT-015169
+Montecorvino Pugliano,Campania,IT-065072
+Cologno al Serio,Lombardia,IT-016079
+Piazzola sul Brenta,Veneto,IT-028063
+Bertinoro,Emilia-Romagna,IT-040003
+San Giustino,Umbria,IT-054044
+Caorle,Veneto,IT-027005
+Cisternino,Puglia,IT-074005
+Finale Ligure,Liguria,IT-009029
+Castelvetro di Modena,Emilia-Romagna,IT-036008
+Codigoro,Emilia-Romagna,IT-038005
+Santa Flavia,Sicilia,IT-082067
+Peschiera del Garda,Veneto,IT-023059
+Campagnano di Roma,Lazio,IT-058015
+Sesto Calende,Lombardia,IT-012120
+Tortolì,Sardegna,IT-091095
+Barberino di Mugello,Toscana,IT-048002
+Cepagatti,Abruzzo,IT-068011
+Martinengo,Lombardia,IT-016133
+Cornate d'Adda,Lombardia,IT-108053
+Riese Pio X,Veneto,IT-026068
+San Valentino Torio,Campania,IT-065132
+Pellezzano,Campania,IT-065090
+Gerenzano,Lombardia,IT-012075
+Uboldo,Lombardia,IT-012130
+Langhirano,Emilia-Romagna,IT-034018
+Castel Mella,Lombardia,IT-017042
+Matino,Puglia,IT-075042
+Capena,Lazio,IT-058018
+Castano Primo,Lombardia,IT-015062
+Ovada,Piemonte,IT-006121
+Guspini,Sardegna,IT-111034
+Treviolo,Lombardia,IT-016220
+Gambettola,Emilia-Romagna,IT-040015
+Mazzarino,Sicilia,IT-085009
+San Felice sul Panaro,Emilia-Romagna,IT-036037
+Cave,Lazio,IT-058026
+Belmonte Mezzagno,Sicilia,IT-082009
+Monte San Pietro,Emilia-Romagna,IT-037042
+Venafro,Molise,IT-094052
+Venosa,Basilicata,IT-076095
+Cazzago San Martino,Lombardia,IT-017046
+Cividale del Friuli,Friuli-Venezia Giulia,IT-030026
+Massa Lombarda,Emilia-Romagna,IT-039013
+Medesano,Emilia-Romagna,IT-034020
+Cerreto Guidi,Toscana,IT-048011
+Campolongo Maggiore,Veneto,IT-027003
+Botticino,Lombardia,IT-017023
+Trevignano,Veneto,IT-026085
+Cadelbosco di Sopra,Emilia-Romagna,IT-035008
+Cameri,Piemonte,IT-003032
+Grezzana,Veneto,IT-023038
+Racale,Puglia,IT-075063
+Loano,Liguria,IT-009034
+Villa Carcina,Lombardia,IT-017199
+Motta di Livenza,Veneto,IT-026049
+Paceco,Sicilia,IT-081013
+Aulla,Toscana,IT-045001
+Isola del Liri,Lazio,IT-060043
+Usmate Velate,Lombardia,IT-108044
+Trabia,Sicilia,IT-082073
+Trofarello,Piemonte,IT-001280
+Nave,Lombardia,IT-017117
+La Maddalena,Sardegna,IT-090035
+Villafranca Padovana,Veneto,IT-028103
+Sant'Antioco,Sardegna,IT-111071
+Avigliano,Basilicata,IT-076007
+Montale,Toscana,IT-047010
+Saonara,Veneto,IT-028085
+Gemona del Friuli,Friuli-Venezia Giulia,IT-030043
+Taormina,Sicilia,IT-083097
+Silea,Veneto,IT-026081
+Santena,Piemonte,IT-001257
+Coriano,Emilia-Romagna,IT-099003
+Bonate Sopra,Lombardia,IT-016030
+Cori,Lazio,IT-059006
+Acate,Sicilia,IT-088001
+Montecchio Emilia,Emilia-Romagna,IT-035027
+Melito di Porto Salvo,Calabria,IT-080050
+Itri,Lazio,IT-059010
+Cislago,Lombardia,IT-012050
+Riano,Lazio,IT-058081
+Riesi,Sicilia,IT-085015
+Salò,Lombardia,IT-017170
+Oppeano,Veneto,IT-023055
+Castelli Calepio,Lombardia,IT-016062
+Induno Olona,Lombardia,IT-012083
+Castelnovo ne' Monti,Emilia-Romagna,IT-035016
+Atessa,Abruzzo,IT-069005
+Isola Vicentina,Veneto,IT-024048
+Atripalda,Campania,IT-064006
+Locate di Triulzi,Lombardia,IT-015125
+Vigasio,Veneto,IT-023094
+Corleone,Sicilia,IT-082034
+Bomporto,Emilia-Romagna,IT-036002
+San Maurizio Canavese,Piemonte,IT-001248
+Ravanusa,Sicilia,IT-084031
+Concordia Sagittaria,Veneto,IT-027011
+Novi di Modena,Emilia-Romagna,IT-036028
+Sant'Agata de' Goti,Campania,IT-062070
+Bibbiano,Emilia-Romagna,IT-035004
+Badia Polesine,Veneto,IT-029004
+Celano,Abruzzo,IT-066032
+Mori,Trentino-Alto Adige/Südtirol,IT-022123
+Arcola,Liguria,IT-011002
+Bordighera,Liguria,IT-008008
+San Marzano sul Sarno,Campania,IT-065122
+Poirino,Piemonte,IT-001197
+Ramacca,Sicilia,IT-087037
+Alberobello,Puglia,IT-072003
+San Felice Circeo,Lazio,IT-059025
+Busca,Piemonte,IT-004034
+Randazzo,Sicilia,IT-087038
+Terre del Reno,Emilia-Romagna,IT-038028
+Sedico,Veneto,IT-025053
+San Giorgio delle Pertiche,Veneto,IT-028075
+Santo Stefano di Magra,Liguria,IT-011026
+Rignano Flaminio,Lazio,IT-058082
+Fiuggi,Lazio,IT-060035
+Torre Santa Susanna,Puglia,IT-074019
+Urgnano,Lombardia,IT-016222
+Alassio,Liguria,IT-009001
+Piedimonte Matese,Campania,IT-061057
+Montignoso,Toscana,IT-045011
+Quinto di Treviso,Veneto,IT-026064
+Nizza Monferrato,Piemonte,IT-005080
+Verucchio,Emilia-Romagna,IT-099020
+Goito,Lombardia,IT-020026
+Volpago del Montello,Veneto,IT-026093
+Procida,Campania,IT-063061
+Valdilana,Piemonte,IT-096088
+Melendugno,Puglia,IT-075043
+Capodrise,Campania,IT-061013
+Canelli,Piemonte,IT-005017
+Monteriggioni,Toscana,IT-052016
+Macerata Campania,Campania,IT-061047
+Conselve,Veneto,IT-028034
+Fino Mornasco,Lombardia,IT-013102
+Barano d'Ischia,Campania,IT-063007
+Lomazzo,Lombardia,IT-013133
+Salemi,Sicilia,IT-081018
+Sermoneta,Lazio,IT-059027
+Meldola,Emilia-Romagna,IT-040019
+Valdobbiadene,Veneto,IT-026087
+Atri,Abruzzo,IT-067004
+Poggio a Caiano,Toscana,IT-100004
+Trescore Balneario,Lombardia,IT-016218
+Scanzorosciate,Lombardia,IT-016194
+Bucine,Toscana,IT-051005
+Rodengo Saiano,Lombardia,IT-017163
+Sovicille,Toscana,IT-052034
+Mussomeli,Sicilia,IT-085012
+Mandello del Lario,Lombardia,IT-097046
+Cavriago,Emilia-Romagna,IT-035017
+Polistena,Calabria,IT-080061
+Vaiano,Toscana,IT-100006
+Castelletto sopra Ticino,Piemonte,IT-003043
+Asola,Lombardia,IT-020002
+Boscotrecase,Campania,IT-063009
+Arcisate,Lombardia,IT-012004
+Vigonovo,Veneto,IT-027043
+Morrovalle,Marche,IT-043033
+San Vendemiano,Veneto,IT-026076
+Partanna,Sicilia,IT-081015
+Altofonte,Sicilia,IT-082005
+Poggio Renatico,Emilia-Romagna,IT-038018
+Turate,Lombardia,IT-013227
+Sant'Egidio alla Vibrata,Abruzzo,IT-067038
+Castellamonte,Piemonte,IT-001066
+Montemarciano,Marche,IT-042027
+Broni,Lombardia,IT-018024
+Tolmezzo,Friuli-Venezia Giulia,IT-030121
+Ozieri,Sardegna,IT-090052
+Castelfranco Piandiscò,Toscana,IT-051040
+Gambolò,Lombardia,IT-018068
+Lurate Caccivio,Lombardia,IT-013138
+Campi Salentina,Puglia,IT-075011
+Racconigi,Piemonte,IT-004179
+Cittanova,Calabria,IT-080028
+San Giorgio del Sannio,Campania,IT-062058
+Crosia,Calabria,IT-078047
+Boves,Piemonte,IT-004028
+Argelato,Emilia-Romagna,IT-037002
+Terralba,Sardegna,IT-095065
+Cesa,Campania,IT-061029
+Traversetolo,Emilia-Romagna,IT-034042
+Conselice,Emilia-Romagna,IT-039008
+Albisola Superiore,Liguria,IT-009004
+Savignano sul Panaro,Emilia-Romagna,IT-036041
+Bagnolo in Piano,Emilia-Romagna,IT-035002
+Vaprio d'Adda,Lombardia,IT-015230
+Cingoli,Marche,IT-043012
+Garlasco,Lombardia,IT-018069
+Cuorgnè,Piemonte,IT-001098
+Cherasco,Piemonte,IT-004067
+Casaluce,Campania,IT-061020
+Legnaro,Veneto,IT-028044
+Castel Bolognese,Emilia-Romagna,IT-039006
+Lizzano,Puglia,IT-073011
+Sannicandro di Bari,Puglia,IT-072040
+Elmas,Sardegna,IT-092108
+Magnago,Lombardia,IT-015131
+San Giorgio di Piano,Emilia-Romagna,IT-037052
+Cavriglia,Toscana,IT-051013
+Volterra,Toscana,IT-050039
+Deruta,Umbria,IT-054017
+Bisignano,Calabria,IT-078017
+Nepi,Lazio,IT-056039
+Piombino Dese,Veneto,IT-028064
+Mareno di Piave,Veneto,IT-026038
+Bellinzago Novarese,Piemonte,IT-003016
+Casali del Manco,Calabria,IT-078156
+San Giovanni in Marignano,Emilia-Romagna,IT-099017
+Cermenate,Lombardia,IT-013064
+Dolianova,Sardegna,IT-111014
+Zafferana Etnea,Sicilia,IT-087055
+Barga,Toscana,IT-046003
+Gatteo,Emilia-Romagna,IT-040016
+Capriolo,Lombardia,IT-017038
+Cetraro,Calabria,IT-078040
+Siano,Campania,IT-065142
+Vanzago,Lombardia,IT-015229
+Lerici,Liguria,IT-011016
+Cutro,Calabria,IT-101012
+Recco,Liguria,IT-010047
+Resana,Veneto,IT-026066
+Gaggiano,Lombardia,IT-015103
+Roncadelle,Lombardia,IT-017165
+Castelleone,Lombardia,IT-019025
+Giardini-Naxos,Sicilia,IT-083032
+Ruffano,Puglia,IT-075064
+Marano Vicentino,Veneto,IT-024056
+Reggiolo,Emilia-Romagna,IT-035032
+Vignate,Lombardia,IT-015237
+Brugnera,Friuli-Venezia Giulia,IT-093007
+Sant'Agata li Battiati,Sicilia,IT-087045
+Gassino Torinese,Piemonte,IT-001112
+Santa Teresa di Riva,Sicilia,IT-083089
+Vittuone,Lombardia,IT-015243
+Maserà di Padova,Veneto,IT-028048
+Loria,Veneto,IT-026036
+Pasian di Prato,Friuli-Venezia Giulia,IT-030072
+Montescaglioso,Basilicata,IT-077017
+Assago,Lombardia,IT-015011
+Inverigo,Lombardia,IT-013118
+Presicce-Acquarica,Puglia,IT-075098
+Malalbergo,Emilia-Romagna,IT-037035
+Bagnara Calabra,Calabria,IT-080007
+Macomer,Sardegna,IT-091044
+Felino,Emilia-Romagna,IT-034013
+Castrolibero,Calabria,IT-078031
+Lavis,Trentino-Alto Adige/Südtirol,IT-022103
+Gavirate,Lombardia,IT-012072
+Mosciano Sant'Angelo,Abruzzo,IT-067030
+Verano Brianza,Lombardia,IT-108048
+Oggiono,Lombardia,IT-097057
+Lacchiarella,Lombardia,IT-015115
+Santa Lucia di Piave,Veneto,IT-026075
+Carignano,Piemonte,IT-001058
+Pieve a Nievole,Toscana,IT-047013
+San Pancrazio Salentino,Puglia,IT-074015
+Istrana,Veneto,IT-026035
+Maserada sul Piave,Veneto,IT-026040
+Borgosatollo,Lombardia,IT-017021
+Podenzano,Emilia-Romagna,IT-033035
+Noventa Vicentina,Veneto,IT-024074
+Orte,Lazio,IT-056042
+Monticello Conte Otto,Veneto,IT-024067
+Treia,Marche,IT-043054
+Colorno,Emilia-Romagna,IT-034010
+Matelica,Marche,IT-043024
+Fossombrone,Marche,IT-041015
+Foiano della Chiana,Toscana,IT-051018
+Belvedere Marittimo,Calabria,IT-078015
+Soresina,Lombardia,IT-019098
+Monteroni d'Arbia,Toscana,IT-052017
+Casorate Primo,Lombardia,IT-018034
+Fiumefreddo di Sicilia,Sicilia,IT-087016
+Campobello di Licata,Sicilia,IT-084010
+Druento,Piemonte,IT-001099
+Striano,Campania,IT-063081
+Montagnana,Veneto,IT-028056
+Due Carrare,Veneto,IT-028106
+Borgoricco,Veneto,IT-028013
+Villa Castelli,Puglia,IT-074020
+Mendicino,Calabria,IT-078079
+Aviano,Friuli-Venezia Giulia,IT-093004
+Asolo,Veneto,IT-026003
+Pessano con Bornago,Lombardia,IT-015172
+Segni,Lazio,IT-058102
+Iseo,Lombardia,IT-017085
+Castelnuovo Berardenga,Toscana,IT-052006
+Frignano,Campania,IT-061037
+Minerbio,Emilia-Romagna,IT-037038
+Viagrande,Sicilia,IT-087053
+Monteforte d'Alpone,Veneto,IT-023050
+Teolo,Veneto,IT-028089
+Pandino,Lombardia,IT-019067
+Missaglia,Lombardia,IT-097049
+Albinea,Emilia-Romagna,IT-035001
+Filottrano,Marche,IT-042019
+Uta,Sardegna,IT-092090
+Porto Tolle,Veneto,IT-029039
+San Marzano di San Giuseppe,Puglia,IT-073025
+Coccaglio,Lombardia,IT-017056
+Tirano,Lombardia,IT-014066
+Sorisole,Lombardia,IT-016202
+Tarcento,Friuli-Venezia Giulia,IT-030116
+Porcari,Toscana,IT-046026
+Aradeo,Puglia,IT-075006
+Cabras,Sardegna,IT-095018
+Altavilla Milicia,Sicilia,IT-082004
+Succivo,Campania,IT-061090
+Serramazzoni,Emilia-Romagna,IT-036042
+Ala,Trentino-Alto Adige/Südtirol,IT-022001
+Roccastrada,Toscana,IT-053021
+Erbusco,Lombardia,IT-017069
+Gessate,Lombardia,IT-015106
+Costa Volpino,Lombardia,IT-016086
+Ponte Buggianese,Toscana,IT-047016
+Buggiano,Toscana,IT-047003
+Besozzo,Lombardia,IT-012013
+Pizzo,Calabria,IT-102027
+Colognola ai Colli,Veneto,IT-023028
+Sant'Egidio del Monte Albino,Campania,IT-065130
+Triuggio,Lombardia,IT-108043
+Folignano,Marche,IT-044020
+Torre Boldone,Lombardia,IT-016214
+Mozzate,Lombardia,IT-013159
+Civitella in Val di Chiana,Toscana,IT-051016
+Flero,Lombardia,IT-017072
+Luzzi,Calabria,IT-078070
+Aragona,Sicilia,IT-084003
+La Loggia,Piemonte,IT-001127
+Castagneto Carducci,Toscana,IT-049006
+Montalto di Castro,Lazio,IT-056035
+Roccapiemonte,Campania,IT-065108
+Gonzaga,Lombardia,IT-020027
+Brandizzo,Piemonte,IT-001034
+Roverbella,Lombardia,IT-020053
+Cutrofiano,Puglia,IT-075026
+Caprino Veronese,Veneto,IT-023018
+Parabita,Puglia,IT-075059
+Zanica,Lombardia,IT-016245
+Trissino,Veneto,IT-024110
+Bovalino,Calabria,IT-080012
+Castellabate,Campania,IT-065031
+Castel Gandolfo,Lazio,IT-058022
+Trebisacce,Calabria,IT-078150
+Lavagno,Veneto,IT-023042
+Clusone,Lombardia,IT-016077
+Castelnovo di Sotto,Emilia-Romagna,IT-035015
+San Sebastiano al Vesuvio,Campania,IT-063070
+Cervinara,Campania,IT-064025
+Castelnuovo di Porto,Lazio,IT-058024
+Brembate,Lombardia,IT-016037
+Vergiate,Lombardia,IT-012138
+Pozzuolo Martesana,Lombardia,IT-015178
+Sant'Agnello,Campania,IT-063071
+Lequile,Puglia,IT-075036
+Luzzara,Emilia-Romagna,IT-035026
+Bientina,Toscana,IT-050001
+Monte Porzio Catone,Lazio,IT-058064
+Monte San Savino,Toscana,IT-051025
+Petilia Policastro,Calabria,IT-101017
+Vicopisano,Toscana,IT-050038
+Zogno,Lombardia,IT-016246
+Rignano sull'Arno,Toscana,IT-048036
+Soverato,Calabria,IT-079137
+Campogalliano,Emilia-Romagna,IT-036003
+Farra di Soligo,Veneto,IT-026026
+Fiesso d'Artico,Veneto,IT-027014
+Subiaco,Lazio,IT-058103
+Morlupo,Lazio,IT-058068
+Cogliate,Lombardia,IT-108020
+Martano,Puglia,IT-075040
+Pianella,Abruzzo,IT-068030
+Trecase,Campania,IT-063091
+Serramanna,Sardegna,IT-111077
+San Sperate,Sardegna,IT-111065
+Santa Margherita Ligure,Liguria,IT-010054
+Ronciglione,Lazio,IT-056045
+Pino Torinese,Piemonte,IT-001192
+Inveruno,Lombardia,IT-015113
+Volvera,Piemonte,IT-001315
+Cologna Veneta,Veneto,IT-023027
+Bruino,Piemonte,IT-001038
+Castel di Lama,Marche,IT-044011
+Sala Bolognese,Emilia-Romagna,IT-037050
+Santa Venerina,Sicilia,IT-087048
+Troina,Sicilia,IT-086018
+Misiliscemi,Sicilia,IT-081025
+Fiscaglia,Emilia-Romagna,IT-038027
+Cogoleto,Liguria,IT-010017
+Galbiate,Lombardia,IT-097036
+Calvisano,Lombardia,IT-017034
+Breganze,Veneto,IT-024014
+Castegnato,Lombardia,IT-017040
+Zoppola,Friuli-Venezia Giulia,IT-093051
+Pogliano Milanese,Lombardia,IT-015176
+Decimomannu,Sardegna,IT-092015
+Laveno-Mombello,Lombardia,IT-012087
+Lesmo,Lombardia,IT-108026
+San Vittore Olona,Lombardia,IT-015201
+San Pietro Clarenza,Sicilia,IT-087044
+Calusco d'Adda,Lombardia,IT-016046
+Concordia sulla Secchia,Emilia-Romagna,IT-036010
+Ponte di Piave,Veneto,IT-026058
+Bussero,Lombardia,IT-015040
+Dorgali,Sardegna,IT-091017
+Guardiagrele,Abruzzo,IT-069043
+Sovico,Lombardia,IT-108041
+Sirmione,Lombardia,IT-017179
+Vobarno,Lombardia,IT-017204
+Gavorrano,Toscana,IT-053010
+Prata di Pordenone,Friuli-Venezia Giulia,IT-093034
+Boville Ernica,Lazio,IT-060014
+Nogara,Veneto,IT-023053
+Casarsa della Delizia,Friuli-Venezia Giulia,IT-093010
+Sandrigo,Veneto,IT-024091
+Spello,Umbria,IT-054050
+Pietra Ligure,Liguria,IT-009049
+Sovizzo,Veneto,IT-024128
+Piovene Rocchette,Veneto,IT-024078
+Levico Terme,Trentino-Alto Adige/Südtirol,IT-022104
+Castelnuovo Magra,Liguria,IT-011011
+Rossano Veneto,Veneto,IT-024088
+Casapulla,Campania,IT-061021
+San Martino in Rio,Emilia-Romagna,IT-035037
+Fermignano,Marche,IT-041014
+Albano Sant'Alessandro,Lombardia,IT-016003
+Rivolta d'Adda,Lombardia,IT-019084
+Capriate San Gervasio,Lombardia,IT-016051
+Cellole,Campania,IT-061102
+Borgonovo Val Tidone,Emilia-Romagna,IT-033006
+Leporano,Puglia,IT-073010
+Limena,Veneto,IT-028045
+Duino Aurisina,Friuli-Venezia Giulia,IT-032001
+Tuscania,Lazio,IT-056052
+Fabrica di Roma,Lazio,IT-056024
+Motta Visconti,Lombardia,IT-015151
+Massa Marittima,Toscana,IT-053015
+Chiusi,Toscana,IT-052011
+Erchie,Puglia,IT-074006
+Colico,Lombardia,IT-097023
+Verdello,Lombardia,IT-016233
+Caldaro sulla strada del vino,Trentino-Alto Adige/Südtirol,IT-021015
+Renon,Trentino-Alto Adige/Südtirol,IT-021072
+Mozzecane,Veneto,IT-023051
+Villongo,Lombardia,IT-016242
+Sortino,Sicilia,IT-089019
+Fusignano,Emilia-Romagna,IT-039011
+Tombolo,Veneto,IT-028091
+Gorla Minore,Lombardia,IT-012079
+Marnate,Lombardia,IT-012098
+Luni,Liguria,IT-011020
+Vicchio,Toscana,IT-048049
+Cartoceto,Marche,IT-041010
+Sanluri,Sardegna,IT-111067
+Cuggiono,Lombardia,IT-015096
+Airola,Campania,IT-062001
+Verolanuova,Lombardia,IT-017195
+Fontaniva,Veneto,IT-028038
+Minervino Murge,Puglia,IT-110006
+Quarto d'Altino,Veneto,IT-027031
+Palazzolo Acreide,Sicilia,IT-089015
+Santhià,Piemonte,IT-002133
+San Damiano d'Asti,Piemonte,IT-005097
+Caldiero,Veneto,IT-023017
+Ceprano,Lazio,IT-060025
+Chiaramonte Gulfi,Sicilia,IT-088002
+San Giuseppe Jato,Sicilia,IT-082064
+Castelbuono,Sicilia,IT-082022
+Rovellasca,Lombardia,IT-013201
+Toritto,Puglia,IT-072044
+Fara Gera d'Adda,Lombardia,IT-016096
+Terno d'Isola,Lombardia,IT-016213
+Vado Ligure,Liguria,IT-009064
+Origgio,Lombardia,IT-012109
+Brembate di Sopra,Lombardia,IT-016038
+San Gavino Monreale,Sardegna,IT-111062
+Trevi,Umbria,IT-054054
+Vallo della Lucania,Campania,IT-065154
+Cagli,Marche,IT-041007
+Basiglio,Lombardia,IT-015015
+Mariglianella,Campania,IT-063042
+Cadorago,Lombardia,IT-013036
+Ponte nelle Alpi,Veneto,IT-025040
+Tavullia,Marche,IT-041065
+Ittiri,Sardegna,IT-090033
+San Daniele del Friuli,Friuli-Venezia Giulia,IT-030099
+Ferrandina,Basilicata,IT-077008
+Villafranca Tirrena,Sicilia,IT-083105
+Soriano nel Cimino,Lazio,IT-056048
+Petrosino,Sicilia,IT-081024
+Sissa Trecasali,Emilia-Romagna,IT-034049
+Pisogne,Lombardia,IT-017143
+Maracalagonis,Sardegna,IT-092037
+Pasiano di Pordenone,Friuli-Venezia Giulia,IT-093029
+San Cesario di Lecce,Puglia,IT-075068
+Paliano,Lazio,IT-060046
+Campoformido,Friuli-Venezia Giulia,IT-030016
+Campomarino,Molise,IT-070010
+Taglio di Po,Veneto,IT-029046
+Pelago,Toscana,IT-048032
+Monte Urano,Marche,IT-109024
+Villa Guardia,Lombardia,IT-013245
+Cumiana,Piemonte,IT-001097
+Carnate,Lombardia,IT-108016
+Valverde,Sicilia,IT-087052
+Capraia e Limite,Toscana,IT-048008
+Cairate,Lombardia,IT-012029
+Castello di Cisterna,Campania,IT-063025
+Meta,Campania,IT-063046
+Caerano di San Marco,Veneto,IT-026006
+Cervaro,Lazio,IT-060026
+Fuscaldo,Calabria,IT-078058
+Massa e Cozzile,Toscana,IT-047008
+Manziana,Lazio,IT-058054
+Campofelice di Roccella,Sicilia,IT-082017
+Agerola,Campania,IT-063003
+Torrile,Emilia-Romagna,IT-034041
+San Fermo della Battaglia,Lombardia,IT-013206
+Appiano Gentile,Lombardia,IT-013010
+Salice Salentino,Puglia,IT-075065
+Castrezzato,Lombardia,IT-017045
+Loreggia,Veneto,IT-028046
+None,Piemonte,IT-001168
+Sellia Marina,Calabria,IT-079127
+Portico di Caserta,Campania,IT-061062
+Carpaneto Piacentino,Emilia-Romagna,IT-033011
+Vitulazio,Campania,IT-061100
+Lazzate,Lombardia,IT-108025
+Breda di Piave,Veneto,IT-026005
+Rizziconi,Calabria,IT-080065
+Lodi Vecchio,Lombardia,IT-098032
+Mezzolombardo,Trentino-Alto Adige/Südtirol,IT-022117
+Vigarano Mainarda,Emilia-Romagna,IT-038022
+Toscolano-Maderno,Lombardia,IT-017187
+Arcugnano,Veneto,IT-024006
+Vergato,Emilia-Romagna,IT-037059
+Marmirolo,Lombardia,IT-020033
+Telese Terme,Campania,IT-062074
+Crescentino,Piemonte,IT-002049
+Grottaminarda,Campania,IT-064038
+Verdellino,Lombardia,IT-016232
+Cologne,Lombardia,IT-017059
+Azzano San Paolo,Lombardia,IT-016016
+San Marcello Piteglio,Toscana,IT-047024
+Recale,Campania,IT-061067
+Caccamo,Sicilia,IT-082014
+Nicolosi,Sicilia,IT-087031
+Costabissara,Veneto,IT-024035
+Trecastelli,Marche,IT-042050
+Macherio,Lombardia,IT-108029
+Agira,Sicilia,IT-086001
+Casamicciola Terme,Campania,IT-063019
+Grado,Friuli-Venezia Giulia,IT-031009
+Vigliano Biellese,Piemonte,IT-096077
+Serra Riccò,Liguria,IT-010058
+Gravellona Toce,Piemonte,IT-103035
+Tricesimo,Friuli-Venezia Giulia,IT-030127
+Mussolente,Veneto,IT-024070
+Stra,Veneto,IT-027039
+Palagianello,Puglia,IT-073020
+Bojano,Molise,IT-070003
+Curno,Lombardia,IT-016089
+Solarino,Sicilia,IT-089018
+Grumello del Monte,Lombardia,IT-016120
+Racalmuto,Sicilia,IT-084029
+Santa Maria di Licodia,Sicilia,IT-087047
+Scanzano Jonico,Basilicata,IT-077031
+Soncino,Lombardia,IT-019097
+Gattinara,Piemonte,IT-002061
+Novoli,Puglia,IT-075055
+Avella,Campania,IT-064007
+San Gimignano,Toscana,IT-052028
+Cariati,Calabria,IT-078025
+Cavenago di Brianza,Lombardia,IT-108017
+Vedano al Lambro,Lombardia,IT-108046
+Bolano,Liguria,IT-011004
+San Giovanni Gemini,Sicilia,IT-084036
+Monte San Giusto,Marche,IT-043031
+Bellusco,Lombardia,IT-108006
+Castiglione Olona,Lombardia,IT-012046
+Riva del Po,Emilia-Romagna,IT-038029
+Zelo Buon Persico,Lombardia,IT-098061
+Carmignano di Brenta,Veneto,IT-028023
+Barge,Piemonte,IT-004012
+Vedano Olona,Lombardia,IT-012134
+Lamporecchio,Toscana,IT-047005
+Montecosaro,Marche,IT-043028
+Sacrofano,Lazio,IT-058093
+Città della Pieve,Umbria,IT-054012
+Settala,Lombardia,IT-015210
+Bosa,Sardegna,IT-095079
+Povegliano Veronese,Veneto,IT-023060
+Montorio al Vomano,Abruzzo,IT-067028
+Villa di Briano,Campania,IT-061098
+Caluso,Piemonte,IT-001047
+Cotignola,Emilia-Romagna,IT-039009
+Sonnino,Lazio,IT-059029
+Alife,Campania,IT-061002
+Pederobba,Veneto,IT-026056
+Venegono Superiore,Lombardia,IT-012137
+Sant'Agata Bolognese,Emilia-Romagna,IT-037056
+San Colombano al Lambro,Lombardia,IT-015191
+Cabiate,Lombardia,IT-013035
+Pieve di Cento,Emilia-Romagna,IT-037048
+Mappano,Piemonte,IT-001316
+San Zenone degli Ezzelini,Veneto,IT-026077
+Cles,Trentino-Alto Adige/Südtirol,IT-022062
+Bovezzo,Lombardia,IT-017025
+Pregnana Milanese,Lombardia,IT-015179
+Torregrotta,Sicilia,IT-083098
+Sant'Angelo di Piove di Sacco,Veneto,IT-028082
+Pantelleria,Sicilia,IT-081014
+Montella,Campania,IT-064057
+San Giorgio di Nogaro,Friuli-Venezia Giulia,IT-030100
+Vico del Gargano,Puglia,IT-071059
+Longiano,Emilia-Romagna,IT-040018
+Mozzo,Lombardia,IT-016143
+Andora,Liguria,IT-009006
+Chiavenna,Lombardia,IT-014018
+Candelo,Piemonte,IT-096012
+Castellalto,Abruzzo,IT-067011
+Terme Vigliatore,Sicilia,IT-083106
+Volta Mantovana,Lombardia,IT-020070
+Cambiago,Lombardia,IT-015044
+Sparanise,Campania,IT-061089
+Sarentino,Trentino-Alto Adige/Südtirol,IT-021086
+Borgia,Calabria,IT-079011
+Casteltermini,Sicilia,IT-084012
+Spinetoli,Marche,IT-044071
+Campagna Lupia,Veneto,IT-027002
+Soave,Veneto,IT-023081
+Corte Franca,Lombardia,IT-017062
+Brisighella,Emilia-Romagna,IT-039004
+Morciano di Romagna,Emilia-Romagna,IT-099011
+Curtarolo,Veneto,IT-028036
+Luserna San Giovanni,Piemonte,IT-001139
+Vezzano Ligure,Liguria,IT-011031
+Cavezzo,Emilia-Romagna,IT-036009
+Castiglione della Pescaia,Toscana,IT-053006
+Adro,Lombardia,IT-017002
+Staranzano,Friuli-Venezia Giulia,IT-031023
+Baricella,Emilia-Romagna,IT-037003
+Galliera Veneta,Veneto,IT-028039
+Cormons,Friuli-Venezia Giulia,IT-031002
+Santa Giustina in Colle,Veneto,IT-028080
+Rivergaro,Emilia-Romagna,IT-033038
+Borgetto,Sicilia,IT-082013
+Fontanellato,Emilia-Romagna,IT-034015
+Turbigo,Lombardia,IT-015226
+Brugine,Veneto,IT-028015
+Pula,Sardegna,IT-092050
+Vietri sul Mare,Campania,IT-065157
+Poviglio,Emilia-Romagna,IT-035029
+Binasco,Lombardia,IT-015024
+Carinaro,Campania,IT-061016
+Montelabbate,Marche,IT-041036
+Sermide e Felonica,Lombardia,IT-020061
+Provaglio d'Iseo,Lombardia,IT-017156
+Borgo Valsugana,Trentino-Alto Adige/Südtirol,IT-022022
+Carinola,Campania,IT-061017
+Camerano,Marche,IT-042006
+Fossò,Veneto,IT-027017
+Altivole,Veneto,IT-026001
+Tito,Basilicata,IT-076089
+Rufina,Toscana,IT-048037
+Alto Reno Terme,Emilia-Romagna,IT-037062
+Borgo Veneto,Veneto,IT-028107
+Loreto Aprutino,Abruzzo,IT-068021
+Castel Madama,Lazio,IT-058023
+Fivizzano,Toscana,IT-045007
+Isola delle Femmine,Sicilia,IT-082043
+Marcellina,Lazio,IT-058056
+Naro,Sicilia,IT-084026
+Teggiano,Campania,IT-065146
+Casapesenna,Campania,IT-061103
+Manciano,Toscana,IT-053014
+Castello di Godego,Veneto,IT-026013
+Altavilla Silentina,Campania,IT-065005
+Pontevico,Lombardia,IT-017149
+Buttapietra,Veneto,IT-023016
+Pratola Peligna,Abruzzo,IT-066075
+Novafeltria,Emilia-Romagna,IT-099023
+Spino d'Adda,Lombardia,IT-019102
+Dronero,Piemonte,IT-004082
+Pontoglio,Lombardia,IT-017150
+Castelrotto,Trentino-Alto Adige/Südtirol,IT-021019
+Chianciano Terme,Toscana,IT-052009
+Noventa di Piave,Veneto,IT-027027
+Torrita di Siena,Toscana,IT-052035
+Settimo San Pietro,Sardegna,IT-092075
+Vipiteno,Trentino-Alto Adige/Südtirol,IT-021115
+Centallo,Piemonte,IT-004061
+Mapello,Lombardia,IT-016132
+Tresignana,Emilia-Romagna,IT-038030
+Carapelle,Puglia,IT-071010
+Castelcovati,Lombardia,IT-017041
+Bardolino,Veneto,IT-023006
+Olginate,Lombardia,IT-097059
+San Lucido,Calabria,IT-078122
+Montescudo-Monte Colombo,Emilia-Romagna,IT-099029
+Zugliano,Veneto,IT-024122
+Barlassina,Lombardia,IT-108005
+Predaia,Trentino-Alto Adige/Südtirol,IT-022230
+Roncoferraro,Lombardia,IT-020052
+Urbania,Marche,IT-041066
+Uggiate con Ronago,Lombardia,IT-013256
+Passirano,Lombardia,IT-017136
+Roccadaspide,Campania,IT-065106
+Marzabotto,Emilia-Romagna,IT-037036
+Pontremoli,Toscana,IT-045014
+Cimitile,Campania,IT-063028
+Lazise,Veneto,IT-023043
+Pozzuolo del Friuli,Friuli-Venezia Giulia,IT-030079
+Pegognaga,Lombardia,IT-020039
+Prevalle,Lombardia,IT-017155
+Lignano Sabbiadoro,Friuli-Venezia Giulia,IT-030049
+Busnago,Lombardia,IT-108051
+Cordignano,Veneto,IT-026022
+Quiliano,Liguria,IT-009052
+Martignacco,Friuli-Venezia Giulia,IT-030057
+Sarnico,Lombardia,IT-016193
+Varallo,Piemonte,IT-002156
+San Marco Argentano,Calabria,IT-078123
+Mercato Saraceno,Emilia-Romagna,IT-040020
+Sennori,Sardegna,IT-090067
+Busseto,Emilia-Romagna,IT-034007
+Santi Cosma e Damiano,Lazio,IT-059026
+Valguarnera Caropepe,Sicilia,IT-086019
+Camerota,Campania,IT-065021
+Arconate,Lombardia,IT-015007
+Sassoferrato,Marche,IT-042044
+Anacapri,Campania,IT-063004
+San Fior,Veneto,IT-026072
+Orosei,Sardegna,IT-091063
+Bellante,Abruzzo,IT-067006
+Gioiosa Ionica,Calabria,IT-080039
+Asciano,Toscana,IT-052002
+Pignola,Basilicata,IT-076062
+Nova Siri,Basilicata,IT-077018
+Livigno,Lombardia,IT-014037
+Montecassiano,Marche,IT-043026
+Serino,Campania,IT-064099
+Robecco sul Naviglio,Lombardia,IT-015184
+Fabbrico,Emilia-Romagna,IT-035021
+Capri,Campania,IT-063014
+Sarego,Veneto,IT-024098
+Cassolnovo,Lombardia,IT-018035
+Gioiosa Marea,Sicilia,IT-083033
+Roggiano Gravina,Calabria,IT-078104
+Vidigulfo,Lombardia,IT-018176
+Caraglio,Piemonte,IT-004040
+Roccasecca,Lazio,IT-060060
+Cerano,Piemonte,IT-003049
+Forte dei Marmi,Toscana,IT-046013
+Vallecrosia,Liguria,IT-008063
+Vazzola,Veneto,IT-026088
+Sutri,Lazio,IT-056049
+Borgo Val di Taro,Emilia-Romagna,IT-034006
+Brendola,Veneto,IT-024015
+Manoppello,Abruzzo,IT-068022
+San Giorgio su Legnano,Lombardia,IT-015194
+Casarza Ligure,Liguria,IT-010011
+Grazzanise,Campania,IT-061042
+Militello in Val di Catania,Sicilia,IT-087025
+Caulonia,Calabria,IT-080025
+Zibido San Giacomo,Lombardia,IT-015247
+Solesino,Veneto,IT-028087
+Albiate,Lombardia,IT-108003
+Nole,Piemonte,IT-001166
+Calimera,Puglia,IT-075010
+Pozzo d'Adda,Lombardia,IT-015177
+Borgo a Mozzano,Toscana,IT-046004
+Ponteranica,Lombardia,IT-016169
+San Filippo del Mela,Sicilia,IT-083077
+Ostiglia,Lombardia,IT-020038
+Monte San Vito,Marche,IT-042030
+San Benedetto Po,Lombardia,IT-020055
+Mirabella Eclano,Campania,IT-064050
+Bonate Sotto,Lombardia,IT-016031
+Bolgare,Lombardia,IT-016028
+Siziano,Lombardia,IT-018150
+Cava Manara,Lombardia,IT-018041
+Ferno,Lombardia,IT-012068
+Ceriano Laghetto,Lombardia,IT-108018
+Pieve del Grappa,Veneto,IT-026096
+Vernole,Puglia,IT-075093
+Trino,Piemonte,IT-002148
+Pontenure,Emilia-Romagna,IT-033037
+Melissano,Puglia,IT-075044
+Regalbuto,Sicilia,IT-086016
+Alpago,Veneto,IT-025072
+Castello d'Argile,Emilia-Romagna,IT-037017
+Troia,Puglia,IT-071058
+Curti,Campania,IT-061032
+Arpino,Lazio,IT-060010
+Castel di Sangro,Abruzzo,IT-066028
+Carugo,Lombardia,IT-013048
+Torgiano,Umbria,IT-054053
+San Vitaliano,Campania,IT-063075
+Carnago,Lombardia,IT-012033
+Scorrano,Puglia,IT-075073
+San Cesario sul Panaro,Emilia-Romagna,IT-036036
+Montalbano Jonico,Basilicata,IT-077016
+Rometta,Sicilia,IT-083076
+Villasor,Sardegna,IT-111106
+Villa di Serio,Lombardia,IT-016240
+Santa Giustina,Veneto,IT-025048
+San Cipriano Picentino,Campania,IT-065118
+Cagnano Varano,Puglia,IT-071008
+Roccarainola,Campania,IT-063065
+Gorle,Lombardia,IT-016115
+Dozza,Emilia-Romagna,IT-037025
+Olevano sul Tusciano,Campania,IT-065082
+Zanè,Veneto,IT-024119
+Almenno San Bartolomeo,Lombardia,IT-016006
+Nicotera,Calabria,IT-102025
+Campli,Abruzzo,IT-067008
+Spezzano Albanese,Calabria,IT-078142
+Lampedusa e Linosa,Sicilia,IT-084020
+Carosino,Puglia,IT-073002
+Salgareda,Veneto,IT-026070
+Oliena,Sardegna,IT-091055
+Grassobbio,Lombardia,IT-016117
+Nervesa della Battaglia,Veneto,IT-026050
+Castiglione Torinese,Piemonte,IT-001068
+Landriano,Lombardia,IT-018078
+Curinga,Calabria,IT-079039
+Bolzano Vicentino,Veneto,IT-024013
+Gallicano nel Lazio,Lazio,IT-058040
+Canicattini Bagni,Sicilia,IT-089005
+Villa d'Almè,Lombardia,IT-016239
+Casteggio,Lombardia,IT-018037
+Castrocaro Terme e Terra del Sole,Emilia-Romagna,IT-040005
+Senise,Basilicata,IT-076085
+Porto Cesareo,Puglia,IT-075097
+Campomorone,Liguria,IT-010009
+San Marco Evangelista,Campania,IT-061104
+Bregnano,Lombardia,IT-013028
+Labico,Lazio,IT-058049
+Poggio Rusco,Lombardia,IT-020042
+Medolla,Emilia-Romagna,IT-036021
+Torbole Casaglia,Lombardia,IT-017186
+Tagliacozzo,Abruzzo,IT-066099
+Gradisca d'Isonzo,Friuli-Venezia Giulia,IT-031008
+Monzuno,Emilia-Romagna,IT-037044
+Arcole,Veneto,IT-023004
+Verzuolo,Piemonte,IT-004240
+Albavilla,Lombardia,IT-013003
+Cittaducale,Lazio,IT-057016
+San Giorgio in Bosco,Veneto,IT-028076
+Belgioioso,Lombardia,IT-018013
+San Vincenzo,Toscana,IT-049018
+Marcaria,Lombardia,IT-020031
+Alliste,Puglia,IT-075004
+Mesola,Emilia-Romagna,IT-038014
+San Martino Siccomario,Lombardia,IT-018137
+Dairago,Lombardia,IT-015099
+Capranica,Lazio,IT-056014
+Olevano Romano,Lazio,IT-058073
+Capannoli,Toscana,IT-050005
+Sapri,Campania,IT-065134
+Praia a Mare,Calabria,IT-078101
+Laterina Pergine Valdarno,Toscana,IT-051042
+Silandro,Trentino-Alto Adige/Südtirol,IT-021093
+Manzano,Friuli-Venezia Giulia,IT-030055
+Montebello Vicentino,Veneto,IT-024060
+Sommatino,Sicilia,IT-085019
+Buja,Friuli-Venezia Giulia,IT-030013
+Larino,Molise,IT-070031
+Cernobbio,Lombardia,IT-013065
+Subbiano,Toscana,IT-051037
+Marcallo con Casone,Lombardia,IT-015134
+Almese,Piemonte,IT-001006
+Vairano Patenora,Campania,IT-061095
+Robbiate,Lombardia,IT-097071
+Calci,Toscana,IT-050003
+Sesto al Reghena,Friuli-Venezia Giulia,IT-093043
+Predappio,Emilia-Romagna,IT-040032
+Marina di Gioiosa Ionica,Calabria,IT-080045
+Piedimonte San Germano,Lazio,IT-060052
+Pietraperzia,Sicilia,IT-086015
+Fiumicello Villa Vicentina,Friuli-Venezia Giulia,IT-030190
+Ravarino,Emilia-Romagna,IT-036034
+Rovello Porro,Lombardia,IT-013202
+Larciano,Toscana,IT-047006
+Olgiate Molgora,Lombardia,IT-097058
+Gualtieri,Emilia-Romagna,IT-035023
+Notaresco,Abruzzo,IT-067032
+Montegiorgio,Marche,IT-109017
+Albanella,Campania,IT-065003
+Arquata Scrivia,Piemonte,IT-006009
+Sommariva del Bosco,Piemonte,IT-004222
+Boltiere,Lombardia,IT-016029
+Mileto,Calabria,IT-102021
+Ostra,Marche,IT-042035
+Serra San Bruno,Calabria,IT-102037
+Balestrate,Sicilia,IT-082007
+Rivignano Teor,Friuli-Venezia Giulia,IT-030188
+Codevigo,Veneto,IT-028033
+Pizzighettone,Lombardia,IT-019076
+Asiago,Veneto,IT-024009
+Fossacesia,Abruzzo,IT-069033
+Villadossola,Piemonte,IT-103075
+Montenero di Bisaccia,Molise,IT-070046
+Caneva,Friuli-Venezia Giulia,IT-093009
+Lesina,Puglia,IT-071027
+Quinzano d'Oglio,Lombardia,IT-017159
+Scisciano,Campania,IT-063077
+Cinquefrondi,Calabria,IT-080027
+Villa Cortese,Lombardia,IT-015248
+Montesano sulla Marcellana,Campania,IT-065076
+Cisano Bergamasco,Lombardia,IT-016074
+Calcinate,Lombardia,IT-016043
+Pollenza,Marche,IT-043041
+Buttigliera Alta,Piemonte,IT-001045
+Barbarano Mossano,Veneto,IT-024124
+Avetrana,Puglia,IT-073001
+Villanova di Camposampiero,Veneto,IT-028104
+Chiuduno,Lombardia,IT-016073
+Meolo,Veneto,IT-027022
+Rosolina,Veneto,IT-029040
+Poggio Mirteto,Lazio,IT-057053
+Vernio,Toscana,IT-100007
+Ceggia,Veneto,IT-027007
+San Prospero,Emilia-Romagna,IT-036039
+Strongoli,Calabria,IT-101025
+Brignano Gera d'Adda,Lombardia,IT-016040
+Ghisalba,Lombardia,IT-016113
+San Donaci,Puglia,IT-074013
+Abbadia San Salvatore,Toscana,IT-052001
+San Polo d'Enza,Emilia-Romagna,IT-035038
+Monterenzio,Emilia-Romagna,IT-037041
+Briosco,Lombardia,IT-108011
+Roccella Ionica,Calabria,IT-080067
+Lercara Friddi,Sicilia,IT-082045
+Castelgomberto,Veneto,IT-024028
+Cavaion Veronese,Veneto,IT-023023
+San Benigno Canavese,Piemonte,IT-001236
+Gonnosfanadiga,Sardegna,IT-111031
+Camerino,Marche,IT-043007
+Follo,Liguria,IT-011013
+Naturno,Trentino-Alto Adige/Südtirol,IT-021056
+Massanzago,Veneto,IT-028050
+San Michele Salentino,Puglia,IT-074014
+Cornuda,Veneto,IT-026023
+Sernaglia della Battaglia,Veneto,IT-026080
+Mede,Lombardia,IT-018088
+Lettere,Campania,IT-063039
+Marineo,Sicilia,IT-082046
+Strambino,Piemonte,IT-001269
+Calatafimi-Segesta,Sicilia,IT-081003
+Monte San Biagio,Lazio,IT-059015
+Alessano,Puglia,IT-075002
+Fonte,Veneto,IT-026029
+Rio Saliceto,Emilia-Romagna,IT-035034
+Torreglia,Veneto,IT-028092
+San Canzian d'Isonzo,Friuli-Venezia Giulia,IT-031018
+Remanzacco,Friuli-Venezia Giulia,IT-030091
+Gangi,Sicilia,IT-082036
+Ronco all'Adige,Veneto,IT-023064
+Godega di Sant'Urbano,Veneto,IT-026033
+San Giovanni al Natisone,Friuli-Venezia Giulia,IT-030101
+Sumirago,Lombardia,IT-012124
+Bellona,Campania,IT-061007
+Cellino San Marco,Puglia,IT-074004
+Cadeo,Emilia-Romagna,IT-033007
+Guidizzolo,Lombardia,IT-020028
+Fagagna,Friuli-Venezia Giulia,IT-030037
+Crocetta del Montello,Veneto,IT-026025
+Maiolati Spontini,Marche,IT-042023
+Venegono Inferiore,Lombardia,IT-012136
+Villanova Mondovì,Piemonte,IT-004245
+Tortora,Calabria,IT-078149
+Offanengo,Lombardia,IT-019062
+Fornovo di Taro,Emilia-Romagna,IT-034017
+Sammichele di Bari,Puglia,IT-072039
+Collecorvino,Abruzzo,IT-068015
+Tavazzano con Villavesco,Lombardia,IT-098056
+Villaverla,Veneto,IT-024118
+Sant'Arcangelo,Basilicata,IT-076080
+Santa Margherita di Belice,Sicilia,IT-084038
+Valle Aurina,Trentino-Alto Adige/Südtirol,IT-021108
+Pace del Mela,Sicilia,IT-083064
+Sala Baganza,Emilia-Romagna,IT-034031
+Rudiano,Lombardia,IT-017167
+Lipomo,Lombardia,IT-013129
+Mattinata,Puglia,IT-071031
+Luco dei Marsi,Abruzzo,IT-066051
+Borso del Grappa,Veneto,IT-026004
+Colceresa,Veneto,IT-024126
+Lioni,Campania,IT-064044
+Bagnolo San Vito,Lombardia,IT-020003
+Vermezzo con Zelo,Lombardia,IT-015251
+Serravalle Scrivia,Piemonte,IT-006160
+Susa,Piemonte,IT-001270
+San Paolo d'Argon,Lombardia,IT-016189
+Pedrengo,Lombardia,IT-016160
+Carloforte,Sardegna,IT-111010
+Ranica,Lombardia,IT-016178
+Spinazzola,Puglia,IT-110008
+Cambiano,Piemonte,IT-001048
+Recoaro Terme,Veneto,IT-024084
+San Secondo Parmense,Emilia-Romagna,IT-034033
+Loro Ciuffenna,Toscana,IT-051020
+Villanuova sul Clisi,Lombardia,IT-017201
+Pimonte,Campania,IT-063054
+Villa Bartolomea,Veneto,IT-023095
+Ceva,Piemonte,IT-004066
+Truccazzano,Lombardia,IT-015224
+Robbio,Lombardia,IT-018123
+Torrebelvicino,Veneto,IT-024107
+Bagnolo Piemonte,Piemonte,IT-004009
+Cammarata,Sicilia,IT-084009
+Trevignano Romano,Lazio,IT-058107
+Ascea,Campania,IT-065009
+Poppi,Toscana,IT-051031
+Mulazzano,Lombardia,IT-098041
+Setteville,Veneto,IT-025075
+Gaiarine,Veneto,IT-026031
+Roveredo in Piano,Friuli-Venezia Giulia,IT-093036
+Quinto Vicentino,Veneto,IT-024083
+Domusnovas,Sardegna,IT-111016
+Ascoli Satriano,Puglia,IT-071005
+San Clemente,Emilia-Romagna,IT-099016
+Pantigliate,Lombardia,IT-015167
+Cellamare,Puglia,IT-072018
+Poggiardo,Puglia,IT-075061
+Riolo Terme,Emilia-Romagna,IT-039015
+Trasacco,Abruzzo,IT-066102
+Bentivoglio,Emilia-Romagna,IT-037005
+Tropea,Calabria,IT-102044
+San Tammaro,Campania,IT-061085
+Stornara,Puglia,IT-071054
+Pergola,Marche,IT-041043
+Mesoraca,Calabria,IT-101015
+Majano,Friuli-Venezia Giulia,IT-030053
+Fossalta di Portogruaro,Veneto,IT-027016
+Brolo,Sicilia,IT-083007
+Guanzate,Lombardia,IT-013114
+Montepaone,Calabria,IT-079081
+Campo Tures,Trentino-Alto Adige/Südtirol,IT-021017
+Casalbordino,Abruzzo,IT-069015
+Pignataro Maggiore,Campania,IT-061060
+Cogorno,Liguria,IT-010018
+Palosco,Lombardia,IT-016157
+Gattatico,Emilia-Romagna,IT-035022
+Bussoleno,Piemonte,IT-001044
+Montelepre,Sicilia,IT-082050
+Fontanelle,Veneto,IT-026028
+Rosate,Lombardia,IT-015188
+Misinto,Lombardia,IT-108032
+Passignano sul Trasimeno,Umbria,IT-054038
+Cavaria con Premezzo,Lombardia,IT-012048
+Gossolengo,Emilia-Romagna,IT-033023
+San Dorligo della Valle,Friuli-Venezia Giulia,IT-032004
+Ciserano,Lombardia,IT-016075
+Cancello ed Arnone,Campania,IT-061012
+Dello,Lombardia,IT-017066
+Genazzano,Lazio,IT-058042
+Lavena Ponte Tresa,Lombardia,IT-012086
+Alezio,Puglia,IT-075003
+Marsicovetere,Basilicata,IT-076046
+Sant'Elia Fiumerapido,Lazio,IT-060068
+Costigliole d'Asti,Piemonte,IT-005050
+Arbus,Sardegna,IT-111001
+Vizzini,Sicilia,IT-087054
+Spirano,Lombardia,IT-016206
+Casorezzo,Lombardia,IT-015058
+Davoli,Calabria,IT-079042
+Uzzano,Toscana,IT-047021
+Tavernerio,Lombardia,IT-013222
+Brusaporto,Lombardia,IT-016042
+Galliera,Emilia-Romagna,IT-037028
+Tortorici,Sicilia,IT-083099
+Gualdo Cattaneo,Umbria,IT-054022
+Villa del Conte,Veneto,IT-028101
+Castelverde,Lombardia,IT-019026
+Montalcino,Toscana,IT-052037
+Castelsardo,Sardegna,IT-090023
+Bagni di Lucca,Toscana,IT-046002
+Candiolo,Piemonte,IT-001051
+Camporosso,Liguria,IT-008011
+Otranto,Puglia,IT-075057
+Casorate Sempione,Lombardia,IT-012039
+Castelnuovo di Garfagnana,Toscana,IT-046009
+Corigliano d'Otranto,Puglia,IT-075023
+Campo San Martino,Veneto,IT-028020
+Picerno,Basilicata,IT-076059
+Montebello Jonico,Calabria,IT-080053
+Romentino,Piemonte,IT-003131
+San Giovanni Suergiu,Sardegna,IT-111063
+Casaleone,Veneto,IT-023019
+Ostellato,Emilia-Romagna,IT-038017
+Santorso,Veneto,IT-024095
+Cervarese Santa Croce,Veneto,IT-028030
+Brescello,Emilia-Romagna,IT-035006
+Bagno di Romagna,Emilia-Romagna,IT-040001
+Ospedaletto Euganeo,Veneto,IT-028059
+Dicomano,Toscana,IT-048013
+Diano Marina,Liguria,IT-008027
+Cosio Valtellino,Lombardia,IT-014024
+Sant'Olcese,Liguria,IT-010055
+Sannicola,Puglia,IT-075070
+Campagnola Emilia,Emilia-Romagna,IT-035009
+San Giorgio Piacentino,Emilia-Romagna,IT-033040
+Collepasso,Puglia,IT-075021
+Gozzano,Piemonte,IT-003076
+Egna,Trentino-Alto Adige/Südtirol,IT-021029
+Motta San Giovanni,Calabria,IT-080054
+Certosa di Pavia,Lombardia,IT-018046
+Nocera Umbra,Umbria,IT-054034
+Buti,Toscana,IT-050002
+Budoni,Sardegna,IT-090091
+Colverde,Lombardia,IT-013251
+Cortina d'Ampezzo,Veneto,IT-025016
+Borgo San Giacomo,Lombardia,IT-017020
+Mezzocorona,Trentino-Alto Adige/Südtirol,IT-022116
+Trenzano,Lombardia,IT-017190
+Almè,Lombardia,IT-016005
+Canale,Piemonte,IT-004037
+Lurago d'Erba,Lombardia,IT-013136
+Acquedolci,Sicilia,IT-083107
+Almenno San Salvatore,Lombardia,IT-016007
+Peveragno,Piemonte,IT-004163
+Calcio,Lombardia,IT-016044
+Fontevivo,Emilia-Romagna,IT-034016
+Villanova d'Asti,Piemonte,IT-005118
+Longare,Veneto,IT-024051
+Pavia di Udine,Friuli-Venezia Giulia,IT-030074
+Villapiana,Calabria,IT-078154
+Verderio,Lombardia,IT-097091
+Besnate,Lombardia,IT-012012
+Gabicce Mare,Marche,IT-041019
+Girifalco,Calabria,IT-079059
+Castiglione dei Pepoli,Emilia-Romagna,IT-037022
+Serradifalco,Sicilia,IT-085018
+Piana degli Albanesi,Sicilia,IT-082057
+Ossi,Sardegna,IT-090051
+Crespina Lorenzana,Toscana,IT-050041
+Capiago Intimiano,Lombardia,IT-013043
+Povoletto,Friuli-Venezia Giulia,IT-030078
+Calco,Lombardia,IT-097012
+Cavour,Piemonte,IT-001070
+Pratovecchio Stia,Toscana,IT-051041
+San Paolo di Civitate,Puglia,IT-071050
+Solbiate Olona,Lombardia,IT-012122
+San Donato di Lecce,Puglia,IT-075069
+Limana,Veneto,IT-025029
+Montano Lucino,Lombardia,IT-013154
+Anghiari,Toscana,IT-051001
+Ornago,Lombardia,IT-108036
+Calvi Risorta,Campania,IT-061010
+Ledro,Trentino-Alto Adige/Südtirol,IT-022229
+Moglia,Lombardia,IT-020035
+Arce,Lazio,IT-060008
+Casal Velino,Campania,IT-065028
+Arienzo,Campania,IT-061004
+Trezzano Rosa,Lombardia,IT-015219
+Cupra Marittima,Marche,IT-044017
+Casalserugo,Veneto,IT-028028
+Angera,Lombardia,IT-012003
+Castelvetro Piacentino,Emilia-Romagna,IT-033014
+Campegine,Emilia-Romagna,IT-035010
+Manerba del Garda,Lombardia,IT-017102
+Vanzaghello,Lombardia,IT-015249
+Giussago,Lombardia,IT-018072
+Cavallermaggiore,Piemonte,IT-004059
+Cilavegna,Lombardia,IT-018050
+Palmanova,Friuli-Venezia Giulia,IT-030070
+Ceriale,Liguria,IT-009024
+Montefalco,Umbria,IT-054030
+Bracigliano,Campania,IT-065016
+Nereto,Abruzzo,IT-067031
+Panicale,Umbria,IT-054037
+Sambuca di Sicilia,Sicilia,IT-084034
+Maiori,Campania,IT-065066
+Guagnano,Puglia,IT-075034
+Stornarella,Puglia,IT-071055
+Ispra,Lombardia,IT-012084
+Acquapendente,Lazio,IT-056001
+Rocca di Neto,Calabria,IT-101019
+Sovere,Lombardia,IT-016204
+Carcare,Liguria,IT-009018
+Boretto,Emilia-Romagna,IT-035005
+Marano sul Panaro,Emilia-Romagna,IT-036020
+Pomarance,Toscana,IT-050027
+Sarcedo,Veneto,IT-024097
+Malles Venosta,Trentino-Alto Adige/Südtirol,IT-021046
+Monteiasi,Puglia,IT-073016
+Quistello,Lombardia,IT-020047
+Albaredo d'Adige,Veneto,IT-023002
+Custonaci,Sicilia,IT-081007
+Torchiarolo,Puglia,IT-074018
+Borgo Mantovano,Lombardia,IT-020072
+Gattico-Veruno,Piemonte,IT-003166
+Vallelaghi,Trentino-Alto Adige/Südtirol,IT-022248
+Vitorchiano,Lazio,IT-056060
+Gizzeria,Calabria,IT-079060
+Apice,Campania,IT-062003
+Laces,Trentino-Alto Adige/Südtirol,IT-021037
+Capolona,Toscana,IT-051006
+Terre Roveresche,Marche,IT-041070
+Maruggio,Puglia,IT-073014
+Vaglia,Toscana,IT-048046
+Codognè,Veneto,IT-026019
+Baselga di Pinè,Trentino-Alto Adige/Südtirol,IT-022009
+Chiusa,Trentino-Alto Adige/Südtirol,IT-021022
+Rogliano,Calabria,IT-078105
+Cotronei,Calabria,IT-101009
+Viggiù,Lombardia,IT-012139
+Borgo Ticino,Piemonte,IT-003025
+Cerro al Lambro,Lombardia,IT-015071
+Poncarale,Lombardia,IT-017147
+Genzano di Lucania,Basilicata,IT-076036
+Cervasca,Piemonte,IT-004064
+Camporotondo Etneo,Sicilia,IT-087012
+Mugnano del Cardinale,Campania,IT-064065
+Castellucchio,Lombardia,IT-020016
+Rodigo,Lombardia,IT-020051
+Osio Sopra,Lombardia,IT-016152
+Sant'Omero,Abruzzo,IT-067039
+Monticelli d'Ongina,Emilia-Romagna,IT-033027
+San Vito Chietino,Abruzzo,IT-069086
+Jerago con Orago,Lombardia,IT-012085
+Gorlago,Lombardia,IT-016114
+Gazzo Veronese,Veneto,IT-023037
+Gandino,Lombardia,IT-016108
+Caprarola,Lazio,IT-056015
+Basiliano,Friuli-Venezia Giulia,IT-030009
+Soleto,Puglia,IT-075076
+Albissola Marina,Liguria,IT-009003
+Caiazzo,Campania,IT-061009
+Illasi,Veneto,IT-023039
+Poggio Torriana,Emilia-Romagna,IT-099028
+Grotte,Sicilia,IT-084018
+Montelibretti,Lazio,IT-058063
+Albizzate,Lombardia,IT-012002
+Arosio,Lombardia,IT-013012
+Correzzola,Veneto,IT-028035
+Veronella,Veneto,IT-023092
+Canzo,Lombardia,IT-013042
+Forino,Campania,IT-064034
+Caponago,Lombardia,IT-108052
+Calatabiano,Sicilia,IT-087010
+Cisliano,Lombardia,IT-015078
+Giavera del Montello,Veneto,IT-026032
+San Pietro di Feletto,Veneto,IT-026073
+Altopiano della Vigolana,Trentino-Alto Adige/Südtirol,IT-022236
+Rapolano Terme,Toscana,IT-052026
+Sannazzaro de' Burgondi,Lombardia,IT-018138
+Casoli,Abruzzo,IT-069017
+Levanto,Liguria,IT-011017
+Busalla,Liguria,IT-010006
+Corsano,Puglia,IT-075024
+San Teodoro,Sardegna,IT-090092
+Rosta,Piemonte,IT-001228
+Lesignano de' Bagni,Emilia-Romagna,IT-034019
+Polla,Campania,IT-065097
+Maser,Veneto,IT-026039
+Corropoli,Abruzzo,IT-067021
+Santa Maria del Cedro,Calabria,IT-078132
+Rivanazzano Terme,Lombardia,IT-018122
+Chiaravalle Centrale,Calabria,IT-079029
+Lonate Ceppino,Lombardia,IT-012089
+Bottanuco,Lombardia,IT-016034
+Povegliano,Veneto,IT-026062
+Muravera,Sardegna,IT-111042
+Castrignano del Capo,Puglia,IT-075019
+Pagnacco,Friuli-Venezia Giulia,IT-030068
+Coreglia Antelminelli,Toscana,IT-046011
+Dro,Trentino-Alto Adige/Südtirol,IT-022079
+Esine,Lombardia,IT-017070
+Montanaro,Piemonte,IT-001161
+Montemiletto,Campania,IT-064059
+Montirone,Lombardia,IT-017114
+Chions,Friuli-Venezia Giulia,IT-093013
+Varna,Trentino-Alto Adige/Südtirol,IT-021111
+Casnate con Bernate,Lombardia,IT-013053
+Santa Teresa Gallura,Sardegna,IT-090063
+Tregnago,Veneto,IT-023087
+Tuglie,Puglia,IT-075089
+Cannobio,Piemonte,IT-103017
+Lomagna,Lombardia,IT-097044
+Cura Carpignano,Lombardia,IT-018060
+Barzanò,Lombardia,IT-097006
+Cividate al Piano,Lombardia,IT-016076
+Colle Umberto,Veneto,IT-026020
+Lanusei,Sardegna,IT-091037
+Ricadi,Calabria,IT-102030
+Telgate,Lombardia,IT-016212
+Ripi,Lazio,IT-060058
+Vigone,Piemonte,IT-001299
+Gottolengo,Lombardia,IT-017080
+Castronno,Lombardia,IT-012047
+Diamante,Calabria,IT-078048
+Santo Stefano Ticino,Lombardia,IT-015200
+Centuripe,Sicilia,IT-086007
+Filadelfia,Calabria,IT-102011
+Longarone,Veneto,IT-025071
+Camposano,Campania,IT-063013
+Favria,Piemonte,IT-001101
+Canino,Lazio,IT-056012
+Lovere,Lombardia,IT-016128
+Sarroch,Sardegna,IT-092066
+Bagnolo Cremasco,Lombardia,IT-019005
+Paratico,Lombardia,IT-017134
+Tremezzina,Lombardia,IT-013252
+Botricello,Calabria,IT-079012
+Carsoli,Abruzzo,IT-066025
+Lagonegro,Basilicata,IT-076039
+Primiero San Martino di Castrozza,Trentino-Alto Adige/Südtirol,IT-022245
+Sant'Angelo Romano,Lazio,IT-058098
+Varallo Pombia,Piemonte,IT-003154
+Massa di Somma,Campania,IT-063092
+Lagundo,Trentino-Alto Adige/Südtirol,IT-021038
+Linguaglossa,Sicilia,IT-087021
+Mansuè,Veneto,IT-026037
+Centola,Campania,IT-065039
+Arcene,Lombardia,IT-016011
+Lanzo Torinese,Piemonte,IT-001128
+Fragagnano,Puglia,IT-073006
+Castelbellino,Marche,IT-042008
+Saccolongo,Veneto,IT-028073
+Camogli,Liguria,IT-010007
+Gazzaniga,Lombardia,IT-016111
+Giffoni Sei Casali,Campania,IT-065055
+Muro Lucano,Basilicata,IT-076053
+Figino Serenza,Lombardia,IT-013101
+Bucchianico,Abruzzo,IT-069008
+Sassocorvaro Auditore,Marche,IT-041071
+Montecchio Precalcino,Veneto,IT-024062
+Pontirolo Nuovo,Lombardia,IT-016172
+Roccafranca,Lombardia,IT-017162
+Aquino,Lazio,IT-060007
+Carobbio degli Angeli,Lombardia,IT-016055
+Nove,Veneto,IT-024073
+Gradara,Marche,IT-041020
+Terlano,Trentino-Alto Adige/Südtirol,IT-021097
+Porlezza,Lombardia,IT-013189
+San Cipirello,Sicilia,IT-082063
+Fontanella,Lombardia,IT-016101
+Rovolon,Veneto,IT-028071
+Cerda,Sicilia,IT-082028
+Padenghe sul Garda,Lombardia,IT-017129
+Mornago,Lombardia,IT-012106
+Neviano,Puglia,IT-075053
+Zimella,Veneto,IT-023098
+Guglionesi,Molise,IT-070029
+Faloppio,Lombardia,IT-013099
+Valbrenta,Veneto,IT-024125
+Melicucco,Calabria,IT-080049
+Gagliano del Capo,Puglia,IT-075028
+San Giovanni Ilarione,Veneto,IT-023070
+San Polo di Piave,Veneto,IT-026074
+Binago,Lombardia,IT-013023
+Castelnuovo Scrivia,Piemonte,IT-006053
+Gambassi Terme,Toscana,IT-048020
+Ardore,Calabria,IT-080005
+Cellatica,Lombardia,IT-017048
+San Francesco al Campo,Piemonte,IT-001240
+Verolengo,Piemonte,IT-001293
+Gaggio Montano,Emilia-Romagna,IT-037027
+Caronno Varesino,Lombardia,IT-012035
+Celle Ligure,Liguria,IT-009022
+Gorla Maggiore,Lombardia,IT-012078
+Alzate Brianza,Lombardia,IT-013007
+Arzergrande,Veneto,IT-028007
+Padula,Campania,IT-065087
+Monzambano,Lombardia,IT-020036
+Mortegliano,Friuli-Venezia Giulia,IT-030062
+San Vito Lo Capo,Sicilia,IT-081020
+Castel del Piano,Toscana,IT-053004
+Roncello,Lombardia,IT-108055
+Veggiano,Veneto,IT-028096
+Capriano del Colle,Lombardia,IT-017037
+Senorbì,Sardegna,IT-111075
+Robecchetto con Induno,Lombardia,IT-015183
+Sarre,Valle d'Aosta/Vallée d'Aoste,IT-007066
+Torre di Mosto,Veneto,IT-027041
+Portoscuso,Sardegna,IT-111057
+Riccia,Molise,IT-070057
+Monterosi,Lazio,IT-056038
+Cupello,Abruzzo,IT-069028
+Montecastrilli,Umbria,IT-055017
+San Martino Valle Caudina,Campania,IT-064083
+Pian Camuno,Lombardia,IT-017142
+Piancogno,Lombardia,IT-017206
+Caorso,Emilia-Romagna,IT-033010
+Cantello,Lombardia,IT-012030
+Assoro,Sicilia,IT-086003
+Presezzo,Lombardia,IT-016176
+Costa Masnaga,Lombardia,IT-097026
+Nuvolera,Lombardia,IT-017120
+Ortisei,Trentino-Alto Adige/Südtirol,IT-021061
+Bevagna,Umbria,IT-054004
+Samassi,Sardegna,IT-111059
+Soragna,Emilia-Romagna,IT-034036
+Pramaggiore,Veneto,IT-027030
+Riva presso Chieri,Piemonte,IT-001215
+Tursi,Basilicata,IT-077029
+Corinaldo,Marche,IT-042015
+Monastir,Sardegna,IT-111041
+Capistrello,Abruzzo,IT-066020
+Oppido Mamertina,Calabria,IT-080055
+Osnago,Lombardia,IT-097061
+Arsago Seprio,Lombardia,IT-012005
+Cropani,Calabria,IT-079036
+Santa Ninfa,Sicilia,IT-081019
+Alseno,Emilia-Romagna,IT-033002
+Licciana Nardi,Toscana,IT-045009
+Serravalle Sesia,Piemonte,IT-002137
+Simeri Crichi,Calabria,IT-079133
+Cervino,Campania,IT-061028
+Tolfa,Lazio,IT-058105
+Albairate,Lombardia,IT-015005
+Cusago,Lombardia,IT-015097
+Nocera Terinese,Calabria,IT-079087
+Tricarico,Basilicata,IT-077028
+Montà,Piemonte,IT-004133
+Peccioli,Toscana,IT-050025
+San Gemini,Umbria,IT-055029
+Zocca,Emilia-Romagna,IT-036047
+Solbiate con Cagno,Lombardia,IT-013255
+Buscate,Lombardia,IT-015038
+Torrice,Lazio,IT-060079
+Campo nell'Elba,Toscana,IT-049003
+Popoli Terme,Abruzzo,IT-068033
+San Zeno Naviglio,Lombardia,IT-017173
+Ville d'Anaunia,Trentino-Alto Adige/Südtirol,IT-022249
+Ponte dell'Olio,Emilia-Romagna,IT-033036
+Cortemaggiore,Emilia-Romagna,IT-033018
+Carvico,Lombardia,IT-016057
+Castell'Arquato,Emilia-Romagna,IT-033012
+Bella,Basilicata,IT-076012
+Sassano,Campania,IT-065136
+Stresa,Piemonte,IT-103064
+Villadose,Veneto,IT-029048
+Lagosanto,Emilia-Romagna,IT-038011
+Muro Leccese,Puglia,IT-075051
+Racines,Trentino-Alto Adige/Südtirol,IT-021070
+Castel d'Ario,Lombardia,IT-020014
+Agnone,Molise,IT-094002
+Grassano,Basilicata,IT-077011
+Agugliano,Marche,IT-042001
+Villafranca in Lunigiana,Toscana,IT-045016
+Spadafora,Sicilia,IT-083096
+San Pellegrino Terme,Lombardia,IT-016190
+Amalfi,Campania,IT-065006
+Rodano,Lombardia,IT-015185
+La Valletta Brianza,Lombardia,IT-097092
+Maratea,Basilicata,IT-076044
+Bassano Romano,Lazio,IT-056005
+Casale di Scodosia,Veneto,IT-028027
+Reana del Rojale,Friuli-Venezia Giulia,IT-030090
+Torre Pellice,Piemonte,IT-001275
+Vailate,Lombardia,IT-019112
+Cocquio-Trevisago,Lombardia,IT-012053
+Baveno,Piemonte,IT-103008
+Breno,Lombardia,IT-017028
+Dogliani,Piemonte,IT-004081
+Francolise,Campania,IT-061036
+Borghetto Santo Spirito,Liguria,IT-009012
+Miglianico,Abruzzo,IT-069050
+Azzate,Lombardia,IT-012006
+Stroncone,Umbria,IT-055031
+Bricherasio,Piemonte,IT-001035
+Cappella Maggiore,Veneto,IT-026007
+Gazzada Schianno,Lombardia,IT-012073
+Offida,Marche,IT-044054
+Villafranca Piemonte,Piemonte,IT-001300
+Santa Giusta,Sardegna,IT-095047
+Talamona,Lombardia,IT-014063
+Monticelli Brusati,Lombardia,IT-017112
+Gragnano Trebbiense,Emilia-Romagna,IT-033024
+Villa d'Adda,Lombardia,IT-016238
+Fosdinovo,Toscana,IT-045008
+Polverigi,Marche,IT-042038
+Ionadi,Calabria,IT-102017
+Supino,Lazio,IT-060076
+Minerbe,Veneto,IT-023048
+San Giovanni Bianco,Lombardia,IT-016188
+Mordano,Emilia-Romagna,IT-037045
+Laureana di Borrello,Calabria,IT-080042
+Cartura,Veneto,IT-028026
+Dorno,Lombardia,IT-018061
+Santa Caterina Villarmosa,Sicilia,IT-085017
+Palaia,Toscana,IT-050024
+Civitella del Tronto,Abruzzo,IT-067017
+Salve,Puglia,IT-075066
+San Costanzo,Marche,IT-041051
+San Giorgio della Richinvelda,Friuli-Venezia Giulia,IT-093038
+Lusiana Conco,Veneto,IT-024127
+Sant'Ambrogio di Torino,Piemonte,IT-001255
+Palazzago,Lombardia,IT-016156
+Gonnesa,Sardegna,IT-111030
+Condofuri,Calabria,IT-080029
+Gambara,Lombardia,IT-017073
+Casina,Emilia-Romagna,IT-035013
+Marrubiu,Sardegna,IT-095025
+Terranova da Sibari,Calabria,IT-078146
+Specchia,Puglia,IT-075077
+Noviglio,Lombardia,IT-015158
+Predazzo,Trentino-Alto Adige/Südtirol,IT-022147
+Pozzolo Formigaro,Piemonte,IT-006138
+Gonars,Friuli-Venezia Giulia,IT-030044
+Pradalunga,Lombardia,IT-016173
+Teglio,Lombardia,IT-014065
+Lacco Ameno,Campania,IT-063038
+Loiano,Emilia-Romagna,IT-037034
+Sulbiate,Lombardia,IT-108042
+Buccino,Campania,IT-065017
+Favignana,Sicilia,IT-081009
+Torrenova,Sicilia,IT-083108
+Norcia,Umbria,IT-054035
+Castiglione d'Adda,Lombardia,IT-098014
+Castel Guelfo di Bologna,Emilia-Romagna,IT-037016
+Morcone,Campania,IT-062044
+Bagnatica,Lombardia,IT-016018
+Guardia Sanframondi,Campania,IT-062037
+Andrano,Puglia,IT-075005
+Arcade,Veneto,IT-026002
+Serrenti,Sardegna,IT-111078
+Crevoladossola,Piemonte,IT-103025
+Chiesina Uzzanese,Toscana,IT-047022
+Maida,Calabria,IT-079069
+Grantorto,Veneto,IT-028042
+Sarteano,Toscana,IT-052031
+Storo,Trentino-Alto Adige/Südtirol,IT-022183
+Mezzago,Lombardia,IT-108031
+Scilla,Calabria,IT-080085
+Isola del Gran Sasso d'Italia,Abruzzo,IT-067026
+Ormelle,Veneto,IT-026052
+Irsina,Basilicata,IT-077013
+San Zenone al Lambro,Lombardia,IT-015202
+San Martino in Pensilis,Molise,IT-070069
+Campo Calabro,Calabria,IT-080018
+Massalengo,Lombardia,IT-098037
+Alvignano,Campania,IT-061003
+Castellazzo Bormida,Piemonte,IT-006047
+Condove,Piemonte,IT-001093
+Saint-Vincent,Valle d'Aosta/Vallée d'Aoste,IT-007065
+Catenanuova,Sicilia,IT-086006
+Calvenzano,Lombardia,IT-016047
+Brivio,Lombardia,IT-097010
+Monsampolo del Tronto,Marche,IT-044031
+San Paolo,Lombardia,IT-017138
+Montecarlo,Toscana,IT-046021
+Travacò Siccomario,Lombardia,IT-018162
+Morgano,Veneto,IT-026047
+Villaputzu,Sardegna,IT-111103
+Collebeato,Lombardia,IT-017057
+Comun Nuovo,Lombardia,IT-016081
+Pietramelara,Campania,IT-061058
+Cassago Brianza,Lombardia,IT-097017
+Firenzuola,Toscana,IT-048018
+Castro dei Volsci,Lazio,IT-060023
+Solarolo,Emilia-Romagna,IT-039018
+Carrù,Piemonte,IT-004043
+Carimate,Lombardia,IT-013046
+Monastier di Treviso,Veneto,IT-026044
+Baiano,Campania,IT-064010
+Cupramontana,Marche,IT-042016
+Gavi,Piemonte,IT-006081
+Mineo,Sicilia,IT-087027
+Vezzano sul Crostolo,Emilia-Romagna,IT-035043
+Acquasparta,Umbria,IT-055001
+Edolo,Lombardia,IT-017068
+Castelraimondo,Marche,IT-043009
+Realmonte,Sicilia,IT-084032
+Mozzanica,Lombardia,IT-016142
+Santa Lucia del Mela,Sicilia,IT-083086
+Villastellone,Piemonte,IT-001308
+Terricciola,Toscana,IT-050036
+Palazzo San Gervasio,Basilicata,IT-076057
+Sotto il Monte Giovanni XXIII,Lombardia,IT-016203
+Torretta,Sicilia,IT-082072
+Châtillon,Valle d'Aosta/Vallée d'Aoste,IT-007020
+Capri Leone,Sicilia,IT-083010
+Borghetto Lodigiano,Lombardia,IT-098004
+Valbrembo,Lombardia,IT-016224
+Santo Stefano di Camastra,Sicilia,IT-083091
+Vertova,Lombardia,IT-016234
+Bogliasco,Liguria,IT-010004
+Covo,Lombardia,IT-016087
+Trivento,Molise,IT-070081
+Scansano,Toscana,IT-053023
+Grisignano di Zocco,Veneto,IT-024046
+Leffe,Lombardia,IT-016124
+Oggiona con Santo Stefano,Lombardia,IT-012107
+Roè Volciano,Lombardia,IT-017164
+Villarosa,Sicilia,IT-086020
+Pedavena,Veneto,IT-025036
+Piglio,Lazio,IT-060053
+Pizzoli,Abruzzo,IT-066072
+Ossona,Lombardia,IT-015164
+Canneto sull'Oglio,Lombardia,IT-020008
+Locate Varesino,Lombardia,IT-013131
+Uggiano la Chiesa,Puglia,IT-075091
+Valledoria,Sardegna,IT-090079
+Grignasco,Piemonte,IT-003079
+Mistretta,Sicilia,IT-083052
+San Ferdinando,Calabria,IT-080097
+Mogliano,Marche,IT-043025
+Morazzone,Lombardia,IT-012105
+Gazzo,Veneto,IT-028041
+Ameglia,Liguria,IT-011001
+Limatola,Campania,IT-062038
+Torano Castello,Calabria,IT-078148
+San Bartolomeo in Galdo,Campania,IT-062057
+Vignanello,Lazio,IT-056058
+Montecchia di Crosara,Veneto,IT-023049
+Peschici,Puglia,IT-071038
+Grosio,Lombardia,IT-014033
+Modigliana,Emilia-Romagna,IT-040022
+Canonica d'Adda,Lombardia,IT-016049
+Galzignano Terme,Veneto,IT-028040
+Ponte Lambro,Lombardia,IT-013188
+Gropello Cairoli,Lombardia,IT-018076
+San Quirino,Friuli-Venezia Giulia,IT-093040
+Bisuschio,Lombardia,IT-012015
+Invorio,Piemonte,IT-003082
+Mazzè,Piemonte,IT-001148
+Rombiolo,Calabria,IT-102031
+Castel Frentano,Abruzzo,IT-069018
+Castel di Iudica,Sicilia,IT-087013
+Pojana Maggiore,Veneto,IT-024079
+Burago di Molgora,Lombardia,IT-108013
+Cigliano,Piemonte,IT-002042
+Arcidosso,Toscana,IT-053001
+Ploaghe,Sardegna,IT-090057
+Bettona,Umbria,IT-054003
+Bernezzo,Piemonte,IT-004022
+Colonna,Lazio,IT-058035
+Bianco,Calabria,IT-080009
+Albese con Cassano,Lombardia,IT-013004
+Bariano,Lombardia,IT-016020
+Mesero,Lombardia,IT-015144
+Montereale Valcellina,Friuli-Venezia Giulia,IT-093027
+Spezzano della Sila,Calabria,IT-078143
+Arcevia,Marche,IT-042003
+Ragalna,Sicilia,IT-087058
+Bastiglia,Emilia-Romagna,IT-036001
+Medole,Lombardia,IT-020034
+Mirabella Imbaccari,Sicilia,IT-087028
+Livorno Ferraris,Piemonte,IT-002071
+Civezzano,Trentino-Alto Adige/Südtirol,IT-022061
+Torrevecchia Teatina,Abruzzo,IT-069094
+Sersale,Calabria,IT-079130
+Ballabio,Lombardia,IT-097004
+Fossalta di Piave,Veneto,IT-027015
+Tribano,Veneto,IT-028094
+Borgorose,Lazio,IT-057007
+Olmedo,Sardegna,IT-090048
+Sanguinetto,Veneto,IT-023072
+San Benedetto Val di Sambro,Emilia-Romagna,IT-037051
+Malgrate,Lombardia,IT-097045
+Aidone,Sicilia,IT-086002
+Calitri,Campania,IT-064015
+Furnari,Sicilia,IT-083028
+Usini,Sardegna,IT-090077
+Valdidentro,Lombardia,IT-014071
+Veduggio con Colzano,Lombardia,IT-108047
+Fumane,Veneto,IT-023035
+Cannara,Umbria,IT-054006
+Decimoputzu,Sardegna,IT-111013
+Marcheno,Lombardia,IT-017104
+Revello,Piemonte,IT-004180
+Acqualagna,Marche,IT-041001
+Ronco Scrivia,Liguria,IT-010049
+Guiglia,Emilia-Romagna,IT-036017
+Vigolzone,Emilia-Romagna,IT-033045
+Anguillara Veneta,Veneto,IT-028004
+Madone,Lombardia,IT-016131
+Paglieta,Abruzzo,IT-069059
+Siculiana,Sicilia,IT-084042
+Vertemate con Minoprio,Lombardia,IT-013242
+Tarzo,Veneto,IT-026084
+Toano,Emilia-Romagna,IT-035041
+Tramonti,Campania,IT-065151
+Canale Monterano,Lazio,IT-058016
+Roccagorga,Lazio,IT-059021
+Lallio,Lombardia,IT-016123
+Rapolla,Basilicata,IT-076064
+Roana,Veneto,IT-024085
+Comezzano-Cizzago,Lombardia,IT-017060
+Ripatransone,Marche,IT-044063
+Carpiano,Lombardia,IT-015050
+Sossano,Veneto,IT-024102
+San Pietro in Gu,Veneto,IT-028078
+Visciano,Campania,IT-063088
+Avio,Trentino-Alto Adige/Südtirol,IT-022007
+Supersano,Puglia,IT-075081
+Quart,Valle d'Aosta/Vallée d'Aoste,IT-007054
+Ghilarza,Sardegna,IT-095021
+Atina,Lazio,IT-060011
+Brentonico,Trentino-Alto Adige/Südtirol,IT-022025
+Stanghella,Veneto,IT-028088
+Butera,Sicilia,IT-085003
+Offlaga,Lombardia,IT-017122
+Val Brembilla,Lombardia,IT-016253
+Torricella,Puglia,IT-073028
+Monticello Brianza,Lombardia,IT-097054
+Vestone,Lombardia,IT-017197
+Rovetta,Lombardia,IT-016187
+Bolognetta,Sicilia,IT-082011
+Lasa,Trentino-Alto Adige/Südtirol,IT-021042
+Ischitella,Puglia,IT-071025
+Garda,Veneto,IT-023036
+Rose,Calabria,IT-078106
+Guardavalle,Calabria,IT-079061
+Givoletto,Piemonte,IT-001116
+San Michele all'Adige,Trentino-Alto Adige/Südtirol,IT-022167
+Palau,Sardegna,IT-090054
+Sabbioneta,Lombardia,IT-020054
+Sant'Antonino di Susa,Piemonte,IT-001256
+Montopoli di Sabina,Lazio,IT-057044
+Amaseno,Lazio,IT-060005
+Moretta,Piemonte,IT-004143
+Sirolo,Marche,IT-042048
+Casirate d'Adda,Lombardia,IT-016059
+Gravedona ed Uniti,Lombardia,IT-013249
+Prizzi,Sicilia,IT-082060
+Nova Ponente,Trentino-Alto Adige/Südtirol,IT-021059
+Boffalora sopra Ticino,Lombardia,IT-015026
+Castelforte,Lazio,IT-059004
+Isorella,Lombardia,IT-017086
+Appignano,Marche,IT-043003
+Lenola,Lazio,IT-059012
+Roccalumera,Sicilia,IT-083072
+Berbenno di Valtellina,Lombardia,IT-014007
+Cene,Lombardia,IT-016070
+Liscate,Lombardia,IT-015122
+Bisacquino,Sicilia,IT-082010
+Dipignano,Calabria,IT-078049
+Bova Marina,Calabria,IT-080013
+Agordo,Veneto,IT-025001
+Sabbio Chiese,Lombardia,IT-017168
+Cappelle sul Tavo,Abruzzo,IT-068006
+Bozzolo,Lombardia,IT-020007
+Brogliano,Veneto,IT-024017
+Merone,Lombardia,IT-013147
+Rosciano,Abruzzo,IT-068035
+Calascibetta,Sicilia,IT-086005
+San Carlo Canavese,Piemonte,IT-001237
+Latronico,Basilicata,IT-076040
+Santa Sofia,Emilia-Romagna,IT-040043
+Sant'Angelo a Cupolo,Campania,IT-062071
+Pecetto Torinese,Piemonte,IT-001183
+San Salvatore Monferrato,Piemonte,IT-006154
+Solbiate Arno,Lombardia,IT-012121
+Chignolo Po,Lombardia,IT-018048
+Bulgarograsso,Lombardia,IT-013034
+Ussana,Sardegna,IT-111093
+Piadena Drizzona,Lombardia,IT-019116
+Rolo,Emilia-Romagna,IT-035035
+Moiano,Campania,IT-062040
+Carpineto Romano,Lazio,IT-058020
+Santo Stefano Quisquina,Sicilia,IT-084040
+Altomonte,Calabria,IT-078009
+Castelmassa,Veneto,IT-029012
+Cavalese,Trentino-Alto Adige/Südtirol,IT-022050
+Mazzarrone,Sicilia,IT-087056
+Aiello del Sabato,Campania,IT-064001
+Vasanello,Lazio,IT-056055
+Renate,Lombardia,IT-108037
+Sori,Liguria,IT-010060
+Val della Torre,Piemonte,IT-001284
+San Genesio ed Uniti,Lombardia,IT-018135
+Costermano sul Garda,Veneto,IT-023030
+Venetico,Sicilia,IT-083104
+Caldonazzo,Trentino-Alto Adige/Südtirol,IT-022034
+Parcines,Trentino-Alto Adige/Südtirol,IT-021062
+Santa Maria Nuova,Marche,IT-042043
+Casarile,Lombardia,IT-015055
+Valvasone Arzene,Friuli-Venezia Giulia,IT-093053
+Paladina,Lombardia,IT-016155
+Tarvisio,Friuli-Venezia Giulia,IT-030117
+Cesiomaggiore,Veneto,IT-025011
+Bormio,Lombardia,IT-014009
+Vescovato,Lombardia,IT-019113
+Grizzana Morandi,Emilia-Romagna,IT-037031
+Lugagnano Val d'Arda,Emilia-Romagna,IT-033026
+Buttrio,Friuli-Venezia Giulia,IT-030014
+Arnesano,Puglia,IT-075007
+Cenate Sotto,Lombardia,IT-016069
+Carpineti,Emilia-Romagna,IT-035011
+Santa Croce di Magliano,Molise,IT-070072
+Premariacco,Friuli-Venezia Giulia,IT-030083
+Capoliveri,Toscana,IT-049004
+Ventasso,Emilia-Romagna,IT-035046
+Nuvolento,Lombardia,IT-017119
+Orgosolo,Sardegna,IT-091062
+Piedimonte Etneo,Sicilia,IT-087035
+Limido Comasco,Lombardia,IT-013128
+San Lorenzo di Sebato,Trentino-Alto Adige/Südtirol,IT-021081
+Sant'Omobono Terme,Lombardia,IT-016252
+Travedona-Monate,Lombardia,IT-012128
+Villa Lagarina,Trentino-Alto Adige/Südtirol,IT-022222
+Francavilla in Sinni,Basilicata,IT-076034
+Grumolo delle Abbadesse,Veneto,IT-024047
+Agnadello,Lombardia,IT-019002
+Ripa Teatina,Abruzzo,IT-069072
+Sant'Angelo in Vado,Marche,IT-041057
+San Gregorio Magno,Campania,IT-065120
+Fiesso Umbertiano,Veneto,IT-029022
+Brienza,Basilicata,IT-076013
+Falerna,Calabria,IT-079047
+Tollo,Abruzzo,IT-069090
+Altavilla Irpina,Campania,IT-064002
+Nogarole Rocca,Veneto,IT-023054
+Paderno d'Adda,Lombardia,IT-097062
+Pofi,Lazio,IT-060055
+Vizzolo Predabissi,Lombardia,IT-015244
+San Salvatore Telesino,Campania,IT-062068
+Delia,Sicilia,IT-085006
+Ariano nel Polesine,Veneto,IT-029002
+Sondalo,Lombardia,IT-014060
+Piancastagnaio,Toscana,IT-052020
+Villar Perosa,Piemonte,IT-001307
+Ora,Trentino-Alto Adige/Südtirol,IT-021060
+Sale,Piemonte,IT-006151
+Tertenia,Sardegna,IT-091089
+Prato allo Stelvio,Trentino-Alto Adige/Südtirol,IT-021067
+Sogliano Cavour,Puglia,IT-075075
+Cernusco Lombardone,Lombardia,IT-097020
+Gorgo al Monticano,Veneto,IT-026034
+Monghidoro,Emilia-Romagna,IT-037040
+Mogoro,Sardegna,IT-095029
+Morano Calabro,Calabria,IT-078083
+Miradolo Terme,Lombardia,IT-018093
+Cursi,Puglia,IT-075025
+Nusco,Campania,IT-064066
+Masate,Lombardia,IT-015136
+Bellinzago Lombardo,Lombardia,IT-015016
+Portopalo di Capo Passero,Sicilia,IT-089020
+Cittiglio,Lombardia,IT-012051
+Rogno,Lombardia,IT-016182
+Talmassons,Friuli-Venezia Giulia,IT-030114
+San Calogero,Calabria,IT-102032
+Prignano sulla Secchia,Emilia-Romagna,IT-036033
+Annone Veneto,Veneto,IT-027001
+Palazzo Pignano,Lombardia,IT-019066
+Verolavecchia,Lombardia,IT-017196
+Gaglianico,Piemonte,IT-096026
+Pietragalla,Basilicata,IT-076060
+Salorno sulla strada del vino,Trentino-Alto Adige/Südtirol,IT-021076
+San Pietro a Maida,Calabria,IT-079114
+Bari Sardo,Sardegna,IT-091005
+Dubino,Lombardia,IT-014027
+Piraino,Sicilia,IT-083068
+Capalbio,Toscana,IT-053003
+Calangianus,Sardegna,IT-090021
+Orsago,Veneto,IT-026053
+Cessalto,Veneto,IT-026015
+Lograto,Lombardia,IT-017091
+Saluggia,Piemonte,IT-002128
+Scoppito,Abruzzo,IT-066095
+Casazza,Lombardia,IT-016058
+Manta,Piemonte,IT-004116
+Somaglia,Lombardia,IT-098054
+Battaglia Terme,Veneto,IT-028011
+Bagolino,Lombardia,IT-017010
+Salizzole,Veneto,IT-023068
+Sant'Angelo dei Lombardi,Campania,IT-064092
+Castrocielo,Lazio,IT-060022
+Canossa,Emilia-Romagna,IT-035018
+Suisio,Lombardia,IT-016209
+Carpino,Puglia,IT-071012
+Marsico Nuovo,Basilicata,IT-076045
+Sardara,Sardegna,IT-111072
+Urago d'Oglio,Lombardia,IT-017192
+Bienno,Lombardia,IT-017018
+Trana,Piemonte,IT-001276
+Roncà,Veneto,IT-023063
+San Martino in Strada,Lombardia,IT-098048
+Tribiano,Lombardia,IT-015222
+Dovera,Lombardia,IT-019041
+Santo Stefano Belbo,Piemonte,IT-004213
+Pomarico,Basilicata,IT-077022
+Quarona,Piemonte,IT-002107
+Maniace,Sicilia,IT-087057
+Numana,Marche,IT-042032
+Piobesi Torinese,Piemonte,IT-001193
+Pernumia,Veneto,IT-028061
+Baldissero Torinese,Piemonte,IT-001018
+Centro Valle Intelvi,Lombardia,IT-013254
+Scarlino,Toscana,IT-053024
+Occhieppo Inferiore,Piemonte,IT-096040
+Carasco,Liguria,IT-010010
+Cusano Mutri,Campania,IT-062026
+Allumiere,Lazio,IT-058004
+San Martino di Venezze,Veneto,IT-029044
+Tuoro sul Trasimeno,Umbria,IT-054055
+Loiri Porto San Paolo,Sardegna,IT-090084
+Casalbuttano ed Uniti,Lombardia,IT-019016
+Mathi,Piemonte,IT-001146
+Arborea,Sardegna,IT-095006
+Cavriana,Lombardia,IT-020018
+Levate,Lombardia,IT-016126
+Villasimius,Sardegna,IT-111105
+Lattarico,Calabria,IT-078066
+Positano,Campania,IT-065100
+Pompiano,Lombardia,IT-017146
+Casole d'Elsa,Toscana,IT-052004
+Oriolo Romano,Lazio,IT-056041
+Fara Vicentino,Veneto,IT-024040
+Briatico,Calabria,IT-102003
+Palomonte,Campania,IT-065089
+Germignaga,Lombardia,IT-012076
+Civate,Lombardia,IT-097022
+Romagnano Sesia,Piemonte,IT-003130
+Calvagese della Riviera,Lombardia,IT-017033
+Lascari,Sicilia,IT-082044
+San Benedetto dei Marsi,Abruzzo,IT-066085
+Platì,Calabria,IT-080060
+Sangano,Piemonte,IT-001241
+Sedegliano,Friuli-Venezia Giulia,IT-030109
+Airasca,Piemonte,IT-001002
+Gibellina,Sicilia,IT-081010
+Ronco Briantino,Lombardia,IT-108038
+Basiano,Lombardia,IT-015014
+Chiusa di Pesio,Piemonte,IT-004068
+Sant'Eufemia d'Aspromonte,Calabria,IT-080081
+Serre,Campania,IT-065140
+Paderno Franciacorta,Lombardia,IT-017130
+Contigliano,Lazio,IT-057025
+Bolsena,Lazio,IT-056008
+Tromello,Lombardia,IT-018164
+Saponara,Sicilia,IT-083092
+Norma,Lazio,IT-059016
+Ponderano,Piemonte,IT-096047
+Castagnole delle Lanze,Piemonte,IT-005022
+Pescina,Abruzzo,IT-066069
+Castions di Strada,Friuli-Venezia Giulia,IT-030020
+Fiè allo Sciliar,Trentino-Alto Adige/Südtirol,IT-021031
+Colonnella,Abruzzo,IT-067019
+Tione di Trento,Trentino-Alto Adige/Südtirol,IT-022199
+Giano dell'Umbria,Umbria,IT-054021
+Bene Vagienna,Piemonte,IT-004019
+Cartigliano,Veneto,IT-024025
+Pontelongo,Veneto,IT-028068
+Orsogna,Abruzzo,IT-069057
+San Secondo di Pinerolo,Piemonte,IT-001254
+Vidor,Veneto,IT-026090
+Acquaviva Picena,Marche,IT-044002
+Civitella di Romagna,Emilia-Romagna,IT-040009
+San Leonardo in Passiria,Trentino-Alto Adige/Südtirol,IT-021080
+Fauglia,Toscana,IT-050014
+Casola di Napoli,Campania,IT-063022
+Bardello con Malgesso e Bregano,Lombardia,IT-012144
+Colli del Tronto,Marche,IT-044014
+Atella,Basilicata,IT-076006
+Castrignano de' Greci,Puglia,IT-075018
+Albuzzano,Lombardia,IT-018004
+Carpignano Salentino,Puglia,IT-075015
+Artogne,Lombardia,IT-017007
+Mondavio,Marche,IT-041028
+Massa Martana,Umbria,IT-054028
+Oliveto Citra,Campania,IT-065083
+Collesano,Sicilia,IT-082032
+Fonni,Sardegna,IT-091024
+Cercemaggiore,Molise,IT-070017
+Taino,Lombardia,IT-012125
+Lestizza,Friuli-Venezia Giulia,IT-030048
+Porto Azzurro,Toscana,IT-049013
+Polesella,Veneto,IT-029037
+Serracapriola,Puglia,IT-071053
+Gallicano,Toscana,IT-046015
+Novella,Trentino-Alto Adige/Südtirol,IT-022253
+Mongrando,Piemonte,IT-096035
+Sperone,Campania,IT-064103
+Riccò del Golfo di Spezia,Liguria,IT-011023
+Ceranesi,Liguria,IT-010014
+San Giovanni a Piro,Campania,IT-065119
+Marchirolo,Lombardia,IT-012097
+Pavone Canavese,Piemonte,IT-001181
+Casciago,Lombardia,IT-012038
+Bellagio,Lombardia,IT-013250
+Voghiera,Emilia-Romagna,IT-038023
+Cerreto Sannita,Campania,IT-062023
+Chiarano,Veneto,IT-026016
+Paduli,Campania,IT-062045
+San Giovanni di Fassa,Trentino-Alto Adige/Südtirol,IT-022250
+Serra de' Conti,Marche,IT-042046
+Pieve di Cadore,Veneto,IT-025039
+Castel Morrone,Campania,IT-061026
+Romans d'Isonzo,Friuli-Venezia Giulia,IT-031015
+Malcesine,Veneto,IT-023045
+Pozzolengo,Lombardia,IT-017151
+Squillace,Calabria,IT-079142
+Corchiano,Lazio,IT-056023
+Valdisotto,Lombardia,IT-014072
+Follina,Veneto,IT-026027
+Nibionno,Lombardia,IT-097056
+Castelplanio,Marche,IT-042012
+Pratola Serra,Campania,IT-064075
+Altidona,Marche,IT-109001
+Diano d'Alba,Piemonte,IT-004080
+Aci Bonaccorsi,Sicilia,IT-087001
+Villarbasse,Piemonte,IT-001302
+Esperia,Lazio,IT-060031
+Maletto,Sicilia,IT-087022
+Leggiuno,Lombardia,IT-012088
+Mignanego,Liguria,IT-010035
+Pitigliano,Toscana,IT-053019
+San Vito di Leguzzano,Veneto,IT-024096
+Guarene,Piemonte,IT-004101
+Cuasso al Monte,Lombardia,IT-012058
+Buddusò,Sardegna,IT-090017
+Vicovaro,Lazio,IT-058112
+Tiriolo,Calabria,IT-079147
+Torrevecchia Pia,Lombardia,IT-018160
+Morro d'Oro,Abruzzo,IT-067029
+Bisaccia,Campania,IT-064011
+Pradamano,Friuli-Venezia Giulia,IT-030080
+Pont-Saint-Martin,Valle d'Aosta/Vallée d'Aoste,IT-007052
+Bosco Chiesanuova,Veneto,IT-023011
+Castagnaro,Veneto,IT-023020
+Moliterno,Basilicata,IT-076050
+Lugo di Vicenza,Veneto,IT-024053
+Badia,Trentino-Alto Adige/Südtirol,IT-021006
+Nizza di Sicilia,Sicilia,IT-083061
+Siliqua,Sardegna,IT-111084
+Credaro,Lombardia,IT-016088
+Molteno,Lombardia,IT-097051
+Vaiano Cremasco,Lombardia,IT-019111
+Francavilla di Sicilia,Sicilia,IT-083025
+Cavaglià,Piemonte,IT-096016
+Montemesola,Puglia,IT-073017
+Oppido Lucano,Basilicata,IT-076056
+Stigliano,Basilicata,IT-077027
+Azzano Mella,Lombardia,IT-017008
+Villa Minozzo,Emilia-Romagna,IT-035045
+Beinette,Piemonte,IT-004016
+San Possidonio,Emilia-Romagna,IT-036038
+Deliceto,Puglia,IT-071022
+Asso,Lombardia,IT-013013
+Saint-Christophe,Valle d'Aosta/Vallée d'Aoste,IT-007058
+Narzole,Piemonte,IT-004147
+Petacciato,Molise,IT-070051
+Magliano de' Marsi,Abruzzo,IT-066053
+Pravisdomini,Friuli-Venezia Giulia,IT-093035
+Pontecurone,Piemonte,IT-006132
+Mairano,Lombardia,IT-017099
+Montaione,Toscana,IT-048027
+Borgofranco d'Ivrea,Piemonte,IT-001030
+Sergnano,Lombardia,IT-019094
+Vellezzo Bellini,Lombardia,IT-018173
+Puegnago del Garda,Lombardia,IT-017158
+Scafa,Abruzzo,IT-068039
+Gambellara,Veneto,IT-024043
+Carrè,Veneto,IT-024024
+San Nicola Manfredi,Campania,IT-062067
+Bagnaria Arsa,Friuli-Venezia Giulia,IT-030008
+Bressana Bottarone,Lombardia,IT-018023
+Roncofreddo,Emilia-Romagna,IT-040037
+Endine Gaiano,Lombardia,IT-016093
+Marciano della Chiana,Toscana,IT-051022
+Neviano degli Arduini,Emilia-Romagna,IT-034024
+Ripalta Cremasca,Lombardia,IT-019081
+Sant'Oreste,Lazio,IT-058099
+Minervino di Lecce,Puglia,IT-075047
+Solopaca,Campania,IT-062073
+Magliano Sabina,Lazio,IT-057035
+San Felice del Benaco,Lombardia,IT-017171
+Cornedo all'Isarco,Trentino-Alto Adige/Südtirol,IT-021023
+Caltavuturo,Sicilia,IT-082015
+Goro,Emilia-Romagna,IT-038025
+Costa di Mezzate,Lombardia,IT-016084
+Bovolenta,Veneto,IT-028014
+Sordio,Lombardia,IT-098055
+Spongano,Puglia,IT-075078
+Frigento,Campania,IT-064035
+Bobbio,Emilia-Romagna,IT-033005
+Bellano,Lombardia,IT-097008
+San Vito,Sardegna,IT-111066
+Lucignano,Toscana,IT-051021
+Vernate,Lombardia,IT-015236
+Remedello,Lombardia,IT-017160
+Viano,Emilia-Romagna,IT-035044
+Cucciago,Lombardia,IT-013084
+Naso,Sicilia,IT-083060
+Dobbiaco,Trentino-Alto Adige/Südtirol,IT-021028
+Ghemme,Piemonte,IT-003073
+Rotondi,Campania,IT-064080
+Fornovo San Giovanni,Lombardia,IT-016105
+Colliano,Campania,IT-065043
+Pozzonovo,Veneto,IT-028070
+Chignolo d'Isola,Lombardia,IT-016072
+Baunei,Sardegna,IT-091006
+Cerreto d'Esi,Marche,IT-042013
+Naz-Sciaves,Trentino-Alto Adige/Südtirol,IT-021057
+San Luca,Calabria,IT-080074
+Spotorno,Liguria,IT-009057
+Faggiano,Puglia,IT-073005
+Polverara,Veneto,IT-028066
+Ceregnano,Veneto,IT-029015
+San Rocco al Porto,Lombardia,IT-098049
+Casalfiumanese,Emilia-Romagna,IT-037012
+Rio,Toscana,IT-049021
+Vinchiaturo,Molise,IT-070084
+Falciano del Massico,Campania,IT-061101
+Villanterio,Lombardia,IT-018180
+San Pietro in Lama,Puglia,IT-075071
+Cimadolmo,Veneto,IT-026017
+Gressan,Valle d'Aosta/Vallée d'Aoste,IT-007031
+Citerna,Umbria,IT-054011
+Satriano,Calabria,IT-079123
+Tufino,Campania,IT-063085
+San Paolo Bel Sito,Campania,IT-063069
+Bagnoli di Sopra,Veneto,IT-028008
+Montelupone,Marche,IT-043030
+Belfiore,Veneto,IT-023007
+Valgreghentino,Lombardia,IT-097082
+Saracena,Calabria,IT-078136
+Montegalda,Veneto,IT-024064
+Vandoies,Trentino-Alto Adige/Südtirol,IT-021110
+Piegaro,Umbria,IT-054040
+Termeno sulla strada del vino,Trentino-Alto Adige/Südtirol,IT-021098
+Ciminna,Sicilia,IT-082030
+Casale Corte Cerro,Piemonte,IT-103019
+Sarsina,Emilia-Romagna,IT-040044
+Cuveglio,Lombardia,IT-012062
+San Candido,Trentino-Alto Adige/Südtirol,IT-021077
+Marene,Piemonte,IT-004117
+Castel di Casio,Emilia-Romagna,IT-037015
+Ferrazzano,Molise,IT-070023
+Bagnoregio,Lazio,IT-056003
+Marano Marchesato,Calabria,IT-078076
+San Pietro in Guarano,Calabria,IT-078127
+Fagnano Castello,Calabria,IT-078051
+Villamassargia,Sardegna,IT-111098
+Rodi Garganico,Puglia,IT-071043
+Alanno,Abruzzo,IT-068002
+Bibiana,Piemonte,IT-001025
+Montalto Dora,Piemonte,IT-001160
+Costigliole Saluzzo,Piemonte,IT-004075
+Montese,Emilia-Romagna,IT-036026
+Castelbelforte,Lombardia,IT-020013
+Pocapaglia,Piemonte,IT-004170
+Delebio,Lombardia,IT-014026
+Lauro,Campania,IT-064043
+Ornavasso,Piemonte,IT-103051
+Cengio,Liguria,IT-009023
+Masone,Liguria,IT-010032
+Ardesio,Lombardia,IT-016012
+Monasterace,Calabria,IT-080052
+Cafasse,Piemonte,IT-001046
+Collazzone,Umbria,IT-054014
+San Martino in Passiria,Trentino-Alto Adige/Südtirol,IT-021083
+Camposanto,Emilia-Romagna,IT-036004
+Montefano,Marche,IT-043029
+Saint-Pierre,Valle d'Aosta/Vallée d'Aoste,IT-007063
+Zapponeta,Puglia,IT-071064
+Cassina Rizzardi,Lombardia,IT-013055
+Bono,Sardegna,IT-090012
+Ponza,Lazio,IT-059018
+Montecalvo Irpino,Campania,IT-064052
+Castione della Presolana,Lombardia,IT-016064
+Oulx,Piemonte,IT-001175
+Tronzano Vercellese,Piemonte,IT-002150
+Godiasco Salice Terme,Lombardia,IT-018073
+Lusia,Veneto,IT-029031
+Faicchio,Campania,IT-062029
+Aldeno,Trentino-Alto Adige/Südtirol,IT-022003
+Pescaglia,Toscana,IT-046022
+Isola Rizza,Veneto,IT-023041
+Piscina,Piemonte,IT-001195
+Sale Marasino,Lombardia,IT-017169
+Magliano in Toscana,Toscana,IT-053013
+Coazze,Piemonte,IT-001089
+Persico Dosimo,Lombardia,IT-019068
+Castel Ivano,Trentino-Alto Adige/Südtirol,IT-022240
+Antegnate,Lombardia,IT-016010
+Settingiano,Calabria,IT-079131
+San Giusto Canavese,Piemonte,IT-001246
+Forano,Lazio,IT-057029
+Millesimo,Liguria,IT-009038
+San Gillio,Piemonte,IT-001243
+Marliana,Toscana,IT-047007
+Bosisio Parini,Lombardia,IT-097009
+Portovenere,Liguria,IT-011022
+Fenegrò,Lombardia,IT-013100
+Gioia Sannitica,Campania,IT-061041
+Balsorano,Abruzzo,IT-066007
+Vo',Veneto,IT-028105
+Cattolica Eraclea,Sicilia,IT-084014
+Scandriglia,Lazio,IT-057064
+Pontida,Lombardia,IT-016171
+Alia,Sicilia,IT-082001
+Monsano,Marche,IT-042025
+Brancaleone,Calabria,IT-080014
+Neive,Piemonte,IT-004148
+Miggiano,Puglia,IT-075046
+Caposele,Campania,IT-064017
+Melissa,Calabria,IT-101014
+Sesto ed Uniti,Lombardia,IT-019095
+Ardenno,Lombardia,IT-014005
+Ruoti,Basilicata,IT-076071
+Marta,Lazio,IT-056034
+Santa Marina,Campania,IT-065127
+Valfabbrica,Umbria,IT-054057
+Gais,Trentino-Alto Adige/Südtirol,IT-021034
+Amandola,Marche,IT-109002
+Carlazzo,Lombardia,IT-013047
+Romanengo,Lombardia,IT-019086
+Montello,Lombardia,IT-016139
+Baiso,Emilia-Romagna,IT-035003
+Limbadi,Calabria,IT-102019
+Teulada,Sardegna,IT-111089
+Torrecuso,Campania,IT-062076
+Vibonati,Campania,IT-065156
+Scalenghe,Piemonte,IT-001260
+Valdaora,Trentino-Alto Adige/Südtirol,IT-021106
+Correzzana,Lombardia,IT-108022
+Furci Siculo,Sicilia,IT-083027
+Bibbona,Toscana,IT-049001
+Loreo,Veneto,IT-029030
+Rio di Pusteria,Trentino-Alto Adige/Südtirol,IT-021074
+Cinto Caomaggiore,Veneto,IT-027009
+Gagliano Castelferrato,Sicilia,IT-086010
+Viggiano,Basilicata,IT-076098
+Gesualdo,Campania,IT-064036
+San Fratello,Sicilia,IT-083078
+Casalmaiocco,Lombardia,IT-098009
+Abbadia Lariana,Lombardia,IT-097001
+Grottazzolina,Marche,IT-109008
+Borgo Tossignano,Emilia-Romagna,IT-037007
+Grezzago,Lombardia,IT-015110
+San Lorenzo in Campo,Marche,IT-041054
+Biandronno,Lombardia,IT-012014
+Ceppaloni,Campania,IT-062022
+Dosolo,Lombardia,IT-020022
+Folgaria,Trentino-Alto Adige/Südtirol,IT-022087
+Ospedaletti,Liguria,IT-008039
+Castelliri,Lazio,IT-060020
+Marebbe,Trentino-Alto Adige/Südtirol,IT-021047
+Rotonda,Basilicata,IT-076070
+Dongo,Lombardia,IT-013090
+Rocca Imperiale,Calabria,IT-078103
+Contursi Terme,Campania,IT-065046
+Forno Canavese,Piemonte,IT-001107
+Sogliano al Rubicone,Emilia-Romagna,IT-040046
+Fiumefreddo Bruzio,Calabria,IT-078055
+Pove del Grappa,Veneto,IT-024081
+Senna Comasco,Lombardia,IT-013212
+Alta Valle Intelvi,Lombardia,IT-013253
+Morolo,Lazio,IT-060045
+Ome,Lombardia,IT-017123
+Saludecio,Emilia-Romagna,IT-099015
+Aquileia,Friuli-Venezia Giulia,IT-030004
+Roccamonfina,Campania,IT-061070
+Caltabellotta,Sicilia,IT-084007
+Falzes,Trentino-Alto Adige/Südtirol,IT-021030
+San Raffaele Cimena,Piemonte,IT-001252
+Vicoforte,Piemonte,IT-004242
+Corno di Rosazzo,Friuli-Venezia Giulia,IT-030030
+Falerone,Marche,IT-109005
+Bressanvido,Veneto,IT-024016
+Agna,Veneto,IT-028002
+Maslianico,Lombardia,IT-013144
+Veniano,Lombardia,IT-013238
+Cantagallo,Toscana,IT-100001
+Roccabernarda,Calabria,IT-101018
+Bivona,Sicilia,IT-084004
+Bonorva,Sardegna,IT-090013
+Sospirolo,Veneto,IT-025056
+Volano,Trentino-Alto Adige/Südtirol,IT-022224
+Polesine Zibello,Emilia-Romagna,IT-034050
+Bedonia,Emilia-Romagna,IT-034003
+Valledolmo,Sicilia,IT-082076
+Cogollo del Cengio,Veneto,IT-024032
+Brebbia,Lombardia,IT-012017
+Buguggiate,Lombardia,IT-012025
+Banchette,Piemonte,IT-001020
+Marano di Valpolicella,Veneto,IT-023046
+Polcenigo,Friuli-Venezia Giulia,IT-093031
+Dresano,Lombardia,IT-015101
+Foglianise,Campania,IT-062030
+Santadi,Sardegna,IT-111068
+Villafrati,Sicilia,IT-082080
+Carolei,Calabria,IT-078026
+Castelnuovo Don Bosco,Piemonte,IT-005031
+Miane,Veneto,IT-026042
+Cugliate-Fabiasco,Lombardia,IT-012059
+Zinasco,Lombardia,IT-018190
+Val di Vizze,Trentino-Alto Adige/Südtirol,IT-021107
+Foresto Sparso,Lombardia,IT-016104
+Marone,Lombardia,IT-017106
+Ostra Vetere,Marche,IT-042036
+Stienta,Veneto,IT-029045
+Terre d'Adige,Trentino-Alto Adige/Südtirol,IT-022251
+Trappeto,Sicilia,IT-082074
+Serle,Lombardia,IT-017178
+Robassomero,Piemonte,IT-001220
+Gaggi,Sicilia,IT-083029
+Velturno,Trentino-Alto Adige/Südtirol,IT-021116
+Nanto,Veneto,IT-024071
+San Lorenzo del Vallo,Calabria,IT-078121
+Baone,Veneto,IT-028009
+Bosconero,Piemonte,IT-001033
+Cavedine,Trentino-Alto Adige/Südtirol,IT-022053
+Moscufo,Abruzzo,IT-068025
+Casella,Liguria,IT-010012
+Perosa Argentina,Piemonte,IT-001184
+Serrara Fontana,Campania,IT-063078
+Viguzzolo,Piemonte,IT-006181
+Daverio,Lombardia,IT-012064
+Lozzo Atestino,Veneto,IT-028047
+Caselle Lurani,Lombardia,IT-098012
+San Pietro di Morubio,Veneto,IT-023075
+Valli del Pasubio,Veneto,IT-024113
+Patrica,Lazio,IT-060048
+Ordona,Puglia,IT-071063
+Balangero,Piemonte,IT-001016
+San Vito Romano,Lazio,IT-058100
+Val Liona,Veneto,IT-024123
+Sanfrè,Piemonte,IT-004208
+Castiraga Vidardo,Lombardia,IT-098015
+San Ginesio,Marche,IT-043046
+Vallelunga Pratameno,Sicilia,IT-085021
+Montefalcione,Campania,IT-064053
+Sarnano,Marche,IT-043049
+San Giovanni Incarico,Lazio,IT-060064
+Delianuova,Calabria,IT-080031
+Caprino Bergamasco,Lombardia,IT-016052
+Filago,Lombardia,IT-016098
+Morciano di Leuca,Puglia,IT-075050
+Castel Ritaldi,Umbria,IT-054008
+Varzi,Lombardia,IT-018171
+Menaggio,Lombardia,IT-013145
+Corio,Piemonte,IT-001094
+Sicignano degli Alburni,Campania,IT-065143
+Gazoldo degli Ippoliti,Lombardia,IT-020024
+Sospiro,Lombardia,IT-019099
+Arsiero,Veneto,IT-024007
+Casnigo,Lombardia,IT-016060
+Sperlonga,Lazio,IT-059030
+Chienes,Trentino-Alto Adige/Südtirol,IT-021021
+Cianciana,Sicilia,IT-084015
+Auronzo di Cadore,Veneto,IT-025005
+Pinzolo,Trentino-Alto Adige/Südtirol,IT-022143
+Altino,Abruzzo,IT-069001
+Montorso Vicentino,Veneto,IT-024068
+Maleo,Lombardia,IT-098035
+Marano Principato,Calabria,IT-078077
+Narcao,Sardegna,IT-111044
+Caselette,Piemonte,IT-001062
+Manocalzati,Campania,IT-064046
+Pastrengo,Veneto,IT-023057
+Posada,Sardegna,IT-091073
+Scena,Trentino-Alto Adige/Südtirol,IT-021087
+San Demetrio Corone,Calabria,IT-078114
+Sorano,Toscana,IT-053026
+Bagnoli Irpino,Campania,IT-064009
+Fonzaso,Veneto,IT-025022
+Caramagna Piemonte,Piemonte,IT-004041
+Casamarciano,Campania,IT-063018
+Orgiano,Veneto,IT-024075
+San Genesio Atesino,Trentino-Alto Adige/Südtirol,IT-021079
+Torrazza Piemonte,Piemonte,IT-001273
+Pont Canavese,Piemonte,IT-001199
+Caronia,Sicilia,IT-083011
+San Pietro Viminario,Veneto,IT-028079
+Rocca d'Evandro,Campania,IT-061069
+Albosaggia,Lombardia,IT-014002
+Civitella Roveto,Abruzzo,IT-066036
+Savignone,Liguria,IT-010057
