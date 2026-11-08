@@ -218,6 +218,9 @@ def meetings(cc, did):
 # Channels checked by hand and found to be another place's (by channel URL). The search matched on the name, and
 # many of these names exist in other Spanish-speaking countries too, or in both Chile and Colombia.
 NOT_CHANNELS = {
+    # Croatia: the city council of Visoko in Bosnia and Herzegovina, not the Croatian municipality of Visoko
+    "HR": {"https://www.youtube.com/channel/UCxmQKfPafCW7QvqutO_vMXQ",
+           "https://www.youtube.com/channel/UCbUsVlV8y9bx8UPsLgrZ35A"},   # Stari Grad, Sarajevo (Bosnia and Herzegovina), not Stari Grad on Hvar
     # Portugal: Brazilian municipal chambers with a Portuguese town's name (checked by their videos' titles)
     "PT": {"https://www.youtube.com/channel/UC4Q-Xy8kTVVcUxlqSprl6Kw",   # Rolim de Moura (Rondônia), not Moura
            "https://www.youtube.com/channel/UCWXrV0wJl28CErzmErc4BfQ",   # São Vicente (São Paulo), not São Vicente (Madeira)
@@ -1111,6 +1114,11 @@ def croatia():
         f = geo.get(code)
         name = "Zagreb" if x["name"] == "Grad Zagreb" else x["name"]
         own = "pov" in x
+        # Channel names give the Croatian half of bilingual names ("Grad Pula" for Pula - Pola). The city of Sveta Nedelja
+        # (Zagreb County) posts as "Grad Sveta Nedelja"; the Istrian Sveta Nedelja is a municipality (općina), so a city
+        # channel isn't its own.
+        alts = [name] + [p.strip() for p in name.split(" - ")] if " - " in name else [name]
+        if name == "Sveta Nedelja" and x["county"] == "Istarska": alts = ["Sveta Nedelja Istra"]
         dens = x["pop"] / x["area"] if x.get("pop") and x.get("area") else 0
         did = f"HR-{code}"
         rows.append({"District": name, "Region": "City of Zagreb" if x["county"] == "Grad Zagreb" else x["county"], "Population": round(x["pop"]) if x.get("pop") else "",
@@ -1120,6 +1128,7 @@ def croatia():
                      "Poverty rate (county, 2011)": f"{x['county_pov']:.1f}%" if x.get("county_pov") is not None else "",
                      "Poverty note": ("Share of people below the poverty line (23,918.62 HRK a year per adult equivalent), all ages, 2011 (World Bank and Croatian Bureau of Statistics poverty map, 2016)" if own else
                                       f"No estimate of its own in the poverty map; shown instead in a separate column, kept out of the averages: its county's rate ({x['county']}, 2011)"),
+                     "_names": alts,
                      "School system": ("City (primary schools); city council" if name == "Zagreb" else "City or municipal council; primary schools run by the city (in the largest cities) or the county"),
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
