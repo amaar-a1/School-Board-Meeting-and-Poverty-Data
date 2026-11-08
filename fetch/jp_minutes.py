@@ -6,7 +6,7 @@ and count the distinct meetings listed there (a numbered or dated 定例会 / �
 meetings. robots.txt is respected; each site is visited by one thread, with a pause between requests.
 Usage: python3 jp_minutes.py OUTDIR [DEADLINE_EPOCH]
 """
-import concurrent.futures as cf, html, json, os, re, sys, time, urllib.parse, urllib.request, urllib.robotparser
+import concurrent.futures as cf, http.cookiejar, html, json, os, re, sys, time, urllib.parse, urllib.request, urllib.robotparser
 from collections import Counter
 
 UA = "Mozilla/5.0 (compatible; school-board research project; github.com/amaar-a1)"
@@ -22,7 +22,7 @@ Z2H = str.maketrans("０１２３４５６７８９", "0123456789")
 
 def fetch(url, robots, t=25):
     host = urllib.parse.urlsplit(url).netloc
-    rp = robots.get(host)
+    rp = robots.get(host) if host != "_opener" else None
     if rp is None:
         rp = urllib.robotparser.RobotFileParser()
         try:
@@ -32,7 +32,8 @@ def fetch(url, robots, t=25):
         robots[host] = rp
     if not rp.can_fetch(UA, url): raise PermissionError("robots.txt")
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "ja"})
-    with urllib.request.urlopen(req, timeout=t) as r:
+    opener = robots.setdefault("_opener", urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar())))
+    with opener.open(req, timeout=t) as r:
         ct = r.headers.get("Content-Type", "")
         if "html" not in ct and "text" not in ct: return r.geturl(), ""
         b = r.read(3_000_000)
@@ -58,6 +59,7 @@ def same_site(a, b):
 
 
 MEET2 = re.compile(r"(定例会|臨時会)\s*[（(]?\s*第\s*(\d+)\s*回")
+MEET3 = re.compile(r"第\s*(\d+)\s*回\s*(?:教育委員会)?\s*(?:会議録|議事録|会議)")
 ERA = re.compile(r"(令和|平成)\s*(\d+|元)\s*年")
 
 
@@ -75,8 +77,9 @@ def meetings_in(page_links, text, year=None):
             found = True
             if key not in keys: keys.add(key); titles.append(t[:80])
         if not found:
-            for m in MEET2.finditer(t):
-                key = (ctx, None, None, int(m.group(2)), "臨時" if "臨時" in m.group(1) else "定例")
+            for m in list(MEET2.finditer(t)) + list(MEET3.finditer(t)):
+                g = m.groups()
+                key = (ctx, None, None, int(g[-1] if len(g) == 2 and g[1] and g[1].isdigit() else g[0]), "臨時" if "臨時" in m.group(0) else "定例")
                 if key not in keys: keys.add(key); titles.append(t[:80])
         e = ERA.search(t)
         if e and not found: ctx = (1 if e.group(2) == "元" else int(e.group(2))) + (2018 if e.group(1) == "令和" else 1988)
@@ -88,6 +91,24 @@ SCORE = [(re.compile(r"教育委員会.*(会議録|議事録|会議)|(会議録|
          (re.compile(r"^教育委員会$|教育委員会について|教育委員会の?(紹介|概要|組織)"), 30), (re.compile(r"教育委員会"), 15), (re.compile(r"サイトマップ|site ?map", re.I), 12),
          (re.compile(r"教育|学校"), 6), (re.compile(r"子育て|組織|課・|各課|部署|行政|市政|町政|村政|区政"), 3), (re.compile(r"(令和|平成)\s*\d+\s*年度?"), 4)]
 BAD_URL = re.compile(r"\.(pdf|docx?|xlsx?|jpe?g|png|gif|zip)$|mailto:|javascript:|/en/|/english/|/foreign|/kr/|/cn/", re.I)
+
+
+def count(keys):
+    """Meetings per year: a page may list one meeting as "第5回定例会", "5月定例会" and by its date; count each year by
+    whichever style lists the most meetings (regular and extraordinary separately), not all of them added up.
+    Years after this one are schedules, not meetings."""
+    this = time.gmtime().tm_year
+    per = {}
+    for y, mon, day, num, kind in keys:
+        if y and y > this: continue
+        d = per.setdefault((y, kind), {"num": set(), "mon": set(), "day": set()})
+        if day and mon: d["day"].add((mon, day))
+        elif num: d["num"].add(num)
+        elif mon: d["mon"].add(mon)
+    years = Counter()
+    for (y, kind), d in per.items():
+        years[str(y) if y else "?"] += max(len(d["num"]), len(d["mon"]), len(d["day"]))
+    return sum(years.values()), dict(years)
 
 
 def score(t, u):
@@ -113,7 +134,7 @@ def one(m):
             sc = score(t, u)
             if sc: seen.add(u); heapq.heappush(heap, (-sc, len(seen), u, t))
     push(home, page)
-    while heap and out["visited"] < 30:
+    while heap and out["visited"] < 45:
         sc, _, u, t = heapq.heappop(heap)
         try:
             pu, pp = fetch(u, robots); time.sleep(1)
@@ -131,8 +152,7 @@ def one(m):
             k, ts = meetings_in(pl, body, py)
             if k: out["pages"].append(pu); keys |= k; titles += ts
         push(pu, pp)
-    out["meetings"] = len(keys)
-    out["years"] = dict(Counter(str(k[0]) for k in keys if k[0]))
+    out["meetings"], out["years"] = count(keys)
     out["examples"] = titles[:5]
     if not keys and not out["board"]: out["error"] = "no board page found"
     return out
