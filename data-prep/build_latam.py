@@ -151,7 +151,7 @@ RULES["PL"] = (re.compile(r"komisj[aiy][^|]{0,60}(o[sś]wiat|edukacj|szk[oó][l�
                re.compile(r"sesj|obrad", re.I),
                re.compile(r"^(?!.*(komisj|m[lł]odzie[zż]ow|senior|dzieci)).*(sesj[aię]\s+(rady|nadzwyczajn|zwyczajn|absolutoryjn|bud[zż]etow|nr)|"
                           r"\b[ivxlc]+\.?\s+(nadzwyczajna\s+)?sesj|\d+\.?\s+(nadzwyczajna\s+)?sesj|obrady\s+(sesji|rady)|sesja\s+\d)", re.I),
-               re.compile(r"live session|wywiad|spot|reklam|festyn|koncert|do[zż]ynk|msza|[zż]yczenia|m[lł]odzie[zż]ow|senior|wybory|kampani|kandydat|"
+               re.compile(r"live session|uroczyst|wywiad|spot|reklam|festyn|koncert|do[zż]ynk|msza|[zż]yczenia|m[lł]odzie[zż]ow|senior|wybory|kampani|kandydat|"
                           r"relacja z|transmisja meczu", re.I))
 
 # Spain: a committee covering education counts only when at least this many of its sessions are posted; otherwise the
