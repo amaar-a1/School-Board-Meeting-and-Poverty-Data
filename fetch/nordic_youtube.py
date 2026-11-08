@@ -66,6 +66,9 @@ C = {
     # Australia: council meetings (ordinary and special meetings of the council).
     "AU": dict(file="australia", q="{} council meeting {region}", chan=r"council|shire|city|municipal|regional|town",
                edu=r"education|school", meet=r"meeting|council"),
+    # Croatia: city and municipal councils (gradsko vijeće, općinsko vijeće) and their sessions (sjednica).
+    "HR": dict(file="croatia", q="gradsko vijeće {} sjednica", chan=r"grad|op[cć]ina|vije[cć]e|city|municipality|tv",
+               edu=r"obrazovanj|[sš]kol|odgoj", meet=r"sjednica|vije[cć]e"),
     "NL": dict(file="netherlands", q="gemeente {} raadsvergadering", chan=r"gemeente|gemeenteraad|raad|griffie",
                edu=r"onderwijs|jeugd|school|kind",
                meet=r"commissie|raad|vergadering|beeldvorm|oordeelvorm"),
