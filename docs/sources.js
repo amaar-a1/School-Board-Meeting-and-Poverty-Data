@@ -278,6 +278,41 @@ window.SOURCES = [
     note: "Built by data-prep/build_latam.py. Communes are matched to borders by their INSEE code. The border file predates some mergers, which left 492 former communes with no current code; each was placed in the commune it lies in today with geo.api.gouv.fr and drawn as part of it."
   },
   {
+    only: "Italy",
+    group: "Italy: comuni, incomes, population and pupils",
+    items: [
+      { title: "Low incomes (stand-in for poverty): Ministry of Economy and Finance, income tax returns (IRPEF) by comune, tax year 2023: filers with a total income of 10,000 euros or less", url: "https://www1.finanze.gov.it/finanze/analisi_stat/public/index.php?opendata=yes" },
+      { title: "Comuni, regions and provinces: ISTAT, Elenco dei comuni italiani", url: "https://www.istat.it/classificazione/codici-dei-comuni-delle-province-e-delle-regioni/" },
+      { title: "Pupils: Ministry of Education open data, 2024-25, pupils by state school (ALUCORSOETASTA) and by publicly recognised private school (ALUCORSOINDCLAPAR), placed in comuni with the school directories", url: "https://dati.istruzione.it/opendata/opendata/catalogo/" },
+      { title: "Borders, population and density: Eurostat GISCO Local Administrative Units (LAU) 2024, simplified with mapshaper", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
+      { title: "Meetings (stand-in): each town council's YouTube channel (in the “Meetings source” column), searched for comuni of 3,000+ people", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_italy.py and data-prep/build_latam.py. Comuni are matched to borders and figures by their ISTAT code."
+  },
+  {
+    only: "Poland",
+    group: "Poland: gminy, low income and pupils",
+    items: [
+      { title: "Children on family benefit: Statistics Poland, Local Data Bank (BDL), variable 259889: share of children aged 0-17 whose parents receive the family benefit, 2024", url: "https://bdl.stat.gov.pl/bdl/start" },
+      { title: "Social assistance: Statistics Poland, Local Data Bank (BDL), variable 1548717: beneficiaries of community social assistance per 10,000 people, 2024", url: "https://bdl.stat.gov.pl/bdl/start" },
+      { title: "Borders, population and density: Eurostat GISCO Local Administrative Units (LAU) 2024, simplified with mapshaper", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
+      { title: "Meetings: each council's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/build_latam.py. Gminy are matched to borders by their Statistics Poland unit code."
+  },
+  {
+    only: "Japan",
+    group: "Japan: municipalities, welfare, pupils and boards of education",
+    items: [
+      { title: "Welfare rate: Ministry of Health, Labour and Welfare, 被保護者調査 (survey of welfare recipients), FY2024 final figures, table 8 (2-2), by prefecture, designated city and core city", url: "https://www.e-stat.go.jp/stat-search/files?toukei=00450312" },
+      { title: "Population, children under 15, area, pupils and unemployment: Statistics Bureau, 統計でみる市区町村のすがた 2026 (municipal basic data; 2020 census and 2024 school survey)", url: "https://www.e-stat.go.jp/stat-search/files?toukei=00200502" },
+      { title: "Borders: Ministry of Land, Infrastructure, Transport and Tourism, 国土数値情報 administrative areas (N03, 2021), as simplified by smartnews-smri/japan-topography", url: "https://github.com/smartnews-smri/japan-topography" },
+      { title: "Municipal websites: Wikidata (official website, P856, by local government code, P429)", url: "https://www.wikidata.org/" },
+      { title: "Meetings: each board of education's minutes or meeting pages (in the “Meetings source” column)", url: "https://www.e-stat.go.jp/" }
+    ],
+    note: "Built by data-prep/prep_japan.py and data-prep/build_latam.py. Municipalities are matched to borders and figures by their local government code; designated cities' wards are merged into their city."
+  },
+  {
     only: "Ecuador",
     group: "Ecuador: cantons, poverty, population and pupils",
     items: [

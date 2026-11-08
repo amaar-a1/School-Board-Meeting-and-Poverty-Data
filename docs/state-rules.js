@@ -253,6 +253,39 @@ window.STATE_RULES = {
     ],
     note: "Check the current code and the council's own rules (règlement intérieur) before relying on this."
   },
+  italy: {
+    title: "Rules for town council (consiglio comunale) meetings",
+    checked: "November 8, 2026",
+    laws: [
+      { state: "Italy", covers: "Town councils (consigli comunali)", threshold: "",
+        rule: "Council sessions are public unless the council's own rules say otherwise for particular matters (Testo unico degli enti locali, D.Lgs. 267/2000, art. 38); each council's rules (regolamento del consiglio) set how sessions are recorded or streamed, and no national law requires streaming. Decisions must be published on the comune's online notice board (albo pretorio) under the transparency decree (D.Lgs. 33/2013)." },
+      { state: "Italy", covers: "Schools", threshold: "",
+        rule: "State schools are run by the Ministry of Education and its regional offices; comuni provide and maintain the buildings of nursery, primary and lower secondary schools (Law 23/1996). Each school has an elected school council (consiglio di istituto or di circolo)." }
+    ],
+    note: "Check the current law and the council's own rules before relying on this."
+  },
+  poland: {
+    title: "Rules for council (rada gminy) sessions",
+    checked: "November 8, 2026",
+    laws: [
+      { state: "Poland", covers: "Town councils (rady gmin, rady miejskie)", threshold: "",
+        rule: "Council sessions are public (Act on Municipal Self-Government, art. 11b). Since 2018 sessions must be broadcast and recorded, and the recordings published in the public information bulletin (BIP) and on the council's website (art. 20 sec. 1b), and votes are recorded by name." },
+      { state: "Poland", covers: "Schools", threshold: "",
+        rule: "Gminy run nursery schools and primary schools (Education Law of 2016, art. 8 and 11); counties run most secondary schools. The state pays an education subsidy and the regional school superintendent (kurator oświaty) oversees teaching." }
+    ],
+    note: "Check the current law and the council's own rules (statut gminy) before relying on this."
+  },
+  japan: {
+    title: "Rules for board of education (教育委員会) meetings",
+    checked: "November 8, 2026",
+    laws: [
+      { state: "Japan", covers: "Municipal boards of education", threshold: "",
+        rule: "Board meetings are public, though the board can close part of a meeting for personnel and other listed matters by a two-thirds vote; since the 2015 reform the board must try to prepare and publish minutes (Act on the Organization and Operation of Local Educational Administration, art. 14). The mayor and the board also meet in a general education council (総合教育会議), which isn't counted here." },
+      { state: "Japan", covers: "Schools", threshold: "",
+        rule: "Each municipality's board of education runs its public elementary and lower secondary schools; prefectures pay most teachers and run most high schools." }
+    ],
+    note: "Check the current law and the board's own rules before relying on this."
+  },
   ecuador: {
     title: "Rules for cantonal council (concejo municipal) meetings",
     checked: "November 7, 2026",

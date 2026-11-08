@@ -82,7 +82,7 @@ def centroid(geom):
 
 
 _CACHE = {}
-DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador"}
+DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan"}
 # Brazil: municipal chambers (câmara municipal) and their education committees, in Portuguese.
 RULES = {"BR": (re.compile(r"comiss[ãa]o (permanente )?de educa[çc][ãa]o|educa[çc][ãa]o.*comiss[ãa]o", re.I),
                 re.compile(r"sess[ãa]o|c[âa]mara", re.I),
@@ -138,9 +138,25 @@ RULES["EC"] = (re.compile(r"comisi[óo]n (permanente )?(de |del )?((cultura|depo
                           r"(ordinaria|extraordinaria) (de|del) concejo|concejo (municipal|cantonal)[^|]{0,30}sesi[óo]n)", re.I),
                re.compile(NOT_T.pattern + r"|solemne|conmemorativa|parroquial|provincial|junta|consejo cantonal de protecci", re.I))
 
+# Italy: the town council (consiglio comunale) and its education committee (commissione istruzione / scuola);
+# children's and youth councils (consiglio comunale dei ragazzi) and ceremonies aren't counted.
+RULES["IT"] = (re.compile(r"commission[ei][^|]{0,50}(istruzione|scuol|scolastic|educazion|servizi educativi)", re.I),
+               re.compile(r"consiglio comunale|seduta|sessione", re.I),
+               re.compile(r"^(?!.*(commission|ragazzi|giovani|bambini|junior)).*(consiglio comunale|seduta (del |di )?consiglio|seduta consiliare|consiglio comunale)", re.I),
+               re.compile(r"live session|intervista|\btg\b|notiziario|spot|promo|festa|concerto|premiazion|inaugurazion|cerimonia|ragazzi|bambini|elezion|"
+                          r"campagna|candidat|messa|processione|auguri", re.I))
+# Poland: council sessions (sesja rady gminy / rady miejskiej) and the education committee (komisja oświaty);
+# youth and seniors' councils (młodzieżowa rada, rada seniorów) and ceremonies aren't counted.
+RULES["PL"] = (re.compile(r"komisj[aiy][^|]{0,60}(o[sś]wiat|edukacj|szk[oó][lł])", re.I),
+               re.compile(r"sesj|obrad", re.I),
+               re.compile(r"^(?!.*(komisj|m[lł]odzie[zż]ow|senior|dzieci)).*(sesj[aię]\s+(rady|nadzwyczajn|zwyczajn|absolutoryjn|bud[zż]etow|nr)|"
+                          r"\b[ivxlc]+\.?\s+(nadzwyczajna\s+)?sesj|\d+\.?\s+(nadzwyczajna\s+)?sesj|obrady\s+(sesji|rady)|sesja\s+\d)", re.I),
+               re.compile(r"live session|uroczyst|wywiad|spot|reklam|festyn|koncert|do[zż]ynk|msza|[zż]yczenia|m[lł]odzie[zż]ow|senior|wybory|kampani|kandydat|"
+                          r"relacja z|transmisja meczu", re.I))
+
 # Spain: a committee covering education counts only when at least this many of its sessions are posted; otherwise the
 # council's plenaries do (one stray committee clip shouldn't replace 160 plenaries).
-MIN_EDU = {"ES": 3, "FRA": 3, "EC": 3}
+MIN_EDU = {"ES": 3, "FRA": 3, "EC": 3, "IT": 3, "PL": 3}
 
 
 def session_key(cc, t):
@@ -151,7 +167,7 @@ def session_key(cc, t):
         if m:
             y = re.search(r"\b(20\d\d)\b", t)
             return f"{m.group(1)} {m.group(2).lower()} {y.group(1) if y else ''}"
-    return re.sub(r"\b(parte|part)\s*\d+\b|\(\d\)|\d/\d", "", t, flags=re.I).strip().lower()
+    return re.sub(r"\b(parte|part|cz[eę][sś][cć])\s*\d+\b|\(\d\)|\d/\d", "", t, flags=re.I).strip().lower()
 
 
 def meetings(cc, did):
@@ -180,6 +196,8 @@ def meetings(cc, did):
 # Channels checked by hand and found to be another place's (by channel URL). The search matched on the name, and
 # many of these names exist in other Spanish-speaking countries too, or in both Chile and Colombia.
 NOT_CHANNELS = {
+    # Italy: one of Rome's districts (municipi), not Rome's city council
+    "IT": {"https://www.youtube.com/channel/UCTzjPrb12wVS2Io2QN_Mo0g"},   # Municipio Roma VI
     # France: Quebec towns with a French commune's name (checked by their videos' titles)
     "FRA": {
         "https://www.youtube.com/channel/UCNsIi4vI4it0sAn8Afu4l7w",   # Montréal (Quebec), Outremont borough
@@ -261,6 +279,8 @@ CHECKED = {"PE": {k: _PE + v for k, v in {
 FR_FOREIGN = re.compile(r"municipalit[ée]|qu[ée]bec|\bqc\b|belgique|suisse|\bcanton\b|\bcom\.?\s*com", re.I)
 FR_JOIN = {"de", "du", "des", "d", "sur", "sous", "les", "lez", "en", "la", "le", "aux", "au", "et"}
 FR_BEFORE = {"de", "d", "du", "ville", "mairie", "commune", "cite", "officiel", "conseil", "municipal", "ma", "agglo", "metropole", "hotel"}
+# Poland: county councils (powiat, starostwo), youth councils and councillors' own channels aren't the gmina council.
+PL_NOT_OWN = re.compile(r"powiat|starostw|m[lł]odzie[zż]|radn[ya]\b|radnego|radnej|senior", re.I)
 FOREIGN = re.compile(r"deliberante|distrital de carmen alto|municipalidad distrital|provincial", re.I)   # Argentina's and Peru's councils
 
 
@@ -287,7 +307,14 @@ def owners(cc, rows):
         abbr = {a for a in re.findall(r"(?:[-/(–]\s*|\s)([A-Z]{2})\b\)?\s*$", raw.strip())} if cc == "BR" else set()
         def score(r):
             alts = [words(x).strip() for x in r.get("_names") or [r["District"]]]   # Spain: "Alacant / Alicante"
+            if cc == "PL":   # "(rural gmina)" isn't in channel names
+                alts = [re.sub(r" (urban|rural|urban rural) gmina$", "", a) for a in alts]
             nm = next((a for a in alts if " " + a + " " in ch), "")
+            if not nm and cc == "PL":
+                # Polish channels use other cases of the name: "Rada m.st. Warszawy", "Rada Miejska w Łodzi", "Rada Miasta Krakowa"
+                stem = lambda w: w[:max(4, len(w) - 2)]
+                nm = next((a for a in alts if all(any(c.startswith(stem(w)) and len(c) <= len(w) + 3 for c in ch.split()) for w in a.split())), "")
+            if cc == "PL" and PL_NOT_OWN.search(raw): return -1
             if not nm: return -1
             if cc == "FRA":
                 # French names are often the start of a longer one (Saint-Joseph-du-Lac, Saint-Paul-lès-Dax) or the end of
@@ -313,6 +340,7 @@ def write(cc, key, rows, feats):
     meetings(cc, "")
     own = owners(cc, rows)
     for r in rows:
+        if r.get("_own_meetings"): continue   # counted another way (Japan: board of education minutes)
         n, url, keep, kind = meetings(cc, r["District ID"])
         if url and cc not in CHECKED and own.get(url) != r["District ID"]: n, url, keep, kind = 0, "", [], ""
         latest, years = date_summary(keep) if n else ("", "")
@@ -321,7 +349,7 @@ def write(cc, key, rows, feats):
             "Population", "Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
     extra = [c for c in ("Province", "Autonomous community", "Children under 18 (estimated)", "Poverty year", "Poverty range", "Poverty rate (region, all ages)", ES_EST,
-                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households") if any(r.get(c) not in (None, "") for r in rows)]
+                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)", "Welfare rate basis", "Unemployment rate (2020 census)", "Children under 15") if any(r.get(c) not in (None, "") for r in rows)]
     pov = "Percentage of Children in Low Income" if any(r.get("Percentage of Children in Low Income") for r in rows) else "Poverty rate (all ages)"
     cols = [c for c in cols if c not in ("Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)") or any(r.get(c) not in (None, "") for r in rows)]
     cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
@@ -827,6 +855,150 @@ def france():
     write("FRA", "france", rows, feats)
     json.dump({"type": "FeatureCollection", "features": small_feats}, open(os.path.join(DOCS, "map", "france-small.json"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
     print("  small communes on their own map layer:", len(small_feats))
+
+
+def italy():
+    """7,896 comuni. State schools are run by the Ministry of Education (Ministero dell'Istruzione e del Merito);
+    comuni own and look after the buildings of nursery, primary and lower secondary schools, and run school meals
+    and transport. The town council (consiglio comunale) stands in for meetings. Poverty stand-in: the share of
+    income-tax filers with a total income of 10,000 euros a year or less (Ministry of Economy and Finance, 2023):
+    Italy publishes no poverty rate by comune."""
+    d = os.path.join(IN, "italy")
+    com = json.load(open(os.path.join(d, "it_comuni.json"), encoding="utf-8"))
+    inc = json.load(open(os.path.join(d, "it_income_2023.json"), encoding="utf-8"))
+    pup = json.load(open(os.path.join(d, "it_pupils_2024_25.json"), encoding="utf-8"))
+    geo = {f["properties"]["GISCO_ID"][3:]: f for f in json.load(open(os.path.join(d, "lau_IT.geojson"), encoding="utf-8"))["features"]}
+    # The province's share, for the few comuni whose figure the ministry leaves out.
+    prov = {}
+    for code, x in com.items():
+        i = inc.get(code) or {}
+        if i.get("share") is not None:
+            a = prov.setdefault(x["province"], [0, 0]); a[0] += i["under10k"]; a[1] += i["taxpayers"]
+    rows, feats = [], []
+    for code, x in sorted(com.items()):
+        f = geo.get(code); p = f["properties"] if f else {}
+        pop = int(p["POP_2024"]) if p.get("POP_2024") else ""
+        dens = p.get("POP_DENS_2024") or (pop / area_km2(f["geometry"]) if f and pop else 0)
+        i = inc.get(code, {}); pu = pup.get(code)
+        did = f"IT-{code}"
+        name = x["name"] + (f" / {x['other']}" if x["other"] and x["other"] != x["name"] else "")
+        rows.append({"District": name, "Region": x["region"], "Province": x["province"], "Population": pop,
+                     "Poverty rate (all ages)": f"{i['share']:.1f}%" if i.get("share") is not None else "",
+                     "Poverty rate (region, all ages)": "" if i.get("share") is not None or x["province"] not in prov else f"{100 * prov[x['province']][0] / prov[x['province']][1]:.1f}%",
+                     "Poverty note": "Stand-in: the share of income-tax filers whose total income was 10,000 euros a year or less, 2023 "
+                                     "(Ministry of Economy and Finance); Italy publishes no poverty rate by comune" if i.get("share") is not None else
+                                     f"Stand-in: the ministry leaves out this comune's count of low incomes (too few filers), so the share for the province of {x['province']} is shown, 2023",
+                     "Mean income (€ per filer)": i.get("mean_income") or "",
+                     "Enrollment": (pu["state"] + pu["private"]) if pu else "", "Public school enrollment": pu["state"] if pu else "",
+                     "Enrollment year": "2024-25 (primary and lower secondary schools)" if pu else "",
+                     "School system": "Ministry of Education (schools); comune (buildings, meals, transport)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
+        if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    write("IT", "italy", rows, feats)
+
+
+PL_VOIV = {"02": "Dolnośląskie", "04": "Kujawsko-pomorskie", "06": "Lubelskie", "08": "Lubuskie", "10": "Łódzkie", "12": "Małopolskie",
+           "14": "Mazowieckie", "16": "Opolskie", "18": "Podkarpackie", "20": "Podlaskie", "22": "Pomorskie", "24": "Śląskie",
+           "26": "Świętokrzyskie", "28": "Warmińsko-mazurskie", "30": "Wielkopolskie", "32": "Zachodniopomorskie"}
+PL_KIND = {"1": "urban gmina", "2": "rural gmina", "3": "urban-rural gmina"}
+
+
+def poland():
+    """2,477 municipalities (gminy), which run their nursery and primary schools. The town council (rada gminy or
+    rada miejska) is the elected body; since 2018 every council must record its sessions and publish the
+    recordings. Poverty: the share of children aged 0-17 whose parents receive the means-tested family benefit
+    (zasiłek rodzinny), 2024 (Statistics Poland, Local Data Bank)."""
+    d = os.path.join(IN, "poland")
+    bdl = json.load(open(os.path.join(d, "pl_bdl_2024.json"), encoding="utf-8"))
+    pup_f = os.path.join(d, "pl_pupils.json")
+    pup = json.load(open(pup_f, encoding="utf-8")) if os.path.exists(pup_f) else {}
+    geo = {f["properties"]["GISCO_ID"][5:]: f for f in json.load(open(os.path.join(d, "lau_PL.geojson"), encoding="utf-8"))["features"]}
+    names, vals = bdl["names"], bdl["values"]
+    units = [u for u in names if u[-1] in PL_KIND]
+    dup = Counter((u[2:4], names[u]) for u in units)
+    rows, feats = [], []
+    for u in sorted(units, key=lambda u: names[u]):
+        f = geo.get(u[:-1]); p = f["properties"] if f else {}
+        # Statistics Poland's names carry notes ("M.st.Warszawa od 2002", "Wałbrzych od 2013").
+        base = re.sub(r"\s+od \d{4}$", "", names[u]).replace("M.st.Warszawa", "Warszawa")
+        name = base + (f" ({PL_KIND[u[-1]]})" if dup[(u[2:4], names[u])] > 1 else "")
+        share = vals.get("259889", {}).get(u, {}); kids = vals.get("259888", {}).get(u, {}); sa = vals.get("1548717", {}).get(u, {})
+        y = max(share) if share else ""
+        pop = int(p["POP_2024"]) if p.get("POP_2024") else ""
+        dens = p.get("POP_DENS_2024") or 0
+        did = f"PL-{u}"
+        enr = pup.get(u, "")
+        rows.append({"District": name, "Region": PL_VOIV.get(u[2:4], ""), "Population": pop,
+                     "Percentage of Children in Low Income": f"{share[y]:.1f}%" if share else "", "Poverty year": y,
+                     "Poverty note": "Share of children aged 0-17 whose parents receive the means-tested family benefit (zasiłek rodzinny), "
+                                     f"{y} (Statistics Poland, Local Data Bank)" if share else "",
+                     "Children on family benefit": round(kids[max(kids)]) if kids else "",
+                     "Social assistance (% of people)": f"{sa[max(sa)] / 100:.1f}%" if sa else "",
+                     "Enrollment": enr, "Enrollment year": "2024-25 (primary schools)" if enr != "" else "",
+                     "School system": f"Gmina ({PL_KIND[u[-1]]})",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
+        if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    write("PL", "poland", rows, feats)
+
+
+def japan():
+    """1,741 municipalities (cities, towns, villages and Tokyo's special wards), each with its own board of education
+    (教育委員会), which runs its elementary and lower secondary schools and meets in public, usually monthly.
+    Poverty stand-in: the welfare rate (生活保護), people receiving public assistance as a share of the population,
+    FY2024 (Ministry of Health, Labour and Welfare). It's published for designated and core cities; every other
+    municipality gets its prefecture's rate outside those cities (the survey splits a prefecture by who runs the welfare
+    office, not by cities and towns: in Shimane and Hiroshima the towns run their own, so its town figure is empty)."""
+    d = os.path.join(IN, "japan")
+    mun = json.load(open(os.path.join(d, "jp_municipal.json"), encoding="utf-8"))
+    wel = json.load(open(os.path.join(d, "jp_welfare_2024.json"), encoding="utf-8"))
+    mf = os.path.join(d, "jp_minutes.json")
+    mins = {m["code"]: m for m in json.load(open(mf, encoding="utf-8"))} if os.path.exists(mf) else {}
+    geo = {f["properties"]["id"]: f for f in json.load(open(os.path.join(d, "jp_borders.geojson"), encoding="utf-8"))["features"]}
+    pref = {c[:2]: v for c, v in mun.items() if c.endswith("000")}
+    places = {c: v for c, v in mun.items() if not c.endswith("000") and c != "13100" and not (v["name"].endswith("区") and not c.startswith("131"))}
+    pref_en = lambda c: re.sub(r"-(ken|fu|to)$", "", pref[c[:2]]["en"])
+    own = {c for c, v in places.items() if v["name"] in wel["cities"] and wel["cities"][v["name"]]["total"]}
+    # Each prefecture outside its designated and core cities: recipients (monthly average) over people.
+    grp = {}
+    for c, v in places.items():
+        if c in own: continue
+        g = grp.setdefault(c[:2], [0, 0]); g[1] += v.get("pop") or 0
+    for pc, g in grp.items():
+        w = wel["prefectures"].get(pref[pc]["name"], {}).get("total")
+        g[0] = w / 12 if w else None
+    rows, feats = [], []
+    for c, v in sorted(places.items()):
+        pop = v.get("pop") or 0
+        if c in own:
+            rate, basis = wel["cities"][v["name"]]["total"] / 12 / pop * 100 if pop else None, f"Its own ({wel['cities'][v['name']]['kind']})"
+        else:
+            g = grp[c[:2]]
+            rate = g[0] / g[1] * 100 if g[0] and g[1] else None
+            basis = f"{pref_en(c)} outside its designated and core cities"
+        en = re.sub(r"-(shi|machi|cho|mura|son|ku)$", "", v["en"])
+        name = f"{en} ({v['name']})"
+        f = geo.get(f"JP-{c}")
+        dens = pop / v["area"] if pop and v.get("area") else 0
+        enr = (v.get("elementary") or 0) + (v.get("lower_secondary") or 0)
+        m = mins.get(c, {})
+        n = m.get("meetings") or 0
+        years = "; ".join(f"{y}:{k}" for y, k in sorted(m.get("years", {}).items()) if y != "?")
+        rows.append({"District": name, "Region": pref_en(c), "Population": round(pop) if pop else "",
+                     "Poverty rate (all ages)": f"{rate:.2f}%" if rate is not None else "",
+                     "Welfare rate basis": basis if rate is not None else "",
+                     "Poverty note": ("Welfare rate: people receiving public assistance (生活保護), monthly average for FY2024, as a share of the 2020 census population "
+                                      "(Ministry of Health, Labour and Welfare, survey of welfare recipients). "
+                                      + ("" if c in own else f"Published only for designated and core cities; this is the rate for {basis}")),
+                     "Unemployment rate (2020 census)": f"{100 * v['unemployed'] / v['labour_force']:.1f}%" if v.get("unemployed") and v.get("labour_force") else "",
+                     "Children under 15": round(v["under15"]) if v.get("under15") else "",
+                     "Enrollment": round(enr) if enr else "", "Enrollment year": "2024 (elementary and lower secondary schools)" if enr else "",
+                     "School system": "Board of education (教育委員会)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": f"JP-{c}", "_geo": bool(f),
+                     "_own_meetings": True, "Available Board Meetings": n, "Meetings type": "Board of education (minutes)" if n else "",
+                     "Meetings source": (m.get("pages") or [m.get("board", "")])[0] if n else "", "Latest meeting": max((y for y in m.get("years", {}) if y != "?"), default="") if n else "",
+                     "Meetings by year": years if n else ""})
+        if f: feats.append({"type": "Feature", "properties": {"id": f"JP-{c}", "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    write("JP", "japan", rows, feats)
 
 
 EC_PROV_CAPS = {}
