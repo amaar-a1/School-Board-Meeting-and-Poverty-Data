@@ -55,8 +55,21 @@ def main(dirs):
         if c in out and a[1]:
             out[c].update({"income_per_return": round(a[0] / a[1]), "income_per_resident": round(a[0] / a[2]) if a[2] else None,
                            "zero_income_share": round(100 * a[3] / a[1], 1), "income_year": year})
+    # Pupils, Wallonia (with the German-speaking municipalities): IWEPS WalStat on odwb.be, pupils enrolled in the
+    # municipality's nursery (2432000) and primary (243300) schools, all networks ("Pas d'école ..." where there's none).
+    for ds, key in (("2432000", "nursery"), ("243300", "primary")):
+        files = [f for d in dirs for f in glob.glob(os.path.join(d, f"walstat_{ds}.json"))]
+        if not files: continue
+        for r in json.load(open(files[0])):
+            if r.get("type_entite") != "Commune": continue
+            c = merge.get(str(r["ins"]), str(r["ins"]))
+            v = next((r[k] for k in r if k.startswith("nombre_d_eleves")), None)
+            if c in out:
+                out[c][key] = out[c].get(key, 0) + (int(v) if str(v).isdigit() else 0)
+                out[c]["pupils_year"] = f"{r['periode']}-{str(int(r['periode']) + 1)[2:]}"
     json.dump(out, open(os.path.join(IN, "be_data.json"), "w", encoding="utf-8"), ensure_ascii=False)
-    print(len(out), "municipalities;", sum(1 for m in out.values() if m.get("pop")), "with population;", sum(1 for m in out.values() if m.get("income_per_return")), "with income")
+    print(len(out), "municipalities;", sum(1 for m in out.values() if m.get("pop")), "with population;", sum(1 for m in out.values() if m.get("income_per_return")), "with income;",
+          sum(1 for m in out.values() if "primary" in m), "with pupils")
 
 
 if __name__ == "__main__":

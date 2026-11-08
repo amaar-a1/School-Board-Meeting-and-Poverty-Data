@@ -1080,6 +1080,8 @@ def belgium():
                                      "municipality's social welfare centre (OCMW / CPAS), during 2025, per 100 inhabitants (PPS Social Integration); Belgium publishes no poverty rate by municipality" if r else "",
                      "Children under 18": x.get("u18") or "",
                      "Mean income (€ per tax return)": x.get("income_per_return") or "",
+                     "Enrollment": (x.get("nursery", 0) + x.get("primary", 0)) if "primary" in x else "",
+                     "Enrollment year": f"{x['pupils_year']} (nursery and primary schools, all networks)" if "primary" in x else "",
                      "School system": "Municipality (its own primary schools), alongside the community's and the free schools",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
