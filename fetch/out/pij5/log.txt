@@ -1,0 +1,6 @@
+000040417776 35884
+000040434528 22965
+50 done; 0 with meetings
+finished 60 3 with meetings
+
+---
