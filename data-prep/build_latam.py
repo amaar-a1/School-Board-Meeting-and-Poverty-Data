@@ -196,6 +196,8 @@ def meetings(cc, did):
 # Channels checked by hand and found to be another place's (by channel URL). The search matched on the name, and
 # many of these names exist in other Spanish-speaking countries too, or in both Chile and Colombia.
 NOT_CHANNELS = {
+    # Italy: one of Rome's districts (municipi), not Rome's city council
+    "IT": {"https://www.youtube.com/channel/UCTzjPrb12wVS2Io2QN_Mo0g"},   # Municipio Roma VI
     # France: Quebec towns with a French commune's name (checked by their videos' titles)
     "FRA": {
         "https://www.youtube.com/channel/UCNsIi4vI4it0sAn8Afu4l7w",   # Montréal (Quebec), Outremont borough
