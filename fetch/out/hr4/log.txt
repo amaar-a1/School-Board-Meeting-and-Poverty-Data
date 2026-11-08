@@ -1,0 +1,3 @@
+ERR index <urlopen error [Errno 104] Connection reset by peer>
+ERR https://geostat.gov.hr/geoserver/wfs?service=WFS&request=GetCapabilities <urlopen error [Errno 104] Connection reset by peer>
+ERR https://geostat.gov.hr/geoserver/ows?service=WMS&request=GetCapabilities <urlopen error [Errno 104] Connection reset by peer>
