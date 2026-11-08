@@ -1,0 +1,202 @@
+[
+[
+"/en/open-data/code-refnis-0",
+"Code REFNIS"
+],
+[
+"/en/open-data/datalab-population-grid-cells-varying-size-2024",
+"Datalab - Population grid with cells of varying size 2024"
+],
+[
+"/en/open-data/datalab-population-grid-cells-varying-size-2025",
+"Datalab - Population grid with cells of varying size 2025"
+],
+[
+"/en/open-data/family-names-total-population-municipality",
+"Family names of the total population by municipality"
+],
+[
+"/en/open-data/first-names-total-population-municipality-15",
+"First names of the total population by municipality"
+],
+[
+"/en/open-data/first-names-total-population-municipality-16",
+"First names of the total population by municipality"
+],
+[
+"/en/open-data/fiscal-statistics-income",
+""
+],
+[
+"/en/open-data/population-figures-judicial-canton-0",
+"Population figures per judicial canton"
+],
+[
+"/en/open-data/population-figures-judicial-canton-1",
+"Population figures per judicial canton"
+],
+[
+"/en/open-data/population-figures-judicial-canton-2",
+"Population figures per judicial canton"
+],
+[
+"/en/open-data/population-place-residence-nationality-marital-status-age-and-sex-14",
+"Population by place of residence, nationality, marital status, age and sex"
+],
+[
+"/en/open-data/population-place-residence-nationality-marital-status-age-and-sex-15",
+"Population by place of residence, nationality, marital status, age and sex"
+],
+[
+"/en/open-data/population-place-residence-nationality-marital-status-age-and-sex-16",
+"Population by place of residence, nationality, marital status, age and sex"
+],
+[
+"/en/open-data/population-statistical-sector-11",
+"Population by Statistical sector"
+],
+[
+"/en/open-data/population-statistical-sector-13",
+"Population by Statistical sector"
+],
+[
+"/en/open-data/population-statistical-sector-2024",
+"Population by Statistical sector - 2024"
+],
+[
+"/fr/open-data/statistique-fiscale-des-revenus",
+""
+],
+[
+"/nl/open-data/fiscale-statistiek-van-de-inkomsten",
+""
+],
+[
+"https://statbel.fgov.be/en/open-data/fiscal-statistics-income",
+""
+],
+[
+"https://statbel.fgov.be/en/open-data/fiscal-statistics-income#print",
+""
+],
+[
+"https://statbel.fgov.be/fr/open-data/statistique-fiscale-des-revenus",
+""
+],
+[
+"https://statbel.fgov.be/nl/open-data/fiscale-statistiek-van-de-inkomsten",
+""
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/REFNIS%20code/TU_COM_REFNIS-20250101.xlsx",
+"XLSX"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/REFNIS%20code/TU_COM_REFNIS-20250101.zip",
+"TXT (ZIP)"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/Voornamen%20bevolking%20per%20gemeente/TA_POP_FEMALE_2025.xlsx",
+"F XLSX"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/Voornamen%20bevolking%20per%20gemeente/TA_POP_FEMALE_2025.zip",
+"F TXT (ZIP)"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/Voornamen%20bevolking%20per%20gemeente/TA_POP_FEMALE_2026.xlsx",
+"F XLSX"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/Voornamen%20bevolking%20per%20gemeente/TA_POP_FEMALE_2026.zip",
+"F TXT (ZIP)"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/Voornamen%20bevolking%20per%20gemeente/TA_POP_MALE_2025.xlsx",
+"M XLSX"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/Voornamen%20bevolking%20per%20gemeente/TA_POP_MALE_2025.zip",
+"M TXT (ZIP)"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/Voornamen%20bevolking%20per%20gemeente/TA_POP_MALE_2026.xlsx",
+"M XLSX"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/Voornamen%20bevolking%20per%20gemeente/TA_POP_MALE_2026.zip",
+"M TXT (ZIP)"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/arbeid/TF_PSNL_INC_TAX_MUNTY.xlsx",
+"XLSX"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/arbeid/TF_PSNL_INC_TAX_MUNTY.zip",
+"TXT (ZIP)"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2024.xlsx",
+"XLSX"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2024.zip",
+"TXT (ZIP)"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2025.xlsx",
+"XLSX"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2025.zip",
+"TXT (ZIP)"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2026.xlsx",
+"XLSX"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2026.zip",
+"TXT (ZIP)"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/sectoren/OPENDATA_SECTOREN_2023.xlsx",
+"XLSX"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/sectoren/OPENDATA_SECTOREN_2023.zip",
+"TXT (ZIP)"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/sectoren/OPENDATA_SECTOREN_2024.xlsx",
+"XLSX"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/sectoren/OPENDATA_SECTOREN_2024.zip",
+"TXT (ZIP)"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/sectoren/OPENDATA_SECTOREN_2026.xlsx",
+"XLSX"
+],
+[
+"https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/sectoren/OPENDATA_SECTOREN_2026.zip",
+"TXT (ZIP)"
+],
+[
+"https://www.facebook.com/sharer/sharer.php?u=https%3A//statbel.fgov.be/en/open-data/fiscal-statistics-income",
+""
+],
+[
+"https://www.linkedin.com/shareArticle?url=https%3A//statbel.fgov.be/en/open-data/fiscal-statistics-income&title=Fiscal%20statistics%20on%20income",
+""
+],
+[
+"https://x.com/intent/tweet?text=Fiscal%20statistics%20on%20income&url=https%3A//statbel.fgov.be/en/open-data/fiscal-statistics-income",
+""
+],
+[
+"mailto:?subject=Fiscal%20statistics%20on%20income&body=https%3A//statbel.fgov.be/en/open-data/fiscal-statistics-income",
+""
+]
+]
