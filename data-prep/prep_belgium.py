@@ -9,7 +9,7 @@ Raw files (Statbel open data, downloaded on GitHub's runner):
   mergers, so merged municipalities' figures are added up with be_mergers_2025.json).
 Usage: python3 data-prep/prep_belgium.py RAWDIR [RAWDIR ...]
 """
-import datetime, glob, json, os, sys
+import datetime, glob, json, os, re, sys
 import openpyxl
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -67,6 +67,23 @@ def main(dirs):
             if c in out:
                 out[c][key] = out[c].get(key, 0) + (int(v) if str(v).isdigit() else 0)
                 out[c]["pupils_year"] = f"{r['periode']}-{str(int(r['periode']) + 1)[2:]}"
+    # Pupils, Brussels: IBSA's origin-destination tables (both language communities' schools), 2023-24: the pupils at
+    # schools in each Brussels municipality, wherever they live (each column's sum), nursery (6.3.2.2) and primary (6.3.2.3).
+    files = [f for d in dirs for f in glob.glob(os.path.join(d, "bx_6.3_enseignement_origine-destination_*.xlsx"))]
+    if files:
+        norm = lambda t: re.sub(r"[^a-z]", "", str(t).lower().replace("é", "e").replace("è", "e"))
+        bx = {norm(re.sub(r"\s*\(.*\)", "", m["fr"])): c for c, m in out.items() if c.startswith("21")}   # "Forest (Bruxelles-Capitale)"
+        bx[norm("Bruxelles")] = "21004"
+        wb = openpyxl.load_workbook(files[0], read_only=True)
+        for sheet, key in (("6.3.2.2", "nursery"), ("6.3.2.3", "primary")):
+            rows = list(wb[sheet].iter_rows(values_only=True))
+            head = next(i for i, r in enumerate(rows) if r[0] and str(r[0]).startswith("Origine"))
+            year = str(rows[2][0]).strip()
+            for j, name in enumerate(rows[head]):
+                c = bx.get(norm(name)) if j else None
+                if not c: continue
+                tot = sum(int(r[j]) for r in rows[head + 1:] if r[0] and isinstance(r[j], (int, float)) and not str(r[0]).startswith(("Région", "Total")))
+                out[c][key] = tot; out[c]["pupils_year"] = year
     json.dump(out, open(os.path.join(IN, "be_data.json"), "w", encoding="utf-8"), ensure_ascii=False)
     print(len(out), "municipalities;", sum(1 for m in out.values() if m.get("pop")), "with population;", sum(1 for m in out.values() if m.get("income_per_return")), "with income;",
           sum(1 for m in out.values() if "primary" in m), "with pupils")
