@@ -253,6 +253,17 @@ window.STATE_RULES = {
     ],
     note: "Check the current code and the council's own rules (règlement intérieur) before relying on this."
   },
+  italy: {
+    title: "Rules for town council (consiglio comunale) meetings",
+    checked: "November 8, 2026",
+    laws: [
+      { state: "Italy", covers: "Town councils (consigli comunali)", threshold: "",
+        rule: "Council sessions are public unless the council's own rules say otherwise for particular matters (Testo unico degli enti locali, D.Lgs. 267/2000, art. 38); each council's rules (regolamento del consiglio) set how sessions are recorded or streamed, and no national law requires streaming. Decisions must be published on the comune's online notice board (albo pretorio) under the transparency decree (D.Lgs. 33/2013)." },
+      { state: "Italy", covers: "Schools", threshold: "",
+        rule: "State schools are run by the Ministry of Education and its regional offices; comuni provide and maintain the buildings of nursery, primary and lower secondary schools (Law 23/1996). Each school has an elected school council (consiglio di istituto or di circolo)." }
+    ],
+    note: "Check the current law and the council's own rules before relying on this."
+  },
   ecuador: {
     title: "Rules for cantonal council (concejo municipal) meetings",
     checked: "November 7, 2026",

@@ -278,6 +278,18 @@ window.SOURCES = [
     note: "Built by data-prep/build_latam.py. Communes are matched to borders by their INSEE code. The border file predates some mergers, which left 492 former communes with no current code; each was placed in the commune it lies in today with geo.api.gouv.fr and drawn as part of it."
   },
   {
+    only: "Italy",
+    group: "Italy: comuni, incomes, population and pupils",
+    items: [
+      { title: "Low incomes (stand-in for poverty): Ministry of Economy and Finance, income tax returns (IRPEF) by comune, tax year 2023: filers with a total income of 10,000 euros or less", url: "https://www1.finanze.gov.it/finanze/analisi_stat/public/index.php?opendata=yes" },
+      { title: "Comuni, regions and provinces: ISTAT, Elenco dei comuni italiani", url: "https://www.istat.it/classificazione/codici-dei-comuni-delle-province-e-delle-regioni/" },
+      { title: "Pupils: Ministry of Education open data, 2024-25, pupils by state school (ALUCORSOETASTA) and by publicly recognised private school (ALUCORSOINDCLAPAR), placed in comuni with the school directories", url: "https://dati.istruzione.it/opendata/opendata/catalogo/" },
+      { title: "Borders, population and density: Eurostat GISCO Local Administrative Units (LAU) 2024, simplified with mapshaper", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
+      { title: "Meetings (stand-in): each town council's YouTube channel (in the “Meetings source” column), searched for comuni of 3,000+ people", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_italy.py and data-prep/build_latam.py. Comuni are matched to borders and figures by their ISTAT code."
+  },
+  {
     only: "Ecuador",
     group: "Ecuador: cantons, poverty, population and pupils",
     items: [

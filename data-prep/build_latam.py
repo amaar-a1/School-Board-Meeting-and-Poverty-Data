@@ -82,7 +82,7 @@ def centroid(geom):
 
 
 _CACHE = {}
-DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador"}
+DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan"}
 # Brazil: municipal chambers (câmara municipal) and their education committees, in Portuguese.
 RULES = {"BR": (re.compile(r"comiss[ãa]o (permanente )?de educa[çc][ãa]o|educa[çc][ãa]o.*comiss[ãa]o", re.I),
                 re.compile(r"sess[ãa]o|c[âa]mara", re.I),
@@ -321,7 +321,7 @@ def write(cc, key, rows, feats):
             "Population", "Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
     extra = [c for c in ("Province", "Autonomous community", "Children under 18 (estimated)", "Poverty year", "Poverty range", "Poverty rate (region, all ages)", ES_EST,
-                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households") if any(r.get(c) not in (None, "") for r in rows)]
+                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)") if any(r.get(c) not in (None, "") for r in rows)]
     pov = "Percentage of Children in Low Income" if any(r.get("Percentage of Children in Low Income") for r in rows) else "Poverty rate (all ages)"
     cols = [c for c in cols if c not in ("Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)") or any(r.get(c) not in (None, "") for r in rows)]
     cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
@@ -827,6 +827,46 @@ def france():
     write("FRA", "france", rows, feats)
     json.dump({"type": "FeatureCollection", "features": small_feats}, open(os.path.join(DOCS, "map", "france-small.json"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
     print("  small communes on their own map layer:", len(small_feats))
+
+
+def italy():
+    """7,896 comuni. State schools are run by the Ministry of Education (Ministero dell'Istruzione e del Merito);
+    comuni own and look after the buildings of nursery, primary and lower secondary schools, and run school meals
+    and transport. The town council (consiglio comunale) stands in for meetings. Poverty stand-in: the share of
+    income-tax filers with a total income of 10,000 euros a year or less (Ministry of Economy and Finance, 2023):
+    Italy publishes no poverty rate by comune."""
+    d = os.path.join(IN, "italy")
+    com = json.load(open(os.path.join(d, "it_comuni.json"), encoding="utf-8"))
+    inc = json.load(open(os.path.join(d, "it_income_2023.json"), encoding="utf-8"))
+    pup = json.load(open(os.path.join(d, "it_pupils_2024_25.json"), encoding="utf-8"))
+    geo = {f["properties"]["GISCO_ID"][3:]: f for f in json.load(open(os.path.join(d, "lau_IT.geojson"), encoding="utf-8"))["features"]}
+    # The province's share, for the few comuni whose figure the ministry leaves out.
+    prov = {}
+    for code, x in com.items():
+        i = inc.get(code) or {}
+        if i.get("share") is not None:
+            a = prov.setdefault(x["province"], [0, 0]); a[0] += i["under10k"]; a[1] += i["taxpayers"]
+    rows, feats = [], []
+    for code, x in sorted(com.items()):
+        f = geo.get(code); p = f["properties"] if f else {}
+        pop = int(p["POP_2024"]) if p.get("POP_2024") else ""
+        dens = p.get("POP_DENS_2024") or (pop / area_km2(f["geometry"]) if f and pop else 0)
+        i = inc.get(code, {}); pu = pup.get(code)
+        did = f"IT-{code}"
+        name = x["name"] + (f" / {x['other']}" if x["other"] and x["other"] != x["name"] else "")
+        rows.append({"District": name, "Region": x["region"], "Province": x["province"], "Population": pop,
+                     "Poverty rate (all ages)": f"{i['share']:.1f}%" if i.get("share") is not None else "",
+                     "Poverty rate (region, all ages)": "" if i.get("share") is not None or x["province"] not in prov else f"{100 * prov[x['province']][0] / prov[x['province']][1]:.1f}%",
+                     "Poverty note": "Stand-in: the share of income-tax filers whose total income was 10,000 euros a year or less, 2023 "
+                                     "(Ministry of Economy and Finance); Italy publishes no poverty rate by comune" if i.get("share") is not None else
+                                     f"Stand-in: the ministry leaves out this comune's count of low incomes (too few filers), so the share for the province of {x['province']} is shown, 2023",
+                     "Mean income (€ per filer)": i.get("mean_income") or "",
+                     "Enrollment": (pu["state"] + pu["private"]) if pu else "", "Public school enrollment": pu["state"] if pu else "",
+                     "Enrollment year": "2024-25 (primary and lower secondary schools)" if pu else "",
+                     "School system": "Ministry of Education (schools); comune (buildings, meals, transport)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
+        if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    write("IT", "italy", rows, feats)
 
 
 EC_PROV_CAPS = {}
