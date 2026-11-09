@@ -22,9 +22,11 @@ age = [h for h in head if h.startswith("Age")][0]
 val = [h for h in head if "Total - Gender" in h][0]
 cy = [h for h in head if h.startswith("Census year")][0]
 log.write(f"age {age} value {val}\n")
+samp = 0
 pop, kids, ages = {}, {}, set()
 want = {f"{a} years" for a in range(5, 18)}
 for r in rd:
+    if samp < 8 or (samp < 40 and "A0005" in "".join(r[:3])): log.write("ROW " + json.dumps(r) + "\n"); samp += 1
     if len(r) < len(head): continue
     dg = r[col["DGUID"]]
     if dg[4:9] != "A0005" or not r[col[cy]].startswith("2021"): continue
@@ -57,3 +59,5 @@ log.write(f"boards with pop {len(boards)}; fn {len(fn)}, with kids {sum(1 for x 
 # rerun 1794264999
 
 # rerun 2
+
+# rerun 3
