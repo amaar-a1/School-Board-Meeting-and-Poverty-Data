@@ -1,7 +1,10 @@
 # Temporary: Canadian boards' population and land area, and First Nations reserves' children 5-17 (2021 Census).
 import csv, io, json, os, subprocess, sys, urllib.request, zipfile
-subprocess.run([sys.executable, "-m", "pip", "install", "-q", "geopandas", "pyogrio"], check=True)
-import geopandas as gpd
+try:
+    import geopandas as gpd
+except ImportError:
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "--user", "--break-system-packages", "geopandas", "pyogrio"], check=True)
+    os.execv(sys.executable, [sys.executable] + sys.argv)
 OUT = "fetch/out/ca_pop1"; os.makedirs(OUT, exist_ok=True); W = "/tmp/ca"; os.makedirs(W, exist_ok=True)
 UA = {"User-Agent": "school-board-research-script (github.com/amaar-a1)"}
 log = open(f"{OUT}/log.txt", "w")
@@ -53,3 +56,4 @@ for f in json.load(open("fetch/in/canada_fn.geojson"))["features"]:
     fn[i] = {"csd": u, "pop": pop.get(u), "kids_5_17": kids.get(u), "land_km2": round(float(sub.area.sum()) / 1e6, 2) if len(sub) else None}
 json.dump({"boards": boards, "fn": fn, "source": "Statistics Canada table 98-10-0020-01 (2021 Census, age by CSD); 2021 CSD cartographic boundaries"}, open(f"{OUT}/canada_pop.json", "w"), indent=0)
 log.write(f"boards with pop {len(boards)}; fn {len(fn)}, with kids {sum(1 for x in fn.values() if x['kids_5_17'])}\n"); log.close()
+# rerun 1794264999
