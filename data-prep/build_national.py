@@ -232,7 +232,7 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
         note = ". ".join([x for x in [note] + notes if x])
         districts.append({
             "leaid": leaid, "name": r["name"], "state": r["STABREV"], "county": county_name,
-            "kids": kids, "poor": poor, "pct": pct, "note": note,
+            "kids": kids, "poor": poor, "pct": pct, "note": note, "pop": int(r["rpopall_24"]) if str(r.get("rpopall_24", "")).isdigit() else "",
             "enrollment": enrollment if isinstance(enrollment, int) and enrollment >= 0 else "",
             "locale": LOCALE.get(locale // 10, "") if isinstance(locale, int) and locale > 0 else "",
             "nces_name": n.get("lea_name", ""), "lat": n.get("latitude"), "lon": n.get("longitude"),
@@ -298,11 +298,12 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
         w = csv.writer(f)
         w.writerow(["District", "State", "County", "Available Board Meetings", "Children Ages 5-17", "Children Ages 5-17 in Poverty",
                     "Percentage of Children Ages 5-17 in Poverty", "Locale", "Enrollment", "District ID", "Notes",
-                    "Other Board Meetings", "Other meetings source", "Latest meeting", "Meetings by year"])
+                    "Other Board Meetings", "Other meetings source", "Latest meeting", "Meetings by year", "Population"])
         for d in districts:
             w.writerow([d["name"], d["state"], d["county"], d["meetings"], d["kids"], d["poor"], d["pct"], d["locale"], d["enrollment"], d["leaid"], d["note"],
                         other.get(d["leaid"], {}).get("Other Board Meetings", ""), other.get(d["leaid"], {}).get("Other meetings source", ""),
-                        d.get("latest", "") if d["meetings"] else "", "; ".join(f"{y}:{n}" for y, n in sorted(d.get("years", {}).items())) if d["meetings"] else ""])
+                        d.get("latest", "") if d["meetings"] else "", "; ".join(f"{y}:{n}" for y, n in sorted(d.get("years", {}).items())) if d["meetings"] else "",
+                        d.get("pop", "")])   # all ages (SAIPE 2024), for the map's population density
     with open(report_path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["CivicSearch name", "State", "Meetings", "Matched LEAID", "Matched district (Census name)", "How", "Distance km"])
