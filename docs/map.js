@@ -109,6 +109,13 @@
       breaks: [1, 5, 15, 30],
       colors: ["#deebf7", "#9ecae1", "#4292c6", "#2171b5", "#08306b"],
       labels: ["0", "1–4", "5–14", "15–29", "30 or more"]
+    },
+    // Pupils, as each country counts them (see each view's note): at the place's schools, or living there.
+    enrollment: {
+      column: "Enrollment",
+      breaks: [100, 500, 2000, 10000, 50000],
+      colors: ["#edf8e9", "#c7e9c0", "#a1d99b", "#74c476", "#31a354", "#006d2c"],
+      labels: ["Under 100", "100–499", "500–1,999", "2,000–9,999", "10,000–49,999", "50,000 or more"]
     }
   };
   const NO_DATA = "#9e9e9e";
@@ -232,6 +239,7 @@
     // Where CivicSearch has none, the meetings map uses counts from the district's own sources.
     if (metric === "meetings" && row && !(v > 0) && toNumber(row["Other Board Meetings"]) > 0) v = toNumber(row["Other Board Meetings"]);
     if (metric === "meetings" && isNaN(v)) v = 0;   // no meetings found counts as 0
+    if (metric === "enrollment" && !(v > 0)) return NO_DATA;   // no figure (0 is only ever "none reported")
     if (isNaN(v)) return NO_DATA;
     const s2 = metric === "poverty" && OWN_SCALE[euOf(id)] ? SCALES[OWN_SCALE[euOf(id)]] : sc;
     const i = s2.breaks.findIndex((b) => v < b);
@@ -406,6 +414,9 @@
     if (window.SiteFilters && window.SiteFilters.active()) faded.push("that don't match the filters");
     if ((euv === "ES" || (current && current.combined)) && $("map-metric").value === "rank")
       items.push(`<span class="map-faded">Spain: small municipalities with no child figure are ranked by their province's estimate</span>`);
+    if ($("map-metric").value === "enrollment")
+      items.push(`<span><i style="background:${NO_DATA}"></i>No enrollment figure</span>`,
+        `<span class="map-faded">Enrollment is counted differently from country to country (pupils at the place's schools, or pupils living there; some count only primary schools): see each view's note</span>`);
     if ($("map-metric").value === "rank")
       items.push(`<span class="map-faded">Rank within each country: where a place's poverty figure falls among its own country's places, so colours compare across countries even though the measures differ</span>`);
     // Places shown with no figure in this colouring (Svalbard and Pitcairn publish no poverty figure).
@@ -775,6 +786,7 @@
         if (metric === "rank") { const k = String(r["Poverty rank in country"] ?? "") || rankFallback(r, id); if (k !== "") want = [`${k} of 100`]; }
         if (metric === "meetings") { const v = toNumber(r["Available Board Meetings"]); want = [isNaN(v) ? "0" : v.toLocaleString()]; }
         if (metric === "locale") { const v = r.Locale || localeFallback(r, id); if (v) want = [v]; }
+        if (metric === "enrollment") { const v = toNumber(r.Enrollment); if (v > 0) want = [v.toLocaleString()]; }
         if (want && !want.some((w) => text.includes(w))) out.push({ layer: n, id, name: r.District || "", want: want[0], text: text.replace(/\s+/g, " ").slice(0, 260) });
       }));
       return out;
