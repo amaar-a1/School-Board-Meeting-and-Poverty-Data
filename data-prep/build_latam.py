@@ -82,7 +82,7 @@ def centroid(geom):
 
 
 _CACHE = {}
-DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium"}
+DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "AU": "australia"}
 # Brazil: municipal chambers (câmara municipal) and their education committees, in Portuguese.
 RULES = {"BR": (re.compile(r"comiss[ãa]o (permanente )?de educa[çc][ãa]o|educa[çc][ãa]o.*comiss[ãa]o", re.I),
                 re.compile(r"sess[ãa]o|c[âa]mara", re.I),
@@ -168,6 +168,15 @@ RULES["BE"] = (re.compile(r"commissie[^|]{0,40}onderwijs|onderwijs[^|]{0,20}comm
                re.compile(r"gemeenteraad|conseil communal|zitting|s[ée]ance|raadszitting|conseil de ville", re.I),
                re.compile(r"^(?!.*(jeugd|kinder|jongeren|des enfants|des jeunes|cce\b|ccj\b|ocmw-raad|cpas)).*(gemeenteraad|raadszitting|conseil communal|conseil de ville|s[ée]ance du conseil)", re.I),
                re.compile(r"live session|interview|nieuws|journal|feest|f[êe]te|concert|hommage|c[ée]r[ée]monie|plechtig|verkiezing|[ée]lection|campagne", re.I))
+
+# Australia: council meetings (ordinary, special and committee meetings of the council); there's no education committee,
+# as the states run the schools. Youth councils, citizenship ceremonies and briefings aren't counted.
+RULES["AU"] = (re.compile(r"$^"),
+               re.compile(r"meeting|council", re.I),
+               re.compile(r"^(?!.*(youth|junior|citizenship|ceremony|swearing|community (forum|information)|info(rmation)? session|briefing|webinar|q ?& ?a)).*"
+                          r"((ordinary|special|extraordinary|general|statutory|annual)\s+(council\s+)?meeting|council meeting|meeting of (the )?council|"
+                          r"(standing|planning|policy|finance|audit|services)[^|]{0,30}committee meeting)", re.I),
+               re.compile(r"live session|interview|news|podcast|festival|concert|award|tour|launch|explained|how to", re.I))
 
 # Spain: a committee covering education counts only when at least this many of its sessions are posted; otherwise the
 # council's plenaries do (one stray committee clip shouldn't replace 160 plenaries).
@@ -368,7 +377,7 @@ def write(cc, key, rows, feats):
             "Population", "Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
     extra = [c for c in ("Province", "Autonomous community", "Children under 18 (estimated)", "Poverty year", "Poverty range", "Poverty rate (region, all ages)", ES_EST,
-                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)", "Welfare rate basis", "Unemployment rate (2020 census)", "Children under 15", "Children on family benefit (% of under-20s)", "Median income (€ per taxpayer)", "Children under 18", "Mean income (€ per tax return)") if any(r.get(c) not in (None, "") for r in rows)]
+                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)", "Welfare rate basis", "Unemployment rate (2020 census)", "Children under 15", "Children on family benefit (% of under-20s)", "Median income (€ per taxpayer)", "Children under 18", "Mean income (€ per tax return)", "Median family income ($ per week, 2021)") if any(r.get(c) not in (None, "") for r in rows)]
     pov = "Percentage of Children in Low Income" if any(r.get("Percentage of Children in Low Income") for r in rows) else "Poverty rate (all ages)"
     cols = [c for c in cols if c not in ("Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)") or any(r.get(c) not in (None, "") for r in rows)]
     cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
@@ -1089,6 +1098,47 @@ def belgium():
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
     write("BE", "belgium", rows, feats)
+
+
+AU_STATES = {"1": "New South Wales", "2": "Victoria", "3": "Queensland", "4": "South Australia", "5": "Western Australia", "6": "Tasmania",
+             "7": "Northern Territory", "8": "Australian Capital Territory", "9": "Other Territories"}
+# In the islands view instead: Christmas Island, the Cocos (Keeling) Islands, and Norfolk Island with Jervis Bay (the census's
+# "Unincorporated Other Territories").
+AU_ISLANDS = {"51710", "51860", "99399"}
+
+
+def australia():
+    """544 local government areas (2021 boundaries, with the ACT and unincorporated areas). The states and territories run government schools through their
+    education departments; councils have no part in schooling, so their meetings stand in. Poverty stand-in: people on
+    working-age income support (JobSeeker Payment, Parenting Payment, Youth Allowance (other), Special Benefit), June 2026
+    (DSS), per 100 people aged 15-64 at the 2021 Census."""
+    d = os.path.join(IN, "australia")
+    au = json.load(open(os.path.join(d, "au_data.json"), encoding="utf-8"))
+    geo = {f["properties"]["LGA_CODE21"]: f for f in json.load(open(os.path.join(d, "au_lga2021.geojson"), encoding="utf-8"))["features"] if f.get("geometry")}
+    rows, feats = [], []
+    for code, x in sorted(au.items()):
+        if code in AU_ISLANDS: continue
+        f = geo.get(code); p = f["properties"] if f else {}
+        name = p.get("LGA_NAME21") or code
+        if code == "89399": name = "Australian Capital Territory"
+        uninc = "Unincorporated" in name
+        area = p.get("AREASQKM21") or 0
+        dens = x["pop"] / area if area and x["pop"] else 0
+        rate = 100 * x["support"] / x["wa"] if x.get("wa") and "support" in x else None
+        did = f"AU-{code}"
+        rows.append({"District": name, "Region": AU_STATES[code[0]], "Population": x["pop"] or "",
+                     "Poverty rate (all ages)": f"{min(rate, 100):.2f}%" if rate is not None else "",
+                     "Poverty note": ("Stand-in: people on working-age income support (JobSeeker Payment, Parenting Payment, Youth Allowance (other), Special Benefit), "
+                                      f"{x['support_period']} (Department of Social Services), per 100 people aged 15-64 at the 2021 Census; Australia publishes no poverty rate by council area") if rate is not None else "",
+                     "Children under 18": x.get("u18") or "",
+                     "Median family income ($ per week, 2021)": x.get("median_family_income") or "",
+                     "Enrollment": x.get("pupils") or "", "Public school enrollment": x.get("pupils_public") or "",
+                     "Enrollment year": "2021 Census (residents attending primary and secondary school)" if x.get("pupils") else "",
+                     "School system": ("ACT Government (no councils)" if code == "89399" else "State government; no council (unincorporated area)" if uninc
+                                       else "State or territory education department; the council has no part in schooling"),
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
+        if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    write("AU", "australia", rows, feats)
 
 
 EC_PROV_CAPS = {}

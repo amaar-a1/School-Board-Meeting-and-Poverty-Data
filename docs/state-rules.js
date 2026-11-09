@@ -308,6 +308,17 @@ window.STATE_RULES = {
     ],
     note: "Check the current law and the council's own rules before relying on this."
   },
+  australia: {
+    title: "Rules for council meetings",
+    checked: "November 8, 2026",
+    laws: [
+      { state: "Australia", covers: "Council meetings", threshold: "",
+        rule: "Each state's local government act requires council meetings to be open to the public, with set exceptions for confidential items. Several states require or expect councils to livestream or record their meetings (New South Wales since 2019, Victoria under its governance rules, Queensland for some councils); others leave it to the council." },
+      { state: "Australia", covers: "Schools", threshold: "",
+        rule: "Government schools are run by each state's and territory's education department; councils have no role in schooling, so council meetings here are only a stand-in." }
+    ],
+    note: "Check the current law and the council's own meeting rules before relying on this."
+  },
   ecuador: {
     title: "Rules for cantonal council (concejo municipal) meetings",
     checked: "November 7, 2026",
