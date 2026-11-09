@@ -377,6 +377,18 @@ window.SOURCES = [
     note: "Built by data-prep/prep_croatia.py and data-prep/build_latam.py. Places are matched to the poverty map by name (shared names by the map's qualifier or population) and placed in counties by their borders."
   },
   {
+    only: "Philippines",
+    group: "Philippines: cities and municipalities, poverty",
+    items: [
+      { title: "Poverty: Philippine Statistics Authority, Municipal and City Level Small Area Poverty Estimates, 2018 and 2021", url: "https://psa.gov.ph/statistics/poverty-sae/stat-tables" },
+      { title: "Poverty, highly urbanized and independent cities: PSA OpenSTAT, table 2a, poverty incidence among population by region, province and highly urbanized city, 2018, 2021 and 2023", url: "https://openstat.psa.gov.ph/" },
+      { title: "Population: PSA mid-year population projections by city and municipality, 2020–2025 (via the Humanitarian Data Exchange)", url: "https://data.humdata.org/dataset/philippines-population-projection-2020-2025-admin3" },
+      { title: "Borders: faeldon/philippines-json-maps (PSGC 2023), simplified with mapshaper", url: "https://github.com/faeldon/philippines-json-maps" },
+      { title: "Meetings: each council's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_philippines.py and data-prep/build_latam.py. Places are matched by their PSGC code (the old six-digit code's province and municipality digits), or by name where the code changed."
+  },
+  {
     only: "Ecuador",
     group: "Ecuador: cantons, poverty, population and pupils",
     items: [

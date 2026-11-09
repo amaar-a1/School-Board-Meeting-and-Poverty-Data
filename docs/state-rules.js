@@ -330,6 +330,17 @@ window.STATE_RULES = {
     ],
     note: "Check the current law and the council's own rules before relying on this."
   },
+  philippines: {
+    title: "Rules for council sessions and local school boards",
+    checked: "November 8, 2026",
+    laws: [
+      { state: "Philippines", covers: "City and municipal councils", threshold: "",
+        rule: "The Local Government Code (Republic Act 7160, sections 52 and 445–458) requires the Sangguniang Bayan or Panlungsod to hold regular sessions at least once a week, open to the public unless a closed session is called; minutes are kept. Many councils stream their sessions, mostly on Facebook." },
+      { state: "Philippines", covers: "Local school boards", threshold: "",
+        rule: "Every province, city and municipality has a local school board (sections 98–101), chaired by the governor or mayor with the schools division superintendent, which decides the use of the special education fund and meets at least once a month." }
+    ],
+    note: "Check the current law and the local government's own rules before relying on this."
+  },
   ecuador: {
     title: "Rules for cantonal council (concejo municipal) meetings",
     checked: "November 7, 2026",

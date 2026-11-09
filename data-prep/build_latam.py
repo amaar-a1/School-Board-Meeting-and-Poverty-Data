@@ -82,7 +82,7 @@ def centroid(geom):
 
 
 _CACHE = {}
-DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "AU": "australia", "HR": "croatia"}
+DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "AU": "australia", "HR": "croatia", "PH": "philippines"}
 # Brazil: municipal chambers (câmara municipal) and their education committees, in Portuguese.
 RULES = {"BR": (re.compile(r"comiss[ãa]o (permanente )?de educa[çc][ãa]o|educa[çc][ãa]o.*comiss[ãa]o", re.I),
                 re.compile(r"sess[ãa]o|c[âa]mara", re.I),
@@ -185,6 +185,13 @@ RULES["HR"] = (re.compile(r"(odbor|povjerenstvo)[^|]{0,40}(obrazovanj|[sš]kolst
                re.compile(r"^(?!.*(dje[cč]j|mladih|u[cč]eni[cč]k|sve[cč]an|sve[cč]ana)).*(sjednic[aeiu] (gradskog|op[cć]inskog)? ?vije[cć]a|(gradsko|op[cć]insko) vije[cć]e|\d+\.\s*sjednic|sjednica\s+(gv|ov)\b)", re.I),
                re.compile(r"live session|intervju|vijesti|reportaž|festival|koncert|dan grada|dan op[cć]ine|izbori|kampanj", re.I))
 
+# Philippines: the local school board's meetings, else the city or municipal council's sessions (Sangguniang Bayan or
+# Panlungsod: regular and special sessions); youth councils (Sangguniang Kabataan) and news aren't counted.
+RULES["PH"] = (re.compile(r"local school board|\blsb\b|committee on (basic )?education", re.I),
+               re.compile(r"session|sesyon|sangguniang|\bsb\b|\bsp\b", re.I),
+               re.compile(r"^(?!.*(kabataan|\bsk\b|youth|barangay)).*((regular|special|inaugural|ordinary|regualr)\s+(session|sesyon)|sangguniang (bayan|panlungsod|panlalawigan)[^|]{0,40}session|\d+(st|nd|rd|th)\s+(regular|special)\s+session|session\s+no\.?\s*\d+|\b(sb|sp)\s+(regular\s+)?session|pulong\s+(karaniwan|regular))", re.I),
+               re.compile(r"live session|interview|news|balita|festival|fiesta|pageant|concert|award|tour|launch|podcast|campaign|election", re.I))
+
 # Spain: a committee covering education counts only when at least this many of its sessions are posted; otherwise the
 # council's plenaries do (one stray committee clip shouldn't replace 160 plenaries).
 MIN_EDU = {"ES": 3, "FRA": 3, "EC": 3, "IT": 3, "PL": 3, "PT": 3, "BE": 3}
@@ -227,6 +234,9 @@ def meetings(cc, did):
 # Channels checked by hand and found to be another place's (by channel URL). The search matched on the name, and
 # many of these names exist in other Spanish-speaking countries too, or in both Chile and Colombia.
 NOT_CHANNELS = {
+    # Philippines: the city council of Alaminos (Pangasinan) found for Alaminos (Laguna), and Sogod's council for Leyte
+    "PH": {"https://www.youtube.com/channel/UCBKHEP2wS5tUvztcvvO_zbg",
+           "https://www.youtube.com/channel/UCA6Oz5eN0eNmiKC9agQ6iEw"},
     # Croatia: the city council of Visoko in Bosnia and Herzegovina, not the Croatian municipality of Visoko
     "HR": {"https://www.youtube.com/channel/UCxmQKfPafCW7QvqutO_vMXQ",
            "https://www.youtube.com/channel/UCbUsVlV8y9bx8UPsLgrZ35A"},   # Stari Grad, Sarajevo (Bosnia and Herzegovina), not Stari Grad on Hvar
@@ -1183,6 +1193,39 @@ def croatia():
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
     write("HR", "croatia", rows, feats)
+
+
+def philippines():
+    """1,642 cities and municipalities (PSGC 2023), Manila as one city. The Department of Education runs public schools;
+    each city and municipality also has a local school board (chaired by the mayor) that spends its special education
+    fund. Poverty: PSA's small area estimates of poverty incidence among population, 2021, for municipalities and
+    component cities; PSA's own 2021 figures for the highly urbanized and independent cities (OpenSTAT table 2a)."""
+    d = os.path.join(IN, "philippines")
+    ph = json.load(open(os.path.join(d, "ph_data.json"), encoding="utf-8"))
+    geo = {str(f["properties"]["adm3_psgc"]).zfill(10): f for f in json.load(open(os.path.join(d, "ph_municities.geojson"), encoding="utf-8"))["features"] if f.get("geometry")}   # Peñarrubia's is in extra_borders.geojson
+    rows, feats = [], []
+    names = Counter(x["name"] for x in ph.values())
+    for code, x in sorted(ph.items()):
+        f = geo.get(code)
+        name = x["name"] + (f" ({x['province']})" if names[x["name"]] > 1 and x.get("province") else "")
+        dens = x["pop2021"] / x["area"] if x.get("pop2021") and x.get("area") else 0
+        src = x.get("source")
+        years = "; ".join(f"{y}:{x[k]:g}" for y, k in (("2018", "pov2018"), ("2021", "pov2021"), ("2023", "pov2023")) if x.get(k) is not None)
+        note = {"sae": "Share of people below the poverty line, all ages, 2021 (PSA small area estimates for cities and municipalities)",
+                "t2a": "Share of people below the poverty line, all ages, 2021 (PSA official poverty statistics, which give highly urbanized and independent cities their own figures)",
+                "est2018": "PSA withheld San Juan's 2021 figure as unreliable; shown instead, in a separate column kept out of the averages, its 2018 figure",
+                "est": "A municipality of the BARMM Special Geographic Area, created in 2024 from villages of Cotabato province, so it has no estimate of its own; shown instead, in a separate column kept out of the averages, Cotabato province's 2021 rate"}[src]
+        did = f"PH-{code}"
+        # Channel names: "City Council of Manila", "Mati City", "Sangguniang Bayan ng Paombong": the name without "City of" counts too.
+        base = re.sub(r"^City of ", "", x["name"]); alts = [name] + ([base, f"{base} City"] if base != x["name"] else [])
+        rows.append({"District": name, "_names": alts, "Region": x.get("region", ""), "Province": x.get("province", ""), "Population": x.get("pop2021") or "",
+                     "Poverty rate (all ages)": f"{x['pov2021']:.1f}%" if x.get("pov2021") is not None else "",
+                     "Poverty rate (region, all ages)": f"{x['est_pov2018']:.1f}%" if src == "est2018" else f"{x['est_pov2021']:.1f}%" if src == "est" else "",
+                     "Poverty by year": years, "Poverty note": note,
+                     "School system": "Department of Education (public schools); local school board (special education fund)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
+        if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    write("PH", "philippines", rows, feats)
 
 
 EC_PROV_CAPS = {}
