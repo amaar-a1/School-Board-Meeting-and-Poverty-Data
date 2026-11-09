@@ -17,7 +17,7 @@ ids = [98100002] + list(range(98100021, 98100031))
 meta = json.loads(urllib.request.urlopen(urllib.request.Request("https://www150.statcan.gc.ca/t1/wds/rest/getCubeMetadata", data=json.dumps([{"productId": i} for i in ids]).encode(), headers={**UA, "Content-Type": "application/json"}), timeout=120).read())
 titles = {m["object"]["productId"]: m["object"]["cubeTitleEn"] for m in meta if m.get("status") == "SUCCESS"}
 log.write("titles " + json.dumps(titles) + "\n")
-age_id = next((int(k) for k, t in titles.items() if t.startswith("Age (in single years)") and "census subdivisions" in t), None)
+age_id = 98100022
 log.write(f"age table {age_id}\n")
 def table(pid):
     z = zipfile.ZipFile(fetch(f"https://www150.statcan.gc.ca/n1/tbl/csv/{pid}-eng.zip", f"{W}/{pid}.zip"))
@@ -46,8 +46,11 @@ for r in rd:
     dg = r[col["DGUID"]]
     if dg[4:9] != "A0005": continue
     for h in head:
-        if h.lower().startswith("land area"):
+        if "land area" in h.lower() and "2021" in h:
             try: land[dg[-7:]] = float(r[col[h]])
+            except ValueError: pass
+        if h.endswith("Population, 2021 [1]") and dg[-7:] not in pop:
+            try: pop[dg[-7:]] = float(r[col[h]])
             except ValueError: pass
 log.write(f"CSDs pop {len(pop)} kids {len(kids)} land {len(land)}\n")
 csd = gpd.read_file("zip://" + fetch("https://github.com/amaar-a1/School-Board-Meeting-and-Poverty-Data/releases/download/statcan-csd-2021/lcsd000b21a_e.zip", f"{W}/csd.zip")).to_crs(3347)
@@ -78,3 +81,5 @@ log.write(f"boards with pop {len(boards)}; fn {len(fn)}, with kids {sum(1 for x 
 # rerun 4
 
 # rerun 5
+
+# rerun 6
