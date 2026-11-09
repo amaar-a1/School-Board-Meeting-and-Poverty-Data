@@ -1,0 +1,185 @@
+== bz 'schüler': 0
+== bz 'alunni scuola': 0
+== bz 'studenti scuole': 0
+== tn 'studenti iscritti scuole': 18
+  iscritti-per-tipologia-di-scuola | Iscritti per tipologia di scuola | 2020-05-26
+      CSV | iscritti-scuola-2012_2013 | https://dati.trentino.it/dataset/c2a04d39-a485-4185-a0bb-4fee376dfa2c/resource/4b9ae170-82c2-4b29-94d2-edb9bcce3b6a/download/numerostudentiiscrittipertipologias
+      CSV | iscritti-scuola-2013_2014 | https://dati.trentino.it/dataset/c2a04d39-a485-4185-a0bb-4fee376dfa2c/resource/61da2847-797e-40ca-a76e-f0d8ba527f23/download/numerostudentiiscrittipertipologias
+      CSV | iscritti-scuola-2014_2015 | https://dati.trentino.it/dataset/c2a04d39-a485-4185-a0bb-4fee376dfa2c/resource/460e831a-2b82-4880-8a42-283aeacaec42/download/numero-studenti-iscritti-per-tipolo
+  tasso-di-scolarita-studenti-14-181 | Tasso di scolarità (studenti 14-18) | 2026-09-28
+      JSON | Tasso di scolarità (studenti 14-18) | https://statweb.provincia.tn.it/indicatoristrutturali/exp.aspx?fmt=json&idind=362&t=i
+      CSV | Tasso di scolarità (studenti 14-18) | https://statweb.provincia.tn.it/indicatoristrutturali/exp.aspx?fmt=csv&idind=362&t=i
+      JSON | **Studenti di 14-18 anni | https://statweb.provincia.tn.it/indicatoristrutturali/exp.aspx?fmt=json&idind=362&t=n
+      CSV | **Studenti di 14-18 anni | https://statweb.provincia.tn.it/indicatoristrutturali/exp.aspx?fmt=csv&idind=362&t=n
+      JSON | Popolazione di 14-18 anni | https://statweb.provincia.tn.it/indicatoristrutturali/exp.aspx?fmt=json&idind=362&t=d
+      CSV | Popolazione di 14-18 anni | https://statweb.provincia.tn.it/indicatoristrutturali/exp.aspx?fmt=csv&idind=362&t=d
+  istruzione-sistema-scolastico-anno-2015 | Istruzione - Sistema scolastico anno 2015 | 2020-03-24
+      XLS | Diplomati nei corsi di formazione professionale per indirizz | https://www.agenzialavoro.tn.it/content/download/3009/50383/file/diplomati%20formazione%20professionale%20per%20indirizzo%202010-2014.xls
+      CSV | Diplomati nei corsi di formazione professionale per indirizz | https://www.agenzialavoro.tn.it/content/download/3009/50390/file/diplomati_formazione_professionale_per_indirizzo_2010-2014_ST_MR.csv
+      XLS | Iscritti alla scuola media inferiore per sesso in provincia  | https://www.agenzialavoro.tn.it/content/download/3001/49975/file/iscritti%20medie%20inferiori%20prima%20classe%20e%20totale%202005-2014.pdf
+      CSV | Iscritti alla scuola media inferiore per sesso in provincia  | https://www.agenzialavoro.tn.it/content/download/3001/49982/file/iscritti_medie_inferiori_prima_classe_e_totale_2005-2014_ST_MR.csv
+      XLS | Iscritti alle scuole elementari per sesso in provincia di Tr | https://www.agenzialavoro.tn.it/content/download/3000/49924/file/iscritti%20scuola%20elementare%20prima%20classe%20e%20totale%202005-2014.xls
+      CSV | Iscritti alle scuole elementari per sesso in provincia di Tr | https://www.agenzialavoro.tn.it/content/download/3000/49931/file/iscritti_scuola_elementare_prima_classe_e_totale_2005-2014_ST_MR.csv
+  istruzione-sistema-scolastico-anno-2016 | Istruzione - Sistema scolastico anno 2016 | 2026-03-25
+      XLS | Diplomati nei corsi di formazione professionale per indirizz | https://www.agenzialavoro.tn.it/content/download/2594/33237/file/diplomati%20formazione%20professionale%202010-2015.xls
+      CSV | Diplomati nei corsi di formazione professionale per indirizz | https://www.agenzialavoro.tn.it/content/download/2594/33244/file/diplomati_formazione_professionale_2010-2015_ST_MR.csv
+      XLS | Iscritti alla scuola media inferiore per sesso in provincia  | https://www.agenzialavoro.tn.it/content/download/2564/32374/file/iscritti%20medie%20inferiori%202006-2015.xls
+      CSV | Iscritti alla scuola media inferiore per sesso in provincia  | https://www.agenzialavoro.tn.it/content/download/2564/32381/file/iscritti_medie_inferiori_2006-2015_ST_MR.csv
+      XLS | Iscritti alle scuole elementari per sesso in provincia di Tr | https://www.agenzialavoro.tn.it/content/download/2563/32323/file/iscritti%20elementari%202006-2015.xls
+      CSV | Iscritti alle scuole elementari per sesso in provincia di Tr | https://www.agenzialavoro.tn.it/content/download/2563/32330/file/iscritti_elementari_2006-2015_ST_MR.csv
+  istruzione-sistema-scolastico-anno-2018 | Istruzione - Sistema scolastico anno 2018 | 2020-04-24
+      XLS | Iscritti alle scuole elementari per sesso in provincia di Tr | https://www.agenzialavoro.tn.it/content/download/6207/99716/file/Iscritti%20elementari%20sesso%20TN%202008-2017.xls
+      CSV | Iscritti alle scuole elementari per sesso in provincia di Tr | https://www.agenzialavoro.tn.it/content/download/6207/99723/file/iscritti_elementari_sesso_tn_2008-2017_MR.csv
+      XLS | Iscritti alla scuola media inferiore per sesso in provincia  | https://www.agenzialavoro.tn.it/content/download/6208/99767/file/Iscritti%20medie%20inferiori%20sesso%20TN%202008-2017.xls
+      CSV | Iscritti alla scuola media inferiore per sesso in provincia  | https://www.agenzialavoro.tn.it/content/download/6208/99774/file/iscritti_medie_inferiori_sesso_tn_2008-2017_MR.csv
+      XLS | Tasso di scolarità per aree territoriali (2007/08 - 2016/17) | https://www.agenzialavoro.tn.it/content/download/6209/99818/file/Tasso%20scolarit%C3%A0%20aree%202007-2016.xls
+      CSV | Tasso di scolarità per aree territoriali (2007/08 - 2016/17) | https://www.agenzialavoro.tn.it/content/download/6209/99825/file/Tasso_scolarit%C3%A0_aree_2007-2016_MR.csv
+  istruzione-sistema-scolastico-anno-2017 | Istruzione - Sistema scolastico anno 2017 | 2020-03-24
+      XLS | Diplomati nei corsi di formazione professionale per indirizz | https://www.agenzialavoro.tn.it/content/download/5633/85911/file/diplomati%20formazione%20professionale%20per%20indirizzo%202010-2016.xls
+      CSV | Diplomati nei corsi di formazione professionale per indirizz | https://www.agenzialavoro.tn.it/content/download/5633/85918/file/diplomati_formazione_professionale_per_indirizzo_2010-2016_ST_MR.csv
+      XLS | Iscritti alla scuola media inferiore per sesso in provincia  | https://www.agenzialavoro.tn.it/content/download/5635/86013/file/iscritti%20medie%20inferiori%202007-2016.xls
+      CSV | Iscritti alla scuola media inferiore per sesso in provincia  | https://www.agenzialavoro.tn.it/content/download/5635/86020/file/iscritti_medie_inferiori_2007-2016_ST_MR.csv
+      XLS | Iscritti alle scuole elementari per sesso in provincia di Tr | https://www.agenzialavoro.tn.it/content/download/5634/85962/file/iscritti%20elementari%202007-2016.xls
+      CSV | Iscritti alle scuole elementari per sesso in provincia di Tr | https://www.agenzialavoro.tn.it/content/download/5634/85969/file/iscritti_elementari_2007-2016_ST_MR.csv
+  tasso-di-passaggio-alla-formazione-professionale | Tasso di passaggio alla formazione professionale | 2026-05-05
+      JSON | Tasso di passaggio alla formazione professionale | https://statweb.provincia.tn.it/indicatoristrutturali/exp.aspx?fmt=json&idind=858&t=i
+      CSV | Tasso di passaggio alla formazione professionale | https://statweb.provincia.tn.it/indicatoristrutturali/exp.aspx?fmt=csv&idind=858&t=i
+      JSON | Iscritti al primo anno di scuole professionali  che hanno co | https://statweb.provincia.tn.it/indicatoristrutturali/exp.aspx?fmt=json&idind=858&t=n
+      CSV | Iscritti al primo anno di scuole professionali  che hanno co | https://statweb.provincia.tn.it/indicatoristrutturali/exp.aspx?fmt=csv&idind=858&t=n
+      JSON | Licenziati dalla scuola media inferiore | https://statweb.provincia.tn.it/indicatoristrutturali/exp.aspx?fmt=json&idind=858&t=d
+      CSV | Licenziati dalla scuola media inferiore | https://statweb.provincia.tn.it/indicatoristrutturali/exp.aspx?fmt=csv&idind=858&t=d
+  tasso-di-passaggio-alla-scuola-media-superiore | Tasso di passaggio alla scuola media superiore | 2026-05-05
+      JSON | Tasso di passaggio alla scuola media superiore | https://statweb.provincia.tn.it/indicatoristrutturali/exp.aspx?fmt=json&idind=857&t=i
+      CSV | Tasso di passaggio alla scuola media superiore | https://statweb.provincia.tn.it/indicatoristrutturali/exp.aspx?fmt=csv&idind=857&t=i
+      JSON | Iscritti al primo anno di scuola media superiore che hanno c | https://statweb.provincia.tn.it/indicatoristrutturali/exp.aspx?fmt=json&idind=857&t=n
+      CSV | Iscritti al primo anno di scuola media superiore che hanno c | https://statweb.provincia.tn.it/indicatoristrutturali/exp.aspx?fmt=csv&idind=857&t=n
+      JSON | Licenziati dalla scuola media inferiore | https://statweb.provincia.tn.it/indicatoristrutturali/exp.aspx?fmt=json&idind=857&t=d
+      CSV | Licenziati dalla scuola media inferiore | https://statweb.provincia.tn.it/indicatoristrutturali/exp.aspx?fmt=csv&idind=857&t=d
+  istruzione-sistema-scolastico-anno-2021 | Istruzione - Sistema scolastico anno 2021 | 2023-05-16
+      XLSX | Diplomati nei corsi di formazione professionale per indirizz | https://www.agenzialavoro.tn.it/content/download/10749/177677/file/Diplomati%20FP%20per%20sesso%20indirizzo%20TN%202013-2020.xlsx
+      CSV | Diplomati nei corsi di formazione professionale per indirizz | https://www.agenzialavoro.tn.it/content/download/10749/177684/file/diplomati_fp_per_sesso_indirizzo_tn_2013-2020_MR.csv
+      XLSX | Iscritti alla scuola media inferiore per sesso in provincia  | https://www.agenzialavoro.tn.it/content/download/10748/177626/file/iscritti%20medie%20inferiori%20sesso%20TN%202011-2020.xlsx
+      CSV | Iscritti alla scuola media inferiore per sesso in provincia  | https://www.agenzialavoro.tn.it/content/download/10748/177633/file/iscritti_medie_inferiori_sesso_tn_2011-2020_MR.csv
+      XLSX | Iscritti alle scuole elementari per sesso in provincia di Tr | https://www.agenzialavoro.tn.it/content/download/10747/177575/file/iscritti%20elementari%20sesso%20TN%202011-2020.xlsx
+      CSV | Iscritti alle scuole elementari per sesso in provincia di Tr | https://www.agenzialavoro.tn.it/content/download/10747/177582/file/iscritti_elementari_sesso_tn_2011-2020_MR.csv
+  istruzione-sistema-scolastico-anno-2019 | Istruzione - Sistema scolastico anno 2019 | 2021-03-19
+      XLS | Diplomati nei corsi di formazione professionale per indirizz | https://www.agenzialavoro.tn.it/content/download/7411/123156/file/Diplomati%20FP%20per%20sesso%20indirizzo%20TN%202011-2018.xls
+      CSV | Diplomati nei corsi di formazione professionale per indirizz | https://www.agenzialavoro.tn.it/content/download/7411/123163/file/diplomati_fp_per_sesso_indirizzo_tn_2011-2018_MR.csv
+      XLS | Iscritti alla scuola media inferiore per sesso in provincia  | https://www.agenzialavoro.tn.it/content/download/7412/123207/file/Iscritti%20medie%20inferiori%20sesso%20TN%202009-2018.xls
+      CSV | Iscritti alla scuola media inferiore per sesso in provincia  | https://www.agenzialavoro.tn.it/content/download/7412/123214/file/iscritti_medie_inferiori_sesso_tn_2009-2018_MR.csv
+      XLS | Iscritti alle scuole elementari per sesso in provincia di Tr | https://www.agenzialavoro.tn.it/content/download/7413/123258/file/Iscritti%20elementari%20sesso%20TN%202009-2018.xls
+      CSV | Iscritti alle scuole elementari per sesso in provincia di Tr | https://www.agenzialavoro.tn.it/content/download/7413/123265/file/iscritti_elementari_sesso_tn_2009-2018_MR.csv
+  istruzione-sistema-scolastico-anno-2020 | Istruzione - Sistema scolastico anno 2020 | 2022-01-12
+      XLS | Diplomati nei corsi di formazione professionale per indirizz | https://www.agenzialavoro.tn.it/content/download/9535/155704/file/Diplomati%20FP%20per%20sesso%20indirizzo%20TN%202012-2019.xls
+      CSV | Diplomati nei corsi di formazione professionale per indirizz | https://www.agenzialavoro.tn.it/content/download/9535/155711/file/diplomati_fp_per_sesso_indirizzo_tn_2012-2019_MR.csv
+      XLS | Iscritti alla scuola media inferiore per sesso in provincia  | https://www.agenzialavoro.tn.it/content/download/9536/155755/file/Iscritti%20medie%20inferiori%20sesso%20TN%202010-2019.xls
+      CSV | Iscritti alla scuola media inferiore per sesso in provincia  | https://www.agenzialavoro.tn.it/content/download/9536/155762/file/iscritti_medie_inferiori_sesso_tn_2010-2019_MR.csv
+      XLS | Iscritti alle scuole elementari per sesso in provincia di Tr | https://www.agenzialavoro.tn.it/content/download/9537/155806/file/Iscritti%20elementari%20sesso%20TN%202010-2019.xls
+      CSV | Iscritti alle scuole elementari per sesso in provincia di Tr | https://www.agenzialavoro.tn.it/content/download/9537/155813/file/iscritti_elementari_sesso_tn_2010-2019_MR.csv
+  occupazione-lavoratori-stranieri-anno-2021 | Occupazione lavoratori stranieri anno 2021 | 2023-05-18
+      XLSX | Acquisizioni di cittadinanza italiana da parte di stranieri  | https://www.agenzialavoro.tn.it/content/download/10673/174191/file/Acquisizioni%20cittadinanza%20per%20sesso%20TN%202011-2020.xlsx
+      CSV | Acquisizioni di cittadinanza italiana da parte di stranieri  | https://www.agenzialavoro.tn.it/content/download/10673/174198/file/acquisizioni_cittadinanza_per_sesso_tn_2011-2020_MR.csv
+      XLSX | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/10672/174140/file/Alunni%20stranieri%20per%20scuola%20area%20TN%202020.xlsx
+      CSV | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/10672/174147/file/alunni_stranieri_per_scuola_area_tn_2020_MR.csv
+      XLSX | Assunzioni di stranieri per contratto in provincia di Trento | https://www.agenzialavoro.tn.it/content/download/10677/174356/file/Assunzioni%20stranieri%20per%20contratto%20TN%202021.xlsx
+      CSV | Assunzioni di stranieri per contratto in provincia di Trento | https://www.agenzialavoro.tn.it/content/download/10677/174363/file/assunzioni_stranieri_per_contratto_tn_2021_MR.csv
+  occupazione-lavoratori-stranieri-anno-2020 | Occupazione lavoratori stranieri anno 2020 | 2022-02-07
+      XLS | Acquisizioni di cittadinanza italiana da parte di stranieri  | https://www.agenzialavoro.tn.it/content/download/9463/152495/file/Acquisizioni%20cittadinanza%20per%20sesso%20TN%202010-2019.xls
+      CSV | Acquisizioni di cittadinanza italiana da parte di stranieri  | https://www.agenzialavoro.tn.it/content/download/9463/152502/file/acquisizioni_cittadinanza_per_sesso_tn_2010-2019_MR.csv
+      XLS | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/9464/152546/file/Alunni%20stranieri%20per%20scuola%20area%20TN%202019.xls
+      CSV | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/9464/152553/file/alunni_stranieri_per_scuola_area_tn_2019_MR.csv
+      XLS | Assunzioni di stranieri per provenienza e sesso in provincia | https://www.agenzialavoro.tn.it/content/download/9465/152597/file/Assunzioni%20stranieri%20per%20provenienza%20sesso%20TN%202019-2020.xls
+      CSV | Assunzioni di stranieri per provenienza e sesso in provincia | https://www.agenzialavoro.tn.it/content/download/9465/152604/file/assunzioni_stranieri_per_provenienza_sesso_tn_2019-2020_MR.csv
+  occupazione-lavoratori-stranieri-anno-2019 | Occupazione lavoratori stranieri anno 2019 | 2021-12-29
+      XLS | Acquisizioni di cittadinanza italiana da parte di stranieri  | https://www.agenzialavoro.tn.it/content/download/7333/119178/file/Acquisizioni%20cittadinanza%20per%20sesso%20TN%202005-2018.xls
+      CSV | Acquisizioni di cittadinanza italiana da parte di stranieri  | https://www.agenzialavoro.tn.it/content/download/7333/119185/file/acquisizioni_cittadinanza_per_sesso_tn_2005-2018_MR.csv
+      XLS | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/7334/119229/file/Alunni%20stranieri%20per%20scuola%20area%20TN%202018.xls
+      CSV | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/7334/119236/file/alunni_stranieri_per_scuola_area_tn_2018_MR.csv
+      XLS | Assunzioni di stranieri per provenienza e sesso in provincia | https://www.agenzialavoro.tn.it/content/download/7335/119280/file/Assunzioni%20stranieri%20per%20provenienza%20sesso%20TN%202018-2019.xls
+      CSV | Assunzioni di stranieri per provenienza e sesso in provincia | https://www.agenzialavoro.tn.it/content/download/7335/119287/file/assunzioni_stranieri_per_provenienza_sesso_tn_2018-2019_MR.csv
+  occupazione-lavoratori-stranieri-anno-2016 | Occupazione lavoratori stranieri anno 2016 | 2020-06-05
+      CSV | Acquisizioni di cittadinanza italiana da parte di stranieri  | https://www.agenzialavoro.tn.it/content/download/2748/38568/file/acquisizioni_di_cittadinanza_1994-2015_MR.csv
+      XLS | Acquisizioni di cittadinanza italiana da parte di stranieri  | https://www.agenzialavoro.tn.it/content/download/2748/38561/file/acquisizioni%20di%20cittadinanza%201994-2015.xls
+      CSV | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/2749/38619/file/alunni_stranieri_per_livello_e_area_provenienza_MR.csv
+      XLS | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/2749/38612/file/alunni%20stranieri%20per%20livello%20e%20area%20provenienza.xls
+      CSV | Assunzioni di stranieri in provincia di Trento (2015-2016) - | https://www.agenzialavoro.tn.it/content/download/2752/38772/file/assunzioni%20straniere%20per%20tipologie.xls
+      XLS | Assunzioni di stranieri in provincia di Trento (2015-2016) - | https://www.agenzialavoro.tn.it/content/download/2752/38765/file/assunzioni%20straniere%20per%20tipologie.xls
+  occupazione-lavoratori-stranieri-anno-2018 | Occupazione lavoratori stranieri anno 2018 | 2020-04-27
+      XLS | Popolazione 15 anni e oltre per nazionalità, condizione e se | https://www.agenzialavoro.tn.it/content/download/6159/97940/file/Popolazione%2015+%20per%20nazionalit%C3%A0%20condizione%20sesso%20TN%202018.xls
+      CSV | Popolazione 15 anni e oltre per nazionalità, condizione e se | https://www.agenzialavoro.tn.it/content/download/6159/97947/file/popolazione_15+_per_nazionalit%C3%A0_condizione_sesso_tn_2018_MR.csv
+      XLS | Popolazione 15-64 anni per nazionalità, condizione e sesso i | https://www.agenzialavoro.tn.it/content/download/6158/97889/file/Popolazione%2015-64%20per%20nazionalit%C3%A0%20condizione%20sesso%20TN%202018.xls
+      CSV | Popolazione 15-64 anni per nazionalità, condizione e sesso i | https://www.agenzialavoro.tn.it/content/download/6158/97896/file/popolazione_15-64_per_nazionalit%C3%A0_condizione_sesso_tn_2018_MR.csv
+      XLS | Tassi di attività, di occupazione e disoccupazione per nazio | https://www.agenzialavoro.tn.it/content/download/6162/98093/file/Tassi%20per%20nazionalit%C3%A0%20sesso%20TN%202018.xls
+      CSV | Tassi di attività, di occupazione e disoccupazione per nazio | https://www.agenzialavoro.tn.it/content/download/6162/98100/file/tassi_per_nazionalit%C3%A0_sesso_TN_2018_MR.csv
+  occupazione-lavoratori-stranieri-anno-2017 | Occupazione lavoratori stranieri anno 2017 | 2020-03-19
+      XLS | Acquisizioni di cittadinanza italiana da parte di stranieri  | https://www.agenzialavoro.tn.it/content/download/5663/87441/file/acquisizioni%20di%20nazionalit%C3%A0%20italiana%20-%201995-2016.xls
+      CSV | Acquisizioni di cittadinanza italiana da parte di stranieri  | https://www.agenzialavoro.tn.it/content/download/5663/87448/file/acquisizioni_di_nazionalit%C3%A0_italiana_1995-2016_ST_MR.csv
+      XLS | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/5664/87492/file/alunni%20stranieri%20per%20livello%20e%20area%20di%20provenienza.xls
+      CSV | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/5664/87499/file/alunni_stranieri_per_livello_e_area_di_provenienza_MR.csv
+      XLS | Assunzioni di stranieri in provincia di Trento (2016-2017) - | https://www.agenzialavoro.tn.it/content/download/5666/87594/file/assunzioni%20straniere%20per%20tipologia.xls
+      CSV | Assunzioni di stranieri in provincia di Trento (2016-2017) - | https://www.agenzialavoro.tn.it/content/download/5666/87601/file/assunzioni_straniere_per_tipologia_MR.csv
+  occupazione-lavoratori-stranieri-anno-2015 | Occupazione lavoratori stranieri anno 2015 | 2020-03-19
+      XLS | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/3039/51913/file/alunni%20stranieri%20per%20livello%20scolastico%20e%20area%20di%20provenienza.xls
+      CSV | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/3039/51920/file/alunni_stranieri_per_livello_scolastico_e_area_di_provenienza_MR.csv
+      XLS | Assunzioni di stranieri in provincia di Trento (2014-2015) - | https://www.agenzialavoro.tn.it/content/download/3041/52015/file/assunzioni%20di%20stranieri%20per%20tipologia.xls
+      CSV | Assunzioni di stranieri in provincia di Trento (2014-2015) - | https://www.agenzialavoro.tn.it/content/download/3041/52022/file/assunzioni_di_stranieri_per_tipologia_MR.csv
+      XLS | Assunzioni di stranieri per provenienza e sesso in provincia | https://www.agenzialavoro.tn.it/content/download/3043/52117/file/assunzioni%20straniere%20per%20provenienza%202014-2015.xls
+      CSV | Assunzioni di stranieri per provenienza e sesso in provincia | https://www.agenzialavoro.tn.it/content/download/3043/52124/file/assunzioni_straniere_per_provenienza_2014-2015_MR.csv
+== tn 'alunni': 7
+  occupazione-lavoratori-stranieri-anno-2021 | Occupazione lavoratori stranieri anno 2021 | 2023-05-18
+      XLSX | Acquisizioni di cittadinanza italiana da parte di stranieri  | https://www.agenzialavoro.tn.it/content/download/10673/174191/file/Acquisizioni%20cittadinanza%20per%20sesso%20TN%202011-2020.xlsx
+      CSV | Acquisizioni di cittadinanza italiana da parte di stranieri  | https://www.agenzialavoro.tn.it/content/download/10673/174198/file/acquisizioni_cittadinanza_per_sesso_tn_2011-2020_MR.csv
+      XLSX | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/10672/174140/file/Alunni%20stranieri%20per%20scuola%20area%20TN%202020.xlsx
+      CSV | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/10672/174147/file/alunni_stranieri_per_scuola_area_tn_2020_MR.csv
+      XLSX | Assunzioni di stranieri per contratto in provincia di Trento | https://www.agenzialavoro.tn.it/content/download/10677/174356/file/Assunzioni%20stranieri%20per%20contratto%20TN%202021.xlsx
+      CSV | Assunzioni di stranieri per contratto in provincia di Trento | https://www.agenzialavoro.tn.it/content/download/10677/174363/file/assunzioni_stranieri_per_contratto_tn_2021_MR.csv
+  occupazione-lavoratori-stranieri-anno-2020 | Occupazione lavoratori stranieri anno 2020 | 2022-02-07
+      XLS | Acquisizioni di cittadinanza italiana da parte di stranieri  | https://www.agenzialavoro.tn.it/content/download/9463/152495/file/Acquisizioni%20cittadinanza%20per%20sesso%20TN%202010-2019.xls
+      CSV | Acquisizioni di cittadinanza italiana da parte di stranieri  | https://www.agenzialavoro.tn.it/content/download/9463/152502/file/acquisizioni_cittadinanza_per_sesso_tn_2010-2019_MR.csv
+      XLS | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/9464/152546/file/Alunni%20stranieri%20per%20scuola%20area%20TN%202019.xls
+      CSV | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/9464/152553/file/alunni_stranieri_per_scuola_area_tn_2019_MR.csv
+      XLS | Assunzioni di stranieri per provenienza e sesso in provincia | https://www.agenzialavoro.tn.it/content/download/9465/152597/file/Assunzioni%20stranieri%20per%20provenienza%20sesso%20TN%202019-2020.xls
+      CSV | Assunzioni di stranieri per provenienza e sesso in provincia | https://www.agenzialavoro.tn.it/content/download/9465/152604/file/assunzioni_stranieri_per_provenienza_sesso_tn_2019-2020_MR.csv
+  occupazione-lavoratori-stranieri-anno-2019 | Occupazione lavoratori stranieri anno 2019 | 2021-12-29
+      XLS | Acquisizioni di cittadinanza italiana da parte di stranieri  | https://www.agenzialavoro.tn.it/content/download/7333/119178/file/Acquisizioni%20cittadinanza%20per%20sesso%20TN%202005-2018.xls
+      CSV | Acquisizioni di cittadinanza italiana da parte di stranieri  | https://www.agenzialavoro.tn.it/content/download/7333/119185/file/acquisizioni_cittadinanza_per_sesso_tn_2005-2018_MR.csv
+      XLS | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/7334/119229/file/Alunni%20stranieri%20per%20scuola%20area%20TN%202018.xls
+      CSV | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/7334/119236/file/alunni_stranieri_per_scuola_area_tn_2018_MR.csv
+      XLS | Assunzioni di stranieri per provenienza e sesso in provincia | https://www.agenzialavoro.tn.it/content/download/7335/119280/file/Assunzioni%20stranieri%20per%20provenienza%20sesso%20TN%202018-2019.xls
+      CSV | Assunzioni di stranieri per provenienza e sesso in provincia | https://www.agenzialavoro.tn.it/content/download/7335/119287/file/assunzioni_stranieri_per_provenienza_sesso_tn_2018-2019_MR.csv
+  occupazione-lavoratori-stranieri-anno-2016 | Occupazione lavoratori stranieri anno 2016 | 2020-06-05
+      CSV | Acquisizioni di cittadinanza italiana da parte di stranieri  | https://www.agenzialavoro.tn.it/content/download/2748/38568/file/acquisizioni_di_cittadinanza_1994-2015_MR.csv
+      XLS | Acquisizioni di cittadinanza italiana da parte di stranieri  | https://www.agenzialavoro.tn.it/content/download/2748/38561/file/acquisizioni%20di%20cittadinanza%201994-2015.xls
+      CSV | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/2749/38619/file/alunni_stranieri_per_livello_e_area_provenienza_MR.csv
+      XLS | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/2749/38612/file/alunni%20stranieri%20per%20livello%20e%20area%20provenienza.xls
+      CSV | Assunzioni di stranieri in provincia di Trento (2015-2016) - | https://www.agenzialavoro.tn.it/content/download/2752/38772/file/assunzioni%20straniere%20per%20tipologie.xls
+      XLS | Assunzioni di stranieri in provincia di Trento (2015-2016) - | https://www.agenzialavoro.tn.it/content/download/2752/38765/file/assunzioni%20straniere%20per%20tipologie.xls
+  occupazione-lavoratori-stranieri-anno-2018 | Occupazione lavoratori stranieri anno 2018 | 2020-04-27
+      XLS | Popolazione 15 anni e oltre per nazionalità, condizione e se | https://www.agenzialavoro.tn.it/content/download/6159/97940/file/Popolazione%2015+%20per%20nazionalit%C3%A0%20condizione%20sesso%20TN%202018.xls
+      CSV | Popolazione 15 anni e oltre per nazionalità, condizione e se | https://www.agenzialavoro.tn.it/content/download/6159/97947/file/popolazione_15+_per_nazionalit%C3%A0_condizione_sesso_tn_2018_MR.csv
+      XLS | Popolazione 15-64 anni per nazionalità, condizione e sesso i | https://www.agenzialavoro.tn.it/content/download/6158/97889/file/Popolazione%2015-64%20per%20nazionalit%C3%A0%20condizione%20sesso%20TN%202018.xls
+      CSV | Popolazione 15-64 anni per nazionalità, condizione e sesso i | https://www.agenzialavoro.tn.it/content/download/6158/97896/file/popolazione_15-64_per_nazionalit%C3%A0_condizione_sesso_tn_2018_MR.csv
+      XLS | Tassi di attività, di occupazione e disoccupazione per nazio | https://www.agenzialavoro.tn.it/content/download/6162/98093/file/Tassi%20per%20nazionalit%C3%A0%20sesso%20TN%202018.xls
+      CSV | Tassi di attività, di occupazione e disoccupazione per nazio | https://www.agenzialavoro.tn.it/content/download/6162/98100/file/tassi_per_nazionalit%C3%A0_sesso_TN_2018_MR.csv
+  occupazione-lavoratori-stranieri-anno-2015 | Occupazione lavoratori stranieri anno 2015 | 2020-03-19
+      XLS | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/3039/51913/file/alunni%20stranieri%20per%20livello%20scolastico%20e%20area%20di%20provenienza.xls
+      CSV | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/3039/51920/file/alunni_stranieri_per_livello_scolastico_e_area_di_provenienza_MR.csv
+      XLS | Assunzioni di stranieri in provincia di Trento (2014-2015) - | https://www.agenzialavoro.tn.it/content/download/3041/52015/file/assunzioni%20di%20stranieri%20per%20tipologia.xls
+      CSV | Assunzioni di stranieri in provincia di Trento (2014-2015) - | https://www.agenzialavoro.tn.it/content/download/3041/52022/file/assunzioni_di_stranieri_per_tipologia_MR.csv
+      XLS | Assunzioni di stranieri per provenienza e sesso in provincia | https://www.agenzialavoro.tn.it/content/download/3043/52117/file/assunzioni%20straniere%20per%20provenienza%202014-2015.xls
+      CSV | Assunzioni di stranieri per provenienza e sesso in provincia | https://www.agenzialavoro.tn.it/content/download/3043/52124/file/assunzioni_straniere_per_provenienza_2014-2015_MR.csv
+  occupazione-lavoratori-stranieri-anno-2017 | Occupazione lavoratori stranieri anno 2017 | 2020-03-19
+      XLS | Acquisizioni di cittadinanza italiana da parte di stranieri  | https://www.agenzialavoro.tn.it/content/download/5663/87441/file/acquisizioni%20di%20nazionalit%C3%A0%20italiana%20-%201995-2016.xls
+      CSV | Acquisizioni di cittadinanza italiana da parte di stranieri  | https://www.agenzialavoro.tn.it/content/download/5663/87448/file/acquisizioni_di_nazionalit%C3%A0_italiana_1995-2016_ST_MR.csv
+      XLS | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/5664/87492/file/alunni%20stranieri%20per%20livello%20e%20area%20di%20provenienza.xls
+      CSV | Alunni stranieri iscritti nelle scuole della provincia di Tr | https://www.agenzialavoro.tn.it/content/download/5664/87499/file/alunni_stranieri_per_livello_e_area_di_provenienza_MR.csv
+      XLS | Assunzioni di stranieri in provincia di Trento (2016-2017) - | https://www.agenzialavoro.tn.it/content/download/5666/87594/file/assunzioni%20straniere%20per%20tipologia.xls
+      CSV | Assunzioni di stranieri in provincia di Trento (2016-2017) - | https://www.agenzialavoro.tn.it/content/download/5666/87601/file/assunzioni_straniere_per_tipologia_MR.csv
+== tn 'istituzioni scolastiche': 1
+  istituzioni-scolastiche-trentino | Istituzioni scolastiche del Trentino | 2020-05-26
+      CSV | Descrizione campi - Elementi | https://dati.trentino.it/dataset/18034fef-88e5-4d4d-906d-5fdc381303cc/resource/010831d1-e9d3-4a79-9ef9-cb83510d2373/download/istituzioniscolasticheelementi.csv
+      CSV | Descrizione campi - Attributi | https://dati.trentino.it/dataset/18034fef-88e5-4d4d-906d-5fdc381303cc/resource/4ac33b12-8464-48a6-beae-1215007a2cb3/download/istituzioniscolasticheattributi.csv
+      XML | Istituzioni scolastiche | https://dati.trentino.it/dataset/18034fef-88e5-4d4d-906d-5fdc381303cc/resource/1a04a591-14d7-49c9-a011-d54bc427fa0f/download/exportesco10092014.xml
+ERR vda alunni <urlopen error [Errno -2] Name or service not known>
+ERR vda scuole studenti <urlopen error [Errno -2] Name or service not known>
+ERR vda iscritti <urlopen error [Errno -2] Name or service not known>
