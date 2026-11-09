@@ -116,8 +116,44 @@
       breaks: [100, 500, 2000, 10000, 50000],
       colors: ["#edf8e9", "#c7e9c0", "#a1d99b", "#74c476", "#31a354", "#006d2c"],
       labels: ["Under 100", "100–499", "500–1,999", "2,000–9,999", "10,000–49,999", "50,000 or more"]
+    },
+    // People per km²; the 100, 500 and 2,000 breaks are the estimated locales' (rural, mixed, suburban, urban).
+    density: {
+      column: "People per km² (estimated)",
+      breaks: [10, 50, 100, 500, 2000, 5000],
+      colors: ["#ffffd4", "#fee391", "#fec44f", "#fe9929", "#ec7014", "#cc4c02", "#8c2d04"],
+      labels: ["Under 10 people per km²", "10–49", "50–99", "100–499", "500–1,999", "2,000–4,999", "5,000 or more"]
     }
   };
+  // Area of a border in km² (spherical polygons), for places whose data has a population but no density (US districts).
+  const R_KM = 6371.0088, rad = (d) => d * Math.PI / 180;
+  function ringArea(ring) {
+    let a = 0;
+    for (let i = 0; i < ring.length; i++) {
+      const [x1, y1] = ring[i], [x2, y2] = ring[(i + 1) % ring.length];
+      a += rad(x2 - x1) * (2 + Math.sin(rad(y1)) + Math.sin(rad(y2)));
+    }
+    return Math.abs(a * R_KM * R_KM / 2);
+  }
+  function geomArea(g) {
+    if (!g) return 0;
+    const polys = g.type === "Polygon" ? [g.coordinates] : g.type === "MultiPolygon" ? g.coordinates : [];
+    return polys.reduce((s, p) => s + ringArea(p[0]) - p.slice(1).reduce((h, r) => h + ringArea(r), 0), 0);
+  }
+  let areaById = null;
+  function densityFor(row, id) {
+    if (!row) return NaN;
+    const d = toNumber(row["People per km² (estimated)"]);
+    if (!isNaN(d)) return d;
+    const pop = toNumber(row.Population);
+    if (!(pop > 0)) return NaN;
+    if (!areaById) {
+      areaById = {};
+      Object.values(layers).forEach((l) => l.eachLayer((f) => { if (f.feature) { const k = gid(f.feature); areaById[k] = (areaById[k] || 0) + geomArea(f.feature.geometry); } }));
+    }
+    const a = areaById[id];
+    return a > 0 ? pop / a : NaN;
+  }
   const NO_DATA = "#9e9e9e";
   // Color by locale: one color per kind of place, from city to countryside. Canada's own groups (large, medium and
   // small urban centres) share the colors of the closest US kinds. In "All", Canadian and European locales carry a
@@ -239,7 +275,8 @@
     // Where CivicSearch has none, the meetings map uses counts from the district's own sources.
     if (metric === "meetings" && row && !(v > 0) && toNumber(row["Other Board Meetings"]) > 0) v = toNumber(row["Other Board Meetings"]);
     if (metric === "meetings" && isNaN(v)) v = 0;   // no meetings found counts as 0
-    if (metric === "enrollment" && !(v > 0)) return NO_DATA;   // no figure (0 is only ever "none reported")
+    if (metric === "enrollment" && !(v > 0)) return NO_DATA;
+    if (metric === "density") v = densityFor(row, id);   // no figure (0 is only ever "none reported")
     if (isNaN(v)) return NO_DATA;
     const s2 = metric === "poverty" && OWN_SCALE[euOf(id)] ? SCALES[OWN_SCALE[euOf(id)]] : sc;
     const i = s2.breaks.findIndex((b) => v < b);
@@ -332,6 +369,7 @@
       (r["Latest meeting"] ? `<br>Latest recorded meeting: ${esc(r["Latest meeting"])}` : "") +
       (r.Locale ? `<br>Locale${/^(UK|IE)-/.test(r["District ID"]) || eu ? " (estimated)" : ""}: ${esc(r.Locale)}`
         : localeFallback(r, gid(feature)) ? `<br>Locale (estimated from its area's other places): ${esc(localeFallback(r, gid(feature)))}` : "") +
+      (!isNaN(densityFor(r, gid(feature))) ? `<br>People per km²${r["People per km² (estimated)"] ? " (estimated)" : " (from its population and border)"}: ${Math.round(densityFor(r, gid(feature))).toLocaleString()}` : "") +
       (note ? `<div class="tip-note">${esc(note)}</div>` : "") + "</div>";
   }
 
@@ -414,6 +452,9 @@
     if (window.SiteFilters && window.SiteFilters.active()) faded.push("that don't match the filters");
     if ((euv === "ES" || (current && current.combined)) && $("map-metric").value === "rank")
       items.push(`<span class="map-faded">Spain: small municipalities with no child figure are ranked by their province's estimate</span>`);
+    if ($("map-metric").value === "density")
+      items.push(`<span><i style="background:${NO_DATA}"></i>No population figure</span>`,
+        `<span class="map-faded">People per km²: each place's population over its land area (for US districts, the Census's 2024 population over the district's border); places under 100 are estimated rural, 100–499 mixed, 500–1,999 suburban and 2,000 or more urban</span>`);
     if ($("map-metric").value === "enrollment")
       items.push(`<span><i style="background:${NO_DATA}"></i>No enrollment figure</span>`,
         `<span class="map-faded">Enrollment is counted differently from country to country (pupils at the place's schools, or pupils living there; some count only primary schools): see each view's note</span>`);
@@ -787,6 +828,7 @@
         if (metric === "meetings") { const v = toNumber(r["Available Board Meetings"]); want = [isNaN(v) ? "0" : v.toLocaleString()]; }
         if (metric === "locale") { const v = r.Locale || localeFallback(r, id); if (v) want = [v]; }
         if (metric === "enrollment") { const v = toNumber(r.Enrollment); if (v > 0) want = [v.toLocaleString()]; }
+        if (metric === "density") { const v = densityFor(r, id); if (!isNaN(v)) want = [Math.round(v).toLocaleString()]; }
         if (want && !want.some((w) => text.includes(w))) out.push({ layer: n, id, name: r.District || "", want: want[0], text: text.replace(/\s+/g, " ").slice(0, 260) });
       }));
       return out;
