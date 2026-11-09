@@ -355,6 +355,17 @@ window.SOURCES = [
     note: "Built by data-prep/prep_belgium.py and data-prep/build_latam.py. Municipalities are matched by their REFNIS code; the 2025 mergers are in data-prep/inputs/belgium/be_mergers_2025.json."
   },
   {
+    only: "Australia",
+    group: "Australia: council areas, income support and the census",
+    items: [
+      { title: "Income support (stand-in): Department of Social Services, DSS Benefit and Payment Recipient Demographics, June 2026, by local government area (data.gov.au)", url: "https://data.gov.au/data/dataset/dss-payment-demographic-data" },
+      { title: "Population, age, median family income and school attendance: Australian Bureau of Statistics, 2021 Census General Community Profile DataPack, local government areas (tables G01, G02, G04 and G15)", url: "https://www.abs.gov.au/census/find-census-data/datapacks" },
+      { title: "Borders: Australian Bureau of Statistics, ASGS Edition 3 local government areas 2021, simplified with mapshaper", url: "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files" },
+      { title: "Meetings (stand-in): each council's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_australia.py and data-prep/build_latam.py. Council areas are matched by their 2021 LGA code (Merri-bek by its old code, as Moreland)."
+  },
+  {
     only: "Croatia",
     group: "Croatia: cities and municipalities, poverty map",
     items: [
