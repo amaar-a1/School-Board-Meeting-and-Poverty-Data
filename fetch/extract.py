@@ -1,6 +1,19 @@
-# Temporary: HDX COD population statistics for the Philippines, all admin levels, 2022-2025 (one workbook).
-import os, urllib.request
-OUT = "fetch/out/ph9"; os.makedirs(OUT, exist_ok=True)
+# Temporary: find school enrollment files for Peru (MINEDU censo educativo / padrón) and the Philippines (DepEd).
+import json, os, urllib.parse, urllib.request
+OUT = "fetch/out/enr1"; os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
-u = "https://data.humdata.org/dataset/5a466c38-32a2-47de-ba36-70530505df98/resource/ee2a8606-6328-42e6-8ecb-2d14c04bceb6/download/phl_admpop_2022_2023_2024_2025_v2.xlsx"
-with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=600) as r: open(f"{OUT}/phl_admpop.xlsx", "wb").write(r.read())
+log = open(f"{OUT}/log.txt", "w")
+def get(u, t=120):
+    with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=t) as r: return r.read()
+q = {"pe_datosabiertos.json": "https://www.datosabiertos.gob.pe/api/3/action/package_search?q=matricula%20minedu&rows=40",
+     "pe_datosabiertos2.json": "https://www.datosabiertos.gob.pe/api/3/action/package_search?q=censo%20educativo&rows=40",
+     "pe_escale.html": "https://escale.minedu.gob.pe/padron-de-iiee",
+     "pe_escale_datos.html": "https://escale.minedu.gob.pe/uee/-/document_library_display/GMv7/view/958881",
+     "ph_hdx.json": "https://data.humdata.org/api/3/action/package_search?q=philippines%20school%20enrollment&rows=30",
+     "ph_hdx2.json": "https://data.humdata.org/api/3/action/package_search?q=deped%20schools%20masterlist&rows=30",
+     "ph_datagov.json": "https://data.gov.ph/api/3/action/package_search?q=enrollment&rows=40",
+     "ph_deped.html": "https://www.deped.gov.ph/alternative-learning-system/resources/downloads/datasets/"}
+for name, u in q.items():
+    try: b = get(u); open(f"{OUT}/{name}", "wb").write(b); log.write(f"ok {name} {len(b)}\n")
+    except Exception as e: log.write(f"ERR {name} {str(e)[:150]}\n")
+log.close()
