@@ -471,7 +471,8 @@
       `Children (0–17) in low income: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}${r.pseudo && !r.own ? " (province-wide rate)" : ""}<br>` +
       (isNaN(pov) && r["Low-income rate of the surrounding area (children 0-17)"] ? `Surrounding area's rate (stand-in; none is published for reserves): ${esc(r["Low-income rate of the surrounding area (children 0-17)"])}<br>` : "") +
       `Board meetings found: ${isNaN(meet) ? 0 : meet.toLocaleString()}` +
-      (toNumber(r.Enrollment) > 0 ? `<br>Enrollment: ${toNumber(r.Enrollment).toLocaleString()} (${esc(r["Enrollment year"])}${r["Enrollment note"] ? `; ${esc(r["Enrollment note"])}` : ""})` : "") +
+      (toNumber(r.Enrollment) > 0 ? `<br>Enrollment: ${toNumber(r.Enrollment).toLocaleString()}${r["Enrollment estimated"] ? " (estimated: school-age children, no count published)" : ` (${esc(r["Enrollment year"])}${r["Enrollment note"] ? `; ${esc(r["Enrollment note"])}` : ""})`}` : "") +
+      (!isNaN(densityFor(r, r["District ID"])) ? `<br>People per km² (2021 Census, ${/First Nation \(band/.test(r["Board type"] || "") ? "the reserve" : /Province-wide/.test(r.Locale || "") ? "the whole province or territory" : "inside its border"}): ${densityFor(r, r["District ID"]) < 10 ? densityFor(r, r["District ID"]).toFixed(1) : Math.round(densityFor(r, r["District ID"])).toLocaleString()}` : "") +
       peerLine(r, r["District ID"]) +
       (r["Latest meeting"] ? `<br>Latest recorded meeting: ${esc(r["Latest meeting"])}${isNaN(monthsSince(r)) ? "" : ` (${agoText(monthsSince(r))})`}` : "") +
       (r.Locale ? `<br>Locale (estimated): ${esc(r.Locale)}${/whole province or territory/.test(r["How poverty was calculated"] || "") ? " (serves the whole province or territory: the locale where most of the province's children live)" : ""}` : "") + rankLine(r, r["District ID"]) +
@@ -929,7 +930,7 @@
         if (metric === "meetings") { const v = toNumber(r["Available Board Meetings"]); want = [isNaN(v) ? "0" : v.toLocaleString()]; }
         if (metric === "locale") { const v = r.Locale || localeFallback(r, id); if (v) want = [v]; }
         if (metric === "enrollment") { const v = toNumber(r.Enrollment); if (v > 0) want = [v.toLocaleString()]; }
-        if (metric === "density") { const v = densityFor(r, id); if (!isNaN(v)) want = [Math.round(v).toLocaleString()]; }
+        if (metric === "density") { const v = densityFor(r, id); if (!isNaN(v)) want = [Math.round(v).toLocaleString(), v.toFixed(1)]; }
         if (metric === "peers") { const p = peerInfo(r, id); if (p) want = [`more than ${p.pct}%`]; }
         if (metric === "recency") { const v = monthsSince(r); if (!isNaN(v)) want = [agoText(v)]; }
         if (metric === "public") { const v = publicShare(r); if (!isNaN(v)) want = [`${Math.round(v)}% of pupils`]; }
