@@ -36,6 +36,7 @@ jobs:
           fi
           python3 data-prep/build_national.py data-prep/inputs/ussd24.csv data-prep/inputs/nces_directory_2023.json \
             /tmp/civic.json docs/data/national.csv data-prep/civicsearch_matches.csv
+          python3 data-prep/estimate_enrollment.py national.csv   # districts with no enrollment: school-age children, marked as estimates
 
       - name: Commit updated CSV
         run: |
