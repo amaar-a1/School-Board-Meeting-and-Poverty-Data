@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Verification — Check Point</title>
+    <style>
+    :root {
+        --cp-magenta: #EE0C5D;
+        --cp-dark: #231F20;
+        --cp-magenta-hover: #D40A53;
+
+        --surface-primary: #ffffff;
+        --surface-secondary: #fafafa;
+        --neutral-200: #e5e7eb;
+        --neutral-300: #d1d5db;
+        --neutral-500: #6b7280;
+        --neutral-600: #4b5563;
+        --neutral-800: #1f2937;
+        --neutral-900: #111827;
+
+        --success-base: #4caf50;
+        --success-light: #e8f5e9;
+
+        --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+        --radius-md: 6px;
+        --radius-lg: 8px;
+        --shadow-1: 0 1px 3px rgba(0,0,0,0.1);
+        --shadow-2: 0 4px 6px rgba(0,0,0,0.1);
+        --transition-normal: 250ms ease;
+    }
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: var(--font-family-base);
+        background: var(--surface-secondary);
+        color: var(--neutral-800);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-wrapper {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 32px 16px;
+        min-height: 100vh;
+    }
+
+    .verification-card {
+        background: var(--surface-primary);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-2);
+        max-width: 480px;
+        width: 100%;
+        padding: 48px 40px 40px;
+    }
+
+    .logo-row {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 32px;
+    }
+
+    .logo-row svg {
+        flex-shrink: 0;
+    }
+
+    .site-domain {
+        font-size: 26px;
+        font-weight: 700;
+        color: var(--neutral-900);
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+    }
+
+    .card-heading {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--neutral-900);
+        margin-bottom: 12px;
+    }
+
+    .card-description {
+        font-size: 15px;
+        color: var(--neutral-600);
+        line-height: 1.6;
+        margin-bottom: 32px;
+    }
+
+    .captcha-widget {
+        background: var(--surface-secondary);
+        border: 1px solid var(--neutral-200);
+        border-radius: var(--radius-md);
+        padding: 16px 20px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 12px;
+        transition: border-color var(--transition-normal), box-shadow var(--transition-normal);
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .captcha-widget:hover {
+        border-color: var(--neutral-300);
+        box-shadow: var(--shadow-1);
+    }
+
+    .captcha-widget.verifying .captcha-checkbox {
+        border-color: var(--cp-magenta);
+        animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    .captcha-widget.verified {
+        border-color: var(--success-base);
+        background: var(--success-light);
+    }
+
+    .captcha-widget.verified .captcha-checkbox {
+        border-color: var(--success-base);
+        background: var(--success-base);
+    }
+
+    .captcha-checkbox {
+        width: 28px;
+        height: 28px;
+        border: 2px solid var(--neutral-300);
+        border-radius: 4px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all var(--transition-normal);
+        background: var(--surface-primary);
+    }
+
+    .captcha-checkbox svg {
+        opacity: 0;
+        transition: opacity var(--transition-normal);
+    }
+
+    .captcha-widget.verified .captcha-checkbox svg {
+        opacity: 1;
+    }
+
+    .captcha-label {
+        flex: 1;
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--neutral-800);
+    }
+
+    .captcha-label .status-text {
+        display: block;
+        font-size: 13px;
+        font-weight: 400;
+        color: var(--neutral-500);
+        margin-top: 2px;
+    }
+
+    .captcha-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 4px;
+    }
+
+    .captcha-brand .brand-logo {
+        height: 20px;
+        opacity: 0.7;
+    }
+
+    .captcha-brand .brand-links {
+        font-size: 10px;
+        color: var(--neutral-500);
+    }
+
+    .captcha-brand .brand-links a {
+        color: var(--neutral-500);
+        text-decoration: none;
+    }
+
+    .captcha-brand .brand-links a:hover {
+        text-decoration: underline;
+    }
+
+    .page-footer {
+        text-align: center;
+        padding: 24px 16px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .page-footer .footer-line {
+        font-size: 12px;
+        color: var(--neutral-500);
+        line-height: 1.8;
+    }
+
+    .page-footer a {
+        color: var(--cp-magenta);
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .page-footer a:hover {
+        text-decoration: underline;
+    }
+
+    .spinner {
+        width: 20px;
+        height: 20px;
+        display: none;
+    }
+
+    .captcha-widget.verifying .spinner {
+        display: block;
+    }
+
+    .captcha-widget.verifying .captcha-checkbox {
+        display: none;
+    }
+
+    @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+    }
+
+    @keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+
+    .spinner circle {
+        animation: spin 0.8s linear infinite;
+        transform-origin: center;
+    }
+
+    @media (max-width: 520px) {
+        .verification-card {
+        padding: 32px 24px 28px;
+        }
+
+        .site-domain {
+        font-size: 22px;
+        }
+
+        .card-heading {
+        font-size: 18px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="verification-card">
+            <div class="logo-row">
+                <svg width="48" height="48" viewBox="60 25 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Check Point logo">
+                    <path d="M146.457 47.0242C142.194 52.3285 134.438 53.1619 129.15 48.8991C123.845 44.6364 123.012 36.8961 127.275 31.5918C131.537 26.3034 139.278 25.454 144.582 29.7168C149.886 33.9635 150.72 41.7198 146.457 47.0242Z" fill="#231F20"/>
+                    <path d="M129.839 66.2546C126.425 67.825 122.339 67.793 118.845 65.8058L109.166 78.6582C110.368 80.0684 111.041 81.8312 111.121 83.642C111.185 85.2446 110.768 86.8952 109.839 88.3535C107.419 92.1034 102.387 93.1931 98.6373 90.7573C98.2367 90.5009 97.8841 90.2124 97.5476 89.8919C97.4354 89.7958 97.3393 89.6996 97.2431 89.5874C97.0187 89.3471 96.8104 89.1067 96.6181 88.8503C96.538 88.7381 96.4418 88.6259 96.3617 88.5137C96.1213 88.1612 95.913 87.8086 95.7367 87.424C95.6886 87.3279 95.6566 87.2317 95.6085 87.1195C95.4803 86.8151 95.3681 86.4946 95.272 86.174C95.2399 86.0619 95.2079 85.9337 95.1758 85.8215C95.0797 85.4209 95.0156 85.0202 94.9835 84.6196C94.9835 84.5074 94.9835 84.3952 94.9835 84.2831C94.9675 83.9145 94.9835 83.5459 94.9995 83.1773C94.9995 83.0972 94.9995 83.0171 95.0156 82.953C95.0637 82.5203 95.1598 82.1036 95.272 81.687C95.304 81.5908 95.3361 81.4947 95.3681 81.3825C95.5124 80.9498 95.6726 80.5331 95.897 80.1165L88.0926 74.2512L85.6728 77.4723L76.7467 70.7577L83.4613 61.8316L92.3874 68.5462L89.9676 71.7673L97.8521 77.6966C100.304 75.6454 103.83 75.1967 106.762 76.7031L116.409 63.8988C112.563 60.1329 111.586 54.1074 114.422 49.2356C114.983 48.2741 115.656 47.4408 116.409 46.6876C111.169 43.114 104.823 40.9986 97.9963 40.9826C79.8075 40.9666 65.0482 55.6458 65.0001 73.7865C64.952 91.9432 79.6313 106.686 97.788 106.735C115.945 106.783 130.688 92.1034 130.736 73.9467C130.736 71.2865 130.432 68.7064 129.839 66.2385V66.2546Z" fill="#EE0C5D"/>
+                </svg>
+                <span class="site-domain">escale.minedu.gob.pe</span>
+            </div>
+
+            <h1 class="card-heading">Realizando verificación de seguridad</h1>
+            <p class="card-description">Este sitio está protegido. <br> Esta página se muestra mientras el servicio verifica que usted no es un robot.</p>
+
+            <div class="captcha-widget" id="captchaWidget" role="checkbox" aria-checked="false" tabindex="0">
+                <div class="captcha-checkbox">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M3 8.5L6.5 12L13 4" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <svg class="spinner" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="10" stroke="var(--cp-magenta)" stroke-width="3" stroke-dasharray="31.4 31.4" stroke-linecap="round"/>
+                </svg>
+                <div class="captcha-label">
+                    <span id="captchaText">Verify you are human</span>
+                    <span class="status-text" id="captchaStatus"></span>
+                </div>
+                <div class="captcha-brand">
+                    <svg class="brand-logo" height="18" viewBox="60 25 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Check Point">
+                        <path d="M146.457 47.0242C142.194 52.3285 134.438 53.1619 129.15 48.8991C123.845 44.6364 123.012 36.8961 127.275 31.5918C131.537 26.3034 139.278 25.454 144.582 29.7168C149.886 33.9635 150.72 41.7198 146.457 47.0242Z" fill="#231F20"/>
+                        <path d="M129.839 66.2546C126.425 67.825 122.339 67.793 118.845 65.8058L109.166 78.6582C110.368 80.0684 111.041 81.8312 111.121 83.642C111.185 85.2446 110.768 86.8952 109.839 88.3535C107.419 92.1034 102.387 93.1931 98.6373 90.7573C98.2367 90.5009 97.8841 90.2124 97.5476 89.8919C97.4354 89.7958 97.3393 89.6996 97.2431 89.5874C97.0187 89.3471 96.8104 89.1067 96.6181 88.8503C96.538 88.7381 96.4418 88.6259 96.3617 88.5137C96.1213 88.1612 95.913 87.8086 95.7367 87.424C95.6886 87.3279 95.6566 87.2317 95.6085 87.1195C95.4803 86.8151 95.3681 86.4946 95.272 86.174C95.2399 86.0619 95.2079 85.9337 95.1758 85.8215C95.0797 85.4209 95.0156 85.0202 94.9835 84.6196C94.9835 84.5074 94.9835 84.3952 94.9835 84.2831C94.9675 83.9145 94.9835 83.5459 94.9995 83.1773C94.9995 83.0972 94.9995 83.0171 95.0156 82.953C95.0637 82.5203 95.1598 82.1036 95.272 81.687C95.304 81.5908 95.3361 81.4947 95.3681 81.3825C95.5124 80.9498 95.6726 80.5331 95.897 80.1165L88.0926 74.2512L85.6728 77.4723L76.7467 70.7577L83.4613 61.8316L92.3874 68.5462L89.9676 71.7673L97.8521 77.6966C100.304 75.6454 103.83 75.1967 106.762 76.7031L116.409 63.8988C112.563 60.1329 111.586 54.1074 114.422 49.2356C114.983 48.2741 115.656 47.4408 116.409 46.6876C111.169 43.114 104.823 40.9986 97.9963 40.9826C79.8075 40.9666 65.0482 55.6458 65.0001 73.7865C64.952 91.9432 79.6313 106.686 97.788 106.735C115.945 106.783 130.688 92.1034 130.736 73.9467C130.736 71.2865 130.432 68.7064 129.839 66.2385V66.2546Z" fill="#EE0C5D"/>
+                    </svg>
+                    <span class="brand-links">
+                        <a href="https://www.checkpoint.com/support/privacy/">Privacy</a> · <a href="https://www.checkpoint.com/privacy/terms/">Terms</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <p class="footer-line">Performance and Security by <a href="https://www.checkpoint.com/cloudguard/">Check Point CloudGuard</a></p>
+    </footer>
+
+        <script>
+        const challengeData = {
+    "difficulty": 4,
+    "base64_encoded_original_uri": "L3VlZS8tL2RvY3VtZW50X2xpYnJhcnlfZGlzcGxheS9HTXY3L3ZpZXcvOTU4ODgx",
+    "base64_encoded_challenge_sig_data": "",
+    "challenge_signature": "3a4521f89b6d9ab0c475cfbe5e07dab54983c2f11a8a352fb7d5ef235de14f26eadbad2cff7085fa6cbb8a042ca25c6792ee69d207185e37ec2dc16b9f05c24b",
+    "issue_timestamp": 1794185821,
+    "expiry_timestamp": 1794185941,
+    "challenge_string": "7338aa519e5ae643010901f1d9bfff3b4722a2ede5860d1ba4dfed7eaac74ba1"
+};
+        const seed = challengeData.challenge_string;
+        const difficulty = challengeData.difficulty;
+        let computing = false;
+
+        async function sha256(message) {
+            const msgBuffer = new TextEncoder().encode(message);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+            return hashHex;
+        }
+
+        async function solveChallenge(seed, difficulty) {
+            const prefix = '0'.repeat(difficulty);
+            const p = Math.pow(16, -difficulty);
+            const successProb = 0.99;
+            const maxAttempts = Math.ceil(
+                Math.log(1 - successProb) / Math.log(1 - p)
+            );
+
+            for (let nonce = 0; nonce < maxAttempts; nonce++) {
+                const h = await sha256(seed + ':' + nonce);
+                if (h.startsWith(prefix)) return { nonce, hash: h };
+
+                if (nonce % 1000 === 0) await new Promise(resolve => setTimeout(resolve, 0));
+            }
+        }
+
+        async function startChallenge() {
+            if (computing) return;
+            computing = true;
+
+            const widget = document.getElementById('captchaWidget');
+            const text = document.getElementById('captchaText');
+            const status = document.getElementById('captchaStatus');
+
+            widget.classList.add('verifying');
+            text.textContent = 'Verifying...';
+            status.textContent = '';
+
+            const result = await solveChallenge(seed, difficulty);
+
+            const userAgent = navigator.userAgent;
+            const userAgentHash = await sha256(userAgent);
+
+            widget.classList.remove('verifying');
+            widget.classList.add('verified');
+            widget.setAttribute('aria-checked', 'true');
+            text.textContent = 'Verification complete';
+            status.textContent = 'You are not a bot. Redirecting...';
+
+            setTimeout(() => {
+                const solutionData = {
+                    challenge: challengeData,
+                    nonce: result.nonce,
+                    user_agent_hash: userAgentHash
+                };
+                const form = document.createElement('form');
+                form.method = 'POST';
+                form.action = '/cp-solve-challenge';
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'solution';
+                input.value = JSON.stringify(solutionData);
+                form.appendChild(input);
+                document.body.appendChild(form);
+                form.submit();
+            }, 1000);
+        }
+
+        // Attach event handlers
+        const widget = document.getElementById('captchaWidget');
+        widget.addEventListener('click', startChallenge);
+        widget.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                startChallenge();
+            }
+        });
+        </script>
+
+</body>
+</html>
