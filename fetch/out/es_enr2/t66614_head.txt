@@ -1,0 +1,300 @@
+Islas	Municipios	Sexo	Nacionalidad	Nivel de estudios en curso	Periodo	Total
+Formentera		Total	Total	Total	2024	10.117
+Formentera		Total	Total	Total	2023	9.992
+Formentera		Total	Total	Total	2022	10.212
+Formentera		Total	Total	Total	2021	10.410
+Formentera		Total	Total	Educación primaria e inferior	2024	16
+Formentera		Total	Total	Educación primaria e inferior	2023	8
+Formentera		Total	Total	Educación primaria e inferior	2022	14
+Formentera		Total	Total	Educación primaria e inferior	2021	15
+Formentera		Total	Total	Primera etapa de Educación Secundaria y similar	2024	32
+Formentera		Total	Total	Primera etapa de Educación Secundaria y similar	2023	22
+Formentera		Total	Total	Primera etapa de Educación Secundaria y similar	2022	26
+Formentera		Total	Total	Primera etapa de Educación Secundaria y similar	2021	44
+Formentera		Total	Total	Segunda etapa de educación secundaria, con orientación general	2024	181
+Formentera		Total	Total	Segunda etapa de educación secundaria, con orientación general	2023	180
+Formentera		Total	Total	Segunda etapa de educación secundaria, con orientación general	2022	174
+Formentera		Total	Total	Segunda etapa de educación secundaria, con orientación general	2021	180
+Formentera		Total	Total	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2024	153
+Formentera		Total	Total	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2023	142
+Formentera		Total	Total	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2022	149
+Formentera		Total	Total	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2021	131
+Formentera		Total	Total	Educación superior	2024	413
+Formentera		Total	Total	Educación superior	2023	397
+Formentera		Total	Total	Educación superior	2022	384
+Formentera		Total	Total	Educación superior	2021	395
+Formentera		Total	Total	Cursa estudios pero no hay información sobre los mismos	2024	5
+Formentera		Total	Total	Cursa estudios pero no hay información sobre los mismos	2023	28
+Formentera		Total	Total	Cursa estudios pero no hay información sobre los mismos	2022	19
+Formentera		Total	Total	Cursa estudios pero no hay información sobre los mismos	2021	22
+Formentera		Total	Total	No cursa estudios	2024	9.317
+Formentera		Total	Total	No cursa estudios	2023	9.215
+Formentera		Total	Total	No cursa estudios	2022	9.446
+Formentera		Total	Total	No cursa estudios	2021	9.623
+Formentera		Total	Española	Total	2024	7.195
+Formentera		Total	Española	Total	2023	7.084
+Formentera		Total	Española	Total	2022	7.162
+Formentera		Total	Española	Total	2021	7.287
+Formentera		Total	Española	Educación primaria e inferior	2024	15
+Formentera		Total	Española	Educación primaria e inferior	2023	8
+Formentera		Total	Española	Educación primaria e inferior	2022	6
+Formentera		Total	Española	Educación primaria e inferior	2021	1
+Formentera		Total	Española	Primera etapa de Educación Secundaria y similar	2024	24
+Formentera		Total	Española	Primera etapa de Educación Secundaria y similar	2023	16
+Formentera		Total	Española	Primera etapa de Educación Secundaria y similar	2022	16
+Formentera		Total	Española	Primera etapa de Educación Secundaria y similar	2021	35
+Formentera		Total	Española	Segunda etapa de educación secundaria, con orientación general	2024	154
+Formentera		Total	Española	Segunda etapa de educación secundaria, con orientación general	2023	142
+Formentera		Total	Española	Segunda etapa de educación secundaria, con orientación general	2022	143
+Formentera		Total	Española	Segunda etapa de educación secundaria, con orientación general	2021	151
+Formentera		Total	Española	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2024	134
+Formentera		Total	Española	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2023	125
+Formentera		Total	Española	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2022	126
+Formentera		Total	Española	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2021	109
+Formentera		Total	Española	Educación superior	2024	397
+Formentera		Total	Española	Educación superior	2023	377
+Formentera		Total	Española	Educación superior	2022	368
+Formentera		Total	Española	Educación superior	2021	371
+Formentera		Total	Española	Cursa estudios pero no hay información sobre los mismos	2024	3
+Formentera		Total	Española	Cursa estudios pero no hay información sobre los mismos	2023	12
+Formentera		Total	Española	Cursa estudios pero no hay información sobre los mismos	2022	11
+Formentera		Total	Española	Cursa estudios pero no hay información sobre los mismos	2021	13
+Formentera		Total	Española	No cursa estudios	2024	6.468
+Formentera		Total	Española	No cursa estudios	2023	6.404
+Formentera		Total	Española	No cursa estudios	2022	6.492
+Formentera		Total	Española	No cursa estudios	2021	6.607
+Formentera		Total	Extranjera	Total	2024	2.922
+Formentera		Total	Extranjera	Total	2023	2.908
+Formentera		Total	Extranjera	Total	2022	3.050
+Formentera		Total	Extranjera	Total	2021	3.123
+Formentera		Total	Extranjera	Educación primaria e inferior	2024	1
+Formentera		Total	Extranjera	Educación primaria e inferior	2023	0
+Formentera		Total	Extranjera	Educación primaria e inferior	2022	8
+Formentera		Total	Extranjera	Educación primaria e inferior	2021	14
+Formentera		Total	Extranjera	Primera etapa de Educación Secundaria y similar	2024	8
+Formentera		Total	Extranjera	Primera etapa de Educación Secundaria y similar	2023	6
+Formentera		Total	Extranjera	Primera etapa de Educación Secundaria y similar	2022	10
+Formentera		Total	Extranjera	Primera etapa de Educación Secundaria y similar	2021	9
+Formentera		Total	Extranjera	Segunda etapa de educación secundaria, con orientación general	2024	27
+Formentera		Total	Extranjera	Segunda etapa de educación secundaria, con orientación general	2023	38
+Formentera		Total	Extranjera	Segunda etapa de educación secundaria, con orientación general	2022	31
+Formentera		Total	Extranjera	Segunda etapa de educación secundaria, con orientación general	2021	29
+Formentera		Total	Extranjera	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2024	19
+Formentera		Total	Extranjera	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2023	17
+Formentera		Total	Extranjera	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2022	23
+Formentera		Total	Extranjera	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2021	22
+Formentera		Total	Extranjera	Educación superior	2024	16
+Formentera		Total	Extranjera	Educación superior	2023	20
+Formentera		Total	Extranjera	Educación superior	2022	16
+Formentera		Total	Extranjera	Educación superior	2021	24
+Formentera		Total	Extranjera	Cursa estudios pero no hay información sobre los mismos	2024	2
+Formentera		Total	Extranjera	Cursa estudios pero no hay información sobre los mismos	2023	16
+Formentera		Total	Extranjera	Cursa estudios pero no hay información sobre los mismos	2022	8
+Formentera		Total	Extranjera	Cursa estudios pero no hay información sobre los mismos	2021	9
+Formentera		Total	Extranjera	No cursa estudios	2024	2.849
+Formentera		Total	Extranjera	No cursa estudios	2023	2.811
+Formentera		Total	Extranjera	No cursa estudios	2022	2.954
+Formentera		Total	Extranjera	No cursa estudios	2021	3.016
+Formentera		Hombres	Total	Total	2024	5.178
+Formentera		Hombres	Total	Total	2023	5.129
+Formentera		Hombres	Total	Total	2022	5.298
+Formentera		Hombres	Total	Total	2021	5.438
+Formentera		Hombres	Total	Educación primaria e inferior	2024	7
+Formentera		Hombres	Total	Educación primaria e inferior	2023	3
+Formentera		Hombres	Total	Educación primaria e inferior	2022	1
+Formentera		Hombres	Total	Educación primaria e inferior	2021	5
+Formentera		Hombres	Total	Primera etapa de Educación Secundaria y similar	2024	18
+Formentera		Hombres	Total	Primera etapa de Educación Secundaria y similar	2023	15
+Formentera		Hombres	Total	Primera etapa de Educación Secundaria y similar	2022	13
+Formentera		Hombres	Total	Primera etapa de Educación Secundaria y similar	2021	20
+Formentera		Hombres	Total	Segunda etapa de educación secundaria, con orientación general	2024	86
+Formentera		Hombres	Total	Segunda etapa de educación secundaria, con orientación general	2023	82
+Formentera		Hombres	Total	Segunda etapa de educación secundaria, con orientación general	2022	84
+Formentera		Hombres	Total	Segunda etapa de educación secundaria, con orientación general	2021	92
+Formentera		Hombres	Total	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2024	87
+Formentera		Hombres	Total	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2023	85
+Formentera		Hombres	Total	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2022	79
+Formentera		Hombres	Total	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2021	67
+Formentera		Hombres	Total	Educación superior	2024	172
+Formentera		Hombres	Total	Educación superior	2023	164
+Formentera		Hombres	Total	Educación superior	2022	170
+Formentera		Hombres	Total	Educación superior	2021	169
+Formentera		Hombres	Total	Cursa estudios pero no hay información sobre los mismos	2024	2
+Formentera		Hombres	Total	Cursa estudios pero no hay información sobre los mismos	2023	16
+Formentera		Hombres	Total	Cursa estudios pero no hay información sobre los mismos	2022	6
+Formentera		Hombres	Total	Cursa estudios pero no hay información sobre los mismos	2021	10
+Formentera		Hombres	Total	No cursa estudios	2024	4.806
+Formentera		Hombres	Total	No cursa estudios	2023	4.764
+Formentera		Hombres	Total	No cursa estudios	2022	4.945
+Formentera		Hombres	Total	No cursa estudios	2021	5.075
+Formentera		Hombres	Española	Total	2024	3.678
+Formentera		Hombres	Española	Total	2023	3.638
+Formentera		Hombres	Española	Total	2022	3.712
+Formentera		Hombres	Española	Total	2021	3.795
+Formentera		Hombres	Española	Educación primaria e inferior	2024	7
+Formentera		Hombres	Española	Educación primaria e inferior	2023	3
+Formentera		Hombres	Española	Educación primaria e inferior	2022	1
+Formentera		Hombres	Española	Educación primaria e inferior	2021	0
+Formentera		Hombres	Española	Primera etapa de Educación Secundaria y similar	2024	14
+Formentera		Hombres	Española	Primera etapa de Educación Secundaria y similar	2023	12
+Formentera		Hombres	Española	Primera etapa de Educación Secundaria y similar	2022	9
+Formentera		Hombres	Española	Primera etapa de Educación Secundaria y similar	2021	14
+Formentera		Hombres	Española	Segunda etapa de educación secundaria, con orientación general	2024	73
+Formentera		Hombres	Española	Segunda etapa de educación secundaria, con orientación general	2023	62
+Formentera		Hombres	Española	Segunda etapa de educación secundaria, con orientación general	2022	71
+Formentera		Hombres	Española	Segunda etapa de educación secundaria, con orientación general	2021	78
+Formentera		Hombres	Española	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2024	73
+Formentera		Hombres	Española	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2023	76
+Formentera		Hombres	Española	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2022	66
+Formentera		Hombres	Española	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2021	55
+Formentera		Hombres	Española	Educación superior	2024	166
+Formentera		Hombres	Española	Educación superior	2023	158
+Formentera		Hombres	Española	Educación superior	2022	165
+Formentera		Hombres	Española	Educación superior	2021	163
+Formentera		Hombres	Española	Cursa estudios pero no hay información sobre los mismos	2024	1
+Formentera		Hombres	Española	Cursa estudios pero no hay información sobre los mismos	2023	6
+Formentera		Hombres	Española	Cursa estudios pero no hay información sobre los mismos	2022	4
+Formentera		Hombres	Española	Cursa estudios pero no hay información sobre los mismos	2021	7
+Formentera		Hombres	Española	No cursa estudios	2024	3.344
+Formentera		Hombres	Española	No cursa estudios	2023	3.321
+Formentera		Hombres	Española	No cursa estudios	2022	3.396
+Formentera		Hombres	Española	No cursa estudios	2021	3.478
+Formentera		Hombres	Extranjera	Total	2024	1.500
+Formentera		Hombres	Extranjera	Total	2023	1.491
+Formentera		Hombres	Extranjera	Total	2022	1.586
+Formentera		Hombres	Extranjera	Total	2021	1.643
+Formentera		Hombres	Extranjera	Educación primaria e inferior	2024	0
+Formentera		Hombres	Extranjera	Educación primaria e inferior	2023	0
+Formentera		Hombres	Extranjera	Educación primaria e inferior	2022	0
+Formentera		Hombres	Extranjera	Educación primaria e inferior	2021	5
+Formentera		Hombres	Extranjera	Primera etapa de Educación Secundaria y similar	2024	4
+Formentera		Hombres	Extranjera	Primera etapa de Educación Secundaria y similar	2023	3
+Formentera		Hombres	Extranjera	Primera etapa de Educación Secundaria y similar	2022	4
+Formentera		Hombres	Extranjera	Primera etapa de Educación Secundaria y similar	2021	6
+Formentera		Hombres	Extranjera	Segunda etapa de educación secundaria, con orientación general	2024	13
+Formentera		Hombres	Extranjera	Segunda etapa de educación secundaria, con orientación general	2023	20
+Formentera		Hombres	Extranjera	Segunda etapa de educación secundaria, con orientación general	2022	13
+Formentera		Hombres	Extranjera	Segunda etapa de educación secundaria, con orientación general	2021	14
+Formentera		Hombres	Extranjera	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2024	14
+Formentera		Hombres	Extranjera	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2023	9
+Formentera		Hombres	Extranjera	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2022	13
+Formentera		Hombres	Extranjera	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2021	12
+Formentera		Hombres	Extranjera	Educación superior	2024	6
+Formentera		Hombres	Extranjera	Educación superior	2023	6
+Formentera		Hombres	Extranjera	Educación superior	2022	5
+Formentera		Hombres	Extranjera	Educación superior	2021	6
+Formentera		Hombres	Extranjera	Cursa estudios pero no hay información sobre los mismos	2024	1
+Formentera		Hombres	Extranjera	Cursa estudios pero no hay información sobre los mismos	2023	10
+Formentera		Hombres	Extranjera	Cursa estudios pero no hay información sobre los mismos	2022	2
+Formentera		Hombres	Extranjera	Cursa estudios pero no hay información sobre los mismos	2021	3
+Formentera		Hombres	Extranjera	No cursa estudios	2024	1.462
+Formentera		Hombres	Extranjera	No cursa estudios	2023	1.443
+Formentera		Hombres	Extranjera	No cursa estudios	2022	1.549
+Formentera		Hombres	Extranjera	No cursa estudios	2021	1.597
+Formentera		Mujeres	Total	Total	2024	4.939
+Formentera		Mujeres	Total	Total	2023	4.863
+Formentera		Mujeres	Total	Total	2022	4.914
+Formentera		Mujeres	Total	Total	2021	4.972
+Formentera		Mujeres	Total	Educación primaria e inferior	2024	9
+Formentera		Mujeres	Total	Educación primaria e inferior	2023	5
+Formentera		Mujeres	Total	Educación primaria e inferior	2022	13
+Formentera		Mujeres	Total	Educación primaria e inferior	2021	10
+Formentera		Mujeres	Total	Primera etapa de Educación Secundaria y similar	2024	14
+Formentera		Mujeres	Total	Primera etapa de Educación Secundaria y similar	2023	7
+Formentera		Mujeres	Total	Primera etapa de Educación Secundaria y similar	2022	13
+Formentera		Mujeres	Total	Primera etapa de Educación Secundaria y similar	2021	24
+Formentera		Mujeres	Total	Segunda etapa de educación secundaria, con orientación general	2024	95
+Formentera		Mujeres	Total	Segunda etapa de educación secundaria, con orientación general	2023	98
+Formentera		Mujeres	Total	Segunda etapa de educación secundaria, con orientación general	2022	90
+Formentera		Mujeres	Total	Segunda etapa de educación secundaria, con orientación general	2021	88
+Formentera		Mujeres	Total	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2024	66
+Formentera		Mujeres	Total	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2023	57
+Formentera		Mujeres	Total	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2022	70
+Formentera		Mujeres	Total	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2021	64
+Formentera		Mujeres	Total	Educación superior	2024	241
+Formentera		Mujeres	Total	Educación superior	2023	233
+Formentera		Mujeres	Total	Educación superior	2022	214
+Formentera		Mujeres	Total	Educación superior	2021	226
+Formentera		Mujeres	Total	Cursa estudios pero no hay información sobre los mismos	2024	3
+Formentera		Mujeres	Total	Cursa estudios pero no hay información sobre los mismos	2023	12
+Formentera		Mujeres	Total	Cursa estudios pero no hay información sobre los mismos	2022	13
+Formentera		Mujeres	Total	Cursa estudios pero no hay información sobre los mismos	2021	12
+Formentera		Mujeres	Total	No cursa estudios	2024	4.511
+Formentera		Mujeres	Total	No cursa estudios	2023	4.451
+Formentera		Mujeres	Total	No cursa estudios	2022	4.501
+Formentera		Mujeres	Total	No cursa estudios	2021	4.548
+Formentera		Mujeres	Española	Total	2024	3.517
+Formentera		Mujeres	Española	Total	2023	3.446
+Formentera		Mujeres	Española	Total	2022	3.450
+Formentera		Mujeres	Española	Total	2021	3.492
+Formentera		Mujeres	Española	Educación primaria e inferior	2024	8
+Formentera		Mujeres	Española	Educación primaria e inferior	2023	5
+Formentera		Mujeres	Española	Educación primaria e inferior	2022	5
+Formentera		Mujeres	Española	Educación primaria e inferior	2021	1
+Formentera		Mujeres	Española	Primera etapa de Educación Secundaria y similar	2024	10
+Formentera		Mujeres	Española	Primera etapa de Educación Secundaria y similar	2023	4
+Formentera		Mujeres	Española	Primera etapa de Educación Secundaria y similar	2022	7
+Formentera		Mujeres	Española	Primera etapa de Educación Secundaria y similar	2021	21
+Formentera		Mujeres	Española	Segunda etapa de educación secundaria, con orientación general	2024	81
+Formentera		Mujeres	Española	Segunda etapa de educación secundaria, con orientación general	2023	80
+Formentera		Mujeres	Española	Segunda etapa de educación secundaria, con orientación general	2022	72
+Formentera		Mujeres	Española	Segunda etapa de educación secundaria, con orientación general	2021	73
+Formentera		Mujeres	Española	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2024	61
+Formentera		Mujeres	Española	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2023	49
+Formentera		Mujeres	Española	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2022	60
+Formentera		Mujeres	Española	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2021	54
+Formentera		Mujeres	Española	Educación superior	2024	231
+Formentera		Mujeres	Española	Educación superior	2023	219
+Formentera		Mujeres	Española	Educación superior	2022	203
+Formentera		Mujeres	Española	Educación superior	2021	208
+Formentera		Mujeres	Española	Cursa estudios pero no hay información sobre los mismos	2024	2
+Formentera		Mujeres	Española	Cursa estudios pero no hay información sobre los mismos	2023	6
+Formentera		Mujeres	Española	Cursa estudios pero no hay información sobre los mismos	2022	7
+Formentera		Mujeres	Española	Cursa estudios pero no hay información sobre los mismos	2021	6
+Formentera		Mujeres	Española	No cursa estudios	2024	3.124
+Formentera		Mujeres	Española	No cursa estudios	2023	3.083
+Formentera		Mujeres	Española	No cursa estudios	2022	3.096
+Formentera		Mujeres	Española	No cursa estudios	2021	3.129
+Formentera		Mujeres	Extranjera	Total	2024	1.422
+Formentera		Mujeres	Extranjera	Total	2023	1.417
+Formentera		Mujeres	Extranjera	Total	2022	1.464
+Formentera		Mujeres	Extranjera	Total	2021	1.480
+Formentera		Mujeres	Extranjera	Educación primaria e inferior	2024	1
+Formentera		Mujeres	Extranjera	Educación primaria e inferior	2023	0
+Formentera		Mujeres	Extranjera	Educación primaria e inferior	2022	8
+Formentera		Mujeres	Extranjera	Educación primaria e inferior	2021	9
+Formentera		Mujeres	Extranjera	Primera etapa de Educación Secundaria y similar	2024	4
+Formentera		Mujeres	Extranjera	Primera etapa de Educación Secundaria y similar	2023	3
+Formentera		Mujeres	Extranjera	Primera etapa de Educación Secundaria y similar	2022	6
+Formentera		Mujeres	Extranjera	Primera etapa de Educación Secundaria y similar	2021	3
+Formentera		Mujeres	Extranjera	Segunda etapa de educación secundaria, con orientación general	2024	14
+Formentera		Mujeres	Extranjera	Segunda etapa de educación secundaria, con orientación general	2023	18
+Formentera		Mujeres	Extranjera	Segunda etapa de educación secundaria, con orientación general	2022	18
+Formentera		Mujeres	Extranjera	Segunda etapa de educación secundaria, con orientación general	2021	15
+Formentera		Mujeres	Extranjera	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2024	5
+Formentera		Mujeres	Extranjera	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2023	8
+Formentera		Mujeres	Extranjera	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2022	10
+Formentera		Mujeres	Extranjera	Segunda etapa de Educación Secundaria, con orientación profesional (con y sin continuidad en la educación superior); Educación postsecundaria no superior	2021	10
+Formentera		Mujeres	Extranjera	Educación superior	2024	10
+Formentera		Mujeres	Extranjera	Educación superior	2023	14
+Formentera		Mujeres	Extranjera	Educación superior	2022	11
+Formentera		Mujeres	Extranjera	Educación superior	2021	18
+Formentera		Mujeres	Extranjera	Cursa estudios pero no hay información sobre los mismos	2024	1
+Formentera		Mujeres	Extranjera	Cursa estudios pero no hay información sobre los mismos	2023	6
+Formentera		Mujeres	Extranjera	Cursa estudios pero no hay información sobre los mismos	2022	6
+Formentera		Mujeres	Extranjera	Cursa estudios pero no hay información sobre los mismos	2021	6
+Formentera		Mujeres	Extranjera	No cursa estudios	2024	1.387
+Formentera		Mujeres	Extranjera	No cursa estudios	2023	1.368
+Formentera		Mujeres	Extranjera	No cursa estudios	2022	1.405
+Formentera		Mujeres	Extranjera	No cursa estudios	2021	1.419
+Formentera	07024 Formentera	Total	Total	Total	2024	10.117
+Formentera	07024 Formentera	Total	Total	Total	2023	9.992
+Formentera	07024 Formentera	Total	Total	Total	2022	10.212
+Formentera	07024 Formentera	Total	Total	Total	2021	10.410
+Formentera	07024 Formentera	Total	Total	Educación primaria e inferior	2024	16
+Formentera	07024 Formentera	Total	Total	Educación primaria e inferior	2023	8
+Formentera	07024 Formentera	Total	Total	Educación primaria e inferior	2022	14
+Formentera	07024 Formentera	Total	Total	Educación primaria e inferior	2021	15
+Formentera	07024 Formentera	Total	Total	Primera etapa de Educación Secundaria y similar	2024	32
+Formentera	07024 Formentera	Total	Total	Primera etapa de Educación Secundaria y similar	2023	22
+Formentera	07024 Formentera	Total	Total	Primera etapa de Educación Secundaria y similar	2022	26
