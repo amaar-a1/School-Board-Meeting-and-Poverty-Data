@@ -752,6 +752,11 @@ def peru():
     the districts; the district council (concejo municipal) stands in for meetings. INEI publishes district poverty
     only as a 95% confidence interval; the midpoint is shown."""
     dist, prov = peru_poverty()
+    # Pupils: MINEDU's school register (ESCALE), Alumnos from the 2025 school census, every school and programme (all
+    # levels, public and private), summed by district; exported from ESCALE's search page by the project's owner. 18
+    # districts created after the poverty map's 2018 list (19,922 pupils) aren't on the site.
+    pf = os.path.join(IN, "peru", "pe_alumnos_2025.json")
+    pupils = json.load(open(pf, encoding="utf-8"))["pupils"] if os.path.exists(pf) else {}
     geo = {f["properties"]["IDDIST"]: f for f in json.load(open(os.path.join(IN, "peru", "peru_distrital_simple.geojson"), encoding="utf-8"))["features"] if f.get("geometry")}
     # Putumayo province (2014) took two of Maynas's districts, which got new codes; the borders file has the old ones.
     # Putumayo's old border also covers Rosa Panduro and Yaguas, made from it.
@@ -765,6 +770,7 @@ def peru():
         rows.append({"District": d["name"], "Region": PE_DEPT[code[:2]], "Province": prov.get(code[:4], ""), "Population": d["pop"],
                      "Poverty rate (all ages)": f"{(d['lo'] + d['hi']) / 2:.2f}%", "Poverty range": f"{d['lo']:.1f}–{d['hi']:.1f}%",
                      "Poverty note": "Share of people below the monetary poverty line, all ages, 2018 (INEI poverty map): midpoint of the 95% confidence interval; no child rate is published by district",
+                     "Enrollment": pupils.get(code, ""), "Enrollment year": "2025 (school census: all schools and programmes, public and private)" if code in pupils else "",
                      "School system": "Regional education directorate (UGEL)",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": d["name"]}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
