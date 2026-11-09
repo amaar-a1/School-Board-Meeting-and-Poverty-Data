@@ -1,22 +1,15 @@
-# Temporary: Italian regions with their own school systems: search the open-data portals of Bolzano (South Tyrol),
-# Trento and Valle d'Aosta for pupils by school or comune.
-import json, os, urllib.parse, urllib.request
-OUT = "fetch/out/it_enr1"; os.makedirs(OUT, exist_ok=True)
+# Temporary: ASTAT yearbook 2024 education chapter; Valle d'Aosta yearbook education tables; Trento (vivoscuola) school data page.
+import os, urllib.request
+OUT = "fetch/out/it_enr2"; os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
 log = open(f"{OUT}/log.txt", "w")
-def get(u, t=120):
-    with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=t) as r: return r.read()
-Q = {"bz": ("https://data.civis.bz.it/api/3/action/package_search?rows=40&q=", ["schüler", "alunni scuola", "studenti scuole"]),
-     "tn": ("https://dati.trentino.it/api/3/action/package_search?rows=40&q=", ["studenti iscritti scuole", "alunni", "istituzioni scolastiche"]),
-     "vda": ("https://dati.regione.vda.it/api/3/action/package_search?rows=40&q=", ["alunni", "scuole studenti", "iscritti"])}
-for k, (base, qs) in Q.items():
-    for q in qs:
-        try:
-            d = json.loads(get(base + urllib.parse.quote(q)))["result"]
-            log.write(f"== {k} '{q}': {d['count']}\n")
-            for p in d["results"]:
-                res = [(r.get("format"), r.get("name") or "", r["url"]) for r in p.get("resources", [])]
-                log.write(f"  {p['name']} | {p.get('title')} | {p.get('metadata_modified','')[:10]}\n")
-                for r in res[:6]: log.write(f"      {r[0]} | {str(r[1])[:60]} | {r[2][:160]}\n")
-        except Exception as e: log.write(f"ERR {k} {q} {str(e)[:150]}\n")
+U = {"astat_jb2024_k5.pdf": "https://astat.provincia.bz.it/downloads/JB2024_K5.pdf",
+     "vda_2024_index.html": "https://regione.vda.it/statistica/pubblicazioni/annuari/annuario2024/default_i.aspx",
+     "vda_2021_6_15.pdf": "https://www.regione.vda.it/statistica/pubblicazioni/annuari/annuario2021/SITE/6/15.PDF"}
+for i in range(1, 16): U[f"vda_2024_6_{i}.pdf"] = f"https://regione.vda.it/statistica/pubblicazioni/annuari/annuario2024/SITE/6/{i}.PDF"
+for n, u in U.items():
+    try:
+        with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=120) as r: b = r.read()
+        open(f"{OUT}/{n}", "wb").write(b); log.write(f"ok {n} {len(b)}\n")
+    except Exception as e: log.write(f"ERR {n} {str(e)[:100]}\n")
 log.close()
