@@ -12,31 +12,29 @@ def fetch(u, p):
     if not os.path.exists(p):
         with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=900) as r, open(p, "wb") as f: f.write(r.read())
     return p
-# Ages by CSD (98-10-0020-01): total population and children 5-17, both genders.
-z = zipfile.ZipFile(fetch("https://www150.statcan.gc.ca/n1/tbl/csv/98100020-eng.zip", f"{W}/age.zip"))
-name = [n for n in z.namelist() if not n.endswith("MetaData.csv")][0]
-rd = csv.reader(io.TextIOWrapper(z.open(name), encoding="utf-8-sig")); head = next(rd)
-log.write("head " + json.dumps(head) + "\n")
-col = {h: i for i, h in enumerate(head)}
-age = [h for h in head if h.startswith("Age")][0]
-val = [h for h in head if "Total - Gender" in h][0]
-cy = [h for h in head if h.startswith("Census year")][0]
-log.write(f"age {age} value {val}\n")
-samp = 0
-pop, kids, ages = {}, {}, set()
-want = {f"{a} years" for a in range(5, 18)}
-for r in rd:
-    if samp < 8 or (samp < 40 and "A0005" in "".join(r[:3])): log.write("ROW " + json.dumps(r) + "\n"); samp += 1
-    if len(r) < len(head): continue
-    dg = r[col["DGUID"]]
-    if dg[4:9] != "A0005" or not r[col[cy]].startswith("2021"): continue
-    a = r[col[age]]; ages.add(a)
-    try: v = float(r[col[val]])
-    except ValueError: continue
-    u = dg[-7:]
-    if a.startswith("Total"): pop[u] = v
-    elif a.split(" (")[0].replace(" year", " years").replace("yearss","years") in want or a in want: kids[u] = kids.get(u, 0) + v
-log.write(f"ages sample {sorted(ages)[:40]}\nCSDs pop {len(pop)} kids {len(kids)}\n")
+# Census Profile 2021, census subdivisions (98-401-X2021006): population, ages 5-17, land area.
+zp = fetch("https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/download-telecharger/comp/GetFile.cfm?Lang=E&FILETYPE=CSV&GEONO=006", f"{W}/prof.zip")
+z = zipfile.ZipFile(zp); log.write("zip " + json.dumps(z.namelist()) + "\n")
+pop, kids, land = {}, {}, {}
+seen = {}
+for name in [n for n in z.namelist() if n.lower().endswith(".csv") and "geo_starting_row" not in n.lower()]:
+    rd = csv.reader(io.TextIOWrapper(z.open(name), encoding="latin-1")); head = next(rd); col = {h: i for i, h in enumerate(head)}
+    log.write(f"{name} head {head[:16]}\n")
+    for r in rd:
+        if len(r) < len(head): continue
+        dg = r[col["DGUID"]]
+        if dg[4:9] != "A0005": continue
+        cid = int(r[col["CHARACTERISTIC_ID"]]); nm = r[col["CHARACTERISTIC_NAME"]].strip()
+        if cid > 40: continue
+        try: v = float(r[col["C1_COUNT_TOTAL"]])
+        except ValueError: continue
+        u = dg[-7:]
+        if len(seen) < 45: seen.setdefault(cid, nm)
+        if cid == 1: pop[u] = v
+        elif nm.startswith("Land area"): land[u] = v
+        elif nm in ("5 to 9 years", "10 to 14 years", "15", "16", "17"): kids[u] = kids.get(u, 0) + v
+log.write("chars " + json.dumps(seen) + "\n")
+log.write(f"CSDs pop {len(pop)} kids {len(kids)} land {len(land)}\n")
 csd = gpd.read_file("zip://" + fetch("https://github.com/amaar-a1/School-Board-Meeting-and-Poverty-Data/releases/download/statcan-csd-2021/lcsd000b21a_e.zip", f"{W}/csd.zip")).to_crs(3347)
 csd["geometry"] = csd.geometry.make_valid().buffer(0); csd["area"] = csd.geometry.area
 csd["pop"] = csd.CSDUID.map(lambda u: pop.get(u, 0))
@@ -53,11 +51,13 @@ fn = {}
 for f in json.load(open("fetch/in/canada_fn.geojson"))["features"]:
     i = f["properties"]["id"]; u = i[-7:]
     sub = csd[csd.CSDUID == u]
-    fn[i] = {"csd": u, "pop": pop.get(u), "kids_5_17": kids.get(u), "land_km2": round(float(sub.area.sum()) / 1e6, 2) if len(sub) else None}
-json.dump({"boards": boards, "fn": fn, "source": "Statistics Canada table 98-10-0020-01 (2021 Census, age by CSD); 2021 CSD cartographic boundaries"}, open(f"{OUT}/canada_pop.json", "w"), indent=0)
+    fn[i] = {"csd": u, "pop": pop.get(u), "kids_5_17": kids.get(u), "land_km2": land.get(u) or (round(float(sub.area.sum()) / 1e6, 2) if len(sub) else None)}
+json.dump({"boards": boards, "fn": fn, "source": "Statistics Canada, Census Profile 2021, census subdivisions (98-401-X2021006); 2021 CSD cartographic boundaries"}, open(f"{OUT}/canada_pop.json", "w"), indent=0)
 log.write(f"boards with pop {len(boards)}; fn {len(fn)}, with kids {sum(1 for x in fn.values() if x['kids_5_17'])}\n"); log.close()
 # rerun 1794264999
 
 # rerun 2
 
 # rerun 3
+
+# rerun 4
