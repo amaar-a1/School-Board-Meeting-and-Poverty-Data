@@ -785,6 +785,9 @@ def spain():
     d = os.path.join(IN, "spain")
     dem = json.load(open(os.path.join(d, "ine_adrh_demographics.json"), encoding="utf-8"))
     pov = json.load(open(os.path.join(d, "ine_adrh_under18_below60.json"), encoding="utf-8"))
+    # Real pupil counts where a region publishes them by municipality (Catalonia, Madrid): prep_spain_regional_pupils.py
+    rp_path = os.path.join(d, "es_regional_pupils.json")
+    rpup = json.load(open(rp_path, encoding="utf-8")) if os.path.exists(rp_path) else {}
     reg = es_region_poverty()
     adm1 = json.load(open(os.path.join(d, "gb_ESP_ADM2.geojson"), encoding="utf-8"))["features"]
     pn = {norm(v): k for k, v in ES_PROV.items()}
@@ -837,6 +840,8 @@ def spain():
                           f"{'smaller municipalities (under 10,000 people)' if prov_est[code[:2]][2] else 'municipalities'} that have one (same measure, weighted by their children)")
                          if code[:2] in prov_est else
                          f"No child figure: INE leaves out small municipalities. In its place, {ES_CCAA[code[:2]]}'s overall poverty rate (all ages, below 60% of the national median income; Eurostat, {reg[ES_NUTS2[ES_CCAA[code[:2]]]][1]})",
+                     "Enrollment": rpup.get(code, {}).get("pupils", ""), "Enrollment year": rpup.get(code, {}).get("year", ""),
+                     "Public school enrollment": rpup.get(code, {}).get("public", ""),
                      "Children under 18 (estimated)": kids, "School system": f"{ES_CCAA[code[:2]]} education department",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
