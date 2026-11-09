@@ -1,0 +1,129 @@
+cat | xvme-26kg | Alumnes matriculats per ensenyament i unitats dels centres docents | 2026-09-21 | Nom comarca, Denominació completa, Nom ensenyament, Coordenades GEO X, Coordenades UTM X, Codi comarca, Codi àrea territorial, Codi centre, Any, Curs, Matrícules. Dones, Codi estudis, Coordenades GEO Y, Codi municipi_6
+cat | 8spq-9nx7 | Concerts educatius: Unitat, alumnes, dotació de plantilla i despesa | 2026-09-21 | Alumnes - ESO, Alumnes - EINF, Dotació plantilla, Alumnes - CFPM, Alumnes - PRI, Nòmina del personal del centre, Alumnes - CFPS, Seg.Social, Nom_centre, Alumnes - BATX, Unitats concertades - CFPM, Titularitat, Municipi, Alumnes - EdE
+cat | iqdr-qkkp | Distribució alumnat postobligatori a ST Girona curs 23-24 | 2026-09-18 | 
+cat | 8w7y-2bfp | Mobilitat obligada municipal per raó d’estudis no universitaris | 2026-09-18 | Municipi centre, Número matrícules estadística, Naturalesa centre, Grup Edat, Codi Residència municipi alumne, Sexe, Curs, Residència municipi alumne, Codi Municipi centre, Estudis
+cat | vaht-2sjk | Oferta inicial de places escolars dels estudis obligatoris | 2026-09-21 | Nombre places, Coordenades_GEO_Y, Mixt, Codi ensenyament, Codi Àrea Territorial, Codi comarca, Places ofertades a la preinscripció, Nom DM, Codi naturalesa, Curs, Codi centre, Nom naturalesa, Georeferència, Nom titularitat
+cat | ky5m-v7i9 | Oferta inicial de places dels estudis post-obligatoris | 2026-09-18 | Codi titularitat, Codi àrea territorial, Nom titularitat, Codi comarca, Codi naturalesa (1,2), Nivell, Àrea territorial, Denominació completa, Nom municipi, Codi ensenyament, Curs, Nom comarca, Codi municipi_5, Nom naturalesa
+cat | 59vm-wwq7 | Avaluació de quart d’Educació Secundària Obligatòria | 2026-09-21 | CODI_ALUMNE, PCAST_EE, PFRAN, GENERE, PANG_EE, PCAT_CL, ANY_NAIXEMENT, PCIEN, PCAT, PCAT_EE, PCIEN_COMP2, PCAST, PCAST_CL, PMAT_EST
+mad | spacm_estadisticas_alumnos | Estadísticas de alumnos de centros educativos de la Comunidad de Madrid | 2026-07-22
+      CSV | https://datos.comunidad.madrid/dataset/5dd00f2c-2147-4550-b40e-adb5a0b2001c/resource/2fd0545c-4da7-447a-9009-57c64399a49e/download/alumnos_r
+      JSON | https://datos.comunidad.madrid/dataset/5dd00f2c-2147-4550-b40e-adb5a0b2001c/resource/2c996b71-039c-42d0-8aa3-d95707980c8d/download/alumnos_r
+      CSV | https://datos.comunidad.madrid/dataset/5dd00f2c-2147-4550-b40e-adb5a0b2001c/resource/7a101f1c-e339-4ca4-8b51-0efd3ad022fb/download/alumnos_r
+mad | 1903749 | Alumnos matriculados en educación especial específica por titularidad del centro | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/de863314-1a8c-4833-98fe-fa5efe8970c6/resource/4fcc9158-e340-4a4e-af81-6f6aa6dde8b7/download/alumnos-m
+      JSON | https://datos.comunidad.madrid/dataset/de863314-1a8c-4833-98fe-fa5efe8970c6/resource/e220ac89-9aba-43fa-8609-3811e0f3d17b/download/alumnos-m
+mad | alumnos_matriculados_regimen_especial_por_sexo | Alumnos matriculados en centros de régimen especial por sexo | 2026-11-07
+      CSV | https://datos.comunidad.madrid/dataset/4f5d2c2f-7a9b-461b-b71c-370c7f44949e/resource/d997b85b-f93e-41a7-ad4a-e03c1e75e8ac/download/alumnos-m
+      JSON | https://datos.comunidad.madrid/dataset/4f5d2c2f-7a9b-461b-b71c-370c7f44949e/resource/ab29895c-4701-43dc-b3de-af77cfa3df78/download/alumnos-m
+mad | alumnos_matriculados_otros_programas_por_titularidad | Alumnos matriculados en Otros Programas Formativos por titularidad del centro | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/dcfc6527-2874-4b88-a35d-ae733a4d3bac/resource/3d7f0d39-9f8e-4071-a8bc-897376f5824b/download/alumnos-m
+      JSON | https://datos.comunidad.madrid/dataset/dcfc6527-2874-4b88-a35d-ae733a4d3bac/resource/4d09108c-4da6-4c43-8ca5-0d9e6d88a544/download/alumnos-m
+mad | alumnos_matriculados_bachillerato_por_sexo | Alumnos matriculados en bachillerato en centros escolares por sexo | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/566ef9cc-9cfd-4dcf-b09d-a6683e94083e/resource/b9c9262d-0427-458f-9515-586f92a99428/download/alumnos-m
+      JSON | https://datos.comunidad.madrid/dataset/566ef9cc-9cfd-4dcf-b09d-a6683e94083e/resource/a9620211-3ca5-4670-b75d-7328a882dfe4/download/alumnos-m
+mad | alumnos_matriculados_regimen_especial_por_titularidad | Alumnos matriculados en centros de régimen especial por titularidad del centro | 2026-11-07
+      CSV | https://datos.comunidad.madrid/dataset/47524a3a-698f-483e-88ad-95c5ff0f540a/resource/1af31854-d1e8-4788-9b85-a828af9dc6a3/download/alumnos-m
+      JSON | https://datos.comunidad.madrid/dataset/47524a3a-698f-483e-88ad-95c5ff0f540a/resource/699eb2df-3861-4ca3-acdc-92e0e0b9c546/download/alumnos-m
+mad | alumnos_no_universitarios_por_tipo_y_regimen | Alumnos no universitarios matriculados en centros escolares por tipo de centro y régimen. Municipios | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/ca1b179f-e7a0-4ed8-873c-0e8061cd172f/resource/0b58c8ef-b40a-4fc1-be20-729ea0357607/download/alumnos-n
+      JSON | https://datos.comunidad.madrid/dataset/ca1b179f-e7a0-4ed8-873c-0e8061cd172f/resource/6186b3b9-1145-4646-912a-53475e766d34/download/alumnos-n
+mad | alumnos_matriculados_ciclos_grado_medio_por_titularidad | Alumnos matriculados en ciclos formativos de grado medio en centros escolares por titularidad del centro | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/7f7d0245-6e83-48fc-9a1d-72c11940354e/resource/6497240b-452b-4e23-81fd-62123caf3a63/download/alumnos-m
+      JSON | https://datos.comunidad.madrid/dataset/7f7d0245-6e83-48fc-9a1d-72c11940354e/resource/f2489762-df0d-4cc0-9e3e-68772f4b4246/download/alumnos-m
+mad | alumnos_extranjeros_matriculados_por_tipo_y_titularidad | Alumnos extranjeros matriculados por tipo de enseñanza y titularidad del centro | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/04a85bd5-915b-4fe7-aaf0-49cff1bd2907/resource/18a4a2bf-0c76-46b2-87b2-c07a67b7d7cd/download/alumnos-e
+      JSON | https://datos.comunidad.madrid/dataset/04a85bd5-915b-4fe7-aaf0-49cff1bd2907/resource/e79b6331-1942-42f6-97f5-15714dfdd44d/download/alumnos-e
+mad | alumnos_general_matriculados_por_tipo | Alumnos del régimen general matriculados en centros escolares por tipo de enseñanza | 2026-11-06
+      CSV | https://datos.comunidad.madrid/dataset/34a0d2f2-42fd-4ce4-a93f-00933e1a3a9b/resource/822d0549-c809-47cd-a544-7910c3f8c81f/download/alumnos-d
+      JSON | https://datos.comunidad.madrid/dataset/34a0d2f2-42fd-4ce4-a93f-00933e1a3a9b/resource/7e4ce1bc-870a-42bd-879b-962e2f9889e7/download/alumnos-d
+mad | 1904100 | Alumnos extranjeros matriculados por grupos de países y por titularidad del centro | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/07a1cefd-aef7-429b-8418-f637a7589873/resource/4cb53400-2dd8-4434-8993-fcaa22871561/download/alumnos-e
+      JSON | https://datos.comunidad.madrid/dataset/07a1cefd-aef7-429b-8418-f637a7589873/resource/f5ff63e9-ec7e-4809-acde-583e72654bab/download/alumnos-e
+mad | alumnos_matriculados_eso_por_ciclo_curso_y_tipo | Alumnos matriculados en Educación Secundaria Obligatoria (ESO) por ciclo, curso y tipo de centro | 2026-11-07
+      CSV | https://datos.comunidad.madrid/dataset/72d8ecfe-5abb-48f3-aef2-51606e6242ff/resource/9743c267-2c90-4d5f-8ac0-df4b741b1fcf/download/alumnos-m
+      JSON | https://datos.comunidad.madrid/dataset/72d8ecfe-5abb-48f3-aef2-51606e6242ff/resource/46047e6d-60b8-44e1-a5a1-918b866a9754/download/alumnos-m
+mad | 1903507 | Alumnos matriculados en educación infantil por lengua extranjera que cursa y titularidad del centro | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/33c8e283-de94-4aa7-bb61-dc9df4ec2956/resource/310a2566-0cda-4bb4-8077-8c693fc111af/download/alumnos-m
+      JSON | https://datos.comunidad.madrid/dataset/33c8e283-de94-4aa7-bb61-dc9df4ec2956/resource/6d847906-2cca-4b53-b36d-c2f4827fdbb3/download/alumnos-m
+mad | alumnos_matriculados_bachillerato_por_regimenes_y_tipo | Alumnos matriculados en bachillerato por regímenes escolares y tipo de centro | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/49e949d1-18dc-4e23-94da-40d2754b1a4b/resource/80ef0202-7c89-403e-a81e-9f667118cb57/download/alumnos-m
+      JSON | https://datos.comunidad.madrid/dataset/49e949d1-18dc-4e23-94da-40d2754b1a4b/resource/d41a8d27-5d6f-45d9-bc1b-d59e04bede6b/download/alumnos-m
+mad | 1914481 | Alumnos matriculados en educación primaria por lengua extranjera que cursan y titularidad del centro | 2026-11-07
+      CSV | https://datos.comunidad.madrid/dataset/bba7ecae-df6a-4df3-b32f-6f64896558fa/resource/919acb10-5c6e-4e54-8b96-c2ecd131395b/download/alumnos-m
+      JSON | https://datos.comunidad.madrid/dataset/bba7ecae-df6a-4df3-b32f-6f64896558fa/resource/97290704-4c23-4143-9d88-e96203100407/download/alumnos-m
+mad | 1919361 | Alumnado con altas capacidades intelectuales por titularidad y enseñanza | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/c416fb85-83f9-47da-8490-b10e576fd728/resource/bf8809aa-6c3e-4350-82e6-730bb2ce739a/download/alumnado-
+      JSON | https://datos.comunidad.madrid/dataset/c416fb85-83f9-47da-8490-b10e576fd728/resource/4c76f31e-23dd-4685-8a2d-f0f178ea2354/download/alumnado-
+mad | 1919360 | Alumnado con altas capacidades intelectuales por sexo y enseñanza | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/28fe3e31-f92e-43f3-babd-5e65034af092/resource/5524033b-bdda-46ce-b559-76cc85a01d07/download/alumnado-
+      JSON | https://datos.comunidad.madrid/dataset/28fe3e31-f92e-43f3-babd-5e65034af092/resource/582ec2f7-6610-4292-bf3a-9bba32cb7e61/download/alumnado-
+mad | 1930805 | Alumnado con trastornos de la atención por enseñanza y sexo | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/2e2f34a3-f3d8-4fa5-9b83-1abd9359706e/resource/a74605ae-d694-403c-92a7-b98b08d2dffb/download/alumnado-
+      JSON | https://datos.comunidad.madrid/dataset/2e2f34a3-f3d8-4fa5-9b83-1abd9359706e/resource/1a7efe71-5008-4939-b710-fa9fc2377c0b/download/alumnado-
+mad | 1919366 | Alumnado con trastornos del aprendizaje por enseñanza y sexo | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/ecd927b9-ad3a-48e7-80aa-91ebe07f5266/resource/5a7c1062-fdcf-4b39-8075-21c38a36b30d/download/alumnado-
+      JSON | https://datos.comunidad.madrid/dataset/ecd927b9-ad3a-48e7-80aa-91ebe07f5266/resource/f70c0149-eef6-4f29-a879-4bf15b248274/download/alumnado-
+mad | 1919368 | Alumnado en situación de vulnerabilidad socio-educativa por enseñanza y sexo | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/b15b421e-ce2c-4778-b52d-996e47dabde1/resource/9b7b090d-0929-4ef1-9c44-e1d652ff8fc2/download/alumnado-
+      JSON | https://datos.comunidad.madrid/dataset/b15b421e-ce2c-4778-b52d-996e47dabde1/resource/2aaaf10e-f7fe-4c2e-b0fa-d439e820667d/download/alumnado-
+mad | 1919362 | Alumnado con integración tardía al sistema educativo español por enseñanza y sexo | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/2c0351ee-9cc5-4cf6-aecf-d82614ec42a6/resource/f354129e-cd53-4ae9-980c-e78f542575f5/download/alumnado-
+      JSON | https://datos.comunidad.madrid/dataset/2c0351ee-9cc5-4cf6-aecf-d82614ec42a6/resource/b6f0a06e-c3e9-49c0-9fe1-63462bb3b273/download/alumnado-
+mad | 1919367 | Alumnado con desconocimiento grave de la lengua de aprendizaje por enseñanza y sexo | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/d9772662-68eb-407c-b756-98d1ca344f4c/resource/b669603f-1aed-44ce-8e37-a8539e97e07d/download/alumnado-
+      JSON | https://datos.comunidad.madrid/dataset/d9772662-68eb-407c-b756-98d1ca344f4c/resource/a69cf4c0-28cc-4676-b2b2-aa4061b8b0fc/download/alumnado-
+mad | 1919363 | Alumnado con integración tardía al sistema educativo español por enseñanza y titularidad | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/0d8cc572-8159-49b5-a188-c6b13f49cb40/resource/65303ea2-dbbb-4242-8911-7bdaceaa79ed/download/alumnado-
+      JSON | https://datos.comunidad.madrid/dataset/0d8cc572-8159-49b5-a188-c6b13f49cb40/resource/e3123691-845c-4035-abb7-054afe89f6ed/download/alumnado-
+mad | 1919365 | Alumnado con trastornos del desarrollo del lenguaje y la comunicación por enseñanza y sexo | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/64ba3297-0ca5-4740-814f-6d6a4de3255a/resource/7314ee22-648c-4844-9453-d2ae195dddd8/download/alumnado-
+      JSON | https://datos.comunidad.madrid/dataset/64ba3297-0ca5-4740-814f-6d6a4de3255a/resource/080f8885-29c0-42d3-84a8-bf526f362e3e/download/alumnado-
+mad | 1903741 | Adultos extranjeros matriculados por tipo de enseñanza y nacionalidad | 2026-11-06
+      CSV | https://datos.comunidad.madrid/dataset/be2dc7d2-aa37-4efc-b916-dcdb346fe877/resource/263a3abf-c7b7-4105-9e13-5a6068e490ea/download/adultos-e
+      JSON | https://datos.comunidad.madrid/dataset/be2dc7d2-aa37-4efc-b916-dcdb346fe877/resource/2e882c7a-6cc5-4ea2-b5f0-2ebaa2791016/download/adultos-e
+mad | 1918420 | Tasa bruta de población que se gradúa en cada enseñanza/titulación por sexo | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/7835a9b8-f71e-4062-8af5-a9d23d385e59/resource/994d256b-a29c-43f6-bd6a-9db8b73e7fce/download/tasa-brut
+      JSON | https://datos.comunidad.madrid/dataset/7835a9b8-f71e-4062-8af5-a9d23d385e59/resource/3dd6cc41-c90b-4959-b791-e7b4a1741d21/download/tasa-brut
+mad | alumnos_general_matriculados_por_tipo | Alumnos del régimen general matriculados en centros escolares por tipo de enseñanza | 2026-11-06
+      CSV | https://datos.comunidad.madrid/dataset/34a0d2f2-42fd-4ce4-a93f-00933e1a3a9b/resource/822d0549-c809-47cd-a544-7910c3f8c81f/download/alumnos-d
+      JSON | https://datos.comunidad.madrid/dataset/34a0d2f2-42fd-4ce4-a93f-00933e1a3a9b/resource/7e4ce1bc-870a-42bd-879b-962e2f9889e7/download/alumnos-d
+mad | adultos_matriculados_por_tipo_y_sexo | Adultos matriculados por tipo de enseñanza y sexo | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/520d9ebd-43ed-415d-8aa5-daf080fccb96/resource/e6f9037b-f6ab-48b9-b53c-bcf3aa53afc4/download/adultos-m
+      JSON | https://datos.comunidad.madrid/dataset/520d9ebd-43ed-415d-8aa5-daf080fccb96/resource/12178989-2f7a-4ed2-a8b9-14f519e022d1/download/adultos-m
+mad | spacm_plantillas_docentes_por_centro | Plantillas funcionales (Cupo) de docentes por DAT, centro, cuerpo, y función docente | 2026-05-13
+      HTML | https://www.comunidad.madrid/docs/assets/2025/11/12/rh20_20251112_docentes_fun_25_26.xlsx
+mad | 1903566 | Alumnos matriculados en Educación Secundaria Obligatoria (ESO) por lengua extranjera que cursan y titularidad del centro | 2026-11-05
+      CSV | https://datos.comunidad.madrid/dataset/2418952d-9890-4254-b60f-ee8ed538733c/resource/799b4f10-6b76-4892-99ff-38401fb226ed/download/alumnos-m
+      JSON | https://datos.comunidad.madrid/dataset/2418952d-9890-4254-b60f-ee8ed538733c/resource/a58b44c6-ad4d-40b1-a049-a84b582c23b6/download/alumnos-m
+ERR eus alumnado matriculado HTTP Error 404: Not Found
+ERR eus ikasleak HTTP Error 404: Not Found
+gob | Consultas a estadísticas de educación no universitaria: Alumnos matriculados | https://datos.gob.es/catalogo/a07002862-consultas-a-estadisticas-de-educacion-no-universitaria-alumnos-matriculados
+gob | Alumnos matriculados. Sexo, dedicación y procedencia. Curso 2012-2013. Universidad de Zaragoza | https://datos.gob.es/catalogo/u02100001-alumnos-matriculados-sexo-dedicacion-y-procedencia-curso-2012-2013-universidad-d
+gob | Alumnos matriculados en bachillerato a distancia por diversas características | https://datos.gob.es/catalogo/a13002908-alumnos-matriculados-en-bachillerato-a-distancia-por-diversas-caracteristicas
+gob | Alumnos matriculados en bachillerato a distancia que terminaron sus estudios por modalidad | https://datos.gob.es/catalogo/a13002908-alumnos-matriculados-en-bachillerato-a-distancia-que-terminaron-sus-estudios-por
+gob | Alumnos matriculados en bachillerato por lengua extranjera que cursan | https://datos.gob.es/catalogo/a13002908-alumnos-matriculados-en-bachillerato-por-lengua-extranjera-que-cursan
+gob | Alumnos matriculados en bachillerato repetidores por curso, titularidad de centro y sexo | https://datos.gob.es/catalogo/a13002908-alumnos-matriculados-en-bachillerato-repetidores-por-curso-titularidad-de-centro
+gob | Alumnos matriculados en ciclos formativos de formación profesional básica por lengua extranjera que cursan y titularidad del centro | https://datos.gob.es/catalogo/a13002908-alumnos-matriculados-en-ciclos-formativos-de-formacion-profesional-basica-por-le
+gob | Alumnos matriculados en ciclos formativos de formación profesional básica que terminaron su estudios por titularidad del centro y sexo | https://datos.gob.es/catalogo/a13002908-alumnos-matriculados-en-ciclos-formativos-de-formacion-profesional-basica-que-te
+gob | Alumnos matriculados en Ciclos Formativos de grado medio a distancia que teminaron sus estudios por titularidad del centro y sexo | https://datos.gob.es/catalogo/a13002908-alumnos-matriculados-en-ciclos-formativos-de-grado-medio-a-distancia-que-teminar
+gob | Alumnos matriculados en Ciclos Formativos de grado medio por lengua extranjera que cursan y titularidad del centro | https://datos.gob.es/catalogo/a13002908-alumnos-matriculados-en-ciclos-formativos-de-grado-medio-por-lengua-extranjera-q
+gob | Alumnos matriculados en Ciclos Formativos de grado medio que terminaron sus estudios por titularidad del centro y sexo | https://datos.gob.es/catalogo/a13002908-alumnos-matriculados-en-ciclos-formativos-de-grado-medio-que-terminaron-sus-estu
+gob | Alumnos matriculados en Ciclos Formativos de grado superior a distancia que terminaron sus estudios por titularidad del centro y sexo | https://datos.gob.es/catalogo/a13002908-alumnos-matriculados-en-ciclos-formativos-de-grado-superior-a-distancia-que-term
+gob | Alumnos matriculados en Ciclos Formativos de grado superior por lengua extranjera que cursan y titularidad del centro | https://datos.gob.es/catalogo/a13002908-alumnos-matriculados-en-ciclos-formativos-de-grado-superior-por-lengua-extranjer
+gob | Alumnos matriculados en Ciclos Formativos de grado superior que terminaron sus estudios por titularidad del centro y sexo | https://datos.gob.es/catalogo/a13002908-alumnos-matriculados-en-ciclos-formativos-de-grado-superior-que-terminaron-sus-e
+gob | Alumnos matriculados en educación especial específica por titularidad del centro | https://datos.gob.es/catalogo/a13002908-alumnos-matriculados-en-educacion-especial-especifica-por-titularidad-del-centro
+gob | Alumnos matriculados en educación infantil por lengua extranjera que cursa y titularidad del centro | https://datos.gob.es/catalogo/a13002908-alumnos-matriculados-en-educacion-infantil-por-lengua-extranjera-que-cursa-y-tit
+gob | Alumnos matriculados en educación infantil por titularidad ciclo y sexo | https://datos.gob.es/catalogo/a13002908-alumnos-matriculados-en-educacion-infantil-por-titularidad-ciclo-y-sexo
+gob | Alumnos matriculados en educación primaria por lengua extranjera que cursan y titularidad del centro | https://datos.gob.es/catalogo/a13002908-alumnos-matriculados-en-educacion-primaria-por-lengua-extranjera-que-cursan-y-ti
+gob | Alumnos matriculados en educación primaria que terminaron sus estudios por titularidad del centro y sexo | https://datos.gob.es/catalogo/a13002908-alumnos-matriculados-en-educacion-primaria-que-terminaron-sus-estudios-por-titul
+gob | Alumnos matriculados en Educación Secundaria Obligatoria (ESO) por lengua extranjera que cursan y titularidad del centro | https://datos.gob.es/catalogo/a13002908-alumnos-matriculados-en-educacion-secundaria-obligatoria-eso-por-lengua-extranje
+gob | Alumnos matriculados en Educación Secundaria Obligatoria (ESO) que terminaron sus estudios por titularidad del centro y por sexo | https://datos.gob.es/catalogo/a13002908-alumnos-matriculados-en-educacion-secundaria-obligatoria-eso-que-terminaron-sus-
+gob | Alumnos matriculados. Sexo, dedicación y procedencia. Curso 2009-2010. Universidad de Zaragoza | https://datos.gob.es/catalogo/u02100001-alumnos-matriculados-sexo-dedicacion-y-procedencia-curso-2009-2010-universidad-d
+gob | Alumnos matriculados. Sexo, dedicación y procedencia. Curso 2010-2011. Universidad de Zaragoza | https://datos.gob.es/catalogo/u02100001-alumnos-matriculados-sexo-dedicacion-y-procedencia-curso-2010-2011-universidad-d
+gob | Alumnos matriculados. Sexo, dedicación y procedencia. Curso 2011-2012. Universidad de Zaragoza | https://datos.gob.es/catalogo/u02100001-alumnos-matriculados-sexo-dedicacion-y-procedencia-curso-2011-2012-universidad-d
+gob | Alumnos matriculados. Sexo, dedicación y procedencia. Curso 2013-2014. Universidad de Zaragoza | https://datos.gob.es/catalogo/u02100001-alumnos-matriculados-sexo-dedicacion-y-procedencia-curso-2013-2014-universidad-d
+gob | Alumnos matriculados. Sexo, dedicación y procedencia. Curso 2014-2015. Universidad de Zaragoza | https://datos.gob.es/catalogo/u02100001-alumnos-matriculados-sexo-dedicacion-y-procedencia-curso-2014-2015-universidad-d
+gob | Alumnos matriculados. Sexo, dedicación y procedencia. Curso 2015-2016. Universidad de Zaragoza | https://datos.gob.es/catalogo/u02100001-alumnos-matriculados-sexo-dedicacion-y-procedencia-curso-2015-2016-universidad-d
+gob | Alumnos matriculados. Sexo, dedicación y procedencia. Curso 2017-2018. Universidad de Zaragoza | https://datos.gob.es/catalogo/u02100001-alumnos-matriculados-sexo-dedicacion-y-procedencia-curso-2017-2018-universidad-d
+gob | Alumnos matriculados. Sexo, dedicación y procedencia. Curso 2018-2019. Universidad de Zaragoza | https://datos.gob.es/catalogo/u02100001-alumnos-matriculados-sexo-dedicacion-y-procedencia-curso-2018-2019-universidad-d
+gob | Alumnos matriculados. Sexo, dedicación y procedencia. Curso 2019-2020. Universidad de Zaragoza | https://datos.gob.es/catalogo/u02100001-alumnos-matriculados-sexo-dedicacion-y-procedencia-curso-2019-2020-universidad-d
