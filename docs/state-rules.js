@@ -319,6 +319,17 @@ window.STATE_RULES = {
     ],
     note: "Check the current law and the council's own meeting rules before relying on this."
   },
+  croatia: {
+    title: "Rules for city and municipal council sessions",
+    checked: "November 8, 2026",
+    laws: [
+      { state: "Croatia", covers: "City and municipal councils", threshold: "",
+        rule: "Council sessions are public under the Local and Regional Self-Government Act and each council's rules of procedure; the public may attend, and many councils stream or record their sessions, though the law doesn't require it." },
+      { state: "Croatia", covers: "Schools", threshold: "",
+        rule: "Under the Primary and Secondary Education Act, the 32 largest cities (and the City of Zagreb) found and fund their primary schools; the counties do so elsewhere and for secondary schools. The Ministry of Science and Education sets the curriculum and pays teachers." }
+    ],
+    note: "Check the current law and the council's own rules before relying on this."
+  },
   ecuador: {
     title: "Rules for cantonal council (concejo municipal) meetings",
     checked: "November 7, 2026",

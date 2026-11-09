@@ -366,6 +366,17 @@ window.SOURCES = [
     note: "Built by data-prep/prep_australia.py and data-prep/build_latam.py. Council areas are matched by their 2021 LGA code (Merri-bek by its old code, as Moreland)."
   },
   {
+    only: "Croatia",
+    group: "Croatia: cities and municipalities, poverty map",
+    items: [
+      { title: "Poverty: World Bank and Croatian Bureau of Statistics, Croatia small-area estimation of consumption-based poverty (poverty maps), October 2016, 2011 data; city, municipal and county tables", url: "https://www.worldbank.org/en/country/croatia/publication/croatia-poverty-maps" },
+      { title: "The poverty map online (Croatian Bureau of Statistics, Geostat)", url: "https://geostat.dzs.hr/?lang=en" },
+      { title: "Borders and population: Eurostat GISCO Local Administrative Units (LAU) 2024; counties: GISCO NUTS 3 (2024)", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
+      { title: "Meetings: each council's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_croatia.py and data-prep/build_latam.py. Places are matched to the poverty map by name (shared names by the map's qualifier or population) and placed in counties by their borders."
+  },
+  {
     only: "Ecuador",
     group: "Ecuador: cantons, poverty, population and pupils",
     items: [

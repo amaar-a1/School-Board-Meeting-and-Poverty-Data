@@ -1,0 +1,22 @@
+statistical_region,county,population,poverty_rate_pct,ci95_low,ci95_high
+Northwestern,Zagrebačka,311918,10.9,8.8,13.0
+Northwestern,Krapinsko-zagorska,129393,17.6,14.7,20.4
+Northwestern,Varaždinska,170380,23.7,20.2,27.2
+Northwestern,Koprivničko-križevačka,112540,16.7,14.5,18.9
+Northwestern,Međimurska,110888,15.0,12.9,17.1
+Northwestern,Grad Zagreb,772340,5.9,4.2,7.6
+Central & Eastern,Sisačko-moslavačka,168534,31.3,28.9,33.7
+Central & Eastern,Karlovačka,125722,34.3,31.4,37.2
+Central & Eastern,Bjelovarsko-bilogorska,117420,31.4,27.5,35.3
+Central & Eastern,Virovitičko-podravska,83129,30.8,27.6,33.9
+Central & Eastern,Požeško-slavonska,75912,32.5,30.2,34.7
+Central & Eastern,Brodsko-posavska,154863,33.9,31.2,36.6
+Central & Eastern,Osječko-baranjska,297230,24.9,22.6,27.2
+Central & Eastern,Vukovarsko-srijemska,174324,32.3,29.6,35.0
+Adriatic,Primorsko-goranska,290446,9.1,7.4,10.8
+Adriatic,Ličko-senjska,49766,11.8,9.5,14.2
+Adriatic,Zadarska,167029,10.1,8.4,11.8
+Adriatic,Šibensko-kninska,107345,14.1,12.0,16.1
+Adriatic,Splitsko-dalmatinska,445049,16.9,14.9,19.0
+Adriatic,Istarska,204025,10.2,8.6,11.9
+Adriatic,Dubrovačko-neretvanska,118707,11.0,8.8,13.2
