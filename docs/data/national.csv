@@ -2437,7 +2437,7 @@ Chaney-Monge School District 88,IL,Will County,0,480,67,13.95833333%,Suburban,45
 Channahon School District 17,IL,Will County,0,1272,55,4.32389937%,Suburban,1163,1709540,,,,,,10479,1163,81,
 Charleston Community Unit School District 1,IL,Coles County,0,2833,385,13.58983410%,Town,2652,1709600,,,,,,22807,2652,3,
 Chester Community Unit School District 139,IL,Randolph County,0,1074,170,15.82867784%,Town,968,1709810,,,,,,9124,968,153,
-Chester Non-High School District 122,IL,Randolph County,0,41,6,14.63414634%,Rural,41,1700333,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,789,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Chester Non-High School District 122,IL,Randolph County,0,41,6,14.63414634%,Rural,41,1700333,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,789,0,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Chester-East Lincoln Community CSD 61,IL,Logan County,0,283,25,8.83392226%,Town,299,1709850,,,,,,2866,299,0,
 Chicago Heights School District 170,IL,Cook County,0,2859,763,26.68765303%,Suburban,2655,1709960,,,,,,21711,2655,1049,
 Chicago Public School District 299,IL,Cook County,0,378975,79140,20.88264397%,Urban,322809,1709930,,,,,,2698006,322809,36172,
@@ -4309,27 +4309,27 @@ Augusta,ME,Kennebec County,0,2360,389,16.48305085%,Town,2176,2302640,,,,,,19636,
 Baileyville,ME,Washington County,0,226,32,14.15929204%,Rural,308,2302730,,,,,,1330,308,0,
 Bangor,ME,Penobscot County,0,3654,553,15.13409962%,Urban,3434,2302820,,,,,,32721,3434,1122,
 Bar Harbor,ME,Hancock County,0,380,31,8.15789474%,Rural,346,2302850,,,,,,5223,346,0,
-Baring Plantation,ME,Washington County,0,25,2,8.00000000%,Rural,25,2302880,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,203,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Baring Plantation,ME,Washington County,0,25,2,8.00000000%,Rural,25,2302880,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,203,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Beals,ME,Washington County,0,25,6,24.00000000%,Rural,37,2302950,,,,,,447,37,0,
-Beaver Cove,ME,Piscataquis County,0,6,0,0.00000000%,Rural,6,2302960,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,138,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
-Beddington,ME,Washington County,0,5,0,0.00000000%,Rural,5,2302980,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,61,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Beaver Cove,ME,Piscataquis County,0,6,0,0.00000000%,Rural,6,2302960,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,138,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Beddington,ME,Washington County,0,5,0,0.00000000%,Rural,5,2302980,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,61,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Biddeford,ME,York County,0,2533,313,12.35688906%,Suburban,2398,2303150,,,,,,23421,2398,0,
 Blue Hill,ME,Hancock County,0,394,50,12.69035533%,Rural,383,2303210,,,,,,2866,383,450,
 Boothbay-Boothbay Harbor Community School District,ME,Lincoln County,0,476,55,11.55462185%,Town,508,2303290,,,,,,5209,508,0,
 Bowerbank,ME,Piscataquis County,0,9,0,0.00000000%,Rural,2,2303390,,,,,,141,2,0,
 Bremen,ME,Lincoln County,0,40,5,12.50000000%,Rural,26,2303480,,,,,,852,26,,
 Brewer,ME,Penobscot County,0,1409,158,11.21362669%,Suburban,1564,2303510,,,,,,9967,1564,0,
-Bridgewater,ME,Aroostook County,0,81,11,13.58024691%,Rural,81,2300004,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,529,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
-Brighton Plantation,ME,Somerset County,0,4,0,0.00000000%,Rural,4,2314811,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,63,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Bridgewater,ME,Aroostook County,0,81,11,13.58024691%,Rural,81,2300004,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,529,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Brighton Plantation,ME,Somerset County,0,4,0,0.00000000%,Rural,4,2314811,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,63,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Bristol,ME,Lincoln County,0,311,31,9.96784566%,Rural,267,2303600,,,,,,2935,267,0,
 Brooklin,ME,Hancock County,0,85,9,10.58823529%,Rural,70,2303610,,,,,,849,70,0,
 Brooksville,ME,Hancock County,0,100,27,27.00000000%,Rural,70,2303640,,,,,,960,70,0,
 Brunswick,ME,Cumberland County,0,2618,188,7.18105424%,Town,2406,2303780,,,,,,22527,2406,119,
 Burlington Public Schools,ME,Penobscot County,0,58,10,17.24137931%,Rural,1,2314834,,,,,,384,1,0,
-Byron Public Schools,ME,Oxford County,0,5,0,0.00000000%,Rural,5,2314835,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,107,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Byron Public Schools,ME,Oxford County,0,5,0,0.00000000%,Rural,5,2314835,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,107,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Calais,ME,Washington County,0,444,104,23.42342342%,Rural,557,2303870,,,,,,3108,557,0,
 Cape Elizabeth,ME,Cumberland County,0,1699,47,2.76633314%,Suburban,1525,2303930,,,,,,9873,1525,23,
-Caratunk,ME,Somerset County,0,9,1,11.11111111%,Rural,9,2300061,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,82,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Caratunk,ME,Somerset County,0,9,1,11.11111111%,Rural,9,2300061,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,82,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Carrabassett Valley,ME,Franklin County,0,70,6,8.57142857%,Rural,20,2303980,,,,,,706,20,82,
 Carroll Plantation,ME,Penobscot County,0,11,3,27.27272727%,Rural,4,2303990,,,,,,142,4,0,
 Castine,ME,Hancock County,0,66,5,7.57575758%,Rural,77,2304080,,,,,,1355,77,0,
@@ -4340,16 +4340,16 @@ Cherryfield,ME,Washington County,0,142,36,25.35211268%,Rural,97,2314814,,,,,,111
 Cooper,ME,Washington County,0,18,6,33.33333333%,Rural,3,2304440,,,,,,170,3,0,
 Coplin Plantation,ME,Franklin County,0,19,2,10.52631579%,Rural,2,2304500,,,,,,137,2,0,
 Cranberry Isles,ME,Hancock County,0,31,2,6.45161290%,Rural,13,2304620,,,,,,164,13,0,
-Crawford,ME,Washington County,0,4,1,25.00000000%,Rural,4,2304650,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,94,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Crawford,ME,Washington County,0,4,1,25.00000000%,Rural,4,2304650,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,94,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Cutler,ME,Washington County,0,90,20,22.22222222%,Rural,73,2300065,,,,,,529,73,0,
 Damariscotta,ME,Lincoln County,0,108,7,6.48148148%,Rural,86,2304830,,,,,,2378,86,,
 Dayton Public Schools,ME,York County,0,330,14,4.24242424%,Rural,309,2304860,,,,,,2211,309,0,
-Deblois,ME,Washington County,0,11,1,9.09090909%,Rural,11,2304880,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,75,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Deblois,ME,Washington County,0,11,1,9.09090909%,Rural,11,2304880,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,75,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Dedham,ME,Penobscot County,0,210,13,6.19047619%,Rural,200,2304890,,,,,,1692,200,0,
 Deer Isle-Stonington Community School District,ME,Hancock County,0,382,58,15.18324607%,Rural,318,2304895,,,,,,3336,318,0,
-Dennistown Plantation,ME,Waldo County,0,8,4,50.00000000%,Rural,8,2304897,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,62,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Dennistown Plantation,ME,Waldo County,0,8,4,50.00000000%,Rural,8,2304897,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,62,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Dennysville,ME,Washington County,0,41,12,29.26829268%,Rural,10,2304900,,,,,,303,10,0,
-Eagle Lake Public Schools,ME,Aroostook County,0,69,6,8.69565217%,Rural,69,2314839,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,768,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Eagle Lake Public Schools,ME,Aroostook County,0,69,6,8.69565217%,Rural,69,2314839,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,768,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 East Machias,ME,Washington County,0,229,36,15.72052402%,Rural,244,2300062,,,,,,1338,244,328,
 East Millinocket,ME,Penobscot County,0,200,55,27.50000000%,Rural,245,2305280,,,,,,1620,245,0,
 East Range Community School District,ME,Washington County,0,18,7,38.88888889%,Rural,19,2305380,,,,,,181,19,0,
@@ -4364,12 +4364,12 @@ Five Town Community School District,ME,Knox County,0,691,41,5.93342981%,Rural,74
 Franklin Unorganized Territory,ME,Franklin County,0,111,9,8.10810811%,Rural,111,2382003,"Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's",,,,,1038,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Frenchboro,ME,Hancock County,0,1,0,0.00000000%,Rural,5,2307590,,,,,,30,5,0,
 Georgetown,ME,Lincoln County,0,102,5,4.90196078%,Rural,56,2305970,,,,,,1083,56,0,
-Gilead,ME,Oxford County,0,17,1,5.88235294%,Rural,17,2305980,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,203,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Gilead,ME,Oxford County,0,17,1,5.88235294%,Rural,17,2305980,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,203,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Glenburn,ME,Penobscot County,0,745,55,7.38255034%,Rural,431,2306000,,,,,,4790,431,0,
 Glenwood Plantation,ME,Aroostook County,0,0,0,14.9%,Rural,0,2306030,"No children ages 5-17 live here (Census), so this is the all-ages poverty rate for Aroostook County (Census SAIPE 2024). Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,5,0,0,
 Gorham,ME,Cumberland County,0,3058,151,4.93786789%,Suburban,2851,2306060,,,,,,18986,2851,0,
-Grand Isle,ME,Aroostook County,0,33,4,12.12121212%,Rural,33,2300005,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,364,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
-Great Lake Stream Plantation,ME,Washington County,0,11,2,18.18181818%,Rural,11,2306150,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,126,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Grand Isle,ME,Aroostook County,0,33,4,12.12121212%,Rural,33,2300005,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,364,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Great Lake Stream Plantation,ME,Washington County,0,11,2,18.18181818%,Rural,11,2306150,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,126,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Great Salt Bay Community School District,ME,Lincoln County,0,405,34,8.39506173%,Rural,387,2306160,,,,,,5145,387,0,
 Greenbush,ME,Penobscot County,0,223,40,17.93721973%,Rural,147,2306180,,,,,,1488,147,0,
 Greenville,ME,Piscataquis County,0,127,13,10.23622047%,Rural,184,2306250,,,,,,1491,184,0,
@@ -4377,7 +4377,7 @@ Hancock Public Schools,ME,Hancock County,0,305,36,11.80327869%,Rural,175,2306260
 Hancock Unorganized Territory,ME,Hancock County,0,17,5,29.41176471%,Rural,17,2382011,"Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's",,,,,225,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Harmony,ME,Penobscot County,0,84,19,22.61904762%,Rural,69,2306330,,,,,,839,69,0,
 Hermon,ME,Penobscot County,0,1117,77,6.89346464%,Rural,1359,2306510,,,,,,6658,1359,12,
-Highland Plantation,ME,Somerset County,0,1,0,0.00000000%,Rural,1,2306600,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,53,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Highland Plantation,ME,Somerset County,0,1,0,0.00000000%,Rural,1,2306600,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,53,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Hope,ME,Waldo County,0,177,16,9.03954802%,Rural,137,2306610,,,,,,1714,137,0,
 Indian Island,ME,Washington County,0,53,15,28.30188679%,Rural,95,2300066,,,,,,381,95,0,
 Indian Township,ME,Washington County,0,176,29,16.47727273%,Rural,134,2300064,,,,,,767,134,0,
@@ -4387,7 +4387,7 @@ Jefferson,ME,Lincoln County,0,366,41,11.20218579%,Rural,335,2306870,,,,,,2642,33
 Jonesboro,ME,Washington County,0,83,21,25.30120482%,Rural,60,2306900,,,,,,584,60,0,
 Jonesport,ME,Washington County,0,115,28,24.34782609%,Rural,104,2307100,,,,,,1256,104,0,
 Kennebec Unorganized Territory,ME,Kennebec County,0,6,2,33.33333333%,Rural,6,2382005,"Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's",,,,,37,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
-Kingsbury Plantation,ME,Piscataquis County,0,1,0,0.00000000%,Rural,1,2307110,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,29,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Kingsbury Plantation,ME,Piscataquis County,0,1,0,0.00000000%,Rural,1,2307110,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,29,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Kittery,ME,York County,0,996,42,4.21686747%,Suburban,933,2307140,,,,,,10458,933,0,
 Knox Unorganized Territory,ME,Knox County,0,1,0,0.00000000%,Rural,1,2382007,"Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's",,,,,4,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Lake View Plantation,ME,Piscataquis County,0,10,4,40.00000000%,Rural,3,2300059,,,,,,156,3,0,
@@ -4395,7 +4395,7 @@ Lakeville,ME,Penobscot County,0,7,1,14.28571429%,Rural,1,2307200,,,,,,107,1,0,
 Lamoine Public Schools,ME,Hancock County,0,204,37,18.13725490%,Rural,133,2307250,,,,,,1765,133,0,
 Lewiston,ME,Androscoggin County,0,5565,1135,20.39532794%,Urban,5147,2307320,,,,,,38502,5147,315,
 Limestone Public Schools,ME,Aroostook County,0,245,56,22.85714286%,Rural,144,2314842,,,,,,1519,144,0,
-Lincoln Plantation,ME,Oxford County,0,1,0,0.00000000%,Rural,1,2307440,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,43,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Lincoln Plantation,ME,Oxford County,0,1,0,0.00000000%,Rural,1,2307440,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,43,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Lincoln Unorganized Territory,ME,Lincoln County,0,1,0,0.00000000%,Rural,1,2382006,"Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's",,,,,1,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Lincolnville,ME,Waldo County,0,213,19,8.92018779%,Rural,215,2307450,,,,,,2370,215,0,
 Lisbon,ME,Androscoggin County,0,1453,146,10.04817619%,Suburban,1313,2307530,,,,,,10072,1313,44,
@@ -4407,23 +4407,23 @@ Machiasport,ME,Washington County,0,158,42,26.58227848%,Rural,64,2300067,,,,,,971
 Macwahoc Plantation,ME,Penobscot County,0,1,0,0.00000000%,Rural,1,2307770,,,,,,62,1,0,
 Madawaska,ME,Aroostook County,0,430,70,16.27906977%,Rural,381,2307800,,,,,,3848,381,0,
 Marshfield,ME,Washington County,0,103,17,16.50485437%,Rural,14,2307980,,,,,,533,14,0,
-Meddybemps,ME,Washington County,0,10,6,60.00000000%,Rural,10,2308135,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,140,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Meddybemps,ME,Washington County,0,10,6,60.00000000%,Rural,10,2308135,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,140,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Medford,ME,Piscataquis County,0,19,8,42.10526316%,Rural,1,2308140,,,,,,239,1,0,
 Medway,ME,Penobscot County,0,158,15,9.49367089%,Rural,119,2308160,,,,,,1223,119,0,
 Milford,ME,Penobscot County,0,429,43,10.02331002%,Suburban,289,2308250,,,,,,3163,289,0,
 Millinocket,ME,Penobscot County,0,457,94,20.56892779%,Rural,449,2308280,,,,,,4240,449,13,
 Monhegan Plantation,ME,Lincoln County,0,3,1,33.33333333%,Rural,4,2308340,,,,,,66,4,0,
 Moosabec Community School District,ME,Washington County,0,77,15,19.48051948%,Rural,58,2308400,,,,,,1704,58,,
-Moro Plantation Public Schools,ME,Penobscot County,0,4,0,0.00000000%,Rural,4,2314836,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,44,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Moro Plantation Public Schools,ME,Penobscot County,0,4,0,0.00000000%,Rural,4,2314836,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,44,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Mount Desert,ME,Hancock County,0,156,8,5.12820513%,Rural,159,2308490,,,,,,2203,159,33,
 Mount Desert Community School District,ME,Hancock County,0,385,25,6.49350649%,Rural,474,2308500,,,,,,10814,474,,
-Nashville Plantation,ME,Aroostook County,0,3,0,0.00000000%,Rural,3,2308580,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,27,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
-New Sweden,ME,Aroostook County,0,78,20,25.64102564%,Rural,78,2308700,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,574,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Nashville Plantation,ME,Aroostook County,0,3,0,0.00000000%,Rural,3,2308580,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,27,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+New Sweden,ME,Aroostook County,0,78,20,25.64102564%,Rural,78,2308700,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,574,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Newcastle,ME,Lincoln County,0,85,5,5.88235294%,Rural,99,2308760,,,,,,1914,99,,
 Nobleboro,ME,Lincoln County,0,235,17,7.23404255%,Rural,217,2308940,,,,,,1855,217,69,
 Northfield,ME,Washington County,0,24,5,20.83333333%,Rural,4,2309090,,,,,,180,4,0,
 Northport Public Schools,ME,Waldo County,0,193,21,10.88082902%,Town,93,2314824,,,,,,1589,93,0,
-Orient,ME,Washington County,0,26,7,26.92307692%,Rural,26,2309240,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,155,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Orient,ME,Washington County,0,26,7,26.92307692%,Rural,26,2309240,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,155,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Orrington,ME,Penobscot County,0,562,36,6.40569395%,Rural,409,2309330,,,,,,3928,409,0,
 Otis,ME,Hancock County,0,68,9,13.23529412%,Rural,80,2309390,,,,,,691,80,0,
 Oxford Unorganized Territory,ME,Oxford County,0,95,11,11.57894737%,Rural,95,2382002,"Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's",,,,,833,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
@@ -4433,7 +4433,7 @@ Penobscot Unorganized Territory,ME,Penobscot County,0,130,26,20.00000000%,Rural,
 Perry,ME,Washington County,0,128,19,14.84375000%,Rural,82,2309650,,,,,,809,82,0,
 Piscataquis Unorganized Territory,ME,Piscataquis County,0,90,11,12.22222222%,Rural,90,2382009,"Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's",,,,,1054,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Pleasant Point,ME,Washington County,0,80,13,16.25000000%,Rural,145,2300069,,,,,,698,145,0,
-Pleasant Ridge Plantation,ME,Somerset County,0,3,1,33.33333333%,Rural,3,2309810,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,86,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Pleasant Ridge Plantation,ME,Somerset County,0,3,1,33.33333333%,Rural,3,2309810,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,86,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Portland,ME,Cumberland County,46,7071,1033,14.60896620%,Urban,6649,2309930,,,,2026-01-16,2025:19; 2026:6,70832,6649,1386,
 Princeton,ME,Washington County,0,110,18,16.36363636%,Rural,114,2309990,,,,,,752,114,0,
 Reed Plantation,ME,Penobscot County,0,8,3,37.50000000%,Rural,3,2310140,,,,,,128,3,0,
@@ -4473,7 +4473,7 @@ Saco Public Schools,ME,York County,0,2859,189,6.61070304%,Suburban,2806,2310380,
 Sagadahoc Unorganized Territory,ME,Sagadahoc County,0,0,0,7.8%,Rural,,2382004,"No children ages 5-17 live here (Census), so this is the all-ages poverty rate for Sagadahoc County (Census SAIPE 2024). Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's",,,,,0,,,
 Sanford,ME,York County,0,3180,341,10.72327044%,Town,3265,2310500,,,,,,22829,3265,135,
 Scarborough,ME,Cumberland County,4,3352,127,3.78878282%,Suburban,2857,2310530,,,,2025-12-04,2025:4,22919,2857,30,
-School Administration District 10,ME,Aroostook County,0,26,11,42.30769231%,Rural,26,2310560,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,236,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+School Administration District 10,ME,Aroostook County,0,26,11,42.30769231%,Rural,26,2310560,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,236,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 School Administrative District 01,ME,Aroostook County,0,1719,219,12.73996510%,Rural,1687,2310860,,,,,,11943,1687,36,
 School Administrative District 03,ME,Waldo County,0,1432,228,15.92178771%,Rural,1017,2311520,,,,,,11181,1017,0,
 School Administrative District 04,ME,Piscataquis County,0,603,97,16.08623549%,Rural,491,2311730,,,,,,4808,491,0,
@@ -4518,7 +4518,7 @@ School Administrative District 60,ME,York County,0,3156,166,5.25982256%,Rural,28
 School Administrative District 61,ME,Cumberland County,0,1705,197,11.55425220%,Rural,1640,2314210,,,,,,13449,1640,182,
 School Administrative District 63,ME,Penobscot County,0,885,71,8.02259887%,Rural,539,2314470,,,,,,6504,539,0,
 School Administrative District 64,ME,Penobscot County,0,1189,167,14.04541632%,Rural,1041,2314440,,,,,,8277,1041,10,
-School Administrative District 65,ME,Knox County,0,4,0,0.00000000%,Rural,4,2314410,,,,,,54,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+School Administrative District 65,ME,Knox County,0,4,0,0.00000000%,Rural,4,2314410,,,,,,54,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 School Administrative District 68,ME,Piscataquis County,0,1082,183,16.91312384%,Rural,977,2314761,,,,,,7508,977,400,
 School Administrative District 70,ME,Aroostook County,0,574,88,15.33101045%,Rural,502,2314762,,,,,,3577,502,0,
 School Administrative District 72,ME,Oxford County,0,1160,140,12.06896552%,Rural,1111,2314765,,,,,,8688,1111,643,
@@ -4526,7 +4526,7 @@ School Administrative District 74,ME,Somerset County,0,642,104,16.19937695%,Rura
 School Administrative District 75,ME,Sagadahoc County,0,2786,223,8.00430725%,Town,2342,2314768,,,,,,21331,2342,0,
 School Administrative District 76,ME,Hancock County,0,49,4,8.16326531%,Rural,23,2311910,,,,,,364,23,0,
 Sebago Public Schools,ME,Cumberland County,0,235,21,8.93617021%,Rural,116,2314837,,,,,,1979,116,0,
-Seboeis Plantation,ME,Penobscot County,0,1,0,0.00000000%,Rural,1,2300057,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,41,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Seboeis Plantation,ME,Penobscot County,0,1,0,0.00000000%,Rural,1,2300057,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,41,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Sedgwick,ME,Hancock County,0,177,33,18.64406780%,Rural,112,2312140,,,,,,1234,112,0,
 Shirley,ME,Piscataquis County,0,33,4,12.12121212%,Rural,1,2312180,,,,,,260,1,0,
 Somerset Unorganized Territory,ME,Somerset County,0,50,4,8.00000000%,Rural,50,2382008,"Students are served by Maine's Education in the Unorganized Territory program, which NCES reports statewide (185 students in 2023), not by county; locale is the program's",,,,,780,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
@@ -4537,11 +4537,11 @@ Southwest Harbor,ME,Hancock County,0,132,12,9.09090909%,Rural,122,2312390,,,,,,1
 St. George Public Schools,ME,Knox County,0,284,21,7.39436620%,Rural,215,2314820,,,,,,2618,215,0,
 Surry,ME,Hancock County,0,199,34,17.08542714%,Rural,171,2312750,,,,,,1675,171,0,
 Talmadge,ME,Washington County,0,15,5,33.33333333%,Rural,1,2312810,,,,,,71,1,0,
-The Forks Plantation,ME,Somerset County,0,2,1,50.00000000%,Rural,2,2300052,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,49,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+The Forks Plantation,ME,Somerset County,0,2,1,50.00000000%,Rural,2,2300052,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,49,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Tremont,ME,Hancock County,0,113,13,11.50442478%,Rural,135,2312960,,,,,,1585,135,0,
 Trenton,ME,Hancock County,0,205,23,11.21951220%,Rural,139,2312980,,,,,,1626,139,0,
-Upton,ME,Oxford County,0,2,1,50.00000000%,Rural,2,2313070,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,72,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
-Vanceboro,ME,Washington County,0,7,2,28.57142857%,Rural,7,2313080,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,103,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Upton,ME,Oxford County,0,2,1,50.00000000%,Rural,2,2313070,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,72,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Vanceboro,ME,Washington County,0,7,2,28.57142857%,Rural,7,2313080,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,103,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Vassalboro,ME,Kennebec County,0,736,65,8.83152174%,Rural,485,2313110,,,,,,4696,485,0,
 Veazie,ME,Penobscot County,0,238,20,8.40336134%,Suburban,189,2313140,,,,,,1869,189,0,
 Waite,ME,Washington County,0,7,2,28.57142857%,Rural,3,2313200,,,,,,67,3,0,
@@ -4550,18 +4550,18 @@ Waterville,ME,Kennebec County,0,1911,360,18.83830455%,Town,1618,2313350,,,,,,164
 Wells-Ogunquit Community School District,ME,York County,0,1508,59,3.91246684%,Suburban,1402,2313490,,,,,,13388,1402,0,
 Wesley,ME,Washington County,0,15,3,20.00000000%,Rural,3,2313500,,,,,,123,3,0,
 West Bath Public Schools,ME,Sagadahoc County,0,228,18,7.89473684%,Town,102,2313530,,,,,,1956,102,0,
-West Forks Plantation,ME,Somerset County,0,5,1,20.00000000%,Rural,5,2300058,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,59,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+West Forks Plantation,ME,Somerset County,0,5,1,20.00000000%,Rural,5,2300058,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,59,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Westbrook,ME,Cumberland County,0,2623,385,14.67784979%,Suburban,2311,2313560,,,,,,21123,2311,22,
-Westmanland,ME,Aroostook County,0,6,0,0.00000000%,Rural,6,2313590,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,79,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Westmanland,ME,Aroostook County,0,6,0,0.00000000%,Rural,6,2313590,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,79,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Whiting,ME,Washington County,0,87,16,18.39080460%,Rural,34,2300068,,,,,,486,34,0,
 Whitneyville,ME,Washington County,0,32,7,21.87500000%,Rural,1,2313710,,,,,,204,1,0,
 Willimantic,ME,Piscataquis County,0,13,2,15.38461538%,Rural,1,2313740,,,,,,139,1,0,
 Winslow,ME,Kennebec County,14,1196,122,10.20066890%,Town,1108,2313860,,,,2025-12-15,2025:14,8258,1108,0,
-Winterville Plantation Public Schools,ME,Aroostook County,0,28,2,7.14285714%,Rural,28,2314825,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,193,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Winterville Plantation Public Schools,ME,Aroostook County,0,28,2,7.14285714%,Rural,28,2314825,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,193,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Winthrop,ME,Kennebec County,19,900,81,9.00000000%,Rural,819,2313970,,,,2025-12-17,2025:19,6360,819,0,
 Wiscasset Public Schools,ME,Lincoln County,0,514,72,14.00778210%,Rural,428,2313980,,,,,,3875,428,0,
 Woodland,ME,Aroostook County,0,172,22,12.79069767%,Rural,167,2314010,,,,,,1211,167,0,
-Woodville,ME,Penobscot County,0,22,6,27.27272727%,Rural,22,2314040,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,207,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Woodville,ME,Penobscot County,0,22,6,27.27272727%,Rural,22,2314040,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,207,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Yarmouth,ME,Cumberland County,0,1720,59,3.43023256%,Suburban,1663,2314100,,,,,,9309,1663,320,
 York,ME,York County,0,1805,60,3.32409972%,Suburban,1511,2314130,,,,,,14252,1511,29,
 Allegany County Public Schools,MD,Allegany County,0,8915,1796,20.14582165%,Town,8205,2400030,,,,,,67097,8205,802,
@@ -4678,7 +4678,7 @@ Gateway School District,MA,Hampshire County,0,990,118,11.91919192%,Rural,752,250
 Georgetown School District,MA,Essex County,0,1493,48,3.21500335%,Suburban,1262,2505220,,,,,,8618,1262,0,
 Gill-Montague School District,MA,Franklin County,0,1368,191,13.96198830%,Town,902,2505270,,,,,,11769,902,11,
 Gloucester School District,MA,Essex County,0,3616,368,10.17699115%,Suburban,2862,2505280,,,,,,30247,2862,29,
-Gosnold School District,MA,Barnstable County,0,3,0,0.00000000%,Rural,3,2505340,,,,,,72,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Gosnold School District,MA,Barnstable County,0,3,0,0.00000000%,Rural,3,2505340,,,,,,72,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Grafton School District,MA,Worcester County,0,3291,85,2.58280158%,Suburban,3050,2505370,,,,,,20100,3050,74,
 Granby School District,MA,Hampshire County,0,838,67,7.99522673%,Rural,693,2505400,,,,,,6231,693,178,
 Greenfield School District,MA,Franklin County,0,2125,342,16.09411765%,Town,1414,2505490,,,,,,17729,1414,219,
@@ -8712,7 +8712,7 @@ Divide County Public School District 1,ND,Divide County,0,365,53,14.52054795%,Ru
 Drake Public School District 57,ND,McHenry County,0,99,17,17.17171717%,Rural,77,3800029,,,,,,656,77,0,
 Drayton Public School District 19,ND,Pembina County,0,153,5,3.26797386%,Rural,170,3805340,,,,,,939,170,0,
 Dunseith Public School District 1,ND,Rolette County,0,695,203,29.20863309%,Rural,548,3805460,,,,,,2684,548,0,
-Earl Public School District 18,ND,Richland County,0,11,0,0.00000000%,Rural,11,3805670,,,,,,87,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Earl Public School District 18,ND,Richland County,0,11,0,0.00000000%,Rural,11,3805670,,,,,,87,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Edgeley Public School District 3,ND,LaMoure County,0,214,26,12.14953271%,Rural,260,3805850,,,,,,1292,260,0,
 Edmore Public School District 2,ND,Ramsey County,0,76,4,5.26315789%,Rural,18,3805950,,,,,,521,18,0,
 Eight Mile Public School District 6,ND,Williams County,0,200,13,6.50000000%,Rural,331,3806010,,,,,,828,331,0,
@@ -9191,7 +9191,7 @@ Mentor Exempted Village School District,OH,Lake County,28,8387,452,5.38929295%,S
 Miami East Local School District,OH,Miami County,0,1498,75,5.00667557%,Rural,1403,3904862,,,,,,8717,1403,0,
 Miami Trace Local School District,OH,Fayette County,0,2680,318,11.86567164%,Rural,2487,3910010,,,,,,15452,2487,131,
 Miamisburg City School District,OH,Montgomery County,0,6278,806,12.83848359%,Suburban,4925,3904439,,,,,,39930,4925,1109,
-Middle Bass Local School District,OH,Ottawa County,0,13,1,7.69230769%,Rural,13,3904895,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,120,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Middle Bass Local School District,OH,Ottawa County,0,13,1,7.69230769%,Rural,13,3904895,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,120,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Middletown City School District,OH,Butler County,0,8430,2451,29.07473310%,Suburban,5978,3904440,,,,,,52278,5978,397,
 Midview Local School District,OH,Lorain County,0,3211,375,11.67860480%,Rural,2558,3904817,,,,,,24357,2558,105,
 Milford Exempted Village School District,OH,Clermont County,0,7900,395,5.00000000%,Suburban,6146,3904550,,,,,,45840,6146,292,
@@ -10220,7 +10220,7 @@ Bristol Township School District,PA,Bucks County,0,7729,939,12.14904904%,Suburba
 Brockway Area School District,PA,Jefferson County,0,1119,159,14.20911528%,Rural,868,4204260,,,,,,7331,868,17,
 Brookville Area School District,PA,Jefferson County,0,1741,219,12.57897760%,Rural,1322,4204320,,,,,,11573,1322,75,
 Brownsville Area School District,PA,Fayette County,0,1667,298,17.87642472%,Rural,1423,4204080,,,,,,13238,1423,0,
-Bryn Athyn School District,PA,Montgomery County,0,215,10,4.65116279%,Suburban,215,4204090,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,1306,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Bryn Athyn School District,PA,Montgomery County,0,215,10,4.65116279%,Suburban,215,4204090,"Has no schools of its own; its students attend schools in other districts, so it has no enrollment",,,,,1306,0,473,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Burgettstown Area School District,PA,Washington County,3,1297,143,11.02544333%,Rural,971,4204500,,,,2025-11,2025:3,9241,971,134,
 Burrell School District,PA,Westmoreland County,0,1833,192,10.47463175%,Suburban,1736,4204530,,,,,,13760,1736,0,
 Butler Area School District,PA,Butler County,0,7178,819,11.40986347%,Town,5941,4204590,,,,,,55581,5941,488,
@@ -12551,7 +12551,7 @@ Spokane Public Schools,WA,Spokane County,0,35414,3904,11.02388886%,Urban,28586,5
 Sprague School District,WA,Lincoln County,0,129,33,25.58139535%,Rural,74,5308280,,,,,,774,74,0,
 St. John School District,WA,Whitman County,0,162,14,8.64197531%,Rural,141,5308310,,,,,,1136,141,0,
 Stanwood-Camano School District,WA,Snohomish County,0,5447,395,7.25169818%,Town,4861,5308340,,,,,,38316,4861,0,
-Star School District,WA,Franklin County,0,25,2,8.00000000%,Rural,25,5308370,,,,,,108,,,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
+Star School District,WA,Franklin County,0,25,2,8.00000000%,Rural,25,5308370,,,,,,108,0,0,"Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"
 Starbuck School District,WA,Columbia County,0,16,2,12.50000000%,Rural,697,5308400,"Enrollment (697) is far above the 16 school-age children living here, likely because the district runs an online or statewide program that enrolls students from elsewhere",,,,,183,697,0,
 Stehekin School District,WA,Chelan County,0,15,1,6.66666667%,Rural,11,5308430,,,,,,94,11,0,
 Steilacoom Historical School District,WA,Pierce County,0,3987,257,6.44594934%,Suburban,3039,5308460,,,,,,23739,3039,0,
