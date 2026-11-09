@@ -1,0 +1,122 @@
+[
+[
+"README.md",
+1290
+],
+[
+"data/20140207_Schools_Locations.csv",
+7119824
+],
+[
+"data/2019/OSMaPaaralan_v2019-282-full.tsv",
+9613148
+],
+[
+"data/2019/OSMaPaaralan_v2019-282-taskings.geojson.7z",
+1382273
+],
+[
+"data/2019/README.md",
+100
+],
+[
+"data/Data for OSM.csv",
+6082729
+],
+[
+"data/Data for OSM.xlsx",
+3845225
+],
+[
+"data/DepEd_Letter_to_OSM_20132012.pdf",
+90464
+],
+[
+"data/deped_schools.geojson",
+18805662
+],
+[
+"data/deped_schools_test_data.geojson",
+69455
+],
+[
+"taginfo.json",
+3560
+],
+[
+"updates/20140207_mapaaralan_dupes.tsv",
+76
+],
+[
+"updates/readme.md",
+1170
+],
+[
+"updates/school_names_rev_2015-005.tsv",
+3152535
+],
+[
+"updates/wordcloud-heart_osmapaaralanv2.png",
+4919603
+]
+]
+== data/20140207_Schools_Locations.csv 7119824
+Region,Region Number,NSCB Provincial ID,Province,NSCB Municipality ID,Municipality,School Division,School District,Legislative District,Baranggay,Offering,ID,School Name,Latitude,Longitude,SOURCE
+ARMM,ARMM,1507,Basilan,150704,Maluso,Basilan,Maluso East,Lone District,,Elementary,133049,Abong-Abong ES,6.506053,121.913971,MAParaalan
+ARMM,ARMM,1507,Basilan,150708,Akbar,Basilan,Tuburan,Lone District,,Elementary,215015,Akbar ES,6.642826,122.274025,MAParaalan
+ARMM,ARMM,1507,Basilan,150706,Tipo-Tipo,Basilan,Tipo-Tipo West,Lone District,Amaloy,Elementary,133154,Amaloy ES,6.441051,122.123978,MAParaalan
+ARMM,ARMM,1507,Basilan,150703,Lantawan,Basilan,Lantawan,Lone District,,Elementary,133023,Atong-Atong ES,6.661594,121.898544,MAParaalan
+ARMM,ARMM,1507,Basilan,150703,Lantawan,Basilan,Lantawan,Lone District,Atong-Atong,Secondary,304926,Atong-Atong NHS,6.655624,121.899551,MAParaalan
+ARMM,ARMM,1507,Basilan,150703,Lantawan,Basilan,Lantawan,Lone District,Tairan,Secondary,304927,Atong-Atong NHS - Tairan Annex,6.635701,121.840111,MAParaalan
+ARMM,ARMM,1507,Basilan,150705,Sumisip,Basilan,Sumisip South,Lone District,,Elementary,133081,Babag ES,6.341968,121.954079,MAParaalan
+ARMM,ARMM,1507,Basilan,150705,Sumisip,Basilan,Sumisip North,Lone District,,Elementary,133096,Babagbato ES,6.413196,122.025146,MAParaalan
+ARMM,ARMM,1507,Basilan,150705,Sumisip,Basilan,Sumisip North,Lone District,Bacung,Elementary,133097,Bacung ES,6.432512,122.023926,MAParaalan
+ARMM,ARMM,1507,Basilan,150706,Tipo-Tipo,Bas
+== data/2019/OSMaPaaralan_v2019-282-full.tsv 9613148
+@id	name	short_name	old_name	date_started	population:pupils:2012	population:pupils:2015	isced:level	addr:region	addr:province	addr:town	addr:city	addr:borough	addr:housenumber	addr:street	addr:street:corner	addr:neighbourhood	addr:village	addr:hamlet	operator	latitude	longitude	hrslph100m	priority
+134837	Taungoh Elementary School			1980-05-01	355	346	1	Autonomous Region in Muslim Mindanao	Tawi-tawi	Sibutu									East Sibutu II District of Tawi-Tawi Schools Division, Department of Education	4.706311	119.492008	true	medium
+134836	Tandubanak Elementary School			1980-06-01	437	283	1	Autonomous Region in Muslim Mindanao	Tawi-tawi	Sibutu							Tandu Banak		East Sibutu II District of Tawi-Tawi Schools Division, Department of Education	4.718211	119.496092	true	medium
+305063	Tandubanak National High School			1980-06-01	319	377	2-3	Autonomous Region in Muslim Mindanao	Tawi-tawi	Sitangkai									Panglima Sugala District of Tawi-Tawi Schools Division, Department of Education	4.719133	119.495437	true	medium
+134834	Sheik Makdum Memorial Elementary School			1984-06-01	395	318	1	Autonomous Region in Muslim Mindanao	Tawi-tawi	Sibutu							Sheik Makdum		East Sibutu II District of Tawi-Tawi Schools Division, Department of Education	4.724386	119.496961	true	medium
+134863	Tampakan Elementary School			1960-06-01	519	500	1	Autonomous Region in Muslim Mindanao	Tawi-tawi	Simunul									West Simunul District of Tawi-Tawi Schools Division, Department of Education	4.918227	119.790486	true	medium
+1348
+== data/Data for OSM.csv 6082729
+Region,Province,Municipality,School Division,School District,Legislative District,Baranggay,Offering,ID,School Name,Latitude,Longitude,Enrolment (SY 2013-2014)
+Region I,ILOCOS NORTE,BACARRA,Ilocos Norte,Bacarra I,1st District,LIBTONG,Elementary,100001,Apaleng-Libtong ES,18.266653,120.614662,83
+Region I,ILOCOS NORTE,BACARRA,Ilocos Norte,Bacarra I,1st District,SANTA RITA (POB.),Elementary,100002,Bacarra CES,18.250841,120.608971,454
+Region I,ILOCOS NORTE,BACARRA,Ilocos Norte,Bacarra I,1st District,BUYON,Elementary,100003,Buyon ES,18.233589,120.615807,171
+Region I,ILOCOS NORTE,BACARRA,Ilocos Norte,Bacarra I,1st District,GANAGAN,Elementary,100004,Ganagan ES,18.24321,120.593361,121
+Region I,ILOCOS NORTE,BACARRA,Ilocos Norte,Bacarra I,1st District,MACUPIT,Elementary,100005,Macupit ES,18.2939,120.641029,81
+Region I,ILOCOS NORTE,BACARRA,Ilocos Norte,Bacarra I,1st District,NAMBARAN,Elementary,100006,Nambaran ES,18.265354,120.64447,130
+Region I,ILOCOS NORTE,BACARRA,Ilocos Norte,Bacarra I,1st District,PASIOCAN,Elementary,100007,Pasiocan ES,18.23457,120.608337,170
+Region I,ILOCOS NORTE,BACARRA,Ilocos Norte,Bacarra I,1st District,PULANGI,Elementary,100008,Pulangi ES,18.270903,120.622047,232
+Region I,ILOCOS NORTE,BACARRA,Ilocos Norte,Bacarra I,1st District,SANGIL,Elementary,100009,Sabas-Sagisi Memorial Elem. School,18.235277,120.607353,144
+Region I,ILOCOS NORTE,BACARRA,Ilocos Norte,Bacarra I,1st District,SANTA RITA (POB.),Elementary,100010,SPECIAL EDUCATION CENTER,18.251736,120.611343,276
+R
+== updates/20140207_mapaaralan_dupes.tsv 76
+/home/erwin/Downloads/OSM/OSMaPaaralan/working/20140207_mapaaralan_dupes.tsv
+== updates/school_names_rev_2015-005.tsv 3152535
+"[ref]"	"[name]"	"[name_short]"	"[old_name]"	"[branch]"	"iesec:level"	"_data_flag"
+101746	"A. Diaz, Sr. Elementary School"	""		""	"1"	"maPaaralan"
+102193	"A.P. Santos Elementary School & Special Education Center"	""		""	"0-1"	"maPaaralan"
+101283	"A.P. Guevara Integrated School"	""		""	"1"	"maPaaralan"
+100216	"Ab-abut Elementary School"	""		""	"1"	"maPaaralan"
+100043	"Abaca Elementary School"	""		""	"1"	"maPaaralan"
+100554	"Abaccan Elementary School"	""		""	"0-1"	"maPaaralan"
+101131	"Abagatanen Integrated School"	""	"Abagatanen Elementary School"	""	"1"	"maPaaralan"
+102252	"Abanon Central Elementary School"	""		""	"1"	"maPaaralan"
+100307	"Abkir Elementary School"	""		""	"1"	"maPaaralan"
+100100	"Ablan Community School"	""		""	"1"	"maPaaralan"
+101531	"Abonagan-Bobon Elementary School"	""	"Abonagan Elementary School"	""	"1"	"maPaaralan"
+100217	"Abucay Elementary School"	""		""	"1"	"maPaaralan"
+101223	"Abunciang Elementary School"	""		""	"1"	"maPaaralan"
+100907	"Acao Elementary School"	""		""	"1"	"maPaaralan"
+100139	"Acnam-Caray Elementary School"	""		""	"1"	"maPaaralan"
+101887	"Acop Elementary School"	""		""	"1"	"maPaaralan"
+100160	"Adams Central Elementary School"	""		""	"1"	"maPaaralan"
+100700	"Ag-agrao Elementary School"	""		""	"0-1"	"maPaaralan"
+100762	"Ag-aguman Elementary School"	""		""	"0-1"	"maPaaralan"
+100891	"Ag-na ElementarySchool"	""		""	"1"	"maPaaralan"
+100101	"Agaga Elementary School"	""		""	"0-1"	"maPaaralan"
+102014	"Agat Elementary School"	""		""	"1"	"maPaaralan"
+
