@@ -1,43 +1,43 @@
 {
 "boards": {
 "CA-AB-0019-Sep": {
-"pop": 117001,
+"pop": 181506,
 "land_km2": 5720.1
 },
 "CA-AB-0020-Sep": {
-"pop": 80622,
+"pop": 104810,
 "land_km2": 3456.6
 },
 "CA-AB-0021-Sep": {
-"pop": 0,
+"pop": 22944,
 "land_km2": 9606.9
 },
 "CA-AB-0046-Sep": {
-"pop": 123592,
+"pop": 131599,
 "land_km2": 2925.6
 },
 "CA-AB-0047-Sep": {
-"pop": 0,
+"pop": 27816,
 "land_km2": 2808.5
 },
 "CA-AB-0048-Sep": {
-"pop": 72539,
+"pop": 90012,
 "land_km2": 2753.8
 },
 "CA-AB-0052-Pub": {
-"pop": 0,
+"pop": 15937,
 "land_km2": 7639.9
 },
 "CA-AB-0053-Pub": {
-"pop": 17388,
+"pop": 86810,
 "land_km2": 8338.2
 },
 "CA-AB-0054-Pub": {
-"pop": 13395,
+"pop": 62548,
 "land_km2": 6975.4
 },
 "CA-AB-0056-Pub": {
-"pop": 216,
+"pop": 17845,
 "land_km2": 4539.5
 },
 "CA-AB-0110-Sep": {
@@ -45,115 +45,115 @@
 "land_km2": 758.4
 },
 "CA-AB-0177-Pub": {
-"pop": 449,
+"pop": 39034,
 "land_km2": 18686.9
 },
 "CA-AB-0195-Pub": {
-"pop": 13263,
+"pop": 22332,
 "land_km2": 29395.8
 },
 "CA-AB-1045-Pub": {
-"pop": 5,
+"pop": 24371,
 "land_km2": 8984.9
 },
 "CA-AB-1070-Pub": {
-"pop": 0,
+"pop": 20554,
 "land_km2": 17674.6
 },
 "CA-AB-1085-Pub": {
-"pop": 102,
+"pop": 29851,
 "land_km2": 17181.2
 },
 "CA-AB-1110-Pub": {
-"pop": 39365,
+"pop": 39378,
 "land_km2": 2106.3
 },
 "CA-AB-1115-Pub": {
-"pop": 0,
+"pop": 8800,
 "land_km2": 15836.8
 },
 "CA-AB-1135-Pub": {
-"pop": 5,
+"pop": 28880,
 "land_km2": 9484.7
 },
 "CA-AB-1155-Pub": {
-"pop": 11,
+"pop": 32734,
 "land_km2": 14954.7
 },
 "CA-AB-1175-Pub": {
-"pop": 5,
+"pop": 26274,
 "land_km2": 10274.8
 },
 "CA-AB-1180-Pub": {
-"pop": 49106,
+"pop": 77575,
 "land_km2": 3657.5
 },
 "CA-AB-1190-Pub": {
-"pop": 278922,
+"pop": 279229,
 "land_km2": 4411.1
 },
 "CA-AB-1220-Pub": {
-"pop": 0,
+"pop": 18138,
 "land_km2": 12765.8
 },
 "CA-AB-1245-Pub": {
-"pop": 0,
+"pop": 42966,
 "land_km2": 20621.1
 },
 "CA-AB-1250-Pub": {
-"pop": 0,
+"pop": 9267,
 "land_km2": 17941.6
 },
 "CA-AB-1280-Pub": {
-"pop": 72526,
+"pop": 119127,
 "land_km2": 269493.1
 },
 "CA-AB-1325-Pub": {
-"pop": 14,
+"pop": 35351,
 "land_km2": 21466.1
 },
 "CA-AB-2045-Pub": {
-"pop": 14926,
+"pop": 25231,
 "land_km2": 6187.7
 },
 "CA-AB-2115-Pub": {
-"pop": 12609,
+"pop": 30564,
 "land_km2": 3421.9
 },
 "CA-AB-2125-Pub": {
-"pop": 7,
+"pop": 17810,
 "land_km2": 9927.9
 },
 "CA-AB-2155-Pub": {
-"pop": 14359,
+"pop": 44326,
 "land_km2": 8421.6
 },
 "CA-AB-2185-Pub": {
-"pop": 0,
+"pop": 19757,
 "land_km2": 6310.7
 },
 "CA-AB-2195-Pub": {
-"pop": 128484,
+"pop": 142172,
 "land_km2": 4902.3
 },
 "CA-AB-2245-Pub": {
-"pop": 80462,
+"pop": 80509,
 "land_km2": 2575.8
 },
 "CA-AB-2255-Pub": {
-"pop": 26325,
+"pop": 34044,
 "land_km2": 7500.9
 },
 "CA-AB-2275-Pub": {
-"pop": 27,
+"pop": 34706,
 "land_km2": 15573.7
 },
 "CA-AB-2285-Pub": {
-"pop": 18800,
+"pop": 47293,
 "land_km2": 11155.6
 },
 "CA-AB-2305-Pub": {
-"pop": 88312,
+"pop": 88437,
 "land_km2": 2715.2
 },
 "CA-AB-3020-Pub": {
@@ -165,7 +165,7 @@
 "land_km2": 767.0
 },
 "CA-AB-3040-Pub": {
-"pop": 97146,
+"pop": 97148,
 "land_km2": 125.7
 },
 "CA-AB-3050-Pub": {
@@ -173,19 +173,19 @@
 "land_km2": 140.9
 },
 "CA-AB-3065-Pub": {
-"pop": 15990,
+"pop": 25466,
 "land_km2": 3984.8
 },
 "CA-AB-3070-Pub": {
-"pop": 99979,
+"pop": 99991,
 "land_km2": 106.8
 },
 "CA-AB-3170-Pub": {
-"pop": 19608,
+"pop": 19630,
 "land_km2": 38.7
 },
 "CA-AB-3240-Pub": {
-"pop": 63700,
+"pop": 63707,
 "land_km2": 131.2
 },
 "CA-AB-3260-Pub": {
@@ -193,19 +193,19 @@
 "land_km2": 760.5
 },
 "CA-AB-4010-Sep": {
-"pop": 1450691,
+"pop": 1450957,
 "land_km2": 3399.9
 },
 "CA-AB-4077-Sep": {
-"pop": 86415,
+"pop": 86416,
 "land_km2": 545.7
 },
 "CA-AB-4105-Sep": {
-"pop": 1,
+"pop": 40092,
 "land_km2": 9562.4
 },
 "CA-AB-4130-Sep": {
-"pop": 64145,
+"pop": 87957,
 "land_km2": 7559.8
 },
 "CA-AB-4160-Sep": {
@@ -213,15 +213,15 @@
 "land_km2": 760.5
 },
 "CA-AB-4208-Sep": {
-"pop": 94364,
+"pop": 136991,
 "land_km2": 12838.8
 },
 "CA-AB-4330-Sep": {
-"pop": 0,
+"pop": 26708,
 "land_km2": 6240.5
 },
 "CA-AB-4481-Sep": {
-"pop": 114617,
+"pop": 139912,
 "land_km2": 5179.1
 },
 "CA-AB-4501-Sep": {
@@ -229,7 +229,7 @@
 "land_km2": 569.4
 },
 "CA-AB-4870-Sep": {
-"pop": 19608,
+"pop": 19630,
 "land_km2": 38.7
 },
 "CA-AB-7020-Pub": {
@@ -237,71 +237,71 @@
 "land_km2": 63.3
 },
 "CA-AB-REST": {
-"pop": 4200,
+"pop": 14006,
 "land_km2": 31139.1
 },
 "CA-BC-ConseilscolairefrancophonedelaColombieBr": {
-"pop": 4405242,
+"pop": 4921908,
 "land_km2": 915262.7
 },
 "CA-BC-SD05": {
-"pop": 26984,
+"pop": 44347,
 "land_km2": 12460.9
 },
 "CA-BC-SD06": {
-"pop": 30,
+"pop": 28716,
 "land_km2": 28290.4
 },
 "CA-BC-SD08": {
-"pop": 19145,
+"pop": 42020,
 "land_km2": 15056.5
 },
 "CA-BC-SD10": {
-"pop": 0,
+"pop": 6202,
 "land_km2": 7325.8
 },
 "CA-BC-SD19": {
-"pop": 0,
+"pop": 8997,
 "land_km2": 9255.6
 },
 "CA-BC-SD20": {
-"pop": 14265,
+"pop": 34243,
 "land_km2": 3064.3
 },
 "CA-BC-SD22": {
-"pop": 66985,
+"pop": 73055,
 "land_km2": 5535.1
 },
 "CA-BC-SD23": {
-"pop": 221385,
+"pop": 221420,
 "land_km2": 2894.0
 },
 "CA-BC-SD27": {
-"pop": 23154,
+"pop": 39777,
 "land_km2": 59915.0
 },
 "CA-BC-SD28": {
-"pop": 23425,
+"pop": 23544,
 "land_km2": 23056.4
 },
 "CA-BC-SD33": {
-"pop": 104002,
+"pop": 104023,
 "land_km2": 1302.4
 },
 "CA-BC-SD34": {
-"pop": 153283,
+"pop": 153612,
 "land_km2": 410.3
 },
 "CA-BC-SD35": {
-"pop": 162606,
+"pop": 162627,
 "land_km2": 327.5
 },
 "CA-BC-SD36": {
-"pop": 589630,
+"pop": 589635,
 "land_km2": 338.2
 },
 "CA-BC-SD37": {
-"pop": 111578,
+"pop": 111588,
 "land_km2": 192.6
 },
 "CA-BC-SD38": {
@@ -321,71 +321,71 @@
 "land_km2": 90.9
 },
 "CA-BC-SD42": {
-"pop": 111422,
+"pop": 112099,
 "land_km2": 1442.5
 },
 "CA-BC-SD43": {
-"pop": 257744,
+"pop": 257745,
 "land_km2": 733.3
 },
 "CA-BC-SD44": {
-"pop": 154485,
+"pop": 154480,
 "land_km2": 407.0
 },
 "CA-BC-SD45": {
-"pop": 54282,
+"pop": 54283,
 "land_km2": 228.7
 },
 "CA-BC-SD46": {
-"pop": 4,
+"pop": 32110,
 "land_km2": 3801.9
 },
 "CA-BC-SD47": {
-"pop": 17801,
+"pop": 20998,
 "land_km2": 5175.9
 },
 "CA-BC-SD48": {
-"pop": 24353,
+"pop": 46465,
 "land_km2": 9093.6
 },
 "CA-BC-SD49": {
-"pop": 0,
+"pop": 3575,
 "land_km2": 24438.7
 },
 "CA-BC-SD50": {
-"pop": 0,
+"pop": 4285,
 "land_km2": 9756.0
 },
 "CA-BC-SD51": {
-"pop": 62,
+"pop": 13418,
 "land_km2": 7019.6
 },
 "CA-BC-SD52": {
-"pop": 13449,
+"pop": 13900,
 "land_km2": 9828.3
 },
 "CA-BC-SD53": {
-"pop": 3150,
+"pop": 26662,
 "land_km2": 3751.7
 },
 "CA-BC-SD54": {
-"pop": 15,
+"pop": 16382,
 "land_km2": 9184.2
 },
 "CA-BC-SD57": {
-"pop": 89486,
+"pop": 96970,
 "land_km2": 50210.3
 },
 "CA-BC-SD58": {
-"pop": 63,
+"pop": 16095,
 "land_km2": 11320.4
 },
 "CA-BC-SD59": {
-"pop": 17887,
+"pop": 25077,
 "land_km2": 25733.7
 },
 "CA-BC-SD60": {
-"pop": 28719,
+"pop": 35213,
 "land_km2": 73355.3
 },
 "CA-BC-SD61": {
@@ -393,147 +393,147 @@
 "land_km2": 112.7
 },
 "CA-BC-SD62": {
-"pop": 97958,
+"pop": 98506,
 "land_km2": 1740.5
 },
 "CA-BC-SD63": {
-"pop": 98268,
+"pop": 98839,
 "land_km2": 167.3
 },
 "CA-BC-SD64": {
-"pop": 0,
+"pop": 17164,
 "land_km2": 360.3
 },
 "CA-BC-SD67": {
-"pop": 44958,
+"pop": 59001,
 "land_km2": 2164.4
 },
 "CA-BC-SD68": {
-"pop": 128236,
+"pop": 133025,
 "land_km2": 1606.7
 },
 "CA-BC-SD69": {
-"pop": 31297,
+"pop": 50843,
 "land_km2": 844.9
 },
 "CA-BC-SD70": {
-"pop": 25755,
+"pop": 33557,
 "land_km2": 6881.9
 },
 "CA-BC-SD71": {
-"pop": 63295,
+"pop": 72440,
 "land_km2": 1737.5
 },
 "CA-BC-SD72": {
-"pop": 40659,
+"pop": 45225,
 "land_km2": 13204.7
 },
 "CA-BC-SD73": {
-"pop": 114070,
+"pop": 125630,
 "land_km2": 25622.7
 },
 "CA-BC-SD74": {
-"pop": 62,
+"pop": 11106,
 "land_km2": 18246.5
 },
 "CA-BC-SD75": {
-"pop": 42470,
+"pop": 45372,
 "land_km2": 1482.4
 },
 "CA-BC-SD78": {
-"pop": 9403,
+"pop": 19989,
 "land_km2": 9593.2
 },
 "CA-BC-SD79": {
-"pop": 50016,
+"pop": 75921,
 "land_km2": 3268.8
 },
 "CA-BC-SD81": {
-"pop": 0,
+"pop": 4473,
 "land_km2": 81817.1
 },
 "CA-BC-SD82": {
-"pop": 19578,
+"pop": 34400,
 "land_km2": 67409.4
 },
 "CA-BC-SD83": {
-"pop": 19739,
+"pop": 59213,
 "land_km2": 8013.2
 },
 "CA-BC-SD84": {
-"pop": 14,
+"pop": 2872,
 "land_km2": 5128.2
 },
 "CA-BC-SD85": {
-"pop": 0,
+"pop": 10854,
 "land_km2": 20434.4
 },
 "CA-BC-SD87": {
-"pop": 0,
+"pop": 2990,
 "land_km2": 153081.0
 },
 "CA-BC-SD91": {
-"pop": 33,
+"pop": 21915,
 "land_km2": 74887.6
 },
 "CA-BC-SD92": {
-"pop": 9,
+"pop": 1792,
 "land_km2": 4138.7
 },
 "CA-MB-BeautifulPlains": {
-"pop": 78,
+"pop": 12197,
 "land_km2": 3024.3
 },
 "CA-MB-BorderLand": {
-"pop": 0,
+"pop": 17230,
 "land_km2": 5081.6
 },
 "CA-MB-Brandon": {
-"pop": 52318,
+"pop": 56569,
 "land_km2": 1427.9
 },
 "CA-MB-Divisionscolairefrancomanitobaine": {
-"pop": 965682,
+"pop": 1341921,
 "land_km2": 627554.8
 },
 "CA-MB-Evergreen": {
-"pop": 0,
+"pop": 14730,
 "land_km2": 2537.9
 },
 "CA-MB-FlinFlon": {
-"pop": 0,
+"pop": 4815,
 "land_km2": 17.6
 },
 "CA-MB-FortlaBosse": {
-"pop": 60,
+"pop": 9819,
 "land_km2": 4640.2
 },
 "CA-MB-Frontier": {
-"pop": 1667,
+"pop": 59501,
 "land_km2": 519656.5
 },
 "CA-MB-GardenValley": {
-"pop": 17626,
+"pop": 19552,
 "land_km2": 738.8
 },
 "CA-MB-Hanover": {
-"pop": 27775,
+"pop": 48337,
 "land_km2": 1289.5
 },
 "CA-MB-Interlake": {
-"pop": 9617,
+"pop": 28780,
 "land_km2": 2917.0
 },
 "CA-MB-Kelsey": {
-"pop": 0,
+"pop": 6212,
 "land_km2": 827.6
 },
 "CA-MB-Lakeshore": {
-"pop": 0,
+"pop": 8178,
 "land_km2": 7223.9
 },
 "CA-MB-LordSelkirk": {
-"pop": 8047,
+"pop": 27827,
 "land_km2": 1378.3
 },
 "CA-MB-LouisRiel": {
@@ -541,7 +541,7 @@
 "land_km2": 133.8
 },
 "CA-MB-MountainView": {
-"pop": 0,
+"pop": 18085,
 "land_km2": 8489.0
 },
 "CA-MB-MysteryLake": {
@@ -549,7 +549,7 @@
 "land_km2": 17.9
 },
 "CA-MB-ParkWest": {
-"pop": 0,
+"pop": 11893,
 "land_km2": 7108.3
 },
 "CA-MB-PembinaTrails": {
@@ -557,71 +557,71 @@
 "land_km2": 112.5
 },
 "CA-MB-PineCreek": {
-"pop": 0,
+"pop": 7502,
 "land_km2": 3383.0
 },
 "CA-MB-PortageLaPrairie": {
-"pop": 13491,
+"pop": 22063,
 "land_km2": 2239.7
 },
 "CA-MB-PrairieRose": {
-"pop": 1670,
+"pop": 16704,
 "land_km2": 3965.4
 },
 "CA-MB-PrairieSpirit": {
-"pop": 0,
+"pop": 13813,
 "land_km2": 6891.7
 },
 "CA-MB-RedRiverValley": {
-"pop": 8644,
+"pop": 18867,
 "land_km2": 2822.2
 },
 "CA-MB-RiverEastTranscona": {
-"pop": 102816,
+"pop": 102817,
 "land_km2": 136.2
 },
 "CA-MB-RollingRiver": {
-"pop": 1267,
+"pop": 12025,
 "land_km2": 3999.7
 },
 "CA-MB-SeineRiver": {
-"pop": 58167,
+"pop": 69318,
 "land_km2": 2428.2
 },
 "CA-MB-SevenOaks": {
-"pop": 59518,
+"pop": 59625,
 "land_km2": 109.6
 },
 "CA-MB-SouthwestHorizon": {
-"pop": 547,
+"pop": 11043,
 "land_km2": 6376.7
 },
 "CA-MB-StJamesAssiniboia": {
-"pop": 89588,
+"pop": 89590,
 "land_km2": 155.4
 },
 "CA-MB-Sunrise": {
-"pop": 20506,
+"pop": 38826,
 "land_km2": 5974.4
 },
 "CA-MB-SwanValley": {
-"pop": 0,
+"pop": 8187,
 "land_km2": 3329.2
 },
 "CA-MB-TurtleMountain": {
-"pop": 0,
+"pop": 6742,
 "land_km2": 2859.1
 },
 "CA-MB-TurtleRiver": {
-"pop": 0,
+"pop": 4166,
 "land_km2": 4594.6
 },
 "CA-MB-Western": {
-"pop": 14982,
+"pop": 15209,
 "land_km2": 583.5
 },
 "CA-MB-Whiteshell": {
-"pop": 0,
+"pop": 1409,
 "land_km2": 122.9
 },
 "CA-MB-Winnipeg": {
@@ -629,135 +629,135 @@
 "land_km2": 77.3
 },
 "CA-NB-AnglophoneSchoolDistrictEast": {
-"pop": 157237,
+"pop": 225562,
 "land_km2": 10269.7
 },
 "CA-NB-AnglophoneSchoolDistrictNorth": {
-"pop": 58523,
+"pop": 122282,
 "land_km2": 18045.3
 },
 "CA-NB-AnglophoneSchoolDistrictSouth": {
-"pop": 129453,
+"pop": 172442,
 "land_km2": 8960.7
 },
 "CA-NB-AnglophoneSchoolDistrictWest": {
-"pop": 131322,
+"pop": 221226,
 "land_km2": 28093.8
 },
 "CA-NB-DistrictscolairefrancophoneNordEst": {
-"pop": 70423,
+"pop": 147105,
 "land_km2": 23570.4
 },
 "CA-NB-DistrictscolairefrancophoneNordOuest": {
-"pop": 22009,
+"pop": 56373,
 "land_km2": 12350.0
 },
 "CA-NB-DistrictscolairefrancophoneSud": {
-"pop": 396005,
+"pop": 568486,
 "land_km2": 38146.0
 },
 "CA-NL-ConseilscolairefrancophoneprovincialdeTe": {
-"pop": 266682,
+"pop": 499159,
 "land_km2": 395094.5
 },
 "CA-NL-NLSchoolsDepartmentofEducation": {
-"pop": 266682,
+"pop": 499159,
 "land_km2": 395094.5
 },
 "CA-NS-AnnapolisValleyRegionalCentreforEducatio": {
-"pop": 26875,
+"pop": 103544,
 "land_km2": 7155.2
 },
 "CA-NS-CapeBretonVictoriaRegionalCentreforEduca": {
-"pop": 97742,
+"pop": 105108,
 "land_km2": 5571.3
 },
 "CA-NS-ChignectoCentralRegionalCentreforEducati": {
-"pop": 106003,
+"pop": 150989,
 "land_km2": 13069.3
 },
 "CA-NS-Conseilscolaireacadienprovincial": {
-"pop": 662173,
+"pop": 955950,
 "land_km2": 56773.2
 },
 "CA-NS-HalifaxRegionalCentreforEducation": {
-"pop": 436321,
+"pop": 436367,
 "land_km2": 6098.2
 },
 "CA-NS-SouthShoreRegionalCentreforEducation": {
-"pop": 19,
+"pop": 58684,
 "land_km2": 6100.3
 },
 "CA-NS-StraitRegionalCentreforEducation": {
-"pop": 29,
+"pop": 53278,
 "land_km2": 11142.4
 },
 "CA-NS-TriCountyRegionalCentreforEducation": {
-"pop": 0,
+"pop": 54909,
 "land_km2": 7890.9
 },
 "CA-NT-BeaufortDeltaDivisionalEducationCouncil": {
-"pop": 0,
+"pop": 6078,
 "land_km2": 376667.6
 },
 "CA-NT-CommissionscolairefrancophonedesTerritoi": {
-"pop": 20340,
+"pop": 40739,
 "land_km2": 1274498.3
 },
 "CA-NT-DehchoDivisionalEducationCouncil": {
-"pop": 0,
+"pop": 2891,
 "land_km2": 196024.3
 },
 "CA-NT-SahtuDivisionalEducationCouncil": {
-"pop": 0,
+"pop": 2260,
 "land_km2": 252034.3
 },
 "CA-NT-SouthSlaveDivisionalEducationCouncil": {
-"pop": 0,
+"pop": 6266,
 "land_km2": 193789.9
 },
 "CA-NT-T\u0142\u0131ch\u01ebCommunityServicesAgency": {
-"pop": 0,
+"pop": 2643,
 "land_km2": 32085.2
 },
 "CA-NT-YellowknifeCatholicSchools": {
-"pop": 20340,
+"pop": 20801,
 "land_km2": 224955.1
 },
 "CA-NT-YellowknifeEducationDistrictNo1": {
-"pop": 20340,
+"pop": 20801,
 "land_km2": 224955.1
 },
 "CA-NU-CommissionscolairefrancophoneduNunavut": {
-"pop": 0,
+"pop": 35602,
 "land_km2": 1998508.2
 },
 "CA-ON-1": {
-"pop": 41501,
+"pop": 101996,
 "land_km2": 25093.0
 },
 "CA-ON-10": {
-"pop": 201559,
+"pop": 232063,
 "land_km2": 5816.9
 },
 "CA-ON-11": {
-"pop": 622397,
+"pop": 716892,
 "land_km2": 7684.5
 },
 "CA-ON-12": {
-"pop": 2781353,
+"pop": 2781348,
 "land_km2": 663.4
 },
 "CA-ON-13": {
-"pop": 561790,
+"pop": 594718,
 "land_km2": 2045.3
 },
 "CA-ON-14": {
-"pop": 285801,
+"pop": 356289,
 "land_km2": 7299.2
 },
 "CA-ON-15": {
-"pop": 79217,
+"pop": 164694,
 "land_km2": 12596.1
 },
 "CA-ON-16": {
@@ -765,127 +765,127 @@
 "land_km2": 1856.0
 },
 "CA-ON-17": {
-"pop": 393061,
+"pop": 484792,
 "land_km2": 5099.0
 },
 "CA-ON-18": {
-"pop": 236265,
+"pop": 307276,
 "land_km2": 4392.2
 },
 "CA-ON-19": {
-"pop": 1439558,
+"pop": 1439567,
 "land_km2": 1313.3
 },
 "CA-ON-2": {
-"pop": 86124,
+"pop": 106704,
 "land_km2": 9784.6
 },
 "CA-ON-20": {
-"pop": 606875,
+"pop": 606879,
 "land_km2": 1024.1
 },
 "CA-ON-21": {
-"pop": 567111,
+"pop": 567116,
 "land_km2": 1184.8
 },
 "CA-ON-22": {
-"pop": 459915,
+"pop": 475357,
 "land_km2": 1982.7
 },
 "CA-ON-23": {
-"pop": 212540,
+"pop": 262568,
 "land_km2": 4252.7
 },
 "CA-ON-24": {
-"pop": 575681,
+"pop": 586987,
 "land_km2": 1453.8
 },
 "CA-ON-25": {
-"pop": 989021,
+"pop": 989028,
 "land_km2": 2904.1
 },
 "CA-ON-26": {
-"pop": 199894,
+"pop": 384984,
 "land_km2": 12555.3
 },
 "CA-ON-27": {
-"pop": 171954,
+"pop": 206207,
 "land_km2": 7474.1
 },
 "CA-ON-28": {
-"pop": 54595,
+"pop": 101214,
 "land_km2": 8973.4
 },
 "CA-ON-29": {
-"pop": 92932,
+"pop": 152742,
 "land_km2": 7471.5
 },
 "CA-ON-3": {
-"pop": 170076,
+"pop": 197519,
 "land_km2": 15125.7
 },
 "CA-ON-30A": {
-"pop": 41515,
+"pop": 103330,
 "land_km2": 25617.1
 },
 "CA-ON-30B": {
-"pop": 70653,
+"pop": 104656,
 "land_km2": 11462.9
 },
 "CA-ON-31": {
-"pop": 86121,
+"pop": 112020,
 "land_km2": 9993.4
 },
 "CA-ON-32": {
-"pop": 169982,
+"pop": 173771,
 "land_km2": 9515.7
 },
 "CA-ON-33A": {
-"pop": 0,
+"pop": 34003,
 "land_km2": 10951.1
 },
 "CA-ON-33B": {
-"pop": 14772,
+"pop": 20899,
 "land_km2": 2736.1
 },
 "CA-ON-34A": {
-"pop": 122907,
+"pop": 123039,
 "land_km2": 4960.1
 },
 "CA-ON-34B": {
-"pop": 4,
+"pop": 16607,
 "land_km2": 18730.8
 },
 "CA-ON-35": {
-"pop": 32649,
+"pop": 174083,
 "land_km2": 9046.4
 },
 "CA-ON-36": {
-"pop": 33243,
+"pop": 142894,
 "land_km2": 5920.5
 },
 "CA-ON-37": {
-"pop": 420801,
+"pop": 421032,
 "land_km2": 1978.5
 },
 "CA-ON-38": {
-"pop": 622397,
+"pop": 716895,
 "land_km2": 7684.8
 },
 "CA-ON-39": {
-"pop": 201560,
+"pop": 232063,
 "land_km2": 5816.0
 },
 "CA-ON-4": {
-"pop": 70655,
+"pop": 129475,
 "land_km2": 17726.5
 },
 "CA-ON-40": {
-"pop": 2779110,
+"pop": 2779105,
 "land_km2": 662.8
 },
 "CA-ON-41": {
-"pop": 364938,
+"pop": 435489,
 "land_km2": 10765.3
 },
 "CA-ON-42": {
@@ -893,223 +893,223 @@
 "land_km2": 1855.6
 },
 "CA-ON-43": {
-"pop": 1478534,
+"pop": 1505221,
 "land_km2": 2876.5
 },
 "CA-ON-44": {
-"pop": 393301,
+"pop": 567156,
 "land_km2": 11019.9
 },
 "CA-ON-45": {
-"pop": 561341,
+"pop": 594404,
 "land_km2": 2052.9
 },
 "CA-ON-46": {
-"pop": 606898,
+"pop": 606902,
 "land_km2": 1024.2
 },
 "CA-ON-47": {
-"pop": 566968,
+"pop": 566973,
 "land_km2": 1184.5
 },
 "CA-ON-48": {
-"pop": 196739,
+"pop": 241074,
 "land_km2": 2828.0
 },
 "CA-ON-49": {
-"pop": 575675,
+"pop": 586982,
 "land_km2": 1453.7
 },
 "CA-ON-50": {
-"pop": 460027,
+"pop": 475469,
 "land_km2": 1983.0
 },
 "CA-ON-51": {
-"pop": 212544,
+"pop": 262571,
 "land_km2": 4252.8
 },
 "CA-ON-52": {
-"pop": 199700,
+"pop": 384773,
 "land_km2": 12553.4
 },
 "CA-ON-53": {
-"pop": 989590,
+"pop": 989595,
 "land_km2": 2906.3
 },
 "CA-ON-54": {
-"pop": 54594,
+"pop": 100292,
 "land_km2": 8103.7
 },
 "CA-ON-55": {
-"pop": 264798,
+"pop": 363712,
 "land_km2": 16715.2
 },
 "CA-ON-56": {
-"pop": 112191,
+"pop": 297101,
 "land_km2": 47526.5
 },
 "CA-ON-57": {
-"pop": 393804,
+"pop": 498602,
 "land_km2": 65059.0
 },
 "CA-ON-58": {
-"pop": 10655570,
+"pop": 11395609,
 "land_km2": 71204.8
 },
 "CA-ON-59": {
-"pop": 1508613,
+"pop": 1834149,
 "land_km2": 39187.3
 },
 "CA-ON-5A": {
-"pop": 14778,
+"pop": 36857,
 "land_km2": 6874.9
 },
 "CA-ON-5B": {
-"pop": 0,
+"pop": 18656,
 "land_km2": 9549.3
 },
 "CA-ON-60A": {
-"pop": 41515,
+"pop": 103330,
 "land_km2": 25617.1
 },
 "CA-ON-60B": {
-"pop": 70653,
+"pop": 104656,
 "land_km2": 11462.9
 },
 "CA-ON-61": {
-"pop": 256147,
+"pop": 285858,
 "land_km2": 19617.1
 },
 "CA-ON-62": {
-"pop": 137684,
+"pop": 194557,
 "land_km2": 37360.6
 },
 "CA-ON-63": {
-"pop": 1310724,
+"pop": 1687066,
 "land_km2": 30447.1
 },
 "CA-ON-64": {
-"pop": 9345040,
+"pop": 9771727,
 "land_km2": 42167.2
 },
 "CA-ON-65": {
-"pop": 113828,
+"pop": 205321,
 "land_km2": 5508.9
 },
 "CA-ON-66": {
-"pop": 1394873,
+"pop": 1633067,
 "land_km2": 34770.1
 },
 "CA-ON-6A": {
-"pop": 122911,
+"pop": 123354,
 "land_km2": 5168.8
 },
 "CA-ON-6B": {
-"pop": 4,
+"pop": 16634,
 "land_km2": 18675.2
 },
 "CA-ON-7": {
-"pop": 32604,
+"pop": 174027,
 "land_km2": 9046.7
 },
 "CA-ON-8": {
-"pop": 33243,
+"pop": 142888,
 "land_km2": 5920.2
 },
 "CA-ON-9": {
-"pop": 420590,
+"pop": 420820,
 "land_km2": 1978.2
 },
 "CA-ON-REST": {
-"pop": 73974,
+"pop": 135504,
 "land_km2": 753136.4
 },
 "CA-PE-Commissionscolairedelanguefran\u00e7aise": {
-"pop": 93884,
+"pop": 149933,
 "land_km2": 5747.2
 },
 "CA-PE-PublicSchoolsBranch": {
-"pop": 93884,
+"pop": 149933,
 "land_km2": 5747.2
 },
 "CA-QC-689000": {
-"pop": 0,
+"pop": 3247,
 "land_km2": 13407.8
 },
 "CA-QC-711000": {
-"pop": 18449,
+"pop": 38457,
 "land_km2": 8808.2
 },
 "CA-QC-712000": {
-"pop": 53536,
+"pop": 75053,
 "land_km2": 5146.9
 },
 "CA-QC-713000": {
-"pop": 5,
+"pop": 29129,
 "land_km2": 5260.4
 },
 "CA-QC-714000": {
-"pop": 29847,
+"pop": 57107,
 "land_km2": 3712.6
 },
 "CA-QC-721000": {
-"pop": 12973,
+"pop": 49938,
 "land_km2": 57079.9
 },
 "CA-QC-722000": {
-"pop": 25620,
+"pop": 43025,
 "land_km2": 2792.5
 },
 "CA-QC-723000": {
-"pop": 93059,
+"pop": 95460,
 "land_km2": 43882.6
 },
 "CA-QC-724000": {
-"pop": 58297,
+"pop": 62165,
 "land_km2": 991.1
 },
 "CA-QC-731000": {
-"pop": 0,
+"pop": 28555,
 "land_km2": 6059.7
 },
 "CA-QC-732000": {
-"pop": 241368,
+"pop": 241408,
 "land_km2": 892.0
 },
 "CA-QC-733000": {
-"pop": 152493,
+"pop": 152495,
 "land_km2": 194.7
 },
 "CA-QC-734000": {
-"pop": 263179,
+"pop": 276950,
 "land_km2": 8151.7
 },
 "CA-QC-735000": {
-"pop": 4555,
+"pop": 55452,
 "land_km2": 4126.3
 },
 "CA-QC-741000": {
-"pop": 145690,
+"pop": 172022,
 "land_km2": 1776.1
 },
 "CA-QC-742000": {
-"pop": 49706,
+"pop": 98944,
 "land_km2": 38315.6
 },
 "CA-QC-751000": {
-"pop": 3609,
+"pop": 52460,
 "land_km2": 5781.0
 },
 "CA-QC-752000": {
-"pop": 189372,
+"pop": 192331,
 "land_km2": 1142.1
 },
 "CA-QC-753000": {
-"pop": 34431,
+"pop": 88979,
 "land_km2": 3182.5
 },
 "CA-QC-759000": {
-"pop": 0,
+"pop": 14978,
 "land_km2": 5506.1
 },
 "CA-QC-761000": {
@@ -1125,87 +1125,87 @@
 "land_km2": 261.8
 },
 "CA-QC-769000": {
-"pop": 0,
+"pop": 14047,
 "land_km2": 481071.1
 },
 "CA-QC-771000": {
-"pop": 139900,
+"pop": 139905,
 "land_km2": 991.1
 },
 "CA-QC-772000": {
-"pop": 119530,
+"pop": 119540,
 "land_km2": 1367.1
 },
 "CA-QC-773000": {
-"pop": 67601,
+"pop": 83463,
 "land_km2": 3499.1
 },
 "CA-QC-774000": {
-"pop": 22,
+"pop": 33964,
 "land_km2": 28462.1
 },
 "CA-QC-781000": {
-"pop": 28,
+"pop": 13859,
 "land_km2": 19325.2
 },
 "CA-QC-782000": {
-"pop": 39645,
+"pop": 39659,
 "land_km2": 6122.4
 },
 "CA-QC-783000": {
-"pop": 18919,
+"pop": 24791,
 "land_km2": 7958.6
 },
 "CA-QC-784000": {
-"pop": 36628,
+"pop": 45954,
 "land_km2": 27955.5
 },
 "CA-QC-785000": {
-"pop": 6,
+"pop": 20523,
 "land_km2": 3624.3
 },
 "CA-QC-791000": {
-"pop": 26560,
+"pop": 40111,
 "land_km2": 51547.1
 },
 "CA-QC-792000": {
-"pop": 27529,
+"pop": 38000,
 "land_km2": 110198.8
 },
 "CA-QC-793000": {
-"pop": 4,
+"pop": 6317,
 "land_km2": 119458.6
 },
 "CA-QC-801000": {
-"pop": 0,
+"pop": 16704,
 "land_km2": 332855.9
 },
 "CA-QC-811000": {
-"pop": 0,
+"pop": 11950,
 "land_km2": 185.6
 },
 "CA-QC-812000": {
-"pop": 0,
+"pop": 30082,
 "land_km2": 9459.1
 },
 "CA-QC-813000": {
-"pop": 1343,
+"pop": 46282,
 "land_km2": 10807.2
 },
 "CA-QC-821000": {
-"pop": 3023,
+"pop": 70554,
 "land_km2": 5427.4
 },
 "CA-QC-822000": {
-"pop": 28285,
+"pop": 47103,
 "land_km2": 2477.5
 },
 "CA-QC-823000": {
-"pop": 48004,
+"pop": 126415,
 "land_km2": 6344.3
 },
 "CA-QC-824000": {
-"pop": 171507,
+"pop": 192241,
 "land_km2": 1998.1
 },
 "CA-QC-831000": {
@@ -1213,39 +1213,39 @@
 "land_km2": 248.9
 },
 "CA-QC-841000": {
-"pop": 273295,
+"pop": 273351,
 "land_km2": 503.3
 },
 "CA-QC-842000": {
-"pop": 96766,
+"pop": 224494,
 "land_km2": 12722.0
 },
 "CA-QC-851000": {
-"pop": 315221,
+"pop": 315293,
 "land_km2": 741.1
 },
 "CA-QC-852000": {
-"pop": 146409,
+"pop": 204696,
 "land_km2": 2061.8
 },
 "CA-QC-853000": {
-"pop": 19890,
+"pop": 102854,
 "land_km2": 4068.9
 },
 "CA-QC-854000": {
-"pop": 5,
+"pop": 36448,
 "land_km2": 16592.4
 },
 "CA-QC-861000": {
-"pop": 41364,
+"pop": 51228,
 "land_km2": 619.2
 },
 "CA-QC-862000": {
-"pop": 60002,
+"pop": 105088,
 "land_km2": 1948.5
 },
 "CA-QC-863000": {
-"pop": 111451,
+"pop": 161277,
 "land_km2": 1547.3
 },
 "CA-QC-864000": {
@@ -1253,59 +1253,59 @@
 "land_km2": 173.2
 },
 "CA-QC-865000": {
-"pop": 258072,
+"pop": 278911,
 "land_km2": 1091.8
 },
 "CA-QC-866000": {
-"pop": 103178,
+"pop": 157578,
 "land_km2": 2405.5
 },
 "CA-QC-867000": {
-"pop": 183858,
+"pop": 212444,
 "land_km2": 1196.0
 },
 "CA-QC-868000": {
-"pop": 55078,
+"pop": 89110,
 "land_km2": 1696.2
 },
 "CA-QC-869000": {
-"pop": 139635,
+"pop": 158243,
 "land_km2": 877.9
 },
 "CA-QC-871000": {
-"pop": 13822,
+"pop": 44230,
 "land_km2": 2144.0
 },
 "CA-QC-872000": {
-"pop": 52945,
+"pop": 96880,
 "land_km2": 3206.8
 },
 "CA-QC-873000": {
-"pop": 101499,
+"pop": 107887,
 "land_km2": 1670.0
 },
 "CA-QC-881000": {
-"pop": 1312523,
+"pop": 1794928,
 "land_km2": 516251.3
 },
 "CA-QC-882000": {
-"pop": 157274,
+"pop": 370863,
 "land_km2": 324456.8
 },
 "CA-QC-883000": {
-"pop": 486996,
+"pop": 711935,
 "land_km2": 17971.9
 },
 "CA-QC-884000": {
-"pop": 950619,
+"pop": 1063279,
 "land_km2": 4781.4
 },
 "CA-QC-885000": {
-"pop": 1281024,
+"pop": 1586021,
 "land_km2": 36766.7
 },
 "CA-QC-886000": {
-"pop": 422279,
+"pop": 522210,
 "land_km2": 99477.0
 },
 "CA-QC-887000": {
@@ -1313,55 +1313,55 @@
 "land_km2": 311.4
 },
 "CA-QC-888000": {
-"pop": 728776,
+"pop": 747384,
 "land_km2": 1073.1
 },
 "CA-QC-889000": {
-"pop": 122363,
+"pop": 165378,
 "land_km2": 2300.4
 },
 "CA-SK-Chinook-Pub": {
-"pop": 18747,
+"pop": 42491,
 "land_km2": 42572.7
 },
 "CA-SK-ChristtheTeacher-Sep": {
-"pop": 18344,
+"pop": 25582,
 "land_km2": 4350.1
 },
 "CA-SK-Conseildes\u00e9colesfransaskoises": {
-"pop": 746444,
+"pop": 1131781,
 "land_km2": 632107.2
 },
 "CA-SK-Creighton-Pub": {
-"pop": 0,
+"pop": 2082,
 "land_km2": 919.4
 },
 "CA-SK-GoodSpirit-Pub": {
-"pop": 19865,
+"pop": 52049,
 "land_km2": 23478.2
 },
 "CA-SK-HolyFamily-Sep": {
-"pop": 24617,
+"pop": 28402,
 "land_km2": 6602.3
 },
 "CA-SK-HolyTrinity-Sep": {
-"pop": 50055,
+"pop": 51850,
 "land_km2": 171.8
 },
 "CA-SK-Horizon-Pub": {
-"pop": 254,
+"pop": 47701,
 "land_km2": 30463.1
 },
 "CA-SK-IlealaCrosse-Pub": {
-"pop": 0,
+"pop": 1428,
 "land_km2": 486.6
 },
 "CA-SK-LightofChrist-Sep": {
-"pop": 13518,
+"pop": 16938,
 "land_km2": 104.9
 },
 "CA-SK-LivingSky-Pub": {
-"pop": 19370,
+"pop": 44350,
 "land_km2": 24912.9
 },
 "CA-SK-Lloydminster-Pub": {
@@ -1373,31 +1373,31 @@
 "land_km2": 40.8
 },
 "CA-SK-NorthEast-Pub": {
-"pop": 90,
+"pop": 33031,
 "land_km2": 29862.3
 },
 "CA-SK-NorthernLights-Pub": {
-"pop": 187,
+"pop": 33045,
 "land_km2": 309238.4
 },
 "CA-SK-Northwest-Pub": {
-"pop": 4890,
+"pop": 35948,
 "land_km2": 23441.2
 },
 "CA-SK-PrairieSouth-Pub": {
-"pop": 35155,
+"pop": 55203,
 "land_km2": 32649.4
 },
 "CA-SK-PrairieSpirit-Pub": {
-"pop": 53827,
+"pop": 72558,
 "land_km2": 15192.7
 },
 "CA-SK-PrairieValley-Pub": {
-"pop": 23830,
+"pop": 58717,
 "land_km2": 23419.5
 },
 "CA-SK-PrinceAlbert-Sep": {
-"pop": 43918,
+"pop": 44449,
 "land_km2": 1916.7
 },
 "CA-SK-Regina-Pub": {
@@ -1409,454 +1409,454 @@
 "land_km2": 180.9
 },
 "CA-SK-SaskatchewanRivers-Pub": {
-"pop": 45625,
+"pop": 68923,
 "land_km2": 15241.0
 },
 "CA-SK-Saskatoon-Pub": {
-"pop": 263469,
+"pop": 263473,
 "land_km2": 250.0
 },
 "CA-SK-SouthEastCornerstone-Pub": {
-"pop": 25139,
+"pop": 54822,
 "land_km2": 29370.6
 },
 "CA-SK-StPauls-Sep": {
-"pop": 295541,
+"pop": 305914,
 "land_km2": 4178.9
 },
 "CA-SK-SunWest-Pub": {
-"pop": 0,
+"pop": 30090,
 "land_km2": 30473.4
 },
 "CA-YT-CommissionscolairefrancophoneduYukon": {
-"pop": 31889,
+"pop": 40235,
 "land_km2": 455423.4
 },
 "CA-YT-YukonFirstNationSchoolBoard": {
-"pop": 31889,
+"pop": 40235,
 "land_km2": 455423.4
 }
 },
 "fn": {
 "CA-ON-FN-3556033": {
 "csd": "3556033",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 79.67
+"pop": 155.0,
+"kids_5_17": 10.0,
+"land_km2": 78.23
 },
 "CA-ON-FN-3558076": {
 "csd": "3558076",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 3.32
+"pop": 180.0,
+"kids_5_17": 55.0,
+"land_km2": 3.34
 },
 "CA-ON-FN-3560051": {
 "csd": "3560051",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 1.71
+"pop": 1585.0,
+"kids_5_17": 490.0,
+"land_km2": 1.75
 },
 "CA-ON-FN-3560095": {
 "csd": "3560095",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 170.62
+"pop": 445.0,
+"kids_5_17": 110.0,
+"land_km2": 144.93
 },
 "CA-ON-FN-3560054": {
 "csd": "3560054",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 16.95
+"pop": 650.0,
+"kids_5_17": 200.0,
+"land_km2": 17.11
 },
 "CA-ON-FN-3560070": {
 "csd": "3560070",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 14.47
+"pop": 1085.0,
+"kids_5_17": 325.0,
+"land_km2": 13.65
 },
 "CA-ON-FN-3560058": {
 "csd": "3560058",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 39.21
+"pop": 580.0,
+"kids_5_17": 160.0,
+"land_km2": 39.3
 },
 "CA-ON-FN-3556094": {
 "csd": "3556094",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 3.21
+"pop": 1375.0,
+"kids_5_17": 315.0,
+"land_km2": 3.25
 },
 "CA-ON-FN-3556100": {
 "csd": "3556100",
-"pop": null,
+"pop": 0.0,
 "kids_5_17": null,
-"land_km2": 59.22
+"land_km2": 58.17
 },
 "CA-ON-FN-3556093": {
 "csd": "3556093",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 3.46
+"pop": 775.0,
+"kids_5_17": 185.0,
+"land_km2": 3.52
 },
 "CA-ON-FN-3560053": {
 "csd": "3560053",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 252.65
+"pop": 975.0,
+"kids_5_17": 310.0,
+"land_km2": 239.29
 },
 "CA-ON-FN-3560078": {
 "csd": "3560078",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 41.58
+"pop": 365.0,
+"kids_5_17": 115.0,
+"land_km2": 42.64
 },
 "CA-ON-FN-3557074": {
 "csd": "3557074",
-"pop": 1070.0,
-"kids_5_17": 210.0,
-"land_km2": 227.82
+"pop": 1075.0,
+"kids_5_17": 200.0,
+"land_km2": 213.71
 },
 "CA-ON-FN-3558067": {
 "csd": "3558067",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 69.59
+"pop": 200.0,
+"kids_5_17": 50.0,
+"land_km2": 68.65
 },
 "CA-ON-FN-3557078": {
 "csd": "3557078",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 36.67
+"pop": 60.0,
+"kids_5_17": 5.0,
+"land_km2": 34.12
 },
 "CA-ON-FN-3558065": {
 "csd": "3558065",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 40.74
+"pop": 110.0,
+"kids_5_17": 15.0,
+"land_km2": 39.77
 },
 "CA-ON-FN-3560096": {
 "csd": "3560096",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 124.63
+"pop": 1060.0,
+"kids_5_17": 325.0,
+"land_km2": 101.73
 },
 "CA-ON-FN-3560104": {
 "csd": "3560104",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 200.98
+"pop": 405.0,
+"kids_5_17": 155.0,
+"land_km2": 182.45
 },
 "CA-ON-FN-3560098": {
 "csd": "3560098",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 8.9
+"pop": 510.0,
+"kids_5_17": 130.0,
+"land_km2": 9.12
 },
 "CA-ON-FN-3560075": {
 "csd": "3560075",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 625.28
+"pop": 1030.0,
+"kids_5_17": 320.0,
+"land_km2": 277.01
 },
 "CA-ON-FN-3560056": {
 "csd": "3560056",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 389.04
+"pop": 1025.0,
+"kids_5_17": 325.0,
+"land_km2": 243.73
 },
 "CA-ON-FN-3558100": {
 "csd": "3558100",
-"pop": null,
+"pop": 0.0,
 "kids_5_17": null,
-"land_km2": 17.42
+"land_km2": 17.32
 },
 "CA-ON-FN-3560065": {
 "csd": "3560065",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 11.86
+"pop": 45.0,
+"kids_5_17": 0.0,
+"land_km2": 11.9
 },
 "CA-ON-FN-3560081": {
 "csd": "3560081",
-"pop": null,
+"pop": 0.0,
 "kids_5_17": null,
-"land_km2": 5.74
+"land_km2": 1.15
 },
 "CA-ON-FN-3560052": {
 "csd": "3560052",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 80.29
+"pop": 245.0,
+"kids_5_17": 60.0,
+"land_km2": 79.0
 },
 "CA-ON-FN-3554057": {
 "csd": "3554057",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 41.26
+"pop": 65.0,
+"kids_5_17": 0.0,
+"land_km2": 33.09
 },
 "CA-ON-FN-3552052": {
 "csd": "3552052",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 48.44
+"pop": 210.0,
+"kids_5_17": 55.0,
+"land_km2": 46.43
 },
 "CA-ON-FN-3556096": {
 "csd": "3556096",
-"pop": null,
+"pop": 0.0,
 "kids_5_17": null,
-"land_km2": 167.55
+"land_km2": 169.16
 },
 "CA-ON-FN-3560097": {
 "csd": "3560097",
 "pop": null,
 "kids_5_17": null,
-"land_km2": 25.04
+"land_km2": 24.71
 },
 "CA-ON-FN-3559060": {
 "csd": "3559060",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 65.77
+"pop": 120.0,
+"kids_5_17": 30.0,
+"land_km2": 62.7
 },
 "CA-ON-FN-3560093": {
 "csd": "3560093",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 10.1
+"pop": 245.0,
+"kids_5_17": 80.0,
+"land_km2": 10.05
 },
 "CA-ON-FN-3560080": {
 "csd": "3560080",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 17.77
+"pop": 270.0,
+"kids_5_17": 70.0,
+"land_km2": 18.21
 },
 "CA-ON-FN-3560060": {
 "csd": "3560060",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 12.38
+"pop": 50.0,
+"kids_5_17": 0.0,
+"land_km2": 12.41
 },
 "CA-ON-FN-3558080": {
 "csd": "3558080",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 59.94
+"pop": 85.0,
+"kids_5_17": 25.0,
+"land_km2": 57.06
 },
 "CA-ON-FN-3558085": {
 "csd": "3558085",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 54.46
+"pop": 230.0,
+"kids_5_17": 75.0,
+"land_km2": 47.48
 },
 "CA-ON-FN-3560055": {
 "csd": "3560055",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 136.42
+"pop": 520.0,
+"kids_5_17": 155.0,
+"land_km2": 125.37
 },
 "CA-ON-FN-3560091": {
 "csd": "3560091",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 3.2
+"pop": 250.0,
+"kids_5_17": 50.0,
+"land_km2": 3.22
 },
 "CA-ON-FN-3560077": {
 "csd": "3560077",
 "pop": null,
 "kids_5_17": null,
-"land_km2": 8.45
+"land_km2": 8.39
 },
 "CA-ON-FN-3560067": {
 "csd": "3560067",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 6.92
+"pop": 665.0,
+"kids_5_17": 215.0,
+"land_km2": 6.83
 },
 "CA-ON-FN-3559061": {
 "csd": "3559061",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 17.97
+"pop": 125.0,
+"kids_5_17": 15.0,
+"land_km2": 17.93
 },
 "CA-ON-FN-3557075": {
 "csd": "3557075",
 "pop": null,
 "kids_5_17": null,
-"land_km2": 15.91
+"land_km2": 15.39
 },
 "CA-ON-FN-3560076": {
 "csd": "3560076",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 30.86
+"pop": 610.0,
+"kids_5_17": 195.0,
+"land_km2": 30.07
 },
 "CA-ON-FN-3560071": {
 "csd": "3560071",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 45.85
+"pop": 2100.0,
+"kids_5_17": 615.0,
+"land_km2": 44.31
 },
 "CA-ON-FN-3559066": {
 "csd": "3559066",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 21.0
+"pop": 270.0,
+"kids_5_17": 55.0,
+"land_km2": 15.72
 },
 "CA-ON-FN-3557072": {
 "csd": "3557072",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 82.93
+"pop": 350.0,
+"kids_5_17": 50.0,
+"land_km2": 76.14
 },
 "CA-ON-FN-3560064": {
 "csd": "3560064",
-"pop": null,
-"kids_5_17": null,
+"pop": 80.0,
+"kids_5_17": 5.0,
 "land_km2": 1.85
 },
 "CA-ON-FN-3560068": {
 "csd": "3560068",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 32.52
+"pop": 445.0,
+"kids_5_17": 95.0,
+"land_km2": 32.55
 },
 "CA-ON-FN-3560082": {
 "csd": "3560082",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 4.84
+"pop": 95.0,
+"kids_5_17": 20.0,
+"land_km2": 4.87
 },
 "CA-ON-FN-3560046": {
 "csd": "3560046",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 73.31
+"pop": 300.0,
+"kids_5_17": 75.0,
+"land_km2": 62.95
 },
 "CA-ON-FN-3559089": {
 "csd": "3559089",
-"pop": null,
+"pop": 10.0,
 "kids_5_17": null,
-"land_km2": 26.57
+"land_km2": 26.43
 },
 "CA-ON-FN-3560086": {
 "csd": "3560086",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 22.96
+"pop": 355.0,
+"kids_5_17": 100.0,
+"land_km2": 15.39
 },
 "CA-ON-FN-3560089": {
 "csd": "3560089",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 33.9
+"pop": 180.0,
+"kids_5_17": 65.0,
+"land_km2": 33.69
 },
 "CA-ON-FN-3560061": {
 "csd": "3560061",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 91.67
+"pop": 815.0,
+"kids_5_17": 195.0,
+"land_km2": 76.08
 },
 "CA-ON-FN-3560084": {
 "csd": "3560084",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 31.07
+"pop": 60.0,
+"kids_5_17": 5.0,
+"land_km2": 30.68
 },
 "CA-ON-FN-3560057": {
 "csd": "3560057",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 47.22
+"pop": 175.0,
+"kids_5_17": 10.0,
+"land_km2": 42.68
 },
 "CA-ON-FN-3560088": {
 "csd": "3560088",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 27.23
+"pop": 455.0,
+"kids_5_17": 135.0,
+"land_km2": 27.2
 },
 "CA-ON-FN-3560100": {
 "csd": "3560100",
-"pop": null,
+"pop": 16.0,
 "kids_5_17": null,
-"land_km2": 57.71
+"land_km2": 53.04
 },
 "CA-ON-FN-3560059": {
 "csd": "3560059",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 89.72
+"pop": 920.0,
+"kids_5_17": 295.0,
+"land_km2": 89.84
 },
 "CA-ON-FN-3560079": {
 "csd": "3560079",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 530.03
+"pop": 720.0,
+"kids_5_17": 225.0,
+"land_km2": 320.35
 },
 "CA-ON-FN-3560004": {
 "csd": "3560004",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 19.91
+"pop": 610.0,
+"kids_5_17": 160.0,
+"land_km2": 18.36
 },
 "CA-ON-FN-3552051": {
 "csd": "3552051",
 "pop": 410.0,
-"kids_5_17": 80.0,
-"land_km2": 226.03
+"kids_5_17": 90.0,
+"land_km2": 170.16
 },
 "CA-ON-FN-3560085": {
 "csd": "3560085",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 65.01
+"pop": 590.0,
+"kids_5_17": 155.0,
+"land_km2": 64.0
 },
 "CA-AB-FN-4811805": {
 "csd": "4811805",
 "pop": 1075.0,
-"kids_5_17": 280.0,
-"land_km2": 69.98
+"kids_5_17": 285.0,
+"land_km2": 68.39
 },
 "CA-AB-FN-4816850": {
 "csd": "4816850",
 "pop": 110.0,
-"kids_5_17": 45.0,
-"land_km2": 16.27
+"kids_5_17": 35.0,
+"land_km2": 17.09
 },
 "CA-AB-FN-4803802": {
 "csd": "4803802",
-"pop": null,
-"kids_5_17": null,
-"land_km2": 1417.36
+"pop": 4570.0,
+"kids_5_17": 1260.0,
+"land_km2": 1403.35
 },
 "CA-AB-FN-4803803": {
 "csd": "4803803",
-"pop": null,
+"pop": 0.0,
 "kids_5_17": null,
-"land_km2": 18.24
+"land_km2": 17.83
 },
 "CA-AB-FN-4806803": {
 "csd": "4806803",
 "pop": null,
 "kids_5_17": null,
-"land_km2": 17.34
+"land_km2": 17.32
 },
 "CA-AB-FN-4815802": {
 "csd": "4815802",
 "pop": null,
 "kids_5_17": null,
-"land_km2": 445.73
+"land_km2": 444.66
 },
 "CA-AB-FN-4815815": {
 "csd": "4815815",
 "pop": null,
 "kids_5_17": null,
-"land_km2": 70.74
+"land_km2": 71.43
 },
 "CA-AB-FN-4806804": {
 "csd": "4806804",
 "pop": null,
 "kids_5_17": null,
-"land_km2": 280.39
+"land_km2": 282.44
 }
 },
 "source": "Statistics Canada, 2021 Census tables by census subdivision (age in single years; population and dwelling counts 98-10-0002-01); 2021 CSD cartographic boundaries"
