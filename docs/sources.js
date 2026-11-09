@@ -615,5 +615,20 @@ window.SOURCES = [
       { title: "Diligent: livestreaming regulations for public boards (used to find laws)", url: "https://www.diligent.com/resources/blog/regulations-livestreaming" },
       { title: "TASB: three things to know about new school board meeting requirements (Texas SB 413)", url: "https://www.tasb.org/news-insights/three-things-to-know-about-new-school-board-meeting-requirements" }
     ]
+    },
+  {
+    only: ["United States", "Japan", "Iceland", "Germany", "Belgium", "Islands and microstates", "Croatia", "Italy", "France", "Philippines", "Spain"],
+    group: "Enrollment estimates (places with no published pupil count)",
+    items: [
+      { only: "United States", title: "Districts with no NCES enrollment: children aged 5–17 from the Census SAIPE 2024 school district file (above)", url: "https://www2.census.gov/programs-surveys/saipe/datasets/2024/2024-school-districts/ussd24.csv" },
+      { only: ["Japan", "Iceland", "Germany", "Belgium", "Islands and microstates"], title: "School-age share of each place's own children figure (the children column already in the data, from the sources above): Japan 6–14 of under 15, Iceland 6–15 of under 18, Germany 6–17 of under 18, Belgium 6–14 of under 18, islands 6–14 of 0–14" },
+      { only: ["Croatia", "Italy", "France"], title: "Eurostat, population on 1 January by age group, sex and NUTS 3 region (demo_r_pjangrp3), 2024: each region's share of school ages (Croatia 7–14, Italy 6–13, France 3–10), times the place's population", url: "https://ec.europa.eu/eurostat/databrowser/view/demo_r_pjangrp3/default/table" },
+      { only: ["Croatia", "Italy", "France"], title: "Eurostat / GISCO, correspondence of local administrative units (LAU) to NUTS 2024 regions", url: "https://ec.europa.eu/eurostat/web/nuts/local-administrative-units" },
+      { only: "Philippines", title: "Philippines subnational population statistics by age (PSA projections, 2025), via the Humanitarian Data Exchange (HDX, phl_admpop): each province's share of children aged 5–17", url: "https://data.humdata.org/dataset/cod-ps-phl" },
+      { only: "Spain", title: "Pupils by municipality, Catalonia: Departament d'Educació, “Alumnes matriculats per ensenyament i unitats dels centres docents”, 2025-26 (Transparència Catalunya open data)", url: "https://analisi.transparenciacatalunya.cat/d/xvme-26kg" },
+      { only: "Spain", title: "Pupils by municipality, Community of Madrid: “Alumnos no universitarios matriculados en centros escolares por tipo de centro y régimen. Municipios”, 2024-25 (régimen general)", url: "https://datos.comunidad.madrid/dataset/alumnos_no_universitarios_por_tipo_y_regimen" },
+      { only: "Spain", title: "Estimates elsewhere: INE, annual population census 2024, population aged 15+ by level of studies in progress, municipalities of 500+ (table 66627), plus children aged 3–14 (twelve eighteenths of the estimated children under 18)", url: "https://www.ine.es/jaxiT3/Tabla.htm?t=66627" }
+    ],
+    note: "Estimates are marked on the map and in the Enrollment estimated column. Built by data-prep/estimate_enrollment.py, with prep_enrollment_shares.py, prep_spain_pupils.py and prep_spain_regional_pupils.py."
   }
 ];

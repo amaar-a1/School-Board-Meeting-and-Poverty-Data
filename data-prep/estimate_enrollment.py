@@ -55,7 +55,7 @@ RULES = {
     "croatia.csv": from_region_share("hr_7_14.json", lambda r: r["District ID"][3:], "Estimate: children aged 7–14 (primary school ages): the place's 2024 population times {region}'s share of those ages (Eurostat, 2024)"),
     "italy.csv": from_region_share("it_6_13.json", lambda r: r["District ID"][3:], "Estimate: children aged 6–13 (primary and lower secondary ages): the comune's 2024 population times {region}'s share of those ages (Eurostat, 2024)"),
     "france.csv": from_region_share("fr_3_10.json", lambda r: r["District ID"][4:], "Estimate: children aged 3–10 (nursery and primary ages) living in the commune: its population times {region}'s share of those ages (Eurostat, 2024); it has no school of its own"),
-    "philippines.csv": from_region_share("ph_5_17.json", lambda r: r.get("Province", ""), "Estimate: children aged 5–17 (kindergarten to grade 12 ages): the place's 2021 population times {region}'s share of those ages (PSA projections for 2025, via HDX)"),
+    "philippines.csv": None,   # set below: by province, else region
     "spain.csv": None,   # set below: census residents in school-level studies plus children aged 3–14
 }
 
@@ -70,6 +70,27 @@ def spain_rule():
 
 
 RULES["spain.csv"] = spain_rule()
+
+
+def ph_rule():
+    import re, unicodedata
+    data = share("ph_5_17.json")
+    norm = lambda t: re.sub(r"[^a-z]", "", unicodedata.normalize("NFKD", str(t)).encode("ascii", "ignore").decode().lower())
+    def rule(r):
+        if not data: return None
+        pop = num(r.get("Population"))
+        prov = r.get("Province", "")
+        alias = {"Samar (Western)": "Samar", "Cotabato": "North Cotabato", "Davao de Oro": "Compostela Valley"}   # HDX's names
+        for k, what in ((prov, "its province"), (alias.get(prov, ""), "its province"), (re.sub(r"\s*\(.*\)", "", prov), "its province"),
+                        (r.get("Region", ""), "its region"), (re.sub(r"\s*\(.*\)", "", r.get("Region", "")), "its region")):
+            if not k: continue
+            sh = data["share"].get(norm(k))
+            if sh and pop: return round(pop * sh), f"Estimate: children aged 5–17 (kindergarten to grade 12 ages): the place's 2021 population times {what}'s share of those ages (PSA projections for 2025, via HDX)"
+        return None
+    return rule
+
+
+RULES["philippines.csv"] = ph_rule()
 
 
 def run(fn):
