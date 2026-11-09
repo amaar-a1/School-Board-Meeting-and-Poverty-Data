@@ -294,16 +294,22 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
         else:
             report.append([p["name"], state, p["num_meetings"], "", "", "not matched", ""])
 
+    # Private-school pupils inside each unified or elementary district's border (NCES PSS 2021-22; prep_us_private.py)
+    private_path = os.path.join(os.path.dirname(saipe_path), "us_private_pupils.json")
+    private = json.load(open(private_path, encoding="utf-8")) if os.path.exists(private_path) else {}
     with open(out_path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["District", "State", "County", "Available Board Meetings", "Children Ages 5-17", "Children Ages 5-17 in Poverty",
                     "Percentage of Children Ages 5-17 in Poverty", "Locale", "Enrollment", "District ID", "Notes",
-                    "Other Board Meetings", "Other meetings source", "Latest meeting", "Meetings by year", "Population"])
+                    "Other Board Meetings", "Other meetings source", "Latest meeting", "Meetings by year", "Population",
+                    "Public school enrollment", "Private school enrollment (within its borders)"])
         for d in districts:
             w.writerow([d["name"], d["state"], d["county"], d["meetings"], d["kids"], d["poor"], d["pct"], d["locale"], d["enrollment"], d["leaid"], d["note"],
                         other.get(d["leaid"], {}).get("Other Board Meetings", ""), other.get(d["leaid"], {}).get("Other meetings source", ""),
                         d.get("latest", "") if d["meetings"] else "", "; ".join(f"{y}:{n}" for y, n in sorted(d.get("years", {}).items())) if d["meetings"] else "",
-                        d.get("pop", "")])   # all ages (SAIPE 2024), for the map's population density
+                        d.get("pop", ""),   # all ages (SAIPE 2024), for the map's population density
+                        d["enrollment"],   # NCES counts public schools only
+                        private.get(d["leaid"], "") if d["enrollment"] != "" else ""])
     with open(report_path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["CivicSearch name", "State", "Meetings", "Matched LEAID", "Matched district (Census name)", "How", "Distance km"])

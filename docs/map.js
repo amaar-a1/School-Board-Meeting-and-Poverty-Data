@@ -123,6 +123,26 @@
       breaks: [10, 50, 100, 500, 2000, 5000],
       colors: ["#ffffd4", "#fee391", "#fec44f", "#fe9929", "#ec7014", "#cc4c02", "#8c2d04"],
       labels: ["Under 10 people per km²", "10–49", "50–99", "100–499", "500–1,999", "2,000–4,999", "5,000 or more"]
+    },
+    // Meetings found, against places of the same size: the share of its country's places in the same enrollment
+    // tier (the By district size tab's tiers) that have fewer meetings found.
+    peers: {
+      breaks: [1, 25, 50, 75, 90],
+      colors: ["#f7fcfd", "#bfd3e6", "#9ebcda", "#8c96c6", "#8856a7", "#810f7c"],
+      labels: ["0% (more than none of them)", "1–24%", "25–49%", "50–74%", "75–89%", "90–100%"]
+    },
+    // How long ago the latest meeting found was held.
+    recency: {
+      breaks: [3, 12, 24, 60],
+      colors: ["#006837", "#31a354", "#78c679", "#c2e699", "#ffffcc"],
+      labels: ["Under 3 months ago", "3–11 months", "1–2 years", "2–5 years", "5 years or more"]
+    },
+    // Public schools' share of the pupils counted (for US districts: of public pupils plus private-school pupils
+    // inside the district's border).
+    public: {
+      breaks: [50, 70, 80, 90, 95],
+      colors: ["#feebe2", "#fcc5c0", "#fa9fb5", "#f768a1", "#c51b8a", "#7a0177"],
+      labels: ["Under 50% in public schools", "50–69%", "70–79%", "80–89%", "90–94%", "95% or more"]
     }
   };
   // Area of a border in km² (spherical polygons), for places whose data has a population but no density (US districts).
@@ -259,6 +279,59 @@
     return m ? Object.entries(m).sort((a, b) => b[1] - a[1])[0][0] : "";
   }
 
+  // Meetings found, as the meetings colouring counts them (the place's own records where CivicSearch has none).
+  const meetOf = (r) => {
+    let v = toNumber(r && r["Available Board Meetings"]);
+    if (!(v > 0) && toNumber(r && r["Other Board Meetings"]) > 0) v = toNumber(r["Other Board Meetings"]);
+    return isNaN(v) ? 0 : v;
+  };
+  const TIERS = ((window.SITE_CONFIG && window.SITE_CONFIG.sizeTiers) || {}).tiers || [];
+  const tierOf = (r) => {
+    const e = toNumber(r && r.Enrollment);
+    return e > 0 ? TIERS.find((t) => e >= t.min && (t.max == null || e <= t.max)) || null : null;
+  };
+  const tierRange = (t) => (t.max == null ? `${t.min.toLocaleString()} or more` : `${t.min.toLocaleString()}–${t.max.toLocaleString()}`);
+  let peerPool = null;
+  const MIN_PEERS = 5;
+  // Where a place's meetings fall among its country's places of the same size tier: the share of the others
+  // with fewer meetings found. A tier with fewer than 5 other places (a country's one or two largest cities) is
+  // widened into the next smaller tiers. Null without an enrollment figure.
+  function peerInfo(row, id) {
+    const t = tierOf(row);
+    if (!t || !row || row.pseudo) return null;
+    if (!peerPool) {
+      peerPool = {};
+      Object.entries(lookup).forEach(([k, r]) => { const tt = tierOf(r); if (tt && !r.pseudo) { const key = `${countryOf(k)}|${tt.name}`; (peerPool[key] = peerPool[key] || []).push(meetOf(r)); } });
+    }
+    let i = TIERS.indexOf(t), lo = i, pool = [...(peerPool[`${countryOf(id)}|${t.name}`] || [])];
+    while (pool.length - 1 < MIN_PEERS && lo > 0) { lo--; pool = pool.concat(peerPool[`${countryOf(id)}|${TIERS[lo].name}`] || []); }
+    const v = meetOf(row), others = pool.length - 1;
+    if (others < 1) return null;
+    const tier = lo === i ? t : { name: `${TIERS[lo].name} to ${t.name}`, min: TIERS[lo].min, max: t.max };
+    return { pct: Math.round(100 * pool.filter((x) => x < v).length / others), others, tier };
+  }
+  // Months since the latest meeting found. A date with only a year counts from 1 July, and one with only a month
+  // from the 15th (or from today, if that is sooner).
+  function monthsSince(row) {
+    const m = String((row && row["Latest meeting"]) || "").trim().match(/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?/);
+    if (!m) return NaN;
+    const now = new Date();
+    let d = new Date(+m[1], m[2] ? +m[2] - 1 : 6, m[3] ? +m[3] : m[2] ? 15 : 1);
+    if (d > now) d = now;
+    return (now - d) / (30.44 * 864e5);
+  }
+  const agoText = (mo) => (mo < 1 ? "under a month ago" : mo < 24 ? `about ${Math.round(mo)} month${Math.round(mo) === 1 ? "" : "s"} ago` : `about ${Math.round(mo / 12)} years ago`);
+  // Share of the pupils counted who are in public schools.
+  const PRIV = "Private school enrollment (within its borders)";
+  function publicShare(row) {
+    if (!row) return NaN;
+    const pub = toNumber(row["Public school enrollment"]);
+    if (isNaN(pub)) return NaN;
+    const priv = toNumber(row[PRIV]);
+    const tot = !isNaN(priv) ? pub + priv : toNumber(row.Enrollment);
+    return tot > 0 ? Math.min(100, (100 * pub) / tot) : NaN;
+  }
+
   function color(row, id) {
     const metric = $("map-metric").value, sc = SCALES[metric];
     if (metric === "locale") return localeColor(row && !row.Locale ? { Locale: localeFallback(row, id) } : row);
@@ -277,6 +350,9 @@
     if (metric === "meetings" && isNaN(v)) v = 0;   // no meetings found counts as 0
     if (metric === "enrollment" && !(v > 0)) return NO_DATA;
     if (metric === "density") v = densityFor(row, id);   // no figure (0 is only ever "none reported")
+    if (metric === "peers") { const p = peerInfo(row, id); v = p ? p.pct : NaN; }
+    if (metric === "recency") v = monthsSince(row);
+    if (metric === "public") v = publicShare(row);
     if (isNaN(v)) return NO_DATA;
     const s2 = metric === "poverty" && OWN_SCALE[euOf(id)] ? SCALES[OWN_SCALE[euOf(id)]] : sc;
     const i = s2.breaks.findIndex((b) => v < b);
@@ -366,7 +442,9 @@
       `Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}` +
       (toNumber(r["Other Board Meetings"]) > 0 ? `${r.State ? " on CivicSearch" : meet > 0 ? " recorded" : ""}; ${toNumber(r["Other Board Meetings"]).toLocaleString()} from ${r.State ? "other sources" : "the council's or board's own records"} (see note)` : "") + `<br>` +
       `Enrollment: ${isNaN(enr) ? "not reported" : enr.toLocaleString()}${r["Enrollment estimated"] ? " (estimated: school-age children, no count published)" : ""}` + rankLine(r, gid(feature)) +
-      (r["Latest meeting"] ? `<br>Latest recorded meeting: ${esc(r["Latest meeting"])}` : "") +
+      peerLine(r, gid(feature)) +
+      (r["Latest meeting"] ? `<br>Latest recorded meeting: ${esc(r["Latest meeting"])}${isNaN(monthsSince(r)) ? "" : ` (${agoText(monthsSince(r))})`}` : "") +
+      publicLine(r) +
       (r.Locale ? `<br>Locale${/^(UK|IE)-/.test(r["District ID"]) || eu ? " (estimated)" : ""}: ${esc(r.Locale)}`
         : localeFallback(r, gid(feature)) ? `<br>Locale (estimated from its area's other places): ${esc(localeFallback(r, gid(feature)))}` : "") +
       (!isNaN(densityFor(r, gid(feature))) ? `<br>People per km²${r["People per km² (estimated)"] ? " (estimated)" : " (from its population and border)"}: ${Math.round(densityFor(r, gid(feature))).toLocaleString()}` : "") +
@@ -394,10 +472,24 @@
       (isNaN(pov) && r["Low-income rate of the surrounding area (children 0-17)"] ? `Surrounding area's rate (stand-in; none is published for reserves): ${esc(r["Low-income rate of the surrounding area (children 0-17)"])}<br>` : "") +
       `Board meetings found: ${isNaN(meet) ? 0 : meet.toLocaleString()}` +
       (toNumber(r.Enrollment) > 0 ? `<br>Enrollment: ${toNumber(r.Enrollment).toLocaleString()} (${esc(r["Enrollment year"])}${r["Enrollment note"] ? `; ${esc(r["Enrollment note"])}` : ""})` : "") +
+      peerLine(r, r["District ID"]) +
+      (r["Latest meeting"] ? `<br>Latest recorded meeting: ${esc(r["Latest meeting"])}${isNaN(monthsSince(r)) ? "" : ` (${agoText(monthsSince(r))})`}` : "") +
       (r.Locale ? `<br>Locale (estimated): ${esc(r.Locale)}${/whole province or territory/.test(r["How poverty was calculated"] || "") ? " (serves the whole province or territory: the locale where most of the province's children live)" : ""}` : "") + rankLine(r, r["District ID"]) +
       (note ? `<div class="tip-note">${esc(note)}</div>` : "") + "</div>";
   }
 
+  const peerLine = (r, id) => {
+    const p = peerInfo(r, id);
+    return p ? `<br>Meetings vs. same-size places: more than ${p.pct}% of the ${p.others.toLocaleString()} other${p.others === 1 ? "" : "s"} in its country with ${tierRange(p.tier)} pupils (${p.tier.name})` : "";
+  };
+  const publicLine = (r) => {
+    const v = publicShare(r);
+    if (isNaN(v)) return "";
+    const priv = toNumber(r[PRIV]);
+    return `<br>In public schools: ${Math.round(v)}% of pupils` + (!isNaN(priv)
+      ? ` (${toNumber(r["Public school enrollment"]).toLocaleString()} public; ${priv.toLocaleString()} at private schools inside its border, NCES 2021-22)`
+      : ` (${toNumber(r["Public school enrollment"]).toLocaleString()} of ${toNumber(r.Enrollment).toLocaleString()})`);
+  };
   const rankLine = (r, id) => (String(r["Poverty rank in country"] ?? "") === "" && id && rankFallback(r, id) !== ""
     ? `<br>Poverty rank in its country: ${rankFallback(r, id)} of 100 (100 = highest); estimated from the figure the map shows for it`
     : String(r["Poverty rank in country"] ?? "") !== ""
@@ -458,6 +550,15 @@
     if ($("map-metric").value === "enrollment")
       items.push(`<span><i style="background:${NO_DATA}"></i>No enrollment figure</span>`,
         `<span class="map-faded">Enrollment is counted differently from country to country (pupils at the place's schools, or pupils living there; some count only primary schools): see each view's note. Where no count is published, the figure is an estimate (school-age children living there), marked in the tooltip</span>`);
+    if ($("map-metric").value === "peers")
+      items.push(`<span><i style="background:${NO_DATA}"></i>No enrollment figure (no size to compare by)</span>`,
+        `<span class="map-faded">The share of places in the same country and the same size tier (by enrollment, as on the By district size tab: ${TIERS.map((t) => `${t.name} ${tierRange(t)}`).join(", ")}) that have fewer meetings found. Places with no meetings found are at 0%</span>`);
+    if ($("map-metric").value === "recency")
+      items.push(`<span><i style="background:${NO_DATA}"></i>No meeting found (or no date for it)</span>`,
+        `<span class="map-faded">Time since the latest meeting found. Some sources give only the year or month: those count from mid-year or mid-month</span>`);
+    if ($("map-metric").value === "public")
+      items.push(`<span><i style="background:${NO_DATA}"></i>No public/private split published</span>`,
+        `<span class="map-faded">Share of pupils in public schools. US districts: NCES public enrollment (2023) against private-school pupils inside the district's border (NCES Private School Survey 2021-22; secondary-only districts have no figure). Elsewhere: the public count against all pupils counted, where the source splits them</span>`);
     if ($("map-metric").value === "rank")
       items.push(`<span class="map-faded">Rank within each country: where a place's poverty figure falls among its own country's places, so colours compare across countries even though the measures differ</span>`);
     // Places shown with no figure in this colouring (Svalbard and Pitcairn publish no poverty figure).
@@ -829,6 +930,9 @@
         if (metric === "locale") { const v = r.Locale || localeFallback(r, id); if (v) want = [v]; }
         if (metric === "enrollment") { const v = toNumber(r.Enrollment); if (v > 0) want = [v.toLocaleString()]; }
         if (metric === "density") { const v = densityFor(r, id); if (!isNaN(v)) want = [Math.round(v).toLocaleString()]; }
+        if (metric === "peers") { const p = peerInfo(r, id); if (p) want = [`more than ${p.pct}%`]; }
+        if (metric === "recency") { const v = monthsSince(r); if (!isNaN(v)) want = [agoText(v)]; }
+        if (metric === "public") { const v = publicShare(r); if (!isNaN(v)) want = [`${Math.round(v)}% of pupils`]; }
         if (want && !want.some((w) => text.includes(w))) out.push({ layer: n, id, name: r.District || "", want: want[0], text: text.replace(/\s+/g, " ").slice(0, 260) });
       }));
       return out;
