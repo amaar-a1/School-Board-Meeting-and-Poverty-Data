@@ -82,7 +82,7 @@ def centroid(geom):
 
 
 _CACHE = {}
-DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "PH": "philippines"}
+DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "AU": "australia", "HR": "croatia", "PH": "philippines"}
 # Brazil: municipal chambers (câmara municipal) and their education committees, in Portuguese.
 RULES = {"BR": (re.compile(r"comiss[ãa]o (permanente )?de educa[çc][ãa]o|educa[çc][ãa]o.*comiss[ãa]o", re.I),
                 re.compile(r"sess[ãa]o|c[âa]mara", re.I),
@@ -169,6 +169,22 @@ RULES["BE"] = (re.compile(r"commissie[^|]{0,40}onderwijs|onderwijs[^|]{0,20}comm
                re.compile(r"^(?!.*(jeugd|kinder|jongeren|des enfants|des jeunes|cce\b|ccj\b|ocmw-raad|cpas)).*(gemeenteraad|raadszitting|conseil communal|conseil de ville|s[ée]ance du conseil)", re.I),
                re.compile(r"live session|interview|nieuws|journal|feest|f[êe]te|concert|hommage|c[ée]r[ée]monie|plechtig|verkiezing|[ée]lection|campagne", re.I))
 
+# Australia: council meetings (ordinary, special and committee meetings of the council); there's no education committee,
+# as the states run the schools. Youth councils, citizenship ceremonies and briefings aren't counted.
+RULES["AU"] = (re.compile(r"$^"),
+               re.compile(r"meeting|council", re.I),
+               re.compile(r"^(?!.*(youth|junior|citizenship|ceremony|swearing|community (forum|information)|info(rmation)? session|briefing|webinar|q ?& ?a)).*"
+                          r"((ordinary|special|extraordinary|general|statutory|annual)\s+(council\s+)?meeting|council meeting|meeting of (the )?council|"
+                          r"(standing|planning|policy|finance|audit|services)[^|]{0,30}committee meeting)", re.I),
+               re.compile(r"live session|interview|news|podcast|festival|concert|award|tour|launch|explained|how to", re.I))
+
+# Croatia: sessions of the city or municipal council (sjednica gradskog / općinskog vijeća) and its education committee
+# (odbor za obrazovanje / školstvo); youth councils and ceremonies aren't counted.
+RULES["HR"] = (re.compile(r"(odbor|povjerenstvo)[^|]{0,40}(obrazovanj|[sš]kolstv|odgoj)", re.I),
+               re.compile(r"sjednic|vije[cć]", re.I),
+               re.compile(r"^(?!.*(dje[cč]j|mladih|u[cč]eni[cč]k|sve[cč]an|sve[cč]ana)).*(sjednic[aeiu] (gradskog|op[cć]inskog)? ?vije[cć]a|(gradsko|op[cć]insko) vije[cć]e|\d+\.\s*sjednic|sjednica\s+(gv|ov)\b)", re.I),
+               re.compile(r"live session|intervju|vijesti|reportaž|festival|koncert|dan grada|dan op[cć]ine|izbori|kampanj", re.I))
+
 # Philippines: the local school board's meetings, else the city or municipal council's sessions (Sangguniang Bayan or
 # Panlungsod: regular and special sessions); youth councils (Sangguniang Kabataan) and news aren't counted.
 RULES["PH"] = (re.compile(r"local school board|\blsb\b|committee on (basic )?education", re.I),
@@ -221,6 +237,9 @@ NOT_CHANNELS = {
     # Philippines: the city council of Alaminos (Pangasinan) found for Alaminos (Laguna), and Sogod's council for Leyte
     "PH": {"https://www.youtube.com/channel/UCBKHEP2wS5tUvztcvvO_zbg",
            "https://www.youtube.com/channel/UCA6Oz5eN0eNmiKC9agQ6iEw"},
+    # Croatia: the city council of Visoko in Bosnia and Herzegovina, not the Croatian municipality of Visoko
+    "HR": {"https://www.youtube.com/channel/UCxmQKfPafCW7QvqutO_vMXQ",
+           "https://www.youtube.com/channel/UCbUsVlV8y9bx8UPsLgrZ35A"},   # Stari Grad, Sarajevo (Bosnia and Herzegovina), not Stari Grad on Hvar
     # Portugal: Brazilian municipal chambers with a Portuguese town's name (checked by their videos' titles)
     "PT": {"https://www.youtube.com/channel/UC4Q-Xy8kTVVcUxlqSprl6Kw",   # Rolim de Moura (Rondônia), not Moura
            "https://www.youtube.com/channel/UCWXrV0wJl28CErzmErc4BfQ",   # São Vicente (São Paulo), not São Vicente (Madeira)
@@ -378,7 +397,7 @@ def write(cc, key, rows, feats):
             "Population", "Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
     extra = [c for c in ("Province", "Autonomous community", "Children under 18 (estimated)", "Poverty year", "Poverty range", "Poverty rate (region, all ages)", ES_EST,
-                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)", "Welfare rate basis", "Unemployment rate (2020 census)", "Children under 15", "Children on family benefit (% of under-20s)", "Median income (€ per taxpayer)", "Children under 18", "Mean income (€ per tax return)") if any(r.get(c) not in (None, "") for r in rows)]
+                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)", "Welfare rate basis", "Unemployment rate (2020 census)", "Children under 15", "Children on family benefit (% of under-20s)", "Median income (€ per taxpayer)", "Children under 18", "Mean income (€ per tax return)", "Median family income ($ per week, 2021)", "Poverty rate (county, 2011)") if any(r.get(c) not in (None, "") for r in rows)]
     pov = "Percentage of Children in Low Income" if any(r.get("Percentage of Children in Low Income") for r in rows) else "Poverty rate (all ages)"
     cols = [c for c in cols if c not in ("Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)") or any(r.get(c) not in (None, "") for r in rows)]
     cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
@@ -1099,6 +1118,81 @@ def belgium():
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
     write("BE", "belgium", rows, feats)
+
+
+AU_STATES = {"1": "New South Wales", "2": "Victoria", "3": "Queensland", "4": "South Australia", "5": "Western Australia", "6": "Tasmania",
+             "7": "Northern Territory", "8": "Australian Capital Territory", "9": "Other Territories"}
+# In the islands view instead: Christmas Island, the Cocos (Keeling) Islands, and Norfolk Island with Jervis Bay (the census's
+# "Unincorporated Other Territories").
+AU_ISLANDS = {"51710", "51860", "99399"}
+
+
+def australia():
+    """544 local government areas (2021 boundaries, with the ACT and unincorporated areas). The states and territories run government schools through their
+    education departments; councils have no part in schooling, so their meetings stand in. Poverty stand-in: people on
+    working-age income support (JobSeeker Payment, Parenting Payment, Youth Allowance (other), Special Benefit), June 2026
+    (DSS), per 100 people aged 15-64 at the 2021 Census."""
+    d = os.path.join(IN, "australia")
+    au = json.load(open(os.path.join(d, "au_data.json"), encoding="utf-8"))
+    geo = {f["properties"]["LGA_CODE21"]: f for f in json.load(open(os.path.join(d, "au_lga2021.geojson"), encoding="utf-8"))["features"] if f.get("geometry")}
+    rows, feats = [], []
+    for code, x in sorted(au.items()):
+        if code in AU_ISLANDS: continue
+        f = geo.get(code); p = f["properties"] if f else {}
+        name = p.get("LGA_NAME21") or code
+        if code == "89399": name = "Australian Capital Territory"
+        uninc = "Unincorporated" in name
+        area = p.get("AREASQKM21") or 0
+        dens = x["pop"] / area if area and x["pop"] else 0
+        rate = 100 * x["support"] / x["wa"] if x.get("wa") and "support" in x else None
+        did = f"AU-{code}"
+        rows.append({"District": name, "Region": AU_STATES[code[0]], "Population": x["pop"] or "",
+                     "Poverty rate (all ages)": f"{min(rate, 100):.2f}%" if rate is not None else "",
+                     "Poverty note": ("Stand-in: people on working-age income support (JobSeeker Payment, Parenting Payment, Youth Allowance (other), Special Benefit), "
+                                      f"{x['support_period']} (Department of Social Services), per 100 people aged 15-64 at the 2021 Census; Australia publishes no poverty rate by council area") if rate is not None else "",
+                     "Children under 18": x.get("u18") or "",
+                     "Median family income ($ per week, 2021)": x.get("median_family_income") or "",
+                     "Enrollment": x.get("pupils") or "", "Public school enrollment": x.get("pupils_public") or "",
+                     "Enrollment year": "2021 Census (residents attending primary and secondary school)" if x.get("pupils") else "",
+                     "School system": ("ACT Government (no councils)" if code == "89399" else "State government; no council (unincorporated area)" if uninc
+                                       else "State or territory education department; the council has no part in schooling"),
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
+        if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    write("AU", "australia", rows, feats)
+
+
+def croatia():
+    """556 cities and municipalities (gradovi and općine), with the City of Zagreb as one. The 32 largest cities found
+    and run their primary schools (the counties run the rest, and secondary schools); the city or municipal council is
+    the elected body. Poverty: the share of people below the poverty line (23,918.62 HRK a year per adult equivalent) in
+    2011, from the World Bank and Croatian Bureau of Statistics poverty map (World Bank, October 2016), all ages."""
+    d = os.path.join(IN, "croatia")
+    hr = json.load(open(os.path.join(d, "hr_data.json"), encoding="utf-8"))
+    geo = {f["properties"]["GISCO_ID"][3:]: f for f in json.load(open(os.path.join(d, "lau_HR.geojson"), encoding="utf-8"))["features"]}
+    rows, feats = [], []
+    for code, x in sorted(hr.items()):
+        f = geo.get(code)
+        name = "Zagreb" if x["name"] == "Grad Zagreb" else x["name"]
+        own = "pov" in x
+        # Channel names give the Croatian half of bilingual names ("Grad Pula" for Pula - Pola). The city of Sveta Nedelja
+        # (Zagreb County) posts as "Grad Sveta Nedelja"; the Istrian Sveta Nedelja is a municipality (općina), so a city
+        # channel isn't its own.
+        alts = [name] + [p.strip() for p in name.split(" - ")] if " - " in name else [name]
+        if name == "Sveta Nedelja" and x["county"] == "Istarska": alts = ["Sveta Nedelja Istra"]
+        dens = x["pop"] / x["area"] if x.get("pop") and x.get("area") else 0
+        did = f"HR-{code}"
+        rows.append({"District": name, "Region": "City of Zagreb" if x["county"] == "Grad Zagreb" else x["county"], "Population": round(x["pop"]) if x.get("pop") else "",
+                     "Poverty rate (all ages)": f"{x['pov']:.2f}%" if own else "",
+                     "Poverty standard error": f"{x['pov_se']:.1f}" if own else "",
+                     "Poverty rate (region, all ages)": "" if own else f"{x['county_pov']:.1f}%",
+                     "Poverty rate (county, 2011)": f"{x['county_pov']:.1f}%" if x.get("county_pov") is not None else "",
+                     "Poverty note": ("Share of people below the poverty line (23,918.62 HRK a year per adult equivalent), all ages, 2011 (World Bank and Croatian Bureau of Statistics poverty map, 2016)" if own else
+                                      f"No estimate of its own in the poverty map; shown instead in a separate column, kept out of the averages: its county's rate ({x['county']}, 2011)"),
+                     "_names": alts,
+                     "School system": ("City (primary schools); city council" if name == "Zagreb" else "City or municipal council; primary schools run by the city (in the largest cities) or the county"),
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
+        if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
+    write("HR", "croatia", rows, feats)
 
 
 def philippines():
