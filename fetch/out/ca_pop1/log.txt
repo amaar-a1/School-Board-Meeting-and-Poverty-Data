@@ -1,0 +1,6 @@
+head ["REF_DATE", "GEO", "DGUID", "Census year (2)", "Age (in single years), average age and median age (128)", "Coordinate", "Gender (3a):Total - Gender[1]", "Symbol", "Gender (3a):Men+[2]", "Symbol", "Gender (3a):Women+[3]", "Symbol"]
+age Age (in single years), average age and median age (128) gender cols ['Gender (3a):Total - Gender[1]', 'Gender (3a):Men+[2]', 'Gender (3a):Women+[3]'] value cols []
+ages sample []
+CSDs pop 0 kids 0
+boards 359 cols ['id', 'pseudo', 'province', 'name', 'own', 'kids', 'pct', 'geometry']
+boards with pop 359; fn 70, with kids 0
