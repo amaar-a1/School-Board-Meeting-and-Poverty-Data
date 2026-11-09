@@ -12,13 +12,18 @@ DST = os.path.join(HERE, "..", "docs", "data", "map", "world.json")
 # On the site already: the US and its territories, Canada, Saint-Pierre-et-Miquelon, the UK,
 # Ireland, the Nordic countries, the Netherlands, Germany, New Zealand and the island set.
 COVERED = {"USA", "PRI", "VIR", "GUM", "MNP", "ASM", "CAN", "SPM", "GBR", "IRL", "NOR", "SWE", "FIN", "DNK", "NLD"}
-for f, iso in (("germany.csv", "DEU"), ("new-zealand.csv", "NZL"), ("iceland.csv", "ISL"), ("switzerland.csv", "CHE"), ("chile.csv", "CHL"), ("colombia.csv", "COL"), ("mexico.csv", "MEX"), ("brazil.csv", "BRA"), ("peru.csv", "PER"), ("spain.csv", "ESP"), ("france.csv", "FRA"), ("ecuador.csv", "ECU")):
+for f, iso in (("germany.csv", "DEU"), ("new-zealand.csv", "NZL"), ("iceland.csv", "ISL"), ("switzerland.csv", "CHE"), ("chile.csv", "CHL"), ("colombia.csv", "COL"), ("mexico.csv", "MEX"), ("brazil.csv", "BRA"), ("peru.csv", "PER"), ("spain.csv", "ESP"), ("france.csv", "FRA"), ("ecuador.csv", "ECU"),
+               ("italy.csv", "ITA"), ("poland.csv", "POL"), ("japan.csv", "JPN"), ("belgium.csv", "BEL"), ("portugal.csv", "PRT"),
+               ("australia.csv", "AUS"), ("croatia.csv", "HRV"), ("philippines.csv", "PHL")):
     if os.path.exists(os.path.join(HERE, "..", "docs", "data", f)):
         COVERED.add(iso)
 ISL = os.path.join(HERE, "..", "docs", "data", "islands.csv")
 if os.path.exists(ISL):
     import csv
     COVERED |= {r["District ID"].split("-", 1)[1] for r in csv.DictReader(open(ISL, encoding="utf-8"))}
+    # Natural Earth's own codes for places the islands view has under others: Christmas Island and the Cocos (Keeling)
+    # Islands (Indian Ocean Territories), Pitcairn. Åland is in Finland's data.
+    COVERED |= {"IOA", "PCN", "ALD"}
 
 
 def rnd(c):
