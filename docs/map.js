@@ -203,7 +203,7 @@
     const a = aliases[geoid];
     if (!a) return null;
     if (a.rate) {   // left out of the Census poverty file: county all-ages rate
-      return { District: a.district, "Percentage of Children Ages 5-17 in Poverty": a.rate,
+      return { District: a.district, "Percentage of Children Ages 5-17 in Poverty": a.rate, _povEst: true,
         "Available Board Meetings": 0, Enrollment: a.enrollment ?? "", "Map note": a.note };
     }
     const rows = a.ids.map((id) => lookup[id]).filter(Boolean);
@@ -332,7 +332,33 @@
     return tot > 0 ? Math.min(100, (100 * pub) / tot) : NaN;
   }
 
+  // "No estimates": which figures are estimates rather than the place's own published data, per colouring.
+  // Poverty: a figure borrowed from a wider area or another place (its province, département, region, county,
+  // the surrounding area, the country, or the place it was made from). Official small-area estimates (Chile,
+  // the Philippines, Peru, Croatia's poverty map) are the place's own published figures, so they count as data.
+  const POV_EST = /^No commune figure|^No child figure: INE|^Created in .* from|^Made from |Merged into .*shown with|Overall at-risk-of-poverty rate of the|national rate|^No consumption poverty estimate|^No estimate of its own|withheld .* shown instead|Special Geographic Area|leaves out this comune|publishes no low-income figures for reserves|all-ages poverty rate for .* County/;
+  const povEstimated = (r) => !!r && (!!r._povEst || (r.pseudo && !r.own) ||
+    (!!r["Welfare rate basis"] && !/^Its own/.test(r["Welfare rate basis"])) ||
+    POV_EST.test(r["Poverty note"] || r["How poverty was calculated"] || r.Notes || ""));
+  const enrollEstimated = (r) => !!r && (!!r["Enrollment estimated"] || /estimated/i.test(r["Enrollment year"] || ""));
+  function isEstimate(metric, r, id) {
+    if (!r) return false;
+    if (metric === "poverty") return povEstimated(r);
+    if (metric === "rank") return povEstimated(r) || !!r._rankEst || String(r["Poverty rank in country"] ?? "") === "";
+    if (metric === "enrollment" || metric === "peers") return enrollEstimated(r);
+    if (metric === "locale") return !r.Locale;   // borrowed from its area's other places
+    if (metric === "density") return !!r.pseudo && /^FRA-REST-/.test(id);   // a département's smaller communes together
+    return false;
+  }
+  const noEst = () => !!($("map-no-est") && $("map-no-est").checked);
+  const EST_HIDDEN = "#d4d4d4";
+
   function color(row, id) {
+    const c = colorOf(row, id);
+    return c !== NO_DATA && noEst() && isEstimate($("map-metric").value, row, id) ? EST_HIDDEN : c;
+  }
+
+  function colorOf(row, id) {
     const metric = $("map-metric").value, sc = SCALES[metric];
     if (metric === "locale") return localeColor(row && !row.Locale ? { Locale: localeFallback(row, id) } : row);
     if (metric === "rank" && row && String(row[sc.column] ?? "") === "") { const k = rankFallback(row, id); if (k !== "") row = { [sc.column]: k }; }
@@ -565,6 +591,10 @@
     // Places shown with no figure in this colouring (Svalbard and Pitcairn publish no poverty figure).
     if ((euv === "ISLE" || (current && current.combined)) && ["poverty", "rank"].includes($("map-metric").value) && Object.values(layers).some((l) => l.getLayers().some((f) => f.feature && !isWorld(f.feature) && !undefinedArea(f.feature) && style(f.feature).fillColor === NO_DATA)))
       items.push(`<span><i style="background:${NO_DATA}"></i>No figure published</span>`);
+    if (noEst()) items.push(`<span><i style="background:${EST_HIDDEN}"></i>Estimate, hidden (“No estimates” is ticked): ${{
+      poverty: "a rate borrowed from a wider area or another place", rank: "a rank from a borrowed or estimated rate",
+      enrollment: "school-age children living there, where no count is published", peers: "its size group comes from an estimated enrollment",
+      locale: "borrowed from its area's other places", density: "a French département's smaller communes taken together" }[$("map-metric").value] || "none in this colouring"}</span>`);
     items.push(`<span><i style="background:${WORLD_STYLE.fillColor};border:1px solid ${WORLD_STYLE.color}"></i>Country not covered on this site</span>`);
     if (faded.length) items.push(`<span class="map-faded">Faded: districts ${faded.join(" or ")}</span>`);
     $("map-legend").innerHTML = items.join("");
@@ -709,6 +739,7 @@
     files.canada.features.filter((f) => f.properties.pseudo).forEach((f) => {
       const p = f.properties, prov = caNames[p.province] || p.province;
       lookup[gid(f)] = { District: `Rest of ${prov} (no school board)`, Province: prov, "Board type": "No school board", pseudo: true, own: !!p.own,
+        Population: p.pop ?? "", "People per km² (estimated)": p.pop && p.land ? Math.round(10 * p.pop / p.land) / 10 : "",
         Locale: "Rural",   // the Far North, national parks and reserves
         "Poverty rank in country": caRank(p.pct), _rankEst: caRank(p.pct) !== "",
         "Percentage of Children Ages 0-17 in Low Income": p.pct ?? "", "Available Board Meetings": 0,
@@ -728,6 +759,7 @@
     (files.france ? files.france.features : []).filter((f) => f.properties.pseudo).forEach((f) => {
       const p = f.properties, rk = frRank[p.dep];
       lookup[gid(f)] = { District: `Smaller communes of ${p.dep}`, Region: p.dep, pseudo: true, "Available Board Meetings": 0, Locale: "Rural",
+        Population: p.pop ?? "",   // its density: these communes' people over their land together
         "Poverty rate (all ages)": p.pct ?? "", "Child poverty rate (département)": p.child ?? "",
         "Poverty rank in country": rk ? String(Math.round(rk[0] / rk[1])) : "", _rankEst: !!rk,
         "Map note": `${Number(p.communes).toLocaleString()} communes (${Number(p.pop).toLocaleString()} people) that INSEE publishes no poverty rate for, as they have too few households; shown with ${p.dep}'s rate, and not counted in France's data` };
@@ -798,6 +830,7 @@
     $("map-secondary").addEventListener("change", setSecondary);
     if ($("map-fr-small")) $("map-fr-small").addEventListener("change", () => setFrSmall());
     if ($("map-canada-overlap")) $("map-canada-overlap").addEventListener("change", setSecondary);
+    if ($("map-no-est")) $("map-no-est").addEventListener("change", restyle);
     legend();
     buildSearch();
   }
@@ -936,6 +969,12 @@
         if (metric === "public") { const v = publicShare(r); if (!isNaN(v)) want = [`${Math.round(v)}% of pupils`]; }
         if (want && !want.some((w) => text.includes(w))) out.push({ layer: n, id, name: r.District || "", want: want[0], text: text.replace(/\s+/g, " ").slice(0, 260) });
       }));
+      return out;
+    },
+    // Areas greyed out by "No estimates" in the current colouring, for checking: {layer: count}.
+    estHidden: () => {
+      const out = {};
+      Object.entries(layers).forEach(([n, l]) => l.eachLayer((f) => { if (f.feature && !isWorld(f.feature) && style(f.feature).fillColor === EST_HIDDEN) out[n] = (out[n] || 0) + 1; }));
       return out;
     },
     // Areas drawn grey (no figure) in the current colouring, for checking: [{layer, id, name}].

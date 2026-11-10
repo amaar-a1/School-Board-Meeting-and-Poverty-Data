@@ -34,3 +34,13 @@ for r in rows:
     n += bool(r["Population"])
 w = csv.DictWriter(open(CSV, "w", newline="", encoding="utf-8"), fieldnames=cols); w.writeheader(); w.writerows(rows)
 print(len(rows), "rows;", n, "with population;", sum(1 for r in rows if r["Children Ages 5-17 (2021 Census)"]), "with children 5-17")
+
+# The two "Rest of ... (no school board)" areas exist only on the map (docs/data/map/canada.json): their
+# population and land area go into their map properties, for the density colouring.
+MAP = os.path.join(HERE, "..", "docs", "data", "map", "canada.json")
+t = json.load(open(MAP, encoding="utf-8"))
+for g in t["objects"]["canada"]["geometries"]:
+    x = d["boards"].get(g["properties"]["id"])
+    if g["properties"].get("pseudo") and x:
+        g["properties"]["pop"], g["properties"]["land"] = x["pop"], x["land_km2"]
+json.dump(t, open(MAP, "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
