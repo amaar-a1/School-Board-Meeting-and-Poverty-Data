@@ -505,6 +505,7 @@ window.SOURCES = [
     only: "Canada",
     group: "Canada: enrollment",
     items: [
+      { title: "Population, land area and children aged 5–17 by census subdivision, 2021 Census: Statistics Canada tables 98-10-0002-01 (population and dwelling counts) and 98-10-0022-01 (age in single years). Used for each board's people per km² (census subdivisions inside its border, split ones shared by land area) and the estimated enrollment of First Nations reserves outside every board (data-prep/add_canada_population.py)", url: "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810002201" },
       { title: "Ontario: School Information and Student Demographics, 2024–25 (school enrolment summed by board; Ontario Data Catalogue)", url: "https://data.ontario.ca/dataset/school-information-and-student-demographics" },
       { title: "Quebec: Évolution de l'effectif des centres de services scolaires et des commissions scolaires, September 2022 (Ministry of Education)", url: "https://cdn-contenu.quebec.ca/cdn-contenu/education/indicateurs-statistiques/Previsions_effectif_scolaire/Faits_saillants/evolution-effectif-scolaire.pdf" },
       { title: "British Columbia: BC Schools – Student Headcount by Grade, 2025/26 public schools (DataBC)", url: "https://catalogue.data.gov.bc.ca/dataset/7114187e-305c-4a79-acbb-3294ba0f53c8" },

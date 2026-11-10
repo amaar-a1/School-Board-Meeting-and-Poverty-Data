@@ -47,6 +47,7 @@ def from_region_share(name, key, text):
 
 RULES = {
     "national.csv": from_column("Children Ages 5-17", 1, "Estimate: children aged 5–17 living in the district (Census, SAIPE 2024); no enrollment reported to NCES"),
+    "canada.csv": from_column("Children Ages 5-17 (2021 Census)", 1, "Estimate: children aged 5–17 living on the reserve (2021 Census); the band-operated school's enrollment isn't published"),
     "japan.csv": from_column("Children under 15", 9 / 15, "Estimate: children aged 6–14 living in the municipality (nine fifteenths of its children under 15)"),
     "iceland.csv": from_column("Children", 10 / 18, "Estimate: children aged 6–15 living in the municipality (ten eighteenths of its children under 18); it has no school of its own"),
     "germany.csv": from_column("Children", 12 / 18, "Estimate: children aged 6–17 living in the district (twelve eighteenths of its children under 18)"),
