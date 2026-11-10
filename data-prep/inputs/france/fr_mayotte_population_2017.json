@@ -1,0 +1,90 @@
+{
+ "source": "INSEE legal populations (populations légales) from the 2017 census of Mayotte, via geo.api.gouv.fr (communes?codeDepartement=976&fields=population,surface), downloaded November 2026; surface in hectares",
+ "communes": {
+  "97601": {
+   "name": "Acoua",
+   "pop": 5192,
+   "surface_ha": 1254.11
+  },
+  "97602": {
+   "name": "Bandraboua",
+   "pop": 13989,
+   "surface_ha": 3170.82
+  },
+  "97603": {
+   "name": "Bandrele",
+   "pop": 10282,
+   "surface_ha": 3495.03
+  },
+  "97604": {
+   "name": "Bouéni",
+   "pop": 6189,
+   "surface_ha": 1390.8
+  },
+  "97605": {
+   "name": "Chiconi",
+   "pop": 8295,
+   "surface_ha": 816.96
+  },
+  "97606": {
+   "name": "Chirongui",
+   "pop": 8920,
+   "surface_ha": 2587.93
+  },
+  "97607": {
+   "name": "Dembeni",
+   "pop": 15848,
+   "surface_ha": 3826.54
+  },
+  "97608": {
+   "name": "Dzaoudzi",
+   "pop": 17831,
+   "surface_ha": 644.13
+  },
+  "97609": {
+   "name": "Kani-Kéli",
+   "pop": 5507,
+   "surface_ha": 2043.24
+  },
+  "97610": {
+   "name": "Koungou",
+   "pop": 32156,
+   "surface_ha": 2812.38
+  },
+  "97611": {
+   "name": "Mamoudzou",
+   "pop": 71437,
+   "surface_ha": 4211.85
+  },
+  "97612": {
+   "name": "Mtsamboro",
+   "pop": 7705,
+   "surface_ha": 1614.61
+  },
+  "97613": {
+   "name": "M'Tsangamouji",
+   "pop": 6432,
+   "surface_ha": 2154.4
+  },
+  "97614": {
+   "name": "Ouangani",
+   "pop": 10203,
+   "surface_ha": 1850
+  },
+  "97615": {
+   "name": "Pamandzi",
+   "pop": 11442,
+   "surface_ha": 439.54
+  },
+  "97616": {
+   "name": "Sada",
+   "pop": 11156,
+   "surface_ha": 1107.73
+  },
+  "97617": {
+   "name": "Tsingoni",
+   "pop": 13934,
+   "surface_ha": 3448.32
+  }
+ }
+}
