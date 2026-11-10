@@ -874,6 +874,9 @@ def france():
     for k, v in om.items(): deps[k] = v["name"]
     for c, n in om_names.items():
         ins["communes"].setdefault(c, {"name": n, "pop": None})
+    # Mayotte's communes: INSEE's legal populations from its 2017 census (the latest full one there).
+    for c, x in json.load(open(os.path.join(d, "fr_mayotte_population_2017.json"), encoding="utf-8"))["communes"].items():
+        if c in ins["communes"] and not ins["communes"][c].get("pop"): ins["communes"][c]["pop"] = x["pop"]
     dep_of = lambda c: c[:3] if c.startswith("97") else c[:2]
     rows, feats, small_feats = [], [], []
     for code, x in sorted(ins["communes"].items()):
@@ -897,7 +900,6 @@ def france():
                          "People below 60% of the national median standard of living, all ages, 2023 (INSEE, Filosofi); INSEE publishes no child rate by commune, so the département's rate for under-18s is given too",
                      "Enrollment": pu.get("total", ""), "Enrollment year": "2025-26 (nursery and primary schools)" if pu else "",
                      "Public school enrollment": pu.get("public", ""), "School system": "Commune (school buildings); Ministry of Education (teachers)",
-                     # Mayotte has no commune populations here: its overall density (256,518 people in 2017 on 374 km², about 690 per km²)
                      "Locale": loc(dens) if dens else "Suburban" if dp == "976" else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: (small_feats if small else feats).append({"type": "Feature", "properties": {"id": did, "NAME": x["name"]}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
     # The map draws the small communes only when asked ("Smaller French communes", data/map/france-small.json);

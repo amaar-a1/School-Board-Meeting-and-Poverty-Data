@@ -278,6 +278,7 @@ window.SOURCES = [
     only: "France",
     group: "France: communes, poverty, population and pupils",
     items: [
+      { title: "Population of Mayotte's 17 communes: INSEE legal populations from the 2017 census of Mayotte (its latest full census), via the government's geo API; used for their density and estimated locale", url: "https://geo.api.gouv.fr/communes?codeDepartement=976&fields=nom,code,population,surface" },
       { title: "Poverty: INSEE, Filosofi 2023, poverty rate (60% of the median standard of living) and median standard of living by commune and département (dataset DS_FILOSOFI_CC)", url: "https://api.insee.fr/melodi/file/DS_FILOSOFI_CC/DS_FILOSOFI_CC_2023_CSV_FR" },
       { title: "Child poverty by département: INSEE, Filosofi 2023, poverty rate by age group (dataset DS_FILOSOFI_SAGE_LOG_TP_NIVVIE)", url: "https://api.insee.fr/melodi/file/DS_FILOSOFI_SAGE_LOG_TP_NIVVIE/DS_FILOSOFI_SAGE_LOG_TP_NIVVIE_2023_CSV_FR" },
       { title: "Overseas départements' poverty rates (Guadeloupe, Martinique, French Guiana, Mayotte): INSEE, Revenus et patrimoine des ménages, édition 2024, fiche 1.21 (Filosofi 2021 and the 2017 Budget de famille survey)", url: "https://www.insee.fr/fr/statistiques/fichier/7941411/RPM2024-F21.pdf" },
