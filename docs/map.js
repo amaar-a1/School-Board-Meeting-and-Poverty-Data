@@ -285,10 +285,13 @@
     if (!(v > 0) && toNumber(r && r["Other Board Meetings"]) > 0) v = toNumber(r["Other Board Meetings"]);
     return isNaN(v) ? 0 : v;
   };
+  // An enrollment of 0 that is a real figure (a place with no school and no school-age children, such as Sandstone,
+  // WA), as opposed to the 0 some files use for "none reported": it has its own Enrollment year saying so.
+  const realZero = (r) => !!r && String(r.Enrollment ?? "").trim() === "0" && !!r["Enrollment year"];
   const TIERS = ((window.SITE_CONFIG && window.SITE_CONFIG.sizeTiers) || {}).tiers || [];
   const tierOf = (r) => {
     const e = toNumber(r && r.Enrollment);
-    return e > 0 ? TIERS.find((t) => e >= t.min && (t.max == null || e <= t.max)) || null : null;
+    return e > 0 || realZero(r) ? TIERS.find((t) => e >= t.min && (t.max == null || e <= t.max)) || null : null;
   };
   const tierRange = (t) => (t.max == null ? `${t.min.toLocaleString()} or more` : `${t.min.toLocaleString()}–${t.max.toLocaleString()}`);
   let peerPool = null;
@@ -374,7 +377,7 @@
     // Where CivicSearch has none, the meetings map uses counts from the district's own sources.
     if (metric === "meetings" && row && !(v > 0) && toNumber(row["Other Board Meetings"]) > 0) v = toNumber(row["Other Board Meetings"]);
     if (metric === "meetings" && isNaN(v)) v = 0;   // no meetings found counts as 0
-    if (metric === "enrollment" && !(v > 0)) return NO_DATA;
+    if (metric === "enrollment" && !(v > 0) && !realZero(row)) return NO_DATA;
     if (metric === "density") v = densityFor(row, id);   // no figure (0 is only ever "none reported")
     if (metric === "peers") { const p = peerInfo(row, id); v = p ? p.pct : NaN; }
     if (metric === "recency") v = monthsSince(row);
@@ -467,7 +470,7 @@
       (isNaN(povValue(r)) && !isNaN(povValue(r, true)) ? `Shown on the map: ${povValue(r, true).toFixed(1)}% (${r["Unmet basic needs (NBI, 2010)"] ? "unmet basic needs, 2010" : `its latest earlier figure, ${String(r["Poverty by year"] || "").split(";").map((x) => x.trim().split(":")[0]).sort().pop()}`})<br>` : "") +
       `Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}` +
       (toNumber(r["Other Board Meetings"]) > 0 ? `${r.State ? " on CivicSearch" : meet > 0 ? " recorded" : ""}; ${toNumber(r["Other Board Meetings"]).toLocaleString()} from ${r.State ? "other sources" : "the council's or board's own records"} (see note)` : "") + `<br>` +
-      `Enrollment: ${isNaN(enr) ? "not reported" : enr.toLocaleString()}${r["Enrollment estimated"] ? " (estimated: school-age children, no count published)" : ""}` + rankLine(r, gid(feature)) +
+      `Enrollment: ${isNaN(enr) ? "not reported" : enr.toLocaleString()}${r["Enrollment estimated"] ? " (estimated: school-age children, no count published)" : realZero(r) ? ` (${esc(r["Enrollment year"])})` : ""}` + rankLine(r, gid(feature)) +
       peerLine(r, gid(feature)) +
       (r["Latest meeting"] ? `<br>Latest recorded meeting: ${esc(r["Latest meeting"])}${isNaN(monthsSince(r)) ? "" : ` (${agoText(monthsSince(r))})`}` : "") +
       publicLine(r) +

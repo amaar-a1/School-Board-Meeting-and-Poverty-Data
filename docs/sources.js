@@ -360,6 +360,9 @@ window.SOURCES = [
     only: "Australia",
     group: "Australia: council areas, income support and the census",
     items: [
+      { title: "Cue (WA): enrollment of Cue Primary School, the shire's only school (no private school), from the WA Department of Education's Schools Online, used because the census figure is suppressed", url: "https://www.det.wa.edu.au/schoolsonline/student_current.do?schoolID=5127&pageID=SP01" },
+      { title: "Sandstone (WA): no school since 2013 and no school-age residents; a child living there would study remotely (Shire of Sandstone)", url: "https://www.sandstone.wa.gov.au/council/facilities/education" },
+      { title: "Sandstone 2021 Census QuickStats (ABS) and Wikipedia's list of schools in rural Western Australia (the 2013 closure)", url: "https://abs.gov.au/census/find-census-data/quickstats/2021/SAL51326" },
       { title: "Income support (stand-in): Department of Social Services, DSS Benefit and Payment Recipient Demographics, June 2026, by local government area (data.gov.au)", url: "https://data.gov.au/data/dataset/dss-payment-demographic-data" },
       { title: "Population, age, median family income and school attendance: Australian Bureau of Statistics, 2021 Census General Community Profile DataPack, local government areas (tables G01, G02, G04 and G15)", url: "https://www.abs.gov.au/census/find-census-data/datapacks" },
       { title: "Borders: Australian Bureau of Statistics, ASGS Edition 3 local government areas 2021, simplified with mapshaper", url: "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files" },
