@@ -1138,6 +1138,13 @@ AU_STATES = {"1": "New South Wales", "2": "Victoria", "3": "Queensland", "4": "S
 # In the islands view instead: Christmas Island, the Cocos (Keeling) Islands, and Norfolk Island with Jervis Bay (the census's
 # "Unincorporated Other Territories").
 AU_ISLANDS = {"51710", "51860", "99399"}
+# Two Western Australian shires whose census pupil count is suppressed (too few residents), from their schools instead.
+# Cue: its only school, Cue Primary School (government), from the WA Department of Education's Schools Online
+# (det.wa.edu.au/schoolsonline, school 5127, current enrolment, checked November 2026); no private school in the shire.
+# Sandstone: its school closed in 2013 for lack of school-age children; the shire has no school-age residents now, and a
+# child moving there would study remotely (Shire of Sandstone, sandstone.wa.gov.au/council/facilities/education).
+AU_PUPILS = {"52380": (38, 38, "2026 (Cue Primary School, its only school: WA Department of Education, Schools Online)"),
+             "57630": (0, 0, "2026: no school since 2013 and no school-age residents (Shire of Sandstone); a child living there would study remotely")}
 
 
 def australia():
@@ -1165,8 +1172,9 @@ def australia():
                                       f"{x['support_period']} (Department of Social Services), per 100 people aged 15-64 at the 2021 Census; Australia publishes no poverty rate by council area") if rate is not None else "",
                      "Children under 18": x.get("u18") or "",
                      "Median family income ($ per week, 2021)": x.get("median_family_income") or "",
-                     "Enrollment": x.get("pupils") or "", "Public school enrollment": x.get("pupils_public") or "",
-                     "Enrollment year": "2021 Census (residents attending primary and secondary school)" if x.get("pupils") else "",
+                     "Enrollment": AU_PUPILS[code][0] if code in AU_PUPILS else x.get("pupils") or "",
+                     "Public school enrollment": AU_PUPILS[code][1] if code in AU_PUPILS else x.get("pupils_public") or "",
+                     "Enrollment year": AU_PUPILS[code][2] if code in AU_PUPILS else "2021 Census (residents attending primary and secondary school)" if x.get("pupils") else "",
                      "School system": ("ACT Government (no councils)" if code == "89399" else "State government; no council (unincorporated area)" if uninc
                                        else "State or territory education department; the council has no part in schooling"),
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
