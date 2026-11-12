@@ -1,0 +1,130 @@
+CO | ymc7-nct5 | MATRICULAS MUNICIPIO POR AÑO | 2026-09-20 | CONVENCION, CACHIRA, ABREGO, LA PLAYA DE BELEN, LA ESPERANZA, HACARI, EL TARRA, EL CARMEN, SAN CALIXTO, VILLACARO, OCANA, TEORAMA, TIPO ORGANIZACIÓN/ AÑO
+CO | hszb-awzn | MEN_ESTADISTICAS MATRICULA MUNICIPIO DE SARAVENA | 2026-06-10 | UNIVERSITARIA, Código delMunicipio, Nombre del Municipio, Nombre del Departamento, Código delDepartamento, AÑO, ESPECIALIZACION, MAESTRIA, TECNOLOGICA, TECNICA PROFESIONAL, DOCTORADO, IES CON OFERTA
+CO | y9ga-zwzy | MEN_ESTADISTICAS MATRICULA POR MUNICIPIOS_ES | 2026-05-18 | Nombre del Departamento, AÑO, Nombre del Municipio, Código delMunicipio, IES CON OFERTA, ESPECIALIZACION, Código delDepartamento, TECNICA PROFESIONAL, TECNOLOGICA, DOCTORADO, MAESTRIA, UNIVERSITARIA
+CO | u37r-hjmu | Resultados únicos Saber Pro | 2026-09-19 | ESTU_CONSECUTIVO, ESTU_PRGM_ACADEMICO, ESTU_PAGOMATRICULAPADRES, ESTU_COLE_TERMINO, ESTU_PRGM_DEPARTAMENTO, ESTU_COD_RESIDE_DEPTO, ESTU_INST_DEPARTAMENTO, ESTU_NUCLEO_PREGRADO, PERIODO, ESTU_PAIS_RESIDE, ESTU_TIPODOCUMENTO, MOD_LECTURA_CRITICA_PUNT, MOD_RAZONA_CUANTITAT_PUNT, ESTU_PRIVADO_LIBERTAD, INST_ORIGEN, ESTU_ESTADOINVESTIGACION, FAMI_EDUCACIONMADRE, FAMI_TIENEINTERNET, MOD_INGLES_DESEM, FAMI_TIENECOMPUTADOR, FAMI_ESTRATOVIVIENDA, FAMI_TIENELAVADORA, FAMI_TIENEAUTOMOVIL, MOD_INGLES_PUNT, FAMI_EDUCACIONPADRE
+CO | ncdw-7shd | Valor de Matricula - Programas Universidad Colegio Mayor de Cundinamarca | 2026-05-18 | Valor en SMLMV, PROGRAMA, NIVEL DE INGRESOS, VALOR DE MATRICULA, NIVEL DE INGRESO MAXIMO
+CO | we9a-3bys | NUMERO DE EMPLEADOS POR CADA EMPRESA REGISTRADA | 2026-05-18 | Estado, matricula, ULT-ANO_REN, FEC-MATRICULA, razonsocial, nit, numid, Personal_ocupado
+CO | sji7-3uxf | BASE DE DATOS COMERCIANTES CODIGO CIIU G4773 | 2026-05-18 | ORGANIZACION, NOMBRE O RAZON SOCIAL, TEL-COMERCIAL, NIT, DIR-COMERCIAL, AÑO-MATRICULA, MATRICULA, MUN COMERCIAL, EMAIL-COMERCIAL, CIIU
+CO | c82u-588k | Personas Naturales, Personas Jurídicas y Entidades Sin Animo de Lucro | 2026-11-06 | matricula, camara_comercio, ultimo_ano_renovado, fecha_cancelacion, codigo_camara, segundo_apellido, codigo_organizacion_juridica, clase_identificacion_RL, Representante Legal, Num Identificacion Representante Legal, codigo_tipo_sociedad, cod_ciiu_act_econ_sec, fecha_actualizacion, codigo_categoria_matricula, nit, numero_identificacion, ciiu4, sigla, primer_nombre, primer_apellido, razon_social, cod_ciiu_act_econ_pri, categoria_matricula, codigo_clase_identificacion, estado_matricula
+CO | 5c2k-ahfc | MEN_NÚMERO_BACHILLERES_POR_ETC | 2026-10-20 | MATRICULA_11_OFICIAL, CODIGO_DEPARTAMENTO, CODIGO_MUNICIPIO, MATRICULA_11_NO_OFICIAL, APROBADOS_26_NO_OFICIAL, APROBADOS_26_OFICIAL, MATRICULA_26_TOTAL, DEPARTAMENTO, SECRETARIA, MATRICULA_11_TOTAL, APROBADOS_11_TOTAL, MUNICIPIO, AÑO, CODIGO_ETC, MATRICULA_26_OFICIAL, MATRICULA_26_NO_OFICIAL, APROBADOS_11_OFICIAL, APROBADOS_11_NO_OFICIAL, APROBADOS_26_TOTAL
+CO | udu3-4czz | BASE DE DATOS EMPRESAS DE CONSTRUCCION CCMMNA | 2026-05-18 | FEC-CANCELACION, ANIO-DATOS, EST-MATRICULA, PERSONAL, FEC-MATRICULA, CIIU-1, MATRICULA, NOM-REP-LEGAL, CIIU-3, FEC-RENOVACION, ULT-ANO_REN, RAZON SOCIAL, TEL-COM-1, CIIU-2, CIIU-4, TAM-EMPRESA, MUNICIPIO COMERCIAL, NIT, EMAIL-COMERCIAL, FECHA-DATOS, ACTIVIDAD, ORGANIZACION
+CO | c35x-mutb | SOCIEDADES REGISTRADAS CAMARA DE COMERCIO DE PEREIRA | 2026-05-18 | ORGANIZACIÓN, CIIU, MUNICIPIO COMERCIAL, IDENTIFICACIÓN, TELÉFONO COMERCIAL, DIRECCIÓN COMERCIAL, AÑO MATRÍCULA, RAZÓN SOCIAL, CORREO COMERCIAL, MATRICULA
+CO | vhw2-3yzu | EMPRESAS REGISTRADAS MONTERIA 2005-2019 | 2026-05-18 | FEC-MATRICULA, ULT-ANO_REN, RAZON SOCIAL, FEC-RENOVACION, DIR-COMERCIAL, MUN-COMERCIAL, NIT, CIIU-1, MUN-NOTIFICACION, EST-MATRICULA
+CO | y9ga-zwzy | MEN_ESTADISTICAS MATRICULA POR MUNICIPIOS_ES | 2026-05-18 | Nombre del Departamento, AÑO, Nombre del Municipio, Código delMunicipio, IES CON OFERTA, ESPECIALIZACION, Código delDepartamento, TECNICA PROFESIONAL, TECNOLOGICA, DOCTORADO, MAESTRIA, UNIVERSITARIA
+CO | r2hh-kc6c | EDUCACION BASICA MUNICIPIO | 2025-12-19 | ETC, DEPARTAMENTO, MUNICIPIO
+CO | uxpq-ybt6 | EDUCACION ARAUCA | 2025-12-19 | DEPARTAMENTO, ETC, MUNICIPIO
+CO | 3p8i-zcgt | educación | 2025-12-19 | MUNICIPIO, DEPARTAMENTO, ETC
+CO | 5wck-szir | MEN_MATRICULA_ESTADISTICA_ES | 2026-05-18 | Municipio de oferta del programa, Código de la Institución, Total Matriculados, Id_Nivel, Código del departamento(IES), Municipio dedomicilio de la IES, Departamento de domicilio de la IES, Año, Institución de Educación Superior (IES), Semestre, Código del Municipio(IES), Id_Area, Programa Académico, Departamento de oferta del programa, Id_Nivel_Formacion, Código del Municipio(Programa), Id_Nucleo, Id Género, Núcleo Básico del Conocimiento (NBC), IES PADRE, Código del Departamento(Programa), Id_Metodologia, Código SNIES delprograma, Principal oSeccional, Id_Caracter
+CO | h5bs-kd8p | EDUCACIÓN sedes y estudaintes por municipio | 2025-12-19 | ETC, DEPARTAMENTO, MUNICIPIO
+CO | pzkp-6sn2 | Estadisticas Educacion colegio 13 ciudades principales | 2025-12-19 | ETC, MUNICIPIO, DEPARTAMENTO
+CO | 2urr-ge94 | datos cesar | 2025-12-19 | ETC, DEPARTAMENTO, MUNICIPIO
+CO | w7rr-nzgp | Educacion Tado | 2025-12-19 | MUNICIPIO, DEPARTAMENTO, ETC
+CO | ck4m-nkyk | TMM | 2025-12-19 | DEPARTAMENTO, ETC, MUNICIPIO
+CO | gvna-2aij | VISTA ESTADISTICAS EN EDUCACIÓN BASICA-PEREIRA | 2026-05-18 | MUNICIPIO, CÓDIGO_MUNICIPIO, AÑO, CÓDIGO_ETC, ETC, DEPARTAMENTO, POBLACIÓN_5_16, CÓDIGO_DEPARTAMENTO
+CO | yd87-uhfp | Visualización sin título - Basado en ESTADISTICAS EN EDUCACION BASICA POR MUNICIPIO | 2025-11-13 | 
+CO | gzpx-wa6x | Anexos Sistema de Matrículas - SIMAT | 2026-10-20 | 
+CO | emd6-ef7x | Establecimientos Educativos del sector oficial y no oficial por municipio - DEPARTAMENTO DE BOYACÁ | 2026-05-18 |  MODELOS EDUCATIVOS, CÓDIGO,  NIVELES,  CORREO ELECTRÓNICO,  PRESTADOR DE SERVICIO,  NÚMERO DE SEDES,  DISCAPACIDADES,  LICENCIA,  CALENDARIO,   DIRECCIÓN,  ESTRATO SOCIO-ECONOMICO,  NOMBRE,  MUNICIPIO,  NOMBRE RECTOR, SECRETARÍA,  GRADOS,  GENERO,  IDIOMAS,   CAPACIDADES EXCEPCIONALES, CÓDIGO MUNICIPIO,  SECTOR,  JORNADAS,  TELÉFONO,  ESPECIALIDAD,  ESTADO
+CO | 65zu-5xdk | Sedes de los Instituciones Educativas del Departamento de Boyacá | 2026-05-18 | SECTOR,  DIRECCIÓN,  NOMBRE ESTABLECIMIENTO,  ZONA,  NOMBRE SEDE,  CÓDIGO ESTABLECIMIENTO,  NOMBRE MUNICIPIO,  MODELOS,  CÓDIGO SEDE,  ESTADO SEDE,  NIVELES,  GRADOS, CÓDIGO MUNICIPIO,  TELÉFONO, SECRETARIA
+CO | fpcg-kk98 | Matrícula Total en Colegios Oficiales. Bogotá D.C. | 2026-09-10 | 
+CO | jphr-gy4g | Matrícula de Primera Infancia en Colegios Oficiales. Bogotá D.C. | 2026-09-11 | 
+CO | x5ay-984n | MEN_SEDES_EDUCATIVAS_PREESCOLAR_BÁSICA_Y_MEDIA | 2026-08-27 | TOTAL_MATRICULA, BARRIO_VEREDA, TELEFONO, CODIGO_DANE_SEDE, PRINCIPAL, CTE_ID_CALENDARIO, ZONA, NOMBRE_SEDE, DIRECCION, CTE_ID_SECTOR, COORDENADA_X_SEDE, COORDENADA_Y_SEDE, EMAIL, NOMBRE_ESTABLECIMIENTO, SEDE_ID, AÑO, COD_DANE_MUNICIPIO, MUNICIPIO, SECRETARIA, CODIGO_DANE, EST_ID, DEPARTAMENTO, FAX
+CO | b8cz-qwa3 | Matrícula de las Instituciones Educativas Oficiales de Cali | 2026-05-11 | 
+CO | hcpj-kxbm | Matrícula de las Instituciones Educativas no oficiales de Cali | 2026-05-12 | 
+CO | vff5-sm44 | Matrícula en Jornada Única en Colegios Oficiales. Bogotá D.C. | 2026-09-10 | 
+CO | ynw7-ir8a | Densidad de Matriculados en Colegios Oficiales. Bogotá D.C. | 2026-09-10 | 
+CO | 9qhf-rbwi | Estudiantes Matriculados en Colegios Públicos de Sopó | 2026-09-19 | GENERO, INSTITUCION, MOTIVO, CALENDARIO, JORNADA, SECTOR, BARRIO, DISCAPACIDAD, EDAD CICLO DE VIDA, COD_DANE, COD_GRADO, CONSECUTIVO, PAIS_ORIGEN, GRUPO, SISBEN IV, ZONA_SEDE, CODIGO_DANE_SEDE, SEDE, FECHAINI, MODELO, TIPODOC, ESTRATO, EPS, INTERNADO, APOYO_ACADEMICO_ESPECIAL
+CO | ubeq-g5a7 | Oferta de Cupos. Sector Oficial. Bogotá D.C. | 2026-09-28 | 
+BR 2024 ERR <urlopen error [Errno 104] Connection reset by peer>
+BR 2025 ERR <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.
+BR 2023 ERR <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.
+ERR mx https://www.datos.gob.mx/api/3/action/package_search?rows=10&q=estadistica%20911%20municipio HTTP Error 403: Forbidden
+ERR mx https://www.datos.gob.mx/api/3/action/package_search?rows=10&q=alumnos%20municipio%20educacion%20basica HTTP Error 403: Forbidden
+ERR mx https://www.datos.gob.mx/api/3/action/package_search?rows=10&q=matricula%20municipio%20SEP HTTP Error 403: Forbidden
+ERR es-eus https://opendata.euskadi.eus/api/3/action/package_search?rows=8&q=alumnado%20municipio HTTP Error 404: Not Found
+ERR es-eus https://opendata.euskadi.eus/api/3/action/package_search?rows=8&q=alumnos%20matriculados HTTP Error 404: Not Found
+ES-gva | edu-alu-fp-2023 | Alumnado matriculado en centros de Formación Profesional 2023 | 2026-09-25
+      CSV | https://dadesobertes.gva.es/dataset/67b17bf0-c509-4825-81f6-98c7df53864c/resource/bd085dc2-7896-4d6a-a650-d249020b779c/download/alumnos-matriculados-f
+ES-gva | edu-alu-fp-2025 | Alumnado matriculado en centros de Formación Profesional 2025 | 2026-09-25
+      CSV | https://dadesobertes.gva.es/dataset/a2183efe-f62c-48ec-bdbe-22a4b63c3832/resource/79af67de-71a2-48b1-bd6d-57a2996e2669/download/alumnos-matriculados-f
+ES-gva | edu-alu-fp-2024 | Alumnado matriculado en centros de Formación Profesional 2024 | 2026-09-25
+      CSV | https://dadesobertes.gva.es/dataset/04b2a721-9256-40f9-b45e-fa0c8e7000b5/resource/7ac929a5-9138-4791-924b-2f1f4c6777fc/download/alumnos-matriculados-f
+ES-gva | edu-alu-eoi-2019 | Alumnado matriculado en Escuelas Oficiales de Idiomas 2019 | 2020-03-05
+      CSV | https://dadesobertes.gva.es/dataset/8df506fc-b633-4500-87a6-13c59ea1a2c3/resource/c80122ab-c4f3-4ed6-8056-cfb5eea17cd7/download/alumnos-matriculados-e
+ES-gva | edu-alu-eoi-2022 | Alumnado matriculado en Escuelas Oficiales de Idiomas 2022 | 2023-05-31
+      CSV | https://dadesobertes.gva.es/dataset/9902c9ff-ac03-4b74-906d-97dd7c25cdb8/resource/2a3dea6b-94f7-4fd9-8fe8-7e952ddd5c0d/download/alumnos-matriculados-e
+ES-gva | edu-alu-danza-2022 | Alumnado matriculado en Conservatorios Profesionales de Danza 2022 | 2026-05-14
+      CSV | https://dadesobertes.gva.es/dataset/58d16eae-3a41-40fd-99ab-36589fbbade8/resource/b2aee5bd-e087-476f-873e-846a6ec44f0a/download/alumnos-matriculados-c
+ES-gva | edu-alu-eoi-2021 | Alumnado matriculado en Escuelas Oficiales de Idiomas 2021 | 2021-12-31
+      CSV | https://dadesobertes.gva.es/dataset/ad05c7b9-628a-427f-b0b2-32a526259130/resource/69c76775-4999-4a75-8a1b-faba2cf0b14f/download/alumnos-matriculados-e
+ES-gva | edu-alu-danza-2021 | Alumnado matriculado en Conservatorios Profesionales de Danza 2021 | 2026-05-14
+      CSV | https://dadesobertes.gva.es/dataset/3345cfa5-3722-49fc-9e71-1364bb924e8e/resource/0ce69bd7-8950-406e-b17c-554f906605e1/download/alumnos-matriculados-c
+ES-gva | edu-alu-danza-2022 | Alumnado matriculado en Conservatorios Profesionales de Danza 2022 | 2026-05-14
+      CSV | https://dadesobertes.gva.es/dataset/58d16eae-3a41-40fd-99ab-36589fbbade8/resource/b2aee5bd-e087-476f-873e-846a6ec44f0a/download/alumnos-matriculados-c
+ES-gva | edu-alu-danza-2021 | Alumnado matriculado en Conservatorios Profesionales de Danza 2021 | 2026-05-14
+      CSV | https://dadesobertes.gva.es/dataset/3345cfa5-3722-49fc-9e71-1364bb924e8e/resource/0ce69bd7-8950-406e-b17c-554f906605e1/download/alumnos-matriculados-c
+ES-gva | edu-alu-danza-2020 | Alumnado matriculado en Conservatorios Profesionales de Danza 2020 | 2026-05-14
+      CSV | https://dadesobertes.gva.es/dataset/e868aaa1-bbbe-4cd4-8cdb-23cd6bab2350/resource/1ee20fb0-e2f6-4566-a9b9-fd2cbd09f58d/download/alumnos-matriculados-c
+ES-gva | edu-alu-eoi-2025 | Alumnado matriculado en Escuelas Oficiales de Idiomas 2025 | 2026-05-25
+      CSV | https://dadesobertes.gva.es/dataset/0e130bbd-3c60-437c-b548-56910334bec6/resource/86087075-d478-4759-8f51-aa41940e3d7e/download/alumnos-matriculados-e
+ES-gva | edu-alu-musica-2024 | Alumnado matriculado en Conservatorios Profesionales de Música 2024 | 2026-05-21
+      CSV | https://dadesobertes.gva.es/dataset/7efdc954-fd77-4d04-9a44-40f54f5c4313/resource/e30830bf-2f72-43c8-827d-0f8020d7dce6/download/alumnos-matriculados-c
+ES-gva | edu-alu-eoi-2024 | Alumnado matriculado en Escuelas Oficiales de Idiomas 2024 | 2026-05-25
+      CSV | https://dadesobertes.gva.es/dataset/a08df47e-aa03-48b8-9331-bea971a305c9/resource/a792db84-a850-4380-a9b3-85db378406d2/download/alumnos-matriculados-e
+ES-gva | edu-alu-danza-2024 | Alumnado matriculado en Conservatorios Profesionales de Danza 2024 | 2026-05-14
+      CSV | https://dadesobertes.gva.es/dataset/f50b52d7-3905-473e-9098-6a8abe01ee36/resource/e8d1c521-5d33-454c-9636-f0d39ea89619/download/alumnos-matriculados-c
+ES-gva | edu-alu-eoi-2023 | Alumnado matriculado en Escuelas Oficiales de Idiomas 2023 | 2026-05-25
+      CSV | https://dadesobertes.gva.es/dataset/f4fc012d-3d2e-408c-9862-f1f15866e66d/resource/3892bd98-6f7e-4b47-abfd-bf30dc56ac1b/download/alumnos-matriculados-e
+ES-and | directorio-de-centros-docentes-de-andalucia | Directorio de centros docentes no universitarios de Andalucía | 2026-10-15
+      CSV | https://gdc-pdpopendata-ckan.paas.junta-andalucia.es/datosabiertos/portal/dataset/e039df22-4b82-4d0d-9884-0ab5952e24e4/resource/4b1e29bd-aaa8-4c33-a74
+      CSV | https://gdc-pdpopendata-ckan.paas.junta-andalucia.es/datosabiertos/portal/dataset/e039df22-4b82-4d0d-9884-0ab5952e24e4/resource/b5924e81-0b53-4418-9d9
+      CSV | https://gdc-pdpopendata-ckan.paas.junta-andalucia.es/datosabiertos/portal/dataset/e039df22-4b82-4d0d-9884-0ab5952e24e4/resource/15aabed2-eec3-4b99-a02
+ERR es-gal https://abertos.xunta.gal/api/3/action/package_search?rows=8&q=alumnado%20municipio <urlopen error timed out>
+ERR es-gal https://abertos.xunta.gal/api/3/action/package_search?rows=8&q=alumnos%20matriculados <urlopen error timed out>
+ES-ara | educacion-primaria-alumnado-matriculado-por-edad-y-sexo-del-alumnado-municipios | Educación Primaria. Alumnado matriculado por edad y sexo del alumnado. Municipios | 2026-09-05
+      XLS | https://bi.aragon.es/analytics_pub/saw.dll?Go&path=/shared/IAEST-PUBLICA/MENUWEB/Sociales/060101/06010113/PRIM-11.3&Action=Navigate&Options=df
+ES-ara | cuentas-de-la-industria-aragonesa-gastos-por-subsubagrupaciones-de-actividad-20-subagrupaciones | Cuentas de la Industria Aragonesa. Gastos por subsubagrupaciones de actividad (20 subagrupaciones) | 2026-10-29
+      px | http://servicios3.aragon.es/iaeaxi_docs/08/02/01/080201B02.px
+ES-ara | cuentas-de-la-industria-aragonesa-inversion-por-subagrupaciones-de-actividad-20-subagrupaciones | Cuentas de la Industria Aragonesa. Inversión por subagrupaciones  de actividad (20 subagrupaciones) | 2026-10-29
+      px | http://servicios3.aragon.es/iaeaxi_docs/08/02/01/080201B06.px
+ES-ara | cuentas-de-la-industria-aragonesa-personal-por-subagrupaciones-de-actividad-20-agrupaciones | Cuentas de la Industria Aragonesa. Personal por subagrupaciones de actividad (20 agrupaciones) | 2026-10-29
+      px | http://servicios3.aragon.es/iaeaxi_docs/08/02/01/080201B05.px
+ES-ara | cuentas-de-la-industria-aragonesa-existencias-por-subagrupaciones-de-actividad-20-subagrupaciones | Cuentas de la Industria Aragonesa. Existencias por subagrupaciones de actividad (20 subagrupaciones) | 2026-10-29
+      px | http://servicios3.aragon.es/iaeaxi_docs/08/02/01/080201B04.px
+ES-ara | cuentas-de-la-industria-aragonesa-ingresos-por-subagrupaciones-de-actividad-20-subagrupaciones | Cuentas de la Industria Aragonesa. Ingresos por subagrupaciones de actividad (20 subagrupaciones) | 2026-10-29
+      px | http://servicios3.aragon.es/iaeaxi_docs/08/02/01/080201B03.px
+ES-ara | cuentas-de-la-industria-aragonesa-macromagnitudes-economicas-por-subagrupaciones-de-actividad-20-agrupaciones | Cuentas de la Industria Aragonesa. Macromagnitudes económicas por subagrupaciones  de actividad (20 agrupaciones) | 2026-10-29
+      px | http://servicios3.aragon.es/iaeaxi_docs/08/02/01/080201B07.px
+ES-ara | educacion-primaria-alumnado-matriculado-por-titularidad-del-centro-y-edad-del-alumnado-municipios | Educación Primaria. Alumnado matriculado por titularidad del centro y edad del alumnado. Municipios | 2026-10-05
+      XLS | https://bi.aragon.es/analytics_pub/saw.dll?Go&path=/shared/IAEST-PUBLICA/MENUWEB/Sociales/060101/06010113/PRIM-4.3&Action=Navigate&Options=df
+ES-ara | oai-zaguan-unizar-es-70103 | Alumnos matriculados. Sexo, dedicación y procedencia. Curso 2014-2015. Universidad de Zaragoza | 2025-07-01
+      URL | https://zaguan.unizar.es/record/70103
+      XML | https://zaguan.unizar.es/record/70103/files/XML.xml
+      CSV | https://zaguan.unizar.es/record/70103/files/CSV.csv
+ES-ara | oai-zaguan-unizar-es-70354 | Alumnos matriculados. Sexo, dedicación y procedencia. Curso 2010-2011. Universidad de Zaragoza | 2025-07-01
+      URL | https://zaguan.unizar.es/record/70354
+      XML | https://zaguan.unizar.es/record/70354/files/XML.xml
+      CSV | https://zaguan.unizar.es/record/70354/files/CSV.csv
+ES-ara | oai-zaguan-unizar-es-70355 | Alumnos matriculados. Sexo, dedicación y procedencia. Curso 2009-2010. Universidad de Zaragoza | 2025-07-01
+      URL | https://zaguan.unizar.es/record/70355
+      CSV | https://zaguan.unizar.es/record/70355/files/CSV.csv
+      JSON | https://zaguan.unizar.es/record/70355/files/JSON.json
+ES-ara | oai-zaguan-unizar-es-107368 | Alumnos matriculados. Sexo, dedicación y procedencia. Curso 2021-2022. Universidad de Zaragoza | 2025-07-01
+      URL | https://zaguan.unizar.es/record/107368
+      JSON | https://zaguan.unizar.es/record/107368/files/JSON.json
+      XML | https://zaguan.unizar.es/record/107368/files/XML.xml
+ES-ara | oai-zaguan-unizar-es-162536 | Alumnos matriculados. Sexo, dedicación y procedencia. Curso 2025-2026. Universidad de Zaragoza | 2026-04-22
+      URL | https://zaguan.unizar.es/record/162536
+      JSON | https://zaguan.unizar.es/record/162536/files/JSON.json
+      XML | https://zaguan.unizar.es/record/162536/files/XML.xml
+ES-ara | oai-zaguan-unizar-es-70101 | Alumnos matriculados. Sexo, dedicación y procedencia. Curso 2016-2017. Universidad de Zaragoza | 2025-07-01
+      URL | https://zaguan.unizar.es/record/70101
+      XML | https://zaguan.unizar.es/record/70101/files/XML.xml
+      CSV | https://zaguan.unizar.es/record/70101/files/CSV.csv
+ES-ara | oai-zaguan-unizar-es-83978 | Alumnos matriculados. Sexo, dedicación y procedencia. Curso 2019-2020. Universidad de Zaragoza | 2025-07-01
+      URL | https://zaguan.unizar.es/record/83978
+      XML | https://zaguan.unizar.es/record/83978/files/XML.xml
+      CSV | https://zaguan.unizar.es/record/83978/files/CSV.csv
+ES-ara | oai-zaguan-unizar-es-144676 | Alumnos matriculados. Sexo, dedicación y procedencia. Curso 2024-2025. Universidad de Zaragoza | 2026-04-22
+      URL | https://zaguan.unizar.es/record/144676
+      JSON | https://zaguan.unizar.es/record/144676/files/JSON.json
+      XML | https://zaguan.unizar.es/record/144676/files/XML.xml
