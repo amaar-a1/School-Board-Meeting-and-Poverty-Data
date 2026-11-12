@@ -9,6 +9,9 @@ Catalonia: Departament d'Educació, "Alumnes matriculats per ensenyament i unita
 Community of Madrid: "Alumnos no universitarios matriculados en centros escolares por tipo de centro y
   régimen. Municipios" (datos.comunidad.madrid), latest year, régimen general (nursery to batxillerato and
   vocational training; language, arts and adult schools left out), total and public.
+Valencian Community: Conselleria d'Educació, "Resumen de escolarización 2025" (dadesobertes.gva.es, edu-alu-gen-2025),
+  pupils by school summed by its municipality (infantil to bachillerato and special education, public and private;
+  public = schools of public ownership): inputs/spain/regional/valencia_escolarizacion_2025_by_municipality.json.
 Writes inputs/spain/es_regional_pupils.json: {INE code: {"pupils", "public"?, "year"}}.
 Usage: python3 data-prep/prep_spain_regional_pupils.py
 """
@@ -39,4 +42,10 @@ for code, x in m.items():
         out[code] = {"pupils": x["Total"], "public": x.get("Público", ""),
                      "year": f"{yr}-{int(yr) % 100 + 1:02d} (Community of Madrid: pupils at the municipality's schools, nursery to bachillerato and vocational training, public and private)"}
 print("Madrid", len(m), "municipalities,", sum(x.get("Total", 0) for x in m.values()), "pupils")
+va = json.load(open(os.path.join(D, "regional", "valencia_escolarizacion_2025_by_municipality.json"), encoding="utf-8"))
+for code, x in va["by_municipality"].items():
+    if x["pupils"]:
+        out[code] = {"pupils": x["pupils"], "public": x["public"],
+                     "year": f"{va['curso']}-{int(va['curso']) % 100 + 1:02d} (Valencian education department: pupils at the municipality's schools, nursery to bachillerato, public and private)"}
+print("Valencia", len(va["by_municipality"]), "municipalities,", sum(x["pupils"] for x in va["by_municipality"].values()), "pupils")
 json.dump(dict(sorted(out.items())), open(os.path.join(D, "es_regional_pupils.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)

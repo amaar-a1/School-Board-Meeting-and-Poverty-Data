@@ -32,7 +32,8 @@ window.SOURCES = [
       { only: "United States", title: "NCES 2018–2022 directory data, used for the latest enrollment or locale of districts missing them in 2023 (e.g., New York City)", url: "https://educationdata.urban.org/api/v1/school-districts/ccd/directory/2022/" },
       { only: "U.S. territories", title: "NCES 2023 directory data (schools, enrollment and locale for the territories: Puerto Rico, Guam, Northern Mariana Islands, U.S. Virgin Islands, American Samoa)", url: "https://educationdata.urban.org/api/v1/school-districts/ccd/directory/2023/" },
       { only: "U.S. territories", title: "NCES 2021 directory data (Guam enrollment: 26,619; NCES has none for Guam after 2021)", url: "https://educationdata.urban.org/api/v1/school-districts/ccd/directory/2021/?fips=66" },
-      { only: "U.S. territories", title: "NCES 2020 directory data (American Samoa enrollment: 10,246; NCES has none for American Samoa after 2020)", url: "https://educationdata.urban.org/api/v1/school-districts/ccd/directory/2020/?fips=60" }
+      { only: "U.S. territories", title: "NCES 2020 directory data (American Samoa enrollment: 10,246; NCES has none for American Samoa after 2020)", url: "https://educationdata.urban.org/api/v1/school-districts/ccd/directory/2020/?fips=60" },
+      { only: "U.S. territories", title: "Population (for the map's density): Census Bureau, 2020 Census (Puerto Rico 3,285,874) and 2020 Island Areas Censuses (Guam 153,836; Northern Mariana Islands 47,329; St. Croix 41,004; St. Thomas and St. John 46,142; American Samoa 49,710)", url: "https://www.census.gov/programs-surveys/decennial-census/decade/2020/planning-management/release/2020-island-areas-data-products.html" }
     ]
   },
   {
@@ -178,6 +179,7 @@ window.SOURCES = [
     only: "Islands and microstates",
     group: "Islands and microstates",
     items: [
+      { title: "Svalbard pupils: Statistics Norway, table 11980, pupils in compulsory school, Longyearbyen, 2025 (194)", url: "https://www.ssb.no/en/statbank/table/11980/" },
       { title: "Children below 60% of the median income (Malta, Cyprus): Eurostat ilc_li02", url: "https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table" },
       { title: "National poverty line, unemployment, population, enrollment (primary and secondary): World Bank World Development Indicators (SI.POV.NAHC, SL.UEM.TOTL.ZS, SP.POP.TOTL, SP.POP.0014.TO.ZS, SE.PRM.ENRL, SE.SEC.ENRL)", url: "https://data.worldbank.org/" },
       { title: "Saint-Martin and Saint-Barthélemy unemployment: IEDOM, annual economic reports 2025 (Rapport annuel économique de Saint-Martin, de Saint-Barthélemy)", url: "https://www.iedom.fr/Rapport-annuel-economique-de-Saint-Martin-2025" },
@@ -227,7 +229,7 @@ window.SOURCES = [
     group: "Colombia: municipalities, poverty and enrollment",
     items: [
       { title: "Multidimensional poverty by municipality: DANE, Medida de pobreza multidimensional de fuente censal (2018 census)", url: "https://www.dane.gov.co/index.php/estadisticas-por-tema/pobreza-y-condiciones-de-vida/pobreza-y-desigualdad/medida-de-pobreza-multidimensional-de-fuente-censal" },
-      { title: "Enrollment (estimated) and the education authority: Ministry of Education statistics by municipality, 2024 (datos.gov.co, nudc-7mev)", url: "https://www.datos.gov.co/Educaci-n/MEN_ESTADISTICAS_EN_EDUCACION_EN_PREESCOLAR-B-SICA-Y-MEDIA_POR_MUNICIPIO/nudc-7mev" },
+      { title: "Enrollment and the education authority: Ministry of Education statistics by municipality, 2024 (datos.gov.co, nudc-7mev): gross coverage (cobertura bruta) times the population aged 5–16 gives back the ministry's enrollment count", url: "https://www.datos.gov.co/Educaci-n/MEN_ESTADISTICAS_EN_EDUCACION_EN_PREESCOLAR-B-SICA-Y-MEDIA_POR_MUNICIPIO/nudc-7mev" },
       { title: "Borders: geoBoundaries (gbOpen) Colombia ADM1 and ADM2, simplified", url: "https://www.geoboundaries.org/" },
       { title: "Meetings (stand-in): each council's or municipality's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
     ],
@@ -243,7 +245,7 @@ window.SOURCES = [
       { title: "Municipal codes (SIAFI to IBGE): Tesouro Nacional, Tabela de Municípios", url: "https://www.tesourotransparente.gov.br/ckan/dataset/lista-de-municipios-do-siafi" },
       { title: "Population: IBGE, Estimativas da População 2025", url: "https://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2025/estimativa_dou_2025.xls" },
       { title: "Households: IBGE, Censo Demográfico 2022, table 4712, via SIDRA", url: "https://sidra.ibge.gov.br/tabela/4712" },
-      { title: "Enrollment (estimated) and children 6–17: IBGE, Censo Demográfico 2022, tables 10058 (people 6–17 attending school) and 9514 (population by age), via SIDRA", url: "https://sidra.ibge.gov.br/tabela/10058" },
+      { title: "Enrollment (census residents aged 6–17 attending school) and children 6–17: IBGE, Censo Demográfico 2022, tables 10058 (people 6–17 attending school) and 9514 (population by age), via SIDRA", url: "https://sidra.ibge.gov.br/tabela/10058" },
       { title: "Borders: geoBoundaries (gbOpen) Brazil ADM1 and ADM2, simplified", url: "https://www.geoboundaries.org/" },
       { title: "Meetings (stand-in): each chamber's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
     ],
@@ -416,7 +418,7 @@ window.SOURCES = [
       { title: "Borders of 6 municipalities created since 2012: INEGI, via the UN and geoBoundaries (gbAuthoritative MEX ADM2), checked to lie inside the municipality each was made from", url: "https://www.geoboundaries.org/" },
       { title: "Borders of 6 more (Coatetelco, Honduras de la Sierra, Hueyapan, San Quintín, Seybaplaya, Xoxocotla): INEGI, Marco Geoestadístico, diciembre de 2025, from its geographic web service (wscatgeo), checked the same way", url: "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgem/17034" },
       { title: "Poverty by municipality: CONEVAL, Medición de la pobreza municipal 2010–2020 (concentrado de indicadores)", url: "https://www.coneval.org.mx/Medicion/Paginas/Pobreza-municipio-2010-2020.aspx" },
-      { title: "Enrollment (estimated), children 6–17 and population: INEGI, Censo de Población y Vivienda 2020, Principales resultados por localidad (ITER), municipal totals", url: "https://www.inegi.org.mx/programas/ccpv/2020/#datos_abiertos" },
+      { title: "Enrollment (census residents aged 6–17 attending school), children 6–17 and population: INEGI, Censo de Población y Vivienda 2020, Principales resultados por localidad (ITER), municipal totals", url: "https://www.inegi.org.mx/programas/ccpv/2020/#datos_abiertos" },
       { title: "Borders: geoBoundaries (gbOpen) Mexico ADM1 and ADM2 (2012 municipalities), simplified", url: "https://www.geoboundaries.org/" },
       { title: "Meetings (stand-in): each municipality's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
     ],
@@ -633,6 +635,7 @@ window.SOURCES = [
       { only: ["Croatia", "Italy", "France"], title: "Eurostat / GISCO, correspondence of local administrative units (LAU) to NUTS 2024 regions", url: "https://ec.europa.eu/eurostat/web/nuts/local-administrative-units" },
       { only: "Philippines", title: "Philippines subnational population statistics by age (PSA projections, 2025), via the Humanitarian Data Exchange (HDX, phl_admpop): each province's share of children aged 5–17", url: "https://data.humdata.org/dataset/cod-ps-phl" },
       { only: "Spain", title: "Pupils by municipality, Catalonia: Departament d'Educació, “Alumnes matriculats per ensenyament i unitats dels centres docents”, 2025-26 (Transparència Catalunya open data)", url: "https://analisi.transparenciacatalunya.cat/d/xvme-26kg" },
+      { only: "Spain", title: "Pupils by municipality, Valencian Community: Conselleria d'Educació, “Resumen de escolarización 2025” (pupils by school, summed by its municipality; infantil to bachillerato, public and private)", url: "https://dadesobertes.gva.es/dataset/edu-alu-gen-2025" },
       { only: "Spain", title: "Pupils by municipality, Community of Madrid: “Alumnos no universitarios matriculados en centros escolares por tipo de centro y régimen. Municipios”, 2024-25 (régimen general)", url: "https://datos.comunidad.madrid/dataset/alumnos_no_universitarios_por_tipo_y_regimen" },
       { only: "Spain", title: "Estimates elsewhere: INE, annual population census 2024, population aged 15+ by level of studies in progress, municipalities of 500+ (table 66627), plus children aged 3–14 (twelve eighteenths of the estimated children under 18)", url: "https://www.ine.es/jaxiT3/Tabla.htm?t=66627" }
     ],
