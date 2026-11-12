@@ -1,50 +1,33 @@
-# Temporary: Brazil INEP school census summary (sinopse) with the server's missing intermediate certificate added from
-# its own AIA "CA Issuers" URL (verification stays on), summed by municipality.
-import io, json, os, re, ssl, subprocess, sys, urllib.request, zipfile
-OUT = "fetch/out/br_inep1"; os.makedirs(OUT, exist_ok=True); W = "/tmp/br"; os.makedirs(W, exist_ok=True)
+# Temporary: Svalbard pupils (SSB 11980 region list), plus Falklands/Norfolk/Niue/Tokelau/Pitcairn school pages.
+import json, os, urllib.request
+OUT = "fetch/out/isl_enr1"; os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
 log = open(f"{OUT}/log.txt", "w")
+def get(u, data=None, t=90):
+    h = dict(UA); 
+    if data: h["Content-Type"] = "application/json"
+    with urllib.request.urlopen(urllib.request.Request(u, data=data, headers=h), timeout=t) as r: return r.read()
 try:
-    import certifi
-except ImportError:
-    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "--user", "--break-system-packages", "certifi", "openpyxl"], check=True)
-    os.execv(sys.executable, [sys.executable] + sys.argv)
-try:
-    import openpyxl
-except ImportError:
-    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "--user", "--break-system-packages", "openpyxl"], check=True)
-    os.execv(sys.executable, [sys.executable] + sys.argv)
-host = "download.inep.gov.br"
-leaf = ssl.get_server_certificate((host, 443))
-open(f"{W}/leaf.pem", "w").write(leaf)
-txt = subprocess.run(["openssl", "x509", "-in", f"{W}/leaf.pem", "-noout", "-text"], capture_output=True, text=True).stdout
-aia = re.findall(r"CA Issuers - URI:(\S+)", txt); log.write(f"issuer {re.findall(r'Issuer: (.*)', txt)} aia {aia}\n")
-bundle = open(certifi.where()).read()
-for u in aia:
-    der = urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=60).read()
-    open(f"{W}/int.der", "wb").write(der)
-    pem = subprocess.run(["openssl", "x509", "-inform", "DER" if not der.startswith(b"-----") else "PEM", "-in", f"{W}/int.der"], capture_output=True, text=True).stdout
-    bundle += "\n" + pem
-open(f"{W}/bundle.pem", "w").write(bundle)
-ctx = ssl.create_default_context(cafile=f"{W}/bundle.pem")
-for y in (2025, 2024, 2023):
-    u = f"https://{host}/dados_abertos/sinopses_estatisticas/sinopses_estatisticas_censo_escolar_{y}.zip"
+    m = json.loads(get("https://data.ssb.no/api/v0/en/table/11980"))
+    for v in m["variables"]:
+        vals = list(zip(v["values"], v["valueTexts"]))
+        log.write(f"SSB var {v['code']} {v['text']} n={len(vals)} {[x for x in vals if 'valbard' in x[1] or 'Longyear' in x[1]] or vals[:6]}\n")
+    reg = next(v for v in m["variables"] if v["code"] == "Region")
+    sv = [c for c, t in zip(reg["values"], reg["valueTexts"]) if "valbard" in t or "Longyear" in t]
+    q = {"query": [{"code": "Region", "selection": {"filter": "item", "values": sv}}] + [{"code": v["code"], "selection": {"filter": "item", "values": [v["values"][-1]]}} for v in m["variables"] if v["code"] == "Tid"], "response": {"format": "json-stat2"}}
+    log.write("SSB data " + get("https://data.ssb.no/api/v0/en/table/11980", json.dumps(q).encode()).decode()[:2500] + "\n")
+except Exception as e: log.write(f"ERR SSB {e}\n")
+for tag, u in [("FLK", "https://en.wikipedia.org/w/index.php?title=Falkland_Islands_Community_School&action=raw"),
+               ("FLK2", "https://en.wikipedia.org/w/index.php?title=Infant_and_Junior_School&action=raw"),
+               ("NFK", "https://en.wikipedia.org/w/index.php?title=Norfolk_Island_Central_School&action=raw"),
+               ("NIU", "https://en.wikipedia.org/w/index.php?title=Niue_High_School&action=raw"),
+               ("NIU2", "https://en.wikipedia.org/w/index.php?title=Education_in_Niue&action=raw"),
+               ("TKL", "https://en.wikipedia.org/w/index.php?title=Education_in_Tokelau&action=raw"),
+               ("PCN", "https://en.wikipedia.org/w/index.php?title=Pulawana_School&action=raw")]:
     try:
-        r = urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=900, context=ctx)
-        b = r.read(); log.write(f"{y}: {len(b)} bytes\n")
-        z = zipfile.ZipFile(io.BytesIO(b)); names = z.namelist(); log.write(json.dumps(names) + "\n")
-        x = next(n for n in names if n.lower().endswith((".xlsx", ".xls")) and "basica" in n.lower().replace("á", "a"))
-        wb = openpyxl.load_workbook(io.BytesIO(z.read(x)), read_only=True, data_only=True)
-        log.write(f"sheets {wb.sheetnames}\n")
-        ws = wb[wb.sheetnames[1]] if len(wb.sheetnames) > 1 else wb.active
-        rows = [[c for c in row] for row in ws.iter_rows(min_row=1, max_row=12, values_only=True)]
-        for rr in rows: log.write("  " + json.dumps([str(c)[:30] if c is not None else None for c in rr[:14]], ensure_ascii=False) + "\n")
-        open(f"{W}/sinopse.xlsx", "wb").write(z.read(x))
-        # keep the sheet of enrollment by municipality ("Matrícula" totals): find it by its title cell
-        out = {}
-        for sn in wb.sheetnames:
-            ws = wb[sn]; head = " ".join(str(c) for row in ws.iter_rows(min_row=1, max_row=6, values_only=True) for c in row if c)
-            log.write(f"sheet {sn}: {head[:160]}\n")
-        json.dump({"year": y, "file": x}, open(f"{OUT}/meta.json", "w")); break
-    except Exception as e: log.write(f"{y} ERR {str(e)[:200]}\n")
+        t = get(u).decode()
+        import re
+        hits = [m.group(0) for m in re.finditer(r"[^\n]{0,160}(students|pupils|enrolment|enrollment|roll)[^\n]{0,160}", t, re.I)][:8]
+        log.write(f"{tag} {len(t)}\n  " + "\n  ".join(hits) + "\n")
+    except Exception as e: log.write(f"{tag} ERR {e}\n")
 log.close()
