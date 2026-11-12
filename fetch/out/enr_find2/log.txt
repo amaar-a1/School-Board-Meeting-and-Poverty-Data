@@ -1,0 +1,18 @@
+ERR CO HTTP Error 400: Bad Request
+ERR BR ind <urlopen error [Errno 110] Connection timed out>
+GVA | edu-alu-fp-2017 | Alumnado matriculado en centros de Formación Profesional 2017
+GVA | edu-alu-fp-2015 | Alumnado matriculado en centros de Formación Profesional 2015
+GVA | edu-alu-fp-2014 | Alumnado matriculado en centros de Formación Profesional 2014
+GVA | edu-alu-fp-2021 | Alumnado matriculado en centros de Formación Profesional 2021
+GVA | edu-alu-fp-2020 | Alumnado matriculado en centros de Formación Profesional 2020
+GVA | edu-alu-fp-2018 | Alumnado matriculado en centros de Formación Profesional 2018
+GVA | edu-alu-fp-2016 | Alumnado matriculado en centros de Formación Profesional 2016
+GVA | edu-alu-fp-2019 | Alumnado matriculado en centros de Formación Profesional 2019
+GVA | edu-alu-gen-2015 | Resumen de escolarización 2015
+GVA | edu-alu-gen-2013 | Resumen de escolarización 2013
+GVA | edu-alu-gen-2012 | Resumen de escolarización 2012
+GVA | edu-alu-gen-2010 | Resumen de escolarización 2010
+GVA | edu-alu-gen-2018 | Resumen de escolarización 2018
+GVA | edu-alu-gen-2017 | Resumen de escolarización 2017
+GVA | edu-alu-gen-2016 | Resumen de escolarización 2016
+GVA | edu-alu-gen-2014 | Resumen de escolarización 2014
