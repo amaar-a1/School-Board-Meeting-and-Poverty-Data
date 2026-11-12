@@ -1,0 +1,27 @@
+SSB var KOKkommuneregion0000 region n=891 [('2111', 'Longyearbyen')]
+SSB var KOKeierfh0000 ownership n=2 [('K', 'Public'), ('KP', 'Public and private')]
+SSB var KOKtrinn0000 class grade n=11 [('0', 'Pupils in total'), ('01', '1st grade'), ('02', '2nd grade'), ('03', '3rd grade'), ('04', '4th grade'), ('05', '5th grade')]
+SSB var ContentsCode contents n=1 [('KOSelev0000', 'Pupils (number)')]
+SSB var Tid year n=11 [('2015', '2015'), ('2016', '2016'), ('2017', '2017'), ('2018', '2018'), ('2019', '2019'), ('2020', '2020')]
+ERR SSB 
+FLK 7477
+  | enrolment             = 
+  Outdoor education is a key part of the curriculum, with a range of activities offered in Year 9 and hill-walking as part of the PE GCSE.  Students can also take part in the [https://www.secondary.ac.fk/duke-of-edinburough Duke of Edinburgh Award scheme].<ref>{{Cite web |last=website |first=Falkland Island
+  d advice are provided by the Careers team from [https://www.facebook.com/people/Falkland-College/100055266647827/ Falkland College] to all year groups, to help students understand the options open to them and careers in the islands.  Careers work is supported by employers from across the islands and there is an annual [https:/
+FLK2 ERR HTTP Error 404: Not Found
+NFK ERR HTTP Error 404: Not Found
+NIU 4184
+   | alt                     = Niue High School students running 100 metres hurdles, 1966
+   | caption                 = Niue High School students running [[100 metres hurdles]], 1966
+   | enrollment              = 175
+   | enrollment_as_of        = 2010
+  ata Ki Luga) is a [[secondary school]] in [[Alofi]], the capital city of [[Niue]]. It is located on the Alofi-[[Liku, Niue|Liku]] Road and, as of 2010, has 175 students in attendance. The school caters for years 7 to 13 (ages 11&ndash;18).<ref>{{Cite web|url=http://beta.rocketsystems.nu/niueeducation/?page_id=53|title=Niue Hig
+  According to the Niue Statistics Office, the school had 279 students and 25 teachers in 1990, and enrolment peaked at 329 in 1994 among the years reported before falling to 268 in 1999, 259 in 2000 and 202 in 2005, when it had 32 teachers. Its student-teacher ratio f
+  anti-bullying campaign, which has been around since 2002. It focuses on bullying along with human rights.<ref>{{Cite web|url=https://tvniue.com/2019/07/year-11-students-campaign-on-anti-bullying/|title=Year 11 students campaign on Anti-bullying|date=2019-07-04|website=Television Niue|language=en-US|access-date=9 November 2026}
+NIU2 89
+  
+TKL 2442
+  The schools have levels or classes running from Early Childhood Education (ECE) right through to Year 11. At Year 11, students are required to sit for a national examination. This examination is used to determine which students will continue Year 12 studies under the [[Tokelau Scholars
+  hip Scheme]]. The successful students commence Year 12 and 13 studies in [[Samoa]].
+  eds of the Tokelau people and community are being developed.{{needs update|date=March 2022}} It is the hope that TVET will not only provide another pathway for students and individuals in schools and the community, but also assist in the social and economic development of the country.
+PCN ERR HTTP Error 404: Not Found
