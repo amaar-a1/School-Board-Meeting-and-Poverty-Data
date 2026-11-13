@@ -1,0 +1,90 @@
+TEXT HOMEDATASETHISTORICAL ENROLLMENT DATA
+Historical Enrollment Data
+ID: l6xdlzdg-ixdr-yuve-tw7k-0cgug0ceul10
+URL: https://data.gov.ph/index/public/dataset/historical-enrollment-data/l6xdlzdg-ixdr-yuve-tw7k-0cgug0ceul10
+SIZE: 2 MB
+group Publisher: Department of Education
+edit Created at: 09/13/2022
+update Updated at: 11/22/2022
+
+
+Topics: Education and Training
+
+
+sell Tags: BalikEskwela, Education
+
+
+Dataset Description
+
+Historical Enrollment Data for Elementary, Junior High School and Senior High School (Public, Private and SUCsLUCs) SY 2010-2011 to 2020-2021retrieved from https://www.deped.gov.ph/ on September 13, 2022
+
+
+
+License: Open [open]
+Public Access Level: Public
+
+
+Resources
+XLSX
+Historical Enrollment Elementary (Public, Private and SUCsLUCs) SY 2010-2011 to 2020-2021
+
+Department of Education
+
+527 KB
+MORE INFO visibility
+DOWNLOAD file_download
+XLSX
+Historical Enrollment Junior High School (Public, Private and SUCsLUCs) SY 2010-2011 to 2020-2021
+
+Department of Education
+
+513 KB
+MORE INFO visibility
+DOWNLOAD file_download
+XLSX
+Historical Enrollment Senior High School (Public, Private and SUCsLUCs) SY 2010-2011 to 2020-2021
+
+Department of Education
+
+526 KB
+MORE INFO visibility
+DOWNLOAD file_download
+
+DOWNLOAD ALL file_download
+Additional Information
+date_range Temporal Coverage:
+From: 01/01/2010
+To: 12/31/2021
+
+
+
+Philippine Standard Time - Friday, November 13, 2026, 2:44:10 AM
+
+Accessibility
+
+arrow_drop_down
+DATASETS
+ORGANIZATIONS
+ABOUT US
+CONTACT US
+VISITOR'S DATA
+LOG IN
+arrow_circle_up
+LINKS [["", "https://www.gov.ph/"]]
+buttons 4
+dl 0 ERR Page.expect_download: Timeout 120000ms exceeded while waiting for event "download"
+=========================== logs ===========================
+waiting for event "download"
+===========================
+dl 1 ERR Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("text=DOWNLOAD").nth(1)
+    - locator resolved to <span _ngcontent-jqi-c215="" class="dataset-icon material-icons"> file_down
+dl 2 ERR Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("text=DOWNLOAD").nth(2)
+    - locator resolved to <span _ngcontent-jqi-c215="" class="dataset-icon material-icons"> file_down
+XHR 200 https://api.data.gov.ph/api/public/dataset/Historical%20Enrollment%20Data/l6xdlzdg-ixdr-yuve-tw7k-0cgug0ceul10
+  {"success":true,"message":"Successfully retrieved dataset details","data":{"_id":"631fe093b194230577e53bcb","name":"Historical Enrollment Data","url":"https://data.gov.ph/index/public/dataset/historical-enrollment-data/l6xdlzdg-ixdr-yuve-tw7k-0cgug0ceul10","identifier":"l6xdlzdg-ixdr-yuve-tw7k-0cgug0ceul10","description":"Historical Enrollment Data for Elementary, Junior High School and Senior High School (Public, Private and SUCsLUCs) SY 2010-2011 to 2020-2021retrieved from https://www.deped.gov.ph/ on September 13, 2022","publisher":"Department of Education","license":"Open [open]","isDraft":false,"accessLevel":"Public","topics":["Education and Training"],"tags":["BalikEskwela","Education"],"frequency":null,"moderationState":"Published","temporalCoverageFrom":"01/01/2010","temporalCoverageTo":"12/31/2021","officialReleasedDate":"","contactPersonName":"","contactPersonEmail":"","author":"Niza Uy","dateCreated":"1663033491738","dateModified":"1669105845704","dateCreatedFormatted":"09/13/2022","dateModifiedFormatted":"11/22/2022","resources":[{"_id":"631fe093b194230577e53bd3","name":"Historical Enrollment Elementary (Public, Private and SUCsLUCs) SY 2010-2011 to 2020-2021","url":"historical-enrollment-data/historical-enrollment-elementary-(public,-private-and-sucslucs)-sy-2010-2011-to-2020-2021/kzbbnxf2-wdhk-hvmu-5zmd-v9tcvtcgz8zg","description":"Historical Enrollment Elementary (Public, Private and SUCsLUCs) SY 2010-2011 to 2020-2021 retrieved from https://www.deped.gov.ph/al
+XHR 200 https://api.data.gov.ph/api/region/search
+  {"success":true,"message":"Search Region is very success","page":1,"limit":"all","total":18,"pageSize":18,"data":[{"_id":"624be5ff992672087467f613","region_psgc":"180000000","region_code":"NIR","region_name":"Negros Island Region","status":1},{"_id":"624be5ff992672087467f60e","region_psgc":"130000000","region_code":"NCR","region_name":"National Capital Region","status":1,"order":1},{"_id":"624be5ff992672087467f60f","region_psgc":"140000000","region_code":"CAR","region_name":"Cordillera Administrative Region","status":1,"order":2},{"_id":"624be5ff992672087467f602","region_psgc":"010000000","region_code":"Region I","region_name":"Ilocos Region","status":1,"order":3},{"_id":"624be5ff992672087467f603","region_psgc":"020000000","region_code":"Region II","region_name":"Cagayan Valley","status":1,"order":4},{"_id":"624be5ff992672087467f604","region_psgc":"030000000","region_code":"Region III","region_name":"Central Luzon","status":1,"order":5},{"_id":"624be5ff992672087467f605","region_psgc":"040000000","region_code":"Region IV-A","region_name":"CALABARZON","status":1,"order":6},{"_id":"624be5ff992672087467f612","region_psgc":"170000000","region_code":"Region IV-B","region_name":"Mimaropa","status":1,"order":7},{"_id":"624be5ff992672087467f606","region_psgc":"050000000","region_code":"Region V","region_name":"Bicol Region","status":1,"order":8},{"_id":"624be5ff992672087467f607","region_psgc":"060000000","region_code":"Region VI","region_name":"Western Visayas","status":1,"order":9},{
