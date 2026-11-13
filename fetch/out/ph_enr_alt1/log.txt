@@ -1,0 +1,108 @@
+HDX | somalia-schools-and-enrollment | Somalia Schools and Enrollment | OCHA Somalia | 2025-04-10
+      XLSX | List of schools & enrolment _MOE_FGS.xlsx | 545319 | https://data.humdata.org/dataset/198702a9-d4e6-4bda-a1a6-1b111ce59de1/resource/a0fb46fb-9fa1-4854-bb78-54e0fe93c216/download/list-of-schools-enrolment-_moe_fgs.
+HDX | south-sudan-schools-and-enrolment-data-2015-sssams | South Sudan :  Schools and Enrollment data | OCHA South Sudan | 2025-07-22
+      CSV | enrolment_28_2019-10-29.csv | 2506999 | https://data.humdata.org/dataset/811c4282-2223-4fc9-9b40-43223c4e3c3e/resource/ec95583d-732d-4201-aa89-e9437e0af74a/download/enrolment_28_2019-10-29.csv
+      XLSX | South Sudan Schools and Enrolment data 2015 (SSSAMS).xlsx | 2201882 | https://data.humdata.org/dataset/811c4282-2223-4fc9-9b40-43223c4e3c3e/resource/7cd16811-0d41-480f-8aec-d75e837cb1d3/download/south-sudan-schools-and-enrolment-d
+HDX | philippines-education-0 | Philippines - Enrolment in public and private schools by level of education | OCHA Philippines | 2026-06-23
+      XLS | education_NSCB.xls | 956928 | https://data.humdata.org/dataset/06ad5af9-cd06-44e1-a9ed-01c3be511dff/resource/3d0221ab-c5eb-4831-ab19-f2cc672404da/download/education_nscb.xls
+HDX | kenya-private-schools-primary-school-enrollment-per-gender-per-county | Kenya Private schools primary school enrollment per gender per county | Kenya Open Data Initiative (inactive) | 2023-03-02
+      CSV | Private_Primary_Enrollment_by_Gender_Class.csv | 5424 | https://data.humdata.org/dataset/ac13ca09-f9e1-4614-a850-32c133faf81e/resource/b4a67953-e345-4937-a551-5e0a4c1ee6dd/download/private_primary_enrollment_by_gende
+HDX | cox-bazar-school-enrolment-data | Cox Bazar School Enrolment Data | Cox's Bazar Education Sector | 2025-04-25
+      CSV | enrollment_20181218MA.csv | 773 | https://data.humdata.org/dataset/be2a7ee8-9c76-4011-aebb-88691a8bee2c/resource/554baa80-6780-4879-8bc0-667fdad1889c/download/enrollment_20181218ma.csv
+HDX | philippines-education-0-0 | Philippines - School locations | OCHA Philippines | 2026-06-23
+      SHP | phl_schp_deped.zip | 1212400 | https://data.humdata.org/dataset/cea41a64-36c7-4677-8c87-a63b268a70ac/resource/399b6d16-11f2-46b8-ae30-179c0afc7e7b/download/phl_schp_deped.zip
+HDX | number-of-secondary-school-enrolment-by-county-2007-2013 | Number of Secondary School Enrolment by County 2007 - 2013 | Kenya National Bureau of Statistics (inactive) | 2025-02-06
+      CSV | Number of Secondary School Enrolment by County 2007 - 2013.csv | 2338 | https://data.humdata.org/dataset/85bd9a5a-4dfd-48ec-90b5-2a9a198d7117/resource/26e5ca9d-099a-47ff-8f78-d300a89fa463/download/number-of-secondary-school-enrolmen
+HDX | schools-mapping-in-the-philippines-by-openstreetmap | The Philippines schools mapping by OpenStreetMap | OCHA Philippines | 2026-01-30
+      TSV | Schools dataset cleaned and reviewed | 0 | https://raw.githubusercontent.com/OSMPH/deped_schools_db/master/data/2019/OSMaPaaralan_v2019-282-full.tsv
+HDX | enrolment-in-secondary-schools-by-level-and-sex-2009-2013 | Kenya - Enrolment in Secondary Schools by Level and Sex, 2009 – 2013 | Kenya National Bureau of Statistics (inactive) | 2025-07-22
+      CSV | Enrolment in Secondary Schools by Level and Sex, 2009 – 2013.csv | 425 | https://data.humdata.org/dataset/33840d3b-4843-464e-93c7-5ec15f027d49/resource/f8e7f965-3387-4536-9bbc-8785e71ac22a/download/enrolment-in-secondary-schools-by-l
+HDX | philippines-pre-disaster-indicators | Philippines: Pre-Disaster Indicators | OCHA Philippines | 2026-06-23
+      XLSX | 210127_Health (facility type)_my municipality.xlsx | 556063 | https://data.humdata.org/dataset/f26a0a04-0549-4139-af91-81dfa6e56082/resource/7bfd3e06-762d-44d7-9b5d-0bb168b399f1/download/210127_health-facility-type_my-muni
+      XLSX | 190118_Health (facility type)_by municipality.xlsx | 207798 | https://data.humdata.org/dataset/f26a0a04-0549-4139-af91-81dfa6e56082/resource/ec41e70c-6d03-40f3-b202-a20bb315279d/download/190118_health-facility-type_by-muni
+      XLSX | 180814_health (personnel)_by city_municipality.xlsx | 181709 | https://data.humdata.org/dataset/f26a0a04-0549-4139-af91-81dfa6e56082/resource/d81de28f-a260-41d5-aa4c-0f220755fd44/download/180814_health-personnel_by-city_mun
+      XLSX | 180814_number of household_by city_municipality.xlsx | 121369 | https://data.humdata.org/dataset/f26a0a04-0549-4139-af91-81dfa6e56082/resource/286e52ab-b78d-4591-b906-dae3b23b32e6/download/180814_number-of-household_by-city_
+HDX | philippines-education-0-0 | Philippines - School locations | OCHA Philippines | 2026-06-23
+      SHP | phl_schp_deped.zip | 1212400 | https://data.humdata.org/dataset/cea41a64-36c7-4677-8c87-a63b268a70ac/resource/399b6d16-11f2-46b8-ae30-179c0afc7e7b/download/phl_schp_deped.zip
+HDX | schools-mapping-in-the-philippines-by-openstreetmap | The Philippines schools mapping by OpenStreetMap | OCHA Philippines | 2026-01-30
+      TSV | Schools dataset cleaned and reviewed | 0 | https://raw.githubusercontent.com/OSMPH/deped_schools_db/master/data/2019/OSMaPaaralan_v2019-282-full.tsv
+HDX | philippines-pre-disaster-indicators | Philippines: Pre-Disaster Indicators | OCHA Philippines | 2026-06-23
+      XLSX | 210127_Health (facility type)_my municipality.xlsx | 556063 | https://data.humdata.org/dataset/f26a0a04-0549-4139-af91-81dfa6e56082/resource/7bfd3e06-762d-44d7-9b5d-0bb168b399f1/download/210127_health-facility-type_my-muni
+      XLSX | 190118_Health (facility type)_by municipality.xlsx | 207798 | https://data.humdata.org/dataset/f26a0a04-0549-4139-af91-81dfa6e56082/resource/ec41e70c-6d03-40f3-b202-a20bb315279d/download/190118_health-facility-type_by-muni
+      XLSX | 180814_health (personnel)_by city_municipality.xlsx | 181709 | https://data.humdata.org/dataset/f26a0a04-0549-4139-af91-81dfa6e56082/resource/d81de28f-a260-41d5-aa4c-0f220755fd44/download/180814_health-personnel_by-city_mun
+      XLSX | 180814_number of household_by city_municipality.xlsx | 121369 | https://data.humdata.org/dataset/f26a0a04-0549-4139-af91-81dfa6e56082/resource/286e52ab-b78d-4591-b906-dae3b23b32e6/download/180814_number-of-household_by-city_
+HDX | philippines-education | Philippines - Coordinates of schools in affected areas(Haiyan Typhoon) | OCHA Philippines | 2026-06-23
+      XLSX | Schools_In_Haiyan_Affected_Areas_20131117.xlsx | 1096456 | https://data.humdata.org/dataset/a9b70633-afd9-4091-8696-82b0835c8406/resource/ae664b30-adb6-49f7-b1bb-b632e74863ef/download/schools_in_haiyan_affected_areas_20
+HDX | hotosm_phl_education_facilities | Education Facilities of Philippines | Humanitarian OpenStreetMap Team (HOT) | 2026-10-14
+      GeoJSON | Education Facilities (OSM), GeoJSON | 21192508 | https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/education_facilities/hotosm_phl_education_facilities_osm_geojson.zip
+      Geopackage | Education Facilities (OSM), GeoPackage | 33968613 | https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/education_facilities/hotosm_phl_education_facilities_osm_gpkg.zip
+      GeoParquet | Education Facilities (OSM), GeoParquet | 34784703 | https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/_layers/osm/education_facilities.parquet
+      KML | Education Facilities (OSM), KML | 23840074 | https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/education_facilities/hotosm_phl_education_facilities_osm_kml.zip
+HDX | philippines-education-0 | Philippines - Enrolment in public and private schools by level of education | OCHA Philippines | 2026-06-23
+      XLS | education_NSCB.xls | 956928 | https://data.humdata.org/dataset/06ad5af9-cd06-44e1-a9ed-01c3be511dff/resource/3d0221ab-c5eb-4831-ab19-f2cc672404da/download/education_nscb.xls
+HDX | hotosm_phl_buildings | Buildings of Philippines | Humanitarian OpenStreetMap Team (HOT) | 2026-10-14
+      Geopackage | Buildings (OSM), GeoPackage | 1260526769 | https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/buildings/hotosm_phl_buildings_osm_gpkg.zip
+      GeoParquet | Buildings (OSM), GeoParquet | 1213954877 | https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/_layers/osm/buildings.parquet
+      SHP | Buildings (OSM), Shapefile | 1249413481 | https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/buildings/hotosm_phl_buildings_osm_shp.zip
+      JSON | Buildings (OSM), STAC Collection | 5890 | https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/buildings/hotosm_phl_buildings_osm_metadata.json
+HDX | world-bank-education-indicators-for-philippines | Philippines - Education | World Bank Group | 2026-10-27
+      CSV | Education Indicators for Philippines | 1658318 | https://data.humdata.org/dataset/b59f9135-707d-4d78-8656-fe34b1f48611/resource/2b92314c-c0f5-4fc3-a4ba-ed4125ef600a/download/education_phl.csv
+HDX | worldpop-age-and-gender-structures-for-philippines | Philippines - Age and gender structures | WorldPop | 2026-10-14
+      GeoTIFF | phl_m_80_2020.tif | 155436329 | https://data.worldpop.org/GIS/AgeSex_structures/Global_2000_2020/2020/PHL/phl_m_80_2020.tif
+      GeoTIFF | phl_m_75_2020.tif | 155426944 | https://data.worldpop.org/GIS/AgeSex_structures/Global_2000_2020/2020/PHL/phl_m_75_2020.tif
+      GeoTIFF | phl_m_70_2020.tif | 155424998 | https://data.worldpop.org/GIS/AgeSex_structures/Global_2000_2020/2020/PHL/phl_m_70_2020.tif
+      GeoTIFF | phl_m_65_2020.tif | 155423354 | https://data.worldpop.org/GIS/AgeSex_structures/Global_2000_2020/2020/PHL/phl_m_65_2020.tif
+HDX | world-bank-gender-indicators-for-philippines | Philippines - Gender | World Bank Group | 2026-10-27
+      CSV | Gender Indicators for Philippines | 539874 | https://data.humdata.org/dataset/bfeb4908-1629-4ae1-ab35-d9010838a1bf/resource/c1ce368c-82d8-4b0d-a2dc-c67f085778f5/download/gender_phl.csv
+HDX | hotosm_phl_education_facilities | Education Facilities of Philippines | Humanitarian OpenStreetMap Team (HOT) | 2026-10-14
+      GeoJSON | Education Facilities (OSM), GeoJSON | 21192508 | https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/education_facilities/hotosm_phl_education_facilities_osm_geojson.zip
+      Geopackage | Education Facilities (OSM), GeoPackage | 33968613 | https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/education_facilities/hotosm_phl_education_facilities_osm_gpkg.zip
+      GeoParquet | Education Facilities (OSM), GeoParquet | 34784703 | https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/_layers/osm/education_facilities.parquet
+      KML | Education Facilities (OSM), KML | 23840074 | https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/education_facilities/hotosm_phl_education_facilities_osm_kml.zip
+HDX | world-bank-education-indicators-for-philippines | Philippines - Education | World Bank Group | 2026-10-27
+      CSV | Education Indicators for Philippines | 1658318 | https://data.humdata.org/dataset/b59f9135-707d-4d78-8656-fe34b1f48611/resource/2b92314c-c0f5-4fc3-a4ba-ed4125ef600a/download/education_phl.csv
+HDX | hotosm_phl_health_facilities | Health Facilities of Philippines | Humanitarian OpenStreetMap Team (HOT) | 2026-10-14
+      GeoJSON | Health Facilities (OSM), GeoJSON | 1558965 | https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/health_facilities/hotosm_phl_health_facilities_osm_geojson.zip
+      Geopackage | Health Facilities (OSM), GeoPackage | 2098953 | https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/health_facilities/hotosm_phl_health_facilities_osm_gpkg.zip
+      GeoParquet | Health Facilities (OSM), GeoParquet | 2234739 | https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/_layers/osm/health_facilities.parquet
+      KML | Health Facilities (OSM), KML | 1732048 | https://production-raw-data-api.s3.amazonaws.com/ISO3/PHL/health_facilities/hotosm_phl_health_facilities_osm_kml.zip
+HDX | unesco-data-for-philippines | Philippines - Education Indicators | UNESCO | 2026-03-03
+      CSV | SDG 4 Global and Thematic data | 371732 | https://data.humdata.org/dataset/99697990-8816-4dab-9ff6-87db6bd8eb4f/resource/de7f9818-ada4-49f1-9625-90e141f2f719/download/sdg_data_phl.csv
+      CSV | SDG 4 Global and Thematic indicator list | 427801 | https://data.humdata.org/dataset/99697990-8816-4dab-9ff6-87db6bd8eb4f/resource/a9c764ea-e810-4bcc-93bf-4a1758c8156d/download/sdg_indicatorlist_phl.csv
+      CSV | SDG 4 Global and Thematic metadata | 1305584 | https://data.humdata.org/dataset/99697990-8816-4dab-9ff6-87db6bd8eb4f/resource/ea8ed5d9-a9ab-4d11-b931-5514e710d680/download/sdg_metadata_phl.csv
+      CSV | Other Policy Relevant Indicators data | 684916 | https://data.humdata.org/dataset/99697990-8816-4dab-9ff6-87db6bd8eb4f/resource/1f31cd81-f8e7-4cb6-aad0-07e519eee432/download/opri_data_phl.csv
+HDX | zimbabwe-education-facilities-in-zimbabwe | Zimbabwe - Education Facilities | OCHA Regional Office for Southern and Eastern Africa (ROSEA) | 2025-11-13
+      XLSX | Schools 2020 | 551512 | https://data.humdata.org/dataset/9468a3bd-956c-4e65-be26-480893a6ea94/resource/2b970d27-72d8-4adb-b993-ab7cf324329e/download/schoolsandtheircoordinates2020.xlsx
+HDX | indonesia-education-facilities | Indonesia - Education Facilities | OCHA Regional Office for Asia and the Pacific (ROAP) | 2024-12-03
+      SHP | IDN_school_facilities.zip | 21756210 | https://data.humdata.org/dataset/9f1f1a57-b863-4e19-a0ab-a0e06d91f1d3/resource/ccb4ed2c-2340-43d0-a99f-729aac77a6d7/download/idn_school_facilities.zip
+HDX | hotosm_ken_education_facilities | Education Facilities of Kenya | Humanitarian OpenStreetMap Team (HOT) | 2026-11-03
+      GeoJSON | Education Facilities (OSM), GeoJSON | 1127134 | https://production-raw-data-api.s3.amazonaws.com/ISO3/KEN/education_facilities/hotosm_ken_education_facilities_osm_geojson.zip
+      Geopackage | Education Facilities (OSM), GeoPackage | 1746716 | https://production-raw-data-api.s3.amazonaws.com/ISO3/KEN/education_facilities/hotosm_ken_education_facilities_osm_gpkg.zip
+      GeoParquet | Education Facilities (OSM), GeoParquet | 1878467 | https://production-raw-data-api.s3.amazonaws.com/ISO3/KEN/_layers/osm/education_facilities.parquet
+      KML | Education Facilities (OSM), KML | 1186376 | https://production-raw-data-api.s3.amazonaws.com/ISO3/KEN/education_facilities/hotosm_ken_education_facilities_osm_kml.zip
+HDX | hotosm_bgd_education_facilities | Education Facilities of Bangladesh | Humanitarian OpenStreetMap Team (HOT) | 2026-11-05
+      GeoJSON | Education Facilities (OSM), GeoJSON | 1296478 | https://production-raw-data-api.s3.amazonaws.com/ISO3/BGD/education_facilities/hotosm_bgd_education_facilities_osm_geojson.zip
+      Geopackage | Education Facilities (OSM), GeoPackage | 1791173 | https://production-raw-data-api.s3.amazonaws.com/ISO3/BGD/education_facilities/hotosm_bgd_education_facilities_osm_gpkg.zip
+      GeoParquet | Education Facilities (OSM), GeoParquet | 2042598 | https://production-raw-data-api.s3.amazonaws.com/ISO3/BGD/_layers/osm/education_facilities.parquet
+      KML | Education Facilities (OSM), KML | 1415355 | https://production-raw-data-api.s3.amazonaws.com/ISO3/BGD/education_facilities/hotosm_bgd_education_facilities_osm_kml.zip
+HDX | hotosm_bwa_education_facilities | Education Facilities of Botswana | Humanitarian OpenStreetMap Team (HOT) | 2026-11-03
+      GeoJSON | Education Facilities (OSM), GeoJSON | 159472 | https://production-raw-data-api.s3.amazonaws.com/ISO3/BWA/education_facilities/hotosm_bwa_education_facilities_osm_geojson.zip
+      Geopackage | Education Facilities (OSM), GeoPackage | 244047 | https://production-raw-data-api.s3.amazonaws.com/ISO3/BWA/education_facilities/hotosm_bwa_education_facilities_osm_gpkg.zip
+      GeoParquet | Education Facilities (OSM), GeoParquet | 253606 | https://production-raw-data-api.s3.amazonaws.com/ISO3/BWA/_layers/osm/education_facilities.parquet
+      KML | Education Facilities (OSM), KML | 168786 | https://production-raw-data-api.s3.amazonaws.com/ISO3/BWA/education_facilities/hotosm_bwa_education_facilities_osm_kml.zip
+HDX | hotosm_ind_education_facilities | Education Facilities of India | Humanitarian OpenStreetMap Team (HOT) | 2026-10-12
+      GeoJSON | Education Facilities (OSM), GeoJSON | 9484352 | https://production-raw-data-api.s3.amazonaws.com/ISO3/IND/education_facilities/hotosm_ind_education_facilities_osm_geojson.zip
+      Geopackage | Education Facilities (OSM), GeoPackage | 13905367 | https://production-raw-data-api.s3.amazonaws.com/ISO3/IND/education_facilities/hotosm_ind_education_facilities_osm_gpkg.zip
+      GeoParquet | Education Facilities (OSM), GeoParquet | 14908265 | https://production-raw-data-api.s3.amazonaws.com/ISO3/IND/_layers/osm/education_facilities.parquet
+      KML | Education Facilities (OSM), KML | 9995467 | https://production-raw-data-api.s3.amazonaws.com/ISO3/IND/education_facilities/hotosm_ind_education_facilities_osm_kml.zip
+GH | README.md | 1290 | https://raw.githubusercontent.com/OSMPH/OSMaPaaralan/master/README.md
+GH | data | 0 | None
+GH | taginfo.json | 3560 | https://raw.githubusercontent.com/OSMPH/OSMaPaaralan/master/taginfo.json
+GH | updates | 0 | None
+GH | judiannyanoda-commits/DepEd-Enrollment-Dashboard | DepEd Learner Enrollment Dashboard for School Year 2025–2026 | 2026-10-19T13:04:45Z
+GH | kpraf/djihs-enrollment-system | Role-based enrollment system for Don Jose Integrated High School, with six staff dashboards, enrollment approvals, CSV import and DepEd SF1 export. | 2026-08-25T17:21:05Z
+GH | LEGENDFVRYz/collab_deped-dashboard | Turning public DepEd's enrollment spreadsheets per year (60,000+ schools) into an explorable data warehouse. This project normalizes those public spreadsheets into a relational warehouse with an interactive dashboard on top of it. | 2026-09-09T21:00:05Z
+GH | borkangole/TeacherOS | **A secure offline desktop system built for DepEd Cuartero District — managing teacher records and multi-year enrollment data across 20+ schools, from messy Excel imports to a deployed Windows installer.** | 2026-06-30T09:58:13Z
+GH | SkvLaroco/deped_resource_allocation_system | Developed a robust forecasting model using Meta's Prophet algorithm to analyze Senior High School enrollment trends across the National Capital Region. The model captures seasonality, holiday effects, and long-term growth trajectories to accurately predict future student population — enabling smarter resource allocation and educational planning. | 2026-05-04T04:01:09Z
+GH | alvinapolinario/campusone-erp | CampusOne ERP is a modular Education ERP for Philippine schools, colleges, universities, and SUCs. It integrates student information, enrollment, academics, billing, finance, HR, procurement, assets, and DepEd/CHED compliance in one extensible platform designed for private and public educational institutions. | 2026-08-29T00:47:36Z
+GH | ldsalud/school-management-system | Full-featured School Management System for Philippine elementary schools — online enrollment, attendance, gradebook, push notifications, and multi-role portals (Admin / Teacher / Student / Parent). Built with Next.js 16, Supabase, and TypeScript. Demo uses sample data only — no real records. | 2026-05-24T00:50:58Z
