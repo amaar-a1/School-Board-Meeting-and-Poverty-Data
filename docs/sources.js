@@ -179,6 +179,7 @@ window.SOURCES = [
     only: "Islands and microstates",
     group: "Islands and microstates",
     items: [
+      { title: "Falkland Islands pupils (estimated): residents aged 5–15, the compulsory school ages (398), Falkland Islands Government, Policy Department, 2021 Census Tables, table 2b (population by single years of age)", url: "https://www.gov.fk/policy/2021-census/" },
       { title: "Svalbard pupils: Statistics Norway, table 11980, pupils in compulsory school, Longyearbyen, 2025 (194)", url: "https://www.ssb.no/en/statbank/table/11980/" },
       { title: "Children below 60% of the median income (Malta, Cyprus): Eurostat ilc_li02", url: "https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table" },
       { title: "National poverty line, unemployment, population, enrollment (primary and secondary): World Bank World Development Indicators (SI.POV.NAHC, SL.UEM.TOTL.ZS, SP.POP.TOTL, SP.POP.0014.TO.ZS, SE.PRM.ENRL, SE.SEC.ENRL)", url: "https://data.worldbank.org/" },
