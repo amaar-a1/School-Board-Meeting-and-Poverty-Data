@@ -1,47 +1,26 @@
-# Temporary: Brazil INEP sinopse (educação básica). Links from the gov.br page; download with the server's missing
-# intermediate certificate added from its AIA URL (verification stays on). Aggregate enrollment by municipality.
-import io, json, os, re, ssl, socket, subprocess, sys, traceback, urllib.request, zipfile
-OUT = "fetch/out/br_inep2"; os.makedirs(OUT, exist_ok=True); W = "/tmp/br"; os.makedirs(W, exist_ok=True)
-log = open(f"{OUT}/log.txt", "a")
+# Temporary: SEP "principales cifras" form (planeacion.sep.gob.mx): can it be reached, and what are its form fields?
+import json, os, subprocess, sys
+OUT = "fetch/out/mx_sep1"; os.makedirs(OUT, exist_ok=True)
 try:
-    import certifi, openpyxl
+    from playwright.sync_api import sync_playwright
 except ImportError:
-    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "--user", "--break-system-packages", "certifi", "openpyxl"], check=True)
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "--user", "--break-system-packages", "playwright"], check=True)
+    subprocess.run([sys.executable, "-m", "playwright", "install", "--with-deps", "chromium"], check=True)
     os.execv(sys.executable, [sys.executable] + sys.argv)
-UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
-def get(u, t=300, ctx=None):
-    with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=t, context=ctx) as r: return r.read()
-links = []
-try:
-    t = get("https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/sinopses-estatisticas/educacao-basica").decode("utf-8", "replace")
-    links = sorted(set(re.findall(r'https?://[^"\']+\.zip', t))); log.write("links " + json.dumps(links) + "\n")
-except Exception as e: log.write(f"ERR page {e}\n")
-ctx = ssl.create_default_context(cafile=certifi.where())
-try:
-    conn = socket.create_connection(("download.inep.gov.br", 443), timeout=60)
-    s = ssl.create_default_context(); s.check_hostname = False; s.verify_mode = ssl.CERT_NONE   # only to READ the leaf's AIA field
-    with s.wrap_socket(conn, server_hostname="download.inep.gov.br") as tls: der = tls.getpeercert(binary_form=True)
-    open(f"{W}/leaf.der", "wb").write(der)
-    txt = subprocess.run(["openssl", "x509", "-inform", "DER", "-in", f"{W}/leaf.der", "-noout", "-text"], capture_output=True, text=True).stdout
-    aia = re.findall(r"CA Issuers - URI:(\S+)", txt); log.write(f"issuer {re.findall(r'Issuer: (.*)', txt)} aia {aia}\n")
-    bundle = open(certifi.where()).read()
-    for u in aia:
-        b = get(u, 60); open(f"{W}/int", "wb").write(b)
-        pem = subprocess.run(["openssl", "x509", "-inform", "PEM" if b.startswith(b"-----") else "DER", "-in", f"{W}/int"], capture_output=True, text=True).stdout
-        bundle += "\n" + pem
-    open(f"{W}/bundle.pem", "w").write(bundle); ctx = ssl.create_default_context(cafile=f"{W}/bundle.pem")
-except Exception as e: log.write("ERR chain " + traceback.format_exc()[-400:] + "\n")
-cands = [l for l in links if "educacao_basica" in l.lower() or "censo_escolar" in l.lower()] or [f"https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopses_estatisticas_censo_escolar_{y}.zip" for y in (2025, 2024)]
-for u in sorted(cands, reverse=True)[:3]:
-    try:
-        b = get(u, 900, ctx); log.write(f"{u}: {len(b)} bytes\n")
-        z = zipfile.ZipFile(io.BytesIO(b)); log.write(json.dumps(z.namelist()) + "\n")
-        x = next(n for n in z.namelist() if n.lower().endswith((".xlsx", ".xls")))
-        open(f"{W}/sinopse.xlsx", "wb").write(z.read(x))
-        wb = openpyxl.load_workbook(f"{W}/sinopse.xlsx", read_only=True, data_only=True)
-        for sn in wb.sheetnames[:12]:
-            ws = wb[sn]; head = [c for row in ws.iter_rows(min_row=1, max_row=10, values_only=True) for c in row if c]
-            log.write(f"sheet {sn}: {' | '.join(str(c)[:40] for c in head[:30])}\n")
-        json.dump({"url": u, "file": x}, open(f"{OUT}/meta.json", "w")); break
-    except Exception as e: log.write(f"ERR {u} {str(e)[:200]}\n")
+log = open(f"{OUT}/log.txt", "w")
+with sync_playwright() as p:
+    b = p.chromium.launch(); pg = b.new_page(user_agent="Mozilla/5.0 (school-board research project; github.com/amaar-a1)")
+    reqs = []
+    pg.on("request", lambda r: reqs.append(f"{r.method} {r.url} {(r.post_data or '')[:300]}") if r.resource_type in ("xhr", "fetch", "document") else None)
+    for u in ["https://www.planeacion.sep.gob.mx/principalescifras/", "https://planeacion.sep.gob.mx/principalescifras/"]:
+        try:
+            r = pg.goto(u, wait_until="networkidle", timeout=90000); log.write(f"{u} -> {r.status if r else None} {pg.url}\n")
+            pg.wait_for_timeout(3000)
+            sels = pg.eval_on_selector_all("select", "ss => ss.map(s => ({id: s.id, name: s.name, opts: [...s.options].slice(0,40).map(o => o.value + '=' + o.text)}))")
+            log.write("SELECTS " + json.dumps(sels, ensure_ascii=False)[:6000] + "\n")
+            log.write("BUTTONS " + json.dumps(pg.eval_on_selector_all("button, input[type=submit], input[type=button], a.btn", "bs => bs.map(b => (b.id || '') + ':' + (b.innerText || b.value || '').trim().slice(0,40))"), ensure_ascii=False)[:2000] + "\n")
+            break
+        except Exception as e: log.write(f"{u} ERR {str(e)[:200]}\n")
+    log.write("REQS\n" + "\n".join(reqs[:40]) + "\n")
+    b.close()
 log.close()
