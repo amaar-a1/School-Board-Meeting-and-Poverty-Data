@@ -1,38 +1,26 @@
-# Temporary: open the data.gov.ph DepEd dataset page in a headless browser; record API calls and download links.
-import json, os, subprocess, sys
-OUT = "fetch/out/ph_deped4"; os.makedirs(OUT, exist_ok=True)
+# Temporary: DepEd historical enrollment (data.gov.ph API): download the 3 XLSX resources and describe them.
+import io, json, os, subprocess, sys, urllib.parse, urllib.request
+OUT = "fetch/out/ph_deped5"; os.makedirs(OUT, exist_ok=True)
 try:
-    from playwright.sync_api import sync_playwright
+    import openpyxl
 except ImportError:
-    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "--user", "--break-system-packages", "playwright"], check=True)
-    subprocess.run([sys.executable, "-m", "playwright", "install", "--with-deps", "chromium"], check=True)
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "--user", "--break-system-packages", "openpyxl"], check=True)
     os.execv(sys.executable, [sys.executable] + sys.argv)
+UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
 log = open(f"{OUT}/log.txt", "w")
-page_url = "https://data.gov.ph/index/public/dataset/Historical%20Enrollment%20Data/l6xdlzdg-ixdr-yuve-tw7k-0cgug0ceul10"
-with sync_playwright() as p:
-    b = p.chromium.launch(); pg = b.new_page(user_agent="Mozilla/5.0 (school-board research project; github.com/amaar-a1)")
-    seen = []
-    def on_resp(r):
-        ct = r.headers.get("content-type", "")
-        if "json" in ct or r.request.resource_type in ("xhr", "fetch"):
-            try: body = r.text()[:3000]
-            except Exception: body = ""
-            seen.append({"url": r.url, "status": r.status, "ct": ct, "body": body})
-    pg.on("response", on_resp)
-    pg.goto(page_url, wait_until="networkidle", timeout=120000); pg.wait_for_timeout(5000)
-    log.write("TEXT " + pg.inner_text("body")[:4000] + "\n")
-    links = pg.eval_on_selector_all("a", "as => as.map(a => [a.innerText.trim().slice(0,80), a.href])")
-    log.write("LINKS " + json.dumps([l for l in links if l[1] and "data.gov.ph" not in l[1] or any(k in (l[0] + l[1]).lower() for k in ("download", "csv", "xls", "resource", "file"))], ensure_ascii=False)[:4000] + "\n")
-    btns = pg.locator("text=DOWNLOAD").all()
-    log.write(f"buttons {len(btns)}\n")
-    for i, bt in enumerate(btns[:3]):
-        try:
-            with pg.expect_download(timeout=120000) as d: bt.click()
-            dl = d.value; fn = f"{OUT}/{i}_{dl.suggested_filename}"; dl.save_as(fn); log.write(f"saved {fn} {os.path.getsize(fn)}\n")
-        except Exception as e: log.write(f"dl {i} ERR {str(e)[:200]}\n")
-        pg.wait_for_timeout(1500)
-    for s in seen: log.write(f"XHR {s['status']} {s['url']}\n  {s['body'][:1500]}\n")
-    b.close()
+def get(u, t=300):
+    with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=t) as r: return r.read()
+d = json.loads(get("https://api.data.gov.ph/api/public/dataset/Historical%20Enrollment%20Data/l6xdlzdg-ixdr-yuve-tw7k-0cgug0ceul10"))
+for i, r in enumerate(d["data"]["resources"]):
+    log.write(json.dumps({k: v for k, v in r.items() if k in ("name", "url", "format", "size", "fileName", "file")}, ensure_ascii=False)[:600] + "\n")
+    u = r.get("url") or ""
+    if not u.startswith("http"): continue
+    try:
+        b = get(u.replace(" ", "%20")); fn = f"{OUT}/{i}.xlsx"; open(fn, "wb").write(b)
+        wb = openpyxl.load_workbook(io.BytesIO(b), read_only=True, data_only=True)
+        log.write(f"  {len(b)} bytes, sheets {wb.sheetnames}\n")
+        ws = wb[wb.sheetnames[0]]
+        for row in ws.iter_rows(min_row=1, max_row=8, values_only=True): log.write("   " + json.dumps([str(c)[:25] if c is not None else None for c in row[:20]], ensure_ascii=False) + "\n")
+        log.write(f"  rows {ws.max_row}\n")
+    except Exception as e: log.write(f"  ERR {e}\n")
 log.close()
-
-# v4
