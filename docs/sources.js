@@ -415,10 +415,11 @@ window.SOURCES = [
     only: "Mexico",
     group: "Mexico: municipalities, poverty and enrollment",
     items: [
+      { title: "Enrollment: SEP, Dirección General de Planeación, Programación y Estadística Educativa, Principales cifras (Formato 911 school statistics), ciclo 2025-2026, escolarizada, educación básica, by municipality for each state, all schools and public schools (data-prep/prep_mexico_pupils.py)", url: "https://www.planeacion.sep.gob.mx/principalescifras/" },
       { title: "Borders of 6 municipalities created since 2012: INEGI, via the UN and geoBoundaries (gbAuthoritative MEX ADM2), checked to lie inside the municipality each was made from", url: "https://www.geoboundaries.org/" },
       { title: "Borders of 6 more (Coatetelco, Honduras de la Sierra, Hueyapan, San Quintín, Seybaplaya, Xoxocotla): INEGI, Marco Geoestadístico, diciembre de 2025, from its geographic web service (wscatgeo), checked the same way", url: "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgem/17034" },
       { title: "Poverty by municipality: CONEVAL, Medición de la pobreza municipal 2010–2020 (concentrado de indicadores)", url: "https://www.coneval.org.mx/Medicion/Paginas/Pobreza-municipio-2010-2020.aspx" },
-      { title: "Enrollment (census residents aged 6–17 attending school), children 6–17 and population: INEGI, Censo de Población y Vivienda 2020, Principales resultados por localidad (ITER), municipal totals", url: "https://www.inegi.org.mx/programas/ccpv/2020/#datos_abiertos" },
+      { title: "Children 6–17, population, and enrollment for the four municipalities SEP can't be matched to (census residents aged 6–17 attending school): INEGI, Censo de Población y Vivienda 2020, Principales resultados por localidad (ITER), municipal totals", url: "https://www.inegi.org.mx/programas/ccpv/2020/#datos_abiertos" },
       { title: "Borders: geoBoundaries (gbOpen) Mexico ADM1 and ADM2 (2012 municipalities), simplified", url: "https://www.geoboundaries.org/" },
       { title: "Meetings (stand-in): each municipality's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
     ],
