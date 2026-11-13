@@ -1,11 +1,15 @@
-# Temporary: Svalbard (Longyearbyen) pupils, SSB table 11980.
-import json, os, urllib.request
-OUT = "fetch/out/isl_enr2"; os.makedirs(OUT, exist_ok=True)
-UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)", "Content-Type": "application/json"}
-q = {"query": [{"code": "KOKkommuneregion0000", "selection": {"filter": "item", "values": ["2111"]}},
-               {"code": "KOKeierfh0000", "selection": {"filter": "item", "values": ["KP"]}},
-               {"code": "KOKtrinn0000", "selection": {"filter": "item", "values": ["0"]}}], "response": {"format": "json-stat2"}}
+# Temporary: DepEd historical enrollment on data.gov.ph: find and fetch its resources.
+import json, os, re, urllib.parse, urllib.request, html
+OUT = "fetch/out/ph_deped1"; os.makedirs(OUT, exist_ok=True)
+UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
+log = open(f"{OUT}/log.txt", "w")
+def get(u, t=300):
+    with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=t) as r: return r.read(), r.headers.get("Content-Type", "")
+page = "https://data.gov.ph/index/public/dataset/Historical%20Enrollment%20Data/l6xdlzdg-ixdr-yuve-tw7k-0cgug0ceul10"
 try:
-    b = urllib.request.urlopen(urllib.request.Request("https://data.ssb.no/api/v0/en/table/11980", data=json.dumps(q).encode(), headers=UA), timeout=90).read()
-    open(f"{OUT}/svalbard.json", "wb").write(b); open(f"{OUT}/log.txt", "w").write(b.decode()[:3000])
-except Exception as e: open(f"{OUT}/log.txt", "w").write(f"ERR {e} {getattr(e, 'read', lambda: b'')()[:500]}")
+    b, ct = get(page); t = b.decode("utf-8", "replace"); open(f"{OUT}/page.html", "w").write(t)
+    links = sorted(set(html.unescape(x) for x in re.findall(r'(?:href|src|data-url)="([^"]+)"', t)))
+    log.write(f"page {len(t)} {ct}\n" + "\n".join(l for l in links if re.search(r"download|resource|\.csv|\.xlsx?|api|storage", l, re.I)) + "\n")
+    log.write("API-like: " + json.dumps(sorted(set(re.findall(r'["\'](/[a-z_/]*api[^"\']{0,120})["\']', t)))[:30]) + "\n")
+except Exception as e: log.write(f"ERR page {e}\n")
+log.close()
