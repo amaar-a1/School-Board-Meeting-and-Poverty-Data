@@ -1,7 +1,7 @@
 # Temporary: SEP principales cifras (Formato 911), 2025-2026, escolarizada, educación básica: pupils by municipality for
 # each state, all schools and public schools. One query at a time, with pauses.
 import json, os, subprocess, sys, time
-OUT = "fetch/out/mx_sep2"; os.makedirs(OUT, exist_ok=True)
+OUT = "fetch/out/mx_sep3"; os.makedirs(OUT, exist_ok=True)
 try:
     from playwright.sync_api import sync_playwright
 except ImportError:
@@ -30,8 +30,12 @@ with sync_playwright() as p:
                     choose(pg, "#DDLControl", control); choose(pg, "#DDLEntidad", st)
                     pg.click("#Button1"); pg.wait_for_load_state("networkidle"); pg.wait_for_timeout(1500)
                     tables = pg.eval_on_selector_all("table", "ts => ts.map(t => [...t.rows].map(r => [...r.cells].map(c => c.innerText.trim())))")
-                    t = next((t for t in tables if t and t[0] and t[0][0].upper().startswith("MUNICIPIO")), None)
-                    if not t: raise RuntimeError(f"no municipio table; {len(tables)} tables; first {str(tables[:1])[:200]}")
+                    t = None
+                    for tb in tables:
+                        for i, row in enumerate(tb):
+                            if row and row[0].strip().upper() == "MUNICIPIO": t = tb[i:]; break
+                        if t: break
+                    if not t: raise RuntimeError(f"no municipio table; {len(tables)} tables; first {str(tables[:1])[:300]}")
                     res[f"{control}|{st}"] = t; log.write(f"ok control {control} state {st}: {len(t)-2} municipalities\n"); break
                 except Exception as e:
                     log.write(f"ERR control {control} state {st} try {attempt}: {str(e)[:200]}\n"); time.sleep(5)
@@ -39,3 +43,5 @@ with sync_playwright() as p:
             json.dump({"cycle": "2025-2026", "modalidad": "Escolarizada", "tipo": basica, "tables": res}, open(f"{OUT}/sep_basica_by_municipio.json", "w"), ensure_ascii=False)
     b.close()
 log.close()
+
+# v3
