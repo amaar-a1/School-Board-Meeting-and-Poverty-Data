@@ -36,6 +36,9 @@ NAMES = {"Antigua and Barb.": "Antigua and Barbuda", "St. Kitts and Nevis": "Sai
          "Micronesia": "Federated States of Micronesia", "São Tomé and Principe": "São Tomé and Príncipe",
          "Saint Helena": "Saint Helena, Ascension and Tristan da Cunha"}
 # Figures found by hand where neither the World Bank nor the Factbook has one.
+# Enrollment where the World Bank has none. Norfolk Island: residents attending primary (155) and secondary (110)
+# school, ABS 2021 Census QuickStats (SAL90004, CC BY 4.0), the measure used for Australia's council areas.
+ENR_MANUAL = {"NFK": (265, "2021 Census (residents attending primary and secondary school; ABS)")}
 MANUAL = {"NFK": (2.8, "Unemployment rate, a stand-in for poverty (Australian Bureau of Statistics, 2021 Census: 33 of 1,187 in the labour force)"),
           "MAF": (27.0, "Unemployment rate, a stand-in for poverty (census definition, 2023; IEDOM annual report on Saint-Martin, 2025 edition)"),
           "BLM": (1.9, "Unemployment rate, a stand-in for poverty (ILO definition, 2021; IEDOM annual report on Saint-Barthélemy, 2025 edition)")}
@@ -284,6 +287,7 @@ def main():
         pr, se = W.get("SE.PRM.ENRL", {}).get(iso, {}), W.get("SE.SEC.ENRL", {}).get(iso, {})
         both = sorted(set(pr) & set(se))
         enr, ey = (round(pr[both[-1]] + se[both[-1]]), str(both[-1])) if both else ("", "")
+        if not both and iso in ENR_MANUAL: enr, ey = ENR_MANUAL[iso]
         area = f.get("Geography", {}).get("Area") or {}
         land = num(txt(area.get("land"))) or num(txt(area.get("total") or area.get("total ")))
         dens = pop / land if pop and land else None
