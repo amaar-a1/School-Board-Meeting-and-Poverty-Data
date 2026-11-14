@@ -1,0 +1,1452 @@
+{
+"source": "Get Information about Schools, full establishment extract (edubasealldata20261113.csv), open establishments, pupils (NumberOfPupils) by local authority and establishment type group",
+"date": "20261113",
+"by_la": {
+"City of London": {
+"Local authority maintained schools": 229.0,
+"Independent schools": 2662.0,
+"Universities": 0.0,
+"Other types": 0.0
+},
+"Camden": {
+"Local authority maintained schools": 18032.0,
+"Special schools": 420.0,
+"Independent schools": 8623.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Free Schools": 280.0,
+"Academies": 1371.0,
+"Other types": 0.0
+},
+"Greenwich": {
+"Local authority maintained schools": 22168.0,
+"Independent schools": 3335.0,
+"Special schools": 316.0,
+"Academies": 17312.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Free Schools": 3696.0
+},
+"Lewisham": {
+"Independent schools": 2124.0,
+"Local authority maintained schools": 23764.0,
+"Special schools": 1035.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 11760.0,
+"Free Schools": 410.0
+},
+"Hackney": {
+"Local authority maintained schools": 17448.0,
+"Independent schools": 10207.0,
+"Special schools": 701.0,
+"Academies": 11230.0,
+"Free Schools": 2421.0
+},
+"Hammersmith and Fulham": {
+"Local authority maintained schools": 6852.0,
+"Independent schools": 5965.0,
+"Special schools": 594.0,
+"Colleges": 0.0,
+"Academies": 9888.0,
+"Free Schools": 2587.0,
+"Other types": 0.0
+},
+"Islington": {
+"Local authority maintained schools": 14763.0,
+"Independent schools": 853.0,
+"Special schools": 239.0,
+"Universities": 0.0,
+"Academies": 5092.0,
+"Free Schools": 2222.0,
+"Other types": 0.0
+},
+"Kensington and Chelsea": {
+"Local authority maintained schools": 6629.0,
+"Independent schools": 10138.0,
+"Special schools": 131.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 6225.0,
+"Free Schools": 107.0
+},
+"Surrey": {
+"Independent schools": 36586.0,
+"Local authority maintained schools": 37060.0,
+"Special schools": 3420.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 114778.0,
+"Free Schools": 5273.0
+},
+"Lambeth": {
+"Independent schools": 1786.0,
+"Local authority maintained schools": 21641.0,
+"Special schools": 816.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Other types": 0.0,
+"Academies": 9046.0,
+"Free Schools": 2732.0
+},
+"Wandsworth": {
+"Independent schools": 9111.0,
+"Local authority maintained schools": 13026.0,
+"Special schools": 658.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 15129.0,
+"Free Schools": 1878.0
+},
+"Westminster": {
+"Independent schools": 8043.0,
+"Local authority maintained schools": 6016.0,
+"Special schools": 587.0,
+"Colleges": 0.0,
+"Academies": 11451.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Free Schools": 1992.0
+},
+"Southwark": {
+"Local authority maintained schools": 14697.0,
+"Independent schools": 6022.0,
+"Special schools": 744.0,
+"Academies": 20500.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Free Schools": 4830.0
+},
+"Tower Hamlets": {
+"Local authority maintained schools": 28047.0,
+"Independent schools": 2199.0,
+"Special schools": 871.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Free Schools": 3155.0,
+"Academies": 12039.0,
+"Other types": 0.0
+},
+"Merton": {
+"Independent schools": 4165.0,
+"Local authority maintained schools": 18171.0,
+"Special schools": 1022.0,
+"Academies": 6451.0,
+"Other types": 0.0,
+"Colleges": 0.0,
+"Free Schools": 1233.0
+},
+"Barking and Dagenham": {
+"Local authority maintained schools": 32760.0,
+"Colleges": 0.0,
+"Special schools": 389.0,
+"Independent schools": 87.0,
+"Academies": 7784.0,
+"Free Schools": 5035.0
+},
+"Barnet": {
+"Local authority maintained schools": 28655.0,
+"Independent schools": 6486.0,
+"Special schools": 643.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 26554.0,
+"Free Schools": 5185.0
+},
+"Bexley": {
+"Local authority maintained schools": 5448.0,
+"Independent schools": 694.0,
+"Special schools": 169.0,
+"Universities": 0.0,
+"Academies": 35805.0,
+"Free Schools": 553.0,
+"Other types": 0.0
+},
+"Brent": {
+"Local authority maintained schools": 20771.0,
+"Special schools": 183.0,
+"Independent schools": 1599.0,
+"Academies": 24925.0,
+"Free Schools": 1687.0
+},
+"Wokingham": {
+"Local authority maintained schools": 3856.0,
+"Independent schools": 4301.0,
+"Special schools": 127.0,
+"Universities": 0.0,
+"Academies": 23982.0,
+"Free Schools": 1416.0
+},
+"Bradford": {
+"Local authority maintained schools": 21974.0,
+"Independent schools": 2863.0,
+"Colleges": 0.0,
+"Academies": 67541.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Special schools": 355.0,
+"Free Schools": 6821.0
+},
+"Harrow": {
+"Independent schools": 3739.0,
+"Local authority maintained schools": 16906.0,
+"Special schools": 530.0,
+"Colleges": 0.0,
+"Academies": 17657.0,
+"Free Schools": 3501.0,
+"Other types": 0.0
+},
+"Ealing": {
+"Independent schools": 3338.0,
+"Local authority maintained schools": 34386.0,
+"Special schools": 1404.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 10579.0,
+"Free Schools": 4798.0
+},
+"Bromley": {
+"Local authority maintained schools": 1921.0,
+"Independent schools": 4377.0,
+"Colleges": 0.0,
+"Special schools": 711.0,
+"Other types": 0.0,
+"Academies": 46670.0,
+"Free Schools": 3750.0
+},
+"Croydon": {
+"Local authority maintained schools": 11927.0,
+"Independent schools": 7829.0,
+"Special schools": 1361.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Academies": 38219.0,
+"Free Schools": 3799.0
+},
+"Haringey": {
+"Independent schools": 3452.0,
+"Local authority maintained schools": 22095.0,
+"Special schools": 698.0,
+"Academies": 10157.0,
+"Free Schools": 2909.0,
+"Other types": 0.0
+},
+"Hounslow": {
+"Independent schools": 2096.0,
+"Local authority maintained schools": 22268.0,
+"Special schools": 902.0,
+"Colleges": 0.0,
+"Academies": 16107.0,
+"Free Schools": 5435.0,
+"Other types": 0.0
+},
+"Enfield": {
+"Local authority maintained schools": 22603.0,
+"Independent schools": 1439.0,
+"Special schools": 1207.0,
+"Colleges": 0.0,
+"Academies": 24081.0,
+"Free Schools": 5935.0
+},
+"Hertfordshire": {
+"Independent schools": 22192.0,
+"Local authority maintained schools": 80672.0,
+"Special schools": 2758.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 109495.0,
+"Free Schools": 7625.0
+},
+"Havering": {
+"Local authority maintained schools": 18216.0,
+"Independent schools": 745.0,
+"Special schools": 191.0,
+"Academies": 23569.0,
+"Free Schools": 1326.0,
+"Other types": 0.0
+},
+"Hillingdon": {
+"Local authority maintained schools": 18437.0,
+"Independent schools": 3446.0,
+"Special schools": 804.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 29370.0,
+"Free Schools": 2185.0
+},
+"Kingston upon Thames": {
+"Local authority maintained schools": 9000.0,
+"Independent schools": 3859.0,
+"Special schools": 75.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 16245.0,
+"Free Schools": 1268.0
+},
+"Newham": {
+"Local authority maintained schools": 21402.0,
+"Independent schools": 1021.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Special schools": 89.0,
+"Academies": 33882.0,
+"Free Schools": 5899.0
+},
+"Redbridge": {
+"Local authority maintained schools": 39380.0,
+"Independent schools": 2642.0,
+"Special schools": 572.0,
+"Other types": 0.0,
+"Academies": 14982.0,
+"Free Schools": 1567.0
+},
+"Richmond upon Thames": {
+"Local authority maintained schools": 14585.0,
+"Independent schools": 10555.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 10858.0,
+"Free Schools": 3209.0,
+"Special schools": 21.0
+},
+"Sutton": {
+"Local authority maintained schools": 9106.0,
+"Independent schools": 1382.0,
+"Special schools": 432.0,
+"Other types": 0.0,
+"Academies": 29641.0,
+"Free Schools": 1566.0
+},
+"Waltham Forest": {
+"Local authority maintained schools": 20433.0,
+"Independent schools": 2058.0,
+"Colleges": 0.0,
+"Special schools": 47.0,
+"Academies": 19446.0,
+"Free Schools": 880.0
+},
+"Birmingham": {
+"Local authority maintained schools": 60178.0,
+"Independent schools": 7727.0,
+"Special schools": 2988.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 123836.0,
+"Free Schools": 11522.0
+},
+"Wirral": {
+"Local authority maintained schools": 18137.0,
+"Independent schools": 1045.0,
+"Special schools": 2000.0,
+"Colleges": 0.0,
+"Academies": 29269.0
+},
+"Coventry": {
+"Local authority maintained schools": 20122.0,
+"Independent schools": 1958.0,
+"Special schools": 599.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 37117.0,
+"Free Schools": 3068.0
+},
+"Dudley": {
+"Local authority maintained schools": 15648.0,
+"Independent schools": 217.0,
+"Special schools": 756.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Academies": 31054.0
+},
+"Sandwell": {
+"Local authority maintained schools": 28363.0,
+"Colleges": 0.0,
+"Special schools": 801.0,
+"Academies": 30224.0,
+"Independent schools": 378.0,
+"Free Schools": 2964.0
+},
+"Solihull": {
+"Local authority maintained schools": 7442.0,
+"Independent schools": 1903.0,
+"Special schools": 750.0,
+"Academies": 30287.0,
+"Colleges": 0.0,
+"Free Schools": 542.0
+},
+"Walsall": {
+"Local authority maintained schools": 15818.0,
+"Independent schools": 790.0,
+"Special schools": 791.0,
+"Colleges": 0.0,
+"Academies": 36544.0,
+"Free Schools": 268.0
+},
+"Wolverhampton": {
+"Local authority maintained schools": 10217.0,
+"Independent schools": 1325.0,
+"Special schools": 486.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Other types": 0.0,
+"Academies": 35725.0,
+"Free Schools": 3833.0
+},
+"Knowsley": {
+"Local authority maintained schools": 11582.0,
+"Special schools": 746.0,
+"Academies": 9389.0,
+"Other types": 0.0
+},
+"Liverpool": {
+"Local authority maintained schools": 44406.0,
+"Independent schools": 994.0,
+"Special schools": 2641.0,
+"Colleges": 0.0,
+"Academies": 26063.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Free Schools": 2292.0
+},
+"St. Helens": {
+"Local authority maintained schools": 13574.0,
+"Independent schools": 279.0,
+"Special schools": 696.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Academies": 11382.0
+},
+"Sefton": {
+"Local authority maintained schools": 18352.0,
+"Independent schools": 1662.0,
+"Special schools": 683.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Academies": 20384.0,
+"Free Schools": 708.0
+},
+"Bolton": {
+"Local authority maintained schools": 25373.0,
+"Independent schools": 3125.0,
+"Special schools": 880.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 22685.0,
+"Free Schools": 3441.0,
+"Other types": 0.0
+},
+"Bury": {
+"Local authority maintained schools": 5674.0,
+"Independent schools": 1617.0,
+"Special schools": 315.0,
+"Colleges": 0.0,
+"Academies": 20142.0,
+"Free Schools": 360.0
+},
+"Manchester": {
+"Local authority maintained schools": 29954.0,
+"Independent schools": 5422.0,
+"Special schools": 1060.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 50368.0,
+"Free Schools": 9574.0
+},
+"Oldham": {
+"Independent schools": 1364.0,
+"Local authority maintained schools": 10897.0,
+"Special schools": 187.0,
+"Colleges": 0.0,
+"Academies": 30433.0,
+"Free Schools": 2584.0,
+"Other types": 0.0
+},
+"Salford": {
+"Independent schools": 5907.0,
+"Local authority maintained schools": 19922.0,
+"Other types": 0.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 16993.0,
+"Special schools": 95.0,
+"Free Schools": 891.0
+},
+"Rochdale": {
+"Local authority maintained schools": 16559.0,
+"Independent schools": 343.0,
+"Special schools": 912.0,
+"Colleges": 0.0,
+"Academies": 19022.0,
+"Free Schools": 750.0
+},
+"Stockport": {
+"Local authority maintained schools": 21586.0,
+"Independent schools": 3923.0,
+"Special schools": 1055.0,
+"Colleges": 0.0,
+"Academies": 18122.0,
+"Other types": 0.0,
+"Free Schools": 1779.0
+},
+"Trafford": {
+"Special schools": 576.0,
+"Local authority maintained schools": 20355.0,
+"Independent schools": 1570.0,
+"Colleges": 0.0,
+"Academies": 21048.0,
+"Free Schools": 947.0,
+"Other types": 0.0
+},
+"Tameside": {
+"Local authority maintained schools": 7535.0,
+"Independent schools": 130.0,
+"Colleges": 0.0,
+"Special schools": 75.0,
+"Academies": 26986.0,
+"Other types": 0.0,
+"Free Schools": 1153.0
+},
+"Wigan": {
+"Local authority maintained schools": 30843.0,
+"Special schools": 1444.0,
+"Colleges": 0.0,
+"Independent schools": 9.0,
+"Academies": 15515.0,
+"Free Schools": 561.0,
+"Other types": 0.0
+},
+"Barnsley": {
+"Local authority maintained schools": 7650.0,
+"Special schools": 242.0,
+"Colleges": 0.0,
+"Academies": 26111.0,
+"Free Schools": 882.0
+},
+"Doncaster": {
+"Local authority maintained schools": 6095.0,
+"Independent schools": 961.0,
+"Special schools": 345.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Academies": 40594.0,
+"Free Schools": 1428.0
+},
+"Rotherham": {
+"Local authority maintained schools": 4546.0,
+"Colleges": 0.0,
+"Academies": 39391.0,
+"Special schools": 92.0,
+"Other types": 0.0,
+"Free Schools": 857.0
+},
+"Sheffield": {
+"Local authority maintained schools": 16430.0,
+"Independent schools": 2035.0,
+"Special schools": 866.0,
+"Other types": 0.0,
+"Colleges": 0.0,
+"Academies": 59851.0,
+"Universities": 0.0,
+"Free Schools": 3498.0
+},
+"North Yorkshire": {
+"Independent schools": 5510.0,
+"Special schools": 741.0,
+"Local authority maintained schools": 29422.0,
+"Other types": 0.0,
+"Colleges": 0.0,
+"Academies": 48942.0,
+"Free Schools": 734.0
+},
+"Calderdale": {
+"Local authority maintained schools": 8803.0,
+"Independent schools": 1079.0,
+"Special schools": 888.0,
+"Colleges": 0.0,
+"Academies": 24457.0,
+"Free Schools": 912.0,
+"Other types": 0.0
+},
+"Kirklees": {
+"Local authority maintained schools": 23089.0,
+"Independent schools": 1652.0,
+"Special schools": 963.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 37501.0,
+"Free Schools": 2043.0
+},
+"Leeds": {
+"Local authority maintained schools": 59778.0,
+"Independent schools": 4191.0,
+"Special schools": 1868.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Other types": 0.0,
+"Academies": 60075.0,
+"Free Schools": 8703.0
+},
+"Wakefield": {
+"Local authority maintained schools": 13596.0,
+"Independent schools": 1614.0,
+"Special schools": 1125.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Academies": 38916.0,
+"Free Schools": 502.0
+},
+"Gateshead": {
+"Local authority maintained schools": 12400.0,
+"Independent schools": 3082.0,
+"Special schools": 617.0,
+"Colleges": 0.0,
+"Academies": 13743.0,
+"Free Schools": 245.0
+},
+"Newcastle upon Tyne": {
+"Local authority maintained schools": 10459.0,
+"Independent schools": 3970.0,
+"Special schools": 534.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 29190.0,
+"Free Schools": 2289.0,
+"Other types": 0.0
+},
+"North Tyneside": {
+"Local authority maintained schools": 19259.0,
+"Special schools": 1134.0,
+"Academies": 8945.0,
+"Other types": 0.0,
+"Independent schools": 14.0
+},
+"South Tyneside": {
+"Local authority maintained schools": 11556.0,
+"Special schools": 734.0,
+"Colleges": 0.0,
+"Academies": 10463.0,
+"Other types": 0.0
+},
+"Sunderland": {
+"Local authority maintained schools": 10016.0,
+"Independent schools": 221.0,
+"Special schools": 352.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 29867.0,
+"Free Schools": 983.0
+},
+"Cambridgeshire": {
+"Special schools": 1135.0,
+"Local authority maintained schools": 26052.0,
+"Independent schools": 10396.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 59685.0,
+"Free Schools": 4383.0,
+"Other types": 0.0
+},
+"Bristol, City of": {
+"Local authority maintained schools": 15831.0,
+"Independent schools": 6328.0,
+"Special schools": 752.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 42026.0,
+"Free Schools": 4346.0
+},
+"Bath and North East Somerset": {
+"Local authority maintained schools": 2042.0,
+"Independent schools": 4475.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 23764.0,
+"Free Schools": 1252.0,
+"Special schools": 13.0,
+"Other types": 0.0
+},
+"South Gloucestershire": {
+"Local authority maintained schools": 11749.0,
+"Independent schools": 305.0,
+"Special schools": 390.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 27380.0,
+"Colleges": 0.0,
+"Free Schools": 1230.0
+},
+"North Somerset": {
+"Independent schools": 837.0,
+"Special schools": 497.0,
+"Colleges": 0.0,
+"Academies": 29301.0,
+"Local authority maintained schools": 42.0,
+"Free Schools": 1548.0
+},
+"Bedford": {
+"Local authority maintained schools": 8945.0,
+"Independent schools": 4245.0,
+"Special schools": 135.0,
+"Colleges": 0.0,
+"Academies": 18393.0,
+"Free Schools": 3432.0
+},
+"Central Bedfordshire": {
+"Local authority maintained schools": 15492.0,
+"Special schools": 736.0,
+"Independent schools": 252.0,
+"Universities": 0.0,
+"Academies": 30912.0,
+"Free Schools": 1835.0
+},
+"Luton": {
+"Local authority maintained schools": 18149.0,
+"Independent schools": 832.0,
+"Special schools": 876.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 18483.0,
+"Free Schools": 2544.0
+},
+"Reading": {
+"Local authority maintained schools": 10793.0,
+"Independent schools": 2102.0,
+"Special schools": 64.0,
+"Other types": 0.0,
+"Academies": 10140.0,
+"Free Schools": 3280.0
+},
+"Windsor and Maidenhead": {
+"Local authority maintained schools": 7454.0,
+"Independent schools": 4830.0,
+"Academies": 14149.0,
+"Special schools": 321.0,
+"Free Schools": 1050.0
+},
+"West Berkshire": {
+"Local authority maintained schools": 13104.0,
+"Independent schools": 3128.0,
+"Special schools": 709.0,
+"Colleges": 0.0,
+"Academies": 10769.0,
+"Free Schools": 149.0
+},
+"Slough": {
+"Local authority maintained schools": 8153.0,
+"Independent schools": 720.0,
+"Colleges": 0.0,
+"Academies": 20394.0,
+"Free Schools": 4922.0,
+"Special schools": 289.0
+},
+"Bracknell Forest": {
+"Local authority maintained schools": 6816.0,
+"Independent schools": 3142.0,
+"Special schools": 18.0,
+"Academies": 10406.0,
+"Free Schools": 1722.0
+},
+"Buckinghamshire": {
+"Local authority maintained schools": 32633.0,
+"Independent schools": 7967.0,
+"Special schools": 1602.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 51263.0,
+"Free Schools": 3541.0
+},
+"Milton Keynes": {
+"Local authority maintained schools": 13012.0,
+"Independent schools": 952.0,
+"Special schools": 1061.0,
+"Other types": 0.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 31348.0,
+"Free Schools": 5613.0
+},
+"Peterborough": {
+"Local authority maintained schools": 6827.0,
+"Independent schools": 589.0,
+"Special schools": 465.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Academies": 29024.0,
+"Free Schools": 4071.0
+},
+"Cheshire East": {
+"Local authority maintained schools": 12410.0,
+"Independent schools": 2450.0,
+"Special schools": 822.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Academies": 41986.0,
+"Free Schools": 2016.0
+},
+"Warrington": {
+"Local authority maintained schools": 9608.0,
+"Special schools": 642.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Free Schools": 1082.0,
+"Academies": 20135.0
+},
+"Halton": {
+"Local authority maintained schools": 8927.0,
+"Special schools": 283.0,
+"Colleges": 0.0,
+"Academies": 8474.0,
+"Free Schools": 691.0
+},
+"Cheshire West and Chester": {
+"Local authority maintained schools": 24054.0,
+"Independent schools": 3902.0,
+"Special schools": 1137.0,
+"Universities": 0.0,
+"Academies": 24126.0,
+"Free Schools": 604.0,
+"Other types": 0.0
+},
+"Stockton-on-Tees": {
+"Local authority maintained schools": 4164.0,
+"Independent schools": 1753.0,
+"Colleges": 0.0,
+"Academies": 24511.0,
+"Special schools": 215.0,
+"Free Schools": 1165.0
+},
+"Redcar and Cleveland": {
+"Local authority maintained schools": 1755.0,
+"Special schools": 271.0,
+"Academies": 18331.0,
+"Independent schools": 178.0,
+"Free Schools": 58.0
+},
+"Middlesbrough": {
+"Local authority maintained schools": 2132.0,
+"Special schools": 343.0,
+"Colleges": 0.0,
+"Academies": 21928.0,
+"Universities": 0.0,
+"Independent schools": 77.0,
+"Free Schools": 932.0,
+"Other types": 0.0
+},
+"Hartlepool": {
+"Local authority maintained schools": 3105.0,
+"Colleges": 0.0,
+"Special schools": 22.0,
+"Academies": 11640.0,
+"Other types": 0.0,
+"Free Schools": 33.0
+},
+"Cornwall": {
+"Local authority maintained schools": 12146.0,
+"Independent schools": 1812.0,
+"Special schools": 432.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 58094.0,
+"Free Schools": 753.0,
+"Other types": 0.0
+},
+"Cumberland": {
+"Local authority maintained schools": 21018.0,
+"Independent schools": 374.0,
+"Special schools": 346.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 15976.0,
+"Free Schools": 457.0
+},
+"Westmorland and Furness": {
+"Local authority maintained schools": 15419.0,
+"Independent schools": 1041.0,
+"Special schools": 519.0,
+"Colleges": 0.0,
+"Academies": 13411.0,
+"Free Schools": 837.0
+},
+"Derbyshire": {
+"Local authority maintained schools": 41289.0,
+"Independent schools": 2391.0,
+"Special schools": 1201.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Academies": 62272.0,
+"Free Schools": 782.0
+},
+"Derby": {
+"Local authority maintained schools": 12043.0,
+"Independent schools": 1130.0,
+"Special schools": 237.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 30984.0,
+"Free Schools": 2857.0,
+"Other types": 0.0
+},
+"Devon": {
+"Local authority maintained schools": 24151.0,
+"Independent schools": 5912.0,
+"Special schools": 2028.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 67533.0,
+"Free Schools": 3837.0
+},
+"Plymouth": {
+"Local authority maintained schools": 2577.0,
+"Independent schools": 884.0,
+"Special schools": 686.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 32019.0,
+"Free Schools": 1857.0
+},
+"Torbay": {
+"Local authority maintained schools": 3944.0,
+"Independent schools": 128.0,
+"Special schools": 365.0,
+"Colleges": 0.0,
+"Academies": 15055.0,
+"Other types": 0.0,
+"Free Schools": 101.0
+},
+"Dorset": {
+"Local authority maintained schools": 11684.0,
+"Independent schools": 4747.0,
+"Special schools": 984.0,
+"Colleges": 0.0,
+"Academies": 31407.0,
+"Other types": 0.0,
+"Free Schools": 826.0
+},
+"Bournemouth, Christchurch and Poole": {
+"Local authority maintained schools": 4337.0,
+"Independent schools": 2163.0,
+"Special schools": 1187.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 44382.0,
+"Free Schools": 1679.0
+},
+"County Durham": {
+"Local authority maintained schools": 24382.0,
+"Independent schools": 1418.0,
+"Special schools": 1725.0,
+"Other types": 0.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 45365.0,
+"Free Schools": 471.0
+},
+"Darlington": {
+"Local authority maintained schools": 887.0,
+"Colleges": 0.0,
+"Special schools": 133.0,
+"Academies": 14112.0,
+"Free Schools": 905.0
+},
+"Brighton and Hove": {
+"Local authority maintained schools": 23797.0,
+"Independent schools": 3736.0,
+"Special schools": 547.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 3024.0,
+"Free Schools": 1539.0
+},
+"East Sussex": {
+"Local authority maintained schools": 24954.0,
+"Independent schools": 5647.0,
+"Special schools": 764.0,
+"Other types": 0.0,
+"Colleges": 0.0,
+"Academies": 38123.0,
+"Free Schools": 1521.0
+},
+"Essex": {
+"Local authority maintained schools": 54021.0,
+"Independent schools": 10273.0,
+"Special schools": 1698.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 158706.0,
+"Free Schools": 8281.0,
+"Other types": 0.0
+},
+"Southend-on-Sea": {
+"Local authority maintained schools": 3639.0,
+"Independent schools": 1211.0,
+"Colleges": 0.0,
+"Special schools": 13.0,
+"Academies": 27544.0,
+"Free Schools": 31.0,
+"Other types": 0.0
+},
+"Thurrock": {
+"Local authority maintained schools": 655.0,
+"Academies": 26234.0,
+"Free Schools": 4327.0,
+"Independent schools": 23.0,
+"Special schools": 0.0
+},
+"Gloucestershire": {
+"Local authority maintained schools": 32988.0,
+"Independent schools": 7375.0,
+"Special schools": 1165.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 57553.0,
+"Free Schools": 2130.0
+},
+"Hampshire": {
+"Local authority maintained schools": 124087.0,
+"Special schools": 4610.0,
+"Independent schools": 13308.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 50422.0,
+"Free Schools": 2178.0
+},
+"Southampton": {
+"Local authority maintained schools": 17688.0,
+"Independent schools": 1424.0,
+"Special schools": 621.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 15209.0,
+"Free Schools": 296.0
+},
+"Portsmouth": {
+"Local authority maintained schools": 6250.0,
+"Independent schools": 1885.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 20878.0,
+"Free Schools": 568.0
+},
+"Herefordshire, County of": {
+"Local authority maintained schools": 10726.0,
+"Independent schools": 1330.0,
+"Special schools": 203.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Academies": 12393.0,
+"Free Schools": 115.0
+},
+"Worcestershire": {
+"Local authority maintained schools": 20558.0,
+"Independent schools": 6412.0,
+"Special schools": 1398.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 58480.0,
+"Free Schools": 1240.0,
+"Other types": 0.0
+},
+"East Riding of Yorkshire": {
+"Local authority maintained schools": 22940.0,
+"Independent schools": 1125.0,
+"Special schools": 551.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Academies": 20705.0,
+"Free Schools": 211.0
+},
+"North East Lincolnshire": {
+"Local authority maintained schools": 995.0,
+"Independent schools": 276.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Academies": 20805.0,
+"Special schools": 108.0,
+"Free Schools": 128.0
+},
+"North Lincolnshire": {
+"Local authority maintained schools": 11365.0,
+"Special schools": 595.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Independent schools": 220.0,
+"Academies": 11442.0,
+"Free Schools": 376.0
+},
+"Kingston upon Hull, City of": {
+"Independent schools": 997.0,
+"Special schools": 235.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 39798.0,
+"Free Schools": 1888.0
+},
+"Isle of Wight": {
+"Local authority maintained schools": 9051.0,
+"Independent schools": 848.0,
+"Special schools": 491.0,
+"Colleges": 0.0,
+"Academies": 5598.0,
+"Free Schools": 613.0
+},
+"Kent": {
+"Local authority maintained schools": 79774.0,
+"Independent schools": 15878.0,
+"Special schools": 7578.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 150502.0,
+"Free Schools": 11535.0
+},
+"Medway": {
+"Local authority maintained schools": 4985.0,
+"Independent schools": 1304.0,
+"Special schools": 509.0,
+"Other types": 0.0,
+"Colleges": 0.0,
+"Academies": 41678.0,
+"Free Schools": 2477.0
+},
+"Lancashire": {
+"Local authority maintained schools": 113018.0,
+"Independent schools": 6450.0,
+"Special schools": 4952.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 55206.0,
+"Free Schools": 1969.0
+},
+"Blackburn with Darwen": {
+"Local authority maintained schools": 13625.0,
+"Independent schools": 1924.0,
+"Colleges": 0.0,
+"Special schools": 309.0,
+"Academies": 10907.0,
+"Free Schools": 2985.0
+},
+"Blackpool": {
+"Local authority maintained schools": 1804.0,
+"Special schools": 178.0,
+"Colleges": 0.0,
+"Academies": 16323.0,
+"Free Schools": 1270.0,
+"Independent schools": 81.0
+},
+"Leicestershire": {
+"Local authority maintained schools": 13058.0,
+"Independent schools": 5175.0,
+"Special schools": 1457.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 86492.0,
+"Free Schools": 1276.0
+},
+"Leicester": {
+"Local authority maintained schools": 23197.0,
+"Independent schools": 2350.0,
+"Special schools": 813.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Free Schools": 5311.0,
+"Academies": 30258.0
+},
+"Rutland": {
+"Local authority maintained schools": 167.0,
+"Independent schools": 1794.0,
+"Special schools": 171.0,
+"Academies": 5282.0,
+"Free Schools": 358.0
+},
+"Lincolnshire": {
+"Local authority maintained schools": 25951.0,
+"Independent schools": 3164.0,
+"Special schools": 1166.0,
+"Other types": 0.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 78368.0,
+"Free Schools": 1441.0
+},
+"Norfolk": {
+"Local authority maintained schools": 28155.0,
+"Independent schools": 4291.0,
+"Special schools": 2506.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 81442.0,
+"Free Schools": 5403.0
+},
+"York": {
+"Local authority maintained schools": 6923.0,
+"Independent schools": 2393.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 17730.0,
+"Special schools": 48.0
+},
+"North Northamptonshire": {
+"Local authority maintained schools": 8341.0,
+"Independent schools": 2322.0,
+"Special schools": 386.0,
+"Academies": 45539.0,
+"Free Schools": 1920.0,
+"Other types": 0.0
+},
+"West Northamptonshire": {
+"Local authority maintained schools": 12400.0,
+"Independent schools": 2386.0,
+"Special schools": 484.0,
+"Other types": 0.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 46940.0,
+"Free Schools": 6841.0
+},
+"Northumberland": {
+"Local authority maintained schools": 13306.0,
+"Independent schools": 499.0,
+"Special schools": 1378.0,
+"Other types": 0.0,
+"Academies": 27749.0,
+"Free Schools": 254.0
+},
+"Nottinghamshire": {
+"Local authority maintained schools": 28516.0,
+"Independent schools": 1337.0,
+"Special schools": 933.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 93707.0,
+"Free Schools": 2128.0
+},
+"Nottingham": {
+"Local authority maintained schools": 11295.0,
+"Independent schools": 2563.0,
+"Special schools": 411.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Academies": 34145.0,
+"Free Schools": 2773.0
+},
+"Oxfordshire": {
+"Local authority maintained schools": 24715.0,
+"Independent schools": 16087.0,
+"Special schools": 671.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 70337.0,
+"Free Schools": 5777.0
+},
+"Telford and Wrekin": {
+"Local authority maintained schools": 9747.0,
+"Independent schools": 2470.0,
+"Special schools": 726.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 18566.0,
+"Free Schools": 253.0
+},
+"Shropshire": {
+"Local authority maintained schools": 7962.0,
+"Independent schools": 4032.0,
+"Colleges": 0.0,
+"Special schools": 583.0,
+"Other types": 0.0,
+"Academies": 30774.0,
+"Free Schools": 333.0
+},
+"Somerset": {
+"Local authority maintained schools": 15466.0,
+"Independent schools": 7095.0,
+"Special schools": 1647.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Academies": 51025.0,
+"Free Schools": 1665.0
+},
+"Staffordshire": {
+"Local authority maintained schools": 21326.0,
+"Independent schools": 3256.0,
+"Special schools": 1776.0,
+"Colleges": 0.0,
+"Universities": 0.0,
+"Academies": 98902.0,
+"Free Schools": 4223.0,
+"Other types": 0.0
+},
+"Stoke-on-Trent": {
+"Local authority maintained schools": 2249.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Academies": 38159.0,
+"Special schools": 456.0,
+"Independent schools": 244.0,
+"Free Schools": 330.0
+},
+"Suffolk": {
+"Local authority maintained schools": 18836.0,
+"Independent schools": 6898.0,
+"Special schools": 696.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Academies": 77335.0,
+"Free Schools": 4306.0,
+"Universities": 0.0
+},
+"Warwickshire": {
+"Local authority maintained schools": 24713.0,
+"Independent schools": 6721.0,
+"Special schools": 762.0,
+"Colleges": 0.0,
+"Academies": 59603.0,
+"Free Schools": 5339.0
+},
+"West Sussex": {
+"Local authority maintained schools": 53591.0,
+"Independent schools": 10612.0,
+"Special schools": 3271.0,
+"Colleges": 0.0,
+"Other types": 0.0,
+"Universities": 0.0,
+"Academies": 57122.0,
+"Free Schools": 3655.0
+},
+"Swindon": {
+"Local authority maintained schools": 2287.0,
+"Independent schools": 60.0,
+"Special schools": 407.0,
+"Colleges": 0.0,
+"Academies": 30115.0,
+"Free Schools": 3221.0,
+"Other types": 0.0
+},
+"Wiltshire": {
+"Local authority maintained schools": 16985.0,
+"Independent schools": 5029.0,
+"Special schools": 1147.0,
+"Other types": 0.0,
+"Colleges": 0.0,
+"Academies": 49913.0,
+"Free Schools": 1309.0
+},
+"Does not apply": {
+"Other types": 260.0,
+"Online provider": 343.0
+},
+"BFPO Overseas Establishments": {
+"Other types": 0.0
+},
+"Gibraltar Overseas Establishments": {
+"Other types": 0.0
+},
+"Guernsey Offshore Establishments": {
+"Other types": 0.0
+},
+"Isle of Man Offshore Establishments": {
+"Other types": 0.0
+},
+"Jersey Offshore Establishments": {
+"Other types": 0.0
+},
+"Scotland Offshore Establishments": {
+"Other types": 0.0
+},
+"Fieldwork Overseas Establishments": {
+"Other types": 0.0
+},
+"Vale of Glamorgan": {
+"Other types": 0.0,
+"Welsh schools": 0.0
+},
+"Isles of Scilly": {
+"Academies": 243.0
+},
+"Carmarthenshire": {
+"Welsh schools": 0.0
+},
+"Cardiff": {
+"Welsh schools": 0.0
+},
+"Isle of Anglesey": {
+"Welsh schools": 0.0
+},
+"Gwynedd": {
+"Welsh schools": 0.0
+},
+"Conwy": {
+"Welsh schools": 0.0
+},
+"Denbighshire": {
+"Welsh schools": 0.0
+},
+"Flintshire": {
+"Welsh schools": 0.0
+},
+"Wrexham": {
+"Welsh schools": 0.0
+},
+"Powys": {
+"Welsh schools": 0.0
+},
+"Ceredigion": {
+"Welsh schools": 0.0
+},
+"Pembrokeshire": {
+"Welsh schools": 0.0
+},
+"Swansea": {
+"Welsh schools": 0.0
+},
+"Neath Port Talbot": {
+"Welsh schools": 0.0
+},
+"Bridgend": {
+"Welsh schools": 0.0
+},
+"Rhondda Cynon Taf": {
+"Welsh schools": 0.0
+},
+"Merthyr Tydfil": {
+"Welsh schools": 0.0
+},
+"Caerphilly": {
+"Welsh schools": 0.0
+},
+"Blaenau Gwent": {
+"Welsh schools": 0.0
+},
+"Torfaen": {
+"Welsh schools": 0.0
+},
+"Monmouthshire": {
+"Welsh schools": 0.0
+},
+"Newport": {
+"Welsh schools": 0.0
+}
+}
+}

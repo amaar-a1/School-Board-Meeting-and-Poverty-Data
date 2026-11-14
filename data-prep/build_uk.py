@@ -5,6 +5,8 @@ boroughs). Scotland: 32 councils. Wales: 22 councils. Northern Ireland: one Educ
 - Child poverty: DWP, Children in Low Income Families (relative low income before housing
   costs, children under 16), financial year ending 2025. England's 21 two-tier counties add up
   their districts (ONS lookup); Northern Ireland adds up its 11 districts.
+- Public-school share (England only): state-funded pupils against independent schools' pupils in the same local
+  authority (Get Information about Schools, full extract, November 2026).
 - Enrollment: England, Get Information about Schools (open state-funded schools); Scotland,
   pupil census 2025 (Table 5.2); Wales, schools' census January 2025 (Table 5); Northern
   Ireland, school census October 2025 (primary 164,713 + post-primary 156,766 + special 7,729).
@@ -59,6 +61,10 @@ def main():
     pov.update({k: tuple(v) for k, v in agg.items()})
     geo = json.load(open(os.path.join(IN, "ons_ctyua_dec2024_buc.geojson")))
     eng = {norm(r["LA (name)"]): float(r["NumberOfPupils"]) for r in csv.DictReader(open(os.path.join(IN, "england_gias_pupils_by_la_20261104.csv")))}
+    # England's independent schools' pupils by local authority (Get Information about Schools, full extract), for the
+    # share of pupils in public (state-funded) schools; Scotland, Wales and Northern Ireland have no figure here.
+    gp = os.path.join(IN, "england_gias_pupils_by_la_group_20261113.json")
+    indep = {norm(k): v.get("Independent schools", 0) for k, v in json.load(open(gp))["by_la"].items()} if os.path.exists(gp) else {}
     sco = {norm(r["Local Authority"]): float(r["Pupils 2025"]) for r in csv.DictReader(open(os.path.join(IN, "scotland_pupil_census_2025_table5_2.csv")))}
     wr = list(csv.reader(open(os.path.join(IN, "wales_census_2025_table5.csv"), encoding="utf-8")))
     wh = next(i for i, r in enumerate(wr) if r and r[0] == "Local authority")
@@ -86,7 +92,10 @@ def main():
                     "Children Under 16": round(k) if k else "", "Children Under 16 in Low Income": round(n) if n else "",
                     "Percentage of Children Under 16 in Low Income": f"{100 * n / k:.2f}%" if k else "",
                     "Poverty by year": "; ".join(f"{y}:{v}" for y, v in sorted(hist.get(rid, {}).items())),
-                    "Enrollment": round(enr) if enr else "", "Enrollment year": ey if enr else "", "District ID": "UK-" + rid})
+                    "Enrollment": round(enr) if enr else "", "Enrollment year": ey if enr else "",
+                    "Public school enrollment": round(enr) if enr and nat == "England" and norm(name) in indep else "",
+                    "Private school enrollment (within its borders)": round(indep[norm(name)]) if enr and nat == "England" and norm(name) in indep else "",
+                    "District ID": "UK-" + rid})
     # Meetings: council committee meetings on YouTube (data-prep/uk_youtube.py), with hand-checked fixes
     yt = {r["District ID"]: r for r in csv.DictReader(open(os.path.join(IN, "uk_youtube.csv"), encoding="utf-8"))} if os.path.exists(os.path.join(IN, "uk_youtube.csv")) else {}
     bad = {r["District"] for r in csv.DictReader(open(os.path.join(IN, "uk_channels.csv"), encoding="utf-8"))} if os.path.exists(os.path.join(IN, "uk_channels.csv")) else set()

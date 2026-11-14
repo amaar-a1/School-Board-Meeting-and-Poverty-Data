@@ -494,6 +494,12 @@ def colombia():
     ws = openpyxl.load_workbook(os.path.join(IN, "colombia", "ipm_municipal_2018.xlsx"), read_only=True)["2_IPM Mpio y Dpt"]
     ipm = {str(r[0]): r for r in ws.iter_rows(values_only=True) if r and r[0] and len(str(r[0])) == 5 and str(r[0]).isdigit()}
     men = {r["c_digo_municipio"].zfill(5): r for r in json.load(open(os.path.join(IN, "colombia", "men_estadisticas_municipio_2024.json"), encoding="utf-8"))}
+    # Public share: official (sector 1001) against non-official (1002) pupils in each municipality's schools, 2025 (MEN,
+    # establecimientos educativos, datos.gov.co cfw5-qzt5), applied to the enrollment figure.
+    sec = {}
+    sp = os.path.join(IN, "colombia", "men_matricula_sector_2025.json")
+    for r in (json.load(open(sp, encoding="utf-8"))["rows"] if os.path.exists(sp) else []):
+        x = sec.setdefault(r["cod_dane_municipio"].zfill(5), [0, 0]); x[0 if r["cod_sector"] == "1001" else 1] += float(r.get("m") or 0)
     dept_name = {r["c_digo_departamento"].zfill(2): r["departamento"] for r in men.values()}
     adm1 = json.load(open(os.path.join(IN, "colombia", "gb_COL_ADM1.geojson"), encoding="utf-8"))["features"]
     dcode = {}
@@ -529,7 +535,8 @@ def colombia():
         did = f"CO-{code}"
         rows.append({"District": nm, "Region": dept_name.get(code[:2], ""), "Poverty rate (all ages)": f"{float(r[2]):.2f}%" if isinstance(r[2], (int, float)) else "",
                      "Poverty note": "Multidimensional poverty, all ages, 2018 census (DANE); no child or income rate is published by municipality",
-                     "Enrollment": round(pop * rate / 100) if pop and rate else "", "Enrollment year": "2024 (Ministry of Education: pupils enrolled in transición to media, from its gross coverage rate × population 5–16)" if pop and rate else "",
+                     "Enrollment": round(pop * rate / 100) if pop and rate else "",
+                     "Public school enrollment": round(pop * rate / 100 * sec[code][0] / sum(sec[code])) if pop and rate and code in sec and sum(sec[code]) else "", "Enrollment year": "2024 (Ministry of Education: pupils enrolled in transición to media, from its gross coverage rate × population 5–16)" if pop and rate else "",
                      "School system": m.get("etc", ""), "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "",
                      "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": nm}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
