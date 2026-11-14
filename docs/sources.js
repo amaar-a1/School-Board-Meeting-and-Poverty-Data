@@ -170,6 +170,7 @@ window.SOURCES = [
     only: "New Zealand",
     group: "New Zealand: child poverty areas",
     items: [
+      { title: "Meetings (stand-in): recorded meetings on the YouTube channels of each area's regional or unitary council: Northland, Auckland, Waikato, Bay of Plenty, Gisborne, Hawke's Bay, Taranaki, Horizons, Greater Wellington, Tasman, Nelson, Marlborough, West Coast, Environment Canterbury, Otago and Environment Southland (listed November 2026)", url: "https://www.youtube.com/channel/UCXye5ro6lyuabv0MhUU8Guw" },
       { title: "Child low income: Stats NZ, Child poverty statistics, year ended June 2025, Table 4.02 (below 60% of the median income before housing costs, by regional council area)", url: "https://www.stats.govt.nz/information-releases/child-poverty-statistics-year-ended-june-2025/" },
       { title: "Enrollment: students enrolled in primary and secondary schools by region, July 2025 (Ministry of Education roll returns), via Figure.NZ", url: "https://figure.nz/chart/POTlO8r1L2X6mKJc" },
       { title: "Borders: Natural Earth 1:10m admin-1 states and provinces (regions merged where Stats NZ combines them)", url: "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/" }
