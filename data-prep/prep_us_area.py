@@ -1,4 +1,5 @@
-"""Land area (km²) of each US school district (and territory), from the site's own map borders, for population density.
+"""Land area (km²) of each US school district (and territory), for population density: the Census Bureau's 2024 Gazetteer
+files (inputs/us_gazetteer_land_km2.json), else the site's own map borders (territories, merged districts).
 
 The borders are the Census Bureau's 2024 cartographic boundary files (clipped to the shoreline, simplified), in
 docs/data/map/unsd.json, elsd.json, scsd.json (TopoJSON) and territories.json. Area is spherical (WGS84 mean radius).
@@ -40,5 +41,9 @@ else:
         g = ft["geometry"]; polys = [g["coordinates"]] if g["type"] == "Polygon" else g["coordinates"]
         gid = ft["properties"].get("GEOID") or ft["properties"].get("id")
         out[gid] = round(out.get(gid, 0) + sum(poly_area(p) for p in polys), 2)
+# The Census Bureau's own land areas (2024 Gazetteer files: ALAND) replace the map's wherever it has them: the simplified
+# borders lose tiny districts (Clementon, NJ, 4.9 km², comes out as 0) and include some water.
+gz = json.load(open(os.path.join(HERE, "inputs", "us_gazetteer_land_km2.json")))["land_km2"]
+out.update({k: v for k, v in gz.items() if v})
 json.dump(dict(sorted(out.items())), open(os.path.join(HERE, "inputs", "us_district_land_km2.json"), "w"), separators=(",", ":"))
 print(len(out), "areas; e.g. LA Unified", out.get("0622710"), "km²")

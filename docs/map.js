@@ -166,7 +166,10 @@
     const d = toNumber(row["People per km² (estimated)"]);
     if (!isNaN(d)) return d;
     const pop = toNumber(row.Population);
+    if (pop === 0) return 0;   // nobody lives there (a census count of 0)
     if (!(pop > 0)) return NaN;
+    const land = toNumber(row["Land area (km²)"]);
+    if (land > 0) return pop / land;
     if (!areaById) {
       areaById = {};
       Object.values(layers).forEach((l) => l.eachLayer((f) => { if (f.feature) { const k = gid(f.feature); areaById[k] = (areaById[k] || 0) + geomArea(f.feature.geometry); } }));
@@ -222,6 +225,7 @@
       "Percentage of Children Ages 5-17 in Poverty": kids ? (100 * poor) / kids : "",
       "Available Board Meetings": sum("Available Board Meetings"),
       Enrollment: rows.every((r) => r.Enrollment) ? sum("Enrollment") : "",
+      Population: rows.every((r) => r.Population !== undefined && r.Population !== "") ? sum("Population") : "",
       Locale: rows[0].Locale
     };
   }

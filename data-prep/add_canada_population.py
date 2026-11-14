@@ -28,8 +28,8 @@ n = 0
 for r in rows:
     x = d["boards"].get(r["District ID"]) or d["fn"].get(r["District ID"]) or {}
     pop, land = x.get("pop"), x.get("land_km2")
-    r["Population"] = round(pop) if pop else ""
-    r["People per km² (estimated)"] = (f"{pop / land:.1f}" if pop / land < 10 else round(pop / land)) if pop and land else ""
+    r["Population"] = round(pop) if pop is not None else ""   # 0: no residents at the 2021 Census; None: not counted
+    r["People per km² (estimated)"] = (f"{pop / land:.1f}" if pop / land < 10 else round(pop / land)) if pop and land else 0 if pop == 0 else ""
     r["Children Ages 5-17 (2021 Census)"] = round(x["kids_5_17"]) if x.get("kids_5_17") else ""
     n += bool(r["Population"])
 w = csv.DictWriter(open(CSV, "w", newline="", encoding="utf-8"), fieldnames=cols); w.writeheader(); w.writerows(rows)

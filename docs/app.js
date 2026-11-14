@@ -629,7 +629,8 @@
     const d = toNumber(r["People per km² (estimated)"]);
     if (!isNaN(d)) return d;
     const pop = toNumber(r.Population), land = toNumber(r["Land area (km²)"]);
-    return pop >= 0 && land > 0 ? pop / land : NaN;
+    if (pop === 0) return 0;   // nobody lives there
+    return pop > 0 && land > 0 ? pop / land : NaN;
   };
   const publicOf = (r) => {
     const pub = toNumber(r["Public school enrollment"]);
