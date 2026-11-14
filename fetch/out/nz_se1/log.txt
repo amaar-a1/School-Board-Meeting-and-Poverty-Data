@@ -1,0 +1,75 @@
+SE v3 kpi N02302 | Elever i åk 9 med lägst betyget E i bild, fristående skolor, andel (%)
+SE v3 kpi N02305 | Elever i åk 9 med lägst betyget E i biologi, fristående skolor, andel (%)
+SE v3 kpi N02308 | Elever i åk 9 med lägst betyget E i fysik, fristående skolor, andel (%)
+SE v3 kpi N02311 | Elever i åk 9 med lägst betyget E i geografi, fristående skolor, andel (%)
+SE v3 kpi N02314 | Elever i åk 9 med lägst betyget E i hem- och konsumentkunskap, fristående skolor, andel (%)
+SE v3 kpi N02317 | Elever i åk 9 med lägst betyget E i historia, fristående skolor, andel (%)
+SE v3 kpi N02320 | Elever i åk 9 med lägst betyget E i kemi, fristående skolor, andel (%)
+SE v3 kpi N02323 | Elever i åk 9 med lägst betyget E i moderna språk som språkval, fristående skolor, andel (%)
+SE v3 kpi N02326 | Elever i åk 9 med lägst betyget E i modersmål, fristående skolor, andel (%)
+SE v3 kpi N02329 | Elever i åk 9 med lägst betyget E i musik, fristående skolor, andel (%)
+SE v3 kpi N02332 | Elever i åk 9 med lägst betyget E i religionskunskap, fristående skolor, andel (%)
+SE v3 kpi N02335 | Elever i åk 9 med lägst betyget E i samhällskunskap, fristående skolor, andel (%)
+SE v3 kpi N02338 | Elever i åk 9 med lägst betyget E i slöjd, fristående skolor, andel (%)
+SE v3 kpi N02341 | Elever i åk 9 med lägst betyget E i teknik, fristående skolor, andel (%)
+SE v3 kpi N02344 | Elever i åk. 9. betygspoäng i bild, fristående skolor, genomsnitt
+SE v3 kpi N02347 | Elever i åk. 9. betygspoäng i biologi, fristående skolor, genomsnitt
+SE v3 kpi N02350 | Elever i åk. 9. betygspoäng i engelska, fristående skolor, genomsnitt
+SE v3 kpi N02353 | Elever i åk. 9. betygspoäng i fysik, fristående skolor, genomsnitt
+SE v3 kpi N02356 | Elever i åk. 9. betygspoäng i geograf, fristående skolor, genomsnitt
+SE v3 kpi N02359 | Elever i åk. 9. betygspoäng i hem- och konsumentkunskap, fristående skolor, genomsnitt
+SE v3 kpi N02362 | Elever i åk. 9. betygspoäng i historia, fristående skolor, genomsnitt
+SE v3 kpi N02365 | Elever i åk. 9. betygspoäng i idrott och hälsa, fristående skolor, genomsnitt
+SE v3 kpi N02368 | Elever i åk. 9. betygspoäng i kemi, fristående skolor, genomsnitt
+SE v3 kpi N02371 | Elever i åk. 9. betygspoäng i moderna språk som språkval, fristående skolor, genomsnitt
+SE v3 kpi N02374 | Elever i åk. 9. betygspoäng i modersmål, fristående skolor, genomsnitt
+SE v3 kpi N02377 | Elever i åk. 9. betygspoäng i musik, fristående skolor, genomsnitt
+SE v3 kpi N02380 | Elever i åk. 9. betygspoäng i religionskunskap, fristående skolor, genomsnitt
+SE v3 kpi N02383 | Elever i åk. 9. betygspoäng i samhällskunskap, fristående skolor, genomsnitt
+SE v3 kpi N02386 | Elever i åk. 9. betygspoäng i slöjd, fristående skolor, genomsnitt
+SE v3 kpi N02389 | Elever i åk. 9. betygspoäng i svenska, fristående skolor, genomsnitt
+SE v3 kpi N11806 | Elever i förskoleklass i fristående grundskola, lägeskommun, antal
+SE v3 kpi N15033 | Elever/lärare (heltidstjänst) i grundskola åk 1-9, lägeskommun, antal
+SE v3 kpi N15034 | Elever/lärare (heltidstjänst) i kommunal grundskola åk 1-9, antal
+SE v3 kpi N15035 | Elever/lärare (heltidstjänst), fristående grundskola åk 1-9, antal
+SE v3 kpi N15095 | Elever med åtgärdsprogram, kommunal grundskola, andel (%)
+SE v3 kpi N15096 | Elever i åk 3 med åtgärdsprogram, kommunal grundskola, andel (%)
+SE v3 kpi N15097 | Elever i åk 6 med åtgärdsprogram, kommunal grundskola, andel (%)
+SE v3 kpi N15098 | Elever i åk 9 med åtgärdsprogram, kommunal grundskola, andel (%)
+SE v3 kpi N15140 | Pedagogisk personal grundskola: Tycker du att du lyckas förklara för eleverna vad de behöver kunna i de ämnen du undervisar i? Andel som har svarat "Helt och hållet" eller "Till stor del" (%)
+SE v3 kpi N15300 | Pedagogisk personal grundskola: Hur tycker du att eleverna bemöter varandra i skolan? Andel som har svarat "Mycket bra" eller "Ganska bra" (%)
+SE v3 kpi N15301 | Pedagogisk personal grundskola: Hur tycker du att eleverna bemöter er vuxna i skolan? Andel som har svarat "Mycket bra" eller "Ganska bra" (%)
+SE v3 kpi N15303 | Pedagogisk personal grundskola: Upplever du att eleverna kan vara sig själva i skolan? Andel som har svarat "Helt och hållet" eller "Till stor del" (%)
+SE v3 kpi N15304 | Pedagogisk personal grundskola: Upplever du att eleverna känner sig trygga i skolan? Andel som har svarat "Helt och hållet" eller "Till stor del" (%)
+SE v3 kpi N15306 | Pedagogisk personal grundskola: Hur uppfattar du möjligheterna för eleverna att få stöd från elevhälsan? Andel som har svarat "Mycket bra" eller "Ganska bra" (%)
+SE v3 kpi N15310 | Pedagogisk personal grundskola: Tycker du att extra anpassningar ges skyndsamt till de elever som riskerar att inte nå kunskapskraven? Andel som har svarat "Helt och hållet" eller "Till stor del" (%)
+SE v3 kpi N15315 | Pedagogisk personal grundskola: Hur ofta upplever du att alla elever får den hjälp de behöver på dina lektioner? Andel som har svarat "Alltid" eller "Ofta" (%)
+SE v3 kpi N15316 | Pedagogisk personal grundskola: Hur ofta lyckas du väcka elevernas intresse för skolarbetet?  Andel som har svarat "Alltid" eller "Ofta" (%)
+SE v3 kpi N15318 | Pedagogisk personal grundskola: Tycker du att du lyckats variera undervisningen så att eleverna får arbeta på olika sätt? Andel som har svarat "Helt och hållet" eller "Till stor del" (%)
+SE v3 kpi N15319 | Pedagogisk personal grundskola: Tycker du att ni lärare lyckats få eleverna att tro på sig själva i skolarbetet?  Andel som har svarat "Helt och hållet" eller "Till stor del" (%)
+SE v3 kpi N15320 | Pedagogisk personal grundskola: Hur mycket får dina elever, utifrån ålder och mognad, vara med och påverka hur ni ska arbeta på lektionerna?  Andel som har svarat "Väldigt mycket" eller "Ganska mycket" (%)
+SE v3 kpi N15321 | Pedagogisk personal grundskola: Hur mycket upplever du att de vuxna i skolan lyssnar på förslag från eleverna till exempel från klassråd och elevråd? Andel som har svarat "Väldigt mycket" eller "Ganska mycket" (%)
+SE v3 kpi N15323 | Pedagogisk personal grundskola: Tycker du att du lyckats ge tillräckliga utmaningar till de elever som kommit långt i sin kunskapsutveckling? Andel som har svarat "Helt och hållet" eller "Till stor del" (%)
+SE v3 kpi N15324 | Pedagogisk personal grundskola: Tycker du att dina elever får veta hur det går för dem i dina ämnen? Andel som har svarat "Helt och hållet" eller "Till stor del" (%)
+SE v3 kpi N15325 | Pedagogisk personal grundskola: Hur mycket pratar du med dina elever om att allt man hör och läser inte behöver vara sant (källkritik)? Andel som har svarat "Väldigt mycket" eller "Ganska mycket" (%)
+SE v3 kpi N15326 | Pedagogisk personal grundskola: Hur mycket får dina elever öva på att diskutera frågor där man kan ha olika uppfattningar? Andel som har svarat "Väldigt mycket" eller "Ganska mycket" (%)
+SE v3 kpi N15327 | Pedagogisk personal grundskola: Tycker du att ni lärare ger alla elever samma möjligheter oavsett om de är flickor, pojkar eller har annan könsidentitet? Andel som har svarat "Helt och hållet" eller "Till stor del" (%)
+SE v3 kpi N15330 | Pedagogisk personal grundskola: I vilken utsträckning följs elevernas upplevelse av trygghet upp? Andel som har svarat "I mycket stor utsträckning" eller "I ganska stor utsträckning" (%)
+SE v3 kpi N15331 | Pedagogisk personal grundskola: I vilken utsträckning följs elevernas upplevelse av studiero upp? Andel som har svarat "I mycket stor utsträckning" eller "I ganska stor utsträckning" (%)
+SE v3 kpi N15481 | Elever i åk 6 med lägst betyget E i engelska, fristående grundskola, andel (%)
+SE v3 kpi N15484 | Elever i åk 6 med lägst betyget E i matematik, fristående grundskola, andel (%)
+NZ-NTL Northland Regional Council: channels {'UCNkfD16wB1X6MnFFWpfNQTQ': 'Northland Regional Council'}
+   266 videos; sample ['Coastal processes with Jim Dahm, Coastal Scientist', 'Pakanae 5A Māori Trust - Climate Resilient Communities Fund', 'Investment Committee - 1 September 2026', 'Northland College Farm and the Tāngata Whenua Community Catchment Fund June 2026', 'Bringing the kaupapa to life', 'Audit and Risk Committee - 18 August 2026', 'Extraordinary Investment Committee - 17 August 2026', 'Patuharakeke native fish transfer and koi carp removal project']
+NZ-AUK Auckland Council: channels {'UCXye5ro6lyuabv0MhUU8Guw': 'Auckland Council Live', 'UCUKg41qkUTUQXGDzklgpmlQ': 'University of Auckland | Waipapa Taumata Rau'}
+   7337 videos; sample ['10.11.26 - Policy, Planning and Development Committee - Items 8.5, 8.6, 8.7, 8.8', '10.11.26 - Policy, Planning and Development Committee - Item 8.4', '10.11.26 - Policy, Planning and Development Committee - Item 8.3', '10.11.26 - Policy, Planning and Development Committee - Item 8.4 - Part 2', '10.11.26 - Policy, Planning and Development Committee - Item 8.4 - Part 1', '10.11.26 - Policy, Planning and Development Committee - Item 8.2', '10.11.26 - Policy, Planning and Development Committee - Item 8.1', '10.11.26 - Policy, Planning and Development Committee - Items 1 - 7']
+NZ-WKO Waikato Regional Council: channels {'UCF7n3kfXaAg3AijLaPuTbyQ': 'Waikato Regional Council'}
+   1182 videos; sample ['‘Operation Neptune’ training takes place on Lake Karāpiro ', '2026-08 -10   Workshop Recording #3   10 August 2026', '2026-08-10   Workshop Recording #2   10 August 2026', '2026-11-02   RTC Public Transport Subcommittee Hearings Recording #6   2 November 2026', '2026-11-02   RTC Public Transport Subcommittee Hearings Recording #5   2 November 2026', '2026-11-02   RTC Public Transport Subcommittee Hearings Recording #4   2 November 2026', '2026-11-02   RTC Public Transport Subcommittee Hearings Recording #3   2 November 2026', '2026-11-02 - RTC Public Transport Subcommittee Hearings Recording #2   2 November 2026']
+NZ-BOP Bay of Plenty Regional Council: channels {'UCTncsYlnlIZNdTyFFg2whzg': 'Bay of Plenty Regional Council'}
+   1060 videos; sample ['Rotorua Te Arawa Lakes Strategy Group Hui - 27 October 2026', 'Tauranga Moana Advisory Group Meeting – 9 October 2026', 'Regional Transport Committee Workshop - Friday 2nd October', 'Emergency Management Committee - 25 September 2026', 'Te Maru o Kaituna River Authority – 18 September 2026', 'Bay of Plenty Mayoral Forum - 10 September 2026', 'Lake Rotorua Farming Community', 'Eastern Bay By-Election 2026']
+NZ-GIS-HKB Gisborne District Council: channels {'UCiVwALxZU5sv7_m_Hf0LECw': 'Gisborne District Council'}
+   728 videos; sample ['Taruheru Pathway Video', 'Wilding pine control at Waingake', 'Natural Heritage Fund - Turihaua Station', 'Council 25 June 2026', 'Waipaoa flood control update July 2026', 'City Centre Revitalisation - Progressive options for feedback', 'Te Ikaroa a Rauru', 'Submission Instructions for Urban Plan Change 6 pt4']
+NZ-GIS-HKB Hawke's Bay Regional Council: channels {'UCrfp430VimcK6ze4eBOP7qQ': "Hawke's Bay Regional Council - Webcasting"}
+   1334 videos; sample ['Regional Planning Committee   11 November 2026', 'Environment Committee - Wednesday 4 November 2026', "Meeting of the Hawke's Bay Regional - 28 October 2026", "Meeting of the Hawke's Bay Regional Council   30 September 2026", 'Emergency Management Committee - 21 September 2026', 'Regional Transport Committee - 4 September 2026', 'Regional Council Meeting - Wednesday 26 August 2026 Part 2', 'Regional Council Meeting   Wednesday 26 August 2026']
+NZ-TKI Taranaki Regional Council: channels {'UCzC_dIBWFmwzcKtoq15yrYg': 'Taranaki Regional Council'}
+   491 videos; sample ['View Hill Farms and Aaron Dravitski, highly commended for Environmental Leadership in Farming', 'Celine Filbee, winner of the Environmental Action in Biodiversity award', 'Tracy Stewart, winner of the Environmental Leadership in Farming award', 'Hoegh Hunting, highly commended for Environmental Action in Biodiversity', 'Timara Wallace, Te Kaahui o Rauru, Environmental Action in Water Quality Improvement winner', 'Ben and Marie Forsyth, highly commended for Environmental Action in Water Quality Improvement', 'Kaitake Ranges Conservation Trust, joint winner of the Environmental Action in the Community award', 'Willy Harvey, joint winner of the Environmental Action in the Community award']
+NZ-MWT Horizons Regional Council: channels {'UCiOz0mER00FtKIvF0hAbB0Q': 'Horizons Regional Council'}
