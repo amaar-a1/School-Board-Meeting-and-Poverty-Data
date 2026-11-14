@@ -1,0 +1,56 @@
+SE kpi N15831 | Elever i grundskola F-9, fristående skola i kommunen eller skola i annan kommun, hemkommun, andel (%)
+SE kpi N02302 | Elever i åk 9 med lägst betyget E i bild, fristående skolor, andel (%)
+SE kpi N02305 | Elever i åk 9 med lägst betyget E i biologi, fristående skolor, andel (%)
+SE kpi N02308 | Elever i åk 9 med lägst betyget E i fysik, fristående skolor, andel (%)
+SE kpi N02311 | Elever i åk 9 med lägst betyget E i geografi, fristående skolor, andel (%)
+SE kpi N02314 | Elever i åk 9 med lägst betyget E i hem- och konsumentkunskap, fristående skolor, andel (%)
+SE kpi N02317 | Elever i åk 9 med lägst betyget E i historia, fristående skolor, andel (%)
+SE kpi N02320 | Elever i åk 9 med lägst betyget E i kemi, fristående skolor, andel (%)
+SE kpi N02323 | Elever i åk 9 med lägst betyget E i moderna språk som språkval, fristående skolor, andel (%)
+SE kpi N02326 | Elever i åk 9 med lägst betyget E i modersmål, fristående skolor, andel (%)
+SE kpi N02329 | Elever i åk 9 med lägst betyget E i musik, fristående skolor, andel (%)
+SE kpi N02332 | Elever i åk 9 med lägst betyget E i religionskunskap, fristående skolor, andel (%)
+SE kpi N02335 | Elever i åk 9 med lägst betyget E i samhällskunskap, fristående skolor, andel (%)
+SE kpi N02338 | Elever i åk 9 med lägst betyget E i slöjd, fristående skolor, andel (%)
+SE kpi N02341 | Elever i åk 9 med lägst betyget E i teknik, fristående skolor, andel (%)
+SE kpi N02398 | Elever i åk 6 med lägst betyget E i bild, fristående skolor, andel (%)
+SE kpi N02401 | Elever i åk 6 med lägst betyget E i biologi, fristående skolor, andel (%)
+SE kpi N02404 | Elever i åk 6 med lägst betyget E i fysik, fristående skolor, andel (%)
+SE kpi N02407 | Elever i åk 6 med lägst betyget E i geografi, fristående skolor, andel (%)
+SE kpi N02410 | Elever i åk 6 med lägst betyget E i hem- och konsumentkunskap, fristående skolor, andel (%)
+SE kpi N02413 | Elever i åk 6 med lägst betyget E i historia, fristående skolor, andel (%)
+SE kpi N02416 | Elever i åk 6 med lägst betyget E i kemi, fristående skolor, andel (%)
+SE kpi N02419 | Elever i åk 6 med lägst betyget E i moderna språk som språkval, fristående skolor, andel (%)
+SE kpi N02422 | Elever i åk 6 med lägst betyget E i modersmål, fristående skolor, andel (%)
+SE kpi N02425 | Elever i åk 6 med lägst betyget E i musik, fristående skolor, andel (%)
+SE kpi N02428 | Elever i åk 6 med lägst betyget E i religionskunskap, fristående skolor, andel (%)
+SE kpi N02431 | Elever i åk 6 med lägst betyget E i samhällskunskap, fristående skolor, andel (%)
+SE kpi N02434 | Elever i åk 6 med lägst betyget E i slöjd, fristående skolor, andel (%)
+SE kpi N02437 | Elever i åk 6 med lägst betyget E i teknik, fristående skolor, andel (%)
+SE kpi N15420 | Elever i åk 9 som uppnått betygskriterierna i alla ämnen, fristående skolor,  andel (%)
+SE kpi N15429 | Elever i åk 9 som är behöriga till naturvetenskaps- och teknikprogrammen, fristående skolor,  andel (%)
+SE kpi N15430 | Elever i åk 9 som är behöriga till ekonomi-, humanistiska och samhällsvetenskapsprogrammen, fristående skolor,  andel (%)
+SE kpi N15431 | Elever i åk 9 som är behöriga till estetiska programmet, fristående skolor,  andel (%)
+SE kpi N15432 | Elever i åk 9 som är behöriga till yrkesprogram, fristående skolor,  andel (%)
+SE kpi N15451 | Elever i åk 3 som klarat alla delar av nationella proven för ämnesprovet i svenska och svenska som andraspråk, fristående skolor, andel (%)
+SE kpi N15453 | Elever i åk 3 som klarat alla delar av nationella proven för ämnesprovet i matematik, fristående skolor, andel (%)
+SE kpi N15481 | Elever i åk 6 med lägst betyget E i engelska, fristående grundskola, andel (%)
+SE kpi N15484 | Elever i åk 6 med lägst betyget E i matematik, fristående grundskola, andel (%)
+SE kpi N15487 | Elever i åk 6 med lägst betyget E i svenska, fristående grundskola, andel (%)
+SE kpi N15493 | Elever i åk 9 med lägst betyget E i engelska, fristående skolor, andel (%)
+SE kpi N15496 | Elever i åk 9 med lägst betyget E i matematik, fristående skolor, andel (%)
+NZ-NTL Northland Regional Council: channels {'UCNkfD16wB1X6MnFFWpfNQTQ': 'Northland Regional Council'}
+   266 videos; sample ['Coastal processes with Jim Dahm, Coastal Scientist', 'Pakanae 5A Māori Trust - Climate Resilient Communities Fund', 'Investment Committee - 1 September 2026', 'Northland College Farm and the Tāngata Whenua Community Catchment Fund June 2026', 'Bringing the kaupapa to life', 'Audit and Risk Committee - 18 August 2026', 'Extraordinary Investment Committee - 17 August 2026', 'Patuharakeke native fish transfer and koi carp removal project']
+NZ-AUK Auckland Council: channels {'UCXye5ro6lyuabv0MhUU8Guw': 'Auckland Council Live'}
+   2067 videos; sample ['10.11.26 - Policy, Planning and Development Committee - Items 8.5, 8.6, 8.7, 8.8', '10.11.26 - Policy, Planning and Development Committee - Item 8.4', '10.11.26 - Policy, Planning and Development Committee - Item 8.3', '10.11.26 - Policy, Planning and Development Committee - Item 8.4 - Part 2', '10.11.26 - Policy, Planning and Development Committee - Item 8.4 - Part 1', '10.11.26 - Policy, Planning and Development Committee - Item 8.2', '10.11.26 - Policy, Planning and Development Committee - Item 8.1', '10.11.26 - Policy, Planning and Development Committee - Items 1 - 7']
+NZ-WKO Waikato Regional Council: channels {'UCF7n3kfXaAg3AijLaPuTbyQ': 'Waikato Regional Council'}
+   1182 videos; sample ['‘Operation Neptune’ training takes place on Lake Karāpiro ', '2026-08 -10   Workshop Recording #3   10 August 2026', '2026-08-10   Workshop Recording #2   10 August 2026', '2026-11-02   RTC Public Transport Subcommittee Hearings Recording #6   2 November 2026', '2026-11-02   RTC Public Transport Subcommittee Hearings Recording #5   2 November 2026', '2026-11-02   RTC Public Transport Subcommittee Hearings Recording #4   2 November 2026', '2026-11-02   RTC Public Transport Subcommittee Hearings Recording #3   2 November 2026', '2026-11-02 - RTC Public Transport Subcommittee Hearings Recording #2   2 November 2026']
+NZ-BOP Bay of Plenty Regional Council: channels {}
+   0 videos; sample []
+NZ-GIS-HKB Gisborne District Council: channels {'UCiVwALxZU5sv7_m_Hf0LECw': 'Gisborne District Council'}
+   728 videos; sample ['Taruheru Pathway Video', 'Wilding pine control at Waingake', 'Natural Heritage Fund - Turihaua Station', 'Council 25 June 2026', 'Waipaoa flood control update July 2026', 'City Centre Revitalisation - Progressive options for feedback', 'Te Ikaroa a Rauru', 'Submission Instructions for Urban Plan Change 6 pt4']
+NZ-GIS-HKB Hawke's Bay Regional Council: channels {'UCrfp430VimcK6ze4eBOP7qQ': "Hawke's Bay Regional Council - Webcasting"}
+   1334 videos; sample ['Regional Planning Committee   11 November 2026', 'Environment Committee - Wednesday 4 November 2026', "Meeting of the Hawke's Bay Regional - 28 October 2026", "Meeting of the Hawke's Bay Regional Council   30 September 2026", 'Emergency Management Committee - 21 September 2026', 'Regional Transport Committee - 4 September 2026', 'Regional Council Meeting - Wednesday 26 August 2026 Part 2', 'Regional Council Meeting   Wednesday 26 August 2026']
+NZ-TKI Taranaki Regional Council: channels {'UCzC_dIBWFmwzcKtoq15yrYg': 'Taranaki Regional Council'}
+   491 videos; sample ['View Hill Farms and Aaron Dravitski, highly commended for Environmental Leadership in Farming', 'Celine Filbee, winner of the Environmental Action in Biodiversity award', 'Tracy Stewart, winner of the Environmental Leadership in Farming award', 'Hoegh Hunting, highly commended for Environmental Action in Biodiversity', 'Timara Wallace, Te Kaahui o Rauru, Environmental Action in Water Quality Improvement winner', 'Ben and Marie Forsyth, highly commended for Environmental Action in Water Quality Improvement', 'Kaitake Ranges Conservation Trust, joint winner of the Environmental Action in the Community award', 'Willy Harvey, joint winner of the Environmental Action in the Community award']
+NZ-MWT Horizons Regional Council: channels {'UCiOz0mER00FtKIvF0hAbB0Q': 'Horizons Regional Council'}
