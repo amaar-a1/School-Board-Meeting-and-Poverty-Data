@@ -41,7 +41,10 @@ NAMES = {"Antigua and Barb.": "Antigua and Barbuda", "St. Kitts and Nevis": "Sai
 # Falkland Islands: no school-attendance table in its 2021 Census, so an estimate: residents aged 5-15 (school is
 # compulsory from 5 to 16, and sixth-form students study in the UK), Falkland Islands Government, 2021 Census
 # Tables, table 2b (population by single years of age): 398.
-ENR_MANUAL = {"NFK": (265, "2021 Census (residents attending primary and secondary school; ABS)"),
+# Niue: Niue High School, 214 students in 2019, plus Niue Primary School, years 1-6 in term 4 of 2005 (178; early
+# childhood education left out), Niue Statistics Office: niuestatistics.nu/social/education/.
+ENR_MANUAL = {"NIU": (392, "2019 high school (214) and 2005 primary, years 1–6 (178): Niue Statistics Office"),
+              "NFK": (265, "2021 Census (residents attending primary and secondary school; ABS)"),
               "FLK": (398, "2021 Census (estimated: residents aged 5–15, the compulsory school ages; Falkland Islands Government)")}
 MANUAL = {"NFK": (2.8, "Unemployment rate, a stand-in for poverty (Australian Bureau of Statistics, 2021 Census: 33 of 1,187 in the labour force)"),
           "MAF": (27.0, "Unemployment rate, a stand-in for poverty (census definition, 2023; IEDOM annual report on Saint-Martin, 2025 edition)"),
@@ -333,7 +336,15 @@ def main():
         else:
             r["Meetings note"] = ZERO_NOTES.get(iso, "No school board meets in public, and no recorded sittings of the legislature were found on YouTube "
                                                      "(the search found only news, party or other countries' channels); it may stream on its own website")
+    # Public-school pupils where the source shows only government schools (the share is then 100%): Christmas Island and
+    # Cocos (Keeling) Islands (one government school each), Svalbard (Longyearbyen's municipal school), the Falklands (two
+    # government schools), Niue (two government schools); Norfolk Island: 262 of 265 at government schools (2021 Census).
+    # Gibraltar's figure covers its government schools only, so it gets none.
+    for r in out:
+        iso = r["District ID"][5:]
+        r["Public school enrollment"] = 262 if iso == "NFK" else r["Enrollment"] if iso in ("CXR", "CCK", "SJM", "FLK", "NIU") and r["Enrollment"] else ""
     cols = list(out[0])
+    cols.insert(cols.index("Enrollment year") + 1, cols.pop(cols.index("Public school enrollment")))
     with open(os.path.join(DOCS, "islands.csv"), "w", newline="", encoding="utf-8") as fo:
         w = csv.DictWriter(fo, fieldnames=cols); w.writeheader(); w.writerows(out)
     shapes = json.load(open(os.path.join(IN, "world", "ne_10m_islands.geojson"), encoding="utf-8"))
