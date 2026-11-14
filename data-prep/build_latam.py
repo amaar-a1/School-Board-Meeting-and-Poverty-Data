@@ -521,13 +521,15 @@ def colombia():
             same = [g for (d, k), g in keyed.items() if k == n and id(g) not in used]
             f = same[0] if len(same) == 1 else None
         if f and not exact[code]: used.add(id(f))
-        pop = float(m.get("poblaci_n_5_16") or 0); rate = float(m.get("tasa_matriculaci_n_5_16") or 0)
+        pop = float(m.get("poblaci_n_5_16") or 0); rate = float(m.get("cobertura_bruta") or 0)
+        # MEN's gross coverage is the municipality's enrollment (transición to media, every age) over its population aged
+        # 5-16, so the two together give back the ministry's own enrollment count (to within rounding of the rate).
         area = area_km2(f["geometry"]) if f else 0
         dens = pop / 0.19 / area if area and pop else 0
         did = f"CO-{code}"
         rows.append({"District": nm, "Region": dept_name.get(code[:2], ""), "Poverty rate (all ages)": f"{float(r[2]):.2f}%" if isinstance(r[2], (int, float)) else "",
                      "Poverty note": "Multidimensional poverty, all ages, 2018 census (DANE); no child or income rate is published by municipality",
-                     "Enrollment": round(pop * rate / 100) if pop and rate else "", "Enrollment year": "2024 (estimated: children 5–16 × net enrollment rate)" if pop and rate else "",
+                     "Enrollment": round(pop * rate / 100) if pop and rate else "", "Enrollment year": "2024 (Ministry of Education: pupils enrolled in transición to media, from its gross coverage rate × population 5–16)" if pop and rate else "",
                      "School system": m.get("etc", ""), "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "",
                      "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": nm}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
@@ -595,7 +597,7 @@ def mexico():
                      "Poverty rate (all ages)": pct(r[10]), "Extreme poverty (all ages)": pct(r[19]),
                      "Poverty by year": "; ".join(f"{y}:{float(v):.1f}" for y, v in zip((2010, 2015, 2020), r[8:11]) if isinstance(v, (int, float))),
                      "Poverty note": "Multidimensional poverty (income below the poverty line and at least one social deprivation), all ages, 2020 (CONEVAL); no child rate is published by municipality",
-                     "Enrollment": enr, "Enrollment year": "2020 (estimated: census count of children 6–17 attending school)" if enr != "" else "",
+                     "Enrollment": enr, "Enrollment year": "2020 Census (residents aged 6–17 attending school; INEGI)" if enr != "" else "",
                      "Children 6–17": kids, "School system": "State education authority",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": str(r[4])}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
@@ -662,7 +664,7 @@ def brazil():
                      "Poverty note": "Residents of households with income up to half the minimum wage per person (R$606 a month in 2022), all ages, 2022 census; extreme: up to a quarter; both include households with no income",
                      "Bolsa Família families per 100 households": f"{100 * fam[code] / hh:.2f}" if hh and code in fam else "",
                      "Bolsa Família families": fam.get(code, ""), "Households": hh or "",
-                     "Enrollment": x.get("Enrollment", ""), "Enrollment year": x.get("Enrollment year", ""),
+                     "Enrollment": x.get("Enrollment", ""), "Enrollment year": "2022 Census (residents aged 6–17 attending school; IBGE)" if x.get("Enrollment") else "",
                      "Children 6–17": x.get("Children 6–17", ""), "School system": "Municipal and state school networks",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})

@@ -1,0 +1,1921 @@
+{
+"source": "Generalitat Valenciana, Conselleria d'Educació, 'Resumen de escolarización 2025' (dadesobertes.gva.es, dataset edu-alu-gen-2025): pupils by school, stage and school ownership (REG_JUR), summed by the school's municipality (COD_MUN); stages: infantil, primaria, ESO, bachillerato, educación especial",
+"curso": "2025",
+"by_municipality": {
+"03002": {
+"name": "AGOST",
+"pupils": 618,
+"public": 485
+},
+"03004": {
+"name": "AIGÜES",
+"pupils": 102,
+"public": 102
+},
+"03005": {
+"name": "ALBATERA",
+"pupils": 2174,
+"public": 2174
+},
+"03009": {
+"name": "ALCOI/ALCOY",
+"pupils": 8513,
+"public": 3276
+},
+"03010": {
+"name": "ALFAFARA",
+"pupils": 160,
+"public": 160
+},
+"03011": {
+"name": "ALFÀS DEL PI, L'",
+"pupils": 1934,
+"public": 1934
+},
+"03012": {
+"name": "ALGORFA",
+"pupils": 234,
+"public": 234
+},
+"03013": {
+"name": "ALGUEÑA",
+"pupils": 104,
+"public": 104
+},
+"03014": {
+"name": "ALACANT/ALICANTE",
+"pupils": 52250,
+"public": 32004
+},
+"03015": {
+"name": "ALMORADÍ",
+"pupils": 4162,
+"public": 3820
+},
+"03018": {
+"name": "ALTEA",
+"pupils": 2808,
+"public": 2620
+},
+"03019": {
+"name": "ASPE",
+"pupils": 3006,
+"public": 2676
+},
+"03021": {
+"name": "BANYERES DE MARIOLA",
+"pupils": 1011,
+"public": 765
+},
+"03023": {
+"name": "BENEIXAMA",
+"pupils": 139,
+"public": 139
+},
+"03024": {
+"name": "BENEJÚZAR",
+"pupils": 813,
+"public": 813
+},
+"03025": {
+"name": "BENFERRI",
+"pupils": 167,
+"public": 167
+},
+"03026": {
+"name": "BENIARBEIG",
+"pupils": 163,
+"public": 163
+},
+"03027": {
+"name": "BENIARDÀ",
+"pupils": 14,
+"public": 14
+},
+"03029": {
+"name": "BENIGEMBLA",
+"pupils": 27,
+"public": 27
+},
+"03030": {
+"name": "BENIDOLEIG",
+"pupils": 116,
+"public": 116
+},
+"03031": {
+"name": "BENIDORM",
+"pupils": 9448,
+"public": 8092
+},
+"03034": {
+"name": "BENIJÓFAR",
+"pupils": 262,
+"public": 262
+},
+"03035": {
+"name": "BENILLOBA",
+"pupils": 163,
+"public": 163
+},
+"03037": {
+"name": "BENIMANTELL",
+"pupils": 69,
+"public": 69
+},
+"03040": {
+"name": "BENIMELI",
+"pupils": 108,
+"public": 108
+},
+"03041": {
+"name": "BENISSA",
+"pupils": 1562,
+"public": 1562
+},
+"03042": {
+"name": "POBLE NOU DE BENITATXELL, EL/BENITACHELL",
+"pupils": 332,
+"public": 332
+},
+"03043": {
+"name": "BIAR",
+"pupils": 640,
+"public": 640
+},
+"03044": {
+"name": "BIGASTRO",
+"pupils": 1077,
+"public": 1077
+},
+"03045": {
+"name": "BOLULLA",
+"pupils": 16,
+"public": 16
+},
+"03046": {
+"name": "BUSOT",
+"pupils": 132,
+"public": 132
+},
+"03047": {
+"name": "CALP",
+"pupils": 3118,
+"public": 3118
+},
+"03048": {
+"name": "CALLOSA D'EN SARRIÀ",
+"pupils": 1624,
+"public": 1063
+},
+"03049": {
+"name": "CALLOSA DE SEGURA",
+"pupils": 3532,
+"public": 3183
+},
+"03050": {
+"name": "CAMPELLO, EL",
+"pupils": 3151,
+"public": 2901
+},
+"03052": {
+"name": "CAÑADA",
+"pupils": 100,
+"public": 100
+},
+"03053": {
+"name": "CASTALLA",
+"pupils": 1586,
+"public": 1149
+},
+"03054": {
+"name": "CASTELL DE CASTELLS",
+"pupils": 15,
+"public": 15
+},
+"03055": {
+"name": "CATRAL",
+"pupils": 1409,
+"public": 1409
+},
+"03056": {
+"name": "COCENTAINA",
+"pupils": 1296,
+"public": 975
+},
+"03057": {
+"name": "CONFRIDES",
+"pupils": 14,
+"public": 7
+},
+"03058": {
+"name": "COX",
+"pupils": 1250,
+"public": 1250
+},
+"03059": {
+"name": "CREVILLENT",
+"pupils": 4430,
+"public": 4093
+},
+"03061": {
+"name": "DAYA NUEVA",
+"pupils": 153,
+"public": 153
+},
+"03063": {
+"name": "DÉNIA",
+"pupils": 6314,
+"public": 3990
+},
+"03064": {
+"name": "DOLORES",
+"pupils": 1272,
+"public": 1272
+},
+"03065": {
+"name": "ELX/ELCHE",
+"pupils": 37229,
+"public": 30531
+},
+"03066": {
+"name": "ELDA",
+"pupils": 7754,
+"public": 5786
+},
+"03069": {
+"name": "FINESTRAT",
+"pupils": 744,
+"public": 744
+},
+"03070": {
+"name": "FORMENTERA DEL SEGURA",
+"pupils": 380,
+"public": 380
+},
+"03071": {
+"name": "GATA DE GORGOS",
+"pupils": 893,
+"public": 893
+},
+"03074": {
+"name": "GRANJA DE ROCAMORA",
+"pupils": 282,
+"public": 282
+},
+"03076": {
+"name": "GUARDAMAR DEL SEGURA",
+"pupils": 2180,
+"public": 2180
+},
+"03077": {
+"name": "FONDÓ DE LES NEUS, EL/HONDÓN DE LAS NIEVES",
+"pupils": 199,
+"public": 199
+},
+"03078": {
+"name": "HONDÓN DE LOS FRAILES",
+"pupils": 51,
+"public": 51
+},
+"03079": {
+"name": "IBI",
+"pupils": 3463,
+"public": 2614
+},
+"03080": {
+"name": "JACARILLA",
+"pupils": 259,
+"public": 148
+},
+"03081": {
+"name": "XALÓ",
+"pupils": 378,
+"public": 378
+},
+"03082": {
+"name": "XÀBIA/JÁVEA",
+"pupils": 3256,
+"public": 2930
+},
+"03083": {
+"name": "XIXONA/JIJONA",
+"pupils": 960,
+"public": 960
+},
+"03084": {
+"name": "ORXA, L'/LORCHA",
+"pupils": 82,
+"public": 82
+},
+"03085": {
+"name": "LLÍBER",
+"pupils": 156,
+"public": 156
+},
+"03088": {
+"name": "MONFORTE DEL CID",
+"pupils": 1301,
+"public": 989
+},
+"03089": {
+"name": "MONÒVER/MONÓVAR",
+"pupils": 1884,
+"public": 1630
+},
+"03090": {
+"name": "MUTXAMEL",
+"pupils": 3195,
+"public": 2598
+},
+"03091": {
+"name": "MURLA",
+"pupils": 51,
+"public": 51
+},
+"03092": {
+"name": "MURO DE ALCOY",
+"pupils": 1370,
+"public": 1370
+},
+"03093": {
+"name": "NOVELDA",
+"pupils": 4290,
+"public": 2104
+},
+"03094": {
+"name": "NUCIA, LA",
+"pupils": 2105,
+"public": 2085
+},
+"03095": {
+"name": "ONDARA",
+"pupils": 1309,
+"public": 1309
+},
+"03096": {
+"name": "ONIL",
+"pupils": 1102,
+"public": 1102
+},
+"03097": {
+"name": "ORBA",
+"pupils": 294,
+"public": 294
+},
+"03099": {
+"name": "ORIHUELA",
+"pupils": 12544,
+"public": 8702
+},
+"03100": {
+"name": "PARCENT",
+"pupils": 52,
+"public": 52
+},
+"03101": {
+"name": "PEDREGUER",
+"pupils": 1099,
+"public": 1099
+},
+"03102": {
+"name": "PEGO",
+"pupils": 1346,
+"public": 1041
+},
+"03104": {
+"name": "PETRER",
+"pupils": 5125,
+"public": 4491
+},
+"03105": {
+"name": "PINÓS, EL/PINOSO",
+"pupils": 1196,
+"public": 1196
+},
+"03106": {
+"name": "PLANES",
+"pupils": 133,
+"public": 133
+},
+"03107": {
+"name": "POLOP",
+"pupils": 464,
+"public": 464
+},
+"03109": {
+"name": "RAFAL",
+"pupils": 893,
+"public": 893
+},
+"03111": {
+"name": "REDOVÁN",
+"pupils": 1059,
+"public": 1059
+},
+"03112": {
+"name": "RELLEU",
+"pupils": 152,
+"public": 152
+},
+"03113": {
+"name": "ROJALES",
+"pupils": 1639,
+"public": 1639
+},
+"03114": {
+"name": "ROMANA, LA",
+"pupils": 153,
+"public": 153
+},
+"03116": {
+"name": "SALINAS",
+"pupils": 132,
+"public": 132
+},
+"03118": {
+"name": "SAN FULGENCIO",
+"pupils": 656,
+"public": 656
+},
+"03119": {
+"name": "SANT JOAN D'ALACANT",
+"pupils": 2904,
+"public": 2528
+},
+"03120": {
+"name": "SAN MIGUEL DE SALINAS",
+"pupils": 1180,
+"public": 1180
+},
+"03121": {
+"name": "SANTA POLA",
+"pupils": 4806,
+"public": 4471
+},
+"03122": {
+"name": "SANT VICENT DEL RASPEIG/SAN VICENTE DEL RASPEIG",
+"pupils": 8934,
+"public": 7858
+},
+"03123": {
+"name": "SAX",
+"pupils": 1485,
+"public": 1303
+},
+"03125": {
+"name": "SENIJA",
+"pupils": 41,
+"public": 41
+},
+"03127": {
+"name": "TÀRBENA",
+"pupils": 27,
+"public": 27
+},
+"03128": {
+"name": "TEULADA",
+"pupils": 1360,
+"public": 1360
+},
+"03129": {
+"name": "TIBI",
+"pupils": 74,
+"public": 74
+},
+"03131": {
+"name": "TORMOS",
+"pupils": 20,
+"public": 20
+},
+"03132": {
+"name": "TORRE DE LES MAÇANES, LA/TORREMANZANAS",
+"pupils": 40,
+"public": 40
+},
+"03133": {
+"name": "TORREVIEJA",
+"pupils": 13633,
+"public": 12755
+},
+"03135": {
+"name": "VALL D'EBO, LA",
+"pupils": 9,
+"public": 9
+},
+"03136": {
+"name": "VALL DE GALLINERA, LA",
+"pupils": 25,
+"public": 25
+},
+"03137": {
+"name": "VALL DE LAGUAR, LA",
+"pupils": 48,
+"public": 48
+},
+"03138": {
+"name": "VERGER, EL",
+"pupils": 352,
+"public": 352
+},
+"03139": {
+"name": "VILA JOIOSA, LA/VILLAJOYOSA",
+"pupils": 4799,
+"public": 4799
+},
+"03140": {
+"name": "VILLENA",
+"pupils": 5004,
+"public": 3538
+},
+"03901": {
+"name": "POBLETS, ELS",
+"pupils": 156,
+"public": 156
+},
+"03902": {
+"name": "PILAR DE LA HORADADA",
+"pupils": 3186,
+"public": 3186
+},
+"03903": {
+"name": "MONTESINOS, LOS",
+"pupils": 799,
+"public": 799
+},
+"03904": {
+"name": "SAN ISIDRO",
+"pupils": 206,
+"public": 206
+},
+"12001": {
+"name": "ATZENETA DEL MAESTRAT",
+"pupils": 241,
+"public": 241
+},
+"12003": {
+"name": "ALBOCÀSSER",
+"pupils": 167,
+"public": 138
+},
+"12004": {
+"name": "ALCALÀ DE XIVERT",
+"pupils": 968,
+"public": 968
+},
+"12005": {
+"name": "ALCORA, L'",
+"pupils": 1667,
+"public": 1129
+},
+"12007": {
+"name": "ALFONDEGUILLA",
+"pupils": 76,
+"public": 76
+},
+"12009": {
+"name": "ALMASSORA",
+"pupils": 3989,
+"public": 3989
+},
+"12011": {
+"name": "ALMENARA",
+"pupils": 928,
+"public": 928
+},
+"12012": {
+"name": "ALTURA",
+"pupils": 299,
+"public": 299
+},
+"12016": {
+"name": "ARTANA",
+"pupils": 118,
+"public": 118
+},
+"12021": {
+"name": "BETXÍ",
+"pupils": 1618,
+"public": 821
+},
+"12022": {
+"name": "BEJÍS",
+"pupils": 51,
+"public": 51
+},
+"12026": {
+"name": "BENASSAL",
+"pupils": 191,
+"public": 191
+},
+"12027": {
+"name": "BENICARLÓ",
+"pupils": 4753,
+"public": 3459
+},
+"12028": {
+"name": "BENICÀSSIM/BENICASIM",
+"pupils": 2124,
+"public": 1827
+},
+"12029": {
+"name": "BENLLOC",
+"pupils": 21,
+"public": 21
+},
+"12031": {
+"name": "BORRIOL",
+"pupils": 703,
+"public": 703
+},
+"12032": {
+"name": "BORRIANA/BURRIANA",
+"pupils": 5676,
+"public": 3651
+},
+"12033": {
+"name": "CABANES",
+"pupils": 381,
+"public": 381
+},
+"12034": {
+"name": "CÀLIG",
+"pupils": 154,
+"public": 154
+},
+"12039": {
+"name": "CASTELLNOVO",
+"pupils": 126,
+"public": 126
+},
+"12040": {
+"name": "CASTELLÓ DE LA PLANA/CASTELLÓN DE LA PLANA",
+"pupils": 27813,
+"public": 20490
+},
+"12042": {
+"name": "CATÍ",
+"pupils": 95,
+"public": 95
+},
+"12045": {
+"name": "CINCTORRES",
+"pupils": 41,
+"public": 41
+},
+"12048": {
+"name": "CORTES DE ARENOSO",
+"pupils": 18,
+"public": 18
+},
+"12049": {
+"name": "COSTUR",
+"pupils": 29,
+"public": 29
+},
+"12050": {
+"name": "COVES DE VINROMÀ, LES",
+"pupils": 160,
+"public": 160
+},
+"12053": {
+"name": "CHILCHES/XILXES",
+"pupils": 186,
+"public": 186
+},
+"12057": {
+"name": "ESLIDA",
+"pupils": 55,
+"public": 55
+},
+"12060": {
+"name": "FIGUEROLES",
+"pupils": 45,
+"public": 45
+},
+"12061": {
+"name": "FORCALL",
+"pupils": 82,
+"public": 82
+},
+"12067": {
+"name": "GELDO",
+"pupils": 33,
+"public": 33
+},
+"12070": {
+"name": "JANA, LA",
+"pupils": 111,
+"public": 111
+},
+"12071": {
+"name": "JÉRICA",
+"pupils": 235,
+"public": 235
+},
+"12072": {
+"name": "LLUCENA/LUCENA DEL CID",
+"pupils": 98,
+"public": 98
+},
+"12074": {
+"name": "LLOSA, LA",
+"pupils": 67,
+"public": 67
+},
+"12077": {
+"name": "MONCOFA",
+"pupils": 590,
+"public": 590
+},
+"12079": {
+"name": "MONTANEJOS",
+"pupils": 52,
+"public": 52
+},
+"12080": {
+"name": "MORELLA",
+"pupils": 419,
+"public": 419
+},
+"12082": {
+"name": "NULES",
+"pupils": 2571,
+"public": 2261
+},
+"12084": {
+"name": "ONDA",
+"pupils": 4040,
+"public": 3082
+},
+"12085": {
+"name": "ORPESA/OROPESA DEL MAR",
+"pupils": 1568,
+"public": 1568
+},
+"12089": {
+"name": "PENÍSCOLA/PEÑÍSCOLA",
+"pupils": 1114,
+"public": 932
+},
+"12095": {
+"name": "RIBESALBES",
+"pupils": 87,
+"public": 87
+},
+"12096": {
+"name": "ROSSELL",
+"pupils": 113,
+"public": 113
+},
+"12098": {
+"name": "SALZADELLA, LA",
+"pupils": 81,
+"public": 81
+},
+"12099": {
+"name": "SANT JORDI/SAN JORGE",
+"pupils": 68,
+"public": 68
+},
+"12100": {
+"name": "SANT MATEU",
+"pupils": 603,
+"public": 603
+},
+"12102": {
+"name": "SANTA MAGDALENA DE PULPIS",
+"pupils": 45,
+"public": 45
+},
+"12104": {
+"name": "SEGORBE",
+"pupils": 1957,
+"public": 1340
+},
+"12105": {
+"name": "SIERRA ENGARCERÁN",
+"pupils": 62,
+"public": 62
+},
+"12106": {
+"name": "SONEJA",
+"pupils": 109,
+"public": 109
+},
+"12107": {
+"name": "SOT DE FERRER",
+"pupils": 67,
+"public": 67
+},
+"12109": {
+"name": "TALES",
+"pupils": 160,
+"public": 160
+},
+"12117": {
+"name": "TORREBLANCA",
+"pupils": 818,
+"public": 818
+},
+"12121": {
+"name": "TRAIGUERA",
+"pupils": 70,
+"public": 70
+},
+"12124": {
+"name": "VALL D'ALBA",
+"pupils": 767,
+"public": 767
+},
+"12126": {
+"name": "VALL D'UIXÓ, LA",
+"pupils": 4580,
+"public": 4580
+},
+"12128": {
+"name": "VILAFAMÉS",
+"pupils": 162,
+"public": 162
+},
+"12129": {
+"name": "VILAFRANCA/VILLAFRANCA DEL CID",
+"pupils": 268,
+"public": 268
+},
+"12130": {
+"name": "VILLAHERMOSA DEL RÍO",
+"pupils": 24,
+"public": 24
+},
+"12132": {
+"name": "VILANOVA D'ALCOLEA",
+"pupils": 277,
+"public": 277
+},
+"12135": {
+"name": "VILA-REAL",
+"pupils": 7960,
+"public": 5863
+},
+"12136": {
+"name": "VILAVELLA, LA",
+"pupils": 256,
+"public": 256
+},
+"12138": {
+"name": "VINARÒS",
+"pupils": 4364,
+"public": 3779
+},
+"12140": {
+"name": "VIVER",
+"pupils": 413,
+"public": 413
+},
+"12142": {
+"name": "ZUCAINA",
+"pupils": 8,
+"public": 8
+},
+"12901": {
+"name": "ALQUERIES, LES/ALQUERÍAS DEL NIÑO PERDIDO",
+"pupils": 351,
+"public": 351
+},
+"12902": {
+"name": "SANT JOAN DE MORÓ",
+"pupils": 353,
+"public": 353
+},
+"46001": {
+"name": "ADEMUZ",
+"pupils": 274,
+"public": 274
+},
+"46003": {
+"name": "ATZENETA D'ALBAIDA",
+"pupils": 61,
+"public": 61
+},
+"46004": {
+"name": "AGULLENT",
+"pupils": 145,
+"public": 145
+},
+"46005": {
+"name": "ALAQUÀS",
+"pupils": 4160,
+"public": 2744
+},
+"46006": {
+"name": "ALBAIDA",
+"pupils": 992,
+"public": 953
+},
+"46007": {
+"name": "ALBAL",
+"pupils": 2187,
+"public": 1871
+},
+"46008": {
+"name": "ALBALAT DE LA RIBERA",
+"pupils": 772,
+"public": 772
+},
+"46009": {
+"name": "ALBALAT DELS SORELLS",
+"pupils": 370,
+"public": 370
+},
+"46010": {
+"name": "ALBALAT DELS TARONGERS",
+"pupils": 68,
+"public": 68
+},
+"46011": {
+"name": "ALBERIC",
+"pupils": 1566,
+"public": 1360
+},
+"46012": {
+"name": "ALBORACHE",
+"pupils": 155,
+"public": 155
+},
+"46013": {
+"name": "ALBORAIA/ALBORAYA",
+"pupils": 3259,
+"public": 1457
+},
+"46014": {
+"name": "ALBUIXECH",
+"pupils": 302,
+"public": 302
+},
+"46015": {
+"name": "ALCÀSSER",
+"pupils": 1580,
+"public": 1252
+},
+"46016": {
+"name": "ALCÀNTERA DE XÚQUER",
+"pupils": 166,
+"public": 166
+},
+"46017": {
+"name": "ALZIRA",
+"pupils": 6866,
+"public": 5181
+},
+"46018": {
+"name": "ALCUBLAS",
+"pupils": 61,
+"public": 61
+},
+"46019": {
+"name": "ALCÚDIA, L'",
+"pupils": 1666,
+"public": 1374
+},
+"46020": {
+"name": "ALCÚDIA DE CRESPINS, L'",
+"pupils": 510,
+"public": 510
+},
+"46021": {
+"name": "ALDAIA",
+"pupils": 4886,
+"public": 4239
+},
+"46022": {
+"name": "ALFAFAR",
+"pupils": 1887,
+"public": 992
+},
+"46024": {
+"name": "ALFARA DE LA BARONIA",
+"pupils": 102,
+"public": 102
+},
+"46025": {
+"name": "ALFARA DEL PATRIARCA",
+"pupils": 425,
+"public": 221
+},
+"46026": {
+"name": "ALFARB",
+"pupils": 165,
+"public": 165
+},
+"46027": {
+"name": "ALFARRASÍ",
+"pupils": 97,
+"public": 97
+},
+"46029": {
+"name": "ALGEMESÍ",
+"pupils": 4741,
+"public": 1836
+},
+"46030": {
+"name": "ALGÍMIA D'ALFARA",
+"pupils": 259,
+"public": 259
+},
+"46031": {
+"name": "ALGINET",
+"pupils": 1953,
+"public": 1625
+},
+"46032": {
+"name": "ALMÀSSERA",
+"pupils": 694,
+"public": 377
+},
+"46034": {
+"name": "ALMOINES",
+"pupils": 195,
+"public": 195
+},
+"46035": {
+"name": "ALMUSSAFES",
+"pupils": 1293,
+"public": 1293
+},
+"46036": {
+"name": "ALPUENTE",
+"pupils": 46,
+"public": 46
+},
+"46037": {
+"name": "ALQUERIA DE LA COMTESSA, L'",
+"pupils": 124,
+"public": 124
+},
+"46039": {
+"name": "ANNA",
+"pupils": 162,
+"public": 162
+},
+"46040": {
+"name": "ANTELLA",
+"pupils": 70,
+"public": 70
+},
+"46041": {
+"name": "ARAS DE LOS OLMOS",
+"pupils": 105,
+"public": 105
+},
+"46042": {
+"name": "AIELO DE MALFERIT",
+"pupils": 473,
+"public": 473
+},
+"46044": {
+"name": "AYORA",
+"pupils": 625,
+"public": 625
+},
+"46045": {
+"name": "BARXETA",
+"pupils": 97,
+"public": 97
+},
+"46047": {
+"name": "BÈLGIDA",
+"pupils": 39,
+"public": 39
+},
+"46048": {
+"name": "BELLREGUARD",
+"pupils": 1168,
+"public": 1168
+},
+"46051": {
+"name": "BENAGUASIL",
+"pupils": 1599,
+"public": 974
+},
+"46053": {
+"name": "BENEIXIDA",
+"pupils": 61,
+"public": 61
+},
+"46054": {
+"name": "BENETÚSSER",
+"pupils": 2658,
+"public": 1763
+},
+"46055": {
+"name": "BENIARJÓ",
+"pupils": 132,
+"public": 132
+},
+"46058": {
+"name": "BENIFAIRÓ DE LES VALLS",
+"pupils": 650,
+"public": 650
+},
+"46059": {
+"name": "BENIFAIRÓ DE LA VALLDIGNA",
+"pupils": 121,
+"public": 121
+},
+"46060": {
+"name": "BENIFAIÓ",
+"pupils": 1300,
+"public": 979
+},
+"46062": {
+"name": "BENIGÀNIM",
+"pupils": 890,
+"public": 818
+},
+"46063": {
+"name": "BENIMODO",
+"pupils": 229,
+"public": 229
+},
+"46065": {
+"name": "BENIPARRELL",
+"pupils": 131,
+"public": 131
+},
+"46066": {
+"name": "BENIRREDRÀ",
+"pupils": 674,
+"public": 0
+},
+"46067": {
+"name": "BENISSANÓ",
+"pupils": 184,
+"public": 184
+},
+"46068": {
+"name": "BENISSODA",
+"pupils": 29,
+"public": 29
+},
+"46070": {
+"name": "BÉTERA",
+"pupils": 4252,
+"public": 1801
+},
+"46071": {
+"name": "BICORP",
+"pupils": 36,
+"public": 36
+},
+"46072": {
+"name": "BOCAIRENT",
+"pupils": 476,
+"public": 476
+},
+"46073": {
+"name": "BOLBAITE",
+"pupils": 125,
+"public": 125
+},
+"46074": {
+"name": "BONREPÒS I MIRAMBELL",
+"pupils": 299,
+"public": 299
+},
+"46075": {
+"name": "BUFALI",
+"pupils": 16,
+"public": 16
+},
+"46076": {
+"name": "BUGARRA",
+"pupils": 158,
+"public": 158
+},
+"46077": {
+"name": "BUÑOL",
+"pupils": 1720,
+"public": 1456
+},
+"46078": {
+"name": "BURJASSOT",
+"pupils": 4674,
+"public": 2648
+},
+"46080": {
+"name": "CAMPORROBLES",
+"pupils": 69,
+"public": 69
+},
+"46081": {
+"name": "CANALS",
+"pupils": 2136,
+"public": 1569
+},
+"46082": {
+"name": "CANET D'EN BERENGUER",
+"pupils": 1524,
+"public": 1010
+},
+"46083": {
+"name": "CARCAIXENT",
+"pupils": 3413,
+"public": 1695
+},
+"46084": {
+"name": "CÀRCER",
+"pupils": 486,
+"public": 486
+},
+"46085": {
+"name": "CARLET",
+"pupils": 2886,
+"public": 2331
+},
+"46089": {
+"name": "CASINOS",
+"pupils": 271,
+"public": 271
+},
+"46090": {
+"name": "CASTELLÓ DE RUGAT",
+"pupils": 431,
+"public": 431
+},
+"46093": {
+"name": "CATADAU",
+"pupils": 518,
+"public": 518
+},
+"46094": {
+"name": "CATARROJA",
+"pupils": 4652,
+"public": 2522
+},
+"46095": {
+"name": "CAUDETE DE LAS FUENTES",
+"pupils": 90,
+"public": 90
+},
+"46097": {
+"name": "COFRENTES",
+"pupils": 69,
+"public": 69
+},
+"46098": {
+"name": "CORBERA",
+"pupils": 251,
+"public": 251
+},
+"46101": {
+"name": "QUART DE LES VALLS",
+"pupils": 244,
+"public": 244
+},
+"46102": {
+"name": "QUART DE POBLET",
+"pupils": 3250,
+"public": 2318
+},
+"46103": {
+"name": "QUARTELL",
+"pupils": 124,
+"public": 124
+},
+"46104": {
+"name": "QUATRETONDA",
+"pupils": 142,
+"public": 142
+},
+"46105": {
+"name": "CULLERA",
+"pupils": 3055,
+"public": 1844
+},
+"46106": {
+"name": "CHELVA",
+"pupils": 273,
+"public": 273
+},
+"46107": {
+"name": "CHELLA",
+"pupils": 137,
+"public": 137
+},
+"46109": {
+"name": "CHESTE",
+"pupils": 1759,
+"public": 1464
+},
+"46110": {
+"name": "XIRIVELLA",
+"pupils": 3667,
+"public": 3337
+},
+"46111": {
+"name": "CHIVA",
+"pupils": 2369,
+"public": 1682
+},
+"46113": {
+"name": "DAIMÚS",
+"pupils": 287,
+"public": 287
+},
+"46115": {
+"name": "DOS AGUAS",
+"pupils": 55,
+"public": 55
+},
+"46116": {
+"name": "ELIANA, L'",
+"pupils": 4407,
+"public": 2076
+},
+"46118": {
+"name": "ENGUERA",
+"pupils": 659,
+"public": 659
+},
+"46119": {
+"name": "ÉNOVA, L'",
+"pupils": 44,
+"public": 44
+},
+"46120": {
+"name": "ESTIVELLA",
+"pupils": 136,
+"public": 136
+},
+"46122": {
+"name": "FAURA",
+"pupils": 257,
+"public": 257
+},
+"46123": {
+"name": "FAVARA",
+"pupils": 175,
+"public": 175
+},
+"46124": {
+"name": "FONTANARS DELS ALFORINS",
+"pupils": 81,
+"public": 81
+},
+"46125": {
+"name": "FORTALENY",
+"pupils": 136,
+"public": 136
+},
+"46126": {
+"name": "FOIOS",
+"pupils": 1322,
+"public": 1322
+},
+"46127": {
+"name": "FONT D'EN CARRÒS, LA",
+"pupils": 453,
+"public": 453
+},
+"46128": {
+"name": "FONT DE LA FIGUERA, LA",
+"pupils": 136,
+"public": 136
+},
+"46129": {
+"name": "FUENTERROBLES",
+"pupils": 76,
+"public": 76
+},
+"46130": {
+"name": "GAVARDA",
+"pupils": 106,
+"public": 106
+},
+"46131": {
+"name": "GANDIA",
+"pupils": 11752,
+"public": 6429
+},
+"46132": {
+"name": "GENOVÉS, EL",
+"pupils": 167,
+"public": 167
+},
+"46134": {
+"name": "GILET",
+"pupils": 361,
+"public": 263
+},
+"46135": {
+"name": "GODELLA",
+"pupils": 5668,
+"public": 404
+},
+"46136": {
+"name": "GODELLETA",
+"pupils": 288,
+"public": 288
+},
+"46138": {
+"name": "GUADASSÉQUIES",
+"pupils": 87,
+"public": 87
+},
+"46139": {
+"name": "GUADASSUAR",
+"pupils": 985,
+"public": 695
+},
+"46142": {
+"name": "JALANCE",
+"pupils": 87,
+"public": 87
+},
+"46143": {
+"name": "XERACO",
+"pupils": 677,
+"public": 677
+},
+"46144": {
+"name": "JARAFUEL",
+"pupils": 101,
+"public": 101
+},
+"46145": {
+"name": "XÀTIVA",
+"pupils": 4969,
+"public": 3219
+},
+"46146": {
+"name": "XERESA",
+"pupils": 225,
+"public": 225
+},
+"46147": {
+"name": "LLÍRIA",
+"pupils": 3800,
+"public": 2355
+},
+"46148": {
+"name": "LORIGUILLA",
+"pupils": 217,
+"public": 217
+},
+"46149": {
+"name": "LOSA DEL OBISPO",
+"pupils": 109,
+"public": 109
+},
+"46150": {
+"name": "LLUTXENT",
+"pupils": 159,
+"public": 159
+},
+"46151": {
+"name": "LLOCNOU D'EN FENOLLET",
+"pupils": 62,
+"public": 62
+},
+"46153": {
+"name": "LLOCNOU DE SANT JERONI",
+"pupils": 108,
+"public": 108
+},
+"46154": {
+"name": "LLANERA DE RANES",
+"pupils": 110,
+"public": 110
+},
+"46155": {
+"name": "LLAURÍ",
+"pupils": 90,
+"public": 90
+},
+"46156": {
+"name": "LLOMBAI",
+"pupils": 482,
+"public": 271
+},
+"46157": {
+"name": "LLOSA DE RANES, LA",
+"pupils": 402,
+"public": 402
+},
+"46159": {
+"name": "MANISES",
+"pupils": 4233,
+"public": 3263
+},
+"46160": {
+"name": "MANUEL",
+"pupils": 221,
+"public": 221
+},
+"46161": {
+"name": "MARINES",
+"pupils": 201,
+"public": 201
+},
+"46162": {
+"name": "MASSALAVÉS",
+"pupils": 169,
+"public": 169
+},
+"46163": {
+"name": "MASSALFASSAR",
+"pupils": 160,
+"public": 160
+},
+"46164": {
+"name": "MASSAMAGRELL",
+"pupils": 2095,
+"public": 1764
+},
+"46165": {
+"name": "MASSANASSA",
+"pupils": 1431,
+"public": 1116
+},
+"46166": {
+"name": "MELIANA",
+"pupils": 1457,
+"public": 1137
+},
+"46168": {
+"name": "MIRAMAR",
+"pupils": 195,
+"public": 195
+},
+"46169": {
+"name": "MISLATA",
+"pupils": 5278,
+"public": 4182
+},
+"46170": {
+"name": "MOIXENT/MOGENTE",
+"pupils": 605,
+"public": 605
+},
+"46171": {
+"name": "MONTCADA / MONCADA",
+"pupils": 4599,
+"public": 1226
+},
+"46172": {
+"name": "MONTSERRAT",
+"pupils": 1421,
+"public": 1421
+},
+"46173": {
+"name": "MONTAVERNER",
+"pupils": 114,
+"public": 114
+},
+"46174": {
+"name": "MONTESA",
+"pupils": 54,
+"public": 54
+},
+"46175": {
+"name": "MONTITXELVO/MONTICHELVO",
+"pupils": 113,
+"public": 113
+},
+"46176": {
+"name": "MONTROI/MONTROY",
+"pupils": 240,
+"public": 240
+},
+"46177": {
+"name": "MUSEROS",
+"pupils": 1022,
+"public": 693
+},
+"46178": {
+"name": "NÀQUERA/NÁQUERA",
+"pupils": 460,
+"public": 460
+},
+"46179": {
+"name": "NAVARRÉS",
+"pupils": 576,
+"public": 576
+},
+"46180": {
+"name": "NOVETLÈ",
+"pupils": 61,
+"public": 61
+},
+"46181": {
+"name": "OLIVA",
+"pupils": 3582,
+"public": 2611
+},
+"46182": {
+"name": "OLOCAU",
+"pupils": 155,
+"public": 155
+},
+"46183": {
+"name": "OLLERIA, L'",
+"pupils": 1223,
+"public": 1223
+},
+"46184": {
+"name": "ONTINYENT",
+"pupils": 5477,
+"public": 3255
+},
+"46185": {
+"name": "OTOS",
+"pupils": 61,
+"public": 61
+},
+"46186": {
+"name": "PAIPORTA",
+"pupils": 3747,
+"public": 3436
+},
+"46187": {
+"name": "PALMA DE GANDÍA",
+"pupils": 157,
+"public": 157
+},
+"46190": {
+"name": "PATERNA",
+"pupils": 12940,
+"public": 5088
+},
+"46191": {
+"name": "PEDRALBA",
+"pupils": 184,
+"public": 184
+},
+"46192": {
+"name": "PETRÉS",
+"pupils": 172,
+"public": 172
+},
+"46193": {
+"name": "PICANYA",
+"pupils": 1705,
+"public": 1390
+},
+"46194": {
+"name": "PICASSENT",
+"pupils": 4939,
+"public": 2065
+},
+"46195": {
+"name": "PILES",
+"pupils": 205,
+"public": 205
+},
+"46197": {
+"name": "POLINYÀ DE XÚQUER",
+"pupils": 190,
+"public": 190
+},
+"46198": {
+"name": "POTRIES",
+"pupils": 307,
+"public": 307
+},
+"46199": {
+"name": "POBLA DE FARNALS, LA",
+"pupils": 1119,
+"public": 1119
+},
+"46200": {
+"name": "POBLA DEL DUC, LA",
+"pupils": 240,
+"public": 240
+},
+"46202": {
+"name": "POBLA DE VALLBONA, LA",
+"pupils": 3002,
+"public": 2096
+},
+"46203": {
+"name": "POBLA LLARGA, LA",
+"pupils": 966,
+"public": 816
+},
+"46204": {
+"name": "PUIG DE SANTA MARIA, EL",
+"pupils": 1203,
+"public": 962
+},
+"46205": {
+"name": "PUÇOL",
+"pupils": 3048,
+"public": 2059
+},
+"46206": {
+"name": "QUESA",
+"pupils": 36,
+"public": 36
+},
+"46207": {
+"name": "RAFELBUNYOL",
+"pupils": 1339,
+"public": 1339
+},
+"46208": {
+"name": "RAFELCOFER",
+"pupils": 97,
+"public": 97
+},
+"46209": {
+"name": "RAFELGUARAF",
+"pupils": 177,
+"public": 177
+},
+"46211": {
+"name": "REAL DE GANDIA, EL",
+"pupils": 479,
+"public": 205
+},
+"46212": {
+"name": "REAL",
+"pupils": 195,
+"public": 195
+},
+"46213": {
+"name": "REQUENA",
+"pupils": 2799,
+"public": 2799
+},
+"46214": {
+"name": "RIBA-ROJA DE TÚRIA",
+"pupils": 3296,
+"public": 2151
+},
+"46215": {
+"name": "RIOLA",
+"pupils": 125,
+"public": 125
+},
+"46216": {
+"name": "ROCAFORT",
+"pupils": 173,
+"public": 173
+},
+"46217": {
+"name": "ROTGLÀ I CORBERÀ",
+"pupils": 86,
+"public": 86
+},
+"46218": {
+"name": "RÒTOVA",
+"pupils": 133,
+"public": 133
+},
+"46220": {
+"name": "SAGUNT/SAGUNTO",
+"pupils": 10711,
+"public": 8848
+},
+"46222": {
+"name": "SANT JOANET",
+"pupils": 83,
+"public": 83
+},
+"46223": {
+"name": "SEDAVÍ",
+"pupils": 1828,
+"public": 1209
+},
+"46227": {
+"name": "SENYERA",
+"pupils": 109,
+"public": 109
+},
+"46228": {
+"name": "SERRA",
+"pupils": 175,
+"public": 175
+},
+"46229": {
+"name": "SIETE AGUAS",
+"pupils": 59,
+"public": 59
+},
+"46230": {
+"name": "SILLA",
+"pupils": 2863,
+"public": 2268
+},
+"46231": {
+"name": "SIMAT DE LA VALLDIGNA",
+"pupils": 193,
+"public": 193
+},
+"46232": {
+"name": "SINARCAS",
+"pupils": 90,
+"public": 90
+},
+"46233": {
+"name": "SOLLANA",
+"pupils": 559,
+"public": 559
+},
+"46235": {
+"name": "SUECA",
+"pupils": 4101,
+"public": 1923
+},
+"46237": {
+"name": "TAVERNES BLANQUES",
+"pupils": 1291,
+"public": 1291
+},
+"46238": {
+"name": "TAVERNES DE LA VALLDIGNA",
+"pupils": 2474,
+"public": 1874
+},
+"46244": {
+"name": "TORRENT",
+"pupils": 15467,
+"public": 7329
+},
+"46246": {
+"name": "TOUS",
+"pupils": 146,
+"public": 146
+},
+"46247": {
+"name": "TUÉJAR",
+"pupils": 72,
+"public": 72
+},
+"46248": {
+"name": "TURÍS",
+"pupils": 1163,
+"public": 1163
+},
+"46249": {
+"name": "UTIEL",
+"pupils": 1681,
+"public": 1435
+},
+"46250": {
+"name": "VALÈNCIA",
+"pupils": 97988,
+"public": 44445
+},
+"46251": {
+"name": "VALLADA",
+"pupils": 314,
+"public": 314
+},
+"46254": {
+"name": "VENTA DEL MORO",
+"pupils": 45,
+"public": 45
+},
+"46255": {
+"name": "VILALLONGA/VILLALONGA",
+"pupils": 964,
+"public": 681
+},
+"46256": {
+"name": "VILAMARXANT",
+"pupils": 1540,
+"public": 1210
+},
+"46257": {
+"name": "CASTELLÓ",
+"pupils": 1060,
+"public": 504
+},
+"46258": {
+"name": "VILLAR DEL ARZOBISPO",
+"pupils": 704,
+"public": 704
+},
+"46260": {
+"name": "VINALESA",
+"pupils": 425,
+"public": 107
+},
+"46261": {
+"name": "YÁTOVA",
+"pupils": 212,
+"public": 212
+},
+"46903": {
+"name": "SAN ANTONIO DE BENAGÉBER",
+"pupils": 2437,
+"public": 1551
+},
+"46904": {
+"name": "BENICULL DE XÚQUER",
+"pupils": 69,
+"public": 69
+}
+}
+}

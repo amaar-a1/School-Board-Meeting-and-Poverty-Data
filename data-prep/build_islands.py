@@ -66,7 +66,9 @@ EXTRA = {
     "SJM": dict(name="Svalbard", region="Europe and the North Atlantic", status="Part of Norway", rate=0.5,
                 measure="Unemployment rate, an estimate standing in for poverty: about 12 people fully unemployed (NAV, January and July 2025) "
                         "out of about 2,500 in work (Statistics Norway, 2022); Norway's poverty statistics leave Svalbard out",
-                pop=2933, kids=None, enr=None, ey="", land=61022),
+                # Pupils: Longyearbyen school (grades 1-10, its only Norwegian school), Statistics Norway table 11980, 2025;
+                # Barentsburg's small Russian school isn't counted.
+                pop=2933, kids=None, enr=194, ey="2025 (Longyearbyen school, grades 1–10: Statistics Norway)", land=61022),
     "CHT": dict(name="Chatham Islands", region="Pacific", status="Part of New Zealand", rate=2.9,
                 measure="Unemployed people as a share of everyone aged 15 and over, a stand-in for poverty (Stats NZ, 2023 Census: 15 people)",
                 pop=615, kids=99, enr=None, ey="", land=966),
