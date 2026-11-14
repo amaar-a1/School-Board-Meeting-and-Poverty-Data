@@ -576,6 +576,8 @@ def mexico():
     con = {str(r[3]): r for r in ws.iter_rows(values_only=True) if r and r[3] and re.fullmatch(r"\d{5}", str(r[3]))}
     num = lambda v: int(v) if str(v).strip().isdigit() else None
     it = {}
+    sp = os.path.join(IN, "mexico", "mx_pupils.json")
+    sep_pupils = json.load(open(sp, encoding="utf-8"))["by_municipality"] if os.path.exists(sp) else {}
     for r in csv.DictReader(open(os.path.join(IN, "mexico", "inegi_iter_2020_municipal.csv"), encoding="utf-8")):
         it[r["ENTIDAD"] + r["MUN"]] = r
     adm1 = json.load(open(os.path.join(IN, "mexico", "gb_MEX_ADM1.geojson"), encoding="utf-8"))["features"]
@@ -587,6 +589,7 @@ def mexico():
         i = it.get(code, {})
         a, b, c6, d, e = (num(i.get(k)) for k in ("P_6A11", "P6A11_NOA", "P_12A14", "P12A14NOA", "P15A17A"))
         enr = (a - b) + (c6 - d) + e if None not in (a, b, c6, d, e) else ""
+        sep = sep_pupils.get(code)   # SEP school statistics (Formato 911), basic education, 2025-26: used first
         kids = sum(x for x in (num(i.get("P_6A11")), num(i.get("P_12A14")), num(i.get("P_15A17"))) if x) or ""
         pop = num(i.get("POBTOT")) or (int(r[7]) if r[7] else 0)
         f = geo.get(code); area = area_km2(f["geometry"]) if f else 0
@@ -597,7 +600,9 @@ def mexico():
                      "Poverty rate (all ages)": pct(r[10]), "Extreme poverty (all ages)": pct(r[19]),
                      "Poverty by year": "; ".join(f"{y}:{float(v):.1f}" for y, v in zip((2010, 2015, 2020), r[8:11]) if isinstance(v, (int, float))),
                      "Poverty note": "Multidimensional poverty (income below the poverty line and at least one social deprivation), all ages, 2020 (CONEVAL); no child rate is published by municipality",
-                     "Enrollment": enr, "Enrollment year": "2020 Census (residents aged 6–17 attending school; INEGI)" if enr != "" else "",
+                     "Enrollment": sep["pupils"] if sep else enr, "Public school enrollment": sep["public"] if sep else "",
+                     "Enrollment year": "2025-26 (SEP, Formato 911: pupils in preescolar, primaria and secundaria at the municipality's schools, public and private)" if sep
+                         else "2020 Census (residents aged 6–17 attending school; INEGI)" if enr != "" else "",
                      "Children 6–17": kids, "School system": "State education authority",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": str(r[4])}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
