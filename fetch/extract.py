@@ -1,32 +1,51 @@
-# Temporary: public-school pupils by municipality: Norway (SSB 11980, kommunal), Denmark (LABY23 by school type),
-# Sweden (Kolada KPIs on independent schools).
-import json, os, urllib.parse, urllib.request
-OUT = "fetch/out/nordic_pub1"; os.makedirs(OUT, exist_ok=True)
-UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
+# Temporary: (1) New Zealand regional and unitary councils' meeting recordings on YouTube; (2) Sweden: Kolada v3 KPIs
+# on pupils in independent (fristående) schools by home municipality.
+import json, os, re, subprocess, sys, time, urllib.parse, urllib.request
+OUT = "fetch/out/nz_se1"; os.makedirs(OUT, exist_ok=True)
+try:
+    import yt_dlp  # noqa
+except ImportError:
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "--user", "--break-system-packages", "yt-dlp"], check=True)
+    os.execv(sys.executable, [sys.executable] + sys.argv)
 log = open(f"{OUT}/log.txt", "w")
-def get(u, data=None, t=180):
-    h = dict(UA)
-    if data is not None: h["Content-Type"] = "application/json"
-    with urllib.request.urlopen(urllib.request.Request(u, data=data, headers=h), timeout=t) as r: return r.read()
-try:
-    q = {"query": [{"code": "KOKkommuneregion0000", "selection": {"filter": "all", "values": ["*"]}},
-                   {"code": "KOKeierfh0000", "selection": {"filter": "item", "values": ["K", "KP"]}},
-                   {"code": "KOKtrinn0000", "selection": {"filter": "item", "values": ["0"]}},
-                   {"code": "Tid", "selection": {"filter": "item", "values": ["2025"]}}], "response": {"format": "json-stat2"}}
-    b = get("https://data.ssb.no/api/v0/no/table/11980", json.dumps(q).encode()); open(f"{OUT}/no_pupils_K_KP.json", "wb").write(b); log.write(f"NO {len(b)}\n")
-except Exception as e: log.write(f"ERR NO {e} {getattr(e,'read',lambda:b'')()[:300]}\n")
-try:
-    info = json.loads(get("https://api.statbank.dk/v1/tableinfo/LABY23?lang=en&format=JSON"))
-    for v in info["variables"]: log.write(f"DK var {v['id']} {v['text']}: {[(x['id'], x['text']) for x in v['values'][:15]]} n={len(v['values'])}\n")
-    g = next(v for v in info["variables"] if v["id"] == "GRUNDSKOL")
-    body = {"table": "LABY23", "format": "CSV", "lang": "en", "variables": [
-        {"code": "FSTATUS", "values": [info["variables"][0]["values"][0]["id"]]}, {"code": "UDDANNELSE", "values": ["TOT"] if any(x["id"] == "TOT" for x in info["variables"][1]["values"]) else [info["variables"][1]["values"][0]["id"]]},
-        {"code": "GRUNDSKOL", "values": [x["id"] for x in g["values"]]}, {"code": "KOMGRP", "values": ["*"]}, {"code": "Tid", "values": ["2025"]}]}
-    b = get("https://api.statbank.dk/v1/data", json.dumps(body).encode()); open(f"{OUT}/dk_LABY23_by_type.csv", "wb").write(b); log.write(f"DK data {len(b)} head {b[:400]!r}\n")
-except Exception as e: log.write(f"ERR DK {e} {getattr(e,'read',lambda:b'')()[:300]}\n")
-try:
-    for q in ["fristående grundskola", "kommunal grundskola"]:
-        d = json.loads(get("https://api.kolada.se/v2/kpi?title=" + urllib.parse.quote(q)))
-        for k in d["values"][:25]: log.write(f"SE kpi {k['id']} | {k['title']} | {k.get('municipality_type')} | {k.get('has_ou_data')}\n")
-except Exception as e: log.write(f"ERR SE {e}\n")
+UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
+def get(u, t=120):
+    with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=t) as r: return r.read()
+for q in ["fristående", "grundskola elever"]:
+    for v in ("v3", "v2"):
+        try:
+            d = json.loads(get(f"https://api.kolada.se/{v}/kpi?title=" + urllib.parse.quote(q)))
+            for k in d.get("values", [])[:30]: log.write(f"SE {v} kpi {k['id']} | {k['title']}\n")
+            break
+        except Exception as e: log.write(f"ERR SE {v} {q} {e}\n")
+COUNCILS = {"NZ-NTL": ["Northland Regional Council"], "NZ-AUK": ["Auckland Council"], "NZ-WKO": ["Waikato Regional Council"],
+            "NZ-BOP": ["Bay of Plenty Regional Council"], "NZ-GIS-HKB": ["Gisborne District Council", "Hawke's Bay Regional Council"],
+            "NZ-TKI": ["Taranaki Regional Council"], "NZ-MWT": ["Horizons Regional Council"], "NZ-WGN": ["Greater Wellington Regional Council"],
+            "NZ-TNMW": ["Tasman District Council", "Nelson City Council", "Marlborough District Council", "West Coast Regional Council"],
+            "NZ-CAN": ["Environment Canterbury"], "NZ-OTA": ["Otago Regional Council"], "NZ-STL": ["Environment Southland"]}
+def yt(*a):
+    r = subprocess.run([sys.executable, "-m", "yt_dlp", "--flat-playlist", "--ignore-errors", "--no-warnings", "-J", *a], capture_output=True, text=True, timeout=600)
+    try: return json.loads(r.stdout)
+    except Exception: return {"_err": r.stderr[-300:]}
+res = {}
+for area, names in COUNCILS.items():
+    for name in names:
+        s = yt(f"ytsearch15:{name} council meeting")
+        if "_err" in s: log.write(f"ERR search {name} {s['_err']}\n"); time.sleep(5); continue
+        key = re.sub(r"[^a-z]", "", name.lower().replace("council", ""))
+        chans = {}
+        for e in s.get("entries", []):
+            ch = (e.get("channel") or e.get("uploader") or ""); cid = e.get("channel_id")
+            if cid and key[:10] in re.sub(r"[^a-z]", "", ch.lower()): chans[cid] = ch
+        log.write(f"{area} {name}: channels {chans}\n")
+        titles = []
+        for cid in list(chans)[:2]:
+            for tab in ("videos", "streams"):
+                d = yt(f"https://www.youtube.com/channel/{cid}/{tab}")
+                titles += [(e.get("title") or "", e.get("upload_date") or "", e.get("id")) for e in d.get("entries", []) or []]
+                time.sleep(3)
+        res.setdefault(area, []).append({"council": name, "channels": chans, "titles": titles})
+        log.write(f"   {len(titles)} videos; sample {[t[0] for t in titles[:8]]}\n")
+        time.sleep(5)
+json.dump(res, open(f"{OUT}/nz_council_videos.json", "w"), ensure_ascii=False)
 log.close()
