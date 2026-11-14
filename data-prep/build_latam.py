@@ -1061,7 +1061,8 @@ def japan():
         m = mins.get(c, {})
         n = m.get("meetings") or 0
         years = "; ".join(f"{y}:{k}" for y, k in sorted(m.get("years", {}).items()) if y != "?")
-        rows.append({"District": name, "Region": pref_en(c), "Population": round(pop) if pop else "",
+        zero = v.get("pop") == 0   # Futaba: nobody lived there at the 2020 census (evacuated after the 2011 disaster)
+        rows.append({"District": name, "Region": pref_en(c), "Population": round(pop) if pop else 0 if zero else "",
                      "Poverty rate (all ages)": f"{rate:.2f}%" if rate is not None else "",
                      "Welfare rate basis": basis if rate is not None else "",
                      "Poverty note": ("Welfare rate: people receiving public assistance (生活保護), monthly average for FY2024, as a share of the 2020 census population "
@@ -1071,7 +1072,7 @@ def japan():
                      "Children under 15": round(v["under15"]) if v.get("under15") else "",
                      "Enrollment": round(enr) if enr else "", "Enrollment year": "2024 (elementary and lower secondary schools)" if enr else "",
                      "School system": "Board of education (教育委員会)",
-                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": f"JP-{c}", "_geo": bool(f),
+                     "Locale": loc(dens) if dens else "Rural" if zero else "", "People per km² (estimated)": round(dens) if dens else 0 if zero else "", "District ID": f"JP-{c}", "_geo": bool(f),
                      "_own_meetings": True, "Available Board Meetings": n, "Meetings type": "Board of education (minutes)" if n else "",
                      "Meetings source": (m.get("pages") or [m.get("board", "")])[0] if n else "", "Latest meeting": max((y for y in m.get("years", {}) if y != "?"), default="") if n else "",
                      "Meetings by year": years if n else ""})

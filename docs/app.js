@@ -137,6 +137,9 @@
   // shared columns. Their poverty measures differ, so each row says which one it uses.
   function buildCombined(c) {
     const ps = cfg.perState, out = [];
+    // For the "By density & public schools" tab: each place's density and public/private pupils, in shared columns.
+    const densPub = (r) => { const dn = densityOf(r); return { "People per km² (estimated)": isNaN(dn) ? "" : Math.round(dn * 10) / 10,
+      "Public school enrollment": r["Public school enrollment"] ?? "", "Private school enrollment (within its borders)": r["Private school enrollment (within its borders)"] ?? "" }; };
     const pct = (v) => (String(v ?? "").trim() === "" ? "" : `${toNumber(v).toFixed(2)}%`);
     datasets.forEach((d) => d.rows.forEach((r) => {
       const ca = d.country === "CA", fr = d.country === "FR", uk = d.country === "UK", ie = d.country === "IE", terr = !!d.state;
@@ -146,6 +149,7 @@
         "Available Board Meetings": r["Available Board Meetings"] ?? "",
         [c.metric]: pct(r[sp.pov]), "Poverty measure": sp.measureColumn ? r[sp.measureColumn] : sp.measure, Children: r[sp.children] ?? "", Enrollment: r.Enrollment ?? "",
         Locale: r.Locale ? `${d.localePrefix || d.name}: ${r.Locale}` : "", "Other Board Meetings": "", [RANK]: r[RANK] ?? "", _rankEst: r._rankEst,
+        ...densPub(r),
         "Latest meeting": r["Latest meeting"] ?? "", "Meetings by year": r["Meetings by year"] ?? "", "Poverty by year": r["Poverty by year"] ?? "", "District ID": r["District ID"]
       });
       out.push({
@@ -161,6 +165,7 @@
         // Canada's locales are estimates, not NCES types, so they stay separate groups here.
         Locale: r.Locale && (ca || uk || ie) ? `${ca ? "Canada" : uk ? "UK" : "Ireland"}: ${r.Locale}` : r.Locale ?? "",
         "Other Board Meetings": r["Other Board Meetings"] ?? "",   // DC, Hawaiʻi and Vermont boards' own sites
+        ...densPub(r),
         [RANK]: r[RANK] ?? "", _rankEst: r._rankEst,
         "Latest meeting": r["Latest meeting"] ?? "", "Meetings by year": r["Meetings by year"] ?? "", "Poverty by year": r["Poverty by year"] ?? "",
         "District ID": r["District ID"]
@@ -405,6 +410,7 @@
     });
     if (view === "size") renderSize();
     if (view === "locale") renderLocale();
+    if (view === "density") renderDensity();
     if (view === "map" && window.SiteMap) window.SiteMap.show(current, datasets);
     if (view === "trends") renderTrends();
   }
@@ -417,6 +423,7 @@
     $("filters").hidden = !current || !["overview", "map"].includes(name);
     if (name === "size" && current) renderSize();
     if (name === "locale" && current) renderLocale();
+    if (name === "density" && current) renderDensity();
     if (name === "map" && current && window.SiteMap) window.SiteMap.show(current, datasets);
     if (name === "trends" && current) renderTrends();
   }
@@ -609,6 +616,80 @@
       data: { labels, datasets: [{ label: "Average available meetings", data: groups.map((g) => g.s.avgMeetings), counts: groups.map((g) => g.s.n), backgroundColor: accent, borderRadius: 3 }] },
       options: { maintainAspectRatio: false, scales: axes("Average available meetings"),
         plugins: { legend: { display: false }, tooltip: { callbacks: { label: (i) => `${i.raw.toFixed(2)} meetings on average (${i.dataset.counts[i.dataIndex]} ${label})` } } } } });
+  }
+
+  // "By density & public schools" tab: the same comparisons as "By locale", grouped by people per km² and by the share of
+  // pupils in public schools. Density: the data's own figure, else population over land area (US districts, from their
+  // borders). Public share: public pupils over public plus private (US districts), else over all pupils counted.
+  const DENSITY_BANDS = [[0, 10, "Under 10 people per km²"], [10, 50, "10–49"], [50, 100, "50–99"], [100, 500, "100–499"],
+    [500, 2000, "500–1,999"], [2000, 5000, "2,000–4,999"], [5000, Infinity, "5,000 or more"]];
+  const PUBLIC_BANDS = [[0, 50, "Under 50% public"], [50, 70, "50–69%"], [70, 80, "70–79%"], [80, 90, "80–89%"], [90, 95, "90–94%"],
+    [95, 100, "95–99%"], [100, Infinity, "100% public"]];
+  const densityOf = (r) => {
+    const d = toNumber(r["People per km² (estimated)"]);
+    if (!isNaN(d)) return d;
+    const pop = toNumber(r.Population), land = toNumber(r["Land area (km²)"]);
+    if (pop === 0) return 0;   // nobody lives there
+    return pop > 0 && land > 0 ? pop / land : NaN;
+  };
+  const publicOf = (r) => {
+    const pub = toNumber(r["Public school enrollment"]);
+    if (isNaN(pub)) return NaN;
+    const priv = toNumber(r["Private school enrollment (within its borders)"]);
+    const tot = !isNaN(priv) ? pub + priv : toNumber(r.Enrollment);
+    return tot > 0 ? Math.min(100, (100 * pub) / tot) : NaN;
+  };
+  function renderDensity() {
+    const ok = canCompare();
+    $("density-missing").hidden = ok; $("density-content").hidden = !ok;
+    if (!ok) return;
+    const label = ((current && current.recordLabel) || cfg.recordLabel || "records").toLowerCase();
+    const denom = current.columns.includes("Enrollment") && current.rows.some((r) => toNumber(r.Enrollment) > 0) ? "Enrollment"
+      : ["Children Ages 0-17", "Children", "Children Ages 5-17"].find((c) => current.columns.includes(c));
+    const per = denom === "Enrollment" ? "students" : "children";
+    const cols = ["Group", label[0].toUpperCase() + label.slice(1), "With meetings", "Avg meetings", "Poverty: with meetings", "Poverty: without",
+      `Meetings per 10,000 ${per}`];
+    const cells = (name, s) => s.n ? [name, s.n.toLocaleString(), `${pct(s.shareWith)} (${s.nWith})`, fixed(s.avgMeetings, 2),
+      s.nWith ? `${pct(s.povWith)} (${s.nWith})` : "–", s.nWithout ? `${pct(s.povWithout)} (${s.nWithout})` : "–", fixed(s.per10k, 2)]
+      : [name, "0", "–", "–", "–", "–", "–"];
+    const fill = (table, gs, total, first) => {
+      table.tHead.innerHTML = "";
+      const hr = table.tHead.insertRow();
+      cols.forEach((c, i) => { const th = document.createElement("th"); th.textContent = i ? c : first; if (i) th.className = "num"; hr.appendChild(th); });
+      const body = table.tBodies[0]; body.innerHTML = "";
+      [...gs.map((g) => cells(g.name, g.s)), cells(`All with a figure`, total)].forEach((vals, i) => {
+        const tr = body.insertRow(); if (i === gs.length) tr.className = "total";
+        vals.forEach((v, j) => { const td = tr.insertCell(); td.textContent = v; if (j) td.className = "num"; });
+      });
+    };
+    const accent = cssVar("--accent"), accent2 = cssVar("--accent-2"), text = cssVar("--muted"), grid = cssVar("--border");
+    const draw = (id, config) => { if (sizeCharts[id]) sizeCharts[id].destroy(); sizeCharts[id] = new Chart($(id), config); };
+    const shareChart = (id, groups) => draw(id, { type: "bar",
+      data: { labels: groups.map((g) => g.name), datasets: [
+        { label: "With available meetings", data: groups.map((g) => (g.s.n ? g.s.shareWith : null)), counts: groups.map((g) => g.s.nWith), backgroundColor: accent },
+        { label: "Without", data: groups.map((g) => (g.s.n ? 100 - g.s.shareWith : null)), counts: groups.map((g) => g.s.nWithout), backgroundColor: accent2 }] },
+      options: { maintainAspectRatio: false,
+        scales: { x: { stacked: true, ticks: { color: text }, grid: { display: false } },
+                  y: { stacked: true, max: 100, title: { display: true, text: `Share of ${label} (%)`, color: text }, ticks: { color: text }, grid: { color: grid } } },
+        plugins: { legend: { labels: { color: text } }, tooltip: { callbacks: { label: (i) => `${i.dataset.label}: ${pct(i.raw)} (${i.dataset.counts[i.dataIndex]} ${label})` } } } } });
+    const group = (bands, val) => {
+      const have = current.rows.filter((r) => !isNaN(val(r)));
+      const gs = bands.map(([lo, hi, name]) => ({ name, s: sizeStats(have.filter((r) => val(r) >= lo && val(r) < hi), denom) }));
+      return { have, gs, total: sizeStats(have, denom) };
+    };
+    const d = group(DENSITY_BANDS, densityOf);
+    const left = current.rows.length - d.have.length;
+    $("density-note").textContent = `${label[0].toUpperCase() + label.slice(1)} grouped by people per km² (each country's population over the place's land area; see the Population density colouring on the map).` +
+      (left ? ` ${left.toLocaleString()} without a population figure are left out.` : "");
+    fill($("density-table"), d.gs, d.total, "People per km²");
+    shareChart("density-share-chart", d.gs);
+    const p = group(PUBLIC_BANDS, publicOf);
+    const okP = p.have.length > 0;
+    $("public-missing").hidden = okP; $("public-content").hidden = !okP;
+    $("public-missing").textContent = `No split between public and private pupils is published for ${current.name}, so its ${label} can't be grouped this way.`;
+    $("public-note").textContent = okP ? `${label[0].toUpperCase() + label.slice(1)} grouped by the share of their pupils in public schools (see each country's source for what counts as public).` +
+      (current.rows.length - p.have.length ? ` ${(current.rows.length - p.have.length).toLocaleString()} without a public/private split are left out.` : "") : "";
+    if (okP) { fill($("public-table"), p.gs, p.total, "Pupils in public schools"); shareChart("public-share-chart", p.gs); }
   }
 
   function statCard(parent, label, value, sub) {
@@ -1262,6 +1343,7 @@
     renderUrban();
     if (view === "size") renderSize();
     if (view === "locale") renderLocale();
+    if (view === "density") renderDensity();
   });
 
   load();
