@@ -41,7 +41,10 @@ NAMES = {"Antigua and Barb.": "Antigua and Barbuda", "St. Kitts and Nevis": "Sai
 # Falkland Islands: no school-attendance table in its 2021 Census, so an estimate: residents aged 5-15 (school is
 # compulsory from 5 to 16, and sixth-form students study in the UK), Falkland Islands Government, 2021 Census
 # Tables, table 2b (population by single years of age): 398.
-ENR_MANUAL = {"NFK": (265, "2021 Census (residents attending primary and secondary school; ABS)"),
+# Niue: Niue High School, 214 students in 2019, plus Niue Primary School, years 1-6 in term 4 of 2005 (178; early
+# childhood education left out), Niue Statistics Office: niuestatistics.nu/social/education/.
+ENR_MANUAL = {"NIU": (392, "2019 high school (214) and 2005 primary, years 1–6 (178): Niue Statistics Office"),
+              "NFK": (265, "2021 Census (residents attending primary and secondary school; ABS)"),
               "FLK": (398, "2021 Census (estimated: residents aged 5–15, the compulsory school ages; Falkland Islands Government)")}
 MANUAL = {"NFK": (2.8, "Unemployment rate, a stand-in for poverty (Australian Bureau of Statistics, 2021 Census: 33 of 1,187 in the labour force)"),
           "MAF": (27.0, "Unemployment rate, a stand-in for poverty (census definition, 2023; IEDOM annual report on Saint-Martin, 2025 edition)"),
@@ -83,10 +86,16 @@ EXTRA = {
     "PCN": dict(name="Pitcairn Islands", region="Pacific", status="Territory of the United Kingdom", rate=0.0,
                 measure="Unemployment rate, a stand-in for poverty: all 31 working-age adults held part-time government jobs (Pitcairn Island Economic Review, 2014); "
                         "average household income was about NZ$27,000 a year, a third of New Zealand's",
-                pop=50, kids=None, enr=None, ey="", land=47),
+                # Pupils: none. Pulau School closed in 2022 for lack of children; the last pupil went to a boarding school in New
+                # Zealand, and a United Nations working paper reports no children educated in the local school (Jeff Zhou,
+                # "Education in the Pitcairn Islands", The Borgen Project). Secondary pupils study in New Zealand.
+                pop=50, kids=None, enr=0, ey="Pulau School closed in 2022 for lack of children; none are taught on the island (The Borgen Project, citing a UN working paper)", land=47),
     "TKL": dict(name="Tokelau", region="Pacific", status="Territory of New Zealand", rate=3.9,
                 measure="People below the basic-needs poverty line, all ages (Tokelau Household Income and Expenditure Survey, 2015/16)",
-                pop=2453, kids=None, enr=None, ey="", land=12),
+                # Pupils (estimated): 2016 Census, children aged 5-14 in Tokelau on census night (150 + 137, table 1.1.2; those
+                # living away don't attend its schools) plus people aged 15+ still at school (54, table 4.1), Tokelau
+                # National Statistics Office.
+                pop=2453, kids=None, enr=341, ey="2016 Census (estimated: 287 children aged 5–14 in Tokelau on census night, plus 54 people aged 15+ still at school)", land=12),
 }
 # Meetings: no island has a school board (a ministry runs the schools), so, as for Saint-Pierre-et-Miquelon,
 # the stand-in is the elected legislature's sittings on its YouTube channel (islands_youtube.py finds
@@ -310,7 +319,7 @@ def main():
         out.append({"District": e["name"], "Region": e["region"], "Status": e["status"],
                     "Available Board Meetings": 0, "Meetings source": "", "Latest meeting": "", "Meetings by year": "", "Meetings note": "",
                     "Poverty rate or stand-in": f"{e['rate']:.2f}%" if e["rate"] is not None else "", "Poverty measure": e["measure"],
-                    "Population": e["pop"], "Children Ages 0-14 (estimated)": e["kids"] or "", "Enrollment": e["enr"] or "", "Enrollment year": e["ey"],
+                    "Population": e["pop"], "Children Ages 0-14 (estimated)": e["kids"] or "", "Enrollment": e["enr"] if e["enr"] is not None else "", "Enrollment year": e["ey"],
                     "Locale": "Urban" if dens >= 2000 else "Suburban" if dens >= 500 else "Mixed" if dens >= 100 else "Rural",
                     "People per km² (estimated)": round(dens), "District ID": f"ISLE-{iso}"})
     out.sort(key=lambda r: r["District"])
@@ -333,7 +342,15 @@ def main():
         else:
             r["Meetings note"] = ZERO_NOTES.get(iso, "No school board meets in public, and no recorded sittings of the legislature were found on YouTube "
                                                      "(the search found only news, party or other countries' channels); it may stream on its own website")
+    # Public-school pupils where the source shows only government schools (the share is then 100%): Christmas Island and
+    # Cocos (Keeling) Islands (one government school each), Svalbard (Longyearbyen's municipal school), the Falklands (two
+    # government schools), Niue (two government schools), Tokelau (a government school on each atoll); Norfolk Island: 262 of 265 at government schools (2021 Census).
+    # Gibraltar's figure covers its government schools only, so it gets none.
+    for r in out:
+        iso = r["District ID"][5:]
+        r["Public school enrollment"] = 262 if iso == "NFK" else r["Enrollment"] if iso in ("CXR", "CCK", "SJM", "FLK", "NIU", "TKL") and r["Enrollment"] else ""
     cols = list(out[0])
+    cols.insert(cols.index("Enrollment year") + 1, cols.pop(cols.index("Public school enrollment")))
     with open(os.path.join(DOCS, "islands.csv"), "w", newline="", encoding="utf-8") as fo:
         w = csv.DictWriter(fo, fieldnames=cols); w.writeheader(); w.writerows(out)
     shapes = json.load(open(os.path.join(IN, "world", "ne_10m_islands.geojson"), encoding="utf-8"))

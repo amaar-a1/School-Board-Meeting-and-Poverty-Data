@@ -181,6 +181,11 @@ window.SOURCES = [
     only: "Islands and microstates",
     group: "Islands and microstates",
     items: [
+      { title: "Tokelau pupils (estimated, 341): Tokelau National Statistics Office, 2016 Census of Population and Dwellings: children aged 5–14 in Tokelau on census night (287; Tables about demography, table 1.1.2) plus people aged 15 and over still at school (54; Tables about education, table 4.1)", url: "https://www.tokelau.org.nz/Stats.html" },
+      { title: "Pitcairn Islands pupils (0): Jeff Zhou, “Education in the Pitcairn Islands”, The Borgen Project: Pulau School closed in 2022 for lack of children, the last pupil moved to boarding school in New Zealand, and a United Nations working paper reports no children educated in the local school", url: "https://borgenproject.org/education-in-the-pitcairn-islands/" },
+      { title: "Niue pupils: Niue High School, 214 students in 2019 (Niue Statistics Office)", url: "https://niuestatistics.nu/social/education/niue-high-school/" },
+      { title: "Niue pupils: Niue Primary School, years 1–6 in term 4 of 2005, 178 (early childhood education left out; Niue Statistics Office)", url: "https://niuestatistics.nu/social/education/early-childhood-education-and-niue-primary-school/" },
+      { title: "Public-school share: 100% where the islands have only government schools (Christmas Island, Cocos (Keeling) Islands, Svalbard, the Falklands, Niue, Tokelau); Norfolk Island 262 of 265 pupils at government schools (2021 Census)" },
       { title: "Falkland Islands pupils (estimated): residents aged 5–15, the compulsory school ages (398), Falkland Islands Government, Policy Department, 2021 Census Tables, table 2b (population by single years of age); used non-commercially, as its terms allow", url: "https://www.gov.fk/policy/2021-census/" },
       { title: "Svalbard pupils: Statistics Norway, table 11980, pupils in compulsory school, Longyearbyen, 2025 (194)", url: "https://www.ssb.no/en/statbank/table/11980/" },
       { title: "Children below 60% of the median income (Malta, Cyprus): Eurostat ilc_li02", url: "https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table" },
