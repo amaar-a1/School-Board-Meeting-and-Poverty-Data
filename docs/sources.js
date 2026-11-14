@@ -273,7 +273,7 @@ window.SOURCES = [
       { title: "Borders: district boundaries (INEI), as GeoJSON by Juan Eladio Sánchez Rosas (peru-geojson)", url: "https://github.com/juaneladio/peru-geojson" },
       { title: "Borders of the 48 districts created since: Instituto Geográfico Nacional, via OCHA and geoBoundaries (gbHumanitarian PER ADM3), checked to lie inside the district each was made from", url: "https://www.geoboundaries.org/" },
       { title: "Meetings (stand-in): each council's YouTube channel, checked by hand (in the “Meetings source” column)", url: "https://www.youtube.com/" },
-      { title: "Enrollment: Ministerio de Educación (MINEDU), ESCALE – Estadística de la Calidad Educativa, Padrón de Instituciones Educativas: pupils (Alumnos) in each school and programme from the Censo Educativo 2025, with its location code (ubigeo), summed by district", url: "https://escale.minedu.gob.pe/padron-de-iiee" }
+      { title: "Enrollment: Ministerio de Educación (MINEDU), ESCALE – Estadística de la Calidad Educativa, Padrón de Instituciones Educativas: pupils (Alumnos) in each school and programme from the Censo Educativo 2025, with its location code (ubigeo), summed by district. Public schools: Tipo de Gestión “Pública de gestión directa” or “Pública de gestión privada”; the rest private", url: "https://escale.minedu.gob.pe/padron-de-iiee" }
     ],
     note: "Built by data-prep/build_latam.py. Districts are matched to borders, and schools to districts, by their INEI code (ubigeo); 50 have no border in the file. ESCALE's enrollment export was downloaded by the project's owner (the site blocks automated downloads) and is kept summed by district in data-prep/inputs/peru/pe_alumnos_2025.json."
   },
