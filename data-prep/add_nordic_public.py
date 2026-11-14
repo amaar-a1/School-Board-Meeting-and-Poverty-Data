@@ -11,7 +11,11 @@ Sweden: Kolada N15831, 2025: the share of each municipality's resident pupils (f
   Public = the rest, at their own municipality's schools, times the site's Enrollment figure (Kolada N15835, the
   same pupils). Pupils at another municipality's public school count as not public, so Sweden's share runs a little low.
   Input: inputs/nordic/se_N15831_2025.json.
-Adds or refreshes "Public school enrollment" in docs/data/norway.csv, denmark.csv and sweden.csv. Safe to re-run.
+Finland: Statistics Finland 125j, 2025: pupils at comprehensive schools, special schools and combined comprehensive and
+  upper-secondary schools in each municipality, by owner type. Public = municipal, joint-municipal and state schools;
+  private = privately owned (yksityinen). The public share is applied to the site's Enrollment figure (Statistics
+  Finland 133w). Input: inputs/nordic/fi_125j_owner_2025.json.
+Adds or refreshes "Public school enrollment" in docs/data/norway.csv, denmark.csv, sweden.csv and finland.csv. Safe to re-run.
 Usage: python3 data-prep/add_nordic_public.py
 """
 import csv, json, os, unicodedata
@@ -74,3 +78,25 @@ p = os.path.join(DOCS, "sweden.csv")
 swe = {r["District ID"].split("-")[1]: round(float(r["Enrollment"]) * (100 - se[r["District ID"].split("-")[1]]) / 100)
        for r in csv.DictReader(open(p, encoding="utf-8")) if r.get("Enrollment") and r["District ID"].split("-")[1] in se}
 add("sweden.csv", swe, lambda r: r["District ID"].split("-")[1])
+
+# Finland: json-stat2, dimensions year x municipality x owner x language x school type x contents
+import math
+d = json.load(open(os.path.join(IN, "fi_125j_owner_2025.json"), encoding="utf-8"))
+ids, size, vals = d["id"], d["size"], d["value"]
+cats = {k: list(d["dimension"][k]["category"]["index"]) for k in ids}
+def fv(sel):
+    i = sum(cats[k].index(sel[k]) * math.prod(size[j + 1:]) for j, k in enumerate(ids))
+    return vals[i] or 0
+fin = {}
+for reg in cats["alue_23_20230101"]:
+    if not reg.startswith("KU"): continue
+    tot = priv = 0
+    for t in cats["oppilaittostyyp_6_20180101"]:
+        base = {"timeperiod_y": cats["timeperiod_y"][0], "alue_23_20230101": reg, "kieli_15_20180102": cats["kieli_15_20180102"][0],
+                "oppilaittostyyp_6_20180101": t, "contentscode": "Oppyht"}
+        tot += fv({**base, "omistajatyyppi_11_19930101": "S"}); priv += fv({**base, "omistajatyyppi_11_19930101": "1"})
+    if tot: fin[reg[2:]] = 1 - priv / tot
+p = os.path.join(DOCS, "finland.csv")
+fpub = {r["District ID"][3:]: round(float(r["Enrollment"]) * fin[r["District ID"][3:]])
+        for r in csv.DictReader(open(p, encoding="utf-8")) if r.get("Enrollment") and r["District ID"][3:] in fin}
+add("finland.csv", fpub, lambda r: r["District ID"][3:])

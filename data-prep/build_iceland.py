@@ -68,14 +68,24 @@ SCHOOLS = {   # municipality code: compulsory schools in it, as named in SKO0210
 }
 
 
+# Private (einka-) schools, 2025: these 12 and Ásgarður (a distance school, 36 pupils, in no one municipality) are
+# Statistics Iceland's 13 private compulsory schools with 1,500 pupils (table SKO02202, 2025); asserted below.
+PRIVATE = {"Barnaskóli Hjallastefnunnar Reykjavík", "Landakotsskóli", "Skóli Ísaks Jónssonar", "Suðurhlíðarskóli", "Tjarnarskóli",
+           "Waldorfskólinn Sólstafir", "Arnarskóli", "Waldorfskólinn Lækjarbotnum", "Alþjóðaskólinn á Íslandi",
+           "Barnaskóli Hjallastefnunnar Garðabæ", "Barnaskóli Hjallastefnunnar Hafnarfirði", "NÚ", "Barnaskóli Hjallastefnunnar Reykjanesbæ"}
+PUBLIC = {}
+
+
 def pupils():
     rows = list(csv.reader(open(os.path.join(IN, "is_SKO02102_pupils_by_school_2025.csv"), encoding="utf-8-sig")))
     n = {r[0]: int(r[1]) for r in rows[1:] if r[1].strip().isdigit()}
+    assert sum(n[s] for s in PRIVATE if s in n) + n["Ásgarður"] == 1500, "private schools no longer match SKO02202"
     out, seen = {}, set()
     for code, names in SCHOOLS.items():
         for s in names.split("|"):
             assert s in n, s
             out[code] = out.get(code, 0) + n[s]; seen.add(s)
+            if s not in PRIVATE: PUBLIC[code] = PUBLIC.get(code, 0) + n[s]
     left = sorted(set(n) - seen - {"Alls", "Ásgarður"})
     assert not left, left
     return out, rows[0][1].split()[0]
@@ -141,7 +151,7 @@ def main():
         rows.append({"District": name, "Locale": "Urban" if dens >= 2000 else "Suburban" if dens >= 500 else "Mixed" if dens >= 100 else "Rural",
                      "Available Board Meetings": n, "Meetings source": url,
                      **dict(zip(("Latest meeting", "Meetings by year"), date_summary(council) if n else ("", ""))),
-                     "Population": tot, "Children": kids, "Enrollment": enr.get(lid, ""), "Enrollment year": f"Autumn {enr_year}" if lid in enr else "", "Percentage of Children in Low Income": f"{rate:.2f}%",
+                     "Population": tot, "Children": kids, "Enrollment": enr.get(lid, ""), "Enrollment year": f"Autumn {enr_year}" if lid in enr else "", "Public school enrollment": PUBLIC.get(lid, 0) if lid in enr else "", "Percentage of Children in Low Income": f"{rate:.2f}%",
                      "Poverty note": f"Iceland's national rate, {ty} (Eurostat); no local child rate is published",
                      "People per km² (estimated)": round(dens), "District ID": f"IS-{lid}"})
         rnd = lambda c: [rnd(x) for x in c] if isinstance(c[0], list) else [round(c[0], 4), round(c[1], 4)]
