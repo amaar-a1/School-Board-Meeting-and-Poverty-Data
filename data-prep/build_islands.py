@@ -92,7 +92,10 @@ EXTRA = {
                 pop=50, kids=None, enr=0, ey="Pulau School closed in 2022 for lack of children; none are taught on the island (The Borgen Project, citing a UN working paper)", land=47),
     "TKL": dict(name="Tokelau", region="Pacific", status="Territory of New Zealand", rate=3.9,
                 measure="People below the basic-needs poverty line, all ages (Tokelau Household Income and Expenditure Survey, 2015/16)",
-                pop=2453, kids=None, enr=None, ey="", land=12),
+                # Pupils (estimated): 2016 Census, children aged 5-14 in Tokelau on census night (150 + 137, table 1.1.2; those
+                # living away don't attend its schools) plus people aged 15+ still at school (54, table 4.1), Tokelau
+                # National Statistics Office.
+                pop=2453, kids=None, enr=341, ey="2016 Census (estimated: 287 children aged 5–14 in Tokelau on census night, plus 54 people aged 15+ still at school)", land=12),
 }
 # Meetings: no island has a school board (a ministry runs the schools), so, as for Saint-Pierre-et-Miquelon,
 # the stand-in is the elected legislature's sittings on its YouTube channel (islands_youtube.py finds
@@ -341,11 +344,11 @@ def main():
                                                      "(the search found only news, party or other countries' channels); it may stream on its own website")
     # Public-school pupils where the source shows only government schools (the share is then 100%): Christmas Island and
     # Cocos (Keeling) Islands (one government school each), Svalbard (Longyearbyen's municipal school), the Falklands (two
-    # government schools), Niue (two government schools); Norfolk Island: 262 of 265 at government schools (2021 Census).
+    # government schools), Niue (two government schools), Tokelau (a government school on each atoll); Norfolk Island: 262 of 265 at government schools (2021 Census).
     # Gibraltar's figure covers its government schools only, so it gets none.
     for r in out:
         iso = r["District ID"][5:]
-        r["Public school enrollment"] = 262 if iso == "NFK" else r["Enrollment"] if iso in ("CXR", "CCK", "SJM", "FLK", "NIU") and r["Enrollment"] else ""
+        r["Public school enrollment"] = 262 if iso == "NFK" else r["Enrollment"] if iso in ("CXR", "CCK", "SJM", "FLK", "NIU", "TKL") and r["Enrollment"] else ""
     cols = list(out[0])
     cols.insert(cols.index("Enrollment year") + 1, cols.pop(cols.index("Public school enrollment")))
     with open(os.path.join(DOCS, "islands.csv"), "w", newline="", encoding="utf-8") as fo:
