@@ -181,6 +181,7 @@ window.SOURCES = [
     only: "Islands and microstates",
     group: "Islands and microstates",
     items: [
+      { title: "Pitcairn Islands pupils (0): Jeff Zhou, “Education in the Pitcairn Islands”, The Borgen Project: Pulau School closed in 2022 for lack of children, the last pupil moved to boarding school in New Zealand, and a United Nations working paper reports no children educated in the local school", url: "https://borgenproject.org/education-in-the-pitcairn-islands/" },
       { title: "Niue pupils: Niue High School, 214 students in 2019 (Niue Statistics Office)", url: "https://niuestatistics.nu/social/education/niue-high-school/" },
       { title: "Niue pupils: Niue Primary School, years 1–6 in term 4 of 2005, 178 (early childhood education left out; Niue Statistics Office)", url: "https://niuestatistics.nu/social/education/early-childhood-education-and-niue-primary-school/" },
       { title: "Public-school share: 100% where the islands have only government schools (Christmas Island, Cocos (Keeling) Islands, Svalbard, the Falklands, Niue); Norfolk Island 262 of 265 pupils at government schools (2021 Census)" },

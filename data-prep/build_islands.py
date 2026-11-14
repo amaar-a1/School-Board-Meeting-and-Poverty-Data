@@ -86,7 +86,10 @@ EXTRA = {
     "PCN": dict(name="Pitcairn Islands", region="Pacific", status="Territory of the United Kingdom", rate=0.0,
                 measure="Unemployment rate, a stand-in for poverty: all 31 working-age adults held part-time government jobs (Pitcairn Island Economic Review, 2014); "
                         "average household income was about NZ$27,000 a year, a third of New Zealand's",
-                pop=50, kids=None, enr=None, ey="", land=47),
+                # Pupils: none. Pulau School closed in 2022 for lack of children; the last pupil went to a boarding school in New
+                # Zealand, and a United Nations working paper reports no children educated in the local school (Jeff Zhou,
+                # "Education in the Pitcairn Islands", The Borgen Project). Secondary pupils study in New Zealand.
+                pop=50, kids=None, enr=0, ey="Pulau School closed in 2022 for lack of children; none are taught on the island (The Borgen Project, citing a UN working paper)", land=47),
     "TKL": dict(name="Tokelau", region="Pacific", status="Territory of New Zealand", rate=3.9,
                 measure="People below the basic-needs poverty line, all ages (Tokelau Household Income and Expenditure Survey, 2015/16)",
                 pop=2453, kids=None, enr=None, ey="", land=12),
@@ -313,7 +316,7 @@ def main():
         out.append({"District": e["name"], "Region": e["region"], "Status": e["status"],
                     "Available Board Meetings": 0, "Meetings source": "", "Latest meeting": "", "Meetings by year": "", "Meetings note": "",
                     "Poverty rate or stand-in": f"{e['rate']:.2f}%" if e["rate"] is not None else "", "Poverty measure": e["measure"],
-                    "Population": e["pop"], "Children Ages 0-14 (estimated)": e["kids"] or "", "Enrollment": e["enr"] or "", "Enrollment year": e["ey"],
+                    "Population": e["pop"], "Children Ages 0-14 (estimated)": e["kids"] or "", "Enrollment": e["enr"] if e["enr"] is not None else "", "Enrollment year": e["ey"],
                     "Locale": "Urban" if dens >= 2000 else "Suburban" if dens >= 500 else "Mixed" if dens >= 100 else "Rural",
                     "People per km² (estimated)": round(dens), "District ID": f"ISLE-{iso}"})
     out.sort(key=lambda r: r["District"])
