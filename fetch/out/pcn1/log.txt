@@ -1,0 +1,20 @@
+OK https://en.wikipedia.org/w/index.php?title=Pitcairn_Islands&action=raw
+  er_title3 = [[Administrator of the Pitcairn Islands|Administrator]] | leader_name3 = Rachael Midlen {{cite web |title=Pitcairn Island Council: Minutes of the Special Council Meeting Held at the Pulau School Commencing at 11:00 am, January 12, 2026 |publisher=Pitcairn Island Council |url=https://static1.squarespace.com/static/6526ff6fef608a3828c13d05/t/6a31714804509f1abf0f883a/1781625160478/Special+Council+minutes+January+1
+  that by March 1833, he had founded a [[temperance society]] to combat drunkenness, a "[[Maundy Thursday|Maundy Thursday Society]]", a monthly prayer meeting, a juvenile society, a Peace Society and a school. {{cite book |title=Church Missionary Society Archives |publisher=[[University of Birmingham]] |id=G/AC/15/75}} quoted in {{cite book |last=Wolffe |first=John |series=The expansion of evangelicalism |title=The age of Wi
+  eral fund which enabled the island to be mostly self-sufficient. This fund was used to meet the regular needs of the community, and pay wages. Funds in excess of regular expenses were used to build a school and hire a teacher from New Zealand, the first professional teacher hired on the island. The fund was also used to subsidise imports and travel to New Zealand. At later points, the sale of coins and .pn domain names als
+  reole language]] derived from 18th-century English, with elements of the [[Tahitian language]]. It is spoken as a first language by the population and is taught alongside English at the island's only school. It is closely related to the creole language [[Norfuk language|Norfuk]], spoken on [[Norfolk Island]], because Norfolk was repopulated in the mid-19th century by Pitcairners. === Religion === The only church building o
+  ay Adventism|Sabbath]], or as a mark of respect for observant Adventists. [[File:Pitcairn - Church of Adamstown.jpg|thumb|Church of Adamstown|alt=Adamstown]] The church was built in 1954. The Sabbath School meets at 10 am on Saturday mornings, and is followed by Divine Service an hour later. On Tuesday evenings, there is another service in the form of a prayer meeting. === Education === Education is free and compulsory bet
+  29 September 2020|archive-url=https://web.archive.org/web/20200929155717/https://library.puc.edu/pitcairn/pitcairn/education.shtml|url-status=live}} Children up to the age of 12 are taught at [[Pulau School]], while children of 13 and over attend secondary school in New Zealand, or are educated via correspondence school. {{cite web|url=http://www.pitcairn.gov.pn/policies/SDP%202014-2018%20-%20Amended%2011-05-2016.pdf|page=
+  011-05-2016.pdf|url-status=live}} The island's children have produced a book in [[Pitkern language|Pitkern]] and English called ''Mi Bas Side orn Pitcairn'' or ''My Favourite Place on Pitcairn''. The school on Pitcairn, Pulau School, provides pre-school and primary education based on the New Zealand syllabus. The teacher is appointed by the governor from qualified applicants who are registered in New Zealand as teachers. T
+  he government officially took responsibility for education in 1958; the Seventh-day Adventist Church had done so from the 1890s until 1958. There were ten students in 1999; enrolment was previously 20 in the early 1950s, 28 in 1959, and 36 in 1962. The Pulau School has a residence for teachers built in 2004; there was a previous such facility built in 1950. === Historical populati
+OK https://en.wikipedia.org/w/index.php?title=Adamstown,_Pitcairn_Islands&action=raw
+  
+OK https://en.wikipedia.org/w/index.php?title=Education_in_the_Pitcairn_Islands&action=raw
+  
+OK https://www.government.pn
+  
+ERR https://www.government.pn/departments HTTP Error 404: Not Found
+ERR https://www.immigration.gov.pn <urlopen error timed out>
+OK https://www.visitpitcairn.pn
+  
+WIKI search []
