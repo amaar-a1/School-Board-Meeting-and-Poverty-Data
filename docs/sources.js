@@ -116,6 +116,7 @@ window.SOURCES = [
     items: [
       { title: "Low economic standard: Statistics Sweden (SCB) table TAB6685, people 0–19 with household income below 60% of the median, 2024", url: "https://www.statistikdatabasen.scb.se/" },
       { title: "Pupils: Kolada key figure N15835, pupils in compulsory school (F–9) by home municipality, 2025", url: "https://www.kolada.se/" },
+      { title: "Public-school pupils: Kolada N15831 (from SCB), 2025: the share of resident pupils (förskoleklass to year 9) at an independent (fristående) school or another municipality's school; the rest, at their own municipality's schools, count as public", url: "https://www.kolada.se/verktyg/fri-sokning/?kpis=N15831" },
       { title: "Borders and density: Eurostat GISCO Local Administrative Units (LAU) 2023", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" }
     ],
     note: "Locales are estimates from Eurostat's 2023 people per km² for each municipality: urban 2,000+, suburban 500–2,000, mixed 100–500, rural under 100. Built by data-prep/build_nordic.py."

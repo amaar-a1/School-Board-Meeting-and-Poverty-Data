@@ -6,7 +6,12 @@ Norway: Statistics Norway table 11980, pupils in compulsory school (all grades),
 Denmark: Statistics Denmark LABY23, pupils on 1 October 2025 by municipality and type of school: public basic
   schools (folkeskoler) plus "other schools" (mostly municipal special and youth schools) are public; private
   basic schools (friskoler) and boarding schools (efterskoler) are private. Input: inputs/nordic/dk_LABY23_by_type.csv.
-Adds or refreshes "Public school enrollment" in docs/data/norway.csv and denmark.csv. Safe to re-run.
+Sweden: Kolada N15831, 2025: the share of each municipality's resident pupils (förskoleklass to year 9) at a school
+  not run by their own municipality (an independent, fristående, school, or a school in another municipality).
+  Public = the rest, at their own municipality's schools, times the site's Enrollment figure (Kolada N15835, the
+  same pupils). Pupils at another municipality's public school count as not public, so Sweden's share runs a little low.
+  Input: inputs/nordic/se_N15831_2025.json.
+Adds or refreshes "Public school enrollment" in docs/data/norway.csv, denmark.csv and sweden.csv. Safe to re-run.
 Usage: python3 data-prep/add_nordic_public.py
 """
 import csv, json, os, unicodedata
@@ -62,3 +67,10 @@ for r in csv.DictReader(open(os.path.join(IN, "dk_LABY23_by_type.csv"), encoding
         k = norm(r["KOMGRP"]); dk[k] = dk.get(k, 0) + int(r["INDHOLD"])
 dk["kobenhavn"] = dk.get("copenhagen")
 add("denmark.csv", dk, lambda r: norm(r["District"]))
+
+# Sweden: by municipality code (District ID "SE-0114")
+se = json.load(open(os.path.join(IN, "se_N15831_2025.json"), encoding="utf-8"))["share_by_municipality"]
+p = os.path.join(DOCS, "sweden.csv")
+swe = {r["District ID"].split("-")[1]: round(float(r["Enrollment"]) * (100 - se[r["District ID"].split("-")[1]]) / 100)
+       for r in csv.DictReader(open(p, encoding="utf-8")) if r.get("Enrollment") and r["District ID"].split("-")[1] in se}
+add("sweden.csv", swe, lambda r: r["District ID"].split("-")[1])
