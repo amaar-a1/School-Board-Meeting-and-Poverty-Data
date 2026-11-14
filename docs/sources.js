@@ -105,7 +105,7 @@ window.SOURCES = [
     items: [
       { title: "Child low income: Statistics Norway table 12944, persistent low income (EU scale, 60% of the median), children 0–17, 2022–2024", url: "https://www.ssb.no/en/statbank/table/12944/" },
       { title: "Where the child rate isn't published (13 small municipalities): Statistics Norway table 12944, all ages, 2022–2024", url: "https://www.ssb.no/en/statbank/table/12944/" },
-      { title: "Pupils: Statistics Norway table 11980, pupils in compulsory school, 2025", url: "https://www.ssb.no/en/statbank/table/11980/" },
+      { title: "Pupils: Statistics Norway table 11980, pupils in compulsory school, 2025 (all schools; public = “Kommunal”, municipal schools)", url: "https://www.ssb.no/en/statbank/table/11980/" },
       { title: "Borders and density: Eurostat GISCO Local Administrative Units (LAU) 2023", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" }
     ],
     note: "Locales are estimates from Eurostat's 2023 people per km² for each municipality: urban 2,000+, suburban 500–2,000, mixed 100–500, rural under 100. Built by data-prep/build_nordic.py. Norway renumbered its municipalities in 2024, so the figures are matched to the 2023 borders by name; Haram, split from Ålesund in 2024, isn't shown on its own: its area is drawn as part of Ålesund, whose figures are for Ålesund without Haram."
@@ -136,7 +136,7 @@ window.SOURCES = [
     group: "Denmark: municipalities, child poverty and pupils",
     items: [
       { title: "Child poverty: Statistics Denmark table LABY07, children 0–17 in relative poverty (50% of the median), 2024", url: "https://www.statbank.dk/LABY07" },
-      { title: "Pupils: Statistics Denmark table LABY23, pupils in primary and lower secondary school on 1 October 2025", url: "https://www.statbank.dk/LABY23" },
+      { title: "Pupils: Statistics Denmark table LABY23, pupils in primary and lower secondary school on 1 October 2025; public = public basic schools (folkeskoler) and other schools (mostly municipal special schools); private = friskoler and efterskoler", url: "https://www.statbank.dk/LABY23" },
       { title: "Borders and density: Eurostat GISCO Local Administrative Units (LAU) 2023", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" }
     ],
     note: "Locales are estimates from Eurostat's 2023 people per km² for each municipality: urban 2,000+, suburban 500–2,000, mixed 100–500, rural under 100. Built by data-prep/build_nordic.py."
