@@ -1,0 +1,4 @@
+unsd 2024: 10893 rows, cols ['USPS', 'GEOID', 'NAME', 'LOGRADE', 'HIGRADE', 'ALAND', 'AWATER', 'ALAND_SQMI', 'AWATER_SQMI', 'INTPTLAT', 'INTPTLONG']
+elsd 2024: 1952 rows, cols ['USPS', 'GEOID', 'NAME', 'LOGRADE', 'HIGRADE', 'ALAND', 'AWATER', 'ALAND_SQMI', 'AWATER_SQMI', 'INTPTLAT', 'INTPTLONG']
+scsd 2024: 481 rows, cols ['USPS', 'GEOID', 'NAME', 'LOGRADE', 'HIGRADE', 'ALAND', 'AWATER', 'ALAND_SQMI', 'AWATER_SQMI', 'INTPTLAT', 'INTPTLONG']
+SPM [{"nom":"Miquelon-Langlade","code":"97501","population":596,"surface":19277.71},{"nom":"Saint-Pierre","code":"97502","population":5194,"surface":2681.04}]
