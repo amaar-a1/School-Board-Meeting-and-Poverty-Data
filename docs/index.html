@@ -39,6 +39,7 @@
         <option data-view-tab="overview" value="overview">Overview</option>
         <option data-view-tab="size" value="size">By district size</option>
         <option data-view-tab="locale" value="locale">By locale</option>
+        <option data-view-tab="density" value="density">By density &amp; public schools</option>
         <option data-view-tab="rules" value="rules">State rules</option>
         <option data-view-tab="map" value="map">Map</option>
         <option data-view-tab="trends" value="trends">Trends</option>
@@ -300,6 +301,28 @@
           tables, charts or totals. Canada's colors use the
           share of children 0–17 in low income (2021 Census, LIM-AT), which isn't the same measure as the US child poverty rate.</p>
       </section>
+    </div>
+
+    <div data-view="density" hidden>
+      <p id="density-missing" class="status" hidden>This tab needs meeting counts and child poverty figures.</p>
+      <div id="density-content">
+        <section class="card">
+          <h2>By population density</h2>
+          <p id="density-note" class="muted"></p>
+          <div class="table-scroll"><table id="density-table"><thead></thead><tbody></tbody></table></div>
+          <div class="chart-box"><canvas id="density-share-chart" role="img" aria-label="Bar chart: share with available meetings by population density"></canvas></div>
+        </section>
+        <section class="card">
+          <h2>By share of pupils in public schools</h2>
+          <p id="public-note" class="muted"></p>
+          <p id="public-missing" class="status" hidden></p>
+          <div id="public-content">
+            <div class="table-scroll"><table id="public-table"><thead></thead><tbody></tbody></table></div>
+            <div class="chart-box"><canvas id="public-share-chart" role="img" aria-label="Bar chart: share with available meetings by share of pupils in public schools"></canvas></div>
+          </div>
+        </section>
+        <p class="note">A dash (–) means the group has none, so there is nothing to average. Poverty measures differ between countries (see each country's note), so compare groups within a country.</p>
+      </div>
     </div>
 
     <div data-view="rules" hidden>
