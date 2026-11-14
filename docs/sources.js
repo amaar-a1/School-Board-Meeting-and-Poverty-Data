@@ -239,6 +239,7 @@ window.SOURCES = [
     items: [
       { title: "Multidimensional poverty by municipality: DANE, Medida de pobreza multidimensional de fuente censal (2018 census)", url: "https://www.dane.gov.co/index.php/estadisticas-por-tema/pobreza-y-condiciones-de-vida/pobreza-y-desigualdad/medida-de-pobreza-multidimensional-de-fuente-censal" },
       { title: "Enrollment and the education authority: Ministry of Education statistics by municipality, 2024 (datos.gov.co, nudc-7mev): gross coverage (cobertura bruta) times the population aged 5–16 gives back the ministry's enrollment count", url: "https://www.datos.gov.co/Educaci-n/MEN_ESTADISTICAS_EN_EDUCACION_EN_PREESCOLAR-B-SICA-Y-MEDIA_POR_MUNICIPIO/nudc-7mev" },
+      { title: "Public-school share: Ministry of Education, establecimientos educativos de preescolar, básica y media, 2025 (datos.gov.co, cfw5-qzt5): pupils at official (sector oficial) against non-official schools in each municipality", url: "https://www.datos.gov.co/d/cfw5-qzt5" },
       { title: "Borders: geoBoundaries (gbOpen) Colombia ADM1 and ADM2, simplified", url: "https://www.geoboundaries.org/" },
       { title: "Meetings (stand-in): each council's or municipality's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
     ],
@@ -468,6 +469,7 @@ window.SOURCES = [
     only: "United Kingdom",
     group: "United Kingdom: councils, child low income and pupils",
     items: [
+      { title: "Public-school share (England): independent schools' pupils in each local authority, Get Information about Schools full establishment extract, November 2026; against the state-funded pupils already used for enrollment", url: "https://get-information-schools.service.gov.uk/Downloads" },
       { title: "Child low income: DWP, Children in Low Income Families: local area statistics, financial year ending 2025 (Table 7, relative low income before housing costs, children under 16)", url: "https://www.gov.uk/government/statistics/children-in-low-income-families-local-area-statistics-2022-to-2025" },
       { title: "England's two-tier counties: ONS Local Authority District to County and Unitary Authority (December 2024) lookup (districts added up)", url: "https://geoportal.statistics.gov.uk/" },
       { title: "England pupils: Get Information about Schools, all establishments (open state-funded schools: council-maintained, academies, free schools and special schools), November 2026", url: "https://get-information-schools.service.gov.uk/Downloads" },
