@@ -1,20 +1,21 @@
-# Temporary: Sweden, Kolada N15831 (pupils F-9 in an independent school in the municipality or a school in another
-# municipality, home municipality, share %), 2025 and 2024, every municipality.
-import json, os, urllib.request
-OUT = "fetch/out/se_pub1"; os.makedirs(OUT, exist_ok=True)
+# Temporary: Pitcairn's school: is it open, and how many pupils? Wikipedia, the government's sites, news.
+import os, re, html, json, urllib.request, urllib.parse
+OUT = "fetch/out/pcn1"; os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
 log = open(f"{OUT}/log.txt", "w")
-for y in (2025, 2024):
+def get(u, t=60):
+    with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=t) as r: return r.read().decode("utf-8", "replace")
+for u in ["https://en.wikipedia.org/w/index.php?title=Pitcairn_Islands&action=raw", "https://en.wikipedia.org/w/index.php?title=Adamstown,_Pitcairn_Islands&action=raw",
+          "https://en.wikipedia.org/w/index.php?title=Education_in_the_Pitcairn_Islands&action=raw",
+          "https://www.government.pn", "https://www.government.pn/departments", "https://www.immigration.gov.pn", "https://www.visitpitcairn.pn"]:
     try:
-        u = f"https://api.kolada.se/v3/data/kpi/N15831/year/{y}"; vals = []
-        while u:
-            d = json.loads(urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=120).read())
-            vals += d.get("values", []); u = d.get("next_url") or d.get("next_page")
-        json.dump({"kpi": "N15831", "year": y, "values": vals}, open(f"{OUT}/se_N15831_{y}.json", "w")); log.write(f"{y}: {len(vals)} sample {vals[:2]}\n")
-        if len(vals) > 250: break
-    except Exception as e: log.write(f"ERR {y} {e}\n")
+        t = get(u); txt = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", t)))
+        hits = [m.group(0) for m in re.finditer(r".{0,200}\b(Pulawana|school|pupils?|students?|teacher)\b.{0,220}", txt, re.I)][:8]
+        log.write(f"OK {u}\n  " + "\n  ".join(hits) + "\n")
+    except Exception as e: log.write(f"ERR {u} {str(e)[:100]}\n")
 try:
-    d = json.loads(urllib.request.urlopen(urllib.request.Request("https://api.kolada.se/v3/kpi/N15831", headers=UA), timeout=60).read())
-    log.write("KPI " + json.dumps(d, ensure_ascii=False)[:1500] + "\n")
-except Exception as e: log.write(f"ERR kpi {e}\n")
+    q = urllib.parse.quote('Pitcairn school "no children" OR "no students" OR "pupils" teacher')
+    d = json.loads(get("https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srlimit=10&srsearch=" + urllib.parse.quote("Pulawana School Pitcairn")))
+    log.write("WIKI search " + json.dumps([(x["title"], re.sub("<[^>]+>", "", x["snippet"])) for x in d["query"]["search"]])[:2000] + "\n")
+except Exception as e: log.write(f"ERR search {e}\n")
 log.close()
