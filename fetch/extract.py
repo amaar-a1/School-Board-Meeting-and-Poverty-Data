@@ -1,27 +1,29 @@
-# Temporary: e-Stat API (key from the ESTAT_APP_ID secret, never printed): find School Basic Survey (学校基本調査,
-# statsCode 00400001) tables with pupils by municipality and by establisher (国立・公立・私立).
+# Temporary: e-Stat: every year of the School Basic Survey's municipal pupil tables, and the dimensions of the latest.
 import json, os, urllib.parse, urllib.request
-OUT = "fetch/out/estat1"; os.makedirs(OUT, exist_ok=True)
+OUT = "fetch/out/estat2"; os.makedirs(OUT, exist_ok=True)
 log = open(f"{OUT}/log.txt", "w")
 key = os.environ.get("ESTAT_APP_ID", "")
-log.write(f"key present: {bool(key)}\n")
 def api(path, **q):
     q["appId"] = key
     u = f"https://api.e-stat.go.jp/rest/3.0/app/json/{path}?" + urllib.parse.urlencode(q)
     with urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "school-board research project"}), timeout=120) as r:
         return json.loads(r.read())
-seen = {}
-for word in ["市町村別 児童数", "市町村別 生徒数", "市区町村 設置者", "市町村 小学校", "市町村 中学校"]:
-    try:
-        d = api("getStatsList", statsCode="00400001", searchWord=word, limit=60)
-        res = d["GET_STATS_LIST"]["RESULT"]; log.write(f"[{word}] status {res.get('STATUS')} {res.get('ERROR_MSG','')}\n")
-        tabs = d["GET_STATS_LIST"].get("DATALIST_INF", {}).get("TABLE_INF", [])
-        tabs = tabs if isinstance(tabs, list) else [tabs]
+found = {}
+for word in ["市町村別集計 学年別児童数", "市町村別集計 学年別生徒数"]:
+    start = 1
+    while start:
+        d = api("getStatsList", statsCode="00400001", searchWord=word, limit=100, startPosition=start)
+        dl = d["GET_STATS_LIST"].get("DATALIST_INF", {})
+        tabs = dl.get("TABLE_INF", []); tabs = tabs if isinstance(tabs, list) else [tabs]
         for t in tabs:
-            tid = t["@id"]
-            if tid in seen: continue
             title = t.get("TITLE", {}); title = title.get("$", "") if isinstance(title, dict) else title
-            seen[tid] = f'{t.get("SURVEY_DATE")} | {t.get("STATISTICS_NAME","")[:40]} | {title}'
-    except Exception as e: log.write(f"ERR {word} {str(e)[:150]}\n")
-for k, v in sorted(seen.items(), key=lambda x: x[1], reverse=True)[:150]: log.write(f"{k} | {v}\n")
+            found[t["@id"]] = (t.get("SURVEY_DATE"), title)
+        nxt = dl.get("RESULT_INF", {}).get("NEXT_KEY"); start = int(nxt) if nxt else 0
+for k, (dt, title) in sorted(found.items(), key=lambda x: str(x[1][0]), reverse=True)[:40]: log.write(f"{k} | {dt} | {title}\n")
+el = [k for k, (dt, t) in sorted(found.items(), key=lambda x: str(x[1][0]), reverse=True) if "小学校" in t and "学年別児童数" in t]
+if el:
+    m = api("getMetaInfo", statsDataId=el[0])
+    for c in m["GET_META_INFO"]["METADATA_INF"]["CLASS_INF"]["CLASS_OBJ"]:
+        cls = c["CLASS"] if isinstance(c["CLASS"], list) else [c["CLASS"]]
+        log.write(f"META {el[0]} {c['@id']} {c['@name']}: {len(cls)} | {[x['@name'] for x in cls[:12]]}\n")
 log.close()
