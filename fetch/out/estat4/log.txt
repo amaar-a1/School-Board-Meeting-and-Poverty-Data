@@ -1,0 +1,194 @@
+[市町村別 児童数] 正常に終了しました。 n=6
+[市町村別 生徒数] 正常に終了しました。 n=26
+[市町村別集計] 正常に終了しました。 n=61
+None | XLS | 3_市町村別集計　学校調査（小学校）_学校数，学級数，児童数，教員数，職員数 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032072665&fileKind=0
+None | XLS | 4_市町村別学年別児童数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189229&fileKind=0
+None | XLS | 5_市町村別学年別児童数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189230&fileKind=0
+None | XLS | 6_市町村別学級編制方式別児童数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189231&fileKind=0
+None | XLS | 7_市町村別学級編制方式別児童数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189232&fileKind=0
+None | XLS | 6_市町村別学年別児童数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042243&fileKind=0
+None | XLS | 7_市町村別学年別児童数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042244&fileKind=0
+None | XLS | 8_市町村別学年別児童数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042245&fileKind=0
+None | XLS | 9_市町村別学年別児童数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042246&fileKind=0
+None | XLS | 10_市町村別学級編制方式別児童数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042247&fileKind=0
+None | XLS | 11_市町村別学級編制方式別児童数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042248&fileKind=0
+None | XLS | 12_市町村別学級編制方式別児童数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042249&fileKind=0
+None | XLS | 13_市町村別学級編制方式別児童数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042250&fileKind=0
+None | XLS | 市町村別集計_6_市町村別学年別児童数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040127893&fileKind=0
+None | XLS | 市町村別集計_7_市町村別学年別児童数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040127894&fileKind=0
+None | XLS | 市町村別集計_8_市町村別学年別児童数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040127895&fileKind=0
+None | XLS | 市町村別集計_9_市町村別学年別児童数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040127896&fileKind=0
+None | XLS | 市町村別集計_10_市町村別学級編制方式別児童数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040127897&fileKind=0
+None | XLS | 市町村別集計_11_市町村別学級編制方式別児童数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040127898&fileKind=0
+None | XLS | 市町村別集計_12_市町村別学級編制方式別児童数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040127899&fileKind=0
+None | XLS | 市町村別集計_13_市町村別学級編制方式別児童数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040127900&fileKind=0
+None | XLS | 市町村別集計_eyx-42_市町村別学年別児童数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231132&fileKind=0
+None | XLS | 市町村別集計_eyx-43_市町村別学年別児童数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231133&fileKind=0
+None | XLS | 市町村別集計_eyx-44_市町村別学年別児童数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231134&fileKind=0
+None | XLS | 市町村別集計_eyx-45_市町村別学年別児童数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231135&fileKind=0
+None | XLS | 市町村別集計_eyx-46_市町村別学級編制方式別児童数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231136&fileKind=0
+None | XLS | 市町村別集計_eyx-47_市町村別学級編制方式別児童数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231137&fileKind=0
+None | XLS | 市町村別集計_eyx-48_市町村別学級編制方式別児童数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231138&fileKind=0
+None | XLS | 市町村別集計_eyx-49_市町村別学級編制方式別児童数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231139&fileKind=0
+None | XLS | 市町村別集計_eyx-42_市町村別学年別児童数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393469&fileKind=0
+None | XLS | 市町村別集計_eyx-43_市町村別学年別児童数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393470&fileKind=0
+None | XLS | 市町村別集計_eyx-44_市町村別学年別児童数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393471&fileKind=0
+None | XLS | 市町村別集計_eyx-45_市町村別学年別児童数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393472&fileKind=0
+None | XLS | 市町村別集計_eyx-46_市町村別学級編制方式別児童数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393445&fileKind=0
+None | XLS | 市町村別集計_eyx-47_市町村別学級編制方式別児童数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393446&fileKind=0
+None | XLS | 市町村別集計_eyx-48_市町村別学級編制方式別児童数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393447&fileKind=0
+None | XLS | 市町村別集計_eyx-49_市町村別学級編制方式別児童数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393448&fileKind=0
+None | XLS | 4_市町村別集計　学校調査（中学校）_学校数，学級数，生徒数，教員数，職員数 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032072666&fileKind=0
+None | XLS | 5_市町村別集計　学校調査（義務教育学校）_学校数，学級数，生徒数，教員数，職員数 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032072667&fileKind=0
+None | XLS | 6_市町村別集計　学校調査（高等学校　全日制・定時制）_学校数，生徒数，教員数（本務者） | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032072668&fileKind=0
+None | XLS | 9_市町村別集計　学校調査（専修学校）_学校数，生徒数，教員数，職員数 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032072671&fileKind=0
+None | XLS | 10_市町村別集計　学校調査（各種学校）_学校数，生徒数，教員数，職員数 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032072672&fileKind=0
+None | XLS | 4_市町村別学年別生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189244&fileKind=0
+None | XLS | 5_市町村別学年別生徒数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189245&fileKind=0
+None | XLS | 6_市町村別学級編制方式別生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189246&fileKind=0
+None | XLS | 7_市町村別学級編制方式別生徒数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189247&fileKind=0
+None | XLS | 4_学年別児童生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189258&fileKind=0
+None | XLS | 5_学年別児童生徒数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189259&fileKind=0
+None | XLS | 6_学級編制方式別児童生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189260&fileKind=0
+None | XLS | 7_学級編制方式別児童生徒数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189261&fileKind=0
+None | XLS | 2_市町村別学年別生徒数　計　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189271&fileKind=0
+None | XLS | 3_市町村別学年別生徒数　計　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189272&fileKind=0
+None | XLS | 4_市町村別学年別生徒数　全日制　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189273&fileKind=0
+None | XLS | 5_市町村別学年別生徒数　全日制　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189274&fileKind=0
+None | XLS | 6_市町村別学年別生徒数　定時制　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189275&fileKind=0
+None | XLS | 7_市町村別学年別生徒数　定時制　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189276&fileKind=0
+None | XLS | 2_市町村別生徒数　計　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189309&fileKind=0
+None | XLS | 3_市町村別生徒数　専門課程　 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189310&fileKind=0
+None | XLS | 2_市町村別生徒数　計　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000032189315&fileKind=0
+None | XLS | 6_市町村別学年別生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042272&fileKind=0
+None | XLS | 7_市町村別学年別生徒数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042273&fileKind=0
+None | XLS | 8_市町村別学年別生徒数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042274&fileKind=0
+None | XLS | 9_市町村別学年別生徒数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042275&fileKind=0
+None | XLS | 10_市町村別学級編制方式別生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042276&fileKind=0
+None | XLS | 11_市町村別学級編制方式別生徒数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042277&fileKind=0
+None | XLS | 12_市町村別学級編制方式別生徒数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042278&fileKind=0
+None | XLS | 13_市町村別学級編制方式別生徒数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042279&fileKind=0
+None | XLS | 6_学年別児童生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042301&fileKind=0
+None | XLS | 7_学年別児童生徒数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042302&fileKind=0
+None | XLS | 8_学年別児童生徒数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042303&fileKind=0
+None | XLS | 9_学年別児童生徒数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042304&fileKind=0
+None | XLS | 10_学級編制方式別児童生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042305&fileKind=0
+None | XLS | 11_学級編制方式別児童生徒数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042306&fileKind=0
+None | XLS | 12_学級編制方式別児童生徒数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042307&fileKind=0
+None | XLS | 13_学級編制方式別児童生徒数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042308&fileKind=0
+None | XLS | 2_市町村別学年別生徒数　計　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042326&fileKind=0
+None | XLS | 3_市町村別学年別生徒数　計　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042327&fileKind=0
+None | XLS | 4_市町村別学年別生徒数　計　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042328&fileKind=0
+None | XLS | 5_市町村別学年別生徒数　計　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042329&fileKind=0
+None | XLS | 6_市町村別学年別生徒数　全日制　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042330&fileKind=0
+None | XLS | 7_市町村別学年別生徒数　全日制　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042331&fileKind=0
+None | XLS | 8_市町村別学年別生徒数　全日制　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042332&fileKind=0
+None | XLS | 9_市町村別学年別生徒数　全日制　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042333&fileKind=0
+None | XLS | 10_市町村別学年別生徒数　定時制　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042334&fileKind=0
+None | XLS | 11_市町村別学年別生徒数　定時制　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042335&fileKind=0
+None | XLS | 12_市町村別学年別生徒数　定時制　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042336&fileKind=0
+None | XLS | 13_市町村別学年別生徒数　定時制　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042337&fileKind=0
+None | XLS | 2_市町村別生徒数　計　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042400&fileKind=0
+None | XLS | 3_市町村別生徒数　高等課程　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042401&fileKind=0
+None | XLS | 4_市町村別生徒数　専門課程　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042402&fileKind=0
+None | XLS | 5_市町村別生徒数　一般課程　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042403&fileKind=0
+None | XLS | 2_市町村別生徒数　計、私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040042408&fileKind=0
+None | XLS | 市町村別集計_6_市町村別学年別生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040127990&fileKind=0
+None | XLS | 市町村別集計_7_市町村別学年別生徒数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040127991&fileKind=0
+None | XLS | 市町村別集計_8_市町村別学年別生徒数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040127992&fileKind=0
+None | XLS | 市町村別集計_9_市町村別学年別生徒数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040127993&fileKind=0
+None | XLS | 市町村別集計_10_市町村別学級編制方式別生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040127994&fileKind=0
+None | XLS | 市町村別集計_11_市町村別学級編制方式別生徒数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040127995&fileKind=0
+None | XLS | 市町村別集計_12_市町村別学級編制方式別生徒数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040127996&fileKind=0
+None | XLS | 市町村別集計_13_市町村別学級編制方式別生徒数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040127997&fileKind=0
+None | XLS | 市町村別集計_6_学年別児童生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128086&fileKind=0
+None | XLS | 市町村別集計_7_学年別児童生徒数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128087&fileKind=0
+None | XLS | 市町村別集計_8_学年別児童生徒数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128088&fileKind=0
+None | XLS | 市町村別集計_9_学年別児童生徒数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128089&fileKind=0
+None | XLS | 市町村別集計_10_学級編制方式別児童生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128090&fileKind=0
+None | XLS | 市町村別集計_11_学級編制方式別児童生徒数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128091&fileKind=0
+None | XLS | 市町村別集計_12_学級編制方式別児童生徒数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128092&fileKind=0
+None | XLS | 市町村別集計_13_学級編制方式別児童生徒数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128093&fileKind=0
+None | XLS | 市町村別集計_2_市町村別学年別生徒数　計　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128172&fileKind=0
+None | XLS | 市町村別集計_3_市町村別学年別生徒数　計　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128173&fileKind=0
+None | XLS | 市町村別集計_4_市町村別学年別生徒数　計　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128174&fileKind=0
+None | XLS | 市町村別集計_5_市町村別学年別生徒数　計　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128175&fileKind=0
+None | XLS | 市町村別集計_6_市町村別学年別生徒数　全日制　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128176&fileKind=0
+None | XLS | 市町村別集計_7_市町村別学年別生徒数　全日制　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128177&fileKind=0
+None | XLS | 市町村別集計_8_市町村別学年別生徒数　全日制　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128178&fileKind=0
+None | XLS | 市町村別集計_9_市町村別学年別生徒数　全日制　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128179&fileKind=0
+None | XLS | 市町村別集計_10_市町村別学年別生徒数　定時制　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128180&fileKind=0
+None | XLS | 市町村別集計_11_市町村別学年別生徒数　定時制　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128181&fileKind=0
+None | XLS | 市町村別集計_12_市町村別学年別生徒数　定時制　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128182&fileKind=0
+None | XLS | 市町村別集計_13_市町村別学年別生徒数　定時制　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128183&fileKind=0
+None | XLS | 市町村別集計_2_市町村別生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128397&fileKind=0
+None | XLS | 市町村別集計_3_市町村別生徒数　高等課程 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128398&fileKind=0
+None | XLS | 市町村別集計_4_市町村別生徒数　専門課程 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128399&fileKind=0
+None | XLS | 市町村別集計_5_市町村別生徒数　一般課程 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128400&fileKind=0
+None | XLS | 市町村別集計_2_市町村別生徒数 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040128424&fileKind=0
+None | XLS | 市町村別集計_eyx-71_市町村別学年別生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231161&fileKind=0
+None | XLS | 市町村別集計_eyx-72_市町村別学年別生徒数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231162&fileKind=0
+None | XLS | 市町村別集計_eyx-73_市町村別学年別生徒数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231163&fileKind=0
+None | XLS | 市町村別集計_eyx-74_市町村別学年別生徒数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231164&fileKind=0
+None | XLS | 市町村別集計_eyx-75_市町村別学級編制方式別生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231165&fileKind=0
+None | XLS | 市町村別集計_eyx-76_市町村別学級編制方式別生徒数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231166&fileKind=0
+None | XLS | 市町村別集計_eyx-77_市町村別学級編制方式別生徒数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231167&fileKind=0
+None | XLS | 市町村別集計_eyx-78_市町村別学級編制方式別生徒数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231168&fileKind=0
+None | XLS | 市町村別集計_eyx-100_学年別児童生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231190&fileKind=0
+None | XLS | 市町村別集計_eyx-101_学年別児童生徒数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231191&fileKind=0
+None | XLS | 市町村別集計_eyx-102_学年別児童生徒数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231192&fileKind=0
+None | XLS | 市町村別集計_eyx-103_学年別児童生徒数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231193&fileKind=0
+None | XLS | 市町村別集計_eyx-104_学級編制方式別児童生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231194&fileKind=0
+None | XLS | 市町村別集計_eyx-105_学級編制方式別児童生徒数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231195&fileKind=0
+None | XLS | 市町村別集計_eyx-106_学級編制方式別児童生徒数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231196&fileKind=0
+None | XLS | 市町村別集計_eyx-107_学級編制方式別児童生徒数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231197&fileKind=0
+None | XLS | 市町村別集計_eyx-125_市町村別学年別生徒数　計　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231215&fileKind=0
+None | XLS | 市町村別集計_eyx-126_市町村別学年別生徒数　計　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231216&fileKind=0
+None | XLS | 市町村別集計_eyx-127_市町村別学年別生徒数　計　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231217&fileKind=0
+None | XLS | 市町村別集計_eyx-128_市町村別学年別生徒数　計　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231218&fileKind=0
+None | XLS | 市町村別集計_eyx-129_市町村別学年別生徒数　全日制　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231219&fileKind=0
+None | XLS | 市町村別集計_eyx-130_市町村別学年別生徒数　全日制　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231220&fileKind=0
+None | XLS | 市町村別集計_eyx-131_市町村別学年別生徒数　全日制　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231221&fileKind=0
+None | XLS | 市町村別集計_eyx-132_市町村別学年別生徒数　全日制　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231222&fileKind=0
+None | XLS | 市町村別集計_eyx-133_市町村別学年別生徒数　定時制　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231223&fileKind=0
+None | XLS | 市町村別集計_eyx-134_市町村別学年別生徒数　定時制　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231224&fileKind=0
+None | XLS | 市町村別集計_eyx-135_市町村別学年別生徒数　定時制　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231225&fileKind=0
+None | XLS | 市町村別集計_eyx-136_市町村別学年別生徒数　定時制　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231226&fileKind=0
+None | XLS | 市町村別集計_eyx-199_市町村別生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231289&fileKind=0
+None | XLS | 市町村別集計_eyx-200_市町村別生徒数　高等課程 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231290&fileKind=0
+None | XLS | 市町村別集計_eyx-201_市町村別生徒数　専門課程 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231291&fileKind=0
+None | XLS | 市町村別集計_eyx-202_市町村別生徒数　一般課程 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231292&fileKind=0
+None | XLS | 市町村別集計_eyx-207_市町村別生徒数 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040231297&fileKind=0
+None | XLS | 市町村別集計_eyx-71_市町村別学年別生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393498&fileKind=0
+None | XLS | 市町村別集計_eyx-72_市町村別学年別生徒数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393499&fileKind=0
+None | XLS | 市町村別集計_eyx-73_市町村別学年別生徒数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393500&fileKind=0
+None | XLS | 市町村別集計_eyx-74_市町村別学年別生徒数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393501&fileKind=0
+None | XLS | 市町村別集計_eyx-75_市町村別学級編制方式別生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393474&fileKind=0
+None | XLS | 市町村別集計_eyx-76_市町村別学級編制方式別生徒数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393475&fileKind=0
+None | XLS | 市町村別集計_eyx-77_市町村別学級編制方式別生徒数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393476&fileKind=0
+None | XLS | 市町村別集計_eyx-78_市町村別学級編制方式別生徒数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393477&fileKind=0
+None | XLS | 市町村別集計_eyx-100_学年別児童生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393527&fileKind=0
+None | XLS | 市町村別集計_eyx-101_学年別児童生徒数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393528&fileKind=0
+None | XLS | 市町村別集計_eyx-102_学年別児童生徒数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393529&fileKind=0
+None | XLS | 市町村別集計_eyx-103_学年別児童生徒数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393530&fileKind=0
+None | XLS | 市町村別集計_eyx-104_学級編制方式別児童生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393503&fileKind=0
+None | XLS | 市町村別集計_eyx-105_学級編制方式別児童生徒数　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393504&fileKind=0
+None | XLS | 市町村別集計_eyx-106_学級編制方式別児童生徒数　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393505&fileKind=0
+None | XLS | 市町村別集計_eyx-107_学級編制方式別児童生徒数　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393506&fileKind=0
+None | XLS | 市町村別集計_eyx-125_市町村別学年別生徒数　計　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393542&fileKind=0
+None | XLS | 市町村別集計_eyx-126_市町村別学年別生徒数　計　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393549&fileKind=0
+None | XLS | 市町村別集計_eyx-127_市町村別学年別生徒数　計　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393550&fileKind=0
+None | XLS | 市町村別集計_eyx-128_市町村別学年別生徒数　計　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393551&fileKind=0
+None | XLS | 市町村別集計_eyx-129_市町村別学年別生徒数　全日制　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393552&fileKind=0
+None | XLS | 市町村別集計_eyx-130_市町村別学年別生徒数　全日制　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393553&fileKind=0
+None | XLS | 市町村別集計_eyx-131_市町村別学年別生徒数　全日制　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393554&fileKind=0
+None | XLS | 市町村別集計_eyx-132_市町村別学年別生徒数　全日制　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393555&fileKind=0
+None | XLS | 市町村別集計_eyx-133_市町村別学年別生徒数　定時制　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393532&fileKind=0
+None | XLS | 市町村別集計_eyx-134_市町村別学年別生徒数　定時制　国立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393533&fileKind=0
+None | XLS | 市町村別集計_eyx-135_市町村別学年別生徒数　定時制　公立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393534&fileKind=0
+None | XLS | 市町村別集計_eyx-136_市町村別学年別生徒数　定時制　私立 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393535&fileKind=0
+None | XLS | 市町村別集計_eyx-199_市町村別生徒数　計 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393606&fileKind=0
+None | XLS | 市町村別集計_eyx-200_市町村別生徒数　高等課程 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393607&fileKind=0
+None | XLS | 市町村別集計_eyx-201_市町村別生徒数　専門課程 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393608&fileKind=0
+None | XLS | 市町村別集計_eyx-202_市町村別生徒数　一般課程 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393609&fileKind=0
+None | XLS | 市町村別集計_eyx-207_市町村別生徒数 | https://www.e-stat.go.jp/stat-search/file-download?&statInfId=000040393614&fileKind=0
