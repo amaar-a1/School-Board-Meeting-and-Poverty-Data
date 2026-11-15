@@ -1,7 +1,7 @@
 # Temporary: e-Stat: latest School Basic Survey municipal files: elementary (児童数) and lower secondary (中学校 生徒数)
 # pupils by municipality, total and private; download and describe.
 import json, os, re, subprocess, sys, urllib.parse, urllib.request
-OUT = "fetch/out/estat5"; os.makedirs(OUT, exist_ok=True)
+OUT = "fetch/out/estat6"; os.makedirs(OUT, exist_ok=True)
 try:
     import xlrd, openpyxl
 except ImportError:
@@ -15,8 +15,9 @@ def api(path, **q):
     with urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "school-board research project"}), timeout=120) as r:
         return json.loads(r.read())
 items = []
-for word in ["市町村別学年別児童数", "市町村別学年別生徒数"]:
-    d = api("getDataCatalog", statsCode="00400001", searchWord=word, dataType="XLS", limit=200, surveyYears="201801-202612")
+for word in ["市町村別 児童数", "市町村別 生徒数"]:
+    d = api("getDataCatalog", statsCode="00400001", searchWord=word, dataType="XLS", limit=200, surveyYears="202001-202612")
+    log.write(f"[{word}] {d['GET_DATA_CATALOG']['RESULT'].get('ERROR_MSG')}\n")
     its = d["GET_DATA_CATALOG"].get("DATA_CATALOG_LIST_INF", {}).get("DATA_CATALOG_INF", []); its = its if isinstance(its, list) else [its]
     for it in its:
         ds = it.get("DATASET", {}); dt = ds.get("TITLE", {}); dtitle = json.dumps(dt, ensure_ascii=False)[:200]
@@ -27,7 +28,7 @@ for word in ["市町村別学年別児童数", "市町村別学年別生徒数"]
             items.append({"name": name, "url": r.get("URL"), "sid": sid.group(1) if sid else "", "dataset": dtitle, "survey": ds.get("SURVEY_DATE"), "released": r.get("RELEASE_DATE")})
 for it in sorted(items, key=lambda x: x["sid"], reverse=True)[:30]: log.write(f"{it['sid']} | {it['released']} | {it['name']} | {it['dataset'][:160]}\n")
 def pick(kind, sector):
-    c = [x for x in items if f"市町村別学年別{kind}" in x["name"] and x["name"].endswith(sector) and ("中学校" in x["dataset"] if kind == "生徒数" else True)]
+    c = [x for x in items if f"市町村別学年別{kind}" in re.sub(r"\s", "", x["name"]) and re.sub(r"\s", "", x["name"]).endswith(sector) and ("中学校" in x["dataset"] if kind == "生徒数" else True)]
     return max(c, key=lambda x: x["sid"]) if c else None
 got = {}
 for kind, label in (("児童数", "el"), ("生徒数", "ls")):
