@@ -1,6 +1,6 @@
 # Temporary: e-Stat data catalogue: newer School Basic Survey municipal pupil files (Excel) and their URLs.
 import json, os, urllib.parse, urllib.request
-OUT = "fetch/out/estat3"; os.makedirs(OUT, exist_ok=True)
+OUT = "fetch/out/estat4"; os.makedirs(OUT, exist_ok=True)
 log = open(f"{OUT}/log.txt", "w")
 key = os.environ.get("ESTAT_APP_ID", "")
 def api(path, **q):
@@ -11,7 +11,7 @@ def api(path, **q):
 out = []
 for word in ["市町村別 児童数", "市町村別 生徒数", "市町村別集計"]:
     try:
-        d = api("getDataCatalog", statsCode="00400001", searchWord=word, dataType="XLS", limit=100, surveyYears="2020-2026")
+        d = api("getDataCatalog", statsCode="00400001", searchWord=word, dataType="XLS", limit=100, surveyYears="202001-202612")
         dl = d["GET_DATA_CATALOG"].get("DATA_CATALOG_LIST_INF", {})
         log.write(f"[{word}] {d['GET_DATA_CATALOG']['RESULT'].get('ERROR_MSG')} n={dl.get('NUMBER')}\n")
         items = dl.get("DATA_CATALOG_INF", []); items = items if isinstance(items, list) else [items]
