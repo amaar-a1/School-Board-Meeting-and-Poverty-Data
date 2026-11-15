@@ -331,6 +331,7 @@ window.SOURCES = [
     only: "Japan",
     group: "Japan: municipalities, welfare, pupils and boards of education",
     items: [
+      { title: "Public-school share: MEXT school code list (文部科学省 学校コード, 1 May 2026, provisional): every elementary, lower secondary, compulsory and secondary school with its establisher and address. The 1,510 municipalities with no private one are 100% public; the 189 with a private school have no figure, as the list counts schools, not pupils", url: "https://www.mext.go.jp/b_menu/toukei/mext_01087.html" },
       { title: "Welfare rate: Ministry of Health, Labour and Welfare, 被保護者調査 (survey of welfare recipients), FY2024 final figures, table 8 (2-2), by prefecture, designated city and core city", url: "https://www.e-stat.go.jp/stat-search/files?toukei=00450312" },
       { title: "Population, children under 15, area, pupils and unemployment: Statistics Bureau, 統計でみる市区町村のすがた 2026 (municipal basic data; 2020 census and 2024 school survey)", url: "https://www.e-stat.go.jp/stat-search/files?toukei=00200502" },
       { title: "Borders: Ministry of Land, Infrastructure, Transport and Tourism, 国土数値情報 administrative areas (N03, 2021), as simplified by smartnews-smri/japan-topography", url: "https://github.com/smartnews-smri/japan-topography" },
