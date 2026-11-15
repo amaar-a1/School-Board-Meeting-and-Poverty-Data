@@ -1,7 +1,7 @@
 # Temporary: e-Stat: latest School Basic Survey municipal files: elementary (児童数) and lower secondary (中学校 生徒数)
 # pupils by municipality, total and private; download and describe.
 import json, os, re, subprocess, sys, urllib.parse, urllib.request
-OUT = "fetch/out/estat6"; os.makedirs(OUT, exist_ok=True)
+OUT = "fetch/out/estat7"; os.makedirs(OUT, exist_ok=True)
 try:
     import xlrd, openpyxl
 except ImportError:
@@ -16,7 +16,7 @@ def api(path, **q):
         return json.loads(r.read())
 items = []
 for word in ["市町村別 児童数", "市町村別 生徒数"]:
-    d = api("getDataCatalog", statsCode="00400001", searchWord=word, dataType="XLS", limit=200, surveyYears="202001-202612")
+    d = api("getDataCatalog", statsCode="00400001", searchWord=word, dataType="XLS", limit=100, surveyYears="202001-202612")
     log.write(f"[{word}] {d['GET_DATA_CATALOG']['RESULT'].get('ERROR_MSG')}\n")
     its = d["GET_DATA_CATALOG"].get("DATA_CATALOG_LIST_INF", {}).get("DATA_CATALOG_INF", []); its = its if isinstance(its, list) else [its]
     for it in its:
