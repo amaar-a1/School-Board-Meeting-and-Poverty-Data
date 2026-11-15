@@ -1,0 +1,4 @@
+none for 児童数 計
+none for 児童数 私立
+none for 生徒数 計
+none for 生徒数 私立
