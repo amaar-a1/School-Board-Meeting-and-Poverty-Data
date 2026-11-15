@@ -1,0 +1,3 @@
+[市町村別 児童数] 調査年月（surveyYears）の値が正しくありません。 n=None
+[市町村別 生徒数] 調査年月（surveyYears）の値が正しくありません。 n=None
+[市町村別集計] 調査年月（surveyYears）の値が正しくありません。 n=None
