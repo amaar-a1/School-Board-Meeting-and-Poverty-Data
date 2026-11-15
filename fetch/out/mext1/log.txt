@@ -1,0 +1,57 @@
+OK https://www.mext.go.jp/b_menu/toukei/mext_01087.html | 文部科学省　学校コード：文部科学省
+   学校コードの取り扱いについて（PDF：309KB） -> /content/20210128-mxt_chousa01-000011635_01.pdf
+   文部科学省 学校コードに基づく学校コード検索 (edu-data.jp) -> https://edu-data.jp/
+   Excel：3,010KB -> /content/20260529-mxt_chousa01-000011635_1.xlsx
+   csv：4,567KB -> /content/20260825-mxt_chousa01-000011635_2-1.csv
+   csv：872KB -> /content/20260825-mxt_chousa01-000011635_2-2.csv
+   Excel：130KB -> /content/20260529-mxt_chousa01-000011635_5.xlsx
+   csv：179KB -> /content/20260825-mxt_chousa01-000011635_6.csv
+   Excel：2,156KB -> /content/20260529-mxt_chousa01-000011635_3.xlsx
+   csv：3,907KB -> /content/20260825-mxt_chousa01-000011635_4.csv
+   Excel：2,979KB -> /content/20251226-mxt_chousa01-000011635_1.xlsx
+   csv：4,292KB -> /content/20251226-mxt_chousa01-000011635_2.csv
+   Excel：2,131KB -> /content/20251226-mxt_chousa01-000011635_3.xlsx
+   csv：3,076KB -> /content/20251226-mxt_chousa01-000011635_4.csv
+   Excel：132KB -> /content/20251226-mxt_chousa01-000011635_5.xlsx
+   csv：142KB -> /content/20251226-mxt_chousa01-000011635_6.csv
+   Excel：2,877KB -> /content/20241226-mxt_chousa01-000011635_1.xlsx
+   csv：5,322KB -> /content/20241226-mxt_chousa01-000011635_2.csv
+   Excel：2,054KB -> /content/20241226-mxt_chousa01-000011635_3.xlsx
+   csv：3,814KB -> /content/20241226-mxt_chousa01-000011635_4.csv
+   Excel：131KB -> /content/20241226-mxt_chousa01-000011635_5.xlsx
+   csv：175KB -> /content/20241226-mxt_chousa01-000011635_6.csv
+   Excel：2,847KB -> /content/20230731-mxt_chousa01-000011635_1.xlsx
+   csv：4,254KB -> /content/20230809-mxt_chousa01-000011635_2.csv
+   Excel：2,054KB -> /content/20230731-mxt_chousa01-000011635_3.xlsx
+   csv：3,045KB -> /content/20230731-mxt_chousa01-000011635_4.csv
+   Excel：131KB -> /content/20230731-mxt_chousa01-000011635_5.xlsx
+   csv：142KB -> /content/20230731-mxt_chousa01-000011635_6.csv
+   Excel：2,814KB -> /content/221222-mxt-mxt_chousa01-1000011635_1.xlsx
+   csv：4,255KB -> /content/221222-mxt-mxt_chousa01-1000011635_2.csv
+   Excel：1,995KB -> /content/221222-mxt-mxt_chousa01-1000011635_3.xlsx
+   csv：3,068KB -> /content/221222-mxt-mxt_chousa01-1000011635_4.csv
+   Excel：117KB -> /content/221222-mxt-mxt_chousa01-1000011635_5.xlsx
+   csv：143KB -> /content/221222-mxt-mxt_chousa01-1000011635_6.csv
+   Excel：3787KB -> /content/211222-mxt-mxt_chousa01-1000011635_1.xlsx
+   csv：4100KB -> /content/220124-mxt-mxt_chousa01-1000011635_3.csv
+   Excel：3213KB -> /content/211223-mxt-mxt_chousa01-1000011635_4.xlsx
+   csv：3200KB -> /content/220124-mxt-mxt_chousa01-1000011635_6.csv
+   Excel：123KB -> /content/211222-mxt-mxt_chousa01-1000011635_7.xlsx
+   csv：131KB -> /content/211222-mxt-mxt_chousa01-1000011635_8.csv
+   Excel：2977KB -> /content/20210305-mxt_chousa01-000011635_01.xlsx
+ERR https://www.mext.go.jp/a_menu/other/mext_01087.html HTTP Error 404: Not Found
+OK https://edu-data.jp/ | 文部科学省 学校コードに基づく学校コード検索
+   school
+      
+      学校コード検索 -> https://edu-data.jp
+   database
+        文部科学省 学校コード 令和8年5月1日（暫定版） に基づく -> https://www.mext.go.jp/b_menu/toukei/mext_01087.html
+   search
+                学校コード検索 -> https://edu-data.jp
+   account_balance
+                教育委員会コード検索 -> https://edu-data.jp/eb
+   search
+                学校コード検索 -> https://edu-data.jp
+   account_balance
+                教育委員会コード検索 -> https://edu-data.jp/eb
+   「文部科学省 学校コード」 令和8年5月1日（暫定版）（令和8年5月29日）open_in_new -> https://www.mext.go.jp/b_menu/toukei/mext_01087.html
