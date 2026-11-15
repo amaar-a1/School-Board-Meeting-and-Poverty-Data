@@ -1,20 +1,27 @@
-# Temporary: MEXT school code list, 2026 (provisional, 1 May 2026; csv of 25 Aug 2026): download and describe.
-import csv, io, os, urllib.request, collections, json
-OUT = "fetch/out/mext2"; os.makedirs(OUT, exist_ok=True)
-UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
+# Temporary: e-Stat API (key from the ESTAT_APP_ID secret, never printed): find School Basic Survey (学校基本調査,
+# statsCode 00400001) tables with pupils by municipality and by establisher (国立・公立・私立).
+import json, os, urllib.parse, urllib.request
+OUT = "fetch/out/estat1"; os.makedirs(OUT, exist_ok=True)
 log = open(f"{OUT}/log.txt", "w")
-for name in ("20260825-mxt_chousa01-000011635_2-1.csv", "20260825-mxt_chousa01-000011635_2-2.csv"):
+key = os.environ.get("ESTAT_APP_ID", "")
+log.write(f"key present: {bool(key)}\n")
+def api(path, **q):
+    q["appId"] = key
+    u = f"https://api.e-stat.go.jp/rest/3.0/app/json/{path}?" + urllib.parse.urlencode(q)
+    with urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "school-board research project"}), timeout=120) as r:
+        return json.loads(r.read())
+seen = {}
+for word in ["市町村別 児童数", "市町村別 生徒数", "市区町村 設置者", "市町村 小学校", "市町村 中学校"]:
     try:
-        b = urllib.request.urlopen(urllib.request.Request("https://www.mext.go.jp/content/" + name, headers=UA), timeout=120).read()
-        for enc in ("utf-8-sig", "cp932"):
-            try: t = b.decode(enc); break
-            except UnicodeDecodeError: continue
-        rows = list(csv.reader(io.StringIO(t)))
-        log.write(f"{name}: {len(rows)} rows, enc {enc}\n  header {rows[0]}\n  " + "\n  ".join(str(r) for r in rows[1:6]) + "\n")
-        open(f"{OUT}/{name}", "w", encoding="utf-8").write(t)
-        h = rows[0]
-        for c in range(len(h)):
-            vals = collections.Counter(r[c] for r in rows[1:] if len(r) > c)
-            if len(vals) < 15: log.write(f"  col {c} {h[c]}: {dict(vals)}\n")
-    except Exception as e: log.write(f"ERR {name} {e}\n")
+        d = api("getStatsList", statsCode="00400001", searchWord=word, limit=60)
+        res = d["GET_STATS_LIST"]["RESULT"]; log.write(f"[{word}] status {res.get('STATUS')} {res.get('ERROR_MSG','')}\n")
+        tabs = d["GET_STATS_LIST"].get("DATALIST_INF", {}).get("TABLE_INF", [])
+        tabs = tabs if isinstance(tabs, list) else [tabs]
+        for t in tabs:
+            tid = t["@id"]
+            if tid in seen: continue
+            title = t.get("TITLE", {}); title = title.get("$", "") if isinstance(title, dict) else title
+            seen[tid] = f'{t.get("SURVEY_DATE")} | {t.get("STATISTICS_NAME","")[:40]} | {title}'
+    except Exception as e: log.write(f"ERR {word} {str(e)[:150]}\n")
+for k, v in sorted(seen.items(), key=lambda x: x[1], reverse=True)[:150]: log.write(f"{k} | {v}\n")
 log.close()

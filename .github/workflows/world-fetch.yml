@@ -43,6 +43,8 @@ jobs:
               print(name, len(rows), "rows")
           PY
       - name: Run extraction script if present
+        env:
+          ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}   # e-Stat API key (repository secret); the script never prints it
         run: |
           [ -f fetch/extract.py ] && python3 fetch/extract.py || true
       - name: Commit results
