@@ -1,5 +1,5 @@
 import os, json, urllib.request, urllib.parse, re, csv, io
-OUT = "fetch/out/disc3"; os.makedirs(OUT, exist_ok=True)
+OUT = "fetch/out/disc4"; os.makedirs(OUT, exist_ok=True)
 log = open(f"{OUT}/log.txt", "w")
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
 def get(name, url, keep=50000000, show=800):
@@ -16,19 +16,22 @@ def ckan(tag, base, q, n=8):
             log.write(f"{tag} {p['title']}: " + " ; ".join(f"{r.get('name')} {r.get('url')}" for r in p["resources"][:6]) + "\n")
     except Exception as e: log.write(f"{tag} ERR {e}\n")
 # Catalonia: sums by year, municipality, naturalesa, studies
-soql = ("$select=curs,codi_municipi_5,nom_municipi,nom_naturalesa,nom_estudis,sum(matr_cules_total) as n"
+soql = ("$select=" + urllib.parse.quote("curs,codi_municipi_5,nom_municipi,nom_naturalesa,nom_estudis,sum(matr_cules_total) as n")
         "&$where=" + urllib.parse.quote("curs in('2024/2025','2025/2026')") +
-        "&$group=curs,codi_municipi_5,nom_municipi,nom_naturalesa,nom_estudis&$limit=50000")
+        "&$group=" + urllib.parse.quote("curs,codi_municipi_5,nom_municipi,nom_naturalesa,nom_estudis") + "&$limit=50000")
 get("cat_agg.json", "https://analisi.transparenciacatalunya.cat/resource/xvme-26kg.json?" + soql, show=600)
 # Flanders: sum by site municipality NIS, organising body type, main structure
 b = get(None, "https://opendata.dataplatform-onderwijs.vlaanderen.be/dataloep/inschrijvingen-leerplicht-instellingen-dataset-2024-2025-1feb.csv", show=0)
 if b:
-    agg = {}
+    agg, bad = {}, {}
     for r in csv.DictReader(io.StringIO(b.decode("utf-8-sig"))):
         k = (r["vestiging_fusiegemeente_nis"], r["soort_inrichtende_macht"], r["hoofdstructuur_inschrijving"])
-        agg[k] = agg.get(k, 0) + int(r["aantal_inschrijvingen"] or 0)
+        v = r["aantal_inschrijvingen"]
+        try: v = int(float(v.replace(",", ".")))
+        except Exception: bad[v] = bad.get(v, 0) + 1; continue
+        agg[k] = agg.get(k, 0) + v
     json.dump([[*k, v] for k, v in sorted(agg.items())], open(f"{OUT}/vl_by_body.json", "w"), ensure_ascii=False)
-    log.write(f"VL agg {len(agg)}\n")
+    log.write(f"VL agg {len(agg)} bad {bad}\n")
 # Wallonia-Brussels FWB: search ODWB
 for q in ["fase", "implantation", "population scolaire", "réseau"]:
     b = get(None, "https://www.odwb.be/api/explore/v2.1/catalog/datasets?where=" + urllib.parse.quote(f'search("{q}")') + "&limit=40&select=dataset_id,metas", show=0)
