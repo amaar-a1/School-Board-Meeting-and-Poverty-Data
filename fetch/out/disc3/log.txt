@@ -1,0 +1,5 @@
+== cat_agg.json ERR URL can't contain control characters. '/resource/xvme-26kg.json?$select=curs,codi_municipi_5,nom_municipi,nom_naturalesa,nom_estudis,sum(matr_cules_total) as n&$where=curs%20in%28%272024/2025%27%2C%272025/2026%27%29&$group=curs,codi_municipi_5,nom_municipi,nom_naturalesa,nom_estudis&$limit=50000' (found at least ' ') https://analisi.transparenciacatalunya.cat/resource/xvme-26kg.json?$select=curs,codi_municipi_5,nom_municipi,nom_naturalesa,nom_estudis,sum(matr_cules_total) as n&$where=curs%20in%28%272024/2025%27%2C%272025/2026%27%29&$group=curs,codi_municipi_5,nom_municipi,nom_naturalesa,nom_estudis&$limit=50000
+
+== None OK 112997961 https://opendata.dataplatform-onderwijs.vlaanderen.be/dataloep/inschrijvingen-leerplicht-instellingen-dataset-2024-2025-1feb.csv
+
+
