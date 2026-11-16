@@ -1,0 +1,361 @@
+== cat_search.json ERR HTTP Error 404: Not Found https://api.us.socrata.com/api/catalog/v1?domains=analisi.transparenciacatalunya.cat&q=alumnes%20matriculats&limit=15
+
+cat parse [Errno 2] No such file or directory: 'fetch/out/disc1/cat_search.json'
+== cat_sample.json OK 2590 https://analisi.transparenciacatalunya.cat/resource/xvme-26kg.json?$limit=3
+[{"curs":"2025/2026","any":"2025","codi_centre":"08000864","denominaci_completa":"Cultural","codi_naturalesa":"2","nom_naturalesa":"Privat","codi_titularitat":"26","nom_titularitat":"Societats Mercantils","codi_delegaci":"0208","nom_delegaci":"Barcelonès","codi_comarca":"13","nom_comarca":"Barcelonès","codi_municipi_5":"08015","codi_municip_6":"080155","nom_municipi":"Badalona","codi_districte_municipal":"00","coordenades_utm_x":"434885","coordenades_utm_y":"4587509","coordenades_geo_x":"2.2206","coordenades_geo_y":"41.43651","codi_estudis":"ESO","nom_estudis":"EDUCACIÓ SECUNDÀRIA OBLIGATÒRIA","codi_ensenyament":"ESO LOE","nom_ensenyament":"EDUCACIÓ SECUNDÀRIA OBLIGATÒRIA","nivell":"4","matr_cula_concertada":"SI","modalitat":"PRESENCIAL","per_ode_matr_cula":"ANUAL","matr_cules_total":"65","matr_cules_dones":"36","matr_cules_homes":"29","unitats":"2"}
+,{"curs":"2025/2026","any":"2025","codi_centre":"08000918","denominaci_completa":"Cultural","codi_naturalesa":"2","nom_naturalesa":"Privat","codi_titularitat":"26","nom_titularitat":"Societats Mercantils","codi_delegaci":"0208","nom_delegaci":"Barcelonès","codi_comarca":"13","nom_comarca":"Barcelonès","codi_municipi_5":"08015","codi_municip_6":"080155","nom_municipi":"Badalona","codi_districte_municipal":"00","coordenades_utm_x":"437091","coordenades_utm_y":"4589247","coordenades_geo_x":"2.246821","coordenades_geo_y":"41.45234","codi_estudis":"BATX","nom_estudis":"BATXILLERAT","codi_ensenyament":"BATXLOE 2000","nom_ense
+
+== wb_prm.json OK 1045362 https://api.worldbank.org/v2/country/all/indicator/SE.PRM.PRIV.ZS?format=json&per_page=20000&date=2010:2025
+[{"page":1,"pages":1,"per_page":20000,"total":4256,"sourceid":"2","lastupdated":"2026-11-11"},[{"indicator":{"id":"SE.PRM.PRIV.ZS","value":"School enrollment, primary, private (% of total primary)"},"country":{"id":"ZH","value":"Africa Eastern and Southern"},"countryiso3code":"AFE","date":"2025","value":null,"unit":"","obs_status":"","decimal":0},{"indicator":{"id":"SE.PRM.PRIV.ZS","value":"School enrollment, primary, private (% of total primary)"},"country":{"id":"ZH","value":"Africa Eastern and Southern"},"countryiso3code":"AFE","date":"2024","value":null,"unit":"","obs_status":"","decimal":
+
+== wb_sec.json OK 1059143 https://api.worldbank.org/v2/country/all/indicator/SE.SEC.PRIV.ZS?format=json&per_page=20000&date=2010:2025
+[{"page":1,"pages":1,"per_page":20000,"total":4256,"sourceid":"2","lastupdated":"2026-11-11"},[{"indicator":{"id":"SE.SEC.PRIV.ZS","value":"School enrollment, secondary, private (% of total secondary)"},"country":{"id":"ZH","value":"Africa Eastern and Southern"},"countryiso3code":"AFE","date":"2025"
+
+== duo_po.html OK 21148 https://duo.nl/open_onderwijsdata/primair-onderwijs/aantal-leerlingen/
+<!DOCTYPE html>
+<html lang="nl">
+<!--[if lte IE 9]>
+<html lang="en-us" class="ie9"><![endif]-->
+<head>
+    <title>Leerlingen - DUO Open Onderwijsdata</title>
+<meta http-equiv="Content-Type" cont
+
+-- links duo_po.html: 
+
+== duo_vo.html OK 15426 https://duo.nl/open_onderwijsdata/voortgezet-onderwijs/aantal-leerlingen/
+<!DOCTYPE html>
+<html lang="nl">
+<!--[if lte IE 9]>
+<html lang="en-us" class="ie9"><![endif]-->
+<head>
+    <title>Leerlingen - DUO Open Onderwijsdata</title>
+<meta http-equiv="Content-Type" cont
+
+-- links duo_vo.html: 
+
+== odwb.json OK 1808 https://www.odwb.be/api/explore/v2.1/catalog/datasets?where=search(%22%C3%A9l%C3%A8ves%22)&limit=50&select=dataset_id
+{"total_count": 36, "results": [{"dataset_id": "216000"}, {"dataset_id": "2435000"}, {"dataset_id": "namur-cimetieres-columbariums-plans-elevation"}, {"dataset_id": "8338000"}, {"dataset_id": "autostop-elabore-et-securise-a-chaudfontaine"}, {"dataset_id": "201131"}, {"dataset_id": "2437010"}, {"dataset_id": "spe-secondaire-par-forme-v3"}, {"dataset_id": "spe-type-v3"}, {"dataset_id": "8115100"}, {"dataset_id": "243700"}, {"dataset_id": "ord-niveau-degre-annee-v3"}, {"dataset_id": "2321000"}, {"dataset_id": "zone-de-presence-permanente-zpp-du-loup"}, {"dataset_id": "833602"}, {"dataset_id": "centres-de-technologies-avancees-cta"}, {"dataset_id": "8312000"}, {"dataset_id": "fwb-cadastre-des-subventions-2021"}, {"dataset_id": "ores-electricite-consommation-bt-mt-par-type-de-client-hors-clients-grd-trimestr"}, {"dataset_id": "fwb-cadastre-des-subventions-2022"}, {"dataset_id": "2432000"}, {"dataset_id": "ores-gaz-consommation-par-type-de-client-gwh-trimestriel-apd-2022"}, {"dataset_id": "fwb-cadastre-des-subventions-2020"}, {"dataset_id": "2434000"}, {"dataset_id": "ores-electricite-puissance-des-productions-decentralisees-par-localite-annuel"}, {"dataset_id": "243300"}, {"dataset_id": "ord-d2d3-section-et-forme-v3"}, {"dataset_id": "ores-gaz-nombre-de-points-de-prelevement-par-type-de-consommation-annuel-apd-202"}, {"dataset_id": "elevages-de-chiens-et-de-chats-en-wallonie"}, {"dataset_id": "ores-gaz-nombre-de-points-de-prelevement-par-type-de-consommation-annuel"}, {"dataset_id": "fwb-cadastre-des-subventions-2023"}, {"dataset_id": "ores-gaz-consommation-par-type-de-client-gwh-trimestriel"}, {"dataset_id": "fwb-cadastre-des-subventions-2019"}, {"dataset_id": "la-cotisation-publique-communale-et-provinciale-ne-coute-pas-cher"}, {"dataset_id": "831100"}, {"dataset_id": "2436000"}]}
+
+== vl_stat.html OK 109195 https://onderwijs.vlaanderen.be/nl/onderwijsstatistieken/statistisch-jaarboek-van-het-vlaams-onderwijs
+<!DOCTYPE html>
+<html lang="nl">
+  <head >
+    <title>Onderwijs en vorming | Vlaanderen.be</title>
+<script type="application/ld+json" id="microdata-ldjson">{"@context":"https://schema.org","@type":"We
+
+-- links vl_stat.html: /onderwijs-en-vorming/ondersteuning-en-begeleiding-voor-leerlingen-cursisten-en-studenten
+
+== vl_open.json ERR HTTP Error 404: Not Found https://opendata.vlaanderen.be/api/3/action/package_search?q=leerlingen%20onderwijsnet&rows=20
+
+== bfs_list.json OK 37801 https://www.pxweb.bfs.admin.ch/api/v1/de/
+[{"dbid":"px-x-0304010000_101","text":"px-x-0304010000_101"},{"dbid":"px-x-0304010000_111","text":"px-x-0304010000_111"},{"dbid":"px-x-0304010000_112","text":"px-x-0304010000_112"},{"dbid":"px-x-0304010000_121","text":"px-x-0304010000_121"},{"dbid":"px-x-0602050000_101","text":"px-x-0602050000_101"},{"dbid":"px-x-0602050000_102","text":"px-x-0602050000_102"},{"dbid":"px-x-0602050000_103","text":"px-x-0602050000_103"},{"dbid":"px-x-0602050000_104","text":"px-x-0602050000_104"},{"dbid":"px-x-0602050000_105","text":"px-x-0602050000_105"},{"dbid":"px-x-0602050000_106","text":"px-x-0602050000_106"},{"dbid":"px-x-0602050000_107","text":"px-x-0602050000_107"},{"dbid":"px-x-0603030000_102","text":"px-x-0603030000_102"},{"dbid":"px-x-0603030000_104","text":"px-x-0603030000_104"},{"dbid":"px-x-0702000000_203","text":"px-x-0702000000_203"},{"dbid":"px-x-0702000000_204","text":"px-x-0702000000_204"},{"dbid":"px-x-0702000000_205","text":"px-x-0702000000_205"},{"dbid":"px-x-0702000000_206","text":"px-x-0702000000_206"},{"dbid":"px-x-0702000000_207","text":"px-x-0702000000_207"},{"dbid":"px-x-0702000000_208","text":"px-x-0702000000_208"},{"dbid":"px-x-0702000000_209","text":"px-x-0702000000_209"},{"dbid":"px-x-0702000000_211","text":"px-x-0702000000_211"},{"dbid":"px-x-0702000000_212","text":"px-x-0702000000_212"},{"dbid":"px-x-0702000000_213","text":"px-x-0702000000_213"},{"dbid":"px-x-0702000000_214","text":"px-x-0702000000_214"},{"dbid":"px-x-0702000000_215","text":"px-x-0702000000_215"},{"dbid":"px-x-0702000000_219","text":"px-x-0702000000_219"},{"dbid":"px-x-0702000000_220","text":"px-x-0702000000_220"},{"dbid":"px-x-0702000000_221","text":"px-x-0702000000_221"},{"dbid":"px-x-0702000000_225","text":"px-x-0702000000_225"},{"dbid":"px-x-0702000000_226","text":"px-x-0702000000_226"},{"dbid":"px-x-0702000000_227","text":"px-x-0702000000_227"},{"dbid":"px-x-0702000000_228","text":"px-x-0702000000_228"},{"dbid":"px-x-0702000000_229","text":"px-x-0702000000_229"},{"dbid":"px-x-0702000000_230","text":"px-x-0702000000_230"},{"dbid":"px-x-0702000000_231","text":"px-x-0702000000_231"},{"dbid":"px-x-0702000000_232","text":"px-x-0702000000_232"},{"dbid":"px-x-0702000000_233","text":"px-x-0702000000_233"},{"dbid":"px-x-0702000000_261","text":"px-x-0702000000_261"},{"dbid":"px-x-0702000000_262","text":"px-x-0702000000_262"},{"dbid":"px-x-0702000000_263","text":"px-x-0702000000_263"},{"dbid":"px-x-0702000000_271","text":"px-x-0702000000_271"},{"dbid":"px-x-0702000000_272","text":"px-x-0702000000_272"},{"dbid":"px-x-0702000000_273","text":"px-x-0702000000_273"},{"dbid":"px-x-0703010000_103","text":"px-x-0703010000_103"},{"dbid":"px-x-0703010000_104","text":"px-x-0703010000_104"},{"dbid":"px-x-0703030000_121","text":"px-x-0703030000_121"},{"dbid":"px-x-0703030000_122","text":"px-x-0703030000_122"},{"dbid":"px-x-0902020100_105","text":"px-x-0902020100_105"},{"dbid":"px-x-0902020100_106","text":"px-x-0902020100_106"},{"dbid":"px-x-0902020100_107","text":"px-x-0902020100_107"}
+
+== bfs_search.json OK 96250 https://dam-api.bfs.admin.ch/hub/api/dam/assets?language=de&q=Lernende%20Kanton%20Schultr%C3%A4ger&limit=20
+{
+  "total" : 83797,
+  "skip" : 0,
+  "data" : [ {
+    "ids" : {
+      "uuid" : "ea74323c-fbe1-4eeb-b0c8-32fb31695193",
+      "damId" : 37030389,
+      "contentId" : 19304227,
+      "languageCopyId" : 37030387,
+      "gnp" : "2026-0552"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T13:00:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : false,
+      "articleModel" : {
+        "id" : 900073,
+        "level" : 1,
+        "code" : "LK",
+        "name" : "Weblink"
+      },
+      "articleModelGroup" : {
+        "id" : 900072,
+        "level" : 0,
+        "code" : "AMG_WEBCONTENT",
+        "name" : "Webinhalt"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "Erste Tendenzen zur Entwicklung der Hotellogiernächte (HESTA-Flash)"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "STAT_GEN",
+          "name" : "Allgemeine Statistik"
+        } ],
+        "prodima" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "00",
+          "name" : "Grundlagen und Übersichten"
+        }, {
+          "id" : 900009,
+          "level" : 1,
+          "code" : "00.08",
+          "name" : "Methoden"
+        } ],
+        "inquiry" : [ ],
+        "spatialdivision" : [ ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "publisher" : [ ],
+        "tags" : [ ],
+        "dataSource" : [ ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ ],
+        "periodicity" : [ ]
+      },
+      "bibliography" : { },
+      "abstractShort" : "Experimental Statistics (BFS)",
+      "shortSummary" : {
+        "html" : "Experimental Statistics (BFS)",
+        "raw" : "Experimental Statistics (BFS)"
+      },
+      "language" : "DE/FR",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : false
+    },
+    "shop" : {
+      "orderNr" : "lk-b-experimental-07",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://statistik.admin.ch/de/innovative-interaktive-statistik/expstat/projekte/hesta-flash",
+      "rel" : "related",
+      "text" : "Erste Tendenzen zur Entwicklung der Hotellogiernächte (HESTA-Flash)"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/37030389",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/37030389/thumbnail",
+      "rel" : "thumbnail"
+    } ]
+  }, {
+    "ids" : {
+      "uuid" : "62573705-bd8a-483a-8a1a-b3626a762a78",
+      "damId" : 37030397,
+      "contentId" : 19324302,
+      "languageCopyId" : 37030395,
+      "gnp" : "2026-0552"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T13:00:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : true,
+      "articleModel" : {
+        "id" : 900046,
+        "level" : 1,
+        "code" : "DIAG_DM11",
+        "name" : "DM11 Diagramm (Data-driven)"
+      },
+      "articleModelGroup" : {
+        
+
+== nz_ckan.json OK 5996 https://catalogue.data.govt.nz/api/3/action/package_search?q=school%20directory&rows=5
+<!DOCTYPE html>
+<html>
+<head>
+    <noscript>
+        <title>Pardon Our Interruption</title>
+    </noscript>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+
+    <style>
+        .container {
+            max-width: 800px;
+            margin: auto;
+            font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+            color: #7a838c;
+        }
+        h1 { color: #2a2d30; font-weight: 500; }
+        li { margin: 0 0 10px; }
+        a { color: #428bca; }
+        a:hover, a:focus { color: #2a6496; }
+    </style>
+
+    <script>
+      window.reeseSkipExpirationCheck = true;
+      const isSpa = new URLSearchParams(window.location.search).get('X-SPA') === '1' || window.isImpervaSpaSupport;
+      const isInterstitial = new URLSearchParams(window.location.search).get('X-SPA-INTERSTITIAL') === '1';
+      let referrer = '';
+
+      //skip auto-load for isInterstitial - prevents initializeProtection to be called automatically
+      if (isSpa && isInterstitial) {
+        window.reeseSkipAutoLoad = true;
+      }
+      try {
+        referrer = new URL(document.referrer).origin;
+      } catch (e) {
+        referrer = '';
+      }
+    </script>
+
+    <!-- This head template should be placed before the following script tag that loads the challenge script -->
+    <script>
+      if (isSpa && isInterstitial) {
+        let protectionReady = false;
+        let tokenFromMessage = null;
+
+        window.addEventListener("message", function (event) {
+          if (referrer === event.origin &&
+            event.data.messageName === '__imperva_interstitial_started__' &&
+            event.data.messageData &&
+            event.data.messageData.token) {
+            tokenFromMessage = event.data.messageData.token;
+            tryProtectionInit();
+          }
+        });
+
+        window.onProtectionLoaded = function () {
+          protectionReady = true;
+          tryProtectionInit();
+        };
+
+        function tryProtectionInit() {
+          if (protectionReady && tokenFromMessage) {
+            window.initializeProtection(tokenFromMessage);
+            tokenFromMessage = null;
+          }
+        }
+      }
+
+      window.onProtectionInitialized = function(protection) {
+        if (isSpa && isInterstitial) {
+          protection.exportToken(10000).then(function(tokenExport) {
+            const message = {
+              messageName: '__imperva_interstitial_complete__',
+              messageData: {
+                token: tokenExport
+              }
+            };
+            window.parent.postMessage(message, referrer);
+          });
+        } else {
+          if (protection && protection.cookieIsSet && !protection.cookieIsSet()) {
+       
+
+== nz_dir.html ERR HTTP Error 403: Forbidden https://www.educationcounts.govt.nz/directories/list-of-nz-schools
+
+== ie_ckan.json OK 62305 https://data.gov.ie/api/3/action/package_search?q=enrolment%20schools&rows=15
+{"help": "https://data.gov.ie/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 10, "facets": {}, "results": [{"applicable_legislation": [], "author": null, "author_email": null, "collection_name": "cso_jsonrpc", "contact_email": "statistics@education.gov.ie", "contact_name": "Helen Maxwell", "contact_phone": "(+353) 1 889 6558", "creator_user_id": "0863c6bf-d7d8-485b-94b7-d50a11d5796d", "high_value_dataset": false, "hvd_category": "", "id": "6bb63443-6cf6-485a-92f6-7040a2348e75", "isopen": true, "language": "en", "license_id": "CC-BY-4.0", "license_title": "Creative Commons Attribution 4.0", "license_url": "https://creativecommons.org/licenses/by/4.0/", "maintainer": null, "maintainer_email": null, "metadata_created": "2024-06-05T12:07:28.561151", "metadata_modified": "2026-11-16T01:15:43.556057", "name": "ed133-pupils-enrolled-in-secondary-level-schools", "notes": "Pupils enrolled in Secondary-Level Schools", "notes_translated": {"en": "Pupils enrolled in Secondary-Level Schools"}, "num_resources": 4, "num_tags": 3, "organization": {"id": "central-statistics-office", "name": "central-statistics-office", "title": "Central Statistics Office", "type": "organization", "description": "The Central Statistics Office (CSO) is Ireland's national statistical office and our purpose is to impartially collect, analyse and make available statistics about Ireland\u2019s people, society and economy.\r\n\r\nSpecifically, our mandate under the Statistics Act 1993 is \"The collection, compilation, extraction and dissemination for statistical purposes of information relating to economic, social and general activities and conditions in the State\".\r\n\r\nAt national level, CSO official statistics inform decision making across a range of areas including construction, health, welfare, the environment and the economy. At European level they provide an accurate picture of Ireland\u2019s economic and social performance and enable comparisons between Ireland and other countries.\r\n\r\nThe CSO is also responsible for coordinating the official statistics of other public authorities.", "image_url": "2018-06-26-153653.371228CSO-Full-Colour-Logo-RGB-transparent-12cm.png", "created": "2018-03-05T11:27:47.066874", "is_organization": true, "approval_status": "approved", "state": "active"}, "owner_org": "central-statistics-office", "private": false, "srs": [], "state": "active", "theme": "Government", "title": "ED133 - Pupils enrolled in Secondary-Level Schools", "title_translated": {"en": "ED133 - Pupils enrolled in Secondary-Level Schools"}, "type": "dataset", "updated": "2026-07-07", "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/ED133/JSON-stat/2.0/en", "resources": [{"access_url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/ED133/CSV/1.0/en", "api_response_formats": [], "applicable_legislation": [], "cache_last_updated": null, "cache_url": null, "created": "2026-11-16T01:15:43.576145"
+
+== hr_ckan.json OK 68973 https://data.gov.hr/ckan/api/3/action/package_search?q=%C5%A1kole&rows=15
+{"help": "https://data.gov.hr/ckan/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 36, "facets": {}, "results": [{"access_rights": "public", "applicable_legislation": "", "author": "", "author_email": "", "coordinator": "", "coordinator_email": "", "creator_user_id": "baafe451-1392-4392-ab62-052278b7cdd0", "data_refresh_frequency": "", "hvd_category": "", "id": "05eeb14f-5a94-4f63-b518-29a00a2b850d", "isopen": false, "license_id": "open-license", "license_title": "Otvorena dozvola (OD)", "license_url": "https://data.gov.hr/id/licence/otvorena-dozvola-rh", "maintainer": null, "maintainer_email": null, "metadata_created": "2021-05-05T11:42:35.579344", "metadata_modified": "2026-04-15T19:07:09.749846", "name": "srednje-skole", "notes": "Osnovni podaci o srednjim \u0161kolama u RH. Izvor podataka je e-Matica - centralizirani sustav Ministarstva znanosti, obrazovanja i mladih koji slu\u017ei za unos najva\u017enijih podataka o u\u010denicima i djelatnicima osnovnih i srednjih \u0161kola.", "num_resources": 3, "num_tags": 3, "organization": {"id": "296b142f-a1d8-4743-81ed-2c227e1166f0", "name": "ministarstvo-znanosti-i-obrazovanja", "title": "Ministarstvo znanosti, obrazovanja i mladih", "type": "organization", "description": "", "image_url": "", "created": "2021-05-05T08:53:26.127373", "is_organization": true, "approval_status": "approved", "state": "active"}, "owner_org": "296b142f-a1d8-4743-81ed-2c227e1166f0", "private": false, "state": "active", "theme": "education_culture_and_sport", "title": "Srednje \u0161kole", "type": "dataset", "url": "", "version": "", "resources": [{"cache_last_updated": null, "cache_url": null, "ckan_url": "https://data.gov.hr", "created": "2017-10-12T12:48:07.787087", "datastore_active": true, "datastore_contains_all_records_of_source_file": true, "description": "Srednje skole", "format": "JSON", "hash": "42ac38e66109ba34f66fceffc2d9eae8", "id": "srednje-skole", "ignore_hash": false, "last_checked_date": "2023-03-13", "last_modified": "2025-04-15T12:58:27.319441", "metadata_modified": "2025-04-15T12:58:27.335978", "mimetype": "application/json", "mimetype_inner": null, "name": "Srednje \u0161kole", "openess": "3", "original_url": "https://data.gov.hr/ckan/dataset/05eeb14f-5a94-4f63-b518-29a00a2b850d/resource/srednje-skole/download/data.json", "package_id": "05eeb14f-5a94-4f63-b518-29a00a2b850d", "position": 0, "resource_availability": "available", "resource_id": "srednje-skole", "resource_type": "file", "set_url_type": false, "size": 214080, "state": "active", "task_created": "2024-12-11 19:13:55.849520", "url": "https://data.gov.hr/ckan/dataset/05eeb14f-5a94-4f63-b518-29a00a2b850d/resource/srednje-skole/download/data.json", "url_type": "upload"}, {"cache_last_updated": null, "cache_url": null, "created": "2023-12-19T14:07:52.282759", "datastore_active": false, "datastore_contains_all_records_of_source_file": false, "description": "Srednje skole", "format": "XML", "hash": "", "id": "45163
+
+== bc_ckan.json OK 224 https://catalogue.data.gov.bc.ca/api/3/action/package_search?q=student%20headcount%20independent&rows=5
+{"help": "https://catalogue.data.gov.bc.ca/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 0, "facets": {}, "results": [], "sort": "score desc, metadata_modified desc", "search_facets": {}}}
+
+== ab_ckan.json OK 105215 https://open.alberta.ca/api/3/action/package_search?q=student%20population%20school%20authority&rows=5
+{"help": "https://open.alberta.ca/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 176, "facets": {}, "results": [{"alternatetitle": "OLEP funding allocation amounts for each school authority", "audience": ["Educators", "General Public"], "author": null, "author_email": null, "contact": "Education and Childcare. Intergovernmental Relations", "contact_email": "ecc.officiallang@gov.ab.ca", "contactother": "", "creator": ["Education and Childcare"], "creator_user_id": "5b39747a-5073-4186-a663-aa781576f549", "date_created": "2026-10-30", "date_issued": "2026-10-30", "date_modified": "2026-10-30", "extent1": "", "id": "2d835092-f793-4109-b3b3-12a7dbc33b94", "identifier": "", "isopen": true, "language": ["en-CA [default]"], "license_id": "OGLA", "license_title": "Open Government Licence - Alberta", "license_url": "https://open.alberta.ca/licence", "maintainer": null, "maintainer_email": null, "metadata_created": "2026-10-30T21:34:42.361555", "metadata_modified": "2026-10-30T22:22:54.969256", "name": "regular-olep-funding-allocations-by-school-authority", "notes": "The annual funding allocation spreadsheet shows the amount of Official Languages in Education Programs funding each school authority offering French second-language instruction will receive. Funding amounts are based on student Full-time Equivalent enrolment calculations, as detailed in Section F of the funding manual. The spreadsheet is published annually in the spring. Francophone regional authorities determine how their block of funding is distributed among the four regional authorities.", "num_resources": 3, "num_tags": 17, "organization": {"id": "f43c75dd-e542-42ff-b19d-9a471f84463f", "name": "education-and-childcare", "title": "Education and Childcare", "type": "organization", "description": "", "image_url": "", "created": "2025-05-20T22:58:46.911195", "is_organization": true, "approval_status": "approved", "state": "active"}, "owner_org": "f43c75dd-e542-42ff-b19d-9a471f84463f", "private": false, "sensitivity": "unrestricted", "spatialcoverage1": "Alberta", "state": "active", "time_coverage_from": "2024-07-01", "time_coverage_to": "2025-06-30", "title": "Regular OLEP funding allocations by school authority", "topic": ["Education - Early Childhood to Grade 12"], "type": "opendata", "updatefrequency": "Annual", "url": null, "usage": "", "version": null, "resources": [{"cache_last_updated": null, "cache_url": null, "created": "2026-10-30T21:45:52.592300", "datastore_active": false, "description": "", "format": "XLSX", "hash": "", "id": "a347f0ef-306a-4de7-a3c3-24aaa9a6354d", "last_modified": "2026-10-30T21:45:52.461278", "metadata_modified": "2026-10-30T21:45:52.945142", "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "mimetype_inner": null, "name": "2026-2027 regular OLEP funding allocations by school authority", "package_id": "2d835092-f793-4109-b3b3-12a7dbc33b94", "position": 0, "resource_type": null, "size": 27399, "stat
+
+== qc_ckan.json OK 230 https://www.donneesquebec.ca/recherche/api/3/action/package_search?q=effectif%20scolaire%20priv%C3%A9&rows=5
+{"help": "https://www.donneesquebec.ca/recherche/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 0, "facets": {}, "results": [], "sort": "score desc, metadata_modified desc", "search_facets": {}}}
+
+== ee_volis.html OK 196 https://www.volis.ee/
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Volise teenus on suletud</title>
+</head>
+<body>
+<h2>VOLIS on suletud.</h2>
+<p>Alates 1. juulist 2026 on VOLISe teenus suletud.</p>
+
+</body>
+</html>
+
+
+== ee_stat.json OK 699 https://andmed.stat.ee/api/v1/en/stat/sotsiaalelu
+[{"id":"kultuur","type":"l","text":"Culture"},{"id":"haridus","type":"l","text":"Education"},{"id":"tervishoid","type":"l","text":"Health"},{"id":"leibkonnad","type":"l","text":"Households"},{"id":"sissetulek","type":"l","text":"Income"},{"id":"eigus-ja-turvalisus","type":"l","text":"Justice and security"},{"id":"tooturg","type":"l","text":"Labour market"},{"id":"sotsiaalne-terjutus-laekeni-indikaatorid","type":"l","text":"Social exclusion and poverty"},{"id":"sotsiaalne-kaitse","type":"l","text":"Social protection"},{"id":"ajakasutus","type":"l","text":"Time use"},{"id":"laste-heaolu","type":"l","text":"Well-being of children"},{"id":"tooelukvaliteet","type":"l","text":"Worklife quality"}]
+
+== kr_clik.html OK 128856 https://clik.nanet.go.kr/
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+	
+ 
+
+<title>국회도서관 지방의정포털</title>
+<meta name="robots" content="all, follow" />
+<meta name="description" content="국회와 지방의회의 의정자료를 통합·공유하는 시스템" />
+<meta name="keywords" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="naver-site-verification" content="5604b167bfe4296d7a3d26a2a59a1cfd4ad73b1a" />
+<!-- favicon -->
+<link rel="icon" href="/favicon/favicon.ico" sizes="16x16" />
+<meta name="msapplication-TileImage" content="/favicon/favicon.ico" />
+<link rel="apple-touch-icon-precomposed" href="/favicon/favicon.ico" />
+<link href="/css/common.css" rel="stylesheet" type="text/css" />
+<link href="/css/sub.css" rel="stylesheet" type="text/css" />
+<link href="/css/sub_tab.css" rel="stylesheet" type="text/css" />
+<link href="/css/board.css" rel="stylesheet" type="text/css" />
+<link href="/css/txt.css" rel="stylesh
+
+== lt_osp.json ERR HTTP Error 500: Internal Server Error https://get.data.gov.lt/datasets/gov/vssa/?format=json
+
+== cz_exek.html ERR HTTP Error 500: Internal Server Error https://www.mapaexekuci.cz/
+
+== lv_csp.json OK 575 https://data.stat.gov.lv/api/v1/en/OSP_PUB/
+[{"id":"POP","type":"l","text":"Population"},{"id":"EMP","type":"l","text":"Labour market"},{"id":"VES","type":"l","text":"Social security and health"},{"id":"IZG","type":"l","text":"Education, culture and science"},{"id":"VEK","type":"l","text":"Economy"},{"id":"TIR","type":"l","text":"Trade and services"},{"id":"ENT","type":"l","text":"Business"},{"id":"IKT","type":"l","text":"Information technologies"},{"id":"NOZ","type":"l","text":"Business sectors"},{"id":"ENV","type":"l","text":"Environment"},{"id":"FIN","type":"l","text":"Indicators of well-being and equality"}]
+

@@ -1,0 +1,2938 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+	
+ 
+
+<title>국회도서관 지방의정포털</title>
+<meta name="robots" content="all, follow" />
+<meta name="description" content="국회와 지방의회의 의정자료를 통합·공유하는 시스템" />
+<meta name="keywords" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="naver-site-verification" content="5604b167bfe4296d7a3d26a2a59a1cfd4ad73b1a" />
+<!-- favicon -->
+<link rel="icon" href="/favicon/favicon.ico" sizes="16x16" />
+<meta name="msapplication-TileImage" content="/favicon/favicon.ico" />
+<link rel="apple-touch-icon-precomposed" href="/favicon/favicon.ico" />
+<link href="/css/common.css" rel="stylesheet" type="text/css" />
+<link href="/css/sub.css" rel="stylesheet" type="text/css" />
+<link href="/css/sub_tab.css" rel="stylesheet" type="text/css" />
+<link href="/css/board.css" rel="stylesheet" type="text/css" />
+<link href="/css/txt.css" rel="stylesheet" type="text/css" />
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+<link href="/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/css/ark/css/ark.css" rel="stylesheet" type="text/css" />
+<link href="/css/jqcloud.css" rel="stylesheet" type="text/css"  />
+<link href="/css/slick.css" rel="stylesheet" type="text/css"  />
+<link href="/css/slick-theme.css" rel="stylesheet" type="text/css"  />
+<link href="/js/swiper/swiper-bundle.min.css" rel="stylesheet" />
+<link href="/css/ui.reset.css" rel="stylesheet" />
+<link href="/css/placeholder/placeholder.css" rel="stylesheet" />
+
+<script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/js/gnb.js"></script>
+<script type="text/javascript" src="/js/scroll.js"></script>
+<script type="text/javascript" src="/js/jquery.scrollto.js"></script>
+<script type="text/javascript" src="/js/default.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/nanet.js"></script>
+
+<script type="text/javascript" src="/js/tab.js"></script>
+<script src="/js/swiper/swiper-bundle.min.js"></script>
+<script src="/js/jquery-3.3.1.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="/js/jquery.fullPage.css" />
+<link type="text/css" rel="stylesheet" href="/css/style-css.css" />
+<link href="/css/sub_m2.css" rel="stylesheet" type="text/css" />
+   
+<script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/scrolloverflow.min.js"></script>
+
+<script type="text/javascript" src="/js/jquery.touchwipe.min.js"></script>
+<script type="text/javascript" src="/js/jquery.bxslider.js"></script>
+<link rel="stylesheet" type="text/css" href="/js/jquery.bxslider.css" />
+
+<script type="text/javascript" src="/js/jquery.fullPage.js"></script>
+<script type="text/javascript" src="/js/slick.js"></script>
+
+<script type="text/javascript" src="/js/ark/beta.fix.js"></script>
+<script type="text/javascript" src="/js/ark/ark.js"></script>
+<script type="text/javascript">
+var init;
+var autoCheck = 'T';
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+        anchors: ['1st', '2nd', '3rd'],
+        navigation: true,
+        navigationPosition: 'right',
+        afterLoad: function(anchorLink, index){
+			$('#current_slide_index').attr("current_index", anchorLink);
+			deleteLog = true;
+			
+			if(!$.fn.fullpage.isTouchDevice && !init){
+				if(autoCheck == 'T') {
+					init = setTimeout(function(){
+						autoCheck = 'Y';
+						$('#talkPlay').find('.bannerControl').click();
+					},6000);	
+				}
+			}else if($.fn.fullpage.isTouchDevice && init){
+				clearInterval(init);
+				$("#dev_btn").parent().addClass('rolling-play');
+				$("#dev_btn").parent().removeClass('rolling-stop');
+				$("#dev_btn").attr('src', '/images/new/btn-m-play.png');
+				$("#dev_btn").attr('alt', '시작');
+			}
+		},
+		continuousVertical: true //무한스크롤링
+    });
+    
+    // 화면 이동 - 상
+    $('#talkPlay').find('.up').click(function(e){
+		e.preventDefault();
+		$.fn.fullpage.reBuild();
+		$.fn.fullpage.moveSectionUp();
+	});
+    
+ 	// 화면 이동 - 하
+	$('#talkPlay').find('.down').click(function(e){
+		e.preventDefault();
+		$.fn.fullpage.reBuild();
+		$.fn.fullpage.moveSectionDown();
+	});
+ 	
+	// 화면 재생
+	$('#talkPlay').find('.bannerControl').click(function(e){
+		if(autoCheck == 'Y') {
+			$.fn.fullpage.moveSectionDown();
+			var slideNumber;
+			init = setInterval(function() {
+				slideNumber	= $("#current_slide_index").attr("current_index");
+				$.fn.fullpage.moveSectionDown();
+			},6000);
+			autoCheck = 'N';
+		} else {
+			if ($(this).is('.rolling-play')){
+				$(this).addClass('rolling-stop');
+				$(this).removeClass('rolling-play');
+				$("#dev_btn").attr('src', '/images/new/btn-m-stop.png');
+				$("#dev_btn").attr('alt', '멈춤');
+	
+				$.fn.fullpage.moveSectionDown();
+				var slideNumber;
+				init = setInterval(function() {
+					slideNumber	= $("#current_slide_index").attr("current_index");
+	// 				if("3rd" == slideNumber) {
+	// 					$.fn.fullpage.moveTo(1);
+	// 				} else {
+						$.fn.fullpage.moveSectionDown();
+	// 				}
+				},6000)
+			} else {
+				$(this).addClass('rolling-play');
+				$(this).removeClass('rolling-stop');
+				$("#dev_btn").attr('src', '/images/new/btn-m-play.png');
+				$("#dev_btn").attr('alt', '시작');
+				clearInterval(init);
+				$.fn.fullpage.reBuild();
+			}
+		}
+	});    
+});
+</script>
+
+<script type="text/javascript" >
+
+ 
+// 상단 토글 메뉴
+jQuery(document).ready(function() {
+	
+	var menu_box		=	jQuery('.menu_box');
+	var menu			=	jQuery('.menu_box a.menu');
+// 	var menu1			=	jQuery('.menu_box a.menu1');
+	
+	// 좌측 메뉴
+	menu.click(function() {
+		toggle_view(this);
+	});
+	//jQuery('#toggle-view a.close').click(function(){toggle_view(jQuery(this).parent().parent().parent())});
+
+	// 우측 메뉴
+// 	menu1.click(function() {
+// 		toggle_view(this);
+// 	});
+	//jQuery('#toggle-view a.close').click(function(){toggle_view(jQuery(this).parent().parent().parent())});
+
+	function toggle_view(obj) {
+		var target = $(obj).context?.className;
+        if (!target) {
+            target = $(obj)[0].className;
+        }
+		
+		var text = menu_box.children('div#gnb_list');
+		var text1 = menu_box.children('div#side_list');
+		
+		if(target == 'menu')
+		{
+			if (text.is(':hidden')) {
+				text.slideDown('200');
+				$("#gnbImg").attr("src", "/images/mobile/menu_bk.png");
+				
+				if(text1.is(':visible'))
+				{
+					text1.slideUp('200');
+					$("#sideImg").attr("src", "/images/mobile/menu1.png");
+				}
+				
+			} else {
+				text.slideUp('200');
+				$("#gnbImg").attr("src", "/images/mobile/menu_bk.png");
+			}
+		}
+// 		else if(target == 'menu1')
+// 		{
+// 			if (text1.is(':hidden')) {
+// 				text1.slideDown('200');
+// 				$("#sideImg").attr("src", "/images/mobile/menu1.png");
+
+// 				if(text.is(':visible'))
+// 				{
+// 					text.slideUp('200');
+// 					$("#gnbImg").attr("src", "/images/mobile/menu_bk.png");
+// 				}
+			
+// 			} else {
+// 				text1.slideUp('200');
+// 				$("#sideImg").attr("src", "/images/mobile/menu1.png");
+// 			}
+// 		}
+		
+		
+	}
+
+	
+});
+
+//웹접근성 탭 상세검색 라디오버튼 적용
+$(document).on('keydown', function(event){
+    if (event.key === 'Enter') {
+        var currentFocusElement = $(document.activeElement);
+        if (currentFocusElement.is('label') && currentFocusElement.attr('for')) {
+            var inputElement = $('#' + currentFocusElement.attr('for'));
+            if (inputElement.is(':radio')) {
+                inputElement.click();
+            }
+        }
+    }
+});
+
+</script>
+
+
+
+	<script type="text/javascript">
+		var isTodayClose = new Array();
+		var isStopView = new Array();
+		var imageFileNm = new Array();
+		var fileUrl = new Array();
+		var popupTitle = new Array();
+		var jQcloudWord;
+		var newsMoveStatus = true;
+		var curationMoveStatus = true;
+
+		$(document).ready(function(){
+			fn_setLoadCompleteBefore();
+			fn_getNatvNews();
+			fn_getLnpNews();
+		});
+		
+		function fn_setLoadCompleteBefore() {
+			const curationSwiper = new Swiper('.curation-slide', {
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction: false,
+				},
+				navigation: {
+					nextEl: ".swiper-button-next1",
+					prevEl: ".swiper-button-prev1",
+				},
+				loop: true,
+				speed: 1000,
+
+				/* S 2024-new */
+				slidesPerView: 1,
+				 breakpoints: {
+					/*1380: {*/
+					1359: {
+					  slidesPerView: 2,
+					},
+				  },
+			});
+			
+			const locationSwiper = new Swiper('.location-slide', {
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction: false,
+				},
+				navigation: {
+					nextEl: ".swiper-button-next2",
+					prevEl: ".swiper-button-prev2",
+				},
+				loop: true,
+				speed: 1000,
+			});
+			
+			const setupSwiperControls = (btnStopId, btnPlayId, ...swipers) => {
+			  const btnStop = document.getElementById(btnStopId);
+			  const btnPlay = document.getElementById(btnPlayId);
+
+			  btnStop.addEventListener('click', () => {
+				swipers.forEach(swiper => swiper.autoplay.stop());
+				btnStop.style.display = 'none';
+				btnPlay.style.display = 'inline-block';
+				newsMoveStatus = false;
+			  });
+
+			  btnPlay.addEventListener('click', () => {
+				swipers.forEach(swiper => swiper.autoplay.start());
+				btnPlay.style.display = 'none';
+				btnStop.style.display = 'inline-block';
+				newsMoveStatus = true;
+			  });
+			};
+			
+			$('#btn_stop2').on('click', function() {
+				curationSwiper.autoplay.stop();
+				$('#btn_stop2').css('display','none')
+				$('#btn_play2').css('display', 'inline-block');
+				curationMoveStatus = false;
+			});
+
+			$('#btn_play2').on('click', function() {
+				curationSwiper.autoplay.start();
+				$('#btn_play2').css('display', 'none');
+				$('#btn_stop2').css('display', 'inline-block');
+				curationMoveStatus = true;
+			});
+
+			$('.curation-slide').hover(function(){
+				if(curationMoveStatus == true) {
+					curationSwiper.autoplay.stop();
+				}
+			}, function(){
+				if(curationMoveStatus == true) {
+					curationSwiper.autoplay.start();
+				}
+			});
+			
+			$('.location').hover(function(){
+				locationSwiper.autoplay.stop();
+			}, function(){
+				locationSwiper.autoplay.start();
+			});
+						
+			$('.inforCuration-slide').hover(function(){
+				inforCurationSwiper.autoplay.stop();
+			}, function(){
+				inforCurationSwiper.autoplay.start();
+			});
+
+			//지역명 검색 엔터 키 이벤트 등록
+			$('[name=loc_eng_name]').keydown(function(key) {
+				if(key.keyCode == 13) {
+					$(this).click();
+				}
+			});
+
+			//전국이슈키워드
+			fn_select_issue_keyword();
+
+			//팝업창
+			fn_ajax_search_call("/potal/comm/selectNtcePosblPopup.do", {}, fn_callback_1);
+
+			var DL_CHECK = '';
+			//전자도서관 접속(원문보기)
+			if(DL_CHECK != "Y"){
+
+				var url = "https://dl.nanet.go.kr" + "&output=svembed";
+
+				document.getElementById("dlifrm").src = url;
+
+				$.ajax({
+					type: "POST",
+					data_type : "text",
+					url: "/setSession.jsp",
+					data: {"key":"DL_CHECK","value":"Y"},
+					async:false,
+					success:function(data){},
+					beforeSend:function(){},
+					error:function(e){},
+					complete : function(data){}
+				});
+			}
+
+			$(window).resize(function(){
+				if($('body').width() < 756){
+					$('#header').css('height','53px');
+					$('.w_hide.m_footer').css('height','48px');
+
+					$('#wordcloud').css('width','99%').css('height',$(window).height() / 2);
+					$('#regionName').parent().hide();
+
+					$('.swiper-button-next').css('right','-10px')
+					$('.swiper-button-prev').css('left','-10px')
+
+					if(init){
+						clearInterval(init);
+						$("#dev_btn").parent().addClass('rolling-play');
+						$("#dev_btn").parent().removeClass('rolling-stop');
+						$("#dev_btn").attr('src', '/images/new/btn-m-play.png');
+						$("#dev_btn").attr('alt', '시작');
+					}
+				}else{
+					$('#wordcloud').css('width','99%').css('height',$('.map_wc').height() - 100);
+					$('#regionName').parent().show();
+				}
+			});
+
+			$(window).resize();
+
+
+			$('.search_body_btn').keydown(function(key) {
+				if(key.keyCode == 9 && !key.shiftKey) {
+					event.preventDefault();
+					$('.new-modal-cancel').focus();
+				}
+			});
+
+			$('.new-modal-cancel').keydown(function(key) {
+				if(key.keyCode == 9 && key.shiftKey) {
+					event.preventDefault();
+					$('.search_body_btn').focus();
+				} else if(key.keyCode == 13) {
+					//$(".new-modal").css("display", "none");
+					$(this).click();
+				}
+			});
+		}
+		
+		function fn_setLoadCompleteAfter() {
+			//국회뉴스
+			const newsSwiper = new Swiper('.news-slide', {
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction: false,
+				},
+				navigation: {
+					nextEl: ".swiper-button-next1",
+					prevEl: ".swiper-button-prev1",
+				},
+				loop: true,
+				speed: 1000,
+			});
+			
+			//5분 자유발언
+			const fiveMinsSwiper = new Swiper('.five-mins-slide', {
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction: false,
+				},
+				navigation: {
+					nextEl: ".swiper-button-next3",
+					prevEl: ".swiper-button-prev3",
+				},
+				loop: true,
+				speed: 1000,
+			});
+			
+			const setupSwiperControls = (btnStopId, btnPlayId, ...swipers) => {
+			  const btnStop = document.getElementById(btnStopId);
+			  const btnPlay = document.getElementById(btnPlayId);
+
+			  btnStop.addEventListener('click', () => {
+				swipers.forEach(swiper => swiper.autoplay.stop());
+				btnStop.style.display = 'none';
+				btnPlay.style.display = 'inline-block';
+				newsMoveStatus = false;
+			  });
+
+			  btnPlay.addEventListener('click', () => {
+				swipers.forEach(swiper => swiper.autoplay.start());
+				btnPlay.style.display = 'none';
+				btnStop.style.display = 'inline-block';
+				newsMoveStatus = true;
+			  });
+			};
+					
+			setupSwiperControls('btn_stop', 'btn_play', newsSwiper, fiveMinsSwiper);
+			
+			$('.five-mins-slide').hover(function(){
+				if(newsMoveStatus == true) {
+					fiveMinsSwiper.autoplay.stop();
+					newsSwiper.autoplay.stop();
+				}
+			}, function(){
+				if(newsMoveStatus == true) {
+					fiveMinsSwiper.autoplay.start();
+					newsSwiper.autoplay.start();
+				}
+			});
+			
+			$('.news-slide').hover(function(){
+				if(newsMoveStatus == true) {
+					newsSwiper.autoplay.stop();
+					fiveMinsSwiper.autoplay.stop();
+				}
+			}, function(){
+				if(newsMoveStatus == true) {
+					newsSwiper.autoplay.start();
+					fiveMinsSwiper.autoplay.start();
+				}
+			});
+		}
+		
+		//2025-06-02 국회최신뉴스 조회
+		function fn_getNatvNews() {
+			$.ajax({
+				type : "POST"
+				,url : "/potal/natvNews.do"
+				,data: {}
+				,success : function(result){
+					$("#natvNewsDiv").html(result);
+					fn_setLoadCompleteAfter();
+				}
+			});
+		}
+		
+		//2025-06-02 최신외국입법정보 조회
+		function fn_getLnpNews() {
+			$.ajax({
+				type : "POST"
+				,url : "/potal/lnpNews.do"
+				,data: {}
+				,success : function(result){
+					$("#lnpNewsDiv").html(result);
+				}
+			});
+		}
+		
+		//2026-07-31 광역의회 대수정보 별도조회
+		function fn_getCouncilInfo() {
+			$.ajax({
+				type : "POST"
+				,url : "/potal/getCouncilInfoPopup.do"
+				,data: {}
+				,success : function(result){
+					$("#councilInfoDiv").html(result);
+				}
+			});
+		}
+		
+		//2026-07-31 기초의회 대수정보 별도조회
+		function fn_getCouncilBasicInfo() {
+			$.ajax({
+				type : "POST"
+				,url : "/potal/getCouncilBasicInfoPopup.do"
+				,data: {}
+				,success : function(result){
+					$("#councilBasicInfoDiv").html(result);
+				}
+			});
+		}
+		
+		//2026-07-31 의회선택 레이어 별도조회
+		function fn_getCouncilSelectInfo() {
+			$.ajax({
+				type : "POST"
+				,url : "/potal/getCouncilSelectPopup.do"
+				,data: {}
+				,success : function(result){
+					$("#councilSelectDiv").html(result);
+				}
+			});
+		}
+		
+
+		function fn_check(){
+			
+			alert("로그인 후 사용 가능합니다.");
+			location.href ="/login.do";
+			
+		}
+
+		function fn_callback_1(result){
+			if(result != undefined && result.length > 0){
+				var isOpen = true;
+
+				isStopView = result[0].stopvew_setup_at;
+
+				var cookies = getCookies();
+				$(cookies).each(function(index, value){
+					if(value.indexOf("isTodayClose") > -1) {
+						if(value.split("=")[1] == "Y"){
+							isOpen = false;
+						}
+					}
+				});
+
+				if(isOpen) {
+					$(result).each(function(index, value){
+						var option = "";
+						option += "left="+value.popup_width_lc * 37.795276;
+						option += ",top="+value.popup_vrticl_lc * 37.795276;
+						option += ",width="+(value.popup_width_size * 37.795276);
+						option += ",height="+(value.popup_vrticl_size * 37.795276);
+						option += "";
+						isTodayClose[index] = value.stopvew_setup_at;
+						imageFileNm[index] = value.image_file_nm;
+						fileUrl[index] = value.file_url;
+						popupTitle[index] = value.popup_sj_nm;
+
+						window.open("/potal/popup/popup.do?index="+index,"popup" + index,option);
+					});
+				}
+			}
+		}
+
+		function fn_callback_2(result){
+			if(result.length > 0){
+				var html = '';
+				$(result).each(function(index, value){
+					var style = '';
+					if(value.rasmbly_id  != '002001'){
+						style = 'style="display:none;"';
+					}
+					html += '<div id="area' + value.rasmbly_id + '" class="cont" ' + style + '>';
+					html += '	<h4><img src="/images/main/area_txt_' + value.rasmbly_id + '.png" alt="' + value.rasmbly_nm + '" /></h4>';
+					html += '	<ul>';
+					html += '		<li class="big big1">의원수 <strong>' + commaNum(value.asemby_co) + '</strong> 명</li>';
+					html += '		<li class="big big2">위원회수 <strong>' + commaNum(value.cmit_co) + '</strong> 개</li>';
+					html += '		<li class="s0">제 <strong>' + commaNum(value.rasmbly_numpr) + '</strong> 대</li>';
+					html += '		<li class="s1">회의록 <strong>' + commaNum(value.mints_co) + '</strong> 건</li>';
+					html += '		<li class="s2">접수의안 <strong>' + commaNum(value.rcepter_bi_co) + '</strong> 건</li>';
+					html += '		<li class="s3">계류의안 <strong>' + commaNum(value.mrng_bi_co) + '</strong> 건</li>';
+					html += '		<li class="s4">처리의안 <strong>' + commaNum(value.process_bi_co) + '</strong> 건 </li>';
+					html += '	</ul>';
+					html += '</div>';
+				});
+				$('#area_box').append(html);
+			}
+		}
+
+		// 상세보기
+		function fn_detailInfo(collection, extid){
+			var param = "collection="+collection+"&amp;DOCID="+extid;
+			location.href= "/potal/search/searchView.do?"+param;
+		}
+
+		// 천단위 콤마찍기
+		function commaNum(num) {
+			var len, point, str;
+
+			num = num + "";
+			point = num.length % 3;
+			len = num.length;
+
+			str = num.substring(0, point);
+			while (point < len) {
+				if (str != "") str += ",";
+				str += num.substring(point, point + 3);
+				point += 3;
+			}
+			return str;
+		}
+
+		function fn_nanetDetail(url, seq){
+			window.open("", "nanet_win_" + seq);
+			var frm = document.nanetFrm;
+			frm.target = "nanet_win_" + seq;
+			frm.action = url;
+			frm.searchSeq.value = seq;
+			frm.submit();
+			return false;
+		}
+
+		function openErrorSttemntPopup(reportingGubun){
+			var option = "";
+			option += ",width=770";
+			option += ",height=600";
+			option += ",scrollbar=no";
+			option += ",resizeable=no";
+			option += "";
+
+			var contentSj 	= $('#contentSj') != null ? $('#contentSj').text() : "";
+			var url 		= "/potal/error/errorSttemntPopup.do?reportingGubun=" + reportingGubun + "&reportingUrl=" + window.location.href.replace('#none;', '') + "&cn=&collection=&contentSj=" + contentSj ;
+			var ii 			= parseInt(Math.random() * 10000 + '');
+
+			var ret_open = window.open(url,'VIEWER_POP_'+ii,option);
+			if(ret_open == null) {
+				alert("팝업차단을 해제하세요!");
+				return false;
+			}
+		}
+
+		function gnbClick(){
+			$('.gnb-allmenu-wrap').toggle();
+			if($('.gnb-allmenu:visible').length > 0){
+				$('div.gnb a.allmenu img').attr('src','/images/new/icon-close-l.png');
+			}else{
+				$('div.gnb a.allmenu img').attr('src','/images/new/icon-menu-l.png');
+			}
+		}
+
+		//국회회의록 상세화면
+		function goDetailSingleDB(cn_no_db, collection) {
+			var cn_no_Tmp = cn_no_db.split('_');
+			var cn_no = cn_no_Tmp[0]+"_"+cn_no_Tmp[1];
+			if (cn_no.length<=8){
+				alert("제어번호를 확인할 수 없는 자료가 포함되어 있습니다.");
+				return false;
+			}
+
+			var form = document.frmView;
+			var queryText = "";
+			var dateQuery = "";
+
+			form.detailviewgn.value = "S";
+			form.singleviewvu.value = cn_no_db;
+			form.collection.value = collection;
+			form.action = "/potal/search/searchDLView.do";
+			form.submit();
+		 }
+
+		function fn_enter_check(event) {
+			if (event.keyCode == 13) {
+				fn_main_total_search();
+			}
+		}
+
+		function fn_popup_enter_check(event) {
+			if (event.keyCode == 13) {
+				fn_main_popup_total_search();
+			}
+		}
+
+		//메인화면에서 통합검색
+		function fn_main_total_search() {
+			if ($('#query').val() != "") {
+
+				query = $('#query').val();
+				query = encodeURIComponent(htmlEntityEnc2(query));
+
+				//20160223 lth 제어번호 형식(clik로 시작하며 19자리 문자열)으로 조회 시 대문자로 변환 처리
+				if (query.trim().toUpperCase().indexOf("CLIK") == 0 && query.trim().length == 19) {
+					query = query.toUpperCase();
+				}
+
+				$('#search_keyword').val(query);
+				$('#form_query').val(query);
+				setCookieSearchHistory(event, $('#query').val());
+				document.main_frm.submit();
+			} else if ($('#query').val() == "") {
+				alert("검색어를 입력해주세요.");
+				return false;
+			} else {
+				$('#form_query').val(query);
+				document.main_frm.submit();
+			}
+		}
+
+		//메인화면 팝업에서 통합검색
+		function fn_main_popup_total_search() {
+			if ($('#popup_query').val() != "") {
+				query = $('#popup_query').val();
+				query = encodeURIComponent(htmlEntityEnc2(query));
+
+				//20160223 lth 제어번호 형식(clik로 시작하며 19자리 문자열)으로 조회 시 대문자로 변환 처리
+				if (query.trim().toUpperCase().indexOf("CLIK") == 0 && query.trim().length == 19) {
+					query = query.toUpperCase();
+				}
+
+				$('#popup_search_keyword').val(query);
+				$('#popup_form_query').val(query);
+				setCookieSearchHistory(event, $('#popup_query').val());
+				document.main_popup_frm.submit();
+			} else if ($('#popup_query').val() == "") {
+				alert("검색어를 입력해주세요.");
+				return false;
+			} else {
+				$('#popup_form_query').val(query);
+				//$('#orQuery').val("1");
+				document.main_popup_frm.submit();
+			}
+		}
+
+		function popup_text_clear(){
+			document.getElementById('popup_query').value = "";
+		}
+
+		//전국이슈키워드
+		function fn_select_issue_keyword() {
+			$('.main_hashtag ul li').remove();
+			result = JSON.parse('{"000":{"data":[{"size":64,"text":"폭염경보"},{"size":54,"text":"폭염특보"},{"size":50,"text":"열대야주의보"},{"size":48,"text":"최저기온"},{"size":42,"text":"고온다습"},{"size":38,"text":"지방시대 실현"},{"size":36,"text":"지방분권"},{"size":34,"text":"고령운전자 교통사고 예방사업"},{"size":32,"text":"고용부담금"},{"size":30,"text":"공군사관학교"}],"name":"전국"},"101":{"data":[{"size":64,"text":"폭염경보"},{"size":54,"text":"폭염특보"}],"name":"서울/인천/경기"},"102":{"data":[{"size":64,"text":"폭염특보"}],"name":"강원도"},"103":{"data":[{"size":64,"text":"열대야주의보"}],"name":"충청북도"},"104":{"data":[{"size":64,"text":"국군사관학교"},{"size":54,"text":"삼성전자"},{"size":50,"text":"K리그"},{"size":48,"text":"고용부담금"},{"size":42,"text":"산업경제"},{"size":38,"text":"아동복지"},{"size":36,"text":"업무활동장려금 지급"},{"size":34,"text":"외래어 정비"},{"size":32,"text":"인구전략"},{"size":30,"text":"장애인 고용"},{"size":28,"text":"지방하천"}],"name":"대전/세종/충남"},"105":{"data":[{"size":64,"text":"폭염경보"}],"name":"전라북도"},"106":{"data":[{"size":64,"text":"전남광주특별시"},{"size":54,"text":"폭염경보"},{"size":50,"text":"통합의료벨트"},{"size":48,"text":"폭염특보"},{"size":42,"text":"SK하이닉스"},{"size":38,"text":"반도체 클러스터 조성"},{"size":36,"text":"열대야주의보"},{"size":34,"text":"바이오가스"},{"size":32,"text":"지방분권"},{"size":30,"text":"지역균형발전"}],"name":"광주/전남"},"107":{"data":[{"size":64,"text":"폭염경보"},{"size":54,"text":"폭염특보"},{"size":50,"text":"임시주택"},{"size":48,"text":"폭염경보 지역"},{"size":42,"text":"열대야주의보"},{"size":38,"text":"온열질환 발생 위험"},{"size":36,"text":"지방시대 실현"},{"size":34,"text":"복지일자리"},{"size":32,"text":"보건의료정책"},{"size":30,"text":"포항지진"}],"name":"대구/경북"},"108":{"data":[{"size":64,"text":"세계유산"},{"size":54,"text":"폭염특보"},{"size":50,"text":"열대야주의보"},{"size":48,"text":"고려아연"},{"size":42,"text":"경제일자리"},{"size":38,"text":"공군사관학교"}],"name":"부산/울산/경남"},"109":{"data":[{"size":64,"text":"고온다습"},{"size":54,"text":"폭염특보"},{"size":50,"text":"최저기온"},{"size":48,"text":"폭염경보"},{"size":42,"text":"열대야주의보"},{"size":38,"text":"수온 피해"},{"size":36,"text":"응급처치"},{"size":34,"text":"기상장비"},{"size":32,"text":"지방분권"}],"name":"제주도"}}')
+			$(result['000'].data).each(function(index, value){
+				var str = "";
+				if (index < 5) {
+					str += `<li>`;
+					str += " <a href=\"#none\" onclick=\"fn_search_pi3('','" + value.text + "'); return false;\">";
+					str += "<span>#</span>"
+					str += value.text;
+					str += "</a></li>"
+					$('.main_hashtag ul').append(str);
+				}
+			});
+		}
+
+		function fnIsSecNet() {
+			alert("인터넷망 PC를 이용하시기 바랍니다.");
+		}
+
+		function searchLocationName(engName) {
+			var locationNameList = JSON.parse('[{"engName":"BUSAN","korNameList":"부산광역시,부산시"},{"engName":"CHUNGBUK","korNameList":"충청북도,충북"},{"engName":"CHUNGNAM","korNameList":"충청남도,충남"},{"engName":"DAEGU","korNameList":"대구시,대구광역시"},{"engName":"DAEJEON","korNameList":"대전시,대전광역시"},{"engName":"GANGWON","korNameList":"강원도,강원특별자치도"},{"engName":"GWANGJU","korNameList":"광주시,광주광역시"},{"engName":"GYEONGBUK","korNameList":"경상북도,경북"},{"engName":"GYEONGGI","korNameList":"경기도"},{"engName":"GYEONGNAM","korNameList":"경상남도,경남"},{"engName":"INCHEON","korNameList":"인천,인천광역시"},{"engName":"JEJU","korNameList":"제주도,제주특별자치도"},{"engName":"JEONBUK","korNameList":"전라북도,전북,전북특별자치도"},{"engName":"JEONNAM","korNameList":"전라남도,전남"},{"engName":"SEJONG","korNameList":"세종시,세종특별자치시"},{"engName":"SEOUL","korNameList":"서울시,서울특별시"},{"engName":"ULSAN","korNameList":"울산시,울산광역시"}]');
+			var queryData = '';
+			for(var i = 0; i < locationNameList.length; i++) {
+				if(engName == locationNameList[i].engName) {
+					var korNameList = locationNameList[i].korNameList;
+					var korNames = korNameList.split(',');
+					//var queryData = '';
+					for(var j = 0; j < korNames.length; j++) {
+						queryData += korNames[j];
+						if(j != (korNames.length - 1)) {
+							queryData += ',';
+						}
+					}
+				}
+			}
+
+			$('#search_keyword').val(queryData);
+			$('#form_query').val(queryData);
+			$('#orQuery').val("1");
+			setCookieSearchHistory(event, queryData);
+			document.main_frm.submit();
+		}
+	</script>
+
+</head>
+<body class="main_body">
+<form name="nanetFrm" method="post">
+	<input type="hidden" name="searchSeq" value=""/>
+</form>
+<form name="frmView" method="post" action="#none">
+	<input type="hidden" name="cn" />
+	<input type="hidden" name="filepath" />
+	<input type="hidden" name="title" />
+	<input type="hidden" name="collection" />
+	<input type="hidden" name="query" />
+	<input type="hidden" name="singleviewvu" />
+	<input type="hidden" name="detailviewgn" />
+</form>
+
+<form id="main_frm" name="main_frm" action="/potal/search/search.do" method="post">
+	<input type="hidden" id="form_query" name="query" value="" />
+	<input type="hidden" id="search_keyword" name="search_keyword" value="" />
+	<input type="hidden" id="orQuery" name="orQuery" value="" />
+</form>
+
+<form id="main_popup_frm" name="main_popup_frm" action="/potal/search/search.do" method="post">
+	<input type="hidden" id="popup_form_query" name="query" />
+	<input type="hidden" id="popup_search_keyword" name="search_keyword" />
+</form>
+
+
+<div id="header">
+	
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	// 자동완성 위치 설정 임시
+	fnSearchResizing();
+
+	var addEvent = function(object, type, callback) {
+		if(object == null || typeof(object) == 'undefined'){
+			return;
+		}
+		if(object.addEventListener) {
+			object.addEventListener(type, callback, false);
+		}else if(object.attachEvent){
+			object.attachEvent('on' + type, callback);
+		}else{
+			object['on'+type] = callback;
+		}
+	}
+
+	// 리사이즈 할 때 이벤트 붙인거 빼고 아예 스타일로 넣을거 같긴함
+	addEvent(window, 'resize', function(event){
+		// 자동완성 위치 설정
+		fnSearchResizing();
+
+	});
+
+	$('.questionnaire_span').keydown(function(key) {
+		if(key.keyCode == 13) {
+			this.click();
+		}
+	});
+
+	$('.icon_search_span').keydown(function(key) {
+		if(key.keyCode == 13) {
+			$('.icon_search').click();
+			setTimeout(function() {
+				$('.new-modal-cancel').focus();
+			}, 10);
+		}
+	});
+
+});
+
+// 자동완성 위치 설정
+function fnSearchResizing(){
+	// 자동완성 위치 설정 임시
+	var width_size = window.outerWidth;
+
+	// 모바일(메인) 일 때
+	if(width_size <= 768){
+		// $('#query').css('width', '80%');
+		// $('#ark').css('width', '95%');
+		$('#ark_wrap').css('width', $('#query').width()+8);
+		$('#ark_down').css('right', '75px');
+		$('#ark_down').css('top', '20px');
+		$('#ark_up').css('right', '75px');
+		$('#ark_up').css('top', '20px');
+	} else {
+		// $('#query').css('width', '89%');
+		// $('#ark').css('width', '100%');
+		$('#ark_wrap').css('width', $('#query').width()-7);
+		$('#ark_wrap').css('top', '50px');
+		$('#ark_wrap').css('left', '27px');
+		$('#ark_down').css('right', '');
+		$('#ark_down').css('top', '');
+		$('#ark_up').css('right', '');
+		$('#ark_up').css('top', '');
+	}
+
+}
+
+//엔터입력 처리
+function fn_enter_chk(event){
+	if(event.keyCode == 13){
+
+/* 		if($('#query').val() != "통합검색" && $('#query').val() != "") */
+		if($('#query').val() != "")
+		{
+			query = $('#query').val();
+			query = encodeURIComponent(htmlEntityEnc2(query));
+
+			//20160223 lth 제어번호 형식(clik로 시작하며 19자리 문자열)으로 조회 시 대문자로 변환 처리
+			if(query.trim().toUpperCase().indexOf("CLIK") == 0 && query.trim().length == 19){
+				query = query.toUpperCase();
+			}
+
+			$('#search_keyword').val(query);
+			setCookieSearchHistory(event, $('#query').val());
+			document.frm.submit();
+		}
+		else if($('#query').val() == "")
+/* 		else if($('#query').val() == "통합검색" || $('#query').val() == "") */
+		{
+			alert("검색어를 입력해주세요.");
+			return false;
+		}
+		else
+		{
+			document.frm.submit();
+		}
+	}
+}
+
+//검색어 쿠키저장
+function fn_set_cookie(event) {
+	if ($('#query').val() != "") {
+		query = $('#query').val();
+		query = encodeURIComponent(htmlEntityEnc2(query));
+
+		//20160223 lth 제어번호 형식(clik로 시작하며 19자리 문자열)으로 조회 시 대문자로 변환 처리
+		if (query.trim().toUpperCase().indexOf("CLIK") == 0 && query.trim().length == 19) {
+			query = query.toUpperCase();
+		}
+
+		$('#auto_query').val(query);
+		$('#auto_search_keyword').val(query);
+		setCookieSearchHistory(event, $('#query').val());
+		document.frm.submit();
+	}
+	else if ($('#query').val() == "") {
+		alert("검색어를 입력해주세요.");
+		return false;
+	} else {
+		$('#auto_query').val(query);
+		$('#auto_search_keyword').val(query);
+		document.frm.submit();
+	}
+}
+
+function scrollToTop() {
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth'
+	});
+}
+
+function fn_search_pi3(collection, keyword){
+
+	if(typeof(collection) != "undefined"){
+
+		if(collection == "dl" || collection == "proc" || collection == "law"){
+
+			var regOpExp = /[|~&]/gi;
+			var regExp = /[$]/gi;
+
+			if(regOpExp.test(keyword)){
+
+				var trueOrFalse = "T";
+				var sIndex = 0;
+
+				while(trueOrFalse == "T"){								// 큰따옴표(완전일치 연산자) 안에 &,|,~ 등의 다른 검색어 연산자가 있다면 모두 띄어쓰기로 변환시켜준다. 연속된 빈칸은 이후에 removeConsecutiveOp에서 한 개의 빈칸으로 제거함.
+
+					if(keyword.indexOf("\"", sIndex) > -1){
+						var s = keyword.indexOf("\"", sIndex);
+						var e = keyword.indexOf("\"", s+1) + 1;
+						var input = "";
+						var newInput = "";
+
+						if(keyword.indexOf("\"", s+1) != -1){
+							input = keyword.substring(s, e);
+							sIndex = e + 1;
+						} else if(keyword.indexOf("\"", s+1) == -1){
+							input = keyword.substring(s) + '"';
+							trueOrFalse = "F";
+						}
+
+						newInput = input;
+						newInput = newInput.replace(/[&|~]/g, " ");
+						keyword = keyword.replace(input, newInput);
+
+					} else {
+						trueOrFalse = "F";
+					}
+
+				}
+
+				keyword = keyword.replace(/ /g, "$");					// 큰따옴표 안에 빈칸을 모두 $문자로 치환시켜준다.
+				keyword = removeConsecutiveOp(keyword);					// 연속된 연산자 및 띄어쓰기를 보정해주는 함수 removeConsecutiveOp를 거쳐 띄어쓰기가 여러개면 한 개만 남기고, 검색어 연산자가 연달아 오는 경우(&&&, &~~| 이런 식일 경우) 처음 오는 연산자만 남긴다.
+
+				if(regExp.test(keyword)){								// removeConsecutiveOp 함수에 의해 정제된 keyword의 값에서 $문자를 다시 space(빈칸)으로 치환한다.
+					keyword = keyword.replace(regExp, " ");
+				}
+
+				// 큰 따옴표 안에 있는 검색어에 대한 정제과정이 끝나고 나면, 큰 따옴표로 둘러 쌓여있지 않은 검색어에 대한 정제과정을 거친다.
+				// 큰 따옴표 밖에 있는 검색어 중 연산자가 존재하면 fn_checkSearchOp1 함수로 정제한다.
+				keyword = fn_checkSearchOp1(keyword);
+
+			} else {
+
+				keyword = fn_checkSearchOp2(keyword);
+				keyword = keyword.replace(/ /g, "$");					// 큰따옴표 안에 빈칸을 모두 $문자로 치환시켜준다.
+				keyword = removeConsecutiveOp(keyword);
+				if(regExp.test(keyword)){
+					keyword = keyword.replace(regExp, " ");
+				}
+			}
+
+		}else{
+			keyword = fn_removeSpecialChar(keyword);					// 모든 특수문자 제거
+		}
+
+	}else{
+		keyword = fn_removeSpecialChar(keyword);						// 모든 특수문자 제거
+	}
+
+	$('#sSearchGubun').val('simple');
+	$('#sSearch_keyword').val(encodeURIComponent(htmlEntityEnc2(keyword)));
+	$('#query').val(keyword);
+
+	if(collection == "dl")
+		$('#search_frm #searchType').val('C_ALL_NI_TOC');
+	else
+		$('#search_frm #searchType').val('C_ALL');
+
+// 	 fn_search();
+// 	$("#query").next().click();
+	$("#query").siblings("button").click();
+}
+
+function openQuestionnaire() {
+	// 링크 있을때만 사용 (sub_search.jsp 동일하게 변경필요)
+	var questionnaireURL = 'https://survey.nanet.go.kr/survey.jsp?p=203&r=02';
+	var popupWidth = 870;
+	var popupHeight = 600;
+	var topPosition = (window.innerHeight - popupHeight) / 2 + window.screenY;
+	var leftPosition = (window.innerWidth - popupWidth) / 2 + window.screenX;
+
+	window.open(questionnaireURL, '설문지 새창', 'width=' + popupWidth + ',height=' + popupHeight + ',top=' + topPosition + ',left=' + leftPosition);
+}
+</script>
+
+<form name="frm" action="/potal/search/search.do" method="post">
+	<input type="hidden" id="auto_query" name="query" />
+	<input type="hidden" id="auto_search_keyword" name="query" value="">
+</form>
+
+<form id="search_frm" name="search_frm" action="" method="post">
+	<input id="sCurrentPageNo" name="currentPageNo" type="hidden" value=""/>
+	<input id="sPageType" name="pageType" type="hidden" value="list"/>
+	<input id="sSearchDiv" name="searchDiv" type="hidden" value="search"/>
+	<input id="sSearchGubun" name="searchGubun" type="hidden" value="pi"/>
+	<input id="sSearchSelect" name="searchSelect" type="hidden" value="Y"/>
+</form>
+
+<div id="header" class="top_box">
+	<div class="new_top_menu">
+		<div class="new_top_inner">
+			<div class="new_top_left">
+			</div>
+			<div class="new_top_right">
+				<ul>
+					
+					<li><a href="/login.do" class="dl_portal">로그인</a></li>
+					<li class="layer"><a href="#none" class="join">회원가입</a></li>
+					
+					<li><a href="#none" onclick="showSiteUseGuidanceModal();">국회도서관 지방의정포털이란?</a></li>
+				</ul>
+				<div class="mypage-layer">
+					<ul style="flex-direction: column;">
+						
+						
+						<li class="modify layer1"><a href="#none">회원정보수정</a></li>
+						
+						<li class="mypage"><a href="/potal/member/myPageView.do">마이페이지</a></li>
+					</ul>
+				</div><!--//mypage-layer-->
+			</div>
+		</div>
+	</div>
+
+	<nav>
+		<h1>
+			<a href="/index.do">
+				<img src="/images/new/main_logo.png" alt="국회도서관 지방의정포털" class="main_logo_img">
+			</a>
+		</h1>
+		<div id="gnb"><!-- ★★ 메뉴 개편 변경 2026-03-16 : dong9ry -->
+			<div class="gnb resize">
+				<ul>
+					<li>
+						<a href="/potal/guide/siteUseGuidance.do" class="d1" id="mmenu1" onmouseover="menuMouseOver(1);" onfocus="menuMouseOver(1);" onmouseout="menuCloseTime(1);">
+							<span class="m_size">지방의정포털소개</span>
+						</a>
+						<div class="gnb-allmenu-wrap" onmouseover="menuCancelCloseTime(1)" onmouseout="menuCloseTime(1);" style="display:none;">
+							<div class="gnb-all">
+								<div class="gnb-allmenu">
+									<ul>
+										<li><a href="/potal/guide/siteUseGuidance.do">서비스 소개</a></li>
+										<li><a href="/potal/guide/assemInfo.do">국회의정정보</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="/potal/rasmblySttusStats/rasmblyStats.do" class="d1" id="mmenu2" onmouseover="menuMouseOver(2);" onfocus="menuMouseOver();" onmouseout="menuCloseTime(2);">
+						   <span class="m_size">지방의원현황</span>
+						</a>
+						<div class="gnb-allmenu-wrap"  onmouseover="menuCancelCloseTime(2)" onmouseout="menuCloseTime(2);" style="display:none;">
+							<div class="gnb-all">
+								<div class="gnb-allmenu">
+									<ul>
+										<li><a href="/potal/rasmblySttusStats/rasmblyStats.do">의원통계</a></li>
+										<li><a href="/potal/search/searchList.do?collection=assemblyinfo&amp;searchSelect=Y">의원현황</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="/potal/search/searchList.do?collection=bill&amp;searchSelect=Y" class="d1" id="mmenu3" onmouseover="menuMouseOver(3);" onfocus="menuMouseOver(3);" onmouseout="menuCloseTime(3);">
+						   <span class="m_size">지방의회의정정보</span>
+						</a>
+						<div class="gnb-allmenu-wrap"  onmouseover="menuCancelCloseTime(3)" onmouseout="menuCloseTime(3);" style="display:none;">
+							<div class="gnb-all">
+								<div class="gnb-allmenu">
+									<ul>
+										<li><a href="/potal/search/searchList.do?collection=bill&amp;searchSelect=Y">의안정보</a></li>
+										<li><a href="/potal/search/searchList.do?collection=minutes&amp;searchSelect=Y">회의록</a></li>
+										<li><a href="/potal/search/searchList.do?collection=bill_budget&amp;searchSelect=Y">예산·결산정보</a></li>
+										<li><a href="/potal/search/searchList.do?collection=ordin&amp;DOCTYPE=ORDIN&amp;searchSelect=Y">지방자치법규</a></li>
+										<li><a href="/potal/search/searchList.do?collection=free&amp;searchSelect=Y">5분자유발언</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="/potal/search/searchList.do?collection=policyinfo&amp;searchSelect=Y" class="d1" id="mmenu4" onmouseover="menuMouseOver(4);" onfocus="menuMouseOver(4);" onmouseout="menuCloseTime(4);">
+						   <span class="m_size">주요정책정보</span>
+						</a>
+						<div class="gnb-allmenu-wrap"  onmouseover="menuCancelCloseTime(4)" onmouseout="menuCloseTime(4);" style="display:none;">
+							<div class="gnb-all">
+								<div class="gnb-allmenu">
+									<ul>
+										<li><a href="/potal/search/searchList.do?collection=policyinfo&amp;searchSelect=Y">지방정책정보</a></li>
+										<li><a href="/potal/search/searchList.do?collection=next&amp;searchSelect=Y">의정지식정보</a></li>
+										<li><a href="/potal/policyinfo/curationList.do">큐레이션</a></li>
+										<li><a href="/argos/index.do">지방의회 이슈키워드</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="/potal/search/searchList.do?collection=policyinfo&amp;searchSelect=Y&DOCTYPE=100" class="d1" id="mmenu5" onmouseover="menuMouseOver(5);" onfocus="menuMouseOver(5);" onmouseout="menuCloseTime(5);">
+						   <span class="m_size">지역홍보뉴스</span>
+						</a>
+						<div class="gnb-allmenu-wrap"  onmouseover="menuCancelCloseTime(5)" onmouseout="menuCloseTime(5);" style="display:none;">
+							<div class="gnb-all">
+								<div class="gnb-allmenu">
+									<ul>
+										<li><a href="/potal/search/searchList.do?collection=policyinfo&amp;searchSelect=Y&DOCTYPE=100">홍보·보도</a></li>
+										
+										
+										<li><a href="/event/index.do">지역행사 안내</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="top_icon">
+			<a href="#" rel="nofollow" class="questionnaire_span" onclick="openQuestionnaire();"><img src="/images/sub/questionnaire.png" class="questionnaire" alt="의견을 주세요"></a>
+			<a href="#" rel="nofollow" class="icon_search_span"><img src="/images/common/icon_search.png" class="icon_search" alt="통합 검색" ></a>
+		</div>
+		<!--//gnb-->
+	<!--//gnb-allmenu-wrap-->
+	</nav>
+</div>
+<!--//header-->
+
+<div class="quick_wrap">
+	<div class="quick_menu">
+		<div class="quick_list">
+			<div class="quick_menu_title">Quick menu</div>
+			<a href="/potal/search/searchList.do?collection=bill&amp;searchSelect=Y" title="지방의회의안">
+				<div class="quick_menu_item q_item1">지방의회<br>의안</div>
+			</a>
+			<a href="/potal/search/searchList.do?collection=minutes&amp;searchSelect=Y" title="지방의회회의록">
+				<div class="quick_menu_item q_item2">지방의회<br>회의록</div>
+			</a>
+			<a href="/potal/search/searchList.do?collection=assemblyinfo&amp;searchSelect=Y" title="지방의회의원">
+				<div class="quick_menu_item q_item3">지방의회<br>의원</div>
+			</a>
+			<div class="quick_bt_bg">
+				<a href="https://nsp.nanet.go.kr/" target="_blank" title="국가전략포털 새창열림">
+					<div class="quick_menu_item q_item4">국가전략<br>포털</div>
+				</a>
+				<a href="https://lnp.nanet.go.kr/" target="_blank" title="입법자료포털 새창열림">
+					<div class="quick_menu_item q_item9">입법자료<br>포털</div>
+				</a>
+				<a href="https://dl.nanet.go.kr/" target="_blank" title="국회전자도서관 새창열림">
+					<div class="quick_menu_item q_item5">국회전자<br>도서관</div>
+				</a>
+				<a href="https://argos.nanet.go.kr/" target="_blank" title="아르고스 새창열림">
+					<div class="quick_menu_item q_item6">아르고스</div>
+				</a>
+			</div>
+			<div class="quick_bt_bg2">
+				<a href="https://busan.nanet.go.kr/" target="_blank" title="국회부산도서관 새창열림">
+					<div class="quick_menu_item q_item7">국회부산<br>도서관</div>
+				</a>
+				<a href="https://busan.nanet.go.kr/newsltrReq/write.do" target="_blank" title="뉴스레터구독신청 새창열림">
+					<div class="quick_menu_item q_item8 bdr_b0">뉴스레터<br>구독신청</div>
+				</a>
+			</div>
+		</div>
+		<div class="quick_menu_top_btn" onclick="scrollToTop();" style="cursor: pointer;">TOP</div>
+	</div>
+</div>
+
+<div class="w_hide m_footer">
+	<a href="/index.do"><img src="/images/mobile/foot_1.png" alt="홈" /></a>
+	<a href="javascript:history.back();" onclick=""><img src="/images/mobile/foot_2.png" alt="뒤로가기" /></a>
+	<a href="/login.do"><img src="/images/mobile/foot_3.png" alt="로그인" /></a>
+	<a href="/potal/guide/index.do"><img src="/images/mobile/foot_6.png" alt="이용안내" /></a>
+</div>
+<!--//w_hide-->
+
+<!--//total_search-->
+
+<script type="text/javascript" src="/js/jquery.selectbox.js"></script>
+<script type="text/javascript">
+	//검색창 관련 jquery
+	$('#t_select_1').selectbox({
+		inputClass:"selectbox_1",
+		containerClass: "selectbox_1-wrapper"
+	});
+	//-검색창 관련 jquery
+</script>
+
+<div class="w_hide menu_box">
+		<span><a href="#none" id="menu" class="menu"><img src="/images/mobile/menu_bk.png" id="gnbImg" alt="메뉴"/></a></span>
+		
+		<!-- ★★메뉴 재구성함. 2026-03-16 -->
+		<div class="gnb_list"  id="gnb_list"  style="display:none;">
+            <ul>
+                <li>
+                    <a href="/potal/search/search.do">통합검색</a>
+                </li>
+                <li><a href="/potal/guide/siteUseGuidance.do">지방의정포털소개</a>
+                    <span>
+                        <a href="/potal/guide/siteUseGuidance.do">지방의정포털소개</a>
+                        <a href="/potal/guide/assemInfo.do">국회의정정보</a>
+                    </span>
+                </li>
+				<li><a href="/potal/rasmblySttusStats/rasmblyStats.do">지방의원현황</a>
+                    <span>
+                        <a href="/potal/rasmblySttusStats/rasmblyStats.do">의원통계</a>
+                        <a href="/potal/search/searchList.do?collection=assemblyinfo&amp;searchSelect=Y">의원현황</a>
+                    </span>
+                </li>
+                <li><a href="/potal/search/searchList.do?collection=bill&amp;searchSelect=Y">지방의회의정정보</a>
+                    <span>
+                        <a href="/potal/search/searchList.do?collection=bill&amp;searchSelect=Y">의안정보</a>
+                        <a href="/potal/search/searchList.do?collection=minutes&amp;searchSelect=Y">회의록</a>
+                        <a href="/potal/search/searchList.do?collection=bill_budget&amp;searchSelect=Y">예산·결산정보</a>
+                        <a href="/potal/search/searchList.do?collection=ordin&amp;searchSelect=Y&amp;DOCTYPE=ORDIN">지방자치법규</a>
+						<a href="/potal/search/searchList.do?collection=free&amp;searchSelect=Y">5분자유발언</a>
+                    </span>
+                </li>
+                <li class="none"><a href="/potal/search/searchList.do?collection=policyinfo&amp;searchSelect=Y">주요정책정보</a>
+                    <span>
+                        <a href="/potal/search/searchList.do?collection=policyinfo&amp;searchSelect=Y">지방정책정보</a>
+                        <a href="/potal/search/searchList.do?collection=next&amp;searchSelect=Y">의정지식정보</a>
+						<a href="/potal/policyinfo/curationList.do">큐레이션</a>
+						<a href="/argos/index.do">지방의회 이슈키워드</a>
+                    </span>
+                </li>
+                <li><a href="/potal/search/searchList.do?collection=policyinfo&amp;searchSelect=Y&DOCTYPE=100">지역홍보뉴스</a>
+                    <span>
+                        <a href="/potal/search/searchList.do?collection=policyinfo&amp;searchSelect=Y&DOCTYPE=100">홍보·보도</a>
+                        
+                        
+                    	<a href="/event/index.do">지역행사 안내</a>
+                    </span>
+                </li>
+            </ul>
+		</div><!--//gnb_list-->
+		
+		<div id="side_list" class="side_list" style="display:none;"  >
+			<ul>
+			</ul>
+		</div><!--//side_list-->
+
+	</div><!--//w_hide-->
+
+	<div class="w_hide m_footer">
+		<a href="/index.do"><img src="/images/mobile/foot_1.png" alt="홈" /></a>
+		<a href="javascript:history.back();" onclick=""><img src="/images/mobile/foot_2.png" alt="뒤로가기" /></a>
+		
+			<a href="/login.do"><img src="/images/mobile/foot_3.png" alt="로그인" /></a>
+		
+		<a href="/potal/guide/index.do"><img src="/images/mobile/foot_6.png" alt="이용안내" /></a>
+	</div><!--//w_hide-->
+
+
+
+
+</div>
+<!--//header-->
+
+<div class="w_hide menu_box">
+	<span class="logo">
+		<a href="/index.do" title="국회도서관 지방의정포털" >
+			<img src="/images/new/main_logo.png" class="main_logo_img">
+		</a>
+	</span>
+</div>
+
+<div class="w_hide m_footer">
+	<a title="홈" href="/index.do"><img src="/images/mobile/foot_1.png" /></a>
+	<a rel="nofollow" href="javascript:history.back();" onclick=""><img src="/images/mobile/foot_2.png" alt="뒤로가기" /></a>
+	
+	<a href="/login.do" title="로그인"><img src="/images/mobile/foot_3.png"/></a>
+	
+	<a href="/potal/guide/index.do" title="이용 안내"><img src="/images/mobile/foot_6.png"/></a>
+</div>
+<!--//w_hide-->
+
+
+<div id="councilInfoDiv"></div>
+<div id="councilBasicInfoDiv"></div>
+
+
+
+<div id="councilSelectDiv"></div>
+
+
+<!-- wrap : S -->
+<div class="wrap bg_setting">
+	<!-- main_container : S -->
+	<div class="main_container">
+		<div class="main_content" usemap="#Map">
+			<section class="main_section_01 new_main_section_01">
+				<div class="main_section_01_box">
+				</div>
+				<!-- 통합검색, 상세검색 -->
+				<div class="new_main_search">
+					<h2 class="main_tit_txt">
+						<div class="center_title">
+							<span class="f32">지방의회에 국회도서관을 더하다 &nbsp;<img src="/images/new/icon_plus_w.png" alt="더하기"></span>
+							<span class="f60">국회도서관 지방의정포털</span>
+						</div>
+					</h2>
+					<div class="simple_select_search main_simple_search">
+						<div class="simple_top_search">
+							<div class="simple_top_left">
+								<label for="query"></label>
+								<input type="text" id="query" title="검색어를 입력하세요" placeholder="검색어를 입력하세요." onclick="javascript:txtclear();" onkeydown="return fn_enter_check(event);" autocomplete="off">
+									<div style="display: none"><div>
+								</div>
+							</div>
+							<!-- 검색어 자동완성 DIV -->
+							<div id="ark">
+								<div id="ark_down" style="position:absolute; display:none; cursor:pointer;"><img id="ark_img_down" src="/images/ark/arrow_auto.png" alt="자동 완성 펼치기" style="background:#57C8D;"></div>
+								<div id="ark_up" style="position:absolute; display:none; cursor:pointer;"><img id="ark_img_up" src="/images/ark/arrow_auto2.png" alt="자동 완성 접기"  style="background:#57C8D;"></div>
+								<div id="tooltip01" style="position: absolute; display: none; cursor: pointer; z-index: 2147483647; top: 39px; left: 879px;"><img id="tooltipIcon01" src="/images/ark/tooltip_01.gif" alt="자동 완성 접기"></div>
+								<div class="ark_wrap" id="ark_wrap" style="position: absolute;background:#57C8D;">
+									<ul>
+										<li class="ark_content">
+											<ul class="fl" id="ark_content_list"></ul>
+										</li>
+										<li class="ark_footer" id="ark_footer"></li>
+									</ul>
+								</div>
+							</div>
+							<button type="button" title="검색 실행" class="simple_top_sinput_btn" onclick="return fn_main_total_search(event);"></button>
+							</div>
+							<button id="detailsBtn" class="simple_top_sbtn" type="button">상세검색</button>
+						</div>
+					</div>
+					<div class="main_hashtag">
+						<ul>
+							<li><span>#</span>지역행사안내</li>
+							<li><span>#</span>지방의회의안</li>
+							<li><span>#</span>지방정책정보</li>
+							<li><span>#</span>지방의회회의록</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //통합검색, 상세검색 -->
+
+				<!-- 통합검색 팝업 -->
+				<div id="integration_modal" class="new-modal integration_modal">
+					<div class="modal-content">
+						<div class="new-modal-body">
+							<span tabIndex="0" title="팝업 닫기" class="close new-modal-cancel">×<span style="position:absolute;top:-10000px;">통합 검색 팝업 닫기 버튼</span></span>
+							<div class="search_title">찾으시는 검색어를 입력해주세요</div>
+							<div class="search_body">
+								<span><img src="/images/new/icon_search_popup.png" alt="통합 검색">통합검색</span>
+								<label for="popup_query"></label>
+								<input tabIndex="0" type="text" id="popup_query" title="검색어를 입력하세요" placeholder="검색어를 입력하세요." onclick="javascript:popup_text_clear();" onkeydown="return fn_popup_enter_check(event);" autocomplete="off">
+								<button tabIndex="0" type="button" title="검색 실행" class="search_body_btn" onclick="return fn_main_popup_total_search(event);">검색<span style="position:absolute;top:-10000px;"> 실행</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+					$(document).ready(function () {
+						$(".icon_search").click(function () {
+							$("#integration_modal").css("display", "block");
+						});
+						
+						fn_dispatchSearchDetailPopupDiv();
+
+						$("#detailsBtn").click(function () {
+							repSearchClear();
+							$("#details_modal").css("display", "block");
+
+							setTimeout(function() {
+								$('#detail_modal_cancel').focus();
+							}, 10);
+
+							fn_getCouncilInfo();
+							fn_getCouncilBasicInfo();
+							fn_getCouncilSelectInfo();
+						});
+						$(".new-modal-cancel").click(function () {
+							$(".new-modal").css("display", "none");
+						});
+
+						$('.mbox_subtitle').each(function(index, data) {
+							var scrollWidth = $(data).prop('scrollWidth');
+							var clientWidth = $(data).prop('clientWidth');
+							var scrollHeight = $(data).prop('scrollHeight');
+							var clientHeight = $(data).prop('clientHeight');
+							if(scrollHeight < 50) {
+								var title_info = $(data).parent().prop('title');
+								if(title_info != '인터넷망 PC를 이용하시기 바랍니다.') {
+									$(data).parent().prop('title', '');
+								}
+							}
+						});
+
+						$('.curation_title').each(function(index, data) {
+							var scrollWidth = $(data).prop('scrollWidth');
+							var clientWidth = $(data).prop('clientWidth');
+							var scrollHeight = $(data).prop('scrollHeight');
+							var clientHeight = $(data).prop('clientHeight');
+							if(scrollWidth <= clientWidth) {
+								$(data).parent().prop('title', '');
+							}
+						});
+
+						$('.title_text').each(function(index, data) {
+							var scrollHeight = $(data).prop('scrollHeight');
+							var clientHeight = $(data).prop('clientHeight');
+							if(scrollHeight <= clientHeight) {
+								$(data).parent().prop('title', '');
+							}
+						});
+					});
+					
+					function fn_dispatchSearchDetailPopupDiv() {
+						$.ajax({
+							type: "POST",
+							url: "/potal/getSearchDetailPopup.do",
+							data: {},
+							async:false,
+							success:function(data){
+								$("#searchDetailPopupDiv").html(data);
+							},
+							error:function(e){},
+							complete : function(data){
+								searchDetailPopupInit();
+							}
+						});
+					}
+				</script>
+				<!-- //통합검색 팝업 -->
+
+				<!-- 상세검색 팝업 -->
+
+				<div id="searchDetailPopupDiv"></div>
+				
+				
+
+				<div class="main_section_01_box">
+				</div>
+				<div class="link_box">
+					<a href="#" rel="nofollow" tabIndex="0" title="인천 통합 검색" name="loc_eng_name" onclick="searchLocationName('INCHEON');" class="incheon"></a>
+					<a href="#" rel="nofollow"  tabIndex="0" title="대전 통합 검색" name="loc_eng_name" onclick="searchLocationName('DAEJEON');" class="daejeon"></a>
+					<a href="#" rel="nofollow"  tabIndex="0" title="강원 통합 검색" name="loc_eng_name" onclick="searchLocationName('GANGWON');" class="gangwon"></a>
+					<a href="#" rel="nofollow"  tabIndex="0" title="경기 통합 검색" name="loc_eng_name" onclick="searchLocationName('GYEONGGI');" class="gyeonggi"></a>
+					<a href="#" rel="nofollow"  tabIndex="0" title="세종 통합 검색" name="loc_eng_name" onclick="searchLocationName('SEJONG');" class="sejong"></a>
+					<a href="#" rel="nofollow"  tabIndex="0" title="서울 통합 검색" name="loc_eng_name" onclick="searchLocationName('SEOUL');" class="seoul"></a>
+					<a href="#" rel="nofollow"  tabIndex="0" title="부산 통합 검색" name="loc_eng_name" onclick="searchLocationName('BUSAN');" class="busan"></a>
+					<a href="#" rel="nofollow"  tabIndex="0" title="울산 통합 검색" name="loc_eng_name" onclick="searchLocationName('ULSAN');" class="ulsan"></a>
+					<a href="#" rel="nofollow"  tabIndex="0" title="대구 통합 검색" name="loc_eng_name" onclick="searchLocationName('DAEGU');" class="daegu"></a>
+					<a href="#" rel="nofollow"  tabIndex="0" title="충북 통합 검색" name="loc_eng_name" onclick="searchLocationName('CHUNGBUK');" class="chungbuk"></a>
+					<a href="#" rel="nofollow"  tabIndex="0" title="경북 통합 검색" name="loc_eng_name" onclick="searchLocationName('GYEONGBUK');" class="gyeongbuk"></a>
+					<a href="#" rel="nofollow"  tabIndex="0" title="충남 통합 검색" name="loc_eng_name" onclick="searchLocationName('CHUNGNAM');" class="chungnam"></a>
+					<a href="#" rel="nofollow"  tabIndex="0" title="광주 통합 검색" name="loc_eng_name" onclick="searchLocationName('GWANGJU');" class="gwangju"></a>
+					<a href="#" rel="nofollow"  tabIndex="0" title="경남 통합 검색" name="loc_eng_name" onclick="searchLocationName('GYEONGNAM');" class="gyeongnam"></a>
+					<a href="#" rel="nofollow"  tabIndex="0" title="제주 통합 검색" name="loc_eng_name" onclick="searchLocationName('JEJU');" class="jeju"></a>
+					<a href="#" rel="nofollow"  tabIndex="0" title="전북 통합 검색" name="loc_eng_name" onclick="searchLocationName('JEONBUK');" class="jeonbuk"></a>
+					<a href="#" rel="nofollow"  tabIndex="0" title="전남 통합 검색" name="loc_eng_name" onclick="searchLocationName('JEONNAM');" class="jeonnam"></a>
+				</div>
+			</section>
+
+			<section class="main_section_02 new_main_section_02">
+				<div class="main_wrap">
+					<div class="main_box">
+						<!-- 소식/큐레이션 -->
+						<div class="main_box_list newsCuration">
+							<div class="newsG_box">
+								<!-- 국회뉴스 -->
+								<div class="main_box_item">
+									<h1>소식</h1>
+									<div class="item_layout">
+										<div class="slide_banner swiper mySwiper news-slide" id="natvNewsDiv">
+											<ul class="swiper-wrapper">
+												<li class="swiper-slide">
+													<div class="mbox_img ui placeholder">
+														<div class="image2"></div>
+														<div class="header">
+															<div class="line"></div>
+															<div class="line"></div>
+															<div class="line"></div>
+															<div class="line"></div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- //국회뉴스 -->
+
+								<!-- 5분자유발언 -->
+								<div class="main_box_item">
+									
+									<div class="item_layout">
+										<div class="slide_banner swiper mySwiper five-mins-slide">
+											<ul class="swiper-wrapper">
+
+												
+													<li class="swiper-slide">
+														
+															
+															
+																<div class="mbox_img" onclick="window.open('http://www.donggucl.daegu.kr/content/minutes/fiveRemark.html?fidx=17153&pg=vv&sid=1000&page=1&opt=&sword=','_blank','');">
+															
+														
+															<img src="https://clik.nanet.go.kr/clikr-collection/fivespch/2026/20260720/FIV_202607201021067410" alt="늘어나는 일자리, 줄어드는 청년의 기회 5분자유발언 이미지"/>
+															<div class="mbox_title">
+																<span>5분자유발언</span>
+															</div>
+															<div class="mbox_data line_clamp1">
+																
+																	
+																	
+																		<a href="http://www.donggucl.daegu.kr/content/minutes/fiveRemark.html?fidx=17153&pg=vv&sid=1000&page=1&opt=&sword=" class="slide_banner_item" title="늘어나는 일자리, 줄어드는 청년의 기회" target="_blank">
+																	
+																
+																	<span class="mbox_subtitle">늘어나는 일자리, 줄어드는 청년의 기회<span>
+																</a>
+																<div class="flex_between">
+																	<div class="mbox_text">
+																		대구광역시 동구의회 - 안평훈 의원
+																	</div>
+																	<div class="mbox_date">
+																		
+																		2026-07-16
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+												
+													<li class="swiper-slide">
+														
+															
+															
+																<div class="mbox_img" onclick="window.open('http://www.donggucl.daegu.kr/content/minutes/fiveRemark.html?fidx=17155&pg=vv&sid=1000&page=1&opt=&sword=','_blank','');">
+															
+														
+															<img src="https://clik.nanet.go.kr/clikr-collection/fivespch/2026/20260720/FIV_202607201019385090" alt="공무직 근로자 생일특별휴가 도입 5분자유발언 이미지"/>
+															<div class="mbox_title">
+																<span>5분자유발언</span>
+															</div>
+															<div class="mbox_data line_clamp1">
+																
+																	
+																	
+																		<a href="http://www.donggucl.daegu.kr/content/minutes/fiveRemark.html?fidx=17155&pg=vv&sid=1000&page=1&opt=&sword=" class="slide_banner_item" title="공무직 근로자 생일특별휴가 도입" target="_blank">
+																	
+																
+																	<span class="mbox_subtitle">공무직 근로자 생일특별휴가 도입<span>
+																</a>
+																<div class="flex_between">
+																	<div class="mbox_text">
+																		대구광역시 동구의회 - 김동규 의원
+																	</div>
+																	<div class="mbox_date">
+																		
+																		2026-07-16
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+												
+													<li class="swiper-slide">
+														
+															
+															
+																<div class="mbox_img" onclick="window.open('http://www.donggucl.daegu.kr/content/minutes/fiveRemark.html?fidx=17154&pg=vv&sid=1000&page=1&opt=&sword=','_blank','');">
+															
+														
+															<img src="https://clik.nanet.go.kr/clikr-collection/fivespch/2026/20260720/FIV_202607201020144510" alt="동대구역 발전, 이제는 신암동이 함께 가야 합니다. 5분자유발언 이미지"/>
+															<div class="mbox_title">
+																<span>5분자유발언</span>
+															</div>
+															<div class="mbox_data line_clamp1">
+																
+																	
+																	
+																		<a href="http://www.donggucl.daegu.kr/content/minutes/fiveRemark.html?fidx=17154&pg=vv&sid=1000&page=1&opt=&sword=" class="slide_banner_item" title="동대구역 발전, 이제는 신암동이 함께 가야 합니다." target="_blank">
+																	
+																
+																	<span class="mbox_subtitle">동대구역 발전, 이제는 신암동이 함께 가야 합니다.<span>
+																</a>
+																<div class="flex_between">
+																	<div class="mbox_text">
+																		대구광역시 동구의회 - 주형숙 의원
+																	</div>
+																	<div class="mbox_date">
+																		
+																		2026-07-16
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+												
+											</ul>
+										</div>
+									</div>
+									
+								</div>
+								<!-- //5분자유발언 -->
+								<div class="controller">
+									<button class="btn_stop" id="btn_stop" type="button" title="소식 일시 정지"></button>
+									<button class="btn_play" id="btn_play"  type="button" title="소식 재생"></button>
+								</div>
+							</div><!-- //newsG_box 소식 -->
+
+							<div class="curationG_box">
+								<div class="main_box_item">
+									<h1>큐레이션</h1>
+									<div class="item_layout">
+										<div class="slide_banner swiper mySwiper curation-slide">
+											<ul class="swiper-wrapper">
+												
+													<li class="swiper-slide">
+														<div class="slide_banner_item" onclick="window.open('/potal/policyinfo/curationDetail.do?tabIndex=1&pageIndex=1&posIndex=1&curation_seq=CURATION_0000000000302','_self','');">
+															<div class="sbi_thum">
+																
+																	<img src="https://clik.nanet.go.kr/clikr-collection/curation/2026/20260127/CUR_202601271056560490" alt=" 자립준비청년 자립지원 정책정보 큐레이션 이미지"/>
+																
+																
+																
+															</div>
+															<div class="sbi_cont">
+																<span class="main_section_01_title">
+																	정책정보 큐레이션
+																	
+																	
+																</span>
+
+																<a href="/potal/policyinfo/curationDetail.do?tabIndex=1&pageIndex=1&posIndex=1&curation_seq=CURATION_0000000000302" title="자립준비청년 자립지원">
+																	<h3 class="curation_title">자립준비청년 자립지원</h3>
+																</a>
+																
+																	<p class="infotxt">
+											                            
+											                            
+											                                <span class="main_curation_span">#자립준비청년</span>
+											                            
+											                                <span class="main_curation_span">#보호종료아동</span>
+											                            
+											                                <span class="main_curation_span">#청년정책</span>
+											                            
+											                                <span class="main_curation_span">#위기아동청년법</span>
+											                            
+																	</p>
+																
+																
+																<p class="tag">
+																	<span>2026-01-27
+																	</span>
+																</p>
+															</div>
+														</div>
+													</li>
+												
+													<li class="swiper-slide">
+														<div class="slide_banner_item" onclick="window.open('/potal/policyinfo/curationDetail.do?tabIndex=2&pageIndex=1&posIndex=1&curation_seq=INFO0000003073','_self','');">
+															<div class="sbi_thum">
+																
+																
+																	<img src="http://nsp.nanet.go.kr/nsp-data/infographic/thumbnail/20261106/202611061540458951.jpg" alt="[Data+] AI 시대의 새로운 주권: 주요국 소버린 AI 추진 현황  이슈 인포그래픽 이미지"/>
+																
+																
+															</div>
+															<div class="sbi_cont">
+																<span class="main_section_01_title">
+																	
+																	이슈 인포그래픽
+																	
+																</span>
+
+																<a href="/potal/policyinfo/curationDetail.do?tabIndex=2&pageIndex=1&posIndex=1&curation_seq=INFO0000003073" title="[Data+] AI 시대의 새로운 주권: 주요국 소버린 AI 추진 현황 ">
+																	<h3 class="curation_title">[Data+] AI 시대의 새로운 주권: 주요국 소버린 AI 추진 현황 </h3>
+																</a>
+																
+																	<p class="infotxt">
+											                            
+											                            
+											                                <span class="main_curation_span">#소버린AI</span>
+											                            
+											                                <span class="main_curation_span">#엔비디아</span>
+											                            
+											                                <span class="main_curation_span">#새로운주권</span>
+											                            
+											                                <span class="main_curation_span">#AI모델</span>
+											                            
+											                                <span class="main_curation_span">#컴퓨팅인프라</span>
+											                            
+											                                <span class="main_curation_span">#데이터</span>
+											                            
+											                                <span class="main_curation_span">#인재</span>
+											                            
+											                                <span class="main_curation_span">#AI혁신생태계</span>
+											                            
+											                                <span class="main_curation_span">#AI기반대전환</span>
+											                            
+											                                <span class="main_curation_span">#글로벌AI</span>
+											                            
+																	</p>
+																
+																
+																<p class="tag">
+																	<span>2026-11-09
+																	</span>
+																</p>
+															</div>
+														</div>
+													</li>
+												
+													<li class="swiper-slide">
+														<div class="slide_banner_item" onclick="window.open('/potal/policyinfo/curationDetail.do?tabIndex=3&pageIndex=1&posIndex=1&curation_seq=167','_self','');">
+															<div class="sbi_thum">
+																
+																
+																
+																	<img src="https://busan.nanet.go.kr/upload/headquarters/bkcrtn/20261019/20261019141222173.png" alt="내가 사는 동네는 누가, 어떻게 바꾸는가? 북 큐레이션 이미지"/>
+																
+															</div>
+															<div class="sbi_cont">
+																<span class="main_section_01_title">
+																	
+																	
+																	북 큐레이션
+																</span>
+
+																<a href="/potal/policyinfo/curationDetail.do?tabIndex=3&pageIndex=1&posIndex=1&curation_seq=167" title="내가 사는 동네는 누가, 어떻게 바꾸는가?">
+																	<h3 class="curation_title">내가 사는 동네는 누가, 어떻게 바꾸는가?</h3>
+																</a>
+																
+																
+																	<p class="infotxt"><span>10월 29일은 지방자치와 국가균형발전의 의미를 되새기고, 국민의 관심을 높이며 그 성과를 함께 나누기 위해 제정된 기념일입니다. 2023년 기존의 ‘지방자치의 날’과 ‘국가균형발전의 날’이 통합되면서 현재의 이름을 갖게 되었습니다.지방자치는 주민이 직접 선출한 지역의 일꾼들이 지역의 실정에 맞게 생활 밀착형 문제를 해결해 나가는 풀뿌리 민주주의이며, 국가균형발전은 수도권뿐 아니라 모든 지역이 골고루 발전하고 함께 잘 살아가는 사회를 지향합니다.이번 큐레이션에서는 지역 공동체와 주민 참여, 지방정부의 역할, 도시와 농촌의 균형, 지역 경제 등 다양한 주제를 살펴보며 이를 통해 내가 사는 지역의 역사와 문화, 지역마다 다른 특성과 다양한 삶의 모습을 이해하고, 지역 간 격차와 인구 집중 등 우리 사회가 함께 고민해야 할 과제를 알아보겠습니다.나아가 “내가 사는 동네는 누가, 어떻게 바꾸는가?”라는 질문을 바탕으로 지역의 변화가 우리의 일상과 어떻게 연결되는지 생각해 보며 이를 통해 누구나 살기 좋은 지역, 모든 지역이 함께 성장하는 대한민국의 미래를 그려 보고자 합니다.</span></p>
+																
+																<p class="tag">
+																	<span>2026-10-20~2026-11-16
+																	</span>
+																</p>
+															</div>
+														</div>
+													</li>
+												
+													<li class="swiper-slide">
+														<div class="slide_banner_item" onclick="window.open('/potal/policyinfo/curationDetail.do?tabIndex=1&pageIndex=1&posIndex=1&curation_seq=CURATION_0000000000301','_self','');">
+															<div class="sbi_thum">
+																
+																	<img src="https://clik.nanet.go.kr/clikr-collection/curation/2025/20251231/CUR_202512311031184910" alt=" 기후보험 정책정보 큐레이션 이미지"/>
+																
+																
+																
+															</div>
+															<div class="sbi_cont">
+																<span class="main_section_01_title">
+																	정책정보 큐레이션
+																	
+																	
+																</span>
+
+																<a href="/potal/policyinfo/curationDetail.do?tabIndex=1&pageIndex=1&posIndex=1&curation_seq=CURATION_0000000000301" title="기후보험">
+																	<h3 class="curation_title">기후보험</h3>
+																</a>
+																
+																	<p class="infotxt">
+											                            
+											                            
+											                                <span class="main_curation_span">#기후보험</span>
+											                            
+											                                <span class="main_curation_span">#농작물재해보험</span>
+											                            
+											                                <span class="main_curation_span">#날씨보험</span>
+											                            
+											                                <span class="main_curation_span">#재해보험</span>
+											                            
+											                                <span class="main_curation_span">#기후격차</span>
+											                            
+																	</p>
+																
+																
+																<p class="tag">
+																	<span>2025-12-31
+																	</span>
+																</p>
+															</div>
+														</div>
+													</li>
+												
+													<li class="swiper-slide">
+														<div class="slide_banner_item" onclick="window.open('/potal/policyinfo/curationDetail.do?tabIndex=2&pageIndex=1&posIndex=1&curation_seq=INFO0000003054','_self','');">
+															<div class="sbi_thum">
+																
+																
+																	<img src="http://nsp.nanet.go.kr/nsp-data/infographic/thumbnail/20261024/202610241310318431.jpg" alt="[Data+] 에너지 대전환 시대, 전력산업 구조개편 이슈 인포그래픽 이미지"/>
+																
+																
+															</div>
+															<div class="sbi_cont">
+																<span class="main_section_01_title">
+																	
+																	이슈 인포그래픽
+																	
+																</span>
+
+																<a href="/potal/policyinfo/curationDetail.do?tabIndex=2&pageIndex=1&posIndex=1&curation_seq=INFO0000003054" title="[Data+] 에너지 대전환 시대, 전력산업 구조개편">
+																	<h3 class="curation_title">[Data+] 에너지 대전환 시대, 전력산업 구조개편</h3>
+																</a>
+																
+																	<p class="infotxt">
+											                            
+											                            
+											                                <span class="main_curation_span">#에너지대전환</span>
+											                            
+											                                <span class="main_curation_span">#반도체</span>
+											                            
+											                                <span class="main_curation_span">#첨단산업</span>
+											                            
+											                                <span class="main_curation_span">#전력수요확대</span>
+											                            
+											                                <span class="main_curation_span">#재생에너지</span>
+											                            
+											                                <span class="main_curation_span">#전력구조개편</span>
+											                            
+																	</p>
+																
+																
+																<p class="tag">
+																	<span>2026-10-26
+																	</span>
+																</p>
+															</div>
+														</div>
+													</li>
+												
+													<li class="swiper-slide">
+														<div class="slide_banner_item" onclick="window.open('/potal/policyinfo/curationDetail.do?tabIndex=3&pageIndex=1&posIndex=1&curation_seq=163','_self','');">
+															<div class="sbi_thum">
+																
+																
+																
+																	<img src="https://busan.nanet.go.kr/upload/headquarters/bkcrtn/20260913/20260913143055182.png" alt="문해력 : 읽는 힘, 세상을 이해하는 힘 북 큐레이션 이미지"/>
+																
+															</div>
+															<div class="sbi_cont">
+																<span class="main_section_01_title">
+																	
+																	
+																	북 큐레이션
+																</span>
+
+																<a href="/potal/policyinfo/curationDetail.do?tabIndex=3&pageIndex=1&posIndex=1&curation_seq=163" title="문해력 : 읽는 힘, 세상을 이해하는 힘">
+																	<h3 class="curation_title">문해력 : 읽는 힘, 세상을 이해하는 힘</h3>
+																</a>
+																
+																
+																	<p class="infotxt"><span>유네스코(UNESCO)는 문해의 중요성을 널리 알리고 문해 증진을 촉진하기 위해 매년 9월 8일을 '국제 문해의 날(International Literacy Day)'​로 지정하여 기념하고 있습니다. 문해력은 단순히 글을 읽고 쓰는 능력을 넘어 정보를 이해하고 해석하며, 비판적으로 사고하고 타인과 소통하는 삶의 기본 역량이자 평생학습의 출발점입니다.오늘날 우리는 디지털 환경의 발달로 방대한 정보에 쉽게 접근할 수 있는 시대를 살아가고 있습니다. 그러나 정보의 양이 증가한 만큼 가짜뉴스와 허위정보의 확산, 독서량 감소, 디지털 매체 중심의 단편적 읽기, 세대 간 문해력 격차 등 새로운 사회적 문제가 나타나고 있습니다. 이러한 변화는 개인의 학습과 의사소통뿐 아니라 민주적 의사결정과 시민 참여에도 영향을 미치며, 문해력의 중요성을 더욱 부각시키고 있습니다.이번 북큐레이션은 국제 문해의 날의 의미를 되새기며, 언어와 독서, 비판적 사고, 미디어 리터러시, 시민의식 등 문해력과 관련된 다양한 주제의 자료를 통해 읽기의 가치를 재발견하고, 정보를 올바르게 이해하며, 사회를 깊이 있게 바라보는 힘을 기를 수 있도록 돕고자 합니다. </span></p>
+																
+																<p class="tag">
+																	<span>2026-09-15~2026-10-19
+																	</span>
+																</p>
+															</div>
+														</div>
+													</li>
+												
+													<li class="swiper-slide">
+														<div class="slide_banner_item" onclick="window.open('/potal/policyinfo/curationDetail.do?tabIndex=1&pageIndex=1&posIndex=1&curation_seq=CURATION_0000000000291','_self','');">
+															<div class="sbi_thum">
+																
+																	<img src="https://clik.nanet.go.kr/clikr-collection/curation/2025/20251125/CUR_202511250534104450" alt=" 생활인구 정책정보 큐레이션 이미지"/>
+																
+																
+																
+															</div>
+															<div class="sbi_cont">
+																<span class="main_section_01_title">
+																	정책정보 큐레이션
+																	
+																	
+																</span>
+
+																<a href="/potal/policyinfo/curationDetail.do?tabIndex=1&pageIndex=1&posIndex=1&curation_seq=CURATION_0000000000291" title="생활인구">
+																	<h3 class="curation_title">생활인구</h3>
+																</a>
+																
+																	<p class="infotxt">
+											                            
+											                            
+											                                <span class="main_curation_span">#생활인구</span>
+											                            
+											                                <span class="main_curation_span">#생활등록제</span>
+											                            
+											                                <span class="main_curation_span">#복수주소제</span>
+											                            
+											                                <span class="main_curation_span">#인구감소지역법 </span>
+											                            
+																	</p>
+																
+																
+																<p class="tag">
+																	<span>2025-11-25
+																	</span>
+																</p>
+															</div>
+														</div>
+													</li>
+												
+													<li class="swiper-slide">
+														<div class="slide_banner_item" onclick="window.open('/potal/policyinfo/curationDetail.do?tabIndex=2&pageIndex=1&posIndex=1&curation_seq=INFO0000003053','_self','');">
+															<div class="sbi_thum">
+																
+																
+																	<img src="http://nsp.nanet.go.kr/nsp-data/infographic/thumbnail/20261016/202610161821042001.png" alt="해저케이블 : AI 시대의 디지털 대동맥, 새로운 안보 전선 이슈 인포그래픽 이미지"/>
+																
+																
+															</div>
+															<div class="sbi_cont">
+																<span class="main_section_01_title">
+																	
+																	이슈 인포그래픽
+																	
+																</span>
+
+																<a href="/potal/policyinfo/curationDetail.do?tabIndex=2&pageIndex=1&posIndex=1&curation_seq=INFO0000003053" title="해저케이블 : AI 시대의 디지털 대동맥, 새로운 안보 전선">
+																	<h3 class="curation_title">해저케이블 : AI 시대의 디지털 대동맥, 새로운 안보 전선</h3>
+																</a>
+																
+																	<p class="infotxt">
+											                            
+											                            
+											                                <span class="main_curation_span">#해저케이블</span>
+											                            
+											                                <span class="main_curation_span">#글로벌통신</span>
+											                            
+											                                <span class="main_curation_span">#글로벌네트워크</span>
+											                            
+											                                <span class="main_curation_span">#해저광케이블</span>
+											                            
+											                                <span class="main_curation_span">#해저케이블산업</span>
+											                            
+											                                <span class="main_curation_span">#국가안보</span>
+											                            
+											                                <span class="main_curation_span">#국가핵심시설</span>
+											                            
+											                                <span class="main_curation_span">#AI</span>
+											                            
+																	</p>
+																
+																
+																<p class="tag">
+																	<span>2026-10-19
+																	</span>
+																</p>
+															</div>
+														</div>
+													</li>
+												
+													<li class="swiper-slide">
+														<div class="slide_banner_item" onclick="window.open('/potal/policyinfo/curationDetail.do?tabIndex=3&pageIndex=1&posIndex=1&curation_seq=158','_self','');">
+															<div class="sbi_thum">
+																
+																
+																
+																	<img src="https://busan.nanet.go.kr/upload/headquarters/bkcrtn/20260810/20260810204849626.png" alt="책으로 여는 민의의 전당, 국회도서관 북 큐레이션 이미지"/>
+																
+															</div>
+															<div class="sbi_cont">
+																<span class="main_section_01_title">
+																	
+																	
+																	북 큐레이션
+																</span>
+
+																<a href="/potal/policyinfo/curationDetail.do?tabIndex=3&pageIndex=1&posIndex=1&curation_seq=158" title="책으로 여는 민의의 전당, 국회도서관">
+																	<h3 class="curation_title">책으로 여는 민의의 전당, 국회도서관</h3>
+																</a>
+																
+																
+																	<p class="infotxt"><span> '도서관'이라는 큰 주제에서 출발하여, 대한민국을 대표하는 국가기관 도서관이자 의회도서관인 국회도서관의 역사와 역할, 그리고 가치를 살펴보고자 한다. 국회도서관은 단순히 자료를 수집·보존하는 공간이 아니라, 입법 활동과 정책 연구를 지원하고 국가의 지식정보를 체계적으로 축적·관리하며 국민에게 제공하는 대한민국의 대표적인 지식정보기관이다.국회도서관의 역사는 1951년 한국전쟁 당시 부산 임시수도에서 시작되었다. 전쟁이라는 국가적 위기 속에서도 입법과 국가 운영에 필요한 지식을 보존하고 제공하기 위해 설립된 국회도서관은, 대한민국 민주주의의 발전과 함께 성장하며 오늘날 국가 지식 인프라의 중심으로 자리매김하였다. 전란 속에서도 지식의 가치를 지키고자 했던 국회도서관의 출발은, 도서관이 단순한 독서 공간을 넘어 국가의 역사와 미래를 연결하는 공공기관임을 보여준다. 국회의 입법 활동을 지원하는 의회도서관의 기능을 수행하는 동시에 국내외 학술자료와 정책자료를 수집·보존·제공하는 전문도서관의 역할을 담당한다. 일반 공공도서관이 국민의 독서와 평생학습을 지원한다면, 국회도서관은 입법과 정책 결정에 필요한 정보를 제공하고 국가 지식자산을 보존하는 기관으로서 대한민국 민주주의와 정책 발전을 뒷받침하는 핵심적인 역할을 수행하고 있다.국회도서관이 국회의원을 위한 전문도서관을 넘어 대한민국의 지식을 축적하고 공유하며 국민과 함께 성장하는 열린 국가도서관임을 이해하고, 도서관이 민주주의와 국가 발전을 뒷받침하는 중요한 사회적 기반임을 함께 생각해 보는 계기를 마련하고자 한다.</span></p>
+																
+																<p class="tag">
+																	<span>2026-08-11~2026-09-14
+																	</span>
+																</p>
+															</div>
+														</div>
+													</li>
+												
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="controller">
+									<button class="btn_stop" id="btn_stop2" type="button" title="큐레이션 일시 정지"></button>
+									<button class="btn_play" id="btn_play2" type="button" title="큐레이션 재생"></button>
+								</div>
+							</div>
+						</div>
+						<!-- // 소식/큐레이션 -->
+						<!-- 지방의회의정정보 -->
+						<div class="main_box_assemblies">
+							<h1>지방의회의정정보</h1>
+							<div class="wrap_bg">
+								<div class="main_box_list">
+									<div class="tab-headers">
+										<div class="tab-header active" rel="bill"><a href="#" rel="nofollow" onclick="tabHeaderClick(this);event.preventDefault();">지방의회 의안<span style="position:absolute;top:-10000px;">탭</span></a></div>
+										<div class="tab-header" rel="minutes"><a href="#" rel="nofollow" onclick="tabHeaderClick(this);event.preventDefault();">지방의회 회의록<span style="position:absolute;top:-10000px;">탭</span></a></div>
+										<div class="tab-header" rel="policyinfo"><a href="#" rel="nofollow" onclick="tabHeaderClick(this);event.preventDefault();">홍보·보도·소식<span style="position:absolute;top:-10000px;">탭</span></a></div>
+										<a tabIndex="0" rel="nofollow" class="box_list_more" id="rasmbly_info_more" title="지방의회 의안 더 보기" onclick="goListPage(event)"><span style="position:absolute;top:-10000px;">지방의회 의안 정보</span>더 보기</a>
+									</div>
+									<div class="main_list_item tab-container">
+										<ul id="tab1" class="tab-content active">
+										
+											<li>
+												<a href="/potal/search/searchView.do?collection=bill&amp;DOCID=CLIKC3490025453334804" title="제주특별자치도 교육행정에 관한 질문">
+													<div class="title_all">
+														<div class="title_text">제주특별자치도 교육행정에 관한 질문</div>
+														<div class="btn_more"><span></span></div>
+														<div class="btm_box">
+															<span class="party_name">[제주특별자치도의회]</span>
+															<span class="title_date">2026-11-16</span>
+														</div>
+													</div>
+												</a>
+											</li>
+										
+											<li>
+												<a href="/potal/search/searchView.do?collection=bill&amp;DOCID=CLIKC3488789404615139" title="본회의 휴회의 건">
+													<div class="title_all">
+														<div class="title_text">본회의 휴회의 건</div>
+														<div class="btn_more"><span></span></div>
+														<div class="btm_box">
+															<span class="party_name">[전남광주통합특별시의회]</span>
+															<span class="title_date">2026-11-16</span>
+														</div>
+													</div>
+												</a>
+											</li>
+										
+											<li>
+												<a href="/potal/search/searchView.do?collection=bill&amp;DOCID=CLIKC3470896624794125" title="자연재난 피해 소상공인 지원기준 및 복구체계 개선 촉구 건의안">
+													<div class="title_all">
+														<div class="title_text">자연재난 피해 소상공인 지원기준 및 복구체계 개선 촉구 건의안</div>
+														<div class="btn_more"><span></span></div>
+														<div class="btm_box">
+															<span class="party_name">[경상남도의회]</span>
+															<span class="title_date">2026-11-13</span>
+														</div>
+													</div>
+												</a>
+											</li>
+										
+											<li>
+												<a href="/potal/search/searchView.do?collection=bill&amp;DOCID=CLIKC3464105975199681" title="제주특별자치도정에 관한 질문">
+													<div class="title_all">
+														<div class="title_text">제주특별자치도정에 관한 질문</div>
+														<div class="btn_more"><span></span></div>
+														<div class="btm_box">
+															<span class="party_name">[제주특별자치도의회]</span>
+															<span class="title_date">2026-11-13</span>
+														</div>
+													</div>
+												</a>
+											</li>
+										
+											<li>
+												<a href="/potal/search/searchView.do?collection=bill&amp;DOCID=CLIKC3488789807518675" title="광주청소년성문화센터 운영 민간위탁 동의안">
+													<div class="title_all">
+														<div class="title_text">광주청소년성문화센터 운영 민간위탁 동의안</div>
+														<div class="btn_more"><span></span></div>
+														<div class="btm_box">
+															<span class="party_name">[전남광주통합특별시의회]</span>
+															<span class="title_date">2026-11-13</span>
+														</div>
+													</div>
+												</a>
+											</li>
+										
+											<li>
+												<a href="/potal/search/searchView.do?collection=bill&amp;DOCID=CLIKC3464135804486793" title="당진 부곡공단 지반침하 피해기업에 대한 조속한 피해보상 및 안전복구 촉구 건의안">
+													<div class="title_all">
+														<div class="title_text">당진 부곡공단 지반침하 피해기업에 대한 조속한 피해보상 및 안전복구 촉구 건의안</div>
+														<div class="btn_more"><span></span></div>
+														<div class="btm_box">
+															<span class="party_name">[충청남도의회]</span>
+															<span class="title_date">2026-11-13</span>
+														</div>
+													</div>
+												</a>
+											</li>
+										
+										</ul>
+										<ul id="tab2" class="tab-content">
+										
+											<li>
+												<a href="/potal/search/searchView.do?collection=minutes&amp;DOCID=CLIKC3490037440654819"
+												   title="의회운영위원회 회의록, 제294회(2차)">
+													<div class="title_all">
+															<div class="title_text">의회운영위원회 회의록, 제294회(2차)</div>
+														<div class="btn_more"><span></span></div>
+														<div class="btm_box">
+															<span class="party_name">[경기도 부천시의회]</span>
+															<span class="title_date">2026-11-16</span>
+														</div>
+													</div>
+												</a>
+											</li>
+										
+											<li>
+												<a href="/potal/search/searchView.do?collection=minutes&amp;DOCID=CLIKC3490187403418359"
+												   title="본회의 회의록, 제282회(0차)">
+													<div class="title_all">
+															<div class="title_text">본회의 회의록, 제282회(0차)</div>
+														<div class="btn_more"><span></span></div>
+														<div class="btm_box">
+															<span class="party_name">[울산광역시 남구의회]</span>
+															<span class="title_date">2026-11-16</span>
+														</div>
+													</div>
+												</a>
+											</li>
+										
+											<li>
+												<a href="/potal/search/searchView.do?collection=minutes&amp;DOCID=CLIKC3490187604491226"
+												   title="본회의 회의록, 제282회(1차)">
+													<div class="title_all">
+															<div class="title_text">본회의 회의록, 제282회(1차)</div>
+														<div class="btn_more"><span></span></div>
+														<div class="btm_box">
+															<span class="party_name">[울산광역시 남구의회]</span>
+															<span class="title_date">2026-11-16</span>
+														</div>
+													</div>
+												</a>
+											</li>
+										
+											<li>
+												<a href="/potal/search/searchView.do?collection=minutes&amp;DOCID=CLIKC3490187805550077"
+												   title="예산결산특별위원회 회의록, 제282회(1차)">
+													<div class="title_all">
+															<div class="title_text">예산결산특별위원회 회의록, 제282회(1차)</div>
+														<div class="btn_more"><span></span></div>
+														<div class="btm_box">
+															<span class="party_name">[울산광역시 남구의회]</span>
+															<span class="title_date">2026-11-16</span>
+														</div>
+													</div>
+												</a>
+											</li>
+										
+											<li>
+												<a href="/potal/search/searchView.do?collection=minutes&amp;DOCID=CLIKC3489964513919280"
+												   title="의회운영위원회 회의록, 제267회(2차)">
+													<div class="title_all">
+															<div class="title_text">의회운영위원회 회의록, 제267회(2차)</div>
+														<div class="btn_more"><span></span></div>
+														<div class="btm_box">
+															<span class="party_name">[경기도 평택시의회]</span>
+															<span class="title_date">2026-11-16</span>
+														</div>
+													</div>
+												</a>
+											</li>
+										
+											<li>
+												<a href="/potal/search/searchView.do?collection=minutes&amp;DOCID=CLIKC3490229403360517"
+												   title="의회운영위원회 회의록, 제156회(1차)">
+													<div class="title_all">
+															<div class="title_text">의회운영위원회 회의록, 제156회(1차)</div>
+														<div class="btn_more"><span></span></div>
+														<div class="btm_box">
+															<span class="party_name">[경상남도 창원시의회]</span>
+															<span class="title_date">2026-11-16</span>
+														</div>
+													</div>
+												</a>
+											</li>
+										
+										</ul>
+										<ul id="tab3" class="tab-content">
+										
+											<li>
+												<a href="/potal/search/searchView.do?collection=policyinfo&amp;searchSelect=Y&amp;DOCTYPE=100&amp;DOCID=CLIKC1794388184894115" title="[5분 자유발언] 세종시의회 김동호 의원, “집현동 BRT 접근성 개선하고 이응버스 공급 확대해야”">
+													<div class="title_all">
+														<div class="title_text">[5분 자유발언] 세종시의회 김동호 의원, “집현동 BRT 접근성 개선하고 이응버스 공급 확대해야”</div>
+														<div class="btn_more"><span></span></div>
+														<div class="btm_box">
+															<span class="party_name">[세종특별자치시의회]</span>
+															<span class="title_date">2026-11-11</span>
+														</div>
+													</div>
+												</a>
+											</li>
+										
+											<li>
+												<a href="/potal/search/searchView.do?collection=policyinfo&amp;searchSelect=Y&amp;DOCTYPE=100&amp;DOCID=CLIKC1794388180114997" title="[5분 자유발언] 세종시의회 김재형 의원, 문화와 소비 잇는 상권 상생 특화구역 조성 제안">
+													<div class="title_all">
+														<div class="title_text">[5분 자유발언] 세종시의회 김재형 의원, 문화와 소비 잇는 상권 상생 특화구역 조성 제안</div>
+														<div class="btn_more"><span></span></div>
+														<div class="btm_box">
+															<span class="party_name">[세종특별자치시의회]</span>
+															<span class="title_date">2026-11-11</span>
+														</div>
+													</div>
+												</a>
+											</li>
+										
+											<li>
+												<a href="/potal/search/searchView.do?collection=policyinfo&amp;searchSelect=Y&amp;DOCTYPE=100&amp;DOCID=CLIKC1794388174947955" title="[5분 자유발언] 세종시의회 김현미 의원, 충청권 세계대학경기대회 재정 책임 강화·공동 대응 촉구">
+													<div class="title_all">
+														<div class="title_text">[5분 자유발언] 세종시의회 김현미 의원, 충청권 세계대학경기대회 재정 책임 강화·공동 대응 촉구</div>
+														<div class="btn_more"><span></span></div>
+														<div class="btm_box">
+															<span class="party_name">[세종특별자치시의회]</span>
+															<span class="title_date">2026-11-11</span>
+														</div>
+													</div>
+												</a>
+											</li>
+										
+											<li>
+												<a href="/potal/search/searchView.do?collection=policyinfo&amp;searchSelect=Y&amp;DOCTYPE=100&amp;DOCID=CLIKC1794388169997437" title="[5분 자유발언] 세종시의회 노종용 의원, LH, 연기·조치원 공공주택지구 철회 방침 즉각 철회해야">
+													<div class="title_all">
+														<div class="title_text">[5분 자유발언] 세종시의회 노종용 의원, LH, 연기·조치원 공공주택지구 철회 방침 즉각 철회해야</div>
+														<div class="btn_more"><span></span></div>
+														<div class="btm_box">
+															<span class="party_name">[세종특별자치시의회]</span>
+															<span class="title_date">2026-11-11</span>
+														</div>
+													</div>
+												</a>
+											</li>
+										
+											<li>
+												<a href="/potal/search/searchView.do?collection=policyinfo&amp;searchSelect=Y&amp;DOCTYPE=100&amp;DOCID=CLIKC1794388165140189" title="[5분 자유발언] 세종시의회 유인호 의원, “소방 인력 부족, 숫자가 아닌 생명과 안전의 문제”">
+													<div class="title_all">
+														<div class="title_text">[5분 자유발언] 세종시의회 유인호 의원, “소방 인력 부족, 숫자가 아닌 생명과 안전의 문제”</div>
+														<div class="btn_more"><span></span></div>
+														<div class="btm_box">
+															<span class="party_name">[세종특별자치시의회]</span>
+															<span class="title_date">2026-11-11</span>
+														</div>
+													</div>
+												</a>
+											</li>
+										
+											<li>
+												<a href="/potal/search/searchView.do?collection=policyinfo&amp;searchSelect=Y&amp;DOCTYPE=100&amp;DOCID=CLIKC1794388159763772" title="[5분 자유발언] 세종시의회 이순열 의원, “중앙공원 2단계 장남들, 살아 있는 생태박물관으로 보존해야”">
+													<div class="title_all">
+														<div class="title_text">[5분 자유발언] 세종시의회 이순열 의원, “중앙공원 2단계 장남들, 살아 있는 생태박물관으로 보존해야”</div>
+														<div class="btn_more"><span></span></div>
+														<div class="btm_box">
+															<span class="party_name">[세종특별자치시의회]</span>
+															<span class="title_date">2026-11-11</span>
+														</div>
+													</div>
+												</a>
+											</li>
+										
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--// 지방의회의정정보 -->
+
+						<!-- 국회정책정보 -->
+						<div class="main_box_information">
+							<h1>국회정책정보</h1>
+							<div class="main_box_list bg_w_all">
+								<div class="main_list_item">
+									<div class="title">국회소속기관<a tabIndex="0" rel="nofollow" class="box_list_more" onclick="goOtherPage('openAssembly')"><span style="position:absolute;top:-10000px;">국회 소속기관</span>더 보기</a></div>
+									<ul>
+									
+										<li>
+											<div class="title_all">
+												<a href="https://www.nabo.go.kr/Sub/01Report/01_02_Board.jsp?funcSUB=view&bid=19&arg_cid1=0&arg_cid2=0&arg_class_id=0&currentPage=0&pageSize=10&currentPageSUB=0&pageSizeSUB=10&key_typeSUB=&keySUB=&search_start_dateSUB=&search_end_dateSUB=&department=0&department_sub=0&etc_cate1=&etc_cate2=A7&sortBy=reg_date&ascOrDesc=desc&search_key1=&etc_1=0&tag_key=&arg_id=9551&item_id=9551&name2=1" target="_blank" title="공적개발원조(ODA) 사업 평가">
+													<div class="title_text">공적개발원조(ODA) 사업 평가</div>
+													<div class="btm_box">
+														<span class="party_name">[국회예산정책처]</span>
+														<span class="title_date">
+															
+															2026-11-16
+														</span>
+													</div>
+												</a>
+											</div>
+										</li>
+									
+										<li>
+											<div class="title_all">
+												<a href="https://www.nabo.go.kr/Sub/01Report/01_02_Board.jsp?funcSUB=view&bid=19&arg_cid1=0&arg_cid2=0&arg_class_id=0&currentPage=0&pageSize=10&currentPageSUB=0&pageSizeSUB=10&key_typeSUB=&keySUB=&search_start_dateSUB=&search_end_dateSUB=&department=0&department_sub=0&etc_cate1=&etc_cate2=A7&sortBy=reg_date&ascOrDesc=desc&search_key1=&etc_1=0&tag_key=&arg_id=9551&item_id=9551&name2=1" target="_blank" title="공적개발원조(ODA) 사업 평가">
+													<div class="title_text">공적개발원조(ODA) 사업 평가</div>
+													<div class="btm_box">
+														<span class="party_name">[국회예산정책처]</span>
+														<span class="title_date">
+															
+															2026-11-16
+														</span>
+													</div>
+												</a>
+											</div>
+										</li>
+									
+										<li>
+											<div class="title_all">
+												<a href="https://www.nabo.go.kr/Sub/01Report/01_02_Board.jsp?funcSUB=view&bid=19&arg_cid1=0&arg_cid2=0&arg_class_id=0&currentPage=0&pageSize=10&currentPageSUB=0&pageSizeSUB=10&key_typeSUB=&keySUB=&search_start_dateSUB=&search_end_dateSUB=&department=0&department_sub=0&etc_cate1=&etc_cate2=A7&sortBy=reg_date&ascOrDesc=desc&search_key1=&etc_1=0&tag_key=&arg_id=9550&item_id=9550&name2=1" target="_blank" title="영화산업 육성정책？사업 평가">
+													<div class="title_text">영화산업 육성정책？사업 평가</div>
+													<div class="btm_box">
+														<span class="party_name">[국회예산정책처]</span>
+														<span class="title_date">
+															
+															2026-11-16
+														</span>
+													</div>
+												</a>
+											</div>
+										</li>
+									
+									</ul>
+								</div>
+								<div class="main_list_item">
+									<div class="title">최신외국입법정보<a tabIndex="0" rel="nofollow" class="box_list_more" onclick="goOtherPage('lawNanet')"><span style="position:absolute;top:-10000px;">최신 외국 입법 정보</span>더 보기</a></div>
+									<ul id="lnpNewsDiv">
+										<li>
+											<div class="ui placeholder" style="width:100%;">
+												<div class="header">
+													<div class="line"></div>
+													<div class="line"></div>
+													<div class="line"></div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="ui placeholder" style="width:100%;">
+												<div class="header">
+													<div class="line"></div>
+													<div class="line"></div>
+													<div class="line"></div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="ui placeholder" style="width:100%;">
+												<div class="header">
+													<div class="line"></div>
+													<div class="line"></div>
+													<div class="line"></div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="main_list_item">
+									<div class="title">의정지식정보<a tabIndex="0" rel="nofollow" class="box_list_more" onclick="goOtherPage('next')"><span style="position:absolute;top:-10000px;">의정 지식 정보</span>더 보기</a></div>
+									<ul>
+									
+										<li>
+											<div class="title_all">
+												
+													<a href="/inet/inetDetailView.do?CONTROL_NO=NONB12026000022647&amp;menu_id=inet&amp;pageSize=10&amp;collection=next" title="AI가 인간에게 던지는 질문과 과제">
+												
+												
+												
+													<div class="title_text">AI가 인간에게 던지는 질문과 과제</div>
+													<div class="btm_box">
+														<span class="party_name">[한국노동사회연구소(KLSI)]</span>
+														<span class="title_date">2026-11-11</span>
+													</div>
+												
+													</a>
+												
+												
+												
+											</div>
+										</li>
+									
+										<li>
+											<div class="title_all">
+												
+													<a href="/inet/inetDetailView.do?CONTROL_NO=NONB12026000022651&amp;menu_id=inet&amp;pageSize=10&amp;collection=next" title="전시 인지전의 개념과 체제별 차이 : 러시아-우크라이나 전쟁을 중심으로">
+												
+												
+												
+													<div class="title_text">전시 인지전의 개념과 체제별 차이 : 러시아-우크라이나 전쟁을 중심으로</div>
+													<div class="btm_box">
+														<span class="party_name">[한국국방연구원(KIDA)]</span>
+														<span class="title_date">2026-11-09</span>
+													</div>
+												
+													</a>
+												
+												
+												
+											</div>
+										</li>
+									
+										<li>
+											<div class="title_all">
+												
+													<a href="/inet/inetDetailView.do?CONTROL_NO=NONB12026000022634&amp;menu_id=inet&amp;pageSize=10&amp;collection=next" title="베트남 진출 한국 기업의 경영 환경 변화와 대응 과제">
+												
+												
+												
+													<div class="title_text">베트남 진출 한국 기업의 경영 환경 변화와 대응 과제</div>
+													<div class="btm_box">
+														<span class="party_name">[한국무역협회 국제무역통상연구원(IIT)]</span>
+														<span class="title_date">2026-11-09</span>
+													</div>
+												
+													</a>
+												
+												
+												
+											</div>
+										</li>
+									
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- // 국회정책정보 -->
+					</div>
+				</div>
+				<script>
+					function tabHeaderClick(obj) {
+						$(obj).parent().addClass("active").siblings().removeClass("active");
+
+						var tabContentId = $(obj).parent().index() + 1;
+						$("#tab" + tabContentId).addClass("active").siblings().removeClass("active");
+						//console.log('지방의회의정정보 탭 =['+$(this).attr('rel')+']');
+						var relInfo = $(obj).parent().attr('rel');
+						if(relInfo == 'bill') {
+							$('#rasmbly_info_more').attr('title', '지방의회 의안 정보 더 보기');
+							$('#rasmbly_info_more').html('<span style="position:absolute;top:-10000px;">지방의회 의안 정보</span>더 보기');
+						} else if(relInfo == 'minutes') {
+							$('#rasmbly_info_more').attr('title', '지방의회 회의록 정보 더 보기');
+							$('#rasmbly_info_more').html('<span style="position:absolute;top:-10000px;">지방의회 회의록 정보</span>더 보기');
+						} else if(relInfo == 'policyinfo') {
+							$('#rasmbly_info_more').attr('title', '홍보·보도·소식 정보 더 보기');
+							$('#rasmbly_info_more').html('<span style="position:absolute;top:-10000px;">홍보·보도·소식 정보</span>더 보기');
+						}
+					}
+				</script>
+			</section>
+		</div>
+	</div>
+	<!-- main_container : E -->
+	
+
+
+
+
+
+
+
+
+<div id="footer" class="footer-wrap">
+	<footer>
+		<div class="banner">
+			<ul>
+				<li>
+					<a href="https://assembly.go.kr/portal/main/main.do" target="_blank" title="대한민국국회 새창열림">
+						<p><img class="front" src="/images/new/banner_assembly.png" alt="대한민국국회"></p>
+					</a>
+				</li>
+				<li>
+				
+					
+					
+						<a href="https://www.mois.go.kr/frt/a01/frtMain.do" target="_blank" title="행정안전부 새창열림">
+							<p><img class="front" src="/images/new/banner_mois.png" alt="행정안전부"></p>
+						</a>
+					
+				
+				</li>
+				<li>
+				
+					
+					
+						<a href="https://www.law.go.kr/" target="_blank" title="국가법령정보센터 새창열림">
+							<p><img class="center" src="/images/new/banner_law.png" alt="국가법령정보센터"></p>
+						</a>
+					
+				
+				</li>
+				<li>
+				
+					
+					
+						<a href="https://mpccak.or.kr/" target="_blank" title="대한민국시도의회의장협의회 새창열림">
+							<p><img src="/images/new/banner_mpccak.png" alt="대한민국시도의회의장협의회">대한민국시도의회<br>의장협의회</p>
+						</a>
+					
+				
+				</li>
+				<li>
+				
+					
+					
+						<a href="http://www.lccak.or.kr/www/index.do" target="_blank" title="대한민국시군자치구의회의장협의회 새창열림">
+							<p><img src="/images/new/banner_ncac.png" alt="대한민국시군자치구의회의장협의회">대한민국시군자치구<br>의회의장협의회</p>
+						</a>
+					
+				
+				</li>
+			</ul>
+		</div>
+		<div class="foot-top">
+			
+			<div class="foot-logo">
+				<p><img src="/images/new/main_logo_bottom.png" alt="국회도서관로고" style="height: 89px;"> </p>
+				ⓒ 2014 국회도서관. All Rights Reserved.
+			</div>
+			<ul>
+				<li><a href="https://www.nanet.go.kr/member/persionlInfoView.do" target="_blank" title="개인정보처리방침 새창열림">개인정보처리방침</a></li>
+				<li><a href="https://www.nanet.go.kr/member/mailrefusalView.do" target="_blank" title="이메일무단수집거부 새창열림">이메일무단수집거부</a></li>
+				<li><a href="/potal/guide/resourceCenter.do" title="Open API">Open API</a></li>
+				<li><a href="#none;" onclick="return openErrorSttemntPopup(&#39;leftMenu&#39;);" title="오류신고">오류신고</a></li>
+				<li><a href="/potal/guide/siteUseGuidance.do" title="사이트이용안내">사이트이용안내</a></li>
+				<li><a href="/potal/guide/siteMap.do" title="사이트맵">사이트맵</a></li>
+				<li><a href="/potal/guide/relateSite.do" title="관련사이트">관련사이트</a></li>
+			</ul>
+
+			<p class="allmenu footmenu-open" id="close"><a
+					href="https://clik.nanet.go.kr/potal/search/searchList.do?collection=policyinfo&amp;searchSelect=Y#none"
+					onclick="slideUpcontent(); return false;"><img src="/images/new/btn-foot-up.png"
+																   alt="메뉴전체보기 열기" id="btn_text"></a></p>
+			<script type="text/javascript">
+				/*<![CDATA[*/
+				//var $ = jQuery;
+
+				function slideUpcontent() {
+					if ($(".foot-txt").is(":hidden")) {
+						$(".foot-txt").slideDown();
+						$("html, body").animate({ scrollTop: $(document).height() }, 800);
+						$("#btn_text").attr("src", "/images/new/btn-foot-down.png");
+						$("#btn_text").attr("alt", "컨텐츠 영역 닫기");
+					} else {
+						$(".foot-txt").slideUp();
+						$("#btn_text").attr("alt", "컨텐츠 영역 열기");
+						$("#btn_text").attr("src", "/images/new/btn-foot-up.png");
+					}
+				}
+
+				$(document).ready(function () {
+					if ($(".foot-txt").is(":hidden")) {
+					} else {
+						$(".foot-txt").show("fast");
+						$("#btn_text").attr("src", "/images/new/btn-foot-up.png");
+						$("#btn_text").attr("alt", "컨텐츠 영역 닫기")
+					}
+				}); /*]]>*/
+			</script>
+			<!-- // js close -->
+		</div>
+		<!--//foot-top-->
+		<div class="foot-txt"> <!-- ★★메뉴 재구성함. 2026-03-16 -->
+			<div class="foot-site">
+				<div class="foot-site-cont">
+					<dl>
+						<dt><a href="/potal/guide/siteUseGuidance.do">지방의정포털소개</a></dt>
+						<dd><a href="/potal/guide/siteUseGuidance.do">서비스소개</a></dd>
+						<dd><a href="/potal/guide/assemInfo.do">국회의정정보</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="/potal/rasmblySttusStats/rasmblyStats.do">지방의원현황</a></dt>
+						<dd><a href="/potal/rasmblySttusStats/rasmblyStats.do">의원통계</a></dd>
+						<dd><a href="/potal/search/searchList.do?collection=assemblyinfo&amp;searchSelect=Y">의원현황</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="/potal/search/searchList.do?collection=bill&amp;searchSelect=Y">지방의회의정정보</a></dt>
+						<dd><a href="/potal/search/searchList.do?collection=bill&amp;searchSelect=Y">의안정보</a></dd>
+						<dd><a href="/potal/search/searchList.do?collection=minutes&amp;searchSelect=Y">회의록</a></dd>
+						<dd><a href="/potal/search/searchList.do?collection=bill_budget&amp;searchSelect=Y">예산·결산정보</a></dd>
+						<dd><a href="/potal/search/searchList.do?collection=ordin&amp;DOCTYPE=ORDIN&amp;searchSelect=Y">지방자치법규</a></dd>
+						<dd><a href="/potal/search/searchList.do?collection=free&amp;searchSelect=Y">5분자유발언</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="/potal/search/searchList.do?collection=policyinfo&amp;searchSelect=Y">주요정책정보</a></dt>
+						<dd><a href="/potal/search/searchList.do?collection=policyinfo&amp;searchSelect=Y">지방정책정보</a></dd>
+						<dd><a href="/potal/search/searchList.do?collection=next&amp;searchSelect=Y">의정지식정보</a></dd>
+						<dd><a href="/potal/policyinfo/curationList.do">큐레이션</a></dd>
+						<dd><a href="/argos/index.do">지방의회 이슈키워드</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="/potal/search/searchList.do?collection=policyinfo&amp;searchSelect=Y&amp;DOCTYPE=100">지역홍보뉴스</a></dt>
+						<dd><a href="/potal/search/searchList.do?collection=policyinfo&amp;searchSelect=Y&amp;DOCTYPE=100">홍보·보도</a></dd>
+						
+						
+						<dd><a href="/event/index.do">지역행사 안내</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="/potal/guide/relateSite.do">이용안내</a></dt>
+						<dd><a href="https://www.nanet.go.kr/member/persionlInfoView.do" target="_blank">개인정보취급방법</a></dd>
+						<dd><a href="https://www.nanet.go.kr/member/mailrefusalView.do" target="_blank">이메일무단수집거부</a></dd>
+						<dd><a href="/potal/guide/resourceCenter.do">Open API</a></dd>
+						<dd><a href="/potal/guide/siteUseGuidance.do">사이트 이용안내</a></dd>
+						<dd><a href="/potal/guide/siteMap.do">사이트맵</a></dd>
+						<dd><a href="/potal/guide/relateSite.do">관련사이트</a></dd>
+					</dl>
+				</div>
+				<!--//foot-site-cont-->
+			</div>
+		</div>
+		<!--//foot-txt-->
+	</footer>
+</div>
+
+<!-- 사이트이용안내 팝업 -->
+
+
+
+
+<html lang="ko">
+<body>
+
+<script type="text/javascript">
+
+</script>
+
+<div class="new-modal site-use-guidance-modal">
+    <div class="modal-content new-modal site-use-guidance-modal">
+        <div class="new-modal-head">
+            <span class="close new-modal-cancel">×</span>
+        </div>
+        <div class="new-modal-body">
+            <div class="summary">
+                <h3>국회도서관 지방의정포털이란?</h3>
+            </div><!--//summary-->
+
+            <div class="site_guide">
+
+                <div class="guide_01">
+                    <h4>시스템 소개</h4>
+                    <div>
+                        <span>「국회도서관 지방의정포털」</span>은
+                        대한민국 지방의회의 발전과 의회 민주주의의 실현을 위하여,
+							지방의회의 의정정보 및 정책정보 등을 공유하는 시스템으로,
+                        <br />- 지방의회 의안 및 회의록 등 각 지방의회의 의정자료와 정책자료에 대한 통합검색 기능을 제공하고,
+							<br />- 국회전자도서관·의정지식정보 등을 공유하며,
+                        <br />- 정부 및 공공기관의 정책정보 등을 수집·제공하여 지방의회의 의정활동을 지원합니다.
+                    </div>
+
+                </div><!--//guide_01-->
+
+                <div class="guide_05">
+						<h4>지방의회 연계현황<font color="#25408F" style="font-weight: normal;"> (전체 243개 의회)</font></h4>
+                    <div class="devTb">
+                        <div class="caption">지방의회 연계현황</div>
+                        <div class="thead">
+                            <div class="tr">
+                                <div class="th">구분</div>
+                                <div class="th">광역시ㆍ도</div>
+                                <div class="th">시</div>
+                                <div class="th">군</div>
+                                <div class="th">자치구</div>
+                                <div class="th">합  계</div>
+                            </div>
+                        </div>
+                        <div class="tbody">
+                            <div class="tr">
+                                <div class="td">총 지방의회수</div>
+                                <div class="td_num">16</div>
+                                <div class="td_num">75</div>
+                                <div class="td_num">82</div>
+                                <div class="td_num">70</div>
+                                <div class="td_num_sum">243</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!--//guide_05-->
+
+                <div class="guide_02">
+                    <h4>주요서비스</h4>
+                    <ul>
+							<li><img src="/images/sub/img_guide_01_5.png" alt="지방의회 협력"></li>
+							<li><img src="/images/sub/img_guide_01_4.png" alt="지방의회 현황"></li>
+							<li><img src="/images/sub/img_guide_01_1.png" alt="회의록&#187;의안정보"></li>
+							<li><img src="/images/sub/img_guide_01_2.png" alt="정책정보 서비스"></li>
+<!-- 							<li><img src="/images/sub/img_guide_01_3.png" alt="법률정보 서비스"></li> -->
+							<li><img src="/images/sub/img_guide_01_6.png" alt="지역홍보뉴스"></li>
+                    </ul>
+                    <dl>
+							<dt><b>&#187;</b> 지방의회 협력</dt>
+							<dd><div>지방의회 간 소통의 장과 지방의정자료 공유의 장을 제공함</div></dd>
+                        <div class="clearfix"></div>
+							<dt><b>&#187;</b> 지방의회 현황</dt>
+							<dd><div>지방의회 관련 통계와 지방의회 의원현황 정보를 제공함</div></dd>
+							<div class="clearfix"></div>
+							<dt><b>&#187;</b> 회의록ㆍ의안정보</dt>
+                        <dd><div>지방의회 회의록과 의안정보에 대한 통합검색 및 원문이용 기능을 제공하고,
+                            국회 회의록 및 의안정보를 연계&#183;서비스함</div></dd>
+                        <div class="clearfix"></div>
+							<dt><b>&#187;</b> 정책정보 서비스</dt>
+							<dd><div>지방의회의 의정활동자료, 정부&#183;공공기관의 정책&#183;업무자료,
+							각종 정책연구용역보고서 등 &#34;지방정책정보&#34;와
+							&#34;국회의정지식정보&#34;(입법 및 정책현안 전문가보고서, 최신정책정보,
+							국회의원 정책정보, 싱크탱크 보고서 등)를 제공함</div></dd>
+                        <div class="clearfix"></div>
+							<dt><b>&#187;</b> 지역홍보뉴스</dt>
+							<dd><div>지방의회나 지방자치단체의 홍보, 보도자료, 지역 뉴스, 행사 제공</div></dd>
+                        <div class="clearfix"></div>
+                    </dl>
+                </div>
+                <div class="guide_04">
+                    <h4>이용문의</h4>
+                    <div class="inquire_box">
+                        <p>이용안내 : 02-6788-4367 / clik@nanet.go.kr &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 서비스 및 장애 문의 : 02-6788-4150</p>
+                    </div><!--//inquire_box-->
+                </div><!--//guide_04-->
+            </div><!--//site_guide-->
+        </div><!--//new-modal-body-->
+    </div><!--//content-->
+</div>
+
+<style>
+.site-use-guidance-modal .modal-content {
+    max-width: 1200px;
+    max-height: 90vh;
+}
+.site-use-guidance-modal .new-modal-head {
+    height: 5px;
+}
+.site_guide h4 {
+    margin:20px 0;
+    font-weight:bold;
+    font-size:22px;
+    color:#444;
+    font-weight:bold;
+    letter-spacing:-1px;
+}
+</style>
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+	function showSiteUseGuidanceModal() {
+		$(".site-use-guidance-modal").css("display", "block");
+	}
+</script>
+</div>
+
+<div class="layerpopup mainfamilysite" id="member">
+	<div class="layerWrap ">
+				<img src="/images/common/img_join1.png"  usemap="#img_join1.png" alt="회원가입은 국회도서관 회원가입에서 이루어지고 국회도서관 통합ID로 이용 가능합니다." style="width: 600px;height: 400px;" />
+				<map name="img_join1.png" id="img_join1.png">
+					<area shape="rect" coords="171,197,398,328" href="https://www.nanet.go.kr/member/insertMemberForm1.do" target="_blank"  alt="국회 도서관 회원 가입"/>
+				</map>
+		<div class="close"><a href="#none" onclick="return false;"><img src="/images/common/layerClosebtn1.gif" alt="닫기" /></a></div>
+	</div>
+</div>
+<!-- wrap : E -->
+
+<style>
+/* Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+
+<script>
+	function mapLink(no) {
+		if(no == $(".imgmap_img.on").attr("src")){
+			$(".imgmap_img.on").attr("src", "/images/2022/map/map_link.png");
+		}else{
+			$(".imgmap_img.on").attr("src", no);
+		}
+	}
+
+	//메인화면 탭
+	$(".tab_cont1").hide();
+    $(".tab_cont1:first").show();
+    $(".tab_cont2").hide();
+    $(".tab_cont2:first").show();
+    $("ul.tab_ui li").click(function (e) {
+    	$(this).parent().children("li").removeClass("on");
+        $(this).addClass("on");
+        $(this).parent().parent().children("div").hide();
+        var activeTab = $(this).attr("rel");
+        $("#" + activeTab).fadeIn();
+    });
+
+    function goListPage(event) {
+		let collection = $(event.target).siblings('.active').attr('rel')
+		let query = "";
+		if ("policyinfo" == collection) {
+			query = collection + "&searchSelect=Y&DOCTYPE=100";
+		} else {
+			query = collection + "&searchSelect=Y";
+		}
+		location.href = '/potal/search/searchList.do?collection=' + query;
+	}
+
+	function goOtherPage(keyword) {
+		switch (keyword) {
+			case 'curation':
+				location.href = '/potal/policyinfo/curationList.do'; break;
+			case 'free':
+				location.href = '/potal/search/searchList.do?collection=free&searchSelect=Y'; break;
+			case 'banner':
+				location.href = '/event/index.do'; break;
+			case 'naon':
+				window.open('https://www.natv.go.kr/natv/news/newsList.do'); break;
+			case 'openAssembly':
+				window.open('https://assembly.go.kr/portal/cnts/cntsCont/dataA.do?cntsDivCd=POLCYRM&menuNo=600106#mtr-cls-tab'); break;
+			case 'lawNanet':
+				window.open('https://lnp.nanet.go.kr'); break;
+			case 'next':
+				location.href = '/potal/search/searchList.do?collection=next&searchSelect=Y'; break;
+		}
+	}
+
+	function goNextDetail(nextDivCode, controlNo) {
+		var frm = document.search_frm;
+		if (nextDivCode == 'INET') {
+			frm.action = "/inet/inetDetailView.do?CONTROL_NO="+controlNo+"&amp;menu_id=inet&amp;pageSize=10&amp;collection=next";
+		} else if (nextDivCode == 'APOS') {
+			frm.action = "/ampos/amposDetailView.do?CONTROL_NO="+controlNo+"&amp;pageSize=10&amp;collection=next";
+		} else if (nextDivCode == 'FACT') {
+			frm.action = "/factbook/factbookDetailView.do?CONTROL_NO="+controlNo+"&amp;menu_id=fact&amp;pageSize=10&amp;collection=next";
+		}
+		frm.submit();
+	}
+</script>
+<iframe id="dlifrm" name="dlifrm" src="" width="0" height="0" frameborder="0" scrolling="no" style="visibility:hidden;display:none;" X-Frame-Options="sameorigin" sandbox="allow-scripts"></iframe>
+</body>
+</html>

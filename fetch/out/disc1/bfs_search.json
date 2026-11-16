@@ -1,0 +1,3483 @@
+{
+  "total" : 83797,
+  "skip" : 0,
+  "data" : [ {
+    "ids" : {
+      "uuid" : "ea74323c-fbe1-4eeb-b0c8-32fb31695193",
+      "damId" : 37030389,
+      "contentId" : 19304227,
+      "languageCopyId" : 37030387,
+      "gnp" : "2026-0552"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T13:00:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : false,
+      "articleModel" : {
+        "id" : 900073,
+        "level" : 1,
+        "code" : "LK",
+        "name" : "Weblink"
+      },
+      "articleModelGroup" : {
+        "id" : 900072,
+        "level" : 0,
+        "code" : "AMG_WEBCONTENT",
+        "name" : "Webinhalt"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "Erste Tendenzen zur Entwicklung der Hotellogiernächte (HESTA-Flash)"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "STAT_GEN",
+          "name" : "Allgemeine Statistik"
+        } ],
+        "prodima" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "00",
+          "name" : "Grundlagen und Übersichten"
+        }, {
+          "id" : 900009,
+          "level" : 1,
+          "code" : "00.08",
+          "name" : "Methoden"
+        } ],
+        "inquiry" : [ ],
+        "spatialdivision" : [ ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "publisher" : [ ],
+        "tags" : [ ],
+        "dataSource" : [ ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ ],
+        "periodicity" : [ ]
+      },
+      "bibliography" : { },
+      "abstractShort" : "Experimental Statistics (BFS)",
+      "shortSummary" : {
+        "html" : "Experimental Statistics (BFS)",
+        "raw" : "Experimental Statistics (BFS)"
+      },
+      "language" : "DE/FR",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : false
+    },
+    "shop" : {
+      "orderNr" : "lk-b-experimental-07",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://statistik.admin.ch/de/innovative-interaktive-statistik/expstat/projekte/hesta-flash",
+      "rel" : "related",
+      "text" : "Erste Tendenzen zur Entwicklung der Hotellogiernächte (HESTA-Flash)"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/37030389",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/37030389/thumbnail",
+      "rel" : "thumbnail"
+    } ]
+  }, {
+    "ids" : {
+      "uuid" : "62573705-bd8a-483a-8a1a-b3626a762a78",
+      "damId" : 37030397,
+      "contentId" : 19324302,
+      "languageCopyId" : 37030395,
+      "gnp" : "2026-0552"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T13:00:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : true,
+      "articleModel" : {
+        "id" : 900046,
+        "level" : 1,
+        "code" : "DIAG_DM11",
+        "name" : "DM11 Diagramm (Data-driven)"
+      },
+      "articleModelGroup" : {
+        "id" : 900034,
+        "level" : 0,
+        "code" : "AMG_DIAGRAM",
+        "name" : "Diagramm"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "HESTA-Flash: Veränderung der Logiernächte in der Hotellerie",
+        "super" : "Experimental Statistics (BFS)"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900010,
+          "level" : 0,
+          "code" : "VER_KOLL",
+          "name" : "Versteckte Kollektion"
+        }, {
+          "id" : 900031,
+          "level" : 0,
+          "code" : "EXPER_STAT",
+          "name" : "Experimental Statistics"
+        } ],
+        "prodima" : [ {
+          "id" : 900160,
+          "level" : 0,
+          "code" : "10",
+          "name" : "Tourismus"
+        }, {
+          "id" : 901293,
+          "level" : 1,
+          "code" : "10.03",
+          "name" : "Beherbergung"
+        }, {
+          "id" : 901294,
+          "level" : 2,
+          "code" : "10.03.01",
+          "name" : "Hotellerie"
+        } ],
+        "inquiry" : [ {
+          "id" : 900003,
+          "level" : 0,
+          "name" : "Vollerhebung"
+        }, {
+          "id" : 172,
+          "level" : 1,
+          "code" : "HESTA",
+          "abbrev" : "HESTA",
+          "name" : "Beherbergungsstatistik"
+        } ],
+        "spatialdivision" : [ {
+          "id" : 900091,
+          "level" : 0,
+          "code" : "p_suis",
+          "name" : "Schweiz"
+        }, {
+          "id" : 900001,
+          "level" : 1,
+          "code" : "suis",
+          "name" : "Schweiz"
+        } ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "publisher" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900009,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "tags" : [ {
+          "id" : 900072,
+          "level" : 0,
+          "code" : "DVTOOL-D3",
+          "name" : "BFS Datavis-Bibliothek"
+        } ],
+        "dataSource" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ ],
+        "periodicity" : [ {
+          "id" : 900030,
+          "level" : 0,
+          "code" : "MONTHLY",
+          "name" : "Monatlich"
+        } ]
+      },
+      "bibliography" : {
+        "year" : 2026,
+        "period" : "1.10.2026-31.10.2026"
+      },
+      "language" : "DE",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : false
+    },
+    "shop" : {
+      "orderNr" : "gr-d-10.03.01-EXP-01",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/37030397",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/37030397/thumbnail",
+      "rel" : "thumbnail"
+    }, {
+      "href" : "/de/daten-statistiken-verstehen/erhebungen/hesta",
+      "rel" : "related-factsheet-inquiry",
+      "text" : "Beherbergungsstatistik"
+    }, {
+      "href" : "/bfs/de/home/statistiken/tourismus.html",
+      "rel" : "related-theme-entrypage",
+      "text" : "Tourismus"
+    } ]
+  }, {
+    "ids" : {
+      "uuid" : "f9d00f39-a328-4e1d-9247-105c8a33c5ee",
+      "damId" : 37030401,
+      "contentId" : 19324310,
+      "languageCopyId" : 37030399,
+      "gnp" : "2026-0552"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T13:00:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : false,
+      "articleModel" : {
+        "id" : 900092,
+        "level" : 1,
+        "code" : "DYN_AT",
+        "name" : "ID02 Dynamic Asset Tool"
+      },
+      "articleModelGroup" : {
+        "id" : 900032,
+        "level" : 0,
+        "code" : "AMG_INTERACTIVEDATA",
+        "name" : "Interaktive Daten"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "HESTA-Flash: Veränderung der Logiernächte in der Hotellerie",
+        "super" : "Experimental Statistics (BFS)"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900010,
+          "level" : 0,
+          "code" : "VER_KOLL",
+          "name" : "Versteckte Kollektion"
+        }, {
+          "id" : 900031,
+          "level" : 0,
+          "code" : "EXPER_STAT",
+          "name" : "Experimental Statistics"
+        } ],
+        "prodima" : [ {
+          "id" : 900160,
+          "level" : 0,
+          "code" : "10",
+          "name" : "Tourismus"
+        }, {
+          "id" : 901293,
+          "level" : 1,
+          "code" : "10.03",
+          "name" : "Beherbergung"
+        }, {
+          "id" : 901294,
+          "level" : 2,
+          "code" : "10.03.01",
+          "name" : "Hotellerie"
+        } ],
+        "inquiry" : [ {
+          "id" : 900003,
+          "level" : 0,
+          "name" : "Vollerhebung"
+        }, {
+          "id" : 172,
+          "level" : 1,
+          "code" : "HESTA",
+          "abbrev" : "HESTA",
+          "name" : "Beherbergungsstatistik"
+        } ],
+        "spatialdivision" : [ {
+          "id" : 900091,
+          "level" : 0,
+          "code" : "p_suis",
+          "name" : "Schweiz"
+        }, {
+          "id" : 900001,
+          "level" : 1,
+          "code" : "suis",
+          "name" : "Schweiz"
+        } ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "publisher" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900009,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "tags" : [ ],
+        "dataSource" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ ],
+        "periodicity" : [ {
+          "id" : 900015,
+          "level" : 0,
+          "code" : "MONTHLY_2",
+          "name" : "Halbmonatlich"
+        } ]
+      },
+      "bibliography" : {
+        "period" : "1.10.2026-31.10.2026"
+      },
+      "language" : "DE/FR",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : true
+    },
+    "shop" : {
+      "orderNr" : "ds-x-10.03.01-EXP-01",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/37030401",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/37030401/master",
+      "rel" : "master",
+      "format" : "json",
+      "size" : 421
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/37030401/thumbnail",
+      "rel" : "thumbnail"
+    }, {
+      "href" : "/de/daten-statistiken-verstehen/erhebungen/hesta",
+      "rel" : "related-factsheet-inquiry",
+      "text" : "Beherbergungsstatistik"
+    }, {
+      "href" : "/bfs/de/home/statistiken/tourismus.html",
+      "rel" : "related-theme-entrypage",
+      "text" : "Tourismus"
+    } ]
+  }, {
+    "ids" : {
+      "uuid" : "0c035d5f-9dd0-4ec3-90a9-5b0c3580597f",
+      "damId" : 37030393,
+      "contentId" : 19107414,
+      "languageCopyId" : 37030391,
+      "gnp" : "2026-0552"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T13:00:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : true,
+      "articleModel" : {
+        "id" : 900030,
+        "level" : 1,
+        "code" : "TABL",
+        "name" : "TM10 Tabelle Datei"
+      },
+      "articleModelGroup" : {
+        "id" : 900029,
+        "level" : 0,
+        "code" : "AMG_TABLE",
+        "name" : "Daten - Tabelle"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "HESTA-Flash: Veränderung der Logiernächte in der Hotellerie",
+        "super" : "Experimental Statistics (BFS)"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900015,
+          "level" : 0,
+          "code" : "TAB_CC",
+          "name" : "Tab CC"
+        }, {
+          "id" : 900031,
+          "level" : 0,
+          "code" : "EXPER_STAT",
+          "name" : "Experimental Statistics"
+        } ],
+        "prodima" : [ {
+          "id" : 900160,
+          "level" : 0,
+          "code" : "10",
+          "name" : "Tourismus"
+        }, {
+          "id" : 901293,
+          "level" : 1,
+          "code" : "10.03",
+          "name" : "Beherbergung"
+        }, {
+          "id" : 901294,
+          "level" : 2,
+          "code" : "10.03.01",
+          "name" : "Hotellerie"
+        } ],
+        "inquiry" : [ {
+          "id" : 900003,
+          "level" : 0,
+          "name" : "Vollerhebung"
+        }, {
+          "id" : 172,
+          "level" : 1,
+          "code" : "HESTA",
+          "abbrev" : "HESTA",
+          "name" : "Beherbergungsstatistik"
+        } ],
+        "spatialdivision" : [ {
+          "id" : 900091,
+          "level" : 0,
+          "code" : "p_suis",
+          "name" : "Schweiz"
+        }, {
+          "id" : 900001,
+          "level" : 1,
+          "code" : "suis",
+          "name" : "Schweiz"
+        } ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "publisher" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900009,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "tags" : [ ],
+        "dataSource" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ ],
+        "periodicity" : [ {
+          "id" : 900030,
+          "level" : 0,
+          "code" : "MONTHLY",
+          "name" : "Monatlich"
+        } ]
+      },
+      "bibliography" : {
+        "period" : "1.10.2026-31.10.2026"
+      },
+      "language" : "DE",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : true
+    },
+    "shop" : {
+      "orderNr" : "cc-d-10.03.01-EXP-01",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/37030393",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/37030393/master",
+      "rel" : "master",
+      "format" : "xlsx",
+      "size" : 6131
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/37030393/thumbnail",
+      "rel" : "thumbnail"
+    }, {
+      "href" : "/de/daten-statistiken-verstehen/erhebungen/hesta",
+      "rel" : "related-factsheet-inquiry",
+      "text" : "Beherbergungsstatistik"
+    }, {
+      "href" : "/bfs/de/home/statistiken/tourismus.html",
+      "rel" : "related-theme-entrypage",
+      "text" : "Tourismus"
+    } ]
+  }, {
+    "ids" : {
+      "uuid" : "0f75472b-67a5-477a-be6e-4cfc323ee120",
+      "damId" : 36924167,
+      "contentId" : 453108,
+      "languageCopyId" : 36924145,
+      "gnp" : "2026-0360"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T07:30:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : false,
+      "articleModel" : {
+        "id" : 900039,
+        "level" : 1,
+        "code" : "DIAG_DM02",
+        "name" : "DM02 Diagramm (Statisch)"
+      },
+      "articleModelGroup" : {
+        "id" : 900034,
+        "level" : 0,
+        "code" : "AMG_DIAGRAM",
+        "name" : "Diagramm"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "Abgeschlossene Ausbildungen der höheren Berufsbildung - Anteil an der 30- bis 34-jährigen ständigen Wohnbevölkerung - In Prozent",
+        "super" : "Monitoring der Legislaturplanung"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "STAT_GEN",
+          "name" : "Allgemeine Statistik"
+        }, {
+          "id" : 900025,
+          "level" : 0,
+          "code" : "IND_SYS",
+          "name" : "IndSys"
+        } ],
+        "prodima" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "00",
+          "name" : "Grundlagen und Übersichten"
+        }, {
+          "id" : 901187,
+          "level" : 1,
+          "code" : "00.17",
+          "name" : "Monitoring der Legislaturplanung"
+        } ],
+        "inquiry" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Synthesestatistik"
+        }, {
+          "id" : 328,
+          "level" : 1,
+          "code" : "LEGIND",
+          "name" : "Legislaturindikatoren"
+        } ],
+        "spatialdivision" : [ {
+          "id" : 900091,
+          "level" : 0,
+          "code" : "p_suis",
+          "name" : "Schweiz"
+        }, {
+          "id" : 900001,
+          "level" : 1,
+          "code" : "suis",
+          "name" : "Schweiz"
+        } ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "publisher" : [ ],
+        "tags" : [ ],
+        "dataSource" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ ],
+        "periodicity" : [ {
+          "id" : 910000,
+          "level" : 0,
+          "code" : "ANNUAL",
+          "name" : "Jährlich"
+        } ]
+      },
+      "bibliography" : {
+        "pages" : 1,
+        "period" : "2010-2020, 2022-2025"
+      },
+      "language" : "DE",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : true
+    },
+    "shop" : {
+      "orderNr" : "gr-d-00.17.05.01.01.01-ind",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36924167",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36924167/master",
+      "rel" : "master",
+      "format" : "pdf",
+      "size" : 17275
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36924167/thumbnail",
+      "rel" : "thumbnail"
+    }, {
+      "href" : "/bfs/de/home/statistiken/querschnittsthemen/monitoring-legislaturplanung.html",
+      "rel" : "related-factsheet-inquiry",
+      "text" : "Legislaturindikatoren"
+    } ]
+  }, {
+    "ids" : {
+      "uuid" : "b36fefc1-cba6-4af5-9bd5-73eb8450e06e",
+      "damId" : 36931288,
+      "contentId" : 453536,
+      "languageCopyId" : 36931280,
+      "gnp" : "2026-0360"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T07:30:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : false,
+      "articleModel" : {
+        "id" : 900030,
+        "level" : 1,
+        "code" : "TABL",
+        "name" : "TM10 Tabelle Datei"
+      },
+      "articleModelGroup" : {
+        "id" : 900029,
+        "level" : 0,
+        "code" : "AMG_TABLE",
+        "name" : "Daten - Tabelle"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "Abgeschlossene Ausbildungen der höheren Berufsbildung - Anteil an der 30- bis 34-jährigen ständigen Wohnbevölkerung - In Prozent",
+        "super" : "Monitoring der Legislaturplanung"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "STAT_GEN",
+          "name" : "Allgemeine Statistik"
+        }, {
+          "id" : 900025,
+          "level" : 0,
+          "code" : "IND_SYS",
+          "name" : "IndSys"
+        } ],
+        "prodima" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "00",
+          "name" : "Grundlagen und Übersichten"
+        }, {
+          "id" : 901187,
+          "level" : 1,
+          "code" : "00.17",
+          "name" : "Monitoring der Legislaturplanung"
+        } ],
+        "inquiry" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Synthesestatistik"
+        }, {
+          "id" : 328,
+          "level" : 1,
+          "code" : "LEGIND",
+          "name" : "Legislaturindikatoren"
+        } ],
+        "spatialdivision" : [ {
+          "id" : 900091,
+          "level" : 0,
+          "code" : "p_suis",
+          "name" : "Schweiz"
+        }, {
+          "id" : 900001,
+          "level" : 1,
+          "code" : "suis",
+          "name" : "Schweiz"
+        } ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "publisher" : [ ],
+        "tags" : [ ],
+        "dataSource" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ ],
+        "periodicity" : [ {
+          "id" : 910000,
+          "level" : 0,
+          "code" : "ANNUAL",
+          "name" : "Jährlich"
+        } ]
+      },
+      "bibliography" : {
+        "period" : "2010-2020, 2022-2025"
+      },
+      "language" : "DE",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : true
+    },
+    "shop" : {
+      "orderNr" : "ind-d-00.17.05.01.01.01",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36931288",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36931288/master",
+      "rel" : "master",
+      "format" : "xlsx",
+      "size" : 8114
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36931288/thumbnail",
+      "rel" : "thumbnail"
+    }, {
+      "href" : "/bfs/de/home/statistiken/querschnittsthemen/monitoring-legislaturplanung.html",
+      "rel" : "related-factsheet-inquiry",
+      "text" : "Legislaturindikatoren"
+    } ]
+  }, {
+    "ids" : {
+      "uuid" : "124c032c-d3f4-4d27-b31f-95b71be1f9cc",
+      "damId" : 36772285,
+      "contentId" : 36772284,
+      "languageCopyId" : 36772282,
+      "gnp" : "2026-0519"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T07:30:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : false,
+      "articleModel" : {
+        "id" : 900037,
+        "level" : 1,
+        "code" : "DIAG_DM01",
+        "name" : "DM01 Diagramm (manuel. Datenanbindung)"
+      },
+      "articleModelGroup" : {
+        "id" : 900034,
+        "level" : 0,
+        "code" : "AMG_DIAGRAM",
+        "name" : "Diagramm"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "Alle Krebsarten (Total): Neuerkrankungen und Sterblichkeit nach Altersklassen"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "STAT_GEN",
+          "name" : "Allgemeine Statistik"
+        } ],
+        "prodima" : [ {
+          "id" : 900210,
+          "level" : 0,
+          "code" : "14",
+          "name" : "Gesundheit"
+        }, {
+          "id" : 900944,
+          "level" : 1,
+          "code" : "14.03",
+          "name" : "Gesundheitszustand"
+        }, {
+          "id" : 900947,
+          "level" : 2,
+          "code" : "14.03.03",
+          "name" : "Krankheiten"
+        }, {
+          "id" : 900950,
+          "level" : 3,
+          "code" : "14.03.03.03",
+          "name" : "Krebs"
+        } ],
+        "inquiry" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Synthesestatistik"
+        }, {
+          "id" : 235,
+          "level" : 1,
+          "code" : "NKS",
+          "abbrev" : "NKS",
+          "name" : "Nationale Krebsstatistik"
+        } ],
+        "spatialdivision" : [ {
+          "id" : 900091,
+          "level" : 0,
+          "code" : "p_suis",
+          "name" : "Schweiz"
+        }, {
+          "id" : 900001,
+          "level" : 1,
+          "code" : "suis",
+          "name" : "Schweiz"
+        } ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900002,
+          "level" : 0,
+          "name" : "Bundesämter und -institutionen"
+        }, {
+          "id" : 900244,
+          "level" : 1,
+          "code" : "NKRS",
+          "abbrev" : "NKRS",
+          "name" : "Nationale Krebsregistrierungsstelle"
+        } ],
+        "publisher" : [ ],
+        "tags" : [ ],
+        "dataSource" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900002,
+          "level" : 0,
+          "name" : "Bundesämter und -institutionen"
+        }, {
+          "id" : 900244,
+          "level" : 1,
+          "code" : "NKRS",
+          "abbrev" : "NKRS",
+          "name" : "Nationale Krebsregistrierungsstelle"
+        } ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ ],
+        "periodicity" : [ {
+          "id" : 910000,
+          "level" : 0,
+          "code" : "ANNUAL",
+          "name" : "Jährlich"
+        } ]
+      },
+      "bibliography" : {
+        "period" : "1984-2023"
+      },
+      "language" : "DE",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : false
+    },
+    "shop" : {
+      "orderNr" : "gd-d-14.03.03-Gc3-C00-97",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36772285",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36772285/thumbnail-source",
+      "rel" : "thumbnail-source",
+      "format" : "png",
+      "size" : 2729966
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36772285/thumbnail",
+      "rel" : "thumbnail"
+    }, {
+      "href" : "/de/daten-statistiken-verstehen/erhebungen/ke",
+      "rel" : "related-factsheet-inquiry",
+      "text" : "Nationale Krebsstatistik"
+    }, {
+      "href" : "/bfs/de/home/statistiken/gesundheit.html",
+      "rel" : "related-theme-entrypage",
+      "text" : "Gesundheit"
+    } ]
+  }, {
+    "ids" : {
+      "uuid" : "2b434373-4b3f-40d5-8e0b-dd7926aaf6c1",
+      "damId" : 36772312,
+      "contentId" : 36772308,
+      "languageCopyId" : 36772291,
+      "gnp" : "2026-0519"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T07:30:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : false,
+      "articleModel" : {
+        "id" : 900037,
+        "level" : 1,
+        "code" : "DIAG_DM01",
+        "name" : "DM01 Diagramm (manuel. Datenanbindung)"
+      },
+      "articleModelGroup" : {
+        "id" : 900034,
+        "level" : 0,
+        "code" : "AMG_DIAGRAM",
+        "name" : "Diagramm"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "Alle Krebsarten (total): Neuerkrankungen und Sterblichkeit nach Perioden"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "STAT_GEN",
+          "name" : "Allgemeine Statistik"
+        } ],
+        "prodima" : [ {
+          "id" : 900210,
+          "level" : 0,
+          "code" : "14",
+          "name" : "Gesundheit"
+        }, {
+          "id" : 900944,
+          "level" : 1,
+          "code" : "14.03",
+          "name" : "Gesundheitszustand"
+        }, {
+          "id" : 900947,
+          "level" : 2,
+          "code" : "14.03.03",
+          "name" : "Krankheiten"
+        }, {
+          "id" : 900950,
+          "level" : 3,
+          "code" : "14.03.03.03",
+          "name" : "Krebs"
+        } ],
+        "inquiry" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Synthesestatistik"
+        }, {
+          "id" : 235,
+          "level" : 1,
+          "code" : "NKS",
+          "abbrev" : "NKS",
+          "name" : "Nationale Krebsstatistik"
+        } ],
+        "spatialdivision" : [ {
+          "id" : 900091,
+          "level" : 0,
+          "code" : "p_suis",
+          "name" : "Schweiz"
+        }, {
+          "id" : 900001,
+          "level" : 1,
+          "code" : "suis",
+          "name" : "Schweiz"
+        } ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900002,
+          "level" : 0,
+          "name" : "Bundesämter und -institutionen"
+        }, {
+          "id" : 900244,
+          "level" : 1,
+          "code" : "NKRS",
+          "abbrev" : "NKRS",
+          "name" : "Nationale Krebsregistrierungsstelle"
+        } ],
+        "publisher" : [ ],
+        "tags" : [ ],
+        "dataSource" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900002,
+          "level" : 0,
+          "name" : "Bundesämter und -institutionen"
+        }, {
+          "id" : 900244,
+          "level" : 1,
+          "code" : "NKRS",
+          "abbrev" : "NKRS",
+          "name" : "Nationale Krebsregistrierungsstelle"
+        } ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ ],
+        "periodicity" : [ {
+          "id" : 910000,
+          "level" : 0,
+          "code" : "ANNUAL",
+          "name" : "Jährlich"
+        } ]
+      },
+      "bibliography" : {
+        "period" : "1984-2023"
+      },
+      "language" : "DE",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : false
+    },
+    "shop" : {
+      "orderNr" : "gd-d-14.03.03-Gc2.2-C00-97",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36772312",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36772312/thumbnail-source",
+      "rel" : "thumbnail-source",
+      "format" : "png",
+      "size" : 2265320
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36772312/thumbnail",
+      "rel" : "thumbnail"
+    }, {
+      "href" : "/de/daten-statistiken-verstehen/erhebungen/ke",
+      "rel" : "related-factsheet-inquiry",
+      "text" : "Nationale Krebsstatistik"
+    }, {
+      "href" : "/bfs/de/home/statistiken/gesundheit.html",
+      "rel" : "related-theme-entrypage",
+      "text" : "Gesundheit"
+    } ]
+  }, {
+    "ids" : {
+      "uuid" : "57e6876c-b006-491e-b567-cc6719359bfb",
+      "damId" : 36924245,
+      "contentId" : 33086975,
+      "languageCopyId" : 36924236,
+      "gnp" : "2026-0360"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T07:30:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : false,
+      "articleModel" : {
+        "id" : 900039,
+        "level" : 1,
+        "code" : "DIAG_DM02",
+        "name" : "DM02 Diagramm (Statisch)"
+      },
+      "articleModelGroup" : {
+        "id" : 900034,
+        "level" : 0,
+        "code" : "AMG_DIAGRAM",
+        "name" : "Diagramm"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "Armutsquote - Anteil einkommensarmer Personen an der ständigen Wohnbevölkerung in Privathaushalten - In Prozent",
+        "super" : "Monitoring der Legislaturplanung"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "STAT_GEN",
+          "name" : "Allgemeine Statistik"
+        }, {
+          "id" : 900025,
+          "level" : 0,
+          "code" : "IND_SYS",
+          "name" : "IndSys"
+        } ],
+        "prodima" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "00",
+          "name" : "Grundlagen und Übersichten"
+        }, {
+          "id" : 901187,
+          "level" : 1,
+          "code" : "00.17",
+          "name" : "Monitoring der Legislaturplanung"
+        } ],
+        "inquiry" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Synthesestatistik"
+        }, {
+          "id" : 328,
+          "level" : 1,
+          "code" : "LEGIND",
+          "name" : "Legislaturindikatoren"
+        } ],
+        "spatialdivision" : [ {
+          "id" : 900091,
+          "level" : 0,
+          "code" : "p_suis",
+          "name" : "Schweiz"
+        }, {
+          "id" : 900001,
+          "level" : 1,
+          "code" : "suis",
+          "name" : "Schweiz"
+        } ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "publisher" : [ ],
+        "tags" : [ ],
+        "dataSource" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ ],
+        "periodicity" : [ {
+          "id" : 910000,
+          "level" : 0,
+          "code" : "ANNUAL",
+          "name" : "Jährlich"
+        } ]
+      },
+      "bibliography" : {
+        "pages" : 1,
+        "period" : "2007-2024"
+      },
+      "language" : "DE",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : true
+    },
+    "shop" : {
+      "orderNr" : "gr-d-00.17.08.00.04.01-ind",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36924245",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36924245/master",
+      "rel" : "master",
+      "format" : "pdf",
+      "size" : 16360
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36924245/thumbnail",
+      "rel" : "thumbnail"
+    }, {
+      "href" : "/bfs/de/home/statistiken/querschnittsthemen/monitoring-legislaturplanung.html",
+      "rel" : "related-factsheet-inquiry",
+      "text" : "Legislaturindikatoren"
+    } ]
+  }, {
+    "ids" : {
+      "uuid" : "d0caa27c-1afb-44e4-9417-3b697774b6f3",
+      "damId" : 36931303,
+      "contentId" : 33106689,
+      "languageCopyId" : 36931295,
+      "gnp" : "2026-0360"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T07:30:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : false,
+      "articleModel" : {
+        "id" : 900030,
+        "level" : 1,
+        "code" : "TABL",
+        "name" : "TM10 Tabelle Datei"
+      },
+      "articleModelGroup" : {
+        "id" : 900029,
+        "level" : 0,
+        "code" : "AMG_TABLE",
+        "name" : "Daten - Tabelle"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "Armutsquote - Anteil einkommensarmer Personen an der ständigen Wohnbevölkerung in Privathaushalten - In Prozent",
+        "super" : "Monitoring der Legislaturplanung"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "STAT_GEN",
+          "name" : "Allgemeine Statistik"
+        }, {
+          "id" : 900025,
+          "level" : 0,
+          "code" : "IND_SYS",
+          "name" : "IndSys"
+        } ],
+        "prodima" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "00",
+          "name" : "Grundlagen und Übersichten"
+        }, {
+          "id" : 901187,
+          "level" : 1,
+          "code" : "00.17",
+          "name" : "Monitoring der Legislaturplanung"
+        } ],
+        "inquiry" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Synthesestatistik"
+        }, {
+          "id" : 328,
+          "level" : 1,
+          "code" : "LEGIND",
+          "name" : "Legislaturindikatoren"
+        } ],
+        "spatialdivision" : [ {
+          "id" : 900091,
+          "level" : 0,
+          "code" : "p_suis",
+          "name" : "Schweiz"
+        }, {
+          "id" : 900001,
+          "level" : 1,
+          "code" : "suis",
+          "name" : "Schweiz"
+        } ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "publisher" : [ ],
+        "tags" : [ ],
+        "dataSource" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ ],
+        "periodicity" : [ {
+          "id" : 910000,
+          "level" : 0,
+          "code" : "ANNUAL",
+          "name" : "Jährlich"
+        } ]
+      },
+      "bibliography" : {
+        "period" : "2007-2024"
+      },
+      "language" : "DE",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : true
+    },
+    "shop" : {
+      "orderNr" : "ind-d-00.17.08.00.04.01",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36931303",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36931303/master",
+      "rel" : "master",
+      "format" : "xlsx",
+      "size" : 8504
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36931303/thumbnail",
+      "rel" : "thumbnail"
+    }, {
+      "href" : "/bfs/de/home/statistiken/querschnittsthemen/monitoring-legislaturplanung.html",
+      "rel" : "related-factsheet-inquiry",
+      "text" : "Legislaturindikatoren"
+    } ]
+  }, {
+    "ids" : {
+      "uuid" : "9a0b0329-4670-4e58-9a05-352744a91701",
+      "damId" : 36863357,
+      "contentId" : 36863356,
+      "languageCopyId" : 36863354,
+      "gnp" : "2025-0212"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T07:30:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : false,
+      "articleModel" : {
+        "id" : 900030,
+        "level" : 1,
+        "code" : "TABL",
+        "name" : "TM10 Tabelle Datei"
+      },
+      "articleModelGroup" : {
+        "id" : 900029,
+        "level" : 0,
+        "code" : "AMG_TABLE",
+        "name" : "Daten - Tabelle"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "Bildungsverläufe von Kindern aus dem Asylbereich in der Primarschule"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "STAT_GEN",
+          "name" : "Allgemeine Statistik"
+        }, {
+          "id" : 900016,
+          "level" : 0,
+          "code" : "TAB_SU",
+          "name" : "Tab SU"
+        } ],
+        "prodima" : [ {
+          "id" : 900212,
+          "level" : 0,
+          "code" : "15",
+          "name" : "Bildung und Wissenschaft"
+        }, {
+          "id" : 901076,
+          "level" : 1,
+          "code" : "15.10",
+          "name" : "Übertritte und Verläufe im Bildungsbereich"
+        }, {
+          "id" : 901078,
+          "level" : 2,
+          "code" : "15.10.01",
+          "name" : "In der obligatorischen Schule"
+        } ],
+        "inquiry" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Synthesestatistik"
+        }, {
+          "id" : 348,
+          "level" : 1,
+          "code" : "LABB",
+          "abbrev" : "LABB",
+          "name" : "Längsschnittanalysen im Bildungsbereich"
+        } ],
+        "spatialdivision" : [ {
+          "id" : 900091,
+          "level" : 0,
+          "code" : "p_suis",
+          "name" : "Schweiz"
+        }, {
+          "id" : 900001,
+          "level" : 1,
+          "code" : "suis",
+          "name" : "Schweiz"
+        } ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "publisher" : [ ],
+        "tags" : [ ],
+        "dataSource" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ ],
+        "periodicity" : [ {
+          "id" : 990009,
+          "level" : 0,
+          "code" : "IRREG",
+          "name" : "Unregelmässig"
+        } ]
+      },
+      "bibliography" : {
+        "period" : "2010-2023"
+      },
+      "language" : "DE",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : true
+    },
+    "shop" : {
+      "orderNr" : "su-d-15.10.01.07",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36863357",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36863357/master",
+      "rel" : "master",
+      "format" : "xlsx",
+      "size" : 27911
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36863357/thumbnail",
+      "rel" : "thumbnail"
+    }, {
+      "href" : "/de/daten-statistiken-verstehen/erhebungen/labb",
+      "rel" : "related-factsheet-inquiry",
+      "text" : "Längsschnittanalysen im Bildungsbereich"
+    }, {
+      "href" : "/bfs/de/home/statistiken/bildung-wissenschaft.html",
+      "rel" : "related-theme-entrypage",
+      "text" : "Bildung und Wissenschaft"
+    } ]
+  }, {
+    "ids" : {
+      "uuid" : "87054e6e-11b8-416c-a3a6-a5c9ca28d40c",
+      "damId" : 36850612,
+      "contentId" : 36850611,
+      "languageCopyId" : 36850609,
+      "gnp" : "2025-0212"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T07:30:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : false,
+      "articleModel" : {
+        "id" : 900016,
+        "level" : 1,
+        "code" : "BFS_AKT",
+        "name" : "BFS Aktuell"
+      },
+      "articleModelGroup" : {
+        "id" : 900012,
+        "level" : 0,
+        "code" : "AMG_PUBLICATION",
+        "name" : "Publikation"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "Bildungsverläufe von Kindern aus dem Asylbereich in der Primarschule",
+        "super" : "Längsschnittanalysen im Bildungsbereich"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "STAT_GEN",
+          "name" : "Allgemeine Statistik"
+        } ],
+        "prodima" : [ {
+          "id" : 900212,
+          "level" : 0,
+          "code" : "15",
+          "name" : "Bildung und Wissenschaft"
+        }, {
+          "id" : 901076,
+          "level" : 1,
+          "code" : "15.10",
+          "name" : "Übertritte und Verläufe im Bildungsbereich"
+        }, {
+          "id" : 901078,
+          "level" : 2,
+          "code" : "15.10.01",
+          "name" : "In der obligatorischen Schule"
+        } ],
+        "inquiry" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Synthesestatistik"
+        }, {
+          "id" : 348,
+          "level" : 1,
+          "code" : "LABB",
+          "abbrev" : "LABB",
+          "name" : "Längsschnittanalysen im Bildungsbereich"
+        } ],
+        "spatialdivision" : [ {
+          "id" : 900091,
+          "level" : 0,
+          "code" : "p_suis",
+          "name" : "Schweiz"
+        }, {
+          "id" : 900001,
+          "level" : 1,
+          "code" : "suis",
+          "name" : "Schweiz"
+        } ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "publisher" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900009,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "tags" : [ {
+          "id" : 900053,
+          "level" : 0,
+          "code" : "WOMAN",
+          "name" : "Frau"
+        }, {
+          "id" : 900054,
+          "level" : 0,
+          "code" : "MAN",
+          "name" : "Mann"
+        }, {
+          "id" : 900055,
+          "level" : 0,
+          "code" : "GENDER",
+          "name" : "Geschlecht"
+        } ],
+        "dataSource" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ {
+          "id" : 900002,
+          "level" : 0,
+          "name" : "Aktuelle Reihen"
+        }, {
+          "id" : 900108,
+          "level" : 1,
+          "code" : "LASS",
+          "name" : "Statistik der Schweiz"
+        }, {
+          "id" : 900109,
+          "level" : 1,
+          "code" : "LBFA",
+          "name" : "BFS Aktuell"
+        } ],
+        "periodicity" : [ ]
+      },
+      "bibliography" : {
+        "city" : "Neuchâtel",
+        "year" : 2026,
+        "doiNumber" : "10.71668/t81m-vb22",
+        "pages" : 12,
+        "period" : "2026"
+      },
+      "language" : "DE",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : true
+    },
+    "shop" : {
+      "orderNr" : "2389-2600",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://www.bundespublikationen.admin.ch/de/p/000000000862742350",
+      "rel" : "store-bbl",
+      "text" : "Printversion bestellen",
+      "subText" : "Zum Shop"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36850612",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36850612/master",
+      "rel" : "master",
+      "format" : "pdf",
+      "size" : 510090
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36850612/print",
+      "rel" : "print",
+      "format" : "pdf",
+      "size" : 2383797
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36850612/thumbnail",
+      "rel" : "thumbnail"
+    }, {
+      "href" : "/de/daten-statistiken-verstehen/erhebungen/labb",
+      "rel" : "related-factsheet-inquiry",
+      "text" : "Längsschnittanalysen im Bildungsbereich"
+    }, {
+      "href" : "/bfs/de/home/statistiken/bildung-wissenschaft.html",
+      "rel" : "related-theme-entrypage",
+      "text" : "Bildung und Wissenschaft"
+    } ]
+  }, {
+    "ids" : {
+      "uuid" : "3628b6dd-dafa-4287-9c27-b51f0764219b",
+      "damId" : 36772310,
+      "contentId" : 36772303,
+      "languageCopyId" : 36772297,
+      "gnp" : "2026-0519"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T07:30:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : false,
+      "articleModel" : {
+        "id" : 900037,
+        "level" : 1,
+        "code" : "DIAG_DM01",
+        "name" : "DM01 Diagramm (manuel. Datenanbindung)"
+      },
+      "articleModelGroup" : {
+        "id" : 900034,
+        "level" : 0,
+        "code" : "AMG_DIAGRAM",
+        "name" : "Diagramm"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "Brustkrebs: Neuerkrankungen und Sterblichkeit nach Altersklassen"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "STAT_GEN",
+          "name" : "Allgemeine Statistik"
+        } ],
+        "prodima" : [ {
+          "id" : 900210,
+          "level" : 0,
+          "code" : "14",
+          "name" : "Gesundheit"
+        }, {
+          "id" : 900944,
+          "level" : 1,
+          "code" : "14.03",
+          "name" : "Gesundheitszustand"
+        }, {
+          "id" : 900947,
+          "level" : 2,
+          "code" : "14.03.03",
+          "name" : "Krankheiten"
+        }, {
+          "id" : 900950,
+          "level" : 3,
+          "code" : "14.03.03.03",
+          "name" : "Krebs"
+        } ],
+        "inquiry" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Synthesestatistik"
+        }, {
+          "id" : 235,
+          "level" : 1,
+          "code" : "NKS",
+          "abbrev" : "NKS",
+          "name" : "Nationale Krebsstatistik"
+        } ],
+        "spatialdivision" : [ {
+          "id" : 900091,
+          "level" : 0,
+          "code" : "p_suis",
+          "name" : "Schweiz"
+        }, {
+          "id" : 900001,
+          "level" : 1,
+          "code" : "suis",
+          "name" : "Schweiz"
+        } ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900002,
+          "level" : 0,
+          "name" : "Bundesämter und -institutionen"
+        }, {
+          "id" : 900244,
+          "level" : 1,
+          "code" : "NKRS",
+          "abbrev" : "NKRS",
+          "name" : "Nationale Krebsregistrierungsstelle"
+        } ],
+        "publisher" : [ ],
+        "tags" : [ ],
+        "dataSource" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900002,
+          "level" : 0,
+          "name" : "Bundesämter und -institutionen"
+        }, {
+          "id" : 900244,
+          "level" : 1,
+          "code" : "NKRS",
+          "abbrev" : "NKRS",
+          "name" : "Nationale Krebsregistrierungsstelle"
+        } ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ ],
+        "periodicity" : [ {
+          "id" : 910000,
+          "level" : 0,
+          "code" : "ANNUAL",
+          "name" : "Jährlich"
+        } ]
+      },
+      "bibliography" : {
+        "period" : "1984-2023"
+      },
+      "language" : "DE",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : false
+    },
+    "shop" : {
+      "orderNr" : "gd-d-14.03.03-Gc3-C50",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36772310",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36772310/thumbnail-source",
+      "rel" : "thumbnail-source",
+      "format" : "png",
+      "size" : 2630293
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36772310/thumbnail",
+      "rel" : "thumbnail"
+    }, {
+      "href" : "/de/daten-statistiken-verstehen/erhebungen/ke",
+      "rel" : "related-factsheet-inquiry",
+      "text" : "Nationale Krebsstatistik"
+    }, {
+      "href" : "/bfs/de/home/statistiken/gesundheit.html",
+      "rel" : "related-theme-entrypage",
+      "text" : "Gesundheit"
+    } ]
+  }, {
+    "ids" : {
+      "uuid" : "4d8fd1fb-73f1-4b30-b214-7dd0741d9ec3",
+      "damId" : 36772309,
+      "contentId" : 36772305,
+      "languageCopyId" : 36772299,
+      "gnp" : "2026-0519"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T07:30:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : false,
+      "articleModel" : {
+        "id" : 900037,
+        "level" : 1,
+        "code" : "DIAG_DM01",
+        "name" : "DM01 Diagramm (manuel. Datenanbindung)"
+      },
+      "articleModelGroup" : {
+        "id" : 900034,
+        "level" : 0,
+        "code" : "AMG_DIAGRAM",
+        "name" : "Diagramm"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "Brustkrebs: Neuerkrankungen und Sterblichkeit nach Perioden"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "STAT_GEN",
+          "name" : "Allgemeine Statistik"
+        } ],
+        "prodima" : [ {
+          "id" : 900210,
+          "level" : 0,
+          "code" : "14",
+          "name" : "Gesundheit"
+        }, {
+          "id" : 900944,
+          "level" : 1,
+          "code" : "14.03",
+          "name" : "Gesundheitszustand"
+        }, {
+          "id" : 900947,
+          "level" : 2,
+          "code" : "14.03.03",
+          "name" : "Krankheiten"
+        }, {
+          "id" : 900950,
+          "level" : 3,
+          "code" : "14.03.03.03",
+          "name" : "Krebs"
+        } ],
+        "inquiry" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Synthesestatistik"
+        }, {
+          "id" : 235,
+          "level" : 1,
+          "code" : "NKS",
+          "abbrev" : "NKS",
+          "name" : "Nationale Krebsstatistik"
+        } ],
+        "spatialdivision" : [ {
+          "id" : 900091,
+          "level" : 0,
+          "code" : "p_suis",
+          "name" : "Schweiz"
+        }, {
+          "id" : 900001,
+          "level" : 1,
+          "code" : "suis",
+          "name" : "Schweiz"
+        } ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900002,
+          "level" : 0,
+          "name" : "Bundesämter und -institutionen"
+        }, {
+          "id" : 900244,
+          "level" : 1,
+          "code" : "NKRS",
+          "abbrev" : "NKRS",
+          "name" : "Nationale Krebsregistrierungsstelle"
+        } ],
+        "publisher" : [ ],
+        "tags" : [ ],
+        "dataSource" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900002,
+          "level" : 0,
+          "name" : "Bundesämter und -institutionen"
+        }, {
+          "id" : 900244,
+          "level" : 1,
+          "code" : "NKRS",
+          "abbrev" : "NKRS",
+          "name" : "Nationale Krebsregistrierungsstelle"
+        } ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ ],
+        "periodicity" : [ {
+          "id" : 910000,
+          "level" : 0,
+          "code" : "ANNUAL",
+          "name" : "Jährlich"
+        } ]
+      },
+      "bibliography" : {
+        "period" : "1984-2023"
+      },
+      "language" : "DE",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : false
+    },
+    "shop" : {
+      "orderNr" : "gd-d-14.03.03-Gc2.2-C50",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36772309",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36772309/thumbnail-source",
+      "rel" : "thumbnail-source",
+      "format" : "png",
+      "size" : 2017915
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36772309/thumbnail",
+      "rel" : "thumbnail"
+    }, {
+      "href" : "/de/daten-statistiken-verstehen/erhebungen/ke",
+      "rel" : "related-factsheet-inquiry",
+      "text" : "Nationale Krebsstatistik"
+    }, {
+      "href" : "/bfs/de/home/statistiken/gesundheit.html",
+      "rel" : "related-theme-entrypage",
+      "text" : "Gesundheit"
+    } ]
+  }, {
+    "ids" : {
+      "uuid" : "a74cc8bc-2a80-4d8d-ae39-97ee4fb1e0b8",
+      "damId" : 36931223,
+      "contentId" : 33106719,
+      "languageCopyId" : 36931205,
+      "gnp" : "2026-0360"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T07:30:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : false,
+      "articleModel" : {
+        "id" : 900030,
+        "level" : 1,
+        "code" : "TABL",
+        "name" : "TM10 Tabelle Datei"
+      },
+      "articleModelGroup" : {
+        "id" : 900029,
+        "level" : 0,
+        "code" : "AMG_TABLE",
+        "name" : "Daten - Tabelle"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "Deckungsgrad der Pensionskassen - Anteil der Vorsorgeeinrichtungen mit einem Deckungsgrad von mindestens 100% - In Prozent",
+        "super" : "Monitoring der Legislaturplanung"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "STAT_GEN",
+          "name" : "Allgemeine Statistik"
+        }, {
+          "id" : 900025,
+          "level" : 0,
+          "code" : "IND_SYS",
+          "name" : "IndSys"
+        } ],
+        "prodima" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "00",
+          "name" : "Grundlagen und Übersichten"
+        }, {
+          "id" : 901187,
+          "level" : 1,
+          "code" : "00.17",
+          "name" : "Monitoring der Legislaturplanung"
+        } ],
+        "inquiry" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Synthesestatistik"
+        }, {
+          "id" : 328,
+          "level" : 1,
+          "code" : "LEGIND",
+          "name" : "Legislaturindikatoren"
+        } ],
+        "spatialdivision" : [ {
+          "id" : 900091,
+          "level" : 0,
+          "code" : "p_suis",
+          "name" : "Schweiz"
+        }, {
+          "id" : 900001,
+          "level" : 1,
+          "code" : "suis",
+          "name" : "Schweiz"
+        } ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "publisher" : [ ],
+        "tags" : [ ],
+        "dataSource" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ ],
+        "periodicity" : [ {
+          "id" : 910000,
+          "level" : 0,
+          "code" : "ANNUAL",
+          "name" : "Jährlich"
+        } ]
+      },
+      "bibliography" : {
+        "period" : "2017-2024"
+      },
+      "language" : "DE",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : true
+    },
+    "shop" : {
+      "orderNr" : "ind-d-00.17.08.01.07.01",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36931223",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36931223/master",
+      "rel" : "master",
+      "format" : "xlsx",
+      "size" : 7924
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36931223/thumbnail",
+      "rel" : "thumbnail"
+    }, {
+      "href" : "/bfs/de/home/statistiken/querschnittsthemen/monitoring-legislaturplanung.html",
+      "rel" : "related-factsheet-inquiry",
+      "text" : "Legislaturindikatoren"
+    } ]
+  }, {
+    "ids" : {
+      "uuid" : "eeed69e7-4dd4-4f35-bdb5-103e52ed40cb",
+      "damId" : 36924282,
+      "contentId" : 33086994,
+      "languageCopyId" : 36924263,
+      "gnp" : "2026-0360"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T07:30:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : false,
+      "articleModel" : {
+        "id" : 900039,
+        "level" : 1,
+        "code" : "DIAG_DM02",
+        "name" : "DM02 Diagramm (Statisch)"
+      },
+      "articleModelGroup" : {
+        "id" : 900034,
+        "level" : 0,
+        "code" : "AMG_DIAGRAM",
+        "name" : "Diagramm"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "Deckungsgrad der Pensionskassen - Anteil der Vorsorgeeinrichtungen mit einem Deckungsgrad von mindestens 100% - In Prozent",
+        "super" : "Monitoring der Legislaturplanung"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "STAT_GEN",
+          "name" : "Allgemeine Statistik"
+        }, {
+          "id" : 900025,
+          "level" : 0,
+          "code" : "IND_SYS",
+          "name" : "IndSys"
+        } ],
+        "prodima" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "00",
+          "name" : "Grundlagen und Übersichten"
+        }, {
+          "id" : 901187,
+          "level" : 1,
+          "code" : "00.17",
+          "name" : "Monitoring der Legislaturplanung"
+        } ],
+        "inquiry" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Synthesestatistik"
+        }, {
+          "id" : 328,
+          "level" : 1,
+          "code" : "LEGIND",
+          "name" : "Legislaturindikatoren"
+        } ],
+        "spatialdivision" : [ {
+          "id" : 900091,
+          "level" : 0,
+          "code" : "p_suis",
+          "name" : "Schweiz"
+        }, {
+          "id" : 900001,
+          "level" : 1,
+          "code" : "suis",
+          "name" : "Schweiz"
+        } ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "publisher" : [ ],
+        "tags" : [ ],
+        "dataSource" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ ],
+        "periodicity" : [ {
+          "id" : 910000,
+          "level" : 0,
+          "code" : "ANNUAL",
+          "name" : "Jährlich"
+        } ]
+      },
+      "bibliography" : {
+        "pages" : 1,
+        "period" : "2017-2024"
+      },
+      "language" : "DE",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : true
+    },
+    "shop" : {
+      "orderNr" : "gr-d-00.17.08.01.07.01-ind",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36924282",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36924282/master",
+      "rel" : "master",
+      "format" : "pdf",
+      "size" : 15819
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36924282/thumbnail",
+      "rel" : "thumbnail"
+    }, {
+      "href" : "/bfs/de/home/statistiken/querschnittsthemen/monitoring-legislaturplanung.html",
+      "rel" : "related-factsheet-inquiry",
+      "text" : "Legislaturindikatoren"
+    } ]
+  }, {
+    "ids" : {
+      "uuid" : "baf156f1-5d84-4318-9df8-f9e6ed1521c6",
+      "damId" : 36772343,
+      "contentId" : 36772337,
+      "languageCopyId" : 36772328,
+      "gnp" : "2026-0519"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T07:30:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : false,
+      "articleModel" : {
+        "id" : 900037,
+        "level" : 1,
+        "code" : "DIAG_DM01",
+        "name" : "DM01 Diagramm (manuel. Datenanbindung)"
+      },
+      "articleModelGroup" : {
+        "id" : 900034,
+        "level" : 0,
+        "code" : "AMG_DIAGRAM",
+        "name" : "Diagramm"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "Dickdarm- und Enddarmkrebs: Neuerkrankungen und Sterblichkeit nach Altersklassen"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "STAT_GEN",
+          "name" : "Allgemeine Statistik"
+        } ],
+        "prodima" : [ {
+          "id" : 900210,
+          "level" : 0,
+          "code" : "14",
+          "name" : "Gesundheit"
+        }, {
+          "id" : 900944,
+          "level" : 1,
+          "code" : "14.03",
+          "name" : "Gesundheitszustand"
+        }, {
+          "id" : 900947,
+          "level" : 2,
+          "code" : "14.03.03",
+          "name" : "Krankheiten"
+        }, {
+          "id" : 900950,
+          "level" : 3,
+          "code" : "14.03.03.03",
+          "name" : "Krebs"
+        } ],
+        "inquiry" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Synthesestatistik"
+        }, {
+          "id" : 235,
+          "level" : 1,
+          "code" : "NKS",
+          "abbrev" : "NKS",
+          "name" : "Nationale Krebsstatistik"
+        } ],
+        "spatialdivision" : [ {
+          "id" : 900091,
+          "level" : 0,
+          "code" : "p_suis",
+          "name" : "Schweiz"
+        }, {
+          "id" : 900001,
+          "level" : 1,
+          "code" : "suis",
+          "name" : "Schweiz"
+        } ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900002,
+          "level" : 0,
+          "name" : "Bundesämter und -institutionen"
+        }, {
+          "id" : 900244,
+          "level" : 1,
+          "code" : "NKRS",
+          "abbrev" : "NKRS",
+          "name" : "Nationale Krebsregistrierungsstelle"
+        } ],
+        "publisher" : [ ],
+        "tags" : [ ],
+        "dataSource" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900002,
+          "level" : 0,
+          "name" : "Bundesämter und -institutionen"
+        }, {
+          "id" : 900244,
+          "level" : 1,
+          "code" : "NKRS",
+          "abbrev" : "NKRS",
+          "name" : "Nationale Krebsregistrierungsstelle"
+        } ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ ],
+        "periodicity" : [ {
+          "id" : 910000,
+          "level" : 0,
+          "code" : "ANNUAL",
+          "name" : "Jährlich"
+        } ]
+      },
+      "bibliography" : {
+        "period" : "1984-2023"
+      },
+      "language" : "DE",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : false
+    },
+    "shop" : {
+      "orderNr" : "gd-d-14.03.03-Gc3-C18-20",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36772343",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36772343/thumbnail-source",
+      "rel" : "thumbnail-source",
+      "format" : "png",
+      "size" : 2717461
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36772343/thumbnail",
+      "rel" : "thumbnail"
+    }, {
+      "href" : "/de/daten-statistiken-verstehen/erhebungen/ke",
+      "rel" : "related-factsheet-inquiry",
+      "text" : "Nationale Krebsstatistik"
+    }, {
+      "href" : "/bfs/de/home/statistiken/gesundheit.html",
+      "rel" : "related-theme-entrypage",
+      "text" : "Gesundheit"
+    } ]
+  }, {
+    "ids" : {
+      "uuid" : "88caaeab-2781-46d6-a23a-90e38ad2bc8a",
+      "damId" : 36772344,
+      "contentId" : 36772338,
+      "languageCopyId" : 36772329,
+      "gnp" : "2026-0519"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T07:30:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : false,
+      "articleModel" : {
+        "id" : 900037,
+        "level" : 1,
+        "code" : "DIAG_DM01",
+        "name" : "DM01 Diagramm (manuel. Datenanbindung)"
+      },
+      "articleModelGroup" : {
+        "id" : 900034,
+        "level" : 0,
+        "code" : "AMG_DIAGRAM",
+        "name" : "Diagramm"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "Dickdarm- und Enddarmkrebs: Neuerkrankungen und Sterblichkeit nach Perioden"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "STAT_GEN",
+          "name" : "Allgemeine Statistik"
+        } ],
+        "prodima" : [ {
+          "id" : 900210,
+          "level" : 0,
+          "code" : "14",
+          "name" : "Gesundheit"
+        }, {
+          "id" : 900944,
+          "level" : 1,
+          "code" : "14.03",
+          "name" : "Gesundheitszustand"
+        }, {
+          "id" : 900947,
+          "level" : 2,
+          "code" : "14.03.03",
+          "name" : "Krankheiten"
+        }, {
+          "id" : 900950,
+          "level" : 3,
+          "code" : "14.03.03.03",
+          "name" : "Krebs"
+        } ],
+        "inquiry" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Synthesestatistik"
+        }, {
+          "id" : 235,
+          "level" : 1,
+          "code" : "NKS",
+          "abbrev" : "NKS",
+          "name" : "Nationale Krebsstatistik"
+        } ],
+        "spatialdivision" : [ {
+          "id" : 900091,
+          "level" : 0,
+          "code" : "p_suis",
+          "name" : "Schweiz"
+        }, {
+          "id" : 900001,
+          "level" : 1,
+          "code" : "suis",
+          "name" : "Schweiz"
+        } ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900002,
+          "level" : 0,
+          "name" : "Bundesämter und -institutionen"
+        }, {
+          "id" : 900244,
+          "level" : 1,
+          "code" : "NKRS",
+          "abbrev" : "NKRS",
+          "name" : "Nationale Krebsregistrierungsstelle"
+        } ],
+        "publisher" : [ ],
+        "tags" : [ ],
+        "dataSource" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900002,
+          "level" : 0,
+          "name" : "Bundesämter und -institutionen"
+        }, {
+          "id" : 900244,
+          "level" : 1,
+          "code" : "NKRS",
+          "abbrev" : "NKRS",
+          "name" : "Nationale Krebsregistrierungsstelle"
+        } ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ ],
+        "periodicity" : [ {
+          "id" : 910000,
+          "level" : 0,
+          "code" : "ANNUAL",
+          "name" : "Jährlich"
+        } ]
+      },
+      "bibliography" : {
+        "period" : "1984-2023"
+      },
+      "language" : "DE",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : false
+    },
+    "shop" : {
+      "orderNr" : "gd-d-14.03.03-Gc2.2-C18-20",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36772344",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36772344/thumbnail-source",
+      "rel" : "thumbnail-source",
+      "format" : "png",
+      "size" : 2210656
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36772344/thumbnail",
+      "rel" : "thumbnail"
+    }, {
+      "href" : "/de/daten-statistiken-verstehen/erhebungen/ke",
+      "rel" : "related-factsheet-inquiry",
+      "text" : "Nationale Krebsstatistik"
+    }, {
+      "href" : "/bfs/de/home/statistiken/gesundheit.html",
+      "rel" : "related-theme-entrypage",
+      "text" : "Gesundheit"
+    } ]
+  }, {
+    "ids" : {
+      "uuid" : "82facb1e-ff69-4ce4-930f-6500c1c95cf6",
+      "damId" : 36931263,
+      "contentId" : 33106691,
+      "languageCopyId" : 36931243,
+      "gnp" : "2026-0360"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T07:30:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : false,
+      "articleModel" : {
+        "id" : 900030,
+        "level" : 1,
+        "code" : "TABL",
+        "name" : "TM10 Tabelle Datei"
+      },
+      "articleModelGroup" : {
+        "id" : 900029,
+        "level" : 0,
+        "code" : "AMG_TABLE",
+        "name" : "Daten - Tabelle"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "Digitale Kriminalität - Anzahl Straftaten",
+        "super" : "Monitoring der Legislaturplanung"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "STAT_GEN",
+          "name" : "Allgemeine Statistik"
+        }, {
+          "id" : 900025,
+          "level" : 0,
+          "code" : "IND_SYS",
+          "name" : "IndSys"
+        } ],
+        "prodima" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "00",
+          "name" : "Grundlagen und Übersichten"
+        }, {
+          "id" : 901187,
+          "level" : 1,
+          "code" : "00.17",
+          "name" : "Monitoring der Legislaturplanung"
+        } ],
+        "inquiry" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Synthesestatistik"
+        }, {
+          "id" : 328,
+          "level" : 1,
+          "code" : "LEGIND",
+          "name" : "Legislaturindikatoren"
+        } ],
+        "spatialdivision" : [ {
+          "id" : 900091,
+          "level" : 0,
+          "code" : "p_suis",
+          "name" : "Schweiz"
+        }, {
+          "id" : 900001,
+          "level" : 1,
+          "code" : "suis",
+          "name" : "Schweiz"
+        } ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "publisher" : [ ],
+        "tags" : [ ],
+        "dataSource" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ ],
+        "periodicity" : [ {
+          "id" : 910000,
+          "level" : 0,
+          "code" : "ANNUAL",
+          "name" : "Jährlich"
+        } ]
+      },
+      "bibliography" : {
+        "period" : "2020-2025"
+      },
+      "language" : "DE",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : true
+    },
+    "shop" : {
+      "orderNr" : "ind-d-00.17.01.00.09.01",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36931263",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36931263/master",
+      "rel" : "master",
+      "format" : "xlsx",
+      "size" : 7760
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36931263/thumbnail",
+      "rel" : "thumbnail"
+    }, {
+      "href" : "/bfs/de/home/statistiken/querschnittsthemen/monitoring-legislaturplanung.html",
+      "rel" : "related-factsheet-inquiry",
+      "text" : "Legislaturindikatoren"
+    } ]
+  }, {
+    "ids" : {
+      "uuid" : "e486412a-2d5d-407d-b2fd-75bf0e3ef7c5",
+      "damId" : 36924215,
+      "contentId" : 33086958,
+      "languageCopyId" : 36924209,
+      "gnp" : "2026-0360"
+    },
+    "bfs" : {
+      "embargo" : "2026-11-16T07:30:00Z",
+      "lifecycle" : {
+        "id" : 900300,
+        "level" : 0,
+        "code" : "CURRENT",
+        "name" : "Diffundiert/aktuell"
+      },
+      "lifecycleGroup" : "CURRENT",
+      "provisional" : false,
+      "articleModel" : {
+        "id" : 900039,
+        "level" : 1,
+        "code" : "DIAG_DM02",
+        "name" : "DM02 Diagramm (Statisch)"
+      },
+      "articleModelGroup" : {
+        "id" : 900034,
+        "level" : 0,
+        "code" : "AMG_DIAGRAM",
+        "name" : "Diagramm"
+      }
+    },
+    "description" : {
+      "titles" : {
+        "main" : "Digitale Kriminalität - Anzahl Straftaten",
+        "super" : "Monitoring der Legislaturplanung"
+      },
+      "categorization" : {
+        "collection" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "STAT_GEN",
+          "name" : "Allgemeine Statistik"
+        }, {
+          "id" : 900025,
+          "level" : 0,
+          "code" : "IND_SYS",
+          "name" : "IndSys"
+        } ],
+        "prodima" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "code" : "00",
+          "name" : "Grundlagen und Übersichten"
+        }, {
+          "id" : 901187,
+          "level" : 1,
+          "code" : "00.17",
+          "name" : "Monitoring der Legislaturplanung"
+        } ],
+        "inquiry" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Synthesestatistik"
+        }, {
+          "id" : 328,
+          "level" : 1,
+          "code" : "LEGIND",
+          "name" : "Legislaturindikatoren"
+        } ],
+        "spatialdivision" : [ {
+          "id" : 900091,
+          "level" : 0,
+          "code" : "p_suis",
+          "name" : "Schweiz"
+        }, {
+          "id" : 900001,
+          "level" : 1,
+          "code" : "suis",
+          "name" : "Schweiz"
+        } ],
+        "classification" : [ ],
+        "institution" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "publisher" : [ ],
+        "tags" : [ ],
+        "dataSource" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "copyrights" : [ {
+          "id" : 900001,
+          "level" : 0,
+          "name" : "Bundesamt für Statistik"
+        }, {
+          "id" : 900065,
+          "level" : 1,
+          "code" : "BFS",
+          "abbrev" : "BFS",
+          "name" : "Bundesamt für Statistik"
+        } ],
+        "termsOfUse" : [ {
+          "id" : 900004,
+          "level" : 0,
+          "code" : "OPEN-BY",
+          "abbrev" : "Freie Nutzung - Quellenangabe ist Pflicht",
+          "name" : "Open use - Must provide the source"
+        } ],
+        "serie" : [ ],
+        "periodicity" : [ {
+          "id" : 910000,
+          "level" : 0,
+          "code" : "ANNUAL",
+          "name" : "Jährlich"
+        } ]
+      },
+      "bibliography" : {
+        "pages" : 1,
+        "period" : "2020-2025"
+      },
+      "language" : "DE",
+      "highlight" : false,
+      "discontinued" : false,
+      "downloadable" : true
+    },
+    "shop" : {
+      "orderNr" : "gr-d-00.17.01.00.09.01-ind",
+      "stock" : false
+    },
+    "links" : [ {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36924215",
+      "rel" : "self"
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36924215/master",
+      "rel" : "master",
+      "format" : "pdf",
+      "size" : 13436
+    }, {
+      "href" : "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36924215/thumbnail",
+      "rel" : "thumbnail"
+    }, {
+      "href" : "/bfs/de/home/statistiken/querschnittsthemen/monitoring-legislaturplanung.html",
+      "rel" : "related-factsheet-inquiry",
+      "text" : "Legislaturindikatoren"
+    } ]
+  } ],
+  "_embedded" : {
+    "labels" : {
+      "asset.bfs.embargo" : "Veröffentlicht am",
+      "asset.bfs.lastupdated" : "Letzte Aktualisierung",
+      "asset.bfs.model.name" : "Typ",
+      "asset.bfs.originalembargo" : "Ursprüngliches Publikationsdatum",
+      "asset.bfs.provisional" : "Datenstand",
+      "asset.bfs.status" : "Status",
+      "asset.content.format" : "Format",
+      "asset.content.href" : "Anhang",
+      "asset.description.abstractShort" : "Zusammenfassung",
+      "asset.description.bibliography.author" : "Autor(en)",
+      "asset.description.bibliography.copyright" : "Copyright",
+      "asset.description.bibliography.doi" : "Persistenter Link",
+      "asset.description.bibliography.info" : "Bibliographische Angaben",
+      "asset.description.bibliography.pages" : "Seiten",
+      "asset.description.bibliography.period" : "Dargestellter Zeitraum",
+      "asset.description.bibliography.source" : "Quelle(n)",
+      "asset.description.bibliography.termsofuse" : "Nutzungsbedingungen",
+      "asset.description.categorization.classification" : "Nomenklatur(en)",
+      "asset.description.categorization.geography" : "Raumgliederung",
+      "asset.description.categorization.inquiry" : "Erhebung, Statistik",
+      "asset.description.categorization.institution" : "Herausgeber",
+      "asset.description.categorization.keyword" : "Schlagworte",
+      "asset.description.categorization.periodicity" : "Periodizität",
+      "asset.description.categorization.prodima" : "Thema",
+      "asset.description.categorization.publisher" : "Verlag",
+      "asset.description.categorization.serie" : "Reihe",
+      "asset.description.categorization.tags" : "Tags",
+      "asset.description.language" : "Sprache",
+      "asset.descriptions.title.main" : "Titel",
+      "asset.shop.ordernr" : "BFS-Nummer",
+      "asset.shop.price" : "Preis",
+      "link.rel.appendix" : "Zusätzliche Daten",
+      "links.rel.mostrecentissue" : "Aktuellste Ausgabe",
+      "links.rel.otherlanguages" : "Weitere Sprachen",
+      "links.rel.relateddocuments" : "Verwandte Dokumente"
+    }
+  }
+}
