@@ -82,7 +82,7 @@ def centroid(geom):
 
 
 _CACHE = {}
-DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "AU": "australia", "HR": "croatia", "PH": "philippines"}
+DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "AU": "australia", "HR": "croatia", "PH": "philippines", "LV": "latvia", "EE": "estonia"}
 # Brazil: municipal chambers (câmara municipal) and their education committees, in Portuguese.
 RULES = {"BR": (re.compile(r"comiss[ãa]o (permanente )?de educa[çc][ãa]o|educa[çc][ãa]o.*comiss[ãa]o", re.I),
                 re.compile(r"sess[ãa]o|c[âa]mara", re.I),
@@ -192,9 +192,21 @@ RULES["PH"] = (re.compile(r"local school board|\blsb\b|committee on (basic )?edu
                re.compile(r"^(?!.*(kabataan|\bsk\b|youth|barangay)).*((regular|special|inaugural|ordinary|regualr)\s+(session|sesyon)|sangguniang (bayan|panlungsod|panlalawigan)[^|]{0,40}session|\d+(st|nd|rd|th)\s+(regular|special)\s+session|session\s+no\.?\s*\d+|\b(sb|sp)\s+(regular\s+)?session|pulong\s+(karaniwan|regular))", re.I),
                re.compile(r"live session|interview|news|balita|festival|fiesta|pageant|concert|award|tour|launch|podcast|campaign|election", re.I))
 
+# Latvia: the municipal council's sittings (domes sēde) and its education committee (izglītības ... komiteja); Estonia:
+# the council's sessions (volikogu istung) and its education committee (hariduskomisjon). Youth councils, ceremonies,
+# greetings and news aren't counted.
+RULES["LV"] = (re.compile(r"izgl[iī]t[iī]b[^|]{0,80}komitej|komitej[^|]{0,60}izgl[iī]t[iī]b", re.I),
+               re.compile(r"s[eē]d", re.I),
+               re.compile(r"^(?!.*(komitej|jaunie[sš]u|skol[eē]nu|b[eē]rnu)).*(domes\s+(k[aā]rt[eē]j[aā]\s+|[aā]rk[aā]rtas\s+|svin[iī]g[aā]\s+)?s[eē]de|(k[aā]rt[eē]j[aā]|[aā]rk[aā]rtas)\s+s[eē]de|dome[^|]{0,30}s[eē]d)", re.I),
+               re.compile(r"intervij|zi[nņ]as|apsveikum|uzruna|svētk|koncert|v[eē]l[eē]šan|kampa[nņ]", re.I))
+RULES["EE"] = (re.compile(r"haridus[^|]{0,40}komisjon|komisjon[^|]{0,40}haridus", re.I),
+               re.compile(r"volikogu|istung", re.I),
+               re.compile(r"^(?!.*(noorte|noortevolikogu|laste)).*(volikogu[^|]{0,40}istung|istung[^|]{0,40}volikogu|volikogu\s+\d|\d+\.?\s*istung)", re.I),
+               re.compile(r"intervjuu|uudised|tervitus|kontsert|valimis|kandidaa|reklaam", re.I))
+
 # Spain: a committee covering education counts only when at least this many of its sessions are posted; otherwise the
 # council's plenaries do (one stray committee clip shouldn't replace 160 plenaries).
-MIN_EDU = {"ES": 3, "FRA": 3, "EC": 3, "IT": 3, "PL": 3, "PT": 3, "BE": 3}
+MIN_EDU = {"ES": 3, "FRA": 3, "EC": 3, "IT": 3, "PL": 3, "PT": 3, "BE": 3, "LV": 3, "EE": 3}
 
 
 def session_key(cc, t):
@@ -1319,6 +1331,73 @@ def ecuador():
         feats.append({"type": "Feature", "properties": {"id": f"EC-SHARED-{i}", "NAME": f"Zone with no canton: {f['properties']['shapeName']}"},
                       "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
     write("EC", "ecuador", rows, feats)
+
+
+def latvia():
+    """42 state cities and municipalities (novadi; Varakļāni joined Madona in July 2025). Each runs its pre-schools and
+    general schools, and its elected council (dome) decides on them, usually through an education committee; since
+    2022 councils must publish recordings of their sittings. Poverty stand-in: children in households receiving the basic
+    means-tested benefits (guaranteed minimum income, housing benefit) during 2025, per 100 children (PPS040, IRD041). Pupils: grades 1-12 on
+    1 October 2025 at every school in the municipality; public = schools run by the municipality or a ministry."""
+    d = os.path.join(IN, "latvia")
+    lv = json.load(open(os.path.join(d, "lv_data.json"), encoding="utf-8"))
+    geo = {f["properties"]["GISCO_ID"].replace("_", ""): f for f in json.load(open(os.path.join(d, "lau_LV.geojson"), encoding="utf-8"))["features"]}
+    rows, feats = [], []
+    for code, x in sorted(lv["data"].items()):
+        name = x["name"]
+        city = not name.endswith("novads")
+        dens = x["pop"] / x["area"] if x.get("pop") and x.get("area") else 0
+        did = f"LV-{code[2:]}"
+        rate = 100 * x["child_assist"] / x["children"] if x.get("children") else None
+        alts = [name] + ([name.replace("novads", "novada")] if not city else [name + "s"])
+        rows.append({"District": name, "Region": "State city" if city else "Municipality", "Population": round(x["pop"]) if x.get("pop") else "",
+                     "Percentage of Children in Low Income": f"{rate:.2f}%" if rate is not None else "",
+                     "Poverty note": (f"Stand-in: children in households receiving the basic means-tested benefits (guaranteed minimum income, housing benefit) during {x['assist_year']}, per 100 children aged 0–17 "
+                                      f"(start of {x['pop_year']}) (Official Statistics Portal PPS040, IRD041); Latvia publishes no child poverty rate by municipality"),
+                     "Children under 18": x.get("children") or "",
+                     "Enrollment": x.get("pupils", ""), "Enrollment year": f"{lv['pupils_date']} (grades 1–12, all schools in the municipality)" if x.get("pupils") else "",
+                     "Public school enrollment": x.get("public", ""),
+                     "_names": alts,
+                     "School system": "State city or municipality (its own schools); elected council (dome)" + ("; Varakļāni municipality joined it in July 2025" if x.get("merged") else ""),
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": code in geo})
+        parts = [geo[c] for c in [code] + x.get("merged", []) if c in geo]
+        if parts:
+            polys = [p for f in parts for p in (f["geometry"]["coordinates"] if f["geometry"]["type"] == "MultiPolygon" else [f["geometry"]["coordinates"]])]
+            feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": "MultiPolygon" if len(polys) > 1 else "Polygon", "coordinates": rnd(polys if len(polys) > 1 else polys[0])}})
+    write("LV", "latvia", rows, feats)
+
+
+def estonia():
+    """78 municipalities: 63 rural municipalities (vald) and 15 cities (linn); Toila joined Kohtla-Järve in 2025. Each runs
+    its basic schools (and some upper-secondary ones), and its elected council (volikogu) decides on them. Poverty stand-in:
+    subsistence-benefit applications granted in 2025 per 1,000 residents, divided by 12 (an average month) and 10, so
+    roughly the share of residents' households helped in a month (Statistics Estonia SK410). Pupils aren't published by
+    municipality in open data, so enrollment is estimated (children aged 7–18 living there; estimate_enrollment.py)."""
+    d = os.path.join(IN, "estonia")
+    ee = json.load(open(os.path.join(d, "ee_data.json"), encoding="utf-8"))
+    geo = {str(int(f["properties"]["GISCO_ID"][3:])): f for f in json.load(open(os.path.join(d, "lau_EE.geojson"), encoding="utf-8"))["features"]}
+    rows, feats = [], []
+    for code, x in sorted(ee["data"].items(), key=lambda kv: int(kv[0])):
+        name = x["name"]
+        dens = x["pop"] / x["area"] if x.get("pop") and x.get("area") else 0
+        did = f"EE-{int(code):04d}"
+        per1000 = x.get("subsistence_per_1000")
+        base = re.sub(r"\s+(vald|linn)$", "", name)
+        alts = [name] + ([base + " valla", base + " vallavolikogu"] if name.endswith("vald") else [base + " linna", base + " linnavolikogu"] if name.endswith("linn") else [name])
+        rows.append({"District": name, "Region": x.get("county", "").replace(" county", " County"), "Population": round(x["pop"]) if x.get("pop") else "",
+                     "Poverty rate (all ages)": f"{per1000 / 120:.2f}%" if per1000 is not None else "",
+                     "Poverty note": (f"Stand-in: subsistence-benefit applications granted in {x['subsistence_year']}, {per1000:g} per 1,000 residents, shown per 100 residents in an "
+                                      f"average month (divided by 12); Estonia's minimum-income benefit, paid monthly by the municipality (Statistics Estonia SK410). "
+                                      f"Estonia publishes no poverty rate by municipality" if per1000 is not None else ""),
+                     "Children under 18": x.get("children") or "",
+                     "_names": alts,
+                     "School system": "City or rural municipality (its own schools); elected council (volikogu)" + ("; Toila rural municipality joined it in 2025" if x.get("merged") else ""),
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": code in geo})
+        parts = [geo[c] for c in [code] + x.get("merged", []) if c in geo]
+        if parts:
+            polys = [p for f in parts for p in (f["geometry"]["coordinates"] if f["geometry"]["type"] == "MultiPolygon" else [f["geometry"]["coordinates"]])]
+            feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": "MultiPolygon" if len(polys) > 1 else "Polygon", "coordinates": rnd(polys if len(polys) > 1 else polys[0])}})
+    write("EE", "estonia", rows, feats)
 
 
 if __name__ == "__main__":

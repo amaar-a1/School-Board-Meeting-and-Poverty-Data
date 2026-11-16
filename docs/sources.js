@@ -398,6 +398,30 @@ window.SOURCES = [
     note: "Built by data-prep/prep_croatia.py and data-prep/build_latam.py. Places are matched to the poverty map by name (shared names by the map's qualifier or population) and placed in counties by their borders."
   },
   {
+    only: "Latvia",
+    group: "Latvia: state cities and municipalities",
+    items: [
+      { title: "Poverty stand-in: Official Statistics Portal, PPS040, municipal social assistance recipients by type of assistance: children receiving the basic benefits (guaranteed minimum income and housing benefit), 2025", url: "https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__VES__PP__PPS/PPS040/" },
+      { title: "Children 0–17 and population: Official Statistics Portal, IRD041, population by age at the start of 2026", url: "https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD041/" },
+      { title: "Pupils and public-school share: Ministry of Education and Science, “Izglītojamo skaits sadalījumā pa vispārējās izglītības programmām”, 1 October 2025 (pupils in grades 1–12 by school, with who runs it), data.gov.lv", url: "https://data.gov.lv/dati/lv/dataset/3ef3dea2-20e6-47ae-addc-2f55d11f7be2" },
+      { title: "Borders: Eurostat GISCO Local Administrative Units (LAU) 2024; Varakļāni added to Madona (merged 1 July 2025)", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
+      { title: "Meetings: each council's YouTube channel (in the “Meetings source” column), searched November 2026", url: "https://www.youtube.com/" },
+      { title: "Council sittings must be recorded and published: Local Government Law (Pašvaldību likums), Latvijas Vēstnesis", url: "https://likumi.lv/ta/id/336956-pasvaldibu-likums" }
+    ],
+    note: "Built by data-prep/prep_baltic.py and data-prep/build_latam.py (latvia). Children in households on the basic benefits are counted over the whole of 2025, so the figure is higher than a monthly count would be."
+  },
+  {
+    only: "Estonia",
+    group: "Estonia: municipalities",
+    items: [
+      { title: "Poverty stand-in: Statistics Estonia, SK410, subsistence benefits by administrative unit: applications granted per 1,000 inhabitants, 2025 (shown per 100 residents in an average month)", url: "https://andmed.stat.ee/en/stat/sotsiaalelu__sotsiaalne-kaitse/SK410" },
+      { title: "Population, children 0–17 and the 7–18 ages for the enrollment estimate: Statistics Estonia, RV0240, population by sex, age and place of residence, 1 January 2026", url: "https://andmed.stat.ee/en/stat/rahvastik__rahvastikunaitajad-ja-koosseis__rahvaarv-ja-rahvastiku-koosseis/RV0240" },
+      { title: "Borders: Eurostat GISCO Local Administrative Units (LAU) 2024; Toila added to Kohtla-Järve (merged in 2025)", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
+      { title: "Meetings: each council's YouTube channel (in the “Meetings source” column), searched November 2026", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_baltic.py and data-prep/build_latam.py (estonia). Kohtla-Järve's 2025 benefit figure adds Toila's applications to its own, over the merged population."
+  },
+  {
     only: "Philippines",
     group: "Philippines: cities and municipalities, poverty",
     items: [

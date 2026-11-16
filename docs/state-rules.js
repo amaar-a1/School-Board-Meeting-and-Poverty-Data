@@ -330,6 +330,28 @@ window.STATE_RULES = {
     ],
     note: "Check the current law and the council's own rules before relying on this."
   },
+  latvia: {
+    title: "Rules for municipal council sittings",
+    checked: "November 16, 2026",
+    laws: [
+      { state: "Latvia", covers: "Municipal councils (dome)", threshold: "",
+        rule: "Under the Local Government Law (in force since 2023), council sittings are public, and the council must publish a recording of each open sitting on its website. Committees meet in public too, unless the agenda is confidential." },
+      { state: "Latvia", covers: "Schools", threshold: "",
+        rule: "Municipalities found and run pre-schools and general schools (the Education Law); the Ministry of Education and Science sets the curriculum and pays teachers through a state grant." }
+    ],
+    note: "Check the current law and the council's own rules before relying on this."
+  },
+  estonia: {
+    title: "Rules for municipal council sessions",
+    checked: "November 16, 2026",
+    laws: [
+      { state: "Estonia", covers: "Municipal councils (volikogu)", threshold: "",
+        rule: "Under the Local Government Organisation Act, council sessions are public unless the council decides otherwise for a confidential item; many councils stream or record them, though the law doesn't require it." },
+      { state: "Estonia", covers: "Schools", threshold: "",
+        rule: "Municipalities run basic schools (and some upper-secondary schools) under the Basic Schools and Upper Secondary Schools Act; the state runs most upper-secondary schools and sets the curriculum." }
+    ],
+    note: "Check the current law and the council's own rules before relying on this."
+  },
   philippines: {
     title: "Rules for council sessions and local school boards",
     checked: "November 8, 2026",
