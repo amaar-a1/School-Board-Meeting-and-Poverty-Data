@@ -70,25 +70,38 @@ def school_la(la, county):
 
 
 def enrolment():
-    """Pupils in state-aided primary (mainstream and special) and post-primary schools, 2024/25, by ETB area."""
+    """Pupils in state-aided primary (mainstream and special) and post-primary schools, 2024/25, by ETB area, and how
+    many are at schools run by a public body. Ireland's schools are state-funded but mostly run by a patron: here a school
+    is public when its patron is an ETB or the Minister for Education (Community National Schools, ETB special schools),
+    the Health Service Executive (special schools), or, after primary, when it is an ETB (vocational), community or
+    comprehensive school, all set up by the state. Church and other patrons' national schools and voluntary secondary
+    schools (fee-paying or not) count as privately run."""
     import openpyxl
-    out = {}
-    def add(la, county, n):
+    out, pub = {}, {}
+    def add(la, county, n, public):
         a = school_la(la, county)
         etb = next((e for e, las in ETB.items() if a in las), None)
         assert etb, (la, county, a)
         out[etb] = out.get(etb, 0) + int(n or 0)
+        pub[etb] = pub.get(etb, 0) + (int(n or 0) if public else 0)
+    public_patron = lambda p: bool(re.search(r"\bETB\b|Education and Training Board|^Minister for Education|^Health Service Executive", str(p or "").strip()))
     wb = openpyxl.load_workbook(os.path.join(IN, "ie_primary_schools_2024_25.xlsx"), read_only=True, data_only=True)
+    rows = wb["Mainstream Schools"].iter_rows(values_only=True); next(rows); hdr = list(next(rows))
+    patron = {r[hdr.index("Roll Number")]: r[hdr.index("Patron")] for r in rows if r and r[1]}
     for sheet in ("Mainstream Schools by Standard", "Special Schools"):
         rows = wb[sheet].iter_rows(values_only=True); next(rows); hdr = list(next(rows))
         for r in rows:
-            if r and r[1]: add(r[hdr.index("Local Authority Description")], r[hdr.index("County Description")], r[hdr.index("Enrolment per Return")])
+            if r and r[1]:
+                pt = r[hdr.index("Patron")] if "Patron" in hdr else patron[r[hdr.index("Roll Number")]]
+                add(r[hdr.index("Local Authority Description")], r[hdr.index("County Description")], r[hdr.index("Enrolment per Return")], public_patron(pt))
     wb = openpyxl.load_workbook(os.path.join(IN, "ie_postprimary_schools_2024_25.xlsx"), read_only=True, data_only=True)
+    rows = wb["School List"].iter_rows(values_only=True); hdr = list(next(rows))
+    kind = {r[hdr.index("Roll Number")]: r[hdr.index("Post Primary School Type")] for r in rows if r and r[1]}
     rows = wb["Programme & Year"].iter_rows(values_only=True); next(rows); hdr = list(next(rows))
     tot = next(i for i, h in enumerate(hdr) if str(h).startswith("Total"))
     for r in rows:
-        if r and r[1]: add(r[hdr.index("Local Authority")], r[hdr.index("County")], r[tot])
-    return out
+        if r and r[1]: add(r[hdr.index("Local Authority")], r[hdr.index("County")], r[tot], kind[r[hdr.index("Roll Number")]] in ("Vocational", "Community", "Comprehensive"))
+    return out, pub
 
 
 def minutes_counts():
@@ -153,7 +166,7 @@ def main():
         p["_kids"] = kids
     rows, feats = [], []
     ar = arop()
-    enr = enrolment()
+    enr, enr_pub = enrolment()
     mins = minutes_counts()
     for i, (etb, las) in enumerate(ETB.items()):
         reg = {g for g, members in NUTS2.items() for l in las if l in members}
@@ -169,7 +182,7 @@ def main():
                      "Poverty rate (region, all ages)": f"{ar[reg][0]:.2f}%",
                      "Poverty note": f"Overall at-risk-of-poverty rate of the {REGION_NAME[reg]} region, {ar[reg][1]} (Eurostat); no local or child rate is published",
                      "Unemployment rate (Census 2022)": f"{100 * un / (un + work):.2f}%",
-                     "Enrollment": enr[etb], "Enrollment year": "2024/25",
+                     "Enrollment": enr[etb], "Enrollment year": "2024/25", "Public school enrollment": enr_pub[etb],
                      "Enrollment note": "All pupils in state-aided primary, special and post-primary schools in the ETB's area (Department of Education), not only the ETB's own schools",
                      "District ID": eid})
         if etb in mins:
