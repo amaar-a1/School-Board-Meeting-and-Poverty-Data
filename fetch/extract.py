@@ -1,5 +1,5 @@
 import os, json, urllib.request, urllib.parse, re, csv, io
-OUT = "fetch/out/disc4"; os.makedirs(OUT, exist_ok=True)
+OUT = "fetch/out/disc5"; os.makedirs(OUT, exist_ok=True)
 log = open(f"{OUT}/log.txt", "w")
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
 def get(name, url, keep=50000000, show=800):
@@ -16,7 +16,7 @@ def ckan(tag, base, q, n=8):
             log.write(f"{tag} {p['title']}: " + " ; ".join(f"{r.get('name')} {r.get('url')}" for r in p["resources"][:6]) + "\n")
     except Exception as e: log.write(f"{tag} ERR {e}\n")
 # Catalonia: sums by year, municipality, naturalesa, studies
-soql = ("$select=" + urllib.parse.quote("curs,codi_municipi_5,nom_municipi,nom_naturalesa,nom_estudis,sum(matr_cules_total) as n")
+soql = ("$select=" + urllib.parse.quote("curs,codi_municipi_5,nom_municipi,nom_naturalesa,nom_estudis,sum(matr_cules_total) as n") +
         "&$where=" + urllib.parse.quote("curs in('2024/2025','2025/2026')") +
         "&$group=" + urllib.parse.quote("curs,codi_municipi_5,nom_municipi,nom_naturalesa,nom_estudis") + "&$limit=50000")
 get("cat_agg.json", "https://analisi.transparenciacatalunya.cat/resource/xvme-26kg.json?" + soql, show=600)
