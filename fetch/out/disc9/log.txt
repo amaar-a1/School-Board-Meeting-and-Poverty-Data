@@ -1,0 +1,76 @@
+px-x-1502010000_101: Obligatorische Schule nach Bildungsstufe, Geschlecht, Staatsangehörigkeit (Kategorie), Erstsprache und Jahr | Bildungsstufe[8] | Geschlecht[3] | Staatsangehörigkeit (Kategorie)[4] | Erstsprache[4] | Jahr[26]
+px-x-1502030000_111: Höhere Berufsbildung: Lernende nach Bildungstyp, Schulkanton, Geschlecht, Staatsangehörigkeit (Kategorie) und Jahr | Bildungstyp[7] | Schulkanton[24] | Geschlecht[3] | Staatsangehörigkeit (Kategorie)[4] | Jahr[26]
+px-x-1502010100_104: Lernende der obligatorischen Schule nach Unterrichtsart, Geschlecht, Staatsangehörigkeit (Kategorie), Charakter der Schule, Lehrplananpassungen und Jahr | Unterrichtsart[6] | Geschlecht[3] | Staatsangehörigkeit (Kategorie)[4] | Charakter der Schule[3] | Lehrplananpassungen[5] | Jahr[8]
+px-x-1502010100_101: Lernende der obligatorischen Schule nach Schulkanton, Unterrichtsart, Sonderpädagogische Massnahmen und Jahr | Schulkanton[28] | Unterrichtsart[4] | Sonderpädagogische Massnahmen[4] | Jahr[8]
+px-x-1502030000_112: Höhere Berufsbildung: Lernende nach Ausbildungsfeld, Bildungstyp, Geschlecht, Staatsangehörigkeit (Kategorie) und Jahr | Ausbildungsfeld[62] | Bildungstyp[7] | Geschlecht[3] | Staatsangehörigkeit (Kategorie)[4] | Jahr[26]
+px-x-1502020000_106: Sekundarstufe II - Berufsmaturität (BM2): Lernende nach Richtung, Geschlecht, Staatsangehörigkeit (Kategorie) und Jahr | Richtung[15] | Geschlecht[3] | Staatsangehörigkeit (Kategorie)[4] | Jahr[26]
+px-x-1502000000_101: Lernende nach Bildungsstufe, Schulkanton, Geschlecht, Staatsangehörigkeit (Kategorie) und Jahr | Bildungsstufe[5] | Schulkanton[27] | Geschlecht[3] | Staatsangehörigkeit (Kategorie)[4] | Jahr[26]
+px-x-1502010100_103: Lernende der obligatorischen Schule nach Schulkanton, Unterrichtsart, Lehrplananpassungen und Jahr | Schulkanton[28] | Unterrichtsart[4] | Lehrplananpassungen[5] | Jahr[8]
+px-x-1502020100_104: Sekundarstufe II - berufliche Grundbildung: Lernende nach Bildungstyp, Ausbildungsfeld, Geschlecht, Staatsangehörigkeit (Kategorie) und Jahr | Bildungstyp[6] | Ausbildungsfeld[48] | Geschlecht[3] | Staatsangehörigkeit (Kategorie)[4] | Jahr[26]
+px-x-1502010100_102: Lernende der obligatorischen Schule nach Unterrichtsart, Geschlecht, Staatsangehörigkeit (Kategorie), Charakter der Schule, Sonderpädagogische Massnahmen und Jahr | Unterrichtsart[6] | Geschlecht[3] | Staatsangehörigkeit (Kategorie)[4] | Charakter der Schule[3] | Sonderpädagogische Massnahmen[4] | Jahr[8]
+px-x-1502020200_105: Sekundarstufe II - allgemeinbildende Ausbildungen: Lernende nach Bildungstyp und Richtung, Geschlecht, Staatsangehörigkeit (Kategorie) und Jahr | Bildungstyp und Richtung[54] | Geschlecht[3] | Staatsangehörigkeit (Kategorie)[4] | Jahr[26]
+px-x-1502020000_101: Sekundarstufe II: Lernende nach Bildungsstufe und Bildungstyp, Schulkanton, Geschlecht, Staatsangehörigkeit (Kategorie) und Jahr | Bildungsstufe und Bildungstyp[24] | Schulkanton[27] | Geschlecht[3] | Staatsangehörigkeit (Kategorie)[4] | Jahr[26]
+px-x-1502040400_138: Studierende an den Fachhochschulen und pädagogischen Hochschulen nach Jahr, Fachbereich, Bildungsherkunft und Hochschule | Jahr[29] | Fachbereich[13] | Bildungsherkunft[2] | Hochschule[19]
+px-x-1502040100_105: Studierende an den universitären Hochschulen nach Jahr, Fachrichtung, Studienstufe und Hochschule | Jahr[46] | Fachrichtung[77] | Studienstufe[6] | Hochschule[17]
+px-x-1502040100_131: Studierende an den universitären Hochschulen nach Jahr, ISCED Fach, Geschlecht und Studienstufe | Jahr[46] | ISCED Fach[42] | Geschlecht[2] | Studienstufe[5]
+px-x-1502040200_171: Studierende an den Fachhochschulen (ohne PH) nach Jahr, Fachbereich, Studienstufe, Staatsangehörigkeit (Kategorie) und Hochschule | Jahr[29] | Fachbereich[13] | Studienstufe[4] | Staatsangehörigkeit (Kategorie)[2] | Hochschule[19]
+px-x-1502040100_126: Eintritte auf Stufen Lizenziat/Diplom und Bachelor der universitären Hochschulen nach Jahr, Zulassungsausweis und Fachbereichsgruppe | Jahr[46] | Zulassungsausweis[4] | Fachbereichsgruppe[7]
+px-x-1502040100_125: Eintritte auf Stufen Lizenziat/Diplom und Bachelor der universitären Hochschulen nach Jahr, Fachbereichsgruppe und Altersklasse | Jahr[46] | Fachbereichsgruppe[7] | Altersklasse[6]
+px-x-1502040200_173: Studierende an den Fachhochschulen (ohne PH) nach Jahr, Fachbereich, Bildungsherkunft und Hochschule | Jahr[29] | Fachbereich[12] | Bildungsherkunft[2] | Hochschule[19]
+px-x-1502040100_122: Eintritte auf Stufen Lizenziat/Diplom und Bachelor der universitären Hochschulen nach Jahr, Fachbereich, Staatsangehörigkeit (Kategorie) und Hochschule | Jahr[36] | Fachbereich[20] | Staatsangehörigkeit (Kategorie)[2] | Hochschule[15]
+px-x-1502040400_136: Studierende an den Fachhochschulen und pädagogischen Hochschulen nach Jahr, Fachbereich, Studienstufe, Geschlecht und Hochschule | Jahr[29] | Fachbereich[14] | Studienstufe[4] | Geschlecht[2] | Hochschule[19]
+px-x-1502040200_184: Eintritte auf Stufen Diplom und Bachelor der Fachhochschulen (ohne PH) nach Jahr, Fachrichtung, Staatsangehörigkeit (Kategorie) und Hochschule | Jahr[29] | Fachrichtung[90] | Staatsangehörigkeit (Kategorie)[2] | Hochschule[19]
+px-x-1502040400_155: Eintritte auf Stufen Diplom und Bachelor der Fachhochschulen und pädagogischen Hochschulen nach Jahr, Fachbereich und Altersklasse | Jahr[29] | Fachbereich[13] | Altersklasse[6]
+px-x-1502040100_107: Studierende an den universitären Hochschulen nach Jahr, Fachbereich, Studienstufe, Staatsangehörigkeit (Kategorie) und Hochschule | Jahr[36] | Fachbereich[20] | Studienstufe[6] | Staatsangehörigkeit (Kategorie)[2] | Hochschule[17]
+px-x-1502040300_191: Studierende an den pädagogischen Hochschulen (ohne FH) nach Jahr, Fachrichtung, Geschlecht und Hochschule | Jahr[25] | Fachrichtung[11] | Geschlecht[2] | Hochschule[29]
+px-x-1502040400_162: Studierende an den Fachhochschulen und pädagogischen Hochschulen nach Jahr, ISCED Fach, Staatsangehörigkeit (Kategorie) und Studienstufe | Jahr[29] | ISCED Fach[42] | Staatsangehörigkeit (Kategorie)[2] | Studienstufe[4]
+px-x-1502040200_183: Eintritte auf Stufen Diplom und Bachelor der Fachhochschulen (ohne PH) nach Jahr, Fachrichtung, Geschlecht und Hochschule | Jahr[29] | Fachrichtung[90] | Geschlecht[2] | Hochschule[19]
+px-x-1502040400_140: Studierende an den Fachhochschulen und pädagogischen Hochschulen nach Jahr, Wohnkanton vor Studienbeginn und Hochschule | Jahr[29] | Wohnkanton vor Studienbeginn[28] | Hochschule[19]
+px-x-1502040100_110: Studierende an den universitären Hochschulen nach Jahr, Fachbereichsgruppe und Altersklasse | Jahr[46] | Fachbereichsgruppe[7] | Altersklasse[8]
+px-x-1502040200_181: Eintritte auf Stufen Diplom und Bachelor der Fachhochschulen (ohne PH) nach Jahr, Fachbereich, Geschlecht und Hochschule | Jahr[29] | Fachbereich[12] | Geschlecht[2] | Hochschule[19]
+px-x-1502040200_185: Eintritte auf Stufen Diplom und Bachelor der Fachhochschulen (ohne PH) nach Jahr, Fachbereich und Altersklasse | Jahr[29] | Fachbereich[12] | Altersklasse[6]
+px-x-1502040400_133: Studierende an den Fachhochschulen und pädagogischen Hochschulen nach Jahr, Fachrichtung, Geschlecht und Hochschule | Jahr[29] | Fachrichtung[112] | Geschlecht[2] | Hochschule[19]
+px-x-1502040100_109: Studierende an den universitären Hochschulen nach Jahr, Wohnkanton vor Studienbeginn und Hochschule | Jahr[46] | Wohnkanton vor Studienbeginn[28] | Hochschule[17]
+px-x-1502040100_106: Studierende an den universitären Hochschulen nach Jahr, Fachbereich, Studienstufe, Geschlecht und Hochschule | Jahr[46] | Fachbereich[20] | Studienstufe[6] | Geschlecht[2] | Hochschule[17]
+px-x-1502040200_166: Studierende an den Fachhochschulen (ohne PH) nach Jahr, Fachrichtung, Geschlecht und Hochschule | Jahr[29] | Fachrichtung[101] | Geschlecht[2] | Hochschule[19]
+px-x-1502040400_154: Eintritte auf Stufen Diplom und Bachelor der Fachhochschulen und pädagogischen Hochschulen nach Jahr, Fachrichtung, Staatsangehörigkeit (Kategorie) und Hochschule nach Jahr, Fachrichtung, Staatsangehörigkeit (Kategorie) und Hochschule | Jahr[29] | Fachrichtung[100] | Staatsangehörigkeit (Kategorie)[2] | Hochschule[19]
+px-x-1502040100_108: ERR HTTP Error 429: 
+px-x-1502040400_135: ERR HTTP Error 429: 
+px-x-1502040300_194: ERR HTTP Error 429: 
+px-x-1502040400_152: ERR HTTP Error 429: 
+px-x-1502040400_161: ERR HTTP Error 429: 
+px-x-1502040100_103: ERR HTTP Error 429: 
+px-x-1502040200_169: ERR HTTP Error 429: 
+px-x-1502040200_176: ERR HTTP Error 429: 
+px-x-1502040200_182: ERR HTTP Error 429: 
+px-x-1502040300_202: ERR HTTP Error 429: 
+px-x-1502040100_121: ERR HTTP Error 429: 
+px-x-1502040300_193: ERR HTTP Error 429: 
+px-x-1502040400_134: ERR HTTP Error 429: 
+px-x-1502040100_123: ERR HTTP Error 429: 
+px-x-1502040200_175: ERR HTTP Error 429: 
+px-x-1502040300_195: ERR HTTP Error 429: 
+px-x-1502040400_151: ERR HTTP Error 429: 
+px-x-1502040400_141: ERR HTTP Error 429: 
+px-x-1502040200_186: ERR HTTP Error 429: 
+px-x-1502040300_203: ERR HTTP Error 429: 
+px-x-1502040400_137: ERR HTTP Error 429: 
+px-x-1502040400_153: ERR HTTP Error 429: 
+px-x-1502040300_192: ERR HTTP Error 429: 
+px-x-1502040200_168: ERR HTTP Error 429: 
+px-x-1502040100_132: ERR HTTP Error 429: 
+px-x-1502040300_201: ERR HTTP Error 429: 
+px-x-1502040100_104: ERR HTTP Error 429: 
+px-x-1502040100_124: ERR HTTP Error 429: 
+px-x-1502040200_170: ERR HTTP Error 429: 
+px-x-1502020100_202: ERR HTTP Error 429: 
+px-x-1502020100_203: ERR HTTP Error 429: 
+px-x-1502020100_101: ERR HTTP Error 429: 
+px-x-1502020100_301: ERR HTTP Error 429: 
+px-x-1502020100_302: ERR HTTP Error 429: 
+px-x-1502020100_102: ERR HTTP Error 429: 
+px-x-1502020100_304: Prüfungskandidat/innen nach Beruf, Ausbildungstyp, Geschlecht und Jahr | Beruf[567] | Ausbildungstyp[4] | Geschlecht[3] | Jahr[21]
+px-x-1502020100_103: ERR HTTP Error 429: 
+px-x-1502020100_201: ERR HTTP Error 429: 
+px-x-1502020100_305: ERR HTTP Error 429: 
+px-x-1502020100_303: Abschlüsse nach Ausbildungsfeld, Lehrbetriebskanton, Ausbildungstyp, Ausbildungsform, Geschlecht und Jahr | Ausbildungsfeld[42] | Lehrbetriebskanton[27] | Ausbildungstyp[4] | Ausbildungsform[4] | Geschlecht[3] | Jahr[21]
