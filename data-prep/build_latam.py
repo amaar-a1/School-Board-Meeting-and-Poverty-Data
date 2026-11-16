@@ -1125,6 +1125,13 @@ def belgium():
     be = json.load(open(os.path.join(d, "be_data.json"), encoding="utf-8"))
     ris = json.load(open(os.path.join(d, "be_ris_2025.json"), encoding="utf-8"))
     geo = {f["properties"]["refnis"]: f for f in json.load(open(os.path.join(d, "be_municipalities_2025.geojson"), encoding="utf-8"))["features"]}
+    # Public-school pupils, Flanders: nursery and primary pupils at schools run by a municipality, a province, the Flemish
+    # community (GO!) or the Flemish community commission in Brussels (VGC); "free" schools (vrij, mostly Catholic) are
+    # publicly funded but privately run, so they count as private (vl_pupils_by_body_2425.json, same file as the counts).
+    # Brussels and Wallonia have none: no split by network was found for French-speaking schools.
+    vpub = {}
+    for v in json.load(open(os.path.join(d, "vl_pupils_by_body_2425.json"), encoding="utf-8"))["rows"]:
+        if v["body"] in ("Gemeente", "Gemeenschapsonderwijs", "Provincie", "VGC"): vpub[v["nis"]] = vpub.get(v["nis"], 0) + v["n"]
     rows, feats = [], []
     for code, x in sorted(be.items()):
         f = geo.get(code); p = f["properties"] if f else {}
@@ -1144,6 +1151,7 @@ def belgium():
                      "Mean income (€ per tax return)": x.get("income_per_return") or "",
                      "Enrollment": (x.get("nursery", 0) + x.get("primary", 0)) if "primary" in x else "",
                      "Enrollment year": f"{x['pupils_year']} (nursery and primary schools, all networks)" if "primary" in x else "",
+                     "Public school enrollment": vpub.get(code, 0) if x["region_nl"] == "Vlaams Gewest" and "primary" in x else "",
                      "School system": "Municipality (its own primary schools), alongside the community's and the free schools",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})

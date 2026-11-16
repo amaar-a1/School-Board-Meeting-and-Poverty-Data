@@ -1,0 +1,10313 @@
+{
+"source": "Flemish education department, Dataloep: inschrijvingen leerplicht instellingen 2024-2025 (1 February 2025), https://opendata.dataplatform-onderwijs.vlaanderen.be/dataloep/inschrijvingen-leerplicht-instellingen-dataset-2024-2025-1feb.csv ; aantal_inschrijvingen summed by vestiging_fusiegemeente_nis, soort_inrichtende_macht and hoofdstructuur_inschrijving (nursery and primary, ordinary and special)",
+"rows": [
+{
+"nis": "11001",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 24
+},
+{
+"nis": "11001",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 147
+},
+{
+"nis": "11001",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 255
+},
+{
+"nis": "11001",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 77
+},
+{
+"nis": "11001",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 513
+},
+{
+"nis": "11001",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 299
+},
+{
+"nis": "11002",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 3
+},
+{
+"nis": "11002",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 15
+},
+{
+"nis": "11002",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 2616
+},
+{
+"nis": "11002",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 4425
+},
+{
+"nis": "11002",
+"body": "Gemeente",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 103
+},
+{
+"nis": "11002",
+"body": "Gemeente",
+"level": "Buitengewoon lager onderwijs",
+"n": 1022
+},
+{
+"nis": "11002",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 9047
+},
+{
+"nis": "11002",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 14011
+},
+{
+"nis": "11002",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 147
+},
+{
+"nis": "11002",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 1265
+},
+{
+"nis": "11002",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 12409
+},
+{
+"nis": "11002",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 21063
+},
+{
+"nis": "11004",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 160
+},
+{
+"nis": "11004",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 256
+},
+{
+"nis": "11004",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 315
+},
+{
+"nis": "11004",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 520
+},
+{
+"nis": "11005",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 381
+},
+{
+"nis": "11005",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 664
+},
+{
+"nis": "11005",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 321
+},
+{
+"nis": "11005",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 542
+},
+{
+"nis": "11008",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 150
+},
+{
+"nis": "11008",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 238
+},
+{
+"nis": "11008",
+"body": "Gemeente",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 10
+},
+{
+"nis": "11008",
+"body": "Gemeente",
+"level": "Buitengewoon lager onderwijs",
+"n": 38
+},
+{
+"nis": "11008",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 554
+},
+{
+"nis": "11008",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 916
+},
+{
+"nis": "11008",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 18
+},
+{
+"nis": "11008",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 219
+},
+{
+"nis": "11008",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 933
+},
+{
+"nis": "11008",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1939
+},
+{
+"nis": "11009",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 298
+},
+{
+"nis": "11009",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 430
+},
+{
+"nis": "11009",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 177
+},
+{
+"nis": "11009",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 319
+},
+{
+"nis": "11009",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 45
+},
+{
+"nis": "11009",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 298
+},
+{
+"nis": "11009",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 489
+},
+{
+"nis": "11009",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 856
+},
+{
+"nis": "11013",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 247
+},
+{
+"nis": "11013",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 386
+},
+{
+"nis": "11013",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 166
+},
+{
+"nis": "11013",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 276
+},
+{
+"nis": "11013",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 558
+},
+{
+"nis": "11013",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1101
+},
+{
+"nis": "11016",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 47
+},
+{
+"nis": "11016",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 74
+},
+{
+"nis": "11016",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 149
+},
+{
+"nis": "11016",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 196
+},
+{
+"nis": "11016",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 500
+},
+{
+"nis": "11016",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1016
+},
+{
+"nis": "11018",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 208
+},
+{
+"nis": "11018",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 424
+},
+{
+"nis": "11018",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 224
+},
+{
+"nis": "11018",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 380
+},
+{
+"nis": "11021",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 109
+},
+{
+"nis": "11021",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 191
+},
+{
+"nis": "11021",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 122
+},
+{
+"nis": "11021",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 226
+},
+{
+"nis": "11021",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 101
+},
+{
+"nis": "11021",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 246
+},
+{
+"nis": "11021",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 469
+},
+{
+"nis": "11022",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 28
+},
+{
+"nis": "11022",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 304
+},
+{
+"nis": "11022",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 111
+},
+{
+"nis": "11022",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 169
+},
+{
+"nis": "11022",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 235
+},
+{
+"nis": "11022",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 371
+},
+{
+"nis": "11022",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 505
+},
+{
+"nis": "11022",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 885
+},
+{
+"nis": "11023",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 132
+},
+{
+"nis": "11023",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 241
+},
+{
+"nis": "11023",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 190
+},
+{
+"nis": "11023",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 685
+},
+{
+"nis": "11023",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 994
+},
+{
+"nis": "11024",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 134
+},
+{
+"nis": "11024",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 260
+},
+{
+"nis": "11024",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 62
+},
+{
+"nis": "11024",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 150
+},
+{
+"nis": "11024",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 569
+},
+{
+"nis": "11024",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 984
+},
+{
+"nis": "11025",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 172
+},
+{
+"nis": "11025",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 326
+},
+{
+"nis": "11025",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 166
+},
+{
+"nis": "11025",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 253
+},
+{
+"nis": "11029",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 163
+},
+{
+"nis": "11029",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 248
+},
+{
+"nis": "11029",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 326
+},
+{
+"nis": "11029",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 505
+},
+{
+"nis": "11029",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 85
+},
+{
+"nis": "11029",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 566
+},
+{
+"nis": "11029",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 652
+},
+{
+"nis": "11030",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 19
+},
+{
+"nis": "11030",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 112
+},
+{
+"nis": "11030",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 212
+},
+{
+"nis": "11030",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 391
+},
+{
+"nis": "11030",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 176
+},
+{
+"nis": "11030",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 298
+},
+{
+"nis": "11035",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 219
+},
+{
+"nis": "11035",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 321
+},
+{
+"nis": "11035",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 438
+},
+{
+"nis": "11035",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 737
+},
+{
+"nis": "11037",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 26
+},
+{
+"nis": "11037",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 348
+},
+{
+"nis": "11037",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 162
+},
+{
+"nis": "11037",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 393
+},
+{
+"nis": "11037",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 477
+},
+{
+"nis": "11037",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 802
+},
+{
+"nis": "11038",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 131
+},
+{
+"nis": "11038",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 260
+},
+{
+"nis": "11038",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 248
+},
+{
+"nis": "11038",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 424
+},
+{
+"nis": "11039",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 30
+},
+{
+"nis": "11039",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 216
+},
+{
+"nis": "11039",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 75
+},
+{
+"nis": "11039",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 132
+},
+{
+"nis": "11039",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 73
+},
+{
+"nis": "11039",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 127
+},
+{
+"nis": "11039",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 16
+},
+{
+"nis": "11039",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 116
+},
+{
+"nis": "11039",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 555
+},
+{
+"nis": "11039",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 960
+},
+{
+"nis": "11040",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 185
+},
+{
+"nis": "11040",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 309
+},
+{
+"nis": "11040",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 1212
+},
+{
+"nis": "11040",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 2108
+},
+{
+"nis": "11044",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 68
+},
+{
+"nis": "11044",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 165
+},
+{
+"nis": "11044",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 160
+},
+{
+"nis": "11044",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 291
+},
+{
+"nis": "11044",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 335
+},
+{
+"nis": "11044",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 572
+},
+{
+"nis": "11050",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 147
+},
+{
+"nis": "11050",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 354
+},
+{
+"nis": "11050",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 249
+},
+{
+"nis": "11050",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 461
+},
+{
+"nis": "11052",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 331
+},
+{
+"nis": "11052",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 549
+},
+{
+"nis": "11052",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 176
+},
+{
+"nis": "11052",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 330
+},
+{
+"nis": "11053",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 67
+},
+{
+"nis": "11053",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 177
+},
+{
+"nis": "11053",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 610
+},
+{
+"nis": "11053",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 32
+},
+{
+"nis": "11053",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 271
+},
+{
+"nis": "11053",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 470
+},
+{
+"nis": "11053",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 638
+},
+{
+"nis": "11054",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 83
+},
+{
+"nis": "11054",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 128
+},
+{
+"nis": "11054",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 189
+},
+{
+"nis": "11054",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 315
+},
+{
+"nis": "11054",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 225
+},
+{
+"nis": "11054",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 370
+},
+{
+"nis": "11055",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 64
+},
+{
+"nis": "11055",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 98
+},
+{
+"nis": "11055",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 404
+},
+{
+"nis": "11055",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 616
+},
+{
+"nis": "11055",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 239
+},
+{
+"nis": "11055",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 448
+},
+{
+"nis": "11057",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 72
+},
+{
+"nis": "11057",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 108
+},
+{
+"nis": "11057",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 61
+},
+{
+"nis": "11057",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 108
+},
+{
+"nis": "11057",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 8
+},
+{
+"nis": "11057",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 62
+},
+{
+"nis": "11057",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 405
+},
+{
+"nis": "11057",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 810
+},
+{
+"nis": "12002",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 110
+},
+{
+"nis": "12002",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 63
+},
+{
+"nis": "12002",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 110
+},
+{
+"nis": "12002",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 211
+},
+{
+"nis": "12002",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 290
+},
+{
+"nis": "12002",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 227
+},
+{
+"nis": "12002",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 365
+},
+{
+"nis": "12005",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 142
+},
+{
+"nis": "12005",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 267
+},
+{
+"nis": "12005",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 199
+},
+{
+"nis": "12005",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 314
+},
+{
+"nis": "12005",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 229
+},
+{
+"nis": "12005",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 398
+},
+{
+"nis": "12007",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 126
+},
+{
+"nis": "12007",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 257
+},
+{
+"nis": "12007",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 564
+},
+{
+"nis": "12007",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 931
+},
+{
+"nis": "12009",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 105
+},
+{
+"nis": "12009",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 221
+},
+{
+"nis": "12009",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 180
+},
+{
+"nis": "12009",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 436
+},
+{
+"nis": "12009",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 5
+},
+{
+"nis": "12009",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 77
+},
+{
+"nis": "12009",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 338
+},
+{
+"nis": "12009",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 386
+},
+{
+"nis": "12014",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 250
+},
+{
+"nis": "12014",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 438
+},
+{
+"nis": "12014",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 171
+},
+{
+"nis": "12014",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 279
+},
+{
+"nis": "12014",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 28
+},
+{
+"nis": "12014",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 197
+},
+{
+"nis": "12014",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 942
+},
+{
+"nis": "12014",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1491
+},
+{
+"nis": "12021",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 129
+},
+{
+"nis": "12021",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 286
+},
+{
+"nis": "12021",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 435
+},
+{
+"nis": "12021",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 965
+},
+{
+"nis": "12021",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1594
+},
+{
+"nis": "12025",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 16
+},
+{
+"nis": "12025",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 189
+},
+{
+"nis": "12025",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 1750
+},
+{
+"nis": "12025",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 3015
+},
+{
+"nis": "12025",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 37
+},
+{
+"nis": "12025",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 220
+},
+{
+"nis": "12025",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 1702
+},
+{
+"nis": "12025",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 3017
+},
+{
+"nis": "12026",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 137
+},
+{
+"nis": "12026",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 255
+},
+{
+"nis": "12026",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 260
+},
+{
+"nis": "12026",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 409
+},
+{
+"nis": "12026",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 9
+},
+{
+"nis": "12026",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 125
+},
+{
+"nis": "12026",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 409
+},
+{
+"nis": "12026",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 747
+},
+{
+"nis": "12029",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 146
+},
+{
+"nis": "12029",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 284
+},
+{
+"nis": "12029",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 444
+},
+{
+"nis": "12029",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 717
+},
+{
+"nis": "12035",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 510
+},
+{
+"nis": "12035",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 830
+},
+{
+"nis": "12035",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 501
+},
+{
+"nis": "12035",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 822
+},
+{
+"nis": "12040",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 473
+},
+{
+"nis": "12040",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 906
+},
+{
+"nis": "12040",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 550
+},
+{
+"nis": "12040",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 914
+},
+{
+"nis": "12041",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 136
+},
+{
+"nis": "12041",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 206
+},
+{
+"nis": "12041",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 14
+},
+{
+"nis": "12041",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 239
+},
+{
+"nis": "12041",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 899
+},
+{
+"nis": "12041",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1507
+},
+{
+"nis": "13001",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 129
+},
+{
+"nis": "13001",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 36
+},
+{
+"nis": "13001",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 56
+},
+{
+"nis": "13001",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 287
+},
+{
+"nis": "13001",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 473
+},
+{
+"nis": "13001",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 166
+},
+{
+"nis": "13001",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 325
+},
+{
+"nis": "13002",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 144
+},
+{
+"nis": "13002",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 245
+},
+{
+"nis": "13003",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 131
+},
+{
+"nis": "13003",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 243
+},
+{
+"nis": "13003",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 352
+},
+{
+"nis": "13003",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 595
+},
+{
+"nis": "13003",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 337
+},
+{
+"nis": "13003",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 445
+},
+{
+"nis": "13004",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 65
+},
+{
+"nis": "13004",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 109
+},
+{
+"nis": "13004",
+"body": "Gemeente",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 24
+},
+{
+"nis": "13004",
+"body": "Gemeente",
+"level": "Buitengewoon lager onderwijs",
+"n": 214
+},
+{
+"nis": "13004",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 443
+},
+{
+"nis": "13004",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 739
+},
+{
+"nis": "13004",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 104
+},
+{
+"nis": "13004",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 201
+},
+{
+"nis": "13006",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 22
+},
+{
+"nis": "13006",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 67
+},
+{
+"nis": "13006",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 214
+},
+{
+"nis": "13006",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 336
+},
+{
+"nis": "13006",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 110
+},
+{
+"nis": "13006",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 204
+},
+{
+"nis": "13008",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 158
+},
+{
+"nis": "13008",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 293
+},
+{
+"nis": "13008",
+"body": "Gemeente",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 8
+},
+{
+"nis": "13008",
+"body": "Gemeente",
+"level": "Buitengewoon lager onderwijs",
+"n": 133
+},
+{
+"nis": "13008",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 477
+},
+{
+"nis": "13008",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 800
+},
+{
+"nis": "13008",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 24
+},
+{
+"nis": "13008",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 89
+},
+{
+"nis": "13008",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 760
+},
+{
+"nis": "13008",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1346
+},
+{
+"nis": "13010",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 42
+},
+{
+"nis": "13010",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 44
+},
+{
+"nis": "13010",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 140
+},
+{
+"nis": "13010",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 213
+},
+{
+"nis": "13010",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 146
+},
+{
+"nis": "13010",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 255
+},
+{
+"nis": "13011",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 132
+},
+{
+"nis": "13011",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 202
+},
+{
+"nis": "13011",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 301
+},
+{
+"nis": "13011",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 732
+},
+{
+"nis": "13011",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1292
+},
+{
+"nis": "13012",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 35
+},
+{
+"nis": "13012",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 56
+},
+{
+"nis": "13012",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 89
+},
+{
+"nis": "13012",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 197
+},
+{
+"nis": "13012",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 166
+},
+{
+"nis": "13012",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 271
+},
+{
+"nis": "13013",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 37
+},
+{
+"nis": "13013",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 68
+},
+{
+"nis": "13013",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 312
+},
+{
+"nis": "13013",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 513
+},
+{
+"nis": "13014",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 367
+},
+{
+"nis": "13014",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 550
+},
+{
+"nis": "13014",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 540
+},
+{
+"nis": "13014",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 948
+},
+{
+"nis": "13016",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 83
+},
+{
+"nis": "13016",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 277
+},
+{
+"nis": "13016",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 187
+},
+{
+"nis": "13016",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 236
+},
+{
+"nis": "13017",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 55
+},
+{
+"nis": "13017",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 250
+},
+{
+"nis": "13017",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 192
+},
+{
+"nis": "13017",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 354
+},
+{
+"nis": "13017",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 517
+},
+{
+"nis": "13017",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 674
+},
+{
+"nis": "13019",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 52
+},
+{
+"nis": "13019",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 74
+},
+{
+"nis": "13019",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 225
+},
+{
+"nis": "13019",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 364
+},
+{
+"nis": "13019",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 288
+},
+{
+"nis": "13019",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 516
+},
+{
+"nis": "13021",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 64
+},
+{
+"nis": "13021",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 133
+},
+{
+"nis": "13021",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 145
+},
+{
+"nis": "13021",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 303
+},
+{
+"nis": "13021",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 15
+},
+{
+"nis": "13021",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 60
+},
+{
+"nis": "13021",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 88
+},
+{
+"nis": "13021",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 152
+},
+{
+"nis": "13023",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 162
+},
+{
+"nis": "13023",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 274
+},
+{
+"nis": "13023",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 117
+},
+{
+"nis": "13023",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 239
+},
+{
+"nis": "13025",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 134
+},
+{
+"nis": "13025",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 243
+},
+{
+"nis": "13025",
+"body": "Gemeente",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 4
+},
+{
+"nis": "13025",
+"body": "Gemeente",
+"level": "Buitengewoon lager onderwijs",
+"n": 158
+},
+{
+"nis": "13025",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 416
+},
+{
+"nis": "13025",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 767
+},
+{
+"nis": "13025",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 607
+},
+{
+"nis": "13025",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1216
+},
+{
+"nis": "13029",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 84
+},
+{
+"nis": "13029",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 137
+},
+{
+"nis": "13029",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 193
+},
+{
+"nis": "13029",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 385
+},
+{
+"nis": "13029",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 165
+},
+{
+"nis": "13029",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 321
+},
+{
+"nis": "13031",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 119
+},
+{
+"nis": "13031",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 170
+},
+{
+"nis": "13031",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 21
+},
+{
+"nis": "13031",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 128
+},
+{
+"nis": "13031",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 451
+},
+{
+"nis": "13031",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 750
+},
+{
+"nis": "13035",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 25
+},
+{
+"nis": "13035",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 68
+},
+{
+"nis": "13035",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 409
+},
+{
+"nis": "13035",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 630
+},
+{
+"nis": "13035",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 172
+},
+{
+"nis": "13035",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 289
+},
+{
+"nis": "13036",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 126
+},
+{
+"nis": "13036",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 414
+},
+{
+"nis": "13036",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 321
+},
+{
+"nis": "13036",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 296
+},
+{
+"nis": "13037",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 327
+},
+{
+"nis": "13037",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 443
+},
+{
+"nis": "13037",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 415
+},
+{
+"nis": "13040",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 321
+},
+{
+"nis": "13040",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 452
+},
+{
+"nis": "13040",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 71
+},
+{
+"nis": "13040",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 119
+},
+{
+"nis": "13040",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 192
+},
+{
+"nis": "13040",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 1582
+},
+{
+"nis": "13040",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 2672
+},
+{
+"nis": "13044",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 123
+},
+{
+"nis": "13044",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 176
+},
+{
+"nis": "13044",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 156
+},
+{
+"nis": "13044",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 357
+},
+{
+"nis": "13046",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 222
+},
+{
+"nis": "13046",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 404
+},
+{
+"nis": "13046",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 229
+},
+{
+"nis": "13046",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 411
+},
+{
+"nis": "13049",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 34
+},
+{
+"nis": "13049",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 68
+},
+{
+"nis": "13049",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 319
+},
+{
+"nis": "13049",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 598
+},
+{
+"nis": "13049",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 190
+},
+{
+"nis": "13049",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 414
+},
+{
+"nis": "13049",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 700
+},
+{
+"nis": "13053",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 45
+},
+{
+"nis": "13053",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 95
+},
+{
+"nis": "13053",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 164
+},
+{
+"nis": "13053",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 290
+},
+{
+"nis": "13053",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 337
+},
+{
+"nis": "13053",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 534
+},
+{
+"nis": "21001",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 71
+},
+{
+"nis": "21001",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 109
+},
+{
+"nis": "21001",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 732
+},
+{
+"nis": "21001",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 1079
+},
+{
+"nis": "21001",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 39
+},
+{
+"nis": "21001",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 123
+},
+{
+"nis": "21001",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 1213
+},
+{
+"nis": "21001",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1824
+},
+{
+"nis": "21002",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 201
+},
+{
+"nis": "21002",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 198
+},
+{
+"nis": "21002",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 138
+},
+{
+"nis": "21002",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 199
+},
+{
+"nis": "21003",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 258
+},
+{
+"nis": "21003",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 326
+},
+{
+"nis": "21003",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 82
+},
+{
+"nis": "21003",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 134
+},
+{
+"nis": "21003",
+"body": "VGC",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 18
+},
+{
+"nis": "21003",
+"body": "VGC",
+"level": "Buitengewoon lager onderwijs",
+"n": 184
+},
+{
+"nis": "21003",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 151
+},
+{
+"nis": "21003",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 225
+},
+{
+"nis": "21004",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 35
+},
+{
+"nis": "21004",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 97
+},
+{
+"nis": "21004",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 624
+},
+{
+"nis": "21004",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 945
+},
+{
+"nis": "21004",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 735
+},
+{
+"nis": "21004",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 1077
+},
+{
+"nis": "21004",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 1195
+},
+{
+"nis": "21004",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 2013
+},
+{
+"nis": "21005",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 310
+},
+{
+"nis": "21005",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 485
+},
+{
+"nis": "21005",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 216
+},
+{
+"nis": "21005",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 335
+},
+{
+"nis": "21006",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 230
+},
+{
+"nis": "21006",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 303
+},
+{
+"nis": "21006",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 152
+},
+{
+"nis": "21006",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 203
+},
+{
+"nis": "21006",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 208
+},
+{
+"nis": "21006",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 307
+},
+{
+"nis": "21007",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 30
+},
+{
+"nis": "21007",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 161
+},
+{
+"nis": "21007",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 254
+},
+{
+"nis": "21007",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 167
+},
+{
+"nis": "21007",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 245
+},
+{
+"nis": "21008",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 209
+},
+{
+"nis": "21008",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 332
+},
+{
+"nis": "21008",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 231
+},
+{
+"nis": "21008",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 288
+},
+{
+"nis": "21009",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 161
+},
+{
+"nis": "21009",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 130
+},
+{
+"nis": "21009",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 86
+},
+{
+"nis": "21009",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 158
+},
+{
+"nis": "21010",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 229
+},
+{
+"nis": "21010",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 305
+},
+{
+"nis": "21010",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 409
+},
+{
+"nis": "21010",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 514
+},
+{
+"nis": "21010",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 458
+},
+{
+"nis": "21010",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 765
+},
+{
+"nis": "21011",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 343
+},
+{
+"nis": "21011",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 545
+},
+{
+"nis": "21011",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 81
+},
+{
+"nis": "21011",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 114
+},
+{
+"nis": "21011",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 64
+},
+{
+"nis": "21011",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 104
+},
+{
+"nis": "21012",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 394
+},
+{
+"nis": "21012",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 399
+},
+{
+"nis": "21012",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 653
+},
+{
+"nis": "21012",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 881
+},
+{
+"nis": "21012",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 76
+},
+{
+"nis": "21012",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 412
+},
+{
+"nis": "21012",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 581
+},
+{
+"nis": "21013",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 272
+},
+{
+"nis": "21013",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 360
+},
+{
+"nis": "21013",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 77
+},
+{
+"nis": "21013",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 120
+},
+{
+"nis": "21014",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 138
+},
+{
+"nis": "21014",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 220
+},
+{
+"nis": "21015",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 481
+},
+{
+"nis": "21015",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 622
+},
+{
+"nis": "21015",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 162
+},
+{
+"nis": "21015",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 258
+},
+{
+"nis": "21015",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 637
+},
+{
+"nis": "21015",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 912
+},
+{
+"nis": "21016",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 243
+},
+{
+"nis": "21016",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 331
+},
+{
+"nis": "21016",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 331
+},
+{
+"nis": "21016",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 548
+},
+{
+"nis": "21017",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 96
+},
+{
+"nis": "21017",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 124
+},
+{
+"nis": "21017",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 145
+},
+{
+"nis": "21017",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 229
+},
+{
+"nis": "21018",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 92
+},
+{
+"nis": "21018",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 194
+},
+{
+"nis": "21018",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 128
+},
+{
+"nis": "21018",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 134
+},
+{
+"nis": "21018",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 24
+},
+{
+"nis": "21018",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 80
+},
+{
+"nis": "21018",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 265
+},
+{
+"nis": "21018",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 493
+},
+{
+"nis": "21019",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 79
+},
+{
+"nis": "21019",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 61
+},
+{
+"nis": "21019",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 106
+},
+{
+"nis": "21019",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 166
+},
+{
+"nis": "21019",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 268
+},
+{
+"nis": "21019",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 251
+},
+{
+"nis": "21019",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 431
+},
+{
+"nis": "23002",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 262
+},
+{
+"nis": "23002",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 406
+},
+{
+"nis": "23002",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 571
+},
+{
+"nis": "23002",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 1352
+},
+{
+"nis": "23002",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 491
+},
+{
+"nis": "23002",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 454
+},
+{
+"nis": "23003",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 88
+},
+{
+"nis": "23003",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 132
+},
+{
+"nis": "23003",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 522
+},
+{
+"nis": "23003",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 862
+},
+{
+"nis": "23003",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 78
+},
+{
+"nis": "23003",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 332
+},
+{
+"nis": "23003",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 577
+},
+{
+"nis": "23009",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 148
+},
+{
+"nis": "23009",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 237
+},
+{
+"nis": "23016",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 165
+},
+{
+"nis": "23016",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 263
+},
+{
+"nis": "23016",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 305
+},
+{
+"nis": "23016",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 990
+},
+{
+"nis": "23016",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 1017
+},
+{
+"nis": "23016",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1433
+},
+{
+"nis": "23025",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 258
+},
+{
+"nis": "23025",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 435
+},
+{
+"nis": "23025",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 529
+},
+{
+"nis": "23025",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 912
+},
+{
+"nis": "23025",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 616
+},
+{
+"nis": "23025",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 968
+},
+{
+"nis": "23027",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 664
+},
+{
+"nis": "23027",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 1151
+},
+{
+"nis": "23027",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 137
+},
+{
+"nis": "23027",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 1039
+},
+{
+"nis": "23027",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1648
+},
+{
+"nis": "23033",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 245
+},
+{
+"nis": "23033",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 408
+},
+{
+"nis": "23033",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 261
+},
+{
+"nis": "23033",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 418
+},
+{
+"nis": "23038",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 102
+},
+{
+"nis": "23038",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 179
+},
+{
+"nis": "23038",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 89
+},
+{
+"nis": "23038",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 245
+},
+{
+"nis": "23038",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 238
+},
+{
+"nis": "23038",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 357
+},
+{
+"nis": "23039",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 154
+},
+{
+"nis": "23039",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 193
+},
+{
+"nis": "23039",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 268
+},
+{
+"nis": "23039",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 430
+},
+{
+"nis": "23044",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 157
+},
+{
+"nis": "23044",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 283
+},
+{
+"nis": "23044",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 33
+},
+{
+"nis": "23044",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 292
+},
+{
+"nis": "23044",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 520
+},
+{
+"nis": "23045",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 234
+},
+{
+"nis": "23045",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 571
+},
+{
+"nis": "23045",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 461
+},
+{
+"nis": "23045",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 729
+},
+{
+"nis": "23047",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 310
+},
+{
+"nis": "23047",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 509
+},
+{
+"nis": "23047",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 240
+},
+{
+"nis": "23047",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 388
+},
+{
+"nis": "23050",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 73
+},
+{
+"nis": "23050",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 129
+},
+{
+"nis": "23050",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 509
+},
+{
+"nis": "23050",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 884
+},
+{
+"nis": "23050",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 321
+},
+{
+"nis": "23050",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 520
+},
+{
+"nis": "23052",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 283
+},
+{
+"nis": "23052",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 400
+},
+{
+"nis": "23052",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 391
+},
+{
+"nis": "23052",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 665
+},
+{
+"nis": "23060",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 86
+},
+{
+"nis": "23060",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 137
+},
+{
+"nis": "23060",
+"body": "Gemeente",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 16
+},
+{
+"nis": "23060",
+"body": "Gemeente",
+"level": "Buitengewoon lager onderwijs",
+"n": 160
+},
+{
+"nis": "23060",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 152
+},
+{
+"nis": "23060",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 262
+},
+{
+"nis": "23060",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 334
+},
+{
+"nis": "23060",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 602
+},
+{
+"nis": "23062",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 180
+},
+{
+"nis": "23062",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 285
+},
+{
+"nis": "23062",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 279
+},
+{
+"nis": "23062",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 362
+},
+{
+"nis": "23062",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 360
+},
+{
+"nis": "23062",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 659
+},
+{
+"nis": "23064",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 169
+},
+{
+"nis": "23064",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 387
+},
+{
+"nis": "23077",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 138
+},
+{
+"nis": "23077",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 200
+},
+{
+"nis": "23077",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 416
+},
+{
+"nis": "23077",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 639
+},
+{
+"nis": "23077",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 6
+},
+{
+"nis": "23077",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 2
+},
+{
+"nis": "23077",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 642
+},
+{
+"nis": "23077",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1072
+},
+{
+"nis": "23081",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 146
+},
+{
+"nis": "23081",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 394
+},
+{
+"nis": "23081",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 308
+},
+{
+"nis": "23081",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 424
+},
+{
+"nis": "23086",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 96
+},
+{
+"nis": "23086",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 140
+},
+{
+"nis": "23086",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 155
+},
+{
+"nis": "23086",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 267
+},
+{
+"nis": "23086",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 507
+},
+{
+"nis": "23086",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 864
+},
+{
+"nis": "23088",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 503
+},
+{
+"nis": "23088",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 825
+},
+{
+"nis": "23088",
+"body": "Gemeente",
+"level": "Buitengewoon lager onderwijs",
+"n": 160
+},
+{
+"nis": "23088",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 813
+},
+{
+"nis": "23088",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 1333
+},
+{
+"nis": "23088",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 66
+},
+{
+"nis": "23088",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 747
+},
+{
+"nis": "23088",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1195
+},
+{
+"nis": "23094",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 142
+},
+{
+"nis": "23094",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 232
+},
+{
+"nis": "23094",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 414
+},
+{
+"nis": "23094",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 611
+},
+{
+"nis": "23094",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 531
+},
+{
+"nis": "23094",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 889
+},
+{
+"nis": "23096",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 156
+},
+{
+"nis": "23096",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 287
+},
+{
+"nis": "23096",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 413
+},
+{
+"nis": "23096",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 767
+},
+{
+"nis": "23096",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 342
+},
+{
+"nis": "23096",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 607
+},
+{
+"nis": "23097",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 180
+},
+{
+"nis": "23097",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 277
+},
+{
+"nis": "23097",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 28
+},
+{
+"nis": "23097",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 108
+},
+{
+"nis": "23097",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 263
+},
+{
+"nis": "23097",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 481
+},
+{
+"nis": "23098",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 174
+},
+{
+"nis": "23098",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 282
+},
+{
+"nis": "23099",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 305
+},
+{
+"nis": "23099",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 512
+},
+{
+"nis": "23100",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 130
+},
+{
+"nis": "23100",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 257
+},
+{
+"nis": "23101",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 257
+},
+{
+"nis": "23101",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 484
+},
+{
+"nis": "23101",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 442
+},
+{
+"nis": "23101",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 797
+},
+{
+"nis": "23102",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 3
+},
+{
+"nis": "23102",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 135
+},
+{
+"nis": "23102",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 81
+},
+{
+"nis": "23102",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 111
+},
+{
+"nis": "23102",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 425
+},
+{
+"nis": "23102",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 757
+},
+{
+"nis": "23102",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 245
+},
+{
+"nis": "23102",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 407
+},
+{
+"nis": "23103",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 259
+},
+{
+"nis": "23103",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 369
+},
+{
+"nis": "23103",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 288
+},
+{
+"nis": "23103",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 686
+},
+{
+"nis": "23104",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 127
+},
+{
+"nis": "23104",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 30
+},
+{
+"nis": "23104",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 64
+},
+{
+"nis": "23104",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 61
+},
+{
+"nis": "23104",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 116
+},
+{
+"nis": "23104",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 260
+},
+{
+"nis": "23104",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 283
+},
+{
+"nis": "23104",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 604
+},
+{
+"nis": "23105",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 115
+},
+{
+"nis": "23105",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 193
+},
+{
+"nis": "23105",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 386
+},
+{
+"nis": "23105",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 652
+},
+{
+"nis": "23106",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 69
+},
+{
+"nis": "23106",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 92
+},
+{
+"nis": "23106",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 488
+},
+{
+"nis": "23106",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 938
+},
+{
+"nis": "23106",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 398
+},
+{
+"nis": "23106",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 534
+},
+{
+"nis": "24001",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 288
+},
+{
+"nis": "24001",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 560
+},
+{
+"nis": "24001",
+"body": "Gemeente",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 12
+},
+{
+"nis": "24001",
+"body": "Gemeente",
+"level": "Buitengewoon lager onderwijs",
+"n": 119
+},
+{
+"nis": "24001",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 703
+},
+{
+"nis": "24001",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1287
+},
+{
+"nis": "24007",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 216
+},
+{
+"nis": "24007",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 387
+},
+{
+"nis": "24007",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 100
+},
+{
+"nis": "24007",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 180
+},
+{
+"nis": "24008",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 92
+},
+{
+"nis": "24008",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 185
+},
+{
+"nis": "24008",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 111
+},
+{
+"nis": "24008",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 177
+},
+{
+"nis": "24009",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 203
+},
+{
+"nis": "24009",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 388
+},
+{
+"nis": "24009",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 149
+},
+{
+"nis": "24009",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 235
+},
+{
+"nis": "24011",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 115
+},
+{
+"nis": "24011",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 199
+},
+{
+"nis": "24011",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 14
+},
+{
+"nis": "24011",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 115
+},
+{
+"nis": "24011",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 197
+},
+{
+"nis": "24011",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 374
+},
+{
+"nis": "24014",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 152
+},
+{
+"nis": "24014",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 250
+},
+{
+"nis": "24014",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 335
+},
+{
+"nis": "24014",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 521
+},
+{
+"nis": "24016",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 94
+},
+{
+"nis": "24016",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 164
+},
+{
+"nis": "24016",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 185
+},
+{
+"nis": "24016",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 303
+},
+{
+"nis": "24016",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 63
+},
+{
+"nis": "24016",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 129
+},
+{
+"nis": "24020",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 213
+},
+{
+"nis": "24020",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 412
+},
+{
+"nis": "24020",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 130
+},
+{
+"nis": "24020",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 310
+},
+{
+"nis": "24020",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 28
+},
+{
+"nis": "24020",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 169
+},
+{
+"nis": "24020",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 414
+},
+{
+"nis": "24020",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 734
+},
+{
+"nis": "24028",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 156
+},
+{
+"nis": "24028",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 305
+},
+{
+"nis": "24033",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 83
+},
+{
+"nis": "24033",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 246
+},
+{
+"nis": "24033",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 510
+},
+{
+"nis": "24033",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 724
+},
+{
+"nis": "24038",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 81
+},
+{
+"nis": "24038",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 103
+},
+{
+"nis": "24038",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 114
+},
+{
+"nis": "24038",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 203
+},
+{
+"nis": "24038",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 610
+},
+{
+"nis": "24038",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 993
+},
+{
+"nis": "24041",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 141
+},
+{
+"nis": "24041",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 271
+},
+{
+"nis": "24041",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 156
+},
+{
+"nis": "24041",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 153
+},
+{
+"nis": "24041",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 291
+},
+{
+"nis": "24043",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 142
+},
+{
+"nis": "24043",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 407
+},
+{
+"nis": "24043",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 188
+},
+{
+"nis": "24043",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 192
+},
+{
+"nis": "24045",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 418
+},
+{
+"nis": "24045",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 707
+},
+{
+"nis": "24045",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 24
+},
+{
+"nis": "24045",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 62
+},
+{
+"nis": "24045",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 62
+},
+{
+"nis": "24045",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 126
+},
+{
+"nis": "24048",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 180
+},
+{
+"nis": "24048",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 389
+},
+{
+"nis": "24048",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 93
+},
+{
+"nis": "24048",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 198
+},
+{
+"nis": "24048",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 112
+},
+{
+"nis": "24048",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 275
+},
+{
+"nis": "24054",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 25
+},
+{
+"nis": "24054",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 213
+},
+{
+"nis": "24054",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 330
+},
+{
+"nis": "24055",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 84
+},
+{
+"nis": "24055",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 146
+},
+{
+"nis": "24055",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 497
+},
+{
+"nis": "24055",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 807
+},
+{
+"nis": "24055",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 169
+},
+{
+"nis": "24055",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 279
+},
+{
+"nis": "24059",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 381
+},
+{
+"nis": "24059",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 673
+},
+{
+"nis": "24059",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 200
+},
+{
+"nis": "24059",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 403
+},
+{
+"nis": "24062",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 36
+},
+{
+"nis": "24062",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 512
+},
+{
+"nis": "24062",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 910
+},
+{
+"nis": "24062",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 1448
+},
+{
+"nis": "24062",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 49
+},
+{
+"nis": "24062",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 157
+},
+{
+"nis": "24062",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 2803
+},
+{
+"nis": "24062",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 4839
+},
+{
+"nis": "24066",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 280
+},
+{
+"nis": "24066",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 494
+},
+{
+"nis": "24066",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 233
+},
+{
+"nis": "24066",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 402
+},
+{
+"nis": "24086",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 231
+},
+{
+"nis": "24086",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 390
+},
+{
+"nis": "24086",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 192
+},
+{
+"nis": "24086",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 391
+},
+{
+"nis": "24094",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 454
+},
+{
+"nis": "24094",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 697
+},
+{
+"nis": "24094",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 151
+},
+{
+"nis": "24094",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 355
+},
+{
+"nis": "24104",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 87
+},
+{
+"nis": "24104",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 131
+},
+{
+"nis": "24104",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 431
+},
+{
+"nis": "24104",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 681
+},
+{
+"nis": "24104",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 275
+},
+{
+"nis": "24104",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 381
+},
+{
+"nis": "24107",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 412
+},
+{
+"nis": "24107",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 804
+},
+{
+"nis": "24107",
+"body": "Provincie",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 9
+},
+{
+"nis": "24107",
+"body": "Provincie",
+"level": "Buitengewoon lager onderwijs",
+"n": 105
+},
+{
+"nis": "24107",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 781
+},
+{
+"nis": "24107",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1374
+},
+{
+"nis": "24109",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 139
+},
+{
+"nis": "24109",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 214
+},
+{
+"nis": "24109",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 18
+},
+{
+"nis": "24109",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 216
+},
+{
+"nis": "24109",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 242
+},
+{
+"nis": "24109",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 405
+},
+{
+"nis": "24130",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 26
+},
+{
+"nis": "24130",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 69
+},
+{
+"nis": "24130",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 51
+},
+{
+"nis": "24130",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 70
+},
+{
+"nis": "24130",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 164
+},
+{
+"nis": "24130",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 356
+},
+{
+"nis": "24133",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 83
+},
+{
+"nis": "24133",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 180
+},
+{
+"nis": "24133",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 120
+},
+{
+"nis": "24133",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 158
+},
+{
+"nis": "24134",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 94
+},
+{
+"nis": "24134",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 203
+},
+{
+"nis": "24134",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 324
+},
+{
+"nis": "24134",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 484
+},
+{
+"nis": "24134",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 805
+},
+{
+"nis": "24135",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 74
+},
+{
+"nis": "24135",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 140
+},
+{
+"nis": "24135",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 293
+},
+{
+"nis": "24135",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 494
+},
+{
+"nis": "24137",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 114
+},
+{
+"nis": "24137",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 185
+},
+{
+"nis": "24137",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 91
+},
+{
+"nis": "24137",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 169
+},
+{
+"nis": "31003",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 21
+},
+{
+"nis": "31003",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 58
+},
+{
+"nis": "31003",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 48
+},
+{
+"nis": "31003",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 91
+},
+{
+"nis": "31003",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 57
+},
+{
+"nis": "31003",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 97
+},
+{
+"nis": "31003",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 378
+},
+{
+"nis": "31003",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 637
+},
+{
+"nis": "31004",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 216
+},
+{
+"nis": "31004",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 356
+},
+{
+"nis": "31004",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 93
+},
+{
+"nis": "31004",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 245
+},
+{
+"nis": "31004",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 454
+},
+{
+"nis": "31005",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 14
+},
+{
+"nis": "31005",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 176
+},
+{
+"nis": "31005",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 767
+},
+{
+"nis": "31005",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 1308
+},
+{
+"nis": "31005",
+"body": "Gemeente",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 8
+},
+{
+"nis": "31005",
+"body": "Gemeente",
+"level": "Buitengewoon lager onderwijs",
+"n": 97
+},
+{
+"nis": "31005",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 333
+},
+{
+"nis": "31005",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 544
+},
+{
+"nis": "31005",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 58
+},
+{
+"nis": "31005",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 591
+},
+{
+"nis": "31005",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 2692
+},
+{
+"nis": "31005",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 4778
+},
+{
+"nis": "31006",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 48
+},
+{
+"nis": "31006",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 132
+},
+{
+"nis": "31006",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 243
+},
+{
+"nis": "31006",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 383
+},
+{
+"nis": "31012",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 60
+},
+{
+"nis": "31012",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 74
+},
+{
+"nis": "31012",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 475
+},
+{
+"nis": "31012",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 821
+},
+{
+"nis": "31022",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 50
+},
+{
+"nis": "31022",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 109
+},
+{
+"nis": "31022",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 763
+},
+{
+"nis": "31022",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1151
+},
+{
+"nis": "31033",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 61
+},
+{
+"nis": "31033",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 92
+},
+{
+"nis": "31033",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 144
+},
+{
+"nis": "31033",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 693
+},
+{
+"nis": "31033",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1244
+},
+{
+"nis": "31040",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 72
+},
+{
+"nis": "31040",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 109
+},
+{
+"nis": "31040",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 28
+},
+{
+"nis": "31040",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 70
+},
+{
+"nis": "31040",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 735
+},
+{
+"nis": "31040",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1101
+},
+{
+"nis": "31042",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 62
+},
+{
+"nis": "31042",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 80
+},
+{
+"nis": "31042",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 37
+},
+{
+"nis": "31042",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 47
+},
+{
+"nis": "31043",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 95
+},
+{
+"nis": "31043",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 110
+},
+{
+"nis": "31043",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 217
+},
+{
+"nis": "31043",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 320
+},
+{
+"nis": "31043",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 44
+},
+{
+"nis": "31043",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 420
+},
+{
+"nis": "31043",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 802
+},
+{
+"nis": "32003",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 32
+},
+{
+"nis": "32003",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 84
+},
+{
+"nis": "32003",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 203
+},
+{
+"nis": "32003",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 97
+},
+{
+"nis": "32003",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 205
+},
+{
+"nis": "32003",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 11
+},
+{
+"nis": "32003",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 127
+},
+{
+"nis": "32003",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 425
+},
+{
+"nis": "32003",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 565
+},
+{
+"nis": "32006",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 52
+},
+{
+"nis": "32006",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 23
+},
+{
+"nis": "32006",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 25
+},
+{
+"nis": "32006",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 363
+},
+{
+"nis": "32006",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 533
+},
+{
+"nis": "32010",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 122
+},
+{
+"nis": "32010",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 215
+},
+{
+"nis": "32010",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 118
+},
+{
+"nis": "32010",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 198
+},
+{
+"nis": "32010",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 357
+},
+{
+"nis": "32011",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 172
+},
+{
+"nis": "32011",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 299
+},
+{
+"nis": "32011",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 291
+},
+{
+"nis": "32011",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 460
+},
+{
+"nis": "32030",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 106
+},
+{
+"nis": "32030",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 206
+},
+{
+"nis": "33011",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 65
+},
+{
+"nis": "33011",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 157
+},
+{
+"nis": "33011",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 285
+},
+{
+"nis": "33011",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 48
+},
+{
+"nis": "33011",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 204
+},
+{
+"nis": "33011",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 1172
+},
+{
+"nis": "33011",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1852
+},
+{
+"nis": "33016",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 47
+},
+{
+"nis": "33016",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 78
+},
+{
+"nis": "33021",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 42
+},
+{
+"nis": "33021",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 109
+},
+{
+"nis": "33021",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 80
+},
+{
+"nis": "33021",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 613
+},
+{
+"nis": "33021",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1097
+},
+{
+"nis": "33029",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 39
+},
+{
+"nis": "33029",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 222
+},
+{
+"nis": "33029",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 121
+},
+{
+"nis": "33029",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 206
+},
+{
+"nis": "33029",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 514
+},
+{
+"nis": "33029",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 897
+},
+{
+"nis": "33037",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 140
+},
+{
+"nis": "33037",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 266
+},
+{
+"nis": "33037",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 293
+},
+{
+"nis": "33037",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 475
+},
+{
+"nis": "33039",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 29
+},
+{
+"nis": "33039",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 41
+},
+{
+"nis": "33039",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 15
+},
+{
+"nis": "33039",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 39
+},
+{
+"nis": "33039",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 229
+},
+{
+"nis": "33039",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 374
+},
+{
+"nis": "33040",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 28
+},
+{
+"nis": "33040",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 50
+},
+{
+"nis": "33040",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 33
+},
+{
+"nis": "33040",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 34
+},
+{
+"nis": "33040",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 225
+},
+{
+"nis": "33040",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 387
+},
+{
+"nis": "33041",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 147
+},
+{
+"nis": "33041",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 264
+},
+{
+"nis": "34002",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 75
+},
+{
+"nis": "34002",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 115
+},
+{
+"nis": "34002",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 93
+},
+{
+"nis": "34002",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 108
+},
+{
+"nis": "34002",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 33
+},
+{
+"nis": "34002",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 466
+},
+{
+"nis": "34002",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 811
+},
+{
+"nis": "34003",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 139
+},
+{
+"nis": "34003",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 269
+},
+{
+"nis": "34003",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 259
+},
+{
+"nis": "34003",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 442
+},
+{
+"nis": "34009",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 78
+},
+{
+"nis": "34009",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 129
+},
+{
+"nis": "34009",
+"body": "Gemeente",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 22
+},
+{
+"nis": "34009",
+"body": "Gemeente",
+"level": "Buitengewoon lager onderwijs",
+"n": 308
+},
+{
+"nis": "34009",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 201
+},
+{
+"nis": "34009",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 427
+},
+{
+"nis": "34009",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 527
+},
+{
+"nis": "34013",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 82
+},
+{
+"nis": "34013",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 154
+},
+{
+"nis": "34013",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 321
+},
+{
+"nis": "34013",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 502
+},
+{
+"nis": "34013",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 705
+},
+{
+"nis": "34013",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1131
+},
+{
+"nis": "34022",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 38
+},
+{
+"nis": "34022",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 200
+},
+{
+"nis": "34022",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 362
+},
+{
+"nis": "34022",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 710
+},
+{
+"nis": "34022",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 113
+},
+{
+"nis": "34022",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 36
+},
+{
+"nis": "34022",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 23
+},
+{
+"nis": "34022",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 355
+},
+{
+"nis": "34022",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 2643
+},
+{
+"nis": "34022",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 4753
+},
+{
+"nis": "34023",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 65
+},
+{
+"nis": "34023",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 98
+},
+{
+"nis": "34023",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 244
+},
+{
+"nis": "34023",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 407
+},
+{
+"nis": "34023",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 278
+},
+{
+"nis": "34023",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 493
+},
+{
+"nis": "34025",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 241
+},
+{
+"nis": "34025",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 365
+},
+{
+"nis": "34027",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 190
+},
+{
+"nis": "34027",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 337
+},
+{
+"nis": "34027",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 248
+},
+{
+"nis": "34027",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 383
+},
+{
+"nis": "34027",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 5
+},
+{
+"nis": "34027",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 162
+},
+{
+"nis": "34027",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 941
+},
+{
+"nis": "34027",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1640
+},
+{
+"nis": "34040",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 125
+},
+{
+"nis": "34040",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 175
+},
+{
+"nis": "34040",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 559
+},
+{
+"nis": "34040",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 924
+},
+{
+"nis": "34040",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 220
+},
+{
+"nis": "34040",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 831
+},
+{
+"nis": "34040",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1381
+},
+{
+"nis": "34041",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 89
+},
+{
+"nis": "34041",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 171
+},
+{
+"nis": "34041",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 244
+},
+{
+"nis": "34041",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 372
+},
+{
+"nis": "34041",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 13
+},
+{
+"nis": "34041",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 108
+},
+{
+"nis": "34041",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 795
+},
+{
+"nis": "34041",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1387
+},
+{
+"nis": "34042",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 64
+},
+{
+"nis": "34042",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 76
+},
+{
+"nis": "34042",
+"body": "Gemeente",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 12
+},
+{
+"nis": "34042",
+"body": "Gemeente",
+"level": "Buitengewoon lager onderwijs",
+"n": 135
+},
+{
+"nis": "34042",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 455
+},
+{
+"nis": "34042",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 601
+},
+{
+"nis": "34042",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 341
+},
+{
+"nis": "34042",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 629
+},
+{
+"nis": "34043",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 209
+},
+{
+"nis": "34043",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 294
+},
+{
+"nis": "35002",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 283
+},
+{
+"nis": "35002",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 452
+},
+{
+"nis": "35002",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 247
+},
+{
+"nis": "35002",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 494
+},
+{
+"nis": "35005",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 110
+},
+{
+"nis": "35005",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 174
+},
+{
+"nis": "35005",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 66
+},
+{
+"nis": "35005",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 116
+},
+{
+"nis": "35005",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 258
+},
+{
+"nis": "35005",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 416
+},
+{
+"nis": "35006",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 80
+},
+{
+"nis": "35006",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 171
+},
+{
+"nis": "35006",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 280
+},
+{
+"nis": "35006",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 280
+},
+{
+"nis": "35006",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 474
+},
+{
+"nis": "35011",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 144
+},
+{
+"nis": "35011",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 283
+},
+{
+"nis": "35011",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 112
+},
+{
+"nis": "35011",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 224
+},
+{
+"nis": "35011",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 356
+},
+{
+"nis": "35013",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 25
+},
+{
+"nis": "35013",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 182
+},
+{
+"nis": "35013",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 1054
+},
+{
+"nis": "35013",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 1688
+},
+{
+"nis": "35013",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 29
+},
+{
+"nis": "35013",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 105
+},
+{
+"nis": "35013",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 1283
+},
+{
+"nis": "35013",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 2045
+},
+{
+"nis": "35014",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 106
+},
+{
+"nis": "35014",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 165
+},
+{
+"nis": "35014",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 229
+},
+{
+"nis": "35014",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 339
+},
+{
+"nis": "35029",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 80
+},
+{
+"nis": "35029",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 172
+},
+{
+"nis": "35029",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 163
+},
+{
+"nis": "35029",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 257
+},
+{
+"nis": "36006",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 106
+},
+{
+"nis": "36006",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 164
+},
+{
+"nis": "36006",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 19
+},
+{
+"nis": "36006",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 108
+},
+{
+"nis": "36006",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 307
+},
+{
+"nis": "36006",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 522
+},
+{
+"nis": "36007",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 73
+},
+{
+"nis": "36007",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 95
+},
+{
+"nis": "36007",
+"body": "Gemeente",
+"level": "Buitengewoon lager onderwijs",
+"n": 80
+},
+{
+"nis": "36007",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 104
+},
+{
+"nis": "36007",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 102
+},
+{
+"nis": "36007",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 261
+},
+{
+"nis": "36007",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 409
+},
+{
+"nis": "36008",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 92
+},
+{
+"nis": "36008",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 175
+},
+{
+"nis": "36008",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 14
+},
+{
+"nis": "36008",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 194
+},
+{
+"nis": "36008",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 974
+},
+{
+"nis": "36008",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1489
+},
+{
+"nis": "36010",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 66
+},
+{
+"nis": "36010",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 75
+},
+{
+"nis": "36010",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 294
+},
+{
+"nis": "36010",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 475
+},
+{
+"nis": "36011",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 66
+},
+{
+"nis": "36011",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 95
+},
+{
+"nis": "36011",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 114
+},
+{
+"nis": "36011",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 222
+},
+{
+"nis": "36011",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 125
+},
+{
+"nis": "36011",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 221
+},
+{
+"nis": "36012",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 136
+},
+{
+"nis": "36012",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 247
+},
+{
+"nis": "36012",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 69
+},
+{
+"nis": "36012",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 246
+},
+{
+"nis": "36012",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 380
+},
+{
+"nis": "36015",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 40
+},
+{
+"nis": "36015",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 259
+},
+{
+"nis": "36015",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 390
+},
+{
+"nis": "36015",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 614
+},
+{
+"nis": "36015",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 570
+},
+{
+"nis": "36015",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 955
+},
+{
+"nis": "36015",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 29
+},
+{
+"nis": "36015",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 241
+},
+{
+"nis": "36015",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 1624
+},
+{
+"nis": "36015",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 2655
+},
+{
+"nis": "36019",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 28
+},
+{
+"nis": "36019",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 30
+},
+{
+"nis": "36019",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 140
+},
+{
+"nis": "36019",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 406
+},
+{
+"nis": "36019",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 520
+},
+{
+"nis": "37002",
+"body": "Gemeente",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 3
+},
+{
+"nis": "37002",
+"body": "Gemeente",
+"level": "Buitengewoon lager onderwijs",
+"n": 21
+},
+{
+"nis": "37002",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 124
+},
+{
+"nis": "37002",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 179
+},
+{
+"nis": "37002",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 208
+},
+{
+"nis": "37002",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 340
+},
+{
+"nis": "37010",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 314
+},
+{
+"nis": "37010",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 488
+},
+{
+"nis": "37011",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 232
+},
+{
+"nis": "37011",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 315
+},
+{
+"nis": "37017",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 300
+},
+{
+"nis": "37017",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 486
+},
+{
+"nis": "37020",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 104
+},
+{
+"nis": "37020",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 185
+},
+{
+"nis": "37020",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 284
+},
+{
+"nis": "37020",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 422
+},
+{
+"nis": "37021",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 681
+},
+{
+"nis": "37021",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1129
+},
+{
+"nis": "37022",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 248
+},
+{
+"nis": "37022",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 416
+},
+{
+"nis": "37022",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 121
+},
+{
+"nis": "37022",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 878
+},
+{
+"nis": "37022",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1490
+},
+{
+"nis": "38002",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 41
+},
+{
+"nis": "38002",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 79
+},
+{
+"nis": "38002",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 137
+},
+{
+"nis": "38002",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 176
+},
+{
+"nis": "38008",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 36
+},
+{
+"nis": "38008",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 73
+},
+{
+"nis": "38008",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 70
+},
+{
+"nis": "38008",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 117
+},
+{
+"nis": "38008",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 128
+},
+{
+"nis": "38008",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 220
+},
+{
+"nis": "38014",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 11
+},
+{
+"nis": "38014",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 96
+},
+{
+"nis": "38014",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 32
+},
+{
+"nis": "38014",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 54
+},
+{
+"nis": "38014",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 237
+},
+{
+"nis": "38014",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 406
+},
+{
+"nis": "38014",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 8
+},
+{
+"nis": "38014",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 45
+},
+{
+"nis": "38014",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 132
+},
+{
+"nis": "38014",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 206
+},
+{
+"nis": "38016",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 45
+},
+{
+"nis": "38016",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 103
+},
+{
+"nis": "38016",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 61
+},
+{
+"nis": "38016",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 90
+},
+{
+"nis": "38016",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 129
+},
+{
+"nis": "38016",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 242
+},
+{
+"nis": "38025",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 87
+},
+{
+"nis": "38025",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 163
+},
+{
+"nis": "38025",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 110
+},
+{
+"nis": "38025",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 375
+},
+{
+"nis": "38025",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 587
+},
+{
+"nis": "41002",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 29
+},
+{
+"nis": "41002",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 271
+},
+{
+"nis": "41002",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 588
+},
+{
+"nis": "41002",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 1005
+},
+{
+"nis": "41002",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 846
+},
+{
+"nis": "41002",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 1160
+},
+{
+"nis": "41002",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 15
+},
+{
+"nis": "41002",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 169
+},
+{
+"nis": "41002",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 2067
+},
+{
+"nis": "41002",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 4123
+},
+{
+"nis": "41011",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 201
+},
+{
+"nis": "41011",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 417
+},
+{
+"nis": "41011",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 207
+},
+{
+"nis": "41011",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 360
+},
+{
+"nis": "41011",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 406
+},
+{
+"nis": "41011",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 752
+},
+{
+"nis": "41018",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 11
+},
+{
+"nis": "41018",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 113
+},
+{
+"nis": "41018",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 449
+},
+{
+"nis": "41018",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 744
+},
+{
+"nis": "41018",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 16
+},
+{
+"nis": "41018",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 93
+},
+{
+"nis": "41018",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 788
+},
+{
+"nis": "41018",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1398
+},
+{
+"nis": "41024",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 219
+},
+{
+"nis": "41024",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 356
+},
+{
+"nis": "41024",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 430
+},
+{
+"nis": "41024",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 781
+},
+{
+"nis": "41027",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 14
+},
+{
+"nis": "41027",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 60
+},
+{
+"nis": "41027",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 115
+},
+{
+"nis": "41027",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 259
+},
+{
+"nis": "41027",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 415
+},
+{
+"nis": "41027",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 368
+},
+{
+"nis": "41027",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 571
+},
+{
+"nis": "41034",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 99
+},
+{
+"nis": "41034",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 183
+},
+{
+"nis": "41034",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 487
+},
+{
+"nis": "41034",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 831
+},
+{
+"nis": "41048",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 188
+},
+{
+"nis": "41048",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 334
+},
+{
+"nis": "41048",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 479
+},
+{
+"nis": "41048",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 835
+},
+{
+"nis": "41048",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 103
+},
+{
+"nis": "41048",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 747
+},
+{
+"nis": "41048",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1310
+},
+{
+"nis": "41063",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 90
+},
+{
+"nis": "41063",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 145
+},
+{
+"nis": "41063",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 82
+},
+{
+"nis": "41063",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 111
+},
+{
+"nis": "41063",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 209
+},
+{
+"nis": "41063",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 280
+},
+{
+"nis": "41081",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 288
+},
+{
+"nis": "41081",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 477
+},
+{
+"nis": "41081",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 158
+},
+{
+"nis": "41081",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 282
+},
+{
+"nis": "41081",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 7
+},
+{
+"nis": "41081",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 114
+},
+{
+"nis": "41081",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 544
+},
+{
+"nis": "41081",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 899
+},
+{
+"nis": "41082",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 13
+},
+{
+"nis": "41082",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 91
+},
+{
+"nis": "41082",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 85
+},
+{
+"nis": "41082",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 141
+},
+{
+"nis": "41082",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 104
+},
+{
+"nis": "41082",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 189
+},
+{
+"nis": "41082",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 634
+},
+{
+"nis": "41082",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1146
+},
+{
+"nis": "42003",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 174
+},
+{
+"nis": "42003",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 279
+},
+{
+"nis": "42003",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 283
+},
+{
+"nis": "42003",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 516
+},
+{
+"nis": "42004",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 72
+},
+{
+"nis": "42004",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 131
+},
+{
+"nis": "42004",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 109
+},
+{
+"nis": "42004",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 273
+},
+{
+"nis": "42004",
+"body": "Provincie",
+"level": "Buitengewoon lager onderwijs",
+"n": 229
+},
+{
+"nis": "42004",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 19
+},
+{
+"nis": "42004",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 84
+},
+{
+"nis": "42004",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 298
+},
+{
+"nis": "42004",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 435
+},
+{
+"nis": "42006",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 329
+},
+{
+"nis": "42006",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 677
+},
+{
+"nis": "42006",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 364
+},
+{
+"nis": "42006",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 628
+},
+{
+"nis": "42006",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 21
+},
+{
+"nis": "42006",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 129
+},
+{
+"nis": "42006",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 852
+},
+{
+"nis": "42006",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1470
+},
+{
+"nis": "42008",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 188
+},
+{
+"nis": "42008",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 302
+},
+{
+"nis": "42008",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 79
+},
+{
+"nis": "42008",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 108
+},
+{
+"nis": "42008",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 594
+},
+{
+"nis": "42008",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1096
+},
+{
+"nis": "42010",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 77
+},
+{
+"nis": "42010",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 121
+},
+{
+"nis": "42010",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 142
+},
+{
+"nis": "42010",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 195
+},
+{
+"nis": "42010",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 204
+},
+{
+"nis": "42010",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 353
+},
+{
+"nis": "42011",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 89
+},
+{
+"nis": "42011",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 173
+},
+{
+"nis": "42011",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 83
+},
+{
+"nis": "42011",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 123
+},
+{
+"nis": "42011",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 476
+},
+{
+"nis": "42011",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 802
+},
+{
+"nis": "42023",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 41
+},
+{
+"nis": "42023",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 69
+},
+{
+"nis": "42023",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 88
+},
+{
+"nis": "42023",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 313
+},
+{
+"nis": "42023",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 277
+},
+{
+"nis": "42023",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 349
+},
+{
+"nis": "42025",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 221
+},
+{
+"nis": "42025",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 340
+},
+{
+"nis": "42025",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 74
+},
+{
+"nis": "42025",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 24
+},
+{
+"nis": "42025",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 151
+},
+{
+"nis": "42025",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 522
+},
+{
+"nis": "42025",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1073
+},
+{
+"nis": "42026",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 80
+},
+{
+"nis": "42026",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 531
+},
+{
+"nis": "42026",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 339
+},
+{
+"nis": "42026",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 123
+},
+{
+"nis": "42028",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 51
+},
+{
+"nis": "42028",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 38
+},
+{
+"nis": "42028",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 102
+},
+{
+"nis": "42028",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 266
+},
+{
+"nis": "42028",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 137
+},
+{
+"nis": "42028",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 661
+},
+{
+"nis": "42028",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1109
+},
+{
+"nis": "43002",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 61
+},
+{
+"nis": "43002",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 117
+},
+{
+"nis": "43002",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 51
+},
+{
+"nis": "43002",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 142
+},
+{
+"nis": "43002",
+"body": "Provincie",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 13
+},
+{
+"nis": "43002",
+"body": "Provincie",
+"level": "Buitengewoon lager onderwijs",
+"n": 122
+},
+{
+"nis": "43002",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 370
+},
+{
+"nis": "43002",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 499
+},
+{
+"nis": "43005",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 132
+},
+{
+"nis": "43005",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 275
+},
+{
+"nis": "43005",
+"body": "Provincie",
+"level": "Buitengewoon lager onderwijs",
+"n": 175
+},
+{
+"nis": "43005",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 1
+},
+{
+"nis": "43005",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 32
+},
+{
+"nis": "43005",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 611
+},
+{
+"nis": "43005",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1123
+},
+{
+"nis": "43007",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 203
+},
+{
+"nis": "43007",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 325
+},
+{
+"nis": "43010",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 197
+},
+{
+"nis": "43010",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 360
+},
+{
+"nis": "43010",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 616
+},
+{
+"nis": "43010",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 904
+},
+{
+"nis": "43014",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 41
+},
+{
+"nis": "43014",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 151
+},
+{
+"nis": "43014",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 189
+},
+{
+"nis": "43014",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 270
+},
+{
+"nis": "43018",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 104
+},
+{
+"nis": "43018",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 234
+},
+{
+"nis": "43018",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 145
+},
+{
+"nis": "43018",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 174
+},
+{
+"nis": "43018",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 229
+},
+{
+"nis": "43018",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 476
+},
+{
+"nis": "44013",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 63
+},
+{
+"nis": "44013",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 179
+},
+{
+"nis": "44013",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 253
+},
+{
+"nis": "44013",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 404
+},
+{
+"nis": "44013",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 451
+},
+{
+"nis": "44013",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 787
+},
+{
+"nis": "44019",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 28
+},
+{
+"nis": "44019",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 133
+},
+{
+"nis": "44019",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 218
+},
+{
+"nis": "44019",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 409
+},
+{
+"nis": "44019",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 525
+},
+{
+"nis": "44019",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 938
+},
+{
+"nis": "44019",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 649
+},
+{
+"nis": "44019",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1086
+},
+{
+"nis": "44020",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 198
+},
+{
+"nis": "44020",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 369
+},
+{
+"nis": "44020",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 247
+},
+{
+"nis": "44020",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 395
+},
+{
+"nis": "44021",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 36
+},
+{
+"nis": "44021",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 216
+},
+{
+"nis": "44021",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 1184
+},
+{
+"nis": "44021",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 1933
+},
+{
+"nis": "44021",
+"body": "Gemeente",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 56
+},
+{
+"nis": "44021",
+"body": "Gemeente",
+"level": "Buitengewoon lager onderwijs",
+"n": 401
+},
+{
+"nis": "44021",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 3584
+},
+{
+"nis": "44021",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 5288
+},
+{
+"nis": "44021",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 118
+},
+{
+"nis": "44021",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 911
+},
+{
+"nis": "44021",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 5096
+},
+{
+"nis": "44021",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 8745
+},
+{
+"nis": "44052",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 69
+},
+{
+"nis": "44052",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 120
+},
+{
+"nis": "44052",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 108
+},
+{
+"nis": "44052",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 222
+},
+{
+"nis": "44052",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 342
+},
+{
+"nis": "44052",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 513
+},
+{
+"nis": "44064",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 161
+},
+{
+"nis": "44064",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 272
+},
+{
+"nis": "44064",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 269
+},
+{
+"nis": "44064",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 408
+},
+{
+"nis": "44081",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 95
+},
+{
+"nis": "44081",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 169
+},
+{
+"nis": "44081",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 416
+},
+{
+"nis": "44081",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 763
+},
+{
+"nis": "44083",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 15
+},
+{
+"nis": "44083",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 73
+},
+{
+"nis": "44083",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 257
+},
+{
+"nis": "44083",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 470
+},
+{
+"nis": "44083",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 79
+},
+{
+"nis": "44083",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 323
+},
+{
+"nis": "44083",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 52
+},
+{
+"nis": "44083",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 299
+},
+{
+"nis": "44083",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 1189
+},
+{
+"nis": "44083",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1743
+},
+{
+"nis": "44084",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 213
+},
+{
+"nis": "44084",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 356
+},
+{
+"nis": "44084",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 782
+},
+{
+"nis": "44084",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1270
+},
+{
+"nis": "44085",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 98
+},
+{
+"nis": "44085",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 174
+},
+{
+"nis": "44085",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 84
+},
+{
+"nis": "44085",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 270
+},
+{
+"nis": "44085",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 14
+},
+{
+"nis": "44085",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 45
+},
+{
+"nis": "44085",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 737
+},
+{
+"nis": "44085",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1089
+},
+{
+"nis": "44086",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 149
+},
+{
+"nis": "44086",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 308
+},
+{
+"nis": "44086",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 305
+},
+{
+"nis": "44086",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 515
+},
+{
+"nis": "44086",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 443
+},
+{
+"nis": "44086",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 771
+},
+{
+"nis": "44087",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 139
+},
+{
+"nis": "44087",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 228
+},
+{
+"nis": "44087",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 245
+},
+{
+"nis": "44087",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 468
+},
+{
+"nis": "44087",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 795
+},
+{
+"nis": "44087",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1377
+},
+{
+"nis": "44088",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 242
+},
+{
+"nis": "44088",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 375
+},
+{
+"nis": "44088",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 339
+},
+{
+"nis": "44088",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 526
+},
+{
+"nis": "44088",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 999
+},
+{
+"nis": "44088",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1893
+},
+{
+"nis": "45035",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 21
+},
+{
+"nis": "45035",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 192
+},
+{
+"nis": "45035",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 188
+},
+{
+"nis": "45035",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 281
+},
+{
+"nis": "45035",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 31
+},
+{
+"nis": "45035",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 216
+},
+{
+"nis": "45035",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 848
+},
+{
+"nis": "45035",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1456
+},
+{
+"nis": "45041",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 230
+},
+{
+"nis": "45041",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 538
+},
+{
+"nis": "45041",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 3
+},
+{
+"nis": "45041",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 41
+},
+{
+"nis": "45041",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 747
+},
+{
+"nis": "45041",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1267
+},
+{
+"nis": "45059",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 95
+},
+{
+"nis": "45059",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 177
+},
+{
+"nis": "45059",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 86
+},
+{
+"nis": "45059",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 117
+},
+{
+"nis": "45059",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 283
+},
+{
+"nis": "45059",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 542
+},
+{
+"nis": "45060",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 136
+},
+{
+"nis": "45060",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 204
+},
+{
+"nis": "45060",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 181
+},
+{
+"nis": "45060",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 303
+},
+{
+"nis": "45061",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 86
+},
+{
+"nis": "45061",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 137
+},
+{
+"nis": "45061",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 93
+},
+{
+"nis": "45061",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 144
+},
+{
+"nis": "45062",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 26
+},
+{
+"nis": "45062",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 51
+},
+{
+"nis": "45063",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 44
+},
+{
+"nis": "45063",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 169
+},
+{
+"nis": "45063",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 343
+},
+{
+"nis": "45064",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 71
+},
+{
+"nis": "45064",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 120
+},
+{
+"nis": "45064",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 97
+},
+{
+"nis": "45064",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 150
+},
+{
+"nis": "45064",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 200
+},
+{
+"nis": "45064",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 337
+},
+{
+"nis": "45065",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 71
+},
+{
+"nis": "45065",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 104
+},
+{
+"nis": "45065",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 179
+},
+{
+"nis": "45065",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 270
+},
+{
+"nis": "45068",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 56
+},
+{
+"nis": "45068",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 64
+},
+{
+"nis": "45068",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 203
+},
+{
+"nis": "45068",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 396
+},
+{
+"nis": "45068",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 365
+},
+{
+"nis": "45068",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 566
+},
+{
+"nis": "46020",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 145
+},
+{
+"nis": "46020",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 215
+},
+{
+"nis": "46020",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 98
+},
+{
+"nis": "46020",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 393
+},
+{
+"nis": "46020",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 445
+},
+{
+"nis": "46020",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 492
+},
+{
+"nis": "46021",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 24
+},
+{
+"nis": "46021",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 200
+},
+{
+"nis": "46021",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 454
+},
+{
+"nis": "46021",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 764
+},
+{
+"nis": "46021",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 439
+},
+{
+"nis": "46021",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 717
+},
+{
+"nis": "46021",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 12
+},
+{
+"nis": "46021",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 369
+},
+{
+"nis": "46021",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 2448
+},
+{
+"nis": "46021",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 4452
+},
+{
+"nis": "46024",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 68
+},
+{
+"nis": "46024",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 132
+},
+{
+"nis": "46024",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 114
+},
+{
+"nis": "46024",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 180
+},
+{
+"nis": "46024",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 592
+},
+{
+"nis": "46024",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 945
+},
+{
+"nis": "46025",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 270
+},
+{
+"nis": "46025",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 490
+},
+{
+"nis": "46025",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 883
+},
+{
+"nis": "46025",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1480
+},
+{
+"nis": "46029",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 5
+},
+{
+"nis": "46029",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 119
+},
+{
+"nis": "46029",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 347
+},
+{
+"nis": "46029",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 549
+},
+{
+"nis": "46029",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 560
+},
+{
+"nis": "46029",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 951
+},
+{
+"nis": "46029",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 49
+},
+{
+"nis": "46029",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 302
+},
+{
+"nis": "46029",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 915
+},
+{
+"nis": "46029",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1575
+},
+{
+"nis": "46030",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 557
+},
+{
+"nis": "46030",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 866
+},
+{
+"nis": "46030",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 918
+},
+{
+"nis": "46030",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 1659
+},
+{
+"nis": "46030",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 190
+},
+{
+"nis": "46030",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 1849
+},
+{
+"nis": "46030",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 3152
+},
+{
+"nis": "57097",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 84
+},
+{
+"nis": "57097",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 87
+},
+{
+"nis": "71002",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 30
+},
+{
+"nis": "71002",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 72
+},
+{
+"nis": "71002",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 196
+},
+{
+"nis": "71002",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 322
+},
+{
+"nis": "71002",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 99
+},
+{
+"nis": "71002",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 157
+},
+{
+"nis": "71004",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 362
+},
+{
+"nis": "71004",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 594
+},
+{
+"nis": "71004",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 294
+},
+{
+"nis": "71004",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 533
+},
+{
+"nis": "71004",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 45
+},
+{
+"nis": "71004",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 334
+},
+{
+"nis": "71004",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 1070
+},
+{
+"nis": "71004",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1871
+},
+{
+"nis": "71011",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 85
+},
+{
+"nis": "71011",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 185
+},
+{
+"nis": "71011",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 152
+},
+{
+"nis": "71011",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 305
+},
+{
+"nis": "71011",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 24
+},
+{
+"nis": "71011",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 64
+},
+{
+"nis": "71011",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 365
+},
+{
+"nis": "71011",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 625
+},
+{
+"nis": "71016",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 30
+},
+{
+"nis": "71016",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 165
+},
+{
+"nis": "71016",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 590
+},
+{
+"nis": "71016",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 1019
+},
+{
+"nis": "71016",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 17
+},
+{
+"nis": "71016",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 270
+},
+{
+"nis": "71016",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 1605
+},
+{
+"nis": "71016",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 2815
+},
+{
+"nis": "71017",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 285
+},
+{
+"nis": "71017",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 498
+},
+{
+"nis": "71020",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 92
+},
+{
+"nis": "71020",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 192
+},
+{
+"nis": "71020",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 153
+},
+{
+"nis": "71020",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 306
+},
+{
+"nis": "71024",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 57
+},
+{
+"nis": "71024",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 106
+},
+{
+"nis": "71024",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 109
+},
+{
+"nis": "71024",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 350
+},
+{
+"nis": "71024",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 589
+},
+{
+"nis": "71034",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 167
+},
+{
+"nis": "71034",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 277
+},
+{
+"nis": "71034",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 452
+},
+{
+"nis": "71034",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 739
+},
+{
+"nis": "71037",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 65
+},
+{
+"nis": "71037",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 95
+},
+{
+"nis": "71037",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 134
+},
+{
+"nis": "71037",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 118
+},
+{
+"nis": "71037",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 450
+},
+{
+"nis": "71037",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 653
+},
+{
+"nis": "71045",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 46
+},
+{
+"nis": "71045",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 81
+},
+{
+"nis": "71045",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 41
+},
+{
+"nis": "71045",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 161
+},
+{
+"nis": "71045",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 358
+},
+{
+"nis": "71053",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 29
+},
+{
+"nis": "71053",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 177
+},
+{
+"nis": "71053",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 491
+},
+{
+"nis": "71053",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 989
+},
+{
+"nis": "71053",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 7
+},
+{
+"nis": "71053",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 137
+},
+{
+"nis": "71053",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 832
+},
+{
+"nis": "71053",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1477
+},
+{
+"nis": "71066",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 115
+},
+{
+"nis": "71066",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 154
+},
+{
+"nis": "71066",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 2
+},
+{
+"nis": "71066",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 20
+},
+{
+"nis": "71066",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 578
+},
+{
+"nis": "71066",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1100
+},
+{
+"nis": "71067",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 290
+},
+{
+"nis": "71067",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 466
+},
+{
+"nis": "71070",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 33
+},
+{
+"nis": "71070",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 94
+},
+{
+"nis": "71070",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 220
+},
+{
+"nis": "71070",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 399
+},
+{
+"nis": "71070",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 97
+},
+{
+"nis": "71070",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 134
+},
+{
+"nis": "71070",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 100
+},
+{
+"nis": "71070",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 852
+},
+{
+"nis": "71070",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1519
+},
+{
+"nis": "71071",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 177
+},
+{
+"nis": "71071",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 320
+},
+{
+"nis": "71071",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 13
+},
+{
+"nis": "71071",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 184
+},
+{
+"nis": "71071",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 742
+},
+{
+"nis": "71071",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1278
+},
+{
+"nis": "71072",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 54
+},
+{
+"nis": "71072",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 293
+},
+{
+"nis": "71072",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 433
+},
+{
+"nis": "71072",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 704
+},
+{
+"nis": "71072",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 727
+},
+{
+"nis": "71072",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 1289
+},
+{
+"nis": "71072",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 117
+},
+{
+"nis": "71072",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 774
+},
+{
+"nis": "71072",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 1583
+},
+{
+"nis": "71072",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 2710
+},
+{
+"nis": "72003",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 85
+},
+{
+"nis": "72003",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 114
+},
+{
+"nis": "72003",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 419
+},
+{
+"nis": "72003",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 640
+},
+{
+"nis": "72004",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 38
+},
+{
+"nis": "72004",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 65
+},
+{
+"nis": "72004",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 103
+},
+{
+"nis": "72004",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 508
+},
+{
+"nis": "72004",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 829
+},
+{
+"nis": "72018",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 62
+},
+{
+"nis": "72018",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 100
+},
+{
+"nis": "72018",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 170
+},
+{
+"nis": "72018",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 293
+},
+{
+"nis": "72018",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 213
+},
+{
+"nis": "72018",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 309
+},
+{
+"nis": "72020",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 28
+},
+{
+"nis": "72020",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 120
+},
+{
+"nis": "72020",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 197
+},
+{
+"nis": "72020",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 341
+},
+{
+"nis": "72020",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 153
+},
+{
+"nis": "72020",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 258
+},
+{
+"nis": "72020",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 9
+},
+{
+"nis": "72020",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 196
+},
+{
+"nis": "72020",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 794
+},
+{
+"nis": "72020",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1480
+},
+{
+"nis": "72021",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 147
+},
+{
+"nis": "72021",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 334
+},
+{
+"nis": "72021",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 31
+},
+{
+"nis": "72021",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 221
+},
+{
+"nis": "72021",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 609
+},
+{
+"nis": "72021",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1001
+},
+{
+"nis": "72030",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 140
+},
+{
+"nis": "72030",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 224
+},
+{
+"nis": "72030",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 40
+},
+{
+"nis": "72030",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 298
+},
+{
+"nis": "72030",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 449
+},
+{
+"nis": "72030",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 848
+},
+{
+"nis": "72037",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 47
+},
+{
+"nis": "72037",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 95
+},
+{
+"nis": "72037",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 438
+},
+{
+"nis": "72037",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 745
+},
+{
+"nis": "72038",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 45
+},
+{
+"nis": "72038",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 81
+},
+{
+"nis": "72038",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 94
+},
+{
+"nis": "72038",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 144
+},
+{
+"nis": "72038",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 290
+},
+{
+"nis": "72038",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 555
+},
+{
+"nis": "72039",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 119
+},
+{
+"nis": "72039",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 222
+},
+{
+"nis": "72039",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 322
+},
+{
+"nis": "72039",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 857
+},
+{
+"nis": "72039",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 7
+},
+{
+"nis": "72039",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 61
+},
+{
+"nis": "72039",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 765
+},
+{
+"nis": "72039",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1066
+},
+{
+"nis": "72041",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 119
+},
+{
+"nis": "72041",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 195
+},
+{
+"nis": "72041",
+"body": "Gemeente",
+"level": "Buitengewoon lager onderwijs",
+"n": 122
+},
+{
+"nis": "72041",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 365
+},
+{
+"nis": "72041",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 707
+},
+{
+"nis": "72041",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 227
+},
+{
+"nis": "72041",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 335
+},
+{
+"nis": "72042",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 81
+},
+{
+"nis": "72042",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 189
+},
+{
+"nis": "72042",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 631
+},
+{
+"nis": "72042",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1101
+},
+{
+"nis": "72043",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 57
+},
+{
+"nis": "72043",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 99
+},
+{
+"nis": "72043",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 14
+},
+{
+"nis": "72043",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 260
+},
+{
+"nis": "72043",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 1089
+},
+{
+"nis": "72043",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1862
+},
+{
+"nis": "73001",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 71
+},
+{
+"nis": "73001",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 145
+},
+{
+"nis": "73001",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 71
+},
+{
+"nis": "73001",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 126
+},
+{
+"nis": "73001",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 278
+},
+{
+"nis": "73001",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 463
+},
+{
+"nis": "73022",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 58
+},
+{
+"nis": "73022",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 97
+},
+{
+"nis": "73022",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 66
+},
+{
+"nis": "73022",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 126
+},
+{
+"nis": "73042",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 123
+},
+{
+"nis": "73042",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 261
+},
+{
+"nis": "73042",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 156
+},
+{
+"nis": "73042",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 282
+},
+{
+"nis": "73042",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 682
+},
+{
+"nis": "73042",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1049
+},
+{
+"nis": "73066",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 193
+},
+{
+"nis": "73066",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 350
+},
+{
+"nis": "73066",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 341
+},
+{
+"nis": "73066",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 558
+},
+{
+"nis": "73098",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 82
+},
+{
+"nis": "73098",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 149
+},
+{
+"nis": "73098",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 111
+},
+{
+"nis": "73098",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 208
+},
+{
+"nis": "73107",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 21
+},
+{
+"nis": "73107",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 88
+},
+{
+"nis": "73107",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 239
+},
+{
+"nis": "73107",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 427
+},
+{
+"nis": "73107",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 106
+},
+{
+"nis": "73107",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 164
+},
+{
+"nis": "73107",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 194
+},
+{
+"nis": "73107",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 1034
+},
+{
+"nis": "73107",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1746
+},
+{
+"nis": "73109",
+"body": "Provincie",
+"level": "Gewoon kleuteronderwijs",
+"n": 117
+},
+{
+"nis": "73109",
+"body": "Provincie",
+"level": "Gewoon lager onderwijs",
+"n": 184
+},
+{
+"nis": "73109",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 91
+},
+{
+"nis": "73109",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 97
+},
+{
+"nis": "73110",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 50
+},
+{
+"nis": "73110",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 117
+},
+{
+"nis": "73110",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 216
+},
+{
+"nis": "73110",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 440
+},
+{
+"nis": "73110",
+"body": "Vrij",
+"level": "Buitengewoon kleuteronderwijs",
+"n": 28
+},
+{
+"nis": "73110",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 333
+},
+{
+"nis": "73110",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 1040
+},
+{
+"nis": "73110",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1779
+},
+{
+"nis": "73111",
+"body": "Gemeenschapsonderwijs",
+"level": "Buitengewoon lager onderwijs",
+"n": 90
+},
+{
+"nis": "73111",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon kleuteronderwijs",
+"n": 269
+},
+{
+"nis": "73111",
+"body": "Gemeenschapsonderwijs",
+"level": "Gewoon lager onderwijs",
+"n": 623
+},
+{
+"nis": "73111",
+"body": "Gemeente",
+"level": "Gewoon kleuteronderwijs",
+"n": 219
+},
+{
+"nis": "73111",
+"body": "Gemeente",
+"level": "Gewoon lager onderwijs",
+"n": 497
+},
+{
+"nis": "73111",
+"body": "Vrij",
+"level": "Buitengewoon lager onderwijs",
+"n": 168
+},
+{
+"nis": "73111",
+"body": "Vrij",
+"level": "Gewoon kleuteronderwijs",
+"n": 865
+},
+{
+"nis": "73111",
+"body": "Vrij",
+"level": "Gewoon lager onderwijs",
+"n": 1411
+}
+]
+}
