@@ -1,0 +1,176 @@
+== None OK 5142 https://data.stat.gov.lv/api/v1/en/OSP_PUB/POP/IR/IRD/IRD041
+
+
+IRD041 [["AREA", ["LV", "LV00A", "LV006", "LV007", "LV00C", "LV008", "LV00B", "LV003", "LV009", "LV005", "LV0001000", "LV0002000", "LV0003000", "LV0031010", "LV0004000", "LV0005000", "LV0040010", "LV0006000", "LV0054010", "LV0007000", "LV0020000", "LV0021000", "LV0022000", "LV0023000", "LV0024000", "LV0025000", "LV0026000", "LV0027000", "LV0028000", "LV0029000", "LV0030000", "LV0031000", "LV0032000", "LV0033000", "LV0034000", "LV0035000", "LV0036000", "LV0037000", "LV0038001", "LV0038000", "LV0039000", "LV0040000", "LV0041000", "LV0042000", "LV0043000", "LV0044000", "LV0045000", "LV0046000", "LV0047000", "LV0048000", "LV0049000", "LV0051000", "LV0052000", "LV0053000", "LV0054000", "LV0055000", "LV0056000"], ["Latvia", "Riga statistical region (from 01.01.2024.)", "Riga statistical region (Riga) (before 01.01.2024.)  ", "Pierīga statistical region (before 01.01.2024.)", "Vidzeme statistical region (from 01.01.2024.)", "Vidzeme statistical region (before 01.01.2024.)", "Kurzeme statistical region (from 01.01.2024.)", "Kurzeme statistical region (before 01.01.2024.)", "Zemgale statistical region", "Latgale statistical region", "Riga", "Daugavpils", "Jelgava", "Jēkabpils", "Jūrmala", "Liepāja", "Ogre", "Rēzekne", "Valmiera", "Ventspils", "Aizkraukle municipality", "Alūksne municipality", "Augšdaugava municipality", "Ādaži municipality", "Balvi municipality", "Bauska municipality", "Cēsis municipality", "Dienvidkurzeme municipality", "Dobele municipality", "Gulbene municipality", "Jelgava municipality", "Jēkabpils municipality", "Krāslava municipality", "Kuldīga municipality", "Ķekava municipality", "Limbaži municipality", "Līvāni municipality", "Ludza municipality", "Madona municipality (from 01.07.2025.)", "Madona municipality (before 01.07.2025.)", "Mārupe municipality", "Ogre municipality", "Olaine municipality", "Preiļi municipality", "Rēzekne municipality", "Ropaži municipality", "Salaspils municipality", "Saldus municipality", "Saulkrasti municipality", "Sigulda municipality", "Smiltene municipality", "Talsi municipality", "Tukums municipality", "Valka municipality", "Valmiera municipality", "Varakļāni municipality", "Ventspils municipality"]], ["AGE", ["TOTAL", "Y0", "Y1", "Y2", "Y3", "Y4", "Y5", "Y6", "Y7", "Y8", "Y9", "Y10", "Y11", "Y12", "Y13", "Y14", "Y15", "Y16", "Y17", "Y18", "Y19", "Y20", "Y21", "Y22", "Y23", "Y24", "Y25", "Y26", "Y27", "Y28", "Y29", "Y30", "Y31", "Y32", "Y33", "Y34", "Y35", "Y36", "Y37", "Y38", "Y39", "Y40", "Y41", "Y42", "Y43", "Y44", "Y45", "Y46", "Y47", "Y48", "Y49", "Y50", "Y51", "Y52", "Y53", "Y54", "Y55", "Y56", "Y57", "Y58", "Y59", "Y60", "Y61", "Y62", "Y63", "Y64", "Y65", "Y66", "Y67", "Y68", "Y69", "Y_GE70", "Y70", "Y71", "Y72", "Y73", "Y74", "Y_GE75", "Y75", "Y76", "Y77", "Y78", "Y79", "Y_GE80", "Y80", "Y81", "Y82", "Y83", "Y84", "Y85", "Y86", "Y87", "Y88", "Y89", "Y90", "Y91", "Y92", "Y93", "Y94", "Y95", "Y96", "Y97", "Y98", "Y99", "Y_GE100", "Y0-4", "Y5-9", "Y10-14", "Y15-19", "Y20-24", "Y25-29", "Y30-34", "Y35-39", "Y40-44", "Y45-49", "Y50-54", "Y55-59", "Y60-64", "Y65-69", "Y70-74"], ["Total", "0 years", "1 year", "2 years", "3 years", "4 years", "5 years", "6 years", "7 years", "8 years", "9 years", "10 years", "11 years", "12 years", "13 years", "14 years", "15 years", "16 years", "17 years", "18 years", "19 years", "20 years", "21 years", "22 years", "23 years", "24 years", "25 years", "26 years", "27 years", "28 years", "29 years", "30 years", "31 years", "32 years", "33 years", "34 years", "35 years", "36 years", "37 years", "38 years", "39 years", "40 years", "41 years", "42 years", "43 years", "44 years", "45 years", "46 years", "47 years", "48 years", "49 years", "50 years", "51 years", "52 years", "53 years", "54 years", "55 years", "56 years", "57 years", "58 years", "59 years", "60 years", "61 years", "62 years", "63 years", "64 years", "65 years", "66 years", "67 years", "68 years", "69 years", "70 years and more", "70 years", "71 years", "72 years", "73 years", "74 years", "75 years and more", "75 years", "76 years", "77 years", "78 years", "79 years", "80 years and more", "80 years", "81 years", "82 years", "83 years", "84 years", "85 years", "86 years", "87 years", "88 years", "89 years", "90 years", "91 years", "92 years", "93 years", "94 years", "95 years", "96 years", "97 years", "98 years", "99 years", "100 years and more", "0–4 years", "5–9 years", "10–14 years", "15–19 years", "20–24 years", "25–29 years", "30–34 years", "35–39 years", "40–44 years", "45–49 years", "50–54 years", "55–59 years", "60–64 years", "65–69 years", "70–74 years"]], ["SEX", ["T", "M", "F"], ["Total", "Males", "Females"]], ["ContentsCode", ["IRD041"], ["Number"]], ["TIME", ["2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"], ["2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"]]]
+== lv_ird041.json OK 48611 https://data.stat.gov.lv/api/v1/en/OSP_PUB/POP/IR/IRD/IRD041
+{"version":"2.0","class":"dataset","label":"Population in regions, State cities and municipalities by age and gender at the beginning of the year by Territorial unit, Age, Sex and Time period","source
+
+== lv_pupils_by_school_20251001.csv OK 838378 https://data.gov.lv/dati/lv/dataset/3ef3dea2-20e6-47ae-addc-2f55d11f7be2/resource/a3450196-a7be-4378-a9ac-fbca6f64e16b/download/izglitojamoskvispizglprogrpaprogr_01102025.csv
+﻿Pasvaldiba,Iestades_registracijas_Nr,Iestades_nosaukums,Iestades_veids,Iestades_tips,Paklautiba,Faktiskais_dibinatajs,Adreses_ATVK_kods,Izglitibas_programmas_kods,Izglitibas_programmas_nosaukums,Izglitojamo_skaits_vecuma_lidz_5_gadu_vecumam,Izglitojamo_skaits_vecuma_5_gadi_un_vairak,Izglitojamo_skaits_pirmsskola_kopa,1_klase,2_klase,3_klase,4_klase,5_klase,6_klase,7_klase,8_klase,9_klase,10_klase,11_klase,12_klase,Kopa_1_12_klase,Kopejais_izglitojamo_skaits
+AIZKRAUKLES NOVADS,4501901606,"Neretas pirmsskolas izglītības iestāde 'Ziediņš'",Pirmsskolas izglītības iestāde,Pirmsskolas izglītības iestāde,Pašvaldība ,"Aizkraukles novada pašvaldība",020000,01011111,"Pirmsskolas izglītības programma",40,18,58,,,,,,,,,,,,,,58
+AIZKRAUKLES NOVADS,4501901608,"Bebru pirmsskolas izglītības iestāde 'Bitīte'",Pirmsskolas izglītības iestāde,Pirmsskolas izglītības iestāde,Pašvaldība ,"Aizkraukles novada pašvaldība",020000,01011111,"Pirmsskolas izglītības programma",34,23,57,,,,,,,,,,,,,,57
+AIZKRAUKLES NOVADS,4501901711,"Skrīveru pirmsskolas izglītības iestāde 'Sprīdītis'",Pirmsskolas izglītības iestāde,Pirmsskolas izglītības iestāde,Pašvaldība ,"Aiz
+
+== lv_special_by_muni_20251001.csv OK 5621 https://data.gov.lv/dati/dataset/b9bbd166-0ae6-423e-aed3-3a77f2a58f91/resource/ca236c1e-7dc0-46f5-ba98-a46e3d29f870/download/izglitojamoskvispizglprogrpapasvaldibam_01102025.csv
+﻿Pasvaldiba,Izglitojamo_skaits_vecuma_lidz_5_gadu_vecumam,Izglitojamo_skaits_vecuma_5_gadi_un_vairak,Izglitojamo_skaits_pirmsskola_kopa,1_klase,2_klase,3_klase,4_klase,5_klase,6_klase,7_klase,8_klase,9_klase,10_klase,11_klase,12_klase,Kopa_1_12_klase,Prof_pamatizgl_programmas_pie_specialas_izgl_iestadem,Kopejais_izglitojamo_skaits
+"AIZKRAUKLES NOVADS","707","500","1207","256","317","296","336","288","298","263","238","261","76","76","101","2806","18","4031"
+"ALŪKSNES NOVADS","292","249","541","127","102","114","106","130","128","121","97","110","66","76","42","1219","","1760"
+"AUGŠDAUGAVAS NOVADS","284","260","544","165","145","184","179","200","208","180","182","202","97","98","94","1934","61","2539"
+"BALVU NOVADS","384","271","655","165","167","137","162","156","139","156","154","152","95","74","110","1667","","2322"
+"BAUSKAS NOVADS","1138","912","2050","424","467","414","475","463","454","485","505","652","782","962","1285","7368","13","9431"
+"CĒSU NOVADS","1206","942","2148","457","476","492","499","551","459","448","431","392","190","191","195","4781","35","6964"
+"DAUGAVPILS","2051","1470","3521","758","843","841","906","863","827","835","766","746","549","566","47
+
+== None OK 4294 https://andmed.stat.ee/api/v1/en/stat/SK410
+
+
+== ee_sk410.json OK 18338 https://andmed.stat.ee/api/v1/en/stat/SK410
+{"class":"dataset","label":"SK410: SUBSISTENCE BENEFITS by Year, Region/Administrative unit and Indicator","source":"Statistics Estonia","updated":"2019-05-02T05:00:00Z","id":["Aasta","Piirkond/Haldus
+
+== None OK 12768 https://andmed.stat.ee/api/v1/en/stat/RV0240
+
+
+RV0240 [["Sugu", ["1", "2", "3"], ["Males and females", "Males", "Females"]], ["Elukoht", ["00", "H2", "H3", "H4", "H5", "H6", "H7", "H8", "H9", "H10", "H11", "H12", "H13", "H14", "H15", "H16", "H17", "H18", "H19", "H20", "H21", "H22", "H23", "H24", "H25", "37", "H27", "H28", "H29", "140"], ["Whole country", "..City settlement region", "..Town settlement region", "..Rural settlement region", "County unknown", "Northern Estonia", "..Northern Estonia: city settlement region", "..Northern Estonia: town settlement region", "..Northern Estonia: rural settlement region", "Central Estonia", "..Central Estonia: city settlement region", "..Central Estonia: town settlement region", "..Central Estonia: rural settlement region", "Northeastern Estonia", "..Northeastern Estonia: city settlement region", "..Northeastern Estonia: town settlement region", "..Northeastern Estonia: rural settlement region", "Southern Estonia", "..Southern Estonia: city settlement region", "..Southern Estonia: town settlement region", "..Southern Estonia: rural settlement region", "Western Estonia", "..Western Estonia: city settlement region", "..Western Estonia: town settlement region", "..Western Estonia: rural settlement region", "HARJU COUNTY", "..Harju county: city settlement region", "..Harju county: town settlement region", "..Harju county: rural settlement region", "..Anija rural municipality"]], ["Aasta", ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"], ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"]], ["Vanus", ["000", "0-17", "18-64", "65+", "DBL103", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"], ["Total", "0-17", "18-64", "65 and older", "85 and older", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"]]]
+== ee_rv0240.json OK 107472 https://andmed.stat.ee/api/v1/en/stat/RV0240
+{"class":"dataset","label":"RV0240: POPULATION, 1 JANUARY by Sex, Place of residence, Year and Age","source":"Statistics Estonia","updated":"2018-05-08T05:00:00Z","id":["Sugu","Elukoht","Aasta","Vanus
+
+== None ERR HTTP Error 400: Bad Request https://andmed.stat.ee/api/v1/en/stat/haridus/uldharidus
+
+== None ERR HTTP Error 400: Bad Request https://andmed.stat.ee/api/v1/en/stat/haridus/uldharidus
+
+== None ERR HTTP Error 400: Bad Request https://andmed.stat.ee/api/v1/en/stat/haridus/uldharidus
+
+EEH ERR the JSON object must be str, bytes or bytearray, not NoneType
+== None OK 100176 https://onderwijsdata.duo.nl/api/3/action/package_search?q=leerlingen%20vo%20vestiging&rows=15
+
+
+DUO[leerlingen vo vestiging] VO-leerlingen per vestiging naar onderwijstype, sector en afdeling. (modified 2023-05-02T13:30:23.352647): VO-leerlingen per vestiging naar onderwijstype, sector en afdeling. https://beheer-ggm-ckan-prd.apps.prd.duo.rijksapps.nl/dataset/173cbf21-1567-464a-bccd-518cd7a46bd0/resource/d49219cc-2f36-4c2d-8007-b385ba44ec8d/download/01voins.csv
+DUO[leerlingen vo vestiging] VO-leerlingen per vestiging en leerjaar naar postcode, plaats en gemeente. (modified 2023-05-02T13:26:16.839000): VO-leerlingen en leerjaar naar postcode, plaats en gemeente. https://beheer-ggm-ckan-prd.apps.prd.duo.rijksapps.nl/dataset/19c81dcb-a7c5-4410-8122-145f0996d082/resource/a0ca4915-9aae-4826-bf5b-6825ce95b8b4/download/02voins.csv
+DUO[leerlingen vo vestiging] Leerlingen po per vestiging (modified 2026-01-09T07:37:47.202194): Leerlingen po per vestiging https://onderwijsdata.duo.nl/dataset/cf80e90d-ed19-4a10-a138-00c5c345cb5e/resource/9278ae97-4014-49f4-91fc-8cc255c2595d/download/brin6_totaal.csv
+DUO[leerlingen vo vestiging] Prognoses vo per instelling (modified 2024-08-07T12:29:20.519189): Prognoses vo per instelling https://onderwijsdata.duo.nl/dataset/fa03fb37-6595-4e81-bd74-8818058bbcf9/resource/7a7ba341-1a01-47ed-9b94-c7f4aa478e88/download/brin4_prognosesvo.csv
+DUO[leerlingen vo vestiging] Leerlingen po per vestiging naar impulsgebied (modified 2025-02-04T12:27:33.350251): Leerlingen po per vestiging naar impulsgebied https://onderwijsdata.duo.nl/dataset/aaa5b511-8a03-46ec-bf56-7e454527ed99/resource/d9c04506-8c3c-41ea-80d7-de2255227419/download/brin6_impulsgebied.csv
+DUO[leerlingen vo vestiging] Leerlingen po per vestiging naar geslacht (modified 2026-01-27T08:45:31.105585): Leerlingen po per vestiging naar geslacht https://onderwijsdata.duo.nl/dataset/7239b972-8766-4077-b228-744870d790f5/resource/cbc1df7e-d201-4ae4-9c98-fbbf41e38864/download/brin6_geslacht.csv
+DUO[leerlingen vo vestiging] Leerlingen po per vestiging naar leeftijd (modified 2026-01-09T07:33:05.953714): Leerlingen po per vestiging naar leeftijd https://onderwijsdata.duo.nl/dataset/068b4ce0-3f3c-4db1-8633-a6dff2496078/resource/7c5b59d0-0754-4ca5-923a-9d4b26bedeb4/download/brin6_leeftijd.csv
+DUO[leerlingen vo vestiging] Leerlingen po per vestiging naar achtergrond (modified 2026-01-09T14:49:31.321172): Leerlingen sbo, so en vso per vestiging naar cumi https://onderwijsdata.duo.nl/dataset/e3ab98c0-881a-413a-ba8a-676dd1313593/resource/fb5290c9-b19e-46fb-9496-9582162a106a/download/brin6_cumi.csv ; Leerlingen bo per vestiging naar noat https://onderwijsdata.duo.nl/dataset/e3ab98c0-881a-413a-ba8a-676dd1313593/resource/2899e6a2-cfee-41a6-9250-43276db16e69/download/brin6_noat.csv
+DUO[leerlingen vo vestiging] Leerlingen bo per vestiging naar gewicht (modified 2023-04-07T12:39:03.005554): Leerlingen bo per vestiging naar gewicht https://beheer-ggm-ckan-prd.apps.prd.duo.rijksapps.nl/dataset/ee0b0510-d3fb-4c7f-b534-54e1aebbf954/resource/ed4c4738-9315-4a5c-8c65-2a0353ae7611/download/brin6_gewicht.csv
+DUO[leerlingen vo vestiging] Leerlingen po per vestiging naar postcode4 (modified 2026-01-09T07:45:13.123502): Leerlingen po per vestiging naar postcode4 https://onderwijsdata.duo.nl/dataset/4ea91ae5-51ef-48a4-aa67-7098343f75bc/resource/402c5a69-eea8-41b4-b8ad-ecac301c28a8/download/brin6_pc4.csv
+DUO[leerlingen vo vestiging] Leerlingen bo en sbo per vestiging naar advies (modified 2026-01-09T07:25:05.113340): Leerlingen bo en sbo per vestiging naar advies https://onderwijsdata.duo.nl/dataset/d6903313-8c64-4b12-b4ac-07e5655ef9f4/resource/454c5dd4-6815-4b52-ae2f-b9eebc6afa6d/download/brin6_advies.csv
+DUO[leerlingen vo vestiging] Leerlingen bo en sbo per vestiging naar leerjaar (modified 2026-01-09T07:45:46.125224): Leerlingen bo en sbo per vestiging naar leerjaar https://onderwijsdata.duo.nl/dataset/b1c8c9e6-f771-4e02-8888-af4673cec92c/resource/ddc2a9e9-ab70-4309-b32c-4ab824e2f157/download/brin6_leerjaar.csv
+DUO[leerlingen vo vestiging] Slagingspercentages en gemiddelde examencijfers per vestiging (modified 2023-03-23T15:14:18.862354): Slagingspercentages en gemiddelde examencijfers per vestiging https://beheer-ggm-ckan-prd.apps.prd.duo.rijksapps.nl/dataset/9ac19d12-2781-4e61-a26e-7122631dabb6/resource/0423457d-c69e-4950-a12c-51912fc48faf/download/03_voex.csv
+DUO[leerlingen vo vestiging] Aantal afgenomen examens en gemiddelde examencijfers per vak per vestiging (modified 2023-05-02T13:29:29.000147): Aantal afgenomen examens en gemiddelde examencijfers per vak per vestiging. https://beheer-ggm-ckan-prd.apps.prd.duo.rijksapps.nl/dataset/30ac7a0a-b848-4bf0-8b1d-40b54c7cad1b/resource/1d9cc55f-ac27-44a7-8269-9cc3a998c5ed/download/04_voex.csv
+DUO[leerlingen vo vestiging] Referentieniveau per toets en vestiging. (modified 2026-01-09T07:27:48.446577): Referentieniveau per toets en vestiging https://onderwijsdata.duo.nl/dataset/c62ea867-72d4-41ae-81af-8b4db27c5e52/resource/89920163-8b28-4e1a-b322-c3bb90f74f41/download/brin6_referentieniveau.csv
+== None OK 22434 https://onderwijsdata.duo.nl/api/3/action/package_search?q=vo%20leerlingen%20per%20vestiging%20onderwijstype&rows=15
+
+
+DUO[vo leerlingen per vestiging onderwijstype] VO-leerlingen per vestiging naar onderwijstype, sector en afdeling. (modified 2023-05-02T13:30:23.352647): VO-leerlingen per vestiging naar onderwijstype, sector en afdeling. https://beheer-ggm-ckan-prd.apps.prd.duo.rijksapps.nl/dataset/173cbf21-1567-464a-bccd-518cd7a46bd0/resource/d49219cc-2f36-4c2d-8007-b385ba44ec8d/download/01voins.csv
+DUO[vo leerlingen per vestiging onderwijstype] VO-leerlingen per vestiging en leerjaar naar postcode, plaats en gemeente. (modified 2023-05-02T13:26:16.839000): VO-leerlingen en leerjaar naar postcode, plaats en gemeente. https://beheer-ggm-ckan-prd.apps.prd.duo.rijksapps.nl/dataset/19c81dcb-a7c5-4410-8122-145f0996d082/resource/a0ca4915-9aae-4826-bf5b-6825ce95b8b4/download/02voins.csv
+DUO[vo leerlingen per vestiging onderwijstype] Aantal afgenomen examens en gemiddelde examencijfers per vak per vestiging (modified 2023-05-02T13:29:29.000147): Aantal afgenomen examens en gemiddelde examencijfers per vak per vestiging. https://beheer-ggm-ckan-prd.apps.prd.duo.rijksapps.nl/dataset/30ac7a0a-b848-4bf0-8b1d-40b54c7cad1b/resource/1d9cc55f-ac27-44a7-8269-9cc3a998c5ed/download/04_voex.csv
+DUO[vo leerlingen per vestiging onderwijstype] Slagingspercentages en gemiddelde examencijfers per vestiging (modified 2023-03-23T15:14:18.862354): Slagingspercentages en gemiddelde examencijfers per vestiging https://beheer-ggm-ckan-prd.apps.prd.duo.rijksapps.nl/dataset/9ac19d12-2781-4e61-a26e-7122631dabb6/resource/0423457d-c69e-4950-a12c-51912fc48faf/download/03_voex.csv
+== None OK 114162 https://onderwijsdata.duo.nl/api/3/action/package_search?q=aantal%20leerlingen%20voortgezet%20onderwijs&rows=15
+
+
+DUO[aantal leerlingen voortgezet onderwijs] Aantal leerlingen per cluster per schoolvestiging (modified 2026-01-09T07:33:08.537731): Aantal leerlingen per cluster per schoolvestiging https://onderwijsdata.duo.nl/dataset/93e8481b-c555-4d77-89fa-b05ea352e475/resource/034f89b5-a4da-4e75-9ead-c4cf7c2c7393/download/brin6_cluster.csv
+DUO[aantal leerlingen voortgezet onderwijs] Aantal afgenomen examens en gemiddelde examencijfers per vak per vestiging (modified 2023-05-02T13:29:29.000147): Aantal afgenomen examens en gemiddelde examencijfers per vak per vestiging. https://beheer-ggm-ckan-prd.apps.prd.duo.rijksapps.nl/dataset/30ac7a0a-b848-4bf0-8b1d-40b54c7cad1b/resource/1d9cc55f-ac27-44a7-8269-9cc3a998c5ed/download/04_voex.csv
+DUO[aantal leerlingen voortgezet onderwijs] Leerlingen SO en VSO (modified 2025-04-23T10:50:38.761519): Leerlingen so en vso per samenwerkingsverband naar bekostigingscategorie https://onderwijsdata.duo.nl/dataset/b4c931a3-b5c9-4ad9-a2bc-194d30be8d98/resource/fe64829d-06c9-443c-8f98-8be4d6f5bbb7/download/___ ; Leerlingen so en vso per samenwerkingsverband, residenti�le plaatsen https://onderwijsdata.duo.nl/dataset/b4c931a3-b5c9-4ad9-a2bc-194d30be8d98/resource/f8af6861-5630-4594-a6be-712dd2041389/download/so_vso_rp.csv ; Leerlingen so en vso per samenwerkingsverband naar uitstroomprofiel https://onderwijsdata.duo.nl/dataset/b4c931a3-b5c9-4ad9-a2bc-194d30be8d98/resource/d1021ca3-8978-4659-bb59-4a8d896fb884/download/so_vso_uitstroom.csv
+DUO[aantal leerlingen voortgezet onderwijs] Leerlingen po per vestiging naar achtergrond (modified 2026-01-09T14:49:31.321172): Leerlingen sbo, so en vso per vestiging naar cumi https://onderwijsdata.duo.nl/dataset/e3ab98c0-881a-413a-ba8a-676dd1313593/resource/fb5290c9-b19e-46fb-9496-9582162a106a/download/brin6_cumi.csv ; Leerlingen bo per vestiging naar noat https://onderwijsdata.duo.nl/dataset/e3ab98c0-881a-413a-ba8a-676dd1313593/resource/2899e6a2-cfee-41a6-9250-43276db16e69/download/brin6_noat.csv
+DUO[aantal leerlingen voortgezet onderwijs] Leerlingen bo en sbo per vestiging naar advies (modified 2026-01-09T07:25:05.113340): Leerlingen bo en sbo per vestiging naar advies https://onderwijsdata.duo.nl/dataset/d6903313-8c64-4b12-b4ac-07e5655ef9f4/resource/454c5dd4-6815-4b52-ae2f-b9eebc6afa6d/download/brin6_advies.csv
+DUO[aantal leerlingen voortgezet onderwijs] VO-leerlingen per vestiging naar onderwijstype, sector en afdeling. (modified 2023-05-02T13:30:23.352647): VO-leerlingen per vestiging naar onderwijstype, sector en afdeling. https://beheer-ggm-ckan-prd.apps.prd.duo.rijksapps.nl/dataset/173cbf21-1567-464a-bccd-518cd7a46bd0/resource/d49219cc-2f36-4c2d-8007-b385ba44ec8d/download/01voins.csv
+DUO[aantal leerlingen voortgezet onderwijs] Leerlingen po per gemeente (modified 2026-01-09T07:05:35.261572): Leerlingen po per gemeente naar geslacht https://onderwijsdata.duo.nl/dataset/800ba8ae-b1a2-4023-b4bf-d9aa7a807b1d/resource/f6c423ae-db72-453a-be28-9885fbbe392e/download/gemeente_geslacht.csv ; Leerlingen po per gemeente naar leeftijd https://onderwijsdata.duo.nl/dataset/800ba8ae-b1a2-4023-b4bf-d9aa7a807b1d/resource/f1771ce8-cb13-4c18-a255-9c473dd7602f/download/gemeente_leeftijd.csv ; Leerlingen po per gemeente naar postcode4 https://onderwijsdata.duo.nl/dataset/800ba8ae-b1a2-4023-b4bf-d9aa7a807b1d/resource/386e4aa9-b70a-45b5-9e45-9bd5a987f3be/download/gemeente_pc4.csv
+DUO[aantal leerlingen voortgezet onderwijs] Leerlingen po per samenwerkingsverband (modified 2026-01-09T07:14:08.816741): Leerlingen po per Samenwerkingsverband naar geslacht https://onderwijsdata.duo.nl/dataset/89d18feb-146c-4d8e-9dbe-87dacd6e29c0/resource/e468a90a-9435-4854-9285-17ba5709a46d/download/swv_geslacht.csv ; Leerlingen po per Samenwerkingsverband naar leeftijd https://onderwijsdata.duo.nl/dataset/89d18feb-146c-4d8e-9dbe-87dacd6e29c0/resource/c45164f1-e894-47db-a94e-9bbd5e4a3759/download/swv_geslacht.csv ; Leerlingen po per Samenwerkingsverband naar postcode4 https://onderwijsdata.duo.nl/dataset/89d18feb-146c-4d8e-9dbe-87dacd6e29c0/resource/37467812-d271-44e2-90f9-d8c0ec7a1fb3/download/swv_pc4.csv
+DUO[aantal leerlingen voortgezet onderwijs] VO-leerlingen per vestiging en leerjaar naar postcode, plaats en gemeente. (modified 2023-05-02T13:26:16.839000): VO-leerlingen en leerjaar naar postcode, plaats en gemeente. https://beheer-ggm-ckan-prd.apps.prd.duo.rijksapps.nl/dataset/19c81dcb-a7c5-4410-8122-145f0996d082/resource/a0ca4915-9aae-4826-bf5b-6825ce95b8b4/download/02voins.csv
+DUO[aantal leerlingen voortgezet onderwijs] Leerlingen po per vestiging (modified 2026-01-09T07:37:47.202194): Leerlingen po per vestiging https://onderwijsdata.duo.nl/dataset/cf80e90d-ed19-4a10-a138-00c5c345cb5e/resource/9278ae97-4014-49f4-91fc-8cc255c2595d/download/brin6_totaal.csv
+DUO[aantal leerlingen voortgezet onderwijs] Leerlingen po per bevoegd gezag (modified 2026-01-09T07:21:11.441774): Leerlingen po per bevoegd gezag naar geslacht https://onderwijsdata.duo.nl/dataset/9b0ea6ef-372c-4a5f-b9d2-8ef79b78a86a/resource/a9a89541-e8c1-4ad6-b6f2-cc7450652c47/download/bestuur_geslacht.csv ; Leerlingen po per bevoegd gezag naar postcode4 https://onderwijsdata.duo.nl/dataset/9b0ea6ef-372c-4a5f-b9d2-8ef79b78a86a/resource/931eefaa-e8bd-4d2f-a433-6cc2ba9421ba/download/bestuur_pc4.csv ; Leerlingen po per bevoegd gezag naar leeftijd https://onderwijsdata.duo.nl/dataset/9b0ea6ef-372c-4a5f-b9d2-8ef79b78a86a/resource/6b24745e-d8b7-4940-82e8-50e9a964ee38/download/bestuur_leeftijd.csv
+DUO[aantal leerlingen voortgezet onderwijs] Leerlingen po per vestiging naar impulsgebied (modified 2025-02-04T12:27:33.350251): Leerlingen po per vestiging naar impulsgebied https://onderwijsdata.duo.nl/dataset/aaa5b511-8a03-46ec-bf56-7e454527ed99/resource/d9c04506-8c3c-41ea-80d7-de2255227419/download/brin6_impulsgebied.csv
+DUO[aantal leerlingen voortgezet onderwijs] Leerlingen bo per vestiging naar gewicht (modified 2023-04-07T12:39:03.005554): Leerlingen bo per vestiging naar gewicht https://beheer-ggm-ckan-prd.apps.prd.duo.rijksapps.nl/dataset/ee0b0510-d3fb-4c7f-b534-54e1aebbf954/resource/ed4c4738-9315-4a5c-8c65-2a0353ae7611/download/brin6_gewicht.csv
+DUO[aantal leerlingen voortgezet onderwijs] Leerlingen po per vestiging naar geslacht (modified 2026-01-27T08:45:31.105585): Leerlingen po per vestiging naar geslacht https://onderwijsdata.duo.nl/dataset/7239b972-8766-4077-b228-744870d790f5/resource/cbc1df7e-d201-4ae4-9c98-fbbf41e38864/download/brin6_geslacht.csv
+DUO[aantal leerlingen voortgezet onderwijs] Leerlingen po per vestiging naar leeftijd (modified 2026-01-09T07:33:05.953714): Leerlingen po per vestiging naar leeftijd https://onderwijsdata.duo.nl/dataset/068b4ce0-3f3c-4db1-8633-a6dff2496078/resource/7c5b59d0-0754-4ca5-923a-9d4b26bedeb4/download/brin6_leeftijd.csv
+YT rc 0
+ds -> Jēkabpils novada pašvaldība 2
+LV Jūrmala ->  
+EE Kose vald -> Kose Vald märgatud 0
+LV Krāslavas novads -> Krāslavas novads 0
+EE Kuusalu vald -> Kuusalu vald 0
+EE Loksa linn ->  
+EE Luunja vald -> Luunja vald 0
+LV Kuldīgas novads -> Kuldīgas novads 0
+LV Liepāja ->  
+EE Lääne-Harju vald -> Lääne-Harju vald 0
+EE Lääne-Nigula vald -> Lääne-Nigula vald 0
+LV Limbažu novads -> Limbažu novads 18
+EE Lääneranna vald -> Lääneranna vald 0
+LV Ludzas novads ->  
+EE Lüganuse vald ->  
+EE Maardu linn ->  
+EE Muhu vald ->  
+EE Mulgi vald -> Mulgi Vald 0
+LV Līvānu novads -> Līvānu novads 18
+EE Mustvee vald -> Mustvee Vald 0
+LV Madonas novads -> Madonas novada pašvaldība domes sēde 7
+EE Märjamaa vald ->  
+EE Narva linn -> Narva Linnavolikogu 0
+LV Mārupes novads -> Mārupes  novada pašvaldības domes sēdes 10
+EE Narva-Jõesuu linn ->  
+EE Nõo vald -> Nõo Vallavalitsus 0
+EE Otepää vald ->  
+LV Ogres novads -> Ogres novads 2
+EE Paide linn -> Paide linna noortevolikogu 0
+EE Peipsiääre vald ->  
+LV Olaines novads -> Olaines novada pašvaldība. 0
+EE Pärnu linn -> Pärnu Linnavolikogu 0
+EE Põhja-Pärnumaa vald ->  
+LV Preiļu novads -> Preiļu novada pašvaldība 38
+LV Ropažu novads ->  
+EE Põhja-Sakala vald -> Põhja-Sakala Vallavalitsus 0
+LV Rēzekne -> Rēzeknes Pilsēta 0
+EE Põltsamaa vald -> Põltsamaa Vallavalitsus 0
+EE Põlva vald -> Põlva vald 1
+EE Raasiku vald ->  
+LV Rēzeknes novads -> Rēzeknes novads 80
+EE Rae vald -> Rae vald 0
+LV Rīga ->  
+LV Salaspils novads ->  
+EE Rakvere linn -> Rakvere Linnavalitsus 0
+EE Rakvere vald -> Rakvere Linnavalitsus 0
+LV Saldus novads -> Saldus novada pašvaldība 96
+EE Rapla vald -> Rapla Vallavalitsus 0
+EE Ruhnu vald ->  
+LV Saulkrastu novads -> Saulkrastu novada domes sēdes 0
+EE Räpina vald -> Räpina Vald 0
+EE Rõuge vald -> Rõuge Vallavalitsus 0
+LV Siguldas novads -> Siguldas Novads 0
+EE Saarde vald -> Saarde Vald 0
+LV Smiltenes novads -> Smiltenes novads 0
+EE Saaremaa vald -> Saaremaa vald 0
+EE Saku vald -> Saku Vallavalitsus 0
+EE Saue vald ->  
+LV Talsu novads -> Talsu novada pašvaldība 0
+EE Setomaa vald -> Setomaa Vald 0
+EE Sillamäe linn ->  
+LV Tukuma novads -> Tukuma novada pašvaldība 0
+EE Tallinn ->  
+EE Tapa vald -> Tapa vald 0
+LV Valkas novads -> Valkas Novads 0
+EE Tartu linn -> Tartu linn 0
+LV Valmieras novads -> Valmieras novada pašvaldība 0
+EE Tartu vald -> Tartu vald 0
+EE Toila vald ->  
+LV Varakļānu novads -> Varakļānu novada pašvaldība 0
+EE Tori vald -> Tori Vallavalitsus 0
+LV Ventspils -> Ventspils novada pašvaldība 0
+LV Ventspils novads -> Ventspils novada pašvaldība 0
+EE Tõrva vald -> Tõrva vald 0
+EE Türi vald -> Türi vald 0
+LV Ādažu novads -> Ādažu novada dome 53
+EE Valga vald -> Valga Vald 0
+EE Viimsi vald -> Viimsi vald 0
+LV Ķekavas novads -> Ķekavas novada dome 0
+EE Viljandi linn -> Viljandi vald 0
+EE Viljandi vald -> Viljandi vald 0
+EE Vinni vald -> Vinni Vald 0
+EE Viru-Nigula vald -> Viru-Nigula vald 0
+EE Vormsi vald -> Vormsi Vald 0
+EE Väike-Maarja vald ->  
+EE Võru linn -> Võru vald 0
+EE Võru vald -> Võru vald 0
+
+
