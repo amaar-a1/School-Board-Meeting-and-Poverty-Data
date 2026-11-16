@@ -1,0 +1,261 @@
+== cat_cols.json OK 16524 https://analisi.transparenciacatalunya.cat/api/views/xvme-26kg.json
+{
+  "id" : "xvme-26kg",
+  "name" : "Alumnes matriculats per ensenyament i unitats dels centres docents",
+  "assetType" : "dataset",
+  "attribution" : "Departament d'Educació i Formació Professionalf
+
+CAT COLUMNS ['curs', 'any', 'codi_centre', 'denominaci_completa', 'codi_naturalesa', 'nom_naturalesa', 'codi_titularitat', 'nom_titularitat', 'codi_delegaci', 'nom_delegaci', 'codi_comarca', 'nom_comarca', 'codi_municipi_5', 'codi_municip_6', 'nom_municipi', 'codi_districte_municipal', 'nom_dm', 'coordenades_utm_x', 'coordenades_utm_y', 'coordenades_geo_x', 'coordenades_geo_y', 'codi_estudis', 'nom_estudis', 'tem_tica', 'grau', 'codi_ensenyament', 'nom_ensenyament', 'nivell', 'matr_cula_concertada', 'modalitat', 'per_ode_matr_cula', 'matr_cules_total', 'matr_cules_dones', 'matr_cules_homes', 'unitats', 'georefer_ncia']
+== cat_row.json OK 874 https://analisi.transparenciacatalunya.cat/resource/xvme-26kg.json?$limit=1&$where=curs%3D%272025/2026%27%20AND%20nom_naturalesa%3D%27P%C3%BAblic%27
+[{"curs":"2025/2026","any":"2025","codi_centre":"08000086","denominaci_completa":"Escola La Forja - ZER Alt Lluçanès","codi_naturalesa":"1","nom_naturalesa":"Públic","codi_titularitat":"01","nom_titularitat":"Departament d'Educació i Formació Professional","codi_delegaci":"1060","nom_delegaci":"Catalunya Central","codi_comarca":"43","nom_comarca":"Lluçanès","codi_municipi_5":"08004","codi_municip_6":"080044","nom_municipi":"Alpens","codi_districte_municipal":"00","coordenades_utm_x":"425684","coordenades_utm_y":"4663541","coordenades_geo_x":"2.100956","coordenades_geo_y":"42.12045","codi_estudis":"EPRI","nom_estudis":"EDUCACIÓ PRIMÀRIA","codi_ensenyament":"EPRILOE","nom_ensenyament":"EDUCACIÓ PRIMÀRIA","nivell":"5","modalitat":"PRESENCIAL","per_ode_matr_cula":"ANUAL","matr_cules_total":"7","matr_cules_dones":"5","matr_cules_homes":"2","unitats":"0"}]
+
+
+== None OK 112997961 https://opendata.dataplatform-onderwijs.vlaanderen.be/dataloep/inschrijvingen-leerplicht-instellingen-dataset-2024-2025-1feb.csv
+"schooljaar","teldatum","ab_stroom","administratieve_groep_code","administratieve_groep","leerweg","standaardtraject","fase","graad_so_code","graad_so","hoofdstructuur_aanbieder_code","hoofdstructuur_inschrijving_code","hoofdstructuur_inschrijving","leerjaar_code","leerjaar","onderwijsstelsel","onderwijsvorm","opleiding","opleidingsvorm","studiegebied","studierichting","taal_code","type_buitengewoon_onderwijs","onderwijsnet","soort_inrichtende_macht","instelling_naam","school_krijgt_omkadering_gok","scholengemeenschap","schoolbestuur","begeleidend_clb","geslacht","belg_nietbelg","eu_nieteu","vestigingsplaats_adres","domein","finaliteit","instellingsnummer","intern_volgnr_vpl","vestiging_fusiegemeente_naam","vestiging_provincie_naam","vestiging_fusiegemeente_nis","instelling_fusiegemeente_naam","instelling_provincie_naam","instelling_fusiegemeente_nis","aantal_inschrijvingen"
+"2024-2025","1 februari","Niet van toepassing","14902","3de leerjaar","Niet van toepassing","Niet van toepassing","n.v.t.","n.v.t.","n.v.t.","211","211","Gewoon lager onderwijs","3","3e leerjaar","Lineair stelsel","n.v.t.","Opleiding niet van toepassing","Opleidingsvorm niet van toepassing","n.v.t. (modernisering SO)","Studierichting niet van toepassing","nl","","OGO","Gemeente","GBS Scheut","n.v.t.","Samen Gem.ond.Anderlecht","Gemeentebestuur van Anderlecht","CLB N-Brussel","Mannelijk","niet-Belg","niet-EU","Anderlecht, Léopold De Swaefstraat 38","n.v.t. (nog niet in modernisering SO)","n.v.t. (nog niet
+
+VL rows 160572 cols ['schooljaar', 'teldatum', 'ab_stroom', 'administratieve_groep_code', 'administratieve_groep', 'leerweg', 'standaardtraject', 'fase', 'graad_so_code', 'graad_so', 'hoofdstructuur_aanbieder_code', 'hoofdstructuur_inschrijving_code', 'hoofdstructuur_inschrijving', 'leerjaar_code', 'leerjaar', 'onderwijsstelsel', 'onderwijsvorm', 'opleiding', 'opleidingsvorm', 'studiegebied', 'studierichting', 'taal_code', 'type_buitengewoon_onderwijs', 'onderwijsnet', 'soort_inrichtende_macht', 'instelling_naam', 'school_krijgt_omkadering_gok', 'scholengemeenschap', 'schoolbestuur', 'begeleidend_clb', 'geslacht', 'belg_nietbelg', 'eu_nieteu', 'vestigingsplaats_adres', 'domein', 'finaliteit', 'instellingsnummer', 'intern_volgnr_vpl', 'vestiging_fusiegemeente_naam', 'vestiging_provincie_naam', 'vestiging_fusiegemeente_nis', 'instelling_fusiegemeente_naam', 'instelling_provincie_naam', 'instelling_fusiegemeente_nis', 'aantal_inschrijvingen']
+  VL schooljaar: {'2024-2025': 160572}
+  VL teldatum: {'1 februari': 160572}
+  VL ab_stroom: {'Niet van toepassing': 144136, 'A-stroom': 11407, 'B-stroom': 5029}
+  VL leerweg: {'Niet van toepassing': 155759, 'Duaal leren': 2680, 'Aanloopfase duaal leren': 2133}
+  VL fase: {'n.v.t.': 155488, 'Opleidingsfase': 2179, 'Observatiefase': 511, 'Kwalificatiefase': 1995, 'Integratiefase': 399}
+  VL graad_so_code: {'n.v.t.': 80507, '2': 27870, '3': 33875, '1': 16436, 'n.v.t. (hbo)': 690, 'n.v.t. (okan)': 685, 'n.v.t. (dbso)': 463, 'n.v.t. (modulair)': 28, '4': 18}
+  VL graad_so: {'n.v.t.': 80507, '2e graad': 27870, '3e graad': 33875, '1e graad': 16436, 'n.v.t. (hbo)': 690, 'n.v.t. (okan)': 685, 'n.v.t. (dbso)': 463, 'n.v.t. (modulair)': 28, '4e graad': 18}
+  VL hoofdstructuur_aanbieder_code: {'211': 57186, '111': 13821, '311': 73635, '312': 3858, '221': 2232, '321': 8485, '315': 621, '121': 734}
+  VL hoofdstructuur_inschrijving_code: {'211': 57186, '111': 13821, '311': 77651, '221': 2232, '321': 8485, '121': 734, '312': 463}
+  VL hoofdstructuur_inschrijving: {'Gewoon lager onderwijs': 57186, 'Gewoon kleuteronderwijs': 13821, 'Voltijds gewoon secundair onderwijs': 77651, 'Buitengewoon lager onderwijs': 2232, 'Buitengewoon secundair onderwijs': 8485, 'Buitengewoon kleuteronderwijs': 734, 'Deeltijds beroepssecundair onderwijs': 463}
+  VL leerjaar_code: {'3': 14070, '1': 40710, '/': 20110, '6': 9224, '5': 10130, '2': 39048, '4': 10632, '2A': 7608, 'Se-n-Se': 212, '2B': 2940, '1B': 2089, '1A': 3799}
+  VL leerjaar: {'3e leerjaar': 14070, '1e leerjaar': 40710, 'n.v.t.': 20110, '6e leerjaar': 9224, '5e leerjaar': 10130, '2e leerjaar': 39048, '4e leerjaar': 10632, '2e leerjaar A': 7608, 'Se-n-Se/7e leerjaar tso of kso': 212, '2e leerjaar B': 2940, '1e leerjaar B': 2089, '1e leerjaar A': 3799}
+  VL onderwijsstelsel: {'Lineair stelsel': 159504, 'Modulair stelsel': 1068}
+  VL onderwijsvorm: {'n.v.t.': 80514, 'tso': 19091, 'bso': 21266, 'aso': 19690, 'n.v.t. (1e graad)': 16436, 'kso': 1737, 'n.v.t. (hbo)': 690, 'n.v.t. (okan)': 685, 'n.v.t. (dbso)': 463}
+  VL opleidingsvorm: {'Opleidingsvorm niet van toepassing': 152087, 'Beroepsonderwijs': 5086, 'Soc.aanpassing en arbeidsgeschiktmaking': 726, 'Algemeen,technisch,kunst- en beroepsond.': 1949, 'Sociale aanpassing': 724}
+  VL studiegebied: {'n.v.t. (modernisering SO)': 139243, 'n.v.t. (naamloos leerjaar/7e leerjaar bso gericht op hoger onderwijs)': 166, 'n.v.t. (1e graad)': 16436, 'Personenzorg': 1500, 'Koeling en warmte': 78, 'Handel': 695, 'n.v.t. (okan)': 685, 'Mechanica-elektriciteit': 421, 'Podiumkunsten': 26, 'Lichaamsverzorging': 160, 'Auto': 184, 'Muziekinstrumentenbouw': 7, 'Land- en tuinbouw': 146, 'Hout': 191, 'Maatschappelijke veiligheid': 60, 'Decoratieve technieken': 91, 'Bouw': 94, 'Voeding': 181, 'Algemeen secundair onderwijs': 31, 'Chemie': 32, 'Grafische communicatie en media': 40, 'Mode': 51, 'Beeldende kunsten': 11, 'Sport': 10, 'Tandtechnieken': 6, 'Maritieme opleidingen': 4, 'Toerisme': 13, 'Juwelen': 7, 'Optiek': 3}
+  VL taal_code: {'nl': 160189, 'fr': 383}
+  VL type_buitengewoon_onderwijs: {'': 149121, 'Type 7': 290, 'Type BA': 3983, 'Type 2': 1559, 'Type 3': 1237, 'Type 9': 3716, 'Type 4': 549, 'Type 6': 117}
+  VL onderwijsnet: {'OGO': 24600, 'GO': 38357, 'VGO': 97615}
+  VL soort_inrichtende_macht: {'Gemeente': 21028, 'Gemeenschapsonderwijs': 38357, 'Vrij': 97615, 'VGC': 122, 'Provincie': 3450}
+  VL school_krijgt_omkadering_gok: {'n.v.t.': 72371, 'GOK-school': 73803, 'Geen GOK-school': 14398}
+  VL geslacht: {'Mannelijk': 83369, 'Vrouwelijk': 77203}
+  VL belg_nietbelg: {'niet-Belg': 64897, 'Belg': 95675}
+  VL eu_nieteu: {'niet-EU': 29811, 'EU': 130761}
+  VL domein: {'n.v.t. (nog niet in modernisering SO)': 78363, 'ECONOMIE EN ORGANISATIE': 10324, 'VOEDING EN HORECA': 2688, 'DOMEINOVERSCHRIJDEND': 19659, 'n.v.t. (1e graad)': 16436, 'KUNST EN CREATIE': 2278, 'n.v.t. (hbo)': 690, 'STEM': 13523, 'n.v.t.': 1457, 'n.v.t. (observatiefase)': 511, 'MAATSCHAPPIJ EN WELZIJN': 10103, 'LAND- EN TUINBOUW': 1563, 'TAAL EN CULTUUR': 1269, 'n.v.t. (okan)': 685, 'SPORT': 1023}
+  VL finaliteit: {'n.v.t. (nog niet in modernisering SO)': 78363, 'Dubbele finaliteit': 14314, 'Arbeidsmarktfinaliteit': 22187, 'Doorstroomfinaliteit': 25929, 'n.v.t. (1e graad)': 16436, 'n.v.t. (hbo)': 690, 'n.v.t.': 1457, 'n.v.t. (observatiefase)': 511, 'n.v.t. (okan)': 685}
+  VL intern_volgnr_vpl: {'1.0': 123999, '4.0': 3760, '3.0': 7841, '8.0': 612, '2.0': 18178, '5.0': 2162, '15.0': 267, '18.0': 189, '6.0': 1243, '12.0': 136, '10.0': 399, '9.0': 361, '13.0': 126, '7.0': 505, '14.0': 309, '16.0': 68, '25.0': 19, '11.0': 239, '23.0': 36, '22.0': 47, '19.0': 24, '21.0': 17, '24.0': 15, '20.0': 14, '17.0': 6}
+  VL vestiging_provincie_naam: {'Brussels Hoofdstedelijk Gewest': 7713, 'Antwerpen': 45388, 'West-Vlaanderen': 27184, 'Vlaams-Brabant': 21447, 'Oost-Vlaanderen': 36199, 'Limburg': 22618, 'Henegouwen': 23}
+  VL instelling_provincie_naam: {'Brussels Hoofdstedelijk Gewest': 8235, 'Antwerpen': 45207, 'West-Vlaanderen': 27259, 'Vlaams-Brabant': 21387, 'Oost-Vlaanderen': 35990, 'Limburg': 22471, 'Henegouwen': 23}
+== None OK 16550 https://www.odwb.be/api/explore/v2.1/catalog/datasets/2432000
+
+
+ODWB 2432000: Élèves inscrits dans le maternel (par entité de scolarisation) de WalStat | fields ['ins', 'type_entite', 'entite', 'periode', 'nombre_d_eleves_inscrits_dans_le_maternel_par_entite_de_scolarisation', 'type_et_entite', 'geo_shape', 'geo_point_2d', 'arrondissement', 'province']
+== None OK 16491 https://www.odwb.be/api/explore/v2.1/catalog/datasets/243300
+
+
+ODWB 243300: Élèves inscrits dans le primaire (par entité de scolarisation) de WalStat | fields ['ins', 'type_entite', 'entite', 'periode', 'nombre_d_eleves_inscrits_dans_le_primaire_par_entite_de_scolarisation', 'type_et_entite', 'geo_shape', 'geo_point_2d', 'arrondissement', 'province']
+== None OK 24096 https://www.odwb.be/api/explore/v2.1/catalog/datasets/2435000
+
+
+ODWB 2435000: Part des élèves du maternel fréquentant une école de leur commune de WalStat | fields ['ins', 'type_entite', 'entite', 'periode', 'part_des_eleves_du_maternel_frequentant_une_ecole_de_leur_commune', 'type_et_entite', 'geo_shape', 'geo_point_2d', 'arrondissement', 'province']
+== None OK 22988 https://www.odwb.be/api/explore/v2.1/catalog/datasets/2437010
+
+
+ODWB 2437010: Pourcentage d’élèves avec un retard scolaire de plus d’un an dans le secondaire de WalStat | fields ['ins', 'type_entite', 'entite', 'periode', 'part_d_eleves_du_secondaire_en_retard', 'type_et_entite', 'geo_shape', 'geo_point_2d', 'arrondissement', 'province']
+== None OK 26277 https://www.odwb.be/api/explore/v2.1/catalog/datasets/243700
+
+
+ODWB 243700: Part des élèves du secondaire fréquentant une école de leur commune de WalStat | fields ['ins', 'type_entite', 'entite', 'periode', 'part_des_eleves_du_secondaire_frequentant_une_ecole_de_leur_commune', 'type_et_entite', 'geo_shape', 'geo_point_2d', 'arrondissement', 'province']
+== None OK 16530 https://www.odwb.be/api/explore/v2.1/catalog/datasets/2434000
+
+
+ODWB 2434000: Élèves inscrits dans le secondaire (par entité de scolarisation) de WalStat | fields ['ins', 'type_entite', 'entite', 'periode', 'nombre_d_eleves_inscrits_dans_le_secondaire_par_entite_de_scolarisation', 'type_et_entite', 'geo_shape', 'geo_point_2d', 'arrondissement', 'province']
+== None OK 24076 https://www.odwb.be/api/explore/v2.1/catalog/datasets/2436000
+
+
+ODWB 2436000: Part des élèves du primaire fréquentant une école de leur commune de WalStat | fields ['ins', 'type_entite', 'entite', 'periode', 'part_des_eleves_du_primaire_frequentant_une_ecole_de_leur_commune', 'type_et_entite', 'geo_shape', 'geo_point_2d', 'arrondissement', 'province']
+== None OK 29796 https://www.odwb.be/api/explore/v2.1/catalog/datasets/2321000
+
+
+ODWB 2321000: Ratio d'emploi intérieur de WalStat | fields ['ins', 'type_entite', 'entite', 'type_et_entite', 'periode', 'ratio_d_emploi_interieur', 'geo_shape', 'geo_point_2d', 'arrondissement', 'province']
+== None OK 26401 https://www.odwb.be/api/explore/v2.1/catalog/datasets/216000
+
+
+ODWB 216000: Part des appartements parmi les logements autorisés (nouvelles constructions) de WalStat | fields ['ins', 'type_entite', 'entite', 'periode', 'part_d_appartements_parmi_les_logements_autorises_nouvelles_constructions', 'type_et_entite', 'geo_shape', 'geo_point_2d', 'arrondissement', 'province']
+== None OK 24298 https://www.odwb.be/api/explore/v2.1/catalog/datasets/201131
+
+
+ODWB 201131: Census 2021 : Niveau d'instruction des 25-64 ans par sexe de WalStat | fields ['ins', 'type_entite', 'entite', 'periode', 'part_des_25_64_ans_ayant_au_plus_un_diplome_du_primaire', 'part_des_hommes_de_25_64_ans_ayant_au_plus_un_diplome_du_primaire', 'part_des_femmes_de_25_64_ans_ayant_au_plus_un_diplome_du_primaire', 'part_des_25_64_ans_diplomes_du_secondaire_inferieur', 'part_des_hommes_de_25_64_ans_diplomes_du_secondaire_inferieur', 'part_des_femmes_de_25_64_ans_diplomees_du_secondaire_inferieur', 'part_des_25_64_ans_diplomes_du_secondaire_superieur', 'part_des_hommes_de_25_64_ans_diplomes_du_secondaire_superieur', 'part_des_femmes_de_25_64_ans_diplomees_du_secondaire_superieur', 'part_des_25_64_ans_diplomes_de_l_enseignement_superieur', 'part_des_hommes_de_25_64_ans_diplomes_de_l_enseignement_superieur', 'part_des_femmes_de_25_64_ans_diplomees_de_l_enseignement_superieur', 'type_et_entite', 'geo_shape', 'geo_point_2d', 'arrondissement', 'province']
+== None OK 31567 https://www.odwb.be/api/explore/v2.1/catalog/datasets/8338000
+
+
+ODWB 8338000: Bénéficiaires de l'intervention majorée (BIM) par âge et sexe de WalStat | fields ['ins', 'type_entite', 'entite', 'periode', 'part_de_beneficiaire_de_l_intervention_majoree_bim_total', 'part_de_beneficiaire_de_l_intervention_majoree_bim_hommes', 'part_de_beneficiaire_de_l_intervention_majoree_bim_femmes', 'part_de_beneficiaire_de_l_intervention_majoree_bim_0_24_ans', 'part_de_beneficiaire_de_l_intervention_majoree_bim_25_64_ans', 'part_de_beneficiaire_de_l_intervention_majoree_bim_65_ans_et_plus', 'part_de_beneficiaire_de_l_intervention_majoree_bim_0_4_ans', 'part_de_beneficiaire_de_l_intervention_majoree_bim_5_9_ans', 'part_de_beneficiaire_de_l_intervention_majoree_bim_10_14_ans', 'part_de_beneficiaire_de_l_intervention_majoree_bim_15_19_ans', 'part_de_beneficiaire_de_l_intervention_majoree_bim_20_24_ans', 'type_et_entite', 'geo_shape', 'geo_point_2d', 'province', 'arrondissement']
+== None OK 32548 https://www.odwb.be/api/explore/v2.1/catalog/datasets/8115100
+
+
+ODWB 8115100: Taux de participation (élections communales) de WalStat | fields ['ins', 'type_entite', 'entite', 'periode', 'taux_de_participation', 'taux_de_blancs_et_nuls', 'type_et_entite', 'geo_shape', 'geo_point_2d', 'arrondissement', 'province']
+== None OK 29992 https://www.odwb.be/api/explore/v2.1/catalog/datasets/831100
+
+
+ODWB 831100: Revenus nets imposables : indicateurs et distribution de WalStat | fields ['ins', 'type_entite', 'entite', 'periode', 'coefficient_interquartile_des_revenus_nets_imposables_par_declaration', 'part_des_declarations_de_revenu_de_1_jusqu_a_10_000_eur', 'part_des_declarations_de_revenu_de_10_001_jusqu_a_20_000_eur', 'part_des_declarations_de_revenu_de_20_001_jusqu_a_30_000_eur', 'part_des_declarations_de_revenu_de_30_001_jusqu_a_40_000_eur', 'part_des_declarations_de_revenu_de_40_001_jusqu_a_50_000_eur', 'part_des_declarations_de_revenu_de_plus_de_50_000_eur', 'type_et_entite', 'geo_shape', 'geo_point_2d', 'province', 'arrondissement']
+== None OK 28446 https://www.odwb.be/api/explore/v2.1/catalog/datasets/833602
+
+
+ODWB 833602: Postes dans les services à niveau de connaissances élevé parmi les postes de travail salarié dans les services de WalStat | fields ['ins', 'type_entite', 'entite', 'periode', 'part_des_postes_de_travail_dans_les_services_a_niveau_de_connaissances_eleve_parmi_les_postes_salari', 'type_et_entite', 'geo_shape', 'geo_point_2d', 'arrondissement', 'province']
+== None OK 40231 https://www.odwb.be/api/explore/v2.1/catalog/datasets/8312000
+
+
+ODWB 8312000: Taux annuel de RIS/ERIS chez les 18-64 ans - données Statbel de WalStat | fields ['ins', 'type_entite', 'entite', 'periode', 'part_de_beneficiaires_d_un_e_ris_parmi_les_18_64_ans_taux_annuel_statbel', 'part_de_beneficiaires_d_un_e_ris_parmi_les_hommes_de_18_64_ans_taux_annuel_statbel', 'part_de_beneficiaires_d_un_e_ris_parmi_les_femmes_de_18_64_ans_taux_annuel_statbel', 'part_de_beneficiaires_d_un_e_ris_parmi_les_18_24_ans_taux_annuel_statbel', 'part_de_beneficiaires_d_un_e_ris_parmi_les_25_44_ans_taux_annuel_statbel', 'part_de_beneficiaires_d_un_e_ris_parmi_les_45_64_ans_taux_annuel_statbel', 'type_et_entite', 'geo_shape', 'geo_point_2d']
+== odwb_search.json ERR HTTP Error 400: Bad Request https://www.odwb.be/api/explore/v2.1/catalog/datasets?where=search%28%22r%C3%A9seau%22%29%20OR%20search%28%22population%20scolaire%22%29%20OR%20search%28%22implantation%22%29&limit=60&select=dataset_id,metas.default.title
+
+== duo_over.html OK 18612 https://duo.nl/open_onderwijsdata/overzicht-open-data.jsp
+
+
+DUO links: 
+
+== hr_os1.csv OK 253449 https://data.gov.hr/ckan/dataset/2841fb78-c828-4ab2-8cdc-f22abeed3a8c/resource/3c72e1c1-4c41-48f0-8663-c7ce4a997e88/download/data.csv
+Web,Faks,Naziv,Adresa,Mjesto,Šifra,Telefon,ePošta,Osnivač,Župnija,Ravnatelj,TipUstanove,PoštanskiBroj
+http://os-bogumil-toni-samobor.skole.hr/skola/kontakti,"01/336-59-76,01/3367-322",OSNOVNA ŠKOLA BOGUMILA TONIJA,IVANA PERKOVCA 90,Samobor,01-073-001,"01/336-01-51, 01/336-59-76","ured@osbtoni.hr, ured@os-bogumil-toni-samobor.skole.hr",Grad Samobor,Zagrebačka županija,Milena  Kolarec,Osnovna škola,10430
+,,OSNOVNA ŠKOLA MIHAELA ŠILOBODA,Sveti Martin pod Okićem 37b,Sveti Martin pod Okićem,01-073-002,"3382 346, 3877 415, 3876 583, 3876 593",ured@os-msiloboda.skole.hr,Grad Samobor,Zagrebačka županija,Goran  Lesjak,Osnovna škola,10435
+www.os-samobor.skole.hr,01-336-60-57,OSNOVNA ŠKOLA SAMOBOR,STRAŽNIČKA 14,Samobor,01-073-003,01-336-03-14,ured@os-samobor.skole.hr,Grad Samobor,Zagrebačka županija,Goran Ivan  Matoš,Osnovna škola,10430
+http://os-mlanga-bregana.skole.hr/,3324 443,OSNOVNA ŠKOLA MILANA LANGA,LANGOVA 2,Bregana,01-073-004,"337-53-96, 337-62-66, 3324 442","ured@os-milanalanga-bregana.skole.hr, ured@osmilanalanga.hr",Grad Samobor,Zagrebačka županija,Igor  Matijašić,Osnovna škola,10432
+	http://os-rude.skole.hr,01/3379253,OSNOVNA ŠKOLA RUDE,Rude 93,Rude,
+
+== hr_os2.csv OK 426 https://data.gov.hr/ckan/dataset/8f3aa566-ac50-47db-adc0-ccab7d6b0e57/resource/2d906a25-e863-4ff4-a6d7-0e940e8b11df/download/osovne-kole.csv
+﻿Naziv škole;Adresa;Telefon;Adresa web stranice
+"Osnovna škola ""ANTUNA KANIŽLIĆA""";Antuna Kanižlića 2, Požega;034 / 312 - 030;http://www.os-akanizlica-pozega.skole.hr/
+"Osnovna škola ""DOBRIŠE CESARIĆA""";Slavonska 8, Požega;034 / 273 - 655;http://www.os-dcesaric-pozega.skole.hr/
+"Osnovna škola ""JULIJA KEMPFA""";Dr. Franje Tuđmana 2, Požega;034 / 273 - 799;http://www.os-jkempfa-pozega.skole.hr/ 
+
+
+== hr_meta.json OK 4774 https://data.gov.hr/ckan/api/3/action/package_show?id=2841fb78-c828-4ab2-8cdc-f22abeed3a8c
+{"help": "https://data.gov.hr/ckan/api/3/action/help_show?name=package_show", "success": true, "result": {"access_rights": "public", "applicable_legislation": "", "author": "", "author_email": "", "coordinator": "", "coordinator_email": "", "creator_user_id": "baafe451-1392-4392-ab62-052278b7cdd0", "data_refresh_frequency": "", "hvd_category": "", "id": "2841fb78-c828-4ab2-8cdc-f22abeed3a8c", "isopen": false, "license_id": "open-license", "license_title": "Otvorena dozvola (OD)", "license_url": "https://data.gov.hr/id/licence/otvorena-dozvola-rh", "maintainer": null, "maintainer_email": null, "metadata_created": "2021-05-05T11:42:35.110806", "metadata_modified": "2026-04-15T19:14:31.017412", "name": "osnovne-skole", "notes": "Osnovni podaci o osnovnim \u0161kolama u RH. Izvor podataka je e-Matica - centralizirani sustav Ministarstva znanosti, obrazovanja i mladih koji slu\u017ei za unos najva\u017enijih podataka o u\u010denicima i djelatnicima osnovnih i srednjih \u0161kola.", "num_resources": 3, "num_tags": 3, "organization": {"id": "296b142f-a1d8-4743-81ed-2c227e1166f0", "name": "ministarstvo-znanosti-i-obrazovanja", "title": "Ministarstvo znanosti, obrazovanja i mladih", "type": "organization", "description": "", "image_url": "", "created": "2021-05-05T08:53:26.127373", "is_organization": true, "approval_status": "approved", "state": "active"}, "owner_org": "296b142f-a1d8-4743-81ed-2c227e1166f0", "private": false, "state": "active", "theme": "education_culture_and_sport", 
+
+== ab_school_enr.xlsx OK 253523 https://open.alberta.ca/dataset/ccbcf0fb-615e-44a0-b7ec-681e2ea4e1e7/resource/fccf0597-1693-4f73-9def-902963fd20d1/download/ecc-school-enrolment-data-2025-2026.xlsx
+
+
+== ab_list.json OK 52265 https://open.alberta.ca/api/3/action/package_search?q=school%20list%20authority%20directory&rows=8
+
+
+AB 2024-2025 school authorities audited financial statements : summary reports: Details of net assets https://open.alberta.ca/dataset/fe4e405c-0bff-46e5-92b7-fd00524e9553/resource/fa649077-2ae1-4b9e-b653-5f39ae25e087/download/ecc-afs-2024-2025-details-net-assets.pdf ; Report of revenues by program https://open.alberta.ca/dataset/fe4e405c-0bff-46e5-92b7-fd00524e9553/resource/1d06db2f-e69c-40c6-9c81-daad4035a8b7/download/ecc-afs-2024-2025-report-revenues-by-program.pdf ; Report of expenses by program https://open.alberta.ca/dataset/fe4e405c-0bff-46e5-92b7-fd00524e9553/resource/6dd374f4-5146-4696-8eef-5d8e96571074/download/ecc-afs-2024-2025-report-expenses-by-program.pdf
+AB Alberta schools and authorities: Alberta school information report https://education.alberta.ca/media/1626669/authority_and_school.xlsx ; Alberta school authority information report https://education.alberta.ca/media/1626668/authority.xlsx
+AB Alberta municipal officials directory: Alberta municipal officials directory https://www.alberta.ca/find-a-municipal-official
+AB 2023-2024 school authorities audited financial statements : summary reports: Details of net assets https://open.alberta.ca/dataset/a91a3309-414c-4632-8166-a847273ad73e/resource/58447986-aba7-403e-9671-cfbae59b7853/download/ecc-afs-2023-2024-details-net-assets.pdf ; Report of revenues by program https://open.alberta.ca/dataset/a91a3309-414c-4632-8166-a847273ad73e/resource/04022b02-1cfb-44ae-b7b4-7a6650e0779a/download/ecc-afs-2023-2024-report-revenues-by-program.pdf ; Report of expenses by program https://open.alberta.ca/dataset/a91a3309-414c-4632-8166-a847273ad73e/resource/89926878-e4b4-4aaa-9fd9-b9f7d0cc4d25/download/ecc-afs-2023-2024-report-expenses-by-program.pdf
+AB A list of Alberta's school jurisdiction schools with their total capacity for the school year: A list of Alberta's school jurisdiction schools with their total capacity for the 2023/2024 school year https://open.alberta.ca/dataset/b4dbda20-2e75-4365-8b45-2f5c372fcf03/resource/056f38b0-00a3-43b3-806f-d57484144dec/download/educ-school-capacity-2023-2024-school-year.xlsx
+AB 2022-2023 school authorities audited financial statements : summary reports: Details of net assets https://open.alberta.ca/dataset/c2dfec5b-e7d3-45c9-a90c-bb3a9868aeb1/resource/38d28470-8c94-43a8-81e7-838960aab70a/download/educ-afs-2022-2023-details-net-assets.pdf ; Report of revenues by program https://open.alberta.ca/dataset/c2dfec5b-e7d3-45c9-a90c-bb3a9868aeb1/resource/8724232b-8ff8-456a-888c-f7d919d97764/download/educ-afs-2022-2023-report-revenues-by-program.pdf ; Report of expenses by program https://open.alberta.ca/dataset/c2dfec5b-e7d3-45c9-a90c-bb3a9868aeb1/resource/800b70b5-c7af-45da-a708-8ca87336045d/download/educ-afs-2022-2023-report-expenses-by-program.pdf
+AB Provincially authorized senior high school courses and course codes: 2024-2025 provincially authorized senior high school courses and course codes https://open.alberta.ca/dataset/bf914f3a-1837-4345-8ef8-4954502ab454/resource/950b5c7f-da51-4256-b223-3635fb02fc11/download/educ-provincially-authorized-senior-high-courses-course-codes-2024-2025.pdf ; 2023-2024 provincially authorized senior high school courses and course codes https://open.alberta.ca/dataset/bf914f3a-1837-4345-8ef8-4954502ab454/resource/84021e87-9df3-4ad1-b573-de9c6d35ad47/download/educ-provincially-authorized-senior-high-courses-course-codes-2023-2024.pdf ; 2022-2023 provincially authorized senior high school courses and course codes https://open.alberta.ca/dataset/bf914f3a-1837-4345-8ef8-4954502ab454/resource/a3610ea5-3da4-4241-90ce-3fd98287d186/download/edc-provincially-authorized-senior-high-courses-course-codes-2022-2023.pdf ; 2021-2022 provincially authorized senior high school courses and course codes https://open.alberta.ca/dataset/bf914f3a-1837-4345-8ef8-4954502ab454/resource/85fe9982-3201-4479-ba0d-94636ab1e486/download/edc-provincially-authorized-senior-high-courses-course-codes-2021-2022.pdf
+AB Local Authorities Election Act 2023 engagement summary: Local Authorities Election Act 2023 engagement summary https://open.alberta.ca/dataset/fd63243b-16bc-4945-8b82-2df103963b8d/resource/ae3dae26-9bb7-43af-bb17-581a10ca9f97/download/ma-2023-engagement-summary-laea.pdf
+== bc1.json OK 71659 https://catalogue.data.gov.bc.ca/api/3/action/package_search?q=student%20headcount&rows=8
+
+
+bc1.json Student Headcount by Grade Range: Student Headcount by Grade Range 1991/92 to 2021/22 https://catalogue.data.gov.bc.ca/dataset/1670260a-2a57-4e32-9a53-48bfa728810c/resource/cfd06d13-9662-416d-bd7f-8f8ef99eb7b2/download/student_headcount_by_grade_range-1991_92-to-2021-22.csv ; Student Headcount by Grade Range 1991/92 to 2021/22 https://catalogue.data.gov.bc.ca/dataset/1670260a-2a57-4e32-9a53-48bfa728810c/resource/f00a14bf-4e99-450c-b7ad-eac1aa544c2b/download/student_headcount_by_grade_range-1991_92-to-2021-22.xlsx ; Student Headcount by Grade Range field definitions https://catalogue.data.gov.bc.ca/dataset/1670260a-2a57-4e32-9a53-48bfa728810c/resource/102c316b-997a-4976-ad13-70ef668037a0/download/student-headcount-by-grade-range-field-definitions-2020-12.pdf ; Working with the Student Headcount by Grade Range extract https://catalogue.data.gov.bc.ca/dataset/1670260a-2a57-4e32-9a53-48bfa728810c/resource/23f2f5c4-200a-480b-a4d3-a52dc2cbeca2/download/working-with-the-student-headcount-by-grade-range-extract-2020-12.pdf
+bc1.json Student Headcount by Home Language: Student Headcount by Home Language 1991/92 to 2025/26 https://catalogue.data.gov.bc.ca/dataset/3d8824e0-57a1-4289-b70b-0dd0d8f82907/resource/942d798d-4c38-4705-b62e-e9d7bc8c15b4/download/student_headcount_by_home_language_1991-1992_to_2025-2026.csv ; Student Headcount by Home Language 1991/92 to 2025/26 https://catalogue.data.gov.bc.ca/dataset/3d8824e0-57a1-4289-b70b-0dd0d8f82907/resource/663a84ac-ffdb-4e58-967b-274026974afd/download/student_headcount_by_home_language_1991-1992_to_2025-2026.xlsx ; Student Headcount by Home Language field definitions https://catalogue.data.gov.bc.ca/dataset/3d8824e0-57a1-4289-b70b-0dd0d8f82907/resource/53f954c3-1fe2-4a9c-9758-ff48c5cf4236/download/student-headcount-by-home-language-field-definitions-2024-12.pdf ; Working with the Student Headcount by Home Language extract https://catalogue.data.gov.bc.ca/dataset/3d8824e0-57a1-4289-b70b-0dd0d8f82907/resource/041b6211-c69f-45d0-b0ad-59411ddff118/download/working-with-the-student-headcount-by-home-language-extract-2024-12.pdf
+bc1.json BC Schools - Student Headcount by Grade: Student Headcount by Grade 2017/2018 to 2025/2026 https://catalogue.data.gov.bc.ca/dataset/7114187e-305c-4a79-acbb-3294ba0f53c8/resource/c1a55945-8554-4058-9019-514b16178f89/download/student_headcount_by_grade_2017_18_to_2025_26.xlsx ; Student Headcount by Grade 1991/92 to 2005/06 https://catalogue.data.gov.bc.ca/dataset/7114187e-305c-4a79-acbb-3294ba0f53c8/resource/579e1ecf-3778-4db4-af05-7da0e852ff75/download/student_headcount_by_grade_1991_92_to_2005_06.xlsx ; Student Headcount by Grade 2017/2018 to 2025/2026 https://catalogue.data.gov.bc.ca/dataset/7114187e-305c-4a79-acbb-3294ba0f53c8/resource/bbf8b17c-a2ed-4f2c-b601-dced4ff1d0ac/download/student_headcount_by_grade_2017_18_to_2025_26.csv ; Student Headcount by Grade 1991/92 to 2005/06 https://catalogue.data.gov.bc.ca/dataset/7114187e-305c-4a79-acbb-3294ba0f53c8/resource/ce059058-71be-45c9-bb11-65dc2fe15132/download/student_headcount_by_grade_1991_92_to_2005_06.csv ; Student Headcount by Grade field definitions https://catalogue.data.gov.bc.ca/dataset/7114187e-305c-4a79-acbb-3294ba0f53c8/resource/b3afc6d4-8f3a-4012-a0b7-a5c1a5fdd709/download/student-headcount-by-grade-field-definitions-2024-12.pdf
+bc1.json Student Headcount by School Calendar Type: Student Headcount by Calendar Type 1991/92 to 2025/26 https://catalogue.data.gov.bc.ca/dataset/9d70027c-f87f-4aaa-9c16-125f3cb6280e/resource/c5bd6d06-f0df-42c3-877b-b6f3e58c8e4e/download/student_headcount_by_calendar_type_1991-1992_to_2024-2025.csv ; Student Headcount by Calendar Type 1991/92 to 2025/26 https://catalogue.data.gov.bc.ca/dataset/9d70027c-f87f-4aaa-9c16-125f3cb6280e/resource/63f1b5a2-46e4-4a47-a825-4a85e0ac4dd8/download/student_headcount_by_calendar_type_1991-1992_to_2024-2025.xlsx ; Headcount by Calendar Type field definitions https://catalogue.data.gov.bc.ca/dataset/9d70027c-f87f-4aaa-9c16-125f3cb6280e/resource/1e85c26f-30ff-45c5-b46a-d604a5bfbf0d/download/headcount-by-calendar-type-field-definitions-2023-12.pdf ; Working with the Headcount by Calendar Type extract https://catalogue.data.gov.bc.ca/dataset/9d70027c-f87f-4aaa-9c16-125f3cb6280e/resource/ba40fcaf-1385-42eb-a0f3-58d9bd1ce9bc/download/working-with-the-headcount-by-calendar-type-extract-2023-12.pdf
+bc1.json Student Headcount by Disabilities or Diverse Abilities Category: Student Headcount by Disabilities and Diverse Abilities 1996/97 to 2025/26 https://catalogue.data.gov.bc.ca/dataset/1e730ea9-dd19-4c22-aa95-fe644efc7a06/resource/71949035-a7ba-4925-a86e-90a776be2b11/download/student_headcount_by_disabilities_or_diverse_abilities_1991-1992_to_2025-2026.xlsx ; Student Headcount by Disabilities and Diverse Abilities 1996/97 to 2025/26 https://catalogue.data.gov.bc.ca/dataset/1e730ea9-dd19-4c22-aa95-fe644efc7a06/resource/ab33bc93-ca6c-4e87-a89b-43b354ec2648/download/student_headcount_by_disabilities_or_diverse_abilities_1991-1992_to_2025-2026.csv ; Student Headcount by Disabilities and Diverse Abilities Category field definitions https://catalogue.data.gov.bc.ca/dataset/1e730ea9-dd19-4c22-aa95-fe644efc7a06/resource/8910a337-1535-4218-b635-07af626f065c/download/student-headcount-by-diverse-abilities-category-field-definitions-2024-12.pdf ; Working with the Student Headcount by Disabilities and Diverse Abilities Category extract https://catalogue.data.gov.bc.ca/dataset/1e730ea9-dd19-4c22-aa95-fe644efc7a06/resource/d68b9441-31b0-46ce-b0be-9c617d09e841/download/working-with-the-diverse-abilities-headcount-extract-2024-12.pdf ; History of Disabilities and Diverse Abilities (Special Needs) Data Collection https://catalogue.data.gov.bc.ca/dataset/1e730ea9-dd19-4c22-aa95-fe644efc7a06/resource/67f1adfa-a907-4fb7-8dec-7f55f071d713/download/history-of-special-needs-data-collection.pdf
+bc1.json Domestic and International Student Headcount by Economic Development Region and Institution: Domestic_and_International_Student_Headcount_by_Economic_Development_Region_and_Institution https://catalogue.data.gov.bc.ca/dataset/ace77db4-1f4f-4db1-91bf-9cf8475d9dfc/resource/d090dded-e0ef-438c-8bca-e6da321973b0/download/h1_domestic_and_international_student_headcount_by_economic_development_region_and_institution.xlsx ; Domestic_and_International_Student_Headcount_by_Economic_Development_Region_and_Institution https://catalogue.data.gov.bc.ca/dataset/ace77db4-1f4f-4db1-91bf-9cf8475d9dfc/resource/e05a7642-ca17-4d2f-81d8-d82b204dfb16/download/h1_domestic_and_international_student_headcount_by_economic_development_region_and_institution.csv
+bc1.json Headcount of Homeschooled Children: Headcount of Homeschooled Children 1991/92 to 2025/26 https://catalogue.data.gov.bc.ca/dataset/d378b0ba-6fa2-4f7f-a08c-97c697979ec3/resource/409faf5a-7bf9-4d3f-baf6-758e0892a9c6/download/student_headcount_of_homeschooled_children_1991-1992_to_2025-2026.csv ; Headcount of Homeschooled Children 1991/92 to 2025/26 https://catalogue.data.gov.bc.ca/dataset/d378b0ba-6fa2-4f7f-a08c-97c697979ec3/resource/520d30b9-bf15-4145-996d-6046618e5891/download/student_headcount_of_homeschooled_children_1991-1992_to_2025-2026.xlsx ; Headcount of Homeschooled Children field definitions https://catalogue.data.gov.bc.ca/dataset/d378b0ba-6fa2-4f7f-a08c-97c697979ec3/resource/dbe42355-cc9c-464e-aa54-1f1561aecf3b/download/headcount-of-homeschooled-children-field-definitions-2024-12.pdf ; Working with the Headcount of Homeschooled Children extract https://catalogue.data.gov.bc.ca/dataset/d378b0ba-6fa2-4f7f-a08c-97c697979ec3/resource/8d15c563-6e09-40d1-b090-906e368f6132/download/working-with-the-headcount-of-homeschooled-children-extract-2024-12.pdf
+bc1.json Projection of Public School Headcount Enrolment: BC Schools Enrolment Projections 2025-2026 to 2034-2035 masked https://catalogue.data.gov.bc.ca/dataset/313a1b8a-e30a-4b15-8823-e7b0b0fc2154/resource/967758ad-7d97-4cee-9638-afc9a8816c30/download/bc-schools-enrolment-projections-2025-2026-to-2034-2035.xlsx ; BC Schools Enrolment Projections 2010-2011 to 2031-2032 masked https://catalogue.data.gov.bc.ca/dataset/313a1b8a-e30a-4b15-8823-e7b0b0fc2154/resource/2b4786c3-caa5-4584-8eff-1393e9ba834c/download/bc-schools-enrolment-projections.xlsx ; EDUPROJ2020Mar https://catalogue.data.gov.bc.ca/dataset/313a1b8a-e30a-4b15-8823-e7b0b0fc2154/resource/069678b5-78e9-4ec6-a2fe-0e681a17483a/download/eduproj2020mar.xls ; EDUPROJ2019JAN https://catalogue.data.gov.bc.ca/dataset/313a1b8a-e30a-4b15-8823-e7b0b0fc2154/resource/855722c5-5a53-4147-b514-af0d22c02f1d/download/eduproj2019jan.xls ; EDUPROJ2018JAN FINAL https://catalogue.data.gov.bc.ca/dataset/313a1b8a-e30a-4b15-8823-e7b0b0fc2154/resource/c1f71fd3-aff6-44b7-8473-57780ea92a3a/download/eduproj2018jan-final.xls
+== qc1.json OK 30645 https://www.donneesquebec.ca/recherche/api/3/action/package_search?q=effectif%20scolaire&rows=8
+
+
+qc1.json Indices de défavorisation: Atlas de la dévaforisation https://infogeo.education.gouv.qc.ca/public/Atlas_Defavorisation/ ; Indices de défavorisation https://www.donneesquebec.ca/recherche/dataset/004de02c-19f1-4da0-9af8-33f893e41972/resource/0ccf0f54-c9ff-456d-ac74-3ccd7b57b1dd/download/defavorisation-meq-mes-geopkg.zip ; Défavorisation - Écoles primaires 2025-2026 https://www.donneesquebec.ca/recherche/dataset/004de02c-19f1-4da0-9af8-33f893e41972/resource/6c5d4a5d-ba3b-40a6-b570-916f43ab622c/download/defav_ecole_prim_public.csv ; Défavorisation - Écoles secondaires 2025-2026 https://www.donneesquebec.ca/recherche/dataset/004de02c-19f1-4da0-9af8-33f893e41972/resource/3e9aa43a-c32b-4779-b258-8407db716813/download/defav_ecole_sec_public.csv ; Défavorisation - Écoles primaires 2025-2026 https://www.donneesquebec.ca/recherche/dataset/004de02c-19f1-4da0-9af8-33f893e41972/resource/f9ac688c-4575-42a9-983a-cd7f3f52094a/download/defav_ecole_prim_public.geojson
+== None OK 1392 https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-1502010100_101/px-x-1502010100_101.px
+
+
+BFS px-x-1502010100_101: Lernende der obligatorischen Schule nach Schulkanton, Unterrichtsart, Sonderpädagogische Massnahmen und Jahr | Schulkanton: ['Schweiz', 'Zürich', 'Bern / Berne', 'Luzern', 'Uri', 'Schwyz', 'Obwalden', 'Nidwalden'] | Unterrichtsart: ['Unterrichtsart - Total', 'Regelklassen', 'Sonderklassen', 'Sonderschulklassen'] | Sonderpädagogische Massnahmen: ['Sonderpädagogische Massnahmen - Total', 'Keine oder einfache Massnahmen', 'Verstärkte Massnahmen', 'Art der Massnahmen unbekannt'] | Jahr: ['2017/18', '2018/19', '2019/20', '2020/21', '2021/22', '2022/23', '2023/24', '2024/25']
+== None OK 1484 https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-1502010100_102/px-x-1502010100_102.px
+
+
+BFS px-x-1502010100_102: Lernende der obligatorischen Schule nach Unterrichtsart, Geschlecht, Staatsangehörigkeit (Kategorie), Charakter der Schule, Sonderpädagogische Massnahmen und Jahr | Unterrichtsart: ['Unterrichtsart - Total', 'Regelklassen', 'Einführungsklassen', 'Klassen für Fremdsprachige', 'Andere Sonderklassen', 'Sonderschulklassen'] | Geschlecht: ['Geschlecht - Total', 'Mann', 'Frau'] | Staatsangehörigkeit (Kategorie): ['Staatsangehörigkeit - Total', 'Schweiz', 'Ausland', 'Unbekannt'] | Charakter der Schule: ['Charakter der Schule - Total', 'Öffentlich', 'Privat (subventioniert und nicht subventioniert)'] | Sonderpädagogische Massnahmen: ['Sonderpädagogische Massnahmen - Total', 'Keine oder einfache Massnahmen', 'Verstärkte Massnahmen', 'Art der Massnahmen unbekannt'] | Jahr: ['2017/18', '2018/19', '2019/20', '2020/21', '2021/22', '2022/23', '2023/24', '2024/25']
+== None OK 1390 https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-1502010100_103/px-x-1502010100_103.px
+
+
+BFS px-x-1502010100_103: Lernende der obligatorischen Schule nach Schulkanton, Unterrichtsart, Lehrplananpassungen und Jahr | Schulkanton: ['Schweiz', 'Zürich', 'Bern / Berne', 'Luzern', 'Uri', 'Schwyz', 'Obwalden', 'Nidwalden'] | Unterrichtsart: ['Unterrichtsart - Total', 'Regelklassen', 'Sonderklassen', 'Sonderschulklassen'] | Lehrplananpassungen: ['Lehrplananpassungen - Total', 'Keine Anpassung', 'Anpassung in einem oder zwei Fächern', 'Anpassung in drei Fächern oder mehr', 'Art der Anpassung unbekannt'] | Jahr: ['2017/18', '2018/19', '2019/20', '2020/21', '2021/22', '2022/23', '2023/24', '2024/25']
+== None OK 1482 https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-1502010100_104/px-x-1502010100_104.px
+
+
+BFS px-x-1502010100_104: Lernende der obligatorischen Schule nach Unterrichtsart, Geschlecht, Staatsangehörigkeit (Kategorie), Charakter der Schule, Lehrplananpassungen und Jahr | Unterrichtsart: ['Unterrichtsart - Total', 'Regelklassen', 'Einführungsklassen', 'Klassen für Fremdsprachige', 'Andere Sonderklassen', 'Sonderschulklassen'] | Geschlecht: ['Geschlecht - Total', 'Mann', 'Frau'] | Staatsangehörigkeit (Kategorie): ['Staatsangehörigkeit - Total', 'Schweiz', 'Ausland', 'Unbekannt'] | Charakter der Schule: ['Charakter der Schule - Total', 'Öffentlich', 'Privat (subventioniert und nicht subventioniert)'] | Lehrplananpassungen: ['Lehrplananpassungen - Total', 'Keine Anpassung', 'Anpassung in einem oder zwei Fächern', 'Anpassung in drei Fächern oder mehr', 'Art der Anpassung unbekannt'] | Jahr: ['2017/18', '2018/19', '2019/20', '2020/21', '2021/22', '2022/23', '2023/24', '2024/25']
+== None OK 21697 https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-1502020100_101/px-x-1502020100_101.px
+
+
+BFS px-x-1502020100_101: Eintritte nach Beruf, Lehrbetriebskanton, Ausbildungstyp, Ausbildungsform, Geschlecht und Jahr | Beruf: ['Beruf - Total', 'Landwirt/in Biolandbau EFZ', 'Landwirt/in', 'Agrarpraktiker/in EBA', 'Landwirt/in EFZ', 'Geflügelzüchter/in', 'Geflügelfachmann/-frau EFZ', 'Obstbauer/-bäuerin'] | Lehrbetriebskanton: ['Schweiz', 'Zürich', 'Bern / Berne', 'Luzern', 'Uri', 'Schwyz', 'Obwalden', 'Nidwalden'] | Ausbildungstyp: ['Ausbildungstyp - Total', 'EFZ', 'EBA', 'Nicht reglementiert'] | Ausbildungsform: ['Ausbildungsform - Total', 'Vollschulisch', 'Dual', 'Unbestimmt'] | Geschlecht: ['Geschlecht - Total', 'Mann', 'Frau'] | Jahr: ['2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012']
+== None OK 57737 https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-1502020100_102/px-x-1502020100_102.px
+
+
+BFS px-x-1502020100_102: Eintritte nach Beruf/Fachrichtung, Lehrbetriebskanton, Ausbildungstyp, Ausbildungsform, Geschlecht und Jahr | Beruf/Fachrichtung: ['Beruf - Total', 'Landwirt/in Biolandbau EFZ', 'Landwirt/in', 'Agrarpraktiker/in EBA - Ohne nähere Angaben', 'Agrarpraktiker/in EBA - Landwirtschaft', 'Agrarpraktiker/in EBA - Spezialkulturen', 'Agrarpraktiker/in EBA - Weinbereitung', 'Landwirt/in EFZ'] | Lehrbetriebskanton: ['Schweiz', 'Zürich', 'Bern / Berne', 'Luzern', 'Uri', 'Schwyz', 'Obwalden', 'Nidwalden'] | Ausbildungstyp: ['Ausbildungstyp - Total', 'EFZ', 'EBA', 'Nicht reglementiert'] | Ausbildungsform: ['Ausbildungsform - Total', 'Vollschulisch', 'Dual', 'Unbestimmt'] | Geschlecht: ['Geschlecht - Total', 'Mann', 'Frau'] | Jahr: ['2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012']
+== None OK 1530 https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-1502010000_101/px-x-1502010000_101.px
+
+
+BFS px-x-1502010000_101: Obligatorische Schule nach Bildungsstufe, Geschlecht, Staatsangehörigkeit (Kategorie), Erstsprache und Jahr | Bildungsstufe: ['Bildungsstufe - Total', 'Primarstufe 1-2', 'Primarstufe 3-8', 'Sekundarstufe I', '> Sek I: Grundansprüche', '> Sek I: Erweiterte Ansprüche', '> Sek I: Ohne Niveauunterscheidung', 'Separativer Unterricht'] | Geschlecht: ['Geschlecht - Total', 'Mann', 'Frau'] | Staatsangehörigkeit (Kategorie): ['Staatsangehörigkeit - Total', 'Schweiz', 'Ausland', 'Unbekannt'] | Erstsprache: ['Erstsprache - Total', 'Erstsprache ist Ortssprache', 'Erstsprache ist nicht Ortssprache', 'Unbestimmt'] | Jahr: ['1999/00', '2000/01', '2001/02', '2002/03', '2003/04', '2004/05', '2005/06', '2006/07']
+== ee_soc.json OK 2467 https://andmed.stat.ee/api/v1/en/stat/sotsiaalne-terjutus-laekeni-indikaatorid
+{"title":"LES01: POVERTY AND DEPRIVATION RATE BY AGE GROUP AND SEX","variables":[{"code":"Näitaja","text":"Indicator","values":["ARP","ARP_NR","ARP_PENS","ARP_PENS_NR","ARP_NPENS","ARP_NPENS_NR","AP","AP_NR","AP_PENS","AP_PENS_NR","AP_NPENS","AP_NPENS_NR","MDEP","SMDEP","DEPRATE","DEP_NR"],"valueTexts":["At-risk-of-poverty rate, %","Number of persons at-risk-of-poverty, thousands","At-risk-of-poverty rate before social transfers, incl. pensions, %","Number of persons at-risk-of-poverty before social transfers, incl. pensions, thousands","At-risk-of-poverty rate before social transfers, excl. pensions, %","Number of persons at-risk-of-poverty before social transfers, excl. pensions, thousands","Absolute poverty rate, %","Number of persons in absolute poverty, thousands","Absolute poverty rate before social transfers, incl. pensions, %","Number of persons in absolute poverty before social transfers, incl. pensions, thousands","Absolute poverty rate before social transfers, excl. pensions, %","Number of persons in absolute poverty before social transfers, excl. pensions, thousands","Material deprivation rate, %","Severe material deprivation rate, %","Deprivation rate, %","Number of persons in deprivation, thousands"]},{"code":"Vanuserühm","text":"Age group","values":["TOTAL","Y0-15","Y0-17","Y0-64","Y_GE16","Y16-24","Y16-64","Y_GE18","Y18-24","Y18-64","Y25-49","Y50-64","Y_GE65"],"valueTexts":["Total","From 0 to 15 years","From 0 to 17 years","From 0 to 64 years","16 years or over","From 16 to 24 years","From 16 to 64 years","18 years or over","From 18 to 24 years","From 18 to 64 years","From 25 to 49 years","From 50 to 64 years","65 years or over"],"elimination":true},{"code":"Sugu","text":"Sex","values":["_T","M","F"],"valueTexts":["Total","Males","Females"],"elimination":true},{"code":"Väärtus/standardviga","text":"Value/standard error","values":["VAL","SE","RSE"],"valueTexts":["Value","Standard error","Relative standard error, %"]},{"code":"Vaatlusperiood","text":"Reference period","values":["1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024","2025"],"valueTexts":["1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024","2025"],"time":true}]}
+
+== ee_sots.json OK 4294 https://andmed.stat.ee/api/v1/en/stat/sotsiaalne-kaitse
+{"title":"SK410: SUBSISTENCE BENEFITS BY REGION/ADMINISTRATIVE UNIT","variables":[{"code":"Aasta","text":"Year","values":["2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024","2025"],"valueTexts":["2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024","2025"],"time":true},{"code":"Piirkond/Haldusüksus","text":"Region/Administrative unit","values":["00","E001","E006","E007","E004","E008","37","141","198","245","296","304","338","353","424","431","446","651","653","718","726","784","890","39","205","45","130","251","321","442","511","514","735","803","50","247","486","618","52","255","567","834","56","184","441","907","60","191","272","663","661","792","901","903","928","64","284","622","708","68","214","303","430","638","624","712","809","71","293","317","503","668","74","478","689","714","79","171","283","291","432","528","586","793","796","81","557","824","855","84","480","615","897","899","87","142","698","732","919","917"],"valueTexts":["Whole country","Northern Estonia","Central Estonia","Northeastern Estonia","Western Estonia","Southern Estonia","Harju county","..Anija rural municipality","..Harku rural municipality","..Jõelähtme rural municipality","..Keila city","..Kiili rural municipality","..Kose rural municipality","..Kuusalu rural municipality","..Loksa city","..Lääne-Harju rural municipality","..Maardu city","..Raasiku rural municipality","..Rae rural municipality","..Saku rural municipality","..Saue rural municipality","..Tallinn","..Viimsi rural municipality","Hiiu county","..Hiiumaa rural municipality","Ida-Viru county","..Alutaguse rural municipality","..Jõhvi rural municipality","..Kohtla-Järve city","..Lüganuse rural municipality","..Narva city","..Narva-Jõesuu city","..Sillamäe city","..Toila rural municipality","Jõgeva county","..Jõgeva rural municipality","..Mustvee rural municipality","..Põltsamaa rural municipality","Järva county","..Järva rural municipality","..Paide city","..Türi rural municipality","Lääne county","..Haapsalu city","..Lääne-Nigula rural municipality","..Vormsi rural municipality","Lääne-Viru county","..Haljala rural municipality","..Kadrina rural municipality","..Rakvere city","..Rakvere rural municipality","..Tapa rural municipality","..Vinni rural municipality","..Viru-Nigula rural municipality","..Väike-Maarja rural municipality","Põlva county","..Kanepi rural municipality","..Põlva rural municipality","..Räpina rural municipality","Pärnu county","..Häädemeeste rural municipality","..Kihnu rural municipality","..Lääneranna rural municipality","..Põhja-Pärnumaa rural municipality","..Pärnu city","..Saarde rural municipality","..Tori rural municipality","Rapla county","..Kehtna rural municipality","..Kohila rural municipality","..Märjamaa rural municipality","..Rapla rural municipality","Saare county","..Muhu rural municipality","..Ruhnu rural municipality","..Saaremaa rural municipality","Tartu county","..Elva
+
+== lv_ves.json OK 463 https://data.stat.gov.lv/api/v1/en/OSP_PUB/VES
+[{"id":"VA","type":"l","text":"Health care resources"},{"id":"ZM","type":"l","text":"Medicines consumption"},{"id":"IV","type":"l","text":"Self-perceived health and health-related habits"},{"id":"VS","type":"l","text":"Health status and morbidity"},{"id":"VD","type":"l","text":"Persons with disabilities"},{"id":"PP","type":"l","text":"State benefits, allowances, pensions and social security"},{"id":"AA","type":"l","text":"Trusteeship and out-of-family care"}]
+
+== lv_fin.json OK 49 https://data.stat.gov.lv/api/v1/en/OSP_PUB/FIN
+[{"id":"DK","type":"l","text":"Quality of life"}]
+
+== lt_osp.html ERR HTTP Error 403: Forbidden https://osp.stat.gov.lt/
+
+== kr_clik_api.html OK 82382 https://clik.nanet.go.kr/potal/guide/openApi.do
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+
+
+
+
+ 
+
+<head>
+    <title>국회도서관 지방의정포털</title>
+    <meta name="robots" content="all, follow" />
+    <meta name="description" content="국회와 지방의회의 의정자료를 통합·공유하는 시스템" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="naver-site-verification" content="5604b167bfe4296d7a3d26a2a59a1cfd4ad73b1a" />
+    
+    
+    <!-- favicon -->
+    <link rel="icon" href="/favicon/favicon.ico" sizes="16x16" />
+    <meta name="msapplication-TileImage" content="/favicon/favicon.ico" />
+    <!-- IE10 -->
+    <link rel="apple-touch-icon-precomposed" href="/favicon/favicon.ico" />
+
+    <link href="/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="/css/sub.css" rel="stylesheet" type="text/css" />
+
+    <!--<link href="/css/sub_tab.css" rel="stylesheet" type="text/css" /> 김우빈 주석-->
+<!--     <link href="/css/board.css" rel="stylesheet" type="text/css" /> -->
+	<link href="/css/board.css?version=1.1" rel="stylesheet" type="text/css" /><!-- //css 캐시방지 추가 (박소연) -->
+    <link href="/css/txt.css" rel="stylesheet" type="text/css" />
+<!--     <link href="/css/style.css" rel="stylesheet" type="text/css" /> -->
+    <link href="/css/style.css?version=1.1" rel="stylesheet" type="text/css" /><!-- //css 캐시방지 추가 (박소연) -->
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/ark/css/ark.css" rel="stylesheet" type="text/css" />
+    <link href="/css/collectionStatistics/css/util.css" rel="stylesheet" type="text/css" />
+    <link href="/css/collectionStatistics/css/main.css" rel="stylesheet" type="text/css" />
+<!--     <link href="/css/lod/lod.css" rel="stylesheet" type="text/css" /> -->
+
+    <!-- javascript -->
+<!--     <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script> -->
+
+    <script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.form.js"></script>
+<!--     <script type="text/javascript" src="/js/jquery.selectbox-0.2.min.js"></script> -->
+<!--     <script type="text/javascript" src="/js/jquery.selectbox.js"></script> -->
+    <script type="text/javascript" src="/js/gnb.js"></script>
+
+== cz_exek2.html ERR HTTP Error 500: Internal Server Error https://mapaexekuci.cz/index.php/mapa-2/
+

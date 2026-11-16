@@ -1,0 +1,515 @@
+{
+  "id" : "xvme-26kg",
+  "name" : "Alumnes matriculats per ensenyament i unitats dels centres docents",
+  "assetType" : "dataset",
+  "attribution" : "Departament d'Educació i Formació Professionalfessional i Formació Professional i Formació Professional i Formació Professional",
+  "attributionLink" : "https://administraciodigital.gencat.cat/ca/dades/dades-obertes/informacio-practica/llicencies/",
+  "averageRating" : 0,
+  "category" : "Educació",
+  "createdAt" : 1559645132,
+  "description" : "Alumnes matriculats en els centres docents, en els ensenyaments que cursen. També s’inclouen el nombre de grups o unitats en què es distribueixen els alumnes. La font d’informació són els sistemes d’informació del Departament d’Educació. L’actualització és anual.  \nRespecte al recompte de matrícules, estan informats els alumnes dels quals es tingui el sexe informat. S’exclouen els estudis categoritzats com a desconeguts. \nHi ha certes característiques dels ensenyaments com la modalitat que només s’informa en els estudis en que té sentit.\nRespecte els grups o unitats, només s‘inclouen els corresponents als ensenyaments de règim general.\nConsideracions:\n-\tEn el cas dels ensenyaments superiors de disseny, una part dels alumnes cursen els estudis anualment i una altra part semestralment. Per homogeneïtzar les dades s’han considerat totes les matrícules anuals (mostrant les dades del primer semestre pels centres que fan els dos períodes).\n-\tEn el cas de les unitats, per als centres privats i per alguns estudis no es disposa de les dades desagregades a nivell d’ensenyament (només a nivell de grau). En aquest cas s’ha afegir el nombre d’unitats per grau separant aquesta dada del nombre de matrícules.\n-\tL'actualització de les dades anual es fa en tres fases: En la primera fase s’informarà dels ensenyaments de règim general, en la segona dels ensenyaments de règim especial que tenen matrícula anual i en la tercera ensenyaments de règim especial que tenen matriculació no anual.",
+  "diciBackend" : false,
+  "displayType" : "table",
+  "downloadCount" : 9467,
+  "hideFromCatalog" : false,
+  "hideFromDataJson" : false,
+  "licenseId" : "SEE_TERMS_OF_USE",
+  "locked" : false,
+  "newBackend" : true,
+  "numberOfComments" : 0,
+  "oid" : 2690059,
+  "provenance" : "official",
+  "publicationAppendEnabled" : false,
+  "publicationDate" : 1686217784,
+  "publicationGroup" : 904550,
+  "publicationStage" : "published",
+  "rowsUpdatedAt" : 1776942106,
+  "rowsUpdatedBy" : "7z7i-u62d",
+  "tableId" : 1808417,
+  "totalTimesRated" : 0,
+  "viewCount" : 40950,
+  "viewLastModified" : 1789972990,
+  "viewType" : "tabular",
+  "approvals" : [ {
+    "reviewedAt" : 1686223800,
+    "reviewedAutomatically" : true,
+    "state" : "approved",
+    "submissionId" : 1344823,
+    "submissionObject" : "public_audience_request",
+    "submissionOutcome" : "change_audience",
+    "submittedAt" : 1686223800,
+    "targetAudience" : "public",
+    "workflowId" : 182,
+    "submissionDetails" : {
+      "permissionType" : "READ"
+    },
+    "submissionOutcomeApplication" : {
+      "endedAt" : 1686223801,
+      "failureCount" : 0,
+      "startedAt" : 1686223800,
+      "status" : "success"
+    },
+    "submitter" : {
+      "id" : "7z7i-u62d",
+      "displayName" : "Dades Obertes Educació"
+    }
+  } ],
+  "clientContext" : {
+    "clientContextVariables" : [ ],
+    "inheritedVariables" : { }
+  },
+  "columns" : [ {
+    "id" : 24713824,
+    "name" : "Curs",
+    "dataTypeName" : "text",
+    "description" : "Curs de referència",
+    "fieldName" : "curs",
+    "position" : 1,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010805,
+    "format" : { }
+  }, {
+    "id" : 24713825,
+    "name" : "Any",
+    "dataTypeName" : "number",
+    "description" : "Any inferior del curs",
+    "fieldName" : "any",
+    "position" : 2,
+    "renderTypeName" : "number",
+    "tableColumnId" : 7010792,
+    "format" : {
+      "noCommas" : "true"
+    }
+  }, {
+    "id" : 24713826,
+    "name" : "Codi centre",
+    "dataTypeName" : "text",
+    "description" : "Codi de centre educatiu",
+    "fieldName" : "codi_centre",
+    "position" : 3,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010775,
+    "format" : { }
+  }, {
+    "id" : 24713827,
+    "name" : "Denominació completa",
+    "dataTypeName" : "text",
+    "description" : "Nom complert del centre educatiu",
+    "fieldName" : "denominaci_completa",
+    "position" : 4,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010793,
+    "format" : { }
+  }, {
+    "id" : 24713828,
+    "name" : "Codi naturalesa",
+    "dataTypeName" : "text",
+    "description" : "Codi naturalesa Públic/Privat",
+    "fieldName" : "codi_naturalesa",
+    "position" : 5,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010777,
+    "format" : { }
+  }, {
+    "id" : 24713829,
+    "name" : "Nom naturalesa",
+    "dataTypeName" : "text",
+    "description" : "Públic/Privat",
+    "fieldName" : "nom_naturalesa",
+    "position" : 6,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010784,
+    "format" : { }
+  }, {
+    "id" : 24713830,
+    "name" : "Codi titularitat",
+    "dataTypeName" : "text",
+    "description" : "Codi de la titularitat de la propietat del centre educatiu",
+    "fieldName" : "codi_titularitat",
+    "position" : 7,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010796,
+    "format" : { }
+  }, {
+    "id" : 24713831,
+    "name" : "Nom titularitat",
+    "dataTypeName" : "text",
+    "description" : "Titularitat de la propietat del centre educatiu",
+    "fieldName" : "nom_titularitat",
+    "position" : 8,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010779,
+    "format" : { }
+  }, {
+    "id" : 24713832,
+    "name" : "Codi àrea territorial",
+    "dataTypeName" : "text",
+    "description" : "Codi de l'Àrea Territorial del centre educatiu",
+    "fieldName" : "codi_delegaci",
+    "position" : 9,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010788,
+    "format" : { }
+  }, {
+    "id" : 24713833,
+    "name" : "Nom àrea territorial",
+    "dataTypeName" : "text",
+    "description" : "Àrea Territorial",
+    "fieldName" : "nom_delegaci",
+    "position" : 10,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010808,
+    "format" : { }
+  }, {
+    "id" : 24713834,
+    "name" : "Codi comarca",
+    "dataTypeName" : "text",
+    "description" : "Codi comarca del centre educatiu",
+    "fieldName" : "codi_comarca",
+    "position" : 11,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010778,
+    "format" : { }
+  }, {
+    "id" : 24713835,
+    "name" : "Nom comarca",
+    "dataTypeName" : "text",
+    "description" : "Nom comarca del centre educatiu",
+    "fieldName" : "nom_comarca",
+    "position" : 12,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010772,
+    "format" : { }
+  }, {
+    "id" : 24713836,
+    "name" : "Codi municipi_5",
+    "dataTypeName" : "text",
+    "description" : "Codificació a 5 dígits",
+    "fieldName" : "codi_municipi_5",
+    "position" : 13,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010771,
+    "format" : { }
+  }, {
+    "id" : 24713837,
+    "name" : "Codi municipi_6",
+    "dataTypeName" : "text",
+    "description" : "Codificació a 6 dígits",
+    "fieldName" : "codi_municip_6",
+    "position" : 14,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010789,
+    "format" : { }
+  }, {
+    "id" : 24713838,
+    "name" : "Nom municipi",
+    "dataTypeName" : "text",
+    "description" : "Nom del municipi del centre educatiu",
+    "fieldName" : "nom_municipi",
+    "position" : 15,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010785,
+    "format" : { }
+  }, {
+    "id" : 24713839,
+    "name" : "Codi districte municipal",
+    "dataTypeName" : "text",
+    "description" : "Codi del districte del municipi del centre educatiu",
+    "fieldName" : "codi_districte_municipal",
+    "position" : 16,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010780,
+    "format" : { }
+  }, {
+    "id" : 24713840,
+    "name" : "Nom districte municipal",
+    "dataTypeName" : "text",
+    "description" : "Nom del districte del municipi del centre educatiu",
+    "fieldName" : "nom_dm",
+    "position" : 17,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010770,
+    "format" : { }
+  }, {
+    "id" : 24713841,
+    "name" : "Coordenades UTM X",
+    "dataTypeName" : "number",
+    "description" : "ETRS89",
+    "fieldName" : "coordenades_utm_x",
+    "position" : 18,
+    "renderTypeName" : "number",
+    "tableColumnId" : 7010794,
+    "format" : {
+      "precisionStyle" : "standard",
+      "decimalSeparator" : ",",
+      "noCommas" : "true",
+      "groupSeparator" : "."
+    }
+  }, {
+    "id" : 24713842,
+    "name" : "Coordenades UTM Y",
+    "dataTypeName" : "number",
+    "description" : "ETRS89",
+    "fieldName" : "coordenades_utm_y",
+    "position" : 19,
+    "renderTypeName" : "number",
+    "tableColumnId" : 7010774,
+    "format" : {
+      "decimalSeparator" : ",",
+      "noCommas" : "true",
+      "groupSeparator" : "."
+    }
+  }, {
+    "id" : 24713843,
+    "name" : "Coordenades GEO X",
+    "dataTypeName" : "number",
+    "description" : "WGS84",
+    "fieldName" : "coordenades_geo_x",
+    "position" : 20,
+    "renderTypeName" : "number",
+    "tableColumnId" : 7010783,
+    "format" : {
+      "decimalSeparator" : ",",
+      "groupSeparator" : "."
+    }
+  }, {
+    "id" : 24713844,
+    "name" : "Coordenades GEO Y",
+    "dataTypeName" : "number",
+    "description" : "WGS84",
+    "fieldName" : "coordenades_geo_y",
+    "position" : 21,
+    "renderTypeName" : "number",
+    "tableColumnId" : 7010802,
+    "format" : {
+      "decimalSeparator" : ",",
+      "groupSeparator" : "."
+    }
+  }, {
+    "id" : 24713845,
+    "name" : "Codi estudis",
+    "dataTypeName" : "text",
+    "description" : "Codi de l’estudi",
+    "fieldName" : "codi_estudis",
+    "position" : 22,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010807,
+    "format" : { }
+  }, {
+    "id" : 24713846,
+    "name" : "Nom estudis",
+    "dataTypeName" : "text",
+    "description" : "Nom de l’estudi",
+    "fieldName" : "nom_estudis",
+    "position" : 23,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010806,
+    "format" : { }
+  }, {
+    "id" : 24713847,
+    "name" : "Temàtica",
+    "dataTypeName" : "text",
+    "description" : "Família professional dels estudis",
+    "fieldName" : "tem_tica",
+    "position" : 24,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010800,
+    "format" : { }
+  }, {
+    "id" : 24713848,
+    "name" : "Grau",
+    "dataTypeName" : "text",
+    "description" : "Grau de l’ensenyament",
+    "fieldName" : "grau",
+    "position" : 25,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010782,
+    "format" : { }
+  }, {
+    "id" : 24713849,
+    "name" : "Codi ensenyament",
+    "dataTypeName" : "text",
+    "description" : "Codi de l’ensenyament",
+    "fieldName" : "codi_ensenyament",
+    "position" : 26,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010776,
+    "format" : { }
+  }, {
+    "id" : 24713850,
+    "name" : "Nom ensenyament",
+    "dataTypeName" : "text",
+    "description" : "Nom de l’ensenyament",
+    "fieldName" : "nom_ensenyament",
+    "position" : 27,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010795,
+    "format" : { }
+  }, {
+    "id" : 24713851,
+    "name" : "Nivell",
+    "dataTypeName" : "text",
+    "description" : "Nivell de l’ensenyament",
+    "fieldName" : "nivell",
+    "position" : 28,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010773,
+    "format" : { }
+  }, {
+    "id" : 24713852,
+    "name" : "Matrícula concertada",
+    "dataTypeName" : "text",
+    "description" : "Informació sobre si l’ensenyament al centre es concertat o rep fons públics",
+    "fieldName" : "matr_cula_concertada",
+    "position" : 29,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010786,
+    "format" : { }
+  }, {
+    "id" : 24713853,
+    "name" : "Modalitat",
+    "dataTypeName" : "text",
+    "description" : "Modalitat en que es cursa l’ensenyament (presencial, semipresencial, distància o lliure)",
+    "fieldName" : "modalitat",
+    "position" : 30,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010801,
+    "format" : { }
+  }, {
+    "id" : 24713854,
+    "name" : "Període matrícula",
+    "dataTypeName" : "text",
+    "description" : "Període de matriculació",
+    "fieldName" : "per_ode_matr_cula",
+    "position" : 31,
+    "renderTypeName" : "text",
+    "tableColumnId" : 7010804,
+    "format" : { }
+  }, {
+    "id" : 24713856,
+    "name" : "Matrícules. Total",
+    "dataTypeName" : "number",
+    "description" : "Nombre de matrícules. Total",
+    "fieldName" : "matr_cules_total",
+    "position" : 33,
+    "renderTypeName" : "number",
+    "tableColumnId" : 7010803,
+    "format" : { }
+  }, {
+    "id" : 24713857,
+    "name" : "Matrícules. Dones",
+    "dataTypeName" : "number",
+    "description" : "Nombre de matrícules. Dones",
+    "fieldName" : "matr_cules_dones",
+    "position" : 34,
+    "renderTypeName" : "number",
+    "tableColumnId" : 7010791,
+    "format" : { }
+  }, {
+    "id" : 24713858,
+    "name" : "Matrícules. Homes",
+    "dataTypeName" : "number",
+    "description" : "Nombre de matrícules. Homes",
+    "fieldName" : "matr_cules_homes",
+    "position" : 35,
+    "renderTypeName" : "number",
+    "tableColumnId" : 7010799,
+    "format" : { }
+  }, {
+    "id" : 24713862,
+    "name" : "Unitats",
+    "dataTypeName" : "number",
+    "description" : "Nombre d'unitats o grups",
+    "fieldName" : "unitats",
+    "position" : 39,
+    "renderTypeName" : "number",
+    "tableColumnId" : 7010798,
+    "format" : {
+      "decimalSeparator" : ",",
+      "noCommas" : "true",
+      "groupSeparator" : "."
+    }
+  }, {
+    "id" : 24713866,
+    "name" : "Georeferència",
+    "dataTypeName" : "text",
+    "description" : "",
+    "fieldName" : "georefer_ncia",
+    "position" : 40,
+    "renderTypeName" : "text",
+    "tableColumnId" : 15138914,
+    "format" : {
+      "align" : "left"
+    }
+  } ],
+  "grants" : [ {
+    "inherited" : false,
+    "type" : "viewer",
+    "flags" : [ "public" ]
+  } ],
+  "license" : {
+    "name" : "See Terms of Use"
+  },
+  "metadata" : {
+    "jsonQuery" : {
+      "order" : [ {
+        "columnFieldName" : "curs",
+        "ascending" : false
+      } ]
+    },
+    "custom_fields" : {
+      "Freqüència d'actualització" : {
+        "Freqüència d'actualització" : "Anual"
+      },
+      "Idioma" : {
+        "Idioma" : "Català",
+        "Dataset name (EN)" : "Students enrolled by type of education and education center",
+        "Nombre del conjunto de datos (ES)" : "Alumnos matriculados por enseñanza y unidades de los centros docentes"
+      },
+      "Informació de gènere o sexe" : {
+        "Informació de gènere o sexe" : "Sí"
+      },
+      "Actors" : {
+        "Departament" : "Educació i Formació Professional",
+        "Tipus actor" : "Generalitat de Catalunya"
+      },
+      "Àmbit geogràfic" : {
+        "Informació geogràfica" : "Coordenades",
+        "Àmbit geogràfic" : "Catalunya"
+      }
+    },
+    "availableDisplayTypes" : [ "table", "fatrow", "page" ]
+  },
+  "owner" : {
+    "id" : "a4b5-gx6v",
+    "displayName" : "Dades Obertes Catalunya",
+    "profileImageUrlLarge" : "/api/users/a4b5-gx6v/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/a4b5-gx6v/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/a4b5-gx6v/profile_images/TINY",
+    "screenName" : "Dades Obertes Catalunya",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula" ]
+  },
+  "query" : {
+    "orderBys" : [ {
+      "ascending" : false,
+      "expression" : {
+        "columnId" : 24713824,
+        "type" : "column"
+      }
+    } ]
+  },
+  "rights" : [ "read" ],
+  "tableAuthor" : {
+    "id" : "a4b5-gx6v",
+    "displayName" : "Dades Obertes Catalunya",
+    "profileImageUrlLarge" : "/api/users/a4b5-gx6v/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/a4b5-gx6v/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/a4b5-gx6v/profile_images/TINY",
+    "screenName" : "Dades Obertes Catalunya",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula" ]
+  },
+  "tags" : [ "centres", "departament", "ensenyament", "estudi", "matrícula", "alumnes", "educació", "grups", "unitats", "docents", "registre", "infantil", "primària", "secundària", "batxillerat", "formació professional", "ods4_educació de qualitat" ],
+  "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+}
