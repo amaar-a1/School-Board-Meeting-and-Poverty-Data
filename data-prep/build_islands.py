@@ -9,7 +9,8 @@ it's shown as one unit here.) The US territories and Saint-Pierre-et-Miquelon ha
   2. people below the national poverty line (World Bank SI.POV.NAHC, else the CIA World Factbook);
   3. unemployment rate as a stand-in (World Bank SL.UEM.TOTL.ZS, ILO estimate, else the Factbook).
   The national poverty lines differ from country to country, so these aren't comparable.
-- Enrollment: primary plus secondary pupils (World Bank SE.PRM.ENRL + SE.SEC.ENRL, UNESCO), latest year
+- Enrollment: primary plus secondary pupils (World Bank SE.PRM.ENRL + SE.SEC.ENRL, UNESCO), latest year; public-school
+  pupils from the private shares SE.PRM.PRIV.ZS and SE.SEC.PRIV.ZS (UNESCO)
   with both.
 - Children: population x share aged 0-14 (World Bank, else the Factbook).
 - Locale (estimated): people per km² of land (Factbook area): urban 2,000+, suburban 500-2,000, mixed
@@ -342,6 +343,17 @@ def main():
         else:
             r["Meetings note"] = ZERO_NOTES.get(iso, "No school board meets in public, and no recorded sittings of the legislature were found on YouTube "
                                                      "(the search found only news, party or other countries' channels); it may stream on its own website")
+    # Public-school pupils elsewhere: the year's primary and secondary pupils (World Bank SE.PRM.ENRL, SE.SEC.ENRL), each less
+    # the share at private schools (SE.PRM.PRIV.ZS, SE.SEC.PRIV.ZS, from UNESCO; "private" = not run by a public authority,
+    # whether or not it gets public money). The share is taken from the same year, or the nearest year within three.
+    def public_pupils(iso, y):
+        tot = 0
+        for enr, priv in (("SE.PRM.ENRL", "SE.PRM.PRIV.ZS"), ("SE.SEC.ENRL", "SE.SEC.PRIV.ZS")):
+            n = W.get(enr, {}).get(iso, {}).get(y); shares = W.get(priv, {}).get(iso, {})
+            near = sorted((abs(k - y), -k) for k in shares if abs(k - y) <= 3)
+            if n is None or not near: return None
+            tot += n * (1 - shares[-near[0][1]] / 100)
+        return round(tot)
     # Public-school pupils where the source shows only government schools (the share is then 100%): Christmas Island and
     # Cocos (Keeling) Islands (one government school each), Svalbard (Longyearbyen's municipal school), the Falklands (two
     # government schools), Niue (two government schools), Tokelau (a government school on each atoll); Norfolk Island: 262 of 265 at government schools (2021 Census).
@@ -349,6 +361,9 @@ def main():
     for r in out:
         iso = r["District ID"][5:]
         r["Public school enrollment"] = 262 if iso == "NFK" else r["Enrollment"] if iso in ("CXR", "CCK", "SJM", "FLK", "NIU", "TKL") and r["Enrollment"] else ""
+        # Curaçao is left out: UNESCO reports no private pupils, but most of its schools are run by church school boards.
+        if r["Public school enrollment"] == "" and r["Enrollment year"].isdigit() and iso != "CUW":   # World Bank / UNESCO enrollment
+            r["Public school enrollment"] = public_pupils(iso, int(r["Enrollment year"])) or ""
     cols = list(out[0])
     cols.insert(cols.index("Enrollment year") + 1, cols.pop(cols.index("Public school enrollment")))
     with open(os.path.join(DOCS, "islands.csv"), "w", newline="", encoding="utf-8") as fo:
