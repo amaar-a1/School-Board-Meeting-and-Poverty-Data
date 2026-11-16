@@ -1,0 +1,201 @@
+== cat_agg.json OK 950213 https://analisi.transparenciacatalunya.cat/resource/xvme-26kg.json?$select=curs%2Ccodi_municipi_5%2Cnom_municipi%2Cnom_naturalesa%2Cnom_estudis%2Csum%28matr_cules_total%29%20as%20n&$where=curs%20in%28%272024/2025%27%2C%272025/2026%27%29&$group=curs%2Ccodi_municipi_5%2Cnom_municipi%2Cnom_naturalesa%2Cnom_estudis&$limit=50000
+[{"curs":"2024/2025","codi_municipi_5":"08054","nom_municipi":"Castellbisbal","nom_naturalesa":"Públic","nom_estudis":"PROGRAMA DE FORMACIÓ I INSERCIÓ","n":"15"}
+,{"curs":"2025/2026","codi_municipi_5":"08003","nom_municipi":"Alella","nom_naturalesa":"Privat","nom_estudis":"EDUCACIÓ PRIMÀRIA","n":"135"}
+,{"curs":"2024/2025","codi_municipi_5":"43102","nom_municipi":"Paüls","nom_naturalesa":"Públic","nom_estudis":"EDUCACIÓ PRIMÀRIA","n":"21"}
+,{"curs":"2024/2025","codi_municipi_5":"43123","nom_municipi":"Reus","nom_naturalesa":"Privat","nom_estudis":"FORMACIÓ PROFESSIONAL","n":"106"}
+,{
+
+== None OK 112997961 https://opendata.dataplatform-onderwijs.vlaanderen.be/dataloep/inschrijvingen-leerplicht-instellingen-dataset-2024-2025-1feb.csv
+
+
+VL agg 2199 bad {}
+== None ERR HTTP Error 400: Bad Request https://www.odwb.be/api/explore/v2.1/catalog/datasets?where=search%28%22fase%22%29&limit=40&select=dataset_id,metas
+
+odwb fase ERR the JSON object must be str, bytes or bytearray, not NoneType
+== None ERR HTTP Error 400: Bad Request https://www.odwb.be/api/explore/v2.1/catalog/datasets?where=search%28%22implantation%22%29&limit=40&select=dataset_id,metas
+
+odwb implantation ERR the JSON object must be str, bytes or bytearray, not NoneType
+== None ERR HTTP Error 400: Bad Request https://www.odwb.be/api/explore/v2.1/catalog/datasets?where=search%28%22population%20scolaire%22%29&limit=40&select=dataset_id,metas
+
+odwb population scolaire ERR the JSON object must be str, bytes or bytearray, not NoneType
+== None ERR HTTP Error 400: Bad Request https://www.odwb.be/api/explore/v2.1/catalog/datasets?where=search%28%22r%C3%A9seau%22%29&limit=40&select=dataset_id,metas
+
+odwb réseau ERR the JSON object must be str, bytes or bytearray, not NoneType
+== None OK 55621 https://onderwijsdata.duo.nl/api/3/action/package_search?q=leerlingen%20vestiging&rows=8
+
+
+DUO Leerlingen po per vestiging: Leerlingen po per vestiging https://onderwijsdata.duo.nl/dataset/cf80e90d-ed19-4a10-a138-00c5c345cb5e/resource/9278ae97-4014-49f4-91fc-8cc255c2595d/download/brin6_totaal.csv
+DUO Leerlingen po per vestiging naar impulsgebied: Leerlingen po per vestiging naar impulsgebied https://onderwijsdata.duo.nl/dataset/aaa5b511-8a03-46ec-bf56-7e454527ed99/resource/d9c04506-8c3c-41ea-80d7-de2255227419/download/brin6_impulsgebied.csv
+DUO Leerlingen po per vestiging naar geslacht: Leerlingen po per vestiging naar geslacht https://onderwijsdata.duo.nl/dataset/7239b972-8766-4077-b228-744870d790f5/resource/cbc1df7e-d201-4ae4-9c98-fbbf41e38864/download/brin6_geslacht.csv
+DUO Leerlingen po per vestiging naar leeftijd: Leerlingen po per vestiging naar leeftijd https://onderwijsdata.duo.nl/dataset/068b4ce0-3f3c-4db1-8633-a6dff2496078/resource/7c5b59d0-0754-4ca5-923a-9d4b26bedeb4/download/brin6_leeftijd.csv
+DUO Leerlingen po per vestiging naar achtergrond: Leerlingen sbo, so en vso per vestiging naar cumi https://onderwijsdata.duo.nl/dataset/e3ab98c0-881a-413a-ba8a-676dd1313593/resource/fb5290c9-b19e-46fb-9496-9582162a106a/download/brin6_cumi.csv ; Leerlingen bo per vestiging naar noat https://onderwijsdata.duo.nl/dataset/e3ab98c0-881a-413a-ba8a-676dd1313593/resource/2899e6a2-cfee-41a6-9250-43276db16e69/download/brin6_noat.csv
+DUO Leerlingen bo per vestiging naar gewicht: Leerlingen bo per vestiging naar gewicht https://beheer-ggm-ckan-prd.apps.prd.duo.rijksapps.nl/dataset/ee0b0510-d3fb-4c7f-b534-54e1aebbf954/resource/ed4c4738-9315-4a5c-8c65-2a0353ae7611/download/brin6_gewicht.csv
+DUO Leerlingen po per vestiging naar postcode4: Leerlingen po per vestiging naar postcode4 https://onderwijsdata.duo.nl/dataset/4ea91ae5-51ef-48a4-aa67-7098343f75bc/resource/402c5a69-eea8-41b4-b8ad-ecac301c28a8/download/brin6_pc4.csv
+DUO Leerlingen bo en sbo per vestiging naar advies: Leerlingen bo en sbo per vestiging naar advies https://onderwijsdata.duo.nl/dataset/d6903313-8c64-4b12-b4ac-07e5655ef9f4/resource/454c5dd4-6815-4b52-ae2f-b9eebc6afa6d/download/brin6_advies.csv
+== None OK 62071 https://onderwijsdata.duo.nl/api/3/action/package_search?q=leerlingen%20po%20per%20vestiging&rows=8
+
+
+DUO Leerlingen po per vestiging: Leerlingen po per vestiging https://onderwijsdata.duo.nl/dataset/cf80e90d-ed19-4a10-a138-00c5c345cb5e/resource/9278ae97-4014-49f4-91fc-8cc255c2595d/download/brin6_totaal.csv
+DUO Leerlingen po per vestiging naar impulsgebied: Leerlingen po per vestiging naar impulsgebied https://onderwijsdata.duo.nl/dataset/aaa5b511-8a03-46ec-bf56-7e454527ed99/resource/d9c04506-8c3c-41ea-80d7-de2255227419/download/brin6_impulsgebied.csv
+DUO Leerlingen po per vestiging naar geslacht: Leerlingen po per vestiging naar geslacht https://onderwijsdata.duo.nl/dataset/7239b972-8766-4077-b228-744870d790f5/resource/cbc1df7e-d201-4ae4-9c98-fbbf41e38864/download/brin6_geslacht.csv
+DUO Leerlingen po per vestiging naar leeftijd: Leerlingen po per vestiging naar leeftijd https://onderwijsdata.duo.nl/dataset/068b4ce0-3f3c-4db1-8633-a6dff2496078/resource/7c5b59d0-0754-4ca5-923a-9d4b26bedeb4/download/brin6_leeftijd.csv
+DUO Leerlingen po per vestiging naar achtergrond: Leerlingen sbo, so en vso per vestiging naar cumi https://onderwijsdata.duo.nl/dataset/e3ab98c0-881a-413a-ba8a-676dd1313593/resource/fb5290c9-b19e-46fb-9496-9582162a106a/download/brin6_cumi.csv ; Leerlingen bo per vestiging naar noat https://onderwijsdata.duo.nl/dataset/e3ab98c0-881a-413a-ba8a-676dd1313593/resource/2899e6a2-cfee-41a6-9250-43276db16e69/download/brin6_noat.csv
+DUO Leerlingen po per vestiging naar postcode4: Leerlingen po per vestiging naar postcode4 https://onderwijsdata.duo.nl/dataset/4ea91ae5-51ef-48a4-aa67-7098343f75bc/resource/402c5a69-eea8-41b4-b8ad-ecac301c28a8/download/brin6_pc4.csv
+DUO Leerlingen po per gemeente: Leerlingen po per gemeente naar geslacht https://onderwijsdata.duo.nl/dataset/800ba8ae-b1a2-4023-b4bf-d9aa7a807b1d/resource/f6c423ae-db72-453a-be28-9885fbbe392e/download/gemeente_geslacht.csv ; Leerlingen po per gemeente naar leeftijd https://onderwijsdata.duo.nl/dataset/800ba8ae-b1a2-4023-b4bf-d9aa7a807b1d/resource/f1771ce8-cb13-4c18-a255-9c473dd7602f/download/gemeente_leeftijd.csv ; Leerlingen po per gemeente naar postcode4 https://onderwijsdata.duo.nl/dataset/800ba8ae-b1a2-4023-b4bf-d9aa7a807b1d/resource/386e4aa9-b70a-45b5-9e45-9bd5a987f3be/download/gemeente_pc4.csv ; Leerlingen po per gemeente https://onderwijsdata.duo.nl/dataset/800ba8ae-b1a2-4023-b4bf-d9aa7a807b1d/resource/626f4408-767c-4971-aa43-aad310538648/download/gemeente_totaal.csv
+DUO Leerlingen po per samenwerkingsverband: Leerlingen po per Samenwerkingsverband naar geslacht https://onderwijsdata.duo.nl/dataset/89d18feb-146c-4d8e-9dbe-87dacd6e29c0/resource/e468a90a-9435-4854-9285-17ba5709a46d/download/swv_geslacht.csv ; Leerlingen po per Samenwerkingsverband naar leeftijd https://onderwijsdata.duo.nl/dataset/89d18feb-146c-4d8e-9dbe-87dacd6e29c0/resource/c45164f1-e894-47db-a94e-9bbd5e4a3759/download/swv_geslacht.csv ; Leerlingen po per Samenwerkingsverband naar postcode4 https://onderwijsdata.duo.nl/dataset/89d18feb-146c-4d8e-9dbe-87dacd6e29c0/resource/37467812-d271-44e2-90f9-d8c0ec7a1fb3/download/swv_pc4.csv ; Leerlingen po per Samenwerkingsverband https://onderwijsdata.duo.nl/dataset/89d18feb-146c-4d8e-9dbe-87dacd6e29c0/resource/dfdba065-478a-4ebb-80f3-36058a313dc8/download/swv_totaal.csv
+== None OK 54182 https://onderwijsdata.duo.nl/api/3/action/package_search?q=leerlingen%20vo%20per%20vestiging&rows=8
+
+
+DUO VO-leerlingen per vestiging naar onderwijstype, sector en afdeling.: VO-leerlingen per vestiging naar onderwijstype, sector en afdeling. https://beheer-ggm-ckan-prd.apps.prd.duo.rijksapps.nl/dataset/173cbf21-1567-464a-bccd-518cd7a46bd0/resource/d49219cc-2f36-4c2d-8007-b385ba44ec8d/download/01voins.csv
+DUO VO-leerlingen per vestiging en leerjaar naar postcode, plaats en gemeente.: VO-leerlingen en leerjaar naar postcode, plaats en gemeente. https://beheer-ggm-ckan-prd.apps.prd.duo.rijksapps.nl/dataset/19c81dcb-a7c5-4410-8122-145f0996d082/resource/a0ca4915-9aae-4826-bf5b-6825ce95b8b4/download/02voins.csv
+DUO Leerlingen po per vestiging: Leerlingen po per vestiging https://onderwijsdata.duo.nl/dataset/cf80e90d-ed19-4a10-a138-00c5c345cb5e/resource/9278ae97-4014-49f4-91fc-8cc255c2595d/download/brin6_totaal.csv
+DUO Prognoses vo per instelling: Prognoses vo per instelling https://onderwijsdata.duo.nl/dataset/fa03fb37-6595-4e81-bd74-8818058bbcf9/resource/7a7ba341-1a01-47ed-9b94-c7f4aa478e88/download/brin4_prognosesvo.csv
+DUO Leerlingen po per vestiging naar impulsgebied: Leerlingen po per vestiging naar impulsgebied https://onderwijsdata.duo.nl/dataset/aaa5b511-8a03-46ec-bf56-7e454527ed99/resource/d9c04506-8c3c-41ea-80d7-de2255227419/download/brin6_impulsgebied.csv
+DUO Leerlingen po per vestiging naar geslacht: Leerlingen po per vestiging naar geslacht https://onderwijsdata.duo.nl/dataset/7239b972-8766-4077-b228-744870d790f5/resource/cbc1df7e-d201-4ae4-9c98-fbbf41e38864/download/brin6_geslacht.csv
+DUO Leerlingen po per vestiging naar leeftijd: Leerlingen po per vestiging naar leeftijd https://onderwijsdata.duo.nl/dataset/068b4ce0-3f3c-4db1-8633-a6dff2496078/resource/7c5b59d0-0754-4ca5-923a-9d4b26bedeb4/download/brin6_leeftijd.csv
+DUO Leerlingen po per vestiging naar achtergrond: Leerlingen sbo, so en vso per vestiging naar cumi https://onderwijsdata.duo.nl/dataset/e3ab98c0-881a-413a-ba8a-676dd1313593/resource/fb5290c9-b19e-46fb-9496-9582162a106a/download/brin6_cumi.csv ; Leerlingen bo per vestiging naar noat https://onderwijsdata.duo.nl/dataset/e3ab98c0-881a-413a-ba8a-676dd1313593/resource/2899e6a2-cfee-41a6-9250-43276db16e69/download/brin6_noat.csv
+== ab_auth_school.xlsx OK 558280 https://education.alberta.ca/media/1626669/authority_and_school.xlsx
+
+
+== bc_headcount.xlsx OK 16865593 https://catalogue.data.gov.bc.ca/dataset/7114187e-305c-4a79-acbb-3294ba0f53c8/resource/c1a55945-8554-4058-9019-514b16178f89/download/student_headcount_by_grade_2017_18_to_2025_26.xlsx
+
+
+== None OK 133259 https://www.donneesquebec.ca/recherche/api/3/action/package_search?q=%C3%A9tablissements%20d%27enseignement%20priv%C3%A9&rows=8
+
+
+QC Localisation des établissements d'enseignement du réseau scolaire au Québec: Carte interactive https://infogeo.education.gouv.qc.ca/public/Carte_Interactive/ ; Établissements d'enseignement https://www.donneesquebec.ca/recherche/dataset/2d3b5cf8-b347-49c7-ad3b-bd6a9c15e443/resource/2ae11c05-03b2-4006-bdb2-a49a4fa41c23/download/etablissements-meq-mes-esrishp.zip ; Données ouvertes du MEQ-MES https://www.donneesquebec.ca/recherche/dataset/2d3b5cf8-b347-49c7-ad3b-bd6a9c15e443/resource/5d254f95-5ebd-474a-bdc2-59db68ae1e33/download/donnees-ouvertes-meq-mes-esrifgdb.zip ; Données ouvertes du MEQ-MES https://www.donneesquebec.ca/recherche/dataset/2d3b5cf8-b347-49c7-ad3b-bd6a9c15e443/resource/fbca9e80-7ef1-493a-83dd-85f55349017e/download/donnees-ouvertes-meq-mes-lyr.zip ; Données ouvertes du MEQ-MES https://infogeo.education.gouv.qc.ca/arcgis/services/DonneesOuvertes/SW_MEES/MapServer/WMSServer?request=GetCapabilities&service=WMS ; Données ouvertes du MEQ-MES https://infogeo.education.gouv.qc.ca/arcgis/services/DonneesOuvertes/SW_MEES/MapServer/WFSServer?request=GetCapabilities&service=WFS
+QC Subdivisions territoriales forestières (STF): 🌲Forêt ouverte https://www.foretouverte.gouv.qc.ca/?pos=@-73.40183,48.70346,7z&ctx=_STF_DonneesQC&layers=012id,190pid,1v,23z;186id,196pid,0v,18z;185id,196pid,0v,17z;188id,196pid,0v,15z ; Subdivisions territoriales forestières (STF) https://servicescarto.mrnf.gouv.qc.ca/pes/services/Forets/STF_WMS/MapServer/WMSServer? ; Lexique du produit 'Subdivisions territoriales forestières (STF)' https://diffusion.mffp.gouv.qc.ca/Diffusion/DonneeGratuite/Foret/LIM_TERRITOIRE_FOREST_PUBLIC/STF/Lexique_produit_STF.pdf ; Attributs du produit 'Subdivisions territoriales forestières (STF)' https://diffusion.mffp.gouv.qc.ca/Diffusion/DonneeGratuite/Foret/LIM_TERRITOIRE_FOREST_PUBLIC/STF/Attributs_produit_STF.pdf ; Liste des modes de gestion du produit 'Subdivisions territoriales forestières (STF)' https://diffusion.mffp.gouv.qc.ca/Diffusion/DonneeGratuite/Foret/LIM_TERRITOIRE_FOREST_PUBLIC/STF/LISTE MODES DE GESTION.pdf ; Subdivisions territoriales forestières (STF) https://diffusion.mffp.gouv.qc.ca/Diffusion/DonneeGratuite/Foret/LIM_TERRITOIRE_FOREST_PUBLIC/STF/STF_SHP.zip
+QC Cartes de glace: Service de cartographie Web pour les cartes de glace https://geoegl.msp.gouv.qc.ca/apis/wss/historiqueglace.fcgi?service=wms&version=1.3.0&request=getcapabilities ; Service Web des cartes de glaces (WCS) https://geoegl.msp.gouv.qc.ca/apis/wss/historiqueglace.fcgi?VERSION=1.0.0&SERVICE=WCS&REQUEST=GETCAPABILITIES ; Carte interactive (IGO) https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?wmsUrl=https:%2F%2Fgeoegl.msp.gouv.qc.ca%2Fapis%2Fwss%2Fhistoriqueglace.fcgi&layers=20250130_CHAUDIERE_RCM&zoom=12&center=-71.26569,46.66070 ; historique :Index de la couverture des images RCM (2025) https://www.donneesquebec.ca/recherche/dataset/4a05016f-fa46-4b1d-94cf-ff45b4cb9391/resource/89b53502-a9d8-46d3-8772-d679eea92cfc/download/index-des-cartes-de-glace-rcm.geojson ; Historique : Index des cartes de glace Sentinel 1 (2025) https://www.donneesquebec.ca/recherche/dataset/4a05016f-fa46-4b1d-94cf-ff45b4cb9391/resource/ec53f54c-d376-4cbb-8223-b363e3b45d8c/download/index-des-cartes-de-glace-s1.geojson ; Dernier index actif pour RCM https://geoegl.msp.gouv.qc.ca/apis/wss/vigilance.fcgi?service=wfs&version=1.1.0&request=getfeature&typename=carte_glace_rcm_index&outputformat=geojson&srsName=epsg:4326
+== None OK 30645 https://www.donneesquebec.ca/recherche/api/3/action/package_search?q=effectif%20%C3%A9l%C3%A8ves%20%C3%A9tablissement&rows=8
+
+
+QC Indices de défavorisation: Atlas de la dévaforisation https://infogeo.education.gouv.qc.ca/public/Atlas_Defavorisation/ ; Indices de défavorisation https://www.donneesquebec.ca/recherche/dataset/004de02c-19f1-4da0-9af8-33f893e41972/resource/0ccf0f54-c9ff-456d-ac74-3ccd7b57b1dd/download/defavorisation-meq-mes-geopkg.zip ; Défavorisation - Écoles primaires 2025-2026 https://www.donneesquebec.ca/recherche/dataset/004de02c-19f1-4da0-9af8-33f893e41972/resource/6c5d4a5d-ba3b-40a6-b570-916f43ab622c/download/defav_ecole_prim_public.csv ; Défavorisation - Écoles secondaires 2025-2026 https://www.donneesquebec.ca/recherche/dataset/004de02c-19f1-4da0-9af8-33f893e41972/resource/3e9aa43a-c32b-4779-b258-8407db716813/download/defav_ecole_sec_public.csv ; Défavorisation - Écoles primaires 2025-2026 https://www.donneesquebec.ca/recherche/dataset/004de02c-19f1-4da0-9af8-33f893e41972/resource/f9ac688c-4575-42a9-983a-cd7f3f52094a/download/defav_ecole_prim_public.geojson ; Défavorisation - Écoles secondaires 2025-2026 https://www.donneesquebec.ca/recherche/dataset/004de02c-19f1-4da0-9af8-33f893e41972/resource/babc409c-f0d0-451d-8abb-04fe8e0ee90a/download/defav_ecole_sec_public.geojson
+== None OK 280864 https://dam-api.bfs.admin.ch/hub/api/dam/assets?language=de&prodima=900212&limit=60
+
+
+BFSA 36863357 Bildungsverläufe von Kindern aus dem Asylbereich in der Primarschule | su-d-15.10.01.07
+BFSA 36850612 Bildungsverläufe von Kindern aus dem Asylbereich in der Primarschule | 2389-2600
+BFSA 36752644 Durchschnittliche Dauer der 2010 geborenen Kinder in den verschiedenen Unterrichtsarten auf Primarstufe 3–8 | gr-d-15.10.01.06a
+BFSA 36840742 Durchschnittliche Dauer der 2010 geborenen Kinder in den verschiedenen Unterrichtsarten auf Primarstufe 3–8 | gr-d-15.10.01.06b
+BFSA 36752612 Erste besuchte Unterrichtsart auf Primarstufe 3–8 der 2015 geborenen Kinder | gr-d-15.10.01.02.01a
+BFSA 36840695 Erste besuchte Unterrichtsart auf Primarstufe 3–8 der 2015 geborenen Kinder | gr-d-15.10.01.02.01b
+BFSA 36840694 Erste besuchte Unterrichtsart auf Primarstufe 3–8 der im Jahr 2015 geborenen Kinder | gr-d-15.10.01.02.02b
+BFSA 36840696 Erste besuchte Unterrichtsart auf Primarstufe 3–8 der im Jahr 2015 geborenen Kinder | gr-d-15.10.01.02.02a
+BFSA 36840811 Neun von zehn Kindern aus dem Asylbereich durchlaufen die Primarschule im Regelunterricht | 2025-0212-d
+BFSA 36840730 Situation und Verlauf am Ende der Primarstufe 3–8 der im Jahr 2010 geborenen Kinder | gr-d-15.10.01.05b
+BFSA 36752651 Situation und Verlauf am Ende der Primarstufe 3–8 der im Jahr 2010 geborenen Kinder | gr-d-15.10.01.05a
+BFSA 36752650 Situation und Verlauf der im Jahr 2015 geborenen Kinder im Alter von 8 Jahren | gr-d-15.10.01.04a
+BFSA 36840720 Situation und Verlauf der im Jahr 2015 geborenen Kinder im Alter von 8 Jahren | gr-d-15.10.01.04b
+BFSA 36840672 Unterrichtsart der im Jahr 2015 geborenen Kinder bei der Einschulung | gr-d-15.10.01.01b
+BFSA 36752599 Unterrichtsart der im Jahr 2015 geborenen Kinder bei der Einschulung | gr-d-15.10.01.01a
+BFSA 36840709 Zusammenhang zwischen der zuletzt besuchten Unterrichtsart auf Primarstufe 1–2 und der ersten besuchten Unterrichtsart auf Primarstufe 3–8 der 2015 geborenen Kinder | gr-d-15.10.01.03b
+BFSA 36752621 Zusammenhang zwischen der zuletzt besuchten Unterrichtsart auf Primarstufe 1–2 und der ersten besuchten Unterrichtsart auf Primarstufe 3–8 der 2015 geborenen Kinder | gr-d-15.10.01.03a
+BFSA 36840769 Übergänge und Verläufe in der obligatorischen Schule | lk-b-bfs-gnp-15.10-0018
+BFSA 37017885 Liste der Berufscodes für SBG-SFPI | do-b-15.03-berufsbg
+BFSA 36947803 38% der Personen mit EFZ erwerben innerhalb von zwölf Jahren einen Abschluss auf Tertiärstufe | 2026-0125-d
+BFSA 36854761 Art des innerhalb von zwölf Jahren nach dem 2012 erlangten Abschluss auf Sekundarstufe II erworbenen Erstabschlusses auf Tertiärstufe, nach Abschluss der Sekundarstufe II | gr-d-15.10.04.16
+BFSA 36872855 Art des innerhalb von zwölf Jahren nach dem 2012 erlangten Abschluss auf Sekundarstufe II erworbenen Erstabschlusses auf Tertiärstufe, nach Abschluss der Sekundarstufe II | ds-x-15.10.04.16
+BFSA 36854739 Bildungserfolg auf Tertiärstufe nach Erwerb eines EFZ, nach EFZ-Bildungsfeld | gr-d-15.10.04.14
+BFSA 36854742 Bildungserfolg auf Tertiärstufe nach Erwerb eines EFZ, nach verschiedenen Analysedimensionen | gr-d-15.10.04.13
+BFSA 36854745 Bildungsverlauf bis zum Erwerb eines Abschlusses der HBB innerhalb von zwölf Jahren nach Erwerb eines EFZ, nach EFZ-Bildungsfeld | gr-d-15.10.04.12
+BFSA 36854760 Bildungsverlauf bis zum Erwerb eines Abschlusses der HBB innerhalb von zwölf Jahren nach Erwerb eines EFZ, nach verschiedenen Analysedimensionen | gr-d-15.10.04.11
+BFSA 36936259 Erwerb eines Tertiärabschlusses im Anschluss an ein eidgenössisches Fähigkeitszeugnis | 2385-2600
+BFSA 36936234 Erwerb eines Tertiärabschlusses im Anschluss an ein eidgenössisches Fähigkeitszeugnis: Grafiken und Tabellen | su-d-15.10.04-03
+BFSA 36854759 Erwerb eines Tertiärabschlusses innerhalb von zwölf Jahren nach einem 2012 erlangten EFZ, nach EFZ-Bildungsfeld | gr-d-15.10.04.08
+BFSA 36854737 Erwerb eines Tertiärabschlusses innerhalb von zwölf Jahren nach einem 2012 erlangten EFZ, nach den Merkmalen des Lehrbetriebs während der Lehre | gr-d-15.10.04.09
+BFSA 36854715 Erwerb eines Tertiärabschlusses innerhalb von zwölf Jahren nach einem 2012 erlangten EFZ, nach den soziodemografischen Merkmalen zum Zeitpunkt des EFZ-Erwerbs | gr-d-15.10.04.07
+BFSA 36854740 Erwerb eines Tertiärabschlusses innerhalb von zwölf Jahren nach einem 2012 erlangten EFZ, nach sozioökonomischem Hintergrund zum Zeitpunkt des EFZ | gr-d-15.10.04.10
+BFSA 36854741 Weiterer Abschluss auf Tertiärstufe nach einem 2012 erworbenen EFZ, nach verschiedenen Analysedimensionen | gr-d-15.10.04.15
+BFSA 36791417 Übergänge und Verläufe nach der Sekundarstufe II | lk-b-bfs-gnp-15.10-0044
+BFSA 36830517 Abschlussquote auf der Sekundarstufe II nach Geschlecht | gr-d-15.01.02-ind405101_d4
+BFSA 36830511 Abschlussquote auf der Sekundarstufe II nach Geschlecht, Nationalität und Geburtsort | gr-d-15.01.02-ind405101_d140
+BFSA 36830507 Abschlussquote auf der Sekundarstufe II nach Wohnkanton | gr-d-15.01.02-ind405101_d104
+BFSA 36830459 Abschlussquote auf der Sekundarstufe II – Daten des Indikators | ind-d-405101
+BFSA 36879186 Abschlussquote auf der Sekundarstufe II, Entwicklung | gr-d-15.01.02-ind405101_d1
+BFSA 36830570 Abschlussquote der Fach- und pädagogischen Hochschulen | mx-d-01-15.03.03-05
+BFSA 36830546 Abschlussquote der Hochschulen | gr-d-15.01.02-ind405105_d9
+BFSA 36830534 Abschlussquote der Hochschulen nach Geschlecht | gr-d-15.01.02-ind405105_d4
+BFSA 36830533 Abschlussquote der Hochschulen nach Wohnkanton | gr-d-15.01.02-ind405105_d104
+BFSA 36830473 Abschlussquote der Hochschulen – Daten des Indikators | ind-d-405105
+BFSA 36830595 Bildungsindikatoren | lk-b-bfs-gnp-15.01-0015
+BFSA 36830599 Bildungsindikatoren Schweiz nach Themen | lk-b-bfs-gnp-15.01-0041
+BFSA 36890305 Bildungsverläufe an den höheren Fachschulen | su-d-15.10.05-02
+BFSA 36877352 Bildungsverläufe auf Sekundarstufe II | su-d-15.10.03.01
+BFSA 36890357 Bildungsverläufe und -erfolge der Personen, die 2019 ins erste Programmjahr einer HF eingetreten sind, bis 2024 | gr-d-15.10.05.02
+BFSA 36947614 Der Übergang am Ende der obligatorischen Schule | su-d-15.10.02.07
+BFSA 36936015 Der Übergang in die zertifizierende Sekundarstufe II nach Anspruchsniveau am Ende der obligatorischen Schule | gr-d-15.10.02.01
+BFSA 36877357 Einkommen nach der gymnasialen Maturität und der Fachmaturität: Grafiken und Tabellen | su-d-15.10.04-01
+BFSA 36890356 Eintretende in das Postdoktorat von 2017: Einzelheiten zum Verlauf in den Hochschulen¹ acht Jahre nach dem Eintritt, in % | gr-d-15.10.07-pa1
+BFSA 36877394 Eintrittskohorte 2019 auf Sekundarstufe II: Erfolg über sechs Jahre nach Eintrittsausbildung und Abschluss | gr-d-15.10.03.01
+BFSA 36830497 Erfolgsquote an den Hochschulen nach Fachbereichsgruppe | gr-d-15.01.02-ind404207_d106
+BFSA 36830493 Erfolgsquote an den Hochschulen nach Hochschultyp | gr-d-15.01.02-ind404207_d146
+BFSA 36890307 Erfolgsquote in den UH nach Kanton der Maturitätsschule (gymnasial) | su-d-15.10.05-01
+BFSA 36877355 Erfolgsquote in den gymnasialen Maturitätsschulen nach Wohnkanton | su-d-15.10.03.02
+BFSA 36830472 Erwerbslosenquote der Absolventen/­innen der Hochschulen – Daten des Indikators | ind-d-406302
+BFSA 36830544 Erwerbslosenquote gemäss ILO der Absolventen/innen HS nach Hochschultyp und Fachbereichsgruppe HS | gr-d-15.01.02-ind406302_d106
+== None OK 140402 https://dam-api.bfs.admin.ch/hub/api/dam/assets?language=de&limit=30&searchString=Lernende%20obligatorische%20Schule%20Kanton%20Schultr%C3%A4ger
+
+
+BFSQ 37030389 Erste Tendenzen zur Entwicklung der Hotellogiernächte (HESTA-Flash) | lk-b-experimental-07
+BFSQ 37030397 HESTA-Flash: Veränderung der Logiernächte in der Hotellerie | gr-d-10.03.01-EXP-01
+BFSQ 37030401 HESTA-Flash: Veränderung der Logiernächte in der Hotellerie | ds-x-10.03.01-EXP-01
+BFSQ 37030393 HESTA-Flash: Veränderung der Logiernächte in der Hotellerie | cc-d-10.03.01-EXP-01
+BFSQ 36924167 Abgeschlossene Ausbildungen der höheren Berufsbildung - Anteil an der 30- bis 34-jährigen ständigen Wohnbevölkerung - In Prozent | gr-d-00.17.05.01.01.01-ind
+BFSQ 36931288 Abgeschlossene Ausbildungen der höheren Berufsbildung - Anteil an der 30- bis 34-jährigen ständigen Wohnbevölkerung - In Prozent | ind-d-00.17.05.01.01.01
+BFSQ 36772285 Alle Krebsarten (Total): Neuerkrankungen und Sterblichkeit nach Altersklassen | gd-d-14.03.03-Gc3-C00-97
+BFSQ 36772312 Alle Krebsarten (total): Neuerkrankungen und Sterblichkeit nach Perioden | gd-d-14.03.03-Gc2.2-C00-97
+BFSQ 36924245 Armutsquote - Anteil einkommensarmer Personen an der ständigen Wohnbevölkerung in Privathaushalten - In Prozent | gr-d-00.17.08.00.04.01-ind
+BFSQ 36931303 Armutsquote - Anteil einkommensarmer Personen an der ständigen Wohnbevölkerung in Privathaushalten - In Prozent | ind-d-00.17.08.00.04.01
+BFSQ 36863357 Bildungsverläufe von Kindern aus dem Asylbereich in der Primarschule | su-d-15.10.01.07
+BFSQ 36850612 Bildungsverläufe von Kindern aus dem Asylbereich in der Primarschule | 2389-2600
+BFSQ 36772310 Brustkrebs: Neuerkrankungen und Sterblichkeit nach Altersklassen | gd-d-14.03.03-Gc3-C50
+BFSQ 36772309 Brustkrebs: Neuerkrankungen und Sterblichkeit nach Perioden | gd-d-14.03.03-Gc2.2-C50
+BFSQ 36931223 Deckungsgrad der Pensionskassen - Anteil der Vorsorgeeinrichtungen mit einem Deckungsgrad von mindestens 100% - In Prozent | ind-d-00.17.08.01.07.01
+BFSQ 36924282 Deckungsgrad der Pensionskassen - Anteil der Vorsorgeeinrichtungen mit einem Deckungsgrad von mindestens 100% - In Prozent | gr-d-00.17.08.01.07.01-ind
+BFSQ 36772343 Dickdarm- und Enddarmkrebs: Neuerkrankungen und Sterblichkeit nach Altersklassen | gd-d-14.03.03-Gc3-C18-20
+BFSQ 36772344 Dickdarm- und Enddarmkrebs: Neuerkrankungen und Sterblichkeit nach Perioden | gd-d-14.03.03-Gc2.2-C18-20
+BFSQ 36931263 Digitale Kriminalität - Anzahl Straftaten | ind-d-00.17.01.00.09.01
+BFSQ 36924215 Digitale Kriminalität - Anzahl Straftaten | gr-d-00.17.01.00.09.01-ind
+BFSQ 36840742 Durchschnittliche Dauer der 2010 geborenen Kinder in den verschiedenen Unterrichtsarten auf Primarstufe 3–8 | gr-d-15.10.01.06b
+BFSQ 36752644 Durchschnittliche Dauer der 2010 geborenen Kinder in den verschiedenen Unterrichtsarten auf Primarstufe 3–8 | gr-d-15.10.01.06a
+BFSQ 36924252 Durchschnittliches Alter beim Austritt aus dem Arbeitsmarkt - Gewichtetes mittleres Alter der Personen im Alter von 58 bis 75 Jahren - Jahre | gr-d-00.17.12.00.09.01-ind
+BFSQ 36931329 Durchschnittliches Alter beim Austritt aus dem Arbeitsmarkt - Gewichtetes mittleres Alter der Personen im Alter von 58 bis 75 Jahren - Jahre | ind-d-00.17.12.00.09.01
+BFSQ 36931342 Elektrizitätsproduktion aus erneuerbaren Energien - Ohne Wasserkraft - GWh | ind-d-00.17.12.03.04.01
+BFSQ 36924289 Elektrizitätsproduktion aus erneuerbaren Energien - Ohne Wasserkraft - GWh | gr-d-00.17.12.03.04.01-ind
+BFSQ 36924165 Elektronische Patientendossiers - Anteil der Bevölkerung mit einem elektronischen Patientendossier - In Prozent | gr-d-00.17.01.00.01.01-ind
+BFSQ 36931248 Elektronische Patientendossiers - Anteil der Bevölkerung mit einem elektronischen Patientendossier - In Prozent | ind-d-00.17.01.00.01.01
+BFSQ 36924270 Endenergieverbrauch pro Person - Gigajoule pro Kopf | gr-d-00.17.12.03.02.01-ind
+BFSQ 36931344 Endenergieverbrauch pro Person - Gigajoule pro Kopf | ind-d-00.17.12.03.02.01
+== None OK 140402 https://dam-api.bfs.admin.ch/hub/api/dam/assets?language=de&limit=30&searchString=%C3%B6ffentliche%20private%20Schulen%20Kanton%20Lernende
+
+
+BFSQ 37030389 Erste Tendenzen zur Entwicklung der Hotellogiernächte (HESTA-Flash) | lk-b-experimental-07
+BFSQ 37030397 HESTA-Flash: Veränderung der Logiernächte in der Hotellerie | gr-d-10.03.01-EXP-01
+BFSQ 37030401 HESTA-Flash: Veränderung der Logiernächte in der Hotellerie | ds-x-10.03.01-EXP-01
+BFSQ 37030393 HESTA-Flash: Veränderung der Logiernächte in der Hotellerie | cc-d-10.03.01-EXP-01
+BFSQ 36924167 Abgeschlossene Ausbildungen der höheren Berufsbildung - Anteil an der 30- bis 34-jährigen ständigen Wohnbevölkerung - In Prozent | gr-d-00.17.05.01.01.01-ind
+BFSQ 36931288 Abgeschlossene Ausbildungen der höheren Berufsbildung - Anteil an der 30- bis 34-jährigen ständigen Wohnbevölkerung - In Prozent | ind-d-00.17.05.01.01.01
+BFSQ 36772285 Alle Krebsarten (Total): Neuerkrankungen und Sterblichkeit nach Altersklassen | gd-d-14.03.03-Gc3-C00-97
+BFSQ 36772312 Alle Krebsarten (total): Neuerkrankungen und Sterblichkeit nach Perioden | gd-d-14.03.03-Gc2.2-C00-97
+BFSQ 36924245 Armutsquote - Anteil einkommensarmer Personen an der ständigen Wohnbevölkerung in Privathaushalten - In Prozent | gr-d-00.17.08.00.04.01-ind
+BFSQ 36931303 Armutsquote - Anteil einkommensarmer Personen an der ständigen Wohnbevölkerung in Privathaushalten - In Prozent | ind-d-00.17.08.00.04.01
+BFSQ 36863357 Bildungsverläufe von Kindern aus dem Asylbereich in der Primarschule | su-d-15.10.01.07
+BFSQ 36850612 Bildungsverläufe von Kindern aus dem Asylbereich in der Primarschule | 2389-2600
+BFSQ 36772310 Brustkrebs: Neuerkrankungen und Sterblichkeit nach Altersklassen | gd-d-14.03.03-Gc3-C50
+BFSQ 36772309 Brustkrebs: Neuerkrankungen und Sterblichkeit nach Perioden | gd-d-14.03.03-Gc2.2-C50
+BFSQ 36931223 Deckungsgrad der Pensionskassen - Anteil der Vorsorgeeinrichtungen mit einem Deckungsgrad von mindestens 100% - In Prozent | ind-d-00.17.08.01.07.01
+BFSQ 36924282 Deckungsgrad der Pensionskassen - Anteil der Vorsorgeeinrichtungen mit einem Deckungsgrad von mindestens 100% - In Prozent | gr-d-00.17.08.01.07.01-ind
+BFSQ 36772343 Dickdarm- und Enddarmkrebs: Neuerkrankungen und Sterblichkeit nach Altersklassen | gd-d-14.03.03-Gc3-C18-20
+BFSQ 36772344 Dickdarm- und Enddarmkrebs: Neuerkrankungen und Sterblichkeit nach Perioden | gd-d-14.03.03-Gc2.2-C18-20
+BFSQ 36931263 Digitale Kriminalität - Anzahl Straftaten | ind-d-00.17.01.00.09.01
+BFSQ 36924215 Digitale Kriminalität - Anzahl Straftaten | gr-d-00.17.01.00.09.01-ind
+BFSQ 36840742 Durchschnittliche Dauer der 2010 geborenen Kinder in den verschiedenen Unterrichtsarten auf Primarstufe 3–8 | gr-d-15.10.01.06b
+BFSQ 36752644 Durchschnittliche Dauer der 2010 geborenen Kinder in den verschiedenen Unterrichtsarten auf Primarstufe 3–8 | gr-d-15.10.01.06a
+BFSQ 36924252 Durchschnittliches Alter beim Austritt aus dem Arbeitsmarkt - Gewichtetes mittleres Alter der Personen im Alter von 58 bis 75 Jahren - Jahre | gr-d-00.17.12.00.09.01-ind
+BFSQ 36931329 Durchschnittliches Alter beim Austritt aus dem Arbeitsmarkt - Gewichtetes mittleres Alter der Personen im Alter von 58 bis 75 Jahren - Jahre | ind-d-00.17.12.00.09.01
+BFSQ 36931342 Elektrizitätsproduktion aus erneuerbaren Energien - Ohne Wasserkraft - GWh | ind-d-00.17.12.03.04.01
+BFSQ 36924289 Elektrizitätsproduktion aus erneuerbaren Energien - Ohne Wasserkraft - GWh | gr-d-00.17.12.03.04.01-ind
+BFSQ 36924165 Elektronische Patientendossiers - Anteil der Bevölkerung mit einem elektronischen Patientendossier - In Prozent | gr-d-00.17.01.00.01.01-ind
+BFSQ 36931248 Elektronische Patientendossiers - Anteil der Bevölkerung mit einem elektronischen Patientendossier - In Prozent | ind-d-00.17.01.00.01.01
+BFSQ 36924270 Endenergieverbrauch pro Person - Gigajoule pro Kopf | gr-d-00.17.12.03.02.01-ind
+BFSQ 36931344 Endenergieverbrauch pro Person - Gigajoule pro Kopf | ind-d-00.17.12.03.02.01
