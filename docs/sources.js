@@ -392,7 +392,8 @@ window.SOURCES = [
       { title: "Poverty: World Bank and Croatian Bureau of Statistics, Croatia small-area estimation of consumption-based poverty (poverty maps), October 2016, 2011 data; city, municipal and county tables", url: "https://www.worldbank.org/en/country/croatia/publication/croatia-poverty-maps" },
       { title: "The poverty map online (Croatian Bureau of Statistics, Geostat)", url: "https://geostat.dzs.hr/?lang=en" },
       { title: "Borders and population: Eurostat GISCO Local Administrative Units (LAU) 2024; counties: GISCO NUTS 3 (2024)", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
-      { title: "Meetings: each council's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+      { title: "Meetings: each council's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" },
+      { title: "Public-school share: Ministry of Science, Education and Youth, list of primary schools with their founder (osnivač), May 2025. Places with no school founded by an association, church body, company or person are 100% public; the 12 places with one (Zagreb, Split, Rijeka, Osijek, Zadar, Šibenik, Varaždin, Požega, Virovitica, Novska, Samobor, Dugopolje) have no figure, as the list counts schools, not pupils", url: "https://data.gov.hr/ckan/dataset/2841fb78-c828-4ab2-8cdc-f22abeed3a8c" }
     ],
     note: "Built by data-prep/prep_croatia.py and data-prep/build_latam.py. Places are matched to the poverty map by name (shared names by the map's qualifier or population) and placed in counties by their borders."
   },

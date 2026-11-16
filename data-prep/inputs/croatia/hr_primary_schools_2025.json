@@ -1,0 +1,8339 @@
+{
+"source": "Ministarstvo znanosti, obrazovanja i mladih, \"Osnovne škole\" (primary schools with their founder, osnivač), data.gov.hr, resources updated 19 May 2025: https://data.gov.hr/ckan/dataset/2841fb78-c828-4ab2-8cdc-f22abeed3a8c . Kept: code, name, place, county, type and, for schools founded by a public body (town, municipality, county or ministry), the founder; private founders (associations, church bodies, companies, individuals) are not copied.",
+"schools": [
+{
+"code": "01-073-001",
+"name": "OSNOVNA ŠKOLA BOGUMILA TONIJA",
+"place": "Samobor",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Samobor",
+"public": true
+},
+{
+"code": "01-073-002",
+"name": "OSNOVNA ŠKOLA MIHAELA ŠILOBODA",
+"place": "Sveti Martin pod Okićem",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Samobor",
+"public": true
+},
+{
+"code": "01-073-003",
+"name": "OSNOVNA ŠKOLA SAMOBOR",
+"place": "Samobor",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Samobor",
+"public": true
+},
+{
+"code": "01-073-004",
+"name": "OSNOVNA ŠKOLA MILANA LANGA",
+"place": "Bregana",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Samobor",
+"public": true
+},
+{
+"code": "01-073-006",
+"name": "OSNOVNA ŠKOLA RUDE",
+"place": "Rude",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Samobor",
+"public": true
+},
+{
+"code": "01-087-001",
+"name": "OSNOVNA ŠKOLA EUGENA KVATERNIKA",
+"place": "Velika Gorica",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Velika Gorica",
+"public": true
+},
+{
+"code": "01-087-002",
+"name": "OSNOVNA ŠKOLA JURJA HABDELIĆA",
+"place": "Velika Gorica",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Velika Gorica",
+"public": true
+},
+{
+"code": "01-087-003",
+"name": "Osnovna škola Vukovina",
+"place": "Gornje Podotočje",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Velika Gorica",
+"public": true
+},
+{
+"code": "01-087-004",
+"name": "Osnovna škola Nikole Hribara",
+"place": "Velika Gorica",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Velika Gorica",
+"public": true
+},
+{
+"code": "01-087-005",
+"name": "Osnovna škola Eugena Kumičića",
+"place": "Velika Gorica",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Velika Gorica",
+"public": true
+},
+{
+"code": "01-087-006",
+"name": "Osnovna škola VELIKA MLAKA",
+"place": "Velika Mlaka",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Velika Gorica",
+"public": true
+},
+{
+"code": "01-545-001",
+"name": "OSNOVNA ŠKOLA SLAVKA KOLARA",
+"place": "Kravarsko",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-544-001",
+"name": "Osnovna škola POKUPSKO",
+"place": "Pokupsko",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-087-010",
+"name": "Osnovna škola ŠĆITARJEVO",
+"place": "Šćitarjevo",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Velika Gorica",
+"public": true
+},
+{
+"code": "01-087-011",
+"name": "CENTAR ZA ODGOJ I OBRAZOVANJE VELIKA GORICA",
+"place": "Velika Gorica",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Ministarstvo za demografiju, obitelj, mlade i socijalnu skrb",
+"public": true
+},
+{
+"code": "01-094-001",
+"name": "Osnovna škola Krunoslava Kutena",
+"place": "Vrbovec",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Vrbovec",
+"public": true
+},
+{
+"code": "01-094-003",
+"name": "Osnovna škola Marije Jurić Zagorke",
+"place": "Vrbovec",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Grad Vrbovec",
+"public": true
+},
+{
+"code": "01-108-001",
+"name": "Osnovna škola Antuna Augustinčića",
+"place": "Zaprešić",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Zaprešić",
+"public": true
+},
+{
+"code": "01-151-003",
+"name": "OSNOVNA ŠKOLA PAVAO BELAS",
+"place": "Brdovec",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-108-002",
+"name": "OSNOVNA ŠKOLA LJUDEVITA GAJA",
+"place": "Zaprešić",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Zaprešić",
+"public": true
+},
+{
+"code": "01-547-001",
+"name": "Osnovna škola Bistra",
+"place": "Poljanica Bistranska",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-109-001",
+"name": "OSNOVNA ŠKOLA DRAGUTINA DOMJANIĆA",
+"place": "Sveti Ivan Zelina",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-109-002",
+"name": "OSNOVNA ŠKOLA KSAVERA ŠANDORA ĐALSKOG",
+"place": "Donja Zelina",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-151-001",
+"name": "Osnovna škola Ivana Perkovca",
+"place": "Šenkovec",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-151-002",
+"name": "Osnovna škola Ivane Brlić-Mažuranić",
+"place": "Prigorje Brdovečko",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-152-001",
+"name": "Osnovna škola Rugvica",
+"place": "Rugvica",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-153-001",
+"name": "Osnovna škola Stjepan Radić",
+"place": "Božjakovina",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-108-004",
+"name": "Osnovna škola Kupljenovo",
+"place": "Kupljenovo",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Zaprešić",
+"public": true
+},
+{
+"code": "01-155-001",
+"name": "Osnovna škola Pušća",
+"place": "Donja Pušća",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-156-001",
+"name": "Osnovna škola Sveta Nedelja",
+"place": "Sveta Nedelja",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-157-001",
+"name": "OSNOVNA ŠKOLA KLINČA SELA",
+"place": "Klinča Sela",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-158-001",
+"name": "Osnovna škola Vladimir Nazor",
+"place": "Pisarovina",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-159-001",
+"name": "Osnovna škola Kardinal Alojzije Stepinac",
+"place": "Krašić",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-163-001",
+"name": "Osnovna škola Gradec",
+"place": "Gradec",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-164-001",
+"name": "Osnovna škola Dubrava",
+"place": "Dubrava",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-166-001",
+"name": "Osnovna škola Jakovlje",
+"place": "Jakovlje",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-198-001",
+"name": "Osnovna škola braće Radića",
+"place": "Kloštar Ivanić",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-199-001",
+"name": "Osnovna škola MILKE TRNINE",
+"place": "Križ",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "02-014-001",
+"name": "OSNOVNA ŠKOLA DONJA STUBICA",
+"place": "Donja Stubica",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-035-001",
+"name": "Osnovna škola Antuna Mihanovića",
+"place": "Klanjec",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-040-001",
+"name": "Osnovna škola Augusta Cesarca, Krapina",
+"place": "Krapina",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Grad Krapina",
+"public": true
+},
+{
+"code": "02-040-002",
+"name": "Osnovna škola Ljudevit Gaj u Krapini",
+"place": "Krapina",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Grad Krapina",
+"public": true
+},
+{
+"code": "02-097-001",
+"name": "Osnovna škola Ksavera Šandora Gjalskog",
+"place": "Zabok",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-110-001",
+"name": "Osnovna škola Zlatar Bistrica",
+"place": "Zlatar-Bistrica",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-123-001",
+"name": "OSNOVNA ŠKOLA JANKA LESKOVARA",
+"place": "Pregrada",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-167-001",
+"name": "OSNOVNA ŠKOLA BEDEKOVČINA",
+"place": "Bedekovčina",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-167-002",
+"name": "Osnovna škola Stjepana Radića Brestovec Orehovički",
+"place": "Brestovec Orehovički",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-168-001",
+"name": "Osnovna škola VLADIMIR NAZOR BUDINŠČINA",
+"place": "Budinščina",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-168-002",
+"name": "CENTAR ZA ODGOJ I OBRAZOVANJE ZAJEZDA",
+"place": "Zajezda",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola, Srednja škola",
+"founder": "Ministarstvo za demografiju, obitelj, mlade i socijalnu skrb",
+"public": true
+},
+{
+"code": "02-169-001",
+"name": "OSNOVNA ŠKOLA ĐURE PREJCA DESINIĆ",
+"place": "Desinić",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-170-001",
+"name": "OSNOVNA ŠKOLA ĐURMANEC",
+"place": "Đurmanec",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-171-001",
+"name": "Osnovna škola Matije Gupca",
+"place": "Gornja Stubica",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-172-001",
+"name": "OSNOVNA ŠKOLA VIKTORA KOVAČIĆA",
+"place": "Hum na Sutli",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-174-001",
+"name": "Osnovna škola PAVLA ŠTOOSA",
+"place": "Kraljevec na Sutli",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-175-001",
+"name": "Osnovna škola LIJEPA NAŠA",
+"place": "Tuhelj",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-177-001",
+"name": "OSNOVNA ŠKOLA KONJŠČINA",
+"place": "Konjščina",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-178-001",
+"name": "OSNOVNA ŠKOLA KRAPINSKE TOPLICE",
+"place": "Krapinske Toplice",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-179-001",
+"name": "Osnovna škola Franje Horvata Kiša",
+"place": "Lobor",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-180-001",
+"name": "Osnovna škola Mače",
+"place": "Mače",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-181-001",
+"name": "Osnovna škola Marija Bistrica",
+"place": "Marija Bistrica",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-182-001",
+"name": "OSNOVNA ŠKOLA LJUDEVIT GAJ Mihovljan",
+"place": "Mihovljan",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-183-001",
+"name": "Osnovna škola Oroslavje",
+"place": "Oroslavje",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-184-001",
+"name": "Osnovna škola Antuna Mihanovića Petrovsko",
+"place": "Petrovsko",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-185-001",
+"name": "OSNOVNA ŠKOLA SIDE KOŠUTIĆ RADOBOJ",
+"place": "Radoboj",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-187-001",
+"name": "OSNOVNA ŠKOLA SVETI KRIŽ ZAČRETJE",
+"place": "Sveti Križ Začretje",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-188-001",
+"name": "Osnovna škola Veliko Trgovišće",
+"place": "Veliko Trgovišće",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-189-001",
+"name": "Osnovna škola Ante Kovačića",
+"place": "Zlatar",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-552-001",
+"name": "Osnovna škola GORNJE JESENJE",
+"place": "Gornje Jesenje",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "02-553-001",
+"name": "Osnovna škola Josipa Broza",
+"place": "Kumrovec",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "03-021-001",
+"name": "Osnovna škola Dvor",
+"place": "Dvor",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "03-025-001",
+"name": "OSNOVNA ŠKOLA GLINA",
+"place": "Glina",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "03-039-001",
+"name": "OSNOVNA ŠKOLA DAVORINA TRSTENJAKA",
+"place": "Hrvatska Kostajnica",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "03-043-001",
+"name": "OSNOVNA ŠKOLA BANOVA JARUGA",
+"place": "Banova Jaruga",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Kutina",
+"public": true
+},
+{
+"code": "03-043-002",
+"name": "OSNOVNA ŠKOLA MATE LOVRAKA",
+"place": "Kutina",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Kutina",
+"public": true
+},
+{
+"code": "03-043-003",
+"name": "OSNOVNA ŠKOLA VLADIMIRA VIDRIĆA",
+"place": "Kutina",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Kutina",
+"public": true
+},
+{
+"code": "03-043-004",
+"name": "OSNOVNA ŠKOLA STJEPANA KEFELJE",
+"place": "Kutina",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Kutina",
+"public": true
+},
+{
+"code": "03-043-005",
+"name": "OSNOVNA ŠKOLA ZVONIMIRA FRANKA",
+"place": "Kutina",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Kutina",
+"public": true
+},
+{
+"code": "03-076-006",
+"name": "Osnovna škola Galdovo",
+"place": "Sisak",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Sisak",
+"public": true
+},
+{
+"code": "03-054-001",
+"name": "OSNOVNA ŠKOLA NOVSKA",
+"place": "Novska",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "03-054-002",
+"name": "OSNOVNA ŠKOLA RAJIĆ",
+"place": "Rajić",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "03-066-001",
+"name": "I. OSNOVNA ŠKOLA PETRINJA",
+"place": "Petrinja",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "03-066-002",
+"name": "OSNOVNA ŠKOLA MATE LOVRAKA PETRINJA",
+"place": "Petrinja",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "03-066-003",
+"name": "OSNOVNA ŠKOLA DRAGUTINA TADIJANOVIĆA PETRINJA",
+"place": "Petrinja",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "03-066-004",
+"name": "Osnovna škola Ivan Goran Kovačić",
+"place": "Gora",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "03-076-001",
+"name": "OSNOVNA ŠKOLA IVANA KUKULJEVIĆA SISAK",
+"place": "Sisak",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Sisak",
+"public": true
+},
+{
+"code": "03-076-002",
+"name": "Osnovna škola 22. lipnja",
+"place": "Sisak",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Sisak",
+"public": true
+},
+{
+"code": "03-076-003",
+"name": "OSNOVNA ŠKOLA \"BRAĆA BOBETKO\" SISAK",
+"place": "Sisak",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Sisak",
+"public": true
+},
+{
+"code": "03-076-004",
+"name": "Osnovna škola Braća Ribar",
+"place": "Sisak",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Sisak",
+"public": true
+},
+{
+"code": "03-076-005",
+"name": "Osnovna škola Viktorovac",
+"place": "Sisak",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Sisak",
+"public": true
+},
+{
+"code": "03-076-007",
+"name": "Osnovna škola Sela",
+"place": "Sela",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Sisak",
+"public": true
+},
+{
+"code": "03-194-001",
+"name": "OSNOVNA ŠKOLA JABUKOVAC",
+"place": "Petrinja",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "03-076-008",
+"name": "Osnovna škola Budaševo-Topolovac-Gušće",
+"place": "Budaševo",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Sisak",
+"public": true
+},
+{
+"code": "03-076-010",
+"name": "OSNOVNA ŠKOLA IVANA ANTOLČIĆA KOMAREVO",
+"place": "Sisak-Caprag",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Sisak",
+"public": true
+},
+{
+"code": "03-092-002",
+"name": "Osnovna škola Gvozd",
+"place": "Gvozd",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "03-190-001",
+"name": "OSNOVNA ŠKOLA JOSIPA KOZARCA",
+"place": "Lipovljani",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "03-191-001",
+"name": "Osnovna škola Mladost",
+"place": "Lekenik",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "03-192-001",
+"name": "Osnovna škola Braća Radić",
+"place": "Martinska Ves",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "03-193-001",
+"name": "Osnovna škola Jasenovac",
+"place": "Jasenovac",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "03-195-001",
+"name": "OSNOVNA ŠKOLA POPOVAČA",
+"place": "Popovača",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "03-196-001",
+"name": "OSNOVNA ŠKOLA LUDINA",
+"place": "Velika Ludina",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "03-197-001",
+"name": "OSNOVNA ŠKOLA SUNJA",
+"place": "Sunja",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "03-202-001",
+"name": "Osnovna škola Vladimir Nazor Topusko",
+"place": "Topusko",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "03-206-001",
+"name": "Osnovna škola Ivo Kozarčanin",
+"place": "Hrvatska Dubica",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "04-019-001",
+"name": "OSNOVNA ŠKOLA \"VLADIMIR NAZOR\"",
+"place": "Duga Resa",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Karlovačka županija",
+"public": true
+},
+{
+"code": "04-019-002",
+"name": "OSNOVNA ŠKOLA \"IVAN GORAN KOVAČIĆ\"",
+"place": "Duga Resa",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Karlovačka županija",
+"public": true
+},
+{
+"code": "04-034-001",
+"name": "OSNOVNA ŠKOLA BANIJA",
+"place": "Karlovac",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Karlovac",
+"public": true
+},
+{
+"code": "04-034-002",
+"name": "OSNOVNA ŠKOLA REČICA",
+"place": "Karlovac",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Karlovac",
+"public": true
+},
+{
+"code": "04-034-003",
+"name": "OSNOVNA ŠKOLA ŠVARČA",
+"place": "Karlovac",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Karlovac",
+"public": true
+},
+{
+"code": "04-034-005",
+"name": "OSNOVNA ŠKOLA GRABRIK",
+"place": "Karlovac",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Karlovac",
+"public": true
+},
+{
+"code": "04-034-006",
+"name": "OSNOVNA ŠKOLA DUBOVAC",
+"place": "Karlovac",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Karlovac",
+"public": true
+},
+{
+"code": "04-034-007",
+"name": "OSNOVNA ŠKOLA TURANJ",
+"place": "Karlovac",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Karlovac",
+"public": true
+},
+{
+"code": "04-034-008",
+"name": "OSNOVNA ŠKOLA MAHIČNO",
+"place": "Karlovac",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Karlovac",
+"public": true
+},
+{
+"code": "04-034-009",
+"name": "OSNOVNA ŠKOLA DRAGOJLE JARNEVIĆ",
+"place": "Karlovac",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Karlovac",
+"public": true
+},
+{
+"code": "04-034-010",
+"name": "CENTAR ZA ODGOJ I OBRAZOVANJE DJECE I MLADEŽI",
+"place": "Karlovac",
+"county": "Karlovačka županija",
+"type": "Osnovna škola, Posebna ustanova odgoja i obrazovanja, Srednja škola",
+"founder": "Grad Karlovac",
+"public": true
+},
+{
+"code": "04-034-013",
+"name": "OSNOVNA ŠKOLA \"BRAĆA SELJAN\"",
+"place": "Karlovac",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Karlovac",
+"public": true
+},
+{
+"code": "04-056-001",
+"name": "PRVA OSNOVNA ŠKOLA",
+"place": "Ogulin",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Karlovačka županija",
+"public": true
+},
+{
+"code": "04-056-002",
+"name": "Osnovna škola Ivane Brlić - Mažuranić Ogulin",
+"place": "Ogulin",
+"county": "Karlovačka županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Karlovačka županija",
+"public": true
+},
+{
+"code": "04-062-001",
+"name": "OSNOVNA ŠKOLA \"SLAVA RAŠKAJ\"",
+"place": "Ozalj",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Karlovačka županija",
+"public": true
+},
+{
+"code": "04-079-001",
+"name": "OSNOVNA ŠKOLA SLUNJ",
+"place": "Slunj",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Karlovačka županija",
+"public": true
+},
+{
+"code": "04-091-001",
+"name": "Osnovna škola Vojnić",
+"place": "Vojnić",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Karlovačka županija",
+"public": true
+},
+{
+"code": "04-201-001",
+"name": "OSNOVNA ŠKOLA ˝ANTUN KLASINC˝ LASINJA",
+"place": "Lasinja",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Karlovačka županija",
+"public": true
+},
+{
+"code": "04-209-001",
+"name": "OSNOVNA ŠKOLA BARILOVIĆ",
+"place": "Barilović",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Karlovačka županija",
+"public": true
+},
+{
+"code": "04-210-001",
+"name": "OSNOVNA ŠKOLA CETINGRAD",
+"place": "Cetingrad",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Karlovačka županija",
+"public": true
+},
+{
+"code": "04-211-001",
+"name": "OSNOVNA ŠKOLA DRAGANIĆI",
+"place": "Draganić",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Karlovačka županija",
+"public": true
+},
+{
+"code": "04-212-001",
+"name": "OSNOVNA ŠKOLA GENERALSKI STOL",
+"place": "Generalski Stol",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Karlovačka županija",
+"public": true
+},
+{
+"code": "04-213-001",
+"name": "OSNOVNA ŠKOLA KATARINE ZRINSKI",
+"place": "Krnjak",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Karlovačka županija",
+"public": true
+},
+{
+"code": "04-214-001",
+"name": "OSNOVNA ŠKOLA NETRETIĆ",
+"place": "Netretić",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Karlovačka županija",
+"public": true
+},
+{
+"code": "04-216-001",
+"name": "OSNOVNA ŠKOLA \"JOSIPDOL\"",
+"place": "Josipdol",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Karlovačka županija",
+"public": true
+},
+{
+"code": "04-217-001",
+"name": "OSNOVNA ŠKOLA PLAŠKI",
+"place": "Plaški",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Karlovačka županija",
+"public": true
+},
+{
+"code": "04-219-001",
+"name": "OSNOVNA ŠKOLA EUGENA KVATERNIKA",
+"place": "Rakovica",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Karlovačka županija",
+"public": true
+},
+{
+"code": "04-034-014",
+"name": "OSNOVNA ŠKOLA \"SKAKAVAC\"",
+"place": "Skakavac",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Karlovac",
+"public": true
+},
+{
+"code": "04-221-001",
+"name": "OSNOVNA ŠKOLA ŽAKANJE",
+"place": "Žakanje",
+"county": "Karlovačka županija",
+"type": "Osnovna škola",
+"founder": "Karlovačka županija",
+"public": true
+},
+{
+"code": "05-031-001",
+"name": "Osnovna škola Ivana Kukuljevića Sakcinskog",
+"place": "Ivanec",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-031-004",
+"name": "Osnovna škola Metel Ožegović",
+"place": "Radovan",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-046-001",
+"name": "Osnovna škola Ludbreg",
+"place": "Ludbreg",
+"county": "Varaždinska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-053-001",
+"name": "Osnovna škola Novi Marof",
+"place": "Novi Marof",
+"county": "Varaždinska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-053-002",
+"name": "Osnovna škola \"Podrute\"",
+"place": "Donje Makojišće",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-086-001",
+"name": "I. OSNOVNA ŠKOLA VARAŽDIN",
+"place": "Varaždin",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Varaždin",
+"public": true
+},
+{
+"code": "05-086-002",
+"name": "II. osnovna škola Varaždin",
+"place": "Varaždin",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Varaždin",
+"public": true
+},
+{
+"code": "05-086-003",
+"name": "III. OSNOVNA ŠKOLA VARAŽDIN",
+"place": "Varaždin",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Varaždin",
+"public": true
+},
+{
+"code": "05-086-004",
+"name": "IV. osnovna škola Varaždin",
+"place": "Varaždin",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Varaždin",
+"public": true
+},
+{
+"code": "05-086-005",
+"name": "V. osnovna škola Varaždin",
+"place": "Varaždin",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Varaždin",
+"public": true
+},
+{
+"code": "05-086-006",
+"name": "VI. osnovna škola Varaždin",
+"place": "Varaždin",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Varaždin",
+"public": true
+},
+{
+"code": "05-086-007",
+"name": "Centar za odgoj i obrazovanje Tomislav Špoljar",
+"place": "Varaždin",
+"county": "Varaždinska županija",
+"type": "Osnovna škola, Posebna ustanova odgoja i obrazovanja, Srednja škola",
+"founder": "Grad Varaždin",
+"public": true
+},
+{
+"code": "05-086-008",
+"name": "VII. osnovna  škola  Varaždin",
+"place": "Varaždin",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Varaždin",
+"public": true
+},
+{
+"code": "05-222-001",
+"name": "Osnovna škola Cestica",
+"place": "Cestica",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-223-001",
+"name": "Osnovna škola Kneginec Gornji",
+"place": "Gornji Kneginec",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-224-001",
+"name": "Osnovna škola \"Petar Zrinski\" Jalžabet",
+"place": "Jalžabet",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-225-001",
+"name": "Osnovna škola Vidovec",
+"place": "Vidovec",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-226-001",
+"name": "Osnovna škola Petrijanec",
+"place": "Petrijanec",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-227-001",
+"name": "Osnovna škola Vladimir Nazor",
+"place": "Sveti Ilija",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-227-002",
+"name": "Osnovna škola Beletinec",
+"place": "Beletinec",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-229-001",
+"name": "Osnovna škola Trnovec",
+"place": "Trnovec",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-229-002",
+"name": "Osnovna škola Šemovec",
+"place": "Šemovec",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-230-001",
+"name": "Osnovna škola Vinica",
+"place": "Vinica",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-231-001",
+"name": "Osnovna škola Sračinec",
+"place": "Sračinec",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-232-001",
+"name": "Osnovna škola Franje Serta Bednja",
+"place": "Bednja",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-233-001",
+"name": "Osnovna škola Gustav Krklec Maruševec",
+"place": "Maruševec",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-234-001",
+"name": "Osnovna škola grofa Janka Draškovića",
+"place": "Klenovnik",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-235-001",
+"name": "Osnovna škola Andrije Kačića Miošića",
+"place": "Donja Voća",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-236-001",
+"name": "Osnovna škola Ante Starčevića",
+"place": "Lepoglava",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-236-002",
+"name": "Osnovna škola Ivana Rangera, Kamenica",
+"place": "Kamenica",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-236-003",
+"name": "Osnovna škola Izidora Poljaka, Višnjica",
+"place": "Lepoglava",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-237-001",
+"name": "Osnovna škola Martijanec",
+"place": "Martijanec",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-238-001",
+"name": "Osnovna škola Sveti Đurđ",
+"place": "Sveti Đurđ",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-239-001",
+"name": "Osnovna škola Veliki Bukovec",
+"place": "Veliki Bukovec",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-240-001",
+"name": "Osnovna škola Antuna i Ivana Kukuljevića",
+"place": "Varaždinske Toplice",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-240-002",
+"name": "Osnovna škola Svibovec",
+"place": "Svibovec",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-241-001",
+"name": "Osnovna škola Breznički Hum",
+"place": "Breznički Hum",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-242-001",
+"name": "Osnovna škola Ljubešćica",
+"place": "Ljubešćica",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-243-001",
+"name": "Osnovna škola Bisag",
+"place": "Bisag",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-244-001",
+"name": "Osnovna škola Visoko",
+"place": "Visoko",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "05-484-001",
+"name": "Osnovna škola Tužno",
+"place": "Tužno",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "Varaždinska županija",
+"public": true
+},
+{
+"code": "06-023-001",
+"name": "OSNOVNA ŠKOLA ĐURĐEVAC",
+"place": "Đurđevac",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Đurđevac",
+"public": true
+},
+{
+"code": "06-037-001",
+"name": "OSNOVNA ŠKOLA ANTUN NEMČIĆ GOSTOVINSKI",
+"place": "Koprivnica",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Koprivnica",
+"public": true
+},
+{
+"code": "06-037-002",
+"name": "OSNOVNA ŠKOLA \"Braća Radić\"",
+"place": "Koprivnica",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Koprivnica",
+"public": true
+},
+{
+"code": "06-037-003",
+"name": "OSNOVNA ŠKOLA \"ĐURO ESTER\"",
+"place": "Koprivnica",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Koprivnica",
+"public": true
+},
+{
+"code": "06-037-004",
+"name": "CENTAR ZA ODGOJ, OBRAZOVANJE I REHABILITACIJU PODRAVSKO SUNCE",
+"place": "Koprivnica",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Koprivnica",
+"public": true
+},
+{
+"code": "06-041-001",
+"name": "OSNOVNA ŠKOLA LJUDEVITA MODECA KRIŽEVCI",
+"place": "Križevci",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Križevci",
+"public": true
+},
+{
+"code": "06-041-002",
+"name": "OSNOVNA ŠKOLA \"VLADIMIR NAZOR\" KRIŽEVCI",
+"place": "Križevci",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Križevci",
+"public": true
+},
+{
+"code": "06-041-004",
+"name": "CENTAR ZA ODGOJ, OBRAZOVANJE I REHABILITACIJU KRIŽEVCI",
+"place": "Križevci",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Križevci",
+"public": true
+},
+{
+"code": "06-150-001",
+"name": "OSNOVNA ŠKOLA KOPRIVNIČKI BREGI",
+"place": "Koprivnički Bregi",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Koprivničko-križevačka županija",
+"public": true
+},
+{
+"code": "06-247-001",
+"name": "OSNOVNA ŠKOLA FRAN KONCELAK DRNJE",
+"place": "Drnje",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Koprivničko-križevačka županija",
+"public": true
+},
+{
+"code": "06-248-001",
+"name": "OSNOVNA ŠKOLA GOLA",
+"place": "Gola",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Koprivničko-križevačka županija",
+"public": true
+},
+{
+"code": "06-249-001",
+"name": "OSNOVNA ŠKOLA LEGRAD",
+"place": "Legrad",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Koprivničko-križevačka županija",
+"public": true
+},
+{
+"code": "06-250-001",
+"name": "OSNOVNA ŠKOLA MIHOVIL PAVLEK MIŠKINA ĐELEKOVEC",
+"place": "Đelekovec",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Koprivničko-križevačka županija",
+"public": true
+},
+{
+"code": "06-251-001",
+"name": "OSNOVNA ŠKOLA \"PROF.BLAŽ MAĐER\", Novigrad Podravski",
+"place": "Novigrad Podravski",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Koprivničko-križevačka županija",
+"public": true
+},
+{
+"code": "06-253-001",
+"name": "Osnovna škola ANDRIJE PALMOVIĆA",
+"place": "Rasinja",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Koprivničko-križevačka županija",
+"public": true
+},
+{
+"code": "06-254-001",
+"name": "OSNOVNA ŠKOLA SOKOLOVAC",
+"place": "Sokolovac",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Koprivničko-križevačka županija",
+"public": true
+},
+{
+"code": "06-255-001",
+"name": "OSNOVNA ŠKOLA SVETI PETAR OREHOVEC",
+"place": "Sveti Petar Orehovec",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Koprivničko-križevačka županija",
+"public": true
+},
+{
+"code": "06-255-002",
+"name": "OSNOVNA ŠKOLA SIDONIJE RUBIDO ERDODY",
+"place": "Gornja Rijeka",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Koprivničko-križevačka županija",
+"public": true
+},
+{
+"code": "06-256-001",
+"name": "OSNOVNA ŠKOLA KLOŠTAR PODRAVSKI",
+"place": "Kloštar Podravski",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Koprivničko-križevačka županija",
+"public": true
+},
+{
+"code": "06-257-001",
+"name": "OSNOVNA ŠKOLA \"GRIGOR VITEZ\"",
+"place": "Sveti Ivan Žabno",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Koprivničko-križevačka županija",
+"public": true
+},
+{
+"code": "06-258-001",
+"name": "OSNOVNA ŠKOLA MOLVE",
+"place": "Molve",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Koprivničko-križevačka županija",
+"public": true
+},
+{
+"code": "06-259-001",
+"name": "OSNOVNA ŠKOLA FERDINANDOVAC",
+"place": "Ferdinandovac",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Koprivničko-križevačka županija",
+"public": true
+},
+{
+"code": "06-260-001",
+"name": "OSNOVNA ŠKOLA PROF. FRANJE VIKTORA ŠIGNJARA",
+"place": "Virje",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Koprivničko-križevačka županija",
+"public": true
+},
+{
+"code": "06-559-001",
+"name": "OSNOVNA ŠKOLA IVAN LACKOVIĆ CROATA KALINOVAC",
+"place": "Kalinovac",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Koprivničko-križevačka županija",
+"public": true
+},
+{
+"code": "06-560-001",
+"name": "OSNOVNA ŠKOLA KALNIK",
+"place": "Kalnik",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Koprivničko-križevačka županija",
+"public": true
+},
+{
+"code": "07-004-001",
+"name": "I. OSNOVNA  ŠKOLA BJELOVAR",
+"place": "Bjelovar",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Grad Bjelovar",
+"public": true
+},
+{
+"code": "07-004-002",
+"name": "II. OSNOVNA  ŠKOLA  BJELOVAR",
+"place": "Bjelovar",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Grad Bjelovar",
+"public": true
+},
+{
+"code": "07-004-003",
+"name": "III. OSNOVNA  ŠKOLA  BJELOVAR",
+"place": "Bjelovar",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Grad Bjelovar",
+"public": true
+},
+{
+"code": "07-004-004",
+"name": "IV. OSNOVNA  ŠKOLA  BJELOVAR",
+"place": "Bjelovar",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Grad Bjelovar",
+"public": true
+},
+{
+"code": "07-004-005",
+"name": "CENTAR ZA ODGOJ, OBRAZOVANJE I RAZVOJNU PODRŠKU BJELOVAR",
+"place": "Bjelovar",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Grad Bjelovar",
+"public": true
+},
+{
+"code": "07-011-001",
+"name": "OSNOVNA ŠKOLA ČAZMA",
+"place": "Čazma",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Grad Čazma",
+"public": true
+},
+{
+"code": "07-012-001",
+"name": "OSNOVNA ŠKOLA VLADIMIRA NAZORA",
+"place": "Daruvar",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Bjelovarsko-bilogorska županija",
+"public": true
+},
+{
+"code": "07-012-002",
+"name": "ČEŠKA OSNOVNA ŠKOLA JANA AMOSA KOMENSKOG - ČESKÁ ZÁKLADNÍ ŠKOLA JANA AMOSE KOMENSKÉHO",
+"place": "Daruvar",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Bjelovarsko-bilogorska županija",
+"public": true
+},
+{
+"code": "07-012-004",
+"name": "CENTAR ZA ODGOJ I OBRAZOVANJE RUDOLF STEINER DARUVAR",
+"place": "Daruvar",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Ministarstvo za demografiju, obitelj, mlade i socijalnu skrb",
+"public": true
+},
+{
+"code": "07-024-001",
+"name": "OSNOVNA ŠKOLA GAREŠNICA",
+"place": "Garešnica",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Grad Garešnica",
+"public": true
+},
+{
+"code": "07-024-003",
+"name": "OSNOVNA ŠKOLA TRNOVITIČKI POPOVAC",
+"place": "Trnovitički Popovac",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Grad Garešnica",
+"public": true
+},
+{
+"code": "07-028-001",
+"name": "OSNOVNA ŠKOLA IVANA NEPOMUKA JEMERŠIĆA",
+"place": "Grubišno Polje",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Grad Grubišno Polje",
+"public": true
+},
+{
+"code": "07-261-001",
+"name": "OSNOVNA ŠKOLA MIRKA PEREŠA",
+"place": "Kapela",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Bjelovarsko-bilogorska županija",
+"public": true
+},
+{
+"code": "07-262-001",
+"name": "OSNOVNA ŠKOLA VELIKO TROJSTVO",
+"place": "Veliko Trojstvo",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Bjelovarsko-bilogorska županija",
+"public": true
+},
+{
+"code": "07-263-001",
+"name": "OSNOVNA ŠKOLA IVANA VITEZA TRNSKOG",
+"place": "Nova Rača",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Bjelovarsko-bilogorska županija",
+"public": true
+},
+{
+"code": "07-264-001",
+"name": "OSNOVNA ŠKOLA VELIKA PISANICA",
+"place": "Velika Pisanica",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Bjelovarsko-bilogorska županija",
+"public": true
+},
+{
+"code": "07-265-001",
+"name": "ČEŠKA OSNOVNA ŠKOLA JOSIPA RUŽIČKE KONČANICA-ČESKÁ ZÁKLADNÍ ŠKOLA JOSEFA RŮŽIČKY KONČENICE",
+"place": "Končanica",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Bjelovarsko-bilogorska županija",
+"public": true
+},
+{
+"code": "07-266-001",
+"name": "OSNOVNA ŠKOLA DEŽANOVAC",
+"place": "Dežanovac",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Bjelovarsko-bilogorska županija",
+"public": true
+},
+{
+"code": "07-267-001",
+"name": "OSNOVNA ŠKOLA SIRAČ",
+"place": "Sirač",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Bjelovarsko-bilogorska županija",
+"public": true
+},
+{
+"code": "07-268-001",
+"name": "OSNOVNA ŠKOLA U ĐULOVCU",
+"place": "Đulovac",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Bjelovarsko-bilogorska županija",
+"public": true
+},
+{
+"code": "07-269-001",
+"name": "OSNOVNA ŠKOLA IVANSKA",
+"place": "Ivanska",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Bjelovarsko-bilogorska županija",
+"public": true
+},
+{
+"code": "07-270-001",
+"name": "OSNOVNA ŠKOLA ŠTEFANJE",
+"place": "Štefanje",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Bjelovarsko-bilogorska županija",
+"public": true
+},
+{
+"code": "07-271-001",
+"name": "OSNOVNA ŠKOLA MATE LOVRAKA",
+"place": "Veliki Grđevac",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Bjelovarsko-bilogorska županija",
+"public": true
+},
+{
+"code": "07-272-001",
+"name": "OSNOVNA ŠKOLA BEREK",
+"place": "Berek",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Bjelovarsko-bilogorska županija",
+"public": true
+},
+{
+"code": "07-273-001",
+"name": "OSNOVNA ŠKOLA Slavka Kolara",
+"place": "Hercegovac",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Bjelovarsko-bilogorska županija",
+"public": true
+},
+{
+"code": "07-274-001",
+"name": "OSNOVNA ŠKOLA ROVIŠĆE",
+"place": "Rovišće",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Bjelovarsko-bilogorska županija",
+"public": true
+},
+{
+"code": "07-565-001",
+"name": "OSNOVNA ŠKOLA TRNOVITICA",
+"place": "Velika Trnovitica",
+"county": "Bjelovarsko-bilogorska županija",
+"type": "Osnovna škola",
+"founder": "Bjelovarsko-bilogorska županija",
+"public": true
+},
+{
+"code": "08-008-002",
+"name": "OSNOVNA ŠKOLA VLADIMIRA NAZORA CRIKVENICA",
+"place": "Crikvenica",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Grad Crikvenica",
+"public": true
+},
+{
+"code": "08-008-003",
+"name": "Osnovna škola Zvonka Cara",
+"place": "Crikvenica",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Crikvenica",
+"public": true
+},
+{
+"code": "20-527-001",
+"name": "OSNOVNA ŠKOLA PRELOG",
+"place": "Prelog",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-527-002",
+"name": "OSNOVNA ŠKOLA DONJI KRALJEVEC",
+"place": "Donji Kraljevec",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-527-003",
+"name": "OSNOVNA ŠKOLA DRAŠKOVEC",
+"place": "Prelog",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-528-001",
+"name": "OSNOVNA ŠKOLA IVANA GORANA KOVAČIĆA SVETI JURAJ NA BREGU",
+"place": "Pleškovec",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-529-001",
+"name": "OSNOVNA ŠKOLA SVETI MARTIN NA MURI",
+"place": "Sveti Martin na Muri",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-530-001",
+"name": "OSNOVNA ŠKOLA SELNICA",
+"place": "Selnica",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-531-001",
+"name": "OSNOVNA ŠKOLA ŠTRIGOVA",
+"place": "Štrigova",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-532-001",
+"name": "Osnovna škola Domašinec",
+"place": "Domašinec",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-533-001",
+"name": "OSNOVNA ŠKOLA JOŽE HORVATA KOTORIBA",
+"place": "Kotoriba",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-604-001",
+"name": "OSNOVNA ŠKOLA GORNJI MIHALJEVEC",
+"place": "Gornji Mihaljevec",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-606-001",
+"name": "OSNOVNA ŠKOLA STRAHONINEC",
+"place": "Strahoninec",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-607-001",
+"name": "OSNOVNA ŠKOLA SVETA MARIJA",
+"place": "Sveta Marija",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-608-001",
+"name": "OSNOVNA ŠKOLA PETAR ZRINSKI ŠENKOVEC",
+"place": "Šenkovec",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "21-114-001",
+"name": "Osnovna škola Ivana Gundulića",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-002",
+"name": "Osnovna škola Jabukovac - Zagreb",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-003",
+"name": "Osnovna škola Miroslava Krleže",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-004",
+"name": "Osnovna škola Šestine",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-005",
+"name": "Osnovna škola Pantovčak",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-006",
+"name": "Osnovna škola Izidora Kršnjavoga",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-007",
+"name": "Osnovna škola Ksavera Šandora Gjalskog",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-008",
+"name": "Osnovna škola Josipa Jurja Strossmayera",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-010",
+"name": "Osnovna škola Otona Ivekovića",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-011",
+"name": "OSNOVNA ŠKOLA KUSTOŠIJA",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-012",
+"name": "OSNOVNA ŠKOLA IVANA CANKARA",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-013",
+"name": "Osnovna škola Medvedgrad",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-014",
+"name": "OSNOVNA ŠKOLA PAVLEKA MIŠKINE",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-015",
+"name": "Osnovna škola Petra Zrinskog",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-016",
+"name": "OSNOVNA ŠKOLA ANTUNA MIHANOVIĆA",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-017",
+"name": "OSNOVNA ŠKOLA RETKOVEC",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-018",
+"name": "OSNOVNA ŠKOLA ŽUTI BRIJEG",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-019",
+"name": "Osnovna škola dr. Ante Starčevića",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-020",
+"name": "Osnovna škola Granešina",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-021",
+"name": "Osnovna škola IVANA MAŽURANIĆA",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-022",
+"name": "Osnovna škola Mate Lovraka",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-023",
+"name": "OSNOVNA ŠKOLA MARIJE JURIĆ ZAGORKE",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-024",
+"name": "Osnovna škola Čučerje",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-025",
+"name": "Osnovna škola Vjenceslava Novaka",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-026",
+"name": "Osnovna škola Antuna Branka Šimića",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-027",
+"name": "Osnovna škola Vladimira Nazora",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-028",
+"name": "OSNOVNA ŠKOLA ANTUNA GUSTAVA MATOŠA",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-029",
+"name": "Osnovna škola Augusta Harambašića",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-030",
+"name": "Osnovna škola Ivana Filipovića",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-031",
+"name": "OSNOVNA ŠKOLA MARKUŠEVEC",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-032",
+"name": "OSNOVNA ŠKOLA JORDANOVAC",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-033",
+"name": "OSNOVNA ŠKOLA BUKOVAC",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-034",
+"name": "Osnovna škola Gračani",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-035",
+"name": "OSNOVNA ŠKOLA IVANA GORANA KOVAČIĆA",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-036",
+"name": "OSNOVNA ŠKOLA MATKA LAGINJE",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-037",
+"name": "OSNOVNA ŠKOLA DR. IVAN MERZ",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-038",
+"name": "Osnovna škola Silvija Strahimira Kranjčevića",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-039",
+"name": "Osnovna škola Augusta Cesarca",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-040",
+"name": "OSNOVNA ŠKOLA DOBRIŠE CESARIĆA",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-041",
+"name": "OSNOVNA ŠKOLA ŽITNJAK",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-042",
+"name": "OSNOVNA ŠKOLA FRANA KRSTE FRANKOPANA",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-043",
+"name": "Osnovna škola Lovre pl. Matačića",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-044",
+"name": "Osnovna škola Petra Preradovića",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-045",
+"name": "Osnovna škola Dr. Vinka Žganca",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-046",
+"name": "Osnovna škola Dragutina Kušlana",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-047",
+"name": "OSNOVNA ŠKOLA VUKOMEREC",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-048",
+"name": "Osnovna škola Stenjevec",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-049",
+"name": "Osnovna škola Ante Kovačića",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-050",
+"name": "Osnovna škola Dragutina Domjanića",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-051",
+"name": "Osnovna škola Dragutina Tadijanovića",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-052",
+"name": "OSNOVNA ŠKOLA BANA JOSIPA JELAČIĆA",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-053",
+"name": "OSNOVNA ŠKOLA GROFA JANKA DRAŠKOVIĆA",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-054",
+"name": "OSNOVNA ŠKOLA TITUŠA BREZOVAČKOG",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-055",
+"name": "OSNOVNA ŠKOLA GORNJE VRAPČE",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-056",
+"name": "Osnovna škola Malešnica",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-057",
+"name": "OSNOVNA ŠKOLA AUGUSTA ŠENOE",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-058",
+"name": "Osnovna škola Horvati",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-059",
+"name": "Osnovna škola kralja Tomislava",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-060",
+"name": "OSNOVNA ŠKOLA IVANA MEŠTROVIĆA",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-063",
+"name": "Osnovna škola Josipa Račića",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-064",
+"name": "OSNOVNA ŠKOLA JULIJA KLOVIĆA",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-065",
+"name": "Osnovna škola Prečko",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-066",
+"name": "Osnovna škola Matije Gupca",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-067",
+"name": "Osnovna škola Rudeš",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-068",
+"name": "OSNOVNA ŠKOLA VOLTINO",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-069",
+"name": "Osnovna škola Nikole Tesle",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-070",
+"name": "OSNOVNA ŠKOLA LJUBLJANICA ZAGREB",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-071",
+"name": "Osnovna škola Alojzija Stepinca",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-072",
+"name": "Osnovna škola Vrbani",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-073",
+"name": "OSNOVNA ŠKOLA CVJETNO NASELJE",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-074",
+"name": "OSNOVNA ŠKOLA JURE KAŠTELANA",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-075",
+"name": "OSNOVNA ŠKOLA GRIGORA VITEZA",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-076",
+"name": "Osnovna škola Tina Ujevića",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-077",
+"name": "Osnovna škola Rapska",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-078",
+"name": "Osnovna škola Marina Držića",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-079",
+"name": "OSNOVNA ŠKOLA DAVORINA TRSTENJAKA",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-080",
+"name": "Osnovna škola Trnjanska",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-081",
+"name": "Osnovna škola Savski Gaj",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-082",
+"name": "Osnovna škola BRAĆE RADIĆ",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-083",
+"name": "OSNOVNA ŠKOLA BREZOVICA",
+"place": "Brezovica",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-084",
+"name": "OSNOVNA ŠKOLA LUČKO",
+"place": "Lučko",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-085",
+"name": "OSNOVNA ŠKOLA GUSTAVA KRKLECA",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-086",
+"name": "Osnovna škola Ive Andrića",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-087",
+"name": "I. osnovna  škola  Dugave",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-088",
+"name": "Osnovna škola Zapruđe",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-089",
+"name": "OSNOVNA ŠKOLA TRNSKO",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-090",
+"name": "OSNOVNA ŠKOLA SVETA KLARA",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-091",
+"name": "Osnovna škola MLADOST",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-092",
+"name": "Osnovna škola Stjepana Bencekovića",
+"place": "Horvati",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-093",
+"name": "OSNOVNA ŠKOLA ODRA",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-094",
+"name": "Osnovna škola Većeslava Holjevca",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-095",
+"name": "Osnovna škola OTOK",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-096",
+"name": "OSNOVNA ŠKOLA FRANA GALOVIĆA",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-105",
+"name": "OSNOVNA ŠKOLA VUGROVEC-KAŠINA",
+"place": "Kašina",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-106",
+"name": "OSNOVNA ŠKOLA IVANA GRANĐE",
+"place": "Soblinec",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-109",
+"name": "Osnovna škola SESVETE",
+"place": "Sesvete",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-110",
+"name": "Osnovna škola Sesvetski Kraljevec",
+"place": "Sesvetski Kraljevec",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-114",
+"name": "CENTAR ZA ODGOJ  I OBRAZOVANJE GOLJAK",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-115",
+"name": "CENTAR ZA AUTIZAM",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-116",
+"name": "OSNOVNA ŠKOLA NAD LIPOM",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-117",
+"name": "Poliklinika za rehabilitaciju slušanja i govora SUVAG",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-124",
+"name": "Waldorfska škola u Zagrebu",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "21-114-153",
+"name": "Centar za odgoj i obrazovanje Vinko Bek",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola, Posebna ustanova odgoja i obrazovanja, Srednja škola, Umjetnička škola",
+"founder": "Ministarstvo za demografiju, obitelj, mlade i socijalnu skrb",
+"public": true
+},
+{
+"code": "21-114-147",
+"name": "Centar za odgoj i obrazovanje Slave Raškaj Zagreb",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola, Posebna ustanova odgoja i obrazovanja, Srednja škola",
+"founder": "Ministarstvo za demografiju, obitelj, mlade i socijalnu skrb",
+"public": true
+},
+{
+"code": "21-114-149",
+"name": "Centar za odgoj i obrazovanje Dubrava",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Posebna ustanova odgoja i obrazovanja, Srednja škola",
+"founder": "Ministarstvo za demografiju, obitelj, mlade i socijalnu skrb",
+"public": true
+},
+{
+"code": "21-114-151",
+"name": "Osnovna škola Kreativan razvoj s pravom javnosti",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "21-114-137",
+"name": "Osnovna škola Sesvetska Sopnica",
+"place": "Sesvete",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-132",
+"name": "Osnovna škola Brestje",
+"place": "Sesvete",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-140",
+"name": "Centar za odgoj i obrazovanje Tuškanac- Zagreb",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Ministarstvo za demografiju, obitelj, mlade i socijalnu skrb",
+"public": true
+},
+{
+"code": "21-114-146",
+"name": "OSNOVNA MONTESSORI ŠKOLA BARUNICE DEDEE VRANYCZANY",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "14-060-022",
+"name": "Centar za autizam",
+"place": "Osijek",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "02-189-002",
+"name": "Osnovna škola Belec",
+"place": "Belec",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "03-204-001",
+"name": "Osnovna škola Katarina Zrinska Mečenčani",
+"place": "Hrvatska Kostajnica",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "08-221-001",
+"name": "OSNOVNA ŠKOLA KOSTRENA",
+"place": "Kostrena",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "17-125-003",
+"name": "OSNOVNA ŠKOLA KRALJICE JELENE",
+"place": "Solin",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "21-114-133",
+"name": "OSNOVNA ŠKOLA BOROVJE",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-134",
+"name": "OSNOVNA ŠKOLA REMETE",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-150",
+"name": "Osnovna škola Hugo Kon",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "01-539-001",
+"name": "Osnovna škola Ante Kovačića",
+"place": "Marija Gorica",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-548-001",
+"name": "Osnovna škola Luka",
+"place": "Luka",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-550-001",
+"name": "Osnovna škola Bedenica",
+"place": "Bedenica",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "16-438-003",
+"name": "Osnovna škola Tordinci",
+"place": "Tordinci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "21-114-136",
+"name": "Osnovna škola Sesvetska Sela",
+"place": "Sesvete",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-139",
+"name": "OSNOVNA ŠKOLA BARTOLA KAŠIĆA",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-135",
+"name": "Osnovna škola Špansko Oranice",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-138",
+"name": "Osnovna škola Luka",
+"place": "Sesvete",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "15-081-010",
+"name": "KATOLIČKA OSNOVNA ŠKOLA",
+"place": "Šibenik",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "02-014-004",
+"name": "Osnovna škola Vladimir Bosnar Stubičke Toplice",
+"place": "Stubičke Toplice",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Općina Stubičke Toplice",
+"public": true
+},
+{
+"code": "11-077-005",
+"name": "Katolička osnovna škola u Požegi",
+"place": "Požega",
+"county": "Požeško-slavonska županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "15-081-011",
+"name": "CENTAR ZA ODGOJ I OBRAZOVANJE ŠUBIĆEVAC",
+"place": "Šibenik",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola, Srednja škola",
+"founder": "Ministarstvo za demografiju, obitelj, mlade i socijalnu skrb",
+"public": true
+},
+{
+"code": "17-126-535",
+"name": "Centar za odgoj i obrazovanje JURAJ BONAČI",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola, Srednja škola",
+"founder": "Ministarstvo za demografiju, obitelj, mlade i socijalnu skrb",
+"public": true
+},
+{
+"code": "17-126-536",
+"name": "Centar za odgoj i obrazovanje SLAVA RAŠKAJ",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola, Srednja škola",
+"founder": "Ministarstvo za demografiju, obitelj, mlade i socijalnu skrb",
+"public": true
+},
+{
+"code": "08-009-001",
+"name": "Osnovna škola Petar Zrinski Čabar",
+"place": "Čabar",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-013-001",
+"name": "Osnovna škola Ivana Gorana Kovačića",
+"place": "Delnice",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-013-002",
+"name": "Osnovna škola Frana Krste Frankopana",
+"place": "Brod na Kupi",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-042-001",
+"name": "Osnovna škola Fran Krsto Frankopan Krk",
+"place": "Krk",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-048-001",
+"name": "OSNOVNA ŠKOLA FRANE PETRIĆA",
+"place": "Cres",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-058-002",
+"name": "Osnovna škola Rikard Katalinić Jeretov",
+"place": "Opatija",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Opatija",
+"public": true
+},
+{
+"code": "08-070-001",
+"name": "OSNOVNA ŠKOLA IVANA RABLJANINA RAB",
+"place": "Rab",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-071-001",
+"name": "OSNOVNA ŠKOLA - SCUOLA ELEMENTARE BELVEDERE",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-002",
+"name": "Osnovna škola Brajda",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-003",
+"name": "OSNOVNA ŠKOLA CENTAR",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-005",
+"name": "OSNOVNA ŠKOLA ZAMET",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-006",
+"name": "Osnovna škola - Scuola elementare Dolac",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-007",
+"name": "Osnovna škola - Scuola elementare Gelsi",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-008",
+"name": "OSNOVNA ŠKOLA - SCUOLA ELEMENTARE ˝SAN NICOLO˝",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-009",
+"name": "Osnovna škola Vladimir Gortan",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-011",
+"name": "Osnovna škola ˝Kantrida˝",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-012",
+"name": "OSNOVNA ŠKOLA KOZALA",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-013",
+"name": "OSNOVNA ŠKOLA EUGEN KUMIČIĆ",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-014",
+"name": "Osnovna škola Pećine",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-015",
+"name": "OSNOVNA ŠKOLA PODMURVICE",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-016",
+"name": "Osnovna škola Nikola Tesla",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-017",
+"name": "OSNOVNA ŠKOLA ŠKURINJE RIJEKA",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-018",
+"name": "OSNOVNA ŠKOLA \"TRSAT\"",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-019",
+"name": "Osnovna škola Turnić",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-020",
+"name": "Osnovna škola Vežica",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-021",
+"name": "Osnovna škola Gornja Vežica",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-022",
+"name": "Osnovna škola Ivana Zajca",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-023",
+"name": "Osnovna škola \"Srdoči\"",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-024",
+"name": "Osnovna škola Fran Franković",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-025",
+"name": "OSNOVNA ŠKOLA PEHLIN",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-026",
+"name": "CENTAR ZA ODGOJ I OBRAZOVANJE",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola, Posebna ustanova odgoja i obrazovanja, Srednja škola",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "08-071-031",
+"name": "OSNOVNA WALDORFSKA ŠKOLA",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "08-095-001",
+"name": "Osnovna škola Ivana Gorana Kovačića Vrbovsko",
+"place": "Vrbovsko",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-275-001",
+"name": "OSNOVNA ŠKOLA BAKAR",
+"place": "Bakar",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-275-002",
+"name": "OSNOVNA ŠKOLA HRELJIN",
+"place": "Hreljin",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-276-001",
+"name": "Osnovna škola ČAVLE",
+"place": "Čavle",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-277-001",
+"name": "OSNOVNA ŠKOLA RUDOLFA STROHALA",
+"place": "Lokve",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-278-001",
+"name": "Osnovna škola JELENJE - DRAŽICE",
+"place": "Dražice",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-279-001",
+"name": "Osnovna škola ˝Milan Brozović˝",
+"place": "Kastav",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-280-001",
+"name": "Osnovna škola Klana",
+"place": "Klana",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-281-001",
+"name": "Osnovna škola SVETI MATEJ",
+"place": "Viškovo",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-Goranska županija",
+"public": true
+},
+{
+"code": "08-282-001",
+"name": "Osnovna škola Kraljevica",
+"place": "Kraljevica",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-289-001",
+"name": "Osnovna škola Ivanke Trohar",
+"place": "Fužine",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-290-001",
+"name": "OSNOVNA ŠKOLA VIKTORA CARA EMINA",
+"place": "Lovran",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-292-001",
+"name": "OSNOVNA ŠKOLA MARIA MARTINOLIĆA",
+"place": "Mali Lošinj",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-293-001",
+"name": "OSNOVNA ŠKOLA Dr. ANDRIJA MOHOROVIČIĆ",
+"place": "Matulji",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-293-002",
+"name": "OSNOVNA ŠKOLA DRAGO GERVAIS",
+"place": "Jurdani",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-294-001",
+"name": "Osnovna škola Ivana Mažuranića",
+"place": "Novi Vinodolski",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-295-001",
+"name": "Osnovna škola dr. Josipa Pančića Bribir",
+"place": "Bribir",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-295-002",
+"name": "Osnovna škola Jurja Klovića Tribalj",
+"place": "Tribalj",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-296-001",
+"name": "Osnovna škola Skrad",
+"place": "Skrad",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-297-001",
+"name": "Osnovna škola Dr. Branimira Markovića",
+"place": "Ravna Gora",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-298-001",
+"name": "Osnovna škola Mrkopalj",
+"place": "Mrkopalj",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "08-299-001",
+"name": "Osnovna škola Brod Moravice",
+"place": "Brod Moravice",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "09-015-001",
+"name": "OSNOVNA ŠKOLA DONJI LAPAC",
+"place": "Donji Lapac",
+"county": "Ličko-senjska županija",
+"type": "Osnovna škola",
+"founder": "Ličko-senjska županija",
+"public": true
+},
+{
+"code": "09-026-001",
+"name": "OSNOVNA ŠKOLA DR. JURE TURIĆA",
+"place": "Gospić",
+"county": "Ličko-senjska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Grad Gospić",
+"public": true
+},
+{
+"code": "09-026-003",
+"name": "Osnovna škola Dr. Franje Tuđmana Lički Osik",
+"place": "Lički Osik",
+"county": "Ličko-senjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Gospić",
+"public": true
+},
+{
+"code": "09-061-001",
+"name": "OSNOVNA ŠKOLA ZRINSKIH I FRANKOPANA",
+"place": "Otočac",
+"county": "Ličko-senjska županija",
+"type": "Osnovna škola",
+"founder": "Ličko-senjska županija",
+"public": true
+},
+{
+"code": "09-074-001",
+"name": "OSNOVNA ŠKOLA SILVIJA STRAHIMIRA KRANJČEVIĆA SENJ",
+"place": "Senj",
+"county": "Ličko-senjska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Ličko-senjska županija",
+"public": true
+},
+{
+"code": "09-300-001",
+"name": "OSNOVNA ŠKOLA LUKE PERKOVIĆA BRINJE",
+"place": "Brinje",
+"county": "Ličko-senjska županija",
+"type": "Osnovna škola",
+"founder": "Ličko-senjska županija",
+"public": true
+},
+{
+"code": "09-301-001",
+"name": "OSNOVNA ŠKOLA KARLOBAG",
+"place": "Karlobag",
+"county": "Ličko-senjska županija",
+"type": "Osnovna škola",
+"founder": "Ličko-senjska županija",
+"public": true
+},
+{
+"code": "09-302-001",
+"name": "OSNOVNA ŠKOLA PERUŠIĆ",
+"place": "Perušić",
+"county": "Ličko-senjska županija",
+"type": "Osnovna škola",
+"founder": "Ličko-senjska županija",
+"public": true
+},
+{
+"code": "09-026-005",
+"name": "OSNOVNA ŠKOLA DR. ANTE STARČEVIĆ PAZARIŠTE-KLANAC",
+"place": "Klanac",
+"county": "Ličko-senjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Gospić",
+"public": true
+},
+{
+"code": "09-302-003",
+"name": "OSNOVNA ŠKOLA ANŽ FRANKOPAN KOSINJ",
+"place": "Gornji Kosinj",
+"county": "Ličko-senjska županija",
+"type": "Osnovna škola",
+"founder": "Ličko-senjska županija",
+"public": true
+},
+{
+"code": "09-304-001",
+"name": "Osnovna škola A. G. Matoša Novalja",
+"place": "Novalja",
+"county": "Ličko-senjska županija",
+"type": "Osnovna škola",
+"founder": "Ličko-senjska županija",
+"public": true
+},
+{
+"code": "09-379-001",
+"name": "Osnovna škola \"Milan Sekulić\" Lovinac",
+"place": "Lovinac",
+"county": "Ličko-senjska županija",
+"type": "Osnovna škola",
+"founder": "Ličko-senjska županija",
+"public": true
+},
+{
+"code": "09-380-001",
+"name": "Osnovna škola KRALJA TOMISLAVA",
+"place": "Udbina",
+"county": "Ličko-senjska županija",
+"type": "Osnovna škola",
+"founder": "Ličko-senjska županija",
+"public": true
+},
+{
+"code": "09-455-001",
+"name": "OSNOVNA ŠKOLA PLITVIČKA JEZERA",
+"place": "Plitvička Jezera",
+"county": "Ličko-senjska županija",
+"type": "Osnovna škola",
+"founder": "Ličko-senjska županija",
+"public": true
+},
+{
+"code": "09-455-002",
+"name": "Osnovna škola dr. Franje Tuđmana",
+"place": "Korenica",
+"county": "Ličko-senjska županija",
+"type": "Osnovna škola",
+"founder": "Ličko-senjska županija",
+"public": true
+},
+{
+"code": "10-059-001",
+"name": "OSNOVNA ŠKOLA IVANE BRLIĆ-MAŽURANIĆ ORAHOVICA",
+"place": "Orahovica",
+"county": "Virovitičko-podravska županija",
+"type": "Osnovna škola",
+"founder": "Virovitičko-podravska županija",
+"public": true
+},
+{
+"code": "10-067-001",
+"name": "OSNOVNA ŠKOLA EUGENA KUMIČIĆA",
+"place": "Slatina",
+"county": "Virovitičko-podravska županija",
+"type": "Osnovna škola",
+"founder": "Virovitičko-podravska županija",
+"public": true
+},
+{
+"code": "10-067-002",
+"name": "OSNOVNA ŠKOLA JOSIPA KOZARCA",
+"place": "Slatina",
+"county": "Virovitičko-podravska županija",
+"type": "Osnovna škola",
+"founder": "Virovitičko-podravska županija",
+"public": true
+},
+{
+"code": "10-089-001",
+"name": "OSNOVNA ŠKOLA IVANE BRLIĆ-MAŽURANIĆ VIROVITICA",
+"place": "Virovitica",
+"county": "Virovitičko-podravska županija",
+"type": "Osnovna škola",
+"founder": "Grad Virovitica",
+"public": true
+},
+{
+"code": "10-089-002",
+"name": "OSNOVNA ŠKOLA VLADIMIR NAZOR VIROVITICA",
+"place": "Virovitica",
+"county": "Virovitičko-podravska županija",
+"type": "Osnovna škola",
+"founder": "Grad Virovitica",
+"public": true
+},
+{
+"code": "10-089-004",
+"name": "CENTAR ZA ODGOJ, OBRAZOVANJE I REHABILITACIJU VIROVITICA",
+"place": "Virovitica",
+"county": "Virovitičko-podravska županija",
+"type": "Osnovna škola, Srednja škola",
+"founder": "Grad Virovitica",
+"public": true
+},
+{
+"code": "10-305-001",
+"name": "OSNOVNA ŠKOLA IVAN GORAN KOVAČIĆ",
+"place": "Zdenci",
+"county": "Virovitičko-podravska županija",
+"type": "Osnovna škola",
+"founder": "Virovitičko-podravska županija",
+"public": true
+},
+{
+"code": "10-307-001",
+"name": "OSNOVNA ŠKOLA ANTUNA GUSTAVA MATOŠA",
+"place": "Čačinci",
+"county": "Virovitičko-podravska županija",
+"type": "Osnovna škola",
+"founder": "Virovitičko-podravska županija",
+"public": true
+},
+{
+"code": "10-308-001",
+"name": "OSNOVNA ŠKOLA IVANA GORANA KOVAČIĆA GORNJE BAZJE",
+"place": "Lukač",
+"county": "Virovitičko-podravska županija",
+"type": "Osnovna škola",
+"founder": "Virovitičko-podravska županija",
+"public": true
+},
+{
+"code": "10-309-001",
+"name": "OSNOVNA ŠKOLA GRADINA",
+"place": "Gradina",
+"county": "Virovitičko-podravska županija",
+"type": "Osnovna škola",
+"founder": "Virovitičko-podravska županija",
+"public": true
+},
+{
+"code": "10-310-001",
+"name": "OSNOVNA ŠKOLA DAVORIN TRSTENJAK ČAĐAVICA",
+"place": "Čađavica",
+"county": "Virovitičko-podravska županija",
+"type": "Osnovna škola",
+"founder": "Virovitičko-podravska županija",
+"public": true
+},
+{
+"code": "10-311-001",
+"name": "OSNOVNA ŠKOLA VLADIMIRA NAZORA",
+"place": "Nova Bukovica",
+"county": "Virovitičko-podravska županija",
+"type": "Osnovna škola",
+"founder": "Virovitičko-podravska županija",
+"public": true
+},
+{
+"code": "10-312-001",
+"name": "OSNOVNA ŠKOLA MIKLEUŠ",
+"place": "Mikleuš",
+"county": "Virovitičko-podravska županija",
+"type": "Osnovna škola",
+"founder": "Virovitičko-podravska županija",
+"public": true
+},
+{
+"code": "10-314-001",
+"name": "OSNOVNA ŠKOLA VOĆIN",
+"place": "Voćin",
+"county": "Virovitičko-podravska županija",
+"type": "Osnovna škola",
+"founder": "Virovitičko-podravska županija",
+"public": true
+},
+{
+"code": "10-315-001",
+"name": "OSNOVNA ŠKOLA SUHOPOLJE",
+"place": "Suhopolje",
+"county": "Virovitičko-podravska županija",
+"type": "Osnovna škola",
+"founder": "Virovitičko-podravska županija",
+"public": true
+},
+{
+"code": "10-316-001",
+"name": "OSNOVNA ŠKOLA AUGUST CESAREC",
+"place": "Špišić Bukovica",
+"county": "Virovitičko-podravska županija",
+"type": "Osnovna škola",
+"founder": "Virovitičko-podravska županija",
+"public": true
+},
+{
+"code": "10-317-001",
+"name": "OSNOVNA ŠKOLA PETRA PRERADOVIĆA",
+"place": "Pitomača",
+"county": "Virovitičko-podravska županija",
+"type": "Osnovna škola",
+"founder": "Virovitičko-podravska županija",
+"public": true
+},
+{
+"code": "11-064-001",
+"name": "OSNOVNA ŠKOLA BRAĆE RADIĆA PAKRAC",
+"place": "Pakrac",
+"county": "Požeško-slavonska županija",
+"type": "Osnovna škola",
+"founder": "Požeško-slavonska županija",
+"public": true
+},
+{
+"code": "11-077-001",
+"name": "Osnovna škola Dobriša Cesarić",
+"place": "Požega",
+"county": "Požeško-slavonska županija",
+"type": "Osnovna škola",
+"founder": "Grad Požega",
+"public": true
+},
+{
+"code": "11-077-002",
+"name": "Osnovna škola Julija Kempfa",
+"place": "Požega",
+"county": "Požeško-slavonska županija",
+"type": "Osnovna škola",
+"founder": "Grad Požega",
+"public": true
+},
+{
+"code": "11-077-003",
+"name": "OSNOVNA ŠKOLA ANTUNA KANIŽLIĆA",
+"place": "Požega",
+"county": "Požeško-slavonska županija",
+"type": "Osnovna škola",
+"founder": "Grad Požega",
+"public": true
+},
+{
+"code": "11-318-001",
+"name": "Osnovna škola Dragutina Lermana",
+"place": "Brestovac",
+"county": "Požeško-slavonska županija",
+"type": "Osnovna škola",
+"founder": "Požeško-slavonska županija",
+"public": true
+},
+{
+"code": "11-319-001",
+"name": "OSNOVNA ŠKOLA STJEPANA RADIĆA ČAGLIN",
+"place": "Čaglin",
+"county": "Požeško-slavonska županija",
+"type": "Osnovna škola",
+"founder": "Požeško-slavonska županija",
+"public": true
+},
+{
+"code": "11-320-001",
+"name": "Osnovna škola Mladost",
+"place": "Jakšić",
+"county": "Požeško-slavonska županija",
+"type": "Osnovna škola",
+"founder": "Požeško-slavonska županija",
+"public": true
+},
+{
+"code": "11-321-001",
+"name": "Osnovna škola Vilima Korajca",
+"place": "Kaptol",
+"county": "Požeško-slavonska županija",
+"type": "Osnovna škola",
+"founder": "Požeško-slavonska županija",
+"public": true
+},
+{
+"code": "11-322-001",
+"name": "Osnovna škola Zdenka Turkovića",
+"place": "Kutjevo",
+"county": "Požeško-slavonska županija",
+"type": "Osnovna škola",
+"founder": "Požeško-slavonska županija",
+"public": true
+},
+{
+"code": "11-323-001",
+"name": "Osnovna škola fra Kaje Adžića Pleternica",
+"place": "Pleternica",
+"county": "Požeško-slavonska županija",
+"type": "Osnovna škola",
+"founder": "Požeško-slavonska županija",
+"public": true
+},
+{
+"code": "11-324-001",
+"name": "OSNOVNA ŠKOLA IVAN GORAN KOVAČIĆ",
+"place": "Velika",
+"county": "Požeško-slavonska županija",
+"type": "Osnovna škola",
+"founder": "Požeško-slavonska županija",
+"public": true
+},
+{
+"code": "11-324-002",
+"name": "OSNOVNA ŠKOLA VLADIMIR NAZOR",
+"place": "Trenkovo",
+"county": "Požeško-slavonska županija",
+"type": "Osnovna škola",
+"founder": "Požeško-slavonska županija",
+"public": true
+},
+{
+"code": "11-327-001",
+"name": "Osnovna škola Lipik",
+"place": "Lipik",
+"county": "Požeško-slavonska županija",
+"type": "Osnovna škola",
+"founder": "Požeško-slavonska županija",
+"public": true
+},
+{
+"code": "11-327-002",
+"name": "OSNOVNA ŠKOLA GRIGORA VITEZA POLJANA",
+"place": "Poljana",
+"county": "Požeško-slavonska županija",
+"type": "Osnovna škola",
+"founder": "Požeško-slavonska županija",
+"public": true
+},
+{
+"code": "12-051-001",
+"name": "Osnovna škola Ljudevita Gaja Nova Gradiška",
+"place": "Nova Gradiška",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-051-002",
+"name": "Osnovna škola Mato Lovrak",
+"place": "Nova Gradiška",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-078-001",
+"name": "OSNOVNA ŠKOLA IVAN GORAN KOVAČIĆ",
+"place": "Slavonski Brod",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Grad Slavonski Brod",
+"public": true
+},
+{
+"code": "12-078-002",
+"name": "OSNOVNA ŠKOLA ANTUN MIHANOVIĆ",
+"place": "Slavonski Brod",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Grad Slavonski Brod",
+"public": true
+},
+{
+"code": "12-078-003",
+"name": "OSNOVNA ŠKOLA HUGO BADALIĆ",
+"place": "Slavonski Brod",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Grad Slavonski Brod",
+"public": true
+},
+{
+"code": "12-078-004",
+"name": "OSNOVNA ŠKOLA ĐURO PILAR",
+"place": "Slavonski Brod",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Grad Slavonski Brod",
+"public": true
+},
+{
+"code": "12-078-005",
+"name": "OSNOVNA ŠKOLA BOGOSLAV ŠULEK",
+"place": "Slavonski Brod",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Grad Slavonski Brod",
+"public": true
+},
+{
+"code": "12-078-006",
+"name": "OSNOVNA ŠKOLA VLADIMIR NAZOR",
+"place": "Slavonski Brod",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Grad Slavonski Brod",
+"public": true
+},
+{
+"code": "12-078-007",
+"name": "OSNOVNA ŠKOLA IVANA BRLIĆ-MAŽURANIĆ",
+"place": "Slavonski Brod",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Grad Slavonski Brod",
+"public": true
+},
+{
+"code": "12-078-008",
+"name": "OSNOVNA ŠKOLA BLAŽ TADIJANOVIĆ",
+"place": "Slavonski Brod",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Grad Slavonski Brod",
+"public": true
+},
+{
+"code": "12-078-009",
+"name": "OSNOVNA ŠKOLA MILAN AMRUŠ",
+"place": "Slavonski Brod",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Grad Slavonski Brod",
+"public": true
+},
+{
+"code": "12-078-011",
+"name": "Osnovna škola Dragutin Tadijanović",
+"place": "Slavonski Brod",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Grad Slavonski Brod",
+"public": true
+},
+{
+"code": "12-329-001",
+"name": "OSNOVNA ŠKOLA ANTUN MATIJA RELJKOVIĆ",
+"place": "Bebrina",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-331-001",
+"name": "OSNOVNA ŠKOLA VIKTOR CAR EMIN",
+"place": "Donji Andrijevci",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-332-001",
+"name": "OSNOVNA ŠKOLA AUGUSTA ŠENOE",
+"place": "Gundinci",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-333-001",
+"name": "OSNOVNA ŠKOLA VJEKOSLAV KLAIĆ",
+"place": "Garčin",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-335-001",
+"name": "Osnovna škola Sibinjskih žrtava",
+"place": "Sibinj",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-336-001",
+"name": "OSNOVNA ŠKOLA JOSIP KOZARAC SLAVONSKI ŠAMAC",
+"place": "Kruševica",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-336-002",
+"name": "Osnovna škola Sikirevci",
+"place": "Sikirevci",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-337-001",
+"name": "OSNOVNA ŠKOLA DR. STJEPAN ILIJAŠEVIĆ",
+"place": "Oriovac",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-337-002",
+"name": "OSNOVNA ŠKOLA LJUDEVIT GAJ",
+"place": "Lužani",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-338-001",
+"name": "OSNOVNA ŠKOLA IVAN MEŠTROVIĆ",
+"place": "Vrpolje",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-339-001",
+"name": "OSNOVNA ŠKOLA IVAN FILIPOVIĆ",
+"place": "Velika Kopanica",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-341-001",
+"name": "Osnovna škola Stjepan Radić Oprisavci",
+"place": "Oprisavci",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-342-001",
+"name": "Osnovna škola Matija Gubec Cernik",
+"place": "Cernik",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-343-001",
+"name": "Osnovna škola Matija Antun Relković",
+"place": "Davor",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-344-001",
+"name": "Osnovna škola Dragalić",
+"place": "Dragalić",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-346-001",
+"name": "Osnovna škola Antun Mihanović Nova Kapela Batrina",
+"place": "Batrina",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-347-001",
+"name": "Osnovna škola Okučani",
+"place": "Okučani",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-348-001",
+"name": "Osnovna škola Ante Starčevića",
+"place": "Rešetari",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-348-002",
+"name": "Osnovna škola Vladimir Nazor",
+"place": "Adžamovci",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-349-001",
+"name": "Osnovna škola Ivana Gorana Kovačića",
+"place": "Staro Petrovo Selo",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "12-349-002",
+"name": "Osnovna škola Markovac",
+"place": "Vrbova",
+"county": "Brodsko-posavska županija",
+"type": "Osnovna škola",
+"founder": "Brodsko-posavska županija",
+"public": true
+},
+{
+"code": "13-002-001",
+"name": "OSNOVNA ŠKOLA BENKOVAC",
+"place": "Benkovac",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-003-001",
+"name": "Osnovna škola Biograd",
+"place": "Biograd na Moru",
+"county": "Zadarska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-027-001",
+"name": "OSNOVNA ŠKOLA NIKOLE TESLE",
+"place": "Gračac",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-055-001",
+"name": "OSNOVNA ŠKOLA OBROVAC",
+"place": "Obrovac",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-063-001",
+"name": "OSNOVNA ŠKOLA JURJA DALMATINCA PAG",
+"place": "Pag",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-107-001",
+"name": "OSNOVNA ŠKOLA STANOVI",
+"place": "Zadar",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Zadar",
+"public": true
+},
+{
+"code": "13-107-002",
+"name": "OSNOVNA ŠKOLA KRUNE KRSTIĆA - ZADAR",
+"place": "Zadar",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Zadar",
+"public": true
+},
+{
+"code": "13-107-003",
+"name": "OSNOVNA ŠKOLA PETRA PRERADOVIĆA",
+"place": "Zadar",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Zadar",
+"public": true
+},
+{
+"code": "13-107-004",
+"name": "OSNOVNA ŠKOLA ŠIMUNA KOŽIČIĆA BENJE",
+"place": "Zadar",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Zadar",
+"public": true
+},
+{
+"code": "13-107-005",
+"name": "Osnovna škola Šime Budinića - Zadar",
+"place": "Zadar",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Zadar",
+"public": true
+},
+{
+"code": "13-107-006",
+"name": "Osnovna škola Smiljevac",
+"place": "Zadar",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Zadar",
+"public": true
+},
+{
+"code": "13-107-007",
+"name": "Osnovna škola BARTULA KAŠIĆA",
+"place": "Zadar",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Zadar",
+"public": true
+},
+{
+"code": "13-107-008",
+"name": "Osnovna škola Voštarnica - Zadar",
+"place": "Zadar",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Zadar",
+"public": true
+},
+{
+"code": "13-107-009",
+"name": "Osnovna škola ZADARSKI OTOCI - Zadar",
+"place": "Zadar",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Zadar",
+"public": true
+},
+{
+"code": "13-107-011",
+"name": "Privatna osnovna škola NOVA",
+"place": "Zadar",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "13-351-001",
+"name": "OSNOVNA ŠKOLA STJEPANA RADIĆA-BIBINJE",
+"place": "Bibinje",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-352-001",
+"name": "OSNOVNA ŠKOLA SUKOŠAN",
+"place": "Sukošan",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-353-001",
+"name": "OSNOVNA ŠKOLA ZEMUNIK",
+"place": "Zemunik Donji",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-353-002",
+"name": "OSNOVNA ŠKOLA GALOVAC",
+"place": "Galovac",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-354-001",
+"name": "Osnovna škola Vladimira Nazora - Škabrnje",
+"place": "Škabrnja",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-355-001",
+"name": "OSNOVNA ŠKOLA POLIČNIK",
+"place": "Poličnik",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-356-001",
+"name": "Osnovna škola Braća Ribar",
+"place": "Posedarje",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-357-001",
+"name": "OSNOVNA ŠKOLA NOVIGRAD",
+"place": "Novigrad",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-357-002",
+"name": "OSNOVNA ŠKOLA BRAĆE RADIĆ",
+"place": "Pridraga",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-358-001",
+"name": "Osnovna škola Starigrad",
+"place": "Starigrad",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-359-001",
+"name": "Osnovna škola Jurja Barakovića Ražanac",
+"place": "Ražanac",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-360-001",
+"name": "OSNOVNA ŠKOLA ˝PETAR ZORANIĆ˝",
+"place": "Nin",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-360-002",
+"name": "OSNOVNA ŠKOLA PRIVLAKA",
+"place": "Privlaka",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-362-001",
+"name": "Osnovna škola VALENTIN KLARIN Preko",
+"place": "Preko",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-364-001",
+"name": "Osnovna škola PETAR LORINI",
+"place": "Sali",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-365-001",
+"name": "OSNOVNA ŠKOLA VLADIMIR NAZOR",
+"place": "Neviđane",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-366-001",
+"name": "Osnovna škola Pakoštane",
+"place": "Pakoštane",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-367-001",
+"name": "Osnovna škola Sv. Filip i Jakov",
+"place": "Sveti Filip i Jakov",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-368-001",
+"name": "OSNOVNA ŠKOLA PETRA ZORANIĆA",
+"place": "Jasenice",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-372-001",
+"name": "OSNOVNA ŠKOLA FRANKA LISICE POLAČA",
+"place": "Polača",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-374-001",
+"name": "Osnovna škola \"Ivan Goran Kovačić\"",
+"place": "Lišane Ostrovičke",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "13-375-001",
+"name": "OSNOVNA ŠKOLA PETAR ZORANIĆ",
+"place": "Stankovci",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "Zadarska županija",
+"public": true
+},
+{
+"code": "14-001-001",
+"name": "Osnovna škola Šećerana",
+"place": "Šećerana",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-001-002",
+"name": "OSNOVNA ŠKOLA DR. FRANJO TUĐMAN",
+"place": "Beli Manastir",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-016-001",
+"name": "Osnovna škola August Harambašić",
+"place": "Donji Miholjac",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-016-002",
+"name": "Osnovna škola Hrvatski sokol",
+"place": "Podgajci Podravski",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-022-001",
+"name": "Osnovna škola Budrovci",
+"place": "Budrovci",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-022-002",
+"name": "Osnovna škola Ivan Goran Kovačić",
+"place": "Đakovo",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-022-003",
+"name": "Osnovna škola Vladimir Nazor",
+"place": "Đakovo",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-022-004",
+"name": "Osnovna škola Josipa Antuna Ćolnića",
+"place": "Đakovo",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-022-005",
+"name": "Osnovna škola Đakovački Selci",
+"place": "Selci Đakovački",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-022-006",
+"name": "Osnovna škola Matija Gubec",
+"place": "Piškorevci",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-050-001",
+"name": "Osnovna škola Dore Pejačević Našice",
+"place": "Našice",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-050-002",
+"name": "Osnovna škola Ivana Brnjika Slovaka",
+"place": "Jelisavac",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-050-003",
+"name": "OSNOVNA ŠKOLA KRALJA TOMISLAVA",
+"place": "Našice",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-060-001",
+"name": "Centar za odgoj i obrazovanje Ivan Štark",
+"place": "Osijek",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Osijek",
+"public": true
+},
+{
+"code": "14-060-002",
+"name": "Osnovna škola Svete Ane u Osijeku",
+"place": "Osijek",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Osijek",
+"public": true
+},
+{
+"code": "14-060-003",
+"name": "Osnovna škola Franje Krežme",
+"place": "Osijek",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Osijek",
+"public": true
+},
+{
+"code": "14-060-004",
+"name": "Osnovna škola Antuna Mihanovića",
+"place": "Osijek",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Osijek",
+"public": true
+},
+{
+"code": "14-060-005",
+"name": "Osnovna škola Vladimira Becića Osijek",
+"place": "Osijek",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Osijek",
+"public": true
+},
+{
+"code": "14-060-006",
+"name": "Osnovna škola Mladost",
+"place": "Osijek",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Osijek",
+"public": true
+},
+{
+"code": "14-060-007",
+"name": "Osnovna škola Frana Krste Frankopana",
+"place": "Osijek",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Osijek",
+"public": true
+},
+{
+"code": "14-060-008",
+"name": "Osnovna škola Vijenac",
+"place": "Osijek",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Osijek",
+"public": true
+},
+{
+"code": "14-060-009",
+"name": "Osnovna škola Ljudevita Gaja",
+"place": "Osijek",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Osijek",
+"public": true
+},
+{
+"code": "14-060-010",
+"name": "Osnovna škola Jagode Truhelke",
+"place": "Osijek",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Osijek",
+"public": true
+},
+{
+"code": "14-060-011",
+"name": "Osnovna škola Grigor Vitez",
+"place": "Osijek",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Osijek",
+"public": true
+},
+{
+"code": "14-060-012",
+"name": "Osnovna škola Tin Ujević",
+"place": "Osijek",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Osijek",
+"public": true
+},
+{
+"code": "14-060-013",
+"name": "Osnovna škola Tenja",
+"place": "Tenja",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Osijek",
+"public": true
+},
+{
+"code": "14-060-014",
+"name": "Osnovna škola Dobriša Cesarić",
+"place": "Osijek",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Osijek",
+"public": true
+},
+{
+"code": "14-060-015",
+"name": "Osnovna škola August Šenoa",
+"place": "Osijek",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Osijek",
+"public": true
+},
+{
+"code": "14-060-016",
+"name": "Osnovna škola Josipovac",
+"place": "Josipovac",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Osijek",
+"public": true
+},
+{
+"code": "14-060-017",
+"name": "OSNOVNA ŠKOLA VIŠNJEVAC",
+"place": "Višnjevac",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Osijek",
+"public": true
+},
+{
+"code": "14-060-018",
+"name": "Osnovna škola Ivana Filipovića",
+"place": "Osijek",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Osijek",
+"public": true
+},
+{
+"code": "14-060-019",
+"name": "Osnovna škola Retfala",
+"place": "Osijek",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Osijek",
+"public": true
+},
+{
+"code": "14-060-021",
+"name": "PROSVJETNO-KULTURNI CENTAR MAĐARA U REPUBLICI HRVATSKOJ",
+"place": "Osijek",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola, Srednja škola",
+"founder": "Ministarstvo znanosti obrazovanja i športa",
+"public": true
+},
+{
+"code": "14-085-001",
+"name": "Osnovna škola Matije Petra Katančića",
+"place": "Valpovo",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-085-002",
+"name": "Osnovna škola Ladimirevci",
+"place": "Ladimirevci",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-325-001",
+"name": "OSNOVNA ŠKOLA VLADIMIRA NAZORA",
+"place": "Feričanci",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-326-001",
+"name": "Osnovna škola Josipa Jurja Strossmayera",
+"place": "Đurđenovac",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-328-001",
+"name": "OSNOVNA ŠKOLA HINKA JUHNA PODGORAČ",
+"place": "Podgorač",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-384-001",
+"name": "Osnovna škola \"Matija Gubec\"",
+"place": "Čeminac",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-384-002",
+"name": "Osnovna škola Jagodnjak",
+"place": "Jagodnjak",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-385-001",
+"name": "Osnovna škola Popovac",
+"place": "Popovac",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-387-001",
+"name": "Osnovna škola Kneževi Vinogradi",
+"place": "Kneževi Vinogradi",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-387-002",
+"name": "OSNOVNA ŠKOLA ZMAJEVAC",
+"place": "Zmajevac",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-388-001",
+"name": "Osnovna škola Bilje",
+"place": "Bilje",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-388-003",
+"name": "Osnovna škola Lug - Laskói Általános Iskola",
+"place": "Lug",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-389-001",
+"name": "Osnovna škola Draž",
+"place": "Draž",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-390-001",
+"name": "Osnovna škola Darda",
+"place": "Darda",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "21-114-154",
+"name": "Centar za rehabilitaciju Zagreb",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Ministarstvo za demografiju, obitelj, mlade i socijalnu skrb",
+"public": true
+},
+{
+"code": "21-114-155",
+"name": "OSNOVNA ŠKOLA JELKOVEC",
+"place": "Sesvete",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "01-020-005",
+"name": "Osnovna škola Ivan Benković",
+"place": "Dugo Selo",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-020-004",
+"name": "Osnovna škola Josipa Zorića",
+"place": "Dugo Selo",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "16-439-003",
+"name": "Osnovna škola Bršadin",
+"place": "Bršadin",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "15-081-012",
+"name": "Osnovna škola \"Meterize\"",
+"place": "Šibenik",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "Grad Šibenik",
+"public": true
+},
+{
+"code": "21-114-097",
+"name": "Prva katolička osnovna škola u Gradu Zagrebu",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "21-114-632",
+"name": "Međunarodna osnovna škola \"Vedri obzori\"",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "05-086-010",
+"name": "Katolička osnovna škola Svete Uršule",
+"place": "Varaždin",
+"county": "Varaždinska županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "21-114-111",
+"name": "Osnovna škola Iver",
+"place": "Sesvetski Kraljevec",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "06-038-001",
+"name": "Osnovna škola Koprivnički Ivanec",
+"place": "Kunovec",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Koprivničko-križevačka županija",
+"public": true
+},
+{
+"code": "21-114-156",
+"name": "Osnovna škola Kajzerica",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "14-022-007",
+"name": "Osnovna škola Satnica Đakovačka",
+"place": "Satnica Đakovačka",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "21-114-157",
+"name": "Osnovna škola Dominik Savio",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "21-114-112",
+"name": "Osnovna škola Ružičnjak",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "08-071-032",
+"name": "Katolička osnovna škola Josip Pavlišić",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "10-089-005",
+"name": "Katolička osnovna škola u Virovitici",
+"place": "Virovitica",
+"county": "Virovitičko-podravska županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "08-043-001",
+"name": "Osnovna škola Omišalj",
+"place": "Omišalj",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "02-178-003",
+"name": "Centar za odgoj i obrazovanje Krapinske Toplice",
+"place": "Krapinske Toplice",
+"county": "Krapinsko-zagorska županija",
+"type": "Osnovna škola",
+"founder": "Krapinsko-zagorska županija",
+"public": true
+},
+{
+"code": "01-087-007",
+"name": "Osnovna škola Novo Čiče",
+"place": "Novo Čiče",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Velika Gorica",
+"public": true
+},
+{
+"code": "21-114-113",
+"name": "Osnovna škola \"Lotrščak\"",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "08-044-001",
+"name": "Osnovna škola Malinska-Dubašnica",
+"place": "Malinska",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "Primorsko-goranska županija",
+"public": true
+},
+{
+"code": "17-126-032",
+"name": "Osnovna škola Žnjan-Pazdigrad",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "03-054-004",
+"name": "Katolička osnovna škola u Novskoj",
+"place": "Novska",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "17-030-003",
+"name": "Osnovna škola \"Josip Vergilij Perić\"",
+"place": "Imotski",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "01-160-001",
+"name": "Osnovna škola Vladimir Deščak",
+"place": "Sveta Nedelja",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "08-071-033",
+"name": "Centar za autizam Rijeka",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Obrazovanje odraslih, Osnovna škola, Posebna ustanova odgoja i obrazovanja",
+"founder": "Grad Rijeka",
+"public": true
+},
+{
+"code": "17-126-033",
+"name": "Centar za autizam Split",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "13-107-013",
+"name": "KATOLIČKA OSNOVNA ŠKOLA \"IVO MAŠINA\"",
+"place": "Zadar",
+"county": "Zadarska županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "03-195-002",
+"name": "Osnovna škola Zorke Sever",
+"place": "Popovača",
+"county": "Sisačko-moslavačka županija",
+"type": "Osnovna škola",
+"founder": "Sisačko-moslavačka županija",
+"public": true
+},
+{
+"code": "18-068-006",
+"name": "OSNOVNA ŠKOLA FINIDA",
+"place": "Poreč",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Poreč",
+"public": true
+},
+{
+"code": "01-073-005",
+"name": "Osnovna škola Nova škola",
+"place": "Samobor",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "17-125-004",
+"name": "Osnovna škola kralja Zvonimira",
+"place": "Solin",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "21-114-159",
+"name": "Osnovna škola Hrvatski Leskovac",
+"place": "Hrvatski Leskovac",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-160",
+"name": "Osnovna škola Ivanja Reka",
+"place": "Ivanja Reka",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "17-588-001",
+"name": "Osnovna škola Okruk u Okrugu Gornjem",
+"place": "Okrug Gornji",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "21-114-162",
+"name": "Osnovna škola Središće",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "Grad Zagreb",
+"public": true
+},
+{
+"code": "21-114-163",
+"name": "Privatna osnovna škola Linea",
+"place": "Sesvete",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "17-126-025",
+"name": "Privatna osnovna škola Harfa",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "19-018-010",
+"name": "Osnovna škola Montovjerna",
+"place": "Dubrovnik",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Grad Dubrovnik",
+"public": true
+},
+{
+"code": "14-060-023",
+"name": "Osnovna škola Cvjetno",
+"place": "Briješće",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Grad Osijek",
+"public": true
+},
+{
+"code": "21-114-164",
+"name": "Epoha, privatna osnovna škola s pravom javnosti",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "14-060-24",
+"name": "Waldorfska škola u Osijeku",
+"place": "Osijek",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "17-467-003",
+"name": "Privatna osnovna škola Aspalathos Međunarodna škola, osnovna škola s pravom javnosti",
+"place": "Dugopolje",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "06-037-006",
+"name": "OSNOVNA ŠKOLA \"PODOLICE\" KOPRIVNICA",
+"place": "Koprivnica",
+"county": "Koprivničko-križevačka županija",
+"type": "Osnovna škola",
+"founder": "Grad Koprivnica",
+"public": true
+},
+{
+"code": "21-114-165",
+"name": "OSNOVNA ŠKOLA CENTAR",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "21-114-100",
+"name": "Privatna klasična osnovna škola s pravom javnosti",
+"place": "Zagreb",
+"county": "Grad Zagreb županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "08-071-530",
+"name": "MEĐUNARODNA OSNOVNA ŠKOLA ADRIA",
+"place": "Rijeka",
+"county": "Primorsko-goranska županija",
+"type": "Osnovna škola",
+"founder": "",
+"public": false
+},
+{
+"code": "14-391-001",
+"name": "Osnovna škola Ivana Kukuljevića",
+"place": "Belišće",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-392-001",
+"name": "Osnovna škola Bratoljuba Klaića",
+"place": "Bizovac",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-393-001",
+"name": "Osnovna škola Vladimir Nazor",
+"place": "Čepin",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-393-002",
+"name": "Osnovna škola Miroslava Krleže",
+"place": "Čepin",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-394-001",
+"name": "Osnovna škola Ernestinovo",
+"place": "Ernestinovo",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-394-002",
+"name": "Osnovna škola Laslovo",
+"place": "Laslovo",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-395-001",
+"name": "Osnovna škola Gorjani",
+"place": "Gorjani",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-396-001",
+"name": "Osnovna škola Josip Kozarac",
+"place": "Josipovac Punitovački",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-397-001",
+"name": "Osnovna škola Drenje",
+"place": "Drenje",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-398-001",
+"name": "Osnovna škola Ivane Brlić Mažuranić",
+"place": "Koška",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-399-001",
+"name": "Osnovna škola Petrijevci",
+"place": "Petrijevci",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-401-001",
+"name": "Osnovna škola Josipa Jurja Strossmayera",
+"place": "Trnava",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-402-001",
+"name": "Osnovna škola Josipa Kozarca",
+"place": "Semeljci",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-403-001",
+"name": "Osnovna škola Ivana Brlić Mažuranić",
+"place": "Strizivojna",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-404-001",
+"name": "Osnovna škola Silvije Strahimir Kranjčević",
+"place": "Levanjska Varoš",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-405-001",
+"name": "Osnovna škola Milka Cepelića",
+"place": "Vuka",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-405-002",
+"name": "Osnovna škola Mate Lovraka",
+"place": "Vladislavci",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-406-001",
+"name": "OSNOVNA ŠKOLA IVANA TIŠOVA",
+"place": "Viškovci",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-407-001",
+"name": "Osnovna škola Matija Gubec",
+"place": "Magadenovac",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-411-001",
+"name": "Osnovna škola Dalj",
+"place": "Dalj",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-411-002",
+"name": "Osnovna škola Bijelo Brdo",
+"place": "Bijelo Brdo",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-412-001",
+"name": "Osnovna škola Antunovac",
+"place": "Antunovac",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "14-485-001",
+"name": "Osnovna škola Ante Starčevića Viljevo",
+"place": "Viljevo",
+"county": "Osječko-baranjska županija",
+"type": "Osnovna škola",
+"founder": "Osječko-baranjska županija",
+"public": true
+},
+{
+"code": "15-017-001",
+"name": "OSNOVNA ŠKOLA ANTUNA MIHANOVIĆA PETROPOLJSKOG",
+"place": "Drniš",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "Šibensko-kninska županija",
+"public": true
+},
+{
+"code": "15-036-001",
+"name": "OSNOVNA ŠKOLA DOMOVINSKE ZAHVALNOSTI",
+"place": "Knin",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "Šibensko-kninska županija",
+"public": true
+},
+{
+"code": "15-036-002",
+"name": "OSNOVNA ŠKOLA DR. FRANJE TUĐMANA",
+"place": "Knin",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "Šibensko-kninska županija",
+"public": true
+},
+{
+"code": "15-081-001",
+"name": "OSNOVNA ŠKOLA FAUSTA VRANČIĆA",
+"place": "Šibenik",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "Grad Šibenik",
+"public": true
+},
+{
+"code": "15-081-002",
+"name": "Osnovna škola Petra Krešimira IV.",
+"place": "Šibenik",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "Grad Šibenik",
+"public": true
+},
+{
+"code": "15-081-003",
+"name": "Osnovna škola JURJA ŠIŽGORIĆA",
+"place": "Šibenik",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "Grad Šibenik",
+"public": true
+},
+{
+"code": "15-081-004",
+"name": "Osnovna škola JURJA DALMATINCA ŠIBENIK",
+"place": "Šibenik",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Grad Šibenik",
+"public": true
+},
+{
+"code": "15-081-005",
+"name": "Osnovna škola Tina Ujevića",
+"place": "Šibenik",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "Grad Šibenik",
+"public": true
+},
+{
+"code": "15-081-006",
+"name": "OSNOVNA ŠKOLA VIDICI",
+"place": "Šibenik",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "Grad Šibenik",
+"public": true
+},
+{
+"code": "15-081-007",
+"name": "Osnovna škola Vrpolje",
+"place": "Vrpolje",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "Grad Šibenik",
+"public": true
+},
+{
+"code": "15-081-009",
+"name": "Osnovna škola Brodarica",
+"place": "BRODARICA",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "Grad Šibenik",
+"public": true
+},
+{
+"code": "15-376-001",
+"name": "Osnovna škola Kistanje",
+"place": "Kistanje",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "Šibensko-kninska županija",
+"public": true
+},
+{
+"code": "15-413-001",
+"name": "OSNOVNA ŠKOLA PRIMOŠTEN",
+"place": "Primošten",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "Šibensko-kninska županija",
+"public": true
+},
+{
+"code": "15-413-002",
+"name": "OSNOVNA ŠKOLA ROGOZNICA",
+"place": "Rogoznica",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "Šibensko-kninska županija",
+"public": true
+},
+{
+"code": "15-414-001",
+"name": "OSNOVNA ŠKOLA SKRADIN",
+"place": "Skradin",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "Šibensko-kninska županija",
+"public": true
+},
+{
+"code": "15-415-001",
+"name": "OSNOVNA ŠKOLA VJEKOSLAVA KALEBA",
+"place": "Tisno",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Šibensko-kninska županija",
+"public": true
+},
+{
+"code": "15-415-002",
+"name": "Osnovna škola MURTERSKI ŠKOJI",
+"place": "Murter",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "Šibensko-kninska županija",
+"public": true
+},
+{
+"code": "15-415-003",
+"name": "OSNOVNA ŠKOLA PIROVAC",
+"place": "Pirovac",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "Šibensko-kninska županija",
+"public": true
+},
+{
+"code": "15-416-001",
+"name": "OSNOVNA ŠKOLA VODICE",
+"place": "Vodice",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "Šibensko-kninska županija",
+"public": true
+},
+{
+"code": "15-416-002",
+"name": "OSNOVNA ŠKOLA ČISTA VELIKA",
+"place": "Čista Velika",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "Šibensko-kninska županija",
+"public": true
+},
+{
+"code": "15-419-001",
+"name": "Osnovna škola Jakova Gotovca",
+"place": "Unešić",
+"county": "Šibensko-kninska županija",
+"type": "Osnovna škola",
+"founder": "Šibensko-kninska županija",
+"public": true
+},
+{
+"code": "16-088-001",
+"name": "Osnovna škola Bartola Kašića",
+"place": "Vinkovci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Grad Vinkovci",
+"public": true
+},
+{
+"code": "16-088-002",
+"name": "OSNOVNA ŠKOLA JOSIPA KOZARCA, Vinkovci",
+"place": "Vinkovci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Grad Vinkovci",
+"public": true
+},
+{
+"code": "16-088-003",
+"name": "Osnovna škola Ivana Gorana Kovačića",
+"place": "Vinkovci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Grad Vinkovci",
+"public": true
+},
+{
+"code": "16-088-004",
+"name": "Osnovna škola Vladimira Nazora",
+"place": "Vinkovci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Grad Vinkovci",
+"public": true
+},
+{
+"code": "16-088-005",
+"name": "Osnovna škola Ivana Mažuranića",
+"place": "Vinkovci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Grad Vinkovci",
+"public": true
+},
+{
+"code": "16-088-006",
+"name": "Osnovna škola Nikole Tesle",
+"place": "Mirkovci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Grad Vinkovci",
+"public": true
+},
+{
+"code": "16-088-007",
+"name": "Osnovna škola Antun Gustav Matoš",
+"place": "Vinkovci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Grad Vinkovci",
+"public": true
+},
+{
+"code": "16-096-002",
+"name": "Osnovna škola Dragutina Tadijanovića",
+"place": "Vukovar",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Grad Vukovar",
+"public": true
+},
+{
+"code": "16-096-004",
+"name": "Osnovna škola Nikole Andrića",
+"place": "Vukovar",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Grad Vukovar",
+"public": true
+},
+{
+"code": "16-096-005",
+"name": "OSNOVNA ŠKOLA MITNICA",
+"place": "Vukovar",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Grad Vukovar",
+"public": true
+},
+{
+"code": "16-096-006",
+"name": "Osnovna škola Josipa Matoša",
+"place": "Vukovar",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Grad Vukovar",
+"public": true
+},
+{
+"code": "16-096-008",
+"name": "OSNOVNA ŠKOLA ANTUNA BAUERA",
+"place": "Vukovar",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Grad Vukovar",
+"public": true
+},
+{
+"code": "16-111-001",
+"name": "Osnovna škola Ivana Kozarca Županja",
+"place": "Županja",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-111-002",
+"name": "Osnovna škola Mate Lovraka",
+"place": "Županja",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-111-004",
+"name": "Osnovna škola Ivana Martinovića",
+"place": "Štitar",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-420-001",
+"name": "Osnovna škola fra Bernardina Tome Leakovića",
+"place": "Bošnjaci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-421-001",
+"name": "Osnovna škola Siniše Glavaševića",
+"place": "Vukovar",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Grad Vukovar",
+"public": true
+},
+{
+"code": "16-421-002",
+"name": "Osnovna škola Blage Zadre",
+"place": "Vukovar",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Grad Vukovar",
+"public": true
+},
+{
+"code": "16-421-003",
+"name": "Osnovna škola BOROVO",
+"place": "Borovo",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-422-001",
+"name": "Osnovna škola Matija Antun Reljković",
+"place": "Cerna",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-423-001",
+"name": "Osnovna škola GRADIŠTE",
+"place": "Gradište",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-424-001",
+"name": "Osnovna škola Antun i Stjepan Radić",
+"place": "Gunja",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-425-001",
+"name": "Osnovna škola Franjo Hanaman",
+"place": "Drenovci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-425-002",
+"name": "Osnovna škola Ivan Filipović",
+"place": "Račinovci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-425-003",
+"name": "Osnovna škola Davorin Trstenjak",
+"place": "Posavski Podgajci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-426-001",
+"name": "Osnovna škola Julija Benešića",
+"place": "Ilok",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-426-002",
+"name": "Osnovna škola dr. Franjo Tuđman",
+"place": "Šarengrad",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-427-001",
+"name": "Osnovna škola August Cesarec",
+"place": "Ivankovo",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-427-002",
+"name": "Osnovna škola Ane Katarine Zrinski",
+"place": "Retkovci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-428-001",
+"name": "Osnovna škola Matija Gubec",
+"place": "Jarmina",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-429-001",
+"name": "Osnovna škola Lovas",
+"place": "Lovas",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-430-001",
+"name": "Osnovna škola Antun Gustav Matoš Tovarnik",
+"place": "Tovarnik",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-431-001",
+"name": "OSNOVNA ŠKOLA ZRINSKIH NUŠTAR",
+"place": "Nuštar",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-432-001",
+"name": "Osnovna škola Ivan Kozarac",
+"place": "Nijemci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-432-002",
+"name": "Osnovna škola LIPOVAC",
+"place": "Lipovac",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-432-003",
+"name": "Osnovna škola Ilača-Banovci",
+"place": "Ilača",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-433-001",
+"name": "Osnovna škola Josipa Lovretića",
+"place": "Otok",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-433-002",
+"name": "Osnovna škola Vladimir Nazor",
+"place": "Komletinci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-433-003",
+"name": "Osnovna škola Stjepana Antolovića",
+"place": "Privlaka",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-435-001",
+"name": "Osnovna škola ČAKOVCI",
+"place": "Čakovci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-436-001",
+"name": "Osnovna škola STARI JANKOVCI",
+"place": "Stari Jankovci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-436-003",
+"name": "Osnovna škola Slakovci",
+"place": "Slakovci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-437-001",
+"name": "Osnovna škola Stjepana Cvrkovića",
+"place": "Stari Mikanovci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-437-002",
+"name": "Osnovna škola Vođinci",
+"place": "Vođinci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-438-001",
+"name": "OSNOVNA ŠKOLA KOROG, KOROG",
+"place": "Korog",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-438-002",
+"name": "Osnovna škola MARKUŠICA",
+"place": "Markušica",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-439-001",
+"name": "Osnovna škola TRPINJA",
+"place": "Trpinja",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-439-002",
+"name": "Osnovna škola Bobota",
+"place": "Bobota",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-440-001",
+"name": "Osnovna škola Mare Švel-Gamiršek",
+"place": "Vrbanja",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-440-002",
+"name": "Osnovna škola Josip Kozarac Soljani",
+"place": "Soljani",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-441-001",
+"name": "Osnovna škola Ivane Brlić-Mažuranić Rokovci - Andrijaševci",
+"place": "Andrijaševci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-442-001",
+"name": "Osnovna škola Mijat Stojanović",
+"place": "Babina Greda",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "16-612-001",
+"name": "Osnovna škola NEGOSLAVCI",
+"place": "Negoslavci",
+"county": "Vukovarsko-srijemska županija",
+"type": "Osnovna škola",
+"founder": "Vukovarsko-srijemska županija",
+"public": true
+},
+{
+"code": "17-029-001",
+"name": "Osnovna škola HVAR",
+"place": "Hvar",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-030-001",
+"name": "Osnovna škola STJEPAN RADIĆ",
+"place": "Imotski",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-047-001",
+"name": "OSNOVNA ŠKOLA o.PETRA PERICE MAKARSKA",
+"place": "Makarska",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Makarska",
+"public": true
+},
+{
+"code": "17-047-002",
+"name": "Osnovna škola STJEPANA IVIČEVIĆA",
+"place": "Makarska",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Makarska",
+"public": true
+},
+{
+"code": "17-593-001",
+"name": "Osnovna škola Tučepi",
+"place": "Tučepi",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-057-001",
+"name": "OSNOVNA ŠKOLA JOSIP PUPAČIĆ",
+"place": "Omiš",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-057-002",
+"name": "OSNOVNA ŠKOLA 1. LISTOPADA 1942.",
+"place": "Čisla",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-057-003",
+"name": "OSNOVNA ŠKOLA Gornja Poljica",
+"place": "Srijane",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-075-001",
+"name": "Osnovna škola Ivana Lovrića",
+"place": "Sinj",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-075-002",
+"name": "OSNOVNA ŠKOLA MARKA MARULIĆA",
+"place": "Sinj",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-075-003",
+"name": "Osnovna škola Fra Pavla Vučkovića",
+"place": "Sinj",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-075-004",
+"name": "Osnovna škola Stjepan Radić",
+"place": "Tijarica",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-083-001",
+"name": "Osnovna škola Majstora Radovana",
+"place": "Trogir",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-083-002",
+"name": "Osnovna škola Petar Berislavić",
+"place": "Trogir",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-090-001",
+"name": "OSNOVNA ŠKOLA VIS",
+"place": "Vis",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-093-001",
+"name": "Osnovna škola VRGORAC",
+"place": "Vrgorac",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-124-001",
+"name": "Osnovna škola kneza Mislava",
+"place": "Kaštel Sućurac",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-124-002",
+"name": "OSNOVNA ŠKOLA KNEZA TRPIMIRA",
+"place": "Kaštel Gomilica",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-124-003",
+"name": "Osnovna škola OSTROG",
+"place": "Kaštel Lukšić",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-124-004",
+"name": "OSNOVNA ŠKOLA BIJAĆI",
+"place": "Kaštel Novi",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-124-005",
+"name": "Osnovna škola prof. Filipa Lukasa",
+"place": "Kaštel Stari",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-125-001",
+"name": "OSNOVNA ŠKOLA DON LOVRE KATIĆA",
+"place": "Solin",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-125-002",
+"name": "OSNOVNA ŠKOLA VJEKOSLAVA PARAĆA",
+"place": "Solin",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-126-001",
+"name": "OSNOVNA ŠKOLA MARJAN",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-002",
+"name": "Osnovna škola DOBRI",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-003",
+"name": "Osnovna škola ˝Bol˝",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-004",
+"name": "Osnovna škola SKALICE",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-005",
+"name": "OSNOVNA ŠKOLA MANUŠ-SPLIT",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-006",
+"name": "Osnovna škola Spinut",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-007",
+"name": "Osnovna škola Pojišan",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-008",
+"name": "OSNOVNA ŠKOLA LUČAC",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-009",
+"name": "Osnovna škola Brda",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-010",
+"name": "OSNOVNA ŠKOLA MEJE",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-011",
+"name": "Osnovna škola Trstenik",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-012",
+"name": "Osnovna škola BLATINE-ŠKRAPE",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-013",
+"name": "OSNOVNA ŠKOLA PLOKITE",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-014",
+"name": "Osnovna škola Kman-Kocunar",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-015",
+"name": "OSNOVNA ŠKOLA SPLIT 3",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-016",
+"name": "Osnovna škola Ravne njive - Neslanovac Split",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-017",
+"name": "OSNOVNA ŠKOLA SUĆIDAR",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-018",
+"name": "Osnovna škola Mertojak",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-019",
+"name": "Osnovna škola \"Lokve-Gripe\"",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-020",
+"name": "OSNOVNA ŠKOLA MEJAŠI",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-021",
+"name": "OSNOVNA ŠKOLA PUJANKI",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-022",
+"name": "Osnovna škola ŽRNOVNICA",
+"place": "Žrnovnica",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-023",
+"name": "OSNOVNA ŠKOLA SRINJINE",
+"place": "Srinjine",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-024",
+"name": "OSNOVNA ŠKOLA VISOKA",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-027",
+"name": "OSNOVNA ŠKOLA STOBREČ",
+"place": "Stobreč",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-028",
+"name": "OSNOVNA ŠKOLA KAMEN-ŠINE",
+"place": "Split",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-126-029",
+"name": "OSNOVNA ŠKOLA SLATINE",
+"place": "Slatine",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Grad Split",
+"public": true
+},
+{
+"code": "17-382-001",
+"name": "Osnovna škola Kralja Zvonimira",
+"place": "Seget Donji",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-443-001",
+"name": "OSNOVNA ŠKOLA \"Strožanac\"",
+"place": "Strožanac - Podstrana",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-444-001",
+"name": "Osnovna škola BOL",
+"place": "Bol",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-445-001",
+"name": "Osnovna škola PUČIŠĆA",
+"place": "Pučišća",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-446-001",
+"name": "Osnovna škola Vladimira Nazora",
+"place": "Postira",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-447-001",
+"name": "Osnovna škola SELCA",
+"place": "Selca",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-448-001",
+"name": "Osnovna škola Kneza Branimira",
+"place": "Donji Muć",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-448-002",
+"name": "Osnovna škola Neorić-Sutina",
+"place": "Neorić",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-448-003",
+"name": "Osnovna škola BRAĆE RADIĆA",
+"place": "Bračević",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-449-001",
+"name": "OSNOVNA ŠKOLA JESENICE",
+"place": "Dugi Rat",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-450-001",
+"name": "OSNOVNA ŠKOLA GROHOTE",
+"place": "Grohote",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-451-001",
+"name": "OSNOVNA ŠKOLA DINKA ŠIMUNOVIĆA",
+"place": "Hrvace",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-452-001",
+"name": "Osnovna škola TIN UJEVIĆ",
+"place": "Krivodol",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-453-001",
+"name": "Osnovna škola Ivana Gorana Kovačića",
+"place": "Cista Velika",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-453-002",
+"name": "Osnovna škola Josipa Jovića",
+"place": "Aržano",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-454-001",
+"name": "OSNOVNA ŠKOLA SILVIJA STRAHIMIRA KRANJČEVIĆA LOVREĆ",
+"place": "Lovreć",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-454-002",
+"name": "Osnovna škola STUDENCI",
+"place": "Studenci",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-455-001",
+"name": "OSNOVNA ŠKOLA IVAN LEKO",
+"place": "Donji Proložac",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-456-002",
+"name": "OSNOVNA ŠKOLA RUNOVIĆ",
+"place": "Runović",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-457-001",
+"name": "Osnovna škola JELSA",
+"place": "Jelsa",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-458-001",
+"name": "Osnovna škola ANTE ANĐELINOVIĆ",
+"place": "Sućuraj",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-459-003",
+"name": "Osnovna škola Primorski Dolac",
+"place": "Primorski Dolac",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-460-001",
+"name": "Osnovna škola don Mihovila Pavlinovića",
+"place": "Podgora",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-461-001",
+"name": "Osnovna škola GRADAC",
+"place": "Gradac",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-462-001",
+"name": "Osnovna škola dr. Franje Tuđmana Brela",
+"place": "Brela",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-463-001",
+"name": "OSNOVNA ŠKOLA BARIŠE GRANIĆA MEŠTRA",
+"place": "Baška Voda",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-464-001",
+"name": "OSNOVNA ŠKOLA IVAN DUKNOVIĆ",
+"place": "Marina",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-465-001",
+"name": "Osnovna škola KAMEŠNICA",
+"place": "Otok",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-465-002",
+"name": "OSNOVNA ŠKOLA IVANA MAŽURANIĆA",
+"place": "Obrovac Sinjski",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-466-001",
+"name": "Osnovna škola Ante Starčevića",
+"place": "Dicmo",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-467-001",
+"name": "Osnovna škola Petra Kružića Klis",
+"place": "Klis",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-467-002",
+"name": "Osnovna škola DUGOPOLJE",
+"place": "Dugopolje",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-468-001",
+"name": "Osnovna škola Supetar",
+"place": "Supetar",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-469-001",
+"name": "Osnovna škola MILNA",
+"place": "Milna",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-470-001",
+"name": "Osnovna škola PETRA HEKTOROVIĆA Stari Grad",
+"place": "Stari Grad",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-471-001",
+"name": "OSNOVNA ŠKOLA DR. FRA KARLO BALIĆ",
+"place": "Šestanovac",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-473-001",
+"name": "Osnovna škola Trilj",
+"place": "Trilj",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-474-001",
+"name": "OSNOVNA ŠKOLA MILANA BEGOVIĆA",
+"place": "Vrlika",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-475-001",
+"name": "Osnovna škola Komiža",
+"place": "Komiža",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-477-001",
+"name": "Osnovna škola Zagvozd",
+"place": "Zagvozd",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "17-528-001",
+"name": "OSNOVNA ŠKOLA ZMIJAVCI",
+"place": "Zmijavci",
+"county": "Splitsko-dalmatinska županija",
+"type": "Osnovna škola",
+"founder": "Splitsko-dalmatinska županija",
+"public": true
+},
+{
+"code": "18-006-001",
+"name": "Osnovna škola - Scuola elementare Mate Balote Buje - Buie",
+"place": "Buje",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-006-002",
+"name": "Talijanska osnovna škola Scuola elementare italiana \"Edmondo De Amicis\" Buje Buie",
+"place": "Buje",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-007-001",
+"name": "Osnovna škola \"VAZMOSLAV GRŽALJA\"",
+"place": "Buzet",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-044-001",
+"name": "Osnovna škola Matije Vlačića",
+"place": "Labin",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Labin",
+"public": true
+},
+{
+"code": "18-044-002",
+"name": "Osnovna škola Ivo Lola Ribar Labin",
+"place": "Labin",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Labin",
+"public": true
+},
+{
+"code": "18-044-003",
+"name": "Centar Liče Faraguna",
+"place": "Labin",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Labin",
+"public": true
+},
+{
+"code": "18-065-001",
+"name": "OSNOVNA ŠKOLA VLADIMIRA NAZORA PAZIN",
+"place": "Pazin",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Pazin",
+"public": true
+},
+{
+"code": "18-068-001",
+"name": "OSNOVNA ŠKOLA POREČ",
+"place": "Poreč",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Poreč",
+"public": true
+},
+{
+"code": "18-068-002",
+"name": "Osnovna škola Tar - Vabriga - Scuola elementare Torre - Abrega",
+"place": "Tar",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-068-004",
+"name": "Talijanska osnovna škola - Scuola elementare italiana Bernardo Parentin Poreč - Parenzo",
+"place": "Poreč",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Poreč",
+"public": true
+},
+{
+"code": "18-069-001",
+"name": "OSNOVNA ŠKOLA ŠIJANA PULA",
+"place": "Pula",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Pula",
+"public": true
+},
+{
+"code": "18-069-002",
+"name": "Osnovna škola Stoja",
+"place": "Pula",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Pula",
+"public": true
+},
+{
+"code": "18-069-003",
+"name": "Osnovna škola Centar",
+"place": "Pula",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Pula",
+"public": true
+},
+{
+"code": "18-069-004",
+"name": "Osnovna škola -  Scuola elementare Giuseppina Martinuzzi Pula-Pola",
+"place": "Pula",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Pula",
+"public": true
+},
+{
+"code": "18-069-005",
+"name": "OSNOVNA ŠKOLA TONE PERUŠKA PULA",
+"place": "Pula",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Pula",
+"public": true
+},
+{
+"code": "18-069-006",
+"name": "OSNOVNA ŠKOLA KAŠTANJER PULA",
+"place": "Pula",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Pula",
+"public": true
+},
+{
+"code": "18-069-007",
+"name": "OSNOVNA ŠKOLA VIDIKOVAC",
+"place": "Pula",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Pula",
+"public": true
+},
+{
+"code": "18-069-008",
+"name": "Osnovna škola Monte Zaro",
+"place": "Pula",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Pula",
+"public": true
+},
+{
+"code": "18-069-009",
+"name": "OSNOVNA ŠKOLA VERUDA PULA",
+"place": "Pula",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Pula",
+"public": true
+},
+{
+"code": "18-069-010",
+"name": "Osnovna škola Veli Vrh Pula",
+"place": "Pula",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Pula",
+"public": true
+},
+{
+"code": "18-069-011",
+"name": "Škola za odgoj i obrazovanje - Pula",
+"place": "Pula",
+"county": "Istarska županija",
+"type": "Osnovna škola, Posebna ustanova odgoja i obrazovanja, Srednja škola",
+"founder": "Grad Pula",
+"public": true
+},
+{
+"code": "18-072-001",
+"name": "Talijanska osnovna škola - Scuola elementare italiana \"Bernardo Benussi\" Rovinj - Rovigno",
+"place": "Rovinj",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Rovinj",
+"public": true
+},
+{
+"code": "18-072-002",
+"name": "Osnovna škola Vladimira Nazora - Scuola elementare \"Vladimir Nazor\"",
+"place": "Rovinj",
+"county": "Istarska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Grad Rovinj",
+"public": true
+},
+{
+"code": "18-072-003",
+"name": "Osnovna škola Jurja Dobrile Rovinj",
+"place": "Rovinj",
+"county": "Istarska županija",
+"type": "Osnovna škola, Posebna ustanova odgoja i obrazovanja",
+"founder": "Grad Rovinj",
+"public": true
+},
+{
+"code": "18-479-001",
+"name": "Osnovna škola Jure Filipovića Barban",
+"place": "Barban",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-484-001",
+"name": "OSNOVNA ŠKOLA PETRA STUDENCA Kanfanar",
+"place": "Kanfanar",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-485-001",
+"name": "Osnovna škola Ivan Goran Kovačić Čepić",
+"place": "Purgarija Čepić",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-485-002",
+"name": "Osnovna škola Vladimira Nazora Potpićan",
+"place": "Potpićan",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-486-001",
+"name": "Osnovna škola Ivana Batelića - Raša",
+"place": "Raša",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-490-001",
+"name": "Osnovna škola Joakima Rakovca",
+"place": "Sveti Lovreč Pazenatički",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-491-001",
+"name": "Osnovna škola Marčana",
+"place": "Marčana",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-491-002",
+"name": "OSNOVNA ŠKOLA VLADIMIRA NAZORA - KRNICA",
+"place": "Krnica",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-491-003",
+"name": "Osnovna škola Divšići",
+"place": "Divšići",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-492-001",
+"name": "Osnovna škola dr Mate Demarina",
+"place": "Medulin",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-494-001",
+"name": "Osnovna škola Vitomir Širola - Pajo",
+"place": "Nedešćina",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-495-001",
+"name": "Osnovna škola - scuola elementare RIVARELA",
+"place": "Novigrad",
+"county": "Istarska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-495-002",
+"name": "Talijanska osnovna škola, Scuola elementare italiana, Novigrad - Cittanova",
+"place": "Novigrad",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-496-001",
+"name": "Osnovna škola - Scuola elementare Milana Šorga Oprtalj - Portole",
+"place": "Oprtalj",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-499-001",
+"name": "OSNOVNA ŠKOLA SVETVINČENAT",
+"place": "Svetvinčenat",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-499-002",
+"name": "Osnovna škola JURŠIĆI",
+"place": "Juršići",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-501-001",
+"name": "Osnovna škola Marije i Line",
+"place": "Umag",
+"county": "Istarska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Grad Umag",
+"public": true
+},
+{
+"code": "18-501-002",
+"name": "Talijanska osnovna škola Galileo Galilei",
+"place": "Umag",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Grad Umag",
+"public": true
+},
+{
+"code": "18-502-001",
+"name": "OSNOVNA ŠKOLA JOŽE ŠURANA VIŠNJAN",
+"place": "Višnjan",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-504-001",
+"name": "OSNOVNA ŠKOLA VODNJAN - SCUOLA ELEMENTARE DIGNANO",
+"place": "Vodnjan",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-504-002",
+"name": "OSNOVNA ŠKOLA FAŽANA",
+"place": "Fažana",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-505-001",
+"name": "Osnovna škola Vladimira Nazora",
+"place": "Vrsar",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "18-506-001",
+"name": "Osnovna škola Vladimira Gortana",
+"place": "Žminj",
+"county": "Istarska županija",
+"type": "Osnovna škola",
+"founder": "Istarska županija",
+"public": true
+},
+{
+"code": "19-018-001",
+"name": "Osnovna škola Marina Getaldića",
+"place": "Dubrovnik",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Grad Dubrovnik",
+"public": true
+},
+{
+"code": "19-018-002",
+"name": "Osnovna škola Lapad",
+"place": "Dubrovnik",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Grad Dubrovnik",
+"public": true
+},
+{
+"code": "19-018-003",
+"name": "Osnovna škola MARINA DRŽIĆA",
+"place": "Dubrovnik",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Grad Dubrovnik",
+"public": true
+},
+{
+"code": "19-018-004",
+"name": "OSNOVNA ŠKOLA IVANA GUNDULIĆA",
+"place": "Dubrovnik",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Grad Dubrovnik",
+"public": true
+},
+{
+"code": "19-018-005",
+"name": "OSNOVNA ŠKOLA ANTUNA MASLE - ORAŠAC",
+"place": "Orašac",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Grad Dubrovnik",
+"public": true
+},
+{
+"code": "19-018-009",
+"name": "Osnovna škola Mokošica, Dubrovnik",
+"place": "Mokošica",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Grad Dubrovnik",
+"public": true
+},
+{
+"code": "19-038-001",
+"name": "Osnovna škola PETRA KANAVELIĆA",
+"place": "Korčula",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-038-002",
+"name": "Osnovna škola ANTE CURAĆ-PINJAC",
+"place": "Žrnovo",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-045-001",
+"name": "OSNOVNA ŠKOLA \"BRAĆA GLUMAC\"",
+"place": "Lastovo",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-049-001",
+"name": "OSNOVNA ŠKOLA STJEPANA RADIĆA",
+"place": "Metković",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-049-002",
+"name": "Osnovna škola Don Mihovila Pavlinovića",
+"place": "Metković",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-112-001",
+"name": "OSNOVNA ŠKOLA \"VLADIMIR NAZOR\"",
+"place": "Ploče",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-112-002",
+"name": "Osnovna škola FRA ANTE GNJEČA",
+"place": "Staševica",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-112-004",
+"name": "OSNOVNA ŠKOLA IVO DUGANDŽIĆ-MIŠIĆ",
+"place": "Komin",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-507-001",
+"name": "OSNOVNA ŠKOLA CAVTAT",
+"place": "Cavtat",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-507-002",
+"name": "OSNOVNA ŠKOLA GRUDA",
+"place": "Gruda",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "01-032-001",
+"name": "OSNOVNA ŠKOLA ĐURE DEŽELIĆA IVANIĆ GRAD",
+"place": "Ivanić-Grad",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola, Posebna ustanova odgoja i obrazovanja",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-032-002",
+"name": "Osnovna škola Stjepana Basaričeka",
+"place": "Ivanić-Grad",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-032-003",
+"name": "OSNOVNA ŠKOLA JOSIPA BADALIĆA GRABERJE IVANIĆKO",
+"place": "Graberje Ivanićko",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-032-005",
+"name": "Osnovna škola Posavski Bregi",
+"place": "Posavski Bregi",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "01-033-001",
+"name": "Osnovna škola Ljubo Babić",
+"place": "Jastrebarsko",
+"county": "Zagrebačka županija",
+"type": "Osnovna škola",
+"founder": "Zagrebačka županija",
+"public": true
+},
+{
+"code": "19-508-001",
+"name": "Osnovna škola STON",
+"place": "Ston",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-508-002",
+"name": "Osnovna škola Janjina",
+"place": "Janjina",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-509-001",
+"name": "OSNOVNA ŠKOLA OREBIĆ",
+"place": "Orebić",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-509-003",
+"name": "Osnovna škola Kuna",
+"place": "Kuna Pelješka",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-510-001",
+"name": "Osnovna škola Mljet",
+"place": "Babino Polje",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-511-001",
+"name": "OSNOVNA ŠKOLA BLATO",
+"place": "Blato",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-512-001",
+"name": "OSNOVNA ŠKOLA OPUZEN",
+"place": "Opuzen",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-513-001",
+"name": "OSNOVNA ŠKOLA KULA NORINSKA",
+"place": "Kula Norinska",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-514-001",
+"name": "Osnovna škola Otrići-Dubrave",
+"place": "Otrić-Seoci",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-517-001",
+"name": "Osnovna škola Vela Luka",
+"place": "Vela Luka",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola, Umjetnička škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-518-001",
+"name": "OSNOVNA ŠKOLA SMOKVICA",
+"place": "Smokvica",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-589-001",
+"name": "OSNOVNA ŠKOLA SLANO",
+"place": "Slano",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-589-002",
+"name": "OSNOVNA ŠKOLA PRIMORJE",
+"place": "Smokovljani",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-601-001",
+"name": "OSNOVNA ŠKOLA TRPANJ",
+"place": "Trpanj",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "19-602-001",
+"name": "Osnovna škola ŽUPA DUBROVAČKA",
+"place": "Mlini",
+"county": "Dubrovačko-neretvanska županija",
+"type": "Osnovna škola",
+"founder": "Dubrovačko-neretvanska županija",
+"public": true
+},
+{
+"code": "20-010-001",
+"name": "I. OSNOVNA ŠKOLA ČAKOVEC",
+"place": "Čakovec",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Grad Čakovec",
+"public": true
+},
+{
+"code": "20-010-002",
+"name": "II. OSNOVNA ŠKOLA ČAKOVEC",
+"place": "Čakovec",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Grad Čakovec",
+"public": true
+},
+{
+"code": "20-010-003",
+"name": "III. OSNOVNA  ŠKOLA  ČAKOVEC",
+"place": "Čakovec",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Grad Čakovec",
+"public": true
+},
+{
+"code": "20-010-004",
+"name": "OSNOVNA ŠKOLA VLADIMIRA NAZORA",
+"place": "Pribislavec",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-010-006",
+"name": "CENTAR ZA ODGOJ I OBRAZOVANJE ČAKOVEC",
+"place": "Čakovec",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Grad Čakovec",
+"public": true
+},
+{
+"code": "20-010-009",
+"name": "OSNOVNA ŠKOLA IVANOVEC",
+"place": "Ivanovec",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Grad Čakovec",
+"public": true
+},
+{
+"code": "20-010-010",
+"name": "OSNOVNA ŠKOLA KURŠANEC",
+"place": "Kuršanec",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Grad Čakovec",
+"public": true
+},
+{
+"code": "20-504-001",
+"name": "OSNOVNA ŠKOLA Dr. VINKA ŽGANCA VRATIŠINEC",
+"place": "Vratišinec",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-519-001",
+"name": "OSNOVNA ŠKOLA BELICA",
+"place": "Belica",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-520-001",
+"name": "OSNOVNA ŠKOLA DONJA DUBRAVA",
+"place": "Donja Dubrava",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-521-001",
+"name": "Osnovna škola Hodošan",
+"place": "Hodošan",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-522-001",
+"name": "OSNOVNA ŠKOLA GORIČAN",
+"place": "Goričan",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-523-001",
+"name": "OSNOVNA ŠKOLA TOMAŠA GORIČANCA MALA SUBOTICA",
+"place": "Mala Subotica",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-523-002",
+"name": "OSNOVNA ŠKOLA OREHOVICA",
+"place": "Orehovica",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-524-001",
+"name": "OSNOVNA ŠKOLA MURSKO SREDIŠĆE",
+"place": "Mursko Središće",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-525-001",
+"name": "OSNOVNA ŠKOLA NEDELIŠĆE",
+"place": "Nedelišće",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-525-002",
+"name": "Osnovna škola Dr. Ivana Novaka Macinec",
+"place": "Macinec",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+},
+{
+"code": "20-526-001",
+"name": "OSNOVNA ŠKOLA PODTUREN",
+"place": "Podturen",
+"county": "Međimurska županija",
+"type": "Osnovna škola",
+"founder": "Međimurska županija",
+"public": true
+}
+]
+}
