@@ -1,12 +1,23 @@
-import os, re, html, urllib.request
-OUT = "fetch/out/disc11"; os.makedirs(OUT, exist_ok=True)
+import os, urllib.request, urllib.parse, json
+OUT = "fetch/out/nrw"; os.makedirs(OUT, exist_ok=True)
 log = open(f"{OUT}/log.txt", "w")
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
-for name, u in [("tab", "https://www.regionalstatistik.de/genesis/online?operation=table&code=21111-01-03-4&bypass=true&levelindex=0&levelid="),
-                ("vars", "https://www.regionalstatistik.de/genesis/online?operation=statistic&levelindex=0&levelid=&code=21111&option=variables"),
-                ("find2", "https://www.regionalstatistik.de/genesis/online?operation=find&suchanweisung_language=de&query=Privatschulen")]:
+B = "https://www.landesdatenbank.nrw.de/ldbnrwws/rest/2020/"
+def go(name, path, params, post=False):
+    q = urllib.parse.urlencode(params)
     try:
-        b = urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=120).read().decode("utf-8", "replace")
-        t = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", re.sub(r"<script.*?</script>|<style.*?</style>", "", b, flags=re.S))))
-        i = t.find("Startseite"); log.write(f"== {name} OK\n{t[i:i+5000]}\n\n")
-    except Exception as e: log.write(f"== {name} ERR {e}\n")
+        if post:
+            req = urllib.request.Request(B + path, data=q.encode(), headers=dict(UA, **{"Content-Type": "application/x-www-form-urlencoded"}))
+        else:
+            req = urllib.request.Request(B + path + "?" + q, headers=UA)
+        b = urllib.request.urlopen(req, timeout=300).read()
+        open(f"{OUT}/{name}", "wb").write(b)
+        log.write(f"== {name} OK {len(b)}\n{b[:1500].decode('latin-1')}\n\n")
+    except Exception as e:
+        log.write(f"== {name} ERR {e} {getattr(e, 'read', lambda: b'')()[:500]}\n")
+cred = {"username": "GAST", "password": "GAST", "language": "de"}
+go("meta.json", "metadata/table", dict(cred, name="21111-0710i"))
+for rv in ("KREISE", "GEMEIN"):
+    p = dict(cred, name="21111-0710i", area="all", format="ffcsv", compress="false", startyear="2025", regionalvariable=rv, regionalkey="05*")
+    go(f"t_{rv}_get.csv", "data/tablefile", p)
+    go(f"t_{rv}_post.csv", "data/tablefile", p, post=True)
