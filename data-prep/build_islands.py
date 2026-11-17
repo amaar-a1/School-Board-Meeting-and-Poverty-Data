@@ -82,7 +82,10 @@ EXTRA = {
                 pop=2933, kids=None, enr=194, ey="2025 (Longyearbyen school, grades 1–10: Statistics Norway)", land=61022),
     "CHT": dict(name="Chatham Islands", region="Pacific", status="Part of New Zealand", rate=2.9,
                 measure="Unemployed people as a share of everyone aged 15 and over, a stand-in for poverty (Stats NZ, 2023 Census: 15 people)",
-                pop=615, kids=99, enr=None, ey="", land=966),
+                pop=615, kids=99, land=966,
+                # Rolls at 1 October 2026 of its three state schools, Te One (58), Pitt Island (11) and Kaingaroa (4):
+                # Ministry of Education schools directory (inputs/nz/schools_directory_2026_10.json).
+                enr=73, ey="1 October 2026 (rolls of its three state schools: Te One, Pitt Island and Kaingaroa; Ministry of Education schools directory)"),
     # Pitcairn: the Pitcairn Island Economic Review (Solomon Leonard for the UK government, January 2014), paragraphs 11 and 234.
     "PCN": dict(name="Pitcairn Islands", region="Pacific", status="Territory of the United Kingdom", rate=0.0,
                 measure="Unemployment rate, a stand-in for poverty: all 31 working-age adults held part-time government jobs (Pitcairn Island Economic Review, 2014); "
@@ -356,11 +359,11 @@ def main():
         return round(tot)
     # Public-school pupils where the source shows only government schools (the share is then 100%): Christmas Island and
     # Cocos (Keeling) Islands (one government school each), Svalbard (Longyearbyen's municipal school), the Falklands (two
-    # government schools), Niue (two government schools), Tokelau (a government school on each atoll); Norfolk Island: 262 of 265 at government schools (2021 Census).
+    # government schools), Niue (two government schools), Tokelau (a government school on each atoll), the Chatham Islands (three state schools); Norfolk Island: 262 of 265 at government schools (2021 Census).
     # Gibraltar's figure covers its government schools only, so it gets none.
     for r in out:
         iso = r["District ID"][5:]
-        r["Public school enrollment"] = 262 if iso == "NFK" else r["Enrollment"] if iso in ("CXR", "CCK", "SJM", "FLK", "NIU", "TKL") and r["Enrollment"] else ""
+        r["Public school enrollment"] = 262 if iso == "NFK" else r["Enrollment"] if iso in ("CXR", "CCK", "SJM", "FLK", "NIU", "TKL", "CHT") and r["Enrollment"] else ""
         # Curaçao is left out: UNESCO reports no private pupils, but most of its schools are run by church school boards.
         if r["Public school enrollment"] == "" and r["Enrollment year"].isdigit() and iso != "CUW":   # World Bank / UNESCO enrollment
             r["Public school enrollment"] = public_pupils(iso, int(r["Enrollment year"])) or ""
