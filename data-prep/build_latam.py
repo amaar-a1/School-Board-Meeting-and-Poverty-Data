@@ -669,6 +669,9 @@ def brazil():
         if f.startswith("br_") and f.endswith(".csv"):
             for r in csv.DictReader(open(os.path.join(d, f), encoding="utf-8")):
                 extra.setdefault(r["ibge7"], {}).update({k: v for k, v in r.items() if k != "ibge7"})
+    # Pupils in schools located in each municipality: INEP, Sinopse Estatística da Educação Básica 2025, table 1.1
+    # (ensino fundamental + ensino médio, all networks). Replaces the census count of residents attending school.
+    sin = {r["ibge7"]: int(r["fundamental"]) + int(r["medio"]) for r in csv.DictReader(open(os.path.join(d, "inep_sinopse_2025_matriculas.csv"), encoding="utf-8"))}
     adm1 = json.load(open(os.path.join(d, "gb_BRA_ADM1.geojson"), encoding="utf-8"))["features"]
     st = {id(f): BR_ABBR.get(f["properties"]["shapeISO"].split("-")[-1]) for f in adm1}
     adm2 = json.load(open(os.path.join(d, "gb_BRA_ADM2.geojson"), encoding="utf-8"))["features"]
@@ -688,7 +691,8 @@ def brazil():
                      "Poverty note": "Residents of households with income up to half the minimum wage per person (R$606 a month in 2022), all ages, 2022 census; extreme: up to a quarter; both include households with no income",
                      "Bolsa Família families per 100 households": f"{100 * fam[code] / hh:.2f}" if hh and code in fam else "",
                      "Bolsa Família families": fam.get(code, ""), "Households": hh or "",
-                     "Enrollment": x.get("Enrollment", ""), "Enrollment year": "2022 Census (residents aged 6–17 attending school; IBGE)" if x.get("Enrollment") else "",
+                     "Enrollment": sin.get(code, x.get("Enrollment", "")),
+                     "Enrollment year": "2025 (pupils in ensino fundamental and médio in the municipality's schools; INEP Censo Escolar)" if code in sin else "2022 Census (residents aged 6–17 attending school; IBGE)" if x.get("Enrollment") else "",
                      "Children 6–17": x.get("Children 6–17", ""), "School system": "Municipal and state school networks",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
