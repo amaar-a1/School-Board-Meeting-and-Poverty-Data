@@ -5,7 +5,8 @@ Catalonia: Departament d'Educació, "Alumnes matriculats per ensenyament i unita
   school year: nursery (llar d'infants and parvulari), primary, compulsory secondary (ESO), batxillerat and
   special education. Language schools, arts and vocational courses are left out.
   Saved input: inputs/spain/regional/catalunya_matricules_2025_26_by_municipality.json (from the dataset's
-  API: sum of "Matrícules. Total" grouped by "Codi municipi_5" and "Nom ensenyament").
+  API: sum of "Matrícules. Total" grouped by "Codi municipi_5" and "Nom ensenyament"); public share from the same
+  dataset by "Nom naturalesa" (public; private includes concertada schools): catalunya_matricules_2025_26_by_naturalesa.json.
 Community of Madrid: "Alumnos no universitarios matriculados en centros escolares por tipo de centro y
   régimen. Municipios" (datos.comunidad.madrid), latest year, régimen general (nursery to batxillerato and
   vocational training; language, arts and adult schools left out), total and public.
@@ -26,9 +27,18 @@ tot = {}
 for r in cat["rows"]:
     if r["nom_ensenyament"].startswith(KEEP) and r.get("codi_municipi_5"):
         tot[r["codi_municipi_5"]] = tot.get(r["codi_municipi_5"], 0) + float(r.get("sum_matr_cules_total") or 0)
+# Public share: the same dataset grouped by stage and by the school's nature (public, or private including state-funded
+# concertada schools): inputs/spain/regional/catalunya_matricules_2025_26_by_naturalesa.json. Its stage grouping differs
+# slightly from the one above, so the public share is applied to the total above.
+nat = json.load(open(os.path.join(D, "regional", "catalunya_matricules_2025_26_by_naturalesa.json"), encoding="utf-8"))
+ntot, npub = {}, {}
+for r in nat["rows"]:
+    ntot[r["codi_municipi_5"]] = ntot.get(r["codi_municipi_5"], 0) + r["n"]
+    if r["nom_naturalesa"] == "Públic": npub[r["codi_municipi_5"]] = npub.get(r["codi_municipi_5"], 0) + r["n"]
 for code, v in tot.items():
     if v > 0:
         out[code] = {"pupils": round(v), "year": f"{cat['curs'].replace('/', '-')} (Catalonia's education department: pupils at the municipality's schools, nursery to batxillerat, public and private)"}
+        if ntot.get(code): out[code]["public"] = round(v * npub.get(code, 0) / ntot[code])
 print("Catalonia", len(tot), "municipalities,", round(sum(tot.values())), "pupils")
 
 rows = list(csv.DictReader(open(os.path.join(D, "regional", "madrid_alumnos_no_universitarios_municipios.csv"), encoding="utf-8-sig"), delimiter=";"))

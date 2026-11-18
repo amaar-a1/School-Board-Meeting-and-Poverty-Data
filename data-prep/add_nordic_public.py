@@ -15,7 +15,9 @@ Finland: Statistics Finland 125j, 2025: pupils at comprehensive schools, special
   upper-secondary schools in each municipality, by owner type. Public = municipal, joint-municipal and state schools;
   private = privately owned (yksityinen). The public share is applied to the site's Enrollment figure (Statistics
   Finland 133w). Input: inputs/nordic/fi_125j_owner_2025.json.
-Adds or refreshes "Public school enrollment" in docs/data/norway.csv, denmark.csv, sweden.csv and finland.csv. Safe to re-run.
+Netherlands: DUO, pupils at primary and special school sites, 2025, by denominatie: public = openbaar. Its share is applied
+  to the site's Enrollment figure. Input: inputs/nordic/nl_pupils_by_denomination.json.
+Adds or refreshes "Public school enrollment" in docs/data/norway.csv, denmark.csv, sweden.csv, finland.csv and netherlands.csv. Safe to re-run.
 Usage: python3 data-prep/add_nordic_public.py
 """
 import csv, json, os, unicodedata
@@ -100,3 +102,14 @@ p = os.path.join(DOCS, "finland.csv")
 fpub = {r["District ID"][3:]: round(float(r["Enrollment"]) * fin[r["District ID"][3:]])
         for r in csv.DictReader(open(p, encoding="utf-8")) if r.get("Enrollment") and r["District ID"][3:] in fin}
 add("finland.csv", fpub, lambda r: r["District ID"][3:])
+
+# Netherlands: DUO, pupils at every primary and special school site in 2025 by the school's denominatie
+# (inputs/nordic/nl_pupils_by_denomination.json). Public = openbaar schools, run by a public authority; bijzonder
+# (Catholic, Protestant, general-private and other) schools are publicly funded but privately run, and joint
+# (samenwerking) schools aren't counted as public. The share is applied to the site's Enrollment figure (CBS, primary,
+# special and secondary pupils living there); DUO's per-site secondary file stops at 2018, so the share is primary's.
+nl = json.load(open(os.path.join(IN, "nl_pupils_by_denomination.json")))["by_municipality"]
+p = os.path.join(DOCS, "netherlands.csv")
+npub = {r["District ID"][3:]: round(float(r["Enrollment"]) * nl[r["District ID"][3:]]["openbaar"] / nl[r["District ID"][3:]]["all"])
+        for r in csv.DictReader(open(p, encoding="utf-8")) if r.get("Enrollment") and nl.get(r["District ID"][3:], {}).get("all")}
+add("netherlands.csv", npub, lambda r: r["District ID"][3:])

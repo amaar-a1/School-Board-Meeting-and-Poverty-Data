@@ -94,6 +94,20 @@ def ph_rule():
 RULES["philippines.csv"] = ph_rule()
 
 
+def ee_rule():
+    """Estonia: children aged 7-18 living in the municipality (Statistics Estonia RV0240, 1 January 2026)."""
+    p = os.path.join(HERE, "inputs", "estonia", "ee_data.json")
+    data = json.load(open(p, encoding="utf-8"))["data"] if os.path.exists(p) else {}
+    def rule(r):
+        x = data.get(str(int(r["District ID"][3:])), {})
+        return (x["age7_18"], "Estimate: children aged 7–18 (basic and upper-secondary school ages) living in the municipality, 1 January 2026 "
+                              "(Statistics Estonia RV0240); pupil counts by municipality aren't in Estonia's open data") if x.get("age7_18") else None
+    return rule
+
+
+RULES["estonia.csv"] = ee_rule()
+
+
 def run(fn):
     p = os.path.join(DOCS, fn)
     rule = RULES.get(fn)

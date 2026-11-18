@@ -151,6 +151,7 @@ window.SOURCES = [
     items: [
       { title: "Child poverty: CBS table 86132NED, children in poverty (the “not much but sufficient” criterion), 2024", url: "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/86132NED/table" },
       { title: "Pupils: CBS table 85701NED, pupils by municipality of residence (primary, special and secondary), 2025/26", url: "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85701NED/table" },
+      { title: "Public-school share (Netherlands): DUO open education data, pupils per primary and special school site, 2025 (Leerlingen po per vestiging), with each site\u2019s municipality and denomination from DUO\u2019s school address lists. Public = openbaar schools, run by a public authority; bijzonder schools (Catholic, Protestant, general and other) are publicly funded but privately run, so they count as private, and the few joint (samenwerking) schools aren\u2019t counted as public. DUO\u2019s per-site secondary file stops at 2018, so the primary share is applied to all pupils", url: "https://onderwijsdata.duo.nl/dataset/cf80e90d-ed19-4a10-a138-00c5c345cb5e" },
       { title: "Borders and density: Eurostat GISCO Local Administrative Units (LAU) 2023", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" }
     ],
     note: "Locales are estimates from Eurostat's 2023 people per km² for each municipality: urban 2,000+, suburban 500–2,000, mixed 100–500, rural under 100. Built by data-prep/build_nordic.py. Voorne aan Zee (2023) is drawn from its three former municipalities' borders."
@@ -175,6 +176,7 @@ window.SOURCES = [
       { title: "Meetings (stand-in): recorded meetings on the YouTube channels of each area's regional or unitary council: Northland, Auckland, Waikato, Bay of Plenty, Gisborne, Hawke's Bay, Taranaki, Horizons, Greater Wellington, Tasman, Nelson, Marlborough, West Coast, Environment Canterbury, Otago and Environment Southland (listed November 2026)", url: "https://www.youtube.com/channel/UCXye5ro6lyuabv0MhUU8Guw" },
       { title: "Child low income: Stats NZ, Child poverty statistics, year ended June 2025, Table 4.02 (below 60% of the median income before housing costs, by regional council area)", url: "https://www.stats.govt.nz/information-releases/child-poverty-statistics-year-ended-june-2025/" },
       { title: "Enrollment: students enrolled in primary and secondary schools by region, July 2025 (Ministry of Education roll returns), via Figure.NZ", url: "https://figure.nz/chart/POTlO8r1L2X6mKJc" },
+      { title: "Public-school share: Ministry of Education, New Zealand Schools Directory, rolls at 1 October 2026: the share of each region\u2019s pupils at state schools, applied to the July 2025 enrollment. State-integrated schools (mostly Catholic, run with a proprietor), charter schools and private schools count as private, the same who-runs-it rule as Ireland, Belgium, the Netherlands and Spain", url: "https://www.educationcounts.govt.nz/directories/list-of-nz-schools" },
       { title: "Borders: Natural Earth 1:10m admin-1 states and provinces (regions merged where Stats NZ combines them)", url: "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/" }
     ],
     note: "Enrollment for combined areas adds up their regions. The Chatham Islands aren't in Stats NZ's regional figures. Built by data-prep/build_nz.py."
@@ -191,7 +193,7 @@ window.SOURCES = [
       { title: "Falkland Islands pupils (estimated): residents aged 5–15, the compulsory school ages (398), Falkland Islands Government, Policy Department, 2021 Census Tables, table 2b (population by single years of age); used non-commercially, as its terms allow", url: "https://www.gov.fk/policy/2021-census/" },
       { title: "Svalbard pupils: Statistics Norway, table 11980, pupils in compulsory school, Longyearbyen, 2025 (194)", url: "https://www.ssb.no/en/statbank/table/11980/" },
       { title: "Children below 60% of the median income (Malta, Cyprus): Eurostat ilc_li02", url: "https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table" },
-      { title: "National poverty line, unemployment, population, enrollment (primary and secondary): World Bank World Development Indicators (SI.POV.NAHC, SL.UEM.TOTL.ZS, SP.POP.TOTL, SP.POP.0014.TO.ZS, SE.PRM.ENRL, SE.SEC.ENRL)", url: "https://data.worldbank.org/" },
+      { title: "National poverty line, unemployment, population, enrollment (primary and secondary): World Bank World Development Indicators (SI.POV.NAHC, SL.UEM.TOTL.ZS, SP.POP.TOTL, SP.POP.0014.TO.ZS, SE.PRM.ENRL, SE.SEC.ENRL); public-school pupils from the shares at private schools, primary and secondary (SE.PRM.PRIV.ZS, SE.SEC.PRIV.ZS, UNESCO Institute for Statistics), same year or nearest within three years; Curaçao left out (UNESCO shows no private pupils, though most of its schools are run by church school boards)", url: "https://data.worldbank.org/" },
       { title: "Saint-Martin and Saint-Barthélemy unemployment: IEDOM, annual economic reports 2025 (Rapport annuel économique de Saint-Martin, de Saint-Barthélemy)", url: "https://www.iedom.fr/Rapport-annuel-economique-de-Saint-Martin-2025" },
       { title: "Norfolk Island unemployment and pupils (155 residents in primary and 110 in secondary school): Australian Bureau of Statistics, 2021 Census QuickStats (Norfolk Island), CC BY 4.0", url: "https://www.abs.gov.au/census/find-census-data/quickstats/2021/SAL90004" },
       { title: "Where the World Bank has none: CIA World Factbook (2026 edition, and the November 2023 edition for poverty and unemployment), via the factbook.json archive", url: "https://github.com/factbook/factbook.json" },
@@ -202,6 +204,7 @@ window.SOURCES = [
       { title: "Christmas Island: Australian Bureau of Statistics, 2021 Census QuickStats", url: "https://abs.gov.au/census/find-census-data/quickstats/2021/LGA51710" },
       { title: "Cocos (Keeling) Islands: Australian Bureau of Statistics, 2021 Census QuickStats", url: "https://abs.gov.au/census/find-census-data/quickstats/2021/LGA51860" },
       { title: "Chatham Islands: Stats NZ, 2023 Census place summary (Chatham Islands Territory)", url: "https://tools.summaries.stats.govt.nz/places/TA/chatham-islands-territory" },
+      { title: "Chatham Islands pupils (73, all at state schools): Ministry of Education, New Zealand Schools Directory, rolls at 1 October 2026 (Te One 58, Pitt Island 11, Kaingaroa 4)", url: "https://www.educationcounts.govt.nz/directories/list-of-nz-schools" },
       { title: "Tokelau: Tokelau 2015/16 Household Income and Expenditure Survey, poverty analysis (Tokelau National Statistics Office, Stats NZ and the Pacific Community)", url: "https://spccfpstore1.blob.core.windows.net/digitallibrary-docs/files/73/73d325a34d612e880335fea49896211f.pdf" },
       { title: "Gibraltar pupils: Gibraltar Health Authority, Joint Strategic Needs Assessment, education (pupils in government schools, September 2023)", url: "https://www.gha.gi/jsna-education/" },
       { title: "Svalbard population: Statistics Norway, table 07430 (all settlements, second half of 2026)", url: "https://www.ssb.no/statbank/table/07430/" },
@@ -256,7 +259,8 @@ window.SOURCES = [
       { title: "Municipal codes (SIAFI to IBGE): Tesouro Nacional, Tabela de Municípios", url: "https://www.tesourotransparente.gov.br/ckan/dataset/lista-de-municipios-do-siafi" },
       { title: "Population: IBGE, Estimativas da População 2025", url: "https://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2025/estimativa_dou_2025.xls" },
       { title: "Households: IBGE, Censo Demográfico 2022, table 4712, via SIDRA", url: "https://sidra.ibge.gov.br/tabela/4712" },
-      { title: "Enrollment (census residents aged 6–17 attending school) and children 6–17: IBGE, Censo Demográfico 2022, tables 10058 (people 6–17 attending school) and 9514 (population by age), via SIDRA", url: "https://sidra.ibge.gov.br/tabela/10058" },
+      { title: "Enrollment: INEP, Sinopse Estatística da Educação Básica 2025 (Censo Escolar), table 1.1, pupils in ensino fundamental and ensino médio in schools in each municipality, all networks", url: "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/sinopses-estatisticas/educacao-basica" },
+      { title: "Children 6–17 (and the earlier enrollment count, residents aged 6–17 attending school): IBGE, Censo Demográfico 2022, tables 10058 (people 6–17 attending school) and 9514 (population by age), via SIDRA", url: "https://sidra.ibge.gov.br/tabela/10058" },
       { title: "Borders: geoBoundaries (gbOpen) Brazil ADM1 and ADM2, simplified", url: "https://www.geoboundaries.org/" },
       { title: "Meetings (stand-in): each chamber's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
     ],
@@ -362,7 +366,7 @@ window.SOURCES = [
       { title: "Income: Statbel, fiscal statistics on income by municipality (TF_PSNL_INC_TAX_MUNTY), 2023", url: "https://statbel.fgov.be/en/open-data/fiscal-statistics-income" },
       { title: "Population and children under 18: Statbel, population by place of residence and age (TF_SOC_POP_STRUCT_2025)", url: "https://statbel.fgov.be/en/open-data" },
       { title: "Municipality codes and names: Statbel, REFNIS code list (1 January 2025)", url: "https://statbel.fgov.be/en/open-data/code-refnis-0" },
-      { title: "Pupils, Flanders: Flemish education department, Dataloep enrolments by school site, 1 February 2025 (nursery and primary, ordinary and special)", url: "https://opendata.dataplatform-onderwijs.vlaanderen.be/dataloep/inschrijvingen-leerplicht-instellingen-dataset-2024-2025-1feb.csv" },
+      { title: "Pupils, Flanders: Flemish education department, Dataloep enrolments by school site, 1 February 2025 (nursery and primary, ordinary and special); public-school share from the same file: pupils at schools run by a municipality, a province, the Flemish community (GO!) or the VGC in Brussels. “Free” schools (mostly Catholic) are publicly funded but privately run, so they count as private, as in the Netherlands and Spain. Brussels and Wallonia have no public-school figure: no split by school network was found for French-speaking schools", url: "https://opendata.dataplatform-onderwijs.vlaanderen.be/dataloep/inschrijvingen-leerplicht-instellingen-dataset-2024-2025-1feb.csv" },
       { title: "Pupils, Wallonia and the German-speaking municipalities: IWEPS WalStat, pupils enrolled in nursery and primary schools by municipality, 2024", url: "https://www.odwb.be/explore/dataset/243300/" },
       { title: "Pupils, Brussels: IBSA, origin and destination of pupils by municipality (tables 6.3.2.2 and 6.3.2.3), 2023-24", url: "https://ibsa.brussels/themes/enseignement/origine-destination-des-eleves" },
       { title: "Borders: Eurostat GISCO Local Administrative Units (LAU) 2024, merged into the 2025 municipalities with mapshaper", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
@@ -392,9 +396,34 @@ window.SOURCES = [
       { title: "Poverty: World Bank and Croatian Bureau of Statistics, Croatia small-area estimation of consumption-based poverty (poverty maps), October 2016, 2011 data; city, municipal and county tables", url: "https://www.worldbank.org/en/country/croatia/publication/croatia-poverty-maps" },
       { title: "The poverty map online (Croatian Bureau of Statistics, Geostat)", url: "https://geostat.dzs.hr/?lang=en" },
       { title: "Borders and population: Eurostat GISCO Local Administrative Units (LAU) 2024; counties: GISCO NUTS 3 (2024)", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
-      { title: "Meetings: each council's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+      { title: "Meetings: each council's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" },
+      { title: "Public-school share: Ministry of Science, Education and Youth, list of primary schools with their founder (osnivač), May 2025. Places with no school founded by an association, church body, company or person are 100% public; the 12 places with one (Zagreb, Split, Rijeka, Osijek, Zadar, Šibenik, Varaždin, Požega, Virovitica, Novska, Samobor, Dugopolje) have no figure, as the list counts schools, not pupils", url: "https://data.gov.hr/ckan/dataset/2841fb78-c828-4ab2-8cdc-f22abeed3a8c" }
     ],
     note: "Built by data-prep/prep_croatia.py and data-prep/build_latam.py. Places are matched to the poverty map by name (shared names by the map's qualifier or population) and placed in counties by their borders."
+  },
+  {
+    only: "Latvia",
+    group: "Latvia: state cities and municipalities",
+    items: [
+      { title: "Poverty stand-in: Official Statistics Portal, PPS040, municipal social assistance recipients by type of assistance: children receiving the basic benefits (guaranteed minimum income and housing benefit), 2025", url: "https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__VES__PP__PPS/PPS040/" },
+      { title: "Children 0–17 and population: Official Statistics Portal, IRD041, population by age at the start of 2026", url: "https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD041/" },
+      { title: "Pupils and public-school share: Ministry of Education and Science, “Izglītojamo skaits sadalījumā pa vispārējās izglītības programmām”, 1 October 2025 (pupils in grades 1–12 by school, with who runs it), data.gov.lv", url: "https://data.gov.lv/dati/lv/dataset/3ef3dea2-20e6-47ae-addc-2f55d11f7be2" },
+      { title: "Borders: Eurostat GISCO Local Administrative Units (LAU) 2024; Varakļāni added to Madona (merged 1 July 2025)", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
+      { title: "Meetings: each council's YouTube channel (in the “Meetings source” column), searched November 2026", url: "https://www.youtube.com/" },
+      { title: "Council sittings must be recorded and published: Local Government Law (Pašvaldību likums), Latvijas Vēstnesis", url: "https://likumi.lv/ta/id/336956-pasvaldibu-likums" }
+    ],
+    note: "Built by data-prep/prep_baltic.py and data-prep/build_latam.py (latvia). Children in households on the basic benefits are counted over the whole of 2025, so the figure is higher than a monthly count would be."
+  },
+  {
+    only: "Estonia",
+    group: "Estonia: municipalities",
+    items: [
+      { title: "Poverty stand-in: Statistics Estonia, SK410, subsistence benefits by administrative unit: applications granted per 1,000 inhabitants, 2025 (shown per 100 residents in an average month)", url: "https://andmed.stat.ee/en/stat/sotsiaalelu__sotsiaalne-kaitse/SK410" },
+      { title: "Population, children 0–17 and the 7–18 ages for the enrollment estimate: Statistics Estonia, RV0240, population by sex, age and place of residence, 1 January 2026", url: "https://andmed.stat.ee/en/stat/rahvastik__rahvastikunaitajad-ja-koosseis__rahvaarv-ja-rahvastiku-koosseis/RV0240" },
+      { title: "Borders: Eurostat GISCO Local Administrative Units (LAU) 2024; Toila added to Kohtla-Järve (merged in 2025)", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
+      { title: "Meetings: each council's YouTube channel (in the “Meetings source” column), searched November 2026", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_baltic.py and data-prep/build_latam.py (estonia). Kohtla-Järve's 2025 benefit figure adds Toila's applications to its own, over the merged population."
   },
   {
     only: "Philippines",
@@ -463,6 +492,7 @@ window.SOURCES = [
       { title: "Other meetings: board minutes on the ETBs' websites (Dublin and Dún Laoghaire, Kerry, Limerick and Clare, Waterford and Wexford, Kilkenny and Carlow), listed November 2026", url: "https://www.ddletb.ie/minutes/" },
       { title: "Enrollment: Department of Education, Data on Individual Schools, primary and special schools 2024/25 (census date 30 September 2024)", url: "https://www.gov.ie/en/department-of-education/collections/primary-schools-enrolment-figures/" },
       { title: "Enrollment: Department of Education, Data on Individual Schools, post-primary schools 2024/25", url: "https://www.gov.ie/en/department-of-education/collections/post-primary-schools-enrolment-figures/" },
+      { title: "Public-school share, from the same school lists: pupils at schools run by a public body, counting a school as public when its patron is an ETB or the Minister for Education (Community National Schools and ETB special schools) or the Health Service Executive, or, after primary, when it is a vocational (ETB), community or comprehensive school. Church and other patrons\u2019 national schools and voluntary secondary schools are state-funded but privately run, so they count as private, the same rule as Belgium, the Netherlands and Spain", url: "https://www.gov.ie/en/department-of-education/collections/primary-schools-enrolment-figures/" },
       { title: "ETB sector overview (Education and Training Boards Ireland)", url: "https://www.etbi.ie/" }
     ],
     note: "Locales are estimates: population (children 5–17 divided by 0.178, their share of Ireland's population in Census 2022) over each ETB's land area; urban 2,000+ people per km², suburban 500–2,000, mixed 100–500, rural under 100. The Department of Education's school list couldn't be downloaded (gov.ie refused automated access), so there's no enrollment by ETB. Each board gets its region's overall poverty rate, so boards in the same region share a figure. The unemployment rate counts people who say their main status is unemployed or looking for a first job."
@@ -532,6 +562,7 @@ window.SOURCES = [
       { title: "Ontario: School Information and Student Demographics, 2024–25 (school enrolment summed by board; Ontario Data Catalogue)", url: "https://data.ontario.ca/dataset/school-information-and-student-demographics" },
       { title: "Quebec: Évolution de l'effectif des centres de services scolaires et des commissions scolaires, September 2022 (Ministry of Education)", url: "https://cdn-contenu.quebec.ca/cdn-contenu/education/indicateurs-statistiques/Previsions_effectif_scolaire/Faits_saillants/evolution-effectif-scolaire.pdf" },
       { title: "British Columbia: BC Schools – Student Headcount by Grade, 2025/26 public schools (DataBC)", url: "https://catalogue.data.gov.bc.ca/dataset/7114187e-305c-4a79-acbb-3294ba0f53c8" },
+      { title: "British Columbia public-school share: the same file’s independent (private) schools, 2025/26, placed in the school district their school number starts with (independent online schools, which teach province-wide, left out). Public = the board’s own pupils; francophone-board (CSF) pupils aren’t counted on either side. Other provinces have overlapping public, Catholic and francophone boards, so they get no figure", url: "https://catalogue.data.gov.bc.ca/dataset/7114187e-305c-4a79-acbb-3294ba0f53c8" },
       { title: "Alberta: student enrolment by school authority, 2024/25 (Alberta Open Data)", url: "https://open.alberta.ca/opendata/ccbcf0fb-615e-44a0-b7ec-681e2ea4e1e7" },
       { title: "Manitoba: Enrolment Report, October 1, 2025 (Manitoba Education)", url: "https://www.edu.gov.mb.ca/k12/finance/sch_enrol/enrolment_2025.pdf" },
       { title: "Nova Scotia: Public School Enrolment by RCE/CSAP and School, 2025–26 (Nova Scotia Open Data)", url: "https://data.novascotia.ca/Education/Nova-Scotia-Public-School-Enrolment-by-RCE-CSAP-and/cjnf-ywvt" },
@@ -650,7 +681,7 @@ window.SOURCES = [
       { only: ["Croatia", "Italy", "France"], title: "Eurostat, population on 1 January by age group, sex and NUTS 3 region (demo_r_pjangrp3), 2024: each region's share of school ages (Croatia 7–14, Italy 6–13, France 3–10), times the place's population", url: "https://ec.europa.eu/eurostat/databrowser/view/demo_r_pjangrp3/default/table" },
       { only: ["Croatia", "Italy", "France"], title: "Eurostat / GISCO, correspondence of local administrative units (LAU) to NUTS 2024 regions", url: "https://ec.europa.eu/eurostat/web/nuts/local-administrative-units" },
       { only: "Philippines", title: "Philippines subnational population statistics by age (PSA projections, 2025), via the Humanitarian Data Exchange (HDX, phl_admpop): each province's share of children aged 5–17", url: "https://data.humdata.org/dataset/cod-ps-phl" },
-      { only: "Spain", title: "Pupils by municipality, Catalonia: Departament d'Educació, “Alumnes matriculats per ensenyament i unitats dels centres docents”, 2025-26 (Transparència Catalunya open data)", url: "https://analisi.transparenciacatalunya.cat/d/xvme-26kg" },
+      { only: "Spain", title: "Pupils by municipality, Catalonia: Departament d'Educació, “Alumnes matriculats per ensenyament i unitats dels centres docents”, 2025-26 (Transparència Catalunya open data); public-school share from the same dataset by the school's nature (public, or private, which includes state-funded concertada schools)", url: "https://analisi.transparenciacatalunya.cat/d/xvme-26kg" },
       { only: "Spain", title: "Pupils by municipality, Valencian Community: Conselleria d'Educació, “Resumen de escolarización 2025” (pupils by school, summed by its municipality; infantil to bachillerato, public and private)", url: "https://dadesobertes.gva.es/dataset/edu-alu-gen-2025" },
       { only: "Spain", title: "Pupils by municipality, Community of Madrid: “Alumnos no universitarios matriculados en centros escolares por tipo de centro y régimen. Municipios”, 2024-25 (régimen general)", url: "https://datos.comunidad.madrid/dataset/alumnos_no_universitarios_por_tipo_y_regimen" },
       { only: "Spain", title: "Estimates elsewhere: INE, annual population census 2024, population aged 15+ by level of studies in progress, municipalities of 500+ (table 66627), plus children aged 3–14 (twelve eighteenths of the estimated children under 18)", url: "https://www.ine.es/jaxiT3/Tabla.htm?t=66627" }

@@ -1,0 +1,1717 @@
+{
+"source": "DUO open onderwijsdata (onderwijsdata.duo.nl): Leerlingen po per vestiging (brin6_totaal.csv), peiljaar 2025, all primary and special school sites (BO, SBO, SO, VSO), each placed in its municipality with its denominatie from DUO's site address lists (vestigingenbo.csv, vestigingenso.csv). openbaar = public-authority schools; samenwerking = schools run jointly for public and denominational education. DUO's per-site secondary (VO) file stops at 2018, so secondary schools aren't included.",
+"year": "2025",
+"unplaced_pupils": 3573,
+"by_municipality": {
+"GM0014": {
+"all": 15901,
+"openbaar": 7856,
+"samenwerking": 0
+},
+"GM0034": {
+"all": 22344,
+"openbaar": 10786,
+"samenwerking": 2023
+},
+"GM0037": {
+"all": 2575,
+"openbaar": 577,
+"samenwerking": 0
+},
+"GM0047": {
+"all": 2080,
+"openbaar": 1336,
+"samenwerking": 0
+},
+"GM0050": {
+"all": 2008,
+"openbaar": 851,
+"samenwerking": 0
+},
+"GM0059": {
+"all": 2227,
+"openbaar": 851,
+"samenwerking": 0
+},
+"GM0060": {
+"all": 275,
+"openbaar": 57,
+"samenwerking": 0
+},
+"GM0072": {
+"all": 1086,
+"openbaar": 366,
+"samenwerking": 0
+},
+"GM0074": {
+"all": 4134,
+"openbaar": 2441,
+"samenwerking": 0
+},
+"GM0080": {
+"all": 10169,
+"openbaar": 4283,
+"samenwerking": 0
+},
+"GM0085": {
+"all": 1861,
+"openbaar": 1262,
+"samenwerking": 0
+},
+"GM0086": {
+"all": 2458,
+"openbaar": 1310,
+"samenwerking": 153
+},
+"GM0088": {
+"all": 50,
+"openbaar": 50,
+"samenwerking": 0
+},
+"GM0090": {
+"all": 5391,
+"openbaar": 1539,
+"samenwerking": 0
+},
+"GM0093": {
+"all": 290,
+"openbaar": 148,
+"samenwerking": 0
+},
+"GM0096": {
+"all": 51,
+"openbaar": 51,
+"samenwerking": 0
+},
+"GM0098": {
+"all": 2005,
+"openbaar": 1315,
+"samenwerking": 0
+},
+"GM0106": {
+"all": 6171,
+"openbaar": 2762,
+"samenwerking": 0
+},
+"GM0109": {
+"all": 2337,
+"openbaar": 1347,
+"samenwerking": 50
+},
+"GM0114": {
+"all": 8445,
+"openbaar": 4119,
+"samenwerking": 101
+},
+"GM0118": {
+"all": 4684,
+"openbaar": 1179,
+"samenwerking": 0
+},
+"GM0119": {
+"all": 3221,
+"openbaar": 1269,
+"samenwerking": 0
+},
+"GM0141": {
+"all": 6490,
+"openbaar": 2474,
+"samenwerking": 0
+},
+"GM0147": {
+"all": 2210,
+"openbaar": 0,
+"samenwerking": 0
+},
+"GM0148": {
+"all": 2611,
+"openbaar": 468,
+"samenwerking": 0
+},
+"GM0150": {
+"all": 8388,
+"openbaar": 3404,
+"samenwerking": 491
+},
+"GM0153": {
+"all": 12727,
+"openbaar": 5480,
+"samenwerking": 445
+},
+"GM0158": {
+"all": 1677,
+"openbaar": 277,
+"samenwerking": 0
+},
+"GM0160": {
+"all": 5616,
+"openbaar": 794,
+"samenwerking": 77
+},
+"GM0163": {
+"all": 3047,
+"openbaar": 248,
+"samenwerking": 0
+},
+"GM0164": {
+"all": 6369,
+"openbaar": 1007,
+"samenwerking": 0
+},
+"GM0166": {
+"all": 5568,
+"openbaar": 845,
+"samenwerking": 0
+},
+"GM0168": {
+"all": 1720,
+"openbaar": 330,
+"samenwerking": 0
+},
+"GM0171": {
+"all": 4900,
+"openbaar": 1507,
+"samenwerking": 390
+},
+"GM0173": {
+"all": 2488,
+"openbaar": 374,
+"samenwerking": 0
+},
+"GM0175": {
+"all": 1952,
+"openbaar": 383,
+"samenwerking": 0
+},
+"GM0177": {
+"all": 3349,
+"openbaar": 718,
+"samenwerking": 0
+},
+"GM0180": {
+"all": 2078,
+"openbaar": 139,
+"samenwerking": 0
+},
+"GM0183": {
+"all": 1805,
+"openbaar": 0,
+"samenwerking": 0
+},
+"GM0184": {
+"all": 3049,
+"openbaar": 0,
+"samenwerking": 0
+},
+"GM0189": {
+"all": 2228,
+"openbaar": 195,
+"samenwerking": 0
+},
+"GM0193": {
+"all": 12857,
+"openbaar": 4837,
+"samenwerking": 0
+},
+"GM0197": {
+"all": 2207,
+"openbaar": 147,
+"samenwerking": 0
+},
+"GM0200": {
+"all": 13491,
+"openbaar": 3094,
+"samenwerking": 0
+},
+"GM0202": {
+"all": 13942,
+"openbaar": 5329,
+"samenwerking": 533
+},
+"GM0203": {
+"all": 7769,
+"openbaar": 471,
+"samenwerking": 0
+},
+"GM0209": {
+"all": 2217,
+"openbaar": 436,
+"samenwerking": 0
+},
+"GM0213": {
+"all": 1401,
+"openbaar": 485,
+"samenwerking": 0
+},
+"GM0214": {
+"all": 1938,
+"openbaar": 1371,
+"samenwerking": 0
+},
+"GM0216": {
+"all": 2640,
+"openbaar": 676,
+"samenwerking": 0
+},
+"GM0221": {
+"all": 450,
+"openbaar": 337,
+"samenwerking": 0
+},
+"GM0222": {
+"all": 5576,
+"openbaar": 1427,
+"samenwerking": 0
+},
+"GM0225": {
+"all": 1535,
+"openbaar": 266,
+"samenwerking": 0
+},
+"GM0226": {
+"all": 1671,
+"openbaar": 235,
+"samenwerking": 0
+},
+"GM0228": {
+"all": 11913,
+"openbaar": 1737,
+"samenwerking": 0
+},
+"GM0230": {
+"all": 2104,
+"openbaar": 141,
+"samenwerking": 0
+},
+"GM0232": {
+"all": 2641,
+"openbaar": 741,
+"samenwerking": 0
+},
+"GM0233": {
+"all": 2383,
+"openbaar": 236,
+"samenwerking": 0
+},
+"GM0243": {
+"all": 4952,
+"openbaar": 483,
+"samenwerking": 0
+},
+"GM0244": {
+"all": 1120,
+"openbaar": 397,
+"samenwerking": 0
+},
+"GM0246": {
+"all": 1463,
+"openbaar": 412,
+"samenwerking": 0
+},
+"GM0252": {
+"all": 1229,
+"openbaar": 438,
+"samenwerking": 0
+},
+"GM0262": {
+"all": 2306,
+"openbaar": 1414,
+"samenwerking": 0
+},
+"GM0263": {
+"all": 1922,
+"openbaar": 565,
+"samenwerking": 0
+},
+"GM0267": {
+"all": 4116,
+"openbaar": 182,
+"samenwerking": 0
+},
+"GM0268": {
+"all": 13861,
+"openbaar": 2013,
+"samenwerking": 0
+},
+"GM0269": {
+"all": 2138,
+"openbaar": 55,
+"samenwerking": 0
+},
+"GM0273": {
+"all": 1972,
+"openbaar": 215,
+"samenwerking": 0
+},
+"GM0274": {
+"all": 2421,
+"openbaar": 548,
+"samenwerking": 580
+},
+"GM0275": {
+"all": 3007,
+"openbaar": 1500,
+"samenwerking": 0
+},
+"GM0277": {
+"all": 217,
+"openbaar": 217,
+"samenwerking": 0
+},
+"GM0279": {
+"all": 1159,
+"openbaar": 161,
+"samenwerking": 0
+},
+"GM0281": {
+"all": 3668,
+"openbaar": 678,
+"samenwerking": 0
+},
+"GM0285": {
+"all": 2696,
+"openbaar": 509,
+"samenwerking": 0
+},
+"GM0289": {
+"all": 2551,
+"openbaar": 1056,
+"samenwerking": 0
+},
+"GM0293": {
+"all": 1181,
+"openbaar": 248,
+"samenwerking": 0
+},
+"GM0294": {
+"all": 2151,
+"openbaar": 1102,
+"samenwerking": 0
+},
+"GM0296": {
+"all": 2960,
+"openbaar": 1149,
+"samenwerking": 36
+},
+"GM0297": {
+"all": 2811,
+"openbaar": 428,
+"samenwerking": 0
+},
+"GM0299": {
+"all": 3552,
+"openbaar": 412,
+"samenwerking": 0
+},
+"GM0301": {
+"all": 3758,
+"openbaar": 2021,
+"samenwerking": 0
+},
+"GM0302": {
+"all": 3198,
+"openbaar": 82,
+"samenwerking": 0
+},
+"GM0303": {
+"all": 3651,
+"openbaar": 1536,
+"samenwerking": 0
+},
+"GM0307": {
+"all": 15103,
+"openbaar": 3846,
+"samenwerking": 0
+},
+"GM0308": {
+"all": 1978,
+"openbaar": 111,
+"samenwerking": 0
+},
+"GM0310": {
+"all": 4488,
+"openbaar": 0,
+"samenwerking": 0
+},
+"GM0312": {
+"all": 1433,
+"openbaar": 501,
+"samenwerking": 0
+},
+"GM0313": {
+"all": 2129,
+"openbaar": 165,
+"samenwerking": 0
+},
+"GM0317": {
+"all": 834,
+"openbaar": 257,
+"samenwerking": 0
+},
+"GM0321": {
+"all": 4903,
+"openbaar": 1210,
+"samenwerking": 0
+},
+"GM0327": {
+"all": 2602,
+"openbaar": 911,
+"samenwerking": 0
+},
+"GM0331": {
+"all": 1132,
+"openbaar": 0,
+"samenwerking": 0
+},
+"GM0335": {
+"all": 1143,
+"openbaar": 260,
+"samenwerking": 0
+},
+"GM0339": {
+"all": 420,
+"openbaar": 0,
+"samenwerking": 0
+},
+"GM0340": {
+"all": 1565,
+"openbaar": 169,
+"samenwerking": 0
+},
+"GM0342": {
+"all": 3891,
+"openbaar": 456,
+"samenwerking": 0
+},
+"GM0344": {
+"all": 31673,
+"openbaar": 9260,
+"samenwerking": 472
+},
+"GM0345": {
+"all": 7165,
+"openbaar": 805,
+"samenwerking": 0
+},
+"GM0351": {
+"all": 1385,
+"openbaar": 406,
+"samenwerking": 0
+},
+"GM0352": {
+"all": 1946,
+"openbaar": 715,
+"samenwerking": 0
+},
+"GM0353": {
+"all": 2587,
+"openbaar": 605,
+"samenwerking": 0
+},
+"GM0355": {
+"all": 6631,
+"openbaar": 1409,
+"samenwerking": 0
+},
+"GM0356": {
+"all": 5237,
+"openbaar": 1284,
+"samenwerking": 0
+},
+"GM0358": {
+"all": 2445,
+"openbaar": 381,
+"samenwerking": 0
+},
+"GM0361": {
+"all": 9043,
+"openbaar": 3972,
+"samenwerking": 0
+},
+"GM0362": {
+"all": 7156,
+"openbaar": 2787,
+"samenwerking": 0
+},
+"GM0363": {
+"all": 63752,
+"openbaar": 30193,
+"samenwerking": 2300
+},
+"GM0373": {
+"all": 1712,
+"openbaar": 355,
+"samenwerking": 0
+},
+"GM0375": {
+"all": 3227,
+"openbaar": 884,
+"samenwerking": 101
+},
+"GM0376": {
+"all": 1082,
+"openbaar": 566,
+"samenwerking": 0
+},
+"GM0377": {
+"all": 2951,
+"openbaar": 1097,
+"samenwerking": 0
+},
+"GM0383": {
+"all": 2880,
+"openbaar": 709,
+"samenwerking": 0
+},
+"GM0384": {
+"all": 2423,
+"openbaar": 1502,
+"samenwerking": 360
+},
+"GM0385": {
+"all": 2788,
+"openbaar": 506,
+"samenwerking": 0
+},
+"GM0388": {
+"all": 1357,
+"openbaar": 465,
+"samenwerking": 0
+},
+"GM0392": {
+"all": 15378,
+"openbaar": 6543,
+"samenwerking": 0
+},
+"GM0394": {
+"all": 13401,
+"openbaar": 4545,
+"samenwerking": 203
+},
+"GM0396": {
+"all": 3839,
+"openbaar": 576,
+"samenwerking": 838
+},
+"GM0397": {
+"all": 2486,
+"openbaar": 611,
+"samenwerking": 0
+},
+"GM0399": {
+"all": 1797,
+"openbaar": 543,
+"samenwerking": 0
+},
+"GM0400": {
+"all": 4453,
+"openbaar": 2047,
+"samenwerking": 234
+},
+"GM0402": {
+"all": 9111,
+"openbaar": 3353,
+"samenwerking": 0
+},
+"GM0405": {
+"all": 6845,
+"openbaar": 2777,
+"samenwerking": 0
+},
+"GM0406": {
+"all": 3621,
+"openbaar": 360,
+"samenwerking": 0
+},
+"GM0415": {
+"all": 987,
+"openbaar": 368,
+"samenwerking": 0
+},
+"GM0417": {
+"all": 1006,
+"openbaar": 164,
+"samenwerking": 0
+},
+"GM0420": {
+"all": 3401,
+"openbaar": 1071,
+"samenwerking": 0
+},
+"GM0431": {
+"all": 847,
+"openbaar": 572,
+"samenwerking": 0
+},
+"GM0432": {
+"all": 960,
+"openbaar": 217,
+"samenwerking": 0
+},
+"GM0437": {
+"all": 1308,
+"openbaar": 651,
+"samenwerking": 0
+},
+"GM0439": {
+"all": 7670,
+"openbaar": 4405,
+"samenwerking": 768
+},
+"GM0441": {
+"all": 3485,
+"openbaar": 1257,
+"samenwerking": 69
+},
+"GM0448": {
+"all": 929,
+"openbaar": 380,
+"samenwerking": 0
+},
+"GM0450": {
+"all": 1094,
+"openbaar": 209,
+"samenwerking": 0
+},
+"GM0451": {
+"all": 2843,
+"openbaar": 385,
+"samenwerking": 0
+},
+"GM0453": {
+"all": 5341,
+"openbaar": 1414,
+"samenwerking": 85
+},
+"GM0473": {
+"all": 948,
+"openbaar": 491,
+"samenwerking": 0
+},
+"GM0479": {
+"all": 13704,
+"openbaar": 6205,
+"samenwerking": 710
+},
+"GM0482": {
+"all": 1860,
+"openbaar": 471,
+"samenwerking": 0
+},
+"GM0484": {
+"all": 9704,
+"openbaar": 1464,
+"samenwerking": 301
+},
+"GM0489": {
+"all": 5062,
+"openbaar": 1007,
+"samenwerking": 0
+},
+"GM0498": {
+"all": 1575,
+"openbaar": 482,
+"samenwerking": 0
+},
+"GM0502": {
+"all": 5439,
+"openbaar": 1807,
+"samenwerking": 0
+},
+"GM0503": {
+"all": 7388,
+"openbaar": 2065,
+"samenwerking": 0
+},
+"GM0505": {
+"all": 10532,
+"openbaar": 2946,
+"samenwerking": 0
+},
+"GM0512": {
+"all": 3837,
+"openbaar": 1278,
+"samenwerking": 161
+},
+"GM0513": {
+"all": 7248,
+"openbaar": 1770,
+"samenwerking": 0
+},
+"GM0518": {
+"all": 46388,
+"openbaar": 13946,
+"samenwerking": 837
+},
+"GM0523": {
+"all": 1835,
+"openbaar": 401,
+"samenwerking": 0
+},
+"GM0531": {
+"all": 3329,
+"openbaar": 1668,
+"samenwerking": 0
+},
+"GM0532": {
+"all": 2057,
+"openbaar": 303,
+"samenwerking": 0
+},
+"GM0534": {
+"all": 1694,
+"openbaar": 195,
+"samenwerking": 0
+},
+"GM0537": {
+"all": 5763,
+"openbaar": 477,
+"samenwerking": 0
+},
+"GM0542": {
+"all": 2645,
+"openbaar": 560,
+"samenwerking": 0
+},
+"GM0546": {
+"all": 8806,
+"openbaar": 3965,
+"samenwerking": 0
+},
+"GM0547": {
+"all": 2630,
+"openbaar": 987,
+"samenwerking": 0
+},
+"GM0553": {
+"all": 1934,
+"openbaar": 335,
+"samenwerking": 0
+},
+"GM0556": {
+"all": 3016,
+"openbaar": 773,
+"samenwerking": 0
+},
+"GM0569": {
+"all": 2320,
+"openbaar": 302,
+"samenwerking": 0
+},
+"GM0575": {
+"all": 3776,
+"openbaar": 1128,
+"samenwerking": 0
+},
+"GM0579": {
+"all": 3361,
+"openbaar": 1394,
+"samenwerking": 0
+},
+"GM0589": {
+"all": 820,
+"openbaar": 59,
+"samenwerking": 0
+},
+"GM0590": {
+"all": 2614,
+"openbaar": 1205,
+"samenwerking": 0
+},
+"GM0597": {
+"all": 4358,
+"openbaar": 1849,
+"samenwerking": 0
+},
+"GM0599": {
+"all": 55420,
+"openbaar": 18440,
+"samenwerking": 0
+},
+"GM0603": {
+"all": 4790,
+"openbaar": 1543,
+"samenwerking": 460
+},
+"GM0606": {
+"all": 7114,
+"openbaar": 3409,
+"samenwerking": 0
+},
+"GM0610": {
+"all": 2562,
+"openbaar": 585,
+"samenwerking": 0
+},
+"GM0613": {
+"all": 2436,
+"openbaar": 724,
+"samenwerking": 0
+},
+"GM0622": {
+"all": 6562,
+"openbaar": 1860,
+"samenwerking": 0
+},
+"GM0626": {
+"all": 2165,
+"openbaar": 437,
+"samenwerking": 204
+},
+"GM0627": {
+"all": 3209,
+"openbaar": 1153,
+"samenwerking": 0
+},
+"GM0629": {
+"all": 1962,
+"openbaar": 409,
+"samenwerking": 0
+},
+"GM0632": {
+"all": 4714,
+"openbaar": 559,
+"samenwerking": 0
+},
+"GM0637": {
+"all": 12007,
+"openbaar": 4598,
+"samenwerking": 0
+},
+"GM0638": {
+"all": 631,
+"openbaar": 0,
+"samenwerking": 0
+},
+"GM0642": {
+"all": 3641,
+"openbaar": 1419,
+"samenwerking": 0
+},
+"GM0654": {
+"all": 1767,
+"openbaar": 257,
+"samenwerking": 110
+},
+"GM0664": {
+"all": 3941,
+"openbaar": 897,
+"samenwerking": 0
+},
+"GM0668": {
+"all": 1507,
+"openbaar": 361,
+"samenwerking": 0
+},
+"GM0677": {
+"all": 1698,
+"openbaar": 415,
+"samenwerking": 0
+},
+"GM0678": {
+"all": 1220,
+"openbaar": 341,
+"samenwerking": 0
+},
+"GM0687": {
+"all": 4505,
+"openbaar": 1071,
+"samenwerking": 0
+},
+"GM0703": {
+"all": 2228,
+"openbaar": 259,
+"samenwerking": 0
+},
+"GM0715": {
+"all": 4005,
+"openbaar": 1225,
+"samenwerking": 0
+},
+"GM0716": {
+"all": 2530,
+"openbaar": 720,
+"samenwerking": 0
+},
+"GM0717": {
+"all": 1589,
+"openbaar": 373,
+"samenwerking": 0
+},
+"GM0718": {
+"all": 3092,
+"openbaar": 1104,
+"samenwerking": 621
+},
+"GM0736": {
+"all": 3609,
+"openbaar": 1414,
+"samenwerking": 0
+},
+"GM0737": {
+"all": 2667,
+"openbaar": 902,
+"samenwerking": 0
+},
+"GM0743": {
+"all": 1265,
+"openbaar": 324,
+"samenwerking": 0
+},
+"GM0744": {
+"all": 455,
+"openbaar": 0,
+"samenwerking": 0
+},
+"GM0748": {
+"all": 6003,
+"openbaar": 506,
+"samenwerking": 0
+},
+"GM0753": {
+"all": 2380,
+"openbaar": 0,
+"samenwerking": 134
+},
+"GM0755": {
+"all": 883,
+"openbaar": 279,
+"samenwerking": 0
+},
+"GM0757": {
+"all": 2524,
+"openbaar": 268,
+"samenwerking": 181
+},
+"GM0758": {
+"all": 16017,
+"openbaar": 1977,
+"samenwerking": 0
+},
+"GM0762": {
+"all": 2779,
+"openbaar": 383,
+"samenwerking": 0
+},
+"GM0765": {
+"all": 901,
+"openbaar": 466,
+"samenwerking": 0
+},
+"GM0766": {
+"all": 2054,
+"openbaar": 475,
+"samenwerking": 0
+},
+"GM0770": {
+"all": 1703,
+"openbaar": 379,
+"samenwerking": 0
+},
+"GM0772": {
+"all": 19420,
+"openbaar": 3456,
+"samenwerking": 0
+},
+"GM0777": {
+"all": 3647,
+"openbaar": 685,
+"samenwerking": 0
+},
+"GM0779": {
+"all": 1517,
+"openbaar": 57,
+"samenwerking": 0
+},
+"GM0784": {
+"all": 2154,
+"openbaar": 312,
+"samenwerking": 0
+},
+"GM0785": {
+"all": 2565,
+"openbaar": 971,
+"samenwerking": 0
+},
+"GM0794": {
+"all": 8236,
+"openbaar": 2287,
+"samenwerking": 0
+},
+"GM0796": {
+"all": 13246,
+"openbaar": 3026,
+"samenwerking": 0
+},
+"GM0797": {
+"all": 3594,
+"openbaar": 682,
+"samenwerking": 117
+},
+"GM0798": {
+"all": 1203,
+"openbaar": 271,
+"samenwerking": 0
+},
+"GM0809": {
+"all": 1736,
+"openbaar": 583,
+"samenwerking": 0
+},
+"GM0820": {
+"all": 1964,
+"openbaar": 469,
+"samenwerking": 0
+},
+"GM0823": {
+"all": 1402,
+"openbaar": 220,
+"samenwerking": 0
+},
+"GM0824": {
+"all": 2564,
+"openbaar": 662,
+"samenwerking": 0
+},
+"GM0826": {
+"all": 4756,
+"openbaar": 1384,
+"samenwerking": 0
+},
+"GM0828": {
+"all": 7732,
+"openbaar": 270,
+"samenwerking": 0
+},
+"GM0840": {
+"all": 1603,
+"openbaar": 113,
+"samenwerking": 0
+},
+"GM0845": {
+"all": 2556,
+"openbaar": 350,
+"samenwerking": 0
+},
+"GM0847": {
+"all": 1623,
+"openbaar": 328,
+"samenwerking": 304
+},
+"GM0848": {
+"all": 1679,
+"openbaar": 214,
+"samenwerking": 0
+},
+"GM0851": {
+"all": 1711,
+"openbaar": 65,
+"samenwerking": 0
+},
+"GM0852": {
+"all": 1361,
+"openbaar": 685,
+"samenwerking": 0
+},
+"GM0855": {
+"all": 17551,
+"openbaar": 2739,
+"samenwerking": 0
+},
+"GM0858": {
+"all": 2250,
+"openbaar": 693,
+"samenwerking": 0
+},
+"GM0861": {
+"all": 3845,
+"openbaar": 715,
+"samenwerking": 0
+},
+"GM0865": {
+"all": 3540,
+"openbaar": 1111,
+"samenwerking": 0
+},
+"GM0866": {
+"all": 1511,
+"openbaar": 177,
+"samenwerking": 0
+},
+"GM0867": {
+"all": 3898,
+"openbaar": 920,
+"samenwerking": 0
+},
+"GM0873": {
+"all": 1273,
+"openbaar": 213,
+"samenwerking": 0
+},
+"GM0879": {
+"all": 1572,
+"openbaar": 0,
+"samenwerking": 0
+},
+"GM0880": {
+"all": 1269,
+"openbaar": 876,
+"samenwerking": 308
+},
+"GM0882": {
+"all": 2366,
+"openbaar": 801,
+"samenwerking": 355
+},
+"GM0888": {
+"all": 988,
+"openbaar": 118,
+"samenwerking": 0
+},
+"GM0889": {
+"all": 879,
+"openbaar": 258,
+"samenwerking": 0
+},
+"GM0893": {
+"all": 801,
+"openbaar": 163,
+"samenwerking": 0
+},
+"GM0899": {
+"all": 1890,
+"openbaar": 153,
+"samenwerking": 0
+},
+"GM0907": {
+"all": 1310,
+"openbaar": 230,
+"samenwerking": 0
+},
+"GM0917": {
+"all": 7139,
+"openbaar": 626,
+"samenwerking": 0
+},
+"GM0928": {
+"all": 2840,
+"openbaar": 134,
+"samenwerking": 0
+},
+"GM0935": {
+"all": 7556,
+"openbaar": 1335,
+"samenwerking": 0
+},
+"GM0938": {
+"all": 1192,
+"openbaar": 190,
+"samenwerking": 0
+},
+"GM0944": {
+"all": 423,
+"openbaar": 0,
+"samenwerking": 0
+},
+"GM0946": {
+"all": 1162,
+"openbaar": 153,
+"samenwerking": 0
+},
+"GM0957": {
+"all": 5176,
+"openbaar": 1257,
+"samenwerking": 0
+},
+"GM0965": {
+"all": 629,
+"openbaar": 0,
+"samenwerking": 0
+},
+"GM0971": {
+"all": 1421,
+"openbaar": 404,
+"samenwerking": 0
+},
+"GM0981": {
+"all": 411,
+"openbaar": 138,
+"samenwerking": 0
+},
+"GM0983": {
+"all": 8281,
+"openbaar": 1381,
+"samenwerking": 0
+},
+"GM0984": {
+"all": 3229,
+"openbaar": 369,
+"samenwerking": 0
+},
+"GM0986": {
+"all": 937,
+"openbaar": 0,
+"samenwerking": 0
+},
+"GM0988": {
+"all": 3903,
+"openbaar": 887,
+"samenwerking": 0
+},
+"GM0994": {
+"all": 1091,
+"openbaar": 379,
+"samenwerking": 0
+},
+"GM0995": {
+"all": 8008,
+"openbaar": 4476,
+"samenwerking": 0
+},
+"GM1507": {
+"all": 3031,
+"openbaar": 710,
+"samenwerking": 0
+},
+"GM1509": {
+"all": 2556,
+"openbaar": 462,
+"samenwerking": 0
+},
+"GM1525": {
+"all": 3050,
+"openbaar": 812,
+"samenwerking": 0
+},
+"GM1581": {
+"all": 4446,
+"openbaar": 1200,
+"samenwerking": 194
+},
+"GM1586": {
+"all": 2369,
+"openbaar": 0,
+"samenwerking": 0
+},
+"GM1598": {
+"all": 1740,
+"openbaar": 633,
+"samenwerking": 0
+},
+"GM1621": {
+"all": 6402,
+"openbaar": 1306,
+"samenwerking": 0
+},
+"GM1640": {
+"all": 2460,
+"openbaar": 50,
+"samenwerking": 0
+},
+"GM1641": {
+"all": 1502,
+"openbaar": 0,
+"samenwerking": 0
+},
+"GM1652": {
+"all": 2654,
+"openbaar": 403,
+"samenwerking": 465
+},
+"GM1655": {
+"all": 2325,
+"openbaar": 327,
+"samenwerking": 0
+},
+"GM1658": {
+"all": 1861,
+"openbaar": 248,
+"samenwerking": 0
+},
+"GM1659": {
+"all": 1692,
+"openbaar": 416,
+"samenwerking": 0
+},
+"GM1667": {
+"all": 1139,
+"openbaar": 251,
+"samenwerking": 0
+},
+"GM1669": {
+"all": 1291,
+"openbaar": 0,
+"samenwerking": 0
+},
+"GM1674": {
+"all": 6367,
+"openbaar": 1788,
+"samenwerking": 0
+},
+"GM1676": {
+"all": 2571,
+"openbaar": 1232,
+"samenwerking": 0
+},
+"GM1680": {
+"all": 1590,
+"openbaar": 1462,
+"samenwerking": 0
+},
+"GM1681": {
+"all": 1749,
+"openbaar": 1060,
+"samenwerking": 0
+},
+"GM1690": {
+"all": 1820,
+"openbaar": 1229,
+"samenwerking": 0
+},
+"GM1695": {
+"all": 381,
+"openbaar": 281,
+"samenwerking": 0
+},
+"GM1696": {
+"all": 1819,
+"openbaar": 495,
+"samenwerking": 66
+},
+"GM1699": {
+"all": 2349,
+"openbaar": 1835,
+"samenwerking": 0
+},
+"GM1700": {
+"all": 2829,
+"openbaar": 269,
+"samenwerking": 0
+},
+"GM1701": {
+"all": 1275,
+"openbaar": 1001,
+"samenwerking": 0
+},
+"GM1705": {
+"all": 3733,
+"openbaar": 470,
+"samenwerking": 0
+},
+"GM1706": {
+"all": 1505,
+"openbaar": 422,
+"samenwerking": 0
+},
+"GM1708": {
+"all": 3607,
+"openbaar": 1428,
+"samenwerking": 0
+},
+"GM1709": {
+"all": 2705,
+"openbaar": 503,
+"samenwerking": 0
+},
+"GM1711": {
+"all": 2075,
+"openbaar": 481,
+"samenwerking": 0
+},
+"GM1714": {
+"all": 1243,
+"openbaar": 612,
+"samenwerking": 72
+},
+"GM1719": {
+"all": 1927,
+"openbaar": 39,
+"samenwerking": 0
+},
+"GM1721": {
+"all": 2507,
+"openbaar": 145,
+"samenwerking": 0
+},
+"GM1723": {
+"all": 765,
+"openbaar": 0,
+"samenwerking": 0
+},
+"GM1724": {
+"all": 1327,
+"openbaar": 0,
+"samenwerking": 0
+},
+"GM1728": {
+"all": 1617,
+"openbaar": 76,
+"samenwerking": 0
+},
+"GM1729": {
+"all": 917,
+"openbaar": 0,
+"samenwerking": 0
+},
+"GM1730": {
+"all": 3424,
+"openbaar": 1951,
+"samenwerking": 0
+},
+"GM1731": {
+"all": 2278,
+"openbaar": 1393,
+"samenwerking": 0
+},
+"GM1734": {
+"all": 4330,
+"openbaar": 784,
+"samenwerking": 0
+},
+"GM1735": {
+"all": 2431,
+"openbaar": 973,
+"samenwerking": 0
+},
+"GM1740": {
+"all": 2961,
+"openbaar": 345,
+"samenwerking": 0
+},
+"GM1742": {
+"all": 3780,
+"openbaar": 490,
+"samenwerking": 0
+},
+"GM1771": {
+"all": 3075,
+"openbaar": 425,
+"samenwerking": 0
+},
+"GM1773": {
+"all": 1194,
+"openbaar": 420,
+"samenwerking": 339
+},
+"GM1774": {
+"all": 2015,
+"openbaar": 214,
+"samenwerking": 0
+},
+"GM1783": {
+"all": 10988,
+"openbaar": 1260,
+"samenwerking": 0
+},
+"GM1842": {
+"all": 2261,
+"openbaar": 497,
+"samenwerking": 0
+},
+"GM1859": {
+"all": 3295,
+"openbaar": 1383,
+"samenwerking": 0
+},
+"GM1876": {
+"all": 2073,
+"openbaar": 636,
+"samenwerking": 82
+},
+"GM1883": {
+"all": 6400,
+"openbaar": 1554,
+"samenwerking": 273
+},
+"GM1884": {
+"all": 2215,
+"openbaar": 247,
+"samenwerking": 1449
+},
+"GM1891": {
+"all": 1895,
+"openbaar": 531,
+"samenwerking": 0
+},
+"GM1892": {
+"all": 4738,
+"openbaar": 1627,
+"samenwerking": 0
+},
+"GM1894": {
+"all": 3189,
+"openbaar": 568,
+"samenwerking": 0
+},
+"GM1895": {
+"all": 2846,
+"openbaar": 1839,
+"samenwerking": 0
+},
+"GM1896": {
+"all": 2350,
+"openbaar": 345,
+"samenwerking": 0
+},
+"GM1900": {
+"all": 7494,
+"openbaar": 2102,
+"samenwerking": 151
+},
+"GM1901": {
+"all": 3352,
+"openbaar": 688,
+"samenwerking": 0
+},
+"GM1903": {
+"all": 1976,
+"openbaar": 89,
+"samenwerking": 0
+},
+"GM1904": {
+"all": 5348,
+"openbaar": 1703,
+"samenwerking": 0
+},
+"GM1911": {
+"all": 3402,
+"openbaar": 1481,
+"samenwerking": 200
+},
+"GM1916": {
+"all": 5854,
+"openbaar": 1039,
+"samenwerking": 230
+},
+"GM1924": {
+"all": 4313,
+"openbaar": 1432,
+"samenwerking": 0
+},
+"GM1926": {
+"all": 5392,
+"openbaar": 761,
+"samenwerking": 0
+},
+"GM1930": {
+"all": 7532,
+"openbaar": 3321,
+"samenwerking": 0
+},
+"GM1931": {
+"all": 4444,
+"openbaar": 2046,
+"samenwerking": 187
+},
+"GM1940": {
+"all": 3867,
+"openbaar": 1014,
+"samenwerking": 0
+},
+"GM1942": {
+"all": 6305,
+"openbaar": 1105,
+"samenwerking": 165
+},
+"GM1945": {
+"all": 2763,
+"openbaar": 223,
+"samenwerking": 0
+},
+"GM1948": {
+"all": 6683,
+"openbaar": 1225,
+"samenwerking": 0
+},
+"GM1949": {
+"all": 3711,
+"openbaar": 1697,
+"samenwerking": 0
+},
+"GM1950": {
+"all": 1620,
+"openbaar": 974,
+"samenwerking": 0
+},
+"GM1952": {
+"all": 4152,
+"openbaar": 2306,
+"samenwerking": 0
+},
+"GM1954": {
+"all": 2380,
+"openbaar": 0,
+"samenwerking": 0
+},
+"GM1955": {
+"all": 2817,
+"openbaar": 322,
+"samenwerking": 0
+},
+"GM1959": {
+"all": 5103,
+"openbaar": 802,
+"samenwerking": 0
+},
+"GM1960": {
+"all": 4356,
+"openbaar": 1893,
+"samenwerking": 0
+},
+"GM1961": {
+"all": 5875,
+"openbaar": 1418,
+"samenwerking": 0
+},
+"GM1963": {
+"all": 7450,
+"openbaar": 3290,
+"samenwerking": 0
+},
+"GM1966": {
+"all": 3487,
+"openbaar": 1261,
+"samenwerking": 82
+},
+"GM1969": {
+"all": 5099,
+"openbaar": 1969,
+"samenwerking": 0
+},
+"GM1970": {
+"all": 3695,
+"openbaar": 771,
+"samenwerking": 0
+},
+"GM1978": {
+"all": 4017,
+"openbaar": 1138,
+"samenwerking": 0
+},
+"GM1979": {
+"all": 3217,
+"openbaar": 1695,
+"samenwerking": 0
+},
+"GM1980": {
+"all": 8147,
+"openbaar": 2162,
+"samenwerking": 92
+},
+"GM1982": {
+"all": 6763,
+"openbaar": 1158,
+"samenwerking": 0
+},
+"GM1991": {
+"all": 4809,
+"openbaar": 559,
+"samenwerking": 413
+},
+"GM1992": {
+"all": 5738,
+"openbaar": 3747,
+"samenwerking": 0
+}
+}
+}

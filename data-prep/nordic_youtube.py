@@ -45,11 +45,16 @@ C = {
                edu=r"educaci[óo]n|escuela|ugel", meet=r"sesi[óo]n|concejo|comisi[óo]n"),
     "ES": dict(file="spain", q="pleno ayuntamiento {} {region}", chan=r"ayuntamiento|ajuntament|concello|udala|ayto|ajto|concejo|municipal|ple\b|pleno",
                edu=r"educaci[óo]n|educaci[óo]|ensenyament|escolar|ense[ñn]anza|hezkuntza", meet=r"pleno|\bple\b|plenari|sesi[óo]n|sessi[óo]|comisi[óo]n|comissi[óo]|consejo escolar|osoko bilkura"),
+    # Latvia and Estonia: municipal councils (dome / volikogu) and their education committees.
+    "LV": dict(file="latvia", q="{} domes sēde", chan=r"novad|dome|pa[sš]vald|pils[eē]t|valstspils",
+               edu=r"izgl[iī]t[iī]b|skol", meet=r"s[eē]de|komitej|dome"),
+    "EE": dict(file="estonia", q="{} volikogu istung", chan=r"vald|linn|volikogu|valitsus",
+               edu=r"haridus|kool|noor", meet=r"istung|komisjon|volikogu"),
     "NL": dict(file="netherlands", q="gemeente {} raadsvergadering", chan=r"gemeente|gemeenteraad|raad|griffie",
                edu=r"onderwijs|jeugd|school|kind",
                meet=r"commissie|raad|vergadering|beeldvorm|oordeelvorm"),
 }
-GENERIC = set("kommune kommun kunta kaupunki stad gemeente municipality the og och ja en de het city district stadt kreis landkreis del la el los las do da dos das e".split())
+GENERIC = set("vald linn novads kommune kommun kunta kaupunki stad gemeente municipality the og och ja en de het city district stadt kreis landkreis del la el los las do da dos das e".split())
 ANY_MEET = {cc: re.compile(c["meet"], re.I) for cc, c in C.items()}
 
 
