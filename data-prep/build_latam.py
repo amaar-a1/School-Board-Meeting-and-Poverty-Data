@@ -415,6 +415,8 @@ def write(cc, key, rows, feats):
     cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
     for c in ("Autonomous community", "Province"):
         if c in cols: cols.remove(c); cols.insert(cols.index("Region") + 1, c)
+    PRIV = "Private school enrollment (within its borders)"   # Brazil: public share is public over public plus private
+    if any(r.get(PRIV) not in (None, "") for r in rows): cols.insert(cols.index("Public school enrollment") + 1, PRIV)
     # Spain's regional stand-in rate goes near the end, out of the summary figures (the first number columns).
     for c in ("Poverty rate (region, all ages)", ES_EST):
         if c in cols: cols.remove(c); cols.insert(len(cols) - 1, c)
@@ -672,6 +674,10 @@ def brazil():
     # Pupils in schools located in each municipality: INEP, Sinopse Estatística da Educação Básica 2025, table 1.1
     # (ensino fundamental + ensino médio, all networks). Replaces the census count of residents attending school.
     sin = {r["ibge7"]: int(r["fundamental"]) + int(r["medio"]) for r in csv.DictReader(open(os.path.join(d, "inep_sinopse_2025_matriculas.csv"), encoding="utf-8"))}
+    # Who runs the schools: INEP, Sinopse 2025, table 1.2 (all of basic education, by dependência administrativa).
+    # Public = federal + state + municipal networks; private = the rede privada, including community, religious and
+    # philanthropic schools (privately run even where publicly funded).
+    dep = {r["ibge7"]: (int(r["public"]), int(r["private"])) for r in csv.DictReader(open(os.path.join(d, "inep_sinopse_2025_matriculas_dependencia.csv"), encoding="utf-8"))}
     adm1 = json.load(open(os.path.join(d, "gb_BRA_ADM1.geojson"), encoding="utf-8"))["features"]
     st = {id(f): BR_ABBR.get(f["properties"]["shapeISO"].split("-")[-1]) for f in adm1}
     adm2 = json.load(open(os.path.join(d, "gb_BRA_ADM2.geojson"), encoding="utf-8"))["features"]
@@ -693,6 +699,7 @@ def brazil():
                      "Bolsa Família families": fam.get(code, ""), "Households": hh or "",
                      "Enrollment": sin.get(code, x.get("Enrollment", "")),
                      "Enrollment year": "2025 (pupils in ensino fundamental and médio in the municipality's schools; INEP Censo Escolar)" if code in sin else "2022 Census (residents aged 6–17 attending school; IBGE)" if x.get("Enrollment") else "",
+                     "Public school enrollment": dep[code][0] if code in dep else "", "Private school enrollment (within its borders)": dep[code][1] if code in dep else "",
                      "Children 6–17": x.get("Children 6–17", ""), "School system": "Municipal and state school networks",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
