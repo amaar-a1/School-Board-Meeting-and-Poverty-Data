@@ -180,3 +180,5 @@ footer p { margin: 0 0 6px; }
 /* Language menu, top right of the header. */
 .lang-select { float: right; font-size: 0.9rem; display: inline-flex; gap: 0.35rem; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
 @media (max-width: 600px) { .lang-select { float: none; display: flex; justify-content: flex-start; margin-bottom: 0.5rem; } }
+#boards-table tr.total td { border-top: 2px solid var(--border); font-weight: 600; }
+#boards-table tr.highlight td { background: color-mix(in srgb, var(--accent) 14%, transparent); font-weight: 600; }

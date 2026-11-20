@@ -40,6 +40,7 @@
         <option data-view-tab="size" value="size">By district size</option>
         <option data-view-tab="locale" value="locale">By locale</option>
         <option data-view-tab="density" value="density">By density &amp; public schools</option>
+        <option data-view-tab="boards" value="boards">School boards only</option>
         <option data-view-tab="rules" value="rules">State rules</option>
         <option data-view-tab="map" value="map">Map</option>
         <option data-view-tab="trends" value="trends">Trends</option>
@@ -260,6 +261,7 @@
               </select>
             </label>
             <label>Go to <select id="map-jump"></select></label>
+            <label id="map-boards-wrap" hidden title="Leave out town council and parliament meetings counted as stand-ins where there is no school board"><input type="checkbox" id="map-boards-only"> School boards only</label>
             <label><input type="checkbox" id="map-secondary"> Secondary districts</label>
             <label><input type="checkbox" id="map-fr-small"> Smaller French communes</label>
             <label><input type="checkbox" id="map-canada-overlap"> Overlapping Canadian boards</label>
@@ -323,6 +325,17 @@
         </section>
         <p class="note">A dash (–) means the group has none, so there is nothing to average. Poverty measures differ between countries (see each country's note), so compare groups within a country.</p>
       </div>
+    </div>
+
+    <div data-view="boards" hidden>
+      <section class="card">
+        <h2>School board meetings only</h2>
+        <p class="muted">Many countries have no elected school board, so this site often counts a stand-in: the town council's meetings, or a cantonal or territorial parliament's. This tab leaves the stand-ins out and counts only meetings of a school board or its closest equivalent: school boards (the US, Canada, Guam and the Northern Mariana Islands), Ireland's Education and Training Boards, UK councils' education and children's committees, municipal education or school committees (where a country's councils record them), and Japan's boards of education. Places whose only meetings are a stand-in count as having none here.</p>
+        <p id="boards-note" class="muted"></p>
+        <div class="table-scroll"><table id="boards-table"><thead></thead><tbody></tbody></table></div>
+        <div class="chart-box"><canvas id="boards-chart" role="img" aria-label="Bar chart: share of places with school board meetings, by country"></canvas></div>
+        <p class="note">Poverty measures differ between countries (see each country's note), so compare the two poverty columns within a row, not between rows. A dash (–) means the group has none.</p>
+      </section>
     </div>
 
     <div data-view="rules" hidden>
