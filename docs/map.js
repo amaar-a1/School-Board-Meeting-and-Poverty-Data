@@ -362,13 +362,22 @@
   const noEst = () => !!($("map-no-est") && $("map-no-est").checked);
   const EST_HIDDEN = "#d4d4d4";
 
+  // The "Color by" choice. A browser restoring the page after a reload (or after dropping the tab to save memory)
+  // can leave the menu with no option chosen; fall back to the poverty colouring instead of breaking the map.
+  function metricNow() {
+    const sel = $("map-metric");
+    if (sel && (SCALES[sel.value] || sel.value === "locale")) return sel.value;
+    if (sel) sel.value = "poverty";
+    return "poverty";
+  }
+
   function color(row, id) {
     const c = colorOf(row, id);
-    return c !== NO_DATA && noEst() && isEstimate($("map-metric").value, row, id) ? EST_HIDDEN : c;
+    return c !== NO_DATA && noEst() && isEstimate(metricNow(), row, id) ? EST_HIDDEN : c;
   }
 
   function colorOf(row, id) {
-    const metric = $("map-metric").value, sc = SCALES[metric];
+    const metric = metricNow(), sc = SCALES[metric];
     if (metric === "locale") return localeColor(row && !row.Locale ? { Locale: localeFallback(row, id) } : row);
     if (metric === "rank" && row && String(row[sc.column] ?? "") === "") { const k = rankFallback(row, id); if (k !== "") row = { [sc.column]: k }; }
     let v = row ? toNumber(row[row[sc.column] === undefined && sc.caColumn ? sc.caColumn : sc.column]) : NaN;
@@ -534,8 +543,8 @@
   const ukView = () => current && (current.country === "UK" || (current.parent && current.parent.country === "UK"));
 
   function legend() {
-    const sc = SCALES[$("map-metric").value];
-    const items = $("map-metric").value === "locale"
+    const sc = SCALES[metricNow()];
+    const items = metricNow() === "locale"
       // Every kind, not just the current view's: the map also draws the neighbouring countries.
       ? [...LOCALES.filter((g) => !g.hide).map((g) => `<span><i style="background:${g.color}"></i>${g.label}</span>`),
         `<span><i style="background:${NO_DATA}"></i>No locale</span>`,
@@ -543,16 +552,16 @@
       : sc.labels.map((l, i) => `<span><i style="background:${sc.colors[i]}"></i>${l}</span>`);
     const jpv = current && current.country === "JP";
     const own = current && OWN_SCALE[current.country];
-    if (own && $("map-metric").value === "poverty") items.splice(0, items.length, ...SCALES[own].labels.map((l, i) => `<span><i style="background:${SCALES[own].colors[i]}"></i>${l}</span>`));
-    if ((current && (current.country === "BE" || current.combined)) && $("map-metric").value === "poverty")
+    if (own && metricNow() === "poverty") items.splice(0, items.length, ...SCALES[own].labels.map((l, i) => `<span><i style="background:${SCALES[own].colors[i]}"></i>${l}</span>`));
+    if ((current && (current.country === "BE" || current.combined)) && metricNow() === "poverty")
       items.push(`<span class="map-faded">Belgium: people on the integration income (leefloon / revenu d'intégration) per 100 inhabitants, on its own scale${current.country === "BE" ? "" : " (under 0.5% to 6% or more)"}</span>`);
-    if ((current && (current.country === "PT" || current.combined)) && $("map-metric").value === "poverty")
+    if ((current && (current.country === "PT" || current.combined)) && metricNow() === "poverty")
       items.push(`<span class="map-faded">Portugal: people on the minimum-income benefit (RSI) per 100 of working age, on its own scale${current.country === "PT" ? "" : " (under 1% to 8% or more)"}</span>`);
-    if ((current && (current.country === "LV" || current.combined)) && $("map-metric").value === "poverty")
+    if ((current && (current.country === "LV" || current.combined)) && metricNow() === "poverty")
       items.push(`<span class="map-faded">Latvia: children on the basic means-tested benefits per 100 children, on its own scale${current.country === "LV" ? "" : " (under 1% to 8% or more)"}</span>`);
-    if ((current && (current.country === "EE" || current.combined)) && $("map-metric").value === "poverty")
+    if ((current && (current.country === "EE" || current.combined)) && metricNow() === "poverty")
       items.push(`<span class="map-faded">Estonia: subsistence-benefit applications granted per 100 residents in an average month, on its own scale${current.country === "EE" ? "" : " (under 0.5% to 3% or more)"}</span>`);
-    if ((jpv || (current && current.combined)) && $("map-metric").value === "poverty")
+    if ((jpv || (current && current.combined)) && metricNow() === "poverty")
       items.push(`<span class="map-faded">Japan: the welfare rate (people on public assistance), on its own scale${jpv ? "" : " (under 0.5% to 3% or more)"}; published for designated and core cities, and each prefecture's rate elsewhere</span>`);
     const ca = current && (current.country === "CA" || current.parent || current.combined);
     const euv = current && EU[current.country] ? current.country : null;
@@ -560,54 +569,54 @@
     const faded = [];
     if (current && current.state) faded.push(current.state === "territories" ? "outside the U.S. territories" : `outside ${current.name}`);
     else if (ca && !current.combined) faded.push("outside Canada");
-    if ((current && (current.country === "FR" || current.combined)) && $("map-metric").value === "poverty")
+    if ((current && (current.country === "FR" || current.combined)) && metricNow() === "poverty")
       items.push(`<span class="map-faded">Saint-Pierre-et-Miquelon: unemployment rate (2015 est.) in place of child poverty, which isn't published there</span>`);
     if (euv === "ES" || (current && current.combined)) items.push(`<span><i style="background:${NO_DISTRICT}"></i>Spain: land shared by several towns, part of no municipality</span>`);
-    if ((euv === "FRA" || (current && current.combined)) && $("map-metric").value === "poverty")
+    if ((euv === "FRA" || (current && current.combined)) && metricNow() === "poverty")
       items.push(`<span class="map-faded">France overseas: Guadeloupe, Martinique, French Guiana and Mayotte have no commune rates, so each commune shows its département's rate (INSEE; Guadeloupe, French Guiana and Mayotte from a 2017 survey)</span>`);
     if (euv === "EC" || (current && current.combined)) items.push(`<span><i style="background:${NO_DISTRICT}"></i>Ecuador: zones whose canton is disputed, part of no canton</span>`);
     if (euv === "FRA" || (current && current.combined)) items.push(`<span class="map-faded">France: communes too small for INSEE to publish a rate show their département's rate; tick “Smaller French communes” to draw each one</span>`);
     if (current && current.country === "FR") faded.push("outside Saint-Pierre-et-Miquelon");
     if (current && current.country === "IE") faded.push("outside Ireland");
     if (euv && !current.state) faded.push(`outside ${euv === "NL" ? "the Netherlands" : EU_NAMES[euv]}`);
-    if ((euv || (current && current.combined)) && $("map-metric").value === "poverty")
+    if ((euv || (current && current.combined)) && metricNow() === "poverty")
       items.push(`<span class="map-faded">${euv === "ISLE" ? "Islands and microstates: the best figure available for each (child low income, the national poverty line or unemployment), not comparable with each other" : `${euv ? EU_NAMES[euv] : "Other countries"}: each country's own ${ALL_AGES.has(euv) ? "poverty measure (all ages)" : "child low-income measure"}, not comparable with each other or with the US rate`}</span>`);
-    if (current && (current.country === "IE" || current.combined) && $("map-metric").value === "poverty")
+    if (current && (current.country === "IE" || current.combined) && metricNow() === "poverty")
       items.push(`<span class="map-faded">Ireland: overall poverty rate of each board's region (Eurostat), since no local or child rate is published</span>`);
     const ukv = current && (current.country === "UK" || (current.parent && current.parent.country === "UK"));
     if (ukv && !current.state) faded.push("outside the United Kingdom");
-    if ((euv === "ES" || (current && current.combined)) && $("map-metric").value === "poverty")
+    if ((euv === "ES" || (current && current.combined)) && metricNow() === "poverty")
       items.push(`<span class="map-faded">Spain: small municipalities with no child figure from INE show an estimate from their province's smaller municipalities that have one</span>`);
-    if ((ukv || (current && current.combined)) && $("map-metric").value === "poverty")
+    if ((ukv || (current && current.combined)) && metricNow() === "poverty")
       items.push(`<span class="map-faded">UK: children under 16 in relative low income (DWP, 2024–25), not the same measure as the US or Canadian rates</span>`);
-    if (ca && $("map-metric").value === "poverty") items.push(`<span class="map-faded">${current.combined ? "Canadian boards" : "Canada"}: share of children 0–17 in low income (LIM-AT, 2020), not the same measure as the US child poverty rate</span>`);
+    if (ca && metricNow() === "poverty") items.push(`<span class="map-faded">${current.combined ? "Canadian boards" : "Canada"}: share of children 0–17 in low income (LIM-AT, 2020), not the same measure as the US child poverty rate</span>`);
     if (window.SiteFilters && window.SiteFilters.active()) faded.push("that don't match the filters");
-    if ((euv === "ES" || (current && current.combined)) && $("map-metric").value === "rank")
+    if ((euv === "ES" || (current && current.combined)) && metricNow() === "rank")
       items.push(`<span class="map-faded">Spain: small municipalities with no child figure are ranked by their province's estimate</span>`);
-    if ($("map-metric").value === "density")
+    if (metricNow() === "density")
       items.push(`<span><i style="background:${NO_DATA}"></i>No population figure</span>`,
         `<span class="map-faded">People per km²: each place's population over its land area (for US districts, the Census's 2024 population over the district's border); places under 100 are estimated rural, 100–499 mixed, 500–1,999 suburban and 2,000 or more urban</span>`);
-    if ($("map-metric").value === "enrollment")
+    if (metricNow() === "enrollment")
       items.push(`<span><i style="background:${NO_DATA}"></i>No enrollment figure</span>`,
         `<span class="map-faded">Enrollment is counted differently from country to country (pupils at the place's schools, or pupils living there; some count only primary schools): see each view's note. Where no count is published, the figure is an estimate (school-age children living there), marked in the tooltip</span>`);
-    if ($("map-metric").value === "peers")
+    if (metricNow() === "peers")
       items.push(`<span><i style="background:${NO_DATA}"></i>No enrollment figure (no size to compare by)</span>`,
         `<span class="map-faded">The share of places in the same country and the same size tier (by enrollment, as on the By district size tab: ${TIERS.map((t) => `${t.name} ${tierRange(t)}`).join(", ")}) that have fewer meetings found. Places with no meetings found are at 0%</span>`);
-    if ($("map-metric").value === "recency")
+    if (metricNow() === "recency")
       items.push(`<span><i style="background:${NO_DATA}"></i>No meeting found (or no date for it)</span>`,
         `<span class="map-faded">Time since the latest meeting found. Some sources give only the year or month: those count from mid-year or mid-month</span>`);
-    if ($("map-metric").value === "public")
+    if (metricNow() === "public")
       items.push(`<span><i style="background:${NO_DATA}"></i>No public/private split published</span>`,
         `<span class="map-faded">Share of pupils in public schools. US districts: NCES public enrollment (2023) against private-school pupils inside the district's border (NCES Private School Survey 2021-22; secondary-only districts have no figure). Elsewhere: the public count against all pupils counted, where the source splits them</span>`);
-    if ($("map-metric").value === "rank")
+    if (metricNow() === "rank")
       items.push(`<span class="map-faded">Rank within each country: where a place's poverty figure falls among its own country's places, so colours compare across countries even though the measures differ</span>`);
     // Places shown with no figure in this colouring (Svalbard and Pitcairn publish no poverty figure).
-    if ((euv === "ISLE" || (current && current.combined)) && ["poverty", "rank"].includes($("map-metric").value) && Object.values(layers).some((l) => l.getLayers().some((f) => f.feature && !isWorld(f.feature) && !undefinedArea(f.feature) && style(f.feature).fillColor === NO_DATA)))
+    if ((euv === "ISLE" || (current && current.combined)) && ["poverty", "rank"].includes(metricNow()) && Object.values(layers).some((l) => l.getLayers().some((f) => f.feature && !isWorld(f.feature) && !undefinedArea(f.feature) && style(f.feature).fillColor === NO_DATA)))
       items.push(`<span><i style="background:${NO_DATA}"></i>No figure published</span>`);
     if (noEst()) items.push(`<span><i style="background:${EST_HIDDEN}"></i>Estimate, hidden (“No estimates” is ticked): ${{
       poverty: "a rate borrowed from a wider area or another place", rank: "a rank from a borrowed or estimated rate",
       enrollment: "school-age children living there, where no count is published", peers: "its size group comes from an estimated enrollment",
-      locale: "borrowed from its area's other places", density: "a French département's smaller communes taken together" }[$("map-metric").value] || "none in this colouring"}</span>`);
+      locale: "borrowed from its area's other places", density: "a French département's smaller communes taken together" }[metricNow()] || "none in this colouring"}</span>`);
     items.push(`<span><i style="background:${WORLD_STYLE.fillColor};border:1px solid ${WORLD_STYLE.color}"></i>Country not covered on this site</span>`);
     if (faded.length) items.push(`<span class="map-faded">Faded: districts ${faded.join(" or ")}</span>`);
     $("map-legend").innerHTML = items.join("");
@@ -963,7 +972,7 @@
     },
     // For checking: areas whose tooltip doesn't show the figure their colour comes from, in the current colouring.
     tipGaps: () => {
-      const metric = $("map-metric").value, out = [];
+      const metric = metricNow(), out = [];
       Object.entries(layers).forEach(([n, l]) => l.eachLayer((f) => {
         const ft = f.feature;
         if (!ft || isWorld(ft) || undefinedArea(ft)) return;

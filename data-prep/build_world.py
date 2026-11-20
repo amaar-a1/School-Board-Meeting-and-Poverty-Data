@@ -14,7 +14,7 @@ DST = os.path.join(HERE, "..", "docs", "data", "map", "world.json")
 COVERED = {"USA", "PRI", "VIR", "GUM", "MNP", "ASM", "CAN", "SPM", "GBR", "IRL", "NOR", "SWE", "FIN", "DNK", "NLD"}
 for f, iso in (("germany.csv", "DEU"), ("new-zealand.csv", "NZL"), ("iceland.csv", "ISL"), ("switzerland.csv", "CHE"), ("chile.csv", "CHL"), ("colombia.csv", "COL"), ("mexico.csv", "MEX"), ("brazil.csv", "BRA"), ("peru.csv", "PER"), ("spain.csv", "ESP"), ("france.csv", "FRA"), ("ecuador.csv", "ECU"),
                ("italy.csv", "ITA"), ("poland.csv", "POL"), ("japan.csv", "JPN"), ("belgium.csv", "BEL"), ("portugal.csv", "PRT"),
-               ("australia.csv", "AUS"), ("croatia.csv", "HRV"), ("philippines.csv", "PHL")):
+               ("australia.csv", "AUS"), ("croatia.csv", "HRV"), ("philippines.csv", "PHL"), ("latvia.csv", "LVA"), ("estonia.csv", "EST")):
     if os.path.exists(os.path.join(HERE, "..", "docs", "data", f)):
         COVERED.add(iso)
 ISL = os.path.join(HERE, "..", "docs", "data", "islands.csv")
