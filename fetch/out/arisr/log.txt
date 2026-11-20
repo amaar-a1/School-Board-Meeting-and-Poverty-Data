@@ -1,0 +1,20 @@
+== ar_indec_pobreza.html OK 38072 https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-46-152
+== ar_gb_adm1.json ERR <urlopen error [Errno 110] Connection timed out> https://www.geoboundaries.org/api/current/gbOpen/ARG/ADM1/
+== ar_gb_adm2.json ERR <urlopen error [Errno 110] Connection timed out> https://www.geoboundaries.org/api/current/gbOpen/ARG/ADM2/
+== ar_anuarios.html ERR HTTP Error 404: Not Found https://www.argentina.gob.ar/educacion/evaluacion-e-informacion-educativa/anuarios
+== ar_datos_matricula.json OK 180577 https://datos.gob.ar/api/3/action/package_search?q=matricula&rows=30
+== ar_datos_pobreza.json OK 203869 https://datos.gob.ar/api/3/action/package_search?q=pobreza&rows=30
+== ar_georef_prov.json OK 953 https://apis.datos.gob.ar/georef/api/provincias?campos=id,nombre&max=30
+== il_ckan__u05e8_u05e9_u05d5_u05d9_u05d5_u05ea_u05.json OK 370779 https://data.gov.il/api/3/action/package_search?rows=40&q=%D7%A8%D7%A9%D7%95%D7%99%D7%95%D7%AA%20%D7%9E%D7%A7%D7%95%D7%9E%D7%99%D7%95%D7%AA
+== il_ckan__u05de_u05d3_u05d3_u05d7_u05d1_u05e8_u05.json OK 55669 https://data.gov.il/api/3/action/package_search?rows=40&q=%D7%9E%D7%93%D7%93%20%D7%97%D7%91%D7%A8%D7%AA%D7%99%20%D7%9B%D7%9C%D7%9B%D7%9C%D7%99
+== il_ckan__u05d2_u05d1_u05d5_u05dc_u05d5_u05ea_u05.json OK 199 https://data.gov.il/api/3/action/package_search?rows=40&q=%D7%92%D7%91%D7%95%D7%9C%D7%95%D7%AA%20%D7%A9%D7%99%D7%A4%D7%95%D7%98
+== il_ckan__u05de_u05d5_u05e1_u05d3_u05d5_u05ea_u05.json OK 58322 https://data.gov.il/api/3/action/package_search?rows=40&q=%D7%9E%D7%95%D7%A1%D7%93%D7%95%D7%AA%20%D7%97%D7%99%D7%A0%D7%95%D7%9A
+== il_ckan__u05ea_u05dc_u05de_u05d9_u05d3_u05d9_u05.json OK 22487 https://data.gov.il/api/3/action/package_search?rows=40&q=%D7%AA%D7%9C%D7%9E%D7%99%D7%93%D7%99%D7%9D
+== il_ckan_local_authorities.json OK 11995 https://data.gov.il/api/3/action/package_search?rows=40&q=local%20authorities
+== il_gb_adm1.json ERR <urlopen error [Errno 110] Connection timed out> https://www.geoboundaries.org/api/current/gbOpen/ISR/ADM1/
+== il_gb_adm2.json ERR <urlopen error [Errno 110] Connection timed out> https://www.geoboundaries.org/api/current/gbOpen/ISR/ADM2/
+== il_cbs_la.html OK 39865 https://www.cbs.gov.il/he/publications/Pages/2024/%D7%94%D7%A8%D7%A9%D7%95%D7%99%D7%95%D7%AA-%D7%94%D7%9E%D7%A7%D7%95%D7%9E%D7%99%D7%95%D7%AA-%D7%91%D7%99%D7%A9%D7%A8%D7%90%D7%9C-2022.aspx
+== il_cbs_home.html OK 61863 https://www.cbs.gov.il/he/Pages/default.aspx
+== il_btl_poverty.html OK 145046 https://www.btl.gov.il/Publications/oni_report/Pages/default.aspx
+== il_osm_tags.json ERR <urlopen error [Errno 101] Network is unreachable> https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A120%5D%3Barea%5B%22ISO3166-1%22%3D%22IL%22%5D%5Badmin_level%3D2%5D-%3E.a%3Brel%28area.a%29%5Bboundary%3Dadministrative%5D%5Badmin_level~%22%5E%286%7C8%29%24%22%5D%3Bout%20tags%3B
+== ar_osm_prov_tags.json ERR <urlopen error [Errno 101] Network is unreachable> https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A120%5D%3Barea%5B%22ISO3166-1%22%3D%22AR%22%5D%5Badmin_level%3D2%5D-%3E.a%3Brel%28area.a%29%5Bboundary%3Dadministrative%5D%5Badmin_level%3D4%5D%3Bout%20tags%3B
