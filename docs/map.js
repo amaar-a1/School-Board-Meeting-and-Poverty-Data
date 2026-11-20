@@ -361,6 +361,11 @@
   }
   const noEst = () => !!($("map-no-est") && $("map-no-est").checked);
   const EST_HIDDEN = "#d4d4d4";
+  // "School boards only" (shown with the meetings colouring): places whose count is a council or parliament stand-in
+  // (app.js's "Meeting body" column) get their own colour instead of their count.
+  const STAND_IN_ONLY = "#cfd8e6";
+  const boardsOnly = () => metricNow() === "meetings" && !!($("map-boards-only") && $("map-boards-only").checked);
+  const standIn = (row) => !!row && /^Stand-in/.test(String(row["Meeting body"] || ""));
 
   // The "Color by" choice. A browser restoring the page after a reload (or after dropping the tab to save memory)
   // can leave the menu with no option chosen; fall back to the poverty colouring instead of breaking the map.
@@ -378,6 +383,7 @@
 
   function colorOf(row, id) {
     const metric = metricNow(), sc = SCALES[metric];
+    if (metric === "meetings" && boardsOnly() && standIn(row)) return STAND_IN_ONLY;
     if (metric === "locale") return localeColor(row && !row.Locale ? { Locale: localeFallback(row, id) } : row);
     if (metric === "rank" && row && String(row[sc.column] ?? "") === "") { const k = rankFallback(row, id); if (k !== "") row = { [sc.column]: k }; }
     let v = row ? toNumber(row[row[sc.column] === undefined && sc.caColumn ? sc.caColumn : sc.column]) : NaN;
@@ -484,6 +490,7 @@
       (!isNaN(frKids) ? `Children under 18 in poverty, whole département: ${frKids.toFixed(1)}%<br>` : "") +
       (isNaN(povValue(r)) && !isNaN(povValue(r, true)) ? `Shown on the map: ${povValue(r, true).toFixed(1)}% (${r["Unmet basic needs (NBI, 2010)"] ? "unmet basic needs, 2010" : `its latest earlier figure, ${String(r["Poverty by year"] || "").split(";").map((x) => x.trim().split(":")[0]).sort().pop()}`})<br>` : "") +
       `Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}` +
+      (standIn(r) ? " (a stand-in: council or parliament meetings, not a school board's)" : r["Meeting body"] ? " (school board or equivalent)" : "") +
       (toNumber(r["Other Board Meetings"]) > 0 ? `${r.State ? " on CivicSearch" : meet > 0 ? " recorded" : ""}; ${toNumber(r["Other Board Meetings"]).toLocaleString()} from ${r.State ? "other sources" : "the council's or board's own records"} (see note)` : "") + `<br>` +
       `Enrollment: ${isNaN(enr) ? "not reported" : enr.toLocaleString()}${r["Enrollment estimated"] ? " (estimated: school-age children, no count published)" : /estimated/i.test(r["Enrollment year"] || "") ? ` (${esc(r["Enrollment year"])})` : realZero(r) || (eu === "AU" && !/^2021 Census/.test(r["Enrollment year"] || "") && r["Enrollment year"]) ? ` (${esc(r["Enrollment year"])})` : ""}` + rankLine(r, gid(feature)) +
       peerLine(r, gid(feature)) +
@@ -550,6 +557,8 @@
         `<span><i style="background:${NO_DATA}"></i>No locale</span>`,
         `<span class="map-faded">Locale: the US uses NCES's locale codes and Canada Statistics Canada's population centre sizes; elsewhere it's estimated from population density (see the By locale tab)</span>`]
       : sc.labels.map((l, i) => `<span><i style="background:${sc.colors[i]}"></i>${l}</span>`);
+    if (boardsOnly()) items.push(`<span><i style="background:${STAND_IN_ONLY}"></i>Stand-in meetings only (town council or parliament, not a school board)</span>`);
+    if ($("map-boards-wrap")) $("map-boards-wrap").hidden = metricNow() !== "meetings";
     const jpv = current && current.country === "JP";
     const own = current && OWN_SCALE[current.country];
     if (own && metricNow() === "poverty") items.splice(0, items.length, ...SCALES[own].labels.map((l, i) => `<span><i style="background:${SCALES[own].colors[i]}"></i>${l}</span>`));
@@ -850,6 +859,7 @@
     sel.addEventListener("change", () => sel.value && jump(sel.value));
     $("map-metric").addEventListener("change", restyle);
     $("map-secondary").addEventListener("change", setSecondary);
+    if ($("map-boards-only")) $("map-boards-only").addEventListener("change", restyle);
     if ($("map-fr-small")) $("map-fr-small").addEventListener("change", () => setFrSmall());
     if ($("map-canada-overlap")) $("map-canada-overlap").addEventListener("change", setSecondary);
     if ($("map-no-est")) $("map-no-est").addEventListener("change", restyle);

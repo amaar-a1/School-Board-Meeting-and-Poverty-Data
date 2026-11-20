@@ -13,6 +13,27 @@
   let view = "overview";
   // A data set can bring its own comparison columns (Canada uses low income for ages 0-17).
   const cmpFor = (d) => (d && d.compare) || cfg.compare;
+  // Whose meetings a place's count is. "School board or equivalent": a school board (US, Canada, Guam, the Northern
+  // Marianas), an Irish ETB board, a UK council's education or children's committee, a municipal education or school
+  // committee, or a Japanese board of education. "Stand-in": the full town council, a cantonal or territorial
+  // parliament, or similar, counted where no school body's meetings are posted. Blank: no meetings found.
+  const BOARD = "School board or equivalent", STAND_IN = "Stand-in (council or parliament)";
+  const STAND_IN_COUNTRIES = new Set(["IS", "CH", "ISLE", "FR", "NZ"]);
+  function meetingBody(d, r) {
+    if (!(toNumber(r["Available Board Meetings"]) > 0 || toNumber(r["Other Board Meetings"]) > 0)) return "";
+    const t = String(r["Meetings type"] || "");
+    if (t) return /education committee|school committee|board of education/i.test(t) ? BOARD : STAND_IN;
+    if (STAND_IN_COUNTRIES.has(d.country)) return STAND_IN;
+    if (d.state === "territories" && /^72/.test(String(r["District ID"] || ""))) return STAND_IN;   // Puerto Rico: the Legislature's committee
+    return BOARD;
+  }
+  function tagBodies(d) {
+    d.rows.forEach((r) => { r["Meeting body"] = meetingBody(d, r); });
+    if (!d.columns.includes("Meeting body")) {
+      const at = d.columns.indexOf("Meetings type") >= 0 ? d.columns.indexOf("Meetings type") : d.columns.indexOf("Available Board Meetings");
+      d.columns.splice(at >= 0 ? at + 1 : d.columns.length, 0, "Meeting body");
+    }
+  }
 
   document.title = cfg.title;
   $("site-title").textContent = cfg.title;
@@ -101,6 +122,7 @@
     try {
       datasets = await Promise.all(cfg.dataFiles.map(async (d) => parse(d.name, await fetchCsv(d.file), d)));
       datasets.forEach(addRanks);
+      datasets.forEach(tagBodies);
       datasets.forEach((d) => {
         if (!d.note) return;
         const withMeetings = d.rows.filter((r) => toNumber(r[cmpFor(d).by]) > 0).length;
@@ -146,7 +168,7 @@
       const sp = d.simple;   // the Nordic countries and the Netherlands: municipalities, one shared layout
       if (sp) return out.push({
         District: r.District, Country: d.country === "ISLE" ? r.District : d.name, "State or province": sp.place ? r[sp.place] : "",
-        "Available Board Meetings": r["Available Board Meetings"] ?? "",
+        "Available Board Meetings": r["Available Board Meetings"] ?? "", "Meeting body": r["Meeting body"] ?? "",
         [c.metric]: pct(r[sp.pov]), "Poverty measure": sp.measureColumn ? r[sp.measureColumn] : sp.measure, Children: r[sp.children] ?? "", Enrollment: r.Enrollment ?? "",
         Locale: r.Locale ? `${d.localePrefix || d.name}: ${r.Locale}` : "", "Other Board Meetings": "", [RANK]: r[RANK] ?? "", _rankEst: r._rankEst,
         ...densPub(r),
@@ -156,7 +178,7 @@
         District: r.District,
         Country: ca ? "Canada" : fr ? "France (Saint-Pierre-et-Miquelon)" : uk ? "United Kingdom" : ie ? "Ireland" : terr ? "U.S. territories" : "United States",
         "State or province": ca ? r.Province : uk ? r.Nation : ie ? r.Region : (terr || fr) ? r.Territory : (ps.names[r.State] || r.State),
-        "Available Board Meetings": r["Available Board Meetings"] ?? "",
+        "Available Board Meetings": r["Available Board Meetings"] ?? "", "Meeting body": r["Meeting body"] ?? "",
         [c.metric]: pct(ca ? r["Percentage of Children Ages 0-17 in Low Income"] : ie ? r["Poverty rate (region, all ages)"] : fr ? r["Unemployment rate (stand-in for poverty)"]
           : uk ? r["Percentage of Children Under 16 in Low Income"] : r["Percentage of Children Ages 5-17 in Poverty"]),
         "Poverty measure": ca ? c.measures.canada : fr ? c.measures.france : uk ? c.measures.uk : ie ? c.measures.ireland : terr ? c.measures.territories : c.measures.us,
@@ -411,6 +433,7 @@
     if (view === "size") renderSize();
     if (view === "locale") renderLocale();
     if (view === "density") renderDensity();
+    if (view === "boards") renderBoards();
     if (view === "map" && window.SiteMap) window.SiteMap.show(current, datasets);
     if (view === "trends") renderTrends();
   }
@@ -424,6 +447,7 @@
     if (name === "size" && current) renderSize();
     if (name === "locale" && current) renderLocale();
     if (name === "density" && current) renderDensity();
+    if (name === "boards" && current) renderBoards();
     if (name === "map" && current && window.SiteMap) window.SiteMap.show(current, datasets);
     if (name === "trends" && current) renderTrends();
   }
@@ -690,6 +714,58 @@
     $("public-note").textContent = okP ? `${label[0].toUpperCase() + label.slice(1)} grouped by the share of their pupils in public schools (see each country's source for what counts as public).` +
       (current.rows.length - p.have.length ? ` ${(current.rows.length - p.have.length).toLocaleString()} without a public/private split are left out.` : "") : "";
     if (okP) { fill($("public-table"), p.gs, p.total, "Pupils in public schools"); shareChart("public-share-chart", p.gs); }
+  }
+
+  // "School boards only" tab: for each country, the places with meetings of a school board or its equivalent,
+  // leaving out council and parliament stand-ins (the "Meeting body" column).
+  function renderBoards() {
+    const src = combined || current;
+    if (!src) return;
+    const cmp = cmpFor(src);
+    const pov = (r) => toNumber(r[cmp.metric]);
+    const countryOf = (r) => (/^ISLE-/.test(String(r["District ID"] || "")) ? "Islands and microstates" : r.Country || src.name);
+    const by = new Map();
+    src.rows.forEach((r) => { const k = countryOf(r); if (!by.has(k)) by.set(k, []); by.get(k).push(r); });
+    const meet = (r) => Math.max(toNumber(r["Available Board Meetings"]) || 0, toNumber(r["Other Board Meetings"]) || 0);
+    const stats = (name, rows) => {
+      const board = rows.filter((r) => r["Meeting body"] === BOARD), notBoard = rows.filter((r) => r["Meeting body"] !== BOARD);
+      return { name, n: rows.length, nBoard: board.length, nStand: rows.filter((r) => r["Meeting body"] === STAND_IN).length,
+        share: rows.length ? 100 * board.length / rows.length : NaN,
+        avg: rows.length ? board.reduce((a, r) => a + meet(r), 0) / rows.length : NaN,
+        povWith: avg(board.map(pov).filter((v) => !isNaN(v))), povWithout: avg(notBoard.map(pov).filter((v) => !isNaN(v))), nWithout: notBoard.length };
+    };
+    const groups = [...by.entries()].map(([k, rows]) => stats(k, rows)).sort((a, b) => b.share - a.share || a.name.localeCompare(b.name));
+    const total = stats("All", src.rows);
+    const here = current && !current.combined ? (current.sourcesAs || current.name) : "";
+    const t = $("boards-table");
+    t.tHead.innerHTML = "";
+    const hr = t.tHead.insertRow();
+    ["Country", "Places", "With school board meetings", "Stand-in meetings only", "Avg school board meetings", "Poverty: with board meetings", "Poverty: without"]
+      .forEach((c, i) => { const th = document.createElement("th"); th.textContent = c; if (i) th.className = "num"; hr.appendChild(th); });
+    const body = t.tBodies[0]; body.innerHTML = "";
+    [...groups, total].forEach((g, i) => {
+      const tr = body.insertRow();
+      if (i === groups.length) tr.className = "total";
+      else if (here && (g.name === here || here.startsWith(g.name))) tr.className = "highlight";
+      [g.name, g.n.toLocaleString(), `${pct(g.share)} (${g.nBoard.toLocaleString()})`, g.nStand.toLocaleString(), fixed(g.avg, 2),
+        // The total mixes countries' different poverty measures, so it has no poverty figures.
+        g.nBoard && g !== total ? `${pct(g.povWith)} (${g.nBoard.toLocaleString()})` : "–", g.nWithout && g !== total ? `${pct(g.povWithout)} (${g.nWithout.toLocaleString()})` : "–"]
+        .forEach((v, j) => { const td = tr.insertCell(); td.textContent = v; if (j) td.className = "num"; });
+    });
+    const none = groups.filter((g) => !g.nBoard).map((g) => g.name);
+    $("boards-note").textContent = `${total.nBoard.toLocaleString()} of ${total.n.toLocaleString()} places (${pct(total.share)}) have school board meetings counted; ` +
+      `${total.nStand.toLocaleString()} more have only stand-in meetings.` + (none.length ? ` None found in: ${none.join(", ")}.` : "") +
+      (here ? ` ${here} is highlighted.` : "");
+    const shown = groups.filter((g) => g.nBoard || g.nStand);
+    const text = cssVar("--muted"), grid = cssVar("--border");
+    if (sizeCharts["boards-chart"]) sizeCharts["boards-chart"].destroy();
+    sizeCharts["boards-chart"] = new Chart($("boards-chart"), { type: "bar",
+      data: { labels: shown.map((g) => g.name), datasets: [
+        { label: "School board or equivalent", data: shown.map((g) => g.share), backgroundColor: cssVar("--accent") },
+        { label: "Stand-in only", data: shown.map((g) => (g.n ? 100 * g.nStand / g.n : null)), backgroundColor: cssVar("--accent-2") }] },
+      options: { maintainAspectRatio: false, scales: { x: { stacked: true, ticks: { color: text, autoSkip: false, maxRotation: 70 }, grid: { display: false } },
+        y: { stacked: true, max: 100, title: { display: true, text: "Share of places with meetings found (%)", color: text }, ticks: { color: text }, grid: { color: grid } } },
+        plugins: { legend: { labels: { color: text } }, tooltip: { callbacks: { label: (i) => `${i.dataset.label}: ${pct(i.raw)}` } } } } });
   }
 
   function statCard(parent, label, value, sub) {
@@ -1334,7 +1410,7 @@
     setView(v);
     history.replaceState(null, "", v === "overview" ? location.pathname + location.search : `#${v}`);
   });
-  const viewFromHash = () => { if (["#size", "#locale", "#map", "#trends", "#rules", "#sources"].includes(location.hash)) setView(location.hash.slice(1)); };
+  const viewFromHash = () => { if (["#size", "#locale", "#density", "#boards", "#map", "#trends", "#rules", "#sources"].includes(location.hash)) setView(location.hash.slice(1)); };
   viewFromHash();
   window.addEventListener("hashchange", viewFromHash);
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
@@ -1344,6 +1420,7 @@
     if (view === "size") renderSize();
     if (view === "locale") renderLocale();
     if (view === "density") renderDensity();
+    if (view === "boards") renderBoards();
   });
 
   load();
