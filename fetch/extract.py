@@ -23,7 +23,16 @@ for tag in ["09_26", "03_26", "09_25", "03_25"]:
     for stem in ["cuadros_informe_pobreza_", "cuadros_pobreza_"]:
         if get(f"ar_{stem}{tag}.xls", f"https://www.indec.gob.ar/ftp/cuadros/sociedad/{stem}{tag}.xls"): break
     get(f"ar_eph_pobreza_{tag}.pdf", f"https://www.indec.gob.ar/uploads/informesdeprensa/eph_pobreza_{tag}.pdf")
-get("ar_ign_prov.json", "https://wms.ign.gob.ar/geoserver/ign/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ign:provincia&outputFormat=application/json")
+b = get("", "https://wms.ign.gob.ar/geoserver/ign/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ign:provincia&outputFormat=application/json", keep=False)
+if b:
+    try:
+        subprocess.run([sys.executable, "-m", "pip", "install", "-q", "shapely"], check=True)
+        from shapely.geometry import shape, mapping
+        d = json.loads(b)
+        for f in d["features"]:
+            f["geometry"] = mapping(shape(f["geometry"]).simplify(0.005, preserve_topology=True))
+        json.dump(d, open(f"{OUT}/ar_ign_prov.json", "w"), ensure_ascii=False)
+    except Exception as e: log.write(f"== ign simplify ERR {e}\n")
 # --- Israel
 il = {"il_mosdot_edu.csv": "https://data.gov.il/dataset/55ef9f65-c6af-47c8-8f0f-7ce6990420ad/resource/2055063b-93e8-4d6a-b2c5-c253d18c0cf6/download/mosdot_edu.csv",
       "il_mosdot.xlsx": "https://data.gov.il/dataset/5a9278c8-fa76-46e1-bf2d-0368078c9cc7/resource/5548fd63-5868-4053-ad81-98caddc5e232/download/mosdot.xlsx",
@@ -59,3 +68,12 @@ try:
     log.write(f"== osm admin {len(feats)} features\n")
 except Exception as e:
     log.write(f"== osm ERR {e}\n")
+
+for fn in os.listdir(OUT):
+    if os.path.getsize(f"{OUT}/{fn}") > 90e6: log.write(f"== dropped {fn} {os.path.getsize(f'{OUT}/{fn}')}\n"); os.remove(f"{OUT}/{fn}")
+# Argentina: YouTube searches for education councils and legislature education committees
+try:
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-U", "yt-dlp"], check=True)
+    subprocess.run([sys.executable, "fetch/ar_yt.py", OUT], timeout=3 * 3600)
+except Exception as e:
+    log.write(f"== ar_yt ERR {e}\n")
