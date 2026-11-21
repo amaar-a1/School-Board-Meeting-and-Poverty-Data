@@ -1,60 +1,55 @@
-# Round 17: Korea pupils by province (data.go.kr file data), Georgia PxWeb tables (variants), Kenya KNBS (completing its
-# certificate chain with the intermediate its certificate names) and HDX school datasets.
+# Round 18: Kenya (KNBS PDFs, with its certificate chain completed), Korea (KESS file), Georgia (Geostat xlsx files).
 import os, re, json, subprocess, urllib.request, urllib.parse, time
-OUT = "fetch/out/five17"; os.makedirs(OUT, exist_ok=True)
+OUT = "fetch/out/five18"; os.makedirs(OUT, exist_ok=True)
 log = open(f"{OUT}/log.txt", "w")
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)", "Accept": "text/html,application/json,*/*"}
 def get(n, u, data=None, hdr=None):
     try:
-        b = urllib.request.urlopen(urllib.request.Request(u, headers={**UA, **(hdr or {})}, data=data), timeout=240).read()
+        b = urllib.request.urlopen(urllib.request.Request(u, headers={**UA, **(hdr or {})}, data=data), timeout=300).read()
         open(f"{OUT}/{n}", "wb").write(b); log.write(f"== {n} OK {len(b)} {u}\n"); log.flush(); return b
     except Exception as e: log.write(f"== {n} ERR {e} {u}\n"); log.flush()
     finally: time.sleep(1.5)
 def sh(cmd):
-    r = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=300); return r.stdout, r.stderr
-# Korea
-for pk in ["15152068"]:
-    for n, u, data in [("kr_sel_get.json", f"https://www.data.go.kr/tcs/dss/selectFileDataDownload.do?publicDataPk={pk}&fileDetailSn=1&dataNm=", None),
-                       ("kr_sel_post.json", "https://www.data.go.kr/tcs/dss/selectFileDataDownload.do", f"publicDataPk={pk}&fileDetailSn=1".encode())]:
-        b = get(n, u, data, {"Content-Type": "application/x-www-form-urlencoded", "Referer": f"https://www.data.go.kr/data/{pk}/fileData.do"})
-        if not b: continue
-        t = b.decode("utf-8", "replace"); log.write("   " + t[:400].replace("\n", " ") + "\n")
-        for a, d in re.findall(r'"atchFileId"\s*:\s*"([^"]+)".*?"fileDetailSn"\s*:\s*"?(\d+)', t, re.S)[:2]:
-            get(f"kr_{pk}_{a[-6:]}_{d}.bin", f"https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId={a}&fileDetailSn={d}&insertDataPrcus=N",
-                hdr={"Referer": f"https://www.data.go.kr/data/{pk}/fileData.do"})
-# Georgia: PxWeb, several URL forms
-for base in ["https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/", "http://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/", "https://pc-axis.geostat.ge/PXWeb/api/v1/ka/Database/"]:
-    t = "Demography/Population/01-population-by-self-governed-unit.px"
-    b = get("ge_try_" + str(abs(hash(base)) % 1000) + ".json", base + urllib.parse.quote(t))
-    if not b:
-        b = get("ge_trypost_" + str(abs(hash(base)) % 1000) + ".json", base + urllib.parse.quote(t), data=json.dumps({"query": [], "response": {"format": "json-stat2"}}).encode(), hdr={"Content-Type": "application/json"})
-    if b:
-        for t in ["Demography/Population/01-population-by-self-governed-unit.px", "Social Statistics/Social Protection/Registered_Families_for_Subsistence_Allowance_by_Municipalities.px",
-                  "Social Statistics/Social Protection/Beneficiaries_of_Subsistence_Allowance.px", "Social Statistics/Education/School/05_Number_of_schools_and_Pupils_by_Regions.px",
-                  "Social Statistics/Education/School/01_Number_of_Gen._Edu._Schools.px", "Demography/Population/02-population-by-age-groups-and-sex.px"]:
-            get("ge_" + re.sub(r"[^A-Za-z0-9]", "_", t.split("/")[-1])[:50] + ".json", base + urllib.parse.quote(t), data=json.dumps({"query": [], "response": {"format": "json-stat2"}}).encode(), hdr={"Content-Type": "application/json"})
-        break
-# Kenya: complete KNBS's certificate chain with the intermediate it names (AIA "CA Issuers"), then fetch with verification on
-o, e = sh("openssl s_client -connect www.knbs.or.ke:443 -servername www.knbs.or.ke </dev/null 2>/dev/null | openssl x509 -noout -text | grep -A1 'CA Issuers' ")
-log.write("   AIA: " + o.strip()[:300] + "\n")
+    r = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=600); return r.stdout, r.stderr
+# Kenya
+o, _ = sh("openssl s_client -connect www.knbs.or.ke:443 -servername www.knbs.or.ke </dev/null 2>/dev/null | openssl x509 -noout -text | grep -A1 'CA Issuers'")
 m = re.search(r"URI:(\S+)", o)
+B = f"{OUT}/ke_bundle.pem"
 if m:
-    sh(f"curl -sSL -m 60 -o {OUT}/ke_inter.der '{m.group(1)}'")
-    sh(f"(openssl x509 -inform DER -in {OUT}/ke_inter.der -out {OUT}/ke_inter.pem || cp {OUT}/ke_inter.der {OUT}/ke_inter.pem) && cat /etc/ssl/certs/ca-certificates.crt {OUT}/ke_inter.pem > {OUT}/ke_bundle.pem")
-    for n, u in [("ke_census.html", "https://www.knbs.or.ke/2019-kenya-population-and-housing-census-reports/"), ("ke_pov.html", "https://www.knbs.or.ke/?s=poverty+report"),
-                 ("ke_abstract.html", "https://www.knbs.or.ke/?s=statistical+abstract"), ("ke_edu.html", "https://www.knbs.or.ke/?s=education")]:
-        o, e = sh(f"curl -sSL -m 120 --cacert {OUT}/ke_bundle.pem -A '{UA['User-Agent']}' -o {OUT}/{n} -w '%{{http_code}}' '{u}'")
-        sz = os.path.getsize(f"{OUT}/{n}") if os.path.exists(f"{OUT}/{n}") else 0
-        log.write(f"== {n} curl {o} {sz} {e.strip()[:120]} {u}\n")
-        if sz:
-            t = open(f"{OUT}/{n}", encoding="utf-8", errors="replace").read()
-            for l in sorted(set(re.findall(r'href="([^"]+)"', t))):
-                if re.search(r"poverty|volume|county|abstract|education|wpdmpro|\.pdf|\.xlsx", l, re.I): log.write(f"   link {l}\n")
-    for f in ["ke_inter.der", "ke_bundle.pem"]:
-        if os.path.exists(f"{OUT}/{f}"): os.remove(f"{OUT}/{f}")
-# HDX: Kenya schools / enrolment datasets
-b = get("hdx_ke.json", "https://data.humdata.org/api/3/action/package_search?q=" + urllib.parse.quote("kenya schools enrolment") + "&rows=15")
+    sh(f"curl -sSL -m 60 -o {OUT}/i.der '{m.group(1)}' && (openssl x509 -inform DER -in {OUT}/i.der -out {OUT}/i.pem || cp {OUT}/i.der {OUT}/i.pem) && cat /etc/ssl/certs/ca-certificates.crt {OUT}/i.pem > {B}")
+def kc(n, u):
+    o, e = sh(f"curl -sSL -m 600 --cacert {B} -A '{UA['User-Agent']}' -o {OUT}/{n} -w '%{{http_code}}' '{u}'")
+    sz = os.path.getsize(f"{OUT}/{n}") if os.path.exists(f"{OUT}/{n}") else 0
+    log.write(f"== {n} curl {o} {sz} {e.strip()[:100]} {u}\n"); log.flush(); time.sleep(2)
+    return open(f"{OUT}/{n}", "rb").read() if sz else b""
+kc("ke_poverty_2022.pdf", "https://www.knbs.or.ke/wp-content/uploads/2024/10/The-Kenya-Poverty-Report-2022.pdf")
+kc("ke_child_poverty_2025.pdf", "https://www.knbs.or.ke/wp-content/uploads/2025/08/Brighter-Futures-Breaking-Cycles-of-Poverty-for-Kenyas-Children-2025-Report1.pdf")
+kc("ke_abstract_2025.pdf", "https://www.knbs.or.ke/wp-content/uploads/2025/11/2025-Statistical-Abstract.pdf")
+for n, u in [("ke_vol1", "https://www.knbs.or.ke/?wpdmpro=2019-kenya-population-and-housing-census-volume-i-population-by-county-and-sub-county"),
+             ("ke_vol3", "https://www.knbs.or.ke/?wpdmpro=2019-kenya-population-and-housing-census-volume-iii-distribution-of-population-by-age-sex-and-administrative-units")]:
+    t = kc(n + ".html", u).decode("utf-8", "replace")
+    dl = sorted(set(re.findall(r'(https://www\.knbs\.or\.ke/[^"\']*wpdmdl=\d+[^"\']*)', t)))
+    log.write(f"   dl {dl[:3]}\n")
+    if dl: kc(n + ".pdf", dl[0].replace("&amp;", "&"))
+for f in ["i.der", "i.pem", "ke_bundle.pem"]:
+    if os.path.exists(f"{OUT}/{f}"): os.remove(f"{OUT}/{f}")
+# Korea: KESS post with the province file
+b = get("kr_kess_post.html", "https://kess.kedi.re.kr/post/6731854?itemCode=04&menuId=m_02_04_03_01")
 if b:
-    for p in json.loads(b)["result"]["results"]:
-        log.write(f"   HDX {p['name']} | {p['title']} | {p.get('dataset_date')}\n")
-        for r in p.get("resources", [])[:4]: log.write(f"       {r.get('format')} {r.get('url')}\n")
+    t = b.decode("utf-8", "replace")
+    for l in sorted(set(re.findall(r'(?:href|data-url|onclick)="([^"]*(?:download|file|Down)[^"]*)"', t, re.I)))[:20]: log.write(f"   kr link {l}\n")
+    for i, l in enumerate(sorted(set(re.findall(r'(/(?:download|file)[^"\'\s]*)', t)))[:4]):
+        get(f"kr_kess_{i}.bin", urllib.parse.urljoin("https://kess.kedi.re.kr/", l.replace("&amp;", "&")), hdr={"Referer": "https://kess.kedi.re.kr/post/6731854"})
+# Georgia: every xlsx on the education, population and social protection pages
+for n, u in [("ge_edu.html", "https://www.geostat.ge/en/modules/categories/59/general-education"),
+             ("ge_pop.html", "https://www.geostat.ge/en/modules/categories/41/population"),
+             ("ge_soc.html", "https://www.geostat.ge/en/modules/categories/53/social-protection"),
+             ("ge_soc2.html", "https://www.geostat.ge/en/modules/categories/54/social-protection"),
+             ("ge_reg.html", "https://www.geostat.ge/en/modules/categories/27/regional-statistics")]:
+    b = get(n, u)
+    if not b: continue
+    t = b.decode("utf-8", "replace")
+    for x in sorted(set(re.findall(r'https?://(?:www\.)?geostat\.ge/media/\d+/[^"\'\s<>]+\.(?:xlsx|xls|XLSX|XLS)', t))):
+        log.write(f"   ge xlsx {x}\n")
+        if re.search(r"municipal|self-gov|subsistence|allowance|region|population|Pupils|schools", x, re.I):
+            get("ge_" + re.sub(r"[^A-Za-z0-9.]", "_", x.split("/")[-1])[-70:], x)
