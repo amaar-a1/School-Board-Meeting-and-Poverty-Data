@@ -1,0 +1,19 @@
+== pip rc 0 
+== borders rc 0 israel admin features 866
+argentina provinces 24
+ 
+== ar_datos_anuario.json ERR HTTP Error 504: Gateway Timeout https://datos.gob.ar/api/3/action/package_search?rows=50&q=anuario
+== ar_datos_alumnos.json OK 181613 https://datos.gob.ar/api/3/action/package_search?rows=50&q=alumnos
+== ar_datos_estudiantes.json OK 212 https://datos.gob.ar/api/3/action/package_search?rows=50&q=estudiantes
+== ar_datos_matricula_provincia.json ERR HTTP Error 500: Internal Server Error https://datos.gob.ar/api/3/action/package_search?rows=50&q=matricula%20provincia
+== ar_datos_relevamiento_anual.json OK 211387 https://datos.gob.ar/api/3/action/package_search?rows=50&q=relevamiento%20anual
+== ar_page_anuarios.html ERR HTTP Error 404: Not Found https://www.argentina.gob.ar/educacion/evaluacion-informacion/anuarios
+== ar_page_anuario-estadistico.html ERR HTTP Error 404: Not Found https://www.argentina.gob.ar/educacion/evaluacion-e-informacion-educativa/anuario-estadistico
+== ar_page_bdd.html ERR HTTP Error 403: Forbidden https://www.argentina.gob.ar/educacion/evaluacion-informacion-educativa/bdd
+== ar_page_series-y-anuarios.html ERR HTTP Error 404: Not Found https://www.argentina.gob.ar/educacion/evaluacion-e-informacion-educativa/series-y-anuarios
+== il_org_edu.json OK 21255 https://data.gov.il/api/3/action/organization_show?id=ministry_of_education&include_datasets=true
+== il_ckan_97248.json OK 200932 https://data.gov.il/api/3/action/package_search?rows=40&q=%D7%90%D7%95%D7%9B%D7%9C%D7%95%D7%A1%D7%99%D7%99%D7%94
+== il_ckan_217083.json OK 310611 https://data.gov.il/api/3/action/package_search?rows=40&q=%D7%AA%D7%95%D7%A9%D7%91%D7%99%D7%9D%20%D7%9C%D7%A4%D7%99%20%D7%99%D7%99%D7%A9%D7%95%D7%91
+== il_ckan_659878.json OK 61227 https://data.gov.il/api/3/action/package_search?rows=40&q=%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%AA%D7%95%D7%A9%D7%91%D7%99%D7%9D
+== il_ckan_649389.json OK 324357 https://data.gov.il/api/3/action/package_search?rows=40&q=population
+== il_yt rc 0 
