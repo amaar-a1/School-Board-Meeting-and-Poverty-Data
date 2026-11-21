@@ -1,0 +1,200 @@
+== lt_S3R453_M3080308.json OK 45696 https://osp-rs.stat.gov.lt/rest_json/data/S3R453_M3080308
+== lt_S3R0243_M3160702.json OK 57959 https://osp-rs.stat.gov.lt/rest_json/data/S3R0243_M3160702
+== lt_S3R469_M3160701_1.json OK 73686 https://osp-rs.stat.gov.lt/rest_json/data/S3R469_M3160701_1
+== lt_S3R358_M3160909_1.json OK 51161 https://osp-rs.stat.gov.lt/rest_json/data/S3R358_M3160909_1
+== lt_S3R057_M3110302_3.json OK 60428 https://osp-rs.stat.gov.lt/rest_json/data/S3R057_M3110302_3
+== lt_S3R167_M3010213.json OK 750952 https://osp-rs.stat.gov.lt/rest_json/data/S3R167_M3010213
+== lt_S3R0361_M3160701_3.json OK 49773 https://osp-rs.stat.gov.lt/rest_json/data/S3R0361_M3160701_3
+== ge_Social_Statistics_Education.json OK 142 https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Social%20Statistics/Education
+     Social Statistics/Education/Higher [l] | Higher
+== ge_Social_Statistics_Education_Higher.json OK 876 https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Social%20Statistics/Education/Higher
+       Social Statistics/Education/Higher/doct.px [t] | Indicators of doctoral students
+       Social Statistics/Education/Higher/Georgian_citizens_studying_abroad_2.px [t] | Georgian citizens studying abroad and foreign students at the beginning of the academic year
+       Social Statistics/Education/Higher/Graduates_by_type_of_institutions_programmes.px [t] | Graduates by programmes
+       Social Statistics/Education/Higher/Number_of_professors_in_higher_education.px [t] | Number of professors in higher education institutions
+       Social Statistics/Education/Higher/Number_of_students_admitted_by_type_of.px [t] | Number of students admitted in institutions by programmes
+       Social Statistics/Education/Higher/Number_of_students_by_programs.px [t] | Number of students by programmes
+     Social Statistics/Education/Professional [l] | Professional
+== ge_Social_Statistics_Education_Professional.json OK 551 https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Social%20Statistics/Education/Professional
+       Social Statistics/Education/Professional/number_of_Institu.px [t] | Indicators of Vocational Educational Institutions
+       Social Statistics/Education/Professional/number_of_Students.px [t] | Number of students in  Public and Private Vocational Educational Institutions
+       Social Statistics/Education/Professional/region.px [t] | Indicators of Vocational Educational Institutions
+       Social Statistics/Education/Professional/Staff.px [t] | Number of employees in public an private educational institutions
+     Social Statistics/Education/School [l] | School
+== ge_Social_Statistics_Education_School.json OK 1521 https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Social%20Statistics/Education/School
+       Social Statistics/Education/School/01_Number_of_Gen._Edu._Schools.px [t] | Number of general education schools and pupils in them
+       Social Statistics/Education/School/02_Schools_by_Stages_and_regions.px [t] | Number of Schools by Stages and Regions
+       Social Statistics/Education/School/03_Distribution_of_pupils_by_ages.px [t] | Distribution of Public and Private General School  Pupils by Ages and Sex
+       Social Statistics/Education/School/04_Number_of_Pupils_studying_ICT.px [t] | Number of Pupils studying ICT
+       Social Statistics/Education/School/05_Number_of_schools_and_Pupils_by_Regions.px [t] | Number of pupils
+       Social Statistics/Education/School/06_Number_of_Pupils_by_Social_Status.px [t] | Number of Pupils of General Education Schools by Social Status
+       Social Statistics/Education/School/07_suspended_or_terminated_out_studying.px [t] | The number of pupils of General Education Schools whose status was suspended or terminated categorized by grade and sex
+       Social Statistics/Education/School/08_Graduated.px [t] | Graduates from primary, basic and secondary schools (persons)
+       Social Statistics/Education/School/09_Number_of_School_Teachers.px [t] | Number of general education school teachers
+       Social Statistics/Education/School/10_teachers.px [t] | Number of General Education School Teachers by Sex and Municipalities
+== ge_Social_Statistics_Social_Protection.json OK 1178 https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Social%20Statistics/Social%20Protection
+     Social Statistics/Social Protection/Beneficiaries_of_Subsistence_Allowance.px [t] | Beneficiaries of subsistence allowance, persons (annual avarage)
+     Social Statistics/Social Protection/Number_of_household_allowance.px [t] | Number of household allowance recipients by Categories and years
+     Social Statistics/Social Protection/nurs.px [t] | Data on nursing homes for elderly and disabled persons
+     Social Statistics/Social Protection/Persons_receiving_pension_and_social_package_by_types_of_pensions_and_years.px [t] | Persons receiving pension and social package by types of pensions and years
+     Social Statistics/Social Protection/Persons_Receiving_Pension_by_Municipalities.px [t] | Persons Receiving Pension by Municipalities
+     Social Statistics/Social Protection/Persons_Receiving_Social_Package_by_Municipalities.px [t] | Persons Receiving Social Package by Municipalities
+     Social Statistics/Social Protection/Registered_Families_for_Subsistence_Allowance_by_Municipalities.px [t] | Registered Families for Subsistence Allowance by Municipalities
+== ge_Social_Statistics_Living_Conditions__Subsistence_Minimum.json OK 889 https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Social%20Statistics/Living%20Conditions%2C%20Subsistence%20Minimum
+     Social Statistics/Living Conditions, Subsistence Minimum/Absolute_poverty.px [t] | Share of Population Under Absolute Poverty Line by Area, Age Groups, Sex and Year
+     Social Statistics/Living Conditions, Subsistence Minimum/expenditure.px [t] | Distribution of Average Monthly Expenditures by Target, Purpose, Area and Year
+     Social Statistics/Living Conditions, Subsistence Minimum/Gini_Coefficients.px [t] | Gini Coefficients by Incomes and Expenditures Categories and Year
+     Social Statistics/Living Conditions, Subsistence Minimum/income.px [t] | Distribution of Average Monthly Incomes by Target, Source, Area and Year
+     Social Statistics/Living Conditions, Subsistence Minimum/Relative_Poverty.px [t] | Relative Poverty Indicators by Threshold, Area and Year
+     Social Statistics/Living Conditions, Subsistence Minimum/Subsistence_minimum.px [t] | Subsistence minimum in Georiga by Year, Target and Month
+== ge_Demography.json OK 346 https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Demography
+     Demography/Births [l] | Births
+== ge_Demography_Births.json OK 2274 https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Demography/Births
+       Demography/Births/09-2-number-of-stillbirths-by-self-governed-units.px [t] | Number of stillbirths by regions and self-governed units
+       Demography/Births/09-number-of-live-births-by-self-governed-units.px [t] | Number of live births by regions and self-governed units
+       Demography/Births/10-number-of-live-births-by-sex.px [t] | Number of live births by sex
+       Demography/Births/10-sex-ratio-at-birth.px [t] | Sex ratio at birth
+       Demography/Births/11-number-of-live-births-by-age-of-mother.px [t] | Number of live births by age of mother
+       Demography/Births/12-2-number-of-live-births-by-regions,-birth_order-and-sex.px [t] | Number of live births by regions, birth order and sex
+       Demography/Births/12-number-of-live-births-by-order.px [t] | Number of live births by birth order
+       Demography/Births/13-number-of-live-births-by-legitimacy-status.px [t] | Number of live births by legitimacy status
+       Demography/Births/14-number-of-live-births-by-months.px [t] | Number of live births by months
+       Demography/Births/15-1_Crude_birth_rate_by_regions.px [t] | Crude birth rate (Live births per 1 000 population) by regions
+       Demography/Births/15-crude-birth-rate.px [t] | Crude birth rate (Live births per 1 000 population)
+       Demography/Births/16-1_Adolescent_birth_rate.px [t] | Adolescent birth rate (per 1,000 women aged 15-19)
+       Demography/Births/16-age-specific-fertility-rates.px [t] | Age-specific fertility rates
+       Demography/Births/16-total-fertility-rate.px [t] | Total fertility rate (TFR)
+       Demography/Births/17-Mean-age-of-childbearing,-total-and-first.px [t] | Mean age of childbearing, total and first
+       Demography/Births/18-Gross-and-Net-reproduction-rates.px [t] | Gross and Net reproduction rates
+     Demography/Deaths [l] | Deaths
+== ge_Demography_Deaths.json OK 3146 https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Demography/Deaths
+       Demography/Deaths/19-number-of-deaths-by-self-governed-units.px [t] | Number of deaths by regions and self-governed units
+       Demography/Deaths/20-1-number-of-deaths-by-regions-age-and-sex.px [t] | Number of deaths by regions, age and sex
+       Demography/Deaths/20-number-of-deaths-by-age-and-sex.px [t] | Number of deaths by age and sex
+       Demography/Deaths/21-number-of-infant-deaths-by-age-and-sex.px [t] | Number of infant deaths by age and sex
+       Demography/Deaths/22-number-of-deaths-by-months.px [t] | Number of deaths by months
+       Demography/Deaths/23-10_Deaths_from_suicide_by_regions_and_sex.px [t] | Deaths from suicide* by regions and sex
+       Demography/Deaths/23-11_Suicide_rate_by_sex.px [t] | Suicide* rate (per 100,000 population) by sex
+       Demography/Deaths/23-1-deaths-by-chapters-sex.px [t] | Number of deaths by chapters of ICD-10 and sex
+       Demography/Deaths/23-2-deaths-by-chapters-regions.px [t] | Number of deaths by chapters of the ICD-10 and regions
+       Demography/Deaths/23-3-deaths-by-chapters-urban-rural.px [t] | Number of deaths by chapters of ICD-10 and urban-rural settlements
+       Demography/Deaths/23-4-deaths-by-chapters-age-sex.px [t] | Number of deaths by chapters of ICD-10, sex and age
+       Demography/Deaths/23-5-deaths-by-causes-age-sex.px [t] | Number of deaths by sex, age and causes of death
+       Demography/Deaths/24-1_Crude_death_rate_by_regions.px [t] | Crude death rate (death per 1 000 population) by regions
+       Demography/Deaths/24-crude-death-rate.px [t] | Crude death rate (death per 1 000 population)
+       Demography/Deaths/25-1_Infant_mortality_rate_by_regions_and_sex.px [t] | Infant mortality rate (infant deaths per 1,000 live births) by regions and sex
+       Demography/Deaths/25-2_Neonatal_mortality_rate_by_regions_and_sex.px [t] | Neonatal mortality rate (per 1,000 live births) by regions and sex
+       Demography/Deaths/25-infant-mortality-rate-by-sex.px [t] | Infant mortality rate by sex (infant deaths per 1,000 live births)
+       Demography/Deaths/26-1_Under-5_mortality_rate_by_regions_and_sex.px [t] | Under-5 mortality rate (under-5 deaths per 1 000 live births) by regions and sex
+       Demography/Deaths/26-under-5-mortality-rate-by-sex.px [t] | Under-5 mortality rate by sex (under-5 deaths per 1 000 live births)
+       Demography/Deaths/27-life-tables.px [t] | Abridged life tables
+       Demography/Deaths/28-life-expectancy-at-births-by-sex.px [t] | Life expectancy at births by sex
+     Demography/Divorces [l] | Divorces
+== ge_Demography_Divorces.json OK 1364 https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Demography/Divorces
+       Demography/Divorces/41-divorces-by-regions-and-self-governed-units.px [t] | Number of registered divorces by regions and self-governed units
+       Demography/Divorces/42-divorces-by-order-of-marriages-and-sex.px [t] | Number of registered divorces by order of marriages and sex
+       Demography/Divorces/43-divorces-by-marriage-duration.px [t] | Number of registered divorces by duration of marriage
+       Demography/Divorces/44-divorced-people-by-age-and-sex.px [t] | Number of divorced people by age and sex
+       Demography/Divorces/45-divorces-by-months.px [t] | Number of registered divorces by months
+       Demography/Divorces/46-1_Crude_divorce_rate_by_regions.px [t] | Crude divorce rate (number of divorces per 1 000 population) by regions
+       Demography/Divorces/46-crude-divorce-rate.px [t] | Crude divorce rate (number of divorces per 1 000 population)
+       Demography/Divorces/47-average-duration-of-marriage.px [t] | Average duration of marriage
+       Demography/Divorces/48-mean-age-of-divorced-people-by-order.px [t] | Mean age of divorced people by order of marriages and sex
+     Demography/Marriages [l] | Marriages
+== ge_Demography_Marriages.json OK 1219 https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Demography/Marriages
+       Demography/Marriages/34-marriages-by-regions-and-self-governed-units.px [t] | Number of registered marriages by regions and self-governed units
+       Demography/Marriages/35-marriages-by-previous-marital-status-and-sex.px [t] | Number of married people by previous marital status and sex
+       Demography/Marriages/36-marriages-by-age-and-sex.px [t] | Number of married people by age and sex
+       Demography/Marriages/37-marriages-by-months.px [t] | Number of registered marriages by months
+       Demography/Marriages/38-marriages-by-age-of-spouses.px [t] | Number of married people by age of spouses
+       Demography/Marriages/39-1_Crude_marriage_rate_by_regions.px [t] | Crude marriage rate (number of marriages per 1 000 population) by regions
+       Demography/Marriages/39-crude-marriage-rate.px [t] | Crude marriage rate (number of marriages per 1,000 population)
+       Demography/Marriages/40-mean-age-of-spouses-by-order.px [t] | Mean age of spouses by order of marriages and sex
+     Demography/Migration [l] | Migration
+== ge_Demography_Migration.json OK 1903 https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Demography/Migration
+       Demography/Migration/31-net-migration.px [t] | Net migration
+       Demography/Migration/32-number-of-emigrants-by-age-and-sex.px [t] | Number of emigrants by age and sex
+       Demography/Migration/32-number-of-immigrants-by-age-and-sex.px [t] | Number of immigrants by age and sex
+       Demography/Migration/33-number-of-immigrants-and-emigrants-by-sex-and-citizenship.px [t] | Number of immigrants and emigrants by sex and citizenship
+       Demography/Migration/49-1_citizenship_acquisition_and_loss.px [t] | Acquisition and loss of Georgian citizenship
+       Demography/Migration/49-2_citizenship_acquisition_by_age.px [t] | Acquisition of Georgian citizenship, by age
+       Demography/Migration/49-3_citizenship_loss_by_age.px [t] | Loss of Georgian citizenship, by age
+       Demography/Migration/49-4_citizenship_acquisition_by_sex.px [t] | Acquisition of Georgian citizenship, by sex
+       Demography/Migration/49-5_citizenship_loss_by_sex.px [t] | Loss of Georgian citizenship, by sex
+       Demography/Migration/49-6_citizenship_acquisition_by_birth_place.px [t] | Acquisition of Georgian citizenship, by place of birth
+       Demography/Migration/49-7_citizenship_loss_by_birth_place.px [t] | Loss of Georgian citizenship, by place of birth
+       Demography/Migration/49-8_citizenship_acquisition_by_citizenship.px [t] | Acquisition of Georgian citizenship, by previous country of citizenship
+       Demography/Migration/49-9_citizenship_loss_by_citizenship.px [t] | Loss of Georgian citizenship, by new country of citizenship
+     Demography/Natural Increase [l] | Natural Increase
+== ge_Demography_Natural_Increase.json OK 306 https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Demography/Natural%20Increase
+       Demography/Natural Increase/29-Natural-increase-by-regions-and-self-governed-units.px [t] | Natural increase by regions and self-governed units
+       Demography/Natural Increase/30-natural-increase-rate.px [t] | Natural increase rate (per 1,000 population)
+     Demography/Population [l] | Population
+== ge_Demography_Population.json OK 1640 https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Demography/Population
+       Demography/Population/01-population-by-self-governed-unit.px [t] | Population as of 1 January by regions and self-governed units
+       Demography/Population/02-1-population-by-age-and-sex.px [t] | Population as of 1 January by age and sex (single years of age)
+       Demography/Population/02-population-by-age-groups-and-sex.px [t] | Population as of 1 January by 5-year age groups and sex
+       Demography/Population/03-density-by-regions.px [t] | Density by regions (number of population per 1 sq.km)
+       Demography/Population/04-mid-year-population-by-self-governed-units.px [t] | Mid-year population by regions and self-governed units
+       Demography/Population/05-mid-year-population-by-age-and-sex.px [t] | Mid-year population by 5-year age groups and sex
+       Demography/Population/06-median-age-by-sex.px [t] | Median age by sex
+       Demography/Population/07-percentage-of-population-at-aged-65-and-over-by-sex.px [t] | Percentage of population aged 65 and over by sex
+       Demography/Population/08-age-dependency-ratios.px [t] | Age dependency ratios
+       Demography/Population/1-2-population-by-regions-and-urban-rural.px [t] | Population as of 1 January by regions and urban-rural settlements
+       Demography/Population/1-3-population-by-cities-and-boroughs.px [t] | Population as of 1 January by cities and boroughs
+== za_emis.html OK 258930 https://www.education.gov.za/Programmes/EMIS/EMISDownloads.aspx
+   link National: Ordinary Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=bcGq-JXU5IQ%3d&tabid=466&portalid=0&mid=6833
+   link National: Ordinary Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=8CuGlTzTfPY%3d&tabid=466&portalid=0&mid=5913
+   link National: Ordinary Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=90G8oeGDuOw%3d&tabid=466&portalid=0&mid=5912
+   link National: Ordinary Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=W4UuopDk5B4%3d&tabid=466&portalid=0&mid=4486
+   link National: Ordinary Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=QSovaxAfsME%3d&tabid=466&portalid=0&mid=3058
+   link National: Ordinary Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=KQpHxjgIS6s%3d&tabid=466&portalid=0&mid=1727
+   link National Ordinary Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=oqeFG0tDX9I%3d&tabid=466&portalid=0&mid=1728
+   link National Ordinary Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=uM_HpbzG6yA%3d&tabid=466&portalid=0&mid=1729
+   link National Ordinary Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=ZXGYDWWCwl4%3d&tabid=466&portalid=0&mid=1730
+   link National - ordinary schools | https://www.education.gov.za/LinkClick.aspx?fileticket=O2qbsfuGFC4%3d&tabid=466&portalid=0&mid=12482
+== za_master_00.bin curl 200 7564742  https://www.education.gov.za/LinkClick.aspx?fileticket=bcGq-JXU5IQ%3d&tabid=466&portalid=0&mid=6833
+== za_master_01.bin curl 200 9479754  https://www.education.gov.za/LinkClick.aspx?fileticket=8CuGlTzTfPY%3d&tabid=466&portalid=0&mid=5913
+== za_master_02.bin curl 200 7564742  https://www.education.gov.za/LinkClick.aspx?fileticket=90G8oeGDuOw%3d&tabid=466&portalid=0&mid=5912
+== za_master_03.bin curl 200 9875077  https://www.education.gov.za/LinkClick.aspx?fileticket=W4UuopDk5B4%3d&tabid=466&portalid=0&mid=4486
+== za_master_04.bin curl 200 7999981  https://www.education.gov.za/LinkClick.aspx?fileticket=QSovaxAfsME%3d&tabid=466&portalid=0&mid=3058
+== za_master_05.bin curl 200 18102667  https://www.education.gov.za/LinkClick.aspx?fileticket=KQpHxjgIS6s%3d&tabid=466&portalid=0&mid=1727
+== za_master_06.bin curl 200 14741278  https://www.education.gov.za/LinkClick.aspx?fileticket=oqeFG0tDX9I%3d&tabid=466&portalid=0&mid=1728
+== za_master_07.bin curl 200 16425793  https://www.education.gov.za/LinkClick.aspx?fileticket=uM_HpbzG6yA%3d&tabid=466&portalid=0&mid=1729
+== kr_mohw_post.html OK 111453 https://www.mohw.go.kr/board.es?mid=a10411010100&bid=0019&act=view&list_no=1491455&tag=&nPage=1
+   link 다운로드 | https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=1491455&seq=1
+   link 다운로드 | https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=1491455&seq=2
+   link 다운로드 | https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=1491455&seq=3
+   link 다운로드 | https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=1491455&seq=4
+== kr_mohw_att0.bin curl 200 12701696  https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=1491455&seq=1
+== kr_mohw_att1.bin curl 200 9580045  https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=1491455&seq=2
+== kr_mohw_att2.bin curl 200 20502960  https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=1491455&seq=3
+== kr_mohw_att3.bin curl 200 4393005  https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=1491455&seq=4
+== kr_datagokr.html OK 450908 https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=%EC%8B%9C%EB%8F%84%EB%B3%84+%ED%95%99%EC%83%9D%EC%88%98
+== kr_index_edu.html OK 133505 https://www.index.go.kr/unity/potal/main/EachDtlPageDetail.do?idx_cd=1520
+   link 220829[교육부 08-31(수) 조간보도자료 붙임] 2022년 교육기본통계 결과 보도자료.hwp | javascript:fn_downLoadApndFile('11796','1520','1')
+   link 220829[교육부 08-31(수) 조간보도자료] 2022년 교육기본통계조사 보도자료.hwp | javascript:fn_downLoadApndFile('11795','1520','1')
+   link (보도자료_별첨) 2021년 교육기본통계 결과 발표_최종.hwp | javascript:fn_downLoadApndFile('14','1520','1')
+   link (보도자료) 2021년 교육기본통계 결과 발표.hwp | javascript:fn_downLoadApndFile('13','1520','1')
+   link [교육부 08-28(금) 조간보도자료] 2020년 교육기본통계 결과 발표 보도자료 별첨(배포용).hwp | javascript:fn_downLoadApndFile('12','1520','1')
+   link [교육부 08-28(금) 조간보도자료] 2020년 교육기본통계 결과 발표(배포용).hwp | javascript:fn_downLoadApndFile('11','1520','1')
+   link 08-30(금)조간보도자료(2019년 교육기본통계 결과 발표)-별첨.hwp | javascript:fn_downLoadApndFile('10','1520','1')
+   link 08-30(금)조간보도자료(2019년 교육기본통계 결과 발표).hwp | javascript:fn_downLoadApndFile('9','1520','1')
+   link 180822 0930 08월-30일(목요일) 석간 - 2018년 교육기본통계 결과 발표.hwp | javascript:fn_downLoadApndFile('8','1520','1')
+   link 180822 0930 08월-30일(목요일) 석간 - 2018년 교육기본통계 결과 발표(별첨 자료).hwp | javascript:fn_downLoadApndFile('7','1520','1')
+   link 17.8.31(석간) 붙임자료(2017 교육기본통계 주요내용).hwp | javascript:fn_downLoadApndFile('6','1520','1')
+   link 17.8.31(석간) 보도자료(2017 교육기본통계 발표).hwp | javascript:fn_downLoadApndFile('5','1520','1')
+   link 08-27(목)석간 보도자료(2015년 교육기본통계 발표).hwp | javascript:fn_downLoadApndFile('4','1520','1')
+   link 2014년 교육기본통계 발표.hwp | javascript:fn_downLoadApndFile('3','1520','1')
+   link 2013 간추린 교육통계(국문).pdf | javascript:fn_downLoadApndFile('2','1520','1')
+== w_kr_edu.html OK 96902 https://ko.wikipedia.org/w/index.php?title=%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EA%B5%90%EC%9C%A1%EC%B2%AD&action=render
+== ke_knbs_census.html curl 000 0 curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/ https://www.knbs.or.ke/2019-kenya-population-and-housing-census-reports/
+== ke_knbs_pov.html curl 000 0 curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/ https://www.knbs.or.ke/reports/kenya-poverty-report-2022/
+== ke_knbs_search.html curl 000 0 curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/ https://www.knbs.or.ke/?s=poverty
+== ke_knbs_abstract.html curl 000 0 curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/ https://www.knbs.or.ke/?s=county+statistical+abstract
+== w_ke_pov.html OK 34692 https://en.wikipedia.org/w/index.php?title=List_of_counties_of_Kenya_by_poverty_rate&action=render
+== w_ke_hdi.html OK 152647 https://en.wikipedia.org/w/index.php?title=List_of_Kenyan_counties_by_Human_Development_Index&action=render
