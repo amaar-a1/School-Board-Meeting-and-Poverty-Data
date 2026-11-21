@@ -1,0 +1,113 @@
+== kr_sel_get.json OK 11052 https://www.data.go.kr/tcs/dss/selectFileDataDownload.do?publicDataPk=15152068&fileDetailSn=1&dataNm=
+   {"dataSetFileDetailInfo":{"rn":"","searchCondition1":"","searchCondition2":"","searchCondition3":"","searchCondition1Array":null,"searchCondition2Array":null,"searchCondition3Array":null,"searchKeyword1":"","searchKeyword2":"","searchKeyword3":"","searchKeywordFrom1":"","searchKeywordTo1":"","searchDataName":"","searchInsttCode":"","searchStartDate":"","searchEndDate":"","searchKeywordFrom2":"","s
+== kr_sel_post.json OK 11052 https://www.data.go.kr/tcs/dss/selectFileDataDownload.do
+   {"dataSetFileDetailInfo":{"rn":"","searchCondition1":"","searchCondition2":"","searchCondition3":"","searchCondition1Array":null,"searchCondition2Array":null,"searchCondition3Array":null,"searchKeyword1":"","searchKeyword2":"","searchKeyword3":"","searchKeywordFrom1":"","searchKeywordTo1":"","searchDataName":"","searchInsttCode":"","searchStartDate":"","searchEndDate":"","searchKeywordFrom2":"","s
+== ge_try_669.json ERR HTTP Error 404: Not Found https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Demography/Population/01-population-by-self-governed-unit.px
+== ge_trypost_669.json ERR HTTP Error 404: Not Found https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Demography/Population/01-population-by-self-governed-unit.px
+== ge_try_302.json ERR HTTP Error 404: Not Found http://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Demography/Population/01-population-by-self-governed-unit.px
+== ge_trypost_302.json ERR HTTP Error 404: Not Found http://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Demography/Population/01-population-by-self-governed-unit.px
+== ge_try_211.json ERR HTTP Error 404: Not Found https://pc-axis.geostat.ge/PXWeb/api/v1/ka/Database/Demography/Population/01-population-by-self-governed-unit.px
+== ge_trypost_211.json ERR HTTP Error 404: Not Found https://pc-axis.geostat.ge/PXWeb/api/v1/ka/Database/Demography/Population/01-population-by-self-governed-unit.px
+   AIA: CA Issuers - URI:http://ye2.i.lencr.org/
+            X509v3 Subject Alternative Name:
+== ke_census.html curl 200 173752  https://www.knbs.or.ke/2019-kenya-population-and-housing-census-reports/
+   link https://www.knbs.or.ke/?wpdmpro=2019-kenya-population-and-housing-census-volume-i-population-by-county-and-sub-county
+   link https://www.knbs.or.ke/?wpdmpro=2019-kenya-population-and-housing-census-volume-ii-distribution-of-population-by-administrative-units
+   link https://www.knbs.or.ke/?wpdmpro=2019-kenya-population-and-housing-census-volume-iii-distribution-of-population-by-age-sex-and-administrative-units
+   link https://www.knbs.or.ke/?wpdmpro=2019-kenya-population-and-housing-census-volume-iv-distribution-of-population-by-socio-economic-characteristics
+   link https://www.knbs.or.ke/county-statistical-abstracts/
+   link https://www.knbs.or.ke/gross-county-product/
+   link https://www.knbs.or.ke/kenya-poverty-reports/
+   link https://www.knbs.or.ke/statistical-abstracts/
+== ke_pov.html curl 200 179962  https://www.knbs.or.ke/?s=poverty+report
+   link https://www.knbs.or.ke/county-statistical-abstracts/
+   link https://www.knbs.or.ke/gross-county-product/
+   link https://www.knbs.or.ke/kenya-poverty-reports/
+   link https://www.knbs.or.ke/reports/brighter-futures-breaking-cycles-of-poverty-for-kenyas-children-report-2025/
+   link https://www.knbs.or.ke/reports/kenya-poverty-report-2020/
+   link https://www.knbs.or.ke/reports/kenya-poverty-report-2022/
+   link https://www.knbs.or.ke/reports/the-kenya-poverty-report-2019/
+   link https://www.knbs.or.ke/reports/the-kenya-poverty-report-2021/
+   link https://www.knbs.or.ke/search/poverty+report/feed/rss2/
+   link https://www.knbs.or.ke/statistical-abstracts/
+   link https://www.knbs.or.ke/wp-content/uploads/2023/09/The-Kenya-Poverty-Report-2019.pdf
+   link https://www.knbs.or.ke/wp-content/uploads/2023/09/The-Kenya-Poverty-Report-2020.pdf
+   link https://www.knbs.or.ke/wp-content/uploads/2023/09/The-Kenya-Poverty-Report-2021.pdf
+   link https://www.knbs.or.ke/wp-content/uploads/2024/10/The-Kenya-Poverty-Report-2022.pdf
+   link https://www.knbs.or.ke/wp-content/uploads/2025/08/Brighter-Futures-Breaking-Cycles-of-Poverty-for-Kenyas-Children-2025-Report1.pdf
+== ke_abstract.html curl 200 191264  https://www.knbs.or.ke/?s=statistical+abstract
+   link https://www.knbs.or.ke/county-statistical-abstracts/
+   link https://www.knbs.or.ke/gross-county-product/
+   link https://www.knbs.or.ke/kenya-poverty-reports/
+   link https://www.knbs.or.ke/reports/2023-county-statistical-abstract-makueni-county/
+   link https://www.knbs.or.ke/reports/2024-county-statistical-abstract-garissa-county/
+   link https://www.knbs.or.ke/reports/2024-county-statistical-abstract-makueni-county/
+   link https://www.knbs.or.ke/reports/2024-county-statistical-abstracts-kakamega-county/
+   link https://www.knbs.or.ke/reports/2024-statistical-abstract-homa-bay-county/
+   link https://www.knbs.or.ke/reports/2024-statistical-abstract-kisumu-county/
+   link https://www.knbs.or.ke/reports/2025-county-statistical-abstract-makueni-county/
+   link https://www.knbs.or.ke/reports/2025-county-statistical-abstracts-mombasa-county/
+   link https://www.knbs.or.ke/reports/2025-statistical-abstract-uasin-gishu-county/
+   link https://www.knbs.or.ke/reports/2025-statistical-abstract/
+   link https://www.knbs.or.ke/search/statistical+abstract/feed/rss2/
+   link https://www.knbs.or.ke/statistical-abstracts/
+   link https://www.knbs.or.ke/wp-content/uploads/2025/11/2025-Statistical-Abstract.pdf
+   link https://www.knbs.or.ke/wp-content/uploads/2025/12/2024-Statistical-Abstract-Homa-Bay-County.pdf
+   link https://www.knbs.or.ke/wp-content/uploads/2025/12/2024-Statistical-Abstract-Kisumu-County.pdf
+   link https://www.knbs.or.ke/wp-content/uploads/2025/12/2025-Statistical-Abstract-Uasin-Gishu-County.pdf
+   link https://www.knbs.or.ke/wp-content/uploads/2026/02/2023-County-Statistical-Abstract-Makueni-County.pdf
+   link https://www.knbs.or.ke/wp-content/uploads/2026/02/2024-Statistical-Abstract-Garissa-County.pdf
+   link https://www.knbs.or.ke/wp-content/uploads/2026/02/2024-Statistical-Abstract-Makueni-County.pdf
+   link https://www.knbs.or.ke/wp-content/uploads/2026/02/2025-Statistical-Abstract-Makueni-County.pdf
+   link https://www.knbs.or.ke/wp-content/uploads/2026/09/2024-County-Statistical-Abstract-Kakamega-County.pdf
+   link https://www.knbs.or.ke/wp-content/uploads/2026/10/2025-County-Statistical-Abstract-Mombasa-County.pdf
+== ke_edu.html curl 200 186780  https://www.knbs.or.ke/?s=education
+   link https://www.knbs.or.ke/county-statistical-abstracts/
+   link https://www.knbs.or.ke/gross-county-product/
+   link https://www.knbs.or.ke/kenya-poverty-reports/
+   link https://www.knbs.or.ke/reports/2024-statistical-abstract/
+   link https://www.knbs.or.ke/reports/2025-statistical-abstract/
+   link https://www.knbs.or.ke/search/education/feed/rss2/
+   link https://www.knbs.or.ke/statistical-abstracts/
+   link https://www.knbs.or.ke/wp-content/uploads/2024/05/2024-Economic-Survey.pdf
+   link https://www.knbs.or.ke/wp-content/uploads/2024/12/2024-Statistical-Abstract1.pdf
+   link https://www.knbs.or.ke/wp-content/uploads/2025/05/2025-Economic-Survey.pdf
+   link https://www.knbs.or.ke/wp-content/uploads/2025/11/2025-Statistical-Abstract.pdf
+   link https://www.knbs.or.ke/wp-content/uploads/2026/04/2026-Economic-Survey.pdf
+== hdx_ke.json OK 110502 https://data.humdata.org/api/3/action/package_search?q=kenya%20schools%20enrolment&rows=15
+   HDX kenya-private-schools-primary-school-enrollment-per-gender-per-county | Kenya Private schools primary school enrollment per gender per county | [2014-12-31T00:00:00 TO 2014-12-31T23:59:59]
+       CSV https://data.humdata.org/dataset/ac13ca09-f9e1-4614-a850-32c133faf81e/resource/b4a67953-e345-4937-a551-5e0a4c1ee6dd/download/private_primary_enrollment_by_gender_class.csv
+   HDX somalia-schools-and-enrollment | Somalia Schools and Enrollment | [2021-06-23T00:00:00 TO 2021-06-23T23:59:59]
+       XLSX https://data.humdata.org/dataset/198702a9-d4e6-4bda-a1a6-1b111ce59de1/resource/a0fb46fb-9fa1-4854-bb78-54e0fe93c216/download/list-of-schools-enrolment-_moe_fgs.xlsx
+   HDX kenya-schools | Kenya Schools | [2010-02-12T00:00:00 TO 2010-02-12T23:59:59]
+       Google Sheet https://docs.google.com/spreadsheets/d/1t8S_POnyZnSJWMtgutAdKYnhQXu4L6nS_XKPcryImso/edit?usp=drive_web
+   HDX enrolment-in-secondary-schools-by-level-and-sex-2009-2013 | Kenya - Enrolment in Secondary Schools by Level and Sex, 2009 – 2013 | [2009-01-05T00:00:00 TO 2013-12-30T23:59:59]
+       CSV https://data.humdata.org/dataset/33840d3b-4843-464e-93c7-5ec15f027d49/resource/f8e7f965-3387-4536-9bbc-8785e71ac22a/download/enrolment-in-secondary-schools-by-level-and-sex-2009-2013.csv
+   HDX south-sudan-schools-and-enrolment-data-2015-sssams | South Sudan :  Schools and Enrollment data | [2019-10-29T00:00:00 TO 2019-10-29T23:59:59]
+       CSV https://data.humdata.org/dataset/811c4282-2223-4fc9-9b40-43223c4e3c3e/resource/ec95583d-732d-4201-aa89-e9437e0af74a/download/enrolment_28_2019-10-29.csv
+       XLSX https://data.humdata.org/dataset/811c4282-2223-4fc9-9b40-43223c4e3c3e/resource/7cd16811-0d41-480f-8aec-d75e837cb1d3/download/south-sudan-schools-and-enrolment-data-2015-sssams.xlsx
+   HDX cox-bazar-school-enrolment-data | Cox Bazar School Enrolment Data | [2019-01-31T00:00:00 TO 2019-01-31T23:59:59]
+       CSV https://data.humdata.org/dataset/be2a7ee8-9c76-4011-aebb-88691a8bee2c/resource/554baa80-6780-4879-8bc0-667fdad1889c/download/enrollment_20181218ma.csv
+   HDX kenya-education-0 | Kenya - Schools in Kenya (2005) | [2005-01-01T00:00:00 TO 2005-01-01T23:59:59]
+       SHP https://data.humdata.org/dataset/b505d47b-f2f5-4d2f-bfb9-48a2a1136338/resource/bb639429-9bb7-41d6-ba86-06e8dcaaafef/download/kenschools.zip
+   HDX number-of-secondary-school-enrolment-by-county-2007-2013 | Number of Secondary School Enrolment by County 2007 - 2013 | [2009-01-05T00:00:00 TO 2013-12-27T23:59:59]
+       CSV https://data.humdata.org/dataset/85bd9a5a-4dfd-48ec-90b5-2a9a198d7117/resource/26e5ca9d-099a-47ff-8f78-d300a89fa463/download/number-of-secondary-school-enrolment-by-county-2007-2013.csv
+   HDX kenya-schools-in-mathare | Kenya - Schools in Mathare | [2010-12-29T00:00:00 TO 2010-12-29T23:59:59]
+       SHP http://data.mapkibera.org/mapkibera/mathare/data/shapefile/education-shapefile.zip
+       CSV http://data.mapkibera.org/mapkibera/mathare/data/shapefile/education.csv
+   HDX kenya-schools-in-mukuru-settlements | Kenya - Schools in Mukuru settlements | [2010-12-29T00:00:00 TO 2010-12-29T23:59:59]
+       SHP http://data.mapkibera.org/mapkibera/mukuru/shapefile/education-shapefile.zip
+       CSV http://data.mapkibera.org/mapkibera/mukuru/shapefile/education.csv
+   HDX kenya-boy-child-vs-girls-child-enrollment-comparison-at-primary-school-level-by-county | Kenya - Boy Child VS Girls Child Enrollment comparison at Primary school level by County | [2014-12-31T00:00:00 TO 2014-12-31T23:59:59]
+       CSV https://data.humdata.org/dataset/4400c88e-a56f-43c9-b588-e6d4d3f20811/resource/2460c588-99a2-403b-af4b-d7a763859450/download/primary_enrollement_by_residence_gender.csv
+   HDX student-enrollment-in-technical-institutions-in-kenya | Kenya - Student Enrolment by Sex in Technical Institutions | [2009-02-24T00:00:00 TO 2013-12-20T23:59:59]
+       CSV https://data.humdata.org/dataset/97032db1-5fcf-464e-87f5-81068200d9a9/resource/a47fe5f3-4471-4683-88f9-f36a7434e912/download/student-enrolment-by-sex-in-technical-institutions.csv
+   HDX philippines-education-0 | Philippines - Enrolment in public and private schools by level of education | [2012-01-01T00:00:00 TO 2012-01-01T23:59:59]
+       XLS https://data.humdata.org/dataset/06ad5af9-cd06-44e1-a9ed-01c3be511dff/resource/3d0221ab-c5eb-4831-ab19-f2cc672404da/download/education_nscb.xls
+   HDX kenya-schools-under-digital-literacy-programme | Kenya - Schools under Digital Literacy Programme | [2018-12-24T00:00:00 TO 2018-12-24T23:59:59]
+       GeoJSON https://services7.arcgis.com/um8CA8KcKChzWgPS/arcgis/rest/services/DLP_Actual_List_of_Installations/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson
+   HDX schooling-status-i-e-children-in-and-out-of-school | Learning levels in Kenya | [2013-12-31T00:00:00 TO 2013-12-31T23:59:59]
+       XLSX https://data.humdata.org/dataset/fbf59db2-e465-429e-b118-8cddbb0cbd87/resource/36b0b118-2619-4b02-ba71-8063d7774ed6/download/2014-uwezoked-table-1-09-08-2015.xlsx
+       XLSX https://data.humdata.org/dataset/fbf59db2-e465-429e-b118-8cddbb0cbd87/resource/2b535623-f651-4a8a-a372-4b13bd75a5aa/download/2014-uwezoked-table-1-a-b-11-08-2014.xlsx
+       XLSX https://data.humdata.org/dataset/fbf59db2-e465-429e-b118-8cddbb0cbd87/resource/b08c62ef-95e8-41a7-866d-b16771c0223f/download/2014-uwezoked-table-2-09-08-2015.xlsx
+       XLSX https://data.humdata.org/dataset/fbf59db2-e465-429e-b118-8cddbb0cbd87/resource/c229ba31-03b8-42aa-8f06-959f426dca6d/download/2014-uwezoked-table-6-09-08-2015.xlsx
