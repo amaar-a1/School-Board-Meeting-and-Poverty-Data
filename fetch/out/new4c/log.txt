@@ -1,0 +1,67 @@
+== si_px_unemployed_municipalities.json OK 2388 https://pxweb.stat.si/SiStatData/api/v1/en/Data?query=unemployed%20municipalities
+== si_px_income_tax_municipalities.json OK 2 https://pxweb.stat.si/SiStatData/api/v1/en/Data?query=income%20tax%20municipalities
+== si_px_income_per_capita_municipalities.json OK 341 https://pxweb.stat.si/SiStatData/api/v1/en/Data?query=income%20per%20capita%20municipalities
+== si_px_registered_unemployment_rate_municipalities.json OK 1703 https://pxweb.stat.si/SiStatData/api/v1/en/Data?query=registered%20unemployment%20rate%20municipalities
+== si_px_net_earnings_municipalities.json OK 2174 https://pxweb.stat.si/SiStatData/api/v1/en/Data?query=net%20earnings%20municipalities
+== si_px_social.json OK 152529 https://pxweb.stat.si/SiStatData/api/v1/en/Data?query=social
+== si_px_poverty.json OK 34475 https://pxweb.stat.si/SiStatData/api/v1/en/Data?query=poverty
+== tw_edu_B_4_1.csv OK 9408 https://stats.moe.gov.tw/files/opendata/edu_B_4_1.csv
+== tw_edu_B_4_2.csv OK 15527 https://stats.moe.gov.tw/files/opendata/edu_B_4_2.csv
+== tw_edu_B_4_3.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_4_3.csv
+== tw_edu_B_4_4.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_4_4.csv
+== tw_edu_B_4_5.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_4_5.csv
+== tw_edu_B_4_6.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_4_6.csv
+== tw_edu_B_4_7.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_4_7.csv
+== tw_edu_B_4_8.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_4_8.csv
+== tw_edu_B_4_9.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_4_9.csv
+== tw_edu_B_4_10.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_4_10.csv
+== tw_edu_B_4_11.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_4_11.csv
+== tw_edu_B_4_12.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_4_12.csv
+== tw_edu_B_5_1.csv OK 9154 https://stats.moe.gov.tw/files/opendata/edu_B_5_1.csv
+== tw_edu_B_5_2.csv OK 3866 https://stats.moe.gov.tw/files/opendata/edu_B_5_2.csv
+== tw_edu_B_5_3.csv OK 13195 https://stats.moe.gov.tw/files/opendata/edu_B_5_3.csv
+== tw_edu_B_5_4.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_5_4.csv
+== tw_edu_B_5_5.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_5_5.csv
+== tw_edu_B_5_6.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_5_6.csv
+== tw_edu_B_5_7.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_5_7.csv
+== tw_edu_B_5_8.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_5_8.csv
+== tw_edu_B_5_9.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_5_9.csv
+== tw_edu_B_5_10.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_5_10.csv
+== tw_edu_B_5_11.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_5_11.csv
+== tw_edu_B_5_12.csv OK 7013 https://stats.moe.gov.tw/files/opendata/edu_B_5_12.csv
+== tw_edu_B_6_1.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_6_1.csv
+== tw_edu_B_6_2.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_6_2.csv
+== tw_edu_B_6_3.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_6_3.csv
+== tw_edu_B_6_4.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_6_4.csv
+== tw_edu_B_6_5.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_6_5.csv
+== tw_edu_B_6_6.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_6_6.csv
+== tw_edu_B_6_7.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_6_7.csv
+== tw_edu_B_6_8.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_6_8.csv
+== tw_edu_B_6_9.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_6_9.csv
+== tw_edu_B_6_10.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_6_10.csv
+== tw_edu_B_6_11.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_6_11.csv
+== tw_edu_B_6_12.csv ERR HTTP Error 404: Not Found https://stats.moe.gov.tw/files/opendata/edu_B_6_12.csv
+== uy_linea-pobreza-indigencia-2025.html ERR HTTP Error 404: Not Found https://www.gub.uy/instituto-nacional-estadistica/comunicacion/noticias/linea-pobreza-indigencia-2025
+== uy_linea-pobreza-indigencia-2024.html OK 47644 https://www.gub.uy/instituto-nacional-estadistica/comunicacion/noticias/linea-pobreza-indigencia-2024
+== uy_estimacion-pobreza-metodo-del-ingreso-2025.html ERR HTTP Error 404: Not Found https://www.gub.uy/instituto-nacional-estadistica/comunicacion/publicaciones/estimacion-pobreza-metodo-del-ingreso-2025
+== uy_estimacion-pobreza-metodo-del-ingreso-2024.html ERR HTTP Error 404: Not Found https://www.gub.uy/instituto-nacional-estadistica/comunicacion/publicaciones/estimacion-pobreza-metodo-del-ingreso-2024
+== uy_pobreza-desigualdad.html ERR HTTP Error 404: Not Found https://www.gub.uy/instituto-nacional-estadistica/datos-y-estadisticas/estadisticas/pobreza-desigualdad
+== uy_pobreza.html OK 42483 https://www.gub.uy/instituto-nacional-estadistica/tematica/pobreza
+== uy_capitulo-3-aspectos-sociales-3.html OK 51434 https://www.gub.uy/instituto-nacional-estadistica/comunicacion/publicaciones/anuario-estadistico-nacional-2025-vol-102/capitulo-3-aspectos-sociales-3
+== uy_capitulo-3-aspectos-sociales-4.html OK 51716 https://www.gub.uy/instituto-nacional-estadistica/comunicacion/publicaciones/anuario-estadistico-nacional-2025-vol-102/capitulo-3-aspectos-sociales-4
+== uy_capitulo-3-aspectos-sociales-5.html OK 48093 https://www.gub.uy/instituto-nacional-estadistica/comunicacion/publicaciones/anuario-estadistico-nacional-2025-vol-102/capitulo-3-aspectos-sociales-5
+== uy_capitulo-3-aspectos-sociales-6.html OK 48641 https://www.gub.uy/instituto-nacional-estadistica/comunicacion/publicaciones/anuario-estadistico-nacional-2025-vol-102/capitulo-3-aspectos-sociales-6
+== uy_capitulo-3-aspectos-sociales-7.html OK 47375 https://www.gub.uy/instituto-nacional-estadistica/comunicacion/publicaciones/anuario-estadistico-nacional-2025-vol-102/capitulo-3-aspectos-sociales-7
+== uy_capitulo-3-aspectos-sociales-8.html OK 48297 https://www.gub.uy/instituto-nacional-estadistica/comunicacion/publicaciones/anuario-estadistico-nacional-2025-vol-102/capitulo-3-aspectos-sociales-8
+== uy_dl_1.xls OK 29287 https://www5.ine.gub.uy/documents/ANUARIOS/Anuario%202025/3%20-%20ASPECTOS%20SOCIALES/3.5%20Seguridad%20Social/3.5.5ok.xlsx
+   (3.5.5 - Afiliados con cuota mutual, por condición y año, según departamento)
+== uy_dl_2.xls OK 42496 https://www5.ine.gub.uy/documents/ANUARIOS/Anuario%202025/3%20-%20ASPECTOS%20SOCIALES/3.5%20Seguridad%20Social/3.5.6ok.xls
+   (3.5.6 - Trabajadores beneficiarios del subsidio por desempleo, por año, según departamento&nbsp;)
+== uy_dl_3.xls OK 55808 https://www5.ine.gub.uy/documents/ANUARIOS/Anuario%202025/3%20-%20ASPECTOS%20SOCIALES/3.5%20Seguridad%20Social/3.5.14ok.xls
+   (3.5.14 - Ingresos y egresos consolidados del Sistema de Seguridad Social, por año, según organismo o institución (millon)
+== uy_dl_4.xls OK 58368 https://www5.ine.gub.uy/documents/ANUARIOS/Anuario%202025/3%20-%20ASPECTOS%20SOCIALES/3.5%20Seguridad%20Social/3.5.15ok.xls
+   (3.5.15 - Ingresos y egresos consolidados del Sistema de Seguridad Social, por año, según tipo de riesgo (millones de pes)
+== cr_atlas_reporte2.pdf OK 40853567 https://hdr.undp.org/system/files/documents/national-report-document/atlas-cantonal-reporte-2.pdf
+== cr_mep_cantonales_2010_2018.pdf ERR HTTP Error 401: Unauthorized https://devmep.mep.go.cr/sites/default/files/2024-05/IndicadoresEducativosCantonales20102018.pdf
+== cr_mep_estadisticas.html ERR HTTP Error 404: Not Found https://www.mep.go.cr/estadisticas-educativas
+== cr_mep_dae.html OK 46855 https://www.mep.go.cr/departamento-analisis-estadistico
