@@ -65,6 +65,43 @@ def edu(dirs, fn, total, public, private=None):
     return last, out
 
 
+# Council sittings and committee meetings, not news clips, tours, ceremonies or third-party channels.
+SIT = re.compile(r"(第\s*\d+\s*(屆)?)?第?\s*\d+\s*次\s*(定期|臨時)(大)?會|定期大會|臨時會|總質詢|業務(報告|質詢)|大會議事|大會議程|審查(會議|委員會)|第\s*\d+\s*次會議")
+EDU = re.compile(r"教育[^，,]{0,6}(委員會|部門|審查)|(民政|文化)教育委員會|教育文化委員會")
+NOT = re.compile(r"新聞|專訪|記者會|典禮|活動|簡介|拜年|盃|參訪|視察|勘查|外勘|導覽|宣誓|演哪齣")
+NOT_CHANNELS = {"UC0ulQyhkXJ1UgKN06mGPqdw", "UC9Vixsg2lS0RRiKvUXLJeRg"}   # "議會演哪齣？": a civic group's recordings, not the councils'
+
+
+def roc_date(t):
+    """An ISO date from a title: ROC years (115 = 2026) as 115年9月11日, 1150911, 115.09.11 or 115-09-16; or 2026.06.03 / 20261006."""
+    m = re.search(r"(1[01]\d)\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日", t) or re.search(r"(?<!\d)(1[01]\d)\s*[.\-/ ]\s*(\d{1,2})\s*[.\-/ ]\s*(\d{1,2})(?!\d)", t) \
+        or re.search(r"(?<!\d)(1[01]\d)(\d{2})(\d{2})(?!\d)", t)
+    if m:
+        y, mo, d = int(m.group(1)) + 1911, int(m.group(2)), int(m.group(3))
+    else:
+        m = re.search(r"(20\d\d)\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日", t) or re.search(r"(?<!\d)(20\d\d)[.\-/]?(\d{2})[.\-/]?(\d{2})(?!\d)", t)
+        if not m: return None
+        y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+    return f"{y:04d}-{mo:02d}-{d:02d}" if 1 <= mo <= 12 and 1 <= d <= 31 and 2000 <= y <= 2030 else None
+
+
+def meetings(dirs):
+    f = find(dirs, "tw_meet.json")
+    if not f: return {}
+    out = {}
+    for c, x in json.load(open(f, encoding="utf-8")).items():
+        if not x.get("url") or x["url"].rsplit("/", 1)[-1] in NOT_CHANNELS: continue
+        vids = [t for t in x["videos"] if not NOT.search(t)]
+        # An undated title counts only when it names a numbered meeting or an agenda (Nantou's undated titles are news about sittings).
+        vids = [t for t in vids if roc_date(t) or re.search(r"第\s*\d+\s*次會議|議程", t)]
+        keyed = lambda ts: {(roc_date(t) or re.sub(r"[\s（(]*(上午|下午|PM|AM|\d)[)）]?$", "", t)): (f"{roc_date(t)} " if roc_date(t) else "") + t for t in ts}
+        edu = keyed([t for t in vids if EDU.search(t)])
+        sit = keyed([t for t in vids if SIT.search(t)])
+        if len(edu) >= 3: out[c] = {"n": len(edu), "type": "Council education committee", "source": x["url"], "channel": x["channel"], "titles": list(edu.values())}
+        elif sit: out[c] = {"n": len(sit), "type": "Council sittings (stand-in)", "source": x["url"], "channel": x["channel"], "titles": list(sit.values())}
+    return out
+
+
 def main(*args):
     *dirs, geo = args
     os.makedirs(OUT, exist_ok=True)
@@ -74,19 +111,20 @@ def main(*args):
     y2, jh = edu(dirs, "tw_edu_B_3_8.csv", "學生總數", "公立學生數")
     y3, sh = edu(dirs, "tw_edu_B_4_2.csv", None, "公立學生數[人]", "私立學生數[人]")
     assert y1 == y2 == y3 and len(el) == len(jh) == len(sh) == 22, (y1, y2, y3, len(el), len(jh), len(sh))
+    meet = meetings(dirs)
     data = {}
     for k, (en, gb, code, kind) in TW.items():
         r = low[k]
         persons, ratio, pop = r[5], r[27], r[30]   # persons; persons as % of the population; the population it uses
         data[k] = {"en": en, "kind": kind, "code": code, "low": persons, "low_ratio": ratio, "pop": pop,
                    "midlow": mid[k][5], "pupils": el[k][0] + jh[k][0] + sh[k][0], "public": el[k][1] + jh[k][1] + sh[k][1],
-                   "quarter": when, "school_year": y1}
+                   "quarter": when, "school_year": y1, **({"meetings": meet[k]} if k in meet else {})}
     g = json.load(open(os.path.join(geo, "geoBoundaries-TWN-ADM1_simplified.geojson"), encoding="utf-8"))["features"]
     by = {f["properties"]["shapeName"]: f for f in g}
     feats = [{"type": "Feature", "properties": {"id": "TWN-" + v[2], "NAME": v[0]}, "geometry": {"type": by[v[1]]["geometry"]["type"], "coordinates": rnd(by[v[1]]["geometry"]["coordinates"])}} for v in TW.values()]
     json.dump(data, open(os.path.join(OUT, "tw_data.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     json.dump({"type": "FeatureCollection", "features": feats}, open(os.path.join(OUT, "tw_geo.geojson"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
-    for k, x in data.items(): print(x["en"], x["pop"], x["low_ratio"], round(100 * (x["low"] + x["midlow"]) / x["pop"], 2), x["pupils"], round(100 * x["public"] / x["pupils"], 1))
+    for k, x in data.items(): print((x.get("meetings") or {}).get("type"), (x.get("meetings") or {}).get("n"), x["en"], x["pop"], x["low_ratio"], round(100 * (x["low"] + x["midlow"]) / x["pop"], 2), x["pupils"], round(100 * x["public"] / x["pupils"], 1))
     print(when, y1, sum(x["pop"] for x in data.values()))
 
 

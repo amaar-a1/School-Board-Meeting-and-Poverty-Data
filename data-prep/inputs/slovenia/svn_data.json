@@ -6,7 +6,12 @@
 "basic": 2177,
 "upper": 899,
 "children": 3972,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.614235798016231,
+"income_pc": 14195.2,
+"income_median": 12677.83,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (655 of 14,195 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "213": {
 "name": "Ankaran/Ancarano",
@@ -15,7 +20,12 @@
 "basic": 245,
 "upper": 116,
 "children": 534,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.336590785517458,
+"income_pc": 15688.13,
+"income_median": 13106,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (680 of 15,688 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "195": {
 "name": "Apače",
@@ -24,7 +34,12 @@
 "basic": 273,
 "upper": 134,
 "children": 569,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 7.429544095321342,
+"income_pc": 10868.5,
+"income_median": 9243.11,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (807 of 10,868 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "002": {
 "name": "Beltinci",
@@ -33,7 +48,12 @@
 "basic": 593,
 "upper": 320,
 "children": 1335,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.328491005846023,
+"income_pc": 12659.89,
+"income_median": 11500.46,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (801 of 12,660 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "148": {
 "name": "Benedikt",
@@ -42,7 +62,12 @@
 "basic": 298,
 "upper": 120,
 "children": 539,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.41568169631326,
+"income_pc": 12737.27,
+"income_median": 11310.12,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (690 of 12,737 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "149": {
 "name": "Bistrica ob Sotli",
@@ -51,7 +76,12 @@
 "basic": 116,
 "upper": 56,
 "children": 205,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.484924146877302,
+"income_pc": 12503.77,
+"income_median": 10309.29,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (811 of 12,504 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "003": {
 "name": "Bled",
@@ -60,7 +90,12 @@
 "basic": 656,
 "upper": 268,
 "children": 1317,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 3.560240849671138,
+"income_pc": 15827.3,
+"income_median": 12892.53,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (563 of 15,827 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "150": {
 "name": "Bloke",
@@ -69,7 +104,12 @@
 "basic": 162,
 "upper": 60,
 "children": 275,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.647392188209559,
+"income_pc": 14555.69,
+"income_median": 13274.84,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (676 of 14,556 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "004": {
 "name": "Bohinj",
@@ -78,7 +118,12 @@
 "basic": 424,
 "upper": 207,
 "children": 868,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.653130407246983,
+"income_pc": 14147.68,
+"income_median": 12351,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (658 of 14,148 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "005": {
 "name": "Borovnica",
@@ -87,7 +132,12 @@
 "basic": 540,
 "upper": 188,
 "children": 988,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.499192205474004,
+"income_pc": 14106.31,
+"income_median": 12970.4,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (635 of 14,106 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "006": {
 "name": "Bovec",
@@ -96,7 +146,12 @@
 "basic": 175,
 "upper": 98,
 "children": 363,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.015407100247235,
+"income_pc": 13157.57,
+"income_median": 11765.07,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (528 of 13,158 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "151": {
 "name": "Braslovče",
@@ -105,7 +160,12 @@
 "basic": 543,
 "upper": 277,
 "children": 1129,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.573562487989067,
+"income_pc": 14934.31,
+"income_median": 12592.5,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (683 of 14,934 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "007": {
 "name": "Brda",
@@ -114,7 +174,12 @@
 "basic": 440,
 "upper": 227,
 "children": 921,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.090175371398867,
+"income_pc": 13523.87,
+"income_median": 11776.61,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (553 of 13,524 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "008": {
 "name": "Brezovica",
@@ -123,7 +188,12 @@
 "basic": 1316,
 "upper": 660,
 "children": 2592,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 3.9855994858642108,
+"income_pc": 15280.01,
+"income_median": 13243.74,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (609 of 15,280 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "009": {
 "name": "Brežice",
@@ -132,7 +202,12 @@
 "basic": 2102,
 "upper": 872,
 "children": 3987,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.125052232049586,
+"income_pc": 13784.64,
+"income_median": 11979.93,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (706 of 13,785 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "152": {
 "name": "Cankova",
@@ -141,7 +216,12 @@
 "basic": 124,
 "upper": 51,
 "children": 262,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 7.6682351924304015,
+"income_pc": 11800.89,
+"income_median": 9858.06,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (905 of 11,801 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "011": {
 "name": "Celje",
@@ -150,7 +230,12 @@
 "basic": 4246,
 "upper": 1871,
 "children": 8347,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.903628822965387,
+"income_pc": 14006.47,
+"income_median": 12577.24,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (827 of 14,006 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "012": {
 "name": "Cerklje na Gorenjskem",
@@ -159,7 +244,12 @@
 "basic": 787,
 "upper": 367,
 "children": 1529,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.903042178107514,
+"income_pc": 14433.08,
+"income_median": 12660.02,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (708 of 14,433 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "013": {
 "name": "Cerknica",
@@ -168,7 +258,12 @@
 "basic": 1148,
 "upper": 504,
 "children": 2222,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.448649682144261,
+"income_pc": 14278.49,
+"income_median": 13161.24,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (635 of 14,278 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "014": {
 "name": "Cerkno",
@@ -177,7 +272,12 @@
 "basic": 345,
 "upper": 197,
 "children": 825,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.097556127971126,
+"income_pc": 13886.57,
+"income_median": 12927.22,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (569 of 13,887 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "153": {
 "name": "Cerkvenjak",
@@ -195,7 +295,12 @@
 "basic": 160,
 "upper": 86,
 "children": 328,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.312347818525144,
+"income_pc": 12879.36,
+"income_median": 11634.84,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (813 of 12,879 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "015": {
 "name": "Črenšovci",
@@ -204,7 +309,12 @@
 "basic": 324,
 "upper": 157,
 "children": 651,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 7.223582527523094,
+"income_pc": 12452.27,
+"income_median": 10700.46,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (900 of 12,452 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "016": {
 "name": "Črna na Koroškem",
@@ -213,7 +323,12 @@
 "basic": 216,
 "upper": 108,
 "children": 475,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.870250578036928,
+"income_pc": 14155.67,
+"income_median": 12524.47,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (973 of 14,156 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "017": {
 "name": "Črnomelj",
@@ -222,7 +337,12 @@
 "basic": 1284,
 "upper": 530,
 "children": 2485,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.456898971706263,
+"income_pc": 12931.13,
+"income_median": 11572.91,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (835 of 12,931 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "018": {
 "name": "Destrnik",
@@ -240,7 +360,12 @@
 "basic": 455,
 "upper": 178,
 "children": 828,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.3779227720921075,
+"income_pc": 14012.81,
+"income_median": 12744.86,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (613 of 14,013 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "154": {
 "name": "Dobje",
@@ -258,7 +383,12 @@
 "basic": 353,
 "upper": 182,
 "children": 687,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.262053650872566,
+"income_pc": 14441.89,
+"income_median": 12682.42,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (760 of 14,442 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "155": {
 "name": "Dobrna",
@@ -267,7 +397,12 @@
 "basic": 251,
 "upper": 86,
 "children": 432,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 8.095702826029006,
+"income_pc": 13392.29,
+"income_median": 12326.8,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (1,084 of 13,392 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "021": {
 "name": "Dobrova - Polhov Gradec",
@@ -276,7 +411,12 @@
 "basic": 776,
 "upper": 409,
 "children": 1625,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.369875744329329,
+"income_pc": 14526.5,
+"income_median": 12384.24,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (635 of 14,526 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "156": {
 "name": "Dobrovnik/Dobronak",
@@ -285,7 +425,12 @@
 "basic": 82,
 "upper": 49,
 "children": 180,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 7.312611677882567,
+"income_pc": 12037.97,
+"income_median": 10686.14,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (880 of 12,038 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "022": {
 "name": "Dol pri Ljubljani",
@@ -294,7 +439,12 @@
 "basic": 738,
 "upper": 313,
 "children": 1249,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 3.9520557751322043,
+"income_pc": 15436.27,
+"income_median": 13459.37,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (610 of 15,436 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "157": {
 "name": "Dolenjske Toplice",
@@ -303,7 +453,12 @@
 "basic": 359,
 "upper": 167,
 "children": 649,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.227883566381583,
+"income_pc": 14326.79,
+"income_median": 12503.04,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (606 of 14,327 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "023": {
 "name": "Domžale",
@@ -312,7 +467,12 @@
 "basic": 4082,
 "upper": 1702,
 "children": 7467,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.164670974984235,
+"income_pc": 15429.07,
+"income_median": 13333.91,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (643 of 15,429 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "024": {
 "name": "Dornava",
@@ -321,7 +481,12 @@
 "basic": 242,
 "upper": 114,
 "children": 470,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 11.302369457854724,
+"income_pc": 12614.7,
+"income_median": 12167.35,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (1,426 of 12,615 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "025": {
 "name": "Dravograd",
@@ -339,7 +504,12 @@
 "basic": 650,
 "upper": 301,
 "children": 1191,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.265628899426004,
+"income_pc": 12822.4,
+"income_median": 10984.17,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (675 of 12,822 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "027": {
 "name": "Gorenja vas - Poljane",
@@ -348,7 +518,12 @@
 "basic": 1023,
 "upper": 460,
 "children": 1829,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.516807700796019,
+"income_pc": 13230.84,
+"income_median": 11708.78,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (730 of 13,231 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "028": {
 "name": "Gorišnica",
@@ -357,7 +532,12 @@
 "basic": 434,
 "upper": 167,
 "children": 735,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.412070386669843,
+"income_pc": 13308.77,
+"income_median": 11986.01,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (720 of 13,309 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "207": {
 "name": "Gorje",
@@ -375,7 +555,12 @@
 "basic": 697,
 "upper": 291,
 "children": 1256,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.661367481005411,
+"income_pc": 12366.68,
+"income_median": 10642.32,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (824 of 12,367 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "030": {
 "name": "Gornji Grad",
@@ -384,7 +569,12 @@
 "basic": 200,
 "upper": 114,
 "children": 407,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.399386054094513,
+"income_pc": 13199.86,
+"income_median": 11807.26,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (845 of 13,200 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "031": {
 "name": "Gornji Petrovci",
@@ -393,7 +583,12 @@
 "basic": 137,
 "upper": 53,
 "children": 247,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.477035202937324,
+"income_pc": 11793.05,
+"income_median": 10155.12,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (764 of 11,793 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "158": {
 "name": "Grad",
@@ -402,7 +597,12 @@
 "basic": 136,
 "upper": 66,
 "children": 309,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.7315985823008235,
+"income_pc": 10515.63,
+"income_median": 9030.94,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (708 of 10,516 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "032": {
 "name": "Grosuplje",
@@ -411,7 +611,12 @@
 "basic": 2303,
 "upper": 1033,
 "children": 4455,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.545647809759419,
+"income_pc": 15287.59,
+"income_median": 13345.29,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (695 of 15,288 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "159": {
 "name": "Hajdina",
@@ -429,7 +634,12 @@
 "basic": 1037,
 "upper": 473,
 "children": 2036,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.879866989463322,
+"income_pc": 13977.84,
+"income_median": 11958.71,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (682 of 13,978 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "161": {
 "name": "Hodoš/Hodos",
@@ -447,7 +657,12 @@
 "basic": 337,
 "upper": 147,
 "children": 629,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.36821069007238,
+"income_pc": 14488.77,
+"income_median": 12679.35,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (633 of 14,489 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "034": {
 "name": "Hrastnik",
@@ -456,7 +671,12 @@
 "basic": 671,
 "upper": 305,
 "children": 1223,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.40767531580894,
+"income_pc": 13680.74,
+"income_median": 12640.25,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (740 of 13,681 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "035": {
 "name": "Hrpelje - Kozina",
@@ -465,7 +685,12 @@
 "basic": 461,
 "upper": 191,
 "children": 966,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.340710092159921,
+"income_pc": 13955.09,
+"income_median": 12922.24,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (606 of 13,955 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "036": {
 "name": "Idrija",
@@ -474,7 +699,12 @@
 "basic": 1037,
 "upper": 474,
 "children": 1952,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.201081291248111,
+"income_pc": 14917.35,
+"income_median": 13663.6,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (627 of 14,917 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "037": {
 "name": "Ig",
@@ -483,7 +713,12 @@
 "basic": 873,
 "upper": 402,
 "children": 1612,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.041370983534729,
+"income_pc": 14195.94,
+"income_median": 12801.99,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (716 of 14,196 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "038": {
 "name": "Ilirska Bistrica",
@@ -492,7 +727,12 @@
 "basic": 1110,
 "upper": 475,
 "children": 2016,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.709031605318249,
+"income_pc": 13866.97,
+"income_median": 12484.38,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (653 of 13,867 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "039": {
 "name": "Ivančna Gorica",
@@ -510,7 +750,12 @@
 "basic": 1268,
 "upper": 610,
 "children": 2574,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.34121253700804,
+"income_pc": 14094.91,
+"income_median": 12333.12,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (612 of 14,095 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "041": {
 "name": "Jesenice",
@@ -519,7 +764,12 @@
 "basic": 1839,
 "upper": 754,
 "children": 3628,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.687139020310058,
+"income_pc": 13288.49,
+"income_median": 12125.74,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (623 of 13,288 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "163": {
 "name": "Jezersko",
@@ -537,7 +787,12 @@
 "basic": 229,
 "upper": 116,
 "children": 416,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 7.143597849084689,
+"income_pc": 11957.7,
+"income_median": 10452.44,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (854 of 11,958 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "043": {
 "name": "Kamnik",
@@ -546,7 +801,12 @@
 "basic": 2919,
 "upper": 1346,
 "children": 5691,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.500550128248863,
+"income_pc": 14569.33,
+"income_median": 12788.87,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (656 of 14,569 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "044": {
 "name": "Kanal",
@@ -555,7 +815,12 @@
 "basic": 363,
 "upper": 231,
 "children": 822,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.2617914000892725,
+"income_pc": 13442,
+"income_median": 12085.97,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (573 of 13,442 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "045": {
 "name": "Kidričevo",
@@ -564,7 +829,12 @@
 "basic": 582,
 "upper": 265,
 "children": 1108,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.4185355684365,
+"income_pc": 13546.28,
+"income_median": 11953.82,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (734 of 13,546 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "046": {
 "name": "Kobarid",
@@ -573,7 +843,12 @@
 "basic": 379,
 "upper": 154,
 "children": 638,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.060696444215581,
+"income_pc": 13457.79,
+"income_median": 12013.57,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (546 of 13,458 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "047": {
 "name": "Kobilje",
@@ -591,7 +866,12 @@
 "basic": 1389,
 "upper": 558,
 "children": 2696,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 7.52521340288404,
+"income_pc": 13103.15,
+"income_median": 11534.79,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (986 of 13,103 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "049": {
 "name": "Komen",
@@ -600,7 +880,12 @@
 "basic": 286,
 "upper": 139,
 "children": 488,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 3.4706764979978617,
+"income_pc": 14282.23,
+"income_median": 12521.03,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (496 of 14,282 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "164": {
 "name": "Komenda",
@@ -609,7 +894,12 @@
 "basic": 744,
 "upper": 366,
 "children": 1453,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.952753210942028,
+"income_pc": 15166.11,
+"income_median": 13135.57,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (751 of 15,166 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "050": {
 "name": "Koper/Capodistria",
@@ -618,7 +908,12 @@
 "basic": 4744,
 "upper": 2045,
 "children": 8785,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.470669748581619,
+"income_pc": 14086.48,
+"income_median": 12651.44,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (630 of 14,086 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "197": {
 "name": "Kostanjevica na Krki",
@@ -627,7 +922,12 @@
 "basic": 237,
 "upper": 103,
 "children": 423,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.37718310494697,
+"income_pc": 14626.53,
+"income_median": 12528.54,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (640 of 14,627 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "165": {
 "name": "Kostel",
@@ -636,7 +936,12 @@
 "basic": 53,
 "upper": 17,
 "children": 54,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.50342263705111,
+"income_pc": 13390.26,
+"income_median": 11311.41,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (603 of 13,390 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "051": {
 "name": "Kozje",
@@ -654,7 +959,12 @@
 "basic": 5409,
 "upper": 2378,
 "children": 10289,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.356766685815122,
+"income_pc": 14535.55,
+"income_median": 12830.63,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (633 of 14,536 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "053": {
 "name": "Kranjska Gora",
@@ -663,7 +973,12 @@
 "basic": 355,
 "upper": 187,
 "children": 641,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 2.9385127256944337,
+"income_pc": 16749.97,
+"income_median": 14205.58,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (492 of 16,750 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "166": {
 "name": "Križevci",
@@ -672,7 +987,12 @@
 "basic": 284,
 "upper": 127,
 "children": 542,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 7.511213803655541,
+"income_pc": 12901.51,
+"income_median": 10697.36,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (969 of 12,902 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "054": {
 "name": "Krško",
@@ -681,7 +1001,12 @@
 "basic": 2554,
 "upper": 1042,
 "children": 4888,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.720857944871117,
+"income_pc": 13872.22,
+"income_median": 12382.97,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (794 of 13,872 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "055": {
 "name": "Kungota",
@@ -690,7 +1015,12 @@
 "basic": 393,
 "upper": 205,
 "children": 818,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.564651964432606,
+"income_pc": 12764.5,
+"income_median": 10817.34,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (710 of 12,764 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "056": {
 "name": "Kuzma",
@@ -699,7 +1029,12 @@
 "basic": 141,
 "upper": 56,
 "children": 274,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 9.181709569263258,
+"income_pc": 9508.36,
+"income_median": 7210.28,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (873 of 9,508 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "057": {
 "name": "Laško",
@@ -708,7 +1043,12 @@
 "basic": 1067,
 "upper": 506,
 "children": 2203,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.447390737092266,
+"income_pc": 13313.53,
+"income_median": 12371.21,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (725 of 13,314 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "058": {
 "name": "Lenart",
@@ -717,7 +1057,12 @@
 "basic": 778,
 "upper": 329,
 "children": 1499,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.717817484786132,
+"income_pc": 13282.29,
+"income_median": 11494.8,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (892 of 13,282 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "059": {
 "name": "Lendava/Lendva",
@@ -726,7 +1071,12 @@
 "basic": 672,
 "upper": 288,
 "children": 1429,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.696548238273828,
+"income_pc": 12721.33,
+"income_median": 11201.82,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (852 of 12,721 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "060": {
 "name": "Litija",
@@ -735,7 +1085,12 @@
 "basic": 1494,
 "upper": 708,
 "children": 2864,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.822312190733244,
+"income_pc": 14116.05,
+"income_median": 12785.1,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (681 of 14,116 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "061": {
 "name": "Ljubljana",
@@ -744,7 +1099,12 @@
 "basic": 26217,
 "upper": 10521,
 "children": 48550,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.682107454757106,
+"income_pc": 15600.24,
+"income_median": 13042.8,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (730 of 15,600 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "062": {
 "name": "Ljubno",
@@ -762,7 +1122,12 @@
 "basic": 820,
 "upper": 465,
 "children": 1656,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.500571021149866,
+"income_pc": 12679.04,
+"income_median": 10980.66,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (824 of 12,679 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "208": {
 "name": "Log - Dragomer",
@@ -771,7 +1136,12 @@
 "basic": 368,
 "upper": 158,
 "children": 644,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 3.504829605554166,
+"income_pc": 16639.04,
+"income_median": 14277.45,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (583 of 16,639 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "064": {
 "name": "Logatec",
@@ -780,7 +1150,12 @@
 "basic": 1681,
 "upper": 719,
 "children": 3172,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.738699285661643,
+"income_pc": 14518.33,
+"income_median": 12973.08,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (688 of 14,518 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "065": {
 "name": "Loška dolina",
@@ -789,7 +1164,12 @@
 "basic": 257,
 "upper": 160,
 "children": 582,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.129770806846783,
+"income_pc": 13167.06,
+"income_median": 12749.86,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (675 of 13,167 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "066": {
 "name": "Loški Potok",
@@ -798,7 +1178,12 @@
 "basic": 152,
 "upper": 59,
 "children": 325,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.049093372270739,
+"income_pc": 12902.76,
+"income_median": 11918.56,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (780 of 12,903 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "167": {
 "name": "Lovrenc na Pohorju",
@@ -825,7 +1210,12 @@
 "basic": 650,
 "upper": 304,
 "children": 1325,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.835309905946784,
+"income_pc": 14180.27,
+"income_median": 12952.88,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (686 of 14,180 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "069": {
 "name": "Majšperk",
@@ -834,7 +1224,12 @@
 "basic": 341,
 "upper": 168,
 "children": 685,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.607107465944534,
+"income_pc": 13138.86,
+"income_median": 11041.49,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (737 of 13,139 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "198": {
 "name": "Makole",
@@ -843,7 +1238,12 @@
 "basic": 158,
 "upper": 70,
 "children": 340,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.881662389257847,
+"income_pc": 12947.87,
+"income_median": 11151.59,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (762 of 12,948 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "070": {
 "name": "Maribor",
@@ -852,7 +1252,12 @@
 "basic": 9572,
 "upper": 3621,
 "children": 17387,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.097363580994655,
+"income_pc": 13282.79,
+"income_median": 11341.2,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (810 of 13,283 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "168": {
 "name": "Markovci",
@@ -861,7 +1266,12 @@
 "basic": 376,
 "upper": 156,
 "children": 701,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.6240511018573915,
+"income_pc": 13253.53,
+"income_median": 12297.95,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (613 of 13,254 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "071": {
 "name": "Medvode",
@@ -870,7 +1280,12 @@
 "basic": 1625,
 "upper": 782,
 "children": 3358,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 3.8425534714034884,
+"income_pc": 15810.32,
+"income_median": 13595.02,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (608 of 15,810 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "072": {
 "name": "Mengeš",
@@ -879,7 +1294,12 @@
 "basic": 859,
 "upper": 374,
 "children": 1672,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.787675698229327,
+"income_pc": 15338.8,
+"income_median": 13435.28,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (888 of 15,339 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "073": {
 "name": "Metlika",
@@ -906,7 +1326,12 @@
 "basic": 666,
 "upper": 295,
 "children": 1245,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.525647874839207,
+"income_pc": 13402.28,
+"income_median": 11845.86,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (607 of 13,402 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "075": {
 "name": "Miren - Kostanjevica",
@@ -915,7 +1340,12 @@
 "basic": 391,
 "upper": 217,
 "children": 831,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 3.4795752173669077,
+"income_pc": 14078.73,
+"income_median": 12741.27,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (490 of 14,079 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "212": {
 "name": "Mirna",
@@ -933,7 +1363,12 @@
 "basic": 390,
 "upper": 153,
 "children": 694,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.771625521605087,
+"income_pc": 14313.99,
+"income_median": 12901.02,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (683 of 14,314 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "076": {
 "name": "Mislinja",
@@ -942,7 +1377,12 @@
 "basic": 399,
 "upper": 186,
 "children": 767,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.174589026461581,
+"income_pc": 13900.53,
+"income_median": 12880.34,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (580 of 13,901 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "199": {
 "name": "Mokronog - Trebelno",
@@ -951,7 +1391,12 @@
 "basic": 336,
 "upper": 154,
 "children": 692,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.964376718904521,
+"income_pc": 13853.3,
+"income_median": 11645.34,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (688 of 13,853 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "077": {
 "name": "Moravče",
@@ -960,7 +1405,12 @@
 "basic": 581,
 "upper": 303,
 "children": 1191,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.990844995408103,
+"income_pc": 13894.04,
+"income_median": 12591.48,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (693 of 13,894 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "078": {
 "name": "Moravske Toplice",
@@ -969,7 +1419,12 @@
 "basic": 393,
 "upper": 188,
 "children": 890,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.743451640580576,
+"income_pc": 12855.51,
+"income_median": 11218.86,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (738 of 12,856 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "079": {
 "name": "Mozirje",
@@ -978,7 +1433,12 @@
 "basic": 425,
 "upper": 176,
 "children": 825,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.00553065430008,
+"income_pc": 14106.83,
+"income_median": 12805.68,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (847 of 14,107 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "080": {
 "name": "Murska Sobota",
@@ -987,7 +1447,12 @@
 "basic": 1646,
 "upper": 688,
 "children": 2582,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.724341443818492,
+"income_pc": 13715.99,
+"income_median": 12194.06,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (922 of 13,716 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "081": {
 "name": "Muta",
@@ -996,7 +1461,12 @@
 "basic": 312,
 "upper": 141,
 "children": 605,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.975787397371624,
+"income_pc": 13581.77,
+"income_median": 11522.91,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (676 of 13,582 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "082": {
 "name": "Naklo",
@@ -1005,7 +1475,12 @@
 "basic": 735,
 "upper": 266,
 "children": 1031,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.230516674374736,
+"income_pc": 14832.94,
+"income_median": 13043.27,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (628 of 14,833 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "083": {
 "name": "Nazarje",
@@ -1023,7 +1498,12 @@
 "basic": 2725,
 "upper": 1323,
 "children": 5234,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.094880016908917,
+"income_pc": 14099.07,
+"income_median": 13038.65,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (577 of 14,099 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "085": {
 "name": "Novo mesto",
@@ -1032,7 +1512,12 @@
 "basic": 3903,
 "upper": 1591,
 "children": 7409,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.894522096182161,
+"income_pc": 15430.72,
+"income_median": 13655.57,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (755 of 15,431 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "086": {
 "name": "Odranci",
@@ -1041,7 +1526,12 @@
 "basic": 155,
 "upper": 75,
 "children": 283,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.428127525111515,
+"income_pc": 12177.68,
+"income_median": 11319.64,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (661 of 12,178 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "171": {
 "name": "Oplotnica",
@@ -1059,7 +1549,12 @@
 "basic": 879,
 "upper": 476,
 "children": 1812,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.856696376895474,
+"income_pc": 12958.5,
+"income_median": 11667.9,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (759 of 12,958 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "088": {
 "name": "Osilnica",
@@ -1077,7 +1572,12 @@
 "basic": 585,
 "upper": 279,
 "children": 1165,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.314403175611791,
+"income_pc": 13062.05,
+"income_median": 11287.4,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (694 of 13,062 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "090": {
 "name": "Piran/Pirano",
@@ -1086,7 +1586,12 @@
 "basic": 1445,
 "upper": 550,
 "children": 2544,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.356520831691687,
+"income_pc": 14086.47,
+"income_median": 11971.43,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (614 of 14,086 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "091": {
 "name": "Pivka",
@@ -1095,7 +1600,12 @@
 "basic": 553,
 "upper": 253,
 "children": 998,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 3.897185377857967,
+"income_pc": 14194.09,
+"income_median": 13059.29,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (553 of 14,194 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "092": {
 "name": "Podčetrtek",
@@ -1113,7 +1623,12 @@
 "basic": 120,
 "upper": 60,
 "children": 256,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.178638962146703,
+"income_pc": 12755.56,
+"income_median": 10774.05,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (788 of 12,756 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "093": {
 "name": "Podvelka",
@@ -1122,7 +1637,12 @@
 "basic": 162,
 "upper": 86,
 "children": 376,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.750759160100229,
+"income_pc": 12355.76,
+"income_median": 10527.69,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (711 of 12,356 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "200": {
 "name": "Poljčane",
@@ -1131,7 +1651,12 @@
 "basic": 334,
 "upper": 170,
 "children": 682,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.550229709035222,
+"income_pc": 13060,
+"income_median": 11586.65,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (855 of 13,060 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "173": {
 "name": "Polzela",
@@ -1140,7 +1665,12 @@
 "basic": 613,
 "upper": 320,
 "children": 1181,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.571284344321531,
+"income_pc": 14778.28,
+"income_median": 12941.9,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (823 of 14,778 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "094": {
 "name": "Postojna",
@@ -1149,7 +1679,12 @@
 "basic": 1774,
 "upper": 701,
 "children": 3298,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.386763625376814,
+"income_pc": 14562.9,
+"income_median": 13235.95,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (639 of 14,563 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "174": {
 "name": "Prebold",
@@ -1158,7 +1693,12 @@
 "basic": 474,
 "upper": 211,
 "children": 943,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.2133720382571855,
+"income_pc": 13906.93,
+"income_median": 12313.33,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (725 of 13,907 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "095": {
 "name": "Preddvor",
@@ -1167,7 +1707,12 @@
 "basic": 414,
 "upper": 191,
 "children": 786,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.37502652576182,
+"income_pc": 15079.68,
+"income_median": 13351.51,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (660 of 15,080 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "175": {
 "name": "Prevalje",
@@ -1176,7 +1721,12 @@
 "basic": 592,
 "upper": 270,
 "children": 1157,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.700300895352208,
+"income_pc": 14453.53,
+"income_median": 12795.73,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (968 of 14,454 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "096": {
 "name": "Ptuj",
@@ -1185,7 +1735,12 @@
 "basic": 2030,
 "upper": 868,
 "children": 3638,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.145167846980038,
+"income_pc": 14021.7,
+"income_median": 12549.6,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (721 of 14,022 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "097": {
 "name": "Puconci",
@@ -1194,7 +1749,12 @@
 "basic": 478,
 "upper": 210,
 "children": 946,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 7.794962606039818,
+"income_pc": 12186.46,
+"income_median": 10467.66,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (950 of 12,186 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "098": {
 "name": "Rače - Fram",
@@ -1203,7 +1763,12 @@
 "basic": 857,
 "upper": 364,
 "children": 1599,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.829951578606261,
+"income_pc": 13948.38,
+"income_median": 11929.47,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (674 of 13,948 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "099": {
 "name": "Radeče",
@@ -1212,7 +1777,12 @@
 "basic": 318,
 "upper": 152,
 "children": 691,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.290490946488658,
+"income_pc": 14128.22,
+"income_median": 13066.09,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (606 of 14,128 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "100": {
 "name": "Radenci",
@@ -1221,7 +1791,12 @@
 "basic": 389,
 "upper": 156,
 "children": 723,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.39099649119028,
+"income_pc": 12998.71,
+"income_median": 11463.5,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (701 of 12,999 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "101": {
 "name": "Radlje ob Dravi",
@@ -1230,7 +1805,12 @@
 "basic": 510,
 "upper": 282,
 "children": 1047,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.467537797402848,
+"income_pc": 13669.59,
+"income_median": 11686.94,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (747 of 13,670 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "102": {
 "name": "Radovljica",
@@ -1239,7 +1819,12 @@
 "basic": 1711,
 "upper": 832,
 "children": 3397,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.5601118202792135,
+"income_pc": 14845.25,
+"income_median": 12596.58,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (677 of 14,845 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "103": {
 "name": "Ravne na Koroškem",
@@ -1248,7 +1833,12 @@
 "basic": 954,
 "upper": 439,
 "children": 1825,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.02855416183351,
+"income_pc": 14164.31,
+"income_median": 12816.08,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (712 of 14,164 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "176": {
 "name": "Razkrižje",
@@ -1266,7 +1856,12 @@
 "basic": 202,
 "upper": 115,
 "children": 374,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 7.641958791257049,
+"income_pc": 13663.12,
+"income_median": 12122.15,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (1,044 of 13,663 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "201": {
 "name": "Renče - Vogrsko",
@@ -1275,7 +1870,12 @@
 "basic": 314,
 "upper": 196,
 "children": 744,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 3.9403897254838767,
+"income_pc": 14025.77,
+"income_median": 12807.27,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (553 of 14,026 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "104": {
 "name": "Ribnica",
@@ -1302,7 +1902,12 @@
 "basic": 969,
 "upper": 447,
 "children": 1850,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.5969704104858335,
+"income_pc": 12741,
+"income_median": 11161.59,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (713 of 12,741 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "105": {
 "name": "Rogašovci",
@@ -1311,7 +1916,12 @@
 "basic": 257,
 "upper": 105,
 "children": 503,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 11.069203201614494,
+"income_pc": 9791.31,
+"income_median": 7931.56,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (1,084 of 9,791 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "107": {
 "name": "Rogatec",
@@ -1320,7 +1930,12 @@
 "basic": 249,
 "upper": 120,
 "children": 532,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.122708630616787,
+"income_pc": 12025.56,
+"income_median": 10510.75,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (736 of 12,026 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "108": {
 "name": "Ruše",
@@ -1329,7 +1944,12 @@
 "basic": 404,
 "upper": 293,
 "children": 1063,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.079632727799661,
+"income_pc": 13663.98,
+"income_median": 12364.5,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (694 of 13,664 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "178": {
 "name": "Selnica ob Dravi",
@@ -1338,7 +1958,12 @@
 "basic": 342,
 "upper": 163,
 "children": 683,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.736314432601125,
+"income_pc": 13265.8,
+"income_median": 11710.5,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (628 of 13,266 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "109": {
 "name": "Semič",
@@ -1356,7 +1981,12 @@
 "basic": 1567,
 "upper": 671,
 "children": 2958,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.443873253049517,
+"income_pc": 14019.43,
+"income_median": 12576.1,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (763 of 14,019 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "111": {
 "name": "Sežana",
@@ -1365,7 +1995,12 @@
 "basic": 1079,
 "upper": 524,
 "children": 2209,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.615574067366896,
+"income_pc": 13805,
+"income_median": 12638.05,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (637 of 13,805 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "112": {
 "name": "Slovenj Gradec",
@@ -1374,7 +2009,12 @@
 "basic": 1614,
 "upper": 728,
 "children": 3030,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.965379637994845,
+"income_pc": 14334.05,
+"income_median": 12729.85,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (712 of 14,334 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "113": {
 "name": "Slovenska Bistrica",
@@ -1383,7 +2023,12 @@
 "basic": 2483,
 "upper": 1100,
 "children": 4692,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.430383844924223,
+"income_pc": 13837.88,
+"income_median": 12007.24,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (751 of 13,838 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "114": {
 "name": "Slovenske Konjice",
@@ -1410,7 +2055,12 @@
 "basic": 28,
 "upper": 23,
 "children": 87,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 7.012552629536673,
+"income_pc": 11725.83,
+"income_median": 9685.28,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (822 of 11,726 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "202": {
 "name": "Središče ob Dravi",
@@ -1419,7 +2069,12 @@
 "basic": 148,
 "upper": 77,
 "children": 302,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.679968985718115,
+"income_pc": 12536.16,
+"income_median": 10970.25,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (712 of 12,536 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "115": {
 "name": "Starše",
@@ -1428,7 +2083,12 @@
 "basic": 302,
 "upper": 178,
 "children": 628,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.5308231417146,
+"income_pc": 13291.15,
+"income_median": 11218.16,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (735 of 13,291 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "203": {
 "name": "Straža",
@@ -1437,7 +2097,12 @@
 "basic": 391,
 "upper": 160,
 "children": 736,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 3.9773976741337886,
+"income_pc": 14779.01,
+"income_median": 13110.72,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (588 of 14,779 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "181": {
 "name": "Sveta Ana",
@@ -1455,7 +2120,12 @@
 "basic": 194,
 "upper": 61,
 "children": 398,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.4277530059562435,
+"income_pc": 13023.31,
+"income_median": 11594.83,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (577 of 13,023 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "182": {
 "name": "Sveti Andraž v Slov. goricah",
@@ -1473,7 +2143,12 @@
 "basic": 240,
 "upper": 134,
 "children": 510,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 8.316551723555127,
+"income_pc": 11833.39,
+"income_median": 9587.14,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (984 of 11,833 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "210": {
 "name": "Sveti Jurij v Slov. goricah",
@@ -1482,7 +2157,12 @@
 "basic": 187,
 "upper": 85,
 "children": 385,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.208852998649198,
+"income_pc": 12200.16,
+"income_median": 10629.2,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (757 of 12,200 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "205": {
 "name": "Sveti Tomaž",
@@ -1491,7 +2171,12 @@
 "basic": 158,
 "upper": 79,
 "children": 295,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.439289931354694,
+"income_pc": 12491.75,
+"income_median": 11267.28,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (804 of 12,492 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "033": {
 "name": "Šalovci",
@@ -1500,7 +2185,12 @@
 "basic": 59,
 "upper": 32,
 "children": 162,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.435380159522937,
+"income_pc": 11953.14,
+"income_median": 10092.25,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (769 of 11,953 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "183": {
 "name": "Šempeter - Vrtojba",
@@ -1509,7 +2199,12 @@
 "basic": 674,
 "upper": 247,
 "children": 1045,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 3.5754613030767177,
+"income_pc": 14656.85,
+"income_median": 13291.36,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (524 of 14,657 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "117": {
 "name": "Šenčur",
@@ -1518,7 +2213,12 @@
 "basic": 845,
 "upper": 417,
 "children": 1706,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.124333293113713,
+"income_pc": 15000.97,
+"income_median": 12765.9,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (619 of 15,001 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "118": {
 "name": "Šentilj",
@@ -1527,7 +2227,12 @@
 "basic": 667,
 "upper": 323,
 "children": 1356,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.420280254323146,
+"income_pc": 12348.07,
+"income_median": 10777.08,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (669 of 12,348 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "119": {
 "name": "Šentjernej",
@@ -1536,7 +2241,12 @@
 "basic": 856,
 "upper": 311,
 "children": 1617,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.184248899308339,
+"income_pc": 14161.55,
+"income_median": 11828.2,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (734 of 14,162 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "120": {
 "name": "Šentjur",
@@ -1545,7 +2255,12 @@
 "basic": 1806,
 "upper": 857,
 "children": 3587,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.348121913953983,
+"income_pc": 13502.31,
+"income_median": 11928.18,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (722 of 13,502 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "211": {
 "name": "Šentrupert",
@@ -1554,7 +2269,12 @@
 "basic": 212,
 "upper": 111,
 "children": 485,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.8768163037741195,
+"income_pc": 12447.67,
+"income_median": 10434.76,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (607 of 12,448 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "121": {
 "name": "Škocjan",
@@ -1563,7 +2283,12 @@
 "basic": 369,
 "upper": 149,
 "children": 796,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.842959141714329,
+"income_pc": 13375.5,
+"income_median": 11865.84,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (915 of 13,376 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "122": {
 "name": "Škofja Loka",
@@ -1572,7 +2297,12 @@
 "basic": 2352,
 "upper": 1006,
 "children": 4634,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.622328113174985,
+"income_pc": 14891.63,
+"income_median": 13128.63,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (688 of 14,892 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "123": {
 "name": "Škofljica",
@@ -1581,7 +2311,12 @@
 "basic": 1304,
 "upper": 605,
 "children": 2451,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.109629305877444,
+"income_pc": 15649.83,
+"income_median": 13473.99,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (643 of 15,650 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "124": {
 "name": "Šmarje pri Jelšah",
@@ -1590,7 +2325,12 @@
 "basic": 922,
 "upper": 490,
 "children": 1932,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.363298631012443,
+"income_pc": 12893.47,
+"income_median": 11280.21,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (820 of 12,893 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "206": {
 "name": "Šmarješke Toplice",
@@ -1599,7 +2339,12 @@
 "basic": 428,
 "upper": 169,
 "children": 668,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 3.8061034987426425,
+"income_pc": 16514.79,
+"income_median": 14294.46,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (629 of 16,515 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "125": {
 "name": "Šmartno ob Paki",
@@ -1608,7 +2353,12 @@
 "basic": 328,
 "upper": 125,
 "children": 631,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.737354313471199,
+"income_pc": 14087.61,
+"income_median": 13088.32,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (667 of 14,088 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "194": {
 "name": "Šmartno pri Litiji",
@@ -1617,7 +2367,12 @@
 "basic": 567,
 "upper": 277,
 "children": 1198,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.4480665447437975,
+"income_pc": 13363.64,
+"income_median": 12119.42,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (728 of 13,364 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "126": {
 "name": "Šoštanj",
@@ -1626,7 +2381,12 @@
 "basic": 833,
 "upper": 373,
 "children": 1634,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.3808192172423706,
+"income_pc": 13878.37,
+"income_median": 13094.13,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (747 of 13,878 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "127": {
 "name": "Štore",
@@ -1635,7 +2395,12 @@
 "basic": 402,
 "upper": 173,
 "children": 775,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.184244152213338,
+"income_pc": 12991.24,
+"income_median": 12216.39,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (803 of 12,991 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "184": {
 "name": "Tabor",
@@ -1644,7 +2409,12 @@
 "basic": 196,
 "upper": 79,
 "children": 409,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.823080743273307,
+"income_pc": 13934.04,
+"income_median": 11828.6,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (672 of 13,934 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "010": {
 "name": "Tišina",
@@ -1653,7 +2423,12 @@
 "basic": 284,
 "upper": 147,
 "children": 613,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.754119477769025,
+"income_pc": 12389.92,
+"income_median": 11049.33,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (837 of 12,390 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "128": {
 "name": "Tolmin",
@@ -1662,7 +2437,12 @@
 "basic": 928,
 "upper": 422,
 "children": 1742,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.802339719365121,
+"income_pc": 13693.95,
+"income_median": 12027.48,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (658 of 13,694 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "129": {
 "name": "Trbovlje",
@@ -1671,7 +2451,12 @@
 "basic": 1275,
 "upper": 562,
 "children": 2500,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.537615288291107,
+"income_pc": 14031.13,
+"income_median": 12806.87,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (777 of 14,031 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "130": {
 "name": "Trebnje",
@@ -1680,7 +2465,12 @@
 "basic": 1477,
 "upper": 569,
 "children": 2786,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.780891189812787,
+"income_pc": 14639.53,
+"income_median": 12893.61,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (700 of 14,640 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "185": {
 "name": "Trnovska vas",
@@ -1689,7 +2479,12 @@
 "basic": 83,
 "upper": 74,
 "children": 275,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 6.302794910329284,
+"income_pc": 11704.49,
+"income_median": 10191.11,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (738 of 11,704 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "186": {
 "name": "Trzin",
@@ -1698,7 +2493,12 @@
 "basic": 428,
 "upper": 196,
 "children": 734,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.328242458374229,
+"income_pc": 17188.27,
+"income_median": 14483.76,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (744 of 17,188 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "131": {
 "name": "Tržič",
@@ -1707,7 +2507,12 @@
 "basic": 1233,
 "upper": 571,
 "children": 2537,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.244381734514887,
+"income_pc": 14047.04,
+"income_median": 12311.54,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (596 of 14,047 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "132": {
 "name": "Turnišče",
@@ -1725,7 +2530,12 @@
 "basic": 3245,
 "upper": 1262,
 "children": 5945,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.186584515229017,
+"income_pc": 13763.2,
+"income_median": 13382.5,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (714 of 13,763 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "187": {
 "name": "Velika Polana",
@@ -1734,7 +2544,12 @@
 "basic": 156,
 "upper": 54,
 "children": 170,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.609535273640803,
+"income_pc": 12602.47,
+"income_median": 11878.52,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (707 of 12,602 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "134": {
 "name": "Velike Lašče",
@@ -1761,7 +2576,12 @@
 "basic": 472,
 "upper": 217,
 "children": 956,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.295152281914402,
+"income_pc": 12962.8,
+"income_median": 11949.79,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (686 of 12,963 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "136": {
 "name": "Vipava",
@@ -1770,7 +2590,12 @@
 "basic": 592,
 "upper": 280,
 "children": 1158,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.604303012253851,
+"income_pc": 13767.1,
+"income_median": 12569.82,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (772 of 13,767 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "137": {
 "name": "Vitanje",
@@ -1779,7 +2604,12 @@
 "basic": 198,
 "upper": 89,
 "children": 391,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.605547019172117,
+"income_pc": 12951.1,
+"income_median": 11539.58,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (726 of 12,951 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "138": {
 "name": "Vodice",
@@ -1788,7 +2618,12 @@
 "basic": 558,
 "upper": 258,
 "children": 1077,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 3.9498626241048047,
+"income_pc": 15541.3,
+"income_median": 12803.44,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (614 of 15,541 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "139": {
 "name": "Vojnik",
@@ -1797,7 +2632,12 @@
 "basic": 874,
 "upper": 399,
 "children": 1651,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.300889925695524,
+"income_pc": 13888.8,
+"income_median": 12473.52,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (736 of 13,889 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "189": {
 "name": "Vransko",
@@ -1806,7 +2646,12 @@
 "basic": 282,
 "upper": 101,
 "children": 527,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.809250631671411,
+"income_pc": 13638.42,
+"income_median": 11194.36,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (792 of 13,638 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "140": {
 "name": "Vrhnika",
@@ -1815,7 +2660,12 @@
 "basic": 1826,
 "upper": 840,
 "children": 3531,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.4062585470287,
+"income_pc": 14844.34,
+"income_median": 13430.04,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (654 of 14,844 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "141": {
 "name": "Vuzenica",
@@ -1833,7 +2683,12 @@
 "basic": 1478,
 "upper": 711,
 "children": 2872,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.044242081003942,
+"income_pc": 14266.96,
+"income_median": 13209.87,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (720 of 14,267 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "143": {
 "name": "Zavrč",
@@ -1851,7 +2706,12 @@
 "basic": 556,
 "upper": 240,
 "children": 1157,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.217112030504607,
+"income_pc": 13201.94,
+"income_median": 12365.4,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (689 of 13,202 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "190": {
 "name": "Žalec",
@@ -1860,7 +2720,12 @@
 "basic": 2094,
 "upper": 912,
 "children": 3542,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 5.60140739170951,
+"income_pc": 13778.68,
+"income_median": 12298.45,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (772 of 13,779 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "146": {
 "name": "Železniki",
@@ -1869,7 +2734,12 @@
 "basic": 659,
 "upper": 326,
 "children": 1348,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.539543880711156,
+"income_pc": 14226.98,
+"income_median": 13044.6,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (646 of 14,227 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "191": {
 "name": "Žetale",
@@ -1878,7 +2748,12 @@
 "basic": 108,
 "upper": 48,
 "children": 262,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 7.42161743767141,
+"income_pc": 12557.64,
+"income_median": 10837.52,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (932 of 12,558 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "147": {
 "name": "Žiri",
@@ -1896,7 +2771,12 @@
 "basic": 440,
 "upper": 187,
 "children": 817,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 3.4249011177549558,
+"income_pc": 15690.38,
+"income_median": 13407.23,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (537 of 15,690 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 },
 "193": {
 "name": "Žužemberk",
@@ -1905,6 +2785,11 @@
 "basic": 487,
 "upper": 206,
 "children": 924,
-"half": "2026H2"
+"half": "2026H2",
+"stand_in": 4.611896480862903,
+"income_pc": 13941.77,
+"income_median": 12464.44,
+"income_year": "2024",
+"stand_in_note": "Stand-in: parental, family and social benefits as a share of residents' net income, 2024 (643 of 13,942 EUR per person; SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality"
 }
 }

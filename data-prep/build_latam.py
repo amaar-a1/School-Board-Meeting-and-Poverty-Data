@@ -216,9 +216,10 @@ RULES["URY"] = (re.compile(r"comisi[óo]n[^|]{0,40}(educaci[óo]n|cultura)|(educ
                 re.compile(r"sesi[óo]n|plenario|junta", re.I),
                 re.compile(r"^(?!.*(comisi[óo]n|juvenil|infantil|estudiantil)).*(sesi[óo]n (ordinaria|extraordinaria|especial|solemne|de la junta|n[°º.]|\d)|\d+\S* sesi[óo]n|junta departamental[^|]{0,40}sesi[óo]n|plenario)", re.I),
                 re.compile(NOT_T.pattern + r"|solemne|homenaje", re.I))
-RULES["CRI"] = (re.compile(r"comisi[óo]n[^|]{0,40}educaci[óo]n|educaci[óo]n[^|]{0,30}comisi[óo]n", re.I),
-                re.compile(r"sesi[óo]n|concejo", re.I),
-                re.compile(r"^(?!.*(comisi[óo]n|juvenil|ni[ñn]ez|cpj)).*(sesi[óo]n (ordinaria|extraordinaria|municipal|del concejo|de concejo|n[°º.]|\d)|\d+\S* sesi[óo]n|concejo municipal[^|]{0,40}sesi[óo]n)", re.I),
+# (YouTube shows some Costa Rican titles machine-translated into English: "Ordinary Session No. 133".)
+RULES["CRI"] = (re.compile(r"comisi[óo]n[^|]{0,40}educaci[óo]n|educaci[óo]n[^|]{0,30}comisi[óo]n|education (committee|commission)", re.I),
+                re.compile(r"sesi[óo]n|concejo|session", re.I),
+                re.compile(r"^(?!.*(comisi[óo]n|commission|committee|juvenil|ni[ñn]ez|cpj|ccdr|junta vial|road board)).*(sesi[óo]n (ordinaria|extraordinaria|municipal|del concejo|de concejo|n[°º.]|#|\d)|\d+\S* sesi[óo]n|^sesi[óo]n\b|concejo municipal[^|]{0,40}sesi[óo]n|(ordinary|extraordinary|municipal) session|^(ordinaria|extraordinaria)\b)", re.I),
                 re.compile(NOT_T.pattern + r"|solemne", re.I))
 
 # Spain: a committee covering education counts only when at least this many of its sessions are posted; otherwise the

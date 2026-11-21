@@ -56,15 +56,21 @@ def main(*args):
         data[o] = {"name": name, "pop": pop, "area": latest("Surface area (sq. km) - 1 January", o),
                    "basic": latest("Number of pupils", o), "upper": latest("Number of upper secondary school pupils (by residence)", o),
                    "children": pop - adults if pop and adults is not None else None, "half": l2["POLLETJE"][half]}
-    # Income and unemployment, when downloaded
+    # Poverty stand-in: parental, family and social benefits as a share of residents' net income (SURS 0883206S). Slovenia
+    # publishes no poverty rate below its 12 statistical regions; these benefits are largely means-tested (the child
+    # benefit, financial social assistance, the income support supplement), so their weight in income tracks need.
     f = find(dirs, "si_0883206S.json")
     if f:
         c3, l3, v3 = jstat(f)
-        mk = [k for k in c3 if k not in ("OBČINE",)]
-        for o in data:
-            for combo in [dict(zip(mk, [c3[k][i] for k in mk])) for i in range(1)]:
-                pass
-        data["_income_dims"] = {k: list(l3[k].values())[:12] for k in c3 if k != "OBČINE"}
+        yr = l3["LETO"][c3["LETO"][-1]]
+        mid = {l3["MERITVE"][k]: k for k in c3["MERITVE"]}; inc = {l3["NETO DOHODEK"][k]: k for k in c3["NETO DOHODEK"]}
+        for o, x in data.items():
+            g_ = lambda m, i: v3(MERITVE=mid[m], OBČINE=o, LETO=c3["LETO"][-1], **{"NETO DOHODEK": inc[i]})
+            tot, ben, med = g_("Average per capita, net (EUR)", "Net income - TOTAL"), g_("Average per capita, net (EUR)", "Parental, family and social benefits"), g_("Median net income of the population (EUR)", "Net income - TOTAL")
+            if tot and ben is not None:
+                x["stand_in"] = 100 * ben / tot; x["income_pc"] = tot; x["income_median"] = med; x["income_year"] = yr
+                x["stand_in_note"] = (f"Stand-in: parental, family and social benefits as a share of residents' net income, {yr} ({ben:,.0f} of {tot:,.0f} EUR per person; "
+                                      f"SURS 0883206S). These benefits are largely means-tested; Slovenia publishes no poverty rate by municipality")
     # geoBoundaries' names lost Slovenian letters ("Ajdovtcina" for Ajdovščina, "Ltore" for Štore): exact matches first,
     # then the closest remaining spelling (all 212 pairs checked by hand).
     import difflib
