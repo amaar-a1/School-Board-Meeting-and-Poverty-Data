@@ -1,0 +1,2826 @@
+== wiki_es.html OK 517263 https://es.wikipedia.org/w/index.php?title=Anexo:Cantones_de_Costa_Rica&action=render
+== wiki_en.html ERR HTTP Error 404: Not Found https://en.wikipedia.org/w/index.php?title=List_of_cantons_of_Costa_Rica&action=render
+== mep_cantonales.pdf OK 10369553 https://www.mep.go.cr/sites/default/files/2024-05/IndicadoresEducativosCantonales20102018.pdf
+== mep_est.html OK 234017 https://www.mep.go.cr/acerca-del-mep/analisis-estadistico/estadisticas-educativas
+   link /sites/default/files/2022-08/inf-estrategia-regresar.pdf 
+        
+   link /sites/default/files/2022-11/guia-mep-aliarse-oei.pdf 
+        
+   link https://app.powerbi.com/view?r=eyJrIjoiMjc0ZGU4NTEtODY5Mi00Yzg3LTkyYTAtMWU0YzkyN2JhNTAzIiwidCI6IjBmYTFmZTJhLWQ1NWItNDY2NS05NWU3LTUzYTU2OTI3ZDgzMyIsImMiOjR9 
+          Matrícula en el Sistema Educativo Costarricense
+              
+
+
+
+
+   link /sites/default/files/2024-05/MATRICULA_INICIAL_COLEGIOS_2014-2022_POR_ANIO_CURSADO_Y_SEXO.xlsx 
+          Descargar
+              
+
+
+
+
+== dl_01_CULA_INICIAL_COLEGIOS_2014-2022_POR_ANIO_CURSADO_Y_SEXO.xlsx OK 1848398 https://www.mep.go.cr/sites/default/files/2024-05/MATRICULA_INICIAL_COLEGIOS_2014-2022_POR_ANIO_CURSADO_Y_SEXO.xlsx
+   link /sites/default/files/2024-05/matriculainicialescuelasdiurnas-2014-2022-aniocursadosexo.xlsx 
+          Descargar
+              
+
+
+
+
+== dl_02_triculainicialescuelasdiurnas-2014-2022-aniocursadosexo.xlsx OK 6970302 https://www.mep.go.cr/sites/default/files/2024-05/matriculainicialescuelasdiurnas-2014-2022-aniocursadosexo.xlsx
+   link /sites/default/files/2024-05/matriculainicialpreescolar-2014-2022-nivelsexo.xlsx 
+          Descargar
+              
+
+
+
+
+== dl_03_matriculainicialpreescolar-2014-2022-nivelsexo.xlsx OK 4965771 https://www.mep.go.cr/sites/default/files/2024-05/matriculainicialpreescolar-2014-2022-nivelsexo.xlsx
+   link /sites/default/files/2024-05/matriculaasignaturaescueladiurna-2015-2022.xlsx 
+          Descargar
+              
+
+
+
+
+== dl_04_matriculaasignaturaescueladiurna-2015-2022.xlsx OK 34213580 https://www.mep.go.cr/sites/default/files/2024-05/matriculaasignaturaescueladiurna-2015-2022.xlsx
+   link /sites/default/files/2024-06/AprobadosAplazadosReprobados14-22.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/aprobadosaplazadosyreprobadosescuelasdiurnas-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/exclusionintraanualcolegios-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/exclusionintraanualescuelasdiurnas-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/exclusionintraanualpreescolar-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/extranjeroscolegios-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/extranjerosescuelas-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/extranjerospreescolar-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/rendimientodefinitivocolegios-2014-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/rendimientodefinitivoescuelas-2014-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/repitentescolegios-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/repitentesescuelas-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-10/CENomina2026.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-09/NominaCentrosEducativos2025.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-08/NominaCentrosEducativos2024.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/nominacentroseducativos-2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/NominaCentrosEducativos2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/NominaCentrosEducativos2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/NominaCentrosEducativos2020.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/Nomina2019.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/nomina18.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/NominaCentrosEducativos2017.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/NominaCentrosEducativos2016.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-09/ExpansionSistemaEducativo-2025.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-10/ExpansionSistemaEducativoCostarricense2024.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-10/ExpansionSistemaEducativoCostarricense2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/expansionsistemaeducativocostarricense-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/Expansion2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ExpansiondelSistemaEducativoCostarricense2020.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ExpansionSistemaEducativoCostarricense2019.xls 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ExpansionSistemaEducativoCostarricense2018.xls 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ExpansionSistemaEducativoCostarricense2017.xls 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-10/RepeticionSistemaEducativoCostarricense2024.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-12/RepeticionSistemaEducativo%20Costarricense2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-09/RepeticionSistemaEducativoCostarricense2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/RepeticionSistemaEducativoCostarricense2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/RepeticionenelSistemaEducativoCostarricense2020.xls 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/RepeticionenelSistemaEducativoCostarricense2019.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/RepeticionSistemaEducativoCostarricense2018.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/RepeticionSistemaEducativoCostarricense1995-2016.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ProyecciondeMatriculaInicial20212024.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/EstimacionMatriculaInicial20202023.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/EstimacionesCantonalesTasasBrutasEscolaridadSistemaEducativoCostarricense2001.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/01_16.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/TasasdeEscolaridad20102020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-08/CoberturaAsignaturasEspecialesI-IICiclos2025.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-08/CoberturaAsignaturasEspecialesI-IICiclos2024.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-08/CoberturaAsignaturasEspecialesI-IICiclos2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/coberturaasignaturasespecialesIyIICiclos-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/coberturaasignaturasespecialesIyIICiclos2011-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/EnsenanzaAsignaturaEspecialesI-IICiclos20112020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/Ense%C3%B1anzaAsignaturasEspecialesenI-IICiclos2010-2019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/06_18.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/09_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/14_16.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/10_15.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-10/CoberturaProgramaSegundoIdiomaPreescolar-I-IICiclos-2014-2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/coberturaprogramasegundoidioma-preescolarIyIIciclos-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/CoberturaProgramaSegundoIdiomaenPreescolaryIyIICiclos2011-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/Ense%C3%B1anzadeSegundoIdiomaenEducPreescolaryI-IICiclos20112020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/EnsenanzaSegundoIdiomaEducPreescolaryI-IICiclos2010-2019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/07_18.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/08_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/13_16.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/11_15.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-04/ExclusionIntraAnualSistemaEducativoCostarricense24.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-09/ExclusionIntraAnualSistemaEducativoCostarricense2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/exclusionintraanualsistemaeducativocostarricense2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/ExclusionIntraAnualSistemaEducativo2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ExclusionIntraAnualSistemaEducativoCostarricense2020.xls 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/ExclusionIntraAnualSistemaEducativoCostarricense2019.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ExclusionIntraAnualSistemaEducativoCostarricense2018.xls 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ExclusionIntraAnualSistemaEducativoCostarricense2017.xls 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/ExclusionIntraAnualSistemaEducativoCostarricense2016.xls 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-04/RendimientoDefinitivoSistemaEducativoCostarricense24.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-10/RendimientoDefinitivoSistemaEducativoCostarricense2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-09/RendimientoDefinitivoSistemaEducativoCostarricense2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/RendimientoDefinitivoSistemaEducativo2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/RendimientoDefinitivo2019.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/RendimientoDefinitivo2018.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/RendimientoDefinitivo2017.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/RendimientoDefinitivo2016.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-08/AprobadosAplazadosReprobados2024.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-07/AprobadosAplazadosReprobados2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/2010-2021_Aprobados_aplazados_y_reprobados.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/AprobadosAplazadosReprobados2020.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/AprobadosAplazadosReprobados2019.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/AprobadosAplazadosReprobados2018.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/AprobadosAplazadosReprobados2017.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/AprobadosAplazadosReprobados2016.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/educaciondiversificadatecnica-2015-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/EspecialidadesenlaEducacionTecnicaCursoLectivo2020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/EspecialidadesenlaEducaci%C3%B3nT%C3%A9cnicaCursoLectivo2019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/13_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/GraduadosTecnicosMediosIIICicloEducDiversifTecnicaDiurnaNoct2015-2020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/GraduadoscomoTecnicosMedios2014-2019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/04_19.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/09_18.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/05_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/07_16.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/servicioseducacionespecial-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ServiciosdeEducacionEspecial2014-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/serviciosdeeducacionespecial-2014-2021.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ServiciosEducacionEspecial20152020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ServiciosdeEducacionEspecial2015-2019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-12/AdecuacionesCurriculares2015-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/AdecuacionesCurricularesenEducacionTradicional-2015-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/AdecuacionesCurricularesEducTradicional2015-2020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/AdecuacionesCurricularesEducTradicional20142019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/01-19.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/01_18.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/04_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-07/AdecuacionesCurricularesEducTradicional2015.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/12_15.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-09/InfraestructuraEscuelasColegios2025.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-09/InfraestructuraEscuelasColegios2024.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-09/InfraestructuraEscuelasColegios2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-09/InfraestructuraEscuelasColegios2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/infraestructuraescuelascolegiospublicos-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/infraestructuraescuelasycolegiospublicos2020.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/InfraestructuraEscuelasColegiosPublicos2019.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/InfraestructuraEquipServBasicosEscuelasColegiosPublicos2019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/InfraestructuraServiciosBasicosEscuelasColegiosPublicos2018.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/InfraestructuraEscuelasColegiosPublicos2017.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/16_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/personaltotallaboraeninstitucioneseducacionregular-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/Personallaborainstituciones2020.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/PersonalLaboraInstituciones2018.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/PersonalLaboraInstituciones2016.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/SituacionesViolenciaCentrosEducativos2018-2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/violenciaintrafamiliarextrafamiliarycentroseducativos-2018-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/casosviolenciaintrafamiliarextrafamiliaryescolar-2020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/CasosdeViolenciaIntrafamiliarExtrafamiliaryEscolar20182019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ViolenciaCentrosEducativos2018.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/08_18.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/01_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/06_16.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/08_15.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/estudiantesextranjerossistemaeducativocostarricense-20152022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/EstudiantesExtranjerosMatriculadosenEducacionRegular2020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/EstudiantesExtranjerosMatriculadosenEducacionRegular2009-2019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/15_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-09/EstudiantesEmbarazadasMadresPadres2025.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-09/EstudiantesEmbarazadasMadresPadres2024.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-06/EstudiantesEmbarazadasMadresPadres2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-10/EstudiantesEmbarazadasMadresPadres2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/estudiantesembarazadasmadresypadres-2016-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/estudiantesembarazadasmadresypadresmenoresdeedad2016-2020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/Estudiantesembarazadasmadrespadresmenoresdeedad2019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/03_19.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/02_18.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/02_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/03_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/09_16.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/10_16.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/06_15.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/05_15.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/03_15.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-07/MenoresEdadEstudianTrabajanAbandonaronEstudios2024.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-07/MenoresEdadEstudianTrabajanAbandonaronEstudios2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-07/MenoresEdadEstudianTrabajanAbandonaronEstudios2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-07/MenoresEdadEstudianTrabajanAbandonaronEstudios2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/MenoresEdadEstudianTrabajanAbandonaronEstudios2020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/MenoresEdadEstudianTrabajanAbandonaronEstudios2019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/11_18.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/14_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/15_16.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/03_16.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-10/ProblemasSalud2024.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-10/ProblemasSalud2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-10/ProblemasSalud2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ProblemasdeSaludenEstudiantesdeEducacionPreescolaryI-IICiclos2011-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ProblemasSaludEducPreescolarI-IICiclos2011-2020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ProblemasdeSaludenEstudiantesdeEducacionPreescolaryI-IICiclos20112019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/03_18.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/07_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/02_16.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-10/ConsumoDrogasNoMedicadas2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ConsumoDrogasNoMedicadasParticipacionProgPrevencion2014-2020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ProgrdePrevdelUsoIndebidodeDrogasyEstadisticasdelconsumodeDrogasNoMedicadas%202014-2019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/02_19.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/04_18.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/06_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/05_16.pdf 
+          Descargar
+              
+
+
+
+
+== mep_censo.html OK 66948 https://www.mep.go.cr/acerca-del-mep/analisis-estadistico/censo-escolar
+   link /sites/default/files/2022-08/inf-estrategia-regresar.pdf 
+        
+   link /sites/default/files/2022-11/guia-mep-aliarse-oei.pdf 
+        
+   link /sites/default/files/2026-03/DVM-PICR-DPI-DAE-CIR-0001-2026.pdf 
+          DVM-PICR-DPI-DAE-CIR-0001-2026 Censo Escolar 2026-Informe Inicial
+              
+
+
+
+
+   link /sites/default/files/2026-03/GuiaLlenadoCensoEscolar2026-InformeInicial.pdf 
+          Guía de llenado Censo Escolar 2026 - Informe Inicial
+              
+
+
+
+
+   link /sites/default/files/2026-03/AcademicaDiurna-CE2026-InformeInicial.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/PlanNacional-CE2026-InformeInicial.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/BachilleratoInternacional-CE2026-InformeInicial.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/AcademicaNocturna-CE2026-InformeInicial.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/CAIPAD-CE2026-InformeInicial.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/CINDEA-CE2026-InfInicial.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/EscuelaNocturna-2026CE-InformeInicial.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/CEE-CE2026-InformeInicial.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/I-IICiclos-CE2026-InformeInicial.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/AulaEdad-CE2026-InformeInicial.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/Servicio0-6Discapac-CE2026-InformeInicial.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/AulaIntegrada-CE2026-InformeInicial.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/Preescolar-CE2026-InformeInicial.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/TecnicaDiurna-CE2026-InformaInicial.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/PlanNacional-CE2026-InformeInicial_0.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/TecnicaNocturna-CE2026-InformeInicial.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/IPEC-CE2026-InformeInicial.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/PlanNacional-CE2026-InformeInicial_0.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/CONED-2026CE-InformeInicia.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/Telesecundaria-CE2026-InformeInicial.xlsx 
+          Descargar
+              
+
+
+
+
+== mep_ind.html OK 233947 https://mep.go.cr/indicadores-educativos
+   link /sites/default/files/2022-08/inf-estrategia-regresar.pdf 
+        
+   link /sites/default/files/2022-11/guia-mep-aliarse-oei.pdf 
+        
+   link https://app.powerbi.com/view?r=eyJrIjoiMjc0ZGU4NTEtODY5Mi00Yzg3LTkyYTAtMWU0YzkyN2JhNTAzIiwidCI6IjBmYTFmZTJhLWQ1NWItNDY2NS05NWU3LTUzYTU2OTI3ZDgzMyIsImMiOjR9 
+          Matrícula en el Sistema Educativo Costarricense
+              
+
+
+
+
+   link /sites/default/files/2024-05/MATRICULA_INICIAL_COLEGIOS_2014-2022_POR_ANIO_CURSADO_Y_SEXO.xlsx 
+          Descargar
+              
+
+
+
+
+== dl_05_CULA_INICIAL_COLEGIOS_2014-2022_POR_ANIO_CURSADO_Y_SEXO.xlsx OK 1848398 https://mep.go.cr/sites/default/files/2024-05/MATRICULA_INICIAL_COLEGIOS_2014-2022_POR_ANIO_CURSADO_Y_SEXO.xlsx
+   link /sites/default/files/2024-05/matriculainicialescuelasdiurnas-2014-2022-aniocursadosexo.xlsx 
+          Descargar
+              
+
+
+
+
+== dl_06_triculainicialescuelasdiurnas-2014-2022-aniocursadosexo.xlsx OK 6970302 https://mep.go.cr/sites/default/files/2024-05/matriculainicialescuelasdiurnas-2014-2022-aniocursadosexo.xlsx
+   link /sites/default/files/2024-05/matriculainicialpreescolar-2014-2022-nivelsexo.xlsx 
+          Descargar
+              
+
+
+
+
+== dl_07_matriculainicialpreescolar-2014-2022-nivelsexo.xlsx OK 4965771 https://mep.go.cr/sites/default/files/2024-05/matriculainicialpreescolar-2014-2022-nivelsexo.xlsx
+   link /sites/default/files/2024-05/matriculaasignaturaescueladiurna-2015-2022.xlsx 
+          Descargar
+              
+
+
+
+
+== dl_08_matriculaasignaturaescueladiurna-2015-2022.xlsx OK 34213580 https://mep.go.cr/sites/default/files/2024-05/matriculaasignaturaescueladiurna-2015-2022.xlsx
+   link /sites/default/files/2024-06/AprobadosAplazadosReprobados14-22.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/aprobadosaplazadosyreprobadosescuelasdiurnas-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/exclusionintraanualcolegios-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/exclusionintraanualescuelasdiurnas-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/exclusionintraanualpreescolar-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/extranjeroscolegios-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/extranjerosescuelas-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/extranjerospreescolar-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/rendimientodefinitivocolegios-2014-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/rendimientodefinitivoescuelas-2014-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/repitentescolegios-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/repitentesescuelas-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-10/CENomina2026.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-09/NominaCentrosEducativos2025.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-08/NominaCentrosEducativos2024.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/nominacentroseducativos-2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/NominaCentrosEducativos2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/NominaCentrosEducativos2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/NominaCentrosEducativos2020.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/Nomina2019.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/nomina18.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/NominaCentrosEducativos2017.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/NominaCentrosEducativos2016.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-09/ExpansionSistemaEducativo-2025.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-10/ExpansionSistemaEducativoCostarricense2024.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-10/ExpansionSistemaEducativoCostarricense2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/expansionsistemaeducativocostarricense-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/Expansion2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ExpansiondelSistemaEducativoCostarricense2020.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ExpansionSistemaEducativoCostarricense2019.xls 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ExpansionSistemaEducativoCostarricense2018.xls 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ExpansionSistemaEducativoCostarricense2017.xls 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-10/RepeticionSistemaEducativoCostarricense2024.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-12/RepeticionSistemaEducativo%20Costarricense2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-09/RepeticionSistemaEducativoCostarricense2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/RepeticionSistemaEducativoCostarricense2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/RepeticionenelSistemaEducativoCostarricense2020.xls 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/RepeticionenelSistemaEducativoCostarricense2019.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/RepeticionSistemaEducativoCostarricense2018.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/RepeticionSistemaEducativoCostarricense1995-2016.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ProyecciondeMatriculaInicial20212024.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/EstimacionMatriculaInicial20202023.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/EstimacionesCantonalesTasasBrutasEscolaridadSistemaEducativoCostarricense2001.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/01_16.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/TasasdeEscolaridad20102020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-08/CoberturaAsignaturasEspecialesI-IICiclos2025.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-08/CoberturaAsignaturasEspecialesI-IICiclos2024.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-08/CoberturaAsignaturasEspecialesI-IICiclos2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/coberturaasignaturasespecialesIyIICiclos-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/coberturaasignaturasespecialesIyIICiclos2011-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/EnsenanzaAsignaturaEspecialesI-IICiclos20112020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/Ense%C3%B1anzaAsignaturasEspecialesenI-IICiclos2010-2019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/06_18.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/09_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/14_16.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/10_15.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-10/CoberturaProgramaSegundoIdiomaPreescolar-I-IICiclos-2014-2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/coberturaprogramasegundoidioma-preescolarIyIIciclos-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/CoberturaProgramaSegundoIdiomaenPreescolaryIyIICiclos2011-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/Ense%C3%B1anzadeSegundoIdiomaenEducPreescolaryI-IICiclos20112020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/EnsenanzaSegundoIdiomaEducPreescolaryI-IICiclos2010-2019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/07_18.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/08_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/13_16.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/11_15.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-04/ExclusionIntraAnualSistemaEducativoCostarricense24.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-09/ExclusionIntraAnualSistemaEducativoCostarricense2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/exclusionintraanualsistemaeducativocostarricense2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/ExclusionIntraAnualSistemaEducativo2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ExclusionIntraAnualSistemaEducativoCostarricense2020.xls 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/ExclusionIntraAnualSistemaEducativoCostarricense2019.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ExclusionIntraAnualSistemaEducativoCostarricense2018.xls 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ExclusionIntraAnualSistemaEducativoCostarricense2017.xls 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/ExclusionIntraAnualSistemaEducativoCostarricense2016.xls 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-04/RendimientoDefinitivoSistemaEducativoCostarricense24.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-10/RendimientoDefinitivoSistemaEducativoCostarricense2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-09/RendimientoDefinitivoSistemaEducativoCostarricense2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/RendimientoDefinitivoSistemaEducativo2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/RendimientoDefinitivo2019.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/RendimientoDefinitivo2018.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/RendimientoDefinitivo2017.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/RendimientoDefinitivo2016.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-08/AprobadosAplazadosReprobados2024.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-07/AprobadosAplazadosReprobados2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/2010-2021_Aprobados_aplazados_y_reprobados.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/AprobadosAplazadosReprobados2020.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/AprobadosAplazadosReprobados2019.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/AprobadosAplazadosReprobados2018.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/AprobadosAplazadosReprobados2017.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/AprobadosAplazadosReprobados2016.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/educaciondiversificadatecnica-2015-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/EspecialidadesenlaEducacionTecnicaCursoLectivo2020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/EspecialidadesenlaEducaci%C3%B3nT%C3%A9cnicaCursoLectivo2019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/13_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/GraduadosTecnicosMediosIIICicloEducDiversifTecnicaDiurnaNoct2015-2020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/GraduadoscomoTecnicosMedios2014-2019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/04_19.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/09_18.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/05_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/07_16.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/servicioseducacionespecial-2014-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ServiciosdeEducacionEspecial2014-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/serviciosdeeducacionespecial-2014-2021.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ServiciosEducacionEspecial20152020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ServiciosdeEducacionEspecial2015-2019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-12/AdecuacionesCurriculares2015-2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/AdecuacionesCurricularesenEducacionTradicional-2015-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/AdecuacionesCurricularesEducTradicional2015-2020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/AdecuacionesCurricularesEducTradicional20142019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/01-19.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/01_18.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/04_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-07/AdecuacionesCurricularesEducTradicional2015.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/12_15.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-09/InfraestructuraEscuelasColegios2025.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-09/InfraestructuraEscuelasColegios2024.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-09/InfraestructuraEscuelasColegios2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-09/InfraestructuraEscuelasColegios2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/infraestructuraescuelascolegiospublicos-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/infraestructuraescuelasycolegiospublicos2020.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/InfraestructuraEscuelasColegiosPublicos2019.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/InfraestructuraEquipServBasicosEscuelasColegiosPublicos2019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/InfraestructuraServiciosBasicosEscuelasColegiosPublicos2018.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/InfraestructuraEscuelasColegiosPublicos2017.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/16_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/personaltotallaboraeninstitucioneseducacionregular-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/Personallaborainstituciones2020.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/PersonalLaboraInstituciones2018.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/PersonalLaboraInstituciones2016.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-03/SituacionesViolenciaCentrosEducativos2018-2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/violenciaintrafamiliarextrafamiliarycentroseducativos-2018-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/casosviolenciaintrafamiliarextrafamiliaryescolar-2020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/CasosdeViolenciaIntrafamiliarExtrafamiliaryEscolar20182019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ViolenciaCentrosEducativos2018.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/08_18.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/01_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/06_16.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/08_15.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/estudiantesextranjerossistemaeducativocostarricense-20152022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/EstudiantesExtranjerosMatriculadosenEducacionRegular2020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/EstudiantesExtranjerosMatriculadosenEducacionRegular2009-2019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/15_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-09/EstudiantesEmbarazadasMadresPadres2025.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-09/EstudiantesEmbarazadasMadresPadres2024.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-06/EstudiantesEmbarazadasMadresPadres2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-10/EstudiantesEmbarazadasMadresPadres2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/estudiantesembarazadasmadresypadres-2016-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/estudiantesembarazadasmadresypadresmenoresdeedad2016-2020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/Estudiantesembarazadasmadrespadresmenoresdeedad2019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/03_19.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/02_18.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/02_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/03_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/09_16.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/10_16.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/06_15.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/05_15.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/03_15.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-07/MenoresEdadEstudianTrabajanAbandonaronEstudios2024.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-07/MenoresEdadEstudianTrabajanAbandonaronEstudios2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-07/MenoresEdadEstudianTrabajanAbandonaronEstudios2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-07/MenoresEdadEstudianTrabajanAbandonaronEstudios2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/MenoresEdadEstudianTrabajanAbandonaronEstudios2020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/MenoresEdadEstudianTrabajanAbandonaronEstudios2019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/11_18.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/14_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/15_16.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/03_16.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-10/ProblemasSalud2024.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-10/ProblemasSalud2023.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2026-10/ProblemasSalud2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ProblemasdeSaludenEstudiantesdeEducacionPreescolaryI-IICiclos2011-2021.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ProblemasSaludEducPreescolarI-IICiclos2011-2020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ProblemasdeSaludenEstudiantesdeEducacionPreescolaryI-IICiclos20112019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/03_18.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/07_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/02_16.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2025-10/ConsumoDrogasNoMedicadas2022.xlsx 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ConsumoDrogasNoMedicadasParticipacionProgPrevencion2014-2020.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/ProgrdePrevdelUsoIndebidodeDrogasyEstadisticasdelconsumodeDrogasNoMedicadas%202014-2019.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/02_19.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-05/04_18.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/06_17.pdf 
+          Descargar
+              
+
+
+
+
+   link /sites/default/files/2024-06/05_16.pdf 
+          Descargar
+              
+
+
+
+
