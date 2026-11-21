@@ -1,0 +1,7 @@
+== uy_pobreza_2024.html OK 4789494 https://www5.ine.gub.uy/documents/Demograf%C3%ADayEESS/HTML/ECH/Pobreza/2024/Estimacion%20de%20la%20pobreza%20por%20el%20metodo%20de%20ingreso%20anual%202024.html
+== uy_3.9.3.xlsx OK 38449 https://www5.ine.gub.uy/documents/ANUARIOS/Anuario%202025/3%20-%20ASPECTOS%20SOCIALES/3.9%20Desarrollo%20Social/3.9.3ok.xlsx
+== uy_3.9.1.xlsx OK 26547 https://www5.ine.gub.uy/documents/ANUARIOS/Anuario%202025/3%20-%20ASPECTOS%20SOCIALES/3.9%20Desarrollo%20Social/3.9.1ok.xlsx
+== uy_ech_2025.html ERR HTTP Error 404: Not Found https://www.gub.uy/instituto-nacional-estadistica/datos-y-estadisticas/encuestas/encuesta-continua-hogares-2025
+== uy_ech_micro.html ERR HTTP Error 404: Not Found https://www.gub.uy/instituto-nacional-estadistica/datos-y-estadisticas/encuestas/microdatos-ech
+== uy_ech_list.html OK 40724 https://www.gub.uy/instituto-nacional-estadistica/datos-y-estadisticas/encuestas/encuesta-continua-hogares
+   link https://www.gub.uy/instituto-nacional-estadistica/politicas-y-gestion/microdatos-metadatos-cuestionarios-manuales-ech-edicion
