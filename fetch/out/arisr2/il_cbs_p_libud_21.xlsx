@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+<style>
+ div.toprightcorner {
+ position: absolute;
+ top: 6px;
+ right: 7px;
+ }
+ </style>
+ <style>
+ div.topleftcorner {
+ position: absolute;
+ top: 3px;
+ left: 7px;
+ }
+ </style>
+ <script> function go2cbs() { window.location="https://www.cbs.gov.il/"; } </script>
+ <script> function goback() { window.history.back();} </script>
+  <title>Oops, Something is wrong</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+<div class="toprightcorner">
+<img title="Menora logo" src="http://www.pmo.gov.il/Style%20Library/Images/Menora.png" class="rounded" alt="Israel Menora Logo" >
+ </div>
+ <div class="topleftcorner">
+ <img title="CBS Israel " src="https://www.cbs.gov.il/Style Library/Cbs/Images/logo-new.png" alt="&#1500;&#1493;&#1490;&#1493; &#1500;&#1502;&#1505;" class="rounded" >
+ </div></br></br>
+ <h2><p2>&#1502;&#1514;&#1504;&#1510;&#1500;&#1497;&#1501;, &#1492;&#1491;&#1507; &#1500;&#1488; &#1504;&#1502;&#1510;&#1488;</p2></h2>
+ <h2><p2>Sorry, the page is not found</p2></h2>
+<h2><p2>&#1504;&#1513;&#1502;&#1495; &#1500;&#1491;&#1506;&#1514; &#1506;&#1500; &#1499;&#1498;</p2></h2>
+<h2><p2>info@cbs.gov.il</p2></h2>
+</div>
+
+<div class="container">
+  <div class="row" align="center">
+    </div>
+    </br>
+    <div class="row" align="center">
+    <div className="p-t-3">
+<button type="button" class="btn btn-primary btn-md active" onclick="go2cbs()">&#1500;&#1488;&#1514;&#1512; &#1492;&#1500;&#1502;"&#1505; - CBS Site</button>
+<button type="button" class="btn btn-primary btn-md active" onclick="goback()">&#1495;&#1494;&#1493;&#1512; &#1488;&#1495;&#1493;&#1512;&#1492; - Go Back </button>
+ </div>
+ </div>
+</body>
+</html>
