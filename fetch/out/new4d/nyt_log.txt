@@ -1,0 +1,315 @@
+CR Acosta ->  
+CR Abangares ->  
+SI Ankaran/Ancarano ->  
+SI Beltinci ->  
+SI Ajdovščina -> Občina Ajdovščina 0
+SI Bistrica ob Sotli ->  
+UY Montevideo -> Junta Departamental de Montevideo 0
+CR Alajuelita -> Municipalidad Alajuelita 0
+CR Alajuela -> Municipalidad Alajuela 0
+SI Apače -> Občina Apače 0
+SI Bloke -> Občina Bloke 0
+SI Benedikt ->  
+UY Artigas -> Junta Departamental de Artigas 0
+SI Borovnica ->  
+CR Aserrí -> Municipalidad de Aserri oficial 0
+SI Bled ->  
+SI Braslovče ->  
+SI Bohinj ->  
+SI Brezovica ->  
+CR Alvarado -> MUNI ALVARADO 0
+SI Bovec ->  
+SI Cankova ->  
+CR Atenas ->  
+SI Brda ->  
+SI Cerklje na Gorenjskem ->  
+CR Barva ->  
+SI Brežice ->  
+CR Bagaces -> Municipalidad de Bagaces 0
+SI Cerkno ->  
+SI Cirkulane ->  
+SI Črna na Koroškem ->  
+SI Celje -> Mestna občina Celje 0
+SI Destrnik ->  
+SI Cerknica ->  
+UY Canelones -> Junta Departamental Canelones 0
+SI Dobje ->  
+SI Cerkvenjak ->  
+CR Buenos Aires -> Municipalidad Buenos Aires 0
+SI Dobrna ->  
+SI Črenšovci ->  
+CR Belén -> Muni Belen 0
+SI Dobrovnik/Dobronak ->  
+SI Črnomelj ->  
+CR Carrillo ->  
+SI Dolenjske Toplice ->  
+CR Cañas ->  
+SI Dornava ->  
+UY Cerro Largo -> Junta Departamental de Cerro Largo 0
+SI Divača -> Občina Divača 0
+SI Duplek ->  
+CR Cartago -> Municipalidad de Cartago 0
+UY Colonia ->  
+SI Gorišnica ->  
+SI Dobrepolje -> Občina Dobrepolje 0
+CR Coto Brus -> Municipalidad de Coto Brus 0
+SI Dobrova - Polhov Gradec ->  
+SI Gornja Radgona -> Občina Gornja Radgona 0
+CR Corredores -> Concejo Municipal de Corredores 0
+SI Dol pri Ljubljani ->  
+SI Gornji Petrovci ->  
+SI Domžale ->  
+SI Dravograd ->  
+SI Gorenja vas - Poljane ->  
+SI Gorje ->  
+CR Curridabat -> Concejo Municipal Curridabat 2
+SI Gornji Grad ->  
+CR Dota ->  
+SI Grosuplje -> Obcina Grosuplje 0
+SI Grad ->  
+CR Desamparados -> Municipalidad de Desamparados 0
+SI Hoče - Slivnica ->  
+SI Hajdina ->  
+CR El Guarco ->  
+SI Horjul ->  
+SI Hodoš/Hodos ->  
+CR Esparza ->  
+SI Hrpelje - Kozina ->  
+CR Escazú -> Concejo Municipal de Escazú 0
+SI Ig ->  
+SI Ivančna Gorica ->  
+SI Hrastnik -> Občina Hrastnik 0
+CR Garabito -> Municipalidad de Garabito 0
+SI Idrija -> Občina Idrija IKT 0
+SI Jesenice -> Občina Jesenice 0
+CR Flores -> Concejo Municipal Flores 0
+SI Juršinci ->  
+SI Ilirska Bistrica ->  
+CR Golfito -> Municipalidad de Golfito 0
+CR Goicoechea ->  
+SI Kanal ->  
+CR Guatuso ->  
+SI Kobarid ->  
+UY Durazno -> Junta Departamental de Durazno 2
+SI Izola/Isola -> Občina Izola 6
+SI Kočevje ->  
+SI Jezersko ->  
+SI Komenda -> Občina Komenda 0
+UY Flores -> Junta Departamental de Flores 0
+CR Heredia -> Municipalidad de Heredia 0
+SI Kostanjevica na Krki ->  
+SI Kozje ->  
+CR Grecia -> Municipalidad Grecia 0
+UY Florida -> Junta Departamental Florida 0
+SI Kranjska Gora ->  
+CR Guácimo ->  
+CR Jiménez -> Municipalidad de Puerto Jiménez 0
+SI Krško ->  
+CR Hojancha ->  
+SI Kamnik -> OBČINA KAMNIK 0
+SI Kuzma ->  
+UY Lavalleja -> Junta Departamental de Lavalleja 0
+SI Kidričevo ->  
+SI Lenart ->  
+SI Kobilje -> Občina Kobilje 0
+CR La Cruz -> Municipalidad de La Cruz, Guanacaste 0
+SI Komen ->  
+CR León Cortés ->  
+SI Koper/Capodistria ->  
+UY Maldonado -> Junta Departamental de Maldonado 0
+SI Kostel ->  
+CR La Unión -> Municipalidad de La Union 0
+CR Liberia ->  
+CR Los Chiles ->  
+UY Paysandú -> Junta Departamental de Paysandú 0
+SI Kranj -> Mestna občina Kranj 2
+SI Križevci ->  
+UY Río Negro -> Junta Departamental de Río Negro 0
+SI Litija -> Obcina Litija 1
+SI Kungota ->  
+CR Limón -> Municipalidad de Limón 0
+UY Rivera ->  
+SI Ljubno ->  
+SI Laško ->  
+CR Matina -> Municipalidad De Matina 0
+CR Montes de Oca -> Gobierno Local Montes de Oca 0
+UY Rocha -> Junta Departamental Rocha 0
+SI Log - Dragomer -> Občina Log - Dragomer 0
+SI Lendava/Lendva -> Občina Lendava - Lendva község 0
+SI Loška dolina ->  
+SI Ljubljana ->  
+CR Monteverde -> Municipalidad de Monteverde 0
+SI Ljutomer ->  
+UY Salto -> Junta Departamental Salto 0
+CR Montes de Oro -> Municipalidad de Montes de Oro 0
+SI Lovrenc na Pohorju -> Občina Lovrenc na Pohorju 0
+CR Mora ->  
+SI Lukovica ->  
+SI Logatec -> Občina Logatec 0
+SI Makole ->  
+SI Loški Potok ->  
+SI Markovci ->  
+UY San José -> Junta Departamental de San José 0
+SI Luče ->  
+CR Nandayure -> Municipalidad Nandayure 0
+SI Mengeš ->  
+SI Majšperk ->  
+SI Mežica ->  
+CR Moravia -> Municipalidad de Moravia 0
+SI Miren - Kostanjevica ->  
+UY Soriano -> Junta Departamental de Soriano 0
+CR Nicoya -> Municipalidad de Nicoya 0
+SI Maribor -> Mestna občina Maribor 0
+SI Mirna Peč ->  
+SI Mokronog - Trebelno ->  
+SI Moravske Toplice ->  
+UY Tacuarembó -> Junta Departamental de Tacuarembó 0
+SI Medvode -> Občina Medvode 0
+SI Murska Sobota ->  
+CR Naranjo -> Municipalidad de Naranjo 0
+SI Metlika ->  
+CR Oreamuno ->  
+SI Naklo ->  
+SI Miklavž na Dravskem polju ->  
+UY Treinta y Tres -> Junta Departamental Treinta y Tres 0
+SI Mirna ->  
+CR Orotina -> Municipalidad de Orotina 0
+SI Nova Gorica -> Mestna občina Nova Gorica 0
+CR Palmares ->  
+SI Odranci ->  
+CR Osa -> Municipalidad de Osa 0
+SI Mislinja -> Občina Mislinja - Video 1
+CR Parrita ->  
+SI Ormož ->  
+CR Paraíso ->  
+CR Poás ->  
+SI Pesnica ->  
+CR Pococí ->  
+SI Pivka ->  
+CR Puerto Jiménez ->  
+SI Moravče -> Občina Moravče 0
+CR Puriscal ->  
+SI Podlehnik ->  
+CR Puntarenas -> Municipalidad De Puntarenas 0
+SI Mozirje ->  
+CR Pérez Zeledón ->  
+SI Muta ->  
+CR Río Cuarto ->  
+SI Poljčane -> Občina Poljčane 0
+SI Nazarje ->  
+SI Postojna ->  
+SI Novo mesto ->  
+CR Quepos -> Concejo Municipal Quepos 0
+SI Preddvor ->  
+SI Oplotnica ->  
+SI Ptuj ->  
+SI Osilnica ->  
+CR San Isidro -> Municipalidad San Isidro de Heredia 0
+SI Rače - Fram ->  
+CR San Mateo ->  
+CR San Rafael ->  
+SI Piran/Pirano -> Občina Piran 0
+SI Radenci -> Občina Radenci 0
+SI Podčetrtek ->  
+SI Radovljica -> Obcina Radovljica 0
+CR San Carlos -> Municipalidad San Carlos 0
+SI Podvelka -> Občina Podvelka 0
+SI Polzela ->  
+SI Razkrižje -> Občina Razkrižje 0
+SI Prebold -> Občina Prebold 0
+SI Renče - Vogrsko -> Občina Renče-Vogrsko 0
+CR Santa Ana -> Gobierno Local Santa Ana 0
+SI Ribnica na Pohorju ->  
+SI Prevalje -> Občina Prevalje Občina Prevalje 0
+CR Santa Cruz ->  
+SI Rogašovci ->  
+SI Puconci ->  
+CR San José -> Municipalidad de San José 0
+SI Radeče ->  
+CR San Pablo ->  
+SI Radlje ob Dravi ->  
+SI Ravne na Koroškem ->  
+SI Ruše -> Občina Ruše 1
+SI Rečica ob Savinji ->  
+CR Sarapiquí -> Municipalidad Sarapiquí 0
+SI Semič ->  
+SI Ribnica ->  
+SI Rogaška Slatina ->  
+SI Rogatec ->  
+SI Sežana -> Občina Sežana 0
+SI Selnica ob Dravi ->  
+SI Slovenska Bistrica ->  
+CR Siquirres -> Municipalidad de Siquirres 2
+SI Sodražica ->  
+SI Središče ob Dravi ->  
+SI Sevnica -> Občina Sevnica 0
+SI Straža ->  
+CR San Ramón -> Municipalidad de San Ramón 1
+CR Tarrazú -> Concejo Municipal Tarrazú 0
+SI Sveta Trojica v Slov. goricah ->  
+CR Tilarán ->  
+SI Slovenj Gradec -> Mestna občina Slovenj Gradec 0
+SI Sveti Jurij ob Ščavnici -> Občina Sveti Jurij ob Ščavnici 0
+CR Santa Bárbara -> Concejo Municipal Santa Bárbara 0
+SI Sveti Tomaž ->  
+CR Turrubares -> Municipalidad  de Turrubares 0
+SI Slovenske Konjice -> Občina Slovenske Konjice 0
+CR Vázquez de Coronado ->  
+SI Solčava ->  
+SI Šempeter - Vrtojba -> Občina Šempeter-Vrtojba 0
+SI Starše ->  
+SI Šentilj ->  
+SI Sveta Ana ->  
+SI Šentjur ->  
+SI Sveti Andraž v Slov. goricah ->  
+SI Škocjan ->  
+SI Sveti Jurij v Slov. goricah ->  
+CR Santo Domingo -> Municipalidad de Santo Domingo 0
+SI Šalovci ->  
+SI Škofljica -> Občina Škofljica 0
+SI Šenčur ->  
+SI Šmarješke Toplice ->  
+SI Šentjernej ->  
+SI Šentrupert ->  
+SI Škofja Loka ->  
+CR Sarchí -> Municipalidad de Sarchí 0
+SI Šmarje pri Jelšah ->  
+SI Šmartno ob Paki ->  
+CR Talamanca -> Municipalidad de Talamanca 0
+SI Šmartno pri Litiji -> Občina Šmartno pri Litiji 0
+SI Šoštanj -> Občina Šoštanj 0
+SI Štore ->  
+SI Tabor ->  
+SI Tišina ->  
+SI Trbovlje ->  
+CR Tibás -> Concejo Municipal Tibás 0
+SI Trnovska vas ->  
+SI Tolmin -> Občina Tolmin 0
+SI Tržič ->  
+SI Trebnje -> Občina Trebnje 0
+SI Velenje -> Mestna občina Velenje - MOV 0
+SI Trzin ->  
+SI Turnišče ->  
+SI Velike Lašče -> Občina Velike Lašče 0
+SI Velika Polana ->  
+CR Turrialba -> Municipalidad de Turrialba 0
+SI Videm ->  
+SI Veržej ->  
+SI Vitanje ->  
+SI Vipava ->  
+SI Vojnik ->  
+SI Vodice ->  
+SI Vrhnika ->  
+CR Upala -> Municipalidad de Upala 0
+SI Zagorje ob Savi ->  
+SI Vransko -> Občina Vransko 0
+CR Zarcero ->  
+SI Zreče ->  
+SI Vuzenica ->  
+SI Zavrč ->  
+SI Železniki -> OBČINA ŽELEZNIKI 0
+SI Žalec ->  
+SI Žiri ->  
+SI Žetale ->  
+SI Žužemberk ->  
+SI Žirovnica ->  

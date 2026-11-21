@@ -1,0 +1,11 @@
+== si_0883206S_meta.json OK 5002 https://pxweb.stat.si/SiStatData/api/v1/en/Data/0883206S.px
+== si_0883206S.json OK 57534 https://pxweb.stat.si/SiStatData/api/v1/en/Data/0883206S.px
+== si_0883205S_meta.json OK 5021 https://pxweb.stat.si/SiStatData/api/v1/en/Data/0883205S.px
+== si_0883205S.json OK 57829 https://pxweb.stat.si/SiStatData/api/v1/en/Data/0883205S.px
+== si_0700960S_meta.json OK 7541 https://pxweb.stat.si/SiStatData/api/v1/en/Data/0700960S.px
+== si_0700960S.json OK 15034 https://pxweb.stat.si/SiStatData/api/v1/en/Data/0700960S.px
+== si_0775360S_meta.json OK 4826 https://pxweb.stat.si/SiStatData/api/v1/en/Data/0775360S.px
+== si_0775360S.json OK 15069 https://pxweb.stat.si/SiStatData/api/v1/en/Data/0775360S.px
+== si_px_atrisk.json OK 932 https://pxweb.stat.si/SiStatData/api/v1/en/Data?query=at-risk-of-poverty%20rate%20statistical%20regions
+== uy_estimacion-pobreza-metodo-del-ingreso-ano-2025.html OK 39297 https://www.gub.uy/instituto-nacional-estadistica/comunicacion/publicaciones/estimacion-pobreza-metodo-del-ingreso-ano-2025
+== uy_estimacion-pobreza-metodo-del-ingreso-primer-semestre-2026.html OK 39074 https://www.gub.uy/instituto-nacional-estadistica/comunicacion/publicaciones/estimacion-pobreza-metodo-del-ingreso-primer-semestre-2026
