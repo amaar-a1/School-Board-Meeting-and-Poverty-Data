@@ -22,7 +22,7 @@
   function meetingBody(d, r) {
     if (!(toNumber(r["Available Board Meetings"]) > 0 || toNumber(r["Other Board Meetings"]) > 0)) return "";
     const t = String(r["Meetings type"] || "");
-    if (t) return /education committee|school committee|board of education/i.test(t) ? BOARD : STAND_IN;
+    if (t) return !/stand-in|legislature/i.test(t) && /education committee|school committee|board of education/i.test(t) ? BOARD : STAND_IN;
     if (STAND_IN_COUNTRIES.has(d.country)) return STAND_IN;
     if (d.state === "territories" && /^72/.test(String(r["District ID"] || ""))) return STAND_IN;   // Puerto Rico: the Legislature's committee
     return BOARD;
@@ -535,7 +535,7 @@
   // use NCES locale types; Canadian boards an estimate from Statistics Canada population sizes.
   const US_LOCALES = ["Urban", "Suburban", "Town", "Mixed", "Rural"];   // "Mixed": the European estimates
   // Countries whose locales are density estimates, labelled "UK: Urban" and so on in "All".
-  const DENSITY_COUNTRIES = ["UK", "Ireland", "Norway", "Sweden", "Finland", "Denmark", "Netherlands", "Germany", "New Zealand", "Islands", "Iceland", "Switzerland", "Chile", "Colombia", "Mexico", "Brazil", "Peru", "Spain", "France", "Ecuador", "Italy", "Poland", "Japan", "Portugal", "Belgium", "Australia", "Croatia", "Latvia", "Estonia", "Philippines"];
+  const DENSITY_COUNTRIES = ["UK", "Ireland", "Norway", "Sweden", "Finland", "Denmark", "Netherlands", "Germany", "New Zealand", "Islands", "Iceland", "Switzerland", "Chile", "Colombia", "Mexico", "Brazil", "Peru", "Spain", "France", "Ecuador", "Italy", "Poland", "Japan", "Portugal", "Belgium", "Australia", "Croatia", "Latvia", "Estonia", "Argentina", "Israel", "Philippines"];
   const DENSITY_RE = new RegExp(`^(${DENSITY_COUNTRIES.join("|")}): `);
   const CA_LOCALES = ["Large urban", "Medium urban", "Small urban", "Rural", "Province-wide"];
   // Shared groups for the US and Canada together: the closest match between NCES types and
