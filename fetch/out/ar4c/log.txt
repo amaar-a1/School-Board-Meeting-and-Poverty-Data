@@ -1,0 +1,6 @@
+== c2022_tp_est_c1.xlsx OK 17059 https://www.indec.gob.ar/ftp/cuadros/poblacion/c2022_tp_est_c1.xlsx
+== c2022_tp_est_c2.xlsx OK 17686 https://www.indec.gob.ar/ftp/cuadros/poblacion/c2022_tp_est_c2.xlsx
+== c2022_tp_est_c3.xlsx OK 14031 https://www.indec.gob.ar/ftp/cuadros/poblacion/c2022_tp_est_c3.xlsx
+== c2022_tp_est_c4.xlsx OK 18647 https://www.indec.gob.ar/ftp/cuadros/poblacion/c2022_tp_est_c4.xlsx
+== c2022_tp_est_c5.xlsx OK 19278 https://www.indec.gob.ar/ftp/cuadros/poblacion/c2022_tp_est_c5.xlsx
+== c2022_tp_est_c6.xlsx OK 13500 https://www.indec.gob.ar/ftp/cuadros/poblacion/c2022_tp_est_c6.xlsx
