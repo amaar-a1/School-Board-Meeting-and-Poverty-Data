@@ -17,6 +17,9 @@
   // Marianas), an Irish ETB board, a UK council's education or children's committee, a municipal education or school
   // committee, or a Japanese board of education. "Stand-in": the full town council, a cantonal or territorial
   // parliament, or similar, counted where no school body's meetings are posted. Blank: no meetings found.
+  // Meetings for the tabs' with/without splits: CivicSearch's count, or the board's own records ("Other Board Meetings":
+  // Ireland's ETBs, and DC, Hawaiʻi and Vermont boards) where that's all there is.
+  const meetOf = (r, by) => { const v = toNumber(r[by]); return by === "Available Board Meetings" && !(v > 0) && toNumber(r["Other Board Meetings"]) > 0 ? toNumber(r["Other Board Meetings"]) : v; };
   const BOARD = "School board or equivalent", STAND_IN = "Stand-in (council or parliament)";
   const STAND_IN_COUNTRIES = new Set(["IS", "CH", "ISLE", "FR", "NZ"]);
   function meetingBody(d, r) {
@@ -125,7 +128,7 @@
       datasets.forEach(tagBodies);
       datasets.forEach((d) => {
         if (!d.note) return;
-        const withMeetings = d.rows.filter((r) => toNumber(r[cmpFor(d).by]) > 0).length;
+        const withMeetings = d.rows.filter((r) => meetOf(r, cmpFor(d).by) > 0).length;
         d.note = d.note.replace("{rows}", d.rows.length.toLocaleString()).replace("{withMeetings}", withMeetings.toLocaleString());
       });
       if (cfg.combined) combined = buildCombined(cfg.combined);
@@ -199,7 +202,7 @@
     // _rankEst marks an estimated rank; it stays on the rows but isn't a column to show, chart or download.
     ds.columns = ds.columns.filter((col) => !col.startsWith("_"));
     if (ds.numeric) [...ds.numeric].forEach((col) => { if (col.startsWith("_")) ds.numeric.delete(col); });
-    const withMeetings = ds.rows.filter((r) => toNumber(r[c.compare.by]) > 0).length;
+    const withMeetings = ds.rows.filter((r) => meetOf(r, c.compare.by) > 0).length;
     ds.note = (c.note || "").replace("{rows}", ds.rows.length.toLocaleString()).replace("{withMeetings}", withMeetings.toLocaleString());
     return ds;
   }
@@ -256,7 +259,7 @@
     if (!name) return null;
     // The other country's file names its provinces in full ("Ontario"); the menu keys are codes.
     const rows = nat.rows.filter((r) => (itemName ? r[parent.groups.column] === regionName && r[groupCol] === name : r[groupCol] === (parent ? name : code)));
-    const withMeetings = rows.filter((r) => toNumber(r[cmpFor(nat).by]) > 0).length;
+    const withMeetings = rows.filter((r) => meetOf(r, cmpFor(nat).by) > 0).length;
     const label = (nat.recordLabel || cfg.recordLabel || "records").toLowerCase();
     if (parent && parent.groupNotes && parent.groupNotes[code]) {
       return (stateCache[abbr] = { ...nat, name, state: abbr, rows, sourcesAs: nat.name, parent: nat, groupCol,
@@ -510,7 +513,7 @@
   // Stats for one group of rows, used by the "By district size" tab.
   function sizeStats(rows, enrollCol) {
     const cmp = cmpFor(current);
-    const meetings = (r) => toNumber(r[cmp.by]);
+    const meetings = (r) => meetOf(r, cmp.by);
     const poverty = (r) => toNumber(r[cmp.metric]);
     const withM = rows.filter((r) => meetings(r) > 0), withoutM = rows.filter((r) => meetings(r) === 0);
     const totalMeetings = rows.reduce((a, r) => a + (meetings(r) || 0), 0);
@@ -592,7 +595,7 @@
     const cols = ["Locale", label[0].toUpperCase() + label.slice(1), "With meetings", "Avg meetings", "Poverty: with meetings", "Poverty: without",
       `Meetings per 10,000 ${per}`, "Meetings per poverty point"];
     const cells = (name, s) => s.n ? [name, s.n.toLocaleString(), `${pct(s.shareWith)} (${s.nWith})`, fixed(s.avgMeetings, 2),
-      s.nWith ? `${pct(s.povWith)} (${s.nWith})` : "–", s.nWithout ? `${pct(s.povWithout)} (${s.nWithout})` : "–",
+      s.nWith ? `${pct(s.povWith)} (${s.nWith})` : "none (0)", s.nWithout ? `${pct(s.povWithout)} (${s.nWithout})` : "none (0)",
       fixed(s.per10k, 2), fixed(s.perPovPoint, 3)] : [name, "0", "–", "–", "–", "–", "–", "–"];
     const fill = (table, gs, total) => {
       table.tHead.innerHTML = "";
@@ -674,7 +677,7 @@
     const cols = ["Group", label[0].toUpperCase() + label.slice(1), "With meetings", "Avg meetings", "Poverty: with meetings", "Poverty: without",
       `Meetings per 10,000 ${per}`];
     const cells = (name, s) => s.n ? [name, s.n.toLocaleString(), `${pct(s.shareWith)} (${s.nWith})`, fixed(s.avgMeetings, 2),
-      s.nWith ? `${pct(s.povWith)} (${s.nWith})` : "–", s.nWithout ? `${pct(s.povWithout)} (${s.nWithout})` : "–", fixed(s.per10k, 2)]
+      s.nWith ? `${pct(s.povWith)} (${s.nWith})` : "none (0)", s.nWithout ? `${pct(s.povWithout)} (${s.nWithout})` : "none (0)", fixed(s.per10k, 2)]
       : [name, "0", "–", "–", "–", "–", "–"];
     const fill = (table, gs, total, first) => {
       table.tHead.innerHTML = "";
@@ -851,7 +854,7 @@
     const cols = ["Tier", "Enrollment", label[0].toUpperCase() + label.slice(1), "With meetings", "Avg meetings",
       "Poverty: with meetings", "Poverty: without", "Meetings per 10,000 students", "Meetings per poverty point"];
     const cells = (name, rng, s) => s.n ? [name, rng, s.n.toLocaleString(), `${pct(s.shareWith)} (${s.nWith})`, fixed(s.avgMeetings, 2),
-      s.nWith ? `${pct(s.povWith)} (${s.nWith})` : "–", s.nWithout ? `${pct(s.povWithout)} (${s.nWithout})` : "–",
+      s.nWith ? `${pct(s.povWith)} (${s.nWith})` : "none (0)", s.nWithout ? `${pct(s.povWithout)} (${s.nWithout})` : "none (0)",
       fixed(s.per10k, 2), fixed(s.perPovPoint, 3)] : [name, rng, "0", "–", "–", "–", "–", "–", "–"];
     const table = $("size-table");
     table.tHead.innerHTML = "";
@@ -971,7 +974,7 @@
     const body = t.tBodies[0];
     body.innerHTML = "";
     Object.entries(groups).sort((a, b) => b[1].length - a[1].length).forEach(([c, rows]) => {
-      const m = rows.map((r) => toNumber(r["Available Board Meetings"]) || 0);
+      const m = rows.map((r) => meetOf(r, "Available Board Meetings") || 0);
       const withM = m.filter((v) => v > 0).length;
       const cor = withM ? correlation(rows.map((r, i) => [r._rankEst ? NaN : toNumber(r[RANK]), m[i]])) : null;
       const tr = body.insertRow();
@@ -997,8 +1000,8 @@
     const cmp = cmpFor(current);
     const rows = allRows.filter((r) => !isNaN(toNumber(r[cmp.metric])));
     const groups = [
-      { label: cmp.withLabel, rows: rows.filter((r) => toNumber(r[cmp.by]) > 0) },
-      { label: cmp.withoutLabel, rows: rows.filter((r) => toNumber(r[cmp.by]) === 0) }
+      { label: cmp.withLabel, rows: rows.filter((r) => meetOf(r, cmp.by) > 0) },
+      { label: cmp.withoutLabel, rows: rows.filter((r) => meetOf(r, cmp.by) === 0) }
     ];
     body.innerHTML = "";
     groups.forEach((g) => {
@@ -1174,7 +1177,7 @@
     const accent = cssVar("--accent"), text = cssVar("--muted"), grid = cssVar("--border");
     let data, fit = null, yMin;
     if (type === "scatter") {
-      const points = rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), m: toNumber(r[cmpFor(current).by]), name: rowLabel(r) }))
+      const points = rows.map((r) => ({ x: toNumber(r[x]), y: toNumber(r[y]), m: meetOf(r, cmpFor(current).by), name: rowLabel(r) }))
         .filter((p) => !isNaN(p.x));
       fit = fitLines(points, x, y);
       if (points.every((p) => p.y >= 0)) yMin = 0;   // keep the axis at 0; the fit line is clipped there
@@ -1220,7 +1223,7 @@
     const min = filterValue("f-pov-min"), max = filterValue("f-pov-max");
     if (locale && String(r.Locale || "").trim() !== locale) return false;
     if (meetings) {
-      const m = toNumber(r[cmpFor(current).by]);
+      const m = meetOf(r, cmpFor(current).by);
       if (meetings === "with" ? !(m > 0) : m > 0) return false;
     }
     if (min !== "" || max !== "") {
