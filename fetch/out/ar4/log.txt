@@ -1,0 +1,7 @@
+== wiki_Provincias_de_Argentina_por_población.json OK 227 https://es.wikipedia.org/w/api.php?action=parse&format=json&prop=wikitext&page=Anexo%3AProvincias%20de%20Argentina%20por%20poblaci%C3%B3n
+== wiki_Censo_de_Argentina_de_2022.json OK 397 https://es.wikipedia.org/w/api.php?action=parse&format=json&prop=wikitext&page=Censo%20de%20Argentina%20de%202022
+== wiki_Provincias_de_Argentina_por_superficie.json OK 223 https://es.wikipedia.org/w/api.php?action=parse&format=json&prop=wikitext&page=Anexo%3AProvincias%20de%20Argentina%20por%20superficie
+== page_5233.html OK 38072 https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-41-165
+== page_53626.html ERR <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)> https://censo.gob.ar/index.php/datos_definitivos_total_pais/
+== pip rc 0
+== ar_yt2 rc 0 
