@@ -1,0 +1,19 @@
+== za_master_new1.xlsx curl 200 7888684  https://www.education.gov.za/LinkClick.aspx?fileticket=O2qbsfuGFC4%3d&tabid=466&portalid=0&mid=12482
+== za_master_new2.xlsx curl 200 8805029  https://www.education.gov.za/LinkClick.aspx?fileticket=XrhHvRrRkSk%3d&tabid=466&portalid=0&mid=7070
+== kr_dg_15052732.html OK 201224 https://www.data.go.kr/data/15052732/fileData.do
+   kr js ("'15052732', 'uddi:0ca3989f-af1d-4c86-9c4f-91ddad73ed4a', '','1', '7'", '')
+== kr_dg_15152068.html OK 170606 https://www.data.go.kr/data/15152068/fileData.do
+== ge_01_population_by_self_governed_unit_px_meta.json ERR HTTP Error 404: Not Found https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Demography/Population/01-population-by-self-governed-unit.px
+== ge_04_mid_year_population_by_self_governed_units_px_meta.json ERR HTTP Error 404: Not Found https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Demography/Population/04-mid-year-population-by-self-governed-units.px
+== ge_Registered_Families_for_Subsistence_Allowance_by_M_meta.json ERR HTTP Error 404: Not Found https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Social%20Statistics/Social%20Protection/Registered_Families_for_Subsistence_Allowance_by_Municipalities.px
+== ge_Beneficiaries_of_Subsistence_Allowance_px_meta.json ERR HTTP Error 404: Not Found https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Social%20Statistics/Social%20Protection/Beneficiaries_of_Subsistence_Allowance.px
+== ge_05_Number_of_schools_and_Pupils_by_Regions_px_meta.json ERR HTTP Error 404: Not Found https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Social%20Statistics/Education/School/05_Number_of_schools_and_Pupils_by_Regions.px
+== ge_01_Number_of_Gen__Edu__Schools_px_meta.json ERR HTTP Error 404: Not Found https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Social%20Statistics/Education/School/01_Number_of_Gen._Edu._Schools.px
+== ge_06_Number_of_Pupils_by_Social_Status_px_meta.json ERR HTTP Error 404: Not Found https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Social%20Statistics/Education/School/06_Number_of_Pupils_by_Social_Status.px
+== w_ge_ka.html OK 134438 https://ka.wikipedia.org/w/index.php?title=%E1%83%A1%E1%83%90%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%95%E1%83%94%E1%83%9A%E1%83%9D%E1%83%A1_%E1%83%9B%E1%83%A3%E1%83%9C%E1%83%98%E1%83%AA%E1%83%98%E1%83%9E%E1%83%90%E1%83%9A%E1%83%98%E1%83%A2%E1%83%94%E1%83%A2%E1%83%94%E1%83%91%E1%83%98&action=render
+== w_ge_en2.html OK 150774 https://en.wikipedia.org/w/index.php?title=Administrative_divisions_of_Georgia_(country)&action=render
+== ke_knbs_http.html curl 301 0 curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/ http://www.knbs.or.ke/
+== ke_knbs_census_http.html curl 301 0 curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/ http://www.knbs.or.ke/2019-kenya-population-and-housing-census-reports/
+== w_ke_edu.html OK 317311 https://en.wikipedia.org/w/index.php?title=Education_in_Kenya&action=render
