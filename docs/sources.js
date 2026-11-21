@@ -408,10 +408,11 @@ window.SOURCES = [
     items: [
       { title: "Poverty: INDEC, Encuesta Permanente de Hogares, “Incidencia de la pobreza y la indigencia en 31 aglomerados urbanos”, first half of 2026: cuadros (Cuadro 4.1 and “Poblaciones”, people below the poverty line by urban area; Cuadros 3.2 and 3.4, by age)", url: "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-46-152" },
       { title: "Population and land area: INDEC, Censo Nacional de Población, Hogares y Viviendas 2022, final results, Cuadro 2 (population and density by jurisdiction, 2010 and 2022)", url: "https://www.indec.gob.ar/ftp/cuadros/poblacion/c2022_tp_est_c2.xlsx" },
+      { title: "Pupils and public-school share: Ministry of Education (Secretaría de Educación), Relevamiento Anual 2024, pupils by department, management sector and grade (“Base de Datos por Escuela 2024”), datos.gob.ar", url: "https://datos.gob.ar/dataset/educacion-base-datos-por-escuela-2024" },
       { title: "Borders: geoBoundaries (gbOpen) ARG ADM1 and ADM2, simplified; Entre Ríos rebuilt from its 17 departments (ADM2), as the ADM1 file draws it inside Buenos Aires province", url: "https://www.geoboundaries.org/" },
       { title: "Meetings: each provincial legislature's YouTube channel (in the “Meetings source” column), searched November 2026; dates from the videos' titles", url: "https://www.youtube.com/" }
     ],
-    note: "Built by data-prep/prep_argentina.py and data-prep/build_latam.py (argentina). Two surveyed urban areas straddle a provincial border (San Nicolás – Villa Constitución, Viedma – Carmen de Patagones); each is counted in the province of its larger part. Pupils by province are in the Ministry of Education's Relevamiento Anual school database, which is only offered behind a Microsoft sign-in, so enrollment isn't shown yet."
+    note: "Built by data-prep/prep_argentina.py and data-prep/build_latam.py (argentina). Two surveyed urban areas straddle a provincial border (San Nicolás – Villa Constitución, Viedma – Carmen de Patagones); each is counted in the province of its larger part. The ministry's pupil file (downloaded by hand, as its link needs a Microsoft sign-in for automated tools) is added up by province; departments it masks for small counts still count toward their province."
   },
   {
     only: "Israel",

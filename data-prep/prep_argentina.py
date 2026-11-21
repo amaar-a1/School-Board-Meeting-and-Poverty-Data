@@ -10,6 +10,7 @@ reads (data-prep/inputs/argentina/).
     urban areas (aglomerados), added up by people where a province has several; all ages. Rural areas aren't surveyed.
   pop, area_km2: Census 2022 (INDEC, final results, Cuadro 2), people and land area; Tierra del Fuego's INDEC area takes in
     the Antarctic sector and South Atlantic islands Argentina claims, so its density uses the mapped island area instead;
+  pupils, public: Ministry of Education, Relevamiento Anual 2024, grades 1-12 (see pupils());
   meetings: the provincial legislature's recordings on YouTube (fetch/ar_yt2.py), see build_latam.argentina().
 Usage: python3 data-prep/prep_argentina.py RAWDIR [RAWDIR ...] GEODIR
 """
@@ -104,6 +105,24 @@ def population(dirs):
     return out
 
 
+def pupils():
+    """Ministry of Education, Relevamiento Anual 2024, pupils by department, management sector (estatal / privado) and
+    area, by grade (inputs/argentina/ar_matricula_dep_sector.tsv, pasted from the ministry's download): pupils in grades
+    1-12 and the 13th-14th years of technical schools; initial (pre-school), adult and tertiary levels left out.
+    Privately run schools count as private even where the province pays their teachers. Some departments are masked
+    ("Enmascarado") to protect small counts; they still count toward their province."""
+    import csv
+    G = [f"_{i}" for i in range(1, 13)] + ["_1314"]
+    out = {}
+    for x in csv.DictReader(open(os.path.join(OUT, "ar_matricula_dep_sector.tsv"), encoding="utf-8"), delimiter="\t"):
+        prov = "Ciudad Autónoma de Buenos Aires" if x["provincia"] == "Ciudad de Buenos Aires" else x["provincia"]
+        n = sum(int(x[g].strip() or 0) for g in G)
+        o = out.setdefault(prov, {"pupils": 0, "public": 0}); o["pupils"] += n
+        if x["sector"] == "Estatal": o["public"] += n
+    assert set(out) == set(PROV), set(out) ^ set(PROV)
+    return out
+
+
 # Recordings that aren't a meeting of the committee: a member's interview or statement about it, news.
 EDU_NOT = re.compile(r"presidenta?|legislador|^diputad[oa] |senador|luego de|recibi[oó]|expectativas|temas tratados|trataron|nota|podcast|entrevista|^sen\.|^dip\.", re.I)
 SKIP_CHANNELS = {"UCxCsgqNQaMu5Qn6kA-pdOlg"}   # Formosa legislature's training channel
@@ -142,6 +161,7 @@ if __name__ == "__main__":
     old = json.load(open(os.path.join(OUT, "ar_data.json"), encoding="utf-8")) if os.path.exists(os.path.join(OUT, "ar_data.json")) else {}
     meet = meetings(dirs)
     pop = population(dirs)
-    data = {p: {**{k: v for k, v in old.get(p, {}).items() if k != "meetings"}, "code": CODE[p], "region": REGION[p], "pop": pop[p][0], "area_km2": pop[p][1] if p != "Tierra del Fuego" else None, **pov[p], **({"meetings": meet[p]} if p in meet else {})} for p in PROV}
+    pup = pupils()
+    data = {p: {**{k: v for k, v in old.get(p, {}).items() if k != "meetings"}, "code": CODE[p], "region": REGION[p], "pop": pop[p][0], "area_km2": pop[p][1] if p != "Tierra del Fuego" else None, **pov[p], **pup[p], "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)", **({"meetings": meet[p]} if p in meet else {})} for p in PROV}
     json.dump(data, open(os.path.join(OUT, "ar_data.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(len(data), "jurisdictions;", {p: d["poverty"] for p, d in data.items()})

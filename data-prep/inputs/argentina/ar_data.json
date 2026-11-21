@@ -13,6 +13,9 @@
   ],
   "pop": 17523996,
   "area_km2": 305907.4,
+  "pupils": 3368667,
+  "public": 2286331,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 3,
    "type": "Legislature education committee (stand-in)",
@@ -34,6 +37,9 @@
   ],
   "pop": 429562,
   "area_km2": 101486.1,
+  "pupils": 82255,
+  "public": 63563,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 186,
    "type": "Legislature sittings (stand-in)",
@@ -238,6 +244,9 @@
   ],
   "pop": 1129606,
   "area_km2": 99763.3,
+  "pupils": 268919,
+  "public": 226563,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 179,
    "type": "Legislature sittings (stand-in)",
@@ -436,6 +445,9 @@
   ],
   "pop": 592621,
   "area_km2": 224302.3,
+  "pupils": 119052,
+  "public": 99847,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 69,
    "type": "Legislature sittings (stand-in)",
@@ -523,6 +535,9 @@
   ],
   "pop": 3121707,
   "area_km2": 205.9,
+  "pupils": 464074,
+  "public": 237816,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 14,
    "type": "Legislature education committee (stand-in)",
@@ -556,6 +571,9 @@
   ],
   "pop": 3840905,
   "area_km2": 164707.8,
+  "pupils": 696010,
+  "public": 460276,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 258,
    "type": "Legislature sittings (stand-in)",
@@ -832,6 +850,9 @@
   ],
   "pop": 1212696,
   "area_km2": 89123.3,
+  "pupils": 234100,
+  "public": 198493,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 26,
    "type": "Legislature sittings (stand-in)",
@@ -877,6 +898,9 @@
   ],
   "pop": 1425578,
   "area_km2": 78383.7,
+  "pupils": 267396,
+  "public": 195161,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 606,
    "type": "Legislature sittings (stand-in)",
@@ -1501,6 +1525,9 @@
   ],
   "pop": 607419,
   "area_km2": 75488.3,
+  "pupils": 132348,
+  "public": 118982,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 129,
    "type": "Legislature sittings (stand-in)",
@@ -1648,6 +1675,9 @@
   ],
   "pop": 811611,
   "area_km2": 53244.2,
+  "pupils": 157770,
+  "public": 134988,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 16,
    "type": "Legislature education committee (stand-in)",
@@ -1682,6 +1712,9 @@
   ],
   "pop": 361859,
   "area_km2": 143492.5,
+  "pupils": 67721,
+  "public": 58007,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 45,
    "type": "Legislature sittings (stand-in)",
@@ -1745,6 +1778,9 @@
   ],
   "pop": 383865,
   "area_km2": 91493.7,
+  "pupils": 76307,
+  "public": 64522,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 3,
    "type": "Legislature sittings (stand-in)",
@@ -1766,6 +1802,9 @@
   ],
   "pop": 2043540,
   "area_km2": 149069.2,
+  "pupils": 382855,
+  "public": 302789,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 226,
    "type": "Legislature sittings (stand-in)",
@@ -2009,7 +2048,10 @@
    "Posadas"
   ],
   "pop": 1278873,
-  "area_km2": 29911.4
+  "area_km2": 29911.4,
+  "pupils": 289763,
+  "public": 223219,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)"
  },
  "Neuquén": {
   "code": "58",
@@ -2021,6 +2063,9 @@
   ],
   "pop": 710814,
   "area_km2": 94422,
+  "pupils": 144526,
+  "public": 122279,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 316,
    "type": "Legislature sittings (stand-in)",
@@ -2355,6 +2400,9 @@
   ],
   "pop": 750768,
   "area_km2": 202168.6,
+  "pupils": 152052,
+  "public": 119971,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 3,
    "type": "Legislature education committee (stand-in)",
@@ -2376,6 +2424,9 @@
   ],
   "pop": 1441351,
   "area_km2": 155340.5,
+  "pupils": 312137,
+  "public": 258980,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 297,
    "type": "Legislature sittings (stand-in)",
@@ -2691,6 +2742,9 @@
   ],
   "pop": 822853,
   "area_km2": 88296.2,
+  "pupils": 170125,
+  "public": 132033,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 69,
    "type": "Legislature sittings (stand-in)",
@@ -2778,6 +2832,9 @@
   ],
   "pop": 542069,
   "area_km2": 75347.1,
+  "pupils": 100233,
+  "public": 87501,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 155,
    "type": "Legislature sittings (stand-in)",
@@ -2951,6 +3008,9 @@
   ],
   "pop": 337226,
   "area_km2": 244457.5,
+  "pupils": 72364,
+  "public": 59122,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 28,
    "type": "Legislature education committee (stand-in)",
@@ -2998,6 +3058,9 @@
   ],
   "pop": 3544908,
   "area_km2": 133249.1,
+  "pupils": 643042,
+  "public": 454784,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 428,
    "type": "Legislature sittings (stand-in)",
@@ -3443,7 +3506,10 @@
    "Santiago del Estero - La Banda"
   ],
   "pop": 1060906,
-  "area_km2": 136934.3
+  "area_km2": 136934.3,
+  "pupils": 214172,
+  "public": 175403,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)"
  },
  "Tierra del Fuego": {
   "code": "94",
@@ -3454,7 +3520,10 @@
    "Ushuaia - Río Grande"
   ],
   "pop": 185732,
-  "area_km2": null
+  "area_km2": null,
+  "pupils": 35020,
+  "public": 26576,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)"
  },
  "Tucumán": {
   "code": "90",
@@ -3466,6 +3535,9 @@
   ],
   "pop": 1731820,
   "area_km2": 22592.1,
+  "pupils": 331431,
+  "public": 249691,
+  "pupils_year": "2024 (Relevamiento Anual; grades 1–12, all schools in the province)",
   "meetings": {
    "n": 75,
    "type": "Legislature sittings (stand-in)",
