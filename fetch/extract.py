@@ -1,65 +1,58 @@
-# Round 14: discovery for South Korea, South Africa, Kenya, Georgia and Lithuania (pages, APIs, links to data files).
-import os, re, json, urllib.request, urllib.parse, time
-OUT = "fetch/out/five14"; os.makedirs(OUT, exist_ok=True)
+# Round 15: data for Lithuania (SDMX), Georgia (PxWeb tree), South Africa (DBE masterlists), Korea (MOHW recipients, pupils), Kenya (KNBS via curl).
+import os, re, json, subprocess, urllib.request, urllib.parse, time
+OUT = "fetch/out/five15"; os.makedirs(OUT, exist_ok=True)
 log = open(f"{OUT}/log.txt", "w")
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)", "Accept": "text/html,application/json,*/*"}
-def get(n, u, data=None, hdr=None):
-    try:
-        req = urllib.request.Request(u, headers={**UA, **(hdr or {})}, data=data)
-        b = urllib.request.urlopen(req, timeout=180).read()
-        open(f"{OUT}/{n}", "wb").write(b); log.write(f"== {n} OK {len(b)} {u}\n"); log.flush(); return b
-    except Exception as e: log.write(f"== {n} ERR {e} {u}\n"); log.flush()
-    finally: time.sleep(1.5)
-def links(n, u, pat, follow=None, maxf=12):
-    b = get(n, u)
-    if not b: return
-    seen = 0
-    for l, t in re.findall(rb'href="([^"#]+)"[^>]*>(.{0,200}?)</a>', b, re.S):
+def get(n, u, tries=2):
+    for k in range(tries):
+        try:
+            b = urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=240).read()
+            open(f"{OUT}/{n}", "wb").write(b); log.write(f"== {n} OK {len(b)} {u}\n"); log.flush(); time.sleep(1.5); return b
+        except Exception as e: err = e; time.sleep(3)
+    log.write(f"== {n} ERR {err} {u}\n"); log.flush()
+def curl(n, u):
+    r = subprocess.run(["curl", "-sSL", "-m", "240", "-A", UA["User-Agent"], "-o", f"{OUT}/{n}", "-w", "%{http_code}", u], capture_output=True, text=True)
+    sz = os.path.getsize(f"{OUT}/{n}") if os.path.exists(f"{OUT}/{n}") else 0
+    log.write(f"== {n} curl {r.stdout} {sz} {r.stderr.strip()[:120]} {u}\n"); log.flush(); time.sleep(1.5)
+    return open(f"{OUT}/{n}", "rb").read() if sz else None
+def links(b, base, pat):
+    out = []
+    for l, t in re.findall(rb'href="([^"#]+)"[^>]*>(.{0,200}?)</a>', b or b"", re.S):
         l = l.decode("utf-8", "replace"); t = re.sub(r"<[^>]+>|\s+", " ", t.decode("utf-8", "replace")).strip()
-        full = urllib.parse.urljoin(u, l.replace("&amp;", "&"))
-        if re.search(pat, full + " " + t, re.I):
-            log.write(f"   link {t[:90]} | {full}\n")
-            if follow and re.search(follow, full, re.I) and seen < maxf:
-                seen += 1; get(f"{n}_dl{seen:02d}" + os.path.splitext(urllib.parse.urlparse(full).path)[1][:6], full)
-    log.flush()
+        full = urllib.parse.urljoin(base, l.replace("&amp;", "&"))
+        if re.search(pat, full + " " + t, re.I): out.append((t, full)); log.write(f"   link {t[:90]} | {full}\n")
+    return out
 
-# Lithuania: Official Statistics Portal SDMX dataflows
-b = get("lt_dataflows.xml", "https://osp-rs.stat.gov.lt/rest_xml/dataflow/")
-if b:
-    t = b.decode("utf-8", "replace")
-    for m in re.finditer(r'<str:Dataflow[^>]*id="([^"]+)"[^>]*>.*?<com:Name xml:lang="en">([^<]*)</com:Name>', t, re.S):
-        if re.search(r"pupil|student|social|benefit|assistance|population|poverty|at-risk|income", m.group(2), re.I): log.write(f"   LT {m.group(1)} | {m.group(2)}\n")
-# Georgia: Geostat PxWeb tree
-for n, u in [("ge_px_root.json", "https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database"), ("ge_px_root2.json", "http://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/")]:
-    b = get(n, u)
-    if b: break
-if b:
-    try:
-        root = json.loads(b); log.write("   GE root: " + ", ".join(x["id"] for x in root) + "\n")
-        for x in root:
-            if re.search(r"Population|Education|Social|Living|Regional", x["id"] + x.get("text", ""), re.I):
-                bb = get(f"ge_px_{re.sub('[^A-Za-z0-9]', '_', x['id'])[:40]}.json", u.rstrip("/") + "/" + urllib.parse.quote(x["id"]))
-                if bb:
-                    for y in json.loads(bb): log.write(f"     {x['id']}/{y['id']} | {y.get('text','')}\n")
-    except Exception as e: log.write(f"   GE parse {e}\n")
-links("ge_ssa.html", "https://ssa.gov.ge/", r"statist|სტატისტ|xls|pdf", None)
-links("ge_geostat_reg.html", "https://www.geostat.ge/en/modules/categories/27/regional-statistics", r"xls|municipal", r"\.xlsx?$")
-links("ge_geostat_edu.html", "https://www.geostat.ge/en/modules/categories/59/general-education", r"xls|school|pupil", r"\.xlsx?$")
-links("ge_geostat_soc.html", "https://www.geostat.ge/en/modules/categories/192/living-conditions-subsistence-minimum-and-social-assistance", r"xls|assist|poverty", r"\.xlsx?$")
-# South Africa: DBE EMIS masterlists; Stats SA
-links("za_emis.html", "https://www.education.gov.za/Programmes/EMIS/EMISDownloads.aspx", r"master|school|\.xls|\.zip", r"master.*\.(xlsx?|zip)|\.(xlsx|zip)$", 15)
-links("za_statssa_c22.html", "https://www.statssa.gov.za/?page_id=16716", r"census|municipal|xls|pdf", None)
-# Kenya: KNBS
-links("ke_knbs_census.html", "https://www.knbs.or.ke/2019-kenya-population-and-housing-census-reports/", r"volume|county|pdf", None)
-links("ke_knbs_poverty.html", "https://www.knbs.or.ke/?s=poverty+report", r"poverty", None)
-links("ke_knbs_pubs.html", "https://www.knbs.or.ke/publications/", r"poverty|statistical abstract|county|education", None)
-links("ke_moe.html", "https://www.education.go.ke/publications", r"statistic|booklet|pdf", None)
-# South Korea: education statistics and KOSIS
-links("kr_kess.html", "https://kess.kedi.re.kr/index", r"xls|통계|연보|download", None)
-links("kr_kess_pub.html", "https://kess.kedi.re.kr/publ/list?itemCode=02&menuId=m_02_02_01", r"연보|xls|pdf|download", None)
-links("kr_kosis.html", "https://kosis.kr/statHtml/statHtml.do?orgId=117&tblId=DT_117N_A00001", r"xls|csv", None)
-links("kr_mohw.html", "https://www.mohw.go.kr/board.es?mid=a10411010100&bid=0019", r"기초생활|수급|통계|xls", None)
-# Wikipedia (population and area tables as fallbacks)
-for n, t in [("w_lt.html", "Municipalities_of_Lithuania"), ("w_ge.html", "Municipalities_of_Georgia"), ("w_ke.html", "Counties_of_Kenya"),
-             ("w_za.html", "List_of_municipalities_in_South_Africa"), ("w_kr.html", "Provinces_of_South_Korea")]:
-    get(n, f"https://en.wikipedia.org/w/index.php?title={t}&action=render")
+# Lithuania
+for f in ["S3R453_M3080308", "S3R0243_M3160702", "S3R469_M3160701_1", "S3R358_M3160909_1", "S3R057_M3110302_3", "S3R167_M3010213", "S3R0361_M3160701_3"]:
+    get(f"lt_{f}.json", f"https://osp-rs.stat.gov.lt/rest_json/data/{f}")
+# Georgia: list the PxWeb folders we need, two levels down
+base = "https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/"
+def walk(path, depth):
+    b = get("ge_" + re.sub(r"[^A-Za-z0-9]", "_", path)[:60] + ".json", base + urllib.parse.quote(path))
+    if not b: return
+    for y in json.loads(b):
+        log.write(f"     {'  '*depth}{path}/{y['id']} [{y.get('type')}] | {y.get('text','')}\n")
+        if y.get("type") == "l" and depth < 2: walk(path + "/" + y["id"], depth + 1)
+for p in ["Social Statistics/Education", "Social Statistics/Social Protection", "Social Statistics/Living Conditions, Subsistence Minimum", "Demography"]:
+    walk(p, 0)
+# South Africa: DBE masterlists (the page's "National" ordinary-school files)
+pg = get("za_emis.html", "https://www.education.gov.za/Programmes/EMIS/EMISDownloads.aspx")
+for i, (t, u) in enumerate([x for x in links(pg, "https://www.education.gov.za/", r"National.{0,4}ordinary") ][:8]):
+    curl(f"za_master_{i:02d}.bin", u)
+# Korea: MOHW 2025 basic livelihood recipients post and its attachments; pupils by province
+pg = get("kr_mohw_post.html", "https://www.mohw.go.kr/board.es?mid=a10411010100&bid=0019&act=view&list_no=1491455&tag=&nPage=1")
+for i, (t, u) in enumerate(links(pg, "https://www.mohw.go.kr/", r"download|file|\.xlsx?|\.pdf|\.hwp")[:6]):
+    curl(f"kr_mohw_att{i}" + (os.path.splitext(t)[1][:6] or ".bin"), u)
+for n, u in [("kr_datagokr.html", "https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=%EC%8B%9C%EB%8F%84%EB%B3%84+%ED%95%99%EC%83%9D%EC%88%98"),
+             ("kr_index_edu.html", "https://www.index.go.kr/unity/potal/main/EachDtlPageDetail.do?idx_cd=1520"),
+             ("w_kr_edu.html", "https://ko.wikipedia.org/w/index.php?title=%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EA%B5%90%EC%9C%A1%EC%B2%AD&action=render")]:
+    b = get(n, u); links(b, u, r"xls|csv|download|fileData")
+# Kenya: KNBS (curl, as Python lacks the site's intermediate certificate) and Wikipedia
+for n, u in [("ke_knbs_census.html", "https://www.knbs.or.ke/2019-kenya-population-and-housing-census-reports/"),
+             ("ke_knbs_pov.html", "https://www.knbs.or.ke/reports/kenya-poverty-report-2022/"),
+             ("ke_knbs_search.html", "https://www.knbs.or.ke/?s=poverty"),
+             ("ke_knbs_abstract.html", "https://www.knbs.or.ke/?s=county+statistical+abstract")]:
+    b = curl(n, u); links(b, u, r"poverty|volume|\.pdf|county|education")
+get("w_ke_pov.html", "https://en.wikipedia.org/w/index.php?title=List_of_counties_of_Kenya_by_poverty_rate&action=render")
+get("w_ke_hdi.html", "https://en.wikipedia.org/w/index.php?title=List_of_Kenyan_counties_by_Human_Development_Index&action=render")
