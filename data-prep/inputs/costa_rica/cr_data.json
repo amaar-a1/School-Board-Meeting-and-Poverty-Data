@@ -1,0 +1,758 @@
+{
+ "CRI-01": {
+  "name": "Abangares",
+  "province": "Guanacaste",
+  "pop": 22211,
+  "area": 646.02,
+  "ipm": 0.064,
+  "pupils": 3381,
+  "public": 3381
+ },
+ "CRI-02": {
+  "name": "Acosta",
+  "province": "San José",
+  "pop": 22542,
+  "area": 342.56,
+  "ipm": 0.054,
+  "pupils": 3878,
+  "public": 3878
+ },
+ "CRI-03": {
+  "name": "Alajuela",
+  "province": "Alajuela",
+  "pop": 322143,
+  "area": 391.61,
+  "ipm": 0.043,
+  "pupils": 47520,
+  "public": 41543
+ },
+ "CRI-04": {
+  "name": "Alajuelita",
+  "province": "San José",
+  "pop": 81012,
+  "area": 21.47,
+  "ipm": 0.065,
+  "pupils": 13192,
+  "public": 10878
+ },
+ "CRI-05": {
+  "name": "Alvarado",
+  "province": "Cartago",
+  "pop": 17134,
+  "area": 79.19,
+  "ipm": 0.088,
+  "pupils": 3129,
+  "public": 3129
+ },
+ "CRI-06": {
+  "name": "Aserrí",
+  "province": "San José",
+  "pop": 59588,
+  "area": 168.26,
+  "ipm": 0.051,
+  "pupils": 8487,
+  "public": 8118
+ },
+ "CRI-07": {
+  "name": "Atenas",
+  "province": "Alajuela",
+  "pop": 30407,
+  "area": 126.32,
+  "ipm": 0.042,
+  "pupils": 5075,
+  "public": 4534
+ },
+ "CRI-08": {
+  "name": "Bagaces",
+  "province": "Guanacaste",
+  "pop": 23709,
+  "area": 1277.93,
+  "ipm": 0.081,
+  "pupils": 4091,
+  "public": 4046
+ },
+ "CRI-09": {
+  "name": "Barva",
+  "province": "Heredia",
+  "pop": 47699,
+  "area": 56.02,
+  "ipm": 0.028,
+  "pupils": 6290,
+  "public": 5229
+ },
+ "CRI-10": {
+  "name": "Belén",
+  "province": "Heredia",
+  "pop": 23759,
+  "area": 12.38,
+  "ipm": 0.023,
+  "pupils": 5740,
+  "public": 3294
+ },
+ "CRI-11": {
+  "name": "Buenos Aires",
+  "province": "Puntarenas",
+  "pop": 50562,
+  "area": 2382.94,
+  "ipm": 0.113,
+  "pupils": 10037,
+  "public": 9865
+ },
+ "CRI-12": {
+  "name": "Carrillo",
+  "province": "Guanacaste",
+  "pop": 48227,
+  "area": 599.01,
+  "ipm": 0.068,
+  "pupils": 7590,
+  "public": 7071
+ },
+ "CRI-13": {
+  "name": "Cartago",
+  "province": "Cartago",
+  "pop": 165417,
+  "area": 278.66,
+  "ipm": 0.053,
+  "pupils": 30229,
+  "public": 23499
+ },
+ "CRI-14": {
+  "name": "Cañas",
+  "province": "Guanacaste",
+  "pop": 31738,
+  "area": 687.04,
+  "ipm": 0.055,
+  "pupils": 4973,
+  "public": 4736
+ },
+ "CRI-15": {
+  "name": "Corredores",
+  "province": "Puntarenas",
+  "pop": 51023,
+  "area": 623.62,
+  "ipm": 0.079,
+  "pupils": 8277,
+  "public": 7938
+ },
+ "CRI-16": {
+  "name": "Coto Brus",
+  "province": "Puntarenas",
+  "pop": 46351,
+  "area": 944.22,
+  "ipm": 0.158,
+  "pupils": 8865,
+  "public": 8774
+ },
+ "CRI-17": {
+  "name": "Curridabat",
+  "province": "San José",
+  "pop": 71026,
+  "area": 16.06,
+  "ipm": 0.044,
+  "pupils": 10190,
+  "public": 7711
+ },
+ "CRI-18": {
+  "name": "Desamparados",
+  "province": "San José",
+  "pop": 223226,
+  "area": 118.89,
+  "ipm": 0.04,
+  "pupils": 35188,
+  "public": 32737
+ },
+ "CRI-19": {
+  "name": "Dota",
+  "province": "San José",
+  "pop": 9364,
+  "area": 404.44,
+  "ipm": 0.076,
+  "pupils": 1349,
+  "public": 1349
+ },
+ "CRI-20": {
+  "name": "El Guarco",
+  "province": "Cartago",
+  "pop": 47375,
+  "area": 172.0,
+  "ipm": 0.047,
+  "pupils": 6369,
+  "public": 6047
+ },
+ "CRI-21": {
+  "name": "Escazú",
+  "province": "San José",
+  "pop": 71500,
+  "area": 34.53,
+  "ipm": 0.042,
+  "pupils": 9133,
+  "public": 6451
+ },
+ "CRI-22": {
+  "name": "Esparza",
+  "province": "Puntarenas",
+  "pop": 34808,
+  "area": 217.23,
+  "ipm": 0.047,
+  "pupils": 6053,
+  "public": 5266
+ },
+ "CRI-23": {
+  "name": "Flores",
+  "province": "Heredia",
+  "pop": 22026,
+  "area": 6.75,
+  "ipm": 0.017,
+  "pupils": 3776,
+  "public": 3353
+ },
+ "CRI-24": {
+  "name": "Garabito",
+  "province": "Puntarenas",
+  "pop": 26672,
+  "area": 316.01,
+  "ipm": 0.077,
+  "pupils": 4988,
+  "public": 4540
+ },
+ "CRI-25": {
+  "name": "Goicoechea",
+  "province": "San José",
+  "pop": 132104,
+  "area": 31.7,
+  "ipm": 0.041,
+  "pupils": 14682,
+  "public": 12562
+ },
+ "CRI-26": {
+  "name": "Golfito",
+  "province": "Puntarenas",
+  "pop": 44086,
+  "area": 1032.32,
+  "ipm": 0.095,
+  "pupils": 5969,
+  "public": 5969
+ },
+ "CRI-27": {
+  "name": "Grecia",
+  "province": "Alajuela",
+  "pop": 76226,
+  "area": 142.47,
+  "ipm": 0.051,
+  "pupils": 11440,
+  "public": 10064
+ },
+ "CRI-28": {
+  "name": "Guatuso",
+  "province": "Alajuela",
+  "pop": 18316,
+  "area": 752.83,
+  "ipm": 0.108,
+  "pupils": 3509,
+  "public": 3509
+ },
+ "CRI-29": {
+  "name": "Guácimo",
+  "province": "Limón",
+  "pop": 49606,
+  "area": 801.56,
+  "ipm": 0.07,
+  "pupils": 9085,
+  "public": 8922
+ },
+ "CRI-30": {
+  "name": "Heredia",
+  "province": "Heredia",
+  "pop": 131901,
+  "area": 283.12,
+  "ipm": 0.038,
+  "pupils": 21954,
+  "public": 19335
+ },
+ "CRI-31": {
+  "name": "Hojancha",
+  "province": "Guanacaste",
+  "pop": 8224,
+  "area": 262.99,
+  "ipm": 0.067,
+  "pupils": 1227,
+  "public": 1227
+ },
+ "CRI-32": {
+  "name": "Jiménez",
+  "province": "Cartago",
+  "pop": 18710,
+  "area": 250.07,
+  "ipm": 0.062,
+  "pupils": 2865,
+  "public": 2865
+ },
+ "CRI-33": {
+  "name": "La Cruz",
+  "province": "Guanacaste",
+  "pop": 26829,
+  "area": 1385.4,
+  "ipm": 0.132,
+  "pupils": 5102,
+  "public": 5102
+ },
+ "CRI-34": {
+  "name": "La Unión",
+  "province": "Cartago",
+  "pop": 99539,
+  "area": 44.18,
+  "ipm": 0.051,
+  "pupils": 14839,
+  "public": 11620
+ },
+ "CRI-35": {
+  "name": "León Cortés",
+  "province": "San José",
+  "pop": 13553,
+  "area": 121.9,
+  "ipm": 0.077,
+  "pupils": 2336,
+  "public": 2336
+ },
+ "CRI-36": {
+  "name": "Liberia",
+  "province": "Guanacaste",
+  "pop": 80130,
+  "area": 1442.17,
+  "ipm": 0.068,
+  "pupils": 14196,
+  "public": 12850
+ },
+ "CRI-37": {
+  "name": "Limón",
+  "province": "Limón",
+  "pop": 116457,
+  "area": 1769.38,
+  "ipm": 0.093,
+  "pupils": 22897,
+  "public": 21621
+ },
+ "CRI-38": {
+  "name": "Los Chiles",
+  "province": "Alajuela",
+  "pop": 34701,
+  "area": 1332.71,
+  "ipm": 0.225,
+  "pupils": 6887,
+  "public": 6887
+ },
+ "CRI-39": {
+  "name": "Matina",
+  "province": "Limón",
+  "pop": 45329,
+  "area": 770.4,
+  "ipm": 0.103,
+  "pupils": 8866,
+  "public": 8866
+ },
+ "CRI-40": {
+  "name": "Montes de Oca",
+  "province": "San José",
+  "pop": 53862,
+  "area": 15.78,
+  "ipm": 0.016,
+  "pupils": 7145,
+  "public": 4945
+ },
+ "CRI-41": {
+  "name": "Montes de Oro",
+  "province": "Puntarenas",
+  "pop": 16395,
+  "area": 247.6,
+  "ipm": 0.058,
+  "pupils": 2231,
+  "public": 2231
+ },
+ "CRI-42": {
+  "name": "Monteverde",
+  "province": "Puntarenas",
+  "pop": 5386,
+  "area": 53.05,
+  "ipm": 0.045,
+  "pupils": 978,
+  "public": 805
+ },
+ "CRI-43": {
+  "name": "Mora",
+  "province": "San José",
+  "pop": 32348,
+  "area": 163.48,
+  "ipm": 0.047,
+  "pupils": 4007,
+  "public": 3713
+ },
+ "CRI-44": {
+  "name": "Moravia",
+  "province": "San José",
+  "pop": 59546,
+  "area": 28.82,
+  "ipm": 0.023,
+  "pupils": 10765,
+  "public": 6908
+ },
+ "CRI-45": {
+  "name": "Nandayure",
+  "province": "Guanacaste",
+  "pop": 11874,
+  "area": 568.14,
+  "ipm": 0.076,
+  "pupils": 1932,
+  "public": 1932
+ },
+ "CRI-46": {
+  "name": "Naranjo",
+  "province": "Alajuela",
+  "pop": 46647,
+  "area": 127.03,
+  "ipm": 0.052,
+  "pupils": 6880,
+  "public": 6661
+ },
+ "CRI-47": {
+  "name": "Nicoya",
+  "province": "Guanacaste",
+  "pop": 66268,
+  "area": 1337.56,
+  "ipm": 0.073,
+  "pupils": 10575,
+  "public": 9635
+ },
+ "CRI-48": {
+  "name": "Oreamuno",
+  "province": "Cartago",
+  "pop": 48911,
+  "area": 202.89,
+  "ipm": 0.056,
+  "pupils": 5702,
+  "public": 5702
+ },
+ "CRI-49": {
+  "name": "Orotina",
+  "province": "Alajuela",
+  "pop": 24217,
+  "area": 145.11,
+  "ipm": 0.056,
+  "pupils": 3684,
+  "public": 3533
+ },
+ "CRI-50": {
+  "name": "Osa",
+  "province": "Puntarenas",
+  "pop": 36088,
+  "area": 1932.7,
+  "ipm": 0.101,
+  "pupils": 5894,
+  "public": 5819
+ },
+ "CRI-51": {
+  "name": "Palmares",
+  "province": "Alajuela",
+  "pop": 39148,
+  "area": 38.94,
+  "ipm": 0.03,
+  "pupils": 5831,
+  "public": 5152
+ },
+ "CRI-52": {
+  "name": "Paraíso",
+  "province": "Cartago",
+  "pop": 65941,
+  "area": 477.0,
+  "ipm": 0.048,
+  "pupils": 10166,
+  "public": 9941
+ },
+ "CRI-53": {
+  "name": "Parrita",
+  "province": "Puntarenas",
+  "pop": 20068,
+  "area": 483.22,
+  "ipm": 0.081,
+  "pupils": 3609,
+  "public": 3609
+ },
+ "CRI-54": {
+  "name": "Pococí",
+  "province": "Limón",
+  "pop": 146320,
+  "area": 2188.17,
+  "ipm": 0.077,
+  "pupils": 27475,
+  "public": 26112
+ },
+ "CRI-55": {
+  "name": "Poás",
+  "province": "Alajuela",
+  "pop": 36207,
+  "area": 74.48,
+  "ipm": 0.054,
+  "pupils": 5710,
+  "public": 5574
+ },
+ "CRI-56": {
+  "name": "Puerto Jiménez",
+  "province": "Puntarenas",
+  "pop": 10644,
+  "area": 722.56,
+  "ipm": 0.055,
+  "pupils": 2149,
+  "public": 2149
+ },
+ "CRI-57": {
+  "name": "Puntarenas",
+  "province": "Puntarenas",
+  "pop": 141697,
+  "area": 1786.9,
+  "ipm": 0.072,
+  "pupils": 22056,
+  "public": 20484
+ },
+ "CRI-58": {
+  "name": "Puriscal",
+  "province": "San José",
+  "pop": 38525,
+  "area": 555.04,
+  "ipm": 0.047,
+  "pupils": 6009,
+  "public": 5857
+ },
+ "CRI-59": {
+  "name": "Pérez Zeledón",
+  "province": "San José",
+  "pop": 156917,
+  "area": 1901.08,
+  "ipm": 0.058,
+  "pupils": 25619,
+  "public": 24541
+ },
+ "CRI-60": {
+  "name": "Quepos",
+  "province": "Puntarenas",
+  "pop": 32416,
+  "area": 557.85,
+  "ipm": 0.073,
+  "pupils": 5650,
+  "public": 5295
+ },
+ "CRI-61": {
+  "name": "Río Cuarto",
+  "province": "Alajuela",
+  "pop": 14418,
+  "area": 254.9,
+  "ipm": 0.066,
+  "pupils": 2884,
+  "public": 2884
+ },
+ "CRI-62": {
+  "name": "San Carlos",
+  "province": "Alajuela",
+  "pop": 198742,
+  "area": 3352.14,
+  "ipm": 0.093,
+  "pupils": 38782,
+  "public": 36583
+ },
+ "CRI-63": {
+  "name": "San Isidro",
+  "province": "Heredia",
+  "pop": 22806,
+  "area": 26.67,
+  "ipm": 0.027,
+  "pupils": 3839,
+  "public": 3156
+ },
+ "CRI-64": {
+  "name": "San José",
+  "province": "San José",
+  "pop": 352381,
+  "area": 44.62,
+  "ipm": 0.058,
+  "pupils": 50529,
+  "public": 40344
+ },
+ "CRI-65": {
+  "name": "San Mateo",
+  "province": "Alajuela",
+  "pop": 6952,
+  "area": 125.03,
+  "ipm": 0.063,
+  "pupils": 1329,
+  "public": 1329
+ },
+ "CRI-66": {
+  "name": "San Pablo",
+  "province": "Heredia",
+  "pop": 29860,
+  "area": 8.34,
+  "ipm": 0.024,
+  "pupils": 2860,
+  "public": 2147
+ },
+ "CRI-67": {
+  "name": "San Rafael",
+  "province": "Heredia",
+  "pop": 48848,
+  "area": 48.31,
+  "ipm": 0.029,
+  "pupils": 4958,
+  "public": 4189
+ },
+ "CRI-68": {
+  "name": "San Ramón",
+  "province": "Alajuela",
+  "pop": 93264,
+  "area": 1021.75,
+  "ipm": 0.048,
+  "pupils": 14910,
+  "public": 13878
+ },
+ "CRI-69": {
+  "name": "Santa Ana",
+  "province": "San José",
+  "pop": 58020,
+  "area": 61.42,
+  "ipm": 0.039,
+  "pupils": 7918,
+  "public": 5794
+ },
+ "CRI-70": {
+  "name": "Santa Bárbara",
+  "province": "Heredia",
+  "pop": 39133,
+  "area": 52.1,
+  "ipm": 0.04,
+  "pupils": 5884,
+  "public": 4742
+ },
+ "CRI-71": {
+  "name": "Santa Cruz",
+  "province": "Guanacaste",
+  "pop": 72366,
+  "area": 1320.8,
+  "ipm": 0.062,
+  "pupils": 12953,
+  "public": 11354
+ },
+ "CRI-72": {
+  "name": "Santo Domingo",
+  "province": "Heredia",
+  "pop": 45932,
+  "area": 25.4,
+  "ipm": 0.022,
+  "pupils": 10439,
+  "public": 5765
+ },
+ "CRI-73": {
+  "name": "Sarapiquí",
+  "province": "Heredia",
+  "pop": 67153,
+  "area": 2144.22,
+  "ipm": 0.11,
+  "pupils": 13383,
+  "public": 13289
+ },
+ "CRI-74": {
+  "name": "Sarchí",
+  "province": "Alajuela",
+  "pop": 21562,
+  "area": 136.77,
+  "ipm": 0.054,
+  "pupils": 3149,
+  "public": 3149
+ },
+ "CRI-75": {
+  "name": "Siquirres",
+  "province": "Limón",
+  "pop": 63765,
+  "area": 855.14,
+  "ipm": 0.095,
+  "pupils": 11801,
+  "public": 11733
+ },
+ "CRI-76": {
+  "name": "Talamanca",
+  "province": "Limón",
+  "pop": 48906,
+  "area": 2792.23,
+  "ipm": 0.186,
+  "pupils": 9128,
+  "public": 8976
+ },
+ "CRI-77": {
+  "name": "Tarrazú",
+  "province": "San José",
+  "pop": 17810,
+  "area": 291.27,
+  "ipm": 0.081,
+  "pupils": 2492,
+  "public": 2492
+ },
+ "CRI-78": {
+  "name": "Tibás",
+  "province": "San José",
+  "pop": 74592,
+  "area": 8.27,
+  "ipm": 0.039,
+  "pupils": 6726,
+  "public": 5641
+ },
+ "CRI-79": {
+  "name": "Tilarán",
+  "province": "Guanacaste",
+  "pop": 21232,
+  "area": 669.24,
+  "ipm": 0.054,
+  "pupils": 3668,
+  "public": 3485
+ },
+ "CRI-80": {
+  "name": "Turrialba",
+  "province": "Cartago",
+  "pop": 82065,
+  "area": 1589.24,
+  "ipm": 0.11,
+  "pupils": 12769,
+  "public": 12009
+ },
+ "CRI-81": {
+  "name": "Turrubares",
+  "province": "San José",
+  "pop": 6173,
+  "area": 416.25,
+  "ipm": 0.073,
+  "pupils": 1117,
+  "public": 1117
+ },
+ "CRI-82": {
+  "name": "Upala",
+  "province": "Alajuela",
+  "pop": 57361,
+  "area": 1592.68,
+  "ipm": 0.147,
+  "pupils": 11153,
+  "public": 11153
+ },
+ "CRI-83": {
+  "name": "Vázquez de Coronado",
+  "province": "San José",
+  "pop": 67078,
+  "area": 223.93,
+  "ipm": 0.026,
+  "pupils": 8039,
+  "public": 6252
+ },
+ "CRI-84": {
+  "name": "Zarcero",
+  "province": "Alajuela",
+  "pop": 15153,
+  "area": 157.36,
+  "ipm": 0.057,
+  "pupils": 2573,
+  "public": 2573
+ }
+}

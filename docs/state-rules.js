@@ -374,6 +374,50 @@ window.STATE_RULES = {
     ],
     note: "Check the current law and the authority's own rules before relying on this."
   },
+  slovenia: {
+    title: "Rules for municipal council sessions",
+    checked: "November 21, 2026",
+    laws: [
+      { state: "Slovenia", covers: "Municipal councils (občinski svet)", threshold: "",
+        rule: "Under the Local Self-Government Act (Zakon o lokalni samoupravi) council sessions are public; each council's rules of procedure (poslovnik) say how the public is informed, and many councils stream or post their sessions. No national rule requires recordings." },
+      { state: "Slovenia", covers: "Schools", threshold: "",
+        rule: "Under the Organisation and Financing of Education Act (ZOFVI) municipalities found basic schools and pay for their buildings and running costs, while the state pays teachers; each school has a council (svet zavoda) with members named by the municipality, staff and parents." }
+    ],
+    note: "Check the current law and the council's own rules before relying on this."
+  },
+  taiwan: {
+    title: "Rules for county and city council meetings",
+    checked: "November 21, 2026",
+    laws: [
+      { state: "Taiwan", covers: "County and city councils (議會)", threshold: "",
+        rule: "Under the Local Government Act (地方制度法) councils hold regular sessions twice a year and extraordinary sessions when called; sittings are public, and councils set their own rules on broadcasting, most streaming them." },
+      { state: "Taiwan", covers: "Schools", threshold: "",
+        rule: "Under the Compulsory Education Act (國民教育法) the special municipalities and counties run public elementary and junior high schools through their education bureaus; the Ministry of Education sets the curriculum and runs many senior high schools." }
+    ],
+    note: "Check the current law and the council's own rules before relying on this."
+  },
+  uruguay: {
+    title: "Rules for departmental legislature (Junta Departamental) sessions",
+    checked: "November 21, 2026",
+    laws: [
+      { state: "Uruguay", covers: "Juntas Departamentales", threshold: "",
+        rule: "The Constitution (articles 262–284) and the Organic Law of Departments (Ley 9.515) set up each department's elected Junta Departamental; its sessions are public unless it decides otherwise, under its own rules, and many stream them." },
+      { state: "Uruguay", covers: "Schools", threshold: "",
+        rule: "Under the General Education Law (Ley 18.437) public schools are run nationally by ANEP (Administración Nacional de Educación Pública), not by the departments." }
+    ],
+    note: "Check the current law and the Junta's own rules before relying on this."
+  },
+  costa_rica: {
+    title: "Rules for municipal council (concejo municipal) sessions",
+    checked: "November 21, 2026",
+    laws: [
+      { state: "Costa Rica", covers: "Municipal councils (concejos municipales)", threshold: "",
+        rule: "Under the Municipal Code (Código Municipal, Ley 7794) councils hold ordinary sessions at least weekly, and sessions are public. Many councils stream them; Ley 9842 (2020) allows virtual sessions." },
+      { state: "Costa Rica", covers: "Schools and school boards", threshold: "",
+        rule: "Public schools are run nationally by the Ministry of Public Education (MEP); each school's board (junta de educación or junta administrativa) is appointed by the municipal council from names put forward by the school, and the council passes part of its budget to the boards." }
+    ],
+    note: "Check the current law and the council's own rules before relying on this."
+  },
   philippines: {
     title: "Rules for council sessions and local school boards",
     checked: "November 8, 2026",

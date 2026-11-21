@@ -82,7 +82,7 @@ def centroid(geom):
 
 
 _CACHE = {}
-DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "AU": "australia", "HR": "croatia", "PH": "philippines", "LV": "latvia", "EE": "estonia", "ARG": "argentina", "ISR": "israel"}
+DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "AU": "australia", "HR": "croatia", "PH": "philippines", "LV": "latvia", "EE": "estonia", "ARG": "argentina", "ISR": "israel", "SVN": "slovenia", "TWN": "taiwan", "URY": "uruguay", "CRI": "costa_rica"}
 # Brazil: municipal chambers (câmara municipal) and their education committees, in Portuguese.
 RULES = {"BR": (re.compile(r"comiss[ãa]o (permanente )?de educa[çc][ãa]o|educa[çc][ãa]o.*comiss[ãa]o", re.I),
                 re.compile(r"sess[ãa]o|c[âa]mara", re.I),
@@ -204,9 +204,27 @@ RULES["EE"] = (re.compile(r"haridus[^|]{0,40}komisjon|komisjon[^|]{0,40}haridus"
                re.compile(r"^(?!.*(noorte|noortevolikogu|laste)).*(volikogu[^|]{0,40}istung|istung[^|]{0,40}volikogu|volikogu\s+\d|\d+\.?\s*istung)", re.I),
                re.compile(r"intervjuu|uudised|tervitus|kontsert|valimis|kandidaa|reklaam", re.I))
 
+# Slovenia: municipal council sessions (seja občinskega / mestnega sveta) and a council committee covering education
+# (odbor za družbene dejavnosti, izobraževanje ...). Youth councils (otroški / mladinski parlament) don't count.
+RULES["SVN"] = (re.compile(r"odbor[^|]{0,80}(izobra[zž]|[sš]ol|vzgoj|mladin)|(izobra[zž]|vzgoj)[^|]{0,40}odbor", re.I),
+                re.compile(r"seja|svet", re.I),
+                re.compile(r"^(?!.*(odbor|komisij|otro[sš]k|mladinsk|parlament)).*((redna|izredna|dopisna|slavnostna|ustanovna|\d+\.?)\s*seja|seja\s+(ob[cč]inskega|mestnega)\s+sveta|ob[cč]inski\s+svet[^|]{0,30}seja)", re.I),
+                re.compile(r"intervju|novice|pozdrav|koncert|volit|kandidat|reklam|prireditev", re.I))
+# Uruguay: the departmental legislature (Junta Departamental) and its education committee; Costa Rica: the municipal
+# council (concejo municipal) and its education committee. Both use the Spanish default patterns, with these additions.
+RULES["URY"] = (re.compile(r"comisi[óo]n[^|]{0,40}(educaci[óo]n|cultura)|(educaci[óo]n|cultura)[^|]{0,30}comisi[óo]n", re.I),
+                re.compile(r"sesi[óo]n|plenario|junta", re.I),
+                re.compile(r"^(?!.*(comisi[óo]n|juvenil|infantil|estudiantil)).*(sesi[óo]n (ordinaria|extraordinaria|especial|solemne|de la junta|n[°º.]|\d)|\d+\S* sesi[óo]n|junta departamental[^|]{0,40}sesi[óo]n|plenario)", re.I),
+                re.compile(NOT_T.pattern + r"|solemne|homenaje", re.I))
+# (YouTube shows some Costa Rican titles machine-translated into English: "Ordinary Session No. 133".)
+RULES["CRI"] = (re.compile(r"comisi[óo]n[^|]{0,40}educaci[óo]n|educaci[óo]n[^|]{0,30}comisi[óo]n|education (committee|commission)", re.I),
+                re.compile(r"sesi[óo]n|concejo|session", re.I),
+                re.compile(r"^(?!.*(comisi[óo]n|commission|committee|juvenil|ni[ñn]ez|cpj|ccdr|junta vial|road board)).*(sesi[óo]n (ordinaria|extraordinaria|municipal|del concejo|de concejo|n[°º.]|#|\d)|\d+\S* sesi[óo]n|^sesi[óo]n\b|concejo municipal[^|]{0,40}sesi[óo]n|(ordinary|extraordinary|municipal) session|^(ordinaria|extraordinaria)\b)", re.I),
+                re.compile(NOT_T.pattern + r"|solemne", re.I))
+
 # Spain: a committee covering education counts only when at least this many of its sessions are posted; otherwise the
 # council's plenaries do (one stray committee clip shouldn't replace 160 plenaries).
-MIN_EDU = {"ES": 3, "FRA": 3, "EC": 3, "IT": 3, "PL": 3, "PT": 3, "BE": 3, "LV": 3, "EE": 3}
+MIN_EDU = {"ES": 3, "FRA": 3, "EC": 3, "IT": 3, "PL": 3, "PT": 3, "BE": 3, "LV": 3, "EE": 3, "SVN": 3, "URY": 3, "CRI": 3}
 
 
 def session_key(cc, t):
@@ -238,7 +256,8 @@ def meetings(cc, did):
     vids = [t for t in titles[url] if not not_t.search(t)]
     for keep, kind in (([t for t in vids if edu.search(t)], "Education committee"),
                        ([t for t in vids if council.search(t) and must.search(t) and not edu.search(t)], "Council (stand-in)")):
-        keys = {parse_date(t) or session_key(cc, t) for t in keep}
+        # (Slovenia, Uruguay, Costa Rica: a title with only a year, like "Sesión Ordinaria 148-2026", counts once per title.)
+        keys = {(lambda pd: pd if pd and (pd[2] or cc not in ("SVN", "URY", "CRI")) else session_key(cc, t))(parse_date(t)) for t in keep}
         if len(keys) >= (MIN_EDU.get(cc, 1) if kind == "Education committee" else 1): return len(keys), url, keep, kind
     return 0, "", [], ""
 
@@ -1482,6 +1501,120 @@ def israel():
                      "School system": f"{x['kind']} (its education department, with the Ministry of Education); elected council",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in area})
     write("ISR", "israel", rows, feats)
+
+
+def slovenia():
+    """212 municipalities (občine), 12 of them urban municipalities (mestne občine). Each founds and runs its basic schools
+    (and kindergartens); the state runs upper-secondary schools and pays teachers. The elected municipal council
+    (občinski svet) decides on schools, often through a committee for social affairs or education. Poverty stand-in: see
+    prep_slovenia.py. Pupils: basic-school pupils by the school's municipality plus upper-secondary pupils by residence."""
+    d = os.path.join(IN, "slovenia")
+    si = json.load(open(os.path.join(d, "svn_data.json"), encoding="utf-8"))
+    feats = json.load(open(os.path.join(d, "svn_geo.geojson"), encoding="utf-8"))["features"]
+    have = {f["properties"]["id"] for f in feats}
+    URBAN = {"Ljubljana", "Maribor", "Celje", "Koper/Capodistria", "Kranj", "Krško", "Murska Sobota", "Nova Gorica", "Novo mesto", "Ptuj", "Slovenj Gradec", "Velenje"}
+    rows = []
+    for code, x in si.items():
+        if code.startswith("_"): continue
+        did = f"SVN-{code}"
+        dens = x["pop"] / x["area"] if x.get("pop") and x.get("area") else 0
+        rate = x.get("stand_in")
+        pupils = (x.get("basic") or 0) + (x.get("upper") or 0)
+        rows.append({"District": x["name"], "Region": "Urban municipality" if x["name"] in URBAN else "Municipality", "Population": x.get("pop") or "",
+                     "Poverty rate (all ages)": f"{rate:.1f}%" if rate is not None else "",
+                     "Poverty note": x.get("stand_in_note", ""),
+                     "Children under 18": x.get("children") or "",
+                     "Enrollment": pupils or "", "Enrollment year": "2025 (basic-school pupils by the school's municipality, upper-secondary pupils by residence; SURS)" if pupils else "",
+                     "_names": [x["name"]] + x["name"].split("/"),
+                     "School system": ("Urban municipality" if x["name"] in URBAN else "Municipality") + " (its basic schools; the state runs upper-secondary schools); elected council (občinski svet)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in have})
+    write("SVN", "slovenia", rows, feats)
+
+
+def taiwan():
+    """22 special municipalities, counties and cities. Elementary and junior high schools are run by the county or city
+    government's education bureau (national and private schools aside); senior high schools by the Ministry of Education,
+    the special municipalities, or private bodies. The elected county or city council (議會) oversees the education
+    bureau and its budget, through an education committee in most councils. Poverty stand-in: people in low-income and
+    middle-low-income households per 100 residents (MOHW). Pupils: elementary, junior and senior high schools."""
+    d = os.path.join(IN, "taiwan")
+    tw = json.load(open(os.path.join(d, "tw_data.json"), encoding="utf-8"))
+    feats = json.load(open(os.path.join(d, "tw_geo.geojson"), encoding="utf-8"))["features"]
+    area = {f["properties"]["id"]: area_km2(f["geometry"]) for f in feats}
+    rows = []
+    for zh, x in tw.items():
+        did = "TWN-" + x["code"]
+        dens = x["pop"] / area[did] if area.get(did) else 0
+        rate = 100 * (x["low"] + x["midlow"]) / x["pop"]
+        m = x.get("meetings") or {}
+        n = m.get("n", 0)
+        latest, years = date_summary(m.get("titles", [])) if n else ("", "")
+        rows.append({"District": f"{x['en']} ({zh})", "_names": [zh, x["en"], zh.replace("臺", "台")], "Region": x["kind"], "Population": x["pop"],
+                     "Poverty rate (all ages)": f"{rate:.2f}%",
+                     "Poverty note": (f"Stand-in: people in low-income ({x['low']:,}) and middle-low-income ({x['midlow']:,}) households, the two tiers of Taiwan's means-tested "
+                                      f"social assistance, per 100 residents, {x['quarter'].split(',')[-1].strip()} (Ministry of Health and Welfare). Low-income persons alone: "
+                                      f"{x['low_ratio']:.2f}%. The thresholds are set by each special municipality and by the central government for the rest, so they differ between places"),
+                     "Enrollment": x["pupils"], "Enrollment year": f"{int(x['school_year']) + 1911}/{str(int(x['school_year']) + 1912)[-2:]} school year (elementary, junior and senior high schools; Ministry of Education)",
+                     "Public school enrollment": x["public"],
+                     "_own_meetings": True, "Available Board Meetings": n,
+                     "Meetings type": (m["type"] if "stand-in" in m["type"] else m["type"] + " (stand-in)") if n else "", "Meetings source": m.get("source", "") if n else "",
+                     "Latest meeting": latest, "Meetings by year": years,
+                     "School system": f"{x['kind']} (its education bureau runs elementary and junior high schools); elected council (議會)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": True})
+    write("TWN", "taiwan", rows, feats)
+
+
+def uruguay():
+    """19 departments. Public schools are run nationally by ANEP (the National Public Education Administration), not by the
+    departments; each department's elected legislature (Junta Departamental) and intendant run local services. So
+    meetings are a stand-in: the Junta Departamental's sessions (or its education and culture committee). Poverty stand-in:
+    Tarjeta Uruguay Social cards per 100 residents, with INE's band of households below the poverty line (prep_uruguay.py)."""
+    d = os.path.join(IN, "uruguay")
+    uy = json.load(open(os.path.join(d, "ury_data.json"), encoding="utf-8"))
+    feats = json.load(open(os.path.join(d, "ury_geo.geojson"), encoding="utf-8"))["features"]
+    area = {f["properties"]["id"]: area_km2(f["geometry"]) for f in feats}
+    rows = []
+    for name, x in uy.items():
+        did = "URY-" + x["code"]
+        dens = x["pop"] / area[did] if area.get(did) else 0
+        pov = x.get("poverty")
+        rows.append({"District": name, "Region": "Capital" if name == "Montevideo" else "Department", "Population": x["pop"],
+                     "Poverty rate (all ages)": f"{pov:.1f}%" if pov is not None else "",
+                     "Poverty note": (f"Stand-in: Tarjeta Uruguay Social cards in 2024 ({x['tus']:,}, {x['tus_double']:,} of them double cards for the most vulnerable; "
+                                      f"MIDES, in INE's yearbook) per 100 residents (INE projection for 2025). The card goes to the most vulnerable households, one per household. "
+                                      f"INE's 2025 poverty report maps households below the poverty line by department only in bands: {x['band']} here "
+                                      "(nationally 13.2% of households and 16.6% of people; 26.5–29.1% of children)"),
+                     "Enrollment": x["pupils"], "Enrollment year": f"{x['pupils_year']} (primary, lower and upper secondary; INE yearbook)", "Public school enrollment": x["public"],
+                     "School system": "Department (schools are run nationally by ANEP); elected departmental legislature (Junta Departamental)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": True})
+    write("URY", "uruguay", rows, feats)
+
+
+def costa_rica():
+    """84 cantons. Public schools are run nationally by the Ministry of Public Education (MEP) through its regional
+    directorates; each school has a board (junta de educación or administrativa) appointed through the municipal council,
+    which also funds part of their budget. The elected municipal council (concejo municipal) is the stand-in, with its
+    education committee where one posts. Poverty stand-in: UNDP's cantonal Multidimensional Poverty Index for 2023 (×100).
+    Pupils: MEP's initial enrollment in day schools, grades 1–12, 2022 (prep_costa_rica.py)."""
+    d = os.path.join(IN, "costa_rica")
+    cr = json.load(open(os.path.join(d, "cr_data.json"), encoding="utf-8"))
+    feats = json.load(open(os.path.join(d, "cr_geo.geojson"), encoding="utf-8"))["features"]
+    have = {f["properties"]["id"] for f in feats}
+    rows = []
+    for did, x in cr.items():
+        dens = x["pop"] / x["area"] if x.get("pop") and x.get("area") else 0
+        ipm = x.get("ipm")
+        rows.append({"District": x["name"], "Region": x["province"], "Population": x.get("pop") or "",
+                     "Poverty rate (all ages)": f"{100 * ipm:.1f}%" if ipm is not None else "",
+                     "Poverty note": (f"Stand-in: UNDP's cantonal Multidimensional Poverty Index for 2023, {ipm:.3f} (shown ×100), which combines the share of people "
+                                      "who are multidimensionally poor with how many deprivations they have (education, health, housing, work, social protection), "
+                                      "so it runs below a poverty rate. Atlas de Desarrollo Humano Cantonal 2024; Costa Rica publishes no income-poverty rate by canton"
+                                      + (". Monteverde became a canton in 2021; its border is drawn inside Puntarenas" if x["name"] == "Monteverde" else "")) if ipm is not None else "",
+                     "Enrollment": x.get("pupils") or "", "Enrollment year": "2022 (initial enrollment in day schools, grades 1–12; MEP)" if x.get("pupils") else "",
+                     "Public school enrollment": x.get("public") if x.get("public") is not None else "",
+                     "School system": "Canton (schools are run nationally by the Ministry of Public Education); elected municipal council (concejo municipal)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in have})
+    write("CRI", "costa_rica", rows, feats)
 
 
 if __name__ == "__main__":

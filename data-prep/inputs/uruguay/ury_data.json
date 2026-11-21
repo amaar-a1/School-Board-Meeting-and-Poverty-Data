@@ -1,0 +1,211 @@
+{
+ "Montevideo": {
+  "code": "01",
+  "pop": 1279954,
+  "pupils": 201282,
+  "public": 157969,
+  "pupils_year": 2024,
+  "tus": 39485,
+  "tus_double": 19696,
+  "poverty": 3.08,
+  "band": "9.0–14.9%"
+ },
+ "Artigas": {
+  "code": "02",
+  "pop": 77377,
+  "pupils": 15247,
+  "public": 12368,
+  "pupils_year": 2024,
+  "tus": 3814,
+  "tus_double": 1610,
+  "poverty": 4.93,
+  "band": "15.0–23.9%"
+ },
+ "Canelones": {
+  "code": "03",
+  "pop": 617746,
+  "pupils": 98884,
+  "public": 83690,
+  "pupils_year": 2024,
+  "tus": 14230,
+  "tus_double": 6424,
+  "poverty": 2.3,
+  "band": "9.0–14.9%"
+ },
+ "Cerro Largo": {
+  "code": "04",
+  "pop": 90500,
+  "pupils": 16812,
+  "public": 13883,
+  "pupils_year": 2024,
+  "tus": 3104,
+  "tus_double": 1374,
+  "poverty": 3.43,
+  "band": "15.0–23.9%"
+ },
+ "Colonia": {
+  "code": "05",
+  "pop": 136002,
+  "pupils": 22402,
+  "public": 19223,
+  "pupils_year": 2024,
+  "tus": 2542,
+  "tus_double": 1044,
+  "poverty": 1.87,
+  "band": "under 9%"
+ },
+ "Durazno": {
+  "code": "06",
+  "pop": 62005,
+  "pupils": 10435,
+  "public": 8642,
+  "pupils_year": 2024,
+  "tus": 1656,
+  "tus_double": 736,
+  "poverty": 2.67,
+  "band": "9.0–14.9%"
+ },
+ "Flores": {
+  "code": "07",
+  "pop": 25988,
+  "pupils": 4253,
+  "public": 3582,
+  "pupils_year": 2024,
+  "tus": 322,
+  "tus_double": 107,
+  "poverty": 1.24,
+  "band": "under 9%"
+ },
+ "Florida": {
+  "code": "08",
+  "pop": 70042,
+  "pupils": 11208,
+  "public": 9761,
+  "pupils_year": 2024,
+  "tus": 1356,
+  "tus_double": 606,
+  "poverty": 1.94,
+  "band": "9.0–14.9%"
+ },
+ "Lavalleja": {
+  "code": "09",
+  "pop": 58407,
+  "pupils": 9458,
+  "public": 7921,
+  "pupils_year": 2024,
+  "tus": 1168,
+  "tus_double": 484,
+  "poverty": 2.0,
+  "band": "9.0–14.9%"
+ },
+ "Maldonado": {
+  "code": "10",
+  "pop": 216808,
+  "pupils": 33060,
+  "public": 26923,
+  "pupils_year": 2024,
+  "tus": 3450,
+  "tus_double": 1360,
+  "poverty": 1.59,
+  "band": "under 9%"
+ },
+ "Paysandú": {
+  "code": "11",
+  "pop": 121634,
+  "pupils": 21025,
+  "public": 17362,
+  "pupils_year": 2024,
+  "tus": 3506,
+  "tus_double": 1683,
+  "poverty": 2.88,
+  "band": "15.0–23.9%"
+ },
+ "Río Negro": {
+  "code": "12",
+  "pop": 57058,
+  "pupils": 10367,
+  "public": 8405,
+  "pupils_year": 2024,
+  "tus": 1651,
+  "tus_double": 674,
+  "poverty": 2.89,
+  "band": "9.0–14.9%"
+ },
+ "Rivera": {
+  "code": "13",
+  "pop": 109160,
+  "pupils": 22291,
+  "public": 19180,
+  "pupils_year": 2024,
+  "tus": 4584,
+  "tus_double": 2059,
+  "poverty": 4.2,
+  "band": "15.0–23.9%"
+ },
+ "Rocha": {
+  "code": "14",
+  "pop": 81014,
+  "pupils": 15020,
+  "public": 12792,
+  "pupils_year": 2024,
+  "tus": 1773,
+  "tus_double": 702,
+  "poverty": 2.19,
+  "band": "9.0–14.9%"
+ },
+ "Salto": {
+  "code": "15",
+  "pop": 136231,
+  "pupils": 25311,
+  "public": 21515,
+  "pupils_year": 2024,
+  "tus": 5207,
+  "tus_double": 2475,
+  "poverty": 3.82,
+  "band": "15.0–23.9%"
+ },
+ "San José": {
+  "code": "16",
+  "pop": 120302,
+  "pupils": 21524,
+  "public": 18285,
+  "pupils_year": 2024,
+  "tus": 3137,
+  "tus_double": 1353,
+  "poverty": 2.61,
+  "band": "under 9%"
+ },
+ "Soriano": {
+  "code": "17",
+  "pop": 82988,
+  "pupils": 15284,
+  "public": 12835,
+  "pupils_year": 2024,
+  "tus": 1931,
+  "tus_double": 841,
+  "poverty": 2.33,
+  "band": "9.0–14.9%"
+ },
+ "Tacuarembó": {
+  "code": "18",
+  "pop": 95815,
+  "pupils": 16928,
+  "public": 14270,
+  "pupils_year": 2024,
+  "tus": 3367,
+  "tus_double": 1415,
+  "poverty": 3.51,
+  "band": "9.0–14.9%"
+ },
+ "Treinta y Tres": {
+  "code": "19",
+  "pop": 46901,
+  "pupils": 8452,
+  "public": 7106,
+  "pupils_year": 2024,
+  "tus": 1400,
+  "tus_double": 564,
+  "poverty": 2.99,
+  "band": "15.0–23.9%"
+ }
+}
