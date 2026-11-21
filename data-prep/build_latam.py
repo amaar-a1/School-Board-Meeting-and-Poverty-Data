@@ -273,7 +273,11 @@ def meetings(cc, did):
                        ([t for t in vids if council.search(t) and must.search(t) and not edu.search(t)], "Council (stand-in)")):
         # (Slovenia, Uruguay, Costa Rica: a title with only a year, like "Sesión Ordinaria 148-2026", counts once per title.)
         keys = {(lambda pd: pd if pd and (pd[2] or cc not in ("SVN", "URY", "CRI")) else session_key(cc, t))(parse_date(t)) for t in keep}
-        if len(keys) >= (MIN_EDU.get(cc, 1) if kind == "Education committee" else 1): return len(keys), url, keep, kind
+        if len(keys) >= (MIN_EDU.get(cc, 1) if kind == "Education committee" else 1):
+            # Kenya's county assemblies and South Africa's councils don't run schools: their education committees are stand-ins too.
+            if cc in ("KEN", "ZAF") and kind == "Education committee": kind = ("Assembly" if cc == "KEN" else "Council") + " education committee (stand-in)"
+            if cc == "KEN" and kind == "Council (stand-in)": kind = "County assembly (stand-in)"
+            return len(keys), url, keep, kind
     return 0, "", [], ""
 
 

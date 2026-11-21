@@ -79,13 +79,13 @@
     "Lithuania": [[53.8, 20.9], [56.5, 26.9]],
     "South Africa": [[-35.0, 16.4], [-22.1, 33.0]],
     "Kenya": [[-4.8, 33.9], [5.1, 42.0]],
-    "Georgia (country)": [[41.0, 40.0], [43.6, 46.8]],
+    "Georgia": [[41.0, 40.0], [43.6, 46.8]],   // the country (EU_NAMES), not the US state
     "South Korea": [[33.1, 124.6], [38.7, 131.0]],
     "Philippines": [[4.4, 116.8], [21.2, 127.0]],
     World: [[-58, -170], [75, 180]]
   };
   // Countries whose poverty figure is a welfare rate, far lower than a poverty rate: a map scale of their own.
-  const OWN_SCALE = { JP: "welfare", PT: "welfarePT", BE: "welfareBE", LV: "welfarePT", EE: "welfare", SVN: "benefitSI", TWN: "welfarePT", URY: "welfarePT", CRI: "ipmCR", ZAF: "quintileZA", GEO: "tsaGE", KOR: "nblsKR" };
+  const OWN_SCALE = { JP: "welfare", PT: "welfarePT", BE: "welfareBE", LV: "welfarePT", EE: "welfare", SVN: "benefitSI", TWN: "welfarePT", URY: "welfarePT", CRI: "ipmCR", ZAF: "quintileZA", GEO: "tsaGE", KOR: "nblsKR", KEN: "childKE" };
   const SCALES = {
     poverty: {
       column: "Percentage of Children Ages 5-17 in Poverty",
@@ -121,6 +121,12 @@
       breaks: [3, 5, 7, 10, 15],
       colors: ["#fef0d9", "#fdd49e", "#fdbb84", "#fc8d59", "#e34a33", "#b30000"],
       labels: ["Under 3", "3–5", "5–7", "7–10", "10–15", "15 or more"]
+    },
+    // Kenya: children below the overall poverty line (most counties are above the usual top band of 30%).
+    childKE: {
+      breaks: [30, 40, 50, 60, 70],
+      colors: ["#fef0d9", "#fdd49e", "#fdbb84", "#fc8d59", "#e34a33", "#b30000"],
+      labels: ["Under 30%", "30–40%", "40–50%", "50–60%", "60–70%", "70% or more"]
     },
     // South Africa: public-school learners in quintile 1-3 (no-fee) schools.
     quintileZA: {
@@ -616,6 +622,8 @@
       items.push(`<span class="map-faded">Taiwan: people in low- and middle-low-income households per 100 residents, on its own scale${current.country === "TWN" ? "" : " (under 1% to 8% or more)"}</span>`);
     if ((current && (current.country === "URY" || current.combined)) && metricNow() === "poverty")
       items.push(`<span class="map-faded">Uruguay: Tarjeta Uruguay Social cards per 100 residents, on its own scale${current.country === "URY" ? "" : " (under 1% to 8% or more)"}</span>`);
+    if ((current && (current.country === "KEN" || current.combined)) && metricNow() === "poverty")
+      items.push(`<span class="map-faded">Kenya: children 0–17 below the overall poverty line, on its own scale${current.country === "KEN" ? "" : " (under 30% to 70% or more)"}</span>`);
     if ((current && (current.country === "ZAF" || current.combined)) && metricNow() === "poverty")
       items.push(`<span class="map-faded">South Africa: public-school learners in quintile 1–3 (no-fee) schools, on its own scale${current.country === "ZAF" ? "" : " (under 25% to 97% or more)"}</span>`);
     if ((current && (current.country === "GEO" || current.combined)) && metricNow() === "poverty")
