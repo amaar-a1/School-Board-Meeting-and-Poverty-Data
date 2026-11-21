@@ -7,7 +7,9 @@
   pupils, public: INE, Anuario Estadístico Nacional 2025, 2024: common primary school pupils (table 3.1.3), lower
     secondary (Educación Media Básica, 3.1.6) and upper secondary (Educación Media Superior, 3.1.10), general and
     vocational, in public and private schools (forma de administración);
-  poverty: INE, income-poverty estimate by department (ury_poverty.csv, from INE's report; see that file's source line);
+  poverty (stand-in): Tarjeta Uruguay Social cards in 2024 (MIDES, in INE's yearbook 2025, table 3.9.3, saved as
+    uy_3.9.3.xlsx) per 100 residents; band: INE, Estimación de la pobreza por el método del ingreso, año 2025, map 1
+    (households below the poverty line by department, shown only in three bands);
   meetings: the Junta Departamental's YouTube channel (fetch/nyt.py, UY).
 Usage: python3 data-prep/prep_uruguay.py RAWDIR [RAWDIR ...] GEODIR
 """
@@ -63,11 +65,23 @@ def main(*args):
         public = pv[2] + bv[0] + bv[1] + bv[4] + bv[5] + sv[0] + sv[1] + sv[4] + sv[5]
         private = pv[5] + bv[2] + bv[3] + bv[6] + bv[7] + sv[2] + sv[3] + sv[6] + sv[7]
         data[d] = {"code": f"{i + 1:02d}", "pop": round(pop[d]), "pupils": round(public + private), "public": round(public), "pupils_year": yr}
-    pf = os.path.join(OUT, "ury_poverty.csv")
-    if os.path.exists(pf):
-        import csv
-        for r in csv.DictReader(open(pf, encoding="utf-8")):
-            if not r["department"].startswith("#"): data[r["department"]]["poverty"] = float(r["poverty"])
+    # Poverty stand-in: INE publishes poverty by department only as a banded map, so the figure is Tarjeta Uruguay Social
+    # cards (MIDES' food card for the most vulnerable households; "doble" for the most vulnerable of them) in 2024
+    # (INE yearbook 2025, table 3.9.3, first sheet; its 2023 column has Río Negro and Rivera swapped, 2024 matches the
+    # series) per 100 residents, with the department's band in INE's 2025 map of households below the poverty line.
+    import openpyxl
+    ws = openpyxl.load_workbook(os.path.join(OUT, "uy_3.9.3.xlsx"), read_only=True)["3.9.3"]
+    tus = {}
+    for r in ws.iter_rows(values_only=True):
+        if r[0] and key(r[0]) in {key(d) for d in DEPT}:
+            tus[next(d for d in DEPT if key(d) == key(r[0]))] = (int(r[6]), int(r[7]))
+    assert len(tus) == 19
+    BAND = {"Artigas": "15.0–23.9%", "Salto": "15.0–23.9%", "Paysandú": "15.0–23.9%", "Rivera": "15.0–23.9%", "Cerro Largo": "15.0–23.9%",
+            "Treinta y Tres": "15.0–23.9%", "Colonia": "under 9%", "San José": "under 9%", "Flores": "under 9%", "Maldonado": "under 9%"}
+    for d in DEPT:
+        s_, dbl = tus[d]
+        data[d].update(tus=s_ + dbl, tus_double=dbl, poverty=round(100 * (s_ + dbl) / data[d]["pop"], 2),
+                       band=BAND.get(d, "9.0–14.9%"))
     g = {key(f["properties"]["shapeName"]): f for f in json.load(open(os.path.join(geo, "geoBoundaries-URY-ADM1_simplified.geojson"), encoding="utf-8"))["features"]}
     feats = [{"type": "Feature", "properties": {"id": "URY-" + data[d]["code"], "NAME": d}, "geometry": {"type": g[key(d)]["geometry"]["type"], "coordinates": rnd(g[key(d)]["geometry"]["coordinates"])}} for d in DEPT]
     json.dump(data, open(os.path.join(OUT, "ury_data.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)

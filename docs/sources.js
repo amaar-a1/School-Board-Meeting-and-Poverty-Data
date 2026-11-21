@@ -431,6 +431,55 @@ window.SOURCES = [
     note: "Built by data-prep/prep_israel.py and data-prep/build_latam.py (israel). Sources are matched by the authority's name (a few by hand); districts come from the localities' subdistricts. Modi'in Illit and Sha'ar Shomron (formed in 2024) have no border in OpenStreetMap, and two industrial local councils (Migdal Tefen, Neot Hovav) have no residents."
   },
   {
+    only: "Slovenia",
+    group: "Slovenia: municipalities",
+    items: [
+      { title: "Poverty stand-in: Statistical Office of the Republic of Slovenia (SURS), 0883206S, net income by source, average per capita, by municipality, 2024 (“Parental, family and social benefits” over “Net income - TOTAL”)", url: "https://pxweb.stat.si/SiStatData/pxweb/en/Data/-/0883206S.px" },
+      { title: "Population, area and pupils (basic-school pupils by the school's municipality; upper-secondary pupils by residence): SURS, 2640010S, selected data on municipalities, 2025–2026", url: "https://pxweb.stat.si/SiStatData/pxweb/en/Data/-/2640010S.px" },
+      { title: "Children under 18: SURS, 05C4006S, population by age group and sex, municipalities, latest half-year", url: "https://pxweb.stat.si/SiStatData/pxweb/en/Data/-/05C4006S.px" },
+      { title: "Borders: geoBoundaries (gbOpen) SVN ADM2, simplified, matched to SURS names", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings: each municipal council's YouTube channel (in the “Meetings source” column), searched November 2026", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_slovenia.py and data-prep/build_latam.py (slovenia). geoBoundaries spells some names without their diacritics, so borders are matched exactly where possible, then by closest name (all 212 checked)."
+  },
+  {
+    only: "Taiwan",
+    group: "Taiwan: counties and cities",
+    items: [
+      { title: "Poverty stand-in: Ministry of Health and Welfare, Department of Statistics, low-income households and persons by county and city (table 1.1.1, with persons as a share of the population it uses), 2026 Q2", url: "https://www.mohw.gov.tw/dl-27850-056a753c-fbce-4fff-a373-530accaf6572.html" },
+      { title: "Poverty stand-in: Ministry of Health and Welfare, Department of Statistics, middle-low-income households and persons by county and city (table 1.1.5), 2026 Q2", url: "https://www.mohw.gov.tw/dl-22058-0e1cd81e-d145-45ef-8ee8-43fbb074c2b8.html" },
+      { title: "Pupils and public-school share: Ministry of Education, Department of Statistics open data, school year 2025/26: elementary schools (edu_B_3_2), junior high schools (edu_B_3_8) and senior high schools (edu_B_4_2) by county and city", url: "https://stats.moe.gov.tw/files/opendata/edu_B_3_2.csv" },
+      { title: "Borders: geoBoundaries (gbOpen) TWN ADM1, simplified", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings: each county or city council's YouTube channel (in the “Meetings source” column), searched November 2026; dates from the videos' titles (Republic of China years converted)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_taiwan.py and data-prep/build_latam.py (taiwan). Two civic channels that comment on council proceedings are left out; titles with no date count only when they name a numbered session or an agenda."
+  },
+  {
+    only: "Uruguay",
+    group: "Uruguay: departments",
+    items: [
+      { title: "Poverty stand-in: Ministry of Social Development (MIDES), Tarjeta Uruguay Social cards by type and department, 2024, in INE's Anuario Estadístico Nacional 2025, table 3.9.3", url: "https://www5.ine.gub.uy/documents/ANUARIOS/Anuario%202025/3%20-%20ASPECTOS%20SOCIALES/3.9%20Desarrollo%20Social/3.9.3ok.xlsx" },
+      { title: "Poverty bands and national rates: INE, Estimación de la pobreza por el método del ingreso, año 2025 (map 1, households below the poverty line by department; tables 1–3)", url: "https://www5.ine.gub.uy/documents/Demograf%C3%ADayEESS/HTML/ECH/Pobreza/2025/Informe%20pobreza%20Anual-2025.html" },
+      { title: "Population: INE, Anuario Estadístico Nacional 2025, table 2.2.4, population projected to 30 June by department", url: "https://www5.ine.gub.uy/documents/ANUARIOS/Anuario%202025/2%20-%20POBLACI%C3%93N/2.2%20Proyecciones/2.2.4.xls" },
+      { title: "Pupils and public-school share: INE, Anuario Estadístico Nacional 2025, tables 3.1.3 (common primary education), 3.1.6 (lower secondary) and 3.1.10 (upper secondary), 2024, by department and form of administration", url: "https://www.gub.uy/instituto-nacional-estadistica/comunicacion/publicaciones/anuario-estadistico-nacional-2025-vol-102" },
+      { title: "Borders: geoBoundaries (gbOpen) URY ADM1, simplified", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings: each Junta Departamental's YouTube channel (in the “Meetings source” column), searched November 2026", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_uruguay.py and data-prep/build_latam.py (uruguay). The yearbook's TUS table has Río Negro and Rivera swapped in its 2023 column; the 2024 figures used here match its historical series."
+  },
+  {
+    only: "Costa Rica",
+    group: "Costa Rica: cantons",
+    items: [
+      { title: "Poverty stand-in: UNDP Costa Rica, Atlas de Desarrollo Humano Cantonal 2024, report 2, Cuadro 5, cantons ordered by the Multidimensional Poverty Index (IPM), 2023", url: "https://hdr.undp.org/system/files/documents/national-report-document/atlas-cantonal-reporte-2.pdf" },
+      { title: "Population and area: Spanish Wikipedia, “Anexo:Cantones de Costa Rica” (INEC's 2022 estimate from the census's partial results; INEC's own site refuses automated downloads)", url: "https://es.wikipedia.org/wiki/Anexo:Cantones_de_Costa_Rica" },
+      { title: "Pupils and public-school share: Ministry of Public Education (MEP), Departamento de Análisis Estadístico, initial enrollment by school, 2014–2022 (2022 used): day primary schools (grades 1–6) and secondary schools (grades 7–12)", url: "https://www.mep.go.cr/acerca-del-mep/analisis-estadistico/estadisticas-educativas" },
+      { title: "Borders: geoBoundaries (gbOpen) CRI ADM2, simplified (Monteverde not yet separate)", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings: each municipality's YouTube channel (in the “Meetings source” column), searched November 2026; some titles shown machine-translated into English by YouTube are matched too", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_costa_rica.py and data-prep/build_latam.py (costa_rica). MEP's 2022 files predate Puerto Jiménez's separation from Golfito and list Monteverde under Puntarenas, so schools in those districts are counted toward the new cantons; Sarchí appears under its former name, Valverde Vega. The Municipality of Puerto Jiménez's channel was found for Jiménez (Cartago) and is moved to Puerto Jiménez."
+  },
+  {
     only: "Latvia",
     group: "Latvia: state cities and municipalities",
     items: [

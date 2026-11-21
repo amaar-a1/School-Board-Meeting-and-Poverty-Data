@@ -256,7 +256,8 @@ def meetings(cc, did):
     vids = [t for t in titles[url] if not not_t.search(t)]
     for keep, kind in (([t for t in vids if edu.search(t)], "Education committee"),
                        ([t for t in vids if council.search(t) and must.search(t) and not edu.search(t)], "Council (stand-in)")):
-        keys = {parse_date(t) or session_key(cc, t) for t in keep}
+        # (Slovenia, Uruguay, Costa Rica: a title with only a year, like "Sesión Ordinaria 148-2026", counts once per title.)
+        keys = {(lambda pd: pd if pd and (pd[2] or cc not in ("SVN", "URY", "CRI")) else session_key(cc, t))(parse_date(t)) for t in keep}
         if len(keys) >= (MIN_EDU.get(cc, 1) if kind == "Education committee" else 1): return len(keys), url, keep, kind
     return 0, "", [], ""
 
@@ -1555,7 +1556,8 @@ def taiwan():
                                       f"{x['low_ratio']:.2f}%. The thresholds are set by each special municipality and by the central government for the rest, so they differ between places"),
                      "Enrollment": x["pupils"], "Enrollment year": f"{int(x['school_year']) + 1911}/{str(int(x['school_year']) + 1912)[-2:]} school year (elementary, junior and senior high schools; Ministry of Education)",
                      "Public school enrollment": x["public"],
-                     "_own_meetings": True, "Available Board Meetings": n, "Meetings type": m.get("type", "") if n else "", "Meetings source": m.get("source", "") if n else "",
+                     "_own_meetings": True, "Available Board Meetings": n,
+                     "Meetings type": (m["type"] if "stand-in" in m["type"] else m["type"] + " (stand-in)") if n else "", "Meetings source": m.get("source", "") if n else "",
                      "Latest meeting": latest, "Meetings by year": years,
                      "School system": f"{x['kind']} (its education bureau runs elementary and junior high schools); elected council (議會)",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": True})
@@ -1565,8 +1567,8 @@ def taiwan():
 def uruguay():
     """19 departments. Public schools are run nationally by ANEP (the National Public Education Administration), not by the
     departments; each department's elected legislature (Junta Departamental) and intendant run local services. So
-    meetings are a stand-in: the Junta Departamental's sessions (or its education and culture committee). Poverty: INE's
-    income-poverty estimate by department (prep_uruguay.py)."""
+    meetings are a stand-in: the Junta Departamental's sessions (or its education and culture committee). Poverty stand-in:
+    Tarjeta Uruguay Social cards per 100 residents, with INE's band of households below the poverty line (prep_uruguay.py)."""
     d = os.path.join(IN, "uruguay")
     uy = json.load(open(os.path.join(d, "ury_data.json"), encoding="utf-8"))
     feats = json.load(open(os.path.join(d, "ury_geo.geojson"), encoding="utf-8"))["features"]
@@ -1578,11 +1580,41 @@ def uruguay():
         pov = x.get("poverty")
         rows.append({"District": name, "Region": "Capital" if name == "Montevideo" else "Department", "Population": x["pop"],
                      "Poverty rate (all ages)": f"{pov:.1f}%" if pov is not None else "",
-                     "Poverty note": x.get("poverty_note", ""),
+                     "Poverty note": (f"Stand-in: Tarjeta Uruguay Social cards in 2024 ({x['tus']:,}, {x['tus_double']:,} of them double cards for the most vulnerable; "
+                                      f"MIDES, in INE's yearbook) per 100 residents (INE projection for 2025). The card goes to the most vulnerable households, one per household. "
+                                      f"INE's 2025 poverty report maps households below the poverty line by department only in bands: {x['band']} here "
+                                      "(nationally 13.2% of households and 16.6% of people; 26.5–29.1% of children)"),
                      "Enrollment": x["pupils"], "Enrollment year": f"{x['pupils_year']} (primary, lower and upper secondary; INE yearbook)", "Public school enrollment": x["public"],
                      "School system": "Department (schools are run nationally by ANEP); elected departmental legislature (Junta Departamental)",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": True})
     write("URY", "uruguay", rows, feats)
+
+
+def costa_rica():
+    """84 cantons. Public schools are run nationally by the Ministry of Public Education (MEP) through its regional
+    directorates; each school has a board (junta de educación or administrativa) appointed through the municipal council,
+    which also funds part of their budget. The elected municipal council (concejo municipal) is the stand-in, with its
+    education committee where one posts. Poverty stand-in: UNDP's cantonal Multidimensional Poverty Index for 2023 (×100).
+    Pupils: MEP's initial enrollment in day schools, grades 1–12, 2022 (prep_costa_rica.py)."""
+    d = os.path.join(IN, "costa_rica")
+    cr = json.load(open(os.path.join(d, "cr_data.json"), encoding="utf-8"))
+    feats = json.load(open(os.path.join(d, "cr_geo.geojson"), encoding="utf-8"))["features"]
+    have = {f["properties"]["id"] for f in feats}
+    rows = []
+    for did, x in cr.items():
+        dens = x["pop"] / x["area"] if x.get("pop") and x.get("area") else 0
+        ipm = x.get("ipm")
+        rows.append({"District": x["name"], "Region": x["province"], "Population": x.get("pop") or "",
+                     "Poverty rate (all ages)": f"{100 * ipm:.1f}%" if ipm is not None else "",
+                     "Poverty note": (f"Stand-in: UNDP's cantonal Multidimensional Poverty Index for 2023, {ipm:.3f} (shown ×100), which combines the share of people "
+                                      "who are multidimensionally poor with how many deprivations they have (education, health, housing, work, social protection), "
+                                      "so it runs below a poverty rate. Atlas de Desarrollo Humano Cantonal 2024; Costa Rica publishes no income-poverty rate by canton"
+                                      + (". Monteverde became a canton in 2021; its border is drawn inside Puntarenas" if x["name"] == "Monteverde" else "")) if ipm is not None else "",
+                     "Enrollment": x.get("pupils") or "", "Enrollment year": "2022 (initial enrollment in day schools, grades 1–12; MEP)" if x.get("pupils") else "",
+                     "Public school enrollment": x.get("public") if x.get("public") is not None else "",
+                     "School system": "Canton (schools are run nationally by the Ministry of Public Education); elected municipal council (concejo municipal)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in have})
+    write("CRI", "costa_rica", rows, feats)
 
 
 if __name__ == "__main__":
