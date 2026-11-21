@@ -82,7 +82,7 @@ def centroid(geom):
 
 
 _CACHE = {}
-DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "AU": "australia", "HR": "croatia", "PH": "philippines", "LV": "latvia", "EE": "estonia"}
+DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "AU": "australia", "HR": "croatia", "PH": "philippines", "LV": "latvia", "EE": "estonia", "AR": "argentina"}
 # Brazil: municipal chambers (câmara municipal) and their education committees, in Portuguese.
 RULES = {"BR": (re.compile(r"comiss[ãa]o (permanente )?de educa[çc][ãa]o|educa[çc][ãa]o.*comiss[ãa]o", re.I),
                 re.compile(r"sess[ãa]o|c[âa]mara", re.I),
@@ -1409,6 +1409,41 @@ def estonia():
             polys = [p for f in parts for p in (f["geometry"]["coordinates"] if f["geometry"]["type"] == "MultiPolygon" else [f["geometry"]["coordinates"]])]
             feats.append({"type": "Feature", "properties": {"id": did, "NAME": name}, "geometry": {"type": "MultiPolygon" if len(polys) > 1 else "Polygon", "coordinates": rnd(polys if len(polys) > 1 else polys[0])}})
     write("EE", "estonia", rows, feats)
+
+
+def argentina():
+    """24 jurisdictions: 23 provinces and the Autonomous City of Buenos Aires. Each runs its own schools through its
+    ministry or general directorate of education (in several, with a provincial education council: Consejo General
+    de Educación); there are no local school boards, except Buenos Aires province's elected district school councils
+    (consejos escolares), which look after buildings and school meals, not the schools themselves. Poverty: INDEC, people
+    below the poverty line in the province's surveyed urban areas, first half of 2026 (prep_argentina.py). Meetings
+    (stand-in): the provincial legislature's education committee where at least three meetings are posted on its
+    YouTube channel, otherwise its sittings, counted once per date."""
+    d = os.path.join(IN, "argentina")
+    ar = json.load(open(os.path.join(d, "ar_data.json"), encoding="utf-8"))
+    feats = json.load(open(os.path.join(d, "ar_prov.geojson"), encoding="utf-8"))["features"]
+    area = {f["properties"]["id"]: area_km2(f["geometry"]) for f in feats}
+    rows = []
+    for name, x in ar.items():
+        did = "AR-" + x["code"]
+        pop = x.get("pop")
+        dens = pop / area[did] if pop and area.get(did) else 0
+        m = x.get("meetings") or {}
+        n = m.get("n", 0)
+        latest, years = date_summary(m.get("titles", [])) if n else ("", "")
+        rows.append({"District": name, "Region": x["region"], "Population": pop or "",
+                     "Poverty rate (all ages)": f"{x['poverty']:.1f}%",
+                     "Poverty note": (f"People below the poverty line, all ages, first half of 2026, in the province's surveyed urban areas ({', '.join(x['aglos'])}); "
+                                      "INDEC, Encuesta Permanente de Hogares. Rural areas aren't surveyed, and no child rate is published by province "
+                                      "(nationally 45.2% of under-18s were poor, against 32.3% of all people)"),
+                     "Children under 18": x.get("children") or "",
+                     "Enrollment": x.get("pupils", ""), "Enrollment year": x.get("pupils_year", ""), "Public school enrollment": x.get("public", ""),
+                     "_own_meetings": True, "Available Board Meetings": n, "Meetings type": m.get("type", "") if n else "",
+                     "Meetings source": m.get("source", "") if n else "", "Latest meeting": latest, "Meetings by year": years,
+                     "School system": ("Autonomous city (its Ministry of Education); elected legislature" if x["code"] == "02" else
+                                       "Province (its ministry or general directorate of education" + (", with a general education council" if x.get("council") else "") + "); elected legislature"),
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": True})
+    write("AR", "argentina", rows, feats)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,226 @@
+{
+ "Buenos Aires": {
+  "code": "06",
+  "region": "Pampeana",
+  "poverty": 36.0,
+  "survey_pop_k": 15398.0,
+  "aglos": [
+   "Partidos del GBA",
+   "Bahía Blanca - Cerri",
+   "Gran La Plata",
+   "Mar del Plata",
+   "San Nicolás - Villa Constitución"
+  ]
+ },
+ "Catamarca": {
+  "code": "10",
+  "region": "Noroeste",
+  "poverty": 37.6,
+  "survey_pop_k": 237.0,
+  "aglos": [
+   "Gran Catamarca"
+  ]
+ },
+ "Chaco": {
+  "code": "22",
+  "region": "Noreste",
+  "poverty": 48.6,
+  "survey_pop_k": 430.0,
+  "aglos": [
+   "Gran Resistencia"
+  ]
+ },
+ "Chubut": {
+  "code": "26",
+  "region": "Patagonia",
+  "poverty": 36.5,
+  "survey_pop_k": 417.0,
+  "aglos": [
+   "Comodoro Rivadavia - Rada Tilly",
+   "Rawson - Trelew"
+  ]
+ },
+ "Ciudad Autónoma de Buenos Aires": {
+  "code": "02",
+  "region": "Gran Buenos Aires",
+  "poverty": 11.1,
+  "survey_pop_k": 3006.0,
+  "aglos": [
+   "Ciudad Autónoma de Buenos Aires"
+  ]
+ },
+ "Córdoba": {
+  "code": "14",
+  "region": "Pampeana",
+  "poverty": 30.3,
+  "survey_pop_k": 1804.0,
+  "aglos": [
+   "Gran Córdoba",
+   "Río Cuarto"
+  ]
+ },
+ "Corrientes": {
+  "code": "18",
+  "region": "Noreste",
+  "poverty": 41.1,
+  "survey_pop_k": 397.0,
+  "aglos": [
+   "Corrientes"
+  ]
+ },
+ "Entre Ríos": {
+  "code": "30",
+  "region": "Pampeana",
+  "poverty": 42.1,
+  "survey_pop_k": 458.0,
+  "aglos": [
+   "Concordia",
+   "Gran Paraná"
+  ]
+ },
+ "Formosa": {
+  "code": "34",
+  "region": "Noreste",
+  "poverty": 29.9,
+  "survey_pop_k": 268.0,
+  "aglos": [
+   "Formosa"
+  ]
+ },
+ "Jujuy": {
+  "code": "38",
+  "region": "Noroeste",
+  "poverty": 27.6,
+  "survey_pop_k": 366.0,
+  "aglos": [
+   "Jujuy - Palpalá"
+  ]
+ },
+ "La Pampa": {
+  "code": "42",
+  "region": "Pampeana",
+  "poverty": 25.2,
+  "survey_pop_k": 135.0,
+  "aglos": [
+   "Santa Rosa - Toay"
+  ]
+ },
+ "La Rioja": {
+  "code": "46",
+  "region": "Noroeste",
+  "poverty": 38.3,
+  "survey_pop_k": 243.0,
+  "aglos": [
+   "La Rioja"
+  ]
+ },
+ "Mendoza": {
+  "code": "50",
+  "region": "Cuyo",
+  "poverty": 36.9,
+  "survey_pop_k": 1070.0,
+  "aglos": [
+   "Gran Mendoza"
+  ]
+ },
+ "Misiones": {
+  "code": "54",
+  "region": "Noreste",
+  "poverty": 42.3,
+  "survey_pop_k": 397.0,
+  "aglos": [
+   "Posadas"
+  ]
+ },
+ "Neuquén": {
+  "code": "58",
+  "region": "Patagonia",
+  "poverty": 19.7,
+  "survey_pop_k": 330.0,
+  "aglos": [
+   "Neuquén - Plottier"
+  ]
+ },
+ "Río Negro": {
+  "code": "62",
+  "region": "Patagonia",
+  "poverty": 33.0,
+  "survey_pop_k": 88.0,
+  "aglos": [
+   "Viedma - Carmen de Patagones"
+  ]
+ },
+ "Salta": {
+  "code": "66",
+  "region": "Noroeste",
+  "poverty": 29.7,
+  "survey_pop_k": 679.0,
+  "aglos": [
+   "Salta"
+  ]
+ },
+ "San Juan": {
+  "code": "70",
+  "region": "Cuyo",
+  "poverty": 36.8,
+  "survey_pop_k": 563.0,
+  "aglos": [
+   "Gran San Juan"
+  ]
+ },
+ "San Luis": {
+  "code": "74",
+  "region": "Cuyo",
+  "poverty": 35.5,
+  "survey_pop_k": 256.0,
+  "aglos": [
+   "Gran San Luis"
+  ]
+ },
+ "Santa Cruz": {
+  "code": "78",
+  "region": "Patagonia",
+  "poverty": 25.9,
+  "survey_pop_k": 135.0,
+  "aglos": [
+   "Río Gallegos"
+  ]
+ },
+ "Santa Fe": {
+  "code": "82",
+  "region": "Pampeana",
+  "poverty": 27.5,
+  "survey_pop_k": 1926.0,
+  "aglos": [
+   "Gran Rosario",
+   "Gran Santa Fe"
+  ]
+ },
+ "Santiago del Estero": {
+  "code": "86",
+  "region": "Noroeste",
+  "poverty": 38.5,
+  "survey_pop_k": 423.0,
+  "aglos": [
+   "Santiago del Estero - La Banda"
+  ]
+ },
+ "Tierra del Fuego": {
+  "code": "94",
+  "region": "Patagonia",
+  "poverty": 25.9,
+  "survey_pop_k": 185.0,
+  "aglos": [
+   "Ushuaia - Río Grande"
+  ]
+ },
+ "Tucumán": {
+  "code": "90",
+  "region": "Noroeste",
+  "poverty": 27.9,
+  "survey_pop_k": 934.0,
+  "aglos": [
+   "Gran Tucumán - Tafí Viejo"
+  ]
+ }
+}
