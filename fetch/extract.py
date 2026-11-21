@@ -1,6 +1,6 @@
-# Round 12: Uruguay poverty by department - the 2024 report, the yearbook's TUS table (3.9.3) and the ECH microdata page.
-import os, re, urllib.request, time
-OUT = "fetch/out/uy12"; os.makedirs(OUT, exist_ok=True)
+# Round 13: Costa Rica population and pupils by canton (MEP statistics pages and files; Wikipedia's canton list).
+import os, re, urllib.request, urllib.parse, time
+OUT = "fetch/out/cr13"; os.makedirs(OUT, exist_ok=True)
 log = open(f"{OUT}/log.txt", "w")
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)"}
 def get(n, u):
@@ -9,13 +9,18 @@ def get(n, u):
         open(f"{OUT}/{n}", "wb").write(b); log.write(f"== {n} OK {len(b)} {u}\n"); return b
     except Exception as e: log.write(f"== {n} ERR {e} {u}\n")
     finally: time.sleep(2)
-get("uy_pobreza_2024.html", "https://www5.ine.gub.uy/documents/Demograf%C3%ADayEESS/HTML/ECH/Pobreza/2024/Estimacion%20de%20la%20pobreza%20por%20el%20metodo%20de%20ingreso%20anual%202024.html")
-get("uy_3.9.3.xlsx", "https://www5.ine.gub.uy/documents/ANUARIOS/Anuario%202025/3%20-%20ASPECTOS%20SOCIALES/3.9%20Desarrollo%20Social/3.9.3ok.xlsx")
-get("uy_3.9.1.xlsx", "https://www5.ine.gub.uy/documents/ANUARIOS/Anuario%202025/3%20-%20ASPECTOS%20SOCIALES/3.9%20Desarrollo%20Social/3.9.1ok.xlsx")
-for n, u in [("uy_ech_2025.html", "https://www.gub.uy/instituto-nacional-estadistica/datos-y-estadisticas/encuestas/encuesta-continua-hogares-2025"),
-             ("uy_ech_micro.html", "https://www.gub.uy/instituto-nacional-estadistica/datos-y-estadisticas/encuestas/microdatos-ech"),
-             ("uy_ech_list.html", "https://www.gub.uy/instituto-nacional-estadistica/datos-y-estadisticas/encuestas/encuesta-continua-hogares")]:
+get("wiki_es.html", "https://es.wikipedia.org/w/index.php?title=Anexo:Cantones_de_Costa_Rica&action=render")
+get("wiki_en.html", "https://en.wikipedia.org/w/index.php?title=List_of_cantons_of_Costa_Rica&action=render")
+get("mep_cantonales.pdf", "https://www.mep.go.cr/sites/default/files/2024-05/IndicadoresEducativosCantonales20102018.pdf")
+seen = set()
+for n, u in [("mep_est.html", "https://www.mep.go.cr/acerca-del-mep/analisis-estadistico/estadisticas-educativas"),
+             ("mep_censo.html", "https://www.mep.go.cr/acerca-del-mep/analisis-estadistico/censo-escolar"),
+             ("mep_ind.html", "https://mep.go.cr/indicadores-educativos")]:
     b = get(n, u)
-    if b:
-        for l in sorted(set(re.findall(rb'href="([^"]+)"', b))):
-            if re.search(rb"ech|microdat|ECH|\.zip|\.sav|\.csv", l): log.write("   link " + l.decode("utf-8", "replace") + "\n")
+    if not b: continue
+    for l, t in re.findall(rb'href="([^"]+)"[^>]*>([^<]{0,120})', b):
+        s = (l + b" " + t).decode("utf-8", "replace")
+        if re.search(r"\.(xlsx?|csv|pdf|zip)\b", l.decode("utf-8", "replace"), re.I) or re.search(r"matr|cant", s, re.I): log.write("   link " + s + "\n")
+        full = urllib.parse.urljoin(u, l.decode("utf-8", "replace"))
+        if re.search(r"\.(xlsx?|csv)\b", full, re.I) and re.search(r"cant|matr", s, re.I) and full not in seen and len(seen) < 25:
+            seen.add(full); get("dl_%02d_" % len(seen) + re.sub(r"[^A-Za-z0-9._-]", "_", full.rsplit("/", 1)[-1])[-60:], full)
