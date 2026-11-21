@@ -1,0 +1,320 @@
+ZA Buffalo City ->  
+ZA City of Johannesburg ->  
+KE Mombasa -> COUNTY ASSEMBLY OF MOMBASA 0
+ZA City of Ekurhuleni -> City of Ekurhuleni 0
+ZA Mangaung ->  
+KE Kwale ->  
+ZA Albert Luthuli ->  
+ZA Ba-Phalaborwa ->  
+LT Alytaus miesto -> Alytaus miesto savivaldybės administracija 67
+KE Kilifi -> Kilifi County Assembly 0
+ZA Bergrivier ->  
+KE Tana River ->  
+ZA Blouberg ->  
+ZA Bushbuckridge ->  
+LT Birštono -> Birštono savivaldybės taryba 0
+ZA City of Matlosana ->  
+LT Vilniaus miesto ->  
+ZA Dawid Kruiper ->  
+KE Lamu -> Lamu Youth Assembly 1
+ZA City of Cape Town -> City of Cape Town 0
+ZA Dipaleseng ->  
+ZA Dr Beyers Naudé ->  
+LT Druskininkų -> Druskininkų savivaldybės administracija 4
+KE Taita-Taveta -> TAITA TAVETA COUNTY ASSEMBLY 0
+KE Garissa ->  
+KE Wajir ->  
+ZA Drakenstein -> Drakenstein Municipality 1
+ZA eThekwini -> eThekwini Municipality 1
+ZA Elundini ->  
+ZA Abaqulusi ->  
+LT Marijampolės -> Marijampolės savivaldybė 40
+ZA Emalahleni ->  
+ZA Amahlathi ->  
+ZA City of Tshwane -> City Of Tshwane Metropolitan Municipality 0
+ZA Emthanjeni ->  
+ZA Bela-Bela ->  
+KE Mandera -> MANDERA COUNTY ASSEMBLY 4
+ZA Bitou ->  
+ZA Ephraim Mogale ->  
+KE Marsabit ->  
+ZA Gamagara ->  
+ZA Breede Valley ->  
+ZA Great Kei ->  
+ZA Cederberg ->  
+ZA Dannhauser ->  
+KE Isiolo -> County Assembly Of Isiolo 0
+ZA Greater Letaba ->  
+LT Kauno miesto -> Kauno miesto savivaldybė 13
+ZA Dikgatlong ->  
+KE Meru ->  
+ZA Hantam ->  
+KE Tharaka-Nithi ->  
+ZA Dr AB Xuma ->  
+ZA Ingquza Hill ->  
+KE Embu ->  
+ZA Dr Nkosazana Dlamini Zuma ->  
+ZA Inxuba Yethemba ->  
+ZA Elias Motsoaledi ->  
+ZA Johannes Phumani Phungula ->  
+LT Klaipėdos miesto -> Klaipėdos miesto savivaldybė 3
+ZA Emakhazeni ->  
+ZA Kai !Garib ->  
+ZA Nelson Mandela Bay -> Nelson Mandela Bay Municipality 0
+KE Kitui -> Kitui County Assembly 0
+ZA Emfuleni ->  
+ZA Kareeberg ->  
+ZA Alfred Duma ->  
+ZA Enoch Mgijima ->  
+ZA Kgetlengrivier ->  
+ZA Beaufort West ->  
+LT Neringos -> Neringos savivaldybė 33
+ZA Ga-Segonyana ->  
+ZA King Sabata Dalindyebo ->  
+ZA Big Five Hlabisa ->  
+ZA Govan Mbeki ->  
+ZA Kou-Kamma ->  
+ZA Blue Crane Route ->  
+ZA Greater Kokstad ->  
+ZA KwaDukuza ->  
+KE Machakos -> COUNTY ASSEMBLY OF MACHAKOS 0
+ZA Lekwa ->  
+KE Makueni ->  
+LT Palangos -> Palangos miesto savivaldybės administracija 44
+ZA Cape Agulhas -> Cape Agulhas Municipality Live 0
+ZA Lephalale ->  
+ZA Greater Tzaneen -> Greater Tzaneen Municipality 0
+LT Panevėžio miesto ->  
+ZA Collins Chabane ->  
+ZA Madibeng ->  
+ZA Impendle ->  
+ZA Dihlabeng ->  
+ZA Mahikeng ->  
+ZA Intsika Yethu ->  
+ZA Ditsobotla ->  
+ZA Makhuduthamaga ->  
+ZA Joe Morolong ->  
+KE Nyandarua -> Nyandarua County Assembly 0
+ZA Mandeni ->  
+ZA Dr JS Moroka ->  
+ZA Kagisano-Molopo ->  
+KE Nyeri ->  
+ZA Maquassi Hills ->  
+ZA eDumbe ->  
+ZA Kannaland ->  
+KE Kirinyaga ->  
+ZA eMadlangeni ->  
+ZA Kgatelopele ->  
+KE Murang'a ->  
+ZA Matatiele -> Matatiele Municipality Online 0
+ZA !Kheis ->  
+LT Šiaulių miesto -> Šiaulių miesto savivaldybė 0
+KE Kiambu ->  
+ZA Emalahleni -> Emalahleni Local Municipality 0
+ZA Mbhashe ->  
+ZA Kopanong ->  
+LT Visagino ->  
+ZA Endumeni ->  
+ZA Metsimaholo ->  
+ZA Kumkani Mhlontlo ->  
+ZA Langeberg ->  
+KE Turkana -> County Assembly Turkana 0
+ZA Lepelle-Nkumpi ->  
+ZA Mkhondo -> Mkhondo Local Municipality 0
+ZA Fetakgomo Tubatse -> Fetakgomo Tubatse Local Municipality 0
+LT Akmenės -> Akmenės rajono savivaldybė 0
+ZA Letsemeng ->  
+ZA Mogalakwena ->  
+ZA George ->  
+KE West Pokot -> West Pokot County Assembly 0
+ZA Magareng ->  
+ZA Greater Giyani ->  
+KE Samburu ->  
+ZA Makhado ->  
+ZA Greater Taung ->  
+ZA Molemole -> Molemole Municipality 0
+KE Trans-Nzoia ->  
+LT Alytaus rajono -> Alytaus rajono savivaldybė 17
+ZA Mamusa ->  
+ZA Hessequa ->  
+ZA Moses Kotane ->  
+ZA Maphumulo ->  
+ZA Inkosi Langalibalele ->  
+ZA Msinga ->  
+ZA Masilonyana ->  
+KE Uasin Gishu -> Uasin Gishu County Assembly- The Champions 0
+ZA JB Marks ->  
+ZA Mthonjaneni ->  
+ZA Matzikama ->  
+KE Elgeyo-Marakwet ->  
+ZA Jozini ->  
+ZA Nala ->  
+LT Anykščių -> Anykščių rajono savivaldybės administracija 40
+ZA Merafong City ->  
+ZA Ndlambe ->  
+ZA Kamiesberg ->  
+ZA Mkhambathini ->  
+ZA Ngqushwa ->  
+ZA Karoo Hoogland ->  
+ZA Modimolle–Mookgophong ->  
+ZA Nketoana ->  
+ZA Khâi-Ma ->  
+ZA Mohokare ->  
+ZA Nqutu ->  
+ZA Moretele ->  
+LT Biržų -> Biržų rajono savivaldybė 0
+ZA Mpofana ->  
+KE Nandi -> Nandi County Assembly 0
+ZA Okhahlamba -> Okhahlamba Municipality 0
+ZA Msunduzi ->  
+KE Baringo ->  
+ZA Phokwane ->  
+ZA Musina ->  
+ZA Knysna -> Knysna Municipality 0
+LT Varėnos -> Varėnos rajono savivaldybė 2
+KE Laikipia ->  
+ZA Nama Khoi ->  
+ZA Kouga ->  
+ZA Newcastle ->  
+ZA Polokwane -> Polokwane Municipality 0
+ZA Nkandla ->  
+ZA Ramotshere Moiloa ->  
+ZA Nongoma ->  
+ZA Ray Nkonyeni ->  
+LT Vilkaviškio -> Vilkaviškio rajono savivaldybė 41
+KE Nakuru -> COUNTY ASSEMBLY OF NAKURU 0
+ZA Nyandeni ->  
+ZA Laingsburg -> Laingsburg City (City of Laingsburg) 0
+ZA Richmond ->  
+KE Narok ->  
+ZA Overstrand ->  
+ZA Lekwa-Teemane ->  
+ZA Sakhisizwe ->  
+ZA Pixley ka Seme ->  
+ZA Lesedi ->  
+ZA Setsoto ->  
+ZA Prince Albert ->  
+ZA Mafube ->  
+ZA Sol Plaatje ->  
+KE Kajiado -> KAJIADO COUNTY ASSEMBLY 0
+LT Vilniaus rajono -> Vilniaus rajono savivaldybė 47
+ZA Ratlou ->  
+ZA Makana ->  
+ZA Sundays River Valley ->  
+ZA Maluti-a-Phofung ->  
+ZA Renosterberg ->  
+ZA Thaba Chweu ->  
+ZA Rustenburg ->  
+ZA Mantsopa ->  
+ZA Thembelihle ->  
+ZA Maruleng ->  
+ZA Senqu ->  
+ZA Tokologo ->  
+KE Kericho -> County Assembly of Kericho 1
+ZA Matjhabeng ->  
+LT Elektrėnų -> Elektrėnų savivaldybės administracija 0
+ZA Siyathemba ->  
+ZA Tswelopele ->  
+ZA Mbombela ->  
+ZA Steve Tshwete ->  
+ZA Umdoni ->  
+ZA Midvaal ->  
+ZA Swellendam ->  
+ZA uMhlathuze ->  
+KE Bomet -> COUNTY ASSEMBLY OF BOMET 0
+LT Zarasų -> Zarasų rajono savivaldybė 0
+ZA Mnquma ->  
+ZA uMshwathi ->  
+ZA Mogale City ->  
+ZA Umvoti ->  
+ZA Theewaterskloof -> Theewaterskloof Municipality 0
+ZA Moqhaka ->  
+ZA Umzumbe ->  
+KE Kakamega -> County Assembly of Kakamega 1
+ZA Thulamela ->  
+ZA Mossel Bay ->  
+LT Ignalinos -> Ignalinos Savivaldybe 5
+ZA Walter Sisulu ->  
+ZA Tswaing ->  
+KE Vihiga ->  
+ZA Msukaligwa ->  
+ZA Ulundi ->  
+KE Bungoma ->  
+ZA Mtubatuba ->  
+ZA uMhlabuyalingana ->  
+KE Busia ->  
+ZA Naledi ->  
+KE Siaya ->  
+ZA uMngeni ->  
+LT Jonavos -> Jonavos rajono savivaldybė 22
+ZA Ndwedwe ->  
+ZA uMuziwabantu ->  
+KE Kisumu ->  
+ZA Ngwathe ->  
+ZA Umzimvubu ->  
+KE Homa Bay ->  
+ZA Nkomazi ->  
+KE Migori ->  
+ZA Victor Khanye ->  
+ZA Ntabankulu ->  
+LT Joniškio -> Joniškio rajono savivaldybė 37
+KE Kisii ->  
+ZA Witzenberg ->  
+KE Nyamira ->  
+ZA Oudtshoorn -> Oudtshoorn Municipality 0
+ZA Phumelela ->  
+LT Kalvarijos -> Kalvarijos savivaldybės tarybos posėdžiai 22
+KE Nairobi -> NAIROBI CITY COUNTY ASSEMBLY 0
+ZA Port St Johns ->  
+ZA Rand West City ->  
+ZA Raymond Mhlaba ->  
+ZA Richtersveld ->  
+LT Kaišiadorių -> Kaišiadorių rajono savivaldybė 8
+LT Kauno rajono ->  
+ZA Saldanha Bay -> Saldanha Bay Municipality 0
+ZA Siyancuma ->  
+ZA Stellenbosch ->  
+ZA Swartland ->  
+LT Kėdainių -> Kėdainių rajono savivaldybė 18
+ZA Thabazimbi ->  
+ZA Thembisile Hani ->  
+ZA Tsantsabane ->  
+ZA Ubuntu ->  
+LT Kelmės -> Kelmės rajono savivaldybė 33
+ZA uMfolozi ->  
+ZA uMlalazi ->  
+ZA Umsobomvu ->  
+ZA Umzimkhulu ->  
+ZA uPhongolo ->  
+LT Klaipėdos rajono -> Klaipėdos rajono savivaldybė 50
+ZA Winnie Madikizela-Mandela ->  
+LT Kretingos -> Kretingos rajono savivaldybė 63
+LT Kupiškio -> Kupiškio rajono savivaldybė 31
+LT Kazlų Rūdos -> Kazlų Rūdos savivaldybė 3
+LT Lazdijų -> Lazdijų rajono savivaldybė 35
+LT Mažeikių -> Mažeikių rajono savivaldybė 17
+LT Molėtų -> Molėtų rajono savivaldybė 6
+LT Pagėgių -> Pagėgių savivaldybė 0
+LT Pakruojo -> Pakruojo rajono savivaldybė 40
+LT Panevėžio rajono -> Panevėžio rajono savivaldybė 37
+LT Pasvalio ->  
+LT Plungės -> Plungės rajono savivaldybė 70
+LT Prienų ->  
+LT Radviliškio -> Radviliškio rajono savivaldybė 41
+LT Raseinių -> Raseinių rajono savivaldybė 40
+LT Rokiškio -> Rokiškio rajono savivaldybė 5
+LT Rietavo -> Rietavo savivaldybės administracija Rietavas 55
+LT Skuodo -> Skuodo rajono savivaldybė 39
+LT Tauragės -> Tauragės rajono savivaldybė 37
+LT Telšių -> Telšių rajono savivaldybė 39
+LT Trakų -> Trakų rajono savivaldybė 35
+LT Ukmergės -> Ukmergės rajono savivaldybė 5
+LT Utenos -> Utenos rajono savivaldybė 6
+LT Šakių -> Šakių rajono savivaldybė 39
+LT Šalčininkų -> Šalčininkų rajono savivaldybė 2
+LT Švenčionių ->  
+LT Šilalės -> Šilalės rajono savivaldybė 45
+LT Šilutės -> Šilutės rajono savivaldybė 0
+LT Širvintų -> Širvintų rajono savivaldybė 0
+LT Šiaulių rajono -> Šiaulių rajono savivaldybės administracija 32
+LT Jurbarko -> Jurbarko rajono savivaldybė 0
