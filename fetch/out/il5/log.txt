@@ -1,0 +1,17 @@
+== il_residents_age_current.json OK 516089 https://data.gov.il/api/3/action/datastore_search?limit=32000&resource_id=64edd0ee-3d5d-43ce-8562-c336c24dbc1f
+== il_residents_age_a5e7.json OK 571112 https://data.gov.il/api/3/action/datastore_search?limit=32000&resource_id=a5e7080d-3c37-49c2-8cd0-cb2724809216
+== il_residents_age_578c.json OK 571120 https://data.gov.il/api/3/action/datastore_search?limit=32000&resource_id=578c8312-0a87-4eba-a5d0-be8734e9d72f
+== il_residents_age_16f0.json OK 571142 https://data.gov.il/api/3/action/datastore_search?limit=32000&resource_id=16f0eeb0-31a0-4edb-bc9d-c9477133c740
+== il_young_residents.json OK 362086 https://data.gov.il/api/3/action/datastore_search?limit=32000&resource_id=b8112650-a2f8-41f2-9c05-a9b9483fb4c0
+== il_localities.json OK 367334 https://data.gov.il/api/3/action/datastore_search?limit=32000&resource_id=5c78e9fa-c2e2-4771-93ff-7f400a12f7ba
+== il_localities_en.json OK 332813 https://data.gov.il/api/3/action/datastore_search?limit=32000&resource_id=8f714b6f-c35c-4b40-a0e7-547b675eee0e
+== il_census22_pop_households.json OK 262606 https://data.gov.il/api/3/action/datastore_search?limit=32000&resource_id=38207cf8-afe2-48ed-a3b0-c8f70c796015
+== il_census22_age.json OK 81282 https://data.gov.il/api/3/action/datastore_search?limit=32000&resource_id=5474c592-3faa-4298-8783-a8da9acc040f
+== il_census22_selected.json OK 4472857 https://data.gov.il/api/3/action/datastore_search?limit=32000&resource_id=9a9e085f-3bc8-41df-b15f-be0daaf99e30
+== il_ckan_475848.json OK 144934 https://data.gov.il/api/3/action/package_search?rows=100&q=%D7%9E%D7%A7%D7%91%D7%9C%D7%99%20%D7%92%D7%9E%D7%9C%D7%90%D7%95%D7%AA%20%D7%9C%D7%A4%D7%99%20%D7%99%D7%99%D7%A9%D7%95%D7%91
+== il_ckan_777408.json OK 29498 https://data.gov.il/api/3/action/package_search?rows=100&q=%D7%94%D7%91%D7%98%D7%97%D7%AA%20%D7%94%D7%9B%D7%A0%D7%A1%D7%94
+== il_ckan_879651.json OK 201289 https://data.gov.il/api/3/action/package_search?rows=100&q=%D7%91%D7%99%D7%98%D7%95%D7%97%20%D7%9C%D7%90%D7%95%D7%9E%D7%99%20%D7%99%D7%99%D7%A9%D7%95%D7%91
+== il_ckan_488718.json OK 370779 https://data.gov.il/api/3/action/package_search?rows=100&q=%D7%A8%D7%A9%D7%95%D7%99%D7%95%D7%AA%20%D7%9E%D7%A7%D7%95%D7%9E%D7%99%D7%95%D7%AA
+== il_ckan_313209.json OK 160682 https://data.gov.il/api/3/action/package_search?rows=100&q=%D7%AA%D7%9C%D7%9E%D7%99%D7%93%D7%99%D7%9D%20%D7%9C%D7%A4%D7%99%20%D7%A8%D7%A9%D7%95%D7%AA
+== il_org_edu_full.json OK 122750 https://data.gov.il/api/3/action/package_search?rows=100&fq=organization:ministry_of_education
+== il_org_nii.json OK 219997 https://data.gov.il/api/3/action/package_search?rows=200&fq=organization:social_security
