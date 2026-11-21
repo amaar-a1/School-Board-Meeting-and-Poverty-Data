@@ -1,0 +1,77 @@
+== ke_poverty_2022.pdf curl 200 4301681  https://www.knbs.or.ke/wp-content/uploads/2024/10/The-Kenya-Poverty-Report-2022.pdf
+== ke_child_poverty_2025.pdf curl 200 2411108  https://www.knbs.or.ke/wp-content/uploads/2025/08/Brighter-Futures-Breaking-Cycles-of-Poverty-for-Kenyas-Children-2025-Report1.pdf
+== ke_abstract_2025.pdf curl 200 27996232  https://www.knbs.or.ke/wp-content/uploads/2025/11/2025-Statistical-Abstract.pdf
+== ke_vol1.html curl 200 308981  https://www.knbs.or.ke/?wpdmpro=2019-kenya-population-and-housing-census-volume-i-population-by-county-and-sub-county
+   dl []
+== ke_vol3.html curl 200 309010  https://www.knbs.or.ke/?wpdmpro=2019-kenya-population-and-housing-census-volume-iii-distribution-of-population-by-age-sex-and-administrative-units
+   dl []
+== kr_kess_post.html OK 58534 https://kess.kedi.re.kr/post/6731854?itemCode=04&menuId=m_02_04_03_01
+   kr link /userfile/6883061;jsessionid=WvDb10eAvsYBWTyI7okRkla17pn2I34ZDnM3npFMhJkX17aKj3CeDiTVO18Zsh31
+== ge_edu.html OK 100612 https://www.geostat.ge/en/modules/categories/59/general-education
+   ge xlsx https://geostat.ge/media/75485/01_Number-of-General-Education-Schools-and-Pupils-in-them.xlsx
+== ge_01_Number_of_General_Education_Schools_and_Pupils_in_them.xlsx OK 12977 https://geostat.ge/media/75485/01_Number-of-General-Education-Schools-and-Pupils-in-them.xlsx
+   ge xlsx https://geostat.ge/media/75486/02_Number-of-schools-by-stages-and-regions.xlsx
+== ge_02_Number_of_schools_by_stages_and_regions.xlsx OK 37957 https://geostat.ge/media/75486/02_Number-of-schools-by-stages-and-regions.xlsx
+   ge xlsx https://geostat.ge/media/75487/04_Number-of-general-Education-School-Pupils-by-grades-and-ages.XLSX
+== ge_04_Number_of_general_Education_School_Pupils_by_grades_and_ages.XLSX OK 16199 https://geostat.ge/media/75487/04_Number-of-general-Education-School-Pupils-by-grades-and-ages.XLSX
+   ge xlsx https://geostat.ge/media/75488/05_Distribution-of-Public-and-Private-General-School--Pupils-by-Level-of-Education-and-Grades.xlsx
+== ge_d_Private_General_School__Pupils_by_Level_of_Education_and_Grades.xlsx OK 24917 https://geostat.ge/media/75488/05_Distribution-of-Public-and-Private-General-School--Pupils-by-Level-of-Education-and-Grades.xlsx
+   ge xlsx https://geostat.ge/media/75490/08_suspended-or-terminated-out-studying.xlsx
+   ge xlsx https://geostat.ge/media/75491/10_ICT.xlsx
+   ge xlsx https://geostat.ge/media/75493/12_Graduation.xlsx
+   ge xlsx https://geostat.ge/media/75494/13_Social-status.xlsx
+   ge xlsx https://geostat.ge/media/82622/Net-and-Gross-Enrollment.xlsx
+   ge xlsx https://geostat.ge/media/82692/proficiency-level_EN.xlsx
+   ge xlsx https://geostat.ge/media/82976/06_Number-of-General-Education-School-Teachers.xlsx
+   ge xlsx https://geostat.ge/media/82978/11_Number-of-schools_Pupils_Teachers-by-Municipalities.xlsx
+== ge_11_Number_of_schools_Pupils_Teachers_by_Municipalities.xlsx OK 50498 https://geostat.ge/media/82978/11_Number-of-schools_Pupils_Teachers-by-Municipalities.xlsx
+   ge xlsx https://geostat.ge/media/83261/14_transfer-from_to-grade.xlsx
+   ge xlsx https://geostat.ge/media/83263/15_From-school-to-VET.xlsx
+   ge xlsx https://geostat.ge/media/83265/16_VET_Disabled.xlsx
+== ge_pop.html OK 96091 https://www.geostat.ge/en/modules/categories/41/population
+   ge xlsx https://geostat.ge/media/83943/01-population-by-self-governed-unit.xlsx
+== ge_01_population_by_self_governed_unit.xlsx OK 34538 https://geostat.ge/media/83943/01-population-by-self-governed-unit.xlsx
+   ge xlsx https://geostat.ge/media/83944/1-2-population-by-regions-and-urban-rural.xlsx
+== ge_1_2_population_by_regions_and_urban_rural.xlsx OK 24774 https://geostat.ge/media/83944/1-2-population-by-regions-and-urban-rural.xlsx
+   ge xlsx https://geostat.ge/media/83946/02-population-by-age-groups-and-sex.xlsx
+== ge_02_population_by_age_groups_and_sex.xlsx OK 29856 https://geostat.ge/media/83946/02-population-by-age-groups-and-sex.xlsx
+   ge xlsx https://geostat.ge/media/83947/02-1-population-by-age-and-sex.xlsx
+== ge_02_1_population_by_age_and_sex.xlsx OK 32857 https://geostat.ge/media/83947/02-1-population-by-age-and-sex.xlsx
+   ge xlsx https://geostat.ge/media/83948/03-density-by-regions.xlsx
+== ge_03_density_by_regions.xlsx OK 13600 https://geostat.ge/media/83948/03-density-by-regions.xlsx
+   ge xlsx https://geostat.ge/media/83949/04-mid-year-population-by-self-governed-units.xlsx
+== ge_04_mid_year_population_by_self_governed_units.xlsx OK 35334 https://geostat.ge/media/83949/04-mid-year-population-by-self-governed-units.xlsx
+   ge xlsx https://geostat.ge/media/83950/05-mid-year-population-by-age-and-sex.xlsx
+== ge_05_mid_year_population_by_age_and_sex.xlsx OK 30098 https://geostat.ge/media/83950/05-mid-year-population-by-age-and-sex.xlsx
+   ge xlsx https://geostat.ge/media/83951/06-median-age-by-sex.xlsx
+   ge xlsx https://geostat.ge/media/83952/08-age-dependency-ratios.xlsx
+   ge xlsx https://geostat.ge/media/83953/07-percentage-of-population-at-aged-65-and-over-by-sex.xlsx
+== ge_07_percentage_of_population_at_aged_65_and_over_by_sex.xlsx OK 10962 https://geostat.ge/media/83953/07-percentage-of-population-at-aged-65-and-over-by-sex.xlsx
+   ge xlsx https://geostat.ge/media/84000/1-3-population-by-cities-and-boroughs.xlsx
+== ge_1_3_population_by_cities_and_boroughs.xlsx OK 54081 https://geostat.ge/media/84000/1-3-population-by-cities-and-boroughs.xlsx
+== ge_soc.html OK 67015 https://www.geostat.ge/en/modules/categories/53/social-protection
+== ge_soc2.html OK 122632 https://www.geostat.ge/en/modules/categories/54/social-protection
+   ge xlsx https://geostat.ge/media/81716/Main-characteristics-of-public-health.xlsx
+   ge xlsx https://geostat.ge/media/81717/Number-of-physicians-by-occupations.xlsx
+   ge xlsx https://geostat.ge/media/81718/Number-of-paramedical-personnel-by-basic-specialities.xlsx
+   ge xlsx https://geostat.ge/media/81719/Abortions.xlsx
+   ge xlsx https://geostat.ge/media/81720/Morbidity-with-acute-and-chronic-diseases-by-main-disease-groups.xlsx
+   ge xlsx https://geostat.ge/media/81721/Morbidity-of-children-%280-14-years-old%29-with-acute-and-chronic-diseases.xlsx
+   ge xlsx https://geostat.ge/media/81722/Morbidity-caused-by-some-infectious-disease.xlsx
+   ge xlsx https://geostat.ge/media/81723/Morbidity-of-patients-with-syphilis-and-gonorrheae.xlsx
+   ge xlsx https://geostat.ge/media/81724/Morbidity-of-patients-with-tuberculosis.xlsx
+   ge xlsx https://geostat.ge/media/81725/Morbidity-of-patients-with-HIV-AIDS.xlsx
+   ge xlsx https://geostat.ge/media/81726/Emergent-Medical-Care.xlsx
+   ge xlsx https://geostat.ge/media/81727/New-Cases-of-Anemia.xlsx
+   ge xlsx https://geostat.ge/media/81728/New-Cases-of-Diabetes-Mellitus.xlsx
+   ge xlsx https://geostat.ge/media/81729/circulatory-system.xlsx
+   ge xlsx https://geostat.ge/media/81730/respiratory-system.xlsx
+   ge xlsx https://geostat.ge/media/81733/16_Number-of-persons_medicines.xlsx
+   ge xlsx https://geostat.ge/media/81734/17_The-cost-of-medicines.xlsx
+   ge xlsx https://geostat.ge/media/81735/18_The-number-of-beneficiaries-with-disabilities.xlsx
+   ge xlsx https://geostat.ge/media/81736/19_Number-of-cases-services-of-persons-with-disabilities.xlsx
+   ge xlsx https://geostat.ge/media/81737/20_Number-of-cases_services-of-persons-with-disabilities-by-Regions.xlsx
+== ge__Number_of_cases_services_of_persons_with_disabilities_by_Regions.xlsx OK 14202 https://geostat.ge/media/81737/20_Number-of-cases_services-of-persons-with-disabilities-by-Regions.xlsx
+   ge xlsx https://geostat.ge/media/81747/Number-of-Beneficiaries-Screened-for-Malignant-Neoplasms.xlsx
+   ge xlsx https://geostat.ge/media/82618/New-Cases-of-Malignant-neoplasm.XLSX
+== ge_reg.html OK 68634 https://www.geostat.ge/en/modules/categories/27/regional-statistics
