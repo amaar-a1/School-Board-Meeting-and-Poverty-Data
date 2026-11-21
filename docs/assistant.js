@@ -14,7 +14,7 @@
   };
   // The Nordic countries and the Netherlands share one layout (r._eu is the country's name).
   const EU_POV = "Percentage of Children in Low Income";
-  const EU_RE = /\b(norw\w*|swed\w*|finn?\w*|denmark|danish|netherlands|dutch|holland|german\w*|iceland\w*|swiss|switzerland|chile\w*|colombia\w*|mexic\w*|brazil\w*|brasil\w*|peru\w*|spain|spanish|españa|france|french|ecuador\w*|ital\w*|new zealand|islands?|island countries|microstates?|latvi\w*|eston\w*|argentin\w*|israel\w*|sloven\w*|taiwan\w*|urugua\w*|costa ?ric\w*|luxembourg|liechtenstein|monaco|andorra|san marino)\b/i;
+  const EU_RE = /\b(norw\w*|swed\w*|finn?\w*|denmark|danish|netherlands|dutch|holland|german\w*|iceland\w*|swiss|switzerland|chile\w*|colombia\w*|mexic\w*|brazil\w*|brasil\w*|peru\w*|spain|spanish|españa|france|french|ecuador\w*|ital\w*|new zealand|islands?|island countries|microstates?|latvi\w*|eston\w*|argentin\w*|israel\w*|sloven\w*|taiwan\w*|urugua\w*|costa ?ric\w*|philippin\w*|filipin\w*|croat\w*|hrvatsk\w*|austral\w*|belgi\w*|portug\w*|japan\w*|poland|polish|luxembourg|liechtenstein|monaco|andorra|san marino)\b/i;
   const EU_OF = (q) => { const m = (q.match(EU_RE) || [])[1]; if (!m) return null; const w = m.toLowerCase();
     return w.startsWith("norw") ? "Norway" : w.startsWith("swed") ? "Sweden" : w.startsWith("fin") ? "Finland" : /^(denmark|danish)$/.test(w) ? "Denmark" : w.startsWith("german") ? "Germany" : w.startsWith("iceland") ? "Iceland" : /^(swiss|switzerland)$/.test(w) ? "Switzerland" : w.startsWith("chile") ? "Chile" : w.startsWith("colombia") ? "Colombia" : w.startsWith("mexic") ? "Mexico" : /^bra[sz]il/.test(w) ? "Brazil" : w.startsWith("peru") ? "Peru" : /^(france|french)$/.test(w) ? "France" : w.startsWith("ecuador") ? "Ecuador" : /^(philippin\w*|filipin\w*)$/.test(w) ? "Philippines" : /^(croat\w*|hrvatsk\w*)$/.test(w) ? "Croatia" : /^latvi\w*$/.test(w) ? "Latvia" : /^eston\w*$/.test(w) ? "Estonia" : /^argentin\w*$/.test(w) ? "Argentina" : /^israel\w*$/.test(w) ? "Israel" : /^sloven\w*$/.test(w) ? "Slovenia" : /^taiwan\w*$/.test(w) ? "Taiwan" : /^urugua\w*$/.test(w) ? "Uruguay" : /^costa ?ric\w*$/.test(w) ? "Costa Rica" : /^(austral\w*)$/.test(w) ? "Australia" : /^(belgi\w*)$/.test(w) ? "Belgium" : /^(portug\w*)$/.test(w) ? "Portugal" : /^(japan\w*)$/.test(w) ? "Japan" : /^(pol\w*)$/.test(w) ? "Poland" : /^(ital\w*)$/.test(w) ? "Italy" : /^(spain|spanish|españa)$/.test(w) ? "Spain" : w === "new zealand" ? "New Zealand" : /^(island|micro|luxem|liech|monaco|andorra|san marino)/.test(w) ? "Islands and microstates" : "Netherlands"; };
   const val = (r, m) => num(r[r._eu ? (m.col === POV ? r._pov : m.col === "Children Ages 5-17" ? r._kids : m.col) : r._ca && m.caCol ? m.caCol : r._uk && m.ukCol ? m.ukCol : r._ie && m.col === POV ? "Poverty rate (region, all ages)" : r._fr && m.col === POV ? "Unemployment rate (stand-in for poverty)" : m.col]);
@@ -51,7 +51,7 @@
       if (ds.country && ds.groups) Object.entries(ds.groups.names).forEach(([k, n]) => { states[`${ds.country}:${k}`] = n; });
       ds.rows.forEach((r) => all.push({ ...r, _ca: ds.country === "CA", _uk: ds.country === "UK", _country: ds.country,
         _group: ds.groups ? r[ds.groups.column] : "", _place: r.State || r.Territory || r.Province || r.Nation || r.Region || (ds.simple ? ds.name : ""),
-        _terr: !ds.country && !r.State, _fr: ds.country === "FR", _ie: ds.country === "IE", _eu: ds.simple ? ds.name : "", _pov: ds.simple ? ds.simple.pov : "", _kids: ds.simple ? ds.simple.children : "" }));
+        _terr: !ds.country && !r.State, _fr: ds.country === "FR", _ie: ds.country === "IE", _eu: ds.simple ? ds.name : "", _unit: ds.simple ? (ds.recordLabel || "").toLowerCase() : "", _pov: ds.simple ? ds.simple.pov : "", _kids: ds.simple ? ds.simple.children : "" }));
     });
     return true;
   }
@@ -59,7 +59,7 @@
   // ---- understanding the question -----------------------------------------------------------
   const GENERIC = new Set(["school", "schools", "district", "districts", "public", "independent", "isd", "cisd", "unified",
     "consolidated", "community", "unit", "the", "of", "city", "county", "department", "education", "local", "elementary"]);
-  const words = (s) => s.toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter(Boolean);
+  const words = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter(Boolean);
   // Distinctive name words, without generic words and codes like "R-XII" or "No. 5".
   const core = (name) => words(name.replace(/independent school district/i, "isd"))
     .filter((w) => !GENERIC.has(w) && !/^(\d+|[ivxlc]+|[a-z]|no)$/.test(w));
@@ -120,7 +120,7 @@
     else if (EU_OF(q) && !/virgin|mariana|samoa|guam|puerto/i.test(q)) { const c = EU_OF(q); rows = all.filter((r) => r._eu === c); label = c === "Netherlands" ? "the Netherlands" : c === "Islands and microstates" ? "islands and microstates" : c; }
     else if (/\bnordic|scandinavi/i.test(q)) { rows = all.filter((r) => r._eu && r._eu !== "Netherlands"); label = "the Nordic countries"; }
     else rows = all.filter((r) => !r._terr && !r._ca && !r._fr && !r._uk && !r._ie && !r._eu);
-    const unit = rows.length && rows.every((r) => r._eu === "Islands and microstates") ? "places" : rows.length && rows.every((r) => r._eu === "New Zealand") ? "areas" : rows.length && rows.every((r) => r._eu === "Germany") ? "districts" : rows.length && rows.every((r) => r._eu === "Switzerland") ? "cantons" : rows.length && rows.every((r) => r._eu === "Chile") ? "comunas" : rows.length && rows.every((r) => r._eu) ? "municipalities" : rows.length && rows.every((r) => r._ca || r._ie) ? "boards" : rows.length && rows.every((r) => r._uk) ? "councils" : "districts";
+    const unit = rows.length && rows.every((r) => r._eu === "Islands and microstates") ? "places" : rows.length && rows.every((r) => r._eu === "New Zealand") ? "areas" : rows.length && rows.every((r) => r._eu === "Germany") ? "districts" : rows.length && rows.every((r) => r._eu === "Switzerland") ? "cantons" : rows.length && rows.every((r) => r._eu === "Chile") ? "comunas" : rows.length && rows.every((r) => r._eu) ? (rows.every((r) => r._unit && r._unit === rows[0]._unit) ? rows[0]._unit : "municipalities") : rows.length && rows.every((r) => r._ca || r._ie) ? "boards" : rows.length && rows.every((r) => r._uk) ? "councils" : "districts";
     const locale = findLocale(q);
     if (locale && unit === "districts") { rows = rows.filter((r) => r.Locale === locale); label = `${locale.toLowerCase()} districts in ${label}`; }
     else label = `${unit} in ${label}`;
@@ -183,9 +183,11 @@
     const { rows, label } = scopeRows(stateList, q);
     const list = rows.filter((r) => !isNaN(val(r, m)))
       .sort((a, b) => (val(a, m) - val(b, m)) * (low ? 1 : -1)).slice(0, n);
-    const mLabel = rows.length && rows[0]._eu === "Islands and microstates" && metricKey === "poverty" ? "poverty rate (or stand-in)" : rows.length && (rows[0]._eu === "Chile" || rows[0]._eu === "Colombia" || rows[0]._eu === "Mexico" || rows[0]._eu === "Brazil" || rows[0]._eu === "Peru" || rows[0]._eu === "France" || rows[0]._eu === "Ecuador" || rows[0]._eu === "Italy" || rows[0]._eu === "Japan" || rows[0]._eu === "Portugal" || rows[0]._eu === "Belgium" || rows[0]._eu === "Australia" || rows[0]._eu === "Croatia" || rows[0]._eu === "Estonia" || rows[0]._eu === "Argentina" || rows[0]._eu === "Israel" || rows[0]._eu === "Slovenia" || rows[0]._eu === "Taiwan" || rows[0]._eu === "Uruguay" || rows[0]._eu === "Costa Rica" || rows[0]._eu === "Philippines") && metricKey === "poverty" ? "poverty rate (all ages)" : rows.length && rows[0]._eu && metricKey === "poverty" ? "child low-income rate (each country's own measure)" : rows.length && rows[0]._ca && m.caLabel ? m.caLabel : rows.length && rows[0]._ie && metricKey === "poverty" ? "poverty rate (all ages, each board's region)" : rows.length && rows[0]._fr && metricKey === "poverty" ? "unemployment rate (stand-in for poverty)" : m.label;
+    let mLabel = rows.length && rows[0]._eu === "Islands and microstates" && metricKey === "poverty" ? "poverty rate (or stand-in)" : rows.length && (rows[0]._eu === "Chile" || rows[0]._eu === "Colombia" || rows[0]._eu === "Mexico" || rows[0]._eu === "Brazil" || rows[0]._eu === "Peru" || rows[0]._eu === "France" || rows[0]._eu === "Ecuador" || rows[0]._eu === "Italy" || rows[0]._eu === "Japan" || rows[0]._eu === "Portugal" || rows[0]._eu === "Belgium" || rows[0]._eu === "Australia" || rows[0]._eu === "Croatia" || rows[0]._eu === "Estonia" || rows[0]._eu === "Argentina" || rows[0]._eu === "Israel" || rows[0]._eu === "Slovenia" || rows[0]._eu === "Taiwan" || rows[0]._eu === "Uruguay" || rows[0]._eu === "Costa Rica" || rows[0]._eu === "Philippines") && metricKey === "poverty" ? "poverty rate (all ages)" : rows.length && rows[0]._eu && metricKey === "poverty" ? "child low-income rate (each country's own measure)" : rows.length && rows[0]._ca && m.caLabel ? m.caLabel : rows.length && rows[0]._ie && metricKey === "poverty" ? "poverty rate (all ages, each board's region)" : rows.length && rows[0]._fr && metricKey === "poverty" ? "unemployment rate (stand-in for poverty)" : m.label;
+    const eu = rows.length > 0 && rows.every((r) => r._eu);
+    if (eu && metricKey === "meetings") mLabel = "meetings found";
     if (!list.length) return `I couldn't find any ${esc(label)} with a ${mLabel}${rows.some((r) => r._ca) && metricKey === "enrollment" ? " (a few Canadian boards have no enrollment figure)" : ""}.`;
-    if (metricKey === "meetings" && !low && num(list[0][MEET]) === 0) return `None of the ${esc(label)} have available board meetings on record.`;
+    if (metricKey === "meetings" && !low && num(list[0][MEET]) === 0) return `None of the ${esc(label)} have ${eu ? "meetings found" : "available board meetings on record"}.`;
     return `<p>${low ? "Lowest" : "Highest"} ${mLabel} among ${esc(label)}:</p><ol>` +
       list.map((r) => `<li>${esc(r.District)}${stateList.length === 1 ? "" : `, ${esc(r._place)}`}: ${m.fmt(val(r, m))}</li>`).join("") + "</ol>";
   }
@@ -217,13 +219,13 @@
 
   function count(q, stateList) {
     const { rows, label } = scopeRows(stateList, q);
-    const unit = label.startsWith("boards") ? "board" : "district";
+    const unit = label.startsWith("boards") ? "board" : "district", eu = rows.length > 0 && rows.every((r) => r._eu);
     if (/meeting/i.test(q)) {
       const w = rows.filter((r) => num(r[MEET]) > 0).length;
       const without = /\b(no|without|none|zero)\b/i.test(q);
       return without
-        ? `${plural(rows.length - w, unit)} of ${rows.length.toLocaleString()} ${esc(label)} have no available board meetings on record.`
-        : `${plural(w, unit)} of ${rows.length.toLocaleString()} ${esc(label)} have available board meetings (${pct((100 * w) / Math.max(rows.length, 1))}).`;
+        ? `${(rows.length - w).toLocaleString()} of ${rows.length.toLocaleString()} ${esc(label)} have no ${eu ? "meetings found" : "available board meetings on record"}.`
+        : `${w.toLocaleString()} of ${rows.length.toLocaleString()} ${esc(label)} have ${eu ? "meetings found" : "available board meetings"} (${pct((100 * w) / Math.max(rows.length, 1))}).`;
     }
     const over = q.match(/(?:over|above|more than|at least)\s*(\d+)\s*%/i), under = q.match(/(?:under|below|less than)\s*(\d+)\s*%/i);
     if (over || under) {
@@ -304,11 +306,18 @@
     const metric = findMetric(q);
     if (/\bhow many\b|\bnumber of\b|\bcount\b/.test(s)) return count(q, stateList);
     if (/\b(highest|most|top|largest|biggest|lowest|least|fewest|smallest|bottom|rank)\b/.test(s)) return ranking(q, metric || "poverty", stateList);
-    const matches = findDistricts(q, stateList);
+    const country = !stateList.length && EU_OF(q) && !/virgin|mariana|samoa|guam|puerto/i.test(q) ? EU_OF(q) : "";
+    // With a country named, look for places in the rest of the question ("Santa Ana in Costa Rica" isn't Brazil's Costa Rica).
+    let matches = country ? findDistricts(q.replace(EU_RE, " "), stateList) : findDistricts(q, stateList);
+    if (country) {
+      if (!matches.length) return overview(stateList, q);
+      const inIt = matches.filter((r) => r._eu === country);
+      if (inIt.length) matches = inIt;
+    }
     if (matches.length === 1) return districtCard(matches[0]);
     if (matches.length > 1) {
       const top = matches.sort((a, b) => (num(b.Enrollment) || 0) - (num(a.Enrollment) || 0));
-      return `<p>I found ${matches.length} districts with that name. Add the state to narrow it down, e.g. “${esc(top[0].District.split(" ")[0])} in ${esc(states[top[0]._place] || top[0]._place)}”.</p>` +
+      return `<p>I found ${matches.length} districts with that name. Add the state to narrow it down, e.g. “${esc(top[0].District.replace(/\s*\(.*\)$/, ""))} in ${esc(states[top[0]._place] || top[0]._place)}”.</p>` +
         top.slice(0, 3).map(districtCard).join("") + (matches.length > 3 ? `<p class="ask-note">…and ${matches.length - 3} more.</p>` : "");
     }
     if (/\baverage|\bmean|\btypical|\boverall|\bsummary|\bhow (is|are|does)/.test(s) || stateList.length === 1 || /territor/.test(s)) return overview(stateList, q);
