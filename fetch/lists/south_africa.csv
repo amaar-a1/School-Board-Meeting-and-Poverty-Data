@@ -1,0 +1,214 @@
+District,District ID,Region
+Buffalo City,ZAF-BUF,Eastern Cape
+City of Cape Town,ZAF-CPT,Western Cape
+City of Ekurhuleni,ZAF-EKU,Gauteng
+City of Johannesburg,ZAF-JHB,Gauteng
+City of Tshwane,ZAF-TSH,Gauteng
+eThekwini,ZAF-ETH,KwaZulu-Natal
+Mangaung,ZAF-MAN,Free State
+Nelson Mandela Bay,ZAF-NMA,Eastern Cape
+Abaqulusi,ZAF-KZN263,KwaZulu-Natal
+Albert Luthuli,ZAF-MP301,Mpumalanga
+Alfred Duma,ZAF-KZN238,KwaZulu-Natal
+Amahlathi,ZAF-EC124,Eastern Cape
+Ba-Phalaborwa,ZAF-LIM334,Limpopo
+Beaufort West,ZAF-WC053,Western Cape
+Bela-Bela,ZAF-LIM366,Limpopo
+Bergrivier,ZAF-WC013,Western Cape
+Big Five Hlabisa,ZAF-KZN276,KwaZulu-Natal
+Bitou,ZAF-WC047,Western Cape
+Blouberg,ZAF-LIM351,Limpopo
+Blue Crane Route,ZAF-EC102,Eastern Cape
+Breede Valley,ZAF-WC025,Western Cape
+Bushbuckridge,ZAF-MP325,Mpumalanga
+Cape Agulhas,ZAF-WC033,Western Cape
+Cederberg,ZAF-WC012,Western Cape
+City of Matlosana,ZAF-NW403,North West
+Collins Chabane,ZAF-LIM345,Limpopo
+Dannhauser,ZAF-KZN254,KwaZulu-Natal
+Dawid Kruiper,ZAF-NC087,Northern Cape
+Dihlabeng,ZAF-FS192,Free State
+Dikgatlong,ZAF-NC092,Northern Cape
+Dipaleseng,ZAF-MP306,Mpumalanga
+Ditsobotla,ZAF-NW384,North West
+Dr AB Xuma,ZAF-EC137,Eastern Cape
+Dr Beyers Naudé,ZAF-EC101,Eastern Cape
+Dr JS Moroka,ZAF-MP316,Mpumalanga
+Dr Nkosazana Dlamini Zuma,ZAF-KZN436,KwaZulu-Natal
+Drakenstein,ZAF-WC023,Western Cape
+eDumbe,ZAF-KZN261,KwaZulu-Natal
+Elias Motsoaledi,ZAF-LIM472,Limpopo
+Elundini,ZAF-EC141,Eastern Cape
+eMadlangeni,ZAF-KZN253,KwaZulu-Natal
+Emakhazeni,ZAF-MP314,Mpumalanga
+Emalahleni,ZAF-EC136,Eastern Cape
+Emalahleni,ZAF-MP312,Mpumalanga
+Emfuleni,ZAF-GT421,Gauteng
+Emthanjeni,ZAF-NC073,Northern Cape
+Endumeni,ZAF-KZN241,KwaZulu-Natal
+Enoch Mgijima,ZAF-EC139,Eastern Cape
+Ephraim Mogale,ZAF-LIM471,Limpopo
+Fetakgomo Tubatse,ZAF-LIM476,Limpopo
+Ga-Segonyana,ZAF-NC452,Northern Cape
+Gamagara,ZAF-NC453,Northern Cape
+George,ZAF-WC044,Western Cape
+Govan Mbeki,ZAF-MP307,Mpumalanga
+Great Kei,ZAF-EC123,Eastern Cape
+Greater Giyani,ZAF-LIM331,Limpopo
+Greater Kokstad,ZAF-KZN433,KwaZulu-Natal
+Greater Letaba,ZAF-LIM332,Limpopo
+Greater Taung,ZAF-NW394,North West
+Greater Tzaneen,ZAF-LIM333,Limpopo
+Hantam,ZAF-NC065,Northern Cape
+Hessequa,ZAF-WC042,Western Cape
+Impendle,ZAF-KZN224,KwaZulu-Natal
+Ingquza Hill,ZAF-EC153,Eastern Cape
+Inkosi Langalibalele,ZAF-KZN237,KwaZulu-Natal
+Intsika Yethu,ZAF-EC135,Eastern Cape
+Inxuba Yethemba,ZAF-EC131,Eastern Cape
+JB Marks,ZAF-NW405,North West
+Joe Morolong,ZAF-NC451,Northern Cape
+Johannes Phumani Phungula,ZAF-KZN434,KwaZulu-Natal
+Jozini,ZAF-KZN272,KwaZulu-Natal
+Kagisano-Molopo,ZAF-NW397,North West
+Kai !Garib,ZAF-NC082,Northern Cape
+Kamiesberg,ZAF-NC064,Northern Cape
+Kannaland,ZAF-WC041,Western Cape
+Kareeberg,ZAF-NC074,Northern Cape
+Karoo Hoogland,ZAF-NC066,Northern Cape
+Kgatelopele,ZAF-NC086,Northern Cape
+Kgetlengrivier,ZAF-NW374,North West
+Khâi-Ma,ZAF-NC067,Northern Cape
+!Kheis,ZAF-NC084,Northern Cape
+King Sabata Dalindyebo,ZAF-EC157,Eastern Cape
+Knysna,ZAF-WC048,Western Cape
+Kopanong,ZAF-FS162,Free State
+Kou-Kamma,ZAF-EC109,Eastern Cape
+Kouga,ZAF-EC108,Eastern Cape
+Kumkani Mhlontlo,ZAF-EC156,Eastern Cape
+KwaDukuza,ZAF-KZN292,KwaZulu-Natal
+Laingsburg,ZAF-WC051,Western Cape
+Langeberg,ZAF-WC026,Western Cape
+Lekwa,ZAF-MP305,Mpumalanga
+Lekwa-Teemane,ZAF-NW396,North West
+Lepelle-Nkumpi,ZAF-LIM355,Limpopo
+Lephalale,ZAF-LIM362,Limpopo
+Lesedi,ZAF-GT423,Gauteng
+Letsemeng,ZAF-FS161,Free State
+Madibeng,ZAF-NW372,North West
+Mafube,ZAF-FS205,Free State
+Magareng,ZAF-NC093,Northern Cape
+Mahikeng,ZAF-NW383,North West
+Makana,ZAF-EC104,Eastern Cape
+Makhado,ZAF-LIM344,Limpopo
+Makhuduthamaga,ZAF-LIM473,Limpopo
+Maluti-a-Phofung,ZAF-FS194,Free State
+Mamusa,ZAF-NW393,North West
+Mandeni,ZAF-KZN291,KwaZulu-Natal
+Mantsopa,ZAF-FS196,Free State
+Maphumulo,ZAF-KZN294,KwaZulu-Natal
+Maquassi Hills,ZAF-NW404,North West
+Maruleng,ZAF-LIM335,Limpopo
+Masilonyana,ZAF-FS181,Free State
+Matatiele,ZAF-EC441,Eastern Cape
+Matjhabeng,ZAF-FS184,Free State
+Matzikama,ZAF-WC011,Western Cape
+Mbhashe,ZAF-EC121,Eastern Cape
+Mbombela,ZAF-MP326,Mpumalanga
+Merafong City,ZAF-GT484,Gauteng
+Metsimaholo,ZAF-FS204,Free State
+Midvaal,ZAF-GT422,Gauteng
+Mkhambathini,ZAF-KZN226,KwaZulu-Natal
+Mkhondo,ZAF-MP303,Mpumalanga
+Mnquma,ZAF-EC122,Eastern Cape
+Modimolle–Mookgophong,ZAF-LIM368,Limpopo
+Mogalakwena,ZAF-LIM367,Limpopo
+Mogale City,ZAF-GT481,Gauteng
+Mohokare,ZAF-FS163,Free State
+Molemole,ZAF-LIM353,Limpopo
+Moqhaka,ZAF-FS201,Free State
+Moretele,ZAF-NW371,North West
+Moses Kotane,ZAF-NW375,North West
+Mossel Bay,ZAF-WC043,Western Cape
+Mpofana,ZAF-KZN223,KwaZulu-Natal
+Msinga,ZAF-KZN244,KwaZulu-Natal
+Msukaligwa,ZAF-MP302,Mpumalanga
+Msunduzi,ZAF-KZN225,KwaZulu-Natal
+Mthonjaneni,ZAF-KZN285,KwaZulu-Natal
+Mtubatuba,ZAF-KZN275,KwaZulu-Natal
+Musina,ZAF-LIM341,Limpopo
+Nala,ZAF-FS185,Free State
+Naledi,ZAF-NW392,North West
+Nama Khoi,ZAF-NC062,Northern Cape
+Ndlambe,ZAF-EC105,Eastern Cape
+Ndwedwe,ZAF-KZN293,KwaZulu-Natal
+Newcastle,ZAF-KZN252,KwaZulu-Natal
+Ngqushwa,ZAF-EC126,Eastern Cape
+Ngwathe,ZAF-FS203,Free State
+Nkandla,ZAF-KZN286,KwaZulu-Natal
+Nketoana,ZAF-FS193,Free State
+Nkomazi,ZAF-MP324,Mpumalanga
+Nongoma,ZAF-KZN265,KwaZulu-Natal
+Nqutu,ZAF-KZN242,KwaZulu-Natal
+Ntabankulu,ZAF-EC444,Eastern Cape
+Nyandeni,ZAF-EC155,Eastern Cape
+Okhahlamba,ZAF-KZN235,KwaZulu-Natal
+Oudtshoorn,ZAF-WC045,Western Cape
+Overstrand,ZAF-WC032,Western Cape
+Phokwane,ZAF-NC094,Northern Cape
+Phumelela,ZAF-FS195,Free State
+Pixley ka Seme,ZAF-MP304,Mpumalanga
+Polokwane,ZAF-LIM354,Limpopo
+Port St Johns,ZAF-EC154,Eastern Cape
+Prince Albert,ZAF-WC052,Western Cape
+Ramotshere Moiloa,ZAF-NW385,North West
+Rand West City,ZAF-GT485,Gauteng
+Ratlou,ZAF-NW381,North West
+Ray Nkonyeni,ZAF-KZN216,KwaZulu-Natal
+Raymond Mhlaba,ZAF-EC129,Eastern Cape
+Renosterberg,ZAF-NC075,Northern Cape
+Richmond,ZAF-KZN227,KwaZulu-Natal
+Richtersveld,ZAF-NC061,Northern Cape
+Rustenburg,ZAF-NW373,North West
+Sakhisizwe,ZAF-EC138,Eastern Cape
+Saldanha Bay,ZAF-WC014,Western Cape
+Senqu,ZAF-EC142,Eastern Cape
+Setsoto,ZAF-FS191,Free State
+Siyancuma,ZAF-NC078,Northern Cape
+Siyathemba,ZAF-NC077,Northern Cape
+Sol Plaatje,ZAF-NC091,Northern Cape
+Stellenbosch,ZAF-WC024,Western Cape
+Steve Tshwete,ZAF-MP313,Mpumalanga
+Sundays River Valley,ZAF-EC106,Eastern Cape
+Swartland,ZAF-WC015,Western Cape
+Swellendam,ZAF-WC034,Western Cape
+Thaba Chweu,ZAF-MP321,Mpumalanga
+Thabazimbi,ZAF-LIM361,Limpopo
+Theewaterskloof,ZAF-WC031,Western Cape
+Thembelihle,ZAF-NC076,Northern Cape
+Thembisile Hani,ZAF-MP315,Mpumalanga
+Thulamela,ZAF-LIM343,Limpopo
+Tokologo,ZAF-FS182,Free State
+Tsantsabane,ZAF-NC085,Northern Cape
+Tswaing,ZAF-NW382,North West
+Tswelopele,ZAF-FS183,Free State
+Ubuntu,ZAF-NC071,Northern Cape
+Ulundi,ZAF-KZN266,KwaZulu-Natal
+Umdoni,ZAF-KZN212,KwaZulu-Natal
+uMfolozi,ZAF-KZN281,KwaZulu-Natal
+uMhlabuyalingana,ZAF-KZN271,KwaZulu-Natal
+uMhlathuze,ZAF-KZN282,KwaZulu-Natal
+uMlalazi,ZAF-KZN284,KwaZulu-Natal
+uMngeni,ZAF-KZN222,KwaZulu-Natal
+uMshwathi,ZAF-KZN221,KwaZulu-Natal
+Umsobomvu,ZAF-NC072,Northern Cape
+uMuziwabantu,ZAF-KZN214,KwaZulu-Natal
+Umvoti,ZAF-KZN245,KwaZulu-Natal
+Umzimkhulu,ZAF-KZN435,KwaZulu-Natal
+Umzimvubu,ZAF-EC442,Eastern Cape
+Umzumbe,ZAF-KZN213,KwaZulu-Natal
+uPhongolo,ZAF-KZN262,KwaZulu-Natal
+Victor Khanye,ZAF-MP311,Mpumalanga
+Walter Sisulu,ZAF-EC145,Eastern Cape
+Winnie Madikizela-Mandela,ZAF-EC443,Eastern Cape
+Witzenberg,ZAF-WC022,Western Cape

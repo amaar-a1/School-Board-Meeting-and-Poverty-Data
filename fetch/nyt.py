@@ -61,6 +61,13 @@ C = {
                edu=r"educaci[óo]n|cultura y educaci", meet=r"sesi[óo]n|plenario|comisi[óo]n|junta"),
     "CR": dict(file="costa_rica", q="concejo municipal {} costa rica sesión", chan=r"municipalidad|concejo|muni\b|alcald|gobierno local",
                edu=r"educaci[óo]n|escuela|junta de educaci", meet=r"sesi[óo]n|concejo|comisi[óo]n"),
+    # Lithuania: municipal councils (savivaldybės taryba); South Africa: municipal councils; Kenya: county assemblies.
+    "LT": dict(file="lithuania", q="{} savivaldybės tarybos posėdis", chan=r"savivaldyb|taryb|municipalit|meras",
+               edu=r"[sš]vietim|mokykl|[sš]vietimo", meet=r"pos[eė]d|taryb|komitet"),
+    "ZA": dict(file="south_africa", q="{} municipality council meeting {region}", chan=r"municipal|council|metro|city of|local",
+               edu=r"education|school", meet=r"council|sitting|meeting|mayoral|mpac|portfolio"),
+    "KE": dict(file="kenya", q="{} county assembly sitting", chan=r"assembly",
+               edu=r"education|ecde", meet=r"sitting|session|assembly|committee|hansard|debate"),
 }
 GENERIC = set("vald linn novads kommune kommun kunta kaupunki stad gemeente municipality the og och ja en de het city district stadt kreis landkreis del la el los las do da dos das e".split())
 ANY_MEET = {cc: re.compile(c["meet"], re.I) for cc, c in C.items()}
