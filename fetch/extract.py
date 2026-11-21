@@ -1,65 +1,43 @@
-# Round 8: data files for Slovenia, Taiwan, Costa Rica, Uruguay.
+# Round 9: Slovenia income/unemployment search, Taiwan senior-high files, Uruguay poverty by department, Costa Rica PDFs.
 import os, re, urllib.request, urllib.parse, json, time, html
-OUT = "fetch/out/new4b"; os.makedirs(OUT, exist_ok=True)
+OUT = "fetch/out/new4c"; os.makedirs(OUT, exist_ok=True)
 log = open(f"{OUT}/log.txt", "w")
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)", "Accept": "*/*"}
 links = {}
-def get(name, url, data=None, timeout=300, hdr=None):
+def get(name, url, timeout=300):
     try:
-        req = urllib.request.Request(url, headers={**UA, **(hdr or {})}, data=data)
-        b = urllib.request.urlopen(req, timeout=timeout).read()
+        b = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=timeout).read()
         open(f"{OUT}/{name}", "wb").write(b); log.write(f"== {name} OK {len(b)} {url}\n"); log.flush()
         if name.endswith(".html"):
             t = b.decode("utf-8", "replace")
-            links[name] = [[urllib.parse.urljoin(url, html.unescape(m.group(1))), re.sub(r"<[^>]+>|\s+", " ", m.group(2)).strip()[:150]]
-                           for m in re.finditer(r'href="([^"]+)"[^>]*>(.*?)</a>', t, re.S)
-                           if re.search(r"\.(xlsx?|csv|ods|zip|pdf|json)(\?|$)|download|descarg|/book/|base|datos", m.group(1) + m.group(2), re.I)]
+            links[name] = [[urllib.parse.urljoin(url, html.unescape(m.group(1))), re.sub(r"<[^>]+>|\s+", " ", m.group(2)).strip()[:160]]
+                           for m in re.finditer(r'href="([^"]+)"[^>]*>(.*?)</a>', t, re.S)]
         return b
     except Exception as e:
         log.write(f"== {name} ERR {e} {url}\n"); log.flush()
     finally: time.sleep(2)
-# Slovenia: SiStat tables (metadata, then every value of every variable but only the latest two periods)
-PX = "https://pxweb.stat.si/SiStatData/api/v1/en/Data/"
-for t in ["2640010S", "05C4006S", "05C4004S", "0952780S"]:
-    m = get(f"si_{t}_meta.json", PX + t + ".px")
-    if not m: continue
-    meta = json.loads(m); q = []
-    for v in meta["variables"]:
-        vals = v["values"]
-        if v.get("time") or re.search(r"year|half|leto|time", v["code"] + v["text"], re.I): vals = vals[-2:]
-        q.append({"code": v["code"], "selection": {"filter": "item", "values": vals}})
-    get(f"si_{t}.json", PX + t + ".px", data=json.dumps({"query": q, "response": {"format": "json-stat2"}}).encode(), hdr={"Content-Type": "application/json"})
-# Taiwan
-for n, u in [("tw_lowincome_111.xlsx", "https://www.mohw.gov.tw/dl-27850-056a753c-fbce-4fff-a373-530accaf6572.html"),
-             ("tw_lowincome_age_113.xlsx", "https://www.mohw.gov.tw/dl-22056-31689a70-b490-4f7e-8823-77bee9b4adf2.html"),
-             ("tw_midlow_115.xlsx", "https://www.mohw.gov.tw/dl-22058-0e1cd81e-d145-45ef-8ee8-43fbb074c2b8.html"),
-             ("tw_weakchildren_211.xlsx", "https://www.mohw.gov.tw/dl-97097-0d915486-88d0-47dd-9b44-f5bf8902ec25.html")]:
-    get(n, u)
-for a in range(1, 4):
+PX = "https://pxweb.stat.si/SiStatData/api/v1/en/Data?query="
+for q in ["unemployed municipalities", "income tax municipalities", "income per capita municipalities", "registered unemployment rate municipalities", "net earnings municipalities", "social", "poverty"]:
+    get("si_px_" + q.replace(" ", "_") + ".json", PX + urllib.parse.quote(q))
+for a in range(4, 7):
     for b in range(1, 13):
         get(f"tw_edu_B_{a}_{b}.csv", f"https://stats.moe.gov.tw/files/opendata/edu_B_{a}_{b}.csv")
-d = get("tw_ds_8411.json", "https://data.gov.tw/api/v2/rest/dataset/8411")
-if d:
-    dist = [x for x in json.loads(d)["result"]["distribution"] if "單一年齡" in (x.get("resourceDescription") or "")]
-    dist.sort(key=lambda x: re.findall(r"\d{5}", x["resourceDescription"])[-1] if re.findall(r"\d{5}", x["resourceDescription"]) else "")
-    if dist: get("tw_village_age_latest.csv", dist[-1]["resourceDownloadUrl"]); log.write("== latest " + dist[-1]["resourceDescription"] + "\n")
-# Costa Rica: UNDP cantonal atlas pages
-for u in ["https://www.undp.org/es/costa-rica/atlas-de-desarrollo-humano-cantonal-costa-rica-2026", "https://www.undp.org/es/costa-rica/atlas-de-desarrollo-humano-cantonal",
-          "https://www.undp.org/es/node/550741", "https://www.undp.org/es/node/554351", "https://www.undp.org/es/node/597761", "https://www.undp.org/es/node/597571"]:
-    get("cr_" + re.sub(r"\W+", "_", u.split("undp.org/")[1])[-50:] + ".html", u)
-# Uruguay
-B = "https://www5.ine.gub.uy/documents/ANUARIOS/Anuario%202025/"
-for n, p in [("uy_3.1.3.xls", "3%20-%20ASPECTOS%20SOCIALES/3.1%20Educación%20e%20Invest.%20Cient.%20y%20Tecn/3.1.3ok.xls"),
-             ("uy_3.1.6.xls", "3%20-%20ASPECTOS%20SOCIALES/3.1%20Educación%20e%20Invest.%20Cient.%20y%20Tecn/3.1.6ok.xls"),
-             ("uy_3.1.10.xls", "3%20-%20ASPECTOS%20SOCIALES/3.1%20Educación%20e%20Invest.%20Cient.%20y%20Tecn/3.1.10ok.xls"),
-             ("uy_2.2.4.xls", "2%20-%20POBLACIÓN/2.2%20Proyecciones/2.2.4.xls")]:
-    get(n, B + urllib.parse.quote(urllib.parse.unquote(p)))
-for u in ["https://www.gub.uy/instituto-nacional-estadistica/comunicacion/publicaciones/anuario-estadistico-nacional-2025-vol-102/39-desarrollo-social",
-          "https://www.gub.uy/instituto-nacional-estadistica/comunicacion/publicaciones/anuario-estadistico-nacional-2025-vol-102/capitulo-3-aspectos-sociales",
-          "https://www.gub.uy/instituto-nacional-estadistica/comunicacion/publicaciones/anuario-estadistico-nacional-2025-vol-102/capitulo-3-aspectos-sociales-2",
-          "https://www.gub.uy/instituto-nacional-estadistica/comunicacion/publicaciones/anuario-estadistico-nacional-2025-vol-102/31-educacion-investigacion-3",
-          "https://www.gub.uy/instituto-nacional-estadistica/comunicacion/publicaciones/anuario-estadistico-nacional-2025-vol-102/31-educacion-investigacion-8"]:
-    get("uy_" + u.rstrip("/").split("/")[-1] + ".html", u)
+G = "https://www.gub.uy/instituto-nacional-estadistica/"
+pages = [G + "comunicacion/noticias/linea-pobreza-indigencia-2025", G + "comunicacion/noticias/linea-pobreza-indigencia-2024",
+         G + "comunicacion/publicaciones/estimacion-pobreza-metodo-del-ingreso-2025", G + "comunicacion/publicaciones/estimacion-pobreza-metodo-del-ingreso-2024",
+         G + "datos-y-estadisticas/estadisticas/pobreza-desigualdad", G + "tematica/pobreza"]
+pages += [G + f"comunicacion/publicaciones/anuario-estadistico-nacional-2025-vol-102/capitulo-3-aspectos-sociales-{i}" for i in range(3, 9)]
+for u in pages: get("uy_" + u.rstrip("/").split("/")[-1][-60:] + ".html", u)
+seen = set()
+for k, v in list(links.items()):
+    for u, t in v:
+        if (re.search(r"/book/\d+/download", u) and re.search(r"pobre|ingreso", t + u, re.I)) or (re.search(r"\.xls", u) and re.search(r"pobre|departamento|ingreso", t, re.I) and "3.5" in t):
+            if u in seen: continue
+            seen.add(u); get("uy_dl_" + str(len(seen)) + (".xls" if ".xls" in u else ".pdf"), u); log.write(f"   ({t[:120]})\n")
+for n, u in [("cr_atlas_reporte2.pdf", "https://hdr.undp.org/system/files/documents/national-report-document/atlas-cantonal-reporte-2.pdf"),
+             ("cr_mep_cantonales_2010_2018.pdf", "https://devmep.mep.go.cr/sites/default/files/2024-05/IndicadoresEducativosCantonales20102018.pdf"),
+             ("cr_mep_estadisticas.html", "https://www.mep.go.cr/estadisticas-educativas"), ("cr_mep_dae.html", "https://www.mep.go.cr/departamento-analisis-estadistico")]:
+    get(n, u)
 json.dump(links, open(f"{OUT}/links.json", "w"), ensure_ascii=False, indent=1)
 for fn in os.listdir(OUT):
     if os.path.getsize(f"{OUT}/{fn}") > 90e6: os.remove(f"{OUT}/{fn}")
