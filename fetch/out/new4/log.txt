@@ -1,0 +1,48 @@
+== si_px_social_assistance_municipalities.json OK 2 https://pxweb.stat.si/SiStatData/api/v1/en/Data?query=social%20assistance%20municipalities
+== si_px_financial_social_assistance.json OK 5288 https://pxweb.stat.si/SiStatData/api/v1/en/Data?query=financial%20social%20assistance
+== si_px_pupils_basic_school_municipalities.json OK 609 https://pxweb.stat.si/SiStatData/api/v1/en/Data?query=pupils%20basic%20school%20municipalities
+== si_px_population_age_groups_municipalities.json OK 2398 https://pxweb.stat.si/SiStatData/api/v1/en/Data?query=population%20age%20groups%20municipalities
+== si_px_children_municipalities.json OK 4282 https://pxweb.stat.si/SiStatData/api/v1/en/Data?query=children%20municipalities
+== si_px_at-risk-of-poverty_municipalities.json OK 2 https://pxweb.stat.si/SiStatData/api/v1/en/Data?query=at-risk-of-poverty%20municipalities
+== si_ckan_868501.json OK 1237013 https://podatki.gov.si/api/3/action/package_search?rows=50&q=denarna%20socialna%20pomo%C4%8D
+== si_ckan_76478.json OK 263172 https://podatki.gov.si/api/3/action/package_search?rows=50&q=u%C4%8Denci%20osnovna%20%C5%A1ola%20ob%C4%8Dine
+== si_ckan_567552.json OK 1680515 https://podatki.gov.si/api/3/action/package_search?rows=50&q=prebivalstvo%20ob%C4%8Dine%20starost
+== tw_ds_40121.json OK 7104 https://data.gov.tw/api/v2/rest/dataset/40121
+== tw_ds_40121.html OK 539424 https://data.gov.tw/dataset/40121
+== tw_ds_6516.json OK 3042 https://data.gov.tw/api/v2/rest/dataset/6516
+== tw_ds_6516.html OK 525772 https://data.gov.tw/dataset/6516
+== tw_ds_31442.json OK 4524 https://data.gov.tw/api/v2/rest/dataset/31442
+== tw_ds_31442.html OK 529827 https://data.gov.tw/dataset/31442
+== tw_ds_7671.json OK 78 https://data.gov.tw/api/v2/rest/dataset/7671
+== tw_ds_7671.html ERR HTTP Error 500: Internal Server Error https://data.gov.tw/dataset/7671
+== tw_ds_8411.json OK 99595 https://data.gov.tw/api/v2/rest/dataset/8411
+== tw_ds_8411.html OK 791277 https://data.gov.tw/dataset/8411
+== tw_ds_117985.json OK 4043 https://data.gov.tw/api/v2/rest/dataset/117985
+== tw_ds_117985.html OK 522435 https://data.gov.tw/dataset/117985
+== tw_ds_32970.json OK 134339 https://data.gov.tw/api/v2/rest/dataset/32970
+== tw_ds_32970.html OK 661033 https://data.gov.tw/dataset/32970
+== tw_ds_18683.json OK 78 https://data.gov.tw/api/v2/rest/dataset/18683
+== tw_ds_18683.html ERR HTTP Error 500: Internal Server Error https://data.gov.tw/dataset/18683
+== tw_mohw_lowincome.html OK 134004 https://dep.mohw.gov.tw/dos/cp-5337-62357-113.html
+== tw_moe_stats.html OK 609 https://stats.moe.gov.tw/
+== tw_moe_ed4500.html OK 157769 https://depart.moe.edu.tw/ED4500/News.aspx?n=5A930C32CC6C3818&sms=91B3AAE8C6388B96
+== tw_search_987232.json ERR HTTP Error 405: Method Not Allowed https://data.gov.tw/api/v2/rest/dataset?q=%E4%BD%8E%E6%94%B6%E5%85%A5%E6%88%B6
+== tw_search_670519.json ERR HTTP Error 405: Method Not Allowed https://data.gov.tw/api/v2/rest/dataset?q=%E5%90%84%E7%B4%9A%E5%AD%B8%E6%A0%A1%E7%B8%A3%E5%B8%82%E5%88%A5%E5%AD%B8%E7%94%9F%E4%BA%BA%E6%95%B8
+== tw_search_123646.json ERR HTTP Error 405: Method Not Allowed https://data.gov.tw/api/v2/rest/dataset?q=%E7%B8%A3%E5%B8%82%E4%BA%BA%E5%8F%A3%20%E5%B9%B4%E9%BD%A1
+== cr_inec_cr_censos_censo_2022.html ERR HTTP Error 403: Forbidden https://inec.cr/censos/censo-2022
+== cr_inec_cr_estadisticas_fuentes_censos_censo_2022.html ERR HTTP Error 403: Forbidden https://inec.cr/estadisticas-fuentes/censos/censo-2022
+== cr_www_mideplan_go_cr_indice_desarrollo_social.html ERR HTTP Error 403: Forbidden https://www.mideplan.go.cr/indice-desarrollo-social
+== cr_mep_go_cr_indicadores_educativos.html OK 233947 https://mep.go.cr/indicadores-educativos
+== cr_mep_go_cr_estadisticas.html ERR HTTP Error 404: Not Found https://mep.go.cr/estadisticas
+== cr_mep_go_cr_analisis_estadistico.html ERR HTTP Error 404: Not Found https://mep.go.cr/analisis-estadistico
+== cr_datosabiertos_mep_go_cr_.html ERR <urlopen error [Errno -5] No address associated with hostname> https://datosabiertos.mep.go.cr/
+== cr_www_mep_go_cr_datos_abiertos.html OK 42225 https://www.mep.go.cr/datos-abiertos
+== uy_adistica_comunicacion_noticias_linea_pobreza_indigencia_2024.html OK 47644 https://www.gub.uy/instituto-nacional-estadistica/comunicacion/noticias/linea-pobreza-indigencia-2024
+== uy_tadistico_nacional_2025_vol_102_31_educacion_investigacion_2.html OK 60053 https://www.gub.uy/instituto-nacional-estadistica/comunicacion/publicaciones/anuario-estadistico-nacional-2025-vol-102/31-educacion-investigacion-2
+== uy_tadistico_nacional_2025_vol_102_31_educacion_investigacion_5.html OK 66821 https://www.gub.uy/instituto-nacional-estadistica/comunicacion/publicaciones/anuario-estadistico-nacional-2025-vol-102/31-educacion-investigacion-5
+== uy_tadistico_nacional_2025_vol_102_31_educacion_investigacion_9.html OK 66901 https://www.gub.uy/instituto-nacional-estadistica/comunicacion/publicaciones/anuario-estadistico-nacional-2025-vol-102/31-educacion-investigacion-9
+== uy_distico_nacional_2025_vol_102_22_proyecciones_estimaciones_2.html OK 54350 https://www.gub.uy/instituto-nacional-estadistica/comunicacion/publicaciones/anuario-estadistico-nacional-2025-vol-102/22-proyecciones-estimaciones-2
+== uy_atos_y_estadisticas_datos_anuario_estadistico_educacion_2022.html OK 32917 https://www.gub.uy/ministerio-educacion-cultura/datos-y-estadisticas/datos/anuario-estadistico-educacion-2022
+== uy_ministerio_educacion_cultura_datos_y_estadisticas_datos.html OK 45582 https://www.gub.uy/ministerio-educacion-cultura/datos-y-estadisticas/datos
+== uy_cional_estadistica_datos_y_estadisticas_estadisticas_pobreza.html OK 39565 https://www.gub.uy/instituto-nacional-estadistica/datos-y-estadisticas/estadisticas/pobreza
+== uy_book_4150.bin OK 0 https://www.gub.uy/instituto-nacional-estadistica/book/4150/download
