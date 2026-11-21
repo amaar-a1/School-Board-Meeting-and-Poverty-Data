@@ -1427,7 +1427,8 @@ def argentina():
     for name, x in ar.items():
         did = "ARG-" + x["code"]
         pop = x.get("pop")
-        dens = pop / area[did] if pop and area.get(did) else 0
+        a = x.get("area_km2") or area.get(did)   # INDEC's land area (the City of Buenos Aires' mapped border takes in river)
+        dens = pop / a if pop and a else 0
         m = x.get("meetings") or {}
         n = m.get("n", 0)
         latest, years = date_summary(m.get("titles", [])) if n else ("", "")
