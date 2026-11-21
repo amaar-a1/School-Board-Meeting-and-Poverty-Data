@@ -2,8 +2,8 @@ name: Fetch pages for world research (temporary)
 
 on:
   push:
-    branches: [claude/world-fetch]
-    paths: [fetch/urls.txt, fetch/paginate.txt, fetch/extract.py]
+    branches: [claude/world-fetch, claude/world-fetch-2]
+    paths: [fetch/urls.txt, fetch/paginate.txt, fetch/extract.py, fetch/extract2.py]
 
 permissions:
   contents: write
@@ -46,7 +46,7 @@ jobs:
         env:
           ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}   # e-Stat API key (repository secret); the script never prints it
         run: |
-          [ -f fetch/extract.py ] && python3 fetch/extract.py || true
+          if [ "$GITHUB_REF_NAME" = claude/world-fetch-2 ]; then python3 fetch/extract2.py || true; else [ -f fetch/extract.py ] && python3 fetch/extract.py || true; fi
       - name: Commit results
         run: |
           git config user.name "github-actions[bot]"
