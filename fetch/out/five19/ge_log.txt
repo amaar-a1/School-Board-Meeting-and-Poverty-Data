@@ -1,0 +1,65 @@
+Abasha Abasha Municipality 1
+Adigeni  0
+Akhalgori  0
+Akhalkalaki  0
+Akhaltsikhe  0
+Akhmeta  0
+Ambrolauri  0
+Aspindza  0
+Baghdati  0
+Bolnisi  0
+Borjomi  0
+Batumi ქალაქ ბათუმის საკრებულო 38
+Kutaisi ქუთაისის მერია 117
+Poti potis sakrebulo 34
+Rustavi რუსთავის მუნიციპალიტეტის საკრებულო 150
+Tbilisi  0
+Chiatura  0
+Chkhorotsku ჩხოროწყუს მუნიციპალიტეტის გამგეობა 21
+Chokhatauri  0
+Dedoplistsqaro  0
+Dmanisi  0
+Dusheti Dusheti Municipality 406
+Gardabani Gardabnis Sakrebulo 7
+Gori  0
+Gurjaani  0
+Kareli  0
+Kaspi  0
+Kazbegi  0
+Keda  0
+Kharagauli ხარაგაულის მუნიციპალიტეტის საკრებულო 1
+Khashuri  0
+Khelvachauri  0
+Khobi khobi municipality 76
+Khoni  0
+Khulo  0
+Kobuleti  0
+Kvareli  0
+Lagodekhi ლაგოდეხის მუნიციპალიტეტის მერია 313
+Lanchkhuti  0
+Lentekhi  0
+Marneuli მარნეულის მუნიციპალიტეტის საკრებულო 130
+Martvili  0
+Mestia  0
+Mtskheta  0
+Ninotsminda  0
+Oni  0
+Ozurgeti ოზურგეთის მუნიციპალიტეტის საკრებულო 378
+Sachkhere  0
+Sagarejo  0
+Samtredia  0
+Senaki Senaki City hall - სენაკის მუნიციპალიტეტის მერია 198
+Shuakhevi  0
+Sighnagi  0
+Telavi  0
+Terjola თერჯოლის მუნიციპალიტეტის საკრებულო 2
+Tetritsqaro თეთრიწყაროს მუნიციპალიტეტი 88
+Tianeti  0
+Tqibuli  0
+Tsageri ცაგერის საკრებულო 1
+Tsalenjikha  0
+Tsalka  0
+Tsqaltubo  0
+Vani  0
+Zestaponi  0
+Zugdidi ზუგდიდის საკრებულო 12

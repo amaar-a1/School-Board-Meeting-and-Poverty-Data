@@ -1,0 +1,75 @@
+== kr_kess_post.html OK 58534 https://kess.kedi.re.kr/post/6731854?itemCode=04&menuId=m_02_04_03_01
+   kr userfile ids ['6883061']
+== kr_userfile_6883061.bin OK 16473963 https://kess.kedi.re.kr/userfile/6883061
+== ge_cat55.html OK 101420 https://www.geostat.ge/en/modules/categories/55/x
+   title Social Protection - National Statistics Office of Georgia
+   ge xlsx https://geostat.ge/media/26188/Amount-of-the-sum-transferred-for-the-household-benefit.xls
+   ge xlsx https://geostat.ge/media/43079/Number-of-people-registered-with-social-security_authorities.xls
+== ge_c55_Number_of_people_registered_with_social_security_authorities.xls OK 33280 https://geostat.ge/media/43079/Number-of-people-registered-with-social-security_authorities.xls
+   ge xlsx https://geostat.ge/media/43127/Number-of-household-allowance-recipients-by-categories.xls
+== ge_c55_Number_of_household_allowance_recipients_by_categories.xls OK 26624 https://geostat.ge/media/43127/Number-of-household-allowance-recipients-by-categories.xls
+   ge xlsx https://geostat.ge/media/60170/Child-care-institutions.xls
+   ge xlsx https://geostat.ge/media/76715/Persons-receiving-pension-and-social-package.xls
+== ge_c55_Persons_receiving_pension_and_social_package.xls OK 31744 https://geostat.ge/media/76715/Persons-receiving-pension-and-social-package.xls
+   ge xlsx https://geostat.ge/media/76716/Persons-receiving-pension-and-social-package-by-regions-and-gender.xls
+== ge_c55_Persons_receiving_pension_and_social_package_by_regions_and_gender.xls OK 47104 https://geostat.ge/media/76716/Persons-receiving-pension-and-social-package-by-regions-and-gender.xls
+   ge xlsx https://geostat.ge/media/76717/Persons-receiving-pension-by-municipalities.xls
+== ge_c55_Persons_receiving_pension_by_municipalities.xls OK 38912 https://geostat.ge/media/76717/Persons-receiving-pension-by-municipalities.xls
+   ge xlsx https://geostat.ge/media/76718/Persons--receiving-social-package-by-municipalities.xls
+== ge_c55_Persons__receiving_social_package_by_municipalities.xls OK 37888 https://geostat.ge/media/76718/Persons--receiving-social-package-by-municipalities.xls
+   ge xlsx https://geostat.ge/media/76720/10_Data-on-nursing-homes-for-elderly-and-disabled-persons.xls
+   ge xlsx https://geostat.ge/media/78001/Accumulative-Pension.xlsx
+   ge xlsx https://geostat.ge/media/78595/under-the-universal-health-care-program_disabled-persons.xlsx
+   ge xlsx https://geostat.ge/media/78596/using-oncology-drugs-disabled-persons.xlsx
+   ge xlsx https://geostat.ge/media/78597/planned-outpatient-services_disabled-persons.xlsx
+   ge xlsx https://geostat.ge/media/80710/Number-of-helpless-families-receiving-subsistence-allowance-by-municipal...-%281%29.xls
+== ge_c55_s_families_receiving_subsistence_allowance_by_municipal...__281_29.xls OK 59392 https://geostat.ge/media/80710/Number-of-helpless-families-receiving-subsistence-allowance-by-municipal...-%281%29.xls
+   ge xlsx https://geostat.ge/media/84114/Beneficiaries-of-Subsistence-Allowance.xls
+== ge_c55_Beneficiaries_of_Subsistence_Allowance.xls OK 36352 https://geostat.ge/media/84114/Beneficiaries-of-Subsistence-Allowance.xls
+== ge_cat56.html OK 67977 https://www.geostat.ge/en/modules/categories/56/x
+   title Education, Science, Culture, Sport - National Statistics Office of Georgia
+== ge_cat57.html ERR HTTP Error 404: Not Found https://www.geostat.ge/en/modules/categories/57/x
+== ge_cat58.html OK 65366 https://www.geostat.ge/en/modules/categories/58/x
+   title Early and Preschool Education - National Statistics Office of Georgia
+   ge xlsx https://geostat.ge/media/75474/Indicators-on-Public-Preschool-Education-and-Care-%28PEC%29-Institutions.xlsx
+== ge_cat60.html OK 100448 https://www.geostat.ge/en/modules/categories/60/x
+   title Professional Education - National Statistics Office of Georgia
+   ge xlsx https://geostat.ge/media/27075/General-Secondary-Professional-Schools-and-Number-of-Pupils-by-Type.xls
+   ge xlsx https://geostat.ge/media/27076/Private-Secondary-Professional-Schools.xls
+   ge xlsx https://geostat.ge/media/27077/Number-of-Secondary-professional-schools-and-enrollment-by-specialization.xls
+   ge xlsx https://geostat.ge/media/27079/Number-of-students-in-secondary-professional-schools.xls
+   ge xlsx https://geostat.ge/media/27080/Number-of-Students-Admitted-to-Secondary-Professional-Schools.xls
+   ge xlsx https://geostat.ge/media/27081/Number-of-students-admitted-to-secondary-professional-schools-by-specialization.xls
+   ge xlsx https://geostat.ge/media/27082/Graduates-from-Secondary-Professional-Schools.xls
+   ge xlsx https://geostat.ge/media/27083/Graduates-from-secondary-professional-schools-by-specialization.xls
+   ge xlsx https://geostat.ge/media/27084/Number-of-Teachers-of-Secondary-Professional-Schools.xls
+   ge xlsx https://geostat.ge/media/77194/Number-of-educational-institutions%2C-that-conducted-admission-of-students-in-vocational-education-programs.xlsx
+   ge xlsx https://geostat.ge/media/77195/Number-of-students-in-Public-and-Private-Vocational-Education-Institutions%27-Education-Programs.xlsx
+   ge xlsx https://geostat.ge/media/77196/Indicators-of-Vocational-Education-by-Regions-and-Sex.XLSX
+   ge xlsx https://geostat.ge/media/77197/Number-of-employees-in-public-an-private-educational-institutions.xlsx
+   ge xlsx https://geostat.ge/media/77198/Disabled-Student.xlsx
+   ge xlsx https://geostat.ge/media/77212/Number-of-educational-institutions%2C-that-conducted-admission-of-students-in-vocational-education-programs.xlsx
+   ge xlsx https://geostat.ge/media/83927/17_Disabled_Graduated.xlsx
+== ge_cat61.html OK 97312 https://www.geostat.ge/en/modules/categories/61/x
+   title Higher Education - National Statistics Office of Georgia
+   ge xlsx https://geostat.ge/media/77160/01Number-of-Students-Admission-Graduates-by-Programmes-and-Sex.xlsx
+   ge xlsx https://geostat.ge/media/77161/02Number-of-students-admitted-in-institutions-by-subprogrammes-and-sex.xlsx
+   ge xlsx https://geostat.ge/media/77162/03Number-of-Students-in-Institutions-by-Age%2C-Sex-and-Cityzenship.xlsx
+   ge xlsx https://geostat.ge/media/77166/05Georgian-Citizens-Studying-Abroad-and-Foreign-Students-by-Sex.xls
+   ge xlsx https://geostat.ge/media/77167/06Number-of-Professors-in-Higher-Education-Institutions-by-form-of-ownership.xls
+   ge xlsx https://geostat.ge/media/77168/07Number-of-Higher-Education-Institutions-by-Form-of-Ownership-and-Regions-of-Georgia.xls
+   ge xlsx https://geostat.ge/media/77173/04Number-of-Foreign-Students-In-Institutions-by-Programmes-and-Sex.xlsx
+   ge xlsx https://geostat.ge/media/77190/08_Admission_Number_Graduates.xls
+   ge xlsx https://geostat.ge/media/77192/9_Number_of_persons_working_for_doctoral_degree_by_age_groups.xls
+   ge xlsx https://geostat.ge/media/77193/11_Number_of_foreign_Persons_Working_for_Doctoral_Degree_by_countries.xls
+   ge xlsx https://geostat.ge/media/77201/10_Number_of_scientific_heads_of_doctoral_candidates.xls
+== ge_cat62.html ERR HTTP Error 404: Not Found https://www.geostat.ge/en/modules/categories/62/x
+== ge_cat192.html OK 81250 https://www.geostat.ge/en/modules/categories/192/x
+   title Poverty and Gini Coefficients - National Statistics Office of Georgia
+   ge xlsx https://geostat.ge/media/76130/304_Poverty_Int_ENG_2021PPP.xlsx
+== ge_c192_304_Poverty_Int_ENG_2021PPP.xlsx OK 12085 https://geostat.ge/media/76130/304_Poverty_Int_ENG_2021PPP.xlsx
+   ge xlsx https://geostat.ge/media/79294/301_Relative-Poverty.xlsx
+== ge_c192_301_Relative_Poverty.xlsx OK 11245 https://geostat.ge/media/79294/301_Relative-Poverty.xlsx
+   ge xlsx https://geostat.ge/media/79296/302_Absolute-Poverty.xlsx
+== ge_c192_302_Absolute_Poverty.xlsx OK 12679 https://geostat.ge/media/79296/302_Absolute-Poverty.xlsx
+   ge xlsx https://geostat.ge/media/79298/303_Gini-Coefficients.xlsx
