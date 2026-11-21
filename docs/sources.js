@@ -480,6 +480,68 @@ window.SOURCES = [
     note: "Built by data-prep/prep_costa_rica.py and data-prep/build_latam.py (costa_rica). MEP's 2022 files predate Puerto Jiménez's separation from Golfito and list Monteverde under Puntarenas, so schools in those districts are counted toward the new cantons; Sarchí appears under its former name, Valverde Vega. The Municipality of Puerto Jiménez's channel was found for Jiménez (Cartago) and is moved to Puerto Jiménez."
   },
   {
+    only: "Lithuania",
+    group: "Lithuania: municipalities",
+    items: [
+      { title: "Poverty: Official Statistics Portal (Statistics Lithuania), S3R453_M3080308, at-risk-of-poverty rate by municipality, 2026", url: "https://osp.stat.gov.lt/" },
+      { title: "Social assistance recipients per 1,000 residents (S3R0243_M3160702, 2025) and pupils receiving free school meals (S3R358_M3160909_1, 2025): Official Statistics Portal", url: "https://osp.stat.gov.lt/" },
+      { title: "Pupils: Official Statistics Portal, S3R057_M3110302_3, general school pupils by municipality, 2025/26", url: "https://osp.stat.gov.lt/" },
+      { title: "Population and children 0–15: Official Statistics Portal, S3R167_M3010213, residents at the start of 2026 by municipality and age", url: "https://osp.stat.gov.lt/" },
+      { title: "Data API: osp-rs.stat.gov.lt (SDMX), dataflows above", url: "https://osp-rs.stat.gov.lt/rest_xml/dataflow/" },
+      { title: "English names: English Wikipedia, “Municipalities of Lithuania”", url: "https://en.wikipedia.org/wiki/Municipalities_of_Lithuania" },
+      { title: "Borders: geoBoundaries (gbOpen) LTU ADM2, simplified", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings: each municipality's or council's YouTube channel (in the “Meetings source” column), searched November 2026", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_lithuania.py and data-prep/build_latam.py (lithuania)."
+  },
+  {
+    only: "South Africa",
+    group: "South Africa: municipalities",
+    items: [
+      { title: "Poverty stand-in, learners and public-school share: Department of Basic Education, EMIS, national masterlist of ordinary schools, 2023 (learners, sector, quintile and local municipality of each school)", url: "https://www.education.gov.za/Programmes/EMIS/EMISDownloads.aspx" },
+      { title: "Municipalities, population (Census 2022) and area: English Wikipedia, “List of municipalities in South Africa”", url: "https://en.wikipedia.org/wiki/List_of_municipalities_in_South_Africa" },
+      { title: "Borders: geoBoundaries (gbOpen) ZAF ADM3, simplified", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings: each municipality's YouTube channel (in the “Meetings source” column), searched November 2026", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_south_africa.py and data-prep/build_latam.py (south_africa). Schools are placed by the local municipality the masterlist gives; renamed or merged municipalities (such as Engcobo, now Dr A.B. Xuma, and Tlokwe and Ventersdorp, now JB Marks) are matched to today's, and about 16,500 learners in schools with no municipality given are left out."
+  },
+  {
+    only: "Kenya",
+    group: "Kenya: counties",
+    items: [
+      { title: "Child poverty (Annex Table E.2) and all-ages poverty (Table 4.4) by county: KNBS, The Kenya Poverty Report 2022 (published 2024)", url: "https://www.knbs.or.ke/wp-content/uploads/2024/10/The-Kenya-Poverty-Report-2022.pdf" },
+      { title: "Pupils: KNBS, Statistical Abstract 2025, Tables 15.4a (primary), 15.4b (junior school) and 15.6 (secondary), enrolment by county, 2024 (provisional)", url: "https://www.knbs.or.ke/wp-content/uploads/2025/11/2025-Statistical-Abstract.pdf" },
+      { title: "Counties, former provinces, population (2019 census) and area: English Wikipedia, “Counties of Kenya”", url: "https://en.wikipedia.org/wiki/Counties_of_Kenya" },
+      { title: "Borders: geoBoundaries (gbOpen) KEN ADM1, simplified", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings: each county assembly's YouTube channel (in the “Meetings source” column), searched November 2026", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_kenya.py and data-prep/build_latam.py (kenya). KNBS's site sends an incomplete certificate chain, so the downloads added the intermediate certificate it names (Let's Encrypt) to the trusted set rather than skipping verification."
+  },
+  {
+    only: "Georgia (country)",
+    group: "Georgia: municipalities",
+    items: [
+      { title: "Poverty stand-in: Geostat (from the Social Service Agency), number of families registered in the Targeted Social Assistance database and receiving subsistence allowance, by municipality, end of 2025", url: "https://www.geostat.ge/en/modules/categories/55/social-protection" },
+      { title: "Population: Geostat, population as of 1 January 2026 by regions and self-governed units", url: "https://www.geostat.ge/en/modules/categories/41/population" },
+      { title: "Pupils: Geostat, number of public and private schools, pupils and teachers by municipalities, 2025/26", url: "https://www.geostat.ge/en/modules/categories/59/general-education" },
+      { title: "Georgian names: Georgian Wikipedia, list of municipalities of Georgia", url: "https://ka.wikipedia.org/" },
+      { title: "Borders: geoBoundaries (gbOpen) GEO ADM2, simplified (no separate borders for Batumi, Kutaisi, Rustavi and Poti)", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings: each council's or municipality's YouTube channel (in the “Meetings source” column), searched November 2026", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_georgia.py and data-prep/build_latam.py (georgia). The allowance table splits some towns into “City” and “Municipality” rows, which are added together; it has no row for Akhalkalaki."
+  },
+  {
+    only: "South Korea",
+    group: "South Korea: cities and provinces",
+    items: [
+      { title: "Poverty stand-in: Ministry of Health and Welfare, 2025년 국민기초생활보장 수급자 현황 (National Basic Livelihood Security recipients, 2025), Table 1 and the recipient rate by province", url: "https://www.mohw.go.kr/board.es?mid=a10411010100&bid=0019&act=view&list_no=1491455" },
+      { title: "Pupils: Ministry of Education and KEDI, 연도별 시도별 현황 (education statistics by city and province, updated 1 October 2026), sheet 01, via the Education Statistics Service and data.go.kr", url: "https://kess.kedi.re.kr/post/6731854?itemCode=04&menuId=m_02_04_03_01" },
+      { title: "Borders: geoBoundaries (gbOpen) KOR ADM1, simplified", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings: each metropolitan or provincial council's YouTube channel (in the “Meetings source” column), searched November 2026", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_korea.py and data-prep/build_latam.py (south_korea). Population is the ministry's recipients over its recipient rate, so approximate (it adds up to 51.12 million, against the 51.12 million the ministry uses)."
+  },
+  {
     only: "Latvia",
     group: "Latvia: state cities and municipalities",
     items: [
