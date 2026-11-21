@@ -1,0 +1,1378 @@
+== lt_dataflows.xml OK 7403494 https://osp-rs.stat.gov.lt/rest_xml/dataflow/
+   LT S1R024_M8010501_3 | S1R024 - Enterprise income from by-products on environmental conservation
+   LT S1R024_M8010502_3 | S1R024 - Enterprise income from by-products on environmental conservation
+   LT S1R024_M8010502_6 | S1R024 - Enterprise income from by-products on environmental conservation
+   LT S3R004_M3210107 | S3R004 - Proportion of pupils aged 15–16 consuming alcohol
+   LT S3R012_M3161401_1 | S3R012 - Number of days of State social insurance sickness benefit paid
+   LT S3R023_M3100201 | S3R023 - Persons (families) on social housing rental lists at the end of the year
+   LT S3R025_M3100202_1 | S3R025 - Municipal social housing rented to persons (families)
+   LT S3R036_M3161501 | S3R036 - Number of persons who received social services in day centres
+   LT S3R037_M3161204 | S3R037 - Number of persons who received social services in crisis and psychological and social rehabilitation centres
+   LT S3R043_M3110502 | S3R043 - Professional college students studying foreign languages
+   LT S3R044_M3110112_1 | S3R044 - Students at schools of higher education in natural, technical and applied sciences
+   LT S3R048_M3060101_1 | S3R048 - Basic social benefit
+   LT S3R048_M3060601 | S3R048 - Basic social benefit
+   LT S3R048_M3061201_2 | S3R048 - Basic social benefit
+   LT S3R048_M3060101_3 | S3R048 - Basic social benefit
+   LT S3R057_M3110313 | S3R057 - General school pupils
+   LT S3R057_M3110316 | S3R057 - General school pupils
+   LT S3R057_M3110304 | S3R057 - General school pupils
+   LT S3R057_M3110105_1 | S3R057 - General school pupils
+   LT S3R057_M3110301_1 | S3R057 - General school pupils
+   LT S3R057_M3110302_1 | S3R057 - General school pupils
+   LT S3R057_M3110305_1 | S3R057 - General school pupils
+   LT S3R057_M3110302_3 | S3R057 - General school pupils
+   LT S3R057_M3110322 | S3R057 - General school pupils
+   LT S3R057_M3110333 | S3R057 - General school pupils
+   LT S3R057_M3110333_1 | S3R057 - General school pupils
+   LT S3R058_M3110313 | S3R058 - General school pupils repeating the course
+   LT S3R058_M3110330 | S3R058 - General school pupils repeating the course
+   LT S3R058_M3110330_1 | S3R058 - General school pupils repeating the course
+   LT S3R058_M3110330_2 | S3R058 - General school pupils repeating the course
+   LT S3R058_M3110330_3 | S3R058 - General school pupils repeating the course
+   LT S3R059_M3110306 | S3R059 - General school pupils with special educational needs
+   LT S3R059_M3110312_1 | S3R059 - General school pupils with special educational needs
+   LT S3R060_M3110305_2 | S3R060 - Proportion of general school pupils studying foreign languages
+   LT S3R061_M3110314 | S3R061 - Educational attainment of general school pupils graduates
+   LT S3R061_M3110315 | S3R061 - Educational attainment of general school pupils graduates
+   LT S3R061_M3110331 | S3R061 - Educational attainment of general school pupils graduates
+   LT S3R061_M3110315_1 | S3R061 - Educational attainment of general school pupils graduates
+   LT S3R063_M3110101 | S3R063 - Pupils and students by level of education
+   LT S3R063_M3110101_1 | S3R063 - Pupils and students by level of education
+   LT S3R065_M3120101 | S3R065 - Participants, compared to the total population
+   LT S3R065_M3120102 | S3R065 - Participants, compared to the total population
+   LT S3R065_M3120106 | S3R065 - Participants, compared to the total population
+   LT S3R065_M3120105 | S3R065 - Participants, compared to the total population
+   LT S3R065_M3120108 | S3R065 - Participants, compared to the total population
+   LT S3R065_M3120109 | S3R065 - Participants, compared to the total population
+   LT S3R065_M3120103 | S3R065 - Participants, compared to the total population
+   LT S3R065_M3120110 | S3R065 - Participants, compared to the total population
+   LT S3R065_M3120107 | S3R065 - Participants, compared to the total population
+   LT S3R065_M3120104 | S3R065 - Participants, compared to the total population
+   LT S3R098_M3090601 | S3R098 - Coefficients of variation for disposable income
+   LT S3R098_M3090606 | S3R098 - Coefficients of variation for disposable income
+   LT S3R098_M3090605 | S3R098 - Coefficients of variation for disposable income
+   LT S3R098_M3090603 | S3R098 - Coefficients of variation for disposable income
+   LT S3R098_M3090604 | S3R098 - Coefficients of variation for disposable income
+   LT S3R098_M3090602 | S3R098 - Coefficients of variation for disposable income
+   LT S3R099_M3210105_1 | S3R099 - Purchasing power of monthly disposable income in cash spent on alcoholic beverages
+   LT S3R100_M3210204_1 | S3R100 - Purchasing power of monthly disposable income in cash spent on tobacco products
+   LT S3R115_M3161005 | S3R115 - Number of social worker assistants, home care workers on the staff
+   LT S3R137_M3150313 | S3R137 - Proportion of the population who have difficulties in performing household activities and their need for help
+   LT S3R137_M3150312 | S3R137 - Proportion of the population who have difficulties in performing household activities and their need for help
+   LT S3R137_M3150312_1 | S3R137 - Proportion of the population who have difficulties in performing household activities and their need for help
+   LT S3R138_M3150308 | S3R138 - Proportion of the population who have difficulties in performing basic personal care activities and their need for help
+   LT S3R138_M3150309 | S3R138 - Proportion of the population who have difficulties in performing basic personal care activities and their need for help
+   LT S3R138_M3150309_1 | S3R138 - Proportion of the population who have difficulties in performing basic personal care activities and their need for help
+   LT S3R140_M3150505 | S3R140 - Population by physical activity level
+   LT S3R141_M3150402 | S3R141 - Population by body mass index (BMI) (Health interview survey)
+   LT S3R141_M3150401 | S3R141 - Population by body mass index (BMI) (Health interview survey)
+   LT S3R141_M3150401_2 | S3R141 - Population by body mass index (BMI) (Health interview survey)
+   LT S3R141_M3150401_3 | S3R141 - Population by body mass index (BMI) (Health interview survey)
+   LT S3R141_M3150401_4 | S3R141 - Population by body mass index (BMI) (Health interview survey)
+   LT S3R141_M3150401_5 | S3R141 - Population by body mass index (BMI) (Health interview survey)
+   LT S3R142_M3150609 | S3R142 - Population by number of missing teeth
+   LT S3R143_M3110116 | S3R143 - Educational attainment of the population
+   LT S3R143_M3110117 | S3R143 - Educational attainment of the population
+   LT S3R143_M3110123 | S3R143 - Educational attainment of the population
+   LT S3R143_M3110111_1 | S3R143 - Educational attainment of the population
+   LT S3R143_M3110113_1 | S3R143 - Educational attainment of the population
+   LT S3R144_M3150316 | S3R144 - Proportion of the population who, because of long-standing health problems, get out of home rarer or do not get out at all
+   LT S3R145_M3150704 | S3R145 - Proportion of the population who took blood pressure lowering measures
+   LT S3R145_M3150703 | S3R145 - Proportion of the population who took blood pressure lowering measures
+   LT S3R146_M3150603 | S3R146 - Proportion of the population who stayed in hospital
+   LT S3R147_M3150610 | S3R147 - Proportion of the population who saw an odontologist
+   LT S3R147_M3150611 | S3R147 - Proportion of the population who saw an odontologist
+   LT S3R147_M3150610_1 | S3R147 - Proportion of the population who saw an odontologist
+   LT S3R147_M3150610_2 | S3R147 - Proportion of the population who saw an odontologist
+   LT S3R147_M3150610_3 | S3R147 - Proportion of the population who saw an odontologist
+   LT S3R147_M3150610_4 | S3R147 - Proportion of the population who saw an odontologist
+   LT S3R147_M3150610_5 | S3R147 - Proportion of the population who saw an odontologist
+   LT S3R148_M3150602 | S3R148 - Proportion of the population who used health care services
+   LT S3R148_M3150601 | S3R148 - Proportion of the population who used health care services
+   LT S3R148_M3150601_2 | S3R148 - Proportion of the population who used health care services
+   LT S3R148_M3150601_3 | S3R148 - Proportion of the population who used health care services
+   LT S3R148_M3150601_4 | S3R148 - Proportion of the population who used health care services
+   LT S3R148_M3150601_5 | S3R148 - Proportion of the population who used health care services
+   LT S3R149_M3150606 | S3R149 - Proportion of the population who consulted a doctor during the last 12 months
+   LT S3R149_M3150605 | S3R149 - Proportion of the population who consulted a doctor during the last 12 months
+   LT S3R149_M3150605_2 | S3R149 - Proportion of the population who consulted a doctor during the last 12 months
+   LT S3R149_M3150605_3 | S3R149 - Proportion of the population who consulted a doctor during the last 12 months
+   LT S3R149_M3150605_4 | S3R149 - Proportion of the population who consulted a doctor during the last 12 months
+   LT S3R149_M3150605_5 | S3R149 - Proportion of the population who consulted a doctor during the last 12 months
+   LT S3R150_M3150608 | S3R150 - Proportion of the population who consulted a specialist during the last 12 months
+   LT S3R150_M3150607 | S3R150 - Proportion of the population who consulted a specialist during the last 12 months
+   LT S3R150_M3150607_2 | S3R150 - Proportion of the population who consulted a specialist during the last 12 months
+   LT S3R150_M3150607_3 | S3R150 - Proportion of the population who consulted a specialist during the last 12 months
+   LT S3R150_M3150607_4 | S3R150 - Proportion of the population who consulted a specialist during the last 12 months
+   LT S3R150_M3150607_5 | S3R150 - Proportion of the population who consulted a specialist during the last 12 months
+   LT S3R151_M3150701 | S3R151 - Proportion of the population who had vaccination during the last 12 months
+   LT S3R151_M3150701_2 | S3R151 - Proportion of the population who had vaccination during the last 12 months
+   LT S3R151_M3150701_3 | S3R151 - Proportion of the population who had vaccination during the last 12 months
+   LT S3R151_M3150701_4 | S3R151 - Proportion of the population who had vaccination during the last 12 months
+   LT S3R151_M3150701_5 | S3R151 - Proportion of the population who had vaccination during the last 12 months
+   LT S3R152_M3150705 | S3R152 - Proportion of the population who had their blood sugar and blood cholesterol levels measured in the last 12 months
+   LT S3R152_M3150705_2 | S3R152 - Proportion of the population who had their blood sugar and blood cholesterol levels measured in the last 12 months
+   LT S3R152_M3150705_3 | S3R152 - Proportion of the population who had their blood sugar and blood cholesterol levels measured in the last 12 months
+   LT S3R152_M3150705_4 | S3R152 - Proportion of the population who had their blood sugar and blood cholesterol levels measured in the last 12 months
+   LT S3R152_M3150705_5 | S3R152 - Proportion of the population who had their blood sugar and blood cholesterol levels measured in the last 12 months
+   LT S3R153_M3150702 | S3R153 - Proportion of the population who had arterial blood pressure measured in the last 12 months by health professional
+   LT S3R153_M3150702_2 | S3R153 - Proportion of the population who had arterial blood pressure measured in the last 12 months by health professional
+   LT S3R153_M3150702_3 | S3R153 - Proportion of the population who had arterial blood pressure measured in the last 12 months by health professional
+   LT S3R153_M3150702_4 | S3R153 - Proportion of the population who had arterial blood pressure measured in the last 12 months by health professional
+   LT S3R153_M3150702_5 | S3R153 - Proportion of the population who had arterial blood pressure measured in the last 12 months by health professional
+   LT S3R154_M3150305 | S3R154 - Proportion of the population who have difficulties doing at least one housework or personal care activity
+   LT S3R155_M3150315 | S3R155 - Proportion of the population who have difficulties doing usual leisure or social activities
+   LT S3R155_M3150314 | S3R155 - Proportion of the population who have difficulties doing usual leisure or social activities
+   LT S3R156_M3150311 | S3R156 - Proportion of population who have difficulties in performing household activities
+   LT S3R156_M3150310 | S3R156 - Proportion of population who have difficulties in performing household activities
+   LT S3R157_M3150307 | S3R157 - Proportion of the population who have difficulties in performing basic personal care activities
+   LT S3R157_M3150306 | S3R157 - Proportion of the population who have difficulties in performing basic personal care activities
+   LT S3R158_M3150203 | S3R158 - Proportion of the population whose day-to-day activities were limited due to medical conditions during the last 6 months
+   LT S3R158_M3150203_2 | S3R158 - Proportion of the population whose day-to-day activities were limited due to medical conditions during the last 6 months
+   LT S3R158_M3150203_3 | S3R158 - Proportion of the population whose day-to-day activities were limited due to medical conditions during the last 6 months
+   LT S3R158_M3150203_4 | S3R158 - Proportion of the population whose day-to-day activities were limited due to medical conditions during the last 6 months
+   LT S3R158_M3150203_5 | S3R158 - Proportion of the population whose day-to-day activities were limited due to medical conditions during the last 6 months
+   LT S3R158_M3150203_6 | S3R158 - Proportion of the population whose day-to-day activities were limited due to medical conditions during the last 6 months
+   LT S3R158_M3150133 | S3R158 - Proportion of the population whose day-to-day activities were limited due to medical conditions during the last 6 months
+   LT S3R158_M3150134 | S3R158 - Proportion of the population whose day-to-day activities were limited due to medical conditions during the last 6 months
+   LT S3R158_M3150135 | S3R158 - Proportion of the population whose day-to-day activities were limited due to medical conditions during the last 6 months
+   LT S3R158_M3150135_1 | S3R158 - Proportion of the population whose day-to-day activities were limited due to medical conditions during the last 6 months
+   LT S3R158_M3150134_1 | S3R158 - Proportion of the population whose day-to-day activities were limited due to medical conditions during the last 6 months
+   LT S3R158_M3150133_1 | S3R158 - Proportion of the population whose day-to-day activities were limited due to medical conditions during the last 6 months
+   LT S3R159_M3150502 | S3R159 - Population smoking habits of tobacco products
+   LT S3R159_M3150501 | S3R159 - Population smoking habits of tobacco products
+   LT S3R159_M3150501_2 | S3R159 - Population smoking habits of tobacco products
+   LT S3R159_M3150501_3 | S3R159 - Population smoking habits of tobacco products
+   LT S3R159_M3150501_4 | S3R159 - Population smoking habits of tobacco products
+   LT S3R159_M3150501_5 | S3R159 - Population smoking habits of tobacco products
+   LT S3R160_M3150102 | S3R160 - Self-perceived health (Income and living conditions survey)
+   LT S3R160_M3150103 | S3R160 - Self-perceived health (Income and living conditions survey)
+   LT S3R160_M3150104 | S3R160 - Self-perceived health (Income and living conditions survey)
+   LT S3R160_M3150105 | S3R160 - Self-perceived health (Income and living conditions survey)
+   LT S3R160_M3150106 | S3R160 - Self-perceived health (Income and living conditions survey)
+   LT S3R160_M3150130 | S3R160 - Self-perceived health (Income and living conditions survey)
+   LT S3R160_M3150131 | S3R160 - Self-perceived health (Income and living conditions survey)
+   LT S3R160_M3150132 | S3R160 - Self-perceived health (Income and living conditions survey)
+   LT S3R160_M3150130_1 | S3R160 - Self-perceived health (Income and living conditions survey)
+   LT S3R160_M3150131_1 | S3R160 - Self-perceived health (Income and living conditions survey)
+   LT S3R160_M3150132_1 | S3R160 - Self-perceived health (Income and living conditions survey)
+   LT S3R161_M3150202 | S3R161 - Proportion of the population having a chronic disease or long-term condition (Income and living conditions survey)
+   LT S3R161_M3150201_1 | S3R161 - Proportion of the population having a chronic disease or long-term condition (Income and living conditions survey)
+   LT S3R161_M3150201_2 | S3R161 - Proportion of the population having a chronic disease or long-term condition (Income and living conditions survey)
+   LT S3R161_M3150201_3 | S3R161 - Proportion of the population having a chronic disease or long-term condition (Income and living conditions survey)
+   LT S3R161_M3150201_4 | S3R161 - Proportion of the population having a chronic disease or long-term condition (Income and living conditions survey)
+   LT S3R161_M3150138 | S3R161 - Proportion of the population having a chronic disease or long-term condition (Income and living conditions survey)
+   LT S3R161_M3150137 | S3R161 - Proportion of the population having a chronic disease or long-term condition (Income and living conditions survey)
+   LT S3R161_M3150136 | S3R161 - Proportion of the population having a chronic disease or long-term condition (Income and living conditions survey)
+   LT S3R161_M3150136_1 | S3R161 - Proportion of the population having a chronic disease or long-term condition (Income and living conditions survey)
+   LT S3R161_M3150137_1 | S3R161 - Proportion of the population having a chronic disease or long-term condition (Income and living conditions survey)
+   LT S3R161_M3150138_1 | S3R161 - Proportion of the population having a chronic disease or long-term condition (Income and living conditions survey)
+   LT S3R162_M3010215_2 | S3R162 - Proportion of the population by ethnicity, compared to the total resident population
+   LT S3R166_M3010218 | S3R166 - Resident population as of 1 July
+   LT S3R166_M3010219 | S3R166 - Resident population as of 1 July
+   LT S3R167_M3010210 | S3R167 - Resident population at the beginning of the year
+   LT S3R167_M3010222 | S3R167 - Resident population at the beginning of the year
+   LT S3R167_M3010216 | S3R167 - Resident population at the beginning of the year
+   LT S3R167_M3010214 | S3R167 - Resident population at the beginning of the year
+   LT S3R167_M3010205 | S3R167 - Resident population at the beginning of the year
+   LT S3R167_M3010213 | S3R167 - Resident population at the beginning of the year
+   LT S3R167_M3010206 | S3R167 - Resident population at the beginning of the year
+   LT S3R167_M3010224 | S3R167 - Resident population at the beginning of the year
+   LT S3R167_M3010202 | S3R167 - Resident population at the beginning of the year
+   LT S3R167_M3010203 | S3R167 - Resident population at the beginning of the year
+   LT S3R167_M3010215_1 | S3R167 - Resident population at the beginning of the year
+   LT S3R167_M3010210_1 | S3R167 - Resident population at the beginning of the year
+   LT S3R167_M3010319 | S3R167 - Resident population at the beginning of the year
+   LT S3R167_M3010320 | S3R167 - Resident population at the beginning of the year
+   LT S3R168_M3010101_1 | S3R168 - Resident population at the beginning of the month
+   LT S3R170_M3010211_2 | S3R170 - Population density at the beginning of the year
+   LT S3R171_M3150302 | S3R171 - Proportion of the population who have at least one physical or sensory function disorder which limits their day-to-day activity
+   LT S3R172_M3150301 | S3R172 - Proportion of the population who have at least one physical or sensory function disorder
+   LT S3R172_M3150301_2 | S3R172 - Proportion of the population who have at least one physical or sensory function disorder
+   LT S3R172_M3150301_3 | S3R172 - Proportion of the population who have at least one physical or sensory function disorder
+   LT S3R172_M3150301_4 | S3R172 - Proportion of the population who have at least one physical or sensory function disorder
+   LT S3R172_M3150301_5 | S3R172 - Proportion of the population who have at least one physical or sensory function disorder
+   LT S3R173_M3150303 | S3R173 - Unmet need for aids of the population having physical or sensory function disorders
+   LT S3R173_M3150303_1 | S3R173 - Unmet need for aids of the population having physical or sensory function disorders
+   LT S3R173_M3150303_2 | S3R173 - Unmet need for aids of the population having physical or sensory function disorders
+   LT S3R173_M3150303_3 | S3R173 - Unmet need for aids of the population having physical or sensory function disorders
+   LT S3R173_M3150303_4 | S3R173 - Unmet need for aids of the population having physical or sensory function disorders
+   LT S3R173_M3150303_5 | S3R173 - Unmet need for aids of the population having physical or sensory function disorders
+   LT S3R174_M3150503 | S3R174 - Proportion of the population consuming alcoholic beverages
+   LT S3R175_M3150504 | S3R175 - Proportion of the population who consumed alcoholic beverages during the last 12 months
+   LT S3R175_M3150503_1 | S3R175 - Proportion of the population who consumed alcoholic beverages during the last 12 months
+   LT S3R175_M3150503_2 | S3R175 - Proportion of the population who consumed alcoholic beverages during the last 12 months
+   LT S3R175_M3150503_3 | S3R175 - Proportion of the population who consumed alcoholic beverages during the last 12 months
+   LT S3R175_M3150503_4 | S3R175 - Proportion of the population who consumed alcoholic beverages during the last 12 months
+   LT S3R175_M3150503_5 | S3R175 - Proportion of the population who consumed alcoholic beverages during the last 12 months
+   LT S3R307_M3110902 | S3R307 - School funds and income
+   LT S3R311_M3110103 | S3R311 - Pupils and students who received education
+   LT S3R312_M3110111 | S3R312 - Pupils and students with a disability in educational institutions
+   LT S3R313_M3110802 | S3R313 - Students in non-formal education institutions
+   LT S3R313_M3110802_1 | S3R313 - Students in non-formal education institutions
+   LT S3R314_M3110402 | S3R314 - Pupils trying to enter vocational training institutions
+   LT S3R315_M3110108_2 | S3R315 - Number of pupils and students
+   LT S3R321_M3130103_3 | S3R321 - Number of museum visitors per 100 population
+   LT S3R336_M3010501_1 | S3R336 - Natural population change
+   LT S3R346_M3061201_1 | S3R346 - Non-taxable income rate
+   LT S3R346_M3060101_2 | S3R346 - Non-taxable income rate
+   LT S3R353_M3120113 | S3R353 - Participants in non-formal education, compared to the total population
+   LT S3R353_M3120116 | S3R353 - Participants in non-formal education, compared to the total population
+   LT S3R353_M3120112 | S3R353 - Participants in non-formal education, compared to the total population
+   LT S3R353_M3120118 | S3R353 - Participants in non-formal education, compared to the total population
+   LT S3R353_M3120111 | S3R353 - Participants in non-formal education, compared to the total population
+   LT S3R353_M3120117 | S3R353 - Participants in non-formal education, compared to the total population
+   LT S3R358_M3160909_1 | S3R358 - Number of pupils receiving free school meals
+   LT S3R374_M3161002 | S3R374 - Number of recipients of social care benefit
+   LT S3R375_M3090508 | S3R375 - Amount of income needed to make a moderate living per household member per month
+   LT S3R375_M3090509 | S3R375 - Amount of income needed to make a moderate living per household member per month
+   LT S3R375_M3090510 | S3R375 - Amount of income needed to make a moderate living per household member per month
+   LT S3R375_M3090507 | S3R375 - Amount of income needed to make a moderate living per household member per month
+   LT S3R375_M3090512 | S3R375 - Amount of income needed to make a moderate living per household member per month
+   LT S3R375_M3090511 | S3R375 - Amount of income needed to make a moderate living per household member per month
+   LT S3R400_M3140103_1 | S3R400 - Number of practicing physicians, dentists and nurses per 10 000 population
+   LT S3R405_M3110401_2 | S3R405 - Students admitted to vocational training institutions
+   LT S3R405_M3110403_1 | S3R405 - Students admitted to vocational training institutions
+   LT S3R406_M3110501_2 | S3R406 - Students admitted to professional colleges
+   LT S3R407_M3110605_1 | S3R407 - Students admitted to colleges
+   LT S3R407_M3110610 | S3R407 - Students admitted to colleges
+   LT S3R407_M3110601_3 | S3R407 - Students admitted to colleges
+   LT S3R407_M3110602_2 | S3R407 - Students admitted to colleges
+   LT S3R408_M3110702_1 | S3R408 - Students admitted to universities
+   LT S3R408_M3110701_1 | S3R408 - Students admitted to universities
+   LT S3R408_M3110714 | S3R408 - Students admitted to universities
+   LT S3R408_M3110709_2 | S3R408 - Students admitted to universities
+   LT S3R412_M3110407 | S3R412 - Students of vocational training institutions studying foreign languages
+   LT S3R412_M3110406 | S3R412 - Students of vocational training institutions studying foreign languages
+   LT S3R529_M3110709_1 | S3R529 - University students
+   LT S3R529_M3110704 | S3R529 - University students
+   LT S3R529_M3110703 | S3R529 - University students
+   LT S3R529_M3110707 | S3R529 - University students
+   LT S3R529_M3110702_2 | S3R529 - University students
+   LT S3R529_M3110701_3 | S3R529 - University students
+   LT S3R529_M3110105_3 | S3R529 - University students
+   LT S3R529_M3110707_1 | S3R529 - University students
+   LT S3R530_M3110717 | S3R530 - University students who during the academic year broadened knowledge abroad
+   LT S3R551_M3160902_2 | S3R551 - Number of children in families at social risk at the end of the year
+   LT S3R551_M3160920 | S3R551 - Number of children in families at social risk at the end of the year
+   LT S3R551_M3160921 | S3R551 - Number of children in families at social risk at the end of the year
+   LT S3R559_M3150802 | S3R559 - Proportion of the population who used prescribed and non-prescribed medicines
+   LT S3R559_M3150801 | S3R559 - Proportion of the population who used prescribed and non-prescribed medicines
+   LT S3R559_M3150805 | S3R559 - Proportion of the population who used prescribed and non-prescribed medicines
+   LT S3R559_M3150804 | S3R559 - Proportion of the population who used prescribed and non-prescribed medicines
+   LT S3R559_M3150803 | S3R559 - Proportion of the population who used prescribed and non-prescribed medicines
+   LT S3R559_M3150806 | S3R559 - Proportion of the population who used prescribed and non-prescribed medicines
+   LT S3R559_M3150801_2 | S3R559 - Proportion of the population who used prescribed and non-prescribed medicines
+   LT S3R559_M3150801_3 | S3R559 - Proportion of the population who used prescribed and non-prescribed medicines
+   LT S3R559_M3150801_4 | S3R559 - Proportion of the population who used prescribed and non-prescribed medicines
+   LT S3R559_M3150801_5 | S3R559 - Proportion of the population who used prescribed and non-prescribed medicines
+   LT S3R570_M3161401_1 | S3R570 - Number of cases of State social insurance sickness benefit paid
+   LT S3R571_M3160405 | S3R571 - Recipients of State social insurance pensions paid to Lithuanian nationals living abroad at the end of the year
+   LT S3R572_M3160404_2 | S3R572 - State social insurance old-age, disability and work incapacity pension rates at the end of the year
+   LT S3R573_M3160404_1 | S3R573 - Recipients of State social insurance old-age, disability and work incapacity pensions at the end of the year
+   LT S3R574_M3160402_3 | S3R574 - Average State social insurance pension
+   LT S3R576_M3130105_3 | S3R576 - Number of theatregoers in national theatres per 100 population
+   LT S3R585_M3080101 | S3R585 - Average disposable income per month
+   LT S3R585_M3080102 | S3R585 - Average disposable income per month
+   LT S3R585_M3080103 | S3R585 - Average disposable income per month
+   LT S3R585_M3080104 | S3R585 - Average disposable income per month
+   LT S3R585_M3080102_1 | S3R585 - Average disposable income per month
+   LT S3R586_M3090109 | S3R586 - Average disposable income per household member per month
+   LT S3R586_M3090101 | S3R586 - Average disposable income per household member per month
+   LT S3R586_M3090103 | S3R586 - Average disposable income per household member per month
+   LT S3R586_M3090106 | S3R586 - Average disposable income per household member per month
+   LT S3R586_M3090104 | S3R586 - Average disposable income per household member per month
+   LT S3R586_M3090102 | S3R586 - Average disposable income per household member per month
+   LT S3R586_M3090105 | S3R586 - Average disposable income per household member per month
+   LT S3R586_M3090108 | S3R586 - Average disposable income per household member per month
+   LT S3R586_M3090107 | S3R586 - Average disposable income per household member per month
+   LT S3R629_M3010217 | S3R629 - Median age of the population at the beginning of the year
+   LT S3R633_M3010223 | S3R633 - Average annual population
+   LT S3R633_M3010211_1 | S3R633 - Average annual population
+   LT S3R633_M3010223_1 | S3R633 - Average annual population
+   LT S3R635_M3160502_1 | S3R635 - Average annual number of recipients of State social insurance maternity, paternity and child care benefits
+   LT S3R636_M3160402_1 | S3R636 - Average annual number of recipients of State social insurance pensions
+   LT S3R641_M3060823 | S3R641 - Tax rate,  less universal cash benefits
+   LT S3R685_M3110109 | S3R685 - Number of pupils and students per 10 000 population
+   LT S3R687_M3140709_2 | S3R687 - Number of persons of working age with a reduced level of participation established for the first time per 1,000 working-age population
+   LT S3R688_M3160402_4 | S3R688 - Number of recipients of State social insurance Old-age and Work incapacity (Disability) pensions per 1000 working-age population
+   LT S3R689_M3140601 | S3R689 - Number of persons who lost work capacity due to accidents at work per 1000 employed population
+   LT S3R690_M3140605 | S3R690 - Number of employees who lost work capacity due to accidents at work per 100 employed population
+   LT S3R691_M3140202_2 | S3R691 - Number of persons who received emergency medical care per 1000 population
+   LT S3R693_M3140301 | S3R693 - Number of hospital discharges per 1000 population
+   LT S3R695_M3010501_2 | S3R695 - Crude rate of natural population change
+   LT S3R700_M3110112_2 | S3R700 - Number of those who graduated in natural, technical and applied sciences per 1000 population aged 20–29
+   LT S3R701_M3140106_1 | S3R701 - Number of physicians per 10 000 population
+   LT S3R702_M3140104 | S3R702 - Number of hospital beds per 10 000 population
+   LT S3R702_M3140105_4 | S3R702 - Number of hospital beds per 10 000 population
+   LT S3R703_M3140105_1 | S3R703 - Number of hospital beds per 10 000 population (excluding nursing beds)
+   LT S3R703_M3140105_3 | S3R703 - Number of hospital beds per 10 000 population (excluding nursing beds)
+   LT S3R704_M3140106_1 | S3R704 - Number of practicing physicians per 10 000 population
+   LT S3R705_M3140107_2 | S3R705 - Number of pharmacists per 10 000 population
+   LT S3R706_M3140309 | S3R706 - Number of persons undergoing treatment for mental and behavioural disorders due to the use of psychoactive substances per 100 000 population
+   LT S3R706_M3140310 | S3R706 - Number of persons undergoing treatment for mental and behavioural disorders due to the use of psychoactive substances per 100 000 population
+   LT S3R707_M3170104 | S3R707 - Number of persons suspected of (charged with) criminal offences per 100 000 population
+   LT S3R708_M3010602 | S3R708 - Deaths per 100 000 population
+   LT S3R708_M3010621_1 | S3R708 - Deaths per 100 000 population
+   LT S3R708_M3010622_1 | S3R708 - Deaths per 100 000 population
+   LT S3R708_M3010620_1 | S3R708 - Deaths per 100 000 population
+   LT S3R708_M3010623_1 | S3R708 - Deaths per 100 000 population
+   LT S3R708_M3010603_1 | S3R708 - Deaths per 100 000 population
+   LT S3R708_M9070373_1 | S3R708 - Deaths per 100 000 population
+   LT S3R709_M3140308 | S3R709 - Number of new cases of AIDS per 100 000 population
+   LT S3R710_M3140311 | S3R710 - Number of new cases of smoking-related diseases per 100 000 population
+   LT S3R711_M3140308 | S3R711 - Number of HIV-positive persons recorded over the year per 100 000 population
+   LT S3R711_M3140308_1 | S3R711 - Number of HIV-positive persons recorded over the year per 100 000 population
+   LT S3R712_M3140305 | S3R712 - Number of new cases of active tuberculosis per 100 000 population
+   LT S3R712_M3140306 | S3R712 - Number of new cases of active tuberculosis per 100 000 population
+   LT S3R712_M3140307 | S3R712 - Number of new cases of active tuberculosis per 100 000 population
+   LT S3R713_M3140304 | S3R713 - Number of new cases of malignant neoplasms per 100 000 population
+   LT S3R714_M3170402_3 | S3R714 - Number of police officers per 100 000 population
+   LT S3R715_M3140308 | S3R715 - Number of cases of AIDS per 100 000 population at the end of the year
+   LT S3R716_M3140305_1 | S3R716 - Number of cases of active tuberculosis per 100 000 population at the end of the year
+   LT S3R716_M3140306_1 | S3R716 - Number of cases of active tuberculosis per 100 000 population at the end of the year
+   LT S3R716_M3140307_1 | S3R716 - Number of cases of active tuberculosis per 100 000 population at the end of the year
+   LT S3R717_M3140304 | S3R717 - Number of cases of malignant neoplasms per 100 000 population at the end of the year
+   LT S3R718_M3140303 | S3R718 - Number of cases of communicable diseases per 100 000 population
+   LT S3R719_M3170101 | S3R719 - Number of criminal offences registered per 100 000 population
+   LT S3R720_M3170114 | S3R720 - Number of criminal offences related to the possession and smuggling of narcotic or psychotropic substances registered per 100 000 population
+   LT S3R721_M3140308 | S3R721 - Number of HIV-positive persons per 100 000 population at the end of the year
+   LT S3R724_M3080305 | S3R724 - At-risk-of-poverty rate of persons aged 18 and older
+   LT S3R724_M3080311 | S3R724 - At-risk-of-poverty rate of persons aged 18 and older
+   LT S3R724_M3080364 | S3R724 - At-risk-of-poverty rate of persons aged 18 and older
+   LT S5R066_M7080202_2 | S5R066 - Broadband penetration per 100 population
+   LT S5R066_M7080303_3 | S5R066 - Broadband penetration per 100 population
+   LT S5R086_M7030305_2 | S5R086 - Number of personal cars per 1000 population
+   LT S7R017_M2010235_1 | S7R017 - Gross mixed income
+   LT S7R022_M2010235_2 | S7R022 - Structure of gross mixed income
+   LT S7R022_M2010287_2 | S7R022 - Structure of gross mixed income
+   LT S7R029_M2010280_2 | S7R029 - GDP structure by income approach
+   LT S7R029_M2010281_2 | S7R029 - GDP structure by income approach
+   LT S7R057_M2010239 | S7R057 - Net operating surplus and net mixed income
+   LT S7R057_M2010233_1 | S7R057 - Net operating surplus and net mixed income
+   LT S7R059_M2010233_2 | S7R059 - Structure of net operating surplus and net mixed income
+   LT S7R059_M2010285_2 | S7R059 - Structure of net operating surplus and net mixed income
+   LT S7R078_M2040208 | S7R078 - Taxes and social security contributions according (ESA 95)
+   LT S7R088_M2010242 | S7R088 - Real national income
+   LT S7R088_M2010113 | S7R088 - Real national income
+   LT S8R010_M4090208_2 | S8R010 - Income of accommodation establishments (VAT excluded) until 2012
+   LT S8R122_M4100602_2 | S8R122 - Social insurance contributions by financial and insurance enterprises (including individual)
+   LT S8R124_M4030601_1 | S8R124 - Income from financial and investment activities
+   LT S8R239_M4030601_1 | S8R239 - Other operating income
+   LT S8R239_M4032204_2 | S8R239 - Other operating income
+   LT S8R251_M4100206 | S8R251 - Investment income and costs of collective investment undertakings
+   LT S8R251_M4100206_1 | S8R251 - Investment income and costs of collective investment undertakings
+   LT S8R295_M4090501_2 | S8R295 - Travel agencies and tour operators income for provided services
+   LT S8R334_M4032007_12 | S8R334 - Income from subcontracting in non-financial enterprises
+   LT S8R344_M4110503 | S8R344 - Income received from the sale of assets
+   LT S8R344_M4110501 | S8R344 - Income received from the sale of assets
+   LT S8R344_M4110502 | S8R344 - Income received from the sale of assets
+   LT S8R445_M4032001_2 | S8R445 - Social security contributions in non-financial enterprises
+   LT S8R445_M4032003_2 | S8R445 - Social security contributions in non-financial enterprises
+   LT S8R445_M4032006_13 | S8R445 - Social security contributions in non-financial enterprises
+   LT S8R446_M4031101_1 | S8R446 - Social insurance contributions
+   LT S8R446_M4032206 | S8R446 - Social insurance contributions
+   LT S8R462_M4030201_3 | S8R462 - Accumulated (receivable) income and expenditure of the coming period
+   LT S8R553_M4031702_1 | S8R553 - Total income (Individual enterprises)
+   LT S8R556_M4010117_1 | S8R556 - Number of enterprises, farmers and natural persons per 1000 population at the beginning of the year
+   LT S8R557_M4010117_1 | S8R557 - Number of economic entities, farmers and natural persons per 1000 population at the beginning of the year
+   LT S8R577_M4070303_9 | S8R577 - Number of retail stores of retail trade, motor vehicles enterprises per 1000 population at the end of the year
+   LT S8R578_M4070303_7 | S8R578 - Sales area of retail stores of retail trade, motor vehicles enterprises per 1000 population at the end of the year
+   LT S8R579_M4070303_4 | S8R579 - Number of catering units of food and beverage service enterprises per 1000 population at the end of the year
+   LT S8R580_M4070303_4 | S8R580 - Number of seats in the catering units of food and beverage service enterprises per 1000 population at the end of the year
+   LT S3R914_M3150516_5 | S3R914 - Proportion of the population by type of work
+   LT S3R915_M3150520 | S3R915 - Proportion of the population who engage in specific physical activities to strengthen the muscles
+   LT S3R915_M3150520_2 | S3R915 - Proportion of the population who engage in specific physical activities to strengthen the muscles
+   LT S3R915_M3150520_3 | S3R915 - Proportion of the population who engage in specific physical activities to strengthen the muscles
+   LT S3R915_M3150520_4 | S3R915 - Proportion of the population who engage in specific physical activities to strengthen the muscles
+   LT S3R915_M3150520_5 | S3R915 - Proportion of the population who engage in specific physical activities to strengthen the muscles
+   LT S3R916_M3150519 | S3R916 - Proportion of the population who usually engage in sports, fitness or active leisure activities 30 minutes and more a day
+   LT S3R916_M3150519_2 | S3R916 - Proportion of the population who usually engage in sports, fitness or active leisure activities 30 minutes and more a day
+   LT S3R916_M3150519_3 | S3R916 - Proportion of the population who usually engage in sports, fitness or active leisure activities 30 minutes and more a day
+   LT S3R916_M3150519_4 | S3R916 - Proportion of the population who usually engage in sports, fitness or active leisure activities 30 minutes and more a day
+   LT S3R916_M3150519_5 | S3R916 - Proportion of the population who usually engage in sports, fitness or active leisure activities 30 minutes and more a day
+   LT S3R917_M3150517 | S3R917 - Proportion of the population who usually walk 30 minutes and more a day
+   LT S3R917_M3150517_2 | S3R917 - Proportion of the population who usually walk 30 minutes and more a day
+   LT S3R917_M3150517_3 | S3R917 - Proportion of the population who usually walk 30 minutes and more a day
+   LT S3R917_M3150517_4 | S3R917 - Proportion of the population who usually walk 30 minutes and more a day
+   LT S3R917_M3150517_5 | S3R917 - Proportion of the population who usually walk 30 minutes and more a day
+   LT S3R918_M3150518 | S3R918 - Proportion of the population who usually cycle 30 minutes and more a day
+   LT S3R918_M3150518_2 | S3R918 - Proportion of the population who usually cycle 30 minutes and more a day
+   LT S3R918_M3150518_3 | S3R918 - Proportion of the population who usually cycle 30 minutes and more a day
+   LT S3R918_M3150518_4 | S3R918 - Proportion of the population who usually cycle 30 minutes and more a day
+   LT S3R918_M3150518_5 | S3R918 - Proportion of the population who usually cycle 30 minutes and more a day
+   LT S3R919_M3150614 | S3R919 - Proportion of the population who have been providing informal care or assistance to other people with health problems at least once a week
+   LT S3R919_M3150614_2 | S3R919 - Proportion of the population who have been providing informal care or assistance to other people with health problems at least once a week
+   LT S3R919_M3150614_3 | S3R919 - Proportion of the population who have been providing informal care or assistance to other people with health problems at least once a week
+   LT S3R919_M3150614_4 | S3R919 - Proportion of the population who have been providing informal care or assistance to other people with health problems at least once a week
+   LT S3R919_M3150614_5 | S3R919 - Proportion of the population who have been providing informal care or assistance to other people with health problems at least once a week
+   LT S3R921_M3150901 | S3R921 - Proportion of the population who have experienced delay in getting health care
+   LT S3R921_M3150901_2 | S3R921 - Proportion of the population who have experienced delay in getting health care
+   LT S3R921_M3150901_3 | S3R921 - Proportion of the population who have experienced delay in getting health care
+   LT S3R921_M3150901_4 | S3R921 - Proportion of the population who have experienced delay in getting health care
+   LT S3R921_M3150901_5 | S3R921 - Proportion of the population who have experienced delay in getting health care
+   LT S3R927_M3150525_2 | S3R927 - Number of portions consumed per day by the population eating vegetables daily
+   LT S3R927_M3150525 | S3R927 - Number of portions consumed per day by the population eating vegetables daily
+   LT S3R927_M3150525_3 | S3R927 - Number of portions consumed per day by the population eating vegetables daily
+   LT S3R927_M3150525_4 | S3R927 - Number of portions consumed per day by the population eating vegetables daily
+   LT S3R927_M3150525_5 | S3R927 - Number of portions consumed per day by the population eating vegetables daily
+   LT S3R927_M3150526_2 | S3R927 - Number of portions consumed per day by the population eating vegetables daily
+   LT S3R927_M3150526 | S3R927 - Number of portions consumed per day by the population eating vegetables daily
+   LT S3R927_M3150526_3 | S3R927 - Number of portions consumed per day by the population eating vegetables daily
+   LT S3R927_M3150526_4 | S3R927 - Number of portions consumed per day by the population eating vegetables daily
+   LT S3R927_M3150526_5 | S3R927 - Number of portions consumed per day by the population eating vegetables daily
+   LT S3R928_M3150522 | S3R928 - Number of portions consumed per day by the population eating fruit daily
+   LT S3R928_M3150522_2 | S3R928 - Number of portions consumed per day by the population eating fruit daily
+   LT S3R928_M3150522_3 | S3R928 - Number of portions consumed per day by the population eating fruit daily
+   LT S3R928_M3150522_4 | S3R928 - Number of portions consumed per day by the population eating fruit daily
+   LT S3R928_M3150522_5 | S3R928 - Number of portions consumed per day by the population eating fruit daily
+   LT S3R928_M3150523 | S3R928 - Number of portions consumed per day by the population eating fruit daily
+   LT S3R928_M3150523_2 | S3R928 - Number of portions consumed per day by the population eating fruit daily
+   LT S3R928_M3150523_3 | S3R928 - Number of portions consumed per day by the population eating fruit daily
+   LT S3R928_M3150523_4 | S3R928 - Number of portions consumed per day by the population eating fruit daily
+   LT S3R928_M3150523_5 | S3R928 - Number of portions consumed per day by the population eating fruit daily
+   LT S3R932_M3150514 | S3R932 - Proportion of the population who consumed hazardous amounts of alcohol (heavy episodic drinking)
+   LT S3R932_M3150514_2 | S3R932 - Proportion of the population who consumed hazardous amounts of alcohol (heavy episodic drinking)
+   LT S3R932_M3150514_3 | S3R932 - Proportion of the population who consumed hazardous amounts of alcohol (heavy episodic drinking)
+   LT S3R932_M3150514_4 | S3R932 - Proportion of the population who consumed hazardous amounts of alcohol (heavy episodic drinking)
+   LT S3R932_M3150514_5 | S3R932 - Proportion of the population who consumed hazardous amounts of alcohol (heavy episodic drinking)
+   LT S3R936_M3150508 | S3R936 - Average amount of alcohol consumed on the day the alcohol is consumed by the population consuming alcohol from Monday to Thursday
+   LT S3R936_M3150508_2 | S3R936 - Average amount of alcohol consumed on the day the alcohol is consumed by the population consuming alcohol from Monday to Thursday
+   LT S3R937_M3150512 | S3R937 - Average amount of alcohol (standard drinks) consumed on the day the alcohol is consumed by the population consuming alcohol from Friday to Sunday
+   LT S3R937_M3150512_2 | S3R937 - Average amount of alcohol (standard drinks) consumed on the day the alcohol is consumed by the population consuming alcohol from Friday to Sunday
+   LT S3R938_M3150510 | S3R938 - Proportion of the population who consumed alcoholic beverages from Friday to Sunday
+   LT S3R938_M3150510_2 | S3R938 - Proportion of the population who consumed alcoholic beverages from Friday to Sunday
+   LT S3R939_M3150506 | S3R939 - Proportion of the population who consumed alcoholic beverages from Monday to Thursday
+   LT S3R939_M3150506_2 | S3R939 - Proportion of the population who consumed alcoholic beverages from Monday to Thursday
+   LT S3R941_M3140902 | S3R941 - Proportion of the population aged 15–64 having longstanding health problems and/or difficulties in basic activities
+   LT S3R941_M3140902_1 | S3R941 - Proportion of the population aged 15–64 having longstanding health problems and/or difficulties in basic activities
+   LT S3R943_M3140905 | S3R943 - Activity rate of the population with and without longstanding problems
+   LT S3R945_M3140904 | S3R945 - Employment rate of the population with and without longstanding problems
+   LT S3R944_M3140906 | S3R944 - Unemployment rate of the population with and without longstanding problems
+   LT S8R754_M4050304_3 | S8R754 - Sales income (VAT and excises excluded) by direction of realisation
+   LT S3R946_M3140909 | S3R946 - Self-reported unmet needs for medical examination or treatment of the population with and without limitation in activities people usually do because of health problems
+   LT S3R946_M3140909_1 | S3R946 - Self-reported unmet needs for medical examination or treatment of the population with and without limitation in activities people usually do because of health problems
+   LT S3R947_M3140908 | S3R947 - Share of population with limitation in activities people usually do because of health problems with at least the past 6 months among population aged 16 and older having a longstanding health problems
+   LT S3R948_M3140911 | S3R948 - Population with and without limitation in activities people usually do because of health problems affected by material deprivation in the dwelling dimension
+   LT S3R948_M3140911_1 | S3R948 - Population with and without limitation in activities people usually do because of health problems affected by material deprivation in the dwelling dimension
+   LT S3R949_M3140910 | S3R949 - Population with and without limitation in activities people usually do because of health problems affected by material deprivation in the economic dimension
+   LT S3R949_M3140910_1 | S3R949 - Population with and without limitation in activities people usually do because of health problems affected by material deprivation in the economic dimension
+   LT S3R950_M3140912 | S3R950 - At-risk-of-poverty rate of the population with and without limitation in activities people usually do because of health problems
+   LT S3R950_M3140912_1 | S3R950 - At-risk-of-poverty rate of the population with and without limitation in activities people usually do because of health problems
+   LT S3R950_M3140912_2 | S3R950 - At-risk-of-poverty rate of the population with and without limitation in activities people usually do because of health problems
+   LT S3R952_M3140907 | S3R952 - Self-perceived health of the population with and without limitation in activities people usually do because of health problems
+   LT S3R952_M3140907_1 | S3R952 - Self-perceived health of the population with and without limitation in activities people usually do because of health problems
+   LT S8R767_M4070308_6 | S8R767 - Number of retail stores of retail trade, motor vehicles enterprises per 1000 population at the end of the year
+   LT S8R768_M4070308_2 | S8R768 - Sales area of retail stores of retail trade, motor vehicles enterprises per 1000 population at the end of the year
+   LT S8R769_M4070308_1 | S8R769 - Number of catering units of food and beverage service enterprises per 1000 population at the end of the year
+   LT S8R770_M4070308_9 | S8R770 - Number of seats in the catering units of food and beverage service enterprises per 1000 population at the end of the year
+   LT S3R953_M3140914 | S3R953 - Influence of longstanding health problems and/or difficulties in basic activities on labour market participation of the population aged 15–64
+   LT S3R954_M3140915 | S3R954 - Need for personal assistance or special equipment of the population aged 15–64 having longstanding health problems and/or difficulties in basic activities in order to work or participate in the labour market
+   LT S4R085_M9010121 | S4R085 - Use of social media in enterprises
+   LT S4R085_M9010121_1 | S4R085 - Use of social media in enterprises
+   LT S3R205_M3160501_2 | S3R205 - Expenditure on benefits for families bringing up children
+   LT S3R211_M3160701_2 | S3R211 - Expenditure on social assistance benefit
+   LT S3R212_M3161401_2 | S3R212 - Expenditure on State social insurance sickness benefit
+   LT S3R213_M3160502_2 | S3R213 - Expenditure on State social insurance maternity, paternity and child care benefits
+   LT S3R214_M3160402_2 | S3R214 - Expenditure on State social insurance pensions
+   LT S3R218_M3160501_1 | S3R218 - Number of recipients of benefits for families bringing up children
+   LT S3R244_M3210206 | S3R244 - Proportion of the population aged 20–64 smoking every day
+   LT S3R258_M3110603 | S3R258 - College students
+   LT S3R258_M3110602_1 | S3R258 - College students
+   LT S3R258_M3110601_2 | S3R258 - College students
+   LT S3R258_M3110605_2 | S3R258 - College students
+   LT S3R258_M3110105_3 | S3R258 - College students
+   LT S3R259_M3110613 | S3R259 - College students who during the academic year broadened knowledge abroad
+   LT S3R260_M3110106_2 | S3R260 - Number of computers used for learning purposes per 100 pupils and students
+   LT S3R265_M3130107_4 | S3R265 - Number of copies in libraries subordinate to the Ministry of Culture per 100 population
+   LT S3R299_M3090508 | S3R299 - Minimum amount of income needed to make ends meet per household member per month
+   LT S3R299_M3090509 | S3R299 - Minimum amount of income needed to make ends meet per household member per month
+   LT S3R299_M3090510 | S3R299 - Minimum amount of income needed to make ends meet per household member per month
+   LT S3R299_M3090507 | S3R299 - Minimum amount of income needed to make ends meet per household member per month
+   LT S3R299_M3090512 | S3R299 - Minimum amount of income needed to make ends meet per household member per month
+   LT S3R299_M3090511 | S3R299 - Minimum amount of income needed to make ends meet per household member per month
+   LT S3R881_M3170108_1 | S3R881 - Prison population at the 1 September
+   LT S3R882_M3170108_1 | S3R882 - Prison population at the 1 September per 100 000 population
+   LT S7R197_M2110208_1 | S7R197 - GDP by income approach, at current prices
+   LT S7R197_M2110108_1 | S7R197 - GDP by income approach, at current prices
+   LT S7R197_M2110129 | S7R197 - GDP by income approach, at current prices
+   LT S7R197_M2110269 | S7R197 - GDP by income approach, at current prices
+   LT S7R197_M2110280_1 | S7R197 - GDP by income approach, at current prices
+   LT S7R197_M2110288 | S7R197 - GDP by income approach, at current prices
+   LT S7R197_M2110281 | S7R197 - GDP by income approach, at current prices
+   LT S7R217_M2110209 | S7R217 - National income, saving, net lending/borrowing
+   LT S7R217_M2110109 | S7R217 - National income, saving, net lending/borrowing
+   LT S7R225_M2040210 | S7R225 - Taxes and social security contributions according (ESA 2010)
+   LT S3R887_M3140810 | S3R887 - Hospital day cases per 100000 population
+   LT S3R887_M3140810_1 | S3R887 - Hospital day cases per 100000 population
+   LT S3R891_M3140812 | S3R891 - Number of discharges (excluding inpatient nursing and rehabilitation cases in sanatoriums) per 100 000 population
+   LT S3R891_M3140812_1 | S3R891 - Number of discharges (excluding inpatient nursing and rehabilitation cases in sanatoriums) per 100 000 population
+   LT S3R892_M3160409 | S3R892 - Average state social insurance old-age pension (quarterly data)
+   LT TSTS11R002_MIT1927_2_1_2 | TSTS11R002 - Population
+   LT TSTS11R002_MIT1927_2_2_1 | TSTS11R002 - Population
+   LT TSTS11R002_MIT1927_20_1_1 | TSTS11R002 - Population
+   LT TSTS11R002_MIT1932_11_1_2 | TSTS11R002 - Population
+   LT TSTS11R002_MIT1932_12_2_1 | TSTS11R002 - Population
+   LT TSTS11R002_MIT1938_13_1_2 | TSTS11R002 - Population
+   LT TSTS11R004_MIT1927_2_1_3 | TSTS11R004 - Population density
+   LT TSTS11R004_MIT1932_11_1_3 | TSTS11R004 - Population density
+   LT TSTS11R004_MIT1938_13_1_4 | TSTS11R004 - Population density
+   LT TSTT701R003_MIT1932_74_3_3 | TSTT701R003 - Persons under social care in kindergartens, nurseries-kindergartens, nurseries
+   LT TSTT701R003_MIT1938_63_4_3 | TSTT701R003 - Persons under social care in kindergartens, nurseries-kindergartens, nurseries
+   LT TSTT701R005_MIT1932_74_3_5 | TSTT701R005 - Persons under social care in children homes
+   LT TSTT701R005_MIT1938_63_4_5 | TSTT701R005 - Persons under social care in children homes
+   LT TSTT701R006_MIT1932_74_3_6 | TSTT701R006 - Social care establishments
+   LT TSTT701R006_MIT1938_63_4_6 | TSTT701R006 - Social care establishments
+   LT TSTT701R007_MIT1932_74_3_7 | TSTT701R007 - Persons under social care in selter homes
+   LT TSTT701R007_MIT1938_63_4_7 | TSTT701R007 - Persons under social care in selter homes
+   LT TSTT702R007_MIT1932_76_4_3 | TSTT702R007 - Beds per 10 000 population
+   LT TSTT702R007_MIT1938_59_1_3 | TSTT702R007 - Beds per 10 000 population
+   LT TSTT702R007_MIT1927_71_45_3 | TSTT702R007 - Beds per 10 000 population
+   LT TSTT801R003_MIT1927_68_3_3 | TSTT801R003 - Number of students at schools of higher education
+   LT TSTT801R003_MIT1927_84_1_3 | TSTT801R003 - Number of students at schools of higher education
+   LT TSTT801R003_MIT1938_71_1_3 | TSTT801R003 - Number of students at schools of higher education
+   LT TSTT801R003_MIT1932_322_1_3 | TSTT801R003 - Number of students at schools of higher education
+   LT TSTT801R004_MIT1927_68_3_4 | TSTT801R004 - Pupils and students per 1000 population
+   LT TSTT801R004_MIT1927_84_1_4 | TSTT801R004 - Pupils and students per 1000 population
+   LT TSTT801R004_MIT1938_71_1_4 | TSTT801R004 - Pupils and students per 1000 population
+   LT TSTT801R004_MIT1932_322_1_4 | TSTT801R004 - Pupils and students per 1000 population
+   LT TSTT802R002_MIT1927_63_1_2 | TSTT802R002 - Number of higher general education school (gymnasium) students
+   LT TSTT802R002_MIT1927_86_5_2 | TSTT802R002 - Number of higher general education school (gymnasium) students
+   LT TSTT802R002_MIT1938_72_3_2 | TSTT802R002 - Number of higher general education school (gymnasium) students
+   LT TSTT802R002_MIT1932_323_4_2 | TSTT802R002 - Number of higher general education school (gymnasium) students
+   LT TSTT803R001_MIT1927_88_8_1 | TSTT803R001 - Number of students at normal schools 
+   LT TSTT803R001_MIT1938_72_4_1 | TSTT803R001 - Number of students at normal schools 
+   LT TSTT803R001_MIT1932_323_5_1 | TSTT803R001 - Number of students at normal schools 
+   LT TSTT804R002_MIT1927_66_1_1 | TSTT804R002 - Number of pupils at primary schools 
+   LT TSTT804R002_MIT1938_77_8_1 | TSTT804R002 - Number of pupils at primary schools 
+   LT TSTT804R002_MIT1927_93_14_1 | TSTT804R002 - Number of pupils at primary schools 
+   LT TSTT804R002_MIT1932_326_8_2 | TSTT804R002 - Number of pupils at primary schools 
+   LT TSTT804R003_MIT1938_77_8_2 | TSTT804R003 - Students in adult courses
+   LT TSTT804R003_MIT1932_326_8_3 | TSTT804R003 - Students in adult courses
+   LT TSTT804R006_MIT1938_77_8_5 | TSTT804R006 - Number of primary schools, classes in them, courses and kindergartens at them, pupils in them
+   LT TSTT804R006_MIT1932_326_8_6 | TSTT804R006 - Number of primary schools, classes in them, courses and kindergartens at them, pupils in them
+   LT TSTT804R012_MIT1927_66_1_4 | TSTT804R012 - Primary school pupils per 1000 population
+   LT TSTT804R012_MIT1927_93_14_4 | TSTT804R012 - Primary school pupils per 1000 population
+   LT TSTT804R013_MIT1938_77_8_9 | TSTT804R013 - Primary schools per 1000 population
+   LT TSTT804R013_MIT1932_326_8_11 | TSTT804R013 - Primary schools per 1000 population
+   LT TSTT805R003_MIT1927_65_1_3 | TSTT805R003 - Pupils at progymnasiums
+   LT TSTT805R003_MIT1927_89_9_3 | TSTT805R003 - Pupils at progymnasiums
+   LT TSTT805R003_MIT1938_74_6_2 | TSTT805R003 - Pupils at progymnasiums
+   LT TSTT805R003_MIT1932_325_7_3 | TSTT805R003 - Pupils at progymnasiums
+   LT TSTT806R002_MIT1927_64_1_2 | TSTT806R002 - Number of special professional college students
+   LT TSTT806R002_MIT1938_73_5_2 | TSTT806R002 - Number of special professional college students
+   LT TSTT806R002_MIT1932_324_6_2 | TSTT806R002 - Number of special professional college students
+   LT TSTT807R002_MIT1938_74_7_2 | TSTT807R002 - Number of special secondary school pupils 
+   LT TSTT807R002_MIT1932_330_9_2 | TSTT807R002 - Number of special secondary school pupils 
+   LT TSTT1102R003_MIT1938_17_2_8 | TSTT1102R003 - Emigrants per 1000 population
+   LT TSTT1103R004_MIT1932_16_6_5 | TSTT1103R004 - Births per 1000 population
+   LT TSTT1103R004_MIT1938_17_2_9 | TSTT1103R004 - Births per 1000 population
+   LT TSTT1103R004_MIT1927_26_18_2 | TSTT1103R004 - Births per 1000 population
+   LT TSTT1103R004_MIT1927_41_6a_1 | TSTT1103R004 - Births per 1000 population
+   LT TSTT1103R005_MIT1927_8_6_4 | TSTT1103R005 - Natural increase per 1000 population
+   LT TSTT1103R005_MIT1927_39_5_4 | TSTT1103R005 - Natural increase per 1000 population
+   LT TSTT1103R005_MIT1932_16_6_8 | TSTT1103R005 - Natural increase per 1000 population
+   LT TSTT1103R005_MIT1938_17_2_12 | TSTT1103R005 - Natural increase per 1000 population
+   LT TSTT1105R001_MIT1927_4_4_1 | TSTT1105R001 - Population by age
+   LT TSTT1105R001_MIT1932_8_2_1 | TSTT1105R001 - Population by age
+   LT TSTT1105R001_MIT1927_24_5_1 | TSTT1105R001 - Population by age
+   LT TSTT1107R004_MIT1932_16_6_6 | TSTT1107R004 - Marriages per 1000 population
+   LT TSTT1107R004_MIT1927_57_14_1 | TSTT1107R004 - Marriages per 1000 population
+   LT TSTT1107R004_MIT1938_17_2_10 | TSTT1107R004 - Marriages per 1000 population
+   LT TSTT1110R004_MIT1927_44_8_2 | TSTT1110R004 - Deaths per 1000 population
+   LT TSTT1110R004_MIT1932_16_6_7 | TSTT1110R004 - Deaths per 1000 population
+   LT TSTT1110R004_MIT1927_40_28_2 | TSTT1110R004 - Deaths per 1000 population
+   LT TSTT1110R004_MIT1927_46_32_2 | TSTT1110R004 - Deaths per 1000 population
+   LT TSTT1110R004_MIT1938_17_2_11 | TSTT1110R004 - Deaths per 1000 population
+   LT TSTT1110R005_MIT1938_34_23_2_1 | TSTT1110R005 - Deaths per 10 000 population
+   LT TSTT1302R002_MIT1938_144_35_2 | TSTT1302R002 - Forest per 100 population
+   LT SSSS2R014_MIS1991_29_1_1 | SSSS2R014 - Distribution of the employed population by branch of the national economy
+   LT SSSS2R014_MIS1976_187_1_1 | SSSS2R014 - Distribution of the employed population by branch of the national economy
+   LT SSSS5R001_MIS1991_16_3_1 | SSSS5R001 - Persons who arrived from soviet socialist republics without indicating either the area or the republic (army, convicts, etc.)
+   LT SSSS8R002_MIS1971_45_1_1 | SSSS8R002 - Gross social product
+   LT SSSS8R002_MIS1976_29_1_1 | SSSS8R002 - Gross social product
+   LT SSSS8R003_MIS1971_272_1_1 | SSSS8R003 - Gross national income
+   LT SSSS8R003_MIS1976_208_1_1 | SSSS8R003 - Gross national income
+   LT SSSS8R012_MIS1981_165_2_1 | SSSS8R012 - Benefits and exemptions
+   LT SSSS8R013_MIS1991_39_2_1 | SSSS8R013 - Benefits and exemptions from social consumption funds
+   LT SSSS8R016_MIS1976_207_1_1 | SSSS8R016 - National income
+   LT SSSS8R017_MIS1965_23_2_1 | SSSS8R017 - National income at current prices
+   LT SSSS8R017_MIS1981_161_1_1 | SSSS8R017 - National income at current prices
+   LT SSSS8R018_MIS1976_211_1_1 | SSSS8R018 - National income per capita
+   LT SSSS8R022_MIS1971_367_1_6 | SSSS8R022 - Personal income
+   LT SSSS8R022_MIS1976_304_1_6 | SSSS8R022 - Personal income
+   LT SSSS8R027_MIS1991_202_1 _1 | SSSS8R027 - State budget expenditure on social welfare, cultural and scientific needs
+   LT SSSS8R028_MIS1991_203_1_1 | SSSS8R028 - State social insurance budget expenditure (million rubles)
+   LT SSSS8R029_MIS1971_367_1_8 | SSSS8R029 - State social insurance funds
+   LT SSSS8R031_MIS1991_39_2_2 | SSSS8R031 - Benefits and exemptions per capita
+   LT SSSS8R031_MIS1981_165_2_2 | SSSS8R031 - Benefits and exemptions per capita
+   LT SSSS8R033_MIS1965_23_1_1 | SSSS8R033 - Gross social product structure by branch of the national economy
+   LT SSSS10R001_MIS1976_220_1_1 | SSSS10R001 - Provision of cultural and household durable goods for the population (per 1000 population)
+   LT SSSS10R006_MIS1981_173_3_1 | SSSS10R006 - Provision of cultural and household durable goods for the urban and rural population
+   LT SSSS10R010_MIS1991_43_2_3 | SSSS10R010 - Family savings (cash, increase in deposits in a savings bank, etc.), compared to the total income
+   LT SSSS10R012_MIS1991_43_1_1 | SSSS10R012 - Total monthly income per manual and non-manual workers&apos; family member
+   LT SSSS10R013_MIS1991_43_1_2 | SSSS10R013 - Total monthly income per kolkhoz members&apos; family member
+   LT SSSS10R014_MIS1991_43_2_4 | SSSS10R014 - Total income
+   LT SSSS11R001_MIS1965_197_2_1 | SSSS11R001 - Nursing staff per 10 000 population
+   LT SSSS11R001_MIS1971_285_1_1 | SSSS11R001 - Nursing staff per 10 000 population
+   LT SSSS11R001_MIS1981_174_3_1 | SSSS11R001 - Nursing staff per 10 000 population
+   LT SSSS11R001_MIS1991_101_2_1 | SSSS11R001 - Nursing staff per 10 000 population
+   LT SSSS11R002_MIS1965_197_2_2 | SSSS11R002 - Doctors of all specialties per 10 000 population
+   LT SSSS11R002_MIS1971_285_1_2 | SSSS11R002 - Doctors of all specialties per 10 000 population
+   LT SSSS11R002_MIS1981_174_3_2 | SSSS11R002 - Doctors of all specialties per 10 000 population
+   LT SSSS11R005_MIS1976_226_1_1 | SSSS11R005 - Pension beneficiaries according to the Law on Pensions and Benefits for Kolkhoz Members
+   LT SSSS11R012_MIS1981_175_2_1 | SSSS11R012 - Mothers of many children receiving benefits
+   LT SSSS11R012_MIS1991_107_2_1 | SSSS11R012 - Mothers of many children receiving benefits
+   LT SSSS11R013_MIS1986_194_1_1 | SSSS11R013 - Population who underwent preventive medical examination
+   LT SSSS11R013_MIS1991_104_1_1 | SSSS11R013 - Population who underwent preventive medical examination
+   LT SSSS11R023_MIS1991_104_1_2 | SSSS11R023 - Population undergoing periodic compulsory medical examination
+   LT SSSS11R038_MIS1971_286_1_1 | SSSS11R038 - Number of mothers of many children receiving benefits
+   LT SSSS11R039_MIS1986_194_1_2 | SSSS11R039 - Population who underwent periodic preventive medical examination
+   LT SSSS11R040_MIS1986_194_1_3 | SSSS11R040 - Compared to the population who have to undergo periodic preventive medical examination, per cent
+   LT SSSS11R046_MIS1991_107_2_2 | SSSS11R046 - Lone mothers receiving benefits
+   LT SSSS11R051_MIS1991_101_1_2 | SSSS11R051 - Doctors per 10 000 population
+   LT SSSS11R052_MIS1965_197_2_3 | SSSS11R052 - Hospital beds per 10 000 population
+   LT SSSS11R052_MIS1971_285_1_3 | SSSS11R052 - Hospital beds per 10 000 population
+   LT SSSS11R052_MIS1981_174_3_3 | SSSS11R052 - Hospital beds per 10 000 population
+   LT SSSS11R054_MIS1991_103_1_2 | SSSS11R054 - Persons who developed illness for the first time per 100 000 population
+   LT SSSS11R055_MIS1991_104_2_2 | SSSS11R055 - Persons who developed malignant neoplasms for the first time per 100 000 population
+   LT SSSS11R056_MIS1991_102_3_2 | SSSS11R056 - Persons who developed mental illness for the first time per 100 000 population
+   LT SSST407R002_MIS1971_11_1_5 | SSST407R002 - Length of land border with the Byelorussian Soviet Socialist Republic
+   LT SSST407R003_MIS1971_11_1_6 | SSST407R003 - Length of land border with the Latvian Soviet Socialist Republic
+   LT SSST407R005_MIS1971_11_1_8 | SSST407R005 - Length of land border with the Russian Soviet Federative Socialist Republic
+   LT SSST501R004_MIS1986_4_3_1 | SSST501R004 - Births per 1000 population
+   LT SSST501R004_MIS1976_16_2_4 | SSST501R004 - Births per 1000 population
+   LT SSST501R004_MIS1981_11_2_1 | SSST501R004 - Births per 1000 population
+   LT SSST501R004_MIS1991_13_2_4 | SSST501R004 - Births per 1000 population
+   LT SSST501R005_MIS1986_4_3_3 | SSST501R005 - Natural increase per 1000 population
+   LT SSST501R005_MIS1976_16_2_6 | SSST501R005 - Natural increase per 1000 population
+   LT SSST501R005_MIS1981_11_2_3 | SSST501R005 - Natural increase per 1000 population
+   LT SSST501R005_MIS1991_13_2_6 | SSST501R005 - Natural increase per 1000 population
+   LT SSST502R001_MIS1981_9_2_1 | SSST502R001 - Population
+   LT SSST502R001_MIS1986_3_2_1 | SSST502R001 - Population
+   LT SSST502R001_MIS1976_11_1_1 | SSST502R001 - Population
+   LT SSST502R001_MIS1991_11_1_1 | SSST502R001 - Population
+   LT SSST502R001_MIS1991_12_2_1 | SSST502R001 - Population
+   LT SSST502R002_MIS1976_11_2_1 | SSST502R002 - Population by sex
+   LT SSST502R003_MIS1986_4_1_1 | SSST502R003 - Population by city/town under republic jurisdiction
+   LT SSST502R003_MIS1971_19_1_1 | SSST502R003 - Population by city/town under republic jurisdiction
+   LT SSST502R003_MIS1976_12_2_1 | SSST502R003 - Population by city/town under republic jurisdiction
+   LT SSST502R003_MIS1981_10_1_1 | SSST502R003 - Population by city/town under republic jurisdiction
+   LT SSST502R003_MIS1991_12_1_1 | SSST502R003 - Population by city/town under republic jurisdiction
+   LT SSST502R004_MIS1981_9_2_2 | SSST502R004 - Population density
+   LT SSST502R004_MIS1986_3_2_2 | SSST502R004 - Population density
+   LT SSST502R004_MIS1976_11_1_2 | SSST502R004 - Population density
+   LT SSST502R004_MIS1991_11_1_2 | SSST502R004 - Population density
+   LT SSST502R005_MIS1981_9_2_3 | SSST502R005 - Rural population
+   LT SSST502R005_MIS1976_12_1_1 | SSST502R005 - Rural population
+   LT SSST502R006_MIS1991_12_3_1 | SSST502R006 - Average age of the rural population
+   LT SSST502R007_MIS1981_9_2_4 | SSST502R007 - Urban population
+   LT SSST502R007_MIS1976_12_1_2 | SSST502R007 - Urban population
+   LT SSST502R008_MIS1991_12_3_2 | SSST502R008 - Average age of the urban population
+   LT SSST502R011_MIS1991_12_3_3 | SSST502R011 - Average age of the population
+   LT SSST503R002_MIS1986_5_1_3 | SSST503R002 - Divorces per 1000 population
+   LT SSST503R002_MIS1976_17_2_3 | SSST503R002 - Divorces per 1000 population
+   LT SSST503R002_MIS1981_12_1_3 | SSST503R002 - Divorces per 1000 population
+   LT SSST503R002_MIS1991_20_1_3 | SSST503R002 - Divorces per 1000 population
+   LT SSST505R003_MIS1991_15_1_2 | SSST505R003 - Per 1000 population
+   LT SSST505R004_MIS1986_4_3_2 | SSST505R004 - Deaths per 1000 population
+   LT SSST505R004_MIS1981_11_2_2 | SSST505R004 - Deaths per 1000 population
+   LT SSST505R005_MIS1976_16_2_5 | SSST505R005 - Deaths per 1000 population
+   LT SSST505R005_MIS1991_13_2_5 | SSST505R005 - Deaths per 1000 population
+   LT SSST505R006_MIS1991_16_1_2 | SSST505R006 - Deaths per 100 000 population by cause
+   LT S3R822_M3080105 | S3R822 - Income quintile share ratio S80/S20
+   LT S3R822_M3080363 | S3R822 - Income quintile share ratio S80/S20
+   LT SSST1405R019_MIS1991_64_3_1 | SSST1405R019 - Avarage of population per retail trade enterprise
+   LT SSST1405R020_MIS1991_64_3_2 | SSST1405R020 - Avarage of population per catering enterprise
+   LT SSST1405R024_MIS1991_64_3_3 | SSST1405R024 - Number of places in catering enterprises per  10 000 population
+   LT SSST1405R025_MIS1991_64_3_4 | SSST1405R025 - Number of catering enterprises per  10 000 population
+   LT SSST1405R026_MIS1991_64_3_5 | SSST1405R026 - Number of retail enterprises per  10 000 population
+   LT SSST1405R027_MIS1991_64_3_6 | SSST1405R027 - Number of floor area in retail enterprises per  10 000 population
+   LT SSST1502R002_MIS1981_94_2_1 | SSST1502R002 - Number of livestock and poultry on farms of the population
+   LT SSST1502R002_MIS1986_75_2_1 | SSST1502R002 - Number of livestock and poultry on farms of the population
+   LT SSST1502R002_MIS1976_133_3_1 | SSST1502R002 - Number of livestock and poultry on farms of the population
+   LT SSST1502R002_MIS1991_161_1_1 | SSST1502R002 - Number of livestock and poultry on farms of the population
+   LT SSST1502R002_MIS1991_161_2_1 | SSST1502R002 - Number of livestock and poultry on farms of the population
+   LT SSSP120101R008_MIS1971_346_1_5 | SSSP120101R008 - Population per library
+   LT SSSP120101R008_MIS1976_273_2._6 | SSSP120101R008 - Population per library
+   LT SSSP120102R012_MIS1991_97_2_5 | SSSP120102R012 - Seats in stationary cinema halls per 1000 population
+   LT SSSP120102R012_MIS1976_279_1_5 | SSSP120102R012 - Seats in stationary cinema halls per 1000 population
+   LT SSSP120102R012_MIS1981_221_3_5 | SSSP120102R012 - Seats in stationary cinema halls per 1000 population
+   LT SSSP120102R012_MIS1986_188_2_12 | SSSP120102R012 - Seats in stationary cinema halls per 1000 population
+   LT SSSP120104R004_MIS1991_97_1_7 | SSSP120104R004 - Concert visits per 1000 population
+   LT SSSP120104R004_MIS1976_279_2_4 | SSSP120104R004 - Concert visits per 1000 population
+   LT SSSP120104R004_MIS1981_221_2_7 | SSSP120104R004 - Concert visits per 1000 population
+   LT SSSP120104R004_MIS1986_188_1_7 | SSSP120104R004 - Concert visits per 1000 population
+   LT S3R826_M3140108 | S3R826 - Number of long-term care beds in nursing and residential care facilities per 10000 population
+   LT S3R829_M3140112 | S3R829 - Number of health personnel per 10000 population
+   LT S7R168_M2010208_1 | S7R168 - GDP by income approach, at current prices
+   LT S7R168_M2010108_1 | S7R168 - GDP by income approach, at current prices
+   LT S7R168_M2010108_2 | S7R168 - GDP by income approach, at current prices
+   LT S7R168_M2010208_2 | S7R168 - GDP by income approach, at current prices
+   LT S7R169_M2010129 | S7R169 - GDP by income approach 10 NACE Rev. 2 activities, at current prices
+   LT S7R169_M2010269 | S7R169 - GDP by income approach 10 NACE Rev. 2 activities, at current prices
+   LT S7R170_M2010280_1 | S7R170 - GDP by income approach 38 NACE Rev. 2 activities, at current prices
+   LT S7R171_M2010288 | S7R171 - GDP by income approach 64 NACE Rev. 2 activities, at current prices
+   LT S7R172_M2010209 | S7R172 - National income, saving, net lending/borrowing
+   LT S7R172_M2010109 | S7R172 - National income, saving, net lending/borrowing
+   LT S5R106_M7080303_8 | S5R106 - Main public telephone lines per 100 population
+   LT S5R107_M7080303_5 | S5R107 - Active mobile phone subscribers per 100 population
+   LT S5R108_M7080306_4 | S5R108 - Main residential telephone lines per 100 population
+   LT S3R851_M3160113 | S3R851 - Social protection benefits by function and type
+   LT S3R852_M3160114 | S3R852 - Structure of social protection benefits
+   LT S3R853_M3160115 | S3R853 - Social protection benefits, compared to gross domestic product
+   LT S3R858_M3160116 | S3R858 - Net expenditure on social protection
+   LT S3R860_M3160116_2 | S3R860 - Net expenditure on social protection benefits
+   LT S3R861_M3160117 | S3R861 - Net expenditure on social protection benefits as a percentage of gross social protection expenditure
+   LT S3R862_M3160118 | S3R862 - Net expenditure on social protection benefits as a percentage of gross domestic product
+   LT S3R863_M3160119 | S3R863 - Proportion of taxable social protection benefits
+   LT S3R864_M3160120 | S3R864 - Proportion of taxable cash social protection benefits
+   LT SSST506R003_MIS1986_5_1_4 | SSST506R003 - Marriages per 1000 population
+   LT SSST506R003_MIS1976_17_2_4 | SSST506R003 - Marriages per 1000 population
+   LT SSST506R003_MIS1981_12_1_4 | SSST506R003 - Marriages per 1000 population
+   LT SSST506R003_MIS1991_20_1_4 | SSST506R003 - Marriages per 1000 population
+   LT SSST803R004_MIS1971_367_1_4 | SSST803R004 - Income
+   LT SSST803R004_MIS1981_243_1_4 | SSST803R004 - Income
+   LT SSST804R001_MIS1981_161_3_1 | SSST804R001 - National income per capita (at current prices)
+   LT SSST902R005_MIS1991_112_1_1 | SSST902R005 - Crimes registered per 10 000 population in cities/towns and districts under republic jurisdiction 
+   LT SSST1202R001_MIS1981_28_1_1 | SSST1202R001 - Doctoral students at schools of higher education at the end of the year
+   LT SSST1202R001_MIS1986_19_1_1 | SSST1202R001 - Doctoral students at schools of higher education at the end of the year
+   LT SSST1202R002_MIS1976_41_1_1 | SSST1202R002 - Number of doctoral students (end of the year)
+   LT SSST1202R002_MIS1981_28_1_2 | SSST1202R002 - Number of doctoral students (end of the year)
+   LT SSST1202R002_MIS1986_19_1_2 | SSST1202R002 - Number of doctoral students (end of the year)
+   LT SSST1202R002_MIS1971_345_1_1 | SSST1202R002 - Number of doctoral students (end of the year)
+   LT SSST1202R002_MIS1991_127_1_1 | SSST1202R002 - Number of doctoral students (end of the year)
+   LT SSST1202R003_MIS1981_28_1_3 | SSST1202R003 - Total number of doctoral students in research institutions, excluding schools of higher education at the end of the year
+   LT SSST1202R003_MIS1986_19_1_3 | SSST1202R003 - Total number of doctoral students in research institutions, excluding schools of higher education at the end of the year
+   LT SSST1202R004_MIS1981_28_1_4 | SSST1202R004 - Number of doctoral students at schools of higher education
+   LT SSST1203R007_MIS1976_292_3_2 | SSST1203R007 - Students at sports schools
+   LT SSST1203R007_MIS1981_229_3_2 | SSST1203R007 - Students at sports schools
+   LT SSST1204R003_MIS1991_86_1_2 | SSST1204R003 - Professional college students
+   LT SSST1204R004_MIS1991_35_1_1 | SSST1204R004 - Pupils and students in them
+   LT SSST1204R006_MIS1986_132_3_1 | SSST1204R006 - Number of students at vocational technical schools
+   LT SSST1204R007_MIS1986_132_3_2 | SSST1204R007 - Number of students admitted at vocational technical schools
+   LT SSST1302R001_MIS1986_93_1_4 | SSST1302R001 - Length of railway lines within the territory of the Lithuanian Soviet Socialist Republic
+   LT SSST1302R001_MIS1965_111_1_1 | SSST1302R001 - Length of railway lines within the territory of the Lithuanian Soviet Socialist Republic
+   LT SSST1302R001_MIS1971_215_1_4 | SSST1302R001 - Length of railway lines within the territory of the Lithuanian Soviet Socialist Republic
+   LT SSST1302R001_MIS1976_155_1_4 | SSST1302R001 - Length of railway lines within the territory of the Lithuanian Soviet Socialist Republic
+   LT SSST1302R001_MIS1981_115_1_3 | SSST1302R001 - Length of railway lines within the territory of the Lithuanian Soviet Socialist Republic
+   LT SSST1302R001_MIS1991_187_1_3 | SSST1302R001 - Length of railway lines within the territory of the Lithuanian Soviet Socialist Republic
+   LT SSST1403R010_MIS1965_123_2_2 | SSST1403R010 - Number of places for pupils at schools granted for use
+   LT SSST1403R010_MIS1971_282_2_2 | SSST1403R010 - Number of places for pupils at schools granted for use
+   LT SSST1403R023_MIS1971_279_1_1 | SSST1403R023 - Residential buildings granted for use by State and cooperative enterprises and organisations, kolkhozes and the population
+   LT SSST1403R023_MIS1981_166_1_1 | SSST1403R023 - Residential buildings granted for use by State and cooperative enterprises and organisations, kolkhozes and the population
+   LT SSST1403R024_MIS1976_167_1_1 | SSST1403R024 - Fixed assets granted for use by State and cooperative enterprises and organisations, kolkhozes and the population
+   LT SSST1403R024_MIS1981_124_1_1 | SSST1403R024 - Fixed assets granted for use by State and cooperative enterprises and organisations, kolkhozes and the population
+   LT SSST1403R025_MIS1981_166_2_1 | SSST1403R025 - Dwellings (flats) built by State and cooperative enterprises and organisations, kolkhozes and the population
+   LT SSST1403R025_MIS1991_175_1_1 | SSST1403R025 - Dwellings (flats) built by State and cooperative enterprises and organisations, kolkhozes and the population
+   LT SSSP120401R002_MIS1991_86_1_4 | SSSP120401R002 - Students in higher education
+   LT SSSP120401R002_MIS1965_187_2_2 | SSSP120401R002 - Students in higher education
+   LT SSSP120401R002_MIS1971_337_2_2 | SSSP120401R002 - Students in higher education
+   LT SSSP120401R002_MIS1976_265_2_2 | SSSP120401R002 - Students in higher education
+   LT SSSP120401R002_MIS1981_211_2_2 | SSSP120401R002 - Students in higher education
+   LT SSSP120401R002_MIS1986_179_1_2 | SSSP120401R002 - Students in higher education
+   LT SSSP120401R002_MIS1986_182_1_1 | SSSP120401R002 - Students in higher education
+   LT SSSP120401R004_MIS1986_179_2_2 | SSSP120401R004 - Students admitted to schools of higher education
+   LT SSSP120401R005_MIS1981_215_1_2 | SSSP120401R005 - Higher education graduates per 10 000 population
+   LT SSSP120401R005_MIS1986_182_2_2 | SSSP120401R005 - Higher education graduates per 10 000 population
+   LT SSSP120402R001_MIS1991_77_2_1 | SSSP120402R001 - Number of pupils and students
+   LT SSSP120402R001_MIS1965_179_1_1 | SSSP120402R001 - Number of pupils and students
+   LT SSSP120402R001_MIS1971_329_1_1 | SSSP120402R001 - Number of pupils and students
+   LT SSSP120402R001_MIS1976_257_1_1 | SSSP120402R001 - Number of pupils and students
+   LT SSSP120402R001_MIS1981_204_1_1 | SSSP120402R001 - Number of pupils and students
+   LT SSSP120402R001_MIS1986_173_1_1 | SSSP120402R001 - Number of pupils and students
+   LT SSSP120402R002_MIS1991_77_2_2 | SSSP120402R002 - Students in higher education per 10 000 population
+   LT SSSP120402R003_MIS1991_77_2_3 | SSSP120402R003 - Students in higher education per 10 000 population
+   LT SSSP120402R003_MIS1965_179_1_2 | SSSP120402R003 - Students in higher education per 10 000 population
+   LT SSSP120402R003_MIS1971_329_1_2 | SSSP120402R003 - Students in higher education per 10 000 population
+   LT SSSP120402R003_MIS1976_257_1_2 | SSSP120402R003 - Students in higher education per 10 000 population
+   LT SSSP120402R003_MIS1981_204_1_2 | SSSP120402R003 - Students in higher education per 10 000 population
+   LT SSSP120402R003_MIS1986_173_1_2 | SSSP120402R003 - Students in higher education per 10 000 population
+   LT SSSP120402R004_MIS1991_77_2_4 | SSSP120402R004 - General school pupils per 10 000 population
+   LT SSSP120402R004_MIS1965_179_1_3 | SSSP120402R004 - General school pupils per 10 000 population
+   LT SSSP120402R004_MIS1971_329_1_3 | SSSP120402R004 - General school pupils per 10 000 population
+   LT SSSP120402R004_MIS1976_257_1_3 | SSSP120402R004 - General school pupils per 10 000 population
+   LT SSSP120402R004_MIS1981_204_1_3 | SSSP120402R004 - General school pupils per 10 000 population
+   LT SSSP120402R004_MIS1986_173_1_3 | SSSP120402R004 - General school pupils per 10 000 population
+   LT SSSP120402R005_MIS1976_257_1_4 | SSSP120402R005 - Special secondary school students per 10 000 population
+   LT SSSP120402R005_MIS1981_204_1_4 | SSSP120402R005 - Special secondary school students per 10 000 population
+   LT SSSP120402R005_MIS1986_173_1_4 | SSSP120402R005 - Special secondary school students per 10 000 population
+   LT SSSP120402R006_MIS1971_329_1_4 | SSSP120402R006 - Technicum and other special secondary school students per 10 000 population
+   LT SSSP120403R002_MIS1991_77_3_2 | SSSP120403R002 - Pupils
+   LT SSSP120403R002_MIS1965_180_1_2 | SSSP120403R002 - Pupils
+   LT SSSP120403R002_MIS1965_180_2_2 | SSSP120403R002 - Pupils
+   LT SSSP120403R002_MIS1971_330_1_2 | SSSP120403R002 - Pupils
+   LT SSSP120403R002_MIS1971_330_2_2 | SSSP120403R002 - Pupils
+   LT SSSP120403R002_MIS1976_258_1_2 | SSSP120403R002 - Pupils
+   LT SSSP120403R002_MIS1981_157_1_2 | SSSP120403R002 - Pupils
+   LT SSSP120403R002_MIS1981_205_1_2 | SSSP120403R002 - Pupils
+   LT SSSP120403R002_MIS1986_173_2_2 | SSSP120403R002 - Pupils
+   LT SSSP120403R006_MIS1986_174_1_2 | SSSP120403R006 - Pupils and students at general day schools
+   LT SSSP120403R006_MIS1986_174_2_2 | SSSP120403R006 - Pupils and students at general day schools
+   LT SSSP120405R002_MIS1986_179_2_1 | SSSP120405R002 - Pupils admitted to special secondary schools
+   LT SSSP120405R004_MIS1965_187_2_4 | SSSP120405R004 - Special secondary school pupils
+   LT SSSP120405R004_MIS1971_337_2_4 | SSSP120405R004 - Special secondary school pupils
+   LT SSSP120405R004_MIS1976_265_2_4 | SSSP120405R004 - Special secondary school pupils
+   LT SSSP120405R004_MIS1981_211_2_4 | SSSP120405R004 - Special secondary school pupils
+   LT SSSP120405R004_MIS1986_179_1_4 | SSSP120405R004 - Special secondary school pupils
+   LT SSSP120405R004_MIS1986_182_1_4 | SSSP120405R004 - Special secondary school pupils
+   LT S3R964_M3140918 | S3R964 - Severe housing deprivation rate of the population with and without limitation in activities people usually do because of health problems
+   LT S3R964_M3140918_1 | S3R964 - Severe housing deprivation rate of the population with and without limitation in activities people usually do because of health problems
+   LT S3R965_M3140917 | S3R965 - Population with and without limitation in activities people usually do because of health problems living in dwellings which are considered to be overcrowded
+   LT S3R965_M3140917_1 | S3R965 - Population with and without limitation in activities people usually do because of health problems living in dwellings which are considered to be overcrowded
+   LT S3R966_M3140916 | S3R966 - Population with and without limitation in activities people usually do because of health problems who cannot afford durable goods
+   LT S3R966_M3140916_1 | S3R966 - Population with and without limitation in activities people usually do because of health problems who cannot afford durable goods
+   LT S8R796_M4033018_1 | S8R796 - Income, expenses, profit of enterprises
+   LT S8R796_M4033018_3 | S8R796 - Income, expenses, profit of enterprises
+   LT S3R974_M3140922 | S3R974 - Frequency of vegetables consumed by the population whose activity was limited or not due to health problems
+   LT S3R975_M3140924 | S3R975 - Body mass index (BMI) of the population whose activity was limited or not due to health problems
+   LT S3R976_M3140925 | S3R976 - Frequency of fruit consumed by the population whose activity was limited or not due to health problems
+   LT S3R979_M3140927 | S3R979 - Participation in activities of churches or other religious organisations by the population with and without limitation in activities people usually do because of health problems
+   LT S3R980_M3140928 | S3R980 - Participation in informal voluntary activities by the population with and without limitation in activities people usually do because of health problems
+   LT S3R981_M3140929 | S3R981 - Frequency of going to cinema, live performances, cultural sites or attending live sports events of population with and without limitation in activities people usually do because of health problems
+   LT S3R982_M3140930 | S3R982 - Frequency of getting together with relatives and friends by the population with and without limitation in activities people usually do because of health problems
+   LT S3R983_M3140931 | S3R983 - Frequency of contacts with relatives and friends by phone, mail, email by the population with and without limitation in activities people usually do because of health problems
+   LT S9R237_M9070128 | S9R237 - Income from the sale of fish products or provision of manufacture of fish products-related services
+   LT S9R249_M9070140 | S9R249 - Income of marine fisheries
+   LT S8R825_M4033031_3 | S8R825 - Prepayments and accrued income
+   LT S8R825_M4033031_1 | S8R825 - Prepayments and accrued income
+   LT S8R827_M4033031_3 | S8R827 - Accruals and deferred income
+   LT S8R827_M4033031_1 | S8R827 - Accruals and deferred income
+   LT S3R985_M3140209_1 | S3R985 - Number of new cases of addiction disorders per 100 000 population
+   LT S3R985_M3140310_1 | S3R985 - Number of new cases of addiction disorders per 100 000 population
+   LT S3R995_M3080113 | S3R995 - Persons who receive  income lower than the amount required to meet usual needs
+   LT S3R995_M3080114 | S3R995 - Persons who receive  income lower than the amount required to meet usual needs
+   LT S3R995_M3080112 | S3R995 - Persons who receive  income lower than the amount required to meet usual needs
+   LT S3R995_M3080119 | S3R995 - Persons who receive  income lower than the amount required to meet usual needs
+   LT S3R999_M3080228 | S3R999 - Share of disposable income spent on housing maintenance
+   LT S3R999_M3080229 | S3R999 - Share of disposable income spent on housing maintenance
+   LT S3R999_M3080252 | S3R999 - Share of disposable income spent on housing maintenance
+   LT S3R999_M3080229_1 | S3R999 - Share of disposable income spent on housing maintenance
+   LT S3R0004_M3080242 | S3R0004 - Share of persons living at risk of poverty or social exclusion
+   LT S3R0004_M3080243 | S3R0004 - Share of persons living at risk of poverty or social exclusion
+   LT S3R0004_M3080244 | S3R0004 - Share of persons living at risk of poverty or social exclusion
+   LT S3R0004_M3080246 | S3R0004 - Share of persons living at risk of poverty or social exclusion
+   LT S3R0004_M3080242_1 | S3R0004 - Share of persons living at risk of poverty or social exclusion
+   LT S3R0004_M3080243_1 | S3R0004 - Share of persons living at risk of poverty or social exclusion
+   LT S3R0004_M3080244_1 | S3R0004 - Share of persons living at risk of poverty or social exclusion
+   LT S3R0004_M3080246_1 | S3R0004 - Share of persons living at risk of poverty or social exclusion
+   LT S3R0004_M3080358 | S3R0004 - Share of persons living at risk of poverty or social exclusion
+   LT S3R0004_M3080365 | S3R0004 - Share of persons living at risk of poverty or social exclusion
+   LT S3R0004_M3080366 | S3R0004 - Share of persons living at risk of poverty or social exclusion
+   LT S3R0004_M3080367 | S3R0004 - Share of persons living at risk of poverty or social exclusion
+   LT S3R0004_M3080368 | S3R0004 - Share of persons living at risk of poverty or social exclusion
+   LT S3R0004_M3080370 | S3R0004 - Share of persons living at risk of poverty or social exclusion
+   LT S3R0025_M3141003 | S3R0025 - Population per practicing physician
+   LT S3R0026_M3150910 | S3R0026 - Proportion of the population who used inpatient and day care services in the last 12 months
+   LT S3R0026_M3150911 | S3R0026 - Proportion of the population who used inpatient and day care services in the last 12 months
+   LT S3R0026_M3150912 | S3R0026 - Proportion of the population who used inpatient and day care services in the last 12 months
+   LT S3R0026_M3150913 | S3R0026 - Proportion of the population who used inpatient and day care services in the last 12 months
+   LT S3R0026_M3150914 | S3R0026 - Proportion of the population who used inpatient and day care services in the last 12 months
+   LT S3R0026_M3150915 | S3R0026 - Proportion of the population who used inpatient and day care services in the last 12 months
+   LT S3R0028_M3151001 | S3R0028 - Number of surgical operations and procedures performed in hospitals per 100 000 population
+   LT S3R0030_M3151002 | S3R0030 - Number of medical technologies - examinations by medical imaging techniques per 100 000 usually resident population
+   LT S3R0031_M3150709 | S3R0031 - Proportion of the population who underwent a colonoscopy
+   LT S3R0031_M3150709_1 | S3R0031 - Proportion of the population who underwent a colonoscopy
+   LT S3R0031_M3150709_2 | S3R0031 - Proportion of the population who underwent a colonoscopy
+   LT S3R0033_M3151004 | S3R0033 - Vaccination against influenza of population aged 65 and over
+   LT S3R0039_M3140313 | S3R0039 - Number of young persons (aged 14–29) with newly registered diseases per 1 000 population
+   LT S3R0040_M3140314 | S3R0040 - Number of young persons (aged 14–29) suffering from certain diseases per 1 000 population
+   LT S3R0041_M3140315 | S3R0041 - Number of adults (aged 18 and older) suffering from certain diseases per 1 000 population
+   LT S3R0042_M3140316 | S3R0042 - Number of children (aged 0–17) suffering from certain diseases per 1 000 population
+   LT S4R089_M9060134 | S4R089 - Innovative enterprises with environmental benefits
+   LT S4R089_M9060135 | S4R089 - Innovative enterprises with environmental benefits
+   LT S4R089_M9060134_2 | S4R089 - Innovative enterprises with environmental benefits
+   LT S4R089_M9060134_1 | S4R089 - Innovative enterprises with environmental benefits
+   LT S3R866_M3110907 | S3R866 - Total expenditure per student
+   LT S3R867_M3110908 | S3R867 - Total expenditure per Pre-school student or per General school student
+   LT S3R799_M3160911 | S3R799 - Number of children from families at social risk who received social services in day care centres
+   LT S3R799_M3161505 | S3R799 - Number of children from families at social risk who received social services in day care centres
+   LT S3R800_M3160911 | S3R800 - Number of disabled children who received social services in day care centres
+   LT S3R800_M3161505 | S3R800 - Number of disabled children who received social services in day care centres
+   LT S3R803_M3110320 | S3R803 - Number of pupils attending classes in religion
+   LT S3R807_M3140312 | S3R807 - Number of discharges per 100 000 population
+   LT S3R811_M3130114_4 | S3R811 - Number of theatregoers in non-public theatres per 100 population
+   LT S4R061_M9010304 | S4R061 - Main purposes of website (web page) use in health care and social work institutions
+   LT S4R062_M9010302 | S4R062 - Main purposes of computer use in health care and social work institutions
+   LT S4R063_M9010303 | S4R063 - Main purposes of internet use in health care and social work institutions
+   LT S4R064_M9010306 | S4R064 - Specialized ICT systems in health care and social work institutions
+   LT S4R065_M9010305 | S4R065 - Use of electronic security tools in health care and social work institutions
+   LT S8R671_M4031702_1 | S8R671 - Social security cost (Individual enterprises)
+   LT S3R816_M3170102 | S3R816 - Crimes and misdemeanours recorded per 100 000 population
+   LT S8R840_M4050117 | S8R840 - Sales income (VAT and excises excluded) indices (2015 – 100)
+   LT S3R0149_M3170127_2 | S3R0149 - Employees in specialised assistance centres
+   LT S8R861_M4090208_4 | S8R861 - Income of accommodation services (VAT excluded)
+   LT S3R0150_M3080601 | S3R0150 - Absoliute poverty threshold
+   LT S3R0151_M3080602 | S3R0151 - Absolute poverty rate
+   LT S3R0151_M3080603 | S3R0151 - Absolute poverty rate
+   LT S3R0151_M3080604 | S3R0151 - Absolute poverty rate
+   LT S3R0151_M3080608 | S3R0151 - Absolute poverty rate
+   LT S3R0151_M3080604_1 | S3R0151 - Absolute poverty rate
+   LT S3R0152_M3080605 | S3R0152 - Absolute poverty rate of persons aged 18 and older
+   LT S3R0152_M3080610 | S3R0152 - Absolute poverty rate of persons aged 18 and older
+   LT S3R0153_M3080606 | S3R0153 - Absolute poverty gap
+   LT S3R0153_M3080607 | S3R0153 - Absolute poverty gap
+   LT S3R0153_M3080609 | S3R0153 - Absolute poverty gap
+   LT S3R0154_M3080602 | S3R0154 - Absolute poverty rate before social transfers, excluding pensions
+   LT S3R0154_M3080608 | S3R0154 - Absolute poverty rate before social transfers, excluding pensions
+   LT S3R0154_M3080604_1 | S3R0154 - Absolute poverty rate before social transfers, excluding pensions
+   LT S3R0154_M3080603_1 | S3R0154 - Absolute poverty rate before social transfers, excluding pensions
+   LT S3R0154_M3080604_2 | S3R0154 - Absolute poverty rate before social transfers, excluding pensions
+   LT S3R0155_M3010203_1 | S3R0155 - Resident population age structure at the beginning of the year
+   LT S3R0164_M3160410 | S3R0164 - Average annual number of recipients of State social insurance Anticipatory Old-age pension
+   LT S3R0167_M3160411 | S3R0167 - Gender State social insurance Old-age pension gap at the end of the year
+   LT S4R103_M9070320 | S4R103 - Proportion of population aged 16–74  who visited the E-Government Gateway Portal
+   LT S4R104_M9070321 | S4R104 - Proportion of population aged 16–74 who used identity card to confirm the identity in cyberspace
+   LT S4R105_M9070322 | S4R105 - Proportion of population aged 16–74 who used cultural heritage-related electronic services
+   LT S4R106_M9070323 | S4R106 - Proportion of population aged 16–74 who used the Lithuanian language-related electronic services
+   LT S4R107_M9070324 | S4R107 - Assessment of population aged 16–74 on the quality of information provided by public authorities
+   LT S4R108_M9070325_1 | S4R108 - Proportion of population aged 16–74 who visited the Internet websites of public authorities
+   LT S4R109_M9070325_2 | S4R109 - Proportion of population aged 16–74 who visited the Internet websites of public authorities, by visit purpose
+   LT S4R111_M9070327 | S4R111 - Proportion of population aged 16–74 who trust in the security of  electronic communication with public institutions
+   LT S4R112_M9070328 | S4R112 - Proportion of population aged 16–74 who used electronic services
+   LT S4R114_M9070330 | S4R114 - Proportion of population aged 16–74 who used the Internet, but did not visit websites of public authorities
+   LT S4R115_M9070331 | S4R115 - Assessment of population aged 16–74 on the quality of electronic services
+   LT S7R285_M2040224 | S7R285 - Accrued-to-date pension entitlements in social insurance
+   LT S8R924_M4050117_1 | S8R924 - Sales income (VAT and excises excluded) indices (2021 – 100)
+   LT S8R924_M4050118_1 | S8R924 - Sales income (VAT and excises excluded) indices (2021 – 100)
+   LT S3R0487_M3080381 | S3R0487 - At risk-of-poverty rate of employed persons
+   LT S3R0488_M3080382 | S3R0488 - Persons below the international poverty line
+   LT S10R036_M4033040 | S10R036 - Sales income (experimental statistics)
+   LT S3R0540_M3160416 | S3R0540 - Expenditure on social assistance benefit per 1,000 population
+   LT S3R0564_M3110104_1 | S3R0564 - Students seeking to acquire secondary education along with their profession
+   LT S3R0565_M3110805_1 | S3R0565 - Pupils with special educational needs in non-formal education institutions
+   LT S3R0565_M3110805_2 | S3R0565 - Pupils with special educational needs in non-formal education institutions
+   LT S3R0565_M3110805_3 | S3R0565 - Pupils with special educational needs in non-formal education institutions
+   LT S3R0566_M9100207 | S3R0566 - Total population expenditure on pharmaceuticals
+   LT S3R0569_M3130110_7 | S3R0569 - Income of cultural centers from activities
+   LT S3R0584_M3010237_1 | S3R0584 - Median age of the population at the beginning of the year. Projection
+   LT S3R0590_M3010235_1 | S3R0590 - Population age structure at the beginning of the year. Projection
+   LT S3R0591_M3010226_1 | S3R0591 - Population at the beginning of the year. Projection
+   LT S3R0591_M3010227_1 | S3R0591 - Population at the beginning of the year. Projection
+   LT S3R744_M3210108 | S3R744 - Proportion of the population aged 20–64 consuming beer at least once a week
+   LT S3R745_M3210108 | S3R745 - Proportion of the population aged 20–64 consuming spirits at least once a week
+   LT S3R748_M3110710 | S3R748 - University students studying foreign languages
+   LT S3R748_M3110711 | S3R748 - University students studying foreign languages
+   LT S3R763_M3110606 | S3R763 - College students studying foreign languages
+   LT S3R763_M3110607 | S3R763 - College students studying foreign languages
+   LT S3R765_M3130120_1 | S3R765 - Number of public workstations with Internet access in municipal public libraries per 1000 population
+   LT S3R778_GBS010102 | S3R778 - Population
+   LT S3R778_GBS010104 | S3R778 - Population
+   LT S3R778_GBS010101 | S3R778 - Population
+   LT S3R778_GBS010105 | S3R778 - Population
+   LT S3R778_GBS010106 | S3R778 - Population
+   LT S3R778_GBS010201 | S3R778 - Population
+   LT S3R778_GBS010301 | S3R778 - Population
+   LT S3R778_GBS010302 | S3R778 - Population
+   LT S3R778_GBS010306 | S3R778 - Population
+   LT S3R778_GBS010307 | S3R778 - Population
+   LT S3R778_GBS010401 | S3R778 - Population
+   LT S3R778_GBS010402 | S3R778 - Population
+   LT S3R778_GBS010410 | S3R778 - Population
+   LT S3R778_GBS010103_1 | S3R778 - Population
+   LT S3R778_GBS010202 | S3R778 - Population
+   LT S3R778_GBS010305 | S3R778 - Population
+   LT S3R778_GBS010302_1 | S3R778 - Population
+   LT S3R778_GBS010305_1 | S3R778 - Population
+   LT S3R778_GBS010306_1 | S3R778 - Population
+   LT S3R778_GBS010402_1 | S3R778 - Population
+   LT S3R778_GBS010501 | S3R778 - Population
+   LT S3R778_GBS010502 | S3R778 - Population
+   LT S3R778_GBS010503 | S3R778 - Population
+   LT S3R778_GBS010504 | S3R778 - Population
+   LT S3R778_GBS010506 | S3R778 - Population
+   LT S3R778_GBS010507 | S3R778 - Population
+   LT S3R778_GBS010509 | S3R778 - Population
+   LT S3R778_GBS010510 | S3R778 - Population
+   LT S3R794_GBS010403 | S3R794 - Employed population
+   LT S3R794_GBS010404 | S3R794 - Employed population
+   LT S3R794_GBS010405 | S3R794 - Employed population
+   LT S3R794_GBS010403_1 | S3R794 - Employed population
+   LT S3R794_GBS010404_1 | S3R794 - Employed population
+   LT S3R794_GBS010403_2 | S3R794 - Employed population
+   LT S3R794_GBS010405_1 | S3R794 - Employed population
+   LT S3R794_GBS202102 | S3R794 - Employed population
+   LT S3R794_GBS010505 | S3R794 - Employed population
+   LT S3R794_GBS010508 | S3R794 - Employed population
+   LT S4R036_M9010301_1 | S4R036 - Health care and social work institutions using information and communication technologies
+   LT S4R037_M9010301 | S4R037 - Proportion of the staff of health care and social work institutions using information and communication technologies
+   LT S3R899_M3110121 | S3R899 - Doctoral students in research institutes
+   LT S3R899_M3110122 | S3R899 - Doctoral students in research institutes
+   LT S3R899_M3110122_1 | S3R899 - Doctoral students in research institutes
+   LT S4R083_M9050126 | S4R083 - Sales income of television programming and broadcasting enterprises (VAT excluded)
+   LT S4R083_M9050127 | S4R083 - Sales income of television programming and broadcasting enterprises (VAT excluded)
+   LT S5R116_M7080224 | S5R116 - Sales income of postal and courier enterprises (VAT excluded)
+   LT S5R116_M7080324 | S5R116 - Sales income of postal and courier enterprises (VAT excluded)
+   LT S5R119_M7080221 | S5R119 - Sales income of telecommunications enterprises (VAT excluded)
+   LT S5R119_M7080321 | S5R119 - Sales income of telecommunications enterprises (VAT excluded)
+   LT S3R908_M3080106 | S3R908 - Composition of the monthly disposable income in cash
+   LT S3R908_M3080107 | S3R908 - Composition of the monthly disposable income in cash
+   LT S3R908_M3080108 | S3R908 - Composition of the monthly disposable income in cash
+   LT S3R908_M3080109 | S3R908 - Composition of the monthly disposable income in cash
+   LT S3R908_M3080107_1 | S3R908 - Composition of the monthly disposable income in cash
+   LT S3R910_M3150108 | S3R910 - Proportion of the population who had physical pain or physical discomfort
+   LT S3R910_M3150109 | S3R910 - Proportion of the population who had physical pain or physical discomfort
+   LT S3R910_M3150110 | S3R910 - Proportion of the population who had physical pain or physical discomfort
+   LT S3R910_M3150107 | S3R910 - Proportion of the population who had physical pain or physical discomfort
+   LT S3R910_M3150111 | S3R910 - Proportion of the population who had physical pain or physical discomfort
+   LT S3R911_M3150114 | S3R911 - Proportion of the population whose usual activity was interfered with physical pain
+   LT S3R911_M3150112 | S3R911 - Proportion of the population whose usual activity was interfered with physical pain
+   LT S3R911_M3150113 | S3R911 - Proportion of the population whose usual activity was interfered with physical pain
+   LT S3R911_M3150115 | S3R911 - Proportion of the population whose usual activity was interfered with physical pain
+   LT S3R911_M3150116 | S3R911 - Proportion of the population whose usual activity was interfered with physical pain
+   LT S3R914_M3150516 | S3R914 - Proportion of the population by type of work
+   LT S3R914_M3150516_2 | S3R914 - Proportion of the population by type of work
+   LT S3R914_M3150516_3 | S3R914 - Proportion of the population by type of work
+   LT S3R914_M3150516_4 | S3R914 - Proportion of the population by type of work
+   LT S3R0361_M3160701_3 | S3R0361 - Number of families receiving social benefit
+   LT S3R0363_M3030918 | S3R0363 - Educational attainment of persons whose activities have been or have not been restricted due to health problems for at least the past 6 months  (of the population aged 25–64)
+   LT S3R0428_M3170312 | S3R0428 - Population who have experienced violence, by sex and type of perpetrator
+   LT S3R0428_M3170321 | S3R0428 - Population who have experienced violence, by sex and type of perpetrator
+   LT S3R0430_M3170311 | S3R0430 - Population who have experienced violence by an intimate partner
+   LT S3R0289_M3010226 | S3R0289 - Population at the beginning of the year. Eurostat projection
+   LT S3R0290_M3010235 | S3R0290 - Population age structure at the beginning of the year. Eurostat projection
+   LT S3R0292_M3010237 | S3R0292 - Median age of the population at the beginning of the year. Eurostat projection
+   LT S3R0300_M3160402_5 | S3R0300 - Average annual number of recipients of State social insurance anticipatory old-age pension per 10000 working-age population
+   LT S3R0301_M3150500_5 | S3R0301 - Population smoking habits of electronic cigarettes or similar electronic devices
+   LT S3R0301_M3150500 | S3R0301 - Population smoking habits of electronic cigarettes or similar electronic devices
+   LT S3R0301_M3150500_2 | S3R0301 - Population smoking habits of electronic cigarettes or similar electronic devices
+   LT S3R0301_M3150500_3 | S3R0301 - Population smoking habits of electronic cigarettes or similar electronic devices
+   LT S3R0307_M3160703 | S3R0307 - The number of social benefit recipients aged 65 and older per 10 thousand population aged 65 and older
+   LT S3R0308_M3160704 | S3R0308 - Proportion of families consisting of only one parent and children and receiving social benefit, compared to the total number of families receiving social benefit
+   LT S3R0310_M3080317 | S3R0310 - At-risk-of-poverty rate of persons aged 18 and over before social benefits other than pensions
+   LT S3R0310_M3080318 | S3R0310 - At-risk-of-poverty rate of persons aged 18 and over before social benefits other than pensions
+   LT S3R0315_M3110323 | S3R0315 - Transportation of general education school students with special educational needs by yellow buses
+   LT S3R0316_M3110324 | S3R0316 - Transportation of general education students by yellow buses
+   LT S3R0318_M3230301_1 | S3R0318 - Population opinion about the household’s financial situation: is it easy/difficult to predict
+   LT S3R0318_M3230302_1 | S3R0318 - Population opinion about the household’s financial situation: is it easy/difficult to predict
+   LT S3R0318_M3230303_1 | S3R0318 - Population opinion about the household’s financial situation: is it easy/difficult to predict
+   LT S3R0318_M3230304_1 | S3R0318 - Population opinion about the household’s financial situation: is it easy/difficult to predict
+   LT S3R0318_M3230308_1 | S3R0318 - Population opinion about the household’s financial situation: is it easy/difficult to predict
+   LT S3R0318_M3230306_1 | S3R0318 - Population opinion about the household’s financial situation: is it easy/difficult to predict
+   LT S3R0319_M3230601_1 | S3R0319 - Population opinion on the price change (in per cent) over the last 12 months
+   LT S3R0320_M3230701_1 | S3R0320 - Population opinion on the expected price change (in per cent) in the coming 12 months
+   LT S3R0325_M3150201 | S3R0325 - Proportion of the population having a chronic disease or long-term condition (Health interview survey)
+   LT S3R0326_M3010314 | S3R0326 - First marriages per 1,000 population at the age specified
+   LT S3R0337_M3010626 | S3R0337 - Deaths, per 100 000  population of corresponding age
+   LT S3R0338_M3080120 | S3R0338 - Equivalised disposable income of household per month
+   LT S3R0338_M3080121 | S3R0338 - Equivalised disposable income of household per month
+   LT S3R0338_M3080122 | S3R0338 - Equivalised disposable income of household per month
+   LT S3R0338_M3080121_1 | S3R0338 - Equivalised disposable income of household per month
+   LT S3R0339_M3080123 | S3R0339 - Household cash assistance to another household
+   LT S3R0339_M3080124 | S3R0339 - Household cash assistance to another household
+   LT S3R0339_M3080124_1 | S3R0339 - Household cash assistance to another household
+   LT S3R0341_M3080280 | S3R0341 - Distribution of persons below the at-risk-of-poverty threshold by number of material deprivation items faced by the household they live in
+   LT S3R0341_M3080281 | S3R0341 - Distribution of persons below the at-risk-of-poverty threshold by number of material deprivation items faced by the household they live in
+   LT S3R0341_M3080282 | S3R0341 - Distribution of persons below the at-risk-of-poverty threshold by number of material deprivation items faced by the household they live in
+   LT S3R0341_M3080281_1 | S3R0341 - Distribution of persons below the at-risk-of-poverty threshold by number of material deprivation items faced by the household they live in
+   LT S3R413_M3110404 | S3R413 - Number of students in vocational training institutions
+   LT S3R413_M3110401_3 | S3R413 - Number of students in vocational training institutions
+   LT S3R413_M3110403_2 | S3R413 - Number of students in vocational training institutions
+   LT S3R413_M3110105_4 | S3R413 - Number of students in vocational training institutions
+   LT S3R413_M3110404_1 | S3R413 - Number of students in vocational training institutions
+   LT S3R413_M3110401_5 | S3R413 - Number of students in vocational training institutions
+   LT S3R421_M3050101_2 | S3R421 - Ratio of the registered unemployed to the working-age population
+   LT S3R421_M9070339 | S3R421 - Ratio of the registered unemployed to the working-age population
+   LT S3R432_M3161005 | S3R432 - Number of volunteers providing social assistance and care at home
+   LT S3R436_M3100202_2 | S3R436 - Useful floor area of social housing rented by municipalities
+   LT S3R452_M3080306 | S3R452 - At-risk-of-poverty gap
+   LT S3R452_M3080307 | S3R452 - At-risk-of-poverty gap
+   LT S3R452_M3080309 | S3R452 - At-risk-of-poverty gap
+   LT S3R453_M3080302 | S3R453 - At-risk-of-poverty rate
+   LT S3R453_M3080303 | S3R453 - At-risk-of-poverty rate
+   LT S3R453_M3080304 | S3R453 - At-risk-of-poverty rate
+   LT S3R453_M3080308 | S3R453 - At-risk-of-poverty rate
+   LT S3R453_M3080304_1 | S3R453 - At-risk-of-poverty rate
+   LT S3R453_M3080360 | S3R453 - At-risk-of-poverty rate
+   LT S3R453_M3080361 | S3R453 - At-risk-of-poverty rate
+   LT S3R453_M3080362 | S3R453 - At-risk-of-poverty rate
+   LT S3R454_M3080302 | S3R454 - At-risk-of-poverty rate before social transfers, excluding pensions
+   LT S3R454_M3080310 | S3R454 - At-risk-of-poverty rate before social transfers, excluding pensions
+   LT S3R454_M3080304_1 | S3R454 - At-risk-of-poverty rate before social transfers, excluding pensions
+   LT S3R454_M3080303_1 | S3R454 - At-risk-of-poverty rate before social transfers, excluding pensions
+   LT S3R454_M3080304_2 | S3R454 - At-risk-of-poverty rate before social transfers, excluding pensions
+   LT S3R455_M3080301 | S3R455 - At-risk-of-poverty threshold
+   LT S3R456_M3160108 | S3R456 - Social protection expenditure on housing benefits
+   LT S3R457_M3160102 | S3R457 - Social protection expenditure on sickness and health care benefits
+   LT S3R458_M3160105 | S3R458 - Social protection expenditure on survivors&apos; benefits
+   LT S3R459_M3160107 | S3R459 - Social protection expenditure on unemployment benefits
+   LT S3R460_M3160103 | S3R460 - Social protection expenditure on disability benefits
+   LT S3R461_M3160101_2 | S3R461 - Social protection expenditure on benefits
+   LT S3R462_M3160104 | S3R462 - Social protection expenditure on old-age benefits
+   LT S3R463_M3160109 | S3R463 - Social protection expenditure on social exclusion benefits and other cases
+   LT S3R464_M3160106 | S3R464 - Social protection expenditure on family/child benefits
+   LT S3R465_M3160101_1 | S3R465 - Social protection expenditure
+   LT S3R466_M3160111 | S3R466 - Social protection expenditure compared to gross domestic product
+   LT S3R467_M3160112 | S3R467 - Social protection expenditure per capita
+   LT S3R468_M3160201 | S3R468 - Social protection receipts
+   LT S3R469_M3160701_1 | S3R469 - Number of recipients of social assistance benefit
+   LT S3R470_M3160902_1 | S3R470 - Number of families at social risk at the end of the year
+   LT S3R470_M3160919 | S3R470 - Number of families at social risk at the end of the year
+   LT S3R471_M3161001 | S3R471 - Number of recipients of social services at home
+   LT S3R471_M3161002 | S3R471 - Number of recipients of social services at home
+   LT S3R471_M3161006 | S3R471 - Number of recipients of social services at home
+   LT S3R483_M3110503 | S3R483 - Number of students at professional colleges
+   LT S3R483_M3110501_2 | S3R483 - Number of students at professional colleges
+   LT S3R483_M3110105_2 | S3R483 - Number of students at professional colleges
+   LT S3R495_M3140103_2 | S3R495 - Number of health care professionals per 10 000 population
+   LT S3R499_M3160406 | S3R499 - Recipients of social assistance and State pensions for the disabled at the end of the year
+   LT S3R500_M3160407 | S3R500 - Recipients of social assistance pensions and relief compensations at the end of the year
+   LT S3R503_M3100201 | S3R503 - Number of family members on social housing rental lists at the end of the year
+   LT S3R504_M3100202_1 | S3R504 - Number of family members rented municipal social housing
+   LT S3R529_M3110705 | S3R529 - University students
+   LT S3R0243_M3160702 | S3R0243 - Number of recipients of social assistance benefit per 1000 population
+   LT S3R0244_M3160412 | S3R0244 - Indice of average monthly state social insurance old-age pension
+   LT S3R0275_M9070353 | S3R0275 - Standardized mortality by cause of death per 100 thousand population
+   LT S10R016_M9070354 | S10R016 - Share of enterprises who declared zero income
+   LT S10R017_M9070358 | S10R017 - Absolute poverty rate (experimental statistics)
+   LT S10R017_M9070359 | S10R017 - Absolute poverty rate (experimental statistics)
+   LT S10R018_M9070358 | S10R018 - At-risk-of-poverty rate (experimental statistics)
+   LT S10R018_M9070359 | S10R018 - At-risk-of-poverty rate (experimental statistics)
+   LT S10R019_M9070360 | S10R019 - At-risk-of-poverty threshold (experimental statistics)
+   LT S3R0282_M3080257 | S3R0282 - Gross monthly income
+   LT S3R0282_M3080274 | S3R0282 - Gross monthly income
+   LT S3R0282_M3080273 | S3R0282 - Gross monthly income
+   LT S3R0282_M3080273_1 | S3R0282 - Gross monthly income
+   LT S3R0283_M3080313 | S3R0283 - Gini coefficient of household income
+   LT S3R0284_M3080268 | S3R0284 - Households by main source of income
+   LT S3R0284_M3080276 | S3R0284 - Households by main source of income
+   LT S3R0284_M3080277 | S3R0284 - Households by main source of income
+   LT S3R0284_M3080277_1 | S3R0284 - Households by main source of income
+   LT S3R0285_M3080314 | S3R0285 - Persistent at-risk-of-poverty rate
+   LT S3R0286_M3080316 | S3R0286 - Other at-risk-of-poverty rates
+   LT S3R0286_M3080316_1 | S3R0286 - Other at-risk-of-poverty rates
+   LT S3R0287_M3080312 | S3R0287 - Other at-risk-of-poverty thresholds
+   LT S3R0436_M3161601_1 | S3R0436 - Average number of recipients of State Social Insurance unemployment benefits
+   LT S3R0438_M3010238 | S3R0438 - Short-term update of the projected population
+   LT S3R0450_M3080220_1 | S3R0450 - Material and social deprivation
+   LT S3R0450_M3080220_2 | S3R0450 - Material and social deprivation
+   LT S3R0450_M3080220_3 | S3R0450 - Material and social deprivation
+   LT S3R0450_M3080220_4 | S3R0450 - Material and social deprivation
+   LT S3R0450_M3080220_5 | S3R0450 - Material and social deprivation
+   LT S3R0450_M3080220_6 | S3R0450 - Material and social deprivation
+   LT S3R0450_M3080220_7 | S3R0450 - Material and social deprivation
+   LT S3R0450_M3080371 | S3R0450 - Material and social deprivation
+   LT S3R0450_M3080372 | S3R0450 - Material and social deprivation
+   LT S3R0450_M3080373 | S3R0450 - Material and social deprivation
+   LT S3R0450_M3080374 | S3R0450 - Material and social deprivation
+   LT S3R0451_M3080279 | S3R0451 - Share of the persons aged 25–34 with tertiary education by income quintile group
+   LT S3R0463_M3120114 | S3R0463 - Participants, compared to the total population
+   LT S3R0463_M3120101_1 | S3R0463 - Participants, compared to the total population
+   LT S3R0463_M3120102_1 | S3R0463 - Participants, compared to the total population
+   LT S3R0463_M3120103_1 | S3R0463 - Participants, compared to the total population
+   LT S3R0463_M3120104_1 | S3R0463 - Participants, compared to the total population
+   LT S3R0463_M3120106_1 | S3R0463 - Participants, compared to the total population
+   LT S3R0463_M3120107_1 | S3R0463 - Participants, compared to the total population
+   LT S3R0463_M3120108_1 | S3R0463 - Participants, compared to the total population
+   LT S3R0463_M3120109_1 | S3R0463 - Participants, compared to the total population
+   LT S3R0463_M3120110_1 | S3R0463 - Participants, compared to the total population
+   LT S3R0463_M3120105_1 | S3R0463 - Participants, compared to the total population
+   LT S3R0463_M3120125_1 | S3R0463 - Participants, compared to the total population
+   LT S3R0466_M3120116_1 | S3R0466 - Participants in non-formal education, compared to the total population
+   LT S3R0466_M3120111_1 | S3R0466 - Participants in non-formal education, compared to the total population
+   LT S3R0466_M3120112_1 | S3R0466 - Participants in non-formal education, compared to the total population
+   LT S3R0466_M3120113_1 | S3R0466 - Participants in non-formal education, compared to the total population
+   LT S3R0466_M3120117_1 | S3R0466 - Participants in non-formal education, compared to the total population
+   LT S3R0466_M3120118_1 | S3R0466 - Participants in non-formal education, compared to the total population
+   LT S3R0470_M3080357 | S3R0470 - Population living in households with very low work intensity
+   LT S3R0470_M3080375 | S3R0470 - Population living in households with very low work intensity
+   LT S3R0470_M3080376 | S3R0470 - Population living in households with very low work intensity
+   LT S3R0470_M3080377 | S3R0470 - Population living in households with very low work intensity
+   LT S3R0470_M3080378 | S3R0470 - Population living in households with very low work intensity
+   LT S3R0470_M3080379 | S3R0470 - Population living in households with very low work intensity
+   LT S3R0470_M3080380 | S3R0470 - Population living in households with very low work intensity
+   LT S3R0471_M3110326 | S3R0471 - General school pupils with special educational needs in general classes
+   LT S3R0471_M3110328 | S3R0471 - General school pupils with special educational needs in general classes
+   LT S3R0471_M3110328_1 | S3R0471 - General school pupils with special educational needs in general classes
+   LT S3R0473_M3161131 | S3R0473 - Employees and volunteers in social services institutions
+   LT S3R0593_M3031200 | S3R0593 - Population aged 18-74 by regular childcare for children under the age of 15
+   LT S3R0595_M3031200_2 | S3R0595 - Average weekly hours spent by the population aged 18-74 on caring for a spouse (partner) and/or other relatives aged 15 years and over
+   LT S3R0596_M3031200_3 | S3R0596 - Population aged 18-74 by the main work-related adjustment undertaken to facilitate care responsibilities
+   LT S3R0597_M3031200_4 | S3R0597 - Population aged 18-74 by the main difficulty encountered in balancing work with care responsibilities
+   LT S3R0494_M3110803_5 | S3R0494 - Number of children receiving social support in children&apos;s summer camps
+   LT S3R0502_M9100109 | S3R0502 - Standartized mortality due to avoidable causes of death per 100 thousand population
+   LT S3R0503_M3160414 | S3R0503 - The ratio of the average monthly state social insurance old-age pension to the average earnings (monthly)
+   LT S3R0504_M3150530 | S3R0504 - Frequency of alcohol consumption in the past 12 months (Income and living conditions survey)
+   LT S3R0504_M3150530_1 | S3R0504 - Frequency of alcohol consumption in the past 12 months (Income and living conditions survey)
+   LT S3R0504_M3150530_2 | S3R0504 - Frequency of alcohol consumption in the past 12 months (Income and living conditions survey)
+   LT S3R0504_M3150530_3 | S3R0504 - Frequency of alcohol consumption in the past 12 months (Income and living conditions survey)
+   LT S3R0504_M3150530_4 | S3R0504 - Frequency of alcohol consumption in the past 12 months (Income and living conditions survey)
+   LT S3R0504_M3150530_5 | S3R0504 - Frequency of alcohol consumption in the past 12 months (Income and living conditions survey)
+   LT S3R0505_M3150531 | S3R0505 - Persons visiting a doctor in the last 12 months (Income and living conditions survey)
+   LT S3R0505_M3150531_1 | S3R0505 - Persons visiting a doctor in the last 12 months (Income and living conditions survey)
+   LT S3R0505_M3150531_2 | S3R0505 - Persons visiting a doctor in the last 12 months (Income and living conditions survey)
+   LT S3R0505_M3150531_3 | S3R0505 - Persons visiting a doctor in the last 12 months (Income and living conditions survey)
+   LT S3R0505_M3150531_4 | S3R0505 - Persons visiting a doctor in the last 12 months (Income and living conditions survey)
+   LT S3R0505_M3150531_5 | S3R0505 - Persons visiting a doctor in the last 12 months (Income and living conditions survey)
+   LT S3R0506_M3150532 | S3R0506 - Frequency of eating vegetables (Income and living conditions survey)
+   LT S3R0506_M3150532_1 | S3R0506 - Frequency of eating vegetables (Income and living conditions survey)
+   LT S3R0506_M3150532_2 | S3R0506 - Frequency of eating vegetables (Income and living conditions survey)
+   LT S3R0506_M3150532_3 | S3R0506 - Frequency of eating vegetables (Income and living conditions survey)
+   LT S3R0506_M3150532_4 | S3R0506 - Frequency of eating vegetables (Income and living conditions survey)
+   LT S3R0506_M3150532_5 | S3R0506 - Frequency of eating vegetables (Income and living conditions survey)
+   LT S3R0507_M3150533 | S3R0507 - Persons engaged in physical leisure activities for a continuous period of at least 10 minutes (Income and living conditions survey)
+   LT S3R0507_M3150533_1 | S3R0507 - Persons engaged in physical leisure activities for a continuous period of at least 10 minutes (Income and living conditions survey)
+   LT S3R0507_M3150533_2 | S3R0507 - Persons engaged in physical leisure activities for a continuous period of at least 10 minutes (Income and living conditions survey)
+   LT S3R0507_M3150533_3 | S3R0507 - Persons engaged in physical leisure activities for a continuous period of at least 10 minutes (Income and living conditions survey)
+   LT S3R0507_M3150533_4 | S3R0507 - Persons engaged in physical leisure activities for a continuous period of at least 10 minutes (Income and living conditions survey)
+   LT S3R0507_M3150533_5 | S3R0507 - Persons engaged in physical leisure activities for a continuous period of at least 10 minutes (Income and living conditions survey)
+   LT S3R0508_M3150534 | S3R0508 - Population having physical limitations (Income and living conditions survey)
+   LT S3R0508_M3150534_1 | S3R0508 - Population having physical limitations (Income and living conditions survey)
+   LT S3R0509_M3150535 | S3R0509 - Population by body mass index (Income and living conditions survey)
+   LT S3R0509_M3150535_1 | S3R0509 - Population by body mass index (Income and living conditions survey)
+   LT S3R0509_M3150535_2 | S3R0509 - Population by body mass index (Income and living conditions survey)
+   LT S3R0509_M3150535_3 | S3R0509 - Population by body mass index (Income and living conditions survey)
+   LT S3R0509_M3150535_4 | S3R0509 - Population by body mass index (Income and living conditions survey)
+   LT S3R0509_M3150535_5 | S3R0509 - Population by body mass index (Income and living conditions survey)
+   LT S3R0510_M3150536 | S3R0510 - Population having vision or hearing disorders (Income and living conditions survey)
+   LT S3R0510_M3150536_1 | S3R0510 - Population having vision or hearing disorders (Income and living conditions survey)
+   LT S3R0511_M3150537 | S3R0511 - Population smoking habits, including electronic cigarettes (Income and living conditions survey)
+   LT S3R0511_M3150537_1 | S3R0511 - Population smoking habits, including electronic cigarettes (Income and living conditions survey)
+   LT S3R0511_M3150537_2 | S3R0511 - Population smoking habits, including electronic cigarettes (Income and living conditions survey)
+   LT S3R0511_M3150537_3 | S3R0511 - Population smoking habits, including electronic cigarettes (Income and living conditions survey)
+   LT S3R0511_M3150537_4 | S3R0511 - Population smoking habits, including electronic cigarettes (Income and living conditions survey)
+   LT S3R0511_M3150537_5 | S3R0511 - Population smoking habits, including electronic cigarettes (Income and living conditions survey)
+   LT S3R0512_M3150538 | S3R0512 - Households financial burden of medical or dental care and medicines (Income and living conditions survey)
+   LT S3R0512_M3150538_1 | S3R0512 - Households financial burden of medical or dental care and medicines (Income and living conditions survey)
+   LT S3R0512_M3150538_2 | S3R0512 - Households financial burden of medical or dental care and medicines (Income and living conditions survey)
+   LT S3R0512_M3150538_3 | S3R0512 - Households financial burden of medical or dental care and medicines (Income and living conditions survey)
+   LT S3R0512_M3150538_4 | S3R0512 - Households financial burden of medical or dental care and medicines (Income and living conditions survey)
+   LT S3R0513_M3150539 | S3R0513 - Proportion of children under the age of 16 whose day-to-day activities were limited due to medical conditions during the last 6 months(Income and living conditions survey)
+   LT S3R0513_M3150539_1 | S3R0513 - Proportion of children under the age of 16 whose day-to-day activities were limited due to medical conditions during the last 6 months(Income and living conditions survey)
+   LT S3R0513_M3150539_2 | S3R0513 - Proportion of children under the age of 16 whose day-to-day activities were limited due to medical conditions during the last 6 months(Income and living conditions survey)
+   LT S3R0513_M3150539_3 | S3R0513 - Proportion of children under the age of 16 whose day-to-day activities were limited due to medical conditions during the last 6 months(Income and living conditions survey)
+   LT S3R0513_M3150539_4 | S3R0513 - Proportion of children under the age of 16 whose day-to-day activities were limited due to medical conditions during the last 6 months(Income and living conditions survey)
+   LT S3R0513_M3150539_5 | S3R0513 - Proportion of children under the age of 16 whose day-to-day activities were limited due to medical conditions during the last 6 months(Income and living conditions survey)
+   LT S3R0514_M3150540 | S3R0514 - Health of children under the age of 16 (parent&apos;s opinion) (Income and living conditions survey)
+   LT S3R0514_M3150540_1 | S3R0514 - Health of children under the age of 16 (parent&apos;s opinion) (Income and living conditions survey)
+   LT S3R0514_M3150540_2 | S3R0514 - Health of children under the age of 16 (parent&apos;s opinion) (Income and living conditions survey)
+   LT S3R0514_M3150540_3 | S3R0514 - Health of children under the age of 16 (parent&apos;s opinion) (Income and living conditions survey)
+   LT S3R0514_M3150540_4 | S3R0514 - Health of children under the age of 16 (parent&apos;s opinion) (Income and living conditions survey)
+   LT S3R0514_M3150540_5 | S3R0514 - Health of children under the age of 16 (parent&apos;s opinion) (Income and living conditions survey)
+   LT S3R0515_M3150541 | S3R0515 - Frequency of eating fruits (Income and living conditions survey)
+   LT S3R0515_M3150541_1 | S3R0515 - Frequency of eating fruits (Income and living conditions survey)
+   LT S3R0515_M3150541_2 | S3R0515 - Frequency of eating fruits (Income and living conditions survey)
+   LT S3R0515_M3150541_3 | S3R0515 - Frequency of eating fruits (Income and living conditions survey)
+   LT S3R0515_M3150541_4 | S3R0515 - Frequency of eating fruits (Income and living conditions survey)
+   LT S3R0515_M3150541_5 | S3R0515 - Frequency of eating fruits (Income and living conditions survey)
+   LT S3R0520_M3110411 | S3R0520 - Number of pupils with special educational needs in vocational training institutions
+   LT S3R0521_M3110327 | S3R0521 - General education students who are educated in the family
+   LT S3R0521_M3110327_1 | S3R0521 - General education students who are educated in the family
+   LT S3R0521_M3110327_2 | S3R0521 - General education students who are educated in the family
+   LT S3R0521_M3110327_3 | S3R0521 - General education students who are educated in the family
+   LT S3R0521_M3110327_4 | S3R0521 - General education students who are educated in the family
+   LT S3R0522_M3110329 | S3R0522 - Dormitories of general education schools and students in them
+   LT S3R0522_M3110329_1 | S3R0522 - Dormitories of general education schools and students in them
+   LT S3R0522_M3110329_2 | S3R0522 - Dormitories of general education schools and students in them
+   LT S3R0523_M3110332 | S3R0523 - General education students in special schools
+   LT S3R0523_M3110332_1 | S3R0523 - General education students in special schools
+   LT S3R0523_M3110332_2 | S3R0523 - General education students in special schools
+   LT S3R0523_M3110332_3 | S3R0523 - General education students in special schools
+   LT S3R0527_M3161007 | S3R0527 - Number of children who have received social services at home
+   LT S3R0529_M3190204 | S3R0529 - Incomes of membership organisations
+   LT S3R0531_M3160420 | S3R0531 - Number of recipients of single person benefit
+   LT S3R0532_M3160421 | S3R0532 - Average single person benefit
+   LT S3R0533_M3160415 | S3R0533 - Number of pension beneficiaries (according to ESSPROS), compared to the total resident population
+   LT S3R0053_M3150501_16 | S3R0053 - Cigarette smoking habits of the population
+   LT S3R0053_M3150501_17 | S3R0053 - Cigarette smoking habits of the population
+   LT S3R0053_M3150501_18 | S3R0053 - Cigarette smoking habits of the population
+   LT S3R0053_M3150501_19 | S3R0053 - Cigarette smoking habits of the population
+   LT S3R0053_M3150501_20 | S3R0053 - Cigarette smoking habits of the population
+   LT S3R0076_M3151005 | S3R0076 - Number of persons diagnosed with diseases directly linked to alcohol consumption per 100 thousand population
+   LT S3R0076_M3151006 | S3R0076 - Number of persons diagnosed with diseases directly linked to alcohol consumption per 100 thousand population
+   LT S3R0079_M3170125_5 | S3R0079 - Number of persons murdered in the domestic environment per 100 000 population
+   LT S3R0080_M3170126 | S3R0080 - Number of specialised assistance centres
+   LT S3R0081_M3170127 | S3R0081 - Victims of domestic violence who received specialised comprehensive assistance
+   LT S3R0081_M3170127_1 | S3R0081 - Victims of domestic violence who received specialised comprehensive assistance
+   LT S7R253_M2030107_1 | S7R253 - Foreign direct investment income
+   LT S7R253_M2030107_2 | S7R253 - Foreign direct investment income
+   LT S7R253_M2030207_5 | S7R253 - Foreign direct investment income
+   LT S7R253_M2030207_6 | S7R253 - Foreign direct investment income
+   LT S7R254_M2030307_1 | S7R254 - Lithuanian direct investment abroad income at the end of the period
+   LT S7R254_M2030307_2 | S7R254 - Lithuanian direct investment abroad income at the end of the period
+   LT S7R254_M2030407_1 | S7R254 - Lithuanian direct investment abroad income at the end of the period
+   LT S7R254_M2030407_2 | S7R254 - Lithuanian direct investment abroad income at the end of the period
+   LT S3R0088_M3140934 | S3R0088 - Frequency of persons with and without limitation in activities people usually do because of health communicating in social networks
+   LT S3R0126_M3010312 | S3R0126 - Age-specific nuptiality rates, per 1 000 population of corresponding age
+   LT S3R0186_M3170144 | S3R0186 - Pupils not attending school due to domestic violence
+   LT S3R0186_M3170144_1 | S3R0186 - Pupils not attending school due to domestic violence
+   LT S3R0229_M3010225 | S3R0229 - The number of children (aged 0–17), compared to the total resident population
+   LT S1R125_M9070338_2 | S1R125 - Hazardous waste per 1000 population
+== ge_px_root.json OK 1066 https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database
+   GE root: Agriculture, Business Statistics, Construction, Demography, Environment Statistics, External Trade, FDI, Gender Statistics, Hotels and Restaurants, Industry, National Accounts, Number of markets and fairs, Population Census 2014, Price Statistics, Social Statistics, Trade, Transport and Communication
+== ge_px_Population_Census_2014.json OK 651 https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Population%20Census%202014
+     Population Census 2014/Demographic And Social Characteristics | Demographic And Social Characteristics
+     Population Census 2014/Disability | Disability
+     Population Census 2014/Economic Characteristics | Economic Characteristics
+     Population Census 2014/Education | Education
+     Population Census 2014/Households | Households
+     Population Census 2014/International Migration | International Migration
+     Population Census 2014/Living Conditions | Living Conditions
+     Population Census 2014/The Geographical Distribution Of The Population And Internal Migration | The Geographical Distribution Of The Population And Internal Migration
+== ge_px_Social_Statistics.json OK 398 https://pc-axis.geostat.ge/PXWeb/api/v1/en/Database/Social%20Statistics
+     Social Statistics/Culture | Culture
+     Social Statistics/Education | Education
+     Social Statistics/Health | Health
+     Social Statistics/Justice | Justice
+     Social Statistics/Labour | Labour
+     Social Statistics/Living Conditions, Subsistence Minimum | Living Conditions, Subsistence Minimum
+     Social Statistics/Social Protection | Social Protection
+== ge_ssa.html ERR HTTP Error 403: Forbidden https://ssa.gov.ge/
+== ge_geostat_reg.html OK 68634 https://www.geostat.ge/en/modules/categories/27/regional-statistics
+== ge_geostat_edu.html OK 100612 https://www.geostat.ge/en/modules/categories/59/general-education
+== ge_geostat_soc.html OK 81250 https://www.geostat.ge/en/modules/categories/192/living-conditions-subsistence-minimum-and-social-assistance
+== za_emis.html OK 258930 https://www.education.gov.za/Programmes/EMIS/EMISDownloads.aspx
+   link National School Nutrition Programme | https://www.education.gov.za/Programmes/CareandSupport/NationalSchoolNutritionProgramme.aspx
+   link Safety in Schools | https://www.education.gov.za/Programmes/CareandSupport/SafetyinSchools.aspx
+   link WASH in Schools | https://www.education.gov.za/Programmes/CareandSupport/WASHinSchools.aspx
+   link ABC Motsepe Schools Eisteddfod | https://www.education.gov.za/Programmes/LearnerEnrichment/ABCMotsepeSchoolsEisteddfod.aspx
+   link Operational Ordinary Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=XrhHvRrRkSk%3d&tabid=466&portalid=0&mid=7070
+   link National: Ordinary Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=bcGq-JXU5IQ%3d&tabid=466&portalid=0&mid=6833
+   link National: Ordinary Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=8CuGlTzTfPY%3d&tabid=466&portalid=0&mid=5913
+   link National: Ordinary Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=90G8oeGDuOw%3d&tabid=466&portalid=0&mid=5912
+   link National: Ordinary Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=W4UuopDk5B4%3d&tabid=466&portalid=0&mid=4486
+   link National: Ordinary Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=QSovaxAfsME%3d&tabid=466&portalid=0&mid=3058
+   link National: Boarding Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=UtjnyE6Ab90%3d&tabid=466&portalid=0&mid=1727
+   link National: Ordinary Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=KQpHxjgIS6s%3d&tabid=466&portalid=0&mid=1727
+   link National Ordinary Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=oqeFG0tDX9I%3d&tabid=466&portalid=0&mid=1728
+   link National: Boarding Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=3dXpcs96-X4%3d&tabid=466&portalid=0&mid=1728
+   link National Ordinary Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=uM_HpbzG6yA%3d&tabid=466&portalid=0&mid=1729
+   link National: Boarding Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=Pq103wzhnjA%3d&tabid=466&portalid=0&mid=1729
+   link National Ordinary Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=ZXGYDWWCwl4%3d&tabid=466&portalid=0&mid=1730
+   link National: Boarding Schools | https://www.education.gov.za/LinkClick.aspx?fileticket=_wgv9VqgD94%3d&tabid=466&portalid=0&mid=1730
+   link National - ordinary schools | https://www.education.gov.za/LinkClick.aspx?fileticket=O2qbsfuGFC4%3d&tabid=466&portalid=0&mid=12482
+   link School Based Assessment | https://www.education.gov.za/SchoolBasedAssessmentTasks2014/tabid/611/Default.aspx
+   link Schools Masterlist Data | https://www.education.gov.za/Programmes/EMIS/EMISDownloads.aspx
+== za_statssa_c22.html OK 212 https://www.statssa.gov.za/?page_id=16716
+== ke_knbs_census.html ERR <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)> https://www.knbs.or.ke/2019-kenya-population-and-housing-census-reports/
+== ke_knbs_poverty.html ERR <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)> https://www.knbs.or.ke/?s=poverty+report
+== ke_knbs_pubs.html ERR <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)> https://www.knbs.or.ke/publications/
+== ke_moe.html ERR <urlopen error [Errno 110] Connection timed out> https://www.education.go.ke/publications
+== kr_kess.html OK 3813 https://kess.kedi.re.kr/index
+== kr_kess_pub.html OK 1469 https://kess.kedi.re.kr/publ/list?itemCode=02&menuId=m_02_02_01
+== kr_kosis.html OK 1220 https://kosis.kr/statHtml/statHtml.do?orgId=117&tblId=DT_117N_A00001
+== kr_mohw.html OK 113357 https://www.mohw.go.kr/board.es?mid=a10411010100&bid=0019
+   link 통계 | https://www.mohw.go.kr/menu.es?mid=a10406010000
+   link 승인통계 | https://www.mohw.go.kr/menu.es?mid=a10406010100
+   link 보조금부정수급자 명단공표 | https://www.mohw.go.kr/menu.es?mid=a10507030100
+   link 국민기초생활보장제도 개선 | https://www.mohw.go.kr/menu.es?mid=a10716090000
+   link 의사인력 수급추계위원회 | https://www.mohw.go.kr/menu.es?mid=a10702060100
+   link 기초생활보장 | https://www.mohw.go.kr/menu.es?mid=a10708010000
+   link 통계 | https://www.mohw.go.kr/menu.es?mid=a10406010000
+   link 승인통계 | https://www.mohw.go.kr/menu.es?mid=a10406010100
+   link 보조금부정수급자 명단공표 | https://www.mohw.go.kr/menu.es?mid=a10507030100
+   link 국민기초생활보장제도 개선 | https://www.mohw.go.kr/menu.es?mid=a10716090000
+   link 의사인력 수급추계위원회 | https://www.mohw.go.kr/menu.es?mid=a10702060100
+   link 기초생활보장 | https://www.mohw.go.kr/menu.es?mid=a10708010000
+   link 통계 | https://www.mohw.go.kr/menu.es?mid=a10406010000
+   link 승인통계 | https://www.mohw.go.kr/menu.es?mid=a10406010100
+   link 통계로 보는 사회보장 2025 | https://www.mohw.go.kr/board.es?mid=a10411010100&bid=0019&act=view&list_no=1492110&tag=&nPage=1
+   link 2025년 아동학대 주요통계 | https://www.mohw.go.kr/board.es?mid=a10411010100&bid=0019&act=view&list_no=1491786&tag=&nPage=1
+   link 2025년 국민기초생활보장 수급자 현황 | https://www.mohw.go.kr/board.es?mid=a10411010100&bid=0019&act=view&list_no=1491455&tag=&nPage=1
+   link 보건산업통계 홈페이지 | http://khiss.go.kr/
+== w_lt.html OK 320432 https://en.wikipedia.org/w/index.php?title=Municipalities_of_Lithuania&action=render
+== w_ge.html OK 5884 https://en.wikipedia.org/w/index.php?title=Municipalities_of_Georgia&action=render
+== w_ke.html OK 234090 https://en.wikipedia.org/w/index.php?title=Counties_of_Kenya&action=render
+== w_za.html OK 582273 https://en.wikipedia.org/w/index.php?title=List_of_municipalities_in_South_Africa&action=render
+== w_kr.html OK 154122 https://en.wikipedia.org/w/index.php?title=Provinces_of_South_Korea&action=render
