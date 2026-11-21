@@ -82,7 +82,7 @@ def centroid(geom):
 
 
 _CACHE = {}
-DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "AU": "australia", "HR": "croatia", "PH": "philippines", "LV": "latvia", "EE": "estonia", "AR": "argentina"}
+DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "AU": "australia", "HR": "croatia", "PH": "philippines", "LV": "latvia", "EE": "estonia", "ARG": "argentina", "ISR": "israel"}
 # Brazil: municipal chambers (câmara municipal) and their education committees, in Portuguese.
 RULES = {"BR": (re.compile(r"comiss[ãa]o (permanente )?de educa[çc][ãa]o|educa[çc][ãa]o.*comiss[ãa]o", re.I),
                 re.compile(r"sess[ãa]o|c[âa]mara", re.I),
@@ -1425,7 +1425,7 @@ def argentina():
     area = {f["properties"]["id"]: area_km2(f["geometry"]) for f in feats}
     rows = []
     for name, x in ar.items():
-        did = "AR-" + x["code"]
+        did = "ARG-" + x["code"]
         pop = x.get("pop")
         dens = pop / area[did] if pop and area.get(did) else 0
         m = x.get("meetings") or {}
@@ -1443,7 +1443,44 @@ def argentina():
                      "School system": ("Autonomous city (its Ministry of Education); elected legislature" if x["code"] == "02" else
                                        "Province (its ministry or general directorate of education" + (", with a general education council" if x.get("council") else "") + "); elected legislature"),
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": True})
-    write("AR", "argentina", rows, feats)
+    write("ARG", "argentina", rows, feats)
+
+
+def israel():
+    """259 local authorities (Interior Ministry list): municipalities, local councils and regional councils, including those
+    in the West Bank and the Golan Heights. Schools: the Ministry of Education runs the state system (official schools);
+    the authority builds and maintains them, runs its education department and pays for part of their services; its
+    elected council decides on this, some through an education committee. Recognized but unofficial (largely Haredi)
+    networks and exempt schools are privately run. Poverty stand-in: people known to the authority's social services in
+    2019 (Ministry of Welfare) per 100 residents (Census 2022). Meetings (stand-in): council meetings on the authority's own
+    YouTube channel, counted once per date (prep_israel.py)."""
+    d = os.path.join(IN, "israel")
+    il = json.load(open(os.path.join(d, "il_data.json"), encoding="utf-8"))
+    feats = json.load(open(os.path.join(d, "il_auth.geojson"), encoding="utf-8"))["features"]
+    area = {f["properties"]["id"]: area_km2(f["geometry"]) for f in feats}
+    rows = []
+    for code, x in il.items():
+        did = f"ISR-{code}"
+        pop = x.get("pop22") or x.get("pop")
+        dens = pop / area[did] if pop and area.get(did) else 0
+        rate = 100 * x["welfare"] / x["pop22"] if x.get("welfare") and x.get("pop22") else None
+        m = x.get("meetings") or {}
+        n = m.get("n", 0)
+        latest, years = date_summary(m.get("titles", [])) if n else ("", "")
+        kids = round(x["age0_5"] + x["age6_18"] * 12 / 13) if x.get("age6_18") is not None else ""
+        rows.append({"District": f"{x['en']} ({x['name']})" if x.get("en") else x["name"], "_names": [x["name"], x.get("en", ""), x.get("long", "")], "Region": x["district"], "Population": pop or "",
+                     "Poverty rate (all ages)": f"{rate:.1f}%" if rate is not None else "",
+                     "Poverty note": (f"Stand-in: people known to the authority's social services department in 2019 ({x['welfare']:,}; Ministry of Welfare and Social Affairs) "
+                                      f"per 100 residents (Census 2022, {x['pop22']:,}); socio-economic cluster {x['cluster']} of 10 (CBS). Israel publishes no poverty rate "
+                                      "by local authority" if rate is not None else "No residents' figure or welfare count for this authority"),
+                     "Children under 18 (estimated)": kids,
+                     "Enrollment": x.get("pupils", ""), "Enrollment year": "2015 (pupils in schools, kindergartens left out; Ministry of Education)" if x.get("pupils") else "",
+                     "Public school enrollment": x.get("public", ""),
+                     "_own_meetings": True, "Available Board Meetings": n, "Meetings type": "Council (stand-in)" if n else "",
+                     "Meetings source": m.get("source", "") if n else "", "Latest meeting": latest, "Meetings by year": years,
+                     "School system": f"{x['kind']} (its education department, with the Ministry of Education); elected council",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in area})
+    write("ISR", "israel", rows, feats)
 
 
 if __name__ == "__main__":

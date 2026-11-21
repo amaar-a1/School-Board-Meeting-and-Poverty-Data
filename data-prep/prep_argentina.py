@@ -70,7 +70,7 @@ def borders(geo):
     feats = []
     for p in PROV:
         g = g1[p].simplify(0.005, preserve_topology=True)
-        feats.append({"type": "Feature", "properties": {"id": "AR-" + CODE[p], "NAME": p}, "geometry": {"type": g.geom_type, "coordinates": rnd(mapping(g)["coordinates"])}})
+        feats.append({"type": "Feature", "properties": {"id": "ARG-" + CODE[p], "NAME": p}, "geometry": {"type": g.geom_type, "coordinates": rnd(mapping(g)["coordinates"])}})
     json.dump({"type": "FeatureCollection", "features": feats}, open(os.path.join(OUT, "ar_prov.geojson"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
 
 

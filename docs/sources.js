@@ -403,6 +403,33 @@ window.SOURCES = [
     note: "Built by data-prep/prep_croatia.py and data-prep/build_latam.py. Places are matched to the poverty map by name (shared names by the map's qualifier or population) and placed in counties by their borders."
   },
   {
+    only: "Argentina",
+    group: "Argentina: provinces",
+    items: [
+      { title: "Poverty: INDEC, Encuesta Permanente de Hogares, “Incidencia de la pobreza y la indigencia en 31 aglomerados urbanos”, first half of 2026: cuadros (Cuadro 4.1 and “Poblaciones”, people below the poverty line by urban area; Cuadros 3.2 and 3.4, by age)", url: "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-46-152" },
+      { title: "Population: INDEC, Censo Nacional de Población, Hogares y Viviendas 2022, final results by province", url: "https://censo.gob.ar/index.php/datos_definitivos_total_pais/" },
+      { title: "Borders: geoBoundaries (gbOpen) ARG ADM1 and ADM2, simplified; Entre Ríos rebuilt from its 17 departments (ADM2), as the ADM1 file draws it inside Buenos Aires province", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings: each provincial legislature's YouTube channel (in the “Meetings source” column), searched November 2026", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_argentina.py and data-prep/build_latam.py (argentina). Two surveyed urban areas straddle a provincial border (San Nicolás – Villa Constitución, Viedma – Carmen de Patagones); each is counted in the province of its larger part. Pupils by province are in the Ministry of Education's Relevamiento Anual school database, which is only offered behind a Microsoft sign-in, so enrollment isn't shown yet."
+  },
+  {
+    only: "Israel",
+    group: "Israel: local authorities",
+    items: [
+      { title: "Local authorities: Interior Ministry, list of local authorities (municipalities, local councils and regional councils), data.gov.il", url: "https://data.gov.il/" },
+      { title: "Poverty stand-in: Ministry of Welfare and Social Affairs, people and cases known to the social services departments by local authority, 2010–2019 (2019 used), data.gov.il", url: "https://data.gov.il/" },
+      { title: "Residents: Central Bureau of Statistics, Census 2022, population and households by locality, data.gov.il (added up over a regional council's localities)", url: "https://data.gov.il/dataset/3bd97fde-6cc3-456d-ab63-1caad16b2b6a" },
+      { title: "Children under 18 (estimated from ages 0–5 and 6–18) and a few populations: Population and Immigration Authority, residents in Israel by locality and age groups, data.gov.il", url: "https://data.gov.il/dataset/00172ee8-4433-4d5d-8fd4-11f0f08ce5c4" },
+      { title: "Localities' regional council and subdistrict: Population and Immigration Authority, list of localities in Israel, data.gov.il", url: "https://data.gov.il/dataset/3fc54b81-25b3-4ac7-87db-248c3e1602de" },
+      { title: "Socio-economic cluster: Central Bureau of Statistics, characterization and classification of local authorities by socio-economic level, 2019", url: "https://www.cbs.gov.il/" },
+      { title: "Pupils and public-school share: Ministry of Education, characteristics of education institutions (pupils per school, with its legal status), 2015, data.gov.il", url: "https://data.gov.il/dataset/mosdot" },
+      { title: "Borders: © OpenStreetMap contributors (ODbL), administrative boundaries (admin_level 8), from Geofabrik's Israel and Palestine extract", url: "https://download.geofabrik.de/asia/israel-and-palestine.html" },
+      { title: "Meetings: each local authority's YouTube channel (in the “Meetings source” column), searched November 2026", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_israel.py and data-prep/build_latam.py (israel). Sources are matched by the authority's name (a few by hand); districts come from the localities' subdistricts. Modi'in Illit and Sha'ar Shomron (formed in 2024) have no border in OpenStreetMap, and two industrial local councils (Migdal Tefen, Neot Hovav) have no residents."
+  },
+  {
     only: "Latvia",
     group: "Latvia: state cities and municipalities",
     items: [

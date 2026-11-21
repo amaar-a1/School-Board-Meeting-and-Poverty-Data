@@ -352,6 +352,28 @@ window.STATE_RULES = {
     ],
     note: "Check the current law and the council's own rules before relying on this."
   },
+  argentina: {
+    title: "Rules for provincial legislatures and education councils",
+    checked: "November 21, 2026",
+    laws: [
+      { state: "Argentina", covers: "Schools", threshold: "",
+        rule: "Under the National Education Law (26.206) the provinces and the City of Buenos Aires run their education systems; the national ministry and the Federal Council of Education set common rules." },
+      { state: "Argentina", covers: "Provincial legislatures and education councils", threshold: "",
+        rule: "Each province's constitution and laws set its own rules: legislature sittings are public, and many legislatures stream them; no national rule requires education councils or committees to record their meetings." }
+    ],
+    note: "Rules differ by province. Check the province's constitution and laws before relying on this."
+  },
+  israel: {
+    title: "Rules for local authority council meetings",
+    checked: "November 21, 2026",
+    laws: [
+      { state: "Israel", covers: "Municipal and local councils", threshold: "",
+        rule: "Council meetings are public under the Municipalities Ordinance (and the Local Councils Order for local and regional councils); many authorities stream them or post recordings, and amendments have added duties to publish council material, so check the current version for what must be recorded." },
+      { state: "Israel", covers: "Schools", threshold: "",
+        rule: "The Ministry of Education runs the state school system (State Education Law, 1953); local authorities build and maintain schools and take part in running them under the Compulsory Education Law." }
+    ],
+    note: "Check the current law and the authority's own rules before relying on this."
+  },
   philippines: {
     title: "Rules for council sessions and local school boards",
     checked: "November 8, 2026",
