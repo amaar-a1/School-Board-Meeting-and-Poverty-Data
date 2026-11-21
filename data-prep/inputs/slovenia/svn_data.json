@@ -1,0 +1,1910 @@
+{
+"001": {
+"name": "Ajdovščina",
+"pop": 19977,
+"area": 245,
+"basic": 2177,
+"upper": 899,
+"children": 3972,
+"half": "2026H2"
+},
+"213": {
+"name": "Ankaran/Ancarano",
+"pop": 3444,
+"area": 8,
+"basic": 245,
+"upper": 116,
+"children": 534,
+"half": "2026H2"
+},
+"195": {
+"name": "Apače",
+"pop": 3562,
+"area": 53,
+"basic": 273,
+"upper": 134,
+"children": 569,
+"half": "2026H2"
+},
+"002": {
+"name": "Beltinci",
+"pop": 8078,
+"area": 62,
+"basic": 593,
+"upper": 320,
+"children": 1335,
+"half": "2026H2"
+},
+"148": {
+"name": "Benedikt",
+"pop": 2727,
+"area": 24,
+"basic": 298,
+"upper": 120,
+"children": 539,
+"half": "2026H2"
+},
+"149": {
+"name": "Bistrica ob Sotli",
+"pop": 1334,
+"area": 31,
+"basic": 116,
+"upper": 56,
+"children": 205,
+"half": "2026H2"
+},
+"003": {
+"name": "Bled",
+"pop": 8103,
+"area": 72,
+"basic": 656,
+"upper": 268,
+"children": 1317,
+"half": "2026H2"
+},
+"150": {
+"name": "Bloke",
+"pop": 1563,
+"area": 75,
+"basic": 162,
+"upper": 60,
+"children": 275,
+"half": "2026H2"
+},
+"004": {
+"name": "Bohinj",
+"pop": 5216,
+"area": 334,
+"basic": 424,
+"upper": 207,
+"children": 868,
+"half": "2026H2"
+},
+"005": {
+"name": "Borovnica",
+"pop": 4688,
+"area": 42,
+"basic": 540,
+"upper": 188,
+"children": 988,
+"half": "2026H2"
+},
+"006": {
+"name": "Bovec",
+"pop": 3052,
+"area": 367,
+"basic": 175,
+"upper": 98,
+"children": 363,
+"half": "2026H2"
+},
+"151": {
+"name": "Braslovče",
+"pop": 5908,
+"area": 55,
+"basic": 543,
+"upper": 277,
+"children": 1129,
+"half": "2026H2"
+},
+"007": {
+"name": "Brda",
+"pop": 5564,
+"area": 72,
+"basic": 440,
+"upper": 227,
+"children": 921,
+"half": "2026H2"
+},
+"008": {
+"name": "Brezovica",
+"pop": 13202,
+"area": 91,
+"basic": 1316,
+"upper": 660,
+"children": 2592,
+"half": "2026H2"
+},
+"009": {
+"name": "Brežice",
+"pop": 24412,
+"area": 268,
+"basic": 2102,
+"upper": 872,
+"children": 3987,
+"half": "2026H2"
+},
+"152": {
+"name": "Cankova",
+"pop": 1748,
+"area": 31,
+"basic": 124,
+"upper": 51,
+"children": 262,
+"half": "2026H2"
+},
+"011": {
+"name": "Celje",
+"pop": 49802,
+"area": 95,
+"basic": 4246,
+"upper": 1871,
+"children": 8347,
+"half": "2026H2"
+},
+"012": {
+"name": "Cerklje na Gorenjskem",
+"pop": 8029,
+"area": 78,
+"basic": 787,
+"upper": 367,
+"children": 1529,
+"half": "2026H2"
+},
+"013": {
+"name": "Cerknica",
+"pop": 11899,
+"area": 241,
+"basic": 1148,
+"upper": 504,
+"children": 2222,
+"half": "2026H2"
+},
+"014": {
+"name": "Cerkno",
+"pop": 4445,
+"area": 132,
+"basic": 345,
+"upper": 197,
+"children": 825,
+"half": "2026H2"
+},
+"153": {
+"name": "Cerkvenjak",
+"pop": 2250,
+"area": 25,
+"basic": 254,
+"upper": 68,
+"children": 437,
+"half": "2026H2"
+},
+"196": {
+"name": "Cirkulane",
+"pop": 2357,
+"area": 32,
+"basic": 160,
+"upper": 86,
+"children": 328,
+"half": "2026H2"
+},
+"015": {
+"name": "Črenšovci",
+"pop": 3870,
+"area": 34,
+"basic": 324,
+"upper": 157,
+"children": 651,
+"half": "2026H2"
+},
+"016": {
+"name": "Črna na Koroškem",
+"pop": 3001,
+"area": 156,
+"basic": 216,
+"upper": 108,
+"children": 475,
+"half": "2026H2"
+},
+"017": {
+"name": "Črnomelj",
+"pop": 14170,
+"area": 340,
+"basic": 1284,
+"upper": 530,
+"children": 2485,
+"half": "2026H2"
+},
+"018": {
+"name": "Destrnik",
+"pop": 2737,
+"area": 34,
+"basic": 264,
+"upper": 119,
+"children": 461,
+"half": "2026H2"
+},
+"019": {
+"name": "Divača",
+"pop": 4604,
+"area": 145,
+"basic": 455,
+"upper": 178,
+"children": 828,
+"half": "2026H2"
+},
+"154": {
+"name": "Dobje",
+"pop": 965,
+"area": 18,
+"basic": 126,
+"upper": 36,
+"children": 211,
+"half": "2026H2"
+},
+"020": {
+"name": "Dobrepolje",
+"pop": 3946,
+"area": 103,
+"basic": 353,
+"upper": 182,
+"children": 687,
+"half": "2026H2"
+},
+"155": {
+"name": "Dobrna",
+"pop": 2347,
+"area": 32,
+"basic": 251,
+"upper": 86,
+"children": 432,
+"half": "2026H2"
+},
+"021": {
+"name": "Dobrova - Polhov Gradec",
+"pop": 8068,
+"area": 118,
+"basic": 776,
+"upper": 409,
+"children": 1625,
+"half": "2026H2"
+},
+"156": {
+"name": "Dobrovnik/Dobronak",
+"pop": 1217,
+"area": 31,
+"basic": 82,
+"upper": 49,
+"children": 180,
+"half": "2026H2"
+},
+"022": {
+"name": "Dol pri Ljubljani",
+"pop": 6438,
+"area": 33,
+"basic": 738,
+"upper": 313,
+"children": 1249,
+"half": "2026H2"
+},
+"157": {
+"name": "Dolenjske Toplice",
+"pop": 3666,
+"area": 110,
+"basic": 359,
+"upper": 167,
+"children": 649,
+"half": "2026H2"
+},
+"023": {
+"name": "Domžale",
+"pop": 38326,
+"area": 72,
+"basic": 4082,
+"upper": 1702,
+"children": 7467,
+"half": "2026H2"
+},
+"024": {
+"name": "Dornava",
+"pop": 2915,
+"area": 28,
+"basic": 242,
+"upper": 114,
+"children": 470,
+"half": "2026H2"
+},
+"025": {
+"name": "Dravograd",
+"pop": 8773,
+"area": 105,
+"basic": 785,
+"upper": 345,
+"children": 1449,
+"half": "2026H2"
+},
+"026": {
+"name": "Duplek",
+"pop": 7067,
+"area": 40,
+"basic": 650,
+"upper": 301,
+"children": 1191,
+"half": "2026H2"
+},
+"027": {
+"name": "Gorenja vas - Poljane",
+"pop": 7739,
+"area": 153,
+"basic": 1023,
+"upper": 460,
+"children": 1829,
+"half": "2026H2"
+},
+"028": {
+"name": "Gorišnica",
+"pop": 4212,
+"area": 29,
+"basic": 434,
+"upper": 167,
+"children": 735,
+"half": "2026H2"
+},
+"207": {
+"name": "Gorje",
+"pop": 2733,
+"area": 116,
+"basic": 252,
+"upper": 116,
+"children": 482,
+"half": "2026H2"
+},
+"029": {
+"name": "Gornja Radgona",
+"pop": 8555,
+"area": 75,
+"basic": 697,
+"upper": 291,
+"children": 1256,
+"half": "2026H2"
+},
+"030": {
+"name": "Gornji Grad",
+"pop": 2534,
+"area": 90,
+"basic": 200,
+"upper": 114,
+"children": 407,
+"half": "2026H2"
+},
+"031": {
+"name": "Gornji Petrovci",
+"pop": 1918,
+"area": 67,
+"basic": 137,
+"upper": 53,
+"children": 247,
+"half": "2026H2"
+},
+"158": {
+"name": "Grad",
+"pop": 1953,
+"area": 37,
+"basic": 136,
+"upper": 66,
+"children": 309,
+"half": "2026H2"
+},
+"032": {
+"name": "Grosuplje",
+"pop": 22276,
+"area": 134,
+"basic": 2303,
+"upper": 1033,
+"children": 4455,
+"half": "2026H2"
+},
+"159": {
+"name": "Hajdina",
+"pop": 4092,
+"area": 22,
+"basic": 315,
+"upper": 160,
+"children": 682,
+"half": "2026H2"
+},
+"160": {
+"name": "Hoče - Slivnica",
+"pop": 12061,
+"area": 54,
+"basic": 1037,
+"upper": 473,
+"children": 2036,
+"half": "2026H2"
+},
+"161": {
+"name": "Hodoš/Hodos",
+"pop": 335,
+"area": 18,
+"basic": 6,
+"upper": 8,
+"children": 43,
+"half": "2026H2"
+},
+"162": {
+"name": "Horjul",
+"pop": 3085,
+"area": 32,
+"basic": 337,
+"upper": 147,
+"children": 629,
+"half": "2026H2"
+},
+"034": {
+"name": "Hrastnik",
+"pop": 8755,
+"area": 59,
+"basic": 671,
+"upper": 305,
+"children": 1223,
+"half": "2026H2"
+},
+"035": {
+"name": "Hrpelje - Kozina",
+"pop": 5451,
+"area": 195,
+"basic": 461,
+"upper": 191,
+"children": 966,
+"half": "2026H2"
+},
+"036": {
+"name": "Idrija",
+"pop": 11482,
+"area": 293,
+"basic": 1037,
+"upper": 474,
+"children": 1952,
+"half": "2026H2"
+},
+"037": {
+"name": "Ig",
+"pop": 7974,
+"area": 99,
+"basic": 873,
+"upper": 402,
+"children": 1612,
+"half": "2026H2"
+},
+"038": {
+"name": "Ilirska Bistrica",
+"pop": 13130,
+"area": 480,
+"basic": 1110,
+"upper": 475,
+"children": 2016,
+"half": "2026H2"
+},
+"039": {
+"name": "Ivančna Gorica",
+"pop": 18272,
+"area": 227,
+"basic": 1995,
+"upper": 848,
+"children": 3859,
+"half": "2026H2"
+},
+"040": {
+"name": "Izola/Isola",
+"pop": 16447,
+"area": 29,
+"basic": 1268,
+"upper": 610,
+"children": 2574,
+"half": "2026H2"
+},
+"041": {
+"name": "Jesenice",
+"pop": 21769,
+"area": 76,
+"basic": 1839,
+"upper": 754,
+"children": 3628,
+"half": "2026H2"
+},
+"163": {
+"name": "Jezersko",
+"pop": 679,
+"area": 69,
+"basic": 38,
+"upper": 24,
+"children": 134,
+"half": "2026H2"
+},
+"042": {
+"name": "Juršinci",
+"pop": 2486,
+"area": 36,
+"basic": 229,
+"upper": 116,
+"children": 416,
+"half": "2026H2"
+},
+"043": {
+"name": "Kamnik",
+"pop": 29830,
+"area": 266,
+"basic": 2919,
+"upper": 1346,
+"children": 5691,
+"half": "2026H2"
+},
+"044": {
+"name": "Kanal",
+"pop": 5047,
+"area": 147,
+"basic": 363,
+"upper": 231,
+"children": 822,
+"half": "2026H2"
+},
+"045": {
+"name": "Kidričevo",
+"pop": 6606,
+"area": 71,
+"basic": 582,
+"upper": 265,
+"children": 1108,
+"half": "2026H2"
+},
+"046": {
+"name": "Kobarid",
+"pop": 3964,
+"area": 193,
+"basic": 379,
+"upper": 154,
+"children": 638,
+"half": "2026H2"
+},
+"047": {
+"name": "Kobilje",
+"pop": 502,
+"area": 20,
+"basic": 31,
+"upper": 19,
+"children": 69,
+"half": "2026H2"
+},
+"048": {
+"name": "Kočevje",
+"pop": 15595,
+"area": 556,
+"basic": 1389,
+"upper": 558,
+"children": 2696,
+"half": "2026H2"
+},
+"049": {
+"name": "Komen",
+"pop": 3476,
+"area": 103,
+"basic": 286,
+"upper": 139,
+"children": 488,
+"half": "2026H2"
+},
+"164": {
+"name": "Komenda",
+"pop": 6800,
+"area": 24,
+"basic": 744,
+"upper": 366,
+"children": 1453,
+"half": "2026H2"
+},
+"050": {
+"name": "Koper/Capodistria",
+"pop": 54795,
+"area": 303,
+"basic": 4744,
+"upper": 2045,
+"children": 8785,
+"half": "2026H2"
+},
+"197": {
+"name": "Kostanjevica na Krki",
+"pop": 2424,
+"area": 58,
+"basic": 237,
+"upper": 103,
+"children": 423,
+"half": "2026H2"
+},
+"165": {
+"name": "Kostel",
+"pop": 604,
+"area": 56,
+"basic": 53,
+"upper": 17,
+"children": 54,
+"half": "2026H2"
+},
+"051": {
+"name": "Kozje",
+"pop": 2996,
+"area": 90,
+"basic": 201,
+"upper": 121,
+"children": 489,
+"half": "2026H2"
+},
+"052": {
+"name": "Kranj",
+"pop": 57491,
+"area": 151,
+"basic": 5409,
+"upper": 2378,
+"children": 10289,
+"half": "2026H2"
+},
+"053": {
+"name": "Kranjska Gora",
+"pop": 5143,
+"area": 256,
+"basic": 355,
+"upper": 187,
+"children": 641,
+"half": "2026H2"
+},
+"166": {
+"name": "Križevci",
+"pop": 3531,
+"area": 46,
+"basic": 284,
+"upper": 127,
+"children": 542,
+"half": "2026H2"
+},
+"054": {
+"name": "Krško",
+"pop": 26210,
+"area": 287,
+"basic": 2554,
+"upper": 1042,
+"children": 4888,
+"half": "2026H2"
+},
+"055": {
+"name": "Kungota",
+"pop": 5018,
+"area": 49,
+"basic": 393,
+"upper": 205,
+"children": 818,
+"half": "2026H2"
+},
+"056": {
+"name": "Kuzma",
+"pop": 1663,
+"area": 23,
+"basic": 141,
+"upper": 56,
+"children": 274,
+"half": "2026H2"
+},
+"057": {
+"name": "Laško",
+"pop": 13023,
+"area": 198,
+"basic": 1067,
+"upper": 506,
+"children": 2203,
+"half": "2026H2"
+},
+"058": {
+"name": "Lenart",
+"pop": 8674,
+"area": 62,
+"basic": 778,
+"upper": 329,
+"children": 1499,
+"half": "2026H2"
+},
+"059": {
+"name": "Lendava/Lendva",
+"pop": 10088,
+"area": 121,
+"basic": 672,
+"upper": 288,
+"children": 1429,
+"half": "2026H2"
+},
+"060": {
+"name": "Litija",
+"pop": 15890,
+"area": 221,
+"basic": 1494,
+"upper": 708,
+"children": 2864,
+"half": "2026H2"
+},
+"061": {
+"name": "Ljubljana",
+"pop": 302826,
+"area": 275,
+"basic": 26217,
+"upper": 10521,
+"children": 48550,
+"half": "2026H2"
+},
+"062": {
+"name": "Ljubno",
+"pop": 2476,
+"area": 79,
+"basic": 226,
+"upper": 103,
+"children": 457,
+"half": "2026H2"
+},
+"063": {
+"name": "Ljutomer",
+"pop": 10850,
+"area": 107,
+"basic": 820,
+"upper": 465,
+"children": 1656,
+"half": "2026H2"
+},
+"208": {
+"name": "Log - Dragomer",
+"pop": 3895,
+"area": 11,
+"basic": 368,
+"upper": 158,
+"children": 644,
+"half": "2026H2"
+},
+"064": {
+"name": "Logatec",
+"pop": 15129,
+"area": 173,
+"basic": 1681,
+"upper": 719,
+"children": 3172,
+"half": "2026H2"
+},
+"065": {
+"name": "Loška dolina",
+"pop": 3506,
+"area": 167,
+"basic": 257,
+"upper": 160,
+"children": 582,
+"half": "2026H2"
+},
+"066": {
+"name": "Loški Potok",
+"pop": 1839,
+"area": 135,
+"basic": 152,
+"upper": 59,
+"children": 325,
+"half": "2026H2"
+},
+"167": {
+"name": "Lovrenc na Pohorju",
+"pop": 2981,
+"area": 84,
+"basic": 240,
+"upper": 120,
+"children": 508,
+"half": "2026H2"
+},
+"067": {
+"name": "Luče",
+"pop": 1396,
+"area": 110,
+"basic": 153,
+"upper": 51,
+"children": 232,
+"half": "2026H2"
+},
+"068": {
+"name": "Lukovica",
+"pop": 6193,
+"area": 75,
+"basic": 650,
+"upper": 304,
+"children": 1325,
+"half": "2026H2"
+},
+"069": {
+"name": "Majšperk",
+"pop": 4009,
+"area": 73,
+"basic": 341,
+"upper": 168,
+"children": 685,
+"half": "2026H2"
+},
+"198": {
+"name": "Makole",
+"pop": 2052,
+"area": 37,
+"basic": 158,
+"upper": 70,
+"children": 340,
+"half": "2026H2"
+},
+"070": {
+"name": "Maribor",
+"pop": 114872,
+"area": 148,
+"basic": 9572,
+"upper": 3621,
+"children": 17387,
+"half": "2026H2"
+},
+"168": {
+"name": "Markovci",
+"pop": 4050,
+"area": 30,
+"basic": 376,
+"upper": 156,
+"children": 701,
+"half": "2026H2"
+},
+"071": {
+"name": "Medvode",
+"pop": 17580,
+"area": 78,
+"basic": 1625,
+"upper": 782,
+"children": 3358,
+"half": "2026H2"
+},
+"072": {
+"name": "Mengeš",
+"pop": 8812,
+"area": 23,
+"basic": 859,
+"upper": 374,
+"children": 1672,
+"half": "2026H2"
+},
+"073": {
+"name": "Metlika",
+"pop": 8552,
+"area": 109,
+"basic": 745,
+"upper": 292,
+"children": 1505,
+"half": "2026H2"
+},
+"074": {
+"name": "Mežica",
+"pop": 3536,
+"area": 27,
+"basic": 259,
+"upper": 146,
+"children": 553,
+"half": "2026H2"
+},
+"169": {
+"name": "Miklavž na Dravskem polju",
+"pop": 7300,
+"area": 13,
+"basic": 666,
+"upper": 295,
+"children": 1245,
+"half": "2026H2"
+},
+"075": {
+"name": "Miren - Kostanjevica",
+"pop": 5069,
+"area": 63,
+"basic": 391,
+"upper": 217,
+"children": 831,
+"half": "2026H2"
+},
+"212": {
+"name": "Mirna",
+"pop": 2895,
+"area": 31,
+"basic": 355,
+"upper": 108,
+"children": 561,
+"half": "2026H2"
+},
+"170": {
+"name": "Mirna Peč",
+"pop": 3238,
+"area": 48,
+"basic": 390,
+"upper": 153,
+"children": 694,
+"half": "2026H2"
+},
+"076": {
+"name": "Mislinja",
+"pop": 4489,
+"area": 112,
+"basic": 399,
+"upper": 186,
+"children": 767,
+"half": "2026H2"
+},
+"199": {
+"name": "Mokronog - Trebelno",
+"pop": 3320,
+"area": 73,
+"basic": 336,
+"upper": 154,
+"children": 692,
+"half": "2026H2"
+},
+"077": {
+"name": "Moravče",
+"pop": 5683,
+"area": 61,
+"basic": 581,
+"upper": 303,
+"children": 1191,
+"half": "2026H2"
+},
+"078": {
+"name": "Moravske Toplice",
+"pop": 5967,
+"area": 144,
+"basic": 393,
+"upper": 188,
+"children": 890,
+"half": "2026H2"
+},
+"079": {
+"name": "Mozirje",
+"pop": 4438,
+"area": 54,
+"basic": 425,
+"upper": 176,
+"children": 825,
+"half": "2026H2"
+},
+"080": {
+"name": "Murska Sobota",
+"pop": 18317,
+"area": 64,
+"basic": 1646,
+"upper": 688,
+"children": 2582,
+"half": "2026H2"
+},
+"081": {
+"name": "Muta",
+"pop": 3329,
+"area": 39,
+"basic": 312,
+"upper": 141,
+"children": 605,
+"half": "2026H2"
+},
+"082": {
+"name": "Naklo",
+"pop": 5494,
+"area": 28,
+"basic": 735,
+"upper": 266,
+"children": 1031,
+"half": "2026H2"
+},
+"083": {
+"name": "Nazarje",
+"pop": 2681,
+"area": 44,
+"basic": 236,
+"upper": 105,
+"children": 463,
+"half": "2026H2"
+},
+"084": {
+"name": "Nova Gorica",
+"pop": 31781,
+"area": 280,
+"basic": 2725,
+"upper": 1323,
+"children": 5234,
+"half": "2026H2"
+},
+"085": {
+"name": "Novo mesto",
+"pop": 38678,
+"area": 236,
+"basic": 3903,
+"upper": 1591,
+"children": 7409,
+"half": "2026H2"
+},
+"086": {
+"name": "Odranci",
+"pop": 1609,
+"area": 7,
+"basic": 155,
+"upper": 75,
+"children": 283,
+"half": "2026H2"
+},
+"171": {
+"name": "Oplotnica",
+"pop": 4203,
+"area": 33,
+"basic": 391,
+"upper": 184,
+"children": 803,
+"half": "2026H2"
+},
+"087": {
+"name": "Ormož",
+"pop": 11792,
+"area": 142,
+"basic": 879,
+"upper": 476,
+"children": 1812,
+"half": "2026H2"
+},
+"088": {
+"name": "Osilnica",
+"pop": 326,
+"area": 36,
+"basic": null,
+"upper": 3,
+"children": 28,
+"half": "2026H2"
+},
+"089": {
+"name": "Pesnica",
+"pop": 7879,
+"area": 76,
+"basic": 585,
+"upper": 279,
+"children": 1165,
+"half": "2026H2"
+},
+"090": {
+"name": "Piran/Pirano",
+"pop": 18206,
+"area": 44,
+"basic": 1445,
+"upper": 550,
+"children": 2544,
+"half": "2026H2"
+},
+"091": {
+"name": "Pivka",
+"pop": 6168,
+"area": 223,
+"basic": 553,
+"upper": 253,
+"children": 998,
+"half": "2026H2"
+},
+"092": {
+"name": "Podčetrtek",
+"pop": 3699,
+"area": 61,
+"basic": 364,
+"upper": 141,
+"children": 652,
+"half": "2026H2"
+},
+"172": {
+"name": "Podlehnik",
+"pop": 1828,
+"area": 46,
+"basic": 120,
+"upper": 60,
+"children": 256,
+"half": "2026H2"
+},
+"093": {
+"name": "Podvelka",
+"pop": 2242,
+"area": 104,
+"basic": 162,
+"upper": 86,
+"children": 376,
+"half": "2026H2"
+},
+"200": {
+"name": "Poljčane",
+"pop": 4327,
+"area": 38,
+"basic": 334,
+"upper": 170,
+"children": 682,
+"half": "2026H2"
+},
+"173": {
+"name": "Polzela",
+"pop": 6668,
+"area": 34,
+"basic": 613,
+"upper": 320,
+"children": 1181,
+"half": "2026H2"
+},
+"094": {
+"name": "Postojna",
+"pop": 17192,
+"area": 270,
+"basic": 1774,
+"upper": 701,
+"children": 3298,
+"half": "2026H2"
+},
+"174": {
+"name": "Prebold",
+"pop": 5318,
+"area": 41,
+"basic": 474,
+"upper": 211,
+"children": 943,
+"half": "2026H2"
+},
+"095": {
+"name": "Preddvor",
+"pop": 3946,
+"area": 87,
+"basic": 414,
+"upper": 191,
+"children": 786,
+"half": "2026H2"
+},
+"175": {
+"name": "Prevalje",
+"pop": 6668,
+"area": 58,
+"basic": 592,
+"upper": 270,
+"children": 1157,
+"half": "2026H2"
+},
+"096": {
+"name": "Ptuj",
+"pop": 23898,
+"area": 67,
+"basic": 2030,
+"upper": 868,
+"children": 3638,
+"half": "2026H2"
+},
+"097": {
+"name": "Puconci",
+"pop": 5800,
+"area": 108,
+"basic": 478,
+"upper": 210,
+"children": 946,
+"half": "2026H2"
+},
+"098": {
+"name": "Rače - Fram",
+"pop": 8363,
+"area": 51,
+"basic": 857,
+"upper": 364,
+"children": 1599,
+"half": "2026H2"
+},
+"099": {
+"name": "Radeče",
+"pop": 4046,
+"area": 52,
+"basic": 318,
+"upper": 152,
+"children": 691,
+"half": "2026H2"
+},
+"100": {
+"name": "Radenci",
+"pop": 5064,
+"area": 34,
+"basic": 389,
+"upper": 156,
+"children": 723,
+"half": "2026H2"
+},
+"101": {
+"name": "Radlje ob Dravi",
+"pop": 6229,
+"area": 94,
+"basic": 510,
+"upper": 282,
+"children": 1047,
+"half": "2026H2"
+},
+"102": {
+"name": "Radovljica",
+"pop": 19359,
+"area": 119,
+"basic": 1711,
+"upper": 832,
+"children": 3397,
+"half": "2026H2"
+},
+"103": {
+"name": "Ravne na Koroškem",
+"pop": 11179,
+"area": 64,
+"basic": 954,
+"upper": 439,
+"children": 1825,
+"half": "2026H2"
+},
+"176": {
+"name": "Razkrižje",
+"pop": 1231,
+"area": 10,
+"basic": 97,
+"upper": 55,
+"children": 219,
+"half": "2026H2"
+},
+"209": {
+"name": "Rečica ob Savinji",
+"pop": 2300,
+"area": 30,
+"basic": 202,
+"upper": 115,
+"children": 374,
+"half": "2026H2"
+},
+"201": {
+"name": "Renče - Vogrsko",
+"pop": 4424,
+"area": 30,
+"basic": 314,
+"upper": 196,
+"children": 744,
+"half": "2026H2"
+},
+"104": {
+"name": "Ribnica",
+"pop": 9825,
+"area": 154,
+"basic": 1040,
+"upper": 398,
+"children": 2019,
+"half": "2026H2"
+},
+"177": {
+"name": "Ribnica na Pohorju",
+"pop": 1071,
+"area": 60,
+"basic": 87,
+"upper": 50,
+"children": 167,
+"half": "2026H2"
+},
+"106": {
+"name": "Rogaška Slatina",
+"pop": 11679,
+"area": 71,
+"basic": 969,
+"upper": 447,
+"children": 1850,
+"half": "2026H2"
+},
+"105": {
+"name": "Rogašovci",
+"pop": 3027,
+"area": 40,
+"basic": 257,
+"upper": 105,
+"children": 503,
+"half": "2026H2"
+},
+"107": {
+"name": "Rogatec",
+"pop": 3081,
+"area": 40,
+"basic": 249,
+"upper": 120,
+"children": 532,
+"half": "2026H2"
+},
+"108": {
+"name": "Ruše",
+"pop": 7157,
+"area": 61,
+"basic": 404,
+"upper": 293,
+"children": 1063,
+"half": "2026H2"
+},
+"178": {
+"name": "Selnica ob Dravi",
+"pop": 4359,
+"area": 65,
+"basic": 342,
+"upper": 163,
+"children": 683,
+"half": "2026H2"
+},
+"109": {
+"name": "Semič",
+"pop": 3780,
+"area": 147,
+"basic": 349,
+"upper": 149,
+"children": 672,
+"half": "2026H2"
+},
+"110": {
+"name": "Sevnica",
+"pop": 17602,
+"area": 272,
+"basic": 1567,
+"upper": 671,
+"children": 2958,
+"half": "2026H2"
+},
+"111": {
+"name": "Sežana",
+"pop": 13669,
+"area": 217,
+"basic": 1079,
+"upper": 524,
+"children": 2209,
+"half": "2026H2"
+},
+"112": {
+"name": "Slovenj Gradec",
+"pop": 17063,
+"area": 174,
+"basic": 1614,
+"upper": 728,
+"children": 3030,
+"half": "2026H2"
+},
+"113": {
+"name": "Slovenska Bistrica",
+"pop": 26363,
+"area": 260,
+"basic": 2483,
+"upper": 1100,
+"children": 4692,
+"half": "2026H2"
+},
+"114": {
+"name": "Slovenske Konjice",
+"pop": 15534,
+"area": 98,
+"basic": 1488,
+"upper": 676,
+"children": 2885,
+"half": "2026H2"
+},
+"179": {
+"name": "Sodražica",
+"pop": 2354,
+"area": 49,
+"basic": 280,
+"upper": 110,
+"children": 528,
+"half": "2026H2"
+},
+"180": {
+"name": "Solčava",
+"pop": 493,
+"area": 102,
+"basic": 28,
+"upper": 23,
+"children": 87,
+"half": "2026H2"
+},
+"202": {
+"name": "Središče ob Dravi",
+"pop": 1827,
+"area": 33,
+"basic": 148,
+"upper": 77,
+"children": 302,
+"half": "2026H2"
+},
+"115": {
+"name": "Starše",
+"pop": 4111,
+"area": 34,
+"basic": 302,
+"upper": 178,
+"children": 628,
+"half": "2026H2"
+},
+"203": {
+"name": "Straža",
+"pop": 4000,
+"area": 29,
+"basic": 391,
+"upper": 160,
+"children": 736,
+"half": "2026H2"
+},
+"181": {
+"name": "Sveta Ana",
+"pop": 2347,
+"area": 37,
+"basic": 239,
+"upper": 86,
+"children": 418,
+"half": "2026H2"
+},
+"204": {
+"name": "Sveta Trojica v Slov. goricah",
+"pop": 2297,
+"area": 26,
+"basic": 194,
+"upper": 61,
+"children": 398,
+"half": "2026H2"
+},
+"182": {
+"name": "Sveti Andraž v Slov. goricah",
+"pop": 1191,
+"area": 18,
+"basic": 80,
+"upper": 39,
+"children": 241,
+"half": "2026H2"
+},
+"116": {
+"name": "Sveti Jurij ob Ščavnici",
+"pop": 2795,
+"area": 51,
+"basic": 240,
+"upper": 134,
+"children": 510,
+"half": "2026H2"
+},
+"210": {
+"name": "Sveti Jurij v Slov. goricah",
+"pop": 2238,
+"area": 31,
+"basic": 187,
+"upper": 85,
+"children": 385,
+"half": "2026H2"
+},
+"205": {
+"name": "Sveti Tomaž",
+"pop": 1966,
+"area": 38,
+"basic": 158,
+"upper": 79,
+"children": 295,
+"half": "2026H2"
+},
+"033": {
+"name": "Šalovci",
+"pop": 1342,
+"area": 58,
+"basic": 59,
+"upper": 32,
+"children": 162,
+"half": "2026H2"
+},
+"183": {
+"name": "Šempeter - Vrtojba",
+"pop": 6451,
+"area": 15,
+"basic": 674,
+"upper": 247,
+"children": 1045,
+"half": "2026H2"
+},
+"117": {
+"name": "Šenčur",
+"pop": 9041,
+"area": 40,
+"basic": 845,
+"upper": 417,
+"children": 1706,
+"half": "2026H2"
+},
+"118": {
+"name": "Šentilj",
+"pop": 8371,
+"area": 65,
+"basic": 667,
+"upper": 323,
+"children": 1356,
+"half": "2026H2"
+},
+"119": {
+"name": "Šentjernej",
+"pop": 7446,
+"area": 96,
+"basic": 856,
+"upper": 311,
+"children": 1617,
+"half": "2026H2"
+},
+"120": {
+"name": "Šentjur",
+"pop": 19757,
+"area": 222,
+"basic": 1806,
+"upper": 857,
+"children": 3587,
+"half": "2026H2"
+},
+"211": {
+"name": "Šentrupert",
+"pop": 2915,
+"area": 49,
+"basic": 212,
+"upper": 111,
+"children": 485,
+"half": "2026H2"
+},
+"121": {
+"name": "Škocjan",
+"pop": 3531,
+"area": 61,
+"basic": 369,
+"upper": 149,
+"children": 796,
+"half": "2026H2"
+},
+"122": {
+"name": "Škofja Loka",
+"pop": 23850,
+"area": 146,
+"basic": 2352,
+"upper": 1006,
+"children": 4634,
+"half": "2026H2"
+},
+"123": {
+"name": "Škofljica",
+"pop": 12199,
+"area": 44,
+"basic": 1304,
+"upper": 605,
+"children": 2451,
+"half": "2026H2"
+},
+"124": {
+"name": "Šmarje pri Jelšah",
+"pop": 10575,
+"area": 108,
+"basic": 922,
+"upper": 490,
+"children": 1932,
+"half": "2026H2"
+},
+"206": {
+"name": "Šmarješke Toplice",
+"pop": 3606,
+"area": 34,
+"basic": 428,
+"upper": 169,
+"children": 668,
+"half": "2026H2"
+},
+"125": {
+"name": "Šmartno ob Paki",
+"pop": 3436,
+"area": 18,
+"basic": 328,
+"upper": 125,
+"children": 631,
+"half": "2026H2"
+},
+"194": {
+"name": "Šmartno pri Litiji",
+"pop": 5854,
+"area": 95,
+"basic": 567,
+"upper": 277,
+"children": 1198,
+"half": "2026H2"
+},
+"126": {
+"name": "Šoštanj",
+"pop": 9007,
+"area": 96,
+"basic": 833,
+"upper": 373,
+"children": 1634,
+"half": "2026H2"
+},
+"127": {
+"name": "Štore",
+"pop": 4542,
+"area": 28,
+"basic": 402,
+"upper": 173,
+"children": 775,
+"half": "2026H2"
+},
+"184": {
+"name": "Tabor",
+"pop": 1833,
+"area": 35,
+"basic": 196,
+"upper": 79,
+"children": 409,
+"half": "2026H2"
+},
+"010": {
+"name": "Tišina",
+"pop": 3908,
+"area": 39,
+"basic": 284,
+"upper": 147,
+"children": 613,
+"half": "2026H2"
+},
+"128": {
+"name": "Tolmin",
+"pop": 10661,
+"area": 382,
+"basic": 928,
+"upper": 422,
+"children": 1742,
+"half": "2026H2"
+},
+"129": {
+"name": "Trbovlje",
+"pop": 15935,
+"area": 58,
+"basic": 1275,
+"upper": 562,
+"children": 2500,
+"half": "2026H2"
+},
+"130": {
+"name": "Trebnje",
+"pop": 13855,
+"area": 163,
+"basic": 1477,
+"upper": 569,
+"children": 2786,
+"half": "2026H2"
+},
+"185": {
+"name": "Trnovska vas",
+"pop": 1400,
+"area": 23,
+"basic": 83,
+"upper": 74,
+"children": 275,
+"half": "2026H2"
+},
+"186": {
+"name": "Trzin",
+"pop": 4000,
+"area": 9,
+"basic": 428,
+"upper": 196,
+"children": 734,
+"half": "2026H2"
+},
+"131": {
+"name": "Tržič",
+"pop": 15044,
+"area": 155,
+"basic": 1233,
+"upper": 571,
+"children": 2537,
+"half": "2026H2"
+},
+"132": {
+"name": "Turnišče",
+"pop": 3070,
+"area": 24,
+"basic": 268,
+"upper": 106,
+"children": 472,
+"half": "2026H2"
+},
+"133": {
+"name": "Velenje",
+"pop": 33873,
+"area": 84,
+"basic": 3245,
+"upper": 1262,
+"children": 5945,
+"half": "2026H2"
+},
+"187": {
+"name": "Velika Polana",
+"pop": 1379,
+"area": 19,
+"basic": 156,
+"upper": 54,
+"children": 170,
+"half": "2026H2"
+},
+"134": {
+"name": "Velike Lašče",
+"pop": 4546,
+"area": 103,
+"basic": 460,
+"upper": 210,
+"children": 903,
+"half": "2026H2"
+},
+"188": {
+"name": "Veržej",
+"pop": 1361,
+"area": 12,
+"basic": 117,
+"upper": 38,
+"children": 253,
+"half": "2026H2"
+},
+"135": {
+"name": "Videm",
+"pop": 5612,
+"area": 80,
+"basic": 472,
+"upper": 217,
+"children": 956,
+"half": "2026H2"
+},
+"136": {
+"name": "Vipava",
+"pop": 5866,
+"area": 107,
+"basic": 592,
+"upper": 280,
+"children": 1158,
+"half": "2026H2"
+},
+"137": {
+"name": "Vitanje",
+"pop": 2200,
+"area": 59,
+"basic": 198,
+"upper": 89,
+"children": 391,
+"half": "2026H2"
+},
+"138": {
+"name": "Vodice",
+"pop": 5291,
+"area": 31,
+"basic": 558,
+"upper": 258,
+"children": 1077,
+"half": "2026H2"
+},
+"139": {
+"name": "Vojnik",
+"pop": 9360,
+"area": 75,
+"basic": 874,
+"upper": 399,
+"children": 1651,
+"half": "2026H2"
+},
+"189": {
+"name": "Vransko",
+"pop": 2792,
+"area": 53,
+"basic": 282,
+"upper": 101,
+"children": 527,
+"half": "2026H2"
+},
+"140": {
+"name": "Vrhnika",
+"pop": 18296,
+"area": 116,
+"basic": 1826,
+"upper": 840,
+"children": 3531,
+"half": "2026H2"
+},
+"141": {
+"name": "Vuzenica",
+"pop": 2594,
+"area": 50,
+"basic": 270,
+"upper": 87,
+"children": 491,
+"half": "2026H2"
+},
+"142": {
+"name": "Zagorje ob Savi",
+"pop": 16347,
+"area": 147,
+"basic": 1478,
+"upper": 711,
+"children": 2872,
+"half": "2026H2"
+},
+"143": {
+"name": "Zavrč",
+"pop": 1453,
+"area": 19,
+"basic": 64,
+"upper": 47,
+"children": 184,
+"half": "2026H2"
+},
+"144": {
+"name": "Zreče",
+"pop": 6657,
+"area": 67,
+"basic": 556,
+"upper": 240,
+"children": 1157,
+"half": "2026H2"
+},
+"190": {
+"name": "Žalec",
+"pop": 21737,
+"area": 117,
+"basic": 2094,
+"upper": 912,
+"children": 3542,
+"half": "2026H2"
+},
+"146": {
+"name": "Železniki",
+"pop": 6629,
+"area": 164,
+"basic": 659,
+"upper": 326,
+"children": 1348,
+"half": "2026H2"
+},
+"191": {
+"name": "Žetale",
+"pop": 1299,
+"area": 38,
+"basic": 108,
+"upper": 48,
+"children": 262,
+"half": "2026H2"
+},
+"147": {
+"name": "Žiri",
+"pop": 5159,
+"area": 49,
+"basic": 517,
+"upper": 242,
+"children": 992,
+"half": "2026H2"
+},
+"192": {
+"name": "Žirovnica",
+"pop": 4515,
+"area": 43,
+"basic": 440,
+"upper": 187,
+"children": 817,
+"half": "2026H2"
+},
+"193": {
+"name": "Žužemberk",
+"pop": 4708,
+"area": 164,
+"basic": 487,
+"upper": 206,
+"children": 924,
+"half": "2026H2"
+}
+}

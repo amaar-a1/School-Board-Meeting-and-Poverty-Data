@@ -1,0 +1,135 @@
+{
+ "Montevideo": {
+  "code": "01",
+  "pop": 1279954,
+  "pupils": 201282,
+  "public": 157969,
+  "pupils_year": 2024
+ },
+ "Artigas": {
+  "code": "02",
+  "pop": 77377,
+  "pupils": 15247,
+  "public": 12368,
+  "pupils_year": 2024
+ },
+ "Canelones": {
+  "code": "03",
+  "pop": 617746,
+  "pupils": 98884,
+  "public": 83690,
+  "pupils_year": 2024
+ },
+ "Cerro Largo": {
+  "code": "04",
+  "pop": 90500,
+  "pupils": 16812,
+  "public": 13883,
+  "pupils_year": 2024
+ },
+ "Colonia": {
+  "code": "05",
+  "pop": 136002,
+  "pupils": 22402,
+  "public": 19223,
+  "pupils_year": 2024
+ },
+ "Durazno": {
+  "code": "06",
+  "pop": 62005,
+  "pupils": 10435,
+  "public": 8642,
+  "pupils_year": 2024
+ },
+ "Flores": {
+  "code": "07",
+  "pop": 25988,
+  "pupils": 4253,
+  "public": 3582,
+  "pupils_year": 2024
+ },
+ "Florida": {
+  "code": "08",
+  "pop": 70042,
+  "pupils": 11208,
+  "public": 9761,
+  "pupils_year": 2024
+ },
+ "Lavalleja": {
+  "code": "09",
+  "pop": 58407,
+  "pupils": 9458,
+  "public": 7921,
+  "pupils_year": 2024
+ },
+ "Maldonado": {
+  "code": "10",
+  "pop": 216808,
+  "pupils": 33060,
+  "public": 26923,
+  "pupils_year": 2024
+ },
+ "Paysandú": {
+  "code": "11",
+  "pop": 121634,
+  "pupils": 21025,
+  "public": 17362,
+  "pupils_year": 2024
+ },
+ "Río Negro": {
+  "code": "12",
+  "pop": 57058,
+  "pupils": 10367,
+  "public": 8405,
+  "pupils_year": 2024
+ },
+ "Rivera": {
+  "code": "13",
+  "pop": 109160,
+  "pupils": 22291,
+  "public": 19180,
+  "pupils_year": 2024
+ },
+ "Rocha": {
+  "code": "14",
+  "pop": 81014,
+  "pupils": 15020,
+  "public": 12792,
+  "pupils_year": 2024
+ },
+ "Salto": {
+  "code": "15",
+  "pop": 136231,
+  "pupils": 25311,
+  "public": 21515,
+  "pupils_year": 2024
+ },
+ "San José": {
+  "code": "16",
+  "pop": 120302,
+  "pupils": 21524,
+  "public": 18285,
+  "pupils_year": 2024
+ },
+ "Soriano": {
+  "code": "17",
+  "pop": 82988,
+  "pupils": 15284,
+  "public": 12835,
+  "pupils_year": 2024
+ },
+ "Tacuarembó": {
+  "code": "18",
+  "pop": 95815,
+  "pupils": 16928,
+  "public": 14270,
+  "pupils_year": 2024
+ },
+ "Treinta y Tres": {
+  "code": "19",
+  "pop": 46901,
+  "pupils": 8452,
+  "public": 7106,
+  "pupils_year": 2024
+ }
+}
