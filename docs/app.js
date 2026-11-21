@@ -736,6 +736,11 @@
     };
     const groups = [...by.entries()].map(([k, rows]) => stats(k, rows)).sort((a, b) => b.share - a.share || a.name.localeCompare(b.name));
     const total = stats("All", src.rows);
+    // Countries measure poverty differently, so the All row's poverty figures are the plain average of the country rows above
+    // (each country counts once; countries with no figure in a column are left out of that column's average).
+    const colAvg = (k) => { const v = groups.filter((g) => (k === "povWith" ? g.nBoard : g.nWithout) && !isNaN(g[k])).map((g) => g[k]); return { v: avg(v), n: v.length }; };
+    const allWith = colAvg("povWith"), allWithout = colAvg("povWithout");
+    const ofN = (n) => `avg of ${n.toLocaleString()} ${n === 1 ? "country" : "countries"}`;
     const here = current && !current.combined ? (current.sourcesAs || current.name) : "";
     const t = $("boards-table");
     t.tHead.innerHTML = "";
@@ -748,8 +753,8 @@
       if (i === groups.length) tr.className = "total";
       else if (here && (g.name === here || here.startsWith(g.name))) tr.className = "highlight";
       [g.name, g.n.toLocaleString(), `${pct(g.share)} (${g.nBoard.toLocaleString()})`, g.nStand.toLocaleString(), fixed(g.avg, 2),
-        // The total mixes countries' different poverty measures, so it has no poverty figures.
-        g.nBoard && g !== total ? `${pct(g.povWith)} (${g.nBoard.toLocaleString()})` : "–", g.nWithout && g !== total ? `${pct(g.povWithout)} (${g.nWithout.toLocaleString()})` : "–"]
+        g === total ? (allWith.n ? `${pct(allWith.v)} (${ofN(allWith.n)})` : "–") : g.nBoard ? `${pct(g.povWith)} (${g.nBoard.toLocaleString()})` : "–",
+        g === total ? (allWithout.n ? `${pct(allWithout.v)} (${ofN(allWithout.n)})` : "–") : g.nWithout ? `${pct(g.povWithout)} (${g.nWithout.toLocaleString()})` : "–"]
         .forEach((v, j) => { const td = tr.insertCell(); td.textContent = v; if (j) td.className = "num"; });
     });
     const none = groups.filter((g) => !g.nBoard).map((g) => g.name);
