@@ -2,9 +2,14 @@
 # summed over each district border (fetch/in_geo.json, the site's full-detail India districts).
 import os, json, subprocess, sys, zipfile, urllib.request
 OUT = "fetch/out/in24"; os.makedirs(OUT, exist_ok=True)
-log = open(f"{OUT}/log.txt", "w")
+log = open(f"{OUT}/log.txt", "a")
 def say(*a): log.write(" ".join(map(str, a)) + "\n"); log.flush()
-subprocess.run([sys.executable, "-m", "pip", "install", "-q", "rasterio", "numpy"], check=False)
+try:
+    import numpy, rasterio
+except ImportError:   # install, then start again so the new packages are on the path
+    r = subprocess.run([sys.executable, "-m", "pip", "install", "--user", "--break-system-packages", "rasterio", "numpy"], capture_output=True, text=True)
+    say("pip", r.returncode, r.stdout[-1500:], r.stderr[-1500:]); log.close()
+    os.execv(sys.executable, [sys.executable] + sys.argv)
 import numpy as np, rasterio
 from rasterio import features
 URL = "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2025/IND/v1/1km_ua/ind_agesex_structures_2025_CN_1km_R2025A_UA_v1.zip"
