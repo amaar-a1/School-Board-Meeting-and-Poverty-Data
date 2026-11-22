@@ -1,0 +1,15 @@
+== niti_mpi_2023.pdf OK 22713906 https://www.niti.gov.in/sites/default/files/2023-08/India-National-Multidimentional-Poverty-Index-2023.pdf
+== niti_mpi_2021.pdf OK 15648902 https://www.niti.gov.in/sites/default/files/2021-11/National_MPI_India-11242021.pdf
+== niti_reports.html OK 43137 https://www.niti.gov.in/whats-new/national-multidimentional-poverty-index-2023
+   link /sites/default/files/2023-08/India-National-Multidimentional-Poverty-Index-2023… | https://www.niti.gov.in/sites/default/files/2023-08/India-National-Multidimentional-Poverty-Index-2023.pdf
+   link English | https://www.niti.gov.in/whats-new/national-multidimentional-poverty-index-2023
+== niti_mpi_page.html ERR HTTP Error 404: Not Found https://www.niti.gov.in/national-multidimensional-poverty-index
+== udise_home.html OK 1301 https://udiseplus.gov.in/
+   scripts main-V5QGT5CV.js polyfills-5CFQRCPP.js scripts-5YPBABWM.js
+== udise_reports.html OK 1301 https://udiseplus.gov.in/#/en/page/publications
+   scripts main-V5QGT5CV.js polyfills-5CFQRCPP.js scripts-5YPBABWM.js
+== udise_dashboard.html OK 817 https://dashboard.udiseplus.gov.in/
+   scripts /report2026/static/js/main.5f37f069.js
+== dgi_district_wise_enrolment_UDISE.html ERR HTTP Error 503: Service Unavailable https://www.data.gov.in/search?title=district%20wise%20enrolment%20UDISE
+== dgi_district_wise_enrolment_of_stu.html ERR HTTP Error 503: Service Unavailable https://www.data.gov.in/search?title=district%20wise%20enrolment%20of%20students
+== w_in_districts.html OK 881000 https://en.wikipedia.org/w/index.php?title=List_of_districts_in_India&action=render
