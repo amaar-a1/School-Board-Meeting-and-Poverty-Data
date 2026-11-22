@@ -11,7 +11,7 @@ reads (data-prep/inputs/georgia/).
   tsa: Geostat (from the Social Service Agency), "Number of families registered in the Targeted Social Assistance program
     database and receiving subsistence allowance by municipalities", end of the latest year;
   ka: the municipality's Georgian name (Georgian Wikipedia); meetings: the council's (sakrebulo's) YouTube channel (fetch/ge_yt.py).
-Then run data-prep/simplify_borders.sh (the map needs lighter borders than geoBoundaries' full detail).
+Then, after build_latam.py, run data-prep/simplify_borders.sh (a lighter copy of the map file for zoomed-out views).
 Usage: python3 data-prep/prep_georgia.py RAWDIR GEODIR LISTCSV GE_MEET_JSON
 """
 import csv, glob, json, os, re, sys

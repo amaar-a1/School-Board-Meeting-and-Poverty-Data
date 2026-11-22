@@ -11,7 +11,7 @@
     uy_3.9.3.xlsx) per 100 residents; band: INE, Estimación de la pobreza por el método del ingreso, año 2025, map 1
     (households below the poverty line by department, shown only in three bands);
   meetings: the Junta Departamental's YouTube channel (fetch/nyt.py, UY).
-Then run data-prep/simplify_borders.sh (the map needs lighter borders than geoBoundaries' full detail).
+Then, after build_latam.py, run data-prep/simplify_borders.sh (a lighter copy of the map file for zoomed-out views).
 Usage: python3 data-prep/prep_uruguay.py RAWDIR [RAWDIR ...] GEODIR
 """
 import glob, json, os, re, sys, unicodedata

@@ -39,8 +39,10 @@ def bbox(path):
 out = {}
 for p in sorted(glob.glob(os.path.join(MAP, "*.json"))):
     n = os.path.basename(p)[:-5]
-    if n in ("index", "aliases", "world"): continue
+    if n in ("index", "aliases", "world") or n.endswith("-hi"): continue
     b = bbox(p)
     if b: out[n] = b
+# Layers with a full-detail copy (<name>-hi.json, data-prep/simplify_borders.sh), loaded when zoomed in.
+out["_hi"] = sorted(os.path.basename(p)[:-8] for p in glob.glob(os.path.join(MAP, "*-hi.json")))
 json.dump(out, open(os.path.join(MAP, "index.json"), "w"), separators=(",", ":"))
 print(len(out), "layers;", {k: v for k, v in list(out.items())[:6]})

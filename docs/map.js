@@ -896,12 +896,45 @@
   }
   // Loads the borders of every country now in view (a little beyond its edges).
   let viewReady = false;   // not before the first zoom to the data set: the map starts on the whole world
+  // Each layer has a list of boxes (the 10-degree cells it has land in); an older index has one box.
+  const boxes = (v) => (Array.isArray(v[0]) ? v : [v]);
+  const layerInView = (n, b) => !!index[n] && boxes(index[n]).some((c) => L.latLngBounds([[c[1], c[0]], [c[3], c[2]]]).intersects(b));
   function ensureView() {
     if (!map || !index || !viewReady) return Promise.resolve();
     const b = map.getBounds().pad(0.2);
-    // Each layer has a list of boxes (the 10-degree cells it has land in); an older index has one box.
-    const boxes = (v) => (Array.isArray(v[0]) ? v : [v]);
-    return loadLayers(Object.keys(index).filter((n) => !loadingLayers[n] && boxes(index[n]).some((c) => L.latLngBounds([[c[1], c[0]], [c[3], c[2]]]).intersects(b))));
+    return loadLayers(Object.keys(index).filter((n) => n !== "_hi" && !loadingLayers[n] && layerInView(n, b))).then(updateDetail);
+  }
+
+  // Two levels of detail: the most detailed borders (index._hi) are drawn simplified when zoomed out, and swapped for
+  // their full detail (<name>-hi.json) when zoomed in on them; zooming back out swaps the light ones back, freeing it.
+  const HI_ZOOM = 7, LO_ZOOM = 6;
+  const detail = {}, swapping = {};
+  function updateDetail() {
+    if (!map || !index || !index._hi || !viewReady) return;
+    const z = map.getZoom(), b = map.getBounds();
+    index._hi.forEach((n) => {
+      if (!layers[n] || swapping[n]) return;
+      const now = detail[n] || "lo";
+      const want = z >= HI_ZOOM && layerInView(n, b) ? "hi" : z < LO_ZOOM || !layerInView(n, b.pad(0.5)) ? "lo" : now;
+      if (want !== now) swapDetail(n, want);
+    });
+  }
+  function swapDetail(n, level) {
+    swapping[n] = true;
+    if (level === "hi") $("map-status").textContent = "Loading detailed borders…";
+    return fetch(`data/map/${n}${level === "hi" ? "-hi" : ""}.json`).then((r) => (r.ok ? r.json() : null)).then((t) => {
+      swapping[n] = false;
+      if ($("map-status").textContent === "Loading detailed borders…") $("map-status").textContent = "";
+      if (!t) return;
+      // The layer (and, for Canada, its overlapping boards) leaves the map and the search entries; the new one joins.
+      const old = [layers[n]].concat(n === "canada" && layers.canada2 ? [layers.canada2] : []).filter(Boolean);
+      const gone = new Set();
+      old.forEach((o) => { o.eachLayer((l) => gone.add(l)); o.remove(); });
+      byId.forEach((g) => { if (g.layers.some((l) => gone.has(l))) g.layers = g.layers.filter((l) => !gone.has(l)); });
+      addLayer(n, t);
+      detail[n] = level;
+      updateDetail();   // in case the view moved meanwhile
+    }).catch((e) => { swapping[n] = false; console.error("map detail", n, e); });
   }
 
   function ISLANDS_DOTS() {
@@ -1006,9 +1039,13 @@
       }
       if (g.scsd === undefined) g.scsd = n === "scsd" || n === "canada2";
       if (((n !== "scsd" && n !== "canada2") || g.scsd) && !g.layers.includes(l)) g.layers.push(l);
-      if (r && p.NAME && norm(p.NAME) !== norm(r.District) && n !== "scsd" && n !== "territories" && !byId.has(`shape-${p.GEOID}`)) {
-        const sg = { name: p.NAME, place: placeOf(r), layers: [l], row: r, partOf: r.District, text: norm(`${p.NAME} ${placeOf(r)}`), size: 0 };
-        byId.set(`shape-${p.GEOID}`, sg); searchIndex.push(sg);
+      if (r && p.NAME && norm(p.NAME) !== norm(r.District) && n !== "scsd" && n !== "territories") {
+        const sg = byId.get(`shape-${p.GEOID}`);
+        if (sg) { if (!sg.layers.includes(l)) sg.layers.push(l); }
+        else {
+          const ng = { name: p.NAME, place: placeOf(r), layers: [l], row: r, partOf: r.District, text: norm(`${p.NAME} ${placeOf(r)}`), size: 0 };
+          byId.set(`shape-${p.GEOID}`, ng); searchIndex.push(ng);
+        }
       }
     });
   }
@@ -1147,6 +1184,7 @@
     restyle: () => { if (map) restyle(); },
     // For checking: the border files loaded so far.
     loadedLayers: () => Object.keys(loadingLayers),
+    detail: () => ({ ...detail }),
     // Zooms to and outlines a district by its District ID (used by the site-wide search).
     focus: (id) => loading && loading.then(() => loadLayers(layersForId(id))).then(() => ((!byId.has(id) || !byId.get(id).layers.length) && /^FRA-/.test(id) ? setFrSmall(true) : null)).then(() => {
       map.invalidateSize(); focusEntry(byId.get(id) || [...byId.values()].find((g) => g.row && g.row["District ID"] === id));
@@ -1161,7 +1199,7 @@
             // Without the index, every layer counts as everywhere: all load (the old behaviour).
             index = idx || Object.fromEntries(LAYERS.filter((n) => n !== "world").map((n) => [n, [[-180, -90, 180, 90]]]));
             build(datasets, world);
-            map.on("moveend", ensureView);
+            map.on("moveend", () => { ensureView(); updateDetail(); });
             $("map-status").textContent = "";
           })
           .catch((e) => { $("map-status").textContent = `Couldn't load the map (${e.message}).`; throw e; });

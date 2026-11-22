@@ -13,7 +13,7 @@
     public; private (2) and state-subsidized private schools (3, subvencionado) are privately run and count as private.
     Schools in Puerto Jiménez and Monteverde districts count toward the new cantons.
   meetings: the municipal council's YouTube channel (fetch/nyt.py, CR).
-Then run data-prep/simplify_borders.sh (the map needs lighter borders than geoBoundaries' full detail).
+Then, after build_latam.py, run data-prep/simplify_borders.sh (a lighter copy of the map file for zoomed-out views).
 Usage: python3 data-prep/prep_costa_rica.py RAWDIR [RAWDIR ...] GEODIR
 """
 import csv, glob, html, json, os, re, sys, unicodedata

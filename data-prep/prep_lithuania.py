@@ -9,7 +9,7 @@ osp-rs.stat.gov.lt/rest_json/data/<dataflow>) into the small inputs build_latam.
   pupils: S3R057_M3110302_3, general school pupils (latest school year);
   pop, children: S3R167_M3010213, residents at the start of the year, all ages and aged 0-15 (latest year).
   meetings: the municipal council's YouTube channel (fetch/nyt.py, LT).
-Then run data-prep/simplify_borders.sh (the map needs lighter borders than geoBoundaries' full detail).
+Then, after build_latam.py, run data-prep/simplify_borders.sh (a lighter copy of the map file for zoomed-out views).
 Usage: python3 data-prep/prep_lithuania.py RAWDIR GEODIR WIKI_HTML (English Wikipedia, "Municipalities of Lithuania", action=render)
 """
 import json, os, re, sys, unicodedata
