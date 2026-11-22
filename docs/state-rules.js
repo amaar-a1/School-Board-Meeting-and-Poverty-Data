@@ -418,6 +418,61 @@ window.STATE_RULES = {
     ],
     note: "Check the current law and the council's own rules before relying on this."
   },
+  lithuania: {
+    title: "Rules for municipal council sessions",
+    checked: "November 22, 2026",
+    laws: [
+      { state: "Lithuania", covers: "Municipal councils (savivaldybių tarybos)", threshold: "",
+        rule: "Under the Law on Local Self-Government council sittings are public, and municipalities must broadcast them live on the internet and make the recordings available; committee meetings are public too, though not all are broadcast. Check the current version for the details." },
+      { state: "Lithuania", covers: "Schools", threshold: "",
+        rule: "Under the Law on Education municipalities found and run most general schools; the state pays for teaching (the “class basket”) and sets the curriculum." }
+    ],
+    note: "Check the current law and the council's own rules before relying on this."
+  },
+  south_africa: {
+    title: "Rules for municipal council meetings and school governing bodies",
+    checked: "November 22, 2026",
+    laws: [
+      { state: "South Africa", covers: "Municipal councils", threshold: "",
+        rule: "Under the Constitution (section 160) and the Municipal Structures and Systems Acts, council meetings are open to the public and the media; no national rule requires them to be streamed or recorded, though many councils do." },
+      { state: "South Africa", covers: "Schools", threshold: "",
+        rule: "Under the South African Schools Act (1996) the provincial education departments run public schools, and each school has an elected school governing body (parents in the majority) that adopts its budget, fees policy and code of conduct." }
+    ],
+    note: "Check the current law and the council's own rules before relying on this."
+  },
+  kenya: {
+    title: "Rules for county assembly sittings",
+    checked: "November 22, 2026",
+    laws: [
+      { state: "Kenya", covers: "County assemblies", threshold: "",
+        rule: "Under the Constitution (article 196) a county assembly conducts its business in an open manner and holds its sittings and committee meetings in public; Hansard records its proceedings, and many assemblies stream them." },
+      { state: "Kenya", covers: "Schools", threshold: "",
+        rule: "Under the Basic Education Act (2013) primary and secondary schools are run nationally, each with a board of management; counties are responsible for early childhood education and village polytechnics (Fourth Schedule of the Constitution)." }
+    ],
+    note: "Check the current law and the assembly's own standing orders before relying on this."
+  },
+  georgia: {
+    title: "Rules for municipal council (sakrebulo) sessions",
+    checked: "November 22, 2026",
+    laws: [
+      { state: "Georgia", covers: "Municipal councils (sakrebulo)", threshold: "",
+        rule: "Under the Local Self-Government Code (2014) council sessions are public, citizens may attend, and the council publishes its agendas and decisions; councils may stream or record their sessions." },
+      { state: "Georgia", covers: "Schools", threshold: "",
+        rule: "Under the Law on General Education public schools are legal entities under the Ministry of Education and Science, each governed with an elected board of trustees; municipalities run kindergartens." }
+    ],
+    note: "Check the current law and the council's own rules before relying on this."
+  },
+  south_korea: {
+    title: "Rules for council and education committee meetings",
+    checked: "November 22, 2026",
+    laws: [
+      { state: "South Korea", covers: "Metropolitan and provincial councils", threshold: "",
+        rule: "Under the Local Autonomy Act council meetings are public unless the council decides otherwise, and minutes are kept and published; councils broadcast their plenary and committee meetings." },
+      { state: "South Korea", covers: "Education offices", threshold: "",
+        rule: "Under the Local Education Autonomy Act each metropolitan city and province has an office of education headed by a superintendent elected by its residents; the council's education committee reviews its budget and ordinances." }
+    ],
+    note: "Check the current law and the council's own rules before relying on this."
+  },
   philippines: {
     title: "Rules for council sessions and local school boards",
     checked: "November 8, 2026",

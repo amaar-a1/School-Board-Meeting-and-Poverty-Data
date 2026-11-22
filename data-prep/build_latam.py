@@ -82,7 +82,7 @@ def centroid(geom):
 
 
 _CACHE = {}
-DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "AU": "australia", "HR": "croatia", "PH": "philippines", "LV": "latvia", "EE": "estonia", "ARG": "argentina", "ISR": "israel", "SVN": "slovenia", "TWN": "taiwan", "URY": "uruguay", "CRI": "costa_rica"}
+DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "AU": "australia", "HR": "croatia", "PH": "philippines", "LV": "latvia", "EE": "estonia", "ARG": "argentina", "ISR": "israel", "SVN": "slovenia", "TWN": "taiwan", "URY": "uruguay", "CRI": "costa_rica", "LTU": "lithuania", "ZAF": "south_africa", "KEN": "kenya", "GEO": "georgia", "KOR": "south_korea"}
 # Brazil: municipal chambers (câmara municipal) and their education committees, in Portuguese.
 RULES = {"BR": (re.compile(r"comiss[ãa]o (permanente )?de educa[çc][ãa]o|educa[çc][ãa]o.*comiss[ãa]o", re.I),
                 re.compile(r"sess[ãa]o|c[âa]mara", re.I),
@@ -224,7 +224,22 @@ RULES["CRI"] = (re.compile(r"comisi[óo]n[^|]{0,40}educaci[óo]n|educaci[óo]n[^
 
 # Spain: a committee covering education counts only when at least this many of its sessions are posted; otherwise the
 # council's plenaries do (one stray committee clip shouldn't replace 160 plenaries).
-MIN_EDU = {"ES": 3, "FRA": 3, "EC": 3, "IT": 3, "PL": 3, "PT": 3, "BE": 3, "LV": 3, "EE": 3, "SVN": 3, "URY": 3, "CRI": 3}
+# Lithuania: municipal councils (savivaldybės taryba) and their education committees (švietimo komitetas).
+# South Africa: municipal councils; their portfolio committees for education are rare, so council sittings stand in.
+RULES["ZAF"] = (re.compile(r"(committee|portfolio)[^|]{0,50}(education|schools)|(education|schools)[^|]{0,30}(committee|portfolio)", re.I),
+                re.compile(r"council|sitting|meeting", re.I),
+                re.compile(r"^(?!.*(budget speech only|imbizo|izimbizo|ward committee)).*((ordinary|special|full|virtual|annual|budget|adjustment)\s+(council|sitting|meeting)|council\s+(meeting|sitting)|sitting of (the )?council|municipal council|mayoral committee)", re.I),
+                re.compile(NOT_T.pattern + r"|interview|news|launch|handover|campaign|cleanup|clean-up|vacanc|tender|ad\b", re.I))
+# Kenya: county assemblies and their education committees.
+RULES["KEN"] = (re.compile(r"(committee|cttee)[^|]{0,50}education|education[^|]{0,30}committee", re.I),
+                re.compile(r"sitting|session|assembly|house", re.I),
+                re.compile(r"^(?!.*(committee|press|interview|news)).*((morning|afternoon|evening|special|plenary)\s+(sitting|session)|sitting|assembly\s+(session|proceedings)|house\s+(proceedings|business)|hansard)", re.I),
+                re.compile(NOT_T.pattern + r"|interview|news|tour|visit|launch|campaign|ad\b", re.I))
+RULES["LTU"] = (re.compile(r"(komitet|komisij)[^|]{0,60}[sš]vietim|[sš]vietim[^|]{0,40}(komitet|komisij)", re.I),
+                re.compile(r"pos[eė]d|taryb", re.I),
+                re.compile(r"^(?!.*(komitet|komisij|jaunimo)).*(tarybos\s+pos[eė]d|tarybos\s+\d|pos[eė]dis|\d+\s*(-?asis|-?is)?\s*pos[eė]d)", re.I),
+                re.compile(NOT_T.pattern + r"|interviu|reportaž|koncert|šventė|naujien", re.I))
+MIN_EDU = {"ES": 3, "FRA": 3, "EC": 3, "IT": 3, "PL": 3, "PT": 3, "BE": 3, "LV": 3, "EE": 3, "SVN": 3, "URY": 3, "CRI": 3, "LTU": 3, "ZAF": 3, "KEN": 3}
 
 
 def session_key(cc, t):
@@ -258,13 +273,19 @@ def meetings(cc, did):
                        ([t for t in vids if council.search(t) and must.search(t) and not edu.search(t)], "Council (stand-in)")):
         # (Slovenia, Uruguay, Costa Rica: a title with only a year, like "Sesión Ordinaria 148-2026", counts once per title.)
         keys = {(lambda pd: pd if pd and (pd[2] or cc not in ("SVN", "URY", "CRI")) else session_key(cc, t))(parse_date(t)) for t in keep}
-        if len(keys) >= (MIN_EDU.get(cc, 1) if kind == "Education committee" else 1): return len(keys), url, keep, kind
+        if len(keys) >= (MIN_EDU.get(cc, 1) if kind == "Education committee" else 1):
+            # Kenya's county assemblies and South Africa's councils don't run schools: their education committees are stand-ins too.
+            if cc in ("KEN", "ZAF") and kind == "Education committee": kind = ("Assembly" if cc == "KEN" else "Council") + " education committee (stand-in)"
+            if cc == "KEN" and kind == "Council (stand-in)": kind = "County assembly (stand-in)"
+            return len(keys), url, keep, kind
     return 0, "", [], ""
 
 
 # Channels checked by hand and found to be another place's (by channel URL). The search matched on the name, and
 # many of these names exist in other Spanish-speaking countries too, or in both Chile and Colombia.
 NOT_CHANNELS = {
+    # Kenya: a youth assembly in Lamu, not the county assembly
+    "KEN": {"https://www.youtube.com/channel/UC9JoEGAfhZnHl0HgfXCIJ5Q"},
     # Philippines: the city council of Alaminos (Pangasinan) found for Alaminos (Laguna), and Sogod's council for Leyte
     "PH": {"https://www.youtube.com/channel/UCBKHEP2wS5tUvztcvvO_zbg",
            "https://www.youtube.com/channel/UCA6Oz5eN0eNmiKC9agQ6iEw"},
@@ -428,7 +449,7 @@ def write(cc, key, rows, feats):
             "Population", "Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
     extra = [c for c in ("Province", "Autonomous community", "Children under 18 (estimated)", "Poverty year", "Poverty range", "Poverty rate (region, all ages)", ES_EST,
-                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)", "Welfare rate basis", "Unemployment rate (2020 census)", "Children under 15", "Children on family benefit (% of under-20s)", "Median income (€ per taxpayer)", "Children under 18", "Mean income (€ per tax return)", "Median family income ($ per week, 2021)", "Poverty rate (county, 2011)") if any(r.get(c) not in (None, "") for r in rows)]
+                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)", "Welfare rate basis", "Unemployment rate (2020 census)", "Children under 15", "Children under 16", "Pupils with free school meals", "Social assistance recipients per 1,000", "Children on family benefit (% of under-20s)", "Median income (€ per taxpayer)", "Children under 18", "Mean income (€ per tax return)", "Median family income ($ per week, 2021)", "Poverty rate (county, 2011)") if any(r.get(c) not in (None, "") for r in rows)]
     pov = "Percentage of Children in Low Income" if any(r.get("Percentage of Children in Low Income") for r in rows) else "Poverty rate (all ages)"
     cols = [c for c in cols if c not in ("Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)") or any(r.get(c) not in (None, "") for r in rows)]
     cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
@@ -1615,6 +1636,172 @@ def costa_rica():
                      "School system": "Canton (schools are run nationally by the Ministry of Public Education); elected municipal council (concejo municipal)",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in have})
     write("CRI", "costa_rica", rows, feats)
+
+
+def lithuania():
+    """60 municipalities (savivaldybės). Each founds and runs its schools (general schools, pre-schools); the state pays
+    for teaching through the "class basket". The elected municipal council (taryba) decides on schools, through an
+    education committee in many. Poverty: Statistics Lithuania's at-risk-of-poverty rate by municipality (prep_lithuania.py)."""
+    d = os.path.join(IN, "lithuania")
+    lt = json.load(open(os.path.join(d, "ltu_data.json"), encoding="utf-8"))
+    yrs = lt.pop("_years")
+    feats = json.load(open(os.path.join(d, "ltu_geo.geojson"), encoding="utf-8"))["features"]
+    area = {f["properties"]["id"]: area_km2(f["geometry"]) for f in feats}
+    # The genitive name channels use: "Akmenės rajono savivaldybė", "Kauno miesto savivaldybė" (city and district share a stem).
+    stem = lambda n: "Kazlų Rūdos" if n.startswith("Kazlų") else n.split()[0]
+    pairs = {stem(x["name"]) for x in lt.values() if sum(stem(y["name"]) == stem(x["name"]) for y in lt.values()) > 1}
+    yt_name = lambda n: stem(n) + ((" miesto" if " m. " in n else " rajono") if stem(n) in pairs else "")
+    rows = []
+    for code, x in lt.items():
+        did = f"LTU-{code}"
+        dens = x["pop"] / area[did] if x.get("pop") and area.get(did) else 0
+        city = " m. " in x["name"]
+        rows.append({"District": re.sub(r" Municipality$", "", x.get("en") or x["name"]), "_names": [yt_name(x["name"]), x["name"]],
+                     "Region": "City municipality" if city else "District or other municipality", "Population": x.get("pop") or "",
+                     "Poverty rate (all ages)": f"{x['poverty']:.1f}%" if x.get("poverty") is not None else "",
+                     "Poverty note": (f"At-risk-of-poverty rate, all ages, {yrs['poverty']} (Statistics Lithuania, small-area estimate: people below 60% of the national median "
+                                      f"equivalised disposable income). Also: {x['social']:.0f} social assistance benefit recipients per 1,000 residents ({yrs['social']}), and "
+                                      f"{round(x['meals']):,} pupils on average receiving free school meals ({yrs['meals']}), which are means-tested"),
+                     "Children under 16": x.get("children") or "", "Pupils with free school meals": round(x["meals"]) if x.get("meals") else "",
+                     "Social assistance recipients per 1,000": round(x["social"], 1) if x.get("social") is not None else "",
+                     "Enrollment": x.get("pupils") or "", "Enrollment year": f"{yrs['pupils']} school year (general school pupils; Statistics Lithuania)" if x.get("pupils") else "",
+                     "School system": ("City municipality" if city else "Municipality") + " (its schools; the state pays for teaching); elected council (taryba)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in area})
+    write("LTU", "lithuania", rows, feats)
+
+
+def south_africa():
+    """213 municipalities: 8 metropolitan and 205 local municipalities. Public schools are run by the nine provincial
+    education departments; each school has an elected school governing body (parents, staff and, in secondary schools,
+    learners), but there's no local school board. The elected municipal council is the stand-in. Poverty stand-in: the
+    share of public-school learners in quintile 1-3 schools, the no-fee schools that serve the poorest communities
+    (DBE masterlist 2023; prep_south_africa.py)."""
+    d = os.path.join(IN, "south_africa")
+    za = json.load(open(os.path.join(d, "zaf_data.json"), encoding="utf-8"))
+    feats = json.load(open(os.path.join(d, "zaf_geo.geojson"), encoding="utf-8"))["features"]
+    area = {f["properties"]["id"]: area_km2(f["geometry"]) for f in feats}
+    rows = []
+    for code, x in za.items():
+        did = f"ZAF-{code}"
+        a = x.get("area") or area.get(did)
+        dens = x["pop"] / a if x.get("pop") and a else 0
+        rate = 100 * x["q13"] / x["q_known"] if x.get("q_known") else None
+        rows.append({"District": x["name"], "Region": x["province"], "Population": x.get("pop") or "",
+                     "Poverty rate (all ages)": f"{rate:.1f}%" if rate is not None else "",
+                     "Poverty note": (f"Stand-in: public-school learners in quintile 1-3 schools, {x['q13']:,} of {x['q_known']:,} (2023). The Department of Basic Education ranks "
+                                      "every public school into five quintiles by the poverty of its community (income, unemployment and schooling); quintiles 1-3 are the "
+                                      "poorest, and their schools charge no fees. South Africa publishes no poverty rate by municipality from a recent survey") if rate is not None else "",
+                     "Enrollment": x.get("pupils") or "", "Enrollment year": "2023 (learners in open ordinary schools; DBE masterlist)" if x.get("pupils") else "",
+                     "Public school enrollment": x.get("public") if x.get("pupils") else "",
+                     "School system": ("Metropolitan" if x.get("metro") else "Local") + " municipality (schools are run by the provincial education department; each school has a governing body); elected council",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in area})
+    write("ZAF", "south_africa", rows, feats)
+
+
+def kenya():
+    """47 counties. Primary and secondary schools are run nationally (the Ministry of Education and the Teachers Service
+    Commission); counties run early childhood education (ECDE) and village polytechnics, and each school has a board of
+    management. The elected county assembly, which has an education committee, is the stand-in. Poverty: KNBS, the share
+    of children (0-17) below the overall poverty line, 2022 (prep_kenya.py)."""
+    d = os.path.join(IN, "kenya")
+    ke = json.load(open(os.path.join(d, "ken_data.json"), encoding="utf-8"))
+    feats = json.load(open(os.path.join(d, "ken_geo.geojson"), encoding="utf-8"))["features"]
+    have = {f["properties"]["id"] for f in feats}
+    rows = []
+    for code, x in ke.items():
+        did = f"KEN-{code}"
+        dens = x["pop"] / x["area"] if x.get("pop") and x.get("area") else 0
+        rows.append({"District": x["name"], "Region": x.get("province") or "", "Population": x.get("pop") or "",
+                     "Percentage of Children in Low Income": f"{x['child']:.1f}%" if x.get("child") is not None else "",
+                     "Poverty rate (all ages)": f"{x['poverty']:.1f}%" if x.get("poverty") is not None else "",
+                     "Poverty note": (f"Children aged 0-17 below the overall poverty line, 2022: {x['child']:.1f}% of about {x['child_pop']:,} (KNBS, The Kenya Poverty Report 2022, "
+                                      f"Annex Table E.2); all ages {x['poverty']:.1f}% (Table 4.4). Nationally 39.8% of people were poor") if x.get("child") is not None else "",
+                     "Children under 18": x.get("child_pop") or "",
+                     "Enrollment": x.get("pupils") or "", "Enrollment year": "2024, provisional (primary, junior and secondary school pupils, public and private; KNBS Statistical Abstract 2025)" if x.get("pupils") else "",
+                     "School system": "County (primary and secondary schools are run nationally; the county runs early childhood education); elected county assembly",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in have})
+    write("KEN", "kenya", rows, feats)
+
+
+def south_korea():
+    """17 metropolitan cities and provinces. Each has an office of education (교육청) headed by an elected superintendent
+    of education, which runs its public schools; the elected council's education committee (교육위원회) oversees it. The
+    superintendent holds no public board meetings, so the council's education committee (or else its plenary sittings)
+    stands in. Poverty stand-in: recipients of the National Basic Livelihood Security system per 100 residents (MOHW, 2025)."""
+    d = os.path.join(IN, "south_korea")
+    kr = json.load(open(os.path.join(d, "kor_data.json"), encoding="utf-8"))
+    feats = json.load(open(os.path.join(d, "kor_geo.geojson"), encoding="utf-8"))["features"]
+    area = {f["properties"]["id"]: area_km2(f["geometry"]) for f in feats}
+    rows = []
+    for ko, x in kr.items():
+        did = "KOR-" + x["code"]
+        dens = x["pop"] / area[did] if area.get(did) else 0
+        m = x.get("meetings") or {}
+        n = m.get("n", 0)
+        latest, years = date_summary(m.get("titles", [])) if n else ("", "")
+        rows.append({"District": f"{x['en']} ({ko})", "_names": [ko, x["en"]], "Region": x["kind"], "Population": x["pop"],
+                     "Poverty rate (all ages)": f"{x['rate']:.1f}%",
+                     "Poverty note": (f"Stand-in: recipients of the National Basic Livelihood Security system (Korea's means-tested minimum income), {x['recipients']:,} people "
+                                      f"in {x['households']:,} households, per 100 residents, 2025 (Ministry of Health and Welfare). Population is the ministry's recipients over "
+                                      "its rate, so approximate. Korea publishes no poverty rate by province"),
+                     "Enrollment": x.get("pupils") or "", "Enrollment year": f"{x['pupils_year']} (elementary, middle and high schools; Ministry of Education and KEDI)" if x.get("pupils") else "",
+                     "_own_meetings": True, "Available Board Meetings": n, "Meetings type": m.get("type", "") if n else "", "Meetings source": m.get("source", "") if n else "",
+                     "Latest meeting": latest, "Meetings by year": years,
+                     "School system": f"{x['kind']} (its office of education, with an elected superintendent); elected council with an education committee",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": True})
+    write("KOR", "south_korea", rows, feats)
+
+
+def _ge_meetings(videos):
+    """Georgian council (sakrebulo) sessions: "საკრებულოს სხდომა" or "sakrebulos sxdoma", each counted once per date in the
+    title (dd.mm.yyyy, dd mm yyyy, ddmmyyyy), or once per title; the education commission where at least three meet."""
+    def date(t):
+        m = re.search(r"\b(\d{1,2})\s*[.,/ -]\s*(\d{1,2})\s*[.,/ -]\s*(20\d\d)\b", t) or re.search(r"\b(\d\d)(\d\d)(20\d\d)\b", t)
+        return f"{m.group(3)}-{int(m.group(2)):02d}-{int(m.group(1)):02d}" if m and 1 <= int(m.group(2)) <= 12 and 1 <= int(m.group(1)) <= 31 else ""
+    def count(pat, notpat):
+        keys, keep = set(), []
+        for t in videos:
+            if re.search(pat, t, re.I) and not re.search(notpat, t, re.I):
+                d = date(t); keys.add(d or t.strip().lower()); keep.append(f"{d} {t}" if d else t)
+        return keys, keep
+    k, t = count(r"(განათლ|education)[^|]{0,60}(კომისი|commission)|(კომისი)[^|]{0,60}განათლ", r"ანგარიშ|report")
+    if len(k) >= 3: return len(k), "Council education commission (stand-in)", t
+    k, t = count(r"სხდომ|sxdom|session", r"კომისი|commission|ანგარიშ|report|სატესტო|test")
+    return (len(k), "Council (stand-in)", t) if k else (0, "", [])
+
+
+def georgia():
+    """64 municipalities (including Tbilisi and four other self-governing cities); Abkhazia and South Ossetia (Tskhinvali
+    region), outside the Georgian government's control, are shown with no data. Public schools are legal entities run by
+    the Ministry of Education and Science, each with an elected board of trustees; municipalities run kindergartens and
+    pay for some school transport. The elected municipal council (sakrebulo) is the stand-in. Poverty stand-in: families
+    registered in the Targeted Social Assistance database and receiving the subsistence allowance, per 100 residents."""
+    d = os.path.join(IN, "georgia")
+    ge = json.load(open(os.path.join(d, "geo_data.json"), encoding="utf-8"))
+    feats = json.load(open(os.path.join(d, "geo_geo.geojson"), encoding="utf-8"))["features"]
+    area = {f["properties"]["id"]: area_km2(f["geometry"]) for f in feats}
+    rows = []
+    for did, x in ge.items():
+        if x.get("occupied"):
+            rows.append({"District": x["name"], "Region": x["occupied"], "Population": "", "Poverty note": f"{x['occupied']}: occupied by Russia (most countries consider the occupation illegal) and outside the Georgian government's control; no Georgian figures",
+                         "School system": "Occupied by Russia; outside the Georgian government's control", "District ID": did, "_geo": did in area})
+            continue
+        dens = x["pop"] / area[did] if x.get("pop") and area.get(did) else 0
+        rate = 100 * x["tsa"] / x["pop"] if x.get("tsa") and x.get("pop") else None
+        mt = x.get("meetings") or {}
+        n, typ, titles = _ge_meetings(mt.get("videos", [])) if mt.get("url") else (0, "", [])
+        latest, years = date_summary(titles) if n else ("", "")
+        rows.append({"District": x["name"], "_names": [x["name"], x["ka"]], "Region": "Self-governing city" if x.get("city") else "Municipality", "Population": x.get("pop") or "",
+                     "Poverty rate (all ages)": f"{rate:.1f}%" if rate is not None else "",
+                     "Poverty note": (f"Stand-in: families registered in the Targeted Social Assistance database and receiving the subsistence allowance, end of {x['tsa_year']} "
+                                      f"({x['tsa']:,}; Social Service Agency via Geostat), per 100 residents (Geostat, 1 January {x['pop_year']}). It counts families, not people. "
+                                      "Georgia publishes no poverty rate by municipality") if rate is not None else "The subsistence allowance table has no row for this municipality",
+                     "Enrollment": x.get("pupils") or "", "Enrollment year": f"{x['pupils_year']} (public and private general schools; Geostat)" if x.get("pupils") else "",
+                     "_own_meetings": True, "Available Board Meetings": n, "Meetings type": typ if n else "", "Meetings source": mt.get("url", "") if n else "",
+                     "Latest meeting": latest, "Meetings by year": years,
+                     "School system": ("Self-governing city" if x.get("city") else "Municipality") + " (public schools are run by the Ministry of Education and Science, each with a board of trustees); elected council (sakrebulo)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in area})
+    write("GEO", "georgia", rows, feats)
 
 
 if __name__ == "__main__":

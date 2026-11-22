@@ -1,0 +1,609 @@
+{
+ "11": {
+  "name": "Alytaus m. sav.",
+  "en": "Alytus City Municipality",
+  "poverty": 22.7,
+  "social": 25.027560110836,
+  "meals": 2415.333333333334,
+  "pupils": 7104,
+  "pop": 49940,
+  "children": 6165
+ },
+ "12": {
+  "name": "Birštono sav.",
+  "en": "Birštonas Municipality",
+  "poverty": 19.7,
+  "social": 4.934007647712,
+  "meals": 148.888888888889,
+  "pupils": 494,
+  "pop": 4006,
+  "children": 449
+ },
+ "13": {
+  "name": "Vilniaus m. sav.",
+  "en": "Vilnius City Municipality",
+  "poverty": 10.2,
+  "social": 12.191143559931,
+  "meals": 25251.611111111113,
+  "pupils": 87574,
+  "pop": 618469,
+  "children": 103942
+ },
+ "15": {
+  "name": "Druskininkų sav.",
+  "en": "Druskininkai Municipality",
+  "poverty": 22.5,
+  "social": 19.489954406533,
+  "meals": 833,
+  "pupils": 2164,
+  "pop": 19837,
+  "children": 2538
+ },
+ "18": {
+  "name": "Marijampolės sav.",
+  "en": "Marijampolė Municipality",
+  "poverty": 26,
+  "social": 5.908309721771,
+  "meals": 1945.222222222222,
+  "pupils": 6945,
+  "pop": 53498,
+  "children": 7563
+ },
+ "19": {
+  "name": "Kauno m. sav.",
+  "en": "Kaunas City Municipality",
+  "poverty": 14.9,
+  "social": 13.223516308619,
+  "meals": 11503.666666666666,
+  "pupils": 41297,
+  "pop": 302835,
+  "children": 45645
+ },
+ "21": {
+  "name": "Klaipėdos m. sav.",
+  "en": "Klaipėda City Municipality",
+  "poverty": 19.3,
+  "social": 8.41731437205,
+  "meals": 6424.888888888889,
+  "pupils": 24099,
+  "pop": 160026,
+  "children": 25205
+ },
+ "23": {
+  "name": "Neringos sav.",
+  "en": "Neringa Municipality",
+  "poverty": 13.4,
+  "social": 0.886623074366,
+  "meals": 63,
+  "pupils": 150,
+  "pop": 4570,
+  "children": 409
+ },
+ "25": {
+  "name": "Palangos m. sav.",
+  "en": "Palanga City Municipality",
+  "poverty": 22.3,
+  "social": 9.223918575064,
+  "meals": 618.333333333333,
+  "pupils": 2154,
+  "pop": 19172,
+  "children": 2453
+ },
+ "27": {
+  "name": "Panevėžio m. sav.",
+  "en": "Panevėžys City Municipality",
+  "poverty": 18.8,
+  "social": 24.323863602965,
+  "meals": 3742.111111111111,
+  "pupils": 10917,
+  "pop": 84319,
+  "children": 10635
+ },
+ "29": {
+  "name": "Šiaulių m. sav.",
+  "en": "Šiauliai City Municipality",
+  "poverty": 20.8,
+  "social": 12.619796127956,
+  "meals": 4336.888888888889,
+  "pupils": 14818,
+  "pop": 110965,
+  "children": 15723
+ },
+ "30": {
+  "name": "Visagino sav.",
+  "en": "Visaginas Municipality",
+  "poverty": 25.9,
+  "social": 36.177456662422,
+  "meals": 912.444444444444,
+  "pupils": 1879,
+  "pop": 19075,
+  "children": 2382
+ },
+ "32": {
+  "name": "Akmenės r. sav.",
+  "en": "Akmenė District Municipality",
+  "poverty": 30.8,
+  "social": 44.164540816327,
+  "meals": 876.666666666667,
+  "pupils": 2192,
+  "pop": 18696,
+  "children": 2525
+ },
+ "33": {
+  "name": "Alytaus r. sav.",
+  "en": "Alytus District Municipality",
+  "poverty": 31.8,
+  "social": 30.269970047408,
+  "meals": 649.777777777778,
+  "pupils": 1266,
+  "pop": 25042,
+  "children": 3237
+ },
+ "34": {
+  "name": "Anykščių r. sav.",
+  "en": "Anykščiai District Municipality",
+  "poverty": 30,
+  "social": 53.887535059083,
+  "meals": 759.777777777778,
+  "pupils": 1808,
+  "pop": 21495,
+  "children": 2395
+ },
+ "36": {
+  "name": "Biržų r. sav.",
+  "en": "Biržai District Municipality",
+  "poverty": 33.9,
+  "social": 61.386414253898,
+  "meals": 881,
+  "pupils": 1868,
+  "pop": 21322,
+  "children": 2514
+ },
+ "38": {
+  "name": "Varėnos r. sav.",
+  "en": "Varėna District Municipality",
+  "poverty": 28.1,
+  "social": 43.690067176042,
+  "meals": 618.666666666667,
+  "pupils": 1676,
+  "pop": 19233,
+  "children": 2208
+ },
+ "39": {
+  "name": "Vilkaviškio r. sav.",
+  "en": "Vilkaviškis District Municipality",
+  "poverty": 36.1,
+  "social": 48.109139534534,
+  "meals": 1619.444444444444,
+  "pupils": 3636,
+  "pop": 32982,
+  "children": 4392
+ },
+ "41": {
+  "name": "Vilniaus r. sav.",
+  "en": "Vilnius District Municipality",
+  "poverty": 12.8,
+  "social": 16.341711832964,
+  "meals": 3089.555555555556,
+  "pupils": 12875,
+  "pop": 111178,
+  "children": 18440
+ },
+ "42": {
+  "name": "Elektrėnų sav.",
+  "en": "Elektrėnai Municipality",
+  "poverty": 14.1,
+  "social": 11.562100651129,
+  "meals": 938.888888888889,
+  "pupils": 2843,
+  "pop": 24701,
+  "children": 3462
+ },
+ "43": {
+  "name": "Zarasų r. sav.",
+  "en": "Zarasai District Municipality",
+  "poverty": 31.7,
+  "social": 48.722304550548,
+  "meals": 500.666666666667,
+  "pupils": 1084,
+  "pop": 13635,
+  "children": 1488
+ },
+ "45": {
+  "name": "Ignalinos r. sav.",
+  "en": "Ignalina District Municipality",
+  "poverty": 29.3,
+  "social": 57.48502994012,
+  "meals": 432.111111111111,
+  "pupils": 942,
+  "pop": 13127,
+  "children": 1300
+ },
+ "46": {
+  "name": "Jonavos r. sav.",
+  "en": "Jonava District Municipality",
+  "poverty": 23.1,
+  "social": 43.433722597828,
+  "meals": 1774.777777777778,
+  "pupils": 4485,
+  "pop": 41382,
+  "children": 5876
+ },
+ "47": {
+  "name": "Joniškio r. sav.",
+  "en": "Joniškis District Municipality",
+  "poverty": 30.3,
+  "social": 37.890605343934,
+  "meals": 963.777777777778,
+  "pupils": 1920,
+  "pop": 19732,
+  "children": 2403
+ },
+ "48": {
+  "name": "Kalvarijos sav.",
+  "en": "Kalvarija Municipality",
+  "poverty": 31.9,
+  "social": 59.538210697944,
+  "meals": 504.333333333333,
+  "pupils": 986,
+  "pop": 9421,
+  "children": 1344
+ },
+ "49": {
+  "name": "Kaišiadorių r. sav.",
+  "en": "Kaišiadorys District Municipality",
+  "poverty": 20.8,
+  "social": 25.53552192417,
+  "meals": 1125.555555555556,
+  "pupils": 3480,
+  "pop": 28074,
+  "children": 3566
+ },
+ "52": {
+  "name": "Kauno r. sav.",
+  "en": "Kaunas District Municipality",
+  "poverty": 15.5,
+  "social": 11.38480645829,
+  "meals": 4280.222222222223,
+  "pupils": 11425,
+  "pop": 112612,
+  "children": 20139
+ },
+ "53": {
+  "name": "Kėdainių r. sav.",
+  "en": "Kėdainiai District Municipality",
+  "poverty": 24.9,
+  "social": 24.096651647672,
+  "meals": 2059.444444444444,
+  "pupils": 5144,
+  "pop": 44998,
+  "children": 6022
+ },
+ "54": {
+  "name": "Kelmės r. sav.",
+  "en": "Kelmė District Municipality",
+  "poverty": 37.8,
+  "social": 43.320390387239,
+  "meals": 948.111111111111,
+  "pupils": 2402,
+  "pop": 23577,
+  "children": 2819
+ },
+ "55": {
+  "name": "Klaipėdos r. sav.",
+  "en": "Klaipėda District Municipality",
+  "poverty": 19.5,
+  "social": 8.260709115167,
+  "meals": 2486,
+  "pupils": 6650,
+  "pop": 71652,
+  "children": 13179
+ },
+ "56": {
+  "name": "Kretingos r. sav.",
+  "en": "Kretinga District Municipality",
+  "poverty": 23.4,
+  "social": 16.159288240969,
+  "meals": 1487.333333333333,
+  "pupils": 4770,
+  "pop": 37206,
+  "children": 5818
+ },
+ "57": {
+  "name": "Kupiškio r. sav.",
+  "en": "Kupiškis District Municipality",
+  "poverty": 30.9,
+  "social": 44.809315104337,
+  "meals": 632.444444444444,
+  "pupils": 1413,
+  "pop": 15092,
+  "children": 1731
+ },
+ "58": {
+  "name": "Kazlų Rūdos sav.",
+  "en": "Kazlų Rūda Municipality",
+  "poverty": 27.2,
+  "social": 30.899137051127,
+  "meals": 542.333333333333,
+  "pupils": 1388,
+  "pop": 10723,
+  "children": 1520
+ },
+ "59": {
+  "name": "Lazdijų r. sav.",
+  "en": "Lazdijai District Municipality",
+  "poverty": 34,
+  "social": 73.552659050914,
+  "meals": 688,
+  "pupils": 1587,
+  "pop": 16578,
+  "children": 1881
+ },
+ "61": {
+  "name": "Mažeikių r. sav.",
+  "en": "Mažeikiai District Municipality",
+  "poverty": 26.5,
+  "social": 31.973001443564,
+  "meals": 2156.444444444444,
+  "pupils": 6170,
+  "pop": 50934,
+  "children": 7395
+ },
+ "62": {
+  "name": "Molėtų r. sav.",
+  "en": "Molėtai District Municipality",
+  "poverty": 25.8,
+  "social": 25.990137394163,
+  "meals": 534.777777777778,
+  "pupils": 1460,
+  "pop": 15963,
+  "children": 1765
+ },
+ "63": {
+  "name": "Pagėgių sav.",
+  "en": "Pagėgiai Municipality",
+  "poverty": 37.7,
+  "social": 48.649433633459,
+  "meals": 289.444444444444,
+  "pupils": 622,
+  "pop": 6782,
+  "children": 934
+ },
+ "65": {
+  "name": "Pakruojo r. sav.",
+  "en": "Pakruojis District Municipality",
+  "poverty": 26.3,
+  "social": 44.651056014692,
+  "meals": 757,
+  "pupils": 1489,
+  "pop": 17230,
+  "children": 2096
+ },
+ "66": {
+  "name": "Panevėžio r. sav.",
+  "en": "Panevėžys District Municipality",
+  "poverty": 25,
+  "social": 27.016715886451,
+  "meals": 1352.111111111111,
+  "pupils": 2809,
+  "pop": 35375,
+  "children": 5278
+ },
+ "67": {
+  "name": "Pasvalio r. sav.",
+  "en": "Pasvalys District Municipality",
+  "poverty": 30.9,
+  "social": 38.025117081013,
+  "meals": 1006.666666666667,
+  "pupils": 2277,
+  "pop": 21228,
+  "children": 2706
+ },
+ "68": {
+  "name": "Plungės r. sav.",
+  "en": "Plungė District Municipality",
+  "poverty": 26,
+  "social": 19.57410195741,
+  "meals": 1320.222222222222,
+  "pupils": 3877,
+  "pop": 32319,
+  "children": 4649
+ },
+ "69": {
+  "name": "Prienų r. sav.",
+  "en": "Prienai District Municipality",
+  "poverty": 25.1,
+  "social": 31.330842196033,
+  "meals": 951.444444444444,
+  "pupils": 2462,
+  "pop": 24192,
+  "children": 3218
+ },
+ "71": {
+  "name": "Radviliškio r. sav.",
+  "en": "Radviliškis District Municipality",
+  "poverty": 30.3,
+  "social": 49.89975495656,
+  "meals": 1504.888888888889,
+  "pupils": 3395,
+  "pop": 33373,
+  "children": 4346
+ },
+ "72": {
+  "name": "Raseinių r. sav.",
+  "en": "Raseiniai District Municipality",
+  "poverty": 29.3,
+  "social": 37.631925557209,
+  "meals": 1256.444444444444,
+  "pupils": 3051,
+  "pop": 28995,
+  "children": 3698
+ },
+ "73": {
+  "name": "Rokiškio r. sav.",
+  "en": "Rokiškis District Municipality",
+  "poverty": 28.3,
+  "social": 48.85766485224,
+  "meals": 1071.444444444444,
+  "pupils": 2485,
+  "pop": 26229,
+  "children": 2952
+ },
+ "74": {
+  "name": "Rietavo sav.",
+  "en": "Rietavas Municipality",
+  "poverty": 26.2,
+  "social": 27.084818246614,
+  "meals": 345,
+  "pupils": 791,
+  "pop": 6981,
+  "children": 1031
+ },
+ "75": {
+  "name": "Skuodo r. sav.",
+  "en": "Skuodas District Municipality",
+  "poverty": 33.4,
+  "social": 28.959154123312,
+  "meals": 661.666666666667,
+  "pupils": 1452,
+  "pop": 14686,
+  "children": 1806
+ },
+ "77": {
+  "name": "Tauragės r. sav.",
+  "en": "Tauragė District Municipality",
+  "poverty": 30.5,
+  "social": 28.594420600858,
+  "meals": 1616.444444444444,
+  "pupils": 4480,
+  "pop": 37255,
+  "children": 5310
+ },
+ "78": {
+  "name": "Telšių r. sav.",
+  "en": "Telšiai District Municipality",
+  "poverty": 29,
+  "social": 19.795758051846,
+  "meals": 1402.555555555556,
+  "pupils": 4409,
+  "pop": 37902,
+  "children": 5278
+ },
+ "79": {
+  "name": "Trakų r. sav.",
+  "en": "Trakai District Municipality",
+  "poverty": 14.5,
+  "social": 19.786409710209,
+  "meals": 1430.222222222222,
+  "pupils": 3890,
+  "pop": 35084,
+  "children": 5251
+ },
+ "81": {
+  "name": "Ukmergės r. sav.",
+  "en": "Ukmergė District Municipality",
+  "poverty": 22.1,
+  "social": 25.759739229516,
+  "meals": 1634.222222222222,
+  "pupils": 3625,
+  "pop": 34342,
+  "children": 4301
+ },
+ "82": {
+  "name": "Utenos r. sav.",
+  "en": "Utena District Municipality",
+  "poverty": 20.3,
+  "social": 11.759809909922,
+  "meals": 1121.333333333333,
+  "pupils": 3704,
+  "pop": 37099,
+  "children": 4320
+ },
+ "84": {
+  "name": "Šakių r. sav.",
+  "en": "Šakiai District Municipality",
+  "poverty": 28.9,
+  "social": 35.523338472937,
+  "meals": 1014.666666666667,
+  "pupils": 2656,
+  "pop": 24724,
+  "children": 3118
+ },
+ "85": {
+  "name": "Šalčininkų r. sav.",
+  "en": "Šalčininkai District Municipality",
+  "poverty": 23.1,
+  "social": 38.20262537866,
+  "meals": 2361.722222222222,
+  "pupils": 3606,
+  "pop": 29598,
+  "children": 4340
+ },
+ "86": {
+  "name": "Švenčionių r. sav.",
+  "en": "Švenčionys District Municipality",
+  "poverty": 19,
+  "social": 18.646588146435,
+  "meals": 779.333333333333,
+  "pupils": 2129,
+  "pop": 20908,
+  "children": 2368
+ },
+ "87": {
+  "name": "Šilalės r. sav.",
+  "en": "Šilalė District Municipality",
+  "poverty": 34.2,
+  "social": 28.681253696038,
+  "meals": 1029.222222222222,
+  "pupils": 2423,
+  "pop": 20053,
+  "children": 2791
+ },
+ "88": {
+  "name": "Šilutės r. sav.",
+  "en": "Šilutė District Municipality",
+  "poverty": 30.8,
+  "social": 26.233127866784,
+  "meals": 1773.444444444444,
+  "pupils": 4516,
+  "pop": 37906,
+  "children": 5458
+ },
+ "89": {
+  "name": "Širvintų r. sav.",
+  "en": "Širvintos District Municipality",
+  "poverty": 19.2,
+  "social": 17.167086076735,
+  "meals": 534.333333333333,
+  "pupils": 1503,
+  "pop": 14432,
+  "children": 1898
+ },
+ "91": {
+  "name": "Šiaulių r. sav.",
+  "en": "Šiauliai District Municipality",
+  "poverty": 25.5,
+  "social": 28.564663069081,
+  "meals": 1559.111111111111,
+  "pupils": 3362,
+  "pop": 40119,
+  "children": 5672
+ },
+ "94": {
+  "name": "Jurbarko r. sav.",
+  "en": "Jurbarkas District Municipality",
+  "poverty": 35.4,
+  "social": 40.615656292015,
+  "meals": 1124.333333333333,
+  "pupils": 2300,
+  "pop": 24713,
+  "children": 2796
+ },
+ "_years": {
+  "poverty": "2026",
+  "social": "2025",
+  "meals": "2025",
+  "pupils": "2025-2026",
+  "pop": "2026"
+ }
+}
