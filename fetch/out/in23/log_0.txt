@@ -1,0 +1,245 @@
+Ashoknagar ->  0
+Betul -> janpad panchayat betul zila betul 45
+Jabalpur ->  0
+Ujjain -> CEO Zila Panchayat Ujjain 2
+Balaghat -> Zilla Panchayat Balaghat 10
+Chhatarpur ->  0
+Harda ->  0
+Tikamgarh ->  0
+Mandsaur ->  0
+Morena -> District Project Officer Zila Panchayat, Morena 1
+Seoni ->  0
+Gwalior ->  0
+Katni ->  0
+Singrauli ->  0
+Mandla ->  0
+Datia ->  0
+Shahdol ->  0
+Solan ->  0
+Kullu ->  0
+Bilaspur ->  0
+Mandi ->  0
+Baramula ->  0
+Reasi ->  0
+Leh(Ladakh) ->  0
+Pulwama ->  0
+Udhampur ->  0
+Kupwara ->  0
+Kathua ->  0
+Daman ->  0
+Ahmadabad ->  0
+Vadodara ->  0
+Banas Kantha ->  0
+Narmada ->  0
+Rajkot ->  0
+Mahesana ->  0
+Gir Somnath ->  0
+Navsari ->  0
+Tapi ->  0
+Gandhinagar ->  0
+Panch Mahals ->  0
+Prakasam ->  0
+Visakhapatnam ->  0
+Srikakulam ->  0
+Vizianagaram ->  0
+Kadapa(YSR) ->  0
+Simdega ->  0
+Pashchimi Singhbhum ->  0
+Purbi Singhbhum ->  0
+Lohardaga ->  0
+Palamu ->  0
+Bokaro ->  0
+Ramgarh ->  0
+Pakur ->  0
+Purnia ->  0
+Gaya ->  0
+Nawada ->  0
+Muzaffarpur ->  0
+Jehanabad ->  0
+Vaishali ->  0
+Buxar ->  0
+Patna ->  0
+Samastipur ->  0
+Khagaria ->  0
+Purba Champaran ->  0
+Begusarai ->  0
+Gurgaon ->  0
+Panchkula ->  0
+Bhiwani ->  0
+Karnal ->  0
+Panipat ->  0
+Faridabad ->  0
+Rewari ->  0
+Chandigarh ->  0
+North  & Middle Andaman ->  0
+Lohit ->  0
+Changlang ->  0
+East Kameng ->  0
+Siang ->  0
+West Kameng ->  0
+Papum Pare ->  0
+Dhubri ->  0
+Tinsukia ->  0
+Dhemaji ->  0
+Lakhimpur ->  0
+Nagaon ->  0
+Kamrup -> Kamrup Metro ZP 1
+Sonitpur ->  0
+Kamrup Metropolitan ->  0
+Jorhat -> Jorhat Zilla Parishad 1
+Puducherry ->  0
+Kolasib ->  0
+Champhai ->  0
+Mamit ->  0
+Ukhrul ->  0
+Thoubal ->  0
+Imphal West ->  0
+Mokokchung ->  0
+Kohima ->  0
+Kiphire ->  0
+Khowai ->  0
+Dhalai ->  0
+Gomati ->  0
+Ribhoi ->  0
+South West Khasi Hills ->  0
+East Jaintia Hills ->  0
+North Garo Hills ->  0
+Mungeli ->  0
+Kabeerdham ->  0
+Dakshin Bastar Dantewada ->  0
+Kondagaon ->  0
+Surajpur ->  0
+Baloda Bazar ->  0
+Dhamtari -> CEO Zila Panchayat Dhamtari 7
+Jashpur -> Zila panchayat Jashpur 3
+Rajnandgaon -> ZILA PANCHAYAT RAJNANDGAON 52
+Almora ->  0
+Garhwal ->  0
+Tehri Garhwal ->  0
+Chamoli ->  0
+Pathanamthitta ->  0
+Kollam ->  0
+Kozhikode -> Kozhikode Jilla Varthakal 11338
+Palakkad ->  0
+Wayanad ->  0
+South District ->  0
+Nadia ->  0
+Kolkata ->  0
+Darjiling ->  0
+Purba Medinipur ->  0
+Birbhum -> MIS Cell Birbhum Zilla Parishad 6
+Puruliya ->  0
+Hugli ->  0
+Patiala ->  0
+Fatehgarh Sahib ->  0
+Amritsar ->  0
+Bathinda ->  0
+Moga ->  0
+Firozpur ->  0
+Sahibzada Ajit Singh Nagar ->  0
+Mysore ->  0
+Chikmagalur ->  0
+Dakshina Kannada -> Zilla Panchayat Dakshina Kannada 235
+Bijapur ->  0
+Dharwad ->  0
+Gulbarga ->  0
+Bagalkot -> ZILLA PANCHAYAT BAGALKOTE 8
+Bellary ->  0
+Tumkur ->  0
+Bangalore ->  0
+Ahmadnagar ->  0
+Nashik ->  0
+Kolhapur ->  0
+Parbhani ->  0
+Dhule ->  0
+Hingoli ->  0
+Amravati ->  0
+Wardha ->  0
+Gadchiroli ->  0
+Bhandara ->  0
+Thane -> Zilla Parishad Thane 198
+Mumbai Suburban ->  0
+Puri ->  0
+Koraput ->  0
+Jagatsinghapur ->  0
+Mayurbhanj ->  0
+Sambalpur ->  0
+Nayagarh ->  0
+Kalahandi ->  0
+Kendujhar ->  0
+Bhadrak ->  0
+Rayagada ->  0
+Jaisalmer ->  0
+Nagaur ->  0
+Jodhpur ->  0
+Pratapgarh ->  0
+Bundi ->  0
+Pali ->  0
+Bharatpur ->  0
+Udaipur ->  0
+Sirohi ->  0
+Thanjavur ->  0
+Tirunelveli ->  0
+Thiruvallur ->  0
+Theni ->  0
+Perambalur ->  0
+Dharmapuri ->  0
+Sambhal ->  0
+Bahraich ->  0
+Samli ->  0
+Aligarh ->  0
+Baghpat ->  0
+Bareilly ->  0
+Hardoi ->  0
+Shahjahanpur ->  0
+Pilibhit ->  0
+Firozabad ->  0
+Basti ->  0
+Azamgarh ->  0
+Ballia ->  0
+Siddharthnagar ->  0
+Kaushambi ->  0
+Pratapgarh ->  0
+Kanpur Dehat ->  0
+Mahoba ->  0
+Kushinagar ->  0
+Fatehpur ->  0
+Amethi ->  0
+Gautam Buddha Nagar ->  0
+Agra ->  0
+Vellore ->  0
+Viluppuram ->  0
+Thoothukkudi ->  0
+Jhansi ->  0
+Lalitpur ->  0
+Erode ->  0
+Jhalawar ->  0
+Dhaulpur ->  0
+Karauli ->  0
+Hydrabad ->  0
+Nizamabad ->  0
+Nalgonda ->  0
+Komaram Bheem ->  0
+Jagtial ->  0
+Rajanna Sircilla ->  0
+Khammam ->  0
+Warangal (U) ->  0
+Medchal ->  0
+Wanaparthy ->  0
+Namsai ->  0
+Charaideo ->  0
+Hojai ->  0
+Agar ->  0
+Tengnoupal ->  0
+Kakching ->  0
+New Delhi ->  0
+West ->  0
+North East ->  0
+Shahdara ->  0
+Paschim Barddhaman ->  0
+Mulugu ->  0
+Kamle ->  0
+Lower Siang ->  0
+Khawzawl ->  0
+Chengalputtu ->  0
+Tenkasi ->  0

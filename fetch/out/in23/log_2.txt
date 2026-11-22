@@ -1,0 +1,244 @@
+Chhindwara -> Nareshparteti Gondwana ID Jila Chhindwara 5
+Sehore ->  0
+Panna ->  0
+Dindori -> Chief Officer, Dindori Nagarpanchayat 2
+Satna ->  0
+Ratlam -> Zila Panchayat Ratlam MP 4
+Neemuch ->  0
+Dewas ->  0
+Sheopur ->  0
+Jhabua ->  0
+Umaria ->  0
+Dhar ->  0
+Alirajpur -> Zila Panchayat Alirajpur Development Work 54
+Rajgarh ->  0
+Shivpuri ->  0
+Anuppur ->  0
+Una ->  0
+Kinnaur ->  0
+Shimla ->  0
+Lahul & Spiti ->  0
+Anantnag ->  0
+Shupiyan ->  0
+Jammu ->  0
+Doda ->  0
+Ganderbal ->  0
+Punch ->  0
+Bandipore ->  0
+Kishtwar ->  0
+Bhavnagar ->  0
+Batod ->  0
+Sabar Kantha ->  0
+Anand ->  0
+Dohad ->  0
+The Dangs ->  0
+Bharuch ->  0
+Devbhumi Dwarka ->  0
+Jamnagar ->  0
+Valsad ->  0
+Morbi ->  0
+Dadra & Nagar Haveli ->  0
+East Godavari ->  0
+Chittoor ->  0
+Guntur ->  0
+West Godavari ->  0
+Saraikela-Kharsawan ->  0
+Khunti ->  0
+Chatra ->  0
+Giridih ->  0
+Godda ->  0
+Dumka ->  0
+Gumla ->  0
+Ranchi ->  0
+Bhagalpur ->  0
+Kishanganj ->  0
+Aurangabad ->  0
+Pashchim Champaran ->  0
+Sheikhpura ->  0
+Gopalganj ->  0
+Sheohar ->  0
+Supaul -> chhedan bihari panchayat malhani parkhandh supaul 9
+Darbhanga ->  0
+Rohtas ->  0
+Sitamarhi ->  0
+Jamui ->  0
+Katihar ->  0
+Palwal ->  0
+Jhajjar ->  0
+Sonipat ->  0
+Jind ->  0
+Fatehabad ->  0
+Hisar ->  0
+Ambala ->  0
+South Goa ->  0
+Nicobars ->  0
+Upper Subansiri ->  0
+Lower Subansiri ->  0
+Anjaw ->  0
+Kurung Kumey ->  0
+Tawang ->  0
+Nalbari ->  0
+Karimganj ->  0
+Chirang ->  0
+Karbi Anglong East ->  0
+Baksa ->  0
+Darrang ->  0
+Barpeta ->  0
+Golaghat ->  0
+Kokrajhar ->  0
+Karaikal ->  0
+Lunglei ->  0
+Saiha ->  0
+Aizawl ->  0
+Tamenglong ->  0
+Churachandpur ->  0
+Kangpokpi ->  0
+Tuensang ->  0
+Phek ->  0
+Zunheboto ->  0
+Peren ->  0
+West Tripura ->  0
+North Tripura ->  0
+South Garo Hills ->  0
+West Khasi Hills ->  0
+South West Garo Hills ->  0
+East Garo Hills ->  0
+Bastar ->  0
+Gariaband ->  0
+Uttar Bastar Kanker ->  0
+Balrampur ->  0
+Durg ->  0
+Raipur -> Zila-Panchayat RAIPUR 2
+Koriya ->  0
+Raigarh -> Zila Panchayat Raigarh 10
+Janjgir-Champa ->  0
+Dehradun ->  0
+Uttarkashi ->  0
+Rudraprayag ->  0
+Pithoragarh ->  0
+Kannur ->  0
+Ernakulam ->  0
+Idukki ->  0
+Thrissur ->  0
+Malappuram ->  0
+North District ->  0
+East District ->  0
+Murshidabad ->  0
+South Twenty Four Parganas ->  0
+Uttar Dinajpur ->  0
+North Twenty Four Parganas ->  0
+Bankura ->  0
+Paschim Medinipur ->  0
+Gurdaspur ->  0
+Kapurthala ->  0
+Mansa ->  0
+Ludhiana ->  0
+Muktsar ->  0
+Rupnagar ->  0
+Barnala ->  0
+Mandya ->  0
+Yadgir ->  0
+Haveri -> Haveri Zilla Panchayat 137
+Kolar ->  0
+Davanagere ->  0
+Chamarajanagar ->  0
+Udupi -> Zilla Panchayat Udupi 145
+Shimoga ->  0
+Bangalore Rural ->  0
+Koppal ->  0
+Washim ->  0
+Solapur -> Zilla Parishad Solapur 98
+Sindhudurg -> ZP SINDHUDURG 68
+Akola -> Akola Zp 39
+Nanded ->  0
+Sangli -> Zilla Parishad Sangli 4
+Gondiya ->  0
+Ratnagiri ->  0
+Buldana ->  0
+Raigarh ->  0
+Jalna ->  0
+Mumbai ->  0
+Subarnapur ->  0
+Debagarh ->  0
+Bargarh ->  0
+Khordha ->  0
+Baleshwar ->  0
+Dhenkanal ->  0
+Jajapur ->  0
+Kendrapara ->  0
+Sundargarh ->  0
+Jharsuguda ->  0
+Jhunjhunun ->  0
+Hanumangarh ->  0
+Ganganagar ->  0
+Bikaner ->  0
+Tonk ->  0
+Kota ->  0
+Ajmer ->  0
+Chittaurgarh ->  0
+Dausa ->  0
+Sivaganga ->  0
+Ramanathapuram ->  0
+Thiruvarur ->  0
+Tiruppur ->  0
+Madurai ->  0
+Karur ->  0
+Moradabad ->  0
+Kanshiram Nagar ->  0
+Sitapur ->  0
+Meerut ->  0
+Bijnor ->  0
+Rampur ->  0
+Etah ->  0
+Mahamaya Nagar ->  0
+Kannauj ->  0
+Jyotiba Phule Nagar ->  0
+Chitrakoot ->  0
+Lucknow ->  0
+Ambedkar Nagar ->  0
+Sant Ravidas Nagar (Bhadohi) ->  0
+Sant Kabir Nagar ->  0
+Varanasi ->  0
+Gonda ->  0
+Bara Banki ->  0
+Mirzapur ->  0
+Unnao ->  0
+Rae Bareli ->  0
+Muzaffarnagar ->  0
+Etawah ->  0
+Pudukkottai ->  0
+Nagapattinam ->  0
+Kanniyakumari ->  0
+Chandauli ->  0
+Sonbhadra ->  0
+Krishnagiri ->  0
+The Nilgiris ->  0
+Baran ->  0
+Banswara ->  0
+Bhadradri ->  0
+Karimnagar ->  0
+Rangareddy ->  0
+Adilabad ->  0
+Kamareddy ->  0
+Peddapalli ->  0
+Siddipet ->  0
+Warangal (R) ->  0
+Yadadri Bhongiri ->  0
+Jogulamba ->  0
+Tirap ->  0
+Kra Daadi ->  0
+Biswanath -> ZILLAPARISHAD BISWANATH 1
+South Salmara-Mankachar ->  0
+Noney ->  0
+Senapati ->  0
+North West ->  0
+South West ->  0
+North  ->  0
+Central ->  0
+Jhargram ->  0
+Narayanpet ->  0
+Pakke Kessang ->  0
+Leparada ->  0
+Saitual ->  0
+Ranipet ->  0
+Mayiladuthurai ->  0

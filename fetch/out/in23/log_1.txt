@@ -1,0 +1,245 @@
+Raisen ->  0
+Hoshangabad ->  0
+Narsimhapur ->  0
+Rewa ->  0
+Barwani -> CeO Zila Panchayat Barwani, MP 8
+Indore ->  0
+Sagar ->  0
+Guna ->  0
+Khargone (West Nimar) ->  0
+Bhind ->  0
+Khandwa (East Nimar) ->  0
+Damoh ->  0
+Sidhi ->  0
+Bhopal -> Zila Panchayat Bhopal 19
+Shajapur ->  0
+Burhanpur ->  0
+Vidisha ->  0
+Sirmaur ->  0
+Chamba ->  0
+Kangra ->  0
+Hamirpur ->  0
+Kulgam ->  0
+Rajouri ->  0
+Srinagar ->  0
+Ramban ->  0
+Badgam ->  0
+Samba ->  0
+Kargil ->  0
+Diu ->  0
+Chhota Udaipur ->  0
+Aravali ->  0
+Surendranagar ->  0
+Amreli ->  0
+Kachchh ->  0
+Patan ->  0
+Junagadh ->  0
+Surat ->  0
+Porbandar ->  0
+Mahisagar ->  0
+Kheda ->  0
+Krishna ->  0
+Sri Potti Sriramulu Nellore ->  0
+Kurnool ->  0
+Anantapur ->  0
+Jamtara ->  0
+Latehar ->  0
+Hazaribagh ->  0
+Kodarma ->  0
+Sahibganj ->  0
+Dhanbad ->  0
+Deoghar ->  0
+Garhwa ->  0
+Arwal ->  0
+Madhepura ->  0
+Banka -> Dj Saliya Banka jila Nandkishor Raj 21
+Araria ->  0
+Saran ->  0
+Saharsa ->  0
+Siwan ->  0
+Madhubani ->  0
+Bhojpur ->  0
+Kaimur (Bhabua) ->  0
+Munger ->  0
+Lakhisarai ->  0
+Nalanda ->  0
+Yamunanagar ->  0
+Mewat ->  0
+Kaithal ->  0
+Kurukshetra ->  0
+Mahendragarh ->  0
+Sirsa ->  0
+Rohtak ->  0
+North Goa ->  0
+South Andaman ->  0
+West Siang ->  0
+Longding ->  0
+Upper Siang ->  0
+Dibang Valley ->  0
+Lower Dibang Valley ->  0
+Goalpara ->  0
+Sivasagar ->  0
+Hailakandi ->  0
+Morigaon ->  0
+Bongaigaon ->  0
+Cachar ->  0
+Dibrugarh ->  0
+Udalguri ->  0
+Dima Hasao ->  0
+Yanam ->  0
+Mahe ->  0
+Lawngtlai ->  0
+Serchhip ->  0
+Chandel ->  0
+Bishnupur ->  0
+Imphal East ->  0
+Mon ->  0
+Longleng ->  0
+Wokha ->  0
+Dimapur ->  0
+Sipahijula ->  0
+Unokoti ->  0
+South Tripura ->  0
+East Khasi Hills ->  0
+West Garo Hills ->  0
+West Jaintia Hills ->  0
+Bemetra ->  0
+Bilaspur ->  0
+Sukma ->  0
+Surguja ->  0
+Narayanpur ->  0
+Bijapur ->  0
+Balod ->  0
+Korba ->  0
+Mahasamund ->  0
+Nainital ->  0
+Champawat ->  0
+Hardwar ->  0
+Bageshwar ->  0
+Udham Singh Nagar ->  0
+Alappuzha ->  0
+Kasaragod ->  0
+Kottayam ->  0
+Thiruvananthapuram ->  0
+Lakshadweep ->  0
+West District ->  0
+Dakshin Dinajpur ->  0
+Maldah ->  0
+Jalpaiguri ->  0
+Haora ->  0
+Barddhaman ->  0
+Koch Bihar ->  0
+Pathankot ->  0
+Tarn Taran ->  0
+Sangrur ->  0
+Faridkot ->  0
+Jalandhar ->  0
+Hoshiarpur ->  0
+Fazilka ->  0
+Shahid Bhagat Singh Nagar ->  0
+Chikkaballapura ->  0
+Chitradurga -> Zilla Panchayath Chitradurga Karnataka State 35
+Raichur -> ZP Raichur 2
+Uttara Kannada -> Zilla Panchayat Uttara Kannada 33
+Bidar ->  0
+Gadag -> ZILLA PANCHAYAT GADAG 53
+Hassan ->  0
+Kodagu -> Kodagu Zilla panchayat 75
+Belgaum ->  0
+Ramanagara -> Bengaluru South Zilla Panchayat, Ramanagara  75
+Latur ->  0
+Osmanabad ->  0
+Chandrapur ->  0
+Yavatmal ->  0
+Satara ->  0
+Pune ->  0
+Nandurbar -> Zilla Parishad Nandurbar 17
+Aurangabad ->  0
+Jalgaon ->  0
+Bid ->  0
+Palghar -> Zilla Parishad Palghar 338
+Nagpur ->  Zilla Parishad Nagpur | ZP Nagpur 106
+Anugul ->  0
+Nabarangapur ->  0
+Kandhamal ->  0
+Malkangiri ->  0
+Gajapati ->  0
+Cuttack ->  0
+Baudh ->  0
+Ganjam ->  0
+Nuapada -> Zilla Parishad Nuapada Odisha 14
+Balangir ->  0
+Sikar ->  0
+Barmer ->  0
+Churu ->  0
+Bhilwara ->  0
+Jaipur ->  0
+Rajsamand ->  0
+Dungarpur ->  0
+Jalor ->  0
+Ariyalur ->  0
+Tiruvannamalai ->  0
+Virudhunagar ->  0
+Tiruchirappalli ->  0
+Salem ->  0
+Dindigul ->  0
+Namakkal ->  0
+Budaun ->  0
+Hapur ->  0
+Shrawasti ->  0
+Bulandshahr ->  0
+Kheri ->  0
+Mathura ->  0
+Balrampur ->  0
+Farrukhabad ->  0
+Mainpuri ->  0
+Sultanpur ->  0
+Gorakhpur ->  0
+Faizabad ->  0
+Kanpur Nagar ->  0
+Auraiya ->  0
+Jalaun ->  0
+Hamirpur ->  0
+Jaunpur ->  0
+Mahrajganj ->  0
+Deoria ->  0
+Mau ->  0
+Ghaziabad ->  0
+Saharanpur ->  0
+Cuddalore ->  0
+Chennai ->  0
+Kancheepuram ->  0
+Allahabad ->  0
+Banda ->  0
+Ghazipur ->  0
+Coimbatore ->  0
+Alwar ->  0
+Sawai Madhopur ->  0
+Jangaon ->  0
+Mancherial ->  0
+Medak ->  0
+Nagarkurnool ->  0
+Nirmal ->  0
+Jayashankar ->  0
+Sangareddy ->  0
+Mahabubabad ->  0
+Suryapet ->  0
+Vikarabad ->  0
+Mahabubnagar ->  0
+East Siang ->  0
+Majuli ->  0
+Karbi Anglong West ->  0
+Pherzawl ->  0
+Kamjong ->  0
+Jiribam ->  0
+East ->  0
+South ->  0
+South East ->  0
+Alipurduar ->  0
+Kalimpong ->  0
+Niwari ->  0
+Shi Yomi ->  0
+Hnahthial ->  0
+Tirupathur ->  0
+Kallakurichi ->  0
+Gaurella Pendra Marwahi ->  0
