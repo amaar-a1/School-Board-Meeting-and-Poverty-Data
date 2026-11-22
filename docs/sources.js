@@ -69,6 +69,13 @@ window.SOURCES = [
     note: "Territory meeting counts come from the boards' YouTube channels, not CivicSearch, so they aren't directly comparable with the states' counts."
   },
   {
+    group: "Borders in disputed areas",
+    items: [
+      { title: "De facto control: Natural Earth's default view, which draws each area as part of the country that administers it", url: "https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/" }
+    ],
+    note: "Places are drawn where they are actually administered, not by claims, since claims overlap (in Kashmir, for example, India's, Pakistan's and China's). So Aksai Chin shows as part of China and Pakistan-administered Kashmir as part of Pakistan, though India claims both; Taiwan as a country of its own; Israel's local authorities in the West Bank settlements and the Golan Heights, which Israel administers, under Israel, with their status noted; and Abkhazia and South Ossetia, occupied by Russia and not administered by Georgia, in grey with no Georgian figures. Each country's note says where its borders are disputed."
+  },
+  {
     group: "Map (district borders)",
     items: [
       { title: "Grey outlines for countries the site doesn't cover: Natural Earth 1:50m admin-0 countries (public domain; data-prep/build_world.py)", url: "https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/" },
@@ -547,7 +554,7 @@ window.SOURCES = [
     items: [
       { title: "Poverty: NITI Aayog, National Multidimensional Poverty Index: A Progress Review 2023 (based on NFHS-5, 2019-21), each state's district table and chart of the headcount ratio", url: "https://www.niti.gov.in/sites/default/files/2023-08/India-National-Multidimentional-Poverty-Index-2023.pdf" },
       { title: "Population and states: English Wikipedia, “List of districts in India” (mostly Census 2011)", url: "https://en.wikipedia.org/wiki/List_of_districts_in_India" },
-      { title: "Borders: geoBoundaries (gbOpen) IND ADM1 and ADM2, simplified; districts placed in states by location. In Kashmir these follow India's claims (including Pakistan-administered areas and Aksai Chin)", url: "https://www.geoboundaries.org/" },
+      { title: "Borders: geoBoundaries (gbOpen) IND ADM1 and ADM2, simplified; districts placed in states by location. Jammu and Kashmir's and Ladakh's districts are clipped to the area India administers (Natural Earth 1:50m, India and the Siachen Glacier)", url: "https://www.geoboundaries.org/" },
       { title: "Meetings: each zila parishad's YouTube channel (in the “Meetings source” column), searched November 2026", url: "https://www.youtube.com/" }
     ],
     note: "Built by data-prep/prep_india.py and data-prep/build_latam.py (india). The report's district tables are read from the PDF by position; Bihar's and a few small states' come from their charts. Renamed and respelled districts are matched with a list of aliases; Charki Dadri and Jogulamba Gadwal, newer than the map, have no border of their own, and Warangal Rural and Urban share one (their mean is shown)."

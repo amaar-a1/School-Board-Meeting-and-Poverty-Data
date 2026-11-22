@@ -1829,10 +1829,6 @@ def india():
     rows = []
     for sid, x in ind.items():
         did = "IND-" + sid[-8:]
-        if x["name"] == "DATA NOT AVAILABLE":
-            rows.append({"District": "Aksai Chin", "Region": "Ladakh", "Poverty note": "Administered by China and claimed by India; no Indian figures", "School system": "Administered by China, claimed by India",
-                         "District ID": did, "_geo": True})
-            continue
         dens = x["pop"] / area[did] if x.get("pop") and area.get(did) else 0
         m = x.get("meetings") or {}
         n, titles = _in_meetings(m.get("videos", [])) if m.get("url") else (0, [])

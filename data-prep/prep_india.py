@@ -157,7 +157,7 @@ def population(path):
 
 
 def rnd(c):
-    return [rnd(x) for x in c] if isinstance(c[0], list) else [round(c[0], 3), round(c[1], 3)]
+    return [rnd(x) for x in c] if isinstance(c[0], (list, tuple)) else [round(c[0], 3), round(c[1], 3)]
 
 
 def main(pdf, wiki, geo5, meetdir=None):
@@ -174,9 +174,21 @@ def main(pdf, wiki, geo5, meetdir=None):
     if meetdir:
         import glob
         for f in glob.glob(os.path.join(meetdir, "in_meet_*.json")): meet.update(json.load(open(f, encoding="utf-8")))
+    # Borders follow de facto control: districts in Jammu and Kashmir and Ladakh are clipped to the area India administers
+    # (Natural Earth's India plus the Siachen Glacier), leaving Pakistan-administered Kashmir and China-administered Aksai Chin
+    # to those countries on the world map. Elsewhere geoBoundaries' finer borders are kept.
+    from shapely.geometry import mapping
+    from shapely.ops import unary_union
+    ne = [f for f in json.load(open(os.path.join(HERE, "inputs", "world", "ne_50m_admin_0_countries.geojson"), encoding="utf-8"))["features"] if f["properties"]["ADM0_A3"] in ("IND", "KAS")]
+    held = unary_union([shape(f["geometry"]).buffer(0) for f in ne])
     data, feats, nopop = {}, [], []
     for st, f in geo:
         sid = f["properties"]["shapeID"]; name = f["properties"]["shapeName"]
+        if name == "DATA NOT AVAILABLE": continue   # Aksai Chin: administered by China
+        if sk(st) in ("jammukashmir", "ladakh"):
+            g = shape(f["geometry"]).buffer(0).intersection(held)
+            if g.is_empty: continue
+            f = {**f, "geometry": mapping(g.buffer(0))}
         x = {"name": name, "state": unicodedata.normalize("NFKD", st).encode("ascii", "ignore").decode()}
         if sid in res:
             v = [r[2] for r in res[sid]]; x["mpi"] = round(sum(v) / len(v), 2)   # Warangal Rural and Urban share one border: their mean
