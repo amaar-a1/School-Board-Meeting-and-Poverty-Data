@@ -596,7 +596,7 @@
       `Meetings per 10,000 ${per}`, "Meetings per poverty point"];
     const cells = (name, s) => s.n ? [name, s.n.toLocaleString(), `${pct(s.shareWith)} (${s.nWith})`, fixed(s.avgMeetings, 2),
       s.nWith ? `${pct(s.povWith)} (${s.nWith})` : "none (0)", s.nWithout ? `${pct(s.povWithout)} (${s.nWithout})` : "none (0)",
-      fixed(s.per10k, 2), fixed(s.perPovPoint, 3)] : [name, "0", "–", "–", "–", "–", "–", "–"];
+      (isNaN(s.per10k) ? "no pupil counts" : fixed(s.per10k, 2)), fixed(s.perPovPoint, 3)] : [name, "0", "–", "–", "–", "–", "–", "–"];
     const fill = (table, gs, total) => {
       table.tHead.innerHTML = "";
       const hr = table.tHead.insertRow();
@@ -677,7 +677,7 @@
     const cols = ["Group", label[0].toUpperCase() + label.slice(1), "With meetings", "Avg meetings", "Poverty: with meetings", "Poverty: without",
       `Meetings per 10,000 ${per}`];
     const cells = (name, s) => s.n ? [name, s.n.toLocaleString(), `${pct(s.shareWith)} (${s.nWith})`, fixed(s.avgMeetings, 2),
-      s.nWith ? `${pct(s.povWith)} (${s.nWith})` : "none (0)", s.nWithout ? `${pct(s.povWithout)} (${s.nWithout})` : "none (0)", fixed(s.per10k, 2)]
+      s.nWith ? `${pct(s.povWith)} (${s.nWith})` : "none (0)", s.nWithout ? `${pct(s.povWithout)} (${s.nWithout})` : "none (0)", (isNaN(s.per10k) ? "no pupil counts" : fixed(s.per10k, 2))]
       : [name, "0", "–", "–", "–", "–", "–"];
     const fill = (table, gs, total, first) => {
       table.tHead.innerHTML = "";
@@ -855,7 +855,7 @@
       "Poverty: with meetings", "Poverty: without", "Meetings per 10,000 students", "Meetings per poverty point"];
     const cells = (name, rng, s) => s.n ? [name, rng, s.n.toLocaleString(), `${pct(s.shareWith)} (${s.nWith})`, fixed(s.avgMeetings, 2),
       s.nWith ? `${pct(s.povWith)} (${s.nWith})` : "none (0)", s.nWithout ? `${pct(s.povWithout)} (${s.nWithout})` : "none (0)",
-      fixed(s.per10k, 2), fixed(s.perPovPoint, 3)] : [name, rng, "0", "–", "–", "–", "–", "–", "–"];
+      (isNaN(s.per10k) ? "no pupil counts" : fixed(s.per10k, 2)), fixed(s.perPovPoint, 3)] : [name, rng, "0", "–", "–", "–", "–", "–", "–"];
     const table = $("size-table");
     table.tHead.innerHTML = "";
     const hr = table.tHead.insertRow();
