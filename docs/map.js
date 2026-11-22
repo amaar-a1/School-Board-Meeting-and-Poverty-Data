@@ -790,7 +790,7 @@
   // ---- Borders, loaded a country at a time --------------------------------------------------------
   // Each layer file is loaded when its country is the one shown or comes into view (data/map/index.json has each
   // file's bounding box), so a country's view doesn't hold every country's borders in memory.
-  let index = null, renderer = null;
+  let index = null, renderer = null, dotRenderer = null;
   const loadingLayers = {};
   const toFC = (name, t) => (!t ? { type: "FeatureCollection", features: [] } : t.type === "FeatureCollection" ? t : topojson.feature(t, t.objects[name]));
   function addLayer(name, t) {
@@ -949,7 +949,7 @@
         const big = polys.reduce((a, p) => (p[0].length > a[0].length ? p : a));
         c = L.latLngBounds(big[0].map(([x, y]) => [y, x])).getCenter();
       }
-      const dot = L.circleMarker(c, { renderer, radius: 5, weight: 1, color: "#333", fillOpacity: 0.85 }).addTo(map);
+      const dot = L.circleMarker(c, { renderer: dotRenderer, pane: "dots", radius: 5, weight: 1, color: "#333", fillOpacity: 0.85 }).addTo(map);
       dot.bindTooltip(() => tip(l.feature), { sticky: true });
       dot.on("click", (e) => { map.fitBounds(l.getBounds(), { maxZoom: 10 }); clickNote(l.feature, e.latlng); });
       islandDots.push({ dot, f: l.feature });
@@ -992,6 +992,10 @@
       subdomains: "abcd", maxZoom: 14, noWrap: true, bounds: WORLD
     }).addTo(map);
     renderer = L.canvas({ padding: 0.3 });
+    // Islands and small countries are circles drawn above every border (their own pane, over the canvas the
+    // districts share), so a country loaded later never covers them. SVG, so the pane only catches the circles.
+    map.createPane("dots").style.zIndex = 450;
+    dotRenderer = L.svg({ pane: "dots", padding: 0.3 });
     makeLayer = (fc) => L.geoJSON(fc, {
       renderer, style,
       onEachFeature: (f, l) => {
