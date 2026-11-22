@@ -1783,8 +1783,8 @@ def georgia():
     rows = []
     for did, x in ge.items():
         if x.get("occupied"):
-            rows.append({"District": x["name"], "Region": x["occupied"], "Population": "", "Poverty note": f"{x['occupied']}: outside the Georgian government's control; no Georgian figures",
-                         "School system": "Outside the Georgian government's control", "District ID": did, "_geo": did in area})
+            rows.append({"District": x["name"], "Region": x["occupied"], "Population": "", "Poverty note": f"{x['occupied']}: occupied by Russia (most countries consider the occupation illegal) and outside the Georgian government's control; no Georgian figures",
+                         "School system": "Occupied by Russia; outside the Georgian government's control", "District ID": did, "_geo": did in area})
             continue
         dens = x["pop"] / area[did] if x.get("pop") and area.get(did) else 0
         rate = 100 * x["tsa"] / x["pop"] if x.get("tsa") and x.get("pop") else None
