@@ -1,7 +1,7 @@
-# Round 24: India school-age children by district: WorldPop R2025A age structures (2025, 1 km, constrained),
+# Round 25 (round 24 plus coastal cells): India school-age children by district: WorldPop R2025A age structures (2025, 1 km, constrained),
 # summed over each district border (fetch/in_geo.json, the site's full-detail India districts).
 import os, json, subprocess, sys, zipfile, urllib.request
-OUT = "fetch/out/in24"; os.makedirs(OUT, exist_ok=True)
+OUT = "fetch/out/in25"; os.makedirs(OUT, exist_ok=True)
 log = open(f"{OUT}/log.txt", "a")
 def say(*a): log.write(" ".join(map(str, a)) + "\n"); log.flush()
 try:
@@ -34,6 +34,9 @@ for grp in ("00", "01", "05", "10", "15", "20"):
             if src.nodata is not None: a[a == src.nodata] = 0
             if grp == "00" and sex == "f":
                 lab = features.rasterize(((f["geometry"], k + 1) for k, f in enumerate(geo["features"])), out_shape=a.shape, transform=src.transform, fill=0, dtype="int32")
+                # Coastal cells whose centre is in the sea (Mumbai's, Chennai's): to the district whose border touches them.
+                lab2 = features.rasterize(((f["geometry"], k + 1) for k, f in enumerate(geo["features"])), out_shape=a.shape, transform=src.transform, fill=0, dtype="int32", all_touched=True)
+                lab = np.where(lab == 0, lab2, lab)
             s = np.bincount(lab.ravel(), weights=a.ravel(), minlength=len(ids) + 1)
             for k, i in enumerate(ids): res[i][f"{sex}{grp}"] = round(float(s[k + 1]), 1)
             say(n, "India total", round(float(s[1:].sum())), "outside districts", round(float(s[0])))
