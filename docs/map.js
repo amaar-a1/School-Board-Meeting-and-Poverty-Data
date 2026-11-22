@@ -215,6 +215,9 @@
     if (!(pop > 0)) return NaN;
     const land = toNumber(row["Land area (km²)"]);
     if (land > 0) return pop / land;
+    // Layers drawn with lighter borders when zoomed out: the area of the full-detail border (data-prep/map_index.py).
+    const hiArea = index && index._area && index._area[id];
+    if (hiArea > 0) return pop / hiArea;
     if (!areaById) {
       areaById = {};
       Object.values(layers).forEach((l) => l.eachLayer((f) => { if (f.feature) { const k = gid(f.feature); areaById[k] = (areaById[k] || 0) + geomArea(f.feature.geometry); } }));
@@ -902,7 +905,7 @@
   function ensureView() {
     if (!map || !index || !viewReady) return Promise.resolve();
     const b = map.getBounds().pad(0.2);
-    return loadLayers(Object.keys(index).filter((n) => n !== "_hi" && !loadingLayers[n] && layerInView(n, b))).then(updateDetail);
+    return loadLayers(Object.keys(index).filter((n) => n[0] !== "_" && !loadingLayers[n] && layerInView(n, b))).then(updateDetail);
   }
 
   // Two levels of detail: the most detailed borders (index._hi) are drawn simplified when zoomed out, and swapped for
