@@ -1,0 +1,735 @@
+District,District ID,Region
+Ashoknagar,IND-70501185,Madhya Pradesh
+Raisen,IND-45331548,Madhya Pradesh
+Chhindwara,IND-08240587,Madhya Pradesh
+Betul,IND-20423608,Madhya Pradesh
+Hoshangabad,IND-20251888,Madhya Pradesh
+Sehore,IND-97010345,Madhya Pradesh
+Jabalpur,IND-08126939,Madhya Pradesh
+Narsimhapur,IND-90392439,Madhya Pradesh
+Panna,IND-00692021,Madhya Pradesh
+Ujjain,IND-42589317,Madhya Pradesh
+Rewa,IND-16175613,Madhya Pradesh
+Dindori,IND-27346807,Madhya Pradesh
+Balaghat,IND-71591289,Madhya Pradesh
+Barwani,IND-65975951,Madhya Pradesh
+Satna,IND-08578419,Madhya Pradesh
+Chhatarpur,IND-18567330,Madhya Pradesh
+Indore,IND-21573267,Madhya Pradesh
+Ratlam,IND-83513630,Madhya Pradesh
+Harda,IND-22085415,Madhya Pradesh
+Sagar,IND-64775083,Madhya Pradesh
+Neemuch,IND-13035963,Madhya Pradesh
+Tikamgarh,IND-53393466,Madhya Pradesh
+Guna,IND-12717121,Madhya Pradesh
+Dewas,IND-46596470,Madhya Pradesh
+Mandsaur,IND-91785711,Madhya Pradesh
+Khargone (West Nimar),IND-35535995,Madhya Pradesh
+Sheopur,IND-00990321,Madhya Pradesh
+Morena,IND-14564708,Madhya Pradesh
+Bhind,IND-33428660,Madhya Pradesh
+Jhabua,IND-68724668,Madhya Pradesh
+Seoni,IND-05703540,Madhya Pradesh
+Khandwa (East Nimar),IND-11331008,Madhya Pradesh
+Umaria,IND-76522971,Madhya Pradesh
+Gwalior,IND-33723251,Madhya Pradesh
+Damoh,IND-73880839,Madhya Pradesh
+Dhar,IND-44505675,Madhya Pradesh
+Katni,IND-73717653,Madhya Pradesh
+Sidhi,IND-14455989,Madhya Pradesh
+Alirajpur,IND-44027544,Madhya Pradesh
+Singrauli,IND-51336341,Madhya Pradesh
+Bhopal,IND-49004073,Madhya Pradesh
+Rajgarh,IND-31010314,Madhya Pradesh
+Mandla,IND-24886024,Madhya Pradesh
+Shajapur,IND-86088156,Madhya Pradesh
+Shivpuri,IND-28496945,Madhya Pradesh
+Datia,IND-02091898,Madhya Pradesh
+Burhanpur,IND-01761063,Madhya Pradesh
+Anuppur,IND-64623139,Madhya Pradesh
+Shahdol,IND-76608295,Madhya Pradesh
+Vidisha,IND-18186186,Madhya Pradesh
+Una,IND-64015847,Himachal Pradesh
+Solan,IND-99021232,Himachal Pradesh
+Sirmaur,IND-10119774,Himachal Pradesh
+Kinnaur,IND-81829203,Himachal Pradesh
+Kullu,IND-78881707,Himachal Pradesh
+Chamba,IND-95532859,Himachal Pradesh
+Shimla,IND-28419507,Himachal Pradesh
+Bilaspur,IND-92289827,Himachal Pradesh
+Kangra,IND-52453823,Himachal Pradesh
+Lahul & Spiti,IND-93481950,Himachal Pradesh
+Mandi,IND-46933631,Himachal Pradesh
+Hamirpur,IND-62202704,Himachal Pradesh
+Anantnag,IND-36306469,Jammu and Kashmir
+Baramula,IND-89974292,Jammu and Kashmir
+Kulgam,IND-55385261,Jammu and Kashmir
+Shupiyan,IND-96764028,Jammu and Kashmir
+Reasi,IND-44604286,Jammu and Kashmir
+Rajouri,IND-11862788,Jammu and Kashmir
+Jammu,IND-67518692,Jammu and Kashmir
+Leh(Ladakh),IND-48666997,Ladakh
+Srinagar,IND-45995424,Jammu and Kashmir
+Doda,IND-28358161,Jammu and Kashmir
+Pulwama,IND-62315105,Jammu and Kashmir
+Ramban,IND-85225784,Jammu and Kashmir
+Ganderbal,IND-15877560,Jammu and Kashmir
+Udhampur,IND-00859310,Jammu and Kashmir
+Badgam,IND-76170788,Jammu and Kashmir
+Punch,IND-94032811,Jammu and Kashmir
+Kupwara,IND-49750399,Jammu and Kashmir
+Samba,IND-13424897,Jammu and Kashmir
+Bandipore,IND-80856133,Jammu and Kashmir
+Kathua,IND-55441225,Jammu and Kashmir
+Kargil,IND-95117076,Ladakh
+Kishtwar,IND-30922604,Jammu and Kashmir
+Daman,IND-19517641,Dadra and Nagar Haveli and Daman and Diu
+Diu,IND-10767766,Dadra and Nagar Haveli and Daman and Diu
+Bhavnagar,IND-74047240,Gujarat
+Ahmadabad,IND-81386565,Gujarat
+Chhota Udaipur,IND-60894674,Gujarat
+Batod,IND-55323596,Gujarat
+Vadodara,IND-11563565,Gujarat
+Aravali,IND-54383166,Gujarat
+Sabar Kantha,IND-25000613,Gujarat
+Banas Kantha,IND-60321344,Gujarat
+Surendranagar,IND-06475665,Gujarat
+Anand,IND-85511257,Gujarat
+Narmada,IND-55993508,Gujarat
+Amreli,IND-70294384,Gujarat
+Dohad,IND-99889534,Gujarat
+Rajkot,IND-05432705,Gujarat
+Kachchh,IND-82098572,Gujarat
+The Dangs,IND-17438029,Gujarat
+Mahesana,IND-95166840,Gujarat
+Patan,IND-53072341,Gujarat
+Bharuch,IND-85776584,Gujarat
+Gir Somnath,IND-56977273,Gujarat
+Junagadh,IND-46274136,Gujarat
+Devbhumi Dwarka,IND-54567803,Gujarat
+Navsari,IND-58882978,Gujarat
+Surat,IND-52494648,Gujarat
+Jamnagar,IND-06647638,Gujarat
+Tapi,IND-26815499,Gujarat
+Porbandar,IND-45851362,Gujarat
+Valsad,IND-06484775,Gujarat
+Gandhinagar,IND-65706860,Gujarat
+Mahisagar,IND-43426842,Gujarat
+Morbi,IND-52988715,Gujarat
+Panch Mahals,IND-01647323,Gujarat
+Kheda,IND-35416628,Gujarat
+Dadra & Nagar Haveli,IND-71579976,Dadra and Nagar Haveli and Daman and Diu
+Prakasam,IND-04846315,Andhra Pradesh
+Krishna,IND-73749911,Andhra Pradesh
+East Godavari,IND-15770556,Andhra Pradesh
+Visakhapatnam,IND-40235524,Andhra Pradesh
+Sri Potti Sriramulu Nellore,IND-97933343,Andhra Pradesh
+Chittoor,IND-14548132,Andhra Pradesh
+Srikakulam,IND-66069108,Andhra Pradesh
+Kurnool,IND-94137747,Andhra Pradesh
+Guntur,IND-88260561,Andhra Pradesh
+Vizianagaram,IND-06132718,Andhra Pradesh
+Anantapur,IND-71961643,Andhra Pradesh
+West Godavari,IND-46411952,Andhra Pradesh
+Kadapa(YSR),IND-28179340,Andhra Pradesh
+Jamtara,IND-32861377,Jharkhand
+Saraikela-Kharsawan,IND-40439236,Jharkhand
+Simdega,IND-95412161,Jharkhand
+Latehar,IND-50659673,Jharkhand
+Khunti,IND-63922025,Jharkhand
+Pashchimi Singhbhum,IND-04631193,Jharkhand
+Hazaribagh,IND-71856670,Jharkhand
+Chatra,IND-55875385,Jharkhand
+Purbi Singhbhum,IND-32305748,Jharkhand
+Kodarma,IND-68042348,Jharkhand
+Giridih,IND-69544465,Jharkhand
+Lohardaga,IND-51183692,Jharkhand
+Sahibganj,IND-75626253,Jharkhand
+Godda,IND-72287618,Jharkhand
+Palamu,IND-40865870,Jharkhand
+Dhanbad,IND-43365739,Jharkhand
+Dumka,IND-30191461,Jharkhand
+Bokaro,IND-22738302,Jharkhand
+Deoghar,IND-96507942,Jharkhand
+Gumla,IND-14857890,Jharkhand
+Ramgarh,IND-81040575,Jharkhand
+Garhwa,IND-79827032,Jharkhand
+Ranchi,IND-08543442,Jharkhand
+Pakur,IND-95840581,Jharkhand
+Arwal,IND-18137574,Bihar
+Bhagalpur,IND-27230182,Bihar
+Purnia,IND-49492865,Bihar
+Madhepura,IND-63114565,Bihar
+Kishanganj,IND-63805797,Bihar
+Gaya,IND-00208785,Bihar
+Banka,IND-25652088,Bihar
+Aurangabad,IND-39457044,Bihar
+Nawada,IND-00127334,Bihar
+Araria,IND-48385341,Bihar
+Pashchim Champaran,IND-99278073,Bihar
+Muzaffarpur,IND-88307630,Bihar
+Saran,IND-56317609,Bihar
+Sheikhpura,IND-16830072,Bihar
+Jehanabad,IND-91435637,Bihar
+Saharsa,IND-83727265,Bihar
+Gopalganj,IND-80696409,Bihar
+Vaishali,IND-17652173,Bihar
+Siwan,IND-16794334,Bihar
+Sheohar,IND-96993088,Bihar
+Buxar,IND-20360965,Bihar
+Madhubani,IND-80518633,Bihar
+Supaul,IND-62648247,Bihar
+Patna,IND-16645780,Bihar
+Bhojpur,IND-66081507,Bihar
+Darbhanga,IND-85477701,Bihar
+Samastipur,IND-49147330,Bihar
+Kaimur (Bhabua),IND-10352326,Bihar
+Rohtas,IND-49385696,Bihar
+Khagaria,IND-56356546,Bihar
+Munger,IND-76647207,Bihar
+Sitamarhi,IND-86388534,Bihar
+Purba Champaran,IND-55803526,Bihar
+Lakhisarai,IND-52129882,Bihar
+Jamui,IND-44866906,Bihar
+Begusarai,IND-00361016,Bihar
+Nalanda,IND-53289247,Bihar
+Katihar,IND-48084533,Bihar
+Gurgaon,IND-12983244,Haryana
+Yamunanagar,IND-36471502,Haryana
+Palwal,IND-79535368,Haryana
+Panchkula,IND-08630362,Haryana
+Mewat,IND-94369263,Haryana
+Jhajjar,IND-91137208,Haryana
+Bhiwani,IND-00584570,Haryana
+Kaithal,IND-01949699,Haryana
+Sonipat,IND-39643660,Haryana
+Karnal,IND-05394721,Haryana
+Kurukshetra,IND-20075529,Haryana
+Jind,IND-82783501,Haryana
+Panipat,IND-62040782,Haryana
+Mahendragarh,IND-07349718,Haryana
+Fatehabad,IND-92375508,Haryana
+Faridabad,IND-96154891,Haryana
+Sirsa,IND-72903805,Haryana
+Hisar,IND-85131019,Haryana
+Rewari,IND-27711505,Haryana
+Rohtak,IND-45944458,Haryana
+Ambala,IND-53851516,Haryana
+Chandigarh,IND-14259601,Chandigarh
+North Goa,IND-04044407,Goa
+South Goa,IND-39967753,Goa
+North  & Middle Andaman,IND-07540277,Andaman and Nicobar Islands
+South Andaman,IND-07937261,Andaman and Nicobar Islands
+Nicobars,IND-05211400,Andaman and Nicobar Islands
+Lohit,IND-91241172,Arunachal Pradesh
+West Siang,IND-75909869,Arunachal Pradesh
+Upper Subansiri,IND-09020934,Arunachal Pradesh
+Changlang,IND-49744242,Arunachal Pradesh
+Longding,IND-30000002,Arunachal Pradesh
+Lower Subansiri,IND-53845537,Arunachal Pradesh
+East Kameng,IND-61078086,Arunachal Pradesh
+Upper Siang,IND-58071350,Arunachal Pradesh
+Anjaw,IND-37000592,Arunachal Pradesh
+Siang,IND-87666425,Arunachal Pradesh
+Dibang Valley,IND-52780045,Arunachal Pradesh
+Kurung Kumey,IND-19461443,Arunachal Pradesh
+West Kameng,IND-52222315,Arunachal Pradesh
+Lower Dibang Valley,IND-30776316,Arunachal Pradesh
+Tawang,IND-17085772,Arunachal Pradesh
+Papum Pare,IND-05712757,Arunachal Pradesh
+Goalpara,IND-19248603,Assam
+Nalbari,IND-85026980,Assam
+Dhubri,IND-98628545,Assam
+Sivasagar,IND-77889516,Assam
+Karimganj,IND-76497025,Assam
+Tinsukia,IND-27783032,Assam
+Hailakandi,IND-27383755,Assam
+Chirang,IND-35339305,Assam
+Dhemaji,IND-63703739,Assam
+Morigaon,IND-19348564,Assam
+Karbi Anglong East,IND-95376745,Assam
+Lakhimpur,IND-42103654,Assam
+Bongaigaon,IND-09917345,Assam
+Baksa,IND-25175605,Assam
+Nagaon,IND-37070957,Assam
+Cachar,IND-50246712,Assam
+Darrang,IND-27593873,Assam
+Kamrup,IND-30790248,Assam
+Dibrugarh,IND-81663822,Assam
+Barpeta,IND-46709007,Assam
+Sonitpur,IND-96708834,Assam
+Udalguri,IND-18801538,Assam
+Golaghat,IND-85298440,Assam
+Kamrup Metropolitan,IND-28972906,Assam
+Dima Hasao,IND-02864966,Assam
+Kokrajhar,IND-70176940,Assam
+Jorhat,IND-93883930,Assam
+Yanam,IND-93975079,Andhra Pradesh
+Karaikal,IND-61588317,Puducherry
+Puducherry,IND-78326363,Puducherry
+Mahe,IND-69049488,Puducherry
+Lunglei,IND-80165555,Mizoram
+Kolasib,IND-81853016,Mizoram
+Lawngtlai,IND-07786180,Mizoram
+Saiha,IND-54415031,Mizoram
+Champhai,IND-41714099,Mizoram
+Serchhip,IND-68048033,Mizoram
+Aizawl,IND-23268864,Mizoram
+Mamit,IND-42344288,Mizoram
+Chandel,IND-17266389,Manipur
+Tamenglong,IND-56387892,Manipur
+Ukhrul,IND-72061408,Manipur
+Bishnupur,IND-63214152,Manipur
+Churachandpur,IND-26102213,Manipur
+Thoubal,IND-02080139,Manipur
+Imphal East,IND-59886340,Manipur
+Kangpokpi,IND-54019534,Manipur
+Imphal West,IND-50893733,Manipur
+Mon,IND-90346849,Nagaland
+Tuensang,IND-50002431,Nagaland
+Mokokchung,IND-15586362,Nagaland
+Longleng,IND-45144923,Nagaland
+Phek,IND-39953372,Nagaland
+Kohima,IND-86151110,Nagaland
+Wokha,IND-65807627,Nagaland
+Zunheboto,IND-52513003,Nagaland
+Kiphire,IND-43723360,Nagaland
+Dimapur,IND-47216737,Nagaland
+Peren,IND-09480221,Nagaland
+Khowai,IND-89012853,Tripura
+Sipahijula,IND-72582859,Tripura
+West Tripura,IND-84979956,Tripura
+Dhalai,IND-84683247,Tripura
+Unokoti,IND-03924950,Tripura
+North Tripura,IND-86587213,Tripura
+Gomati,IND-63611805,Tripura
+South Tripura,IND-45133340,Tripura
+South Garo Hills,IND-57313751,Meghalaya
+Ribhoi,IND-08114113,Meghalaya
+East Khasi Hills,IND-71500878,Meghalaya
+West Khasi Hills,IND-91534463,Meghalaya
+South West Khasi Hills,IND-20636500,Meghalaya
+West Garo Hills,IND-00293897,Meghalaya
+South West Garo Hills,IND-66328910,Meghalaya
+East Jaintia Hills,IND-77694103,Meghalaya
+West Jaintia Hills,IND-69201834,Meghalaya
+East Garo Hills,IND-23096970,Meghalaya
+North Garo Hills,IND-55556328,Meghalaya
+Bemetra,IND-05657091,Chhattisgarh
+Bastar,IND-93719460,Chhattisgarh
+Mungeli,IND-64941997,Chhattisgarh
+Bilaspur,IND-29079574,Chhattisgarh
+Gariaband,IND-37202124,Chhattisgarh
+Kabeerdham,IND-10234542,Chhattisgarh
+Sukma,IND-15271969,Chhattisgarh
+Uttar Bastar Kanker,IND-90628656,Chhattisgarh
+Dakshin Bastar Dantewada,IND-25820380,Chhattisgarh
+Surguja,IND-13780503,Chhattisgarh
+Balrampur,IND-81584747,Chhattisgarh
+Kondagaon,IND-00448811,Chhattisgarh
+Narayanpur,IND-85471283,Chhattisgarh
+Durg,IND-11864574,Chhattisgarh
+Surajpur,IND-93461805,Chhattisgarh
+Bijapur,IND-60152555,Chhattisgarh
+Raipur,IND-08962219,Chhattisgarh
+Baloda Bazar,IND-14631532,Chhattisgarh
+Balod,IND-85758701,Chhattisgarh
+Koriya,IND-99562140,Chhattisgarh
+Dhamtari,IND-50401862,Chhattisgarh
+Korba,IND-58641946,Chhattisgarh
+Raigarh,IND-57649043,Chhattisgarh
+Jashpur,IND-34827566,Chhattisgarh
+Mahasamund,IND-21355294,Chhattisgarh
+Janjgir-Champa,IND-27412636,Chhattisgarh
+Rajnandgaon,IND-56592153,Chhattisgarh
+Nainital,IND-27918374,Uttarakhand
+Dehradun,IND-08112053,Uttarakhand
+Almora,IND-07853309,Uttarakhand
+Champawat,IND-49808956,Uttarakhand
+Uttarkashi,IND-82724865,Uttarakhand
+Garhwal,IND-46855114,Uttarakhand
+Hardwar,IND-40460819,Uttarakhand
+Rudraprayag,IND-84763988,Uttarakhand
+Tehri Garhwal,IND-42989820,Uttarakhand
+Bageshwar,IND-23710469,Uttarakhand
+Pithoragarh,IND-71925520,Uttarakhand
+Chamoli,IND-09752120,Uttarakhand
+Udham Singh Nagar,IND-74070538,Uttarakhand
+Kannur,IND-79530466,Kerala
+Pathanamthitta,IND-52395581,Kerala
+Alappuzha,IND-64587575,Kerala
+Ernakulam,IND-39609062,Kerala
+Kollam,IND-93923933,Kerala
+Kasaragod,IND-45987285,Kerala
+Idukki,IND-59759016,Kerala
+Kozhikode,IND-31353014,Kerala
+Kottayam,IND-69508425,Kerala
+Thrissur,IND-28527555,Kerala
+Palakkad,IND-55782120,Kerala
+Thiruvananthapuram,IND-55176756,Kerala
+Malappuram,IND-10847920,Kerala
+Wayanad,IND-71173603,Kerala
+Lakshadweep,IND-29049356,Lakshadweep
+North District,IND-03826030,Sikkim
+South District,IND-19600482,Sikkim
+West District,IND-52629779,Sikkim
+East District,IND-10673366,Sikkim
+Nadia,IND-18115414,West Bengal
+Dakshin Dinajpur,IND-20506604,West Bengal
+Murshidabad,IND-32870635,West Bengal
+Kolkata,IND-08533064,West Bengal
+Maldah,IND-05131975,West Bengal
+South Twenty Four Parganas,IND-35426345,West Bengal
+Darjiling,IND-02371020,West Bengal
+Jalpaiguri,IND-23080987,West Bengal
+Uttar Dinajpur,IND-07143985,West Bengal
+Purba Medinipur,IND-78863054,West Bengal
+Haora,IND-62393417,West Bengal
+North Twenty Four Parganas,IND-64263910,West Bengal
+Birbhum,IND-45705922,West Bengal
+Barddhaman,IND-37940607,West Bengal
+Bankura,IND-85472650,West Bengal
+Puruliya,IND-73188243,West Bengal
+Koch Bihar,IND-47739715,West Bengal
+Paschim Medinipur,IND-50838807,West Bengal
+Hugli,IND-25777974,West Bengal
+Pathankot,IND-94725383,Punjab
+Gurdaspur,IND-31726928,Punjab
+Patiala,IND-11148513,Punjab
+Tarn Taran,IND-28494758,Punjab
+Kapurthala,IND-77904074,Punjab
+Fatehgarh Sahib,IND-05026025,Punjab
+Sangrur,IND-90264832,Punjab
+Mansa,IND-38690181,Punjab
+Amritsar,IND-45955058,Punjab
+Faridkot,IND-46017223,Punjab
+Ludhiana,IND-04843409,Punjab
+Bathinda,IND-82054894,Punjab
+Jalandhar,IND-72620495,Punjab
+Muktsar,IND-13016881,Punjab
+Moga,IND-72694083,Punjab
+Hoshiarpur,IND-84279129,Punjab
+Rupnagar,IND-00890118,Punjab
+Firozpur,IND-57708753,Punjab
+Fazilka,IND-13308870,Punjab
+Barnala,IND-71473194,Punjab
+Sahibzada Ajit Singh Nagar,IND-02963241,Punjab
+Shahid Bhagat Singh Nagar,IND-70113274,Punjab
+Mandya,IND-86553000,Karnataka
+Mysore,IND-08095476,Karnataka
+Chikkaballapura,IND-92204057,Karnataka
+Yadgir,IND-72855096,Karnataka
+Chikmagalur,IND-97205080,Karnataka
+Chitradurga,IND-61132413,Karnataka
+Haveri,IND-75299079,Karnataka
+Dakshina Kannada,IND-96829952,Karnataka
+Raichur,IND-80734793,Karnataka
+Kolar,IND-03538801,Karnataka
+Bijapur,IND-57052818,Karnataka
+Uttara Kannada,IND-73895456,Karnataka
+Davanagere,IND-93387243,Karnataka
+Dharwad,IND-79117636,Karnataka
+Bidar,IND-68259401,Karnataka
+Chamarajanagar,IND-56658675,Karnataka
+Gulbarga,IND-16608278,Karnataka
+Gadag,IND-68116377,Karnataka
+Udupi,IND-84447445,Karnataka
+Bagalkot,IND-80643229,Karnataka
+Hassan,IND-33755383,Karnataka
+Shimoga,IND-86560116,Karnataka
+Bellary,IND-59299479,Karnataka
+Kodagu,IND-83882472,Karnataka
+Bangalore Rural,IND-09668277,Karnataka
+Tumkur,IND-84636422,Karnataka
+Belgaum,IND-98136622,Karnataka
+Koppal,IND-45186231,Karnataka
+Bangalore,IND-48517269,Karnataka
+Ramanagara,IND-97037735,Karnataka
+Washim,IND-72845044,Maharashtra
+Ahmadnagar,IND-98970283,Maharashtra
+Latur,IND-40849249,Maharashtra
+Solapur,IND-00334729,Maharashtra
+Nashik,IND-57736049,Maharashtra
+Osmanabad,IND-66262371,Maharashtra
+Sindhudurg,IND-15774480,Maharashtra
+Kolhapur,IND-08763317,Maharashtra
+Chandrapur,IND-33028465,Maharashtra
+Akola,IND-35325851,Maharashtra
+Parbhani,IND-96170969,Maharashtra
+Yavatmal,IND-03412294,Maharashtra
+Nanded,IND-80004876,Maharashtra
+Dhule,IND-21013980,Maharashtra
+Satara,IND-86731267,Maharashtra
+Sangli,IND-58671522,Maharashtra
+Hingoli,IND-87513424,Maharashtra
+Pune,IND-51181380,Maharashtra
+Gondiya,IND-53784168,Maharashtra
+Amravati,IND-67309300,Maharashtra
+Nandurbar,IND-08285665,Maharashtra
+Ratnagiri,IND-03957680,Maharashtra
+Wardha,IND-72752374,Maharashtra
+Aurangabad,IND-94544563,Maharashtra
+Buldana,IND-05538438,Maharashtra
+Gadchiroli,IND-71695926,Maharashtra
+Jalgaon,IND-56838070,Maharashtra
+Raigarh,IND-02074414,Maharashtra
+Bhandara,IND-35342908,Maharashtra
+Bid,IND-06594478,Maharashtra
+Jalna,IND-81222870,Maharashtra
+Thane,IND-18903113,Maharashtra
+Palghar,IND-44536449,Maharashtra
+Mumbai,IND-13169750,Maharashtra
+Mumbai Suburban,IND-16655833,Maharashtra
+Nagpur,IND-18797185,Maharashtra
+Subarnapur,IND-09901047,Odisha
+Puri,IND-56583567,Odisha
+Anugul,IND-73304899,Odisha
+Debagarh,IND-52826710,Odisha
+Koraput,IND-48912370,Odisha
+Nabarangapur,IND-46327658,Odisha
+Bargarh,IND-94441458,Odisha
+Jagatsinghapur,IND-31695897,Odisha
+Kandhamal,IND-65946807,Odisha
+Khordha,IND-48445403,Odisha
+Mayurbhanj,IND-51275023,Odisha
+Malkangiri,IND-49021677,Odisha
+Baleshwar,IND-24102706,Odisha
+Sambalpur,IND-62351919,Odisha
+Gajapati,IND-59719990,Odisha
+Dhenkanal,IND-26596077,Odisha
+Nayagarh,IND-85699048,Odisha
+Cuttack,IND-59816811,Odisha
+Jajapur,IND-83767147,Odisha
+Kalahandi,IND-00975708,Odisha
+Baudh,IND-75641700,Odisha
+Kendrapara,IND-04707517,Odisha
+Kendujhar,IND-28511334,Odisha
+Ganjam,IND-42538351,Odisha
+Sundargarh,IND-85860104,Odisha
+Bhadrak,IND-78961083,Odisha
+Nuapada,IND-50475260,Odisha
+Jharsuguda,IND-59409313,Odisha
+Rayagada,IND-17372937,Odisha
+Balangir,IND-57448920,Odisha
+Jhunjhunun,IND-61305702,Rajasthan
+Jaisalmer,IND-85202492,Rajasthan
+Sikar,IND-36837048,Rajasthan
+Hanumangarh,IND-09913630,Rajasthan
+Nagaur,IND-60343942,Rajasthan
+Barmer,IND-61866405,Rajasthan
+Ganganagar,IND-72234594,Rajasthan
+Jodhpur,IND-42280102,Rajasthan
+Churu,IND-07357376,Rajasthan
+Bikaner,IND-56001726,Rajasthan
+Pratapgarh,IND-23798301,Rajasthan
+Bhilwara,IND-63686573,Rajasthan
+Tonk,IND-24756864,Rajasthan
+Bundi,IND-64931619,Rajasthan
+Jaipur,IND-11410447,Rajasthan
+Kota,IND-95476194,Rajasthan
+Pali,IND-09419210,Rajasthan
+Rajsamand,IND-55919544,Rajasthan
+Ajmer,IND-72390230,Rajasthan
+Bharatpur,IND-52747885,Rajasthan
+Dungarpur,IND-67451207,Rajasthan
+Chittaurgarh,IND-54065354,Rajasthan
+Udaipur,IND-23136185,Rajasthan
+Jalor,IND-56188335,Rajasthan
+Dausa,IND-71322123,Rajasthan
+Sirohi,IND-17697487,Rajasthan
+Ariyalur,IND-90752134,Tamil Nadu
+Sivaganga,IND-37847414,Tamil Nadu
+Thanjavur,IND-77656282,Tamil Nadu
+Tiruvannamalai,IND-58858457,Tamil Nadu
+Ramanathapuram,IND-99732681,Tamil Nadu
+Tirunelveli,IND-34516056,Tamil Nadu
+Virudhunagar,IND-12658911,Tamil Nadu
+Thiruvarur,IND-89356239,Tamil Nadu
+Thiruvallur,IND-31373253,Tamil Nadu
+Tiruchirappalli,IND-77589145,Tamil Nadu
+Tiruppur,IND-25942975,Tamil Nadu
+Theni,IND-14077232,Tamil Nadu
+Salem,IND-39744160,Tamil Nadu
+Madurai,IND-79235503,Tamil Nadu
+Perambalur,IND-81997546,Tamil Nadu
+Dindigul,IND-32621383,Tamil Nadu
+Karur,IND-18192159,Tamil Nadu
+Dharmapuri,IND-08419896,Tamil Nadu
+Namakkal,IND-64315362,Tamil Nadu
+Moradabad,IND-18363622,Uttar Pradesh
+Sambhal,IND-62765383,Uttar Pradesh
+Budaun,IND-68760735,Uttar Pradesh
+Kanshiram Nagar,IND-04807381,Uttar Pradesh
+Bahraich,IND-97499770,Uttar Pradesh
+Hapur,IND-61648652,Uttar Pradesh
+Sitapur,IND-98404381,Uttar Pradesh
+Samli,IND-81868600,Uttar Pradesh
+Shrawasti,IND-54589031,Uttar Pradesh
+Meerut,IND-00952464,Uttar Pradesh
+Aligarh,IND-99554879,Uttar Pradesh
+Bulandshahr,IND-82176343,Uttar Pradesh
+Bijnor,IND-61138054,Uttar Pradesh
+Baghpat,IND-76217915,Uttar Pradesh
+Kheri,IND-61129777,Uttar Pradesh
+Rampur,IND-08877369,Uttar Pradesh
+Bareilly,IND-47699730,Uttar Pradesh
+Mathura,IND-50653156,Uttar Pradesh
+Etah,IND-06434354,Uttar Pradesh
+Hardoi,IND-35254310,Uttar Pradesh
+Balrampur,IND-00929659,Uttar Pradesh
+Mahamaya Nagar,IND-07356913,Uttar Pradesh
+Shahjahanpur,IND-18529164,Uttar Pradesh
+Farrukhabad,IND-68713717,Uttar Pradesh
+Kannauj,IND-96849325,Uttar Pradesh
+Pilibhit,IND-03601852,Uttar Pradesh
+Mainpuri,IND-39394056,Uttar Pradesh
+Jyotiba Phule Nagar,IND-51307760,Uttar Pradesh
+Firozabad,IND-19747726,Uttar Pradesh
+Sultanpur,IND-88953603,Uttar Pradesh
+Chitrakoot,IND-63754801,Uttar Pradesh
+Basti,IND-44871057,Uttar Pradesh
+Gorakhpur,IND-77866964,Uttar Pradesh
+Lucknow,IND-35281620,Uttar Pradesh
+Azamgarh,IND-19155567,Uttar Pradesh
+Faizabad,IND-91189162,Uttar Pradesh
+Ambedkar Nagar,IND-59377699,Uttar Pradesh
+Ballia,IND-26250842,Uttar Pradesh
+Kanpur Nagar,IND-87943819,Uttar Pradesh
+Sant Ravidas Nagar (Bhadohi),IND-88456202,Uttar Pradesh
+Siddharthnagar,IND-97062120,Uttar Pradesh
+Auraiya,IND-06691661,Uttar Pradesh
+Sant Kabir Nagar,IND-51806726,Uttar Pradesh
+Kaushambi,IND-41301261,Uttar Pradesh
+Jalaun,IND-90978888,Uttar Pradesh
+Varanasi,IND-69120497,Uttar Pradesh
+Pratapgarh,IND-69792365,Uttar Pradesh
+Hamirpur,IND-70098470,Uttar Pradesh
+Gonda,IND-41452031,Uttar Pradesh
+Kanpur Dehat,IND-48876357,Uttar Pradesh
+Jaunpur,IND-49735713,Uttar Pradesh
+Bara Banki,IND-89340684,Uttar Pradesh
+Mahoba,IND-00419963,Uttar Pradesh
+Mahrajganj,IND-40319099,Uttar Pradesh
+Mirzapur,IND-75101734,Uttar Pradesh
+Kushinagar,IND-73511551,Uttar Pradesh
+Deoria,IND-71667984,Uttar Pradesh
+Unnao,IND-03243160,Uttar Pradesh
+Fatehpur,IND-97440629,Uttar Pradesh
+Mau,IND-39855224,Uttar Pradesh
+Rae Bareli,IND-84038879,Uttar Pradesh
+Amethi,IND-94104682,Uttar Pradesh
+Ghaziabad,IND-44044805,Uttar Pradesh
+Muzaffarnagar,IND-10355251,Uttar Pradesh
+Gautam Buddha Nagar,IND-89864078,Uttar Pradesh
+Saharanpur,IND-90510331,Uttar Pradesh
+Etawah,IND-38258239,Uttar Pradesh
+Agra,IND-91809198,Uttar Pradesh
+Cuddalore,IND-95333865,Tamil Nadu
+Pudukkottai,IND-97477352,Tamil Nadu
+Vellore,IND-64863010,Tamil Nadu
+Chennai,IND-97489955,Tamil Nadu
+Nagapattinam,IND-33485589,Tamil Nadu
+Viluppuram,IND-86962522,Tamil Nadu
+Kancheepuram,IND-89337946,Tamil Nadu
+Kanniyakumari,IND-41759805,Tamil Nadu
+Thoothukkudi,IND-81851990,Tamil Nadu
+Allahabad,IND-58457506,Uttar Pradesh
+Chandauli,IND-14951516,Uttar Pradesh
+Jhansi,IND-86060089,Uttar Pradesh
+Banda,IND-78029175,Uttar Pradesh
+Sonbhadra,IND-54769647,Uttar Pradesh
+Lalitpur,IND-92226816,Uttar Pradesh
+Ghazipur,IND-54954204,Uttar Pradesh
+Krishnagiri,IND-69663408,Tamil Nadu
+Erode,IND-68968545,Tamil Nadu
+Coimbatore,IND-04177348,Tamil Nadu
+The Nilgiris,IND-74124310,Tamil Nadu
+Jhalawar,IND-56836526,Rajasthan
+Alwar,IND-91558965,Rajasthan
+Baran,IND-64713511,Rajasthan
+Dhaulpur,IND-56093948,Rajasthan
+Sawai Madhopur,IND-28116492,Rajasthan
+Banswara,IND-88929219,Rajasthan
+Karauli,IND-28331411,Rajasthan
+Jangaon,IND-57583904,Telangana
+Bhadradri,IND-62498957,Telangana
+Hydrabad,IND-64211579,Telangana
+Mancherial,IND-54761164,Telangana
+Karimnagar,IND-76570569,Telangana
+Nizamabad,IND-75523243,Telangana
+Medak,IND-67441665,Telangana
+Rangareddy,IND-22938788,Telangana
+Nalgonda,IND-95882090,Telangana
+Nagarkurnool,IND-89674263,Telangana
+Adilabad,IND-09367879,Telangana
+Komaram Bheem,IND-96095315,Telangana
+Nirmal,IND-72436550,Telangana
+Kamareddy,IND-62878849,Telangana
+Jagtial,IND-25852429,Telangana
+Jayashankar,IND-04115131,Telangana
+Peddapalli,IND-14632193,Telangana
+Rajanna Sircilla,IND-97206517,Telangana
+Sangareddy,IND-60118262,Telangana
+Siddipet,IND-81432113,Telangana
+Khammam,IND-77519224,Telangana
+Mahabubabad,IND-81894983,Telangana
+Warangal (R),IND-71372360,Telangana
+Warangal (U),IND-26075805,Telangana
+Suryapet,IND-18908349,Telangana
+Yadadri Bhongiri,IND-20615002,Telangana
+Medchal,IND-10198347,Telangana
+Vikarabad,IND-42950962,Telangana
+Jogulamba,IND-20975835,Telangana
+Wanaparthy,IND-25943542,Telangana
+Mahabubnagar,IND-86574016,Telangana
+Tirap,IND-70633974,Arunachal Pradesh
+Namsai,IND-65515331,Arunachal Pradesh
+East Siang,IND-96822608,Arunachal Pradesh
+Kra Daadi,IND-83841645,Arunachal Pradesh
+Charaideo,IND-14823983,Assam
+Majuli,IND-01669242,Assam
+Biswanath,IND-85808093,Assam
+Hojai,IND-94619807,Assam
+Karbi Anglong West,IND-25790051,Assam
+South Salmara-Mankachar,IND-37622173,Assam
+Agar,IND-59389119,Madhya Pradesh
+Pherzawl,IND-58898830,Manipur
+Noney,IND-96191182,Manipur
+Tengnoupal,IND-76863813,Manipur
+Kamjong,IND-80293072,Manipur
+Senapati,IND-77176862,Manipur
+Kakching,IND-68215419,Manipur
+Jiribam,IND-02564500,Manipur
+North West,IND-70080255,Delhi
+New Delhi,IND-02014972,Delhi
+East,IND-33575946,Delhi
+South West,IND-19849111,Delhi
+West,IND-89579232,Delhi
+South,IND-74514948,Delhi
+North ,IND-98291616,Delhi
+North East,IND-25304286,Delhi
+South East,IND-36949169,Delhi
+Central,IND-24635761,Delhi
+Shahdara,IND-63387740,Delhi
+Alipurduar,IND-86755005,West Bengal
+Jhargram,IND-76740713,West Bengal
+Paschim Barddhaman,IND-63086042,West Bengal
+Kalimpong,IND-25839103,West Bengal
+Narayanpet,IND-75277413,Telangana
+Mulugu,IND-38505400,Telangana
+Niwari,IND-80038480,Madhya Pradesh
+Pakke Kessang,IND-17661394,Arunachal Pradesh
+Kamle,IND-96046456,Arunachal Pradesh
+Shi Yomi,IND-56537322,Arunachal Pradesh
+Leparada,IND-42967716,Arunachal Pradesh
+Lower Siang,IND-59380917,Arunachal Pradesh
+Hnahthial,IND-04311414,Mizoram
+Saitual,IND-14019241,Mizoram
+Khawzawl,IND-06511827,Mizoram
+Tirupathur,IND-91783632,Tamil Nadu
+Ranipet,IND-02928564,Tamil Nadu
+Chengalputtu,IND-34807148,Tamil Nadu
+Kallakurichi,IND-59035458,Tamil Nadu
+Mayiladuthurai,IND-36753619,Tamil Nadu
+Tenkasi,IND-63137530,Tamil Nadu
+Gaurella Pendra Marwahi,IND-90611533,Chhattisgarh
