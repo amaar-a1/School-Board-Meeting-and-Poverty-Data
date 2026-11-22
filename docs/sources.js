@@ -547,7 +547,7 @@ window.SOURCES = [
     items: [
       { title: "Poverty: NITI Aayog, National Multidimensional Poverty Index: A Progress Review 2023 (based on NFHS-5, 2019-21), each state's district table and chart of the headcount ratio", url: "https://www.niti.gov.in/sites/default/files/2023-08/India-National-Multidimentional-Poverty-Index-2023.pdf" },
       { title: "Population and states: English Wikipedia, “List of districts in India” (mostly Census 2011)", url: "https://en.wikipedia.org/wiki/List_of_districts_in_India" },
-      { title: "Borders: geoBoundaries (gbOpen) IND ADM1 and ADM2, simplified; districts placed in states by location", url: "https://www.geoboundaries.org/" },
+      { title: "Borders: geoBoundaries (gbOpen) IND ADM1 and ADM2, simplified; districts placed in states by location. In Kashmir these follow India's claims (including Pakistan-administered areas and Aksai Chin)", url: "https://www.geoboundaries.org/" },
       { title: "Meetings: each zila parishad's YouTube channel (in the “Meetings source” column), searched November 2026", url: "https://www.youtube.com/" }
     ],
     note: "Built by data-prep/prep_india.py and data-prep/build_latam.py (india). The report's district tables are read from the PDF by position; Bihar's and a few small states' come from their charts. Renamed and respelled districts are matched with a list of aliases; Charki Dadri and Jogulamba Gadwal, newer than the map, have no border of their own, and Warangal Rural and Urban share one (their mean is shown)."
