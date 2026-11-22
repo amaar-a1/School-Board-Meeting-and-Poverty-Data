@@ -1,7 +1,7 @@
-# Round 25 (round 24 plus coastal cells): India school-age children by district: WorldPop R2025A age structures (2025, 1 km, constrained),
+# Round 26: all ages (district population, 2025), as round 25: India school-age children by district: WorldPop R2025A age structures (2025, 1 km, constrained),
 # summed over each district border (fetch/in_geo.json, the site's full-detail India districts).
 import os, json, subprocess, sys, zipfile, urllib.request
-OUT = "fetch/out/in25"; os.makedirs(OUT, exist_ok=True)
+OUT = "fetch/out/in26"; os.makedirs(OUT, exist_ok=True)
 log = open(f"{OUT}/log.txt", "a")
 def say(*a): log.write(" ".join(map(str, a)) + "\n"); log.flush()
 try:
@@ -24,7 +24,7 @@ zf = zipfile.ZipFile(z); names = zf.namelist(); say("files:", names)
 geo = json.load(open("fetch/in_geo.json", encoding="utf-8"))
 ids = [f["properties"]["id"] for f in geo["features"]]
 res = {i: {} for i in ids}
-for grp in ("00", "01", "05", "10", "15", "20"):
+for grp in ["00", "01"] + [f"{a:02d}" for a in range(5, 85, 5)]:
     for sex in ("f", "m"):
         n = next((x for x in names if f"_{sex}_{grp}_" in x.lower() and x.endswith(".tif")), None)
         if not n: say("missing", sex, grp); continue
@@ -41,5 +41,5 @@ for grp in ("00", "01", "05", "10", "15", "20"):
             for k, i in enumerate(ids): res[i][f"{sex}{grp}"] = round(float(s[k + 1]), 1)
             say(n, "India total", round(float(s[1:].sum())), "outside districts", round(float(s[0])))
         os.remove(p)
-json.dump({"source": URL, "districts": res}, open(f"{OUT}/in_children_2025.json", "w"), indent=0)
+json.dump({"source": URL, "districts": res}, open(f"{OUT}/in_ages_2025.json", "w"), indent=0)
 say("done", len(res))
