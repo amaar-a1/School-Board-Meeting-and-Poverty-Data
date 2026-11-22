@@ -9,6 +9,7 @@
     (secondary), enrolment by county, 2024 (provisional); public and private schools together;
   pop, area: English Wikipedia, "Counties of Kenya" (2019 census population; area);
   meetings: the county assembly's YouTube channel (fetch/nyt.py, KE).
+Then, after build_latam.py, run data-prep/simplify_borders.sh (a lighter copy of the map file for zoomed-out views).
 Usage: python3 data-prep/prep_kenya.py RAWDIR GEODIR
 """
 import glob, html, json, os, re, subprocess, sys

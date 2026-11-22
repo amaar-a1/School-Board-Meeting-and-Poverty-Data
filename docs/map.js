@@ -215,6 +215,9 @@
     if (!(pop > 0)) return NaN;
     const land = toNumber(row["Land area (km²)"]);
     if (land > 0) return pop / land;
+    // Layers drawn with lighter borders when zoomed out: the area of the full-detail border (data-prep/map_index.py).
+    const hiArea = index && index._area && index._area[id];
+    if (hiArea > 0) return pop / hiArea;
     if (!areaById) {
       areaById = {};
       Object.values(layers).forEach((l) => l.eachLayer((f) => { if (f.feature) { const k = gid(f.feature); areaById[k] = (areaById[k] || 0) + geomArea(f.feature.geometry); } }));
@@ -783,7 +786,186 @@
     $("map-jump").value = name;
   }
 
-  function build(datasets, topo) {
+
+  // ---- Borders, loaded a country at a time --------------------------------------------------------
+  // Each layer file is loaded when its country is the one shown or comes into view (data/map/index.json has each
+  // file's bounding box), so a country's view doesn't hold every country's borders in memory.
+  let index = null, renderer = null;
+  const loadingLayers = {};
+  const toFC = (name, t) => (!t ? { type: "FeatureCollection", features: [] } : t.type === "FeatureCollection" ? t : topojson.feature(t, t.objects[name]));
+  function addLayer(name, t) {
+    const files = { [name]: toFC(name, t) };
+    if (name === "canada") {
+      // Yukon and Nunavut have no public board of their own (the territory runs most schools), so
+      // their territory-wide board shows in the main layer: the First Nation board, else the French one.
+      // Areas outside every board (e.g. Ontario's Far North) are map-only: they get a row here from
+      // their own properties, with the province-wide rate and 0 meetings, but no row in the data.
+      const caNames = ((window.SITE_CONFIG.dataFiles.find((d) => d.country === "CA") || {}).groups || {}).names || {};
+      // Their rank: where their rate falls among Canada's boards (marked as estimated).
+      const caVals = Object.values(lookup).filter((r) => /^CA-/.test(r["District ID"] || "")).map((r) => toNumber(r["Percentage of Children Ages 0-17 in Low Income"])).filter((v) => !isNaN(v));
+      const caRank = (v) => {
+        v = toNumber(v); if (isNaN(v) || !caVals.length) return "";
+        const lo = caVals.filter((x) => x < v).length, hi = caVals.filter((x) => x <= v).length;
+        return String(Math.round(((lo + hi) / 2) / caVals.length * 100));
+      };
+      files.canada.features.filter((f) => f.properties.pseudo).forEach((f) => {
+        const p = f.properties, prov = caNames[p.province] || p.province;
+        lookup[gid(f)] = { District: `Rest of ${prov} (no school board)`, Province: prov, "Board type": "No school board", pseudo: true, own: !!p.own,
+          Population: p.pop ?? "", "People per km² (estimated)": p.pop && p.land ? Math.round(10 * p.pop / p.land) / 10 : "",
+          Locale: "Rural",   // the Far North, national parks and reserves
+          "Poverty rank in country": caRank(p.pct), _rankEst: caRank(p.pct) !== "",
+          "Percentage of Children Ages 0-17 in Low Income": p.pct ?? "", "Available Board Meetings": 0,
+          "How poverty was calculated": `Not a school board: the part of ${prov} outside every public board's border` +
+            (p.province === "ON" ? ", mostly the Far North (unorganized land and First Nations reserves, whose schools are run by First Nations or small school authorities)"
+              : p.province === "AB" ? ", mostly national parks (Wood Buffalo, Jasper, Banff) and First Nations reserves" : "") +
+            (p.own ? `. Its rate is from the census areas inside it (${Number(p.kids).toLocaleString()} children; reserves have no low-income figures, so it mostly covers unorganized areas)`
+              : `. Shown with ${prov}'s province-wide rate`) + `; 0 meetings. It isn't counted in ${prov}'s data` };
+      });
+      const caRows = files.canada.features.map((f) => lookup[gid(f)]).filter(Boolean);
+      const hasMain = new Set(caRows.filter(caMainRow).map((r) => r.Province));
+      const stand = {};
+      caRows.filter((r) => !hasMain.has(r.Province)).forEach((r) => {
+        const cur = stand[r.Province];
+        if (!cur || (cur["Board type"] === "Francophone" && r["Board type"] !== "Francophone")) stand[r.Province] = r;
+      });
+      const caMain = (f) => { const r = lookup[gid(f)]; return caMainRow(r) || (!!r && stand[r.Province] === r); };
+      files.canada2 = { type: "FeatureCollection", features: files.canada.features.filter((f) => !caMain(f)) };
+      files.canada.features = files.canada.features.filter(caMain);
+      layers.canada2 = makeLayer(files.canada2);
+      if ($("map-canada-overlap") && $("map-canada-overlap").checked) layers.canada2.addTo(map);
+      register("canada2");
+    }
+    if (name === "france") {
+      // France: each département's communes with no published poverty rate, drawn together (map only), with the
+      // département's rate.
+      const frRank = {};   // each département's average commune rank, for the rank colours
+      Object.values(lookup).forEach((r) => {
+        if (!/^FRA-/.test(r["District ID"] || "") || String(r["Poverty rank in country"] ?? "") === "") return;
+        const k = r.Region; frRank[k] = frRank[k] || [0, 0]; frRank[k][0] += Number(r["Poverty rank in country"]); frRank[k][1]++;
+      });
+      (files.france ? files.france.features : []).filter((f) => f.properties.pseudo).forEach((f) => {
+        const p = f.properties, rk = frRank[p.dep];
+        lookup[gid(f)] = { District: `Smaller communes of ${p.dep}`, Region: p.dep, pseudo: true, "Available Board Meetings": 0, Locale: "Rural",
+          Population: p.pop ?? "",   // its density: these communes' people over their land together
+          "Poverty rate (all ages)": p.pct ?? "", "Child poverty rate (département)": p.child ?? "",
+          "Poverty rank in country": rk ? String(Math.round(rk[0] / rk[1])) : "", _rankEst: !!rk,
+          "Map note": `${Number(p.communes).toLocaleString()} communes (${Number(p.pop).toLocaleString()} people) that INSEE publishes no poverty rate for, as they have too few households; shown with ${p.dep}'s rate, and not counted in France's data` };
+      });
+    }
+    const fc = files[name];
+    // Puerto Rico's border is in the unified-district file; the other territories use the territory outlines.
+    if (name === "territories") fc.features = fc.features.filter((f) => f.properties.GEOID !== "7200030");
+    else if (!name.startsWith("canada")) fc.features = fc.features.filter((f) => !/^(60|66|69|78)/.test(String(f.properties.GEOID || "")));
+    layers[name] = makeLayer(fc);
+    if (name !== "scsd" || ($("map-secondary") && $("map-secondary").checked)) layers[name].addTo(map);
+    // France's groups of small communes go underneath: their simplified borders overlap the larger communes' edges,
+    // which should answer the mouse there.
+    if (name === "france") layers.france.eachLayer((l) => { if (/^FRA-REST-/.test(gid(l.feature))) l.bringToBack(); });
+    if (name === "islands") ISLANDS_DOTS();
+    if (name === "spm") SPM_LABEL();
+    areaById = null;
+    if (name !== "world") register(name);
+  }
+
+  // The layer files a district's ID lives in.
+  function layersForId(id) {
+    id = String(id || "");
+    const e = euOf(id);
+    if (e) return [EU[e]];
+    if (/^CA-/.test(id)) return ["canada", "canada-fn"];
+    if (/^UK-/.test(id)) return ["uk"];
+    if (/^IE-/.test(id)) return ["ireland"];
+    if (/^FR-/.test(id)) return ["spm"];
+    return ["unsd", "elsd", "scsd", "territories"];
+  }
+  // The layer files a data set's own view needs, whatever is on screen.
+  function layersForView(ds) {
+    if (!ds || ds.combined) return [];
+    const c = ds.country || (ds.parent && ds.parent.country);
+    if (!c) return ds.state === "territories" ? ["territories", "unsd"] : ["unsd", "elsd", "scsd", "territories"];
+    return layersForId(`${c}-x`).concat(c === "CA" ? [] : []);
+  }
+  function loadLayers(names) {
+    const todo = [...new Set(names)].filter((n) => n && n !== "world" && n !== "france-small" && n !== "canada2" && LAYERS.includes(n));
+    const fresh = todo.filter((n) => !loadingLayers[n]);
+    if (fresh.length) $("map-status").textContent = "Loading borders…";
+    fresh.forEach((n) => {
+      loadingLayers[n] = fetch(`data/map/${n}.json`).then((r) => (r.ok ? r.json() : null))
+        .then((t) => { if (t) addLayer(n, t); }).catch((e) => console.error("map layer", n, e));
+    });
+    return Promise.all(todo.map((n) => loadingLayers[n])).then(() => {
+      if (fresh.length) { $("map-status").textContent = ""; restyle(); setSecondary(); }
+    });
+  }
+  // Loads the borders of every country now in view (a little beyond its edges).
+  let viewReady = false;   // not before the first zoom to the data set: the map starts on the whole world
+  // Each layer has a list of boxes (the 10-degree cells it has land in); an older index has one box.
+  const boxes = (v) => (Array.isArray(v[0]) ? v : [v]);
+  const layerInView = (n, b) => !!index[n] && boxes(index[n]).some((c) => L.latLngBounds([[c[1], c[0]], [c[3], c[2]]]).intersects(b));
+  function ensureView() {
+    if (!map || !index || !viewReady) return Promise.resolve();
+    const b = map.getBounds().pad(0.2);
+    return loadLayers(Object.keys(index).filter((n) => n[0] !== "_" && !loadingLayers[n] && layerInView(n, b))).then(updateDetail);
+  }
+
+  // Two levels of detail: the most detailed borders (index._hi) are drawn simplified when zoomed out, and swapped for
+  // their full detail (<name>-hi.json) when zoomed in on them; zooming back out swaps the light ones back, freeing it.
+  const HI_ZOOM = 7, LO_ZOOM = 6;
+  const detail = {}, swapping = {};
+  function updateDetail() {
+    if (!map || !index || !index._hi || !viewReady) return;
+    const z = map.getZoom(), b = map.getBounds();
+    index._hi.forEach((n) => {
+      if (!layers[n] || swapping[n]) return;
+      const now = detail[n] || "lo";
+      const want = z >= HI_ZOOM && layerInView(n, b) ? "hi" : z < LO_ZOOM || !layerInView(n, b.pad(0.5)) ? "lo" : now;
+      if (want !== now) swapDetail(n, want);
+    });
+  }
+  function swapDetail(n, level) {
+    swapping[n] = true;
+    if (level === "hi") $("map-status").textContent = "Loading detailed borders…";
+    return fetch(`data/map/${n}${level === "hi" ? "-hi" : ""}.json`).then((r) => (r.ok ? r.json() : null)).then((t) => {
+      swapping[n] = false;
+      if ($("map-status").textContent === "Loading detailed borders…") $("map-status").textContent = "";
+      if (!t) return;
+      // The layer (and, for Canada, its overlapping boards) leaves the map and the search entries; the new one joins.
+      const old = [layers[n]].concat(n === "canada" && layers.canada2 ? [layers.canada2] : []).filter(Boolean);
+      const gone = new Set();
+      old.forEach((o) => { o.eachLayer((l) => gone.add(l)); o.remove(); });
+      byId.forEach((g) => { if (g.layers.some((l) => gone.has(l))) g.layers = g.layers.filter((l) => !gone.has(l)); });
+      addLayer(n, t);
+      detail[n] = level;
+      updateDetail();   // in case the view moved meanwhile
+    }).catch((e) => { swapping[n] = false; console.error("map detail", n, e); });
+  }
+
+  function ISLANDS_DOTS() {
+    layers.islands.eachLayer((l) => {
+      // Countries across the date line (Fiji, Kiribati): centre on the largest island instead.
+      let c = l.getBounds().getCenter();
+      if (l.getBounds().getEast() - l.getBounds().getWest() > 180) {
+        const g = l.feature.geometry, polys = g.type === "MultiPolygon" ? g.coordinates : [g.coordinates];
+        const big = polys.reduce((a, p) => (p[0].length > a[0].length ? p : a));
+        c = L.latLngBounds(big[0].map(([x, y]) => [y, x])).getCenter();
+      }
+      const dot = L.circleMarker(c, { renderer, radius: 5, weight: 1, color: "#333", fillOpacity: 0.85 }).addTo(map);
+      dot.bindTooltip(() => tip(l.feature), { sticky: true });
+      dot.on("click", (e) => { map.fitBounds(l.getBounds(), { maxZoom: 10 }); clickNote(l.feature, e.latlng); });
+      islandDots.push({ dot, f: l.feature });
+    });
+    // Saint-Pierre-et-Miquelon is tiny and has no poverty figure, so a label keeps its meeting count visible.
+  }
+  function SPM_LABEL() {
+    const spmRow = lookup["FR-SPM"];
+    if (spmRow && layers.spm && layers.spm.getLayers().length) {
+      const n = toNumber(spmRow["Available Board Meetings"]);
+      spmLabel = L.marker(layers.spm.getBounds().getCenter(), { interactive: false, keyboard: false,
+        icon: L.divIcon({ className: "map-label", html: `Saint-Pierre-et-Miquelon<br><b>${isNaN(n) ? 0 : n} meetings</b> (Territorial Council)`, iconSize: [190, 34], iconAnchor: [-14, 17] }) });
+    }
+  }
+
+  function build(datasets, worldFile) {
     lookup = {};
     datasets.forEach((ds) => ds.rows.forEach((r) => {
       if (r["District ID"]) lookup[r["District ID"]] = r;
@@ -809,62 +991,7 @@
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
       subdomains: "abcd", maxZoom: 14, noWrap: true, bounds: WORLD
     }).addTo(map);
-    const renderer = L.canvas({ padding: 0.3 });
-    const files = {};
-    LAYERS.forEach((name, i) => {
-      const t = topo[i];
-      files[name] = !t ? { type: "FeatureCollection", features: [] } : t.type === "FeatureCollection" ? t : topojson.feature(t, t.objects[name]);
-    });
-    // Yukon and Nunavut have no public board of their own (the territory runs most schools), so
-    // their territory-wide board shows in the main layer: the First Nation board, else the French one.
-    // Areas outside every board (e.g. Ontario's Far North) are map-only: they get a row here from
-    // their own properties, with the province-wide rate and 0 meetings, but no row in the data.
-    const caNames = ((window.SITE_CONFIG.dataFiles.find((d) => d.country === "CA") || {}).groups || {}).names || {};
-    // Their rank: where their rate falls among Canada's boards (marked as estimated).
-    const caVals = Object.values(lookup).filter((r) => /^CA-/.test(r["District ID"] || "")).map((r) => toNumber(r["Percentage of Children Ages 0-17 in Low Income"])).filter((v) => !isNaN(v));
-    const caRank = (v) => {
-      v = toNumber(v); if (isNaN(v) || !caVals.length) return "";
-      const lo = caVals.filter((x) => x < v).length, hi = caVals.filter((x) => x <= v).length;
-      return String(Math.round(((lo + hi) / 2) / caVals.length * 100));
-    };
-    files.canada.features.filter((f) => f.properties.pseudo).forEach((f) => {
-      const p = f.properties, prov = caNames[p.province] || p.province;
-      lookup[gid(f)] = { District: `Rest of ${prov} (no school board)`, Province: prov, "Board type": "No school board", pseudo: true, own: !!p.own,
-        Population: p.pop ?? "", "People per km² (estimated)": p.pop && p.land ? Math.round(10 * p.pop / p.land) / 10 : "",
-        Locale: "Rural",   // the Far North, national parks and reserves
-        "Poverty rank in country": caRank(p.pct), _rankEst: caRank(p.pct) !== "",
-        "Percentage of Children Ages 0-17 in Low Income": p.pct ?? "", "Available Board Meetings": 0,
-        "How poverty was calculated": `Not a school board: the part of ${prov} outside every public board's border` +
-          (p.province === "ON" ? ", mostly the Far North (unorganized land and First Nations reserves, whose schools are run by First Nations or small school authorities)"
-            : p.province === "AB" ? ", mostly national parks (Wood Buffalo, Jasper, Banff) and First Nations reserves" : "") +
-          (p.own ? `. Its rate is from the census areas inside it (${Number(p.kids).toLocaleString()} children; reserves have no low-income figures, so it mostly covers unorganized areas)`
-            : `. Shown with ${prov}'s province-wide rate`) + `; 0 meetings. It isn't counted in ${prov}'s data` };
-    });
-    // France: each département's communes with no published poverty rate, drawn together (map only), with the
-    // département's rate.
-    const frRank = {};   // each département's average commune rank, for the rank colours
-    Object.values(lookup).forEach((r) => {
-      if (!/^FRA-/.test(r["District ID"] || "") || String(r["Poverty rank in country"] ?? "") === "") return;
-      const k = r.Region; frRank[k] = frRank[k] || [0, 0]; frRank[k][0] += Number(r["Poverty rank in country"]); frRank[k][1]++;
-    });
-    (files.france ? files.france.features : []).filter((f) => f.properties.pseudo).forEach((f) => {
-      const p = f.properties, rk = frRank[p.dep];
-      lookup[gid(f)] = { District: `Smaller communes of ${p.dep}`, Region: p.dep, pseudo: true, "Available Board Meetings": 0, Locale: "Rural",
-        Population: p.pop ?? "",   // its density: these communes' people over their land together
-        "Poverty rate (all ages)": p.pct ?? "", "Child poverty rate (département)": p.child ?? "",
-        "Poverty rank in country": rk ? String(Math.round(rk[0] / rk[1])) : "", _rankEst: !!rk,
-        "Map note": `${Number(p.communes).toLocaleString()} communes (${Number(p.pop).toLocaleString()} people) that INSEE publishes no poverty rate for, as they have too few households; shown with ${p.dep}'s rate, and not counted in France's data` };
-    });
-    const caRows = files.canada.features.map((f) => lookup[gid(f)]).filter(Boolean);
-    const hasMain = new Set(caRows.filter(caMainRow).map((r) => r.Province));
-    const stand = {};
-    caRows.filter((r) => !hasMain.has(r.Province)).forEach((r) => {
-      const cur = stand[r.Province];
-      if (!cur || (cur["Board type"] === "Francophone" && r["Board type"] !== "Francophone")) stand[r.Province] = r;
-    });
-    const caMain = (f) => { const r = lookup[gid(f)]; return caMainRow(r) || (!!r && stand[r.Province] === r); };
-    files.canada2 = { type: "FeatureCollection", features: files.canada.features.filter((f) => !caMain(f)) };
-    files.canada.features = files.canada.features.filter(caMain);
+    renderer = L.canvas({ padding: 0.3 });
     makeLayer = (fc) => L.geoJSON(fc, {
       renderer, style,
       onEachFeature: (f, l) => {
@@ -874,45 +1001,8 @@
         l.on("mouseout", () => l.setStyle(style(f)));
       }
     });
-    DRAW.forEach((name) => {
-      const fc = files[name];
-      // Puerto Rico's border is in the unified-district file; the other territories use the territory outlines.
-      if (name === "territories") fc.features = fc.features.filter((f) => f.properties.GEOID !== "7200030");
-      else if (!name.startsWith("canada")) fc.features = fc.features.filter((f) => !/^(60|66|69|78)/.test(f.properties.GEOID));
-      layers[name] = L.geoJSON(fc, {
-        renderer, style,
-        onEachFeature: (f, l) => {
-          l.bindTooltip(() => tip(f), { sticky: true });
-          l.on("click", (e) => { map.fitBounds(l.getBounds(), { maxZoom: 11 }); clickNote(f, e.latlng); });
-          l.on("mouseover", () => l.setStyle({ weight: 2, color: "#111", opacity: 1 }));
-          l.on("mouseout", () => l.setStyle(style(f)));
-        }
-      });
-      if (name !== "scsd" && name !== "canada2") layers[name].addTo(map);
-    });
-    // France's groups of small communes go underneath: their simplified borders overlap the larger communes' edges,
-    // which should answer the mouse there.
-    if (layers.france) layers.france.eachLayer((l) => { if (/^FRA-REST-/.test(gid(l.feature))) l.bringToBack(); });
-    if (layers.islands) layers.islands.eachLayer((l) => {
-      // Countries across the date line (Fiji, Kiribati): centre on the largest island instead.
-      let c = l.getBounds().getCenter();
-      if (l.getBounds().getEast() - l.getBounds().getWest() > 180) {
-        const g = l.feature.geometry, polys = g.type === "MultiPolygon" ? g.coordinates : [g.coordinates];
-        const big = polys.reduce((a, p) => (p[0].length > a[0].length ? p : a));
-        c = L.latLngBounds(big[0].map(([x, y]) => [y, x])).getCenter();
-      }
-      const dot = L.circleMarker(c, { renderer, radius: 5, weight: 1, color: "#333", fillOpacity: 0.85 }).addTo(map);
-      dot.bindTooltip(() => tip(l.feature), { sticky: true });
-      dot.on("click", (e) => { map.fitBounds(l.getBounds(), { maxZoom: 10 }); clickNote(l.feature, e.latlng); });
-      islandDots.push({ dot, f: l.feature });
-    });
-    // Saint-Pierre-et-Miquelon is tiny and has no poverty figure, so a label keeps its meeting count visible.
-    const spmRow = lookup["FR-SPM"];
-    if (spmRow && layers.spm && layers.spm.getLayers().length) {
-      const n = toNumber(spmRow["Available Board Meetings"]);
-      spmLabel = L.marker(layers.spm.getBounds().getCenter(), { interactive: false, keyboard: false,
-        icon: L.divIcon({ className: "map-label", html: `Saint-Pierre-et-Miquelon<br><b>${isNaN(n) ? 0 : n} meetings</b> (Territorial Council)`, iconSize: [190, 34], iconAnchor: [-14, 17] }) });
-    }
+    addLayer("world", worldFile);
+
     const sel = $("map-jump");
     sel.add(new Option("—", ""));
     Object.keys(JUMPS).forEach((k) => sel.add(new Option(k, k)));
@@ -933,30 +1023,42 @@
   const norm = (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9 ]/g, " ").replace(/\bsaint\b/g, "st").replace(/\s+/g, " ");
 
-  function buildSearch() {
-    const groups = new Map();
-    DRAW.forEach((n) => layers[n] && layers[n].eachLayer((l) => {
+  // Search entries come from the data (every district, loaded or not); a district's shapes join its entry when its
+  // country's borders load (register), and picking one loads them first.
+  const placeOf = (r) => (euOf(r["District ID"]) ? EU_NAMES[euOf(r["District ID"])] : [r.County, r.State || r.Territory || r.Province || r.Nation].filter(Boolean).join(", "));
+  const entry = (id, r, extra) => ({ name: r.District, place: placeOf(r), layers: [], row: r, text: norm(`${r.District} ${placeOf(r)}`),
+    size: Number(String(r.Enrollment || "").replace(/,/g, "")) || 0, ...extra });
+  function register(n) {
+    if (!layers[n]) return;
+    layers[n].eachLayer((l) => {
       const p = l.feature.properties;
       if (undefinedArea(l.feature) || isWorld(l.feature)) return;
       const r = rowFor(gid(l.feature));
       const id = (r && r["District ID"]) || (r && r.District) || gid(l.feature);
-      const place = r ? (euOf(r["District ID"]) ? EU_NAMES[euOf(r["District ID"])] : [r.County, r.State || r.Territory || r.Province || r.Nation].filter(Boolean).join(", ")) : "";
-      if (!groups.has(id)) groups.set(id, { name: r ? r.District : p.NAME, place, layers: [], scsd: n === "scsd" || n === "canada2", row: r });
-      const g = groups.get(id);
-      if ((n !== "scsd" && n !== "canada2") || g.scsd) g.layers.push(l);
-      if (r && p.NAME && norm(p.NAME) !== norm(r.District) && n !== "scsd" && n !== "territories") {
-        groups.set(`shape-${p.GEOID}`, { name: p.NAME, place, layers: [l], row: r, partOf: r.District });
+      let g = byId.get(id);
+      if (!g) {
+        g = r ? entry(id, r, { scsd: n === "scsd" || n === "canada2" }) : { name: p.NAME, place: "", layers: [], row: r, text: norm(p.NAME), size: 0 };
+        byId.set(id, g); searchIndex.push(g);
       }
-    }));
-    byId = groups;
-    searchIndex = [...groups.values()].filter((g) => g.layers.length).map((g) => ({
-      ...g, text: norm(`${g.name} ${g.place}`), size: Number(String((g.row || {}).Enrollment || "").replace(/,/g, "")) || 0
-    }));
-    // France's small communes are searchable before their layer is loaded: picking one loads it.
+      if (g.scsd === undefined) g.scsd = n === "scsd" || n === "canada2";
+      if (((n !== "scsd" && n !== "canada2") || g.scsd) && !g.layers.includes(l)) g.layers.push(l);
+      if (r && p.NAME && norm(p.NAME) !== norm(r.District) && n !== "scsd" && n !== "territories") {
+        const sg = byId.get(`shape-${p.GEOID}`);
+        if (sg) { if (!sg.layers.includes(l)) sg.layers.push(l); }
+        else {
+          const ng = { name: p.NAME, place: placeOf(r), layers: [l], row: r, partOf: r.District, text: norm(`${p.NAME} ${placeOf(r)}`), size: 0 };
+          byId.set(`shape-${p.GEOID}`, ng); searchIndex.push(ng);
+        }
+      }
+    });
+  }
+
+  function buildSearch() {
+    byId = new Map(); searchIndex = [];
     Object.entries(lookup).forEach(([id, r]) => {
-      if (!/^FRA-\d/.test(id) || groups.has(id)) return;
-      const g = { name: r.District, place: r.Region, layers: [], row: r, frSmall: true, text: norm(`${r.District} ${r.Region}`), size: Number(String(r.Enrollment || "").replace(/,/g, "")) || 0 };
-      groups.set(id, g); searchIndex.push(g);
+      if (!r || !r.District || byId.has(id)) return;
+      const g = entry(id, r, /^FRA-\d/.test(id) ? { frSmall: true } : {});
+      byId.set(id, g); searchIndex.push(g);
     });
     const box = $("map-search");
     box.addEventListener("input", showResults);
@@ -1011,7 +1113,10 @@
 
   function focusEntry(e) {
     if (!e) return;
+    const rid = e.row && e.row["District ID"];
+    if (!e.layers.length && rid && !e._tried) { e._tried = true; return loadLayers(layersForId(rid)).then(() => focusEntry(e)); }
     if (e.frSmall && !e.layers.length) return setFrSmall(true).then(() => e.layers.length && focusEntry(e));
+    if (!e.layers.length) { hideResults(); $("map-status").textContent = `${e.name} has no border on the map.`; return; }
     const id = e.row && e.row["District ID"];
     if (id && window.SiteLinks) window.SiteLinks.place(id);
     hideResults();
@@ -1080,24 +1185,34 @@
       return out;
     },
     restyle: () => { if (map) restyle(); },
+    // For checking: the border files loaded so far.
+    loadedLayers: () => Object.keys(loadingLayers),
+    detail: () => ({ ...detail }),
     // Zooms to and outlines a district by its District ID (used by the site-wide search).
-    focus: (id) => loading && loading.then(() => (!byId.has(id) && /^FRA-/.test(id) ? setFrSmall(true) : null)).then(() => {
+    focus: (id) => loading && loading.then(() => loadLayers(layersForId(id))).then(() => ((!byId.has(id) || !byId.get(id).layers.length) && /^FRA-/.test(id) ? setFrSmall(true) : null)).then(() => {
       map.invalidateSize(); focusEntry(byId.get(id) || [...byId.values()].find((g) => g.row && g.row["District ID"] === id));
     }),
     show(ds, datasets) {
       current = ds;
       if (!loading) {
-        loading = Promise.all([...LAYERS, "aliases"].map((n) => fetch(`data/map/${n}.json`).then((r) => {
-          if (!r.ok) {
-            if (n === "world" || n === "canada" || n === "canada-fn" || n === "spm" || n === "uk" || n === "ireland" || Object.values(EU).includes(n)) return null;   // the US map still works without these borders
-            throw new Error(`HTTP ${r.status}`);
-          }
-          return r.json();
-        })))
-          .then((files) => { aliases = files.pop(); build(datasets, files); $("map-status").textContent = ""; })
+        const get = (n) => fetch(`data/map/${n}.json`).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+        loading = Promise.all([get("world"), get("aliases"), get("index")])
+          .then(([world, al, idx]) => {
+            aliases = al || {};
+            // Without the index, every layer counts as everywhere: all load (the old behaviour).
+            index = idx || Object.fromEntries(LAYERS.filter((n) => n !== "world").map((n) => [n, [[-180, -90, 180, 90]]]));
+            build(datasets, world);
+            map.on("moveend", () => { ensureView(); updateDetail(); });
+            $("map-status").textContent = "";
+          })
           .catch((e) => { $("map-status").textContent = `Couldn't load the map (${e.message}).`; throw e; });
       }
-      loading.then(() => { map.invalidateSize(); restyle(); zoomToCurrent(); }).catch((e) => console.error("map:", e && e.stack));
+      loading.then(() => loadLayers(layersForView(current))).then(() => {
+        map.invalidateSize(); restyle(); zoomToCurrent();
+        // The zoom animates: load what's in view once it has settled (moveend does it after later moves too).
+        setTimeout(() => { viewReady = true; ensureView(); }, 700);
+      })
+        .catch((e) => console.error("map:", e && e.stack));
     }
   };
 })();
