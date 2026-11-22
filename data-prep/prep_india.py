@@ -11,7 +11,7 @@
   meetings: the zila parishad's (district council's) YouTube channel, where one was found.
 Districts created after NFHS-5 have no figure of their own. Names in the report and on the map differ (renamed districts,
 spellings); ALIAS maps them.
-Usage: python3 data-prep/prep_india.py NITI_PDF WIKI_HTML GEODIR
+Usage: python3 data-prep/prep_india.py NITI_PDF WIKI_HTML GEODIR [MEETINGS_DIR (fetch/in_yt.py output)]
 """
 import collections, difflib, html, json, os, re, sys, unicodedata
 import pdfplumber
@@ -126,6 +126,10 @@ def match(rows, geo):
     return res,miss
 
 
+# Channels the search found that aren't the district's zila parishad (checked by hand): a DJ, a news channel, a
+# personal channel, a town council, a village panchayat, a block (janpad) panchayat and another district's council.
+NOT_ZP = {"Banka", "Kozhikode", "Chhindwara", "Dindori", "Supaul", "Betul", "Kamrup"}
+
 # Map names -> Wikipedia's (renamed or respelled districts)
 POP_ALIAS = {"punch": "poonch", "dohad": "dahod", "kachchh": "kutch", "pashchimisinghbhum": "westsinghbhum", "purbisinghbhum": "eastsinghbhum",
              "pashchimchamparan": "westchamparan", "purbachamparan": "eastchamparan", "mewat": "nuh", "uttarbastarkanker": "kanker", "garhwal": "pauri",
@@ -156,7 +160,7 @@ def rnd(c):
     return [rnd(x) for x in c] if isinstance(c[0], list) else [round(c[0], 3), round(c[1], 3)]
 
 
-def main(pdf, wiki, geo5):
+def main(pdf, wiki, geo5, meetdir=None):
     tab = [t for t in tables(pdf) if t["state"] != "INDIA"]
     rows, have = [], set()
     for t in tab:
@@ -166,6 +170,10 @@ def main(pdf, wiki, geo5):
     geo = load(geo5)
     res, miss = match(rows, geo)
     pop = population(wiki)
+    meet = {}
+    if meetdir:
+        import glob
+        for f in glob.glob(os.path.join(meetdir, "in_meet_*.json")): meet.update(json.load(open(f, encoding="utf-8")))
     data, feats, nopop = {}, [], []
     for st, f in geo:
         sid = f["properties"]["shapeID"]; name = f["properties"]["shapeName"]
@@ -184,6 +192,8 @@ def main(pdf, wiki, geo5):
             p = pop.get((sk(st), c[0])) if c else None
         if p: x["pop"], x["pop_year"] = p
         else: nopop.append((st, name))
+        m = meet.get("IND-" + sid[-8:]) or {}
+        if m.get("url") and name not in NOT_ZP: x["meetings"] = {"channel": m["channel"], "url": m["url"], "videos": m["videos"]}
         data[sid] = x
         feats.append({"type": "Feature", "properties": {"id": "IND-" + sid[-8:], "NAME": name}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
     os.makedirs(OUT, exist_ok=True)
