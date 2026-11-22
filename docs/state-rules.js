@@ -473,6 +473,17 @@ window.STATE_RULES = {
     ],
     note: "Check the current law and the council's own rules before relying on this."
   },
+  india: {
+    title: "Rules for zila parishad (district council) meetings",
+    checked: "November 22, 2026",
+    laws: [
+      { state: "India", covers: "Zila parishads (district panchayats)", threshold: "",
+        rule: "The 73rd Amendment (1992) set up elected panchayats at district level; each state's Panchayati Raj Act sets how often the zila parishad and its standing committees (including education) meet and whether meetings are public. No national rule requires them to be recorded or streamed." },
+      { state: "India", covers: "Schools", threshold: "",
+        rule: "Under the Right of Children to Free and Compulsory Education Act (2009) the states run government schools, and every government and aided school has a school management committee, three-quarters of it parents." }
+    ],
+    note: "Rules differ by state. Check the state's Panchayati Raj Act before relying on this."
+  },
   philippines: {
     title: "Rules for council sessions and local school boards",
     checked: "November 8, 2026",
