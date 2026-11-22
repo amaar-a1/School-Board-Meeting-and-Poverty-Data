@@ -135,7 +135,8 @@ NOT_ZP = {"Banka", "Kozhikode", "Chhindwara", "Dindori", "Supaul", "Betul", "Kam
 POP_ALIAS = {"punch": "poonch", "dohad": "dahod", "kachchh": "kutch", "pashchimisinghbhum": "westsinghbhum", "purbisinghbhum": "eastsinghbhum",
              "pashchimchamparan": "westchamparan", "purbachamparan": "eastchamparan", "mewat": "nuh", "uttarbastarkanker": "kanker", "garhwal": "pauri",
              "kochbihar": "coochbehar", "hugli": "hooghly", "muktsar": "srimuktsarsahib", "baleshwar": "balasore", "kheri": "lakhimpurkheri",
-             "mahamayanagar": "hathras", "jyotibaphulenagar": "amroha", "allahabad": "prayagraj", "ramanagara": "bengalurusouth"}
+             "mahamayanagar": "hathras", "jyotibaphulenagar": "amroha", "allahabad": "prayagraj", "ramanagara": "bengalurusouth",
+             "bangalore": "bangaloreurban"}   # the map's "Bangalore" is Bengaluru Urban, not Bangalore Rural
 
 
 def population(path):
