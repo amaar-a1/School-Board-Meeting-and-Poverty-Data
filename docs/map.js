@@ -90,10 +90,10 @@
     poverty: {
       column: "Percentage of Children Ages 5-17 in Poverty",
       caColumn: "Percentage of Children Ages 0-17 in Low Income",   // Canada's measure (not the same as the US one)
-      // Darker reds above 30%, for the countries with high poverty rates (Kenya, Mexico, Colombia, Brazil, Peru...).
-      breaks: [10, 15, 20, 25, 30, 40, 50, 60],
-      colors: ["#fef0d9", "#fdd49e", "#fdbb84", "#fc8d59", "#e34a33", "#c81d25", "#a50f15", "#7f0a10", "#54060b"],
-      labels: ["Under 10%", "10–15%", "15–20%", "20–25%", "25–30%", "30–40%", "40–50%", "50–60%", "60% or more"]
+      // Darker reds above 30%, up to 80%: Mexico, Brazil, Colombia, Peru and Kenya have many places above 50%.
+      breaks: [10, 15, 20, 25, 30, 40, 50, 60, 70, 80],
+      colors: ["#fef0d9", "#fdd49e", "#fdbb84", "#fc8d59", "#e34a33", "#cb2027", "#ad131a", "#8e0c13", "#6f080e", "#52050a", "#360306"],
+      labels: ["Under 10%", "10–15%", "15–20%", "20–25%", "25–30%", "30–40%", "40–50%", "50–60%", "60–70%", "70–80%", "80% or more"]
     },
     // Japan's welfare rate is far lower than any poverty rate (few people claim welfare), so it has a scale of its own.
     welfare: {
