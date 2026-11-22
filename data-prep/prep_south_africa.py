@@ -10,6 +10,7 @@
     schools (the poorest communities' no-fee schools) and in public schools with a quintile. Independent schools count
     as private.
   meetings: the municipal council's YouTube channel (fetch/nyt.py, ZA).
+Then run data-prep/simplify_borders.sh (the map needs lighter borders than geoBoundaries' full detail).
 Usage: python3 data-prep/prep_south_africa.py RAWDIR GEODIR
 """
 import csv, glob, html, json, os, re, sys, unicodedata

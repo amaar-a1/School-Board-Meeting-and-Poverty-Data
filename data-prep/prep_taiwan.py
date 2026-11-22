@@ -9,6 +9,7 @@
   pupils, public: Ministry of Education, Department of Statistics open data, school year 2025/26 (114): elementary schools
     (edu_B_3_2), junior high schools (edu_B_3_8) and senior high schools (edu_B_4_2) by county, all and public.
   meetings: the county or city council's YouTube channel (fetch/tw_yt.py).
+Then run data-prep/simplify_borders.sh (the map needs lighter borders than geoBoundaries' full detail).
 Usage: python3 data-prep/prep_taiwan.py RAWDIR [RAWDIR ...] GEODIR
 """
 import csv, glob, io, json, os, re, sys

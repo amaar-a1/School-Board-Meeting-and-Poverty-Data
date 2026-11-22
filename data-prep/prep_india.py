@@ -11,6 +11,7 @@
   meetings: the zila parishad's (district council's) YouTube channel, where one was found.
 Districts created after NFHS-5 have no figure of their own. Names in the report and on the map differ (renamed districts,
 spellings); ALIAS maps them.
+Then run data-prep/simplify_borders.sh (the map needs lighter borders than geoBoundaries' full detail).
 Usage: python3 data-prep/prep_india.py NITI_PDF WIKI_HTML GEODIR [MEETINGS_DIR (fetch/in_yt.py output)]
 """
 import collections, difflib, html, json, os, re, sys, unicodedata
