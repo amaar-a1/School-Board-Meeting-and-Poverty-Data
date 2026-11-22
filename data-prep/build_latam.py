@@ -82,7 +82,7 @@ def centroid(geom):
 
 
 _CACHE = {}
-DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "AU": "australia", "HR": "croatia", "PH": "philippines", "LV": "latvia", "EE": "estonia", "ARG": "argentina", "ISR": "israel", "SVN": "slovenia", "TWN": "taiwan", "URY": "uruguay", "CRI": "costa_rica", "LTU": "lithuania", "ZAF": "south_africa", "KEN": "kenya", "GEO": "georgia", "KOR": "south_korea"}
+DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "AU": "australia", "HR": "croatia", "PH": "philippines", "LV": "latvia", "EE": "estonia", "ARG": "argentina", "ISR": "israel", "SVN": "slovenia", "TWN": "taiwan", "URY": "uruguay", "CRI": "costa_rica", "LTU": "lithuania", "ZAF": "south_africa", "KEN": "kenya", "GEO": "georgia", "KOR": "south_korea", "IND": "india"}
 # Brazil: municipal chambers (câmara municipal) and their education committees, in Portuguese.
 RULES = {"BR": (re.compile(r"comiss[ãa]o (permanente )?de educa[çc][ãa]o|educa[çc][ãa]o.*comiss[ãa]o", re.I),
                 re.compile(r"sess[ãa]o|c[âa]mara", re.I),
@@ -1802,6 +1802,48 @@ def georgia():
                      "School system": ("Self-governing city" if x.get("city") else "Municipality") + " (public schools are run by the Ministry of Education and Science, each with a board of trustees); elected council (sakrebulo)",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in area})
     write("GEO", "georgia", rows, feats)
+
+
+def _in_meetings(videos):
+    """Zila parishad meetings: titles saying meeting / general body / sitting (English or Hindi), once per date (or title)."""
+    def date(t):
+        m = re.search(r"\b(\d{1,2})\s*[.,/ -]\s*(\d{1,2})\s*[.,/ -]\s*(20\d\d)\b", t)
+        return f"{m.group(3)}-{int(m.group(2)):02d}-{int(m.group(1)):02d}" if m and 1 <= int(m.group(2)) <= 12 and 1 <= int(m.group(1)) <= 31 else ""
+    keys, keep = set(), []
+    for t in videos:
+        if re.search(r"meeting|general body|sitting|session|baithak|sabha|बैठक|सभा|सत्र", t, re.I) and not re.search(r"news|interview|shorts|#short|यात्रा|उद्घाटन", t, re.I):
+            d = date(t); keys.add(d or t.strip().lower()); keep.append(f"{d} {t}" if d else t)
+    return len(keys), keep
+
+
+def india():
+    """735 districts (geoBoundaries' set; districts created later are inside their parent's border). Schools are run by the
+    state governments (their education departments and district education officers); in most states the elected zila
+    parishad (district council), through its education standing committee, oversees elementary schools and their funds,
+    so its meetings stand in for a school board's. Poverty: NITI Aayog's multidimensional poverty headcount ratio, 2019-21
+    (prep_india.py)."""
+    d = os.path.join(IN, "india")
+    ind = json.load(open(os.path.join(d, "ind_data.json"), encoding="utf-8"))
+    feats = json.load(open(os.path.join(d, "ind_geo.geojson"), encoding="utf-8"))["features"]
+    area = {f["properties"]["id"]: area_km2(f["geometry"]) for f in feats}
+    rows = []
+    for sid, x in ind.items():
+        did = "IND-" + sid[-8:]
+        dens = x["pop"] / area[did] if x.get("pop") and area.get(did) else 0
+        m = x.get("meetings") or {}
+        n, titles = _in_meetings(m.get("videos", [])) if m.get("url") else (0, [])
+        latest, years = date_summary(titles) if n else ("", "")
+        rows.append({"District": re.sub(r"\s+", " ", x["name"]).strip(), "Region": x["state"], "Population": x.get("pop") or "",
+                     "Poverty rate (all ages)": f"{x['mpi']:.1f}%" if x.get("mpi") is not None else "",
+                     "Poverty note": (f"Share of people who are multidimensionally poor (headcount ratio), 2019-21 (NITI Aayog, National Multidimensional Poverty Index: A Progress Review 2023, "
+                                      "from NFHS-5); deprived in a third or more of 12 weighted indicators of health, education and living standards. Nationally 14.96%"
+                                      + (f". The report gives {x['mpi_note']} separately; this is their mean" if x.get("mpi_note") else "")) if x.get("mpi") is not None
+                                     else "No figure of its own in NITI Aayog's report (a district created after the survey, or not in it)",
+                     "_own_meetings": True, "Available Board Meetings": n, "Meetings type": "Zila parishad (stand-in)" if n else "", "Meetings source": m.get("url", "") if n else "",
+                     "Latest meeting": latest, "Meetings by year": years,
+                     "School system": "District (schools are run by the state's education department; the elected zila parishad oversees elementary schools in most states)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in area})
+    write("IND", "india", rows, feats)
 
 
 if __name__ == "__main__":
