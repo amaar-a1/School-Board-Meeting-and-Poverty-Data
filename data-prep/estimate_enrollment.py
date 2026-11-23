@@ -110,10 +110,10 @@ RULES["estonia.csv"] = ee_rule()
 
 def in_rule():
     """India: children aged 6-17 (classes 1-12) living in the district, from WorldPop's 2025 age structures (R2025A,
-    1 km, constrained) summed over the district's border by the GitHub runner (fetch round 24, saved as
-    inputs/india/in_children_2025.json). WorldPop gives five-year groups, so 6-17 is four fifths of 5-9, all of 10-14
+    1 km, constrained) summed over the district's border by the GitHub runner (fetch rounds 24-26, saved as
+    inputs/india/in_ages_2025.json). WorldPop gives five-year groups, so 6-17 is four fifths of 5-9, all of 10-14
     and three fifths of 15-19. UDISE+, India's school census, doesn't answer from outside India."""
-    p = os.path.join(HERE, "inputs", "india", "in_children_2025.json")
+    p = os.path.join(HERE, "inputs", "india", "in_ages_2025.json")
     data = json.load(open(p, encoding="utf-8"))["districts"] if os.path.exists(p) else {}
     def rule(r):
         x = data.get(r["District ID"])

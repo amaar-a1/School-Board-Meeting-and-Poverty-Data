@@ -449,7 +449,7 @@ def write(cc, key, rows, feats):
             "Population", "Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
     extra = [c for c in ("Province", "Autonomous community", "Children under 18 (estimated)", "Poverty year", "Poverty range", "Poverty rate (region, all ages)", ES_EST,
-                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)", "Welfare rate basis", "Unemployment rate (2020 census)", "Children under 15", "Children under 16", "Pupils with free school meals", "Social assistance recipients per 1,000", "Children on family benefit (% of under-20s)", "Median income (€ per taxpayer)", "Children under 18", "Mean income (€ per tax return)", "Median family income ($ per week, 2021)", "Poverty rate (county, 2011)") if any(r.get(c) not in (None, "") for r in rows)]
+                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)", "Welfare rate basis", "Unemployment rate (2020 census)", "Children under 15", "Children under 16", "Pupils with free school meals", "Social assistance recipients per 1,000", "Children on family benefit (% of under-20s)", "Median income (€ per taxpayer)", "Children under 18", "Mean income (€ per tax return)", "Median family income ($ per week, 2021)", "Poverty rate (county, 2011)", "Map note") if any(r.get(c) not in (None, "") for r in rows)]
     pov = "Percentage of Children in Low Income" if any(r.get("Percentage of Children in Low Income") for r in rows) else "Poverty rate (all ages)"
     cols = [c for c in cols if c not in ("Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)") or any(r.get(c) not in (None, "") for r in rows)]
     cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
@@ -1826,9 +1826,17 @@ def india():
     ind = json.load(open(os.path.join(d, "ind_data.json"), encoding="utf-8"))
     feats = json.load(open(os.path.join(d, "ind_geo.geojson"), encoding="utf-8"))["features"]
     area = {f["properties"]["id"]: area_km2(f["geometry"]) for f in feats}
-    rows = []
+    # Population: the higher of the 2011 census count (prep_india.py) and WorldPop's 2025 estimate (R2025A, 1 km, all
+    # ages) summed over the district's border by the GitHub runner (inputs/india/in_ages_2025.json); WorldPop alone where
+    # there's no census figure (Delhi's districts, the Andaman and Nicobar Islands, Puducherry, Lakshadweep, a few new
+    # districts). The census is 15 years old and India has grown about a fifth since, while WorldPop's model places too few
+    # people in some big cities (Mumbai, Kolkata), so the higher figure is usually the better one.
+    wp = json.load(open(os.path.join(d, "in_ages_2025.json"), encoding="utf-8"))["districts"]
+    rows, nwp = [], 0
     for sid, x in ind.items():
         did = "IND-" + sid[-8:]
+        w = round(sum(wp[did].values())) if wp.get(did) else 0
+        if w > (x.get("pop") or 0): x = {**x, "pop": w, "pop_wp": "none" if not x.get("pop") else x["pop"]}; nwp += 1
         dens = x["pop"] / area[did] if x.get("pop") and area.get(did) else 0
         m = x.get("meetings") or {}
         n, titles = _in_meetings(m.get("videos", [])) if m.get("url") else (0, [])
@@ -1842,7 +1850,11 @@ def india():
                      "_own_meetings": True, "Available Board Meetings": n, "Meetings type": "Zila parishad (stand-in)" if n else "", "Meetings source": m.get("url", "") if n else "",
                      "Latest meeting": latest, "Meetings by year": years,
                      "School system": "District (schools are run by the state's education department; the elected zila parishad oversees elementary schools in most states)",
-                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in area})
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in area,
+                     "Map note": ("Population: WorldPop's 2025 estimate, summed over the district's border (no 2011 census figure for it)" if x.get("pop_wp") == "none"
+                                  else f"Population: WorldPop's 2025 estimate, summed over the district's border (higher than the 2011 census's {x['pop_wp']:,})" if x.get("pop_wp")
+                                  else "Population: 2011 census (higher than WorldPop's 2025 estimate for the district)")})
+    print("population from WorldPop:", nwp)
     write("IND", "india", rows, feats)
 
 

@@ -136,7 +136,17 @@ POP_ALIAS = {"punch": "poonch", "dohad": "dahod", "kachchh": "kutch", "pashchimi
              "pashchimchamparan": "westchamparan", "purbachamparan": "eastchamparan", "mewat": "nuh", "uttarbastarkanker": "kanker", "garhwal": "pauri",
              "kochbihar": "coochbehar", "hugli": "hooghly", "muktsar": "srimuktsarsahib", "baleshwar": "balasore", "kheri": "lakhimpurkheri",
              "mahamayanagar": "hathras", "jyotibaphulenagar": "amroha", "allahabad": "prayagraj", "ramanagara": "bengalurusouth",
-             "bangalore": "bangaloreurban"}   # the map's "Bangalore" is Bengaluru Urban, not Bangalore Rural
+             "bangalore": "bangaloreurban",   # the map's "Bangalore" is Bengaluru Urban, not Bangalore Rural
+             "thenilgiris": "nilgiris", "faizabad": "ayodhya", "warangalu": "hanamkonda"}   # not Theni, Firozabad, Warangal (Rural)
+# 2011 census populations for the area the map draws, where the Wikipedia list gives a different area's: Andhra Pradesh's 13
+# districts before the 2022 reorganisation (the list has the new, smaller districts' 2021 estimates; these add up to the
+# state's 49,386,799), Chennai before its 2018 enlargement and Kancheepuram before Chengalpattu was split off in 2019 (the
+# map has the older borders), and Phek and Peren (the list repeats Phek's figure for Peren). Census of India 2011, Primary
+# Census Abstract.
+POP_FIX = {"Srikakulam": 2703114, "Vizianagaram": 2344474, "Visakhapatnam": 4290589, "East Godavari": 5154296, "West Godavari": 3936966,
+           "Krishna": 4517398, "Guntur": 4887813, "Prakasam": 3397448, "Sri Potti Sriramulu Nellore": 2963557, "Kadapa(YSR)": 2882469,
+           "Kurnool": 4053463, "Anantapur": 4081148, "Chittoor": 4174064, "Chennai": 4646732, "Kancheepuram": 3998252,
+           "Phek": 163418, "Peren": 95219}
 
 
 def population(path):
@@ -205,6 +215,7 @@ def main(pdf, wiki, geo5, meetdir=None):
             c = [w for k in keys for w in cands if len(k) >= 4 and (w.startswith(k) or k.startswith(w))] or [w for k in keys for w in difflib.get_close_matches(k, cands, n=1, cutoff=0.75)]
             p = pop.get((sk(st), c[0])) if c else None
         if p: x["pop"], x["pop_year"] = p
+        if name.strip() in POP_FIX: x["pop"], x["pop_year"] = POP_FIX[name.strip()], "2011"
         else: nopop.append((st, name))
         m = meet.get("IND-" + sid[-8:]) or {}
         if m.get("url") and name not in NOT_ZP: x["meetings"] = {"channel": m["channel"], "url": m["url"], "videos": m["videos"]}
