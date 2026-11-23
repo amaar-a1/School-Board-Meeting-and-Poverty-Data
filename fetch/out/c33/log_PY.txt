@@ -1,0 +1,247 @@
+PY 25 De Diciembre ->  
+PY 3 De Febrero ->  
+PY 3 De Mayo ->  
+PY Abaí ->  
+PY Acahay ->  
+PY Alberdi ->  
+PY Alto Verá ->  
+PY Altos ->  
+PY Antequera ->  
+PY Areguá ->  
+PY Arroyos y Esteros ->  
+PY Asunción -> Junta Municipal de Asuncion 0
+PY Atyrá ->  
+PY Ayolas ->  
+PY Azote'y ->  
+PY Bahía Negra ->  
+PY Bella Vista ->  
+PY Belén ->  
+PY Benjamín Aceval ->  
+PY Borja ->  
+PY Buena Vista ->  
+PY Caacupé ->  
+PY Caaguazú ->  
+PY Caapucú ->  
+PY Caazapá ->  
+PY Caballero ->  
+PY Cambyretá ->  
+PY Capiatá ->  
+PY Capiibary ->  
+PY Capitán Bado ->  
+PY Capitán Mauricio José Troche ->  
+PY Capitán Meza ->  
+PY Capitán Miranda ->  
+PY Caraguatay ->  
+PY Carapeguá -> Municipalidad Carapeguá 0
+PY Carayaó ->  
+PY Carlos Antonio López ->  
+PY Carmelo Peralta ->  
+PY Carmen del Paraná ->  
+PY Cerrito -> Prensa Concejo Municipal El Cerrito - Valle 0
+PY Choré ->  
+PY Ciudad del Este ->  
+PY Concepción -> Municipalidad Concepción 0
+PY Coronel Bogado ->  
+PY Coronel Martínez ->  
+PY Coronel Oviedo ->  
+PY Corpus Christi ->  
+PY Desmochados ->  
+PY Doctor Bottrell ->  
+PY Domingo Martínez de Irala ->  
+PY Dr. Cecilio Báez ->  
+PY Dr. J. Eulogio Estigarribia ->  
+PY Dr. Juan León Mallorquín ->  
+PY Dr. Juan Manuel Frutos ->  
+PY Dr. Moisés S. Bertoni ->  
+PY Dr. Raúl Peña ->  
+PY Edelira ->  
+PY Emboscada ->  
+PY Encarnación -> Junta Municipal de Encarnación 0
+PY Escobar ->  
+PY Eusebio Ayala ->  
+PY Fernando de La Mora ->  
+PY Filadelfia ->  
+PY Fram ->  
+PY Francisco Caballero Alvarez ->  
+PY Fuerte Olimpo ->  
+PY Félix Pérez Cardozo ->  
+PY General Artigas ->  
+PY General Delgado ->  
+PY General Elizardo Aquino ->  
+PY General Francisco Isidoro Resquín ->  
+PY General José María Bruguez ->  
+PY Gral. Eugenio A. Garay ->  
+PY Gral. Higinio Morinigo ->  
+PY Gral. José Eduvigis Díaz ->  
+PY Guajayvi ->  
+PY Guarambaré ->  
+PY Guazú-Cuá ->  
+PY Hernandarias ->  
+PY Hohenau ->  
+PY Horqueta ->  
+PY Humaitá ->  
+PY Independencia ->  
+PY Iruña ->  
+PY Isla Pucú ->  
+PY Isla Umbú ->  
+PY Itacurubí de La Cordillera ->  
+PY Itacurubí del Rosario ->  
+PY Itakyry ->  
+PY Itanará ->  
+PY Itapé ->  
+PY Itapúa Poty ->  
+PY Itauguá ->  
+PY Iturbe ->  
+PY Itá ->  
+PY J. Augusto Saldívar ->  
+PY Jesús ->  
+PY José Domingo Ocampos ->  
+PY José Falcón ->  
+PY José Fassardi ->  
+PY José Leandro Oviedo ->  
+PY Juan E. O'leary ->  
+PY Juan de Mena -> Concejal Juan Mena Echeverría - MuniStgo 0
+PY Katueté ->  
+PY La Colmena ->  
+PY La Paloma del Espíritu Santo ->  
+PY La Pastora ->  
+PY La Paz -> Concejo Municipal de La Paz 0
+PY Lambaré ->  
+PY Laureles ->  
+PY Liberación ->  
+PY Lima -> Municipalidad de Lima 2
+PY Limpio -> Cesar Mendez Concejal de Limpio-Paraguay 0
+PY Loma Grande ->  
+PY Loma Plata ->  
+PY Loreto ->  
+PY Los Cedrales ->  
+PY Luque -> Municipalidad de Luque 0
+PY Maciel ->  
+PY Mariano Roque Alonso -> Mariano Roque Alonso Silvia Sanchez de Samudio Concejal 0
+PY Mariscal Francisco Solano López ->  
+PY Mariscal José Félix Estigarribia ->  
+PY Mayor José Dejesús Martínez ->  
+PY Mayor Julio Dionisio Otaño ->  
+PY Mbaracayú ->  
+PY Mbocayaty ->  
+PY Mbocayaty del Yhaguy ->  
+PY Mbuyapey ->  
+PY Minga Guazú ->  
+PY Minga Porá ->  
+PY Nanawa ->  
+PY Naranjal ->  
+PY Natalicio Talavera ->  
+PY Natalio ->  
+PY Nueva Alborada ->  
+PY Nueva Colombia ->  
+PY Nueva Esperanza ->  
+PY Nueva Germania ->  
+PY Nueva Italia ->  
+PY Nueva Londres ->  
+PY Nueva Toledo ->  
+PY Obligado ->  
+PY Paraguarí ->  
+PY Paso Yobai ->  
+PY Paso de Patria ->  
+PY Pedro Juan Caballero ->  
+PY Pilar ->  
+PY Pirapó ->  
+PY Pirayú ->  
+PY Piribebuy ->  
+PY Presidente Franco ->  
+PY Primero de Marzo ->  
+PY Puerto Casado ->  
+PY Puerto Pinasco ->  
+PY Quiindy ->  
+PY Quyquyhó ->  
+PY R.I. 3 Corrales ->  
+PY Raúl Arsenio Oviedo ->  
+PY Repatriación ->  
+PY Roque Gonzalez de Santa Cruz ->  
+PY Salto del Guairá ->  
+PY San Alberto ->  
+PY San Antonio -> JUNTA MUNICIPAL 74 SAN ANTONIO LA ISLA 0
+PY San Bernardino ->  
+PY San Carlos del Apa ->  
+PY San Cosme y Damián ->  
+PY San Cristóbal ->  
+PY San Estanislao ->  
+PY San Ignacio -> Municipalidad de San ignacio 0
+PY San Joaquín ->  
+PY San José Obrero ->  
+PY San José de Los Arroyos ->  
+PY San Juan Bautista de Las Misiones ->  
+PY San Juan Bautista de Ñeembucú ->  
+PY San Juan Del Paraná ->  
+PY San Juan Del Paraná ->  
+PY San Juan Del Paraná ->  
+PY San Juan Nepomuceno ->  
+PY San Lorenzo -> Junta Municipal de San Lorenzo 0
+PY San Lázaro ->  
+PY San Miguel -> Municipalidad de San Miguel 0
+PY San Pablo -> Municipalidad San Pablo 0
+PY San Patricio ->  
+PY San Pedro del Paraná ->  
+PY San Pedro del Ycuamandyyú ->  
+PY San Rafael del Paraná ->  
+PY San Salvador -> Municipalidad de San Salvador de Jujuy 0
+PY Santa Elena -> Gobierno Municipal de Santa Elena 0
+PY Santa Fe del Paraná ->  
+PY Santa María -> JUNTA DISTRITAL 19 Santa Maria Tultepec 0
+PY Santa Rita ->  
+PY Santa Rosa ->  
+PY Santa Rosa del Aguaray ->  
+PY Santa Rosa del Mbutuy ->  
+PY Santa Rosa del Monday ->  
+PY Santiago ->  
+PY Sapucái -> Câmara Municipal Santa Rita do Sapucaí 0
+PY Sargento José Félix López ->  
+PY Simón Bolivar ->  
+PY Tacuaras ->  
+PY Tacuatí ->  
+PY Tavapy ->  
+PY Tavaí ->  
+PY Tebicuary ->  
+PY Tebicuary-Mí ->  
+PY Tembiaporá ->  
+PY Teniente Esteban Martínez ->  
+PY Tobatí ->  
+PY Tomás Romero Pereira ->  
+PY Trinidad ->  
+PY Tte. 1° Manuel Irala Fernández ->  
+PY Unión -> Municipalidad de La Union 0
+PY Valenzuela ->  
+PY Vaquería ->  
+PY Villa Curuguaty ->  
+PY Villa Elisa ->  
+PY Villa Florida ->  
+PY Villa Franca ->  
+PY Villa Hayes ->  
+PY Villa Oliva ->  
+PY Villa Ygatimí ->  
+PY Villa del Rosario ->  
+PY Villalbín ->  
+PY Villarrica ->  
+PY Villeta ->  
+PY Yabebyry ->  
+PY Yaguarón ->  
+PY Yasy Cañy ->  
+PY Yataity ->  
+PY Yataity del Norte ->  
+PY Yatytay ->  
+PY Yby Yaú ->  
+PY Ybycuí ->  
+PY Ybyrarobaná ->  
+PY Ybytymí ->  
+PY Yegros ->  
+PY Yguazú ->  
+PY Yhú ->  
+PY Ypacaraí ->  
+PY Ypané ->  
+PY Ypejhú ->  
+PY Yrybucua ->  
+PY Yuty ->  
+PY Zanja Pytá ->  
+PY Ñacunday ->  
+PY Ñemby ->  
+PY Ñumí ->  

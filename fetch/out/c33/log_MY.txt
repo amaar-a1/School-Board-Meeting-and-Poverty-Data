@@ -1,0 +1,160 @@
+MY Alor Gajah ->  
+MY Asajaya ->  
+MY Bachok ->  
+MY Bagan Datuk ->  
+MY Baling ->  
+MY Bandar Baharu ->  
+MY Barat Daya ->  
+MY Batang Padang ->  
+MY Batu Pahat ->  
+MY Bau ->  
+MY Beaufort ->  
+MY Belaga ->  
+MY Beluran ->  
+MY Beluru ->  
+MY Bentong ->  
+MY Bera ->  
+MY Besut ->  
+MY Betong ->  
+MY Bintulu ->  
+MY Bukit Mabong ->  
+MY Cameron Highlands ->  
+MY Dalat ->  
+MY Daro -> Pejabat Pendidikan Daerah Daro 0
+MY Dungun ->  
+MY Gombak ->  
+MY Gua Musang ->  
+MY Hilir Perak ->  
+MY Hulu Perak ->  
+MY Hulu Terengganu ->  
+MY Jasin -> Majlis Perbandaran Jasin 0
+MY Jelebu ->  
+MY Jeli ->  
+MY Jempol ->  
+MY Jerantut ->  
+MY Johor Bahru ->  
+MY Julau ->  
+MY Kabong ->  
+MY Kalabakan ->  
+MY Kampar ->  
+MY Kanowit ->  
+MY Kapit ->  
+MY Kecil Lojing ->  
+MY Kemaman -> Majlis Perbandaran Kemaman 0
+MY Keningau ->  
+MY Kerian ->  
+MY Kinabatangan ->  
+MY Kinta ->  
+MY Klang -> Majlis Bandaraya Diraja Klang  0
+MY Kluang ->  
+MY Kota Belud ->  
+MY Kota Bharu -> Majlis Perbandaran Kota Bharu Bandar Raya Islam 0
+MY Kota Kinabalu ->  
+MY Kota Marudu ->  
+MY Kota Setar ->  
+MY Kota Tinggi -> MAJLIS DAERAH KOTA TINGGI 0
+MY Kuala Kangsar ->  
+MY Kuala Krai ->  
+MY Kuala Langat ->  
+MY Kuala Muda ->  
+MY Kuala Nerus ->  
+MY Kuala Penyu ->  
+MY Kuala Pilah ->  
+MY Kuala Selangor ->  
+MY Kuala Terengganu -> Majlis Bandaraya Kuala Terengganu (MBKT) 0
+MY Kuantan -> Majlis Bandaraya Kuantan PBT 0
+MY Kubang Pasu -> Pejabat Pendidikan Daerah Kubang Pasu 1
+MY Kuching ->  
+MY Kudat ->  
+MY Kulai -> Majlis Perbandaran Kulai 0
+MY Kulim ->  
+MY Kunak ->  
+MY Lahad Datu ->  
+MY Langkawi ->  
+MY Larut dan Matang ->  
+MY Lawas ->  
+MY Limbang ->  
+MY Lipis ->  
+MY Lubok Antu ->  
+MY Lundu ->  
+MY Machang ->  
+MY Manjung ->  
+MY Maradong ->  
+MY Maran -> Majlis Daerah Maran 0
+MY Marang -> Majlis Daerah Marang 0
+MY Marudi ->  
+MY Matu ->  
+MY Melaka Tengah ->  
+MY Mersing ->  
+MY Miri -> Public Health, Miri City Council 0
+MY Muallim ->  
+MY Muar ->  
+MY Mukah ->  
+MY Nabawan ->  
+MY Padang Terap ->  
+MY Pakan ->  
+MY Papar ->  
+MY Pasir Mas ->  
+MY Pasir Puteh ->  
+MY Pekan ->  
+MY Penampang ->  
+MY Pendang ->  
+MY Perak Tengah ->  
+MY Perlis ->  
+MY Petaling ->  
+MY Pitas ->  
+MY Pokok Sena ->  
+MY Pontian -> Majlis Perbandaran Pontian 0
+MY Port Dickson ->  
+MY Pusa ->  
+MY Putatan ->  
+MY Ranau -> Majlis Derah Ranau 0
+MY Raub ->  
+MY Rembau ->  
+MY Rompin ->  
+MY Sabak Bernam -> MAJLIS DAERAH SABAK BERNAM MDSB 0
+MY Samarahan ->  
+MY Sandakan ->  
+MY Saratok ->  
+MY Sarikei ->  
+MY Sebauh ->  
+MY Seberang Perai Selatan ->  
+MY Seberang Perai Tengah ->  
+MY Seberang Perai Utara ->  
+MY Segamat ->  
+MY Selama ->  
+MY Selangau ->  
+MY Semporna -> Majlis Daerah Semporna 0
+MY Sepang -> Majlis Perbandaran Sepang 0
+MY Seremban -> Majlis Bandaraya Seremban 0
+MY Serian ->  
+MY Setiu -> Majlis Daerah Setiu 0
+MY Sibu ->  
+MY Sik ->  
+MY Simunjan ->  
+MY Sipitang ->  
+MY Song ->  
+MY Sri Aman ->  
+MY Subis ->  
+MY Tambunan ->  
+MY Tampin ->  
+MY Tanah Merah ->  
+MY Tangkak ->  
+MY Tanjung Manis ->  
+MY Tatau ->  
+MY Tawau ->  
+MY Tebedu ->  
+MY Telang Usan ->  
+MY Telupid ->  
+MY Temerloh ->  
+MY Tenom ->  
+MY Timur Laut ->  
+MY Tongod ->  
+MY Tuaran ->  
+MY Tumpat ->  
+MY Ulu Langat ->  
+MY Ulu Selangor ->  
+MY W.P. Kuala Lumpur ->  
+MY W.P. Labuan ->  
+MY W.P. Putrajaya ->  
+MY Yan ->  

@@ -1,0 +1,171 @@
+ID Aceh Besar ->  
+ID Aceh Singkil ->  
+ID Aceh Tenggara ->  
+ID Agam -> DPRD Kabupaten Agam 0
+ID Asmat ->  
+ID Bandung -> DPRD Kota Bandung 0
+ID Banggai Kepulauan ->  
+ID Bangka Barat ->  
+ID Bangkalan ->  
+ID Banjarnegara ->  
+ID Banyuasin -> DPRD KABUPATEN MUSI BANYUASIN 0
+ID Barito Kuala ->  
+ID Barito Utara ->  
+ID Batang Hari ->  
+ID Belitung -> DPRD Kab Belitung 0
+ID Bener Meriah ->  
+ID Bengkulu Selatan ->  
+ID Berau ->  
+ID Bintan -> DPRD BINTAN 0
+ID Blora ->  
+ID Bojonegoro ->  
+ID Bolaang Mongondow Timur ->  
+ID Bondowoso ->  
+ID Boven Digoel ->  
+ID Buleleng -> Humas DPRD Buleleng 1
+ID Bungo -> DPRD KAB. BUNGO 0
+ID Buru Selatan ->  
+ID Buton Tengah ->  
+ID Cianjur -> DPRD Kab. Cianjur 0
+ID Dairi -> SEKRETARIAT DPRD KABUPATEN DAIRI 0
+ID Demak -> dprd demak 0
+ID Dompu ->  
+ID Ende -> Sekretariat DPRD Kabupaten Ende 0
+ID Flores Timur ->  
+ID Gianyar ->  
+ID Gowa -> DPRD GOWA 0
+ID Gunung Kidul ->  
+ID Halmahera Selatan -> DPRD KAB HALMAHERA SELATAN 1
+ID Halmahera Utara ->  
+ID Hulu Sungai Utara ->  
+ID Indragiri Hulu ->  
+ID Jayapura -> HUMAS DPRD KOTA JAYAPURA 0
+ID Jembrana -> Humas DPRD Jembrana 0
+ID Jombang -> DPRD Jombang 16
+ID Kapuas ->  
+ID Karangasem -> DPRD Kabupaten Karangasem 0
+ID Karo ->  
+ID Kayong Utara ->  
+ID Keerom -> Sekretariat Dprd keerom 0
+ID Kepahiang -> DPRD KEPAHIANG 0
+ID Kepulauan Mentawai ->  
+ID Kepulauan Selayar ->  
+ID Kepulauan Sula ->  
+ID Kerinci -> Humas Sekretariat DPRD Kab.Kerinci 0
+ID Klungkung ->  
+ID Kolaka Utara ->  
+ID Konawe Selatan ->  
+ID Kota Balikpapan -> DPRD Kota Balikpapan 0
+ID Kota Bandung -> DPRD Kota Bandung 0
+ID Kota Banjarmasin ->  
+ID Kota Batu ->  
+ID Kota Bengkulu -> DPRD KOTA BENGKULU 0
+ID Kota Bitung ->  
+ID Kota Bontang ->  
+ID Kota Cimahi -> DPRD KOTA CIMAHI 0
+ID Kota Depok -> DPRD Depok 0
+ID Kota Gunung Sitoli ->  
+ID Kota Jakarta Selatan ->  
+ID Kota Jambi ->  
+ID Kota Kepulauan Tidore ->  
+ID Kota Langsa ->  
+ID Kota Madiun ->  
+ID Kota Malang ->  DPRD Kota Malang 0
+ID Kota Medan -> Sekretariat DPRD Medan 0
+ID Kota Padang ->  
+ID Kota Pagar Alam ->  
+ID Kota Palopo ->  
+ID Kota Parepare ->  
+ID Kota Payakumbuh ->  
+ID Kota Pematang Siantar ->  
+ID Kota Probolinggo -> SEKRETARIAT DPRD KOTA PROBOLINGGO 0
+ID Kota Samarinda -> DPRD Kota Samarinda 0
+ID Kota Serang ->  
+ID Kota Solok -> Humas DPRD Kota Solok 0
+ID Kota Sukabumi -> HUMAS DPRD Kota Sukabumi 0
+ID Kota Surakarta -> DPRD Kota Surakarta 2
+ID Kota Tanjung Balai ->  
+ID Kota Tasikmalaya ->  
+ID Kota Ternate -> SEKRETARIAT DPRD KOTA TERNATE 0
+ID Kota Yogyakarta -> DPRD Kota Yogyakarta 0
+ID Kuantan Singingi ->  
+ID Kulon Progo ->  
+ID Kutai Barat ->  
+ID Labuhan Batu ->  
+ID Lahat ->  
+ID Lampung Barat -> DPRD Lampung Barat 0
+ID Lampung Timur ->  
+ID Langkat -> DPRD Kab. Langkat 1
+ID Lebong ->  
+ID Lingga ->  
+ID Lombok Timur -> DPRD Lombok Timur 0
+ID Luwu ->  
+ID Madiun -> Sekretariat DPRD Kota Madiun 0
+ID Mahakam Hulu ->  
+ID Malaka -> Sekretariat DPRD Kabupaten Malaka 0
+ID Maluku Barat Daya ->  
+ID Maluku Tenggara Barat ->  
+ID Mamberamo Tengah ->  
+ID Mamuju Utara ->  
+ID Manggarai Barat ->  
+ID Manokwari Selatan ->  
+ID Maybrat ->  
+ID Merauke ->  
+ID Minahasa ->  
+ID Minahasa Utara ->  
+ID Morowali Utara -> HUMAS SET DPRD MOROWALI UTARA 0
+ID Mukomuko ->  
+ID Murung Raya ->  
+ID Musi Rawas Utara ->  
+ID Nagekeo ->  
+ID Ngada -> DPRD NGADA 0
+ID Nias -> DPRD Kabupaten Nias Selatan 0
+ID Nias Utara ->  
+ID Ogan Komering Ilir ->  
+ID Ogan Komering Ulu Timur ->  
+ID Padang Lawas Utara ->  
+ID Pamekasan ->  
+ID Pangkajene Kepulauan ->  
+ID Pasaman ->  
+ID Pasuruan -> DPRD KABUPATEN PASURUAN 0
+ID Pegunungan Bintang ->  
+ID Pemalang -> DPRD PEMALANG 0
+ID Pesawaran ->  
+ID Pidie ->  
+ID Pohuwato ->  
+ID Pontianak -> Sekretariat DPRD Kota Pontianak 0
+ID Probolinggo -> DPRD Kabupaten Probolinggo 2
+ID Pulau Taliabu ->  
+ID Purbalingga -> DPRD Purbalingga 1
+ID Raja Ampat ->  
+ID Rokan Hilir ->  
+ID Sabu Raijua ->  
+ID Sampang ->  
+ID Sarolangun ->  
+ID Semarang -> DPRD Kota Semarang 0
+ID Serang ->  
+ID Siak ->  
+ID Sigi ->  
+ID Simalungun ->  
+ID Sintang -> Humas Protokol DPRD Kabupaten Sintang 0
+ID Solok -> DPRD KABUPATEN SOLOK 0
+ID Sorong ->  
+ID Subang -> Sekretariat DPRD Subang 0
+ID Sukoharjo -> DPRD Kabupaten Sukoharjo 0
+ID Sumba Tengah ->  
+ID Sumbawa Barat ->  
+ID Supiori ->  
+ID Takalar ->  
+ID Tana Toraja ->  
+ID Tanah Laut -> SEKRETARIAT DPRD TANAH LAUT 0
+ID Tanjung Jabung Barat ->  
+ID Tapanuli Tengah ->  
+ID Tasikmalaya -> DPRD KABUPATEN TASIKMALAYA 0
+ID Teluk Bintuni ->  
+ID Timor Tengah Selatan ->  
+ID Tojo Una-Una ->  
+ID Toraja Utara ->  
+ID Tulang Bawang -> DPRD Kabupaten Tulang Bawang Barat 0
+ID Wajo -> Sekretariat DPRD Wajo 4
+ID Way Kanan ->  
+ID Yahukimo ->  
