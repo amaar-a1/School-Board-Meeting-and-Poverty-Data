@@ -1,0 +1,1915 @@
+{
+ "world-bank-poverty-indicators-for-indonesia": {
+  "title": "Indonesia - Poverty",
+  "res": [
+   [
+    "Poverty Indicators for Indonesia",
+    "CSV",
+    44831,
+    "https://data.humdata.org/dataset/911cdf27-bbbe-46fe-9fe4-2405565d4b7e/resource/3321af20-c5b9-46dc-a5da-918e1dbd9f2c/download/poverty_idn.csv"
+   ]
+  ]
+ },
+ "indonesia-mpi": {
+  "title": "Indonesia Multidimensional Poverty Index",
+  "res": [
+   [
+    "Indonesia MPI and Partial Indices",
+    "CSV",
+    4074,
+    "https://data.humdata.org/dataset/9cbac886-8a5e-4bb4-b451-c5aab13f08fe/resource/3cfa863a-389e-4417-badb-662f109b2126/download/idn_mpi.csv"
+   ],
+   [
+    "Indonesia MPI Trends Over Time",
+    "CSV",
+    7789,
+    "https://data.humdata.org/dataset/9cbac886-8a5e-4bb4-b451-c5aab13f08fe/resource/576f25f6-f3f0-41c9-862f-5f69389e18fe/download/idn_mpi_trends.csv"
+   ]
+  ]
+ },
+ "indonesia-population-living-below-the-poverty-line-2007-2018": {
+  "title": "Indonesia Population living below the poverty line, 2007-2020",
+  "res": []
+ },
+ "district-wise-poverty-indicators-2011": {
+  "title": "Nepal - District wise Poverty Indicators, 2011",
+  "res": [
+   [
+    "data_24.csv",
+    "CSV",
+    null,
+    "http://data.opennepal.net/sites/all/modules/pubdlcnt/pubdlcnt.php?file=http://data.opennepal.net/sites/default/files/resources/data_24.csv&nid=4398"
+   ]
+  ]
+ },
+ "cod-ab-idn": {
+  "title": "Indonesia - Subnational Administrative Boundaries",
+  "res": [
+   [
+    "idn_admin_boundaries.gdb.zip",
+    "Geodatabase",
+    218753706,
+    "https://data.humdata.org/dataset/84a1d98a-790b-4d66-9d14-bbfa48500802/resource/c740a308-0a63-46d6-ab15-b041e62eff58/download/idn_admin_boundaries.gdb.zip"
+   ],
+   [
+    "idn_admin_boundaries.shp.zip",
+    "SHP",
+    497626018,
+    "https://data.humdata.org/dataset/84a1d98a-790b-4d66-9d14-bbfa48500802/resource/50b9aafa-47c5-483e-a361-826320bf75d5/download/idn_admin_boundaries.shp.zip"
+   ],
+   [
+    "idn_admin_boundaries.geojson.zip",
+    "GeoJSON",
+    456203094,
+    "https://data.humdata.org/dataset/84a1d98a-790b-4d66-9d14-bbfa48500802/resource/e1421da4-8f48-47d2-ac49-79ff5bfa4d24/download/idn_admin_boundaries.geojson.zip"
+   ],
+   [
+    "idn_admin_boundaries.xlsx",
+    "XLSX",
+    14463125,
+    "https://data.humdata.org/dataset/84a1d98a-790b-4d66-9d14-bbfa48500802/resource/ba60b4d3-fd55-4fcf-b1bd-adf7e4bdba90/download/idn_admin_boundaries.xlsx"
+   ]
+  ]
+ },
+ "poverty-rates-on-district-level-2001-2011": {
+  "title": "Nepal - Poverty Rates on District Level, 2001-2011",
+  "res": [
+   [
+    "Human%20Poverty%20rate.csv",
+    "CSV",
+    null,
+    "http://data.opennepal.net/sites/all/modules/pubdlcnt/pubdlcnt.php?file=http://data.opennepal.net/sites/default/files/resources/Human%20Poverty%20rate.csv&nid=176"
+   ]
+  ]
+ },
+ "human-poverty-index-value-by-districts-2011": {
+  "title": "Nepal - Human Poverty Index Value by Districts (2011)",
+  "res": [
+   [
+    "Human%20Poverty%20Index%20Value.csv",
+    "CSV",
+    null,
+    "http://data.opennepal.net/sites/all/modules/pubdlcnt/pubdlcnt.php?file=http://data.opennepal.net/sites/default/files/resources/Human%20Poverty%20Index%20Value.csv&nid=3161"
+   ]
+  ]
+ },
+ "global-mpi": {
+  "title": "Global Multidimensional Poverty Index",
+  "res": [
+   [
+    "Global MPI and Partial Indices",
+    "CSV",
+    165057,
+    "https://data.humdata.org/dataset/42b16840-3a56-4a20-9314-7aa171f1136c/resource/ef20310e-2821-4aa9-98a8-1950f45f10d0/download/global_mpi.csv"
+   ],
+   [
+    "Global MPI Trends Over Time",
+    "CSV",
+    304360,
+    "https://data.humdata.org/dataset/42b16840-3a56-4a20-9314-7aa171f1136c/resource/7c131db3-a172-4280-b37a-85f678192fbe/download/global_mpi_trends.csv"
+   ],
+   [
+    "MPI and Partial Indices National Database",
+    "XLSX",
+    198671,
+    "https://data.humdata.org/dataset/42b16840-3a56-4a20-9314-7aa171f1136c/resource/2b59362a-0c67-4e8b-bb78-b7aaf3a183fd/download/national-results-mpi.xlsx"
+   ],
+   [
+    "MPI and Partial Indices Subnational Database",
+    "XLSX",
+    1935836,
+    "https://data.humdata.org/dataset/42b16840-3a56-4a20-9314-7aa171f1136c/resource/45b18fbb-ab0d-4f54-ae23-c078f1eccf25/download/subnational-results-mpi.xlsx"
+   ],
+   [
+    "Trends Over Time MPI Database",
+    "XLSX",
+    7247611,
+    "https://data.humdata.org/dataset/42b16840-3a56-4a20-9314-7aa171f1136c/resource/2359037c-3cef-46da-a608-db360cb18b41/download/trends-over-time-mpi.xlsx"
+   ]
+  ]
+ },
+ "potential-informal-gathering-sites-over-tanjung-pemenang-districts-indonesia-2838": {
+  "title": "Potential Informal Gathering Sites over Tanjung & Pemenang Districts, Indonesia",
+  "res": [
+   [
+    "EQ20180805IDN_shp.zip",
+    "SHP",
+    95505,
+    "https://unosat-maps.web.cern.ch/unosat-maps/ID/EQ20180805IDN/EQ20180805IDN_shp.zip"
+   ]
+  ]
+ },
+ "hdx-hapi-poverty-rate": {
+  "title": "HDX HAPI - Food Security, Nutrition & Poverty: Poverty Rate",
+  "res": [
+   [
+    "Global Food Security, Nutrition & Poverty: Poverty Rate",
+    "CSV",
+    646559,
+    "https://data.humdata.org/dataset/5308e99f-5e32-4bdf-a1ff-7b140326293d/resource/66fbe38c-ebb9-40dc-8866-fe2e977a1b1a/download/hdx_hapi_poverty_rate_global.csv"
+   ]
+  ]
+ },
+ "world-bank-climate-change-indicators-for-indonesia": {
+  "title": "Indonesia - Climate Change",
+  "res": [
+   [
+    "Climate Change Indicators for Indonesia",
+    "CSV",
+    160061,
+    "https://data.humdata.org/dataset/756df514-657f-438b-b769-e34c10db9081/resource/c4c5f7f9-ce23-4300-a217-9cb17638e032/download/climate-change_idn.csv"
+   ]
+  ]
+ },
+ "who-data-for-idn": {
+  "title": "Indonesia - Health Indicators",
+  "res": [
+   [
+    "All Health Indicators for Indonesia",
+    "CSV",
+    11136455,
+    "https://data.humdata.org/dataset/5b770544-f592-42bf-bb31-ca8a66919c36/resource/ca9a1dbd-e9d4-4157-a9fc-9fa826546167/download/health_indicators_idn.csv"
+   ],
+   [
+    "Health systems Indicators for Indonesia",
+    "CSV",
+    17053,
+    "https://data.humdata.org/dataset/5b770544-f592-42bf-bb31-ca8a66919c36/resource/c48b5aa9-08b5-436d-849c-86cffee2617b/download/health_systems_indicators_idn.csv"
+   ],
+   [
+    "Malaria Indicators for Indonesia",
+    "CSV",
+    40687,
+    "https://data.humdata.org/dataset/5b770544-f592-42bf-bb31-ca8a66919c36/resource/156c1bc3-7a12-4aba-ad90-e28a4af010e9/download/malaria_indicators_idn.csv"
+   ],
+   [
+    "Tuberculosis Indicators for Indonesia",
+    "CSV",
+    76181,
+    "https://data.humdata.org/dataset/5b770544-f592-42bf-bb31-ca8a66919c36/resource/9084ab44-d6a8-41bf-af20-346291e777db/download/tuberculosis_indicators_idn.csv"
+   ],
+   [
+    "Neglected tropical diseases Indicators for Indonesia",
+    "CSV",
+    10865,
+    "https://data.humdata.org/dataset/5b770544-f592-42bf-bb31-ca8a66919c36/resource/5e0c4483-ab1a-46bf-8e2a-f676747b0c14/download/neglected_tropical_diseases_indicators_idn.csv"
+   ],
+   [
+    "Nutrition Indicators for Indonesia",
+    "CSV",
+    2871870,
+    "https://data.humdata.org/dataset/5b770544-f592-42bf-bb31-ca8a66919c36/resource/73d96b9b-5ec2-49eb-b982-984e8e14bb69/download/nutrition_indicators_idn.csv"
+   ],
+   [
+    "World Health Statistics Indicators for Indonesia",
+    "CSV",
+    8111755,
+    "https://data.humdata.org/dataset/5b770544-f592-42bf-bb31-ca8a66919c36/resource/3a87bec2-2bdb-4760-ac0b-872b7e04c1cb/download/world_health_statistics_indicators_idn.csv"
+   ],
+   [
+    "Child mortality Indicators for Indonesia",
+    "CSV",
+    1065084,
+    "https://data.humdata.org/dataset/5b770544-f592-42bf-bb31-ca8a66919c36/resource/b762b344-0d8f-4db5-8294-33be61c0ed80/download/child_mortality_indicators_idn.csv"
+   ],
+   [
+    "Noncommunicable diseases Indicators for Indonesia",
+    "CSV",
+    1731007,
+    "https://data.humdata.org/dataset/5b770544-f592-42bf-bb31-ca8a66919c36/resource/0acf82d7-b122-49e5-9563-c1fed019797c/download/noncommunicable_diseases_indicators_idn.csv"
+   ],
+   [
+    "Maternal and reproductive health Indicators for Indonesia",
+    "CSV",
+    66598,
+    "https://data.humdata.org/dataset/5b770544-f592-42bf-bb31-ca8a66919c36/resource/6d43c3cb-c6da-4d81-ab2e-e1741936170d/download/maternal_and_reproductive_health_indicators_idn.csv"
+   ],
+   [
+    "Air pollution Indicators for Indonesia",
+    "CSV",
+    851018,
+    "https://data.humdata.org/dataset/5b770544-f592-42bf-bb31-ca8a66919c36/resource/9340aec7-6aa0-4039-8d8e-e8fc0779b526/download/air_pollution_indicators_idn.csv"
+   ],
+   [
+    "Dementia diagnosis, treatment and care Indicators for Indonesia",
+    "CSV",
+    5896,
+    "https://data.humdata.org/dataset/5b770544-f592-42bf-bb31-ca8a66919c36/resource/f12fdbe4-f6d3-4af4-9a8e-84ece4eafe3b/download/dementia_diagnosis_treatment_and_care_indicators_idn.csv"
+   ]
+  ]
+ },
+ "world-bank-education-indicators-for-indonesia": {
+  "title": "Indonesia - Education",
+  "res": [
+   [
+    "Education Indicators for Indonesia",
+    "CSV",
+    1781562,
+    "https://data.humdata.org/dataset/1c976ebc-2f71-48f8-9fea-b2f137a862e0/resource/eaccfde8-b5de-45fa-8ac6-76c1b93d9dcc/download/education_idn.csv"
+   ]
+  ]
+ },
+ "world-bank-infrastructure-indicators-for-indonesia": {
+  "title": "Indonesia - Infrastructure",
+  "res": [
+   [
+    "Infrastructure Indicators for Indonesia",
+    "CSV",
+    144402,
+    "https://data.humdata.org/dataset/d6e83d10-a33f-4705-81f2-50d296c4d5e7/resource/93a575bb-d780-4e75-ab74-9843299ea829/download/infrastructure_idn.csv"
+   ]
+  ]
+ },
+ "world-bank-aid-effectiveness-indicators-for-indonesia": {
+  "title": "Indonesia - Aid Effectiveness",
+  "res": [
+   [
+    "Aid Effectiveness Indicators for Indonesia",
+    "CSV",
+    313122,
+    "https://data.humdata.org/dataset/2f858ae7-8e15-44c8-86bb-b0a946187dff/resource/05b220a0-4da5-4d94-8879-75f2e23b6ed2/download/aid-effectiveness_idn.csv"
+   ]
+  ]
+ },
+ "landslide-impact-analysis-in-pandanarum-sub-district-banjarnegara-regency-jawa-tengah-prov": {
+  "title": "Landslide impact analysis in Pandanarum Sub-district, Banjarnegara Regency, Jawa Tengah Province, Indonesia as of 18 & 19 November 2025",
+  "res": [
+   [
+    "LS20251118IDN_gdb.zip",
+    "Geodatabase",
+    809512,
+    "https://unosat.org/static/unosat_filesystem/4221/LS20251118IDN_gdb.zip"
+   ],
+   [
+    "LS20251118IDN_SHP.zip",
+    "SHP",
+    161474,
+    "https://unosat.org/static/unosat_filesystem/4221/LS20251118IDN_SHP.zip"
+   ]
+  ]
+ },
+ "damage-assessment-of-tulehu-area-eastern-part-of-salahutu-district-maluku-tengah-regency-m": {
+  "title": "Damage assessment of Tulehu area, Eastern part of Salahutu District, Maluku Tengah Regency, Maluku Province",
+  "res": [
+   [
+    "EQ20191001IDN_gdb.zip",
+    "Geodatabase",
+    159788,
+    "https://unosat-maps.web.cern.ch/unosat-maps/ID/EQ20191001IDN/EQ20191001IDN_gdb.zip"
+   ],
+   [
+    "EQ20191001IDN_SHP.zip",
+    "SHP",
+    11376,
+    "https://unosat-maps.web.cern.ch/unosat-maps/ID/EQ20191001IDN/EQ20191001IDN_SHP.zip"
+   ]
+  ]
+ },
+ "damage-assessment-of-waai-area-eastern-part-of-salahutu-district-maluku-tengah-regency-mal": {
+  "title": "Damage assessment of Waai area, Eastern part of Salahutu District, Maluku Tengah Regency, Maluku Province",
+  "res": [
+   [
+    "EQ20191001IDN_gdb.zip",
+    "Geodatabase",
+    159788,
+    "https://unosat-maps.web.cern.ch/unosat-maps/ID/EQ20191001IDN/EQ20191001IDN_gdb.zip"
+   ],
+   [
+    "EQ20191001IDN_SHP.zip",
+    "SHP",
+    11376,
+    "https://unosat-maps.web.cern.ch/unosat-maps/ID/EQ20191001IDN/EQ20191001IDN_SHP.zip"
+   ]
+  ]
+ },
+ "world-bank-trade-indicators-for-indonesia": {
+  "title": "Indonesia - Trade",
+  "res": [
+   [
+    "Trade Indicators for Indonesia",
+    "CSV",
+    630277,
+    "https://data.humdata.org/dataset/8cd951b7-d03d-4bda-854a-866ed1e09f2d/resource/2678fb5f-3dc6-44ca-811c-376eaee2e121/download/trade_idn.csv"
+   ]
+  ]
+ },
+ "world-bank-poverty-indicators-for-malaysia": {
+  "title": "Malaysia - Poverty",
+  "res": [
+   [
+    "Poverty Indicators for Malaysia",
+    "CSV",
+    18509,
+    "https://data.humdata.org/dataset/6ed54e42-7be5-4f1d-aa05-37325e56ff93/resource/598644b0-c483-4d31-ae7d-78f6ddff88cc/download/poverty_mys.csv"
+   ]
+  ]
+ },
+ "world-bank-education-indicators-for-malaysia": {
+  "title": "Malaysia - Education",
+  "res": [
+   [
+    "Education Indicators for Malaysia",
+    "CSV",
+    1670521,
+    "https://data.humdata.org/dataset/2bab7cea-b4e9-459b-a86f-389ff3fbbae4/resource/3d14ae69-e7c0-4927-bc28-3f4cd9e54c2e/download/education_mys.csv"
+   ]
+  ]
+ },
+ "world-bank-infrastructure-indicators-for-malaysia": {
+  "title": "Malaysia - Infrastructure",
+  "res": [
+   [
+    "Infrastructure Indicators for Malaysia",
+    "CSV",
+    146600,
+    "https://data.humdata.org/dataset/135911ca-5c4b-4ec2-ad9b-2f70464c4c73/resource/5307d8f4-4bee-4b16-ab5c-a2961343428d/download/infrastructure_mys.csv"
+   ]
+  ]
+ },
+ "world-bank-trade-indicators-for-malaysia": {
+  "title": "Malaysia - Trade",
+  "res": [
+   [
+    "Trade Indicators for Malaysia",
+    "CSV",
+    644460,
+    "https://data.humdata.org/dataset/c74f5860-0ce3-497f-9ab7-49c4004da8d8/resource/1e5d061c-c583-4efd-b24b-2287c67c5d0a/download/trade_mys.csv"
+   ]
+  ]
+ },
+ "world-bank-climate-change-indicators-for-malaysia": {
+  "title": "Malaysia - Climate Change",
+  "res": [
+   [
+    "Climate Change Indicators for Malaysia",
+    "CSV",
+    156711,
+    "https://data.humdata.org/dataset/f7c2aaba-248d-417d-b505-183026bf5d4a/resource/807e2df6-692a-4550-af64-78d164d6e2cb/download/climate-change_mys.csv"
+   ]
+  ]
+ },
+ "who-data-for-mys": {
+  "title": "Malaysia - Health Indicators",
+  "res": [
+   [
+    "All Health Indicators for Malaysia",
+    "CSV",
+    9273758,
+    "https://data.humdata.org/dataset/355ea96c-73fa-47a6-83fe-d41e94fe8500/resource/2dfd4275-a468-420e-8789-5313b914fa41/download/health_indicators_mys.csv"
+   ],
+   [
+    "Health systems Indicators for Malaysia",
+    "CSV",
+    7488,
+    "https://data.humdata.org/dataset/355ea96c-73fa-47a6-83fe-d41e94fe8500/resource/38cf1a7e-5037-464b-81bd-51c628908ccd/download/health_systems_indicators_mys.csv"
+   ],
+   [
+    "Malaria Indicators for Malaysia",
+    "CSV",
+    38311,
+    "https://data.humdata.org/dataset/355ea96c-73fa-47a6-83fe-d41e94fe8500/resource/f2029b87-5b21-4f27-bb96-2be2d6970e36/download/malaria_indicators_mys.csv"
+   ],
+   [
+    "Tuberculosis Indicators for Malaysia",
+    "CSV",
+    74515,
+    "https://data.humdata.org/dataset/355ea96c-73fa-47a6-83fe-d41e94fe8500/resource/85b500e4-e7cf-48dc-8379-fe5257d244ae/download/tuberculosis_indicators_mys.csv"
+   ],
+   [
+    "Neglected tropical diseases Indicators for Malaysia",
+    "CSV",
+    10850,
+    "https://data.humdata.org/dataset/355ea96c-73fa-47a6-83fe-d41e94fe8500/resource/cd2364a7-a9bb-4aea-97cd-a23f6d637916/download/neglected_tropical_diseases_indicators_mys.csv"
+   ],
+   [
+    "Nutrition Indicators for Malaysia",
+    "CSV",
+    1743291,
+    "https://data.humdata.org/dataset/355ea96c-73fa-47a6-83fe-d41e94fe8500/resource/a94a9901-1976-4398-a86a-db4a83e2fe87/download/nutrition_indicators_mys.csv"
+   ],
+   [
+    "World Health Statistics Indicators for Malaysia",
+    "CSV",
+    6702309,
+    "https://data.humdata.org/dataset/355ea96c-73fa-47a6-83fe-d41e94fe8500/resource/0ed95892-c2f7-479e-8202-3f720aa59690/download/world_health_statistics_indicators_mys.csv"
+   ],
+   [
+    "Child mortality Indicators for Malaysia",
+    "CSV",
+    938535,
+    "https://data.humdata.org/dataset/355ea96c-73fa-47a6-83fe-d41e94fe8500/resource/457f9231-d04d-425d-80a7-baf3ef609281/download/child_mortality_indicators_mys.csv"
+   ],
+   [
+    "Noncommunicable diseases Indicators for Malaysia",
+    "CSV",
+    1727169,
+    "https://data.humdata.org/dataset/355ea96c-73fa-47a6-83fe-d41e94fe8500/resource/a3804283-c82b-4ad6-8668-29b77bbe855a/download/noncommunicable_diseases_indicators_mys.csv"
+   ],
+   [
+    "Air pollution Indicators for Malaysia",
+    "CSV",
+    837857,
+    "https://data.humdata.org/dataset/355ea96c-73fa-47a6-83fe-d41e94fe8500/resource/d14a305f-d324-4863-8952-d989df811dce/download/air_pollution_indicators_mys.csv"
+   ],
+   [
+    "Dementia diagnosis, treatment and care Indicators for Malaysia",
+    "CSV",
+    26562,
+    "https://data.humdata.org/dataset/355ea96c-73fa-47a6-83fe-d41e94fe8500/resource/34bb7ff3-27e9-421c-8747-f02ef13b2a4e/download/dementia_diagnosis_treatment_and_care_indicators_mys.csv"
+   ],
+   [
+    "Environment and health Indicators for Malaysia",
+    "CSV",
+    908048,
+    "https://data.humdata.org/dataset/355ea96c-73fa-47a6-83fe-d41e94fe8500/resource/8dc4f243-a97e-486a-ad32-c6a66be10ea9/download/environment_and_health_indicators_mys.csv"
+   ]
+  ]
+ },
+ "malaysia---risk-assessment-indicators": {
+  "title": "Malaysia - Risk Assessment Indicators",
+  "res": [
+   [
+    "MYS_ADM2_flood_exposure.csv",
+    "CSV",
+    39111,
+    "https://hot.storage.heigit.org/heigit-hdx-public/risk_assessment_inputs/mys/MYS_ADM2_flood_exposure.csv"
+   ],
+   [
+    "MYS_ADM2_facilities.csv",
+    "CSV",
+    3184,
+    "https://hot.storage.heigit.org/heigit-hdx-public/risk_assessment_inputs/mys/MYS_ADM2_facilities.csv"
+   ],
+   [
+    "MYS_ADM2_rural_population.csv",
+    "CSV",
+    10068,
+    "https://hot.storage.heigit.org/heigit-hdx-public/risk_assessment_inputs/mys/MYS_ADM2_rural_population.csv"
+   ],
+   [
+    "MYS_ADM2_access.csv",
+    "CSV",
+    10655,
+    "https://hot.storage.heigit.org/heigit-hdx-public/risk_assessment_inputs/mys/MYS_ADM2_access.csv"
+   ],
+   [
+    "MYS_ADM2_coping.csv",
+    "CSV",
+    35952,
+    "https://hot.storage.heigit.org/heigit-hdx-public/risk_assessment_inputs/mys/MYS_ADM2_coping.csv"
+   ],
+   [
+    "MYS_ADM2_demographics.csv",
+    "CSV",
+    9715,
+    "https://hot.storage.heigit.org/heigit-hdx-public/risk_assessment_inputs/mys/MYS_ADM2_demographics.csv"
+   ],
+   [
+    "MYS_ADM2_vulnerability.csv",
+    "CSV",
+    17748,
+    "https://hot.storage.heigit.org/heigit-hdx-public/risk_assessment_inputs/mys/MYS_ADM2_vulnerability.csv"
+   ],
+   [
+    "MYS_ADM2_evacuability.csv",
+    "CSV",
+    10710,
+    "https://hot.storage.heigit.org/heigit-hdx-public/risk_assessment_inputs/mys/MYS_ADM2_evacuability.csv"
+   ],
+   [
+    "MYS_ADM2_rai.csv",
+    "CSV",
+    15478,
+    "https://hot.storage.heigit.org/heigit-hdx-public/risk_assessment_inputs/mys/MYS_ADM2_rai.csv"
+   ],
+   [
+    "MYS_ADM2_cyclone_exposure.csv",
+    "CSV",
+    16453,
+    "https://hot.storage.heigit.org/heigit-hdx-public/risk_assessment_inputs/mys/MYS_ADM2_cyclone_exposure.csv"
+   ]
+  ]
+ },
+ "world-bank-health-indicators-for-malaysia": {
+  "title": "Malaysia - Health",
+  "res": [
+   [
+    "Health Indicators for Malaysia",
+    "CSV",
+    825497,
+    "https://data.humdata.org/dataset/f787c04e-948b-429b-8e86-348a1778d722/resource/c8460437-6b8f-45bb-9d08-a3eea853ad6a/download/health_mys.csv"
+   ]
+  ]
+ },
+ "world-bank-financial-sector-indicators-for-malaysia": {
+  "title": "Malaysia - Financial Sector",
+  "res": [
+   [
+    "Financial Sector Indicators for Malaysia",
+    "CSV",
+    453312,
+    "https://data.humdata.org/dataset/52f2f6ad-cd23-4a7a-885b-0b0b4b3583c2/resource/133f5dab-c1ab-4926-a856-2b181065ff7d/download/financial-sector_mys.csv"
+   ]
+  ]
+ },
+ "mys-corruption-perceptions-index": {
+  "title": "Malaysia - Corruption Perceptions Index",
+  "res": [
+   [
+    "mys_cpi.csv",
+    "CSV",
+    649,
+    "https://data.humdata.org/dataset/b9aed965-e0d0-4d71-b805-8936aea8e5b7/resource/aa684538-2e9f-4b6d-87d9-0b9f7820a416/download/mys_cpi.csv"
+   ]
+  ]
+ },
+ "malaysia-road-surface-data": {
+  "title": "Malaysia: Road Surface Data",
+  "res": [
+   [
+    "Malaysia GeoJSON Resource",
+    "GeoJSON",
+    2174707332,
+    "https://downloads.ohsome.org/hdx/mapillary_road_surface/heigit_mys_roadsurface_lines.geojson"
+   ],
+   [
+    "Malaysia GeoPackage Resource",
+    "Geopackage",
+    885882880,
+    "https://downloads.ohsome.org/hdx/mapillary_road_surface/heigit_mys_roadsurface_lines.gpkg"
+   ]
+  ]
+ },
+ "hdro-data-for-malaysia": {
+  "title": "Malaysia - Human Development Indicators",
+  "res": [
+   [
+    "Human Development Indicators for Malaysia",
+    "CSV",
+    102887,
+    "https://data.humdata.org/dataset/bb543c30-774f-4de2-bcd4-e8a44bd0f1b0/resource/cdeb8243-946d-4dae-be86-71cf08134959/download/hdro_indicators_mys.csv"
+   ],
+   [
+    "Aggregated Human Development Indicators for Malaysia",
+    "CSV",
+    15529,
+    "https://data.humdata.org/dataset/bb543c30-774f-4de2-bcd4-e8a44bd0f1b0/resource/59f8479e-6672-45c9-a11c-4a0123e94f70/download/hdro_indicators_aggregates_mys.csv"
+   ]
+  ]
+ },
+ "world-bank-poverty-indicators-for-thailand": {
+  "title": "Thailand - Poverty",
+  "res": [
+   [
+    "Poverty Indicators for Thailand",
+    "CSV",
+    39870,
+    "https://data.humdata.org/dataset/bf40d4ca-be99-4d73-95a7-b1219effbdb9/resource/524cf5aa-362e-4d58-af5f-8b3a06e34c74/download/poverty_tha.csv"
+   ]
+  ]
+ },
+ "thailand-mpi": {
+  "title": "Thailand Multidimensional Poverty Index",
+  "res": [
+   [
+    "Thailand MPI and Partial Indices",
+    "CSV",
+    790,
+    "https://data.humdata.org/dataset/7a35ffec-fc42-43b6-95e3-92d19f73fbdc/resource/51b6e293-a69e-4a10-9066-88f4f4869b24/download/tha_mpi.csv"
+   ],
+   [
+    "Thailand MPI Trends Over Time",
+    "CSV",
+    2706,
+    "https://data.humdata.org/dataset/7a35ffec-fc42-43b6-95e3-92d19f73fbdc/resource/fdf669bd-f14e-4f33-aad2-07f4db6975a5/download/tha_mpi_trends.csv"
+   ]
+  ]
+ },
+ "cod-ab-tha": {
+  "title": "Thailand - Subnational Administrative Boundaries",
+  "res": [
+   [
+    "tha_admin_boundaries.gdb.zip",
+    "Geodatabase",
+    174679979,
+    "https://data.humdata.org/dataset/d24bdc45-eb4c-4e3d-8b16-44db02667c27/resource/ccbf3740-0638-48ea-b612-cdb61ef5462c/download/tha_admin_boundaries.gdb.zip"
+   ],
+   [
+    "tha_admin_boundaries.shp.zip",
+    "SHP",
+    376696781,
+    "https://data.humdata.org/dataset/d24bdc45-eb4c-4e3d-8b16-44db02667c27/resource/10dde461-b781-4904-9559-7deb3e960913/download/tha_admin_boundaries.shp.zip"
+   ],
+   [
+    "tha_admin_boundaries.geojson.zip",
+    "GeoJSON",
+    436725731,
+    "https://data.humdata.org/dataset/d24bdc45-eb4c-4e3d-8b16-44db02667c27/resource/89a09f13-7b83-458a-9531-4f2418613065/download/tha_admin_boundaries.geojson.zip"
+   ],
+   [
+    "tha_admin_boundaries.xlsx",
+    "XLSX",
+    1850520,
+    "https://data.humdata.org/dataset/d24bdc45-eb4c-4e3d-8b16-44db02667c27/resource/a925b917-01ae-48c4-9279-7efe680a6b11/download/tha_admin_boundaries.xlsx"
+   ]
+  ]
+ },
+ "thailand-languages": {
+  "title": "Thailand: Languages",
+  "res": [
+   [
+    "th_lang_metadata_v01.pdf",
+    "PDF",
+    105782,
+    "https://data.humdata.org/dataset/5fada7f4-9c2a-42eb-8210-620469d217c4/resource/fbbf0cb1-7004-4dde-b69e-455675c4d2db/download/th_lang_metadata_v01.pdf"
+   ],
+   [
+    "th_lang_v01.xlsx",
+    "XLSX",
+    231978,
+    "https://data.humdata.org/dataset/5fada7f4-9c2a-42eb-8210-620469d217c4/resource/3661aacd-d9b7-4eb0-8167-681ac13d4042/download/th_lang_v01.xlsx"
+   ],
+   [
+    "th_lang_admin0_v01.csv",
+    "CSV",
+    23084,
+    "https://data.humdata.org/dataset/5fada7f4-9c2a-42eb-8210-620469d217c4/resource/d3760897-beb0-4b9f-b702-7d363721f2d2/download/th_lang_admin0_v01.csv"
+   ],
+   [
+    "th_lang_admin1_v01.csv",
+    "CSV",
+    10107,
+    "https://data.humdata.org/dataset/5fada7f4-9c2a-42eb-8210-620469d217c4/resource/9dd74ec9-8208-4ec7-8caa-4bf0eb5fd9cb/download/th_lang_admin1_v01.csv"
+   ],
+   [
+    "th_lang_admin2_v01.csv",
+    "CSV",
+    108386,
+    "https://data.humdata.org/dataset/5fada7f4-9c2a-42eb-8210-620469d217c4/resource/927f95c2-1658-4bec-8a7e-0450d49308e9/download/th_lang_admin2_v01.csv"
+   ]
+  ]
+ },
+ "damage-assessment-around-the-chemical-factory-samut-prakan-province-thailand": {
+  "title": "Damage assessment around the chemical factory, Samut Prakan Province, Thailand",
+  "res": [
+   [
+    "AC20210705THA_GDB.zip",
+    "Geodatabase",
+    185520,
+    "https://unosat-maps.web.cern.ch/TH/AC20210705THA/AC20210705THA_GDB.zip"
+   ],
+   [
+    "AC20210705THA_SHP.zip",
+    "SHP",
+    14261,
+    "https://unosat-maps.web.cern.ch/TH/AC20210705THA/AC20210705THA_SHP.zip"
+   ]
+  ]
+ },
+ "world-bank-infrastructure-indicators-for-thailand": {
+  "title": "Thailand - Infrastructure",
+  "res": [
+   [
+    "Infrastructure Indicators for Thailand",
+    "CSV",
+    136934,
+    "https://data.humdata.org/dataset/5ee3a463-8027-4a56-ac0a-d6f105fe2e30/resource/8adf34f1-571e-4f61-88c7-6d53606beccb/download/infrastructure_tha.csv"
+   ]
+  ]
+ },
+ "tha-corruption-perceptions-index": {
+  "title": "Thailand - Corruption Perceptions Index",
+  "res": [
+   [
+    "tha_cpi.csv",
+    "CSV",
+    658,
+    "https://data.humdata.org/dataset/ea723880-8b01-4575-b109-388d5f2ad2ee/resource/77f1ab9c-3f7e-4e2f-9a3f-4fda7a85249e/download/tha_cpi.csv"
+   ]
+  ]
+ },
+ "philippines-poverty-statistics": {
+  "title": "Philippines: Poverty statistics",
+  "res": [
+   [
+    "200604_Updated Annual Per Capita Poverty Threshold, Poverty Incidence and Magnitude of Poor Families with Measures of Precision, by Region and Province_2015 and 2018-1.xlsx",
+    "XLSX",
+    2771277,
+    "https://data.humdata.org/dataset/172bc2ba-2318-4b50-9c15-d5c5d3cd5186/resource/d8eb16a9-81ed-4375-974e-05eb99004c13/download/200604_updated-annual-per-capita-poverty-threshold-poverty-incidence-and-magnitude-of-poor-fami.xlsx"
+   ],
+   [
+    "200604_Updated Annual Per Capita Poverty Threshold, Poverty Incidence and Magnitude of Poor Population with Measures of Precision, by Region and Province_2015 and 2018.xlsx",
+    "XLSX",
+    2806279,
+    "https://data.humdata.org/dataset/172bc2ba-2318-4b50-9c15-d5c5d3cd5186/resource/9d73f7fa-210b-49af-a287-47bf9e2b0a01/download/200604_updated-annual-per-capita-poverty-threshold-poverty-incidence-and-magnitude-of-poor-popu.xlsx"
+   ],
+   [
+    "200604_Updated Annual Per Capita Poverty Threshold_Poverty Incidence and Mag of Poor Families_by Reg, Prov, HUC_2018.xlsx",
+    "XLSX",
+    2726087,
+    "https://data.humdata.org/dataset/172bc2ba-2318-4b50-9c15-d5c5d3cd5186/resource/72d94e74-fb8a-409a-911e-fb68b5d726d9/download/200604_updated-annual-per-capita-poverty-threshold_poverty-incidence-and-mag-of-poor-families_b.xlsx"
+   ],
+   [
+    "200604_Updated Annual Per Capita Poverty Threshold_Poverty Incidence and Mag of Poor Population, by Reg, Prov and HUC_2018.xlsx",
+    "XLSX",
+    2721282,
+    "https://data.humdata.org/dataset/172bc2ba-2318-4b50-9c15-d5c5d3cd5186/resource/b831cea6-7e14-4271-b810-020519051e46/download/200604_updated-annual-per-capita-poverty-threshold_poverty-incidence-and-mag-of-poor-population.xlsx"
+   ],
+   [
+    "200305_Annual Per Capita Poverty Threshold and Poverty Incidence among Population_by Region, Province and Highly Urbanized Cities - 2018.xlsx",
+    "XLSX",
+    2710476,
+    "https://data.humdata.org/dataset/172bc2ba-2318-4b50-9c15-d5c5d3cd5186/resource/a168f2fe-5d34-400c-81a6-f0b8305bffa9/download/200305_annual-per-capita-poverty-threshold-and-poverty-incidence-among-population_by-region-pro.xlsx"
+   ],
+   [
+    "200305_Annual Per Capita Poverty Threshold, Poverty Incidence among Families_by Region and Province - 2015 and 2018.xlsx",
+    "XLSX",
+    2721179,
+    "https://data.humdata.org/dataset/172bc2ba-2318-4b50-9c15-d5c5d3cd5186/resource/96e305e8-1248-448f-8c9f-a087e7602cec/download/200305_annual-per-capita-poverty-threshold-poverty-incidence-among-families_by-region-and-provi.xlsx"
+   ],
+   [
+    "190710_poverty-statistics.xlsx",
+    "XLSX",
+    1681126,
+    "https://data.humdata.org/dataset/172bc2ba-2318-4b50-9c15-d5c5d3cd5186/resource/823f5f8d-89f8-4055-8760-b8ee92f47794/download/190710_poverty-statistics.xlsx"
+   ]
+  ]
+ },
+ "who-data-for-tha": {
+  "title": "Thailand - Health Indicators",
+  "res": [
+   [
+    "All Health Indicators for Thailand",
+    "CSV",
+    10462189,
+    "https://data.humdata.org/dataset/df82d47a-65e3-4986-9061-3a6711b6c50f/resource/89c6180a-db3b-4950-9f8f-70f8756ab80d/download/health_indicators_tha.csv"
+   ],
+   [
+    "Health systems Indicators for Thailand",
+    "CSV",
+    17624,
+    "https://data.humdata.org/dataset/df82d47a-65e3-4986-9061-3a6711b6c50f/resource/919acf5f-2e4c-4ef9-85bb-cd300e8b3753/download/health_systems_indicators_tha.csv"
+   ],
+   [
+    "Malaria Indicators for Thailand",
+    "CSV",
+    41808,
+    "https://data.humdata.org/dataset/df82d47a-65e3-4986-9061-3a6711b6c50f/resource/12973ccb-1858-47e6-a75e-5b2e428f35c5/download/malaria_indicators_tha.csv"
+   ],
+   [
+    "Tuberculosis Indicators for Thailand",
+    "CSV",
+    72079,
+    "https://data.humdata.org/dataset/df82d47a-65e3-4986-9061-3a6711b6c50f/resource/2e2a2e80-2bc3-4430-98b1-d229174a8c6e/download/tuberculosis_indicators_tha.csv"
+   ],
+   [
+    "Neglected tropical diseases Indicators for Thailand",
+    "CSV",
+    3889,
+    "https://data.humdata.org/dataset/df82d47a-65e3-4986-9061-3a6711b6c50f/resource/028c7d52-d8a3-42a3-ac93-3d8f41d45b19/download/neglected_tropical_diseases_indicators_tha.csv"
+   ],
+   [
+    "Nutrition Indicators for Thailand",
+    "CSV",
+    2458027,
+    "https://data.humdata.org/dataset/df82d47a-65e3-4986-9061-3a6711b6c50f/resource/25e88369-20ff-47f5-acb4-e36f3553af28/download/nutrition_indicators_tha.csv"
+   ],
+   [
+    "World Health Statistics Indicators for Thailand",
+    "CSV",
+    7463266,
+    "https://data.humdata.org/dataset/df82d47a-65e3-4986-9061-3a6711b6c50f/resource/b3a294e4-9bd2-433e-8b7d-91b19d00a6cf/download/world_health_statistics_indicators_tha.csv"
+   ],
+   [
+    "Child mortality Indicators for Thailand",
+    "CSV",
+    1055027,
+    "https://data.humdata.org/dataset/df82d47a-65e3-4986-9061-3a6711b6c50f/resource/8bcbb4d0-1917-46ea-bc25-03b929c55112/download/child_mortality_indicators_tha.csv"
+   ],
+   [
+    "Noncommunicable diseases Indicators for Thailand",
+    "CSV",
+    1734939,
+    "https://data.humdata.org/dataset/df82d47a-65e3-4986-9061-3a6711b6c50f/resource/805d3265-da8d-49ab-af68-bec2e45de408/download/noncommunicable_diseases_indicators_tha.csv"
+   ],
+   [
+    "Maternal and reproductive health Indicators for Thailand",
+    "CSV",
+    67245,
+    "https://data.humdata.org/dataset/df82d47a-65e3-4986-9061-3a6711b6c50f/resource/f2aeec25-bcf0-4ca1-9c0d-b02b21764fe9/download/maternal_and_reproductive_health_indicators_tha.csv"
+   ],
+   [
+    "Air pollution Indicators for Thailand",
+    "CSV",
+    848680,
+    "https://data.humdata.org/dataset/df82d47a-65e3-4986-9061-3a6711b6c50f/resource/75e209e9-b071-42c0-8d26-ecace65e94b1/download/air_pollution_indicators_tha.csv"
+   ],
+   [
+    "Dementia diagnosis, treatment and care Indicators for Thailand",
+    "CSV",
+    24796,
+    "https://data.humdata.org/dataset/df82d47a-65e3-4986-9061-3a6711b6c50f/resource/9ca22adf-dbc3-41f8-80da-9d55f2922009/download/dementia_diagnosis_treatment_and_care_indicators_tha.csv"
+   ]
+  ]
+ },
+ "tha-adpc-gem": {
+  "title": "Thailand - Gender Equality Monitor",
+  "res": [
+   [
+    "tha-gem-gii-national.csv",
+    "CSV",
+    368,
+    "https://data.humdata.org/dataset/e39d778f-ed7b-49ed-913c-92962bee2f48/resource/d372b0fe-3de8-4a03-873e-79a3d140a46c/download/tha-gem-gii-national.csv"
+   ],
+   [
+    "tha-gem-gii-subnational.csv",
+    "CSV",
+    6087,
+    "https://data.humdata.org/dataset/e39d778f-ed7b-49ed-913c-92962bee2f48/resource/57f63e8b-0670-43f7-b6b7-b5f8bc0dac7d/download/tha-gem-gii-subnational.csv"
+   ],
+   [
+    "tha-gem-dimension-national.csv",
+    "CSV",
+    5975,
+    "https://data.humdata.org/dataset/e39d778f-ed7b-49ed-913c-92962bee2f48/resource/d98e0c0c-0764-43d6-a0c1-48b22b784b39/download/tha-gem-dimension-national.csv"
+   ],
+   [
+    "tha-gem-dimension-subnational.csv",
+    "CSV",
+    123680,
+    "https://data.humdata.org/dataset/e39d778f-ed7b-49ed-913c-92962bee2f48/resource/dce64072-1a14-4bc8-acb7-e6de1949677f/download/tha-gem-dimension-subnational.csv"
+   ],
+   [
+    "tha-gem-indicator-national.csv",
+    "CSV",
+    26558,
+    "https://data.humdata.org/dataset/e39d778f-ed7b-49ed-913c-92962bee2f48/resource/03617a46-25aa-4599-887e-ded4c7a7b8b3/download/tha-gem-indicator-national.csv"
+   ],
+   [
+    "tha-gem-indicator-subnational.csv",
+    "CSV",
+    986301,
+    "https://data.humdata.org/dataset/e39d778f-ed7b-49ed-913c-92962bee2f48/resource/d03e1994-8168-4f24-91d9-d8a96bc23491/download/tha-gem-indicator-subnational.csv"
+   ],
+   [
+    "tha-gem-sex-disaggregated.csv",
+    "CSV",
+    270057,
+    "https://data.humdata.org/dataset/e39d778f-ed7b-49ed-913c-92962bee2f48/resource/08bcecd0-962a-46cc-bc4a-76e3d1fa2524/download/tha-gem-sex-disaggregated.csv"
+   ],
+   [
+    "tha-gem-country-boundary.geojson",
+    "GeoJSON",
+    116331,
+    "https://data.humdata.org/dataset/e39d778f-ed7b-49ed-913c-92962bee2f48/resource/b3c10d56-4b7c-46b8-900e-c7eafbb90ee0/download/tha-gem-country-boundary.geojson"
+   ],
+   [
+    "tha-gem-province-boundaries.geojson",
+    "GeoJSON",
+    335741,
+    "https://data.humdata.org/dataset/e39d778f-ed7b-49ed-913c-92962bee2f48/resource/2fbffae6-5903-458e-a847-905550ffa2ce/download/tha-gem-province-boundaries.geojson"
+   ]
+  ]
+ },
+ "world-bank-climate-change-indicators-for-thailand": {
+  "title": "Thailand - Climate Change",
+  "res": [
+   [
+    "Climate Change Indicators for Thailand",
+    "CSV",
+    149574,
+    "https://data.humdata.org/dataset/855f0095-030e-4a35-adf1-c694e48916d0/resource/8e82b21a-f056-45f5-bbb0-7c9984855207/download/climate-change_tha.csv"
+   ]
+  ]
+ },
+ "world-bank-health-indicators-for-thailand": {
+  "title": "Thailand - Health",
+  "res": [
+   [
+    "Health Indicators for Thailand",
+    "CSV",
+    902930,
+    "https://data.humdata.org/dataset/2652b4ea-a343-443f-938a-b32c4fe1643b/resource/c407c216-a7f0-424e-b0f4-746cf282a82a/download/health_tha.csv"
+   ]
+  ]
+ },
+ "world-bank-aid-effectiveness-indicators-for-thailand": {
+  "title": "Thailand - Aid Effectiveness",
+  "res": [
+   [
+    "Aid Effectiveness Indicators for Thailand",
+    "CSV",
+    303479,
+    "https://data.humdata.org/dataset/e5cbab82-a4fd-4a4b-a085-c11fd1a4b123/resource/14ac2187-d7b5-4d26-9f40-71cadf323ba2/download/aid-effectiveness_tha.csv"
+   ]
+  ]
+ },
+ "world-bank-trade-indicators-for-thailand": {
+  "title": "Thailand - Trade",
+  "res": [
+   [
+    "Trade Indicators for Thailand",
+    "CSV",
+    670749,
+    "https://data.humdata.org/dataset/d5459a07-b95e-4e89-9a75-5fc51824b47d/resource/9f8a8e9d-b7f9-4984-9efe-fa6ba6ac63a2/download/trade_tha.csv"
+   ]
+  ]
+ },
+ "world-bank-poverty-indicators-for-nepal": {
+  "title": "Nepal - Poverty",
+  "res": [
+   [
+    "Poverty Indicators for Nepal",
+    "CSV",
+    8407,
+    "https://data.humdata.org/dataset/97792e6e-239e-4a57-b890-3079cf4c216a/resource/6f35805c-a743-47ba-bde1-fa53fe942b2a/download/poverty_npl.csv"
+   ]
+  ]
+ },
+ "nepal-district-headquarters": {
+  "title": "Nepal District Headquarters",
+  "res": [
+   [
+    "npl_pplp_dhq_25K_50K_sdn_wgs84.shp.zip",
+    "SHP",
+    10073,
+    "https://data.humdata.org/dataset/13e78b4c-3c11-47f8-aaff-6262adb20448/resource/9a273613-c0a3-4978-9a1e-b36656646a89/download/npl-pplp-dhq-25k-50k-sdn-wgs84-shp.zip"
+   ]
+  ]
+ },
+ "nepal-mpi": {
+  "title": "Nepal Multidimensional Poverty Index",
+  "res": [
+   [
+    "Nepal MPI and Partial Indices",
+    "CSV",
+    1042,
+    "https://data.humdata.org/dataset/a84458c6-a241-4ba8-b17d-4377964c427a/resource/9bdfdc26-ccdd-4bf5-b437-b08ef87e6853/download/npl_mpi.csv"
+   ],
+   [
+    "Nepal MPI Trends Over Time",
+    "CSV",
+    764,
+    "https://data.humdata.org/dataset/a84458c6-a241-4ba8-b17d-4377964c427a/resource/c199519e-1913-4971-8fac-539761c1d172/download/npl_mpi_trends.csv"
+   ]
+  ]
+ },
+ "nepal-census-2011-district-profiles-demography": {
+  "title": "Nepal Census 2011 District Profiles (Demography)",
+  "res": [
+   [
+    "District_Profile_Census_2011.zip",
+    "XLSX",
+    19136513,
+    "https://data.humdata.org/dataset/548c802c-d29d-40a8-829b-6cba73117bf1/resource/416e3143-9c1b-4a03-90b6-921e28c70f8f/download/district-profile-census-2011.zip"
+   ],
+   [
+    "2011 Household Facilities.xlsx",
+    "XLSX",
+    364077,
+    "https://data.humdata.org/dataset/548c802c-d29d-40a8-829b-6cba73117bf1/resource/dbe4462b-a8b7-439f-b565-452d7533a879/download/2011-household-facilities.xlsx"
+   ],
+   [
+    "Census 2011 Type of Houses.xlsx",
+    "XLSX",
+    22580,
+    "https://data.humdata.org/dataset/548c802c-d29d-40a8-829b-6cba73117bf1/resource/aa446071-aebb-4853-9b48-32b197314496/download/census-2011-type-of-houses.xlsx"
+   ],
+   [
+    "DistricWise Population 2011_v1.xlsx",
+    "XLSX",
+    21152,
+    "https://data.humdata.org/dataset/548c802c-d29d-40a8-829b-6cba73117bf1/resource/84a1cfc5-444c-432e-901f-a9f5379910ff/download/districwise-population-2011-v1.xlsx"
+   ],
+   [
+    "Nepal Household and Population data at District Level Census 2011 .xls",
+    "XLS",
+    1510912,
+    "https://data.humdata.org/dataset/548c802c-d29d-40a8-829b-6cba73117bf1/resource/c577c4ac-7991-4544-8203-fdc6006b1905/download/nepal-household-and-population-data-at-district-level-census-2011.xls"
+   ]
+  ]
+ },
+ "district-wise-human-development-index-2011": {
+  "title": "Nepal - District wise Human Development Index (2011)",
+  "res": [
+   [
+    "District%20wise%20HDI_2011.csv",
+    "CSV",
+    null,
+    "http://data.opennepal.net/sites/all/modules/pubdlcnt/pubdlcnt.php?file=http://data.opennepal.net/sites/default/files/resources/District%20wise%20HDI_2011.csv&nid=3387"
+   ]
+  ]
+ },
+ "nepal-census-2011-district-profiles-health": {
+  "title": "Nepal Census 2011 District Profiles (Health)",
+  "res": [
+   [
+    "Health_Profile.zip",
+    "XLSX",
+    177061,
+    "https://data.humdata.org/dataset/154b90d0-6a95-4998-8e44-fc622ede6e5b/resource/5d71ec66-3893-42ba-8cf2-87f2ad732ad2/download/health-profile.zip"
+   ]
+  ]
+ },
+ "nepal-census-2011-district-profiles-education": {
+  "title": "Nepal Census 2011 District Profiles (Education)",
+  "res": [
+   [
+    "Education_Profile.zip",
+    "XLSX",
+    781528,
+    "https://data.humdata.org/dataset/0ce23683-6765-4793-aad0-845cf96370a8/resource/2061ec10-7d78-4c77-b4bf-144f7ef27bfa/download/education-profile.zip"
+   ]
+  ]
+ },
+ "number-of-lake-by-district-at-various-height-in-nepal-2009": {
+  "title": "Nepal - Number of Lake by District at Various Height in Nepal, 2009",
+  "res": [
+   [
+    "lake%20by%20district%20at%20various%20height.csv",
+    "CSV",
+    null,
+    "http://data.opennepal.net/sites/all/modules/pubdlcnt/pubdlcnt.php?file=http://data.opennepal.net/sites/default/files/resources/lake%20by%20district%20at%20various%20height.csv&nid=4322"
+   ]
+  ]
+ },
+ "eos-rs-nepal-rasuwa-district-floods-jul-2025": {
+  "title": "Nepal Rasuwa District Floods: Damage Proxy Map, Jul 2025",
+  "res": [
+   [
+    "EOS-RS_20250709_DPM_S1_Nepal_Rasuwa_District_Floods_v0.9.zip",
+    "GeoTIFF",
+    29828034,
+    "https://data.humdata.org/dataset/16eff414-6dde-4b65-b3b5-f2963a116bbc/resource/3158b978-d7d8-42f8-b2e5-5d203a0ba338/download/eos-rs_20250709_dpm_s1_nepal_rasuwa_district_floods_v0.9.zip"
+   ]
+  ]
+ },
+ "nepal-landslides-location": {
+  "title": "Nepal: Landslides location",
+  "res": [
+   [
+    "npl_landslidesp_unosat_150505.zip",
+    "SHP",
+    2309,
+    "https://data.humdata.org/dataset/a6df7be3-8fc9-4a55-8472-8cc567584b2d/resource/e5ab8bb8-7b53-4dee-bc14-ad8bb7249a41/download/npl-landslidesp-unosat-150505.zip"
+   ],
+   [
+    "Landslides_from_Nepal_Earthquake.kmz",
+    "KMZ",
+    1181,
+    "https://data.humdata.org/dataset/a6df7be3-8fc9-4a55-8472-8cc567584b2d/resource/8aac9611-8352-48f1-83f7-ea3652146cf8/download/landslides-from-nepal-earthquake.kmz"
+   ],
+   [
+    "npl_landslidesp_unosat_150505.csv",
+    "CSV",
+    460,
+    "https://data.humdata.org/dataset/a6df7be3-8fc9-4a55-8472-8cc567584b2d/resource/18335dfd-e49f-4dd5-8c1c-29983c423859/download/npl-landslidesp-unosat-150505.csv"
+   ]
+  ]
+ },
+ "eos-rs-nepal-mustang-district-floods-jul-2025": {
+  "title": "Nepal Mustang District Floods: Damage Proxy Map, Jul 2025",
+  "res": [
+   [
+    "EOS-RS_20250709_DPM_S1_Nepal_Mustang_District_Floods_v0.9.zip",
+    "GeoTIFF",
+    23529524,
+    "https://data.humdata.org/dataset/56cb5bd5-262c-462a-95b1-ff49edf8ca27/resource/c264cc6c-6e8f-4cdd-9449-15c26ff8dd96/download/eos-rs_20250709_dpm_s1_nepal_mustang_district_floods_v0.9.zip"
+   ]
+  ]
+ },
+ "community-perceptions-in-earthquake-affected-nepal-round-4": {
+  "title": "Nepal - Community Perceptions in Earthquake Affected districts Round 4",
+  "res": [
+   [
+    "Community Perceptions in Earthquake Affected Nepal Round 4",
+    "XLSX",
+    228825,
+    "https://data.humdata.org/dataset/436c1fbb-2e1c-4373-91a8-fa0ef0e31467/resource/e15913bf-adc9-4f4b-a561-528adc2920c9/download/round_4_survey.xlsx"
+   ],
+   [
+    "Survey Form - Round 4",
+    "DOCX",
+    127033,
+    "https://data.humdata.org/dataset/436c1fbb-2e1c-4373-91a8-fa0ef0e31467/resource/a9eda4c4-7122-45e1-acd1-e245ae80e34f/download/survey-october-and-december.docx"
+   ]
+  ]
+ },
+ "hdro-data-for-nepal": {
+  "title": "Nepal - Human Development Indicators",
+  "res": [
+   [
+    "Human Development Indicators for Nepal",
+    "CSV",
+    103695,
+    "https://data.humdata.org/dataset/74e1d580-bff7-4911-bfc5-abd77f69fa4e/resource/9c122a56-78e1-48fd-adde-ba3061ea113e/download/hdro_indicators_npl.csv"
+   ],
+   [
+    "Aggregated Human Development Indicators for Nepal",
+    "CSV",
+    15677,
+    "https://data.humdata.org/dataset/74e1d580-bff7-4911-bfc5-abd77f69fa4e/resource/4824daf1-cc50-46a8-9867-afb45f03a197/download/hdro_indicators_aggregates_npl.csv"
+   ]
+  ]
+ },
+ "who-data-for-npl": {
+  "title": "Nepal - Health Indicators",
+  "res": [
+   [
+    "All Health Indicators for Nepal",
+    "CSV",
+    10746973,
+    "https://data.humdata.org/dataset/38be9db6-c016-4c14-8f0b-95570a5f8593/resource/ccbc3987-e49d-49b0-bb6d-f5b44f40b4a1/download/health_indicators_npl.csv"
+   ],
+   [
+    "Health systems Indicators for Nepal",
+    "CSV",
+    17675,
+    "https://data.humdata.org/dataset/38be9db6-c016-4c14-8f0b-95570a5f8593/resource/92dd428a-ba5c-4872-8d7f-4adfaf7f8ca2/download/health_systems_indicators_npl.csv"
+   ],
+   [
+    "Malaria Indicators for Nepal",
+    "CSV",
+    40690,
+    "https://data.humdata.org/dataset/38be9db6-c016-4c14-8f0b-95570a5f8593/resource/27755957-d02d-4b58-ac48-a43bc4379686/download/malaria_indicators_npl.csv"
+   ],
+   [
+    "Tuberculosis Indicators for Nepal",
+    "CSV",
+    74138,
+    "https://data.humdata.org/dataset/38be9db6-c016-4c14-8f0b-95570a5f8593/resource/84c28791-9159-44be-9d41-7a6d062cbbc7/download/tuberculosis_indicators_npl.csv"
+   ],
+   [
+    "Neglected tropical diseases Indicators for Nepal",
+    "CSV",
+    16790,
+    "https://data.humdata.org/dataset/38be9db6-c016-4c14-8f0b-95570a5f8593/resource/c1126ff3-7c8e-4b1e-bffe-1a290b69ce51/download/neglected_tropical_diseases_indicators_npl.csv"
+   ],
+   [
+    "Nutrition Indicators for Nepal",
+    "CSV",
+    3108307,
+    "https://data.humdata.org/dataset/38be9db6-c016-4c14-8f0b-95570a5f8593/resource/770d3d0b-1547-4a09-89cc-66f92514be63/download/nutrition_indicators_npl.csv"
+   ],
+   [
+    "World Health Statistics Indicators for Nepal",
+    "CSV",
+    7632157,
+    "https://data.humdata.org/dataset/38be9db6-c016-4c14-8f0b-95570a5f8593/resource/9f3c43ee-7768-4266-9996-287beb45d566/download/world_health_statistics_indicators_npl.csv"
+   ],
+   [
+    "Child mortality Indicators for Nepal",
+    "CSV",
+    1046674,
+    "https://data.humdata.org/dataset/38be9db6-c016-4c14-8f0b-95570a5f8593/resource/9e4f0542-1847-4a91-b513-a99365c74224/download/child_mortality_indicators_npl.csv"
+   ],
+   [
+    "Noncommunicable diseases Indicators for Nepal",
+    "CSV",
+    1720088,
+    "https://data.humdata.org/dataset/38be9db6-c016-4c14-8f0b-95570a5f8593/resource/539a834a-6e78-4c02-b5a6-92f0d1f3d0b2/download/noncommunicable_diseases_indicators_npl.csv"
+   ],
+   [
+    "Maternal and reproductive health Indicators for Nepal",
+    "CSV",
+    65794,
+    "https://data.humdata.org/dataset/38be9db6-c016-4c14-8f0b-95570a5f8593/resource/33d44d8a-4c3d-4d90-9919-8602294d6e13/download/maternal_and_reproductive_health_indicators_npl.csv"
+   ],
+   [
+    "Air pollution Indicators for Nepal",
+    "CSV",
+    837468,
+    "https://data.humdata.org/dataset/38be9db6-c016-4c14-8f0b-95570a5f8593/resource/2a362ced-ae23-4db0-875f-5a9cd4428dfa/download/air_pollution_indicators_npl.csv"
+   ],
+   [
+    "Dementia diagnosis, treatment and care Indicators for Nepal",
+    "CSV",
+    5591,
+    "https://data.humdata.org/dataset/38be9db6-c016-4c14-8f0b-95570a5f8593/resource/b8785026-6d02-44ad-af7f-ebec99d24aae/download/dementia_diagnosis_treatment_and_care_indicators_npl.csv"
+   ]
+  ]
+ },
+ "yemen-subnational-boundaries-and-tabular-data": {
+  "title": "Yemen Subnational Population and Housing Data Tables with Administrative Boundaries, Based on National Census and Surveys",
+  "res": [
+   [
+    "Yemen.gdb.zip",
+    "Geodatabase",
+    1241398,
+    "https://data.humdata.org/dataset/5ed3a78c-ef75-49ee-bf8c-fab7a142228b/resource/b7d88bac-270b-4b7c-8403-3254b3b02594/download/yemen.gdb.zip"
+   ],
+   [
+    "Yemen_uscb_201806.xlsx",
+    "XLSX",
+    904209,
+    "https://data.humdata.org/dataset/5ed3a78c-ef75-49ee-bf8c-fab7a142228b/resource/98134e24-e45b-4f1b-b233-7d3672b943c8/download/yemen_uscb_201806.xlsx"
+   ]
+  ]
+ },
+ "boderlands-analysis-dataset": {
+  "title": "East Africa Borderlands Indicators",
+  "res": [
+   [
+    "Border Areas Analysis 080615_data.xlsx",
+    "XLSX",
+    146973,
+    "https://data.humdata.org/dataset/7a95cd92-bfcd-40ad-b4ed-f3c71a953198/resource/4f01a008-3e6b-4aa9-965c-7a90fc8df7eb/download/border-areas-analysis-080615-data.xlsx"
+   ]
+  ]
+ },
+ "wfp_ica_pak_2017": {
+  "title": "Pakistan: Integrated Context Analysis (ICA), 2017",
+  "res": [
+   [
+    "ICA Pakistan, 2017 - Land Degradation, 1992-2015",
+    "PNG",
+    590048,
+    "https://unwfp.maps.arcgis.com/sharing/rest/content/items/2c8b469fc409464d9ada097541fcaed0/data"
+   ],
+   [
+    "ICA Pakistan, 2017 - Additional Hazards",
+    "SHP",
+    3032082,
+    "https://unwfp.maps.arcgis.com/sharing/rest/content/items/513e1f0658844cc6bad68e7b277298ff/data"
+   ],
+   [
+    "ICA Pakistan, 2017 - GLOF Hazard, 1950-2015",
+    "PNG",
+    523434,
+    "https://unwfp.maps.arcgis.com/sharing/rest/content/items/b3f7c9878ad344c5ab0ee6e8921ed961/data"
+   ],
+   [
+    "ICA Pakistan, 2017 - Flood Hazard, 1950-2015",
+    "SHP",
+    3029364,
+    "https://unwfp.maps.arcgis.com/sharing/rest/content/items/951ac366904046ee854114183597c598/data"
+   ],
+   [
+    "ICA Pakistan, 2017 - Drought Hazard, 1951-2010",
+    "SHP",
+    3031815,
+    "https://unwfp.maps.arcgis.com/sharing/rest/content/items/5c56890c260348ad98f1849fd9e2a31f/data"
+   ],
+   [
+    "ICA Pakistan, FATA, 2017 - ICA Categories & Areas",
+    "SHP",
+    205117,
+    "https://unwfp.maps.arcgis.com/sharing/rest/content/items/764e57b0a3f74bce877a5f7c28358540/data"
+   ],
+   [
+    "ICA Pakistan, 2017 - Recurrence of Vulnerability to Food Insecurity, 2004-2017",
+    "PNG",
+    487941,
+    "https://unwfp.maps.arcgis.com/sharing/rest/content/items/d46acc160ea249d080b323701935e432/data"
+   ],
+   [
+    "ICA Pakistan, 2017 - Flood Hazard, 1950-2015",
+    "PNG",
+    453119,
+    "https://unwfp.maps.arcgis.com/sharing/rest/content/items/086b0ce9b4514585910dc9c1c0345211/data"
+   ],
+   [
+    "ICA Pakistan, 2017 - Earthquake Hazard, 1905-2015",
+    "PNG",
+    545842,
+    "https://unwfp.maps.arcgis.com/sharing/rest/content/items/9c65f322404d40a7b2765d214329d048/data"
+   ],
+   [
+    "ICA Pakistan, 2017 - ICA Categories",
+    "PNG",
+    484986,
+    "https://unwfp.maps.arcgis.com/sharing/rest/content/items/92fdf2e12543432a9dfda723fa9b159b/data"
+   ],
+   [
+    "ICA Pakistan, 2017 - Two Most Dominant Land Cover Classes, 2009",
+    "PNG",
+    617907,
+    "https://unwfp.maps.arcgis.com/sharing/rest/content/items/c7bfc320aae84a4ab22bd02505fc78a5/data"
+   ],
+   [
+    "ICA Pakistan, 2017 - ICA Areas",
+    "PNG",
+    502444,
+    "https://unwfp.maps.arcgis.com/sharing/rest/content/items/38b5b734b9bb4598b9b56a96905ce29a/data"
+   ]
+  ]
+ },
+ "world-bank-gender-indicators-for-indonesia": {
+  "title": "Indonesia - Gender",
+  "res": [
+   [
+    "Gender Indicators for Indonesia",
+    "CSV",
+    593926,
+    "https://data.humdata.org/dataset/233932a2-d4e1-40af-b01b-f9e4b160d846/resource/d6afef00-a216-4135-b9bf-68346ba8c88b/download/gender_idn.csv"
+   ]
+  ]
+ },
+ "world-bank-social-development-indicators-for-indonesia": {
+  "title": "Indonesia - Social Development",
+  "res": [
+   [
+    "Social Development Indicators for Indonesia",
+    "CSV",
+    108303,
+    "https://data.humdata.org/dataset/c1277b26-ccea-4bbb-8dff-f2fbc6676d81/resource/3c62618e-1f47-4280-ac12-37f785453fad/download/social-development_idn.csv"
+   ]
+  ]
+ },
+ "schooling-status-i-e-children-in-and-out-of-school": {
+  "title": "Learning levels in Kenya",
+  "res": [
+   [
+    "KE_2013_Country-level_age-wise_school_enrolement",
+    "XLSX",
+    8814,
+    "https://data.humdata.org/dataset/fbf59db2-e465-429e-b118-8cddbb0cbd87/resource/36b0b118-2619-4b02-ba71-8063d7774ed6/download/2014-uwezoked-table-1-09-08-2015.xlsx"
+   ],
+   [
+    "KE_2013_Proportion_of_children_out_of_school_by_province",
+    "XLSX",
+    12871,
+    "https://data.humdata.org/dataset/fbf59db2-e465-429e-b118-8cddbb0cbd87/resource/2b535623-f651-4a8a-a372-4b13bd75a5aa/download/2014-uwezoked-table-1-a-b-11-08-2014.xlsx"
+   ],
+   [
+    "KE_2013_Age-wise_class_distribution",
+    "XLSX",
+    9335,
+    "https://data.humdata.org/dataset/fbf59db2-e465-429e-b118-8cddbb0cbd87/resource/b08c62ef-95e8-41a7-866d-b16771c0223f/download/2014-uwezoked-table-2-09-08-2015.xlsx"
+   ],
+   [
+    "KE_2013_Class-wise_Kiswahili_literacy_levels",
+    "XLSX",
+    8760,
+    "https://data.humdata.org/dataset/fbf59db2-e465-429e-b118-8cddbb0cbd87/resource/c229ba31-03b8-42aa-8f06-959f426dca6d/download/2014-uwezoked-table-6-09-08-2015.xlsx"
+   ],
+   [
+    "KE_2013_Class-wise_English_literacy_levels",
+    "XLSX",
+    9061,
+    "https://data.humdata.org/dataset/fbf59db2-e465-429e-b118-8cddbb0cbd87/resource/975b8d99-53e1-4c7f-b8f2-6a3db78714bb/download/2014-uwezoked-table-8-09-08-2015.xlsx"
+   ],
+   [
+    "KE_2013_Class-wise_Numeracy_levels",
+    "XLSX",
+    9991,
+    "https://data.humdata.org/dataset/fbf59db2-e465-429e-b118-8cddbb0cbd87/resource/abbde867-3a75-4604-bf62-d3cb3ad73960/download/2014-uwezoked-table-9-09-08-2015.xlsx"
+   ],
+   [
+    "KE_2013_Class-wise_performance_of_children_in_the_bonus_test",
+    "XLSX",
+    11236,
+    "https://data.humdata.org/dataset/fbf59db2-e465-429e-b118-8cddbb0cbd87/resource/abe8671b-a3c4-49b5-812e-e10bbccc8328/download/table-10-22sep14.xlsx"
+   ],
+   [
+    "KE_2013_Age-wise_percentage_of_children_in_and_out_of_ school",
+    "XLSX",
+    9006,
+    "https://data.humdata.org/dataset/fbf59db2-e465-429e-b118-8cddbb0cbd87/resource/81b4e9a0-fea7-434c-af29-b8cfdff62f7f/download/table-1-1-22sep14.xlsx"
+   ],
+   [
+    "KE_2013_Percentage_of_children_out_of_school_per_province_and_county",
+    "XLSX",
+    18568,
+    "https://data.humdata.org/dataset/fbf59db2-e465-429e-b118-8cddbb0cbd87/resource/9e3cfb73-c42c-4b98-a91e-0e673efb9a42/download/table-1-22sep14.xlsx"
+   ],
+   [
+    "KE_2013_Age-wise_schooling_status_of_children",
+    "XLSX",
+    8814,
+    "https://data.humdata.org/dataset/fbf59db2-e465-429e-b118-8cddbb0cbd87/resource/034a4fcf-e82e-42aa-a59b-b15527b4b173/download/2014-uwezoked-table-1-09-08-2015.xlsx"
+   ],
+   [
+    "KE_2013_Schooling_status_of_children_aged_between_3-6years",
+    "XLSX",
+    14559,
+    "https://data.humdata.org/dataset/fbf59db2-e465-429e-b118-8cddbb0cbd87/resource/fc1a76df-071e-4eb7-abc9-71d36d4fa428/download/2014-uwezoked-table-3a-11-08-2014.xlsx"
+   ],
+   [
+    "KE_2013_Class-wise_percentage_of_children_who_received_extra_tuition",
+    "XLSX",
+    8557,
+    "https://data.humdata.org/dataset/fbf59db2-e465-429e-b118-8cddbb0cbd87/resource/d41e5654-06cb-4025-b2a5-57456b106169/download/2014-uwezoked-table-4-11-08-2014.xlsx"
+   ]
+  ]
+ },
+ "learning-levels-in-tanzania": {
+  "title": "Tanzania: Learning levels",
+  "res": [
+   [
+    "TZ_2013_Schooling_status_of_children_aged_7-16yrs_at_national&provincial_level.xlsx",
+    "XLSX",
+    21386,
+    "https://data.humdata.org/dataset/d391fcb5-2039-4bbe-a093-3938091054bf/resource/23559aef-95bd-4e70-98d6-4e46ee918cc2/download/tz2013schoolingstatusofchildrenaged7-16yrsatnationalprovinciallevel.xlsx"
+   ],
+   [
+    "TZ_2013_Schooling_status_of_children_per_age-group..xlsx",
+    "XLSX",
+    141902,
+    "https://data.humdata.org/dataset/d391fcb5-2039-4bbe-a093-3938091054bf/resource/52c889ac-7c22-4018-afe8-e0ce09b583e9/download/tz2013schoolingstatusofchildrenperage-group..xlsx"
+   ],
+   [
+    "TZ_2013_Number&percentage_of_school_dropouts_per_district.xlsx",
+    "XLSX",
+    22861,
+    "https://data.humdata.org/dataset/d391fcb5-2039-4bbe-a093-3938091054bf/resource/c2266a03-684e-4a82-b980-f1ba2043d3d1/download/tz2013numberpercentageofschooldropoutsperdistrict.xlsx"
+   ],
+   [
+    "TZ_2013_Class-wise_English&Swahili_performance_per_socioeconomic_status.xlsx",
+    "XLSX",
+    35927,
+    "https://data.humdata.org/dataset/d391fcb5-2039-4bbe-a093-3938091054bf/resource/e02a0c3e-e531-4564-8f01-9d0eabe70862/download/tz2013class-wiseenglishswahiliperformancepersocioeconomicstatus.xlsx"
+   ],
+   [
+    "TZ_2013_Age-wise_Performance_of_children_in_Kiswahili_comprehension_questions..xlsx",
+    "XLSX",
+    267589,
+    "https://data.humdata.org/dataset/d391fcb5-2039-4bbe-a093-3938091054bf/resource/a07d7768-a55c-41a6-8bb8-331cb41e61ff/download/tz2013age-wiseperformanceofchildreninkiswahilicomprehensionquestions..xlsx"
+   ],
+   [
+    "TZ_2013_Class-wise_Kiswahili_literacy_levels_by_Age&Gender_in_each_district.xlsx",
+    "XLSX",
+    233557,
+    "https://data.humdata.org/dataset/d391fcb5-2039-4bbe-a093-3938091054bf/resource/50901d5e-3ac9-400c-bdf0-0fb255f90109/download/tz2013class-wisekiswahililiteracylevelsbyagegenderineachdistrict.xlsx"
+   ],
+   [
+    "TZ_2013_literacy&Numeracy_levels_of_children_by_age&class.xlsx",
+    "XLSX",
+    25444,
+    "https://data.humdata.org/dataset/d391fcb5-2039-4bbe-a093-3938091054bf/resource/c4a89d74-5aae-48bd-8356-acbc64b8a433/download/tz2013literacynumeracylevelsofchildrenbyageclass.xlsx"
+   ],
+   [
+    "TZ_2013_Age-wise_English_comprehension_performance_at_district&national_level.xlsx",
+    "XLSX",
+    265904,
+    "https://data.humdata.org/dataset/d391fcb5-2039-4bbe-a093-3938091054bf/resource/134427bb-2ff6-4745-8369-d52401dfa773/download/tz2013age-wiseenglishcomprehensionperformanceatdistrictnationallevel.xlsx"
+   ],
+   [
+    "TZ_2013_District-wise_schooling_status_of_children_per_age-group.xlsx",
+    "XLSX",
+    36627,
+    "https://data.humdata.org/dataset/d391fcb5-2039-4bbe-a093-3938091054bf/resource/70108838-08fb-4882-a095-c56e198c2978/download/tz2013district-wiseschoolingstatusofchildrenperage-group.xlsx"
+   ],
+   [
+    "TZ_2013_Class-wise_English_literacy_levels_by_socioeconomic_status_per_region.xlsx",
+    "XLSX",
+    139282,
+    "https://data.humdata.org/dataset/d391fcb5-2039-4bbe-a093-3938091054bf/resource/ac86a16b-dce8-4b64-94ce-377504470432/download/tz2013class-wiseenglishliteracylevelsbysocioeconomicstatusperregion.xlsx"
+   ],
+   [
+    "TZ_2013_Class-wise_mathematics_Competency_levels_per_socio-economic_status..xlsx",
+    "XLSX",
+    164275,
+    "https://data.humdata.org/dataset/d391fcb5-2039-4bbe-a093-3938091054bf/resource/7079e204-ce99-4e12-aa2e-c8f739e4c6b4/download/tz2013class-wisemathematicscompetencylevelspersocio-economicstatus..xlsx"
+   ],
+   [
+    "TZ_2013_Class-wise_Swahili_literacy_levels_by_socio-economic_status_per_region.xlsx",
+    "XLSX",
+    136348,
+    "https://data.humdata.org/dataset/d391fcb5-2039-4bbe-a093-3938091054bf/resource/13437ba0-5411-4726-b9fa-6e69c02f5fea/download/tz2013class-wiseswahililiteracylevelsbysocio-economicstatusperregion.xlsx"
+   ]
+  ]
+ },
+ "learning-levels-in-uganda": {
+  "title": "Learning levels in Uganda",
+  "res": [
+   [
+    "UG2013 Classwise Proportions of Pupils who could do all P2 Sums by school type -- In the region.xlsx",
+    "XLSX",
+    9583,
+    "https://data.humdata.org/dataset/24003afa-142d-4b02-93b9-8bbbad40eea5/resource/61bb9b48-928c-443c-acfb-9716dc9a11a8/download/ug2013-classwise-proportions-of-pupils-who-could-do-all-p2-sums-by-school-type-in-the-region.xlsx"
+   ],
+   [
+    "UG2013 Frequency distribution of english-comprehension abilities for P3 pupils-- In the region.xlsx",
+    "XLSX",
+    10130,
+    "https://data.humdata.org/dataset/24003afa-142d-4b02-93b9-8bbbad40eea5/resource/ae088372-6432-4d5e-86d3-d96228e410cc/download/ug2013-frequency-distribution-of-english-comprehension-abilities-for-p3-pupils-in-the-region.xlsx"
+   ],
+   [
+    "UG2013 Frequency distribution of english-comprehension abilities for P7 pupils-- In the region.xlsx",
+    "XLSX",
+    10128,
+    "https://data.humdata.org/dataset/24003afa-142d-4b02-93b9-8bbbad40eea5/resource/a96a47cf-3533-4f0a-86b5-f6a0fbb02168/download/ug2013-frequency-distribution-of-english-comprehension-abilities-for-p7-pupils-in-the-region.xlsx"
+   ],
+   [
+    "UG2013 Frequency distribution of numeracy-competence for p3 pupils-- In the region.xlsx",
+    "XLS",
+    9204,
+    "https://data.humdata.org/dataset/24003afa-142d-4b02-93b9-8bbbad40eea5/resource/10cde100-db24-472e-9fa8-e3afa5051e8a/download/ug2013-frequency-distribution-of-numeracy-competence-for-p3-pupils-in-the-region.xlsx"
+   ],
+   [
+    "UG2013 P3 - P7 Literacy levels by District in the region (Actual numbers).xlsx",
+    "XLS",
+    15952,
+    "https://data.humdata.org/dataset/24003afa-142d-4b02-93b9-8bbbad40eea5/resource/5303ffb6-878b-4c92-a908-648bd36c7bc2/download/ug2013-p3-p7-literacy-levels-by-district-in-the-region-actual-numbers.xlsx"
+   ],
+   [
+    "UG2013 Percentage distribution for reading competencies of P2 standard by age 6 -16 -- In the region.xlsx",
+    "XLS",
+    11492,
+    "https://data.humdata.org/dataset/24003afa-142d-4b02-93b9-8bbbad40eea5/resource/00fde4d7-8b37-4e1e-81dc-bdebbe6cab9a/download/ug2013-percentage-distribution-for-reading-competencies-of-p2-standard-by-age-6-16-in-the-region"
+   ],
+   [
+    "UG2013 Percentage distribution for reading competencies of P2 standard by class P1 - P7 -- In the region.xlsx",
+    "XLS",
+    10723,
+    "https://data.humdata.org/dataset/24003afa-142d-4b02-93b9-8bbbad40eea5/resource/7d4081cf-5c81-4237-822d-107c69614337/download/ug2013-percentage-distribution-for-reading-competencies-of-p2-standard-by-class-p1-p7-in-the-re"
+   ],
+   [
+    "UG2013 Percentage Distribution of Division competencies by class and gender.xlsx",
+    "XLS",
+    9731,
+    "https://data.humdata.org/dataset/24003afa-142d-4b02-93b9-8bbbad40eea5/resource/06c45abf-181f-421a-9a19-c899fed402be/download/ug2013-percentage-distribution-of-division-competencies-by-class-and-gender.xlsx"
+   ],
+   [
+    "UG2013 Percentage P3 - P7 pupils competency levels  in P2 Maths and P2 English reading per region.xlsx",
+    "XLS",
+    12144,
+    "https://data.humdata.org/dataset/24003afa-142d-4b02-93b9-8bbbad40eea5/resource/543c0efc-cf77-4717-81d6-34516ff96251/download/ug2013-percentage-p3-p7-pupils-competency-levels-in-p2-maths-and-p2-english-reading-per-region.xl"
+   ],
+   [
+    "UG2013 Regional percentage distribution of English comprehension competencies by class and Sex.xlsx",
+    "XLS",
+    12634,
+    "https://data.humdata.org/dataset/24003afa-142d-4b02-93b9-8bbbad40eea5/resource/1aa67d31-87a5-41e5-b541-fc35145a9f49/download/ug2013-regional-percentage-distribution-of-english-comprehension-competencies-by-class-and-sex.xlsx"
+   ],
+   [
+    "UG2013 Region's Percentage distribution for mathematics competencies of P2 standard by class P1 - P7.xlsx",
+    "XLS",
+    11413,
+    "https://data.humdata.org/dataset/24003afa-142d-4b02-93b9-8bbbad40eea5/resource/007ba3fe-2fc2-4b94-a0c4-ebcd995b7699/download/ug2013-regions-percentage-distribution-for-mathematics-competencies-of-p2-standard-by-class-p1-p7."
+   ],
+   [
+    "UG2013 Regional percentage distribution of English comprehension competencies by class and Type of school (ownership).xlsx",
+    "XLS",
+    13147,
+    "https://data.humdata.org/dataset/24003afa-142d-4b02-93b9-8bbbad40eea5/resource/a32905fd-b927-46d1-80b1-834e42b049a9/download/ug2013-regional-percentage-distribution-of-english-comprehension-competencies-by-class-and-type-of-s"
+   ]
+  ]
+ },
+ "nigeria-teacher-development-programme-in-service-training-component-impact-evaluation-2017": {
+  "title": "Nigeria - Teacher Development Programme In-Service Training Component Impact Evaluation 2017, Endline Survey",
+  "res": [
+   [
+    "TDP IE EL data documentation 12 08 2018.pdf",
+    "PDF",
+    5063754,
+    "https://data.humdata.org/dataset/58a738e0-729f-4f36-b184-911a68786fd6/resource/f94dd1d7-0c3c-4ee7-9c7e-8e62ccd2ad80/download/tdp-ie-el-data-documentation-12-08-2018.pdf"
+   ],
+   [
+    "el_v2_1_school.dta",
+    "Stata Data File",
+    2079201,
+    "https://data.humdata.org/dataset/58a738e0-729f-4f36-b184-911a68786fd6/resource/956b8210-7148-490e-a6de-cec8166c9468/download/el_v2_1_school.dta"
+   ],
+   [
+    "el_v2_1_teacher.dta",
+    "Stata Data File",
+    3617103,
+    "https://data.humdata.org/dataset/58a738e0-729f-4f36-b184-911a68786fd6/resource/064f9365-107b-4d5e-b32c-53bd72a88c4c/download/el_v2_1_teacher.dta"
+   ],
+   [
+    "el_v2_1_pupil.dta",
+    "Stata Data File",
+    526244,
+    "https://data.humdata.org/dataset/58a738e0-729f-4f36-b184-911a68786fd6/resource/8cf69c56-654d-4ea8-a353-97012bcb5d95/download/el_v2_1_pupil.dta"
+   ],
+   [
+    "el_v2_1_lesson.dta",
+    "Stata Data File",
+    400671,
+    "https://data.humdata.org/dataset/58a738e0-729f-4f36-b184-911a68786fd6/resource/b0f7a213-3535-49af-b0d4-2bcb184dab9e/download/el_v2_1_lesson.dta"
+   ],
+   [
+    "el_v2_1_roster.dta",
+    "Stata Data File",
+    183230,
+    "https://data.humdata.org/dataset/58a738e0-729f-4f36-b184-911a68786fd6/resource/1b153a80-1f81-4d07-a47a-75980a40bd71/download/el_v2_1_roster.dta"
+   ],
+   [
+    "el_v2_1_attendance.dta",
+    "Stata Data File",
+    78035,
+    "https://data.humdata.org/dataset/58a738e0-729f-4f36-b184-911a68786fd6/resource/ae63ce7b-bd34-40cd-a37a-56a31fe4a9da/download/el_v2_1_attendance.dta"
+   ],
+   [
+    "el_v2_1_school.csv",
+    "CSV",
+    1140057,
+    "https://data.humdata.org/dataset/58a738e0-729f-4f36-b184-911a68786fd6/resource/09162838-7ec5-40b7-b0ed-11c90962b36a/download/el_v2_1_school.csv"
+   ],
+   [
+    "el_v2_1_teacher.csv",
+    "CSV",
+    1876878,
+    "https://data.humdata.org/dataset/58a738e0-729f-4f36-b184-911a68786fd6/resource/9ffd5357-7c93-41ce-9836-55e1b34df2d1/download/el_v2_1_teacher.csv"
+   ],
+   [
+    "el_v2_1_pupil.csv",
+    "CSV",
+    1606308,
+    "https://data.humdata.org/dataset/58a738e0-729f-4f36-b184-911a68786fd6/resource/61ff6f7f-74a6-474c-91b8-e83a8676b29d/download/el_v2_1_pupil.csv"
+   ],
+   [
+    "el_v2_1_lesson.csv",
+    "CSV",
+    721720,
+    "https://data.humdata.org/dataset/58a738e0-729f-4f36-b184-911a68786fd6/resource/dea090f0-9b13-4646-b401-ce1d71b31c6b/download/el_v2_1_lesson.csv"
+   ],
+   [
+    "el_v2_1_roster.csv",
+    "CSV",
+    563555,
+    "https://data.humdata.org/dataset/58a738e0-729f-4f36-b184-911a68786fd6/resource/83750e48-048b-4932-9365-dee9c30ec605/download/el_v2_1_roster.csv"
+   ]
+  ]
+ },
+ "unhcr-bra-2019-seva-v2-1": {
+  "title": "Brazil - Venezuelan Migration: Socio-Economic and Vulnerability Profiling of Persons of Concern, 2019",
+  "res": [
+   [
+    "Brazil - Venezuelan Migration: Socio-Economic and Vulnerability Profiling of Persons of Concern, 2019",
+    "Web App",
+    null,
+    "https://microdata.unhcr.org/index.php/auth/login/?destination=catalog/608/get-microdata"
+   ],
+   [
+    "Codebook",
+    "PDF",
+    118798,
+    "https://microdata.unhcr.org/index.php/catalog/608/pdf-documentation"
+   ]
+  ]
+ },
+ "who-data-for-netherlands": {
+  "title": "Netherlands - Health Indicators",
+  "res": [
+   [
+    "All Health Indicators for Netherlands",
+    "CSV",
+    6220938,
+    "https://data.humdata.org/dataset/4eeb4aa7-1d6c-4256-95e0-3a88956b6be6/resource/c6be71b3-3b6f-4d15-8e44-6dc0ea290783/download/health_indicators_nld.csv"
+   ],
+   [
+    "Mortality and global health estimates Indicators for Netherlands",
+    "CSV",
+    1271445,
+    "https://data.humdata.org/dataset/4eeb4aa7-1d6c-4256-95e0-3a88956b6be6/resource/e62ef8be-9733-466a-b4f8-8b6b97ec559d/download/mortality_and_global_health_estimates_indicators_nld.csv"
+   ],
+   [
+    "Sustainable development goals Indicators for Netherlands",
+    "CSV",
+    131090,
+    "https://data.humdata.org/dataset/4eeb4aa7-1d6c-4256-95e0-3a88956b6be6/resource/067de21c-24ba-4f0a-9188-79ce0b9a873f/download/sustainable_development_goals_indicators_nld.csv"
+   ],
+   [
+    "Millennium Development Goals (MDGs) Indicators for Netherlands",
+    "CSV",
+    678,
+    "https://data.humdata.org/dataset/4eeb4aa7-1d6c-4256-95e0-3a88956b6be6/resource/009d6979-2132-495f-b5d8-6fa1f8797e74/download/millennium_development_goals_mdgs_indicators_nld.csv"
+   ],
+   [
+    "Health systems Indicators for Netherlands",
+    "CSV",
+    7896,
+    "https://data.humdata.org/dataset/4eeb4aa7-1d6c-4256-95e0-3a88956b6be6/resource/4fd61ec1-947a-4317-a882-ba529647cc85/download/health_systems_indicators_nld.csv"
+   ],
+   [
+    "Malaria Indicators for Netherlands",
+    "CSV",
+    1179,
+    "https://data.humdata.org/dataset/4eeb4aa7-1d6c-4256-95e0-3a88956b6be6/resource/4c186802-d237-439a-9b32-c04f5f18a171/download/malaria_indicators_nld.csv"
+   ],
+   [
+    "Tuberculosis Indicators for Netherlands",
+    "CSV",
+    176563,
+    "https://data.humdata.org/dataset/4eeb4aa7-1d6c-4256-95e0-3a88956b6be6/resource/98213b77-c020-4bc9-a944-eaeddffad925/download/tuberculosis_indicators_nld.csv"
+   ],
+   [
+    "Child health Indicators for Netherlands",
+    "CSV",
+    52654,
+    "https://data.humdata.org/dataset/4eeb4aa7-1d6c-4256-95e0-3a88956b6be6/resource/37651bbf-3da1-4638-831d-ab05e0312fac/download/child_health_indicators_nld.csv"
+   ],
+   [
+    "Infectious diseases Indicators for Netherlands",
+    "CSV",
+    80042,
+    "https://data.humdata.org/dataset/4eeb4aa7-1d6c-4256-95e0-3a88956b6be6/resource/cbf66681-2a53-4266-894d-0fc81d257250/download/infectious_diseases_indicators_nld.csv"
+   ],
+   [
+    "Neglected tropical diseases Indicators for Netherlands",
+    "CSV",
+    2130,
+    "https://data.humdata.org/dataset/4eeb4aa7-1d6c-4256-95e0-3a88956b6be6/resource/6971be14-152f-4965-a411-b4da5788f0d6/download/neglected_tropical_diseases_indicators_nld.csv"
+   ],
+   [
+    "TOBACCO Indicators for Netherlands",
+    "CSV",
+    431805,
+    "https://data.humdata.org/dataset/4eeb4aa7-1d6c-4256-95e0-3a88956b6be6/resource/be8917f6-fc84-4a66-9708-9f64c2e3098f/download/tobacco_indicators_nld.csv"
+   ],
+   [
+    "Nutrition Indicators for Netherlands",
+    "CSV",
+    250819,
+    "https://data.humdata.org/dataset/4eeb4aa7-1d6c-4256-95e0-3a88956b6be6/resource/cb102445-2800-4614-b090-8987f1bbd1e7/download/nutrition_indicators_nld.csv"
+   ]
+  ]
+ },
+ "who-data-for-kingdom-of-eswatini": {
+  "title": "Kingdom of Eswatini - Health Indicators",
+  "res": [
+   [
+    "All Health Indicators for Kingdom of Eswatini",
+    "CSV",
+    7322226,
+    "https://data.humdata.org/dataset/8c1baada-4d5a-4b62-9914-16193603efbd/resource/0953491e-24f4-4a53-941b-bb69ab1c3fc0/download/health_indicators_swz.csv"
+   ],
+   [
+    "Mortality and global health estimates Indicators for Kingdom of Eswatini",
+    "CSV",
+    1269328,
+    "https://data.humdata.org/dataset/8c1baada-4d5a-4b62-9914-16193603efbd/resource/6f93bafe-598a-499f-b92d-33b0e1b8be55/download/mortality_and_global_health_estimates_indicators_swz.csv"
+   ],
+   [
+    "Sustainable development goals Indicators for Kingdom of Eswatini",
+    "CSV",
+    128154,
+    "https://data.humdata.org/dataset/8c1baada-4d5a-4b62-9914-16193603efbd/resource/1395c57a-5283-4227-bc16-dc920e898fbe/download/sustainable_development_goals_indicators_swz.csv"
+   ],
+   [
+    "Millennium Development Goals (MDGs) Indicators for Kingdom of Eswatini",
+    "CSV",
+    1816,
+    "https://data.humdata.org/dataset/8c1baada-4d5a-4b62-9914-16193603efbd/resource/47a3fd0e-adf2-4065-8e54-ad33b5956c76/download/millennium_development_goals_mdgs_indicators_swz.csv"
+   ],
+   [
+    "Health systems Indicators for Kingdom of Eswatini",
+    "CSV",
+    9496,
+    "https://data.humdata.org/dataset/8c1baada-4d5a-4b62-9914-16193603efbd/resource/5c409b3a-c8f5-4d68-a6e6-9d86e8d85cb3/download/health_systems_indicators_swz.csv"
+   ],
+   [
+    "Malaria Indicators for Kingdom of Eswatini",
+    "CSV",
+    51241,
+    "https://data.humdata.org/dataset/8c1baada-4d5a-4b62-9914-16193603efbd/resource/ae39a6e0-7de9-4e57-a21c-5b35da42e381/download/malaria_indicators_swz.csv"
+   ],
+   [
+    "Tuberculosis Indicators for Kingdom of Eswatini",
+    "CSV",
+    173042,
+    "https://data.humdata.org/dataset/8c1baada-4d5a-4b62-9914-16193603efbd/resource/489f5d12-9071-491c-85f8-b3618104279c/download/tuberculosis_indicators_swz.csv"
+   ],
+   [
+    "Child health Indicators for Kingdom of Eswatini",
+    "CSV",
+    91040,
+    "https://data.humdata.org/dataset/8c1baada-4d5a-4b62-9914-16193603efbd/resource/aa7bf45b-86f8-4c6e-a165-64bea866d54c/download/child_health_indicators_swz.csv"
+   ],
+   [
+    "Infectious diseases Indicators for Kingdom of Eswatini",
+    "CSV",
+    77545,
+    "https://data.humdata.org/dataset/8c1baada-4d5a-4b62-9914-16193603efbd/resource/580f5e52-1b8a-4531-a246-66fdfd562b18/download/infectious_diseases_indicators_swz.csv"
+   ],
+   [
+    "Neglected tropical diseases Indicators for Kingdom of Eswatini",
+    "CSV",
+    2089,
+    "https://data.humdata.org/dataset/8c1baada-4d5a-4b62-9914-16193603efbd/resource/58d0f2c0-3747-4345-be1c-0f7df2daaa99/download/neglected_tropical_diseases_indicators_swz.csv"
+   ],
+   [
+    "TOBACCO Indicators for Kingdom of Eswatini",
+    "CSV",
+    414045,
+    "https://data.humdata.org/dataset/8c1baada-4d5a-4b62-9914-16193603efbd/resource/70401d29-c48a-40a4-9b8b-11287f1203b9/download/tobacco_indicators_swz.csv"
+   ],
+   [
+    "Nutrition Indicators for Kingdom of Eswatini",
+    "CSV",
+    253598,
+    "https://data.humdata.org/dataset/8c1baada-4d5a-4b62-9914-16193603efbd/resource/d3382eea-007c-4e24-a30b-f66e6bb66e75/download/nutrition_indicators_swz.csv"
+   ]
+  ]
+ },
+ "who-data-for-republic-of-north-macedonia": {
+  "title": "Republic of North Macedonia - Health Indicators",
+  "res": [
+   [
+    "All Health Indicators for Republic of North Macedonia",
+    "CSV",
+    7579016,
+    "https://data.humdata.org/dataset/b7ca0730-43bb-4534-833f-9e73f8e195c2/resource/d6615f54-1fd9-434e-94b2-731ff8362b99/download/health_indicators_mkd.csv"
+   ],
+   [
+    "Mortality and global health estimates Indicators for Republic of North Macedonia",
+    "CSV",
+    1184265,
+    "https://data.humdata.org/dataset/b7ca0730-43bb-4534-833f-9e73f8e195c2/resource/fa476e08-5ef6-40d3-9263-24a78b21b672/download/mortality_and_global_health_estimates_indicators_mkd.csv"
+   ],
+   [
+    "Sustainable development goals Indicators for Republic of North Macedonia",
+    "CSV",
+    143117,
+    "https://data.humdata.org/dataset/b7ca0730-43bb-4534-833f-9e73f8e195c2/resource/9f8787cb-eda2-45e8-83c5-50bed1989710/download/sustainable_development_goals_indicators_mkd.csv"
+   ],
+   [
+    "Millennium Development Goals (MDGs) Indicators for Republic of North Macedonia",
+    "CSV",
+    682,
+    "https://data.humdata.org/dataset/b7ca0730-43bb-4534-833f-9e73f8e195c2/resource/1bc34eb2-e5b9-4fc8-8243-3cb95fc63086/download/millennium_development_goals_mdgs_indicators_mkd.csv"
+   ],
+   [
+    "Health systems Indicators for Republic of North Macedonia",
+    "CSV",
+    9790,
+    "https://data.humdata.org/dataset/b7ca0730-43bb-4534-833f-9e73f8e195c2/resource/8d2e11e2-4a72-45f5-a842-466ccf92dd24/download/health_systems_indicators_mkd.csv"
+   ],
+   [
+    "Malaria Indicators for Republic of North Macedonia",
+    "CSV",
+    1191,
+    "https://data.humdata.org/dataset/b7ca0730-43bb-4534-833f-9e73f8e195c2/resource/ba9b7d3c-9674-4e32-99dd-38b2bbe00851/download/malaria_indicators_mkd.csv"
+   ],
+   [
+    "Tuberculosis Indicators for Republic of North Macedonia",
+    "CSV",
+    180414,
+    "https://data.humdata.org/dataset/b7ca0730-43bb-4534-833f-9e73f8e195c2/resource/cdfcbc7b-4066-4442-8f9a-0f183865c645/download/tuberculosis_indicators_mkd.csv"
+   ],
+   [
+    "Child health Indicators for Republic of North Macedonia",
+    "CSV",
+    62814,
+    "https://data.humdata.org/dataset/b7ca0730-43bb-4534-833f-9e73f8e195c2/resource/eccad510-a67e-4f9f-8313-73dee8b4f140/download/child_health_indicators_mkd.csv"
+   ],
+   [
+    "Infectious diseases Indicators for Republic of North Macedonia",
+    "CSV",
+    51534,
+    "https://data.humdata.org/dataset/b7ca0730-43bb-4534-833f-9e73f8e195c2/resource/ed669cac-59a7-4b00-8ea2-e6a250de6f82/download/infectious_diseases_indicators_mkd.csv"
+   ],
+   [
+    "Neglected tropical diseases Indicators for Republic of North Macedonia",
+    "CSV",
+    2171,
+    "https://data.humdata.org/dataset/b7ca0730-43bb-4534-833f-9e73f8e195c2/resource/d66a028b-c4da-4a7b-864c-57e882a87498/download/neglected_tropical_diseases_indicators_mkd.csv"
+   ],
+   [
+    "TOBACCO Indicators for Republic of North Macedonia",
+    "CSV",
+    388858,
+    "https://data.humdata.org/dataset/b7ca0730-43bb-4534-833f-9e73f8e195c2/resource/31b345d5-d7c6-4af3-ac08-2a92673c53b0/download/tobacco_indicators_mkd.csv"
+   ],
+   [
+    "Nutrition Indicators for Republic of North Macedonia",
+    "CSV",
+    257723,
+    "https://data.humdata.org/dataset/b7ca0730-43bb-4534-833f-9e73f8e195c2/resource/f0783e16-5bf4-4476-a8be-6630e8f8fa9b/download/nutrition_indicators_mkd.csv"
+   ]
+  ]
+ }
+}

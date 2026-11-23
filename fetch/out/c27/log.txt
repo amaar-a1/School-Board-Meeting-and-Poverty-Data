@@ -1,0 +1,48 @@
+OK my_hies_district.csv 17245 https://storage.dosm.gov.my/hies/hies_district.csv
+   b'date,state,district,income_mean,income_median,expenditure_mean,gini,poverty\n2022-01-01,Johor,Batu Pahat,7419,6347,4570,0.338,5.1\n2024-01-01,Johor,Batu Pahat,9006,7555,5153,0.316,2.4\n2022-01-01,Johor,Johor Bahru,9869,8232,6139,0.358,3.7\n2024-01-01,Johor,Johor Bahru,10975,8977,6764,0.35,1.9\n2022-01-01'
+OK my_api_hies_district.json 54521 https://api.data.gov.my/data-catalogue?id=hies_district&limit=2000
+   b'[{"date": "2022-01-01", "gini": 0.338, "state": "Johor", "poverty": 5.1, "district": "Batu Pahat", "income_mean": 7419, "income_median": 6347, "expenditure_mean": 4570}, {"date": "2024-01-01", "gini": 0.316, "state": "Johor", "poverty": 2.4, "district": "Batu Pahat", "income_mean": 9006, "income_med'
+ERR my_population_district.csv HTTP Error 404: Not Found https://storage.dosm.gov.my/hies/population_district.csv
+OK my_api_population_district.json 2 https://api.data.gov.my/data-catalogue?id=population_district&limit=2000
+   b'[]'
+OK my_hh_poverty_district.csv 17906 https://storage.dosm.gov.my/hies/hh_poverty_district.csv
+   b'state,district,date,poverty_absolute,poverty_relative\nJohor,Batu Pahat,2019-01-01,2.9,9.0\nJohor,Batu Pahat,2022-01-01,5.1,19.4\nJohor,Batu Pahat,2024-01-01,2.4,11.6\nJohor,Johor Bahru,2019-01-01,3.3,12.8\nJohor,Johor Bahru,2022-01-01,3.7,10.4\nJohor,Johor Bahru,2024-01-01,1.9,9.9\nJohor,Kluang,2019-01-01'
+OK my_api_hh_poverty_district.json 57212 https://api.data.gov.my/data-catalogue?id=hh_poverty_district&limit=2000
+   b'[{"date": "2019-01-01", "state": "Johor", "district": "Batu Pahat", "poverty_absolute": 2.9, "poverty_relative": 9.0}, {"date": "2022-01-01", "state": "Johor", "district": "Batu Pahat", "poverty_absolute": 5.1, "poverty_relative": 19.4}, {"date": "2024-01-01", "state": "Johor", "district": "Batu Pah'
+OK my_hies_state.csv 1543 https://storage.dosm.gov.my/hies/hies_state.csv
+   b'date,state,income_mean,income_median,expenditure_mean,gini,poverty\n2022-01-01,Johor,8517,6879,5342,0.366,4.6\n2024-01-01,Johor,9484,7712,5927,0.348,2.5\n2022-01-01,Kedah,5550,4402,3765,0.359,9.0\n2024-01-01,Kedah,5793,4895,4028,0.334,8.4\n2022-01-01,Kelantan,4885,3614,3505,0.385,13.2\n2024-01-01,Kelantan'
+OK my_api_hies_state.json 4708 https://api.data.gov.my/data-catalogue?id=hies_state&limit=2000
+   b'[{"date": "2022-01-01", "gini": 0.366, "state": "Johor", "poverty": 4.6, "income_mean": 8517, "income_median": 6879, "expenditure_mean": 5342}, {"date": "2024-01-01", "gini": 0.348, "state": "Johor", "poverty": 2.5, "income_mean": 9484, "income_median": 7712, "expenditure_mean": 5927}, {"date": "202'
+OK my_pop_district.csv 24637855 https://storage.dosm.gov.my/population/population_district.csv
+   b'state,district,date,sex,age,ethnicity,population\nJohor,Batu Pahat,2020-01-01,both,overall,overall,495.3\nJohor,Batu Pahat,2020-01-01,both,overall,bumi_malay,311.3\nJohor,Batu Pahat,2020-01-01,both,overall,bumi_other,5.1\nJohor,Batu Pahat,2020-01-01,both,overall,chinese,140.1\nJohor,Batu Pahat,2020-01-01'
+ERR my_catalogue.json HTTP Error 400: Bad Request https://api.data.gov.my/data-catalogue?limit=1000&meta=true
+ERR my_api_schools.json HTTP Error 404: Not Found https://api.data.gov.my/data-catalogue?id=schools&limit=5
+ERR my_api_enrolment.json HTTP Error 404: Not Found https://api.data.gov.my/data-catalogue?id=enrolment&limit=5
+ERR my_api_sekolah.json HTTP Error 404: Not Found https://api.data.gov.my/data-catalogue?id=sekolah&limit=5
+ERR my_api_students_district.json HTTP Error 404: Not Found https://api.data.gov.my/data-catalogue?id=students_district&limit=5
+OK my_api_enrolment_school_district.json 650 https://api.data.gov.my/data-catalogue?id=enrolment_school_district&limit=5
+   b'[{"sex": "both", "date": "2017-01-01", "stage": "primary", "state": "Malaysia", "district": "All Districts", "students": 2689810}, {"sex": "both", "date": "2018-01-01", "stage": "primary", "state": "Malaysia", "district": "All Districts", "students": 2694779}, {"sex": "both", "date": "2019-01-01", "'
+ERR id_dapo_nat.json <urlopen error [Errno -2] Name or service not known> https://dapo.kemdikbud.go.id/rekap/progres?id_level_wilayah=0&kode_wilayah=000000&semester_id=20241
+ERR id_dapo_jabar.json <urlopen error [Errno -2] Name or service not known> https://dapo.kemdikbud.go.id/rekap/progres?id_level_wilayah=1&kode_wilayah=020000&semester_id=20241
+ERR id_dapo_sp.json <urlopen error [Errno -2] Name or service not known> https://dapo.kemdikbud.go.id/rekap/dataSekolah?id_level_wilayah=0&kode_wilayah=000000&semester_id=20241
+OK wb_sources.json 13048 https://api.worldbank.org/v2/sources?format=json&per_page=200
+   b'[{"page":"1","pages":"1","per_page":"200","total":"71"},[{"id":"1","lastupdated":"2021-08-18","name":"Doing Business","code":"DBS","description":"","url":"","dataavailability":"Y","metadataavailability":"Y","concepts":"3"},{"id":"2","lastupdated":"2026-11-11","name":"World Development Indicators","c'
+ERR id_satudata.json HTTP Error 404: Not Found https://data.go.id/api/3/action/package_search?q=persentase%20penduduk%20miskin%20kabupaten&rows=20
+ERR id_bps_page.html HTTP Error 403: Forbidden https://www.bps.go.id/id/statistics-table/2/NjIxIzI=/persentase-penduduk-miskin--p0--menurut-kabupaten-kota.html
+ERR th_nesdc.html HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+Found https://www.nesdc.go.th/main.php?filename=PovertyData
+OK hdx_indonesia_poverty_district.json 966615 https://data.humdata.org/api/3/action/package_search?rows=15&q=indonesia%20poverty%20district
+   b'{"help": "https://data.humdata.org/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 492, "facets": {}, "expanded": {}, "results": [{"archived": false, "batch": "6cbb2bd6-ebfc-4031-ba6f-3e5e93a94a3d", "caveats": "", "creator_user_id": "1a008a13-52b1-4326-a9ea-aa541372'
+OK hdx_indonesia_regency_poverty.json 995586 https://data.humdata.org/api/3/action/package_search?rows=15&q=indonesia%20regency%20poverty
+   b'{"help": "https://data.humdata.org/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 264, "facets": {}, "expanded": {}, "results": [{"archived": false, "batch": "6cbb2bd6-ebfc-4031-ba6f-3e5e93a94a3d", "caveats": "", "creator_user_id": "1a008a13-52b1-4326-a9ea-aa541372'
+OK hdx_malaysia_district_poverty.json 886979 https://data.humdata.org/api/3/action/package_search?rows=15&q=malaysia%20district%20poverty
+   b'{"help": "https://data.humdata.org/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 236, "facets": {}, "expanded": {}, "results": [{"archived": false, "batch": "6cbb2bd6-ebfc-4031-ba6f-3e5e93a94a3d", "caveats": "", "creator_user_id": "1a008a13-52b1-4326-a9ea-aa541372'
+OK hdx_thailand_province_poverty.json 1007642 https://data.humdata.org/api/3/action/package_search?rows=15&q=thailand%20province%20poverty
+   b'{"help": "https://data.humdata.org/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 189, "facets": {}, "expanded": {}, "results": [{"archived": false, "batch": "6cbb2bd6-ebfc-4031-ba6f-3e5e93a94a3d", "caveats": "", "creator_user_id": "1a008a13-52b1-4326-a9ea-aa541372'
+OK hdx_nepal_district_poverty.json 118406 https://data.humdata.org/api/3/action/package_search?rows=15&q=nepal%20district%20poverty
+   b'{"help": "https://data.humdata.org/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 314, "facets": {}, "expanded": {}, "results": [{"archived": true, "batch": "649ba1dc-eaef-4c73-a20f-d5573a70c7c1", "creator_user_id": "154de241-38d6-47d3-a77f-0a9848a61df3", "data_upd'
+OK hdx_nepal_multidimensional_poverty_district.json 925729 https://data.humdata.org/api/3/action/package_search?rows=15&q=nepal%20multidimensional%20poverty%20district
+   b'{"help": "https://data.humdata.org/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 11, "facets": {}, "expanded": {}, "results": [{"archived": false, "batch": "0a763f87-e9c5-47f6-bf55-d99a00db24c1", "caveats": "The resource modified date relates to the date the data '
+OK hdx_indonesia_school_enrollment_district.json 2739495 https://data.humdata.org/api/3/action/package_search?rows=15&q=indonesia%20school%20enrollment%20district
+   b'{"help": "https://data.humdata.org/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 16, "facets": {}, "expanded": {}, "results": [{"archived": false, "batch": "6cbb2bd6-ebfc-4031-ba6f-3e5e93a94a3d", "caveats": "", "creator_user_id": "1a008a13-52b1-4326-a9ea-aa5413725'
