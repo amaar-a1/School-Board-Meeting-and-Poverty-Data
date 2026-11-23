@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> 
+<html> <!--<![endif]-->  
+<head>
+    <title>INE::Instituto Nacional de Estadística</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="shortcut icon" href="favicon.ico">  -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="https://www.ine.gov.py/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="https://www.ine.gov.py/assets/fontawesome-6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://www.ine.gov.py/assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://www.ine.gov.py/assets/plugins/flexslider/flexslider.css">
+    <link rel="stylesheet" href="https://www.ine.gov.py/assets/plugins/pretty-photo/css/prettyPhoto.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.ine.gov.py/assets/images/favicon.ico">
+
+<!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="https://www.ine.gov.py/xmenu/css/style.css">
+    <link rel="stylesheet" href="https://www.ine.gov.py/xmenu/css/ionicons.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script>
+        window.Modernizr || document.write('<script src="https://www.ine.gov.py/xmenu/js/vendor/modernizr-2.8.3.min.js"><\/script>')
+    </script>
+
+
+<script>
+function contador(ruta)
+{
+	var respuesta= $.ajax({
+	 url: "https://www.ine.gov.py/descarga/index.php",
+	 global: false,
+	 type: "POST",
+	 data: "descarga=si"+"&ruta="+ruta,
+	 contentType: "application/x-www-form-urlencoded",
+	 dataType: "html",
+	 async: false,
+	 success: function(msg){}}).responseText;
+}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src='https://www.ine.gov.py/src/jquery-customselect.js'></script>
+<link href='https://www.ine.gov.py/src/jquery-customselect.css' rel='stylesheet' />
+
+<style type="text/css">
+.blink_text {
+
+    animation:1s blinker linear infinite;
+    -webkit-animation:1s blinker linear infinite;
+    -moz-animation:1s blinker linear infinite;
+
+     color: #A85770;
+    }
+
+    @-moz-keyframes blinker {
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @-webkit-keyframes blinker {
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @keyframes blinker {
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+#wrapper {
+  width: auto;
+  margin: 0 auto;
+}
+
+.text-center { text-align: center; }
+
+.text-right { text-align: right; }
+
+.text-justify { text-align: justify; }
+
+.newstape {
+  color: #000;
+  height: 100px;
+  overflow: hidden;
+}
+
+.newstape-content {
+  position: relative;
+  padding: 15px;
+}
+</style>
+<script src="https://www.ine.gov.py/plugins/assets/jquery.mousewheel.min.js"></script>
+<script src="https://www.ine.gov.py/plugins/assets/jquery.event.drag.min.js"></script>
+<script src="https://www.ine.gov.py/plugins/jquery.newstape.js"></script>
+
+<script>
+    $(function() {
+        $('.newstape').newstape();
+    });
+</script>
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="https://www.ine.gov.py/assets/css/styles-blue.css">
+<style type="text/css">
+/*o.v.*/
+
+#image-dropdown {
+    /*style the "box" in its minimzed state*/
+    border:0px solid black; width:230px; height:107px; overflow:hidden;
+    /*animate collapsing the dropdown from open to closed state (v. fast)*/
+    -moz-transition: height 0.1s;
+    -webkit-transition: height 0.1s;
+    -ms-transition: height 0.1s;
+    -o-transition: height 0.1s;
+    transition: height 0.1s;
+}
+#image-dropdown:hover {
+    /*when expanded, the dropdown will get native means of scrolling*/
+    height:185px;
+    /*nice and smooth expand - speed this up at your preference or remove animation altogether*/
+    -moz-transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    -o-transition: height 0.5s;
+    transition: height 0.5s;
+}
+#image-dropdown input {
+    /*hide the nasty default radio buttons. like, completely!*/
+    position:absolute;top:0px;left:0;opacity:0;
+}
+
+
+#image-dropdown label {
+    /*style the labels to look like dropdown options, kinda*/
+    display:none; margin:2px; height:107px; opacity:0.2;
+    /*setting correct backgrounds - add additional rules with selectors based on "for" attribute, something like label[for=line2]{background-image:...}*/
+    background:url("https://www.ine.gov.py/assets/images/gestion general.jpg");}
+#image-dropdown:hover label{
+    /*this is how labels render in the "expanded" state. we want to see only the selected radio button in the collapsed menu, and all of them when expanded*/
+    display:block;
+}
+#image-dropdown label:hover {
+    opacity:0.5;
+}
+#image-dropdown input:checked + label {
+    /*tricky! labels immediately following a checked radio button (with our markup they are semantically related) should be fully opaque regardless of hover, and they should always be visible (i.e. even in the collapsed menu*/
+    opacity:1 !important; display:block;
+}
+
+/*pfft, nothing as cool here, just the value trace*/
+#trace {margin:0 0 20px;}
+
+
+<style>
+        .modal {
+            display: block; /* Mostrar por defecto */
+            position: fixed; /* Mantener en la misma posición */
+            z-index: 1; /* Mostrar encima de otros elementos */
+            left: 0;
+            top: 0;
+            width: 100%; /* Ancho completo */
+            height: 100%; /* Alto completo */
+            overflow: auto; /* Habilitar scroll si es necesario */
+            background-color: rgba(0,0,0,0.5); /* Color de fondo */
+        }
+
+        /* Contenido del modal */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* Centrar vertical y horizontalmente */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Ancho de la ventana */
+            max-width: 500px; /* Máximo ancho */
+        }
+
+        /* El botón de cerrar (X) */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+</style>
+<script type="text/javascript">
+	 function irPublicacion(idcodigo1)
+     {
+	   //alert(idcodigo1);
+	   $("#codigopubli").val(idcodigo1);
+       var frm2 = document.getElementById('form_micro');
+       document.getElementById('form_micro').submit();
+     }
+</script>
+
+
+</head> 
+
+<body class="home-page">
+<form action="https://www.ine.gov.py/result-publication.php" method="post" id="form_micro">
+ <input type="hidden" name="codigopubli" id="codigopubli" />
+</form>
+    <div class="wrapper">
+        <!-- ******HEADER****** --> 
+        <!--<script>
+
+    /**
+
+     * Array con las imagenes y enlaces que se iran mostrando en la web
+
+     */
+/*$date = date('d-m-Y hh:mm:ss');*/
+
+    var imagenes=new Array(
+
+        ['https://www.ine.gov.py/assets/images/INE Y GOBIERNO NACIONAL (DIGITAL) castellano.png','https://www.ine.gov.py/'],
+
+        ['https://www.ine.gov.py/assets/images/INE Y GOBIERNO NACIONAL (DIGITAL) guarani.png','https://www.ine.gov.py/']
+
+    );
+
+
+
+    /**
+
+     * Funcion para cambiar la imagen y link
+
+     */
+
+    function rotarImagenes()
+
+    {
+
+        // obtenemos un numero aleatorio entre 0 y la cantidad de imagenes que hay
+
+        var index=Math.floor((Math.random()*imagenes.length));
+
+
+
+        // cambiamos la imagen y la url
+
+        document.getElementById("imagen").src=imagenes[index][0];
+
+        document.getElementById("link").href=imagenes[index][1];
+
+    }
+
+
+
+    /**
+
+     * Funci�n que se ejecuta una vez cargada la p�gina
+
+     */
+
+    onload=function()
+
+    {
+
+        // Cargamos una imagen aleatoria
+
+        rotarImagenes();
+
+
+
+        // Indicamos que cada 5 segundos cambie la imagen
+
+        setInterval(rotarImagenes,3000);
+
+    }
+
+</script>-->
+
+<header class="header">
+  <div class="top-bar">
+    <div class="container" style="color:#FFFFFF">
+      <ul class="social-icons col-md-6 col-sm-6 col-xs-12 hidden-xs">
+        <li><a href="https://www.facebook.com/INEParaguay/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+	<li class="row-end"><a href="https://www.instagram.com/ine_paraguay/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/INE_Paraguay?s=09" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
+        <li class="row-end"><a href="https://www.youtube.com/channel/UCsUfgs576AXBdv8urezi6Sg" target="_blank"><i class="fab fa-youtube"></i></a></li>
+	<li class="row-end"><a href="https://www.tiktok.com/@ine_paraguay?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+      </ul>
+      <!--//social-icons-->
+      <form class="pull-right search-form" style="padding-top:5px;" method="post" enctype="multipart/form-data" role="search" action="https://www.ine.gov.py/resultado/index.php" onsubmit="if(typeof posthog!=='undefined'){posthog.capture('tramite_buscado',{termino:document.getElementById('nombre').value})}">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Buscar en la publicación" name="nombre" id="nombre" required>
+        </div>
+        <button type="submit" class="btn btn-theme">Ir</button>
+         
+        <!--<a style="color: #FFFFFF;" onclick="mostrar_guarani()">G </a> |  <a style="color: #FFFFFF;" onclick="mostrar_castellano();">C</a>-->
+      </form>
+      <div style="color:#000000; text-decoration: underline; font-size:14px;  position:relative; float:right; width:10%; padding-top:0.3%;">
+        <!--<button type="button" class="btn btn-info btn-sm" onclick="goto();">Ir al sitio Anterior</button>-->
+        <!--<a class="btn btn-info btn-sm"> Ir al sitio Anterior</a>-->
+      </div>
+    </div>
+  </div>
+  <!--//to-bar-->
+
+
+
+
+  <div class="header-main container" id="logo1"> 
+
+        
+    <a href="https://www.ine.gov.py/"><img class="img-responsive" src="https://www.ine.gov.py/assets/images/encabezadoINE2023.png"></a>
+
+      </div>
+  <!--<div class="header-main container" id="logo1">
+                <img class="img-responsive" id="logo" src="https://www.dgeec.gov.py/assets/images/DGEEC Y GOBIERNO NACIONAL (DIGITAL) castellano.png" alt="Logo">
+            </div>//header-main-->
+  <!--<div class="header-main container" style="display:none;" id="logo2">
+                <img class="img-responsive" id="logo" src="https://www.dgeec.gov.py/assets/images/DGEEC Y GOBIERNO NACIONAL (DIGITAL) guarani.png" alt="Logo">
+            </div>//header-main-->
+</header>
+<!--//header-->
+        
+        <!-- ******NAV****** -->
+        <nav class="main-nav" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button><!--//nav-toggle-->
+                </div><!--//navbar-header-->            
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+                        <div class="menu-container">
+        <div class="menu"> 
+            <ul>
+	<li><a onMouseOver="this.style.color='#FFF'" onMouseOut="this.style.color='#fff'" style="cursor:pointer; color:#FFFFFF" href="https://www.ine.gov.py/">Inicio</a>
+        <li><a onMouseOver="this.style.color='#FFF'" onMouseOut="this.style.color='#fff'" style="cursor:pointer; color:#FFFFFF">La Institución</a>
+         <ul>
+			<li><a href="https://www.ine.gov.py/institucion/autoridades.php">Principales autoridades</a></li>
+			<li><a href="https://www.ine.gov.py/institucion/misionvision.php">Misión y Visión</a></li>
+			<li><a href="https://www.ine.gov.py/institucion/marcolegal.php">Marco Legal</a></li>
+		 </ul>
+        </li>
+        <li><a onMouseOver="this.style.color='#FFF'" onMouseOut="this.style.color='#fff'" style="cursor:pointer; color:#FFFFFF">Estadística por Tema</a>
+         <ul>
+                  <li><b><a href="#">Estadística Sociodemográfica</a></b>
+           <ul>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/2/poblacion">
+                            <img src="https://www.ine.gov.py/assets/images/icono/poblacion.png" class="img-rounded" /> 
+              			   Población             </a>
+            </li>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/3/empleo">
+                            <img src="https://www.ine.gov.py/assets/images/icono/empleo.png" class="img-rounded" /> 
+              			   Empleo             </a>
+            </li>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/4/pobreza">
+                            <img src="https://www.ine.gov.py/assets/images/icono/pobreza.png" class="img-rounded" /> 
+              			   Pobreza             </a>
+            </li>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/5/ingresos">
+                            <img src="https://www.ine.gov.py/assets/images/icono/ingresos.png" class="img-rounded" /> 
+              			   Ingresos             </a>
+            </li>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/6/educacion">
+                            <img src="https://www.ine.gov.py/assets/images/icono/educacion.png" class="img-rounded" /> 
+              			   Educación             </a>
+            </li>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/7/genero">
+                            <img src="https://www.ine.gov.py/assets/images/icono/genero.png" class="img-rounded" /> 
+              			   Género             </a>
+            </li>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/8/otros-temas-sociales">
+                            <img src="https://www.ine.gov.py/assets/images/icono/otros temas sociales.png" class="img-rounded" /> 
+              			   Otros temas sociales             </a>
+            </li>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/9/tics">
+                            <img src="https://www.ine.gov.py/assets/images/icono/tics.png" class="img-rounded" /> 
+              			   Tics             </a>
+            </li>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/10/vivienda-y-hogar">
+                            <img src="https://www.ine.gov.py/assets/images/icono/vivienda y hogar.png" class="img-rounded" /> 
+              			   Vivienda y Hogar             </a>
+            </li>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/28/salud">
+                            <img src="https://www.ine.gov.py/assets/images/icono/salud.png" class="img-rounded" /> 
+              			   Salud             </a>
+            </li>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/29/ninez">
+                            <img src="https://www.ine.gov.py/assets/images/icono/ninez.png" class="img-rounded" /> 
+              			   Niñez             </a>
+            </li>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/30/poblacion-juvenil">
+                            <img src="https://www.ine.gov.py/assets/images/icono/pob. juvenil.png" class="img-rounded" /> 
+              			   Población Juvenil             </a>
+            </li>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/31/poblacion-indigena">
+                            <img src="https://www.ine.gov.py/assets/images/icono/pob. indig.png" class="img-rounded" /> 
+              			   Población Indígena             </a>
+            </li>
+                      </ul>
+          </li>
+          <li><b><a href="#">Estadísticas Económicas</a></b>
+           <ul>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/12/estadistica-de-unidades-economicas">
+                            <img src="https://www.ine.gov.py/assets/images/icono/unidad economica.png" class="img-rounded" /> 
+              			   Estadística de Unidades Económicas             </a>
+            </li>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/13/ciencias-tecnologica-e-innovacion">
+                            <img src="https://www.ine.gov.py/assets/images/icono/innovacion.png" class="img-rounded" /> 
+              			   Ciencias tecnológica e innovación             </a>
+            </li>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/14/estadisticas-sectoriales">
+                            <img src="https://www.ine.gov.py/assets/images/icono/estadistica sectorial.png" class="img-rounded" /> 
+              			   Estadísticas sectoriales             </a>
+            </li>
+                      </ul>
+          </li>
+          <li><b><a href="#">Ambientes y otras estadísticas</a></b>
+           <ul>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/16/anuario">
+                            <img src="https://www.ine.gov.py/assets/images/icono/anuario.png" class="img-rounded" /> 
+              			   Anuario             </a>
+            </li>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/17/compendio-estadistico">
+                            <img src="https://www.ine.gov.py/assets/images/icono/compendios.png" class="img-rounded" /> 
+              			   Compendio Estadístico             </a>
+            </li>
+                      </ul>
+          </li>
+         </ul>
+        </li>
+        <li><a onMouseOver="this.style.color='#FFF'" onMouseOut="this.style.color='#fff'" style="cursor:pointer; color:#FFFFFF">Estadística por Fuente</a>
+         <ul>
+                  <li><b><a href="#">Censos</a></b>
+           <ul>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/20/censo-economico-nacional">
+                            <img src="https://www.ine.gov.py/assets/images/icono/cen.png" class="img-rounded" /> 
+              			   Censo Económico Nacional             </a>
+            </li>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/33/censo-nacional-de-poblacion-y-viviendas-2012">
+                            <img src="https://www.ine.gov.py/assets/images/icono/censo nacional de poblacion y viviendas.png" class="img-rounded" /> 
+              			   Censo Nacional de Población y Viviendas 2012             </a>
+            </li>
+                       <li>
+             <a href="https://www.ine.gov.py/microdatos/acceso-informacion-censo.php">
+                            <img src="https://www.ine.gov.py/assets/images/icono/icono 2002.png" class="img-rounded" /> 
+              			   Resultados Finales del Censo 2002             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/31/poblacion-indigena">
+              			   IV Censo Nacional Indígena 2022- Resultados de Población y Viviendas             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/2/poblacion">
+              			   Resultados finales Estructura de la población por edad y sexo 2022             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/66/caracterizacion-de-las-viviendas-y-los-hogares-cnpv2022">
+              			   Caracterización de las viviendas y los hogares CNPV2022             </a>
+            </li>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/4/pobreza">
+              			   Necesidades Básicas Insatisfechas (NBI), Resultados Censo 2022             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/6/educacion">
+              			   Principales datos sobre Educación de la Población- Resultados del Censo 2022             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/28/salud">
+              			   Conociendo a la población con discapacidad- CNPV 2022             </a>
+            </li>           
+                      </ul>
+          </li>
+          <li><b><a href="#">Registro administrativo</a></b>
+           <ul>
+                       <li>
+             <a href="https://www.ine.gov.py/publicacion/21/nacimientos-matrimonios-y-defunciones">
+                            <img src="https://www.ine.gov.py/assets/images/icono/NAC. MATR. DEF.png" class="img-rounded" /> 
+              			   Nacimientos, matrimonios y defunciones             </a>
+            </li>
+                      </ul>
+          </li>
+          <li><b><a href="#">Encuestas</a></b>
+           <ul>
+                       <li>
+             <a href="https://www.ine.gov.py/microdato/encuesta-permanente-de-hogares-continua-ephc-trimestral-2022-2024">
+                            <img src="https://www.ine.gov.py/assets/images/icono/encuesta permanente de hogares continua.png" class="img-rounded" /> 
+              			   Encuesta Permanente de Hogares Continua (EPHC) Trimestral 2017-2023             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/datos/encuestas/eph/">
+                            <img src="https://www.ine.gov.py/assets/images/icono/serie comparable.png" class="img-rounded" /> 
+              			   Serie Comparable de Encuestas Permanentes de Hogares (EPH)             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/datos/encuestas/ece/">
+                            <img src="https://www.ine.gov.py/assets/images/icono/continua empleo.png" class="img-rounded" /> 
+              			   Encuesta Continua de Empleo (ECE)             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/microdatos/Encuesta-de-innovacion-empresarial-del-paraguay.php">
+                            <img src="https://www.ine.gov.py/assets/images/icono/innovacion empresarial.png" class="img-rounded" /> 
+              			   Encuesta de Innovacion Empresarial del Paraguay (EIEP)             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/microdatos/Encuesta-sobre-uso-del-tiempo.php">
+                            <img src="https://www.ine.gov.py/assets/images/icono/uso de tiempo.png" class="img-rounded" /> 
+              			   Encuesta sobre Uso del Tiempo (EUT)             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/microdatos/Encuesta-de-indicadores-multiples-por-conglomerado.php">
+                            <img src="https://www.ine.gov.py/assets/images/icono/conglomerado.png" class="img-rounded" /> 
+              			   Encuesta de Indicadores Multiples por Conglomerado             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/microdato/encuesta-permanente-de-hogares-continua-ephc-2022-2023-2024-anual">
+                            <img src="https://www.ine.gov.py/assets/images/icono/encuesta permanente de hogares continua.png" class="img-rounded" /> 
+              			   Encuesta Permanente de Hogares Continua - EPHC 2022-2023-2024. ANUAL             </a>
+            </li>           
+                      </ul>
+          </li>
+         </ul>
+        </li>
+        <li><a onMouseOver="this.style.color='#FFF'" onMouseOut="this.style.color='#fff'" style="cursor:pointer; color:#FFFFFF">Visualización</a>
+         <ul>
+                  <li><b><a href="#">Censo Nacional de Población y Vivienda</a></b>
+           <ul>
+                       <li>
+             <a href="https://www.ine.gov.py/vt/Porcentaje-de-hogares-con-al-menos-una-NBI-por-departamento.php">
+              			   Porcentaje de hogares con al menos una NBI por departamento 2012             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/vt/Indicadores-distritales.php">
+              			   Indicadores distritales - 2012             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/vt/Poblacion-Paraguay-2020-por-departamento-y-sexo-segun-proyeccion.php">
+              			   Población Paraguay 2.020 por departamento y sexo según proyección             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/vt/Porcentaje-de-hogares-con-al-menos-una-NBI.php">
+              			   Porcentaje de hogares con al menos una NBI por Distrito 2012             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/vt/Porcentaje-de-hogares-con-al-menos-una-persona-de-60-anos-y-mas-de-edad.php">
+              			   Porcentaje de hogares con al menos una persona de 60 años y más de edad             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/vt/Viviendas-particulares-en-comunidades-indiigenas-con-NBI.php">
+              			   Viviendas particulares en comunidades indígenas con NBI             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/vt/paraguay-estimaciones-proyecciones-de-la-poblacion-nacional-al-30-de-junio-1950-2050.php">
+              			   Paraguay. Estimaciones y Proyecciones de la población nacional al 30 de junio, 1950-2050             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/vt/paraguay-estimaciones-proyecciones-esperanza-de-vida-al-nacer-al-30-de-junio-1950-2050.php">
+              			   Paraguay. Estimaciones y Proyecciones de la esperanza de vida al nacer al 30 de junio, 1950-2050             </a>
+            </li>           
+                      </ul>
+          </li>
+          <li><b><a href="#">Censo Económico Nacional</a></b>
+           <ul>
+                       <li>
+             <a href="https://www.ine.gov.py/vt/Poblacion-Ocupada-por-Departamento-Censo-Economico-2011.php">
+              			   Unidades Economicas por Departamento Censo Economico 2011             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/vt/Unidades-Economicas-por-Departamento-Censo-Economico-2011.php">
+              			   Población Ocupada por Departamento Censo Económico 2011             </a>
+            </li>           
+                      </ul>
+          </li>
+          <li><b><a href="#">Encuesta Permanente de Hogares Continua</a></b>
+           <ul>
+                       <li>
+             <a href="https://www.ine.gov.py/vt/Hogares-por-tipo-de-bien-duradero.php">
+              			   Hogares por tipo de bien duradero             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/vt/Indicadores-por-mercado-laboral.php">
+              			   Indicadores del Mercado Laboral             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/vt/Incidencia-de-la-pobreza-EPHC2018.php">
+              			   Incidencia de pobreza EPHC 2018             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/vt/Tasa-de-la-Fuerza-de-Trabajo-2017-2024.php">
+              			   Tasa de la Fuerza de Trabajo  2017-2024             </a>
+            </li>           
+                      </ul>
+          </li>
+          <li><b><a href="#">Gráficos Dinámicos</a></b>
+           <ul>
+                       <li>
+             <a href="https://www.ine.gov.py/vt/Principales-indicadores-de-pobreza-de-la-poblacion-anual-de-la-encuesta.php">
+              			   Principales indicadores de pobreza de la población. Según área de residencia. Período 1997/98 - 2019             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/vt/Principales-indicadores-de-pobreza-de-la-poblacion-anual-de-la-encuesta-total-pais.php">
+              			   Principales indicadores de pobreza de la población paraguaya. Total país. Período 1997/98 - 2019             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/vt/Hogares-por-periodo-segun-disposicion-de-la-basura.php">
+              			   Hogares por año, según disposición de la basura. Periodo 1997-2019             </a>
+            </li>           
+                       <li>
+             <a href="https://www.ine.gov.py/vt/Evolucion%20de%20la%20Desigualdad%20en%20Paraguay%201997-98%20al%202022.php">
+              			   Evolución de la Desigualdad en Paraguay, 1997 al 2022             </a>
+            </li>           
+                      </ul>
+          </li>
+         </ul>
+        </li>
+        <li><a onMouseOver="this.style.color='#FFF'" onMouseOut="this.style.color='#fff'" style="cursor:pointer; color:#FFFFFF">Geografía</a>
+         <ul>
+			<li><a href="https://www.ine.gov.py/microdatos/cartografia-digital-2022.php">Cartografía Censal 2022</a></li>
+			<li><a href="https://www.ine.gov.py/microdatos/codigo-geografico-2022.php">Códigos Geográficos 2022</a></li>
+			<li><a href="https://www.ine.gov.py/microdatos/codigo-geografico-2012.php">Código Geográfico 2012</a></li>
+			<li><a href="https://www.ine.gov.py/microdatos/cartografia-digital-2012.php">Cartografía censal 2012</a></li>
+		 </ul>
+        </li>
+	<li><a onMouseOver="this.style.color='#FFF'" onMouseOut="this.style.color='#fff'" style="cursor:pointer; color:#FFFFFF" href="https://www.ine.gov.py/microdatos/">Datos Abiertos</a>
+	<li><a onMouseOver="this.style.color='#FFF'" onMouseOut="this.style.color='#fff'" style="cursor:pointer; color:#FFFFFF" href="https://www.ine.gov.py/noticias/">Noticias</a>
+	<li><a onMouseOver="this.style.color='#FFF'" onMouseOut="this.style.color='#fff'" style="cursor:pointer; color:#FFFFFF" href="https://www.ine.gov.py/contact/">Contactos</a>
+            </ul>
+        </div>
+    </div>                </div><!--//navabr-collapse-->
+            </div><!--//container-->
+        </nav><!--//main-nav-->
+    
+        <!-- ******CONTENT****** --> 
+        <div class="content container">
+            <div class="page-wrapper">
+                <header class="page-heading clearfix">
+                    <!--<h1 class="heading-title pull-left"></h1>-->
+                    <div class="breadcrumbs pull-right">
+                        <ul class="breadcrumbs-list">
+                            <li class="breadcrumbs-label">T&uacute; estas aqu&iacute;:</li>
+                            <li><a href="https://www.ine.gov.py/index.php">Inicio</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="https://www.ine.gov.py/tema//"></a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="https://www.ine.gov.py/estadistica///"></a><i class="fa fa-angle-right"></i></li>
+                            <li class="current"></li>
+                        </ul>
+                    </div><!--//breadcrumbs-->
+                </header> 
+                <div class="page-content">  
+                    <div class="row page-row">
+                            <div class="row page-row">
+							<div class="featured-courses tabbed-info page-row">             
+                                <ul class="nav nav-tabs">
+                                  <li class="active"><a href="#tab1" data-toggle="tab"></a></li>
+                                                                                                     </ul>
+                                <div class="tab-content">
+                                  <div class="tab-pane active" id="tab1">
+                                      <div class="row">
+									  <div class="col-md-12">
+                                    
+                                      </div>
+                                      </div><!--//row-->
+                                  </div>
+                                  <div class="tab-pane" id="tab2">
+                                  	<!--<div class="row">
+										<div class="col-md-12">-->
+																						
+												<dl>
+													<dd>No posse ninguna publicación relacionada a </dd>
+												</dl>
+											    
+										<!--</div>
+									</div>-->
+                                  </div>
+                                  <div class="tab-pane" id="tab3">
+                                      <div class="row">
+
+                                    <div class="col-md-6">
+                                       <h3 class="has-divider text-highlight">Enlace de Inter&eacute;s</h3>
+                                        <ul>
+                                                                                </ul> 
+                                    </div>
+                                      </div>
+                                  </div><!---->
+                                </div>
+                            </div><!--//featured-courses-->
+                            
+                            
+                            
+
+							<!--<div class="featured-courses tabbed-info page-row">             
+                                <ul class="nav nav-tabs">
+                                  <li class="active"><a href="#tab1" data-toggle="tab"></a></li>
+                                  <li><a href="#tab2" data-toggle="tab">Publicaciones</a></li>
+                                  <li><a href="#tab3" data-toggle="tab">Información general</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                  <div class="tab-pane active" id="tab1">
+                                      <div class="row">
+                                      </div>
+                                  </div>
+                                  <div class="tab-pane" id="tab2">
+                                      <div class="row">
+								<div class="table-responsive">                      
+                                    <table class="table table-boxed">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Titulo</th>
+                                                <th>Descripción</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>  
+                                      </div>
+                                  </div>
+                                  <div class="tab-pane" id="tab3">
+                                      <div class="row">
+                                          
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>-->
+                           
+                         
+                            </div><!--//page-row-->
+                        </div><!--//gallery-wrapper-->
+                    </div>
+                </div><!--//page-content-->
+            </div><!--//page--> 
+        </div><!--//content-->
+    </div><!--//wrapper-->
+
+    <!-- ******FOOTER****** --> 
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="bottom-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="bottom-bar">
+  <div class="container">
+    <div class="row">
+      <ul class="social pull-right col-md-12 col-sm-12 col-xs-12">
+		<li class="row-end"><a href="https://www.tiktok.com/@ine_paraguay?is_from_webapp=1&sender_device=pc" target="_blank"><img src="https://www.ine.gov.py/assets/redes-sociales/tik.png"></a></li>
+		<li><a href="https://www.instagram.com/ine_paraguay/" target="_blank"><img src="https://www.ine.gov.py/assets/redes-sociales/inst.png"></a></li>
+        <li><a href="https://www.facebook.com/INEParaguay/" target="_blank"><img src="https://www.ine.gov.py/assets/redes-sociales/fac.png"></a></li>
+		<li><a href="https://www.youtube.com/@INEParaguay" target="_blank"><img src="https://www.ine.gov.py/assets/redes-sociales/yout.png"></a></li>
+        <li><a href="https://twitter.com/INE_Paraguay?s=09" target="_blank"><img src="https://www.ine.gov.py/assets/redes-sociales/tw.png"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="footer-col col-md-3 col-sm-12 contact">
+	<div class="footer-col-inner"><br />
+    	<img src="https://www.ine.gov.py/assets/images/Gobierno-INE.png" class="img-responsive">
+    </div><!--//footer-col-inner-->
+</div><!--//foooter-col--> 
+
+<div class="footer-col col-md-2 col-sm-12 contact">
+	<div class="footer-col-inner"><br>
+    	<h3><u>Oficina <br>Central:</u></h3>
+         <div class="row">
+	         <p class="adr clearfix col-md-12 col-sm-12">
+    	                 
+        	         <span class="adr-group pull-left">       
+						 <span class="street-address"><i class="fa fa-map-marker pull-left"></i> Naciones Unidas e/ Centeno</span><br>
+						 <span class="region">Fernando de la Mora</span><br>
+						 <span class="postal-code">Zona Norte - Central</span>
+                     </span>
+             </p>
+         </div> 
+	</div><!--//footer-col-inner-->            
+</div><!--//foooter-col-->   
+
+<div class="footer-col col-md-2 col-sm-12 contact">
+	<div class="footer-col-inner"><br>
+    	<h3><u>Oficina <br>T&eacute;cnica:</u></h3>
+        	<div class="row">
+            	<p class="adr clearfix col-md-12 col-sm-4">
+                	        
+                    	<span class="adr-group pull-left">       
+                        	<span class="street-address"><i class="fa fa-map-marker pull-left"></i> Avenida Boggiani Esq./</span><br>
+                            <span class="region">Cirilo Rivarola, Nº 6688</span><br>
+                            <span class="postal-code">Asunci&oacute;n - Paraguay</span>
+                        </span>
+                </p>
+            </div> 
+	</div><!--//footer-col-inner-->            
+</div><!--//foooter-col-->
+
+<div class="footer-col col-md-2 col-sm-12 contact">
+	<div class="footer-col-inner"><br>
+    	<h3><u>Contacto:</u></h3>
+        	<div class="row">
+                <p class="tel col-md-12 col-sm-4"><i class="fa fa-phone"></i> (021) 729 5400</p>
+				<p class="tel col-md-12 col-sm-12"><i class="fa fa-comment"></i> WhatsApp <br/>(solo mensajes): +595986 800506</p>
+             <p class="email col-md-12 col-sm-12"><i class="fa fa-envelope"></i> <a href="mailto:info@ine.gov.py">info@ine.gov.py</a></p>  
+            </div> 
+	</div><!--//footer-col-inner-->            
+</div><!--//foooter-col--> 
+                
+<div class="footer-col col-md-3 col-sm-12 contact">
+	<div class="footer-col-inner"><br>
+    	<h3><u>Licencia:</u></h3>
+        <h4><a href="https://www.ine.gov.py/microdatos/license.php" target="_blank" style="color:#FFFFFF">Licencia de Uso de la Información Pública del Gobierno Paraguayo</a></h4>
+        <p><a href="https://www.ine.gov.py/microdatos/license.php" target="_blank"><img src="https://www.ine.gov.py/img/od_80x15_blue.png" /></a></p>
+    </div><!--//footer-col-inner-->
+</div><!--//foooter-col--> <br /><br />
+                </div><!--//row-->
+            </div><!--//container-->
+        </div>
+        <div class="bottom-bar">
+            <div class="container">
+                <div class="row">
+                    <!--<small class="copyright col-md-6 col-sm-12 col-xs-12">Copyright @ 2018 College Green Online | Website template by <a href="#">3rd Wave Media</a></small>-->
+                    <ul class="social pull-right col-md-6 col-sm-12 col-xs-12">
+                        <li><a href="https://twitter.com/DGEECpy" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li class="row-end"><a href="https://www.facebook.com/DGEECpy/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    </ul><!--//social-->
+                </div><!--//row-->
+            </div><!--//container-->
+        </div><!--//bottom-bar-->
+    </footer><!--//footer-->
+    
+	
+    <!-- Javascript          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.2.min.js"></script>--> 
+    <script type="text/javascript" src="https://www.ine.gov.py/assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://www.ine.gov.py/assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="https://www.ine.gov.py/assets/plugins/bootstrap-hover-dropdown.min.js"></script> 
+    <script type="text/javascript" src="https://www.ine.gov.py/assets/plugins/back-to-top.js"></script>
+    <script type="text/javascript" src="https://www.ine.gov.py/assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="https://www.ine.gov.py/assets/plugins/pretty-photo/js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="https://www.ine.gov.py/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="https://www.ine.gov.py/assets/plugins/jflickrfeed/jflickrfeed.min.js"></script> 
+    <script type="text/javascript" src="https://www.ine.gov.py/assets/js/main.js"></script>  
+    
+    <script>
+        window.jQuery || document.write('<script src="https://www.ine.gov.py/xmenu/js/vendor/jquery-1.12.0.min.js"><\/script>')
+    </script>
+    <script src="https://www.ine.gov.py/xmenu/js/megamenu.js"></script>    
+  
+    
+</body>
+</html> 
