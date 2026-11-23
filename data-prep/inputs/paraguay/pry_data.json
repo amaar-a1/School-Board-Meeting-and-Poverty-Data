@@ -1,0 +1,3187 @@
+{
+ "PRY-28044563": {
+  "name": "25 De Diciembre",
+  "dept": "San Pedro",
+  "pov": 35.5,
+  "low": 28.1,
+  "high": 42.9,
+  "pop": 9139,
+  "ages": {
+   "05": 1171,
+   "10": 1113,
+   "15": 1030
+  }
+ },
+ "PRY-42768976": {
+  "name": "3 De Febrero",
+  "dept": "Caaguazú",
+  "pov": 34.7,
+  "low": 27.8,
+  "high": 41.6,
+  "pop": 7834,
+  "ages": {
+   "05": 922,
+   "10": 913,
+   "15": 834
+  }
+ },
+ "PRY-34219861": {
+  "name": "3 De Mayo",
+  "dept": "Caazapá",
+  "pov": 41.9,
+  "low": 36.1,
+  "high": 47.7,
+  "pop": 14109,
+  "ages": {
+   "05": 1368,
+   "10": 1266,
+   "15": 1184
+  }
+ },
+ "PRY-07346085": {
+  "name": "Abaí",
+  "dept": "Caazapá",
+  "pov": 35.6,
+  "low": 30.6,
+  "high": 40.6,
+  "pop": 23446,
+  "ages": {
+   "05": 2925,
+   "10": 2708,
+   "15": 2531
+  }
+ },
+ "PRY-93727393": {
+  "name": "Acahay",
+  "dept": "Paraguarí",
+  "pov": 40.2,
+  "low": 34.1,
+  "high": 46.2,
+  "pop": 13054,
+  "ages": {
+   "05": 1239,
+   "10": 1234,
+   "15": 1196
+  }
+ },
+ "PRY-64254301": {
+  "name": "Alberdi",
+  "dept": "Ñeembucú",
+  "pov": 19.4,
+  "low": 14.3,
+  "high": 24.6,
+  "pop": 7724,
+  "ages": {
+   "05": 844,
+   "10": 825,
+   "15": 805
+  }
+ },
+ "PRY-53535123": {
+  "name": "Alto Verá",
+  "dept": "Itapúa",
+  "pov": 42.1,
+  "low": 34.6,
+  "high": 49.5,
+  "pop": 11799,
+  "ages": {
+   "05": 965,
+   "10": 902,
+   "15": 818
+  }
+ },
+ "PRY-83476535": {
+  "name": "Altos",
+  "dept": "Cordillera",
+  "pov": 20.8,
+  "low": 15.8,
+  "high": 25.9,
+  "pop": 15467,
+  "ages": {
+   "05": 991,
+   "10": 981,
+   "15": 949
+  }
+ },
+ "PRY-31242497": {
+  "name": "Antequera",
+  "dept": "San Pedro",
+  "pov": 46.6,
+  "low": 38.5,
+  "high": 54.6,
+  "pop": 4637,
+  "ages": {
+   "05": 573,
+   "10": 545,
+   "15": 504
+  }
+ },
+ "PRY-71998065": {
+  "name": "Areguá",
+  "dept": "Central",
+  "pov": 22.0,
+  "low": 17.7,
+  "high": 26.3,
+  "pop": 74474,
+  "ages": {
+   "05": 4519,
+   "10": 4252,
+   "15": 4065
+  }
+ },
+ "PRY-14975790": {
+  "name": "Arroyos y Esteros",
+  "dept": "Cordillera",
+  "pov": 25.6,
+  "low": 20.3,
+  "high": 30.9,
+  "pop": 21179,
+  "ages": {
+   "05": 1486,
+   "10": 1471,
+   "15": 1423
+  }
+ },
+ "PRY-02745947": {
+  "name": "Asunción",
+  "dept": "Asunción",
+  "pov": 7.3,
+  "low": 6.5,
+  "high": 8.1,
+  "pop": 464185,
+  "ages": {
+   "05": 46546,
+   "10": 39398,
+   "15": 36026
+  }
+ },
+ "PRY-71896233": {
+  "name": "Atyrá",
+  "dept": "Cordillera",
+  "pov": 20.6,
+  "low": 15.9,
+  "high": 25.2,
+  "pop": 16892,
+  "ages": {
+   "05": 1351,
+   "10": 1337,
+   "15": 1293
+  }
+ },
+ "PRY-75260481": {
+  "name": "Ayolas",
+  "dept": "Misiones",
+  "pov": 11.9,
+  "low": 8.6,
+  "high": 15.1,
+  "pop": 17947,
+  "ages": {
+   "05": 2099,
+   "10": 2080,
+   "15": 2006
+  }
+ },
+ "PRY-49846069": {
+  "name": "Azote'y",
+  "dept": "Concepción",
+  "pov": 40.6,
+  "low": 32.7,
+  "high": 48.6,
+  "pop": 7324,
+  "ages": {
+   "05": 801,
+   "10": 748,
+   "15": 705
+  }
+ },
+ "PRY-10232021": {
+  "name": "Bahía Negra",
+  "dept": "Alto Paraguay",
+  "pov": 34.8,
+  "low": 25.5,
+  "high": 44.1,
+  "pop": 3119,
+  "ages": {
+   "05": 308,
+   "10": 283,
+   "15": 248
+  }
+ },
+ "PRY-75845160": {
+  "name": "Belén",
+  "dept": "Concepción",
+  "pov": 35.6,
+  "low": 27.9,
+  "high": 43.2,
+  "pop": 11511,
+  "ages": {
+   "05": 1035,
+   "10": 966,
+   "15": 911
+  }
+ },
+ "PRY-18626785": {
+  "name": "Bella Vista",
+  "dept": "Amambay",
+  "pov": 30.4,
+  "low": 24.6,
+  "high": 36.1,
+  "pop": 11705,
+  "ages": {
+   "05": 3052,
+   "10": 2834,
+   "15": 2583
+  }
+ },
+ "PRY-15177972": {
+  "name": "Benjamín Aceval",
+  "dept": "Presidente Hayes",
+  "pov": 20.1,
+  "low": 16.7,
+  "high": 23.6,
+  "pop": 23655,
+  "ages": {
+   "05": 2346,
+   "10": 2114,
+   "15": 1934
+  }
+ },
+ "PRY-44121584": {
+  "name": "Borja",
+  "dept": "Guairá",
+  "pov": 39.3,
+  "low": 32.5,
+  "high": 46.0,
+  "pop": 7963,
+  "ages": {
+   "05": 751,
+   "10": 736,
+   "15": 729
+  }
+ },
+ "PRY-54535070": {
+  "name": "Buena Vista",
+  "dept": "Caazapá",
+  "pov": 37.9,
+  "low": 31.1,
+  "high": 44.7,
+  "pop": 4562,
+  "ages": {
+   "05": 484,
+   "10": 448,
+   "15": 419
+  }
+ },
+ "PRY-92221821": {
+  "name": "Caacupé",
+  "dept": "Cordillera",
+  "pov": 17.7,
+  "low": 14.7,
+  "high": 20.7,
+  "pop": 52955,
+  "ages": {
+   "05": 5488,
+   "10": 5430,
+   "15": 5254
+  }
+ },
+ "PRY-81297977": {
+  "name": "Caaguazú",
+  "dept": "Caaguazú",
+  "pov": 33.7,
+  "low": 30.1,
+  "high": 37.3,
+  "pop": 104840,
+  "ages": {
+   "05": 11521,
+   "10": 11413,
+   "15": 10424
+  }
+ },
+ "PRY-36267383": {
+  "name": "Caapucú",
+  "dept": "Paraguarí",
+  "pov": 26.8,
+  "low": 20.3,
+  "high": 33.3,
+  "pop": 6182,
+  "ages": {
+   "05": 940,
+   "10": 937,
+   "15": 908
+  }
+ },
+ "PRY-47296131": {
+  "name": "Caazapá",
+  "dept": "Caazapá",
+  "pov": 20.4,
+  "low": 16.3,
+  "high": 24.5,
+  "pop": 25786,
+  "ages": {
+   "05": 3132,
+   "10": 2899,
+   "15": 2711
+  }
+ },
+ "PRY-17325811": {
+  "name": "Cambyretá",
+  "dept": "Itapúa",
+  "pov": 24.0,
+  "low": 20.4,
+  "high": 27.6,
+  "pop": 50889,
+  "ages": {
+   "05": 4544,
+   "10": 4248,
+   "15": 3854
+  }
+ },
+ "PRY-15364309": {
+  "name": "Capiatá",
+  "dept": "Central",
+  "pov": 15.2,
+  "low": 13.2,
+  "high": 17.2,
+  "pop": 255119,
+  "ages": {
+   "05": 21400,
+   "10": 20132,
+   "15": 19245
+  }
+ },
+ "PRY-09550444": {
+  "name": "Capiibary",
+  "dept": "San Pedro",
+  "pov": 43.1,
+  "low": 37.5,
+  "high": 48.7,
+  "pop": 32192,
+  "ages": {
+   "05": 2808,
+   "10": 2672,
+   "15": 2470
+  }
+ },
+ "PRY-59910813": {
+  "name": "Capitán Bado",
+  "dept": "Amambay",
+  "pov": 37.7,
+  "low": 32.1,
+  "high": 43.2,
+  "pop": 18414,
+  "ages": {
+   "05": 3250,
+   "10": 3002,
+   "15": 2736
+  }
+ },
+ "PRY-22060103": {
+  "name": "Capitán Meza",
+  "dept": "Itapúa",
+  "pov": 27.2,
+  "low": 22.2,
+  "high": 32.2,
+  "pop": 9478,
+  "ages": {
+   "05": 1228,
+   "10": 1148,
+   "15": 1041
+  }
+ },
+ "PRY-47775441": {
+  "name": "Capitán Miranda",
+  "dept": "Itapúa",
+  "pov": 16.7,
+  "low": 12.1,
+  "high": 21.2,
+  "pop": 10012,
+  "ages": {
+   "05": 1090,
+   "10": 1019,
+   "15": 924
+  }
+ },
+ "PRY-73509756": {
+  "name": "Caraguatay",
+  "dept": "Cordillera",
+  "pov": 26.0,
+  "low": 20.6,
+  "high": 31.4,
+  "pop": 10265,
+  "ages": {
+   "05": 1216,
+   "10": 1203,
+   "15": 1164
+  }
+ },
+ "PRY-17319371": {
+  "name": "Carapeguá",
+  "dept": "Paraguarí",
+  "pov": 21.1,
+  "low": 17.2,
+  "high": 24.9,
+  "pop": 30695,
+  "ages": {
+   "05": 2613,
+   "10": 2603,
+   "15": 2523
+  }
+ },
+ "PRY-75286409": {
+  "name": "Carayaó",
+  "dept": "Caaguazú",
+  "pov": 38.5,
+  "low": 31.0,
+  "high": 46.0,
+  "pop": 11358,
+  "ages": {
+   "05": 1326,
+   "10": 1314,
+   "15": 1200
+  }
+ },
+ "PRY-10369320": {
+  "name": "Carlos Antonio López",
+  "dept": "Itapúa",
+  "pov": 30.0,
+  "low": 23.9,
+  "high": 36.1,
+  "pop": 13888,
+  "ages": {
+   "05": 1463,
+   "10": 1371,
+   "15": 1243
+  }
+ },
+ "PRY-61120940": {
+  "name": "Carmelo Peralta",
+  "dept": "Alto Paraguay",
+  "pov": 39.4,
+  "low": 30.8,
+  "high": 48.1,
+  "pop": 4876,
+  "ages": {
+   "05": 380,
+   "10": 349,
+   "15": 306
+  }
+ },
+ "PRY-78137183": {
+  "name": "Carmen del Paraná",
+  "dept": "Itapúa",
+  "pov": 26.4,
+  "low": 19.8,
+  "high": 33.1,
+  "pop": 6708,
+  "ages": {
+   "05": 1070,
+   "10": 1000,
+   "15": 907
+  }
+ },
+ "PRY-56034968": {
+  "name": "Dr. Cecilio Báez",
+  "dept": "Caaguazú",
+  "pov": 40.1,
+  "low": 32.3,
+  "high": 47.9,
+  "pop": 4955,
+  "ages": {
+   "05": 649,
+   "10": 643,
+   "15": 587
+  }
+ },
+ "PRY-52020207": {
+  "name": "Cerrito",
+  "dept": "Ñeembucú",
+  "pov": 32.5,
+  "low": 25.4,
+  "high": 39.7,
+  "pop": 4360,
+  "ages": {
+   "05": 389,
+   "10": 376,
+   "15": 367
+  }
+ },
+ "PRY-79679703": {
+  "name": "Choré",
+  "dept": "San Pedro",
+  "pov": 34.0,
+  "low": 28.9,
+  "high": 39.2,
+  "pop": 24911,
+  "ages": {
+   "05": 2465,
+   "10": 2344,
+   "15": 2168
+  }
+ },
+ "PRY-89367455": {
+  "name": "Ciudad del Este",
+  "dept": "Alto Paraná",
+  "pov": 15.8,
+  "low": 14.3,
+  "high": 17.4,
+  "pop": 336105,
+  "ages": {
+   "05": 40974,
+   "10": 36365,
+   "15": 32207
+  }
+ },
+ "PRY-09966543": {
+  "name": "Independencia",
+  "dept": "Guairá",
+  "pov": 30.6,
+  "low": 25.1,
+  "high": 36.1,
+  "pop": 19444,
+  "ages": {
+   "05": 1744,
+   "10": 1709,
+   "15": 1691
+  }
+ },
+ "PRY-95848656": {
+  "name": "Concepción",
+  "dept": "Concepción",
+  "pov": 23.4,
+  "low": 20.3,
+  "high": 26.5,
+  "pop": 80387,
+  "ages": {
+   "05": 11269,
+   "10": 10518,
+   "15": 9922
+  }
+ },
+ "PRY-12960354": {
+  "name": "Coronel Bogado",
+  "dept": "Itapúa",
+  "pov": 26.2,
+  "low": 22.0,
+  "high": 30.4,
+  "pop": 17786,
+  "ages": {
+   "05": 2355,
+   "10": 2201,
+   "15": 1997
+  }
+ },
+ "PRY-96690556": {
+  "name": "Coronel Martínez",
+  "dept": "Guairá",
+  "pov": 29.0,
+  "low": 21.7,
+  "high": 36.4,
+  "pop": 4723,
+  "ages": {
+   "05": 459,
+   "10": 450,
+   "15": 445
+  }
+ },
+ "PRY-00786752": {
+  "name": "Coronel Oviedo",
+  "dept": "Caaguazú",
+  "pov": 20.4,
+  "low": 17.6,
+  "high": 23.2,
+  "pop": 106470,
+  "ages": {
+   "05": 13129,
+   "10": 13005,
+   "15": 11878
+  }
+ },
+ "PRY-49118896": {
+  "name": "Corpus Christi",
+  "dept": "Canindeyú",
+  "pov": 12.2,
+  "low": 7.9,
+  "high": 16.5,
+  "pop": 8074,
+  "ages": {
+   "05": 1582,
+   "10": 1450,
+   "15": 1332
+  }
+ },
+ "PRY-83750072": {
+  "name": "Villa Curuguaty",
+  "dept": "Canindeyú",
+  "pov": 30.4,
+  "low": 27.0,
+  "high": 33.9,
+  "pop": 36692,
+  "ages": {
+   "05": 5700,
+   "10": 5204,
+   "15": 4697
+  }
+ },
+ "PRY-23990895": {
+  "name": "Desmochados",
+  "dept": "Ñeembucú",
+  "pov": 21.9,
+  "low": 14.4,
+  "high": 29.4,
+  "pop": 1174,
+  "ages": {
+   "05": 80,
+   "10": 77,
+   "15": 75
+  }
+ },
+ "PRY-97398039": {
+  "name": "Domingo Martínez de Irala",
+  "dept": "Alto Paraná",
+  "pov": 32.4,
+  "low": 25.8,
+  "high": 39.0,
+  "pop": 5178,
+  "ages": {
+   "05": 465,
+   "10": 413,
+   "15": 366
+  }
+ },
+ "PRY-01496547": {
+  "name": "Doctor Bottrell",
+  "dept": "Guairá",
+  "pov": 41.0,
+  "low": 30.6,
+  "high": 51.3,
+  "pop": 1376,
+  "ages": {
+   "05": 112,
+   "10": 110,
+   "15": 109
+  }
+ },
+ "PRY-36336731": {
+  "name": "Dr. Juan León Mallorquín",
+  "dept": "Alto Paraná",
+  "pov": 39.8,
+  "low": 33.4,
+  "high": 46.2,
+  "pop": 16692,
+  "ages": {
+   "05": 1602,
+   "10": 1422,
+   "15": 1259
+  }
+ },
+ "PRY-41790300": {
+  "name": "Dr. Juan Manuel Frutos",
+  "dept": "Caaguazú",
+  "pov": 25.0,
+  "low": 20.5,
+  "high": 29.5,
+  "pop": 22246,
+  "ages": {
+   "05": 2582,
+   "10": 2558,
+   "15": 2336
+  }
+ },
+ "PRY-47736376": {
+  "name": "Dr. Raúl Peña",
+  "dept": "Alto Paraná",
+  "pov": 21.2,
+  "low": 14.6,
+  "high": 27.9,
+  "pop": 5795,
+  "ages": {
+   "05": 529,
+   "10": 469,
+   "15": 416
+  }
+ },
+ "PRY-24307389": {
+  "name": "Edelira",
+  "dept": "Itapúa",
+  "pov": 26.9,
+  "low": 21.5,
+  "high": 32.2,
+  "pop": 17685,
+  "ages": {
+   "05": 1740,
+   "10": 1627,
+   "15": 1476
+  }
+ },
+ "PRY-52779132": {
+  "name": "Emboscada",
+  "dept": "Cordillera",
+  "pov": 21.5,
+  "low": 16.2,
+  "high": 26.8,
+  "pop": 22387,
+  "ages": {
+   "05": 1548,
+   "10": 1531,
+   "15": 1482
+  }
+ },
+ "PRY-39723019": {
+  "name": "Encarnación",
+  "dept": "Itapúa",
+  "pov": 15.0,
+  "low": 13.2,
+  "high": 16.8,
+  "pop": 110999,
+  "ages": {
+   "05": 14487,
+   "10": 13544,
+   "15": 12285
+  }
+ },
+ "PRY-13633545": {
+  "name": "Escobar",
+  "dept": "Paraguarí",
+  "pov": 38.3,
+  "low": 31.1,
+  "high": 45.4,
+  "pop": 4893,
+  "ages": {
+   "05": 538,
+   "10": 536,
+   "15": 520
+  }
+ },
+ "PRY-03550003": {
+  "name": "Eusebio Ayala",
+  "dept": "Cordillera",
+  "pov": 25.3,
+  "low": 20.6,
+  "high": 29.9,
+  "pop": 20028,
+  "ages": {
+   "05": 2388,
+   "10": 2363,
+   "15": 2286
+  }
+ },
+ "PRY-85779372": {
+  "name": "Félix Pérez Cardozo",
+  "dept": "Guairá",
+  "pov": 36.3,
+  "low": 29.6,
+  "high": 43.1,
+  "pop": 4988,
+  "ages": {
+   "05": 431,
+   "10": 423,
+   "15": 418
+  }
+ },
+ "PRY-92091348": {
+  "name": "Fernando de La Mora",
+  "dept": "Central",
+  "pov": 3.7,
+  "low": 2.4,
+  "high": 5.0,
+  "pop": 112615,
+  "ages": {
+   "05": 17786,
+   "10": 16689,
+   "15": 15938
+  }
+ },
+ "PRY-81343765": {
+  "name": "Filadelfia",
+  "dept": "Boquerón",
+  "pov": 6.1,
+  "low": 2.2,
+  "high": 9.9,
+  "pop": 23768,
+  "ages": {
+   "05": 2158,
+   "10": 1888,
+   "15": 1750
+  }
+ },
+ "PRY-87672171": {
+  "name": "Fram",
+  "dept": "Itapúa",
+  "pov": 19.4,
+  "low": 13.4,
+  "high": 25.4,
+  "pop": 8875,
+  "ages": {
+   "05": 1158,
+   "10": 1083,
+   "15": 982
+  }
+ },
+ "PRY-03833768": {
+  "name": "Francisco Caballero Alvarez",
+  "dept": "Canindeyú",
+  "pov": 19.4,
+  "low": 14.3,
+  "high": 24.6,
+  "pop": 8311,
+  "ages": {
+   "05": 1127,
+   "10": 1029,
+   "15": 929
+  }
+ },
+ "PRY-81125046": {
+  "name": "Fuerte Olimpo",
+  "dept": "Alto Paraguay",
+  "pov": 37.5,
+  "low": 27.9,
+  "high": 47.1,
+  "pop": 4841,
+  "ages": {
+   "05": 699,
+   "10": 643,
+   "15": 563
+  }
+ },
+ "PRY-49672421": {
+  "name": "Yegros",
+  "dept": "Caazapá",
+  "pov": 32.1,
+  "low": 26.8,
+  "high": 37.3,
+  "pop": 5502,
+  "ages": {
+   "05": 850,
+   "10": 787,
+   "15": 736
+  }
+ },
+ "PRY-33474080": {
+  "name": "General Artigas",
+  "dept": "Itapúa",
+  "pov": 37.5,
+  "low": 31.5,
+  "high": 43.5,
+  "pop": 8580,
+  "ages": {
+   "05": 1128,
+   "10": 1055,
+   "15": 957
+  }
+ },
+ "PRY-19956251": {
+  "name": "Caballero",
+  "dept": "Paraguarí",
+  "pov": 27.5,
+  "low": 19.4,
+  "high": 35.6,
+  "pop": 4870,
+  "ages": {
+   "05": 670,
+   "10": 668,
+   "15": 647
+  }
+ },
+ "PRY-93676815": {
+  "name": "General Delgado",
+  "dept": "Itapúa",
+  "pov": 26.6,
+  "low": 20.3,
+  "high": 33.0,
+  "pop": 5732,
+  "ages": {
+   "05": 668,
+   "10": 624,
+   "15": 566
+  }
+ },
+ "PRY-18117367": {
+  "name": "Gral. José Eduvigis Díaz",
+  "dept": "Ñeembucú",
+  "pov": 31.9,
+  "low": 26.6,
+  "high": 37.2,
+  "pop": 3229,
+  "ages": {
+   "05": 240,
+   "10": 233,
+   "15": 227
+  }
+ },
+ "PRY-28608800": {
+  "name": "General Elizardo Aquino",
+  "dept": "San Pedro",
+  "pov": 37.7,
+  "low": 32.5,
+  "high": 43.0,
+  "pop": 17875,
+  "ages": {
+   "05": 2630,
+   "10": 2501,
+   "15": 2312
+  }
+ },
+ "PRY-09423785": {
+  "name": "Gral. Eugenio A. Garay",
+  "dept": "Guairá",
+  "pov": 45.0,
+  "low": 37.2,
+  "high": 52.9,
+  "pop": 7001,
+  "ages": {
+   "05": 556,
+   "10": 545,
+   "15": 539
+  }
+ },
+ "PRY-95751197": {
+  "name": "Gral. Higinio Morinigo",
+  "dept": "Caazapá",
+  "pov": 42.6,
+  "low": 35.2,
+  "high": 50.0,
+  "pop": 4990,
+  "ages": {
+   "05": 638,
+   "10": 591,
+   "15": 552
+  }
+ },
+ "PRY-53182291": {
+  "name": "General José María Bruguez",
+  "dept": "Presidente Hayes",
+  "pov": 25.6,
+  "low": 18.1,
+  "high": 33.2,
+  "pop": 2611,
+  "ages": {
+   "05": 643,
+   "10": 580,
+   "15": 530
+  }
+ },
+ "PRY-02864576": {
+  "name": "General Francisco Isidoro Resquín",
+  "dept": "San Pedro",
+  "pov": 35.1,
+  "low": 28.7,
+  "high": 41.6,
+  "pop": 10487,
+  "ages": {
+   "05": 2164,
+   "10": 2058,
+   "15": 1903
+  }
+ },
+ "PRY-87054733": {
+  "name": "Guajayvi",
+  "dept": "San Pedro",
+  "pov": 31.7,
+  "low": 27.1,
+  "high": 36.3,
+  "pop": 30170,
+  "ages": {
+   "05": 2902,
+   "10": 2760,
+   "15": 2552
+  }
+ },
+ "PRY-60675613": {
+  "name": "Guarambaré",
+  "dept": "Central",
+  "pov": 29.8,
+  "low": 24.4,
+  "high": 35.3,
+  "pop": 29759,
+  "ages": {
+   "05": 2041,
+   "10": 1920,
+   "15": 1835
+  }
+ },
+ "PRY-17313962": {
+  "name": "Guazú-Cuá",
+  "dept": "Ñeembucú",
+  "pov": 23.5,
+  "low": 15.5,
+  "high": 31.4,
+  "pop": 1370,
+  "ages": {
+   "05": 165,
+   "10": 159,
+   "15": 155
+  }
+ },
+ "PRY-42537518": {
+  "name": "Hernandarias",
+  "dept": "Alto Paraná",
+  "pov": 14.2,
+  "low": 11.7,
+  "high": 16.6,
+  "pop": 85509,
+  "ages": {
+   "05": 10765,
+   "10": 9555,
+   "15": 8462
+  }
+ },
+ "PRY-63766734": {
+  "name": "Hohenau",
+  "dept": "Itapúa",
+  "pov": 9.7,
+  "low": 5.4,
+  "high": 14.0,
+  "pop": 13496,
+  "ages": {
+   "05": 1868,
+   "10": 1746,
+   "15": 1584
+  }
+ },
+ "PRY-32623945": {
+  "name": "Horqueta",
+  "dept": "Concepción",
+  "pov": 30.9,
+  "low": 26.4,
+  "high": 35.4,
+  "pop": 41856,
+  "ages": {
+   "05": 5967,
+   "10": 5570,
+   "15": 5254
+  }
+ },
+ "PRY-83076249": {
+  "name": "Humaitá",
+  "dept": "Ñeembucú",
+  "pov": 39.8,
+  "low": 33.3,
+  "high": 46.3,
+  "pop": 2398,
+  "ages": {
+   "05": 207,
+   "10": 200,
+   "15": 195
+  }
+ },
+ "PRY-51985141": {
+  "name": "Iruña",
+  "dept": "Alto Paraná",
+  "pov": 8.6,
+  "low": 4.4,
+  "high": 12.8,
+  "pop": 4097,
+  "ages": {
+   "05": 742,
+   "10": 658,
+   "15": 583
+  }
+ },
+ "PRY-99744623": {
+  "name": "Isla Pucú",
+  "dept": "Cordillera",
+  "pov": 32.0,
+  "low": 26.4,
+  "high": 37.6,
+  "pop": 5392,
+  "ages": {
+   "05": 648,
+   "10": 641,
+   "15": 620
+  }
+ },
+ "PRY-18352400": {
+  "name": "Isla Umbú",
+  "dept": "Ñeembucú",
+  "pov": 15.0,
+  "low": 8.5,
+  "high": 21.5,
+  "pop": 2169,
+  "ages": {
+   "05": 201,
+   "10": 194,
+   "15": 189
+  }
+ },
+ "PRY-74080744": {
+  "name": "Itá",
+  "dept": "Central",
+  "pov": 20.2,
+  "low": 16.1,
+  "high": 24.2,
+  "pop": 74210,
+  "ages": {
+   "05": 4763,
+   "10": 4482,
+   "15": 4285
+  }
+ },
+ "PRY-71869555": {
+  "name": "Itacurubí de La Cordillera",
+  "dept": "Cordillera",
+  "pov": 25.1,
+  "low": 20.1,
+  "high": 30.1,
+  "pop": 9275,
+  "ages": {
+   "05": 1104,
+   "10": 1092,
+   "15": 1057
+  }
+ },
+ "PRY-66817210": {
+  "name": "Itacurubí del Rosario",
+  "dept": "San Pedro",
+  "pov": 28.2,
+  "low": 22.3,
+  "high": 34.1,
+  "pop": 11113,
+  "ages": {
+   "05": 1952,
+   "10": 1857,
+   "15": 1717
+  }
+ },
+ "PRY-57736949": {
+  "name": "Itakyry",
+  "dept": "Alto Paraná",
+  "pov": 37.7,
+  "low": 32.2,
+  "high": 43.2,
+  "pop": 29051,
+  "ages": {
+   "05": 2654,
+   "10": 2356,
+   "15": 2087
+  }
+ },
+ "PRY-32989207": {
+  "name": "Itanará",
+  "dept": "Canindeyú",
+  "pov": 37.2,
+  "low": 29.1,
+  "high": 45.4,
+  "pop": 2159,
+  "ages": {
+   "05": 301,
+   "10": 275,
+   "15": 248
+  }
+ },
+ "PRY-67805731": {
+  "name": "Itapé",
+  "dept": "Guairá",
+  "pov": 29.8,
+  "low": 23.2,
+  "high": 36.4,
+  "pop": 6262,
+  "ages": {
+   "05": 531,
+   "10": 520,
+   "15": 515
+  }
+ },
+ "PRY-70285789": {
+  "name": "Itapúa Poty",
+  "dept": "Itapúa",
+  "pov": 26.9,
+  "low": 20.7,
+  "high": 33.2,
+  "pop": 9410,
+  "ages": {
+   "05": 996,
+   "10": 931,
+   "15": 844
+  }
+ },
+ "PRY-61944562": {
+  "name": "Itauguá",
+  "dept": "Central",
+  "pov": 18.9,
+  "low": 15.3,
+  "high": 22.4,
+  "pop": 100082,
+  "ages": {
+   "05": 6880,
+   "10": 6473,
+   "15": 6188
+  }
+ },
+ "PRY-32870417": {
+  "name": "Iturbe",
+  "dept": "Guairá",
+  "pov": 31.3,
+  "low": 25.9,
+  "high": 36.6,
+  "pop": 7236,
+  "ages": {
+   "05": 913,
+   "10": 894,
+   "15": 885
+  }
+ },
+ "PRY-14604638": {
+  "name": "J. Augusto Saldívar",
+  "dept": "Central",
+  "pov": 30.6,
+  "low": 26.3,
+  "high": 34.8,
+  "pop": 65370,
+  "ages": {
+   "05": 4097,
+   "10": 3854,
+   "15": 3685
+  }
+ },
+ "PRY-72810321": {
+  "name": "Dr. J. Eulogio Estigarribia",
+  "dept": "Caaguazú",
+  "pov": 11.7,
+  "low": 7.3,
+  "high": 16.1,
+  "pop": 43233,
+  "ages": {
+   "05": 5397,
+   "10": 5346,
+   "15": 4882
+  }
+ },
+ "PRY-41933588": {
+  "name": "Jesús",
+  "dept": "Itapúa",
+  "pov": 38.4,
+  "low": 30.9,
+  "high": 45.9,
+  "pop": 5360,
+  "ages": {
+   "05": 466,
+   "10": 436,
+   "15": 395
+  }
+ },
+ "PRY-42495523": {
+  "name": "José Domingo Ocampos",
+  "dept": "Caaguazú",
+  "pov": 36.3,
+  "low": 28.2,
+  "high": 44.5,
+  "pop": 7821,
+  "ages": {
+   "05": 680,
+   "10": 672,
+   "15": 613
+  }
+ },
+ "PRY-92936650": {
+  "name": "José Falcón",
+  "dept": "Presidente Hayes",
+  "pov": 18.1,
+  "low": 12.2,
+  "high": 24.0,
+  "pop": 3926,
+  "ages": {
+   "05": 638,
+   "10": 575,
+   "15": 526
+  }
+ },
+ "PRY-81555100": {
+  "name": "José Fassardi",
+  "dept": "Guairá",
+  "pov": 38.5,
+  "low": 31.8,
+  "high": 45.1,
+  "pop": 5349,
+  "ages": {
+   "05": 437,
+   "10": 428,
+   "15": 423
+  }
+ },
+ "PRY-34270439": {
+  "name": "Juan de Mena",
+  "dept": "Cordillera",
+  "pov": 45.9,
+  "low": 37.8,
+  "high": 54.0,
+  "pop": 6598,
+  "ages": {
+   "05": 623,
+   "10": 616,
+   "15": 596
+  }
+ },
+ "PRY-11487705": {
+  "name": "Juan E. O'leary",
+  "dept": "Alto Paraná",
+  "pov": 33.7,
+  "low": 28.5,
+  "high": 39.0,
+  "pop": 16791,
+  "ages": {
+   "05": 1459,
+   "10": 1297,
+   "15": 1149
+  }
+ },
+ "PRY-26840076": {
+  "name": "Katueté",
+  "dept": "Canindeyú",
+  "pov": 7.1,
+  "low": 3.9,
+  "high": 10.3,
+  "pop": 11991,
+  "ages": {
+   "05": 1753,
+   "10": 1601,
+   "15": 1445
+  }
+ },
+ "PRY-33845046": {
+  "name": "La Colmena",
+  "dept": "Paraguarí",
+  "pov": 14.7,
+  "low": 9.2,
+  "high": 20.1,
+  "pop": 5498,
+  "ages": {
+   "05": 737,
+   "10": 734,
+   "15": 712
+  }
+ },
+ "PRY-79344128": {
+  "name": "La Paloma del Espíritu Santo",
+  "dept": "Canindeyú",
+  "pov": 16.2,
+  "low": 12.4,
+  "high": 20.0,
+  "pop": 7784,
+  "ages": {
+   "05": 1257,
+   "10": 1147,
+   "15": 1036
+  }
+ },
+ "PRY-07977580": {
+  "name": "La Pastora",
+  "dept": "Caaguazú",
+  "pov": 43.4,
+  "low": 34.7,
+  "high": 52.0,
+  "pop": 3472,
+  "ages": {
+   "05": 469,
+   "10": 464,
+   "15": 424
+  }
+ },
+ "PRY-53568526": {
+  "name": "La Paz",
+  "dept": "Itapúa",
+  "pov": 16.1,
+  "low": 9.3,
+  "high": 23.0,
+  "pop": 2755,
+  "ages": {
+   "05": 377,
+   "10": 352,
+   "15": 320
+  }
+ },
+ "PRY-87609448": {
+  "name": "Lambaré",
+  "dept": "Central",
+  "pov": 5.5,
+  "low": 4.1,
+  "high": 6.8,
+  "pop": 129927,
+  "ages": {
+   "05": 18160,
+   "10": 17065,
+   "15": 16305
+  }
+ },
+ "PRY-75934245": {
+  "name": "José Leandro Oviedo",
+  "dept": "Itapúa",
+  "pov": 35.9,
+  "low": 28.6,
+  "high": 43.3,
+  "pop": 2376,
+  "ages": {
+   "05": 278,
+   "10": 260,
+   "15": 236
+  }
+ },
+ "PRY-34363010": {
+  "name": "Liberación",
+  "dept": "San Pedro",
+  "pov": 39.0,
+  "low": 32.4,
+  "high": 45.6,
+  "pop": 20408,
+  "ages": {
+   "05": 2042,
+   "10": 1942,
+   "15": 1795
+  }
+ },
+ "PRY-76865833": {
+  "name": "Lima",
+  "dept": "San Pedro",
+  "pov": 38.1,
+  "low": 31.2,
+  "high": 45.1,
+  "pop": 10971,
+  "ages": {
+   "05": 989,
+   "10": 941,
+   "15": 870
+  }
+ },
+ "PRY-62649925": {
+  "name": "Limpio",
+  "dept": "Central",
+  "pov": 20.5,
+  "low": 17.3,
+  "high": 23.6,
+  "pop": 150832,
+  "ages": {
+   "05": 9644,
+   "10": 9072,
+   "15": 8672
+  }
+ },
+ "PRY-97829817": {
+  "name": "Loma Grande",
+  "dept": "Cordillera",
+  "pov": 17.3,
+  "low": 11.1,
+  "high": 23.5,
+  "pop": 4116,
+  "ages": {
+   "05": 340,
+   "10": 337,
+   "15": 326
+  }
+ },
+ "PRY-59634930": {
+  "name": "Loma Plata",
+  "dept": "Boquerón",
+  "pov": 5.3,
+  "low": 2.0,
+  "high": 8.7,
+  "pop": 23139,
+  "ages": {
+   "05": 2165,
+   "10": 1894,
+   "15": 1756
+  }
+ },
+ "PRY-86001103": {
+  "name": "Loreto",
+  "dept": "Concepción",
+  "pov": 39.0,
+  "low": 32.9,
+  "high": 45.1,
+  "pop": 14453,
+  "ages": {
+   "05": 1610,
+   "10": 1503,
+   "15": 1418
+  }
+ },
+ "PRY-32359848": {
+  "name": "Los Cedrales",
+  "dept": "Alto Paraná",
+  "pov": 25.6,
+  "low": 17.9,
+  "high": 33.2,
+  "pop": 7362,
+  "ages": {
+   "05": 891,
+   "10": 791,
+   "15": 700
+  }
+ },
+ "PRY-77713324": {
+  "name": "Laureles",
+  "dept": "Ñeembucú",
+  "pov": 25.6,
+  "low": 18.2,
+  "high": 33.0,
+  "pop": 2292,
+  "ages": {
+   "05": 270,
+   "10": 261,
+   "15": 254
+  }
+ },
+ "PRY-07858483": {
+  "name": "Luque",
+  "dept": "Central",
+  "pov": 13.0,
+  "low": 11.2,
+  "high": 14.8,
+  "pop": 273442,
+  "ages": {
+   "05": 24715,
+   "10": 23250,
+   "15": 22224
+  }
+ },
+ "PRY-50723482": {
+  "name": "Maciel",
+  "dept": "Caazapá",
+  "pov": 32.1,
+  "low": 24.6,
+  "high": 39.7,
+  "pop": 3725,
+  "ages": {
+   "05": 519,
+   "10": 480,
+   "15": 449
+  }
+ },
+ "PRY-43512434": {
+  "name": "Mariano Roque Alonso",
+  "dept": "Central",
+  "pov": 9.5,
+  "low": 7.4,
+  "high": 11.6,
+  "pop": 89591,
+  "ages": {
+   "05": 9901,
+   "10": 9304,
+   "15": 8890
+  }
+ },
+ "PRY-80695530": {
+  "name": "Mariscal José Félix Estigarribia",
+  "dept": "Boquerón",
+  "pov": 19.9,
+  "low": 12.5,
+  "high": 27.4,
+  "pop": 15237,
+  "ages": {
+   "05": 3200,
+   "10": 2801,
+   "15": 2595
+  }
+ },
+ "PRY-45187341": {
+  "name": "Capitán Mauricio José Troche",
+  "dept": "Guairá",
+  "pov": 33.3,
+  "low": 27.1,
+  "high": 39.6,
+  "pop": 9942,
+  "ages": {
+   "05": 883,
+   "10": 866,
+   "15": 856
+  }
+ },
+ "PRY-84222201": {
+  "name": "Mayor José Dejesús Martínez",
+  "dept": "Ñeembucú",
+  "pov": 25.7,
+  "low": 19.4,
+  "high": 32.0,
+  "pop": 3057,
+  "ages": {
+   "05": 212,
+   "10": 206,
+   "15": 200
+  }
+ },
+ "PRY-60201396": {
+  "name": "Mayor Julio Dionisio Otaño",
+  "dept": "Itapúa",
+  "pov": 44.6,
+  "low": 38.3,
+  "high": 51.0,
+  "pop": 10283,
+  "ages": {
+   "05": 1036,
+   "10": 969,
+   "15": 879
+  }
+ },
+ "PRY-15590108": {
+  "name": "Mbaracayú",
+  "dept": "Alto Paraná",
+  "pov": 24.0,
+  "low": 19.1,
+  "high": 28.9,
+  "pop": 6636,
+  "ages": {
+   "05": 883,
+   "10": 784,
+   "15": 694
+  }
+ },
+ "PRY-28943370": {
+  "name": "Mbocayaty",
+  "dept": "Guairá",
+  "pov": 25.0,
+  "low": 19.7,
+  "high": 30.3,
+  "pop": 8408,
+  "ages": {
+   "05": 809,
+   "10": 792,
+   "15": 784
+  }
+ },
+ "PRY-11901972": {
+  "name": "Mbocayaty del Yhaguy",
+  "dept": "Cordillera",
+  "pov": 23.5,
+  "low": 15.7,
+  "high": 31.3,
+  "pop": 3386,
+  "ages": {
+   "05": 422,
+   "10": 417,
+   "15": 404
+  }
+ },
+ "PRY-62269386": {
+  "name": "Mbuyapey",
+  "dept": "Paraguarí",
+  "pov": 39.2,
+  "low": 31.6,
+  "high": 46.8,
+  "pop": 6874,
+  "ages": {
+   "05": 948,
+   "10": 944,
+   "15": 915
+  }
+ },
+ "PRY-90918350": {
+  "name": "Mariscal Francisco Solano López",
+  "dept": "Caaguazú",
+  "pov": 31.6,
+  "low": 22.6,
+  "high": 40.6,
+  "pop": 5742,
+  "ages": {
+   "05": 703,
+   "10": 696,
+   "15": 635
+  }
+ },
+ "PRY-00200238": {
+  "name": "Minga Guazú",
+  "dept": "Alto Paraná",
+  "pov": 21.6,
+  "low": 18.3,
+  "high": 24.9,
+  "pop": 86567,
+  "ages": {
+   "05": 8581,
+   "10": 7616,
+   "15": 6744
+  }
+ },
+ "PRY-26420409": {
+  "name": "Minga Porá",
+  "dept": "Alto Paraná",
+  "pov": 17.4,
+  "low": 12.9,
+  "high": 21.9,
+  "pop": 12477,
+  "ages": {
+   "05": 1347,
+   "10": 1196,
+   "15": 1059
+  }
+ },
+ "PRY-21679523": {
+  "name": "Dr. Moisés S. Bertoni",
+  "dept": "Caazapá",
+  "pov": 47.4,
+  "low": 38.6,
+  "high": 56.1,
+  "pop": 4131,
+  "ages": {
+   "05": 465,
+   "10": 430,
+   "15": 402
+  }
+ },
+ "PRY-06087873": {
+  "name": "Ñacunday",
+  "dept": "Alto Paraná",
+  "pov": 30.5,
+  "low": 24.2,
+  "high": 36.9,
+  "pop": 6492,
+  "ages": {
+   "05": 683,
+   "10": 606,
+   "15": 537
+  }
+ },
+ "PRY-09951185": {
+  "name": "Nanawa",
+  "dept": "Presidente Hayes",
+  "pov": 24.0,
+  "low": 17.8,
+  "high": 30.2,
+  "pop": 5978,
+  "ages": {
+   "05": 357,
+   "10": 327,
+   "15": 299
+  }
+ },
+ "PRY-90923152": {
+  "name": "Naranjal",
+  "dept": "Alto Paraná",
+  "pov": 9.5,
+  "low": 5.1,
+  "high": 13.9,
+  "pop": 6772,
+  "ages": {
+   "05": 1229,
+   "10": 1090,
+   "15": 966
+  }
+ },
+ "PRY-07055378": {
+  "name": "Natalicio Talavera",
+  "dept": "Guairá",
+  "pov": 28.8,
+  "low": 22.0,
+  "high": 35.6,
+  "pop": 4025,
+  "ages": {
+   "05": 381,
+   "10": 374,
+   "15": 370
+  }
+ },
+ "PRY-89708268": {
+  "name": "Natalio",
+  "dept": "Itapúa",
+  "pov": 35.5,
+  "low": 30.4,
+  "high": 40.6,
+  "pop": 14905,
+  "ages": {
+   "05": 1444,
+   "10": 1350,
+   "15": 1225
+  }
+ },
+ "PRY-34137770": {
+  "name": "Ñemby",
+  "dept": "Central",
+  "pov": 13.8,
+  "low": 11.6,
+  "high": 16.1,
+  "pop": 125252,
+  "ages": {
+   "05": 11267,
+   "10": 10600,
+   "15": 10133
+  }
+ },
+ "PRY-59946742": {
+  "name": "Nueva Alborada",
+  "dept": "Itapúa",
+  "pov": 28.2,
+  "low": 20.2,
+  "high": 36.1,
+  "pop": 4904,
+  "ages": {
+   "05": 430,
+   "10": 402,
+   "15": 365
+  }
+ },
+ "PRY-74757659": {
+  "name": "Nueva Colombia",
+  "dept": "Cordillera",
+  "pov": 21.2,
+  "low": 14.1,
+  "high": 28.3,
+  "pop": 4925,
+  "ages": {
+   "05": 429,
+   "10": 425,
+   "15": 411
+  }
+ },
+ "PRY-91255313": {
+  "name": "Nueva Esperanza",
+  "dept": "Canindeyú",
+  "pov": 11.1,
+  "low": 7.2,
+  "high": 14.9,
+  "pop": 12249,
+  "ages": {
+   "05": 1930,
+   "10": 1762,
+   "15": 1590
+  }
+ },
+ "PRY-87009512": {
+  "name": "Nueva Germania",
+  "dept": "San Pedro",
+  "pov": 19.4,
+  "low": 11.5,
+  "high": 27.2,
+  "pop": 6261,
+  "ages": {
+   "05": 790,
+   "10": 751,
+   "15": 694
+  }
+ },
+ "PRY-72435783": {
+  "name": "Nueva Italia",
+  "dept": "Central",
+  "pov": 22.7,
+  "low": 16.5,
+  "high": 28.9,
+  "pop": 10494,
+  "ages": {
+   "05": 840,
+   "10": 790,
+   "15": 755
+  }
+ },
+ "PRY-30595033": {
+  "name": "Nueva Londres",
+  "dept": "Caaguazú",
+  "pov": 31.4,
+  "low": 24.2,
+  "high": 38.6,
+  "pop": 3822,
+  "ages": {
+   "05": 537,
+   "10": 532,
+   "15": 486
+  }
+ },
+ "PRY-44671152": {
+  "name": "Nueva Toledo",
+  "dept": "Caaguazú",
+  "pov": 22.1,
+  "low": 14.4,
+  "high": 29.7,
+  "pop": 5349,
+  "ages": {
+   "05": 681,
+   "10": 675,
+   "15": 616
+  }
+ },
+ "PRY-04490826": {
+  "name": "Ñumí",
+  "dept": "Guairá",
+  "pov": 38.7,
+  "low": 30.5,
+  "high": 46.9,
+  "pop": 2940,
+  "ages": {
+   "05": 304,
+   "10": 298,
+   "15": 295
+  }
+ },
+ "PRY-67423936": {
+  "name": "Obligado",
+  "dept": "Itapúa",
+  "pov": 17.8,
+  "low": 13.8,
+  "high": 21.8,
+  "pop": 14337,
+  "ages": {
+   "05": 1706,
+   "10": 1595,
+   "15": 1447
+  }
+ },
+ "PRY-81021662": {
+  "name": "Paraguarí",
+  "dept": "Paraguarí",
+  "pov": 17.3,
+  "low": 13.6,
+  "high": 21.0,
+  "pop": 21786,
+  "ages": {
+   "05": 2502,
+   "10": 2492,
+   "15": 2416
+  }
+ },
+ "PRY-11029950": {
+  "name": "Paso de Patria",
+  "dept": "Ñeembucú",
+  "pov": 26.5,
+  "low": 18.2,
+  "high": 34.9,
+  "pop": 1851,
+  "ages": {
+   "05": 159,
+   "10": 154,
+   "15": 150
+  }
+ },
+ "PRY-86844876": {
+  "name": "Paso Yobai",
+  "dept": "Guairá",
+  "pov": 40.7,
+  "low": 34.2,
+  "high": 47.1,
+  "pop": 21243,
+  "ages": {
+   "05": 1667,
+   "10": 1634,
+   "15": 1616
+  }
+ },
+ "PRY-94185785": {
+  "name": "Pedro Juan Caballero",
+  "dept": "Amambay",
+  "pov": 15.7,
+  "low": 13.3,
+  "high": 18.0,
+  "pop": 126044,
+  "ages": {
+   "05": 15148,
+   "10": 13994,
+   "15": 12826
+  }
+ },
+ "PRY-12703363": {
+  "name": "Pilar",
+  "dept": "Ñeembucú",
+  "pov": 14.2,
+  "low": 12.2,
+  "high": 16.1,
+  "pop": 36166,
+  "ages": {
+   "05": 3519,
+   "10": 3406,
+   "15": 3320
+  }
+ },
+ "PRY-93398490": {
+  "name": "Pirapó",
+  "dept": "Itapúa",
+  "pov": 22.2,
+  "low": 16.8,
+  "high": 27.6,
+  "pop": 6304,
+  "ages": {
+   "05": 1054,
+   "10": 985,
+   "15": 894
+  }
+ },
+ "PRY-40576001": {
+  "name": "Pirayú",
+  "dept": "Paraguarí",
+  "pov": 23.1,
+  "low": 18.5,
+  "high": 27.6,
+  "pop": 18633,
+  "ages": {
+   "05": 1355,
+   "10": 1350,
+   "15": 1308
+  }
+ },
+ "PRY-47629308": {
+  "name": "Piribebuy",
+  "dept": "Cordillera",
+  "pov": 22.4,
+  "low": 18.4,
+  "high": 26.4,
+  "pop": 26727,
+  "ages": {
+   "05": 3017,
+   "10": 2986,
+   "15": 2890
+  }
+ },
+ "PRY-69801439": {
+  "name": "Presidente Franco",
+  "dept": "Alto Paraná",
+  "pov": 16.7,
+  "low": 14.1,
+  "high": 19.3,
+  "pop": 94338,
+  "ages": {
+   "05": 11060,
+   "10": 9824,
+   "15": 8702
+  }
+ },
+ "PRY-63471840": {
+  "name": "Primero de Marzo",
+  "dept": "Cordillera",
+  "pov": 32.4,
+  "low": 24.6,
+  "high": 40.1,
+  "pop": 5157,
+  "ages": {
+   "05": 467,
+   "10": 462,
+   "15": 447
+  }
+ },
+ "PRY-80836288": {
+  "name": "Puerto Casado",
+  "dept": "Alto Paraguay",
+  "pov": 40.6,
+  "low": 30.6,
+  "high": 50.6,
+  "pop": 5924,
+  "ages": {
+   "05": 826,
+   "10": 759,
+   "15": 666
+  }
+ },
+ "PRY-52715157": {
+  "name": "Puerto Pinasco",
+  "dept": "Presidente Hayes",
+  "pov": 26.0,
+  "low": 18.0,
+  "high": 34.0,
+  "pop": 10101,
+  "ages": {
+   "05": 742,
+   "10": 669,
+   "15": 612
+  }
+ },
+ "PRY-31776184": {
+  "name": "Quiindy",
+  "dept": "Paraguarí",
+  "pov": 28.3,
+  "low": 23.4,
+  "high": 33.3,
+  "pop": 14929,
+  "ages": {
+   "05": 1648,
+   "10": 1642,
+   "15": 1592
+  }
+ },
+ "PRY-25122018": {
+  "name": "Quyquyhó",
+  "dept": "Paraguarí",
+  "pov": 29.8,
+  "low": 23.1,
+  "high": 36.6,
+  "pop": 4613,
+  "ages": {
+   "05": 531,
+   "10": 529,
+   "15": 513
+  }
+ },
+ "PRY-88022787": {
+  "name": "R.I. 3 Corrales",
+  "dept": "Caaguazú",
+  "pov": 40.1,
+  "low": 31.1,
+  "high": 49.1,
+  "pop": 6339,
+  "ages": {
+   "05": 650,
+   "10": 644,
+   "15": 588
+  }
+ },
+ "PRY-04156329": {
+  "name": "Raúl Arsenio Oviedo",
+  "dept": "Caaguazú",
+  "pov": 24.5,
+  "low": 18.0,
+  "high": 31.1,
+  "pop": 13385,
+  "ages": {
+   "05": 1362,
+   "10": 1349,
+   "15": 1232
+  }
+ },
+ "PRY-05602490": {
+  "name": "Repatriación",
+  "dept": "Caaguazú",
+  "pov": 39.9,
+  "low": 33.4,
+  "high": 46.4,
+  "pop": 25793,
+  "ages": {
+   "05": 2162,
+   "10": 2142,
+   "15": 1956
+  }
+ },
+ "PRY-67563225": {
+  "name": "Salto del Guairá",
+  "dept": "Canindeyú",
+  "pov": 11.3,
+  "low": 9.4,
+  "high": 13.1,
+  "pop": 32164,
+  "ages": {
+   "05": 4412,
+   "10": 4028,
+   "15": 3635
+  }
+ },
+ "PRY-93173193": {
+  "name": "San Alberto",
+  "dept": "Alto Paraná",
+  "pov": 8.6,
+  "low": 5.4,
+  "high": 11.9,
+  "pop": 10793,
+  "ages": {
+   "05": 2120,
+   "10": 1881,
+   "15": 1666
+  }
+ },
+ "PRY-99022522": {
+  "name": "San Antonio",
+  "dept": "Central",
+  "pov": 15.8,
+  "low": 12.9,
+  "high": 18.7,
+  "pop": 63114,
+  "ages": {
+   "05": 6476,
+   "10": 6092,
+   "15": 5824
+  }
+ },
+ "PRY-87283478": {
+  "name": "San Bernardino",
+  "dept": "Cordillera",
+  "pov": 12.7,
+  "low": 9.4,
+  "high": 15.9,
+  "pop": 12430,
+  "ages": {
+   "05": 2748,
+   "10": 2719,
+   "15": 2631
+  }
+ },
+ "PRY-14769686": {
+  "name": "San Carlos del Apa",
+  "dept": "Concepción",
+  "pov": 37.4,
+  "low": 25.2,
+  "high": 49.5,
+  "pop": 914,
+  "ages": {
+   "05": 181,
+   "10": 169,
+   "15": 160
+  }
+ },
+ "PRY-07050276": {
+  "name": "San Cosme y Damián",
+  "dept": "Itapúa",
+  "pov": 37.4,
+  "low": 29.9,
+  "high": 44.8,
+  "pop": 7440,
+  "ages": {
+   "05": 871,
+   "10": 814,
+   "15": 739
+  }
+ },
+ "PRY-93751901": {
+  "name": "San Cristóbal",
+  "dept": "Alto Paraná",
+  "pov": 16.9,
+  "low": 12.1,
+  "high": 21.7,
+  "pop": 8922,
+  "ages": {
+   "05": 1175,
+   "10": 1042,
+   "15": 923
+  }
+ },
+ "PRY-63795296": {
+  "name": "San Estanislao",
+  "dept": "San Pedro",
+  "pov": 28.7,
+  "low": 25.0,
+  "high": 32.4,
+  "pop": 49243,
+  "ages": {
+   "05": 6577,
+   "10": 6255,
+   "15": 5784
+  }
+ },
+ "PRY-64892971": {
+  "name": "San Ignacio",
+  "dept": "Misiones",
+  "pov": 22.6,
+  "low": 20.1,
+  "high": 25.2,
+  "pop": 30372,
+  "ages": {
+   "05": 3226,
+   "10": 3196,
+   "15": 3082
+  }
+ },
+ "PRY-86062049": {
+  "name": "San Joaquín",
+  "dept": "Caaguazú",
+  "pov": 45.1,
+  "low": 38.2,
+  "high": 52.0,
+  "pop": 12593,
+  "ages": {
+   "05": 1095,
+   "10": 1084,
+   "15": 990
+  }
+ },
+ "PRY-81669956": {
+  "name": "San José de Los Arroyos",
+  "dept": "Caaguazú",
+  "pov": 24.2,
+  "low": 18.6,
+  "high": 29.7,
+  "pop": 14685,
+  "ages": {
+   "05": 2028,
+   "10": 2009,
+   "15": 1835
+  }
+ },
+ "PRY-43104000": {
+  "name": "San José Obrero",
+  "dept": "Cordillera",
+  "pov": 27.2,
+  "low": 20.0,
+  "high": 34.4,
+  "pop": 3020,
+  "ages": {
+   "05": 317,
+   "10": 314,
+   "15": 303
+  }
+ },
+ "PRY-59427719": {
+  "name": "San Juan Bautista de Las Misiones",
+  "dept": "Misiones",
+  "pov": 13.1,
+  "low": 10.2,
+  "high": 15.9,
+  "pop": 21505,
+  "ages": {
+   "05": 2339,
+   "10": 2318,
+   "15": 2235
+  }
+ },
+ "PRY-51885195": {
+  "name": "San Juan Bautista de Ñeembucú",
+  "dept": "Ñeembucú",
+  "pov": 32.8,
+  "low": 26.4,
+  "high": 39.2,
+  "pop": 3840,
+  "ages": {
+   "05": 350,
+   "10": 339,
+   "15": 330
+  }
+ },
+ "PRY-90376719": {
+  "name": "San Juan Del Paraná",
+  "dept": "Itapúa",
+  "pov": 22.6,
+  "low": 17.8,
+  "high": 27.4,
+  "pop": 9612,
+  "ages": {
+   "05": 807,
+   "10": 755,
+   "15": 685
+  }
+ },
+ "PRY-65027300": {
+  "name": "San Juan Nepomuceno",
+  "dept": "Caazapá",
+  "pov": 37.0,
+  "low": 32.0,
+  "high": 41.9,
+  "pop": 30763,
+  "ages": {
+   "05": 3470,
+   "10": 3212,
+   "15": 3002
+  }
+ },
+ "PRY-11064048": {
+  "name": "San Lázaro",
+  "dept": "Concepción",
+  "pov": 25.3,
+  "low": 19.4,
+  "high": 31.2,
+  "pop": 12151,
+  "ages": {
+   "05": 1888,
+   "10": 1762,
+   "15": 1662
+  }
+ },
+ "PRY-50807460": {
+  "name": "San Lorenzo",
+  "dept": "Central",
+  "pov": 10.9,
+  "low": 9.5,
+  "high": 12.4,
+  "pop": 233932,
+  "ages": {
+   "05": 26542,
+   "10": 24970,
+   "15": 23870
+  }
+ },
+ "PRY-35688785": {
+  "name": "San Miguel",
+  "dept": "Misiones",
+  "pov": 27.2,
+  "low": 21.5,
+  "high": 33.0,
+  "pop": 5238,
+  "ages": {
+   "05": 592,
+   "10": 587,
+   "15": 566
+  }
+ },
+ "PRY-01472902": {
+  "name": "San Pablo",
+  "dept": "San Pedro",
+  "pov": 37.3,
+  "low": 28.2,
+  "high": 46.5,
+  "pop": 3578,
+  "ages": {
+   "05": 442,
+   "10": 420,
+   "15": 388
+  }
+ },
+ "PRY-03357439": {
+  "name": "San Patricio",
+  "dept": "Misiones",
+  "pov": 33.6,
+  "low": 27.3,
+  "high": 39.9,
+  "pop": 3236,
+  "ages": {
+   "05": 218,
+   "10": 216,
+   "15": 208
+  }
+ },
+ "PRY-26301868": {
+  "name": "San Pedro del Paraná",
+  "dept": "Itapúa",
+  "pov": 39.6,
+  "low": 34.9,
+  "high": 44.4,
+  "pop": 22657,
+  "ages": {
+   "05": 2341,
+   "10": 2188,
+   "15": 1985
+  }
+ },
+ "PRY-41111759": {
+  "name": "San Pedro del Ycuamandyyú",
+  "dept": "San Pedro",
+  "pov": 34.0,
+  "low": 29.2,
+  "high": 38.8,
+  "pop": 34111,
+  "ages": {
+   "05": 4422,
+   "10": 4205,
+   "15": 3888
+  }
+ },
+ "PRY-94033203": {
+  "name": "San Rafael del Paraná",
+  "dept": "Itapúa",
+  "pov": 26.0,
+  "low": 20.4,
+  "high": 31.7,
+  "pop": 14089,
+  "ages": {
+   "05": 1582,
+   "10": 1479,
+   "15": 1342
+  }
+ },
+ "PRY-97842980": {
+  "name": "Roque Gonzalez de Santa Cruz",
+  "dept": "Paraguarí",
+  "pov": 31.1,
+  "low": 25.1,
+  "high": 37.1,
+  "pop": 9943,
+  "ages": {
+   "05": 1008,
+   "10": 1004,
+   "15": 974
+  }
+ },
+ "PRY-29628074": {
+  "name": "San Salvador",
+  "dept": "Guairá",
+  "pov": 36.8,
+  "low": 29.3,
+  "high": 44.3,
+  "pop": 2608,
+  "ages": {
+   "05": 312,
+   "10": 306,
+   "15": 302
+  }
+ },
+ "PRY-61648605": {
+  "name": "Santa Elena",
+  "dept": "Cordillera",
+  "pov": 30.3,
+  "low": 22.5,
+  "high": 38.1,
+  "pop": 4413,
+  "ages": {
+   "05": 544,
+   "10": 538,
+   "15": 521
+  }
+ },
+ "PRY-61157368": {
+  "name": "Santa Fe del Paraná",
+  "dept": "Alto Paraná",
+  "pov": 14.7,
+  "low": 10.1,
+  "high": 19.4,
+  "pop": 4070,
+  "ages": {
+   "05": 651,
+   "10": 578,
+   "15": 512
+  }
+ },
+ "PRY-03413829": {
+  "name": "Santa María",
+  "dept": "Misiones",
+  "pov": 28.6,
+  "low": 23.4,
+  "high": 33.9,
+  "pop": 7649,
+  "ages": {
+   "05": 656,
+   "10": 650,
+   "15": 627
+  }
+ },
+ "PRY-49770711": {
+  "name": "Santa Rita",
+  "dept": "Alto Paraná",
+  "pov": 5.3,
+  "low": 2.8,
+  "high": 7.9,
+  "pop": 27695,
+  "ages": {
+   "05": 4818,
+   "10": 4275,
+   "15": 3786
+  }
+ },
+ "PRY-42128732": {
+  "name": "Santa Rosa",
+  "dept": "Misiones",
+  "pov": 34.5,
+  "low": 30.5,
+  "high": 38.5,
+  "pop": 16674,
+  "ages": {
+   "05": 1525,
+   "10": 1511,
+   "15": 1457
+  }
+ },
+ "PRY-43978432": {
+  "name": "Santa Rosa del Aguaray",
+  "dept": "San Pedro",
+  "pov": 26.8,
+  "low": 22.3,
+  "high": 31.2,
+  "pop": 43520,
+  "ages": {
+   "05": 4129,
+   "10": 3927,
+   "15": 3631
+  }
+ },
+ "PRY-13350347": {
+  "name": "Santa Rosa del Mbutuy",
+  "dept": "Caaguazú",
+  "pov": 45.2,
+  "low": 37.3,
+  "high": 53.1,
+  "pop": 8919,
+  "ages": {
+   "05": 958,
+   "10": 949,
+   "15": 866
+  }
+ },
+ "PRY-45193032": {
+  "name": "Santa Rosa del Monday",
+  "dept": "Alto Paraná",
+  "pov": 6.4,
+  "low": 2.9,
+  "high": 9.9,
+  "pop": 6150,
+  "ages": {
+   "05": 1288,
+   "10": 1143,
+   "15": 1012
+  }
+ },
+ "PRY-26981695": {
+  "name": "Santiago",
+  "dept": "Misiones",
+  "pov": 27.3,
+  "low": 21.9,
+  "high": 32.7,
+  "pop": 6070,
+  "ages": {
+   "05": 637,
+   "10": 631,
+   "15": 608
+  }
+ },
+ "PRY-37566299": {
+  "name": "Sapucái",
+  "dept": "Paraguarí",
+  "pov": 24.4,
+  "low": 17.4,
+  "high": 31.4,
+  "pop": 5434,
+  "ages": {
+   "05": 697,
+   "10": 694,
+   "15": 673
+  }
+ },
+ "PRY-48817106": {
+  "name": "Sargento José Félix López",
+  "dept": "Concepción",
+  "pov": 51.3,
+  "low": 43.0,
+  "high": 59.6,
+  "pop": 6418,
+  "ages": {
+   "05": 630,
+   "10": 588,
+   "15": 555
+  }
+ },
+ "PRY-55639870": {
+  "name": "Simón Bolivar",
+  "dept": "Caaguazú",
+  "pov": 42.7,
+  "low": 34.1,
+  "high": 51.2,
+  "pop": 4994,
+  "ages": {
+   "05": 506,
+   "10": 501,
+   "15": 458
+  }
+ },
+ "PRY-00525854": {
+  "name": "Tacuaras",
+  "dept": "Ñeembucú",
+  "pov": 24.8,
+  "low": 17.9,
+  "high": 31.7,
+  "pop": 2719,
+  "ages": {
+   "05": 267,
+   "10": 258,
+   "15": 252
+  }
+ },
+ "PRY-75734483": {
+  "name": "Tacuatí",
+  "dept": "San Pedro",
+  "pov": 31.6,
+  "low": 25.1,
+  "high": 38.1,
+  "pop": 14815,
+  "ages": {
+   "05": 1640,
+   "10": 1560,
+   "15": 1442
+  }
+ },
+ "PRY-43118255": {
+  "name": "Tavaí",
+  "dept": "Caazapá",
+  "pov": 38.7,
+  "low": 33.1,
+  "high": 44.3,
+  "pop": 17970,
+  "ages": {
+   "05": 1772,
+   "10": 1640,
+   "15": 1533
+  }
+ },
+ "PRY-61414173": {
+  "name": "Tavapy",
+  "dept": "Alto Paraná",
+  "pov": 26.5,
+  "low": 18.5,
+  "high": 34.5,
+  "pop": 7291,
+  "ages": {
+   "05": 643,
+   "10": 571,
+   "15": 506
+  }
+ },
+ "PRY-85752255": {
+  "name": "Tebicuary",
+  "dept": "Guairá",
+  "pov": 16.7,
+  "low": 10.4,
+  "high": 23.0,
+  "pop": 2747,
+  "ages": {
+   "05": 308,
+   "10": 302,
+   "15": 299
+  }
+ },
+ "PRY-62177900": {
+  "name": "Tebicuary-Mí",
+  "dept": "Paraguarí",
+  "pov": 31.3,
+  "low": 22.2,
+  "high": 40.5,
+  "pop": 3357,
+  "ages": {
+   "05": 288,
+   "10": 287,
+   "15": 278
+  }
+ },
+ "PRY-14634322": {
+  "name": "Tembiaporá",
+  "dept": "Caaguazú",
+  "pov": 41.6,
+  "low": 33.2,
+  "high": 50.1,
+  "pop": 14018,
+  "ages": {
+   "05": 824,
+   "10": 816,
+   "15": 746
+  }
+ },
+ "PRY-58008201": {
+  "name": "Tobatí",
+  "dept": "Cordillera",
+  "pov": 33.5,
+  "low": 28.9,
+  "high": 38.0,
+  "pop": 29019,
+  "ages": {
+   "05": 2568,
+   "10": 2542,
+   "15": 2459
+  }
+ },
+ "PRY-05673741": {
+  "name": "Tomás Romero Pereira",
+  "dept": "Itapúa",
+  "pov": 28.0,
+  "low": 23.6,
+  "high": 32.4,
+  "pop": 26088,
+  "ages": {
+   "05": 2942,
+   "10": 2750,
+   "15": 2495
+  }
+ },
+ "PRY-93984448": {
+  "name": "Trinidad",
+  "dept": "Itapúa",
+  "pov": 25.4,
+  "low": 18.2,
+  "high": 32.7,
+  "pop": 8405,
+  "ages": {
+   "05": 623,
+   "10": 582,
+   "15": 528
+  }
+ },
+ "PRY-92874371": {
+  "name": "Tte. 1° Manuel Irala Fernández",
+  "dept": "Presidente Hayes",
+  "pov": 6.3,
+  "low": 3.6,
+  "high": 9.1,
+  "pop": 21950,
+  "ages": {
+   "05": 3742,
+   "10": 3371,
+   "15": 3084
+  }
+ },
+ "PRY-59329223": {
+  "name": "Teniente Esteban Martínez",
+  "dept": "Presidente Hayes",
+  "pov": 24.7,
+  "low": 17.3,
+  "high": 32.1,
+  "pop": 2772,
+  "ages": {
+   "05": 515,
+   "10": 464,
+   "15": 425
+  }
+ },
+ "PRY-35270190": {
+  "name": "Unión",
+  "dept": "San Pedro",
+  "pov": 39.4,
+  "low": 32.0,
+  "high": 46.9,
+  "pop": 5350,
+  "ages": {
+   "05": 728,
+   "10": 692,
+   "15": 640
+  }
+ },
+ "PRY-07505773": {
+  "name": "Valenzuela",
+  "dept": "Cordillera",
+  "pov": 24.5,
+  "low": 18.2,
+  "high": 30.8,
+  "pop": 6009,
+  "ages": {
+   "05": 759,
+   "10": 751,
+   "15": 726
+  }
+ },
+ "PRY-01985593": {
+  "name": "Vaquería",
+  "dept": "Caaguazú",
+  "pov": 36.2,
+  "low": 28.5,
+  "high": 43.9,
+  "pop": 11191,
+  "ages": {
+   "05": 1322,
+   "10": 1308,
+   "15": 1195
+  }
+ },
+ "PRY-47978940": {
+  "name": "Villa del Rosario",
+  "dept": "San Pedro",
+  "pov": 35.1,
+  "low": 28.8,
+  "high": 41.3,
+  "pop": 9225,
+  "ages": {
+   "05": 1932,
+   "10": 1838,
+   "15": 1699
+  }
+ },
+ "PRY-42797604": {
+  "name": "Villa Elisa",
+  "dept": "Central",
+  "pov": 8.1,
+  "low": 5.8,
+  "high": 10.5,
+  "pop": 75666,
+  "ages": {
+   "05": 9615,
+   "10": 9046,
+   "15": 8647
+  }
+ },
+ "PRY-21826279": {
+  "name": "Villa Florida",
+  "dept": "Misiones",
+  "pov": 27.2,
+  "low": 21.5,
+  "high": 32.8,
+  "pop": 3154,
+  "ages": {
+   "05": 521,
+   "10": 516,
+   "15": 497
+  }
+ },
+ "PRY-04777572": {
+  "name": "Villa Franca",
+  "dept": "Ñeembucú",
+  "pov": 31.0,
+  "low": 20.6,
+  "high": 41.4,
+  "pop": 1175,
+  "ages": {
+   "05": 136,
+   "10": 131,
+   "15": 128
+  }
+ },
+ "PRY-42999646": {
+  "name": "Villa Hayes",
+  "dept": "Presidente Hayes",
+  "pov": 27.0,
+  "low": 23.6,
+  "high": 30.5,
+  "pop": 52120,
+  "ages": {
+   "05": 5752,
+   "10": 5215,
+   "15": 4767
+  }
+ },
+ "PRY-93317674": {
+  "name": "Villa Oliva",
+  "dept": "Ñeembucú",
+  "pov": 31.5,
+  "low": 24.2,
+  "high": 38.8,
+  "pop": 3468,
+  "ages": {
+   "05": 527,
+   "10": 510,
+   "15": 497
+  }
+ },
+ "PRY-35750340": {
+  "name": "Villa Ygatimí",
+  "dept": "Canindeyú",
+  "pov": 42.5,
+  "low": 36.6,
+  "high": 48.4,
+  "pop": 13989,
+  "ages": {
+   "05": 1859,
+   "10": 1697,
+   "15": 1531
+  }
+ },
+ "PRY-56603066": {
+  "name": "Villalbín",
+  "dept": "Ñeembucú",
+  "pov": 25.6,
+  "low": 18.5,
+  "high": 32.7,
+  "pop": 1588,
+  "ages": {
+   "05": 143,
+   "10": 139,
+   "15": 135
+  }
+ },
+ "PRY-15354684": {
+  "name": "Villarrica",
+  "dept": "Guairá",
+  "pov": 21.0,
+  "low": 18.3,
+  "high": 23.6,
+  "pop": 64212,
+  "ages": {
+   "05": 7389,
+   "10": 7241,
+   "15": 7167
+  }
+ },
+ "PRY-67085082": {
+  "name": "Villeta",
+  "dept": "Central",
+  "pov": 18.4,
+  "low": 13.8,
+  "high": 23.0,
+  "pop": 39213,
+  "ages": {
+   "05": 3514,
+   "10": 3306,
+   "15": 3160
+  }
+ },
+ "PRY-59219691": {
+  "name": "Yabebyry",
+  "dept": "Misiones",
+  "pov": 32.9,
+  "low": 26.4,
+  "high": 39.4,
+  "pop": 2166,
+  "ages": {
+   "05": 252,
+   "10": 249,
+   "15": 240
+  }
+ },
+ "PRY-22371221": {
+  "name": "Yaguarón",
+  "dept": "Paraguarí",
+  "pov": 27.8,
+  "low": 22.9,
+  "high": 32.8,
+  "pop": 31069,
+  "ages": {
+   "05": 2150,
+   "10": 2141,
+   "15": 2075
+  }
+ },
+ "PRY-33895285": {
+  "name": "Yasy Cañy",
+  "dept": "Canindeyú",
+  "pov": 45.6,
+  "low": 39.7,
+  "high": 51.5,
+  "pop": 21975,
+  "ages": {
+   "05": 1747,
+   "10": 1595,
+   "15": 1440
+  }
+ },
+ "PRY-18162595": {
+  "name": "Yataity",
+  "dept": "Guairá",
+  "pov": 27.2,
+  "low": 20.4,
+  "high": 34.0,
+  "pop": 4330,
+  "ages": {
+   "05": 492,
+   "10": 483,
+   "15": 478
+  }
+ },
+ "PRY-85732684": {
+  "name": "Yataity del Norte",
+  "dept": "San Pedro",
+  "pov": 29.0,
+  "low": 22.6,
+  "high": 35.4,
+  "pop": 10752,
+  "ages": {
+   "05": 1325,
+   "10": 1260,
+   "15": 1165
+  }
+ },
+ "PRY-16230120": {
+  "name": "Yatytay",
+  "dept": "Itapúa",
+  "pov": 24.3,
+  "low": 18.5,
+  "high": 30.1,
+  "pop": 8791,
+  "ages": {
+   "05": 878,
+   "10": 821,
+   "15": 745
+  }
+ },
+ "PRY-53319705": {
+  "name": "Ybyrarobaná",
+  "dept": "Canindeyú",
+  "pov": 30.4,
+  "low": 24.0,
+  "high": 36.7,
+  "pop": 9031,
+  "ages": {
+   "05": 1248,
+   "10": 1139,
+   "15": 1028
+  }
+ },
+ "PRY-51724548": {
+  "name": "Yguazú",
+  "dept": "Alto Paraná",
+  "pov": 17.5,
+  "low": 12.4,
+  "high": 22.6,
+  "pop": 8398,
+  "ages": {
+   "05": 1340,
+   "10": 1189,
+   "15": 1053
+  }
+ },
+ "PRY-36754201": {
+  "name": "Yhú",
+  "dept": "Caaguazú",
+  "pov": 44.9,
+  "low": 39.0,
+  "high": 50.7,
+  "pop": 23112,
+  "ages": {
+   "05": 2307,
+   "10": 2285,
+   "15": 2087
+  }
+ },
+ "PRY-37317029": {
+  "name": "Ypacaraí",
+  "dept": "Central",
+  "pov": 13.4,
+  "low": 9.5,
+  "high": 17.3,
+  "pop": 22216,
+  "ages": {
+   "05": 2217,
+   "10": 2088,
+   "15": 1997
+  }
+ },
+ "PRY-29305218": {
+  "name": "Ypané",
+  "dept": "Central",
+  "pov": 26.5,
+  "low": 21.5,
+  "high": 31.5,
+  "pop": 72332,
+  "ages": {
+   "05": 4293,
+   "10": 4039,
+   "15": 3861
+  }
+ },
+ "PRY-76001798": {
+  "name": "Ypejhú",
+  "dept": "Canindeyú",
+  "pov": 40.5,
+  "low": 32.7,
+  "high": 48.2,
+  "pop": 9355,
+  "ages": {
+   "05": 626,
+   "10": 570,
+   "15": 513
+  }
+ },
+ "PRY-33761886": {
+  "name": "Yrybucua",
+  "dept": "San Pedro",
+  "pov": 46.2,
+  "low": 39.2,
+  "high": 53.1,
+  "pop": 13127,
+  "ages": {
+   "05": 1198,
+   "10": 1139,
+   "15": 1053
+  }
+ },
+ "PRY-99740140": {
+  "name": "Yuty",
+  "dept": "Caazapá",
+  "pov": 36.3,
+  "low": 31.5,
+  "high": 41.1,
+  "pop": 15911,
+  "ages": {
+   "05": 1918,
+   "10": 1776,
+   "15": 1660
+  }
+ },
+ "PRY-43921594": {
+  "name": "Yby Yaú",
+  "dept": "Concepción",
+  "pov": 29.9,
+  "low": 24.1,
+  "high": 35.6,
+  "pop": 20656,
+  "ages": {
+   "05": 2788,
+   "10": 2602,
+   "15": 2454
+  }
+ },
+ "PRY-21913567": {
+  "name": "Ybycuí",
+  "dept": "Paraguarí",
+  "pov": 33.6,
+  "low": 28.6,
+  "high": 38.6,
+  "pop": 18389,
+  "ages": {
+   "05": 1899,
+   "10": 1892,
+   "15": 1834
+  }
+ },
+ "PRY-30432164": {
+  "name": "Ybytymí",
+  "dept": "Paraguarí",
+  "pov": 29.9,
+  "low": 21.7,
+  "high": 38.1,
+  "pop": 5496,
+  "ages": {
+   "05": 676,
+   "10": 674,
+   "15": 653
+  }
+ },
+ "PRY-99374658": {
+  "name": "Zanja Pytá",
+  "dept": "Amambay",
+  "pov": 26.8,
+  "low": 20.7,
+  "high": 32.9,
+  "pop": 5026,
+  "ages": {
+   "05": 604,
+   "10": 558,
+   "15": 511
+  }
+ }
+}

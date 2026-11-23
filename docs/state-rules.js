@@ -495,6 +495,39 @@ window.STATE_RULES = {
     ],
     note: "Check the current law and the local government's own rules before relying on this."
   },
+  malaysia: {
+    title: "Rules for council meetings",
+    checked: "November 23, 2026",
+    laws: [
+      { state: "Malaysia", covers: "Local council meetings", threshold: "",
+        rule: "Under the Local Government Act 1976 (section 23), a local authority's meetings are open to the public and the press unless it decides otherwise; councillors are appointed by the state government, not elected. There's no rule to record or stream meetings." },
+      { state: "Malaysia", covers: "Schools", threshold: "",
+        rule: "Government and government-aided schools are run by the federal Ministry of Education under the Education Act 1996, through state education departments and district education offices; councils have no role in schooling, so council meetings here are only a stand-in." }
+    ],
+    note: "Check the current law and the council's own standing orders before relying on this."
+  },
+  indonesia: {
+    title: "Rules for regional council meetings",
+    checked: "November 23, 2026",
+    laws: [
+      { state: "Indonesia", covers: "Regional council (DPRD) meetings", threshold: "",
+        rule: "Under Law 23 of 2014 on regional government and Government Regulation 12 of 2018 on DPRD rules of procedure, DPRD meetings are open to the public unless the council decides to close one; the Public Information Disclosure Law (14 of 2008) covers their records. Many councils stream their plenary sessions, but no law requires it." },
+      { state: "Indonesia", covers: "Schools", threshold: "",
+        rule: "Under Law 23 of 2014, regencies and cities manage primary and junior secondary education, and provinces senior secondary and special education; the national ministries set the curriculum and pay part of teachers' costs." }
+    ],
+    note: "Check the current law and the council's own rules before relying on this."
+  },
+  paraguay: {
+    title: "Rules for municipal council sessions",
+    checked: "November 23, 2026",
+    laws: [
+      { state: "Paraguay", covers: "Municipal council (junta municipal) sessions", threshold: "",
+        rule: "Under the Organic Municipal Law (Law 3966 of 2010), the council's sessions are public unless it decides otherwise; the Access to Public Information Law (5282 of 2014) covers its records. There's no national rule to record or stream sessions." },
+      { state: "Paraguay", covers: "Schools", threshold: "",
+        rule: "Public schools are run by the national Ministry of Education and Sciences (General Education Law, 1264 of 1998); municipalities can fund school buildings, meals and supplies (including through FONACIDE royalties), so council sessions here are a stand-in." }
+    ],
+    note: "Check the current law and the council's own rules before relying on this."
+  },
   ecuador: {
     title: "Rules for cantonal council (concejo municipal) meetings",
     checked: "November 7, 2026",
