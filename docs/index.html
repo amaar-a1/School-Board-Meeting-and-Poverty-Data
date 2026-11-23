@@ -22,6 +22,7 @@
 
     <div id="tabs" class="tabs" hidden></div>
     <p id="dataset-note" class="note dataset-note"></p>
+    <p id="quality" class="quality" hidden></p>
 
     <section id="find" class="find" aria-label="Find a district" hidden>
       <label for="find-input">Find a district</label>
@@ -44,6 +45,8 @@
         <option data-view-tab="rules" value="rules">State rules</option>
         <option data-view-tab="map" value="map">Map</option>
         <option data-view-tab="trends" value="trends">Trends</option>
+        <option data-view-tab="stats" value="stats">Statistics</option>
+        <option data-view-tab="compare" value="compare">Compare two places</option>
         <option data-view-tab="sources" value="sources">Sources</option>
       </select>
     </div>
@@ -140,6 +143,7 @@
         </div>
       </div>
       <p id="row-count" class="muted"></p>
+      <p class="note download-terms">The download has the rows shown here (with any filters and search). Use of the data is subject to each source’s terms and conditions; the <a href="#sources" data-view-link="sources">Sources</a> tab lists where each figure comes from.</p>
       <div class="table-scroll">
         <table id="table"><thead></thead><tbody></tbody></table>
       </div>
@@ -353,6 +357,44 @@
       </section>
     </div>
 
+    <div data-view="stats" hidden>
+      <section class="card">
+        <div class="card-head">
+          <h2>Does poverty predict whether meetings are posted?</h2>
+          <div class="controls">
+            <label title="Count only meetings of a school board or equivalent (an education committee, a board of education), not a town council or parliament standing in for one"><input type="checkbox" id="stats-boards"> School boards and equivalents only</label>
+            <button id="stats-download" type="button">Download results (CSV)</button>
+          </div>
+        </div>
+        <div id="stats-summary"></div>
+        <div class="table-wrap"><table id="stats-table" class="data-table stats-table"><thead></thead><tbody></tbody></table></div>
+        <p class="note">How to read it. For each country, the places are compared with others of the same size there (by population, or enrollment where there's no population), since bigger places post far more meetings. <b>Odds ratio</b> is how the odds of posting any meetings at all compare between the poorest place in the country and the richest, from a logistic regression on the place's poverty rank in its country and the log of its size: below 1 means poorer places are less likely to post meetings, above 1 more likely. The dot and line show it and its 95% range on a scale from a hundredth to a hundred times; a line that crosses the middle (1) means no clear link. <b>p</b> is the chance of a link at least that strong if there were none; under 0.05 counts as a link here, and “weak” marks one that doesn't hold after allowing for testing every country at once (a Bonferroni correction). <b>Rank corr.</b> (Spearman's rank correlation) compares poverty with the number of meetings, without allowing for size. Places with an estimated poverty rank are left out, and so are countries with one poverty figure for every place, or too few places with (or without) meetings. The highlighted row is the country you're viewing.</p>
+        <p class="note">What it doesn't show. A link isn't proof that poverty causes it: poorer places are often also more rural or less connected. “Posted” means a recording or record could be found online, not that a meeting was held, and in many countries the meetings counted are a council's or parliament's, standing in for a school board's (see each country's note). Poverty is measured differently in every country, which is why each place is ranked only within its own. And neighbouring places aren't independent of each other, so the p-values for big countries are somewhat optimistic. Use of the data is subject to each source’s terms and conditions; the <a href="#sources" data-view-link="sources">Sources</a> tab lists where each figure comes from.</p>
+      </section>
+    </div>
+
+    <div data-view="compare" hidden>
+      <section id="compare-view" class="card">
+        <div class="card-head">
+          <h2>Compare two places</h2>
+          <div class="controls">
+            <button id="cmp-swap" type="button">Swap</button>
+            <button id="cmp-download" type="button" disabled>Download comparison (CSV)</button>
+          </div>
+        </div>
+        <div class="cmp-pickers">
+          <div class="map-search-box"><label for="cmp-input-0">First place</label>
+            <input id="cmp-input-0" type="search" placeholder="Type a district, board, municipality…" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="cmp-results-0" aria-autocomplete="list">
+            <ul id="cmp-results-0" class="map-results" role="listbox" hidden></ul></div>
+          <div class="map-search-box"><label for="cmp-input-1">Second place</label>
+            <input id="cmp-input-1" type="search" placeholder="Any country" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="cmp-results-1" aria-autocomplete="list">
+            <ul id="cmp-results-1" class="map-results" role="listbox" hidden></ul></div>
+        </div>
+        <div id="cmp-body"></div>
+        <p class="note">Use of the data is subject to each source’s terms and conditions; the <a href="#sources" data-view-link="sources">Sources</a> tab lists where each figure comes from.</p>
+      </section>
+    </div>
+
     <div data-view="sources" hidden>
       <section id="sources" class="card">
         <h2>Sources</h2>
@@ -361,6 +403,11 @@
           To get a copy of the data, use “Download CSV” on the Overview tab.</p>
         <p class="muted">Each source has its own terms of use: check them before reusing any data (see the Terms of use at the bottom of the page).</p>
         <div id="sources-list"></div>
+      </section>
+      <section class="card">
+        <h2>Data quality by country</h2>
+        <p class="note">How solid each country's figures are, worked out from the data. Green is solid (a published or modelled rate from the last four years covering nearly every place; enrollment counted nearly everywhere; meetings mostly a school board's or equivalent). Amber means use with care (an older figure, a stand-in such as a benefit or welfare rate, estimated enrollment, or meetings of a council standing in for a school board). Red is weak (a figure ten or more years old or a national rate for every place, little or no enrollment, or no meetings found).</p>
+        <div class="table-wrap"><table id="quality-table" class="data-table"><thead></thead><tbody></tbody></table></div>
       </section>
     </div>
   </main>
@@ -385,8 +432,11 @@
   <script src="state-rules.js"></script>
   <script src="map.js"></script>
   <script src="app.js"></script>
+  <script src="stats.js"></script>
+  <script src="quality.js"></script>
   <script src="assistant.js"></script>
   <script src="search.js"></script>
+  <script src="compare.js"></script>
   <script src="i18n.js"></script>
 </body>
 </html>

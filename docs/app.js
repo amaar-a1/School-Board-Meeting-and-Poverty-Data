@@ -142,13 +142,15 @@
     renderCoverage();
     setupFilters();
     datasets.forEach(groupNames);   // region names for the countries whose config lists none
-    window.SiteData = { datasets, combined, config: cfg, setView, keyOf, fromKey,
+    window.SiteData = { datasets, combined, config: cfg, cfg, setView, keyOf, fromKey, meetOf, BOARD, toNumber, current: () => current,
       select: (key, keepPlace) => selectDataset((key && fromKey(key)) || datasets.find((d) => d.name === cfg.perState.from), keepPlace) };
     // A shared link opens its view (and, with ?place=, zooms the map to that place).
     const q = new URLSearchParams(location.search);
     // Without a link to a view, the site opens on every country together ("All").
     const start = fromKey(q.get("d")) || combined || datasets.find((d) => d.name === (cfg.perState && cfg.perState.from)) || datasets[0];
     selectDataset(start, true);
+    applyLinkControls();
+    watchLinkControls();
     booted = true;
     const place = q.get("place");
     if (place) {
@@ -372,7 +374,7 @@
     share.type = "button";
     share.className = "share-button";
     share.textContent = "Copy link";
-    share.title = "Copy a link to this view";
+    share.title = "Copy a link to exactly this view: the country, tab, filters, search, chart, statistics and map settings, the map's position and any comparison";
     share.addEventListener("click", async () => {
       try { await navigator.clipboard.writeText(location.href); share.textContent = "Link copied"; }
       catch (e) { window.prompt("Copy this link:", location.href); }
@@ -394,13 +396,39 @@
     const q = new URLSearchParams(location.search);
     Object.entries(params).forEach(([k, v]) => (v ? q.set(k, v) : q.delete(k)));
     const s = q.toString();
-    history.replaceState(null, "", `${location.pathname}${s ? `?${s.replace(/%3A/g, ":").replace(/%7E/g, "~")}` : ""}${location.hash}`);
+    history.replaceState(null, "", `${location.pathname}${s ? `?${s.replace(/%3A/g, ":").replace(/%7E/g, "~").replace(/%2C/g, ",")}` : ""}${location.hash}`);
   }
-  window.SiteLinks = { place: (id) => setUrl({ place: id }), set: setUrl };
+  window.SiteLinks = { place: (id) => setUrl({ place: id }), set: setUrl, get: (k) => new URLSearchParams(location.search).get(k) };
+
+  // Shareable links: these controls' settings are kept in the address (short keys), and a link opens with them.
+  // (The country is ?d=, a place ?place=, a comparison ?cmp=, the map's position ?at=, the language ?lang=, the tab #view.)
+  const LINK_CONTROLS = { loc: "f-locale", meet: "f-meetings", pmin: "f-pov-min", pmax: "f-pov-max", size: "f-size", q: "search",
+    x: "x-col", y: "y-col", chart: "chart-type", top: "chart-limit", sboards: "stats-boards",
+    metric: "map-metric", noest: "map-no-est", mboards: "map-boards-only", overlap: "map-canada-overlap", frsmall: "map-fr-small", second: "map-secondary" };
+  const linkEvent = (el) => (el.type === "checkbox" || el.tagName === "SELECT" ? "change" : "input");
+  function watchLinkControls() {
+    Object.entries(LINK_CONTROLS).forEach(([k, id]) => {
+      const el = $(id);
+      if (el) el.addEventListener(linkEvent(el), () => setUrl({ [k]: el.type === "checkbox" ? (el.checked ? "1" : "") : el.value }));
+    });
+  }
+  function applyLinkControls() {
+    const q = new URLSearchParams(location.search);
+    Object.entries(LINK_CONTROLS).forEach(([k, id]) => {
+      const el = $(id);
+      if (!el || !q.has(k)) return;
+      const v = q.get(k);
+      if (el.type === "checkbox") el.checked = v === "1";
+      else if (el.tagName === "SELECT" && ![...el.options].some((o) => o.value === v)) return;
+      else el.value = v;
+      el.dispatchEvent(new Event(linkEvent(el)));
+    });
+  }
 
   function selectDataset(ds, keepPlace) {
     current = ds;
-    if (booted) setUrl(keepPlace ? { d: keyOf(ds) } : { d: keyOf(ds), place: "" });
+    // A new country: its chart columns and map position differ, so they leave the link.
+    if (booted) setUrl(keepPlace ? { d: keyOf(ds), x: "", y: "", at: "" } : { d: keyOf(ds), place: "", x: "", y: "", at: "" });
     sort = { col: null, dir: 1 };
     fillStateMenu(countryOf(current));
     const sel = $("state-select");
@@ -414,6 +442,7 @@
     }
     if (sel) { sel.value = current.state || ""; sel.classList.toggle("active", !!current.state); }
     $("dataset-note").textContent = current.note || "";
+    if (window.SiteQuality) window.SiteQuality.renderFor(current);
     $("footer").textContent = current.footer || "";
     renderSources();
     renderRules();
@@ -439,6 +468,7 @@
     if (view === "boards") renderBoards();
     if (view === "map" && window.SiteMap) window.SiteMap.show(current, datasets);
     if (view === "trends") renderTrends();
+    if (view === "stats" && window.SiteStats) window.SiteStats.render(current);
   }
 
   // Switches between the "Overview", "By district size", "State rules" and "Sources" views.
@@ -453,6 +483,7 @@
     if (name === "boards" && current) renderBoards();
     if (name === "map" && current && window.SiteMap) window.SiteMap.show(current, datasets);
     if (name === "trends" && current) renderTrends();
+    if (name === "stats" && current && window.SiteStats) window.SiteStats.render(current);
   }
 
   // "Trends" tab: meetings per year (from the dates in the recordings' titles, or CivicSearch's monthly
@@ -1377,6 +1408,7 @@
   // Sources for the selected dataset: entries marked `only` (a name or a list of names)
   // show just for those datasets. A state's view also shows entries marked with its name.
   function renderSources() {
+    if (window.SiteQuality) window.SiteQuality.renderTable(datasets);
     const box = $("sources-list");
     box.innerHTML = "";
     const shown = (x) => !x.only || [].concat(x.only).some((n) => n === (current.sourcesAs || current.name) || n === current.name);
@@ -1412,13 +1444,14 @@
 
   $("search").addEventListener("input", renderTable);
   $("download").addEventListener("click", download);
+  $("stats-boards").addEventListener("change", () => { if (window.SiteStats && current) window.SiteStats.render(current); });
   ["x-col", "y-col", "chart-type", "chart-limit"].forEach((id) => $(id).addEventListener("change", renderChart));
   $("view-select").addEventListener("change", () => {
     const v = $("view-select").value;
     setView(v);
     history.replaceState(null, "", v === "overview" ? location.pathname + location.search : `#${v}`);
   });
-  const viewFromHash = () => { if (["#size", "#locale", "#density", "#boards", "#map", "#trends", "#rules", "#sources"].includes(location.hash)) setView(location.hash.slice(1)); };
+  const viewFromHash = () => { if (["#size", "#locale", "#density", "#boards", "#map", "#trends", "#stats", "#compare", "#rules", "#sources"].includes(location.hash)) setView(location.hash.slice(1)); };
   viewFromHash();
   window.addEventListener("hashchange", viewFromHash);
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
