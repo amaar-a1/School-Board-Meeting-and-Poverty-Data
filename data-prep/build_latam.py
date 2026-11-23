@@ -282,12 +282,13 @@ def meetings(cc, did):
     r = rows.get(did) or {}
     url = CHECKED[cc].get(did, "") if cc in CHECKED else r.get("Channel URL", "")
     if not url or url not in titles or url in NOT_CHANNELS.get(cc, set()): return 0, "", [], ""
+    if cc == "IDN" and not idn_channel_ok(r.get("District", ""), r.get("Channel", "")): return 0, "", [], ""
     edu, council, must, not_t = RULES.get(cc, (EDU, COUNCIL, COUNCIL_MUST, NOT_T))
     vids = [t for t in titles[url] if not not_t.search(t)]
     for keep, kind in (([t for t in vids if edu.search(t)], "Education committee"),
                        ([t for t in vids if council.search(t) and must.search(t) and not edu.search(t)], "Council (stand-in)")):
         # (Slovenia, Uruguay, Costa Rica: a title with only a year, like "Sesión Ordinaria 148-2026", counts once per title.)
-        keys = {(lambda pd: pd if pd and (pd[2] or cc not in ("SVN", "URY", "CRI")) else session_key(cc, t))(parse_date(t)) for t in keep}
+        keys = {(lambda pd: pd if pd and (pd[2] or cc not in ("SVN", "URY", "CRI", "MYS", "IDN", "PRY")) else session_key(cc, t))(parse_date(t)) for t in keep}
         if len(keys) >= (MIN_EDU.get(cc, 1) if kind == "Education committee" else 1):
             # Kenya's county assemblies and South Africa's councils don't run schools: their education committees are stand-ins too.
             if cc in ("KEN", "ZAF") and kind == "Education committee": kind = ("Assembly" if cc == "KEN" else "Council") + " education committee (stand-in)"
@@ -296,9 +297,30 @@ def meetings(cc, did):
     return 0, "", [], ""
 
 
+# Indonesia: regencies and cities often share a name (Kabupaten Bandung and Kota Bandung). A channel naming a city
+# ("Kota") belongs only to the city, one naming a regency ("Kab.", "Kabupaten") only to the regency, and one with any
+# other place word ("Musi Banyuasin" for Banyuasin, "Nias Selatan" for Nias, the Bangka Belitung province) to neither.
+IDN_GENERIC = set("dprd kab kabupaten kota sekretariat setdprd humas pro protokol official chanel channel tv jurnal publikasi parlemen digital "
+                  "dewan perwakilan rakyat daerah set sekwan humpro humaspro jdih sul sel city".split())
+
+
+def idn_channel_ok(district, channel):
+    w = lambda t: re.findall(r"[a-z]+", t.lower())
+    cw, dw = w(channel), w(district)
+    is_kota = district.startswith("Kota ")
+    if "kota" in cw and not is_kota: return False
+    if ("kab" in cw or "kabupaten" in cw) and is_kota: return False
+    return all(x in dw for x in cw if x not in IDN_GENERIC)
+
+
 # Channels checked by hand and found to be another place's (by channel URL). The search matched on the name, and
 # many of these names exist in other Spanish-speaking countries too, or in both Chile and Colombia.
 NOT_CHANNELS = {
+    # Paraguay's councils are "Junta Municipal": these "Concejo Municipal" and other channels are towns of the same name in Chile,
+    # Argentina, Peru, Bolivia, Colombia, Mexico or Brazil, or one councillor's own channel.
+    "PRY": {"https://www.youtube.com/channel/UCoTwotxd-mnuY8a8e_6nUaw", "https://www.youtube.com/channel/UCuG-FPduRsB8GVx6NLASWnw", "https://www.youtube.com/channel/UCa5YqotYPcaizZYtqZ45kpQ", "https://www.youtube.com/channel/UCzqjXcWdWv72liDIeJpV5WA", "https://www.youtube.com/channel/UCJ3f5r4cWt0aB_wRZPSejWQ", "https://www.youtube.com/channel/UCgftlOUKUwVxPA1myAOJvFQ", "https://www.youtube.com/channel/UCZeix6UJCLn1YO3RpVtb34w", "https://www.youtube.com/channel/UC56H4eN3dOZqFmE2HDjedlQ", "https://www.youtube.com/channel/UCEGuGc-w5abohwcJV9yOnBg", "https://www.youtube.com/channel/UCQSNpiNkO1HiGbGdqBjzNoQ", "https://www.youtube.com/channel/UC_N4FcbYjq6RJ-xMzFfCpUA", "https://www.youtube.com/channel/UCkVdReeh7ZbEY8ODsusVNJg", "https://www.youtube.com/channel/UCWz4IzK0ncPqXCROqyCP3eg", "https://www.youtube.com/channel/UC6x0hkBrqf7ewDltHTcp7gg", "https://www.youtube.com/channel/UCSatJiWUQHzY0gEVuytdRtg", "https://www.youtube.com/channel/UCgvUIPWaySeDAGe-oUTSDUA"},
+    # Malaysia: district education offices (not councils) and a council department's channel.
+    "MYS": {"https://www.youtube.com/channel/UCpFAQtJnkkapQJOJAZXmmTw", "https://www.youtube.com/channel/UCLNGjDOhiAJgb6AtCVGeLug", "https://www.youtube.com/channel/UCiiEfAeh8IeChxKok28-kyA"},
     # Kenya: a youth assembly in Lamu, not the county assembly
     "KEN": {"https://www.youtube.com/channel/UC9JoEGAfhZnHl0HgfXCIJ5Q"},
     # Philippines: the city council of Alaminos (Pangasinan) found for Alaminos (Laguna), and Sogod's council for Leyte
