@@ -1826,15 +1826,17 @@ def india():
     ind = json.load(open(os.path.join(d, "ind_data.json"), encoding="utf-8"))
     feats = json.load(open(os.path.join(d, "ind_geo.geojson"), encoding="utf-8"))["features"]
     area = {f["properties"]["id"]: area_km2(f["geometry"]) for f in feats}
-    # Population: the 2011 census (prep_india.py). Where there's none (Delhi's districts, the Andaman and Nicobar Islands,
-    # Puducherry, Lakshadweep, a few new districts), WorldPop's 2025 estimate (R2025A, 1 km, all ages) summed over the
-    # district's border by the GitHub runner (inputs/india/in_ages_2025.json). It isn't used more widely: it misplaces people
-    # in places by a factor of two or more (Mumbai far too low, Ahmednagar and Lucknow far too high).
+    # Population: the higher of the 2011 census count (prep_india.py) and WorldPop's 2025 estimate (R2025A, 1 km, all
+    # ages) summed over the district's border by the GitHub runner (inputs/india/in_ages_2025.json); WorldPop alone where
+    # there's no census figure (Delhi's districts, the Andaman and Nicobar Islands, Puducherry, Lakshadweep, a few new
+    # districts). The census is 15 years old and India has grown about a fifth since, while WorldPop's model places too few
+    # people in some big cities (Mumbai, Kolkata), so the higher figure is usually the better one.
     wp = json.load(open(os.path.join(d, "in_ages_2025.json"), encoding="utf-8"))["districts"]
     rows, nwp = [], 0
     for sid, x in ind.items():
         did = "IND-" + sid[-8:]
-        if not x.get("pop") and wp.get(did): x = {**x, "pop": round(sum(wp[did].values())), "pop_wp": True}; nwp += 1
+        w = round(sum(wp[did].values())) if wp.get(did) else 0
+        if w > (x.get("pop") or 0): x = {**x, "pop": w, "pop_wp": "none" if not x.get("pop") else x["pop"]}; nwp += 1
         dens = x["pop"] / area[did] if x.get("pop") and area.get(did) else 0
         m = x.get("meetings") or {}
         n, titles = _in_meetings(m.get("videos", [])) if m.get("url") else (0, [])
@@ -1849,7 +1851,9 @@ def india():
                      "Latest meeting": latest, "Meetings by year": years,
                      "School system": "District (schools are run by the state's education department; the elected zila parishad oversees elementary schools in most states)",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in area,
-                     "Map note": "Population: WorldPop's 2025 estimate, summed over the district's border (no 2011 census figure for it)" if x.get("pop_wp") else ""})
+                     "Map note": ("Population: WorldPop's 2025 estimate, summed over the district's border (no 2011 census figure for it)" if x.get("pop_wp") == "none"
+                                  else f"Population: WorldPop's 2025 estimate, summed over the district's border (higher than the 2011 census's {x['pop_wp']:,})" if x.get("pop_wp")
+                                  else "Population: 2011 census (higher than WorldPop's 2025 estimate for the district)")})
     print("population from WorldPop:", nwp)
     write("IND", "india", rows, feats)
 
