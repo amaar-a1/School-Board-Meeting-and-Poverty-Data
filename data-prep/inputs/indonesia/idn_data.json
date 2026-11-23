@@ -1,0 +1,6687 @@
+{
+ "IDN-61513795": {
+  "name": "Aceh Barat Daya",
+  "kind": "Regency (kabupaten)",
+  "province": "Aceh",
+  "pov": 15.93,
+  "pop": 152483,
+  "shape": "22746128B227561513795",
+  "ages": {
+   "05": 13017,
+   "10": 13684,
+   "15": 13479
+  }
+ },
+ "IDN-11718524": {
+  "name": "Aceh Barat",
+  "kind": "Regency (kabupaten)",
+  "province": "Aceh",
+  "pov": 18.34,
+  "pop": 213997,
+  "shape": "22746128B65593111718524",
+  "ages": {
+   "05": 17634,
+   "10": 19429,
+   "15": 16773
+  }
+ },
+ "IDN-47297479": {
+  "name": "Aceh Besar",
+  "kind": "Regency (kabupaten)",
+  "province": "Aceh",
+  "pov": 13.84,
+  "pop": 433528,
+  "shape": "22746128B90547447297479",
+  "ages": {
+   "05": 39904,
+   "10": 43970,
+   "15": 35119
+  }
+ },
+ "IDN-95456858": {
+  "name": "Aceh Jaya",
+  "kind": "Regency (kabupaten)",
+  "province": "Aceh",
+  "pov": 12.87,
+  "pop": 94491,
+  "shape": "22746128B21424895456858",
+  "ages": {
+   "05": 9133,
+   "10": 10454,
+   "15": 7313
+  }
+ },
+ "IDN-00263117": {
+  "name": "Aceh Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "Aceh",
+  "pov": 12.87,
+  "pop": 240820,
+  "shape": "22746128B12428400263117",
+  "ages": {
+   "05": 19355,
+   "10": 19928,
+   "15": 22083
+  }
+ },
+ "IDN-19872214": {
+  "name": "Aceh Singkil",
+  "kind": "Regency (kabupaten)",
+  "province": "Aceh",
+  "pov": 20.2,
+  "pop": 126512,
+  "shape": "22746128B17710719872214",
+  "ages": {
+   "05": 14249,
+   "10": 14726,
+   "15": 14358
+  }
+ },
+ "IDN-94058931": {
+  "name": "Aceh Tamiang",
+  "kind": "Regency (kabupaten)",
+  "province": "Aceh",
+  "pov": 13.08,
+  "pop": 298586,
+  "shape": "22746128B57620394058931",
+  "ages": {
+   "05": 28258,
+   "10": 30419,
+   "15": 29451
+  }
+ },
+ "IDN-27523654": {
+  "name": "Aceh Tengah",
+  "kind": "Regency (kabupaten)",
+  "province": "Aceh",
+  "pov": 15.08,
+  "pop": 216368,
+  "shape": "22746128B89023327523654",
+  "ages": {
+   "05": 21816,
+   "10": 21655,
+   "15": 20848
+  }
+ },
+ "IDN-21536148": {
+  "name": "Aceh Tenggara",
+  "kind": "Regency (kabupaten)",
+  "province": "Aceh",
+  "pov": 13.21,
+  "pop": 220402,
+  "shape": "22746128B65780821536148",
+  "ages": {
+   "05": 22717,
+   "10": 23862,
+   "15": 23086
+  }
+ },
+ "IDN-91859977": {
+  "name": "Aceh Timur",
+  "kind": "Regency (kabupaten)",
+  "province": "Aceh",
+  "pov": 14.08,
+  "pop": 444829,
+  "shape": "22746128B94735591859977",
+  "ages": {
+   "05": 45699,
+   "10": 47798,
+   "15": 44923
+  }
+ },
+ "IDN-34023645": {
+  "name": "Aceh Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "Aceh",
+  "pov": 17.02,
+  "pop": 627265,
+  "shape": "22746128B43339434023645",
+  "ages": {
+   "05": 58166,
+   "10": 60778,
+   "15": 60504
+  }
+ },
+ "IDN-79715926": {
+  "name": "Kepulauan Seribu",
+  "kind": "Regency (kabupaten)",
+  "province": "Jakarta Special Capital Region",
+  "pov": 14.87,
+  "pop": 24469,
+  "shape": "22746128B63742079715926",
+  "ages": {
+   "05": 2536,
+   "10": 2556,
+   "15": 2727
+  }
+ },
+ "IDN-30199878": {
+  "name": "Agam",
+  "kind": "Regency (kabupaten)",
+  "province": "West Sumatra",
+  "pov": 6.75,
+  "pop": 494614,
+  "shape": "22746128B89220130199878",
+  "ages": {
+   "05": 41992,
+   "10": 48612,
+   "15": 49326
+  }
+ },
+ "IDN-35414899": {
+  "name": "Alor",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 21.09,
+  "pop": 206806,
+  "shape": "22746128B1117135414899",
+  "ages": {
+   "05": 23946,
+   "10": 21768,
+   "15": 18349
+  }
+ },
+ "IDN-26658287": {
+  "name": "Kota Ambon",
+  "kind": "City (kota)",
+  "province": "Maluku",
+  "pov": 4.51,
+  "pop": 495474,
+  "shape": "22746128B58388026658287",
+  "ages": {
+   "05": 26713,
+   "10": 30671,
+   "15": 29383
+  }
+ },
+ "IDN-90721788": {
+  "name": "Asahan",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 9.04,
+  "pop": 735026,
+  "shape": "22746128B26461090721788",
+  "ages": {
+   "05": 74698,
+   "10": 76195,
+   "15": 72016
+  }
+ },
+ "IDN-28854475": {
+  "name": "Asmat",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 25.49,
+  "pop": 98885,
+  "shape": "22746128B62198228854475",
+  "ages": {
+   "05": 13161,
+   "10": 11943,
+   "15": 10524
+  }
+ },
+ "IDN-30159502": {
+  "name": "Badung",
+  "kind": "Regency (kabupaten)",
+  "province": "Bali",
+  "pov": 2.02,
+  "pop": 683203,
+  "shape": "22746128B76986430159502",
+  "ages": {
+   "05": 38410,
+   "10": 46021,
+   "15": 45596
+  }
+ },
+ "IDN-08948387": {
+  "name": "Balangan",
+  "kind": "Regency (kabupaten)",
+  "province": "South Kalimantan",
+  "pov": 5.32,
+  "pop": 133274,
+  "shape": "22746128B67876608948387",
+  "ages": {
+   "05": 12838,
+   "10": 11506,
+   "15": 10890
+  }
+ },
+ "IDN-46070966": {
+  "name": "Kota Balikpapan",
+  "kind": "City (kota)",
+  "province": "East Kalimantan",
+  "pov": 2.57,
+  "pop": 664201,
+  "shape": "22746128B66626446070966",
+  "ages": {
+   "05": 57055,
+   "10": 62940,
+   "15": 59480
+  }
+ },
+ "IDN-32836699": {
+  "name": "Kota Banda Aceh",
+  "kind": "City (kota)",
+  "province": "Aceh",
+  "pov": 6.9,
+  "pop": 276304,
+  "shape": "22746128B56363132836699",
+  "ages": {
+   "05": 25114,
+   "10": 26136,
+   "15": 19271
+  }
+ },
+ "IDN-84963573": {
+  "name": "Kota Bandar Lampung",
+  "kind": "City (kota)",
+  "province": "Lampung",
+  "pov": 8.81,
+  "pop": 1068982,
+  "shape": "22746128B13880384963573",
+  "ages": {
+   "05": 96597,
+   "10": 98110,
+   "15": 97529
+  }
+ },
+ "IDN-17117888": {
+  "name": "Bandung Barat",
+  "kind": "Regency (kabupaten)",
+  "province": "West Java",
+  "pov": 10.49,
+  "pop": 1714982,
+  "shape": "22746128B79756617117888",
+  "ages": {
+   "05": 154761,
+   "10": 170673,
+   "15": 169372
+  }
+ },
+ "IDN-09500416": {
+  "name": "Bandung",
+  "kind": "Regency (kabupaten)",
+  "province": "West Java",
+  "pov": 6.91,
+  "pop": 3831505,
+  "shape": "22746128B73297609500416",
+  "ages": {
+   "05": 321685,
+   "10": 370599,
+   "15": 341982
+  }
+ },
+ "IDN-35135177": {
+  "name": "Kota Bandung",
+  "kind": "City (kota)",
+  "province": "West Java",
+  "pov": 3.99,
+  "pop": 2510103,
+  "shape": "22746128B71762235135177",
+  "ages": {
+   "05": 183182,
+   "10": 210388,
+   "15": 206644
+  }
+ },
+ "IDN-36805106": {
+  "name": "Banggai Kepulauan",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Sulawesi",
+  "pov": 14.04,
+  "pop": 119202,
+  "shape": "22746128B2571336805106",
+  "ages": {
+   "05": 12479,
+   "10": 12556,
+   "15": 11530
+  }
+ },
+ "IDN-17556279": {
+  "name": "Banggai Laut",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Sulawesi",
+  "pov": 14.6,
+  "pop": 76299,
+  "shape": "22746128B78411617556279",
+  "ages": {
+   "05": 7286,
+   "10": 7331,
+   "15": 6732
+  }
+ },
+ "IDN-74795911": {
+  "name": "Banggai",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Sulawesi",
+  "pov": 7.39,
+  "pop": 382275,
+  "shape": "22746128B48169474795911",
+  "ages": {
+   "05": 31002,
+   "10": 34407,
+   "15": 33101
+  }
+ },
+ "IDN-30053131": {
+  "name": "Bangka Barat",
+  "kind": "Regency (kabupaten)",
+  "province": "Bangka-Belitung Islands",
+  "pov": 2.7,
+  "pop": 217332,
+  "shape": "22746128B47433230053131",
+  "ages": {
+   "05": 18276,
+   "10": 21143,
+   "15": 19729
+  }
+ },
+ "IDN-76976921": {
+  "name": "Bangka Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "Bangka-Belitung Islands",
+  "pov": 3.52,
+  "pop": 213966,
+  "shape": "22746128B19321376976921",
+  "ages": {
+   "05": 16954,
+   "10": 19374,
+   "15": 19027
+  }
+ },
+ "IDN-58567489": {
+  "name": "Bangka Tengah",
+  "kind": "Regency (kabupaten)",
+  "province": "Bangka-Belitung Islands",
+  "pov": 4.85,
+  "pop": 200016,
+  "shape": "22746128B66707258567489",
+  "ages": {
+   "05": 17841,
+   "10": 19831,
+   "15": 18970
+  }
+ },
+ "IDN-15741432": {
+  "name": "Bangka",
+  "kind": "Regency (kabupaten)",
+  "province": "Bangka-Belitung Islands",
+  "pov": 4.51,
+  "pop": 343821,
+  "shape": "22746128B27585215741432",
+  "ages": {
+   "05": 27259,
+   "10": 30963,
+   "15": 28869
+  }
+ },
+ "IDN-82239441": {
+  "name": "Bangkalan",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 20.56,
+  "pop": 994212,
+  "shape": "22746128B23347682239441",
+  "ages": {
+   "05": 86533,
+   "10": 96687,
+   "15": 95038
+  }
+ },
+ "IDN-54669599": {
+  "name": "Bangli",
+  "kind": "Regency (kabupaten)",
+  "province": "Bali",
+  "pov": 4.19,
+  "pop": 228425,
+  "shape": "22746128B25936754669599",
+  "ages": {
+   "05": 18651,
+   "10": 21252,
+   "15": 21024
+  }
+ },
+ "IDN-72078761": {
+  "name": "Kota Banjar Baru",
+  "kind": "City (kota)",
+  "province": "South Kalimantan",
+  "pov": 4.01,
+  "pop": 270021,
+  "shape": "22746128B6711072078761",
+  "ages": {
+   "05": 31203,
+   "10": 27339,
+   "15": 25838
+  }
+ },
+ "IDN-05882971": {
+  "name": "Banjar",
+  "kind": "Regency (kabupaten)",
+  "province": "South Kalimantan",
+  "pov": 2.55,
+  "pop": 596001,
+  "shape": "22746128B79736905882971",
+  "ages": {
+   "05": 48702,
+   "10": 44007,
+   "15": 42389
+  }
+ },
+ "IDN-43729693": {
+  "name": "Kota Banjar",
+  "kind": "City (kota)",
+  "province": "West Java",
+  "pov": 6.09,
+  "pop": 183299,
+  "shape": "22746128B64728543729693",
+  "ages": {
+   "05": 14923,
+   "10": 17068,
+   "15": 17538
+  }
+ },
+ "IDN-44555810": {
+  "name": "Kota Banjarmasin",
+  "kind": "City (kota)",
+  "province": "South Kalimantan",
+  "pov": 4.39,
+  "pop": 715703,
+  "shape": "22746128B37126944555810",
+  "ages": {
+   "05": 62755,
+   "10": 58792,
+   "15": 56000
+  }
+ },
+ "IDN-08975183": {
+  "name": "Banjarnegara",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 15.64,
+  "pop": 928218,
+  "shape": "22746128B31481808975183",
+  "ages": {
+   "05": 79886,
+   "10": 85318,
+   "15": 81550
+  }
+ },
+ "IDN-62379658": {
+  "name": "Bantaeng",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 8.95,
+  "pop": 188495,
+  "shape": "22746128B71175962379658",
+  "ages": {
+   "05": 14900,
+   "10": 17853,
+   "15": 18659
+  }
+ },
+ "IDN-82783625": {
+  "name": "Bantul",
+  "kind": "Regency (kabupaten)",
+  "province": "Special Region of Yogyakarta",
+  "pov": 13.5,
+  "pop": 1029997,
+  "shape": "22746128B15956982783625",
+  "ages": {
+   "05": 72358,
+   "10": 77738,
+   "15": 73399
+  }
+ },
+ "IDN-20422540": {
+  "name": "Banyuasin",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sumatra",
+  "pov": 11.17,
+  "pop": 864510,
+  "shape": "22746128B71070720422540",
+  "ages": {
+   "05": 81602,
+   "10": 80918,
+   "15": 77566
+  }
+ },
+ "IDN-63724988": {
+  "name": "Banyumas",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 13.26,
+  "pop": 1706625,
+  "shape": "22746128B18933963724988",
+  "ages": {
+   "05": 134681,
+   "10": 148400,
+   "15": 142351
+  }
+ },
+ "IDN-43903443": {
+  "name": "Banyuwangi",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 8.06,
+  "pop": 1617814,
+  "shape": "22746128B51270543903443",
+  "ages": {
+   "05": 123645,
+   "10": 134742,
+   "15": 134399
+  }
+ },
+ "IDN-84763637": {
+  "name": "Barito Kuala",
+  "kind": "Regency (kabupaten)",
+  "province": "South Kalimantan",
+  "pov": 4.51,
+  "pop": 317181,
+  "shape": "22746128B88870484763637",
+  "ages": {
+   "05": 31159,
+   "10": 29270,
+   "15": 27674
+  }
+ },
+ "IDN-69780867": {
+  "name": "Barito Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Kalimantan",
+  "pov": 4.45,
+  "pop": 137865,
+  "shape": "22746128B74191069780867",
+  "ages": {
+   "05": 10552,
+   "10": 12549,
+   "15": 13154
+  }
+ },
+ "IDN-30943245": {
+  "name": "Barito Timur",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Kalimantan",
+  "pov": 6.09,
+  "pop": 130193,
+  "shape": "22746128B29529230943245",
+  "ages": {
+   "05": 9212,
+   "10": 10715,
+   "15": 10787
+  }
+ },
+ "IDN-04320053": {
+  "name": "Barito Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Kalimantan",
+  "pov": 5.17,
+  "pop": 131347,
+  "shape": "22746128B89680104320053",
+  "ages": {
+   "05": 12365,
+   "10": 14297,
+   "15": 15506
+  }
+ },
+ "IDN-43903641": {
+  "name": "Barru",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 8.26,
+  "pop": 174989,
+  "shape": "22746128B81694843903641",
+  "ages": {
+   "05": 14151,
+   "10": 17216,
+   "15": 15590
+  }
+ },
+ "IDN-18017337": {
+  "name": "Kota Batam",
+  "kind": "City (kota)",
+  "province": "Riau Islands",
+  "pov": 4.75,
+  "pop": 1421961,
+  "shape": "22746128B16651418017337",
+  "ages": {
+   "05": 121437,
+   "10": 115137,
+   "15": 99537
+  }
+ },
+ "IDN-41774097": {
+  "name": "Batang Hari",
+  "kind": "Regency (kabupaten)",
+  "province": "Jambi",
+  "pov": 9.65,
+  "pop": 275504,
+  "shape": "22746128B80000441774097",
+  "ages": {
+   "05": 28262,
+   "10": 30527,
+   "15": 29850
+  }
+ },
+ "IDN-34477686": {
+  "name": "Batang",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 9.13,
+  "pop": 774689,
+  "shape": "22746128B4894534477686",
+  "ages": {
+   "05": 65371,
+   "10": 65625,
+   "15": 64585
+  }
+ },
+ "IDN-74000902": {
+  "name": "Batu Bara",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 11.88,
+  "pop": 420103,
+  "shape": "22746128B96384374000902",
+  "ages": {
+   "05": 38495,
+   "10": 37070,
+   "15": 34494
+  }
+ },
+ "IDN-94360094": {
+  "name": "Kota Batu",
+  "kind": "City (kota)",
+  "province": "East Java",
+  "pov": 3.89,
+  "pop": 209125,
+  "shape": "22746128B69457994360094",
+  "ages": {
+   "05": 16391,
+   "10": 16942,
+   "15": 16680
+  }
+ },
+ "IDN-14231616": {
+  "name": "Kota Bau-Bau",
+  "kind": "City (kota)",
+  "province": "Southeast Sulawesi",
+  "pov": 7.15,
+  "pop": 176224,
+  "shape": "22746128B66779214231616",
+  "ages": {
+   "05": 16006,
+   "10": 16112,
+   "15": 15766
+  }
+ },
+ "IDN-29610221": {
+  "name": "Bekasi",
+  "kind": "Regency (kabupaten)",
+  "province": "West Java",
+  "pov": 4.82,
+  "pop": 3899017,
+  "shape": "22746128B74302729610221",
+  "ages": {
+   "05": 272677,
+   "10": 290718,
+   "15": 251066
+  }
+ },
+ "IDN-39112631": {
+  "name": "Kota Bekasi",
+  "kind": "City (kota)",
+  "province": "West Java",
+  "pov": 4.38,
+  "pop": 3075690,
+  "shape": "22746128B54763839112631",
+  "ages": {
+   "05": 200571,
+   "10": 227924,
+   "15": 212052
+  }
+ },
+ "IDN-00191937": {
+  "name": "Belitung Timur",
+  "kind": "Regency (kabupaten)",
+  "province": "Bangka-Belitung Islands",
+  "pov": 6.52,
+  "pop": 132069,
+  "shape": "22746128B98690900191937",
+  "ages": {
+   "05": 9751,
+   "10": 10754,
+   "15": 11423
+  }
+ },
+ "IDN-06787015": {
+  "name": "Belitung",
+  "kind": "Regency (kabupaten)",
+  "province": "Bangka-Belitung Islands",
+  "pov": 6.27,
+  "pop": 193493,
+  "shape": "22746128B80009106787015",
+  "ages": {
+   "05": 13778,
+   "10": 15708,
+   "15": 15867
+  }
+ },
+ "IDN-91830224": {
+  "name": "Belu",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 15.37,
+  "pop": 223176,
+  "shape": "22746128B36840991830224",
+  "ages": {
+   "05": 21147,
+   "10": 23248,
+   "15": 21921
+  }
+ },
+ "IDN-00474226": {
+  "name": "Bener Meriah",
+  "kind": "Regency (kabupaten)",
+  "province": "Aceh",
+  "pov": 18.89,
+  "pop": 150903,
+  "shape": "22746128B4257100474226",
+  "ages": {
+   "05": 16923,
+   "10": 16856,
+   "15": 14872
+  }
+ },
+ "IDN-61674897": {
+  "name": "Bengkalis",
+  "kind": "Regency (kabupaten)",
+  "province": "Riau",
+  "pov": 6.4,
+  "pop": 579430,
+  "shape": "22746128B45456061674897",
+  "ages": {
+   "05": 54893,
+   "10": 53035,
+   "15": 47254
+  }
+ },
+ "IDN-83426087": {
+  "name": "Bengkayang",
+  "kind": "Regency (kabupaten)",
+  "province": "West Kalimantan",
+  "pov": 6.62,
+  "pop": 259383,
+  "shape": "22746128B96004883426087",
+  "ages": {
+   "05": 28098,
+   "10": 30509,
+   "15": 29369
+  }
+ },
+ "IDN-03614329": {
+  "name": "Bengkulu Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "Bengkulu",
+  "pov": 17.82,
+  "pop": 159683,
+  "shape": "22746128B78254403614329",
+  "ages": {
+   "05": 14813,
+   "10": 15777,
+   "15": 15213
+  }
+ },
+ "IDN-72822517": {
+  "name": "Bengkulu Tengah",
+  "kind": "Regency (kabupaten)",
+  "province": "Bengkulu",
+  "pov": 9.3,
+  "pop": 116432,
+  "shape": "22746128B16836972822517",
+  "ages": {
+   "05": 9414,
+   "10": 9748,
+   "15": 9250
+  }
+ },
+ "IDN-18554518": {
+  "name": "Bengkulu Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "Bengkulu",
+  "pov": 11.67,
+  "pop": 315494,
+  "shape": "22746128B39887218554518",
+  "ages": {
+   "05": 27405,
+   "10": 28447,
+   "15": 25260
+  }
+ },
+ "IDN-93337562": {
+  "name": "Kota Bengkulu",
+  "kind": "City (kota)",
+  "province": "Bengkulu",
+  "pov": 17.65,
+  "pop": 393648,
+  "shape": "22746128B322693337562",
+  "ages": {
+   "05": 35849,
+   "10": 36072,
+   "15": 34355
+  }
+ },
+ "IDN-75840087": {
+  "name": "Berau",
+  "kind": "Regency (kabupaten)",
+  "province": "East Kalimantan",
+  "pov": 5.19,
+  "pop": 238214,
+  "shape": "22746128B34069275840087",
+  "ages": {
+   "05": 22625,
+   "10": 23893,
+   "15": 22387
+  }
+ },
+ "IDN-78251292": {
+  "name": "Biak Numfor",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 24.57,
+  "pop": 155504,
+  "shape": "22746128B19254678251292",
+  "ages": {
+   "05": 16778,
+   "10": 14851,
+   "15": 10896
+  }
+ },
+ "IDN-40634491": {
+  "name": "Bima",
+  "kind": "Regency (kabupaten)",
+  "province": "West Nusa Tenggara",
+  "pov": 14.49,
+  "pop": 493198,
+  "shape": "22746128B14082340634491",
+  "ages": {
+   "05": 47100,
+   "10": 52235,
+   "15": 50455
+  }
+ },
+ "IDN-77192923": {
+  "name": "Kota Bima",
+  "kind": "City (kota)",
+  "province": "West Nusa Tenggara",
+  "pov": 8.35,
+  "pop": 176432,
+  "shape": "22746128B33789977192923",
+  "ages": {
+   "05": 14251,
+   "10": 15805,
+   "15": 15270
+  }
+ },
+ "IDN-29138785": {
+  "name": "Kota Binjai",
+  "kind": "City (kota)",
+  "province": "North Sumatra",
+  "pov": 5.71,
+  "pop": 279302,
+  "shape": "22746128B66679629138785",
+  "ages": {
+   "05": 27886,
+   "10": 27807,
+   "15": 24986
+  }
+ },
+ "IDN-97316712": {
+  "name": "Bintan",
+  "kind": "Regency (kabupaten)",
+  "province": "Riau Islands",
+  "pov": 6.36,
+  "pop": 160921,
+  "shape": "22746128B62804497316712",
+  "ages": {
+   "05": 14402,
+   "10": 14690,
+   "15": 15260
+  }
+ },
+ "IDN-34061478": {
+  "name": "Bireuen",
+  "kind": "Regency (kabupaten)",
+  "province": "Aceh",
+  "pov": 13.06,
+  "pop": 480322,
+  "shape": "22746128B71427834061478",
+  "ages": {
+   "05": 40578,
+   "10": 42324,
+   "15": 41073
+  }
+ },
+ "IDN-78995893": {
+  "name": "Kota Bitung",
+  "kind": "City (kota)",
+  "province": "North Sulawesi",
+  "pov": 6.41,
+  "pop": 222222,
+  "shape": "22746128B20507278995893",
+  "ages": {
+   "05": 19813,
+   "10": 20801,
+   "15": 19825
+  }
+ },
+ "IDN-83091424": {
+  "name": "Blitar",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 9.33,
+  "pop": 1163789,
+  "shape": "22746128B45235083091424",
+  "ages": {
+   "05": 92215,
+   "10": 97111,
+   "15": 94128
+  }
+ },
+ "IDN-01204790": {
+  "name": "Kota Blitar",
+  "kind": "City (kota)",
+  "province": "East Java",
+  "pov": 7.78,
+  "pop": 142798,
+  "shape": "22746128B15123001204790",
+  "ages": {
+   "05": 10797,
+   "10": 11809,
+   "15": 11509
+  }
+ },
+ "IDN-86903212": {
+  "name": "Blora",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 11.96,
+  "pop": 867799,
+  "shape": "22746128B85780086903212",
+  "ages": {
+   "05": 60636,
+   "10": 69061,
+   "15": 70710
+  }
+ },
+ "IDN-53682633": {
+  "name": "Boalemo",
+  "kind": "Regency (kabupaten)",
+  "province": "Gorontalo",
+  "pov": 18.57,
+  "pop": 171376,
+  "shape": "22746128B1718153682633",
+  "ages": {
+   "05": 11883,
+   "10": 14565,
+   "15": 14776
+  }
+ },
+ "IDN-43145371": {
+  "name": "Bogor",
+  "kind": "Regency (kabupaten)",
+  "province": "West Java",
+  "pov": 7.69,
+  "pop": 6088233,
+  "shape": "22746128B99423643145371",
+  "ages": {
+   "05": 483238,
+   "10": 512618,
+   "15": 501756
+  }
+ },
+ "IDN-83204987": {
+  "name": "Kota Bogor",
+  "kind": "City (kota)",
+  "province": "West Java",
+  "pov": 6.68,
+  "pop": 1126927,
+  "shape": "22746128B63896883204987",
+  "ages": {
+   "05": 85241,
+   "10": 95019,
+   "15": 90936
+  }
+ },
+ "IDN-19301027": {
+  "name": "Bojonegoro",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 12.87,
+  "pop": 1252020,
+  "shape": "22746128B62232019301027",
+  "ages": {
+   "05": 89869,
+   "10": 95991,
+   "15": 92451
+  }
+ },
+ "IDN-40696101": {
+  "name": "Bolaang Mongondow Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sulawesi",
+  "pov": 12.77,
+  "pop": 67005,
+  "shape": "22746128B14720240696101",
+  "ages": {
+   "05": 6928,
+   "10": 7515,
+   "15": 6524
+  }
+ },
+ "IDN-00949416": {
+  "name": "Bolaang Mongondow Timur",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sulawesi",
+  "pov": 5.88,
+  "pop": 73317,
+  "shape": "22746128B26195600949416",
+  "ages": {
+   "05": 7484,
+   "10": 8022,
+   "15": 7437
+  }
+ },
+ "IDN-29417801": {
+  "name": "Bolaang Mongondow Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sulawesi",
+  "pov": 8.41,
+  "pop": 81329,
+  "shape": "22746128B96389329417801",
+  "ages": {
+   "05": 7740,
+   "10": 8373,
+   "15": 7822
+  }
+ },
+ "IDN-69683342": {
+  "name": "Bolaang Mongondow",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sulawesi",
+  "pov": 7.27,
+  "pop": 251201,
+  "shape": "22746128B99982169683342",
+  "ages": {
+   "05": 21515,
+   "10": 23824,
+   "15": 21226
+  }
+ },
+ "IDN-14544557": {
+  "name": "Bombana",
+  "kind": "Regency (kabupaten)",
+  "province": "Southeast Sulawesi",
+  "pov": 10.01,
+  "pop": 189269,
+  "shape": "22746128B28760414544557",
+  "ages": {
+   "05": 15108,
+   "10": 15166,
+   "15": 13274
+  }
+ },
+ "IDN-58059649": {
+  "name": "Bondowoso",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 14.17,
+  "pop": 778789,
+  "shape": "22746128B61555758059649",
+  "ages": {
+   "05": 52047,
+   "10": 57254,
+   "15": 60140
+  }
+ },
+ "IDN-88718561": {
+  "name": "Bone Bolango",
+  "kind": "Regency (kabupaten)",
+  "province": "Gorontalo",
+  "pov": 15.81,
+  "pop": 163102,
+  "shape": "22746128B41707288718561",
+  "ages": {
+   "05": 13448,
+   "10": 15631,
+   "15": 15006
+  }
+ },
+ "IDN-35680533": {
+  "name": "Bone",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 10.68,
+  "pop": 762073,
+  "shape": "22746128B25468135680533",
+  "ages": {
+   "05": 61066,
+   "10": 75311,
+   "15": 77434
+  }
+ },
+ "IDN-22836886": {
+  "name": "Kota Bontang",
+  "kind": "City (kota)",
+  "province": "East Kalimantan",
+  "pov": 4.38,
+  "pop": 181183,
+  "shape": "22746128B2679722836886",
+  "ages": {
+   "05": 15772,
+   "10": 17213,
+   "15": 17377
+  }
+ },
+ "IDN-79065212": {
+  "name": "Boven Digoel",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 19.41,
+  "pop": 72122,
+  "shape": "22746128B21273779065212",
+  "ages": {
+   "05": 10374,
+   "10": 5951,
+   "15": 4444
+  }
+ },
+ "IDN-37382727": {
+  "name": "Boyolali",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 10.18,
+  "pop": 989619,
+  "shape": "22746128B51975137382727",
+  "ages": {
+   "05": 80959,
+   "10": 89377,
+   "15": 85375
+  }
+ },
+ "IDN-03386068": {
+  "name": "Brebes",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 17.03,
+  "pop": 1815086,
+  "shape": "22746128B82312103386068",
+  "ages": {
+   "05": 161500,
+   "10": 166737,
+   "15": 164252
+  }
+ },
+ "IDN-41134935": {
+  "name": "Kota Bukittinggi",
+  "kind": "City (kota)",
+  "province": "West Sumatra",
+  "pov": 4.54,
+  "pop": 132723,
+  "shape": "22746128B12322141134935",
+  "ages": {
+   "05": 10791,
+   "10": 11683,
+   "15": 10797
+  }
+ },
+ "IDN-28575841": {
+  "name": "Buleleng",
+  "kind": "Regency (kabupaten)",
+  "province": "Bali",
+  "pov": 5.32,
+  "pop": 663995,
+  "shape": "22746128B19337828575841",
+  "ages": {
+   "05": 62533,
+   "10": 69551,
+   "15": 68060
+  }
+ },
+ "IDN-85395673": {
+  "name": "Bulukumba",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 7.1,
+  "pop": 423012,
+  "shape": "22746128B72639885395673",
+  "ages": {
+   "05": 33165,
+   "10": 40667,
+   "15": 37211
+  }
+ },
+ "IDN-75158621": {
+  "name": "Bulungan",
+  "kind": "Regency (kabupaten)",
+  "province": "North Kalimantan",
+  "pov": 9.06,
+  "pop": 145078,
+  "shape": "22746128B10941975158621",
+  "ages": {
+   "05": 12454,
+   "10": 14998,
+   "15": 14951
+  }
+ },
+ "IDN-46979400": {
+  "name": "Bungo",
+  "kind": "Regency (kabupaten)",
+  "province": "Jambi",
+  "pov": 5.8,
+  "pop": 382311,
+  "shape": "22746128B28569646979400",
+  "ages": {
+   "05": 35665,
+   "10": 35186,
+   "15": 32954
+  }
+ },
+ "IDN-29206407": {
+  "name": "Buol",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Sulawesi",
+  "pov": 13.93,
+  "pop": 165419,
+  "shape": "22746128B60636029206407",
+  "ages": {
+   "05": 14533,
+   "10": 14742,
+   "15": 14508
+  }
+ },
+ "IDN-39512512": {
+  "name": "Buru Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "Maluku",
+  "pov": 15.75,
+  "pop": 64178,
+  "shape": "22746128B90083339512512",
+  "ages": {
+   "05": 7753,
+   "10": 9533,
+   "15": 8335
+  }
+ },
+ "IDN-44459072": {
+  "name": "Buru",
+  "kind": "Regency (kabupaten)",
+  "province": "Maluku",
+  "pov": 16.64,
+  "pop": 147797,
+  "shape": "22746128B29167244459072",
+  "ages": {
+   "05": 11959,
+   "10": 14069,
+   "15": 13466
+  }
+ },
+ "IDN-00908076": {
+  "name": "Buton Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "Southeast Sulawesi",
+  "pov": 14.11,
+  "pop": 100643,
+  "shape": "22746128B94245100908076",
+  "ages": {
+   "05": 10334,
+   "10": 11105,
+   "15": 10458
+  },
+  "pop_wp": true
+ },
+ "IDN-63508294": {
+  "name": "Buton Tengah",
+  "kind": "Regency (kabupaten)",
+  "province": "Southeast Sulawesi",
+  "pov": 15.32,
+  "pop": 119239,
+  "shape": "22746128B6718763508294",
+  "ages": {
+   "05": 12243,
+   "10": 13159,
+   "15": 12391
+  },
+  "pop_wp": true
+ },
+ "IDN-24823813": {
+  "name": "Buton Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "Southeast Sulawesi",
+  "pov": 14.1,
+  "pop": 64993,
+  "shape": "22746128B51044624823813",
+  "ages": {
+   "05": 6808,
+   "10": 7376,
+   "15": 6552
+  }
+ },
+ "IDN-69633217": {
+  "name": "Buton",
+  "kind": "Regency (kabupaten)",
+  "province": "Southeast Sulawesi",
+  "pov": 13.21,
+  "pop": 279828,
+  "shape": "22746128B86741169633217",
+  "ages": {
+   "05": 12441,
+   "10": 13370,
+   "15": 12590
+  }
+ },
+ "IDN-30580660": {
+  "name": "Ciamis",
+  "kind": "Regency (kabupaten)",
+  "province": "West Java",
+  "pov": 7.62,
+  "pop": 1201685,
+  "shape": "22746128B17121530580660",
+  "ages": {
+   "05": 87039,
+   "10": 104163,
+   "15": 103671
+  }
+ },
+ "IDN-84533901": {
+  "name": "Cianjur",
+  "kind": "Regency (kabupaten)",
+  "province": "West Java",
+  "pov": 10.36,
+  "pop": 2264328,
+  "shape": "22746128B34542084533901",
+  "ages": {
+   "05": 220054,
+   "10": 234435,
+   "15": 224728
+  }
+ },
+ "IDN-70352000": {
+  "name": "Cilacap",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 11.46,
+  "pop": 1734281,
+  "shape": "22746128B37209370352000",
+  "ages": {
+   "05": 151200,
+   "10": 164072,
+   "15": 156536
+  }
+ },
+ "IDN-83546422": {
+  "name": "Kota Cilegon",
+  "kind": "City (kota)",
+  "province": "Banten",
+  "pov": 3.69,
+  "pop": 442803,
+  "shape": "22746128B25933583546422",
+  "ages": {
+   "05": 42265,
+   "10": 41368,
+   "15": 36986
+  }
+ },
+ "IDN-54982428": {
+  "name": "Kota Cimahi",
+  "kind": "City (kota)",
+  "province": "West Java",
+  "pov": 5.11,
+  "pop": 620393,
+  "shape": "22746128B53430054982428",
+  "ages": {
+   "05": 44554,
+   "10": 52183,
+   "15": 51770
+  }
+ },
+ "IDN-49346240": {
+  "name": "Cirebon",
+  "kind": "Regency (kabupaten)",
+  "province": "West Java",
+  "pov": 11.24,
+  "pop": 2209633,
+  "shape": "22746128B77544549346240",
+  "ages": {
+   "05": 178478,
+   "10": 190908,
+   "15": 190559
+  }
+ },
+ "IDN-64799633": {
+  "name": "Kota Cirebon",
+  "kind": "City (kota)",
+  "province": "West Java",
+  "pov": 9.52,
+  "pop": 322322,
+  "shape": "22746128B80288264799633",
+  "ages": {
+   "05": 27514,
+   "10": 31730,
+   "15": 31282
+  }
+ },
+ "IDN-70127099": {
+  "name": "Dairi",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 8.04,
+  "pop": 285481,
+  "shape": "22746128B7455670127099",
+  "ages": {
+   "05": 31827,
+   "10": 34759,
+   "15": 32737
+  }
+ },
+ "IDN-56212420": {
+  "name": "Deiyai",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 41.76,
+  "pop": 74529,
+  "shape": "22746128B51921656212420",
+  "ages": {
+   "05": 12568,
+   "10": 10589,
+   "15": 10272
+  }
+ },
+ "IDN-96518473": {
+  "name": "Deli Serdang",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 3.88,
+  "pop": 2234320,
+  "shape": "22746128B17104196518473",
+  "ages": {
+   "05": 184622,
+   "10": 184364,
+   "15": 165802
+  }
+ },
+ "IDN-00232359": {
+  "name": "Demak",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 12.54,
+  "pop": 1173620,
+  "shape": "22746128B71519500232359",
+  "ages": {
+   "05": 101008,
+   "10": 104973,
+   "15": 102320
+  }
+ },
+ "IDN-50776530": {
+  "name": "Kota Denpasar",
+  "kind": "City (kota)",
+  "province": "Bali",
+  "pov": 2.14,
+  "pop": 962879,
+  "shape": "22746128B89164850776530",
+  "ages": {
+   "05": 52214,
+   "10": 61723,
+   "15": 59278
+  }
+ },
+ "IDN-24779947": {
+  "name": "Kota Depok",
+  "kind": "City (kota)",
+  "province": "West Java",
+  "pov": 2.45,
+  "pop": 2484186,
+  "shape": "22746128B73481124779947",
+  "ages": {
+   "05": 169900,
+   "10": 192242,
+   "15": 175543
+  }
+ },
+ "IDN-34805401": {
+  "name": "Dharmasraya",
+  "kind": "Regency (kabupaten)",
+  "province": "West Sumatra",
+  "pov": 6.23,
+  "pop": 253483,
+  "shape": "22746128B7219534805401",
+  "ages": {
+   "05": 21059,
+   "10": 23277,
+   "15": 20596
+  }
+ },
+ "IDN-88476684": {
+  "name": "Dogiyai",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 28.62,
+  "pop": 99277,
+  "shape": "22746128B76462588476684",
+  "ages": {
+   "05": 13348,
+   "10": 9172,
+   "15": 9242
+  }
+ },
+ "IDN-55543838": {
+  "name": "Dompu",
+  "kind": "Regency (kabupaten)",
+  "province": "West Nusa Tenggara",
+  "pov": 12.16,
+  "pop": 255569,
+  "shape": "22746128B31420255543838",
+  "ages": {
+   "05": 23741,
+   "10": 24749,
+   "15": 20201
+  }
+ },
+ "IDN-53934380": {
+  "name": "Donggala",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Sulawesi",
+  "pov": 17.39,
+  "pop": 306408,
+  "shape": "22746128B11403753934380",
+  "ages": {
+   "05": 29941,
+   "10": 32148,
+   "15": 28206
+  }
+ },
+ "IDN-76502901": {
+  "name": "Kota Dumai",
+  "kind": "City (kota)",
+  "province": "Riau",
+  "pov": 3.16,
+  "pop": 314166,
+  "shape": "22746128B18875576502901",
+  "ages": {
+   "05": 30930,
+   "10": 29890,
+   "15": 26636
+  }
+ },
+ "IDN-16764549": {
+  "name": "Empat Lawang",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sumatra",
+  "pov": 12.63,
+  "pop": 253272,
+  "shape": "22746128B47089116764549",
+  "ages": {
+   "05": 26122,
+   "10": 31429,
+   "15": 32433
+  }
+ },
+ "IDN-28673681": {
+  "name": "Ende",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 23.76,
+  "pop": 274599,
+  "shape": "22746128B46201528673681",
+  "ages": {
+   "05": 26148,
+   "10": 25666,
+   "15": 24547
+  }
+ },
+ "IDN-24401708": {
+  "name": "Enrekang",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 12.17,
+  "pop": 207800,
+  "shape": "22746128B73854324401708",
+  "ages": {
+   "05": 18931,
+   "10": 25454,
+   "15": 26457
+  }
+ },
+ "IDN-66109504": {
+  "name": "Fakfak",
+  "kind": "Regency (kabupaten)",
+  "province": "West Papua",
+  "pov": 22.27,
+  "pop": 79870,
+  "shape": "22746128B79106566109504",
+  "ages": {
+   "05": 8885,
+   "10": 9664,
+   "15": 9224
+  }
+ },
+ "IDN-03553012": {
+  "name": "Flores Timur",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 10.84,
+  "pop": 257785,
+  "shape": "22746128B68993103553012",
+  "ages": {
+   "05": 26475,
+   "10": 24805,
+   "15": 25451
+  }
+ },
+ "IDN-64971893": {
+  "name": "Garut",
+  "kind": "Regency (kabupaten)",
+  "province": "West Java",
+  "pov": 9.98,
+  "pop": 2636637,
+  "shape": "22746128B66421464971893",
+  "ages": {
+   "05": 234382,
+   "10": 262762,
+   "15": 264297
+  }
+ },
+ "IDN-27775718": {
+  "name": "Gayo Lues",
+  "kind": "Regency (kabupaten)",
+  "province": "Aceh",
+  "pov": 19.32,
+  "pop": 95729,
+  "shape": "22746128B71384327775718",
+  "ages": {
+   "05": 10445,
+   "10": 10066,
+   "15": 9605
+  }
+ },
+ "IDN-50347238": {
+  "name": "Gianyar",
+  "kind": "Regency (kabupaten)",
+  "province": "Bali",
+  "pov": 4.08,
+  "pop": 516344,
+  "shape": "22746128B44616450347238",
+  "ages": {
+   "05": 32959,
+   "10": 39641,
+   "15": 40552
+  }
+ },
+ "IDN-45948550": {
+  "name": "Gorontalo Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "Gorontalo",
+  "pov": 16.88,
+  "pop": 116139,
+  "shape": "22746128B78667545948550",
+  "ages": {
+   "05": 10659,
+   "10": 12776,
+   "15": 12643
+  }
+ },
+ "IDN-74628525": {
+  "name": "Gorontalo",
+  "kind": "Regency (kabupaten)",
+  "province": "Gorontalo",
+  "pov": 15.22,
+  "pop": 380291,
+  "shape": "22746128B1660874628525",
+  "ages": {
+   "05": 31310,
+   "10": 38400,
+   "15": 37042
+  }
+ },
+ "IDN-48563483": {
+  "name": "Kota Gorontalo",
+  "kind": "City (kota)",
+  "province": "Gorontalo",
+  "pov": 5.59,
+  "pop": 223703,
+  "shape": "22746128B66202348563483",
+  "ages": {
+   "05": 16617,
+   "10": 19629,
+   "15": 18677
+  }
+ },
+ "IDN-54309635": {
+  "name": "Gowa",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 7.38,
+  "pop": 784511,
+  "shape": "22746128B57887954309635",
+  "ages": {
+   "05": 65627,
+   "10": 77367,
+   "15": 72521
+  }
+ },
+ "IDN-86274006": {
+  "name": "Gresik",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 12.4,
+  "pop": 1326420,
+  "shape": "22746128B46933486274006",
+  "ages": {
+   "05": 104286,
+   "10": 111043,
+   "15": 106398
+  }
+ },
+ "IDN-42918672": {
+  "name": "Grobogan",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 12.46,
+  "pop": 1383791,
+  "shape": "22746128B71964042918672",
+  "ages": {
+   "05": 108707,
+   "10": 119761,
+   "15": 116434
+  }
+ },
+ "IDN-00646728": {
+  "name": "Gunung Kidul",
+  "kind": "Regency (kabupaten)",
+  "province": "Special Region of Yogyakarta",
+  "pov": 17.07,
+  "pop": 749274,
+  "shape": "22746128B54859500646728",
+  "ages": {
+   "05": 47148,
+   "10": 52368,
+   "15": 51300
+  }
+ },
+ "IDN-14044373": {
+  "name": "Gunung Mas",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Kalimantan",
+  "pov": 4.75,
+  "pop": 122345,
+  "shape": "22746128B12491014044373",
+  "ages": {
+   "05": 13017,
+   "10": 13988,
+   "15": 14651
+  }
+ },
+ "IDN-69593133": {
+  "name": "Kota Gunung Sitoli",
+  "kind": "City (kota)",
+  "province": "North Sumatra",
+  "pov": 16.41,
+  "pop": 143776,
+  "shape": "22746128B74256869593133",
+  "ages": {
+   "05": 15399,
+   "10": 15403,
+   "15": 14579
+  }
+ },
+ "IDN-22582766": {
+  "name": "Halmahera Barat",
+  "kind": "Regency (kabupaten)",
+  "province": "North Maluku",
+  "pov": 8.82,
+  "pop": 120166,
+  "shape": "22746128B52341022582766",
+  "ages": {
+   "05": 10619,
+   "10": 12679,
+   "15": 13106
+  }
+ },
+ "IDN-02785556": {
+  "name": "Halmahera Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "North Maluku",
+  "pov": 5.21,
+  "pop": 238733,
+  "shape": "22746128B2838702785556",
+  "ages": {
+   "05": 23286,
+   "10": 28291,
+   "15": 28510
+  }
+ },
+ "IDN-53933041": {
+  "name": "Halmahera Tengah",
+  "kind": "Regency (kabupaten)",
+  "province": "North Maluku",
+  "pov": 13.56,
+  "pop": 57101,
+  "shape": "22746128B46636453933041",
+  "ages": {
+   "05": 5741,
+   "10": 6011,
+   "15": 5248
+  }
+ },
+ "IDN-51071090": {
+  "name": "Halmahera Timur",
+  "kind": "Regency (kabupaten)",
+  "province": "North Maluku",
+  "pov": 15.45,
+  "pop": 97420,
+  "shape": "22746128B70343351071090",
+  "ages": {
+   "05": 8978,
+   "10": 9624,
+   "15": 8962
+  }
+ },
+ "IDN-86574655": {
+  "name": "Halmahera Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "North Maluku",
+  "pov": 4.45,
+  "pop": 197403,
+  "shape": "22746128B41252486574655",
+  "ages": {
+   "05": 20325,
+   "10": 22103,
+   "15": 19509
+  }
+ },
+ "IDN-28386884": {
+  "name": "Hulu Sungai Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "South Kalimantan",
+  "pov": 5.17,
+  "pop": 240279,
+  "shape": "22746128B37889128386884",
+  "ages": {
+   "05": 21194,
+   "10": 20443,
+   "15": 19828
+  }
+ },
+ "IDN-72190374": {
+  "name": "Hulu Sungai Tengah",
+  "kind": "Regency (kabupaten)",
+  "province": "South Kalimantan",
+  "pov": 5.64,
+  "pop": 275213,
+  "shape": "22746128B20472072190374",
+  "ages": {
+   "05": 24323,
+   "10": 23181,
+   "15": 23917
+  }
+ },
+ "IDN-83155838": {
+  "name": "Hulu Sungai Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "South Kalimantan",
+  "pov": 6.14,
+  "pop": 240494,
+  "shape": "22746128B21492383155838",
+  "ages": {
+   "05": 21953,
+   "10": 20729,
+   "15": 20648
+  }
+ },
+ "IDN-51071948": {
+  "name": "Humbang Hasundutan",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 9.36,
+  "pop": 191776,
+  "shape": "22746128B305851071948",
+  "ages": {
+   "05": 22553,
+   "10": 24359,
+   "15": 22599
+  }
+ },
+ "IDN-92556341": {
+  "name": "Indragiri Hilir",
+  "kind": "Regency (kabupaten)",
+  "province": "Riau",
+  "pov": 5.93,
+  "pop": 749813,
+  "shape": "22746128B36468792556341",
+  "ages": {
+   "05": 60113,
+   "10": 65112,
+   "15": 60444
+  }
+ },
+ "IDN-79258091": {
+  "name": "Indragiri Hulu",
+  "kind": "Regency (kabupaten)",
+  "province": "Riau",
+  "pov": 5.96,
+  "pop": 449531,
+  "shape": "22746128B72920479258091",
+  "ages": {
+   "05": 45444,
+   "10": 46045,
+   "15": 43248
+  }
+ },
+ "IDN-11669242": {
+  "name": "Indramayu",
+  "kind": "Regency (kabupaten)",
+  "province": "West Java",
+  "pov": 12.7,
+  "pop": 1737624,
+  "shape": "22746128B59462811669242",
+  "ages": {
+   "05": 147177,
+   "10": 158134,
+   "15": 156008
+  }
+ },
+ "IDN-04091664": {
+  "name": "Intan Jaya",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 40.71,
+  "pop": 50599,
+  "shape": "22746128B83440404091664",
+  "ages": {
+   "05": 10055,
+   "10": 10765,
+   "15": 13000
+  }
+ },
+ "IDN-67349746": {
+  "name": "Kota Jakarta Barat",
+  "kind": "City (kota)",
+  "province": "Jakarta Special Capital Region",
+  "pov": 4.25,
+  "pop": 2619785,
+  "shape": "22746128B58252967349746",
+  "ages": {
+   "05": 198649,
+   "10": 211569,
+   "15": 202417
+  }
+ },
+ "IDN-62092426": {
+  "name": "Kota Jakarta Pusat",
+  "kind": "City (kota)",
+  "province": "Jakarta Special Capital Region",
+  "pov": 4.51,
+  "pop": 931366,
+  "shape": "22746128B21128962092426",
+  "ages": {
+   "05": 78542,
+   "10": 86452,
+   "15": 88293
+  }
+ },
+ "IDN-00937380": {
+  "name": "Kota Jakarta Selatan",
+  "kind": "City (kota)",
+  "province": "Jakarta Special Capital Region",
+  "pov": 3.43,
+  "pop": 2282521,
+  "shape": "22746128B93686700937380",
+  "ages": {
+   "05": 176468,
+   "10": 193570,
+   "15": 190216
+  }
+ },
+ "IDN-16278909": {
+  "name": "Kota Jakarta Timur",
+  "kind": "City (kota)",
+  "province": "Jakarta Special Capital Region",
+  "pov": 4.16,
+  "pop": 2959114,
+  "shape": "22746128B5353616278909",
+  "ages": {
+   "05": 239629,
+   "10": 258074,
+   "15": 250525
+  }
+ },
+ "IDN-69947265": {
+  "name": "Kota Jakarta Utara",
+  "kind": "City (kota)",
+  "province": "Jakarta Special Capital Region",
+  "pov": 6.78,
+  "pop": 1827731,
+  "shape": "22746128B85966169947265",
+  "ages": {
+   "05": 149061,
+   "10": 155485,
+   "15": 147464
+  }
+ },
+ "IDN-18524197": {
+  "name": "Kota Jambi",
+  "kind": "City (kota)",
+  "province": "Jambi",
+  "pov": 8.27,
+  "pop": 611353,
+  "shape": "22746128B99667418524197",
+  "ages": {
+   "05": 54781,
+   "10": 55148,
+   "15": 53068
+  }
+ },
+ "IDN-70185906": {
+  "name": "Jayapura",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 12.44,
+  "pop": 134180,
+  "shape": "22746128B71103770185906",
+  "ages": {
+   "05": 22856,
+   "10": 16123,
+   "15": 12296
+  }
+ },
+ "IDN-86276333": {
+  "name": "Kota Jayapura",
+  "kind": "City (kota)",
+  "province": "Papua",
+  "pov": 11.16,
+  "pop": 303760,
+  "shape": "22746128B85346986276333",
+  "ages": {
+   "05": 40438,
+   "10": 31823,
+   "15": 25320
+  }
+ },
+ "IDN-33574981": {
+  "name": "Jayawijaya",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 37.22,
+  "pop": 220112,
+  "shape": "22746128B40741333574981",
+  "ages": {
+   "05": 27098,
+   "10": 24279,
+   "15": 28101
+  }
+ },
+ "IDN-37319005": {
+  "name": "Jember",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 10.09,
+  "pop": 2459890,
+  "shape": "22746128B56085237319005",
+  "ages": {
+   "05": 187254,
+   "10": 202815,
+   "15": 205138
+  }
+ },
+ "IDN-90675198": {
+  "name": "Jembrana",
+  "kind": "Regency (kabupaten)",
+  "province": "Bali",
+  "pov": 4.51,
+  "pop": 279598,
+  "shape": "22746128B85592790675198",
+  "ages": {
+   "05": 23716,
+   "10": 26030,
+   "15": 25415
+  }
+ },
+ "IDN-18598962": {
+  "name": "Jeneponto",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 14.58,
+  "pop": 365610,
+  "shape": "22746128B64050318598962",
+  "ages": {
+   "05": 32860,
+   "10": 38814,
+   "15": 36078
+  }
+ },
+ "IDN-93607060": {
+  "name": "Jepara",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 7.17,
+  "pop": 1275182,
+  "shape": "22746128B68650893607060",
+  "ages": {
+   "05": 94926,
+   "10": 102727,
+   "15": 99690
+  }
+ },
+ "IDN-30151566": {
+  "name": "Jombang",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 9.94,
+  "pop": 1268504,
+  "shape": "22746128B39847330151566",
+  "ages": {
+   "05": 103481,
+   "10": 110339,
+   "15": 107793
+  }
+ },
+ "IDN-28927367": {
+  "name": "Kaimana",
+  "kind": "Regency (kabupaten)",
+  "province": "West Papua",
+  "pov": 15.5,
+  "pop": 61820,
+  "shape": "22746128B93097528927367",
+  "ages": {
+   "05": 5414,
+   "10": 6926,
+   "15": 6618
+  }
+ },
+ "IDN-06932395": {
+  "name": "Kampar",
+  "kind": "Regency (kabupaten)",
+  "province": "Riau",
+  "pov": 7.38,
+  "pop": 890211,
+  "shape": "22746128B8837306932395",
+  "ages": {
+   "05": 82580,
+   "10": 82031,
+   "15": 77303
+  }
+ },
+ "IDN-09098386": {
+  "name": "Kapuas Hulu",
+  "kind": "Regency (kabupaten)",
+  "province": "West Kalimantan",
+  "pov": 8.99,
+  "pop": 267317,
+  "shape": "22746128B82886709098386",
+  "ages": {
+   "05": 22440,
+   "10": 25360,
+   "15": 23502
+  }
+ },
+ "IDN-46216216": {
+  "name": "Kapuas",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Kalimantan",
+  "pov": 5.04,
+  "pop": 361085,
+  "shape": "22746128B40136746216216",
+  "ages": {
+   "05": 33055,
+   "10": 39095,
+   "15": 40394
+  }
+ },
+ "IDN-87274107": {
+  "name": "Karanganyar",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 10.28,
+  "pop": 893679,
+  "shape": "22746128B38192287274107",
+  "ages": {
+   "05": 70730,
+   "10": 77388,
+   "15": 74136
+  }
+ },
+ "IDN-81377305": {
+  "name": "Karangasem",
+  "kind": "Regency (kabupaten)",
+  "province": "Bali",
+  "pov": 5.91,
+  "pop": 418490,
+  "shape": "22746128B60715781377305",
+  "ages": {
+   "05": 40200,
+   "10": 44805,
+   "15": 40638
+  }
+ },
+ "IDN-75251202": {
+  "name": "Karawang",
+  "kind": "Regency (kabupaten)",
+  "province": "West Java",
+  "pov": 8.26,
+  "pop": 2370488,
+  "shape": "22746128B53840275251202",
+  "ages": {
+   "05": 207102,
+   "10": 218122,
+   "15": 205626
+  }
+ },
+ "IDN-08247842": {
+  "name": "Karimun",
+  "kind": "Regency (kabupaten)",
+  "province": "Riau Islands",
+  "pov": 6.83,
+  "pop": 234417,
+  "shape": "22746128B38340908247842",
+  "ages": {
+   "05": 23225,
+   "10": 20591,
+   "15": 22879
+  }
+ },
+ "IDN-12525753": {
+  "name": "Karo",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 8.7,
+  "pop": 421997,
+  "shape": "22746128B49947212525753",
+  "ages": {
+   "05": 37567,
+   "10": 40390,
+   "15": 37649
+  }
+ },
+ "IDN-62853427": {
+  "name": "Katingan",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Kalimantan",
+  "pov": 4.79,
+  "pop": 172287,
+  "shape": "22746128B40819362853427",
+  "ages": {
+   "05": 15151,
+   "10": 16900,
+   "15": 15272
+  }
+ },
+ "IDN-55452274": {
+  "name": "Kaur",
+  "kind": "Regency (kabupaten)",
+  "province": "Bengkulu",
+  "pov": 18.47,
+  "pop": 122500,
+  "shape": "22746128B79405855452274",
+  "ages": {
+   "05": 11388,
+   "10": 12650,
+   "15": 12144
+  }
+ },
+ "IDN-69580770": {
+  "name": "Kayong Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "West Kalimantan",
+  "pov": 9.56,
+  "pop": 114379,
+  "shape": "22746128B56151469580770",
+  "ages": {
+   "05": 11222,
+   "10": 13804,
+   "15": 12773
+  }
+ },
+ "IDN-25050369": {
+  "name": "Kebumen",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 17.59,
+  "pop": 1200621,
+  "shape": "22746128B26305825050369",
+  "ages": {
+   "05": 101557,
+   "10": 114657,
+   "15": 110864
+  }
+ },
+ "IDN-87836997": {
+  "name": "Kediri",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 11.4,
+  "pop": 1580092,
+  "shape": "22746128B82286187836997",
+  "ages": {
+   "05": 124009,
+   "10": 131715,
+   "15": 133076
+  }
+ },
+ "IDN-58306090": {
+  "name": "Kota Kediri",
+  "kind": "City (kota)",
+  "province": "East Java",
+  "pov": 7.69,
+  "pop": 289109,
+  "shape": "22746128B79918158306090",
+  "ages": {
+   "05": 22132,
+   "10": 24254,
+   "15": 26127
+  }
+ },
+ "IDN-51253690": {
+  "name": "Keerom",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 16.32,
+  "pop": 57903,
+  "shape": "22746128B17774751253690",
+  "ages": {
+   "05": 7965,
+   "10": 5531,
+   "15": 4227
+  }
+ },
+ "IDN-40008354": {
+  "name": "Kendal",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 9.99,
+  "pop": 977917,
+  "shape": "22746128B21241240008354",
+  "ages": {
+   "05": 81050,
+   "10": 85034,
+   "15": 82432
+  }
+ },
+ "IDN-59079738": {
+  "name": "Kendari City",
+  "kind": "Regency (kabupaten)",
+  "province": "Southeast Sulawesi",
+  "pov": 4.34,
+  "pop": 404232,
+  "shape": "22746128B80961359079738",
+  "ages": {
+   "05": 33217,
+   "10": 33346,
+   "15": 31062
+  }
+ },
+ "IDN-03722983": {
+  "name": "Kepulauan Siau Tagulandang Biaro",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sulawesi",
+  "pov": 8.94,
+  "pop": 66490,
+  "shape": "22746128B24839603722983",
+  "ages": {
+   "05": 5160,
+   "10": 5267,
+   "15": 5345
+  }
+ },
+ "IDN-37307727": {
+  "name": "Kepahiang",
+  "kind": "Regency (kabupaten)",
+  "province": "Bengkulu",
+  "pov": 14.69,
+  "pop": 138184,
+  "shape": "22746128B30869437307727",
+  "ages": {
+   "05": 12072,
+   "10": 12841,
+   "15": 12618
+  }
+ },
+ "IDN-80476592": {
+  "name": "Kepulauan Anambas",
+  "kind": "Regency (kabupaten)",
+  "province": "Riau Islands",
+  "pov": 6.56,
+  "pop": 42744,
+  "shape": "22746128B99951880476592",
+  "ages": {
+   "05": 4493,
+   "10": 4705,
+   "15": 4949
+  }
+ },
+ "IDN-76551422": {
+  "name": "Kepulauan Aru",
+  "kind": "Regency (kabupaten)",
+  "province": "Maluku",
+  "pov": 26.26,
+  "pop": 97187,
+  "shape": "22746128B17511076551422",
+  "ages": {
+   "05": 10529,
+   "10": 12328,
+   "15": 10671
+  }
+ },
+ "IDN-72671334": {
+  "name": "Kepulauan Mentawai",
+  "kind": "Regency (kabupaten)",
+  "province": "West Sumatra",
+  "pov": 14.35,
+  "pop": 93575,
+  "shape": "22746128B86355072671334",
+  "ages": {
+   "05": 8424,
+   "10": 10798,
+   "15": 9115
+  }
+ },
+ "IDN-05420608": {
+  "name": "Kepulauan Meranti",
+  "kind": "Regency (kabupaten)",
+  "province": "Riau",
+  "pov": 25.28,
+  "pop": 186629,
+  "shape": "22746128B32802105420608",
+  "ages": {
+   "05": 17459,
+   "10": 17578,
+   "15": 20001
+  }
+ },
+ "IDN-08330436": {
+  "name": "Kepulauan Sangihe",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sulawesi",
+  "pov": 11.14,
+  "pop": 131389,
+  "shape": "22746128B28296608330436",
+  "ages": {
+   "05": 10334,
+   "10": 10431,
+   "15": 10080
+  }
+ },
+ "IDN-33901652": {
+  "name": "Kepulauan Selayar",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 12.48,
+  "pop": 136871,
+  "shape": "22746128B1615833901652",
+  "ages": {
+   "05": 10392,
+   "10": 13834,
+   "15": 14169
+  }
+ },
+ "IDN-72961966": {
+  "name": "Kepulauan Sula",
+  "kind": "Regency (kabupaten)",
+  "province": "North Maluku",
+  "pov": 8.35,
+  "pop": 104971,
+  "shape": "22746128B81791072961966",
+  "ages": {
+   "05": 10519,
+   "10": 11448,
+   "15": 10922
+  }
+ },
+ "IDN-40858108": {
+  "name": "Kepulauan Talaud",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sulawesi",
+  "pov": 9.49,
+  "pop": 93320,
+  "shape": "22746128B45484540858108",
+  "ages": {
+   "05": 7664,
+   "10": 8324,
+   "15": 7456
+  }
+ },
+ "IDN-79708791": {
+  "name": "Kota Kepulauan Tidore",
+  "kind": "City (kota)",
+  "province": "North Maluku",
+  "pov": 6.52,
+  "pop": 102381,
+  "shape": "22746128B24002479708791",
+  "ages": {
+   "05": 9775,
+   "10": 11104,
+   "15": 10957
+  }
+ },
+ "IDN-28872069": {
+  "name": "Kepulauan Yapen",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 26.3,
+  "pop": 103313,
+  "shape": "22746128B96094928872069",
+  "ages": {
+   "05": 15531,
+   "10": 12633,
+   "15": 9384
+  }
+ },
+ "IDN-52285861": {
+  "name": "Kerinci",
+  "kind": "Regency (kabupaten)",
+  "province": "Jambi",
+  "pov": 7.3,
+  "pop": 239606,
+  "shape": "22746128B64633952285861",
+  "ages": {
+   "05": 19484,
+   "10": 20518,
+   "15": 20077
+  }
+ },
+ "IDN-64926455": {
+  "name": "Ketapang",
+  "kind": "Regency (kabupaten)",
+  "province": "West Kalimantan",
+  "pov": 10.29,
+  "pop": 521412,
+  "shape": "22746128B56277764926455",
+  "ages": {
+   "05": 48217,
+   "10": 55599,
+   "15": 57158
+  }
+ },
+ "IDN-56326165": {
+  "name": "Klaten",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 12.89,
+  "pop": 1178501,
+  "shape": "22746128B24447956326165",
+  "ages": {
+   "05": 88365,
+   "10": 101731,
+   "15": 98224
+  }
+ },
+ "IDN-09478343": {
+  "name": "Klungkung",
+  "kind": "Regency (kabupaten)",
+  "province": "Bali",
+  "pov": 4.87,
+  "pop": 179896,
+  "shape": "22746128B73073409478343",
+  "ages": {
+   "05": 14733,
+   "10": 16917,
+   "15": 16336
+  }
+ },
+ "IDN-23529334": {
+  "name": "Kolaka Timur",
+  "kind": "Regency (kabupaten)",
+  "province": "Southeast Sulawesi",
+  "pov": 13.47,
+  "pop": 196624,
+  "shape": "22746128B88028223529334",
+  "ages": {
+   "05": 11552,
+   "10": 12352,
+   "15": 11495
+  }
+ },
+ "IDN-00179718": {
+  "name": "Kolaka Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "Southeast Sulawesi",
+  "pov": 12.96,
+  "pop": 153669,
+  "shape": "22746128B11198700179718",
+  "ages": {
+   "05": 13024,
+   "10": 13804,
+   "15": 13662
+  }
+ },
+ "IDN-93010200": {
+  "name": "Kolaka",
+  "kind": "Regency (kabupaten)",
+  "province": "Southeast Sulawesi",
+  "pov": 11.63,
+  "pop": 205014,
+  "shape": "22746128B69202393010200",
+  "ages": {
+   "05": 22958,
+   "10": 24544,
+   "15": 22837
+  }
+ },
+ "IDN-17920414": {
+  "name": "Konawe Kepulauan",
+  "kind": "Regency (kabupaten)",
+  "province": "Southeast Sulawesi",
+  "pov": 17.01,
+  "pop": 34666,
+  "shape": "22746128B22870517920414",
+  "ages": {
+   "05": 3421,
+   "10": 3881,
+   "15": 3699
+  }
+ },
+ "IDN-50492320": {
+  "name": "Konawe Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "Southeast Sulawesi",
+  "pov": 10.74,
+  "pop": 319291,
+  "shape": "22746128B90195550492320",
+  "ages": {
+   "05": 29867,
+   "10": 32364,
+   "15": 29933
+  }
+ },
+ "IDN-25063444": {
+  "name": "Konawe Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "Southeast Sulawesi",
+  "pov": 13.53,
+  "pop": 65183,
+  "shape": "22746128B68991025063444",
+  "ages": {
+   "05": 7112,
+   "10": 6976,
+   "15": 6792
+  }
+ },
+ "IDN-55862414": {
+  "name": "Konawe",
+  "kind": "Regency (kabupaten)",
+  "province": "Southeast Sulawesi",
+  "pov": 12.2,
+  "pop": 260411,
+  "shape": "22746128B78249855862414",
+  "ages": {
+   "05": 23757,
+   "10": 26944,
+   "15": 25677
+  }
+ },
+ "IDN-88264471": {
+  "name": "Kota Baru",
+  "kind": "Regency (kabupaten)",
+  "province": "South Kalimantan",
+  "pov": 4.22,
+  "pop": 347399,
+  "shape": "22746128B85816588264471",
+  "ages": {
+   "05": 33735,
+   "10": 34324,
+   "15": 32252
+  }
+ },
+ "IDN-30379000": {
+  "name": "Kota Kotamobagu",
+  "kind": "City (kota)",
+  "province": "North Sulawesi",
+  "pov": 5.42,
+  "pop": 130678,
+  "shape": "22746128B93986330379000",
+  "ages": {
+   "05": 10476,
+   "10": 10989,
+   "15": 10481
+  }
+ },
+ "IDN-95819955": {
+  "name": "Kotawaringin Barat",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Kalimantan",
+  "pov": 3.59,
+  "pop": 321751,
+  "shape": "22746128B93777795819955",
+  "ages": {
+   "05": 23721,
+   "10": 25027,
+   "15": 22047
+  }
+ },
+ "IDN-18008212": {
+  "name": "Kotawaringin Timur",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Kalimantan",
+  "pov": 5.62,
+  "pop": 476029,
+  "shape": "22746128B94284518008212",
+  "ages": {
+   "05": 37954,
+   "10": 43976,
+   "15": 42166
+  }
+ },
+ "IDN-37452639": {
+  "name": "Kuantan Singingi",
+  "kind": "Regency (kabupaten)",
+  "province": "Riau",
+  "pov": 8.91,
+  "pop": 330078,
+  "shape": "22746128B8182037452639",
+  "ages": {
+   "05": 30796,
+   "10": 31828,
+   "15": 31312
+  }
+ },
+ "IDN-77702614": {
+  "name": "Kubu Raya",
+  "kind": "Regency (kabupaten)",
+  "province": "West Kalimantan",
+  "pov": 4.42,
+  "pop": 587610,
+  "shape": "22746128B69090577702614",
+  "ages": {
+   "05": 55857,
+   "10": 59292,
+   "15": 54765
+  }
+ },
+ "IDN-07401144": {
+  "name": "Kudus",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 7.31,
+  "pop": 881128,
+  "shape": "22746128B61967707401144",
+  "ages": {
+   "05": 67802,
+   "10": 71982,
+   "15": 70019
+  }
+ },
+ "IDN-86501526": {
+  "name": "Kulon Progo",
+  "kind": "Regency (kabupaten)",
+  "province": "Special Region of Yogyakarta",
+  "pov": 18.01,
+  "pop": 434483,
+  "shape": "22746128B43033686501526",
+  "ages": {
+   "05": 30012,
+   "10": 33053,
+   "15": 32132
+  }
+ },
+ "IDN-27403365": {
+  "name": "Kuningan",
+  "kind": "Regency (kabupaten)",
+  "province": "West Java",
+  "pov": 12.82,
+  "pop": 1087105,
+  "shape": "22746128B44289127403365",
+  "ages": {
+   "05": 89418,
+   "10": 104111,
+   "15": 99866
+  }
+ },
+ "IDN-58797580": {
+  "name": "Kupang",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 22.77,
+  "pop": 421618,
+  "shape": "22746128B27765258797580",
+  "ages": {
+   "05": 32818,
+   "10": 34390,
+   "15": 38415
+  }
+ },
+ "IDN-29525327": {
+  "name": "Kota Kupang",
+  "kind": "City (kota)",
+  "province": "East Nusa Tenggara",
+  "pov": 8.96,
+  "pop": 446193,
+  "shape": "22746128B56606429525327",
+  "ages": {
+   "05": 36680,
+   "10": 33759,
+   "15": 38483
+  }
+ },
+ "IDN-26922918": {
+  "name": "Kutai Barat",
+  "kind": "Regency (kabupaten)",
+  "province": "East Kalimantan",
+  "pov": 9.29,
+  "pop": 148278,
+  "shape": "22746128B93368126922918",
+  "ages": {
+   "05": 14466,
+   "10": 16543,
+   "15": 17035
+  }
+ },
+ "IDN-43702768": {
+  "name": "Kutai Kartanegara",
+  "kind": "Regency (kabupaten)",
+  "province": "East Kalimantan",
+  "pov": 7.31,
+  "pop": 802903,
+  "shape": "22746128B55621143702768",
+  "ages": {
+   "05": 64038,
+   "10": 71670,
+   "15": 68330
+  }
+ },
+ "IDN-43266043": {
+  "name": "Kutai Timur",
+  "kind": "Regency (kabupaten)",
+  "province": "East Kalimantan",
+  "pov": 9.55,
+  "pop": 390991,
+  "shape": "22746128B75924443266043",
+  "ages": {
+   "05": 38836,
+   "10": 43723,
+   "15": 42959
+  }
+ },
+ "IDN-87640193": {
+  "name": "Labuhan Batu Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 8.34,
+  "pop": 344819,
+  "shape": "22746128B23995987640193",
+  "ages": {
+   "05": 33671,
+   "10": 34349,
+   "15": 30161
+  }
+ },
+ "IDN-56521044": {
+  "name": "Labuhan Batu Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 9.53,
+  "pop": 366603,
+  "shape": "22746128B7095356521044",
+  "ages": {
+   "05": 40185,
+   "10": 40930,
+   "15": 39158
+  }
+ },
+ "IDN-66155231": {
+  "name": "Labuhan Batu",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 8.44,
+  "pop": 501596,
+  "shape": "22746128B75065966155231",
+  "ages": {
+   "05": 51023,
+   "10": 52018,
+   "15": 50191
+  }
+ },
+ "IDN-88414918": {
+  "name": "Lahat",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sumatra",
+  "pov": 15.95,
+  "pop": 413206,
+  "shape": "22746128B84107388414918",
+  "ages": {
+   "05": 40788,
+   "10": 40942,
+   "15": 40542
+  }
+ },
+ "IDN-35888540": {
+  "name": "Lamandau",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Kalimantan",
+  "pov": 3.09,
+  "pop": 84921,
+  "shape": "22746128B62127435888540",
+  "ages": {
+   "05": 8375,
+   "10": 8232,
+   "15": 7965
+  }
+ },
+ "IDN-88436916": {
+  "name": "Lamongan",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 13.85,
+  "pop": 1189380,
+  "shape": "22746128B62762388436916",
+  "ages": {
+   "05": 91705,
+   "10": 97816,
+   "15": 100278
+  }
+ },
+ "IDN-71192525": {
+  "name": "Lampung Barat",
+  "kind": "Regency (kabupaten)",
+  "province": "Lampung",
+  "pov": 12.52,
+  "pop": 304874,
+  "shape": "22746128B74428971192525",
+  "ages": {
+   "05": 28534,
+   "10": 29371,
+   "15": 26678
+  }
+ },
+ "IDN-34887211": {
+  "name": "Lampung Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "Lampung",
+  "pov": 14.08,
+  "pop": 1019789,
+  "shape": "22746128B4401734887211",
+  "ages": {
+   "05": 98995,
+   "10": 97750,
+   "15": 92693
+  }
+ },
+ "IDN-33041967": {
+  "name": "Lampung Tengah",
+  "kind": "Regency (kabupaten)",
+  "province": "Lampung",
+  "pov": 11.82,
+  "pop": 1290407,
+  "shape": "22746128B57273633041967",
+  "ages": {
+   "05": 122792,
+   "10": 123265,
+   "15": 121772
+  }
+ },
+ "IDN-62018248": {
+  "name": "Lampung Timur",
+  "kind": "Regency (kabupaten)",
+  "province": "Lampung",
+  "pov": 14.62,
+  "pop": 1051994,
+  "shape": "22746128B49036162018248",
+  "ages": {
+   "05": 96992,
+   "10": 99357,
+   "15": 94076
+  }
+ },
+ "IDN-64843822": {
+  "name": "Lampung Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "Lampung",
+  "pov": 19.3,
+  "pop": 618818,
+  "shape": "22746128B16659764843822",
+  "ages": {
+   "05": 60852,
+   "10": 61031,
+   "15": 55722
+  }
+ },
+ "IDN-27549228": {
+  "name": "Landak",
+  "kind": "Regency (kabupaten)",
+  "province": "West Kalimantan",
+  "pov": 11.12,
+  "pop": 381925,
+  "shape": "22746128B55433427549228",
+  "ages": {
+   "05": 36911,
+   "10": 38402,
+   "15": 38494
+  }
+ },
+ "IDN-54134474": {
+  "name": "Langkat",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 9.73,
+  "pop": 1048100,
+  "shape": "22746128B45262154134474",
+  "ages": {
+   "05": 87699,
+   "10": 84119,
+   "15": 83952
+  }
+ },
+ "IDN-84727954": {
+  "name": "Kota Langsa",
+  "kind": "City (kota)",
+  "province": "Aceh",
+  "pov": 10.44,
+  "pop": 179277,
+  "shape": "22746128B69628984727954",
+  "ages": {
+   "05": 15874,
+   "10": 17273,
+   "15": 17589
+  }
+ },
+ "IDN-80666794": {
+  "name": "Lanny Jaya",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 38.13,
+  "pop": 180305,
+  "shape": "22746128B21145180666794",
+  "ages": {
+   "05": 13055,
+   "10": 15035,
+   "15": 20378
+  }
+ },
+ "IDN-34141998": {
+  "name": "Lebak",
+  "kind": "Regency (kabupaten)",
+  "province": "Banten",
+  "pov": 9.24,
+  "pop": 1308406,
+  "shape": "22746128B73767534141998",
+  "ages": {
+   "05": 129046,
+   "10": 135366,
+   "15": 133748
+  }
+ },
+ "IDN-90948320": {
+  "name": "Lebong",
+  "kind": "Regency (kabupaten)",
+  "province": "Bengkulu",
+  "pov": 11.85,
+  "pop": 118399,
+  "shape": "22746128B6914990948320",
+  "ages": {
+   "05": 9237,
+   "10": 9487,
+   "15": 9868
+  }
+ },
+ "IDN-44336237": {
+  "name": "Lembata",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 26.14,
+  "pop": 145685,
+  "shape": "22746128B62947944336237",
+  "ages": {
+   "05": 15422,
+   "10": 13652,
+   "15": 10845
+  }
+ },
+ "IDN-78110453": {
+  "name": "Kota Lhokseumawe",
+  "kind": "City (kota)",
+  "province": "Aceh",
+  "pov": 10.8,
+  "pop": 211123,
+  "shape": "22746128B88010078110453",
+  "ages": {
+   "05": 17984,
+   "10": 19550,
+   "15": 18807
+  }
+ },
+ "IDN-73808268": {
+  "name": "Limapuluh Kota",
+  "kind": "Regency (kabupaten)",
+  "province": "West Sumatra",
+  "pov": 6.86,
+  "pop": 385989,
+  "shape": "22746128B97954273808268",
+  "ages": {
+   "05": 30462,
+   "10": 36844,
+   "15": 35537
+  }
+ },
+ "IDN-95352092": {
+  "name": "Lingga",
+  "kind": "Regency (kabupaten)",
+  "province": "Riau Islands",
+  "pov": 13.85,
+  "pop": 89980,
+  "shape": "22746128B41866695352092",
+  "ages": {
+   "05": 8319,
+   "10": 8651,
+   "15": 10120
+  }
+ },
+ "IDN-27904245": {
+  "name": "Lombok Barat",
+  "kind": "Regency (kabupaten)",
+  "province": "West Nusa Tenggara",
+  "pov": 14.28,
+  "pop": 704586,
+  "shape": "22746128B38668827904245",
+  "ages": {
+   "05": 72998,
+   "10": 63058,
+   "15": 59254
+  }
+ },
+ "IDN-58851169": {
+  "name": "Lombok Tengah",
+  "kind": "Regency (kabupaten)",
+  "province": "West Nusa Tenggara",
+  "pov": 13.44,
+  "pop": 955411,
+  "shape": "22746128B98880758851169",
+  "ages": {
+   "05": 107885,
+   "10": 93250,
+   "15": 84669
+  }
+ },
+ "IDN-38459902": {
+  "name": "Lombok Timur",
+  "kind": "Regency (kabupaten)",
+  "province": "West Nusa Tenggara",
+  "pov": 15.24,
+  "pop": 1208594,
+  "shape": "22746128B55307338459902",
+  "ages": {
+   "05": 139606,
+   "10": 125601,
+   "15": 117209
+  }
+ },
+ "IDN-63975631": {
+  "name": "Lombok Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "West Nusa Tenggara",
+  "pov": 26.99,
+  "pop": 222212,
+  "shape": "22746128B90862663975631",
+  "ages": {
+   "05": 25142,
+   "10": 22755,
+   "15": 21937
+  }
+ },
+ "IDN-17001691": {
+  "name": "Kota Lubuklinggau",
+  "kind": "City (kota)",
+  "province": "South Sumatra",
+  "pov": 12.71,
+  "pop": 235189,
+  "shape": "22746128B74548717001691",
+  "ages": {
+   "05": 23405,
+   "10": 22561,
+   "15": 21399
+  }
+ },
+ "IDN-27787319": {
+  "name": "Lumajang",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 9.83,
+  "pop": 1044718,
+  "shape": "22746128B76070527787319",
+  "ages": {
+   "05": 78769,
+   "10": 86346,
+   "15": 89009
+  }
+ },
+ "IDN-44719374": {
+  "name": "Luwu Timur",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 6.85,
+  "pop": 305407,
+  "shape": "22746128B1110744719374",
+  "ages": {
+   "05": 26463,
+   "10": 31472,
+   "15": 28666
+  }
+ },
+ "IDN-05086319": {
+  "name": "Luwu Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 13.41,
+  "pop": 315202,
+  "shape": "22746128B26232805086319",
+  "ages": {
+   "05": 26112,
+   "10": 33737,
+   "15": 34479
+  }
+ },
+ "IDN-52332625": {
+  "name": "Luwu",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 12.65,
+  "pop": 364680,
+  "shape": "22746128B94521952332625",
+  "ages": {
+   "05": 31286,
+   "10": 39662,
+   "15": 38358
+  }
+ },
+ "IDN-35124164": {
+  "name": "Madiun",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 11.46,
+  "pop": 683784,
+  "shape": "22746128B56340035124164",
+  "ages": {
+   "05": 48994,
+   "10": 52316,
+   "15": 49950
+  }
+ },
+ "IDN-19315055": {
+  "name": "Kota Madiun",
+  "kind": "City (kota)",
+  "province": "East Java",
+  "pov": 4.98,
+  "pop": 177399,
+  "shape": "22746128B30166819315055",
+  "ages": {
+   "05": 13057,
+   "10": 14978,
+   "15": 15773
+  }
+ },
+ "IDN-69898666": {
+  "name": "Magelang",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 11.27,
+  "pop": 1301277,
+  "shape": "22746128B50341569898666",
+  "ages": {
+   "05": 96477,
+   "10": 108882,
+   "15": 104908
+  }
+ },
+ "IDN-72433758": {
+  "name": "Kota Magelang",
+  "kind": "City (kota)",
+  "province": "Central Java",
+  "pov": 7.58,
+  "pop": 122375,
+  "shape": "22746128B66141272433758",
+  "ages": {
+   "05": 7552,
+   "10": 8525,
+   "15": 8214
+  }
+ },
+ "IDN-49433579": {
+  "name": "Magetan",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 10.35,
+  "pop": 629020,
+  "shape": "22746128B43524249433579",
+  "ages": {
+   "05": 45430,
+   "10": 48010,
+   "15": 46163
+  }
+ },
+ "IDN-32055345": {
+  "name": "Mahakam Hulu",
+  "kind": "Regency (kabupaten)",
+  "province": "East Kalimantan",
+  "pov": 11.44,
+  "pop": 26485,
+  "shape": "22746128B30313932055345",
+  "ages": {
+   "05": 2730,
+   "10": 3123,
+   "15": 3216
+  }
+ },
+ "IDN-72826371": {
+  "name": "Majalengka",
+  "kind": "Regency (kabupaten)",
+  "province": "West Java",
+  "pov": 11.43,
+  "pop": 1210709,
+  "shape": "22746128B87647472826371",
+  "ages": {
+   "05": 98341,
+   "10": 110520,
+   "15": 110477
+  }
+ },
+ "IDN-39776422": {
+  "name": "Majene",
+  "kind": "Regency (kabupaten)",
+  "province": "West Sulawesi",
+  "pov": 13.73,
+  "pop": 176395,
+  "shape": "22746128B56869239776422",
+  "ages": {
+   "05": 18106,
+   "10": 18562,
+   "15": 17305
+  }
+ },
+ "IDN-17646589": {
+  "name": "Kota Makassar",
+  "kind": "City (kota)",
+  "province": "South Sulawesi",
+  "pov": 4.54,
+  "pop": 1545373,
+  "shape": "22746128B73854317646589",
+  "ages": {
+   "05": 118183,
+   "10": 143322,
+   "15": 136269
+  }
+ },
+ "IDN-62064287": {
+  "name": "Malaka",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 16.04,
+  "pop": 194776,
+  "shape": "22746128B56140662064287",
+  "ages": {
+   "05": 17906,
+   "10": 19699,
+   "15": 18572
+  }
+ },
+ "IDN-65958554": {
+  "name": "Malang",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 10.15,
+  "pop": 2619975,
+  "shape": "22746128B8866265958554",
+  "ages": {
+   "05": 201942,
+   "10": 210586,
+   "15": 200836
+  }
+ },
+ "IDN-18643478": {
+  "name": "Kota Malang",
+  "kind": "City (kota)",
+  "province": "East Java",
+  "pov": 4.44,
+  "pop": 874890,
+  "shape": "22746128B9724218643478",
+  "ages": {
+   "05": 66614,
+   "10": 69650,
+   "15": 66333
+  }
+ },
+ "IDN-48429230": {
+  "name": "Malinau",
+  "kind": "Regency (kabupaten)",
+  "province": "North Kalimantan",
+  "pov": 6.63,
+  "pop": 93803,
+  "shape": "22746128B54632748429230",
+  "ages": {
+   "05": 7144,
+   "10": 8595,
+   "15": 8611
+  }
+ },
+ "IDN-53802061": {
+  "name": "Maluku Barat Daya",
+  "kind": "Regency (kabupaten)",
+  "province": "Maluku",
+  "pov": 29.15,
+  "pop": 73398,
+  "shape": "22746128B88480653802061",
+  "ages": {
+   "05": 8124,
+   "10": 9113,
+   "15": 7324
+  }
+ },
+ "IDN-91507887": {
+  "name": "Maluku Tengah",
+  "kind": "Regency (kabupaten)",
+  "province": "Maluku",
+  "pov": 19.83,
+  "pop": 374423,
+  "shape": "22746128B41463091507887",
+  "ages": {
+   "05": 33479,
+   "10": 43681,
+   "15": 45671
+  }
+ },
+ "IDN-50196660": {
+  "name": "Maluku Tenggara Barat",
+  "kind": "Regency (kabupaten)",
+  "province": "Maluku",
+  "pov": 27.11,
+  "pop": 113490,
+  "shape": "22746128B78864950196660",
+  "ages": {
+   "05": 11178,
+   "10": 14852,
+   "15": 13591
+  }
+ },
+ "IDN-13511337": {
+  "name": "Maluku Tenggara",
+  "kind": "Regency (kabupaten)",
+  "province": "Maluku",
+  "pov": 22.57,
+  "pop": 100176,
+  "shape": "22746128B6545713511337",
+  "ages": {
+   "05": 10250,
+   "10": 13288,
+   "15": 12995
+  }
+ },
+ "IDN-89019405": {
+  "name": "Mamasa",
+  "kind": "Regency (kabupaten)",
+  "province": "West Sulawesi",
+  "pov": 13.38,
+  "pop": 163882,
+  "shape": "22746128B65559589019405",
+  "ages": {
+   "05": 14660,
+   "10": 17242,
+   "15": 17700
+  }
+ },
+ "IDN-60221771": {
+  "name": "Mamberamo Raya",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 28.38,
+  "pop": 24773,
+  "shape": "22746128B39960960221771",
+  "ages": {
+   "05": 4809,
+   "10": 3940,
+   "15": 3650
+  }
+ },
+ "IDN-64731379": {
+  "name": "Mamberamo Tengah",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 36.41,
+  "pop": 48811,
+  "shape": "22746128B2349164731379",
+  "ages": {
+   "05": 3036,
+   "10": 3336,
+   "15": 4660
+  }
+ },
+ "IDN-67123703": {
+  "name": "Mamuju Tengah",
+  "kind": "Regency (kabupaten)",
+  "province": "West Sulawesi",
+  "pov": 6.79,
+  "pop": 137107,
+  "shape": "22746128B49136567123703",
+  "ages": {
+   "05": 13711,
+   "10": 14674,
+   "15": 14234
+  }
+ },
+ "IDN-85200629": {
+  "name": "Mamuju Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "West Sulawesi",
+  "pov": 4.48,
+  "pop": 178823,
+  "shape": "22746128B5634485200629",
+  "ages": {
+   "05": 18873,
+   "10": 21464,
+   "15": 19523
+  }
+ },
+ "IDN-73429736": {
+  "name": "Mamuju",
+  "kind": "Regency (kabupaten)",
+  "province": "West Sulawesi",
+  "pov": 6.92,
+  "pop": 300319,
+  "shape": "22746128B65468173429736",
+  "ages": {
+   "05": 28337,
+   "10": 30326,
+   "15": 29421
+  }
+ },
+ "IDN-04362612": {
+  "name": "Kota Manado",
+  "kind": "City (kota)",
+  "province": "North Sulawesi",
+  "pov": 5.86,
+  "pop": 435334,
+  "shape": "22746128B83673204362612",
+  "ages": {
+   "05": 36315,
+   "10": 36055,
+   "15": 35930
+  }
+ },
+ "IDN-59197040": {
+  "name": "Mandailing Natal",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 9.18,
+  "pop": 451028,
+  "shape": "22746128B80893459197040",
+  "ages": {
+   "05": 51662,
+   "10": 52996,
+   "15": 46730
+  }
+ },
+ "IDN-56459641": {
+  "name": "Manggarai Barat",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 17.71,
+  "pop": 280412,
+  "shape": "22746128B27819456459641",
+  "ages": {
+   "05": 28049,
+   "10": 28881,
+   "15": 25803
+  }
+ },
+ "IDN-88446056": {
+  "name": "Manggarai Timur",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 26.52,
+  "pop": 289836,
+  "shape": "22746128B57997288446056",
+  "ages": {
+   "05": 29909,
+   "10": 30609,
+   "15": 27436
+  }
+ },
+ "IDN-24069199": {
+  "name": "Manggarai",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 20.34,
+  "pop": 342908,
+  "shape": "22746128B41361424069199",
+  "ages": {
+   "05": 34864,
+   "10": 33971,
+   "15": 32679
+  }
+ },
+ "IDN-16479405": {
+  "name": "Manokwari Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "West Papua",
+  "pov": 28.88,
+  "pop": 24679,
+  "shape": "22746128B90822416479405",
+  "ages": {
+   "05": 3139,
+   "10": 3679,
+   "15": 3830
+  }
+ },
+ "IDN-14112332": {
+  "name": "Manokwari",
+  "kind": "Regency (kabupaten)",
+  "province": "West Papua",
+  "pov": 20.14,
+  "pop": 179384,
+  "shape": "22746128B58641314112332",
+  "ages": {
+   "05": 16740,
+   "10": 18797,
+   "15": 18509
+  }
+ },
+ "IDN-25003276": {
+  "name": "Mappi",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 25.04,
+  "pop": 108914,
+  "shape": "22746128B63262525003276",
+  "ages": {
+   "05": 18576,
+   "10": 13146,
+   "15": 9155
+  }
+ },
+ "IDN-05172020": {
+  "name": "Maros",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 9.74,
+  "pop": 356195,
+  "shape": "22746128B73491405172020",
+  "ages": {
+   "05": 34103,
+   "10": 38391,
+   "15": 34948
+  }
+ },
+ "IDN-69298981": {
+  "name": "Kota Mataram",
+  "kind": "City (kota)",
+  "province": "West Nusa Tenggara",
+  "pov": 8.47,
+  "pop": 495681,
+  "shape": "22746128B34810169298981",
+  "ages": {
+   "05": 43598,
+   "10": 39969,
+   "15": 37201
+  }
+ },
+ "IDN-92584435": {
+  "name": "Maybrat",
+  "kind": "Regency (kabupaten)",
+  "province": "West Papua",
+  "pov": 30.78,
+  "pop": 41798,
+  "shape": "22746128B44891092584435",
+  "ages": {
+   "05": 2738,
+   "10": 4157,
+   "15": 4550
+  }
+ },
+ "IDN-39963843": {
+  "name": "Kota Medan",
+  "kind": "City (kota)",
+  "province": "North Sumatra",
+  "pov": 8.01,
+  "pop": 2295003,
+  "shape": "22746128B40654739963843",
+  "ages": {
+   "05": 204923,
+   "10": 208257,
+   "15": 202251
+  }
+ },
+ "IDN-90541732": {
+  "name": "Melawi",
+  "kind": "Regency (kabupaten)",
+  "province": "West Kalimantan",
+  "pov": 12.04,
+  "pop": 211194,
+  "shape": "22746128B3341090541732",
+  "ages": {
+   "05": 18677,
+   "10": 21947,
+   "15": 21660
+  }
+ },
+ "IDN-15718321": {
+  "name": "Merangin",
+  "kind": "Regency (kabupaten)",
+  "province": "Jambi",
+  "pov": 8.63,
+  "pop": 394174,
+  "shape": "22746128B71403115718321",
+  "ages": {
+   "05": 33871,
+   "10": 35540,
+   "15": 33400
+  }
+ },
+ "IDN-96772256": {
+  "name": "Merauke",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 10.03,
+  "pop": 228681,
+  "shape": "22746128B65756496772256",
+  "ages": {
+   "05": 27875,
+   "10": 21137,
+   "15": 16239
+  }
+ },
+ "IDN-20897269": {
+  "name": "Mesuji",
+  "kind": "Regency (kabupaten)",
+  "province": "Lampung",
+  "pov": 7.33,
+  "pop": 200999,
+  "shape": "22746128B5734020897269",
+  "ages": {
+   "05": 21698,
+   "10": 21538,
+   "15": 19248
+  }
+ },
+ "IDN-77738458": {
+  "name": "Kota Metro",
+  "kind": "City (kota)",
+  "province": "Lampung",
+  "pov": 8.47,
+  "pop": 169507,
+  "shape": "22746128B64737377738458",
+  "ages": {
+   "05": 14957,
+   "10": 14778,
+   "15": 14835
+  }
+ },
+ "IDN-29309213": {
+  "name": "Mimika",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 14.26,
+  "pop": 223605,
+  "shape": "22746128B99426029309213",
+  "ages": {
+   "05": 39676,
+   "10": 27611,
+   "15": 21865
+  }
+ },
+ "IDN-55192071": {
+  "name": "Minahasa Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sulawesi",
+  "pov": 9.14,
+  "pop": 212086,
+  "shape": "22746128B98133955192071",
+  "ages": {
+   "05": 18436,
+   "10": 19476,
+   "15": 19643
+  }
+ },
+ "IDN-70760260": {
+  "name": "Minahasa Tenggara",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sulawesi",
+  "pov": 12.3,
+  "pop": 107179,
+  "shape": "22746128B38105670760260",
+  "ages": {
+   "05": 10170,
+   "10": 10827,
+   "15": 10160
+  }
+ },
+ "IDN-72699691": {
+  "name": "Minahasa Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sulawesi",
+  "pov": 7,
+  "pop": 204789,
+  "shape": "22746128B90516172699691",
+  "ages": {
+   "05": 18264,
+   "10": 19184,
+   "15": 18430
+  }
+ },
+ "IDN-15577583": {
+  "name": "Minahasa",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sulawesi",
+  "pov": 7.3,
+  "pop": 343966,
+  "shape": "22746128B63895215577583",
+  "ages": {
+   "05": 24816,
+   "10": 25322,
+   "15": 26525
+  }
+ },
+ "IDN-10620233": {
+  "name": "Mojokerto",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 10.57,
+  "pop": 1126392,
+  "shape": "22746128B795310620233",
+  "ages": {
+   "05": 88021,
+   "10": 91827,
+   "15": 87065
+  }
+ },
+ "IDN-88697299": {
+  "name": "Kota Mojokerto",
+  "kind": "City (kota)",
+  "province": "East Java",
+  "pov": 6.24,
+  "pop": 129891,
+  "shape": "22746128B53956788697299",
+  "ages": {
+   "05": 10594,
+   "10": 11499,
+   "15": 10724
+  }
+ },
+ "IDN-94812390": {
+  "name": "Morowali Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Sulawesi",
+  "pov": 14.1,
+  "pop": 131018,
+  "shape": "22746128B96188894812390",
+  "ages": {
+   "05": 11511,
+   "10": 10542,
+   "15": 9797
+  }
+ },
+ "IDN-03559283": {
+  "name": "Morowali",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Sulawesi",
+  "pov": 13.43,
+  "pop": 123377,
+  "shape": "22746128B26432903559283",
+  "ages": {
+   "05": 15422,
+   "10": 14120,
+   "15": 13121
+  }
+ },
+ "IDN-81498560": {
+  "name": "Muara Enim",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sumatra",
+  "pov": 12.32,
+  "pop": 645600,
+  "shape": "22746128B32446581498560",
+  "ages": {
+   "05": 59246,
+   "10": 57264,
+   "15": 52896
+  }
+ },
+ "IDN-37249674": {
+  "name": "Muaro Jambi",
+  "kind": "Regency (kabupaten)",
+  "province": "Jambi",
+  "pov": 3.83,
+  "pop": 454524,
+  "shape": "22746128B29274337249674",
+  "ages": {
+   "05": 35181,
+   "10": 35776,
+   "15": 32935
+  }
+ },
+ "IDN-53538573": {
+  "name": "Mukomuko",
+  "kind": "Regency (kabupaten)",
+  "province": "Bengkulu",
+  "pov": 11.72,
+  "pop": 198123,
+  "shape": "22746128B39825953538573",
+  "ages": {
+   "05": 19510,
+   "10": 19794,
+   "15": 17604
+  }
+ },
+ "IDN-71266348": {
+  "name": "Muna Barat",
+  "kind": "Regency (kabupaten)",
+  "province": "Southeast Sulawesi",
+  "pov": 13.3,
+  "pop": 88968,
+  "shape": "22746128B23924471266348",
+  "ages": {
+   "05": 8760,
+   "10": 9767,
+   "15": 9019
+  },
+  "pop_wp": true
+ },
+ "IDN-19871554": {
+  "name": "Muna",
+  "kind": "Regency (kabupaten)",
+  "province": "Southeast Sulawesi",
+  "pov": 12.83,
+  "pop": 310074,
+  "shape": "22746128B70372019871554",
+  "ages": {
+   "05": 22531,
+   "10": 25113,
+   "15": 23194
+  }
+ },
+ "IDN-10421393": {
+  "name": "Murung Raya",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Kalimantan",
+  "pov": 5.85,
+  "pop": 123363,
+  "shape": "22746128B54866510421393",
+  "ages": {
+   "05": 10843,
+   "10": 12672,
+   "15": 12413
+  }
+ },
+ "IDN-36337013": {
+  "name": "Musi Banyuasin",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sumatra",
+  "pov": 16.13,
+  "pop": 655401,
+  "shape": "22746128B84212736337013",
+  "ages": {
+   "05": 61856,
+   "10": 58403,
+   "15": 53181
+  }
+ },
+ "IDN-51210079": {
+  "name": "Musi Rawas Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sumatra",
+  "pov": 19.47,
+  "pop": 194405,
+  "shape": "22746128B26074251210079",
+  "ages": {
+   "05": 18415,
+   "10": 17561,
+   "15": 16673
+  }
+ },
+ "IDN-82521831": {
+  "name": "Musi Rawas",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sumatra",
+  "pov": 13.5,
+  "pop": 408282,
+  "shape": "22746128B56500782521831",
+  "ages": {
+   "05": 39120,
+   "10": 37308,
+   "15": 35410
+  }
+ },
+ "IDN-49309875": {
+  "name": "Nabire",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 24.15,
+  "pop": 152821,
+  "shape": "22746128B29146649309875",
+  "ages": {
+   "05": 21849,
+   "10": 16744,
+   "15": 12608
+  }
+ },
+ "IDN-86094994": {
+  "name": "Nagan Raya",
+  "kind": "Regency (kabupaten)",
+  "province": "Aceh",
+  "pov": 17.7,
+  "pop": 170098,
+  "shape": "22746128B8237986094994",
+  "ages": {
+   "05": 14817,
+   "10": 15684,
+   "15": 14580
+  }
+ },
+ "IDN-13966687": {
+  "name": "Nagekeo",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 12.61,
+  "pop": 147189,
+  "shape": "22746128B97494513966687",
+  "ages": {
+   "05": 15697,
+   "10": 14980,
+   "15": 14803
+  }
+ },
+ "IDN-44559706": {
+  "name": "Natuna",
+  "kind": "Regency (kabupaten)",
+  "province": "Riau Islands",
+  "pov": 4.43,
+  "pop": 78583,
+  "shape": "22746128B6637644559706",
+  "ages": {
+   "05": 7725,
+   "10": 8090,
+   "15": 8508
+  }
+ },
+ "IDN-63664321": {
+  "name": "Nduga",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 36.72,
+  "pop": 99817,
+  "shape": "22746128B7624163664321",
+  "ages": {
+   "05": 11961,
+   "10": 10818,
+   "15": 9428
+  }
+ },
+ "IDN-63193361": {
+  "name": "Ngada",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 12.51,
+  "pop": 165314,
+  "shape": "22746128B33181363193361",
+  "ages": {
+   "05": 16600,
+   "10": 16130,
+   "15": 16663
+  }
+ },
+ "IDN-06025688": {
+  "name": "Nganjuk",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 11.62,
+  "pop": 1057011,
+  "shape": "22746128B46559606025688",
+  "ages": {
+   "05": 81786,
+   "10": 88140,
+   "15": 82655
+  }
+ },
+ "IDN-29520680": {
+  "name": "Ngawi",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 15.44,
+  "pop": 830134,
+  "shape": "22746128B17210029520680",
+  "ages": {
+   "05": 59226,
+   "10": 64116,
+   "15": 62706
+  }
+ },
+ "IDN-58779926": {
+  "name": "Nias Barat",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 25.69,
+  "pop": 86980,
+  "shape": "22746128B23007358779926",
+  "ages": {
+   "05": 10047,
+   "10": 11298,
+   "15": 10930
+  }
+ },
+ "IDN-65350034": {
+  "name": "Nias Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 16.74,
+  "pop": 322520,
+  "shape": "22746128B70987165350034",
+  "ages": {
+   "05": 34076,
+   "10": 44697,
+   "15": 45554
+  }
+ },
+ "IDN-39773602": {
+  "name": "Nias Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 25.07,
+  "pop": 138800,
+  "shape": "22746128B50601239773602",
+  "ages": {
+   "05": 15433,
+   "10": 18195,
+   "15": 18608
+  }
+ },
+ "IDN-60941686": {
+  "name": "Nias",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 16.6,
+  "pop": 139428,
+  "shape": "22746128B114560941686",
+  "ages": {
+   "05": 17498,
+   "10": 19546,
+   "15": 18076
+  }
+ },
+ "IDN-66174966": {
+  "name": "Nunukan",
+  "kind": "Regency (kabupaten)",
+  "province": "North Kalimantan",
+  "pov": 6.36,
+  "pop": 218513,
+  "shape": "22746128B24707766174966",
+  "ages": {
+   "05": 16615,
+   "10": 20574,
+   "15": 20135
+  }
+ },
+ "IDN-91652131": {
+  "name": "Ogan Ilir",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sumatra",
+  "pov": 13.36,
+  "pop": 435092,
+  "shape": "22746128B50783491652131",
+  "ages": {
+   "05": 41678,
+   "10": 39890,
+   "15": 39228
+  }
+ },
+ "IDN-57987252": {
+  "name": "Ogan Komering Ilir",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sumatra",
+  "pov": 14.73,
+  "pop": 839625,
+  "shape": "22746128B6554957987252",
+  "ages": {
+   "05": 75649,
+   "10": 76878,
+   "15": 68314
+  }
+ },
+ "IDN-54456350": {
+  "name": "Ogan Komering Ulu Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sumatra",
+  "pov": 10.85,
+  "pop": 364982,
+  "shape": "22746128B38683854456350",
+  "ages": {
+   "05": 34674,
+   "10": 38949,
+   "15": 39361
+  }
+ },
+ "IDN-45941035": {
+  "name": "Ogan Komering Ulu Timur",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sumatra",
+  "pov": 10.43,
+  "pop": 683332,
+  "shape": "22746128B29719145941035",
+  "ages": {
+   "05": 59947,
+   "10": 57370,
+   "15": 52295
+  }
+ },
+ "IDN-65226017": {
+  "name": "Ogan Komering Ulu",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sumatra",
+  "pov": 12.75,
+  "pop": 372123,
+  "shape": "22746128B55651065226017",
+  "ages": {
+   "05": 37254,
+   "10": 35519,
+   "15": 31330
+  }
+ },
+ "IDN-21687256": {
+  "name": "Pacitan",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 14.54,
+  "pop": 555984,
+  "shape": "22746128B46377021687256",
+  "ages": {
+   "05": 35100,
+   "10": 39280,
+   "15": 39229
+  }
+ },
+ "IDN-71216736": {
+  "name": "Padang Lawas Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 9.7,
+  "pop": 277423,
+  "shape": "22746128B6160471216736",
+  "ages": {
+   "05": 30982,
+   "10": 32104,
+   "15": 27221
+  }
+ },
+ "IDN-82481574": {
+  "name": "Padang Lawas",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 8.37,
+  "pop": 286627,
+  "shape": "22746128B18337582481574",
+  "ages": {
+   "05": 30962,
+   "10": 31178,
+   "15": 28387
+  }
+ },
+ "IDN-61629525": {
+  "name": "Kota Padang Panjang",
+  "kind": "City (kota)",
+  "province": "West Sumatra",
+  "pov": 5.24,
+  "pop": 54421,
+  "shape": "22746128B34977061629525",
+  "ages": {
+   "05": 4887,
+   "10": 5464,
+   "15": 5056
+  }
+ },
+ "IDN-79023382": {
+  "name": "Padang Pariaman",
+  "kind": "Regency (kabupaten)",
+  "province": "West Sumatra",
+  "pov": 6.95,
+  "pop": 417781,
+  "shape": "22746128B3683779023382",
+  "ages": {
+   "05": 37837,
+   "10": 43877,
+   "15": 43060
+  }
+ },
+ "IDN-42761445": {
+  "name": "Kota Padang Sidempuan",
+  "kind": "City (kota)",
+  "province": "North Sumatra",
+  "pov": 7.4,
+  "pop": 224483,
+  "shape": "22746128B81378642761445",
+  "ages": {
+   "05": 20909,
+   "10": 21739,
+   "15": 22172
+  }
+ },
+ "IDN-87869213": {
+  "name": "Kota Padang",
+  "kind": "City (kota)",
+  "province": "West Sumatra",
+  "pov": 4.4,
+  "pop": 962196,
+  "shape": "22746128B51925287869213",
+  "ages": {
+   "05": 75864,
+   "10": 81875,
+   "15": 76043
+  }
+ },
+ "IDN-76763731": {
+  "name": "Kota Pagar Alam",
+  "kind": "City (kota)",
+  "province": "South Sumatra",
+  "pov": 9.07,
+  "pop": 140402,
+  "shape": "22746128B19740076763731",
+  "ages": {
+   "05": 13535,
+   "10": 12885,
+   "15": 11644
+  }
+ },
+ "IDN-31115951": {
+  "name": "Pakpak Bharat",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 9.28,
+  "pop": 49688,
+  "shape": "22746128B12751431115951",
+  "ages": {
+   "05": 5626,
+   "10": 5665,
+   "15": 5371
+  }
+ },
+ "IDN-93857208": {
+  "name": "Kota Palangkaraya",
+  "kind": "City (kota)",
+  "province": "Central Kalimantan",
+  "pov": 3.44,
+  "pop": 299691,
+  "shape": "22746128B5087893857208",
+  "ages": {
+   "05": 25156,
+   "10": 27425,
+   "15": 24847
+  }
+ },
+ "IDN-64980488": {
+  "name": "Kota Palembang",
+  "kind": "City (kota)",
+  "province": "South Sumatra",
+  "pov": 10.89,
+  "pop": 1681374,
+  "shape": "22746128B87825164980488",
+  "ages": {
+   "05": 158062,
+   "10": 140095,
+   "15": 133363
+  }
+ },
+ "IDN-08226928": {
+  "name": "Kota Palopo",
+  "kind": "City (kota)",
+  "province": "South Sulawesi",
+  "pov": 7.85,
+  "pop": 188323,
+  "shape": "22746128B54354608226928",
+  "ages": {
+   "05": 15046,
+   "10": 18527,
+   "15": 18015
+  }
+ },
+ "IDN-04425516": {
+  "name": "Kota Palu",
+  "kind": "City (kota)",
+  "province": "Central Sulawesi",
+  "pov": 6.8,
+  "pop": 397029,
+  "shape": "22746128B23229204425516",
+  "ages": {
+   "05": 34776,
+   "10": 33391,
+   "15": 32225
+  }
+ },
+ "IDN-64335633": {
+  "name": "Pamekasan",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 14.6,
+  "pop": 888214,
+  "shape": "22746128B37926964335633",
+  "ages": {
+   "05": 66223,
+   "10": 69368,
+   "15": 68522
+  }
+ },
+ "IDN-96911998": {
+  "name": "Pandeglang",
+  "kind": "Regency (kabupaten)",
+  "province": "Banten",
+  "pov": 9.92,
+  "pop": 1214007,
+  "shape": "22746128B79755996911998",
+  "ages": {
+   "05": 120255,
+   "10": 129454,
+   "15": 125376
+  }
+ },
+ "IDN-18615465": {
+  "name": "Pangandaran",
+  "kind": "Regency (kabupaten)",
+  "province": "West Java",
+  "pov": 8.99,
+  "pop": 401493,
+  "shape": "22746128B59857718615465",
+  "ages": {
+   "05": 29893,
+   "10": 35777,
+   "15": 35605
+  }
+ },
+ "IDN-56023840": {
+  "name": "Pangkajene Kepulauan",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 13.96,
+  "pop": 338219,
+  "shape": "22746128B84288456023840",
+  "ages": {
+   "05": 28977,
+   "10": 35004,
+   "15": 34285
+  }
+ },
+ "IDN-41938888": {
+  "name": "Kota Pangkal Pinang",
+  "kind": "City (kota)",
+  "province": "Bangka-Belitung Islands",
+  "pov": 4.36,
+  "pop": 216893,
+  "shape": "22746128B92282941938888",
+  "ages": {
+   "05": 18445,
+   "10": 20939,
+   "15": 19537
+  }
+ },
+ "IDN-12298600": {
+  "name": "Paniai",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 36.71,
+  "pop": 180502,
+  "shape": "22746128B72382312298600",
+  "ages": {
+   "05": 16347,
+   "10": 15930,
+   "15": 21636
+  }
+ },
+ "IDN-09465042": {
+  "name": "Kota Parepare",
+  "kind": "City (kota)",
+  "province": "South Sulawesi",
+  "pov": 5.44,
+  "pop": 146714,
+  "shape": "22746128B37987509465042",
+  "ages": {
+   "05": 12919,
+   "10": 14351,
+   "15": 13749
+  }
+ },
+ "IDN-76870843": {
+  "name": "Kota Pariaman",
+  "kind": "City (kota)",
+  "province": "West Sumatra",
+  "pov": 4.1,
+  "pop": 89402,
+  "shape": "22746128B94413576870843",
+  "ages": {
+   "05": 7913,
+   "10": 8517,
+   "15": 8553
+  }
+ },
+ "IDN-76167403": {
+  "name": "Parigi Moutong",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Sulawesi",
+  "pov": 15.85,
+  "pop": 499086,
+  "shape": "22746128B5854376167403",
+  "ages": {
+   "05": 39778,
+   "10": 44996,
+   "15": 44305
+  }
+ },
+ "IDN-06981522": {
+  "name": "Pasaman Barat",
+  "kind": "Regency (kabupaten)",
+  "province": "West Sumatra",
+  "pov": 7.04,
+  "pop": 451705,
+  "shape": "22746128B95220206981522",
+  "ages": {
+   "05": 40961,
+   "10": 46210,
+   "15": 42735
+  }
+ },
+ "IDN-46958257": {
+  "name": "Pasaman",
+  "kind": "Regency (kabupaten)",
+  "province": "West Sumatra",
+  "pov": 7.16,
+  "pop": 283864,
+  "shape": "22746128B82897046958257",
+  "ages": {
+   "05": 28605,
+   "10": 32272,
+   "15": 29847
+  }
+ },
+ "IDN-00623405": {
+  "name": "Pasir",
+  "kind": "Regency (kabupaten)",
+  "province": "East Kalimantan",
+  "pov": 9.23,
+  "pop": 291573,
+  "shape": "22746128B17746000623405",
+  "ages": {
+   "05": 23640,
+   "10": 25607,
+   "15": 24971
+  }
+ },
+ "IDN-06315979": {
+  "name": "Pasuruan",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 9.26,
+  "pop": 1637682,
+  "shape": "22746128B81373906315979",
+  "ages": {
+   "05": 126994,
+   "10": 131452,
+   "15": 127547
+  }
+ },
+ "IDN-29493629": {
+  "name": "Kota Pasuruan",
+  "kind": "City (kota)",
+  "province": "East Java",
+  "pov": 6.66,
+  "pop": 201585,
+  "shape": "22746128B86769429493629",
+  "ages": {
+   "05": 17440,
+   "10": 17938,
+   "15": 17276
+  }
+ },
+ "IDN-09782125": {
+  "name": "Pati",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 10.08,
+  "pop": 1265682,
+  "shape": "22746128B37789509782125",
+  "ages": {
+   "05": 96009,
+   "10": 101936,
+   "15": 101841
+  }
+ },
+ "IDN-93285642": {
+  "name": "Kota Payakumbuh",
+  "kind": "City (kota)",
+  "province": "West Sumatra",
+  "pov": 5.65,
+  "pop": 137487,
+  "shape": "22746128B75816793285642",
+  "ages": {
+   "05": 12053,
+   "10": 13745,
+   "15": 12489
+  }
+ },
+ "IDN-62468368": {
+  "name": "Pegunungan Arfak",
+  "kind": "Regency (kabupaten)",
+  "province": "West Papua",
+  "pov": 33.81,
+  "pop": 31793,
+  "shape": "22746128B30560862468368",
+  "ages": {
+   "05": 2830,
+   "10": 3177,
+   "15": 3128
+  }
+ },
+ "IDN-92856685": {
+  "name": "Pegunungan Bintang",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 30.15,
+  "pop": 76586,
+  "shape": "22746128B40289792856685",
+  "ages": {
+   "05": 9744,
+   "10": 8200,
+   "15": 7461
+  }
+ },
+ "IDN-52393366": {
+  "name": "Pekalongan",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 10.19,
+  "pop": 903111,
+  "shape": "22746128B43405552393366",
+  "ages": {
+   "05": 78926,
+   "10": 82467,
+   "15": 80594
+  }
+ },
+ "IDN-98956040": {
+  "name": "Kota Pekalongan",
+  "kind": "City (kota)",
+  "province": "Central Java",
+  "pov": 7.17,
+  "pop": 309618,
+  "shape": "22746128B98453198956040",
+  "ages": {
+   "05": 26970,
+   "10": 28427,
+   "15": 28152
+  }
+ },
+ "IDN-50233660": {
+  "name": "Kota Pekanbaru",
+  "kind": "City (kota)",
+  "province": "Riau",
+  "pov": 2.62,
+  "pop": 1169070,
+  "shape": "22746128B3549150233660",
+  "ages": {
+   "05": 92545,
+   "10": 88750,
+   "15": 82962
+  }
+ },
+ "IDN-96539945": {
+  "name": "Pelalawan",
+  "kind": "Regency (kabupaten)",
+  "province": "Riau",
+  "pov": 9.16,
+  "pop": 507074,
+  "shape": "22746128B44055596539945",
+  "ages": {
+   "05": 43859,
+   "10": 42561,
+   "15": 36485
+  }
+ },
+ "IDN-06499336": {
+  "name": "Pemalang",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 16.02,
+  "pop": 1305708,
+  "shape": "22746128B43122306499336",
+  "ages": {
+   "05": 121780,
+   "10": 128212,
+   "15": 124790
+  }
+ },
+ "IDN-95316405": {
+  "name": "Kota Pematang Siantar",
+  "kind": "City (kota)",
+  "province": "North Sumatra",
+  "pov": 8.27,
+  "pop": 257110,
+  "shape": "22746128B46755595316405",
+  "ages": {
+   "05": 23148,
+   "10": 24598,
+   "15": 25430
+  }
+ },
+ "IDN-12180119": {
+  "name": "Penajam Paser Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "East Kalimantan",
+  "pov": 7.36,
+  "pop": 162518,
+  "shape": "22746128B96540112180119",
+  "ages": {
+   "05": 15530,
+   "10": 17684,
+   "15": 16638
+  }
+ },
+ "IDN-42990028": {
+  "name": "Penukal Abab Lematang Ilir",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sumatra",
+  "pov": 12.62,
+  "pop": 192199,
+  "shape": "22746128B2393542990028",
+  "ages": {
+   "05": 18939,
+   "10": 18300,
+   "15": 16891
+  }
+ },
+ "IDN-37455512": {
+  "name": "Pesawaran",
+  "kind": "Regency (kabupaten)",
+  "province": "Lampung",
+  "pov": 14.76,
+  "pop": 448410,
+  "shape": "22746128B94381737455512",
+  "ages": {
+   "05": 47500,
+   "10": 47586,
+   "15": 46161
+  }
+ },
+ "IDN-22352837": {
+  "name": "Pesisir Barat",
+  "kind": "Regency (kabupaten)",
+  "province": "Lampung",
+  "pov": 14.29,
+  "pop": 155883,
+  "shape": "22746128B87029922352837",
+  "ages": {
+   "05": 14981,
+   "10": 15419,
+   "15": 14001
+  }
+ },
+ "IDN-92452682": {
+  "name": "Pesisir Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "West Sumatra",
+  "pov": 7.61,
+  "pop": 467062,
+  "shape": "22746128B35993392452682",
+  "ages": {
+   "05": 43544,
+   "10": 49992,
+   "15": 48027
+  }
+ },
+ "IDN-07542596": {
+  "name": "Pidie Jaya",
+  "kind": "Regency (kabupaten)",
+  "province": "Aceh",
+  "pov": 19.19,
+  "pop": 164311,
+  "shape": "22746128B77747107542596",
+  "ages": {
+   "05": 14121,
+   "10": 15084,
+   "15": 15183
+  }
+ },
+ "IDN-30005037": {
+  "name": "Pidie",
+  "kind": "Regency (kabupaten)",
+  "province": "Aceh",
+  "pov": 19.23,
+  "pop": 450765,
+  "shape": "22746128B35853530005037",
+  "ages": {
+   "05": 37532,
+   "10": 42143,
+   "15": 40762
+  }
+ },
+ "IDN-82222616": {
+  "name": "Pinrang",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 8.86,
+  "pop": 379402,
+  "shape": "22746128B71783882222616",
+  "ages": {
+   "05": 33932,
+   "10": 40194,
+   "15": 37062
+  }
+ },
+ "IDN-86609479": {
+  "name": "Pohuwato",
+  "kind": "Regency (kabupaten)",
+  "province": "Gorontalo",
+  "pov": 17.62,
+  "pop": 164965,
+  "shape": "22746128B36723886609479",
+  "ages": {
+   "05": 12915,
+   "10": 14784,
+   "15": 14000
+  }
+ },
+ "IDN-80968306": {
+  "name": "Polewali Mandar",
+  "kind": "Regency (kabupaten)",
+  "province": "West Sulawesi",
+  "pov": 15.26,
+  "pop": 448486,
+  "shape": "22746128B50766380968306",
+  "ages": {
+   "05": 46606,
+   "10": 50762,
+   "15": 45056
+  }
+ },
+ "IDN-75112308": {
+  "name": "Ponorogo",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 9.95,
+  "pop": 871825,
+  "shape": "22746128B39928875112308",
+  "ages": {
+   "05": 60759,
+   "10": 64389,
+   "15": 63311
+  }
+ },
+ "IDN-26778114": {
+  "name": "Pontianak",
+  "kind": "Regency (kabupaten)",
+  "province": "West Kalimantan",
+  "pov": 4.95,
+  "pop": 267119,
+  "shape": "22746128B13218426778114",
+  "ages": {
+   "05": 25607,
+   "10": 27695,
+   "15": 28550
+  }
+ },
+ "IDN-60613456": {
+  "name": "Kota Pontianak",
+  "kind": "City (kota)",
+  "province": "West Kalimantan",
+  "pov": 4.7,
+  "pop": 655865,
+  "shape": "22746128B68403360613456",
+  "ages": {
+   "05": 57893,
+   "10": 60706,
+   "15": 57580
+  }
+ },
+ "IDN-25941207": {
+  "name": "Poso",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Sulawesi",
+  "pov": 15.45,
+  "pop": 261615,
+  "shape": "22746128B71918225941207",
+  "ages": {
+   "05": 21389,
+   "10": 22553,
+   "15": 22151
+  }
+ },
+ "IDN-09263199": {
+  "name": "Kota Prabumulih",
+  "kind": "City (kota)",
+  "province": "South Sumatra",
+  "pov": 11.59,
+  "pop": 188929,
+  "shape": "22746128B13695709263199",
+  "ages": {
+   "05": 20301,
+   "10": 19040,
+   "15": 17078
+  }
+ },
+ "IDN-63444835": {
+  "name": "Pringsewu",
+  "kind": "Regency (kabupaten)",
+  "province": "Lampung",
+  "pov": 9.97,
+  "pop": 403115,
+  "shape": "22746128B80903663444835",
+  "ages": {
+   "05": 35396,
+   "10": 34373,
+   "15": 34629
+  }
+ },
+ "IDN-58570108": {
+  "name": "Probolinggo",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 18.61,
+  "pop": 1174890,
+  "shape": "22746128B57336658570108",
+  "ages": {
+   "05": 89262,
+   "10": 94110,
+   "15": 91189
+  }
+ },
+ "IDN-90195125": {
+  "name": "Kota Probolinggo",
+  "kind": "City (kota)",
+  "province": "East Java",
+  "pov": 7.43,
+  "pop": 239024,
+  "shape": "22746128B48742890195125",
+  "ages": {
+   "05": 19204,
+   "10": 20008,
+   "15": 19923
+  }
+ },
+ "IDN-95068268": {
+  "name": "Pulang Pisau",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Kalimantan",
+  "pov": 4.09,
+  "pop": 127481,
+  "shape": "22746128B75083695068268",
+  "ages": {
+   "05": 11923,
+   "10": 12716,
+   "15": 11806
+  }
+ },
+ "IDN-55762127": {
+  "name": "Pulau Morotai",
+  "kind": "Regency (kabupaten)",
+  "province": "North Maluku",
+  "pov": 6.46,
+  "pop": 68974,
+  "shape": "22746128B67952855762127",
+  "ages": {
+   "05": 7853,
+   "10": 7912,
+   "15": 7133
+  }
+ },
+ "IDN-54669228": {
+  "name": "Pulau Taliabu",
+  "kind": "Regency (kabupaten)",
+  "province": "North Maluku",
+  "pov": 7.3,
+  "pop": 53411,
+  "shape": "22746128B98781354669228",
+  "ages": {
+   "05": 5867,
+   "10": 6385,
+   "15": 6091
+  }
+ },
+ "IDN-50022934": {
+  "name": "Puncak Jaya",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 34.74,
+  "pop": 133712,
+  "shape": "22746128B50358350022934",
+  "ages": {
+   "05": 14798,
+   "10": 19260,
+   "15": 21535
+  }
+ },
+ "IDN-72676249": {
+  "name": "Puncak",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 36.96,
+  "pop": 115323,
+  "shape": "22746128B1222572676249",
+  "ages": {
+   "05": 7571,
+   "10": 9848,
+   "15": 11013
+  }
+ },
+ "IDN-36396051": {
+  "name": "Purbalingga",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 15.9,
+  "pop": 942575,
+  "shape": "22746128B86887436396051",
+  "ages": {
+   "05": 78377,
+   "10": 86631,
+   "15": 82724
+  }
+ },
+ "IDN-97539954": {
+  "name": "Purwakarta",
+  "kind": "Regency (kabupaten)",
+  "province": "West Java",
+  "pov": 8.27,
+  "pop": 971889,
+  "shape": "22746128B43709097539954",
+  "ages": {
+   "05": 86814,
+   "10": 92970,
+   "15": 90424
+  }
+ },
+ "IDN-57463267": {
+  "name": "Purworejo",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 11.78,
+  "pop": 719911,
+  "shape": "22746128B47019757463267",
+  "ages": {
+   "05": 53624,
+   "10": 60840,
+   "15": 60598
+  }
+ },
+ "IDN-66890304": {
+  "name": "Raja Ampat",
+  "kind": "Regency (kabupaten)",
+  "province": "West Papua",
+  "pov": 17.01,
+  "pop": 49083,
+  "shape": "22746128B90221566890304",
+  "ages": {
+   "05": 6038,
+   "10": 7566,
+   "15": 6547
+  }
+ },
+ "IDN-51075254": {
+  "name": "Rejang Lebong",
+  "kind": "Regency (kabupaten)",
+  "province": "Bengkulu",
+  "pov": 15.85,
+  "pop": 261802,
+  "shape": "22746128B47928451075254",
+  "ages": {
+   "05": 23116,
+   "10": 25888,
+   "15": 25754
+  }
+ },
+ "IDN-29239468": {
+  "name": "Rembang",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 15.6,
+  "pop": 642720,
+  "shape": "22746128B94981829239468",
+  "ages": {
+   "05": 45944,
+   "10": 49972,
+   "15": 51421
+  }
+ },
+ "IDN-44188311": {
+  "name": "Rokan Hilir",
+  "kind": "Regency (kabupaten)",
+  "province": "Riau",
+  "pov": 6.72,
+  "pop": 731783,
+  "shape": "22746128B71759944188311",
+  "ages": {
+   "05": 68103,
+   "10": 71487,
+   "15": 67632
+  }
+ },
+ "IDN-25321264": {
+  "name": "Rokan Hulu",
+  "kind": "Regency (kabupaten)",
+  "province": "Riau",
+  "pov": 10.31,
+  "pop": 718321,
+  "shape": "22746128B35208725321264",
+  "ages": {
+   "05": 57984,
+   "10": 61626,
+   "15": 59120
+  }
+ },
+ "IDN-97400672": {
+  "name": "Rote Ndao",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 27.54,
+  "pop": 178805,
+  "shape": "22746128B61006797400672",
+  "ages": {
+   "05": 16670,
+   "10": 14795,
+   "15": 13063
+  }
+ },
+ "IDN-48082643": {
+  "name": "Kota Sabang",
+  "kind": "City (kota)",
+  "province": "Aceh",
+  "pov": 14.94,
+  "pop": 35398,
+  "shape": "22746128B78398648082643",
+  "ages": {
+   "05": 4068,
+   "10": 4250,
+   "15": 3824
+  }
+ },
+ "IDN-07647447": {
+  "name": "Sabu Raijua",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 30.18,
+  "pop": 100684,
+  "shape": "22746128B67076907647447",
+  "ages": {
+   "05": 10700,
+   "10": 9543,
+   "15": 7994
+  }
+ },
+ "IDN-03569608": {
+  "name": "Kota Salatiga",
+  "kind": "City (kota)",
+  "province": "Central Java",
+  "pov": 4.94,
+  "pop": 196599,
+  "shape": "22746128B99456803569608",
+  "ages": {
+   "05": 14087,
+   "10": 16008,
+   "15": 15458
+  }
+ },
+ "IDN-49930832": {
+  "name": "Kota Samarinda",
+  "kind": "City (kota)",
+  "province": "East Kalimantan",
+  "pov": 4.76,
+  "pop": 886806,
+  "shape": "22746128B87893249930832",
+  "ages": {
+   "05": 73556,
+   "10": 82324,
+   "15": 78488
+  }
+ },
+ "IDN-72617697": {
+  "name": "Sambas",
+  "kind": "Regency (kabupaten)",
+  "province": "West Kalimantan",
+  "pov": 7.7,
+  "pop": 538405,
+  "shape": "22746128B87993072617697",
+  "ages": {
+   "05": 58255,
+   "10": 61945,
+   "15": 56603
+  }
+ },
+ "IDN-62901100": {
+  "name": "Samosir",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 12.48,
+  "pop": 126710,
+  "shape": "22746128B81816662901100",
+  "ages": {
+   "05": 13264,
+   "10": 13936,
+   "15": 13411
+  }
+ },
+ "IDN-13239591": {
+  "name": "Sampang",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 22.78,
+  "pop": 989001,
+  "shape": "22746128B2542813239591",
+  "ages": {
+   "05": 78466,
+   "10": 77657,
+   "15": 75921
+  }
+ },
+ "IDN-70523542": {
+  "name": "Sanggau",
+  "kind": "Regency (kabupaten)",
+  "province": "West Kalimantan",
+  "pov": 4.46,
+  "pop": 476174,
+  "shape": "22746128B74989070523542",
+  "ages": {
+   "05": 41941,
+   "10": 44584,
+   "15": 44348
+  }
+ },
+ "IDN-93121909": {
+  "name": "Sarmi",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 13.87,
+  "pop": 41279,
+  "shape": "22746128B27261093121909",
+  "ages": {
+   "05": 5911,
+   "10": 4107,
+   "15": 2851
+  }
+ },
+ "IDN-08508060": {
+  "name": "Sarolangun",
+  "kind": "Regency (kabupaten)",
+  "province": "Jambi",
+  "pov": 8.42,
+  "pop": 307585,
+  "shape": "22746128B44731308508060",
+  "ages": {
+   "05": 28753,
+   "10": 30037,
+   "15": 26903
+  }
+ },
+ "IDN-41632229": {
+  "name": "Kota Sawahlunto",
+  "kind": "City (kota)",
+  "province": "West Sumatra",
+  "pov": 2.16,
+  "pop": 63027,
+  "shape": "22746128B93370341632229",
+  "ages": {
+   "05": 5726,
+   "10": 6383,
+   "15": 6232
+  }
+ },
+ "IDN-03458764": {
+  "name": "Sekadau",
+  "kind": "Regency (kabupaten)",
+  "province": "West Kalimantan",
+  "pov": 5.87,
+  "pop": 203515,
+  "shape": "22746128B16160803458764",
+  "ages": {
+   "05": 18969,
+   "10": 19780,
+   "15": 19248
+  }
+ },
+ "IDN-38449066": {
+  "name": "Seluma",
+  "kind": "Regency (kabupaten)",
+  "province": "Bengkulu",
+  "pov": 18.56,
+  "pop": 195583,
+  "shape": "22746128B87861638449066",
+  "ages": {
+   "05": 18263,
+   "10": 19204,
+   "15": 19365
+  }
+ },
+ "IDN-17687538": {
+  "name": "Semarang",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 7.51,
+  "pop": 1066795,
+  "shape": "22746128B46914217687538",
+  "ages": {
+   "05": 81062,
+   "10": 86528,
+   "15": 83963
+  }
+ },
+ "IDN-83209745": {
+  "name": "Kota Semarang",
+  "kind": "City (kota)",
+  "province": "Central Java",
+  "pov": 4.34,
+  "pop": 1842785,
+  "shape": "22746128B5783483209745",
+  "ages": {
+   "05": 126776,
+   "10": 138519,
+   "15": 136450
+  }
+ },
+ "IDN-48181027": {
+  "name": "Seram Bagian Barat",
+  "kind": "Regency (kabupaten)",
+  "province": "Maluku",
+  "pov": 25.11,
+  "pop": 171921,
+  "shape": "22746128B92585048181027",
+  "ages": {
+   "05": 19418,
+   "10": 24732,
+   "15": 24391
+  }
+ },
+ "IDN-98591380": {
+  "name": "Seram Bagian Timur",
+  "kind": "Regency (kabupaten)",
+  "province": "Maluku",
+  "pov": 23.04,
+  "pop": 116213,
+  "shape": "22746128B38603798591380",
+  "ages": {
+   "05": 13122,
+   "10": 16407,
+   "15": 15892
+  }
+ },
+ "IDN-16561013": {
+  "name": "Serang",
+  "kind": "Regency (kabupaten)",
+  "province": "Banten",
+  "pov": 4.94,
+  "pop": 1513996,
+  "shape": "22746128B3242616561013",
+  "ages": {
+   "05": 148329,
+   "10": 148404,
+   "15": 152296
+  }
+ },
+ "IDN-78082923": {
+  "name": "Kota Serang",
+  "kind": "City (kota)",
+  "province": "Banten",
+  "pov": 6.06,
+  "pop": 699102,
+  "shape": "22746128B38845978082923",
+  "ages": {
+   "05": 68706,
+   "10": 68387,
+   "15": 65804
+  }
+ },
+ "IDN-49956552": {
+  "name": "Serdang Bedagai",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 7.97,
+  "pop": 617772,
+  "shape": "22746128B52277249956552",
+  "ages": {
+   "05": 65317,
+   "10": 66917,
+   "15": 57928
+  }
+ },
+ "IDN-50641021": {
+  "name": "Seruyan",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Kalimantan",
+  "pov": 6.85,
+  "pop": 214066,
+  "shape": "22746128B10156150641021",
+  "ages": {
+   "05": 14818,
+   "10": 16128,
+   "15": 14755
+  }
+ },
+ "IDN-45674071": {
+  "name": "Siak",
+  "kind": "Regency (kabupaten)",
+  "province": "Riau",
+  "pov": 5.09,
+  "pop": 502199,
+  "shape": "22746128B48036345674071",
+  "ages": {
+   "05": 47383,
+   "10": 48730,
+   "15": 47455
+  }
+ },
+ "IDN-36461165": {
+  "name": "Kota Sibolga",
+  "kind": "City (kota)",
+  "province": "North Sumatra",
+  "pov": 11.95,
+  "pop": 87791,
+  "shape": "22746128B47009036461165",
+  "ages": {
+   "05": 8161,
+   "10": 8834,
+   "15": 8359
+  }
+ },
+ "IDN-20898123": {
+  "name": "Sidenreng Rappang",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 5.05,
+  "pop": 304826,
+  "shape": "22746128B89870320898123",
+  "ages": {
+   "05": 25321,
+   "10": 29702,
+   "15": 28321
+  }
+ },
+ "IDN-10863239": {
+  "name": "Sidoarjo",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 5.59,
+  "pop": 2282215,
+  "shape": "22746128B7257810863239",
+  "ages": {
+   "05": 166556,
+   "10": 181203,
+   "15": 171010
+  }
+ },
+ "IDN-50924142": {
+  "name": "Sigi",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Sulawesi",
+  "pov": 12.45,
+  "pop": 241567,
+  "shape": "22746128B27078250924142",
+  "ages": {
+   "05": 24318,
+   "10": 25648,
+   "15": 23238
+  }
+ },
+ "IDN-36931072": {
+  "name": "Sijunjung",
+  "kind": "Regency (kabupaten)",
+  "province": "West Sumatra",
+  "pov": 6.78,
+  "pop": 240916,
+  "shape": "22746128B5140836931072",
+  "ages": {
+   "05": 20608,
+   "10": 23698,
+   "15": 22438
+  }
+ },
+ "IDN-65457696": {
+  "name": "Sikka",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 13.12,
+  "pop": 321790,
+  "shape": "22746128B25889265457696",
+  "ages": {
+   "05": 31853,
+   "10": 30103,
+   "15": 27619
+  }
+ },
+ "IDN-20983209": {
+  "name": "Simalungun",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 8.46,
+  "pop": 871678,
+  "shape": "22746128B18371020983209",
+  "ages": {
+   "05": 84023,
+   "10": 92024,
+   "15": 89786
+  }
+ },
+ "IDN-22560180": {
+  "name": "Simeulue",
+  "kind": "Regency (kabupaten)",
+  "province": "Aceh",
+  "pov": 18.49,
+  "pop": 93990,
+  "shape": "22746128B32199422560180",
+  "ages": {
+   "05": 8721,
+   "10": 9719,
+   "15": 10240
+  }
+ },
+ "IDN-07275317": {
+  "name": "Kota Singkawang",
+  "kind": "City (kota)",
+  "province": "West Kalimantan",
+  "pov": 4.53,
+  "pop": 226475,
+  "shape": "22746128B18670307275317",
+  "ages": {
+   "05": 21141,
+   "10": 21626,
+   "15": 19734
+  }
+ },
+ "IDN-56264702": {
+  "name": "Sinjai",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 9,
+  "pop": 245389,
+  "shape": "22746128B62270956264702",
+  "ages": {
+   "05": 19774,
+   "10": 24827,
+   "15": 25447
+  }
+ },
+ "IDN-73608062": {
+  "name": "Sintang",
+  "kind": "Regency (kabupaten)",
+  "province": "West Kalimantan",
+  "pov": 9.27,
+  "pop": 423987,
+  "shape": "22746128B74245273608062",
+  "ages": {
+   "05": 39349,
+   "10": 42266,
+   "15": 38366
+  }
+ },
+ "IDN-75308435": {
+  "name": "Situbondo",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 12.22,
+  "pop": 685776,
+  "shape": "22746128B65817775308435",
+  "ages": {
+   "05": 44767,
+   "10": 50452,
+   "15": 52294
+  }
+ },
+ "IDN-42139539": {
+  "name": "Sleman",
+  "kind": "Regency (kabupaten)",
+  "province": "Special Region of Yogyakarta",
+  "pov": 8.12,
+  "pop": 1232598,
+  "shape": "22746128B68764842139539",
+  "ages": {
+   "05": 82574,
+   "10": 89157,
+   "15": 86624
+  }
+ },
+ "IDN-53351835": {
+  "name": "Solok Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "West Sumatra",
+  "pov": 7.15,
+  "pop": 173784,
+  "shape": "22746128B25846553351835",
+  "ages": {
+   "05": 15835,
+   "10": 17772,
+   "15": 17820
+  }
+ },
+ "IDN-60162276": {
+  "name": "Solok",
+  "kind": "Regency (kabupaten)",
+  "province": "West Sumatra",
+  "pov": 7.81,
+  "pop": 375722,
+  "shape": "22746128B59065860162276",
+  "ages": {
+   "05": 34334,
+   "10": 38256,
+   "15": 37338
+  }
+ },
+ "IDN-24960223": {
+  "name": "Kota Solok",
+  "kind": "City (kota)",
+  "province": "West Sumatra",
+  "pov": 2.77,
+  "pop": 72106,
+  "shape": "22746128B30699524960223",
+  "ages": {
+   "05": 6757,
+   "10": 7104,
+   "15": 6625
+  }
+ },
+ "IDN-43889604": {
+  "name": "Soppeng",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 7.59,
+  "pop": 227208,
+  "shape": "22746128B93867843889604",
+  "ages": {
+   "05": 14890,
+   "10": 18502,
+   "15": 19247
+  }
+ },
+ "IDN-37228675": {
+  "name": "Sorong Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "West Papua",
+  "pov": 18.28,
+  "pop": 47875,
+  "shape": "22746128B99267537228675",
+  "ages": {
+   "05": 4702,
+   "10": 6055,
+   "15": 5909
+  }
+ },
+ "IDN-91877259": {
+  "name": "Sorong",
+  "kind": "Regency (kabupaten)",
+  "province": "West Papua",
+  "pov": 27.48,
+  "pop": 91134,
+  "shape": "22746128B25112391877259",
+  "ages": {
+   "05": 9831,
+   "10": 11660,
+   "15": 11825
+  }
+ },
+ "IDN-88050704": {
+  "name": "Kota Sorong",
+  "kind": "City (kota)",
+  "province": "West Papua",
+  "pov": 14.99,
+  "pop": 261426,
+  "shape": "22746128B11366688050704",
+  "ages": {
+   "05": 23777,
+   "10": 26817,
+   "15": 26772
+  }
+ },
+ "IDN-66501815": {
+  "name": "Sragen",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 13.38,
+  "pop": 892916,
+  "shape": "22746128B28263166501815",
+  "ages": {
+   "05": 70875,
+   "10": 81245,
+   "15": 76010
+  }
+ },
+ "IDN-08137034": {
+  "name": "Subang",
+  "kind": "Regency (kabupaten)",
+  "province": "West Java",
+  "pov": 9.31,
+  "pop": 1612576,
+  "shape": "22746128B90150108137034",
+  "ages": {
+   "05": 119636,
+   "10": 134422,
+   "15": 135651
+  }
+ },
+ "IDN-80371825": {
+  "name": "Kota Subulussalam",
+  "kind": "City (kota)",
+  "province": "Aceh",
+  "pov": 17.6,
+  "pop": 82390,
+  "shape": "22746128B20185680371825",
+  "ages": {
+   "05": 10666,
+   "10": 10373,
+   "15": 10160
+  }
+ },
+ "IDN-26216355": {
+  "name": "Sukabumi",
+  "kind": "Regency (kabupaten)",
+  "province": "West Java",
+  "pov": 7.09,
+  "pop": 2470219,
+  "shape": "22746128B66929526216355",
+  "ages": {
+   "05": 228997,
+   "10": 252842,
+   "15": 250471
+  }
+ },
+ "IDN-20895999": {
+  "name": "Kota Sukabumi",
+  "kind": "City (kota)",
+  "province": "West Java",
+  "pov": 7.7,
+  "pop": 330691,
+  "shape": "22746128B82825120895999",
+  "ages": {
+   "05": 30121,
+   "10": 33644,
+   "15": 32782
+  }
+ },
+ "IDN-11458704": {
+  "name": "Sukamara",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Kalimantan",
+  "pov": 3.23,
+  "pop": 66732,
+  "shape": "22746128B44365111458704",
+  "ages": {
+   "05": 5420,
+   "10": 5951,
+   "15": 5915
+  }
+ },
+ "IDN-59813102": {
+  "name": "Sukoharjo",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 7.68,
+  "pop": 898376,
+  "shape": "22746128B41417259813102",
+  "ages": {
+   "05": 67129,
+   "10": 77179,
+   "15": 73976
+  }
+ },
+ "IDN-69684098": {
+  "name": "Sumba Barat Daya",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 28,
+  "pop": 350923,
+  "shape": "22746128B80160169684098",
+  "ages": {
+   "05": 44254,
+   "10": 39502,
+   "15": 29632
+  }
+ },
+ "IDN-97728098": {
+  "name": "Sumba Barat",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 28.17,
+  "pop": 131600,
+  "shape": "22746128B3578697728098",
+  "ages": {
+   "05": 15737,
+   "10": 16456,
+   "15": 15072
+  }
+ },
+ "IDN-82298506": {
+  "name": "Sumba Tengah",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 34.49,
+  "pop": 73820,
+  "shape": "22746128B11743482298506",
+  "ages": {
+   "05": 9829,
+   "10": 9713,
+   "15": 8342
+  }
+ },
+ "IDN-56673931": {
+  "name": "Sumba Timur",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 29.65,
+  "pop": 261503,
+  "shape": "22746128B15873256673931",
+  "ages": {
+   "05": 27737,
+   "10": 25112,
+   "15": 20525
+  }
+ },
+ "IDN-79033569": {
+  "name": "Sumbawa Barat",
+  "kind": "Regency (kabupaten)",
+  "province": "West Nusa Tenggara",
+  "pov": 13.34,
+  "pop": 152437,
+  "shape": "22746128B87271379033569",
+  "ages": {
+   "05": 16637,
+   "10": 14256,
+   "15": 12162
+  }
+ },
+ "IDN-55691224": {
+  "name": "Sumbawa",
+  "kind": "Regency (kabupaten)",
+  "province": "West Nusa Tenggara",
+  "pov": 13.65,
+  "pop": 461502,
+  "shape": "22746128B848155691224",
+  "ages": {
+   "05": 48076,
+   "10": 46106,
+   "15": 46145
+  }
+ },
+ "IDN-73108228": {
+  "name": "Sumedang",
+  "kind": "Regency (kabupaten)",
+  "province": "West Java",
+  "pov": 10.26,
+  "pop": 1154428,
+  "shape": "22746128B19624873108228",
+  "ages": {
+   "05": 88486,
+   "10": 102883,
+   "15": 105148
+  }
+ },
+ "IDN-12426649": {
+  "name": "Sumenep",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 20.18,
+  "pop": 1092387,
+  "shape": "22746128B46307112426649",
+  "ages": {
+   "05": 73332,
+   "10": 80352,
+   "15": 81521
+  }
+ },
+ "IDN-44142504": {
+  "name": "Kota Sungai Penuh",
+  "kind": "City (kota)",
+  "province": "Jambi",
+  "pov": 3.03,
+  "pop": 91739,
+  "shape": "22746128B31453944142504",
+  "ages": {
+   "05": 6940,
+   "10": 7938,
+   "15": 8285
+  }
+ },
+ "IDN-41988454": {
+  "name": "Supiori",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 36.91,
+  "pop": 21188,
+  "shape": "22746128B73598541988454",
+  "ages": {
+   "05": 3742,
+   "10": 2490,
+   "15": 1692
+  }
+ },
+ "IDN-38827891": {
+  "name": "Kota Surabaya",
+  "kind": "City (kota)",
+  "province": "East Java",
+  "pov": 5.02,
+  "pop": 2904751,
+  "shape": "22746128B68603538827891",
+  "ages": {
+   "05": 232165,
+   "10": 246642,
+   "15": 231180
+  }
+ },
+ "IDN-06687482": {
+  "name": "Kota Surakarta",
+  "kind": "City (kota)",
+  "province": "Central Java",
+  "pov": 9.03,
+  "pop": 521077,
+  "shape": "22746128B33460906687482",
+  "ages": {
+   "05": 35733,
+   "10": 41132,
+   "15": 41622
+  }
+ },
+ "IDN-62207979": {
+  "name": "Tabalong",
+  "kind": "Regency (kabupaten)",
+  "province": "South Kalimantan",
+  "pov": 5.72,
+  "pop": 257794,
+  "shape": "22746128B29828162207979",
+  "ages": {
+   "05": 25888,
+   "10": 23081,
+   "15": 21455
+  }
+ },
+ "IDN-22714630": {
+  "name": "Tabanan",
+  "kind": "Regency (kabupaten)",
+  "province": "Bali",
+  "pov": 4.27,
+  "pop": 447994,
+  "shape": "22746128B4646422714630",
+  "ages": {
+   "05": 26738,
+   "10": 31549,
+   "15": 31828
+  }
+ },
+ "IDN-86615312": {
+  "name": "Takalar",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 8.44,
+  "pop": 301424,
+  "shape": "22746128B33549586615312",
+  "ages": {
+   "05": 23791,
+   "10": 26591,
+   "15": 24435
+  }
+ },
+ "IDN-71865676": {
+  "name": "Tambrauw",
+  "kind": "Regency (kabupaten)",
+  "province": "West Papua",
+  "pov": 32.8,
+  "pop": 14021,
+  "shape": "22746128B68810971865676",
+  "ages": {
+   "05": 2372,
+   "10": 2724,
+   "15": 2709
+  }
+ },
+ "IDN-51246279": {
+  "name": "Tana Tidung",
+  "kind": "Regency (kabupaten)",
+  "province": "North Kalimantan",
+  "pov": 4.81,
+  "pop": 30896,
+  "shape": "22746128B22343651246279",
+  "ages": {
+   "05": 2326,
+   "10": 2384,
+   "15": 2261
+  }
+ },
+ "IDN-46801661": {
+  "name": "Tana Toraja",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 12.1,
+  "pop": 235103,
+  "shape": "22746128B55477646801661",
+  "ages": {
+   "05": 20898,
+   "10": 29051,
+   "15": 31253
+  }
+ },
+ "IDN-23707622": {
+  "name": "Tanah Bumbu",
+  "kind": "Regency (kabupaten)",
+  "province": "South Kalimantan",
+  "pov": 4.6,
+  "pop": 368362,
+  "shape": "22746128B5843223707622",
+  "ages": {
+   "05": 37521,
+   "10": 31681,
+   "15": 24453
+  }
+ },
+ "IDN-85623603": {
+  "name": "Tanah Datar",
+  "kind": "Regency (kabupaten)",
+  "province": "West Sumatra",
+  "pov": 4.4,
+  "pop": 348894,
+  "shape": "22746128B43985885623603",
+  "ages": {
+   "05": 28080,
+   "10": 33607,
+   "15": 34022
+  }
+ },
+ "IDN-98899185": {
+  "name": "Tanah Laut",
+  "kind": "Regency (kabupaten)",
+  "province": "South Kalimantan",
+  "pov": 4.26,
+  "pop": 348623,
+  "shape": "22746128B54914598899185",
+  "ages": {
+   "05": 34826,
+   "10": 32061,
+   "15": 29542
+  }
+ },
+ "IDN-97811788": {
+  "name": "Kota Tangerang Selatan",
+  "kind": "City (kota)",
+  "province": "Banten",
+  "pov": 2.29,
+  "pop": 1799605,
+  "shape": "22746128B62533997811788",
+  "ages": {
+   "05": 114638,
+   "10": 120163,
+   "15": 111669
+  }
+ },
+ "IDN-77397182": {
+  "name": "Tangerang",
+  "kind": "Regency (kabupaten)",
+  "province": "Banten",
+  "pov": 6.23,
+  "pop": 3908880,
+  "shape": "22746128B62876177397182",
+  "ages": {
+   "05": 301162,
+   "10": 295971,
+   "15": 283717
+  }
+ },
+ "IDN-74511026": {
+  "name": "Kota Tangerang",
+  "kind": "City (kota)",
+  "province": "Banten",
+  "pov": 5.22,
+  "pop": 2273697,
+  "shape": "22746128B7613374511026",
+  "ages": {
+   "05": 165901,
+   "10": 168101,
+   "15": 156227
+  }
+ },
+ "IDN-88283297": {
+  "name": "Tanggamus",
+  "kind": "Regency (kabupaten)",
+  "province": "Lampung",
+  "pov": 11.68,
+  "pop": 603706,
+  "shape": "22746128B69666188283297",
+  "ages": {
+   "05": 57198,
+   "10": 56020,
+   "15": 55275
+  }
+ },
+ "IDN-93093612": {
+  "name": "Kota Tanjung Balai",
+  "kind": "City (kota)",
+  "province": "North Sumatra",
+  "pov": 13.33,
+  "pop": 177005,
+  "shape": "22746128B91306693093612",
+  "ages": {
+   "05": 16927,
+   "10": 17539,
+   "15": 17040
+  }
+ },
+ "IDN-19007289": {
+  "name": "Tanjung Jabung Barat",
+  "kind": "Regency (kabupaten)",
+  "province": "Jambi",
+  "pov": 10.29,
+  "pop": 339286,
+  "shape": "22746128B97653119007289",
+  "ages": {
+   "05": 30266,
+   "10": 31623,
+   "15": 30786
+  }
+ },
+ "IDN-66985120": {
+  "name": "Tanjung Jabung Timur",
+  "kind": "Regency (kabupaten)",
+  "province": "Jambi",
+  "pov": 10.95,
+  "pop": 221619,
+  "shape": "22746128B13468366985120",
+  "ages": {
+   "05": 19917,
+   "10": 20736,
+   "15": 19920
+  }
+ },
+ "IDN-83492420": {
+  "name": "Kota Tanjung Pinang",
+  "kind": "City (kota)",
+  "province": "Riau Islands",
+  "pov": 9.37,
+  "pop": 213592,
+  "shape": "22746128B73074683492420",
+  "ages": {
+   "05": 20435,
+   "10": 20844,
+   "15": 21652
+  }
+ },
+ "IDN-82667393": {
+  "name": "Tapanuli Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 8.47,
+  "pop": 283389,
+  "shape": "22746128B22210082667393",
+  "ages": {
+   "05": 31665,
+   "10": 33554,
+   "15": 29836
+  }
+ },
+ "IDN-93324026": {
+  "name": "Tapanuli Tengah",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 12.38,
+  "pop": 382917,
+  "shape": "22746128B86210793324026",
+  "ages": {
+   "05": 36116,
+   "10": 40921,
+   "15": 40319
+  }
+ },
+ "IDN-45443202": {
+  "name": "Tapanuli Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 9.37,
+  "pop": 303688,
+  "shape": "22746128B99937545443202",
+  "ages": {
+   "05": 32671,
+   "10": 35237,
+   "15": 32879
+  }
+ },
+ "IDN-05361870": {
+  "name": "Tapin",
+  "kind": "Regency (kabupaten)",
+  "province": "South Kalimantan",
+  "pov": 3.06,
+  "pop": 193635,
+  "shape": "22746128B54842505361870",
+  "ages": {
+   "05": 19700,
+   "10": 17181,
+   "15": 15018
+  }
+ },
+ "IDN-54808676": {
+  "name": "Kota Tarakan",
+  "kind": "City (kota)",
+  "province": "North Kalimantan",
+  "pov": 6.24,
+  "pop": 280215,
+  "shape": "22746128B97983454808676",
+  "ages": {
+   "05": 21091,
+   "10": 24801,
+   "15": 23131
+  }
+ },
+ "IDN-04079934": {
+  "name": "Tasikmalaya",
+  "kind": "Regency (kabupaten)",
+  "province": "West Java",
+  "pov": 10.34,
+  "pop": 1755710,
+  "shape": "22746128B89217704079934",
+  "ages": {
+   "05": 144320,
+   "10": 167595,
+   "15": 168114
+  }
+ },
+ "IDN-49481658": {
+  "name": "Kota Tasikmalaya",
+  "kind": "City (kota)",
+  "province": "West Java",
+  "pov": 12.97,
+  "pop": 663986,
+  "shape": "22746128B57000549481658",
+  "ages": {
+   "05": 57717,
+   "10": 66991,
+   "15": 64262
+  }
+ },
+ "IDN-16204280": {
+  "name": "Kota Tebing Tinggi",
+  "kind": "City (kota)",
+  "province": "North Sumatra",
+  "pov": 9.85,
+  "pop": 166100,
+  "shape": "22746128B29639616204280",
+  "ages": {
+   "05": 14706,
+   "10": 14984,
+   "15": 13596
+  }
+ },
+ "IDN-76790881": {
+  "name": "Tebo",
+  "kind": "Regency (kabupaten)",
+  "province": "Jambi",
+  "pov": 6.26,
+  "pop": 360193,
+  "shape": "22746128B61304276790881",
+  "ages": {
+   "05": 32410,
+   "10": 33097,
+   "15": 31130
+  }
+ },
+ "IDN-82939315": {
+  "name": "Tegal",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 8.14,
+  "pop": 1443927,
+  "shape": "22746128B39713682939315",
+  "ages": {
+   "05": 135108,
+   "10": 144204,
+   "15": 131493
+  }
+ },
+ "IDN-83644541": {
+  "name": "Kota Tegal",
+  "kind": "City (kota)",
+  "province": "Central Java",
+  "pov": 7.8,
+  "pop": 250677,
+  "shape": "22746128B85080883644541",
+  "ages": {
+   "05": 21494,
+   "10": 23753,
+   "15": 22870
+  }
+ },
+ "IDN-76919105": {
+  "name": "Teluk Bintuni",
+  "kind": "Regency (kabupaten)",
+  "province": "West Papua",
+  "pov": 29.39,
+  "pop": 65705,
+  "shape": "22746128B11480476919105",
+  "ages": {
+   "05": 7499,
+   "10": 8874,
+   "15": 9275
+  }
+ },
+ "IDN-82892276": {
+  "name": "Teluk Wondama",
+  "kind": "Regency (kabupaten)",
+  "province": "West Papua",
+  "pov": 30.91,
+  "pop": 33234,
+  "shape": "22746128B47515282892276",
+  "ages": {
+   "05": 4403,
+   "10": 5517,
+   "15": 4681
+  }
+ },
+ "IDN-87210764": {
+  "name": "Temanggung",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 9.96,
+  "pop": 778188,
+  "shape": "22746128B37534287210764",
+  "ages": {
+   "05": 59681,
+   "10": 65000,
+   "15": 61595
+  }
+ },
+ "IDN-49389855": {
+  "name": "Kota Ternate",
+  "kind": "City (kota)",
+  "province": "North Maluku",
+  "pov": 3.46,
+  "pop": 238204,
+  "shape": "22746128B36781349389855",
+  "ages": {
+   "05": 19519,
+   "10": 19410,
+   "15": 18106
+  }
+ },
+ "IDN-89442435": {
+  "name": "Timor Tengah Selatan",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 27.49,
+  "pop": 469673,
+  "shape": "22746128B39495189442435",
+  "ages": {
+   "05": 47137,
+   "10": 52850,
+   "15": 43995
+  }
+ },
+ "IDN-63142599": {
+  "name": "Timor Tengah Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "East Nusa Tenggara",
+  "pov": 22.28,
+  "pop": 256299,
+  "shape": "22746128B66987763142599",
+  "ages": {
+   "05": 27682,
+   "10": 26686,
+   "15": 25796
+  }
+ },
+ "IDN-28866564": {
+  "name": "Toba Samosir",
+  "kind": "Regency (kabupaten)",
+  "province": "North Sumatra",
+  "pov": 8.71,
+  "pop": 184493,
+  "shape": "22746128B48431928866564",
+  "ages": {
+   "05": 20905,
+   "10": 22167,
+   "15": 21027
+  }
+ },
+ "IDN-15656615": {
+  "name": "Tojo Una-Una",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Sulawesi",
+  "pov": 16.39,
+  "pop": 155614,
+  "shape": "22746128B20933115656615",
+  "ages": {
+   "05": 16740,
+   "10": 16931,
+   "15": 15975
+  }
+ },
+ "IDN-99177927": {
+  "name": "Toli-Toli",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Sulawesi",
+  "pov": 12.85,
+  "pop": 238067,
+  "shape": "22746128B86630799177927",
+  "ages": {
+   "05": 21719,
+   "10": 21253,
+   "15": 20411
+  }
+ },
+ "IDN-75654062": {
+  "name": "Tolikara",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 32.04,
+  "pop": 140413,
+  "shape": "22746128B10432975654062",
+  "ages": {
+   "05": 10280,
+   "10": 11184,
+   "15": 15626
+  }
+ },
+ "IDN-84418793": {
+  "name": "Kota Tomohon",
+  "kind": "City (kota)",
+  "province": "North Sulawesi",
+  "pov": 5.6,
+  "pop": 108489,
+  "shape": "22746128B12552284418793",
+  "ages": {
+   "05": 7646,
+   "10": 7657,
+   "15": 7931
+  }
+ },
+ "IDN-49618583": {
+  "name": "Toraja Utara",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 12.01,
+  "pop": 232394,
+  "shape": "22746128B99951949618583",
+  "ages": {
+   "05": 23681,
+   "10": 30480,
+   "15": 28867
+  }
+ },
+ "IDN-28646138": {
+  "name": "Trenggalek",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 11.62,
+  "pop": 697600,
+  "shape": "22746128B86316028646138",
+  "ages": {
+   "05": 48676,
+   "10": 50609,
+   "15": 49658
+  }
+ },
+ "IDN-31805890": {
+  "name": "Kota Tual",
+  "kind": "City (kota)",
+  "province": "Maluku",
+  "pov": 22.51,
+  "pop": 77623,
+  "shape": "22746128B79752231805890",
+  "ages": {
+   "05": 6816,
+   "10": 9016,
+   "15": 9012
+  }
+ },
+ "IDN-06788524": {
+  "name": "Tuban",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 15.91,
+  "pop": 1177016,
+  "shape": "22746128B21203406788524",
+  "ages": {
+   "05": 87956,
+   "10": 91430,
+   "15": 85740
+  }
+ },
+ "IDN-36235073": {
+  "name": "Tulang Bawang Barat",
+  "kind": "Regency (kabupaten)",
+  "province": "Lampung",
+  "pov": 7.39,
+  "pop": 274905,
+  "shape": "22746128B7348236235073",
+  "ages": {
+   "05": 26035,
+   "10": 24223,
+   "15": 19912
+  }
+ },
+ "IDN-23555547": {
+  "name": "Tulang Bawang",
+  "kind": "Regency (kabupaten)",
+  "province": "Lampung",
+  "pov": 9.33,
+  "pop": 455891,
+  "shape": "22746128B49188423555547",
+  "ages": {
+   "05": 41476,
+   "10": 41168,
+   "15": 36794
+  }
+ },
+ "IDN-92863745": {
+  "name": "Tulungagung",
+  "kind": "Regency (kabupaten)",
+  "province": "East Java",
+  "pov": 7.33,
+  "pop": 1043182,
+  "shape": "22746128B2754392863745",
+  "ages": {
+   "05": 75494,
+   "10": 82962,
+   "15": 81018
+  }
+ },
+ "IDN-89080756": {
+  "name": "Wajo",
+  "kind": "Regency (kabupaten)",
+  "province": "South Sulawesi",
+  "pov": 6.95,
+  "pop": 398784,
+  "shape": "22746128B4429389080756",
+  "ages": {
+   "05": 28875,
+   "10": 33357,
+   "15": 28792
+  }
+ },
+ "IDN-63392557": {
+  "name": "Wakatobi",
+  "kind": "Regency (kabupaten)",
+  "province": "Southeast Sulawesi",
+  "pov": 14.31,
+  "pop": 96111,
+  "shape": "22746128B42553963392557",
+  "ages": {
+   "05": 10370,
+   "10": 10809,
+   "15": 10689
+  }
+ },
+ "IDN-54349068": {
+  "name": "Waropen",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 29.54,
+  "pop": 32100,
+  "shape": "22746128B12986554349068",
+  "ages": {
+   "05": 5350,
+   "10": 3707,
+   "15": 2365
+  }
+ },
+ "IDN-18473228": {
+  "name": "Way Kanan",
+  "kind": "Regency (kabupaten)",
+  "province": "Lampung",
+  "pov": 12.9,
+  "pop": 453921,
+  "shape": "22746128B8708218473228",
+  "ages": {
+   "05": 45826,
+   "10": 44789,
+   "15": 41314
+  }
+ },
+ "IDN-84331074": {
+  "name": "Wonogiri",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 10.86,
+  "pop": 961602,
+  "shape": "22746128B32217084331074",
+  "ages": {
+   "05": 63057,
+   "10": 74821,
+   "15": 80125
+  }
+ },
+ "IDN-97199140": {
+  "name": "Wonosobo",
+  "kind": "Regency (kabupaten)",
+  "province": "Central Java",
+  "pov": 17.36,
+  "pop": 793403,
+  "shape": "22746128B92173297199140",
+  "ages": {
+   "05": 67719,
+   "10": 73625,
+   "15": 71362
+  }
+ },
+ "IDN-62694316": {
+  "name": "Yahukimo",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 37.34,
+  "pop": 192627,
+  "shape": "22746128B87177062694316",
+  "ages": {
+   "05": 21716,
+   "10": 25765,
+   "15": 35861
+  }
+ },
+ "IDN-01962211": {
+  "name": "Yalimo",
+  "kind": "Regency (kabupaten)",
+  "province": "Papua",
+  "pov": 32.82,
+  "pop": 63789,
+  "shape": "22746128B10188501962211",
+  "ages": {
+   "05": 5973,
+   "10": 7079,
+   "15": 9850
+  }
+ },
+ "IDN-58776103": {
+  "name": "Kota Yogyakarta",
+  "kind": "City (kota)",
+  "province": "Special Region of Yogyakarta",
+  "pov": 7.27,
+  "pop": 435936,
+  "shape": "22746128B9761158776103",
+  "ages": {
+   "05": 23790,
+   "10": 26578,
+   "15": 28935
+  }
+ }
+}

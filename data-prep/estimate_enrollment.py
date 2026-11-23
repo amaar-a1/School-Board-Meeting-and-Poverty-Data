@@ -127,6 +127,40 @@ def in_rule():
 RULES["india.csv"] = in_rule()
 
 
+def ages_rule(folder, data_file, frac, ages_text, where):
+    """Children of school age from a country's five-year age groups ({"05": n, "10": n, "15": n}) in its data file:
+    frac gives the share of each group counted (e.g. 6-17 is four fifths of 5-9, all of 10-14, three fifths of 15-19)."""
+    p = os.path.join(HERE, "inputs", folder, data_file)
+    data = json.load(open(p, encoding="utf-8")) if os.path.exists(p) else {}
+    def rule(r):
+        a = (data.get(r["District ID"]) or {}).get("ages")
+        if not a: return None
+        v = sum(frac[g] * a.get(g, 0) for g in frac)
+        return (round(v), f"Estimate: children aged {ages_text} living in the {where} in 2025, from WorldPop's gridded age structures (R2025A); "
+                          "no pupil count by place could be reached") if v >= 1 else None
+    return rule
+
+
+# Indonesia: school ages 7-18 (SD, SMP, SMA); Paraguay: 6-17 (basic and secondary education).
+RULES["indonesia.csv"] = ages_rule("indonesia", "idn_data.json", {"05": 0.6, "10": 1, "15": 0.8}, "7–18", "regency or city")
+RULES["paraguay.csv"] = ages_rule("paraguay", "pry_data.json", {"05": 0.8, "10": 1, "15": 0.6}, "6–17", "district")
+
+
+def my_rule():
+    """Malaysia: districts whose education office covers more or less than the district get children aged 7-17 from
+    DOSM's 2025 population by age (three fifths of 5-9, all of 10-14, three fifths of 15-19)."""
+    p = os.path.join(HERE, "inputs", "malaysia", "my_data.json")
+    data = json.load(open(p, encoding="utf-8")) if os.path.exists(p) else {}
+    def rule(r):
+        k = (data.get(r["District ID"]) or {}).get("kids7_17")
+        return (k, "Estimate: children aged 7–17 living in the district, 2025 (DOSM population by age); its education office's count covers "
+                   "a different area (an office shared with another district, split in two, or older than the district)") if k else None
+    return rule
+
+
+RULES["malaysia.csv"] = my_rule()
+
+
 def run(fn):
     p = os.path.join(DOCS, fn)
     rule = RULES.get(fn)

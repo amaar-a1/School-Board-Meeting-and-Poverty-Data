@@ -16,7 +16,8 @@ for f, iso in (("germany.csv", "DEU"), ("new-zealand.csv", "NZL"), ("iceland.csv
                ("italy.csv", "ITA"), ("poland.csv", "POL"), ("japan.csv", "JPN"), ("belgium.csv", "BEL"), ("portugal.csv", "PRT"),
                ("australia.csv", "AUS"), ("croatia.csv", "HRV"), ("philippines.csv", "PHL"), ("latvia.csv", "LVA"), ("estonia.csv", "EST"), ("argentina.csv", "ARG"), ("israel.csv", "ISR"),
                ("slovenia.csv", "SVN"), ("taiwan.csv", "TWN"), ("uruguay.csv", "URY"), ("costa_rica.csv", "CRI"),
-               ("lithuania.csv", "LTU"), ("south_africa.csv", "ZAF"), ("kenya.csv", "KEN"), ("georgia.csv", "GEO"), ("south_korea.csv", "KOR"), ("india.csv", "IND")):
+               ("lithuania.csv", "LTU"), ("south_africa.csv", "ZAF"), ("kenya.csv", "KEN"), ("georgia.csv", "GEO"), ("south_korea.csv", "KOR"), ("india.csv", "IND"),
+               ("malaysia.csv", "MYS"), ("indonesia.csv", "IDN"), ("paraguay.csv", "PRY")):
     if os.path.exists(os.path.join(HERE, "..", "docs", "data", f)):
         COVERED.add(iso)
 ISL = os.path.join(HERE, "..", "docs", "data", "islands.csv")

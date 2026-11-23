@@ -82,7 +82,7 @@ def centroid(geom):
 
 
 _CACHE = {}
-DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "AU": "australia", "HR": "croatia", "PH": "philippines", "LV": "latvia", "EE": "estonia", "ARG": "argentina", "ISR": "israel", "SVN": "slovenia", "TWN": "taiwan", "URY": "uruguay", "CRI": "costa_rica", "LTU": "lithuania", "ZAF": "south_africa", "KEN": "kenya", "GEO": "georgia", "KOR": "south_korea", "IND": "india"}
+DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "AU": "australia", "HR": "croatia", "PH": "philippines", "LV": "latvia", "EE": "estonia", "ARG": "argentina", "ISR": "israel", "SVN": "slovenia", "TWN": "taiwan", "URY": "uruguay", "CRI": "costa_rica", "LTU": "lithuania", "ZAF": "south_africa", "KEN": "kenya", "GEO": "georgia", "KOR": "south_korea", "IND": "india", "MYS": "malaysia", "IDN": "indonesia", "PRY": "paraguay"}
 # Brazil: municipal chambers (câmara municipal) and their education committees, in Portuguese.
 RULES = {"BR": (re.compile(r"comiss[ãa]o (permanente )?de educa[çc][ãa]o|educa[çc][ãa]o.*comiss[ãa]o", re.I),
                 re.compile(r"sess[ãa]o|c[âa]mara", re.I),
@@ -239,7 +239,22 @@ RULES["LTU"] = (re.compile(r"(komitet|komisij)[^|]{0,60}[sš]vietim|[sš]vietim[
                 re.compile(r"pos[eė]d|taryb", re.I),
                 re.compile(r"^(?!.*(komitet|komisij|jaunimo)).*(tarybos\s+pos[eė]d|tarybos\s+\d|pos[eė]dis|\d+\s*(-?asis|-?is)?\s*pos[eė]d)", re.I),
                 re.compile(NOT_T.pattern + r"|interviu|reportaž|koncert|šventė|naujien", re.I))
-MIN_EDU = {"ES": 3, "FRA": 3, "EC": 3, "IT": 3, "PL": 3, "PT": 3, "BE": 3, "LV": 3, "EE": 3, "SVN": 3, "URY": 3, "CRI": 3, "LTU": 3, "ZAF": 3, "KEN": 3}
+# Malaysia: local councils (majlis perbandaran / daerah / bandaraya) and their full council meetings (mesyuarat penuh).
+RULES["MYS"] = (re.compile(r"jawatankuasa[^|]{0,40}pendidikan|education committee", re.I),
+                re.compile(r"mesyuarat|persidangan|sidang|council meeting", re.I),
+                re.compile(r"^(?!.*(taklimat|program|majlis perasmian|sambutan)).*(mesyuarat (penuh|agung|majlis)|persidangan|sidang (dewan|majlis)|full (board|council) meeting|council meeting)", re.I),
+                re.compile(NOT_T.pattern + r"|temubual|berita|iklan|lagu|video korporat", re.I))
+# Indonesia: regency and city councils (DPRD) and their education committees (komisi ... pendidikan, often Komisi D or IV).
+RULES["IDN"] = (re.compile(r"komisi[^|]{0,30}(pendidikan)|(pendidikan)[^|]{0,30}komisi|rapat dengar pendapat[^|]{0,60}dinas pendidikan|rdp[^|]{0,60}dinas pendidikan", re.I),
+                re.compile(r"paripurna|rapat|sidang", re.I),
+                re.compile(r"^(?!.*(bimtek|kunjungan|kunker|reses|sosialisasi)).*(rapat paripurna|sidang paripurna|paripurna dprd|paripurna\b)", re.I),
+                re.compile(NOT_T.pattern + r"|wawancara|berita|ucapan|selamat|hut\b|iklan|lagu", re.I))
+# Paraguay: municipal councils (junta municipal) and their education committees.
+RULES["PRY"] = (re.compile(r"comisi[óo]n[^|]{0,40}educaci[óo]n|educaci[óo]n[^|]{0,30}comisi[óo]n", re.I),
+                re.compile(r"sesi[óo]n|junta", re.I),
+                re.compile(r"^(?!.*(entrevista|noticia)).*(sesi[óo]n (ordinaria|extraordinaria|plenaria)|sesi[óo]n de la junta|junta municipal)", re.I),
+                re.compile(NOT_T.pattern + r"|entrevista|noticia|spot|aniversario", re.I))
+MIN_EDU = {"ES": 3, "FRA": 3, "EC": 3, "IT": 3, "PL": 3, "PT": 3, "BE": 3, "LV": 3, "EE": 3, "SVN": 3, "URY": 3, "CRI": 3, "LTU": 3, "ZAF": 3, "KEN": 3, "MYS": 3, "IDN": 3, "PRY": 3}
 
 
 def session_key(cc, t):
@@ -1856,6 +1871,79 @@ def india():
                                   else "Population: 2011 census (higher than WorldPop's 2025 estimate for the district)")})
     print("population from WorldPop:", nwp)
     write("IND", "india", rows, feats)
+
+
+
+def malaysia():
+    """160 districts (daerah). Schools are run nationally by the Ministry of Education, through state education
+    departments and district education offices (PPD), with no elected board; local councils (majlis perbandaran or
+    daerah, appointed, not elected) run local services, so their full council meetings stand in. Poverty: DOSM, the share
+    of households below the national poverty line income, 2024 (prep_malaysia.py)."""
+    d = os.path.join(IN, "malaysia")
+    my = json.load(open(os.path.join(d, "my_data.json"), encoding="utf-8"))
+    feats = json.load(open(os.path.join(d, "my_geo.geojson"), encoding="utf-8"))["features"]
+    area = {f["properties"]["id"]: area_km2(f["geometry"]) for f in feats}
+    rows = []
+    for did, x in my.items():
+        dens = x["pop"] / area[did] if x.get("pop") and area.get(did) else 0
+        trend = "; ".join(f"{y}: {v:.1f}%" for y, v in x["pov_years"].items())
+        inc = x.get("income")
+        rows.append({"District": x["name"], "Region": x["state"], "Population": x.get("pop") or "",
+                     "Poverty rate (all ages)": f"{x['pov']:.1f}%" if x.get("pov") is not None else "",
+                     "Poverty note": ("Households below the national poverty line income (absolute poverty), 2024 (DOSM, Household Income and Expenditure Survey)"
+                                      + (f"; below half the median household income (relative poverty) {x['rel']:.1f}%" if x.get("rel") is not None else "")
+                                      + (f". Median household income RM{inc[1]:,} a month" if inc else "")),
+                     "Poverty by year": trend,
+                     "Enrollment": x.get("pupils") or "", "Enrollment year": "2025 (pupils at government and government-aided primary and secondary schools; Ministry of Education)" if x.get("pupils") else "",
+                     "Public school enrollment": x.get("pupils") or "",
+                     "School system": "District (schools are run nationally by the Ministry of Education through its district education office); appointed local council",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in area})
+    write("MYS", "malaysia", rows, feats)
+
+
+def indonesia():
+    """514 regencies (kabupaten) and cities (kota). Regencies and cities run primary and junior secondary schools (SD
+    and SMP) through their education office (dinas pendidikan); provinces run senior secondary schools. The elected
+    regional council (DPRD) oversees the education office through one of its committees (komisi), so its meetings stand
+    in. Poverty: BPS, the share of people below the poverty line, all ages, 2020 (prep_indonesia.py)."""
+    d = os.path.join(IN, "indonesia")
+    idn = json.load(open(os.path.join(d, "idn_data.json"), encoding="utf-8"))
+    feats = json.load(open(os.path.join(d, "idn_geo.geojson"), encoding="utf-8"))["features"]
+    area = {f["properties"]["id"]: area_km2(f["geometry"]) for f in feats}
+    rows = []
+    for did, x in idn.items():
+        dens = x["pop"] / area[did] if x.get("pop") and area.get(did) else 0
+        rows.append({"District": x["name"], "Region": x["province"], "Population": x.get("pop") or "",
+                     "Poverty rate (all ages)": f"{x['pov']:.1f}%",
+                     "Poverty note": "Share of people below the poverty line, all ages, 2020 (BPS, via the World Bank's Indonesia Database for Policy and Economic Research). Nationally 9.8% (March 2020)",
+                     "Enrollment": "", "Enrollment year": "",
+                     "School system": f"{x['kind']} (runs primary and junior secondary schools through its education office; the province runs senior secondary schools); elected regional council (DPRD)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in area,
+                     "Map note": "Population: WorldPop's 2025 estimate, summed over the border (BPS's 2020 series has no figure for it)" if x.get("pop_wp") else ""})
+    write("IDN", "indonesia", rows, feats)
+
+
+def paraguay():
+    """247 districts (municipalities) on the map, of 263. The Ministry of Education and Sciences runs the schools
+    nationally, through departmental and zonal supervisors; municipalities have elected councils (junta municipal) that
+    can fund school buildings and meals, so their sessions stand in. Poverty: INE's district poverty map, the share of
+    people below the poverty line, all ages, 2022 (prep_paraguay.py)."""
+    d = os.path.join(IN, "paraguay")
+    py = json.load(open(os.path.join(d, "pry_data.json"), encoding="utf-8"))
+    feats = json.load(open(os.path.join(d, "pry_geo.geojson"), encoding="utf-8"))["features"]
+    area = {f["properties"]["id"]: area_km2(f["geometry"]) for f in feats}
+    rows = []
+    for did, x in py.items():
+        dens = x["pop"] / area[did] if x.get("pop") and area.get(did) else 0
+        rows.append({"District": x["name"], "Region": x["dept"], "Population": x.get("pop") or "",
+                     "Poverty rate (all ages)": f"{x['pov']:.1f}%",
+                     "Poverty note": (f"Share of people below the poverty line, all ages, 2022 (INE, district monetary poverty map: small-area estimates from the 2022 census "
+                                      f"and household survey); 95% range {x['low']:.1f}–{x['high']:.1f}%. Nationally 20.6% on the same map"),
+                     "Enrollment": "", "Enrollment year": "",
+                     "School system": "Municipality (schools are run nationally by the Ministry of Education and Sciences); elected municipal council (junta municipal)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in area})
+    write("PRY", "paraguay", rows, feats)
+
 
 
 if __name__ == "__main__":

@@ -599,6 +599,42 @@ window.SOURCES = [
     note: "Built by data-prep/prep_philippines.py and data-prep/build_latam.py. Places are matched by their PSGC code (the old six-digit code's province and municipality digits), or by name where the code changed."
   },
   {
+    only: "Malaysia",
+    group: "Malaysia: districts, poverty, population and schools",
+    items: [
+      { title: "Poverty: Department of Statistics Malaysia (DOSM), Household Income and Expenditure Survey 2024, poverty by district (hh_poverty_district; OpenDOSM)", url: "https://open.dosm.gov.my/data-catalogue/hh_poverty_district" },
+      { title: "Household income: DOSM, Household Income and Expenditure Survey 2024, income by district (hies_district; OpenDOSM)", url: "https://open.dosm.gov.my/data-catalogue/hies_district" },
+      { title: "Population, all ages and by age: DOSM, population by district, 2025 (population_district; OpenDOSM)", url: "https://open.dosm.gov.my/data-catalogue/population_district" },
+      { title: "Enrollment: Ministry of Education, enrolment in government and government-aided schools by district, 2025 (enrolment_school_district; data.gov.my)", url: "https://data.gov.my/data-catalogue/enrolment_school_district" },
+      { title: "Borders: DOSM, administrative districts (dosm-malaysia/data-open on GitHub)", url: "https://github.com/dosm-malaysia/data-open" },
+      { title: "Meetings (stand-in): each local council's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_malaysia.py and data-prep/build_latam.py (malaysia). Education districts that differ from the administrative ones (Kinta Utara and Selatan, Kuala Muda/Yan and others) don't match a district, so those districts' enrollment is an estimate."
+  },
+  {
+    only: "Indonesia",
+    group: "Indonesia: regencies and cities, poverty and population",
+    items: [
+      { title: "Poverty and population: Statistics Indonesia (BPS), 2020, as published in the World Bank's Indonesia Database for Policy and Economic Research (INDO-DAPOER), indicators SI.POV.NAPR.ZS and SP.POP.TOTL", url: "https://databank.worldbank.org/source/indonesia-database-for-policy-and-economic-research" },
+      { title: "Enrollment (estimated): WorldPop, Indonesia age and gender structures 2025 (R2025A, 1 km), children aged 7–18 summed over each border", url: "https://data.humdata.org/dataset/worldpop-age-and-gender-structures-2015-2030-idn" },
+      { title: "Borders: geoBoundaries (gbOpen) IDN ADM2 and ADM1, simplified; provinces by location", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings (stand-in): each regional council's (DPRD) YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_indonesia.py and data-prep/build_latam.py (indonesia). Renamed regencies are matched by hand: Pasir is now Paser, and Pontianak regency is now Mempawah."
+  },
+  {
+    only: "Paraguay",
+    group: "Paraguay: districts, poverty and population",
+    items: [
+      { title: "Poverty: Instituto Nacional de Estadística (INE), Mapa de pobreza monetaria distrital 2022, Cuadro 1 (incidence of poverty by district, with its 95% range)", url: "https://www.ine.gov.py/vt/publicacion.php?publicacion=295" },
+      { title: "Population: INE, Estimaciones y proyecciones de la población distrital, revisión 2025 (mid-2025)", url: "https://www.ine.gov.py/vt/publicacion.php?publicacion=284" },
+      { title: "Enrollment (estimated): WorldPop, Paraguay age and gender structures 2025 (R2025A, 1 km), children aged 6–17 summed over each border", url: "https://data.humdata.org/dataset/worldpop-age-and-gender-structures-2015-2030-pry" },
+      { title: "Borders: geoBoundaries (gbOpen) PRY ADM2 and ADM1, simplified; departments by location", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings (stand-in): each municipal council's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_paraguay.py and data-prep/build_latam.py (paraguay). District names are matched within each department, allowing for spelling differences (“Gral.” and “General”, Guaraní y and i)."
+  },
+  {
     only: "Ecuador",
     group: "Ecuador: cantons, poverty, population and pupils",
     items: [
