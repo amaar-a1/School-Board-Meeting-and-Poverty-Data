@@ -1,0 +1,22 @@
+OK wb45_SI.POV.NAPR.ZS.json 5310813 https://api.worldbank.org/v2/country/all/indicator/SI.POV.NAPR.ZS?source=45&format=json&per_page=30000
+   b'[{"page":1,"pages":1,"per_page":30000,"total":24660,"sourceid":"45","lastupdated":"2022-08-11"},[{"indicator":{"id":"SI.POV.NAPR.ZS","value":"Poverty Rate (in % of population)"},"country":{"id":"","value":"Nanggroe Aceh Darussalam, Prop."},"countryiso3code":"","date":"2020","value":null,"unit":"","o'
+OK wb45_SP.POP.TOTL.json 5391471 https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?source=45&format=json&per_page=30000
+   b'[{"page":1,"pages":1,"per_page":30000,"total":24660,"sourceid":"45","lastupdated":"2022-08-11"},[{"indicator":{"id":"SP.POP.TOTL","value":"Total Population (in number of people)"},"country":{"id":"","value":"Nanggroe Aceh Darussalam, Prop."},"countryiso3code":"","date":"2020","value":5459891,"unit":'
+OK wb45_SE.PRM.NENR.ZS.json 5425628 https://api.worldbank.org/v2/country/all/indicator/SE.PRM.NENR.ZS?source=45&format=json&per_page=30000
+   b'[{"page":1,"pages":1,"per_page":30000,"total":24660,"sourceid":"45","lastupdated":"2022-08-11"},[{"indicator":{"id":"SE.PRM.NENR.ZS","value":"Net Enrollment Ratio: Primary (in %)"},"country":{"id":"","value":"Nanggroe Aceh Darussalam, Prop."},"countryiso3code":"","date":"2020","value":101.5500946044'
+OK wb45_countries.json 113955 https://api.worldbank.org/v2/country?source=45&format=json&per_page=2000
+   b'[{"page":1,"pages":1,"per_page":"2000","total":296},[{"id":"ABW","iso2Code":"AW","name":"Aruba","region":{"id":"LCN","iso2code":"ZJ","value":"Latin America & Caribbean "},"adminregion":{"id":"","iso2code":"","value":""},"incomeLevel":{"id":"HIC","iso2code":"XD","value":"High income"},"lendingType":{'
+OK wb45_ind.json 103718 https://api.worldbank.org/v2/indicator?source=45&format=json&per_page=3000
+   b'[{"page":1,"pages":1,"per_page":"3000","total":274},[{"id":"BPK.AUD.SUBN","name":"BPK Audit Report on Sub-National Budget","unit":"","source":{"id":"45","value":"Indonesia Database for Policy and Economic Research"},"sourceNote":"","sourceOrganization":"BPK - Indonesia Audit Board, Report","topics":'
+IND SE.JRSEC.NENR.ZS Net Enrollment Ratio: Junior Secondary (in %)
+IND SE.PRM.NENR.ZS Net Enrollment Ratio: Primary (in %)
+IND SE.SRSEC.NENR.ZS Net Enrollment Ratio: Senior Secondary (in %)
+OK id_gb_ADM2.geojson 11002896 https://github.com/wmgeolab/geoBoundaries/raw/main/releaseData/gbOpen/IDN/ADM2/geoBoundaries-IDN-ADM2_simplified.geojson
+   b'{\n"type": "FeatureCollection",\n"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },\n"features": [\n{ "type": "Feature", "properties": { "shapeName": "Aceh Barat", "shapeISO": "", "shapeID": "22746128B65593111718524", "shapeGroup": "IDN", "shapeType": "ADM2" }, "geomet'
+OK id_gb_ADM1.geojson 3397843 https://github.com/wmgeolab/geoBoundaries/raw/main/releaseData/gbOpen/IDN/ADM1/geoBoundaries-IDN-ADM1_simplified.geojson
+   b'{\n"type": "FeatureCollection",\n"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },\n"features": [\n{ "type": "Feature", "properties": { "shapeName": "Bali", "shapeISO": "ID-BA", "shapeID": "65028918B6690755070061", "shapeGroup": "IDN", "shapeType": "ADM1" }, "geometry'
+ERR th_ckan.json HTTP Error 403: Forbidden https://data.go.th/api/3/action/package_search?q=%E0%B8%AA%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B9%88%E0%B8%A7%E0%B8%99%E0%B8%84%E0%B8%99%E0%B8%88%E0%B8%99%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94&rows=20
+ERR th_ckan_en.json HTTP Error 403: Forbidden https://data.go.th/api/3/action/package_search?q=poverty%20province&rows=20
+ERR th_nesdc2.html HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+Found https://www.nesdc.go.th/ewt_news.php?nid=5313
