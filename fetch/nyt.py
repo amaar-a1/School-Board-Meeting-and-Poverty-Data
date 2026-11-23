@@ -68,8 +68,16 @@ C = {
                edu=r"education|school", meet=r"council|sitting|meeting|mayoral|mpac|portfolio"),
     "KE": dict(file="kenya", q="{} county assembly sitting", chan=r"assembly",
                edu=r"education|ecde", meet=r"sitting|session|assembly|committee|hansard|debate"),
+    # Malaysia: local councils (majlis perbandaran / daerah / bandaraya); Indonesia: regency and city councils (DPRD);
+    # Paraguay: municipal councils (junta municipal).
+    "MY": dict(file="malaysia", q="majlis {} mesyuarat penuh", chan=r"majlis|perbandaran|daerah|bandaraya|council|municipal|\bmp[a-z]{1,4}\b|\bmd[a-z]{1,4}\b|\bmb[a-z]{1,4}\b",
+               edu=r"pendidikan|sekolah|education", meet=r"mesyuarat|persidangan|sidang|council meeting"),
+    "ID": dict(file="indonesia", q="rapat paripurna DPRD {}", chan=r"dprd|dewan perwakilan",
+               edu=r"pendidikan|dinas pendidikan|komisi (d|iv)\b", meet=r"paripurna|rapat|sidang|rdp"),
+    "PY": dict(file="paraguay", q="junta municipal de {} sesión", chan=r"junta|municipal|municipalidad|concejal",
+               edu=r"educaci[óo]n|escuela", meet=r"sesi[óo]n|junta|plenaria|comisi[óo]n"),
 }
-GENERIC = set("vald linn novads kommune kommun kunta kaupunki stad gemeente municipality the og och ja en de het city district stadt kreis landkreis del la el los las do da dos das e".split())
+GENERIC = set("kota kabupaten kab majlis daerah vald linn novads kommune kommun kunta kaupunki stad gemeente municipality the og och ja en de het city district stadt kreis landkreis del la el los las do da dos das e".split())
 ANY_MEET = {cc: re.compile(c["meet"], re.I) for cc, c in C.items()}
 
 
