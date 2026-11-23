@@ -553,7 +553,9 @@ window.SOURCES = [
     group: "India: districts",
     items: [
       { title: "Poverty: NITI Aayog, National Multidimensional Poverty Index: A Progress Review 2023 (based on NFHS-5, 2019-21), each state's district table and chart of the headcount ratio", url: "https://www.niti.gov.in/sites/default/files/2023-08/India-National-Multidimentional-Poverty-Index-2023.pdf" },
-      { title: "Population and states: English Wikipedia, “List of districts in India” (mostly Census 2011)", url: "https://en.wikipedia.org/wiki/List_of_districts_in_India" },
+      { title: "Population and states: English Wikipedia, “List of districts in India” (Census 2011)", url: "https://en.wikipedia.org/wiki/List_of_districts_in_India" },
+      { title: "Population where the map's border differs from the list's district (Andhra Pradesh before 2022, Chennai, Kancheepuram) and for Phek and Peren: Census of India 2011, Primary Census Abstract", url: "https://censusindia.gov.in/census.website/data/census-tables" },
+      { title: "Population where there's no census figure (Delhi, the Andaman and Nicobar Islands, Puducherry, Lakshadweep, a few new districts): WorldPop, India age and gender structures 2025 (R2025A, 1 km), all ages summed over the district's border", url: "https://data.humdata.org/dataset/worldpop-age-and-gender-structures-2015-2030-ind" },
       { title: "Enrollment (estimated): WorldPop, India age and gender structures 2025 (R2025A, 1 km, constrained), via the Humanitarian Data Exchange: children aged 6–17 summed over each district's border", url: "https://data.humdata.org/dataset/worldpop-age-and-gender-structures-2015-2030-ind" },
       { title: "Borders: geoBoundaries (gbOpen) IND ADM1 and ADM2, simplified; districts placed in states by location. Jammu and Kashmir's and Ladakh's districts are clipped to the area India administers (Natural Earth 1:50m, India and the Siachen Glacier)", url: "https://www.geoboundaries.org/" },
       { title: "Meetings: each zila parishad's YouTube channel (in the “Meetings source” column), searched November 2026", url: "https://www.youtube.com/" }
