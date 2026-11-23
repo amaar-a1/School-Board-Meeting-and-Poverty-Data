@@ -1,0 +1,57 @@
+pip 0 Collecting rasterio
+  Downloading rasterio-1.5.2-cp314-cp314-manylinux_2_28_x86_64.whl.metadata (8.6 kB)
+Collecting numpy
+  Downloading numpy-2.5.5-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting affine (from rasterio)
+  Downloading affine-3.0.1-py3-none-any.whl.metadata (4.5 kB)
+Requirement already satisfied: attrs in /usr/lib/python3/dist-packages (from rasterio) (25.4.0)
+Requirement already satisfied: certifi in /usr/lib/python3/dist-packages (from rasterio) (2026.1.4)
+Requirement already satisfied: click!=8.2.*,>=4.0 in /usr/lib/python3/dist-packages (from rasterio) (8.1.8)
+Requirement already satisfied: pyparsing>=3.0 in /usr/lib/python3/dist-packages (from rasterio) (3.3.2)
+Downloading rasterio-1.5.2-cp314-cp314-manylinux_2_28_x86_64.whl (39.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39.0/39.0 MB 149.3 MB/s eta 0:00:00
+Downloading numpy-2.5.5-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (15.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.7/15.7 MB 316.4 MB/s eta 0:00:00
+Downloading affine-3.0.1-py3-none-any.whl (10 kB)
+Installing collected packages: numpy, affine, rasterio
+
+Successfully installed affine-3.0.1 numpy-2.5.5 rasterio-1.5.2
+ 
+files: ['ind_f_00_2025_CN_1km_R2025A_UA_v1.tif', 'ind_f_01_2025_CN_1km_R2025A_UA_v1.tif', 'ind_f_05_2025_CN_1km_R2025A_UA_v1.tif', 'ind_f_10_2025_CN_1km_R2025A_UA_v1.tif', 'ind_f_15_2025_CN_1km_R2025A_UA_v1.tif', 'ind_f_20_2025_CN_1km_R2025A_UA_v1.tif', 'ind_f_25_2025_CN_1km_R2025A_UA_v1.tif', 'ind_f_30_2025_CN_1km_R2025A_UA_v1.tif', 'ind_f_35_2025_CN_1km_R2025A_UA_v1.tif', 'ind_f_40_2025_CN_1km_R2025A_UA_v1.tif', 'ind_f_45_2025_CN_1km_R2025A_UA_v1.tif', 'ind_f_50_2025_CN_1km_R2025A_UA_v1.tif', 'ind_f_55_2025_CN_1km_R2025A_UA_v1.tif', 'ind_f_60_2025_CN_1km_R2025A_UA_v1.tif', 'ind_f_65_2025_CN_1km_R2025A_UA_v1.tif', 'ind_f_70_2025_CN_1km_R2025A_UA_v1.tif', 'ind_f_75_2025_CN_1km_R2025A_UA_v1.tif', 'ind_f_80_2025_CN_1km_R2025A_UA_v1.tif', 'ind_f_85_2025_CN_1km_R2025A_UA_v1.tif', 'ind_f_90_2025_CN_1km_R2025A_UA_v1.tif', 'ind_m_00_2025_CN_1km_R2025A_UA_v1.tif', 'ind_m_01_2025_CN_1km_R2025A_UA_v1.tif', 'ind_m_05_2025_CN_1km_R2025A_UA_v1.tif', 'ind_m_10_2025_CN_1km_R2025A_UA_v1.tif', 'ind_m_15_2025_CN_1km_R2025A_UA_v1.tif', 'ind_m_20_2025_CN_1km_R2025A_UA_v1.tif', 'ind_m_25_2025_CN_1km_R2025A_UA_v1.tif', 'ind_m_30_2025_CN_1km_R2025A_UA_v1.tif', 'ind_m_35_2025_CN_1km_R2025A_UA_v1.tif', 'ind_m_40_2025_CN_1km_R2025A_UA_v1.tif', 'ind_m_45_2025_CN_1km_R2025A_UA_v1.tif', 'ind_m_50_2025_CN_1km_R2025A_UA_v1.tif', 'ind_m_55_2025_CN_1km_R2025A_UA_v1.tif', 'ind_m_60_2025_CN_1km_R2025A_UA_v1.tif', 'ind_m_65_2025_CN_1km_R2025A_UA_v1.tif', 'ind_m_70_2025_CN_1km_R2025A_UA_v1.tif', 'ind_m_75_2025_CN_1km_R2025A_UA_v1.tif', 'ind_m_80_2025_CN_1km_R2025A_UA_v1.tif', 'ind_m_85_2025_CN_1km_R2025A_UA_v1.tif', 'ind_m_90_2025_CN_1km_R2025A_UA_v1.tif', 'ind_t_00_2025_CN_1km_R2025A_UA_v1.tif', 'ind_t_01_2025_CN_1km_R2025A_UA_v1.tif', 'ind_t_05_2025_CN_1km_R2025A_UA_v1.tif', 'ind_t_10_2025_CN_1km_R2025A_UA_v1.tif', 'ind_t_15_2025_CN_1km_R2025A_UA_v1.tif', 'ind_t_20_2025_CN_1km_R2025A_UA_v1.tif', 'ind_t_25_2025_CN_1km_R2025A_UA_v1.tif', 'ind_t_30_2025_CN_1km_R2025A_UA_v1.tif', 'ind_t_35_2025_CN_1km_R2025A_UA_v1.tif', 'ind_t_40_2025_CN_1km_R2025A_UA_v1.tif', 'ind_t_45_2025_CN_1km_R2025A_UA_v1.tif', 'ind_t_50_2025_CN_1km_R2025A_UA_v1.tif', 'ind_t_55_2025_CN_1km_R2025A_UA_v1.tif', 'ind_t_60_2025_CN_1km_R2025A_UA_v1.tif', 'ind_t_65_2025_CN_1km_R2025A_UA_v1.tif', 'ind_t_70_2025_CN_1km_R2025A_UA_v1.tif', 'ind_t_75_2025_CN_1km_R2025A_UA_v1.tif', 'ind_t_80_2025_CN_1km_R2025A_UA_v1.tif', 'ind_t_85_2025_CN_1km_R2025A_UA_v1.tif', 'ind_t_90_2025_CN_1km_R2025A_UA_v1.tif']
+ind_f_00_2025_CN_1km_R2025A_UA_v1.tif India total 10972672 outside districts 694
+ind_m_00_2025_CN_1km_R2025A_UA_v1.tif India total 11735064 outside districts 730
+ind_f_01_2025_CN_1km_R2025A_UA_v1.tif India total 43595934 outside districts 2748
+ind_m_01_2025_CN_1km_R2025A_UA_v1.tif India total 46940990 outside districts 2905
+ind_f_05_2025_CN_1km_R2025A_UA_v1.tif India total 56779110 outside districts 3473
+ind_m_05_2025_CN_1km_R2025A_UA_v1.tif India total 61757990 outside districts 3676
+ind_f_10_2025_CN_1km_R2025A_UA_v1.tif India total 59096126 outside districts 3527
+ind_m_10_2025_CN_1km_R2025A_UA_v1.tif India total 64792548 outside districts 3785
+ind_f_15_2025_CN_1km_R2025A_UA_v1.tif India total 60471581 outside districts 3502
+ind_m_15_2025_CN_1km_R2025A_UA_v1.tif India total 66522444 outside districts 3778
+ind_f_20_2025_CN_1km_R2025A_UA_v1.tif India total 61881455 outside districts 3672
+ind_m_20_2025_CN_1km_R2025A_UA_v1.tif India total 68189616 outside districts 3742
+ind_f_25_2025_CN_1km_R2025A_UA_v1.tif India total 59397187 outside districts 3549
+ind_m_25_2025_CN_1km_R2025A_UA_v1.tif India total 65501646 outside districts 3695
+ind_f_30_2025_CN_1km_R2025A_UA_v1.tif India total 57085414 outside districts 3300
+ind_m_30_2025_CN_1km_R2025A_UA_v1.tif India total 62143343 outside districts 3487
+ind_f_35_2025_CN_1km_R2025A_UA_v1.tif India total 54064337 outside districts 3155
+ind_m_35_2025_CN_1km_R2025A_UA_v1.tif India total 58383258 outside districts 3314
+ind_f_40_2025_CN_1km_R2025A_UA_v1.tif India total 48615056 outside districts 2825
+ind_m_40_2025_CN_1km_R2025A_UA_v1.tif India total 52283883 outside districts 3047
+ind_f_45_2025_CN_1km_R2025A_UA_v1.tif India total 42397607 outside districts 2394
+ind_m_45_2025_CN_1km_R2025A_UA_v1.tif India total 44881622 outside districts 2582
+ind_f_50_2025_CN_1km_R2025A_UA_v1.tif India total 37342520 outside districts 2083
+ind_m_50_2025_CN_1km_R2025A_UA_v1.tif India total 38710363 outside districts 2240
+ind_f_55_2025_CN_1km_R2025A_UA_v1.tif India total 31881950 outside districts 1717
+ind_m_55_2025_CN_1km_R2025A_UA_v1.tif India total 32483879 outside districts 1863
+ind_f_60_2025_CN_1km_R2025A_UA_v1.tif India total 26791032 outside districts 1347
+ind_m_60_2025_CN_1km_R2025A_UA_v1.tif India total 26845290 outside districts 1439
+ind_f_65_2025_CN_1km_R2025A_UA_v1.tif India total 21491880 outside districts 1091
+ind_m_65_2025_CN_1km_R2025A_UA_v1.tif India total 20902274 outside districts 1128
+ind_f_70_2025_CN_1km_R2025A_UA_v1.tif India total 15641240 outside districts 797
+ind_m_70_2025_CN_1km_R2025A_UA_v1.tif India total 14548464 outside districts 765
+ind_f_75_2025_CN_1km_R2025A_UA_v1.tif India total 9299065 outside districts 501
+ind_m_75_2025_CN_1km_R2025A_UA_v1.tif India total 8074125 outside districts 447
+ind_f_80_2025_CN_1km_R2025A_UA_v1.tif India total 5243758 outside districts 285
+ind_m_80_2025_CN_1km_R2025A_UA_v1.tif India total 4179645 outside districts 235
+done 734
