@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal Dapodik – Data Pokok Pendidikan Indonesia</title>
+    <meta name="title" content="Portal Dapodik 2026 – Data Pokok Pendidikan Indonesia">
+    <meta name="description" content="Portal resmi Dapodik untuk pengelolaan data sekolah, siswa, guru, dan tenaga kependidikan secara terintegrasi dan akurat.">
+    <meta name="keywords" content="dapodik, dapodik 2026, portal dapodik, data pokok pendidikan, dapodik kemendikbud, dapodik sekolah, data siswa nasional, data guru ptk, aplikasi dapodik, sistem pendidikan indonesia, data pendidikan nasional, dapodik online, dapodik login, dapodik terbaru, manajemen data sekolah">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Kementerian Pendidikan">
+    <meta name="language" content="id">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Portal Dapodik 2026 – Data Pokok Pendidikan Indonesia">
+    <meta property="og:description" content="Portal resmi Dapodik untuk pengelolaan data sekolah, siswa, guru, dan tenaga kependidikan secara terintegrasi dan akurat.">
+    <meta property="og:site_name" content="Portal Dapodik">
+    <meta property="og:locale" content="id_ID">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portal Dapodik 2026 – Data Pokok Pendidikan Indonesia">
+    <meta name="twitter:description" content="Portal resmi Dapodik untuk pengelolaan data sekolah, siswa, guru, dan tenaga kependidikan secara terintegrasi dan akurat.">
+  <script type="module" crossorigin src="/assets/index-Dvn9jQHx.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DVp24szq.css">
+</head>
+
+  <body>
+    <div id="root"></div>
+    <script src="/env.js"></script>
+  </body>
+</html>

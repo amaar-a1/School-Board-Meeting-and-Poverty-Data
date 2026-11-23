@@ -1,0 +1,54 @@
+OK id_dapo_nat.json 1992 https://dapo.kemendikdasmen.go.id/rekap/progres?id_level_wilayah=0&kode_wilayah=000000&semester_id=20251
+   b'<!doctype html>\n<html lang="id">\n  <head>\n    <meta charset="UTF-8" />\n    <meta name="viewport" content="width=device-width, initial-scale=1.0" />\n    <title>Portal Dapodik \xe2\x80\x93 Data Pokok Pendidikan Indonesia</title>\n    <meta name="title" content="Portal Dapodik 2026 \xe2\x80\x93 Data Pokok Pendidikan Indo'
+OK id_dapo_home.html 1992 https://dapo.kemendikdasmen.go.id/
+   b'<!doctype html>\n<html lang="id">\n  <head>\n    <meta charset="UTF-8" />\n    <meta name="viewport" content="width=device-width, initial-scale=1.0" />\n    <title>Portal Dapodik \xe2\x80\x93 Data Pokok Pendidikan Indonesia</title>\n    <meta name="title" content="Portal Dapodik 2026 \xe2\x80\x93 Data Pokok Pendidikan Indo'
+OK th_nesdc.html 12569184 https://www.nesdc.go.th/main.php?filename=PovertyData
+   b'<!DOCTYPE html>\n<html lang="th" prefix="og: https://ogp.me/ns#">\n\n<head>\n    \n<!-- Google tag (gtag.js) -->\n<script async src="https://www.googletagmanager.com/gtag/js?id=G-L877XYH814"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gta'
+OK th_nesdc_en.html 6232780 https://www.nesdc.go.th/nesdb_en/main.php?filename=social_dev_report
+   b'<!DOCTYPE html>\n<html lang="en-US" prefix="og: https://ogp.me/ns#">\n\n<head>\n    \n<!-- Google tag (gtag.js) -->\n<script async src="https://www.googletagmanager.com/gtag/js?id=G-L877XYH814"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  '
+OK kz_taldau.json 2 https://taldau.stat.gov.kz/ru/Api/GetIndexData/703974?period=7&dics=67
+   b'[]'
+OK kz_stat.html 59994 https://stat.gov.kz/en/industries/labor-and-income/stat-life/
+   b'<!DOCTYPE html>\n<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="">\n<head>\n    <meta name="google" content="notranslate">\n    <meta name="robots" content="" />\n    <meta name="description" content="Bureau of national statistics of the Agency for strategic planning and reform'
+ERR mn_1212.html HTTP Error 404: Not Found https://www.1212.mn/en/statistic/statcate/573054/table-view/DT_NSO_0600_031V1
+OK py_ine.html 620426 https://www.ine.gov.py/vt/publicacion.php?publicacion=2
+   b'<!DOCTYPE html>\r\n<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  \r\n<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  \r\n<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  \r\n<head>\r\n    <title>DGEEC::Direcci\xc3\xb3n General de Estad\xc3\xadstica, Encuestas y Censos</title>\r\n    <!-- Meta -->'
+ERR gh_mpi.html HTTP Error 404: Not Found https://statsghana.gov.gh/gssmain/fileUpload/pressrelease/2021%20PHC%20Multidimensional%20Poverty%20Report.pdf
+pip 0
+idn_f_00_2025_CN_1km_R2025A_UA_v1.tif total 2139747 outside 169
+idn_m_00_2025_CN_1km_R2025A_UA_v1.tif total 2261675 outside 178
+idn_f_01_2025_CN_1km_R2025A_UA_v1.tif total 8637033 outside 680
+idn_m_01_2025_CN_1km_R2025A_UA_v1.tif total 9120499 outside 719
+idn_f_05_2025_CN_1km_R2025A_UA_v1.tif total 11175372 outside 859
+idn_m_05_2025_CN_1km_R2025A_UA_v1.tif total 11777711 outside 904
+idn_f_10_2025_CN_1km_R2025A_UA_v1.tif total 11888015 outside 992
+idn_m_10_2025_CN_1km_R2025A_UA_v1.tif total 12522463 outside 1060
+idn_f_15_2025_CN_1km_R2025A_UA_v1.tif total 11427312 outside 921
+idn_m_15_2025_CN_1km_R2025A_UA_v1.tif total 12028635 outside 997
+idn_f_20_2025_CN_1km_R2025A_UA_v1.tif total 10696684 outside 791
+idn_m_20_2025_CN_1km_R2025A_UA_v1.tif total 11246706 outside 863
+idn_f_25_2025_CN_1km_R2025A_UA_v1.tif total 10770647 outside 796
+idn_m_25_2025_CN_1km_R2025A_UA_v1.tif total 11284924 outside 841
+idn_f_30_2025_CN_1km_R2025A_UA_v1.tif total 10324504 outside 755
+idn_m_30_2025_CN_1km_R2025A_UA_v1.tif total 10817255 outside 813
+idn_f_35_2025_CN_1km_R2025A_UA_v1.tif total 10143274 outside 723
+idn_m_35_2025_CN_1km_R2025A_UA_v1.tif total 10581032 outside 779
+idn_f_40_2025_CN_1km_R2025A_UA_v1.tif total 10251072 outside 668
+idn_m_40_2025_CN_1km_R2025A_UA_v1.tif total 10580472 outside 730
+idn_f_45_2025_CN_1km_R2025A_UA_v1.tif total 9559779 outside 588
+idn_m_45_2025_CN_1km_R2025A_UA_v1.tif total 9694219 outside 646
+idn_f_50_2025_CN_1km_R2025A_UA_v1.tif total 8707316 outside 495
+idn_m_50_2025_CN_1km_R2025A_UA_v1.tif total 8653360 outside 530
+idn_f_55_2025_CN_1km_R2025A_UA_v1.tif total 7677285 outside 414
+idn_m_55_2025_CN_1km_R2025A_UA_v1.tif total 7428159 outside 445
+idn_f_60_2025_CN_1km_R2025A_UA_v1.tif total 6279608 outside 321
+idn_m_60_2025_CN_1km_R2025A_UA_v1.tif total 5833183 outside 328
+idn_f_65_2025_CN_1km_R2025A_UA_v1.tif total 4747881 outside 230
+idn_m_65_2025_CN_1km_R2025A_UA_v1.tif total 4132006 outside 212
+idn_f_70_2025_CN_1km_R2025A_UA_v1.tif total 3184606 outside 152
+idn_m_70_2025_CN_1km_R2025A_UA_v1.tif total 2529149 outside 124
+idn_f_75_2025_CN_1km_R2025A_UA_v1.tif total 2052944 outside 94
+idn_m_75_2025_CN_1km_R2025A_UA_v1.tif total 1397199 outside 71
+idn_f_80_2025_CN_1km_R2025A_UA_v1.tif total 1255866 outside 54
+idn_m_80_2025_CN_1km_R2025A_UA_v1.tif total 731560 outside 33
+done 519
