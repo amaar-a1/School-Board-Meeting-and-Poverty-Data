@@ -46,6 +46,8 @@
     box.addEventListener("blur", () => setTimeout(hide, 150));
     $("find-card").addEventListener("click", action);
     $("find").hidden = false;
+    window.SiteSearch = { index, norm, ready: true };
+    document.dispatchEvent(new Event("site-search-ready"));
   }
 
   function show() {
@@ -94,7 +96,8 @@
       (note ? `<p class="note">${esc(note)}</p>` : "") +
       `<div class="find-actions"><button type="button" data-act="map">Show on map</button>` +
       `<button type="button" data-act="table">Show in data table</button>` +
-      `<button type="button" data-act="state">View ${esc(where)}</button></div>`;
+      `<button type="button" data-act="state">View ${esc(where)}</button>` +
+      `<button type="button" data-act="compare">Compare with another place</button></div>`;
     $("find-card").hidden = false;
   }
 
@@ -107,6 +110,7 @@
     if (!act || !picked) return;
     const sd = window.SiteData, r = picked.row;
     if (act === "close") { $("find-card").hidden = true; return; }
+    if (act === "compare") { if (window.SiteCompare) window.SiteCompare.start(r["District ID"]); return; }
     const key = picked.ds.country && picked.ds.country !== "US" ? sd.keyOf(picked.ds) : picked.terr ? "territories" : r.State;
     sd.select(key);
     if (act !== "close" && window.SiteLinks) window.SiteLinks.place(r["District ID"]);

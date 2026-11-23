@@ -740,6 +740,14 @@
     });
   }
 
+  let userMoved = false, atUsed = false;
+  function saveAt() {
+    if (!userMoved || !window.SiteLinks) return;
+    userMoved = false;
+    const c = map.getCenter();
+    window.SiteLinks.set({ at: `${c.lat.toFixed(3)},${c.lng.toFixed(3)},${map.getZoom()}` });
+  }
+
   // Zooms to the selected state (or, for the territories, the first territory).
   function zoomToCurrent() {
     if (!map || !current) return;
@@ -1192,6 +1200,7 @@
     // For checking: the border files loaded so far.
     loadedLayers: () => Object.keys(loadingLayers),
     detail: () => ({ ...detail }),
+    position: () => map && { lat: +map.getCenter().lat.toFixed(3), lng: +map.getCenter().lng.toFixed(3), zoom: map.getZoom() },
     // Zooms to and outlines a district by its District ID (used by the site-wide search).
     focus: (id) => loading && loading.then(() => loadLayers(layersForId(id))).then(() => ((!byId.has(id) || !byId.get(id).layers.length) && /^FRA-/.test(id) ? setFrSmall(true) : null)).then(() => {
       map.invalidateSize(); focusEntry(byId.get(id) || [...byId.values()].find((g) => g.row && g.row["District ID"] === id));
@@ -1206,13 +1215,19 @@
             // Without the index, every layer counts as everywhere: all load (the old behaviour).
             index = idx || Object.fromEntries(LAYERS.filter((n) => n !== "world").map((n) => [n, [[-180, -90, 180, 90]]]));
             build(datasets, world);
-            map.on("moveend", () => { ensureView(); updateDetail(); });
+            map.on("moveend", () => { ensureView(); updateDetail(); saveAt(); });
+            // Moves the reader makes (drag, wheel, pinch, the zoom buttons) go into the link as ?at=lat,lng,zoom.
+            ["mousedown", "wheel", "touchstart", "keydown"].forEach((ev) => map.getContainer().addEventListener(ev, () => { userMoved = true; }, { passive: true }));
             $("map-status").textContent = "";
           })
           .catch((e) => { $("map-status").textContent = `Couldn't load the map (${e.message}).`; throw e; });
       }
       loading.then(() => loadLayers(layersForView(current))).then(() => {
-        map.invalidateSize(); restyle(); zoomToCurrent();
+        map.invalidateSize(); restyle();
+        // A shared link's map position, the first time the map opens; otherwise the view's usual zoom.
+        const at = !atUsed && window.SiteLinks && String(window.SiteLinks.get("at") || "").split(",").map(Number);
+        atUsed = true;
+        if (at && at.length === 3 && at.every(isFinite)) map.setView([at[0], at[1]], at[2]); else zoomToCurrent();
         // The zoom animates: load what's in view once it has settled (moveend does it after later moves too).
         setTimeout(() => { viewReady = true; ensureView(); }, 700);
       })
