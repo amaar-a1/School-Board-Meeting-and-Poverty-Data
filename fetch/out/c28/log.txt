@@ -1,0 +1,56 @@
+OK my_enrol.json 1602104 https://api.data.gov.my/data-catalogue?id=enrolment_school_district&limit=100000
+   b'[{"sex": "both", "date": "2017-01-01", "stage": "primary", "state": "Malaysia", "district": "All Districts", "students": 2689810}, {"sex": "both", "date": "2018-01-01", "stage": "primary", "state": "Malaysia", "district": "All Districts", "students": 2694779}, {"sex": "both", "date": "2019-01-01", "'
+OK my_schools_district.json 438 https://api.data.gov.my/data-catalogue?id=schools_district&limit=3
+   b'[{"date": "2017-01-01", "type": "Sekolah Rendah Kerajaan", "stage": "primary", "state": "Malaysia", "schools": 7776, "district": "All Districts"}, {"date": "2018-01-01", "type": "Sekolah Rendah Kerajaan", "stage": "primary", "state": "Malaysia", "schools": 7774, "district": "All Districts"}, {"date"'
+OK my_teachers_district.json 387 https://api.data.gov.my/data-catalogue?id=teachers_district&limit=3
+   b'[{"sex": "both", "date": "2017-01-01", "stage": "primary", "state": "Malaysia", "district": "All Districts", "teachers": 230631}, {"sex": "both", "date": "2018-01-01", "stage": "primary", "state": "Malaysia", "district": "All Districts", "teachers": 238858}, {"sex": "both", "date": "2019-01-01", "st'
+ERR my_enrolment_school_state.json HTTP Error 404: Not Found https://api.data.gov.my/data-catalogue?id=enrolment_school_state&limit=3
+OK my_district.geojson 947755 https://raw.githubusercontent.com/dosm-malaysia/data-open/main/datasets/geodata/administrative_2_district.geojson
+   b'{\n"type": "FeatureCollection",\n"name": "geo_2_district_simp2",\n"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },\n"features": [\n{ "type": "Feature", "properties": { "state": "Johor", "district": "Batu Pahat", "code_state": 1, "code_district": 1, "code_state_distric'
+ERR my_gb_adm2.json <urlopen error [Errno 110] Connection timed out> https://www.geoboundaries.org/api/current/gbOpen/MYS/ADM2/
+OK wb45_ind.json 103718 https://api.worldbank.org/v2/sources/45/indicators?format=json&per_page=3000
+   b'[{"page":1,"pages":1,"per_page":"3000","total":274},[{"id":"BPK.AUD.SUBN","name":"BPK Audit Report on Sub-National Budget","unit":"","source":{"id":"45","value":"Indonesia Database for Policy and Economic Research"},"sourceNote":"","sourceOrganization":"BPK - Indonesia Audit Board, Report","topics":'
+ERR wb45_cty.json HTTP Error 400: Bad Request https://api.worldbank.org/v2/sources/45/country?format=json&per_page=2000
+OK wb45_HOU.XPD.TOTL.20POOR.CR.json 211 https://api.worldbank.org/v2/sources/45/country/all/series/HOU.XPD.TOTL.20POOR.CR/time/all?format=json&per_page=20000
+   b'<?xml version="1.0" encoding="utf-8"?><wb:error xmlns:wb="http://www.worldbank.org"><wb:message id="160" key="Data not found.">The provided parameter value is not valid or data not found.</wb:message></wb:error>'
+OK wb45_SE.JRSEC.NENR.ZS.json 211 https://api.worldbank.org/v2/sources/45/country/all/series/SE.JRSEC.NENR.ZS/time/all?format=json&per_page=20000
+   b'<?xml version="1.0" encoding="utf-8"?><wb:error xmlns:wb="http://www.worldbank.org"><wb:message id="160" key="Data not found.">The provided parameter value is not valid or data not found.</wb:message></wb:error>'
+OK wb45_SE.LITR.15UP.ZS.json 211 https://api.worldbank.org/v2/sources/45/country/all/series/SE.LITR.15UP.ZS/time/all?format=json&per_page=20000
+   b'<?xml version="1.0" encoding="utf-8"?><wb:error xmlns:wb="http://www.worldbank.org"><wb:message id="160" key="Data not found.">The provided parameter value is not valid or data not found.</wb:message></wb:error>'
+OK wb45_SE.PRM.NENR.ZS.json 211 https://api.worldbank.org/v2/sources/45/country/all/series/SE.PRM.NENR.ZS/time/all?format=json&per_page=20000
+   b'<?xml version="1.0" encoding="utf-8"?><wb:error xmlns:wb="http://www.worldbank.org"><wb:message id="160" key="Data not found.">The provided parameter value is not valid or data not found.</wb:message></wb:error>'
+OK wb45_SE.SRSEC.NENR.ZS.json 211 https://api.worldbank.org/v2/sources/45/country/all/series/SE.SRSEC.NENR.ZS/time/all?format=json&per_page=20000
+   b'<?xml version="1.0" encoding="utf-8"?><wb:error xmlns:wb="http://www.worldbank.org"><wb:message id="160" key="Data not found.">The provided parameter value is not valid or data not found.</wb:message></wb:error>'
+OK wb45_SI.POV.BPL.json 211 https://api.worldbank.org/v2/sources/45/country/all/series/SI.POV.BPL/time/all?format=json&per_page=20000
+   b'<?xml version="1.0" encoding="utf-8"?><wb:error xmlns:wb="http://www.worldbank.org"><wb:message id="160" key="Data not found.">The provided parameter value is not valid or data not found.</wb:message></wb:error>'
+OK wb45_SI.POV.NAPL.json 211 https://api.worldbank.org/v2/sources/45/country/all/series/SI.POV.NAPL/time/all?format=json&per_page=20000
+   b'<?xml version="1.0" encoding="utf-8"?><wb:error xmlns:wb="http://www.worldbank.org"><wb:message id="160" key="Data not found.">The provided parameter value is not valid or data not found.</wb:message></wb:error>'
+OK wb45_SI.POV.NAPR.ZS.json 211 https://api.worldbank.org/v2/sources/45/country/all/series/SI.POV.NAPR.ZS/time/all?format=json&per_page=20000
+   b'<?xml version="1.0" encoding="utf-8"?><wb:error xmlns:wb="http://www.worldbank.org"><wb:message id="160" key="Data not found.">The provided parameter value is not valid or data not found.</wb:message></wb:error>'
+OK wb45_SI.POV.NGAP.json 211 https://api.worldbank.org/v2/sources/45/country/all/series/SI.POV.NGAP/time/all?format=json&per_page=20000
+   b'<?xml version="1.0" encoding="utf-8"?><wb:error xmlns:wb="http://www.worldbank.org"><wb:message id="160" key="Data not found.">The provided parameter value is not valid or data not found.</wb:message></wb:error>'
+OK wb45_SI.POV.NSEV.json 211 https://api.worldbank.org/v2/sources/45/country/all/series/SI.POV.NSEV/time/all?format=json&per_page=20000
+   b'<?xml version="1.0" encoding="utf-8"?><wb:error xmlns:wb="http://www.worldbank.org"><wb:message id="160" key="Data not found.">The provided parameter value is not valid or data not found.</wb:message></wb:error>'
+OK wb45_SP.POP.TOTL.json 211 https://api.worldbank.org/v2/sources/45/country/all/series/SP.POP.TOTL/time/all?format=json&per_page=20000
+   b'<?xml version="1.0" encoding="utf-8"?><wb:error xmlns:wb="http://www.worldbank.org"><wb:message id="160" key="Data not found.">The provided parameter value is not valid or data not found.</wb:message></wb:error>'
+OK wb45_SP.RUR.TOTL.ZS.json 211 https://api.worldbank.org/v2/sources/45/country/all/series/SP.RUR.TOTL.ZS/time/all?format=json&per_page=20000
+   b'<?xml version="1.0" encoding="utf-8"?><wb:error xmlns:wb="http://www.worldbank.org"><wb:message id="160" key="Data not found.">The provided parameter value is not valid or data not found.</wb:message></wb:error>'
+OK wb45_SP.URB.TOTL.ZS.json 211 https://api.worldbank.org/v2/sources/45/country/all/series/SP.URB.TOTL.ZS/time/all?format=json&per_page=20000
+   b'<?xml version="1.0" encoding="utf-8"?><wb:error xmlns:wb="http://www.worldbank.org"><wb:message id="160" key="Data not found.">The provided parameter value is not valid or data not found.</wb:message></wb:error>'
+OK wb45_SP.URB.TOTL.ZS.SUS.json 211 https://api.worldbank.org/v2/sources/45/country/all/series/SP.URB.TOTL.ZS.SUS/time/all?format=json&per_page=20000
+   b'<?xml version="1.0" encoding="utf-8"?><wb:error xmlns:wb="http://www.worldbank.org"><wb:message id="160" key="Data not found.">The provided parameter value is not valid or data not found.</wb:message></wb:error>'
+ERR id_gb_adm2.json <urlopen error [Errno 110] Connection timed out> https://www.geoboundaries.org/api/current/gbOpen/IDN/ADM2/
+OK hdx_rwanda_district_poverty.json 989123 https://data.humdata.org/api/3/action/package_search?rows=15&q=rwanda%20district%20poverty
+   b'{"help": "https://data.humdata.org/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 250, "facets": {}, "expanded": {}, "results": [{"archived": false, "batch": "6cbb2bd6-ebfc-4031-ba6f-3e5e93a94a3d", "caveats": "", "creator_user_id": "1a008a13-52b1-4326-a9ea-aa541372'
+OK hdx_sri_lanka_poverty_divisional_secretariat.json 294 https://data.humdata.org/api/3/action/package_search?rows=15&q=sri%20lanka%20poverty%20divisional%20secretariat
+   b'{"help": "https://data.humdata.org/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 0, "facets": {}, "expanded": {}, "results": [], "sort": "score desc, last_modified desc", "search_facets": {"pivot": {}, "queries": []}, "facet_pivot": {}, "facet_queries": {}}}'
+OK hdx_ghana_district_poverty_2021.json 920342 https://data.humdata.org/api/3/action/package_search?rows=15&q=ghana%20district%20poverty%202021
+   b'{"help": "https://data.humdata.org/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 6, "facets": {}, "expanded": {}, "results": [{"archived": false, "batch": "d5019248-cbd5-42fa-91e4-1696b3a8cb2d", "caveats": "The following geographical caveats may not completely agr'
+OK hdx_bangladesh_upazila_poverty.json 209171 https://data.humdata.org/api/3/action/package_search?rows=15&q=bangladesh%20upazila%20poverty
+   b'{"help": "https://data.humdata.org/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 63, "facets": {}, "expanded": {}, "results": [{"archived": false, "batch": "6cbb2bd6-ebfc-4031-ba6f-3e5e93a94a3d", "caveats": "", "creator_user_id": "1a008a13-52b1-4326-a9ea-aa5413725'
+OK hdx_uganda_district_poverty.json 230073 https://data.humdata.org/api/3/action/package_search?rows=15&q=uganda%20district%20poverty
+   b'{"help": "https://data.humdata.org/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 291, "facets": {}, "expanded": {}, "results": [{"archived": false, "batch": "6cbb2bd6-ebfc-4031-ba6f-3e5e93a94a3d", "caveats": "", "creator_user_id": "1a008a13-52b1-4326-a9ea-aa541372'
+OK hdx_mongolia_soum_poverty.json 1154118 https://data.humdata.org/api/3/action/package_search?rows=15&q=mongolia%20soum%20poverty
+   b'{"help": "https://data.humdata.org/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 22, "facets": {}, "expanded": {}, "results": [{"archived": false, "batch": "6cbb2bd6-ebfc-4031-ba6f-3e5e93a94a3d", "caveats": "", "creator_user_id": "1a008a13-52b1-4326-a9ea-aa5413725'
+OK hdx_vietnam_province_poverty.json 349629 https://data.humdata.org/api/3/action/package_search?rows=15&q=vietnam%20province%20poverty
+   b'{"help": "https://data.humdata.org/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 221, "facets": {}, "expanded": {}, "results": [{"archived": false, "batch": "974b93a3-b028-4f8f-baf6-1dff161de3be", "creator_user_id": "1a008a13-52b1-4326-a9ea-aa541372577c", "data_up'

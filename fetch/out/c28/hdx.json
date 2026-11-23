@@ -1,0 +1,1586 @@
+{
+ "world-bank-poverty-indicators-for-rwanda": {
+  "title": "Rwanda - Poverty",
+  "res": [
+   [
+    "Poverty Indicators for Rwanda",
+    "CSV",
+    9998,
+    "https://data.humdata.org/dataset/3e0850d7-97da-4c1d-bd52-2d7dc4c01d67/resource/c8af27ac-785b-4e01-a2a5-c65f1927b7fc/download/poverty_rwa.csv"
+   ]
+  ]
+ },
+ "rwanda-mpi": {
+  "title": "Rwanda Multidimensional Poverty Index",
+  "res": [
+   [
+    "Rwanda MPI and Partial Indices",
+    "CSV",
+    793,
+    "https://data.humdata.org/dataset/06b01ee1-5691-4c25-af69-e50bde0f5b57/resource/60ad98bc-787d-49fd-86cb-a4d0482b745f/download/rwa_mpi.csv"
+   ],
+   [
+    "Rwanda MPI Trends Over Time",
+    "CSV",
+    2074,
+    "https://data.humdata.org/dataset/06b01ee1-5691-4c25-af69-e50bde0f5b57/resource/4f1556ac-c619-4dd0-a670-41f72f6ca43d/download/rwa_mpi_trends.csv"
+   ]
+  ]
+ },
+ "cod-ab-rwa": {
+  "title": "Rwanda - Subnational Administrative Boundaries",
+  "res": [
+   [
+    "rwa_gazetteer_rphc2012_v2.xlsx",
+    "XLSX",
+    161901,
+    "https://data.humdata.org/dataset/2768bdfd-6486-4963-8e3d-e63149478eb4/resource/95b0f509-7bbb-44cb-a783-92c8208fdfea/download/rwa_gazetteer_rphc2012_v2.xlsx"
+   ],
+   [
+    "rwa_adm_2006_NISR_WGS1984_20181002_SHP.zip",
+    "SHP",
+    15484795,
+    "https://data.humdata.org/dataset/2768bdfd-6486-4963-8e3d-e63149478eb4/resource/176eaace-708c-46b3-94e9-d5ba91cca08c/download/rwa_adm_2006_nisr_wgs1984_20181002_shp.zip"
+   ],
+   [
+    "rwa_2006_NISR_WGS1984_20181002_EMF.zip",
+    "EMF",
+    335411,
+    "https://data.humdata.org/dataset/2768bdfd-6486-4963-8e3d-e63149478eb4/resource/0394d7ee-255f-46e0-88bf-8ea1f0b68de1/download/rwa_2006_nisr_wgs1984_20181002_emf.zip"
+   ]
+  ]
+ },
+ "district-wise-poverty-indicators-2011": {
+  "title": "Nepal - District wise Poverty Indicators, 2011",
+  "res": [
+   [
+    "data_24.csv",
+    "CSV",
+    null,
+    "http://data.opennepal.net/sites/all/modules/pubdlcnt/pubdlcnt.php?file=http://data.opennepal.net/sites/default/files/resources/data_24.csv&nid=4398"
+   ]
+  ]
+ },
+ "world-bank-education-indicators-for-rwanda": {
+  "title": "Rwanda - Education",
+  "res": [
+   [
+    "Education Indicators for Rwanda",
+    "CSV",
+    1611216,
+    "https://data.humdata.org/dataset/46ff0e74-c24e-469c-b864-d4e6e0c95c42/resource/04770262-e979-416a-a7cd-65138ad35478/download/education_rwa.csv"
+   ]
+  ]
+ },
+ "world-bank-infrastructure-indicators-for-rwanda": {
+  "title": "Rwanda - Infrastructure",
+  "res": [
+   [
+    "Infrastructure Indicators for Rwanda",
+    "CSV",
+    115260,
+    "https://data.humdata.org/dataset/9a7fa0de-2376-4cab-a55b-ebcf2e2b45ec/resource/2848e4e0-e1b2-4eb9-b0ff-6e2b465ecaa9/download/infrastructure_rwa.csv"
+   ]
+  ]
+ },
+ "who-data-for-rwa": {
+  "title": "Rwanda - Health Indicators",
+  "res": [
+   [
+    "All Health Indicators for Rwanda",
+    "CSV",
+    9956898,
+    "https://data.humdata.org/dataset/b1d5c183-5258-46bb-87ba-e264c8bb9699/resource/838b86c2-2331-40b7-8b70-4b065bd90b38/download/health_indicators_rwa.csv"
+   ],
+   [
+    "Health systems Indicators for Rwanda",
+    "CSV",
+    12866,
+    "https://data.humdata.org/dataset/b1d5c183-5258-46bb-87ba-e264c8bb9699/resource/487da2f7-e1d3-4844-86f2-27c7a9cd9cb7/download/health_systems_indicators_rwa.csv"
+   ],
+   [
+    "Malaria Indicators for Rwanda",
+    "CSV",
+    36478,
+    "https://data.humdata.org/dataset/b1d5c183-5258-46bb-87ba-e264c8bb9699/resource/e55ae2c9-a09e-4570-882c-12e324b2cf28/download/malaria_indicators_rwa.csv"
+   ],
+   [
+    "Tuberculosis Indicators for Rwanda",
+    "CSV",
+    71240,
+    "https://data.humdata.org/dataset/b1d5c183-5258-46bb-87ba-e264c8bb9699/resource/897ddbf8-e995-4298-861b-79ead6231d48/download/tuberculosis_indicators_rwa.csv"
+   ],
+   [
+    "Neglected tropical diseases Indicators for Rwanda",
+    "CSV",
+    22170,
+    "https://data.humdata.org/dataset/b1d5c183-5258-46bb-87ba-e264c8bb9699/resource/bd6a6900-366a-47b3-9c2f-0214bab5de72/download/neglected_tropical_diseases_indicators_rwa.csv"
+   ],
+   [
+    "Nutrition Indicators for Rwanda",
+    "CSV",
+    2667423,
+    "https://data.humdata.org/dataset/b1d5c183-5258-46bb-87ba-e264c8bb9699/resource/6b04164c-b183-4810-b099-cdee14542c75/download/nutrition_indicators_rwa.csv"
+   ],
+   [
+    "World Health Statistics Indicators for Rwanda",
+    "CSV",
+    7155041,
+    "https://data.humdata.org/dataset/b1d5c183-5258-46bb-87ba-e264c8bb9699/resource/3c844fe3-fe3f-4534-a333-0d34f85c6406/download/world_health_statistics_indicators_rwa.csv"
+   ],
+   [
+    "Child mortality Indicators for Rwanda",
+    "CSV",
+    996807,
+    "https://data.humdata.org/dataset/b1d5c183-5258-46bb-87ba-e264c8bb9699/resource/32a2c17b-d4ef-4012-928b-f0ace2e1a345/download/child_mortality_indicators_rwa.csv"
+   ],
+   [
+    "Noncommunicable diseases Indicators for Rwanda",
+    "CSV",
+    1629848,
+    "https://data.humdata.org/dataset/b1d5c183-5258-46bb-87ba-e264c8bb9699/resource/b9783adb-25e1-474c-924a-6af2ab415568/download/noncommunicable_diseases_indicators_rwa.csv"
+   ],
+   [
+    "Maternal and reproductive health Indicators for Rwanda",
+    "CSV",
+    62818,
+    "https://data.humdata.org/dataset/b1d5c183-5258-46bb-87ba-e264c8bb9699/resource/b4a1085e-fc10-446c-a677-2286deac7e74/download/maternal_and_reproductive_health_indicators_rwa.csv"
+   ],
+   [
+    "Air pollution Indicators for Rwanda",
+    "CSV",
+    815213,
+    "https://data.humdata.org/dataset/b1d5c183-5258-46bb-87ba-e264c8bb9699/resource/d4452aa5-1e7d-41b3-8d90-10ca905a6834/download/air_pollution_indicators_rwa.csv"
+   ],
+   [
+    "Dementia diagnosis, treatment and care Indicators for Rwanda",
+    "CSV",
+    3646,
+    "https://data.humdata.org/dataset/b1d5c183-5258-46bb-87ba-e264c8bb9699/resource/77127d05-9f2f-47a6-93f3-b5740111acf5/download/dementia_diagnosis_treatment_and_care_indicators_rwa.csv"
+   ]
+  ]
+ },
+ "poverty-rates-on-district-level-2001-2011": {
+  "title": "Nepal - Poverty Rates on District Level, 2001-2011",
+  "res": [
+   [
+    "Human%20Poverty%20rate.csv",
+    "CSV",
+    null,
+    "http://data.opennepal.net/sites/all/modules/pubdlcnt/pubdlcnt.php?file=http://data.opennepal.net/sites/default/files/resources/Human%20Poverty%20rate.csv&nid=176"
+   ]
+  ]
+ },
+ "world-bank-health-indicators-for-rwanda": {
+  "title": "Rwanda - Health",
+  "res": [
+   [
+    "Health Indicators for Rwanda",
+    "CSV",
+    1081157,
+    "https://data.humdata.org/dataset/95ea3627-5323-4ee4-8706-bcc6e469eec3/resource/ed382965-14b6-4026-a5fb-bc4d07782424/download/health_rwa.csv"
+   ]
+  ]
+ },
+ "world-bank-climate-change-indicators-for-rwanda": {
+  "title": "Rwanda - Climate Change",
+  "res": [
+   [
+    "Climate Change Indicators for Rwanda",
+    "CSV",
+    142423,
+    "https://data.humdata.org/dataset/ff7d350b-3df1-4edd-ac88-aa1c420098bb/resource/1145b751-0a0e-447b-a948-948f30d38e7d/download/climate-change_rwa.csv"
+   ]
+  ]
+ },
+ "rwanda---risk-assessment-indicators": {
+  "title": "Rwanda - Risk Assessment Indicators",
+  "res": [
+   [
+    "RWA_ADM2_access.csv",
+    "CSV",
+    2447,
+    "https://hot.storage.heigit.org/heigit-hdx-public/risk_assessment_inputs/rwa/RWA_ADM2_access.csv"
+   ],
+   [
+    "RWA_ADM2_flood_exposure.csv",
+    "CSV",
+    8732,
+    "https://hot.storage.heigit.org/heigit-hdx-public/risk_assessment_inputs/rwa/RWA_ADM2_flood_exposure.csv"
+   ],
+   [
+    "RWA_ADM2_facilities.csv",
+    "CSV",
+    605,
+    "https://hot.storage.heigit.org/heigit-hdx-public/risk_assessment_inputs/rwa/RWA_ADM2_facilities.csv"
+   ],
+   [
+    "RWA_ADM2_demographics.csv",
+    "CSV",
+    2164,
+    "https://hot.storage.heigit.org/heigit-hdx-public/risk_assessment_inputs/rwa/RWA_ADM2_demographics.csv"
+   ],
+   [
+    "RWA_ADM2_vulnerability.csv",
+    "CSV",
+    3966,
+    "https://hot.storage.heigit.org/heigit-hdx-public/risk_assessment_inputs/rwa/RWA_ADM2_vulnerability.csv"
+   ],
+   [
+    "RWA_ADM2_rural_population.csv",
+    "CSV",
+    2123,
+    "https://hot.storage.heigit.org/heigit-hdx-public/risk_assessment_inputs/rwa/RWA_ADM2_rural_population.csv"
+   ],
+   [
+    "RWA_ADM2_coping.csv",
+    "CSV",
+    7882,
+    "https://hot.storage.heigit.org/heigit-hdx-public/risk_assessment_inputs/rwa/RWA_ADM2_coping.csv"
+   ],
+   [
+    "RWA_ADM2_rai.csv",
+    "CSV",
+    3313,
+    "https://hot.storage.heigit.org/heigit-hdx-public/risk_assessment_inputs/rwa/RWA_ADM2_rai.csv"
+   ],
+   [
+    "RWA_ADM2_evacuability.csv",
+    "CSV",
+    2160,
+    "https://hot.storage.heigit.org/heigit-hdx-public/risk_assessment_inputs/rwa/RWA_ADM2_evacuability.csv"
+   ]
+  ]
+ },
+ "rwa-corruption-perceptions-index": {
+  "title": "Rwanda - Corruption Perceptions Index",
+  "res": [
+   [
+    "rwa_cpi.csv",
+    "CSV",
+    635,
+    "https://data.humdata.org/dataset/dcf903b6-d75a-4059-b043-2ba2a5fdf33b/resource/660f6fa1-f1be-48fd-9a09-3e260eb25b01/download/rwa_cpi.csv"
+   ]
+  ]
+ },
+ "human-poverty-index-value-by-districts-2011": {
+  "title": "Nepal - Human Poverty Index Value by Districts (2011)",
+  "res": [
+   [
+    "Human%20Poverty%20Index%20Value.csv",
+    "CSV",
+    null,
+    "http://data.opennepal.net/sites/all/modules/pubdlcnt/pubdlcnt.php?file=http://data.opennepal.net/sites/default/files/resources/Human%20Poverty%20Index%20Value.csv&nid=3161"
+   ]
+  ]
+ },
+ "hdro-data-for-rwanda": {
+  "title": "Rwanda - Human Development Indicators",
+  "res": [
+   [
+    "Human Development Indicators for Rwanda",
+    "CSV",
+    99744,
+    "https://data.humdata.org/dataset/7ed9ff77-21b4-4d26-a089-9a6a8d29b4f3/resource/1eb660d7-4a7d-469c-bb63-684a2056d4db/download/hdro_indicators_rwa.csv"
+   ],
+   [
+    "Aggregated Human Development Indicators for Rwanda",
+    "CSV",
+    13883,
+    "https://data.humdata.org/dataset/7ed9ff77-21b4-4d26-a089-9a6a8d29b4f3/resource/65326070-281d-4ecc-9257-6812272f81ab/download/hdro_indicators_aggregates_rwa.csv"
+   ]
+  ]
+ },
+ "global-mpi": {
+  "title": "Global Multidimensional Poverty Index",
+  "res": [
+   [
+    "Global MPI and Partial Indices",
+    "CSV",
+    165057,
+    "https://data.humdata.org/dataset/42b16840-3a56-4a20-9314-7aa171f1136c/resource/ef20310e-2821-4aa9-98a8-1950f45f10d0/download/global_mpi.csv"
+   ],
+   [
+    "Global MPI Trends Over Time",
+    "CSV",
+    304360,
+    "https://data.humdata.org/dataset/42b16840-3a56-4a20-9314-7aa171f1136c/resource/7c131db3-a172-4280-b37a-85f678192fbe/download/global_mpi_trends.csv"
+   ],
+   [
+    "MPI and Partial Indices National Database",
+    "XLSX",
+    198671,
+    "https://data.humdata.org/dataset/42b16840-3a56-4a20-9314-7aa171f1136c/resource/2b59362a-0c67-4e8b-bb78-b7aaf3a183fd/download/national-results-mpi.xlsx"
+   ],
+   [
+    "MPI and Partial Indices Subnational Database",
+    "XLSX",
+    1935836,
+    "https://data.humdata.org/dataset/42b16840-3a56-4a20-9314-7aa171f1136c/resource/45b18fbb-ab0d-4f54-ae23-c078f1eccf25/download/subnational-results-mpi.xlsx"
+   ],
+   [
+    "Trends Over Time MPI Database",
+    "XLSX",
+    7247611,
+    "https://data.humdata.org/dataset/42b16840-3a56-4a20-9314-7aa171f1136c/resource/2359037c-3cef-46da-a608-db360cb18b41/download/trends-over-time-mpi.xlsx"
+   ]
+  ]
+ },
+ "cod-ps-gha": {
+  "title": "Ghana - Subnational Population Statistics",
+  "res": [
+   [
+    "GHA_AdminBoundaries_TabularData.xlsx",
+    "XLSX",
+    22209,
+    "https://data.humdata.org/dataset/d618e616-dfbc-4993-9eac-0b484b5cd2b4/resource/31c4e4c6-529c-4559-8650-3d994219196d/download/gha_adminboundaries_tabulardata.xlsx"
+   ],
+   [
+    "gha_admpop_2021.xlsx",
+    "XLSX",
+    1093655,
+    "https://data.humdata.org/dataset/d618e616-dfbc-4993-9eac-0b484b5cd2b4/resource/b1a5e74b-7b32-4ed6-8f35-eac067ceb871/download/gha_admpop_2021.xlsx"
+   ],
+   [
+    "gha_admpop_adm0_2021.csv",
+    "CSV",
+    1012,
+    "https://data.humdata.org/dataset/d618e616-dfbc-4993-9eac-0b484b5cd2b4/resource/3ea1ca65-c246-4571-a289-84436c2037b7/download/gha_admpop_adm0_2021.csv"
+   ],
+   [
+    "gha_admpop_adm1_2021.csv",
+    "CSV",
+    7044,
+    "https://data.humdata.org/dataset/d618e616-dfbc-4993-9eac-0b484b5cd2b4/resource/eadada3f-4156-48c3-85bb-88f6a17b3dba/download/gha_admpop_adm1_2021.csv"
+   ],
+   [
+    "gha_admpop_adm2_2021.csv",
+    "CSV",
+    68311,
+    "https://data.humdata.org/dataset/d618e616-dfbc-4993-9eac-0b484b5cd2b4/resource/6f59199d-0a30-4fee-b569-56cf7df23555/download/gha_admpop_adm2_2021.csv"
+   ]
+  ]
+ },
+ "who-data-for-gha": {
+  "title": "Ghana - Health Indicators",
+  "res": [
+   [
+    "All Health Indicators for Ghana",
+    "CSV",
+    10718293,
+    "https://data.humdata.org/dataset/039ad0f5-7ffa-414a-82cf-0bf3cfd59a6b/resource/47cebfc5-1bcf-49d5-a22a-db1155751e58/download/health_indicators_gha.csv"
+   ],
+   [
+    "Health systems Indicators for Ghana",
+    "CSV",
+    13345,
+    "https://data.humdata.org/dataset/039ad0f5-7ffa-414a-82cf-0bf3cfd59a6b/resource/f3a523f4-3127-40ea-926f-d6fbb7e2d732/download/health_systems_indicators_gha.csv"
+   ],
+   [
+    "Malaria Indicators for Ghana",
+    "CSV",
+    36361,
+    "https://data.humdata.org/dataset/039ad0f5-7ffa-414a-82cf-0bf3cfd59a6b/resource/fdcf64d4-02e2-40c5-87ba-456a493de722/download/malaria_indicators_gha.csv"
+   ],
+   [
+    "Tuberculosis Indicators for Ghana",
+    "CSV",
+    72292,
+    "https://data.humdata.org/dataset/039ad0f5-7ffa-414a-82cf-0bf3cfd59a6b/resource/15591019-6d83-4317-b7b0-45214b5a8bc5/download/tuberculosis_indicators_gha.csv"
+   ],
+   [
+    "Neglected tropical diseases Indicators for Ghana",
+    "CSV",
+    42139,
+    "https://data.humdata.org/dataset/039ad0f5-7ffa-414a-82cf-0bf3cfd59a6b/resource/63080ab8-4d35-4ca3-9778-92f63d52f9d4/download/neglected_tropical_diseases_indicators_gha.csv"
+   ],
+   [
+    "Nutrition Indicators for Ghana",
+    "CSV",
+    3294567,
+    "https://data.humdata.org/dataset/039ad0f5-7ffa-414a-82cf-0bf3cfd59a6b/resource/613f9cb0-b8a7-448d-9460-48f849fa4451/download/nutrition_indicators_gha.csv"
+   ],
+   [
+    "World Health Statistics Indicators for Ghana",
+    "CSV",
+    7696351,
+    "https://data.humdata.org/dataset/039ad0f5-7ffa-414a-82cf-0bf3cfd59a6b/resource/129f0f31-51fc-4834-87ca-22e748243fea/download/world_health_statistics_indicators_gha.csv"
+   ],
+   [
+    "Child mortality Indicators for Ghana",
+    "CSV",
+    1027689,
+    "https://data.humdata.org/dataset/039ad0f5-7ffa-414a-82cf-0bf3cfd59a6b/resource/5d015063-b388-4932-ad24-6b9411facce1/download/child_mortality_indicators_gha.csv"
+   ],
+   [
+    "Noncommunicable diseases Indicators for Ghana",
+    "CSV",
+    1677098,
+    "https://data.humdata.org/dataset/039ad0f5-7ffa-414a-82cf-0bf3cfd59a6b/resource/a344dfed-ff52-4ce6-be6a-abcaef8bbe05/download/noncommunicable_diseases_indicators_gha.csv"
+   ],
+   [
+    "Maternal and reproductive health Indicators for Ghana",
+    "CSV",
+    64400,
+    "https://data.humdata.org/dataset/039ad0f5-7ffa-414a-82cf-0bf3cfd59a6b/resource/bff6a895-774b-48c9-92b1-03acb4e503ab/download/maternal_and_reproductive_health_indicators_gha.csv"
+   ],
+   [
+    "Air pollution Indicators for Ghana",
+    "CSV",
+    819552,
+    "https://data.humdata.org/dataset/039ad0f5-7ffa-414a-82cf-0bf3cfd59a6b/resource/0b619bee-a44c-4b74-8864-203d4cb68ed3/download/air_pollution_indicators_gha.csv"
+   ],
+   [
+    "Dementia diagnosis, treatment and care Indicators for Ghana",
+    "CSV",
+    1718,
+    "https://data.humdata.org/dataset/039ad0f5-7ffa-414a-82cf-0bf3cfd59a6b/resource/1c326961-facf-456b-8542-327c61ccc78b/download/dementia_diagnosis_treatment_and_care_indicators_gha.csv"
+   ]
+  ]
+ },
+ "ghana-motorised-travel-time-in-seconds-to-nearest-health-centre": {
+  "title": "Ghana Motorised Travel Time (in seconds) to nearest health centre",
+  "res": [
+   [
+    "service-area-ghana-motorised.tif",
+    "GeoTIFF",
+    232932005,
+    "https://s3.eidf.ac.uk/eidf158-motorised-travel-time-maps/service_area_Ghana_motorised.tif"
+   ]
+  ]
+ },
+ "ghana-walking-travel-time-to-nearest-level-iv-health-centre": {
+  "title": "Ghana Walking Travel Time to nearest Level IV health centre",
+  "res": [
+   [
+    "service-area-ghana-walking.tif",
+    "GeoTIFF",
+    232892394,
+    "https://s3.eidf.ac.uk/eidf158-walkingtraveltimemaps/service_area_Ghana_walking.tif"
+   ]
+  ]
+ },
+ "relative-wealth-index": {
+  "title": "Relative Wealth Index",
+  "res": [
+   [
+    "Turkey_relative_wealth_index.csv",
+    "CSV",
+    4103616,
+    "https://data.humdata.org/dataset/76f2a2ea-ba50-40f5-b79c-db95d668b843/resource/ca1dea6b-9cc1-4bed-9465-8fd8fd7e0941/download/tur_relative_wealth_index.csv"
+   ],
+   [
+    "Relative Wealth Index - 93 Low and Middle Income Countries with Quadkeys - April 2021.csv",
+    "CSV",
+    121845999,
+    "https://data.humdata.org/dataset/76f2a2ea-ba50-40f5-b79c-db95d668b843/resource/bff723a4-6b55-4c51-8790-6176a774e13c/download/relative-wealth-index-93-low-and-middle-income-countries-with-quadkeys-april-2021.csv"
+   ],
+   [
+    "Relative Wealth Index - 93 Low and Middle Income Countries - April 2021.csv",
+    "CSV",
+    85228908,
+    "https://data.humdata.org/dataset/76f2a2ea-ba50-40f5-b79c-db95d668b843/resource/de2f953e-940c-43bb-b1f8-4d02d28124b5/download/relative-wealth-index-93-low-and-middle-income-countries-april-2021.csv"
+   ],
+   [
+    "Albania_relative_wealth_index.csv",
+    "CSV",
+    175288,
+    "https://data.humdata.org/dataset/76f2a2ea-ba50-40f5-b79c-db95d668b843/resource/23ddad00-f8ed-461c-a9d1-33ef2386faa6/download/albania_relative_wealth_index.csv"
+   ],
+   [
+    "Armenia_relative_wealth_index.csv",
+    "CSV",
+    103724,
+    "https://data.humdata.org/dataset/76f2a2ea-ba50-40f5-b79c-db95d668b843/resource/d3eced2c-170c-4d10-97f3-ba2e32ee121f/download/armenia_relative_wealth_index.csv"
+   ],
+   [
+    "Bosnia and Herzegovina_relative_wealth_index.csv",
+    "CSV",
+    382263,
+    "https://data.humdata.org/dataset/76f2a2ea-ba50-40f5-b79c-db95d668b843/resource/df20627b-770e-438c-bd3e-b172ef2fbdae/download/bosnia-and-herzegovina_relative_wealth_index.csv"
+   ],
+   [
+    "Georgia_relative_wealth_index.csv",
+    "CSV",
+    282000,
+    "https://data.humdata.org/dataset/76f2a2ea-ba50-40f5-b79c-db95d668b843/resource/bb977fac-405d-4a6c-a101-9023f30059ec/download/georgia_relative_wealth_index.csv"
+   ],
+   [
+    "Moldova_relative_wealth_index.csv",
+    "CSV",
+    247917,
+    "https://data.humdata.org/dataset/76f2a2ea-ba50-40f5-b79c-db95d668b843/resource/0142e224-3fbe-44a2-a31a-b79aace6e9e8/download/north-macedonia_relative_wealth_index.csv"
+   ],
+   [
+    "Montenegro_relative_wealth_index.csv",
+    "CSV",
+    77448,
+    "https://data.humdata.org/dataset/76f2a2ea-ba50-40f5-b79c-db95d668b843/resource/c12ea7e5-5fd4-4365-9327-39aeb5a3428b/download/montenegro_relative_wealth_index.csv"
+   ],
+   [
+    "North Macedonia_relative_wealth_index.csv",
+    "CSV",
+    132019,
+    "https://data.humdata.org/dataset/76f2a2ea-ba50-40f5-b79c-db95d668b843/resource/be604d16-af51-4df0-9065-58f04c87a55e/download/moldova_relative_wealth_index.csv"
+   ],
+   [
+    "Serbia_relative_wealth_index.csv",
+    "CSV",
+    475936,
+    "https://data.humdata.org/dataset/76f2a2ea-ba50-40f5-b79c-db95d668b843/resource/55bca2ec-6938-4347-89a0-b57b6c0c6028/download/serbia_relative_wealth_index.csv"
+   ],
+   [
+    "Ukraine_relative_wealth_index.csv",
+    "CSV",
+    3241228,
+    "https://data.humdata.org/dataset/76f2a2ea-ba50-40f5-b79c-db95d668b843/resource/28f9d272-a5ee-4337-a907-8f907d9e9e52/download/ukraine_relative_wealth_index.csv"
+   ]
+  ]
+ },
+ "unhcr-lbn-2021-vasyr-v2-1": {
+  "title": "Lebanon - Vulnerability Assessment of Syrian Refugees in Lebanon, 2021",
+  "res": [
+   [
+    "Lebanon - Vulnerability Assessment of Syrian Refugees in Lebanon, 2021",
+    "Web App",
+    null,
+    "https://microdata.unhcr.org/index.php/auth/login/?destination=catalog/582/get-microdata"
+   ],
+   [
+    "Codebook",
+    "PDF",
+    301886,
+    "https://microdata.unhcr.org/index.php/catalog/582/pdf-documentation"
+   ]
+  ]
+ },
+ "world-bank-poverty-indicators-for-bangladesh": {
+  "title": "Bangladesh - Poverty",
+  "res": [
+   [
+    "Poverty Indicators for Bangladesh",
+    "CSV",
+    14411,
+    "https://data.humdata.org/dataset/4a66b25e-7bfc-4d3f-a2fc-2e7821f1cb72/resource/723bae1a-91a1-41f8-bd4f-7e3d9672c05c/download/poverty_bgd.csv"
+   ]
+  ]
+ },
+ "cod-ab-bgd": {
+  "title": "Bangladesh - Subnational Administrative Boundaries",
+  "res": [
+   [
+    "bgd_admin_boundaries.gdb.zip",
+    "Geodatabase",
+    15805204,
+    "https://data.humdata.org/dataset/401d3fae-4262-48c9-891f-461fd776d49b/resource/277b50e7-a354-48f9-81a6-a8614121b9ec/download/bgd_admin_boundaries.gdb.zip"
+   ],
+   [
+    "bgd_admin_boundaries.shp.zip",
+    "SHP",
+    33054947,
+    "https://data.humdata.org/dataset/401d3fae-4262-48c9-891f-461fd776d49b/resource/05d85fe2-40c0-4b57-b1b5-be9c36a592fb/download/bgd_admin_boundaries.shp.zip"
+   ],
+   [
+    "bgd_admin_boundaries.geojson.zip",
+    "GeoJSON",
+    37759475,
+    "https://data.humdata.org/dataset/401d3fae-4262-48c9-891f-461fd776d49b/resource/cec2abe3-d8b7-4025-9362-9f7e780f2a07/download/bgd_admin_boundaries.geojson.zip"
+   ],
+   [
+    "bgd_admin_boundaries.xlsx",
+    "XLSX",
+    633262,
+    "https://data.humdata.org/dataset/401d3fae-4262-48c9-891f-461fd776d49b/resource/5f7e534d-9b06-442e-a706-083789bff2c9/download/bgd_admin_boundaries.xlsx"
+   ]
+  ]
+ },
+ "bangladesh-mpi": {
+  "title": "Bangladesh Multidimensional Poverty Index",
+  "res": [
+   [
+    "Bangladesh MPI and Partial Indices",
+    "CSV",
+    1154,
+    "https://data.humdata.org/dataset/3dff0e65-7aea-4eb0-9be8-af68af882911/resource/8359f649-cbcc-41e9-a0a0-0bc968d80d5b/download/bgd_mpi.csv"
+   ],
+   [
+    "Bangladesh MPI Trends Over Time",
+    "CSV",
+    2819,
+    "https://data.humdata.org/dataset/3dff0e65-7aea-4eb0-9be8-af68af882911/resource/d381910d-5e47-4352-b629-48804f37a681/download/bgd_mpi_trends.csv"
+   ]
+  ]
+ },
+ "bangladesh-roads": {
+  "title": "Bangladesh - Roads",
+  "res": [
+   [
+    "bgd_trs_roads_lged.zip",
+    "SHP",
+    104790069,
+    "https://data.humdata.org/dataset/2c29f508-b78b-4d84-98f6-04d78219f1cf/resource/fe3903eb-cf76-4283-b6ca-e929dfacc606/download/bgd_trs_roads_lged.zip"
+   ]
+  ]
+ },
+ "bangladesh-other-0": {
+  "title": "Bangladesh - 2001 Census",
+  "res": [
+   [
+    "2001_census_upazila.xls",
+    "XLS",
+    250368,
+    "https://data.humdata.org/dataset/3c8e6cf4-ab8b-47b1-8c2a-558e8be21300/resource/523c089c-6890-4799-a937-b583e9b8a571/download/2001_census_upazila.xls"
+   ]
+  ]
+ },
+ "cox-s-bazar-district-teknaf-and-ukhia-upazila-para-and-ward-locations": {
+  "title": "COX'S Bazar District - Teknaf and Ukhia Upazila Para and Ward Locations",
+  "res": [
+   [
+    "REACH_BGD_Dataset_HostCommunityParas_January2019.xlsx",
+    "XLSX",
+    76929,
+    "https://data.humdata.org/dataset/769d2104-c89d-4836-8680-723b62d77a08/resource/e5d5b9a2-20d2-482c-b25a-35f8d7dd2384/download/reach_bgd_dataset_hostcommunityparas_january2019.xlsx"
+   ]
+  ]
+ },
+ "cox-s-bazar-district-teknaf-and-ukhiya-upazila-cyclone-shelter-locations": {
+  "title": "Cox's Bazar District - Teknaf and Ukhiya Upazila Cyclone Shelter Locations",
+  "res": [
+   [
+    "reach_bgd_database_cyclone-shelters-in-ukhiya-and-teknaf_november_2019.xlsx",
+    "XLSX",
+    114890,
+    "https://data.humdata.org/dataset/048dced8-0f44-4369-8023-9bc420caa866/resource/85679ba5-f044-4f58-81a1-f6014bb86594/download/reach_bgd_database_cyclone-shelters-in-ukhiya-and-teknaf_november_2019.xlsx"
+   ],
+   [
+    "REACH_BGD_Map_Ukhiya_Cyclone_Shelters_23Oct2019.pdf",
+    "PDF",
+    2880772,
+    "https://data.humdata.org/dataset/048dced8-0f44-4369-8023-9bc420caa866/resource/d2b9723d-d3d5-4e15-94cd-1d4c9400051a/download/reach_bgd_map_ukhiya_cyclone_shelters_23oct2019.pdf"
+   ],
+   [
+    "REACH_BGD_Map_Teknaf_Cyclone_Shelters_23Oct2019.pdf",
+    "PDF",
+    2205832,
+    "https://data.humdata.org/dataset/048dced8-0f44-4369-8023-9bc420caa866/resource/89553d13-0f0e-42c9-b904-743bc5de72f8/download/reach_bgd_map_teknaf_cyclone_shelters_23oct2019.pdf"
+   ]
+  ]
+ },
+ "satellite-detected-water-extent-in-teknaf-upazila-cox-s-bazar-district-chittagong-division-": {
+  "title": "Satellite Detected Water Extent in Teknaf Upazila, Cox's Bazar District, Chittagong Division, Bangladesh",
+  "res": [
+   [
+    "FL20180518BGD_SHP.zip",
+    "SHP",
+    180104,
+    "https://unosat-maps.web.cern.ch/unosat-maps/BD/FL20180518BGD/FL20180518BGD_SHP.zip"
+   ]
+  ]
+ },
+ "cod-ps-bgd": {
+  "title": "Bangladesh - Subnational Population Statistics",
+  "res": [
+   [
+    "BGD_AdminBoundaries_TabularData.xlsx",
+    "XLSX",
+    428935,
+    "https://data.humdata.org/dataset/fdf0606c-8a3b-421a-b3e8-903301e5b2ff/resource/a211d3bc-9273-4b22-89c5-e55eaf91a62b/download/bgd_adminboundaries_tabulardata.xlsx"
+   ],
+   [
+    "bgd_admpop_2022.xlsx",
+    "XLSX",
+    848109,
+    "https://data.humdata.org/dataset/fdf0606c-8a3b-421a-b3e8-903301e5b2ff/resource/d3ee1ccb-9efb-412f-9323-cd4dc9606f7d/download/bgd_admpop_2022.xlsx"
+   ],
+   [
+    "bgd_admpop_adm0_2022.csv",
+    "CSV",
+    929,
+    "https://data.humdata.org/dataset/fdf0606c-8a3b-421a-b3e8-903301e5b2ff/resource/1c543545-dae9-48ee-8b3c-33a15e9e3df6/download/bgd_admpop_adm0_2022.csv"
+   ],
+   [
+    "bgd_admpop_adm1_2022.csv",
+    "CSV",
+    3930,
+    "https://data.humdata.org/dataset/fdf0606c-8a3b-421a-b3e8-903301e5b2ff/resource/333171ff-5d91-4074-a7be-ca43e1dfb8a1/download/bgd_admpop_adm1_2022.csv"
+   ],
+   [
+    "bgd_admpop_adm2_2022.csv",
+    "CSV",
+    25948,
+    "https://data.humdata.org/dataset/fdf0606c-8a3b-421a-b3e8-903301e5b2ff/resource/43bfa9fd-f571-4973-9f31-91093e1e6142/download/bgd_admpop_adm2_2022.csv"
+   ],
+   [
+    "bgd_admpop_adm3_2022.csv",
+    "CSV",
+    200685,
+    "https://data.humdata.org/dataset/fdf0606c-8a3b-421a-b3e8-903301e5b2ff/resource/f23d4da2-e473-4960-9d94-37df92c8d044/download/bgd_admpop_adm3_2022.csv"
+   ]
+  ]
+ },
+ "inform-subnational-model-of-bangladesh": {
+  "title": "INFORM subnational model of Bangladesh",
+  "res": [
+   [
+    "INFORM_Sub-national Risk Index for Bangladesh_ 2022_Admin Level-2_V1.xlsx",
+    "XLSX",
+    1938341,
+    "https://data.humdata.org/dataset/78e579a9-9c34-4c05-b36d-78b68f9aebe8/resource/0dbe4cba-004a-4ee2-92e5-5cde09600a3e/download/inform_sub-national-risk-index-for-bangladesh_-2022_admin-level-2_v1.xlsx"
+   ],
+   [
+    "INFORM_Sub-national Risk Index for Bangladesh_ 2022_Admin Level 3_V1.xlsx",
+    "XLSX",
+    5337662,
+    "https://data.humdata.org/dataset/78e579a9-9c34-4c05-b36d-78b68f9aebe8/resource/f3594557-45c8-4200-a1b6-83f75cb36fa3/download/inform_sub-national-risk-index-for-bangladesh_-2022_admin-level-3_v1.xlsx"
+   ]
+  ]
+ },
+ "bangladesh-1km-resolution-poverty-estimates-mapping-poverty-using-mobile-phone-and-satellite-data": {
+  "title": "Bangladesh 1km Resolution Poverty Estimates - Mapping poverty using mobile phone and satellite data",
+  "res": [
+   [
+    "bgd2011wipov.tif",
+    "GeoTIFF",
+    526627,
+    "https://data.humdata.org/dataset/15647717-9923-4f27-93ff-fb05be68f192/resource/e3373d6e-1e7b-46ad-9b6a-08a40bd09c49/download/bgd2011wipov.tif"
+   ],
+   [
+    "bgd2011wipovsd.tif",
+    "GeoTIFF",
+    519343,
+    "https://data.humdata.org/dataset/15647717-9923-4f27-93ff-fb05be68f192/resource/ddbbc996-e502-41f3-bf92-66036b3386bc/download/bgd2011wipovsd.tif"
+   ],
+   [
+    "bgd2013incpov.tif",
+    "GeoTIFF",
+    519983,
+    "https://data.humdata.org/dataset/15647717-9923-4f27-93ff-fb05be68f192/resource/2c98d7f3-ebcf-492d-bcdc-ceac763b8671/download/bgd2013incpov.tif"
+   ],
+   [
+    "bgd2013incpovsd.tif",
+    "GeoTIFF",
+    521291,
+    "https://data.humdata.org/dataset/15647717-9923-4f27-93ff-fb05be68f192/resource/ad3c7dd9-61d8-445f-a68d-01b831e42dc7/download/bgd2013incpovsd.tif"
+   ],
+   [
+    "bgd2013ppipov.tif",
+    "GeoTIFF",
+    513883,
+    "https://data.humdata.org/dataset/15647717-9923-4f27-93ff-fb05be68f192/resource/1f8bdd24-32e7-4784-a812-042aa531ed9a/download/bgd2013ppipov.tif"
+   ],
+   [
+    "bgd2013ppipovsd.tif",
+    "GeoTIFF",
+    518705,
+    "https://data.humdata.org/dataset/15647717-9923-4f27-93ff-fb05be68f192/resource/6d77910f-61f2-4d36-863b-90419703e300/download/bgd2013ppipovsd.tif"
+   ],
+   [
+    "licence.txt",
+    "GeoTIFF",
+    19271,
+    "https://data.humdata.org/dataset/15647717-9923-4f27-93ff-fb05be68f192/resource/7f859aff-48f3-462d-8f37-87e3b2560150/download/licence.txt"
+   ]
+  ]
+ },
+ "flood-impact-analysis-in-chhatak-upazila-sunamganj-district-sylhet-division-bangladesh-as-": {
+  "title": "Flood impact analysis in Chhatak Upazila, Sunamganj District, Sylhet Division, Bangladesh as of 26 June 2024",
+  "res": [
+   [
+    "TC20240502BGD_GDB.zip",
+    "Geodatabase",
+    29373943,
+    "https://unosat.org/static/unosat_filesystem/3889/TC20240502BGD_GDB.zip"
+   ],
+   [
+    "TC20240502BGD_SHP.zip",
+    "SHP",
+    54673650,
+    "https://unosat.org/static/unosat_filesystem/3889/TC20240502BGD_SHP.zip"
+   ]
+  ]
+ },
+ "world-bank-education-indicators-for-bangladesh": {
+  "title": "Bangladesh - Education",
+  "res": [
+   [
+    "Education Indicators for Bangladesh",
+    "CSV",
+    1577109,
+    "https://data.humdata.org/dataset/2560080f-103b-4eec-9cdd-60f5d1f34318/resource/1ca9b042-32ae-4021-9c52-27abb26a5037/download/education_bgd.csv"
+   ]
+  ]
+ },
+ "satellite-detected-water-extent-in-maheshkhali-chakaria-and-cox-s-bazar-sadar-upazilas": {
+  "title": "Satellite Detected Water Extent in Maheshkhali, Chakaria and Cox'S Bazar Sadar Upazilas",
+  "res": [
+   [
+    "TC20170529BGD_gdb.zip",
+    "Geodatabase",
+    13438701,
+    "https://unosat-maps.web.cern.ch/unosat-maps/BD/TC20170529BGD/TC20170529BGD_gdb.zip"
+   ],
+   [
+    "TC20170529BGD_SHP.zip",
+    "SHP",
+    44040405,
+    "https://unosat-maps.web.cern.ch/unosat-maps/BD/TC20170529BGD/TC20170529BGD_SHP.zip"
+   ]
+  ]
+ },
+ "building-damage-assessment-in-rampal-upazila-bagerhat-district-khulna-division-bangladesh-": {
+  "title": "Building Damage Assessment in Rampal Upazila Bagerhat District, Khulna Division, Bangladesh as of 4 June 2024",
+  "res": [
+   [
+    "TC20240502BGD_GDB.zip",
+    "Geodatabase",
+    299566,
+    "https://unosat.org/static/unosat_filesystem/3877/TC20240502BGD_GDB.zip"
+   ],
+   [
+    "TC20240502BGD_SHP.zip",
+    "SHP",
+    108768,
+    "https://unosat.org/static/unosat_filesystem/3877/TC20240502BGD_SHP.zip"
+   ]
+  ]
+ },
+ "world-bank-poverty-indicators-for-uganda": {
+  "title": "Uganda - Poverty",
+  "res": [
+   [
+    "Poverty Indicators for Uganda",
+    "CSV",
+    15832,
+    "https://data.humdata.org/dataset/cfbc1c88-1168-487a-b3a9-0334388bbf81/resource/2ca62809-d945-4006-8a58-60b1d23008c2/download/poverty_uga.csv"
+   ]
+  ]
+ },
+ "uganda-mpi": {
+  "title": "Uganda Multidimensional Poverty Index",
+  "res": [
+   [
+    "Uganda MPI and Partial Indices",
+    "CSV",
+    1889,
+    "https://data.humdata.org/dataset/048e672f-245c-4650-ac2a-0a9c190a4c4a/resource/b2fb0ade-9dd7-4f3d-8343-55dced7f93ce/download/uga_mpi.csv"
+   ],
+   [
+    "Uganda MPI Trends Over Time",
+    "CSV",
+    1255,
+    "https://data.humdata.org/dataset/048e672f-245c-4650-ac2a-0a9c190a4c4a/resource/095c6640-ea43-44b9-8e1e-40ff932abfd4/download/uga_mpi_trends.csv"
+   ]
+  ]
+ },
+ "uganda-mayuge-district-operational-presence": {
+  "title": "Uganda- Mayuge District: Operational Presence",
+  "res": [
+   [
+    "FieldsData_4W_UG_Mayuge",
+    "XLSX",
+    246276,
+    "https://docs.google.com/spreadsheets/d/1xtVB-llU404HUC3DYUCTgYGvmHbTidGeHIGuBRNoR2Q/edit?usp=sharing"
+   ]
+  ]
+ },
+ "uganda-other-0-0-0": {
+  "title": "Uganda - District Admin Centres",
+  "res": [
+   [
+    "uganda_district_centres2006.zip",
+    "SHP",
+    7875,
+    "https://data.humdata.org/dataset/148b83a5-fb8f-48cc-bcf9-061d8563f7dd/resource/f7f28b6c-0083-41db-963e-baa8003a8c4d/download/uganda_district_centres2006.zip"
+   ]
+  ]
+ },
+ "uganda-munafa-district-operational-presence": {
+  "title": "Uganda- Munafa District: Operational Presence",
+  "res": [
+   [
+    "FieldsData_4W_UG_Munafa",
+    "XLSX",
+    246345,
+    "https://docs.google.com/spreadsheets/d/1LWmcKhKrIP5BV8CuX32-5YSKt6lotdDttNgwRiukUVk/edit?usp=sharing"
+   ]
+  ]
+ },
+ "uganda-tororo-district-operational-presence": {
+  "title": "Uganda- Tororo District: Operational Presence",
+  "res": [
+   [
+    "FieldsData_4W_UG_Tororo",
+    "XLSX",
+    257500,
+    "https://docs.google.com/spreadsheets/d/1U1S2bAf-cgnBSGTL_av6y6rhf0EZpGn_CwXaVIKr1Jk/edit?usp=sharing"
+   ]
+  ]
+ },
+ "uganda-kamuli-district-operational-presence": {
+  "title": "Uganda- Kamuli District: Operational Presence",
+  "res": [
+   [
+    "FieldsData_4W_UG_Kamuli",
+    "XLSX",
+    273457,
+    "https://docs.google.com/spreadsheets/d/1SaiD8LukMJkAU4ILxFF77U8ko9tt_Lp4nl8SqHZVUb0/edit?usp=sharing"
+   ]
+  ]
+ },
+ "uganda-mbale-district-operational-presence": {
+  "title": "Uganda- Mbale District: Operational Presence",
+  "res": [
+   [
+    "FieldsData_4W_UG_Mbale",
+    "XLSX",
+    291167,
+    "https://docs.google.com/spreadsheets/d/1ZEunpt_Nnyi2hZHxJHG2HrWtIN7HneYzE3ytv5yOUqE/edit?usp=sharing"
+   ]
+  ]
+ },
+ "uganda-kayunga-district-operational-presence": {
+  "title": "Uganda- Kayunga District: Operational Presence",
+  "res": [
+   [
+    "FieldsData_4W_UG_Kayunga",
+    "XLSX",
+    249079,
+    "https://docs.google.com/spreadsheets/d/1gVvafFPoWF4bLsrdarxamY8CE7YeEqXW9RXSsffhEDc/edit?usp=sharing"
+   ]
+  ]
+ },
+ "uganda-soroti-district-operational-presence": {
+  "title": "Uganda- Soroti District: Operational Presence",
+  "res": [
+   [
+    "FieldsData_4W_UG_Soroti",
+    "XLSX",
+    245930,
+    "https://docs.google.com/spreadsheets/d/1A-iHjPQ23-VBFWXSAnppmtEjLPDX3zUoS7-rQcNHCa4/edit?usp=sharing"
+   ]
+  ]
+ },
+ "uganda-lira-district-operational-presence": {
+  "title": "Uganda- Lira District: Operational Presence",
+  "res": [
+   [
+    "FieldsData_4W_UG_Lira",
+    "XLSX",
+    262131,
+    "https://docs.google.com/spreadsheets/d/1vtjnJoUkHRSIZrAsiySo4ASXaV3udQKFXRsfKWBUp4k/edit?usp=sharing"
+   ]
+  ]
+ },
+ "uganda-butaleja-district-operational-presence": {
+  "title": "Uganda- Butaleja District: Operational Presence",
+  "res": [
+   [
+    "FieldsData_4W_UG_Butaleja",
+    "XLSX",
+    254405,
+    "https://docs.google.com/spreadsheets/d/1Xuywt8FdxhIFN6YNZdlaPcTLQVGg8lkel8SvB37Ce24/edit?usp=sharing"
+   ]
+  ]
+ },
+ "uganda-budaka-district-operational-presence": {
+  "title": "Uganda- Budaka District: Operational Presence",
+  "res": [
+   [
+    "FieldsData_4W_UG_Budaka",
+    "XLSX",
+    247283,
+    "https://docs.google.com/spreadsheets/d/1i2HjbFyQ2zX64ryZQcyrmtbf7qPAUOY5W7cuOjnhjSI/edit?usp=sharing"
+   ]
+  ]
+ },
+ "uganda-napak-district-operational-presence": {
+  "title": "Uganda- Napak District: Operational Presence",
+  "res": [
+   [
+    "FieldsData_4W_UG_Napak",
+    "XLSX",
+    253761,
+    "https://docs.google.com/spreadsheets/d/1N-K2D9UC6nnJA_zPZSCW6RxdBKz69kU_GQ3AgauodLw/edit?usp=sharing"
+   ]
+  ]
+ },
+ "uganda-jinja-district-operational-presence": {
+  "title": "Uganda- Jinja District: Operational Presence",
+  "res": [
+   [
+    "FieldsData_4W_UG_Jinja",
+    "XLSX",
+    281292,
+    "https://docs.google.com/spreadsheets/d/1y7lBAjVgL2lAXSSaqbg8iw7eQCht5nM_Yzti6MiU-uU/edit?usp=sharing"
+   ]
+  ]
+ },
+ "world-bank-poverty-indicators-for-mongolia": {
+  "title": "Mongolia - Poverty",
+  "res": [
+   [
+    "Poverty Indicators for Mongolia",
+    "CSV",
+    15234,
+    "https://data.humdata.org/dataset/9bd0f1ed-8500-470d-bd4b-f8a45919dcb1/resource/5554a11c-f8b6-4008-9a20-532b0c95d45e/download/poverty_mng.csv"
+   ]
+  ]
+ },
+ "mongolia-mpi": {
+  "title": "Mongolia Multidimensional Poverty Index",
+  "res": [
+   [
+    "Mongolia MPI and Partial Indices",
+    "CSV",
+    807,
+    "https://data.humdata.org/dataset/799a3622-443d-4940-a046-d14eb86d1b88/resource/dc3df548-fdfd-4d54-865d-e3be4c1e5900/download/mng_mpi.csv"
+   ],
+   [
+    "Mongolia MPI Trends Over Time",
+    "CSV",
+    2122,
+    "https://data.humdata.org/dataset/799a3622-443d-4940-a046-d14eb86d1b88/resource/80372d32-4bb4-4fe0-b6a7-30f5f02b0fa8/download/mng_mpi_trends.csv"
+   ]
+  ]
+ },
+ "cod-ab-mng": {
+  "title": "Mongolia - Subnational Administrative Boundaries",
+  "res": [
+   [
+    "mng_admin_boundaries.gdb.zip",
+    "Geodatabase",
+    2924077,
+    "https://data.humdata.org/dataset/a9b0a8a6-cb14-448e-b35c-aa5eb51b0557/resource/8a8a810c-fa29-49a0-8745-47d026e22231/download/mng_admin_boundaries.gdb.zip"
+   ],
+   [
+    "mng_admin_boundaries.shp.zip",
+    "SHP",
+    5757562,
+    "https://data.humdata.org/dataset/a9b0a8a6-cb14-448e-b35c-aa5eb51b0557/resource/2ec00922-5b9b-47fc-aa36-0a8b59a877df/download/mng_admin_boundaries.shp.zip"
+   ],
+   [
+    "mng_admin_boundaries.geojson.zip",
+    "GeoJSON",
+    6483601,
+    "https://data.humdata.org/dataset/a9b0a8a6-cb14-448e-b35c-aa5eb51b0557/resource/de6b11d3-767d-449f-99fc-80c5b4e9abe3/download/mng_admin_boundaries.geojson.zip"
+   ],
+   [
+    "mng_admin_boundaries.xlsx",
+    "XLSX",
+    82896,
+    "https://data.humdata.org/dataset/a9b0a8a6-cb14-448e-b35c-aa5eb51b0557/resource/8a9c3d58-1393-4bce-a7c1-af2e51142ab4/download/mng_admin_boundaries.xlsx"
+   ]
+  ]
+ },
+ "world-bank-education-indicators-for-mongolia": {
+  "title": "Mongolia - Education",
+  "res": [
+   [
+    "Education Indicators for Mongolia",
+    "CSV",
+    1610686,
+    "https://data.humdata.org/dataset/505d724d-3d05-4b1a-8605-a355195b3b29/resource/95a5a0a4-806d-4c44-ae2e-b95cb53726ff/download/education_mng.csv"
+   ]
+  ]
+ },
+ "world-bank-health-indicators-for-mongolia": {
+  "title": "Mongolia - Health",
+  "res": [
+   [
+    "Health Indicators for Mongolia",
+    "CSV",
+    898109,
+    "https://data.humdata.org/dataset/03fca57d-e69b-429c-b332-1ae923c158fd/resource/f268bb05-c423-4af7-b847-c801eae6ee03/download/health_mng.csv"
+   ]
+  ]
+ },
+ "world-bank-trade-indicators-for-mongolia": {
+  "title": "Mongolia - Trade",
+  "res": [
+   [
+    "Trade Indicators for Mongolia",
+    "CSV",
+    451582,
+    "https://data.humdata.org/dataset/89061ac9-a08c-4013-a941-b41b7552f5cd/resource/6a9b1bb5-7e2a-464d-b004-b0c98904b902/download/trade_mng.csv"
+   ]
+  ]
+ },
+ "world-bank-aid-effectiveness-indicators-for-mongolia": {
+  "title": "Mongolia - Aid Effectiveness",
+  "res": [
+   [
+    "Aid Effectiveness Indicators for Mongolia",
+    "CSV",
+    201957,
+    "https://data.humdata.org/dataset/a3a320e3-c46d-43a4-afef-604aefe17f90/resource/860ce2b5-98c4-4703-837e-0632f258f831/download/aid-effectiveness_mng.csv"
+   ]
+  ]
+ },
+ "who-data-for-mng": {
+  "title": "Mongolia - Health Indicators",
+  "res": [
+   [
+    "All Health Indicators for Mongolia",
+    "CSV",
+    10373809,
+    "https://data.humdata.org/dataset/9cc309a2-3f9b-4c2e-9252-42fda13744ce/resource/c4942ecd-9e68-4973-bcd8-810c7f4690c7/download/health_indicators_mng.csv"
+   ],
+   [
+    "Health systems Indicators for Mongolia",
+    "CSV",
+    17544,
+    "https://data.humdata.org/dataset/9cc309a2-3f9b-4c2e-9252-42fda13744ce/resource/fcd51479-78f6-435f-9fb6-d11af0f763f0/download/health_systems_indicators_mng.csv"
+   ],
+   [
+    "Tuberculosis Indicators for Mongolia",
+    "CSV",
+    78000,
+    "https://data.humdata.org/dataset/9cc309a2-3f9b-4c2e-9252-42fda13744ce/resource/8d6b50c7-e600-49a5-91bf-7c1225526c19/download/tuberculosis_indicators_mng.csv"
+   ],
+   [
+    "Neglected tropical diseases Indicators for Mongolia",
+    "CSV",
+    2009,
+    "https://data.humdata.org/dataset/9cc309a2-3f9b-4c2e-9252-42fda13744ce/resource/243df3aa-dc51-4741-bfe2-d75195a4ad15/download/neglected_tropical_diseases_indicators_mng.csv"
+   ],
+   [
+    "Nutrition Indicators for Mongolia",
+    "CSV",
+    2788068,
+    "https://data.humdata.org/dataset/9cc309a2-3f9b-4c2e-9252-42fda13744ce/resource/9a7308b2-a463-4705-9d0e-4621e56e70b4/download/nutrition_indicators_mng.csv"
+   ],
+   [
+    "World Health Statistics Indicators for Mongolia",
+    "CSV",
+    7443144,
+    "https://data.humdata.org/dataset/9cc309a2-3f9b-4c2e-9252-42fda13744ce/resource/19e6238f-fdc4-4a8f-89cf-5dde125d224f/download/world_health_statistics_indicators_mng.csv"
+   ],
+   [
+    "Child mortality Indicators for Mongolia",
+    "CSV",
+    916826,
+    "https://data.humdata.org/dataset/9cc309a2-3f9b-4c2e-9252-42fda13744ce/resource/41eacb1b-ca40-4dd7-a7d7-4d6d74c37aa5/download/child_mortality_indicators_mng.csv"
+   ],
+   [
+    "Noncommunicable diseases Indicators for Mongolia",
+    "CSV",
+    1729239,
+    "https://data.humdata.org/dataset/9cc309a2-3f9b-4c2e-9252-42fda13744ce/resource/a3c5e8fd-ad0b-4375-ac97-12ae9558ac56/download/noncommunicable_diseases_indicators_mng.csv"
+   ],
+   [
+    "Maternal and reproductive health Indicators for Mongolia",
+    "CSV",
+    67842,
+    "https://data.humdata.org/dataset/9cc309a2-3f9b-4c2e-9252-42fda13744ce/resource/dc380a2c-26bb-447a-a795-60f64db33cb4/download/maternal_and_reproductive_health_indicators_mng.csv"
+   ],
+   [
+    "Air pollution Indicators for Mongolia",
+    "CSV",
+    840304,
+    "https://data.humdata.org/dataset/9cc309a2-3f9b-4c2e-9252-42fda13744ce/resource/c3960dcd-e394-45e3-bcd6-80b0daa2e393/download/air_pollution_indicators_mng.csv"
+   ],
+   [
+    "Dementia diagnosis, treatment and care Indicators for Mongolia",
+    "CSV",
+    5917,
+    "https://data.humdata.org/dataset/9cc309a2-3f9b-4c2e-9252-42fda13744ce/resource/9c8d0ae5-fc2e-4f6c-8153-efae4aa1b959/download/dementia_diagnosis_treatment_and_care_indicators_mng.csv"
+   ],
+   [
+    "Environment and health Indicators for Mongolia",
+    "CSV",
+    951417,
+    "https://data.humdata.org/dataset/9cc309a2-3f9b-4c2e-9252-42fda13744ce/resource/5947c522-244b-49be-9cd5-33f654218a34/download/environment_and_health_indicators_mng.csv"
+   ]
+  ]
+ },
+ "world-bank-infrastructure-indicators-for-mongolia": {
+  "title": "Mongolia - Infrastructure",
+  "res": [
+   [
+    "Infrastructure Indicators for Mongolia",
+    "CSV",
+    114036,
+    "https://data.humdata.org/dataset/60113c93-c7c8-46e9-8b40-d149dba76811/resource/2c57f161-fd32-4c72-a4c0-28d48eac0382/download/infrastructure_mng.csv"
+   ]
+  ]
+ },
+ "hdx-hapi-mng": {
+  "title": "HDX HAPI Data for Mongolia",
+  "res": [
+   [
+    "Affected People: Internally-Displaced Persons for Mongolia",
+    "CSV",
+    2072,
+    "https://data.humdata.org/dataset/47f063fa-6cb3-484e-b361-3a8d277b65ad/resource/fd20a7ec-cfc1-47dd-9ec4-42c6055d0675/download/hdx_hapi_idps_mng.csv"
+   ],
+   [
+    "Affected People: Refugees & Persons of Concern for Mongolia",
+    "CSV",
+    780956,
+    "https://data.humdata.org/dataset/47f063fa-6cb3-484e-b361-3a8d277b65ad/resource/666e1021-7266-45e6-94f3-85e1bb51a2a3/download/hdx_hapi_refugees_mng.csv"
+   ],
+   [
+    "Affected People: Returnees for Mongolia",
+    "CSV",
+    1177,
+    "https://data.humdata.org/dataset/47f063fa-6cb3-484e-b361-3a8d277b65ad/resource/34b9c5ba-1509-41da-a373-46eb643cfb32/download/hdx_hapi_returnees_mng.csv"
+   ],
+   [
+    "Coordination & Context: Funding for Mongolia",
+    "CSV",
+    3032,
+    "https://data.humdata.org/dataset/47f063fa-6cb3-484e-b361-3a8d277b65ad/resource/7818c446-a4a1-4b31-8778-37ffe3fe2b46/download/hdx_hapi_funding_mng.csv"
+   ],
+   [
+    "Coordination & Context: Conflict Events for Mongolia",
+    "CSV",
+    22489,
+    "https://data.humdata.org/dataset/47f063fa-6cb3-484e-b361-3a8d277b65ad/resource/af633078-3d7d-4fef-b082-93dd7fd077b1/download/hdx_hapi_conflict_event_mng.csv"
+   ],
+   [
+    "Coordination & Context: National Risk for Mongolia",
+    "CSV",
+    310,
+    "https://data.humdata.org/dataset/47f063fa-6cb3-484e-b361-3a8d277b65ad/resource/b6d0f281-9b1a-420d-aae2-498f2407652e/download/hdx_hapi_national_risk_mng.csv"
+   ],
+   [
+    "Food Security, Nutrition & Poverty: Food Prices & Market Monitor for Mongolia",
+    "CSV",
+    290763,
+    "https://data.humdata.org/dataset/47f063fa-6cb3-484e-b361-3a8d277b65ad/resource/2e0e0bc6-6877-446e-8dc6-f1c02ebf9f80/download/hdx_hapi_food_price_mng.csv"
+   ],
+   [
+    "Food Security, Nutrition & Poverty: Poverty Rate for Mongolia",
+    "CSV",
+    1877,
+    "https://data.humdata.org/dataset/47f063fa-6cb3-484e-b361-3a8d277b65ad/resource/ca5193ba-b4f5-465e-b9ea-1a2a4b9ff582/download/hdx_hapi_poverty_rate_mng.csv"
+   ],
+   [
+    "Geography & Infrastructure: Baseline Population for Mongolia",
+    "CSV",
+    207363,
+    "https://data.humdata.org/dataset/47f063fa-6cb3-484e-b361-3a8d277b65ad/resource/724eb747-e374-4fa6-877b-ea4dae3bc91c/download/hdx_hapi_population_mng.csv"
+   ],
+   [
+    "Climate: Rainfall for Mongolia",
+    "CSV",
+    982913,
+    "https://data.humdata.org/dataset/47f063fa-6cb3-484e-b361-3a8d277b65ad/resource/cf7c846b-648d-434c-ae86-d0fe02808b2d/download/hdx_hapi_rainfall_mng.csv"
+   ],
+   [
+    "Metadata: Data Availability for Mongolia",
+    "CSV",
+    36452,
+    "https://data.humdata.org/dataset/47f063fa-6cb3-484e-b361-3a8d277b65ad/resource/93457b51-288a-427e-b02f-956767e8f5c1/download/hdx_hapi_data_availability_mng.csv"
+   ]
+  ]
+ },
+ "world-bank-climate-change-indicators-for-mongolia": {
+  "title": "Mongolia - Climate Change",
+  "res": [
+   [
+    "Climate Change Indicators for Mongolia",
+    "CSV",
+    145791,
+    "https://data.humdata.org/dataset/e2e1d861-dc9c-448c-83a7-c22b702dc394/resource/39b1bf4f-ea4e-4995-be75-6b92fc70fb9d/download/climate-change_mng.csv"
+   ]
+  ]
+ },
+ "mng-corruption-perceptions-index": {
+  "title": "Mongolia - Corruption Perceptions Index",
+  "res": [
+   [
+    "mng_cpi.csv",
+    "CSV",
+    657,
+    "https://data.humdata.org/dataset/edb86469-7035-4f3a-bf1c-4315eee34955/resource/9ec7cabf-6669-4719-ab39-e0225b6c2113/download/mng_cpi.csv"
+   ]
+  ]
+ },
+ "hdx-hapi-poverty-rate": {
+  "title": "HDX HAPI - Food Security, Nutrition & Poverty: Poverty Rate",
+  "res": [
+   [
+    "Global Food Security, Nutrition & Poverty: Poverty Rate",
+    "CSV",
+    646559,
+    "https://data.humdata.org/dataset/5308e99f-5e32-4bdf-a1ff-7b140326293d/resource/66fbe38c-ebb9-40dc-8866-fe2e977a1b1a/download/hdx_hapi_poverty_rate_global.csv"
+   ]
+  ]
+ },
+ "hdro-data-for-mongolia": {
+  "title": "Mongolia - Human Development Indicators",
+  "res": [
+   [
+    "Human Development Indicators for Mongolia",
+    "CSV",
+    102105,
+    "https://data.humdata.org/dataset/9c6de9aa-b405-488f-b268-d6de059a575c/resource/ef09b323-57e0-4cdc-8dad-ede11cc00d2c/download/hdro_indicators_mng.csv"
+   ],
+   [
+    "Aggregated Human Development Indicators for Mongolia",
+    "CSV",
+    14913,
+    "https://data.humdata.org/dataset/9c6de9aa-b405-488f-b268-d6de059a575c/resource/7900d5f9-07dd-4706-9699-5a338410b2ff/download/hdro_indicators_aggregates_mng.csv"
+   ]
+  ]
+ },
+ "vnm-adpc-gem": {
+  "title": "Vietnam - Gender Equality Monitor",
+  "res": [
+   [
+    "vnm-gem-gii-national.csv",
+    "CSV",
+    355,
+    "https://data.humdata.org/dataset/32efea15-5da7-4b37-ae56-4397657e6e7d/resource/515896ee-23da-41dd-956d-d967d77ac409/download/vnm-gem-gii-national.csv"
+   ],
+   [
+    "vnm-gem-gii-subnational.csv",
+    "CSV",
+    2502,
+    "https://data.humdata.org/dataset/32efea15-5da7-4b37-ae56-4397657e6e7d/resource/3a804f73-3a37-42f8-90cd-ef4f126b084c/download/vnm-gem-gii-subnational.csv"
+   ],
+   [
+    "vnm-gem-dimension-national.csv",
+    "CSV",
+    5893,
+    "https://data.humdata.org/dataset/32efea15-5da7-4b37-ae56-4397657e6e7d/resource/3e6a365f-3489-4c74-b273-5f1cf3f02f27/download/vnm-gem-dimension-national.csv"
+   ],
+   [
+    "vnm-gem-dimension-subnational.csv",
+    "CSV",
+    111702,
+    "https://data.humdata.org/dataset/32efea15-5da7-4b37-ae56-4397657e6e7d/resource/e483c2e1-1850-4376-a468-c45ae181699d/download/vnm-gem-dimension-subnational.csv"
+   ],
+   [
+    "vnm-gem-indicator-national.csv",
+    "CSV",
+    27241,
+    "https://data.humdata.org/dataset/32efea15-5da7-4b37-ae56-4397657e6e7d/resource/412f3e39-ffa5-4b1a-90a3-c0f56e401456/download/vnm-gem-indicator-national.csv"
+   ],
+   [
+    "vnm-gem-indicator-subnational.csv",
+    "CSV",
+    444971,
+    "https://data.humdata.org/dataset/32efea15-5da7-4b37-ae56-4397657e6e7d/resource/0f9d3507-86da-4a03-92a8-76b748aba789/download/vnm-gem-indicator-subnational.csv"
+   ],
+   [
+    "vnm-gem-sex-disaggregated.csv",
+    "CSV",
+    1275034,
+    "https://data.humdata.org/dataset/32efea15-5da7-4b37-ae56-4397657e6e7d/resource/141b616e-a80c-42e4-9f49-1ae193502c2b/download/vnm-gem-sex-disaggregated.csv"
+   ],
+   [
+    "vnm-gem-country-boundary.geojson",
+    "GeoJSON",
+    184903,
+    "https://data.humdata.org/dataset/32efea15-5da7-4b37-ae56-4397657e6e7d/resource/1582a2f3-7e5b-4eb1-a17a-c1fad61f7c15/download/vnm-gem-country-boundary.geojson"
+   ],
+   [
+    "vnm-gem-province-boundaries.geojson",
+    "GeoJSON",
+    334820,
+    "https://data.humdata.org/dataset/32efea15-5da7-4b37-ae56-4397657e6e7d/resource/7bc8211f-6adf-4ad0-a42f-3327c4168551/download/vnm-gem-province-boundaries.geojson"
+   ]
+  ]
+ },
+ "world-bank-poverty-indicators-for-viet-nam": {
+  "title": "Viet Nam - Poverty",
+  "res": [
+   [
+    "Poverty Indicators for Viet Nam",
+    "CSV",
+    19630,
+    "https://data.humdata.org/dataset/d880d5fc-52d4-46b1-a690-5c2775e07fa7/resource/eae421c5-648a-4e22-ae10-7d30a221ba99/download/poverty_vnm.csv"
+   ]
+  ]
+ },
+ "viet-nam-road-surface-data": {
+  "title": "Viet Nam: Road Surface Data",
+  "res": [
+   [
+    "Viet nam GeoJSON Resource",
+    "GeoJSON",
+    3763311108,
+    "https://downloads.ohsome.org/hdx/mapillary_road_surface/heigit_vnm_roadsurface_lines.geojson"
+   ],
+   [
+    "Viet nam GeoPackage Resource",
+    "Geopackage",
+    1542017024,
+    "https://downloads.ohsome.org/hdx/mapillary_road_surface/heigit_vnm_roadsurface_lines.gpkg"
+   ]
+  ]
+ },
+ "viet-nam-mpi": {
+  "title": "Viet Nam Multidimensional Poverty Index",
+  "res": [
+   [
+    "Viet Nam MPI and Partial Indices",
+    "CSV",
+    957,
+    "https://data.humdata.org/dataset/17d4b137-6926-4380-b321-ffbb2d3c24f2/resource/4a869d81-a08b-4375-bd86-73ba4b8f9720/download/vnm_mpi.csv"
+   ],
+   [
+    "Viet Nam MPI Trends Over Time",
+    "CSV",
+    1761,
+    "https://data.humdata.org/dataset/17d4b137-6926-4380-b321-ffbb2d3c24f2/resource/d5b9f504-864e-41c8-a118-d93b6eab5032/download/vnm_mpi_trends.csv"
+   ]
+  ]
+ },
+ "satellite-detected-surface-waters-extent-in-quang-nam-province-vietnam-2718": {
+  "title": "Satellite Detected Surface Waters Extent in Quang Nam Province, Vietnam",
+  "res": [
+   [
+    "FL20171106VNM_gdb.zip",
+    "Geodatabase",
+    90197365,
+    "https://unosat-maps.web.cern.ch/unosat-maps/VN/FL20171106VNM/FL20171106VNM_gdb.zip"
+   ],
+   [
+    "FL20171106VNM_shp.zip",
+    "SHP",
+    88108024,
+    "https://unosat-maps.web.cern.ch/unosat-maps/VN/FL20171106VNM/FL20171106VNM_shp.zip"
+   ]
+  ]
+ },
+ "eos-rs-vietnam-floods-may-2025": {
+  "title": "Vietnam Floods: Damage and Flood Proxy Maps, May 2025",
+  "res": [
+   [
+    "EOS-RS_20250522_DPM_S1_Northern_Vietnam_Floods_v0.9.zip",
+    "GeoTIFF",
+    18491246,
+    "https://data.humdata.org/dataset/1b8f52eb-d05e-4984-b746-e479ac61c00e/resource/a028e7a8-12c5-4f0f-88d4-902bfdb94072/download/eos-rs_20250522_dpm_s1_northern_vietnam_floods_v0.9.zip"
+   ],
+   [
+    "EOS-RS_20250520_FPM_S1_Vietnam_BacGiang_Floods_v0.7.zip",
+    "GeoTIFF",
+    22793769,
+    "https://data.humdata.org/dataset/1b8f52eb-d05e-4984-b746-e479ac61c00e/resource/0735c7e1-8154-4379-b088-20c6e90432ed/download/eos-rs_20250520_fpm_s1_vietnam_bacgiang_floods_v0.7.zip"
+   ]
+  ]
+ },
+ "geodata-of-overview-of-flood-waters-in-hai-phong-province-vietnam-august-06-2015": {
+  "title": "Geodata of Overview of Flood Waters in Hai Phong Province, Vietnam",
+  "res": [
+   [
+    "FL20150730VNM_shp.zip",
+    "SHP",
+    127491519,
+    "https://cern.ch/unosat-maps/VN/FL20150730VNM/FL20150730VNM_shp.zip"
+   ],
+   [
+    "FL20150730VNM_gdb.zip",
+    "SHP",
+    30058140,
+    "https://cern.ch/unosat-maps/VN/FL20150730VNM/FL20150730VNM_gdb.zip"
+   ]
+  ]
+ },
+ "whosonfirst-data-admin-vnm": {
+  "title": "Viet Nam: WOF Administrative Subdivisions and Human Settlements",
+  "res": [
+   [
+    "whosonfirst-data-admin-vn-latest.zip",
+    "SHP",
+    5233113,
+    "https://data.geocode.earth/wof/dist/shapefile/whosonfirst-data-admin-vn-latest.zip"
+   ]
+  ]
+ },
+ "geodata-of-overview-of-flood-waters-near-ha-long-city-quang-ninh-province-vie-august-04-2015": {
+  "title": "Geodata of Overview of Flood Waters Near Ha Long City, Quang Ninh Province, Vietnam",
+  "res": [
+   [
+    "FL20150730VNM_shp.zip",
+    "SHP",
+    127491519,
+    "https://cern.ch/unosat-maps/VN/FL20150730VNM/FL20150730VNM_shp.zip"
+   ],
+   [
+    "FL20150730VNM_gdb.zip",
+    "SHP",
+    30058140,
+    "https://cern.ch/unosat-maps/VN/FL20150730VNM/FL20150730VNM_gdb.zip"
+   ]
+  ]
+ },
+ "geodata-of-overview-of-flood-waters-along-northern-coast-quang-ninh-province-august-05-2015": {
+  "title": "Geodata of Overview of Flood Waters Along Northern  Coast, Quang Ninh Province, Vietnam",
+  "res": [
+   [
+    "FL20150730VNM_shp.zip",
+    "SHP",
+    127491519,
+    "https://cern.ch/unosat-maps/VN/FL20150730VNM/FL20150730VNM_shp.zip"
+   ],
+   [
+    "FL20150730VNM_gdb.zip",
+    "SHP",
+    30058140,
+    "https://cern.ch/unosat-maps/VN/FL20150730VNM/FL20150730VNM_gdb.zip"
+   ]
+  ]
+ },
+ "satellite-detected-surface-waters-evolution-in-long-an-province-vietnam-2840": {
+  "title": "Satellite Detected Surface Waters & Evolution in Long An Province, Vietnam",
+  "res": [
+   [
+    "FL20180830VNM_SHP.zip",
+    "SHP",
+    236558380,
+    "https://unosat-maps.web.cern.ch/unosat-maps/VN/FL20180830VNM/FL20180830VNM_SHP.zip"
+   ]
+  ]
+ },
+ "viet-nam-planet-road-surface-data": {
+  "title": "Viet Nam: Planet Road Surface, Width, and Passability Data",
+  "res": [
+   [
+    "Viet nam GPKG heigit_VN_planet_roadsurface_lines.gpkg",
+    "Geopackage",
+    47386624,
+    "https://hot.storage.heigit.org/heigit-hdx-public/planet_road_data/heigit_VN_planet_roadsurface_lines.gpkg"
+   ],
+   [
+    "Viet nam GeoJSON heigit_VN_planet_roadsurface_lines.geojson",
+    "GeoJSON",
+    97140799,
+    "https://hot.storage.heigit.org/heigit-hdx-public/planet_road_data/heigit_VN_planet_roadsurface_lines.geojson"
+   ]
+  ]
+ },
+ "cod-ab-vnm": {
+  "title": "Viet Nam - Subnational Administrative Boundaries",
+  "res": [
+   [
+    "vnm_admin_boundaries.gdb.zip",
+    "Geodatabase",
+    12405269,
+    "https://data.humdata.org/dataset/3cb544a9-9d04-4f54-94e2-93230efd8ceb/resource/566f48d7-96fa-4af8-9a0f-cc1e84743e5f/download/vnm_admin_boundaries.gdb.zip"
+   ],
+   [
+    "vnm_admin_boundaries.shp.zip",
+    "SHP",
+    36852707,
+    "https://data.humdata.org/dataset/3cb544a9-9d04-4f54-94e2-93230efd8ceb/resource/cb274bdf-f332-48bd-bfcc-d6fe3a5e4334/download/vnm_admin_boundaries.shp.zip"
+   ],
+   [
+    "vnm_admin_boundaries.geojson.zip",
+    "GeoJSON",
+    28415237,
+    "https://data.humdata.org/dataset/3cb544a9-9d04-4f54-94e2-93230efd8ceb/resource/048a6012-a8c2-4fa9-be87-cb6c01e9afbf/download/vnm_admin_boundaries.geojson.zip"
+   ],
+   [
+    "vnm_admin_boundaries.xlsx",
+    "XLSX",
+    40979,
+    "https://data.humdata.org/dataset/3cb544a9-9d04-4f54-94e2-93230efd8ceb/resource/9bcbe922-d5ae-43c4-9067-29054b8e82ac/download/vnm_admin_boundaries.xlsx"
+   ]
+  ]
+ }
+}

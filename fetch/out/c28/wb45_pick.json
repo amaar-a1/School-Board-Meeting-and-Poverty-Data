@@ -1,0 +1,58 @@
+[
+[
+"HOU.XPD.TOTL.20POOR.CR",
+"Monthly Per Capita TOTAL Household Expenditure for The Poorest 20 percent (in IDR)"
+],
+[
+"SE.JRSEC.NENR.ZS",
+"Net Enrollment Ratio: Junior Secondary (in %)"
+],
+[
+"SE.LITR.15UP.ZS",
+"Literacy Rate for Population age 15 and over (in % of total population)"
+],
+[
+"SE.PRM.NENR.ZS",
+"Net Enrollment Ratio: Primary (in %)"
+],
+[
+"SE.SRSEC.NENR.ZS",
+"Net Enrollment Ratio: Senior Secondary (in %)"
+],
+[
+"SI.POV.BPL",
+"Number of people live below the poverty line (in number of people)"
+],
+[
+"SI.POV.NAPL",
+"Poverty Line (in IDR)"
+],
+[
+"SI.POV.NAPR.ZS",
+"Poverty Rate (in % of population)"
+],
+[
+"SI.POV.NGAP",
+"Poverty Gap (index)"
+],
+[
+"SI.POV.NSEV",
+"Poverty Severity (index)"
+],
+[
+"SP.POP.TOTL",
+"Population, total"
+],
+[
+"SP.RUR.TOTL.ZS",
+"Rural population (% of total population)"
+],
+[
+"SP.URB.TOTL.ZS",
+"Percentage of Population in Urban Areas (in % of Total Population)"
+],
+[
+"SP.URB.TOTL.ZS.SUS",
+"Percentage of Population in Urban Areas (in % of Total Population), SUSENAS"
+]
+]
