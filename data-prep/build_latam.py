@@ -297,6 +297,8 @@ def meetings(cc, did):
     url = CHECKED[cc].get(did, "") if cc in CHECKED else r.get("Channel URL", "")
     if not url or url not in titles or url in NOT_CHANNELS.get(cc, set()): return 0, "", [], ""
     if cc == "IDN" and not idn_channel_ok(r.get("District", ""), r.get("Channel", "")): return 0, "", [], ""
+    # Czechia: a city district's council (Prague 20, Ostrava-Jih, Brno-Žabovřesky) isn't the municipality's.
+    if cc == "CZE" and re.search(r"m[ěe]stsk[áýaéeíi]+ (č[áa]st|obvod)|\bm[čc]\b", r.get("Channel", ""), re.I): return 0, "", [], ""
     edu, council, must, not_t = RULES.get(cc, (EDU, COUNCIL, COUNCIL_MUST, NOT_T))
     vids = [t for t in titles[url] if not not_t.search(t)]
     for keep, kind in (([t for t in vids if edu.search(t)], "Education committee"),
@@ -330,6 +332,10 @@ def idn_channel_ok(district, channel):
 # Channels checked by hand and found to be another place's (by channel URL). The search matched on the name, and
 # many of these names exist in other Spanish-speaking countries too, or in both Chile and Colombia.
 NOT_CHANNELS = {
+    # Rwanda and Sri Lanka: the channels found post an activity report, an arts council's videos, news clips and media-unit
+    # posts, not recordings of council or coordinating committee meetings.
+    "RWA": {"https://www.youtube.com/channel/UC5e9LhdW-Z23njOYKHMgA_A", "https://www.youtube.com/channel/UC5AVOAbfYCKfE17C4aKvgEw"},
+    "LKA": {"https://www.youtube.com/channel/UCB3f5dD5CYmQO9VtL63uDaA", "https://www.youtube.com/channel/UC4E1un2WFGbF-4qIWNU6xNQ", "https://www.youtube.com/channel/UC85v5ZOCV-bYbutVe_uHfPw"},
     # Paraguay's councils are "Junta Municipal": these "Concejo Municipal" and other channels are towns of the same name in Chile,
     # Argentina, Peru, Bolivia, Colombia, Mexico or Brazil, or one councillor's own channel.
     "PRY": {"https://www.youtube.com/channel/UCoTwotxd-mnuY8a8e_6nUaw", "https://www.youtube.com/channel/UCuG-FPduRsB8GVx6NLASWnw", "https://www.youtube.com/channel/UCa5YqotYPcaizZYtqZ45kpQ", "https://www.youtube.com/channel/UCzqjXcWdWv72liDIeJpV5WA", "https://www.youtube.com/channel/UCJ3f5r4cWt0aB_wRZPSejWQ", "https://www.youtube.com/channel/UCgftlOUKUwVxPA1myAOJvFQ", "https://www.youtube.com/channel/UCZeix6UJCLn1YO3RpVtb34w", "https://www.youtube.com/channel/UC56H4eN3dOZqFmE2HDjedlQ", "https://www.youtube.com/channel/UCEGuGc-w5abohwcJV9yOnBg", "https://www.youtube.com/channel/UCQSNpiNkO1HiGbGdqBjzNoQ", "https://www.youtube.com/channel/UC_N4FcbYjq6RJ-xMzFfCpUA", "https://www.youtube.com/channel/UCkVdReeh7ZbEY8ODsusVNJg", "https://www.youtube.com/channel/UCWz4IzK0ncPqXCROqyCP3eg", "https://www.youtube.com/channel/UC6x0hkBrqf7ewDltHTcp7gg", "https://www.youtube.com/channel/UCSatJiWUQHzY0gEVuytdRtg", "https://www.youtube.com/channel/UCgvUIPWaySeDAGe-oUTSDUA"},
