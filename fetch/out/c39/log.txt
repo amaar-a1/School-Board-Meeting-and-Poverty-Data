@@ -1,0 +1,41 @@
+OK cz_unemp_12_2024.json.gz 121203 https://data.mpsv.cz/od/soubory/nezamestnanost-v-obcich/nezamestnanost-v-obcich-12-2024.json.gz
+   b"\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\x00\xdc\xbd\xdb\xce\xee9r\xdew,_E\xa0c\x9b\xe6\xa6\xb8\xcb=$\xcaIN\x92\x83`,\x0b\xb0 YcX\x8a\x00\xc9\xc8\xbd\x87\xaf-}=\xc0t\xfd\x8a\xaa\xb7\xe86<\x83\xc1\xcc\xf4Z\xbdzq\x91\x7f\xb2\xea\xa9g\xf3_\xfe\xd5\x9f\xfc\xe9\x7f\xfa\xfd_\xff\xfe\x1f\xff\xea\x1f\xfe\xf4\x7f\xfd_\xfe\xef\x7f\xf5'\x7f\xf2_\xce\x7f\xfe\xe4O\x7f\xff\xef\xfe\xe2\xcf\xcf_\xf8\xd3?;\xff\xfdo{\x97=\xf7\x9f\xfe\xeb\xff\xf6#\x7f\xf5\x9f\xff\xe2o\xff\xeb\x0f}\xfe\xc7\xbfm\x92\xdb?\xfd\xc8\x7f\xfc\x8b\xbf"
+OK cz_skoly.schema.json 19483 https://data.mpsv.cz/od/soubory/skoly/skoly.schema.json
+   b'{\n  "id": "http://json-schema.org/draft-04/schema#",\n  "$schema": "http://json-schema.org/draft-04/schema#",\n  "title": "skoly",\n  "type": "object",\n  "descript'
+OK cz_skoly.json.gz 1119022 https://data.mpsv.cz/od/soubory/skoly/skoly.json.gz
+   b'\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\x00\xec\xbdKs\xdb\xc8\x96-<\xaf_\x91\xe1\x91+.E\xe1\xfd\xa8;\xf1\xab\xaa]v\xc9V\x94\\\xfe\xa2\xeb\xab;H\x92i\x13"\x080\xf0:\x87\xbc\xd1\x83\x9e\xf5\x8d8\x8eo\xdan\xc5\x8d(\x0e\xce\xc0\x03E\r\xee\xecF\xd8\x13\x8a\xff\xeb\xdb;\xc1\x07H&HH\x84DR\x82\xba\x8f\x8b$\x80D\xe2\xb5\x90{\xe5\xdak\xff\xcf\xef\x08y\xd4\xf3]\x7f\xd0\xe9?\xfa\x81\xfc\xbf\xf0\x95\x90\xff\xc9\xff\xe5\x0b\x82\x88\xba?\xb7`\x89lkrm\xfa\xbb\x83\xbf<:\xeb\xf8.=\xc6\x05\x8ffKX\x97'
+OK lau_all.geojson 149866427 https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2024_4326.geojson
+   b'{"type": "FeatureCollection", "name": "LAU_RG_01M_2024_4326.geojson", "crs": {"type": "name", "properties": {"name": "urn:ogc:def:crs:EPSG::4326"}}, "features":'
+LAU CZ 6258
+OK nuts.geojson 27590155 https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/NUTS_RG_01M_2024_4326_LEVL_3.geojson
+   b'{"type": "FeatureCollection", "name": "NUTS_RG_01M_2024_4326", "crs": {"type": "name", "properties": {"name": "urn:ogc:def:crs:EPSG::4326"}}, "features": [{"typ'
+NUTS3 CZ 14
+OK cz_ages_nuts3.json 3897 https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_r_pjangrp3?format=JSON&lang=EN&sex=T&unit=NR&time=2024&geo=CZ010&geo=CZ020&geo=CZ031&geo=CZ032&geo=CZ041&geo=CZ042&geo=CZ051&geo=CZ052&geo=CZ053&geo=CZ063&geo=CZ064&geo=CZ071&geo=CZ072&geo=CZ080&age=Y5-9&age=Y10-14&age=Y15-19&age=TOTAL
+   b'{"version":"2.0","class":"dataset","label":"Population on 1 January by age group, sex and NUTS 3 region","source":"ESTAT","updated":"2026-11-19T23:00:00+0100","'
+OK rw_surveys.html 72737 https://statistics.gov.rw/surveys
+   b'<!DOCTYPE html>\n<html lang="en-gb" dir="ltr" prefix="og: https://ogp.me/ns#">\n<head>\n  <meta charset="utf-8" />\n<noscript><style>form.antibot > * { display: non'
+  rw_surveys.html LINK Integrated Household Living Conditions Survey (EICV) | /datasource/EICV
+OK rw_ds.html 72737 https://statistics.gov.rw/data-sources/surveys
+   b'<!DOCTYPE html>\n<html lang="en-gb" dir="ltr" prefix="og: https://ogp.me/ns#">\n<head>\n  <meta charset="utf-8" />\n<noscript><style>form.antibot > * { display: non'
+  rw_ds.html LINK Integrated Household Living Conditions Survey (EICV) | /datasource/EICV
+OK rw_eicv.html 102046 https://statistics.gov.rw/data-sources/surveys/EICV
+   b'<!DOCTYPE html>\n<html lang="en-gb" dir="ltr" prefix="og: https://ogp.me/ns#">\n<head>\n  <meta charset="utf-8" />\n<noscript><style>form.antibot > * { display: non'
+  rw_eicv.html LINK Integrated Household Living Conditions Survey (EICV) | National Institute of Statistics of | https://challenges.cloudflare.com
+  rw_eicv.html LINK Integrated Household Living Conditions Survey 7 (EICV7) | /data-sources/surveys/EICV/integrated-household-living-conditions-survey-7-eicv-7
+  rw_eicv.html LINK Integrated Household Living Conditions Survey 6 (EICV 6) | /data-sources/surveys/EICV/integrated-household-living-conditions-survey-6-eicv-6
+  rw_eicv.html LINK Integrated Household Living Conditions Survey 5 (EICV 5) | /data-sources/surveys/EICV/integrated-household-living-conditions-survey-5-eicv-5
+  rw_eicv.html LINK Integrated Household Living Conditions Survey 4 (EICV 4) | /data-sources/surveys/EICV/integrated-household-living-conditions-survey-4-eicv-4
+  rw_eicv.html LINK Integrated Household Living Conditions Survey 3 (EICV 3) | /data-sources/surveys/EICV/integrated-household-living-conditions-survey-3-eicv-3
+  rw_eicv.html LINK Integrated Household Living Conditions Survey 2 (EICV 2) | /data-sources/surveys/EICV/integrated-household-living-conditions-survey-2-eicv-2
+  rw_eicv.html LINK Integrated Household Living Conditions Survey 1 (EICV 1) | /data-sources/surveys/EICV/integrated-household-living-conditions-survey-1-eicv-1
+  rw_eicv.html LINK Full Survey on Living Conditions in Rwanda (1999) | /data-sources/surveys/EICV/full-survey-living-conditions-rwanda-1999
+  rw_eicv.html LINK Household Living Standard Survey (Complete Budgetary Component) - 1998 | /data-sources/surveys/EICV/household-living-standard-survey-complete-budgetary-component-1998
+  rw_eicv.html LINK Household Living Standard Survey (Limited Budgetary Component) - 1993 | /data-sources/surveys/EICV/household-living-standard-survey-limited-budgetary-component-1993
+  rw_eicv.html LINK ›› | /data-sources/surveys/EICV?page=1
+  rw_eicv.html LINK Subscribe to Integrated Household Living Conditions Survey (EICV) | https://statistics.gov.rw/taxonomy/term/44/feed
+  rw_eicv.html LINK Whatsapp | https://web.whatsapp.com/send?text=Integrated Household Living Conditions Survey (EICV) https://statistics.gov.rw/data-sources/surveys/EICV%2F
+  rw_eicv.html LINK Integrated Household Living Conditions Survey (EICV) | /data-sources/surveys/EICV
+ERR rw_eicv7.html HTTP Error 404: Not Found https://statistics.gov.rw/data-sources/surveys/EICV/eicv7
+OK rw_pubsearch.html 71138 https://statistics.gov.rw/statistical-publications?search=EICV7
+   b'<!DOCTYPE html>\n<html lang="en-gb" dir="ltr" prefix="og: https://ogp.me/ns#">\n<head>\n  <meta charset="utf-8" />\n<noscript><style>form.antibot > * { display: non'
+  rw_pubsearch.html LINK Poverty and Social Protection | /statistical-publications/poverty-and-social-protection

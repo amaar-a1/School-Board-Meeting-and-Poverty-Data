@@ -1,0 +1,133 @@
+{
+  "polozky": [
+    {
+      "portalId": 1941,
+      "id": "Skola/1941",
+      "email": "dekanat@tf.jcu.cz, studijni@tf.jcu.cz",
+      "ico": "60076658",
+      "kontaktniOsoba": null,
+      "kontaktniOsobaTelefon": "389 033 512, 389 033 504",
+      "nazev": "Teologická fakulta JU České Budějovice",
+      "poznamka": "Den otevřených dveří: 22.1.2010 v 10.00 a ve 13.00 hodin.",
+      "reditel": null,
+      "reditelTelefon": null,
+      "stravovani": null,
+      "ubytovani": null,
+      "urlAdresa": "www.tf.jcu.cz",
+      "adresaSidla": {
+        "cisloDomovni": 410,
+        "cisloOrientacni": "8",
+        "dodatekAdresy": null,
+        "kodAdresnihoMista": 25273337,
+        "psc": "37001",
+        "typCislaDomovniho": {
+          "id": "TypStavebnihoObjektu/1"
+        },
+        "kraj": {
+          "id": "Kraj/35"
+        },
+        "okres": {
+          "id": "Okres/3301"
+        },
+        "obec": {
+          "id": "Obec/544256"
+        },
+        "mestskyObvodMestskaCast": null,
+        "mestskyObvodVPraze": null,
+        "castObce": {
+          "id": "CastObce/403865"
+        },
+        "ulice": {
+          "nazev": "Kněžská"
+        }
+      },
+      "soucastiSkoly": [
+        {
+          "portalId": 2083,
+          "izo": "800122607",
+          "druhSkoly": {
+            "id": "DruhSkoly/vs"
+          },
+          "vyucovaneObory": [
+            {
+              "portalId": 12133,
+              "aktualniRokPrijmou": null,
+              "aktualniSkolniRok": null,
+              "delkaStudia": 3,
+              "kod": "61-07-R/000",
+              "ks": false,
+              "minulyRokPrihlaseno": null,
+              "minulyRokPrijato": null,
+              "minulySkolniRok": null,
+              "nazevOboru": "Humanitní studia",
+              "nenabizet": false,
+              "ozp": false,
+              "plp": false,
+              "prijatoKeDni": "2026-05-02",
+              "prospech": null,
+              "skolne": null,
+              "druhStudia": {
+                "id": "DruhStudia/6"
+              },
+              "formaStudia": {
+                "id": "FormaStudia/komb"
+              },
+              "ukonceniStudia": {
+                "id": "UkonceniStudia/stzk"
+              },
+              "vhodnostiProZaky": [
+                {
+                  "id": "VhodnostProZaky/mat"
+                }
+              ],
+              "stupenVzdelani": {
+                "id": "VzdelaniDetailniKategorie/bakal"
+              },
+              "prijimaciZkousky": null
+            },
+            {
+              "portalId": 12134,
+              "aktualniRokPrijmou": null,
+              "aktualniSkolniRok": null,
+              "delkaStudia": 2,
+              "kod": "61-41-T/071",
+              "ks": false,
+              "minulyRokPrihlaseno": null,
+              "minulyRokPrijato": null,
+              "minulySkolniRok": null,
+              "nazevOboru": "Teologie služby",
+              "nenabizet": false,
+              "ozp": false,
+              "plp": false,
+              "prijatoKeDni": "2026-05-02",
+              "prospech": null,
+              "skolne": null,
+              "druhStudia": {
+                "id": "DruhStudia/6"
+              },
+              "formaStudia": {
+                "id": "FormaStudia/komb"
+              },
+              "ukonceniStudia": {
+                "id": "UkonceniStudia/stzk"
+              },
+              "vhodnostiProZaky": [
+                {
+                  "id": "VhodnostProZaky/mat"
+                }
+              ],
+              "stupenVzdelani": {
+                "id": "VzdelaniDetailniKategorie/vysoka"
+              },
+              "prijimaciZkousky": null
+            },
+            {
+              "portalId": 12138,
+              "aktualniRokPrijmou": null,
+              "aktualniSkolniRok": null,
+              "delkaStudia": 3,
+              "kod": "75-01-R/023",
+              "ks": false,
+              "minulyRokPrihlaseno": null,
+              "minulyRokPrijato": null,
+           

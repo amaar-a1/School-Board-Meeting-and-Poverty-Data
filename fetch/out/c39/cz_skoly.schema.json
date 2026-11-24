@@ -1,0 +1,599 @@
+{
+  "id": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "skoly",
+  "type": "object",
+  "description": "Školy a vyučované obory",
+  "x-docUrl": "https://data.mpsv.cz/web/data/skoly",
+  "properties": {
+    "polozky": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "portalId": {
+            "type": "integer",
+            "description": "Jednoznačný identifikátor školy na portálu JPŘ PSV"
+          },
+          "id": {
+            "type": "string",
+            "maxLength": 129
+          },
+          "email": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 254,
+            "description": "Kontakt na školu - e-mail"
+          },
+          "ico": {
+            "type": "string",
+            "maxLength": 8,
+            "description": "IČO školy"
+          },
+          "kontaktniOsoba": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 64,
+            "description": "Jméno kontaktní osoby školy"
+          },
+          "kontaktniOsobaTelefon": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 50,
+            "description": "Kontaktní osoba školy - telefon"
+          },
+          "nazev": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 255,
+            "description": "Název školy"
+          },
+          "poznamka": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 4000,
+            "description": "Poznámka ke škole"
+          },
+          "reditel": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 64,
+            "description": "Jméno ředitele školy"
+          },
+          "reditelTelefon": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 50,
+            "description": "Ředitel školy - telefon"
+          },
+          "stravovani": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "description": "Cena za stravování v Kč"
+          },
+          "ubytovani": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "description": "Cena za ubytování v Kč"
+          },
+          "urlAdresa": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 2048,
+            "description": "Web školy"
+          },
+          "adresaSidla": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "description": "Adresa sídla školy",
+            "properties": {
+              "cisloDomovni": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "cisloOrientacni": {
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "maxLength": 41
+              },
+              "dodatekAdresy": {
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "maxLength": 250,
+                "description": "Adresa - dodatek adresy"
+              },
+              "kodAdresnihoMista": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "psc": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "maxLength": 5
+              },
+              "typCislaDomovniho": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "description": "Adresa - typ domovního čísla, typ stavebního objektu",
+                "x-looseRef": "/od/soubory/ciselniky/typy-stavebniho-objektu.schema.json",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "maxLength": 129
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "kraj": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "x-looseRef": "/od/soubory/ciselniky/kraje.schema.json",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "maxLength": 129
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "okres": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "x-looseRef": "/od/soubory/ciselniky/okresy.schema.json",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "maxLength": 129
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "obec": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "x-looseRef": "/od/soubory/ciselniky/obce.schema.json",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "maxLength": 129
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "mestskyObvodMestskaCast": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "x-looseRef": "/od/soubory/ciselniky/mestske-obvody-mestske-casti.schema.json",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "maxLength": 129
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "mestskyObvodVPraze": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "x-looseRef": "/od/soubory/ciselniky/mestske-obvody-v-praze.schema.json",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "maxLength": 129
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "castObce": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "x-looseRef": "/od/soubory/ciselniky/casti-obci.schema.json",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "maxLength": 129
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "nazevCastiObce": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "maxLength": 1024
+              },
+              "ulice": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "properties": {
+                  "nazev": {
+                    "type": "string",
+                    "maxLength": 48
+                  }
+                },
+                "required": [
+                  "nazev"
+                ]
+              }
+            }
+          },
+          "soucastiSkoly": {
+            "type": "array",
+            "description": "Součásti školy identifikované číslem IZO",
+            "items": {
+              "type": "object",
+              "properties": {
+                "portalId": {
+                  "type": "integer",
+                  "description": "Jednoznačný identifikátor součásti školy na portálu JPŘ PSV"
+                },
+                "izo": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "maxLength": 9,
+                  "description": "IZO součásti školy"
+                },
+                "druhSkoly": {
+                  "type": "object",
+                  "description": "Druh školy",
+                  "x-looseRef": "/od/soubory/ciselniky/druhy-skoly.schema.json",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "maxLength": 129
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                "vyucovaneObory": {
+                  "type": "array",
+                  "description": "Vyučované obory",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "portalId": {
+                        "type": "integer",
+                        "description": "Jednoznačný identifikátor vyučovaného oboru na portálu JPŘ PSV"
+                      },
+                      "aktualniRokPrijmou": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ],
+                        "description": "Plánovaný počet žáků, kteří budou přijati v aktuálním školním roce - podle atributu aktualniSkolniRok"
+                      },
+                      "aktualniSkolniRok": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "maxLength": 9,
+                        "description": "Aktuální školní rok"
+                      },
+                      "delkaStudia": {
+                        "type": "number",
+                        "description": "Délka studia"
+                      },
+                      "kod": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "maxLength": 13,
+                        "description": "Kód oboru vzdělání podle Klasifikace kmenových oborů vzdělání (KKOV)"
+                      },
+                      "ks": {
+                        "type": [
+                          "boolean",
+                          "null"
+                        ],
+                        "description": "Příznak zobrazení oboru v katalogu škol"
+                      },
+                      "minulyRokPrihlaseno": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ],
+                        "description": "Počet žáků přihlášených v minulém školním roce - podle atributu minulySkolniRok"
+                      },
+                      "minulyRokPrijato": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ],
+                        "description": "Počet žáků přijatých v minulém školním roce - podle atributu minulySkolniRok"
+                      },
+                      "minulySkolniRok": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "maxLength": 9,
+                        "description": "Minulý školní rok"
+                      },
+                      "nazevOboru": {
+                        "type": "string",
+                        "maxLength": 120,
+                        "description": "Název oboru vzdělávání"
+                      },
+                      "nenabizet": {
+                        "type": [
+                          "boolean",
+                          "null"
+                        ],
+                        "description": "Nenabízet"
+                      },
+                      "ozp": {
+                        "type": "boolean",
+                        "description": "Vhodnost pro žáky / studenty OZP"
+                      },
+                      "plp": {
+                        "type": "boolean",
+                        "description": "Povinná lékařská prohlídka"
+                      },
+                      "prijatoKeDni": {
+                        "type": "string",
+                        "format": "date",
+                        "description": "Datum, ke kterému je evidovaný počet přijatých žáků"
+                      },
+                      "prospech": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "Prospěch v daném vyučovaném oboru"
+                      },
+                      "druhStudia": {
+                        "type": [
+                          "object",
+                          "null"
+                        ],
+                        "description": "Druh studia",
+                        "x-looseRef": "/od/soubory/ciselniky/druhy-studia.schema.json",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "maxLength": 129
+                          }
+                        },
+                        "required": [
+                          "id"
+                        ]
+                      },
+                      "formaStudia": {
+                        "type": "object",
+                        "description": "Forma studia",
+                        "x-looseRef": "/od/soubory/ciselniky/formy-studia.schema.json",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "maxLength": 129
+                          }
+                        },
+                        "required": [
+                          "id"
+                        ]
+                      },
+                      "ukonceniStudia": {
+                        "type": "object",
+                        "description": "Způsob ukončení studia",
+                        "x-looseRef": "/od/soubory/ciselniky/ukonceni-studia.schema.json",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "maxLength": 129
+                          }
+                        },
+                        "required": [
+                          "id"
+                        ]
+                      },
+                      "vhodnostiProZaky": {
+                        "type": "array",
+                        "description": "Vhodnost oboru pro typy žáků (absolventů)",
+                        "items": {
+                          "type": "object",
+                          "x-looseRef": "/od/soubory/ciselniky/vhodnosti-pro-zaky.schema.json",
+                          "properties": {
+                            "id": {
+                              "type": "string",
+                              "maxLength": 129
+                            }
+                          },
+                          "required": [
+                            "id"
+                          ]
+                        }
+                      },
+                      "skolne": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "Roční školné"
+                      },
+                      "stupenVzdelani": {
+                        "type": "object",
+                        "description": "Stupeň poskytovaného vzdělání",
+                        "x-looseRef": "/od/soubory/ciselniky/vzdelani-detailni-kategorie.schema.json",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "maxLength": 129
+                          }
+                        },
+                        "required": [
+                          "id"
+                        ]
+                      },
+                      "prijimaciZkousky": {
+                        "type": [
+                          "array",
+                          "null"
+                        ],
+                        "description": "Přijímací zkoušky na vyučovaný obor",
+                        "items": {
+                          "type": "object",
+                          "x-looseRef": "/od/soubory/ciselniky/prijimaci-zkousky.schema.json",
+                          "properties": {
+                            "id": {
+                              "type": "string",
+                              "maxLength": 129
+                            }
+                          },
+                          "required": [
+                            "id"
+                          ]
+                        }
+                      }
+                    },
+                    "required": [
+                      "portalId",
+                      "delkaStudia",
+                      "nazevOboru",
+                      "ozp",
+                      "plp",
+                      "prijatoKeDni",
+                      "formaStudia",
+                      "ukonceniStudia",
+                      "vhodnostiProZaky",
+                      "stupenVzdelani"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "portalId",
+                "druhSkoly",
+                "vyucovaneObory"
+              ]
+            }
+          },
+          "vyucovaneJazyky": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "description": "Vyučované jazyky na škole",
+            "items": {
+              "type": "object",
+              "x-looseRef": "/od/soubory/ciselniky/jazyky.schema.json",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "maxLength": 129
+                }
+              },
+              "required": [
+                "id"
+              ]
+            }
+          },
+          "typZrizovatele": {
+            "type": "object",
+            "description": "Typ zřizovatele",
+            "x-looseRef": "/od/soubory/ciselniky/typy-zrizovatele.schema.json",
+            "properties": {
+              "id": {
+                "type": "string",
+                "maxLength": 129
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "typSkoly": {
+            "type": "object",
+            "description": "Typ školy",
+            "x-looseRef": "/od/soubory/ciselniky/typy-skoly.schema.json",
+            "properties": {
+              "id": {
+                "type": "string",
+                "maxLength": 129
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        },
+        "required": [
+          "portalId",
+          "id",
+          "ico",
+          "soucastiSkoly",
+          "typZrizovatele",
+          "typSkoly"
+        ]
+      }
+    }
+  }
+}
