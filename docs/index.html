@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="hero">
     <div class="wrap">
       <h1 id="site-title">School Board Meetings &amp; Poverty Data</h1>
@@ -17,11 +18,11 @@
     </div>
   </header>
 
-  <main class="wrap">
+  <main id="main" class="wrap" tabindex="-1">
     <div id="status" class="status">Loading data…</div>
 
     <div id="tabs" class="tabs" hidden></div>
-    <p id="dataset-note" class="note dataset-note"></p>
+    <div id="dataset-note" class="note dataset-note"></div>
     <p id="quality" class="quality" hidden></p>
 
     <section id="find" class="find" aria-label="Find a district" hidden>
@@ -37,17 +38,26 @@
     <div class="tabs view-tabs">
       <label class="tabs-label" for="view-select">Show:</label>
       <select id="view-select">
-        <option data-view-tab="overview" value="overview">Overview</option>
-        <option data-view-tab="size" value="size">By district size</option>
-        <option data-view-tab="locale" value="locale">By locale</option>
-        <option data-view-tab="density" value="density">By density &amp; public schools</option>
-        <option data-view-tab="boards" value="boards">School boards only</option>
-        <option data-view-tab="rules" value="rules">State rules</option>
-        <option data-view-tab="map" value="map">Map</option>
-        <option data-view-tab="trends" value="trends">Trends</option>
-        <option data-view-tab="stats" value="stats">Statistics</option>
-        <option data-view-tab="compare" value="compare">Compare two places</option>
-        <option data-view-tab="sources" value="sources">Sources</option>
+        <optgroup label="Explore">
+          <option data-view-tab="overview" value="overview">Overview</option>
+          <option data-view-tab="map" value="map">Map</option>
+          <option data-view-tab="trends" value="trends">Trends</option>
+          <option data-view-tab="compare" value="compare">Compare two places</option>
+        </optgroup>
+        <optgroup label="Group places">
+          <option data-view-tab="size" value="size">By district size</option>
+          <option data-view-tab="locale" value="locale">By locale</option>
+          <option data-view-tab="density" value="density">By density &amp; public schools</option>
+          <option data-view-tab="boards" value="boards">School boards only</option>
+        </optgroup>
+        <optgroup label="Analysis">
+          <option data-view-tab="stats" value="stats">Statistics</option>
+        </optgroup>
+        <optgroup label="About">
+          <option data-view-tab="guide" value="guide">How to read this site</option>
+          <option data-view-tab="rules" value="rules">State rules</option>
+          <option data-view-tab="sources" value="sources">Sources</option>
+        </optgroup>
       </select>
     </div>
 
@@ -253,23 +263,45 @@
           <div class="controls">
             <label>Color by
               <select id="map-metric">
-                <option value="poverty">Child poverty rate</option>
-                <option value="meetings">Available board meetings</option>
-                <option value="rank">Poverty rank within its country</option>
-                <option value="locale">Locale (city, suburb, town, rural)</option>
-                <option value="enrollment">Enrollment (pupils)</option>
-                <option value="density">Population density</option>
-                <option value="peers">Meetings vs. same-size places</option>
-                <option value="recency">Time since latest meeting</option>
-                <option value="public">Share of pupils in public schools</option>
+                <optgroup label="Poverty">
+                  <option value="poverty">Child poverty rate</option>
+                  <option value="rank">Poverty rank within its country</option>
+                </optgroup>
+                <optgroup label="Over time">
+                  <option value="povYear">Poverty in a chosen year</option>
+                  <option value="enrYear">Enrollment in a chosen year</option>
+                  <option value="pubYear">Public schools' share in a chosen year</option>
+                  <option value="change">Change in poverty</option>
+                  <option value="changeEnr">Change in enrollment</option>
+                  <option value="changePop">Change in population</option>
+                  <option value="changePub">Change in public schools' share</option>
+                </optgroup>
+                <optgroup label="Meetings">
+                  <option value="meetings">Available board meetings</option>
+                  <option value="perYear">Meetings per year</option>
+                  <option value="peers">Meetings vs. same-size places</option>
+                  <option value="recency">Time since latest meeting</option>
+                </optgroup>
+                <optgroup label="Schools and people">
+                  <option value="enrollment">Enrollment (pupils)</option>
+                  <option value="public">Share of pupils in public schools</option>
+                  <option value="locale">Locale (city, suburb, town, rural)</option>
+                  <option value="density">Population density</option>
+                </optgroup>
               </select>
             </label>
+            <span id="map-year-wrap" class="map-year" hidden><label>Year <select id="map-year"></select></label><button type="button" id="map-play" aria-pressed="false" title="Step through the years">▶ Play</button></span>
             <label>Go to <select id="map-jump"></select></label>
             <label id="map-boards-wrap" hidden title="Leave out town council and parliament meetings counted as stand-ins where there is no school board"><input type="checkbox" id="map-boards-only"> School boards only</label>
-            <label><input type="checkbox" id="map-secondary"> Secondary districts</label>
-            <label><input type="checkbox" id="map-fr-small"> Smaller French communes</label>
-            <label><input type="checkbox" id="map-canada-overlap"> Overlapping Canadian boards</label>
             <label title="Grey out places whose colour comes from an estimate rather than their own published figure"><input type="checkbox" id="map-no-est"> No estimates</label>
+            <details class="more-options">
+              <summary>More map options</summary>
+              <div class="more-options-body">
+                <label title="In US states with separate high school districts, draw those on top"><input type="checkbox" id="map-secondary"> Secondary districts</label>
+                <label title="France: draw each small commune's own border instead of grouping them by département"><input type="checkbox" id="map-fr-small"> Smaller French communes</label>
+                <label title="Canada: draw the boards that overlap others (separate, French-language and Catholic boards)"><input type="checkbox" id="map-canada-overlap"> Overlapping Canadian boards</label>
+              </div>
+            </details>
           </div>
         </div>
         <div class="map-search">
@@ -283,7 +315,9 @@
         <p id="map-status" class="muted">Loading district borders…</p>
         <div id="map" class="map-box" role="region" aria-label="Map of school districts"></div>
         <div id="map-legend" class="map-legend"></div>
-        <p class="note">Hover over or tap a district to see its figures; click to zoom in. District borders are the Census Bureau's 2024
+        <p class="note">Hover over or tap a place to see its figures; click to zoom in. Pick what to colour by above; each country's note and the <a href="#guide">How to read this site</a> page explain the figures.</p>
+        <details class="more about-map"><summary>About this map: borders and special cases, country by country</summary>
+        <p class="note">District borders are the Census Bureau's 2024
           cartographic boundaries (simplified). Unified and elementary districts are shown; in states that also have separate high school
           districts, tick “Secondary districts” to draw those on top. Guam, the Northern Mariana Islands and American Samoa have one
           territory-wide district each, so their outline is the whole territory. Vermont's poverty figures are for supervisory unions,
@@ -306,6 +340,7 @@
           reserves, so it mostly reflects unorganized areas), or the province-wide rate where there are too few children; meetings are 0. These are on the map only, not in the provinces'
           tables, charts or totals. Canada's colors use the
           share of children 0–17 in low income (2021 Census, LIM-AT), which isn't the same measure as the US child poverty rate.</p>
+        </details>
       </section>
     </div>
 
@@ -395,6 +430,40 @@
       </section>
     </div>
 
+    <div data-view="guide" hidden>
+      <section class="card guide">
+        <h2>How to read this site</h2>
+        <p>This site puts two things side by side for school districts, councils and other local areas in many countries: how poor each place is, and how many of the meetings that govern its schools have been posted online. The question behind it is whether poorer places are less open about how their schools are run.</p>
+
+        <h3>Pick a country, then a view</h3>
+        <p>The menu at the top picks a country, or <b>All</b> for everywhere at once; the second menu, in some countries, picks a state, province or region. <b>Show</b> picks a view: the <b>Overview</b> (summary, chart and the full table), the <b>Map</b>, <b>Trends</b> over the years, and <b>Compare two places</b>; views that group places by size, locale or density; the <b>Statistics</b>; and this page, the rules and the sources. <b>Share</b> copies a link to exactly what's on screen, or the code to embed a map or chart.</p>
+
+        <h3>Countries aren't directly comparable</h3>
+        <p>Every country measures poverty its own way: a child poverty rate in the US, the share of households below a poverty line in Malaysia, a multidimensional index in India and Mexico. So a figure from one country can't be set against another's. To compare across countries, use each place's <b>poverty rank in its country</b> (0 is the least poor place there, 100 the poorest); the Statistics view works only with ranks for this reason.</p>
+
+        <h3>Stand-ins</h3>
+        <p>Where a country publishes no poverty rate for local areas, the site uses the closest published figure as a <b>stand-in</b>: a benefit or welfare rate, an unemployment rate, or a low-income share. Its tooltip and the country's note say so. Meetings have stand-ins too: most countries have no school boards, so the meetings counted are those of the council that runs or oversees local schools, such as a town council or a district assembly. The <b>School boards only</b> view and the map's checkbox of the same name leave stand-in meetings out.</p>
+
+        <h3>Estimates</h3>
+        <p>Some figures are estimates, not counts: enrollment where no pupil count is published (the school-age children living there, from census or WorldPop age data), and a few poverty figures borrowed from a wider area. Each is marked in its tooltip, and ticking <b>No estimates</b> on the map greys them out.</p>
+
+        <h3>Zero meetings doesn't mean no meetings</h3>
+        <p>Meetings were found by searching each place's council or board channel on YouTube (and CivicSearch for US districts). Many councils post only on Facebook or their own website, or don't record at all, so a 0 means none were found online where the site looked, not that none were held.</p>
+
+        <h3>Data quality labels</h3>
+        <p>Under each country's note are three coloured labels: <span class="q-chip q-good"><i></i>solid</span>, <span class="q-chip q-fair"><i></i>use with care</span> and <span class="q-chip q-weak"><i></i>weak</span>, for its poverty figure (what kind, how old, how many places have their own), its enrollment (counted or estimated) and its meetings (a school board's or a stand-in's). The Sources tab has the table for every country.</p>
+
+        <h3>Reading the map</h3>
+        <p>Pick what to colour by: poverty or its rank; meetings, <b>meetings per year</b> (fairer to councils that began posting recently), meetings against same-size places, or time since the latest one; enrollment, public schools' share, locale or density. Under <b>Over time</b>, colour by poverty, enrollment or public schools' share <b>in a chosen year</b> (pick the year, or press Play to step through them), or by how poverty, enrollment, population or public schools' share <b>changed</b> between the earliest and latest years published. Several years are published for the US (child poverty, 2019–2024), Czechia, Malaysia, Indonesia, Paraguay, Spain, Mexico, the Nordic countries, the UK and a few others. Hover or tap a place for its figures. Grey means no figure. The map loads detailed borders as you zoom in.</p>
+
+        <h3>Reading the statistics</h3>
+        <p>The Statistics view asks, country by country, whether poorer places are less likely to post any meetings than places of the same size there. A link isn't proof that poverty causes it, and it says nothing about whether meetings were held, only whether they were posted where the site looked. The view explains each figure.</p>
+
+        <h3>Using the data</h3>
+        <p>Downloads give the rows you're viewing as a CSV. Use of the data is subject to each source's terms and conditions; the <a href="#sources">Sources</a> tab lists where every figure comes from. Some sources update automatically: US meeting counts daily, and some countries' figures and meeting counts monthly; the rest are as of the date in each country's footer.</p>
+      </section>
+    </div>
+
     <div data-view="sources" hidden>
       <section id="sources" class="card">
         <h2>Sources</h2>
@@ -410,6 +479,7 @@
         <div class="table-wrap"><table id="quality-table" class="data-table"><thead></thead><tbody></tbody></table></div>
       </section>
     </div>
+    <p class="embed-only embed-full"><a id="embed-full" href="./" target="_blank" rel="noopener">Open the full site</a></p>
   </main>
 
   <footer class="wrap muted"><p id="footer">Poverty figures are for children ages 5–17.</p><p id="site-created">Site created October 26, 2026.</p>

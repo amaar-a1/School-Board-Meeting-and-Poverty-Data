@@ -85,6 +85,10 @@
       if (!orig.has(n)) orig.set(n, en);
       const out = en.replace(key, want);
       if (n.nodeValue !== out) n.nodeValue = out;
+    } else if (n.nodeType === 1 && n.tagName === "OPTGROUP" && n.label) {
+      const en = n.dataset.enLabel || n.label;
+      n.dataset.enLabel = en;
+      n.label = lang === "en" ? en : (T[lang][en] || en);
     } else if (n.nodeType === 1 && n.placeholder) {
       const en = n.dataset.enPlaceholder || n.placeholder;
       n.dataset.enPlaceholder = en;
@@ -131,6 +135,7 @@
     return true;
   }
   function sortSelect(sel) {
+    if (sel.id === "view-select" || sel.id === "map-metric") return;   // sections in a set order
     const keep = sel.value;
     if (order(sel)) sel.value = keep;
   }

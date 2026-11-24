@@ -188,6 +188,27 @@
       colors: ["#006837", "#31a354", "#78c679", "#c2e699", "#ffffcc"],
       labels: ["Under 3 months ago", "3–11 months", "1–2 years", "2–5 years", "5 years or more"]
     },
+    // Change in the poverty figure between the place's earliest and latest years ("Poverty by year"), in percentage
+    // points: blue fell, red rose.
+    change: {
+      breaks: [-5, -2, -0.5, 0.5, 2, 5],
+      colors: ["#2166ac", "#67a9cf", "#d1e5f0", "#f7f7f7", "#fddbc7", "#ef8a62", "#b2182b"],
+      labels: ["Fell 5 points or more", "Fell 2–5 points", "Fell 0.5–2 points", "About the same (within 0.5)", "Rose 0.5–2 points", "Rose 2–5 points", "Rose 5 points or more"]
+    },
+    // Change in enrollment or population between the earliest and latest years given, in percent.
+    changeEnr: {
+      breaks: [-20, -5, -1, 1, 5, 20],
+      colors: ["#8c510a", "#d8b365", "#f6e8c3", "#f5f5f5", "#c7eae5", "#5ab4ac", "#01665e"],
+      labels: ["Fell 20% or more", "Fell 5–20%", "Fell 1–5%", "About the same (within 1%)", "Rose 1–5%", "Rose 5–20%", "Rose 20% or more"]
+    },
+    // Meetings found per year, counted from the first year with a meeting found, so a council that began posting
+    // recently isn't ranked below one with a long archive.
+    changePop: null,
+    perYear: {
+      breaks: [0.5, 2, 6, 12, 24],
+      colors: ["#f7fbff", "#c6dbef", "#6baed6", "#3182bd", "#08519c", "#08306b"],
+      labels: ["Under 0.5 a year (or none)", "0.5–1.9", "2–5.9", "6–11.9", "12–23.9", "24 or more a year"]
+    },
     // Public schools' share of the pupils counted (for US districts: of public pupils plus private-school pupils
     // inside the district's border).
     public: {
@@ -196,6 +217,11 @@
       labels: ["Under 50% in public schools", "50–69%", "70–79%", "80–89%", "90–94%", "95% or more"]
     }
   };
+  SCALES.changePop = SCALES.changeEnr;
+  // "In a chosen year": the usual scales, the value taken from the place's "... by year" column (the year menu picks it).
+  SCALES.povYear = SCALES.poverty; SCALES.enrYear = SCALES.enrollment; SCALES.pubYear = SCALES.public;
+  SCALES.changePub = SCALES.change;
+  const YEAR_COL = { povYear: "Poverty by year", enrYear: "Enrollment by year", pubYear: "Public share by year" };
   // Area of a border in km² (spherical polygons), for places whose data has a population but no density (US districts).
   const R_KM = 6371.0088, rad = (d) => d * Math.PI / 180;
   function ringArea(ring) {
@@ -232,15 +258,16 @@
     return a > 0 ? pop / a : NaN;
   }
   const NO_DATA = "#9e9e9e";
-  // Color by locale: one color per kind of place, from city to countryside. Canada's own groups (large, medium and
+  // Color by locale: one color per kind of place, from city to countryside (the Okabe-Ito palette, distinguishable with
+  // the common kinds of colour blindness). Canada's own groups (large, medium and
   // small urban centres) share the colors of the closest US kinds. In "All", Canadian and European locales carry a
   // "Canada: " or country prefix, which is dropped here.
   const LOCALES = [
-    { keys: ["Urban", "Large urban"], color: "#08519c", label: "Urban (Canada: large urban centre)" },
-    { keys: ["Suburban", "Medium urban"], color: "#6baed6", label: "Suburban (Canada: medium urban centre)" },
-    { keys: ["Town", "Small urban"], color: "#fdae6b", label: "Town (Canada: small urban centre)" },
-    { keys: ["Mixed"], color: "#9e74c9", label: "Mixed (estimated; outside the US and Canada)" },
-    { keys: ["Rural"], color: "#41ab5d", label: "Rural" },
+    { keys: ["Urban", "Large urban"], color: "#0072b2", label: "Urban (Canada: large urban centre)" },
+    { keys: ["Suburban", "Medium urban"], color: "#56b4e9", label: "Suburban (Canada: medium urban centre)" },
+    { keys: ["Town", "Small urban"], color: "#e69f00", label: "Town (Canada: small urban centre)" },
+    { keys: ["Mixed"], color: "#cc79a7", label: "Mixed (estimated; outside the US and Canada)" },
+    { keys: ["Rural"], color: "#009e73", label: "Rural" },
     { keys: ["Province-wide"], color: "#bdbdbd", label: "Canada: province- or territory-wide board", hide: true }
   ];
   const localeColor = (row) => {
@@ -381,6 +408,30 @@
     if (d > now) d = now;
     return (now - d) / (30.44 * 864e5);
   }
+  // "2019: 3.1%; 2024: 2.4%" -> [[2019, 3.1], [2024, 2.4]], oldest first.
+  function yearPairs(v) {
+    return String(v || "").split(";").map((p) => p.split(":").map((x) => x && x.trim())).filter((p) => /^\d{4}$/.test(p[0]) && !isNaN(toNumber(p[1])))
+      .map((p) => [+p[0], toNumber(p[1])]).sort((a, b) => a[0] - b[0]);
+  }
+  function povChange(row, col = "Poverty by year") {
+    const y = yearPairs(row && row[col]);
+    return y.length >= 2 ? { d: y[y.length - 1][1] - y[0][1], from: y[0][0], to: y[y.length - 1][0] } : null;
+  }
+  function pctChange(row, col) {
+    const y = yearPairs(row && row[col]).filter((p) => p[1] > 0);
+    return y.length >= 2 ? { d: 100 * (y[y.length - 1][1] / y[0][1] - 1), from: y[0][0], to: y[y.length - 1][0] } : null;
+  }
+  function perYear(row) {
+    if (!row) return null;
+    let n = toNumber(row["Available Board Meetings"]);
+    if (!(n > 0) && toNumber(row["Other Board Meetings"]) > 0) n = toNumber(row["Other Board Meetings"]);
+    if (!(n > 0)) return { v: 0 };
+    const y = yearPairs(row["Meetings by year"]).filter((p) => p[1] > 0);
+    const first = y.length ? y[0][0] : (String(row["Latest meeting"] || "").match(/^(\d{4})/) || [])[1];
+    if (!first) return null;
+    const years = Math.max(1, (Date.now() - new Date(+first, 0, 1)) / (365.25 * 864e5));
+    return { v: n / years, first: +first };
+  }
   const agoText = (mo) => (mo < 1 ? "under a month ago" : mo < 24 ? `about ${Math.round(mo)} month${Math.round(mo) === 1 ? "" : "s"} ago` : `about ${Math.round(mo / 12)} years ago`);
   // Share of the pupils counted who are in public schools.
   const PRIV = "Private school enrollment (within its borders)";
@@ -415,7 +466,7 @@
   const EST_HIDDEN = "#d4d4d4";
   // "School boards only" (shown with the meetings colouring): places whose count is a council or parliament stand-in
   // (app.js's "Meeting body" column) count as 0, like places with no meetings found.
-  const boardsOnly = () => ["meetings", "recency"].includes(metricNow()) && !!($("map-boards-only") && $("map-boards-only").checked);
+  const boardsOnly = () => ["meetings", "recency", "perYear"].includes(metricNow()) && !!($("map-boards-only") && $("map-boards-only").checked);
   const standIn = (row) => !!row && /^Stand-in/.test(String(row["Meeting body"] || ""));
 
   // The "Color by" choice. A browser restoring the page after a reload (or after dropping the tab to save memory)
@@ -454,8 +505,14 @@
     if (metric === "peers") { const p = peerInfo(row, id); v = p ? p.pct : NaN; }
     if (metric === "recency") v = boardsOnly() && standIn(row) ? NaN : monthsSince(row);   // a stand-in's latest meeting isn't a school board's
     if (metric === "public") v = publicShare(row);
+    if (metric === "change") { const c = povChange(row); v = c ? c.d : NaN; }
+    if (metric === "changePub") { const c = povChange(row, "Public share by year"); v = c ? c.d : NaN; }
+    if (YEAR_COL[metric]) { const y = selectedYear(); const p = yearPairs(row && row[YEAR_COL[metric]]).find((q) => q[0] === y); v = p ? p[1] : NaN; }
+    if (metric === "changeEnr") { const c = pctChange(row, "Enrollment by year"); v = c ? c.d : NaN; }
+    if (metric === "changePop") { const c = pctChange(row, "Population by year"); v = c ? c.d : NaN; }
+    if (metric === "perYear") { const q = boardsOnly() && standIn(row) ? { v: 0 } : perYear(row); v = q ? q.v : NaN; }
     if (isNaN(v)) return NO_DATA;
-    const s2 = metric === "poverty" && OWN_SCALE[euOf(id)] ? SCALES[OWN_SCALE[euOf(id)]] : sc;
+    const s2 = (metric === "poverty" || metric === "povYear") && OWN_SCALE[euOf(id)] ? SCALES[OWN_SCALE[euOf(id)]] : sc;
     const i = s2.breaks.findIndex((b) => v < b);
     return s2.colors[i === -1 ? s2.colors.length - 1 : i];
   }
@@ -537,15 +594,20 @@
         : !isNaN(iePov) && eu === "FRA" ? `Commune poverty rate: not published<br>Poverty rate of the whole département (all ages): ${iePov.toFixed(1)}%<br>`
         : !isNaN(iePov) ? `Poverty rate (all ages, its region): ${iePov.toFixed(1)}%<br>Unemployment (Census 2022): ${esc(r["Unemployment rate (Census 2022)"] || "–")}<br>`
         : isNaN(pov) && !isNaN(unemp) ? `Unemployment (stand-in for poverty): ${unemp.toFixed(1)}% (2015 est.)<br>`
-        : `${ukPov ? "Children under 16 in low income" : eu === "ISLE" ? esc(r["Poverty measure"] || "Poverty") : ALL_AGES.has(eu) ? `Poverty (${eu === "LKA" ? "all ages, 2019" : eu === "RWA" ? "all ages, 2023/24" : eu === "CZE" ? "stand-in: unemployed per 100 residents aged 15–64, December 2024" : eu === "PRY" ? "all ages, 2022" : eu === "IDN" ? "all ages, 2020" : eu === "MYS" ? "households below the poverty line, 2024" : eu === "PH" ? "all ages, 2021" : eu === "ARG" ? "all ages, its surveyed cities, first half of 2026" : eu === "ISR" ? "stand-in: people known to social services per 100 residents, 2019" : eu === "SVN" ? "stand-in: family and social benefits as a share of net income, 2024" : eu === "TWN" ? "stand-in: low- and middle-low-income people per 100 residents, 2026" : eu === "URY" ? "stand-in: Tarjeta Uruguay Social cards per 100 residents, 2024" : eu === "CRI" ? "stand-in: multidimensional poverty index × 100, 2023" : eu === "LTU" ? "all ages, at-risk-of-poverty rate, 2026" : eu === "IND" ? "all ages, multidimensional, 2019-21" : eu === "ZAF" ? "stand-in: public-school learners in quintile 1–3 (no-fee) schools, 2023" : eu === "GEO" ? "stand-in: families on the subsistence allowance per 100 residents, 2025" : eu === "KOR" ? "stand-in: Basic Livelihood Security recipients per 100 residents, 2025" : eu === "HR" ? "all ages, 2011 poverty map" : eu === "EE" ? "stand-in: subsistence-benefit applications per 100 residents a month, 2025" : eu === "AU" ? "stand-in: working-age income support per 100 people aged 15–64, 2026" : eu === "BE" ? "stand-in: integration income recipients per 100 inhabitants, 2025" : eu === "PT" ? "stand-in: minimum-income (RSI) recipients per 100 of working age, 2025" : eu === "JP" ? "welfare recipients, all ages, FY2024" : eu === "IT" ? "stand-in: filers with income of €10,000 or less, 2023" : eu === "FRA" ? "all ages, 60% of median, 2023" : eu === "EC" ? "all ages, consumption, 2014 estimate" : eu === "CL" ? "all ages, income, 2024" : eu === "BR" ? "all ages, income up to ½ minimum wage per person, 2022" : eu === "PE" ? "all ages, monetary, 2018" : eu === "MX" ? "all ages, multidimensional, 2020" : "all ages, multidimensional, 2018"})` : eu ? `Children in low income (${{ NO: "0–17, 2022–24", SE: "0–19, 2024", FI: "under 18", DK: "0–17, 50% line, 2024", NL: "CBS, 2024", DE: "under 15 on SGB II benefits, 2023", NZ: "60% line, 2025", IS: "national rate", CH: "0–17 on social assistance", ES: "under 18, 60% line, 2024", CL: "all ages, income, 2024", CO: "all ages, multidimensional, 2018", PL: "0–17 on family benefit, 2024", LV: "stand-in: 0–17 on basic means-tested benefits, 2025", KEN: "0–17 below the poverty line, 2022" }[eu]})` : "Child poverty"}: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>`) +
+        : `${ukPov ? "Children under 16 in low income" : eu === "ISLE" ? esc(r["Poverty measure"] || "Poverty") : ALL_AGES.has(eu) ? `Poverty (${eu === "LKA" ? "all ages, 2019" : eu === "RWA" ? "all ages, 2023/24" : eu === "CZE" ? "stand-in: unemployed per 100 residents aged 15–64, latest December" : eu === "PRY" ? "all ages, 2022" : eu === "IDN" ? "all ages, 2020" : eu === "MYS" ? "households below the poverty line, 2024" : eu === "PH" ? "all ages, 2021" : eu === "ARG" ? "all ages, its surveyed cities, first half of 2026" : eu === "ISR" ? "stand-in: people known to social services per 100 residents, 2019" : eu === "SVN" ? "stand-in: family and social benefits as a share of net income, 2024" : eu === "TWN" ? "stand-in: low- and middle-low-income people per 100 residents, 2026" : eu === "URY" ? "stand-in: Tarjeta Uruguay Social cards per 100 residents, 2024" : eu === "CRI" ? "stand-in: multidimensional poverty index × 100, 2023" : eu === "LTU" ? "all ages, at-risk-of-poverty rate, 2026" : eu === "IND" ? "all ages, multidimensional, 2019-21" : eu === "ZAF" ? "stand-in: public-school learners in quintile 1–3 (no-fee) schools, 2023" : eu === "GEO" ? "stand-in: families on the subsistence allowance per 100 residents, 2025" : eu === "KOR" ? "stand-in: Basic Livelihood Security recipients per 100 residents, 2025" : eu === "HR" ? "all ages, 2011 poverty map" : eu === "EE" ? "stand-in: subsistence-benefit applications per 100 residents a month, 2025" : eu === "AU" ? "stand-in: working-age income support per 100 people aged 15–64, 2026" : eu === "BE" ? "stand-in: integration income recipients per 100 inhabitants, 2025" : eu === "PT" ? "stand-in: minimum-income (RSI) recipients per 100 of working age, 2025" : eu === "JP" ? "welfare recipients, all ages, FY2024" : eu === "IT" ? "stand-in: filers with income of €10,000 or less, 2023" : eu === "FRA" ? "all ages, 60% of median, 2023" : eu === "EC" ? "all ages, consumption, 2014 estimate" : eu === "CL" ? "all ages, income, 2024" : eu === "BR" ? "all ages, income up to ½ minimum wage per person, 2022" : eu === "PE" ? "all ages, monetary, 2018" : eu === "MX" ? "all ages, multidimensional, 2020" : "all ages, multidimensional, 2018"})` : eu ? `Children in low income (${{ NO: "0–17, 2022–24", SE: "0–19, 2024", FI: "under 18", DK: "0–17, 50% line, 2024", NL: "CBS, 2024", DE: "under 15 on SGB II benefits, 2023", NZ: "60% line, 2025", IS: "national rate", CH: "0–17 on social assistance", ES: "under 18, 60% line, 2024", CL: "all ages, income, 2024", CO: "all ages, multidimensional, 2018", PL: "0–17 on family benefit, 2024", LV: "stand-in: 0–17 on basic means-tested benefits, 2025", KEN: "0–17 below the poverty line, 2022" }[eu]})` : "Child poverty"}: ${isNaN(pov) ? "–" : pov.toFixed(1) + "%"}<br>`) +
       (!isNaN(frKids) ? `Children under 18 in poverty, whole département: ${frKids.toFixed(1)}%<br>` : "") +
       (isNaN(povValue(r)) && !isNaN(povValue(r, true)) ? `Shown on the map: ${povValue(r, true).toFixed(1)}% (${r["Unmet basic needs (NBI, 2010)"] ? "unmet basic needs, 2010" : `its latest earlier figure, ${String(r["Poverty by year"] || "").split(";").map((x) => x.trim().split(":")[0]).sort().pop()}`})<br>` : "") +
       `Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}` +
       (standIn(r) ? ` (a stand-in: council or parliament meetings, not a school board's${boardsOnly() ? (metricNow() === "recency" ? "; left out with School boards only" : "; shown as 0 with School boards only") : ""})` : r["Meeting body"] ? " (school board or equivalent)" : "") +
-      (toNumber(r["Other Board Meetings"]) > 0 ? `${r.State ? " on CivicSearch" : meet > 0 ? " recorded" : ""}; ${toNumber(r["Other Board Meetings"]).toLocaleString()} from ${r.State ? "other sources" : "the council's or board's own records"} (see note)` : "") + `<br>` +
+      (toNumber(r["Other Board Meetings"]) > 0 ? `${r.State ? " on CivicSearch" : meet > 0 ? " recorded" : ""}; ${toNumber(r["Other Board Meetings"]).toLocaleString()} from ${r.State ? "other sources" : "the council's or board's own records"} (see note)` : "") +
+      (!(meet > 0) && !(toNumber(r["Other Board Meetings"]) > 0) && !r.State && !isCA(gid(feature)) && eu && eu !== "JP" ? `<span class="tip-zero"> — none found on YouTube; the council may post on Facebook or its own website instead</span>` : "") + `<br>` +
       `Enrollment: ${isNaN(enr) ? "not reported" : enr.toLocaleString()}${r["Enrollment estimated"] ? " (estimated: school-age children, no count published)" : /estimated/i.test(r["Enrollment year"] || "") ? ` (${esc(r["Enrollment year"])})` : realZero(r) || (eu === "AU" && !/^2021 Census/.test(r["Enrollment year"] || "") && r["Enrollment year"]) ? ` (${esc(r["Enrollment year"])})` : ""}` + rankLine(r, gid(feature)) +
       peerLine(r, gid(feature)) +
       (r["Latest meeting"] ? `<br>Latest recorded meeting: ${esc(r["Latest meeting"])}${isNaN(monthsSince(r)) ? "" : ` (${agoText(monthsSince(r))})`}` : "") +
+      ((q) => (q && q.first ? `<br>Meetings per year since the first found (${q.first}): ${q.v < 10 ? q.v.toFixed(1) : Math.round(q.v)}` : ""))(perYear(r)) +
+      ((c) => (c ? `<br>Change in the poverty figure, ${c.from}–${c.to}: ${c.d > 0 ? "+" : ""}${c.d.toFixed(1)} points` : ""))(povChange(r)) +
+      ((c) => (c ? `<br>Change in enrollment, ${c.from}–${c.to}: ${c.d > 0 ? "+" : ""}${c.d.toFixed(1)}%` : ""))(pctChange(r, "Enrollment by year")) +
+      ((c) => (c ? `<br>Change in population, ${c.from}–${c.to}: ${c.d > 0 ? "+" : ""}${c.d.toFixed(1)}%` : ""))(pctChange(r, "Population by year")) +
       publicLine(r) +
       (r.Locale ? `<br>Locale${/^(UK|IE)-/.test(r["District ID"]) || eu ? " (estimated)" : ""}: ${esc(r.Locale)}`
         : localeFallback(r, gid(feature)) ? `<br>Locale (estimated from its area's other places): ${esc(localeFallback(r, gid(feature)))}` : "") +
@@ -577,6 +639,10 @@
       (!isNaN(densityFor(r, r["District ID"])) ? `<br>People per km² (2021 Census, ${/First Nation \(band/.test(r["Board type"] || "") ? "the reserve" : /Province-wide/.test(r.Locale || "") ? "the whole province or territory" : "inside its border"}): ${densityFor(r, r["District ID"]) < 10 ? densityFor(r, r["District ID"]).toFixed(1) : Math.round(densityFor(r, r["District ID"])).toLocaleString()}` : "") +
       peerLine(r, r["District ID"]) +
       (r["Latest meeting"] ? `<br>Latest recorded meeting: ${esc(r["Latest meeting"])}${isNaN(monthsSince(r)) ? "" : ` (${agoText(monthsSince(r))})`}` : "") +
+      ((q) => (q && q.first ? `<br>Meetings per year since the first found (${q.first}): ${q.v < 10 ? q.v.toFixed(1) : Math.round(q.v)}` : ""))(perYear(r)) +
+      ((c) => (c ? `<br>Change in the poverty figure, ${c.from}–${c.to}: ${c.d > 0 ? "+" : ""}${c.d.toFixed(1)} points` : ""))(povChange(r)) +
+      ((c) => (c ? `<br>Change in enrollment, ${c.from}–${c.to}: ${c.d > 0 ? "+" : ""}${c.d.toFixed(1)}%` : ""))(pctChange(r, "Enrollment by year")) +
+      ((c) => (c ? `<br>Change in population, ${c.from}–${c.to}: ${c.d > 0 ? "+" : ""}${c.d.toFixed(1)}%` : ""))(pctChange(r, "Population by year")) +
       (r.Locale ? `<br>Locale (estimated): ${esc(r.Locale)}${/whole province or territory/.test(r["How poverty was calculated"] || "") ? " (serves the whole province or territory: the locale where most of the province's children live)" : ""}` : "") + rankLine(r, r["District ID"]) +
       (note ? `<div class="tip-note">${esc(note)}</div>` : "") + "</div>";
   }
@@ -609,7 +675,7 @@
         `<span class="map-faded">Locale: the US uses NCES's locale codes and Canada Statistics Canada's population centre sizes; elsewhere it's estimated from population density (see the By locale tab)</span>`]
       : sc.labels.map((l, i) => `<span><i style="background:${sc.colors[i]}"></i>${l}</span>`);
     if (boardsOnly()) items.push(`<span class="map-faded">School boards only: places whose only meetings are a stand-in (town council or parliament, not a school board or its equivalent) ${metricNow() === "recency" ? "show as having no meeting found" : "show 0"}</span>`);
-    if ($("map-boards-wrap")) $("map-boards-wrap").hidden = !["meetings", "recency"].includes(metricNow());
+    if ($("map-boards-wrap")) $("map-boards-wrap").hidden = !["meetings", "recency", "perYear"].includes(metricNow());
     const jpv = current && current.country === "JP";
     const own = current && OWN_SCALE[current.country];
     if (own && metricNow() === "poverty") items.splice(0, items.length, ...SCALES[own].labels.map((l, i) => `<span><i style="background:${SCALES[own].colors[i]}"></i>${l}</span>`));
@@ -677,6 +743,21 @@
     if (metricNow() === "enrollment")
       items.push(`<span><i style="background:${NO_DATA}"></i>No enrollment figure</span>`,
         `<span class="map-faded">Enrollment is counted differently from country to country (pupils at the place's schools, or pupils living there; some count only primary schools): see each view's note. Where no count is published, the figure is an estimate (school-age children living there), marked in the tooltip</span>`);
+    if (metricNow() === "change")
+      items.push(`<span><i style="background:${NO_DATA}"></i>Only one poverty year published</span>`,
+        `<span class="map-faded">The change between the earliest and latest years in the place's Poverty by year column, in percentage points of its own measure. Only some countries publish more than one year (Malaysia, Spain, Mexico, the Nordic countries, the UK and others); the years and measures differ, so compare places within a country</span>`);
+    if (YEAR_COL[metricNow()])
+      items.push(`<span><i style="background:${NO_DATA}"></i>No figure for ${selectedYear() || "that year"}</span>`,
+        `<span class="map-faded">${metricNow() === "povYear" ? "Each place's own poverty measure" : metricNow() === "enrYear" ? "Pupils, as each country counts them" : "Public schools' share of pupils"} in ${selectedYear() || "the chosen year"}. Only some countries publish several years; pick the year above, or press Play to step through them</span>`);
+    if (metricNow() === "changePub")
+      items.push(`<span><i style="background:${NO_DATA}"></i>Only one year published</span>`,
+        `<span class="map-faded">The change in public schools' share of pupils between the earliest and latest years given, in percentage points. So far for Indonesia (2021–2025)</span>`);
+    if (["changeEnr", "changePop"].includes(metricNow()))
+      items.push(`<span><i style="background:${NO_DATA}"></i>Only one year published</span>`,
+        `<span class="map-faded">The change in ${metricNow() === "changeEnr" ? "enrollment" : "population"} between the earliest and latest years given, in percent. So far for ${metricNow() === "changeEnr" ? "Malaysia (2017–2025) and Indonesia (2021–2025)" : "Malaysia (2020–2026) and Paraguay (2015–2025, projections)"}</span>`);
+    if (metricNow() === "perYear")
+      items.push(`<span><i style="background:${NO_DATA}"></i>Meetings found, but no dates to count years from</span>`,
+        `<span class="map-faded">Meetings found divided by the years since the first one found (from the recordings' dates), so a council that began posting recently isn't ranked below one with a long archive</span>`);
     if (metricNow() === "peers")
       items.push(`<span><i style="background:${NO_DATA}"></i>No enrollment figure (no size to compare by)</span>`,
         `<span class="map-faded">The share of places in the same country and the same size tier (by enrollment, as on the By district size tab: ${TIERS.map((t) => `${t.name} ${tierRange(t)}`).join(", ")}) that have fewer meetings found. Places with no meetings found are at 0%</span>`);
@@ -702,6 +783,36 @@
 
   // Islands are too small to see at a world zoom, so each also gets a dot (data/map/islands.json).
   let islandDots = [], spmLabel = null;
+  // The year menu (shown with the "in a chosen year" colourings): the years the view's places have figures for.
+  const selectedYear = () => +(($("map-year") && $("map-year").value) || 0);
+  function fillYears() {
+    const wrap = $("map-year-wrap"), sel = $("map-year"), col = YEAR_COL[metricNow()];
+    if (!wrap) return;
+    wrap.hidden = !col;
+    if (!col) { stopPlay(); return; }
+    const ys = new Set();
+    ((current && current.rows) || []).forEach((r) => yearPairs(r[col]).forEach((p) => ys.add(p[0])));
+    const list = [...ys].sort(), keep = selectedYear() || +(window.SiteLinks && window.SiteLinks.get("year")) || 0;
+    sel.innerHTML = "";
+    list.forEach((y) => sel.add(new Option(String(y), String(y))));
+    if (!list.length) { sel.add(new Option("no years here", "")); return; }
+    sel.value = String(list.includes(keep) ? keep : list[list.length - 1]);
+  }
+  let playing = null;
+  function stopPlay() { if (playing) clearInterval(playing); playing = null; if ($("map-play")) { $("map-play").textContent = "▶ Play"; $("map-play").setAttribute("aria-pressed", "false"); } }
+  function togglePlay() {
+    if (playing) return stopPlay();
+    const sel = $("map-year");
+    if (sel.options.length < 2) return;
+    if (sel.selectedIndex === sel.options.length - 1) sel.selectedIndex = 0;
+    $("map-play").textContent = "❚❚ Pause"; $("map-play").setAttribute("aria-pressed", "true");
+    restyle();
+    playing = setInterval(() => {
+      if (sel.selectedIndex >= sel.options.length - 1) return stopPlay();
+      sel.selectedIndex += 1; sel.dispatchEvent(new Event("change"));
+    }, 1300);
+  }
+
   function restyle() {
     // Saint-Pierre-et-Miquelon's label shows only in its own view.
     if (spmLabel) { if (current && current.country === "FR") spmLabel.addTo(map); else spmLabel.remove(); }
@@ -989,7 +1100,10 @@
     // One copy of the world: the map can't be dragged past its edges, and can't be zoomed out further than the world
     // fills the map (the minimum zoom follows the map's size).
     const WORLD = L.latLngBounds([[-85, -180], [85, 180]]);
-    map = L.map("map", { preferCanvas: true, minZoom: 1, zoomSnap: 0.25, maxBounds: WORLD, maxBoundsViscosity: 1, worldCopyJump: false })
+    // Readers who ask their system for less motion get no zoom and pan animations.
+    const calm = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    map = L.map("map", { preferCanvas: true, minZoom: 1, zoomSnap: 0.25, maxBounds: WORLD, maxBoundsViscosity: 1, worldCopyJump: false,
+      zoomAnimation: !calm, fadeAnimation: !calm, markerZoomAnimation: !calm, keyboard: true })
       .setView([30, 0], 2);   // a view first: the island dots need one
     const fitMinZoom = () => {
       const sz = map.getSize();
@@ -1025,7 +1139,9 @@
     sel.add(new Option("—", ""));
     Object.keys(JUMPS).forEach((k) => sel.add(new Option(k, k)));
     sel.addEventListener("change", () => sel.value && jump(sel.value));
-    $("map-metric").addEventListener("change", restyle);
+    $("map-metric").addEventListener("change", () => { fillYears(); restyle(); });
+    if ($("map-year")) $("map-year").addEventListener("change", restyle);
+    if ($("map-play")) $("map-play").addEventListener("click", togglePlay);
     $("map-secondary").addEventListener("change", setSecondary);
     if ($("map-boards-only")) $("map-boards-only").addEventListener("change", restyle);
     if ($("map-fr-small")) $("map-fr-small").addEventListener("change", () => setFrSmall());
@@ -1229,7 +1345,7 @@
           .catch((e) => { $("map-status").textContent = `Couldn't load the map (${e.message}).`; throw e; });
       }
       loading.then(() => loadLayers(layersForView(current))).then(() => {
-        map.invalidateSize(); restyle();
+        map.invalidateSize(); fillYears(); restyle();
         // A shared link's map position, the first time the map opens; otherwise the view's usual zoom.
         const at = !atUsed && window.SiteLinks && String(window.SiteLinks.get("at") || "").split(",").map(Number);
         atUsed = true;

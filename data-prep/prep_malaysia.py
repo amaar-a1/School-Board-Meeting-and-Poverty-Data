@@ -61,19 +61,25 @@ def main(raw):
             pov.setdefault(x["id"], {})["2024"] = (float(r["poverty"]), None)
             inc.setdefault(x["id"], (int(float(r["income_mean"])), int(float(r["income_median"])), float(r["gini"])))
 
-    pop, ages = {}, {}
+    pop, ages, pop_years = {}, {}, {}
     for r in csv.DictReader(open(os.path.join(raw, "my_pop_district.csv"), encoding="utf-8")):
-        if r["sex"] != "both" or r["ethnicity"] != "overall" or r["date"] != "2025-01-01": continue
+        if r["sex"] != "both" or r["ethnicity"] != "overall": continue
+        if r["age"] == "overall":   # every year, for change over time
+            x = look(r["state"], r["district"])
+            if x: pop_years.setdefault(x["id"], {})[r["date"][:4]] = round(float(r["population"]) * 1000)
+        if r["date"] != "2025-01-01": continue
         x = look(r["state"], r["district"])
         if not x: continue
         v = float(r["population"]) * 1000
         if r["age"] == "overall": pop[x["id"]] = round(v)
         else: ages.setdefault(x["id"], {})[r["age"]] = v
 
-    enr, ekeys = {}, {}
+    enr, ekeys, enr_years = {}, {}, {}
     for r in json.load(open(os.path.join(raw, "my_enrol.json"), encoding="utf-8")):
-        if r["date"] != "2025-06-30" or r["sex"] != "both" or r["stage"] not in ("primary", "secondary") or r["district"] == "All Districts": continue
+        if r["sex"] != "both" or r["stage"] not in ("primary", "secondary") or r["district"] == "All Districts": continue
         x = look(r["state"], r["district"])
+        if x: enr_years.setdefault(x["id"], {}).setdefault(r["date"][:4], 0); enr_years[x["id"]][r["date"][:4]] += int(r["students"])
+        if r["date"] != "2025-06-30": continue
         ekeys.setdefault((r["state"], r["district"]), x and x["id"])
         if x: enr[x["id"]] = enr.get(x["id"], 0) + int(r["students"])
     print("education districts that aren't one administrative district:", sorted(k for k, v in ekeys.items() if not v))
@@ -86,7 +92,8 @@ def main(raw):
         data[did] = {"name": x["name"], "state": x["state"], "pop": pop.get(did), "kids7_17": kids,
                      "pov": p.get("2024", (None, None))[0], "rel": p.get("2024", (None, None))[1],
                      "pov_years": {y: v[0] for y, v in sorted(p.items())},
-                     "income": inc.get(did), "pupils": enr.get(did)}
+                     "income": inc.get(did), "pupils": enr.get(did),
+                     "pop_years": dict(sorted(pop_years.get(did, {}).items())), "pupil_years": dict(sorted(enr_years.get(did, {}).items())) if enr.get(did) else {}}
         feats.append({"type": "Feature", "properties": {"id": did, "NAME": x["name"]},
                       "geometry": {"type": x["geom"]["type"], "coordinates": rnd(x["geom"]["coordinates"])}})
     os.makedirs(OUT, exist_ok=True)

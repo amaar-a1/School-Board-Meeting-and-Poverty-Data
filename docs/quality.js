@@ -76,7 +76,7 @@
     const s = document.createElement("span");
     s.className = `q-chip q-${grade}`;
     s.title = `${label}: ${GRADE_WORD[grade]}${title ? ` (${title})` : ""}`;
-    s.innerHTML = `<i aria-hidden="true"></i><b></b>: <span></span>`;
+    s.innerHTML = `<i aria-hidden="true"></i><b></b> <span></span>`;   // the colon is added by CSS, so the label alone is translated
     s.querySelector("b").textContent = label;
     s.querySelector("span").textContent = text;
     return s;
@@ -89,12 +89,13 @@
     if (!current) { el.hidden = true; return; }
     el.hidden = false;
     if (current.combined) {
-      el.innerHTML = `<span class="q-title">Data quality:</span> it differs a lot from country to country; see each country's labels, or the table on the <a href="#sources">Sources</a> tab.`;
+      el.innerHTML = `<span class="q-title">Data quality:</span> it differs a lot from country to country; see each country's labels, or the table on the <a href="#sources">Sources</a> tab. <a class="q-guide" href="#guide">How to read this</a>`;
       return;
     }
     const q = quality(current), g = grades(q), t = texts(q);
     const title = document.createElement("span"); title.className = "q-title"; title.textContent = "Data quality:";
     el.append(title, chip("Poverty", g.pov, t.pov, q.measure), chip("Enrollment", g.enr, t.enr), chip("Meetings", g.meet, t.meet));
+    if (!target) { const a = document.createElement("a"); a.href = "#guide"; a.className = "q-guide"; a.textContent = "How to read this"; el.append(a); }
   }
 
   function renderTable(datasets) {

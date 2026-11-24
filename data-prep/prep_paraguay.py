@@ -58,7 +58,7 @@ def poverty(path):
     return out
 
 
-def projections(path, year=2025):
+def projections(path, year=2025, years=None):
     ws = openpyxl.load_workbook(path, read_only=True, data_only=True).worksheets[0]
     rows = list(ws.iter_rows(values_only=True))
     hdr = next(i for i, r in enumerate(rows) if 2000 in r and 2035 in r)
@@ -69,13 +69,14 @@ def projections(path, year=2025):
         if not name or not isinstance(r[col], (int, float)): continue
         name = name.strip()
         if name.startswith("Dpto.") or name == "Total País": dept = key(name.replace("Dpto.", "")); continue
-        out[(dept or key(name), key(name))] = int(r[col])
+        out[(dept or key(name), key(name))] = {y: int(r[list(rows[hdr]).index(y)]) for y in years} if years else int(r[col])
     return out
 
 
 def main(raw):
     pov = poverty(os.path.join(raw, "py_pov_dist.xlsx"))
     pop = projections(os.path.join(raw, "py_proj_dist.xlsx"))
+    pop_hist = projections(os.path.join(raw, "py_proj_dist.xlsx"), years=[2015, 2020, 2025])   # change over time (projections between censuses)
     adm1 = [(DEPTS.get(key(f["properties"]["shapeName"]), f["properties"]["shapeName"].title()), shape(f["geometry"]).buffer(0))
             for f in json.load(open(os.path.join(raw, "py_gb_ADM1.geojson"), encoding="utf-8"))["features"]]
     gb = json.load(open(os.path.join(raw, "py_gb_ADM2.geojson"), encoding="utf-8"))["features"]
@@ -108,7 +109,8 @@ def main(raw):
             ft["geometry"] = {"type": ft["geometry"]["type"], "coordinates": rnd(json.loads(json.dumps(ft["geometry"]["coordinates"])))}
             print("merged another piece of", p[0]); continue
         did = "PRY-" + f["properties"]["shapeID"][-8:]
-        data[did] = {"name": p[0], "dept": dname, "pov": p[1], "low": p[2], "high": p[3], "pop": pop.get((dk, nk)) or (pop_by_name[nk][0] if len(pop_by_name.get(nk, [])) == 1 else None) or pop_loose.get((dk, loose(p[0]))) or pop_loose.get((dk, loose(f["properties"]["shapeName"]))),
+        ph = pop_hist.get((dk, nk)) or next((v for (d_, n_), v in pop_hist.items() if d_ == dk and loose(n_) in (loose(p[0]), loose(f["properties"]["shapeName"]))), None)
+        data[did] = {"name": p[0], "dept": dname, "pov": p[1], "low": p[2], "high": p[3], "pop_years": {str(y): v for y, v in (ph or {}).items()}, "pop": pop.get((dk, nk)) or (pop_by_name[nk][0] if len(pop_by_name.get(nk, [])) == 1 else None) or pop_loose.get((dk, loose(p[0]))) or pop_loose.get((dk, loose(f["properties"]["shapeName"]))),
                      "ages": {gr: round(a.get("f" + gr, 0) + a.get("m" + gr, 0)) for gr in ("05", "10", "15")} if a else None}
         feats.append({"type": "Feature", "properties": {"id": did, "NAME": p[0]},
                       "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})

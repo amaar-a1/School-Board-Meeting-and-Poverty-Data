@@ -1,0 +1,45 @@
+name: Monthly data refresh
+
+# Malaysia's open data, Czechia's newest December unemployment, the US SAIPE history, and the YouTube channels already
+# found (data-prep/refresh_monthly.py). Each rebuilt country is checked before it's kept; the commit goes to main, and
+# the daily "Update data and deploy website" run publishes it.
+on:
+  schedule:
+    - cron: "41 3 4 * *"   # the 4th of each month
+  workflow_dispatch:
+  push:   # TEMPORARY: a test run on this branch (60 channels); removed before merging
+    branches: [claude/features-refresh]
+    paths: [.github/workflows/refresh-monthly.yml, data-prep/refresh_monthly.py]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-monthly
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install the build's Python packages
+        run: python3 -m pip install --user --break-system-packages openpyxl shapely yt-dlp
+      - name: Refresh
+        env:
+          REFRESH_SECONDS: "16200"
+        run: python3 data-prep/refresh_monthly.py --max-channels ${{ github.event_name == 'push' && '60' || '2400' }}
+      - name: Keep the map files as they are
+        run: git checkout -- docs/data/map
+      - name: Commit refreshed data
+        run: |
+          git add docs/data data-prep/inputs
+          if git diff --cached --quiet; then
+            echo "Nothing changed"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Monthly data refresh"
+            for i in 1 2 3; do git pull --rebase && git push && break; sleep 10; done
+          fi

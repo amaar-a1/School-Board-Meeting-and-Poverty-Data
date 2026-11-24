@@ -222,3 +222,45 @@ footer p { margin: 0 0 6px; }
 .cmp-sub { color: var(--muted); font-size: .8rem; margin-top: 2px; }
 .cmp-table .quality { margin: 0; flex-direction: column; align-items: flex-start; gap: 4px; }
 .cmp-table .quality .q-title { display: none; }
+/* Folded sections: notes, map options, share menu */
+details.more { margin-top: 4px; }
+details.more > summary, details.more-options > summary { cursor: pointer; color: var(--accent); font-size: .85rem; list-style: none; display: inline-block; }
+details.more > summary::-webkit-details-marker, details.more-options > summary::-webkit-details-marker, .share-menu > summary::-webkit-details-marker { display: none; }
+details.more > summary::before, details.more-options > summary::before { content: "▸ "; }
+details.more[open] > summary::before, details.more-options[open] > summary::before { content: "▾ "; }
+details.more > p { margin: 6px 0 0; }
+.dataset-note details.more { display: inline; }
+.dataset-note details.more[open] { display: block; }
+details.more-options { position: relative; }
+.more-options-body { display: flex; flex-direction: column; gap: 6px; padding: 8px 10px; margin-top: 6px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
+@media (min-width: 900px) { .more-options-body { position: absolute; z-index: 1200; right: 0; min-width: 260px; box-shadow: 0 6px 18px rgba(0,0,0,.12); } }
+.share-menu { position: relative; display: inline-block; margin-left: .5rem; }
+.share-menu > summary { list-style: none; cursor: pointer; }
+.share-pop { position: absolute; z-index: 1300; right: 0; top: calc(100% + 4px); display: flex; flex-direction: column; gap: 6px; min-width: 190px;
+  padding: 8px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); box-shadow: 0 6px 18px rgba(0,0,0,.12); }
+.share-pop button { text-align: left; }
+.tip-zero { color: var(--muted); font-size: .85em; }
+.share-menu > summary.share-button { margin-left: 0; font-size: .9rem; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px; }
+.share-menu > summary.share-button:hover { border-color: var(--accent); }
+.guide h3 { margin: 18px 0 4px; font-size: 1rem; }
+.guide p { margin: 0 0 6px; line-height: 1.55; max-width: 72ch; }
+.guide .q-chip { margin: 0 2px; }
+.q-guide { margin-left: auto; font-size: .85rem; }
+/* Accessibility */
+.skip-link { position: absolute; left: -999px; top: 8px; z-index: 5000; padding: 8px 12px; background: var(--surface); color: var(--text); border: 2px solid var(--accent); border-radius: 6px; }
+.skip-link:focus { left: 8px; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+main:focus { outline: none; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
+/* Embed mode: only the map, the chart, the statistics or a comparison */
+.embed-only { display: none; }
+body.embed .embed-only { display: block; }
+body.embed .hero, body.embed footer, body.embed .skip-link, body.embed #tabs, body.embed .view-tabs, body.embed #dataset-note, body.embed #quality,
+body.embed #find, body.embed #find-card, body.embed #filters, body.embed #status:empty { display: none !important; }
+body.embed main { padding-top: 8px; }
+body.embed-chart [data-view="overview"] > section:not(#chart-section) { display: none !important; }
+body.embed-map [data-view="map"] .note, body.embed-map [data-view="map"] details.about-map, body.embed-map .map-search { display: none !important; }
+body.embed-stats [data-view="stats"] .note { display: none; }
+.embed-full { font-size: .85rem; margin: 8px 0; }
+.map-year { display: inline-flex; gap: 6px; align-items: center; }
+.q-chip b::after { content: ":"; }
