@@ -528,6 +528,39 @@ window.STATE_RULES = {
     ],
     note: "Check the current law and the council's own rules before relying on this."
   },
+  czechia: {
+    title: "Rules for municipal council meetings",
+    checked: "November 24, 2026",
+    laws: [
+      { state: "Czechia", covers: "Municipal council (zastupitelstvo) sessions", threshold: "",
+        rule: "Under the Municipalities Act (128/2000, section 93), council sessions are public; the municipality must announce each one at least 7 days ahead. Many councils stream or record their sessions, but the law doesn't require it." },
+      { state: "Czechia", covers: "Schools", threshold: "",
+        rule: "Under the Education Act (561/2004), municipalities must secure basic schooling for their children, by founding and running basic schools and kindergartens or arranging places in a neighbour's; the state pays teachers' salaries through the regions." }
+    ],
+    note: "Check the current law and the council's own rules of procedure before relying on this."
+  },
+  rwanda: {
+    title: "Rules for district council meetings",
+    checked: "November 24, 2026",
+    laws: [
+      { state: "Rwanda", covers: "District council (njyanama) meetings", threshold: "",
+        rule: "Under the law on decentralised entities (Law 065/2021), district council meetings are public unless the council decides otherwise; there's no rule to record or stream them." },
+      { state: "Rwanda", covers: "Schools", threshold: "",
+        rule: "Districts manage public basic education (pre-primary, primary and secondary) in their area, with the Ministry of Education setting policy and the Rwanda Basic Education Board running the curriculum and teacher management." }
+    ],
+    note: "Check the current law and the council's own rules before relying on this."
+  },
+  sri_lanka: {
+    title: "Rules for district coordinating committees",
+    checked: "November 24, 2026",
+    laws: [
+      { state: "Sri Lanka", covers: "District coordinating committees", threshold: "",
+        rule: "District coordinating committees are set up by the government (not by statute) to coordinate development in each district, chaired by appointed members of parliament with the district secretary; their meetings aren't required to be public or recorded." },
+      { state: "Sri Lanka", covers: "Schools", threshold: "",
+        rule: "Under the 13th Amendment to the Constitution and the Provincial Councils Act (1987), provincial councils run most public schools; the Ministry of Education runs national schools and sets policy." }
+    ],
+    note: "Check the current rules before relying on this."
+  },
   ecuador: {
     title: "Rules for cantonal council (concejo municipal) meetings",
     checked: "November 7, 2026",

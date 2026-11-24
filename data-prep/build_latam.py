@@ -82,7 +82,7 @@ def centroid(geom):
 
 
 _CACHE = {}
-DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "AU": "australia", "HR": "croatia", "PH": "philippines", "LV": "latvia", "EE": "estonia", "ARG": "argentina", "ISR": "israel", "SVN": "slovenia", "TWN": "taiwan", "URY": "uruguay", "CRI": "costa_rica", "LTU": "lithuania", "ZAF": "south_africa", "KEN": "kenya", "GEO": "georgia", "KOR": "south_korea", "IND": "india", "MYS": "malaysia", "IDN": "indonesia", "PRY": "paraguay"}
+DIRS = {"CL": "chile", "CO": "colombia", "MX": "mexico", "BR": "brazil", "PE": "peru", "ES": "spain", "FRA": "france", "EC": "ecuador", "IT": "italy", "PL": "poland", "JP": "japan", "PT": "portugal", "BE": "belgium", "AU": "australia", "HR": "croatia", "PH": "philippines", "LV": "latvia", "EE": "estonia", "ARG": "argentina", "ISR": "israel", "SVN": "slovenia", "TWN": "taiwan", "URY": "uruguay", "CRI": "costa_rica", "LTU": "lithuania", "ZAF": "south_africa", "KEN": "kenya", "GEO": "georgia", "KOR": "south_korea", "IND": "india", "MYS": "malaysia", "IDN": "indonesia", "PRY": "paraguay", "CZE": "czechia", "RWA": "rwanda", "LKA": "sri_lanka"}
 # Brazil: municipal chambers (câmara municipal) and their education committees, in Portuguese.
 RULES = {"BR": (re.compile(r"comiss[ãa]o (permanente )?de educa[çc][ãa]o|educa[çc][ãa]o.*comiss[ãa]o", re.I),
                 re.compile(r"sess[ãa]o|c[âa]mara", re.I),
@@ -254,7 +254,21 @@ RULES["PRY"] = (re.compile(r"comisi[óo]n[^|]{0,40}educaci[óo]n|educaci[óo]n[^
                 re.compile(r"sesi[óo]n|junta", re.I),
                 re.compile(r"^(?!.*(entrevista|noticia)).*(sesi[óo]n (ordinaria|extraordinaria|plenaria)|sesi[óo]n de la junta|junta municipal)", re.I),
                 re.compile(NOT_T.pattern + r"|entrevista|noticia|spot|aniversario", re.I))
-MIN_EDU = {"ES": 3, "FRA": 3, "EC": 3, "IT": 3, "PL": 3, "PT": 3, "BE": 3, "LV": 3, "EE": 3, "SVN": 3, "URY": 3, "CRI": 3, "LTU": 3, "ZAF": 3, "KEN": 3, "MYS": 3, "IDN": 3, "PRY": 3}
+# Czechia: municipal councils (zastupitelstvo obce / města) and their education committees (výbor pro výchovu a vzdělávání).
+RULES["CZE"] = (re.compile(r"(v[ýy]bor|komise)[^|]{0,40}(v[ýy]chov|vzd[ěe]l[áa]v|[šs]kol)", re.I),
+                re.compile(r"zastupitelstv|zased[áa]n[íi]", re.I),
+                re.compile(r"^(?!.*(pozv[áa]nk|upout[áa]vk|tiskov)).*(zased[áa]n[íi][^|]{0,40}zastupitelstv|zastupitelstv[^|]{0,40}(zased[áa]n|jedn[áa]n)|\d+\.\s*zased[áa]n[íi])", re.I),
+                re.compile(NOT_T.pattern + r"|rozhovor|reportáž|koncert|ples|pou[ťt]", re.I))
+# Rwanda: district councils (njyanama) and their sittings; Sri Lanka: district coordinating committees.
+RULES["RWA"] = (re.compile(r"(committee|komisiyo)[^|]{0,40}(education|uburezi)", re.I),
+                re.compile(r"council|njyanama|inama", re.I),
+                re.compile(r"^(?!.*(interview|news|ikiganiro)).*(district council|inama njyanama|council (meeting|session|sitting))", re.I),
+                re.compile(NOT_T.pattern + r"|interview|news|ikiganiro|amakuru", re.I))
+RULES["LKA"] = (re.compile(r"education[^|]{0,30}committee", re.I),
+                re.compile(r"coordinating committee|council|meeting", re.I),
+                re.compile(r"^(?!.*(news|interview)).*(district (development )?coordinating committee|dcc meeting|council (meeting|session))", re.I),
+                re.compile(NOT_T.pattern + r"|news|interview", re.I))
+MIN_EDU = {"ES": 3, "FRA": 3, "EC": 3, "IT": 3, "PL": 3, "PT": 3, "BE": 3, "LV": 3, "EE": 3, "SVN": 3, "URY": 3, "CRI": 3, "LTU": 3, "ZAF": 3, "KEN": 3, "MYS": 3, "IDN": 3, "PRY": 3, "CZE": 3, "RWA": 3, "LKA": 3}
 
 
 def session_key(cc, t):
@@ -283,12 +297,14 @@ def meetings(cc, did):
     url = CHECKED[cc].get(did, "") if cc in CHECKED else r.get("Channel URL", "")
     if not url or url not in titles or url in NOT_CHANNELS.get(cc, set()): return 0, "", [], ""
     if cc == "IDN" and not idn_channel_ok(r.get("District", ""), r.get("Channel", "")): return 0, "", [], ""
+    # Czechia: a city district's council (Prague 20, Ostrava-Jih, Brno-Žabovřesky) isn't the municipality's.
+    if cc == "CZE" and re.search(r"m[ěe]stsk[áýaéeíi]+ (č[áa]st|obvod)|\bm[čc]\b", r.get("Channel", ""), re.I): return 0, "", [], ""
     edu, council, must, not_t = RULES.get(cc, (EDU, COUNCIL, COUNCIL_MUST, NOT_T))
     vids = [t for t in titles[url] if not not_t.search(t)]
     for keep, kind in (([t for t in vids if edu.search(t)], "Education committee"),
                        ([t for t in vids if council.search(t) and must.search(t) and not edu.search(t)], "Council (stand-in)")):
         # (Slovenia, Uruguay, Costa Rica: a title with only a year, like "Sesión Ordinaria 148-2026", counts once per title.)
-        keys = {(lambda pd: pd if pd and (pd[2] or cc not in ("SVN", "URY", "CRI", "MYS", "IDN", "PRY")) else session_key(cc, t))(parse_date(t)) for t in keep}
+        keys = {(lambda pd: pd if pd and (pd[2] or cc not in ("SVN", "URY", "CRI", "MYS", "IDN", "PRY", "CZE", "RWA", "LKA")) else session_key(cc, t))(parse_date(t)) for t in keep}
         if len(keys) >= (MIN_EDU.get(cc, 1) if kind == "Education committee" else 1):
             # Kenya's county assemblies and South Africa's councils don't run schools: their education committees are stand-ins too.
             if cc in ("KEN", "ZAF") and kind == "Education committee": kind = ("Assembly" if cc == "KEN" else "Council") + " education committee (stand-in)"
@@ -316,6 +332,10 @@ def idn_channel_ok(district, channel):
 # Channels checked by hand and found to be another place's (by channel URL). The search matched on the name, and
 # many of these names exist in other Spanish-speaking countries too, or in both Chile and Colombia.
 NOT_CHANNELS = {
+    # Rwanda and Sri Lanka: the channels found post an activity report, an arts council's videos, news clips and media-unit
+    # posts, not recordings of council or coordinating committee meetings.
+    "RWA": {"https://www.youtube.com/channel/UC5e9LhdW-Z23njOYKHMgA_A", "https://www.youtube.com/channel/UC5AVOAbfYCKfE17C4aKvgEw"},
+    "LKA": {"https://www.youtube.com/channel/UCB3f5dD5CYmQO9VtL63uDaA", "https://www.youtube.com/channel/UC4E1un2WFGbF-4qIWNU6xNQ", "https://www.youtube.com/channel/UC85v5ZOCV-bYbutVe_uHfPw"},
     # Paraguay's councils are "Junta Municipal": these "Concejo Municipal" and other channels are towns of the same name in Chile,
     # Argentina, Peru, Bolivia, Colombia, Mexico or Brazil, or one councillor's own channel.
     "PRY": {"https://www.youtube.com/channel/UCoTwotxd-mnuY8a8e_6nUaw", "https://www.youtube.com/channel/UCuG-FPduRsB8GVx6NLASWnw", "https://www.youtube.com/channel/UCa5YqotYPcaizZYtqZ45kpQ", "https://www.youtube.com/channel/UCzqjXcWdWv72liDIeJpV5WA", "https://www.youtube.com/channel/UCJ3f5r4cWt0aB_wRZPSejWQ", "https://www.youtube.com/channel/UCgftlOUKUwVxPA1myAOJvFQ", "https://www.youtube.com/channel/UCZeix6UJCLn1YO3RpVtb34w", "https://www.youtube.com/channel/UC56H4eN3dOZqFmE2HDjedlQ", "https://www.youtube.com/channel/UCEGuGc-w5abohwcJV9yOnBg", "https://www.youtube.com/channel/UCQSNpiNkO1HiGbGdqBjzNoQ", "https://www.youtube.com/channel/UC_N4FcbYjq6RJ-xMzFfCpUA", "https://www.youtube.com/channel/UCkVdReeh7ZbEY8ODsusVNJg", "https://www.youtube.com/channel/UCWz4IzK0ncPqXCROqyCP3eg", "https://www.youtube.com/channel/UC6x0hkBrqf7ewDltHTcp7gg", "https://www.youtube.com/channel/UCSatJiWUQHzY0gEVuytdRtg", "https://www.youtube.com/channel/UCgvUIPWaySeDAGe-oUTSDUA"},
@@ -1966,6 +1986,75 @@ def paraguay():
                      "School system": "Municipality (schools are run nationally by the Ministry of Education and Sciences); elected municipal council (junta municipal)",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in area})
     write("PRY", "paraguay", rows, feats)
+
+
+
+
+def czechia():
+    """6,258 municipalities (obce). Municipalities found and run basic schools (základní školy, ages 6-15) and
+    kindergartens; the elected municipal council (zastupitelstvo), often with an education committee, decides on them.
+    Poverty stand-in: the share of unemployed among residents aged 15-64, December 2024 (MPSV; prep_czechia.py)."""
+    d = os.path.join(IN, "czechia")
+    cz = json.load(open(os.path.join(d, "cze_data.json"), encoding="utf-8"))
+    feats = json.load(open(os.path.join(d, "cze_geo.geojson"), encoding="utf-8"))["features"]
+    have = {f["properties"]["id"] for f in feats}
+    rows = []
+    for did, x in cz.items():
+        dens = x["pop"] / x["area"] if x.get("pop") and x.get("area") else 0
+        rows.append({"District": x["name"], "Region": x["region"], "Population": x.get("pop") or "",
+                     "Poverty rate (all ages)": f"{x['unemp']:.1f}%" if x.get("unemp") is not None else "",
+                     "Poverty note": (f"Stand-in: unemployed people as a share of residents aged 15-64, December 2024 ({x['jobseekers']:,} available job seekers of {x['pop15_64']:,}; "
+                                      "Ministry of Labour and Social Affairs). Czechia publishes no poverty rate by municipality") if x.get("unemp") is not None else "",
+                     "Enrollment": "", "Enrollment year": "",
+                     "School system": "Municipality (founds and runs its basic schools and kindergartens); elected municipal council (zastupitelstvo)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in have})
+    write("CZE", "czechia", rows, feats)
+
+
+
+
+def rwanda():
+    """30 districts. Districts manage public pre-primary, primary and secondary schools (under the Ministry of Education
+    and the Rwanda Basic Education Board), through their education office; the elected district council (njyanama)
+    oversees them. Poverty: NISR, EICV7 (2023/24), the headcount poverty rate, all ages (prep_rwanda.py)."""
+    d = os.path.join(IN, "rwanda")
+    rw = json.load(open(os.path.join(d, "rwa_data.json"), encoding="utf-8"))
+    feats = json.load(open(os.path.join(d, "rwa_geo.geojson"), encoding="utf-8"))["features"]
+    area = {f["properties"]["id"]: area_km2(f["geometry"]) for f in feats}
+    rows = []
+    for did, x in rw.items():
+        dens = x["pop"] / area[did] if x.get("pop") and area.get(did) else 0
+        rows.append({"District": x["name"], "Region": x["province"], "Population": x.get("pop") or "",
+                     "Poverty rate (all ages)": f"{x['pov']:.1f}%",
+                     "Poverty note": (f"Share of people below the national poverty line, all ages, 2023/24 (NISR, Integrated Household Living Conditions Survey 7, Table A9.23); "
+                                      f"95% range {x['low']:.1f}–{x['high']:.1f}%. Nationally 27.4%"),
+                     "Enrollment": "", "Enrollment year": "",
+                     "School system": "District (manages public schools through its education office, under the Ministry of Education); elected district council (njyanama)",
+                     "Map note": "Population: WorldPop's 2025 estimate, summed over the district's border (the 2022 census tables couldn't be downloaded)",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in area})
+    write("RWA", "rwanda", rows, feats)
+
+
+def sri_lanka():
+    """25 districts. Schools are run by the provincial councils' education departments (and national schools by the
+    Ministry of Education), through zonal education offices; districts are administrative, with a district
+    coordinating committee of the area's MPs and officials, whose meetings stand in. Poverty: DCS, the poverty headcount
+    index on the updated official line, 2019 (prep_sri_lanka.py)."""
+    d = os.path.join(IN, "sri_lanka")
+    lk = json.load(open(os.path.join(d, "lka_data.json"), encoding="utf-8"))
+    feats = json.load(open(os.path.join(d, "lka_geo.geojson"), encoding="utf-8"))["features"]
+    area = {f["properties"]["id"]: area_km2(f["geometry"]) for f in feats}
+    rows = []
+    for did, x in lk.items():
+        dens = x["pop"] / area[did] if x.get("pop") and area.get(did) else 0
+        rows.append({"District": x["name"], "Region": x["province"], "Population": x.get("pop") or "",
+                     "Poverty rate (all ages)": f"{x['pov']:.1f}%",
+                     "Poverty note": (f"Share of people below the official poverty line (updated, based on 2012/13), all ages, 2019: {x['poor']:,} people (DCS, Poverty Indicators 2019, "
+                                      f"from the Household Income and Expenditure Survey); {x['pov_old']:.1f}% on the old line (based on 2002). Nationally 14.3%"),
+                     "Enrollment": "", "Enrollment year": "",
+                     "School system": "District (schools are run by the provincial council's education department and the Ministry of Education, through zonal education offices); district coordinating committee",
+                     "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in area})
+    write("LKA", "sri_lanka", rows, feats)
 
 
 

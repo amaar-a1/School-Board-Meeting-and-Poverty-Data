@@ -635,6 +635,40 @@ window.SOURCES = [
     note: "Built by data-prep/prep_paraguay.py and data-prep/build_latam.py (paraguay). District names are matched within each department, allowing for spelling differences (“Gral.” and “General”, Guaraní y and i)."
   },
   {
+    only: "Czechia",
+    group: "Czechia: municipalities, unemployment and population",
+    items: [
+      { title: "Unemployment (stand-in): Ministry of Labour and Social Affairs (MPSV) open data, unemployment in municipalities, December 2024 (nezamestnanost-v-obcich)", url: "https://data.mpsv.cz/web/data/nezamestnanost-v-obcich" },
+      { title: "Borders, population and area: Eurostat GISCO, Local Administrative Units 2024; regions: GISCO NUTS 3 2024", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
+      { title: "Enrollment (estimated): Eurostat, population by age group and NUTS 3 region, 1 January 2024 (demo_r_pjangrp3)", url: "https://ec.europa.eu/eurostat/databrowser/view/demo_r_pjangrp3/default/table" },
+      { title: "Meetings: each municipality's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_czechia.py and data-prep/build_latam.py (czechia). Municipalities are matched by their code."
+  },
+  {
+    only: "Rwanda",
+    group: "Rwanda: districts and poverty",
+    items: [
+      { title: "Poverty: National Institute of Statistics of Rwanda (NISR), Integrated Household Living Conditions Survey 7 (EICV7, 2023/24), Main Indicators Report tables, Table A9.23", url: "https://statistics.gov.rw/data-sources/surveys/EICV/integrated-household-living-conditions-survey-7-eicv-7" },
+      { title: "Population and enrollment (estimated): WorldPop, Rwanda age and gender structures 2025 (R2025A, 1 km), summed over each district", url: "https://data.humdata.org/dataset/worldpop-age-and-gender-structures-2015-2030-rwa" },
+      { title: "Borders: geoBoundaries (gbOpen) RWA ADM2, simplified", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings: each district's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_rwanda.py and data-prep/build_latam.py (rwanda)."
+  },
+  {
+    only: "Sri Lanka",
+    group: "Sri Lanka: districts, poverty and population",
+    items: [
+      { title: "Poverty: Department of Census and Statistics (DCS), Poverty Indicators 2019 (Household Income and Expenditure Survey 2019), Table 04", url: "https://www.statistics.gov.lk/Poverty/StaticalInformation/PovertyIndicators-2019" },
+      { title: "Population: DCS, Census of Population and Housing 2024, preliminary report on population", url: "https://www.statistics.gov.lk/Population/StaticalInformation/CPH2024" },
+      { title: "Enrollment (estimated): WorldPop, Sri Lanka age and gender structures 2025 (R2025A, 1 km), summed over each district", url: "https://data.humdata.org/dataset/worldpop-age-and-gender-structures-2015-2030-lka" },
+      { title: "Borders: geoBoundaries (gbOpen) LKA ADM2 and ADM1, simplified", url: "https://www.geoboundaries.org/" },
+      { title: "Meetings: district coordinating committee recordings on YouTube (in the “Meetings source” column)", url: "https://www.youtube.com/" }
+    ],
+    note: "Built by data-prep/prep_sri_lanka.py and data-prep/build_latam.py (sri_lanka)."
+  },
+  {
     only: "Ecuador",
     group: "Ecuador: cantons, poverty, population and pupils",
     items: [

@@ -10,7 +10,7 @@ MS=${MAPSHAPER:-mapshaper}
 # Give country names (e.g. "indonesia paraguay") to do only those, the ones build_latam.py just rewrote: run on a country
 # whose map file is already the simplified one, it would copy that over the full detail.
 ONLY=" $* "
-for x in "india 12%" "costa_rica 10%" "south_africa 25%" "georgia 25%" "kenya 25%" "uruguay 20%" "taiwan 30%" "lithuania 35%" "indonesia 10%" "paraguay 25%" "malaysia 30%"; do
+for x in "india 12%" "costa_rica 10%" "south_africa 25%" "georgia 25%" "kenya 25%" "uruguay 20%" "taiwan 30%" "lithuania 35%" "indonesia 10%" "paraguay 25%" "malaysia 30%" "czechia 12%"; do
   set -- $x
   [ "$ONLY" = "  " ] || case "$ONLY" in *" $1 "*) ;; *) continue;; esac
   cp "$1.json" "$1-hi.json"
