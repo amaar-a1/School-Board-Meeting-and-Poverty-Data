@@ -1,0 +1,23 @@
+OK None 2833 https://data.stat.gov.lv/api/v1/en/OSP_PUB/VES/PP/PPS/PPS040
+  lv_pps040_all.json vars [('RECIPIENT', 10), ('ASSISTANCE', 7), ('AREA', 45), ('ContentsCode', 1), ('TIME', 5)]
+OK lv_pps040_all.json 63260 https://data.stat.gov.lv/api/v1/en/OSP_PUB/VES/PP/PPS/PPS040
+OK None 5142 https://data.stat.gov.lv/api/v1/en/OSP_PUB/POP/IR/IRD/IRD041
+  lv_ird041_all.json vars [('AREA', 57), ('AGE', 123), ('SEX', 3), ('ContentsCode', 1), ('TIME', 15)]
+OK lv_ird041_all.json 12162 https://data.stat.gov.lv/api/v1/en/OSP_PUB/POP/IR/IRD/IRD041
+OK None 4294 https://andmed.stat.ee/api/v1/en/stat/SK410
+  ee_sk410_all.json vars [('Aasta', 13), ('Piirkond/Haldusüksus', 100), ('Näitaja', 7)]
+OK ee_sk410_all.json 20122 https://andmed.stat.ee/api/v1/en/stat/SK410
+OK None 12768 https://andmed.stat.ee/api/v1/en/stat/RV0240
+  ee_rv0240_all.json vars [('Sugu', 3), ('Elukoht', 246), ('Aasta', 12), ('Vanus', 106)]
+OK ee_rv0240_all.json 30476 https://andmed.stat.ee/api/v1/en/stat/RV0240
+OK None 7153 https://pxweb.stat.si/SiStatData/api/v1/en/Data/2640010S.px
+  si_2640010S_all.json vars [('MERITVE', 58), ('OBČINE', 213), ('LETO', 19)]
+OK si_2640010S_all.json 1423042 https://pxweb.stat.si/SiStatData/api/v1/en/Data/2640010S.px
+OK pt_0013420_all.json 128134 https://www.ine.pt/ine/json_indicador/pindica.jsp?op=2&varcd=0013420&Dim1=T&lang=PT
+OK pt_0008273_all.json 56050013 https://www.ine.pt/ine/json_indicador/pindica.jsp?op=2&varcd=0008273&Dim1=T&lang=PT
+US 2018 18685
+US 2019 18592
+US 2020 18600
+US 2021 18852
+US 2022 18547
+US 2023 18507
