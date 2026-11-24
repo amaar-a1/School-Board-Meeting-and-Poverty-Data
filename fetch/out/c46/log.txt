@@ -1,0 +1,15 @@
+ERR https://www2.census.gov/programs-surveys/saipe/datasets/2019/2019-school-districts/ussd19.csv HTTP Error 404: Not Found
+OK https://www2.census.gov/programs-surveys/saipe/datasets/2019/2019-school-districts/ussd19.txt 1740156
+   b'01 00190 Alabaster City School District                                              34669     6710      649 ussd19.txt 16NOV2020  \n01 00005 Albertville City School District                                            22051     4131      957'
+ERR https://www2.census.gov/programs-surveys/saipe/datasets/2020/2020-school-districts/ussd20.csv HTTP Error 404: Not Found
+OK https://www2.census.gov/programs-surveys/saipe/datasets/2020/2020-school-districts/ussd20.txt 1738704
+   b'01 00190 Alabaster City School District                                              35268     6797      669 ussd20.txt 26NOV2021  \n01 00005 Albertville City School District                                            22120     4163      918'
+ERR https://www2.census.gov/programs-surveys/saipe/datasets/2021/2021-school-districts/ussd21.csv HTTP Error 404: Not Found
+OK https://www2.census.gov/programs-surveys/saipe/datasets/2021/2021-school-districts/ussd21.txt 1737516
+   b'01 00190 Alabaster City School District                                              33897     6611      622 ussd21.txt 30NOV2022  \n01 00005 Albertville City School District                                            22527     4668     1042'
+ERR https://www2.census.gov/programs-surveys/saipe/datasets/2022/2022-school-districts/ussd22.csv HTTP Error 404: Not Found
+OK https://www2.census.gov/programs-surveys/saipe/datasets/2022/2022-school-districts/ussd22.txt 1736064
+   b'01 00190 Alabaster City School District                                              34391     6494      610 ussd22.txt 03DEC2023  \n01 00005 Albertville City School District                                            22801     4669      946'
+ERR https://www2.census.gov/programs-surveys/saipe/datasets/2023/2023-school-districts/ussd23.csv HTTP Error 404: Not Found
+OK https://www2.census.gov/programs-surveys/saipe/datasets/2023/2023-school-districts/ussd23.txt 1734876
+   b'01 00190 Alabaster City School District                                              34832     6631      702 ussd23.txt 27NOV2024  \n01 00005 Albertville City School District                                            23117     4825     1042'
