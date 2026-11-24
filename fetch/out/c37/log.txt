@@ -1,0 +1,28 @@
+ERR rw_eicv7.html <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.statistics.gov.rw'. (_ssl.c:1081)> https://www.statistics.gov.rw/publication/eicv7-poverty-profile-report
+ERR rw_stats.html <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.statistics.gov.rw'. (_ssl.c:1081)> https://www.statistics.gov.rw/statistical-publications/subject/household-surveys-%28eicv%29
+OK lk_dcs.html 97097 http://www.statistics.gov.lk/Poverty/StaticalInformation
+  lk_dcs.html LINK p.dcs_font{ font-family: Arial; font-size: 14px; color:white; font-weight: 700; } h3.dcs_font{ font- | https://www.statistics.gov.lk/img/Sri-Lanka_Emblem.jpg
+  lk_dcs.html LINK Other Census | https://www.statistics.gov.lk/Other_CensusandSurveys
+  lk_dcs.html LINK Other Surveys | https://www.statistics.gov.lk/Other_CensusandSurveys
+  lk_dcs.html LINK Other Census | https://www.statistics.gov.lk/Other_CensusandSurveys
+  lk_dcs.html LINK Other Census & Surveys | https://www.statistics.gov.lk/OtherCensusandSurveys/StaticalInformation
+  lk_dcs.html LINK Other Census & Surveys | https://www.statistics.gov.lk/OtherCensusandSurveys/StaticalInformation
+  lk_dcs.html LINK Basic Population and Housing Information by Districts and Divisional Secretary Divisions - Census of | https://www.statistics.gov.lk/Population/StaticalInformation/CPH2024
+  lk_dcs.html LINK Poverty Statistics by DS division | https://www.statistics.gov.lk/Poverty/StaticalInformation/PovertyStatisticsDSDivision
+OK lk_dcs2.html 41 http://www.statistics.gov.lk/Poverty/StaticalInformation/PovertyIndicators-DSDivision
+ERR bd_bbs.html <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)> https://bbs.gov.bd/site/page/d1e4e6b5-4f8e-4e0a-9c7d-7e4e4e8e4e8e
+ERR bd_wb.html HTTP Error 404: Not Found https://www.worldbank.org/en/news/press-release/2024/11/24/bangladesh-poverty-maps
+ERR cz_mpsv.html HTTP Error 404: Not Found https://data.mpsv.cz/web/data/vypisy-dat
+OK cz_mpsv_api.json 4159 https://data.mpsv.cz/od/soubory/
+ERR mn_open.html <urlopen error [Errno -2] Name or service not known> https://opendata.1212.mn/en/
+OK bo_ine.html 174242 https://www.ine.gob.bo/index.php/censos-y-banco-de-datos/censos/
+  bo_ine.html LINK Censo Nacional de Población y Vivienda 2012 Base REDATAM (343 Municipios) | https://nube.ine.gob.bo/index.php/s/46UABj4SVDuhK7a/download
+  bo_ine.html LINK Censo Nacional de Población y Vivienda 2001 Base REDATAM (343 Municipios) | https://nube.ine.gob.bo/index.php/s/3X9rZTENwQknVTP/download
+ERR do_one.html HTTP Error 403: Forbidden https://www.one.gob.do/datos-y-estadisticas/
+OK hdx.json 676283 https://data.humdata.org/api/3/action/package_search?rows=12&q=rwanda%20district%20poverty%20eicv
+OK hdx.json 224536 https://data.humdata.org/api/3/action/package_search?rows=12&q=sri%20lanka%20poverty%20headcount%20ds%20division
+OK hdx.json 359084 https://data.humdata.org/api/3/action/package_search?rows=12&q=bangladesh%20poverty%20map%202022%20upazila
+OK hdx.json 294 https://data.humdata.org/api/3/action/package_search?rows=12&q=czech%20municipality%20social%20benefits
+OK hdx.json 985277 https://data.humdata.org/api/3/action/package_search?rows=12&q=mongolia%20soum%20poverty
+OK hdx.json 294 https://data.humdata.org/api/3/action/package_search?rows=12&q=bolivia%20municipal%20poverty%20nbi
+OK hdx.json 1148444 https://data.humdata.org/api/3/action/package_search?rows=12&q=dominican%20republic%20municipal%20poverty%20map

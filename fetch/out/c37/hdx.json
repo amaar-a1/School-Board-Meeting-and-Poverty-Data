@@ -1,0 +1,770 @@
+{
+ "who-data-for-rwa": {
+  "q": "rwanda district poverty eicv",
+  "title": "Rwanda - Health Indicators",
+  "res": [
+   [
+    "All Health Indicators for Rwanda",
+    "CSV",
+    9956898,
+    "https://data.humdata.org/dataset/b1d5c183-5258-46bb-87ba-e264c8bb9699/resource/838b86c2-2331-40b7-8b70-4b065bd90b38/download/health_indicators_rwa.csv"
+   ],
+   [
+    "Health systems Indicators for Rwanda",
+    "CSV",
+    12866,
+    "https://data.humdata.org/dataset/b1d5c183-5258-46bb-87ba-e264c8bb9699/resource/487da2f7-e1d3-4844-86f2-27c7a9cd9cb7/download/health_systems_indicators_rwa.csv"
+   ],
+   [
+    "Malaria Indicators for Rwanda",
+    "CSV",
+    36478,
+    "https://data.humdata.org/dataset/b1d5c183-5258-46bb-87ba-e264c8bb9699/resource/e55ae2c9-a09e-4570-882c-12e324b2cf28/download/malaria_indicators_rwa.csv"
+   ],
+   [
+    "Tuberculosis Indicators for Rwanda",
+    "CSV",
+    71240,
+    "https://data.humdata.org/dataset/b1d5c183-5258-46bb-87ba-e264c8bb9699/resource/897ddbf8-e995-4298-861b-79ead6231d48/download/tuberculosis_indicators_rwa.csv"
+   ],
+   [
+    "Neglected tropical diseases Indicators for Rwanda",
+    "CSV",
+    22170,
+    "https://data.humdata.org/dataset/b1d5c183-5258-46bb-87ba-e264c8bb9699/resource/bd6a6900-366a-47b3-9c2f-0214bab5de72/download/neglected_tropical_diseases_indicators_rwa.csv"
+   ],
+   [
+    "Nutrition Indicators for Rwanda",
+    "CSV",
+    2667423,
+    "https://data.humdata.org/dataset/b1d5c183-5258-46bb-87ba-e264c8bb9699/resource/6b04164c-b183-4810-b099-cdee14542c75/download/nutrition_indicators_rwa.csv"
+   ],
+   [
+    "World Health Statistics Indicators for Rwanda",
+    "CSV",
+    7155041,
+    "https://data.humdata.org/dataset/b1d5c183-5258-46bb-87ba-e264c8bb9699/resource/3c844fe3-fe3f-4534-a333-0d34f85c6406/download/world_health_statistics_indicators_rwa.csv"
+   ],
+   [
+    "Child mortality Indicators for Rwanda",
+    "CSV",
+    996807,
+    "https://data.humdata.org/dataset/b1d5c183-5258-46bb-87ba-e264c8bb9699/resource/32a2c17b-d4ef-4012-928b-f0ace2e1a345/download/child_mortality_indicators_rwa.csv"
+   ]
+  ]
+ },
+ "world-bank-poverty-indicators-for-sri-lanka": {
+  "q": "sri lanka poverty headcount ds division",
+  "title": "Sri Lanka - Poverty",
+  "res": [
+   [
+    "Poverty Indicators for Sri Lanka",
+    "CSV",
+    15090,
+    "https://data.humdata.org/dataset/ff9a54fa-05d6-4d41-be49-20c2334de8d8/resource/c82478d7-9c4d-4776-9300-2a5082d5a856/download/poverty_lka.csv"
+   ]
+  ]
+ },
+ "world-bank-health-indicators-for-sri-lanka": {
+  "q": "sri lanka poverty headcount ds division",
+  "title": "Sri Lanka - Health",
+  "res": [
+   [
+    "Health Indicators for Sri Lanka",
+    "CSV",
+    849283,
+    "https://data.humdata.org/dataset/ae4f52a2-abaa-4177-8ba0-660b5ce29eb4/resource/4db39976-cbc1-4cb6-8556-1c770b274756/download/health_lka.csv"
+   ]
+  ]
+ },
+ "world-bank-aid-effectiveness-indicators-for-sri-lanka": {
+  "q": "sri lanka poverty headcount ds division",
+  "title": "Sri Lanka - Aid Effectiveness",
+  "res": [
+   [
+    "Aid Effectiveness Indicators for Sri Lanka",
+    "CSV",
+    302184,
+    "https://data.humdata.org/dataset/eb69ea90-f30b-408f-9aad-8ec99ffcbc58/resource/aac10a26-f22e-47d4-af20-41c401f2e6c3/download/aid-effectiveness_lka.csv"
+   ]
+  ]
+ },
+ "world-bank-climate-change-indicators-for-sri-lanka": {
+  "q": "sri lanka poverty headcount ds division",
+  "title": "Sri Lanka - Climate Change",
+  "res": [
+   [
+    "Climate Change Indicators for Sri Lanka",
+    "CSV",
+    146468,
+    "https://data.humdata.org/dataset/98d44560-f56c-4622-8baf-ec7caf472c86/resource/17703688-47d4-43c6-a573-95d675048825/download/climate-change_lka.csv"
+   ]
+  ]
+ },
+ "hdx-hapi-lka": {
+  "q": "sri lanka poverty headcount ds division",
+  "title": "HDX HAPI Data for Sri Lanka",
+  "res": [
+   [
+    "Affected People: Internally-Displaced Persons for Sri Lanka",
+    "CSV",
+    14754,
+    "https://data.humdata.org/dataset/6bf11c0d-6e26-4085-8e3b-29a6d5957274/resource/bef6650c-092e-4a33-bb63-6b1bb26e916e/download/hdx_hapi_idps_lka.csv"
+   ],
+   [
+    "Affected People: Refugees & Persons of Concern for Sri Lanka",
+    "CSV",
+    2405525,
+    "https://data.humdata.org/dataset/6bf11c0d-6e26-4085-8e3b-29a6d5957274/resource/151f99d5-6265-40fb-a56a-16db48143941/download/hdx_hapi_refugees_lka.csv"
+   ],
+   [
+    "Affected People: Returnees for Sri Lanka",
+    "CSV",
+    44990,
+    "https://data.humdata.org/dataset/6bf11c0d-6e26-4085-8e3b-29a6d5957274/resource/d97da79e-1daf-45b7-8e81-6ef43e713428/download/hdx_hapi_returnees_lka.csv"
+   ],
+   [
+    "Coordination & Context: Funding for Sri Lanka",
+    "CSV",
+    4248,
+    "https://data.humdata.org/dataset/6bf11c0d-6e26-4085-8e3b-29a6d5957274/resource/7096fb27-c1c9-4253-b2c9-cc59c644db6b/download/hdx_hapi_funding_lka.csv"
+   ],
+   [
+    "Coordination & Context: Conflict Events for Sri Lanka",
+    "CSV",
+    42060,
+    "https://data.humdata.org/dataset/6bf11c0d-6e26-4085-8e3b-29a6d5957274/resource/14d25305-de0f-4214-9049-253ec3a88873/download/hdx_hapi_conflict_event_lka.csv"
+   ],
+   [
+    "Coordination & Context: National Risk for Sri Lanka",
+    "CSV",
+    309,
+    "https://data.humdata.org/dataset/6bf11c0d-6e26-4085-8e3b-29a6d5957274/resource/55f2e838-d51f-4473-ab07-9b33da5cf215/download/hdx_hapi_national_risk_lka.csv"
+   ],
+   [
+    "Food Security, Nutrition & Poverty: Food Prices & Market Monitor for Sri Lanka",
+    "CSV",
+    5389573,
+    "https://data.humdata.org/dataset/6bf11c0d-6e26-4085-8e3b-29a6d5957274/resource/c2687b08-e4ae-4a0e-a022-5a923fc28c5a/download/hdx_hapi_food_price_lka.csv"
+   ],
+   [
+    "Food Security, Nutrition & Poverty: Poverty Rate for Sri Lanka",
+    "CSV",
+    1195,
+    "https://data.humdata.org/dataset/6bf11c0d-6e26-4085-8e3b-29a6d5957274/resource/34bbee6d-1da3-4c18-8add-c851646992a9/download/hdx_hapi_poverty_rate_lka.csv"
+   ]
+  ]
+ },
+ "world-bank-social-protection-and-labor-indicators-for-sri-lanka": {
+  "q": "sri lanka poverty headcount ds division",
+  "title": "Sri Lanka - Social Protection and Labor",
+  "res": [
+   [
+    "Social Protection and Labor Indicators for Sri Lanka",
+    "CSV",
+    1123822,
+    "https://data.humdata.org/dataset/6422c30d-08ac-49e1-a822-44aea5b2f864/resource/04b48ce9-1d8d-41a5-82ae-8c8e2e536082/download/social-protection-and-labor_lka.csv"
+   ]
+  ]
+ },
+ "relative-wealth-index": {
+  "q": "dominican republic municipal poverty map",
+  "title": "Relative Wealth Index",
+  "res": [
+   [
+    "Turkey_relative_wealth_index.csv",
+    "CSV",
+    4103616,
+    "https://data.humdata.org/dataset/76f2a2ea-ba50-40f5-b79c-db95d668b843/resource/ca1dea6b-9cc1-4bed-9465-8fd8fd7e0941/download/tur_relative_wealth_index.csv"
+   ],
+   [
+    "Relative Wealth Index - 93 Low and Middle Income Countries with Quadkeys - April 2021.csv",
+    "CSV",
+    121845999,
+    "https://data.humdata.org/dataset/76f2a2ea-ba50-40f5-b79c-db95d668b843/resource/bff723a4-6b55-4c51-8790-6176a774e13c/download/relative-wealth-index-93-low-and-middle-income-countries-with-quadkeys-april-2021.csv"
+   ],
+   [
+    "Relative Wealth Index - 93 Low and Middle Income Countries - April 2021.csv",
+    "CSV",
+    85228908,
+    "https://data.humdata.org/dataset/76f2a2ea-ba50-40f5-b79c-db95d668b843/resource/de2f953e-940c-43bb-b1f8-4d02d28124b5/download/relative-wealth-index-93-low-and-middle-income-countries-april-2021.csv"
+   ],
+   [
+    "Albania_relative_wealth_index.csv",
+    "CSV",
+    175288,
+    "https://data.humdata.org/dataset/76f2a2ea-ba50-40f5-b79c-db95d668b843/resource/23ddad00-f8ed-461c-a9d1-33ef2386faa6/download/albania_relative_wealth_index.csv"
+   ],
+   [
+    "Armenia_relative_wealth_index.csv",
+    "CSV",
+    103724,
+    "https://data.humdata.org/dataset/76f2a2ea-ba50-40f5-b79c-db95d668b843/resource/d3eced2c-170c-4d10-97f3-ba2e32ee121f/download/armenia_relative_wealth_index.csv"
+   ],
+   [
+    "Bosnia and Herzegovina_relative_wealth_index.csv",
+    "CSV",
+    382263,
+    "https://data.humdata.org/dataset/76f2a2ea-ba50-40f5-b79c-db95d668b843/resource/df20627b-770e-438c-bd3e-b172ef2fbdae/download/bosnia-and-herzegovina_relative_wealth_index.csv"
+   ],
+   [
+    "Georgia_relative_wealth_index.csv",
+    "CSV",
+    282000,
+    "https://data.humdata.org/dataset/76f2a2ea-ba50-40f5-b79c-db95d668b843/resource/bb977fac-405d-4a6c-a101-9023f30059ec/download/georgia_relative_wealth_index.csv"
+   ],
+   [
+    "Moldova_relative_wealth_index.csv",
+    "CSV",
+    247917,
+    "https://data.humdata.org/dataset/76f2a2ea-ba50-40f5-b79c-db95d668b843/resource/0142e224-3fbe-44a2-a31a-b79aace6e9e8/download/north-macedonia_relative_wealth_index.csv"
+   ]
+  ]
+ },
+ "repository-for-pdf-files": {
+  "q": "bangladesh poverty map 2022 upazila",
+  "title": "Repository for PDF files",
+  "res": [
+   [
+    "Tip Sheet Data Responsibility and Collective Community Feedback Mechanisms.pdf",
+    "PDF",
+    343542,
+    "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/e9b5094c-bcda-413a-a881-dd2bf86f6e8f/download/tip-sheet-data-responsibility-and-collective-community-feedback-mechanisms.pdf"
+   ],
+   [
+    "The State of Open Humanitarian Data 2026.pdf",
+    "PDF",
+    6021917,
+    "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/9f83159c-5cda-47ab-b5fe-597034c37bd8/download/state-of-open-humanitarian-data-2026.pdf"
+   ],
+   [
+    "FINAL AA Govt-Led Impact Story.pdf",
+    "PDF",
+    12446587,
+    "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/e1f632fb-f54b-4158-a9ea-b216fe5d2465/download/final-aa-govt-led-impact-story.pdf"
+   ],
+   [
+    "chd_local_partners FINAL.pdf",
+    "PDF",
+    2694446,
+    "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/5028e935-de0e-433d-b8ab-168bf00c778a/download/chd_local_partners-final.pdf"
+   ],
+   [
+    "HDX_Sauti FINAL.pdf",
+    "PDF",
+    3640620,
+    "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/05172580-72e5-4d1e-b748-2ef5666e9ffb/download/hdx_sauti-final.pdf"
+   ],
+   [
+    "AA_Impact_Story_cholera_DRC_FINAL.pdf",
+    "PDF",
+    2913851,
+    "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/9e47fd0e-c0e0-4fa3-ab93-4efa4d740552/download/aa_impact_story_cholera_drc_final.pdf"
+   ],
+   [
+    "CADC_Drought_Trigger_Technical_Note_v5_2025.pdf",
+    "PDF",
+    893616,
+    "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/e06e5c28-fc11-4543-bf87-b6758b5821aa/download/cadc_drought_trigger_technical_note_v5_2025.pdf"
+   ],
+   [
+    "HDX Signals Impact Story",
+    "PDF",
+    3006493,
+    "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/029df9aa-c277-4571-9dae-dc9bc33bdd14/download/hdx-signals-impact-story.pdf"
+   ]
+  ]
+ },
+ "world-bank-poverty-indicators-for-mongolia": {
+  "q": "mongolia soum poverty",
+  "title": "Mongolia - Poverty",
+  "res": [
+   [
+    "Poverty Indicators for Mongolia",
+    "CSV",
+    15234,
+    "https://data.humdata.org/dataset/9bd0f1ed-8500-470d-bd4b-f8a45919dcb1/resource/5554a11c-f8b6-4008-9a20-532b0c95d45e/download/poverty_mng.csv"
+   ]
+  ]
+ },
+ "cod-ab-mng": {
+  "q": "mongolia soum poverty",
+  "title": "Mongolia - Subnational Administrative Boundaries",
+  "res": [
+   [
+    "mng_admin_boundaries.gdb.zip",
+    "Geodatabase",
+    2924077,
+    "https://data.humdata.org/dataset/a9b0a8a6-cb14-448e-b35c-aa5eb51b0557/resource/8a8a810c-fa29-49a0-8745-47d026e22231/download/mng_admin_boundaries.gdb.zip"
+   ],
+   [
+    "mng_admin_boundaries.shp.zip",
+    "SHP",
+    5757562,
+    "https://data.humdata.org/dataset/a9b0a8a6-cb14-448e-b35c-aa5eb51b0557/resource/2ec00922-5b9b-47fc-aa36-0a8b59a877df/download/mng_admin_boundaries.shp.zip"
+   ],
+   [
+    "mng_admin_boundaries.geojson.zip",
+    "GeoJSON",
+    6483601,
+    "https://data.humdata.org/dataset/a9b0a8a6-cb14-448e-b35c-aa5eb51b0557/resource/de6b11d3-767d-449f-99fc-80c5b4e9abe3/download/mng_admin_boundaries.geojson.zip"
+   ],
+   [
+    "mng_admin_boundaries.xlsx",
+    "XLSX",
+    82896,
+    "https://data.humdata.org/dataset/a9b0a8a6-cb14-448e-b35c-aa5eb51b0557/resource/8a9c3d58-1393-4bce-a7c1-af2e51142ab4/download/mng_admin_boundaries.xlsx"
+   ]
+  ]
+ },
+ "mng-mpi": {
+  "q": "mongolia soum poverty",
+  "title": "Mongolia Global Multidimensional Poverty Index (Global MPI)",
+  "res": [
+   [
+    "Mongolia Global MPI and Partial Indices",
+    "CSV",
+    753,
+    "https://data.humdata.org/dataset/799a3622-443d-4940-a046-d14eb86d1b88/resource/b87f8230-dd05-4ced-96bf-6e2cdda6d64b/download/mng_mpi.csv"
+   ],
+   [
+    "Mongolia Global MPI Trends Over Time",
+    "CSV",
+    1960,
+    "https://data.humdata.org/dataset/799a3622-443d-4940-a046-d14eb86d1b88/resource/f1d2968c-c6af-42fc-81e3-fb3ba2acac42/download/mng_mpi_trends.csv"
+   ]
+  ]
+ },
+ "world-bank-education-indicators-for-mongolia": {
+  "q": "mongolia soum poverty",
+  "title": "Mongolia - Education",
+  "res": [
+   [
+    "Education Indicators for Mongolia",
+    "CSV",
+    1610686,
+    "https://data.humdata.org/dataset/505d724d-3d05-4b1a-8605-a355195b3b29/resource/95a5a0a4-806d-4c44-ae2e-b95cb53726ff/download/education_mng.csv"
+   ]
+  ]
+ },
+ "world-bank-health-indicators-for-mongolia": {
+  "q": "mongolia soum poverty",
+  "title": "Mongolia - Health",
+  "res": [
+   [
+    "Health Indicators for Mongolia",
+    "CSV",
+    898109,
+    "https://data.humdata.org/dataset/03fca57d-e69b-429c-b332-1ae923c158fd/resource/f268bb05-c423-4af7-b847-c801eae6ee03/download/health_mng.csv"
+   ]
+  ]
+ },
+ "world-bank-trade-indicators-for-mongolia": {
+  "q": "mongolia soum poverty",
+  "title": "Mongolia - Trade",
+  "res": [
+   [
+    "Trade Indicators for Mongolia",
+    "CSV",
+    451582,
+    "https://data.humdata.org/dataset/89061ac9-a08c-4013-a941-b41b7552f5cd/resource/6a9b1bb5-7e2a-464d-b004-b0c98904b902/download/trade_mng.csv"
+   ]
+  ]
+ },
+ "world-bank-aid-effectiveness-indicators-for-mongolia": {
+  "q": "mongolia soum poverty",
+  "title": "Mongolia - Aid Effectiveness",
+  "res": [
+   [
+    "Aid Effectiveness Indicators for Mongolia",
+    "CSV",
+    201957,
+    "https://data.humdata.org/dataset/a3a320e3-c46d-43a4-afef-604aefe17f90/resource/860ce2b5-98c4-4703-837e-0632f258f831/download/aid-effectiveness_mng.csv"
+   ]
+  ]
+ },
+ "who-data-for-mng": {
+  "q": "mongolia soum poverty",
+  "title": "Mongolia - Health Indicators",
+  "res": [
+   [
+    "All Health Indicators for Mongolia",
+    "CSV",
+    10373809,
+    "https://data.humdata.org/dataset/9cc309a2-3f9b-4c2e-9252-42fda13744ce/resource/c4942ecd-9e68-4973-bcd8-810c7f4690c7/download/health_indicators_mng.csv"
+   ],
+   [
+    "Health systems Indicators for Mongolia",
+    "CSV",
+    17544,
+    "https://data.humdata.org/dataset/9cc309a2-3f9b-4c2e-9252-42fda13744ce/resource/fcd51479-78f6-435f-9fb6-d11af0f763f0/download/health_systems_indicators_mng.csv"
+   ],
+   [
+    "Tuberculosis Indicators for Mongolia",
+    "CSV",
+    78000,
+    "https://data.humdata.org/dataset/9cc309a2-3f9b-4c2e-9252-42fda13744ce/resource/8d6b50c7-e600-49a5-91bf-7c1225526c19/download/tuberculosis_indicators_mng.csv"
+   ],
+   [
+    "Neglected tropical diseases Indicators for Mongolia",
+    "CSV",
+    2009,
+    "https://data.humdata.org/dataset/9cc309a2-3f9b-4c2e-9252-42fda13744ce/resource/243df3aa-dc51-4741-bfe2-d75195a4ad15/download/neglected_tropical_diseases_indicators_mng.csv"
+   ],
+   [
+    "Nutrition Indicators for Mongolia",
+    "CSV",
+    2788068,
+    "https://data.humdata.org/dataset/9cc309a2-3f9b-4c2e-9252-42fda13744ce/resource/9a7308b2-a463-4705-9d0e-4621e56e70b4/download/nutrition_indicators_mng.csv"
+   ],
+   [
+    "World Health Statistics Indicators for Mongolia",
+    "CSV",
+    7443144,
+    "https://data.humdata.org/dataset/9cc309a2-3f9b-4c2e-9252-42fda13744ce/resource/19e6238f-fdc4-4a8f-89cf-5dde125d224f/download/world_health_statistics_indicators_mng.csv"
+   ],
+   [
+    "Child mortality Indicators for Mongolia",
+    "CSV",
+    916826,
+    "https://data.humdata.org/dataset/9cc309a2-3f9b-4c2e-9252-42fda13744ce/resource/41eacb1b-ca40-4dd7-a7d7-4d6d74c37aa5/download/child_mortality_indicators_mng.csv"
+   ],
+   [
+    "Noncommunicable diseases Indicators for Mongolia",
+    "CSV",
+    1729239,
+    "https://data.humdata.org/dataset/9cc309a2-3f9b-4c2e-9252-42fda13744ce/resource/a3c5e8fd-ad0b-4375-ac97-12ae9558ac56/download/noncommunicable_diseases_indicators_mng.csv"
+   ]
+  ]
+ },
+ "world-bank-infrastructure-indicators-for-mongolia": {
+  "q": "mongolia soum poverty",
+  "title": "Mongolia - Infrastructure",
+  "res": [
+   [
+    "Infrastructure Indicators for Mongolia",
+    "CSV",
+    114036,
+    "https://data.humdata.org/dataset/60113c93-c7c8-46e9-8b40-d149dba76811/resource/2c57f161-fd32-4c72-a4c0-28d48eac0382/download/infrastructure_mng.csv"
+   ]
+  ]
+ },
+ "hdx-hapi-mng": {
+  "q": "mongolia soum poverty",
+  "title": "HDX HAPI Data for Mongolia",
+  "res": [
+   [
+    "Affected People: Internally-Displaced Persons for Mongolia",
+    "CSV",
+    2072,
+    "https://data.humdata.org/dataset/47f063fa-6cb3-484e-b361-3a8d277b65ad/resource/fd20a7ec-cfc1-47dd-9ec4-42c6055d0675/download/hdx_hapi_idps_mng.csv"
+   ],
+   [
+    "Affected People: Refugees & Persons of Concern for Mongolia",
+    "CSV",
+    780956,
+    "https://data.humdata.org/dataset/47f063fa-6cb3-484e-b361-3a8d277b65ad/resource/666e1021-7266-45e6-94f3-85e1bb51a2a3/download/hdx_hapi_refugees_mng.csv"
+   ],
+   [
+    "Affected People: Returnees for Mongolia",
+    "CSV",
+    1177,
+    "https://data.humdata.org/dataset/47f063fa-6cb3-484e-b361-3a8d277b65ad/resource/34b9c5ba-1509-41da-a373-46eb643cfb32/download/hdx_hapi_returnees_mng.csv"
+   ],
+   [
+    "Coordination & Context: Funding for Mongolia",
+    "CSV",
+    3032,
+    "https://data.humdata.org/dataset/47f063fa-6cb3-484e-b361-3a8d277b65ad/resource/7818c446-a4a1-4b31-8778-37ffe3fe2b46/download/hdx_hapi_funding_mng.csv"
+   ],
+   [
+    "Coordination & Context: Conflict Events for Mongolia",
+    "CSV",
+    22489,
+    "https://data.humdata.org/dataset/47f063fa-6cb3-484e-b361-3a8d277b65ad/resource/af633078-3d7d-4fef-b082-93dd7fd077b1/download/hdx_hapi_conflict_event_mng.csv"
+   ],
+   [
+    "Coordination & Context: National Risk for Mongolia",
+    "CSV",
+    310,
+    "https://data.humdata.org/dataset/47f063fa-6cb3-484e-b361-3a8d277b65ad/resource/b6d0f281-9b1a-420d-aae2-498f2407652e/download/hdx_hapi_national_risk_mng.csv"
+   ],
+   [
+    "Food Security, Nutrition & Poverty: Food Prices & Market Monitor for Mongolia",
+    "CSV",
+    290763,
+    "https://data.humdata.org/dataset/47f063fa-6cb3-484e-b361-3a8d277b65ad/resource/2e0e0bc6-6877-446e-8dc6-f1c02ebf9f80/download/hdx_hapi_food_price_mng.csv"
+   ],
+   [
+    "Food Security, Nutrition & Poverty: Poverty Rate for Mongolia",
+    "CSV",
+    1877,
+    "https://data.humdata.org/dataset/47f063fa-6cb3-484e-b361-3a8d277b65ad/resource/ca5193ba-b4f5-465e-b9ea-1a2a4b9ff582/download/hdx_hapi_poverty_rate_mng.csv"
+   ]
+  ]
+ },
+ "mng-corruption-perceptions-index": {
+  "q": "mongolia soum poverty",
+  "title": "Mongolia - Corruption Perceptions Index",
+  "res": [
+   [
+    "mng_cpi.csv",
+    "CSV",
+    657,
+    "https://data.humdata.org/dataset/edb86469-7035-4f3a-bf1c-4315eee34955/resource/9ec7cabf-6669-4719-ab39-e0225b6c2113/download/mng_cpi.csv"
+   ]
+  ]
+ },
+ "hdro-data-for-mongolia": {
+  "q": "mongolia soum poverty",
+  "title": "Mongolia - Human Development Indicators",
+  "res": [
+   [
+    "Human Development Indicators for Mongolia",
+    "CSV",
+    102105,
+    "https://data.humdata.org/dataset/9c6de9aa-b405-488f-b268-d6de059a575c/resource/ef09b323-57e0-4cdc-8dad-ede11cc00d2c/download/hdro_indicators_mng.csv"
+   ],
+   [
+    "Aggregated Human Development Indicators for Mongolia",
+    "CSV",
+    14913,
+    "https://data.humdata.org/dataset/9c6de9aa-b405-488f-b268-d6de059a575c/resource/7900d5f9-07dd-4706-9699-5a338410b2ff/download/hdro_indicators_aggregates_mng.csv"
+   ]
+  ]
+ },
+ "2024-rio-grande-do-sul-flood-pre-disaster-buildings-openstreetmap": {
+  "q": "dominican republic municipal poverty map",
+  "title": "Brazil : 2024 Rio Grande do Sul Flood Pre-Disaster Buildings by Municipality (OpenStreetMap Export)",
+  "res": [
+   [
+    "BR-RS-Encantado-Edificacoes_OSM.geojson",
+    "GeoJSON",
+    38757821,
+    "https://data.humdata.org/dataset/51897dd0-dc3c-41a3-bddc-2e94bc0678a7/resource/76e27050-d7e5-46fd-984b-eb748d9f582a/download/br-rs-encantado-edificacoes_osm.geojson"
+   ],
+   [
+    "BR-RS-Arroio_do_Meio-Edificacoes_OSM.geojson",
+    "GeoJSON",
+    35518773,
+    "https://data.humdata.org/dataset/51897dd0-dc3c-41a3-bddc-2e94bc0678a7/resource/fef99a87-df90-460b-aac6-649bcbeabc86/download/br-rs-arroio_do_meio-edificacoes_osm.geojson"
+   ],
+   [
+    "BR-RS-Roca_Sales-Edificacoes_OSM.geojson",
+    "GeoJSON",
+    28521356,
+    "https://data.humdata.org/dataset/51897dd0-dc3c-41a3-bddc-2e94bc0678a7/resource/68b24776-5d16-4416-9f06-a1927fbb015f/download/br-rs-roca_sales-edificacoes_osm.geojson"
+   ],
+   [
+    "BR-RS-Mucum-Edificacoes_OSM.geojson",
+    "GeoJSON",
+    6611693,
+    "https://data.humdata.org/dataset/51897dd0-dc3c-41a3-bddc-2e94bc0678a7/resource/71091013-6e2f-4444-86fe-2dd103f1e06a/download/br-rs-mucum-edificacoes_osm.geojson"
+   ],
+   [
+    "BR-RS-Cruzeiro_do_Sul-Edificacoes_OSM.geojson",
+    "GeoJSON",
+    54222638,
+    "https://data.humdata.org/dataset/51897dd0-dc3c-41a3-bddc-2e94bc0678a7/resource/ce2f7e44-c469-423c-bc50-1d4818f330a8/download/br-rs-cruzeiro_do_sul-edificacoes_osm.geojson"
+   ]
+  ]
+ },
+ "dominican-republic-road-surface-data": {
+  "q": "dominican republic municipal poverty map",
+  "title": "Dominican Republic: Road Surface Data",
+  "res": [
+   [
+    "Dominican republic GeoJSON Resource",
+    "GeoJSON",
+    268166679,
+    "https://downloads.ohsome.org/hdx/mapillary_road_surface/heigit_dom_roadsurface_lines.geojson"
+   ],
+   [
+    "Dominican republic GeoPackage Resource",
+    "Geopackage",
+    104554496,
+    "https://downloads.ohsome.org/hdx/mapillary_road_surface/heigit_dom_roadsurface_lines.gpkg"
+   ]
+  ]
+ },
+ "who-data-for-dom": {
+  "q": "dominican republic municipal poverty map",
+  "title": "Dominican Republic - Health Indicators",
+  "res": [
+   [
+    "All Health Indicators for Dominican Republic",
+    "CSV",
+    10295922,
+    "https://data.humdata.org/dataset/484d0d6a-f75f-47ec-8b33-5f710dd8d0d4/resource/f671b661-5758-4fb9-aa1a-0baee20ee067/download/health_indicators_dom.csv"
+   ],
+   [
+    "Health systems Indicators for Dominican Republic",
+    "CSV",
+    9528,
+    "https://data.humdata.org/dataset/484d0d6a-f75f-47ec-8b33-5f710dd8d0d4/resource/a5cb6458-ed63-413d-9216-a6891b302580/download/health_systems_indicators_dom.csv"
+   ],
+   [
+    "Malaria Indicators for Dominican Republic",
+    "CSV",
+    39475,
+    "https://data.humdata.org/dataset/484d0d6a-f75f-47ec-8b33-5f710dd8d0d4/resource/f9f2e305-7014-4b4f-b463-352a87ed5470/download/malaria_indicators_dom.csv"
+   ],
+   [
+    "Tuberculosis Indicators for Dominican Republic",
+    "CSV",
+    77591,
+    "https://data.humdata.org/dataset/484d0d6a-f75f-47ec-8b33-5f710dd8d0d4/resource/c485a43d-10e5-4d53-815e-774178f195c1/download/tuberculosis_indicators_dom.csv"
+   ],
+   [
+    "Neglected tropical diseases Indicators for Dominican Republic",
+    "CSV",
+    3917,
+    "https://data.humdata.org/dataset/484d0d6a-f75f-47ec-8b33-5f710dd8d0d4/resource/0981bfb1-3cd0-4af2-bb40-369e065e5174/download/neglected_tropical_diseases_indicators_dom.csv"
+   ],
+   [
+    "Nutrition Indicators for Dominican Republic",
+    "CSV",
+    2986168,
+    "https://data.humdata.org/dataset/484d0d6a-f75f-47ec-8b33-5f710dd8d0d4/resource/1c1f4855-60d4-47dd-a883-9e1d9ed88797/download/nutrition_indicators_dom.csv"
+   ],
+   [
+    "World Health Statistics Indicators for Dominican Republic",
+    "CSV",
+    7299478,
+    "https://data.humdata.org/dataset/484d0d6a-f75f-47ec-8b33-5f710dd8d0d4/resource/e3fe8d5a-5c4b-4990-ba1f-b16e668b4223/download/world_health_statistics_indicators_dom.csv"
+   ],
+   [
+    "Child mortality Indicators for Dominican Republic",
+    "CSV",
+    750421,
+    "https://data.humdata.org/dataset/484d0d6a-f75f-47ec-8b33-5f710dd8d0d4/resource/6ca84658-d594-49fd-b1a3-08c5689e8f94/download/child_mortality_indicators_dom.csv"
+   ]
+  ]
+ },
+ "whosonfirst-data-admin-dom": {
+  "q": "dominican republic municipal poverty map",
+  "title": "Dominican Republic: WOF Administrative Subdivisions and Human Settlements",
+  "res": [
+   [
+    "whosonfirst-data-admin-do-latest.zip",
+    "SHP",
+    1426323,
+    "https://data.geocode.earth/wof/dist/shapefile/whosonfirst-data-admin-do-latest.zip"
+   ]
+  ]
+ },
+ "damage-assessment-in-xochimilco-and-tlahuac-municipalities-federal-state-mexico-2712": {
+  "q": "dominican republic municipal poverty map",
+  "title": "Damage Assessment in Xochimilco and Tlahuac Municipalities, Federal State, Mexico",
+  "res": [
+   [
+    "EQ20170919MEX_gdb.zip",
+    "Geodatabase",
+    420448,
+    "https://unosat-maps.web.cern.ch/unosat-maps/MX/EQ20170919MEX/EQ20170919MEX_gdb.zip"
+   ],
+   [
+    "EQ20170919MEX_shp.zip",
+    "SHP",
+    602151,
+    "https://unosat-maps.web.cern.ch/unosat-maps/MX/EQ20170919MEX/EQ20170919MEX_shp.zip"
+   ]
+  ]
+ },
+ "dominican-republic-planet-road-surface-data": {
+  "q": "dominican republic municipal poverty map",
+  "title": "Dominican Republic: Planet Road Surface, Width, and Passability Data",
+  "res": [
+   [
+    "Dominican republic GPKG heigit_DO_planet_roadsurface_lines.gpkg",
+    "Geopackage",
+    4108288,
+    "https://hot.storage.heigit.org/heigit-hdx-public/planet_road_data/heigit_DO_planet_roadsurface_lines.gpkg"
+   ],
+   [
+    "Dominican republic GeoJSON heigit_DO_planet_roadsurface_lines.geojson",
+    "GeoJSON",
+    8175807,
+    "https://hot.storage.heigit.org/heigit-hdx-public/planet_road_data/heigit_DO_planet_roadsurface_lines.geojson"
+   ]
+  ]
+ },
+ "whosonfirst-data-admin-ven": {
+  "q": "dominican republic municipal poverty map",
+  "title": "Venezuela (Bolivarian Republic of): WOF Administrative Subdivisions and Human Settlements",
+  "res": [
+   [
+    "whosonfirst-data-admin-ve-latest.zip",
+    "SHP",
+    5293746,
+    "https://data.geocode.earth/wof/dist/shapefile/whosonfirst-data-admin-ve-latest.zip"
+   ]
+  ]
+ },
+ "whosonfirst-data-admin-lao": {
+  "q": "dominican republic municipal poverty map",
+  "title": "Lao People's Democratic Republic: WOF Administrative Subdivisions and Human Settlements",
+  "res": [
+   [
+    "whosonfirst-data-admin-la-latest.zip",
+    "SHP",
+    2735255,
+    "https://data.geocode.earth/wof/dist/shapefile/whosonfirst-data-admin-la-latest.zip"
+   ]
+  ]
+ },
+ "cod-ab-ago": {
+  "q": "dominican republic municipal poverty map",
+  "title": "Angola - Subnational Administrative Boundaries",
+  "res": [
+   [
+    "ago_admin_boundaries.gdb.zip",
+    "Geodatabase",
+    2314618,
+    "https://data.humdata.org/dataset/a62b2816-7d2e-4e07-a794-0a1dcb507092/resource/2d79a4a7-a161-4775-af64-7aa0a7c9a5a9/download/ago_admin_boundaries.gdb.zip"
+   ],
+   [
+    "ago_admin_boundaries.shp.zip",
+    "SHP",
+    4829526,
+    "https://data.humdata.org/dataset/a62b2816-7d2e-4e07-a794-0a1dcb507092/resource/e793b6b3-77df-4e06-a7f5-2fac6882863f/download/ago_admin_boundaries.shp.zip"
+   ],
+   [
+    "ago_admin_boundaries.geojson.zip",
+    "GeoJSON",
+    6426741,
+    "https://data.humdata.org/dataset/a62b2816-7d2e-4e07-a794-0a1dcb507092/resource/1076fc26-8c42-4196-bb6b-2353487fd7e0/download/ago_admin_boundaries.geojson.zip"
+   ],
+   [
+    "ago_admin_boundaries.xlsx",
+    "XLSX",
+    171118,
+    "https://data.humdata.org/dataset/a62b2816-7d2e-4e07-a794-0a1dcb507092/resource/1e2b4c71-600c-4917-9de3-46fb011c8976/download/ago_admin_boundaries.xlsx"
+   ]
+  ]
+ },
+ "whosonfirst-data-admin-cod": {
+  "q": "dominican republic municipal poverty map",
+  "title": "Democratic Republic of the Congo: WOF Administrative Subdivisions and Human Settlements",
+  "res": [
+   [
+    "whosonfirst-data-admin-cd-latest.zip",
+    "SHP",
+    4241176,
+    "https://data.geocode.earth/wof/dist/shapefile/whosonfirst-data-admin-cd-latest.zip"
+   ]
+  ]
+ },
+ "whosonfirst-data-admin-tza": {
+  "q": "dominican republic municipal poverty map",
+  "title": "United Republic of Tanzania: WOF Administrative Subdivisions and Human Settlements",
+  "res": [
+   [
+    "whosonfirst-data-admin-tz-latest.zip",
+    "SHP",
+    8523189,
+    "https://data.geocode.earth/wof/dist/shapefile/whosonfirst-data-admin-tz-latest.zip"
+   ]
+  ]
+ }
+}
