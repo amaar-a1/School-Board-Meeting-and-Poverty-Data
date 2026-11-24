@@ -74,10 +74,17 @@ C = {
                edu=r"pendidikan|sekolah|education", meet=r"mesyuarat|persidangan|sidang|council meeting"),
     "ID": dict(file="indonesia", q="rapat paripurna DPRD {}", chan=r"dprd|dewan perwakilan",
                edu=r"pendidikan|dinas pendidikan|komisi (d|iv)\b", meet=r"paripurna|rapat|sidang|rdp"),
+    # Czechia: municipal councils (zastupitelstvo); Rwanda: district councils (njyanama); Sri Lanka: district coordinating committees.
+    "CZ": dict(file="czechia", q="zasedání zastupitelstva {}", chan=r"obec|m[ěe]sto|m[ěe]stys|zastupitelstv|m[ěe]stsk|[úu][řr]ad|radnice|statut",
+               edu=r"[šs]kol|vzd[ěe]l|v[ýy]chov", meet=r"zased[áa]n|zastupitelstv|v[ýy]bor|jedn[áa]n"),
+    "RW": dict(file="rwanda", q="{} district council meeting", chan=r"district|akarere|njyanama|council",
+               edu=r"education|uburezi", meet=r"council|njyanama|inama|meeting|session"),
+    "LK": dict(file="sri_lanka", q="{} district coordinating committee meeting", chan=r"district|secretariat|dcc|coordinating|kachcheri",
+               edu=r"education", meet=r"coordinating|committee|meeting|council"),
     "PY": dict(file="paraguay", q="junta municipal de {} sesión", chan=r"junta|municipal|municipalidad|concejal",
                edu=r"educaci[óo]n|escuela", meet=r"sesi[óo]n|junta|plenaria|comisi[óo]n"),
 }
-GENERIC = set("kota kabupaten kab majlis daerah vald linn novads kommune kommun kunta kaupunki stad gemeente municipality the og och ja en de het city district stadt kreis landkreis del la el los las do da dos das e".split())
+GENERIC = set("obec mesto mestys district kota kabupaten kab majlis daerah vald linn novads kommune kommun kunta kaupunki stad gemeente municipality the og och ja en de het city district stadt kreis landkreis del la el los las do da dos das e".split())
 ANY_MEET = {cc: re.compile(c["meet"], re.I) for cc, c in C.items()}
 
 
