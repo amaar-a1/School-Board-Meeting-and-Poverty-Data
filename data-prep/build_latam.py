@@ -493,6 +493,11 @@ def owners(cc, rows):
     return own
 
 
+def years_text(d):
+    """{"2020": 495300, ...} -> "2020: 495300; ..." (oldest first), for the Population and Enrollment by year columns."""
+    return "; ".join(f"{y}: {v}" for y, v in sorted((d or {}).items()) if v is not None)
+
+
 def write(cc, key, rows, feats):
     meetings(cc, "")
     own = owners(cc, rows)
@@ -506,7 +511,7 @@ def write(cc, key, rows, feats):
             "Population", "Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
     extra = [c for c in ("Province", "Autonomous community", "Children under 18 (estimated)", "Poverty year", "Poverty range", "Poverty rate (region, all ages)", ES_EST,
-                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)", "Welfare rate basis", "Unemployment rate (2020 census)", "Children under 15", "Children under 16", "Pupils with free school meals", "Social assistance recipients per 1,000", "Children on family benefit (% of under-20s)", "Median income (€ per taxpayer)", "Children under 18", "Mean income (€ per tax return)", "Median family income ($ per week, 2021)", "Poverty rate (county, 2011)", "Map note") if any(r.get(c) not in (None, "") for r in rows)]
+                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)", "Welfare rate basis", "Unemployment rate (2020 census)", "Children under 15", "Children under 16", "Pupils with free school meals", "Social assistance recipients per 1,000", "Children on family benefit (% of under-20s)", "Median income (€ per taxpayer)", "Children under 18", "Mean income (€ per tax return)", "Median family income ($ per week, 2021)", "Poverty rate (county, 2011)", "Map note", "Population by year", "Enrollment by year", "Public share by year") if any(r.get(c) not in (None, "") for r in rows)]
     pov = "Percentage of Children in Low Income" if any(r.get("Percentage of Children in Low Income") for r in rows) else "Poverty rate (all ages)"
     cols = [c for c in cols if c not in ("Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)") or any(r.get(c) not in (None, "") for r in rows)]
     cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
@@ -1750,6 +1755,8 @@ def south_africa():
                                       "poorest, and their schools charge no fees. South Africa publishes no poverty rate by municipality from a recent survey") if rate is not None else "",
                      "Enrollment": x.get("pupils") or "", "Enrollment year": "2023 (learners in open ordinary schools; DBE masterlist)" if x.get("pupils") else "",
                      "Public school enrollment": x.get("public") if x.get("pupils") else "",
+                     "Enrollment by year": years_text(x.get("pupil_years")),
+                     "Public share by year": "; ".join(f"{y}: {v:.1f}%" for y, v in sorted((x.get("public_years") or {}).items())),
                      "School system": ("Metropolitan" if x.get("metro") else "Local") + " municipality (schools are run by the provincial education department; each school has a governing body); elected council",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in area})
     write("ZAF", "south_africa", rows, feats)
@@ -1935,7 +1942,7 @@ def malaysia():
                      "Poverty note": ("Households below the national poverty line income (absolute poverty), 2024 (DOSM, Household Income and Expenditure Survey)"
                                       + (f"; below half the median household income (relative poverty) {x['rel']:.1f}%" if x.get("rel") is not None else "")
                                       + (f". Median household income RM{inc[1]:,} a month" if inc else "")),
-                     "Poverty by year": trend,
+                     "Poverty by year": trend, "Population by year": years_text(x.get("pop_years")), "Enrollment by year": years_text(x.get("pupil_years")),
                      "Enrollment": x.get("pupils") or "", "Enrollment year": "2025 (pupils at government and government-aided primary and secondary schools; Ministry of Education)" if x.get("pupils") else "",
                      "Public school enrollment": x.get("pupils") or "",
                      "School system": "District (schools are run nationally by the Ministry of Education through its district education office); appointed local council",
@@ -1960,6 +1967,8 @@ def indonesia():
                      "Poverty note": "Share of people below the poverty line, all ages, 2020 (BPS, via the World Bank's Indonesia Database for Policy and Economic Research). Nationally 9.8% (March 2020)",
                      "Enrollment": x.get("pupils") or "", "Enrollment year": "2025 (primary pupils, SD/MI and equivalent, public and private; Kemendikdasmen)" if x.get("pupils") else "",
                      "Public school enrollment": x.get("public") if x.get("pupils") else "",
+                     "Enrollment by year": years_text(x.get("pupil_years")),
+                     "Public share by year": "; ".join(f"{y}: {v:.1f}%" for y, v in sorted((x.get("public_years") or {}).items())),
                      "School system": f"{x['kind']} (runs primary and junior secondary schools through its education office; the province runs senior secondary schools); elected regional council (DPRD)",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in area,
                      "Map note": "Population: WorldPop's 2025 estimate, summed over the border (BPS's 2020 series has no figure for it)" if x.get("pop_wp") else ""})
@@ -1982,6 +1991,7 @@ def paraguay():
                      "Poverty rate (all ages)": f"{x['pov']:.1f}%",
                      "Poverty note": (f"Share of people below the poverty line, all ages, 2022 (INE, district monetary poverty map: small-area estimates from the 2022 census "
                                       f"and household survey); 95% range {x['low']:.1f}–{x['high']:.1f}%. Nationally 20.6% on the same map"),
+                     "Population by year": years_text(x.get("pop_years")),
                      "Enrollment": "", "Enrollment year": "",
                      "School system": "Municipality (schools are run nationally by the Ministry of Education and Sciences); elected municipal council (junta municipal)",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in area})
@@ -2003,8 +2013,9 @@ def czechia():
         dens = x["pop"] / x["area"] if x.get("pop") and x.get("area") else 0
         rows.append({"District": x["name"], "Region": x["region"], "Population": x.get("pop") or "",
                      "Poverty rate (all ages)": f"{x['unemp']:.1f}%" if x.get("unemp") is not None else "",
-                     "Poverty note": (f"Stand-in: unemployed people as a share of residents aged 15-64, December 2024 ({x['jobseekers']:,} available job seekers of {x['pop15_64']:,}; "
+                     "Poverty note": (f"Stand-in: unemployed people as a share of residents aged 15-64, December {x.get('unemp_year', 2024)} ({x['jobseekers']:,} available job seekers of {x['pop15_64']:,}; "
                                       "Ministry of Labour and Social Affairs). Czechia publishes no poverty rate by municipality") if x.get("unemp") is not None else "",
+                     "Poverty by year": "; ".join(f"{y}: {v:.1f}%" for y, v in sorted((x.get("unemp_years") or {}).items())),
                      "Enrollment": "", "Enrollment year": "",
                      "School system": "Municipality (founds and runs its basic schools and kindergartens); elected municipal council (zastupitelstvo)",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in have})

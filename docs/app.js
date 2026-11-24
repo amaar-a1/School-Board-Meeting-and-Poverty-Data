@@ -38,6 +38,15 @@
     }
   }
 
+  // Embed mode (?embed=map, chart, stats or compare, from Share's "Copy embed code"): only that part of the page.
+  const EMBED = new URLSearchParams(location.search).get("embed");
+  if (["map", "chart", "stats", "compare"].includes(EMBED)) {
+    document.body.classList.add("embed", `embed-${EMBED}`);
+    if (EMBED !== "chart" && location.hash !== `#${EMBED}`) history.replaceState(null, "", `${location.pathname}${location.search}#${EMBED}`);
+    const full = new URL(location.href); full.searchParams.delete("embed");
+    $("embed-full").href = full.href;
+  }
+
   document.title = cfg.title;
   $("site-title").textContent = cfg.title;
   $("sources-link").href = cfg.sourcesUrl;
@@ -370,16 +379,27 @@
     sel.setAttribute("aria-label", "State, province or region");
     sel.addEventListener("change", () => { if (sel.value) selectDataset(stateDataset(sel.value)); else if (current && current.state) selectDataset(countryOf(current)); });
     tabs.appendChild(sel);
-    const share = document.createElement("button");
-    share.type = "button";
-    share.className = "share-button";
-    share.textContent = "Copy link";
-    share.title = "Copy a link to exactly this view: the country, tab, filters, search, chart, statistics and map settings, the map's position and any comparison";
-    share.addEventListener("click", async () => {
-      try { await navigator.clipboard.writeText(location.href); share.textContent = "Link copied"; }
-      catch (e) { window.prompt("Copy this link:", location.href); }
-      setTimeout(() => { share.textContent = "Copy link"; }, 2000);
+    // Share: a link to exactly this view, or the code to embed it (only the map, chart or statistics) in another page.
+    const share = document.createElement("details");
+    share.className = "share-menu";
+    share.innerHTML = `<summary class="share-button">Share</summary><div class="share-pop" role="menu">
+      <button type="button" data-share="link" role="menuitem" title="A link to exactly this view: the country, tab, filters, search, chart, statistics and map settings, the map's position and any comparison">Copy link</button>
+      <button type="button" data-share="embed" role="menuitem" title="Code for a web page or slide: shows only this tab's map, chart or statistics">Copy embed code</button>
+      <span class="share-done muted" aria-live="polite"></span></div>`;
+    const copy = async (text, done) => {
+      try { await navigator.clipboard.writeText(text); share.querySelector(".share-done").textContent = done; }
+      catch (e) { window.prompt("Copy this:", text); }
+      setTimeout(() => { share.querySelector(".share-done").textContent = ""; share.open = false; }, 1600);
+    };
+    share.addEventListener("click", (e) => {
+      const b = e.target.closest("button[data-share]");
+      if (!b) return;
+      if (b.dataset.share === "link") return copy(location.href, "Link copied");
+      const part = view === "map" ? "map" : view === "stats" ? "stats" : view === "compare" ? "compare" : "chart";
+      const u = new URL(location.href); u.searchParams.set("embed", part);
+      copy(`<iframe src="${u.href}" width="100%" height="${part === "map" ? 560 : 480}" style="border:0" loading="lazy" title="${cfg.title}"></iframe>`, "Embed code copied");
     });
+    document.addEventListener("click", (e) => { if (share.open && !share.contains(e.target)) share.open = false; });
     tabs.appendChild(share);
   }
 
@@ -404,7 +424,7 @@
   // (The country is ?d=, a place ?place=, a comparison ?cmp=, the map's position ?at=, the language ?lang=, the tab #view.)
   const LINK_CONTROLS = { loc: "f-locale", meet: "f-meetings", pmin: "f-pov-min", pmax: "f-pov-max", size: "f-size", q: "search",
     x: "x-col", y: "y-col", chart: "chart-type", top: "chart-limit", sboards: "stats-boards",
-    metric: "map-metric", noest: "map-no-est", mboards: "map-boards-only", overlap: "map-canada-overlap", frsmall: "map-fr-small", second: "map-secondary" };
+    metric: "map-metric", year: "map-year", noest: "map-no-est", mboards: "map-boards-only", overlap: "map-canada-overlap", frsmall: "map-fr-small", second: "map-secondary" };
   const linkEvent = (el) => (el.type === "checkbox" || el.tagName === "SELECT" ? "change" : "input");
   function watchLinkControls() {
     Object.entries(LINK_CONTROLS).forEach(([k, id]) => {
@@ -425,6 +445,18 @@
     });
   }
 
+  // A country's note: its first sentence, with the rest behind "More about this data" (the notes run long).
+  function showNote(el, note) {
+    el.textContent = "";
+    const m = note.match(/^([\s\S]{40,320}?[.!?])\s+([\s\S]{80,})$/);
+    if (!m) { el.textContent = note; return; }
+    const lead = document.createElement("span"); lead.textContent = m[1] + " ";
+    const more = document.createElement("details"); more.className = "more";
+    const sum = document.createElement("summary"); sum.textContent = "More about this data";
+    const rest = document.createElement("p"); rest.textContent = m[2];
+    more.append(sum, rest); el.append(lead, more);
+  }
+
   function selectDataset(ds, keepPlace) {
     current = ds;
     // A new country: its chart columns and map position differ, so they leave the link.
@@ -441,7 +473,7 @@
       csel.value = nat ? nat.name : "";
     }
     if (sel) { sel.value = current.state || ""; sel.classList.toggle("active", !!current.state); }
-    $("dataset-note").textContent = current.note || "";
+    showNote($("dataset-note"), current.note || "");
     if (window.SiteQuality) window.SiteQuality.renderFor(current);
     $("footer").textContent = current.footer || "";
     renderSources();
@@ -1451,7 +1483,7 @@
     setView(v);
     history.replaceState(null, "", v === "overview" ? location.pathname + location.search : `#${v}`);
   });
-  const viewFromHash = () => { if (["#size", "#locale", "#density", "#boards", "#map", "#trends", "#stats", "#compare", "#rules", "#sources"].includes(location.hash)) setView(location.hash.slice(1)); };
+  const viewFromHash = () => { if (["#size", "#locale", "#density", "#boards", "#map", "#trends", "#stats", "#compare", "#guide", "#rules", "#sources"].includes(location.hash)) setView(location.hash.slice(1)); };
   viewFromHash();
   window.addEventListener("hashchange", viewFromHash);
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {

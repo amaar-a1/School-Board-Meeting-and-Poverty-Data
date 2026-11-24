@@ -638,7 +638,7 @@ window.SOURCES = [
     only: "Czechia",
     group: "Czechia: municipalities, unemployment and population",
     items: [
-      { title: "Unemployment (stand-in): Ministry of Labour and Social Affairs (MPSV) open data, unemployment in municipalities, December 2024 (nezamestnanost-v-obcich)", url: "https://data.mpsv.cz/web/data/nezamestnanost-v-obcich" },
+      { title: "Unemployment (stand-in): Ministry of Labour and Social Affairs (MPSV) open data, unemployment in municipalities, every December from 2015 to 2024 (nezamestnanost-v-obcich)", url: "https://data.mpsv.cz/web/data/nezamestnanost-v-obcich" },
       { title: "Borders, population and area: Eurostat GISCO, Local Administrative Units 2024; regions: GISCO NUTS 3 2024", url: "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units" },
       { title: "Enrollment (estimated): Eurostat, population by age group and NUTS 3 region, 1 January 2024 (demo_r_pjangrp3)", url: "https://ec.europa.eu/eurostat/databrowser/view/demo_r_pjangrp3/default/table" },
       { title: "Meetings: each municipality's YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }

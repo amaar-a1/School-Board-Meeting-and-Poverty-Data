@@ -6,7 +6,8 @@
 - Region (kraj): GISCO NUTS 3 2024 (nuts3_CZ.geojson), by location.
 - Poverty stand-in: Ministry of Labour and Social Affairs (MPSV) open data, unemployment in municipalities, December 2024
   (nezamestnanost-v-obcich-12-2024.json): the share of unemployed people among residents aged 15-64
-  (podilNezamestnanychOsob), with the counts of available job seekers and of residents aged 15-64.
+  (podilNezamestnanychOsob), with the counts of available job seekers and of residents aged 15-64; the same for every
+  December from 2015 (nezamestnanost-v-obcich-12-YYYY.json.gz), for change over time.
 - Children (for the enrollment estimate): the municipality's 2024 population times its region's share of children of
   basic-school age, 6-14 (four fifths of ages 5-9 and all of 10-14), from Eurostat demo_r_pjangrp3 (1 January 2024).
 Then, after build_latam.py, run data-prep/simplify_borders.sh czechia.
@@ -28,6 +29,12 @@ def main(raw):
     nuts = [(f["properties"]["NUTS_ID"], f["properties"]["NAME_LATN"], shape(f["geometry"]).buffer(0))
             for f in json.load(open(os.path.join(raw, "nuts3_CZ.geojson"), encoding="utf-8"))["features"]]
     un = {x["obec"].split("/")[1]: x for x in json.loads(gzip.decompress(open(os.path.join(raw, "cz_unemp_12_2024.json.gz"), "rb").read()))["polozky"]}
+    hist = {}
+    for y in range(2015, 2025):
+        f = os.path.join(raw, f"cz_unemp_12_{y}.json.gz")
+        if os.path.exists(f):
+            for x in json.loads(gzip.decompress(open(f, "rb").read()))["polozky"]:
+                hist.setdefault(x["obec"].split("/")[1], {})[str(y)] = round(x["podilNezamestnanychOsob"], 1)
     ag = json.load(open(os.path.join(raw, "cz_ages_nuts3.json"), encoding="utf-8"))
     # JSON-stat: value index = age position * number of regions + region position (the other dimensions have one value).
     ai, gi = ag["dimension"]["age"]["category"]["index"], ag["dimension"]["geo"]["category"]["index"]
@@ -46,7 +53,7 @@ def main(raw):
         did = f"CZE-{code}"
         data[did] = {"name": p["LAU_NAME"], "region": n[1], "nuts3": n[0], "pop": pop, "area": p.get("AREA_KM2"),
                      "unemp": u and u["podilNezamestnanychOsob"], "jobseekers": u and u["dosazitelniUchazeci"], "pop15_64": u and u["obyvatelstvo15_64"],
-                     "kids6_14": round(pop * share[n[0]]) if pop else None}
+                     "kids6_14": round(pop * share[n[0]]) if pop else None, "unemp_years": hist.get(code, {})}
         feats.append({"type": "Feature", "properties": {"id": did, "NAME": p["LAU_NAME"]},
                       "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
     print("no unemployment figure:", len(miss), miss[:10])

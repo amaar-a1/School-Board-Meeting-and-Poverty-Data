@@ -85,16 +85,22 @@ def main(raw):
     def pk(n):
         m = re.match(r"(KAB\.|KOTA)\s*(?:ADM\.\s*)?(.*)", n.strip())
         return (("kota" if m.group(1) == "KOTA" else "") + key(m.group(2))) if m else key(n)
-    pup = {}
+    pup, pyears, pubyears = {}, {}, {}
     pf = os.path.join(OUT, "idn_primary_pupils.csv")
     if os.path.exists(pf):
         import csv
         for r in csv.DictReader(open(pf, encoding="utf-8")):
             if r["year"] == "2025": pup.setdefault(pk(r["regency_city"]), {})[r["status"]] = int(r["pupils"])
+            if r["status"] == "Negeri dan Swasta": pyears.setdefault(pk(r["regency_city"]), {})[r["year"]] = int(r["pupils"])
+            if r["status"] == "Negeri": pubyears.setdefault(pk(r["regency_city"]), {})[r["year"]] = int(r["pupils"])
     for did, x in data.items():
         k = ("kota" if x["kind"].startswith("City") else "") + key(re.sub(r"^Kota ", "", x["name"]))
         p = pup.get(PUP_ALIAS.get(k, k))
         if p: x["pupils"], x["public"] = p.get("Negeri dan Swasta"), p.get("Negeri")
+        if pyears.get(PUP_ALIAS.get(k, k)): x["pupil_years"] = dict(sorted(pyears[PUP_ALIAS.get(k, k)].items()))
+        kk = PUP_ALIAS.get(k, k)
+        if pyears.get(kk) and pubyears.get(kk):   # public schools' share of pupils, each year
+            x["public_years"] = {y: round(100 * pubyears[kk][y] / t, 1) for y, t in sorted(pyears[kk].items()) if t and y in pubyears[kk]}
     print("no pupil count:", [x["name"] for x in data.values() if not x.get("pupils")])
     # Current names for regencies renamed since the World Bank's series.
     RENAMED = {"Pasir": "Paser", "Pontianak": "Mempawah", "Mamuju Utara": "Pasangkayu", "Toba Samosir": "Toba", "Maluku Tenggara Barat": "Kepulauan Tanimbar"}
