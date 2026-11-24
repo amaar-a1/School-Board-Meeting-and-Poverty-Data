@@ -1,0 +1,12 @@
+OK rwa_gb_ADM1.geojson 132231 https://github.com/wmgeolab/geoBoundaries/raw/main/releaseData/gbOpen/RWA/ADM1/geoBoundaries-RWA-ADM1_simplified.geojson
+   b'{\n"type": "FeatureCollection",\n"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },\n"features": [\n{ "type": "Feature", "properties": { "shapeName": "City of Kigali", "shapeISO": "RW-01", "shapeID": "91480417B22690809677968", "shapeGroup": "RWA", "shapeType": "ADM1" }'
+OK rwa_gb_ADM2.geojson 289074 https://github.com/wmgeolab/geoBoundaries/raw/main/releaseData/gbOpen/RWA/ADM2/geoBoundaries-RWA-ADM2_simplified.geojson
+   b'{\n"type": "FeatureCollection",\n"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },\n"features": [\n{ "type": "Feature", "properties": { "shapeName": "Nyarugenge", "shapeISO": "", "shapeID": "39286606B91255837333217", "shapeGroup": "RWA", "shapeType": "ADM2" }, "geomet'
+OK lka_gb_ADM1.geojson 174545 https://github.com/wmgeolab/geoBoundaries/raw/main/releaseData/gbOpen/LKA/ADM1/geoBoundaries-LKA-ADM1_simplified.geojson
+   b'{\n"type": "FeatureCollection",\n"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },\n"features": [\n{ "type": "Feature", "properties": { "shapeName": "Northern Province", "shapeISO": "LK-4", "shapeID": "99731895B93054189817547", "shapeGroup": "LKA", "shapeType": "ADM1"'
+OK lka_gb_ADM2.geojson 241213 https://github.com/wmgeolab/geoBoundaries/raw/main/releaseData/gbOpen/LKA/ADM2/geoBoundaries-LKA-ADM2_simplified.geojson
+   b'{\n"type": "FeatureCollection",\n"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },\n"features": [\n{ "type": "Feature", "properties": { "shapeName": "Jaffna District", "shapeISO": "LK-41", "shapeID": "46371173B9817749849456", "shapeGroup": "LKA", "shapeType": "ADM2" }'
+ERR lk_moe.html <urlopen error [Errno 110] Connection timed out> https://moe.gov.lk/statistics/
+pip 0
+done RWA 30
+done LKA 25
