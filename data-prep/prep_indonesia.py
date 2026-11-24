@@ -7,6 +7,9 @@
   (SP.POP.TOTL). BPS's own site doesn't answer GitHub's servers.
 - Borders: geoBoundaries (gbOpen) IDN ADM2, simplified; each regency's province from the ADM1 borders it lies in.
   Names: "X, Kab." is the border "X", and "X, Kota" the border "Kota X".
+- Enrollment: Ministry of Primary and Secondary Education (Kemendikdasmen), Portal Data: pupils at primary level (SD/MI
+  and equivalent, grades 1-6), public (negeri) and private (swasta), 2025, by regency and city ("Jumlah peserta didik
+  menurut agama", summed over religions; inputs/indonesia/idn_primary_pupils.csv, the columns used, 2021-2025).
 - Children (for the enrollment estimate, data-prep/estimate_enrollment.py): WorldPop's 2025 age structures (R2025A,
   1 km), summed over each border by the runner (in_ages-style file idn_ages_2025.json).
 Then, after build_latam.py, run data-prep/estimate_enrollment.py indonesia.csv and data-prep/simplify_borders.sh.
@@ -75,6 +78,30 @@ def main(raw):
         a = ages.get(x["shape"], {})
         if a: x["ages"] = {g: round(a.get("f" + g, 0) + a.get("m" + g, 0)) for g in ("05", "10", "15")}
         if not x.get("pop") and a: x["pop"], x["pop_wp"] = round(sum(a.values())), True   # three regencies newer than the 2020 series
+    # Primary pupils (2025): the ministry's names are "KAB. X" and "KOTA X"; renamed regencies matched by hand.
+    PUP_ALIAS = {"baru": "kotabaru", "kendaricity": "kotakendari", "kepulauanseribu": "kepseribu", "kepulauansiautagulandangbiaro": "kepsiautagulandangbiaro",
+                 "kotakepulauantidore": "kotatidorekepulauan", "mahakamhulu": "mahakamulu", "malukutenggarabarat": "kepulauantanimbar",
+                 "mamujuutara": "pasangkayu", "pangkajenekepulauan": "pangkajenedankepulauan", "pasir": "paser", "pontianak": "mempawah", "tobasamosir": "toba"}
+    def pk(n):
+        m = re.match(r"(KAB\.|KOTA)\s*(?:ADM\.\s*)?(.*)", n.strip())
+        return (("kota" if m.group(1) == "KOTA" else "") + key(m.group(2))) if m else key(n)
+    pup = {}
+    pf = os.path.join(OUT, "idn_primary_pupils.csv")
+    if os.path.exists(pf):
+        import csv
+        for r in csv.DictReader(open(pf, encoding="utf-8")):
+            if r["year"] == "2025": pup.setdefault(pk(r["regency_city"]), {})[r["status"]] = int(r["pupils"])
+    for did, x in data.items():
+        k = ("kota" if x["kind"].startswith("City") else "") + key(re.sub(r"^Kota ", "", x["name"]))
+        p = pup.get(PUP_ALIAS.get(k, k))
+        if p: x["pupils"], x["public"] = p.get("Negeri dan Swasta"), p.get("Negeri")
+    print("no pupil count:", [x["name"] for x in data.values() if not x.get("pupils")])
+    # Current names for regencies renamed since the World Bank's series.
+    RENAMED = {"Pasir": "Paser", "Pontianak": "Mempawah", "Mamuju Utara": "Pasangkayu", "Toba Samosir": "Toba", "Maluku Tenggara Barat": "Kepulauan Tanimbar"}
+    for x in data.values():
+        if x["name"] in RENAMED: x["name"] = RENAMED[x["name"]]
+    for f in feats:
+        f["properties"]["NAME"] = data[f["properties"]["id"]]["name"]
     os.makedirs(OUT, exist_ok=True)
     json.dump(data, open(os.path.join(OUT, "idn_data.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     json.dump({"type": "FeatureCollection", "features": feats}, open(os.path.join(OUT, "idn_geo.geojson"), "w", encoding="utf-8"), separators=(",", ":"))

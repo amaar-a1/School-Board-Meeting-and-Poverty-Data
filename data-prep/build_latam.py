@@ -1938,7 +1938,8 @@ def indonesia():
         rows.append({"District": x["name"], "Region": x["province"], "Population": x.get("pop") or "",
                      "Poverty rate (all ages)": f"{x['pov']:.1f}%",
                      "Poverty note": "Share of people below the poverty line, all ages, 2020 (BPS, via the World Bank's Indonesia Database for Policy and Economic Research). Nationally 9.8% (March 2020)",
-                     "Enrollment": "", "Enrollment year": "",
+                     "Enrollment": x.get("pupils") or "", "Enrollment year": "2025 (primary pupils, SD/MI and equivalent, public and private; Kemendikdasmen)" if x.get("pupils") else "",
+                     "Public school enrollment": x.get("public") if x.get("pupils") else "",
                      "School system": f"{x['kind']} (runs primary and junior secondary schools through its education office; the province runs senior secondary schools); elected regional council (DPRD)",
                      "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "", "District ID": did, "_geo": did in area,
                      "Map note": "Population: WorldPop's 2025 estimate, summed over the border (BPS's 2020 series has no figure for it)" if x.get("pop_wp") else ""})
