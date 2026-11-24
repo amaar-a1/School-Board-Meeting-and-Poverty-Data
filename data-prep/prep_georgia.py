@@ -57,6 +57,41 @@ def latest(rows, add=False):
     return out
 
 
+def allyears(rows, add=False):
+    """{key(name): {year: value}} for every year column (change over time); school years "2024/2025" by their first year."""
+    hdr = next(r for r in rows if sum(isinstance(c, (int, float)) and 1990 < float(c) < 2100 or bool(re.match(r"20\d\d/20\d\d", str(c))) for c in r) >= 5)
+    cols = [(i, re.sub(r"\.0$|\*$", "", str(c))[:4]) for i, c in enumerate(hdr) if c not in (None, "") and re.match(r"(19|20)\d\d", str(c))]
+    out = {}
+    for r in rows:
+        if not r or not isinstance(r[0], str): continue
+        k = ALIAS.get(key(r[0]), key(r[0]))
+        for i, y in cols:
+            v = r[i] if i < len(r) else None
+            if isinstance(v, (int, float)):
+                d = out.setdefault(k, {})
+                d[y] = d.get(y, 0) + v if add else v
+    return out
+
+
+def history(raw):
+    """Adds every year of population, pupils and the subsistence-allowance rate to geo_data.json (the same Geostat files)."""
+    pop = allyears(rows_xls(find(raw, "*01_population_by_self_governed_unit.xlsx")))
+    pup = allyears(rows_xls(find(raw, "*11_Number_of_schools_Pupils_Teachers_by_Municipalities.xlsx"), "pupils"))
+    tsa = allyears(rows_xls(find(raw, "*subsistence_allowance_by_municipal*.xls")), add=True)
+    f = os.path.join(OUT, "geo_data.json")
+    data = json.load(open(f, encoding="utf-8"))
+    for x in data.values():
+        if x.get("occupied"): continue
+        k = ALIAS.get(key(x["name"]), key(x["name"]))
+        p = {y: round(v * 1000) for y, v in pop.get(k, {}).items()}
+        x["pop_years"], x["pupil_years"] = p, {y: round(v) for y, v in pup.get(k, {}).items()}
+        # The stand-in each year: families on the allowance at the end of the year per 100 residents on 1 January of the next.
+        x["pov_years"] = {y: round(100 * v / p[str(int(y) + 1)], 1) for y, v in tsa.get(k, {}).items() if p.get(str(int(y) + 1))}
+    json.dump(data, open(f, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    v = [x for x in data.values() if not x.get("occupied")]
+    print("Georgia:", sum(1 for x in v if len(x["pov_years"]) > 1), "with several poverty years;", sorted({y for x in v for y in x["pov_years"]}), sorted({y for x in v for y in x["pupil_years"]})[:1], "-", sorted({y for x in v for y in x["pupil_years"]})[-1:])
+
+
 def rnd(c):
     return [rnd(x) for x in c] if isinstance(c[0], list) else [round(c[0], 4), round(c[1], 4)]
 
@@ -97,4 +132,5 @@ def main(raw, geo, listcsv, meet):
 
 
 if __name__ == "__main__":
-    main(*sys.argv[1:])
+    if sys.argv[1] == "--history": history(sys.argv[2])   # prep_georgia.py --history RAWDIR
+    else: main(*sys.argv[1:])

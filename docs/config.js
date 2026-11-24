@@ -632,7 +632,7 @@ window.SITE_CONFIG = {
   ],
   // "All" button: every US district, territory school system and Canadian board together.
   combined: {
-    name: "All: United States, U.S. territories, Canada, Saint-Pierre-et-Miquelon, the United Kingdom, Ireland, the Nordic countries (with Iceland), the Netherlands, Switzerland, Germany, New Zealand, Chile, Colombia, Mexico, Brazil, Peru, Spain, France, Ecuador, Italy, Poland, Japan, Portugal, Belgium, Australia, Croatia, Latvia, Estonia, Argentina, Israel, Slovenia, Taiwan, Uruguay, Costa Rica, Lithuania, South Africa, Kenya, Georgia, South Korea, India, Philippines and island countries", button: "All", recordLabel: "Districts and boards",
+    name: "All: United States, U.S. territories, Canada, Saint-Pierre-et-Miquelon, the United Kingdom, Ireland, the Nordic countries (with Iceland), the Netherlands, Switzerland, Germany, New Zealand, Chile, Colombia, Mexico, Brazil, Peru, Spain, France, Ecuador, Italy, Poland, Japan, Portugal, Belgium, Australia, Croatia, Latvia, Estonia, Argentina, Israel, Slovenia, Taiwan, Uruguay, Costa Rica, Lithuania, South Africa, Kenya, Georgia, South Korea, India, Philippines, Malaysia, Indonesia, Paraguay, Czechia, Rwanda, Sri Lanka and island countries", button: "All", recordLabel: "Districts and boards",
     textColumns: ["District ID"], metric: "Child poverty rate",
     measures: {
       us: "Children 5–17 in poverty (Census SAIPE 2024)",

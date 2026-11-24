@@ -10,6 +10,8 @@ osp-rs.stat.gov.lt/rest_json/data/<dataflow>) into the small inputs build_latam.
   pop, children: S3R167_M3010213, residents at the start of the year, all ages and aged 0-15 (latest year).
   meetings: the municipal council's YouTube channel (fetch/nyt.py, LT).
 Then, after build_latam.py, run data-prep/simplify_borders.sh (a lighter copy of the map file for zoomed-out views).
+Change over time: python3 data-prep/prep_lithuania.py --history RAWDIR adds every year of poverty, pupils and
+population from the same files.
 Usage: python3 data-prep/prep_lithuania.py RAWDIR GEODIR WIKI_HTML (English Wikipedia, "Municipalities of Lithuania", action=render)
 """
 import json, os, re, sys, unicodedata
@@ -38,6 +40,34 @@ def latest(path, **fix):
         if k["LAIKOTARPIS"] == per and all(k.get(a) == b for a, b in fix.items()) and v is not None:
             out[k["savivaldybesRegdb"]] = v
     return per, out, dims[0][1]
+
+
+def series(path, **fix):
+    """{municipality code: {period: value}} for every period, other dimensions fixed by name=code (change over time)."""
+    dims, obs = read(path)
+    ids = [i for i, _ in dims]
+    out = {}
+    for k, v in obs.items():
+        k = dict(zip(ids, k))
+        if all(k.get(a) == b for a, b in fix.items()) and v is not None:
+            out.setdefault(k["savivaldybesRegdb"], {})[str(k["LAIKOTARPIS"])[:4]] = round(v, 1) if isinstance(v, float) else v
+    return out
+
+
+def history(raw):
+    """Adds every year of poverty, pupils and population to ltu_data.json (the same Official Statistics Portal files)."""
+    p = lambda f: os.path.join(raw, f)
+    pov = series(p("lt_S3R453_M3080308.json"))
+    pup = series(p("lt_S3R057_M3110302_3.json"))
+    pop = series(p("lt_S3R167_M3010213.json"), Lytis="0", amziusREGM1040112="g000g999")
+    f = os.path.join(OUT, "ltu_data.json")
+    data = json.load(open(f, encoding="utf-8"))
+    for c, x in data.items():
+        if c == "_years": continue
+        x["pov_years"], x["pupil_years"], x["pop_years"] = pov.get(c, {}), pup.get(c, {}), pop.get(c, {})
+    json.dump(data, open(f, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    yrs = lambda k: sorted({y for c, x in data.items() if c != "_years" for y in x[k]})
+    print("poverty", yrs("pov_years")[:1], "-", yrs("pov_years")[-1:], "; pupils", yrs("pupil_years")[:1], "-", yrs("pupil_years")[-1:], "; population", yrs("pop_years")[:1], "-", yrs("pop_years")[-1:])
 
 
 def key(name):
@@ -94,4 +124,5 @@ def main(raw, geo, wiki=None):
 
 
 if __name__ == "__main__":
-    main(*sys.argv[1:])
+    if sys.argv[1] == "--history": history(sys.argv[2])   # prep_lithuania.py --history RAWDIR
+    else: main(*sys.argv[1:])

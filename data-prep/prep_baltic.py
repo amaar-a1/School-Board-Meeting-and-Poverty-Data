@@ -15,6 +15,12 @@ Estonia (data-prep/inputs/estonia/):
 - lau_EE.geojson: GISCO LAU 2024 borders (79 municipalities);
 - ee_data.json, per municipality (EHAK code): pop, children (0-17) and age 7-18 from Statistics Estonia RV0240
   (1 January 2026); subsistence-benefit applications granted per 1,000 residents in 2025 (SK410, indicator 5).
+History (python3 data-prep/prep_baltic.py --history RAWDIR, with the all-years downloads of fetch round 47):
+- Latvia: population at the start of each year from 2012 (IRD041, Madona and Varakļāni added up before their merger)
+  and the poverty stand-in for each year from 2021 (PPS040); the children of earlier years are estimated as the
+  latest count of children times the change in total population, as IRD041's all-years download has totals only;
+- Estonia: population on 1 January of each year from 2015 (RV0240) and subsistence-benefit applications per 1,000
+  residents from 2017, the first year of the present municipalities (SK410; Kohtla-Järve and Toila added up).
 Usage: python3 data-prep/prep_baltic.py RAWDIR [RAWDIR ...]
 """
 import csv, glob, json, os, re, shutil, sys, unicodedata
@@ -131,6 +137,74 @@ def estonia(dirs):
     print("Estonia", len(out), "municipalities;", sum(1 for v in out.values() if "pop" in v), "with population;", sum(1 for v in out.values() if v.get("subsistence_per_1000") is not None), "with benefits")
 
 
-if __name__ == "__main__":
+def history(raw):
+    p = os.path.join(IN, "latvia", "lv_data.json"); lv = json.load(open(p, encoding="utf-8"))
+    cats, labels, val = jsonstat(os.path.join(raw, "lv_ird041_all.json"))
+    pop = lambda c, y: val(AREA=c, AGE="TOTAL", SEX=cats["SEX"][0], ContentsCode=cats["ContentsCode"][0], TIME=y) if c in cats["AREA"] else None
+    for code, x in lv["data"].items():
+        py = {}
+        for y in cats["TIME"]:
+            v = pop("LV0038001", y) if code == "LV0038000" else pop(code, y)
+            if v: py[y] = v
+        x["pop_years"] = py
+    c2, l2, v2 = jsonstat(os.path.join(raw, "lv_pps040_all.json"))
+    child = next(k for k, v in l2["RECIPIENT"].items() if v == "Children")
+    means = next(k for k, v in l2["ASSISTANCE"].items() if v.strip(". …") == "basic benefits")
+    a = lambda c, y: (v2(ContentsCode=c2["ContentsCode"][0], RECIPIENT=child, ASSISTANCE=means, AREA=c, TIME=y) or 0) if c in c2["AREA"] else 0
+    for code, x in lv["data"].items():
+        if not x.get("children") or not x.get("pop"): continue
+        out = {}
+        for y in c2["TIME"]:
+            n = max(a("LV0038000", y) + a("LV0055000", y), a("LV0038001", y)) if code == "LV0038000" else a(code, y)
+            # the latest year as on the site (children at the start of the next year); earlier ones from the change in population
+            kids = x["children"] if y == c2["TIME"][-1] else x["children"] * (x["pop_years"].get(str(int(y) + 1)) or x["pop"]) / x["pop"]
+            if code in c2["AREA"] or code == "LV0038000": out[y] = round(100 * n / kids, 2)
+        x["pov_years"] = out
+    json.dump(lv, open(p, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+    print("Latvia history:", sum(1 for x in lv["data"].values() if x.get("pov_years")), "with poverty years")
+    p = os.path.join(IN, "estonia", "ee_data.json"); ee = json.load(open(p, encoding="utf-8"))
+    names = {key(x["name"]): k for k, x in ee["data"].items()}
+    def match(label):
+        lab = label.strip(". ")
+        base = re.sub(r"\s+(city|rural municipality)$", "", lab)
+        for k, x in ee["data"].items():
+            if lab == "Tallinn" and x["name"] == "Tallinn": return k
+            n = re.sub(r"\s+(vald|linn)$", "", x["name"])
+            kind = "city" if x["name"].endswith("linn") else "rural municipality"
+            if key(n + kind) == key(lab): return k
+        return None
+    cats, labels, val = jsonstat(os.path.join(raw, "ee_rv0240_all.json"))
+    popy = {}
+    for code, lab in labels["Elukoht"].items():
+        k = match(lab) or ("321" if lab.strip(". ") == "Toila rural municipality" else None)
+        if not k: continue
+        for y in cats["Aasta"]:
+            v = val(Sugu=cats["Sugu"][0], Elukoht=code, Aasta=y, Vanus=cats["Vanus"][0])
+            if v: popy.setdefault(k, {}); popy[k][y] = popy[k].get(y, 0) + v
+    c2, l2, v2 = jsonstat(os.path.join(raw, "ee_sk410_all.json"))
+    for code, lab in l2["Piirkond/Haldusüksus"].items():
+        k = match(lab)
+        if not k: continue
+        out = {}
+        for y in c2["Aasta"]:
+            if k == "321":
+                n = [v2(Aasta=y, **{"Piirkond/Haldusüksus": c, "Näitaja": "2"}) for c in ("321", "803")]
+                if int(y) >= 2017 and n[0] is not None and popy[k].get(y): out[y] = round(1000 * sum(v or 0 for v in n) / popy[k][y], 1)
+            else:
+                v = v2(Aasta=y, **{"Piirkond/Haldusüksus": code, "Näitaja": "5"})
+                if v is not None: out[y] = v
+        ee["data"][k]["subsistence_years"] = out
+    # Kohtla-Järve's 2026 count leaves out Toila (no 2026 figure for Toila): its 2026 population is incomplete, and its
+    # latest rate uses both places' populations at the start of that year instead.
+    popy["321"].pop("2026", None)
+    y = max(ee["data"]["321"]["subsistence_years"]); ee["data"]["321"]["subsistence_per_1000"] = ee["data"]["321"]["subsistence_years"][y]
+    for k, x in ee["data"].items(): x["pop_years"] = popy.get(k, {})
+    json.dump(ee, open(p, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+    print("Estonia history:", sum(1 for x in ee["data"].values() if x.get("subsistence_years")), "with benefit years;", sum(1 for x in ee["data"].values() if x.get("pop_years")), "with population years")
+
+
+if __name__ == "__main__" and sys.argv[1] == "--history":
+    history(sys.argv[2])
+elif __name__ == "__main__":
     dirs = sys.argv[1:]
     latvia(dirs); estonia(dirs)

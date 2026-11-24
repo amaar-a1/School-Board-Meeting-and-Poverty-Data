@@ -97,5 +97,23 @@ def main(*args):
     print(sum((x["basic"] or 0) + (x["upper"] or 0) for k, x in data.items() if not k.startswith("_")), sum(x["children"] or 0 for k, x in data.items() if not k.startswith("_")))
 
 
-if __name__ == "__main__":
+def history(path):
+    """Population on 1 January and pupils (basic school plus upper secondary, as on the site) for every year SURS
+    2640010S has, from the all-years download (fetch round 47): python3 data-prep/prep_slovenia.py --history FILE"""
+    cats, labels, val = jstat(path)
+    M = {labels["MERITVE"][m]: m for m in cats["MERITVE"]}
+    p = os.path.join(OUT, "svn_data.json"); data = json.load(open(p, encoding="utf-8"))
+    for o, x in data.items():
+        if o.startswith("_") or o not in cats["OBČINE"]: continue
+        g = lambda m, y: val(MERITVE=M[m], OBČINE=o, LETO=y)
+        x["pop_years"] = {y: g("Population - Total - 1 January", y) for y in cats["LETO"] if g("Population - Total - 1 January", y)}
+        x["pupil_years"] = {y: g("Number of pupils", y) + g("Number of upper secondary school pupils (by residence)", y) for y in cats["LETO"]
+                            if g("Number of pupils", y) is not None and g("Number of upper secondary school pupils (by residence)", y) is not None}
+    json.dump(data, open(p, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+    print(sum(1 for x in data.values() if isinstance(x, dict) and x.get("pupil_years")), "municipalities with pupils by year")
+
+
+if __name__ == "__main__" and sys.argv[1] == "--history":
+    history(sys.argv[2])
+elif __name__ == "__main__":
     main(*sys.argv[1:])

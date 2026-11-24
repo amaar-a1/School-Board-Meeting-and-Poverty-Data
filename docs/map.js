@@ -745,7 +745,7 @@
         `<span class="map-faded">Enrollment is counted differently from country to country (pupils at the place's schools, or pupils living there; some count only primary schools): see each view's note. Where no count is published, the figure is an estimate (school-age children living there), marked in the tooltip</span>`);
     if (metricNow() === "change")
       items.push(`<span><i style="background:${NO_DATA}"></i>Only one poverty year published</span>`,
-        `<span class="map-faded">The change between the earliest and latest years in the place's Poverty by year column, in percentage points of its own measure. Only some countries publish more than one year (Malaysia, Spain, Mexico, the Nordic countries, the UK and others); the years and measures differ, so compare places within a country</span>`);
+        `<span class="map-faded">The change between the earliest and latest years in the place's Poverty by year column, in percentage points of its own measure. Only some countries publish more than one year (the US, the UK, Germany, Spain, Mexico, the Philippines, Malaysia, Portugal, Czechia, the Baltic countries and others); the years and measures differ, so compare places within a country</span>`);
     if (YEAR_COL[metricNow()])
       items.push(`<span><i style="background:${NO_DATA}"></i>No figure for ${selectedYear() || "that year"}</span>`,
         `<span class="map-faded">${metricNow() === "povYear" ? "Each place's own poverty measure" : metricNow() === "enrYear" ? "Pupils, as each country counts them" : "Public schools' share of pupils"} in ${selectedYear() || "the chosen year"}. Only some countries publish several years; pick the year above, or press Play to step through them</span>`);
@@ -754,7 +754,7 @@
         `<span class="map-faded">The change in public schools' share of pupils between the earliest and latest years given, in percentage points. So far for Indonesia (2021–2025)</span>`);
     if (["changeEnr", "changePop"].includes(metricNow()))
       items.push(`<span><i style="background:${NO_DATA}"></i>Only one year published</span>`,
-        `<span class="map-faded">The change in ${metricNow() === "changeEnr" ? "enrollment" : "population"} between the earliest and latest years given, in percent. So far for ${metricNow() === "changeEnr" ? "Malaysia (2017–2025) and Indonesia (2021–2025)" : "Malaysia (2020–2026) and Paraguay (2015–2025, projections)"}</span>`);
+        `<span class="map-faded">The change in ${metricNow() === "changeEnr" ? "enrollment" : "population"} between the earliest and latest years given, in percent. So far for ${metricNow() === "changeEnr" ? "the US (2018–2023), Indonesia, Malaysia, Slovenia, South Korea, Lithuania and Georgia" : "Portugal, Slovenia, Paraguay (projections), Malaysia, Georgia and the Baltic countries"}</span>`);
     if (metricNow() === "perYear")
       items.push(`<span><i style="background:${NO_DATA}"></i>Meetings found, but no dates to count years from</span>`,
         `<span class="map-faded">Meetings found divided by the years since the first one found (from the recordings' dates), so a council that began posting recently isn't ranked below one with a long archive</span>`);

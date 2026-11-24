@@ -498,6 +498,16 @@ def years_text(d):
     return "; ".join(f"{y}: {v}" for y, v in sorted((d or {}).items()) if v is not None)
 
 
+def history_cols(x, pct=True):
+    """The "... by year" columns from a place's stored series (pov_years, pupil_years, pop_years, public_years)."""
+    out = {}
+    if x.get("pov_years"): out["Poverty by year"] = "; ".join(f"{y}: {v}%" if pct else f"{y}: {v}" for y, v in sorted(x["pov_years"].items()))
+    if x.get("pupil_years"): out["Enrollment by year"] = years_text(x["pupil_years"])
+    if x.get("pop_years"): out["Population by year"] = years_text(x["pop_years"])
+    if x.get("public_years"): out["Public share by year"] = "; ".join(f"{y}: {v:.1f}%" for y, v in sorted(x["public_years"].items()))
+    return out
+
+
 def write(cc, key, rows, feats):
     meetings(cc, "")
     own = owners(cc, rows)
@@ -1226,7 +1236,8 @@ def portugal():
         region = PT_DIST.get(code[:2]) or ("Açores" if code[:2] >= "41" else "")
         did = f"PT-{code}"
         rsi = x.get("rsi_per1000")
-        rows.append({"District": x["name"], "Region": region, "Population": round(pop) if pop else "",
+        hx = {"pov_years": {y: f"{v / 10:.2f}" for y, v in (x.get("rsi_years") or {}).items()}, "pop_years": {y: round(v) for y, v in (x.get("pop_years") or {}).items()}}
+        rows.append({**history_cols(hx), "District": x["name"], "Region": region, "Population": round(pop) if pop else "",
                      "Poverty rate (all ages)": f"{rsi / 10:.2f}%" if rsi is not None else "",
                      "Poverty note": f"Stand-in: people receiving the social insertion income (rendimento social de inserção), Portugal's minimum-income benefit, "
                                      f"per 100 people of working age, {x.get('rsi_per1000_year', '')} (INE, from Social Security records); Portugal publishes no poverty rate by municipality",
@@ -1463,10 +1474,11 @@ def latvia():
         did = f"LV-{code[2:]}"
         rate = 100 * x["child_assist"] / x["children"] if x.get("children") else None
         alts = [name] + ([name.replace("novads", "novada")] if not city else [name + "s"])
-        rows.append({"District": name, "Region": "State city" if city else "Municipality", "Population": round(x["pop"]) if x.get("pop") else "",
+        rows.append({**history_cols(x), "District": name, "Region": "State city" if city else "Municipality", "Population": round(x["pop"]) if x.get("pop") else "",
                      "Percentage of Children in Low Income": f"{rate:.2f}%" if rate is not None else "",
                      "Poverty note": (f"Stand-in: children in households receiving the basic means-tested benefits (guaranteed minimum income, housing benefit) during {x['assist_year']}, per 100 children aged 0–17 "
-                                      f"(start of {x['pop_year']}) (Official Statistics Portal PPS040, IRD041); Latvia publishes no child poverty rate by municipality"),
+                                      f"(start of {x['pop_year']}) (Official Statistics Portal PPS040, IRD041); Latvia publishes no child poverty rate by municipality"
+                                      + ("; for earlier years, children are estimated from the change in total population" if x.get("pov_years") else "")),
                      "Children under 18": x.get("children") or "",
                      "Enrollment": x.get("pupils", ""), "Enrollment year": f"{lv['pupils_date']} (grades 1–12, all schools in the municipality)" if x.get("pupils") else "",
                      "Public school enrollment": x.get("public", ""),
@@ -1497,7 +1509,8 @@ def estonia():
         per1000 = x.get("subsistence_per_1000")
         base = re.sub(r"\s+(vald|linn)$", "", name)
         alts = [name] + ([base + " valla", base + " vallavolikogu"] if name.endswith("vald") else [base + " linna", base + " linnavolikogu"] if name.endswith("linn") else [name])
-        rows.append({"District": name, "Region": x.get("county", "").replace(" county", " County"), "Population": round(x["pop"]) if x.get("pop") else "",
+        hx = {**x, "pov_years": {y: f"{v / 120:.2f}" for y, v in (x.get("subsistence_years") or {}).items()}}
+        rows.append({**history_cols(hx), "District": name, "Region": x.get("county", "").replace(" county", " County"), "Population": round(x["pop"]) if x.get("pop") else "",
                      "Poverty rate (all ages)": f"{per1000 / 120:.2f}%" if per1000 is not None else "",
                      "Poverty note": (f"Stand-in: subsistence-benefit applications granted in {x['subsistence_year']}, {per1000:g} per 1,000 residents, shown per 100 residents in an "
                                       f"average month (divided by 12); Estonia's minimum-income benefit, paid monthly by the municipality (Statistics Estonia SK410). "
@@ -1603,7 +1616,7 @@ def slovenia():
         dens = x["pop"] / x["area"] if x.get("pop") and x.get("area") else 0
         rate = x.get("stand_in")
         pupils = (x.get("basic") or 0) + (x.get("upper") or 0)
-        rows.append({"District": x["name"], "Region": "Urban municipality" if x["name"] in URBAN else "Municipality", "Population": x.get("pop") or "",
+        rows.append({**history_cols(x), "District": x["name"], "Region": "Urban municipality" if x["name"] in URBAN else "Municipality", "Population": x.get("pop") or "",
                      "Poverty rate (all ages)": f"{rate:.1f}%" if rate is not None else "",
                      "Poverty note": x.get("stand_in_note", ""),
                      "Children under 18": x.get("children") or "",
@@ -1718,7 +1731,7 @@ def lithuania():
         did = f"LTU-{code}"
         dens = x["pop"] / area[did] if x.get("pop") and area.get(did) else 0
         city = " m. " in x["name"]
-        rows.append({"District": re.sub(r" Municipality$", "", x.get("en") or x["name"]), "_names": [yt_name(x["name"]), x["name"]],
+        rows.append({**history_cols(x), "District": re.sub(r" Municipality$", "", x.get("en") or x["name"]), "_names": [yt_name(x["name"]), x["name"]],
                      "Region": "City municipality" if city else "District or other municipality", "Population": x.get("pop") or "",
                      "Poverty rate (all ages)": f"{x['poverty']:.1f}%" if x.get("poverty") is not None else "",
                      "Poverty note": (f"At-risk-of-poverty rate, all ages, {yrs['poverty']} (Statistics Lithuania, small-area estimate: people below 60% of the national median "
@@ -1803,7 +1816,7 @@ def south_korea():
         m = x.get("meetings") or {}
         n = m.get("n", 0)
         latest, years = date_summary(m.get("titles", [])) if n else ("", "")
-        rows.append({"District": f"{x['en']} ({ko})", "_names": [ko, x["en"]], "Region": x["kind"], "Population": x["pop"],
+        rows.append({**history_cols(x), "District": f"{x['en']} ({ko})", "_names": [ko, x["en"]], "Region": x["kind"], "Population": x["pop"],
                      "Poverty rate (all ages)": f"{x['rate']:.1f}%",
                      "Poverty note": (f"Stand-in: recipients of the National Basic Livelihood Security system (Korea's means-tested minimum income), {x['recipients']:,} people "
                                       f"in {x['households']:,} households, per 100 residents, 2025 (Ministry of Health and Welfare). Population is the ministry's recipients over "
@@ -1855,7 +1868,7 @@ def georgia():
         mt = x.get("meetings") or {}
         n, typ, titles = _ge_meetings(mt.get("videos", [])) if mt.get("url") else (0, "", [])
         latest, years = date_summary(titles) if n else ("", "")
-        rows.append({"District": x["name"], "_names": [x["name"], x["ka"]], "Region": "Self-governing city" if x.get("city") else "Municipality", "Population": x.get("pop") or "",
+        rows.append({**history_cols(x), "District": x["name"], "_names": [x["name"], x["ka"]], "Region": "Self-governing city" if x.get("city") else "Municipality", "Population": x.get("pop") or "",
                      "Poverty rate (all ages)": f"{rate:.1f}%" if rate is not None else "",
                      "Poverty note": (f"Stand-in: families registered in the Targeted Social Assistance database and receiving the subsistence allowance, end of {x['tsa_year']} "
                                       f"({x['tsa']:,}; Social Service Agency via Geostat), per 100 residents (Geostat, 1 January {x['pop_year']}). It counts families, not people. "

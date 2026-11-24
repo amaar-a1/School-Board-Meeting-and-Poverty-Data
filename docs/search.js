@@ -94,11 +94,14 @@
       stat("Enrollment", isNaN(enr) ? "–" : enr.toLocaleString(), isNaN(enr) ? "not reported" : "students") +
       stat("Locale", r.Locale || "–", "") + `</div>` +
       (note ? `<p class="note">${esc(note)}</p>` : "") +
+      `<div class="hist find-hist" hidden></div>` +
       `<div class="find-actions"><button type="button" data-act="map">Show on map</button>` +
       `<button type="button" data-act="table">Show in data table</button>` +
       `<button type="button" data-act="state">View ${esc(where)}</button>` +
       `<button type="button" data-act="compare">Compare with another place</button></div>`;
     $("find-card").hidden = false;
+    // Its own lines over time (poverty, enrollment, population, meetings), where it has more than one year.
+    if (window.SiteHistory) window.SiteHistory.renderPlaces($("find-card").querySelector(".find-hist"), [{ name: r.District, row: r }], { title: "Over time" });
   }
 
   function stat(label, value, sub) {
