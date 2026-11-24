@@ -1,0 +1,327 @@
+{
+ "LKA-49849456": {
+  "name": "Jaffna",
+  "province": "Northern",
+  "pov": 25.8,
+  "pov_old": 9.1,
+  "poor": 157800,
+  "pop": 594751,
+  "ages": {
+   "05": 44722,
+   "10": 54769,
+   "15": 58101
+  }
+ },
+ "LKA-65995152": {
+  "name": "Kilinochchi",
+  "province": "Northern",
+  "pov": 26.4,
+  "pov_old": 7.0,
+  "poor": 32400,
+  "pop": 136710,
+  "ages": {
+   "05": 12685,
+   "10": 13528,
+   "15": 13252
+  }
+ },
+ "LKA-40954295": {
+  "name": "Mannar",
+  "province": "Northern",
+  "pov": 8.0,
+  "pov_old": 1.3,
+  "poor": 8700,
+  "pop": 123756,
+  "ages": {
+   "05": 8839,
+   "10": 10741,
+   "15": 10818
+  }
+ },
+ "LKA-88006826": {
+  "name": "Mullaitivu",
+  "province": "Northern",
+  "pov": 44.5,
+  "pov_old": 14.3,
+  "poor": 42900,
+  "pop": 122619,
+  "ages": {
+   "05": 9562,
+   "10": 10466,
+   "15": 10749
+  }
+ },
+ "LKA-81493503": {
+  "name": "Vavuniya",
+  "province": "Northern",
+  "pov": 13.9,
+  "pov_old": 5.5,
+  "poor": 25300,
+  "pop": 172312,
+  "ages": {
+   "05": 14409,
+   "10": 16690,
+   "15": 19105
+  }
+ },
+ "LKA-70587100": {
+  "name": "Galle",
+  "province": "Southern",
+  "pov": 13.2,
+  "pov_old": 3.0,
+  "poor": 145700,
+  "pop": 1097372,
+  "ages": {
+   "05": 86746,
+   "10": 93589,
+   "15": 94725
+  }
+ },
+ "LKA-63567317": {
+  "name": "Hambantota",
+  "province": "Southern",
+  "pov": 13.6,
+  "pov_old": 1.1,
+  "poor": 87700,
+  "pop": 671418,
+  "ages": {
+   "05": 49839,
+   "10": 48934,
+   "15": 52463
+  }
+ },
+ "LKA-20798634": {
+  "name": "Matara",
+  "province": "Southern",
+  "pov": 11.1,
+  "pov_old": 2.3,
+  "poor": 93700,
+  "pop": 837889,
+  "ages": {
+   "05": 55683,
+   "10": 58870,
+   "15": 60266
+  }
+ },
+ "LKA-43542612": {
+  "name": "Ampara",
+  "province": "Eastern",
+  "pov": 17.2,
+  "pov_old": 2.8,
+  "poor": 122400,
+  "pop": 744551,
+  "ages": {
+   "05": 74786,
+   "10": 78272,
+   "15": 80955
+  }
+ },
+ "LKA-24737301": {
+  "name": "Anuradhapura",
+  "province": "North Central",
+  "pov": 8.1,
+  "pov_old": 0.9,
+  "poor": 72700,
+  "pop": 960080,
+  "ages": {
+   "05": 84445,
+   "10": 85973,
+   "15": 87598
+  }
+ },
+ "LKA-06125758": {
+  "name": "Badulla",
+  "province": "Uva",
+  "pov": 32.3,
+  "pov_old": 7.1,
+  "poor": 276900,
+  "pop": 872307,
+  "ages": {
+   "05": 70997,
+   "10": 76093,
+   "15": 71456
+  }
+ },
+ "LKA-08409756": {
+  "name": "Batticaloa",
+  "province": "Eastern",
+  "pov": 20.8,
+  "pov_old": 5.0,
+  "poor": 117500,
+  "pop": 595918,
+  "ages": {
+   "05": 52645,
+   "10": 59672,
+   "15": 59917
+  }
+ },
+ "LKA-86771482": {
+  "name": "Monaragala",
+  "province": "Uva",
+  "pov": 21.0,
+  "pov_old": 5.6,
+  "poor": 101600,
+  "pop": 527585,
+  "ages": {
+   "05": 51862,
+   "10": 51816,
+   "15": 55842
+  }
+ },
+ "LKA-07772347": {
+  "name": "Polonnaruwa",
+  "province": "North Central",
+  "pov": 17.0,
+  "pov_old": 4.6,
+  "poor": 72200,
+  "pop": 447530,
+  "ages": {
+   "05": 33912,
+   "10": 34338,
+   "15": 35153
+  }
+ },
+ "LKA-34577119": {
+  "name": "Colombo",
+  "province": "Western",
+  "pov": 2.3,
+  "pov_old": 0.3,
+  "poor": 54800,
+  "pop": 2375415,
+  "ages": {
+   "05": 138608,
+   "10": 148703,
+   "15": 161884
+  }
+ },
+ "LKA-15205943": {
+  "name": "Gampaha",
+  "province": "Western",
+  "pov": 5.7,
+  "pov_old": 1.0,
+  "poor": 133600,
+  "pop": 2436142,
+  "ages": {
+   "05": 172231,
+   "10": 184147,
+   "15": 196570
+  }
+ },
+ "LKA-16577727": {
+  "name": "Kalutara",
+  "province": "Western",
+  "pov": 12.2,
+  "pov_old": 2.7,
+  "poor": 153800,
+  "pop": 1305784,
+  "ages": {
+   "05": 102791,
+   "10": 106146,
+   "15": 104215
+  }
+ },
+ "LKA-14463175": {
+  "name": "Kegalle",
+  "province": "Sabaragamuwa",
+  "pov": 20.8,
+  "pov_old": 5.3,
+  "poor": 180700,
+  "pop": 870476,
+  "ages": {
+   "05": 58311,
+   "10": 60315,
+   "15": 59990
+  }
+ },
+ "LKA-89411826": {
+  "name": "Kurunegala",
+  "province": "North Western",
+  "pov": 12.5,
+  "pov_old": 2.0,
+  "poor": 209200,
+  "pop": 1768156,
+  "ages": {
+   "05": 140401,
+   "10": 144977,
+   "15": 146235
+  }
+ },
+ "LKA-67365203": {
+  "name": "Puttalam",
+  "province": "North Western",
+  "pov": 10.5,
+  "pov_old": 1.4,
+  "poor": 85200,
+  "pop": 818816,
+  "ages": {
+   "05": 66629,
+   "10": 73369,
+   "15": 72874
+  }
+ },
+ "LKA-01292339": {
+  "name": "Ratnapura",
+  "province": "Sabaragamuwa",
+  "pov": 24.9,
+  "pov_old": 6.9,
+  "poor": 287300,
+  "pop": 1145423,
+  "ages": {
+   "05": 93098,
+   "10": 94883,
+   "15": 100210
+  }
+ },
+ "LKA-57561533": {
+  "name": "Kandy",
+  "province": "Central",
+  "pov": 14.3,
+  "pov_old": 3.0,
+  "poor": 204700,
+  "pop": 1461895,
+  "ages": {
+   "05": 112233,
+   "10": 120085,
+   "15": 118178
+  }
+ },
+ "LKA-51586292": {
+  "name": "Matale",
+  "province": "Central",
+  "pov": 19.6,
+  "pov_old": 3.9,
+  "poor": 99700,
+  "pop": 526870,
+  "ages": {
+   "05": 35692,
+   "10": 37061,
+   "15": 35930
+  }
+ },
+ "LKA-45336992": {
+  "name": "Nuwara Eliya",
+  "province": "Central",
+  "pov": 26.3,
+  "pov_old": 8.5,
+  "poor": 199100,
+  "pop": 725280,
+  "ages": {
+   "05": 64144,
+   "10": 65624,
+   "15": 56528
+  }
+ },
+ "LKA-63848263": {
+  "name": "Trincomalee",
+  "province": "Eastern",
+  "pov": 18.3,
+  "pov_old": 3.6,
+  "poor": 76300,
+  "pop": 442745,
+  "ages": {
+   "05": 40613,
+   "10": 45124,
+   "15": 45279
+  }
+ }
+}

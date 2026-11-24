@@ -144,6 +144,9 @@ def ages_rule(folder, data_file, frac, ages_text, where):
 # Indonesia: school ages 7-18 (SD, SMP, SMA); Paraguay: 6-17 (basic and secondary education).
 RULES["indonesia.csv"] = ages_rule("indonesia", "idn_data.json", {"05": 0.6, "10": 1, "15": 0.8}, "7–18", "regency or city")
 RULES["paraguay.csv"] = ages_rule("paraguay", "pry_data.json", {"05": 0.8, "10": 1, "15": 0.6}, "6–17", "district")
+# Rwanda: ages 7-18 (primary, lower and upper secondary); Sri Lanka: 5-17 (grades 1-13).
+RULES["rwanda.csv"] = ages_rule("rwanda", "rwa_data.json", {"05": 0.6, "10": 1, "15": 0.8}, "7–18", "district")
+RULES["sri_lanka.csv"] = ages_rule("sri_lanka", "lka_data.json", {"05": 1, "10": 1, "15": 0.6}, "5–17", "district")
 
 
 def my_rule():
@@ -159,6 +162,20 @@ def my_rule():
 
 
 RULES["malaysia.csv"] = my_rule()
+
+
+def cz_rule():
+    """Czechia: children of basic-school age (6-14) living in the municipality: its 2024 population times its region's
+    share of those ages (Eurostat, 1 January 2024); pupil counts by municipality aren't published as open data."""
+    p = os.path.join(HERE, "inputs", "czechia", "cze_data.json")
+    data = json.load(open(p, encoding="utf-8")) if os.path.exists(p) else {}
+    def rule(r):
+        x = data.get(r["District ID"]) or {}
+        return (x["kids6_14"], f"Estimate: children aged 6–14 (basic-school ages) living in the municipality: its 2024 population times {x['region']}'s share of those ages (Eurostat, 2024)") if x.get("kids6_14") else None
+    return rule
+
+
+RULES["czechia.csv"] = cz_rule()
 
 
 def run(fn):
