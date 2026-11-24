@@ -94,5 +94,22 @@ def pupils(d, out):
     print(found, "municipalities with pupils")
 
 
-if __name__ == "__main__":
+def history(d):
+    """Population at year end from 2011 (0008273, all years) and RSI beneficiaries per 1,000 people of working age from
+    2023 (0013420, all years; the series on the present regions starts then), from fetch round 47:
+    python3 data-prep/prep_portugal.py --history RAWDIR"""
+    p = os.path.join(HERE, "inputs", "portugal", "pt_ine.json"); out = json.load(open(p, encoding="utf-8"))
+    for v, key, keep in (("0008273", "pop_years", lambda r: r.get("dim_3") == "T" and r.get("dim_4") == "T"), ("0013420", "rsi_years", lambda r: True)):
+        x = json.load(open(os.path.join(d, f"pt_{v}_all.json"), encoding="utf-8"))[0]
+        for y, rows in x["Dados"].items():
+            for r in rows:
+                if len(r.get("geocod", "")) == 7 and r.get("valor") not in (None, "") and keep(r) and r["geocod"][-4:] in out:
+                    out[r["geocod"][-4:]].setdefault(key, {})[y] = float(r["valor"])
+    json.dump(out, open(p, "w", encoding="utf-8"), ensure_ascii=False)
+    print(sum(1 for m in out.values() if m.get("pop_years")), "with population by year;", sum(1 for m in out.values() if m.get("rsi_years")), "with RSI by year")
+
+
+if __name__ == "__main__" and sys.argv[1] == "--history":
+    history(sys.argv[2])
+elif __name__ == "__main__":
     main(sys.argv[1])

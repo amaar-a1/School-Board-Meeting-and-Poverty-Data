@@ -300,6 +300,10 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
     # Child poverty in earlier years (SAIPE 2019-2024; prep_us_poverty_history.py), for change over time.
     hist_path = os.path.join(os.path.dirname(saipe_path), "us_poverty_history.json")
     hist = json.load(open(hist_path, encoding="utf-8")) if os.path.exists(hist_path) else {}
+    # Enrollment in earlier years (NCES CCD 2018-2023; prep_us_enrollment_history.py), where the site's figure is NCES's 2023 count.
+    enr_path = os.path.join(os.path.dirname(saipe_path), "us_enrollment_history.json")
+    enr_hist = json.load(open(enr_path, encoding="utf-8")) if os.path.exists(enr_path) else {}
+    enr_years = lambda d: "; ".join(f"{y}: {n}" for y, n in sorted(enr_hist.get(d["leaid"], {}).items())) if enr_hist.get(d["leaid"], {}).get("2023") == d["enrollment"] else ""
     land_path = os.path.join(os.path.dirname(saipe_path), "us_district_land_km2.json")
     land = json.load(open(land_path, encoding="utf-8")) if os.path.exists(land_path) else {}
     with open(out_path, "w", newline="", encoding="utf-8") as f:
@@ -307,7 +311,7 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
         w.writerow(["District", "State", "County", "Available Board Meetings", "Children Ages 5-17", "Children Ages 5-17 in Poverty",
                     "Percentage of Children Ages 5-17 in Poverty", "Locale", "Enrollment", "District ID", "Notes",
                     "Other Board Meetings", "Other meetings source", "Latest meeting", "Meetings by year", "Population",
-                    "Public school enrollment", "Private school enrollment (within its borders)", "Land area (km²)", "Poverty by year"])
+                    "Public school enrollment", "Private school enrollment (within its borders)", "Land area (km²)", "Poverty by year", "Enrollment by year"])
         for d in districts:
             w.writerow([d["name"], d["state"], d["county"], d["meetings"], d["kids"], d["poor"], d["pct"], d["locale"], d["enrollment"], d["leaid"], d["note"],
                         other.get(d["leaid"], {}).get("Other Board Meetings", ""), other.get(d["leaid"], {}).get("Other meetings source", ""),
@@ -316,7 +320,7 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
                         d["enrollment"],   # NCES counts public schools only
                         private.get(d["leaid"], "") if d["enrollment"] != "" else "",
                         land.get(d["leaid"], ""),   # from the map borders (prep_us_area.py), for population density
-                        "; ".join(f"{y}: {v}%" for y, v in sorted(hist.get(d["leaid"], {}).items()))])
+                        "; ".join(f"{y}: {v}%" for y, v in sorted(hist.get(d["leaid"], {}).items())), enr_years(d)])
     with open(report_path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["CivicSearch name", "State", "Meetings", "Matched LEAID", "Matched district (Census name)", "How", "Distance km"])

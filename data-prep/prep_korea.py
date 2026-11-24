@@ -85,5 +85,24 @@ def main(pdf, meet, geo, pupils=None):
     print("pop", sum(x["pop"] for x in data.values()))
 
 
+def history(pupils):
+    """Adds every year of pupils (elementary, middle and high schools) to kor_data.json, from the same KESS file's sheet 01."""
+    import openpyxl
+    ws = openpyxl.load_workbook(pupils, read_only=True)["01"]
+    by = {}
+    for r in ws.iter_rows(min_row=4, values_only=True):
+        if r[0] and r[2] in ("초등학교", "중학교", "고등학교"):
+            d = by.setdefault(r[1], {}); d[str(int(r[0]))] = d.get(str(int(r[0])), 0) + int(r[7] or 0)
+    f = os.path.join(OUT, "kor_data.json")
+    data = json.load(open(f, encoding="utf-8"))
+    for ko, x in data.items():
+        short = next(p[1] for p in P if p[0] == ko).replace(" ", "")
+        x["pupil_years"] = dict(sorted(by.get(short, {}).items()))
+    json.dump(data, open(f, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    ys = sorted({y for x in data.values() for y in x["pupil_years"]})
+    print("Korea pupils by year:", ys[:1], "-", ys[-1:], sum(1 for x in data.values() if x["pupil_years"]), "provinces")
+
+
 if __name__ == "__main__":
+    if sys.argv[1] == "--history": history(sys.argv[2]); sys.exit()   # prep_korea.py --history KESS.xlsx
     main(*sys.argv[1:])

@@ -106,6 +106,8 @@
     if (!out) return;
     const [a, b] = picked;
     $("cmp-download").disabled = !(a && b);
+    const hist = $("cmp-history");
+    if (hist && window.SiteHistory) window.SiteHistory.renderPlaces(hist, [a, b].map((e) => e && { name: e.row.District, row: e.row }), { title: "Over time" });
     if (!a && !b) { out.innerHTML = `<p class="muted">Pick two places to compare them.</p>`; return; }
     const fa = a ? fields(a) : null, fb = b ? fields(b) : null;
     const rows = (fa || fb).map((f, i) => [f[0], fa && fa[i], fb && fb[i]]);

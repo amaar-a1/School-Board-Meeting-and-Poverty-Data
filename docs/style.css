@@ -264,3 +264,12 @@ body.embed-stats [data-view="stats"] .note { display: none; }
 .embed-full { font-size: .85rem; margin: 8px 0; }
 .map-year { display: inline-flex; gap: 6px; align-items: center; }
 .q-chip b::after { content: ":"; }
+
+/* Line graphs over time (history.js): a row of measure buttons above one chart. */
+.hist-pick { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+.hist-pick button { border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 4px 12px; border-radius: 999px; cursor: pointer; font: inherit; font-size: .9rem; }
+.hist-pick button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.hist { margin-top: 16px; }
+.hist-title { margin: 0; font-size: 1.05rem; }
+.chart-box.hist-box { height: 260px; }
+@media (max-width: 600px) { .chart-box.hist-box { height: 220px; } }

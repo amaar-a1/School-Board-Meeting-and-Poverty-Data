@@ -177,6 +177,8 @@
     const densPub = (r) => { const dn = densityOf(r); return { "People per km² (estimated)": isNaN(dn) ? "" : Math.round(dn * 10) / 10,
       "Public school enrollment": r["Public school enrollment"] ?? "", "Private school enrollment (within its borders)": r["Private school enrollment (within its borders)"] ?? "" }; };
     const pct = (v) => (String(v ?? "").trim() === "" ? "" : `${toNumber(v).toFixed(2)}%`);
+    // Enrollment, population and public schools' share by year, for the Trends tab's lines and each place's own.
+    const histCols = (r) => ({ "Enrollment by year": r["Enrollment by year"] ?? "", "Population by year": r["Population by year"] ?? "", "Public share by year": r["Public share by year"] ?? "" });
     datasets.forEach((d) => d.rows.forEach((r) => {
       const ca = d.country === "CA", fr = d.country === "FR", uk = d.country === "UK", ie = d.country === "IE", terr = !!d.state;
       const sp = d.simple;   // the Nordic countries and the Netherlands: municipalities, one shared layout
@@ -186,7 +188,7 @@
         [c.metric]: pct(r[sp.pov]), "Poverty measure": sp.measureColumn ? r[sp.measureColumn] : sp.measure, Children: r[sp.children] ?? "", Enrollment: r.Enrollment ?? "",
         Locale: r.Locale ? `${d.localePrefix || d.name}: ${r.Locale}` : "", "Other Board Meetings": "", [RANK]: r[RANK] ?? "", _rankEst: r._rankEst,
         ...densPub(r),
-        "Latest meeting": r["Latest meeting"] ?? "", "Meetings by year": r["Meetings by year"] ?? "", "Poverty by year": r["Poverty by year"] ?? "", "District ID": r["District ID"]
+        "Latest meeting": r["Latest meeting"] ?? "", "Meetings by year": r["Meetings by year"] ?? "", "Poverty by year": r["Poverty by year"] ?? "", ...histCols(r), "District ID": r["District ID"]
       });
       out.push({
         District: r.District,
@@ -203,7 +205,7 @@
         "Other Board Meetings": r["Other Board Meetings"] ?? "",   // DC, Hawaiʻi and Vermont boards' own sites
         ...densPub(r),
         [RANK]: r[RANK] ?? "", _rankEst: r._rankEst,
-        "Latest meeting": r["Latest meeting"] ?? "", "Meetings by year": r["Meetings by year"] ?? "", "Poverty by year": r["Poverty by year"] ?? "",
+        "Latest meeting": r["Latest meeting"] ?? "", "Meetings by year": r["Meetings by year"] ?? "", "Poverty by year": r["Poverty by year"] ?? "", ...histCols(r),
         "District ID": r["District ID"]
       });
     }));
@@ -532,13 +534,11 @@
     const meet = {}, withDates = rows.filter((r) => r["Meetings by year"]);
     const isUS = (r) => (r.Country || current.name) === "United States";
     withDates.forEach((r) => Object.entries(yearMap(r["Meetings by year"])).forEach(([y, n]) => { meet[y] = (meet[y] || 0) + n; }));
-    const pov = {}, povRows = rows.filter((r) => r["Poverty by year"]);
-    povRows.forEach((r) => Object.entries(yearMap(r["Poverty by year"])).forEach(([y, v]) => { (pov[y] = pov[y] || []).push(v); }));
     const draw = (id, type, labels, data, yTitle) => {
       if (trendCharts[id]) trendCharts[id].destroy();
       const accent = cssVar("--accent"), text = cssVar("--muted"), grid = cssVar("--border");
       trendCharts[id] = !labels.length ? null : new Chart($(id), { type,
-        data: { labels, datasets: [{ label: yTitle, data, backgroundColor: accent, borderColor: accent, tension: 0.2, pointRadius: 4 }] },
+        data: { labels, datasets: [{ label: yTitle, data, backgroundColor: accent, borderColor: accent }] },
         options: { maintainAspectRatio: false, plugins: { legend: { display: false } },
           scales: { x: { ticks: { color: text }, grid: { color: grid } }, y: { beginAtZero: true, title: { display: true, text: yTitle, color: text }, ticks: { color: text }, grid: { color: grid } } } } });
       $(id).closest(".chart-wrap").hidden = !labels.length;
@@ -551,22 +551,8 @@
             : ". US districts' dates are CivicSearch's monthly counts, which run from January 2025 to early 2026; elsewhere they're the dates in recordings' titles (undated recordings are left out). The current year is partial.")
           : ", from the dates in their recordings' titles (undated recordings are left out, and the current year is partial).")
       : "Meeting dates aren't available here: recordings without a date in their title can't be placed in a year.";
-    const py = Object.keys(pov).sort();
-    draw("trend-poverty", "line", py, py.map((y) => +(pov[y].reduce((a, b) => a + b, 0) / pov[y].length).toFixed(2)), "Average poverty rate (%)");
-    // In "All", each country's measure differs, so draw one line per country instead of one average.
-    if (current.combined && trendCharts["trend-poverty"]) {
-      const byC = {};
-      povRows.forEach((r) => Object.entries(yearMap(r["Poverty by year"])).forEach(([y, v]) => { ((byC[r.Country] = byC[r.Country] || {})[y] = byC[r.Country][y] || []).push(v); }));
-      const palette = ["#1f77b4", "#d62728", "#2ca02c", "#9467bd", "#ff7f0e", "#17becf"];
-      const ch = trendCharts["trend-poverty"];
-      ch.data.datasets = Object.entries(byC).map(([c, ys], i) => ({ label: c, borderColor: palette[i % palette.length], backgroundColor: palette[i % palette.length],
-        tension: 0.2, pointRadius: 4, spanGaps: true, data: py.map((y) => (ys[y] ? +(ys[y].reduce((a, b) => a + b, 0) / ys[y].length).toFixed(2) : null)) }));
-      ch.options.plugins.legend.display = true;
-      ch.update();
-    }
-    $("trend-poverty-note").textContent = py.length
-      ? `Average of the ${label}' rates each year (${povRows.length.toLocaleString()} ${label}; each country's own measure). Available for the UK, Germany, Finland, the Netherlands, Switzerland and New Zealand.`
-      : "Only one year of poverty figures is on the site for this view. Several years are available for the UK, Germany, Finland, the Netherlands, Switzerland and New Zealand.";
+    // Poverty, enrollment, public schools' share and population by year, as line graphs (history.js).
+    if (window.SiteHistory) window.SiteHistory.renderTrends(current, label);
   }
 
   const avg = (vals) => (vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : NaN);
