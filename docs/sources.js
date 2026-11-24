@@ -616,11 +616,11 @@ window.SOURCES = [
     group: "Indonesia: regencies and cities, poverty and population",
     items: [
       { title: "Poverty and population: Statistics Indonesia (BPS), 2020, as published in the World Bank's Indonesia Database for Policy and Economic Research (INDO-DAPOER), indicators SI.POV.NAPR.ZS and SP.POP.TOTL", url: "https://databank.worldbank.org/source/indonesia-database-for-policy-and-economic-research" },
-      { title: "Enrollment (estimated): WorldPop, Indonesia age and gender structures 2025 (R2025A, 1 km), children aged 7–18 summed over each border", url: "https://data.humdata.org/dataset/worldpop-age-and-gender-structures-2015-2030-idn" },
+      { title: "Enrollment: Ministry of Primary and Secondary Education (Kemendikdasmen), Portal Data, “Jumlah peserta didik menurut agama”, SD/MI and equivalent, 2025, by regency and city (public and private; religions added up)", url: "https://data.kemendikdasmen.go.id/dataset" },
       { title: "Borders: geoBoundaries (gbOpen) IDN ADM2 and ADM1, simplified; provinces by location", url: "https://www.geoboundaries.org/" },
       { title: "Meetings (stand-in): each regional council's (DPRD) YouTube channel (in the “Meetings source” column)", url: "https://www.youtube.com/" }
     ],
-    note: "Built by data-prep/prep_indonesia.py and data-prep/build_latam.py (indonesia). Renamed regencies are matched by hand: Pasir is now Paser, and Pontianak regency is now Mempawah."
+    note: "Built by data-prep/prep_indonesia.py and data-prep/build_latam.py (indonesia). Renamed regencies are matched by hand and shown under their current names: Pasir is now Paser, Pontianak regency Mempawah, Mamuju Utara Pasangkayu, Toba Samosir Toba, and Maluku Tenggara Barat Kepulauan Tanimbar."
   },
   {
     only: "Paraguay",
