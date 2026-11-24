@@ -1,0 +1,30 @@
+ERR in_dgi_search.html HTTP Error 503: Service Unavailable https://www.data.gov.in/search?title=udise%20district
+ERR in_dgi_api.json HTTP Error 503: Service Unavailable https://www.data.gov.in/backend/dms/v1/ogdp/catalog/search?query=udise%20enrolment%20district&format=json
+ERR in_dgi_cat.html HTTP Error 503: Service Unavailable https://www.data.gov.in/catalog/unified-district-information-system-education-plus-udise
+OK in_udise_reports.html 1301 https://udiseplus.gov.in/#/en/publication
+   b'<!doctype html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta http-equiv="Content-Type" content="text/html charset=UTF-8"/>\r\n  <meta charset="utf-8"/>\r\n  <meta http-equiv="Cache-Control" content="no-cache, no-'
+OK id_stat_home.html 120342 https://statistik.data.kemendikdasmen.go.id/
+   b'<!DOCTYPE html><html class="light" lang="id"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdn.data-portal.bela'
+  LINK /dataset/dataset-statistik
+ERR id_stat_old.html <urlopen error [Errno -2] Name or service not known> https://statistik.data.kemdikbud.go.id/
+OK id_pub.html 120342 https://statistik.data.kemendikdasmen.go.id/index.php/page/publikasi
+   b'<!DOCTYPE html><html class="light" lang="id"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdn.data-portal.bela'
+  LINK /dataset/dataset-statistik
+OK id_data_home.html 117207 https://data.kemendikdasmen.go.id/
+   b'<!DOCTYPE html><html class="light" lang="id"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdn.data-portal.bela'
+ERR id_pdsp.html <urlopen error [Errno -2] Name or service not known> https://pdsp.kemendikdasmen.go.id/
+ERR id_satudata.html <urlopen error [Errno -2] Name or service not known> https://satudata.kemendikdasmen.go.id/
+OK py_dgp_api.json 2638 https://www.datos.gov.py/api/3/action/package_search?q=matricula&rows=50
+   b'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\r\n<html xmlns="http://www.w3.org/1999/xhtml">\r\n<head>\r\n <link rel="stylesheet" '
+OK py_dgp_api2.json 2638 https://www.datos.gov.py/api/3/action/package_search?q=ministerio%20de%20educacion&rows=50
+   b'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\r\n<html xmlns="http://www.w3.org/1999/xhtml">\r\n<head>\r\n <link rel="stylesheet" '
+OK py_dgp_home.html 2638 https://www.datos.gov.py/
+   b'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\r\n<html xmlns="http://www.w3.org/1999/xhtml">\r\n<head>\r\n <link rel="stylesheet" '
+OK hdx_india_school_enrolment_district_udise.json 2331001 https://data.humdata.org/api/3/action/package_search?rows=15&q=india%20school%20enrolment%20district%20udise
+   b'{"help": "https://data.humdata.org/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 9, "facets": {}, "expanded": {}, "results": [{"archived": true, "creator_user_id": '
+OK hdx_indonesia_number_of_students_district.json 1516454 https://data.humdata.org/api/3/action/package_search?rows=15&q=indonesia%20number%20of%20students%20district
+   b'{"help": "https://data.humdata.org/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 18, "facets": {}, "expanded": {}, "results": [{"archived": false, "batch": "6cbb2bd'
+OK hdx_paraguay_matricula_escolar.json 5344 https://data.humdata.org/api/3/action/package_search?rows=15&q=paraguay%20matricula%20escolar
+   b'{"help": "https://data.humdata.org/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 1, "facets": {}, "expanded": {}, "results": [{"archived": true, "caveats": "Escasa '
+OK hdx_paraguay_education_district.json 1350695 https://data.humdata.org/api/3/action/package_search?rows=15&q=paraguay%20education%20district
+   b'{"help": "https://data.humdata.org/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 438, "facets": {}, "expanded": {}, "results": [{"archived": false, "batch": "6cbb2b'
