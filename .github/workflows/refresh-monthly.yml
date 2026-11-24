@@ -7,9 +7,6 @@ on:
   schedule:
     - cron: "41 3 4 * *"   # the 4th of each month
   workflow_dispatch:
-  push:   # TEMPORARY: a test run on this branch (60 channels); removed before merging
-    branches: [claude/features-refresh]
-    paths: [.github/workflows/refresh-monthly.yml, data-prep/refresh_monthly.py]
 
 permissions:
   contents: write
@@ -29,7 +26,7 @@ jobs:
       - name: Refresh
         env:
           REFRESH_SECONDS: "16200"
-        run: python3 data-prep/refresh_monthly.py --max-channels ${{ github.event_name == 'push' && '60' || '2400' }}
+        run: python3 data-prep/refresh_monthly.py --max-channels 2400
       - name: Keep the map files as they are
         run: git checkout -- docs/data/map
       - name: Commit refreshed data
