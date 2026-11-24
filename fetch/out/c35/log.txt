@@ -1,0 +1,266 @@
+OK ds.html 120342 https://data.kemendikdasmen.go.id/dataset
+   b'<!DOCTYPE html><html class="light" lang="id"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdn.data-portal.bela'
+  LINK /
+  LINK /data-induk
+  LINK /dataset/dataset-statistik
+  LINK /dataset/prioritas
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/1908-4a16cc138b61e751.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/2170a4aa-c5d4ae8e2e6183c4.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/3374-6adb576d1045d7c9.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/3794-4d73df1ee3dd1b8a.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/4791-f9d86ac7e312a197.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/4920-a85d8ffa1a32e342.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/4bd1b696-8a4ab4fdf0ae305a.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/5032-4edec009563b8889.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/7448-15d9650a636cb4f5.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/8500-01a63dafd809e317.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/8689-199428e2fc76d5ca.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/8863-4f21f1e558b83466.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/9838-651bb43bf49312e6.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/app/global-error-71424c110f0034ea.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/app/layout-f67a41f77dc3d8c5.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/app/not-found-cdaf33eb9b58b215.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/main-app-1a4be79557103ce7.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/polyfills-42372ed130431b0a.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/webpack-b7e8b891b14f5e9b.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/css/bacf8bcee543bbfd.css
+  LINK https://cdn.data-portal.belajar.id/website-assets/favicon/apple-touch-icon.png
+  LINK https://cdn.data-portal.belajar.id/website-assets/favicon/favicon-16x16.png
+  LINK https://cdn.data-portal.belajar.id/website-assets/favicon/favicon-32x32.png
+  LINK https://cdn.data-portal.belajar.id/website-assets/images/logo-kemdikbud.png
+  LINK https://cdn.data-portal.belajar.id/website-assets/images/logo-portal-data-primary-small.png
+  LINK https://cdn.data-portal.belajar.id/website-assets/images/placeholder.png
+  LINK https://cdn.data-portal.belajar.id/website-assets/manifest/manifest.json?version=532019e
+  LINK https://data.kemendikdasmen.go.id/dataset
+  LINK https://geoportal.data.kemendikdasmen.go.id/
+  LINK https://jendela.data.kemendikdasmen.go.id/?utm_source=portal-satu-data
+  LINK https://kemendikdasmen.go.id/?utm_source=portal-satu-data
+  LINK https://pusatinformasi.rumahpendidikan.kemendikdasmen.go.id/hc/id/categories/52400741782169-Portal-Data
+  LINK https://pusatinformasi.rumahpendidikan.kemendikdasmen.go.id/hc/id/categories/52400741782169-Portal-Data?utm_source=portal-satu-data
+  LINK https://pusdatin.dikdasmen.go.id/
+  LINK https://pusdatin.kemendikdasmen.go.id/?utm_source=portal-satu-data
+  LINK https://referensi.data.kemendikdasmen.go.id/?utm_source=portal-satu-data
+  LINK https://rumah.pendidikan.go.id/?utm_source=portal-satu-data
+  LINK https://sekolah.data.kemendikdasmen.go.id/?utm_source=portal-satu-data
+  LINK https://ult.kemendikdasmen.go.id/
+  LINK https://www.googletagmanager.com/gtag/js?id=G-86MHHDR63L
+  LINK mailto:pengaduan@kemendikdasmen.go.id
+  LINK mailto:pusdatin@kemendikdasmen.go.id
+OK ds.html_t_static_chunks_1908_4a16cc138b61e751_js.js 33703 https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/1908-4a16cc138b61e751.js
+   b'"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[1908],{5174:(e,t,n)=>{n.d(t,{A:()=>Z});var r,o,i,a,u,c,l,s=function(){return(s=Object.assign||function(e){for(var t,n=1,r=argument'
+OK ds.html_atic_chunks_2170a4aa_c5d4ae8e2e6183c4_js.js 361200 https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/2170a4aa-c5d4ae8e2e6183c4.js
+   b'"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[3524],{15967:(e,t,r)=>{r.d(t,{Wp:()=>ov,_h:()=>oo});var a,n,i,s,o,l,f,c,h,u,d,p,m,g,v,b,T,w,E,_,y,A,S,x,C,k,O,R,I,N,D,F,P,L,M,U,B,'
+OK ds.html_t_static_chunks_3374_6adb576d1045d7c9_js.js 49268 https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/3374-6adb576d1045d7c9.js
+   b'"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[3374],{1681:(t,e,r)=>{r.d(e,{t:()=>n});var i=r(98216);let n=new class extends i.Q{#t=!0;#e;#r;constructor(){super(),this.#r=t=>{if'
+OK ds.html_t_static_chunks_3794_4d73df1ee3dd1b8a_js.js 241388 https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/3794-4d73df1ee3dd1b8a.js
+   b'(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[3794],{42:(e,t,r)=>{"use strict";{let t=r(12699);e.exports=Array.isArray(t)?t:[t]}},145:(e,t)=>{"use strict";Object.defineProperty(t,"__esModul'
+OK ds.html_t_static_chunks_4791_f9d86ac7e312a197_js.js 12798 https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/4791-f9d86ac7e312a197.js
+   b'"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4791],{922:(e,t,o)=>{o.d(t,{Wx:()=>s});var i=o(12115),l=Object.defineProperty,n=new Map,d=new WeakMap,a=0,r=void 0;function s({thr'
+OK ds.html_t_static_chunks_4920_a85d8ffa1a32e342_js.js 12792 https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/4920-a85d8ffa1a32e342.js
+   b'"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4920],{53390:(e,t,o)=>{o.d(t,{$:()=>n,s:()=>s});var r=o(31967),a=o(9846),i=o(99190),s=class extends i.k{#e;#t;#o;#r;constructor(e)'
+OK dsstat.html 120342 https://statistik.data.kemendikdasmen.go.id/dataset/dataset-statistik
+   b'<!DOCTYPE html><html class="light" lang="id"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdn.data-portal.bela'
+  LINK /
+  LINK /data-induk
+  LINK /dataset/dataset-statistik
+  LINK /dataset/prioritas
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/1908-4a16cc138b61e751.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/2170a4aa-c5d4ae8e2e6183c4.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/3374-6adb576d1045d7c9.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/3794-4d73df1ee3dd1b8a.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/4791-f9d86ac7e312a197.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/4920-a85d8ffa1a32e342.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/4bd1b696-8a4ab4fdf0ae305a.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/5032-4edec009563b8889.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/7448-15d9650a636cb4f5.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/8500-01a63dafd809e317.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/8689-199428e2fc76d5ca.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/8863-4f21f1e558b83466.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/9838-651bb43bf49312e6.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/app/global-error-71424c110f0034ea.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/app/layout-f67a41f77dc3d8c5.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/app/not-found-cdaf33eb9b58b215.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/main-app-1a4be79557103ce7.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/polyfills-42372ed130431b0a.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/webpack-b7e8b891b14f5e9b.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/css/bacf8bcee543bbfd.css
+  LINK https://cdn.data-portal.belajar.id/website-assets/favicon/apple-touch-icon.png
+  LINK https://cdn.data-portal.belajar.id/website-assets/favicon/favicon-16x16.png
+  LINK https://cdn.data-portal.belajar.id/website-assets/favicon/favicon-32x32.png
+  LINK https://cdn.data-portal.belajar.id/website-assets/images/logo-kemdikbud.png
+  LINK https://cdn.data-portal.belajar.id/website-assets/images/logo-portal-data-primary-small.png
+  LINK https://cdn.data-portal.belajar.id/website-assets/images/placeholder.png
+  LINK https://cdn.data-portal.belajar.id/website-assets/manifest/manifest.json?version=532019e
+  LINK https://data.kemendikdasmen.go.id/dataset
+  LINK https://geoportal.data.kemendikdasmen.go.id/
+  LINK https://jendela.data.kemendikdasmen.go.id/?utm_source=portal-satu-data
+  LINK https://kemendikdasmen.go.id/?utm_source=portal-satu-data
+  LINK https://pusatinformasi.rumahpendidikan.kemendikdasmen.go.id/hc/id/categories/52400741782169-Portal-Data
+  LINK https://pusatinformasi.rumahpendidikan.kemendikdasmen.go.id/hc/id/categories/52400741782169-Portal-Data?utm_source=portal-satu-data
+  LINK https://pusdatin.dikdasmen.go.id/
+  LINK https://pusdatin.kemendikdasmen.go.id/?utm_source=portal-satu-data
+  LINK https://referensi.data.kemendikdasmen.go.id/?utm_source=portal-satu-data
+  LINK https://rumah.pendidikan.go.id/?utm_source=portal-satu-data
+  LINK https://sekolah.data.kemendikdasmen.go.id/?utm_source=portal-satu-data
+  LINK https://ult.kemendikdasmen.go.id/
+  LINK https://www.googletagmanager.com/gtag/js?id=G-86MHHDR63L
+  LINK mailto:pengaduan@kemendikdasmen.go.id
+  LINK mailto:pusdatin@kemendikdasmen.go.id
+OK dsstat.html_t_static_chunks_1908_4a16cc138b61e751_js.js 33703 https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/1908-4a16cc138b61e751.js
+   b'"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[1908],{5174:(e,t,n)=>{n.d(t,{A:()=>Z});var r,o,i,a,u,c,l,s=function(){return(s=Object.assign||function(e){for(var t,n=1,r=argument'
+OK dsstat.html_atic_chunks_2170a4aa_c5d4ae8e2e6183c4_js.js 361200 https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/2170a4aa-c5d4ae8e2e6183c4.js
+   b'"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[3524],{15967:(e,t,r)=>{r.d(t,{Wp:()=>ov,_h:()=>oo});var a,n,i,s,o,l,f,c,h,u,d,p,m,g,v,b,T,w,E,_,y,A,S,x,C,k,O,R,I,N,D,F,P,L,M,U,B,'
+OK dsstat.html_t_static_chunks_3374_6adb576d1045d7c9_js.js 49268 https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/3374-6adb576d1045d7c9.js
+   b'"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[3374],{1681:(t,e,r)=>{r.d(e,{t:()=>n});var i=r(98216);let n=new class extends i.Q{#t=!0;#e;#r;constructor(){super(),this.#r=t=>{if'
+OK dsstat.html_t_static_chunks_3794_4d73df1ee3dd1b8a_js.js 241388 https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/3794-4d73df1ee3dd1b8a.js
+   b'(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[3794],{42:(e,t,r)=>{"use strict";{let t=r(12699);e.exports=Array.isArray(t)?t:[t]}},145:(e,t)=>{"use strict";Object.defineProperty(t,"__esModul'
+OK dsstat.html_t_static_chunks_4791_f9d86ac7e312a197_js.js 12798 https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/4791-f9d86ac7e312a197.js
+   b'"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4791],{922:(e,t,o)=>{o.d(t,{Wx:()=>s});var i=o(12115),l=Object.defineProperty,n=new Map,d=new WeakMap,a=0,r=void 0;function s({thr'
+OK dsstat.html_t_static_chunks_4920_a85d8ffa1a32e342_js.js 12792 https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/4920-a85d8ffa1a32e342.js
+   b'"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4920],{53390:(e,t,o)=>{o.d(t,{$:()=>n,s:()=>s});var r=o(31967),a=o(9846),i=o(99190),s=class extends i.k{#e;#t;#o;#r;constructor(e)'
+OK ds_q.html 120442 https://data.kemendikdasmen.go.id/dataset?q=peserta+didik+kabupaten
+   b'<!DOCTYPE html><html class="light" lang="id"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://cdn.data-portal.bela'
+  LINK /
+  LINK /data-induk
+  LINK /dataset/dataset-statistik
+  LINK /dataset/prioritas
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/1908-4a16cc138b61e751.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/2170a4aa-c5d4ae8e2e6183c4.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/3374-6adb576d1045d7c9.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/3794-4d73df1ee3dd1b8a.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/4791-f9d86ac7e312a197.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/4920-a85d8ffa1a32e342.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/4bd1b696-8a4ab4fdf0ae305a.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/5032-4edec009563b8889.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/7448-15d9650a636cb4f5.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/8500-01a63dafd809e317.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/8689-199428e2fc76d5ca.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/8863-4f21f1e558b83466.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/9838-651bb43bf49312e6.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/app/global-error-71424c110f0034ea.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/app/layout-f67a41f77dc3d8c5.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/app/not-found-cdaf33eb9b58b215.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/main-app-1a4be79557103ce7.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/polyfills-42372ed130431b0a.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/webpack-b7e8b891b14f5e9b.js
+  LINK https://cdn.data-portal.belajar.id/website-assets/_next/static/css/bacf8bcee543bbfd.css
+  LINK https://cdn.data-portal.belajar.id/website-assets/favicon/apple-touch-icon.png
+  LINK https://cdn.data-portal.belajar.id/website-assets/favicon/favicon-16x16.png
+  LINK https://cdn.data-portal.belajar.id/website-assets/favicon/favicon-32x32.png
+  LINK https://cdn.data-portal.belajar.id/website-assets/images/logo-kemdikbud.png
+  LINK https://cdn.data-portal.belajar.id/website-assets/images/logo-portal-data-primary-small.png
+  LINK https://cdn.data-portal.belajar.id/website-assets/images/placeholder.png
+  LINK https://cdn.data-portal.belajar.id/website-assets/manifest/manifest.json?version=532019e
+  LINK https://data.kemendikdasmen.go.id/dataset
+  LINK https://geoportal.data.kemendikdasmen.go.id/
+  LINK https://jendela.data.kemendikdasmen.go.id/?utm_source=portal-satu-data
+  LINK https://kemendikdasmen.go.id/?utm_source=portal-satu-data
+  LINK https://pusatinformasi.rumahpendidikan.kemendikdasmen.go.id/hc/id/categories/52400741782169-Portal-Data
+  LINK https://pusatinformasi.rumahpendidikan.kemendikdasmen.go.id/hc/id/categories/52400741782169-Portal-Data?utm_source=portal-satu-data
+  LINK https://pusdatin.dikdasmen.go.id/
+  LINK https://pusdatin.kemendikdasmen.go.id/?utm_source=portal-satu-data
+  LINK https://referensi.data.kemendikdasmen.go.id/?utm_source=portal-satu-data
+  LINK https://rumah.pendidikan.go.id/?utm_source=portal-satu-data
+  LINK https://sekolah.data.kemendikdasmen.go.id/?utm_source=portal-satu-data
+  LINK https://ult.kemendikdasmen.go.id/
+  LINK https://www.googletagmanager.com/gtag/js?id=G-86MHHDR63L
+  LINK mailto:pengaduan@kemendikdasmen.go.id
+  LINK mailto:pusdatin@kemendikdasmen.go.id
+OK ds_q.html_t_static_chunks_1908_4a16cc138b61e751_js.js 33703 https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/1908-4a16cc138b61e751.js
+   b'"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[1908],{5174:(e,t,n)=>{n.d(t,{A:()=>Z});var r,o,i,a,u,c,l,s=function(){return(s=Object.assign||function(e){for(var t,n=1,r=argument'
+OK ds_q.html_atic_chunks_2170a4aa_c5d4ae8e2e6183c4_js.js 361200 https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/2170a4aa-c5d4ae8e2e6183c4.js
+   b'"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[3524],{15967:(e,t,r)=>{r.d(t,{Wp:()=>ov,_h:()=>oo});var a,n,i,s,o,l,f,c,h,u,d,p,m,g,v,b,T,w,E,_,y,A,S,x,C,k,O,R,I,N,D,F,P,L,M,U,B,'
+OK ds_q.html_t_static_chunks_3374_6adb576d1045d7c9_js.js 49268 https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/3374-6adb576d1045d7c9.js
+   b'"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[3374],{1681:(t,e,r)=>{r.d(e,{t:()=>n});var i=r(98216);let n=new class extends i.Q{#t=!0;#e;#r;constructor(){super(),this.#r=t=>{if'
+OK ds_q.html_t_static_chunks_3794_4d73df1ee3dd1b8a_js.js 241388 https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/3794-4d73df1ee3dd1b8a.js
+   b'(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[3794],{42:(e,t,r)=>{"use strict";{let t=r(12699);e.exports=Array.isArray(t)?t:[t]}},145:(e,t)=>{"use strict";Object.defineProperty(t,"__esModul'
+OK ds_q.html_t_static_chunks_4791_f9d86ac7e312a197_js.js 12798 https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/4791-f9d86ac7e312a197.js
+   b'"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4791],{922:(e,t,o)=>{o.d(t,{Wx:()=>s});var i=o(12115),l=Object.defineProperty,n=new Map,d=new WeakMap,a=0,r=void 0;function s({thr'
+OK ds_q.html_t_static_chunks_4920_a85d8ffa1a32e342_js.js 12792 https://cdn.data-portal.belajar.id/website-assets/_next/static/chunks/4920-a85d8ffa1a32e342.js
+   b'"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4920],{53390:(e,t,o)=>{o.d(t,{$:()=>n,s:()=>s});var r=o(31967),a=o(9846),i=o(99190),s=class extends i.k{#e;#t;#o;#r;constructor(e)'
+ERR ckan.json HTTP Error 404: Not Found https://data.kemendikdasmen.go.id/api/3/action/package_search?q=peserta%20didik&rows=50
+ERR ckan2.json HTTP Error 404: Not Found https://data.kemendikdasmen.go.id/api/3/action/package_list
+OK sekolah.html 173205 https://sekolah.data.kemendikdasmen.go.id/
+   b'<!DOCTYPE html><html lang="id" data-beasties-container><head><style type="text/css" data-primeng-style-id="layer-order">@layer tailwind-base,primeng,tailwind-utilities</style>\n\n  <!-- Google tag (gtag'
+  LINK /
+  LINK /assets/icons/apple-touch-icon.png
+  LINK /assets/images/apa-itu-sekolah-kita.webp
+  LINK /assets/images/hero-image.webp
+  LINK /assets/images/logo-rumah-pendidikan.png
+  LINK /assets/images/logo-sekolah-kita-white.svg
+  LINK /assets/images/logo-sekolah-kita.svg
+  LINK /assets/images/logo-tutwuri.webp
+  LINK /assets/images/perbandingan-sekolah.webp
+  LINK /assets/images/peta-sekolah.webp
+  LINK /assets/images/profil-sekolah.webp
+  LINK /favicon.ico
+  LINK /informasi-kontak
+  LINK /peta-sekolah
+  LINK /sandingkan
+  LINK /sekolah
+  LINK chunk-QUNLASX4.js
+  LINK https://fonts.googleapis.com
+  LINK https://fonts.gstatic.com
+  LINK https://kemendikdasmen.go.id/
+  LINK https://pusdatin.kemendikdasmen.go.id/
+  LINK https://rumah.pendidikan.go.id/
+  LINK https://sekolah.data.kemendikdasmen.go.id/
+  LINK https://www.facebook.com/pusdatinkemdikdasmen
+  LINK https://www.googletagmanager.com/gtag/js?id=G-JRBYLBF8K9
+  LINK https://www.instagram.com/pusdatin_kemendikdasmen/
+  LINK https://www.youtube.com/@Pusdatin.Kemendikdasmen
+  LINK https://x.com/pusdatin_dasmen
+  LINK main-55AIKZHM.js
+  LINK polyfills-B6TNHZQ6.js
+  LINK styles-FZFYETD7.css
+OK sekolah.html_main_55AIKZHM_js.js 1465590 https://sekolah.data.kemendikdasmen.go.id/main-55AIKZHM.js
+   b'import{$ as b,$a as se,$b as U,A as $n,Aa as Pm,Ab as j,Ac as zt,B as vc,Ba as Bm,Bb as W,Bc as dt,C as mr,Ca as $m,Cb as R,D as It,Da as Nm,Db as qm,Dc as nt,E as ro,Ea as zm,Eb as ki,Ec as gi,F as y'
+  API /v1/sekolah-service/referensi/bentuk-pendidikan
+  API /v1/sekolah-service/referensi/wilayah
+  API /v1/sekolah-service/sekolah/akreditasi
+  API /v1/sekolah-service/sekolah/cari-sekolah
+  API /v1/sekolah-service/sekolah/cari-sekolah-by-location
+  API /v1/sekolah-service/sekolah/detail
+  API /v1/sekolah-service/sekolah/full-detail
+  API /v1/sekolah-service/sekolah/peserta-didik
+  API /v1/sekolah-service/sekolah/ptk
+  API /v1/sekolah-service/sekolah/rapor
+  API /v1/sekolah-service/sekolah/rombongan-belajar
+  API /v1/sekolah-service/sekolah/sanitasi
+  API /v1/sekolah-service/sekolah/sarana-prasarana
+  API /v1/sekolah-service/sekolah/tik
+  HOST https://kemendikdasmen.go.id/
+  HOST https://pusdatin.kemendikdasmen.go.id/
+  HOST https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/
+  HOST https://sekolah.data.kemendikdasmen.go.id
+  HOST https://ult.kemendikdasmen.go.id
+OK sekolah.html_polyfills_B6TNHZQ6_js.js 34579 https://sekolah.data.kemendikdasmen.go.id/polyfills-B6TNHZQ6.js
+   b'var ce=globalThis;function te(t){return(ce.__Zone_symbol_prefix||"__zone_symbol__")+t}function ht(){let t=ce.performance;function n(I){t&&t.mark&&t.mark(I)}function a(I,s){t&&t.measure&&t.measure(I,s)'
+ERR jendela.html <urlopen error timed out> https://jendela.data.kemendikdasmen.go.id/
+OK referensi.html 8813 https://referensi.data.kemendikdasmen.go.id/
+   b'<!doctype html>\n<html lang="id">\n<head>\n    <meta charset="utf-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1">\n    <title>Data Referensi Pendidikan</title>\n    <link rel="'
+  LINK /
+  LINK /assets/css/data-pages.css
+  LINK /assets/css/global.css
+  LINK /assets/js/data-pages.js
+  LINK /assets/logo-header.webp
+  LINK /favicon.ico
+  LINK /kebahasaan/bahasadaerah
+  LINK /kebahasaan/komunitasbahasa
+  LINK /pengunjung/grafik
+  LINK /program/kesetaraan
+  LINK /program/keterampilan-kerja
+  LINK /program/paud
+  LINK /program/slb
+  LINK /pustaka
+  LINK /residu/tidak-aktif
+  LINK /residu/update
+  LINK /satpen/dikdas/000000/0
+  LINK /satpen/dikmas
+  LINK /satpen/dikmen/000000/0
+  LINK /satpen/dikti
+  LINK /satpen/paud/000000/0
+  LINK /yayasan
+  LINK https://vervalsp.data.kemdikbud.go.id/
+OK referensi.html__assets_js_data_pages_js.js 37987 https://referensi.data.kemendikdasmen.go.id/assets/js/data-pages.js
+   b"/* Shared page behaviors for data tables.\n * Each page module is guarded by its own table element ID.\n */\n\n/* Source: app/Views/yayasan/rekap.php */\n(() => {\n  const table = document.getElementById('y"
