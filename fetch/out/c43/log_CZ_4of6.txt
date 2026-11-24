@@ -1,0 +1,1043 @@
+CZ Liberec -> Statutární město Liberec 0
+CZ Zlín ->  
+CZ Frýdek-Místek -> Statutární město Frýdek-Místek 0
+CZ Mladá Boleslav ->  
+CZ Tábor ->  
+CZ Písek -> Zastupitelstvo města Písek 0
+CZ Uherské Hradiště ->  
+CZ Nový Jičín ->  
+CZ Litvínov -> Město Litvínov 0
+CZ Žďár nad Sázavou ->  
+CZ Náchod ->  
+CZ Hranice -> Město Hranice 0
+CZ Pelhřimov ->  
+CZ Rakovník ->  
+CZ Varnsdorf -> Město Varnsdorf 0
+CZ Klášterec nad Ohří ->  
+CZ Český Krumlov ->  
+CZ Čelákovice ->  
+CZ Vlašim -> Město Vlašim 0
+CZ Domažlice -> Mesto Domazlice 0
+CZ Veselí nad Moravou ->  
+CZ Přelouč ->  
+CZ Moravská Třebová ->  
+CZ Tišnov ->  
+CZ Polička -> Město Polička 0
+CZ Hořice -> Záznamy Zastupitelstva Hořice 0
+CZ Dubí ->  
+CZ Bystřice nad Pernštejnem ->  
+CZ Rychvald ->  
+CZ Český Brod ->  
+CZ Odry ->  
+CZ Broumov ->  
+CZ Sedlčany -> Město Sedlčany 0
+CZ Staré Město ->  
+CZ Odolena Voda ->  
+CZ Chrastava -> Město Chrastava 1
+CZ Kostelec nad Orlicí -> Město Kostelec nad Orlicí 0
+CZ Žamberk -> Město Žamberk 0
+CZ Týnec nad Sázavou ->  
+CZ Kunovice ->  
+CZ Zubří ->  
+CZ Horní Slavkov -> Město Horní Slavkov 0
+CZ Bakov nad Jizerou ->  
+CZ Polná -> Město Polná 0
+CZ Kamenice -> Město Česká Kamenice 0
+CZ Luhačovice ->  
+CZ Heřmanův Městec ->  
+CZ Těrlicko ->  
+CZ Protivín ->  
+CZ Dolní Břežany ->  
+CZ Adamov -> Město Adamov 0
+CZ Planá nad Lužnicí ->  
+CZ Dětmarovice ->  
+CZ Rožmitál pod Třemšínem -> Město Rožmitál pod Třemšínem 0
+CZ Slatiňany ->  
+CZ Borovany ->  
+CZ Mnichovice ->  
+CZ Jemnice ->  
+CZ Velké Bílovice ->  
+CZ Fryšták ->  
+CZ Mutěnice ->  
+CZ Rájec-Jestřebí ->  
+CZ Velká Bystřice ->  
+CZ Stod ->  
+CZ Libušín ->  
+CZ Štěpánov ->  
+CZ Moravany ->  
+CZ Rohatec ->  
+CZ Újezd u Brna -> Město Újezd u Brna 0
+CZ Trmice ->  
+CZ Sadská ->  
+CZ Jirny ->  
+CZ Štěpánkovice ->  
+CZ Smiřice ->  
+CZ Miroslav ->  
+CZ Bašť ->  
+CZ Křemže ->  
+CZ Starý Jičín ->  
+CZ Stará Ves nad Ondřejnicí ->  
+CZ Dolany ->  
+CZ Vnorovy ->  
+CZ Suchdol nad Odrou ->  
+CZ Ořechov -> Obec Ořechov 0
+CZ Úštěk ->  
+CZ Vřesina ->  
+CZ Jevíčko ->  
+CZ Litvínovice ->  
+CZ Kelč ->  
+CZ Dašice ->  
+CZ Dolní Dobrouč ->  
+CZ Rudolfov ->  
+CZ Ledenice ->  
+CZ Zbiroh ->  
+CZ Tovačov ->  
+CZ Hradištko ->  
+CZ Bohušovice nad Ohří ->  
+CZ Chlumčany ->  
+CZ Libiš ->  
+CZ Stráž nad Nisou ->  
+CZ Kryry ->  
+CZ Solnice ->  
+CZ Dobšice -> Zastupitelstvo OÚ Dobšice 0
+CZ Vikýřovice ->  
+CZ Plumlov ->  
+CZ Brandýsek ->  
+CZ Valašská Bystřice ->  
+CZ Pyšely ->  
+CZ Horní Benešov ->  
+CZ Markvartovice ->  
+CZ Měšice ->  
+CZ Hřebeč ->  
+CZ Novosedlice ->  
+CZ Šitbořice ->  
+CZ Horní Jelení ->  
+CZ Hroznětín ->  
+CZ Krhová ->  
+CZ Mikulášovice -> Město Mikulášovice 0
+CZ Boršov nad Vltavou ->  
+CZ Pchery ->  
+CZ Měřín ->  
+CZ Janovice -> Městys Vrchotovy Janovice 0
+CZ Květnice ->  
+CZ Lelekovice ->  
+CZ Kouřim -> Město Kouřim 0
+CZ Veřovice -> Obec Veřovice 0
+CZ Štíty ->  
+CZ Žandov ->  
+CZ Hněvotín ->  
+CZ Plesná ->  
+CZ Horní Cerekev ->  
+CZ Písek ->  
+CZ Brodek u Přerova ->  
+CZ Libáň ->  
+CZ Radnice ->  
+CZ Studenec ->  
+CZ Lidečko ->  
+CZ Nový Šaldorf-Sedlešovice ->  
+CZ Všestary ->  
+CZ Bohuslavice ->  
+CZ Lomnice nad Lužnicí -> Město Lomnice nad Lužnicí 0
+CZ Poličná ->  
+CZ Starý Kolín ->  
+CZ Všenory ->  
+CZ Bělá nad Radbuzou ->  
+CZ Medlov ->  
+CZ Nasavrky ->  
+CZ Staré Město ->  
+CZ Horní Moštěnice ->  
+CZ Švihov ->  
+CZ Žabčice ->  
+CZ Hostěradice ->  
+CZ Bavorov ->  
+CZ Žitenice ->  
+CZ Libeř ->  
+CZ Březová nad Svitavou ->  
+CZ Chvalčov ->  
+CZ Mýto -> Město Vysoké Mýto 0
+CZ Borek ->  
+CZ Stříbrná Skalice ->  
+CZ Čkyně ->  
+CZ Semice ->  
+CZ Lužec nad Vltavou ->  
+CZ Poběžovice ->  
+CZ Vítězná ->  
+CZ Lomnice -> Město Lomnice nad Lužnicí 0
+CZ Otice ->  
+CZ Loučovice ->  
+CZ Lipůvka ->  
+CZ Vlachovice ->  
+CZ Řehlovice ->  
+CZ Postupice ->  
+CZ Stěbořice ->  
+CZ Světice ->  
+CZ Dobroměřice ->  
+CZ Opařany ->  
+CZ Krouna ->  
+CZ Olbramovice ->  
+CZ Morávka ->  
+CZ Mšeno ->  
+CZ Předboj ->  
+CZ Kašperské Hory ->  
+CZ Nosislav ->  
+CZ Frymburk ->  
+CZ Nové Veselí ->  
+CZ Okrouhlice ->  
+CZ Světlá Hora ->  
+CZ Stráž ->  
+CZ Samotišky ->  
+CZ Petrovice -> Městská část Praha - Petrovice 0
+CZ Čížová ->  
+CZ Doloplazy ->  
+CZ Háj u Duchcova ->  
+CZ Moravičany ->  
+CZ Křepice ->  
+CZ Třebestovice -> Obec Třebestovice 0
+CZ Milíkov ->  
+CZ Brozany nad Ohří ->  
+CZ Dlouhá Třebová ->  
+CZ Oskava ->  
+CZ Jenišovice ->  
+CZ Velešovice ->  
+CZ Bošovice ->  
+CZ Chroustovice ->  
+CZ Hudlice ->  
+CZ Kačice ->  
+CZ Staré Křečany ->  
+CZ Brněnec ->  
+CZ Vojkovice -> Obec Vojkovice u Brna 0
+CZ Radiměř ->  
+CZ Příchovice ->  
+CZ Merklín ->  
+CZ Braňany ->  
+CZ Raduň ->  
+CZ Bohdalov ->  
+CZ Újezd -> Město Újezd u Brna 0
+CZ Všemyslice ->  
+CZ Moutnice ->  
+CZ Mokré Lazce -> Obec Mokré Lazce 0
+CZ Opatovice ->  
+CZ Zabrušany ->  
+CZ Nová Cerekev ->  
+CZ Malý Újezd ->  
+CZ Sobotín ->  
+CZ Deblín ->  
+CZ Benecko ->  
+CZ Tupesy ->  
+CZ Sokoleč ->  
+CZ Česká Bělá ->  
+CZ Načeradec ->  
+CZ Straškov-Vodochody ->  
+CZ Dolní Lukavice ->  
+CZ Stonařov ->  
+CZ Holubov ->  
+CZ Lubná -> Obec Lubná 0
+CZ Velké Přítočno ->  
+CZ Tuklaty ->  
+CZ Jakartovice ->  
+CZ Pstruží ->  
+CZ Horní Ředice ->  
+CZ Šaratice ->  
+CZ Jedlová ->  
+CZ Horní Domaslavice ->  
+CZ Nová Ves ->  
+CZ Borová ->  
+CZ Švábenice ->  
+CZ Čistá ->  
+CZ Klobuky ->  
+CZ Záhorovice ->  
+CZ Bystřička ->  
+CZ Klášter Hradiště nad Jizerou ->  
+CZ Drmoul ->  
+CZ Živanice ->  
+CZ Stružnice ->  
+CZ Hněvošice ->  
+CZ Černuc ->  
+CZ Dlouhý Most ->  
+CZ Sobětuchy ->  
+CZ Měcholupy ->  
+CZ Luleč ->  
+CZ Sebranice ->  
+CZ Karlovice ->  
+CZ Prštice ->  
+CZ Ořech ->  
+CZ Bernartice nad Odrou ->  
+CZ Světec ->  
+CZ Bílá ->  
+CZ Osová Bítýška ->  
+CZ Bohdalice-Pavlovice ->  
+CZ Dražovice ->  
+CZ Miletín ->  
+CZ Dolní Město ->  
+CZ Těmice ->  
+CZ Nové Bránice ->  
+CZ Radostín nad Oslavou ->  
+CZ Josefův Důl ->  
+CZ Holohlavy ->  
+CZ Únětice ->  
+CZ Čejetice ->  
+CZ Bernartice ->  
+CZ Bžany ->  
+CZ Kostelní Lhota ->  
+CZ Sazovice ->  
+CZ Vedrovice ->  
+CZ Klášterec nad Orlicí ->  
+CZ Pohořelice ->  
+CZ Pražmo ->  
+CZ Bystročice ->  
+CZ Čistá ->  
+CZ Ostrovačice ->  
+CZ Strahovice ->  
+CZ Jimlín ->  
+CZ Tetín ->  
+CZ Archlebov ->  
+CZ Újezdeček ->  
+CZ Puklice ->  
+CZ Bobnice ->  
+CZ Hrabišín ->  
+CZ Pačlavice ->  
+CZ Vilémov ->  
+CZ Chornice ->  
+CZ Jevany ->  
+CZ Radějov ->  
+CZ Rynoltice ->  
+CZ Abertamy ->  
+CZ Oldřichov v Hájích ->  
+CZ Dražice ->  
+CZ Veselá ->  
+CZ Libá ->  
+CZ Racková ->  
+CZ Šebetov ->  
+CZ Záboří nad Labem ->  
+CZ Němčany ->  
+CZ Káraný ->  
+CZ Bukovany ->  
+CZ Ruda ->  
+CZ Třebovice ->  
+CZ Břežany ->  
+CZ Žeranovice ->  
+CZ Mokrovraty ->  
+CZ Chotusice ->  
+CZ Druztová ->  
+CZ Černotín ->  
+CZ Vyžlovka ->  
+CZ Šlapanov ->  
+CZ Chanovice ->  
+CZ Bohutín ->  
+CZ Řepov ->  
+CZ Drozdov ->  
+CZ Chválenice ->  
+CZ Vojkovice -> Obec Vojkovice u Brna 0
+CZ Loučka ->  
+CZ Žďárná ->  
+CZ Líšnice ->  
+CZ Ořechov -> Obec Ořechov 0
+CZ Vraclav ->  
+CZ Kostelec u Křížků ->  
+CZ Žižice ->  
+CZ Vážany nad Litavou ->  
+CZ Komořany ->  
+CZ Vysoké Popovice ->  
+CZ Koclířov ->  
+CZ Oslavice ->  
+CZ Nová Hradečná ->  
+CZ Čestlice ->  
+CZ Morašice ->  
+CZ Lovčice ->  
+CZ Žádovice ->  
+CZ Deštná ->  
+CZ Horní Police ->  
+CZ Kočí ->  
+CZ Řepín ->  
+CZ Skorkov ->  
+CZ Pohled ->  
+CZ Hořiněves ->  
+CZ Otvice ->  
+CZ Štěpánov nad Svratkou ->  
+CZ Milešovice ->  
+CZ Bílý Potok ->  
+CZ Počenice-Tetětice ->  
+CZ Dětřichov ->  
+CZ Jamné nad Orlicí ->  
+CZ Dolní Lhota -> Obec Dolní Lhota 0
+CZ Lnáře ->  
+CZ Věšín ->  
+CZ Malenice ->  
+CZ Pravčice ->  
+CZ Chrášťany ->  
+CZ Lišany ->  
+CZ Návojná ->  
+CZ Myslibořice ->  
+CZ Šemnice ->  
+CZ Újezd -> Město Újezd u Brna 0
+CZ Slaná ->  
+CZ Jámy ->  
+CZ Vlkoš ->  
+CZ Hlavnice ->  
+CZ Prusy-Boškůvky ->  
+CZ Tatce ->  
+CZ Mladý Smolivec ->  
+CZ Nová Ves u Nového Města na Moravě ->  
+CZ Bělá ->  
+CZ Bezvěrov ->  
+CZ Podsedice ->  
+CZ Pištín ->  
+CZ Lučice ->  
+CZ Panenské Břežany ->  
+CZ Louňovice pod Blaníkem ->  
+CZ Hlízov ->  
+CZ Librantice ->  
+CZ Potěhy ->  
+CZ Hněvkovice ->  
+CZ Kratonohy ->  
+CZ Příbram na Moravě ->  
+CZ Hřivice ->  
+CZ Láz ->  
+CZ Prackovice nad Labem ->  
+CZ Stanovice ->  
+CZ Zdětín ->  
+CZ Kunratice u Cvikova ->  
+CZ Krahulčí ->  
+CZ Václavice ->  
+CZ Ketkovice ->  
+CZ Všeň ->  
+CZ Žichovice ->  
+CZ Stará Říše ->  
+CZ Holín ->  
+CZ Malý Beranov ->  
+CZ Bezděkov nad Metují ->  
+CZ Chocenice ->  
+CZ Bolehošť ->  
+CZ Kyšice ->  
+CZ Tuněchody ->  
+CZ Kořenice ->  
+CZ Stránecká Zhoř ->  
+CZ Hradec -> Město Jindřichův Hradec 0
+CZ Koštice ->  
+CZ Klíčany ->  
+CZ Loděnice ->  
+CZ Čtveřín ->  
+CZ Jindřichovice pod Smrkem ->  
+CZ Střeň ->  
+CZ Doubravy ->  
+CZ Moravskoslezský Kočov ->  
+CZ Strážovice ->  
+CZ Pocinovice ->  
+CZ Tatobity ->  
+CZ Nové Sedlo -> Město Nové Sedlo 0
+CZ Okrouhlá ->  
+CZ Vavřinec ->  
+CZ Bozkov ->  
+CZ Bílov ->  
+CZ Lochenice ->  
+CZ Mezouň ->  
+CZ Dolní Rožínka ->  
+CZ Třebichovice ->  
+CZ Žihobce ->  
+CZ Lásenice ->  
+CZ Přehýšov ->  
+CZ Hartvíkovice ->  
+CZ Žalkovice ->  
+CZ Lipno ->  
+CZ Huzová ->  
+CZ Velký Bor ->  
+CZ Kunčice nad Labem ->  
+CZ Žalhostice ->  
+CZ Libníč -> obec Libníč 0
+CZ Sázava ->  
+CZ Vlčice ->  
+CZ Dolní Zálezly ->  
+CZ Chromeč ->  
+CZ Voděrady ->  
+CZ Osice ->  
+CZ Staré Hobzí ->  
+CZ Neustupov ->  
+CZ Trstěnice ->  
+CZ Mladkov ->  
+CZ Jestřabí Lhota ->  
+CZ Sedlec ->  
+CZ Nová Ves u Chotěboře ->  
+CZ Nekmíř ->  
+CZ Mankovice ->  
+CZ Těchlovice ->  
+CZ Makotřasy ->  
+CZ Helvíkovice ->  
+CZ Seloutky ->  
+CZ Horní Věstonice ->  
+CZ Kocbeře ->  
+CZ Věteřov ->  
+CZ Vršovice ->  
+CZ Hlavenec ->  
+CZ Uhřičice ->  
+CZ Želízy ->  
+CZ Kochánky ->  
+CZ Dřínov ->  
+CZ Skalice ->  
+CZ Velká Bukovina ->  
+CZ Hřivínův Újezd ->  
+CZ Činěves ->  
+CZ Malá Morava ->  
+CZ Hlavňovice ->  
+CZ Lhota -> Obec Dolní Lhota 0
+CZ Zbizuby ->  
+CZ Polkovice ->  
+CZ Krňany ->  
+CZ Pavlice ->  
+CZ Kučerov ->  
+CZ Bohuslavice ->  
+CZ Úsilné ->  
+CZ Litobratřice ->  
+CZ Kyselovice ->  
+CZ Bojanovice ->  
+CZ Podhradí ->  
+CZ Račetice ->  
+CZ Kytlice ->  
+CZ Habartice ->  
+CZ Ledce ->  
+CZ Olešnice ->  
+CZ Staré Město pod Landštejnem ->  
+CZ Choustník ->  
+CZ Dobříč ->  
+CZ Kratochvilka ->  
+CZ Haňovice ->  
+CZ Plavsko ->  
+CZ Čepí ->  
+CZ Líšťany ->  
+CZ Popovičky ->  
+CZ Číčenice ->  
+CZ Verušičky ->  
+CZ Vojkov ->  
+CZ Svojkovice ->  
+CZ Opočnice ->  
+CZ Lukoveček ->  
+CZ Medlovice ->  
+CZ Ivaň ->  
+CZ Hora Svaté Kateřiny ->  
+CZ Dušníky ->  
+CZ Prysk ->  
+CZ Hoštejn ->  
+CZ Hošťka ->  
+CZ Zálezlice ->  
+CZ Výrov ->  
+CZ Svojšín ->  
+CZ Pozdeň ->  
+CZ Chleby ->  
+CZ Věžnice ->  
+CZ Děpoltovice ->  
+CZ Bohuslavice ->  
+CZ Mžany ->  
+CZ Blešno ->  
+CZ Nepomyšl ->  
+CZ Křečkov ->  
+CZ Obyčtov ->  
+CZ Vranová Lhota ->  
+CZ Hory ->  
+CZ Maletín ->  
+CZ Kladruby ->  
+CZ Výrava ->  
+CZ Kámen ->  
+CZ Stříbřec ->  
+CZ Bavoryně ->  
+CZ Jenišovice ->  
+CZ Loučka ->  
+CZ Josefův Důl ->  
+CZ Hradešice ->  
+CZ Lipník ->  
+CZ Zlatá ->  
+CZ Vranov ->  
+CZ Svébohov ->  
+CZ Myslív ->  
+CZ Jivno ->  
+CZ Velký Karlov ->  
+CZ Budětsko ->  
+CZ Borotice ->  
+CZ Rožmitál na Šumavě ->  
+CZ Stanoviště ->  
+CZ Rašovice ->  
+CZ Dlouhý Újezd ->  
+CZ Rakov ->  
+CZ Zvěstov ->  
+CZ Vlčková ->  
+CZ Čeložnice ->  
+CZ Mnich ->  
+CZ Kamenný Most ->  
+CZ Pavlov ->  
+CZ Stolany ->  
+CZ Čermná ->  
+CZ Rudka ->  
+CZ Uhy ->  
+CZ Dětřichov nad Bystřicí ->  
+CZ Hýsly ->  
+CZ Nová Ves ->  
+CZ Luboměř ->  
+CZ Pečice ->  
+CZ Březina ->  
+CZ Hříškov ->  
+CZ Vrčeň ->  
+CZ Mladoňovice ->  
+CZ Vojtěchov ->  
+CZ Židovice ->  
+CZ Bezdědovice ->  
+CZ Kupařovice ->  
+CZ Malíkovice ->  
+CZ Zdětín ->  
+CZ Plenkovice ->  
+CZ Máslovice ->  
+CZ Brusné ->  
+CZ Rožnov ->  
+CZ Nebílovy ->  
+CZ Ježkovice ->  
+CZ Petrovice -> Městská část Praha - Petrovice 0
+CZ Nučice ->  
+CZ Keblice ->  
+CZ Neděliště ->  
+CZ Bošice ->  
+CZ Kobylá nad Vidnavkou ->  
+CZ Desná ->  
+CZ Budislav ->  
+CZ Kořenec ->  
+CZ Babylon ->  
+CZ Slabčice ->  
+CZ Vrbatův Kostelec ->  
+CZ Skaštice ->  
+CZ Horní Lomná ->  
+CZ Záboří ->  
+CZ Raná ->  
+CZ Očihov ->  
+CZ Obora ->  
+CZ Heřmanice u Oder ->  
+CZ Strašov ->  
+CZ Pomezí nad Ohří ->  
+CZ Tichov ->  
+CZ Bělá u Jevíčka ->  
+CZ Milonice ->  
+CZ Jíkev ->  
+CZ Hnanice ->  
+CZ Číhošť ->  
+CZ Lhota -> Obec Dolní Lhota 0
+CZ Březovice ->  
+CZ Útěchov ->  
+CZ Erpužice ->  
+CZ Vysoká Pec ->  
+CZ Tisovec ->  
+CZ Radkovice u Hrotovic ->  
+CZ Dasný ->  
+CZ Vilémovice ->  
+CZ Oplot ->  
+CZ Pavlov ->  
+CZ Libodřice ->  
+CZ Hvězdonice ->  
+CZ Přehořov ->  
+CZ Ludíkov ->  
+CZ Záboří ->  
+CZ Onomyšl ->  
+CZ Mrákotín ->  
+CZ Vepříkov ->  
+CZ Otovice ->  
+CZ Ptýrov ->  
+CZ Budíkov ->  
+CZ Otín ->  
+CZ Křelovice ->  
+CZ Čechy ->  
+CZ Čankovice ->  
+CZ Vlčí Habřina ->  
+CZ Milostín ->  
+CZ Úlibice ->  
+CZ Vysoká ->  
+CZ Horní Ves ->  
+CZ Mlečice ->  
+CZ Habřina ->  
+CZ Ocmanice ->  
+CZ Sázavka ->  
+CZ Kostomlátky ->  
+CZ Všetaty ->  
+CZ Nová Telib ->  
+CZ Chržín ->  
+CZ Vrutice ->  
+CZ Turkovice ->  
+CZ Libenice ->  
+CZ Čeminy ->  
+CZ Polom ->  
+CZ Horní Olešnice ->  
+CZ Sulíkov ->  
+CZ Lhota pod Radčem ->  
+CZ Borek ->  
+CZ Černousy ->  
+CZ Čechtín ->  
+CZ Kyškovice ->  
+CZ Dobroutov ->  
+CZ Sedlejov ->  
+CZ Dívčí Hrad ->  
+CZ Mydlovary ->  
+CZ Kmetiněves ->  
+CZ Nenačovice ->  
+CZ Lhotsko ->  
+CZ Bohuňov ->  
+CZ Šindelová ->  
+CZ Buková ->  
+CZ Rohenice ->  
+CZ Sedletín ->  
+CZ Osečnice ->  
+CZ Láz ->  
+CZ Barchov ->  
+CZ Smolotely ->  
+CZ Žampach ->  
+CZ Svatý Jiří ->  
+CZ Krahulov ->  
+CZ Kbel ->  
+CZ Popovice ->  
+CZ Klokočná ->  
+CZ Hlohová ->  
+CZ Blevice ->  
+CZ Řepeč ->  
+CZ Ktová ->  
+CZ Záblatí ->  
+CZ Pavlovice u Kojetína ->  
+CZ Hulice ->  
+CZ Zlukov ->  
+CZ Panoší Újezd ->  
+CZ Heřmanice ->  
+CZ Branišov ->  
+CZ Sedlice ->  
+CZ Ctidružice ->  
+CZ Újezd ->  
+CZ Roupov ->  
+CZ Siřejovice ->  
+CZ Podolí -> Obec Podolí 0
+CZ Jeřišno ->  
+CZ Toužetín ->  
+CZ Zderaz ->  
+CZ Mostek ->  
+CZ Skalka ->  
+CZ Chlustina ->  
+CZ Srbská Kamenice ->  
+CZ Horní Lapač ->  
+CZ Zdislava ->  
+CZ Lupenice ->  
+CZ Boháňka ->  
+CZ Podbřežice ->  
+CZ Komárno ->  
+CZ Prostiboř ->  
+CZ Mutěnín ->  
+CZ Boží Dar ->  
+CZ Sedlec ->  
+CZ Bříšťany ->  
+CZ Strakov ->  
+CZ Pokřikov ->  
+CZ Nová Sídla ->  
+CZ Vinaře ->  
+CZ Vyšehněvice ->  
+CZ Staré Smrkovice ->  
+CZ Perálec ->  
+CZ Újezdec ->  
+CZ Lobendava ->  
+CZ Brod nad Tichou ->  
+CZ Alojzov ->  
+CZ Oucmanice ->  
+CZ Nišovice ->  
+CZ Dobšice -> Zastupitelstvo OÚ Dobšice 0
+CZ Veletov ->  
+CZ Mnichov ->  
+CZ Vlačice ->  
+CZ Lesná ->  
+CZ Borkovice ->  
+CZ Sedlec ->  
+CZ Dolní Krupá ->  
+CZ Vojtanov ->  
+CZ Paseky nad Jizerou ->  
+CZ Lískovice ->  
+CZ Choťovice ->  
+CZ Panenská Rozsíčka ->  
+CZ Jezdkovice ->  
+CZ Turovice ->  
+CZ Velký Malahov ->  
+CZ Jitkov ->  
+CZ Smolné Pece ->  
+CZ Lipovec ->  
+CZ Žim ->  
+CZ Třebíz ->  
+CZ Bousov ->  
+CZ Rohozec ->  
+CZ Kozlov ->  
+CZ Křišťanovice ->  
+CZ Číhalín ->  
+CZ Nítkovice ->  
+CZ Žlunice ->  
+CZ Ústí ->  
+CZ Raná ->  
+CZ Dobrčice ->  
+CZ Raková ->  
+CZ Klášter ->  
+CZ Sukorady ->  
+CZ Habrovany ->  
+CZ Újezd u Svatého Kříže ->  
+CZ Kraselov ->  
+CZ Volanice ->  
+CZ Lipovice ->  
+CZ Vortová ->  
+CZ Police ->  
+CZ Kacanovy ->  
+CZ Lhotka u Litultovic ->  
+CZ Slavětice ->  
+CZ Paběnice ->  
+CZ Heřmanov ->  
+CZ Zvěrkovice ->  
+CZ Lejšovka ->  
+CZ Bezkov ->  
+CZ Nýrov ->  
+CZ Mikulov ->  
+CZ Hradiště -> Město Mnichovo Hradiště 0
+CZ Okrouhlá Radouň ->  
+CZ Loužnice ->  
+CZ Kotenčice ->  
+CZ Podhradí ->  
+CZ Hejnice ->  
+CZ Bašnice ->  
+CZ Křepenice ->  
+CZ Stožec ->  
+CZ Bošilec ->  
+CZ Hrdibořice ->  
+CZ Číhaň ->  
+CZ Mukařov ->  
+CZ Kobylnice ->  
+CZ Sedloňov ->  
+CZ Běleč ->  
+CZ Bohostice ->  
+CZ Zářecká Lhota ->  
+CZ Podmoky ->  
+CZ Plchov ->  
+CZ Chlum ->  
+CZ Přibyslav ->  
+CZ Blazice ->  
+CZ Bohdašín ->  
+CZ Radíkovice ->  
+CZ Opatov ->  
+CZ Drachkov ->  
+CZ Bořenovice ->  
+CZ Kouty ->  
+CZ Hynčina ->  
+CZ Vysoké -> Město Vysoké Mýto 0
+CZ Králova Lhota ->  
+CZ Pesvice ->  
+CZ Bukov ->  
+CZ Velká Lečice ->  
+CZ Kuklík ->  
+CZ Nevolice ->  
+CZ Knínice ->  
+CZ Paseky ->  
+CZ Vrbka ->  
+CZ Kněžičky ->  
+CZ Myštěves ->  
+CZ Kozlov ->  
+CZ Brada-Rybníček ->  
+CZ Řídeč ->  
+CZ Lipinka ->  
+CZ Ostašov ->  
+CZ Kamenná ->  
+CZ Březské ->  
+CZ Křešín ->  
+CZ Běloky -> Obec Běloky 0
+CZ Český Šternberk ->  
+CZ Nosálov ->  
+CZ Lipec ->  
+CZ Olešenka ->  
+CZ Chotovice ->  
+CZ Janův Důl ->  
+CZ Borovnice ->  
+CZ Nové Lublice ->  
+CZ Kunějovice ->  
+CZ Skalka u Doks ->  
+CZ Žďárek ->  
+CZ Hladov ->  
+CZ Lipina ->  
+CZ Velký Luh ->  
+CZ Leštinka ->  
+CZ Velenice ->  
+CZ Vidonín ->  
+CZ Kubšice ->  
+CZ Černíky ->  
+CZ Liboměřice ->  
+CZ Boršov ->  
+CZ Střemošice ->  
+CZ Libníkovice ->  
+CZ Věstín ->  
+CZ Medlice ->  
+CZ Mezná ->  
+CZ Zdechovice ->  
+CZ Kostelní Vydří ->  
+CZ Ostrov -> Město Ostrov 0
+CZ Malšín ->  
+CZ Třeštice ->  
+CZ Mahouš ->  
+CZ Stínava ->  
+CZ Hojkov ->  
+CZ Pertoltice ->  
+CZ Drahenice ->  
+CZ Kulířov ->  
+CZ Dražeň ->  
+CZ Podmolí ->  
+CZ Zálesí ->  
+CZ Kyjov -> Město Kyjov 0
+CZ Sulkovec ->  
+CZ Kocelovice ->  
+CZ Budčeves ->  
+CZ Prášily ->  
+CZ Loučky ->  
+CZ Neuměř ->  
+CZ Janov ->  
+CZ Souňov ->  
+CZ Chvalovice ->  
+CZ Tržek ->  
+CZ Podmokly ->  
+CZ Vrátno ->  
+CZ Polom ->  
+CZ Drahov ->  
+CZ Balkova Lhota ->  
+CZ Vlksice ->  
+CZ Kadov ->  
+CZ Sobíšky ->  
+CZ Přechovice ->  
+CZ Jarov ->  
+CZ Střelice ->  
+CZ Ovesné Kladruby ->  
+CZ Věžnička ->  
+CZ Račín ->  
+CZ Nasavrky ->  
+CZ Javorník ->  
+CZ Velké Janovice ->  
+CZ Stradonice ->  
+CZ Bor u Skutče ->  
+CZ Lčovice ->  
+CZ Všeradov ->  
+CZ Němčice ->  
+CZ Hořešovičky ->  
+CZ Adamov -> Město Adamov 0
+CZ Dyjice ->  
+CZ Radostov ->  
+CZ Dědice ->  
+CZ Salačova Lhota ->  
+CZ Lašovice ->  
+CZ Strážiště ->  
+CZ Kvítkovice ->  
+CZ Dlažkovice ->  
+CZ Mažice ->  
+CZ Čelechovice ->  
+CZ Květov ->  
+CZ Strunkovice nad Volyňkou ->  
+CZ Tvrzice ->  
+CZ Sovolusky ->  
+CZ Bystrá ->  
+CZ Mirošov ->  
+CZ Ježená ->  
+CZ Bukovec ->  
+CZ Skorotice ->  
+CZ Chlum ->  
+CZ Strachujov ->  
+CZ Kvilda ->  
+CZ Stropešín ->  
+CZ Němětice ->  
+CZ Bednárec ->  
+CZ Stranný ->  
+CZ Chraberce ->  
+CZ Dehtáře ->  
+CZ Sekeřice ->  
+CZ Dobšice -> Zastupitelstvo OÚ Dobšice 0
+CZ Luboměř pod Strážnou ->  
+CZ Mezholezy ->  
+CZ Cetenov ->  
+CZ Přepeře ->  
+CZ Vrchovany ->  
+CZ Kozárov ->  
+CZ Strážná ->  
+CZ Koryta ->  
+CZ Vincencov ->  
+CZ Paračov ->  
+CZ Třebětín ->  
+CZ Masojedy ->  
+CZ Újezd nade Mží ->  
+CZ Krychnov ->  
+CZ Bohuňovice ->  
+CZ Kraborovice ->  
+CZ Křepice ->  
+CZ Brambory ->  
+CZ Rodkov ->  
+CZ Ostrovec-Lhotka ->  
+CZ Študlov ->  
+CZ Nerestce ->  
+CZ Okarec ->  
+CZ Všesulov ->  
+CZ Líský ->  
+CZ Doupě ->  
+CZ Zhořec ->  
+CZ Modřovice ->  
+CZ Tišnovská Nová Ves ->  
+CZ Kakejcov ->  
+CZ Vysoký Újezd ->  
+CZ Rakousy ->  
+CZ Horní Radslavice ->  
+CZ Tušovice ->  
+CZ Kozlovice ->  
+CZ Cidlina ->  
+CZ Osové ->  
+CZ Luka -> Městys Luka nad Jihlavou 0
+CZ Snět ->  
+CZ Nasavrky ->  
+CZ Záblatí ->  
+CZ Vlkov pod Oškobrhem ->  
+CZ Čelistná ->  
+CZ Bukovice ->  
+CZ Lesná ->  
+CZ Hlupín ->  
+CZ Rozseč ->  
+CZ Kvílice ->  
+CZ Otín ->  
+CZ Bukovina u Přelouče ->  
+CZ Horčápsko ->  
+CZ Jedlá ->  
+CZ Schořov ->  
+CZ Oprostovice ->  
+CZ Lesůňky ->  
+CZ Blanné ->  
+CZ Olšany ->  
+CZ Dolní Sokolovec ->  
+CZ Suchá Lhota ->  
+CZ Šebestěnice ->  
+CZ Horní Rožínka ->  
+CZ Drahouš ->  
+CZ Kunkovice ->  
+CZ Vlčí ->  
+CZ Přeckov ->  
+CZ Nelepeč-Žernůvka ->  
+CZ Močerady ->  
+CZ Ostřetice ->  
+CZ Jedlany ->  
+CZ Velečín ->  
+CZ Hornosín ->  
+CZ Volevčice ->  
+CZ Rosička ->  
+CZ Okrouhlá ->  
+CZ Mezihoří ->  
+CZ Eš ->  
+CZ Hora Svatého Václava ->  
+CZ Kunčina Ves ->  
+CZ Závraty ->  
+CZ Útěchovice ->  
+CZ Olšovice ->  
+CZ Řídký ->  
+CZ Xaverov ->  
+CZ Nimpšov ->  
+CZ Drunče ->  
+CZ Budyně ->  
+CZ Zahorčice ->  
+CZ Zadní Vydří ->  
+CZ Vlčetínec ->  
+CZ Lubné ->  
+CZ Vlkov ->  
+CZ Hradiště -> Město Mnichovo Hradiště 0
+CZ Kratušín ->  
+CZ Bohunice ->  
+CZ Hostějov ->  
+CZ Kostelec -> Město Kostelec nad Orlicí 0
+CZ Studená ->  
+CZ Minice ->  
+CZ Hradiště -> Město Mnichovo Hradiště 0

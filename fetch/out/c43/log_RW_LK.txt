@@ -1,0 +1,55 @@
+RW Bugesera ->  
+LK Ampara ->  
+LK Anuradhapura ->  
+RW Burera ->  
+LK Badulla ->  
+RW Gakenke ->  
+LK Batticaloa ->  
+RW Gasabo ->  
+LK Colombo ->  
+RW Gatsibo ->  
+LK Galle ->  
+RW Gicumbi ->  
+LK Gampaha ->  
+RW Gisagara ->  
+LK Hambantota ->  
+RW Huye ->  
+LK Jaffna ->  
+RW Kamonyi ->  
+LK Kalutara ->  
+RW Karongi ->  
+LK Kandy ->  
+RW Kayonza ->  
+RW Kicukiro ->  
+RW Kirehe ->  
+LK Kegalle -> District Secretariat Kegalle 0
+RW Muhanga ->  
+LK Kilinochchi ->  
+RW Musanze ->  
+LK Kurunegala ->  
+RW Ngoma ->  
+LK Mannar ->  
+RW Ngororero ->  
+RW Nyabihu ->  
+LK Matale -> District Media Unit - matale 0
+RW Nyagatare -> Nyagatare District 0
+LK Matara ->  
+LK Monaragala ->  
+RW Nyamagabe -> Nyamagabe Art Council 0
+RW Nyamasheke ->  
+LK Mullaitivu -> District Media Unit - Mullaitivu 0
+RW Nyanza ->  
+LK Nuwara Eliya ->  
+RW Nyarugenge ->  
+LK Polonnaruwa ->  
+RW Nyaruguru ->  
+LK Puttalam ->  
+RW Rubavu ->  
+LK Ratnapura ->  
+RW Ruhango ->  
+LK Trincomalee ->  
+RW Rulindo ->  
+LK Vavuniya ->  
+RW Rusizi ->  
+RW Rutsiro ->  
+RW Rwamagana ->  
