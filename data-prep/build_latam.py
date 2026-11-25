@@ -1811,11 +1811,12 @@ def kenya():
     for code, x in ke.items():
         did = f"KEN-{code}"
         dens = x["pop"] / x["area"] if x.get("pop") and x.get("area") else 0
-        rows.append({"District": x["name"], "Region": x.get("province") or "", "Population": x.get("pop") or "",
+        rows.append({**history_cols({"pov_years": x.get("child_years") or {}}), "District": x["name"], "Region": x.get("province") or "", "Population": x.get("pop") or "",
                      "Percentage of Children in Low Income": f"{x['child']:.1f}%" if x.get("child") is not None else "",
                      "Poverty rate (all ages)": f"{x['poverty']:.1f}%" if x.get("poverty") is not None else "",
                      "Poverty note": (f"Children aged 0-17 below the overall poverty line, 2022: {x['child']:.1f}% of about {x['child_pop']:,} (KNBS, The Kenya Poverty Report 2022, "
-                                      f"Annex Table E.2); all ages {x['poverty']:.1f}% (Table 4.4). Nationally 39.8% of people were poor") if x.get("child") is not None else "",
+                                      f"Annex Table E.2); all ages {x['poverty']:.1f}% (Table 4.4). Nationally 39.8% of people were poor"
+                                      + (f". In 2020 (Poverty in Kenya - 2020 Report, Table 5.3): children {x['child_years']['2020']:.1f}%, all ages {x['pov_years']['2020']:.1f}%" if x.get("child_years") else "")) if x.get("child") is not None else "",
                      "Children under 18": x.get("child_pop") or "",
                      "Enrollment": x.get("pupils") or "", "Enrollment year": "2024, provisional (primary, junior and secondary school pupils, public and private; KNBS Statistical Abstract 2025)" if x.get("pupils") else "",
                      "School system": "County (primary and secondary schools are run nationally; the county runs early childhood education); elected county assembly",
