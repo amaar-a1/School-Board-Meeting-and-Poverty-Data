@@ -1,0 +1,82 @@
+PL 259889 2015: 3719
+PL 259889 2016: 3729
+PL 259889 2017 ERR HTTP Error 500: Internal Server Error
+PL 259889 2017: 2300
+PL 259889 2018 ERR HTTP Error 500: Internal Server Error
+PL 259889 2018: 0
+PL 259889 2019 ERR HTTP Error 500: Internal Server Error
+PL 259889 2019: 0
+PL 259889 2020 ERR HTTP Error 500: Internal Server Error
+PL 259889 2020: 0
+PL 259889 2021 ERR HTTP Error 500: Internal Server Error
+PL 259889 2021: 0
+PL 259889 2022 ERR HTTP Error 500: Internal Server Error
+PL 259889 2022: 0
+PL 259889 2023 ERR HTTP Error 500: Internal Server Error
+PL 259889 2023: 0
+PL 259888 2015 ERR HTTP Error 500: Internal Server Error
+PL 259888 2015: 0
+PL 259888 2016 ERR HTTP Error 500: Internal Server Error
+PL 259888 2016: 0
+PL 259888 2017 ERR HTTP Error 500: Internal Server Error
+PL 259888 2017: 0
+PL 259888 2018 ERR HTTP Error 500: Internal Server Error
+PL 259888 2018: 0
+PL 259888 2019 ERR HTTP Error 500: Internal Server Error
+PL 259888 2019: 0
+PL 259888 2020 ERR HTTP Error 500: Internal Server Error
+PL 259888 2020: 0
+PL 259888 2021 ERR HTTP Error 500: Internal Server Error
+PL 259888 2021: 0
+PL 259888 2022 ERR HTTP Error 500: Internal Server Error
+PL 259888 2022: 0
+PL 259888 2023 ERR HTTP Error 500: Internal Server Error
+PL 259888 2023: 0
+OK cl_page_2011.html 23816 https://observatorio.ministeriodesarrollosocial.gob.cl/pobreza-comunal-2011
+  CL 2011 links ['storage/docs/pobreza-comunal/2011/Estimacion_tasa_de_pobreza_comunal_2011_(nueva_metodologia).xlsx.zip', 'storage/docs/pobreza-comunal/2011/PobrezaporComunas_SAE_20092011.xlsx']
+OK cl_2011_Estimacion_tasa_de_pobreza_comunal_2011_(nueva_metodologia).xlsx.zip 46488 https://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/pobreza-comunal/2011/Estimacion_tasa_de_pobreza_comunal_2011_(nueva_metodologia).xlsx.zip
+OK cl_2011_PobrezaporComunas_SAE_20092011.xlsx 46451 https://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/pobreza-comunal/2011/PobrezaporComunas_SAE_20092011.xlsx
+OK cl_page_2013.html 23784 https://observatorio.ministeriodesarrollosocial.gob.cl/pobreza-comunal-2013
+  CL 2013 links ['storage/docs/pobreza-comunal/2013/PLANILLA_Estimaciones_comunales_tasa_pobreza_por_ingresos_2013.xlsx']
+OK cl_2013_PLANILLA_Estimaciones_comunales_tasa_pobreza_por_ingresos_2013.xlsx 44028 https://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/pobreza-comunal/2013/PLANILLA_Estimaciones_comunales_tasa_pobreza_por_ingresos_2013.xlsx
+OK cl_page_2015.html 22407 https://observatorio.ministeriodesarrollosocial.gob.cl/pobreza-comunal-2015
+  CL 2015 links ['storage/docs/pobreza-comunal/2015/PLANILLA_Estimaciones_comunales_tasa_pobreza_por_ingresos_multidimensional_2015.xlsx']
+OK cl_2015_PLANILLA_Estimaciones_comunales_tasa_pobreza_por_ingresos_multidimensional_2015.xlsx 82837 https://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/pobreza-comunal/2015/PLANILLA_Estimaciones_comunales_tasa_pobreza_por_ingresos_multidimensional_2015.xlsx
+OK cl_page_2017.html 20004 https://observatorio.ministeriodesarrollosocial.gob.cl/pobreza-comunal-2017
+  CL 2017 links ['storage/docs/pobreza-comunal/2017/PLANILLA_Estimaciones_comunales_tasa_pobreza_por_ingresos_multidimensional_2017.xlsx']
+OK cl_2017_PLANILLA_Estimaciones_comunales_tasa_pobreza_por_ingresos_multidimensional_2017.xlsx 57617 https://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/pobreza-comunal/2017/PLANILLA_Estimaciones_comunales_tasa_pobreza_por_ingresos_multidimensional_2017.xlsx
+OK cl_page_2020.html 19842 https://observatorio.ministeriodesarrollosocial.gob.cl/pobreza-comunal-2020
+  CL 2020 links ['storage/docs/pobreza-comunal/2020/Estimaciones_de_Tasa_de_Pobreza_por_Ingresos_por_Comunas_2020_revisada2022_09.xlsx']
+OK cl_2020_Estimaciones_de_Tasa_de_Pobreza_por_Ingresos_por_Comunas_2020_revisada2022_09.xlsx 51159 https://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/pobreza-comunal/2020/Estimaciones_de_Tasa_de_Pobreza_por_Ingresos_por_Comunas_2020_revisada2022_09.xlsx
+OK cl_page_2022.html 20520 https://observatorio.ministeriodesarrollosocial.gob.cl/pobreza-comunal-2022
+  CL 2022 links ['storage/docs/pobreza-comunal/2022/Estimaciones_Indice_Pobreza_Multidimensional_Comunas_2022.xlsx', 'storage/docs/pobreza-comunal/2022/Estimaciones_Tasa_Pobreza_Ingresos_Comunas_2022.xlsx']
+OK cl_2022_Estimaciones_Indice_Pobreza_Multidimensional_Comunas_2022.xlsx 117950 https://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/pobreza-comunal/2022/Estimaciones_Indice_Pobreza_Multidimensional_Comunas_2022.xlsx
+OK cl_2022_Estimaciones_Tasa_Pobreza_Ingresos_Comunas_2022.xlsx 53824 https://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/pobreza-comunal/2022/Estimaciones_Tasa_Pobreza_Ingresos_Comunas_2022.xlsx
+OK None 1046861 https://www1.finanze.gov.it/finanze/analisi_stat/public/v_4_0_0/contenuti/Redditi_e_principali_variabili_IRPEF_su_base_comunale_CSV_2015.zip
+OK None 1043213 https://www1.finanze.gov.it/finanze/analisi_stat/public/v_4_0_0/contenuti/Redditi_e_principali_variabili_IRPEF_su_base_comunale_CSV_2016.zip
+OK None 1050806 https://www1.finanze.gov.it/finanze/analisi_stat/public/v_4_0_0/contenuti/Redditi_e_principali_variabili_IRPEF_su_base_comunale_CSV_2017.zip
+OK None 1020751 https://www1.finanze.gov.it/finanze/analisi_stat/public/v_4_0_0/contenuti/Redditi_e_principali_variabili_IRPEF_su_base_comunale_CSV_2018.zip
+OK None 1016772 https://www1.finanze.gov.it/finanze/analisi_stat/public/v_4_0_0/contenuti/Redditi_e_principali_variabili_IRPEF_su_base_comunale_CSV_2019.zip
+OK None 1014290 https://www1.finanze.gov.it/finanze/analisi_stat/public/v_4_0_0/contenuti/Redditi_e_principali_variabili_IRPEF_su_base_comunale_CSV_2020.zip
+OK None 1021595 https://www1.finanze.gov.it/finanze/analisi_stat/public/v_4_0_0/contenuti/Redditi_e_principali_variabili_IRPEF_su_base_comunale_CSV_2021.zip
+OK None 1022527 https://www1.finanze.gov.it/finanze/analisi_stat/public/v_4_0_0/contenuti/Redditi_e_principali_variabili_IRPEF_su_base_comunale_CSV_2022.zip
+OK nl_pupils_2011.json 203643 https://opendata.cbs.nl/ODataApi/odata/85701NED/TypedDataSet?$format=json&$filter=Geslacht%20eq%20%27T001038%27%20and%20Perioden%20eq%20%272011SJ00%27%20and%20%28Onderwijssoort%20eq%20%27A025279%27%20or%20Onderwijssoort%20eq%20%27A025282%27%20or%20Onderwijssoort%20eq%20%27T001345%27%29%20and%20substringof%28%27GM%27%2CRegiokenmerken%29
+OK nl_pupils_2012.json 203651 https://opendata.cbs.nl/ODataApi/odata/85701NED/TypedDataSet?$format=json&$filter=Geslacht%20eq%20%27T001038%27%20and%20Perioden%20eq%20%272012SJ00%27%20and%20%28Onderwijssoort%20eq%20%27A025279%27%20or%20Onderwijssoort%20eq%20%27A025282%27%20or%20Onderwijssoort%20eq%20%27T001345%27%29%20and%20substringof%28%27GM%27%2CRegiokenmerken%29
+OK nl_pupils_2013.json 203665 https://opendata.cbs.nl/ODataApi/odata/85701NED/TypedDataSet?$format=json&$filter=Geslacht%20eq%20%27T001038%27%20and%20Perioden%20eq%20%272013SJ00%27%20and%20%28Onderwijssoort%20eq%20%27A025279%27%20or%20Onderwijssoort%20eq%20%27A025282%27%20or%20Onderwijssoort%20eq%20%27T001345%27%29%20and%20substringof%28%27GM%27%2CRegiokenmerken%29
+OK nl_pupils_2014.json 203681 https://opendata.cbs.nl/ODataApi/odata/85701NED/TypedDataSet?$format=json&$filter=Geslacht%20eq%20%27T001038%27%20and%20Perioden%20eq%20%272014SJ00%27%20and%20%28Onderwijssoort%20eq%20%27A025279%27%20or%20Onderwijssoort%20eq%20%27A025282%27%20or%20Onderwijssoort%20eq%20%27T001345%27%29%20and%20substringof%28%27GM%27%2CRegiokenmerken%29
+OK nl_pupils_2015.json 203710 https://opendata.cbs.nl/ODataApi/odata/85701NED/TypedDataSet?$format=json&$filter=Geslacht%20eq%20%27T001038%27%20and%20Perioden%20eq%20%272015SJ00%27%20and%20%28Onderwijssoort%20eq%20%27A025279%27%20or%20Onderwijssoort%20eq%20%27A025282%27%20or%20Onderwijssoort%20eq%20%27T001345%27%29%20and%20substringof%28%27GM%27%2CRegiokenmerken%29
+OK nl_pupils_2016.json 203712 https://opendata.cbs.nl/ODataApi/odata/85701NED/TypedDataSet?$format=json&$filter=Geslacht%20eq%20%27T001038%27%20and%20Perioden%20eq%20%272016SJ00%27%20and%20%28Onderwijssoort%20eq%20%27A025279%27%20or%20Onderwijssoort%20eq%20%27A025282%27%20or%20Onderwijssoort%20eq%20%27T001345%27%29%20and%20substringof%28%27GM%27%2CRegiokenmerken%29
+OK nl_pupils_2017.json 203704 https://opendata.cbs.nl/ODataApi/odata/85701NED/TypedDataSet?$format=json&$filter=Geslacht%20eq%20%27T001038%27%20and%20Perioden%20eq%20%272017SJ00%27%20and%20%28Onderwijssoort%20eq%20%27A025279%27%20or%20Onderwijssoort%20eq%20%27A025282%27%20or%20Onderwijssoort%20eq%20%27T001345%27%29%20and%20substringof%28%27GM%27%2CRegiokenmerken%29
+OK nl_pupils_2018.json 203735 https://opendata.cbs.nl/ODataApi/odata/85701NED/TypedDataSet?$format=json&$filter=Geslacht%20eq%20%27T001038%27%20and%20Perioden%20eq%20%272018SJ00%27%20and%20%28Onderwijssoort%20eq%20%27A025279%27%20or%20Onderwijssoort%20eq%20%27A025282%27%20or%20Onderwijssoort%20eq%20%27T001345%27%29%20and%20substringof%28%27GM%27%2CRegiokenmerken%29
+OK nl_pupils_2019.json 203827 https://opendata.cbs.nl/ODataApi/odata/85701NED/TypedDataSet?$format=json&$filter=Geslacht%20eq%20%27T001038%27%20and%20Perioden%20eq%20%272019SJ00%27%20and%20%28Onderwijssoort%20eq%20%27A025279%27%20or%20Onderwijssoort%20eq%20%27A025282%27%20or%20Onderwijssoort%20eq%20%27T001345%27%29%20and%20substringof%28%27GM%27%2CRegiokenmerken%29
+OK nl_pupils_2020.json 203817 https://opendata.cbs.nl/ODataApi/odata/85701NED/TypedDataSet?$format=json&$filter=Geslacht%20eq%20%27T001038%27%20and%20Perioden%20eq%20%272020SJ00%27%20and%20%28Onderwijssoort%20eq%20%27A025279%27%20or%20Onderwijssoort%20eq%20%27A025282%27%20or%20Onderwijssoort%20eq%20%27T001345%27%29%20and%20substringof%28%27GM%27%2CRegiokenmerken%29
+OK nl_pupils_2021.json 203841 https://opendata.cbs.nl/ODataApi/odata/85701NED/TypedDataSet?$format=json&$filter=Geslacht%20eq%20%27T001038%27%20and%20Perioden%20eq%20%272021SJ00%27%20and%20%28Onderwijssoort%20eq%20%27A025279%27%20or%20Onderwijssoort%20eq%20%27A025282%27%20or%20Onderwijssoort%20eq%20%27T001345%27%29%20and%20substringof%28%27GM%27%2CRegiokenmerken%29
+OK nl_pupils_2022.json 203863 https://opendata.cbs.nl/ODataApi/odata/85701NED/TypedDataSet?$format=json&$filter=Geslacht%20eq%20%27T001038%27%20and%20Perioden%20eq%20%272022SJ00%27%20and%20%28Onderwijssoort%20eq%20%27A025279%27%20or%20Onderwijssoort%20eq%20%27A025282%27%20or%20Onderwijssoort%20eq%20%27T001345%27%29%20and%20substringof%28%27GM%27%2CRegiokenmerken%29
+OK nl_pupils_2023.json 203869 https://opendata.cbs.nl/ODataApi/odata/85701NED/TypedDataSet?$format=json&$filter=Geslacht%20eq%20%27T001038%27%20and%20Perioden%20eq%20%272023SJ00%27%20and%20%28Onderwijssoort%20eq%20%27A025279%27%20or%20Onderwijssoort%20eq%20%27A025282%27%20or%20Onderwijssoort%20eq%20%27T001345%27%29%20and%20substringof%28%27GM%27%2CRegiokenmerken%29
+OK nl_pupils_2024.json 203874 https://opendata.cbs.nl/ODataApi/odata/85701NED/TypedDataSet?$format=json&$filter=Geslacht%20eq%20%27T001038%27%20and%20Perioden%20eq%20%272024SJ00%27%20and%20%28Onderwijssoort%20eq%20%27A025279%27%20or%20Onderwijssoort%20eq%20%27A025282%27%20or%20Onderwijssoort%20eq%20%27T001345%27%29%20and%20substringof%28%27GM%27%2CRegiokenmerken%29
+OK nl_pupils_2025.json 203875 https://opendata.cbs.nl/ODataApi/odata/85701NED/TypedDataSet?$format=json&$filter=Geslacht%20eq%20%27T001038%27%20and%20Perioden%20eq%20%272025SJ00%27%20and%20%28Onderwijssoort%20eq%20%27A025279%27%20or%20Onderwijssoort%20eq%20%27A025282%27%20or%20Onderwijssoort%20eq%20%27T001345%27%29%20and%20substringof%28%27GM%27%2CRegiokenmerken%29
+OK nl_85701_Onderwijssoort.json 6429 https://opendata.cbs.nl/ODataApi/odata/85701NED/Onderwijssoort?$format=json
+ERR None HTTP Error 403: Table 86132NED will be released at 25-11-2026 06:30:00 https://opendata.cbs.nl/ODataApi/odata/86132NED/PersoonsEnHuishoudenskenmerken?$format=json
+ERR nl_86132_Perioden.json HTTP Error 403: Table 86132NED will be released at 25-11-2026 06:30:00 https://opendata.cbs.nl/ODataApi/odata/86132NED/Perioden?$format=json
+ERR nl_childpoverty_all.json HTTP Error 403: Table 86132NED will be released at 25-11-2026 06:30:00 https://opendata.cbs.nl/ODataApi/odata/86132NED/TypedDataSet?$format=json&$filter=PersoonsEnHuishoudenskenmerken%20eq%20%27%27%20and%20substringof%28%27GM%27%2CRegioS%29
+OK nl_duo_po_gemeenten.csv 674817 https://onderwijsdata.duo.nl/dataset/323841f2-75b9-4f03-9fe9-c4d2679f2b2b/resource/947ecf4a-3744-4f59-ad98-6ce4107dafa2/download/06-historische-leerlingenaantallen-po-gemeenten-api.csv
