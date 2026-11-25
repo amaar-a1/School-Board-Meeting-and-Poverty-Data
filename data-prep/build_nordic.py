@@ -271,8 +271,11 @@ def main():
             for v in json.load(open(os.path.join(IN, "nl_pupils.json")))["value"]:
                 if v["LeerlingenStudenten_1"]:
                     tot[v["Regiokenmerken"].strip()] = tot.get(v["Regiokenmerken"].strip(), 0) + v["LeerlingenStudenten_1"]
+            # Every school year since 2011/12 (CBS 85701NED, same pupils; fetch round 48), for change over time.
+            hp = os.path.join(IN, "nl_pupils_history.json")
+            ph = json.load(open(hp)) if os.path.exists(hp) else {}
             for g, n in tot.items():
-                put(code=g, **{"Enrollment": n, "Enrollment year": "2025/26"})
+                put(code=g, **{"Enrollment": n, "Enrollment year": "2025/26", "Enrollment by year": "; ".join(f"{y}: {v}" for y, v in sorted(ph.get(g, {}).items()))})
         fallback(cc, rows, put)
         meet = meetings(cc)
         for k, r in rows.items():
@@ -295,6 +298,7 @@ def main():
         out.sort(key=lambda r: r["District"])
         cols = ["District", "Locale", "Available Board Meetings", "Meetings type", "Meetings source", "Latest meeting", "Meetings by year", "Children", "Children in Low Income",
                 "Percentage of Children in Low Income", "Poverty note", "Poverty by year", "Enrollment", "Enrollment year", "People per km² (estimated)", "District ID"]
+        if any(r.get("Enrollment by year") for r in out): cols.insert(cols.index("Enrollment year") + 1, "Enrollment by year")
         with open(os.path.join(DOCS, f"{key}.csv"), "w", newline="", encoding="utf-8") as fo:
             w = csv.DictWriter(fo, fieldnames=cols, restval=""); w.writeheader(); w.writerows(out)
         for f in geo["features"]:

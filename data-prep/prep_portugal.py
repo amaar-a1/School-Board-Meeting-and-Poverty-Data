@@ -81,20 +81,30 @@ def pupils(d, out):
                 cols = [(j, str(c).strip()) for j, c in enumerate(rows[yi]) if c and re.fullmatch(r"\d{4}/\d{2}", str(c).strip())]
                 j, year = cols[-1]
                 name = str(rows[yi + 1][0]).strip()
-                tot = 0
+                tots = {y: 0 for _, y in cols}
                 for r in rows[yi + 1:]:
-                    lab = next((str(c).strip() for c in r[:j] if isinstance(c, str) and c.strip()), "")   # labels are indented by level
-                    if lab in ("Educação pré-escolar", "1.º Ciclo", "2.º Ciclo", "3.º Ciclo"): tot += num(r[j])
-                res[key] = tot; res["year"] = year; res["name"] = name
+                    lab = next((str(c).strip() for c in r[:cols[0][0]] if isinstance(c, str) and c.strip()), "")   # labels are indented by level
+                    if lab in ("Educação pré-escolar", "1.º Ciclo", "2.º Ciclo", "3.º Ciclo"):
+                        for jj, y in cols: tots[y] += num(r[jj])
+                res[key] = tots[year]; res[key + "_years"] = tots; res["year"] = year; res["name"] = name
             cands = [c for c in by.get(norm(res.get("name", "")), []) if region_of(c) in (None, reg) and (reg not in ("M", "Z", "F") or region_of(c) == reg)]
             if len(cands) == 1:
-                out[cands[0]].update({"pupils": res.get("all"), "pupils_public": res.get("public"), "pupils_year": res.get("year")}); found += 1
+                # every school year in the workbook (2015/16 on), keyed by the year it starts, for change over time
+                yrs = lambda t: {y[:4]: n for y, n in (res.get(t) or {}).items() if n}
+                out[cands[0]].update({"pupils": res.get("all"), "pupils_public": res.get("public"), "pupils_year": res.get("year"),
+                                      "pupil_years": yrs("all_years"), "public_pupil_years": yrs("public_years")}); found += 1
             else:
                 print("  not matched:", res.get("name"), reg, cands)
     print(found, "municipalities with pupils")
 
 
 def history(d):
+    """Also, when the ReNE volumes are in RAWDIR, pupils in every school year since 2015/16 (pupils(), above)."""
+    if glob.glob(os.path.join(d, "ReNE2025_Vol_*_XLSX.zip")):
+        p = os.path.join(HERE, "inputs", "portugal", "pt_ine.json"); out = json.load(open(p, encoding="utf-8"))
+        pupils(d, out)
+        json.dump(out, open(p, "w", encoding="utf-8"), ensure_ascii=False)
+        return
     """Population at year end from 2011 (0008273, all years) and RSI beneficiaries per 1,000 people of working age from
     2023 (0013420, all years; the series on the present regions starts then), from fetch round 47:
     python3 data-prep/prep_portugal.py --history RAWDIR"""

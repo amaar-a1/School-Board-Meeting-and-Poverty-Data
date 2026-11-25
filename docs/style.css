@@ -273,3 +273,8 @@ body.embed-stats [data-view="stats"] .note { display: none; }
 .hist-title { margin: 0; font-size: 1.05rem; }
 .chart-box.hist-box { height: 260px; }
 @media (max-width: 600px) { .chart-box.hist-box { height: 220px; } }
+.hist-controls { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; margin: 0 0 10px; font-size: .9rem; }
+.hist-controls label { display: flex; gap: 6px; align-items: center; color: var(--muted); }
+.hist-controls select, .hist-controls input { font: inherit; padding: 4px 8px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); color: var(--text); max-width: 100%; }
+.hist-controls input { width: 220px; }
+@media (max-width: 600px) { .hist-controls label { width: 100%; } .hist-controls select, .hist-controls input { flex: 1; min-width: 0; width: auto; } }

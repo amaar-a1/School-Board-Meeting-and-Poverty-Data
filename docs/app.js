@@ -520,38 +520,10 @@
     if (name === "stats" && current && window.SiteStats) window.SiteStats.render(current);
   }
 
-  // "Trends" tab: meetings per year (from the dates in the recordings' titles, or CivicSearch's monthly
-  // counts for US districts) and average child poverty per year (where a country publishes several years).
-  const trendCharts = {};
-  function yearMap(v) {
-    const out = {};
-    String(v || "").split(";").forEach((p) => { const [y, n] = p.split(":").map((x) => x && x.trim()); if (/^\d{4}$/.test(y) && !isNaN(Number(n))) out[y] = Number(n); });
-    return out;
-  }
+  // "Trends" tab: line graphs of meetings, poverty, enrollment, public schools' share and population by year, for
+  // the view, a region of it or each region, with a place's own line on top (history.js).
   function renderTrends() {
-    const rows = current.rows;
     const label = ((current.recordLabel || cfg.recordLabel || "districts")).toLowerCase();
-    const meet = {}, withDates = rows.filter((r) => r["Meetings by year"]);
-    const isUS = (r) => (r.Country || current.name) === "United States";
-    withDates.forEach((r) => Object.entries(yearMap(r["Meetings by year"])).forEach(([y, n]) => { meet[y] = (meet[y] || 0) + n; }));
-    const draw = (id, type, labels, data, yTitle) => {
-      if (trendCharts[id]) trendCharts[id].destroy();
-      const accent = cssVar("--accent"), text = cssVar("--muted"), grid = cssVar("--border");
-      trendCharts[id] = !labels.length ? null : new Chart($(id), { type,
-        data: { labels, datasets: [{ label: yTitle, data, backgroundColor: accent, borderColor: accent }] },
-        options: { maintainAspectRatio: false, plugins: { legend: { display: false } },
-          scales: { x: { ticks: { color: text }, grid: { color: grid } }, y: { beginAtZero: true, title: { display: true, text: yTitle, color: text }, ticks: { color: text }, grid: { color: grid } } } } });
-      $(id).closest(".chart-wrap").hidden = !labels.length;
-    };
-    const my = Object.keys(meet).sort();
-    draw("trend-meetings", "bar", my, my.map((y) => meet[y]), "Meetings recorded");
-    $("trend-meetings-note").textContent = my.length
-      ? `Dated meetings for ${withDates.length.toLocaleString()} ${label}` + (withDates.some(isUS)
-          ? (withDates.every(isUS) ? ", from CivicSearch's monthly counts, which run from January 2025 to early 2026 (only 2025 is complete)."
-            : ". US districts' dates are CivicSearch's monthly counts, which run from January 2025 to early 2026; elsewhere they're the dates in recordings' titles (undated recordings are left out). The current year is partial.")
-          : ", from the dates in their recordings' titles (undated recordings are left out, and the current year is partial).")
-      : "Meeting dates aren't available here: recordings without a date in their title can't be placed in a year.";
-    // Poverty, enrollment, public schools' share and population by year, as line graphs (history.js).
     if (window.SiteHistory) window.SiteHistory.renderTrends(current, label);
   }
 

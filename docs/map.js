@@ -221,7 +221,13 @@
   // "In a chosen year": the usual scales, the value taken from the place's "... by year" column (the year menu picks it).
   SCALES.povYear = SCALES.poverty; SCALES.enrYear = SCALES.enrollment; SCALES.pubYear = SCALES.public;
   SCALES.changePub = SCALES.change;
-  const YEAR_COL = { povYear: "Poverty by year", enrYear: "Enrollment by year", pubYear: "Public share by year" };
+  // Meetings recorded in a chosen year (from the dates in the recordings' titles, or CivicSearch's months).
+  SCALES.meetYear = {
+    breaks: [1, 3, 6, 12, 24],
+    colors: ["#f7fbff", "#c6dbef", "#6baed6", "#3182bd", "#08519c", "#08306b"],
+    labels: ["None that year", "1–2", "3–5", "6–11", "12–23", "24 or more"]
+  };
+  const YEAR_COL = { povYear: "Poverty by year", enrYear: "Enrollment by year", pubYear: "Public share by year", meetYear: "Meetings by year" };
   // Area of a border in km² (spherical polygons), for places whose data has a population but no density (US districts).
   const R_KM = 6371.0088, rad = (d) => d * Math.PI / 180;
   function ringArea(ring) {
@@ -508,6 +514,10 @@
     if (metric === "change") { const c = povChange(row); v = c ? c.d : NaN; }
     if (metric === "changePub") { const c = povChange(row, "Public share by year"); v = c ? c.d : NaN; }
     if (YEAR_COL[metric]) { const y = selectedYear(); const p = yearPairs(row && row[YEAR_COL[metric]]).find((q) => q[0] === y); v = p ? p[1] : NaN; }
+    // A place with meetings in other years, or none found at all, had none that year; one whose recordings carry no
+    // dates can't be placed in a year (grey). A stand-in body counts as none when "school boards only" is ticked.
+    if (metric === "meetYear" && isNaN(v)) v = row && row["Meetings by year"] ? 0 : (toNumber(row && row["Available Board Meetings"]) > 0 ? NaN : 0);
+    if (metric === "meetYear" && boardsOnly() && standIn(row)) v = 0;
     if (metric === "changeEnr") { const c = pctChange(row, "Enrollment by year"); v = c ? c.d : NaN; }
     if (metric === "changePop") { const c = pctChange(row, "Population by year"); v = c ? c.d : NaN; }
     if (metric === "perYear") { const q = boardsOnly() && standIn(row) ? { v: 0 } : perYear(row); v = q ? q.v : NaN; }
@@ -745,16 +755,19 @@
         `<span class="map-faded">Enrollment is counted differently from country to country (pupils at the place's schools, or pupils living there; some count only primary schools): see each view's note. Where no count is published, the figure is an estimate (school-age children living there), marked in the tooltip</span>`);
     if (metricNow() === "change")
       items.push(`<span><i style="background:${NO_DATA}"></i>Only one poverty year published</span>`,
-        `<span class="map-faded">The change between the earliest and latest years in the place's Poverty by year column, in percentage points of its own measure. Only some countries publish more than one year (the US, the UK, Germany, Spain, Mexico, the Philippines, Malaysia, Portugal, Czechia, the Baltic countries and others); the years and measures differ, so compare places within a country</span>`);
-    if (YEAR_COL[metricNow()])
+        `<span class="map-faded">The change between the earliest and latest years in the place's Poverty by year column, in percentage points of its own measure. Only some countries publish more than one year (the US, the UK, Ireland, Germany, Italy, Spain, Belgium, Mexico, Chile, the Philippines, Malaysia, Taiwan, Portugal, Czechia, the Baltic countries and others); the years and measures differ, so compare places within a country</span>`);
+    if (YEAR_COL[metricNow()] && metricNow() !== "meetYear")
       items.push(`<span><i style="background:${NO_DATA}"></i>No figure for ${selectedYear() || "that year"}</span>`,
         `<span class="map-faded">${metricNow() === "povYear" ? "Each place's own poverty measure" : metricNow() === "enrYear" ? "Pupils, as each country counts them" : "Public schools' share of pupils"} in ${selectedYear() || "the chosen year"}. Only some countries publish several years; pick the year above, or press Play to step through them</span>`);
     if (metricNow() === "changePub")
       items.push(`<span><i style="background:${NO_DATA}"></i>Only one year published</span>`,
-        `<span class="map-faded">The change in public schools' share of pupils between the earliest and latest years given, in percentage points. So far for Indonesia (2021–2025)</span>`);
+        `<span class="map-faded">The change in public schools' share of pupils between the earliest and latest years given, in percentage points. So far for Portugal (2015–2024) and Indonesia (2021–2025)</span>`);
     if (["changeEnr", "changePop"].includes(metricNow()))
       items.push(`<span><i style="background:${NO_DATA}"></i>Only one year published</span>`,
-        `<span class="map-faded">The change in ${metricNow() === "changeEnr" ? "enrollment" : "population"} between the earliest and latest years given, in percent. So far for ${metricNow() === "changeEnr" ? "the US (2018–2023), Indonesia, Malaysia, Slovenia, South Korea, Lithuania and Georgia" : "Portugal, Slovenia, Paraguay (projections), Malaysia, Georgia and the Baltic countries"}</span>`);
+        `<span class="map-faded">The change in ${metricNow() === "changeEnr" ? "enrollment" : "population"} between the earliest and latest years given, in percent. So far for ${metricNow() === "changeEnr" ? "the US (2018–2023), the Netherlands, Portugal, Indonesia, Malaysia, Slovenia, South Korea, Lithuania and Georgia" : "Portugal, Slovenia, Paraguay (projections), Malaysia, Georgia and the Baltic countries"}</span>`);
+    if (metricNow() === "meetYear")
+      items.push(`<span><i style="background:${NO_DATA}"></i>Meetings found, but undated</span>`,
+        `<span class="map-faded">Meetings recorded in ${selectedYear() || "the chosen year"}, from the dates in the recordings' titles (US districts: CivicSearch's monthly counts, from January 2025). The current year is partial; press Play to step through the years</span>`);
     if (metricNow() === "perYear")
       items.push(`<span><i style="background:${NO_DATA}"></i>Meetings found, but no dates to count years from</span>`,
         `<span class="map-faded">Meetings found divided by the years since the first one found (from the recordings' dates), so a council that began posting recently isn't ranked below one with a long archive</span>`);
@@ -792,6 +805,7 @@
     if (!col) { stopPlay(); return; }
     const ys = new Set();
     ((current && current.rows) || []).forEach((r) => yearPairs(r[col]).forEach((p) => ys.add(p[0])));
+    if (col === "Meetings by year") [...ys].forEach((y) => { if (y < 2010) ys.delete(y); });   // a few stray early recordings
     const list = [...ys].sort(), keep = selectedYear() || +(window.SiteLinks && window.SiteLinks.get("year")) || 0;
     sel.innerHTML = "";
     list.forEach((y) => sel.add(new Option(String(y), String(y))));
