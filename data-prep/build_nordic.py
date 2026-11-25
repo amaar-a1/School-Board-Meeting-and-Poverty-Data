@@ -7,7 +7,8 @@ Municipalities run schools in these countries, so each municipality is the board
   Sweden   SCB TAB6685: people 0-19 with low economic standard (60% of median), 2024
   Finland  THL Sotkanet 228: at-risk-of-poverty rate for children (60% of median), latest year
   Denmark  Statistics Denmark LABY07: children 0-17 in relative poverty (50% of median), 2024
-  Netherlands CBS 86132NED: children in poverty (CBS's "not much but sufficient" criterion), 2024
+  Netherlands CBS 86132NED: children in poverty (CBS's "not much but sufficient" criterion), 2024, and every year
+    from 2018 in Poverty by year (fetch round 52; CBS stopped updating the table on 25 November 2026)
 - Where a municipality's child rate isn't published, the next best figure is used and the "Poverty note"
   column says so: the all-ages low-income rate (Norway: SSB 12944 all ages; Finland: Sotkanet 3099),
   else the unemployment rate (Finland: Sotkanet 181), else the national child rate (Christiansø).
