@@ -1,0 +1,25 @@
+{
+  "odata.metadata":"https://opendata.cbs.nl/ODataApi/OData/86132NED/$metadata#Cbs.OData.WebAPI.DataProperties","value":[
+    {
+      "odata.type":"Cbs.OData.Dimension","ID":0,"Position":0,"ParentID":null,"Type":"Dimension","Key":"PersoonsEnHuishoudenskenmerken","Title":"Persoons- en huishoudenskenmerken","Description":""
+    },{
+      "odata.type":"Cbs.OData.GeoDimension","ID":1,"Position":1,"ParentID":null,"Type":"GeoDimension","Key":"RegioS","Title":"Regio's","Description":"","MapYear":2025
+    },{
+      "odata.type":"Cbs.OData.TimeDimension","ID":2,"Position":2,"ParentID":null,"Type":"TimeDimension","Key":"Perioden","Title":"Perioden","Description":"","ReleasePolicy":true
+    },{
+      "odata.type":"Cbs.OData.Topic","ID":3,"Position":3,"ParentID":null,"Type":"Topic","Key":"KinderenTotaal_1","Title":"Kinderen (totaal)","Description":null,"Datatype":"Double","Unit":"x 1 000","Decimals":1,"Default":"Missing","PresentationType":"Absolute"
+    },{
+      "odata.type":"Cbs.OData.TopicGroup","ID":4,"Position":null,"ParentID":null,"Type":"TopicGroup","Key":"","Title":"Kinderen in armoede","Description":null
+    },{
+      "odata.type":"Cbs.OData.Topic","ID":5,"Position":4,"ParentID":4,"Type":"Topic","Key":"KinderenArm_2","Title":"Kinderen arm","Description":"Het aantal kinderen in arme huishoudens.","Datatype":"Double","Unit":"x 1 000","Decimals":1,"Default":"Missing","PresentationType":"Absolute"
+    },{
+      "odata.type":"Cbs.OData.Topic","ID":6,"Position":5,"ParentID":4,"Type":"Topic","Key":"KinderenLangdurigArm_3","Title":"Kinderen langdurig arm","Description":"Het aantal kinderen in huishoudens die langdurig (minstens drie jaar op rij) arm zijn.","Datatype":"Double","Unit":"x 1 000","Decimals":1,"Default":"Missing","PresentationType":"Absolute"
+    },{
+      "odata.type":"Cbs.OData.TopicGroup","ID":7,"Position":null,"ParentID":null,"Type":"TopicGroup","Key":"","Title":"Kinderen in armoede, relatief","Description":null
+    },{
+      "odata.type":"Cbs.OData.Topic","ID":8,"Position":6,"ParentID":7,"Type":"Topic","Key":"KinderenArmRelatief_4","Title":"Kinderen arm, relatief","Description":"Het percentage kinderen in arme huishoudens.","Datatype":"Double","Unit":"%","Decimals":1,"Default":"Missing","PresentationType":"Relative"
+    },{
+      "odata.type":"Cbs.OData.Topic","ID":9,"Position":7,"ParentID":7,"Type":"Topic","Key":"KinderenLangdurigArmRelatief_5","Title":"Kinderen langdurig arm, relatief","Description":"Het percentage kinderen in huishoudens die langdurig (minstens drie jaar op rij) arm zijn.","Datatype":"Double","Unit":"%","Decimals":1,"Default":"Missing","PresentationType":"Relative"
+    }
+  ]
+}

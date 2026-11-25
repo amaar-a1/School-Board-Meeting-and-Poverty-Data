@@ -1,0 +1,71 @@
+{
+  "odata.metadata":"https://opendata.cbs.nl/ODataApi/OData/86132NED/$metadata#Cbs.OData.WebAPI.PersoonsEnHuishoudenskenmerken","value":[
+    {
+      "Key":"T009002","Title":"Totaal personen","Description":"","CategoryGroupID":1
+    },{
+      "Key":"80002  ","Title":"Leeftijd: 0 tot 4 jaar","Description":"","CategoryGroupID":3
+    },{
+      "Key":"80003  ","Title":"Leeftijd: 4 tot 12 jaar","Description":"","CategoryGroupID":3
+    },{
+      "Key":"52020  ","Title":"Leeftijd: 12 tot 18 jaar","Description":"","CategoryGroupID":3
+    },{
+      "Key":"A025340","Title":"Hoofdkostwinner: tot 25 jaar","Description":"De hoofdkostwinner is de persoon in het huishouden met de belangrijkste sociaaleconomische positie.","CategoryGroupID":5
+    },{
+      "Key":"A025342","Title":"Hoofdkostwinner: 25 tot 35 jaar","Description":"De hoofdkostwinner is de persoon in het huishouden met de belangrijkste sociaaleconomische positie.","CategoryGroupID":5
+    },{
+      "Key":"A025347","Title":"Hoofdkostwinner: 35 tot 45 jaar","Description":"De hoofdkostwinner is de persoon in het huishouden met de belangrijkste sociaaleconomische positie.","CategoryGroupID":5
+    },{
+      "Key":"A025350","Title":"Hoofdkostwinner: 45 tot 55 jaar","Description":"De hoofdkostwinner is de persoon in het huishouden met de belangrijkste sociaaleconomische positie.","CategoryGroupID":5
+    },{
+      "Key":"A025354","Title":"Hoofdkostwinner: 55 tot 65 jaar","Description":"De hoofdkostwinner is de persoon in het huishouden met de belangrijkste sociaaleconomische positie.","CategoryGroupID":5
+    },{
+      "Key":"A025358","Title":"Hoofdkostwinner: 65 tot 75 jaar","Description":"De hoofdkostwinner is de persoon in het huishouden met de belangrijkste sociaaleconomische positie.","CategoryGroupID":5
+    },{
+      "Key":"A025361","Title":"Hoofdkostwinner: 75 jaar of ouder","Description":"De hoofdkostwinner is de persoon in het huishouden met de belangrijkste sociaaleconomische positie.","CategoryGroupID":5
+    },{
+      "Key":"A053214","Title":"Hkw: geb. in NL, ouders in NL","Description":"De hoofdkostwinner van het huishouden en zijn/haar beide ouders zijn geboren in Nederland.","CategoryGroupID":6
+    },{
+      "Key":"A053215","Title":"Hkw: geb. in NL, ouder(s) buiten NL","Description":"De hoofdkostwinner van het huishouden is geboren in Nederland en \u00e9\u00e9n of twee van zijn/haar ouders zijn geboren in het buitenland.","CategoryGroupID":6
+    },{
+      "Key":"A053216","Title":"Hkw: geb. in NL, 1 ouder in NL","Description":"De hoofdkostwinner van het huishouden en \u00e9\u00e9n van zijn/haar ouders zijn geboren in Nederland.","CategoryGroupID":6
+    },{
+      "Key":"A053217","Title":"Hkw: geb. in NL, 2 ouders buiten NL","Description":"De hoofdkostwinner van het huishouden is geboren in Nederland en zijn/haar beide ouders zijn geboren in het buitenland.","CategoryGroupID":6
+    },{
+      "Key":"A053218","Title":"Hkw: geboren buiten Nederland","Description":"De hoofdkostwinner van het huishouden is geboren in het buitenland.","CategoryGroupID":6
+    },{
+      "Key":"1050190","Title":"Type: Eenoudergezin","Description":"Particulier huishouden bestaande uit \u00e9\u00e9n ouder met \u00e9\u00e9n of meer thuiswonende kinderen.","CategoryGroupID":7
+    },{
+      "Key":"1016090","Title":"Type: Paar, met kind(eren)","Description":"Meerpersoonshuishouden bestaande uit een paar met (een) thuiswonend(e) kind(eren)\r\n\r\nMeerpersoonshuishouden:\r\nEen particulier huishouden bestaande uit twee of meer personen.\r\n\r\nPaar:\r\nTwee op basis van huwelijk, partnerschapsregistratie of samenwoonrelatie bij elkaar behorende personen.\r\n\r\nThuiswonend kind:\r\nPersoon ongeacht leeftijd of burgerlijke staat die een kind-ouder relatie heeft met \u00e9\u00e9n of twee tot het huishouden behorende ouders.\r\nOnder thuiswonende kinderen worden ook begrepen adoptie- en stiefkinderen maar geen pleegkinderen.","CategoryGroupID":7
+    },{
+      "Key":"1050220","Title":"Type: Meerpersoonshuishouden, overig","Description":"Particulier huishouden waarvan nog andere personen dan de hoofdkostwinner of referentiepersoon en zijn/haar eventuele partner en/of inwonende kinderen deel uitmaken. Het gaat hier bijvoorbeeld om huishoudens met inwonende verwanten.","CategoryGroupID":7
+    },{
+      "Key":"1013395","Title":"Bron: Inkomen als werknemer/zelfstandige","Description":"Huishoudens waarvoor het loon van werknemer of het inkomen als zelfstandige de voornaamste inkomensbron vormt.","CategoryGroupID":8
+    },{
+      "Key":"1013400","Title":"Bron: Inkomen als werknemer","Description":"Huishoudens waarvoor het loon van werknemer de voornaamste inkomensbron vormt.","CategoryGroupID":8
+    },{
+      "Key":"1013601","Title":"Bron: Inkomen als zelfstandige (totaal)","Description":"Huishoudens waarvoor het inkomen als zelfstandig ondernemer, directeur-grootaandeelhouder en overig zelfstandige de voornaamste inkomensbron vormt.","CategoryGroupID":8
+    },{
+      "Key":"1013650","Title":"Bron: Overdrachtsinkomen","Description":"Huishoudens waarvoor een uitkering, pensioen of studiefinanciering de voornaamste inkomensbron vormt.","CategoryGroupID":8
+    },{
+      "Key":"1014050","Title":"Bron: Studiefinanciering","Description":"Huishoudens waarvoor studiefinanciering de voornaamste inkomensbron vormt.","CategoryGroupID":8
+    },{
+      "Key":"1013700","Title":"Bron: Uitkering inkomensverzekering","Description":"Huishoudens waarvoor een uitkering inkomensverzekering wegens werkloosheid, ziekte, arbeidsongeschiktheid en pensioen de voornaamste inkomensbron vormt.","CategoryGroupID":8
+    },{
+      "Key":"1013750","Title":"Bron: Uitkering werkloosheid","Description":"Huishoudens waarvoor een uitkering inkomensverzekering wegens werkloosheid de voornaamste inkomensbron vormt.","CategoryGroupID":8
+    },{
+      "Key":"1013800","Title":"Bron: Uitkering arbeidsongeschiktheid","Description":"Huishoudens waarvoor een uitkering inkomensverzekering wegens ziekte of arbeidsongeschiktheid de voornaamste inkomensbron vormt.","CategoryGroupID":8
+    },{
+      "Key":"1013850","Title":"Bron: Uitkering pensioen","Description":"Huishoudens waarvoor een uitkering inkomensverzekering wegens pensioen of inkomen uit vermogen de voornaamste inkomensbron vormt.","CategoryGroupID":8
+    },{
+      "Key":"1013900","Title":"Bron: Uitkering sociale voorziening","Description":"Huishoudens waarvoor een uitkering sociale voorziening (bijstand en overige uitkering sociale voorziening) de voornaamste inkomensbron vormt.","CategoryGroupID":8
+    },{
+      "Key":"1014800","Title":"Woningbezit: eigen woning","Description":"Een huishouden woont in een eigen woning of in een gehuurde woning. Van de huishoudens die een woning huren, is bepaald of zij wel of geen huurtoeslag ontvangen hebben.","CategoryGroupID":9
+    },{
+      "Key":"1014850","Title":"Woningbezit: huurwoning","Description":"Een huishouden woont in een eigen woning of in een gehuurde woning. Van de huishoudens die een woning huren, is bepaald of zij wel of geen huurtoeslag ontvangen hebben.","CategoryGroupID":9
+    },{
+      "Key":"1014950","Title":"Woningbezit: huurwoning geen huurtoeslag","Description":"Een huishouden woont in een eigen woning of in een gehuurde woning. Van de huishoudens die een woning huren, is bepaald of zij wel of geen huurtoeslag ontvangen hebben.","CategoryGroupID":9
+    },{
+      "Key":"1014900","Title":"Woningbezit: huurwoning met huurtoeslag","Description":"Een huishouden woont in een eigen woning of in een gehuurde woning. Van de huishoudens die een woning huren, is bepaald of zij wel of geen huurtoeslag ontvangen hebben.","CategoryGroupID":9
+    }
+  ]
+}
