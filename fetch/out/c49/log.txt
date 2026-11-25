@@ -1,0 +1,22 @@
+  retry 0 HTTP Error 429: Too Many Requests https://bdl.stat.gov.pl/api/v1/data/by-variable/259889?unit-level=6&year=2017&page-size=100&page=1&format=json&lang=pl
+  retry 1 HTTP Error 429: Too Many Requests https://bdl.stat.gov.pl/api/v1/data/by-variable/259889?unit-level=6&year=2017&page-size=100&page=1&format=json&lang=pl
+  retry 2 HTTP Error 429: Too Many Requests https://bdl.stat.gov.pl/api/v1/data/by-variable/259889?unit-level=6&year=2017&page-size=100&page=1&format=json&lang=pl
+  retry 3 HTTP Error 429: Too Many Requests https://bdl.stat.gov.pl/api/v1/data/by-variable/259889?unit-level=6&year=2017&page-size=100&page=1&format=json&lang=pl
+  retry 4 HTTP Error 429: Too Many Requests https://bdl.stat.gov.pl/api/v1/data/by-variable/259889?unit-level=6&year=2017&page-size=100&page=1&format=json&lang=pl
+PL 2017: 3739
+PL 2018: 3753
+  retry 0 HTTP Error 500: Internal Server Error https://bdl.stat.gov.pl/api/v1/data/by-variable/259889?unit-level=6&year=2019&page-size=100&page=21&format=json&lang=pl
+  retry 1 HTTP Error 500: Internal Server Error https://bdl.stat.gov.pl/api/v1/data/by-variable/259889?unit-level=6&year=2019&page-size=100&page=21&format=json&lang=pl
+  retry 2 HTTP Error 500: Internal Server Error https://bdl.stat.gov.pl/api/v1/data/by-variable/259889?unit-level=6&year=2019&page-size=100&page=21&format=json&lang=pl
+  retry 3 HTTP Error 500: Internal Server Error https://bdl.stat.gov.pl/api/v1/data/by-variable/259889?unit-level=6&year=2019&page-size=100&page=21&format=json&lang=pl
+  retry 4 HTTP Error 500: Internal Server Error https://bdl.stat.gov.pl/api/v1/data/by-variable/259889?unit-level=6&year=2019&page-size=100&page=21&format=json&lang=pl
+PL 2019: 3772
+PL 2020: 3780
+PL 2021: 3800
+  retry 0 HTTP Error 500: Internal Server Error https://bdl.stat.gov.pl/api/v1/data/by-variable/259889?unit-level=6&year=2022&page-size=100&page=3&format=json&lang=pl
+  retry 1 HTTP Error 500: Internal Server Error https://bdl.stat.gov.pl/api/v1/data/by-variable/259889?unit-level=6&year=2022&page-size=100&page=3&format=json&lang=pl
+  retry 2 HTTP Error 500: Internal Server Error https://bdl.stat.gov.pl/api/v1/data/by-variable/259889?unit-level=6&year=2022&page-size=100&page=3&format=json&lang=pl
+  retry 3 HTTP Error 500: Internal Server Error https://bdl.stat.gov.pl/api/v1/data/by-variable/259889?unit-level=6&year=2022&page-size=100&page=3&format=json&lang=pl
+  retry 4 HTTP Error 500: Internal Server Error https://bdl.stat.gov.pl/api/v1/data/by-variable/259889?unit-level=6&year=2022&page-size=100&page=3&format=json&lang=pl
+PL 2022: 3820
+PL 2023: 3850
