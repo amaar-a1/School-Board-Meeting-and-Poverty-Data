@@ -1,0 +1,63 @@
+OK None 1508289 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2001
+OK None 1508301 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2002
+OK None 1508319 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2003
+OK None 1508348 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2004
+OK None 1508353 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2005
+OK None 1508374 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2006
+OK None 352 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2007
+OK None 1508483 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2008
+OK None 1508496 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2009
+OK None 352 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2010
+OK None 1508555 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2011
+OK None 1508564 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2012
+OK None 1508611 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2013
+OK None 1508628 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2014
+OK None 1508639 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2015
+OK None 1508649 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2016
+OK None 1508646 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2017
+OK None 1508643 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2018
+OK None 1508658 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2019
+OK None 1508662 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2020
+OK None 1508660 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2021
+OK None 1508654 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2024
+OK None 1508654 https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/2025
+BR 5571 municipalities
+OK co_PPED-AreaMun-2018-2042_VP.xlsx 3948350 https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/PPED-AreaMun-2018-2042_VP.xlsx
+ERR mx_search_proyecciones.json HTTP Error 403: Forbidden https://datos.gob.mx/busca/api/3/action/package_search?rows=20&q=proyecciones%20poblacion%20municipios
+MX ERR the JSON object must be str, bytes or bytearray, not NoneType
+ERR mx_search_conapo.json HTTP Error 403: Forbidden https://datos.gob.mx/busca/api/3/action/package_search?rows=20&q=conapo%20municipios
+MX ERR the JSON object must be str, bytes or bytearray, not NoneType
+ERR ke_search_14.html <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)> https://www.knbs.or.ke/?s=poverty%20report
+ERR ke_search_25.html <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)> https://www.knbs.or.ke/?s=Kenya%20Poverty%20Report%202021
+ERR ke_search_25.html <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)> https://www.knbs.or.ke/?s=Kenya%20Poverty%20Report%202020
+OK lk_page_57.html 97097 http://www.statistics.gov.lk/Poverty/StaticalInformation/
+  LK https://www.statistics.gov.lk/Poverty/Publications
+  LK https://www.statistics.gov.lk/Poverty/SL_glance
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/ClassifiesGNDivisionsPoverty
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/GlobalMultidimensionalPovertyforSriLanka
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/MultidimensionalPovertyinSriLanka-2019
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/OfficialPovertyLineSriLanka
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/OfficialPovertyLineSriLanka_2002Si
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/PovertyHeadcountRatioBrief-DecompositionConsumptionPoverty
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/PovertyIndicators-2016
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/PovertyIndicators-2019
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/PovertyIndicators-HIES-2012-13
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/PovertyIndicators-HIES2009-10
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/PovertyIndicators2006-07
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/PovertyIndicators2006-07_Si
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/PovertySriLanka
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/PovertyStatistics-IndicatorsSriLanka
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/PovertyStatisticsDSDivision
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/SpatialDistributionPovertySriLanka-2012-13
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/SriLankaPovertyReview-2009-10-English
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/SriLankaPovertyReview-2009-10-Sinhala
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/SriLankaPovertyReview-2009-10-Tamil
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/TimeTrendPovertyIndicators1981-2004
+  LK https://www.statistics.gov.lk/Poverty/StaticalInformation/UpdatedDistrictOfficialPovertyLines
+  LK https://www.statistics.gov.lk/Poverty/Visualizations
+  LK https://www.statistics.gov.lk/povertyLine/2021_Rebase
+  LK https://www.statistics.gov.lk/povertyLine/2022
+  LK https://www.statistics.gov.lk/povertyLine/2022_new
+OK lk_page_79.html 148 http://www.statistics.gov.lk/Poverty/StaticalInformation/PovertyIndicators-2016
+OK lk_page_74.html 41 http://www.statistics.gov.lk/Poverty/StaticalInformation/PovertyIndicators
