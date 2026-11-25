@@ -1135,6 +1135,9 @@ def poland():
     pup = json.load(open(pup_f, encoding="utf-8")) if os.path.exists(pup_f) else {}
     geo = {f["properties"]["GISCO_ID"][5:]: f for f in json.load(open(os.path.join(d, "lau_PL.geojson"), encoding="utf-8"))["features"]}
     names, vals = bdl["names"], bdl["values"]
+    # The same share for 2015-2023 (BDL variable 259889, fetch rounds 48-49), for change over time.
+    hp = os.path.join(d, "pl_bdl_history.json")
+    phist = json.load(open(hp, encoding="utf-8")) if os.path.exists(hp) else {}
     units = [u for u in names if u[-1] in PL_KIND]
     dup = Counter((u[2:4], names[u]) for u in units)
     rows, feats = [], []
@@ -1149,10 +1152,12 @@ def poland():
         dens = p.get("POP_DENS_2024") or 0
         did = f"PL-{u}"
         pp = pup.get(u, {}); enr = pp.get("pupils", "")
-        rows.append({"District": name, "Region": PL_VOIV.get(u[2:4], ""), "Population": pop,
+        rows.append({**(history_cols({"pov_years": {y: f"{v:.1f}" for y, v in {**phist.get(u, {}), **share}.items()}}) if share else {}),
+                     "District": name, "Region": PL_VOIV.get(u[2:4], ""), "Population": pop,
                      "Percentage of Children in Low Income": f"{share[y]:.1f}%" if share else "", "Poverty year": y,
                      "Poverty note": "Share of children aged 0-17 whose parents receive the means-tested family benefit (zasiłek rodzinny), "
-                                     f"{y} (Statistics Poland, Local Data Bank)" if share else "",
+                                     f"{y} (Statistics Poland, Local Data Bank)" + ("; earlier years since 2015 are in Poverty by year. The benefit's income limit is set in złoty and "
+                                     "changes only now and then, so part of a fall over the years can be incomes rising past the limit rather than less need" if phist.get(u) else "") if share else "",
                      "Children on family benefit": round(kids[max(kids)]) if kids else "",
                      "Social assistance (% of people)": f"{sa[max(sa)] / 100:.1f}%" if sa else "",
                      "Enrollment": enr, "Public school enrollment": pp.get("pupils_public", ""),
