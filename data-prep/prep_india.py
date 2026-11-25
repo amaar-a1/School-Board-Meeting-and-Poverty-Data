@@ -43,6 +43,7 @@ def tables(pdf):
             cols = [c["w"] for c in cols if len(c["w"]) >= 3]
             if len(cols) < 4: continue
             h5 = sorted(cols[2], key=lambda w: w["top"])          # NFHS-5 headcount: the third % column (H4, A4, H5, A5)
+            h4 = sorted(cols[0], key=lambda w: w["top"])          # NFHS-4 (2015-16) headcount, same rows
             left = min(w["x0"] for c in cols for w in c)
             nw = [w for w in words if w["x1"] < left - 2 and w["top"] > hdr + 3 and not re.fullmatch(r"[\d.%]+", w["text"])]
             lines = []
@@ -62,7 +63,9 @@ def tables(pdf):
                     k = min(near, key=lambda k: abs(lines[k]["top"] - l["top"])); names[owner[k]].append((l["top"], l["t"]))
             names = {i: [t for _, t in sorted(v)] for i, v in names.items()}
             rows = [(" ".join(names[i]), float(v["text"][:-1])) for i, v in enumerate(h5)]
-            out.append({"page": pno + 1, "state": (m.group(1) or m.group(2)).strip() if m else "", "rows": rows})
+            out.append({"page": pno + 1, "state": (m.group(1) or m.group(2)).strip() if m else "", "rows": rows,
+                        # the NFHS-4 figure on the same line (districts created since 2015-16 have none)
+                        "h4": [next((float(u["text"][:-1]) for u in h4 if abs(mid(u) - mid(v)) < 4), None) for v in h5]})
     return out
 
 
@@ -228,5 +231,28 @@ def main(pdf, wiki, geo5, meetdir=None):
     print("no population:", nopop[:40], len(nopop))
 
 
-if __name__ == "__main__":
+def history(pdf, geo5):
+    """Adds each district's NFHS-4 (2015-16) headcount ratio from the same district tables to ind_data.json, as
+    mpi_years {"2016": NFHS-4, "2020": NFHS-5} (the surveys' middle years), for change over time. Districts read from the
+    state charts (Bihar and a few small states and territories) have the 2019-21 figure only.
+    Usage: python3 data-prep/prep_india.py --history NITI_PDF GEODIR"""
+    rows = []
+    for t in tables(pdf):
+        if t["state"] == "INDIA" or not t["h4"]: continue
+        st = t["state"] or "ANDAMAN & NICOBAR ISLANDS"
+        rows += [(st, n, h4) for (n, _), h4 in zip(t["rows"], t["h4"]) if n and h4 is not None]
+    res, miss = match(rows, load(geo5))
+    p = os.path.join(OUT, "ind_data.json"); data = json.load(open(p, encoding="utf-8"))
+    n = 0
+    for sid, x in data.items():
+        if sid in res and x.get("mpi") is not None:
+            v = [r[2] for r in res[sid]]
+            x["mpi_years"] = {"2016": round(sum(v) / len(v), 2), "2020": x["mpi"]}; n += 1
+    json.dump(data, open(p, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print(n, "districts with both surveys; unmatched", len(miss))
+
+
+if __name__ == "__main__" and sys.argv[1] == "--history":
+    history(*sys.argv[2:])
+elif __name__ == "__main__":
     main(*sys.argv[1:])

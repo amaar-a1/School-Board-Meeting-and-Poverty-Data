@@ -12,7 +12,8 @@
 Then, after build_latam.py, run data-prep/simplify_borders.sh (a lighter copy of the map file for zoomed-out views).
 History (python3 data-prep/prep_taiwan.py --history RAWDIR): the same stand-in at the end of each year from 2018 (the
 fourth quarter of each yearly sheet of tables 1.1.1 and 1.1.5; table 1.1.5's sheets before 2018 are laid out
-differently), with the population the low-income table's rate implies (persons / rate), into tw_data.json's pov_years.
+differently), with the population the low-income table's rate implies (persons / rate), into tw_data.json's pov_years. (That implied population isn't kept: the rate has two decimals, so it's off by up to
+about 0.3%, as much as a year's change.)
 Usage: python3 data-prep/prep_taiwan.py RAWDIR [RAWDIR ...] GEODIR
 """
 import csv, glob, io, json, os, re, sys

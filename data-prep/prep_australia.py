@@ -50,5 +50,29 @@ def main(d, dss):
     print(len(out), "LGAs;", got, "with DSS figures;", "missing:", [c for c in out if "support" not in out[c]][:20], period)
 
 
-if __name__ == "__main__":
+def history(raw):
+    """The same count of working-age income support recipients for June of each year downloaded (au_dss_june_YYYY.xlsx,
+    fetch round 50: 2016-2025), into au_data.json's support_years. Before JobSeeker Payment replaced them in March
+    2020, Newstart Allowance and Sickness Allowance are counted in its place.
+    Usage: python3 data-prep/prep_australia.py --history RAWDIR"""
+    p = os.path.join(OUT, "au_data.json"); out = json.load(open(p, encoding="utf-8"))
+    older = SUPPORT + ("Newstart Allowance", "Sickness Allowance")
+    for f in sorted(glob.glob(os.path.join(raw, "au_dss_june_20??.xlsx"))):
+        y = re.search(r"(20\d\d)", os.path.basename(f)).group(1)
+        wb = openpyxl.load_workbook(f, read_only=True)
+        rows = list(wb[next(s for s in wb.sheetnames if s.strip() == "LGA")].iter_rows(values_only=True))
+        hi = next(i for i, r in enumerate(rows) if r and r[0] == "LGA"); h = [str(c or "").strip() for c in rows[hi]]
+        got = 0
+        for r in rows[hi + 1:]:
+            if not r or not isinstance(r[0], (int, float)): continue
+            c = str(int(r[0])); c = RENAMED.get(c, c)
+            if c in out:
+                out[c].setdefault("support_years", {})[y] = sum(r[j] for j in range(2, len(h)) if h[j] in older and isinstance(r[j], (int, float))); got += 1
+        print(y, got)
+    json.dump(out, open(p, "w", encoding="utf-8"))
+
+
+if __name__ == "__main__" and sys.argv[1] == "--history":
+    history(sys.argv[2])
+elif __name__ == "__main__":
     main(sys.argv[1], sys.argv[2])
