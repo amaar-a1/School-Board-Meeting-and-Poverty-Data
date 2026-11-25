@@ -91,4 +91,12 @@ for name, page, pat in (("mx", "https://www.gob.mx/conapo/documentos/reconstrucc
         get(f"{name}_" + os.path.basename(urllib.parse.urlparse(l).path)[-90:], l, timeout=1200)
 # 8. Argentina: INDEC population projections by province, 2010-2040
 get("ar_proy_prov.xls", "https://www.indec.gob.ar/ftp/cuadros/poblacion/c1_proyecciones_prov_2010_2040.xls")
+log.flush()
+# Files too big for GitHub (100 MB): gzipped.
+import gzip, shutil
+for f in os.listdir(OUT):
+    p = f"{OUT}/{f}"
+    if os.path.getsize(p) > 50e6 and not f.endswith(".gz"):
+        with open(p, "rb") as a, gzip.open(p + ".gz", "wb") as b: shutil.copyfileobj(a, b)
+        os.remove(p)
 log.close()
