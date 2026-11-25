@@ -7,6 +7,9 @@ Raw files (Statbel open data, downloaded on GitHub's runner):
   municipality and age;
 - TF_PSNL_INC_TAX_MUNTY.xlsx: income tax statistics by municipality (the latest year, 2023, is before the 2025
   mergers, so merged municipalities' figures are added up with be_mergers_2025.json).
+History (python3 data-prep/prep_belgium.py --history RAWDIR): PPS Social Integration's integration-income recipients
+per 1,000 inhabitants for each year downloaded (mi_ris_cities_YYYY01-YYYY12, Excel files despite the name, fetch round
+bp6: 2024 and 2025), with municipalities merged in 2025 added up, into inputs/belgium/be_ris_history.json.
 Usage: python3 data-prep/prep_belgium.py RAWDIR [RAWDIR ...]
 """
 import datetime, glob, json, os, re, sys
@@ -100,5 +103,26 @@ def main(dirs):
           sum(1 for m in out.values() if "primary" in m), "with pupils")
 
 
-if __name__ == "__main__":
+def history(raw):
+    import shutil, tempfile
+    merge = json.load(open(os.path.join(IN, "be_mergers_2025.json")))
+    now = json.load(open(os.path.join(IN, "be_ris_2025.json"), encoding="utf-8"))
+    out = {}
+    for f in sorted(glob.glob(os.path.join(raw, "mi_ris_cities_*.json"))):
+        y = re.search(r"_(\d{4})01-\d{6}", f).group(1)
+        tmp = os.path.join(tempfile.mkdtemp(), "t.xlsx"); shutil.copy(f, tmp)
+        sums = {}
+        for r in list(openpyxl.load_workbook(tmp, read_only=True, data_only=True).worksheets[0].iter_rows(values_only=True))[1:]:
+            if not r[1] or r[4] in (None, 0): continue
+            code = merge.get(str(r[1]), str(r[1]))
+            a = sums.setdefault(code, [0, 0]); a[0] += r[3] or 0; a[1] += r[4]
+        for code, (n, pop) in sums.items():
+            if code in now: out.setdefault(code, {})[y] = round(1000 * n / pop, 2)
+    json.dump(out, open(os.path.join(IN, "be_ris_history.json"), "w", encoding="utf-8"), indent=0)
+    print(len(out), "municipalities;", sum(1 for v in out.values() if len(v) > 1), "with more than one year;", [k for k in now if len(out.get(k, {})) < 2][:10])
+
+
+if __name__ == "__main__" and sys.argv[1] == "--history":
+    history(sys.argv[2])
+elif __name__ == "__main__":
     main(sys.argv[1:])

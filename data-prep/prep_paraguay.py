@@ -125,5 +125,23 @@ def main(raw):
     print(len(data), "districts of", len(pov), "; population", sum(v["pop"] or 0 for v in data.values()))
 
 
-if __name__ == "__main__":
+def history(raw):
+    """Population for every year 2000-2025 from the same district projections (python3 data-prep/prep_paraguay.py
+    --history RAWDIR); main() keeps 2015, 2020 and 2025."""
+    ph = projections(os.path.join(raw, "py_proj_dist.xlsx"), years=list(range(2000, 2026)))
+    p = os.path.join(OUT, "pry_data.json"); data = json.load(open(p, encoding="utf-8"))
+    n = 0
+    for x in data.values():
+        dk = key(x["dept"])
+        v = ph.get((dk, key(x["name"]))) or next((v for (d_, n_), v in ph.items() if d_ == dk and loose(n_) == loose(x["name"])), None)
+        old = x.get("pop_years") or {}
+        if v and all(v.get(int(y)) == val for y, val in old.items()):   # the same series as the years already kept
+            x["pop_years"] = {str(y): c for y, c in v.items()}; n += 1
+    json.dump(data, open(p, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print(n, "of", len(data), "districts with population 2000-2025")
+
+
+if __name__ == "__main__" and sys.argv[1] == "--history":
+    history(sys.argv[2])
+elif __name__ == "__main__":
     main(*sys.argv[1:])

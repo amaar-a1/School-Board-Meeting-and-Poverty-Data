@@ -118,6 +118,7 @@ def main():
         for k, n in zip(eids, esz): i = i * n + ecat[k].index(sel[k])
         return es["value"].get(str(i))
     ty = max(t for t in ecat["time"] if ev(t) is not None); rate = ev(ty)
+    by_year = "; ".join(f"{t}: {ev(t)}%" for t in sorted(ecat["time"]) if ev(t) is not None)   # the national rate each year, for change over time
     yt = {}
     for f in ("IS_youtube.csv", "IS_youtube_rerun.csv"):   # the rerun (correct names, more queries) wins where it found a channel
         p = os.path.join(IN, "youtube", f)
@@ -153,6 +154,7 @@ def main():
                      **dict(zip(("Latest meeting", "Meetings by year"), date_summary(council) if n else ("", ""))),
                      "Population": tot, "Children": kids, "Enrollment": enr.get(lid, ""), "Enrollment year": f"Autumn {enr_year}" if lid in enr else "", "Public school enrollment": PUBLIC.get(lid, 0) if lid in enr else "", "Percentage of Children in Low Income": f"{rate:.2f}%",
                      "Poverty note": f"Iceland's national rate, {ty} (Eurostat); no local child rate is published",
+                     "Poverty by year": by_year,
                      "People per km² (estimated)": round(dens), "District ID": f"IS-{lid}"})
         rnd = lambda c: [rnd(x) for x in c] if isinstance(c[0], list) else [round(c[0], 4), round(c[1], 4)]
         feats.append({"type": "Feature", "properties": {"id": f"IS-{lid}", "NAME": name}, "geometry": {"type": "MultiPolygon", "coordinates": rnd(polys)}})

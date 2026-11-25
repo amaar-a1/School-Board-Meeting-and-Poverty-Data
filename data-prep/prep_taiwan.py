@@ -10,6 +10,9 @@
     (edu_B_3_2), junior high schools (edu_B_3_8) and senior high schools (edu_B_4_2) by county, all and public.
   meetings: the county or city council's YouTube channel (fetch/tw_yt.py).
 Then, after build_latam.py, run data-prep/simplify_borders.sh (a lighter copy of the map file for zoomed-out views).
+History (python3 data-prep/prep_taiwan.py --history RAWDIR): the same stand-in at the end of each year from 2018 (the
+fourth quarter of each yearly sheet of tables 1.1.1 and 1.1.5; table 1.1.5's sheets before 2018 are laid out
+differently), with the population the low-income table's rate implies (persons / rate), into tw_data.json's pov_years.
 Usage: python3 data-prep/prep_taiwan.py RAWDIR [RAWDIR ...] GEODIR
 """
 import csv, glob, io, json, os, re, sys
@@ -129,5 +132,23 @@ def main(*args):
     print(when, y1, sum(x["pop"] for x in data.values()))
 
 
-if __name__ == "__main__":
+def history(raw):
+    import openpyxl as ox
+    lowf, midf = find([raw], "tw_lowincome_111.xlsx"), find([raw], "tw_midlow_115.xlsx")
+    p = os.path.join(OUT, "tw_data.json"); data = json.load(open(p, encoding="utf-8"))
+    for y in [str(y) for y in range(2018, 2026)]:
+        w1, low = latest_block(lowf, y); w2, mid = latest_block(midf, y)
+        assert "第4季" in w1 and "第4季" in w2, (y, w1, w2)
+        for k, x in data.items():
+            pop = low[k][5] * 100 / low[k][27]
+            x.setdefault("pov_years", {})[y] = round(100 * (low[k][5] + mid[k][5]) / pop, 2)
+    for k, x in data.items():   # the site's own figure, the latest quarter
+        x["pov_years"][x["quarter"].split(",")[-1].split()[0]] = round(100 * (x["low"] + x["midlow"]) / x["pop"], 2)
+    json.dump(data, open(p, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print({x["en"]: x["pov_years"] for x in list(data.values())[:2]})
+
+
+if __name__ == "__main__" and sys.argv[1] == "--history":
+    history(sys.argv[2])
+elif __name__ == "__main__":
     main(*sys.argv[1:])

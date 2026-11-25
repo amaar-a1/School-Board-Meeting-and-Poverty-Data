@@ -587,6 +587,8 @@ def chile():
                        if r and isinstance(r[0], (int, float))]
     inc = {str(int(r[0])).zfill(5): r for r in sheet("sae_ingresos_2024.xlsx")}
     mul = {str(int(r[0])).zfill(5): r for r in sheet("sae_multidimensional_2024.xlsx")}
+    hp = os.path.join(IN, "chile", "cl_poverty_history.json")   # 2011-2022 estimates (prep_chile_history.py)
+    hist = json.load(open(hp, encoding="utf-8")) if os.path.exists(hp) else {}
     enr = json.load(open(os.path.join(IN, "chile", "enrolment_by_comuna_2026.json")))
     geo = json.load(open(os.path.join(IN, "chile", "gb_CHL_ADM3.geojson"), encoding="utf-8"))
     by_name = {}
@@ -604,9 +606,13 @@ def chile():
         f = by_name.get(ALIAS["CL"].get(norm(r[2]), norm(r[2])))
         area = area_km2(f["geometry"]) if f else 0
         did = f"CL-{code}"
-        row = {"District": r[2], "Region": r[1], "Population": int(r[3]), "Poverty rate (all ages)": f"{100 * r[5]:.2f}%",
+        # The by-year column is the 2011-2022 series only: 2024's estimates use Chile's new poverty line (Casen 2024),
+        # about twice as high, so putting 2024 on the same line would show a rise that's only the change of measure.
+        row = {**history_cols({"pov_years": hist.get(code, {})}),
+               "District": r[2], "Region": r[1], "Population": int(r[3]), "Poverty rate (all ages)": f"{100 * r[5]:.2f}%",
                "Multidimensional poverty (all ages)": f"{100 * mul[code][5]:.2f}%" if code in mul else "",
-               "Poverty note": f"All ages, 2024 small-area estimate ({r[9]}); no child rate is published by comuna",
+               "Poverty note": f"All ages, 2024 small-area estimate ({r[9]}); no child rate is published by comuna"
+                               + ("; the Poverty by year column has the 2011-2022 estimates, measured against the earlier poverty line (2024 uses Chile's new, higher line, so the two can't be compared)" if code in hist else ""),
                "Enrollment": e.get("total", ""), "Enrollment year": "2026" if e else "", "Public school enrollment": public or "",
                "School system": "Local Public Education Service (SLEP)" if slep > muni else "Municipality (DAEM or corporation)" if muni else "",
                "Locale": loc(int(r[3]) / area) if area else "", "People per km² (estimated)": round(int(r[3]) / area) if area else "",
@@ -1079,6 +1085,8 @@ def italy():
     com = json.load(open(os.path.join(d, "it_comuni.json"), encoding="utf-8"))
     inc = json.load(open(os.path.join(d, "it_income_2023.json"), encoding="utf-8"))
     pup = json.load(open(os.path.join(d, "it_pupils_2024_25.json"), encoding="utf-8"))
+    hp = os.path.join(d, "it_income_history.json")   # the same stand-in for 2015-2023 (prep_italy.py --history)
+    ihist = json.load(open(hp, encoding="utf-8")) if os.path.exists(hp) else {}
     geo = {f["properties"]["GISCO_ID"][3:]: f for f in json.load(open(os.path.join(d, "lau_IT.geojson"), encoding="utf-8"))["features"]}
     # The province's share, for the few comuni whose figure the ministry leaves out.
     prov = {}
@@ -1094,7 +1102,8 @@ def italy():
         i = inc.get(code, {}); pu = pup.get(code)
         did = f"IT-{code}"
         name = x["name"] + (f" / {x['other']}" if x["other"] and x["other"] != x["name"] else "")
-        rows.append({"District": name, "Region": x["region"], "Province": x["province"], "Population": pop,
+        rows.append({**(history_cols({"pov_years": {y: f"{v:.1f}" for y, v in ihist.get(code, {}).items()}}) if i.get("share") is not None else {}),
+                     "District": name, "Region": x["region"], "Province": x["province"], "Population": pop,
                      "Poverty rate (all ages)": f"{i['share']:.1f}%" if i.get("share") is not None else "",
                      "Poverty rate (region, all ages)": "" if i.get("share") is not None or x["province"] not in prov else f"{100 * prov[x['province']][0] / prov[x['province']][1]:.1f}%",
                      "Poverty note": "Stand-in: the share of income-tax filers whose total income was 10,000 euros a year or less, 2023 "
@@ -1126,6 +1135,9 @@ def poland():
     pup = json.load(open(pup_f, encoding="utf-8")) if os.path.exists(pup_f) else {}
     geo = {f["properties"]["GISCO_ID"][5:]: f for f in json.load(open(os.path.join(d, "lau_PL.geojson"), encoding="utf-8"))["features"]}
     names, vals = bdl["names"], bdl["values"]
+    # The same share for 2015-2023 (BDL variable 259889, fetch rounds 48-49), for change over time.
+    hp = os.path.join(d, "pl_bdl_history.json")
+    phist = json.load(open(hp, encoding="utf-8")) if os.path.exists(hp) else {}
     units = [u for u in names if u[-1] in PL_KIND]
     dup = Counter((u[2:4], names[u]) for u in units)
     rows, feats = [], []
@@ -1140,10 +1152,12 @@ def poland():
         dens = p.get("POP_DENS_2024") or 0
         did = f"PL-{u}"
         pp = pup.get(u, {}); enr = pp.get("pupils", "")
-        rows.append({"District": name, "Region": PL_VOIV.get(u[2:4], ""), "Population": pop,
+        rows.append({**(history_cols({"pov_years": {y: f"{v:.1f}" for y, v in {**phist.get(u, {}), **share}.items()}}) if share else {}),
+                     "District": name, "Region": PL_VOIV.get(u[2:4], ""), "Population": pop,
                      "Percentage of Children in Low Income": f"{share[y]:.1f}%" if share else "", "Poverty year": y,
                      "Poverty note": "Share of children aged 0-17 whose parents receive the means-tested family benefit (zasiłek rodzinny), "
-                                     f"{y} (Statistics Poland, Local Data Bank)" if share else "",
+                                     f"{y} (Statistics Poland, Local Data Bank)" + ("; earlier years since 2015 are in Poverty by year. The benefit's income limit is set in złoty and "
+                                     "changes only now and then, so part of a fall over the years can be incomes rising past the limit rather than less need" if phist.get(u) else "") if share else "",
                      "Children on family benefit": round(kids[max(kids)]) if kids else "",
                      "Social assistance (% of people)": f"{sa[max(sa)] / 100:.1f}%" if sa else "",
                      "Enrollment": enr, "Public school enrollment": pp.get("pupils_public", ""),
@@ -1236,7 +1250,8 @@ def portugal():
         region = PT_DIST.get(code[:2]) or ("Açores" if code[:2] >= "41" else "")
         did = f"PT-{code}"
         rsi = x.get("rsi_per1000")
-        hx = {"pov_years": {y: f"{v / 10:.2f}" for y, v in (x.get("rsi_years") or {}).items()}, "pop_years": {y: round(v) for y, v in (x.get("pop_years") or {}).items()}}
+        hx = {"pov_years": {y: f"{v / 10:.2f}" for y, v in (x.get("rsi_years") or {}).items()}, "pop_years": {y: round(v) for y, v in (x.get("pop_years") or {}).items()},
+              "pupil_years": x.get("pupil_years") or {}, "public_years": {y: 100 * n / x["pupil_years"][y] for y, n in (x.get("public_pupil_years") or {}).items() if (x.get("pupil_years") or {}).get(y)}}
         rows.append({**history_cols(hx), "District": x["name"], "Region": region, "Population": round(pop) if pop else "",
                      "Poverty rate (all ages)": f"{rsi / 10:.2f}%" if rsi is not None else "",
                      "Poverty note": f"Stand-in: people receiving the social insertion income (rendimento social de inserção), Portugal's minimum-income benefit, "
@@ -1260,6 +1275,8 @@ def belgium():
     d = os.path.join(IN, "belgium")
     be = json.load(open(os.path.join(d, "be_data.json"), encoding="utf-8"))
     ris = json.load(open(os.path.join(d, "be_ris_2025.json"), encoding="utf-8"))
+    hp = os.path.join(d, "be_ris_history.json")   # the same rate for each year downloaded (prep_belgium.py --history)
+    ris_years = json.load(open(hp, encoding="utf-8")) if os.path.exists(hp) else {}
     geo = {f["properties"]["refnis"]: f for f in json.load(open(os.path.join(d, "be_municipalities_2025.geojson"), encoding="utf-8"))["features"]}
     # Public-school pupils, Flanders: nursery and primary pupils at schools run by a municipality, a province, the Flemish
     # community (GO!) or the Flemish community commission in Brussels (VGC); "free" schools (vrij, mostly Catholic) are
@@ -1279,7 +1296,7 @@ def belgium():
         dens = pop / p["AREA"] if pop and p.get("AREA") else 0
         r = ris.get(code)
         did = f"BE-{code}"
-        rows.append({"District": name, "Region": prov, "Population": round(pop) if pop else "",
+        rows.append({**history_cols({"pov_years": {y: f"{v / 10:.2f}" for y, v in ris_years.get(code, {}).items()}}), "District": name, "Region": prov, "Population": round(pop) if pop else "",
                      "Poverty rate (all ages)": f"{r['per1000'] / 10:.2f}%" if r else "",
                      "Poverty note": "Stand-in: people receiving the integration income (leefloon / revenu d'intégration), Belgium's minimum-income benefit paid by the "
                                      "municipality's social welfare centre (OCMW / CPAS), during 2025, per 100 inhabitants (PPS Social Integration); Belgium publishes no poverty rate by municipality" if r else "",
@@ -1645,7 +1662,7 @@ def taiwan():
         m = x.get("meetings") or {}
         n = m.get("n", 0)
         latest, years = date_summary(m.get("titles", [])) if n else ("", "")
-        rows.append({"District": f"{x['en']} ({zh})", "_names": [zh, x["en"], zh.replace("臺", "台")], "Region": x["kind"], "Population": x["pop"],
+        rows.append({**history_cols(x), "District": f"{x['en']} ({zh})", "_names": [zh, x["en"], zh.replace("臺", "台")], "Region": x["kind"], "Population": x["pop"],
                      "Poverty rate (all ages)": f"{rate:.2f}%",
                      "Poverty note": (f"Stand-in: people in low-income ({x['low']:,}) and middle-low-income ({x['midlow']:,}) households, the two tiers of Taiwan's means-tested "
                                       f"social assistance, per 100 residents, {x['quarter'].split(',')[-1].strip()} (Ministry of Health and Welfare). Low-income persons alone: "

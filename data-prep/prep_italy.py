@@ -64,5 +64,32 @@ def main(dirs):
     print(len(com), "comuni;", len(inc), "with income;", len(pupils), "with pupils")
 
 
-if __name__ == "__main__":
+def history(raw):
+    """The same stand-in (share of taxpayers with total income at or below 10,000 euros) for each earlier tax year
+    downloaded (it_irpef_YYYY.csv, fetch round 48: 2015-2022), into it_income_history.json {ISTAT code: {year: share}}.
+    Columns are found by name (the files' layouts differ by year); comuni are matched by their cadastral code, which
+    doesn't change when a province is reorganised (ISTAT codes do), so merged comuni have no earlier years.
+    Usage: python3 data-prep/prep_italy.py --history RAWDIR"""
+    com = json.load(open(os.path.join(OUT, "it_comuni.json"), encoding="utf-8"))
+    cat2istat = {v["cat"]: k for k, v in com.items()}
+    now = json.load(open(os.path.join(OUT, "it_income_2023.json"), encoding="utf-8"))
+    out = {k: {v["year"]: v["share"]} for k, v in now.items() if v.get("share") is not None}
+    for f in sorted(glob.glob(os.path.join(raw, "it_irpef_*.csv"))):
+        rd = csv.reader(open(f, encoding="latin-1"), delimiter=";"); h = [c.strip() for c in next(rd)]
+        n_i = h.index("Numero contribuenti")
+        z_i = h.index("Reddito complessivo minore o uguale a zero euro - Frequenza")
+        t_i = h.index("Reddito complessivo da 0 a 10000 euro - Frequenza")
+        num = lambda v: int(v) if v.strip() else 0
+        got = 0
+        for r in rd:
+            k = cat2istat.get(r[1])
+            if not k or not num(r[n_i]) or not r[t_i].strip(): continue
+            out.setdefault(k, {})[r[0]] = round(100 * (num(r[z_i]) + num(r[t_i])) / num(r[n_i]), 2); got += 1
+        print(os.path.basename(f), got)
+    json.dump(out, open(os.path.join(OUT, "it_income_history.json"), "w", encoding="utf-8"), separators=(",", ":"))
+
+
+if __name__ == "__main__" and sys.argv[1] == "--history":
+    history(sys.argv[2])
+elif __name__ == "__main__":
     main(sys.argv[1:])

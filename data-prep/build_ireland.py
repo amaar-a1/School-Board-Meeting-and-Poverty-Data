@@ -47,8 +47,12 @@ def arop():
             sel = {k: cat[k][0] for k in ids}; sel.update(geo=g, time=t); i = 0
             for k, n in zip(ids, size): i = i * n + cat[k].index(sel[k])
             if str(i) in d["value"]:
-                out[g] = (d["value"][str(i)], t); break
+                if g not in out: out[g] = (d["value"][str(i)], t)
+                HIST.setdefault(g, {})[t] = d["value"][str(i)]   # every year, for the Poverty by year column
     return out
+
+
+HIST = {}
 
 
 def key(s):
@@ -181,6 +185,7 @@ def main():
                      "Children Ages 5-17": round(kids),
                      "Poverty rate (region, all ages)": f"{ar[reg][0]:.2f}%",
                      "Poverty note": f"Overall at-risk-of-poverty rate of the {REGION_NAME[reg]} region, {ar[reg][1]} (Eurostat); no local or child rate is published",
+                     "Poverty by year": "; ".join(f"{y}: {v}%" for y, v in sorted(HIST.get(reg, {}).items())),
                      "Unemployment rate (Census 2022)": f"{100 * un / (un + work):.2f}%",
                      "Enrollment": enr[etb], "Enrollment year": "2024/25", "Public school enrollment": enr_pub[etb],
                      "Enrollment note": "All pupils in state-aided primary, special and post-primary schools in the ETB's area (Department of Education), not only the ETB's own schools",
