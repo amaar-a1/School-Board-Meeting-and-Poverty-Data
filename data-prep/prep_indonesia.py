@@ -114,5 +114,36 @@ def main(raw):
     print(len(data), "regencies and cities; population", sum(x["pop"] or 0 for x in data.values()))
 
 
-if __name__ == "__main__":
+def history(raw):
+    """Poverty rate and population for every year from 2010 in the same World Bank INDO-DAPOER downloads (the site
+    keeps 2020 as its figure), into idn_data.json's pov_years and pop_years. The names are matched to borders exactly as
+    main() does. Regencies split off since 2010 have only the years since they were created, and their parent's
+    earlier figures include them (a break the line graphs leave as it is).
+    Usage: python3 data-prep/prep_indonesia.py --history RAWDIR"""
+    gb = json.load(open(os.path.join(raw, "id_gb_ADM2.geojson"), encoding="utf-8"))["features"]
+    byk = {}
+    for f in gb: byk.setdefault(key(f["properties"]["shapeName"]), []).append(f)
+    load = lambda fn: [x for x in json.load(open(os.path.join(raw, fn), encoding="utf-8"))[1] if x["value"] is not None and x["date"] >= "2010"]
+    pov, pop = load("wb45_SI.POV.NAPR.ZS.json"), load("wb45_SP.POP.TOTL.json")
+    names = sorted({x["country"]["value"] for x in pov if x["date"] == "2020"})
+    did_of, used = {}, set()
+    for name in names:   # the same matching as main()
+        k = wbkey(name); k = ALIAS.get(k, k)
+        fs = byk.get(k) or ([] if k.startswith("kota") else byk.get("kab" + k, []))
+        fs = [f for f in fs if f["properties"]["shapeID"] not in used]
+        if not fs: continue
+        used.add(fs[0]["properties"]["shapeID"]); did_of[name] = "IDN-" + fs[0]["properties"]["shapeID"][-8:]
+    p = os.path.join(OUT, "idn_data.json"); data = json.load(open(p, encoding="utf-8"))
+    for rows, field, fmt in ((pov, "pov_years", lambda v: round(v, 2)), (pop, "pop_years", lambda v: int(v))):
+        for x in rows:
+            d = did_of.get(x["country"]["value"])
+            if d in data: data[d].setdefault(field, {})[x["date"]] = fmt(x["value"])
+    bad = [d for d, x in data.items() if x.get("pov_years", {}).get("2020") not in (None, x.get("pov"))]
+    json.dump(data, open(p, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print(sum(1 for x in data.values() if len(x.get("pov_years", {})) > 1), "with poverty years;", sum(1 for x in data.values() if len(x.get("pop_years", {})) > 1), "with population years; 2020 mismatches:", bad[:5])
+
+
+if __name__ == "__main__" and sys.argv[1] == "--history":
+    history(sys.argv[2])
+elif __name__ == "__main__":
     main(*sys.argv[1:])

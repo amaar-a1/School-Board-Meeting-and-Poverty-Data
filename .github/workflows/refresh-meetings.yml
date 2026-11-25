@@ -35,6 +35,7 @@ jobs:
           python3 data-prep/build_islands.py
           python3 data-prep/build_switzerland.py
           python3 data-prep/build_latam.py
+          python3 data-prep/population_history.py apply   # the Population by year column the builds don't write
       - name: Commit
         run: |
           git add data-prep/inputs/youtube_titles.json docs/data

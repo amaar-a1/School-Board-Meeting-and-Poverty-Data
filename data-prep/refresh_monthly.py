@@ -201,6 +201,7 @@ def main():
     before = snapshot(keys)
     build(keys)
     subprocess.run([sys.executable, os.path.join(HERE, "estimate_enrollment.py"), *[f"{k}.csv" for k in keys]], check=False)
+    if keys: subprocess.run([sys.executable, os.path.join(HERE, "population_history.py"), "apply"], check=False)
     check(before)
     log("Refreshed:", keys or "nothing")
 

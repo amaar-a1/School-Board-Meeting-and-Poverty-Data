@@ -6,6 +6,8 @@ comuna, by small-area estimation (SAE) from the Casen survey, for 2011 (recalcul
 2015, 2017, 2020 (revised in 2022) and 2022 (observatorio.ministeriodesarrollosocial.gob.cl/pobreza-comunal-YYYY;
 downloaded on GitHub's runner, fetch round 48). The 2009 and old-methodology 2011 tables aren't used: they measure
 against a different poverty line. The site's 2024 figure is not added to the series: it uses the new poverty line of Casen 2024, about twice as high.
+Also cl_population_history.json: the population each estimate is computed on (INE projections, column "Número de
+personas según proyecciones de población"), in the 2020 and 2022 files and the site's 2024 file (inputs/chile).
 Usage: python3 data-prep/prep_chile_history.py RAWDIR
 """
 import glob, io, json, os, re, sys, zipfile
@@ -43,6 +45,17 @@ def main(raw):
         for code, v in t.items(): out.setdefault(code, {})[y] = v
         print(y, len(t), "comunas")
     json.dump(out, open(os.path.join(HERE, "inputs", "chile", "cl_poverty_history.json"), "w"), indent=0, sort_keys=True)
+    pop = {}
+    for f in [x for x in files if "Ingresos" in x] + [os.path.join(HERE, "inputs", "chile", "sae_ingresos_2024.xlsx")]:
+        rows = list(openpyxl.load_workbook(f, read_only=True, data_only=True).worksheets[0].iter_rows(values_only=True))
+        for i, r in enumerate(rows[:10]):
+            col = next((j for j, c in enumerate(r or []) if isinstance(c, str) and c.startswith("Número de personas según proyecciones")), None)
+            if col is None: continue
+            y = re.search(r"(20\d\d)", os.path.basename(f)).group(1)
+            for x in rows[i + 1:]:
+                if x and isinstance(x[0], (int, float)) and isinstance(x[col], (int, float)): pop.setdefault(str(int(x[0])).zfill(5), {})[y] = int(x[col])
+            break
+    json.dump(pop, open(os.path.join(HERE, "inputs", "chile", "cl_population_history.json"), "w"), indent=0, sort_keys=True)
 
 
 if __name__ == "__main__":

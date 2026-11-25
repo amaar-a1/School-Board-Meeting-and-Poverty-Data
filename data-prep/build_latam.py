@@ -589,6 +589,8 @@ def chile():
     mul = {str(int(r[0])).zfill(5): r for r in sheet("sae_multidimensional_2024.xlsx")}
     hp = os.path.join(IN, "chile", "cl_poverty_history.json")   # 2011-2022 estimates (prep_chile_history.py)
     hist = json.load(open(hp, encoding="utf-8")) if os.path.exists(hp) else {}
+    pp = os.path.join(IN, "chile", "cl_population_history.json")   # INE projections behind the 2020, 2022 and 2024 estimates
+    pophist = json.load(open(pp, encoding="utf-8")) if os.path.exists(pp) else {}
     enr = json.load(open(os.path.join(IN, "chile", "enrolment_by_comuna_2026.json")))
     geo = json.load(open(os.path.join(IN, "chile", "gb_CHL_ADM3.geojson"), encoding="utf-8"))
     by_name = {}
@@ -608,7 +610,7 @@ def chile():
         did = f"CL-{code}"
         # The by-year column is the 2011-2022 series only: 2024's estimates use Chile's new poverty line (Casen 2024),
         # about twice as high, so putting 2024 on the same line would show a rise that's only the change of measure.
-        row = {**history_cols({"pov_years": hist.get(code, {})}),
+        row = {**history_cols({"pov_years": hist.get(code, {}), "pop_years": pophist.get(code, {})}),
                "District": r[2], "Region": r[1], "Population": int(r[3]), "Poverty rate (all ages)": f"{100 * r[5]:.2f}%",
                "Multidimensional poverty (all ages)": f"{100 * mul[code][5]:.2f}%" if code in mul else "",
                "Poverty note": f"All ages, 2024 small-area estimate ({r[9]}); no child rate is published by comuna"
@@ -1344,10 +1346,14 @@ def australia():
         dens = x["pop"] / area if area and x["pop"] else 0
         rate = 100 * x["support"] / x["wa"] if x.get("wa") and "support" in x else None
         did = f"AU-{code}"
-        rows.append({"District": name, "Region": AU_STATES[code[0]], "Population": x["pop"] or "",
+        # June of each year since 2016 (prep_australia.py --history), over the same 2021 Census denominator
+        yrs = {y: f"{min(100 * v / x['wa'], 100):.2f}" for y, v in (x.get("support_years") or {}).items()} if rate is not None else {}
+        if yrs: yrs[x["support_period"][-4:]] = f"{min(rate, 100):.2f}"
+        rows.append({**history_cols({"pov_years": yrs}), "District": name, "Region": AU_STATES[code[0]], "Population": x["pop"] or "",
                      "Poverty rate (all ages)": f"{min(rate, 100):.2f}%" if rate is not None else "",
                      "Poverty note": ("Stand-in: people on working-age income support (JobSeeker Payment, Parenting Payment, Youth Allowance (other), Special Benefit), "
-                                      f"{x['support_period']} (Department of Social Services), per 100 people aged 15-64 at the 2021 Census; Australia publishes no poverty rate by council area") if rate is not None else "",
+                                      f"{x['support_period']} (Department of Social Services), per 100 people aged 15-64 at the 2021 Census; Australia publishes no poverty rate by council area"
+                                      + ("; Poverty by year has June of each year since 2016 over the same 2021 count (Newstart and Sickness Allowance before JobSeeker replaced them in 2020), so population growth makes later years read a little high" if x.get("support_years") else "")) if rate is not None else "",
                      "Children under 18": x.get("u18") or "",
                      "Median family income ($ per week, 2021)": x.get("median_family_income") or "",
                      "Enrollment": AU_PUPILS[code][0] if code in AU_PUPILS else x.get("pupils") or "",
@@ -1935,11 +1941,12 @@ def india():
         m = x.get("meetings") or {}
         n, titles = _in_meetings(m.get("videos", [])) if m.get("url") else (0, [])
         latest, years = date_summary(titles) if n else ("", "")
-        rows.append({"District": re.sub(r"\s+", " ", x["name"]).strip(), "Region": x["state"], "Population": x.get("pop") or "",
+        rows.append({**history_cols({"pov_years": x.get("mpi_years") or {}}), "District": re.sub(r"\s+", " ", x["name"]).strip(), "Region": x["state"], "Population": x.get("pop") or "",
                      "Poverty rate (all ages)": f"{x['mpi']:.1f}%" if x.get("mpi") is not None else "",
                      "Poverty note": (f"Share of people who are multidimensionally poor (headcount ratio), 2019-21 (NITI Aayog, National Multidimensional Poverty Index: A Progress Review 2023, "
                                       "from NFHS-5); deprived in a third or more of 12 weighted indicators of health, education and living standards. Nationally 14.96%"
-                                      + (f". The report gives {x['mpi_note']} separately; this is their mean" if x.get("mpi_note") else "")) if x.get("mpi") is not None
+                                      + (f". The report gives {x['mpi_note']} separately; this is their mean" if x.get("mpi_note") else "")
+                                      + (". Poverty by year has 2015-16 (NFHS-4, shown as 2016) and 2019-21 (NFHS-5, shown as 2020)" if x.get("mpi_years") else "")) if x.get("mpi") is not None
                                      else "No figure of its own in NITI Aayog's report (a district created after the survey, or not in it)",
                      "_own_meetings": True, "Available Board Meetings": n, "Meetings type": "Zila parishad (stand-in)" if n else "", "Meetings source": m.get("url", "") if n else "",
                      "Latest meeting": latest, "Meetings by year": years,
@@ -1992,9 +1999,10 @@ def indonesia():
     rows = []
     for did, x in idn.items():
         dens = x["pop"] / area[did] if x.get("pop") and area.get(did) else 0
-        rows.append({"District": x["name"], "Region": x["province"], "Population": x.get("pop") or "",
+        rows.append({**history_cols(x), "District": x["name"], "Region": x["province"], "Population": x.get("pop") or "",
                      "Poverty rate (all ages)": f"{x['pov']:.1f}%",
-                     "Poverty note": "Share of people below the poverty line, all ages, 2020 (BPS, via the World Bank's Indonesia Database for Policy and Economic Research). Nationally 9.8% (March 2020)",
+                     "Poverty note": "Share of people below the poverty line, all ages, 2020 (BPS, via the World Bank's Indonesia Database for Policy and Economic Research). Nationally 9.8% (March 2020)"
+                                    + ("; earlier years from 2010 are in Poverty by year (a regency split off since then has only the years since, and its parent's earlier figures include it)" if len(x.get("pov_years") or {}) > 1 else ""),
                      "Enrollment": x.get("pupils") or "", "Enrollment year": "2025 (primary pupils, SD/MI and equivalent, public and private; Kemendikdasmen)" if x.get("pupils") else "",
                      "Public school enrollment": x.get("public") if x.get("pupils") else "",
                      "Enrollment by year": years_text(x.get("pupil_years")),
