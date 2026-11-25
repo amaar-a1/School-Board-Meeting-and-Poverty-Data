@@ -1,0 +1,60 @@
+OK None 145601803 https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2016_4326.geojson
+  LAU 2016 props ['GISCO_ID', 'CNTR_CODE', 'LAU_ID', 'LAU_NAME', 'POP_2016', 'POP_DENS_2016', 'AREA_KM2', 'YEAR']
+  LAU 2016: 112710 with population
+OK None 131773356 https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2017_4326.geojson
+  LAU 2017 props ['GISCO_ID', 'CNTR_CODE', 'LAU_ID', 'LAU_NAME', 'POP_2017', 'POP_DENS_2017', 'AREA_KM2', 'YEAR']
+  LAU 2017: 102707 with population
+OK None 132907236 https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2018_4326.geojson
+  LAU 2018 props ['GISCO_ID', 'CNTR_CODE', 'LAU_ID', 'LAU_NAME', 'POP_2018', 'POP_DENS_2018', 'AREA_KM2', 'YEAR']
+  LAU 2018: 102442 with population
+OK None 128454466 https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2019_4326.geojson
+  LAU 2019 props ['GISCO_ID', 'CNTR_CODE', 'LAU_ID', 'LAU_NAME', 'POP_2019', 'POP_DENS_2019', 'AREA_KM2', 'YEAR']
+  LAU 2019: 98757 with population
+OK None 128112644 https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2020_4326.geojson
+  LAU 2020 props ['GISCO_ID', 'CNTR_CODE', 'LAU_ID', 'LAU_NAME', 'POP_2020', 'POP_DENS_2020', 'AREA_KM2', 'YEAR']
+  LAU 2020: 98303 with population
+OK None 126006913 https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2021_4326.geojson
+  LAU 2021 props ['GISCO_ID', 'CNTR_CODE', 'LAU_ID', 'LAU_NAME', 'POP_2021', 'POP_DENS_2021', 'AREA_KM2', 'YEAR']
+  LAU 2021: 98008 with population
+OK None 137947668 https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2022_4326.geojson
+  LAU 2022 props ['GISCO_ID', 'CNTR_CODE', 'LAU_ID', 'LAU_NAME', 'POP_2022', 'POP_DENS_2022', 'AREA_KM2', 'YEAR']
+  LAU 2022: 97772 with population
+OK None 127457720 https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2023_4326.geojson
+  LAU 2023 props ['GISCO_ID', 'CNTR_CODE', 'LAU_ID', 'LAU_NAME', 'POP_2023', 'POP_DENS_2023', 'AREA_KM2', 'YEAR']
+  LAU 2023: 98395 with population
+ERR es_pop_nuts3_DE.json HTTP Error 400: Bad Request https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_r_pjanaggr3?sex=T&age=TOTAL&unit=NR&geoLevel=nuts3&lang=EN&format=JSON&geo_prefix=DE
+ERR es_pop_nuts3_CH.json HTTP Error 400: Bad Request https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_r_pjanaggr3?sex=T&age=TOTAL&unit=NR&geoLevel=nuts3&lang=EN&format=JSON&geo_prefix=CH
+OK es_pop_nuts3_all.json 700257 https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_r_pjanaggr3?sex=T&age=TOTAL&unit=NR&geoLevel=nuts3&lang=EN
+ERR br_sidra_6579.json HTTP Error 400: Bad Request https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/9324/p/all
+OK uk_nomis_TYPE424.csv 218299 https://www.nomisweb.co.uk/api/v01/dataset/NM_2002_1.data.csv?geography=TYPE424&date=latestMINUS14-latest&gender=0&c_age=200&measures=20100&select=date_name,geography_code,geography_name,obs_value
+OK uk_nomis_TYPE423.csv 133877 https://www.nomisweb.co.uk/api/v01/dataset/NM_2002_1.data.csv?geography=TYPE423&date=latestMINUS14-latest&gender=0&c_age=200&measures=20100&select=date_name,geography_code,geography_name,obs_value
+OK uk_nomis_TYPE432.csv 224209 https://www.nomisweb.co.uk/api/v01/dataset/NM_2002_1.data.csv?geography=TYPE432&date=latestMINUS14-latest&gender=0&c_age=200&measures=20100&select=date_name,geography_code,geography_name,obs_value
+OK uk_nomis_TYPE431.csv 133067 https://www.nomisweb.co.uk/api/v01/dataset/NM_2002_1.data.csv?geography=TYPE431&date=latestMINUS14-latest&gender=0&c_age=200&measures=20100&select=date_name,geography_code,geography_name,obs_value
+JP codes [('A1101', 'A1101_総人口')]
+JP A1101: 17188
+OK au_dss_june_2025.xlsx 2443408 https://data.gov.au/data/dataset/cff2ae8a-55e4-47db-a66d-e177fe0ac6a0/resource/c3adb418-d2f9-48a8-bca6-66fa448628e5/download/dss-benefit-and-payment-recipient-demographics-june-2025-final.xlsx
+OK au_dss_june_2024.xlsx 1825047 https://data.gov.au/data/dataset/cff2ae8a-55e4-47db-a66d-e177fe0ac6a0/resource/6c93023e-9c64-484d-9503-69cc8209afa6/download/dss-demographics-june-2024-final.xlsx
+OK au_dss_june_2023.xlsx 1383273 https://data.gov.au/data/dataset/cff2ae8a-55e4-47db-a66d-e177fe0ac6a0/resource/7a6457a8-44a3-406c-b552-62eb0fef9d66/download/dss-demographics-june-2023-final.xlsx
+OK au_dss_june_2022.xlsx 1556837 https://data.gov.au/data/dataset/cff2ae8a-55e4-47db-a66d-e177fe0ac6a0/resource/1188c950-542a-4ca6-9e3e-9f91f53d9314/download/dss-demographics-june-2022-final.xlsx
+OK au_dss_june_2021.xlsx 1474650 https://data.gov.au/data/dataset/cff2ae8a-55e4-47db-a66d-e177fe0ac6a0/resource/0a6df0ff-03a3-451e-a4b2-e0224e647379/download/dss-demographics-june-2021-final.xlsx
+OK au_dss_june_2020.xlsx 1534161 https://data.gov.au/data/dataset/cff2ae8a-55e4-47db-a66d-e177fe0ac6a0/resource/c91d7ee0-59e0-4fc9-92a9-066b840d1139/download/dss-demographics-june-2020-final.xlsx
+OK au_dss_june_2019.xlsx 1620917 https://data.gov.au/data/dataset/cff2ae8a-55e4-47db-a66d-e177fe0ac6a0/resource/3d7891bc-6861-47c8-b967-f8807059fa83/download/dss-demographics-june-2019-4.xlsx
+OK au_dss_june_2018.xlsx 1593519 https://data.gov.au/data/dataset/cff2ae8a-55e4-47db-a66d-e177fe0ac6a0/resource/57c91779-cce6-4ec4-b94f-50464ca55a77/download/dss-demographics-june-2018.xlsx
+OK au_dss_june_2017.xlsx 1612709 https://data.gov.au/data/dataset/cff2ae8a-55e4-47db-a66d-e177fe0ac6a0/resource/0457422b-f338-4dd8-82b7-35a5d97f798d/download/dss-demographics-june-2017.xlsx
+OK au_dss_june_2016.xlsx 1695192 https://data.gov.au/data/dataset/cff2ae8a-55e4-47db-a66d-e177fe0ac6a0/resource/829fc910-e263-4a59-ad33-1cd1159ce0df/download/dss-demographics-june-2016.xlsx
+OK au_abs_dataflows.xml 449432 https://data.api.abs.gov.au/rest/dataflow/ABS?detail=allstubs
+OK au_ABS_ANNUAL_ERP_LGA2024.csv 183184370 https://data.api.abs.gov.au/rest/data/ABS,ABS_ANNUAL_ERP_LGA2024/all?format=csvfilewithlabels
+OK au_ABS_ANNUAL_ERP_LGA2023.csv 175692907 https://data.api.abs.gov.au/rest/data/ABS,ABS_ANNUAL_ERP_LGA2023/all?format=csvfilewithlabels
+OK au_ABS_ANNUAL_ERP_ASGS2021.csv 16595115 https://data.api.abs.gov.au/rest/data/ABS,ABS_ANNUAL_ERP_ASGS2021/all?format=csvfilewithlabels
+ERR mx_page.html HTTP Error 404: Not Found https://www.gob.mx/conapo/documentos/reconstruccion-y-proyecciones-de-la-poblacion-de-los-municipios-de-mexico-2015-2030
+OK mx2_page.html 63174 https://www.gob.mx/conapo/documentos/bases-de-datos-de-la-conciliacion-demografica-1950-a-2019-y-proyecciones-de-la-poblacion-de-mexico-2020-a-2070
+  mx2 links []
+OK co_page.html 92670 https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion
+  co links ['https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/DCD-area-proypoblacion-Mun-1985-1994.xlsx', 'https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/DCD-area-proypoblacion-Mun-1995-2004.xlsx', 'https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/DCD-area-proypoblacion-Mun-2005-2017_VP.xlsx', 'https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/DCD-area-sexo-edad-proypoblacion-Mun-1985-1994.xlsx', 'https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/DCD-area-sexo-edad-proypoblacion-Mun-1995-2004.xlsx', 'https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/DCD-area-sexo-edad-proypoblacion-Mun-2005-2017_VP.xlsx', 'https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/PPED-AreaMun-2018-2042_VP.xlsx', 'https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/PPED-AreaSexoEdadMun-2018-2042_VP.xlsx', 'https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Nacional/anex-DCD-Proypoblacion-PerteneniaEtnicoRacialmun.xlsx', 'https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/comunicado-estimaciones-de-poblacion-con-base%20en-conciliacion-censos-08-10-2020.pdf']
+OK co_DCD-area-proypoblacion-Mun-1985-1994.xlsx 1177938 https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/DCD-area-proypoblacion-Mun-1985-1994.xlsx
+OK co_DCD-area-proypoblacion-Mun-1995-2004.xlsx 1184823 https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/DCD-area-proypoblacion-Mun-1995-2004.xlsx
+OK co_DCD-area-proypoblacion-Mun-2005-2017_VP.xlsx 1600037 https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/DCD-area-proypoblacion-Mun-2005-2017_VP.xlsx
+OK co_DCD-area-sexo-edad-proypoblacion-Mun-1985-1994.xlsx 41217086 https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/DCD-area-sexo-edad-proypoblacion-Mun-1985-1994.xlsx
+OK co_DCD-area-sexo-edad-proypoblacion-Mun-1995-2004.xlsx 42764304 https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/DCD-area-sexo-edad-proypoblacion-Mun-1995-2004.xlsx
+OK co_DCD-area-sexo-edad-proypoblacion-Mun-2005-2017_VP.xlsx 55969926 https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/DCD-area-sexo-edad-proypoblacion-Mun-2005-2017_VP.xlsx
+OK ar_proy_prov.xls 207360 https://www.indec.gob.ar/ftp/cuadros/poblacion/c1_proyecciones_prov_2010_2040.xls
