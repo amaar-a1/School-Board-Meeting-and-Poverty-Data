@@ -21,7 +21,8 @@ Usage: python3 data-prep/prep_peru_history.py YEAR 00_Padron.zip [YEAR 00_Padron
        python3 data-prep/prep_peru_history.py --edades 2021 Padron.zip M01_edades.zip
        python3 data-prep/prep_peru_history.py --edades 2020 01_Padron.zip 02_Matricula_01.zip   (2016–2019 likewise)
        python3 data-prep/prep_peru_history.py --mat 2015 02_Mat2100.dbf.zip   (2009-2014 likewise)
-       python3 data-prep/prep_peru_history.py --gaps 2012 MAT_2011.zip MAT_2012.zip MAT_2013.zip   (see gaps())
+       python3 data-prep/prep_peru_history.py --mat 2012 03_Mat2x00.dbf.zip 02_Mat2100.dbf.zip
+       python3 data-prep/prep_peru_history.py --gaps 2012 MAT_2011.zip 03_Mat2x00.dbf.zip MAT_2013.zip 02_Mat2100.dbf.zip   (see gaps())
 """
 import io, json, os, sys, tempfile, zipfile
 from dbfread import DBF
@@ -90,11 +91,18 @@ MAT_TABLES = {"2015": {"07": ("201", "202"), "08": ("201", "203")},
                        "07": ("209",), "08": ("205", "207"), "09": ("202",)},
               "2011": {"04": ("201", "202", "203"), "07": ("201", "202"), "08": ("202",)},
               "2010": {"4A": ("201", "202"), "07": ("201", "202"), "08": ("202",)},
-              "2009": {"4A": ("201", "202"), "07": ("201", "202")}}
+              "2009": {"4A": ("201", "202"), "07": ("201", "202")},
+              "2012b": {"4A": ("201", "202"), "07": ("201", "202"), "08": ("201", "202")}}   # 2012's 02_Mat2100
+MAT_EXTRA = {"2012": "2012b"}
 
 
 def school_totals(year, path):
-    """Each school's pupils in YEAR's enrollment file: {(COD_MOD, ANEXO): (ubigeo, GES_DEP, pupils)}."""
+    """Each school's pupils in YEAR's enrollment file: {(COD_MOD, ANEXO): (ubigeo, GES_DEP, pupils)}. A year with a
+    second file (MAT_EXTRA: 2012's 02_Mat2100, which has 67 schools the main one lacks) adds the schools only it has."""
+    if year in MAT_EXTRA and isinstance(path, (list, tuple)):
+        out = school_totals(year, path[0])
+        for k, v in school_totals(MAT_EXTRA[year], path[1]).items(): out.setdefault(k, v)
+        return out
     tables = MAT_TABLES[year]
     tmp = tempfile.mkdtemp()
     zipfile.ZipFile(path).extractall(tmp)
@@ -109,9 +117,9 @@ def school_totals(year, path):
     return {k: (info[k][0], info[k][1], int(sum(tb.values()) if info[k][2] in tables else max(tb.values()))) for k, tb in per.items()}
 
 
-def mat(year, path):
+def mat(year, path, extra=None):
     pupils, public = {}, {}
-    for c, g, n in school_totals(year, path).values():
+    for c, g, n in school_totals(year, [path, extra] if extra else path).values():
         if not n: continue
         pupils[c] = pupils.get(c, 0) + n
         if g.startswith("A"): public[c] = public.get(c, 0) + n
@@ -121,11 +129,11 @@ def mat(year, path):
     print(year, len(pupils), "districts;", sum(pupils.values()), "pupils;", round(100 * sum(public.values()) / sum(pupils.values()), 1), "% public")
 
 
-def gaps(year, prev, this, nxt):
+def gaps(year, prev, this, nxt, extra=None):
     """Districts whose count in YEAR misses schools that reported the year before and the year after (2012 lacks
     about 1,700 of them): where those schools' pupils (the average of the two years) come to more than 3% of the
     district's count, YEAR is marked incomplete there, and the site leaves it out."""
-    a, b, c = school_totals(str(int(year) - 1), prev), school_totals(year, this), school_totals(str(int(year) + 1), nxt)
+    a, b, c = school_totals(str(int(year) - 1), prev), school_totals(year, [this, extra] if extra else this), school_totals(str(int(year) + 1), nxt)
     miss, have = {}, {}
     for k, (u, g, n) in b.items(): have[u] = have.get(u, 0) + n
     for k in a:
@@ -147,9 +155,9 @@ def main(args):
 
 
 if __name__ == "__main__" and sys.argv[1] == "--gaps":
-    gaps(*sys.argv[2:6])
+    gaps(*sys.argv[2:7])
 elif __name__ == "__main__" and sys.argv[1] == "--mat":
-    mat(*sys.argv[2:4])
+    mat(*sys.argv[2:5])
 elif __name__ == "__main__" and sys.argv[1] == "--edades":
     edades(*sys.argv[2:5])
 elif __name__ == "__main__":
