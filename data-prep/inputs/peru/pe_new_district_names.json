@@ -1,0 +1,19 @@
+{
+ "source": "District names (DIST) from the 2024 school census padrón, for districts created after the 2018 poverty map",
+ "names": {
+  "050512": "UNION PROGRESO",
+  "050513": "RIO MAGDALENA",
+  "050514": "NINABAMBA",
+  "050515": "PATIBAMBA",
+  "080915": "KUMPIRUSHIATO",
+  "080916": "CIELO PUNCO",
+  "080917": "MANITEA",
+  "080918": "UNION ASHANINKA",
+  "090724": "LAMBRAS",
+  "221006": "SANTA LUCIA",
+  "030612": "AHUAYRO",
+  "180107": "SAN ANTONIO",
+  "250306": "HUIPOCA",
+  "250307": "BOQUERON"
+ }
+}

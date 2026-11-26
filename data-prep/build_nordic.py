@@ -6,7 +6,8 @@ Municipalities run schools in these countries, so each municipality is the board
   Norway   SSB 12944: children 0-17 in households with persistent low income (EU 60%), 2022-2024
   Sweden   SCB TAB6685: people 0-19 with low economic standard (60% of median), 2024
   Finland  THL Sotkanet 228: at-risk-of-poverty rate for children (60% of median), latest year
-  Denmark  Statistics Denmark LABY07: children 0-17 in relative poverty (50% of median), 2024
+  Denmark  Statistics Denmark LABY07: children 0-17 in relative poverty (50% of median), 2025, and every year from
+           2015 in Poverty by year (downloaded by hand: inputs/nordic/dk_LABY07_history.tsv)
   Netherlands CBS 86132NED: children in poverty (CBS's "not much but sufficient" criterion), 2024, and every year
     from 2018 in Poverty by year (fetch round 52; CBS stopped updating the table on 25 November 2026)
 - Where a municipality's child rate isn't published, the next best figure is used and the "Poverty note"
@@ -224,6 +225,10 @@ def main():
                         miss.append(lab)
             for code, (lab, (n,)) in jsonstat("no_pupils.json", "KOKkommuneregion0000").items():
                 if n: put(name=lab, **{"Enrollment": n, "Enrollment year": "2025"})
+            ph = json.load(open(os.path.join(IN, "no_pupils_history.json"))) if os.path.exists(os.path.join(IN, "no_pupils_history.json")) else {}
+            for code, ys in ph.items():   # every year since 2015 (prep_nordic_history.py), where the code is today's
+                if code in rows and rows[code].get("Enrollment") and len(ys) > 1 and ys.get("2025") == rows[code]["Enrollment"]:
+                    rows[code]["Enrollment by year"] = "; ".join(f"{y}: {v}" for y, v in sorted(ys.items()))
         elif cc == "SE":
             for r in csv.DictReader(open(os.path.join(IN, "se_lowincome.csv"), encoding="utf-8-sig")):
                 pct, n = r["000008AC 2024"], r["000008AE 2024"]
@@ -233,6 +238,9 @@ def main():
             for v in json.load(open(os.path.join(IN, "se_pupils_N15835_2025.json")))["values"]:
                 t = [x for x in v["values"] if x["gender"] == "T" and x["value"] is not None]
                 if t: put(code=v["municipality"], **{"Enrollment": round(t[0]["value"]), "Enrollment year": "2025"})
+            ph = json.load(open(os.path.join(IN, "se_pupils_history.json"))) if os.path.exists(os.path.join(IN, "se_pupils_history.json")) else {}
+            for code, ys in ph.items():   # every year since 2015 (prep_nordic_history.py)
+                if code in rows and len(ys) > 1: rows[code]["Enrollment by year"] = "; ".join(f"{y}: {v}" for y, v in sorted(ys.items()))
         elif cc == "FI":
             reg = {r["id"]: r for r in json.load(open(os.path.join(IN, "fi_regions.json")))}
             vals, hist = {}, {}
@@ -253,9 +261,33 @@ def main():
             for r in csv.DictReader(open(os.path.join(IN, "dk_LABY07.csv"), encoding="utf-8-sig"), delimiter=";"):
                 nm = alias.get(norm(r["KOMGRP"]), norm(r["KOMGRP"]))
                 if nm in byname: rows[byname[nm]]["Percentage of Children in Low Income"] = f"{float(r['INDHOLD']):.2f}%"
+            # Every year since 2015, including the newer 2025 (StatBank LABY07, children 0-17, downloaded by hand:
+            # inputs/nordic/dk_LABY07_history.tsv): the series for Poverty by year, and its latest year as the figure.
+            hp = os.path.join(IN, "dk_LABY07_history.tsv")
+            if os.path.exists(hp):
+                lines = [l for l in open(hp, encoding="utf-8") if not l.startswith("#")]
+                head = lines[0].rstrip("\n").split("\t")
+                for l in lines[1:]:
+                    c = l.rstrip("\n").split("\t")
+                    nm = alias.get(norm(c[0]), norm(c[0]))
+                    ys = {y: float(v) for y, v in zip(head[1:], c[1:]) if v.strip()}
+                    if nm in byname and ys:
+                        last = max(ys)
+                        rows[byname[nm]].update({"Percentage of Children in Low Income": f"{ys[last]:.2f}%", "Poverty by year": "; ".join(f"{y}:{v}" for y, v in sorted(ys.items())),
+                                                 "Poverty note": f"Children 0-17 in relative poverty (below half the median income), {last} (Statistics Denmark LABY07)"})
             for r in csv.DictReader(open(os.path.join(IN, "dk_LABY23.csv"), encoding="utf-8-sig"), delimiter=";"):
                 nm = alias.get(norm(r["KOMGRP"]), norm(r["KOMGRP"]))
                 if nm in byname: rows[byname[nm]].update({"Enrollment": int(r["INDHOLD"]), "Enrollment year": "October 2025"})
+            # Every year since 2007 (StatBank LABY23, downloaded by hand: inputs/nordic/dk_LABY23_history.tsv)
+            hp = os.path.join(IN, "dk_LABY23_history.tsv")
+            if os.path.exists(hp):
+                lines = [l for l in open(hp, encoding="utf-8") if not l.startswith("#")]
+                head = lines[0].rstrip("\n").split("\t")
+                for l in lines[1:]:
+                    c = l.rstrip("\n").split("\t")
+                    nm = alias.get(norm(c[0]), norm(c[0]))
+                    if nm in byname:
+                        rows[byname[nm]]["Enrollment by year"] = "; ".join(f"{y}: {int(v.replace(',', ''))}" for y, v in zip(head[1:], c[1:]) if v.replace(",", "").isdigit())
         elif cc == "NL":
             best, hist = {}, {}
             for v in json.load(open(os.path.join(IN, "nl_childpoverty.json")))["value"]:
@@ -275,6 +307,15 @@ def main():
             # Every school year since 2011/12 (CBS 85701NED, same pupils; fetch round 48), for change over time.
             hp = os.path.join(IN, "nl_pupils_history.json")
             ph = json.load(open(hp)) if os.path.exists(hp) else {}
+            # Mergers since 2011 (CBS, borders.py): a merged municipality's years before are its former ones added up
+            import borders
+            bf = os.path.join(HERE, "inputs", "border_changes.json")
+            mg = json.load(open(bf, encoding="utf-8")).get("netherlands", {}).get("mergers", []) if os.path.exists(bf) else []
+            phm = {"NL_" + k: v for k, v in ph.items()}
+            ntx = borders.merge_back(phm, mg)
+            ph = {k[3:]: v for k, v in phm.items()}
+            for g, tx in ntx.items():
+                if g[3:] in rows: rows[g[3:]]["Border changes"] = "; ".join(tx)
             for g, n in tot.items():
                 put(code=g, **{"Enrollment": n, "Enrollment year": "2025/26", "Enrollment by year": "; ".join(f"{y}: {v}" for y, v in sorted(ph.get(g, {}).items()))})
         fallback(cc, rows, put)
@@ -299,7 +340,8 @@ def main():
         out.sort(key=lambda r: r["District"])
         cols = ["District", "Locale", "Available Board Meetings", "Meetings type", "Meetings source", "Latest meeting", "Meetings by year", "Children", "Children in Low Income",
                 "Percentage of Children in Low Income", "Poverty note", "Poverty by year", "Enrollment", "Enrollment year", "People per km² (estimated)", "District ID"]
-        if any(r.get("Enrollment by year") for r in out): cols.insert(cols.index("Enrollment year") + 1, "Enrollment by year")
+        if any(r.get("Enrollment by year") for r in out) and "Enrollment by year" not in cols: cols.insert(cols.index("Enrollment year") + 1, "Enrollment by year")
+        if any(r.get("Border changes") for r in out): cols.insert(cols.index("District ID"), "Border changes")
         with open(os.path.join(DOCS, f"{key}.csv"), "w", newline="", encoding="utf-8") as fo:
             w = csv.DictWriter(fo, fieldnames=cols, restval=""); w.writeheader(); w.writerows(out)
         for f in geo["features"]:

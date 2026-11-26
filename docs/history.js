@@ -28,7 +28,15 @@
     return out;
   }
   const years = (m) => Object.keys(m).sort();
-  const hasLine = (row, col) => years(parse(row[col])).length >= 2;
+  // Border changes (data-prep/borders.py): "Border changes" lists them ("2017: X was made from Y; 2019: A and B
+  // merged into C"), drawn as vertical marks. A place split up since its earliest year also carries its family's
+  // figures added up on the borders before the split ("... by year (earlier borders)"), a second, dotted line; a
+  // merged place's own line already adds up its former places before the merger.
+  const EARLY = " (earlier borders)";
+  const early = (row, col) => parse(row && row[col + EARLY]);
+  const splitsOf = (row) => String((row && row["Border changes"]) || "").split(";").map((p) => p.trim().match(/^(\d{4}):\s*(.+)$/)).filter(Boolean)
+    .map((m) => ({ year: m[1], text: m[2], label: / merged into |^part of .* joined /.test(m[2]) ? "Merged" : "Split" }));
+  const hasLine = (row, col) => years(parse(row[col])).length >= 2 || years(early(row, col)).length >= 2;
   const mean = (a) => a.reduce((x, y) => x + y, 0) / a.length;
 
   // A line for a group of places whose years don't all match: each year's change is measured on the places with a
@@ -73,7 +81,21 @@
     if (charts.has(canvas)) charts.get(canvas).destroy();
     const text = cssVar("--muted"), grid = cssVar("--border");
     const fmt = (v) => (v == null ? "–" : opts.unit === "%" ? `${(+v).toFixed(1)}%` : Math.abs(v) < 10 && v % 1 ? (+v).toFixed(1) : Math.round(v).toLocaleString());
-    const ch = new Chart(canvas, { type: "line",
+    // Vertical marks at the years a place was split (opts.marks: [{ year, text }]), labelled at the top.
+    const marks = (opts.marks || []).filter((k) => labels.includes(k.year));
+    const markPlugin = { id: "splitMarks", afterDatasetsDraw(c) {
+      const { ctx, chartArea: a, scales: { x } } = c;
+      const done = new Set();
+      marks.forEach((k) => {
+        if (done.has(k.year)) return; done.add(k.year);
+        const px = x.getPixelForValue(labels.indexOf(k.year));
+        ctx.save(); ctx.strokeStyle = text; ctx.setLineDash([3, 3]); ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(px, a.top); ctx.lineTo(px, a.bottom); ctx.stroke();
+        ctx.setLineDash([]); ctx.fillStyle = text; ctx.font = "11px system-ui, sans-serif"; ctx.textAlign = px > a.right - 60 ? "right" : "left";
+        ctx.fillText(`${marks.filter((q) => q.year === k.year).some((q) => q.label === "Split") ? "Split" : "Merged"} ${k.year}`, px + (ctx.textAlign === "right" ? -4 : 4), a.top + 12); ctx.restore();
+      });
+    } };
+    const ch = new Chart(canvas, { type: "line", plugins: marks.length ? [markPlugin] : [],
       data: { labels, datasets: datasets.map((d) => ({ tension: 0.2, pointRadius: labels.length > 20 ? 2 : 4, spanGaps: true, borderWidth: 2, ...d })) },
       options: { maintainAspectRatio: false, animation: matchMedia("(prefers-reduced-motion: reduce)").matches ? false : undefined,
         interaction: { mode: "index", intersect: false },
@@ -82,7 +104,8 @@
         scales: { x: { ticks: { color: text }, grid: { color: grid } },
           y: { beginAtZero: !!opts.zero, title: { display: true, text: axis, color: text }, ticks: { color: text, callback: (v) => (opts.unit === "%" ? `${v}%` : Number(v).toLocaleString()) }, grid: { color: grid } } } } });
     charts.set(canvas, ch);
-    canvas.setAttribute("aria-label", `Line chart: ${axis}, ${labels[0]}–${labels[labels.length - 1]}, ` + datasets.map((d) => `${d.label} ${fmt(d.data.find((v) => v != null))} to ${fmt([...d.data].reverse().find((v) => v != null))}`).join("; "));
+    canvas.setAttribute("aria-label", `Line chart: ${axis}, ${labels[0]}–${labels[labels.length - 1]}, ` + datasets.map((d) => `${d.label} ${fmt(d.data.find((v) => v != null))} to ${fmt([...d.data].reverse().find((v) => v != null))}`).join("; ") +
+      (marks.length ? `; split in ${[...new Set(marks.map((k) => k.year))].join(", ")}` : ""));
     return ch;
   }
 
@@ -142,7 +165,7 @@
     } else groups = [[current.combined ? "All" : `All of ${current.groups && current.groups.label || current.name}`, rows]];
     const shown = groups.slice(0, PALETTE.length);
     const place = trend.place, ps = place ? parse(place[m.col]) : null;
-    const hasPlace = ps && years(ps).length > 0;
+    const hasPlace = ps && (years(ps).length > 0 || years(early(place, m.col)).length >= 2);
     // Counts are drawn as an index (first year = 100) when lines of different sizes share the chart; meetings as the
     // average per place when a place is shown next to its area.
     const many = shown.length > 1;
@@ -154,15 +177,17 @@
       return [g, s];
     });
     if (hasPlace) lines.push([place.District, { line: m.kind === "sum" ? Object.fromEntries(Object.entries(ps).filter(([y]) => +y >= 2010)) : ps, place: true }]);
+    const pe = place ? early(place, m.col) : {}, hasEarly = years(pe).length >= 2;
+    if (hasEarly) lines.push([`${place.District} on its earlier borders`, { line: pe, place: true, early: true }]);
     const labels = [...new Set(lines.flatMap(([, s]) => years(s.line)))].sort();
     const accent = cssVar("--accent"), accent2 = cssVar("--accent-2");
     const raw = lines.map(([, s]) => s.line);
     draw($("trend-history"), labels, lines.map(([g, s], i) => {
       const l = s.line, base = labels.find((y) => l[y] > 0), color = s.place ? accent2 : many ? PALETTE[i] : accent;
-      return { label: g, borderColor: color, backgroundColor: color, borderDash: s.place ? [6, 4] : undefined,
+      return { label: g, borderColor: color, backgroundColor: color, borderDash: s.early ? [2, 3] : s.place ? [6, 4] : undefined,
         data: labels.map((y) => (l[y] == null ? null : idx ? (base ? +(100 * l[y] / l[base]).toFixed(1) : null) : l[y])) };
     }), idx ? `${m.axis}, first year = 100` : perPlace ? "Meetings recorded (per place)" : m.kind === "sum" ? `${m.axis} (all ${label})` : m.kind === "count" ? `${m.axis} (all ${label})` : m.axis,
-      { unit: idx ? "" : m.unit, raw: idx ? raw : null, zero: m.kind !== "count" });
+      { unit: idx ? "" : m.unit, raw: idx ? raw : null, zero: m.kind !== "count", marks: hasPlace ? splitsOf(place) : [] });
     const n = lines.filter(([, s]) => !s.place).reduce((t, [, s]) => t + (s.n || 0), 0);
     const parts = [];
     if (many) parts.push(`One line per ${regionWord}` + (groups.length > shown.length ? ` (the ${shown.length} with the most places; pick one in the Area menu for the others)` : "") + ".");
@@ -173,6 +198,7 @@
     if (current.combined && m.kind === "rate") parts.push("Each country uses its own measure, so compare the shapes of the lines, not their heights.");
     if (place && !hasPlace) parts.push(`No ${m.name.toLowerCase()} by year for ${place.District}.`);
     else if (hasPlace) parts.push(`The dashed line is ${place.District}.`);
+    if (hasPlace && splitsOf(place).length) parts.push(splitNote(place, hasEarly));
     $("trend-history-note").textContent = parts.join(" ");
   }
 
@@ -212,22 +238,44 @@
     picker(holder.querySelector(".hist-pick"), list, state, (x) => { holder._m = x; renderPlaces(holder, entries, opts); });
     const m = state;
     const series = entries.map((e) => parse(e.row[m.col]));
-    const labels = [...new Set(series.flatMap(years))].sort();
+    const earlySeries = entries.map((e) => early(e.row, m.col));
+    const labels = [...new Set(series.concat(earlySeries).flatMap(years))].sort();
     const colors = [cssVar("--accent"), cssVar("--accent-2")];
     // Two places of very different sizes: an index (first shared year = 100), with the counts in the tooltip.
     const tops = series.map((s) => Math.max(0, ...Object.values(s)));
     const idx = m.kind === "count" && series.length === 2 && Math.min(...tops) > 0 && Math.max(...tops) / Math.min(...tops) > 4;
     const base = idx ? labels.find((y) => series.every((s) => s[y] > 0)) : null;
     const useIdx = idx && base;
-    draw(holder.querySelector("canvas"), labels, series.map((s, i) => ({ label: entries[i].name, borderColor: colors[i], backgroundColor: colors[i],
-      data: labels.map((y) => (s[y] == null ? null : useIdx ? +(100 * s[y] / s[base]).toFixed(1) : s[y])) })),
-      useIdx ? `${m.axis}, ${base} = 100` : m.axis, { unit: useIdx ? "" : m.unit, raw: useIdx ? series : null, zero: m.kind !== "count" });
+    // Index base for an earlier-borders line: its value in the same year as its place's own line.
+    const sets = series.map((s, i) => ({ label: entries[i].name, borderColor: colors[i], backgroundColor: colors[i],
+      data: labels.map((y) => (s[y] == null ? null : useIdx ? +(100 * s[y] / s[base]).toFixed(1) : s[y])) }));
+    const raws = [...series];
+    earlySeries.forEach((s, i) => {
+      if (years(s).length < 2) return;
+      raws.push(s);
+      sets.push({ label: `${entries[i].name} on its earlier borders`, borderColor: colors[i], backgroundColor: colors[i], borderDash: [2, 3],
+        data: labels.map((y) => (s[y] == null ? null : useIdx ? (s[base] ? +(100 * s[y] / s[base]).toFixed(1) : null) : s[y])) });
+    });
+    const marks = entries.flatMap((e, i) => (years(series[i]).length || years(earlySeries[i]).length ? splitsOf(e.row) : []));
+    draw(holder.querySelector("canvas"), labels, sets,
+      useIdx ? `${m.axis}, ${base} = 100` : m.axis, { unit: useIdx ? "" : m.unit, raw: useIdx ? raws : null, zero: m.kind !== "count", marks });
     const missing = entries.filter((e, i) => !years(series[i]).length).map((e) => e.name);
     holder.querySelector(".hist-note").textContent = [
       useIdx ? `The two places differ a lot in size, so each line is shown with ${base} = 100; hover to see the numbers.` : "",
       m.col === "Meetings by year" ? "Meetings dated by their recordings' titles (undated ones are left out; the current year is partial)." : "",
       m.col === "Poverty by year" && entries.length === 2 ? "Places in different countries use different measures." : "",
-      missing.length ? `No ${m.name.toLowerCase()} by year for ${missing.join(" and ")}.` : ""].filter(Boolean).join(" ");
+      missing.length ? `No ${m.name.toLowerCase()} by year for ${missing.join(" and ")}.` : "",
+      ...entries.map((e, i) => (splitsOf(e.row).length && (years(series[i]).length || years(earlySeries[i]).length) ? splitNote(e.row, years(earlySeries[i]).length >= 2) : ""))].filter(Boolean).join(" ");
+  }
+  // "Split in 2017: San Miguel was made from Juliaca. The solid line ..." / "Merged in 2019: A and B merged into C. ..."
+  function splitNote(row, hasEarly) {
+    const by = {};
+    splitsOf(row).forEach((k) => (by[k.year] = by[k.year] || []).push(k));
+    const txt = Object.entries(by).map(([y, ks]) => `${ks.some((k) => k.label === "Split") ? "Split" : "Merged"} in ${y}: ${ks.map((k) => k.text).join("; ")}.`).join(" ");
+    const merged = splitsOf(row).some((k) => k.label === "Merged"), split = splitsOf(row).some((k) => k.label === "Split");
+    return txt + (split ? ` The solid line is ${row.District} on each year's own borders, so it drops where part of it was split off` +
+      (hasEarly ? `; the dotted line counts ${row["Earlier borders"] || "the places"} as one place on the borders before the split, so its years compare.` : ".") : "") +
+      (merged ? ` Before a merger the line adds up the former places, so the whole line is on today's borders.` : "");
   }
 
   window.SiteHistory = { MEASURES, parse, linked, renderTrends, renderPlaces, trend };

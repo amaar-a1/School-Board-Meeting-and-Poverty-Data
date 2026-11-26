@@ -51,5 +51,30 @@ def main(dirs):
     print(len(w["prefectures"]), "prefectures;", len(w["cities"]), "designated and core cities")
 
 
-if __name__ == "__main__":
+def history(raw):
+    """Pupils (E2501 elementary plus E3501 lower secondary) for every school year since 2000, from the same SSDS
+    municipal series (e-Stat statsDataId 0000020205, fetch round 53), into jp_municipal.json's pupil_years. A place's
+    series starts after its last change of more than a quarter in a year (a merger: the series is per current code).
+    Usage: python3 data-prep/prep_japan.py --history RAWDIR"""
+    by = {}
+    for code in ("E2501", "E3501"):
+        for x in json.load(open(os.path.join(raw, f"jp_ssds_{code}.json"))):
+            y = x["time"][:4]
+            if y >= "2000" and re.fullmatch(r"\d+", str(x["v"] or "")): by.setdefault(x["area"], {}).setdefault(y, {})[code] = int(x["v"])
+    p = os.path.join(OUT, "jp_municipal.json"); mun = json.load(open(p, encoding="utf-8"))
+    n = 0
+    for code, m in mun.items():
+        s = {y: v["E2501"] + v["E3501"] for y, v in by.get(code, {}).items() if len(v) == 2}
+        ys = sorted(s); start = 0
+        for k in range(1, len(ys)):
+            if min(s[ys[k]], s[ys[k - 1]]) > 100 and abs(s[ys[k]] / s[ys[k - 1]] - 1) > 0.25: start = k
+        s = {y: s[y] for y in ys[start:]}
+        if len(s) > 1: m["pupil_years"] = s; n += 1
+    json.dump(mun, open(p, "w", encoding="utf-8"), ensure_ascii=False)
+    print(n, "places with pupils by year")
+
+
+if __name__ == "__main__" and sys.argv[1] == "--history":
+    history(sys.argv[2])
+elif __name__ == "__main__":
     main(sys.argv[1:])
