@@ -6,7 +6,8 @@ Municipalities run schools in these countries, so each municipality is the board
   Norway   SSB 12944: children 0-17 in households with persistent low income (EU 60%), 2022-2024
   Sweden   SCB TAB6685: people 0-19 with low economic standard (60% of median), 2024
   Finland  THL Sotkanet 228: at-risk-of-poverty rate for children (60% of median), latest year
-  Denmark  Statistics Denmark LABY07: children 0-17 in relative poverty (50% of median), 2024
+  Denmark  Statistics Denmark LABY07: children 0-17 in relative poverty (50% of median), 2025, and every year from
+           2015 in Poverty by year (downloaded by hand: inputs/nordic/dk_LABY07_history.tsv)
   Netherlands CBS 86132NED: children in poverty (CBS's "not much but sufficient" criterion), 2024, and every year
     from 2018 in Poverty by year (fetch round 52; CBS stopped updating the table on 25 November 2026)
 - Where a municipality's child rate isn't published, the next best figure is used and the "Poverty note"
@@ -260,6 +261,20 @@ def main():
             for r in csv.DictReader(open(os.path.join(IN, "dk_LABY07.csv"), encoding="utf-8-sig"), delimiter=";"):
                 nm = alias.get(norm(r["KOMGRP"]), norm(r["KOMGRP"]))
                 if nm in byname: rows[byname[nm]]["Percentage of Children in Low Income"] = f"{float(r['INDHOLD']):.2f}%"
+            # Every year since 2015, including the newer 2025 (StatBank LABY07, children 0-17, downloaded by hand:
+            # inputs/nordic/dk_LABY07_history.tsv): the series for Poverty by year, and its latest year as the figure.
+            hp = os.path.join(IN, "dk_LABY07_history.tsv")
+            if os.path.exists(hp):
+                lines = [l for l in open(hp, encoding="utf-8") if not l.startswith("#")]
+                head = lines[0].rstrip("\n").split("\t")
+                for l in lines[1:]:
+                    c = l.rstrip("\n").split("\t")
+                    nm = alias.get(norm(c[0]), norm(c[0]))
+                    ys = {y: float(v) for y, v in zip(head[1:], c[1:]) if v.strip()}
+                    if nm in byname and ys:
+                        last = max(ys)
+                        rows[byname[nm]].update({"Percentage of Children in Low Income": f"{ys[last]:.2f}%", "Poverty by year": "; ".join(f"{y}:{v}" for y, v in sorted(ys.items())),
+                                                 "Poverty note": f"Children 0-17 in relative poverty (below half the median income), {last} (Statistics Denmark LABY07)"})
             for r in csv.DictReader(open(os.path.join(IN, "dk_LABY23.csv"), encoding="utf-8-sig"), delimiter=";"):
                 nm = alias.get(norm(r["KOMGRP"]), norm(r["KOMGRP"]))
                 if nm in byname: rows[byname[nm]].update({"Enrollment": int(r["INDHOLD"]), "Enrollment year": "October 2025"})
