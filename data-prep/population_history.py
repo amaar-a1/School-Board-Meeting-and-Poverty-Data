@@ -285,6 +285,37 @@ def drop_years(name, by):
         else: kept.append(b)
 
 
+# Countries with one population figure: the year it is for, so it shows as one point on the line over time (a
+# function of the row where it varies). Left out where the year isn't certain.
+SINGLE_YEAR = {"ecuador": "2010",      # 2010 census (INEC)
+               "kenya": "2019",        # 2019 census
+               "uruguay": "2025",      # INE projection for 30 June 2025
+               "peru": "2018",         # INEI's 2018 poverty map
+               "rwanda": "2025",       # WorldPop's 2025 estimate
+               "canada": "2021",       # 2021 census
+               "india": lambda r: "2025" if "WorldPop's 2025" in (r.get("Map note") or "") else "2011"}
+
+
+def single_years():
+    for name, y in SINGLE_YEAR.items():
+        p = os.path.join(DOCS, f"{name}.csv")
+        if not os.path.exists(p): continue
+        text = open(p, encoding="utf-8", newline="").read()
+        rows = list(csv.DictReader(text.splitlines()))
+        f = list(rows[0].keys())
+        if COL not in f: f.insert(f.index("Population") + 1 if "Population" in f else len(f), COL)
+        n = 0
+        for r in rows:
+            pop = str(r.get("Population") or "").replace(",", "").strip()
+            if pop and pop.replace(".", "").isdigit() and float(pop) > 0:
+                r[COL] = f"{y(r) if callable(y) else y}: {round(float(pop))}"; n += 1
+            else: r[COL] = ""
+        nl = "\r\n" if "\r\n" in text[:5000] else "\n"
+        with open(p, "w", encoding="utf-8", newline="") as fo:
+            w = csv.DictWriter(fo, fieldnames=f, lineterminator=nl); w.writeheader(); w.writerows(rows)
+        print(f"{name}: one population point for {n} of {len(rows)}")
+
+
 def apply():
     res = json.load(open(OUTF))
     bord = res.pop("_borders", {})
@@ -316,4 +347,5 @@ def apply():
 
 
 if __name__ == "__main__":
-    prep(sys.argv[2]) if sys.argv[1] == "prep" else apply()
+    if sys.argv[1] == "prep": prep(sys.argv[2])
+    else: apply(); single_years()
