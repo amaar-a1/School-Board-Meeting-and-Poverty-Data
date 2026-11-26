@@ -263,6 +263,16 @@ def main():
             for r in csv.DictReader(open(os.path.join(IN, "dk_LABY23.csv"), encoding="utf-8-sig"), delimiter=";"):
                 nm = alias.get(norm(r["KOMGRP"]), norm(r["KOMGRP"]))
                 if nm in byname: rows[byname[nm]].update({"Enrollment": int(r["INDHOLD"]), "Enrollment year": "October 2025"})
+            # Every year since 2007 (StatBank LABY23, downloaded by hand: inputs/nordic/dk_LABY23_history.tsv)
+            hp = os.path.join(IN, "dk_LABY23_history.tsv")
+            if os.path.exists(hp):
+                lines = [l for l in open(hp, encoding="utf-8") if not l.startswith("#")]
+                head = lines[0].rstrip("\n").split("\t")
+                for l in lines[1:]:
+                    c = l.rstrip("\n").split("\t")
+                    nm = alias.get(norm(c[0]), norm(c[0]))
+                    if nm in byname:
+                        rows[byname[nm]]["Enrollment by year"] = "; ".join(f"{y}: {int(v.replace(',', ''))}" for y, v in zip(head[1:], c[1:]) if v.replace(",", "").isdigit())
         elif cc == "NL":
             best, hist = {}, {}
             for v in json.load(open(os.path.join(IN, "nl_childpoverty.json")))["value"]:
