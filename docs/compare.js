@@ -69,7 +69,7 @@
     row._pubBase = both.length ? sum("Enrollment", both) : 0;
     // Over time: each measure linked over the area's places; meetings added up.
     if (H) H.MEASURES.forEach((m) => {
-      const series = rows.map((r) => H.parse(r[m.col])).filter((x) => Object.keys(x).length);
+      const series = rows.map((r) => (m.kind === "sum" ? H.parse(r[m.col]) : H.seriesOf(r, m.col))).filter((x) => Object.keys(x).length);
       if (!series.length) return;
       let line = {};
       if (m.kind === "sum") series.forEach((x) => Object.entries(x).forEach(([y, v]) => { line[y] = (line[y] || 0) + v; }));

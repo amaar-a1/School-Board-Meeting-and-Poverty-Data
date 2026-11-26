@@ -36,7 +36,40 @@
   const early = (row, col) => parse(row && row[col + EARLY]);
   const splitsOf = (row) => String((row && row["Border changes"]) || "").split(";").map((p) => p.trim().match(/^(\d{4}):\s*(.+)$/)).filter(Boolean)
     .map((m) => ({ year: m[1], text: m[2], label: / merged into |^part of .* joined /.test(m[2]) ? "Merged" : "Split" }));
-  const hasLine = (row, col) => years(parse(row[col])).length >= 2 || years(early(row, col)).length >= 2;
+  // A place's line for a measure. One with a single year (no "... by year" column; its figure and the year it is for,
+  // as "Enrollment" and "Enrollment year") is one point. Meetings: every year from the first one with recordings to
+  // this one, a year with none as 0; a place with none found at all, 0 this year.
+  const yearIn = (t) => { const m = String(t || "").match(/\b(19|20)\d\d\b/); return m ? m[0] : null; };
+  const num = (v) => Number(String(v ?? "").replace(/[%,\s]/g, ""));
+  const POV_COL = /^(Percentage of Children.*(Low Income|Poverty)|Poverty rate \(all ages\)|Child poverty rate.*|Poverty rate)$/;
+  function single(row, col) {
+    if (col === "Enrollment by year" && !row["Enrollment estimated"]) {
+      const v = num(row.Enrollment), y = yearIn(row["Enrollment year"]);
+      return v > 0 && y ? { [y]: v } : {};
+    }
+    if (col === "Poverty by year") {
+      const k = Object.keys(row).find((c) => POV_COL.test(c) && String(row[c] ?? "").trim() !== "" && !isNaN(num(row[c])));
+      const y = yearIn(row["Poverty year"]) || yearIn(row["Poverty note"]) || yearIn(row["Poverty measure"]);
+      return k && y ? { [y]: num(row[k]) } : {};
+    }
+    return {};
+  }
+  function seriesOf(row, col) {
+    if (!row) return {};
+    let s = parse(row[col]);
+    if (!years(s).length) s = single(row, col);
+    if (col === "Meetings by year") {
+      const now = new Date().getFullYear(), ys = years(s).map(Number).filter((y) => y >= 2010);
+      const none = !ys.length && !(num(row["Available Board Meetings"]) > 0) && !(num(row["Other Board Meetings"]) > 0);
+      if (ys.length || none) {
+        const out = {};
+        for (let y = ys.length ? Math.min(...ys) : now; y <= now; y++) out[y] = s[y] ?? 0;
+        s = out;
+      }
+    }
+    return s;
+  }
+  const hasLine = (row, col) => years(seriesOf(row, col)).length >= 1 || years(early(row, col)).length >= 2;
   const mean = (a) => a.reduce((x, y) => x + y, 0) / a.length;
 
   // A line for a group of places whose years don't all match: each year's change is measured on the places with a
@@ -46,7 +79,7 @@
   // cities only) as a jump in the average.
   function linked(series, kind) {
     const ys = [...new Set(series.flatMap(years))].sort();
-    if (ys.length < 2) return {};
+    if (!ys.length) return {};
     // A year with no place in common with the one before (or nothing to scale from) starts a new stretch; only the
     // stretch holding the anchor year is drawn.
     const base = kind === "count" ? 1 : 0, lvl = { [ys[0]]: base }, seg = { [ys[0]]: 0 };
@@ -64,13 +97,15 @@
     const keep = ys.filter((y) => seg[y] === seg[anchor]);
     const out = {};
     keep.forEach((y) => { out[y] = kind === "count" ? Math.round(at * lvl[y] / lvl[anchor]) : +(at + lvl[y] - lvl[anchor]).toFixed(2); });
-    return keep.length > 1 ? out : {};
+    return out;   // one year alone is one point
   }
   function summarize(rows, m) {
-    const series = rows.map((r) => parse(r[m.col])).filter((s) => years(s).length);
+    const series = rows.map((r) => (m.kind === "sum" ? parse(r[m.col]) : seriesOf(r, m.col))).filter((s) => years(s).length);
     if (m.kind === "sum") {
       const line = {};
       series.forEach((s) => Object.entries(s).forEach(([y, v]) => { if (+y >= 2010) line[y] = (line[y] || 0) + v; }));
+      const ys = years(line).map(Number);   // a year with no meetings anywhere, to this one, is 0
+      if (ys.length) for (let y = Math.min(...ys), now = new Date().getFullYear(); y <= now; y++) line[y] = line[y] ?? 0;
       return { line, n: series.length, places: rows.length };
     }
     return { line: linked(series, m.kind), n: series.length };
@@ -164,7 +199,7 @@
       groups = [[g, rows.filter((r) => r[rc] === g)]];
     } else groups = [[current.combined ? "All" : `All of ${current.groups && current.groups.label || current.name}`, rows]];
     const shown = groups.slice(0, PALETTE.length);
-    const place = trend.place, ps = place ? parse(place[m.col]) : null;
+    const place = trend.place, ps = place ? seriesOf(place, m.col) : null;
     const hasPlace = ps && (years(ps).length > 0 || years(early(place, m.col)).length >= 2);
     // Counts are drawn as an index (first year = 100) when lines of different sizes share the chart; meetings as the
     // average per place when a place is shown next to its area.
@@ -238,7 +273,7 @@
       `<div class="chart-box hist-box"><canvas role="img"></canvas></div><p class="note hist-note"></p>`;
     picker(holder.querySelector(".hist-pick"), list, state, (x) => { holder._m = x; renderPlaces(holder, entries, opts); });
     const m = state;
-    const series = entries.map((e) => parse(e.row[m.col]));
+    const series = entries.map((e) => seriesOf(e.row, m.col));
     const earlySeries = entries.map((e) => early(e.row, m.col));
     const labels = [...new Set(series.concat(earlySeries).flatMap(years))].sort();
     const colors = [cssVar("--accent"), cssVar("--accent-2")];
@@ -282,5 +317,5 @@
       (merged ? ` Before a merger the line adds up the former places, so the whole line is on today's borders.` : "");
   }
 
-  window.SiteHistory = { MEASURES, parse, linked, renderTrends, renderPlaces, trend };
+  window.SiteHistory = { MEASURES, parse, seriesOf, linked, renderTrends, renderPlaces, trend };
 })();
