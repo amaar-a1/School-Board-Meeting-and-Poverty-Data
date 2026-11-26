@@ -1,0 +1,2 @@
+ERR dk_LABY23_info.json [Errno 104] Connection reset by peer https://api.statbank.dk/v1/tableinfo/LABY23?lang=en&format=JSON
+ERR dk_LABY07_info.json [Errno 104] Connection reset by peer https://api.statbank.dk/v1/tableinfo/LABY07?lang=en&format=JSON
