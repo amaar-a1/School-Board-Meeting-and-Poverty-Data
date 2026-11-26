@@ -10,11 +10,11 @@ The 2016–2021 Padron.dbf files have no pupil count, so their pupils come from 
 cuadro C201, or C202/C206 for the few programmes counted there; ages and columns added up per school, the largest of a
 school's tables taken, or their sum for cédula 7A whose two tables count different pupils), with the school's district
 and management from that year's Padron.dbf. District by district the median is about 98% of the next year's
-count (national totals 8.38M in 2005, 8.45M in 2006, 8.69M in 2007, 8.55M in 2008, 8.58M in 2009, 8.54M in 2010, 8.38M in 2011, 8.03M in 2012 (incomplete: see gaps()), 8.47M in 2013,
+count (national totals 8.27M in 2004 (no PRONOEI), 8.39M in 2005, 8.45M in 2006, 8.69M in 2007, 8.55M in 2008, 8.58M in 2009, 8.54M in 2010, 8.38M in 2011, 8.03M in 2012 (incomplete: see gaps()), 8.47M in 2013,
 8.40M in 2014, 8.47M in 2015, 8.66M in 2016, 8.72M in 2017, 8.79M in 2018, 9.00M in 2019, 9.05M in 2020 and 9.10M in 2021, against 9.42M in 2022); Lima's Cercado is the main outlier
 (130k in 2021, 200k in 2022), and San Isidro's 2019 figure includes
 TELESUP's 25k students, a technical institute that closed (counts cover every school in the padrón, institutes included).
-2005-2015 use only the enrollment file (02_Mat2100.dbf.zip; 03_Mat2x00.dbf.zip in 2012, 04_mat2100.dbf.zip in 2010), which carries each school's district (CODGEO) and
+2004-2015 use only the enrollment file (02_Mat2100.dbf.zip; 03_Mat2x00.dbf.zip in 2012, 04_mat2100.dbf.zip in 2010), which carries each school's district (CODGEO) and
 management (GES_DEP: A1-A4 public, as the padrones' GESTION 1-2 for the same schools in 2016; B private); its tables
 are in MAT_TABLES.
 Usage: python3 data-prep/prep_peru_history.py YEAR 00_Padron.zip [YEAR 00_Padron.zip ...]
@@ -97,6 +97,7 @@ MAT_TABLES = {"2015": {"07": ("201", "202"), "08": ("201", "203")},
               "2007": {"4A": ("2100", "2200"), "07": ("2110", "2120")},
               "2006": {},
               "2005": {},
+              "2004": {},   # no file of the non-school preschool programmes (PRONOEI) survives: 2004 leaves them out
               "2012b": {"4A": ("201", "202"), "07": ("201", "202"), "08": ("201", "202")}}   # 2012's 02_Mat2100
 FIX_CODGEO = {"20011<": "200114"}   # a garbled code in 2006's MAT2100 (school 0572230, in 200114 in 2005 and 2007)
 MAT_EXTRA = {"2012": "2012b", "2007": "ine", "2006": "padprog", "2005": "ine"}
