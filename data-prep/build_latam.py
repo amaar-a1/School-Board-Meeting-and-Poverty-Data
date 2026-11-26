@@ -540,7 +540,9 @@ def write(cc, key, rows, feats):
         for f in json.load(open(xf, encoding="utf-8"))["features"]:
             r = next((r for r in rows if r["District ID"] == f["properties"]["id"]), None)
             if r and f["properties"]["id"] not in have and f.get("geometry"):
-                feats.append({"type": "Feature", "properties": {"id": f["properties"]["id"], "NAME": r["District"]},
+                # INSIDE: drawn over the older border of the place it came from (the map hides it in the years
+                # before its split, so that older border shows alone)
+                feats.append({"type": "Feature", "properties": {"id": f["properties"]["id"], "NAME": r["District"], "INSIDE": 1},
                               "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
                 r["_geo"] = True
                 # Its locale, from its own border (the main file had none to measure).
