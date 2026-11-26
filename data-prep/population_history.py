@@ -18,6 +18,8 @@ Sources:
 - Argentina: INDEC population projections by province, 1 July of each year (based on the 2010 census), to 2026.
 - Colombia: DANE municipal population (back-)projections 2005-2017 and projections 2018-2042 (updated July 2025), both
   consistent with the 2018 census, to the current year.
+- Mexico: CONAPO, "Reconstrucción y proyecciones de la población de los municipios de México 1990-2040" (2024):
+  mid-year population, reconstructed for 1990-2020 and projected from 2021, to the current year (fetch round 55).
 - Brazil: IBGE's population estimates by municipality for 1 July, 2001-2025 (SIDRA table 6579; none for the census
   years 2007, 2010 and 2022).
 """
@@ -138,6 +140,19 @@ def prep(raw):
     # Brazil: IBGE's estimates for 1 July (SIDRA table 6579; none in the census years 2007, 2010 and 2022)
     br = json.load(open(os.path.join(raw, "br_pop_estimates.json")))
     res["brazil"] = {i: {y: int(v) for y, v in br[i.split("-", 1)[1]].items() if str(v).isdigit()} for i in ids("brazil") if i.split("-", 1)[1] in br}
+    # Mexico: CONAPO's reconstruction 1990-2020 and projections 2021-2040, mid-year, men and women added up, to the current year
+    mz = glob.glob(os.path.join(raw, "mx_00_Republica_mexicana.zip*"))
+    if mz:
+        import io, zipfile
+        b = gzip.open(mz[0]).read() if mz[0].endswith(".gz") else open(mz[0], "rb").read()
+        z = zipfile.ZipFile(io.BytesIO(b))
+        ws = openpyxl.load_workbook(io.BytesIO(z.read(next(n for n in z.namelist() if "2_Gran_Gedad" in n))), read_only=True).worksheets[0]
+        ws.reset_dimensions()
+        mx = {}
+        for r in ws.iter_rows(min_row=2, values_only=True):
+            if r and isinstance(r[5], int) and r[5] <= datetime.date.today().year and isinstance(r[10], (int, float)):
+                c = str(r[0]).zfill(5); mx.setdefault(c, {}); mx[c][str(r[5])] = mx[c].get(str(r[5]), 0) + int(r[10])
+        res["mexico"] = {i: mx[i.split("-", 1)[1]] for i in ids("mexico") if len(mx.get(i.split("-", 1)[1], {})) > 1}
     for name in res: res[name] = clean(name, res[name])
     json.dump(res, open(OUTF, "w"), separators=(",", ":"), sort_keys=True)
     for k, v in res.items(): print(f"{k}: {len(v)} of {len(ids(k))} places")
