@@ -1,0 +1,16 @@
+OK lka_2012_final.pdf 107630871 https://www.statistics.gov.lk/Resource/en/Population/CPH_2011/CensusPopulationHousing2012-FinalReport.pdf
+OK lka_2024_page.html 121822 https://www.statistics.gov.lk/Population/StaticalInformation/CPH2024
+  LINK https://www.statistics.gov.lk//Resource/en/Population/CPH_2024/CPH2024_Final_Eng.pdf
+OK lka_2024_CPH2024_Final_Eng.pdf 21432384 https://www.statistics.gov.lk//Resource/en/Population/CPH_2024/CPH2024_Final_Eng.pdf
+  LINK https://www.statistics.gov.lk//Resource/en/Population/CPH_2024/CPH2024_Final_Sin.pdf
+OK lka_2024_CPH2024_Final_Sin.pdf 23384079 https://www.statistics.gov.lk//Resource/en/Population/CPH_2024/CPH2024_Final_Sin.pdf
+  LINK https://www.statistics.gov.lk//Resource/en/Population/CPH_2024/CPH2024_Final_Tam.pdf
+OK lka_2024_CPH2024_Final_Tam.pdf 24211201 https://www.statistics.gov.lk//Resource/en/Population/CPH_2024/CPH2024_Final_Tam.pdf
+  LINK https://www.statistics.gov.lk//Resource/en/Population/CPH_2024/CPH2024_Preliminary_Report.pdf
+OK lka_2024_CPH2024_Preliminary_Report.pdf 9036195 https://www.statistics.gov.lk//Resource/en/Population/CPH_2024/CPH2024_Preliminary_Report.pdf
+  LINK https://www.statistics.gov.lk//Resource/en/Population/CPH_2024/Housing_Preliminary_Report.pdf
+OK lka_2024_Housing_Preliminary_Report.pdf 8313222 https://www.statistics.gov.lk//Resource/en/Population/CPH_2024/Housing_Preliminary_Report.pdf
+  LINK https://www.statistics.gov.lk//Resource/en/Population/CPH_2024/Housing_Preliminary_Report2024.pdf
+OK lka_2024_Housing_Preliminary_Report2024.pdf 732853 https://www.statistics.gov.lk//Resource/en/Population/CPH_2024/Housing_Preliminary_Report2024.pdf
+  LINK https://www.statistics.gov.lk//Resource/en/Population/CPH_2024/Population_Preliminary_Report.pdf
+OK lka_2024_Population_Preliminary_Report.pdf 7780515 https://www.statistics.gov.lk//Resource/en/Population/CPH_2024/Population_Preliminary_Report.pdf
