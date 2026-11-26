@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <link rel="stylesheet" href="estilo.css">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mantenimiento</title>
+
+</head>
+
+<body>
+
+<div class="contenedor">
+        <div class="logo"><img src="img/Gobierno-Nacional.png" style="max-width:900px; float:left"/></div>
+
+<!--	<div class="logo"><img src="img/logo.png"  style="max-width:300px; float:left"/><img src="img/Gobierno-Logo.png" style="max-width:300px; float:right"/></div> -->
+</div>
+
+<div class="contenedor">
+	<div class="cabecera"><strong class="azul">Sitio</strong> en <strong class="rojo">Mantenimiento</strong></div>
+    
+    <!-- Cargador Nuevo -->
+    <div id="tapa">
+        <div class="preloader-wrapper big active" >
+          <div class="spinner-layer spinner-blue">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+    
+          <div class="spinner-layer spinner-red">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+    
+          <div class="spinner-layer spinner-yellow">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+    
+          <div class="spinner-layer spinner-green">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+    </div> 
+    <!-- Cargador Nuevo -->
+    
+    <p>Estamos trabajando..</p>
+    <p style="font-size:14px !important"><strong>Disculpe las molestias ocasionadas.</strong></p>
+</div>
+<div class="pie">
+    <p>2026</p>
+</div>
+
+
+</body>
+</html>

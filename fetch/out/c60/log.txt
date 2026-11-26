@@ -1,0 +1,12 @@
+ERR in_page_0.html HTTP Error 503: Service Unavailable https://www.data.gov.in/catalog/unified-district-information-system-education-plus-udise
+ERR in_page_1.html HTTP Error 503: Service Unavailable https://www.data.gov.in/search?title=udise%20district%20enrolment
+ERR in_page_2.html HTTP Error 503: Service Unavailable https://www.data.gov.in/search?title=district%20wise%20enrolment
+ERR in_page_3.html HTTP Error 503: Service Unavailable https://www.data.gov.in/sector/education
+OK py_search_matricula.json 2638 https://www.datos.gov.py/api/3/action/package_search?rows=50&q=matricula
+   b'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\r\n<html xmlns="http://www.w3.org/1999/xhtml">\r\n<head>\r\n <link rel="stylesheet" '
+OK py_search_matriculados.json 2638 https://www.datos.gov.py/api/3/action/package_search?rows=50&q=matriculados
+   b'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\r\n<html xmlns="http://www.w3.org/1999/xhtml">\r\n<head>\r\n <link rel="stylesheet" '
+OK py_search_ministerio_de_educacion.json 2638 https://www.datos.gov.py/api/3/action/package_search?rows=50&q=ministerio%20de%20educacion
+   b'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\r\n<html xmlns="http://www.w3.org/1999/xhtml">\r\n<head>\r\n <link rel="stylesheet" '
+OK py_search_estudiantes_por_distrito.json 2638 https://www.datos.gov.py/api/3/action/package_search?rows=50&q=estudiantes%20por%20distrito
+   b'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\r\n<html xmlns="http://www.w3.org/1999/xhtml">\r\n<head>\r\n <link rel="stylesheet" '
