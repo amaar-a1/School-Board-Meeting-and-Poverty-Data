@@ -112,7 +112,7 @@ def school_totals(year, path):
     zipfile.ZipFile(path).extractall(tmp)
     f = next(os.path.join(dp, x) for dp, _, fs in os.walk(tmp) for x in fs if x.lower().endswith(".dbf"))
     t = DBF(f, encoding="latin-1", load=False)
-    d = [x for x in t.field_names if re.fullmatch(r"D\d\d|DATO\d\d[HM]", x)]   # DATOnnH/M (by sex) in 2008
+    d = [x for x in t.field_names if re.fullmatch(r"D\d\d|DATO(\d\d|X)[HM]", x)]   # DATOnnH/M (by sex) to 2008; DATOX, 2005's extra age
     per, info = {}, {}
     for r in t:
         if r["NROCED"] in tables and r["CUADRO"] not in tables[r["NROCED"]]: continue
