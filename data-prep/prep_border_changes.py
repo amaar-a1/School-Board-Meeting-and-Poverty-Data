@@ -1,8 +1,9 @@
-"""Municipal mergers since the population series start (2016), for data-prep/inputs/border_changes.json (borders.py).
+"""Municipal mergers since the population series start (2011), for data-prep/inputs/border_changes.json (borders.py).
 
   python3 data-prep/prep_border_changes.py france v_mvt_commune_2026.csv
   python3 data-prep/prep_border_changes.py italy  Variazioni_amministrative_territoriali_dal_01011991.xlsx
   python3 data-prep/prep_border_changes.py netherlands DIR_WITH_nl_YYYY.html
+  python3 data-prep/prep_border_changes.py belgium -        (the 2019 list is written out below)
 
 - France: INSEE, Code officiel géographique, "mouvements des communes" (fetch round 56): mergers (MOD 31-33: fusion
   simple, création de commune nouvelle, fusion-association), each former commune to the commune it joined; and code
@@ -15,7 +16,7 @@
 - Netherlands: CBS, "Gemeentelijke indeling op 1 januari YYYY" (fetch round 59), the tables of municipalities
   abolished and the ones they formed or joined, 2012-2026. A municipality divided among several (Haaren, 2021) is
   only marked on the ones that took part of it: its parts can't be told apart.
-Each list is written in Eurostat's LAU codes (FR_xxxxx, ...), with the years from the first one after 2016.
+Each list is written in Eurostat's LAU codes (FR_xxxxx, ...), with the years from the first one after 2011.
 """
 import csv, json, os, sys
 
@@ -33,7 +34,7 @@ def france(path):
     for x in csv.DictReader(open(path, encoding="utf-8")):
         if x["MOD"] in ("31", "32", "33", "41", "50") and x["TYPECOM_AV"] == "COM" and x["TYPECOM_AP"] == "COM":
             F = first_jan(x["DATE_EFF"])
-            if F <= "2016": continue
+            if F <= "2011": continue
             g = groups.setdefault((F, x["COM_AP"]), {"year": F, "into": "FR_" + x["COM_AP"], "name": x["LIBELLE_AP"], "from": [], "names": [], "rename": x["MOD"] in ("41", "50")})
             if "FR_" + x["COM_AV"] not in g["from"]:
                 g["from"].append("FR_" + x["COM_AV"]); g["names"].append(x["LIBELLE_AV"])
@@ -61,9 +62,9 @@ def italy(path):
     new = {(str(r[4]), when(r)) for r in rows if r[1] == "CS"}   # municipalities formed, and when
     groups = {}
     for r in rows:
-        if not r[0] or str(r[0]) < "2016" or r[1] not in ("ES", "AP"): continue
+        if not r[0] or str(r[0]) < "2011" or r[1] not in ("ES", "AP"): continue
         F = when(r)
-        if F <= "2016": continue
+        if F <= "2011": continue
         old, into = str(r[4]), str(r[8])
         g = groups.setdefault((F, into), {"year": F, "into": "IT_" + into, "name": str(r[9]).strip(), "from": [], "names": [], "rename": r[1] == "AP"})
         if r[1] == "ES" and (into, F) not in new and "IT_" + into not in g["from"]:   # absorbed into an existing municipality
@@ -106,9 +107,29 @@ def netherlands(folder):
     return sorted(out, key=lambda g: (g["year"], g["into"]))
 
 
+# Belgium, 1 January 2019 (Statbel): seven Flemish mergers, and eleven Hainaut municipalities renumbered when the
+# province's arrondissements were redrawn. Matched by name and population between Eurostat's 2018 and 2020 LAU files.
+BE_2019 = [("12041", "Puurs-Sint-Amands", [("12030", "Puurs"), ("12034", "Sint-Amands")]),
+           ("44083", "Deinze", [("44011", "Deinze"), ("44049", "Nevele")]),
+           ("44084", "Aalter", [("44001", "Aalter"), ("44029", "Knesselare")]),
+           ("44085", "Lievegem", [("44036", "Lovendegem"), ("44072", "Waarschoot"), ("44080", "Zomergem")]),
+           ("45068", "Kruisem", [("45017", "Kruishoutem"), ("45057", "Zingem")]),
+           ("72042", "Oudsbergen", [("72040", "Meeuwen-Gruitrode"), ("71047", "Opglabbeek")]),
+           ("72043", "Pelt", [("72025", "Neerpelt"), ("72029", "Overpelt")])]
+BE_2019_RENUMBERED = {"51067": "55010", "51068": "55039", "51069": "55023", "55085": "52063", "55086": "52043", "57096": "54007",
+                      "57097": "54010", "58001": "55022", "58002": "56011", "58003": "56085", "58004": "56087"}
+
+
+def belgium(_):
+    out = [{"year": "2019", "into": "BE_" + new, "name": name, "from": ["BE_" + c for c, _ in parts], "names": [n for _, n in parts], "rename": False}
+           for new, name, parts in BE_2019]
+    out += [{"year": "2019", "into": "BE_" + new, "name": "", "from": ["BE_" + old], "names": [], "rename": True} for new, old in BE_2019_RENUMBERED.items()]
+    return out
+
+
 def main(country, path):
     d = json.load(open(OUT, encoding="utf-8")) if os.path.exists(OUT) else {}
-    d.setdefault(country, {})["mergers"] = {"france": france, "italy": italy, "netherlands": netherlands}[country](path)
+    d.setdefault(country, {})["mergers"] = {"france": france, "italy": italy, "netherlands": netherlands, "belgium": belgium}[country](path)
     json.dump(d, open(OUT, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     m = d[country]["mergers"]
     print(country, len(m), "changes;", sum(1 for g in m if not g["rename"]), "mergers of", sum(len(g["from"]) for g in m if not g["rename"]), "places")

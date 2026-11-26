@@ -7,7 +7,7 @@ runner (fetch rounds 50-51), and the step that adds them to the site's data file
 
 Sources:
 - Europe (France, Italy, Spain, Poland, Czechia, Croatia, Belgium, the Netherlands, Denmark, Norway, Sweden, Finland,
-  Iceland): Eurostat GISCO Local Administrative Units, the population of every LAU on 1 January of each year 2016-2023
+  Iceland): Eurostat GISCO Local Administrative Units, the population of every LAU on 1 January of each year 2011-2023 (2011-2015 from fetch round 61)
   (LAU_RG_01M_YYYY_4326.geojson, POP_YYYY), plus 2024 from the LAU file each build already uses. A municipality created
   by a merger has its former municipalities added up for the years before, from the official lists of mergers in
   inputs/border_changes.json (France, Italy, the Netherlands: prep_border_changes.py; see borders.py); elsewhere it
@@ -69,7 +69,9 @@ def prep(raw):
     for f in sorted(glob.glob(os.path.join(raw, "lau_pop_20??.json"))):
         y = re.search(r"(20\d\d)", os.path.basename(f)).group(1)
         for c, d in json.load(open(f)).items():
-            for g, v in d.items(): lau.setdefault(g, {})[y] = int(v)
+            for g, v in d.items():
+                if isinstance(v, list): v = v[0]   # 2011-2015 (round 61): [population, name]
+                if v is not None: lau.setdefault(g, {})[y] = int(v)
     for g, v in lau_2024().items(): lau.setdefault(g, {})["2024"] = v
     merge = json.load(open(os.path.join(IN, "belgium", "be_mergers_2025.json")))
     old_of = {}
@@ -191,6 +193,7 @@ def clean(name, by, keep=None):
     - a year a country's file gives in thousands (GISCO's Finnish and most Italian figures for 2022-2023: the
       typical place is a thousandth of the year before), or that repeats the year before for most places (GISCO
       carries a figure forward where the country sent none);
+    - a single year far off the years either side (which agree with each other);
     - a place's years before its last break, a change of more than a quarter from one year to the next (two years
       apart at most), which in these files is a boundary change: a merger, a split, or a code reused;
     - a place whose latest figure is more than a quarter off the site's own population (a different place behind the
@@ -200,6 +203,12 @@ def clean(name, by, keep=None):
     site = {r["District ID"]: r for r in csv.DictReader(open(os.path.join(DOCS, f"{name}.csv"), encoding="utf-8"))}
     out = {}
     for i, s in by.items():
+        ys = sorted(s)
+        # a single year far off the two either side, which agree (Spain's 2014 file gives some regions' density
+        # instead of their population), comes out rather than cutting the line there
+        odd = [ys[k] for k in range(1, len(ys) - 1) if s[ys[k - 1]] > 0 and s[ys[k + 1]] > 0 and abs(s[ys[k + 1]] / s[ys[k - 1]] - 1) < 0.15
+               and abs(s[ys[k]] / ((s[ys[k - 1]] + s[ys[k + 1]]) / 2) - 1) > 0.4]
+        for y in odd: s.pop(y)
         ys = sorted(s)
         start = 0
         for k in range(1, len(ys)):

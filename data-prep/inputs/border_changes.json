@@ -42,6 +42,5752 @@
  "france": {
   "mergers": [
    {
+    "year": "2012",
+    "into": "FR_28361",
+    "name": "Bleury-Saint-Symphorien",
+    "from": [
+     "FR_28042",
+     "FR_28361"
+    ],
+    "names": [
+     "Bleury",
+     "Saint-Symphorien-le-Château"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2013",
+    "into": "FR_05132",
+    "name": "Saint-Bonnet-en-Champsaur",
+    "from": [
+     "FR_05020",
+     "FR_05067",
+     "FR_05132"
+    ],
+    "names": [
+     "Bénévent-et-Charbillac",
+     "Les Infournas",
+     "Saint-Bonnet-en-Champsaur"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2013",
+    "into": "FR_05139",
+    "name": "Dévoluy",
+    "from": [
+     "FR_05002",
+     "FR_05042",
+     "FR_05138",
+     "FR_05139"
+    ],
+    "names": [
+     "Agnières-en-Dévoluy",
+     "La Cluse",
+     "Saint-Disdier",
+     "Saint-Étienne-en-Dévoluy"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2013",
+    "into": "FR_49018",
+    "name": "Baugé-en-Anjou",
+    "from": [
+     "FR_49018",
+     "FR_49213",
+     "FR_49245",
+     "FR_49303",
+     "FR_49372"
+    ],
+    "names": [
+     "Baugé",
+     "Montpollin",
+     "Pontigné",
+     "Saint-Martin-d'Arcé",
+     "Le Vieil-Baugé"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2013",
+    "into": "FR_49092",
+    "name": "Chemillé-Melay",
+    "from": [
+     "FR_49092",
+     "FR_49199"
+    ],
+    "names": [
+     "Chemillé",
+     "Melay"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2013",
+    "into": "FR_49101",
+    "name": "Clefs-Val d'Anjou",
+    "from": [
+     "FR_49101",
+     "FR_49380"
+    ],
+    "names": [
+     "Clefs",
+     "Vaulandry"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2013",
+    "into": "FR_69208",
+    "name": "Saint-Germain-Nuelles",
+    "from": [
+     "FR_69144",
+     "FR_69208"
+    ],
+    "names": [
+     "Nuelles",
+     "Saint-Germain-sur-l'Arbresle"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2013",
+    "into": "FR_69248",
+    "name": "Thizy-les-Bourgs",
+    "from": [
+     "FR_69025",
+     "FR_69041",
+     "FR_69128",
+     "FR_69129",
+     "FR_69248"
+    ],
+    "names": [
+     "Bourg-de-Thizy",
+     "La Chapelle-de-Mardore",
+     "Mardore",
+     "Marnand",
+     "Thizy"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2013",
+    "into": "FR_79030",
+    "name": "Beaussais-Vitré",
+    "from": [
+     "FR_79030",
+     "FR_79353"
+    ],
+    "names": [
+     "Beaussais",
+     "Vitré"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2013",
+    "into": "FR_79242",
+    "name": "Voulmentin",
+    "from": [
+     "FR_79242",
+     "FR_79356"
+    ],
+    "names": [
+     "Saint-Clémentin",
+     "Voultegon"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2013",
+    "into": "FR_88176",
+    "name": "Fontenoy-le-Château",
+    "from": [
+     "FR_88176",
+     "FR_88282"
+    ],
+    "names": [
+     "Fontenoy-le-Château",
+     "Le Magny"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2014",
+    "into": "FR_52187",
+    "name": "Épizon",
+    "from": [
+     "FR_52187",
+     "FR_52379"
+    ],
+    "names": [
+     "Épizon",
+     "Pautaines-Augeville"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "FR_14472",
+    "name": "L'Oudon",
+    "from": [
+     "FR_14697"
+    ],
+    "names": [
+     "L'Oudon"
+    ],
+    "rename": true
+   },
+   {
+    "year": "2015",
+    "into": "FR_14474",
+    "name": "Notre-Dame-d'Estrées-Corbon",
+    "from": [
+     "FR_14178",
+     "FR_14474"
+    ],
+    "names": [
+     "Corbon",
+     "Notre-Dame-d'Estrées"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "FR_25035",
+    "name": "Les Auxons",
+    "from": [
+     "FR_25034",
+     "FR_25035"
+    ],
+    "names": [
+     "Auxon-Dessous",
+     "Auxon-Dessus"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "FR_28185",
+    "name": "Goussainville",
+    "from": [
+     "FR_28069",
+     "FR_28185"
+    ],
+    "names": [
+     "Champagne",
+     "Goussainville"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "FR_38152",
+    "name": "Eclose-Badinières",
+    "from": [
+     "FR_38024",
+     "FR_38152"
+    ],
+    "names": [
+     "Badinières",
+     "Eclose"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "FR_60570",
+    "name": "Saint-Crépin-Ibouvillers",
+    "from": [
+     "FR_60417",
+     "FR_60570"
+    ],
+    "names": [
+     "Montherlant",
+     "Saint-Crépin-Ibouvillers"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "FR_61292",
+    "name": "Montsecret-Clairefougère",
+    "from": [
+     "FR_61109",
+     "FR_61292"
+    ],
+    "names": [
+     "Clairefougère",
+     "Montsecret"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "FR_61375",
+    "name": "Boischampré",
+    "from": [
+     "FR_61249",
+     "FR_61375",
+     "FR_61417",
+     "FR_61511"
+    ],
+    "names": [
+     "Marcei",
+     "Saint-Christophe-le-Jajolet",
+     "Saint-Loyer-des-Champs",
+     "Vrigny"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "FR_61486",
+    "name": "Tinchebray-Bocage",
+    "from": [
+     "FR_61031",
+     "FR_61177",
+     "FR_61223",
+     "FR_61377",
+     "FR_61410",
+     "FR_61486",
+     "FR_61513"
+    ],
+    "names": [
+     "Beauchêne",
+     "Frênes",
+     "Larchamp",
+     "Saint-Cornier-des-Landes",
+     "Saint-Jean-des-Bois",
+     "Tinchebray",
+     "Yvrandes"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "FR_69255",
+    "name": "Vaugneray",
+    "from": [
+     "FR_69221",
+     "FR_69255"
+    ],
+    "names": [
+     "Saint-Laurent-de-Vaux",
+     "Vaugneray"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "FR_71578",
+    "name": "Clux-Villeneuve",
+    "from": [
+     "FR_71138",
+     "FR_71578"
+    ],
+    "names": [
+     "Clux",
+     "La Villeneuve"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "FR_72137",
+    "name": "Villeneuve-en-Perseigne",
+    "from": [
+     "FR_72069",
+     "FR_72137",
+     "FR_72162",
+     "FR_72207",
+     "FR_72258",
+     "FR_72318"
+    ],
+    "names": [
+     "Chassé",
+     "La Fresnaye-sur-Chédouet",
+     "Lignières-la-Carelle",
+     "Montigny",
+     "Roullée",
+     "Saint-Rigomer-des-Bois"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "FR_73263",
+    "name": "Saint-Offenge",
+    "from": [
+     "FR_73263",
+     "FR_73264"
+    ],
+    "names": [
+     "Saint-Offenge-Dessous",
+     "Saint-Offenge-Dessus"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "FR_77316",
+    "name": "Orvanne",
+    "from": [
+     "FR_77166",
+     "FR_77316"
+    ],
+    "names": [
+     "Écuelles",
+     "Moret-sur-Loing"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_01015",
+    "name": "Arboys en Bugey",
+    "from": [
+     "FR_01015",
+     "FR_01340"
+    ],
+    "names": [
+     "Arbignieu",
+     "Saint-Bois"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_01080",
+    "name": "Champdor-Corcelles",
+    "from": [
+     "FR_01080",
+     "FR_01119"
+    ],
+    "names": [
+     "Champdor",
+     "Corcelles"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_01187",
+    "name": "Haut Valromey",
+    "from": [
+     "FR_01176",
+     "FR_01187",
+     "FR_01292",
+     "FR_01409"
+    ],
+    "names": [
+     "Le Grand-Abergement",
+     "Hotonnes",
+     "Le Petit-Abergement",
+     "Songieu"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_01204",
+    "name": "Le Poizat-Lalleyriat",
+    "from": [
+     "FR_01204",
+     "FR_01300"
+    ],
+    "names": [
+     "Lalleyriat",
+     "Le Poizat"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_01286",
+    "name": "Parves et Nattages",
+    "from": [
+     "FR_01271",
+     "FR_01286"
+    ],
+    "names": [
+     "Nattages",
+     "Parves"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_01338",
+    "name": "Groslée-Saint-Benoit",
+    "from": [
+     "FR_01182",
+     "FR_01338"
+    ],
+    "names": [
+     "Groslée",
+     "Saint-Benoît"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_01426",
+    "name": "Val-Revermont",
+    "from": [
+     "FR_01312",
+     "FR_01426"
+    ],
+    "names": [
+     "Pressiat",
+     "Treffort-Cuisiat"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_02053",
+    "name": "Vallées en Champagne",
+    "from": [
+     "FR_02053",
+     "FR_02161",
+     "FR_02669"
+    ],
+    "names": [
+     "Baulne-en-Brie",
+     "La Chapelle-Monthodon",
+     "Saint-Agnan"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_02439",
+    "name": "Les Septvallons",
+    "from": [
+     "FR_02348",
+     "FR_02439",
+     "FR_02479",
+     "FR_02597",
+     "FR_02646",
+     "FR_02771",
+     "FR_02811"
+    ],
+    "names": [
+     "Glennes",
+     "Longueval-Barbonval",
+     "Merval",
+     "Perles",
+     "Révillon",
+     "Vauxcéré",
+     "Villers-en-Prayères"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_02458",
+    "name": "Dhuys et Morin-en-Brie",
+    "from": [
+     "FR_02026",
+     "FR_02147",
+     "FR_02325",
+     "FR_02458"
+    ],
+    "names": [
+     "Artonges",
+     "La Celle-sous-Montmirail",
+     "Fontenelle-en-Brie",
+     "Marchais-en-Brie"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_03158",
+    "name": "Haut-Bocage",
+    "from": [
+     "FR_03123",
+     "FR_03153",
+     "FR_03158"
+    ],
+    "names": [
+     "Givarlais",
+     "Louroux-Hodement",
+     "Maillet"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_04120",
+    "name": "Val d'Oronaye",
+    "from": [
+     "FR_04100",
+     "FR_04120"
+    ],
+    "names": [
+     "Larche",
+     "Meyronnes"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_05053",
+    "name": "Garde-Colombe",
+    "from": [
+     "FR_05053",
+     "FR_05069",
+     "FR_05143"
+    ],
+    "names": [
+     "Eyguians",
+     "Lagrand",
+     "Saint-Genis"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_05118",
+    "name": "Val Buëch-Méouge",
+    "from": [
+     "FR_05005",
+     "FR_05034",
+     "FR_05118"
+    ],
+    "names": [
+     "Antonaves",
+     "Châteauneuf-de-Chabre",
+     "Ribiers"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_08115",
+    "name": "Chémery-Chéhéry",
+    "from": [
+     "FR_08114",
+     "FR_08115"
+    ],
+    "names": [
+     "Chéhéry",
+     "Chémery-sur-Bar"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_08116",
+    "name": "Bairon et ses environs",
+    "from": [
+     "FR_08007",
+     "FR_08116",
+     "FR_08261"
+    ],
+    "names": [
+     "Les Alleux",
+     "Le Chesne",
+     "Louvergny"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_08145",
+    "name": "Douzy",
+    "from": [
+     "FR_08145",
+     "FR_08267"
+    ],
+    "names": [
+     "Douzy",
+     "Mairy"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_08198",
+    "name": "Grandpré",
+    "from": [
+     "FR_08198",
+     "FR_08441"
+    ],
+    "names": [
+     "Grandpré",
+     "Termes"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_08311",
+    "name": "Mouzon",
+    "from": [
+     "FR_08009",
+     "FR_08311"
+    ],
+    "names": [
+     "Amblimont",
+     "Mouzon"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_10003",
+    "name": "Aix-Villemaur-Pâlis",
+    "from": [
+     "FR_10003",
+     "FR_10277",
+     "FR_10415"
+    ],
+    "names": [
+     "Aix-en-Othe",
+     "Palis",
+     "Villemaur-sur-Vanne"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_11080",
+    "name": "Val de Lambronne",
+    "from": [
+     "FR_11080",
+     "FR_11171"
+    ],
+    "names": [
+     "Caudeval",
+     "Gueytes-et-Labastide"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_11304",
+    "name": "Quillan",
+    "from": [
+     "FR_11050",
+     "FR_11304"
+    ],
+    "names": [
+     "Brenac",
+     "Quillan"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_12021",
+    "name": "Le Bas Ségala",
+    "from": [
+     "FR_12021",
+     "FR_12245",
+     "FR_12285"
+    ],
+    "names": [
+     "La Bastide-l'Évêque",
+     "Saint-Salvadou",
+     "Vabre-Tizac"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_12076",
+    "name": "Conques-en-Rouergue",
+    "from": [
+     "FR_12076",
+     "FR_12114",
+     "FR_12173",
+     "FR_12218"
+    ],
+    "names": [
+     "Conques",
+     "Grand-Vabre",
+     "Noailhac",
+     "Saint-Cyprien-sur-Dourdou"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_12120",
+    "name": "Laissac-Sévérac l'Église",
+    "from": [
+     "FR_12120",
+     "FR_12271"
+    ],
+    "names": [
+     "Laissac",
+     "Sévérac-l'Église"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_12177",
+    "name": "Palmas d'Aveyron",
+    "from": [
+     "FR_12081",
+     "FR_12087",
+     "FR_12177"
+    ],
+    "names": [
+     "Coussergues",
+     "Cruéjouls",
+     "Palmas"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_12223",
+    "name": "Argences en Aubrac",
+    "from": [
+     "FR_12005",
+     "FR_12112",
+     "FR_12117",
+     "FR_12223",
+     "FR_12279",
+     "FR_12304"
+    ],
+    "names": [
+     "Alpuech",
+     "Graissac",
+     "Lacalm",
+     "Sainte-Geneviève-sur-Argence",
+     "La Terrisse",
+     "Vitrac-en-Viadène"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_12224",
+    "name": "Saint Geniez d'Olt et d'Aubrac",
+    "from": [
+     "FR_12014",
+     "FR_12224"
+    ],
+    "names": [
+     "Aurelle-Verlac",
+     "Saint-Geniez-d'Olt"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_12270",
+    "name": "Sévérac d'Aveyron",
+    "from": [
+     "FR_12040",
+     "FR_12123",
+     "FR_12126",
+     "FR_12196",
+     "FR_12270"
+    ],
+    "names": [
+     "Buzeins",
+     "Lapanouse",
+     "Lavernhe",
+     "Recoules-Prévinquières",
+     "Sévérac-le-Château"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_14014",
+    "name": "Colomby-Anguerny",
+    "from": [
+     "FR_14014",
+     "FR_14170"
+    ],
+    "names": [
+     "Anguerny",
+     "Colomby-sur-Thaon"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_14035",
+    "name": "Balleroy-sur-Drôme",
+    "from": [
+     "FR_14035",
+     "FR_14727"
+    ],
+    "names": [
+     "Balleroy",
+     "Vaubadon"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_14037",
+    "name": "Malherbe-sur-Ajon",
+    "from": [
+     "FR_14037",
+     "FR_14553"
+    ],
+    "names": [
+     "Banneville-sur-Ajon",
+     "Saint-Agnan-le-Malherbe"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_14061",
+    "name": "Souleuvre en Bocage",
+    "from": [
+     "FR_14052",
+     "FR_14061",
+     "FR_14115",
+     "FR_14129",
+     "FR_14139",
+     "FR_14255",
+     "FR_14264",
+     "FR_14317",
+     "FR_14395",
+     "FR_14440",
+     "FR_14441",
+     "FR_14443",
+     "FR_14532",
+     "FR_14573",
+     "FR_14618",
+     "FR_14629",
+     "FR_14632",
+     "FR_14636",
+     "FR_14655",
+     "FR_14704"
+    ],
+    "names": [
+     "Beaulieu",
+     "Le Bény-Bocage",
+     "Bures-les-Monts",
+     "Campeaux",
+     "Carville",
+     "Étouvy",
+     "La Ferrière-Harang",
+     "La Graverie",
+     "Malloué",
+     "Montamy",
+     "Mont-Bertrand",
+     "Montchauvet",
+     "Le Reculey",
+     "Saint-Denis-Maisoncelles",
+     "Sainte-Marie-Laumont",
+     "Saint-Martin-des-Besaces",
+     "Saint-Martin-Don",
+     "Saint-Ouen-des-Besaces",
+     "Saint-Pierre-Tarentaine",
+     "Le Tourneur"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_14174",
+    "name": "Condé-en-Normandie",
+    "from": [
+     "FR_14152",
+     "FR_14174",
+     "FR_14361",
+     "FR_14523",
+     "FR_14585",
+     "FR_14653"
+    ],
+    "names": [
+     "La Chapelle-Engerbold",
+     "Condé-sur-Noireau",
+     "Lénault",
+     "Proussy",
+     "Saint-Germain-du-Crioult",
+     "Saint-Pierre-la-Vieille"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_14371",
+    "name": "Livarot-Pays-d'Auge",
+    "from": [
+     "FR_14028",
+     "FR_14029",
+     "FR_14058",
+     "FR_14148",
+     "FR_14155",
+     "FR_14210",
+     "FR_14259",
+     "FR_14265",
+     "FR_14330",
+     "FR_14371",
+     "FR_14414",
+     "FR_14418",
+     "FR_14420",
+     "FR_14429",
+     "FR_14459",
+     "FR_14471",
+     "FR_14518",
+     "FR_14615",
+     "FR_14633",
+     "FR_14634",
+     "FR_14638",
+     "FR_14696"
+    ],
+    "names": [
+     "Auquainville",
+     "Les Autels-Saint-Bazile",
+     "Bellou",
+     "Cerqueux",
+     "Cheffreville-Tonnencourt",
+     "La Croupte",
+     "Familly",
+     "Fervaques",
+     "Heurtevent",
+     "Livarot",
+     "Le Mesnil-Bacley",
+     "Le Mesnil-Durand",
+     "Le Mesnil-Germain",
+     "Meulles",
+     "Les Moutiers-Hubert",
+     "Notre-Dame-de-Courson",
+     "Préaux-Saint-Sébastien",
+     "Sainte-Marguerite-des-Loges",
+     "Saint-Martin-du-Mesnil-Oury",
+     "Saint-Michel-de-Livet",
+     "Saint-Ouen-le-Houx",
+     "Tortisambert"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_14475",
+    "name": "Noyers-Missy",
+    "from": [
+     "FR_14432",
+     "FR_14475"
+    ],
+    "names": [
+     "Missy",
+     "Noyers-Bocage"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_14543",
+    "name": "Rots",
+    "from": [
+     "FR_14356",
+     "FR_14543",
+     "FR_14670"
+    ],
+    "names": [
+     "Lasson",
+     "Rots",
+     "Secqueville-en-Bessin"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_14570",
+    "name": "Valorbiquet",
+    "from": [
+     "FR_14154",
+     "FR_14570",
+     "FR_14599",
+     "FR_14647",
+     "FR_14693"
+    ],
+    "names": [
+     "La Chapelle-Yvon",
+     "Saint-Cyr-du-Ronceray",
+     "Saint-Julien-de-Mailloc",
+     "Saint-Pierre-de-Mailloc",
+     "Tordouet"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_14576",
+    "name": "Val-de-Vie",
+    "from": [
+     "FR_14105",
+     "FR_14153",
+     "FR_14576",
+     "FR_14583"
+    ],
+    "names": [
+     "La Brévière",
+     "La Chapelle-Haute-Grue",
+     "Sainte-Foy-de-Montgommery",
+     "Saint-Germain-de-Montgommery"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_14579",
+    "name": "Seulline",
+    "from": [
+     "FR_14188",
+     "FR_14579"
+    ],
+    "names": [
+     "Coulvain",
+     "Saint-Georges-d'Aunay"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_14689",
+    "name": "Le Hom",
+    "from": [
+     "FR_14144",
+     "FR_14213",
+     "FR_14324",
+     "FR_14628",
+     "FR_14689"
+    ],
+    "names": [
+     "Caumont-sur-Orne",
+     "Curcy-sur-Orne",
+     "Hamars",
+     "Saint-Martin-de-Sallen",
+     "Thury-Harcourt"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_14726",
+    "name": "Valdallière",
+    "from": [
+     "FR_14065",
+     "FR_14113",
+     "FR_14156",
+     "FR_14222",
+     "FR_14253",
+     "FR_14442",
+     "FR_14503",
+     "FR_14521",
+     "FR_14539",
+     "FR_14549",
+     "FR_14564",
+     "FR_14686",
+     "FR_14726",
+     "FR_14746"
+    ],
+    "names": [
+     "Bernières-le-Patry",
+     "Burcy",
+     "Chênedollé",
+     "Le Désert",
+     "Estry",
+     "Montchamp",
+     "Pierres",
+     "Presles",
+     "La Rocque",
+     "Rully",
+     "Saint-Charles-de-Percy",
+     "Le Theil-Bocage",
+     "Vassy",
+     "Viessoix"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_14740",
+    "name": "La Vespière-Friardel",
+    "from": [
+     "FR_14292",
+     "FR_14740"
+    ],
+    "names": [
+     "Friardel",
+     "La Vespière"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_14762",
+    "name": "Vire Normandie",
+    "from": [
+     "FR_14187",
+     "FR_14388",
+     "FR_14545",
+     "FR_14584",
+     "FR_14717",
+     "FR_14718",
+     "FR_14730",
+     "FR_14762"
+    ],
+    "names": [
+     "Coulonces",
+     "Maisoncelles-la-Jourdan",
+     "Roullours",
+     "Saint-Germain-de-Tallevende-la-Lande-Vaumont",
+     "Truttemer-le-Grand",
+     "Truttemer-le-Petit",
+     "Vaudry",
+     "Vire"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_15108",
+    "name": "Val d'Arcomie",
+    "from": [
+     "FR_15068",
+     "FR_15108",
+     "FR_15195",
+     "FR_15197"
+    ],
+    "names": [
+     "Faverolles",
+     "Loubaresse",
+     "Saint-Just",
+     "Saint-Marc"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_15181",
+    "name": "Saint-Constant-Fournoulès",
+    "from": [
+     "FR_15071",
+     "FR_15181"
+    ],
+    "names": [
+     "Fournoulès",
+     "Saint-Constant"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_15268",
+    "name": "Le Rouget-Pers",
+    "from": [
+     "FR_15150",
+     "FR_15268"
+    ],
+    "names": [
+     "Pers",
+     "Le Rouget"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_16082",
+    "name": "Boisné-La Tude",
+    "from": [
+     "FR_16082",
+     "FR_16092",
+     "FR_16172"
+    ],
+    "names": [
+     "Charmant",
+     "Chavenat",
+     "Juillaguet"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_16106",
+    "name": "Confolens",
+    "from": [
+     "FR_16106",
+     "FR_16322"
+    ],
+    "names": [
+     "Confolens",
+     "Saint-Germain-de-Confolens"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_16148",
+    "name": "Genac-Bignac",
+    "from": [
+     "FR_16043",
+     "FR_16148"
+    ],
+    "names": [
+     "Bignac",
+     "Genac"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_16175",
+    "name": "Val des Vignes",
+    "from": [
+     "FR_16021",
+     "FR_16175",
+     "FR_16201",
+     "FR_16257"
+    ],
+    "names": [
+     "Aubeville",
+     "Jurignac",
+     "Mainfonds",
+     "Péreuil"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_16224",
+    "name": "Montmérac",
+    "from": [
+     "FR_16179",
+     "FR_16224"
+    ],
+    "names": [
+     "Lamérac",
+     "Montchaude"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_16286",
+    "name": "Rouillac",
+    "from": [
+     "FR_16262",
+     "FR_16286",
+     "FR_16371"
+    ],
+    "names": [
+     "Plaizac",
+     "Rouillac",
+     "Sonneville"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_17277",
+    "name": "Essouvert",
+    "from": [
+     "FR_17040",
+     "FR_17277"
+    ],
+    "names": [
+     "La Benâte",
+     "Saint-Denis-du-Pin"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_17295",
+    "name": "Réaux sur Trèfle",
+    "from": [
+     "FR_17238",
+     "FR_17295",
+     "FR_17371"
+    ],
+    "names": [
+     "Moings",
+     "Réaux",
+     "Saint-Maurice-de-Tavernole"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_19123",
+    "name": "Malemort",
+    "from": [
+     "FR_19123",
+     "FR_19282"
+    ],
+    "names": [
+     "Malemort-sur-Corrèze",
+     "Venarsal"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_21327",
+    "name": "Val-Mont",
+    "from": [
+     "FR_21318",
+     "FR_21327"
+    ],
+    "names": [
+     "Ivry-en-Montagne",
+     "Jours-en-Vaux"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_22046",
+    "name": "Le Mené",
+    "from": [
+     "FR_22046",
+     "FR_22066",
+     "FR_22102",
+     "FR_22191",
+     "FR_22292",
+     "FR_22297",
+     "FR_22303"
+    ],
+    "names": [
+     "Collinée",
+     "Le Gouray",
+     "Langourla",
+     "Plessala",
+     "Saint-Gilles-du-Mené",
+     "Saint-Gouéno",
+     "Saint-Jacut-du-Mené"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_22084",
+    "name": "Jugon-les-Lacs - Commune nouvelle",
+    "from": [
+     "FR_22051",
+     "FR_22084"
+    ],
+    "names": [
+     "Dolo",
+     "Jugon-les-Lacs"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_22093",
+    "name": "Lamballe",
+    "from": [
+     "FR_22093",
+     "FR_22151"
+    ],
+    "names": [
+     "Lamballe",
+     "Meslin"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_22183",
+    "name": "Les Moulins",
+    "from": [
+     "FR_22058",
+     "FR_22183"
+    ],
+    "names": [
+     "La Ferrière",
+     "Plémet"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_22203",
+    "name": "Plœuc-L'Hermitage",
+    "from": [
+     "FR_22080",
+     "FR_22203"
+    ],
+    "names": [
+     "L'Hermitage-Lorge",
+     "Plœuc-sur-Lié"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_22251",
+    "name": "Pordic",
+    "from": [
+     "FR_22251",
+     "FR_22367"
+    ],
+    "names": [
+     "Pordic",
+     "Tréméloir"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_23149",
+    "name": "Parsac-Rimondeix",
+    "from": [
+     "FR_23149",
+     "FR_23161"
+    ],
+    "names": [
+     "Parsac",
+     "Rimondeix"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_24028",
+    "name": "Beaumontois en Périgord",
+    "from": [
+     "FR_24028",
+     "FR_24219",
+     "FR_24310",
+     "FR_24497"
+    ],
+    "names": [
+     "Beaumont-du-Périgord",
+     "Labouquerie",
+     "Nojals-et-Clotte",
+     "Sainte-Sabine-Born"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_24035",
+    "name": "Pays de Belvès",
+    "from": [
+     "FR_24035",
+     "FR_24363"
+    ],
+    "names": [
+     "Belvès",
+     "Saint-Amand-de-Belvès"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_24053",
+    "name": "Boulazac Isle Manoire",
+    "from": [
+     "FR_24013",
+     "FR_24053",
+     "FR_24439"
+    ],
+    "names": [
+     "Atur",
+     "Boulazac",
+     "Saint-Laurent-sur-Manoire"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_24064",
+    "name": "Brantôme en Périgord",
+    "from": [
+     "FR_24064",
+     "FR_24430"
+    ],
+    "names": [
+     "Brantôme",
+     "Saint-Julien-de-Bourdeilles"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_24142",
+    "name": "Coux et Bigaroque-Mouzens",
+    "from": [
+     "FR_24142",
+     "FR_24298"
+    ],
+    "names": [
+     "Coux-et-Bigaroque",
+     "Mouzens"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_24316",
+    "name": "Parcoul-Chenaud",
+    "from": [
+     "FR_24118",
+     "FR_24316"
+    ],
+    "names": [
+     "Chenaud",
+     "Parcoul"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_24362",
+    "name": "Sainte-Alvère-Saint-Laurent Les Bâtons",
+    "from": [
+     "FR_24362",
+     "FR_24435"
+    ],
+    "names": [
+     "Sainte-Alvère",
+     "Saint-Laurent-des-Bâtons"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_24376",
+    "name": "Saint Aulaye-Puymangou",
+    "from": [
+     "FR_24343",
+     "FR_24376"
+    ],
+    "names": [
+     "Puymangou",
+     "Saint-Aulaye"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_24540",
+    "name": "Sorges et Ligueux en Périgord",
+    "from": [
+     "FR_24239",
+     "FR_24540"
+    ],
+    "names": [
+     "Ligueux",
+     "Sorges"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_25424",
+    "name": "Les Premiers Sapins",
+    "from": [
+     "FR_25028",
+     "FR_25128",
+     "FR_25302",
+     "FR_25424",
+     "FR_25480",
+     "FR_25585"
+    ],
+    "names": [
+     "Athose",
+     "Chasnans",
+     "Hautepierre-le-Châtelet",
+     "Nods",
+     "Rantechaux",
+     "Vanclans"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_25434",
+    "name": "Ornans",
+    "from": [
+     "FR_25076",
+     "FR_25434"
+    ],
+    "names": [
+     "Bonnevaux-le-Prieuré",
+     "Ornans"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_25438",
+    "name": "Osselle-Routelle",
+    "from": [
+     "FR_25438",
+     "FR_25509"
+    ],
+    "names": [
+     "Osselle",
+     "Routelle"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_25529",
+    "name": "Sancey",
+    "from": [
+     "FR_25529",
+     "FR_25530"
+    ],
+    "names": [
+     "Sancey-le-Grand",
+     "Sancey-le-Long"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_26001",
+    "name": "Solaure en Diois",
+    "from": [
+     "FR_26001",
+     "FR_26187"
+    ],
+    "names": [
+     "Aix-en-Diois",
+     "Molières-Glandaz"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_26179",
+    "name": "Mercurol-Veaunes",
+    "from": [
+     "FR_26179",
+     "FR_26366"
+    ],
+    "names": [
+     "Mercurol",
+     "Veaunes"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_27011",
+    "name": "Amfreville-Saint-Amand",
+    "from": [
+     "FR_27011",
+     "FR_27506"
+    ],
+    "names": [
+     "Amfreville-la-Campagne",
+     "Saint-Amand-des-Hautes-Terres"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_27022",
+    "name": "Le Val d'Hazey",
+    "from": [
+     "FR_27022",
+     "FR_27519",
+     "FR_27687"
+    ],
+    "names": [
+     "Aubevoye",
+     "Sainte-Barbe-sur-Gaillon",
+     "Vieux-Villez"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_27032",
+    "name": "Chambois",
+    "from": [
+     "FR_27032",
+     "FR_27172",
+     "FR_27634"
+    ],
+    "names": [
+     "Avrilly",
+     "Corneuil",
+     "Thomer-la-Sôgne"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_27049",
+    "name": "Mesnil-en-Ouche",
+    "from": [
+     "FR_27007",
+     "FR_27041",
+     "FR_27049",
+     "FR_27088",
+     "FR_27221",
+     "FR_27283",
+     "FR_27292",
+     "FR_27296",
+     "FR_27356",
+     "FR_27362",
+     "FR_27499",
+     "FR_27513",
+     "FR_27515",
+     "FR_27566",
+     "FR_27596",
+     "FR_27628"
+    ],
+    "names": [
+     "Ajou",
+     "La Barre-en-Ouche",
+     "Beaumesnil",
+     "Bosc-Renoult-en-Ouche",
+     "Épinay",
+     "Gisay-la-Coudre",
+     "Gouttières",
+     "Granchain",
+     "Jonquerets-de-Livet",
+     "Landepéreuse",
+     "La Roussière",
+     "Saint-Aubin-des-Hayes",
+     "Saint-Aubin-le-Guichard",
+     "Sainte-Marguerite-en-Ouche",
+     "Saint-Pierre-du-Mesnil",
+     "Thevray"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_27085",
+    "name": "Flancourt-Crescy-en-Roumois",
+    "from": [
+     "FR_27085",
+     "FR_27223",
+     "FR_27244"
+    ],
+    "names": [
+     "Bosc-Bénard-Crescy",
+     "Épreville-en-Roumois",
+     "Flancourt-Catelon"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_27105",
+    "name": "Grand Bourgtheroulde",
+    "from": [
+     "FR_27084",
+     "FR_27105",
+     "FR_27637"
+    ],
+    "names": [
+     "Bosc-Bénard-Commin",
+     "Bourgtheroulde-Infreville",
+     "Thuit-Hébert"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_27107",
+    "name": "Bourneville-Sainte-Croix",
+    "from": [
+     "FR_27107",
+     "FR_27526"
+    ],
+    "names": [
+     "Bourneville",
+     "Sainte-Croix-sur-Aizier"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_27112",
+    "name": "Breteuil",
+    "from": [
+     "FR_27112",
+     "FR_27159",
+     "FR_27305"
+    ],
+    "names": [
+     "Breteuil",
+     "Cintray",
+     "La Guéroulde"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_27157",
+    "name": "Marbois",
+    "from": [
+     "FR_27145",
+     "FR_27157",
+     "FR_27225",
+     "FR_27532"
+    ],
+    "names": [
+     "Chanteloup",
+     "Le Chesne",
+     "Les Essarts",
+     "Saint-Denis-du-Béhélan"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_27191",
+    "name": "Clef Vallée d'Eure",
+    "from": [
+     "FR_27191",
+     "FR_27211",
+     "FR_27250"
+    ],
+    "names": [
+     "La Croix-Saint-Leufroy",
+     "Écardenville-sur-Eure",
+     "Fontaine-Heudebourg"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_27198",
+    "name": "Mesnils-sur-Iton",
+    "from": [
+     "FR_27024",
+     "FR_27166",
+     "FR_27198",
+     "FR_27293",
+     "FR_27387",
+     "FR_27503"
+    ],
+    "names": [
+     "Le Roncenay-Authenay",
+     "Condé-sur-Iton",
+     "Damville",
+     "Gouville",
+     "Manthelon",
+     "Le Sacq"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_27213",
+    "name": "Vexin-sur-Epte",
+    "from": [
+     "FR_27060",
+     "FR_27121",
+     "FR_27122",
+     "FR_27128",
+     "FR_27160",
+     "FR_27197",
+     "FR_27213",
+     "FR_27255",
+     "FR_27257",
+     "FR_27262",
+     "FR_27264",
+     "FR_27308",
+     "FR_27449",
+     "FR_27653"
+    ],
+    "names": [
+     "Berthenonville",
+     "Bus-Saint-Rémy",
+     "Cahaignes",
+     "Cantiers",
+     "Civières",
+     "Dampsmesnil",
+     "Écos",
+     "Fontenay-en-Vexin",
+     "Forêt-la-Folie",
+     "Fourges",
+     "Fours-en-Vexin",
+     "Guitry",
+     "Panilleuse",
+     "Tourny"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_27277",
+    "name": "La Baronnie",
+    "from": [
+     "FR_27277",
+     "FR_27484"
+    ],
+    "names": [
+     "Garencières",
+     "Quessigny"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_27302",
+    "name": "Le Bosc du Theil",
+    "from": [
+     "FR_27302",
+     "FR_27574"
+    ],
+    "names": [
+     "Le Gros-Theil",
+     "Saint-Nicolas-du-Bosc"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_27565",
+    "name": "Le Lesme",
+    "from": [
+     "FR_27303",
+     "FR_27565"
+    ],
+    "names": [
+     "Guernanville",
+     "Sainte-Marguerite-de-l'Autel"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_27578",
+    "name": "Sainte-Marie-d'Attez",
+    "from": [
+     "FR_27195",
+     "FR_27573",
+     "FR_27578"
+    ],
+    "names": [
+     "Dame-Marie",
+     "Saint-Nicolas-d'Attez",
+     "Saint-Ouen-d'Attez"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_27638",
+    "name": "Le Thuit de l'Oison",
+    "from": [
+     "FR_27636",
+     "FR_27638",
+     "FR_27639"
+    ],
+    "names": [
+     "Le Thuit-Anger",
+     "Le Thuit-Signol",
+     "Le Thuit-Simer"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_27693",
+    "name": "Sylvains-Lès-Moulins",
+    "from": [
+     "FR_27688",
+     "FR_27693"
+    ],
+    "names": [
+     "Villalet",
+     "Sylvains-les-Moulins"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_28015",
+    "name": "Auneau-Bleury-Saint-Symphorien",
+    "from": [
+     "FR_28015",
+     "FR_28361"
+    ],
+    "names": [
+     "Auneau",
+     "Bleury-Saint-Symphorien"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_28183",
+    "name": "Gommerville",
+    "from": [
+     "FR_28183",
+     "FR_28288"
+    ],
+    "names": [
+     "Gommerville",
+     "Orlu"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_28254",
+    "name": "Mittainvilliers-Vérigny",
+    "from": [
+     "FR_28254",
+     "FR_28402"
+    ],
+    "names": [
+     "Mittainvilliers",
+     "Vérigny"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_28383",
+    "name": "Theuville",
+    "from": [
+     "FR_28297",
+     "FR_28383"
+    ],
+    "names": [
+     "Pézy",
+     "Theuville"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_28406",
+    "name": "Eole-en-Beauce",
+    "from": [
+     "FR_28020",
+     "FR_28145",
+     "FR_28179",
+     "FR_28406"
+    ],
+    "names": [
+     "Baignolet",
+     "Fains-la-Folie",
+     "Germignonville",
+     "Viabon"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_28422",
+    "name": "Les Villages Vovéens",
+    "from": [
+     "FR_28258",
+     "FR_28320",
+     "FR_28416",
+     "FR_28422"
+    ],
+    "names": [
+     "Montainville",
+     "Rouvray-Saint-Florentin",
+     "Villeneuve-Saint-Nicolas",
+     "Voves"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_29003",
+    "name": "Audierne",
+    "from": [
+     "FR_29003",
+     "FR_29052"
+    ],
+    "names": [
+     "Audierne",
+     "Esquibien"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_29266",
+    "name": "Saint-Thégonnec Loc-Eguiner",
+    "from": [
+     "FR_29127",
+     "FR_29266"
+    ],
+    "names": [
+     "Loc-Eguiner-Saint-Thégonnec",
+     "Saint-Thégonnec"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_32079",
+    "name": "Castelnau d'Auzan Labarrère",
+    "from": [
+     "FR_32079",
+     "FR_32168"
+    ],
+    "names": [
+     "Castelnau-d'Auzan",
+     "Labarrère"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_33018",
+    "name": "Val de Virvée",
+    "from": [
+     "FR_33018",
+     "FR_33371",
+     "FR_33495"
+    ],
+    "names": [
+     "Aubie-et-Espessas",
+     "Saint-Antoine",
+     "Salignac"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_35060",
+    "name": "La Chapelle du Lou du Lac",
+    "from": [
+     "FR_35060",
+     "FR_35158"
+    ],
+    "names": [
+     "La Chapelle-du-Lou",
+     "Le Lou-du-Lac"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_35176",
+    "name": "Guipry-Messac",
+    "from": [
+     "FR_35129",
+     "FR_35176"
+    ],
+    "names": [
+     "Guipry",
+     "Messac"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_36093",
+    "name": "Levroux",
+    "from": [
+     "FR_36093",
+     "FR_36201"
+    ],
+    "names": [
+     "Levroux",
+     "Saint-Martin-de-Lamps"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_36202",
+    "name": "Saint-Maur",
+    "from": [
+     "FR_36202",
+     "FR_36245"
+    ],
+    "names": [
+     "Saint-Maur",
+     "Villers-les-Ormes"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_36229",
+    "name": "Val-Fouzon",
+    "from": [
+     "FR_36151",
+     "FR_36183",
+     "FR_36229"
+    ],
+    "names": [
+     "Parpeçay",
+     "Sainte-Cécile",
+     "Varennes-sur-Fouzon"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_38001",
+    "name": "Les Abrets en Dauphiné",
+    "from": [
+     "FR_38001",
+     "FR_38028",
+     "FR_38165"
+    ],
+    "names": [
+     "Les Abrets",
+     "La Bâtie-Divisin",
+     "Fitilieu"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_38022",
+    "name": "Les Avenières Veyrins-Thuellin",
+    "from": [
+     "FR_38022",
+     "FR_38541"
+    ],
+    "names": [
+     "Les Avenières",
+     "Veyrins-Thuellin"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_38225",
+    "name": "Autrans-Méaudre en Vercors",
+    "from": [
+     "FR_38021",
+     "FR_38225"
+    ],
+    "names": [
+     "Autrans",
+     "Méaudre"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_38359",
+    "name": "Saint Antoine l'Abbaye",
+    "from": [
+     "FR_38145",
+     "FR_38359"
+    ],
+    "names": [
+     "Dionay",
+     "Saint-Antoine-l'Abbaye"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_38439",
+    "name": "Crêts en Belledonne",
+    "from": [
+     "FR_38262",
+     "FR_38439"
+    ],
+    "names": [
+     "Morêtel-de-Mailles",
+     "Saint-Pierre-d'Allevard"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_39017",
+    "name": "Arlay",
+    "from": [
+     "FR_39017",
+     "FR_39482"
+    ],
+    "names": [
+     "Arlay",
+     "Saint-Germain-lès-Arlay"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_39021",
+    "name": "La Chailleuse",
+    "from": [
+     "FR_39021",
+     "FR_39215",
+     "FR_39488",
+     "FR_39544"
+    ],
+    "names": [
+     "Arthenas",
+     "Essia",
+     "Saint-Laurent-la-Roche",
+     "Varessia"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_39130",
+    "name": "Nanchez",
+    "from": [
+     "FR_39130",
+     "FR_39442"
+    ],
+    "names": [
+     "Chaux-des-Prés",
+     "Prénovel"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_39177",
+    "name": "Hauteroche",
+    "from": [
+     "FR_39177",
+     "FR_39260",
+     "FR_39332"
+    ],
+    "names": [
+     "Crançot",
+     "Granges-sur-Baume",
+     "Mirebel"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_39209",
+    "name": "Val-d'Épy",
+    "from": [
+     "FR_39209",
+     "FR_39226",
+     "FR_39382",
+     "FR_39509"
+    ],
+    "names": [
+     "Val d'Épy",
+     "Florentia",
+     "Nantey",
+     "Senaud"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_39286",
+    "name": "Lavans-lès-Saint-Claude",
+    "from": [
+     "FR_39286",
+     "FR_39438"
+    ],
+    "names": [
+     "Lavans-lès-Saint-Claude",
+     "Ponthoux"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_39329",
+    "name": "Mièges",
+    "from": [
+     "FR_39213",
+     "FR_39329",
+     "FR_39340"
+    ],
+    "names": [
+     "Esserval-Combe",
+     "Mièges",
+     "Molpré"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_39331",
+    "name": "Mignovillard",
+    "from": [
+     "FR_39161",
+     "FR_39331"
+    ],
+    "names": [
+     "Communailles-en-Montagne",
+     "Mignovillard"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_39368",
+    "name": "Hauts de Bienne",
+    "from": [
+     "FR_39294",
+     "FR_39368",
+     "FR_39371"
+    ],
+    "names": [
+     "Lézat",
+     "Morez",
+     "La Mouille"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_41142",
+    "name": "Valencisse",
+    "from": [
+     "FR_41142",
+     "FR_41169"
+    ],
+    "names": [
+     "Molineuf",
+     "Orchaise"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_41151",
+    "name": "Montrichard Val de Cher",
+    "from": [
+     "FR_41023",
+     "FR_41151"
+    ],
+    "names": [
+     "Bourré",
+     "Montrichard"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_41173",
+    "name": "Beauce la Romaine",
+    "from": [
+     "FR_41056",
+     "FR_41133",
+     "FR_41173",
+     "FR_41183",
+     "FR_41244",
+     "FR_41264",
+     "FR_41270"
+    ],
+    "names": [
+     "La Colombe",
+     "Membrolles",
+     "Ouzouer-le-Marché",
+     "Prénouvellon",
+     "Semerville",
+     "Tripleville",
+     "Verdes"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_42039",
+    "name": "Chalmazel-Jeansagnière",
+    "from": [
+     "FR_42039",
+     "FR_42114"
+    ],
+    "names": [
+     "Chalmazel",
+     "Jeansagnière"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_43090",
+    "name": "Esplantas-Vazeilles",
+    "from": [
+     "FR_43090",
+     "FR_43255"
+    ],
+    "names": [
+     "Esplantas",
+     "Vazeilles-près-Saugues"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_43245",
+    "name": "Thoras",
+    "from": [
+     "FR_43081",
+     "FR_43245"
+    ],
+    "names": [
+     "Croisances",
+     "Thoras"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_44005",
+    "name": "Chaumes-en-Retz",
+    "from": [
+     "FR_44005",
+     "FR_44040"
+    ],
+    "names": [
+     "Arthon-en-Retz",
+     "Chéméré"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_44021",
+    "name": "Villeneuve-en-Retz",
+    "from": [
+     "FR_44021",
+     "FR_44059"
+    ],
+    "names": [
+     "Bourgneuf-en-Retz",
+     "Fresnay-en-Retz"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_44029",
+    "name": "Divatte-sur-Loire",
+    "from": [
+     "FR_44008",
+     "FR_44029"
+    ],
+    "names": [
+     "Barbechat",
+     "La Chapelle-Basse-Mer"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_44087",
+    "name": "Machecoul-Saint-Même",
+    "from": [
+     "FR_44087",
+     "FR_44181"
+    ],
+    "names": [
+     "Machecoul",
+     "Saint-Même-le-Tenu"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_44163",
+    "name": "Vair-sur-Loire",
+    "from": [
+     "FR_44004",
+     "FR_44163"
+    ],
+    "names": [
+     "Anetz",
+     "Saint-Herblon"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_44213",
+    "name": "Loireauxence",
+    "from": [
+     "FR_44011",
+     "FR_44034",
+     "FR_44147",
+     "FR_44213"
+    ],
+    "names": [
+     "Belligné",
+     "La Chapelle-Saint-Sauveur",
+     "La Rouxière",
+     "Varades"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_45129",
+    "name": "Douchy-Montcorbon",
+    "from": [
+     "FR_45129",
+     "FR_45211"
+    ],
+    "names": [
+     "Douchy",
+     "Montcorbon"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_45191",
+    "name": "Le Malesherbois",
+    "from": [
+     "FR_45057",
+     "FR_45106",
+     "FR_45190",
+     "FR_45191",
+     "FR_45192",
+     "FR_45221",
+     "FR_45236"
+    ],
+    "names": [
+     "Labrosse",
+     "Coudray",
+     "Mainvilliers",
+     "Malesherbes",
+     "Manchecourt",
+     "Nangeville",
+     "Orveau-Bellesauve"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_46103",
+    "name": "Saint-Paul-Flaugnac",
+    "from": [
+     "FR_46103",
+     "FR_46287"
+    ],
+    "names": [
+     "Flaugnac",
+     "Saint-Paul-de-Loubressac"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_46138",
+    "name": "Cœur de Causse",
+    "from": [
+     "FR_46019",
+     "FR_46110",
+     "FR_46138",
+     "FR_46291",
+     "FR_46325"
+    ],
+    "names": [
+     "Beaumat",
+     "Fontanes-du-Causse",
+     "Labastide-Murat",
+     "Saint-Sauveur-la-Vallée",
+     "Vaillac"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_46201",
+    "name": "Montcuq-en-Quercy-Blanc",
+    "from": [
+     "FR_46025",
+     "FR_46166",
+     "FR_46201",
+     "FR_46261",
+     "FR_46326"
+    ],
+    "names": [
+     "Belmontet",
+     "Lebreil",
+     "Montcuq",
+     "Sainte-Croix",
+     "Valprionde"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_46252",
+    "name": "Les Pechs du Vers",
+    "from": [
+     "FR_46252",
+     "FR_46275"
+    ],
+    "names": [
+     "Saint-Cernin",
+     "Saint-Martin-de-Vers"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_46311",
+    "name": "Sousceyrac-en-Quercy",
+    "from": [
+     "FR_46048",
+     "FR_46071",
+     "FR_46141",
+     "FR_46150",
+     "FR_46311"
+    ],
+    "names": [
+     "Calviac",
+     "Comiac",
+     "Lacam-d'Ourcet",
+     "Lamativie",
+     "Sousceyrac"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_48017",
+    "name": "Banassac-Canilhac",
+    "from": [
+     "FR_48017",
+     "FR_48033"
+    ],
+    "names": [
+     "Banassac",
+     "Canilhac"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_48050",
+    "name": "Bédouès-Cocurès",
+    "from": [
+     "FR_48022",
+     "FR_48050"
+    ],
+    "names": [
+     "Bédouès",
+     "Cocurès"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_48061",
+    "name": "Florac Trois Rivières",
+    "from": [
+     "FR_48061",
+     "FR_48186"
+    ],
+    "names": [
+     "Florac",
+     "La Salle-Prunet"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_48099",
+    "name": "Bourgs sur Colagne",
+    "from": [
+     "FR_48049",
+     "FR_48099"
+    ],
+    "names": [
+     "Chirac",
+     "Le Monastier-Pin-Moriès"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_48105",
+    "name": "Naussac-Fontanes",
+    "from": [
+     "FR_48062",
+     "FR_48105"
+    ],
+    "names": [
+     "Fontanes",
+     "Naussac"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_48116",
+    "name": "Pont de Montvert - Sud Mont Lozère",
+    "from": [
+     "FR_48066",
+     "FR_48116",
+     "FR_48172"
+    ],
+    "names": [
+     "Fraissinet-de-Lozère",
+     "Le Pont-de-Montvert",
+     "Saint-Maurice-de-Ventalon"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_48152",
+    "name": "Ventalon en Cévennes",
+    "from": [
+     "FR_48134",
+     "FR_48152"
+    ],
+    "names": [
+     "Saint-Andéol-de-Clerguemort",
+     "Saint-Frézal-de-Ventalon"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_48166",
+    "name": "Cans et Cévennes",
+    "from": [
+     "FR_48162",
+     "FR_48166"
+    ],
+    "names": [
+     "Saint-Julien-d'Arpaon",
+     "Saint-Laurent-de-Trèves"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49003",
+    "name": "Tuffalun",
+    "from": [
+     "FR_49003",
+     "FR_49181",
+     "FR_49230"
+    ],
+    "names": [
+     "Ambillou-Château",
+     "Louerre",
+     "Noyant-la-Plaine"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49018",
+    "name": "Baugé-en-Anjou",
+    "from": [
+     "FR_49018",
+     "FR_49031",
+     "FR_49079",
+     "FR_49097",
+     "FR_49101",
+     "FR_49116",
+     "FR_49128",
+     "FR_49143",
+     "FR_49157",
+     "FR_49315"
+    ],
+    "names": [
+     "Baugé-en-Anjou",
+     "Bocé",
+     "Chartrené",
+     "Cheviré-le-Rouge",
+     "Clefs-Val d'Anjou",
+     "Cuon",
+     "Échemiré",
+     "Fougeré",
+     "Le Guédeniau",
+     "Saint-Quentin-lès-Beaurepaire"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49021",
+    "name": "Beaufort-en-Anjou",
+    "from": [
+     "FR_49021",
+     "FR_49147"
+    ],
+    "names": [
+     "Beaufort-en-Vallée",
+     "Gée"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49023",
+    "name": "Beaupréau-en-Mauges",
+    "from": [
+     "FR_49006",
+     "FR_49023",
+     "FR_49072",
+     "FR_49151",
+     "FR_49162",
+     "FR_49165",
+     "FR_49239",
+     "FR_49243",
+     "FR_49312",
+     "FR_49375"
+    ],
+    "names": [
+     "Andrezé",
+     "Beaupréau",
+     "La Chapelle-du-Genêt",
+     "Gesté",
+     "Jallais",
+     "La Jubaudière",
+     "Le Pin-en-Mauges",
+     "La Poitevinière",
+     "Saint-Philbert-en-Mauges",
+     "Villedieu-la-Blouère"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49029",
+    "name": "Blaison-Saint-Sulpice",
+    "from": [
+     "FR_49029",
+     "FR_49322"
+    ],
+    "names": [
+     "Blaison-Gohier",
+     "Saint-Sulpice"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49067",
+    "name": "Chenillé-Champteussé",
+    "from": [
+     "FR_49067",
+     "FR_49095"
+    ],
+    "names": [
+     "Champteussé-sur-Baconne",
+     "Chenillé-Changé"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49069",
+    "name": "Orée d'Anjou",
+    "from": [
+     "FR_49040",
+     "FR_49069",
+     "FR_49126",
+     "FR_49172",
+     "FR_49177",
+     "FR_49270",
+     "FR_49296",
+     "FR_49320",
+     "FR_49360"
+    ],
+    "names": [
+     "Bouzillé",
+     "Champtoceaux",
+     "Drain",
+     "Landemont",
+     "Liré",
+     "Saint-Christophe-la-Couperie",
+     "Saint-Laurent-des-Autels",
+     "Saint-Sauveur-de-Landemont",
+     "La Varenne"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49092",
+    "name": "Chemillé-en-Anjou",
+    "from": [
+     "FR_49071",
+     "FR_49074",
+     "FR_49092",
+     "FR_49111",
+     "FR_49153",
+     "FR_49169",
+     "FR_49225",
+     "FR_49268",
+     "FR_49281",
+     "FR_49300",
+     "FR_49325",
+     "FR_49351"
+    ],
+    "names": [
+     "Chanzeaux",
+     "La Chapelle-Rousselin",
+     "Chemillé-Melay",
+     "Cossé-d'Anjou",
+     "Valanjou",
+     "La Jumellière",
+     "Neuvy-en-Mauges",
+     "Sainte-Christine",
+     "Saint-Georges-des-Gardes",
+     "Saint-Lézin",
+     "La Salle-de-Vihiers",
+     "La Tourlandry"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49138",
+    "name": "Les Bois d'Anjou",
+    "from": [
+     "FR_49049",
+     "FR_49138",
+     "FR_49280"
+    ],
+    "names": [
+     "Brion",
+     "Fontaine-Guérin",
+     "Saint-Georges-du-Bois"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49149",
+    "name": "Gennes-Val de Loire",
+    "from": [
+     "FR_49094",
+     "FR_49149",
+     "FR_49154",
+     "FR_49279",
+     "FR_49346"
+    ],
+    "names": [
+     "Chênehutte-Trèves-Cunault",
+     "Gennes",
+     "Grézillé",
+     "Saint-Georges-des-Sept-Voies",
+     "Le Thoureil"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49160",
+    "name": "Ingrandes-Le Fresne sur Loire",
+    "from": [
+     "FR_49160",
+     "FR_49382"
+    ],
+    "names": [
+     "Ingrandes",
+     "Le Fresne-sur-Loire"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49163",
+    "name": "Jarzé Villages",
+    "from": [
+     "FR_49025",
+     "FR_49084",
+     "FR_49163",
+     "FR_49185"
+    ],
+    "names": [
+     "Beauvau",
+     "Chaumont-d'Anjou",
+     "Jarzé",
+     "Lué-en-Baugeois"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49176",
+    "name": "Le Lion-d'Angers",
+    "from": [
+     "FR_49005",
+     "FR_49176"
+    ],
+    "names": [
+     "Andigné",
+     "Le Lion-d'Angers"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49194",
+    "name": "Mazé-Milon",
+    "from": [
+     "FR_49139",
+     "FR_49194"
+    ],
+    "names": [
+     "Fontaine-Milon",
+     "Mazé"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49200",
+    "name": "Longuenée-en-Anjou",
+    "from": [
+     "FR_49196",
+     "FR_49200",
+     "FR_49242",
+     "FR_49251"
+    ],
+    "names": [
+     "La Meignanne",
+     "La Membrolle-sur-Longuenée",
+     "Le Plessis-Macé",
+     "Pruillé"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49218",
+    "name": "Montrevault-sur-Èvre",
+    "from": [
+     "FR_49033",
+     "FR_49083",
+     "FR_49085",
+     "FR_49137",
+     "FR_49145",
+     "FR_49218",
+     "FR_49252",
+     "FR_49313",
+     "FR_49314",
+     "FR_49316",
+     "FR_49324"
+    ],
+    "names": [
+     "La Boissière-sur-Èvre",
+     "Chaudron-en-Mauges",
+     "La Chaussaire",
+     "Le Fief-Sauvin",
+     "Le Fuilet",
+     "Montrevault",
+     "Le Puiset-Doré",
+     "Saint-Pierre-Montlimart",
+     "Saint-Quentin-en-Mauges",
+     "Saint-Rémy-en-Mauges",
+     "La Salle-et-Chapelle-Aubry"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49220",
+    "name": "Morannes-sur-Sarthe",
+    "from": [
+     "FR_49093",
+     "FR_49220"
+    ],
+    "names": [
+     "Chemiré-sur-Sarthe",
+     "Morannes"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49244",
+    "name": "Mauges-sur-Loire",
+    "from": [
+     "FR_49024",
+     "FR_49034",
+     "FR_49039",
+     "FR_49075",
+     "FR_49190",
+     "FR_49204",
+     "FR_49212",
+     "FR_49244",
+     "FR_49276",
+     "FR_49295",
+     "FR_49297"
+    ],
+    "names": [
+     "Beausse",
+     "Botz-en-Mauges",
+     "Bourgneuf-en-Mauges",
+     "La Chapelle-Saint-Florent",
+     "Le Marillais",
+     "Le Mesnil-en-Vallée",
+     "Montjean-sur-Loire",
+     "La Pommeraye",
+     "Saint-Florent-le-Vieil",
+     "Saint-Laurent-de-la-Plaine",
+     "Saint-Laurent-du-Mottay"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49292",
+    "name": "Val-du-Layon",
+    "from": [
+     "FR_49265",
+     "FR_49292"
+    ],
+    "names": [
+     "Saint-Aubin-de-Luigné",
+     "Saint-Lambert-du-Lattay"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49301",
+    "name": "Sèvremoine",
+    "from": [
+     "FR_49179",
+     "FR_49206",
+     "FR_49258",
+     "FR_49263",
+     "FR_49264",
+     "FR_49273",
+     "FR_49285",
+     "FR_49301",
+     "FR_49349",
+     "FR_49350"
+    ],
+    "names": [
+     "Le Longeron",
+     "Montfaucon-Montigné",
+     "La Renaudière",
+     "Roussay",
+     "Saint-André-de-la-Marche",
+     "Saint-Crespin-sur-Moine",
+     "Saint-Germain-sur-Moine",
+     "Saint-Macaire-en-Mauges",
+     "Tillières",
+     "Torfou"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49307",
+    "name": "Loire-Authion",
+    "from": [
+     "FR_49004",
+     "FR_49019",
+     "FR_49032",
+     "FR_49042",
+     "FR_49106",
+     "FR_49117",
+     "FR_49307"
+    ],
+    "names": [
+     "Andard",
+     "Bauné",
+     "La Bohalle",
+     "Brain-sur-l'Authion",
+     "Corné",
+     "La Daguenière",
+     "Saint-Mathurin-sur-Loire"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49323",
+    "name": "Verrières-en-Anjou",
+    "from": [
+     "FR_49238",
+     "FR_49323"
+    ],
+    "names": [
+     "Pellouailles-les-Vignes",
+     "Saint-Sylvain-d'Anjou"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49345",
+    "name": "Bellevigne-en-Layon",
+    "from": [
+     "FR_49066",
+     "FR_49133",
+     "FR_49134",
+     "FR_49256",
+     "FR_49345"
+    ],
+    "names": [
+     "Champ-sur-Layon",
+     "Faveraye-Mâchelles",
+     "Faye-d'Anjou",
+     "Rablay-sur-Layon",
+     "Thouarcé"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49367",
+    "name": "Erdre-en-Anjou",
+    "from": [
+     "FR_49043",
+     "FR_49148",
+     "FR_49249",
+     "FR_49367"
+    ],
+    "names": [
+     "Brain-sur-Longuenée",
+     "Gené",
+     "La Pouëze",
+     "Vern-d'Anjou"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49373",
+    "name": "Lys-Haut-Layon",
+    "from": [
+     "FR_49059",
+     "FR_49142",
+     "FR_49232",
+     "FR_49342",
+     "FR_49348",
+     "FR_49356",
+     "FR_49373"
+    ],
+    "names": [
+     "Les Cerqueux-sous-Passavant",
+     "La Fosse-de-Tigné",
+     "Nueil-sur-Layon",
+     "Tancoigné",
+     "Tigné",
+     "Trémont",
+     "Vihiers"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_49382",
+    "name": "Le Fresne-sur-Loire",
+    "from": [
+     "FR_44060"
+    ],
+    "names": [
+     "Le Fresne-sur-Loire"
+    ],
+    "rename": true
+   },
+   {
+    "year": "2016",
+    "into": "FR_50082",
+    "name": "Bricquebec-en-Cotentin",
+    "from": [
+     "FR_50082",
+     "FR_50396",
+     "FR_50418",
+     "FR_50520",
+     "FR_50614",
+     "FR_50646"
+    ],
+    "names": [
+     "Bricquebec",
+     "Les Perques",
+     "Quettetot",
+     "Saint-Martin-le-Hébert",
+     "Le Valdécie",
+     "Le Vrétot"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50090",
+    "name": "Buais-Les-Monts",
+    "from": [
+     "FR_50090",
+     "FR_50557"
+    ],
+    "names": [
+     "Buais",
+     "Saint-Symphorien-des-Monts"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50099",
+    "name": "Carentan les Marais",
+    "from": [
+     "FR_50010",
+     "FR_50099",
+     "FR_50249",
+     "FR_50458"
+    ],
+    "names": [
+     "Angoville-au-Plain",
+     "Carentan",
+     "Houesville",
+     "Saint-Côme-du-Mont"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50115",
+    "name": "Le Grippon",
+    "from": [
+     "FR_50114",
+     "FR_50115"
+    ],
+    "names": [
+     "Les Chambres",
+     "Champcervon"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50129",
+    "name": "Cherbourg-en-Cotentin",
+    "from": [
+     "FR_50129",
+     "FR_50173",
+     "FR_50203",
+     "FR_50416",
+     "FR_50602"
+    ],
+    "names": [
+     "Cherbourg-Octeville",
+     "Équeurdreville-Hainneville",
+     "La Glacerie",
+     "Querqueville",
+     "Tourlaville"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50139",
+    "name": "Condé-sur-Vire",
+    "from": [
+     "FR_50139",
+     "FR_50319"
+    ],
+    "names": [
+     "Condé-sur-Vire",
+     "Le Mesnil-Raoult"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50142",
+    "name": "Vicq-sur-Mer",
+    "from": [
+     "FR_50142",
+     "FR_50211",
+     "FR_50375",
+     "FR_50432"
+    ],
+    "names": [
+     "Cosqueville",
+     "Gouberville",
+     "Néville-sur-Mer",
+     "Réthoville"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50168",
+    "name": "Ducey-Les Chéris",
+    "from": [
+     "FR_50132",
+     "FR_50168"
+    ],
+    "names": [
+     "Les Chéris",
+     "Ducey"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50209",
+    "name": "Gonneville-Le Theil",
+    "from": [
+     "FR_50209",
+     "FR_50595"
+    ],
+    "names": [
+     "Gonneville",
+     "Le Theil"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50215",
+    "name": "Gouville sur Mer",
+    "from": [
+     "FR_50061",
+     "FR_50215"
+    ],
+    "names": [
+     "Boisroger",
+     "Gouville-sur-Mer"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50236",
+    "name": "La Haye",
+    "from": [
+     "FR_50035",
+     "FR_50063",
+     "FR_50204",
+     "FR_50236",
+     "FR_50330",
+     "FR_50343",
+     "FR_50544",
+     "FR_50558",
+     "FR_50586"
+    ],
+    "names": [
+     "Baudreville",
+     "Bolleville",
+     "Glatigny",
+     "La Haye-du-Puits",
+     "Mobecq",
+     "Montgardon",
+     "Saint-Rémy-des-Landes",
+     "Saint-Symphorien-le-Valois",
+     "Surville"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50239",
+    "name": "Thèreval",
+    "from": [
+     "FR_50123",
+     "FR_50239"
+    ],
+    "names": [
+     "La Chapelle-en-Juger",
+     "Hébécrevon"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50267",
+    "name": "Lessay",
+    "from": [
+     "FR_50012",
+     "FR_50267"
+    ],
+    "names": [
+     "Angoville-sur-Ay",
+     "Lessay"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50273",
+    "name": "Montsenelle",
+    "from": [
+     "FR_50136",
+     "FR_50273",
+     "FR_50415",
+     "FR_50497"
+    ],
+    "names": [
+     "Coigny",
+     "Lithaire",
+     "Prétot-Sainte-Suzanne",
+     "Saint-Jores"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50292",
+    "name": "Marigny-Le-Lozon",
+    "from": [
+     "FR_50280",
+     "FR_50292"
+    ],
+    "names": [
+     "Lozon",
+     "Marigny"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50359",
+    "name": "Mortain-Bocage",
+    "from": [
+     "FR_50056",
+     "FR_50359",
+     "FR_50381",
+     "FR_50494",
+     "FR_50638"
+    ],
+    "names": [
+     "Bion",
+     "Mortain",
+     "Notre-Dame-du-Touchet",
+     "Saint-Jean-du-Corail",
+     "Villechien"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50363",
+    "name": "Moyon Villages",
+    "from": [
+     "FR_50134",
+     "FR_50316",
+     "FR_50363"
+    ],
+    "names": [
+     "Chevry",
+     "Le Mesnil-Opac",
+     "Moyon"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50388",
+    "name": "Orval sur Sienne",
+    "from": [
+     "FR_50339",
+     "FR_50388"
+    ],
+    "names": [
+     "Montchaton",
+     "Orval"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50391",
+    "name": "Grandparigny",
+    "from": [
+     "FR_50133",
+     "FR_50293",
+     "FR_50329",
+     "FR_50391"
+    ],
+    "names": [
+     "Chèvreville",
+     "Martigny",
+     "Milly",
+     "Parigny"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50393",
+    "name": "Percy-en-Normandie",
+    "from": [
+     "FR_50128",
+     "FR_50393"
+    ],
+    "names": [
+     "Le Chefresne",
+     "Percy"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50400",
+    "name": "Picauville",
+    "from": [
+     "FR_50005",
+     "FR_50153",
+     "FR_50212",
+     "FR_50250",
+     "FR_50400",
+     "FR_50642"
+    ],
+    "names": [
+     "Amfreville",
+     "Cretteville",
+     "Gourbesville",
+     "Houtteville",
+     "Picauville",
+     "Vindefontaine"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50410",
+    "name": "Pontorson",
+    "from": [
+     "FR_50284",
+     "FR_50410",
+     "FR_50630"
+    ],
+    "names": [
+     "Macey",
+     "Pontorson",
+     "Vessey"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50419",
+    "name": "Quettreville-sur-Sienne",
+    "from": [
+     "FR_50255",
+     "FR_50419"
+    ],
+    "names": [
+     "Hyenville",
+     "Quettreville-sur-Sienne"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50436",
+    "name": "Romagny Fontenay",
+    "from": [
+     "FR_50189",
+     "FR_50436"
+    ],
+    "names": [
+     "Fontenay",
+     "Romagny"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50484",
+    "name": "Saint-Hilaire-du-Harcouët",
+    "from": [
+     "FR_50484",
+     "FR_50515",
+     "FR_50644"
+    ],
+    "names": [
+     "Saint-Hilaire-du-Harcouët",
+     "Saint-Martin-de-Landelles",
+     "Virey"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50492",
+    "name": "Saint-Jean-d'Elle",
+    "from": [
+     "FR_50380",
+     "FR_50414",
+     "FR_50441",
+     "FR_50492",
+     "FR_50635"
+    ],
+    "names": [
+     "Notre-Dame-d'Elle",
+     "Précorbin",
+     "Rouxeville",
+     "Saint-Jean-des-Baisants",
+     "Vidouville"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50523",
+    "name": "Sainte-Mère-Église",
+    "from": [
+     "FR_50051",
+     "FR_50127",
+     "FR_50170",
+     "FR_50191",
+     "FR_50523"
+    ],
+    "names": [
+     "Beuzeville-au-Plain",
+     "Chef-du-Pont",
+     "Écoquenéauville",
+     "Foucarville",
+     "Sainte-Mère-Église"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50535",
+    "name": "Le Parc",
+    "from": [
+     "FR_50071",
+     "FR_50406",
+     "FR_50535"
+    ],
+    "names": [
+     "Braffais",
+     "Plomb",
+     "Sainte-Pience"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50546",
+    "name": "Bourgvallées",
+    "from": [
+     "FR_50213",
+     "FR_50287",
+     "FR_50545",
+     "FR_50546"
+    ],
+    "names": [
+     "Gourfaleur",
+     "La Mancellière-sur-Vire",
+     "Saint-Romphaire",
+     "Saint-Samson-de-Bonfossé"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50564",
+    "name": "Terre-et-Marais",
+    "from": [
+     "FR_50470",
+     "FR_50564"
+    ],
+    "names": [
+     "Saint-Georges-de-Bohon",
+     "Sainteny"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50565",
+    "name": "Sartilly-Baie-Bocage",
+    "from": [
+     "FR_50009",
+     "FR_50116",
+     "FR_50355",
+     "FR_50434",
+     "FR_50565"
+    ],
+    "names": [
+     "Angey",
+     "Champcey",
+     "Montviron",
+     "La Rochelle-Normande",
+     "Sartilly"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50582",
+    "name": "Sourdeval",
+    "from": [
+     "FR_50582",
+     "FR_50625"
+    ],
+    "names": [
+     "Sourdeval",
+     "Vengeons"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50591",
+    "name": "Le Teilleul",
+    "from": [
+     "FR_50179",
+     "FR_50245",
+     "FR_50254",
+     "FR_50508",
+     "FR_50591"
+    ],
+    "names": [
+     "Ferrières",
+     "Heussé",
+     "Husson",
+     "Sainte-Marie-du-Bois",
+     "Le Teilleul"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50592",
+    "name": "Tessy Bocage",
+    "from": [
+     "FR_50180",
+     "FR_50592"
+    ],
+    "names": [
+     "Fervaches",
+     "Tessy-sur-Vire"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50601",
+    "name": "Torigny-les-Villes",
+    "from": [
+     "FR_50075",
+     "FR_50202",
+     "FR_50224",
+     "FR_50601"
+    ],
+    "names": [
+     "Brectouville",
+     "Giéville",
+     "Guilberville",
+     "Torigni-sur-Vire"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_50639",
+    "name": "Villedieu-les-Poêles-Rouffigny",
+    "from": [
+     "FR_50440",
+     "FR_50639"
+    ],
+    "names": [
+     "Rouffigny",
+     "Villedieu-les-Poêles"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_51030",
+    "name": "Aÿ-Champagne",
+    "from": [
+     "FR_51030",
+     "FR_51064",
+     "FR_51347"
+    ],
+    "names": [
+     "Ay",
+     "Bisseuil",
+     "Mareuil-sur-Ay"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_51564",
+    "name": "Val de Livre",
+    "from": [
+     "FR_51331",
+     "FR_51564"
+    ],
+    "names": [
+     "Louvois",
+     "Tauxières-Mutry"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_52331",
+    "name": "La Porte du Der",
+    "from": [
+     "FR_52331",
+     "FR_52427"
+    ],
+    "names": [
+     "Montier-en-Der",
+     "Robert-Magny"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_52405",
+    "name": "Le Montsaugeonnais",
+    "from": [
+     "FR_52340",
+     "FR_52405",
+     "FR_52509"
+    ],
+    "names": [
+     "Montsaugeon",
+     "Prauthoy",
+     "Vaux-sous-Aubigny"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_52411",
+    "name": "Rives Dervoises",
+    "from": [
+     "FR_52180",
+     "FR_52293",
+     "FR_52296",
+     "FR_52411"
+    ],
+    "names": [
+     "Droyes",
+     "Longeville-sur-la-Laines",
+     "Louze",
+     "Puellemontier"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_52449",
+    "name": "Saints-Geosmes",
+    "from": [
+     "FR_52036",
+     "FR_52449"
+    ],
+    "names": [
+     "Balesmes-sur-Marne",
+     "Saints-Geosmes"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_52529",
+    "name": "Villegusien-le-Lac",
+    "from": [
+     "FR_52239",
+     "FR_52529"
+    ],
+    "names": [
+     "Heuilley-Cotton",
+     "Villegusien-le-Lac"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_53137",
+    "name": "Loiron-Ruillé",
+    "from": [
+     "FR_53137",
+     "FR_53194"
+    ],
+    "names": [
+     "Loiron",
+     "Ruillé-le-Gravelais"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_53185",
+    "name": "Pré-en-Pail-Saint-Samson",
+    "from": [
+     "FR_53185",
+     "FR_53252"
+    ],
+    "names": [
+     "Pré-en-Pail",
+     "Saint-Samson"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_53255",
+    "name": "Sainte-Suzanne-et-Chammes",
+    "from": [
+     "FR_53050",
+     "FR_53255"
+    ],
+    "names": [
+     "Chammes",
+     "Sainte-Suzanne"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_56144",
+    "name": "Évellys",
+    "from": [
+     "FR_56142",
+     "FR_56144",
+     "FR_56192"
+    ],
+    "names": [
+     "Moustoir-Remungol",
+     "Naizin",
+     "Remungol"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_56197",
+    "name": "Val d'Oust",
+    "from": [
+     "FR_56037",
+     "FR_56187",
+     "FR_56197"
+    ],
+    "names": [
+     "La Chapelle-Caro",
+     "Quily",
+     "Le Roc-Saint-André"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_56251",
+    "name": "Theix-Noyalo",
+    "from": [
+     "FR_56150",
+     "FR_56251"
+    ],
+    "names": [
+     "Noyalo",
+     "Theix"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_57021",
+    "name": "Ancy-Dornot",
+    "from": [
+     "FR_57021",
+     "FR_57184"
+    ],
+    "names": [
+     "Ancy-sur-Moselle",
+     "Dornot"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_58026",
+    "name": "Beaulieu",
+    "from": [
+     "FR_58026",
+     "FR_58100",
+     "FR_58167"
+    ],
+    "names": [
+     "Beaulieu",
+     "Dompierre-sur-Héry",
+     "Michaugues"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_59260",
+    "name": "Ghyvelde",
+    "from": [
+     "FR_59260",
+     "FR_59404"
+    ],
+    "names": [
+     "Ghyvelde",
+     "Les Moëres"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_59588",
+    "name": "Téteghem-Coudekerque-Village",
+    "from": [
+     "FR_59154",
+     "FR_59588"
+    ],
+    "names": [
+     "Coudekerque-Village",
+     "Téteghem"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_60088",
+    "name": "Bornel",
+    "from": [
+     "FR_60018",
+     "FR_60088",
+     "FR_60246"
+    ],
+    "names": [
+     "Anserville",
+     "Bornel",
+     "Fosseuse"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_61007",
+    "name": "Athis-Val de Rouvre",
+    "from": [
+     "FR_61007",
+     "FR_61058",
+     "FR_61073",
+     "FR_61313",
+     "FR_61353",
+     "FR_61465",
+     "FR_61478",
+     "FR_61489"
+    ],
+    "names": [
+     "Athis-de-l'Orne",
+     "Bréel",
+     "La Carneille",
+     "Notre-Dame-du-Rocher",
+     "Ronfeugerai",
+     "Ségrie-Fontaine",
+     "Taillebois",
+     "Les Tourailles"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_61050",
+    "name": "Cour-Maugis sur Huisne",
+    "from": [
+     "FR_61050",
+     "FR_61128",
+     "FR_61245",
+     "FR_61430"
+    ],
+    "names": [
+     "Boissy-Maugis",
+     "Courcerault",
+     "Maison-Maugis",
+     "Saint-Maurice-sur-Huisne"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_61081",
+    "name": "Chailloué",
+    "from": [
+     "FR_61081",
+     "FR_61253",
+     "FR_61306"
+    ],
+    "names": [
+     "Chailloué",
+     "Marmouillé",
+     "Neuville-près-Sées"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_61096",
+    "name": "Rives d'Andaine",
+    "from": [
+     "FR_61096",
+     "FR_61135",
+     "FR_61186",
+     "FR_61200"
+    ],
+    "names": [
+     "La Chapelle-d'Andaine",
+     "Couterne",
+     "Geneslay",
+     "Haleine"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_61116",
+    "name": "Sablons sur Huisne",
+    "from": [
+     "FR_61115",
+     "FR_61116",
+     "FR_61125"
+    ],
+    "names": [
+     "Condeau",
+     "Condé-sur-Huisne",
+     "Coulonges-les-Sablons"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_61145",
+    "name": "Domfront en Poiraie",
+    "from": [
+     "FR_61145",
+     "FR_61201",
+     "FR_61355"
+    ],
+    "names": [
+     "Domfront",
+     "La Haute-Chapelle",
+     "Rouellé"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_61153",
+    "name": "Écouché-les-Vallées",
+    "from": [
+     "FR_61027",
+     "FR_61127",
+     "FR_61153",
+     "FR_61236",
+     "FR_61441",
+     "FR_61470"
+    ],
+    "names": [
+     "Batilly",
+     "La Courbe",
+     "Écouché",
+     "Loucé",
+     "Saint-Ouen-sur-Maire",
+     "Serans"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_61167",
+    "name": "La Ferté-en-Ouche",
+    "from": [
+     "FR_61003",
+     "FR_61047",
+     "FR_61136",
+     "FR_61167",
+     "FR_61184",
+     "FR_61191",
+     "FR_61205",
+     "FR_61282",
+     "FR_61434",
+     "FR_61506"
+    ],
+    "names": [
+     "Anceins",
+     "Bocquencé",
+     "Couvains",
+     "La Ferté-Frênel",
+     "Gauville",
+     "Glos-la-Ferrière",
+     "Heugon",
+     "Monnai",
+     "Saint-Nicolas-des-Laitiers",
+     "Villers-en-Ouche"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_61211",
+    "name": "Juvigny Val d'Andaine",
+    "from": [
+     "FR_61025",
+     "FR_61033",
+     "FR_61211",
+     "FR_61235",
+     "FR_61239",
+     "FR_61380",
+     "FR_61469"
+    ],
+    "names": [
+     "La Baroche-sous-Lucé",
+     "Beaulandais",
+     "Juvigny-sous-Andaine",
+     "Loré",
+     "Lucé",
+     "Saint-Denis-de-Villenette",
+     "Sept-Forges"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_61230",
+    "name": "Longny les Villages",
+    "from": [
+     "FR_61220",
+     "FR_61230",
+     "FR_61247",
+     "FR_61250",
+     "FR_61280",
+     "FR_61296",
+     "FR_61305",
+     "FR_61458"
+    ],
+    "names": [
+     "La Lande-sur-Eure",
+     "Longny-au-Perche",
+     "Malétable",
+     "Marchainville",
+     "Monceaux-au-Perche",
+     "Moulicent",
+     "Neuilly-sur-Eure",
+     "Saint-Victor-de-Réno"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_61309",
+    "name": "Perche en Nocé",
+    "from": [
+     "FR_61112",
+     "FR_61144",
+     "FR_61309",
+     "FR_61337",
+     "FR_61368",
+     "FR_61409"
+    ],
+    "names": [
+     "Colonard-Corubert",
+     "Dancé",
+     "Nocé",
+     "Préaux-du-Perche",
+     "Saint-Aubin-des-Grois",
+     "Saint-Jean-de-la-Forêt"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_61324",
+    "name": "Passais Villages",
+    "from": [
+     "FR_61155",
+     "FR_61324",
+     "FR_61455"
+    ],
+    "names": [
+     "L'Épinay-le-Comte",
+     "Passais",
+     "Saint-Siméon"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_61339",
+    "name": "Putanges-le-Lac",
+    "from": [
+     "FR_61106",
+     "FR_61174",
+     "FR_61179",
+     "FR_61270",
+     "FR_61339",
+     "FR_61340",
+     "FR_61354",
+     "FR_61364",
+     "FR_61378"
+    ],
+    "names": [
+     "Chênedouit",
+     "La Forêt-Auvray",
+     "La Fresnaye-au-Sauvage",
+     "Ménil-Jean",
+     "Putanges-Pont-Écrepin",
+     "Rabodanges",
+     "Les Rotours",
+     "Saint-Aubert-sur-Orne",
+     "Sainte-Croix-sur-Orne"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_61341",
+    "name": "Écouves",
+    "from": [
+     "FR_61175",
+     "FR_61341",
+     "FR_61509"
+    ],
+    "names": [
+     "Forges",
+     "Radon",
+     "Vingt-Hanaps"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_61345",
+    "name": "Rémalard en Perche",
+    "from": [
+     "FR_61042",
+     "FR_61147",
+     "FR_61345"
+    ],
+    "names": [
+     "Bellou-sur-Huisne",
+     "Dorceau",
+     "Rémalard"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_61460",
+    "name": "Sap-en-Auge",
+    "from": [
+     "FR_61320",
+     "FR_61460"
+    ],
+    "names": [
+     "Orville",
+     "Le Sap"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_61463",
+    "name": "Les Monts d'Andaine",
+    "from": [
+     "FR_61428",
+     "FR_61463"
+    ],
+    "names": [
+     "Saint-Maurice-du-Désert",
+     "La Sauvagère"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_61483",
+    "name": "Bagnoles de l'Orne Normandie",
+    "from": [
+     "FR_61431",
+     "FR_61483"
+    ],
+    "names": [
+     "Saint-Michel-des-Andaines",
+     "Bagnoles-de-l'Orne"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_61484",
+    "name": "Val-au-Perche",
+    "from": [
+     "FR_61185",
+     "FR_61204",
+     "FR_61246",
+     "FR_61356",
+     "FR_61359",
+     "FR_61484"
+    ],
+    "names": [
+     "Gémages",
+     "L'Hermitière",
+     "Mâle",
+     "La Rouge",
+     "Saint-Agnan-sur-Erre",
+     "Le Theil"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_61491",
+    "name": "Tourouvre au Perche",
+    "from": [
+     "FR_61016",
+     "FR_61045",
+     "FR_61059",
+     "FR_61065",
+     "FR_61090",
+     "FR_61226",
+     "FR_61335",
+     "FR_61338",
+     "FR_61343",
+     "FR_61491"
+    ],
+    "names": [
+     "Autheuil",
+     "Bivilliers",
+     "Bresolettes",
+     "Bubertré",
+     "Champs",
+     "Lignerolles",
+     "La Poterie-au-Perche",
+     "Prépotin",
+     "Randonnai",
+     "Tourouvre"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_62691",
+    "name": "Saint-Augustin",
+    "from": [
+     "FR_62226",
+     "FR_62691"
+    ],
+    "names": [
+     "Clarques",
+     "Rebecques"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_62757",
+    "name": "Saint-Martin-lez-Tatinghem",
+    "from": [
+     "FR_62757",
+     "FR_62807"
+    ],
+    "names": [
+     "Saint-Martin-au-Laërt",
+     "Tatinghem"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_63160",
+    "name": "Aulhat-Flat",
+    "from": [
+     "FR_63018",
+     "FR_63160"
+    ],
+    "names": [
+     "Aulhat-Saint-Privat",
+     "Flat"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_63244",
+    "name": "Chambaron sur Morge",
+    "from": [
+     "FR_63068",
+     "FR_63244"
+    ],
+    "names": [
+     "Cellule",
+     "La Moutade"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_63255",
+    "name": "Nonette-Orsonnette",
+    "from": [
+     "FR_63255",
+     "FR_63266"
+    ],
+    "names": [
+     "Nonette",
+     "Orsonnette"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_65192",
+    "name": "Gavarnie-Gèdre",
+    "from": [
+     "FR_65188",
+     "FR_65192"
+    ],
+    "names": [
+     "Gavarnie",
+     "Gèdre"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_65282",
+    "name": "Loudenvielle",
+    "from": [
+     "FR_65027",
+     "FR_65282"
+    ],
+    "names": [
+     "Armenteule",
+     "Loudenvielle"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_67004",
+    "name": "Sommerau",
+    "from": [
+     "FR_67004",
+     "FR_67041",
+     "FR_67431",
+     "FR_67469"
+    ],
+    "names": [
+     "Allenwiller",
+     "Birkenwald",
+     "Salenthal",
+     "Singrist"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_67372",
+    "name": "Val de Moder",
+    "from": [
+     "FR_67372",
+     "FR_67496",
+     "FR_67512"
+    ],
+    "names": [
+     "Pfaffenhoffen",
+     "Uberach",
+     "La Walck"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_67495",
+    "name": "Truchtersheim",
+    "from": [
+     "FR_67374",
+     "FR_67495"
+    ],
+    "names": [
+     "Pfettisheim",
+     "Truchtersheim"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_67539",
+    "name": "Wingersheim les Quatre Bans",
+    "from": [
+     "FR_67158",
+     "FR_67207",
+     "FR_67297",
+     "FR_67539"
+    ],
+    "names": [
+     "Gingsheim",
+     "Hohatzenheim",
+     "Mittelhausen",
+     "Wingersheim"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_68006",
+    "name": "Bernwiller",
+    "from": [
+     "FR_68006",
+     "FR_68031"
+    ],
+    "names": [
+     "Ammertzwiller",
+     "Bernwiller"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_68012",
+    "name": "Aspach-Michelbach",
+    "from": [
+     "FR_68012",
+     "FR_68206"
+    ],
+    "names": [
+     "Aspach-le-Haut",
+     "Michelbach"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_68056",
+    "name": "Brunstatt-Didenheim",
+    "from": [
+     "FR_68056",
+     "FR_68070"
+    ],
+    "names": [
+     "Brunstatt",
+     "Didenheim"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_68143",
+    "name": "Porte du Ried",
+    "from": [
+     "FR_68143",
+     "FR_68272"
+    ],
+    "names": [
+     "Holtzwihr",
+     "Riedwihr"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_68162",
+    "name": "Kaysersberg Vignoble",
+    "from": [
+     "FR_68162",
+     "FR_68164",
+     "FR_68310"
+    ],
+    "names": [
+     "Kaysersberg",
+     "Kientzheim",
+     "Sigolsheim"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_68201",
+    "name": "Masevaux-Niederbruck",
+    "from": [
+     "FR_68201",
+     "FR_68233"
+    ],
+    "names": [
+     "Masevaux",
+     "Niederbruck"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_68219",
+    "name": "Le Haut Soultzbach",
+    "from": [
+     "FR_68219",
+     "FR_68314"
+    ],
+    "names": [
+     "Mortzwiller",
+     "Soppe-le-Haut"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_68240",
+    "name": "Illtal",
+    "from": [
+     "FR_68108",
+     "FR_68133",
+     "FR_68240"
+    ],
+    "names": [
+     "Grentzingen",
+     "Henflingen",
+     "Oberdorf"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_68320",
+    "name": "Spechbach",
+    "from": [
+     "FR_68319",
+     "FR_68320"
+    ],
+    "names": [
+     "Spechbach-le-Bas",
+     "Spechbach-le-Haut"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_69066",
+    "name": "Cours",
+    "from": [
+     "FR_69066",
+     "FR_69158",
+     "FR_69247"
+    ],
+    "names": [
+     "Cours-la-Ville",
+     "Pont-Trambouze",
+     "Thel"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_70418",
+    "name": "La Romaine",
+    "from": [
+     "FR_70281",
+     "FR_70418",
+     "FR_70551"
+    ],
+    "names": [
+     "Greucourt",
+     "Le Pont-de-Planches",
+     "Vezet"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_71204",
+    "name": "Fragnes-La Loyère",
+    "from": [
+     "FR_71204",
+     "FR_71265"
+    ],
+    "names": [
+     "Fragnes",
+     "La Loyère"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_71279",
+    "name": "Le Rousset-Marizy",
+    "from": [
+     "FR_71279",
+     "FR_71375"
+    ],
+    "names": [
+     "Marizy",
+     "Le Rousset"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_72023",
+    "name": "Ballon-Saint Mars",
+    "from": [
+     "FR_72023",
+     "FR_72301"
+    ],
+    "names": [
+     "Ballon",
+     "Saint-Mars-sous-Ballon"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_72363",
+    "name": "Tuffé Val de la Chéronne",
+    "from": [
+     "FR_72288",
+     "FR_72363"
+    ],
+    "names": [
+     "Saint-Hilaire-le-Lierru",
+     "Tuffé"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_73006",
+    "name": "Aime-la-Plagne",
+    "from": [
+     "FR_73006",
+     "FR_73126",
+     "FR_73169"
+    ],
+    "names": [
+     "Aime",
+     "Granier",
+     "Montgirod"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_73010",
+    "name": "Entrelacs",
+    "from": [
+     "FR_73010",
+     "FR_73062",
+     "FR_73108",
+     "FR_73158",
+     "FR_73238",
+     "FR_73239"
+    ],
+    "names": [
+     "Albens",
+     "Cessens",
+     "Épersy",
+     "Mognard",
+     "Saint-Germain-la-Chambotte",
+     "Saint-Girod"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_73150",
+    "name": "La Plagne Tarentaise",
+    "from": [
+     "FR_73038",
+     "FR_73093",
+     "FR_73150",
+     "FR_73305"
+    ],
+    "names": [
+     "Bellentre",
+     "La Côte-d'Aime",
+     "Mâcot-la-Plagne",
+     "Valezan"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_73257",
+    "name": "Les Belleville",
+    "from": [
+     "FR_73257",
+     "FR_73321"
+    ],
+    "names": [
+     "Saint-Martin-de-Belleville",
+     "Villarlurin"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_73284",
+    "name": "Salins-Fontaine",
+    "from": [
+     "FR_73115",
+     "FR_73284"
+    ],
+    "names": [
+     "Fontaine-le-Puits",
+     "Salins-les-Thermes"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_74112",
+    "name": "Epagny Metz-Tessy",
+    "from": [
+     "FR_74112",
+     "FR_74181"
+    ],
+    "names": [
+     "Épagny",
+     "Metz-Tessy"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_74123",
+    "name": "Faverges-Seythenex",
+    "from": [
+     "FR_74123",
+     "FR_74270"
+    ],
+    "names": [
+     "Faverges",
+     "Seythenex"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_74167",
+    "name": "Val de Chaise",
+    "from": [
+     "FR_74084",
+     "FR_74167"
+    ],
+    "names": [
+     "Cons-Sainte-Colombe",
+     "Marlens"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_74275",
+    "name": "Talloires-Montmin",
+    "from": [
+     "FR_74187",
+     "FR_74275"
+    ],
+    "names": [
+     "Montmin",
+     "Talloires"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_76164",
+    "name": "Rives-en-Seine",
+    "from": [
+     "FR_76164",
+     "FR_76659",
+     "FR_76742"
+    ],
+    "names": [
+     "Caudebec-en-Caux",
+     "Saint-Wandrille-Rançon",
+     "Villequier"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_76276",
+    "name": "Forges-les-Eaux",
+    "from": [
+     "FR_76276",
+     "FR_76277"
+    ],
+    "names": [
+     "Forges-les-Eaux",
+     "Le Fossé"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_76289",
+    "name": "Saint Martin de l'If",
+    "from": [
+     "FR_76089",
+     "FR_76267",
+     "FR_76289",
+     "FR_76444"
+    ],
+    "names": [
+     "Betteville",
+     "La Folletière",
+     "Fréville",
+     "Mont-de-l'If"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_76401",
+    "name": "Arelaune-en-Seine",
+    "from": [
+     "FR_76401",
+     "FR_76625"
+    ],
+    "names": [
+     "La Mailleraye-sur-Seine",
+     "Saint-Nicolas-de-Bliquetuit"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_76476",
+    "name": "Port-Jérôme-sur-Seine",
+    "from": [
+     "FR_76031",
+     "FR_76476",
+     "FR_76701",
+     "FR_76713"
+    ],
+    "names": [
+     "Auberville-la-Campagne",
+     "Notre-Dame-de-Gravenchon",
+     "Touffreville-la-Cable",
+     "Triquerville"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_76618",
+    "name": "Petit-Caux",
+    "from": [
+     "FR_76027",
+     "FR_76037",
+     "FR_76073",
+     "FR_76081",
+     "FR_76098",
+     "FR_76137",
+     "FR_76145",
+     "FR_76215",
+     "FR_76301",
+     "FR_76310",
+     "FR_76326",
+     "FR_76337",
+     "FR_76376",
+     "FR_76496",
+     "FR_76618",
+     "FR_76643",
+     "FR_76696",
+     "FR_76704"
+    ],
+    "names": [
+     "Assigny",
+     "Auquemesnil",
+     "Belleville-sur-Mer",
+     "Berneval-le-Grand",
+     "Biville-sur-Mer",
+     "Bracquemont",
+     "Brunville",
+     "Derchigny",
+     "Glicourt",
+     "Gouchaupre",
+     "Greny",
+     "Guilmécourt",
+     "Intraville",
+     "Penly",
+     "Saint-Martin-en-Campagne",
+     "Saint-Quentin-au-Bosc",
+     "Tocqueville-sur-Eu",
+     "Tourville-la-Chapelle"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_77316",
+    "name": "Moret Loing et Orvanne",
+    "from": [
+     "FR_77170",
+     "FR_77299",
+     "FR_77316"
+    ],
+    "names": [
+     "Épisy",
+     "Montarlot",
+     "Orvanne"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_79013",
+    "name": "Argentonnay",
+    "from": [
+     "FR_79013",
+     "FR_79053",
+     "FR_79072",
+     "FR_79099",
+     "FR_79187",
+     "FR_79333"
+    ],
+    "names": [
+     "Argenton-les-Vallées",
+     "Le Breuil-sous-Argenton",
+     "La Chapelle-Gaudin",
+     "La Coudre",
+     "Moutiers-sous-Argenton",
+     "Ulcot"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_79280",
+    "name": "Saint Maurice Étusson",
+    "from": [
+     "FR_79113",
+     "FR_79280"
+    ],
+    "names": [
+     "Étusson",
+     "Saint-Maurice-la-Fougereuse"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_81026",
+    "name": "Bellegarde-Marsal",
+    "from": [
+     "FR_81026",
+     "FR_81155"
+    ],
+    "names": [
+     "Bellegarde",
+     "Marsal"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_81062",
+    "name": "Fontrieu",
+    "from": [
+     "FR_81062",
+     "FR_81091",
+     "FR_81153"
+    ],
+    "names": [
+     "Castelnau-de-Brassac",
+     "Ferrières",
+     "Le Margnès"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_85008",
+    "name": "Aubigny-Les Clouzeaux",
+    "from": [
+     "FR_85008",
+     "FR_85069"
+    ],
+    "names": [
+     "Aubigny",
+     "Les Clouzeaux"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_85019",
+    "name": "Bellevigny",
+    "from": [
+     "FR_85019",
+     "FR_85279"
+    ],
+    "names": [
+     "Belleville-sur-Vie",
+     "Saligny"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_85080",
+    "name": "Doix lès Fontaines",
+    "from": [
+     "FR_85080",
+     "FR_85091"
+    ],
+    "names": [
+     "Doix",
+     "Fontaines"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_85090",
+    "name": "Sèvremont",
+    "from": [
+     "FR_85063",
+     "FR_85090",
+     "FR_85180",
+     "FR_85257"
+    ],
+    "names": [
+     "Les Châtelliers-Châteaumur",
+     "La Flocellière",
+     "La Pommeraie-sur-Sèvre",
+     "Saint-Michel-Mont-Mercure"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_85154",
+    "name": "Mouilleron-Saint-Germain",
+    "from": [
+     "FR_85154",
+     "FR_85219"
+    ],
+    "names": [
+     "Mouilleron-en-Pareds",
+     "Saint-Germain-l'Aiguiller"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_85197",
+    "name": "Montréverd",
+    "from": [
+     "FR_85150",
+     "FR_85197",
+     "FR_85272"
+    ],
+    "names": [
+     "Mormaison",
+     "Saint-André-Treize-Voies",
+     "Saint-Sulpice-le-Verdon"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_85213",
+    "name": "Rives de l'Yon",
+    "from": [
+     "FR_85043",
+     "FR_85213"
+    ],
+    "names": [
+     "Chaillé-sous-les-Ormeaux",
+     "Saint-Florent-des-Bois"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_86245",
+    "name": "Senillé-Saint-Sauveur",
+    "from": [
+     "FR_86245",
+     "FR_86259"
+    ],
+    "names": [
+     "Saint-Sauveur",
+     "Senillé"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_87097",
+    "name": "Val d'Issoire",
+    "from": [
+     "FR_87026",
+     "FR_87097"
+    ],
+    "names": [
+     "Bussière-Boffy",
+     "Mézières-sur-Issoire"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_88218",
+    "name": "Granges-Aumontzey",
+    "from": [
+     "FR_88018",
+     "FR_88218"
+    ],
+    "names": [
+     "Aumontzey",
+     "Granges-sur-Vologne"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_88361",
+    "name": "Provenchères-et-Colroy",
+    "from": [
+     "FR_88112",
+     "FR_88361"
+    ],
+    "names": [
+     "Colroy-la-Grande",
+     "Provenchères-sur-Fave"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_88465",
+    "name": "Capavenir Vosges",
+    "from": [
+     "FR_88204",
+     "FR_88337",
+     "FR_88465"
+    ],
+    "names": [
+     "Girmont",
+     "Oncourt",
+     "Thaon-les-Vosges"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_89086",
+    "name": "Charny Orée de Puisaye",
+    "from": [
+     "FR_89070",
+     "FR_89086",
+     "FR_89097",
+     "FR_89103",
+     "FR_89138",
+     "FR_89178",
+     "FR_89192",
+     "FR_89241",
+     "FR_89243",
+     "FR_89294",
+     "FR_89317",
+     "FR_89343",
+     "FR_89358",
+     "FR_89454"
+    ],
+    "names": [
+     "Chambeugle",
+     "Charny",
+     "Chêne-Arnoult",
+     "Chevillon",
+     "Dicy",
+     "Fontenouilles",
+     "Grandchamp",
+     "Malicorne",
+     "Marchais-Beton",
+     "Perreux",
+     "Prunoy",
+     "Saint-Denis-sur-Ouanne",
+     "Saint-Martin-sur-Ouanne",
+     "Villefranche"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_89196",
+    "name": "Valravillon",
+    "from": [
+     "FR_89196",
+     "FR_89213",
+     "FR_89275",
+     "FR_89457"
+    ],
+    "names": [
+     "Guerchy",
+     "Laduz",
+     "Neuilly",
+     "Villemer"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_89334",
+    "name": "Le Val d'Ocre",
+    "from": [
+     "FR_89334",
+     "FR_89356"
+    ],
+    "names": [
+     "Saint-Aubin-Château-Neuf",
+     "Saint-Martin-sur-Ocre"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_89388",
+    "name": "Sépeaux-Saint Romain",
+    "from": [
+     "FR_89366",
+     "FR_89388"
+    ],
+    "names": [
+     "Saint-Romain-le-Preux",
+     "Sépeaux"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_89411",
+    "name": "Les Vallées de la Vanne",
+    "from": [
+     "FR_89107",
+     "FR_89411",
+     "FR_89429"
+    ],
+    "names": [
+     "Chigy",
+     "Theil-sur-Vanne",
+     "Vareilles"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "FR_89441",
+    "name": "Vermenton",
+    "from": [
+     "FR_89330",
+     "FR_89441"
+    ],
+    "names": [
+     "Sacy",
+     "Vermenton"
+    ],
+    "rename": false
+   },
+   {
     "year": "2017",
     "into": "FR_01095",
     "name": "Nivigne et Suran",
@@ -8802,6 +14548,896 @@
  "italy": {
   "mergers": [
    {
+    "year": "2012",
+    "into": "IT_013249",
+    "name": "Gravedona ed Uniti",
+    "from": [
+     "IT_013076",
+     "IT_013108",
+     "IT_013112"
+    ],
+    "names": [
+     "Consiglio di Rumo",
+     "Germasino",
+     "Gravedona"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2014",
+    "into": "IT_025070",
+    "name": "Quero Vas",
+    "from": [
+     "IT_025042",
+     "IT_025064"
+    ],
+    "names": [
+     "Quero",
+     "Vas"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2014",
+    "into": "IT_030188",
+    "name": "Rivignano Teor",
+    "from": [
+     "IT_030096",
+     "IT_030119"
+    ],
+    "names": [
+     "Rivignano",
+     "Teor"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2014",
+    "into": "IT_034049",
+    "name": "Sissa Trecasali",
+    "from": [
+     "IT_034034",
+     "IT_034043"
+    ],
+    "names": [
+     "Sissa",
+     "Trecasali"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2014",
+    "into": "IT_037061",
+    "name": "Valsamoggia",
+    "from": [
+     "IT_037004",
+     "IT_037018",
+     "IT_037023",
+     "IT_037043",
+     "IT_037058"
+    ],
+    "names": [
+     "Bazzano",
+     "Castello di Serravalle",
+     "Crespellano",
+     "Monteveglio",
+     "Savigno"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2014",
+    "into": "IT_038027",
+    "name": "Fiscaglia",
+    "from": [
+     "IT_038026",
+     "IT_038015",
+     "IT_038013"
+    ],
+    "names": [
+     "Migliaro",
+     "Migliarino",
+     "Massa Fiscaglia"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2014",
+    "into": "IT_041068",
+    "name": "Vallefoglia",
+    "from": [
+     "IT_041012",
+     "IT_041056"
+    ],
+    "names": [
+     "Colbordolo",
+     "Sant'Angelo in Lizzola"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2014",
+    "into": "IT_042050",
+    "name": "Trecastelli",
+    "from": [
+     "IT_042009",
+     "IT_042028",
+     "IT_042039"
+    ],
+    "names": [
+     "Castel Colonna",
+     "Monterado",
+     "Ripe"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2014",
+    "into": "IT_046036",
+    "name": "Fabbriche di Vergemoli",
+    "from": [
+     "IT_046012",
+     "IT_046032"
+    ],
+    "names": [
+     "Fabbriche di Vallico",
+     "Vergemoli"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2014",
+    "into": "IT_048052",
+    "name": "Figline e Incisa Valdarno",
+    "from": [
+     "IT_048016",
+     "IT_048023"
+    ],
+    "names": [
+     "Figline Valdarno",
+     "Incisa in Val d'Arno"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2014",
+    "into": "IT_048053",
+    "name": "Scarperia e San Piero",
+    "from": [
+     "IT_048042",
+     "IT_048040"
+    ],
+    "names": [
+     "Scarperia",
+     "San Piero a Sieve"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2014",
+    "into": "IT_050040",
+    "name": "Casciana Terme Lari",
+    "from": [
+     "IT_050007",
+     "IT_050017"
+    ],
+    "names": [
+     "Casciana Terme",
+     "Lari"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2014",
+    "into": "IT_050041",
+    "name": "Crespina Lorenzana",
+    "from": [
+     "IT_050013",
+     "IT_050018"
+    ],
+    "names": [
+     "Crespina",
+     "Lorenzana"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2014",
+    "into": "IT_051040",
+    "name": "Castelfranco Piandiscò",
+    "from": [
+     "IT_051009",
+     "IT_051029"
+    ],
+    "names": [
+     "Castelfranco di Sopra",
+     "Pian di Scò"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2014",
+    "into": "IT_051041",
+    "name": "Pratovecchio Stia",
+    "from": [
+     "IT_051032",
+     "IT_051036"
+    ],
+    "names": [
+     "Pratovecchio",
+     "Stia"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2014",
+    "into": "IT_064121",
+    "name": "Montoro",
+    "from": [
+     "IT_064061",
+     "IT_064062"
+    ],
+    "names": [
+     "Montoro Inferiore",
+     "Montoro Superiore"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2014",
+    "into": "IT_099028",
+    "name": "Poggio Torriana",
+    "from": [
+     "IT_099012",
+     "IT_099019"
+    ],
+    "names": [
+     "Poggio Berni",
+     "Torriana"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "IT_012142",
+    "name": "Maccagno con Pino e Veddasca",
+    "from": [
+     "IT_012094",
+     "IT_012112",
+     "IT_012135"
+    ],
+    "names": [
+     "Maccagno",
+     "Pino sulla Sponda del Lago Maggiore",
+     "Veddasca"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "IT_013250",
+    "name": "Bellagio",
+    "from": [
+     "IT_013019",
+     "IT_013070"
+    ],
+    "names": [
+     "Bellagio",
+     "Civenna"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "IT_013251",
+    "name": "Colverde",
+    "from": [
+     "IT_013093",
+     "IT_013175",
+     "IT_013109"
+    ],
+    "names": [
+     "Drezzo",
+     "Parè",
+     "Gironico"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "IT_013252",
+    "name": "Tremezzina",
+    "from": [
+     "IT_013125",
+     "IT_013172",
+     "IT_013225",
+     "IT_013148"
+    ],
+    "names": [
+     "Lenno",
+     "Ossuccio",
+     "Tremezzo",
+     "Mezzegra"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "IT_016252",
+    "name": "Sant'Omobono Terme",
+    "from": [
+     "IT_016192",
+     "IT_016228"
+    ],
+    "names": [
+     "Sant'Omobono Terme",
+     "Valsecca"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "IT_016253",
+    "name": "Val Brembilla",
+    "from": [
+     "IT_016039",
+     "IT_016112"
+    ],
+    "names": [
+     "Brembilla",
+     "Gerosa"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "IT_018191",
+    "name": "Cornale e Bastida",
+    "from": [
+     "IT_018055",
+     "IT_018010"
+    ],
+    "names": [
+     "Cornale",
+     "Bastida de' Dossi"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "IT_020071",
+    "name": "Borgo Virgilio",
+    "from": [
+     "IT_020069",
+     "IT_020005"
+    ],
+    "names": [
+     "Virgilio",
+     "Borgoforte"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "IT_022230",
+    "name": "Predaia",
+    "from": [
+     "IT_022067",
+     "IT_022175",
+     "IT_022186",
+     "IT_022206",
+     "IT_022214"
+    ],
+    "names": [
+     "Coredo",
+     "Smarano",
+     "Taio",
+     "Tres",
+     "Vervò"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "IT_022231",
+    "name": "San Lorenzo Dorsino",
+    "from": [
+     "IT_022077",
+     "IT_022166"
+    ],
+    "names": [
+     "Dorsino",
+     "San Lorenzo in Banale"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "IT_022232",
+    "name": "Valdaone",
+    "from": [
+     "IT_022012",
+     "IT_022072",
+     "IT_022146"
+    ],
+    "names": [
+     "Bersone",
+     "Daone",
+     "Praso"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "IT_025071",
+    "name": "Longarone",
+    "from": [
+     "IT_025031",
+     "IT_025009"
+    ],
+    "names": [
+     "Longarone",
+     "Castellavazzo"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "IT_046037",
+    "name": "Sillano Giuncugnano",
+    "from": [
+     "IT_046016",
+     "IT_046029"
+    ],
+    "names": [
+     "Giuncugnano",
+     "Sillano"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "IT_093053",
+    "name": "Valvasone Arzene",
+    "from": [
+     "IT_093003",
+     "IT_093048"
+    ],
+    "names": [
+     "Arzene",
+     "Valvasone"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2015",
+    "into": "IT_097091",
+    "name": "Verderio",
+    "from": [
+     "IT_097087",
+     "IT_097088"
+    ],
+    "names": [
+     "Verderio Inferiore",
+     "Verderio Superiore"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_014032",
+    "name": "Gordona",
+    "from": [
+     "IT_014032",
+     "IT_014042"
+    ],
+    "names": [
+     "Gordona",
+     "Menarola"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_018192",
+    "name": "Corteolona e Genzone",
+    "from": [
+     "IT_018056",
+     "IT_018070"
+    ],
+    "names": [
+     "Corteolona",
+     "Genzone"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_022233",
+    "name": "Dimaro Folgarida",
+    "from": [
+     "IT_022075",
+     "IT_022121"
+    ],
+    "names": [
+     "Dimaro",
+     "Monclassico"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_022234",
+    "name": "Pieve di Bono-Prezzo",
+    "from": [
+     "IT_022140",
+     "IT_022149"
+    ],
+    "names": [
+     "Pieve di Bono",
+     "Prezzo"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_022235",
+    "name": "Altavalle",
+    "from": [
+     "IT_022082",
+     "IT_022094",
+     "IT_022096",
+     "IT_022208"
+    ],
+    "names": [
+     "Faver",
+     "Grauno",
+     "Grumes",
+     "Valda"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_022236",
+    "name": "Altopiano della Vigolana",
+    "from": [
+     "IT_022023",
+     "IT_022056",
+     "IT_022212",
+     "IT_022219"
+    ],
+    "names": [
+     "Bosentino",
+     "Centa San Nicolò",
+     "Vattaro",
+     "Vigolo Vattaro"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_022237",
+    "name": "Amblar-Don",
+    "from": [
+     "IT_022004",
+     "IT_022076"
+    ],
+    "names": [
+     "Amblar",
+     "Don"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_022238",
+    "name": "Borgo Chiese",
+    "from": [
+     "IT_022028",
+     "IT_022057",
+     "IT_022066"
+    ],
+    "names": [
+     "Brione",
+     "Cimego",
+     "Condino"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_022239",
+    "name": "Borgo Lares",
+    "from": [
+     "IT_022019",
+     "IT_022227"
+    ],
+    "names": [
+     "Bolbeno",
+     "Zuclo"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_022240",
+    "name": "Castel Ivano",
+    "from": [
+     "IT_022178",
+     "IT_022185",
+     "IT_022221"
+    ],
+    "names": [
+     "Spera",
+     "Strigno",
+     "Villa Agnedo"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_022241",
+    "name": "Cembra Lisignago",
+    "from": [
+     "IT_022055",
+     "IT_022105"
+    ],
+    "names": [
+     "Cembra",
+     "Lisignago"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_022242",
+    "name": "Contà",
+    "from": [
+     "IT_022069",
+     "IT_022086",
+     "IT_022194"
+    ],
+    "names": [
+     "Cunevo",
+     "Flavon",
+     "Terres"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_022243",
+    "name": "Madruzzo",
+    "from": [
+     "IT_022031",
+     "IT_022101"
+    ],
+    "names": [
+     "Calavino",
+     "Lasino"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_022244",
+    "name": "Porte di Rendena",
+    "from": [
+     "IT_022073",
+     "IT_022220",
+     "IT_022223"
+    ],
+    "names": [
+     "Darè",
+     "Vigo Rendena",
+     "Villa Rendena"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_022245",
+    "name": "Primiero San Martino di Castrozza",
+    "from": [
+     "IT_022084",
+     "IT_022201",
+     "IT_022204",
+     "IT_022174"
+    ],
+    "names": [
+     "Fiera di Primiero",
+     "Tonadico",
+     "Transacqua",
+     "Siror"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_022246",
+    "name": "Sella Giudicarie",
+    "from": [
+     "IT_022020",
+     "IT_022024",
+     "IT_022100",
+     "IT_022158"
+    ],
+    "names": [
+     "Bondo",
+     "Breguzzo",
+     "Lardaro",
+     "Roncone"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_022247",
+    "name": "Tre Ville",
+    "from": [
+     "IT_022148",
+     "IT_022151",
+     "IT_022122"
+    ],
+    "names": [
+     "Preore",
+     "Ragoli",
+     "Montagne"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_022248",
+    "name": "Vallelaghi",
+    "from": [
+     "IT_022132",
+     "IT_022192",
+     "IT_022215"
+    ],
+    "names": [
+     "Padergnone",
+     "Terlago",
+     "Vezzano"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_022249",
+    "name": "Ville d’Anaunia",
+    "from": [
+     "IT_022125",
+     "IT_022187",
+     "IT_022207"
+    ],
+    "names": [
+     "Nanno",
+     "Tassullo",
+     "Tuenno"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_034050",
+    "name": "Polesine Zibello",
+    "from": [
+     "IT_034029",
+     "IT_034048"
+    ],
+    "names": [
+     "Polesine Parmense",
+     "Zibello"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_035046",
+    "name": "Ventasso",
+    "from": [
+     "IT_035007",
+     "IT_035019",
+     "IT_035025",
+     "IT_035031"
+    ],
+    "names": [
+     "Busana",
+     "Collagna",
+     "Ligonchio",
+     "Ramiseto"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_037062",
+    "name": "Alto Reno Terme",
+    "from": [
+     "IT_037029",
+     "IT_037049"
+    ],
+    "names": [
+     "Granaglione",
+     "Porretta Terme"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_096085",
+    "name": "Lessona",
+    "from": [
+     "IT_096022",
+     "IT_096029"
+    ],
+    "names": [
+     "Crosa",
+     "Lessona"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_096086",
+    "name": "Campiglia Cervo",
+    "from": [
+     "IT_096011",
+     "IT_096052",
+     "IT_096060"
+    ],
+    "names": [
+     "Campiglia Cervo",
+     "Quittengo",
+     "San Paolo Cervo"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_097092",
+    "name": "La Valletta Brianza",
+    "from": [
+     "IT_097066",
+     "IT_097073"
+    ],
+    "names": [
+     "Perego",
+     "Rovagnate"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_099029",
+    "name": "Montescudo-Montecolombo",
+    "from": [
+     "IT_099007",
+     "IT_099010"
+    ],
+    "names": [
+     "Monte Colombo",
+     "Montescudo"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "IT_103078",
+    "name": "Borgomezzavalle",
+    "from": [
+     "IT_103063",
+     "IT_103073"
+    ],
+    "names": [
+     "Seppiana",
+     "Viganella"
+    ],
+    "rename": false
+   },
+   {
     "year": "2017",
     "into": "IT_013206",
     "name": "San Fermo della Battaglia",
@@ -12568,6 +19204,220 @@
      "Westvoorne"
     ],
     "rename": false
+   }
+  ]
+ },
+ "belgium": {
+  "mergers": [
+   {
+    "year": "2019",
+    "into": "BE_12041",
+    "name": "Puurs-Sint-Amands",
+    "from": [
+     "BE_12030",
+     "BE_12034"
+    ],
+    "names": [
+     "Puurs",
+     "Sint-Amands"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2019",
+    "into": "BE_44083",
+    "name": "Deinze",
+    "from": [
+     "BE_44011",
+     "BE_44049"
+    ],
+    "names": [
+     "Deinze",
+     "Nevele"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2019",
+    "into": "BE_44084",
+    "name": "Aalter",
+    "from": [
+     "BE_44001",
+     "BE_44029"
+    ],
+    "names": [
+     "Aalter",
+     "Knesselare"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2019",
+    "into": "BE_44085",
+    "name": "Lievegem",
+    "from": [
+     "BE_44036",
+     "BE_44072",
+     "BE_44080"
+    ],
+    "names": [
+     "Lovendegem",
+     "Waarschoot",
+     "Zomergem"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2019",
+    "into": "BE_45068",
+    "name": "Kruisem",
+    "from": [
+     "BE_45017",
+     "BE_45057"
+    ],
+    "names": [
+     "Kruishoutem",
+     "Zingem"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2019",
+    "into": "BE_72042",
+    "name": "Oudsbergen",
+    "from": [
+     "BE_72040",
+     "BE_71047"
+    ],
+    "names": [
+     "Meeuwen-Gruitrode",
+     "Opglabbeek"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2019",
+    "into": "BE_72043",
+    "name": "Pelt",
+    "from": [
+     "BE_72025",
+     "BE_72029"
+    ],
+    "names": [
+     "Neerpelt",
+     "Overpelt"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2019",
+    "into": "BE_51067",
+    "name": "",
+    "from": [
+     "BE_55010"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2019",
+    "into": "BE_51068",
+    "name": "",
+    "from": [
+     "BE_55039"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2019",
+    "into": "BE_51069",
+    "name": "",
+    "from": [
+     "BE_55023"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2019",
+    "into": "BE_55085",
+    "name": "",
+    "from": [
+     "BE_52063"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2019",
+    "into": "BE_55086",
+    "name": "",
+    "from": [
+     "BE_52043"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2019",
+    "into": "BE_57096",
+    "name": "",
+    "from": [
+     "BE_54007"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2019",
+    "into": "BE_57097",
+    "name": "",
+    "from": [
+     "BE_54010"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2019",
+    "into": "BE_58001",
+    "name": "",
+    "from": [
+     "BE_55022"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2019",
+    "into": "BE_58002",
+    "name": "",
+    "from": [
+     "BE_56011"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2019",
+    "into": "BE_58003",
+    "name": "",
+    "from": [
+     "BE_56085"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2019",
+    "into": "BE_58004",
+    "name": "",
+    "from": [
+     "BE_56087"
+    ],
+    "names": [],
+    "rename": true
    }
   ]
  }
