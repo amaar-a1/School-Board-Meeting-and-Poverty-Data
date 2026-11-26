@@ -24,6 +24,8 @@ Sources:
   consistent with the 2018 census, to the current year.
 - Mexico: CONAPO, "Reconstrucción y proyecciones de la población de los municipios de México 1990-2040" (2024):
   mid-year population, reconstructed for 1990-2020 and projected from 2021, to the current year (fetch round 55).
+- South Africa: the 2011 and 2022 censuses by municipality, on the 2022 boundaries (Stats SA, Census 2022: Provinces
+  at a Glance).
 - Sri Lanka: the 1981, 2001, 2012 and 2024 censuses by district (DCS, 2024 census final report; no 2001 figure for the
   Northern and Eastern districts, where that census wasn't completed).
 - Philippines: the 2015 census by barangay (PSA, via HDX), added up by city and municipality, and PSA's 2021 figure.
@@ -208,6 +210,11 @@ def prep(raw):
             p21 = float(r.get("Population") or 0)
             if v and p21: out[i] = {"2015": round(v), "2021": round(p21)}
         res["philippines"] = out
+    # South Africa: the municipalities at the 2011 and 2022 censuses, on the 2022 boundaries (Stats SA, Census 2022:
+    # Provinces at a Glance)
+    zf = os.path.join(IN, "south_africa", "za_census_municipalities_2011_2022.json")
+    if os.path.exists(zf):
+        res["south_africa"] = {i: {"2011": v["2011"], "2022": v["2022"]} for i, v in json.load(open(zf, encoding="utf-8"))["municipalities"].items()}
     # Sri Lanka: the districts at the 1981, 2001, 2012 and 2024 censuses (DCS, 2024 census final report)
     lf = os.path.join(IN, "sri_lanka", "lka_census_district.json")
     if os.path.exists(lf):

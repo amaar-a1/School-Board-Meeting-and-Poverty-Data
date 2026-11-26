@@ -78,7 +78,7 @@
       const ys = Object.keys(line).sort();
       if (ys.length) row[m.col] = ys.map((y) => `${y}: ${line[y]}${m.unit === "%" ? "%" : ""}`).join("; ");
     });
-    AGG.set(e, row);
+    if (!H || !H.areaLoaded || H.areaLoaded()) AGG.set(e, row);   // not kept until the national and regional figures have loaded
     return row;
   }
   const rowOf = (e) => (e.area ? aggregate(e) : e.row);

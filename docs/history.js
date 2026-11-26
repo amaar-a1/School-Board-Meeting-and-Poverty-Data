@@ -167,6 +167,7 @@
   fetch("data/area_history.json").then((r) => (r.ok ? r.json() : {})).catch(() => ({})).then((j) => {
     AREA = j || {};
     if (lastTrend) renderTrends(...lastTrend);
+    if (window.SiteCompare && window.SiteCompare.render) window.SiteCompare.render();   // a country or region compared before these loaded
   });
   const areaPts = (country, region, col) => ((AREA && AREA[country] && AREA[country][region || ""]) || {})[col] || {};
   const hasArea = (country, col) => !!(AREA && AREA[country] && Object.values(AREA[country]).some((e) => e[col]));
@@ -250,7 +251,7 @@
       const l = s.line, base = labels.find((y) => l[y] > 0), color = s.place ? accent2 : many ? PALETTE[i] : accent;
       return { label: g, borderColor: color, backgroundColor: color, borderDash: s.early ? [2, 3] : s.place ? [6, 4] : undefined,
         data: labels.map((y) => (l[y] == null ? null : idx ? (base ? +(100 * l[y] / l[base]).toFixed(1) : null) : l[y])) };
-    }), idx ? `${m.axis}, first year = 100` : perPlace ? "Meetings recorded (per place)" : m.kind === "sum" ? `${m.axis} (all ${label})` : m.kind === "count" ? `${m.axis} (all ${label})` : m.axis,
+    }), idx ? `${m.axis}, first year = 100` : perPlace ? "Meetings recorded (per place)" : (m.kind === "sum" || m.kind === "count") && lines.some(([, x]) => !x.place && x.n) ? `${m.axis} (all ${label})` : m.axis,
       { unit: idx ? "" : m.unit, raw: idx ? raw : null, zero: m.kind !== "count", marks: hasPlace ? splitsOf(place) : [] });
     const n = lines.filter(([, s]) => !s.place).reduce((t, [, s]) => t + (s.n || 0), 0);
     const parts = [];
@@ -347,5 +348,5 @@
       (merged ? ` Before a merger the line adds up the former places, so the whole line is on today's borders.` : "");
   }
 
-  window.SiteHistory = { MEASURES, parse, seriesOf, linked, areaPts, addArea, renderTrends, renderPlaces, trend };
+  window.SiteHistory = { MEASURES, parse, seriesOf, linked, areaPts, addArea, areaLoaded: () => AREA !== null, renderTrends, renderPlaces, trend };
 })();
