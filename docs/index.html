@@ -490,6 +490,7 @@
 
   <footer class="wrap muted"><p id="footer">Poverty figures are for children ages 5–17.</p><p id="site-created">Site created October 26, 2026.</p>
     <details id="terms"><summary>Terms of use</summary>
+      <p><b>By using this site, you agree to these terms of use.</b></p>
       <p>This is a non-commercial educational project. It gathers figures published by others, for information only.</p>
       <p>The data belong to their original publishers, and each source has its own terms and licence (see the Sources tab). Before you copy, republish or otherwise use any data from this site, check the terms of the original source and follow them: some allow only non-commercial use, and most ask you to credit them.</p>
       <p>The figures may contain errors, estimates and stand-ins, and may be out of date. They are provided as they are, without any guarantee.</p>
@@ -498,6 +499,19 @@
       <p>These terms may change at any time.</p>
     </details>
   </footer>
+
+  <!-- Shown on a first visit (and after the terms change): the terms, to be agreed to before using the site (terms.js). -->
+  <dialog id="terms-gate" aria-labelledby="terms-gate-title">
+    <div class="terms-gate-lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" lang="en">English</button>
+      <button type="button" data-lang="fr" lang="fr">Français</button>
+      <button type="button" data-lang="es" lang="es">Español</button>
+    </div>
+    <h2 id="terms-gate-title">Terms of use</h2>
+    <p>Please read and agree to the terms of use to continue.</p>
+    <div class="terms-gate-body"></div>
+    <button type="button" id="terms-gate-agree" class="terms-gate-agree">I agree</button>
+  </dialog>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
@@ -515,5 +529,6 @@
   <script src="search.js"></script>
   <script src="compare.js"></script>
   <script src="i18n.js"></script>
+  <script src="terms.js"></script>
 </body>
 </html>
