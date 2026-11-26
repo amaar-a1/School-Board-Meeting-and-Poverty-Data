@@ -930,7 +930,8 @@ def peru():
         f = geo.get(code); area = area_km2(f["geometry"]) if f else 0
         dens = d["pop"] / area if area and d["pop"] else 0
         did = f"PE-{code}"
-        py = {y: v["pupils"][code] for y, v in ph.items() if v.get("pupils", {}).get(code)}
+        # The 2017 padrón still codes Andrés Avelino Cáceres's schools to Ayacucho district, so 2017 is left out for both.
+        py = {y: v["pupils"][code] for y, v in ph.items() if v.get("pupils", {}).get(code) and not (y == "2017" and code in ("050101", "050116"))}
         pub = {y: 100 * ph[y]["pupils_public"].get(code, 0) / n for y, n in py.items() if ph[y].get("pupils_public")}
         rows.append({**history_cols({"pupil_years": py, "public_years": pub}), "District": d["name"], "Region": PE_DEPT[code[:2]], "Province": prov.get(code[:4], ""), "Population": d["pop"],
                      "Poverty rate (all ages)": f"{(d['lo'] + d['hi']) / 2:.2f}%", "Poverty range": f"{d['lo']:.1f}–{d['hi']:.1f}%",
