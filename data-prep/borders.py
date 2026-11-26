@@ -95,7 +95,7 @@ def merge_back(series, mergers):
             series[new] = out
             if m.get("rename") and parts[0] in texts:   # the same place under a new code keeps its earlier changes
                 texts[new] = texts.pop(parts[0]) + texts.get(new, [])
-            if not m.get("rename"):
+            if not m.get("rename") and any(have_at.get(y) for y in out):   # only where the former places were added up
                 texts.setdefault(new, []).append(f"{F}: {both(sorted(m.get('names') or parts, key=skey))} merged into {m.get('name') or new}")
     return texts
 

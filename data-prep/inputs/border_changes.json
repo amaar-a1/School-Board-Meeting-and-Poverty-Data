@@ -19420,5 +19420,447 @@
     "rename": true
    }
   ]
+ },
+ "germany": {
+  "mergers": [
+   {
+    "year": "2007",
+    "into": "DEE07",
+    "name": "Börde",
+    "from": [
+     "DEE33",
+     "DEE36"
+    ],
+    "names": [
+     "Bördekreis",
+     "Ohrekreis"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2007",
+    "into": "DEE08",
+    "name": "Burgenlandkreis",
+    "from": [
+     "DEE22",
+     "DEE27"
+    ],
+    "names": [
+     "Burgenlandkreis",
+     "Weißenfels"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2007",
+    "into": "DEE0A",
+    "name": "Mansfeld-Südharz",
+    "from": [
+     "DEE23",
+     "DEE26"
+    ],
+    "names": [
+     "Mansfelder Land",
+     "Sangerhausen"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2007",
+    "into": "DEE0B",
+    "name": "Saalekreis",
+    "from": [
+     "DEE24",
+     "DEE25"
+    ],
+    "names": [
+     "Merseburg-Querfurt",
+     "Saalkreis"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2008",
+    "into": "DED2C",
+    "name": "Bautzen",
+    "from": [
+     "DED23",
+     "DED24",
+     "DED2B"
+    ],
+    "names": [
+     "Hoyerswerda",
+     "Bautzen",
+     "Kamenz"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2008",
+    "into": "DED2D",
+    "name": "Görlitz",
+    "from": [
+     "DED22",
+     "DED26",
+     "DED28"
+    ],
+    "names": [
+     "Görlitz (city)",
+     "Niederschlesischer Oberlausitzkreis",
+     "Löbau-Zittau"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2008",
+    "into": "DED2E",
+    "name": "Meißen",
+    "from": [
+     "DED25",
+     "DED27"
+    ],
+    "names": [
+     "Meißen",
+     "Riesa-Großenhain"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2008",
+    "into": "DED2F",
+    "name": "Sächsische Schweiz-Osterzgebirge",
+    "from": [
+     "DED29",
+     "DED2A"
+    ],
+    "names": [
+     "Sächsische Schweiz",
+     "Weißeritzkreis"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2008",
+    "into": "DED42",
+    "name": "Erzgebirgskreis",
+    "from": [
+     "DED14",
+     "DED18",
+     "DED1A",
+     "DED1B"
+    ],
+    "names": [
+     "Annaberg",
+     "Mittlerer Erzgebirgskreis",
+     "Stollberg",
+     "Aue-Schwarzenberg"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2008",
+    "into": "DED43",
+    "name": "Mittelsachsen",
+    "from": [
+     "DED16",
+     "DED19",
+     "DED33"
+    ],
+    "names": [
+     "Freiberg",
+     "Mittweida",
+     "Döbeln"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2008",
+    "into": "DED44",
+    "name": "Vogtlandkreis",
+    "from": [
+     "DED12",
+     "DED17"
+    ],
+    "names": [
+     "Plauen",
+     "Vogtlandkreis"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2008",
+    "into": "DED45",
+    "name": "Zwickau",
+    "from": [
+     "DED13",
+     "DED15",
+     "DED1C"
+    ],
+    "names": [
+     "Zwickau (city)",
+     "Chemnitzer Land",
+     "Zwickauer Land"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2008",
+    "into": "DED52",
+    "name": "Leipzig",
+    "from": [
+     "DED34",
+     "DED35"
+    ],
+    "names": [
+     "Leipziger Land",
+     "Muldentalkreis"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2008",
+    "into": "DED53",
+    "name": "Nordsachsen",
+    "from": [
+     "DED32",
+     "DED36"
+    ],
+    "names": [
+     "Delitzsch",
+     "Torgau-Oschatz"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2009",
+    "into": "DEA2D",
+    "name": "Städteregion Aachen",
+    "from": [
+     "DEA21",
+     "DEA25"
+    ],
+    "names": [
+     "Aachen (city)",
+     "Aachen (district)"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2011",
+    "into": "DE80K",
+    "name": "Landkreis Rostock",
+    "from": [
+     "DE807",
+     "DE809"
+    ],
+    "names": [
+     "Bad Doberan",
+     "Güstrow"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2011",
+    "into": "DE80L",
+    "name": "Vorpommern-Rügen",
+    "from": [
+     "DE805",
+     "DE80D",
+     "DE80H"
+    ],
+    "names": [
+     "Stralsund",
+     "Nordvorpommern",
+     "Rügen"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2011",
+    "into": "DE80M",
+    "name": "Nordwestmecklenburg",
+    "from": [
+     "DE806",
+     "DE80E"
+    ],
+    "names": [
+     "Wismar",
+     "Nordwestmecklenburg"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2011",
+    "into": "DE80O",
+    "name": "Ludwigslust-Parchim",
+    "from": [
+     "DE80A",
+     "DE80G"
+    ],
+    "names": [
+     "Ludwigslust",
+     "Parchim"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2016",
+    "into": "DE91C",
+    "name": "Göttingen",
+    "from": [
+     "DE915",
+     "DE919"
+    ],
+    "names": [
+     "Göttingen",
+     "Osterode am Harz"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2021",
+    "into": "DEG0R",
+    "name": "Wartburgkreis",
+    "from": [
+     "DEG0N",
+     "DEG0P"
+    ],
+    "names": [
+     "Eisenach",
+     "Wartburgkreis"
+    ],
+    "rename": false
+   },
+   {
+    "year": "2007",
+    "into": "DEE02",
+    "name": "",
+    "from": [
+     "DEE21"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2007",
+    "into": "DEE03",
+    "name": "",
+    "from": [
+     "DEE31"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2007",
+    "into": "DEE04",
+    "name": "",
+    "from": [
+     "DEE3B"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2007",
+    "into": "DEE0D",
+    "name": "",
+    "from": [
+     "DEE37"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2008",
+    "into": "DED41",
+    "name": "",
+    "from": [
+     "DED11"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2008",
+    "into": "DED51",
+    "name": "",
+    "from": [
+     "DED31"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2016",
+    "into": "DEB1C",
+    "name": "",
+    "from": [
+     "DEB16"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2016",
+    "into": "DEB1D",
+    "name": "",
+    "from": [
+     "DEB19"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2014",
+    "into": "DEG0Q",
+    "name": "",
+    "from": [
+     "DEG0B"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2014",
+    "into": "DEG0S",
+    "name": "",
+    "from": [
+     "DEG04"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2014",
+    "into": "DEG0T",
+    "name": "",
+    "from": [
+     "DEG0F"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2014",
+    "into": "DEG0U",
+    "name": "",
+    "from": [
+     "DEG0I"
+    ],
+    "names": [],
+    "rename": true
+   },
+   {
+    "year": "2014",
+    "into": "DEG0V",
+    "name": "",
+    "from": [
+     "DEG0H"
+    ],
+    "names": [],
+    "rename": true
+   }
+  ]
  }
 }

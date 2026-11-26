@@ -4,6 +4,7 @@
   python3 data-prep/prep_border_changes.py italy  Variazioni_amministrative_territoriali_dal_01011991.xlsx
   python3 data-prep/prep_border_changes.py netherlands DIR_WITH_nl_YYYY.html
   python3 data-prep/prep_border_changes.py belgium -        (the 2019 list is written out below)
+  python3 data-prep/prep_border_changes.py germany -        (likewise, from Eurostat's NUTS tables)
 
 - France: INSEE, Code officiel géographique, "mouvements des communes" (fetch round 56): mergers (MOD 31-33: fusion
   simple, création de commune nouvelle, fusion-association), each former commune to the commune it joined; and code
@@ -127,9 +128,46 @@ def belgium(_):
     return out
 
 
+# Germany's districts (NUTS 3), from Eurostat's NUTS correspondence tables (fetch round 61: 2003-2006, 2006-2010,
+# 2010-2013, 2013-2016), where a new district is wholly made of former ones ("DED2C = DED23 + DED24 + DED2B"), and
+# code changes; and Thuringia's 2024 renumbering (with Eisenach joining Wartburgkreis in 2021), whose new codes
+# Eurostat gives from 2014 and which match the old ones exactly. Districts redrawn from parts of others
+# (most of Saxony-Anhalt's 2007 reform, Mecklenburg Lake District and Vorpommern-Greifswald) aren't added up.
+DE = [("2007", "DEE07", "Börde", [("DEE33", "Bördekreis"), ("DEE36", "Ohrekreis")]),
+      ("2007", "DEE08", "Burgenlandkreis", [("DEE22", "Burgenlandkreis"), ("DEE27", "Weißenfels")]),
+      ("2007", "DEE0A", "Mansfeld-Südharz", [("DEE23", "Mansfelder Land"), ("DEE26", "Sangerhausen")]),
+      ("2007", "DEE0B", "Saalekreis", [("DEE24", "Merseburg-Querfurt"), ("DEE25", "Saalkreis")]),
+      ("2008", "DED2C", "Bautzen", [("DED23", "Hoyerswerda"), ("DED24", "Bautzen"), ("DED2B", "Kamenz")]),
+      ("2008", "DED2D", "Görlitz", [("DED22", "Görlitz (city)"), ("DED26", "Niederschlesischer Oberlausitzkreis"), ("DED28", "Löbau-Zittau")]),
+      ("2008", "DED2E", "Meißen", [("DED25", "Meißen"), ("DED27", "Riesa-Großenhain")]),
+      ("2008", "DED2F", "Sächsische Schweiz-Osterzgebirge", [("DED29", "Sächsische Schweiz"), ("DED2A", "Weißeritzkreis")]),
+      ("2008", "DED42", "Erzgebirgskreis", [("DED14", "Annaberg"), ("DED18", "Mittlerer Erzgebirgskreis"), ("DED1A", "Stollberg"), ("DED1B", "Aue-Schwarzenberg")]),
+      ("2008", "DED43", "Mittelsachsen", [("DED16", "Freiberg"), ("DED19", "Mittweida"), ("DED33", "Döbeln")]),
+      ("2008", "DED44", "Vogtlandkreis", [("DED12", "Plauen"), ("DED17", "Vogtlandkreis")]),
+      ("2008", "DED45", "Zwickau", [("DED13", "Zwickau (city)"), ("DED15", "Chemnitzer Land"), ("DED1C", "Zwickauer Land")]),
+      ("2008", "DED52", "Leipzig", [("DED34", "Leipziger Land"), ("DED35", "Muldentalkreis")]),
+      ("2008", "DED53", "Nordsachsen", [("DED32", "Delitzsch"), ("DED36", "Torgau-Oschatz")]),
+      ("2009", "DEA2D", "Städteregion Aachen", [("DEA21", "Aachen (city)"), ("DEA25", "Aachen (district)")]),
+      ("2011", "DE80K", "Landkreis Rostock", [("DE807", "Bad Doberan"), ("DE809", "Güstrow")]),
+      ("2011", "DE80L", "Vorpommern-Rügen", [("DE805", "Stralsund"), ("DE80D", "Nordvorpommern"), ("DE80H", "Rügen")]),
+      ("2011", "DE80M", "Nordwestmecklenburg", [("DE806", "Wismar"), ("DE80E", "Nordwestmecklenburg")]),
+      ("2011", "DE80O", "Ludwigslust-Parchim", [("DE80A", "Ludwigslust"), ("DE80G", "Parchim")]),
+      ("2016", "DE91C", "Göttingen", [("DE915", "Göttingen"), ("DE919", "Osterode am Harz")]),
+      ("2021", "DEG0R", "Wartburgkreis", [("DEG0N", "Eisenach"), ("DEG0P", "Wartburgkreis")])]
+DE_RENUMBERED = [("2007", "DEE02", "DEE21"), ("2007", "DEE03", "DEE31"), ("2007", "DEE04", "DEE3B"), ("2007", "DEE0D", "DEE37"),
+                 ("2008", "DED41", "DED11"), ("2008", "DED51", "DED31"), ("2016", "DEB1C", "DEB16"), ("2016", "DEB1D", "DEB19"),
+                 ("2014", "DEG0Q", "DEG0B"), ("2014", "DEG0S", "DEG04"), ("2014", "DEG0T", "DEG0F"), ("2014", "DEG0U", "DEG0I"), ("2014", "DEG0V", "DEG0H")]
+
+
+def germany(_):
+    out = [{"year": y, "into": new, "name": name, "from": [c for c, _ in parts], "names": [n for _, n in parts], "rename": False} for y, new, name, parts in DE]
+    out += [{"year": y, "into": new, "name": "", "from": [old], "names": [], "rename": True} for y, new, old in DE_RENUMBERED]
+    return out
+
+
 def main(country, path):
     d = json.load(open(OUT, encoding="utf-8")) if os.path.exists(OUT) else {}
-    d.setdefault(country, {})["mergers"] = {"france": france, "italy": italy, "netherlands": netherlands, "belgium": belgium}[country](path)
+    d.setdefault(country, {})["mergers"] = {"france": france, "italy": italy, "netherlands": netherlands, "belgium": belgium, "germany": germany}[country](path)
     json.dump(d, open(OUT, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     m = d[country]["mergers"]
     print(country, len(m), "changes;", sum(1 for g in m if not g["rename"]), "mergers of", sum(len(g["from"]) for g in m if not g["rename"]), "places")

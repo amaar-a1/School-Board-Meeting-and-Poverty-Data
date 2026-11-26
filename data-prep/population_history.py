@@ -105,6 +105,8 @@ def prep(raw):
     gi, ti = d["dimension"]["geo"]["category"]["index"], d["dimension"]["time"]["category"]["index"]
     val = lambda g, t: d["value"].get(str(gi[g] * len(ti) + ti[t]))
     nuts = {g: {t: int(val(g, t)) for t in ti if val(g, t) is not None} for g in gi}
+    # Germany's district reforms (borders.py): the former districts added up for the years before
+    mtexts["germany"] = {"DE-" + g: tx for g, tx in borders.merge_back(nuts, bc.get("germany", {}).get("mergers", [])).items()}
     res["germany"] = {i: nuts[i.split("-", 1)[1]] for i in ids("germany") if len(nuts.get(i.split("-", 1)[1], {})) > 1}
     res["switzerland"] = {i: nuts[CH[i.split("-", 1)[1]]] for i in ids("switzerland") if CH.get(i.split("-", 1)[1]) in nuts}
     # UK: the local authority files (two boundary sets; the later one wins)
@@ -260,7 +262,7 @@ def apply():
             if x:
                 if x.get("together"): r["Earlier borders"] = r.get("Earlier borders") or x["together"]
                 r[borders.COL] = borders.add_texts(r.get(borders.COL) if name in borders.BUILD_WRITES else "", x["changes"])
-            elif b and name not in borders.BUILD_WRITES: r[borders.COL] = ""
+            elif name not in borders.BUILD_WRITES and borders.COL in f: r[borders.COL] = ""   # none any more
         nl = "\r\n" if "\r\n" in text[:5000] else "\n"
         with open(p, "w", encoding="utf-8", newline="") as fo:
             w = csv.DictWriter(fo, fieldnames=f, lineterminator=nl); w.writeheader(); w.writerows(rows)
