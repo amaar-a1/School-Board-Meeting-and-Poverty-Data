@@ -28,6 +28,8 @@ Sources:
   at a Glance).
 - Sri Lanka: the 1981, 2001, 2012 and 2024 censuses by district (DCS, 2024 census final report; no 2001 figure for the
   Northern and Eastern districts, where that census wasn't completed).
+- Peru: the 2017 census count by district (INEI, Resultados definitivos, Tomo 1, uploaded by the project's owner),
+  with the site's 2018 figure.
 - Philippines: the 2015 census by barangay (PSA, via HDX), added up by city and municipality, and PSA's 2021 figure.
 - Brazil: IBGE's population estimates by municipality for 1 July, 2001-2025 (SIDRA table 6579; none for the census
   years 2007, 2010 and 2022).
@@ -215,6 +217,12 @@ def prep(raw):
     zf = os.path.join(IN, "south_africa", "za_census_municipalities_2011_2022.json")
     if os.path.exists(zf):
         res["south_africa"] = {i: {"2011": v["2011"], "2022": v["2022"]} for i, v in json.load(open(zf, encoding="utf-8"))["municipalities"].items()}
+    # Peru: the 2017 census count by district (INEI, Resultados definitivos, Tomo 1), and the site's 2018 figure
+    pf17 = os.path.join(IN, "peru", "pe_census2017_districts.json")
+    if os.path.exists(pf17):
+        d17 = json.load(open(pf17, encoding="utf-8"))["districts"]
+        res["peru"] = {r["District ID"]: {"2017": d17[r["District ID"]]["2017"], "2018": round(float(r["Population"]))}
+                       for r in csv.DictReader(open(os.path.join(DOCS, "peru.csv"), encoding="utf-8")) if r["District ID"] in d17 and r.get("Population")}
     # Sri Lanka: the districts at the 1981, 2001, 2012 and 2024 censuses (DCS, 2024 census final report)
     lf = os.path.join(IN, "sri_lanka", "lka_census_district.json")
     if os.path.exists(lf):
@@ -286,14 +294,19 @@ def drop_years(name, by):
 
 
 # Countries with one population figure: the year it is for, so it shows as one point on the line over time (a
-# function of the row where it varies). Left out where the year isn't certain.
+# function of the row where it varies), for places without a series. Left out where the year isn't certain.
 SINGLE_YEAR = {"ecuador": "2010",      # 2010 census (INEC)
                "kenya": "2019",        # 2019 census
                "uruguay": "2025",      # INE projection for 30 June 2025
-               "peru": "2018",         # INEI's 2018 poverty map
+               "peru": "2018",         # INEI's 2018 poverty map (where the 2017 census count isn't kept)
                "rwanda": "2025",       # WorldPop's 2025 estimate
                "canada": "2021",       # 2021 census
                "india": lambda r: "2025" if "WorldPop's 2025" in (r.get("Map note") or "") else "2011"}
+
+
+# A note under a country's population line, about particular years ("Population by year note").
+POP_NOTES = {"peru": "2017 is the census count of people found; INEI estimates it missed about 6% nationally, which "
+                     "the 2018 estimate (and the 2025 census total) include, so 2017 reads low next to them."}
 
 
 def single_years():
@@ -307,6 +320,7 @@ def single_years():
         n = 0
         for r in rows:
             pop = str(r.get("Population") or "").replace(",", "").strip()
+            if str(r.get(COL) or "").count(":") >= 2: continue   # a series already (population_history.json)
             if pop and pop.replace(".", "").isdigit() and float(pop) > 0:
                 r[COL] = f"{y(r) if callable(y) else y}: {round(float(pop))}"; n += 1
             else: r[COL] = ""
@@ -314,6 +328,16 @@ def single_years():
         with open(p, "w", encoding="utf-8", newline="") as fo:
             w = csv.DictWriter(fo, fieldnames=f, lineterminator=nl); w.writeheader(); w.writerows(rows)
         print(f"{name}: one population point for {n} of {len(rows)}")
+    for name, note in POP_NOTES.items():
+        p = os.path.join(DOCS, f"{name}.csv")
+        text = open(p, encoding="utf-8", newline="").read()
+        rows = list(csv.DictReader(text.splitlines()))
+        f = list(rows[0].keys())
+        if "Population by year note" not in f: f.insert(f.index(COL) + 1, "Population by year note")
+        for r in rows: r["Population by year note"] = note if r.get(COL) else ""
+        nl = "\r\n" if "\r\n" in text[:5000] else "\n"
+        with open(p, "w", encoding="utf-8", newline="") as fo:
+            w = csv.DictWriter(fo, fieldnames=f, lineterminator=nl); w.writeheader(); w.writerows(rows)
 
 
 def apply():

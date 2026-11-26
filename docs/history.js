@@ -266,6 +266,7 @@
     else if (hasPlace) parts.push(`The dashed line is ${place.District}.`);
     if (hasPlace && splitsOf(place).length) parts.push(splitNote(place, hasEarly));
     if (hasPlace && yearNote(place, m)) parts.push(yearNote(place, m));
+    else if (!hasPlace) { const nt = [...new Set(rows.map((r) => yearNote(r, m)).filter(Boolean))]; if (nt.length === 1) parts.push(nt[0]); }   // the same caveat for all its places
     $("trend-history-note").textContent = parts.join(" ");
   }
 
@@ -336,7 +337,7 @@
       ...entries.map((e, i) => (splitsOf(e.row).length && (years(series[i]).length || years(earlySeries[i]).length) ? splitNote(e.row, years(earlySeries[i]).length >= 2) : ""))].filter(Boolean).join(" ");
   }
   // A place's caveats about particular years of its enrollment and public share lines ("Enrollment by year note").
-  const yearNote = (row, m) => (/^(Enrollment|Public share) by year$/.test(m.col) && row && row["Enrollment by year note"]) || "";
+  const yearNote = (row, m) => (row && (/^(Enrollment|Public share) by year$/.test(m.col) ? row["Enrollment by year note"] : m.col === "Population by year" ? row["Population by year note"] : "")) || "";
   // "Split in 2017: San Miguel was made from Juliaca. The solid line ..." / "Merged in 2019: A and B merged into C. ..."
   function splitNote(row, hasEarly) {
     const by = {};
