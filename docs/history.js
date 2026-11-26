@@ -161,9 +161,27 @@
     return null;
   }
   const trend = { measure: null, area: null, place: null, key: null };
+  // Figures known only for a whole country or region (data/area_history.json, from data-prep/area_history.py), for
+  // years its places have none: drawn on that country's or region's line, never on a place's.
+  let AREA = null, lastTrend = null;
+  fetch("data/area_history.json").then((r) => (r.ok ? r.json() : {})).catch(() => ({})).then((j) => {
+    AREA = j || {};
+    if (lastTrend) renderTrends(...lastTrend);
+  });
+  const areaPts = (country, region, col) => ((AREA && AREA[country] && AREA[country][region || ""]) || {})[col] || {};
+  const hasArea = (country, col) => !!(AREA && AREA[country] && Object.values(AREA[country]).some((e) => e[col]));
+  // Adds an area's own figures to its line for the years the line lacks; returns those years.
+  function addArea(line, country, region, col) {
+    const added = [];
+    Object.entries(areaPts(country, region, col)).forEach(([y, v]) => { if (line[y] == null) { line[y] = v; added.push(y); } });
+    return added;
+  }
+
   function renderTrends(current, label) {
+    lastTrend = [current, label];
     const rows = current.rows;
-    const list = MEASURES.filter((m) => rows.some((r) => hasLine(r, m.col)));
+    const countries = current.combined ? [...new Set(rows.map((r) => r.Country).filter(Boolean))] : [current.name];
+    const list = MEASURES.filter((m) => rows.some((r) => hasLine(r, m.col)) || countries.some((c) => hasArea(c, m.col)));
     const card = $("trend-history-card");
     if (!card) return;
     card.hidden = !list.length;
@@ -176,7 +194,9 @@
     picker($("trend-history-pick"), list, m, (x) => { trend.measure = x; redraw(); });
     // Area menu: the whole view, each region, or one region.
     const rc = regionCol(current), regionWord = current.combined ? "country" : ((current.groups && current.groups.word) || (rc || "region").toLowerCase());
-    const regions = rc ? [...new Set(rows.filter((r) => hasLine(r, m.col)).map((r) => r[rc]).filter(Boolean))].sort((a, b) => a.trim().localeCompare(b.trim())) : [];
+    const areaRegion = (r) => (current.combined ? Object.keys(areaPts(r.Country, "", m.col)).length : Object.keys(areaPts(current.name, r[rc], m.col)).length) > 0;
+    const counts = (r) => hasLine(r, m.col) || areaRegion(r);
+    const regions = rc ? [...new Set(rows.filter(counts).map((r) => r[rc]).filter(Boolean))].sort((a, b) => a.trim().localeCompare(b.trim())) : [];
     const sel = $("trend-area");
     if (sel) {
       sel.innerHTML = (current.combined ? "" : `<option value="all">All of ${esc(current.groups && current.groups.label || current.name)}</option>`) +
@@ -192,7 +212,7 @@
     let groups;
     if (trend.area === "each") {
       const by = {};
-      rows.forEach((r) => { if (r[rc] && hasLine(r, m.col)) (by[r[rc]] = by[r[rc]] || []).push(r); });
+      rows.forEach((r) => { if (r[rc] && counts(r)) (by[r[rc]] = by[r[rc]] || []).push(r); });
       groups = Object.entries(by).sort((a, b) => b[1].length - a[1].length);
     } else if (trend.area && trend.area.startsWith("r:")) {
       const g = trend.area.slice(2);
@@ -206,9 +226,18 @@
     const many = shown.length > 1;
     const idx = m.kind === "count" && (many || hasPlace);
     const perPlace = m.kind === "sum" && hasPlace;
+    const areaAdded = [];
     const lines = shown.map(([g, rs]) => {
       const s = summarize(rs, m);
       if (perPlace) Object.keys(s.line).forEach((y) => { s.line[y] = +(s.line[y] / rs.length).toFixed(2); });
+      // the country's or region's own figures for years its places lack (not per place, and not for "each country"
+      // in the combined view's regions other than countries)
+      if (!perPlace) {
+        const whole = !(trend.area === "each" || (trend.area && trend.area.startsWith("r:")));
+        const add = current.combined ? (trend.area === "each" || !whole ? addArea(s.line, g, "", m.col) : [])
+          : addArea(s.line, current.name, whole ? "" : g, m.col);
+        if (add.length) areaAdded.push(...add);
+      }
       return [g, s];
     });
     if (hasPlace) lines.push([place.District, { line: m.kind === "sum" ? Object.fromEntries(Object.entries(ps).filter(([y]) => +y >= 2010)) : ps, place: true }]);
@@ -227,9 +256,10 @@
     const parts = [];
     if (many) parts.push(`One line per ${regionWord}` + (groups.length > shown.length ? ` (the ${shown.length} with the most places; pick one in the Area menu for the others)` : "") + ".");
     if (m.kind === "sum") parts.push(perPlace ? `The area's line is its meetings per place (all ${label}, with none counted as 0), so the place can be compared with it.` : `Meetings recorded each year, added up over the ${n.toLocaleString()} ${label} with dated recordings. The current year is partial, and US districts' counts (CivicSearch) start in January 2025.`);
-    else parts.push((m.kind === "count" ? `The total for the ${n.toLocaleString()} ${label} with figures` : `The average of the ${n.toLocaleString()} ${label}' figures` + (m.col === "Poverty by year" ? " (each country's own measure, as in its note)" : "")) +
+    else if (n) parts.push((m.kind === "count" ? `The total for the ${n.toLocaleString()} ${label} with figures` : `The average of the ${n.toLocaleString()} ${label}' figures` + (m.col === "Poverty by year" ? " (each country's own measure, as in its note)" : "")) +
       ". Not every place has every year, so each year's change is measured on the places with figures in both years, and the line is pinned to the year most places have.");
     if (idx) parts.push("Lines start at 100 in their first year so different sizes can be compared; hover to see the numbers.");
+    if (areaAdded.length) parts.push(`${[...new Set(areaAdded)].sort().join(", ")}: figures for the whole ${current.combined ? "country" : trend.area === "all" ? "country" : regionWord} only (no figures for its ${label} that year).`);
     if (current.combined && m.kind === "rate") parts.push("Each country uses its own measure, so compare the shapes of the lines, not their heights.");
     if (place && !hasPlace) parts.push(`No ${m.name.toLowerCase()} by year for ${place.District}.`);
     else if (hasPlace) parts.push(`The dashed line is ${place.District}.`);
@@ -317,5 +347,5 @@
       (merged ? ` Before a merger the line adds up the former places, so the whole line is on today's borders.` : "");
   }
 
-  window.SiteHistory = { MEASURES, parse, seriesOf, linked, renderTrends, renderPlaces, trend };
+  window.SiteHistory = { MEASURES, parse, seriesOf, linked, areaPts, addArea, renderTrends, renderPlaces, trend };
 })();

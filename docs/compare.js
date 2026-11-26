@@ -70,10 +70,11 @@
     // Over time: each measure linked over the area's places; meetings added up.
     if (H) H.MEASURES.forEach((m) => {
       const series = rows.map((r) => (m.kind === "sum" ? H.parse(r[m.col]) : H.seriesOf(r, m.col))).filter((x) => Object.keys(x).length);
-      if (!series.length) return;
       let line = {};
       if (m.kind === "sum") series.forEach((x) => Object.entries(x).forEach(([y, v]) => { line[y] = (line[y] || 0) + v; }));
-      else line = H.linked(series, m.kind);
+      else if (series.length) line = H.linked(series, m.kind);
+      // the country's or region's own figures for years its places lack (data/area_history.json)
+      if (m.kind !== "sum" && H.addArea) H.addArea(line, ds.name, e.id.split(":").slice(2).join(":"), m.col);
       const ys = Object.keys(line).sort();
       if (ys.length) row[m.col] = ys.map((y) => `${y}: ${line[y]}${m.unit === "%" ? "%" : ""}`).join("; ");
     });
