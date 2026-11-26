@@ -57,9 +57,9 @@ def latest_block(path, sheet="2026"):
     raise ValueError("no complete quarter")
 
 
-def edu(dirs, fn, total, public, private=None):
+def edu(dirs, fn, total, public, private=None, year=None):
     rr = list(csv.reader(io.StringIO(open(find(dirs, fn), encoding="utf-8-sig").read())))
-    h = rr[0]; last = max(r[0] for r in rr[1:])
+    h = rr[0]; last = year or max(r[0] for r in rr[1:])
     out = {}
     for r in rr[1:]:
         if r[0] != last: continue
@@ -149,7 +149,28 @@ def history(raw):
     print({x["en"]: x["pov_years"] for x in list(data.values())[:2]})
 
 
-if __name__ == "__main__" and sys.argv[1] == "--history":
+def edu_history(raw):
+    """Pupils and public schools' share for every school year in the same Ministry of Education files (104 to 114,
+    2015/16 to 2025/26; fetch round 53, saved as tw_edu_*.csv), into tw_data.json's pupil_years and public_years.
+    Usage: python3 data-prep/prep_taiwan.py --edu-history RAWDIR"""
+    rr = list(csv.reader(io.StringIO(open(find([raw], "tw_edu_B_3_2.csv"), encoding="utf-8-sig").read())))
+    p = os.path.join(OUT, "tw_data.json"); data = json.load(open(p, encoding="utf-8"))
+    for roc in sorted({r[0] for r in rr[1:]}):
+        _, el = edu([raw], "tw_edu_B_3_2.csv", "學生數", "公立學生數", year=roc)
+        _, jh = edu([raw], "tw_edu_B_3_8.csv", "學生總數", "公立學生數", year=roc)
+        _, sh = edu([raw], "tw_edu_B_4_2.csv", None, "公立學生數[人]", "私立學生數[人]", year=roc)
+        y = str(int(roc) + 1911)
+        for k, x in data.items():
+            if k in el and k in jh and k in sh:
+                tot = el[k][0] + jh[k][0] + sh[k][0]; pub = el[k][1] + jh[k][1] + sh[k][1]
+                x.setdefault("pupil_years", {})[y] = tot; x.setdefault("public_years", {})[y] = round(100 * pub / tot, 1)
+    json.dump(data, open(p, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    x = data["臺北市"]; print(x["pupils"], x["pupil_years"])
+
+
+if __name__ == "__main__" and sys.argv[1] == "--edu-history":
+    edu_history(sys.argv[2])
+elif __name__ == "__main__" and sys.argv[1] == "--history":
     history(sys.argv[2])
 elif __name__ == "__main__":
     main(*sys.argv[1:])

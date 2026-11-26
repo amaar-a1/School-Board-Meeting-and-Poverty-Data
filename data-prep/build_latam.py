@@ -628,6 +628,8 @@ def colombia():
     ws = openpyxl.load_workbook(os.path.join(IN, "colombia", "ipm_municipal_2018.xlsx"), read_only=True)["2_IPM Mpio y Dpt"]
     ipm = {str(r[0]): r for r in ws.iter_rows(values_only=True) if r and r[0] and len(str(r[0])) == 5 and str(r[0]).isdigit()}
     men = {r["c_digo_municipio"].zfill(5): r for r in json.load(open(os.path.join(IN, "colombia", "men_estadisticas_municipio_2024.json"), encoding="utf-8"))}
+    hp = os.path.join(IN, "colombia", "men_enrollment_history.json")   # every year since 2011 (prep_colombia_history.py)
+    enr_hist = json.load(open(hp, encoding="utf-8")) if os.path.exists(hp) else {}
     # Public share: official (sector 1001) against non-official (1002) pupils in each municipality's schools, 2025 (MEN,
     # establecimientos educativos, datos.gov.co cfw5-qzt5), applied to the enrollment figure.
     sec = {}
@@ -667,7 +669,7 @@ def colombia():
         area = area_km2(f["geometry"]) if f else 0
         dens = pop / 0.19 / area if area and pop else 0
         did = f"CO-{code}"
-        rows.append({"District": nm, "Region": dept_name.get(code[:2], ""), "Poverty rate (all ages)": f"{float(r[2]):.2f}%" if isinstance(r[2], (int, float)) else "",
+        rows.append({**history_cols({"pupil_years": enr_hist.get(code, {})}), "District": nm, "Region": dept_name.get(code[:2], ""), "Poverty rate (all ages)": f"{float(r[2]):.2f}%" if isinstance(r[2], (int, float)) else "",
                      "Poverty note": "Multidimensional poverty, all ages, 2018 census (DANE); no child or income rate is published by municipality",
                      "Enrollment": round(pop * rate / 100) if pop and rate else "",
                      "Public school enrollment": round(pop * rate / 100 * sec[code][0] / sum(sec[code])) if pop and rate and code in sec and sum(sec[code]) else "", "Enrollment year": "2024 (Ministry of Education: pupils enrolled in transición to media, from its gross coverage rate × population 5–16)" if pop and rate else "",
@@ -1213,7 +1215,7 @@ def japan():
         n = m.get("meetings") or 0
         years = "; ".join(f"{y}:{k}" for y, k in sorted(m.get("years", {}).items()) if y != "?")
         zero = v.get("pop") == 0   # Futaba: nobody lived there at the 2020 census (evacuated after the 2011 disaster)
-        rows.append({"District": name, "Region": pref_en(c), "Population": round(pop) if pop else 0 if zero else "",
+        rows.append({**history_cols({"pupil_years": v.get("pupil_years") or {}}), "District": name, "Region": pref_en(c), "Population": round(pop) if pop else 0 if zero else "",
                      "Poverty rate (all ages)": f"{rate:.2f}%" if rate is not None else "",
                      "Welfare rate basis": basis if rate is not None else "",
                      "Poverty note": ("Welfare rate: people receiving public assistance (生活保護), monthly average for FY2024, as a share of the 2020 census population "

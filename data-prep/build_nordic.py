@@ -224,6 +224,10 @@ def main():
                         miss.append(lab)
             for code, (lab, (n,)) in jsonstat("no_pupils.json", "KOKkommuneregion0000").items():
                 if n: put(name=lab, **{"Enrollment": n, "Enrollment year": "2025"})
+            ph = json.load(open(os.path.join(IN, "no_pupils_history.json"))) if os.path.exists(os.path.join(IN, "no_pupils_history.json")) else {}
+            for code, ys in ph.items():   # every year since 2015 (prep_nordic_history.py), where the code is today's
+                if code in rows and rows[code].get("Enrollment") and len(ys) > 1 and ys.get("2025") == rows[code]["Enrollment"]:
+                    rows[code]["Enrollment by year"] = "; ".join(f"{y}: {v}" for y, v in sorted(ys.items()))
         elif cc == "SE":
             for r in csv.DictReader(open(os.path.join(IN, "se_lowincome.csv"), encoding="utf-8-sig")):
                 pct, n = r["000008AC 2024"], r["000008AE 2024"]
@@ -233,6 +237,9 @@ def main():
             for v in json.load(open(os.path.join(IN, "se_pupils_N15835_2025.json")))["values"]:
                 t = [x for x in v["values"] if x["gender"] == "T" and x["value"] is not None]
                 if t: put(code=v["municipality"], **{"Enrollment": round(t[0]["value"]), "Enrollment year": "2025"})
+            ph = json.load(open(os.path.join(IN, "se_pupils_history.json"))) if os.path.exists(os.path.join(IN, "se_pupils_history.json")) else {}
+            for code, ys in ph.items():   # every year since 2015 (prep_nordic_history.py)
+                if code in rows and len(ys) > 1: rows[code]["Enrollment by year"] = "; ".join(f"{y}: {v}" for y, v in sorted(ys.items()))
         elif cc == "FI":
             reg = {r["id"]: r for r in json.load(open(os.path.join(IN, "fi_regions.json")))}
             vals, hist = {}, {}
@@ -299,7 +306,7 @@ def main():
         out.sort(key=lambda r: r["District"])
         cols = ["District", "Locale", "Available Board Meetings", "Meetings type", "Meetings source", "Latest meeting", "Meetings by year", "Children", "Children in Low Income",
                 "Percentage of Children in Low Income", "Poverty note", "Poverty by year", "Enrollment", "Enrollment year", "People per km² (estimated)", "District ID"]
-        if any(r.get("Enrollment by year") for r in out): cols.insert(cols.index("Enrollment year") + 1, "Enrollment by year")
+        if any(r.get("Enrollment by year") for r in out) and "Enrollment by year" not in cols: cols.insert(cols.index("Enrollment year") + 1, "Enrollment by year")
         with open(os.path.join(DOCS, f"{key}.csv"), "w", newline="", encoding="utf-8") as fo:
             w = csv.DictWriter(fo, fieldnames=cols, restval=""); w.writeheader(); w.writerows(out)
         for f in geo["features"]:
