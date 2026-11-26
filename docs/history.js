@@ -199,6 +199,7 @@
     if (place && !hasPlace) parts.push(`No ${m.name.toLowerCase()} by year for ${place.District}.`);
     else if (hasPlace) parts.push(`The dashed line is ${place.District}.`);
     if (hasPlace && splitsOf(place).length) parts.push(splitNote(place, hasEarly));
+    if (hasPlace && yearNote(place, m)) parts.push(yearNote(place, m));
     $("trend-history-note").textContent = parts.join(" ");
   }
 
@@ -265,8 +266,11 @@
       m.col === "Meetings by year" ? "Meetings dated by their recordings' titles (undated ones are left out; the current year is partial)." : "",
       m.col === "Poverty by year" && entries.length === 2 ? "Places in different countries use different measures." : "",
       missing.length ? `No ${m.name.toLowerCase()} by year for ${missing.join(" and ")}.` : "",
+      ...entries.map((e) => yearNote(e.row, m)),
       ...entries.map((e, i) => (splitsOf(e.row).length && (years(series[i]).length || years(earlySeries[i]).length) ? splitNote(e.row, years(earlySeries[i]).length >= 2) : ""))].filter(Boolean).join(" ");
   }
+  // A place's caveats about particular years of its enrollment and public share lines ("Enrollment by year note").
+  const yearNote = (row, m) => (/^(Enrollment|Public share) by year$/.test(m.col) && row && row["Enrollment by year note"]) || "";
   // "Split in 2017: San Miguel was made from Juliaca. The solid line ..." / "Merged in 2019: A and B merged into C. ..."
   function splitNote(row, hasEarly) {
     const by = {};

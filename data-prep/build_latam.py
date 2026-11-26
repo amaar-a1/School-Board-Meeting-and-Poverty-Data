@@ -521,7 +521,7 @@ def write(cc, key, rows, feats):
             "Population", "Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
     extra = [c for c in ("Province", "Autonomous community", "Children under 18 (estimated)", "Poverty year", "Poverty range", "Poverty rate (region, all ages)", ES_EST,
-                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)", "Welfare rate basis", "Unemployment rate (2020 census)", "Children under 15", "Children under 16", "Pupils with free school meals", "Social assistance recipients per 1,000", "Children on family benefit (% of under-20s)", "Median income (€ per taxpayer)", "Children under 18", "Mean income (€ per tax return)", "Median family income ($ per week, 2021)", "Poverty rate (county, 2011)", "Map note", "Population by year", "Enrollment by year", "Public share by year", "Enrollment by year (earlier borders)", "Public share by year (earlier borders)", "Earlier borders", "Border changes", "Population by year (earlier borders)") if any(r.get(c) not in (None, "") for r in rows)]
+                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)", "Welfare rate basis", "Unemployment rate (2020 census)", "Children under 15", "Children under 16", "Pupils with free school meals", "Social assistance recipients per 1,000", "Children on family benefit (% of under-20s)", "Median income (€ per taxpayer)", "Children under 18", "Mean income (€ per tax return)", "Median family income ($ per week, 2021)", "Poverty rate (county, 2011)", "Map note", "Population by year", "Enrollment by year", "Public share by year", "Enrollment by year (earlier borders)", "Public share by year (earlier borders)", "Earlier borders", "Border changes", "Population by year (earlier borders)", "Enrollment by year note") if any(r.get(c) not in (None, "") for r in rows)]
     pov = "Percentage of Children in Low Income" if any(r.get("Percentage of Children in Low Income") for r in rows) else "Poverty rate (all ages)"
     cols = [c for c in cols if c not in ("Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)") or any(r.get(c) not in (None, "") for r in rows)]
     cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
@@ -916,9 +916,10 @@ def pe_splits(ph):
     ys = sorted(ph); P = {y: ph[y].get("pupils", {}) for y in ys}; out = set(); edges = []
     for c in P[ys[-1]]:
         s = [y for y in ys if P[y].get(c)]
-        if s[0] == ys[0]: continue
-        # the new district's first real year: its count is at least half the next year's
+        # the new district's first real year: its count is at least half the next year's (before it, a few stray
+        # schools, the rest counted in the districts it came from; also for one already in the first year)
         F = next((y for y, z in zip(s, s[1:] + [None]) if z is None or P[y][c] >= P[z][c] / 2), s[-1])
+        if F == ys[0]: continue
         for y in s:
             if y < F: out.add((y, c))
         prev = ys[ys.index(F) - 1]; n = P[F][c]
@@ -963,7 +964,28 @@ def peru():
     # Earlier school censuses (00_Padron.zip of each year, summed by prep_peru_history.py), for change over time
     hf = os.path.join(IN, "peru", "pe_alumnos_history.json")
     ph = {**(json.load(open(hf, encoding="utf-8")) if os.path.exists(hf) else {}), "2025": pj}
+    # A census year that misses schools reporting the years either side (2012) is left out where they matter
+    for y, v in ph.items():
+        for c in v.pop("incomplete", []):
+            for k in ("pupils", "pupils_public"): v.get(k, {}).pop(c, None)
+    # New provinces gave districts new codes: their earlier figures go under the new ones. Datem del Marañón (2005,
+    # from Alto Amazonas): Barranca, Cahuapanas, Manseriche, Morona and Pastaza; Putumayo (2014, from Maynas): Putumayo
+    # and Teniente Manuel Clavero.
+    RECODED = [("2006", "160203", "160701"), ("2006", "160204", "160702"), ("2006", "160207", "160703"), ("2006", "160208", "160704"),
+               ("2006", "160209", "160705"), ("2014", "160109", "160801"), ("2014", "160114", "160803")]
+    for y, v in ph.items():
+        for F, old, new in RECODED:
+            if y >= F: continue
+            for k in ("pupils", "pupils_public"):
+                if old in v.get(k, {}): v[k][new] = v[k].pop(old)
+    # Years whose census codes one district's schools to another: Andrés Avelino Cáceres (made in 2013) has only a
+    # few schools of its own until 2018, the rest counted in Ayacucho, so its years before are left out and the
+    # census's split is marked in 2018 (below); schools moved between Pastaza and Andoas in 2014 (both left out before).
+    MISCODED = {("050116",): lambda y: y < "2018", ("160705", "160706"): lambda y: y < "2014"}
+    miscoded = lambda y, c: any(c in pair and f(y) for pair, f in MISCODED.items())
     skip, edges = pe_splits(ph)
+    edges = [e for e in edges if e[1] != "050116"] + [("050101", "050116", "2018")]
+    skip |= {(y, "050116") for y in ph if y < "2018"}
     nf = os.path.join(IN, "peru", "pe_new_district_names.json")
     newer = {c: es_title(v) for c, v in (json.load(open(nf, encoding="utf-8"))["names"] if os.path.exists(nf) else {}).items()}
     early = pe_earlier_borders(ph, edges, {**newer, **{c: d["name"] for c, d in dist.items()}})
@@ -977,10 +999,12 @@ def peru():
         f = geo.get(code); area = area_km2(f["geometry"]) if f else 0
         dens = d["pop"] / area if area and d["pop"] else 0
         did = f"PE-{code}"
-        # The 2016 and 2017 padrones still code Andrés Avelino Cáceres's schools to Ayacucho district, so both years are left out for both.
-        py = {y: v["pupils"][code] for y, v in ph.items() if v.get("pupils", {}).get(code) and not (y in ("2016", "2017") and code in ("050101", "050116")) and (y, code) not in skip}
+        py = {y: v["pupils"][code] for y, v in ph.items() if v.get("pupils", {}).get(code) and not miscoded(y, code) and (y, code) not in skip}
         pub = {y: 100 * ph[y]["pupils_public"].get(code, 0) / n for y, n in py.items() if ph[y].get("pupils_public")}
-        rows.append({**history_cols({"pupil_years": py, "public_years": pub}), **early.get(code, {}), "District": d["name"], "Region": PE_DEPT[code[:2]], "Province": prov.get(code[:4], ""), "Population": d["pop"],
+        gaps = [t for y, t in (("2004", "2004 leaves out the non-school preschool programmes (PRONOEI), whose records for that year don't survive: about 3% of Peru's pupils, more in rural districts, so 2004 reads low next to 2005."),
+                                ("2012", "2012's census misses about 1,700 schools that didn't report that year: 2012 is left out where they made up more than 3% of a district's pupils, and may read a little low elsewhere."))
+                if y in py or (y == "2012" and "2011" in py and "2013" in py)]
+        rows.append({**history_cols({"pupil_years": py, "public_years": pub}), **early.get(code, {}), "Enrollment by year note": " ".join(gaps), "District": d["name"], "Region": PE_DEPT[code[:2]], "Province": prov.get(code[:4], ""), "Population": d["pop"],
                      "Poverty rate (all ages)": f"{(d['lo'] + d['hi']) / 2:.2f}%", "Poverty range": f"{d['lo']:.1f}–{d['hi']:.1f}%",
                      "Poverty note": "Share of people below the monetary poverty line, all ages, 2018 (INEI poverty map): midpoint of the 95% confidence interval; no child rate is published by district",
                      "Enrollment": pupils.get(code, ""), "Enrollment year": "2025 (school census: all schools and programmes, public and private)" if code in pupils else "",
