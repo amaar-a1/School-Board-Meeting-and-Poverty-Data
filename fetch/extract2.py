@@ -1,45 +1,51 @@
-# Round 60 (scheduled retry): enrollment by district through documented routes only.
-# India: data.gov.in's catalogue and search pages for UDISE+ district enrolment, and the CSV/XLSX downloads they link
-# (503 on 24 November). Paraguay: datos.gov.py's CKAN API (package_search, then each matching package's resources;
-# a maintenance page on 24 November).
-import os, re, json, urllib.request, urllib.parse, time, http.cookiejar, html
-OUT = "fetch/out/c60"; os.makedirs(OUT, exist_ok=True)
+# Round 61: older and census-only population over time.
+# 1. Eurostat GISCO LAU 2011-2015 (each LAU's population and name, where the file has them), to extend Europe's
+#    municipal series back before 2016.
+# 2. Eurostat's NUTS history (the correspondence tables between NUTS versions), for Germany's district reforms.
+# 3. HDX Common Operational Datasets, population statistics (cod-ps-<iso3>), for countries whose site has one year.
+import os, re, json, urllib.request, urllib.parse, time, html, gzip, shutil
+OUT = "fetch/out/c61"; os.makedirs(OUT, exist_ok=True)
 log = open(f"{OUT}/log.txt", "w")
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)", "Accept": "*/*"}
-op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
-def get(name, url, keep=True, limit=90e6, timeout=120):
+def get(name, url, timeout=600):
     try:
-        b = op.open(urllib.request.Request(url, headers=UA), timeout=timeout).read()
-        if keep and name and len(b) < limit: open(f"{OUT}/{name}", "wb").write(b)
-        log.write(f"OK {name} {len(b)} {url}\n   {b[:200]!r}\n"); return b
+        b = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=timeout).read()
+        if name: open(f"{OUT}/{name}", "wb").write(b)
+        log.write(f"OK {name} {len(b)} {url}\n"); return b
     except Exception as e: log.write(f"ERR {name} {str(e)[:200]} {url}\n")
-    finally: log.flush(); time.sleep(2)
-def links(page, b, pat):
-    s = (b or b"").decode("utf-8", "ignore")
-    return sorted(set(urllib.parse.urljoin(page, html.unescape(u)) for u in re.findall(r'(?:href|src)="([^"]+)"', s) if re.search(pat, u, re.I)))
-safe = lambda u: re.sub(r"[^\w.-]+", "_", urllib.parse.urlparse(u).path)[-80:]
-# India
-pages = ["https://www.data.gov.in/catalog/unified-district-information-system-education-plus-udise",
-         "https://www.data.gov.in/search?title=udise%20district%20enrolment",
-         "https://www.data.gov.in/search?title=district%20wise%20enrolment",
-         "https://www.data.gov.in/sector/education"]
-got = 0
-for i, p in enumerate(pages):
-    b = get(f"in_page_{i}.html", p)
-    for l in links(p, b, r"\.(csv|xlsx?)(\?|$)|/resource/|/catalog/")[:60]:
-        log.write(f"  LINK {l}\n")
-        if re.search(r"\.(csv|xlsx?)(\?|$)", l, re.I) and re.search(r"enrol|udise|district", l, re.I) and got < 20:
-            got += 1; get("in_" + safe(l), l)
-# Paraguay
-for q in ("matricula", "matriculados", "ministerio de educacion", "estudiantes por distrito"):
-    b = get("py_search_" + re.sub(r"\W+", "_", q) + ".json", "https://www.datos.gov.py/api/3/action/package_search?rows=50&q=" + urllib.parse.quote(q))
-    try: res = json.loads(b)["result"]["results"]
+    finally: log.flush(); time.sleep(1.5)
+# 1
+for y in range(2011, 2016):
+    b = get(None, f"https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_{y}_4326.geojson", timeout=1200)
+    if not b: continue
+    try:
+        feats = json.loads(b)["features"]; props = feats[0]["properties"]; log.write(f"  LAU {y} props {list(props)}\n")
+        out = {}
+        for f in feats:
+            p = f["properties"]
+            pop = next((p[k] for k in p if re.fullmatch(r"POP_?\d{4}|POP", k) and p[k] not in (None, "")), None)
+            out.setdefault(p.get("CNTR_CODE"), {})[p.get("GISCO_ID") or p.get("LAU_ID") or p.get("LAU_CODE")] = [pop, p.get("LAU_NAME") or p.get("LAU_LABEL")]
+        json.dump(out, open(f"{OUT}/lau_pop_{y}.json", "w")); log.write(f"  LAU {y}: {sum(1 for v in out.values() for x in v.values() if x[0] is not None)} with population\n")
+    except Exception as e: log.write(f"  LAU {y} ERR {e}\n")
+# 2
+p = "https://ec.europa.eu/eurostat/web/nuts/history"
+b = get("nuts_history.html", p)
+for l in sorted(set(urllib.parse.urljoin(p, html.unescape(x)) for x in re.findall(r'href="([^"]+)"', (b or b"").decode("utf-8", "ignore")))):
+    if re.search(r"\.(xlsx?|zip|csv)(\?|$)", l, re.I):
+        log.write(f"  link {l}\n"); get("nuts_" + re.sub(r"[^\w.-]+", "_", urllib.parse.urlparse(l).path)[-80:], l)
+# 3
+for iso in ("ken", "phl", "zaf", "per", "ecu", "cri", "ury", "rwa", "lka", "kor", "isr", "nzl", "irl", "ind", "hrv", "twn", "can"):
+    b = get(None, f"https://data.humdata.org/api/3/action/package_show?id=cod-ps-{iso}")
+    try: res = json.loads(b)["result"]["resources"]
     except Exception: continue
-    for pkg in res:
-        log.write(f"  PKG {pkg.get('name')} | {pkg.get('title')}\n")
-        if not re.search(r"matr[ií]cul|alumn|estudiant", (pkg.get("title") or "") + " " + (pkg.get("name") or ""), re.I): continue
-        for r in pkg.get("resources", [])[:10]:
-            u = r.get("url") or ""
-            log.write(f"    RES {r.get('format')} {r.get('name')} {u}\n")
-            if re.search(r"csv|xlsx?|zip", (r.get("format") or "") + u, re.I): get("py_" + safe(u), u)
+    for r in res:
+        u = r.get("url") or ""
+        log.write(f"  {iso} RES {r.get('format')} {r.get('name')} {r.get('size')} {u}\n")
+        if re.search(r"csv|xlsx?", (r.get("format") or "") + u, re.I) and (r.get("size") or 0) < 60e6:
+            get(f"hdx_{iso}_" + re.sub(r"[^\w.-]+", "_", r.get("name") or os.path.basename(u))[-80:], u)
+for f in os.listdir(OUT):
+    q = f"{OUT}/{f}"
+    if os.path.getsize(q) > 50e6 and not f.endswith(".gz"):
+        with open(q, "rb") as a, gzip.open(q + ".gz", "wb") as b2: shutil.copyfileobj(a, b2)
+        os.remove(q)
 log.close()
