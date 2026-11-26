@@ -24,6 +24,7 @@ Sources:
   consistent with the 2018 census, to the current year.
 - Mexico: CONAPO, "Reconstrucción y proyecciones de la población de los municipios de México 1990-2040" (2024):
   mid-year population, reconstructed for 1990-2020 and projected from 2021, to the current year (fetch round 55).
+- Philippines: the 2015 census by barangay (PSA, via HDX), added up by city and municipality, and PSA's 2021 figure.
 - Brazil: IBGE's population estimates by municipality for 1 July, 2001-2025 (SIDRA table 6579; none for the census
   years 2007, 2010 and 2022).
 """
@@ -174,6 +175,37 @@ def prep(raw):
         res["mexico"] = {i: mx[i.split("-", 1)[1]] for i in ids("mexico") if len(mx.get(i.split("-", 1)[1], {})) > 1}
     # Border changes (borders.py): a split's parents keep their own years (their drop isn't a break to cut at), and
     # each family is added up on the borders before the split.
+    # Philippines: the 2015 census by barangay (PSA via HDX, fetch round 62), added up by city and municipality, with
+    # the site's own 2021 population (PSA). Codes are the 9-digit PSGC of 2015; today's are 10-digit (a third province
+    # digit), and regions renumbered since (BARMM, the Negros Island Region) are matched on province and municipality.
+    PH_2015 = {"1830200000": "064501000", "0990101000": "099701000", "1381400000": "137405000", "1381300000": "137404000", "1380600000": "1339"}
+    pf = os.path.join(raw, "ph_pop_2015_barangay.csv")
+    if os.path.exists(pf):
+        muni = {}
+        r = csv.DictReader(open(pf, encoding="latin-1"))
+        cols = [c for c in r.fieldnames if re.fullmatch(r"[FM](Under_1|\d+|100_Over)", c)]
+        names = {}
+        for x in r:
+            muni[x["adm3_code"][2:]] = muni.get(x["adm3_code"][2:], 0) + sum(float(str(x[c] or 0).replace(",", "") or 0) for c in cols)
+            names[x["adm3_code"][2:]] = x["adm3_name"]
+        # the rest (highly urbanized cities, recoded; Maguindanao, split in 2022): by name, where only one place has it
+        import unicodedata
+        key = lambda t: re.sub(r"[^a-z]", "", unicodedata.normalize("NFKD", re.sub(r"(?i)\bcity of\b|\bcity\b|\(.*?\)", "", str(t))).encode("ascii", "ignore").decode().lower())
+        byname = {}
+        for c, n in names.items(): byname.setdefault(key(n), []).append(c)
+        site = {r["District ID"]: r for r in csv.DictReader(open(os.path.join(DOCS, "philippines.csv"), encoding="utf-8"))}
+        tail = {k[2:]: v for k, v in muni.items()}
+        out = {}
+        for i, r in site.items():
+            c = i.split("-", 1)[1]
+            v = muni.get(c[:2] + c[3:]) if c[2] == "0" else None
+            if v is None and c[2] == "0": v = tail.get(c[3:])
+            if v is None and len(byname.get(key(r["District"]), [])) == 1: v = muni[byname[key(r["District"])][0]]
+            if v is None and c in PH_2015:   # names shared with other places; Manila, its 14 districts in 2015
+                v = sum(x for k, x in muni.items() if k.startswith(PH_2015[c])) if PH_2015[c] == "1339" else muni.get(PH_2015[c])
+            p21 = float(r.get("Population") or 0)
+            if v and p21: out[i] = {"2015": round(v), "2021": round(p21)}
+        res["philippines"] = out
     for name in list(res):
         splits = [tuple(e) for e in bc.get(name, {}).get("splits", [])]
         keep = {}
