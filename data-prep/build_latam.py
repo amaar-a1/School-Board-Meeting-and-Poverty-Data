@@ -967,12 +967,16 @@ def peru():
     for y, v in ph.items():
         for c in v.pop("incomplete", []):
             for k in ("pupils", "pupils_public"): v.get(k, {}).pop(c, None)
-    # Putumayo province (2014) gave two of Maynas's districts new codes: their earlier figures go under the new ones.
+    # New provinces gave districts new codes: their earlier figures go under the new ones. Datem del Marañón (2005,
+    # from Alto Amazonas): Barranca, Cahuapanas, Manseriche, Morona and Pastaza; Putumayo (2014, from Maynas): Putumayo
+    # and Teniente Manuel Clavero.
+    RECODED = [("2006", "160203", "160701"), ("2006", "160204", "160702"), ("2006", "160207", "160703"), ("2006", "160208", "160704"),
+               ("2006", "160209", "160705"), ("2014", "160109", "160801"), ("2014", "160114", "160803")]
     for y, v in ph.items():
-        if y < "2014":
-            for old, new in (("160109", "160801"), ("160114", "160803")):
-                for k in ("pupils", "pupils_public"):
-                    if old in v.get(k, {}): v[k][new] = v[k].pop(old)
+        for F, old, new in RECODED:
+            if y >= F: continue
+            for k in ("pupils", "pupils_public"):
+                if old in v.get(k, {}): v[k][new] = v[k].pop(old)
     # Years whose census codes one district's schools to another: Andrés Avelino Cáceres (made in 2013) has only a
     # few schools of its own until 2018, the rest counted in Ayacucho, so its years before are left out and the
     # census's split is marked in 2018 (below); schools moved between Pastaza and Andoas in 2014 (both left out before).

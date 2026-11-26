@@ -10,11 +10,11 @@ The 2016–2021 Padron.dbf files have no pupil count, so their pupils come from 
 cuadro C201, or C202/C206 for the few programmes counted there; ages and columns added up per school, the largest of a
 school's tables taken, or their sum for cédula 7A whose two tables count different pupils), with the school's district
 and management from that year's Padron.dbf. District by district the median is about 98% of the next year's
-count (national totals 8.45M in 2006, 8.69M in 2007, 8.55M in 2008, 8.58M in 2009, 8.54M in 2010, 8.38M in 2011, 8.03M in 2012 (incomplete: see gaps()), 8.47M in 2013,
+count (national totals 8.38M in 2005, 8.45M in 2006, 8.69M in 2007, 8.55M in 2008, 8.58M in 2009, 8.54M in 2010, 8.38M in 2011, 8.03M in 2012 (incomplete: see gaps()), 8.47M in 2013,
 8.40M in 2014, 8.47M in 2015, 8.66M in 2016, 8.72M in 2017, 8.79M in 2018, 9.00M in 2019, 9.05M in 2020 and 9.10M in 2021, against 9.42M in 2022); Lima's Cercado is the main outlier
 (130k in 2021, 200k in 2022), and San Isidro's 2019 figure includes
 TELESUP's 25k students, a technical institute that closed (counts cover every school in the padrón, institutes included).
-2006-2015 use only the enrollment file (02_Mat2100.dbf.zip; 03_Mat2x00.dbf.zip in 2012, 04_mat2100.dbf.zip in 2010), which carries each school's district (CODGEO) and
+2005-2015 use only the enrollment file (02_Mat2100.dbf.zip; 03_Mat2x00.dbf.zip in 2012, 04_mat2100.dbf.zip in 2010), which carries each school's district (CODGEO) and
 management (GES_DEP: A1-A4 public, as the padrones' GESTION 1-2 for the same schools in 2016; B private); its tables
 are in MAT_TABLES.
 Usage: python3 data-prep/prep_peru_history.py YEAR 00_Padron.zip [YEAR 00_Padron.zip ...]
@@ -22,7 +22,7 @@ Usage: python3 data-prep/prep_peru_history.py YEAR 00_Padron.zip [YEAR 00_Padron
        python3 data-prep/prep_peru_history.py --edades 2020 01_Padron.zip 02_Matricula_01.zip   (2016–2019 likewise)
        python3 data-prep/prep_peru_history.py --mat 2015 02_Mat2100.dbf.zip   (2008-2014 likewise)
        python3 data-prep/prep_peru_history.py --mat 2012 03_Mat2x00.dbf.zip 02_Mat2100.dbf.zip
-       python3 data-prep/prep_peru_history.py --mat 2007 01_Mat2100.dbf.zip 10_Ine0000.dbf.zip   (PRONOEI apart; 2006: MAT2100.zip PADPROG.zip)
+       python3 data-prep/prep_peru_history.py --mat 2007 01_Mat2100.dbf.zip 10_Ine0000.dbf.zip   (PRONOEI apart; 2006: MAT2100.zip PADPROG.zip; 2005: MAT2100.zip INE0000.zip)
        python3 data-prep/prep_peru_history.py --gaps 2012 MAT_2011.zip 03_Mat2x00.dbf.zip MAT_2013.zip 02_Mat2100.dbf.zip   (see gaps())
 """
 import io, json, os, re, sys, tempfile, zipfile
@@ -96,8 +96,10 @@ MAT_TABLES = {"2015": {"07": ("201", "202"), "08": ("201", "203")},
               "2008": {"4A": ("2100", "2200"), "07": ("2110", "2120")},
               "2007": {"4A": ("2100", "2200"), "07": ("2110", "2120")},
               "2006": {},
+              "2005": {},
               "2012b": {"4A": ("201", "202"), "07": ("201", "202"), "08": ("201", "202")}}   # 2012's 02_Mat2100
-MAT_EXTRA = {"2012": "2012b", "2007": "ine", "2006": "padprog"}
+FIX_CODGEO = {"20011<": "200114"}   # a garbled code in 2006's MAT2100 (school 0572230, in 200114 in 2005 and 2007)
+MAT_EXTRA = {"2012": "2012b", "2007": "ine", "2006": "padprog", "2005": "ine"}
 
 
 def school_totals(year, path):
@@ -118,7 +120,7 @@ def school_totals(year, path):
         if r["NROCED"] in tables and r["CUADRO"] not in tables[r["NROCED"]]: continue
         k = (r["COD_MOD"], r["ANEXO"])
         per.setdefault(k, {}); per[k][r["CUADRO"]] = per[k].get(r["CUADRO"], 0) + sum(r[x] or 0 for x in d)
-        info[k] = (str(r["CODGEO"]).zfill(6), str(r["GES_DEP"] or ""), r["NROCED"])
+        info[k] = (FIX_CODGEO.get(str(r["CODGEO"]), str(r["CODGEO"]).zfill(6)), str(r["GES_DEP"] or ""), r["NROCED"])
     return {k: (info[k][0], info[k][1], int(sum(tb.values()) if info[k][2] in tables else max(tb.values()))) for k, tb in per.items()}
 
 
@@ -129,6 +131,13 @@ def ine_totals(path):
     zipfile.ZipFile(path).extractall(tmp)
     f = next(os.path.join(dp, x) for dp, _, fs in os.walk(tmp) for x in fs if x.lower().endswith(".dbf"))
     t = DBF(f, encoding="latin-1", load=False)
+    if "CUADRO" in t.field_names:   # 2005: one row per table; cuadro 9000 is the children by age and sex (DATO12-21),
+        out = {}                     # matched programme by programme with 2006's PADPROG (median 1.04)
+        for r in t:
+            if r["CUADRO"] != "9000": continue
+            n = sum(r[f"DATO{i}"] for i in range(12, 22) if isinstance(r[f"DATO{i}"], (int, float)))
+            out[("INE" + r["COD_CORD"], r["COD_PROG"])] = (str(r["CODGEO"]).zfill(6), str(r["GES_DEP"] or ""), int(n))
+        return out
     d = [x for x in t.field_names if re.fullmatch(r"C0222_\d\d[HM]", x)]
     return {("INE" + r["COD_CORD"], r["COD_PROG"]): (str(r["CODGEO"]).zfill(6), str(r["GES_DEP"] or ""), sum(r[x] or 0 for x in d)) for r in t}
 
