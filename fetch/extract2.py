@@ -1,30 +1,31 @@
-# Round 54 (Denmark retried after a connection reset; the rest of round 53 kept for reference): earlier years from sources the site already uses: Japan's municipal pupils (e-Stat SSDS 0000020205,
-# E2501 and E3501), Colombia's municipal education statistics (datos.gov.co nudc-7mev, every year), Taiwan's pupils by
-# county (Ministry of Education open data, every year in each file), Norway's pupils (SSB 11980, every year), Sweden's
-# pupils (Kolada N15835, 2015-2024), Denmark's pupils (LABY23) and child poverty (LABY07), every year.
-import os, re, json, urllib.request, urllib.parse, time, gzip, shutil
-OUT = "fetch/out/c54"; os.makedirs(OUT, exist_ok=True)
+# Round 55: Mexico, CONAPO's "Reconstrucción y proyecciones de la población de los municipios de México 1990-2040":
+# the page, the files it links (the interactive PDF's national database), and links inside that PDF.
+import os, re, json, urllib.request, urllib.parse, time, html, gzip, shutil
+OUT = "fetch/out/c55"; os.makedirs(OUT, exist_ok=True)
 log = open(f"{OUT}/log.txt", "w")
 UA = {"User-Agent": "Mozilla/5.0 (school-board research project; github.com/amaar-a1)", "Accept": "*/*"}
-def get(name, url, data=None, timeout=600, ctype="application/json"):
+def get(name, url, timeout=900):
     try:
-        req = urllib.request.Request(url, data=data.encode() if isinstance(data, str) else data, headers={**UA, **({"Content-Type": ctype} if data else {})})
-        b = urllib.request.urlopen(req, timeout=timeout).read()
+        b = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=timeout).read()
         if name: open(f"{OUT}/{name}", "wb").write(b)
-        log.write(f"OK {name} {len(b)} {url[:150]}\n"); return b
-    except Exception as e: log.write(f"ERR {name} {str(e)[:200]} {url[:150]}\n")
+        log.write(f"OK {name} {len(b)} {url}\n"); return b
+    except Exception as e: log.write(f"ERR {name} {str(e)[:200]} {url}\n")
     finally: log.flush(); time.sleep(1.5)
-# Denmark: LABY23 (pupils) and LABY07 (children in relative poverty), every year
-for t in ("LABY23", "LABY07"):
-    info = get(f"dk_{t}_info.json", f"https://api.statbank.dk/v1/tableinfo/{t}?lang=en&format=JSON")
-    if not info: continue
-    vs = json.loads(info)["variables"]
-    log.write(f"  DK {t} vars {[(v['id'], len(v['values']), [x['text'] for x in v['values'][:3]]) for v in vs]}\n")
-    body = {"table": t, "format": "CSV", "lang": "en", "variables": [{"code": v["id"], "values": ["*"]} for v in vs]}
-    get(f"dk_{t}_all.csv", "https://api.statbank.dk/v1/data", data=json.dumps(body))
+page = "https://www.gob.mx/conapo/documentos/reconstruccion-y-proyecciones-de-la-poblacion-de-los-municipios-de-mexico-1990-2040"
+b = get("mx_page.html", page)
+links = sorted(set(urllib.parse.urljoin(page, html.unescape(x)) for x in re.findall(r'href="([^"]+)"', b.decode("utf-8", "ignore")))) if b else []
+log.write("  links " + json.dumps([l for l in links if re.search(r"\.(pdf|xlsx?|csv|zip)$|conapo|attachment", l, re.I)]) + "\n")
+for l in links:
+    if re.search(r"\.(xlsx?|csv|zip)$", l, re.I) or (re.search(r"\.pdf$", l, re.I) and re.search(r"attachment|conapo", l, re.I)):
+        d = get("mx_" + os.path.basename(urllib.parse.urlparse(l).path)[-90:], l)
+        if d and l.lower().endswith(".pdf"):   # an interactive PDF: the URIs it opens
+            uris = sorted(set(re.findall(rb"/URI\s*\((https?://[^)]+)\)", d)))
+            log.write(f"  pdf uris {[u.decode('latin-1') for u in uris][:60]}\n")
+            for u in [u.decode("latin-1") for u in uris]:
+                if re.search(r"(nacional|national).*\.(xlsx?|csv|zip)$|\.(zip)$", u, re.I): get("mx_" + os.path.basename(urllib.parse.urlparse(u).path)[-90:], u)
 for f in os.listdir(OUT):
     p = f"{OUT}/{f}"
     if os.path.getsize(p) > 50e6 and not f.endswith(".gz"):
-        with open(p, "rb") as a, gzip.open(p + ".gz", "wb") as b: shutil.copyfileobj(a, b)
+        with open(p, "rb") as a, gzip.open(p + ".gz", "wb") as b2: shutil.copyfileobj(a, b2)
         os.remove(p)
 log.close()
