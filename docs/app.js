@@ -178,7 +178,9 @@
       "Public school enrollment": r["Public school enrollment"] ?? "", "Private school enrollment (within its borders)": r["Private school enrollment (within its borders)"] ?? "" }; };
     const pct = (v) => (String(v ?? "").trim() === "" ? "" : `${toNumber(v).toFixed(2)}%`);
     // Enrollment, population and public schools' share by year, for the Trends tab's lines and each place's own.
-    const histCols = (r) => ({ "Enrollment by year": r["Enrollment by year"] ?? "", "Population by year": r["Population by year"] ?? "", "Public share by year": r["Public share by year"] ?? "" });
+    const histCols = (r) => ({ "Enrollment by year": r["Enrollment by year"] ?? "", "Population by year": r["Population by year"] ?? "", "Public share by year": r["Public share by year"] ?? "",
+      "Enrollment by year (earlier borders)": r["Enrollment by year (earlier borders)"] ?? "", "Public share by year (earlier borders)": r["Public share by year (earlier borders)"] ?? "",
+      "Earlier borders": r["Earlier borders"] ?? "", "Border splits": r["Border splits"] ?? "" });
     datasets.forEach((d) => d.rows.forEach((r) => {
       const ca = d.country === "CA", fr = d.country === "FR", uk = d.country === "UK", ie = d.country === "IE", terr = !!d.state;
       const sp = d.simple;   // the Nordic countries and the Netherlands: municipalities, one shared layout

@@ -423,6 +423,10 @@
     const y = yearPairs(row && row[col]);
     return y.length >= 2 ? { d: y[y.length - 1][1] - y[0][1], from: y[0][0], to: y[y.length - 1][0] } : null;
   }
+  // A district split since its earliest year (Peru) also has its figures added up on the borders before the split;
+  // its change over time and its figures for years before the split are taken from those.
+  const earlyCol = (row, col) => (row && row[col + " (earlier borders)"] ? col + " (earlier borders)" : col);
+  const earlyWho = (row) => String((row && row["Earlier borders"]) || "").split("): ").pop();
   function pctChange(row, col) {
     const y = yearPairs(row && row[col]).filter((p) => p[1] > 0);
     return y.length >= 2 ? { d: 100 * (y[y.length - 1][1] / y[0][1] - 1), from: y[0][0], to: y[y.length - 1][0] } : null;
@@ -512,13 +516,17 @@
     if (metric === "recency") v = boardsOnly() && standIn(row) ? NaN : monthsSince(row);   // a stand-in's latest meeting isn't a school board's
     if (metric === "public") v = publicShare(row);
     if (metric === "change") { const c = povChange(row); v = c ? c.d : NaN; }
-    if (metric === "changePub") { const c = povChange(row, "Public share by year"); v = c ? c.d : NaN; }
-    if (YEAR_COL[metric]) { const y = selectedYear(); const p = yearPairs(row && row[YEAR_COL[metric]]).find((q) => q[0] === y); v = p ? p[1] : NaN; }
+    if (metric === "changePub") { const c = povChange(row, earlyCol(row, "Public share by year")); v = c ? c.d : NaN; }
+    if (YEAR_COL[metric]) {
+      const y = selectedYear(), at = (col) => { const p = yearPairs(row && row[col]).find((q) => q[0] === y); return p ? p[1] : NaN; };
+      v = at(YEAR_COL[metric]);
+      if (isNaN(v)) v = at(YEAR_COL[metric] + " (earlier borders)");   // before a split: the district it was part of
+    }
     // A place with meetings in other years, or none found at all, had none that year; one whose recordings carry no
     // dates can't be placed in a year (grey). A stand-in body counts as none when "school boards only" is ticked.
     if (metric === "meetYear" && isNaN(v)) v = row && row["Meetings by year"] ? 0 : (toNumber(row && row["Available Board Meetings"]) > 0 ? NaN : 0);
     if (metric === "meetYear" && boardsOnly() && standIn(row)) v = 0;
-    if (metric === "changeEnr") { const c = pctChange(row, "Enrollment by year"); v = c ? c.d : NaN; }
+    if (metric === "changeEnr") { const c = pctChange(row, earlyCol(row, "Enrollment by year")); v = c ? c.d : NaN; }
     if (metric === "changePop") { const c = pctChange(row, "Population by year"); v = c ? c.d : NaN; }
     if (metric === "perYear") { const q = boardsOnly() && standIn(row) ? { v: 0 } : perYear(row); v = q ? q.v : NaN; }
     if (isNaN(v)) return NO_DATA;
@@ -616,8 +624,9 @@
       (r["Latest meeting"] ? `<br>Latest recorded meeting: ${esc(r["Latest meeting"])}${isNaN(monthsSince(r)) ? "" : ` (${agoText(monthsSince(r))})`}` : "") +
       ((q) => (q && q.first ? `<br>Meetings per year since the first found (${q.first}): ${q.v < 10 ? q.v.toFixed(1) : Math.round(q.v)}` : ""))(perYear(r)) +
       ((c) => (c ? `<br>Change in the poverty figure, ${c.from}–${c.to}: ${c.d > 0 ? "+" : ""}${c.d.toFixed(1)} points` : ""))(povChange(r)) +
-      ((c) => (c ? `<br>Change in enrollment, ${c.from}–${c.to}: ${c.d > 0 ? "+" : ""}${c.d.toFixed(1)}%` : ""))(pctChange(r, "Enrollment by year")) +
+      ((c) => (c ? `<br>Change in enrollment, ${c.from}–${c.to}: ${c.d > 0 ? "+" : ""}${c.d.toFixed(1)}%${earlyCol(r, "Enrollment by year") !== "Enrollment by year" ? ` (${esc(earlyWho(r))}, on the borders before the split)` : ""}` : ""))(pctChange(r, earlyCol(r, "Enrollment by year"))) +
       ((c) => (c ? `<br>Change in population, ${c.from}–${c.to}: ${c.d > 0 ? "+" : ""}${c.d.toFixed(1)}%` : ""))(pctChange(r, "Population by year")) +
+      (r["Border splits"] ? `<br>Split in ${esc(String(r["Border splits"]).replace(/; (\d{4}): /g, "; in $1: "))}` : "") +
       publicLine(r) +
       (r.Locale ? `<br>Locale${/^(UK|IE)-/.test(r["District ID"]) || eu ? " (estimated)" : ""}: ${esc(r.Locale)}`
         : localeFallback(r, gid(feature)) ? `<br>Locale (estimated from its area's other places): ${esc(localeFallback(r, gid(feature)))}` : "") +
