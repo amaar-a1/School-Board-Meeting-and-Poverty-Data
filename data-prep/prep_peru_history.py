@@ -5,16 +5,17 @@ MINEDU, ESCALE, Censo Educativo YYYY, 00_Padron.zip (escale.minedu.gob.pe/docume
 Educativo/YYYY/; downloaded by hand): Padron.dbf, one row per school and programme, with TALUMNO (its pupils in that
 census; TALUYY in older files, e.g. TALU22), CODGEO (the district's INEI ubigeo) and GESTION (1 public, directly run; 2 public, privately run, as the site
 counts public; 3 private). Summed by district, as the site's 2025 figure is (every school and programme, all levels).
-2021's and 2020's Padron.dbf have no pupil count, so their pupils come from M01_edades.zip (2021) or
-02_Matricula_01.zip (2020) of the same folder (enrollment by age,
+The 2019–2021 Padron.dbf files have no pupil count, so their pupils come from M01_edades.zip (2021) or
+02_Matricula_01.zip (2019, 2020) of the same folder (enrollment by age,
 cuadro C201, or C202/C206 for the few programmes counted there; ages and columns added up per school, the largest of a
 school's tables taken, or their sum for cédula 7A whose two tables count different pupils), with the school's district
 and management from that year's Padron.dbf. District by district the median is about 98% of the next year's
-count (national totals 9.05M in 2020 and 9.10M in 2021, against 9.42M in 2022); Lima's Cercado is the main outlier
-(130k in 2021, 200k in 2022).
+count (national totals 9.00M in 2019, 9.05M in 2020 and 9.10M in 2021, against 9.42M in 2022); Lima's Cercado is the main outlier
+(130k in 2021, 200k in 2022), and San Isidro's 2019 figure includes
+TELESUP's 25k students, a technical institute that closed (counts cover every school in the padrón, institutes included).
 Usage: python3 data-prep/prep_peru_history.py YEAR 00_Padron.zip [YEAR 00_Padron.zip ...]
        python3 data-prep/prep_peru_history.py --edades 2021 Padron.zip M01_edades.zip
-       python3 data-prep/prep_peru_history.py --edades 2020 01_Padron.zip 02_Matricula_01.zip
+       python3 data-prep/prep_peru_history.py --edades 2020 01_Padron.zip 02_Matricula_01.zip   (2019 likewise)
 """
 import io, json, os, sys, tempfile, zipfile
 from dbfread import DBF
