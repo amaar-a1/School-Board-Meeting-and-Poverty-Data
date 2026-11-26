@@ -1,0 +1,67 @@
+{
+  "odata.metadata":"https://opendata.cbs.nl/ODataApi/OData/70221NED/$metadata#Cbs.OData.WebAPI.RegioS","value":[
+    {
+      "Key":"GM0206","Title":"Bemmel","Description":"Deze gemeenten is op 1 januari 2001 nieuwgevormd tijdens de herindeling in\r\nde Over-Betuwe. De (nieuwe) gemeenteraad is op 15 november 2000 gekozen.\r\nLijstverbinding tussen:\r\n- 2 Lokale onafhankelijke groeperingen.\r\nLijstverbinding:\r\nCombinatie van twee of meer partijen.\r\nDe Nederlandse Kieswet (artikel I 10) biedt deelnemende partijen de\r\nmogelijkheid hun kansen op een restzetel te vergroten door een\r\nlijstverbinding aan te gaan. Bij de verdeling van de restzetels worden de\r\npartijen die onderling hun lijsten verbonden hebben als \u00e9\u00e9n partij\r\nbeschouwd.","CategoryGroupID":null
+    },{
+      "Key":"GM0373","Title":"Bergen (NH)","Description":"Deze gemeente is op 1 januari 2001 ontstaan door samenvoeging van de\r\ngemeenten Bergen (oud), Egmond en Schoorl. De (nieuwe) gemeenteraad is\r\nop 18 oktober 2000 gekozen.","CategoryGroupID":null
+    },{
+      "Key":"GM0310","Title":"De Bilt","Description":"Deze gemeente is op 1 januari 2001 nieuwgevormd tijdens de herindeling in\r\neen deel van de provincie Utrecht. De (nieuwe) gemeenteraad is op\r\n8 november 2000 gekozen.\r\nLijstverbinding tussen:\r\n- CU en SGP.\r\nLijstverbinding:\r\nCombinatie van twee of meer partijen.\r\nDe Nederlandse Kieswet (artikel I 10) biedt deelnemende partijen de\r\nmogelijkheid hun kansen op een restzetel te vergroten door een\r\nlijstverbinding aan te gaan. Bij de verdeling van de restzetels worden de\r\npartijen die onderling hun lijsten verbonden hebben als \u00e9\u00e9n partij\r\nbeschouwd.","CategoryGroupID":null
+    },{
+      "Key":"GM0383","Title":"Castricum","Description":"Deze gemeente is op 1 januari 2002 ontstaan door samenvoeging van de\r\ngemeenten Akersloot,  Castricum (oud) en Limmen. De (nieuwe) gemeenteraad\r\nis op 14 november 2001 gekozen.","CategoryGroupID":null
+    },{
+      "Key":"GM0148","Title":"Dalfsen","Description":"Deze gemeente is op 1 januari 2001 nieuwgevormd tijdens de herindeling van\r\nWest-Overijssel. De (nieuwe) gemeenteraad is op 18 oktober 2000 gekozen.\r\nLijstverbinding tussen:\r\n- 2 Lokale onafhankelijke groeperingen.\r\nLijstverbinding:\r\nCombinatie van twee of meer partijen.\r\nDe Nederlandse Kieswet (artikel I 10) biedt deelnemende partijen de\r\nmogelijkheid hun kansen op een restzetel te vergroten door een\r\nlijstverbinding aan te gaan. Bij de verdeling van de restzetels worden de\r\npartijen die onderling hun lijsten verbonden hebben als \u00e9\u00e9n partij\r\nbeschouwd.","CategoryGroupID":null
+    },{
+      "Key":"GM0149","Title":"Denekamp","Description":"Deze gemeente is op 1 januari 2001 nieuwgevormd tijdens de herindeling van\r\neen deel van Twente. De (nieuwe) gemeenteraad is op 29 november 2000\r\ngekozen.\r\nLijstverbinding tussen:\r\n- VVD en 1 Lokale onafhankelijke groepering.\r\nLijstverbinding:\r\nCombinatie van twee of meer partijen.\r\nDe Nederlandse Kieswet (artikel I 10) biedt deelnemende partijen de\r\nmogelijkheid hun kansen op een restzetel te vergroten door een\r\nlijstverbinding aan te gaan. Bij de verdeling van de restzetels worden de\r\npartijen die onderling hun lijsten verbonden hebben als \u00e9\u00e9n partij\r\nbeschouwd.","CategoryGroupID":null
+    },{
+      "Key":"GM1711","Title":"Echt-Susteren","Description":"Per 1 januari 2003 nieuwgevormde gemeente, ontstaan door samenvoeging van\r\ngemeente Echt en Susteren. De (nieuwe) gemeenteraad is op 6 november 2002\r\ngekozen.","CategoryGroupID":null
+    },{
+      "Key":"GM0160","Title":"Hardenberg","Description":"Deze gemeente is op 1 januari 2001 nieuwgevormd tijdens de herindeling van\r\nWest-Overijssel. De (nieuwe) gemeenteraad is op 18 oktober 2000 gekozen.","CategoryGroupID":null
+    },{
+      "Key":"GM1735","Title":"Hof van Twente","Description":"Deze gemeente is op 1 januari 2001 nieuwgevormd tijdens de herindeling van\r\neen deel van Twente. De (nieuwe) gemeenteraad is op 29 november 2000\r\ngekozen.","CategoryGroupID":null
+    },{
+      "Key":"GM1507","Title":"Horst aan de Maas","Description":"Deze gemeente is op 1 januari 2001 ontstaan door samenvoeging van de\r\ngemeenten Broekhuizen, Grubbenvorst en Horst. De (nieuwe) gemeenteraad\r\nis op 22 november 2000 gekozen.","CategoryGroupID":null
+    },{
+      "Key":"GM0677","Title":"Hulst","Description":"Per 1 januari 2003 nieuwgevormde gemeente, ontstaan door gemeentelijke\r\nherindeling in Zeeuws-Vlaanderen.  De (nieuwe) gemeenteraad is op\r\n20 november 2002 gekozen.","CategoryGroupID":null
+    },{
+      "Key":"GM0166","Title":"Kampen","Description":"Deze gemeente is op 1 januari 2001 nieuwgevormd tijdens de herindeling van\r\nWest-Overijssel. De (nieuwe) gemeenteraad is op 18 oktober 2000 gekozen.\r\nLijstverbinding tussen:\r\n- D66, PvdA en 1 Lokale progressieve groepering;\r\n- CU en SGP.\r\nLijstverbinding:\r\nCombinatie van twee of meer partijen.\r\nDe Nederlandse Kieswet (artikel I 10) biedt deelnemende partijen de\r\nmogelijkheid hun kansen op een restzetel te vergroten door een\r\nlijstverbinding aan te gaan. Bij de verdeling van de restzetels worden de\r\npartijen die onderling hun lijsten verbonden hebben als \u00e9\u00e9n partij\r\nbeschouwd.","CategoryGroupID":null
+    },{
+      "Key":"GM0258","Title":"Kesteren","Description":"Deze gemeente is op 1 januari 2002 ontstaan door samenvoeging van de\r\ngemeenten Dodewaard, Echteld en Kesteren (oud). De (nieuwe) gemeenteraad\r\nis op 31 oktober 2001 gekozen.","CategoryGroupID":null
+    },{
+      "Key":"GM1916","Title":"Leidschendam-Voorburg","Description":"Deze gemeente is op 1 januari 2002 nieuwgevormd tijdens de herindeling van\r\nDen Haag en omgeving. De (nieuwe) gemeenteraad is op 7 november 2001\r\ngekozen.","CategoryGroupID":null
+    },{
+      "Key":"GM0174","Title":"Olst","Description":"Deze gemeente is op 1 januari 2001 nieuwgevormd tijdens de herindeling van\r\nWest-Overijssel. De (nieuwe) gemeenteraad is op 18 oktober 2000 gekozen.","CategoryGroupID":null
+    },{
+      "Key":"GM0828","Title":"Oss","Description":"Per 1 januari 2003 nieuwgevormde gemeente, ontstaan door samenvoeging van\r\ngemeente Oss (oud) en Ravenstein. De (nieuwe) gemeenteraad is op\r\n20 november 2002 gekozen.","CategoryGroupID":null
+    },{
+      "Key":"GM1734","Title":"Overbetuwe","Description":"Deze gemeente is op 1 januari 2001 nieuwgevormd tijdens de herindeling in\r\nOver-Betuwe. De (nieuwe) gemeenteraad is op 15 november 2000 gekozen.","CategoryGroupID":null
+    },{
+      "Key":"GM1926","Title":"Pijnacker-Nootdorp","Description":"Deze gemeente is op 1 januari 2002 nieuwgevormd tijdens de herindeling van\r\nDen Haag en omgeving. De (nieuwe) gemeenteraad is op 7 november 2001\r\ngekozen.","CategoryGroupID":null
+    },{
+      "Key":"GM0177","Title":"Raalte","Description":"Deze gemeente is op 1 januari 2001 nieuwgevormd tijdens de herindeling van\r\nWest-Overijssel. De (nieuwe) gemeenteraad is op 18 oktober 2000 gekozen.\r\nLijstverbinding tussen:\r\n- 2 Lokale onafhankelijke groeperingen.\r\nLijstverbinding:\r\nCombinatie van twee of meer partijen.\r\nDe Nederlandse Kieswet (artikel I 10) biedt deelnemende partijen de\r\nmogelijkheid hun kansen op een restzetel te vergroten door een\r\nlijstverbinding aan te gaan. Bij de verdeling van de restzetels worden de\r\npartijen die onderling hun lijsten verbonden hebben als \u00e9\u00e9n partij\r\nbeschouwd.","CategoryGroupID":null
+    },{
+      "Key":"GM0178","Title":"Rijssen","Description":"Deze gemeente is op 1 januari 2001 nieuwgevormd tijdens de herindeling van\r\neen deel van Twente. De (nieuwe) gemeenteraad is op 29 november 2000\r\ngekozen.","CategoryGroupID":null
+    },{
+      "Key":"GM1883","Title":"Sittard-Geleen","Description":"Deze gemeente is op 1 januari 2001 ontstaan door samenvoeging van de\r\ngemeenten Born, Geleen en Sittard. De (nieuwe) gemeenteraad is op 22\r\nnovember 2000 gekozen.\r\nLijstverbinding tussen:\r\n- CDA en 1 Lokale onafhankelijke groepering;\r\n- D66, GL en PvdA;\r\n- 3 Lokale onafhankelijke groeperingen.\r\nLijstverbinding:\r\nCombinatie van twee of meer partijen.\r\nDe Nederlandse Kieswet (artikel I 10) biedt deelnemende partijen de\r\nmogelijkheid hun kansen op een restzetel te vergroten door een\r\nlijstverbinding aan te gaan. Bij de verdeling van de restzetels worden de\r\npartijen die onderling hun lijsten verbonden hebben als \u00e9\u00e9n partij\r\nbeschouwd.","CategoryGroupID":null
+    },{
+      "Key":"GM1714","Title":"Sluis","Description":"Per 1 januari 2003 nieuwgevormde gemeente, ontstaan door gemeentelijke\r\nherindeling in Zeeuws-Vlaanderen.  De (nieuwe) gemeenteraad is op\r\n20 november 2002 gekozen.","CategoryGroupID":null
+    },{
+      "Key":"GM0181","Title":"Steenwijk","Description":"Deze gemeente is op 1 januari 2001 nieuwgevormd tijdens de herindeling van\r\nWest-Overijssel. De (nieuwe) gemeenteraad is op 18 oktober 2000 gekozen.","CategoryGroupID":null
+    },{
+      "Key":"GM0715","Title":"Terneuzen","Description":"Per 1 januari 2003 nieuwgevormde gemeente, ontstaan door gemeentelijke\r\nherindeling in Zeeuws-Vlaanderen.  De (nieuwe) gemeenteraad is op\r\n20 november 2002 gekozen.","CategoryGroupID":null
+    },{
+      "Key":"GM0344","Title":"Utrecht","Description":"Deze gemeente is op 1 januari 2001 nieuwgevormd tijdens de herindeling in\r\neen deel van de provincie Utrecht. De (nieuwe) gemeenteraad is op\r\n8 november 2000 gekozen.\r\nLijstverbinding tussen:\r\n- 1 Lokale onafhankelijke groepering en 1 Lokale progressieve groepering.\r\nLijstverbinding:\r\nCombinatie van twee of meer partijen.\r\nDe Nederlandse Kieswet (artikel I 10) biedt deelnemende partijen de\r\nmogelijkheid hun kansen op een restzetel te vergroten door een\r\nlijstverbinding aan te gaan. Bij de verdeling van de restzetels worden de\r\npartijen die onderling hun lijsten verbonden hebben als \u00e9\u00e9n partij\r\nbeschouwd.","CategoryGroupID":null
+    },{
+      "Key":"GM0983","Title":"Venlo","Description":"Deze gemeente is op 1 januari 2001 ontstaan door samenvoeging van de\r\ngemeenten Belfeld, Tegelen en Venlo (oud). De (nieuwe) gemeenteraad is op\r\n22 november 2000 gekozen.\r\nLijstverbinding tussen:\r\n- 3 Lokale onafhankelijke groeperingen.\r\nLijstverbinding:\r\nCombinatie van twee of meer partijen.\r\nDe Nederlandse Kieswet (artikel I 10) biedt deelnemende partijen de\r\nmogelijkheid hun kansen op een restzetel te vergroten door een\r\nlijstverbinding aan te gaan. Bij de verdeling van de restzetels worden de\r\npartijen die onderling hun lijsten verbonden hebben als \u00e9\u00e9n partij\r\nbeschouwd.","CategoryGroupID":null
+    },{
+      "Key":"GM0186","Title":"Vriezenveen","Description":"Deze gemeente is op 1 januari 2001 nieuwgevormd tijdens de herindeling van\r\neen deel van Twente. De (nieuwe) gemeenteraad is op 29 november 2000\r\ngekozen.","CategoryGroupID":null
+    },{
+      "Key":"GM0632","Title":"Woerden","Description":"Deze gemeente is op 1 januari 2001 nieuwgevormd tijdens de herindeling in\r\neen deel van de provincie Utrecht. De (nieuwe) gemeenteraad is op\r\n8 november 2000 gekozen.\r\nLijstverbinding tussen:\r\n- GL en PvdA;\r\n- CU en SGP.\r\nLijstverbinding:\r\nCombinatie van twee of meer partijen.\r\nDe Nederlandse Kieswet (artikel I 10) biedt deelnemende partijen de\r\nmogelijkheid hun kansen op een restzetel te vergroten door een\r\nlijstverbinding aan te gaan. Bij de verdeling van de restzetels worden de\r\npartijen die onderling hun lijsten verbonden hebben als \u00e9\u00e9n partij\r\nbeschouwd.","CategoryGroupID":null
+    },{
+      "Key":"GM1696","Title":"Wijdemeren","Description":"Deze gemeente is op 1 januari 2002 ontstaan door samenvoeging van de\r\ngemeenten 's-Graveland, Loosdrecht en Nederhorst den Berg , tevens een\r\nwijziging van de grens tussen de provincies Noord-Holland en Utrecht. De\r\n(nieuwe) gemeenteraad is op 7 november 2001 gekozen.","CategoryGroupID":null
+    },{
+      "Key":"GM1896","Title":"Zwartewaterland","Description":"Deze gemeente is op 1 januari 2001 nieuwgevormd tijdens de herindeling van\r\nWest-Overijssel. De (nieuwe) gemeenteraad is op 18 oktober 2000 gekozen.\r\nLijstverbinding tussen:\r\n- CU en 1 Lokale confessionele groepering.\r\nLijstverbinding:\r\nCombinatie van twee of meer partijen.\r\nDe Nederlandse Kieswet (artikel I 10) biedt deelnemende partijen de\r\nmogelijkheid hun kansen op een restzetel te vergroten door een\r\nlijstverbinding aan te gaan. Bij de verdeling van de restzetels worden de\r\npartijen die onderling hun lijsten verbonden hebben als \u00e9\u00e9n partij\r\nbeschouwd.","CategoryGroupID":null
+    },{
+      "Key":"GM0642","Title":"Zwijndrecht","Description":"Per 1 januari 2003 nieuwgevormde gemeente, ontstaan door samenvoeging van\r\ngemeente Heerjansdam en Zwijndrecht (oud) . De (nieuwe) gemeenteraad is op\r\n20 november 2002 gekozen.","CategoryGroupID":null
+    }
+  ]
+}
