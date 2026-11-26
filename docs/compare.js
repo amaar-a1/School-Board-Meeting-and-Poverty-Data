@@ -11,11 +11,76 @@
   const picked = [null, null];
   let byId = null;
 
+  // Whole countries and their states, provinces or regions, as well as single places. An area's figures are made from
+  // the places in it: totals for population, pupils and meetings, a population-weighted average for poverty, and its
+  // lines over time linked year to year (history.js). Its ID in the link is "area:<country key>[:<region>]".
+  let areas = null;
+  const REGION_COLS = ["State", "Province", "Region", "Nation", "Department", "Territory"];
+  function regionColOf(ds) {
+    const cands = [ds.groups && ds.groups.column, ...REGION_COLS].filter(Boolean);
+    for (const c of cands) { const v = new Set(ds.rows.map((r) => r[c]).filter(Boolean)); if (v.size >= 2 && v.size <= 150) return c; }
+    return null;
+  }
+  function buildAreas() {
+    if (areas) return areas;
+    const SD = window.SiteData, S = window.SiteSearch;
+    areas = [];
+    (SD ? SD.datasets : []).forEach((ds) => {
+      if (ds.combined || ds.country === "ISLE" || !ds.rows.length) return;
+      const key = SD.keyOf(ds), cname = ds.button || (ds.groups && ds.groups.label) || ds.name;
+      const add = (id, name, label, rows) => areas.push({ area: true, id, ds, label, rows, row: { District: name, "District ID": id },
+        text: S ? S.norm(`${name} ${label}`) : name.toLowerCase(), size: 1e12 + rows.length });
+      add(`area:${key}`, cname, `Country (${ds.rows.length.toLocaleString()} ${(ds.recordLabel || "places").toLowerCase()})`, ds.rows);
+      const rc = regionColOf(ds);
+      if (!rc) return;
+      const names = rc === "State" && SD.config.perState ? SD.config.perState.names : {};
+      [...new Set(ds.rows.map((r) => r[rc]).filter(Boolean))].forEach((g) => {
+        const rows = ds.rows.filter((r) => r[rc] === g);
+        add(`area:${key}:${g}`, String(names[g] || g).trim(), `${(ds.groups && ds.groups.word) || rc.toLowerCase()} of ${cname} (${rows.length.toLocaleString()} places)`, rows);
+      });
+    });
+    return areas;
+  }
   const entries = () => (window.SiteSearch ? window.SiteSearch.index : []);
   function entryById(id) {
+    if (String(id).startsWith("area:")) return buildAreas().find((a) => a.id === String(id));
     if (!byId) { byId = new Map(); entries().forEach((e) => { if (e.row["District ID"] && !byId.has(e.row["District ID"])) byId.set(String(e.row["District ID"]), e); }); }
     return byId.get(String(id));
   }
+  // An area's figures as one row with the site's usual columns, so it shows like a place.
+  const AGG = new WeakMap();
+  function aggregate(e) {
+    if (AGG.has(e)) return AGG.get(e);
+    const rows = e.rows, ds = e.ds, H = window.SiteHistory;
+    const sum = (col, rs = rows) => rs.reduce((t, r) => t + (num(r[col]) > 0 ? num(r[col]) : 0), 0);
+    const povCol = (r) => (ds.simple && ds.simple.pov && String(r[ds.simple.pov] ?? "").trim() !== "" && ds.simple.pov) || POV_COLS.find((c) => String(r[c] ?? "").trim() !== "");
+    const weight = (r) => num(r.Population) > 0 ? num(r.Population) : num(r["Children Ages 5-17"]) > 0 ? num(r["Children Ages 5-17"]) : num(r.Children) > 0 ? num(r.Children) : 1;
+    let pw = 0, pv = 0, pn = 0, pcol = "";
+    rows.forEach((r) => { const c = povCol(r); const v = c ? num(r[c]) : NaN; if (!isNaN(v)) { pw += weight(r); pv += v * weight(r); pn++; pcol = pcol || c; } });
+    const both = rows.filter((r) => num(r.Enrollment) > 0 && String(r["Public school enrollment"] ?? "") !== "" && !r["Enrollment estimated"]);
+    const meet = rows.reduce((t, r) => t + (window.SiteData.meetOf(r, "Available Board Meetings") || 0), 0);
+    const latest = rows.map((r) => r["Latest meeting"] || "").sort().pop() || "";
+    const est = rows.some((r) => r["Enrollment estimated"]);
+    const row = { District: e.row.District, "District ID": e.id, Population: sum("Population") || "", Enrollment: sum("Enrollment") || "",
+      "Public school enrollment": both.length ? sum("Public school enrollment", both) : "", "Available Board Meetings": meet, "Latest meeting": latest,
+      "Enrollment year": est ? `total of its places' figures; ${rows.filter((r) => r["Enrollment estimated"]).length.toLocaleString()} of them estimated (school-age children, no count published)` : "total of its places' figures", "School system": `${rows.length.toLocaleString()} ${(ds.recordLabel || "places").toLowerCase()}`,
+      "Poverty measure": pn ? `average of ${pn.toLocaleString()} places' figures, weighted by population (${(povOf({ row: rows.find((r) => povCol(r)), ds }) || {}).measure || pcol})` : "" };
+    if (pn) row[pcol] = (pv / pw).toFixed(2) + "%";
+    row._pubBase = both.length ? sum("Enrollment", both) : 0;
+    // Over time: each measure linked over the area's places; meetings added up.
+    if (H) H.MEASURES.forEach((m) => {
+      const series = rows.map((r) => H.parse(r[m.col])).filter((x) => Object.keys(x).length);
+      if (!series.length) return;
+      let line = {};
+      if (m.kind === "sum") series.forEach((x) => Object.entries(x).forEach(([y, v]) => { line[y] = (line[y] || 0) + v; }));
+      else line = H.linked(series, m.kind);
+      const ys = Object.keys(line).sort();
+      if (ys.length) row[m.col] = ys.map((y) => `${y}: ${line[y]}${m.unit === "%" ? "%" : ""}`).join("; ");
+    });
+    AGG.set(e, row);
+    return row;
+  }
+  const rowOf = (e) => (e.area ? aggregate(e) : e.row);
 
   // One search box (slot 0 or 1): type, pick from the list with the mouse or the arrow keys and Enter.
   function wire(slot) {
@@ -28,7 +93,7 @@
       active = -1;
       if (q.length < 2) return hide();
       const words = q.split(/\s+/);
-      shown = entries().filter((e) => words.every((w) => e.text.includes(w)))
+      shown = buildAreas().concat(entries()).filter((e) => words.every((w) => e.text.includes(w)))
         .sort((a, b) => (S.norm(b.row.District).startsWith(q) - S.norm(a.row.District).startsWith(q)) || b.size - a.size).slice(0, 8);
       list.innerHTML = shown.length
         ? shown.map((e, i) => `<li role="option" data-i="${i}" aria-selected="false"><strong>${esc(e.row.District)}</strong><span>${esc(e.label)}</span></li>`).join("")
@@ -64,27 +129,28 @@
   }
 
   function povOf(e) {
-    const r = e.row, ds = e.ds;
+    const r = e.area ? rowOf(e) : e.row, ds = e.ds;
     const col = (ds.simple && ds.simple.pov && String(r[ds.simple.pov] ?? "").trim() !== "" && ds.simple.pov) || POV_COLS.find((c) => String(r[c] ?? "").trim() !== "");
     const q = window.SiteQuality ? window.SiteQuality.quality(ds) : null;
-    return { v: col ? num(r[col]) : NaN, measure: r["Poverty measure"] || (q && q.measure) || col || "", est: !!r._rankEst || /estimat/i.test(col || "") };
+    return { v: col ? num(r[col]) : NaN, measure: r["Poverty measure"] || (q && q.measure) || col || "", est: !e.area && (!!r._rankEst || /estimat/i.test(col || "")) };
   }
 
   // The figures shown for each place: [label, value, note].
   function fields(e) {
-    const r = e.row, ds = e.ds, p = povOf(e);
+    const r = rowOf(e), ds = e.ds, p = povOf(e);
     const enr = num(r.Enrollment), pub = num(r["Public school enrollment"]), pop = num(r.Population), dens = num(r["People per km² (estimated)"]);
+    const pubBase = e.area ? r._pubBase : enr;
     const meet = window.SiteData.meetOf(r, "Available Board Meetings");
-    const estEnr = r["Enrollment estimated"] || /estimated/i.test(r["Enrollment year"] || "");
-    const where = ds.country && ds.country !== "US" ? (ds.country === "ISLE" ? r.District : ds.name) : "United States";
+    const estEnr = !e.area && (r["Enrollment estimated"] || /estimated/i.test(r["Enrollment year"] || ""));
+    const where = e.area ? (e.id.split(":").length > 2 ? (ds.button || (ds.groups && ds.groups.label) || ds.name) : "Whole country") : ds.country && ds.country !== "US" ? (ds.country === "ISLE" ? r.District : ds.name) : "United States";
     return [
       ["Country", where, e.label],
       ["Poverty", isNaN(p.v) ? "–" : `${p.v.toFixed(1)}%`, p.measure + (p.est ? " (estimated from a wider area)" : "")],
-      ["Poverty rank in its country", String(r["Poverty rank in country"] ?? "") !== "" ? `${r["Poverty rank in country"]} of 100` : "–", "100 = the highest poverty in its country" + (r._rankEst ? "; estimated" : "")],
+      ["Poverty rank in its country", String(r["Poverty rank in country"] ?? "") !== "" ? `${r["Poverty rank in country"]} of 100` : "–", e.area ? "" : "100 = the highest poverty in its country" + (r._rankEst ? "; estimated" : "")],
       ["Meetings found", isNaN(meet) ? "0" : meet.toLocaleString(), [r["Meeting body"], r["Meetings type"]].filter(Boolean).join(": ")],
       ["Latest meeting", r["Latest meeting"] || "–", ""],
       ["Enrollment", isNaN(enr) ? "–" : enr.toLocaleString(), estEnr ? "estimated: school-age children, no count published" : r["Enrollment year"] || ""],
-      ["Public schools' share", pub > 0 && enr > 0 && !estEnr ? `${Math.round(100 * pub / enr)}%` : "–", ""],
+      ["Public schools' share", pub > 0 && pubBase > 0 && (e.area || !estEnr) ? `${Math.round(100 * pub / pubBase)}%` : "–", e.area && pub > 0 ? "of the pupils in its places that report both counts" : ""],
       ["Population", isNaN(pop) ? "–" : pop.toLocaleString(), ""],
       ["People per km²", isNaN(dens) ? "–" : dens.toLocaleString(), r.Locale ? `locale: ${r.Locale}` : ""],
       ["School system", r["School system"] || r["Board type"] || "–", ""]
@@ -107,7 +173,7 @@
     const [a, b] = picked;
     $("cmp-download").disabled = !(a && b);
     const hist = $("cmp-history");
-    if (hist && window.SiteHistory) window.SiteHistory.renderPlaces(hist, [a, b].map((e) => e && { name: e.row.District, row: e.row }), { title: "Over time" });
+    if (hist && window.SiteHistory) window.SiteHistory.renderPlaces(hist, [a, b].map((e) => e && { name: e.row.District, row: rowOf(e) }), { title: "Over time" });
     if (!a && !b) { out.innerHTML = `<p class="muted">Pick two places to compare them.</p>`; return; }
     const fa = a ? fields(a) : null, fb = b ? fields(b) : null;
     const rows = (fa || fb).map((f, i) => [f[0], fa && fa[i], fb && fb[i]]);
@@ -116,6 +182,7 @@
       rows.map(([l, x, y]) => `<tr><th scope="row">${esc(l)}</th><td>${cell(x)}</td><td>${cell(y)}</td></tr>`).join("") +
       `<tr><th scope="row">Data quality (its country)</th><td>${a ? qualityCell(a) : ""}</td><td>${b ? qualityCell(b) : ""}</td></tr>` +
       `</tbody></table></div>` +
+      (a && a.area || b && b.area ? `<p class="note">A country's or region's figures are made from its places on this site: totals for population, pupils and meetings, and an average of its places' poverty figures weighted by their population, so they can differ from the official figure for the whole area.</p>` : "") +
       (a && b && a.ds !== b.ds ? `<p class="note">These places are in different countries, which measure poverty in different ways and count different bodies' meetings, so compare their ranks within their countries rather than their poverty figures.</p>` : "");
   }
 
