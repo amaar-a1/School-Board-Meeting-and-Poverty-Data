@@ -917,6 +917,9 @@ def peru():
     pf = os.path.join(IN, "peru", "pe_alumnos_2025.json")
     pj = json.load(open(pf, encoding="utf-8")) if os.path.exists(pf) else {}
     pupils, pupils_public = pj.get("pupils", {}), pj.get("pupils_public", {})   # public: gestión directa and gestión privada
+    # Earlier school censuses (00_Padron.zip of each year, summed by prep_peru_history.py), for change over time
+    hf = os.path.join(IN, "peru", "pe_alumnos_history.json")
+    ph = {**(json.load(open(hf, encoding="utf-8")) if os.path.exists(hf) else {}), "2025": pj}
     geo = {f["properties"]["IDDIST"]: f for f in json.load(open(os.path.join(IN, "peru", "peru_distrital_simple.geojson"), encoding="utf-8"))["features"] if f.get("geometry")}
     # Putumayo province (2014) took two of Maynas's districts, which got new codes; the borders file has the old ones.
     # Putumayo's old border also covers Rosa Panduro and Yaguas, made from it.
@@ -927,7 +930,9 @@ def peru():
         f = geo.get(code); area = area_km2(f["geometry"]) if f else 0
         dens = d["pop"] / area if area and d["pop"] else 0
         did = f"PE-{code}"
-        rows.append({"District": d["name"], "Region": PE_DEPT[code[:2]], "Province": prov.get(code[:4], ""), "Population": d["pop"],
+        py = {y: v["pupils"][code] for y, v in ph.items() if v.get("pupils", {}).get(code)}
+        pub = {y: 100 * ph[y]["pupils_public"].get(code, 0) / n for y, n in py.items() if ph[y].get("pupils_public")}
+        rows.append({**history_cols({"pupil_years": py, "public_years": pub}), "District": d["name"], "Region": PE_DEPT[code[:2]], "Province": prov.get(code[:4], ""), "Population": d["pop"],
                      "Poverty rate (all ages)": f"{(d['lo'] + d['hi']) / 2:.2f}%", "Poverty range": f"{d['lo']:.1f}–{d['hi']:.1f}%",
                      "Poverty note": "Share of people below the monetary poverty line, all ages, 2018 (INEI poverty map): midpoint of the 95% confidence interval; no child rate is published by district",
                      "Enrollment": pupils.get(code, ""), "Enrollment year": "2025 (school census: all schools and programmes, public and private)" if code in pupils else "",
