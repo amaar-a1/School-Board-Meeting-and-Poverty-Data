@@ -906,6 +906,26 @@ def peru_poverty():
     return dist, prov
 
 
+def pe_splits(ph):
+    """(year, code) pairs to leave out of Peru's enrollment series for districts made out of others. Until a new district
+    exists its schools are counted in the ones it came from, so a same-province district losing at least half the new
+    district's pupils and a tenth of its own in its first year is taken as its parent and its earlier years dropped."""
+    ys = sorted(ph); P = {y: ph[y].get("pupils", {}) for y in ys}; out = set()
+    for c in P[ys[-1]]:
+        s = [y for y in ys if P[y].get(c)]
+        if s[0] == ys[0]: continue
+        # the new district's first real year: its count is at least half the next year's
+        F = next((y for y, z in zip(s, s[1:] + [None]) if z is None or P[y][c] >= P[z][c] / 2), s[-1])
+        for y in s:
+            if y < F: out.add((y, c))
+        prev = ys[ys.index(F) - 1]; n = P[F][c]
+        for p in P[F]:
+            drop = P[prev].get(p, 0) - P[F][p]
+            if n >= 300 and p[:4] == c[:4] and p != c and drop >= n / 2 and drop >= P[prev][p] / 10:
+                out |= {(y, p) for y in ys if y < F}
+    return out
+
+
 def peru():
     """1,874 districts. Schools are run by the regional education directorates and their local units (UGEL), not by
     the districts; the district council (concejo municipal) stands in for meetings. INEI publishes district poverty
@@ -920,6 +940,7 @@ def peru():
     # Earlier school censuses (00_Padron.zip of each year, summed by prep_peru_history.py), for change over time
     hf = os.path.join(IN, "peru", "pe_alumnos_history.json")
     ph = {**(json.load(open(hf, encoding="utf-8")) if os.path.exists(hf) else {}), "2025": pj}
+    skip = pe_splits(ph)
     geo = {f["properties"]["IDDIST"]: f for f in json.load(open(os.path.join(IN, "peru", "peru_distrital_simple.geojson"), encoding="utf-8"))["features"] if f.get("geometry")}
     # Putumayo province (2014) took two of Maynas's districts, which got new codes; the borders file has the old ones.
     # Putumayo's old border also covers Rosa Panduro and Yaguas, made from it.
@@ -930,8 +951,8 @@ def peru():
         f = geo.get(code); area = area_km2(f["geometry"]) if f else 0
         dens = d["pop"] / area if area and d["pop"] else 0
         did = f"PE-{code}"
-        # The 2017 padrón still codes Andrés Avelino Cáceres's schools to Ayacucho district, so 2017 is left out for both.
-        py = {y: v["pupils"][code] for y, v in ph.items() if v.get("pupils", {}).get(code) and not (y == "2017" and code in ("050101", "050116"))}
+        # The 2016 and 2017 padrones still code Andrés Avelino Cáceres's schools to Ayacucho district, so both years are left out for both.
+        py = {y: v["pupils"][code] for y, v in ph.items() if v.get("pupils", {}).get(code) and not (y in ("2016", "2017") and code in ("050101", "050116")) and (y, code) not in skip}
         pub = {y: 100 * ph[y]["pupils_public"].get(code, 0) / n for y, n in py.items() if ph[y].get("pupils_public")}
         rows.append({**history_cols({"pupil_years": py, "public_years": pub}), "District": d["name"], "Region": PE_DEPT[code[:2]], "Province": prov.get(code[:4], ""), "Population": d["pop"],
                      "Poverty rate (all ages)": f"{(d['lo'] + d['hi']) / 2:.2f}%", "Poverty range": f"{d['lo']:.1f}–{d['hi']:.1f}%",
