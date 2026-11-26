@@ -1,0 +1,12 @@
+OK en Cantons of Costa Rica rev 1374585133 160678
+OK es Anexo:Cantones de Costa Rica rev 176012891 301289
+OK es Anexo:Cantones de Costa Rica por población rev 176012891 301383
+OK en Departments of Uruguay rev 1352317586 136764
+OK es Departamentos de Uruguay rev 175311219 112968
+OK en Counties of Kenya rev 1385578537 177950
+OK en Districts of Rwanda rev 1364110136 87579
+OK es Anexo:Cantones de Ecuador rev 174920060 461611
+MISS es Anexo:Cantones de Ecuador por población {'error': {'code': 'missingtitle', 'info': "The page you specified doesn't exist.", '*': 'See https://es.wikipedia.org/w/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at 
+OK en Cantons of Ecuador rev 1384465236 161636
+ERR es Anexo:Distritos del Perú HTTP Error 429: Too Many Requests
+ERR es Anexo:Provincias del Perú HTTP Error 429: Too Many Requests
