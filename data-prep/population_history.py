@@ -26,6 +26,8 @@ Sources:
   mid-year population, reconstructed for 1990-2020 and projected from 2021, to the current year (fetch round 55).
 - South Africa: the 2011 and 2022 censuses by municipality, on the 2022 boundaries (Stats SA, Census 2022: Provinces
   at a Glance).
+- Costa Rica (2011, 2022), Kenya (2009, 2019), Ecuador (2022) and Uruguay (2023): census figures from Wikipedia's tables,
+  which cite INEC, KNBS and INE (inputs/wiki_census/), with the site's own figure.
 - Sri Lanka: the 1981, 2001, 2012 and 2024 censuses by district (DCS, 2024 census final report; no 2001 figure for the
   Northern and Eastern districts, where that census wasn't completed).
 - Peru: the 2017 census count by district (INEI, Resultados definitivos, Tomo 1, uploaded by the project's owner),
@@ -223,6 +225,20 @@ def prep(raw):
         d17 = json.load(open(pf17, encoding="utf-8"))["districts"]
         res["peru"] = {r["District ID"]: {"2017": d17[r["District ID"]]["2017"], "2018": round(float(r["Population"]))}
                        for r in csv.DictReader(open(os.path.join(DOCS, "peru.csv"), encoding="utf-8")) if r["District ID"] in d17 and r.get("Population")}
+    # Census figures from Wikipedia's tables (which cite the statistics offices; fetch round 66), with the site's own
+    # figure for its year (SINGLE_YEAR): Costa Rica 2011 and 2022, Kenya 2009 and 2019, Ecuador 2022 (and 2010),
+    # Uruguay 2023 (and 2025).
+    for name in ("costa_rica", "kenya", "ecuador", "uruguay"):
+        wf = os.path.join(IN, "wiki_census", f"{name}.json")
+        if not os.path.exists(wf): continue
+        w = json.load(open(wf, encoding="utf-8"))["places"]
+        y0 = SINGLE_YEAR.get(name)
+        out = {}
+        for r in csv.DictReader(open(os.path.join(DOCS, f"{name}.csv"), encoding="utf-8")):
+            s = dict(w.get(r["District ID"], {}))
+            if y0 and str(r.get("Population") or "").replace(".", "").isdigit() and float(r["Population"]) > 0: s.setdefault(y0, round(float(r["Population"])))
+            if len(s) > 1: out[r["District ID"]] = s
+        res[name] = out
     # Sri Lanka: the districts at the 1981, 2001, 2012 and 2024 censuses (DCS, 2024 census final report)
     lf = os.path.join(IN, "sri_lanka", "lka_census_district.json")
     if os.path.exists(lf):
@@ -273,7 +289,7 @@ def clean(name, by, keep=None):
         s = {y: s[y] for y in ys[start:]}
         try: p = float(site.get(i, {}).get("Population") or 0)
         except ValueError: p = 0
-        if p > 1000 and abs(s[max(s)] / p - 1) > 0.25: continue
+        if p > 1000 and abs(s[max(s)] / p - 1) > 0.25 and not any(abs(v / p - 1) < 0.005 for v in s.values()): continue   # (unless the site's own figure is one of its years)
         if len(s) > 1: out[i] = s
     return out
 
