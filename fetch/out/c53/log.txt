@@ -1,0 +1,21 @@
+JP E2501: 85971
+JP E3501: 85971
+OK co_men_all_years.json 17532148 https://www.datos.gov.co/resource/nudc-7mev.json?$limit=60000
+OK tw_edu_B_3_2.csv 23752 https://stats.moe.gov.tw/files/opendata/edu_B_3_2.csv
+OK tw_edu_B_3_8.csv 17680 https://stats.moe.gov.tw/files/opendata/edu_B_3_8.csv
+OK tw_edu_B_4_2.csv 15527 https://stats.moe.gov.tw/files/opendata/edu_B_4_2.csv
+OK no_11980_meta.json 22027 https://data.ssb.no/api/v0/no/table/11980
+  NO vars [('KOKkommuneregion0000', 891, ['3101', '3103', '3105'], ['Halden', 'Moss', 'Sarpsborg']), ('KOKeierfh0000', 2, ['K', 'KP'], ['Kommunal', 'Kommunal og privat']), ('KOKtrinn0000', 11, ['0', '01', '02'], ['Elever alle trinn', '1. trinn', '2. trinn']), ('ContentsCode', 1, ['KOSelev0000'], ['Elever (antall)']), ('Tid', 11, ['2015', '2016', '2017'], ['2015', '2016', '2017'])]
+OK no_11980_all.json 2368232 https://data.ssb.no/api/v0/no/table/11980
+OK se_N15835_2015.json 505286 https://api.kolada.se/v3/data/kpi/N15835/year/2015
+OK se_N15835_2016.json 505426 https://api.kolada.se/v3/data/kpi/N15835/year/2016
+OK se_N15835_2017.json 505170 https://api.kolada.se/v3/data/kpi/N15835/year/2017
+OK se_N15835_2018.json 505489 https://api.kolada.se/v3/data/kpi/N15835/year/2018
+OK se_N15835_2019.json 505384 https://api.kolada.se/v3/data/kpi/N15835/year/2019
+OK se_N15835_2020.json 505292 https://api.kolada.se/v3/data/kpi/N15835/year/2020
+OK se_N15835_2021.json 505286 https://api.kolada.se/v3/data/kpi/N15835/year/2021
+OK se_N15835_2022.json 505078 https://api.kolada.se/v3/data/kpi/N15835/year/2022
+OK se_N15835_2023.json 505440 https://api.kolada.se/v3/data/kpi/N15835/year/2023
+OK se_N15835_2024.json 505233 https://api.kolada.se/v3/data/kpi/N15835/year/2024
+ERR dk_LABY23_info.json [Errno 104] Connection reset by peer https://api.statbank.dk/v1/tableinfo/LABY23?lang=en&format=JSON
+ERR dk_LABY07_info.json [Errno 104] Connection reset by peer https://api.statbank.dk/v1/tableinfo/LABY07?lang=en&format=JSON
