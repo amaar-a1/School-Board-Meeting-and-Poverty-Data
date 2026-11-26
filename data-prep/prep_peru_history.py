@@ -5,7 +5,16 @@ MINEDU, ESCALE, Censo Educativo YYYY, 00_Padron.zip (escale.minedu.gob.pe/docume
 Educativo/YYYY/; downloaded by hand): Padron.dbf, one row per school and programme, with TALUMNO (its pupils in that
 census; TALUYY in older files, e.g. TALU22), CODGEO (the district's INEI ubigeo) and GESTION (1 public, directly run; 2 public, privately run, as the site
 counts public; 3 private). Summed by district, as the site's 2025 figure is (every school and programme, all levels).
+2021's and 2020's Padron.dbf have no pupil count, so their pupils come from M01_edades.zip (2021) or
+02_Matricula_01.zip (2020) of the same folder (enrollment by age,
+cuadro C201, or C202/C206 for the few programmes counted there; ages and columns added up per school, the largest of a
+school's tables taken, or their sum for cédula 7A whose two tables count different pupils), with the school's district
+and management from that year's Padron.dbf. District by district the median is about 98% of the next year's
+count (national totals 9.05M in 2020 and 9.10M in 2021, against 9.42M in 2022); Lima's Cercado is the main outlier
+(130k in 2021, 200k in 2022).
 Usage: python3 data-prep/prep_peru_history.py YEAR 00_Padron.zip [YEAR 00_Padron.zip ...]
+       python3 data-prep/prep_peru_history.py --edades 2021 Padron.zip M01_edades.zip
+       python3 data-prep/prep_peru_history.py --edades 2020 01_Padron.zip 02_Matricula_01.zip
 """
 import io, json, os, sys, tempfile, zipfile
 from dbfread import DBF
@@ -31,6 +40,31 @@ def one(path):
     return {"pupils": pupils, "pupils_public": public}
 
 
+def edades(year, padron, m01):
+    tmp = tempfile.mkdtemp()
+    for zp in (padron, m01):
+        z = zipfile.ZipFile(zp); z.extractall(tmp)
+    find = lambda pat: next(os.path.join(dp, f) for dp, _, fs in os.walk(tmp) for f in fs if f.lower() == pat)
+    where = {(r["COD_MOD"], r["ANEXO"]): (str(r["CODGEO"]).zfill(6), str(r.get("GESTION"))) for r in DBF(find("padron.dbf"), encoding="latin-1", load=False)}
+    per, ced = {}, {}
+    m = next(os.path.join(dp, f) for dp, _, fs in os.walk(tmp) for f in fs if f.lower() in ("m01_edades.dbf", "matricula_01.dbf"))
+    t = DBF(m, encoding="latin-1", load=False); d = [f for f in t.field_names if f[0] == "D" and f[1:].isdigit()]
+    for r in t:
+        k = (r["COD_MOD"], r["ANEXO"]); n = sum(r[f] or 0 for f in d)
+        per.setdefault(k, {}); per[k][r["CUADRO"]] = per[k].get(r["CUADRO"], 0) + n; ced[k] = r["NROCED"]
+    pupils, public = {}, {}
+    for k, t in per.items():
+        n = int(sum(t.values()) if ced[k] == "7A" else max(t.values()))
+        if not n or k not in where: continue
+        c, g = where[k]
+        pupils[c] = pupils.get(c, 0) + n
+        if g in ("1", "2"): public[c] = public.get(c, 0) + n
+    out = json.load(open(OUT, encoding="utf-8")) if os.path.exists(OUT) else {}
+    out[year] = {"pupils": pupils, "pupils_public": public}
+    json.dump(out, open(OUT, "w", encoding="utf-8"), separators=(",", ":"), sort_keys=True)
+    print(year, len(pupils), "districts;", sum(pupils.values()), "pupils;", sum(1 for k in per if k not in where), "schools not in the padrón")
+
+
 def main(args):
     out = json.load(open(OUT, encoding="utf-8")) if os.path.exists(OUT) else {}
     for y, p in zip(args[::2], args[1::2]):
@@ -39,5 +73,7 @@ def main(args):
     json.dump(out, open(OUT, "w", encoding="utf-8"), separators=(",", ":"), sort_keys=True)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__" and sys.argv[1] == "--edades":
+    edades(*sys.argv[2:5])
+elif __name__ == "__main__":
     main(sys.argv[1:])
