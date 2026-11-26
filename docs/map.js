@@ -565,6 +565,21 @@
   // Ecuador: the zones whose canton is disputed (zonas no delimitadas).
   const sharedLand = (f) => /^(ES|EC)-SHARED-/.test(f.properties.id || "");
 
+  // Older borders in the year views: a district split from another, or one that lost part of itself to a new one
+  // ("Border changes": "2017: San Miguel was made from Juliaca"), was one district with it in the years before. In
+  // those years its outline takes its own fill colour, and it is drawn under its neighbours (restyle), so the line
+  // between the districts that were one disappears while their outer edge stays. A newer district drawn over the
+  // older border of the place it came from (INSIDE, from extra_borders.geojson) is hidden then, so that border shows.
+  function preSplit(row, y) {
+    if (!row || !y || !row["Border changes"]) return false;
+    const name = String(row.District);
+    return String(row["Border changes"]).split(";").some((p) => {
+      const m = p.trim().match(/^(\d{4}):\s*(.+?) was made from (.+)$/);
+      return !!m && +m[1] > y && (m[2] === name || m[3].split(/, | and /).includes(name));
+    });
+  }
+  const olderBorders = (feature) => !!YEAR_COL[metricNow()] && preSplit(rowFor(gid(feature)), selectedYear());
+
   function style(feature) {
     if (isWorld(feature)) return WORLD_STYLE;
     if (undefinedArea(feature)) return { fillColor: NO_DISTRICT, fillOpacity: 0.9, color: "#8a9a80", weight: 0.3, dashArray: "2 3" };
@@ -578,7 +593,10 @@
       on = !!r && f.test(r);
     }
     // opacity and interactive undo the hidden state above (setStyle keeps options it isn't given).
-    return { fillColor: color(rowFor(gid(feature)), gid(feature)), fillOpacity: on ? 0.85 : 0.35, opacity: 1, color: "#555", weight: on ? 0.4 : 0.2, interactive: true };
+    const fill = color(rowFor(gid(feature)), gid(feature)), op = on ? 0.85 : 0.35;
+    if (olderBorders(feature) && feature.properties.INSIDE) return { fillColor: fill, fillOpacity: 0, opacity: 0, interactive: false };   // under the older border it came from, which shows alone
+    if (olderBorders(feature)) return { fillColor: fill, fillOpacity: op, opacity: op, color: fill, weight: 1.2, interactive: true };
+    return { fillColor: fill, fillOpacity: op, opacity: 1, color: "#555", weight: on ? 0.4 : 0.2, interactive: true };
   }
 
   const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -626,6 +644,7 @@
       ((c) => (c ? `<br>Change in the poverty figure, ${c.from}–${c.to}: ${c.d > 0 ? "+" : ""}${c.d.toFixed(1)} points` : ""))(povChange(r)) +
       ((c) => (c ? `<br>Change in enrollment, ${c.from}–${c.to}: ${c.d > 0 ? "+" : ""}${c.d.toFixed(1)}%${earlyCol(r, "Enrollment by year") !== "Enrollment by year" ? ` (${esc(earlyWho(r))}, on the borders before the split)` : ""}` : ""))(pctChange(r, earlyCol(r, "Enrollment by year"))) +
       ((c) => (c ? `<br>Change in population, ${c.from}–${c.to}: ${c.d > 0 ? "+" : ""}${c.d.toFixed(1)}%${earlyCol(r, "Population by year") !== "Population by year" ? ` (${esc(earlyWho(r))}, on the borders before the split)` : ""}` : ""))(pctChange(r, earlyCol(r, "Population by year"))) +
+      (olderBorders(feature) && r["Earlier borders"] ? `<br>In ${selectedYear()}, ${esc(r["Earlier borders"])} were one district (before the split)` : "") +
       (r["Border changes"] ? `<br>Border changes: ${esc(String(r["Border changes"]).replace(/(^|; )(\d{4}): /g, "$1in $2, "))}` : "") +
       publicLine(r) +
       (r.Locale ? `<br>Locale${/^(UK|IE)-/.test(r["District ID"]) || eu ? " (estimated)" : ""}: ${esc(r.Locale)}`
@@ -840,6 +859,15 @@
     // Saint-Pierre-et-Miquelon's label shows only in its own view.
     if (spmLabel) { if (current && current.country === "FR") spmLabel.addTo(map); else spmLabel.remove(); }
     Object.values(layers).forEach((l) => l.setStyle(style));
+    // Districts that were still one in the chosen year go under their neighbours, whose outlines then draw the edge
+    // (where the map's border of the older district still covers the newer one, as Juliaca's covers San Miguel's,
+    // that older border shows alone). Otherwise a newer district goes back on top of the one it was made from.
+    Object.values(layers).forEach((l) => l.eachLayer && l.eachLayer((x) => {
+      const r = x.feature && x.bringToBack && rowFor(gid(x.feature));
+      if (!r || !r["Border changes"]) return;
+      if (olderBorders(x.feature)) x.bringToBack();
+      else if (new RegExp(`(^|; )\\d{4}: ${String(r.District).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")} was made from `).test(r["Border changes"])) x.bringToFront();
+    }));
     islandDots.forEach(({ dot, f }) => { const st = style(f); dot.setStyle({ fillColor: st.fillColor, fillOpacity: st.fillOpacity, opacity: st.fillOpacity }); });
     legend();
   }
