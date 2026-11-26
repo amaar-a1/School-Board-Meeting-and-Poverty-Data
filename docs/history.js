@@ -28,12 +28,14 @@
     return out;
   }
   const years = (m) => Object.keys(m).sort();
-  // A place split up since its earliest year (Peru's districts) also carries its family's figures added up on the
-  // borders before the split ("... by year (earlier borders)"), and the splits ("Border splits": "2017: X was made
-  // from Y; ..."), drawn as a second, dotted line and as vertical marks.
+  // Border changes (data-prep/borders.py): "Border changes" lists them ("2017: X was made from Y; 2019: A and B
+  // merged into C"), drawn as vertical marks. A place split up since its earliest year also carries its family's
+  // figures added up on the borders before the split ("... by year (earlier borders)"), a second, dotted line; a
+  // merged place's own line already adds up its former places before the merger.
   const EARLY = " (earlier borders)";
   const early = (row, col) => parse(row && row[col + EARLY]);
-  const splitsOf = (row) => String((row && row["Border splits"]) || "").split(";").map((p) => p.trim().match(/^(\d{4}):\s*(.+)$/)).filter(Boolean).map((m) => ({ year: m[1], text: m[2] }));
+  const splitsOf = (row) => String((row && row["Border changes"]) || "").split(";").map((p) => p.trim().match(/^(\d{4}):\s*(.+)$/)).filter(Boolean)
+    .map((m) => ({ year: m[1], text: m[2], label: / merged into |^part of .* joined /.test(m[2]) ? "Merged" : "Split" }));
   const hasLine = (row, col) => years(parse(row[col])).length >= 2 || years(early(row, col)).length >= 2;
   const mean = (a) => a.reduce((x, y) => x + y, 0) / a.length;
 
@@ -90,7 +92,7 @@
         ctx.save(); ctx.strokeStyle = text; ctx.setLineDash([3, 3]); ctx.lineWidth = 1;
         ctx.beginPath(); ctx.moveTo(px, a.top); ctx.lineTo(px, a.bottom); ctx.stroke();
         ctx.setLineDash([]); ctx.fillStyle = text; ctx.font = "11px system-ui, sans-serif"; ctx.textAlign = px > a.right - 60 ? "right" : "left";
-        ctx.fillText(`Split ${k.year}`, px + (ctx.textAlign === "right" ? -4 : 4), a.top + 12); ctx.restore();
+        ctx.fillText(`${marks.filter((q) => q.year === k.year).some((q) => q.label === "Split") ? "Split" : "Merged"} ${k.year}`, px + (ctx.textAlign === "right" ? -4 : 4), a.top + 12); ctx.restore();
       });
     } };
     const ch = new Chart(canvas, { type: "line", plugins: marks.length ? [markPlugin] : [],
@@ -185,7 +187,7 @@
       return { label: g, borderColor: color, backgroundColor: color, borderDash: s.early ? [2, 3] : s.place ? [6, 4] : undefined,
         data: labels.map((y) => (l[y] == null ? null : idx ? (base ? +(100 * l[y] / l[base]).toFixed(1) : null) : l[y])) };
     }), idx ? `${m.axis}, first year = 100` : perPlace ? "Meetings recorded (per place)" : m.kind === "sum" ? `${m.axis} (all ${label})` : m.kind === "count" ? `${m.axis} (all ${label})` : m.axis,
-      { unit: idx ? "" : m.unit, raw: idx ? raw : null, zero: m.kind !== "count", marks: hasEarly ? splitsOf(place) : [] });
+      { unit: idx ? "" : m.unit, raw: idx ? raw : null, zero: m.kind !== "count", marks: hasPlace ? splitsOf(place) : [] });
     const n = lines.filter(([, s]) => !s.place).reduce((t, [, s]) => t + (s.n || 0), 0);
     const parts = [];
     if (many) parts.push(`One line per ${regionWord}` + (groups.length > shown.length ? ` (the ${shown.length} with the most places; pick one in the Area menu for the others)` : "") + ".");
@@ -196,7 +198,7 @@
     if (current.combined && m.kind === "rate") parts.push("Each country uses its own measure, so compare the shapes of the lines, not their heights.");
     if (place && !hasPlace) parts.push(`No ${m.name.toLowerCase()} by year for ${place.District}.`);
     else if (hasPlace) parts.push(`The dashed line is ${place.District}.`);
-    if (hasEarly) parts.push(splitNote(place));
+    if (hasPlace && splitsOf(place).length) parts.push(splitNote(place, hasEarly));
     $("trend-history-note").textContent = parts.join(" ");
   }
 
@@ -254,7 +256,7 @@
       sets.push({ label: `${entries[i].name} on its earlier borders`, borderColor: colors[i], backgroundColor: colors[i], borderDash: [2, 3],
         data: labels.map((y) => (s[y] == null ? null : useIdx ? (s[base] ? +(100 * s[y] / s[base]).toFixed(1) : null) : s[y])) });
     });
-    const marks = entries.flatMap((e, i) => (years(earlySeries[i]).length >= 2 ? splitsOf(e.row) : []));
+    const marks = entries.flatMap((e, i) => (years(series[i]).length || years(earlySeries[i]).length ? splitsOf(e.row) : []));
     draw(holder.querySelector("canvas"), labels, sets,
       useIdx ? `${m.axis}, ${base} = 100` : m.axis, { unit: useIdx ? "" : m.unit, raw: useIdx ? raws : null, zero: m.kind !== "count", marks });
     const missing = entries.filter((e, i) => !years(series[i]).length).map((e) => e.name);
@@ -263,15 +265,17 @@
       m.col === "Meetings by year" ? "Meetings dated by their recordings' titles (undated ones are left out; the current year is partial)." : "",
       m.col === "Poverty by year" && entries.length === 2 ? "Places in different countries use different measures." : "",
       missing.length ? `No ${m.name.toLowerCase()} by year for ${missing.join(" and ")}.` : "",
-      ...entries.filter((e, i) => years(earlySeries[i]).length >= 2).map((e) => splitNote(e.row))].filter(Boolean).join(" ");
+      ...entries.map((e, i) => (splitsOf(e.row).length && (years(series[i]).length || years(earlySeries[i]).length) ? splitNote(e.row, years(earlySeries[i]).length >= 2) : ""))].filter(Boolean).join(" ");
   }
-  // "Split 2017: San Miguel was made from Juliaca. The dotted line adds Juliaca and San Miguel up as one district ..."
-  function splitNote(row) {
+  // "Split in 2017: San Miguel was made from Juliaca. The solid line ..." / "Merged in 2019: A and B merged into C. ..."
+  function splitNote(row, hasEarly) {
     const by = {};
-    splitsOf(row).forEach((k) => (by[k.year] = by[k.year] || []).push(k.text));
-    const together = String(row["Earlier borders"] || "").split("): ").pop();
-    return Object.entries(by).map(([y, t]) => `Split in ${y}: ${t.join("; ")}.`).join(" ") +
-      ` The solid line is ${row.District} on each year's own borders, so it drops where part of it was split off; the dotted line counts ${together || "the districts"} as one district on the borders before the split, so its years compare.`;
+    splitsOf(row).forEach((k) => (by[k.year] = by[k.year] || []).push(k));
+    const txt = Object.entries(by).map(([y, ks]) => `${ks.some((k) => k.label === "Split") ? "Split" : "Merged"} in ${y}: ${ks.map((k) => k.text).join("; ")}.`).join(" ");
+    const merged = splitsOf(row).some((k) => k.label === "Merged"), split = splitsOf(row).some((k) => k.label === "Split");
+    return txt + (split ? ` The solid line is ${row.District} on each year's own borders, so it drops where part of it was split off` +
+      (hasEarly ? `; the dotted line counts ${row["Earlier borders"] || "the places"} as one place on the borders before the split, so its years compare.` : ".") : "") +
+      (merged ? ` Before a merger the line adds up the former places, so the whole line is on today's borders.` : "");
   }
 
   window.SiteHistory = { MEASURES, parse, linked, renderTrends, renderPlaces, trend };

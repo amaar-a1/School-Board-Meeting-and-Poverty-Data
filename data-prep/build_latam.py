@@ -521,7 +521,7 @@ def write(cc, key, rows, feats):
             "Population", "Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)", "Poverty note", "Enrollment", "Enrollment year",
             "Public school enrollment", "School system", "People per km² (estimated)", "District ID"]
     extra = [c for c in ("Province", "Autonomous community", "Children under 18 (estimated)", "Poverty year", "Poverty range", "Poverty rate (region, all ages)", ES_EST,
-                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)", "Welfare rate basis", "Unemployment rate (2020 census)", "Children under 15", "Children under 16", "Pupils with free school meals", "Social assistance recipients per 1,000", "Children on family benefit (% of under-20s)", "Median income (€ per taxpayer)", "Children under 18", "Mean income (€ per tax return)", "Median family income ($ per week, 2021)", "Poverty rate (county, 2011)", "Map note", "Population by year", "Enrollment by year", "Public share by year", "Enrollment by year (earlier borders)", "Public share by year (earlier borders)", "Earlier borders", "Border splits") if any(r.get(c) not in (None, "") for r in rows)]
+                         "Child poverty rate (département)", "Median standard of living (€ per year)", "Poverty standard error", "Unmet basic needs (NBI, 2010)", "Extreme poverty (all ages)", "Poverty by year", "Children 6–17", "Bolsa Família families per 100 households", "Bolsa Família families", "Households", "Mean income (€ per filer)", "Children on family benefit", "Social assistance (% of people)", "Welfare rate basis", "Unemployment rate (2020 census)", "Children under 15", "Children under 16", "Pupils with free school meals", "Social assistance recipients per 1,000", "Children on family benefit (% of under-20s)", "Median income (€ per taxpayer)", "Children under 18", "Mean income (€ per tax return)", "Median family income ($ per week, 2021)", "Poverty rate (county, 2011)", "Map note", "Population by year", "Enrollment by year", "Public share by year", "Enrollment by year (earlier borders)", "Public share by year (earlier borders)", "Earlier borders", "Border changes", "Population by year (earlier borders)") if any(r.get(c) not in (None, "") for r in rows)]
     pov = "Percentage of Children in Low Income" if any(r.get("Percentage of Children in Low Income") for r in rows) else "Poverty rate (all ages)"
     cols = [c for c in cols if c not in ("Percentage of Children in Low Income", "Poverty rate (all ages)", "Multidimensional poverty (all ages)") or any(r.get(c) not in (None, "") for r in rows)]
     cols = cols[:cols.index("Poverty note") + 1] + [c for c in extra if c != "Children 6–17"] + cols[cols.index("Poverty note") + 1:-1] + [c for c in extra if c == "Children 6–17"] + cols[-1:]
@@ -931,31 +931,21 @@ def pe_splits(ph):
 
 def pe_earlier_borders(ph, edges, names):
     """For each district in a split: the family's pupils and public share added up as one district (its borders before
-    the split), every year, so its change over time can be followed across the split."""
-    first = {c: F for _, c, F in edges}
-    fam = {}
-    for p, c, _ in edges:
-        a, b = fam.get(p, {p}), fam.get(c, {c}); u = a | b
-        for m in u: fam[m] = u
+    the split), every year, so its change over time can be followed across the split (see borders.py)."""
+    import borders
+    nm = lambda k: names.get(k, "a new district")
+    pupils = {}; public = {}
+    for y, v in ph.items():
+        for k, n in v.get("pupils", {}).items(): pupils.setdefault(k, {})[y] = n
+        if v.get("pupils_public"):
+            for k in v["pupils"]: public.setdefault(k, {})[y] = v["pupils_public"].get(k, 0)
+    eb, ep = borders.earlier_borders(pupils, edges, nm), borders.earlier_borders(public, edges, nm)
     out = {}
-    for m, members in fam.items():
-        if m in out: continue
-        py, pp = {}, {}
-        for y, v in ph.items():
-            n = sum(v.get("pupils", {}).get(k, 0) for k in members if not (k in first and y < first[k]))
-            if n:
-                py[y] = n
-                if v.get("pupils_public"): pp[y] = 100 * sum(v["pupils_public"].get(k, 0) for k in members if not (k in first and y < first[k])) / n
-        nm = lambda k: names.get(k, "a new district")
-        made = {}
-        for p, c, F in edges:
-            if c in members: made.setdefault((F, nm(c)), []).append(nm(p))
-        both = lambda xs: xs[0] if len(xs) == 1 else ", ".join(xs[:-1]) + " and " + xs[-1]
-        note = "Added up as one district on its borders before the split (" + "; ".join(f"{c} was made from {both(sorted(ps))} in {F}" for (F, c), ps in sorted(made.items())) + \
-            "): " + both(sorted(nm(k) for k in members)) + " together"
-        for k in members: out[k] = {"Enrollment by year (earlier borders)": years_text(py),
-                                    "Public share by year (earlier borders)": "; ".join(f"{y}: {v:.1f}%" for y, v in sorted(pp.items())), "Earlier borders": note,
-                                    "Border splits": "; ".join(f"{F}: {c} was made from {both(sorted(ps))}" for (F, c), ps in sorted(made.items()))}
+    for k, (fs, together, texts) in eb.items():
+        fp = ep.get(k, ({}, "", []))[0]
+        out[k] = {"Enrollment by year (earlier borders)": years_text(fs),
+                  "Public share by year (earlier borders)": "; ".join(f"{y}: {100 * fp[y] / n:.1f}%" for y, n in sorted(fs.items()) if y in fp and n),
+                  "Earlier borders": together, borders.COL: "; ".join(texts)}
     return out
 
 

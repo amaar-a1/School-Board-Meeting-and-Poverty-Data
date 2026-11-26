@@ -307,6 +307,15 @@ def main():
             # Every school year since 2011/12 (CBS 85701NED, same pupils; fetch round 48), for change over time.
             hp = os.path.join(IN, "nl_pupils_history.json")
             ph = json.load(open(hp)) if os.path.exists(hp) else {}
+            # Mergers since 2011 (CBS, borders.py): a merged municipality's years before are its former ones added up
+            import borders
+            bf = os.path.join(HERE, "inputs", "border_changes.json")
+            mg = json.load(open(bf, encoding="utf-8")).get("netherlands", {}).get("mergers", []) if os.path.exists(bf) else []
+            phm = {"NL_" + k: v for k, v in ph.items()}
+            ntx = borders.merge_back(phm, mg)
+            ph = {k[3:]: v for k, v in phm.items()}
+            for g, tx in ntx.items():
+                if g[3:] in rows: rows[g[3:]]["Border changes"] = "; ".join(tx)
             for g, n in tot.items():
                 put(code=g, **{"Enrollment": n, "Enrollment year": "2025/26", "Enrollment by year": "; ".join(f"{y}: {v}" for y, v in sorted(ph.get(g, {}).items()))})
         fallback(cc, rows, put)
@@ -332,6 +341,7 @@ def main():
         cols = ["District", "Locale", "Available Board Meetings", "Meetings type", "Meetings source", "Latest meeting", "Meetings by year", "Children", "Children in Low Income",
                 "Percentage of Children in Low Income", "Poverty note", "Poverty by year", "Enrollment", "Enrollment year", "People per km² (estimated)", "District ID"]
         if any(r.get("Enrollment by year") for r in out) and "Enrollment by year" not in cols: cols.insert(cols.index("Enrollment year") + 1, "Enrollment by year")
+        if any(r.get("Border changes") for r in out): cols.insert(cols.index("District ID"), "Border changes")
         with open(os.path.join(DOCS, f"{key}.csv"), "w", newline="", encoding="utf-8") as fo:
             w = csv.DictWriter(fo, fieldnames=cols, restval=""); w.writeheader(); w.writerows(out)
         for f in geo["features"]:

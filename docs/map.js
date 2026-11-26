@@ -426,7 +426,7 @@
   // A district split since its earliest year (Peru) also has its figures added up on the borders before the split;
   // its change over time and its figures for years before the split are taken from those.
   const earlyCol = (row, col) => (row && row[col + " (earlier borders)"] ? col + " (earlier borders)" : col);
-  const earlyWho = (row) => String((row && row["Earlier borders"]) || "").split("): ").pop();
+  const earlyWho = (row) => String((row && row["Earlier borders"]) || "");
   function pctChange(row, col) {
     const y = yearPairs(row && row[col]).filter((p) => p[1] > 0);
     return y.length >= 2 ? { d: 100 * (y[y.length - 1][1] / y[0][1] - 1), from: y[0][0], to: y[y.length - 1][0] } : null;
@@ -527,7 +527,7 @@
     if (metric === "meetYear" && isNaN(v)) v = row && row["Meetings by year"] ? 0 : (toNumber(row && row["Available Board Meetings"]) > 0 ? NaN : 0);
     if (metric === "meetYear" && boardsOnly() && standIn(row)) v = 0;
     if (metric === "changeEnr") { const c = pctChange(row, earlyCol(row, "Enrollment by year")); v = c ? c.d : NaN; }
-    if (metric === "changePop") { const c = pctChange(row, "Population by year"); v = c ? c.d : NaN; }
+    if (metric === "changePop") { const c = pctChange(row, earlyCol(row, "Population by year")); v = c ? c.d : NaN; }
     if (metric === "perYear") { const q = boardsOnly() && standIn(row) ? { v: 0 } : perYear(row); v = q ? q.v : NaN; }
     if (isNaN(v)) return NO_DATA;
     const s2 = (metric === "poverty" || metric === "povYear") && OWN_SCALE[euOf(id)] ? SCALES[OWN_SCALE[euOf(id)]] : sc;
@@ -625,8 +625,8 @@
       ((q) => (q && q.first ? `<br>Meetings per year since the first found (${q.first}): ${q.v < 10 ? q.v.toFixed(1) : Math.round(q.v)}` : ""))(perYear(r)) +
       ((c) => (c ? `<br>Change in the poverty figure, ${c.from}–${c.to}: ${c.d > 0 ? "+" : ""}${c.d.toFixed(1)} points` : ""))(povChange(r)) +
       ((c) => (c ? `<br>Change in enrollment, ${c.from}–${c.to}: ${c.d > 0 ? "+" : ""}${c.d.toFixed(1)}%${earlyCol(r, "Enrollment by year") !== "Enrollment by year" ? ` (${esc(earlyWho(r))}, on the borders before the split)` : ""}` : ""))(pctChange(r, earlyCol(r, "Enrollment by year"))) +
-      ((c) => (c ? `<br>Change in population, ${c.from}–${c.to}: ${c.d > 0 ? "+" : ""}${c.d.toFixed(1)}%` : ""))(pctChange(r, "Population by year")) +
-      (r["Border splits"] ? `<br>Split in ${esc(String(r["Border splits"]).replace(/; (\d{4}): /g, "; in $1: "))}` : "") +
+      ((c) => (c ? `<br>Change in population, ${c.from}–${c.to}: ${c.d > 0 ? "+" : ""}${c.d.toFixed(1)}%${earlyCol(r, "Population by year") !== "Population by year" ? ` (${esc(earlyWho(r))}, on the borders before the split)` : ""}` : ""))(pctChange(r, earlyCol(r, "Population by year"))) +
+      (r["Border changes"] ? `<br>Border changes: ${esc(String(r["Border changes"]).replace(/(^|; )(\d{4}): /g, "$1in $2, "))}` : "") +
       publicLine(r) +
       (r.Locale ? `<br>Locale${/^(UK|IE)-/.test(r["District ID"]) || eu ? " (estimated)" : ""}: ${esc(r.Locale)}`
         : localeFallback(r, gid(feature)) ? `<br>Locale (estimated from its area's other places): ${esc(localeFallback(r, gid(feature)))}` : "") +
