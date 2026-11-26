@@ -1,0 +1,115 @@
+"Tramo de Edad","departamento",año,valor
+"Menores de 14","Montevideo",2011,17.8
+"14 a 24","Montevideo",2011,16.8
+"25 a 29","Montevideo",2011,7.6
+"30 a 49","Montevideo",2011,26.2
+"50 a 64","Montevideo",2011,16.2
+"65 y más","Montevideo",2011,15.4
+"Menores de 14","Artigas",2011,23.8
+"14 a 24","Artigas",2011,18.3
+"25 a 29","Artigas",2011,6.4
+"30 a 49","Artigas",2011,24.7
+"50 a 64","Artigas",2011,15.4
+"65 y más","Artigas",2011,11.3
+"Menores de 14","Canelones",2011,21.1
+"14 a 24","Canelones",2011,17
+"25 a 29","Canelones",2011,6.6
+"30 a 49","Canelones",2011,27
+"50 a 64","Canelones",2011,15.5
+"65 y más","Canelones",2011,12.9
+"Menores de 14","Cerro Largo",2011,22.6
+"14 a 24","Cerro Largo",2011,16.8
+"25 a 29","Cerro Largo",2011,5.9
+"30 a 49","Cerro Largo",2011,25.7
+"50 a 64","Cerro Largo",2011,15.9
+"65 y más","Cerro Largo",2011,13.2
+"Menores de 14","Colonia",2011,19.6
+"14 a 24","Colonia",2011,15.4
+"25 a 29","Colonia",2011,6.5
+"30 a 49","Colonia",2011,25.8
+"50 a 64","Colonia",2011,16.7
+"65 y más","Colonia",2011,16.1
+"Menores de 14","Durazno",2011,22.5
+"14 a 24","Durazno",2011,17.2
+"25 a 29","Durazno",2011,6.3
+"30 a 49","Durazno",2011,25.3
+"50 a 64","Durazno",2011,14.9
+"65 y más","Durazno",2011,13.7
+"Menores de 14","Flores",2011,20.5
+"14 a 24","Flores",2011,15.6
+"25 a 29","Flores",2011,6
+"30 a 49","Flores",2011,26
+"50 a 64","Flores",2011,16.3
+"65 y más","Flores",2011,15.5
+"Menores de 14","Florida",2011,20.7
+"14 a 24","Florida",2011,16.3
+"25 a 29","Florida",2011,6.3
+"30 a 49","Florida",2011,25.4
+"50 a 64","Florida",2011,15.8
+"65 y más","Florida",2011,15.5
+"Menores de 14","Lavalleja",2011,19.7
+"14 a 24","Lavalleja",2011,15.6
+"25 a 29","Lavalleja",2011,5.8
+"30 a 49","Lavalleja",2011,25.6
+"50 a 64","Lavalleja",2011,16.5
+"65 y más","Lavalleja",2011,16.8
+"Menores de 14","Maldonado",2011,21.1
+"14 a 24","Maldonado",2011,17.1
+"25 a 29","Maldonado",2011,7.2
+"30 a 49","Maldonado",2011,28
+"50 a 64","Maldonado",2011,15
+"65 y más","Maldonado",2011,11.6
+"Menores de 14","Paysandu",2011,23
+"14 a 24","Paysandu",2011,17.8
+"25 a 29","Paysandu",2011,6.6
+"30 a 49","Paysandu",2011,24.4
+"50 a 64","Paysandu",2011,14.9
+"65 y más","Paysandu",2011,13.3
+"Menores de 14","Rio Negro",2011,24.1
+"14 a 24","Rio Negro",2011,16.9
+"25 a 29","Rio Negro",2011,6.7
+"30 a 49","Rio Negro",2011,25.7
+"50 a 64","Rio Negro",2011,14.6
+"65 y más","Rio Negro",2011,12
+"Menores de 14","Rivera",2011,23.3
+"14 a 24","Rivera",2011,18.2
+"25 a 29","Rivera",2011,6.3
+"30 a 49","Rivera",2011,25.3
+"50 a 64","Rivera",2011,15
+"65 y más","Rivera",2011,11.9
+"Menores de 14","Rocha",2011,20.5
+"14 a 24","Rocha",2011,15.4
+"25 a 29","Rocha",2011,6.2
+"30 a 49","Rocha",2011,26.4
+"50 a 64","Rocha",2011,16.2
+"65 y más","Rocha",2011,15.3
+"Menores de 14","Salto",2011,23.8
+"14 a 24","Salto",2011,19.3
+"25 a 29","Salto",2011,6.9
+"30 a 49","Salto",2011,23.9
+"50 a 64","Salto",2011,14.4
+"65 y más","Salto",2011,11.8
+"Menores de 14","San José",2011,20.7
+"14 a 24","San José",2011,16.8
+"25 a 29","San José",2011,6.9
+"30 a 49","San José",2011,26.5
+"50 a 64","San José",2011,15.8
+"65 y más","San José",2011,13.3
+"Menores de 14","Soriano",2011,21.9
+"14 a 24","Soriano",2011,16.4
+"25 a 29","Soriano",2011,6.7
+"30 a 49","Soriano",2011,24.7
+"50 a 64","Soriano",2011,16.2
+"65 y más","Soriano",2011,14.1
+"Menores de 14","Tacuarembó",2011,22.5
+"14 a 24","Tacuarembó",2011,17.1
+"25 a 29","Tacuarembó",2011,6.1
+"30 a 49","Tacuarembó",2011,25.9
+"50 a 64","Tacuarembó",2011,15.5
+"65 y más","Tacuarembó",2011,12.9
+"Menores de 14","Treinta y Tres",2011,21.3
+"14 a 24","Treinta y Tres",2011,17.1
+"25 a 29","Treinta y Tres",2011,6
+"30 a 49","Treinta y Tres",2011,26.1
+"50 a 64","Treinta y Tres",2011,15.6
+"65 y más","Treinta y Tres",2011,13.9

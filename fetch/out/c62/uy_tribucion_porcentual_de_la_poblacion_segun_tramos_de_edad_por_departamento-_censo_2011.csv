@@ -1,0 +1,1255 @@
+"Edad","departamento",año,valor
+"0 a 14","Montevideo",1996,21.8
+"15 a 64","Montevideo",1996,64
+"65 y más","Montevideo",1996,14.2
+"0 a 14","Artigas",1996,32.5
+"15 a 64","Artigas",1996,59.2
+"65 y más","Artigas",1996,8.3
+"0 a 14","Canelones",1996,25.8
+"15 a 64","Canelones",1996,62.6
+"65 y más","Canelones",1996,11.5
+"0 a 14","Cerro Largo",1996,27.6
+"15 a 64","Cerro Largo",1996,61.8
+"65 y más","Cerro Largo",1996,10.6
+"0 a 14","Colonia",1996,24.7
+"15 a 64","Colonia",1996,60.9
+"65 y más","Colonia",1996,14.4
+"0 a 14","Durazno",1996,29.3
+"15 a 64","Durazno",1996,59.1
+"65 y más","Durazno",1996,11.7
+"0 a 14","Flores",1996,25.4
+"15 a 64","Flores",1996,61
+"65 y más","Flores",1996,13.6
+"0 a 14","Florida",1996,25.6
+"15 a 64","Florida",1996,60.6
+"65 y más","Florida",1996,13.8
+"0 a 14","Lavalleja",1996,24.1
+"15 a 64","Lavalleja",1996,61.4
+"65 y más","Lavalleja",1996,14.4
+"0 a 14","Maldonado",1996,25.8
+"15 a 64","Maldonado",1996,64.3
+"65 y más","Maldonado",1996,9.9
+"0 a 14","Paysandu",1996,28.7
+"15 a 64","Paysandu",1996,60
+"65 y más","Paysandu",1996,11.3
+"0 a 14","Rio Negro",1996,29.4
+"15 a 64","Rio Negro",1996,60.2
+"65 y más","Rio Negro",1996,10.4
+"0 a 14","Rivera",1996,29.8
+"15 a 64","Rivera",1996,60.3
+"65 y más","Rivera",1996,9.9
+"0 a 14","Rocha",1996,25.5
+"15 a 64","Rocha",1996,61.4
+"65 y más","Rocha",1996,13.1
+"0 a 14","Salto",1996,30.6
+"15 a 64","Salto",1996,59.2
+"65 y más","Salto",1996,10.2
+"0 a 14","San José",1996,25.3
+"15 a 64","San José",1996,62.2
+"65 y más","San José",1996,12.5
+"0 a 14","Soriano",1996,27.7
+"15 a 64","Soriano",1996,59.7
+"65 y más","Soriano",1996,12.6
+"0 a 14","Tacuarembó",1996,29.2
+"15 a 64","Tacuarembó",1996,60.4
+"65 y más","Tacuarembó",1996,10.4
+"0 a 14","Treinta y Tres",1996,28.2
+"15 a 64","Treinta y Tres",1996,60.4
+"65 y más","Treinta y Tres",1996,11.4
+"0 a 14","Montevideo",1997,21.7
+"15 a 64","Montevideo",1997,64
+"65 y más","Montevideo",1997,14.3
+"0 a 14","Artigas",1997,32.3
+"15 a 64","Artigas",1997,59.2
+"65 y más","Artigas",1997,8.5
+"0 a 14","Canelones",1997,25.7
+"15 a 64","Canelones",1997,62.7
+"65 y más","Canelones",1997,11.7
+"0 a 14","Cerro Largo",1997,27.7
+"15 a 64","Cerro Largo",1997,61.6
+"65 y más","Cerro Largo",1997,10.7
+"0 a 14","Colonia",1997,24.6
+"15 a 64","Colonia",1997,60.9
+"65 y más","Colonia",1997,14.5
+"0 a 14","Durazno",1997,29.2
+"15 a 64","Durazno",1997,59.1
+"65 y más","Durazno",1997,11.8
+"0 a 14","Flores",1997,25.4
+"15 a 64","Flores",1997,60.9
+"65 y más","Flores",1997,13.7
+"0 a 14","Florida",1997,25.6
+"15 a 64","Florida",1997,60.5
+"65 y más","Florida",1997,13.9
+"0 a 14","Lavalleja",1997,24.3
+"15 a 64","Lavalleja",1997,61.1
+"65 y más","Lavalleja",1997,14.6
+"0 a 14","Maldonado",1997,25.8
+"15 a 64","Maldonado",1997,64.2
+"65 y más","Maldonado",1997,10
+"0 a 14","Paysandu",1997,28.6
+"15 a 64","Paysandu",1997,59.9
+"65 y más","Paysandu",1997,11.5
+"0 a 14","Rio Negro",1997,29.2
+"15 a 64","Rio Negro",1997,60.3
+"65 y más","Rio Negro",1997,10.5
+"0 a 14","Rivera",1997,29.7
+"15 a 64","Rivera",1997,60.3
+"65 y más","Rivera",1997,10
+"0 a 14","Rocha",1997,25.4
+"15 a 64","Rocha",1997,61.4
+"65 y más","Rocha",1997,13.2
+"0 a 14","Salto",1997,30.5
+"15 a 64","Salto",1997,59.2
+"65 y más","Salto",1997,10.2
+"0 a 14","San José",1997,25.2
+"15 a 64","San José",1997,62.2
+"65 y más","San José",1997,12.6
+"0 a 14","Soriano",1997,27.6
+"15 a 64","Soriano",1997,59.7
+"65 y más","Soriano",1997,12.7
+"0 a 14","Tacuarembó",1997,29.3
+"15 a 64","Tacuarembó",1997,60.2
+"65 y más","Tacuarembó",1997,10.5
+"0 a 14","Treinta y Tres",1997,28.1
+"15 a 64","Treinta y Tres",1997,60.4
+"65 y más","Treinta y Tres",1997,11.5
+"0 a 14","Montevideo",1998,21.6
+"15 a 64","Montevideo",1998,64
+"65 y más","Montevideo",1998,14.4
+"0 a 14","Artigas",1998,32
+"15 a 64","Artigas",1998,59.3
+"65 y más","Artigas",1998,8.6
+"0 a 14","Canelones",1998,25.5
+"15 a 64","Canelones",1998,62.7
+"65 y más","Canelones",1998,11.8
+"0 a 14","Cerro Largo",1998,27.7
+"15 a 64","Cerro Largo",1998,61.5
+"65 y más","Cerro Largo",1998,10.8
+"0 a 14","Colonia",1998,24.5
+"15 a 64","Colonia",1998,60.9
+"65 y más","Colonia",1998,14.6
+"0 a 14","Durazno",1998,29
+"15 a 64","Durazno",1998,59.1
+"65 y más","Durazno",1998,11.9
+"0 a 14","Flores",1998,25.3
+"15 a 64","Flores",1998,60.8
+"65 y más","Flores",1998,13.9
+"0 a 14","Florida",1998,25.5
+"15 a 64","Florida",1998,60.5
+"65 y más","Florida",1998,14
+"0 a 14","Lavalleja",1998,24.4
+"15 a 64","Lavalleja",1998,60.9
+"65 y más","Lavalleja",1998,14.7
+"0 a 14","Maldonado",1998,25.8
+"15 a 64","Maldonado",1998,64.1
+"65 y más","Maldonado",1998,10.1
+"0 a 14","Paysandu",1998,28.6
+"15 a 64","Paysandu",1998,59.8
+"65 y más","Paysandu",1998,11.6
+"0 a 14","Rio Negro",1998,29.1
+"15 a 64","Rio Negro",1998,60.4
+"65 y más","Rio Negro",1998,10.5
+"0 a 14","Rivera",1998,29.5
+"15 a 64","Rivera",1998,60.4
+"65 y más","Rivera",1998,10.1
+"0 a 14","Rocha",1998,25.3
+"15 a 64","Rocha",1998,61.4
+"65 y más","Rocha",1998,13.3
+"0 a 14","Salto",1998,30.4
+"15 a 64","Salto",1998,59.3
+"65 y más","Salto",1998,10.3
+"0 a 14","San José",1998,25
+"15 a 64","San José",1998,62.3
+"65 y más","San José",1998,12.7
+"0 a 14","Soriano",1998,27.4
+"15 a 64","Soriano",1998,59.8
+"65 y más","Soriano",1998,12.8
+"0 a 14","Tacuarembó",1998,29.2
+"15 a 64","Tacuarembó",1998,60.2
+"65 y más","Tacuarembó",1998,10.6
+"0 a 14","Treinta y Tres",1998,28
+"15 a 64","Treinta y Tres",1998,60.4
+"65 y más","Treinta y Tres",1998,11.6
+"0 a 14","Montevideo",1999,21.5
+"15 a 64","Montevideo",1999,64
+"65 y más","Montevideo",1999,14.5
+"0 a 14","Artigas",1999,31.7
+"15 a 64","Artigas",1999,59.6
+"65 y más","Artigas",1999,8.7
+"0 a 14","Canelones",1999,25.4
+"15 a 64","Canelones",1999,62.7
+"65 y más","Canelones",1999,11.8
+"0 a 14","Cerro Largo",1999,27.7
+"15 a 64","Cerro Largo",1999,61.4
+"65 y más","Cerro Largo",1999,10.9
+"0 a 14","Colonia",1999,24.3
+"15 a 64","Colonia",1999,61
+"65 y más","Colonia",1999,14.7
+"0 a 14","Durazno",1999,28.8
+"15 a 64","Durazno",1999,59.3
+"65 y más","Durazno",1999,11.9
+"0 a 14","Flores",1999,25.2
+"15 a 64","Flores",1999,60.9
+"65 y más","Flores",1999,13.9
+"0 a 14","Florida",1999,25.3
+"15 a 64","Florida",1999,60.6
+"65 y más","Florida",1999,14.1
+"0 a 14","Lavalleja",1999,24.4
+"15 a 64","Lavalleja",1999,60.9
+"65 y más","Lavalleja",1999,14.7
+"0 a 14","Maldonado",1999,25.8
+"15 a 64","Maldonado",1999,64
+"65 y más","Maldonado",1999,10.2
+"0 a 14","Paysandu",1999,28.6
+"15 a 64","Paysandu",1999,59.8
+"65 y más","Paysandu",1999,11.6
+"0 a 14","Rio Negro",1999,28.9
+"15 a 64","Rio Negro",1999,60.5
+"65 y más","Rio Negro",1999,10.6
+"0 a 14","Rivera",1999,29.4
+"15 a 64","Rivera",1999,60.4
+"65 y más","Rivera",1999,10.2
+"0 a 14","Rocha",1999,25.2
+"15 a 64","Rocha",1999,61.5
+"65 y más","Rocha",1999,13.4
+"0 a 14","Salto",1999,30.2
+"15 a 64","Salto",1999,59.4
+"65 y más","Salto",1999,10.3
+"0 a 14","San José",1999,24.8
+"15 a 64","San José",1999,62.5
+"65 y más","San José",1999,12.7
+"0 a 14","Soriano",1999,27.2
+"15 a 64","Soriano",1999,59.9
+"65 y más","Soriano",1999,12.9
+"0 a 14","Tacuarembó",1999,29.1
+"15 a 64","Tacuarembó",1999,60.2
+"65 y más","Tacuarembó",1999,10.6
+"0 a 14","Treinta y Tres",1999,27.9
+"15 a 64","Treinta y Tres",1999,60.5
+"65 y más","Treinta y Tres",1999,11.6
+"0 a 14","Montevideo",2000,21.3
+"15 a 64","Montevideo",2000,64.1
+"65 y más","Montevideo",2000,14.5
+"0 a 14","Artigas",2000,31.3
+"15 a 64","Artigas",2000,59.9
+"65 y más","Artigas",2000,8.8
+"0 a 14","Canelones",2000,25.4
+"15 a 64","Canelones",2000,62.7
+"65 y más","Canelones",2000,11.9
+"0 a 14","Cerro Largo",2000,27.7
+"15 a 64","Cerro Largo",2000,61.2
+"65 y más","Cerro Largo",2000,11
+"0 a 14","Colonia",2000,24.1
+"15 a 64","Colonia",2000,61.1
+"65 y más","Colonia",2000,14.8
+"0 a 14","Durazno",2000,28.6
+"15 a 64","Durazno",2000,59.4
+"65 y más","Durazno",2000,12
+"0 a 14","Flores",2000,25
+"15 a 64","Flores",2000,60.9
+"65 y más","Flores",2000,14.1
+"0 a 14","Florida",2000,25
+"15 a 64","Florida",2000,60.8
+"65 y más","Florida",2000,14.2
+"0 a 14","Lavalleja",2000,24.4
+"15 a 64","Lavalleja",2000,60.9
+"65 y más","Lavalleja",2000,14.8
+"0 a 14","Maldonado",2000,25.8
+"15 a 64","Maldonado",2000,63.9
+"65 y más","Maldonado",2000,10.3
+"0 a 14","Paysandu",2000,28.5
+"15 a 64","Paysandu",2000,59.7
+"65 y más","Paysandu",2000,11.7
+"0 a 14","Rio Negro",2000,28.7
+"15 a 64","Rio Negro",2000,60.6
+"65 y más","Rio Negro",2000,10.7
+"0 a 14","Rivera",2000,29.3
+"15 a 64","Rivera",2000,60.4
+"65 y más","Rivera",2000,10.3
+"0 a 14","Rocha",2000,25
+"15 a 64","Rocha",2000,61.5
+"65 y más","Rocha",2000,13.5
+"0 a 14","Salto",2000,30.1
+"15 a 64","Salto",2000,59.5
+"65 y más","Salto",2000,10.4
+"0 a 14","San José",2000,24.6
+"15 a 64","San José",2000,62.6
+"65 y más","San José",2000,12.8
+"0 a 14","Soriano",2000,26.9
+"15 a 64","Soriano",2000,60
+"65 y más","Soriano",2000,13.1
+"0 a 14","Tacuarembó",2000,28.9
+"15 a 64","Tacuarembó",2000,60.4
+"65 y más","Tacuarembó",2000,10.8
+"0 a 14","Treinta y Tres",2000,27.7
+"15 a 64","Treinta y Tres",2000,60.6
+"65 y más","Treinta y Tres",2000,11.7
+"0 a 14","Montevideo",2001,21.2
+"15 a 64","Montevideo",2001,64.1
+"65 y más","Montevideo",2001,14.7
+"0 a 14","Artigas",2001,30.8
+"15 a 64","Artigas",2001,60.2
+"65 y más","Artigas",2001,9
+"0 a 14","Canelones",2001,25.3
+"15 a 64","Canelones",2001,62.7
+"65 y más","Canelones",2001,12
+"0 a 14","Cerro Largo",2001,27.7
+"15 a 64","Cerro Largo",2001,61.1
+"65 y más","Cerro Largo",2001,11.2
+"0 a 14","Colonia",2001,23.8
+"15 a 64","Colonia",2001,61.3
+"65 y más","Colonia",2001,15
+"0 a 14","Durazno",2001,28.4
+"15 a 64","Durazno",2001,59.6
+"65 y más","Durazno",2001,12
+"0 a 14","Flores",2001,24.8
+"15 a 64","Flores",2001,61
+"65 y más","Flores",2001,14.2
+"0 a 14","Florida",2001,24.8
+"15 a 64","Florida",2001,60.9
+"65 y más","Florida",2001,14.3
+"0 a 14","Lavalleja",2001,24.2
+"15 a 64","Lavalleja",2001,60.9
+"65 y más","Lavalleja",2001,14.9
+"0 a 14","Maldonado",2001,25.8
+"15 a 64","Maldonado",2001,63.8
+"65 y más","Maldonado",2001,10.4
+"0 a 14","Paysandu",2001,28.4
+"15 a 64","Paysandu",2001,59.7
+"65 y más","Paysandu",2001,11.9
+"0 a 14","Rio Negro",2001,28.6
+"15 a 64","Rio Negro",2001,60.6
+"65 y más","Rio Negro",2001,10.8
+"0 a 14","Rivera",2001,29.1
+"15 a 64","Rivera",2001,60.4
+"65 y más","Rivera",2001,10.5
+"0 a 14","Rocha",2001,24.9
+"15 a 64","Rocha",2001,61.5
+"65 y más","Rocha",2001,13.7
+"0 a 14","Salto",2001,29.9
+"15 a 64","Salto",2001,59.6
+"65 y más","Salto",2001,10.5
+"0 a 14","San José",2001,24.4
+"15 a 64","San José",2001,62.7
+"65 y más","San José",2001,12.9
+"0 a 14","Soriano",2001,26.7
+"15 a 64","Soriano",2001,60.1
+"65 y más","Soriano",2001,13.2
+"0 a 14","Tacuarembó",2001,28.6
+"15 a 64","Tacuarembó",2001,60.5
+"65 y más","Tacuarembó",2001,10.9
+"0 a 14","Treinta y Tres",2001,27.5
+"15 a 64","Treinta y Tres",2001,60.7
+"65 y más","Treinta y Tres",2001,11.8
+"0 a 14","Montevideo",2002,21.1
+"15 a 64","Montevideo",2002,64.1
+"65 y más","Montevideo",2002,14.8
+"0 a 14","Artigas",2002,30.4
+"15 a 64","Artigas",2002,60.5
+"65 y más","Artigas",2002,9.1
+"0 a 14","Canelones",2002,25.3
+"15 a 64","Canelones",2002,62.7
+"65 y más","Canelones",2002,12
+"0 a 14","Cerro Largo",2002,27.7
+"15 a 64","Cerro Largo",2002,61
+"65 y más","Cerro Largo",2002,11.3
+"0 a 14","Colonia",2002,23.4
+"15 a 64","Colonia",2002,61.4
+"65 y más","Colonia",2002,15.1
+"0 a 14","Durazno",2002,28.1
+"15 a 64","Durazno",2002,59.7
+"65 y más","Durazno",2002,12.2
+"0 a 14","Flores",2002,24.7
+"15 a 64","Flores",2002,61
+"65 y más","Flores",2002,14.2
+"0 a 14","Florida",2002,24.6
+"15 a 64","Florida",2002,61
+"65 y más","Florida",2002,14.3
+"0 a 14","Lavalleja",2002,24
+"15 a 64","Lavalleja",2002,61
+"65 y más","Lavalleja",2002,15
+"0 a 14","Maldonado",2002,25.8
+"15 a 64","Maldonado",2002,63.7
+"65 y más","Maldonado",2002,10.6
+"0 a 14","Paysandu",2002,28.2
+"15 a 64","Paysandu",2002,59.8
+"65 y más","Paysandu",2002,12
+"0 a 14","Rio Negro",2002,28.4
+"15 a 64","Rio Negro",2002,60.7
+"65 y más","Rio Negro",2002,10.9
+"0 a 14","Rivera",2002,28.9
+"15 a 64","Rivera",2002,60.5
+"65 y más","Rivera",2002,10.6
+"0 a 14","Rocha",2002,24.7
+"15 a 64","Rocha",2002,61.5
+"65 y más","Rocha",2002,13.8
+"0 a 14","Salto",2002,29.7
+"15 a 64","Salto",2002,59.7
+"65 y más","Salto",2002,10.6
+"0 a 14","San José",2002,24.3
+"15 a 64","San José",2002,62.7
+"65 y más","San José",2002,13
+"0 a 14","Soriano",2002,26.4
+"15 a 64","Soriano",2002,60.3
+"65 y más","Soriano",2002,13.3
+"0 a 14","Tacuarembó",2002,28.2
+"15 a 64","Tacuarembó",2002,60.7
+"65 y más","Tacuarembó",2002,11
+"0 a 14","Treinta y Tres",2002,27.3
+"15 a 64","Treinta y Tres",2002,60.8
+"65 y más","Treinta y Tres",2002,11.9
+"0 a 14","Montevideo",2003,21
+"15 a 64","Montevideo",2003,64.1
+"65 y más","Montevideo",2003,14.9
+"0 a 14","Artigas",2003,30
+"15 a 64","Artigas",2003,60.7
+"65 y más","Artigas",2003,9.3
+"0 a 14","Canelones",2003,25.2
+"15 a 64","Canelones",2003,62.6
+"65 y más","Canelones",2003,12.1
+"0 a 14","Cerro Largo",2003,27.6
+"15 a 64","Cerro Largo",2003,60.9
+"65 y más","Cerro Largo",2003,11.4
+"0 a 14","Colonia",2003,23.2
+"15 a 64","Colonia",2003,61.5
+"65 y más","Colonia",2003,15.3
+"0 a 14","Durazno",2003,27.9
+"15 a 64","Durazno",2003,59.9
+"65 y más","Durazno",2003,12.3
+"0 a 14","Flores",2003,24.7
+"15 a 64","Flores",2003,61
+"65 y más","Flores",2003,14.3
+"0 a 14","Florida",2003,24.5
+"15 a 64","Florida",2003,61
+"65 y más","Florida",2003,14.4
+"0 a 14","Lavalleja",2003,23.7
+"15 a 64","Lavalleja",2003,61.2
+"65 y más","Lavalleja",2003,15.1
+"0 a 14","Maldonado",2003,25.8
+"15 a 64","Maldonado",2003,63.5
+"65 y más","Maldonado",2003,10.8
+"0 a 14","Paysandu",2003,27.9
+"15 a 64","Paysandu",2003,59.9
+"65 y más","Paysandu",2003,12.2
+"0 a 14","Rio Negro",2003,28.2
+"15 a 64","Rio Negro",2003,60.7
+"65 y más","Rio Negro",2003,11.1
+"0 a 14","Rivera",2003,28.8
+"15 a 64","Rivera",2003,60.5
+"65 y más","Rivera",2003,10.8
+"0 a 14","Rocha",2003,24.6
+"15 a 64","Rocha",2003,61.5
+"65 y más","Rocha",2003,14
+"0 a 14","Salto",2003,29.4
+"15 a 64","Salto",2003,59.9
+"65 y más","Salto",2003,10.7
+"0 a 14","San José",2003,24.3
+"15 a 64","San José",2003,62.7
+"65 y más","San José",2003,13
+"0 a 14","Soriano",2003,26.2
+"15 a 64","Soriano",2003,60.4
+"65 y más","Soriano",2003,13.4
+"0 a 14","Tacuarembó",2003,27.9
+"15 a 64","Tacuarembó",2003,60.9
+"65 y más","Tacuarembó",2003,11.2
+"0 a 14","Treinta y Tres",2003,27
+"15 a 64","Treinta y Tres",2003,61
+"65 y más","Treinta y Tres",2003,12
+"0 a 14","Montevideo",2004,20.8
+"15 a 64","Montevideo",2004,64.3
+"65 y más","Montevideo",2004,14.9
+"0 a 14","Artigas",2004,29.7
+"15 a 64","Artigas",2004,60.9
+"65 y más","Artigas",2004,9.4
+"0 a 14","Canelones",2004,25.1
+"15 a 64","Canelones",2004,62.7
+"65 y más","Canelones",2004,12.2
+"0 a 14","Cerro Largo",2004,27.5
+"15 a 64","Cerro Largo",2004,60.9
+"65 y más","Cerro Largo",2004,11.6
+"0 a 14","Colonia",2004,23
+"15 a 64","Colonia",2004,61.7
+"65 y más","Colonia",2004,15.3
+"0 a 14","Durazno",2004,27.6
+"15 a 64","Durazno",2004,60
+"65 y más","Durazno",2004,12.4
+"0 a 14","Flores",2004,24.7
+"15 a 64","Flores",2004,60.8
+"65 y más","Flores",2004,14.4
+"0 a 14","Florida",2004,24.5
+"15 a 64","Florida",2004,61
+"65 y más","Florida",2004,14.5
+"0 a 14","Lavalleja",2004,23.6
+"15 a 64","Lavalleja",2004,61.2
+"65 y más","Lavalleja",2004,15.2
+"0 a 14","Maldonado",2004,25.6
+"15 a 64","Maldonado",2004,63.5
+"65 y más","Maldonado",2004,10.8
+"0 a 14","Paysandu",2004,27.6
+"15 a 64","Paysandu",2004,60.1
+"65 y más","Paysandu",2004,12.2
+"0 a 14","Rio Negro",2004,28
+"15 a 64","Rio Negro",2004,60.8
+"65 y más","Rio Negro",2004,11.2
+"0 a 14","Rivera",2004,28.6
+"15 a 64","Rivera",2004,60.5
+"65 y más","Rivera",2004,10.9
+"0 a 14","Rocha",2004,24.4
+"15 a 64","Rocha",2004,61.6
+"65 y más","Rocha",2004,14.1
+"0 a 14","Salto",2004,29.1
+"15 a 64","Salto",2004,60.2
+"65 y más","Salto",2004,10.7
+"0 a 14","San José",2004,24.2
+"15 a 64","San José",2004,62.8
+"65 y más","San José",2004,13
+"0 a 14","Soriano",2004,26.1
+"15 a 64","Soriano",2004,60.5
+"65 y más","Soriano",2004,13.4
+"0 a 14","Tacuarembó",2004,27.6
+"15 a 64","Tacuarembó",2004,61.1
+"65 y más","Tacuarembó",2004,11.3
+"0 a 14","Treinta y Tres",2004,26.7
+"15 a 64","Treinta y Tres",2004,61.1
+"65 y más","Treinta y Tres",2004,12.2
+"0 a 14","Montevideo",2005,20.7
+"15 a 64","Montevideo",2005,64.5
+"65 y más","Montevideo",2005,14.9
+"0 a 14","Artigas",2005,29.3
+"15 a 64","Artigas",2005,61
+"65 y más","Artigas",2005,9.6
+"0 a 14","Canelones",2005,24.9
+"15 a 64","Canelones",2005,62.9
+"65 y más","Canelones",2005,12.2
+"0 a 14","Cerro Largo",2005,27.3
+"15 a 64","Cerro Largo",2005,61
+"65 y más","Cerro Largo",2005,11.7
+"0 a 14","Colonia",2005,22.8
+"15 a 64","Colonia",2005,61.9
+"65 y más","Colonia",2005,15.3
+"0 a 14","Durazno",2005,27.4
+"15 a 64","Durazno",2005,60.1
+"65 y más","Durazno",2005,12.5
+"0 a 14","Flores",2005,24.6
+"15 a 64","Flores",2005,60.8
+"65 y más","Flores",2005,14.6
+"0 a 14","Florida",2005,24.4
+"15 a 64","Florida",2005,61.1
+"65 y más","Florida",2005,14.6
+"0 a 14","Lavalleja",2005,23.4
+"15 a 64","Lavalleja",2005,61.2
+"65 y más","Lavalleja",2005,15.4
+"0 a 14","Maldonado",2005,25.4
+"15 a 64","Maldonado",2005,63.8
+"65 y más","Maldonado",2005,10.8
+"0 a 14","Paysandu",2005,27.4
+"15 a 64","Paysandu",2005,60.3
+"65 y más","Paysandu",2005,12.3
+"0 a 14","Rio Negro",2005,27.8
+"15 a 64","Rio Negro",2005,60.9
+"65 y más","Rio Negro",2005,11.3
+"0 a 14","Rivera",2005,28.2
+"15 a 64","Rivera",2005,60.7
+"65 y más","Rivera",2005,11
+"0 a 14","Rocha",2005,24.2
+"15 a 64","Rocha",2005,61.7
+"65 y más","Rocha",2005,14.1
+"0 a 14","Salto",2005,28.8
+"15 a 64","Salto",2005,60.4
+"65 y más","Salto",2005,10.8
+"0 a 14","San José",2005,24
+"15 a 64","San José",2005,63
+"65 y más","San José",2005,13
+"0 a 14","Soriano",2005,26
+"15 a 64","Soriano",2005,60.6
+"65 y más","Soriano",2005,13.5
+"0 a 14","Tacuarembó",2005,27.4
+"15 a 64","Tacuarembó",2005,61
+"65 y más","Tacuarembó",2005,11.5
+"0 a 14","Treinta y Tres",2005,26.4
+"15 a 64","Treinta y Tres",2005,61.2
+"65 y más","Treinta y Tres",2005,12.4
+"0 a 14","Montevideo",2006,20.5
+"15 a 64","Montevideo",2006,64.6
+"65 y más","Montevideo",2006,14.9
+"0 a 14","Artigas",2006,28.9
+"15 a 64","Artigas",2006,61.2
+"65 y más","Artigas",2006,9.9
+"0 a 14","Canelones",2006,24.6
+"15 a 64","Canelones",2006,63.1
+"65 y más","Canelones",2006,12.3
+"0 a 14","Cerro Largo",2006,27.1
+"15 a 64","Cerro Largo",2006,61
+"65 y más","Cerro Largo",2006,11.9
+"0 a 14","Colonia",2006,22.6
+"15 a 64","Colonia",2006,62
+"65 y más","Colonia",2006,15.4
+"0 a 14","Durazno",2006,27.1
+"15 a 64","Durazno",2006,60.2
+"65 y más","Durazno",2006,12.7
+"0 a 14","Flores",2006,24.3
+"15 a 64","Flores",2006,61
+"65 y más","Flores",2006,14.8
+"0 a 14","Florida",2006,24.2
+"15 a 64","Florida",2006,61.1
+"65 y más","Florida",2006,14.7
+"0 a 14","Lavalleja",2006,23.3
+"15 a 64","Lavalleja",2006,61.2
+"65 y más","Lavalleja",2006,15.6
+"0 a 14","Maldonado",2006,25.2
+"15 a 64","Maldonado",2006,63.9
+"65 y más","Maldonado",2006,10.9
+"0 a 14","Paysandu",2006,27.2
+"15 a 64","Paysandu",2006,60.4
+"65 y más","Paysandu",2006,12.4
+"0 a 14","Rio Negro",2006,27.6
+"15 a 64","Rio Negro",2006,61
+"65 y más","Rio Negro",2006,11.4
+"0 a 14","Rivera",2006,27.9
+"15 a 64","Rivera",2006,60.9
+"65 y más","Rivera",2006,11.2
+"0 a 14","Rocha",2006,24
+"15 a 64","Rocha",2006,61.8
+"65 y más","Rocha",2006,14.3
+"0 a 14","Salto",2006,28.5
+"15 a 64","Salto",2006,60.6
+"65 y más","Salto",2006,10.9
+"0 a 14","San José",2006,23.7
+"15 a 64","San José",2006,63.2
+"65 y más","San José",2006,13.1
+"0 a 14","Soriano",2006,25.8
+"15 a 64","Soriano",2006,60.7
+"65 y más","Soriano",2006,13.5
+"0 a 14","Tacuarembó",2006,27.2
+"15 a 64","Tacuarembó",2006,61.1
+"65 y más","Tacuarembó",2006,11.8
+"0 a 14","Treinta y Tres",2006,26
+"15 a 64","Treinta y Tres",2006,61.4
+"65 y más","Treinta y Tres",2006,12.6
+"0 a 14","Montevideo",2007,20.3
+"15 a 64","Montevideo",2007,64.8
+"65 y más","Montevideo",2007,14.9
+"0 a 14","Artigas",2007,28.5
+"15 a 64","Artigas",2007,61.4
+"65 y más","Artigas",2007,10.1
+"0 a 14","Canelones",2007,24.4
+"15 a 64","Canelones",2007,63.2
+"65 y más","Canelones",2007,12.4
+"0 a 14","Cerro Largo",2007,26.8
+"15 a 64","Cerro Largo",2007,61.1
+"65 y más","Cerro Largo",2007,12.1
+"0 a 14","Colonia",2007,22.5
+"15 a 64","Colonia",2007,62
+"65 y más","Colonia",2007,15.4
+"0 a 14","Durazno",2007,26.8
+"15 a 64","Durazno",2007,60.3
+"65 y más","Durazno",2007,12.9
+"0 a 14","Flores",2007,24
+"15 a 64","Flores",2007,61.2
+"65 y más","Flores",2007,14.8
+"0 a 14","Florida",2007,24
+"15 a 64","Florida",2007,61.2
+"65 y más","Florida",2007,14.8
+"0 a 14","Lavalleja",2007,23.1
+"15 a 64","Lavalleja",2007,61.1
+"65 y más","Lavalleja",2007,15.8
+"0 a 14","Maldonado",2007,25
+"15 a 64","Maldonado",2007,64.1
+"65 y más","Maldonado",2007,10.9
+"0 a 14","Paysandu",2007,27
+"15 a 64","Paysandu",2007,60.5
+"65 y más","Paysandu",2007,12.5
+"0 a 14","Rio Negro",2007,27.5
+"15 a 64","Rio Negro",2007,61.1
+"65 y más","Rio Negro",2007,11.4
+"0 a 14","Rivera",2007,27.5
+"15 a 64","Rivera",2007,61.1
+"65 y más","Rivera",2007,11.3
+"0 a 14","Rocha",2007,23.8
+"15 a 64","Rocha",2007,61.8
+"65 y más","Rocha",2007,14.4
+"0 a 14","Salto",2007,28.2
+"15 a 64","Salto",2007,60.8
+"65 y más","Salto",2007,11
+"0 a 14","San José",2007,23.5
+"15 a 64","San José",2007,63.4
+"65 y más","San José",2007,13.1
+"0 a 14","Soriano",2007,25.7
+"15 a 64","Soriano",2007,60.8
+"65 y más","Soriano",2007,13.6
+"0 a 14","Tacuarembó",2007,26.9
+"15 a 64","Tacuarembó",2007,61.2
+"65 y más","Tacuarembó",2007,11.9
+"0 a 14","Treinta y Tres",2007,25.6
+"15 a 64","Treinta y Tres",2007,61.6
+"65 y más","Treinta y Tres",2007,12.8
+"0 a 14","Montevideo",2008,20.1
+"15 a 64","Montevideo",2008,64.9
+"65 y más","Montevideo",2008,15
+"0 a 14","Artigas",2008,28.1
+"15 a 64","Artigas",2008,61.6
+"65 y más","Artigas",2008,10.3
+"0 a 14","Canelones",2008,24.1
+"15 a 64","Canelones",2008,63.4
+"65 y más","Canelones",2008,12.5
+"0 a 14","Cerro Largo",2008,26.5
+"15 a 64","Cerro Largo",2008,61.3
+"65 y más","Cerro Largo",2008,12.3
+"0 a 14","Colonia",2008,22.3
+"15 a 64","Colonia",2008,62.2
+"65 y más","Colonia",2008,15.5
+"0 a 14","Durazno",2008,26.4
+"15 a 64","Durazno",2008,60.5
+"65 y más","Durazno",2008,13.1
+"0 a 14","Flores",2008,23.7
+"15 a 64","Flores",2008,61.4
+"65 y más","Flores",2008,14.9
+"0 a 14","Florida",2008,23.8
+"15 a 64","Florida",2008,61.3
+"65 y más","Florida",2008,14.9
+"0 a 14","Lavalleja",2008,22.8
+"15 a 64","Lavalleja",2008,61.2
+"65 y más","Lavalleja",2008,16
+"0 a 14","Maldonado",2008,24.7
+"15 a 64","Maldonado",2008,64.3
+"65 y más","Maldonado",2008,11
+"0 a 14","Paysandu",2008,26.7
+"15 a 64","Paysandu",2008,60.7
+"65 y más","Paysandu",2008,12.6
+"0 a 14","Rio Negro",2008,27.3
+"15 a 64","Rio Negro",2008,61.2
+"65 y más","Rio Negro",2008,11.5
+"0 a 14","Rivera",2008,27.2
+"15 a 64","Rivera",2008,61.3
+"65 y más","Rivera",2008,11.4
+"0 a 14","Rocha",2008,23.6
+"15 a 64","Rocha",2008,61.9
+"65 y más","Rocha",2008,14.5
+"0 a 14","Salto",2008,27.8
+"15 a 64","Salto",2008,61.1
+"65 y más","Salto",2008,11.1
+"0 a 14","San José",2008,23.3
+"15 a 64","San José",2008,63.6
+"65 y más","San José",2008,13.1
+"0 a 14","Soriano",2008,25.4
+"15 a 64","Soriano",2008,61
+"65 y más","Soriano",2008,13.6
+"0 a 14","Tacuarembó",2008,26.6
+"15 a 64","Tacuarembó",2008,61.3
+"65 y más","Tacuarembó",2008,12
+"0 a 14","Treinta y Tres",2008,25.2
+"15 a 64","Treinta y Tres",2008,61.9
+"65 y más","Treinta y Tres",2008,13
+"0 a 14","Montevideo",2009,19.9
+"15 a 64","Montevideo",2009,65.1
+"65 y más","Montevideo",2009,14.9
+"0 a 14","Artigas",2009,27.6
+"15 a 64","Artigas",2009,61.8
+"65 y más","Artigas",2009,10.6
+"0 a 14","Canelones",2009,23.8
+"15 a 64","Canelones",2009,63.7
+"65 y más","Canelones",2009,12.5
+"0 a 14","Cerro Largo",2009,26
+"15 a 64","Cerro Largo",2009,61.5
+"65 y más","Cerro Largo",2009,12.4
+"0 a 14","Colonia",2009,22.1
+"15 a 64","Colonia",2009,62.3
+"65 y más","Colonia",2009,15.6
+"0 a 14","Durazno",2009,25.9
+"15 a 64","Durazno",2009,60.8
+"65 y más","Durazno",2009,13.3
+"0 a 14","Flores",2009,23.3
+"15 a 64","Flores",2009,61.6
+"65 y más","Flores",2009,15.1
+"0 a 14","Florida",2009,23.4
+"15 a 64","Florida",2009,61.5
+"65 y más","Florida",2009,15
+"0 a 14","Lavalleja",2009,22.5
+"15 a 64","Lavalleja",2009,61.3
+"65 y más","Lavalleja",2009,16.2
+"0 a 14","Maldonado",2009,24.3
+"15 a 64","Maldonado",2009,64.6
+"65 y más","Maldonado",2009,11.1
+"0 a 14","Paysandu",2009,26.3
+"15 a 64","Paysandu",2009,61
+"65 y más","Paysandu",2009,12.7
+"0 a 14","Rio Negro",2009,27
+"15 a 64","Rio Negro",2009,61.4
+"65 y más","Rio Negro",2009,11.6
+"0 a 14","Rivera",2009,26.8
+"15 a 64","Rivera",2009,61.7
+"65 y más","Rivera",2009,11.6
+"0 a 14","Rocha",2009,23.3
+"15 a 64","Rocha",2009,62
+"65 y más","Rocha",2009,14.6
+"0 a 14","Salto",2009,27.3
+"15 a 64","Salto",2009,61.4
+"65 y más","Salto",2009,11.3
+"0 a 14","San José",2009,23
+"15 a 64","San José",2009,63.9
+"65 y más","San José",2009,13.1
+"0 a 14","Soriano",2009,25.1
+"15 a 64","Soriano",2009,61.2
+"65 y más","Soriano",2009,13.7
+"0 a 14","Tacuarembó",2009,26.2
+"15 a 64","Tacuarembó",2009,61.6
+"65 y más","Tacuarembó",2009,12.2
+"0 a 14","Treinta y Tres",2009,24.7
+"15 a 64","Treinta y Tres",2009,62.1
+"65 y más","Treinta y Tres",2009,13.2
+"0 a 14","Montevideo",2010,19.7
+"15 a 64","Montevideo",2010,65.4
+"65 y más","Montevideo",2010,14.9
+"0 a 14","Artigas",2010,27
+"15 a 64","Artigas",2010,62.2
+"65 y más","Artigas",2010,10.8
+"0 a 14","Canelones",2010,23.4
+"15 a 64","Canelones",2010,64.1
+"65 y más","Canelones",2010,12.6
+"0 a 14","Cerro Largo",2010,25.5
+"15 a 64","Cerro Largo",2010,61.9
+"65 y más","Cerro Largo",2010,12.6
+"0 a 14","Colonia",2010,21.8
+"15 a 64","Colonia",2010,62.6
+"65 y más","Colonia",2010,15.6
+"0 a 14","Durazno",2010,25.4
+"15 a 64","Durazno",2010,61.2
+"65 y más","Durazno",2010,13.4
+"0 a 14","Flores",2010,22.9
+"15 a 64","Flores",2010,61.9
+"65 y más","Flores",2010,15.2
+"0 a 14","Florida",2010,23.1
+"15 a 64","Florida",2010,61.8
+"65 y más","Florida",2010,15.1
+"0 a 14","Lavalleja",2010,22.1
+"15 a 64","Lavalleja",2010,61.5
+"65 y más","Lavalleja",2010,16.4
+"0 a 14","Maldonado",2010,23.9
+"15 a 64","Maldonado",2010,65
+"65 y más","Maldonado",2010,11.2
+"0 a 14","Paysandu",2010,25.8
+"15 a 64","Paysandu",2010,61.3
+"65 y más","Paysandu",2010,12.8
+"0 a 14","Rio Negro",2010,26.6
+"15 a 64","Rio Negro",2010,61.6
+"65 y más","Rio Negro",2010,11.7
+"0 a 14","Rivera",2010,26.3
+"15 a 64","Rivera",2010,62.1
+"65 y más","Rivera",2010,11.7
+"0 a 14","Rocha",2010,23
+"15 a 64","Rocha",2010,62.3
+"65 y más","Rocha",2010,14.7
+"0 a 14","Salto",2010,26.8
+"15 a 64","Salto",2010,61.8
+"65 y más","Salto",2010,11.4
+"0 a 14","San José",2010,22.7
+"15 a 64","San José",2010,64.1
+"65 y más","San José",2010,13.1
+"0 a 14","Soriano",2010,24.6
+"15 a 64","Soriano",2010,61.6
+"65 y más","Soriano",2010,13.8
+"0 a 14","Tacuarembó",2010,25.6
+"15 a 64","Tacuarembó",2010,62.1
+"65 y más","Tacuarembó",2010,12.4
+"0 a 14","Treinta y Tres",2010,24.2
+"15 a 64","Treinta y Tres",2010,62.5
+"65 y más","Treinta y Tres",2010,13.4
+"0 a 14","Montevideo",2011,19.5
+"15 a 64","Montevideo",2011,65.6
+"65 y más","Montevideo",2011,14.9
+"0 a 14","Artigas",2011,26.5
+"15 a 64","Artigas",2011,62.5
+"65 y más","Artigas",2011,11
+"0 a 14","Canelones",2011,23.1
+"15 a 64","Canelones",2011,64.3
+"65 y más","Canelones",2011,12.6
+"0 a 14","Cerro Largo",2011,25.1
+"15 a 64","Cerro Largo",2011,62.2
+"65 y más","Cerro Largo",2011,12.8
+"0 a 14","Colonia",2011,21.5
+"15 a 64","Colonia",2011,62.8
+"65 y más","Colonia",2011,15.7
+"0 a 14","Durazno",2011,24.8
+"15 a 64","Durazno",2011,61.7
+"65 y más","Durazno",2011,13.5
+"0 a 14","Flores",2011,22.6
+"15 a 64","Flores",2011,62.2
+"65 y más","Flores",2011,15.1
+"0 a 14","Florida",2011,22.8
+"15 a 64","Florida",2011,62
+"65 y más","Florida",2011,15.2
+"0 a 14","Lavalleja",2011,21.7
+"15 a 64","Lavalleja",2011,61.8
+"65 y más","Lavalleja",2011,16.5
+"0 a 14","Maldonado",2011,23.4
+"15 a 64","Maldonado",2011,65.4
+"65 y más","Maldonado",2011,11.2
+"0 a 14","Paysandu",2011,25.3
+"15 a 64","Paysandu",2011,61.7
+"65 y más","Paysandu",2011,13
+"0 a 14","Rio Negro",2011,26.2
+"15 a 64","Rio Negro",2011,61.9
+"65 y más","Rio Negro",2011,11.8
+"0 a 14","Rivera",2011,25.7
+"15 a 64","Rivera",2011,62.6
+"65 y más","Rivera",2011,11.7
+"0 a 14","Rocha",2011,22.7
+"15 a 64","Rocha",2011,62.5
+"65 y más","Rocha",2011,14.8
+"0 a 14","Salto",2011,26.3
+"15 a 64","Salto",2011,62.2
+"65 y más","Salto",2011,11.5
+"0 a 14","San José",2011,22.5
+"15 a 64","San José",2011,64.3
+"65 y más","San José",2011,13.2
+"0 a 14","Soriano",2011,24.1
+"15 a 64","Soriano",2011,62
+"65 y más","Soriano",2011,13.9
+"0 a 14","Tacuarembó",2011,24.9
+"15 a 64","Tacuarembó",2011,62.5
+"65 y más","Tacuarembó",2011,12.6
+"0 a 14","Treinta y Tres",2011,23.7
+"15 a 64","Treinta y Tres",2011,62.8
+"65 y más","Treinta y Tres",2011,13.5
+"0 a 14","Montevideo",2012,19.3
+"15 a 64","Montevideo",2012,65.8
+"65 y más","Montevideo",2012,14.9
+"0 a 14","Artigas",2012,25.7
+"15 a 64","Artigas",2012,63
+"65 y más","Artigas",2012,11.3
+"0 a 14","Canelones",2012,22.6
+"15 a 64","Canelones",2012,64.7
+"65 y más","Canelones",2012,12.7
+"0 a 14","Cerro Largo",2012,24.5
+"15 a 64","Cerro Largo",2012,62.5
+"65 y más","Cerro Largo",2012,13
+"0 a 14","Colonia",2012,21.2
+"15 a 64","Colonia",2012,63
+"65 y más","Colonia",2012,15.8
+"0 a 14","Durazno",2012,24.3
+"15 a 64","Durazno",2012,62.2
+"65 y más","Durazno",2012,13.6
+"0 a 14","Flores",2012,22.2
+"15 a 64","Flores",2012,62.6
+"65 y más","Flores",2012,15.2
+"0 a 14","Florida",2012,22.3
+"15 a 64","Florida",2012,62.4
+"65 y más","Florida",2012,15.3
+"0 a 14","Lavalleja",2012,21.2
+"15 a 64","Lavalleja",2012,62.2
+"65 y más","Lavalleja",2012,16.6
+"0 a 14","Maldonado",2012,23
+"15 a 64","Maldonado",2012,65.7
+"65 y más","Maldonado",2012,11.3
+"0 a 14","Paysandu",2012,24.8
+"15 a 64","Paysandu",2012,62.1
+"65 y más","Paysandu",2012,13.1
+"0 a 14","Rio Negro",2012,25.8
+"15 a 64","Rio Negro",2012,62.3
+"65 y más","Rio Negro",2012,11.9
+"0 a 14","Rivera",2012,25.1
+"15 a 64","Rivera",2012,63.1
+"65 y más","Rivera",2012,11.8
+"0 a 14","Rocha",2012,22.4
+"15 a 64","Rocha",2012,62.8
+"65 y más","Rocha",2012,14.8
+"0 a 14","Salto",2012,25.7
+"15 a 64","Salto",2012,62.6
+"65 y más","Salto",2012,11.7
+"0 a 14","San José",2012,22.1
+"15 a 64","San José",2012,64.7
+"65 y más","San José",2012,13.2
+"0 a 14","Soriano",2012,23.7
+"15 a 64","Soriano",2012,62.3
+"65 y más","Soriano",2012,14
+"0 a 14","Tacuarembó",2012,24.4
+"15 a 64","Tacuarembó",2012,63
+"65 y más","Tacuarembó",2012,12.7
+"0 a 14","Treinta y Tres",2012,23.1
+"15 a 64","Treinta y Tres",2012,63.3
+"65 y más","Treinta y Tres",2012,13.6
+"0 a 14","Montevideo",2013,19.2
+"15 a 64","Montevideo",2013,66
+"65 y más","Montevideo",2013,14.9
+"0 a 14","Artigas",2013,25
+"15 a 64","Artigas",2013,63.4
+"65 y más","Artigas",2013,11.6
+"0 a 14","Canelones",2013,22.2
+"15 a 64","Canelones",2013,65.1
+"65 y más","Canelones",2013,12.7
+"0 a 14","Cerro Largo",2013,24
+"15 a 64","Cerro Largo",2013,62.8
+"65 y más","Cerro Largo",2013,13.2
+"0 a 14","Colonia",2013,21
+"15 a 64","Colonia",2013,63.2
+"65 y más","Colonia",2013,15.8
+"0 a 14","Durazno",2013,23.7
+"15 a 64","Durazno",2013,62.6
+"65 y más","Durazno",2013,13.6
+"0 a 14","Flores",2013,21.8
+"15 a 64","Flores",2013,62.9
+"65 y más","Flores",2013,15.4
+"0 a 14","Florida",2013,21.9
+"15 a 64","Florida",2013,62.7
+"65 y más","Florida",2013,15.5
+"0 a 14","Lavalleja",2013,20.8
+"15 a 64","Lavalleja",2013,62.5
+"65 y más","Lavalleja",2013,16.7
+"0 a 14","Maldonado",2013,22.6
+"15 a 64","Maldonado",2013,66
+"65 y más","Maldonado",2013,11.5
+"0 a 14","Paysandu",2013,24.3
+"15 a 64","Paysandu",2013,62.5
+"65 y más","Paysandu",2013,13.2
+"0 a 14","Rio Negro",2013,25.4
+"15 a 64","Rio Negro",2013,62.6
+"65 y más","Rio Negro",2013,12.1
+"0 a 14","Rivera",2013,24.5
+"15 a 64","Rivera",2013,63.5
+"65 y más","Rivera",2013,11.9
+"0 a 14","Rocha",2013,22
+"15 a 64","Rocha",2013,63.2
+"65 y más","Rocha",2013,14.9
+"0 a 14","Salto",2013,25.2
+"15 a 64","Salto",2013,63
+"65 y más","Salto",2013,11.8
+"0 a 14","San José",2013,21.8
+"15 a 64","San José",2013,65
+"65 y más","San José",2013,13.2
+"0 a 14","Soriano",2013,23.2
+"15 a 64","Soriano",2013,62.6
+"65 y más","Soriano",2013,14.2
+"0 a 14","Tacuarembó",2013,23.8
+"15 a 64","Tacuarembó",2013,63.4
+"65 y más","Tacuarembó",2013,12.8
+"0 a 14","Treinta y Tres",2013,22.5
+"15 a 64","Treinta y Tres",2013,63.7
+"65 y más","Treinta y Tres",2013,13.8
+"0 a 14","Montevideo",2014,19.1
+"15 a 64","Montevideo",2014,66.1
+"65 y más","Montevideo",2014,14.8
+"0 a 14","Artigas",2014,24.4
+"15 a 64","Artigas",2014,63.7
+"65 y más","Artigas",2014,11.9
+"0 a 14","Canelones",2014,21.8
+"15 a 64","Canelones",2014,65.4
+"65 y más","Canelones",2014,12.8
+"0 a 14","Cerro Largo",2014,23.5
+"15 a 64","Cerro Largo",2014,63.1
+"65 y más","Cerro Largo",2014,13.3
+"0 a 14","Colonia",2014,20.7
+"15 a 64","Colonia",2014,63.4
+"65 y más","Colonia",2014,15.9
+"0 a 14","Durazno",2014,23.2
+"15 a 64","Durazno",2014,63
+"65 y más","Durazno",2014,13.7
+"0 a 14","Flores",2014,21.3
+"15 a 64","Flores",2014,63.2
+"65 y más","Flores",2014,15.5
+"0 a 14","Florida",2014,21.5
+"15 a 64","Florida",2014,62.9
+"65 y más","Florida",2014,15.6
+"0 a 14","Lavalleja",2014,20.3
+"15 a 64","Lavalleja",2014,62.8
+"65 y más","Lavalleja",2014,16.9
+"0 a 14","Maldonado",2014,22.2
+"15 a 64","Maldonado",2014,66.2
+"65 y más","Maldonado",2014,11.6
+"0 a 14","Paysandu",2014,23.7
+"15 a 64","Paysandu",2014,63
+"65 y más","Paysandu",2014,13.3
+"0 a 14","Rio Negro",2014,24.9
+"15 a 64","Rio Negro",2014,62.9
+"65 y más","Rio Negro",2014,12.2
+"0 a 14","Rivera",2014,23.9
+"15 a 64","Rivera",2014,64
+"65 y más","Rivera",2014,12.1
+"0 a 14","Rocha",2014,21.6
+"15 a 64","Rocha",2014,63.4
+"65 y más","Rocha",2014,15
+"0 a 14","Salto",2014,24.7
+"15 a 64","Salto",2014,63.4
+"65 y más","Salto",2014,11.9
+"0 a 14","San José",2014,21.5
+"15 a 64","San José",2014,65.2
+"65 y más","San José",2014,13.3
+"0 a 14","Soriano",2014,22.8
+"15 a 64","Soriano",2014,62.9
+"65 y más","Soriano",2014,14.3
+"0 a 14","Tacuarembó",2014,23.3
+"15 a 64","Tacuarembó",2014,63.7
+"65 y más","Tacuarembó",2014,13
+"0 a 14","Treinta y Tres",2014,22
+"15 a 64","Treinta y Tres",2014,64
+"65 y más","Treinta y Tres",2014,14
+"0 a 14","Montevideo",2015,18.9
+"15 a 64","Montevideo",2015,66.2
+"65 y más","Montevideo",2015,14.9
+"0 a 14","Artigas",2015,23.9
+"15 a 64","Artigas",2015,64
+"65 y más","Artigas",2015,12.1
+"0 a 14","Canelones",2015,21.4
+"15 a 64","Canelones",2015,65.7
+"65 y más","Canelones",2015,12.9
+"0 a 14","Cerro Largo",2015,23.1
+"15 a 64","Cerro Largo",2015,63.3
+"65 y más","Cerro Largo",2015,13.6
+"0 a 14","Colonia",2015,20.5
+"15 a 64","Colonia",2015,63.5
+"65 y más","Colonia",2015,15.9
+"0 a 14","Durazno",2015,22.8
+"15 a 64","Durazno",2015,63.4
+"65 y más","Durazno",2015,13.8
+"0 a 14","Flores",2015,21
+"15 a 64","Flores",2015,63.4
+"65 y más","Flores",2015,15.6
+"0 a 14","Florida",2015,21.1
+"15 a 64","Florida",2015,63.1
+"65 y más","Florida",2015,15.7
+"0 a 14","Lavalleja",2015,20
+"15 a 64","Lavalleja",2015,63.1
+"65 y más","Lavalleja",2015,16.9
+"0 a 14","Maldonado",2015,21.9
+"15 a 64","Maldonado",2015,66.4
+"65 y más","Maldonado",2015,11.7
+"0 a 14","Paysandu",2015,23.3
+"15 a 64","Paysandu",2015,63.2
+"65 y más","Paysandu",2015,13.4
+"0 a 14","Rio Negro",2015,24.5
+"15 a 64","Rio Negro",2015,63.2
+"65 y más","Rio Negro",2015,12.3
+"0 a 14","Rivera",2015,23.5
+"15 a 64","Rivera",2015,64.3
+"65 y más","Rivera",2015,12.2
+"0 a 14","Rocha",2015,21.3
+"15 a 64","Rocha",2015,63.6
+"65 y más","Rocha",2015,15.1
+"0 a 14","Salto",2015,24.3
+"15 a 64","Salto",2015,63.7
+"65 y más","Salto",2015,12.1
+"0 a 14","San José",2015,21.2
+"15 a 64","San José",2015,65.5
+"65 y más","San José",2015,13.3
+"0 a 14","Soriano",2015,22.4
+"15 a 64","Soriano",2015,63.1
+"65 y más","Soriano",2015,14.5
+"0 a 14","Tacuarembó",2015,22.8
+"15 a 64","Tacuarembó",2015,64
+"65 y más","Tacuarembó",2015,13.1
+"0 a 14","Treinta y Tres",2015,21.6
+"15 a 64","Treinta y Tres",2015,64.3
+"65 y más","Treinta y Tres",2015,14.1
+"0 a 14","Montevideo",2016,18.8
+"15 a 64","Montevideo",2016,66.3
+"65 y más","Montevideo",2016,14.9
+"0 a 14","Artigas",2016,23.4
+"15 a 64","Artigas",2016,64.2
+"65 y más","Artigas",2016,12.4
+"0 a 14","Canelones",2016,21.1
+"15 a 64","Canelones",2016,66
+"65 y más","Canelones",2016,12.9
+"0 a 14","Cerro Largo",2016,22.6
+"15 a 64","Cerro Largo",2016,63.6
+"65 y más","Cerro Largo",2016,13.8
+"0 a 14","Colonia",2016,20.4
+"15 a 64","Colonia",2016,63.6
+"65 y más","Colonia",2016,16
+"0 a 14","Durazno",2016,22.3
+"15 a 64","Durazno",2016,63.7
+"65 y más","Durazno",2016,14
+"0 a 14","Flores",2016,20.6
+"15 a 64","Flores",2016,63.7
+"65 y más","Flores",2016,15.7
+"0 a 14","Florida",2016,20.8
+"15 a 64","Florida",2016,63.3
+"65 y más","Florida",2016,15.9
+"0 a 14","Lavalleja",2016,19.6
+"15 a 64","Lavalleja",2016,63.3
+"65 y más","Lavalleja",2016,17.1
+"0 a 14","Maldonado",2016,21.6
+"15 a 64","Maldonado",2016,66.7
+"65 y más","Maldonado",2016,11.8
+"0 a 14","Paysandu",2016,22.9
+"15 a 64","Paysandu",2016,63.5
+"65 y más","Paysandu",2016,13.6
+"0 a 14","Rio Negro",2016,24.1
+"15 a 64","Rio Negro",2016,63.4
+"65 y más","Rio Negro",2016,12.5
+"0 a 14","Rivera",2016,23.1
+"15 a 64","Rivera",2016,64.6
+"65 y más","Rivera",2016,12.3
+"0 a 14","Rocha",2016,21
+"15 a 64","Rocha",2016,63.8
+"65 y más","Rocha",2016,15.1
+"0 a 14","Salto",2016,23.8
+"15 a 64","Salto",2016,63.9
+"65 y más","Salto",2016,12.2
+"0 a 14","San José",2016,20.9
+"15 a 64","San José",2016,65.7
+"65 y más","San José",2016,13.4
+"0 a 14","Soriano",2016,22
+"15 a 64","Soriano",2016,63.3
+"65 y más","Soriano",2016,14.7
+"0 a 14","Tacuarembó",2016,22.4
+"15 a 64","Tacuarembó",2016,64.3
+"65 y más","Tacuarembó",2016,13.3
+"0 a 14","Treinta y Tres",2016,21.2
+"15 a 64","Treinta y Tres",2016,64.5
+"65 y más","Treinta y Tres",2016,14.3
+"0 a 14","Montevideo",2017,18.7
+"15 a 64","Montevideo",2017,66.4
+"65 y más","Montevideo",2017,15
+"0 a 14","Artigas",2017,22.9
+"15 a 64","Artigas",2017,64.4
+"65 y más","Artigas",2017,12.8
+"0 a 14","Canelones",2017,20.7
+"15 a 64","Canelones",2017,66.2
+"65 y más","Canelones",2017,13.1
+"0 a 14","Cerro Largo",2017,22.2
+"15 a 64","Cerro Largo",2017,63.8
+"65 y más","Cerro Largo",2017,14
+"0 a 14","Colonia",2017,20.2
+"15 a 64","Colonia",2017,63.7
+"65 y más","Colonia",2017,16.1
+"0 a 14","Durazno",2017,21.9
+"15 a 64","Durazno",2017,64
+"65 y más","Durazno",2017,14.1
+"0 a 14","Flores",2017,20.1
+"15 a 64","Flores",2017,64
+"65 y más","Flores",2017,15.9
+"0 a 14","Florida",2017,20.4
+"15 a 64","Florida",2017,63.6
+"65 y más","Florida",2017,16
+"0 a 14","Lavalleja",2017,20.4
+"15 a 64","Lavalleja",2017,63.6
+"65 y más","Lavalleja",2017,16
+"0 a 14","Maldonado",2017,21.2
+"15 a 64","Maldonado",2017,66.9
+"65 y más","Maldonado",2017,11.9
+"0 a 14","Paysandu",2017,22.5
+"15 a 64","Paysandu",2017,63.8
+"65 y más","Paysandu",2017,13.7
+"0 a 14","Rio Negro",2017,23.7
+"15 a 64","Rio Negro",2017,63.6
+"65 y más","Rio Negro",2017,12.7
+"0 a 14","Rivera",2017,22.7
+"15 a 64","Rivera",2017,64.8
+"65 y más","Rivera",2017,12.5
+"0 a 14","Rocha",2017,20.7
+"15 a 64","Rocha",2017,64
+"65 y más","Rocha",2017,15.3
+"0 a 14","Salto",2017,23.5
+"15 a 64","Salto",2017,64.1
+"65 y más","Salto",2017,12.4
+"0 a 14","San José",2017,20.7
+"15 a 64","San José",2017,65.8
+"65 y más","San José",2017,13.5
+"0 a 14","Soriano",2017,21.7
+"15 a 64","Soriano",2017,63.5
+"65 y más","Soriano",2017,14.9
+"0 a 14","Tacuarembó",2017,21.9
+"15 a 64","Tacuarembó",2017,64.6
+"65 y más","Tacuarembó",2017,13.5
+"0 a 14","Treinta y Tres",2017,20.8
+"15 a 64","Treinta y Tres",2017,64.7
+"65 y más","Treinta y Tres",2017,14.5
