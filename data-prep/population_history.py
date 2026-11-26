@@ -24,6 +24,8 @@ Sources:
   consistent with the 2018 census, to the current year.
 - Mexico: CONAPO, "Reconstrucción y proyecciones de la población de los municipios de México 1990-2040" (2024):
   mid-year population, reconstructed for 1990-2020 and projected from 2021, to the current year (fetch round 55).
+- Sri Lanka: the 1981, 2001, 2012 and 2024 censuses by district (DCS, 2024 census final report; no 2001 figure for the
+  Northern and Eastern districts, where that census wasn't completed).
 - Philippines: the 2015 census by barangay (PSA, via HDX), added up by city and municipality, and PSA's 2021 figure.
 - Brazil: IBGE's population estimates by municipality for 1 July, 2001-2025 (SIDRA table 6579; none for the census
   years 2007, 2010 and 2022).
@@ -206,6 +208,11 @@ def prep(raw):
             p21 = float(r.get("Population") or 0)
             if v and p21: out[i] = {"2015": round(v), "2021": round(p21)}
         res["philippines"] = out
+    # Sri Lanka: the districts at the 1981, 2001, 2012 and 2024 censuses (DCS, 2024 census final report)
+    lf = os.path.join(IN, "sri_lanka", "lka_census_district.json")
+    if os.path.exists(lf):
+        lk = json.load(open(lf, encoding="utf-8"))["districts"]
+        res["sri_lanka"] = {r["District ID"]: lk[r["District"]] for r in csv.DictReader(open(os.path.join(DOCS, "sri_lanka.csv"), encoding="utf-8")) if r["District"] in lk}
     for name in list(res):
         splits = [tuple(e) for e in bc.get(name, {}).get("splits", [])]
         keep = {}
