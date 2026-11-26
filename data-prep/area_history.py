@@ -9,6 +9,9 @@ left to them.
 - Philippines: population for the country and its regions, 2022-2025 (UNFPA/PSA via HDX, fetch round 61:
   inputs/philippines/ph_admpop_regions_2022_2025.json). Western and Central Visayas and the ARMM are left out: those
   figures are on the regions before the 2024 Negros Island Region and before BARMM.
+- South Africa: population for the country and its provinces at the 1996, 2001, 2011 and 2022 censuses (Stats SA,
+  Census 2022 statistical release P0301.4, Table 2.2, uploaded by the project's owner:
+  inputs/south_africa/za_census_provinces.json).
 
   python3 data-prep/area_history.py
 """
@@ -38,6 +41,9 @@ def main():
         k = alias.get(n.upper(), n.upper())
         if k in skip or k not in have: continue
         out["Philippines"][have[k]] = {POP: s}
+    za = json.load(open(os.path.join(IN, "south_africa", "za_census_provinces.json"), encoding="utf-8"))
+    have = regions("south_africa")
+    out["South Africa"] = {"": {POP: za["country"]}, **{p: {POP: s} for p, s in za["provinces"].items() if p in have}}
     json.dump(out, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"), sort_keys=True)
     for c, v in out.items(): print(c, len(v) - 1, "regions;", ", ".join(sorted(v[""][POP])))
 
