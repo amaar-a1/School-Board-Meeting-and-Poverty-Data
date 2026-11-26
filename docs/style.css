@@ -278,3 +278,15 @@ body.embed-stats [data-view="stats"] .note { display: none; }
 .hist-controls select, .hist-controls input { font: inherit; padding: 4px 8px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); color: var(--text); max-width: 100%; }
 .hist-controls input { width: 220px; }
 @media (max-width: 600px) { .hist-controls label { width: 100%; } .hist-controls select, .hist-controls input { flex: 1; min-width: 0; width: auto; } }
+
+/* First-visit terms of use (terms.js) */
+#terms-gate { max-width: min(640px, calc(100vw - 32px)); max-height: calc(100vh - 32px); border: 1px solid var(--border); border-radius: 10px;
+  background: var(--surface); color: var(--text); padding: 1.25rem 1.25rem 1rem; box-sizing: border-box; overflow: auto; }
+#terms-gate::backdrop { background: rgba(10, 14, 20, 0.6); }
+#terms-gate h2 { margin: 0.25rem 0 0.5rem; font-size: 1.25rem; }
+#terms-gate .terms-gate-body p { margin: 0.5rem 0; line-height: 1.45; }
+.terms-gate-lang { display: flex; gap: 0.4rem; flex-wrap: wrap; justify-content: flex-end; }
+.terms-gate-lang button { font: inherit; font-size: 0.85rem; padding: 0.2rem 0.6rem; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); color: var(--text); cursor: pointer; }
+.terms-gate-lang button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.terms-gate-agree { display: block; margin: 1rem 0 0 auto; font: inherit; font-weight: 600; padding: 0.55rem 1.4rem; border: 0; border-radius: 6px; background: var(--accent); color: #fff; cursor: pointer; }
+.terms-gate-agree:focus-visible, .terms-gate-lang button:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 2px; }
