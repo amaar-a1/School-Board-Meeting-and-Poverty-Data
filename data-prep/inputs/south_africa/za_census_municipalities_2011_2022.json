@@ -1,0 +1,1283 @@
+{
+ "source": "Statistics South Africa, Census 2022: Provinces at a Glance (uploaded by the project's owner): population by local and metropolitan municipality at the 2011 and 2022 censuses, on the 2022 municipal boundaries. Matched to the site's municipalities by their 2022 population, which equals the site's.",
+ "municipalities": {
+  "ZAF-NC084": {
+   "name": "!Kheis",
+   "code": "NC084",
+   "2011": 16637,
+   "2022": 21954
+  },
+  "ZAF-KZN263": {
+   "name": "Abaqulusi",
+   "code": "KZN263",
+   "2011": 214714,
+   "2022": 247263
+  },
+  "ZAF-MP301": {
+   "name": "Chief Albert Luthuli",
+   "code": "MP301",
+   "2011": 186010,
+   "2022": 247664
+  },
+  "ZAF-KZN238": {
+   "name": "Alfred Duma",
+   "code": "KZN238",
+   "2011": 339777,
+   "2022": 415036
+  },
+  "ZAF-EC124": {
+   "name": "Amahlathi",
+   "code": "EC124",
+   "2011": 101035,
+   "2022": 115703
+  },
+  "ZAF-LIM334": {
+   "name": "Ba-Phalaborwa",
+   "code": "LIM334",
+   "2011": 150637,
+   "2022": 188603
+  },
+  "ZAF-WC053": {
+   "name": "Beaufort West",
+   "code": "WC053",
+   "2011": 49586,
+   "2022": 72972
+  },
+  "ZAF-LIM366": {
+   "name": "Bela-Bela",
+   "code": "LIM366",
+   "2011": 66500,
+   "2022": 64306
+  },
+  "ZAF-WC013": {
+   "name": "Bergrivier",
+   "code": "WC013",
+   "2011": 61897,
+   "2022": 70276
+  },
+  "ZAF-KZN276": {
+   "name": "Big Five Hlabisa",
+   "code": "KZN276",
+   "2011": 107147,
+   "2022": 131755
+  },
+  "ZAF-WC047": {
+   "name": "Bitou",
+   "code": "WC047",
+   "2011": 49162,
+   "2022": 65240
+  },
+  "ZAF-LIM351": {
+   "name": "Blouberg",
+   "code": "LIM351",
+   "2011": 175085,
+   "2022": 192109
+  },
+  "ZAF-EC102": {
+   "name": "Blue Crane Route",
+   "code": "EC102",
+   "2011": 36002,
+   "2022": 49883
+  },
+  "ZAF-WC025": {
+   "name": "Breede Valley",
+   "code": "WC025",
+   "2011": 166825,
+   "2022": 212682
+  },
+  "ZAF-BUF": {
+   "name": "Buffalo City",
+   "code": "",
+   "2011": 781853,
+   "2022": 975255
+  },
+  "ZAF-MP325": {
+   "name": "Bushbuckridge",
+   "code": "MP325",
+   "2011": 538593,
+   "2022": 750821
+  },
+  "ZAF-WC033": {
+   "name": "Cape Agulhas",
+   "code": "WC033",
+   "2011": 33038,
+   "2022": 40274
+  },
+  "ZAF-WC012": {
+   "name": "Cederberg",
+   "code": "WC012",
+   "2011": 49768,
+   "2022": 55108
+  },
+  "ZAF-CPT": {
+   "name": "City of Cape Town",
+   "code": "",
+   "2011": 3740031,
+   "2022": 4772846
+  },
+  "ZAF-EKU": {
+   "name": "Ekurhuleni",
+   "code": "",
+   "2011": 3178470,
+   "2022": 4066691
+  },
+  "ZAF-JHB": {
+   "name": "City of Johannesburg",
+   "code": "",
+   "2011": 4434631,
+   "2022": 4803262
+  },
+  "ZAF-NW403": {
+   "name": "City of Matlosana",
+   "code": "NW403",
+   "2011": 398676,
+   "2022": 431231
+  },
+  "ZAF-TSH": {
+   "name": "City of Tshwane",
+   "code": "",
+   "2011": 2921488,
+   "2022": 4040315
+  },
+  "ZAF-LIM345": {
+   "name": "Collins Chabane",
+   "code": "LIM345",
+   "2011": 328529,
+   "2022": 443798
+  },
+  "ZAF-KZN254": {
+   "name": "Dannhauser",
+   "code": "KZN254",
+   "2011": 102937,
+   "2022": 142750
+  },
+  "ZAF-NC087": {
+   "name": "Dawid Kruiper",
+   "code": "NC087",
+   "2011": 100498,
+   "2022": 125744
+  },
+  "ZAF-FS192": {
+   "name": "Dihlabeng",
+   "code": "FS192",
+   "2011": 128704,
+   "2022": 130434
+  },
+  "ZAF-NC092": {
+   "name": "Dikgatlong",
+   "code": "NC092",
+   "2011": 46841,
+   "2022": 56967
+  },
+  "ZAF-MP306": {
+   "name": "Dipaleseng",
+   "code": "MP306",
+   "2011": 42390,
+   "2022": 35980
+  },
+  "ZAF-NW384": {
+   "name": "Ditsobotla",
+   "code": "NW384",
+   "2011": 168902,
+   "2022": 164176
+  },
+  "ZAF-EC137": {
+   "name": "Engcobo",
+   "code": "EC137",
+   "2011": 155513,
+   "2022": 132799
+  },
+  "ZAF-EC101": {
+   "name": "Dr Beyers Naude",
+   "code": "EC101",
+   "2011": 79292,
+   "2022": 101001
+  },
+  "ZAF-MP316": {
+   "name": "Dr JS Moroka",
+   "code": "MP316",
+   "2011": 249705,
+   "2022": 324855
+  },
+  "ZAF-KZN436": {
+   "name": "Dr Nkosazana Dlamini Zuma",
+   "code": "KZN436",
+   "2011": 103318,
+   "2022": 128565
+  },
+  "ZAF-WC023": {
+   "name": "Drakenstein",
+   "code": "WC023",
+   "2011": 251262,
+   "2022": 276800
+  },
+  "ZAF-LIM472": {
+   "name": "Elias Motsoaledi",
+   "code": "LIM472",
+   "2011": 249363,
+   "2022": 288049
+  },
+  "ZAF-EC141": {
+   "name": "Elundini",
+   "code": "EC141",
+   "2011": 137045,
+   "2022": 141762
+  },
+  "ZAF-MP314": {
+   "name": "Emakhazeni",
+   "code": "MP314",
+   "2011": 47216,
+   "2022": 50165
+  },
+  "ZAF-EC136": {
+   "name": "Emalahleni",
+   "code": "EC136",
+   "2011": 120758,
+   "2022": 128873
+  },
+  "ZAF-MP312": {
+   "name": "Emalahleni",
+   "code": "MP312",
+   "2011": 395466,
+   "2022": 434522
+  },
+  "ZAF-GT421": {
+   "name": "Emfuleni",
+   "code": "GT421",
+   "2011": 721663,
+   "2022": 945650
+  },
+  "ZAF-NC073": {
+   "name": "Emthanjeni",
+   "code": "NC073",
+   "2011": 42356,
+   "2022": 46587
+  },
+  "ZAF-KZN241": {
+   "name": "Endumeni",
+   "code": "KZN241",
+   "2011": 64862,
+   "2022": 100085
+  },
+  "ZAF-EC139": {
+   "name": "Enoch Mgijima",
+   "code": "EC139",
+   "2011": 250776,
+   "2022": 297055
+  },
+  "ZAF-LIM471": {
+   "name": "Ephraim Mogale",
+   "code": "LIM471",
+   "2011": 123648,
+   "2022": 132468
+  },
+  "ZAF-LIM476": {
+   "name": "Fetakgomo Tubatse",
+   "code": "LIM476",
+   "2011": 428948,
+   "2022": 575960
+  },
+  "ZAF-NC452": {
+   "name": "Ga-Segonyana",
+   "code": "NC452",
+   "2011": 93651,
+   "2022": 117454
+  },
+  "ZAF-NC453": {
+   "name": "Gamagara",
+   "code": "NC453",
+   "2011": 41617,
+   "2022": 29580
+  },
+  "ZAF-WC044": {
+   "name": "George",
+   "code": "WC044",
+   "2011": 193672,
+   "2022": 294929
+  },
+  "ZAF-MP307": {
+   "name": "Govan Mbeki",
+   "code": "MP307",
+   "2011": 294538,
+   "2022": 310117
+  },
+  "ZAF-EC123": {
+   "name": "Great Kei",
+   "code": "EC123",
+   "2011": 30832,
+   "2022": 35990
+  },
+  "ZAF-LIM331": {
+   "name": "Greater Giyani",
+   "code": "LIM331",
+   "2011": 242986,
+   "2022": 316841
+  },
+  "ZAF-KZN433": {
+   "name": "Greater Kokstad",
+   "code": "KZN433",
+   "2011": 65981,
+   "2022": 81676
+  },
+  "ZAF-LIM332": {
+   "name": "Greater Letaba",
+   "code": "LIM332",
+   "2011": 213932,
+   "2022": 261038
+  },
+  "ZAF-NW394": {
+   "name": "Greater Taung",
+   "code": "NW394",
+   "2011": 177642,
+   "2022": 202009
+  },
+  "ZAF-LIM333": {
+   "name": "Greater Tzaneen",
+   "code": "LIM333",
+   "2011": 389623,
+   "2022": 478254
+  },
+  "ZAF-NC065": {
+   "name": "Hantam",
+   "code": "NC065",
+   "2011": 21671,
+   "2022": 22281
+  },
+  "ZAF-WC042": {
+   "name": "Hessequa",
+   "code": "WC042",
+   "2011": 52642,
+   "2022": 71918
+  },
+  "ZAF-KZN224": {
+   "name": "Impendle",
+   "code": "KZN224",
+   "2011": 37226,
+   "2022": 36648
+  },
+  "ZAF-EC153": {
+   "name": "Ngquza Hill",
+   "code": "EC153",
+   "2011": 278481,
+   "2022": 354573
+  },
+  "ZAF-KZN237": {
+   "name": "Inkosi Langalibalele",
+   "code": "KZN237",
+   "2011": 196227,
+   "2022": 230924
+  },
+  "ZAF-EC135": {
+   "name": "Intsika Yethu",
+   "code": "EC135",
+   "2011": 150718,
+   "2022": 128101
+  },
+  "ZAF-EC131": {
+   "name": "Inxuba Yethemba",
+   "code": "EC131",
+   "2011": 65560,
+   "2022": 77578
+  },
+  "ZAF-NW405": {
+   "name": "JB Marks",
+   "code": "NW405",
+   "2011": 219463,
+   "2022": 212670
+  },
+  "ZAF-NC451": {
+   "name": "Joe Morolong",
+   "code": "NC451",
+   "2011": 89530,
+   "2022": 125420
+  },
+  "ZAF-KZN434": {
+   "name": "Ubuhlebezwe",
+   "code": "KZN434",
+   "2011": 110925,
+   "2022": 133032
+  },
+  "ZAF-KZN272": {
+   "name": "Jozini",
+   "code": "KZN272",
+   "2011": 186502,
+   "2022": 199153
+  },
+  "ZAF-NW397": {
+   "name": "Kagisano/Molopo",
+   "code": "NW397",
+   "2011": 105789,
+   "2022": 112130
+  },
+  "ZAF-NC082": {
+   "name": "Kai !Garib",
+   "code": "NC082",
+   "2011": 65869,
+   "2022": 85104
+  },
+  "ZAF-NC064": {
+   "name": "Kamiesberg",
+   "code": "NC064",
+   "2011": 10187,
+   "2022": 15130
+  },
+  "ZAF-WC041": {
+   "name": "Kannaland",
+   "code": "WC041",
+   "2011": 24767,
+   "2022": 31986
+  },
+  "ZAF-NC074": {
+   "name": "Kareeberg",
+   "code": "NC074",
+   "2011": 11673,
+   "2022": 10961
+  },
+  "ZAF-NC066": {
+   "name": "Karoo Hoogland",
+   "code": "NC066",
+   "2011": 12514,
+   "2022": 11691
+  },
+  "ZAF-NC086": {
+   "name": "Kgatelopele",
+   "code": "NC086",
+   "2011": 18687,
+   "2022": 19854
+  },
+  "ZAF-NW374": {
+   "name": "Kgetlengrivier",
+   "code": "NW374",
+   "2011": 51049,
+   "2022": 54759
+  },
+  "ZAF-NC067": {
+   "name": "Kh+ói-Ma",
+   "code": "NC067",
+   "2011": 12446,
+   "2022": 8510
+  },
+  "ZAF-EC157": {
+   "name": "King Sabata Dalindyebo",
+   "code": "EC157",
+   "2011": 450287,
+   "2022": 476558
+  },
+  "ZAF-WC048": {
+   "name": "Knysna",
+   "code": "WC048",
+   "2011": 68659,
+   "2022": 96055
+  },
+  "ZAF-FS162": {
+   "name": "Kopanong",
+   "code": "FS162",
+   "2011": 49171,
+   "2022": 51832
+  },
+  "ZAF-EC109": {
+   "name": "Kou-Kamma",
+   "code": "EC109",
+   "2011": 40663,
+   "2022": 36487
+  },
+  "ZAF-EC108": {
+   "name": "Kouga",
+   "code": "EC108",
+   "2011": 98558,
+   "2022": 107014
+  },
+  "ZAF-EC156": {
+   "name": "Mhlontlo",
+   "code": "EC156",
+   "2011": 190745,
+   "2022": 186391
+  },
+  "ZAF-KZN292": {
+   "name": "KwaDukuza",
+   "code": "KZN292",
+   "2011": 231125,
+   "2022": 324912
+  },
+  "ZAF-WC051": {
+   "name": "Laingsburg",
+   "code": "WC051",
+   "2011": 8289,
+   "2022": 11366
+  },
+  "ZAF-WC026": {
+   "name": "Langeberg",
+   "code": "WC026",
+   "2011": 97724,
+   "2022": 94045
+  },
+  "ZAF-MP305": {
+   "name": "Lekwa",
+   "code": "MP305",
+   "2011": 115662,
+   "2022": 119669
+  },
+  "ZAF-NW396": {
+   "name": "Lekwa-Teemane",
+   "code": "NW396",
+   "2011": 53248,
+   "2022": 59815
+  },
+  "ZAF-LIM355": {
+   "name": "Lepele-Nkumpi",
+   "code": "LIM355",
+   "2011": 231239,
+   "2022": 284404
+  },
+  "ZAF-LIM362": {
+   "name": "Lephalale",
+   "code": "LIM362",
+   "2011": 118864,
+   "2022": 125198
+  },
+  "ZAF-GT423": {
+   "name": "Lesedi",
+   "code": "GT423",
+   "2011": 99520,
+   "2022": 132783
+  },
+  "ZAF-FS161": {
+   "name": "Letsemeng",
+   "code": "FS161",
+   "2011": 38628,
+   "2022": 43101
+  },
+  "ZAF-NW372": {
+   "name": "Local Municipality of Madibeng",
+   "code": "NW372",
+   "2011": 475796,
+   "2022": 522566
+  },
+  "ZAF-FS205": {
+   "name": "Mafube",
+   "code": "FS205",
+   "2011": 57876,
+   "2022": 61150
+  },
+  "ZAF-NC093": {
+   "name": "Magareng",
+   "code": "NC093",
+   "2011": 24204,
+   "2022": 26816
+  },
+  "ZAF-NW383": {
+   "name": "Mahikeng",
+   "code": "NW383",
+   "2011": 291527,
+   "2022": 354504
+  },
+  "ZAF-EC104": {
+   "name": "Makana",
+   "code": "EC104",
+   "2011": 80390,
+   "2022": 97815
+  },
+  "ZAF-LIM344": {
+   "name": "Makhado",
+   "code": "LIM344",
+   "2011": 411353,
+   "2022": 502452
+  },
+  "ZAF-LIM473": {
+   "name": "Makhuduthamaga",
+   "code": "LIM473",
+   "2011": 274880,
+   "2022": 340328
+  },
+  "ZAF-FS194": {
+   "name": "Maluti a Phofung",
+   "code": "FS194",
+   "2011": 335784,
+   "2022": 398459
+  },
+  "ZAF-NW393": {
+   "name": "Mamusa",
+   "code": "NW393",
+   "2011": 60355,
+   "2022": 70483
+  },
+  "ZAF-KZN291": {
+   "name": "Mandeni",
+   "code": "KZN291",
+   "2011": 138141,
+   "2022": 180939
+  },
+  "ZAF-MAN": {
+   "name": "Mangaung",
+   "code": "",
+   "2011": 775184,
+   "2022": 811431
+  },
+  "ZAF-FS196": {
+   "name": "Mantsopa",
+   "code": "FS196",
+   "2011": 51056,
+   "2022": 55897
+  },
+  "ZAF-KZN294": {
+   "name": "Maphumulo",
+   "code": "KZN294",
+   "2011": 96724,
+   "2022": 110983
+  },
+  "ZAF-NW404": {
+   "name": "Maquassi Hills",
+   "code": "NW404",
+   "2011": 77794,
+   "2022": 90302
+  },
+  "ZAF-LIM335": {
+   "name": "Maruleng",
+   "code": "LIM335",
+   "2011": 95328,
+   "2022": 128137
+  },
+  "ZAF-FS181": {
+   "name": "Masilonyana",
+   "code": "FS181",
+   "2011": 59895,
+   "2022": 63800
+  },
+  "ZAF-EC441": {
+   "name": "Matatiele",
+   "code": "EC441",
+   "2011": 203843,
+   "2022": 225562
+  },
+  "ZAF-FS184": {
+   "name": "Matjhabeng",
+   "code": "FS184",
+   "2011": 407020,
+   "2022": 439034
+  },
+  "ZAF-WC011": {
+   "name": "Matzikama",
+   "code": "WC011",
+   "2011": 67147,
+   "2022": 69043
+  },
+  "ZAF-EC121": {
+   "name": "Mbhashe",
+   "code": "EC121",
+   "2011": 261670,
+   "2022": 240020
+  },
+  "ZAF-MP326": {
+   "name": "City of Mbombela",
+   "code": "MP326",
+   "2011": 658604,
+   "2022": 809674
+  },
+  "ZAF-GT484": {
+   "name": "Merafong City",
+   "code": "GT484",
+   "2011": 197520,
+   "2022": 225476
+  },
+  "ZAF-FS204": {
+   "name": "Metsimaholo",
+   "code": "FS204",
+   "2011": 149108,
+   "2022": 158391
+  },
+  "ZAF-GT422": {
+   "name": "Midvaal",
+   "code": "GT422",
+   "2011": 95301,
+   "2022": 112254
+  },
+  "ZAF-KZN226": {
+   "name": "Mkhambathini",
+   "code": "KZN226",
+   "2011": 64528,
+   "2022": 61660
+  },
+  "ZAF-MP303": {
+   "name": "Mkhondo",
+   "code": "MP303",
+   "2011": 171982,
+   "2022": 255411
+  },
+  "ZAF-EC122": {
+   "name": "Mnquma",
+   "code": "EC122",
+   "2011": 245629,
+   "2022": 232993
+  },
+  "ZAF-LIM368": {
+   "name": "Modimolle-Mookgophong",
+   "code": "LIM368",
+   "2011": 104153,
+   "2022": 130113
+  },
+  "ZAF-LIM367": {
+   "name": "Mogalakwena",
+   "code": "LIM367",
+   "2011": 304585,
+   "2022": 378198
+  },
+  "ZAF-GT481": {
+   "name": "Mogale City",
+   "code": "GT481",
+   "2011": 362618,
+   "2022": 438217
+  },
+  "ZAF-FS163": {
+   "name": "Mohokare",
+   "code": "FS163",
+   "2011": 34146,
+   "2022": 36968
+  },
+  "ZAF-LIM353": {
+   "name": "Molemole",
+   "code": "LIM353",
+   "2011": 126506,
+   "2022": 127130
+  },
+  "ZAF-FS201": {
+   "name": "Moqhaka",
+   "code": "FS201",
+   "2011": 160532,
+   "2022": 155410
+  },
+  "ZAF-NW371": {
+   "name": "Moretele",
+   "code": "NW371",
+   "2011": 188533,
+   "2022": 219120
+  },
+  "ZAF-NW375": {
+   "name": "Moses Kotane",
+   "code": "NW375",
+   "2011": 242554,
+   "2022": 265668
+  },
+  "ZAF-WC043": {
+   "name": "Mossel Bay",
+   "code": "WC043",
+   "2011": 89430,
+   "2022": 140075
+  },
+  "ZAF-KZN223": {
+   "name": "Mpofana",
+   "code": "KZN223",
+   "2011": 34913,
+   "2022": 33382
+  },
+  "ZAF-KZN244": {
+   "name": "Msinga",
+   "code": "KZN244",
+   "2011": 169145,
+   "2022": 206001
+  },
+  "ZAF-MP302": {
+   "name": "Msukaligwa",
+   "code": "MP302",
+   "2011": 149377,
+   "2022": 199314
+  },
+  "ZAF-KZN225": {
+   "name": "The Msunduzi",
+   "code": "KZN225",
+   "2011": 621715,
+   "2022": 817725
+  },
+  "ZAF-KZN285": {
+   "name": "Mthonjaneni",
+   "code": "KZN285",
+   "2011": 83577,
+   "2022": 99289
+  },
+  "ZAF-KZN275": {
+   "name": "Mtubatuba",
+   "code": "KZN275",
+   "2011": 175425,
+   "2022": 215869
+  },
+  "ZAF-LIM341": {
+   "name": "Musina",
+   "code": "LIM341",
+   "2011": 104709,
+   "2022": 130899
+  },
+  "ZAF-FS185": {
+   "name": "Nala",
+   "code": "FS185",
+   "2011": 81220,
+   "2022": 90561
+  },
+  "ZAF-NW392": {
+   "name": "Naledi",
+   "code": "NW392",
+   "2011": 66781,
+   "2022": 63755
+  },
+  "ZAF-NC062": {
+   "name": "Nama Khoi",
+   "code": "NC062",
+   "2011": 47041,
+   "2022": 67089
+  },
+  "ZAF-EC105": {
+   "name": "Ndlambe",
+   "code": "EC105",
+   "2011": 61176,
+   "2022": 87797
+  },
+  "ZAF-KZN293": {
+   "name": "Ndwedwe",
+   "code": "KZN293",
+   "2011": 140820,
+   "2022": 165826
+  },
+  "ZAF-NMA": {
+   "name": "Nelson Mandela Bay",
+   "code": "",
+   "2011": 1152115,
+   "2022": 1190496
+  },
+  "ZAF-KZN252": {
+   "name": "Newcastle",
+   "code": "KZN252",
+   "2011": 363236,
+   "2022": 507710
+  },
+  "ZAF-EC126": {
+   "name": "Ngqushwa",
+   "code": "EC126",
+   "2011": 64422,
+   "2022": 68300
+  },
+  "ZAF-FS203": {
+   "name": "Ngwathe",
+   "code": "FS203",
+   "2011": 120520,
+   "2022": 134962
+  },
+  "ZAF-KZN286": {
+   "name": "Nkandla",
+   "code": "KZN286",
+   "2011": 114416,
+   "2022": 108896
+  },
+  "ZAF-FS193": {
+   "name": "Nketoana",
+   "code": "FS193",
+   "2011": 60324,
+   "2022": 66488
+  },
+  "ZAF-MP324": {
+   "name": "Nkomazi",
+   "code": "MP324",
+   "2011": 393030,
+   "2022": 591928
+  },
+  "ZAF-KZN265": {
+   "name": "Nongoma",
+   "code": "KZN265",
+   "2011": 194908,
+   "2022": 225278
+  },
+  "ZAF-KZN242": {
+   "name": "Nqutu",
+   "code": "KZN242",
+   "2011": 165307,
+   "2022": 201133
+  },
+  "ZAF-EC444": {
+   "name": "Ntabankulu",
+   "code": "EC444",
+   "2011": 123821,
+   "2022": 146423
+  },
+  "ZAF-EC155": {
+   "name": "Nyandeni",
+   "code": "EC155",
+   "2011": 290390,
+   "2022": 304856
+  },
+  "ZAF-KZN235": {
+   "name": "Okhahlamba",
+   "code": "KZN235",
+   "2011": 132068,
+   "2022": 143132
+  },
+  "ZAF-WC045": {
+   "name": "Oudtshoorn",
+   "code": "WC045",
+   "2011": 95933,
+   "2022": 138257
+  },
+  "ZAF-WC032": {
+   "name": "Overstrand",
+   "code": "WC032",
+   "2011": 80358,
+   "2022": 132495
+  },
+  "ZAF-NC094": {
+   "name": "Phokwane",
+   "code": "NC094",
+   "2011": 63000,
+   "2022": 80481
+  },
+  "ZAF-FS195": {
+   "name": "Phumelela",
+   "code": "FS195",
+   "2011": 47772,
+   "2022": 52224
+  },
+  "ZAF-MP304": {
+   "name": "Dr Pixley Ka Isaka Seme",
+   "code": "MP304",
+   "2011": 83235,
+   "2022": 115304
+  },
+  "ZAF-LIM354": {
+   "name": "Polokwane",
+   "code": "LIM354",
+   "2011": 728633,
+   "2022": 843459
+  },
+  "ZAF-EC154": {
+   "name": "Port St Johns",
+   "code": "EC154",
+   "2011": 156136,
+   "2022": 179325
+  },
+  "ZAF-WC052": {
+   "name": "Prince Albert",
+   "code": "WC052",
+   "2011": 13136,
+   "2022": 17836
+  },
+  "ZAF-NW385": {
+   "name": "Ramotshere Moiloa",
+   "code": "NW385",
+   "2011": 150713,
+   "2022": 161605
+  },
+  "ZAF-GT485": {
+   "name": "Rand West City",
+   "code": "GT485",
+   "2011": 261053,
+   "2022": 334773
+  },
+  "ZAF-NW381": {
+   "name": "Ratlou",
+   "code": "NW381",
+   "2011": 107339,
+   "2022": 128766
+  },
+  "ZAF-KZN216": {
+   "name": "Ray Nkonyeni",
+   "code": "KZN216",
+   "2011": 308675,
+   "2022": 362134
+  },
+  "ZAF-EC129": {
+   "name": "Raymond Mhlaba",
+   "code": "EC129",
+   "2011": 151379,
+   "2022": 178594
+  },
+  "ZAF-NC075": {
+   "name": "Renosterberg",
+   "code": "NC075",
+   "2011": 10978,
+   "2022": 10843
+  },
+  "ZAF-KZN227": {
+   "name": "Richmond",
+   "code": "KZN227",
+   "2011": 65540,
+   "2022": 62754
+  },
+  "ZAF-NC061": {
+   "name": "Richtersveld",
+   "code": "NC061",
+   "2011": 11982,
+   "2022": 24235
+  },
+  "ZAF-NW373": {
+   "name": "Rustenburg",
+   "code": "NW373",
+   "2011": 549575,
+   "2022": 562315
+  },
+  "ZAF-EC138": {
+   "name": "Sakhisizwe",
+   "code": "EC138",
+   "2011": 63154,
+   "2022": 63981
+  },
+  "ZAF-WC014": {
+   "name": "Saldanha Bay",
+   "code": "WC014",
+   "2011": 99193,
+   "2022": 154635
+  },
+  "ZAF-EC142": {
+   "name": "Senqu",
+   "code": "EC142",
+   "2011": 134150,
+   "2022": 147073
+  },
+  "ZAF-FS191": {
+   "name": "Setsoto",
+   "code": "FS191",
+   "2011": 112038,
+   "2022": 127918
+  },
+  "ZAF-NC078": {
+   "name": "Siyancuma",
+   "code": "NC078",
+   "2011": 37076,
+   "2022": 53165
+  },
+  "ZAF-NC077": {
+   "name": "Siyathemba",
+   "code": "NC077",
+   "2011": 21591,
+   "2022": 27102
+  },
+  "ZAF-NC091": {
+   "name": "Sol Plaatje",
+   "code": "NC091",
+   "2011": 248041,
+   "2022": 270078
+  },
+  "ZAF-WC024": {
+   "name": "Stellenbosch",
+   "code": "WC024",
+   "2011": 155728,
+   "2022": 175411
+  },
+  "ZAF-MP313": {
+   "name": "Steve Tshwete",
+   "code": "MP313",
+   "2011": 229831,
+   "2022": 242031
+  },
+  "ZAF-EC106": {
+   "name": "Sundays River Valley",
+   "code": "EC106",
+   "2011": 54504,
+   "2022": 53256
+  },
+  "ZAF-WC015": {
+   "name": "Swartland",
+   "code": "WC015",
+   "2011": 113762,
+   "2022": 148331
+  },
+  "ZAF-WC034": {
+   "name": "Swellendam",
+   "code": "WC034",
+   "2011": 35916,
+   "2022": 47114
+  },
+  "ZAF-MP321": {
+   "name": "Thaba Chweu",
+   "code": "MP321",
+   "2011": 98387,
+   "2022": 118474
+  },
+  "ZAF-LIM361": {
+   "name": "Thabazimbi",
+   "code": "LIM361",
+   "2011": 85234,
+   "2022": 65047
+  },
+  "ZAF-WC031": {
+   "name": "Theewaterskloof",
+   "code": "WC031",
+   "2011": 108864,
+   "2022": 139563
+  },
+  "ZAF-NC076": {
+   "name": "Thembelihle",
+   "code": "NC076",
+   "2011": 15701,
+   "2022": 22542
+  },
+  "ZAF-MP315": {
+   "name": "Thembisile",
+   "code": "MP315",
+   "2011": 310458,
+   "2022": 431248
+  },
+  "ZAF-LIM343": {
+   "name": "Thulamela",
+   "code": "LIM343",
+   "2011": 450131,
+   "2022": 575929
+  },
+  "ZAF-FS182": {
+   "name": "Tokologo",
+   "code": "FS182",
+   "2011": 28986,
+   "2022": 29455
+  },
+  "ZAF-NC085": {
+   "name": "Tsantsabane",
+   "code": "NC085",
+   "2011": 35093,
+   "2022": 30969
+  },
+  "ZAF-NW382": {
+   "name": "Tswaing",
+   "code": "NW382",
+   "2011": 124218,
+   "2022": 128672
+  },
+  "ZAF-FS183": {
+   "name": "Tswelopele",
+   "code": "FS183",
+   "2011": 47625,
+   "2022": 56896
+  },
+  "ZAF-NC071": {
+   "name": "Ubuntu",
+   "code": "NC071",
+   "2011": 18601,
+   "2022": 15836
+  },
+  "ZAF-KZN266": {
+   "name": "Ulundi",
+   "code": "KZN266",
+   "2011": 188317,
+   "2022": 221977
+  },
+  "ZAF-KZN212": {
+   "name": "Umdoni",
+   "code": "KZN212",
+   "2011": 130413,
+   "2022": 156443
+  },
+  "ZAF-NC072": {
+   "name": "Umsobomvu",
+   "code": "NC072",
+   "2011": 28376,
+   "2022": 29555
+  },
+  "ZAF-KZN245": {
+   "name": "Umvoti",
+   "code": "KZN245",
+   "2011": 114715,
+   "2022": 142042
+  },
+  "ZAF-KZN435": {
+   "name": "Umzimkhulu",
+   "code": "KZN435",
+   "2011": 180302,
+   "2022": 220620
+  },
+  "ZAF-EC442": {
+   "name": "Umzimvubu",
+   "code": "EC442",
+   "2011": 191775,
+   "2022": 214477
+  },
+  "ZAF-KZN213": {
+   "name": "Umzumbe",
+   "code": "KZN213",
+   "2011": 153407,
+   "2022": 139045
+  },
+  "ZAF-MP311": {
+   "name": "Victor Khanye",
+   "code": "MP311",
+   "2011": 75452,
+   "2022": 106149
+  },
+  "ZAF-EC145": {
+   "name": "Walter Sisulu",
+   "code": "EC145",
+   "2011": 77477,
+   "2022": 104213
+  },
+  "ZAF-EC443": {
+   "name": "Winnie Madikizela-Mandela",
+   "code": "EC443",
+   "2011": 281905,
+   "2022": 350000
+  },
+  "ZAF-WC022": {
+   "name": "Witzenberg",
+   "code": "WC022",
+   "2011": 115946,
+   "2022": 103765
+  },
+  "ZAF-KZN261": {
+   "name": "eDumbe",
+   "code": "KZN261",
+   "2011": 82053,
+   "2022": 96735
+  },
+  "ZAF-KZN253": {
+   "name": "Emadlangeni",
+   "code": "KZN253",
+   "2011": 34442,
+   "2022": 36948
+  },
+  "ZAF-ETH": {
+   "name": "eThekwini",
+   "code": "",
+   "2011": 3476686,
+   "2022": 4239901
+  },
+  "ZAF-KZN281": {
+   "name": "Mfolozi",
+   "code": "KZN281",
+   "2011": 125669,
+   "2022": 159668
+  },
+  "ZAF-KZN271": {
+   "name": "Umhlabuyalingana",
+   "code": "KZN271",
+   "2011": 156772,
+   "2022": 191660
+  },
+  "ZAF-KZN282": {
+   "name": "uMhlathuze",
+   "code": "KZN282",
+   "2011": 370256,
+   "2022": 412075
+  },
+  "ZAF-KZN284": {
+   "name": "uMlalazi",
+   "code": "KZN284",
+   "2011": 213601,
+   "2022": 241416
+  },
+  "ZAF-KZN222": {
+   "name": "uMngeni",
+   "code": "KZN222",
+   "2011": 93858,
+   "2022": 105069
+  },
+  "ZAF-KZN221": {
+   "name": "uMshwathi",
+   "code": "KZN221",
+   "2011": 96793,
+   "2022": 118478
+  },
+  "ZAF-KZN214": {
+   "name": "uMuziwabantu",
+   "code": "KZN214",
+   "2011": 96556,
+   "2022": 115780
+  },
+  "ZAF-KZN262": {
+   "name": "uPhongolo",
+   "code": "KZN262",
+   "2011": 123584,
+   "2022": 151541
+  }
+ }
+}

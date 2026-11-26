@@ -7,7 +7,7 @@ runner (fetch rounds 50-51), and the step that adds them to the site's data file
 
 Sources:
 - Europe (France, Italy, Spain, Poland, Czechia, Croatia, Belgium, the Netherlands, Denmark, Norway, Sweden, Finland,
-  Iceland): Eurostat GISCO Local Administrative Units, the population of every LAU on 1 January of each year 2016-2023
+  Iceland): Eurostat GISCO Local Administrative Units, the population of every LAU on 1 January of each year 2011-2023 (2011-2015 from fetch round 61)
   (LAU_RG_01M_YYYY_4326.geojson, POP_YYYY), plus 2024 from the LAU file each build already uses. A municipality created
   by a merger has its former municipalities added up for the years before, from the official lists of mergers in
   inputs/border_changes.json (France, Italy, the Netherlands: prep_border_changes.py; see borders.py); elsewhere it
@@ -24,6 +24,15 @@ Sources:
   consistent with the 2018 census, to the current year.
 - Mexico: CONAPO, "Reconstrucción y proyecciones de la población de los municipios de México 1990-2040" (2024):
   mid-year population, reconstructed for 1990-2020 and projected from 2021, to the current year (fetch round 55).
+- South Africa: the 2011 and 2022 censuses by municipality, on the 2022 boundaries (Stats SA, Census 2022: Provinces
+  at a Glance).
+- Costa Rica (2011, 2022), Kenya (2009, 2019), Ecuador (2022) and Uruguay (2023): census figures from Wikipedia's tables,
+  which cite INEC, KNBS and INE (inputs/wiki_census/), with the site's own figure.
+- Sri Lanka: the 1981, 2001, 2012 and 2024 censuses by district (DCS, 2024 census final report; no 2001 figure for the
+  Northern and Eastern districts, where that census wasn't completed).
+- Peru: the 2017 census count by district (INEI, Resultados definitivos, Tomo 1, uploaded by the project's owner),
+  with the site's 2018 figure.
+- Philippines: the 2015 census by barangay (PSA, via HDX), added up by city and municipality, and PSA's 2021 figure.
 - Brazil: IBGE's population estimates by municipality for 1 July, 2001-2025 (SIDRA table 6579; none for the census
   years 2007, 2010 and 2022).
 """
@@ -69,7 +78,9 @@ def prep(raw):
     for f in sorted(glob.glob(os.path.join(raw, "lau_pop_20??.json"))):
         y = re.search(r"(20\d\d)", os.path.basename(f)).group(1)
         for c, d in json.load(open(f)).items():
-            for g, v in d.items(): lau.setdefault(g, {})[y] = int(v)
+            for g, v in d.items():
+                if isinstance(v, list): v = v[0]   # 2011-2015 (round 61): [population, name]
+                if v is not None: lau.setdefault(g, {})[y] = int(v)
     for g, v in lau_2024().items(): lau.setdefault(g, {})["2024"] = v
     merge = json.load(open(os.path.join(IN, "belgium", "be_mergers_2025.json")))
     old_of = {}
@@ -103,6 +114,8 @@ def prep(raw):
     gi, ti = d["dimension"]["geo"]["category"]["index"], d["dimension"]["time"]["category"]["index"]
     val = lambda g, t: d["value"].get(str(gi[g] * len(ti) + ti[t]))
     nuts = {g: {t: int(val(g, t)) for t in ti if val(g, t) is not None} for g in gi}
+    # Germany's district reforms (borders.py): the former districts added up for the years before
+    mtexts["germany"] = {"DE-" + g: tx for g, tx in borders.merge_back(nuts, bc.get("germany", {}).get("mergers", [])).items()}
     res["germany"] = {i: nuts[i.split("-", 1)[1]] for i in ids("germany") if len(nuts.get(i.split("-", 1)[1], {})) > 1}
     res["switzerland"] = {i: nuts[CH[i.split("-", 1)[1]]] for i in ids("switzerland") if CH.get(i.split("-", 1)[1]) in nuts}
     # UK: the local authority files (two boundary sets; the later one wins)
@@ -170,6 +183,67 @@ def prep(raw):
         res["mexico"] = {i: mx[i.split("-", 1)[1]] for i in ids("mexico") if len(mx.get(i.split("-", 1)[1], {})) > 1}
     # Border changes (borders.py): a split's parents keep their own years (their drop isn't a break to cut at), and
     # each family is added up on the borders before the split.
+    # Philippines: the 2015 census by barangay (PSA via HDX, fetch round 62), added up by city and municipality, with
+    # the site's own 2021 population (PSA). Codes are the 9-digit PSGC of 2015; today's are 10-digit (a third province
+    # digit), and regions renumbered since (BARMM, the Negros Island Region) are matched on province and municipality.
+    PH_2015 = {"1830200000": "064501000", "0990101000": "099701000", "1381400000": "137405000", "1381300000": "137404000", "1380600000": "1339"}
+    pf = os.path.join(raw, "ph_pop_2015_barangay.csv")
+    if os.path.exists(pf):
+        muni = {}
+        r = csv.DictReader(open(pf, encoding="latin-1"))
+        cols = [c for c in r.fieldnames if re.fullmatch(r"[FM](Under_1|\d+|100_Over)", c)]
+        names = {}
+        for x in r:
+            muni[x["adm3_code"][2:]] = muni.get(x["adm3_code"][2:], 0) + sum(float(str(x[c] or 0).replace(",", "") or 0) for c in cols)
+            names[x["adm3_code"][2:]] = x["adm3_name"]
+        # the rest (highly urbanized cities, recoded; Maguindanao, split in 2022): by name, where only one place has it
+        import unicodedata
+        key = lambda t: re.sub(r"[^a-z]", "", unicodedata.normalize("NFKD", re.sub(r"(?i)\bcity of\b|\bcity\b|\(.*?\)", "", str(t))).encode("ascii", "ignore").decode().lower())
+        byname = {}
+        for c, n in names.items(): byname.setdefault(key(n), []).append(c)
+        site = {r["District ID"]: r for r in csv.DictReader(open(os.path.join(DOCS, "philippines.csv"), encoding="utf-8"))}
+        tail = {k[2:]: v for k, v in muni.items()}
+        out = {}
+        for i, r in site.items():
+            c = i.split("-", 1)[1]
+            v = muni.get(c[:2] + c[3:]) if c[2] == "0" else None
+            if v is None and c[2] == "0": v = tail.get(c[3:])
+            if v is None and len(byname.get(key(r["District"]), [])) == 1: v = muni[byname[key(r["District"])][0]]
+            if v is None and c in PH_2015:   # names shared with other places; Manila, its 14 districts in 2015
+                v = sum(x for k, x in muni.items() if k.startswith(PH_2015[c])) if PH_2015[c] == "1339" else muni.get(PH_2015[c])
+            p21 = float(r.get("Population") or 0)
+            if v and p21: out[i] = {"2015": round(v), "2021": round(p21)}
+        res["philippines"] = out
+    # South Africa: the municipalities at the 2011 and 2022 censuses, on the 2022 boundaries (Stats SA, Census 2022:
+    # Provinces at a Glance)
+    zf = os.path.join(IN, "south_africa", "za_census_municipalities_2011_2022.json")
+    if os.path.exists(zf):
+        res["south_africa"] = {i: {"2011": v["2011"], "2022": v["2022"]} for i, v in json.load(open(zf, encoding="utf-8"))["municipalities"].items()}
+    # Peru: the 2017 census count by district (INEI, Resultados definitivos, Tomo 1), and the site's 2018 figure
+    pf17 = os.path.join(IN, "peru", "pe_census2017_districts.json")
+    if os.path.exists(pf17):
+        d17 = json.load(open(pf17, encoding="utf-8"))["districts"]
+        res["peru"] = {r["District ID"]: {"2017": d17[r["District ID"]]["2017"], "2018": round(float(r["Population"]))}
+                       for r in csv.DictReader(open(os.path.join(DOCS, "peru.csv"), encoding="utf-8")) if r["District ID"] in d17 and r.get("Population")}
+    # Census figures from Wikipedia's tables (which cite the statistics offices; fetch round 66), with the site's own
+    # figure for its year (SINGLE_YEAR): Costa Rica 2011 and 2022, Kenya 2009 and 2019, Ecuador 2022 (and 2010),
+    # Uruguay 2023 (and 2025).
+    for name in ("costa_rica", "kenya", "ecuador", "uruguay"):
+        wf = os.path.join(IN, "wiki_census", f"{name}.json")
+        if not os.path.exists(wf): continue
+        w = json.load(open(wf, encoding="utf-8"))["places"]
+        y0 = SINGLE_YEAR.get(name)
+        out = {}
+        for r in csv.DictReader(open(os.path.join(DOCS, f"{name}.csv"), encoding="utf-8")):
+            s = dict(w.get(r["District ID"], {}))
+            if y0 and str(r.get("Population") or "").replace(".", "").isdigit() and float(r["Population"]) > 0: s.setdefault(y0, round(float(r["Population"])))
+            if len(s) > 1: out[r["District ID"]] = s
+        res[name] = out
+    # Sri Lanka: the districts at the 1981, 2001, 2012 and 2024 censuses (DCS, 2024 census final report)
+    lf = os.path.join(IN, "sri_lanka", "lka_census_district.json")
+    if os.path.exists(lf):
+        lk = json.load(open(lf, encoding="utf-8"))["districts"]
+        res["sri_lanka"] = {r["District ID"]: lk[r["District"]] for r in csv.DictReader(open(os.path.join(DOCS, "sri_lanka.csv"), encoding="utf-8")) if r["District"] in lk}
     for name in list(res):
         splits = [tuple(e) for e in bc.get(name, {}).get("splits", [])]
         keep = {}
@@ -191,6 +265,7 @@ def clean(name, by, keep=None):
     - a year a country's file gives in thousands (GISCO's Finnish and most Italian figures for 2022-2023: the
       typical place is a thousandth of the year before), or that repeats the year before for most places (GISCO
       carries a figure forward where the country sent none);
+    - a single year far off the years either side (which agree with each other);
     - a place's years before its last break, a change of more than a quarter from one year to the next (two years
       apart at most), which in these files is a boundary change: a merger, a split, or a code reused;
     - a place whose latest figure is more than a quarter off the site's own population (a different place behind the
@@ -201,6 +276,12 @@ def clean(name, by, keep=None):
     out = {}
     for i, s in by.items():
         ys = sorted(s)
+        # a single year far off the two either side, which agree (Spain's 2014 file gives some regions' density
+        # instead of their population), comes out rather than cutting the line there
+        odd = [ys[k] for k in range(1, len(ys) - 1) if s[ys[k - 1]] > 0 and s[ys[k + 1]] > 0 and abs(s[ys[k + 1]] / s[ys[k - 1]] - 1) < 0.15
+               and abs(s[ys[k]] / ((s[ys[k - 1]] + s[ys[k + 1]]) / 2) - 1) > 0.4]
+        for y in odd: s.pop(y)
+        ys = sorted(s)
         start = 0
         for k in range(1, len(ys)):
             if int(ys[k]) - int(ys[k - 1]) <= 2 and min(s[ys[k]], s[ys[k - 1]]) > 200 and abs(s[ys[k]] / s[ys[k - 1]] - 1) > 0.25 \
@@ -208,7 +289,7 @@ def clean(name, by, keep=None):
         s = {y: s[y] for y in ys[start:]}
         try: p = float(site.get(i, {}).get("Population") or 0)
         except ValueError: p = 0
-        if p > 1000 and abs(s[max(s)] / p - 1) > 0.25: continue
+        if p > 1000 and abs(s[max(s)] / p - 1) > 0.25 and not any(abs(v / p - 1) < 0.005 for v in s.values()): continue   # (unless the site's own figure is one of its years)
         if len(s) > 1: out[i] = s
     return out
 
@@ -226,6 +307,53 @@ def drop_years(name, by):
             for s in by.values(): s.pop(b, None)
             print(f"  {name}: {b} dropped (" + (f"{same:.0%} of places unchanged from {a}: the earlier figure carried forward" if same > 0.3 else f"median ratio {statistics.median(r):.4f} to {a}") + ")")
         else: kept.append(b)
+
+
+# Countries with one population figure: the year it is for, so it shows as one point on the line over time (a
+# function of the row where it varies), for places without a series. Left out where the year isn't certain.
+SINGLE_YEAR = {"ecuador": "2010",      # 2010 census (INEC)
+               "kenya": "2019",        # 2019 census
+               "uruguay": "2025",      # INE projection for 30 June 2025
+               "peru": "2018",         # INEI's 2018 poverty map (where the 2017 census count isn't kept)
+               "rwanda": "2025",       # WorldPop's 2025 estimate
+               "canada": "2021",       # 2021 census
+               "india": lambda r: "2025" if "WorldPop's 2025" in (r.get("Map note") or "") else "2011"}
+
+
+# A note under a country's population line, about particular years ("Population by year note").
+POP_NOTES = {"peru": "2017 is the census count of people found; INEI estimates it missed about 6% nationally, which "
+                     "the 2018 estimate (and the 2025 census total) include, so 2017 reads low next to them."}
+
+
+def single_years():
+    for name, y in SINGLE_YEAR.items():
+        p = os.path.join(DOCS, f"{name}.csv")
+        if not os.path.exists(p): continue
+        text = open(p, encoding="utf-8", newline="").read()
+        rows = list(csv.DictReader(text.splitlines()))
+        f = list(rows[0].keys())
+        if COL not in f: f.insert(f.index("Population") + 1 if "Population" in f else len(f), COL)
+        n = 0
+        for r in rows:
+            pop = str(r.get("Population") or "").replace(",", "").strip()
+            if str(r.get(COL) or "").count(":") >= 2: continue   # a series already (population_history.json)
+            if pop and pop.replace(".", "").isdigit() and float(pop) > 0:
+                r[COL] = f"{y(r) if callable(y) else y}: {round(float(pop))}"; n += 1
+            else: r[COL] = ""
+        nl = "\r\n" if "\r\n" in text[:5000] else "\n"
+        with open(p, "w", encoding="utf-8", newline="") as fo:
+            w = csv.DictWriter(fo, fieldnames=f, lineterminator=nl); w.writeheader(); w.writerows(rows)
+        print(f"{name}: one population point for {n} of {len(rows)}")
+    for name, note in POP_NOTES.items():
+        p = os.path.join(DOCS, f"{name}.csv")
+        text = open(p, encoding="utf-8", newline="").read()
+        rows = list(csv.DictReader(text.splitlines()))
+        f = list(rows[0].keys())
+        if "Population by year note" not in f: f.insert(f.index(COL) + 1, "Population by year note")
+        for r in rows: r["Population by year note"] = note if r.get(COL) else ""
+        nl = "\r\n" if "\r\n" in text[:5000] else "\n"
+        with open(p, "w", encoding="utf-8", newline="") as fo:
+            w = csv.DictWriter(fo, fieldnames=f, lineterminator=nl); w.writeheader(); w.writerows(rows)
 
 
 def apply():
@@ -251,7 +379,7 @@ def apply():
             if x:
                 if x.get("together"): r["Earlier borders"] = r.get("Earlier borders") or x["together"]
                 r[borders.COL] = borders.add_texts(r.get(borders.COL) if name in borders.BUILD_WRITES else "", x["changes"])
-            elif b and name not in borders.BUILD_WRITES: r[borders.COL] = ""
+            elif name not in borders.BUILD_WRITES and borders.COL in f: r[borders.COL] = ""   # none any more
         nl = "\r\n" if "\r\n" in text[:5000] else "\n"
         with open(p, "w", encoding="utf-8", newline="") as fo:
             w = csv.DictWriter(fo, fieldnames=f, lineterminator=nl); w.writeheader(); w.writerows(rows)
@@ -259,4 +387,5 @@ def apply():
 
 
 if __name__ == "__main__":
-    prep(sys.argv[2]) if sys.argv[1] == "prep" else apply()
+    if sys.argv[1] == "prep": prep(sys.argv[2])
+    else: apply(); single_years()

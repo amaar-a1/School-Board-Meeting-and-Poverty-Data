@@ -36,7 +36,40 @@
   const early = (row, col) => parse(row && row[col + EARLY]);
   const splitsOf = (row) => String((row && row["Border changes"]) || "").split(";").map((p) => p.trim().match(/^(\d{4}):\s*(.+)$/)).filter(Boolean)
     .map((m) => ({ year: m[1], text: m[2], label: / merged into |^part of .* joined /.test(m[2]) ? "Merged" : "Split" }));
-  const hasLine = (row, col) => years(parse(row[col])).length >= 2 || years(early(row, col)).length >= 2;
+  // A place's line for a measure. One with a single year (no "... by year" column; its figure and the year it is for,
+  // as "Enrollment" and "Enrollment year") is one point. Meetings: every year from the first one with recordings to
+  // this one, a year with none as 0; a place with none found at all, 0 this year.
+  const yearIn = (t) => { const m = String(t || "").match(/\b(19|20)\d\d\b/); return m ? m[0] : null; };
+  const num = (v) => Number(String(v ?? "").replace(/[%,\s]/g, ""));
+  const POV_COL = /^(Percentage of Children.*(Low Income|Poverty)|Poverty rate \(all ages\)|Child poverty rate.*|Poverty rate)$/;
+  function single(row, col) {
+    if (col === "Enrollment by year" && !row["Enrollment estimated"]) {
+      const v = num(row.Enrollment), y = yearIn(row["Enrollment year"]);
+      return v > 0 && y ? { [y]: v } : {};
+    }
+    if (col === "Poverty by year") {
+      const k = Object.keys(row).find((c) => POV_COL.test(c) && String(row[c] ?? "").trim() !== "" && !isNaN(num(row[c])));
+      const y = yearIn(row["Poverty year"]) || yearIn(row["Poverty note"]) || yearIn(row["Poverty measure"]);
+      return k && y ? { [y]: num(row[k]) } : {};
+    }
+    return {};
+  }
+  function seriesOf(row, col) {
+    if (!row) return {};
+    let s = parse(row[col]);
+    if (!years(s).length) s = single(row, col);
+    if (col === "Meetings by year") {
+      const now = new Date().getFullYear(), ys = years(s).map(Number).filter((y) => y >= 2010);
+      const none = !ys.length && !(num(row["Available Board Meetings"]) > 0) && !(num(row["Other Board Meetings"]) > 0);
+      if (ys.length || none) {
+        const out = {};
+        for (let y = ys.length ? Math.min(...ys) : now; y <= now; y++) out[y] = s[y] ?? 0;
+        s = out;
+      }
+    }
+    return s;
+  }
+  const hasLine = (row, col) => years(seriesOf(row, col)).length >= 1 || years(early(row, col)).length >= 2;
   const mean = (a) => a.reduce((x, y) => x + y, 0) / a.length;
 
   // A line for a group of places whose years don't all match: each year's change is measured on the places with a
@@ -46,7 +79,7 @@
   // cities only) as a jump in the average.
   function linked(series, kind) {
     const ys = [...new Set(series.flatMap(years))].sort();
-    if (ys.length < 2) return {};
+    if (!ys.length) return {};
     // A year with no place in common with the one before (or nothing to scale from) starts a new stretch; only the
     // stretch holding the anchor year is drawn.
     const base = kind === "count" ? 1 : 0, lvl = { [ys[0]]: base }, seg = { [ys[0]]: 0 };
@@ -64,13 +97,15 @@
     const keep = ys.filter((y) => seg[y] === seg[anchor]);
     const out = {};
     keep.forEach((y) => { out[y] = kind === "count" ? Math.round(at * lvl[y] / lvl[anchor]) : +(at + lvl[y] - lvl[anchor]).toFixed(2); });
-    return keep.length > 1 ? out : {};
+    return out;   // one year alone is one point
   }
   function summarize(rows, m) {
-    const series = rows.map((r) => parse(r[m.col])).filter((s) => years(s).length);
+    const series = rows.map((r) => (m.kind === "sum" ? parse(r[m.col]) : seriesOf(r, m.col))).filter((s) => years(s).length);
     if (m.kind === "sum") {
       const line = {};
       series.forEach((s) => Object.entries(s).forEach(([y, v]) => { if (+y >= 2010) line[y] = (line[y] || 0) + v; }));
+      const ys = years(line).map(Number);   // a year with no meetings anywhere, to this one, is 0
+      if (ys.length) for (let y = Math.min(...ys), now = new Date().getFullYear(); y <= now; y++) line[y] = line[y] ?? 0;
       return { line, n: series.length, places: rows.length };
     }
     return { line: linked(series, m.kind), n: series.length };
@@ -126,9 +161,28 @@
     return null;
   }
   const trend = { measure: null, area: null, place: null, key: null };
+  // Figures known only for a whole country or region (data/area_history.json, from data-prep/area_history.py), for
+  // years its places have none: drawn on that country's or region's line, never on a place's.
+  let AREA = null, lastTrend = null;
+  fetch("data/area_history.json").then((r) => (r.ok ? r.json() : {})).catch(() => ({})).then((j) => {
+    AREA = j || {};
+    if (lastTrend) renderTrends(...lastTrend);
+    if (window.SiteCompare && window.SiteCompare.render) window.SiteCompare.render();   // a country or region compared before these loaded
+  });
+  const areaPts = (country, region, col) => ((AREA && AREA[country] && AREA[country][region || ""]) || {})[col] || {};
+  const hasArea = (country, col) => !!(AREA && AREA[country] && Object.values(AREA[country]).some((e) => e[col]));
+  // Adds an area's own figures to its line for the years the line lacks; returns those years.
+  function addArea(line, country, region, col) {
+    const added = [];
+    Object.entries(areaPts(country, region, col)).forEach(([y, v]) => { if (line[y] == null) { line[y] = v; added.push(y); } });
+    return added;
+  }
+
   function renderTrends(current, label) {
+    lastTrend = [current, label];
     const rows = current.rows;
-    const list = MEASURES.filter((m) => rows.some((r) => hasLine(r, m.col)));
+    const countries = current.combined ? [...new Set(rows.map((r) => r.Country).filter(Boolean))] : [current.name];
+    const list = MEASURES.filter((m) => rows.some((r) => hasLine(r, m.col)) || countries.some((c) => hasArea(c, m.col)));
     const card = $("trend-history-card");
     if (!card) return;
     card.hidden = !list.length;
@@ -141,7 +195,9 @@
     picker($("trend-history-pick"), list, m, (x) => { trend.measure = x; redraw(); });
     // Area menu: the whole view, each region, or one region.
     const rc = regionCol(current), regionWord = current.combined ? "country" : ((current.groups && current.groups.word) || (rc || "region").toLowerCase());
-    const regions = rc ? [...new Set(rows.filter((r) => hasLine(r, m.col)).map((r) => r[rc]).filter(Boolean))].sort((a, b) => a.trim().localeCompare(b.trim())) : [];
+    const areaRegion = (r) => (current.combined ? Object.keys(areaPts(r.Country, "", m.col)).length : Object.keys(areaPts(current.name, r[rc], m.col)).length) > 0;
+    const counts = (r) => hasLine(r, m.col) || areaRegion(r);
+    const regions = rc ? [...new Set(rows.filter(counts).map((r) => r[rc]).filter(Boolean))].sort((a, b) => a.trim().localeCompare(b.trim())) : [];
     const sel = $("trend-area");
     if (sel) {
       sel.innerHTML = (current.combined ? "" : `<option value="all">All of ${esc(current.groups && current.groups.label || current.name)}</option>`) +
@@ -157,23 +213,32 @@
     let groups;
     if (trend.area === "each") {
       const by = {};
-      rows.forEach((r) => { if (r[rc] && hasLine(r, m.col)) (by[r[rc]] = by[r[rc]] || []).push(r); });
+      rows.forEach((r) => { if (r[rc] && counts(r)) (by[r[rc]] = by[r[rc]] || []).push(r); });
       groups = Object.entries(by).sort((a, b) => b[1].length - a[1].length);
     } else if (trend.area && trend.area.startsWith("r:")) {
       const g = trend.area.slice(2);
       groups = [[g, rows.filter((r) => r[rc] === g)]];
     } else groups = [[current.combined ? "All" : `All of ${current.groups && current.groups.label || current.name}`, rows]];
     const shown = groups.slice(0, PALETTE.length);
-    const place = trend.place, ps = place ? parse(place[m.col]) : null;
+    const place = trend.place, ps = place ? seriesOf(place, m.col) : null;
     const hasPlace = ps && (years(ps).length > 0 || years(early(place, m.col)).length >= 2);
     // Counts are drawn as an index (first year = 100) when lines of different sizes share the chart; meetings as the
     // average per place when a place is shown next to its area.
     const many = shown.length > 1;
     const idx = m.kind === "count" && (many || hasPlace);
     const perPlace = m.kind === "sum" && hasPlace;
+    const areaAdded = [];
     const lines = shown.map(([g, rs]) => {
       const s = summarize(rs, m);
       if (perPlace) Object.keys(s.line).forEach((y) => { s.line[y] = +(s.line[y] / rs.length).toFixed(2); });
+      // the country's or region's own figures for years its places lack (not per place, and not for "each country"
+      // in the combined view's regions other than countries)
+      if (!perPlace) {
+        const whole = !(trend.area === "each" || (trend.area && trend.area.startsWith("r:")));
+        const add = current.combined ? (trend.area === "each" || !whole ? addArea(s.line, g, "", m.col) : [])
+          : addArea(s.line, current.name, whole ? "" : g, m.col);
+        if (add.length) areaAdded.push(...add);
+      }
       return [g, s];
     });
     if (hasPlace) lines.push([place.District, { line: m.kind === "sum" ? Object.fromEntries(Object.entries(ps).filter(([y]) => +y >= 2010)) : ps, place: true }]);
@@ -186,20 +251,22 @@
       const l = s.line, base = labels.find((y) => l[y] > 0), color = s.place ? accent2 : many ? PALETTE[i] : accent;
       return { label: g, borderColor: color, backgroundColor: color, borderDash: s.early ? [2, 3] : s.place ? [6, 4] : undefined,
         data: labels.map((y) => (l[y] == null ? null : idx ? (base ? +(100 * l[y] / l[base]).toFixed(1) : null) : l[y])) };
-    }), idx ? `${m.axis}, first year = 100` : perPlace ? "Meetings recorded (per place)" : m.kind === "sum" ? `${m.axis} (all ${label})` : m.kind === "count" ? `${m.axis} (all ${label})` : m.axis,
+    }), idx ? `${m.axis}, first year = 100` : perPlace ? "Meetings recorded (per place)" : (m.kind === "sum" || m.kind === "count") && lines.some(([, x]) => !x.place && x.n) ? `${m.axis} (all ${label})` : m.axis,
       { unit: idx ? "" : m.unit, raw: idx ? raw : null, zero: m.kind !== "count", marks: hasPlace ? splitsOf(place) : [] });
     const n = lines.filter(([, s]) => !s.place).reduce((t, [, s]) => t + (s.n || 0), 0);
     const parts = [];
     if (many) parts.push(`One line per ${regionWord}` + (groups.length > shown.length ? ` (the ${shown.length} with the most places; pick one in the Area menu for the others)` : "") + ".");
     if (m.kind === "sum") parts.push(perPlace ? `The area's line is its meetings per place (all ${label}, with none counted as 0), so the place can be compared with it.` : `Meetings recorded each year, added up over the ${n.toLocaleString()} ${label} with dated recordings. The current year is partial, and US districts' counts (CivicSearch) start in January 2025.`);
-    else parts.push((m.kind === "count" ? `The total for the ${n.toLocaleString()} ${label} with figures` : `The average of the ${n.toLocaleString()} ${label}' figures` + (m.col === "Poverty by year" ? " (each country's own measure, as in its note)" : "")) +
+    else if (n) parts.push((m.kind === "count" ? `The total for the ${n.toLocaleString()} ${label} with figures` : `The average of the ${n.toLocaleString()} ${label}' figures` + (m.col === "Poverty by year" ? " (each country's own measure, as in its note)" : "")) +
       ". Not every place has every year, so each year's change is measured on the places with figures in both years, and the line is pinned to the year most places have.");
     if (idx) parts.push("Lines start at 100 in their first year so different sizes can be compared; hover to see the numbers.");
+    if (areaAdded.length) parts.push(`${[...new Set(areaAdded)].sort().join(", ")}: figures for the whole ${current.combined ? "country" : trend.area === "all" ? "country" : regionWord} only (no figures for its ${label} that year).`);
     if (current.combined && m.kind === "rate") parts.push("Each country uses its own measure, so compare the shapes of the lines, not their heights.");
     if (place && !hasPlace) parts.push(`No ${m.name.toLowerCase()} by year for ${place.District}.`);
     else if (hasPlace) parts.push(`The dashed line is ${place.District}.`);
     if (hasPlace && splitsOf(place).length) parts.push(splitNote(place, hasEarly));
     if (hasPlace && yearNote(place, m)) parts.push(yearNote(place, m));
+    else if (!hasPlace) { const nt = [...new Set(rows.map((r) => yearNote(r, m)).filter(Boolean))]; if (nt.length === 1) parts.push(nt[0]); }   // the same caveat for all its places
     $("trend-history-note").textContent = parts.join(" ");
   }
 
@@ -238,7 +305,7 @@
       `<div class="chart-box hist-box"><canvas role="img"></canvas></div><p class="note hist-note"></p>`;
     picker(holder.querySelector(".hist-pick"), list, state, (x) => { holder._m = x; renderPlaces(holder, entries, opts); });
     const m = state;
-    const series = entries.map((e) => parse(e.row[m.col]));
+    const series = entries.map((e) => seriesOf(e.row, m.col));
     const earlySeries = entries.map((e) => early(e.row, m.col));
     const labels = [...new Set(series.concat(earlySeries).flatMap(years))].sort();
     const colors = [cssVar("--accent"), cssVar("--accent-2")];
@@ -270,7 +337,7 @@
       ...entries.map((e, i) => (splitsOf(e.row).length && (years(series[i]).length || years(earlySeries[i]).length) ? splitNote(e.row, years(earlySeries[i]).length >= 2) : ""))].filter(Boolean).join(" ");
   }
   // A place's caveats about particular years of its enrollment and public share lines ("Enrollment by year note").
-  const yearNote = (row, m) => (/^(Enrollment|Public share) by year$/.test(m.col) && row && row["Enrollment by year note"]) || "";
+  const yearNote = (row, m) => (row && (/^(Enrollment|Public share) by year$/.test(m.col) ? row["Enrollment by year note"] : m.col === "Population by year" ? row["Population by year note"] : "")) || "";
   // "Split in 2017: San Miguel was made from Juliaca. The solid line ..." / "Merged in 2019: A and B merged into C. ..."
   function splitNote(row, hasEarly) {
     const by = {};
@@ -282,5 +349,5 @@
       (merged ? ` Before a merger the line adds up the former places, so the whole line is on today's borders.` : "");
   }
 
-  window.SiteHistory = { MEASURES, parse, linked, renderTrends, renderPlaces, trend };
+  window.SiteHistory = { MEASURES, parse, seriesOf, linked, areaPts, addArea, areaLoaded: () => AREA !== null, renderTrends, renderPlaces, trend };
 })();

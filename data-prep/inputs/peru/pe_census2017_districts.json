@@ -1,0 +1,7497 @@
+{
+ "source": "INEI, Censos Nacionales 2017: XII de Población, VII de Vivienda y III de Comunidades Indígenas, Resultados definitivos, Tomo 1, Cuadro 1 (POB1): population counted (población censada) by department, province and district. Uploaded by the project's owner. Counted people only: INEI estimates the census missed about 6% nationally (31,237,385 in all against 29,381,884 counted).",
+ "districts": {
+  "PE-030101": {
+   "name": "ABANCAY",
+   "2017": 69028
+  },
+  "PE-020502": {
+   "name": "ABELARDO PARDO LEZAMETA",
+   "2017": 244
+  },
+  "PE-040302": {
+   "name": "ACARÍ",
+   "2017": 4923
+  },
+  "PE-021402": {
+   "name": "ACAS",
+   "2017": 656
+  },
+  "PE-081002": {
+   "name": "ACCHA",
+   "2017": 3028
+  },
+  "PE-051102": {
+   "name": "ACCOMARCA",
+   "2017": 886
+  },
+  "PE-210202": {
+   "name": "ACHAYA",
+   "2017": 2826
+  },
+  "PE-040502": {
+   "name": "ACHOMA",
+   "2017": 841
+  },
+  "PE-020902": {
+   "name": "ACO",
+   "2017": 379
+  },
+  "PE-120202": {
+   "name": "ACO",
+   "2017": 1642
+  },
+  "PE-021902": {
+   "name": "ACOBAMBA",
+   "2017": 1612
+  },
+  "PE-090201": {
+   "name": "ACOBAMBA",
+   "2017": 8980
+  },
+  "PE-120702": {
+   "name": "ACOBAMBA",
+   "2017": 9500
+  },
+  "PE-090102": {
+   "name": "ACOBAMBILLA",
+   "2017": 2020
+  },
+  "PE-020402": {
+   "name": "ACOCHACA",
+   "2017": 2815
+  },
+  "PE-050102": {
+   "name": "ACOCRO",
+   "2017": 7403
+  },
+  "PE-120402": {
+   "name": "ACOLLA",
+   "2017": 6077
+  },
+  "PE-080201": {
+   "name": "ACOMAYO",
+   "2017": 4532
+  },
+  "PE-020602": {
+   "name": "ACOPAMPA",
+   "2017": 2472
+  },
+  "PE-080202": {
+   "name": "ACOPÍA",
+   "2017": 2650
+  },
+  "PE-210102": {
+   "name": "ACORA",
+   "2017": 22961
+  },
+  "PE-090103": {
+   "name": "ACORIA",
+   "2017": 17800
+  },
+  "PE-080203": {
+   "name": "ACOS",
+   "2017": 2242
+  },
+  "PE-050103": {
+   "name": "ACOS VINCHOS",
+   "2017": 4383
+  },
+  "PE-090702": {
+   "name": "ACOSTAMBO",
+   "2017": 3266
+  },
+  "PE-090703": {
+   "name": "ACRAQUIA",
+   "2017": 3522
+  },
+  "PE-020302": {
+   "name": "ACZO",
+   "2017": 1918
+  },
+  "PE-130602": {
+   "name": "AGALLPAMPA",
+   "2017": 9252
+  },
+  "PE-220302": {
+   "name": "AGUA BLANCA",
+   "2017": 2330
+  },
+  "PE-240302": {
+   "name": "AGUAS VERDES",
+   "2017": 17366
+  },
+  "PE-120902": {
+   "name": "AHUAC",
+   "2017": 6267
+  },
+  "PE-090704": {
+   "name": "AHUAYCHA",
+   "2017": 3873
+  },
+  "PE-020201": {
+   "name": "AIJA",
+   "2017": 2017
+  },
+  "PE-210302": {
+   "name": "AJOYANI",
+   "2017": 2138
+  },
+  "PE-220902": {
+   "name": "ALBERTO LEVEAU",
+   "2017": 841
+  },
+  "PE-040802": {
+   "name": "ALCA",
+   "2017": 1849
+  },
+  "PE-051002": {
+   "name": "ALCAMENCA",
+   "2017": 1526
+  },
+  "PE-250305": {
+   "name": "ALEXANDER VON HUMBOLDT",
+   "2017": 5137
+  },
+  "PE-021903": {
+   "name": "ALFONSO UGARTE",
+   "2017": 533
+  },
+  "PE-151002": {
+   "name": "ALIS",
+   "2017": 1534
+  },
+  "PE-220502": {
+   "name": "ALONSO DE ALVARADO",
+   "2017": 13462
+  },
+  "PE-220202": {
+   "name": "ALTO BIAVO",
+   "2017": 7639
+  },
+  "PE-211209": {
+   "name": "ALTO INAMBARI",
+   "2017": 6604
+  },
+  "PE-110202": {
+   "name": "ALTO LARÁN",
+   "2017": 7783
+  },
+  "PE-160102": {
+   "name": "ALTO NANAY",
+   "2017": 2855
+  },
+  "PE-080808": {
+   "name": "ALTO PICHIGUA",
+   "2017": 1934
+  },
+  "PE-220402": {
+   "name": "ALTO SAPOSOA",
+   "2017": 4471
+  },
+  "PE-040102": {
+   "name": "ALTO SELVA ALEGRE",
+   "2017": 85870
+  },
+  "PE-160502": {
+   "name": "ALTO TAPICHE",
+   "2017": 1515
+  },
+  "PE-230102": {
+   "name": "ALTO DE LA ALIANZA",
+   "2017": 34061
+  },
+  "PE-210103": {
+   "name": "AMANTANÍ",
+   "2017": 3452
+  },
+  "PE-100102": {
+   "name": "AMARILIS",
+   "2017": 81461
+  },
+  "PE-020603": {
+   "name": "AMASHCA",
+   "2017": 1431
+  },
+  "PE-150802": {
+   "name": "ÁMBAR",
+   "2017": 2208
+  },
+  "PE-100201": {
+   "name": "AMBO",
+   "2017": 20886
+  },
+  "PE-200502": {
+   "name": "AMOTAPE",
+   "2017": 2413
+  },
+  "PE-211002": {
+   "name": "ANANEA",
+   "2017": 12615
+  },
+  "PE-211302": {
+   "name": "ANAPIA",
+   "2017": 1782
+  },
+  "PE-080302": {
+   "name": "ANCAHUASI",
+   "2017": 6784
+  },
+  "PE-050510": {
+   "name": "ANCHIHUAY",
+   "2017": 4039
+  },
+  "PE-090302": {
+   "name": "ANCHONGA",
+   "2017": 7115
+  },
+  "PE-050502": {
+   "name": "ANCO",
+   "2017": 7969
+  },
+  "PE-090502": {
+   "name": "ANCO",
+   "2017": 5368
+  },
+  "PE-030602": {
+   "name": "ANCO-HUALLO",
+   "2017": 10388
+  },
+  "PE-150102": {
+   "name": "ANCÓN",
+   "2017": 62928
+  },
+  "PE-061302": {
+   "name": "ANDABAMBA",
+   "2017": 1337
+  },
+  "PE-090202": {
+   "name": "ANDABAMBA",
+   "2017": 3223
+  },
+  "PE-040402": {
+   "name": "ANDAGUA",
+   "2017": 1038
+  },
+  "PE-030201": {
+   "name": "ANDAHUAYLAS",
+   "2017": 42268
+  },
+  "PE-081202": {
+   "name": "ANDAHUAYLILLAS",
+   "2017": 5797
+  },
+  "PE-150902": {
+   "name": "ANDAJES",
+   "2017": 546
+  },
+  "PE-120203": {
+   "name": "ANDAMARCA",
+   "2017": 3502
+  },
+  "PE-030202": {
+   "name": "ANDARAPA",
+   "2017": 5459
+  },
+  "PE-040602": {
+   "name": "ANDARAY",
+   "2017": 677
+  },
+  "PE-090720": {
+   "name": "ANDAYMARCA",
+   "2017": 2373
+  },
+  "PE-160706": {
+   "name": "ANDOAS",
+   "2017": 11714
+  },
+  "PE-050116": {
+   "name": "ANDRÉS AVELINO CÁCERES DORREGARAY",
+   "2017": 28472
+  },
+  "PE-131002": {
+   "name": "ANGASMARCA",
+   "2017": 4810
+  },
+  "PE-060402": {
+   "name": "ANGUÍA",
+   "2017": 3211
+  },
+  "PE-021002": {
+   "name": "ANRA",
+   "2017": 1362
+  },
+  "PE-020604": {
+   "name": "ANTA",
+   "2017": 2365
+  },
+  "PE-080301": {
+   "name": "ANTA",
+   "2017": 21674
+  },
+  "PE-090203": {
+   "name": "ANTA",
+   "2017": 4540
+  },
+  "PE-030301": {
+   "name": "ANTABAMBA",
+   "2017": 2776
+  },
+  "PE-210802": {
+   "name": "ANTAUTA",
+   "2017": 5359
+  },
+  "PE-150702": {
+   "name": "ANTIOQUÍA",
+   "2017": 1225
+  },
+  "PE-020503": {
+   "name": "ANTONIO RAYMONDI",
+   "2017": 994
+  },
+  "PE-101104": {
+   "name": "APARICIO POMARES",
+   "2017": 4735
+  },
+  "PE-120403": {
+   "name": "APATA",
+   "2017": 4284
+  },
+  "PE-040401": {
+   "name": "APLAO",
+   "2017": 8435
+  },
+  "PE-051003": {
+   "name": "APONGO",
+   "2017": 630
+  },
+  "PE-020504": {
+   "name": "AQUIA",
+   "2017": 2062
+  },
+  "PE-150402": {
+   "name": "ARAHUAY",
+   "2017": 596
+  },
+  "PE-010202": {
+   "name": "ARAMANGO",
+   "2017": 9765
+  },
+  "PE-100502": {
+   "name": "ARANCAY",
+   "2017": 1356
+  },
+  "PE-210203": {
+   "name": "ARAPA",
+   "2017": 7020
+  },
+  "PE-200503": {
+   "name": "ARENAL",
+   "2017": 1136
+  },
+  "PE-040101": {
+   "name": "AREQUIPA",
+   "2017": 55437
+  },
+  "PE-090402": {
+   "name": "ARMA",
+   "2017": 977
+  },
+  "PE-090118": {
+   "name": "ASCENSIÓN",
+   "2017": 15566
+  },
+  "PE-130201": {
+   "name": "ASCOPE",
+   "2017": 6462
+  },
+  "PE-150502": {
+   "name": "ASIA",
+   "2017": 9784
+  },
+  "PE-210204": {
+   "name": "ASILLO",
+   "2017": 14484
+  },
+  "PE-051004": {
+   "name": "ASQUIPATA",
+   "2017": 460
+  },
+  "PE-060102": {
+   "name": "ASUNCIÓN",
+   "2017": 7939
+  },
+  "PE-010102": {
+   "name": "ASUNCIÓN",
+   "2017": 262
+  },
+  "PE-020605": {
+   "name": "ATAQUERO",
+   "2017": 1469
+  },
+  "PE-120404": {
+   "name": "ATAURA",
+   "2017": 1264
+  },
+  "PE-150602": {
+   "name": "ATAVILLOS ALTO",
+   "2017": 687
+  },
+  "PE-150603": {
+   "name": "ATAVILLOS BAJO",
+   "2017": 902
+  },
+  "PE-150103": {
+   "name": "ATE",
+   "2017": 599196
+  },
+  "PE-040303": {
+   "name": "ATICO",
+   "2017": 5215
+  },
+  "PE-040304": {
+   "name": "ATIQUIPA",
+   "2017": 473
+  },
+  "PE-210104": {
+   "name": "ATUNCOLLA",
+   "2017": 4555
+  },
+  "PE-150604": {
+   "name": "AUCALLAMA",
+   "2017": 19464
+  },
+  "PE-050602": {
+   "name": "AUCARÁ",
+   "2017": 2903
+  },
+  "PE-090403": {
+   "name": "AURAHUÁ",
+   "2017": 1468
+  },
+  "PE-220802": {
+   "name": "AWAJÚN",
+   "2017": 7479
+  },
+  "PE-200201": {
+   "name": "AYABACA",
+   "2017": 30852
+  },
+  "PE-050101": {
+   "name": "AYACUCHO",
+   "2017": 99427
+  },
+  "PE-050402": {
+   "name": "AYAHUANCO",
+   "2017": 1196
+  },
+  "PE-210303": {
+   "name": "AYAPATA",
+   "2017": 9299
+  },
+  "PE-151003": {
+   "name": "ALLAUCA",
+   "2017": 1145
+  },
+  "PE-090602": {
+   "name": "AYAVÍ",
+   "2017": 745
+  },
+  "PE-151004": {
+   "name": "AYAVIRÍ",
+   "2017": 565
+  },
+  "PE-210801": {
+   "name": "AYAVIRI",
+   "2017": 24452
+  },
+  "PE-050503": {
+   "name": "AYNA",
+   "2017": 9298
+  },
+  "PE-040403": {
+   "name": "AYO",
+   "2017": 242
+  },
+  "PE-151005": {
+   "name": "AZÁNGARO",
+   "2017": 440
+  },
+  "PE-210201": {
+   "name": "AZÁNGARO",
+   "2017": 30070
+  },
+  "PE-010201": {
+   "name": "BAGUA",
+   "2017": 27102
+  },
+  "PE-010701": {
+   "name": "BAGUA GRANDE",
+   "2017": 50841
+  },
+  "PE-220203": {
+   "name": "BAJO BIAVO",
+   "2017": 13116
+  },
+  "PE-160202": {
+   "name": "BALSAPUERTO",
+   "2017": 13707
+  },
+  "PE-010103": {
+   "name": "BALSAS",
+   "2017": 1136
+  },
+  "PE-060701": {
+   "name": "BAMBAMARCA",
+   "2017": 59913
+  },
+  "PE-130302": {
+   "name": "BAMBAMARCA",
+   "2017": 2908
+  },
+  "PE-020903": {
+   "name": "BAMBAS",
+   "2017": 445
+  },
+  "PE-150201": {
+   "name": "BARRANCA",
+   "2017": 68324
+  },
+  "PE-160701": {
+   "name": "BARRANCA",
+   "2017": 12742
+  },
+  "PE-150104": {
+   "name": "BARRANCO",
+   "2017": 34378
+  },
+  "PE-220503": {
+   "name": "BARRANQUITA",
+   "2017": 6429
+  },
+  "PE-101002": {
+   "name": "BAÑOS",
+   "2017": 1956
+  },
+  "PE-040305": {
+   "name": "BELLA UNIÓN",
+   "2017": 3171
+  },
+  "PE-060802": {
+   "name": "BELLAVISTA",
+   "2017": 15447
+  },
+  "PE-070102": {
+   "name": "BELLAVISTA",
+   "2017": 74851
+  },
+  "PE-200602": {
+   "name": "BELLAVISTA",
+   "2017": 37530
+  },
+  "PE-220201": {
+   "name": "BELLAVISTA",
+   "2017": 16894
+  },
+  "PE-200802": {
+   "name": "BELLAVISTA DE LA UNIÓN",
+   "2017": 4798
+  },
+  "PE-050902": {
+   "name": "BELÉN",
+   "2017": 329
+  },
+  "PE-160112": {
+   "name": "BELÉN",
+   "2017": 64488
+  },
+  "PE-200803": {
+   "name": "BERNAL",
+   "2017": 6855
+  },
+  "PE-021502": {
+   "name": "BOLOGNESI",
+   "2017": 986
+  },
+  "PE-061102": {
+   "name": "BOLÍVAR",
+   "2017": 1319
+  },
+  "PE-130301": {
+   "name": "BOLÍVAR",
+   "2017": 4455
+  },
+  "PE-150105": {
+   "name": "BREÑA",
+   "2017": 85309
+  },
+  "PE-020802": {
+   "name": "BUENA VISTA ALTA",
+   "2017": 4831
+  },
+  "PE-200402": {
+   "name": "BUENOS AIRES",
+   "2017": 9410
+  },
+  "PE-220702": {
+   "name": "BUENOS AIRES",
+   "2017": 2924
+  },
+  "PE-130802": {
+   "name": "BULDIBUYO",
+   "2017": 3812
+  },
+  "PE-021501": {
+   "name": "CABANA",
+   "2017": 2445
+  },
+  "PE-050603": {
+   "name": "CABANA",
+   "2017": 2189
+  },
+  "PE-211102": {
+   "name": "CABANA",
+   "2017": 4843
+  },
+  "PE-040503": {
+   "name": "CABANACONDE",
+   "2017": 2096
+  },
+  "PE-210702": {
+   "name": "CABANILLA",
+   "2017": 5352
+  },
+  "PE-211103": {
+   "name": "CABANILLAS",
+   "2017": 4567
+  },
+  "PE-220903": {
+   "name": "CACATACHI",
+   "2017": 3604
+  },
+  "PE-060202": {
+   "name": "CACHACHI",
+   "2017": 23524
+  },
+  "PE-131003": {
+   "name": "CACHICADÁN",
+   "2017": 5319
+  },
+  "PE-080303": {
+   "name": "CACHIMAYO",
+   "2017": 2382
+  },
+  "PE-151006": {
+   "name": "CACRA",
+   "2017": 507
+  },
+  "PE-101102": {
+   "name": "CÁHUAC",
+   "2017": 1156
+  },
+  "PE-040306": {
+   "name": "CAHUACHO",
+   "2017": 610
+  },
+  "PE-160702": {
+   "name": "CAHUAPANAS",
+   "2017": 6336
+  },
+  "PE-081102": {
+   "name": "CAICAY",
+   "2017": 2716
+  },
+  "PE-230202": {
+   "name": "CAIRANI",
+   "2017": 988
+  },
+  "PE-090204": {
+   "name": "CAJA",
+   "2017": 1842
+  },
+  "PE-060201": {
+   "name": "CAJABAMBA",
+   "2017": 31222
+  },
+  "PE-020505": {
+   "name": "CAJACAY",
+   "2017": 1677
+  },
+  "PE-060101": {
+   "name": "CAJAMARCA",
+   "2017": 218741
+  },
+  "PE-021403": {
+   "name": "CAJAMARQUILLA",
+   "2017": 300
+  },
+  "PE-010702": {
+   "name": "CAJARURO",
+   "2017": 23089
+  },
+  "PE-150301": {
+   "name": "CAJATAMBO",
+   "2017": 2082
+  },
+  "PE-021003": {
+   "name": "CAJAY",
+   "2017": 2573
+  },
+  "PE-130502": {
+   "name": "CALAMARCA",
+   "2017": 4866
+  },
+  "PE-230103": {
+   "name": "CALANA",
+   "2017": 2979
+  },
+  "PE-150503": {
+   "name": "CALANGO",
+   "2017": 2269
+  },
+  "PE-210703": {
+   "name": "CALAPUJA",
+   "2017": 1585
+  },
+  "PE-080401": {
+   "name": "CALCA",
+   "2017": 20628
+  },
+  "PE-150803": {
+   "name": "CALETA DE CARQUÍN",
+   "2017": 8132
+  },
+  "PE-150703": {
+   "name": "CALLAHUANCA",
+   "2017": 798
+  },
+  "PE-040504": {
+   "name": "CALLALLI",
+   "2017": 1458
+  },
+  "PE-090303": {
+   "name": "CALLANMARCA",
+   "2017": 625
+  },
+  "PE-070101": {
+   "name": "CALLAO",
+   "2017": 451260
+  },
+  "PE-060602": {
+   "name": "CALLAYUC",
+   "2017": 9361
+  },
+  "PE-250101": {
+   "name": "CALLERÍA",
+   "2017": 149999
+  },
+  "PE-061103": {
+   "name": "CALQUIS",
+   "2017": 4094
+  },
+  "PE-220102": {
+   "name": "CALZADA",
+   "2017": 4609
+  },
+  "PE-040201": {
+   "name": "CAMANÁ",
+   "2017": 13367
+  },
+  "PE-081203": {
+   "name": "CAMANTI",
+   "2017": 2219
+  },
+  "PE-230203": {
+   "name": "CAMILACA",
+   "2017": 1148
+  },
+  "PE-210205": {
+   "name": "CAMINACA",
+   "2017": 2931
+  },
+  "PE-220602": {
+   "name": "CAMPANILLA",
+   "2017": 12705
+  },
+  "PE-010502": {
+   "name": "CAMPORREDONDO",
+   "2017": 6473
+  },
+  "PE-250102": {
+   "name": "CAMPOVERDE",
+   "2017": 16059
+  },
+  "PE-051005": {
+   "name": "CANARIA",
+   "2017": 3977
+  },
+  "PE-050409": {
+   "name": "CANAYRE",
+   "2017": 3520
+  },
+  "PE-100402": {
+   "name": "CANCHABAMBA",
+   "2017": 2718
+  },
+  "PE-200302": {
+   "name": "CANCHAQUE",
+   "2017": 7317
+  },
+  "PE-120405": {
+   "name": "CANCHAYLLO",
+   "2017": 1601
+  },
+  "PE-230201": {
+   "name": "CANDARAVE",
+   "2017": 2354
+  },
+  "PE-050201": {
+   "name": "CANGALLO",
+   "2017": 5479
+  },
+  "PE-020506": {
+   "name": "CANIS",
+   "2017": 312
+  },
+  "PE-240203": {
+   "name": "CANOAS DE PUNTA SAL",
+   "2017": 6336
+  },
+  "PE-150401": {
+   "name": "CANTA",
+   "2017": 2385
+  },
+  "PE-210105": {
+   "name": "CAPACHICA",
+   "2017": 7540
+  },
+  "PE-080702": {
+   "name": "CAPACMARCA",
+   "2017": 3866
+  },
+  "PE-030402": {
+   "name": "CAPAYA",
+   "2017": 580
+  },
+  "PE-210502": {
+   "name": "CAPAZO",
+   "2017": 1130
+  },
+  "PE-160503": {
+   "name": "CAPELO",
+   "2017": 2566
+  },
+  "PE-090404": {
+   "name": "CAPILLAS",
+   "2017": 903
+  },
+  "PE-130503": {
+   "name": "CARABAMBA",
+   "2017": 6221
+  },
+  "PE-150106": {
+   "name": "CARABAYLLO",
+   "2017": 333045
+  },
+  "PE-211104": {
+   "name": "CARACOTO",
+   "2017": 6818
+  },
+  "PE-150704": {
+   "name": "CARAMPOMA",
+   "2017": 331
+  },
+  "PE-151007": {
+   "name": "CARANIA",
+   "2017": 162
+  },
+  "PE-050302": {
+   "name": "CARAPO",
+   "2017": 1826
+  },
+  "PE-040301": {
+   "name": "CARAVELÍ",
+   "2017": 4259
+  },
+  "PE-030403": {
+   "name": "CARAYBAMBA",
+   "2017": 929
+  },
+  "PE-021201": {
+   "name": "CARAZ",
+   "2017": 24128
+  },
+  "PE-120104": {
+   "name": "CARHUACALLANGA",
+   "2017": 506
+  },
+  "PE-120502": {
+   "name": "CARHUAMAYO",
+   "2017": 6638
+  },
+  "PE-051103": {
+   "name": "CARHUANCA",
+   "2017": 819
+  },
+  "PE-021404": {
+   "name": "CARHUAPAMPA",
+   "2017": 472
+  },
+  "PE-020601": {
+   "name": "CARHUAZ",
+   "2017": 15122
+  },
+  "PE-050104": {
+   "name": "CARMEN ALTO",
+   "2017": 28252
+  },
+  "PE-050604": {
+   "name": "CARMEN SALCEDO",
+   "2017": 1681
+  },
+  "PE-070103": {
+   "name": "CARMEN DE LA LEGUA REYNOSO",
+   "2017": 42240
+  },
+  "PE-180102": {
+   "name": "CARUMAS",
+   "2017": 2366
+  },
+  "PE-130208": {
+   "name": "CASA GRANDE",
+   "2017": 28492
+  },
+  "PE-021302": {
+   "name": "CASCA",
+   "2017": 3668
+  },
+  "PE-022002": {
+   "name": "CASCAPARA",
+   "2017": 1674
+  },
+  "PE-131101": {
+   "name": "CASCAS",
+   "2017": 13374
+  },
+  "PE-021904": {
+   "name": "CASHAPAMPA",
+   "2017": 2739
+  },
+  "PE-240202": {
+   "name": "CASITAS",
+   "2017": 2350
+  },
+  "PE-020801": {
+   "name": "CASMA",
+   "2017": 35765
+  },
+  "PE-220703": {
+   "name": "CASPISAPA",
+   "2017": 2126
+  },
+  "PE-200104": {
+   "name": "CASTILLA",
+   "2017": 160201
+  },
+  "PE-100608": {
+   "name": "CASTILLO GRANDE",
+   "2017": 13568
+  },
+  "PE-090401": {
+   "name": "CASTROVIRREYNA",
+   "2017": 2929
+  },
+  "PE-200105": {
+   "name": "CATACAOS",
+   "2017": 75870
+  },
+  "PE-061303": {
+   "name": "CATACHE",
+   "2017": 8958
+  },
+  "PE-151008": {
+   "name": "CATAHUASI",
+   "2017": 1062
+  },
+  "PE-061104": {
+   "name": "CATILLUC",
+   "2017": 2747
+  },
+  "PE-150903": {
+   "name": "CAUJUL",
+   "2017": 576
+  },
+  "PE-140116": {
+   "name": "CAYALTÍ",
+   "2017": 14809
+  },
+  "PE-051006": {
+   "name": "CAYARA",
+   "2017": 1138
+  },
+  "PE-040603": {
+   "name": "CAYARANI",
+   "2017": 3212
+  },
+  "PE-040505": {
+   "name": "CAYLLOMA",
+   "2017": 3697
+  },
+  "PE-040103": {
+   "name": "CAYMA",
+   "2017": 91935
+  },
+  "PE-100202": {
+   "name": "CAYNA",
+   "2017": 2502
+  },
+  "PE-220504": {
+   "name": "CAYNARACHI",
+   "2017": 9546
+  },
+  "PE-140202": {
+   "name": "CAÑARIS",
+   "2017": 11366
+  },
+  "PE-081003": {
+   "name": "CCAPI",
+   "2017": 3079
+  },
+  "PE-081204": {
+   "name": "CCARHUAYO",
+   "2017": 2863
+  },
+  "PE-081205": {
+   "name": "CCATCA",
+   "2017": 13295
+  },
+  "PE-090304": {
+   "name": "CCOCHACCASA",
+   "2017": 2956
+  },
+  "PE-080102": {
+   "name": "CCORCA",
+   "2017": 2246
+  },
+  "PE-060301": {
+   "name": "CELENDÍN",
+   "2017": 26925
+  },
+  "PE-150504": {
+   "name": "CERRO AZUL",
+   "2017": 8328
+  },
+  "PE-040104": {
+   "name": "CERRO COLORADO",
+   "2017": 197954
+  },
+  "PE-050412": {
+   "name": "CHACA",
+   "2017": 2162
+  },
+  "PE-101103": {
+   "name": "CHACABAMBA",
+   "2017": 1110
+  },
+  "PE-120802": {
+   "name": "CHACAPALPA",
+   "2017": 687
+  },
+  "PE-120105": {
+   "name": "CHACAPAMPA",
+   "2017": 959
+  },
+  "PE-020401": {
+   "name": "CHACAS",
+   "2017": 4563
+  },
+  "PE-190202": {
+   "name": "CHACAYÁN",
+   "2017": 2006
+  },
+  "PE-020303": {
+   "name": "CHACCHO",
+   "2017": 1368
+  },
+  "PE-010101": {
+   "name": "CHACHAPOYAS",
+   "2017": 32589
+  },
+  "PE-040404": {
+   "name": "CHACHAS",
+   "2017": 1646
+  },
+  "PE-150107": {
+   "name": "CHACLACAYO",
+   "2017": 42912
+  },
+  "PE-030102": {
+   "name": "CHACOCHE",
+   "2017": 1339
+  },
+  "PE-060403": {
+   "name": "CHADÍN",
+   "2017": 3449
+  },
+  "PE-100802": {
+   "name": "CHAGLLA",
+   "2017": 10103
+  },
+  "PE-040307": {
+   "name": "CHALA",
+   "2017": 9240
+  },
+  "PE-200403": {
+   "name": "CHALACO",
+   "2017": 7789
+  },
+  "PE-060419": {
+   "name": "CHALAMARCA",
+   "2017": 9134
+  },
+  "PE-050903": {
+   "name": "CHALCOS",
+   "2017": 478
+  },
+  "PE-030401": {
+   "name": "CHALHUANCA",
+   "2017": 4928
+  },
+  "PE-081103": {
+   "name": "CHALLABAMBA",
+   "2017": 8433
+  },
+  "PE-030506": {
+   "name": "CHALLHUAHUACHO",
+   "2017": 14525
+  },
+  "PE-080703": {
+   "name": "CHAMACA",
+   "2017": 6244
+  },
+  "PE-120204": {
+   "name": "CHAMBARA",
+   "2017": 2550
+  },
+  "PE-061002": {
+   "name": "CHANCAY",
+   "2017": 2965
+  },
+  "PE-150605": {
+   "name": "CHANCAY",
+   "2017": 56920
+  },
+  "PE-061304": {
+   "name": "CHANCAYBAÑOS",
+   "2017": 3355
+  },
+  "PE-120301": {
+   "name": "CHANCHAMAYO",
+   "2017": 27790
+  },
+  "PE-110302": {
+   "name": "CHANGUILLO",
+   "2017": 1950
+  },
+  "PE-131202": {
+   "name": "CHAO",
+   "2017": 32842
+  },
+  "PE-040308": {
+   "name": "CHAPARRA",
+   "2017": 3685
+  },
+  "PE-030404": {
+   "name": "CHAPIMARCA",
+   "2017": 1893
+  },
+  "PE-040105": {
+   "name": "CHARACATO",
+   "2017": 12949
+  },
+  "PE-130604": {
+   "name": "CHARAT",
+   "2017": 2420
+  },
+  "PE-040803": {
+   "name": "CHARCANA",
+   "2017": 577
+  },
+  "PE-190101": {
+   "name": "CHAUPIMARCA",
+   "2017": 25627
+  },
+  "PE-101101": {
+   "name": "CHAVINILLO",
+   "2017": 4789
+  },
+  "PE-050605": {
+   "name": "CHAVIÑA",
+   "2017": 2163
+  },
+  "PE-110203": {
+   "name": "CHAVÍN",
+   "2017": 2071
+  },
+  "PE-021004": {
+   "name": "CHAVÍN DE HUÁNTAR",
+   "2017": 7971
+  },
+  "PE-100503": {
+   "name": "CHAVÍN DE PARIARCA",
+   "2017": 3793
+  },
+  "PE-220904": {
+   "name": "CHAZUTA",
+   "2017": 9497
+  },
+  "PE-080602": {
+   "name": "CHECACUPE",
+   "2017": 4720
+  },
+  "PE-080502": {
+   "name": "CHECCA",
+   "2017": 4985
+  },
+  "PE-150804": {
+   "name": "CHECRAS",
+   "2017": 929
+  },
+  "PE-130401": {
+   "name": "CHEPÉN",
+   "2017": 45733
+  },
+  "PE-060103": {
+   "name": "CHETILLA",
+   "2017": 3660
+  },
+  "PE-010104": {
+   "name": "CHETO",
+   "2017": 642
+  },
+  "PE-030203": {
+   "name": "CHIARA",
+   "2017": 1186
+  },
+  "PE-050105": {
+   "name": "CHIARA",
+   "2017": 5698
+  },
+  "PE-130202": {
+   "name": "CHICAMA",
+   "2017": 15267
+  },
+  "PE-120106": {
+   "name": "CHICCHE",
+   "2017": 741
+  },
+  "PE-040604": {
+   "name": "CHICHAS",
+   "2017": 675
+  },
+  "PE-150705": {
+   "name": "CHICLA",
+   "2017": 3826
+  },
+  "PE-140101": {
+   "name": "CHICLAYO",
+   "2017": 270496
+  },
+  "PE-040106": {
+   "name": "CHIGUATA",
+   "2017": 2939
+  },
+  "PE-060404": {
+   "name": "CHIGUIRIP",
+   "2017": 3641
+  },
+  "PE-120107": {
+   "name": "CHILCA",
+   "2017": 91851
+  },
+  "PE-150505": {
+   "name": "CHILCA",
+   "2017": 21573
+  },
+  "PE-050504": {
+   "name": "CHILCAS",
+   "2017": 1643
+  },
+  "PE-040405": {
+   "name": "CHILCAYMARCA",
+   "2017": 947
+  },
+  "PE-050904": {
+   "name": "CHILCAYOC",
+   "2017": 496
+  },
+  "PE-060502": {
+   "name": "CHILETE",
+   "2017": 2635
+  },
+  "PE-010105": {
+   "name": "CHILIQUÍN",
+   "2017": 585
+  },
+  "PE-130803": {
+   "name": "CHILLIA",
+   "2017": 11678
+  },
+  "PE-060405": {
+   "name": "CHIMBAN",
+   "2017": 2199
+  },
+  "PE-021801": {
+   "name": "CHIMBOTE",
+   "2017": 206213
+  },
+  "PE-110201": {
+   "name": "CHINCHA ALTA",
+   "2017": 66349
+  },
+  "PE-110204": {
+   "name": "CHINCHA BAJA",
+   "2017": 13009
+  },
+  "PE-100103": {
+   "name": "CHINCHAO",
+   "2017": 13135
+  },
+  "PE-080304": {
+   "name": "CHINCHAYPUJIO",
+   "2017": 4026
+  },
+  "PE-081302": {
+   "name": "CHINCHERO",
+   "2017": 10477
+  },
+  "PE-030601": {
+   "name": "CHINCHEROS",
+   "2017": 5293
+  },
+  "PE-090503": {
+   "name": "CHINCHIHUASI",
+   "2017": 1979
+  },
+  "PE-090305": {
+   "name": "CHINCHO",
+   "2017": 943
+  },
+  "PE-021905": {
+   "name": "CHINGALPO",
+   "2017": 905
+  },
+  "PE-020304": {
+   "name": "CHINGAS",
+   "2017": 1851
+  },
+  "PE-050606": {
+   "name": "CHIPAO",
+   "2017": 2554
+  },
+  "PE-220905": {
+   "name": "CHIPURANA",
+   "2017": 2249
+  },
+  "PE-020501": {
+   "name": "CHIQUIÁN",
+   "2017": 4023
+  },
+  "PE-010602": {
+   "name": "CHIRIMOTO",
+   "2017": 2498
+  },
+  "PE-060902": {
+   "name": "CHIRINOS",
+   "2017": 14592
+  },
+  "PE-010302": {
+   "name": "CHISQUILLA",
+   "2017": 306
+  },
+  "PE-040501": {
+   "name": "CHIVAY",
+   "2017": 5770
+  },
+  "PE-140302": {
+   "name": "CHÓCHOPE",
+   "2017": 1407
+  },
+  "PE-040406": {
+   "name": "CHOCO",
+   "2017": 702
+  },
+  "PE-130203": {
+   "name": "CHOCOPE",
+   "2017": 9321
+  },
+  "PE-151009": {
+   "name": "CHOCOS",
+   "2017": 801
+  },
+  "PE-180202": {
+   "name": "CHOJATA",
+   "2017": 708
+  },
+  "PE-100702": {
+   "name": "CHOLÓN",
+   "2017": 5372
+  },
+  "PE-120108": {
+   "name": "CHONGOS ALTO",
+   "2017": 1484
+  },
+  "PE-120903": {
+   "name": "CHONGOS BAJO",
+   "2017": 4537
+  },
+  "PE-140102": {
+   "name": "CHONGOYAPE",
+   "2017": 18364
+  },
+  "PE-190302": {
+   "name": "CHONTABAMBA",
+   "2017": 5334
+  },
+  "PE-060803": {
+   "name": "CHONTALÍ",
+   "2017": 9810
+  },
+  "PE-101108": {
+   "name": "CHORAS",
+   "2017": 2024
+  },
+  "PE-060406": {
+   "name": "CHOROPAMPA",
+   "2017": 2336
+  },
+  "PE-060603": {
+   "name": "CHOROS",
+   "2017": 2878
+  },
+  "PE-150108": {
+   "name": "CHORRILLOS",
+   "2017": 314241
+  },
+  "PE-060401": {
+   "name": "CHOTA",
+   "2017": 47279
+  },
+  "PE-210106": {
+   "name": "CHUCUITO",
+   "2017": 7019
+  },
+  "PE-130902": {
+   "name": "CHUGAY",
+   "2017": 16769
+  },
+  "PE-060702": {
+   "name": "CHUGUR",
+   "2017": 2920
+  },
+  "PE-200401": {
+   "name": "CHULUCANAS",
+   "2017": 82521
+  },
+  "PE-050702": {
+   "name": "CHUMPI",
+   "2017": 2186
+  },
+  "PE-060302": {
+   "name": "CHUMUCH",
+   "2017": 2600
+  },
+  "PE-050505": {
+   "name": "CHUNGUI",
+   "2017": 4218
+  },
+  "PE-210206": {
+   "name": "CHUPA",
+   "2017": 6475
+  },
+  "PE-120901": {
+   "name": "CHUPACA",
+   "2017": 20341
+  },
+  "PE-090405": {
+   "name": "CHUPAMARCA",
+   "2017": 888
+  },
+  "PE-120111": {
+   "name": "CHUPURO",
+   "2017": 1946
+  },
+  "PE-010106": {
+   "name": "CHUQUIBAMBA",
+   "2017": 1781
+  },
+  "PE-040601": {
+   "name": "CHUQUIBAMBA",
+   "2017": 3290
+  },
+  "PE-030701": {
+   "name": "CHUQUIBAMBILLA",
+   "2017": 5023
+  },
+  "PE-100307": {
+   "name": "CHUQUIS",
+   "2017": 3364
+  },
+  "PE-090501": {
+   "name": "CHURCAMPA",
+   "2017": 5088
+  },
+  "PE-100104": {
+   "name": "CHURUBAMBA",
+   "2017": 15670
+  },
+  "PE-010303": {
+   "name": "CHURUJA",
+   "2017": 287
+  },
+  "PE-050202": {
+   "name": "CHUSCHI",
+   "2017": 8321
+  },
+  "PE-150109": {
+   "name": "CIENEGUILLA",
+   "2017": 34684
+  },
+  "PE-030103": {
+   "name": "CIRCA",
+   "2017": 1866
+  },
+  "PE-230104": {
+   "name": "CIUDAD NUEVA",
+   "2017": 31866
+  },
+  "PE-180203": {
+   "name": "COALAQUE",
+   "2017": 948
+  },
+  "PE-210304": {
+   "name": "COASA",
+   "2017": 6433
+  },
+  "PE-210107": {
+   "name": "COATA",
+   "2017": 6588
+  },
+  "PE-150506": {
+   "name": "COAYLLO",
+   "2017": 1043
+  },
+  "PE-010503": {
+   "name": "COCABAMBA",
+   "2017": 1881
+  },
+  "PE-040702": {
+   "name": "COCACHACRA",
+   "2017": 8347
+  },
+  "PE-090406": {
+   "name": "COCAS",
+   "2017": 703
+  },
+  "PE-020102": {
+   "name": "COCHABAMBA",
+   "2017": 1639
+  },
+  "PE-060407": {
+   "name": "COCHABAMBA",
+   "2017": 5546
+  },
+  "PE-100403": {
+   "name": "COCHABAMBA",
+   "2017": 1576
+  },
+  "PE-010603": {
+   "name": "COCHAMAL",
+   "2017": 595
+  },
+  "PE-150904": {
+   "name": "COCHAMARCA",
+   "2017": 1086
+  },
+  "PE-021102": {
+   "name": "COCHAPETI",
+   "2017": 740
+  },
+  "PE-030603": {
+   "name": "COCHARCAS",
+   "2017": 1728
+  },
+  "PE-021405": {
+   "name": "COCHAS",
+   "2017": 1421
+  },
+  "PE-120205": {
+   "name": "COCHAS",
+   "2017": 1923
+  },
+  "PE-151010": {
+   "name": "COCHAS",
+   "2017": 216
+  },
+  "PE-130903": {
+   "name": "COCHORCO",
+   "2017": 8398
+  },
+  "PE-100902": {
+   "name": "CODO DEL POZUZO",
+   "2017": 7101
+  },
+  "PE-021803": {
+   "name": "COISHCO",
+   "2017": 15979
+  },
+  "PE-210602": {
+   "name": "COJATA",
+   "2017": 3764
+  },
+  "PE-200504": {
+   "name": "COLÁN",
+   "2017": 14869
+  },
+  "PE-060804": {
+   "name": "COLASAY",
+   "2017": 10238
+  },
+  "PE-051007": {
+   "name": "COLCA",
+   "2017": 1011
+  },
+  "PE-120112": {
+   "name": "COLCA",
+   "2017": 1017
+  },
+  "PE-020103": {
+   "name": "COLCABAMBA",
+   "2017": 294
+  },
+  "PE-030405": {
+   "name": "COLCABAMBA",
+   "2017": 693
+  },
+  "PE-090705": {
+   "name": "COLCABAMBA",
+   "2017": 11068
+  },
+  "PE-010504": {
+   "name": "COLCAMAR",
+   "2017": 1853
+  },
+  "PE-081004": {
+   "name": "COLCHA",
+   "2017": 963
+  },
+  "PE-151011": {
+   "name": "COLONIA",
+   "2017": 1109
+  },
+  "PE-100203": {
+   "name": "COLPAS",
+   "2017": 1731
+  },
+  "PE-080704": {
+   "name": "COLQUEMARCA",
+   "2017": 6897
+  },
+  "PE-081104": {
+   "name": "COLQUEPATA",
+   "2017": 8170
+  },
+  "PE-020507": {
+   "name": "COLQUIOC",
+   "2017": 2313
+  },
+  "PE-050802": {
+   "name": "COLTA",
+   "2017": 468
+  },
+  "PE-020803": {
+   "name": "COMANDANTE NOEL",
+   "2017": 2088
+  },
+  "PE-120206": {
+   "name": "COMAS",
+   "2017": 5377
+  },
+  "PE-150110": {
+   "name": "COMAS",
+   "2017": 520450
+  },
+  "PE-080603": {
+   "name": "COMBAPATA",
+   "2017": 4587
+  },
+  "PE-090104": {
+   "name": "CONAYCA",
+   "2017": 851
+  },
+  "PE-051104": {
+   "name": "CONCEPCIÓN",
+   "2017": 1577
+  },
+  "PE-120201": {
+   "name": "CONCEPCIÓN",
+   "2017": 15428
+  },
+  "PE-100204": {
+   "name": "CONCHAMARCA",
+   "2017": 4441
+  },
+  "PE-060408": {
+   "name": "CONCHÁN",
+   "2017": 5643
+  },
+  "PE-021503": {
+   "name": "CONCHUCOS",
+   "2017": 7391
+  },
+  "PE-060203": {
+   "name": "CONDEBAMBA",
+   "2017": 13406
+  },
+  "PE-130303": {
+   "name": "CONDORMARCA",
+   "2017": 1914
+  },
+  "PE-080802": {
+   "name": "CONDOROMA",
+   "2017": 870
+  },
+  "PE-210505": {
+   "name": "CONDURIRI",
+   "2017": 2529
+  },
+  "PE-090306": {
+   "name": "CONGALLA",
+   "2017": 3544
+  },
+  "PE-021406": {
+   "name": "CONGAS",
+   "2017": 1219
+  },
+  "PE-010505": {
+   "name": "CONILA",
+   "2017": 1840
+  },
+  "PE-210902": {
+   "name": "CONIMA",
+   "2017": 3151
+  },
+  "PE-190308": {
+   "name": "CONSTITUCIÓN",
+   "2017": 13634
+  },
+  "PE-160601": {
+   "name": "CONTAMANA",
+   "2017": 23883
+  },
+  "PE-060501": {
+   "name": "CONTUMAZÁ",
+   "2017": 7461
+  },
+  "PE-150302": {
+   "name": "COPA",
+   "2017": 858
+  },
+  "PE-010203": {
+   "name": "COPALLÍN",
+   "2017": 4595
+  },
+  "PE-211303": {
+   "name": "COPANI",
+   "2017": 4655
+  },
+  "PE-040506": {
+   "name": "COPORAQUE",
+   "2017": 1089
+  },
+  "PE-080803": {
+   "name": "COPORAQUE",
+   "2017": 9627
+  },
+  "PE-050701": {
+   "name": "CORACORA",
+   "2017": 13124
+  },
+  "PE-210305": {
+   "name": "CORANI",
+   "2017": 4240
+  },
+  "PE-050803": {
+   "name": "CORCULLA",
+   "2017": 445
+  },
+  "PE-020202": {
+   "name": "CORIS",
+   "2017": 1639
+  },
+  "PE-050703": {
+   "name": "CORONEL CASTAÑEDA",
+   "2017": 1722
+  },
+  "PE-020901": {
+   "name": "CORONGO",
+   "2017": 1677
+  },
+  "PE-010304": {
+   "name": "COROSHA",
+   "2017": 772
+  },
+  "PE-240102": {
+   "name": "CORRALES",
+   "2017": 23337
+  },
+  "PE-060303": {
+   "name": "CORTEGANA",
+   "2017": 6746
+  },
+  "PE-090511": {
+   "name": "COSME",
+   "2017": 2832
+  },
+  "PE-060104": {
+   "name": "COSPÁN",
+   "2017": 6760
+  },
+  "PE-030502": {
+   "name": "COTABAMBAS",
+   "2017": 3886
+  },
+  "PE-040801": {
+   "name": "COTAHUASI",
+   "2017": 2925
+  },
+  "PE-021703": {
+   "name": "COTAPARACO",
+   "2017": 409
+  },
+  "PE-030406": {
+   "name": "COTARUSE",
+   "2017": 2570
+  },
+  "PE-120602": {
+   "name": "COVIRIALI",
+   "2017": 5778
+  },
+  "PE-080402": {
+   "name": "COYA",
+   "2017": 3443
+  },
+  "PE-030503": {
+   "name": "COYLLURQUI",
+   "2017": 6586
+  },
+  "PE-200804": {
+   "name": "CRISTO NOS VALGA",
+   "2017": 4300
+  },
+  "PE-230110": {
+   "name": "CORONEL GREGORIO ALBARRACÍN LANCHIPA",
+   "2017": 110417
+  },
+  "PE-210306": {
+   "name": "CRUCERO",
+   "2017": 9108
+  },
+  "PE-180103": {
+   "name": "CUCHUMBAYA",
+   "2017": 761
+  },
+  "PE-090105": {
+   "name": "CUENCA",
+   "2017": 1137
+  },
+  "PE-150706": {
+   "name": "CUENCA",
+   "2017": 449
+  },
+  "PE-010305": {
+   "name": "CUISPES",
+   "2017": 669
+  },
+  "PE-060604": {
+   "name": "CUJILLO",
+   "2017": 2330
+  },
+  "PE-021103": {
+   "name": "CULEBRAS",
+   "2017": 3097
+  },
+  "PE-120113": {
+   "name": "CULLHUAS",
+   "2017": 1335
+  },
+  "PE-010703": {
+   "name": "CUMBA",
+   "2017": 7855
+  },
+  "PE-210803": {
+   "name": "CUPI",
+   "2017": 1986
+  },
+  "PE-060503": {
+   "name": "CUPISNIQUE",
+   "2017": 1338
+  },
+  "PE-200107": {
+   "name": "CURA MORI",
+   "2017": 18671
+  },
+  "PE-030104": {
+   "name": "CURAHUASI",
+   "2017": 16223
+  },
+  "PE-030714": {
+   "name": "CURASCO",
+   "2017": 1229
+  },
+  "PE-130904": {
+   "name": "CURGOS",
+   "2017": 7822
+  },
+  "PE-230204": {
+   "name": "CURIBAYA",
+   "2017": 377
+  },
+  "PE-120406": {
+   "name": "CURICACA",
+   "2017": 1410
+  },
+  "PE-250303": {
+   "name": "CURIMANA",
+   "2017": 7722
+  },
+  "PE-030702": {
+   "name": "CURPAHUASI",
+   "2017": 1936
+  },
+  "PE-020904": {
+   "name": "CUSCA",
+   "2017": 2678
+  },
+  "PE-080101": {
+   "name": "CUSCO",
+   "2017": 114630
+  },
+  "PE-081206": {
+   "name": "CUSIPATA",
+   "2017": 4221
+  },
+  "PE-060601": {
+   "name": "CUTERVO",
+   "2017": 50905
+  },
+  "PE-211304": {
+   "name": "CUTURAPI",
+   "2017": 1270
+  },
+  "PE-211202": {
+   "name": "CUYOCUYO",
+   "2017": 5024
+  },
+  "PE-220505": {
+   "name": "CUÑUMBUQUI",
+   "2017": 3301
+  },
+  "PE-021802": {
+   "name": "CÁCERES DEL PERÚ",
+   "2017": 4420
+  },
+  "PE-021702": {
+   "name": "CÁTAC",
+   "2017": 3907
+  },
+  "PE-090603": {
+   "name": "CÓRDOVA",
+   "2017": 1005
+  },
+  "PE-100602": {
+   "name": "DANIEL ALOMÍA ROBLES",
+   "2017": 6142
+  },
+  "PE-090706": {
+   "name": "DANIEL HERNÁNDEZ",
+   "2017": 9089
+  },
+  "PE-040703": {
+   "name": "DEAN VALDIVIA",
+   "2017": 6854
+  },
+  "PE-210402": {
+   "name": "DESAGUADERO",
+   "2017": 13787
+  },
+  "PE-080902": {
+   "name": "ECHARATE",
+   "2017": 23214
+  },
+  "PE-061003": {
+   "name": "EDUARDO VILLANUEVA",
+   "2017": 2664
+  },
+  "PE-150111": {
+   "name": "EL AGUSTINO",
+   "2017": 198862
+  },
+  "PE-180302": {
+   "name": "EL ALGARROBAL",
+   "2017": 3717
+  },
+  "PE-200702": {
+   "name": "EL ALTO",
+   "2017": 8316
+  },
+  "PE-090504": {
+   "name": "EL CARMEN",
+   "2017": 2429
+  },
+  "PE-110205": {
+   "name": "EL CARMEN",
+   "2017": 12369
+  },
+  "PE-200303": {
+   "name": "EL CARMEN DE LA FRONTERA",
+   "2017": 11186
+  },
+  "PE-010402": {
+   "name": "EL CENEPA",
+   "2017": 9891
+  },
+  "PE-220403": {
+   "name": "EL ESLABÓN",
+   "2017": 2106
+  },
+  "PE-110303": {
+   "name": "EL INGENIO",
+   "2017": 3134
+  },
+  "PE-120407": {
+   "name": "EL MANTARO",
+   "2017": 2598
+  },
+  "PE-010704": {
+   "name": "EL MILAGRO",
+   "2017": 5825
+  },
+  "PE-030302": {
+   "name": "EL ORO",
+   "2017": 552
+  },
+  "PE-010204": {
+   "name": "EL PARCO",
+   "2017": 1216
+  },
+  "PE-030610": {
+   "name": "EL PORVENIR",
+   "2017": 1728
+  },
+  "PE-130102": {
+   "name": "EL PORVENIR",
+   "2017": 190461
+  },
+  "PE-220906": {
+   "name": "EL PORVENIR",
+   "2017": 2399
+  },
+  "PE-061105": {
+   "name": "EL PRADO",
+   "2017": 1627
+  },
+  "PE-200108": {
+   "name": "EL TALLÁN",
+   "2017": 5387
+  },
+  "PE-120114": {
+   "name": "EL TAMBO",
+   "2017": 166359
+  },
+  "PE-021303": {
+   "name": "ELEAZAR GUZMÁN BARRÓN",
+   "2017": 1326
+  },
+  "PE-220803": {
+   "name": "ELÍAS SOPLÍN VARGAS",
+   "2017": 17661
+  },
+  "PE-160504": {
+   "name": "EMILIO SAN MARTÍN",
+   "2017": 6089
+  },
+  "PE-060105": {
+   "name": "ENCAÑADA",
+   "2017": 19175
+  },
+  "PE-080801": {
+   "name": "ESPINAR",
+   "2017": 34861
+  },
+  "PE-230403": {
+   "name": "ESTIQUE",
+   "2017": 240
+  },
+  "PE-230404": {
+   "name": "ESTIQUE-PAMPA",
+   "2017": 162
+  },
+  "PE-140103": {
+   "name": "ÉTEN",
+   "2017": 11993
+  },
+  "PE-140104": {
+   "name": "ETEN PUERTO",
+   "2017": 2342
+  },
+  "PE-160103": {
+   "name": "FERNANDO LORES",
+   "2017": 13875
+  },
+  "PE-140201": {
+   "name": "FERREÑAFE",
+   "2017": 34229
+  },
+  "PE-021304": {
+   "name": "FIDEL OLIVAS ESCUDERO",
+   "2017": 1908
+  },
+  "PE-170202": {
+   "name": "FITZCARRALD",
+   "2017": 1402
+  },
+  "PE-130103": {
+   "name": "FLORENCIA DE MORA",
+   "2017": 37262
+  },
+  "PE-010306": {
+   "name": "FLORIDA",
+   "2017": 5999
+  },
+  "PE-200202": {
+   "name": "FRÍAS",
+   "2017": 19896
+  },
+  "PE-030703": {
+   "name": "GAMARRA",
+   "2017": 2782
+  },
+  "PE-150303": {
+   "name": "GORGOR",
+   "2017": 1672
+  },
+  "PE-190203": {
+   "name": "GOYLLARISQUIZGA",
+   "2017": 1535
+  },
+  "PE-010107": {
+   "name": "GRANADA",
+   "2017": 480
+  },
+  "PE-061004": {
+   "name": "GREGORIO PITA",
+   "2017": 5136
+  },
+  "PE-110206": {
+   "name": "GROCIO PRADO",
+   "2017": 25294
+  },
+  "PE-130702": {
+   "name": "GUADALUPE",
+   "2017": 40217
+  },
+  "PE-131203": {
+   "name": "GUADALUPITO",
+   "2017": 7075
+  },
+  "PE-060504": {
+   "name": "GUZMANGO",
+   "2017": 2679
+  },
+  "PE-220103": {
+   "name": "HABANA",
+   "2017": 1675
+  },
+  "PE-030504": {
+   "name": "HAQUIRA",
+   "2017": 9430
+  },
+  "PE-100603": {
+   "name": "HERMÍLIO VALDIZÁN",
+   "2017": 3475
+  },
+  "PE-120207": {
+   "name": "HEROÍNAS TOLEDO",
+   "2017": 972
+  },
+  "PE-151012": {
+   "name": "HONGOS",
+   "2017": 331
+  },
+  "PE-100903": {
+   "name": "HONORIA",
+   "2017": 4814
+  },
+  "PE-060805": {
+   "name": "HUABAL",
+   "2017": 7642
+  },
+  "PE-050607": {
+   "name": "HUAC-HUAS",
+   "2017": 1560
+  },
+  "PE-021005": {
+   "name": "HUACACHI",
+   "2017": 1782
+  },
+  "PE-100205": {
+   "name": "HUÁCAR",
+   "2017": 7449
+  },
+  "PE-021504": {
+   "name": "HUACASCHUQUE",
+   "2017": 523
+  },
+  "PE-100401": {
+   "name": "HUACAYBAMBA",
+   "2017": 5868
+  },
+  "PE-050905": {
+   "name": "HUACAÑA",
+   "2017": 374
+  },
+  "PE-030604": {
+   "name": "HUACCANA",
+   "2017": 6634
+  },
+  "PE-021006": {
+   "name": "HUACCHIS",
+   "2017": 1427
+  },
+  "PE-021007": {
+   "name": "HUACHIS",
+   "2017": 3307
+  },
+  "PE-150801": {
+   "name": "HUACHO",
+   "2017": 63142
+  },
+  "PE-090106": {
+   "name": "HUACHOCOLPA",
+   "2017": 1875
+  },
+  "PE-090707": {
+   "name": "HUACHOCOLPA",
+   "2017": 3218
+  },
+  "PE-090407": {
+   "name": "HUACHOS",
+   "2017": 919
+  },
+  "PE-150707": {
+   "name": "HUACHUPAMPA",
+   "2017": 609
+  },
+  "PE-190102": {
+   "name": "HUACHÓN",
+   "2017": 4333
+  },
+  "PE-020203": {
+   "name": "HUACLLÁN",
+   "2017": 364
+  },
+  "PE-100701": {
+   "name": "HUACRACHUCO",
+   "2017": 14150
+  },
+  "PE-120116": {
+   "name": "HUACRAPUQUIO",
+   "2017": 1366
+  },
+  "PE-210403": {
+   "name": "HUACULLANI",
+   "2017": 9237
+  },
+  "PE-060703": {
+   "name": "HUALGAYOC",
+   "2017": 15111
+  },
+  "PE-120117": {
+   "name": "HUALHUAS",
+   "2017": 5251
+  },
+  "PE-220204": {
+   "name": "HUALLAGA",
+   "2017": 2711
+  },
+  "PE-020508": {
+   "name": "HUALLANCA",
+   "2017": 6468
+  },
+  "PE-021202": {
+   "name": "HUALLANCA",
+   "2017": 960
+  },
+  "PE-150805": {
+   "name": "HUALMAY",
+   "2017": 28765
+  },
+  "PE-130901": {
+   "name": "HUAMACHUCO",
+   "2017": 66902
+  },
+  "PE-120408": {
+   "name": "HUAMALÍ",
+   "2017": 1646
+  },
+  "PE-120905": {
+   "name": "HUAMANCACA CHICO",
+   "2017": 8766
+  },
+  "PE-050403": {
+   "name": "HUAMANGUILLA",
+   "2017": 4162
+  },
+  "PE-051008": {
+   "name": "HUAMANQUIQUIA",
+   "2017": 1089
+  },
+  "PE-150403": {
+   "name": "HUAMANTANGA",
+   "2017": 686
+  },
+  "PE-090408": {
+   "name": "HUAMATAMBO",
+   "2017": 388
+  },
+  "PE-051105": {
+   "name": "HUAMBALPA",
+   "2017": 1340
+  },
+  "PE-010604": {
+   "name": "HUAMBO",
+   "2017": 2620
+  },
+  "PE-040507": {
+   "name": "HUAMBO",
+   "2017": 670
+  },
+  "PE-060409": {
+   "name": "HUAMBOS",
+   "2017": 7972
+  },
+  "PE-151013": {
+   "name": "HUAMPARA",
+   "2017": 149
+  },
+  "PE-040508": {
+   "name": "HUANCA",
+   "2017": 1010
+  },
+  "PE-090307": {
+   "name": "HUANCA-HUANCA",
+   "2017": 1337
+  },
+  "PE-190303": {
+   "name": "HUANCABAMBA",
+   "2017": 6661
+  },
+  "PE-200301": {
+   "name": "HUANCABAMBA",
+   "2017": 27599
+  },
+  "PE-110502": {
+   "name": "HUANCANO",
+   "2017": 1379
+  },
+  "PE-210601": {
+   "name": "HUANCANE",
+   "2017": 18742
+  },
+  "PE-051001": {
+   "name": "HUANCAPI",
+   "2017": 1887
+  },
+  "PE-150304": {
+   "name": "HUANCAPÓN",
+   "2017": 984
+  },
+  "PE-030204": {
+   "name": "HUANCARAMA",
+   "2017": 5210
+  },
+  "PE-081105": {
+   "name": "HUANCARANI",
+   "2017": 6911
+  },
+  "PE-030205": {
+   "name": "HUANCARAY",
+   "2017": 3753
+  },
+  "PE-051009": {
+   "name": "HUANCARAYLLA",
+   "2017": 1294
+  },
+  "PE-040407": {
+   "name": "HUANCARQUI",
+   "2017": 1472
+  },
+  "PE-010108": {
+   "name": "HUANCAS",
+   "2017": 1258
+  },
+  "PE-130804": {
+   "name": "HUANCASPATA",
+   "2017": 5877
+  },
+  "PE-090101": {
+   "name": "HUANCAVELICA",
+   "2017": 39776
+  },
+  "PE-151014": {
+   "name": "HUANCAYA",
+   "2017": 596
+  },
+  "PE-120101": {
+   "name": "HUANCAYO",
+   "2017": 119993
+  },
+  "PE-130104": {
+   "name": "HUANCHACO",
+   "2017": 68409
+  },
+  "PE-020104": {
+   "name": "HUANCHAY",
+   "2017": 1600
+  },
+  "PE-120119": {
+   "name": "HUANCÁN",
+   "2017": 24830
+  },
+  "PE-090119": {
+   "name": "HUANDO",
+   "2017": 6037
+  },
+  "PE-021505": {
+   "name": "HUANDOVAL",
+   "2017": 1001
+  },
+  "PE-151015": {
+   "name": "HUANGÁSCAR",
+   "2017": 637
+  },
+  "PE-030105": {
+   "name": "HUANIPACA",
+   "2017": 2886
+  },
+  "PE-081005": {
+   "name": "HUANOQUITE",
+   "2017": 4867
+  },
+  "PE-050401": {
+   "name": "HUANTA",
+   "2017": 39517
+  },
+  "PE-151016": {
+   "name": "HUANTÁN",
+   "2017": 941
+  },
+  "PE-021008": {
+   "name": "HUÁNTAR",
+   "2017": 2571
+  },
+  "PE-230205": {
+   "name": "HUANUARA",
+   "2017": 515
+  },
+  "PE-100101": {
+   "name": "HUÁNUCO",
+   "2017": 89502
+  },
+  "PE-040309": {
+   "name": "HUANUHUANU",
+   "2017": 3047
+  },
+  "PE-150708": {
+   "name": "HUANZA",
+   "2017": 875
+  },
+  "PE-030303": {
+   "name": "HUAQUIRCA",
+   "2017": 1841
+  },
+  "PE-150601": {
+   "name": "HUARAL",
+   "2017": 99915
+  },
+  "PE-130605": {
+   "name": "HUARANCHAL",
+   "2017": 3940
+  },
+  "PE-060903": {
+   "name": "HUARANGO",
+   "2017": 18012
+  },
+  "PE-020101": {
+   "name": "HUARAZ",
+   "2017": 60896
+  },
+  "PE-021001": {
+   "name": "HUARI",
+   "2017": 9178
+  },
+  "PE-190103": {
+   "name": "HUARIACA",
+   "2017": 6925
+  },
+  "PE-090709": {
+   "name": "HUARIBAMBA",
+   "2017": 3003
+  },
+  "PE-120703": {
+   "name": "HUARICOLCA",
+   "2017": 1899
+  },
+  "PE-120409": {
+   "name": "HUARIPAMPA",
+   "2017": 1000
+  },
+  "PE-200304": {
+   "name": "HUARMACA",
+   "2017": 35548
+  },
+  "PE-021101": {
+   "name": "HUARMEY",
+   "2017": 25117
+  },
+  "PE-081207": {
+   "name": "HUARO",
+   "2017": 4505
+  },
+  "PE-150709": {
+   "name": "HUAROCHIRÍ",
+   "2017": 1302
+  },
+  "PE-080305": {
+   "name": "HUAROCONDO",
+   "2017": 4533
+  },
+  "PE-150404": {
+   "name": "HUAROS",
+   "2017": 760
+  },
+  "PE-120704": {
+   "name": "HUASAHUASI",
+   "2017": 9901
+  },
+  "PE-120120": {
+   "name": "HUASICANCHA",
+   "2017": 829
+  },
+  "PE-060304": {
+   "name": "HUASMIN",
+   "2017": 10657
+  },
+  "PE-130504": {
+   "name": "HUASO",
+   "2017": 5432
+  },
+  "PE-020509": {
+   "name": "HUASTA",
+   "2017": 1432
+  },
+  "PE-021203": {
+   "name": "HUATA",
+   "2017": 1344
+  },
+  "PE-210108": {
+   "name": "HUATA",
+   "2017": 3155
+  },
+  "PE-210603": {
+   "name": "HUATASANI",
+   "2017": 3083
+  },
+  "PE-150806": {
+   "name": "HUAURA",
+   "2017": 34764
+  },
+  "PE-120803": {
+   "name": "HUAY-HUAY",
+   "2017": 1947
+  },
+  "PE-051010": {
+   "name": "HUAYA",
+   "2017": 2092
+  },
+  "PE-090604": {
+   "name": "HUAYACUNDO ARMA",
+   "2017": 448
+  },
+  "PE-021104": {
+   "name": "HUAYÁN",
+   "2017": 861
+  },
+  "PE-030206": {
+   "name": "HUAYANA",
+   "2017": 750
+  },
+  "PE-021204": {
+   "name": "HUAYLAS",
+   "2017": 1614
+  },
+  "PE-130805": {
+   "name": "HUAYLILLAS",
+   "2017": 1158
+  },
+  "PE-021906": {
+   "name": "HUAYLLABAMBA",
+   "2017": 3518
+  },
+  "PE-081303": {
+   "name": "HUAYLLABAMBA",
+   "2017": 5499
+  },
+  "PE-020510": {
+   "name": "HUAYLLACAYÁN",
+   "2017": 1253
+  },
+  "PE-090107": {
+   "name": "HUAYLLAHUARA",
+   "2017": 637
+  },
+  "PE-021704": {
+   "name": "HUAYLLAPAMPA",
+   "2017": 620
+  },
+  "PE-030704": {
+   "name": "HUAYLLATI",
+   "2017": 1368
+  },
+  "PE-190104": {
+   "name": "HUAYLLAY",
+   "2017": 9577
+  },
+  "PE-090308": {
+   "name": "HUAYLLAY GRANDE",
+   "2017": 1111
+  },
+  "PE-030407": {
+   "name": "IHUAYLLO",
+   "2017": 462
+  },
+  "PE-021602": {
+   "name": "HUAYLLÁN",
+   "2017": 2954
+  },
+  "PE-040804": {
+   "name": "HUAYNACOTAS",
+   "2017": 1913
+  },
+  "PE-130806": {
+   "name": "HUAYO",
+   "2017": 3478
+  },
+  "PE-080903": {
+   "name": "HUAYOPATA",
+   "2017": 4773
+  },
+  "PE-210903": {
+   "name": "HUAYRAPATA",
+   "2017": 2613
+  },
+  "PE-090601": {
+   "name": "HUAYTARÁ",
+   "2017": 2146
+  },
+  "PE-120121": {
+   "name": "HUAYUCACHI",
+   "2017": 9800
+  },
+  "PE-151017": {
+   "name": "HUAÑEC",
+   "2017": 432
+  },
+  "PE-170204": {
+   "name": "HUEPETUHE",
+   "2017": 8574
+  },
+  "PE-120410": {
+   "name": "HUERTAS",
+   "2017": 2041
+  },
+  "PE-220603": {
+   "name": "HUICUNGO",
+   "2017": 8385
+  },
+  "PE-220907": {
+   "name": "HUIMBAYOC",
+   "2017": 4975
+  },
+  "PE-110503": {
+   "name": "HUMAY",
+   "2017": 5408
+  },
+  "PE-120904": {
+   "name": "HUÁCHAC",
+   "2017": 2948
+  },
+  "PE-230402": {
+   "name": "HÉROES ALBARRACÍN",
+   "2017": 306
+  },
+  "PE-170302": {
+   "name": "IBERIA",
+   "2017": 5791
+  },
+  "PE-110101": {
+   "name": "ICA",
+   "2017": 150280
+  },
+  "PE-061005": {
+   "name": "ICHOCÁN",
+   "2017": 1901
+  },
+  "PE-040509": {
+   "name": "ICHUPAMPA",
+   "2017": 555
+  },
+  "PE-180204": {
+   "name": "ICHUÑA",
+   "2017": 2901
+  },
+  "PE-200603": {
+   "name": "IGNACIO ESCUDERO",
+   "2017": 20423
+  },
+  "PE-050404": {
+   "name": "IGUAÍN",
+   "2017": 2667
+  },
+  "PE-150606": {
+   "name": "IHUARÍ",
+   "2017": 2037
+  },
+  "PE-230302": {
+   "name": "ILABAYA",
+   "2017": 5695
+  },
+  "PE-210501": {
+   "name": "ILAVE",
+   "2017": 46018
+  },
+  "PE-140303": {
+   "name": "ÍLLIMO",
+   "2017": 8856
+  },
+  "PE-180301": {
+   "name": "ILO",
+   "2017": 66479
+  },
+  "PE-010205": {
+   "name": "IMAZA",
+   "2017": 25162
+  },
+  "PE-150507": {
+   "name": "IMPERIAL",
+   "2017": 38925
+  },
+  "PE-160602": {
+   "name": "INAHUAYA",
+   "2017": 1738
+  },
+  "PE-170102": {
+   "name": "INAMBARI",
+   "2017": 11570
+  },
+  "PE-140203": {
+   "name": "INCAHUASI",
+   "2017": 13858
+  },
+  "PE-210604": {
+   "name": "INCHUPALLA",
+   "2017": 2642
+  },
+  "PE-230105": {
+   "name": "INCLÁN",
+   "2017": 2613
+  },
+  "PE-020105": {
+   "name": "INDEPENDENCIA",
+   "2017": 76088
+  },
+  "PE-051106": {
+   "name": "INDEPENDENCIA",
+   "2017": 1105
+  },
+  "PE-110504": {
+   "name": "INDEPENDENCIA",
+   "2017": 12987
+  },
+  "PE-150112": {
+   "name": "INDEPENDENCIA",
+   "2017": 211360
+  },
+  "PE-160104": {
+   "name": "INDIANA",
+   "2017": 10134
+  },
+  "PE-120122": {
+   "name": "INGENIO",
+   "2017": 2376
+  },
+  "PE-010506": {
+   "name": "INGUILPATA",
+   "2017": 498
+  },
+  "PE-080911": {
+   "name": "INKAWASI",
+   "2017": 4285
+  },
+  "PE-250103": {
+   "name": "IPARIA",
+   "2017": 10328
+  },
+  "PE-160101": {
+   "name": "IQUITOS",
+   "2017": 146853
+  },
+  "PE-040605": {
+   "name": "IRAY",
+   "2017": 595
+  },
+  "PE-250302": {
+   "name": "IRAZOLA",
+   "2017": 10214
+  },
+  "PE-040704": {
+   "name": "ISLAY",
+   "2017": 5132
+  },
+  "PE-230303": {
+   "name": "ITE",
+   "2017": 2822
+  },
+  "PE-210307": {
+   "name": "ITUATA",
+   "2017": 7526
+  },
+  "PE-090108": {
+   "name": "IZCUCHACA",
+   "2017": 846
+  },
+  "PE-170301": {
+   "name": "IÑAPARI",
+   "2017": 2391
+  },
+  "PE-101105": {
+   "name": "JACAS CHICO",
+   "2017": 1110
+  },
+  "PE-100504": {
+   "name": "JACAS GRANDE",
+   "2017": 5603
+  },
+  "PE-040107": {
+   "name": "JACOBO HUNTER",
+   "2017": 50164
+  },
+  "PE-010705": {
+   "name": "JAMALCA",
+   "2017": 6620
+  },
+  "PE-020106": {
+   "name": "JANGAS",
+   "2017": 4781
+  },
+  "PE-120411": {
+   "name": "JANJAILLO",
+   "2017": 558
+  },
+  "PE-040310": {
+   "name": "JAQUI",
+   "2017": 1532
+  },
+  "PE-120401": {
+   "name": "JAUJA",
+   "2017": 17908
+  },
+  "PE-140304": {
+   "name": "JAYANCA",
+   "2017": 17204
+  },
+  "PE-010307": {
+   "name": "JAZÁN",
+   "2017": 7580
+  },
+  "PE-060801": {
+   "name": "JAÉN",
+   "2017": 94153
+  },
+  "PE-160205": {
+   "name": "JEBEROS",
+   "2017": 3900
+  },
+  "PE-160510": {
+   "name": "JENARO HERRERA",
+   "2017": 4608
+  },
+  "PE-220104": {
+   "name": "JEPELACIO",
+   "2017": 15377
+  },
+  "PE-130703": {
+   "name": "JEQUETEPEQUE",
+   "2017": 4136
+  },
+  "PE-060106": {
+   "name": "JESÚS",
+   "2017": 15020
+  },
+  "PE-101001": {
+   "name": "JESÚS",
+   "2017": 4193
+  },
+  "PE-150113": {
+   "name": "JESÚS MARÍA",
+   "2017": 75359
+  },
+  "PE-050115": {
+   "name": "JESÚS NAZARENO",
+   "2017": 18492
+  },
+  "PE-200203": {
+   "name": "JILILÍ",
+   "2017": 2405
+  },
+  "PE-100505": {
+   "name": "JIRCÁN",
+   "2017": 1412
+  },
+  "PE-101003": {
+   "name": "JIVIA",
+   "2017": 1011
+  },
+  "PE-060305": {
+   "name": "JORGE CHÁVEZ",
+   "2017": 441
+  },
+  "PE-100604": {
+   "name": "JOSÉ CRESPO Y CASTILLO",
+   "2017": 22149
+  },
+  "PE-210207": {
+   "name": "JOSÉ DOMINGO CHOQUEHUANCA",
+   "2017": 4462
+  },
+  "PE-060306": {
+   "name": "JOSÉ GÁLVEZ",
+   "2017": 2558
+  },
+  "PE-140105": {
+   "name": "JOSÉ LEONARDO ORTÍZ",
+   "2017": 156498
+  },
+  "PE-040129": {
+   "name": "JOSÉ LUIS BUSTAMANTE Y RIVERO",
+   "2017": 81829
+  },
+  "PE-061006": {
+   "name": "JOSÉ MANUEL QUIROZ",
+   "2017": 3544
+  },
+  "PE-030220": {
+   "name": "JOSÉ MARÍA ARGUEDAS",
+   "2017": 4081
+  },
+  "PE-040202": {
+   "name": "JOSÉ MARÍA QUIMPER",
+   "2017": 4641
+  },
+  "PE-061007": {
+   "name": "JOSÉ SABOGAL",
+   "2017": 12023
+  },
+  "PE-030304": {
+   "name": "JUAN ESPINOZA MEDRANO",
+   "2017": 1711
+  },
+  "PE-220908": {
+   "name": "JUAN GUERRA",
+   "2017": 3907
+  },
+  "PE-220601": {
+   "name": "JUANJUÍ",
+   "2017": 32444
+  },
+  "PE-090309": {
+   "name": "JULCAMARCA",
+   "2017": 1736
+  },
+  "PE-120412": {
+   "name": "JULCÁN",
+   "2017": 745
+  },
+  "PE-130501": {
+   "name": "JULCÁN",
+   "2017": 11505
+  },
+  "PE-210401": {
+   "name": "JULI",
+   "2017": 19773
+  },
+  "PE-211101": {
+   "name": "JULIACA",
+   "2017": 228726
+  },
+  "PE-010301": {
+   "name": "JUMBILLA",
+   "2017": 1337
+  },
+  "PE-120501": {
+   "name": "JUNÍN",
+   "2017": 10976
+  },
+  "PE-030408": {
+   "name": "JUSTO APU SAHUARAURA",
+   "2017": 735
+  },
+  "PE-030219": {
+   "name": "KAQUIABAMBA",
+   "2017": 1816
+  },
+  "PE-210404": {
+   "name": "KELLUYO",
+   "2017": 7346
+  },
+  "PE-080907": {
+   "name": "KIMBIRI",
+   "2017": 15962
+  },
+  "PE-030207": {
+   "name": "KISHUARA",
+   "2017": 6023
+  },
+  "PE-081106": {
+   "name": "KOSÑIPATA",
+   "2017": 4403
+  },
+  "PE-080503": {
+   "name": "KUNTURKANKI",
+   "2017": 4747
+  },
+  "PE-200109": {
+   "name": "LA ARENA",
+   "2017": 38734
+  },
+  "PE-220909": {
+   "name": "LA BANDA DE SHILCAYO",
+   "2017": 43481
+  },
+  "PE-200703": {
+   "name": "LA BREA",
+   "2017": 12486
+  },
+  "PE-180205": {
+   "name": "LA CAPILLA",
+   "2017": 626
+  },
+  "PE-060904": {
+   "name": "LA COIPA",
+   "2017": 19562
+  },
+  "PE-240103": {
+   "name": "LA CRUZ",
+   "2017": 9507
+  },
+  "PE-130606": {
+   "name": "LA CUESTA",
+   "2017": 614
+  },
+  "PE-061305": {
+   "name": "LA ESPERANZA",
+   "2017": 2321
+  },
+  "PE-130105": {
+   "name": "LA ESPERANZA",
+   "2017": 189206
+  },
+  "PE-061106": {
+   "name": "LA FLORIDA",
+   "2017": 2165
+  },
+  "PE-200505": {
+   "name": "LA HUACA",
+   "2017": 12950
+  },
+  "PE-010109": {
+   "name": "LA JALCA",
+   "2017": 3978
+  },
+  "PE-040108": {
+   "name": "LA JOYA",
+   "2017": 32019
+  },
+  "PE-020107": {
+   "name": "LA LIBERTAD",
+   "2017": 1066
+  },
+  "PE-060312": {
+   "name": "LA LIBERTAD DE PALLÁN",
+   "2017": 6434
+  },
+  "PE-200404": {
+   "name": "LA MATANZA",
+   "2017": 13997
+  },
+  "PE-020204": {
+   "name": "LA MERCED",
+   "2017": 1582
+  },
+  "PE-090505": {
+   "name": "LA MERCED",
+   "2017": 1078
+  },
+  "PE-150114": {
+   "name": "LA MOLINA",
+   "2017": 140679
+  },
+  "PE-100704": {
+   "name": "LA MORADA",
+   "2017": 2790
+  },
+  "PE-120801": {
+   "name": "LA OROYA",
+   "2017": 14021
+  },
+  "PE-020905": {
+   "name": "LA PAMPA",
+   "2017": 1026
+  },
+  "PE-010206": {
+   "name": "LA PECA",
+   "2017": 6260
+  },
+  "PE-070104": {
+   "name": "LA PERLA",
+   "2017": 61417
+  },
+  "PE-020511": {
+   "name": "LA PRIMAVERA",
+   "2017": 457
+  },
+  "PE-070105": {
+   "name": "LA PUNTA",
+   "2017": 3829
+  },
+  "PE-060605": {
+   "name": "LA RAMADA",
+   "2017": 3652
+  },
+  "PE-110102": {
+   "name": "LA TINGUIÑA",
+   "2017": 39574
+  },
+  "PE-100301": {
+   "name": "LA UNIÓN",
+   "2017": 6634
+  },
+  "PE-120705": {
+   "name": "LA UNIÓN",
+   "2017": 3514
+  },
+  "PE-200110": {
+   "name": "LA UNIÓN",
+   "2017": 41742
+  },
+  "PE-140106": {
+   "name": "LA VICTORIA",
+   "2017": 90912
+  },
+  "PE-150115": {
+   "name": "LA VICTORIA",
+   "2017": 173630
+  },
+  "PE-230111": {
+   "name": "LA YARADA LOS PALOS",
+   "2017": 5559
+  },
+  "PE-170104": {
+   "name": "LABERINTO",
+   "2017": 5335
+  },
+  "PE-021506": {
+   "name": "LACABAMBA",
+   "2017": 505
+  },
+  "PE-150405": {
+   "name": "LACHAQUI",
+   "2017": 856
+  },
+  "PE-140107": {
+   "name": "LAGUNAS",
+   "2017": 9986
+  },
+  "PE-160206": {
+   "name": "LAGUNAS",
+   "2017": 12033
+  },
+  "PE-200204": {
+   "name": "LAGUNAS",
+   "2017": 5734
+  },
+  "PE-150710": {
+   "name": "LAHUAYTAMBO",
+   "2017": 616
+  },
+  "PE-060410": {
+   "name": "LAJAS",
+   "2017": 11093
+  },
+  "PE-200305": {
+   "name": "LALAQUIZ",
+   "2017": 3871
+  },
+  "PE-220501": {
+   "name": "LAMAS",
+   "2017": 14497
+  },
+  "PE-080403": {
+   "name": "LAMAY",
+   "2017": 5313
+  },
+  "PE-140301": {
+   "name": "LAMBAYEQUE",
+   "2017": 71425
+  },
+  "PE-030106": {
+   "name": "LAMBRAMA",
+   "2017": 3002
+  },
+  "PE-050804": {
+   "name": "LAMPA",
+   "2017": 1953
+  },
+  "PE-210701": {
+   "name": "LAMPA",
+   "2017": 11206
+  },
+  "PE-150607": {
+   "name": "LAMPIÁN",
+   "2017": 336
+  },
+  "PE-010501": {
+   "name": "LÁMUD",
+   "2017": 2227
+  },
+  "PE-200604": {
+   "name": "LANCONES",
+   "2017": 12119
+  },
+  "PE-150711": {
+   "name": "LANGA",
+   "2017": 889
+  },
+  "PE-080504": {
+   "name": "LANGUI",
+   "2017": 1984
+  },
+  "PE-090605": {
+   "name": "LARAMARCA",
+   "2017": 845
+  },
+  "PE-050608": {
+   "name": "LARAMATE",
+   "2017": 1577
+  },
+  "PE-151018": {
+   "name": "LARAOS",
+   "2017": 546
+  },
+  "PE-130106": {
+   "name": "LAREDO",
+   "2017": 37206
+  },
+  "PE-080404": {
+   "name": "LARES",
+   "2017": 5753
+  },
+  "PE-040510": {
+   "name": "LARI",
+   "2017": 904
+  },
+  "PE-090109": {
+   "name": "LARIA",
+   "2017": 746
+  },
+  "PE-160105": {
+   "name": "LAS AMAZONAS",
+   "2017": 8032
+  },
+  "PE-200111": {
+   "name": "LAS LOMAS",
+   "2017": 26947
+  },
+  "PE-170103": {
+   "name": "LAS PIEDRAS",
+   "2017": 12644
+  },
+  "PE-060806": {
+   "name": "LAS PIRIAS",
+   "2017": 4275
+  },
+  "PE-080505": {
+   "name": "LAYO",
+   "2017": 5171
+  },
+  "PE-010110": {
+   "name": "LEIMEBAMBA",
+   "2017": 3620
+  },
+  "PE-050609": {
+   "name": "LEONCIO PRADO",
+   "2017": 1094
+  },
+  "PE-150807": {
+   "name": "LEONCIO PRADO",
+   "2017": 1867
+  },
+  "PE-120413": {
+   "name": "LEONOR ORDÓÑEZ",
+   "2017": 1553
+  },
+  "PE-010111": {
+   "name": "LEVANTO",
+   "2017": 794
+  },
+  "PE-150101": {
+   "name": "LIMA",
+   "2017": 268352
+  },
+  "PE-010605": {
+   "name": "LIMABAMBA",
+   "2017": 2280
+  },
+  "PE-080306": {
+   "name": "LIMATAMBO",
+   "2017": 7255
+  },
+  "PE-211203": {
+   "name": "LIMBANI",
+   "2017": 2970
+  },
+  "PE-150116": {
+   "name": "LINCE",
+   "2017": 54711
+  },
+  "PE-151019": {
+   "name": "LINCHA",
+   "2017": 447
+  },
+  "PE-090301": {
+   "name": "LIRCAY",
+   "2017": 22991
+  },
+  "PE-080705": {
+   "name": "LIVITACA",
+   "2017": 10378
+  },
+  "PE-060107": {
+   "name": "LLACANORA",
+   "2017": 5639
+  },
+  "PE-021705": {
+   "name": "LLACLLÍN",
+   "2017": 912
+  },
+  "PE-210804": {
+   "name": "LLALLI",
+   "2017": 2532
+  },
+  "PE-021305": {
+   "name": "LLAMA",
+   "2017": 1020
+  },
+  "PE-060411": {
+   "name": "LLAMA",
+   "2017": 7075
+  },
+  "PE-020301": {
+   "name": "LLAMELLÍN",
+   "2017": 3288
+  },
+  "PE-061107": {
+   "name": "LLAPA",
+   "2017": 4481
+  },
+  "PE-021507": {
+   "name": "LLAPO",
+   "2017": 597
+  },
+  "PE-100501": {
+   "name": "LLATA",
+   "2017": 13403
+  },
+  "PE-050610": {
+   "name": "LLAUTA",
+   "2017": 893
+  },
+  "PE-120603": {
+   "name": "LLAYLLA",
+   "2017": 6544
+  },
+  "PE-021407": {
+   "name": "LLIPA",
+   "2017": 279
+  },
+  "PE-110402": {
+   "name": "LLIPATA",
+   "2017": 1555
+  },
+  "PE-050408": {
+   "name": "LLOCHEGUA",
+   "2017": 10058
+  },
+  "PE-120414": {
+   "name": "LLOCLLAPAMPA",
+   "2017": 1143
+  },
+  "PE-180206": {
+   "name": "LLOQUE",
+   "2017": 570
+  },
+  "PE-021306": {
+   "name": "LLUMPA",
+   "2017": 5629
+  },
+  "PE-080706": {
+   "name": "LLUSCO",
+   "2017": 4368
+  },
+  "PE-040511": {
+   "name": "LLUTA",
+   "2017": 718
+  },
+  "PE-200704": {
+   "name": "LOBITOS",
+   "2017": 1312
+  },
+  "PE-090506": {
+   "name": "LOCROJA",
+   "2017": 3372
+  },
+  "PE-230301": {
+   "name": "LOCUMBA",
+   "2017": 2256
+  },
+  "PE-040311": {
+   "name": "LOMAS",
+   "2017": 1477
+  },
+  "PE-010606": {
+   "name": "LONGAR",
+   "2017": 1631
+  },
+  "PE-130304": {
+   "name": "LONGOTEA",
+   "2017": 2098
+  },
+  "PE-010507": {
+   "name": "LONGUITA",
+   "2017": 839
+  },
+  "PE-010508": {
+   "name": "LONYA CHICO",
+   "2017": 842
+  },
+  "PE-010706": {
+   "name": "LONYA GRANDE",
+   "2017": 10080
+  },
+  "PE-110103": {
+   "name": "LOS AQUIJES",
+   "2017": 21963
+  },
+  "PE-060108": {
+   "name": "LOS BAÑOS DEL INCA",
+   "2017": 46149
+  },
+  "PE-030611": {
+   "name": "LOS CHANKAS",
+   "2017": 988
+  },
+  "PE-050203": {
+   "name": "LOS MOROCHUCOS",
+   "2017": 7463
+  },
+  "PE-150117": {
+   "name": "LOS OLIVOS",
+   "2017": 325884
+  },
+  "PE-200705": {
+   "name": "LOS ÓRGANOS",
+   "2017": 10699
+  },
+  "PE-050611": {
+   "name": "LUCANAS",
+   "2017": 2726
+  },
+  "PE-021307": {
+   "name": "LUCMA",
+   "2017": 2732
+  },
+  "PE-131102": {
+   "name": "LUCMA",
+   "2017": 4725
+  },
+  "PE-030409": {
+   "name": "LUCRE",
+   "2017": 1529
+  },
+  "PE-081208": {
+   "name": "LUCRE",
+   "2017": 4606
+  },
+  "PE-050506": {
+   "name": "LUIS CARRANZA",
+   "2017": 1278
+  },
+  "PE-150508": {
+   "name": "LUNAHUANÁ",
+   "2017": 4393
+  },
+  "PE-050405": {
+   "name": "LURICOCHA",
+   "2017": 5490
+  },
+  "PE-150118": {
+   "name": "LURIGANCHO",
+   "2017": 240814
+  },
+  "PE-150119": {
+   "name": "LURÍN",
+   "2017": 89195
+  },
+  "PE-010509": {
+   "name": "LUYA",
+   "2017": 3959
+  },
+  "PE-010510": {
+   "name": "LUYA VIEJO",
+   "2017": 388
+  },
+  "PE-100605": {
+   "name": "LUYANDO",
+   "2017": 8951
+  },
+  "PE-040512": {
+   "name": "MACA",
+   "2017": 701
+  },
+  "PE-210805": {
+   "name": "MACARI",
+   "2017": 6947
+  },
+  "PE-021804": {
+   "name": "MACATE",
+   "2017": 3125
+  },
+  "PE-040408": {
+   "name": "MACHAGUAY",
+   "2017": 488
+  },
+  "PE-130608": {
+   "name": "MACHE",
+   "2017": 2693
+  },
+  "PE-081304": {
+   "name": "MACHUPICCHU",
+   "2017": 5347
+  },
+  "PE-210301": {
+   "name": "MACUSANI",
+   "2017": 12664
+  },
+  "PE-151020": {
+   "name": "MADEAN",
+   "2017": 570
+  },
+  "PE-170203": {
+   "name": "MADRE DE DIOS",
+   "2017": 6217
+  },
+  "PE-040513": {
+   "name": "MADRIGAL",
+   "2017": 648
+  },
+  "PE-010112": {
+   "name": "MAGDALENA",
+   "2017": 852
+  },
+  "PE-060109": {
+   "name": "MAGDALENA",
+   "2017": 8271
+  },
+  "PE-130204": {
+   "name": "MAGDALENA DE CAO",
+   "2017": 2463
+  },
+  "PE-150120": {
+   "name": "MAGDALENA DEL MAR",
+   "2017": 60290
+  },
+  "PE-040520": {
+   "name": "MAJES",
+   "2017": 60108
+  },
+  "PE-150509": {
+   "name": "MALA",
+   "2017": 32717
+  },
+  "PE-021105": {
+   "name": "MALVAS",
+   "2017": 745
+  },
+  "PE-030705": {
+   "name": "MAMARA",
+   "2017": 858
+  },
+  "PE-250107": {
+   "name": "MANANTAY",
+   "2017": 87525
+  },
+  "PE-150305": {
+   "name": "MANÁS",
+   "2017": 963
+  },
+  "PE-022003": {
+   "name": "MANCOS",
+   "2017": 6336
+  },
+  "PE-020512": {
+   "name": "MANGAS",
+   "2017": 492
+  },
+  "PE-160703": {
+   "name": "MANSERICHE",
+   "2017": 8421
+  },
+  "PE-090110": {
+   "name": "MANTA",
+   "2017": 953
+  },
+  "PE-170201": {
+   "name": "MANU",
+   "2017": 2356
+  },
+  "PE-140204": {
+   "name": "MANUEL ANTONIO MESONES MURO",
+   "2017": 3808
+  },
+  "PE-120208": {
+   "name": "MANZANARES",
+   "2017": 1478
+  },
+  "PE-160505": {
+   "name": "MAQUÍA",
+   "2017": 7304
+  },
+  "PE-030505": {
+   "name": "MARA",
+   "2017": 5848
+  },
+  "PE-080604": {
+   "name": "MARANGANI",
+   "2017": 9600
+  },
+  "PE-080904": {
+   "name": "MARANURA",
+   "2017": 4134
+  },
+  "PE-081305": {
+   "name": "MARAS",
+   "2017": 5946
+  },
+  "PE-021706": {
+   "name": "MARCA",
+   "2017": 1608
+  },
+  "PE-130905": {
+   "name": "MARCABAL",
+   "2017": 10431
+  },
+  "PE-050805": {
+   "name": "MARCABAMBA",
+   "2017": 613
+  },
+  "PE-081209": {
+   "name": "MARCAPATA",
+   "2017": 4307
+  },
+  "PE-120804": {
+   "name": "MARCAPOMACOCHA",
+   "2017": 835
+  },
+  "PE-020606": {
+   "name": "MARCARÁ",
+   "2017": 9478
+  },
+  "PE-090205": {
+   "name": "MARCAS",
+   "2017": 1529
+  },
+  "PE-200605": {
+   "name": "MARCAVELICA",
+   "2017": 29569
+  },
+  "PE-120415": {
+   "name": "MARCO",
+   "2017": 1451
+  },
+  "PE-110304": {
+   "name": "MARCONA",
+   "2017": 15981
+  },
+  "PE-100105": {
+   "name": "MARGOS",
+   "2017": 4364
+  },
+  "PE-010607": {
+   "name": "MARISCAL BENAVIDES",
+   "2017": 1506
+  },
+  "PE-010113": {
+   "name": "MARISCAL CASTILLA",
+   "2017": 1367
+  },
+  "PE-120209": {
+   "name": "MARISCAL CASTILLA",
+   "2017": 1394
+  },
+  "PE-040204": {
+   "name": "MARISCAL CÁCERES",
+   "2017": 6195
+  },
+  "PE-090111": {
+   "name": "MARISCAL CÁCERES",
+   "2017": 509
+  },
+  "PE-131103": {
+   "name": "MARMOT",
+   "2017": 2407
+  },
+  "PE-010511": {
+   "name": "MARÍA",
+   "2017": 744
+  },
+  "PE-050204": {
+   "name": "MARÍA PARADO DE BELLIDO",
+   "2017": 2067
+  },
+  "PE-100606": {
+   "name": "MARIANO DAMASO BERAUN",
+   "2017": 10048
+  },
+  "PE-040109": {
+   "name": "MARIANO MELGAR",
+   "2017": 59918
+  },
+  "PE-040203": {
+   "name": "MARIANO NICOLÁS VALCÁRCEL",
+   "2017": 6997
+  },
+  "PE-100311": {
+   "name": "MARÍAS",
+   "2017": 5571
+  },
+  "PE-150713": {
+   "name": "MARÍATANA",
+   "2017": 1357
+  },
+  "PE-021009": {
+   "name": "MASIN",
+   "2017": 1361
+  },
+  "PE-250104": {
+   "name": "MASISEA",
+   "2017": 11147
+  },
+  "PE-120416": {
+   "name": "MASMA",
+   "2017": 1732
+  },
+  "PE-120417": {
+   "name": "MASMA CHICCHE",
+   "2017": 732
+  },
+  "PE-022004": {
+   "name": "MATACOTO",
+   "2017": 1343
+  },
+  "PE-120210": {
+   "name": "MATAHUASI",
+   "2017": 5537
+  },
+  "PE-180207": {
+   "name": "MATALAQUE",
+   "2017": 455
+  },
+  "PE-240303": {
+   "name": "MATAPALO",
+   "2017": 3428
+  },
+  "PE-060110": {
+   "name": "MATARA",
+   "2017": 3469
+  },
+  "PE-021205": {
+   "name": "MATO",
+   "2017": 1849
+  },
+  "PE-150701": {
+   "name": "MATUCANA",
+   "2017": 4058
+  },
+  "PE-120604": {
+   "name": "MAZAMARI",
+   "2017": 35719
+  },
+  "PE-160106": {
+   "name": "MAZÁN",
+   "2017": 12181
+  },
+  "PE-210109": {
+   "name": "MAÑAZO",
+   "2017": 5144
+  },
+  "PE-080914": {
+   "name": "MEGANTONI",
+   "2017": 6969
+  },
+  "PE-040705": {
+   "name": "MEJÍA",
+   "2017": 1172
+  },
+  "PE-070107": {
+   "name": "MI PERÚ",
+   "2017": 45297
+  },
+  "PE-030706": {
+   "name": "MICAELA BASTIDAS",
+   "2017": 935
+  },
+  "PE-200606": {
+   "name": "MIGUEL CHECA",
+   "2017": 9036
+  },
+  "PE-060307": {
+   "name": "MIGUEL IGLESIAS",
+   "2017": 3870
+  },
+  "PE-010608": {
+   "name": "MILPUC",
+   "2017": 453
+  },
+  "PE-060412": {
+   "name": "MIRACOSTA",
+   "2017": 3203
+  },
+  "PE-040110": {
+   "name": "MIRAFLORES",
+   "2017": 60589
+  },
+  "PE-100506": {
+   "name": "MIRAFLORES",
+   "2017": 3127
+  },
+  "PE-150122": {
+   "name": "MIRAFLORES",
+   "2017": 99337
+  },
+  "PE-151021": {
+   "name": "MIRAFLORES",
+   "2017": 229
+  },
+  "PE-020305": {
+   "name": "MIRGAS",
+   "2017": 4067
+  },
+  "PE-120211": {
+   "name": "MITO",
+   "2017": 1382
+  },
+  "PE-130107": {
+   "name": "MOCHE",
+   "2017": 37436
+  },
+  "PE-140305": {
+   "name": "MOCHUMÍ",
+   "2017": 18401
+  },
+  "PE-210901": {
+   "name": "MOHO",
+   "2017": 11518
+  },
+  "PE-100803": {
+   "name": "MOLINO",
+   "2017": 10552
+  },
+  "PE-010114": {
+   "name": "MOLINOPAMPA",
+   "2017": 2176
+  },
+  "PE-120418": {
+   "name": "MOLINOS",
+   "2017": 1573
+  },
+  "PE-131004": {
+   "name": "MOLLEBAMBA",
+   "2017": 1734
+  },
+  "PE-040111": {
+   "name": "MOLLEBAYA",
+   "2017": 4756
+  },
+  "PE-040701": {
+   "name": "MOLLENDO",
+   "2017": 24073
+  },
+  "PE-090409": {
+   "name": "MOLLEPAMPA",
+   "2017": 1142
+  },
+  "PE-080307": {
+   "name": "MOLLEPATA",
+   "2017": 3111
+  },
+  "PE-131005": {
+   "name": "MOLLEPATA",
+   "2017": 2339
+  },
+  "PE-120419": {
+   "name": "MONOBAMBA",
+   "2017": 1662
+  },
+  "PE-140108": {
+   "name": "MONSEFÚ",
+   "2017": 32225
+  },
+  "PE-200205": {
+   "name": "MONTERO",
+   "2017": 6179
+  },
+  "PE-010115": {
+   "name": "MONTEVIDEO",
+   "2017": 496
+  },
+  "PE-100507": {
+   "name": "MONZÓN",
+   "2017": 12368
+  },
+  "PE-180101": {
+   "name": "MOQUEGUA",
+   "2017": 65808
+  },
+  "PE-220910": {
+   "name": "MORALES",
+   "2017": 33067
+  },
+  "PE-050906": {
+   "name": "MORCOLLA",
+   "2017": 1240
+  },
+  "PE-021805": {
+   "name": "MORO",
+   "2017": 8034
+  },
+  "PE-120805": {
+   "name": "MOROCOCHA",
+   "2017": 5155
+  },
+  "PE-160704": {
+   "name": "MORONA",
+   "2017": 4191
+  },
+  "PE-140306": {
+   "name": "MÓRROPE",
+   "2017": 48209
+  },
+  "PE-200405": {
+   "name": "MORROPÓN",
+   "2017": 15239
+  },
+  "PE-080204": {
+   "name": "MOSOC LLACTA",
+   "2017": 1096
+  },
+  "PE-140307": {
+   "name": "MOTUPE",
+   "2017": 29836
+  },
+  "PE-090112": {
+   "name": "MOYA",
+   "2017": 982
+  },
+  "PE-220101": {
+   "name": "MOYOBAMBA",
+   "2017": 76325
+  },
+  "PE-120420": {
+   "name": "MUQUI",
+   "2017": 1017
+  },
+  "PE-120421": {
+   "name": "MUQUIYAUYO",
+   "2017": 2335
+  },
+  "PE-021308": {
+   "name": "MUSGA",
+   "2017": 977
+  },
+  "PE-210208": {
+   "name": "MUÑANI",
+   "2017": 6445
+  },
+  "PE-200706": {
+   "name": "MÁNCORA",
+   "2017": 13028
+  },
+  "PE-060905": {
+   "name": "NAMBALLE",
+   "2017": 9098
+  },
+  "PE-060111": {
+   "name": "NAMORA",
+   "2017": 9267
+  },
+  "PE-061108": {
+   "name": "NANCHOC",
+   "2017": 1290
+  },
+  "PE-160107": {
+   "name": "NAPO",
+   "2017": 15003
+  },
+  "PE-110301": {
+   "name": "NASCA",
+   "2017": 27632
+  },
+  "PE-160301": {
+   "name": "NAUTA",
+   "2017": 29963
+  },
+  "PE-150905": {
+   "name": "NAVÁN",
+   "2017": 855
+  },
+  "PE-021806": {
+   "name": "NEPEÑA",
+   "2017": 14324
+  },
+  "PE-250304": {
+   "name": "NESHUYA",
+   "2017": 7594
+  },
+  "PE-210704": {
+   "name": "NICASIO",
+   "2017": 2360
+  },
+  "PE-040205": {
+   "name": "NICOLÁS DE PIÉROLA",
+   "2017": 7106
+  },
+  "PE-061109": {
+   "name": "NIEPOS",
+   "2017": 3293
+  },
+  "PE-010401": {
+   "name": "NIEVA",
+   "2017": 18626
+  },
+  "PE-061306": {
+   "name": "NINABAMBA",
+   "2017": 2097
+  },
+  "PE-190105": {
+   "name": "NINACACA",
+   "2017": 3877
+  },
+  "PE-140109": {
+   "name": "NUEVA ARICA",
+   "2017": 2458
+  },
+  "PE-220804": {
+   "name": "NUEVA CAJAMARCA",
+   "2017": 43476
+  },
+  "PE-250106": {
+   "name": "NUEVA REQUENA",
+   "2017": 5169
+  },
+  "PE-120212": {
+   "name": "NUEVE DE JULIO",
+   "2017": 2287
+  },
+  "PE-021809": {
+   "name": "NUEVO CHIMBOTE",
+   "2017": 159321
+  },
+  "PE-150510": {
+   "name": "NUEVO IMPERIAL",
+   "2017": 26233
+  },
+  "PE-090113": {
+   "name": "NUEVO OCCORO",
+   "2017": 1686
+  },
+  "PE-221002": {
+   "name": "NUEVO PROGRESO",
+   "2017": 11456
+  },
+  "PE-210806": {
+   "name": "NUÑOA",
+   "2017": 8450
+  },
+  "PE-101106": {
+   "name": "OBAS",
+   "2017": 3845
+  },
+  "PE-010512": {
+   "name": "OCALLÍ",
+   "2017": 3556
+  },
+  "PE-050612": {
+   "name": "OCAÑA",
+   "2017": 2291
+  },
+  "PE-030605": {
+   "name": "OCOBAMBA",
+   "2017": 6759
+  },
+  "PE-080905": {
+   "name": "OCOBAMBA",
+   "2017": 4327
+  },
+  "PE-081210": {
+   "name": "OCONGATE",
+   "2017": 15223
+  },
+  "PE-080804": {
+   "name": "OCORURO",
+   "2017": 1019
+  },
+  "PE-090606": {
+   "name": "OCOYO",
+   "2017": 812
+  },
+  "PE-040206": {
+   "name": "OCOÑA",
+   "2017": 4171
+  },
+  "PE-021401": {
+   "name": "OCROS",
+   "2017": 1203
+  },
+  "PE-050106": {
+   "name": "OCROS",
+   "2017": 5373
+  },
+  "PE-110104": {
+   "name": "OCUCAJE",
+   "2017": 4392
+  },
+  "PE-010513": {
+   "name": "OCUMAL",
+   "2017": 3446
+  },
+  "PE-210705": {
+   "name": "OCUVIRI",
+   "2017": 2237
+  },
+  "PE-210308": {
+   "name": "OLLACHEA",
+   "2017": 6090
+  },
+  "PE-081306": {
+   "name": "OLLANTAYTAMBO",
+   "2017": 10165
+  },
+  "PE-211305": {
+   "name": "OLLARAYA",
+   "2017": 2711
+  },
+  "PE-010116": {
+   "name": "OLLEROS",
+   "2017": 375
+  },
+  "PE-020108": {
+   "name": "OLLEROS",
+   "2017": 2351
+  },
+  "PE-140308": {
+   "name": "OLMOS",
+   "2017": 46484
+  },
+  "PE-081006": {
+   "name": "OMACHA",
+   "2017": 5443
+  },
+  "PE-151022": {
+   "name": "OMAS",
+   "2017": 593
+  },
+  "PE-180201": {
+   "name": "OMATE",
+   "2017": 3158
+  },
+  "PE-010609": {
+   "name": "OMIA",
+   "2017": 8793
+  },
+  "PE-120503": {
+   "name": "ONDORES",
+   "2017": 1236
+  },
+  "PE-030606": {
+   "name": "ONGOY",
+   "2017": 2344
+  },
+  "PE-130807": {
+   "name": "ONGÓN",
+   "2017": 1250
+  },
+  "PE-040409": {
+   "name": "ORCOPAMPA",
+   "2017": 8177
+  },
+  "PE-120213": {
+   "name": "ORCOTUNA",
+   "2017": 4738
+  },
+  "PE-050511": {
+   "name": "ORONCCOY",
+   "2017": 1020
+  },
+  "PE-030305": {
+   "name": "OROPESA",
+   "2017": 2268
+  },
+  "PE-081211": {
+   "name": "OROPESA",
+   "2017": 9444
+  },
+  "PE-210807": {
+   "name": "ORURILLO",
+   "2017": 7651
+  },
+  "PE-050613": {
+   "name": "OTOCA",
+   "2017": 1866
+  },
+  "PE-130601": {
+   "name": "OTUZCO",
+   "2017": 24169
+  },
+  "PE-060308": {
+   "name": "OXAMARCA",
+   "2017": 5394
+  },
+  "PE-190301": {
+   "name": "OXAPAMPA",
+   "2017": 15677
+  },
+  "PE-050806": {
+   "name": "OYOLO",
+   "2017": 1453
+  },
+  "PE-140110": {
+   "name": "OYOTÚN",
+   "2017": 8201
+  },
+  "PE-150901": {
+   "name": "OYÓN",
+   "2017": 12150
+  },
+  "PE-120422": {
+   "name": "PACA",
+   "2017": 892
+  },
+  "PE-200206": {
+   "name": "PACAIPAMPA",
+   "2017": 21257
+  },
+  "PE-130402": {
+   "name": "PACANGA",
+   "2017": 21056
+  },
+  "PE-050704": {
+   "name": "PACAPAUSA",
+   "2017": 630
+  },
+  "PE-150608": {
+   "name": "PACARAOS",
+   "2017": 1028
+  },
+  "PE-150511": {
+   "name": "PACARÁN",
+   "2017": 1686
+  },
+  "PE-130704": {
+   "name": "PACASMAYO",
+   "2017": 28959
+  },
+  "PE-050107": {
+   "name": "PACAYCASA",
+   "2017": 3114
+  },
+  "PE-081007": {
+   "name": "PACCARITAMBO",
+   "2017": 2032
+  },
+  "PE-060413": {
+   "name": "PACCHA",
+   "2017": 4445
+  },
+  "PE-120423": {
+   "name": "PACCHA",
+   "2017": 1450
+  },
+  "PE-120806": {
+   "name": "PACCHA",
+   "2017": 1633
+  },
+  "PE-150808": {
+   "name": "PACCHO",
+   "2017": 1516
+  },
+  "PE-030306": {
+   "name": "PACHACONAS",
+   "2017": 1054
+  },
+  "PE-150123": {
+   "name": "PACHACÁMAC",
+   "2017": 110071
+  },
+  "PE-110105": {
+   "name": "PACHACÚTEC",
+   "2017": 7411
+  },
+  "PE-090510": {
+   "name": "PACHAMARCA",
+   "2017": 1856
+  },
+  "PE-150906": {
+   "name": "PACHANGARA",
+   "2017": 2526
+  },
+  "PE-100313": {
+   "name": "PACHAS",
+   "2017": 5393
+  },
+  "PE-230106": {
+   "name": "PACHÍA",
+   "2017": 2062
+  },
+  "PE-220604": {
+   "name": "PACHIZA",
+   "2017": 5747
+  },
+  "PE-020513": {
+   "name": "PACLLÓN",
+   "2017": 917
+  },
+  "PE-030208": {
+   "name": "PACOBAMBA",
+   "2017": 3452
+  },
+  "PE-180303": {
+   "name": "PACOCHA",
+   "2017": 4453
+  },
+  "PE-140309": {
+   "name": "PACORA",
+   "2017": 8060
+  },
+  "PE-030209": {
+   "name": "PACUCHA",
+   "2017": 7989
+  },
+  "PE-250301": {
+   "name": "PADRE ABAD",
+   "2017": 29440
+  },
+  "PE-160603": {
+   "name": "PADRE MÁRQUEZ",
+   "2017": 3697
+  },
+  "PE-050907": {
+   "name": "PAICO",
+   "2017": 553
+  },
+  "PE-130205": {
+   "name": "PAIJÁN",
+   "2017": 25913
+  },
+  "PE-200207": {
+   "name": "PAIMÁS",
+   "2017": 9621
+  },
+  "PE-200501": {
+   "name": "PAITA",
+   "2017": 87979
+  },
+  "PE-220605": {
+   "name": "PAJARILLO",
+   "2017": 5345
+  },
+  "PE-090114": {
+   "name": "PALCA",
+   "2017": 2005
+  },
+  "PE-120706": {
+   "name": "PALCA",
+   "2017": 5543
+  },
+  "PE-210706": {
+   "name": "PALCA",
+   "2017": 1817
+  },
+  "PE-230107": {
+   "name": "PALCA",
+   "2017": 1980
+  },
+  "PE-120707": {
+   "name": "PALCAMAYO",
+   "2017": 3438
+  },
+  "PE-190304": {
+   "name": "PALCAZÚ",
+   "2017": 7130
+  },
+  "PE-190106": {
+   "name": "PALLANCHACRA",
+   "2017": 1738
+  },
+  "PE-021508": {
+   "name": "PALLASCA",
+   "2017": 2364
+  },
+  "PE-080805": {
+   "name": "PALLPATA",
+   "2017": 4823
+  },
+  "PE-110401": {
+   "name": "PALPA",
+   "2017": 7748
+  },
+  "PE-120605": {
+   "name": "PAMPA HERMOSA",
+   "2017": 3690
+  },
+  "PE-160604": {
+   "name": "PAMPA HERMOSA",
+   "2017": 5388
+  },
+  "PE-030210": {
+   "name": "PAMPACHIRI",
+   "2017": 2199
+  },
+  "PE-040410": {
+   "name": "PAMPACOLCA",
+   "2017": 2032
+  },
+  "PE-040805": {
+   "name": "PAMPAMARCA",
+   "2017": 1122
+  },
+  "PE-080506": {
+   "name": "PAMPAMARCA",
+   "2017": 1838
+  },
+  "PE-101107": {
+   "name": "PAMPAMARCA",
+   "2017": 1128
+  },
+  "PE-021206": {
+   "name": "PAMPAROMAS",
+   "2017": 7804
+  },
+  "PE-020109": {
+   "name": "PAMPAS GRANDE",
+   "2017": 956
+  },
+  "PE-021509": {
+   "name": "PAMPAS",
+   "2017": 3980
+  },
+  "PE-090701": {
+   "name": "PAMPAS",
+   "2017": 10061
+  },
+  "PE-021707": {
+   "name": "PAMPAS CHICO",
+   "2017": 923
+  },
+  "PE-240104": {
+   "name": "PAMPAS DE HOSPITAL",
+   "2017": 6728
+  },
+  "PE-100801": {
+   "name": "PANAO",
+   "2017": 17449
+  },
+  "PE-120424": {
+   "name": "PANCÁN",
+   "2017": 1226
+  },
+  "PE-120606": {
+   "name": "PANGOA",
+   "2017": 54240
+  },
+  "PE-220911": {
+   "name": "PAPAPLAYA",
+   "2017": 2073
+  },
+  "PE-240304": {
+   "name": "PAPAYAL",
+   "2017": 6274
+  },
+  "PE-110505": {
+   "name": "PARACAS",
+   "2017": 7147
+  },
+  "PE-150202": {
+   "name": "PARAMONGA",
+   "2017": 21453
+  },
+  "PE-130610": {
+   "name": "PARANDAY",
+   "2017": 523
+  },
+  "PE-050807": {
+   "name": "PARARCA",
+   "2017": 419
+  },
+  "PE-021708": {
+   "name": "PARARÍN",
+   "2017": 1517
+  },
+  "PE-050205": {
+   "name": "PARAS",
+   "2017": 4104
+  },
+  "PE-210707": {
+   "name": "PARATÍA",
+   "2017": 2732
+  },
+  "PE-120425": {
+   "name": "PARCO",
+   "2017": 1153
+  },
+  "PE-110106": {
+   "name": "PARCONA",
+   "2017": 54047
+  },
+  "PE-130808": {
+   "name": "PARCOY",
+   "2017": 18730
+  },
+  "PE-220805": {
+   "name": "PARDO MIGUEL",
+   "2017": 16797
+  },
+  "PE-020110": {
+   "name": "PARIACOTO",
+   "2017": 4606
+  },
+  "PE-020607": {
+   "name": "PARIAHUANCA",
+   "2017": 1381
+  },
+  "PE-120124": {
+   "name": "PARIAHUANCA",
+   "2017": 5130
+  },
+  "PE-160302": {
+   "name": "PARINARI",
+   "2017": 6085
+  },
+  "PE-200701": {
+   "name": "PARIÑAS",
+   "2017": 98309
+  },
+  "PE-021603": {
+   "name": "PAROBAMBA",
+   "2017": 5806
+  },
+  "PE-081001": {
+   "name": "PARURO",
+   "2017": 3205
+  },
+  "PE-160705": {
+   "name": "PASTAZA",
+   "2017": 5078
+  },
+  "PE-211204": {
+   "name": "PATAMBUCO",
+   "2017": 3863
+  },
+  "PE-140117": {
+   "name": "PÁTAPO",
+   "2017": 22624
+  },
+  "PE-030707": {
+   "name": "PATAYPAMPA",
+   "2017": 798
+  },
+  "PE-130809": {
+   "name": "PATAZ",
+   "2017": 8937
+  },
+  "PE-150203": {
+   "name": "PATIVILCA",
+   "2017": 17431
+  },
+  "PE-190204": {
+   "name": "PÁUCAR",
+   "2017": 1776
+  },
+  "PE-090206": {
+   "name": "PAUCARA",
+   "2017": 10415
+  },
+  "PE-090507": {
+   "name": "PAUCARBAMBA",
+   "2017": 4346
+  },
+  "PE-210110": {
+   "name": "PAUCARCOLLA",
+   "2017": 4224
+  },
+  "PE-040112": {
+   "name": "PAUCARPATA",
+   "2017": 131346
+  },
+  "PE-081101": {
+   "name": "PAUCARTAMBO",
+   "2017": 11871
+  },
+  "PE-190107": {
+   "name": "PAUCARTAMBO",
+   "2017": 11216
+  },
+  "PE-021010": {
+   "name": "PAUCAS",
+   "2017": 1561
+  },
+  "PE-050801": {
+   "name": "PAUSA",
+   "2017": 3231
+  },
+  "PE-090711": {
+   "name": "PAZOS",
+   "2017": 5159
+  },
+  "PE-160402": {
+   "name": "PEBAS",
+   "2017": 11079
+  },
+  "PE-061001": {
+   "name": "PEDRO GÁLVEZ",
+   "2017": 19870
+  },
+  "PE-211003": {
+   "name": "PEDRO VILCA APAZA",
+   "2017": 1909
+  },
+  "PE-120302": {
+   "name": "PERENÉ",
+   "2017": 52874
+  },
+  "PE-211205": {
+   "name": "PHARA",
+   "2017": 5091
+  },
+  "PE-130810": {
+   "name": "PÍAS",
+   "2017": 1656
+  },
+  "PE-210111": {
+   "name": "PICHACANI",
+   "2017": 5679
+  },
+  "PE-120303": {
+   "name": "PICHANAQUI",
+   "2017": 39054
+  },
+  "PE-080910": {
+   "name": "PICHARI",
+   "2017": 22691
+  },
+  "PE-080806": {
+   "name": "PICHIGUA",
+   "2017": 2805
+  },
+  "PE-030107": {
+   "name": "PICHIRHUA",
+   "2017": 2774
+  },
+  "PE-090722": {
+   "name": "PICHOS",
+   "2017": 1914
+  },
+  "PE-220701": {
+   "name": "PICOTA",
+   "2017": 10203
+  },
+  "PE-140111": {
+   "name": "PICSI",
+   "2017": 12704
+  },
+  "PE-090115": {
+   "name": "PILCHACA",
+   "2017": 500
+  },
+  "PE-120125": {
+   "name": "PILCOMAYO",
+   "2017": 20055
+  },
+  "PE-210503": {
+   "name": "PILCUYO",
+   "2017": 10672
+  },
+  "PE-100111": {
+   "name": "PILLCO MARCA",
+   "2017": 43818
+  },
+  "PE-081008": {
+   "name": "PILLPINTO",
+   "2017": 1026
+  },
+  "PE-220704": {
+   "name": "PILLUANA",
+   "2017": 865
+  },
+  "PE-090607": {
+   "name": "PILPICHACA",
+   "2017": 2758
+  },
+  "PE-140112": {
+   "name": "PIMENTEL",
+   "2017": 44602
+  },
+  "PE-060606": {
+   "name": "PIMPINGOS",
+   "2017": 5100
+  },
+  "PE-100404": {
+   "name": "PINRA",
+   "2017": 6389
+  },
+  "PE-220506": {
+   "name": "PINTO RECODO",
+   "2017": 8086
+  },
+  "PE-060414": {
+   "name": "PIÓN",
+   "2017": 1214
+  },
+  "PE-020111": {
+   "name": "PIRA",
+   "2017": 3321
+  },
+  "PE-080405": {
+   "name": "PÍSAC",
+   "2017": 9884
+  },
+  "PE-210405": {
+   "name": "PISACOMA",
+   "2017": 8223
+  },
+  "PE-110501": {
+   "name": "PISCO",
+   "2017": 67467
+  },
+  "PE-021301": {
+   "name": "PISCOBAMBA",
+   "2017": 3024
+  },
+  "PE-220404": {
+   "name": "PISCOYACU",
+   "2017": 4268
+  },
+  "PE-010514": {
+   "name": "PISUQUÍA",
+   "2017": 4768
+  },
+  "PE-140205": {
+   "name": "PÍTIPO",
+   "2017": 19651
+  },
+  "PE-080605": {
+   "name": "PITUMARCA",
+   "2017": 7170
+  },
+  "PE-200101": {
+   "name": "PIURA",
+   "2017": 158495
+  },
+  "PE-210112": {
+   "name": "PLATERÍA",
+   "2017": 7121
+  },
+  "PE-030410": {
+   "name": "POCOHUANCA",
+   "2017": 1022
+  },
+  "PE-230108": {
+   "name": "POCOLLAY",
+   "2017": 18627
+  },
+  "PE-040113": {
+   "name": "POCSI",
+   "2017": 445
+  },
+  "PE-040114": {
+   "name": "POLOBAYA",
+   "2017": 837
+  },
+  "PE-021601": {
+   "name": "POMABAMBA",
+   "2017": 13834
+  },
+  "PE-120426": {
+   "name": "POMACANCHA",
+   "2017": 1427
+  },
+  "PE-080205": {
+   "name": "POMACANCHI",
+   "2017": 7206
+  },
+  "PE-030211": {
+   "name": "POMACOCHA",
+   "2017": 863
+  },
+  "PE-090207": {
+   "name": "POMACOCHA",
+   "2017": 2829
+  },
+  "PE-060807": {
+   "name": "POMAHUACA",
+   "2017": 8344
+  },
+  "PE-140118": {
+   "name": "POMALCA",
+   "2017": 25267
+  },
+  "PE-210406": {
+   "name": "POMATA",
+   "2017": 13707
+  },
+  "PE-021011": {
+   "name": "PONTÓ",
+   "2017": 2642
+  },
+  "PE-130108": {
+   "name": "POROTO",
+   "2017": 3586
+  },
+  "PE-080103": {
+   "name": "POROY",
+   "2017": 2436
+  },
+  "PE-220806": {
+   "name": "POSIC",
+   "2017": 1919
+  },
+  "PE-210209": {
+   "name": "POTONI",
+   "2017": 3939
+  },
+  "PE-190305": {
+   "name": "POZUZO",
+   "2017": 4511
+  },
+  "PE-030708": {
+   "name": "PROGRESO",
+   "2017": 2945
+  },
+  "PE-010515": {
+   "name": "PROVIDENCIA",
+   "2017": 1316
+  },
+  "PE-220705": {
+   "name": "PUCACACA",
+   "2017": 2971
+  },
+  "PE-050411": {
+   "name": "PUCACOLPA",
+   "2017": 2523
+  },
+  "PE-140119": {
+   "name": "PUCALÁ",
+   "2017": 8701
+  },
+  "PE-120126": {
+   "name": "PUCARÁ",
+   "2017": 4748
+  },
+  "PE-060808": {
+   "name": "PUCARÁ",
+   "2017": 6834
+  },
+  "PE-210708": {
+   "name": "PUCARÁ",
+   "2017": 5306
+  },
+  "PE-100607": {
+   "name": "PUCAYACU",
+   "2017": 3724
+  },
+  "PE-150124": {
+   "name": "PUCUSANA",
+   "2017": 14891
+  },
+  "PE-080308": {
+   "name": "PUCYURA",
+   "2017": 2990
+  },
+  "PE-021207": {
+   "name": "PUEBLO LIBRE",
+   "2017": 6371
+  },
+  "PE-150121": {
+   "name": "PUEBLO LIBRE",
+   "2017": 83323
+  },
+  "PE-100609": {
+   "name": "PUEBLO NUEVO",
+   "2017": 4143
+  },
+  "PE-110107": {
+   "name": "PUEBLO NUEVO",
+   "2017": 6395
+  },
+  "PE-110207": {
+   "name": "PUEBLO NUEVO",
+   "2017": 62604
+  },
+  "PE-130403": {
+   "name": "PUEBLO NUEVO",
+   "2017": 11629
+  },
+  "PE-140206": {
+   "name": "PUEBLO NUEVO",
+   "2017": 14503
+  },
+  "PE-150125": {
+   "name": "PUENTE PIEDRA",
+   "2017": 329675
+  },
+  "PE-190306": {
+   "name": "PUERTO BERMÚDEZ",
+   "2017": 17249
+  },
+  "PE-100901": {
+   "name": "PUERTO INCA",
+   "2017": 9407
+  },
+  "PE-160506": {
+   "name": "PUINAHUA",
+   "2017": 4372
+  },
+  "PE-050705": {
+   "name": "PULLO",
+   "2017": 6271
+  },
+  "PE-061307": {
+   "name": "PULÁN",
+   "2017": 3896
+  },
+  "PE-160108": {
+   "name": "PUNCHANA",
+   "2017": 75210
+  },
+  "PE-100508": {
+   "name": "PUNCHAO",
+   "2017": 2009
+  },
+  "PE-210101": {
+   "name": "PUNO",
+   "2017": 135288
+  },
+  "PE-150126": {
+   "name": "PUNTA HERMOSA",
+   "2017": 15874
+  },
+  "PE-150127": {
+   "name": "PUNTA NEGRA",
+   "2017": 7074
+  },
+  "PE-040706": {
+   "name": "PUNTA DE BOMBÓN",
+   "2017": 6456
+  },
+  "PE-180208": {
+   "name": "PUQUINA",
+   "2017": 2376
+  },
+  "PE-050601": {
+   "name": "PUQUIO",
+   "2017": 13919
+  },
+  "PE-250401": {
+   "name": "PURÚS",
+   "2017": 2860
+  },
+  "PE-210605": {
+   "name": "PUSI",
+   "2017": 4937
+  },
+  "PE-211001": {
+   "name": "PUTINA",
+   "2017": 14753
+  },
+  "PE-151023": {
+   "name": "PUTINZA",
+   "2017": 498
+  },
+  "PE-160801": {
+   "name": "PUTUMAYO",
+   "2017": 3666
+  },
+  "PE-040806": {
+   "name": "PUYCA",
+   "2017": 2342
+  },
+  "PE-050706": {
+   "name": "PUYUSCA",
+   "2017": 2062
+  },
+  "PE-100509": {
+   "name": "PUÑOS",
+   "2017": 4062
+  },
+  "PE-221003": {
+   "name": "POLVORA",
+   "2017": 10308
+  },
+  "PE-040807": {
+   "name": "QUECHUALLA",
+   "2017": 265
+  },
+  "PE-080507": {
+   "name": "QUEHUE",
+   "2017": 2577
+  },
+  "PE-080906": {
+   "name": "QUELLOÚNO",
+   "2017": 13311
+  },
+  "PE-040115": {
+   "name": "QUEQUEÑA",
+   "2017": 4784
+  },
+  "PE-090608": {
+   "name": "QUERCO",
+   "2017": 1032
+  },
+  "PE-200607": {
+   "name": "QUERECOTILLO",
+   "2017": 26395
+  },
+  "PE-050901": {
+   "name": "QUEROBAMBA",
+   "2017": 2570
+  },
+  "PE-060607": {
+   "name": "QUEROCOTILLO",
+   "2017": 12987
+  },
+  "PE-060415": {
+   "name": "QUEROCOTO",
+   "2017": 8023
+  },
+  "PE-101004": {
+   "name": "QUEROPALCA",
+   "2017": 1009
+  },
+  "PE-211206": {
+   "name": "QUIACA",
+   "2017": 2131
+  },
+  "PE-040312": {
+   "name": "QUICACHA",
+   "2017": 1837
+  },
+  "PE-021907": {
+   "name": "QUICHES",
+   "2017": 2306
+  },
+  "PE-090719": {
+   "name": "QUICHUAS",
+   "2017": 3945
+  },
+  "PE-120127": {
+   "name": "QUICHUAY",
+   "2017": 1852
+  },
+  "PE-230206": {
+   "name": "QUILAHUANI",
+   "2017": 720
+  },
+  "PE-040207": {
+   "name": "QUILCA",
+   "2017": 943
+  },
+  "PE-211004": {
+   "name": "QUILCAPUNCU",
+   "2017": 5187
+  },
+  "PE-120128": {
+   "name": "QUILCAS",
+   "2017": 3904
+  },
+  "PE-022005": {
+   "name": "QUILLO",
+   "2017": 11629
+  },
+  "PE-150512": {
+   "name": "QUILMANÁ",
+   "2017": 16091
+  },
+  "PE-151024": {
+   "name": "QUINCHES",
+   "2017": 609
+  },
+  "PE-180209": {
+   "name": "QUINISTAQUILLAS",
+   "2017": 518
+  },
+  "PE-010117": {
+   "name": "QUINJALCA",
+   "2017": 769
+  },
+  "PE-151025": {
+   "name": "QUINOCAY",
+   "2017": 428
+  },
+  "PE-050108": {
+   "name": "QUINUA",
+   "2017": 5083
+  },
+  "PE-021604": {
+   "name": "QUINUABAMBA",
+   "2017": 2200
+  },
+  "PE-081212": {
+   "name": "QUIQUIJANA",
+   "2017": 10336
+  },
+  "PE-131006": {
+   "name": "QUIRUVILCA",
+   "2017": 12291
+  },
+  "PE-090713": {
+   "name": "QUISHUAR",
+   "2017": 731
+  },
+  "PE-100106": {
+   "name": "QUISQUI (KICHKI)",
+   "2017": 3453
+  },
+  "PE-090609": {
+   "name": "QUITO-ARMA",
+   "2017": 686
+  },
+  "PE-100316": {
+   "name": "QUIVILLA",
+   "2017": 1228
+  },
+  "PE-080707": {
+   "name": "QUIÑOTA",
+   "2017": 3786
+  },
+  "PE-021908": {
+   "name": "RAGASH",
+   "2017": 2278
+  },
+  "PE-021012": {
+   "name": "RAHUAPAMPA",
+   "2017": 705
+  },
+  "PE-160401": {
+   "name": "RAMÓN CASTILLA",
+   "2017": 19178
+  },
+  "PE-030608": {
+   "name": "RANRACANCHA",
+   "2017": 4046
+  },
+  "PE-022006": {
+   "name": "RANRAHIRCA",
+   "2017": 2657
+  },
+  "PE-021013": {
+   "name": "RAPAYÁN",
+   "2017": 1406
+  },
+  "PE-250201": {
+   "name": "RAYMONDI",
+   "2017": 32430
+  },
+  "PE-010308": {
+   "name": "RECTA",
+   "2017": 208
+  },
+  "PE-021701": {
+   "name": "RECUAY",
+   "2017": 4406
+  },
+  "PE-140113": {
+   "name": "REQUE",
+   "2017": 15744
+  },
+  "PE-160501": {
+   "name": "REQUENA",
+   "2017": 25313
+  },
+  "PE-150714": {
+   "name": "RICARDO PALMA",
+   "2017": 6542
+  },
+  "PE-120427": {
+   "name": "RICRÁN",
+   "2017": 1296
+  },
+  "PE-200806": {
+   "name": "RINCONADA LLICUAR",
+   "2017": 3004
+  },
+  "PE-220801": {
+   "name": "RIOJA",
+   "2017": 25521
+  },
+  "PE-100317": {
+   "name": "RIPÁN",
+   "2017": 5320
+  },
+  "PE-090721": {
+   "name": "ROBLE",
+   "2017": 1300
+  },
+  "PE-030609": {
+   "name": "ROCCHACC",
+   "2017": 2689
+  },
+  "PE-080206": {
+   "name": "RONDOCAN",
+   "2017": 1938
+  },
+  "PE-101005": {
+   "name": "RONDOS",
+   "2017": 3595
+  },
+  "PE-160802": {
+   "name": "ROSA PANDURO",
+   "2017": 520
+  },
+  "PE-090208": {
+   "name": "ROSARIO",
+   "2017": 4850
+  },
+  "PE-210606": {
+   "name": "ROSASPATA",
+   "2017": 4079
+  },
+  "PE-220507": {
+   "name": "RUMISAPA",
+   "2017": 3456
+  },
+  "PE-100601": {
+   "name": "RUPA-RUPA",
+   "2017": 53066
+  },
+  "PE-130206": {
+   "name": "RÁZURI",
+   "2017": 8664
+  },
+  "PE-150128": {
+   "name": "RÍMAC",
+   "2017": 174785
+  },
+  "PE-040606": {
+   "name": "RÍO GRANDE",
+   "2017": 3263
+  },
+  "PE-110403": {
+   "name": "RÍO GRANDE",
+   "2017": 2658
+  },
+  "PE-120607": {
+   "name": "RÍO NEGRO",
+   "2017": 30651
+  },
+  "PE-010403": {
+   "name": "RÍO SANTIAGO",
+   "2017": 13953
+  },
+  "PE-120608": {
+   "name": "RÍO TAMBO",
+   "2017": 26036
+  },
+  "PE-030307": {
+   "name": "SABAINO",
+   "2017": 1108
+  },
+  "PE-040116": {
+   "name": "SABANDÍA",
+   "2017": 4368
+  },
+  "PE-220405": {
+   "name": "SACANCHE",
+   "2017": 2450
+  },
+  "PE-040117": {
+   "name": "SACHACA",
+   "2017": 24225
+  },
+  "PE-050303": {
+   "name": "SACSAMARCA",
+   "2017": 1313
+  },
+  "PE-050614": {
+   "name": "SAISA",
+   "2017": 791
+  },
+  "PE-040607": {
+   "name": "SALAMANCA",
+   "2017": 478
+  },
+  "PE-110108": {
+   "name": "SALAS",
+   "2017": 25767
+  },
+  "PE-140310": {
+   "name": "SALAS",
+   "2017": 12595
+  },
+  "PE-130109": {
+   "name": "SALAVERRY",
+   "2017": 18944
+  },
+  "PE-090714": {
+   "name": "SALCABAMBA",
+   "2017": 3828
+  },
+  "PE-090715": {
+   "name": "SALCAHUASI",
+   "2017": 2616
+  },
+  "PE-200406": {
+   "name": "SALITRAL",
+   "2017": 8527
+  },
+  "PE-200608": {
+   "name": "SALITRAL",
+   "2017": 7047
+  },
+  "PE-060809": {
+   "name": "SALLIQUE",
+   "2017": 7033
+  },
+  "PE-130611": {
+   "name": "SALPO",
+   "2017": 5831
+  },
+  "PE-230109": {
+   "name": "SAMA",
+   "2017": 3227
+  },
+  "PE-210210": {
+   "name": "SAMÁN",
+   "2017": 9645
+  },
+  "PE-021807": {
+   "name": "SAMANCO",
+   "2017": 4770
+  },
+  "PE-180104": {
+   "name": "SAMEGUA",
+   "2017": 8480
+  },
+  "PE-040208": {
+   "name": "SAMUEL PASTOR",
+   "2017": 15950
+  },
+  "PE-050509": {
+   "name": "SAMUGARI",
+   "2017": 9410
+  },
+  "PE-120129": {
+   "name": "SAN AGUSTÍN",
+   "2017": 15281
+  },
+  "PE-110506": {
+   "name": "SAN ANDRÉS",
+   "2017": 13767
+  },
+  "PE-060608": {
+   "name": "SAN ANDRÉS DE CUTERVO",
+   "2017": 4172
+  },
+  "PE-150715": {
+   "name": "SAN ANDRÉS DE TUPICOCHA",
+   "2017": 1320
+  },
+  "PE-030709": {
+   "name": "SAN ANTONIO",
+   "2017": 272
+  },
+  "PE-150513": {
+   "name": "SAN ANTONIO",
+   "2017": 4343
+  },
+  "PE-150716": {
+   "name": "SAN ANTONIO",
+   "2017": 912
+  },
+  "PE-210113": {
+   "name": "SAN ANTONIO",
+   "2017": 2413
+  },
+  "PE-220912": {
+   "name": "SAN ANTONIO",
+   "2017": 1674
+  },
+  "PE-090310": {
+   "name": "SAN ANTONIO DE ANTAPARCO",
+   "2017": 2323
+  },
+  "PE-030212": {
+   "name": "SAN ANTONIO DE CACHI",
+   "2017": 2910
+  },
+  "PE-040514": {
+   "name": "SAN ANTONIO DE CHUCA",
+   "2017": 886
+  },
+  "PE-090610": {
+   "name": "SAN ANTONIO DE CUSICANCHA",
+   "2017": 1358
+  },
+  "PE-210211": {
+   "name": "SAN ANTÓN",
+   "2017": 7298
+  },
+  "PE-150129": {
+   "name": "SAN BARTOLO",
+   "2017": 7482
+  },
+  "PE-150717": {
+   "name": "SAN BARTOLOMÉ",
+   "2017": 1139
+  },
+  "PE-060505": {
+   "name": "SAN BENITO",
+   "2017": 3399
+  },
+  "PE-061202": {
+   "name": "SAN BERNARDINO",
+   "2017": 4294
+  },
+  "PE-150130": {
+   "name": "SAN BORJA",
+   "2017": 113247
+  },
+  "PE-100703": {
+   "name": "SAN BUENAVENTURA",
+   "2017": 2111
+  },
+  "PE-150406": {
+   "name": "SAN BUENAVENTURA",
+   "2017": 555
+  },
+  "PE-010309": {
+   "name": "SAN CARLOS",
+   "2017": 489
+  },
+  "PE-110507": {
+   "name": "SAN CLEMENTE",
+   "2017": 24814
+  },
+  "PE-010516": {
+   "name": "SAN CRISTÓBAL",
+   "2017": 546
+  },
+  "PE-050615": {
+   "name": "SAN CRISTÓBAL",
+   "2017": 1718
+  },
+  "PE-180105": {
+   "name": "SAN CRISTÓBAL",
+   "2017": 1736
+  },
+  "PE-220706": {
+   "name": "SAN CRISTÓBAL",
+   "2017": 1192
+  },
+  "PE-021408": {
+   "name": "SAN CRISTÓBAL DE RAJÁN",
+   "2017": 438
+  },
+  "PE-150718": {
+   "name": "SAN DAMIÁN",
+   "2017": 1202
+  },
+  "PE-190108": {
+   "name": "SAN FRANCISCO DE ASÍS DE YARUSYACÁN",
+   "2017": 4459
+  },
+  "PE-060810": {
+   "name": "SAN FELIPE",
+   "2017": 4693
+  },
+  "PE-220807": {
+   "name": "SAN FERNANDO",
+   "2017": 3413
+  },
+  "PE-100206": {
+   "name": "SAN FRANCISCO",
+   "2017": 1561
+  },
+  "PE-101006": {
+   "name": "SAN FRANCISCO DE ASÍS",
+   "2017": 1296
+  },
+  "PE-100107": {
+   "name": "SAN FRANCISCO DE CAYRÁN",
+   "2017": 4788
+  },
+  "PE-010118": {
+   "name": "SAN FRANCISCO DE DAGUAS",
+   "2017": 295
+  },
+  "PE-050707": {
+   "name": "SAN FRANCISCO DE RAVACAYCO",
+   "2017": 516
+  },
+  "PE-090611": {
+   "name": "SAN FRANCISCO DE SANGAYAICO",
+   "2017": 920
+  },
+  "PE-010517": {
+   "name": "SAN FRANCISCO DEL YESO",
+   "2017": 695
+  },
+  "PE-210309": {
+   "name": "SAN GABÁN",
+   "2017": 6832
+  },
+  "PE-061110": {
+   "name": "SAN GREGORIO",
+   "2017": 2229
+  },
+  "PE-220707": {
+   "name": "SAN HILARIÓN",
+   "2017": 3945
+  },
+  "PE-060901": {
+   "name": "SAN IGNACIO",
+   "2017": 34659
+  },
+  "PE-090612": {
+   "name": "SAN ISIDRO",
+   "2017": 1054
+  },
+  "PE-150131": {
+   "name": "SAN ISIDRO",
+   "2017": 60735
+  },
+  "PE-010119": {
+   "name": "SAN ISIDRO DE MAINO",
+   "2017": 580
+  },
+  "PE-240105": {
+   "name": "SAN JACINTO",
+   "2017": 8512
+  },
+  "PE-050808": {
+   "name": "SAN JAVIER DE ALPABAMBA",
+   "2017": 292
+  },
+  "PE-010518": {
+   "name": "SAN JERÓNIMO",
+   "2017": 633
+  },
+  "PE-120130": {
+   "name": "SAN JERÓNIMO DE TUNÁN",
+   "2017": 11601
+  },
+  "PE-030213": {
+   "name": "SAN JERÓNIMO",
+   "2017": 20738
+  },
+  "PE-080104": {
+   "name": "SAN JERÓNIMO",
+   "2017": 57075
+  },
+  "PE-151026": {
+   "name": "SAN JOAQUÍN",
+   "2017": 166
+  },
+  "PE-130705": {
+   "name": "SAN JOSÉ",
+   "2017": 11948
+  },
+  "PE-140311": {
+   "name": "SAN JOSÉ",
+   "2017": 15846
+  },
+  "PE-210212": {
+   "name": "SAN JOSÉ",
+   "2017": 4818
+  },
+  "PE-060906": {
+   "name": "SAN JOSÉ DE LOURDES",
+   "2017": 17046
+  },
+  "PE-120214": {
+   "name": "SAN JOSÉ DE QUERO",
+   "2017": 5398
+  },
+  "PE-220301": {
+   "name": "SAN JOSÉ DE SISA",
+   "2017": 14639
+  },
+  "PE-050109": {
+   "name": "SAN JOSÉ DE TICLLAS",
+   "2017": 1403
+  },
+  "PE-050809": {
+   "name": "SAN JOSÉ DE USHUA",
+   "2017": 221
+  },
+  "PE-110109": {
+   "name": "SAN JOSÉ DE LOS MOLINOS",
+   "2017": 6987
+  },
+  "PE-060811": {
+   "name": "SAN JOSÉ DEL ALTO",
+   "2017": 6960
+  },
+  "PE-021909": {
+   "name": "SAN JUAN",
+   "2017": 6187
+  },
+  "PE-050616": {
+   "name": "SAN JUAN",
+   "2017": 967
+  },
+  "PE-060112": {
+   "name": "SAN JUAN",
+   "2017": 4343
+  },
+  "PE-090410": {
+   "name": "SAN JUAN",
+   "2017": 673
+  },
+  "PE-050110": {
+   "name": "SAN JUAN BAUTISTA",
+   "2017": 49034
+  },
+  "PE-110110": {
+   "name": "SAN JUAN BAUTISTA",
+   "2017": 13846
+  },
+  "PE-160113": {
+   "name": "SAN JUAN BAUTISTA",
+   "2017": 127005
+  },
+  "PE-200407": {
+   "name": "SAN JUAN DE BIGOTE",
+   "2017": 6433
+  },
+  "PE-030411": {
+   "name": "SAN JUAN DE CHACÑA",
+   "2017": 769
+  },
+  "PE-060609": {
+   "name": "SAN JUAN DE CUTERVO",
+   "2017": 1858
+  },
+  "PE-150719": {
+   "name": "SAN JUAN DE IRIS",
+   "2017": 699
+  },
+  "PE-120906": {
+   "name": "SAN JUAN DE ISCOS",
+   "2017": 2228
+  },
+  "PE-120907": {
+   "name": "SAN JUAN DE JARPA",
+   "2017": 2658
+  },
+  "PE-060416": {
+   "name": "SAN JUAN DE LICUPIS",
+   "2017": 958
+  },
+  "PE-010519": {
+   "name": "SAN JUAN DE LOPECANCHA",
+   "2017": 419
+  },
+  "PE-150132": {
+   "name": "SAN JUAN DE LURIGANCHO",
+   "2017": 1038495
+  },
+  "PE-150133": {
+   "name": "SAN JUAN DE MIRAFLORES",
+   "2017": 355219
+  },
+  "PE-020306": {
+   "name": "SAN JUAN DE RONTOY",
+   "2017": 1158
+  },
+  "PE-210213": {
+   "name": "SAN JUAN DE SALINAS",
+   "2017": 2841
+  },
+  "PE-040118": {
+   "name": "SAN JUAN DE SIGUAS",
+   "2017": 611
+  },
+  "PE-150720": {
+   "name": "SAN JUAN DE TANTARANCHE",
+   "2017": 374
+  },
+  "PE-040119": {
+   "name": "SAN JUAN DE TARUCANI",
+   "2017": 1377
+  },
+  "PE-110208": {
+   "name": "SAN JUAN DE YANAC",
+   "2017": 1129
+  },
+  "PE-240106": {
+   "name": "SAN JUAN DE LA VIRGEN",
+   "2017": 4572
+  },
+  "PE-211207": {
+   "name": "SAN JUAN DEL ORO",
+   "2017": 3733
+  },
+  "PE-120428": {
+   "name": "SAN LORENZO",
+   "2017": 2538
+  },
+  "PE-150721": {
+   "name": "SAN LORENZO DE QUINTI",
+   "2017": 1223
+  },
+  "PE-020701": {
+   "name": "SAN LUIS",
+   "2017": 10493
+  },
+  "PE-061203": {
+   "name": "SAN LUIS",
+   "2017": 958
+  },
+  "PE-150134": {
+   "name": "SAN LUIS",
+   "2017": 52082
+  },
+  "PE-150514": {
+   "name": "SAN LUIS",
+   "2017": 13436
+  },
+  "PE-060610": {
+   "name": "SAN LUIS DE LUCMA",
+   "2017": 3000
+  },
+  "PE-120304": {
+   "name": "SAN LUIS DE SHUARO",
+   "2017": 4157
+  },
+  "PE-021014": {
+   "name": "SAN MARCOS",
+   "2017": 17033
+  },
+  "PE-090716": {
+   "name": "SAN MARCOS DE ROCCHAC",
+   "2017": 1813
+  },
+  "PE-220303": {
+   "name": "SAN MARTÍN",
+   "2017": 10447
+  },
+  "PE-150135": {
+   "name": "SAN MARTÍN DE PORRES",
+   "2017": 654083
+  },
+  "PE-150722": {
+   "name": "SAN MATEO",
+   "2017": 4245
+  },
+  "PE-150723": {
+   "name": "SAN MATEO DE OTAO",
+   "2017": 1335
+  },
+  "PE-050501": {
+   "name": "SAN MIGUEL",
+   "2017": 10326
+  },
+  "PE-061101": {
+   "name": "SAN MIGUEL",
+   "2017": 13432
+  },
+  "PE-150136": {
+   "name": "SAN MIGUEL",
+   "2017": 155384
+  },
+  "PE-211105": {
+   "name": "SAN MIGUEL",
+   "2017": 62463
+  },
+  "PE-020608": {
+   "name": "SAN MIGUEL DE ACO",
+   "2017": 2350
+  },
+  "PE-150609": {
+   "name": "SAN MIGUEL DE ACOS",
+   "2017": 648
+  },
+  "PE-101007": {
+   "name": "SAN MIGUEL DE CAURI",
+   "2017": 5853
+  },
+  "PE-030214": {
+   "name": "SAN MIGUEL DE CHACCRAMPA",
+   "2017": 1613
+  },
+  "PE-020514": {
+   "name": "SAN MIGUEL DE CORPANQUI",
+   "2017": 495
+  },
+  "PE-090508": {
+   "name": "SAN MIGUEL DE MAYOCC",
+   "2017": 745
+  },
+  "PE-200306": {
+   "name": "SAN MIGUEL DE EL FAIQUE",
+   "2017": 8678
+  },
+  "PE-010601": {
+   "name": "SAN NICOLÁS",
+   "2017": 6016
+  },
+  "PE-020702": {
+   "name": "SAN NICOLÁS",
+   "2017": 3131
+  },
+  "PE-061201": {
+   "name": "SAN PABLO",
+   "2017": 12463
+  },
+  "PE-080606": {
+   "name": "SAN PABLO",
+   "2017": 4224
+  },
+  "PE-160404": {
+   "name": "SAN PABLO",
+   "2017": 10449
+  },
+  "PE-220205": {
+   "name": "SAN PABLO",
+   "2017": 8640
+  },
+  "PE-100113": {
+   "name": "SAN PABLO DE PILLAO",
+   "2017": 8350
+  },
+  "PE-021409": {
+   "name": "SAN PEDRO",
+   "2017": 622
+  },
+  "PE-050617": {
+   "name": "SAN PEDRO",
+   "2017": 2653
+  },
+  "PE-080607": {
+   "name": "SAN PEDRO",
+   "2017": 2617
+  },
+  "PE-030108": {
+   "name": "SAN PEDRO DE CACHORA",
+   "2017": 2541
+  },
+  "PE-120708": {
+   "name": "SAN PEDRO DE CAJAS",
+   "2017": 3547
+  },
+  "PE-150724": {
+   "name": "SAN PEDRO DE CASTA",
+   "2017": 928
+  },
+  "PE-021015": {
+   "name": "SAN PEDRO DE CHANA",
+   "2017": 2534
+  },
+  "PE-100108": {
+   "name": "SAN PEDRO DE CHAULÁN",
+   "2017": 2789
+  },
+  "PE-120429": {
+   "name": "SAN PEDRO DE CHUNÁN",
+   "2017": 702
+  },
+  "PE-090509": {
+   "name": "SAN PEDRO DE CORIS",
+   "2017": 3445
+  },
+  "PE-110209": {
+   "name": "SAN PEDRO DE HUACARPANA",
+   "2017": 992
+  },
+  "PE-150725": {
+   "name": "SAN PEDRO DE HUANCAYRE",
+   "2017": 210
+  },
+  "PE-050908": {
+   "name": "SAN PEDRO DE LARCAY",
+   "2017": 808
+  },
+  "PE-130701": {
+   "name": "SAN PEDRO DE LLOC",
+   "2017": 17637
+  },
+  "PE-050618": {
+   "name": "SAN PEDRO DE PALCO",
+   "2017": 927
+  },
+  "PE-151027": {
+   "name": "SAN PEDRO DE PILAS",
+   "2017": 275
+  },
+  "PE-190205": {
+   "name": "SAN PEDRO DE PILLAO",
+   "2017": 1348
+  },
+  "PE-211210": {
+   "name": "SAN PEDRO DE PUTINA PUNCO",
+   "2017": 9124
+  },
+  "PE-100207": {
+   "name": "SAN RAFAEL",
+   "2017": 8928
+  },
+  "PE-220206": {
+   "name": "SAN RAFAEL",
+   "2017": 6033
+  },
+  "PE-120305": {
+   "name": "SAN RAMÓN",
+   "2017": 25800
+  },
+  "PE-220508": {
+   "name": "SAN ROQUE DE CUMBAZA",
+   "2017": 1635
+  },
+  "PE-080406": {
+   "name": "SAN SALVADOR",
+   "2017": 5232
+  },
+  "PE-050909": {
+   "name": "SAN SALVADOR DE QUIJE",
+   "2017": 978
+  },
+  "PE-080105": {
+   "name": "SAN SEBASTIÁN",
+   "2017": 112536
+  },
+  "PE-061111": {
+   "name": "SAN SILVESTRE DE COCHÁN",
+   "2017": 3652
+  },
+  "PE-150501": {
+   "name": "SAN VICENTE DE CAÑETE",
+   "2017": 54775
+  },
+  "PE-130906": {
+   "name": "SANAGORÁN",
+   "2017": 12922
+  },
+  "PE-050301": {
+   "name": "SANCOS",
+   "2017": 3202
+  },
+  "PE-050619": {
+   "name": "SANCOS",
+   "2017": 4778
+  },
+  "PE-211201": {
+   "name": "SANDIA",
+   "2017": 10266
+  },
+  "PE-150726": {
+   "name": "SANGALLAYA",
+   "2017": 630
+  },
+  "PE-080207": {
+   "name": "SANGARARÁ",
+   "2017": 3276
+  },
+  "PE-021808": {
+   "name": "SANTA",
+   "2017": 19621
+  },
+  "PE-080901": {
+   "name": "SANTA ANA",
+   "2017": 27999
+  },
+  "PE-090411": {
+   "name": "SANTA ANA",
+   "2017": 863
+  },
+  "PE-050620": {
+   "name": "SANTA ANA DE HUAYCAHUACHO",
+   "2017": 796
+  },
+  "PE-190206": {
+   "name": "SANTA ANA DE TUSI",
+   "2017": 21217
+  },
+  "PE-150137": {
+   "name": "SANTA ANITA",
+   "2017": 196214
+  },
+  "PE-120807": {
+   "name": "SANTA BÁRBARA DE CARHUACAYÁN",
+   "2017": 1104
+  },
+  "PE-010520": {
+   "name": "SANTA CATALINA",
+   "2017": 1888
+  },
+  "PE-200408": {
+   "name": "SANTA CATALINA DE MOSSA",
+   "2017": 3650
+  },
+  "PE-021208": {
+   "name": "SANTA CRUZ",
+   "2017": 4229
+  },
+  "PE-060611": {
+   "name": "SANTA CRUZ",
+   "2017": 2622
+  },
+  "PE-061301": {
+   "name": "SANTA CRUZ",
+   "2017": 9226
+  },
+  "PE-110404": {
+   "name": "SANTA CRUZ",
+   "2017": 927
+  },
+  "PE-160210": {
+   "name": "SANTA CRUZ",
+   "2017": 3967
+  },
+  "PE-150610": {
+   "name": "SANTA CRUZ DE ANDAMARCA",
+   "2017": 830
+  },
+  "PE-131007": {
+   "name": "SANTA CRUZ DE CHUCA",
+   "2017": 2852
+  },
+  "PE-150727": {
+   "name": "SANTA CRUZ DE COCACHACRA",
+   "2017": 2486
+  },
+  "PE-150515": {
+   "name": "SANTA CRUZ DE FLORES",
+   "2017": 3103
+  },
+  "PE-060506": {
+   "name": "SANTA CRUZ DE TOLED",
+   "2017": 994
+  },
+  "PE-150728": {
+   "name": "SANTA EULALIA",
+   "2017": 12636
+  },
+  "PE-040120": {
+   "name": "SANTA ISABEL DE SIGUAS",
+   "2017": 682
+  },
+  "PE-150809": {
+   "name": "SANTA LEONOR",
+   "2017": 775
+  },
+  "PE-210709": {
+   "name": "SANTA LUCÍA",
+   "2017": 7028
+  },
+  "PE-050621": {
+   "name": "SANTA LUCÍA",
+   "2017": 1282
+  },
+  "PE-150810": {
+   "name": "SANTA MARÍA",
+   "2017": 36267
+  },
+  "PE-030215": {
+   "name": "SANTA MARÍA DE CHICMO",
+   "2017": 8152
+  },
+  "PE-150138": {
+   "name": "SANTA MARÍA DEL MAR",
+   "2017": 999
+  },
+  "PE-100109": {
+   "name": "SANTA MARÍA DEL VALLE",
+   "2017": 19226
+  },
+  "PE-040121": {
+   "name": "SANTA RITA DE SIGUAS",
+   "2017": 6318
+  },
+  "PE-010610": {
+   "name": "SANTA ROSA",
+   "2017": 512
+  },
+  "PE-021510": {
+   "name": "SANTA ROSA",
+   "2017": 1026
+  },
+  "PE-030710": {
+   "name": "SANTA ROSA",
+   "2017": 560
+  },
+  "PE-050507": {
+   "name": "SANTA ROSA",
+   "2017": 11279
+  },
+  "PE-060812": {
+   "name": "SANTA ROSA",
+   "2017": 10003
+  },
+  "PE-140114": {
+   "name": "SANTA ROSA",
+   "2017": 12350
+  },
+  "PE-150139": {
+   "name": "SANTA ROSA",
+   "2017": 27863
+  },
+  "PE-210504": {
+   "name": "SANTA ROSA",
+   "2017": 3529
+  },
+  "PE-210808": {
+   "name": "SANTA ROSA",
+   "2017": 6197
+  },
+  "PE-220304": {
+   "name": "SANTA ROSA",
+   "2017": 6332
+  },
+  "PE-100705": {
+   "name": "SANTA ROSA DE ALTO YANAJANCA",
+   "2017": 2199
+  },
+  "PE-120215": {
+   "name": "SANTA ROSA DE OCOPA",
+   "2017": 1983
+  },
+  "PE-150407": {
+   "name": "SANTA ROSA DE QUIVES",
+   "2017": 5710
+  },
+  "PE-120808": {
+   "name": "SANTA ROSA DE SACCO",
+   "2017": 8977
+  },
+  "PE-080908": {
+   "name": "SANTA TERESA",
+   "2017": 5972
+  },
+  "PE-080106": {
+   "name": "SANTIAGO",
+   "2017": 94756
+  },
+  "PE-110111": {
+   "name": "SANTIAGO",
+   "2017": 27645
+  },
+  "PE-150729": {
+   "name": "SANTIAGO DE ANCHUCAYA",
+   "2017": 320
+  },
+  "PE-130207": {
+   "name": "SANTIAGO DE CAO",
+   "2017": 19204
+  },
+  "PE-130811": {
+   "name": "SANTIAGO DE CHALLAS",
+   "2017": 2210
+  },
+  "PE-021410": {
+   "name": "SANTIAGO DE CHILCAS",
+   "2017": 429
+  },
+  "PE-090613": {
+   "name": "SANTIAGO DE CHOCORVOS",
+   "2017": 1671
+  },
+  "PE-131001": {
+   "name": "SANTIAGO DE CHUCO",
+   "2017": 18311
+  },
+  "PE-050304": {
+   "name": "SANTIAGO DE LUCANAMARCA",
+   "2017": 2068
+  },
+  "PE-050910": {
+   "name": "SANTIAGO DE PAUCARAY",
+   "2017": 594
+  },
+  "PE-050111": {
+   "name": "SANTIAGO DE PISCHA",
+   "2017": 1427
+  },
+  "PE-210214": {
+   "name": "SANTIAGO DE PUPUJA",
+   "2017": 4407
+  },
+  "PE-090614": {
+   "name": "SANTIAGO DE QUIRAHUARA",
+   "2017": 376
+  },
+  "PE-150140": {
+   "name": "SANTIAGO DE SURCO",
+   "2017": 329152
+  },
+  "PE-090723": {
+   "name": "SANTIAGO DE TUCUMA",
+   "2017": 1533
+  },
+  "PE-150730": {
+   "name": "SANTIAGO DE TUNA",
+   "2017": 411
+  },
+  "PE-050406": {
+   "name": "SANTILLANA",
+   "2017": 3852
+  },
+  "PE-200409": {
+   "name": "SANTO DOMINGO",
+   "2017": 5960
+  },
+  "PE-120135": {
+   "name": "SANTO DOMINGO DE ACOBAMBA",
+   "2017": 6222
+  },
+  "PE-100610": {
+   "name": "SANTO DOMINGO DE ANDA",
+   "2017": 2527
+  },
+  "PE-090615": {
+   "name": "SANTO DOMINGO DE CAPILLAS",
+   "2017": 724
+  },
+  "PE-060612": {
+   "name": "SANTO DOMINGO DE LA CAPILLA",
+   "2017": 4701
+  },
+  "PE-150731": {
+   "name": "SANTO DOMINGO DE LOS OLLEROS",
+   "2017": 3125
+  },
+  "PE-060613": {
+   "name": "SANTO TOMÁS",
+   "2017": 6988
+  },
+  "PE-010521": {
+   "name": "SANTO TOMÁS",
+   "2017": 3012
+  },
+  "PE-080701": {
+   "name": "SANTO TOMÁS",
+   "2017": 21728
+  },
+  "PE-090311": {
+   "name": "SANTO TOMÁS DE PATA",
+   "2017": 1436
+  },
+  "PE-021209": {
+   "name": "SANTO TORIBIO",
+   "2017": 1055
+  },
+  "PE-120133": {
+   "name": "SAPALLANGA",
+   "2017": 21096
+  },
+  "PE-200208": {
+   "name": "SAPILLICA",
+   "2017": 10510
+  },
+  "PE-220401": {
+   "name": "SAPOSOA",
+   "2017": 13422
+  },
+  "PE-160507": {
+   "name": "SAQUENA",
+   "2017": 3365
+  },
+  "PE-050810": {
+   "name": "SARA SARA",
+   "2017": 514
+  },
+  "PE-160605": {
+   "name": "SARAYACU",
+   "2017": 13464
+  },
+  "PE-051011": {
+   "name": "SARHUA",
+   "2017": 2616
+  },
+  "PE-130908": {
+   "name": "SARTIMBAMBA",
+   "2017": 12245
+  },
+  "PE-130907": {
+   "name": "SARÍN",
+   "2017": 8916
+  },
+  "PE-120601": {
+   "name": "SATIPO",
+   "2017": 37075
+  },
+  "PE-220913": {
+   "name": "SAUCE",
+   "2017": 7263
+  },
+  "PE-061308": {
+   "name": "SAUCEPAMPA",
+   "2017": 1446
+  },
+  "PE-051107": {
+   "name": "SAURAMA",
+   "2017": 1038
+  },
+  "PE-120430": {
+   "name": "SAUSA",
+   "2017": 3060
+  },
+  "PE-150811": {
+   "name": "SAYÁN",
+   "2017": 23408
+  },
+  "PE-131104": {
+   "name": "SAYAPULLO",
+   "2017": 6386
+  },
+  "PE-040808": {
+   "name": "SAYLA",
+   "2017": 319
+  },
+  "PE-080107": {
+   "name": "SAYLLA",
+   "2017": 5368
+  },
+  "PE-140115": {
+   "name": "SAÑA",
+   "2017": 11617
+  },
+  "PE-030412": {
+   "name": "SAÑAYCA",
+   "2017": 1107
+  },
+  "PE-120132": {
+   "name": "SAÑO",
+   "2017": 5512
+  },
+  "PE-090312": {
+   "name": "SECCLLA",
+   "2017": 3090
+  },
+  "PE-200801": {
+   "name": "SECHURA",
+   "2017": 44590
+  },
+  "PE-250202": {
+   "name": "SEPAHUA",
+   "2017": 6655
+  },
+  "PE-061309": {
+   "name": "SEXI",
+   "2017": 425
+  },
+  "PE-220708": {
+   "name": "SHAMBOYACU",
+   "2017": 8554
+  },
+  "PE-220509": {
+   "name": "SHANAO",
+   "2017": 1975
+  },
+  "PE-220914": {
+   "name": "SHAPAJA",
+   "2017": 1943
+  },
+  "PE-220305": {
+   "name": "SHATOJA",
+   "2017": 3004
+  },
+  "PE-020609": {
+   "name": "SHILLA",
+   "2017": 2789
+  },
+  "PE-010310": {
+   "name": "SHIPASBAMBA",
+   "2017": 1539
+  },
+  "PE-100321": {
+   "name": "SHUNQUI",
+   "2017": 1696
+  },
+  "PE-221004": {
+   "name": "SHUNTE",
+   "2017": 1315
+  },
+  "PE-022007": {
+   "name": "SHUPLUY",
+   "2017": 1840
+  },
+  "PE-040515": {
+   "name": "SIBAYO",
+   "2017": 669
+  },
+  "PE-120134": {
+   "name": "SICAYA",
+   "2017": 16932
+  },
+  "PE-200209": {
+   "name": "SÍCCHEZ",
+   "2017": 1654
+  },
+  "PE-021910": {
+   "name": "SICSIBAMBA",
+   "2017": 1482
+  },
+  "PE-080601": {
+   "name": "SICUANI",
+   "2017": 57827
+  },
+  "PE-021901": {
+   "name": "SIHUAS",
+   "2017": 5411
+  },
+  "PE-100322": {
+   "name": "SILLAPATA",
+   "2017": 1814
+  },
+  "PE-130110": {
+   "name": "SIMBAL",
+   "2017": 4061
+  },
+  "PE-190109": {
+   "name": "SIMÓN BOLÍVAR",
+   "2017": 12663
+  },
+  "PE-211005": {
+   "name": "SINA",
+   "2017": 1649
+  },
+  "PE-120431": {
+   "name": "SINCOS",
+   "2017": 4056
+  },
+  "PE-100510": {
+   "name": "SINGA",
+   "2017": 3129
+  },
+  "PE-130613": {
+   "name": "SINSICAP",
+   "2017": 7032
+  },
+  "PE-131008": {
+   "name": "SITABAMBA",
+   "2017": 3240
+  },
+  "PE-060204": {
+   "name": "SITACOCHA",
+   "2017": 7535
+  },
+  "PE-230405": {
+   "name": "SITAJARA",
+   "2017": 350
+  },
+  "PE-050407": {
+   "name": "SIVIA",
+   "2017": 10797
+  },
+  "PE-040122": {
+   "name": "SOCABAYA",
+   "2017": 75351
+  },
+  "PE-050112": {
+   "name": "SOCOS",
+   "2017": 5952
+  },
+  "PE-060614": {
+   "name": "SOCOTA",
+   "2017": 9054
+  },
+  "PE-010120": {
+   "name": "SOLOCO",
+   "2017": 1224
+  },
+  "PE-010121": {
+   "name": "SONCHE",
+   "2017": 247
+  },
+  "PE-200307": {
+   "name": "SÓNDOR",
+   "2017": 7140
+  },
+  "PE-200308": {
+   "name": "SONDORILLO",
+   "2017": 10162
+  },
+  "PE-160508": {
+   "name": "SOPLÍN",
+   "2017": 569
+  },
+  "PE-050911": {
+   "name": "SORAS",
+   "2017": 1025
+  },
+  "PE-030413": {
+   "name": "SORAYA",
+   "2017": 711
+  },
+  "PE-220105": {
+   "name": "SORITOR",
+   "2017": 21514
+  },
+  "PE-060309": {
+   "name": "SOROCHUCO",
+   "2017": 7352
+  },
+  "PE-110112": {
+   "name": "SUBTANJALLA",
+   "2017": 27387
+  },
+  "PE-020205": {
+   "name": "SUCCHA",
+   "2017": 714
+  },
+  "PE-060310": {
+   "name": "SUCRE",
+   "2017": 5055
+  },
+  "PE-120809": {
+   "name": "SUITUCANCHA",
+   "2017": 690
+  },
+  "PE-200601": {
+   "name": "SULLANA",
+   "2017": 169335
+  },
+  "PE-150611": {
+   "name": "SUMBILCA",
+   "2017": 720
+  },
+  "PE-110210": {
+   "name": "SUNAMPE",
+   "2017": 29079
+  },
+  "PE-150204": {
+   "name": "SUPE",
+   "2017": 24318
+  },
+  "PE-150205": {
+   "name": "SUPE PUERTO",
+   "2017": 12855
+  },
+  "PE-150732": {
+   "name": "SURCO",
+   "2017": 1407
+  },
+  "PE-090717": {
+   "name": "SURCUBAMBA",
+   "2017": 4601
+  },
+  "PE-150141": {
+   "name": "SURQUILLO",
+   "2017": 91023
+  },
+  "PE-230406": {
+   "name": "SUSAPAYA",
+   "2017": 518
+  },
+  "PE-080807": {
+   "name": "SUYCKUTAMBO",
+   "2017": 1643
+  },
+  "PE-200210": {
+   "name": "SUYO",
+   "2017": 11179
+  },
+  "PE-060907": {
+   "name": "TABACONAS",
+   "2017": 17651
+  },
+  "PE-220510": {
+   "name": "TABALOSOS",
+   "2017": 13879
+  },
+  "PE-060417": {
+   "name": "TACABAMBA",
+   "2017": 15704
+  },
+  "PE-230101": {
+   "name": "TACNA",
+   "2017": 92972
+  },
+  "PE-170303": {
+   "name": "TAHUAMANU",
+   "2017": 2865
+  },
+  "PE-250203": {
+   "name": "TAHUANIA",
+   "2017": 8264
+  },
+  "PE-030216": {
+   "name": "TALAVERA",
+   "2017": 18509
+  },
+  "PE-200506": {
+   "name": "TAMARINDO",
+   "2017": 4923
+  },
+  "PE-050113": {
+   "name": "TAMBILLO",
+   "2017": 5047
+  },
+  "PE-050508": {
+   "name": "TAMBO",
+   "2017": 10173
+  },
+  "PE-090616": {
+   "name": "TAMBO",
+   "2017": 667
+  },
+  "PE-200114": {
+   "name": "TAMBO GRANDE",
+   "2017": 107495
+  },
+  "PE-110211": {
+   "name": "TAMBO DE MORA",
+   "2017": 5434
+  },
+  "PE-030501": {
+   "name": "TAMBOBAMBA",
+   "2017": 10381
+  },
+  "PE-170101": {
+   "name": "TAMBOPATA",
+   "2017": 81925
+  },
+  "PE-030109": {
+   "name": "TAMBURCO",
+   "2017": 10861
+  },
+  "PE-151028": {
+   "name": "TANTA",
+   "2017": 507
+  },
+  "PE-100511": {
+   "name": "TANTAMAYO",
+   "2017": 1777
+  },
+  "PE-090412": {
+   "name": "TANTARA",
+   "2017": 648
+  },
+  "PE-060507": {
+   "name": "TANTARICA",
+   "2017": 2461
+  },
+  "PE-021709": {
+   "name": "TAPACOCHA",
+   "2017": 421
+  },
+  "PE-030414": {
+   "name": "TAPAIRIHUA",
+   "2017": 1848
+  },
+  "PE-040516": {
+   "name": "TAPAY",
+   "2017": 772
+  },
+  "PE-160509": {
+   "name": "TAPICHE",
+   "2017": 881
+  },
+  "PE-120709": {
+   "name": "TAPO",
+   "2017": 4473
+  },
+  "PE-190207": {
+   "name": "TÁPUC",
+   "2017": 2426
+  },
+  "PE-210607": {
+   "name": "TARACO",
+   "2017": 13193
+  },
+  "PE-220901": {
+   "name": "TARAPOTO",
+   "2017": 76122
+  },
+  "PE-230401": {
+   "name": "TARATA",
+   "2017": 3642
+  },
+  "PE-080407": {
+   "name": "TARAY",
+   "2017": 4312
+  },
+  "PE-020112": {
+   "name": "TARICA",
+   "2017": 6338
+  },
+  "PE-120701": {
+   "name": "TARMA",
+   "2017": 47775
+  },
+  "PE-230407": {
+   "name": "TARUCACHI",
+   "2017": 295
+  },
+  "PE-110113": {
+   "name": "TATE",
+   "2017": 4709
+  },
+  "PE-021511": {
+   "name": "TAUCA",
+   "2017": 2673
+  },
+  "PE-040809": {
+   "name": "TAURÍA",
+   "2017": 301
+  },
+  "PE-130812": {
+   "name": "TAURIJA",
+   "2017": 2779
+  },
+  "PE-151029": {
+   "name": "TAURIPAMPA",
+   "2017": 499
+  },
+  "PE-130801": {
+   "name": "TAYABAMBA",
+   "2017": 12490
+  },
+  "PE-160211": {
+   "name": "TENIENTE CÉSAR LÓPEZ ROJAS",
+   "2017": 5564
+  },
+  "PE-160803": {
+   "name": "TENIENTE MANUEL CLAVERO",
+   "2017": 2317
+  },
+  "PE-040123": {
+   "name": "TIABAYA",
+   "2017": 16191
+  },
+  "PE-110405": {
+   "name": "TIBILLO",
+   "2017": 344
+  },
+  "PE-230408": {
+   "name": "TICACO",
+   "2017": 581
+  },
+  "PE-021710": {
+   "name": "TICAPAMPA",
+   "2017": 2462
+  },
+  "PE-190110": {
+   "name": "TICLACAYÁN",
+   "2017": 3261
+  },
+  "PE-020515": {
+   "name": "TICLLOS",
+   "2017": 658
+  },
+  "PE-090413": {
+   "name": "TICRAPO",
+   "2017": 1481
+  },
+  "PE-160303": {
+   "name": "TIGRE",
+   "2017": 6448
+  },
+  "PE-210904": {
+   "name": "TILALI",
+   "2017": 2471
+  },
+  "PE-020610": {
+   "name": "TINCO",
+   "2017": 3335
+  },
+  "PE-010522": {
+   "name": "TINGO",
+   "2017": 1265
+  },
+  "PE-220709": {
+   "name": "TINGO DE PONASA",
+   "2017": 3876
+  },
+  "PE-220406": {
+   "name": "TINGO DE SAPOSOA",
+   "2017": 789
+  },
+  "PE-211306": {
+   "name": "TINICACHI",
+   "2017": 949
+  },
+  "PE-080608": {
+   "name": "TINTA",
+   "2017": 5029
+  },
+  "PE-030415": {
+   "name": "TINTAY",
+   "2017": 2272
+  },
+  "PE-090718": {
+   "name": "TINTAY PUNCU",
+   "2017": 3010
+  },
+  "PE-190111": {
+   "name": "TINYAHUARCO",
+   "2017": 6755
+  },
+  "PE-040411": {
+   "name": "TIPÁN",
+   "2017": 432
+  },
+  "PE-210114": {
+   "name": "TIQUILLACA",
+   "2017": 1594
+  },
+  "PE-210215": {
+   "name": "TIRAPATA",
+   "2017": 2731
+  },
+  "PE-040517": {
+   "name": "TISCO",
+   "2017": 1441
+  },
+  "PE-221001": {
+   "name": "TOCACHE",
+   "2017": 26166
+  },
+  "PE-060418": {
+   "name": "TOCMOCHE",
+   "2017": 859
+  },
+  "PE-151030": {
+   "name": "TOMÁS",
+   "2017": 520
+  },
+  "PE-100208": {
+   "name": "TOMAY KICHWA",
+   "2017": 3382
+  },
+  "PE-040810": {
+   "name": "TOMEPAMPA",
+   "2017": 658
+  },
+  "PE-061112": {
+   "name": "TONGOD",
+   "2017": 2688
+  },
+  "PE-180106": {
+   "name": "TORATA",
+   "2017": 6198
+  },
+  "PE-030416": {
+   "name": "TORAYA",
+   "2017": 1278
+  },
+  "PE-060615": {
+   "name": "TORIBIO CASANOVA",
+   "2017": 1115
+  },
+  "PE-040811": {
+   "name": "TORO",
+   "2017": 556
+  },
+  "PE-160110": {
+   "name": "TORRES CAUSANA",
+   "2017": 4230
+  },
+  "PE-010611": {
+   "name": "TOTORA",
+   "2017": 282
+  },
+  "PE-050206": {
+   "name": "TOTOS",
+   "2017": 3009
+  },
+  "PE-100904": {
+   "name": "TOURNAVISTA",
+   "2017": 5447
+  },
+  "PE-220710": {
+   "name": "TRES UNIDOS",
+   "2017": 3889
+  },
+  "PE-120908": {
+   "name": "TRES DE DICIEMBRE",
+   "2017": 2665
+  },
+  "PE-010523": {
+   "name": "TRITA",
+   "2017": 1348
+  },
+  "PE-160304": {
+   "name": "TROMPETEROS",
+   "2017": 8396
+  },
+  "PE-130101": {
+   "name": "TRUJILLO",
+   "2017": 314939
+  },
+  "PE-030217": {
+   "name": "TUMAY HUARACA",
+   "2017": 1864
+  },
+  "PE-061204": {
+   "name": "TUMBADÉN",
+   "2017": 3387
+  },
+  "PE-240101": {
+   "name": "TUMBES",
+   "2017": 102306
+  },
+  "PE-140120": {
+   "name": "TUMÁN",
+   "2017": 27782
+  },
+  "PE-120432": {
+   "name": "TUNAN MARCA",
+   "2017": 1038
+  },
+  "PE-151031": {
+   "name": "TUPE",
+   "2017": 533
+  },
+  "PE-030711": {
+   "name": "TURPAY",
+   "2017": 628
+  },
+  "PE-030218": {
+   "name": "TURPO",
+   "2017": 3642
+  },
+  "PE-040518": {
+   "name": "TUTI",
+   "2017": 621
+  },
+  "PE-140312": {
+   "name": "TÚCUME",
+   "2017": 21847
+  },
+  "PE-080508": {
+   "name": "TÚPAC AMARU",
+   "2017": 2523
+  },
+  "PE-110508": {
+   "name": "TÚPAC AMARU INCA",
+   "2017": 17775
+  },
+  "PE-180210": {
+   "name": "UBINAS",
+   "2017": 1741
+  },
+  "PE-221005": {
+   "name": "UCHIZA",
+   "2017": 20149
+  },
+  "PE-130305": {
+   "name": "UCHUMARCA",
+   "2017": 2246
+  },
+  "PE-040124": {
+   "name": "UCHUMAYO",
+   "2017": 14054
+  },
+  "PE-050410": {
+   "name": "UCHURACCAY",
+   "2017": 3522
+  },
+  "PE-021016": {
+   "name": "UCO",
+   "2017": 1301
+  },
+  "PE-130306": {
+   "name": "UCUNCHA",
+   "2017": 836
+  },
+  "PE-120504": {
+   "name": "ULCUMAYO",
+   "2017": 4283
+  },
+  "PE-210809": {
+   "name": "UMACHIRI",
+   "2017": 3564
+  },
+  "PE-100804": {
+   "name": "UMARI",
+   "2017": 11055
+  },
+  "PE-211307": {
+   "name": "UNICACHI",
+   "2017": 1057
+  },
+  "PE-061113": {
+   "name": "UNIÓN AGUA BLANCA",
+   "2017": 3026
+  },
+  "PE-050708": {
+   "name": "UPAHUACHO",
+   "2017": 1148
+  },
+  "PE-040413": {
+   "name": "URACA",
+   "2017": 6266
+  },
+  "PE-030607": {
+   "name": "URANMARCA",
+   "2017": 2650
+  },
+  "PE-160305": {
+   "name": "URARINAS",
+   "2017": 11545
+  },
+  "PE-081201": {
+   "name": "URCOS",
+   "2017": 10614
+  },
+  "PE-130813": {
+   "name": "URPAY",
+   "2017": 2048
+  },
+  "PE-081301": {
+   "name": "URUBAMBA",
+   "2017": 20082
+  },
+  "PE-210310": {
+   "name": "USICAYOS",
+   "2017": 8992
+  },
+  "PE-130614": {
+   "name": "USQUIL",
+   "2017": 21388
+  },
+  "PE-060311": {
+   "name": "UTCO",
+   "2017": 1052
+  },
+  "PE-061310": {
+   "name": "UTICYACU",
+   "2017": 1259
+  },
+  "PE-040412": {
+   "name": "UÑÓN",
+   "2017": 207
+  },
+  "PE-010311": {
+   "name": "VALERA",
+   "2017": 874
+  },
+  "PE-160606": {
+   "name": "VARGAS GUERRA",
+   "2017": 6467
+  },
+  "PE-150812": {
+   "name": "VÉGUETA",
+   "2017": 25912
+  },
+  "PE-150612": {
+   "name": "VEINTISIETE DE NOVIEMBRE",
+   "2017": 411
+  },
+  "PE-200115": {
+   "name": "VEINTISÉIS DE OCTUBRE",
+   "2017": 165779
+  },
+  "PE-080708": {
+   "name": "VELILLE",
+   "2017": 9143
+  },
+  "PE-070106": {
+   "name": "VENTANILLA",
+   "2017": 315600
+  },
+  "PE-190112": {
+   "name": "VICCO",
+   "2017": 3392
+  },
+  "PE-200805": {
+   "name": "VICE",
+   "2017": 15630
+  },
+  "PE-200507": {
+   "name": "VICHAYAL",
+   "2017": 5622
+  },
+  "PE-210710": {
+   "name": "VILAVILA",
+   "2017": 1233
+  },
+  "PE-090116": {
+   "name": "VILCA",
+   "2017": 1891
+  },
+  "PE-030712": {
+   "name": "VILCABAMBA",
+   "2017": 1233
+  },
+  "PE-080909": {
+   "name": "VILCABAMBA",
+   "2017": 9557
+  },
+  "PE-190208": {
+   "name": "VILCABAMBA",
+   "2017": 1939
+  },
+  "PE-051012": {
+   "name": "VILCANCHOS",
+   "2017": 2389
+  },
+  "PE-051101": {
+   "name": "VILCAS HUAMÁN",
+   "2017": 6370
+  },
+  "PE-080913": {
+   "name": "VILLA KINTIARINA",
+   "2017": 1974
+  },
+  "PE-150143": {
+   "name": "VILLA MARÍA DEL TRIUNFO",
+   "2017": 398433
+  },
+  "PE-190307": {
+   "name": "VILLA RICA",
+   "2017": 17274
+  },
+  "PE-080912": {
+   "name": "VILLA VIRGEN",
+   "2017": 1980
+  },
+  "PE-150142": {
+   "name": "VILLA EL SALVADOR",
+   "2017": 393254
+  },
+  "PE-210115": {
+   "name": "VILQUE",
+   "2017": 2761
+  },
+  "PE-210608": {
+   "name": "VILQUE CHICO",
+   "2017": 7211
+  },
+  "PE-050114": {
+   "name": "VINCHOS",
+   "2017": 13634
+  },
+  "PE-120136": {
+   "name": "VIQUES",
+   "2017": 2639
+  },
+  "PE-040414": {
+   "name": "VIRACO",
+   "2017": 1545
+  },
+  "PE-030713": {
+   "name": "VIRUNDO",
+   "2017": 675
+  },
+  "PE-131201": {
+   "name": "VIRÚ",
+   "2017": 52407
+  },
+  "PE-051108": {
+   "name": "VISCHONGO",
+   "2017": 3726
+  },
+  "PE-010612": {
+   "name": "VISTA ALEGRE",
+   "2017": 2812
+  },
+  "PE-110305": {
+   "name": "VISTA ALEGRE",
+   "2017": 20460
+  },
+  "PE-151033": {
+   "name": "VITIS",
+   "2017": 311
+  },
+  "PE-120306": {
+   "name": "VÍTOC",
+   "2017": 1814
+  },
+  "PE-040125": {
+   "name": "VÍTOR",
+   "2017": 3610
+  },
+  "PE-120609": {
+   "name": "VIZCATÁN DEL ENE",
+   "2017": 4252
+  },
+  "PE-151032": {
+   "name": "VIÑAC",
+   "2017": 1624
+  },
+  "PE-130111": {
+   "name": "VÍCTOR LARCO HERRERA",
+   "2017": 68506
+  },
+  "PE-080108": {
+   "name": "WANCHAQ",
+   "2017": 58541
+  },
+  "PE-100112": {
+   "name": "YACUS",
+   "2017": 5296
+  },
+  "PE-160804": {
+   "name": "YAGUAS",
+   "2017": 1277
+  },
+  "PE-200410": {
+   "name": "YAMANGO",
+   "2017": 8501
+  },
+  "PE-010312": {
+   "name": "YAMBRASBAMBA",
+   "2017": 5577
+  },
+  "PE-010707": {
+   "name": "YAMÓN",
+   "2017": 2927
+  },
+  "PE-030417": {
+   "name": "YANACA",
+   "2017": 981
+  },
+  "PE-120909": {
+   "name": "YANACANCHA",
+   "2017": 2578
+  },
+  "PE-190113": {
+   "name": "YANACANCHA",
+   "2017": 29192
+  },
+  "PE-190201": {
+   "name": "YANAHUANCA",
+   "2017": 11333
+  },
+  "PE-040126": {
+   "name": "YANAHUARA",
+   "2017": 25417
+  },
+  "PE-211208": {
+   "name": "YANAHUAYA",
+   "2017": 1936
+  },
+  "PE-022008": {
+   "name": "YANAMA",
+   "2017": 5292
+  },
+  "PE-080501": {
+   "name": "YANAOCA",
+   "2017": 8659
+  },
+  "PE-040608": {
+   "name": "YANAQUIHUA",
+   "2017": 3928
+  },
+  "PE-100323": {
+   "name": "YANAS",
+   "2017": 2238
+  },
+  "PE-080408": {
+   "name": "YANATILE",
+   "2017": 8590
+  },
+  "PE-040519": {
+   "name": "YANQUE",
+   "2017": 2117
+  },
+  "PE-220106": {
+   "name": "YANTALO",
+   "2017": 2865
+  },
+  "PE-160511": {
+   "name": "YAQUERANA",
+   "2017": 1929
+  },
+  "PE-040127": {
+   "name": "YARABAMBA",
+   "2017": 1314
+  },
+  "PE-250105": {
+   "name": "YARINACOCHA",
+   "2017": 103941
+  },
+  "PE-100110": {
+   "name": "YARUMAYO",
+   "2017": 1545
+  },
+  "PE-040313": {
+   "name": "YAUCA",
+   "2017": 1877
+  },
+  "PE-110114": {
+   "name": "YAUCA DEL ROSARIO",
+   "2017": 1116
+  },
+  "PE-090117": {
+   "name": "YAULI",
+   "2017": 19237
+  },
+  "PE-120433": {
+   "name": "YAULI",
+   "2017": 1097
+  },
+  "PE-120810": {
+   "name": "YAULI",
+   "2017": 5341
+  },
+  "PE-081009": {
+   "name": "YAURISQUE",
+   "2017": 1924
+  },
+  "PE-020804": {
+   "name": "YAUTÁN",
+   "2017": 8305
+  },
+  "PE-020703": {
+   "name": "YAUYA",
+   "2017": 4093
+  },
+  "PE-120434": {
+   "name": "YAUYOS",
+   "2017": 8992
+  },
+  "PE-151001": {
+   "name": "YAUYOS",
+   "2017": 1481
+  },
+  "PE-061311": {
+   "name": "YAUYUCÁN",
+   "2017": 2844
+  },
+  "PE-160403": {
+   "name": "YAVARÍ",
+   "2017": 8366
+  },
+  "PE-060508": {
+   "name": "YONÁN",
+   "2017": 6726
+  },
+  "PE-220808": {
+   "name": "YORONGOS",
+   "2017": 2446
+  },
+  "PE-081307": {
+   "name": "YUCAY",
+   "2017": 3223
+  },
+  "PE-180211": {
+   "name": "YUNGA",
+   "2017": 864
+  },
+  "PE-020611": {
+   "name": "YUNGAR",
+   "2017": 2992
+  },
+  "PE-022001": {
+   "name": "YUNGAY",
+   "2017": 20070
+  },
+  "PE-211301": {
+   "name": "YUNGUYO",
+   "2017": 24515
+  },
+  "PE-020907": {
+   "name": "YUPÁN",
+   "2017": 693
+  },
+  "PE-040128": {
+   "name": "YURA",
+   "2017": 33346
+  },
+  "PE-021210": {
+   "name": "YURACMARCA",
+   "2017": 1980
+  },
+  "PE-220809": {
+   "name": "YURACYACU",
+   "2017": 3832
+  },
+  "PE-160201": {
+   "name": "YURIMAGUAS",
+   "2017": 83554
+  },
+  "PE-250204": {
+   "name": "YURUA",
+   "2017": 1975
+  },
+  "PE-100905": {
+   "name": "YUYAPICHIS",
+   "2017": 5769
+  },
+  "PE-020906": {
+   "name": "YÁNAC",
+   "2017": 634
+  },
+  "PE-220511": {
+   "name": "ZAPATERO",
+   "2017": 5255
+  },
+  "PE-240301": {
+   "name": "ZARUMILLA",
+   "2017": 21776
+  },
+  "PE-210407": {
+   "name": "ZEPITA",
+   "2017": 16929
+  },
+  "PE-240201": {
+   "name": "ZORRITOS",
+   "2017": 12371
+  },
+  "PE-080309": {
+   "name": "ZURITE",
+   "2017": 3451
+  },
+  "PE-150516": {
+   "name": "ZÚÑIGA",
+   "2017": 1314
+  },
+  "PE-090710": {
+   "name": "ÑAHUIMPUQUIO",
+   "2017": 1480
+  }
+ }
+}

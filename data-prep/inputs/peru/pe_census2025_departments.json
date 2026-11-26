@@ -1,0 +1,35 @@
+{
+ "source": "INEI, Perú: Crecimiento y distribución de la población. Primeros resultados (Censos Nacionales 2025), Cuadro 1.1 (total population at the 2007, 2017 and 2025 censuses, counted plus omitted) and Cuadro 3.1 (total population by department, 2025; Lima is Lima Metropolitana plus Región Lima). Uploaded by the project's owner.",
+ "country": {
+  "2007": 28220764,
+  "2017": 31237385,
+  "2025": 34157732
+ },
+ "departments_2025": {
+  "Callao": 1101911,
+  "Lima": 11148584,
+  "Amazonas": 467845,
+  "Áncash": 1205998,
+  "Apurímac": 467380,
+  "Arequipa": 1814396,
+  "Ayacucho": 709570,
+  "Cajamarca": 1490769,
+  "Cusco": 1379003,
+  "Huancavelica": 371909,
+  "Huánuco": 807612,
+  "Ica": 1033185,
+  "Junín": 1422597,
+  "La Libertad": 2056560,
+  "Lambayeque": 1404376,
+  "Loreto": 1032016,
+  "Madre de Dios": 208682,
+  "Moquegua": 194842,
+  "Pasco": 253223,
+  "Piura": 2115587,
+  "Puno": 1232995,
+  "San Martín": 968472,
+  "Tacna": 389302,
+  "Tumbes": 256683,
+  "Ucayali": 624235
+ }
+}
