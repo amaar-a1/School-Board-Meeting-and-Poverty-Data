@@ -963,7 +963,24 @@ def peru():
     # Earlier school censuses (00_Padron.zip of each year, summed by prep_peru_history.py), for change over time
     hf = os.path.join(IN, "peru", "pe_alumnos_history.json")
     ph = {**(json.load(open(hf, encoding="utf-8")) if os.path.exists(hf) else {}), "2025": pj}
+    # A census year that misses schools reporting the years either side (2012) is left out where they matter
+    for y, v in ph.items():
+        for c in v.pop("incomplete", []):
+            for k in ("pupils", "pupils_public"): v.get(k, {}).pop(c, None)
+    # Putumayo province (2014) gave two of Maynas's districts new codes: their earlier figures go under the new ones.
+    for y, v in ph.items():
+        if y < "2014":
+            for old, new in (("160109", "160801"), ("160114", "160803")):
+                for k in ("pupils", "pupils_public"):
+                    if old in v.get(k, {}): v[k][new] = v[k].pop(old)
+    # Years whose census codes one district's schools to another: Andrés Avelino Cáceres (made in 2013) has only a
+    # few schools of its own until 2018, the rest counted in Ayacucho, so its years before are left out and the
+    # census's split is marked in 2018 (below); schools moved between Pastaza and Andoas in 2014 (both left out before).
+    MISCODED = {("050116",): lambda y: y < "2018", ("160705", "160706"): lambda y: y < "2014"}
+    miscoded = lambda y, c: any(c in pair and f(y) for pair, f in MISCODED.items())
     skip, edges = pe_splits(ph)
+    edges = [e for e in edges if e[1] != "050116"] + [("050101", "050116", "2018")]
+    skip |= {(y, "050116") for y in ph if y < "2018"}
     nf = os.path.join(IN, "peru", "pe_new_district_names.json")
     newer = {c: es_title(v) for c, v in (json.load(open(nf, encoding="utf-8"))["names"] if os.path.exists(nf) else {}).items()}
     early = pe_earlier_borders(ph, edges, {**newer, **{c: d["name"] for c, d in dist.items()}})
@@ -977,8 +994,7 @@ def peru():
         f = geo.get(code); area = area_km2(f["geometry"]) if f else 0
         dens = d["pop"] / area if area and d["pop"] else 0
         did = f"PE-{code}"
-        # The 2016 and 2017 padrones still code Andrés Avelino Cáceres's schools to Ayacucho district, so both years are left out for both.
-        py = {y: v["pupils"][code] for y, v in ph.items() if v.get("pupils", {}).get(code) and not (y in ("2016", "2017") and code in ("050101", "050116")) and (y, code) not in skip}
+        py = {y: v["pupils"][code] for y, v in ph.items() if v.get("pupils", {}).get(code) and not miscoded(y, code) and (y, code) not in skip}
         pub = {y: 100 * ph[y]["pupils_public"].get(code, 0) / n for y, n in py.items() if ph[y].get("pupils_public")}
         rows.append({**history_cols({"pupil_years": py, "public_years": pub}), **early.get(code, {}), "District": d["name"], "Region": PE_DEPT[code[:2]], "Province": prov.get(code[:4], ""), "Population": d["pop"],
                      "Poverty rate (all ages)": f"{(d['lo'] + d['hi']) / 2:.2f}%", "Poverty range": f"{d['lo']:.1f}–{d['hi']:.1f}%",
