@@ -160,7 +160,12 @@
     for (const c of cands) { const v = new Set(current.rows.map((r) => r[c]).filter(Boolean)); if (v.size >= 2 && v.size <= 150) return c; }
     return null;
   }
-  const trend = { measure: null, area: null, place: null, key: null };
+  // places: entries added with "Add places" (places, regions or whole countries, from the Compare tab's search;
+  // kept when the view changes, so places in different countries can share the graph).
+  const trend = { measure: null, area: null, places: [], key: null };
+  const PLACE_COLORS = ["#d9762b", "#CC79A7", "#009E73", "#56B4E9", "#E69F00", "#8c6d31", "#7f7f7f", "#D55E00"];
+  const MAX_PLACES = 8;
+  const rowOfEntry = (e) => (window.SiteCompare && window.SiteCompare.rowOf ? window.SiteCompare.rowOf(e) : e.row);
   // Figures known only for a whole country or region (data/area_history.json, from data-prep/area_history.py), for
   // years its places have none: drawn on that country's or region's line, never on a place's.
   let AREA = null, lastTrend = null;
@@ -182,14 +187,14 @@
     lastTrend = [current, label];
     const rows = current.rows;
     const countries = current.combined ? [...new Set(rows.map((r) => r.Country).filter(Boolean))] : [current.name];
-    const list = MEASURES.filter((m) => rows.some((r) => hasLine(r, m.col)) || countries.some((c) => hasArea(c, m.col)));
+    const list = MEASURES.filter((m) => rows.some((r) => hasLine(r, m.col)) || countries.some((c) => hasArea(c, m.col)) || trend.places.some((e) => hasLine(rowOfEntry(e), m.col)));
     const card = $("trend-history-card");
     if (!card) return;
     card.hidden = !list.length;
     $("trend-history-empty").hidden = !!list.length;
     if (!list.length) return;
     const key = current.name;
-    if (trend.key !== key) { trend.key = key; trend.place = null; trend.area = current.combined ? "each" : "all"; if ($("trend-place")) $("trend-place").value = ""; }
+    if (trend.key !== key) { trend.key = key; trend.area = current.combined ? "each" : "all"; }
     const m = list.includes(trend.measure) ? trend.measure : list[0];
     const redraw = () => renderTrends(current, label);
     picker($("trend-history-pick"), list, m, (x) => { trend.measure = x; redraw(); });
@@ -202,16 +207,18 @@
     if (sel) {
       sel.innerHTML = (current.combined ? "" : `<option value="all">All of ${esc(current.groups && current.groups.label || current.name)}</option>`) +
         (regions.length > 1 ? `<option value="each">Each ${esc(regionWord)} (one line each)</option>` : "") +
-        regions.map((g) => `<option value="r:${esc(g)}">${esc(g.trim())}</option>`).join("");
+        regions.map((g) => `<option value="r:${esc(g)}">${esc(g.trim())}</option>`).join("") +
+        (trend.places.length ? `<option value="none">None (only the places added)</option>` : "");
       if (![...sel.options].some((o) => o.value === trend.area)) trend.area = sel.options[0] ? sel.options[0].value : "all";
       sel.value = trend.area;
-      sel.parentElement.hidden = !rc || sel.options.length < 2;
+      sel.parentElement.hidden = sel.options.length < 2;
       sel.onchange = () => { trend.area = sel.value; redraw(); };
     }
     wirePlace(current, rc, redraw);
     // The groups to draw.
     let groups;
-    if (trend.area === "each") {
+    if (trend.area === "none") groups = [];
+    else if (trend.area === "each") {
       const by = {};
       rows.forEach((r) => { if (r[rc] && counts(r)) (by[r[rc]] = by[r[rc]] || []).push(r); });
       groups = Object.entries(by).sort((a, b) => b[1].length - a[1].length);
@@ -220,12 +227,20 @@
       groups = [[g, rows.filter((r) => r[rc] === g)]];
     } else groups = [[current.combined ? "All" : `All of ${current.groups && current.groups.label || current.name}`, rows]];
     const shown = groups.slice(0, PALETTE.length);
-    const place = trend.place, ps = place ? seriesOf(place, m.col) : null;
-    const hasPlace = ps && (years(ps).length > 0 || years(early(place, m.col)).length >= 2);
+    // The places added: each one's own row (a region's or country's figures added up, as in Compare), its line and
+    // its line on earlier borders.
+    const added = trend.places.map((e, i) => {
+      const row = rowOfEntry(e), size = e.area ? e.rows.length : 1;
+      let ps = seriesOf(row, m.col);
+      if (m.kind === "sum") ps = Object.fromEntries(Object.entries(ps).filter(([y]) => +y >= 2010).map(([y, v]) => [y, size > 1 ? +(v / size).toFixed(2) : v]));
+      return { e, row, name: e.row.District, color: PLACE_COLORS[i % PLACE_COLORS.length], ps, pe: e.area ? {} : early(row, m.col) };
+    });
+    const withLine = added.filter((a) => years(a.ps).length || years(a.pe).length >= 2);
+    const hasPlace = withLine.length > 0;
     // Counts are drawn as an index (first year = 100) when lines of different sizes share the chart; meetings as the
-    // average per place when a place is shown next to its area.
+    // average per place when places are shown next to an area.
     const many = shown.length > 1;
-    const idx = m.kind === "count" && (many || hasPlace);
+    const idx = m.kind === "count" && shown.length + withLine.length > 1;
     const perPlace = m.kind === "sum" && hasPlace;
     const areaAdded = [];
     const lines = shown.map(([g, rs]) => {
@@ -241,57 +256,89 @@
       }
       return [g, s];
     });
-    if (hasPlace) lines.push([place.District, { line: m.kind === "sum" ? Object.fromEntries(Object.entries(ps).filter(([y]) => +y >= 2010)) : ps, place: true }]);
-    const pe = place ? early(place, m.col) : {}, hasEarly = years(pe).length >= 2;
-    if (hasEarly) lines.push([`${place.District} on its earlier borders`, { line: pe, place: true, early: true }]);
+    withLine.forEach((a) => {
+      if (years(a.ps).length) lines.push([a.name, { line: a.ps, place: true, color: a.color }]);
+      if (years(a.pe).length >= 2) lines.push([`${a.name} on its earlier borders`, { line: a.pe, place: true, early: true, color: a.color }]);
+    });
     const labels = [...new Set(lines.flatMap(([, s]) => years(s.line)))].sort();
     const accent = cssVar("--accent"), accent2 = cssVar("--accent-2");
     const raw = lines.map(([, s]) => s.line);
     draw($("trend-history"), labels, lines.map(([g, s], i) => {
-      const l = s.line, base = labels.find((y) => l[y] > 0), color = s.place ? accent2 : many ? PALETTE[i] : accent;
+      const l = s.line, base = labels.find((y) => l[y] > 0), color = s.place ? s.color : many ? PALETTE[i] : accent;
       return { label: g, borderColor: color, backgroundColor: color, borderDash: s.early ? [2, 3] : s.place ? [6, 4] : undefined,
         data: labels.map((y) => (l[y] == null ? null : idx ? (base ? +(100 * l[y] / l[base]).toFixed(1) : null) : l[y])) };
     }), idx ? `${m.axis}, first year = 100` : perPlace ? "Meetings recorded (per place)" : (m.kind === "sum" || m.kind === "count") && lines.some(([, x]) => !x.place && x.n) ? `${m.axis} (all ${label})` : m.axis,
-      { unit: idx ? "" : m.unit, raw: idx ? raw : null, zero: m.kind !== "count", marks: hasPlace ? splitsOf(place) : [] });
+      { unit: idx ? "" : m.unit, raw: idx ? raw : null, zero: m.kind !== "count", marks: withLine.flatMap((a) => (a.e.area ? [] : splitsOf(a.row))) });
     const n = lines.filter(([, s]) => !s.place).reduce((t, [, s]) => t + (s.n || 0), 0);
     const parts = [];
     if (many) parts.push(`One line per ${regionWord}` + (groups.length > shown.length ? ` (the ${shown.length} with the most places; pick one in the Area menu for the others)` : "") + ".");
-    if (m.kind === "sum") parts.push(perPlace ? `The area's line is its meetings per place (all ${label}, with none counted as 0), so the place can be compared with it.` : `Meetings recorded each year, added up over the ${n.toLocaleString()} ${label} with dated recordings. The current year is partial, and US districts' counts (CivicSearch) start in January 2025.`);
+    if (m.kind === "sum" && !shown.length) parts.push("Regions' and countries' lines are their meetings per place.");
+    else if (m.kind === "sum") parts.push(perPlace ? `The area's line is its meetings per place (all ${label}, with none counted as 0), and so are added regions' and countries', so the places can be compared with it.` : `Meetings recorded each year, added up over the ${n.toLocaleString()} ${label} with dated recordings. The current year is partial, and US districts' counts (CivicSearch) start in January 2025.`);
     else if (n) parts.push((m.kind === "count" ? `The total for the ${n.toLocaleString()} ${label} with figures` : `The average of the ${n.toLocaleString()} ${label}' figures` + (m.col === "Poverty by year" ? " (each country's own measure, as in its note)" : "")) +
       ". Not every place has every year, so each year's change is measured on the places with figures in both years, and the line is pinned to the year most places have.");
     if (idx) parts.push("Lines start at 100 in their first year so different sizes can be compared; hover to see the numbers.");
     if (areaAdded.length) parts.push(`${[...new Set(areaAdded)].sort().join(", ")}: figures for the whole ${current.combined ? "country" : trend.area === "all" ? "country" : regionWord} only (no figures for its ${label} that year).`);
     if (current.combined && m.kind === "rate") parts.push("Each country uses its own measure, so compare the shapes of the lines, not their heights.");
-    if (place && !hasPlace) parts.push(`No ${m.name.toLowerCase()} by year for ${place.District}.`);
-    else if (hasPlace) parts.push(`The dashed line is ${place.District}.`);
-    if (hasPlace && splitsOf(place).length) parts.push(splitNote(place, hasEarly));
-    if (hasPlace && yearNote(place, m)) parts.push(yearNote(place, m));
-    else if (!hasPlace) { const nt = [...new Set(rows.map((r) => yearNote(r, m)).filter(Boolean))]; if (nt.length === 1) parts.push(nt[0]); }   // the same caveat for all its places
+    const missing = added.filter((a) => !withLine.includes(a)).map((a) => a.name);
+    if (missing.length) parts.push(`No ${m.name.toLowerCase()} by year for ${missing.join(", ")}.`);
+    if (withLine.length) parts.push(`Dashed lines: ${withLine.map((a) => a.name).join(", ")}.` +
+      (withLine.some((a) => a.e.area) ? " A region's or country's line adds up its places, as in Compare." : ""));
+    const notes = new Set();
+    withLine.forEach((a) => {
+      if (!a.e.area && splitsOf(a.row).length) notes.add(splitNote(a.row, years(a.pe).length >= 2));
+      if (yearNote(a.row, m)) notes.add(yearNote(a.row, m));
+      else if (a.e.area) { const nt = [...new Set(a.e.rows.map((r) => yearNote(r, m)).filter(Boolean))]; if (nt.length === 1) notes.add(nt[0]); }
+    });
+    if (shown.length) { const nt = [...new Set(rows.map((r) => yearNote(r, m)).filter(Boolean))]; if (nt.length === 1) notes.add(nt[0]); }   // the same caveat for all its places
+    notes.forEach((t) => parts.push(t));
     $("trend-history-note").textContent = parts.join(" ");
   }
 
-  // "Add a place": a search box over the view's places (the 20 best matches as suggestions).
+  // "Add places": a search box over places, regions and whole countries in every view (the Compare tab's search),
+  // each pick a chip with its line's colour and a button to remove it.
   function wirePlace(current, rc, redraw) {
-    const box = $("trend-place"), dl = $("trend-place-list"), clear = $("trend-place-clear");
+    const box = $("trend-place"), list = $("trend-place-results"), clear = $("trend-place-clear"), chips = $("trend-place-chips");
     if (!box) return;
-    const lab = (r) => (rc && r[rc] ? `${r.District} (${r[rc]})` : String(r.District));
-    const norm = (t) => (window.SiteSearch ? window.SiteSearch.norm(t) : String(t).toLowerCase());
+    const C = window.SiteCompare;
+    chips.innerHTML = trend.places.map((e, i) => `<span class="trend-chip" style="color:${PLACE_COLORS[i % PLACE_COLORS.length]}"><i></i>` +
+      `<span style="color:var(--text)">${esc(e.row.District)}</span><button type="button" data-i="${i}" aria-label="Remove ${esc(e.row.District)}">×</button></span>`).join("");
+    chips.onclick = (ev) => { const b = ev.target.closest("button[data-i]"); if (b) { trend.places.splice(+b.dataset.i, 1); redraw(); } };
+    clear.hidden = !trend.places.length;
+    clear.onclick = () => { trend.places = []; if (trend.area === "none") trend.area = null; redraw(); };
+    let shown = [], active = -1;
+    const hide = () => { list.hidden = true; box.setAttribute("aria-expanded", "false"); };
+    const add = (e) => {
+      if (!e) return;
+      if (!trend.places.some((x) => x.row["District ID"] === e.row["District ID"] && x.row.District === e.row.District)) {
+        if (trend.places.length >= MAX_PLACES) trend.places.shift();
+        trend.places.push(e);
+      }
+      box.value = ""; hide(); redraw(); box.focus();
+    };
     box.oninput = () => {
-      const q = norm(box.value).trim();
-      if (q.length < 2) { dl.innerHTML = ""; return; }
-      const hit = current.rows.filter((r) => norm(lab(r)).includes(q)).sort((a, b) => norm(b.District).startsWith(q) - norm(a.District).startsWith(q)).slice(0, 20);
-      dl.innerHTML = hit.map((r) => `<option value="${esc(lab(r))}"></option>`).join("");
+      active = -1;
+      shown = C && C.find ? C.find(box.value, 8) : [];
+      if (box.value.trim().length < 2) return hide();
+      list.innerHTML = shown.length
+        ? shown.map((e, i) => `<li role="option" data-i="${i}" aria-selected="false"><strong>${esc(e.row.District)}</strong><span>${esc(e.label || "")}</span></li>`).join("")
+        : `<li class="map-results-none">No place found</li>`;
+      list.hidden = false; box.setAttribute("aria-expanded", "true");
     };
-    box.onchange = () => {
-      const r = current.rows.find((x) => lab(x) === box.value) || current.rows.find((x) => norm(x.District) === norm(box.value).trim());
-      if ((r || null) === trend.place) return;   // a second change event (on leaving the box) for the same place
-      trend.place = r || null;
-      if (r) box.value = lab(r);
-      clear.hidden = !trend.place;
-      redraw();
+    box.onkeydown = (ev) => {
+      const items = [...list.querySelectorAll("li[data-i]")];
+      if (ev.key === "ArrowDown" || ev.key === "ArrowUp") {
+        ev.preventDefault();
+        if (!items.length) return;
+        active = (active + (ev.key === "ArrowDown" ? 1 : -1) + items.length) % items.length;
+        items.forEach((li, i) => li.setAttribute("aria-selected", String(i === active)));
+      } else if (ev.key === "Enter") {
+        ev.preventDefault();
+        const li = items[active >= 0 ? active : 0];
+        if (li) add(shown[Number(li.dataset.i)]);
+      } else if (ev.key === "Escape") hide();
     };
-    clear.hidden = !trend.place;
-    clear.onclick = () => { trend.place = null; box.value = ""; clear.hidden = true; redraw(); };
+    list.onmousedown = (ev) => { const li = ev.target.closest("li[data-i]"); if (li) { ev.preventDefault(); add(shown[Number(li.dataset.i)]); } };
+    box.onblur = () => setTimeout(hide, 150);
   }
 
   // One place's own lines (Find card), or two places' (Compare). entries: [{ name, row }].
@@ -344,7 +391,7 @@
     splitsOf(row).forEach((k) => (by[k.year] = by[k.year] || []).push(k));
     const txt = Object.entries(by).map(([y, ks]) => `${ks.some((k) => k.label === "Split") ? "Split" : "Merged"} in ${y}: ${ks.map((k) => k.text).join("; ")}.`).join(" ");
     const merged = splitsOf(row).some((k) => k.label === "Merged"), split = splitsOf(row).some((k) => k.label === "Split");
-    return txt + (split ? ` The solid line is ${row.District} on each year's own borders, so it drops where part of it was split off` +
+    return txt + (split ? ` ${row.District}'s line is on each year's own borders, so it drops where part of it was split off` +
       (hasEarly ? `; the dotted line counts ${row["Earlier borders"] || "the places"} as one place on the borders before the split, so its years compare.` : ".") : "") +
       (merged ? ` Before a merger the line adds up the former places, so the whole line is on today's borders.` : "");
   }

@@ -290,3 +290,13 @@ body.embed-stats [data-view="stats"] .note { display: none; }
 .terms-gate-lang button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
 .terms-gate-agree { display: block; margin: 1rem 0 0 auto; font: inherit; font-weight: 600; padding: 0.55rem 1.4rem; border: 0; border-radius: 6px; background: var(--accent); color: #fff; cursor: pointer; }
 .terms-gate-agree:focus-visible, .terms-gate-lang button:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 2px; }
+
+/* Trends: places, regions and countries added to the graph */
+.trend-search { position: relative; display: inline-flex; align-items: center; gap: .4rem; flex-wrap: wrap; }
+.trend-search input { min-width: 15rem; }
+.trend-chips { display: flex; flex-wrap: wrap; gap: .4rem; margin: .4rem 0 .2rem; }
+.trend-chips:empty { display: none; }
+.trend-chip { display: inline-flex; align-items: center; gap: .35rem; padding: .15rem .3rem .15rem .55rem; border: 1px solid var(--border); border-radius: 999px; font-size: .85rem; background: var(--surface); }
+.trend-chip i { width: .9rem; height: 0; border-top: 2px dashed currentColor; display: inline-block; }
+.trend-chip button { border: 0; background: none; cursor: pointer; color: var(--muted); font-size: 1rem; line-height: 1; padding: 0 .2rem; }
+.trend-chip button:hover { color: var(--text); }
