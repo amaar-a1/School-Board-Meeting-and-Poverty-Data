@@ -18,7 +18,9 @@ REPORT_CSV lists every CivicSearch place and what it was matched to, for checkin
 
 "Latest meeting" is the latest month with a meeting (with the day from the title of the place's latest
 meeting, when it agrees), and both it and "Meetings by year" come from inputs/civicsearch_months.json: CivicSearch's own monthly meeting counts for each
-place, from its search (keyword "board", the place's own meetings only), collected on 6 November 2026.
+place, from its search (keyword "board", the place's own meetings only), collected on 6 November 2026. CivicSearch indexes
+meetings from January 2025; the years before that come from the board's own YouTube channel (inputs/us_youtube_meetings.json,
+prep_us_youtube_history.py), and their sum goes in "Meetings before 2025 (YouTube)", outside the CivicSearch total.
 That file is a snapshot, so those yearly counts can trail the daily total by the meetings added since.
 """
 import csv
@@ -246,6 +248,10 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
     places = json.load(open(civic_path))
     months_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "inputs", "civicsearch_months.json")
     months = json.load(open(months_path)) if os.path.exists(months_path) else {}
+    # Meetings before CivicSearch's first year (2025), counted from the board's own YouTube channel
+    # (prep_us_youtube_history.py); CivicSearch's own counts stay for 2025 on.
+    yt_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "inputs", "us_youtube_meetings.json")
+    yt = json.load(open(yt_path)) if os.path.exists(yt_path) else {}
     report = []
     for p in places:
         state = p["state_name"]
@@ -277,6 +283,10 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
             km = distance_km((p.get("latitude"), p.get("longitude")), (match["lat"], match["lon"]))
             match["meetings"] += p["num_meetings"] or 0
             if p["num_meetings"]:
+                for y, n in yt.get(p.get("query_id"), {}).get("years", {}).items():
+                    if int(y) < 2025 and n:
+                        match.setdefault("years", {})[y] = match.setdefault("years", {}).get(y, 0) + n
+                        match["earlier"] = match.get("earlier", 0) + n
                 for ym, n in months.get(p.get("query_id"), {}).get("months", {}).items():
                     match.setdefault("years", {})[ym[:4]] = match.setdefault("years", {}).get(ym[:4], 0) + n
                 found = parse_date(p.get("last_meeting_title") or "")
@@ -313,7 +323,8 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
         w.writerow(["District", "State", "County", "Available Board Meetings", "Children Ages 5-17", "Children Ages 5-17 in Poverty",
                     "Percentage of Children Ages 5-17 in Poverty", "Locale", "Enrollment", "District ID", "Notes",
                     "Other Board Meetings", "Other meetings source", "Latest meeting", "Meetings by year", "Population",
-                    "Public school enrollment", "Private school enrollment (within its borders)", "Land area (km²)", "Poverty by year", "Enrollment by year", "Population by year"])
+                    "Public school enrollment", "Private school enrollment (within its borders)", "Land area (km²)", "Poverty by year", "Enrollment by year", "Population by year",
+                    "Meetings before 2025 (YouTube)"])
         for d in districts:
             w.writerow([d["name"], d["state"], d["county"], d["meetings"], d["kids"], d["poor"], d["pct"], d["locale"], d["enrollment"], d["leaid"], d["note"],
                         other.get(d["leaid"], {}).get("Other Board Meetings", ""), other.get(d["leaid"], {}).get("Other meetings source", ""),
@@ -322,7 +333,8 @@ def main(saipe_path, nces_path, civic_path, out_path, report_path):
                         d["enrollment"],   # NCES counts public schools only
                         private.get(d["leaid"], "") if d["enrollment"] != "" else "",
                         land.get(d["leaid"], ""),   # from the map borders (prep_us_area.py), for population density
-                        "; ".join(f"{y}: {v}%" for y, v in sorted(hist.get(d["leaid"], {}).items())), enr_years(d), "; ".join(f"{y}: {v}" for y, v in sorted(pop_hist.get(d["leaid"], {}).items()))])
+                        "; ".join(f"{y}: {v}%" for y, v in sorted(hist.get(d["leaid"], {}).items())), enr_years(d), "; ".join(f"{y}: {v}" for y, v in sorted(pop_hist.get(d["leaid"], {}).items())),
+                        d.get("earlier", "") if d["meetings"] else ""])
     with open(report_path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["CivicSearch name", "State", "Meetings", "Matched LEAID", "Matched district (Census name)", "How", "Distance km"])
