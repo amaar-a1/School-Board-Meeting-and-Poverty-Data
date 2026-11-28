@@ -23,8 +23,8 @@ SIMPLIFY = 0.005  # degrees
 HOLE = 0.3        # square degrees: holes larger than this (Lesotho inside South Africa) stay
 
 
-def topo_features(t):
-    """The features of a TopoJSON file, as GeoJSON."""
+def topo_features(t, keep_props=False):
+    """The features of a TopoJSON file, as GeoJSON (with their properties, if asked)."""
     sx, sy = t["transform"]["scale"]
     tx, ty = t["transform"]["translate"]
     arcs = []
@@ -47,9 +47,9 @@ def topo_features(t):
     for obj in t["objects"].values():
         for g in obj.get("geometries", []):
             if g["type"] == "Polygon":
-                feats.append({"geometry": {"type": "Polygon", "coordinates": [ring(r) for r in g["arcs"]]}})
+                feats.append({"geometry": {"type": "Polygon", "coordinates": [ring(r) for r in g["arcs"]]}, "properties": g.get("properties") if keep_props else None})
             elif g["type"] == "MultiPolygon":
-                feats.append({"geometry": {"type": "MultiPolygon", "coordinates": [[ring(r) for r in p] for p in g["arcs"]]}})
+                feats.append({"geometry": {"type": "MultiPolygon", "coordinates": [[ring(r) for r in p] for p in g["arcs"]]}, "properties": g.get("properties") if keep_props else None})
     return feats
 
 

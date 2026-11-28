@@ -773,6 +773,47 @@
     outlineLayer._list = list;
   }
 
+  // The data set a region's view belongs to (its country's; a US state's, the whole US), or null.
+  function parentOf(ds) {
+    if (!ds || ds.combined) return null;
+    if (ds.parent) return ds.parent;
+    if (ds.state && !String(ds.state).includes(":") && window.SiteData) return window.SiteData.fromKey("US");
+    return null;
+  }
+  // Whether an area is inside the country of the region on screen (in the country's view, it would be in view).
+  function inParentView(geoid) {
+    const p = parentOf(current);
+    if (!p) return false;
+    const saved = current;
+    current = p;
+    try { return inView(geoid); } finally { current = saved; }
+  }
+  // The picked region's outline (data/map/regions/<its country's data file>.json, map_region_outlines.py), drawn
+  // over the map in the accent colour with a halo, so it shows on any colouring.
+  let regionMark = null, regionMarkKey = "", markRenderer = null;
+  const regionFiles = {};
+  function drawRegionMark() {
+    const p = parentOf(current);
+    const file = p && p.file ? String(p.file).split("/").pop().replace(/\.csv$/, "") : "";
+    const key = file && current.rows && current.rows.length ? `${file}|${current.name}|${isDark()}` : "";
+    if (key === regionMarkKey) return;
+    if (regionMark) { regionMark.remove(); regionMark = null; }
+    regionMarkKey = key;
+    if (!key) return;
+    const got = regionFiles[file] || (regionFiles[file] = fetch(`data/map/regions/${file}.json`).then((r) => (r.ok ? r.json() : null)).catch(() => null));
+    got.then((d) => {
+      if (!d || regionMarkKey !== key || !map) return;
+      const lines = (d.regions || {})[String(current.rows[0][d.col] ?? "")];
+      if (!lines) return;
+      const ll = lines.map((line) => line.map(([x, y]) => [y, x]));
+      const accent = getComputedStyle(document.documentElement).getPropertyValue("--accent").trim() || "#2a6fdb";
+      regionMark = L.layerGroup([
+        L.polyline(ll, { renderer: markRenderer, pane: "mark", color: isDark() ? "#000" : "#fff", weight: 6, opacity: 0.85, interactive: false }),
+        L.polyline(ll, { renderer: markRenderer, pane: "mark", color: accent, weight: 3, opacity: 1, interactive: false })
+      ]).addTo(map);
+    });
+  }
+
   function style(feature) {
     if (isWorld(feature)) return worldStyle();
     if (undefinedArea(feature)) return { fillColor: NO_DISTRICT, fillOpacity: 0.9, color: "#8a9a80", weight: 0.3, dashArray: "2 3" };
@@ -787,9 +828,12 @@
     }
     // opacity and interactive undo the hidden state above (setStyle keeps options it isn't given).
     const lvl = detailLevel() !== "place" && areaEntry(gid(feature));
-    const fill = lvl && ["rank", "peers"].includes(metricNow()) ? NO_DATA : color(lvl ? shownRow(gid(feature)) : rowFor(gid(feature)), gid(feature)), op = on ? 0.85 : 0.35;
+    // A region's view: the rest of its country stays half-shown, so the region reads as part of it (its outline is
+    // drawn over the map, drawRegionMark); other countries are faded further.
+    const mid = !on && inParentView(gid(feature));
+    const fill = lvl && ["rank", "peers"].includes(metricNow()) ? NO_DATA : color(lvl ? shownRow(gid(feature)) : rowFor(gid(feature)), gid(feature)), op = on ? 0.85 : mid ? 0.55 : 0.35;
     // solid, so the lines inside an area (drawn over one another) don't show
-    if (lvl) return { fillColor: fill, fillOpacity: on ? 1 : 0.35, opacity: on ? 1 : 0.35, color: fill, weight: 2, interactive: true };
+    if (lvl) return { fillColor: fill, fillOpacity: on ? 1 : mid ? 0.6 : 0.35, opacity: on ? 1 : mid ? 0.6 : 0.35, color: fill, weight: 2, interactive: true };
     // a map-only part of a country (no row of the data, so in no area): no lines of its own either
     if (detailLevel() !== "place") return { fillColor: fill, fillOpacity: op, opacity: 0, interactive: true };   // a region or country, read as one
     if (olderBorders(feature) && feature.properties.INSIDE) return { fillColor: fill, fillOpacity: 0, opacity: 0, interactive: false };   // under the older border it came from, which shows alone
@@ -1138,6 +1182,7 @@
     }));
     islandDots.forEach(({ dot, f }) => { const st = style(f); dot.setStyle({ fillColor: st.fillColor, fillOpacity: st.fillOpacity, opacity: st.fillOpacity }); });
     drawOutlines();
+    drawRegionMark();
     legend();
   }
 
@@ -1474,6 +1519,9 @@
     renderer = L.canvas({ padding: 0.3 });
     // Islands and small countries are circles drawn above every border (their own pane, over the canvas the
     // districts share), so a country loaded later never covers them. SVG, so the pane only catches the circles.
+    // the picked region's outline: above every border, below the island dots; it never takes the mouse
+    const mp = map.createPane("mark"); mp.style.zIndex = 440; mp.style.pointerEvents = "none";
+    markRenderer = L.canvas({ pane: "mark", padding: 0.3 });
     map.createPane("dots").style.zIndex = 450;
     dotRenderer = L.svg({ pane: "dots", padding: 0.3 });
     makeLayer = (fc) => L.geoJSON(fc, {
@@ -1633,6 +1681,8 @@
 
   window.SiteMap = {
     rowFor: (geoid) => rowFor(geoid),
+    // The map's view, [west, south, east, north] and its size in pixels (for the Overview's pictures of the map).
+    view: () => { if (!map) return null; const b = map.getBounds(), z = map.getSize(); return { box: [b.getWest(), b.getSouth(), b.getEast(), b.getNorth()].map((v) => Math.round(v * 1e4) / 1e4), size: [z.x, z.y] }; },
     // For checking: the tooltip text of the first area whose ID starts with `prefix`.
     tipFor: (prefix) => {
       let t = "";

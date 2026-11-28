@@ -14,6 +14,7 @@ on:
       - "docs/compare.js"
       - "data-prep/map_previews.js"
       - "data-prep/map_outlines.py"
+      - "data-prep/map_region_outlines.py"
   schedule:
     - cron: "23 7 6 * *"   # the 6th of each month
   workflow_dispatch:
@@ -35,8 +36,10 @@ jobs:
         run: |
           python3 -m pip install --user --break-system-packages shapely
           cd "$RUNNER_TEMP" && npm init -y >/dev/null && npm install playwright@1.49.1 && npx playwright install --with-deps chromium
-      - name: Countries' outlines
-        run: python3 data-prep/map_outlines.py
+      - name: Countries' and regions' outlines
+        run: |
+          python3 data-prep/map_outlines.py
+          (cd data-prep && python3 map_region_outlines.py)
       - name: Take the pictures
         run: |
           (cd docs && python3 -m http.server 8765 >/dev/null 2>&1 &)
@@ -44,7 +47,7 @@ jobs:
           NODE_PATH="$RUNNER_TEMP/node_modules" node data-prep/map_previews.js
       - name: Commit
         run: |
-          git add docs/img/map-preview docs/data/map/outlines.json
+          git add docs/img/map-preview docs/data/map/outlines.json docs/data/map/regions
           if git diff --cached --quiet; then
             echo "No changes."
           else

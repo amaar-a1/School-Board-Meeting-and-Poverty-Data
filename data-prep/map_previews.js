@@ -1,6 +1,6 @@
 // Pictures of the map for the Overview's preview (docs/img/map-preview/), taken from the site itself with a headless
 // browser, so they show the latest data:
-//   - the whole world, by region (states, provinces), coloured by each of several measures: <metric>.jpg
+//   - the whole world, by district or municipality, coloured by each of several measures: <metric>.jpg
 //   - each country's and US state's own view, by district or municipality, for a few measures: v/<key>/<metric>.jpg
 // and previews.json, which lists them. Run by .github/workflows/map-previews.yml whenever docs/data changes (and by
 // hand: serve docs/ on port 8765, then `node data-prep/map_previews.js`). Map tiles are left out, so the pictures
@@ -23,7 +23,7 @@ const LOCAL = { "papaparse.min.js": "papaparse/papaparse.min.js", "chart.umd.min
   const listFile = path.join(OUT, "previews.json");
   let old = {};
   try { old = JSON.parse(fs.readFileSync(listFile, "utf8")); } catch (e) { /* none yet */ }
-  const list = { updated: new Date().toISOString().slice(0, 10), titles: old.titles || {}, world: old.world || [], views: old.views || {} };
+  const list = { updated: new Date().toISOString().slice(0, 10), titles: old.titles || {}, world: old.world || [], views: old.views || {}, boxes: old.boxes || {} };
   delete list.items;
   const b = await chromium.launch();
   const ctx = await b.newContext({ viewport: { width: 900, height: 760 }, deviceScaleFactor: 1 });
@@ -44,6 +44,9 @@ const LOCAL = { "papaparse.min.js": "papaparse/papaparse.min.js", "chart.umd.min
     await p.waitForFunction(() => !document.getElementById("map-status").textContent, null, { timeout: 90000 }).catch(() => {});
     await p.waitForTimeout(3000);   // the borders and colours finish drawing
     const got = [];
+    // where the pictures are of, so the Overview can mark a region on them
+    const v = await p.evaluate(() => window.SiteMap && window.SiteMap.view && window.SiteMap.view());
+    if (v) list.boxes[key] = v;
     for (const m of metrics) {
       const title = await p.evaluate((m) => {
         const s = document.getElementById("map-metric"), o = [...s.options].find((x) => x.value === m && !x.disabled && !x.hidden);
@@ -62,7 +65,7 @@ const LOCAL = { "papaparse.min.js": "papaparse/papaparse.min.js", "chart.umd.min
     return got;
   }
 
-  if (!ONLY || ONLY.has("ALL")) list.world = await shoot("ALL", "d=ALL&at=22,10,2&detail=region", WORLD, "");
+  if (!ONLY || ONLY.has("ALL")) list.world = await shoot("ALL", "d=ALL&at=22,10,2", WORLD, "");
   // The views: each country, and each US state
   await p.goto(BASE, { waitUntil: "load" });
   await p.waitForFunction(() => window.SiteData && window.SiteData.datasets.length > 5, null, { timeout: 60000 });

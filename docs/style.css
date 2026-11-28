@@ -352,3 +352,7 @@ body.embed-stats [data-view="stats"] .note { display: none; }
 .detail-slider-box { display: inline-flex; flex-direction: column; width: 170px; }
 .detail-slider-box input[type="range"] { width: 100%; margin: 0; accent-color: var(--accent); }
 .detail-slider-ticks { display: flex; justify-content: space-between; font-size: .72rem; color: var(--muted); }
+/* the picked region, outlined on its country's pictures */
+#map-preview-mark { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+#map-preview-mark .mark-halo { stroke: #fff; opacity: .85; }
+#map-preview-mark .mark-line { stroke: var(--accent); }

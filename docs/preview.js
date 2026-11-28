@@ -44,10 +44,44 @@
     if (!s || !SD) return;
     const set = (id, v) => { const el = $(id); if (el && [...el.options].some((o) => o.value === v)) { el.value = v; el.dispatchEvent(new Event("change")); } };
     SD.setView("map");
-    set("map-detail", s.key === "ALL" ? "region" : "place");
+    set("map-detail", "place");
     set("map-metric", s.metric);
     location.hash = "map";
     window.scrollTo({ top: 0, behavior: calm ? "auto" : "smooth" });
+  }
+
+  // A region's view shows its country's pictures, with the region outlined on them: its outline
+  // (data/map/regions/<country's data file>.json) placed by where the pictures are of (previews.json's boxes, the
+  // map's view when they were taken: west, south, east, north, and the size in pixels), in Web Mercator like the map.
+  const regionFiles = {};
+  function regionOverlay(ds, key) {
+    const old = document.getElementById("map-preview-mark");
+    if (old) old.remove();
+    const SD = window.SiteData, box = list && list.boxes && list.boxes[key];
+    if (!ds || !box || !SD || ds.combined || SD.keyOf(ds) === key) return Promise.resolve("");
+    const parent = ds.parent || SD.fromKey(key);
+    const file = parent && parent.file ? String(parent.file).split("/").pop().replace(/\.csv$/, "") : "";
+    if (!file || !ds.rows || !ds.rows.length) return Promise.resolve("");
+    const got = regionFiles[file] || (regionFiles[file] = fetch(`data/map/regions/${file}.json`).then((r) => (r.ok ? r.json() : null)).catch(() => null));
+    return got.then((d) => {
+      const lines = d && (d.regions || {})[String(ds.rows[0][d.col] ?? "")];
+      if (!lines) return "";
+      const [w, so, e, n] = box.box, [W, H] = box.size;
+      const Y = (lat) => Math.log(Math.tan(Math.PI / 4 + (Math.max(-85, Math.min(85, lat)) * Math.PI) / 360));
+      const px = (x, y) => `${(((x - w) / (e - w)) * W).toFixed(1)},${(((Y(n) - Y(y)) / (Y(n) - Y(so))) * H).toFixed(1)}`;
+      const path = lines.map((l) => "M" + l.map(([x, y]) => px(x, y)).join("L") + "Z").join("");
+      const NS = "http://www.w3.org/2000/svg", svg = document.createElementNS(NS, "svg");
+      svg.id = "map-preview-mark"; svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("preserveAspectRatio", "xMidYMid slice");
+      svg.setAttribute("aria-hidden", "true");
+      [["halo", 6], ["line", 3]].forEach(([cls, sw]) => {
+        const el = document.createElementNS(NS, "path");
+        el.setAttribute("d", path); el.setAttribute("class", `mark-${cls}`); el.setAttribute("stroke-width", sw);
+        el.setAttribute("vector-effect", "non-scaling-stroke"); el.setAttribute("fill", "none"); el.setAttribute("stroke-linejoin", "round");
+        svg.appendChild(el);
+      });
+      document.getElementById("map-preview-pics").appendChild(svg);
+      return ds.name || "";
+    });
   }
 
   function show(ds) {
@@ -55,7 +89,7 @@
       const box = $("map-preview");
       if (!box) return;
       const next = slidesFor(ds);
-      const sig = next.map((s) => s.src).join(",");
+      const sig = next.map((s) => s.src).join(",") + "|" + (ds && ds.name);
       if (sig === showing) return;
       showing = sig; slides = next; at = 0;
       box.hidden = !slides.length;
@@ -77,8 +111,10 @@
         b.addEventListener("click", (e) => { e.stopPropagation(); go(i); tick(); });
         dots.appendChild(b);
       });
-      $("map-preview-updated").textContent = list.updated ? `Map as of ${new Date(list.updated + "T12:00:00").toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}` : "";
+      const asOf = list.updated ? `Map as of ${new Date(list.updated + "T12:00:00").toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}` : "";
+      $("map-preview-updated").textContent = asOf;
       paint(); tick();
+      regionOverlay(ds, slides[0].key).then((name) => { if (name) $("map-preview-updated").textContent = `Outlined: ${name}` + (asOf ? ` · ${asOf}` : ""); });
     });
   }
 
