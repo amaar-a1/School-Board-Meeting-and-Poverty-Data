@@ -429,7 +429,7 @@
   // (The country is ?d=, a place ?place=, a comparison ?cmp=, the map's position ?at=, the language ?lang=, the tab #view.)
   const LINK_CONTROLS = { loc: "f-locale", meet: "f-meetings", pmin: "f-pov-min", pmax: "f-pov-max", size: "f-size", q: "search",
     x: "x-col", y: "y-col", chart: "chart-type", top: "chart-limit", sboards: "stats-boards",
-    metric: "map-metric", year: "map-year", noest: "map-no-est", mboards: "map-boards-only", overlap: "map-canada-overlap", frsmall: "map-fr-small", second: "map-secondary" };
+    metric: "map-metric", detail: "map-detail", year: "map-year", noest: "map-no-est", mboards: "map-boards-only", overlap: "map-canada-overlap", frsmall: "map-fr-small", second: "map-secondary" };
   const linkEvent = (el) => (el.type === "checkbox" || el.tagName === "SELECT" ? "change" : "input");
   function watchLinkControls() {
     Object.entries(LINK_CONTROLS).forEach(([k, id]) => {
@@ -499,6 +499,7 @@
       $(id).closest("label").hidden = !has;
       if (!has) $(id).value = "";
     });
+    if (window.SitePreview) window.SitePreview.show(current);
     if (view === "size") renderSize();
     if (view === "locale") renderLocale();
     if (view === "density") renderDensity();
@@ -1447,7 +1448,8 @@
   const viewFromHash = () => { if (["#size", "#locale", "#density", "#boards", "#map", "#trends", "#stats", "#compare", "#guide", "#rules", "#sources"].includes(location.hash)) setView(location.hash.slice(1)); };
   viewFromHash();
   window.addEventListener("hashchange", viewFromHash);
-  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+  const onTheme = (f) => (window.SiteTheme ? window.SiteTheme.onChange(f) : window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", f));
+  onTheme(() => {
     if (!current) return;
     renderChart();
     renderUrban();
@@ -1455,6 +1457,8 @@
     if (view === "locale") renderLocale();
     if (view === "density") renderDensity();
     if (view === "boards") renderBoards();
+    if (view === "trends") renderTrends();
+    if (view === "stats" && window.SiteStats) window.SiteStats.render(current);
   });
 
   load();

@@ -11,7 +11,7 @@
   --accent-2: #d9762b;
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #14171a;
     --surface: #1d2125;
     --text: #e6e8ea;
@@ -24,6 +24,21 @@
     --accent-2: #f0a35e;
   }
 }
+:root[data-theme="dark"] {
+    --bg: #14171a;
+    --surface: #1d2125;
+    --text: #e6e8ea;
+    --muted: #9aa3ab;
+    --border: #30363c;
+    --accent: #6ea1f0;
+    --accent-soft: #1f2d42;
+    --hero: #0f2235;
+    --hero-text: #e6edf5;
+    --accent-2: #f0a35e;
+  }
+:root { color-scheme: light dark; }
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
 * { box-sizing: border-box; }
 body {
   margin: 0;
@@ -184,7 +199,8 @@ footer p { margin: 0 0 6px; }
 #boards-table tr.highlight td { background: color-mix(in srgb, var(--accent) 14%, transparent); font-weight: 600; }
 /* Statistics view */
 :root { --forest-less: #c0392b; --forest-more: #2471a3; }
-@media (prefers-color-scheme: dark) { :root { --forest-less: #f1948a; --forest-more: #7fb3d5; } }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --forest-less: #f1948a; --forest-more: #7fb3d5; } }
+:root[data-theme="dark"] { --forest-less: #f1948a; --forest-more: #7fb3d5; }
 .stats-table td.forest-cell { width: 130px; min-width: 100px; padding-top: 10px; color: var(--text); }
 .stats-table svg.forest { width: 100%; height: 14px; display: block; overflow: visible; }
 .stats-table th.forest-head { display: table-cell; font-weight: 400; font-size: .75rem; color: var(--muted); }
@@ -201,7 +217,8 @@ footer p { margin: 0 0 6px; }
 .stats-table th, .stats-table td { padding: 6px 8px; }
 /* Data quality labels */
 :root { --q-good: #2e8b57; --q-fair: #d4a017; --q-weak: #c0392b; }
-@media (prefers-color-scheme: dark) { :root { --q-good: #5dbb84; --q-fair: #e8c14e; --q-weak: #f1948a; } }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --q-good: #5dbb84; --q-fair: #e8c14e; --q-weak: #f1948a; } }
+:root[data-theme="dark"] { --q-good: #5dbb84; --q-fair: #e8c14e; --q-weak: #f1948a; }
 .quality { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; font-size: .85rem; margin: 6px 0 10px; color: var(--muted); }
 .quality .q-title { font-weight: 600; color: var(--text); }
 .q-chip { display: inline-flex; align-items: baseline; gap: 4px; }
@@ -300,3 +317,38 @@ body.embed-stats [data-view="stats"] .note { display: none; }
 .trend-chip i { width: .9rem; height: 0; border-top: 2px dashed currentColor; display: inline-block; }
 .trend-chip button { border: 0; background: none; cursor: pointer; color: var(--muted); font-size: 1rem; line-height: 1; padding: 0 .2rem; }
 .trend-chip button:hover { color: var(--text); }
+
+/* The map's preview at the top of the Overview (preview.js) */
+.map-preview { padding: 0; overflow: hidden; }
+.map-preview-open { display: block; width: 100%; padding: 0; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.map-preview-pics { position: relative; display: block; aspect-ratio: 16 / 7; background: #f2f2f0; overflow: hidden; }
+.map-preview-pics img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .8s ease; }
+.map-preview-pics img.on { opacity: 1; }
+.map-preview-bar { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 10px 16px 0; }
+.map-preview-go { color: var(--accent); font-size: .9rem; white-space: nowrap; }
+.map-preview-open:hover .map-preview-go, .map-preview-open:focus-visible .map-preview-go { text-decoration: underline; }
+.map-preview-open:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.map-preview-foot { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; padding: 6px 16px 12px; }
+.map-preview-foot .note { margin: 0; }
+.map-preview-dots { display: flex; gap: 6px; }
+.map-preview-dots button { width: 10px; height: 10px; padding: 0; border-radius: 50%; border: 1px solid var(--muted); background: transparent; cursor: pointer; }
+.map-preview-dots button[aria-current="true"] { background: var(--accent); border-color: var(--accent); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .map-preview-pics { background: #2a2d31; } :root:not([data-theme="light"]) .map-preview-pics img.on { opacity: .92; } }
+:root[data-theme="dark"] .map-preview-pics { background: #2a2d31; } :root[data-theme="dark"] .map-preview-pics img.on { opacity: .92; }
+@media (max-width: 600px) { .map-preview-pics { aspect-ratio: 16 / 9; } }
+
+/* Light/dark switch, top right of the header (theme.js) */
+.theme-toggle { float: right; display: inline-flex; align-items: center; gap: .45rem; margin: 2px 1.25rem 0 0; font-size: .9rem; cursor: pointer; }
+.theme-toggle input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.switch-track { position: relative; width: 38px; height: 22px; border-radius: 11px; background: rgba(255, 255, 255, .25); border: 1px solid rgba(255, 255, 255, .5); transition: background .2s; flex: none; }
+.switch-track::after { content: ""; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 50%; background: #fff; transition: transform .2s; }
+.theme-toggle input:checked + .switch-track { background: var(--accent); border-color: var(--accent); }
+.theme-toggle input:checked + .switch-track::after { transform: translateX(16px); }
+.theme-toggle input:focus-visible + .switch-track { outline: 2px solid #fff; outline-offset: 2px; }
+@media (max-width: 600px) { .theme-toggle { float: none; display: flex; margin: 0 0 .5rem; } }
+
+/* The map's Detail slider: district, regional, national */
+.detail-slider { display: inline-flex; align-items: center; gap: .5rem; }
+.detail-slider-box { display: inline-flex; flex-direction: column; width: 170px; }
+.detail-slider-box input[type="range"] { width: 100%; margin: 0; accent-color: var(--accent); }
+.detail-slider-ticks { display: flex; justify-content: space-between; font-size: .72rem; color: var(--muted); }

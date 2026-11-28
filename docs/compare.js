@@ -21,9 +21,13 @@
     for (const c of cands) { const v = new Set(ds.rows.map((r) => r[c]).filter(Boolean)); if (v.size >= 2 && v.size <= 150) return c; }
     return null;
   }
+  let areasSig = "";
   function buildAreas() {
-    if (areas) return areas;
     const SD = window.SiteData, S = window.SiteSearch;
+    // rebuilt when more countries' rows have loaded (and the search index with them)
+    const sig = (SD ? SD.datasets : []).map((ds) => ds.rows.length).join(",") + (S ? "s" : "");
+    if (areas && sig === areasSig) return areas;
+    areasSig = sig;
     areas = [];
     (SD ? SD.datasets : []).forEach((ds) => {
       if (ds.combined || ds.country === "ISLE" || !ds.rows.length) return;
@@ -66,6 +70,15 @@
       "Enrollment year": est ? `total of its places' figures; ${rows.filter((r) => r["Enrollment estimated"]).length.toLocaleString()} of them estimated (school-age children, no count published)` : "total of its places' figures", "School system": `${rows.length.toLocaleString()} ${(ds.recordLabel || "places").toLowerCase()}`,
       "Poverty measure": pn ? `average of ${pn.toLocaleString()} places' figures, weighted by population (${(povOf({ row: rows.find((r) => povCol(r)), ds }) || {}).measure || pcol})` : "" };
     if (pn) row[pcol] = (pv / pw).toFixed(2) + "%";
+    // Density: its people over its land (each place's land from its population and density); locale: the one most of
+    // its people live in. (For the map shown by region or country.)
+    let dp = 0, da = 0;
+    rows.forEach((r) => { const p = num(r.Population), d = num(r["People per km² (estimated)"]); if (p > 0 && d > 0) { dp += p; da += p / d; } });
+    if (da > 0) row["People per km² (estimated)"] = Math.round(10 * dp / da) / 10;
+    const loc = {};
+    rows.forEach((r) => { if (r.Locale) loc[r.Locale] = (loc[r.Locale] || 0) + (num(r.Population) > 0 ? num(r.Population) : 1); });
+    const lk = Object.keys(loc).sort((a, b) => loc[b] - loc[a])[0];
+    if (lk) row.Locale = lk;
     row._pubBase = both.length ? sum("Enrollment", both) : 0;
     // Over time: each measure linked over the area's places; meetings added up.
     if (H) H.MEASURES.forEach((m) => {
@@ -228,5 +241,5 @@
     return buildAreas().concat(entries()).filter((e) => words.every((w) => e.text.includes(w)))
       .sort((a, b) => (S.norm(b.row.District).startsWith(q) - S.norm(a.row.District).startsWith(q)) || b.size - a.size).slice(0, n);
   }
-  window.SiteCompare = { start, load, render, find, rowOf, entryById, picked: () => picked.map((e) => e && e.row["District ID"]) };
+  window.SiteCompare = { start, load, render, find, rowOf, entryById, areas: buildAreas, picked: () => picked.map((e) => e && e.row["District ID"]) };
 })();

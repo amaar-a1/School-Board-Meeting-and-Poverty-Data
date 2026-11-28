@@ -1,0 +1,55 @@
+name: Map previews
+
+# The pictures of the map at the top of each Overview (docs/img/map-preview/, data-prep/map_previews.js), taken from
+# the site with a headless browser so they show the latest data, and the countries' outlines for the map's region
+# and country views (docs/data/map/outlines.json, data-prep/map_outlines.py). Runs when the data or the map changes
+# on main, and monthly for the daily meeting counts; the commit is published by the next "Update data and deploy
+# website" run.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/data/**"
+      - "docs/map.js"
+      - "docs/compare.js"
+      - "data-prep/map_previews.js"
+      - "data-prep/map_outlines.py"
+  schedule:
+    - cron: "23 7 6 * *"   # the 6th of each month
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: map-previews
+  cancel-in-progress: true
+
+jobs:
+  previews:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install shapely and Playwright
+        run: |
+          python3 -m pip install --user --break-system-packages shapely
+          cd "$RUNNER_TEMP" && npm init -y >/dev/null && npm install playwright@1.49.1 && npx playwright install --with-deps chromium
+      - name: Countries' outlines
+        run: python3 data-prep/map_outlines.py
+      - name: Take the pictures
+        run: |
+          (cd docs && python3 -m http.server 8765 >/dev/null 2>&1 &)
+          sleep 2
+          NODE_PATH="$RUNNER_TEMP/node_modules" node data-prep/map_previews.js
+      - name: Commit
+        run: |
+          git add docs/img/map-preview docs/data/map/outlines.json
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Update the map previews"
+            for i in 1 2 3; do git pull --rebase && git push && break; sleep 10; done
+          fi
