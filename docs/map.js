@@ -436,6 +436,7 @@
     let n = toNumber(row["Available Board Meetings"]);
     if (!(n > 0) && toNumber(row["Other Board Meetings"]) > 0) n = toNumber(row["Other Board Meetings"]);
     if (!(n > 0)) return { v: 0 };
+    n += toNumber(row["Meetings before 2025 (YouTube)"]) > 0 ? toNumber(row["Meetings before 2025 (YouTube)"]) : 0;   // US: the years before CivicSearch's
     const y = yearPairs(row["Meetings by year"]).filter((p) => p[1] > 0);
     const first = y.length ? y[0][0] : (String(row["Latest meeting"] || "").match(/^(\d{4})/) || [])[1];
     if (!first) return null;
@@ -845,6 +846,7 @@
       (isNaN(povValue(r)) && !isNaN(povValue(r, true)) ? `Shown on the map: ${povValue(r, true).toFixed(1)}% (${r["Unmet basic needs (NBI, 2010)"] ? "unmet basic needs, 2010" : `its latest earlier figure, ${String(r["Poverty by year"] || "").split(";").map((x) => x.trim().split(":")[0]).sort().pop()}`})<br>` : "") +
       `Available board meetings: ${isNaN(meet) ? "0 (no school board)" : meet.toLocaleString()}` +
       (standIn(r) ? ` (a stand-in: council or parliament meetings, not a school board's${boardsOnly() ? (metricNow() === "recency" ? "; left out with School boards only" : "; shown as 0 with School boards only") : ""})` : r["Meeting body"] ? " (school board or equivalent)" : "") +
+      (toNumber(r["Meetings before 2025 (YouTube)"]) > 0 ? ` on CivicSearch since January 2025; ${toNumber(r["Meetings before 2025 (YouTube)"]).toLocaleString()} earlier on the board's YouTube channel` : "") +
       (toNumber(r["Other Board Meetings"]) > 0 ? `${r.State ? " on CivicSearch" : meet > 0 ? " recorded" : ""}; ${toNumber(r["Other Board Meetings"]).toLocaleString()} from ${r.State ? "other sources" : "the council's or board's own records"} (see note)` : "") +
       (!(meet > 0) && !(toNumber(r["Other Board Meetings"]) > 0) && !r.State && !isCA(gid(feature)) && eu && eu !== "JP" ? `<span class="tip-zero"> — none found on YouTube; the council may post on Facebook or its own website instead</span>` : "") + `<br>` +
       `Enrollment: ${isNaN(enr) ? "not reported" : enr.toLocaleString()}${r["Enrollment estimated"] ? " (estimated: school-age children, no count published)" : /estimated/i.test(r["Enrollment year"] || "") ? ` (${esc(r["Enrollment year"])})` : realZero(r) || (eu === "AU" && !/^2021 Census/.test(r["Enrollment year"] || "") && r["Enrollment year"]) ? ` (${esc(r["Enrollment year"])})` : ""}` + rankLine(r, gid(feature)) +
@@ -1013,7 +1015,7 @@
         `<span class="map-faded">The change in ${metricNow() === "changeEnr" ? "enrollment" : "population"} between the earliest and latest years given, in percent. So far for ${metricNow() === "changeEnr" ? "the US, Japan, Colombia, Taiwan, Norway, Sweden, Denmark, the Netherlands, Portugal, Peru, Indonesia, Malaysia, Slovenia, South Korea, Lithuania and Georgia" : "33 countries, among them the US, most of Europe, the UK, Japan (census years), Mexico, Brazil, Colombia, Australia, Argentina, Chile, Indonesia and Paraguay (projections)"}</span>`);
     if (metricNow() === "meetYear")
       items.push(`<span><i style="background:${NO_DATA}"></i>Meetings found, but undated</span>`,
-        `<span class="map-faded">Meetings recorded in ${selectedYear() || "the chosen year"}, from the dates in the recordings' titles (US districts: CivicSearch's monthly counts, from January 2025). The current year is partial; press Play to step through the years</span>`);
+        `<span class="map-faded">Meetings recorded in ${selectedYear() || "the chosen year"}, from the dates in the recordings' titles (US districts: CivicSearch's monthly counts from January 2025, and before that the board's own YouTube channel). The current year is partial; press Play to step through the years</span>`);
     if (metricNow() === "perYear")
       items.push(`<span><i style="background:${NO_DATA}"></i>Meetings found, but no dates to count years from</span>`,
         `<span class="map-faded">Meetings found divided by the years since the first one found (from the recordings' dates), so a council that began posting recently isn't ranked below one with a long archive</span>`);

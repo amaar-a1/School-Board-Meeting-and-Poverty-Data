@@ -19,6 +19,8 @@ window.SOURCES = [
       { only: "Texas", title: "Individual CivicSearch district pages, such as Alamo Heights ISD. All 74 Texas district pages were checked.", url: "https://schools.civicsearch.org/alamo-heights-isd-texas" },
       { only: "United States", title: "CivicSearch school district list", url: "https://schools.civicsearch.org/cities" },
       { only: "United States", title: "CivicSearch district list data (the meeting counts behind the district list, for every state; downloaded daily)", url: "https://schools.civicsearch.org/api/get_place_list" },
+      { only: "United States", title: "Each board's YouTube channel (the channel of its latest meeting on CivicSearch), for meetings before 2025: video titles listed 28 November 2026", url: "https://www.youtube.com/" },
+      { only: "United States", title: "Census Bureau, American Community Survey 2019–2023, table B14002 (school enrollment by type of school), for districts that run no schools", url: "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/" },
       { only: "United States", title: "USLege school board coverage, such as Carrollton-Farmers Branch ISD (checked, not used for counts)", url: "https://www.uslege.ai/tracking/carrollton-farmers-branch-independent-school-district" }
     ],
     note: "USLege covers about 60 school districts nationwide and counts only the last six months of meetings, so its numbers aren't comparable with CivicSearch's and weren't used."
