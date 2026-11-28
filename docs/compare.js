@@ -219,5 +219,14 @@
   const q = new URLSearchParams(location.search).get("cmp");
   if (q) load(q.split(","));
   else render();
-  window.SiteCompare = { start, load, render, picked: () => picked.map((e) => e && e.row["District ID"]) };
+  // For the Trends tab's "Add places": the same search over places, regions and countries, and an entry's row.
+  function find(text, n = 8) {
+    const S = window.SiteSearch;
+    const q = S ? S.norm(text).trim() : String(text).toLowerCase().trim();
+    if (q.length < 2) return [];
+    const words = q.split(/\s+/);
+    return buildAreas().concat(entries()).filter((e) => words.every((w) => e.text.includes(w)))
+      .sort((a, b) => (S.norm(b.row.District).startsWith(q) - S.norm(a.row.District).startsWith(q)) || b.size - a.size).slice(0, n);
+  }
+  window.SiteCompare = { start, load, render, find, rowOf, entryById, picked: () => picked.map((e) => e && e.row["District ID"]) };
 })();
