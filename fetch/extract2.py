@@ -42,6 +42,10 @@ def acs_part():
     json.dump({"source": "ACS 2019-2023 5-year, table B14002 (K-12 enrollment of residents by type of school)", "districts": out}, open("fetch/out/c67/acs_b14002_sd.json", "w"))
     lg.close()
 acs_part()
+# saved now, so it needn't wait for the YouTube part
+for c in (["git", "config", "user.name", "github-actions[bot]"], ["git", "config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com"],
+          ["git", "add", "fetch/out/c67"], ["git", "commit", "-m", "ACS B14002 by school district"], ["git", "push"]):
+    subprocess.run(c, check=False)
 
 places = json.loads(urllib.request.urlopen(urllib.request.Request("https://schools.civicsearch.org/api/get_place_list", headers=UA), timeout=180).read())
 log.write(f"places {len(places)}\n"); log.flush()
