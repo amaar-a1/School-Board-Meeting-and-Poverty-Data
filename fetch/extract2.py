@@ -1,5 +1,5 @@
 import urllib.parse
-# Round 67: residents enrolled in public and private school (kindergarten to grade 12), by school district, from the
+# Round 67b: residents enrolled in public and private school (kindergarten to grade 12), by school district, from the
 # Census Bureau's American Community Survey 2019-2023 (table B14002: school enrollment by level and type of school),
 # for every unified, elementary and secondary school district. For districts with no schools of their own (Maine's
 # unorganized territories, New Hampshire's and Vermont's tuition towns), which the NCES school counts leave out.
@@ -17,9 +17,10 @@ g = get(f"{API}/groups/B14002.json")["variables"]
 want = {}
 for v, x in g.items():
     if not v.endswith("E"): continue
-    lab = x["label"]
-    if ("Kindergarten" in lab or "Grade 1 to grade 4" in lab or "Grade 5 to grade 8" in lab or "Grade 9 to grade 12" in lab) and ("Public school" in lab or "Private school" in lab):
-        want[v] = "pub" if "Public school" in lab else "priv"
+    lab = x["label"].lower()
+    if any(k in lab for k in ("kindergarten", "grade 1 to grade 4", "grade 5 to grade 8", "grade 9 to grade 12")) and lab.rstrip(":").endswith(("public school", "private school")):
+        want[v] = "pub" if lab.rstrip(":").endswith("public school") else "priv"
+log.write("sample labels: " + json.dumps([x["label"] for v, x in list(g.items())[:12]]) + "\n")
 log.write(f"variables {len(want)}: {sorted(want)}\n")
 vars_ = ",".join(sorted(want))
 out = {}
