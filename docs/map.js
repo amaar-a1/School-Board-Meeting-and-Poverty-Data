@@ -468,6 +468,9 @@
     if (metric === "poverty") return povEstimated(r);
     if (metric === "rank") return povEstimated(r) || !!r._rankEst || String(r["Poverty rank in country"] ?? "") === "";
     if (metric === "enrollment" || metric === "peers") return enrollEstimated(r);
+    // the year maps: an estimated current figure standing in for a count ("No estimates" hides it)
+    if ((metric === "enrYear" || metric === "pubYear") && enrollEstimated(r)) return !yearPairs(r[YEAR_COL[metric]]).length;
+    if (metric === "public") return !!r["Enrollment estimated"] && !!r.pseudo;
     if (metric === "locale") return !r.Locale;   // borrowed from its area's other places
     if (metric === "density") return !!r.pseudo && /^FRA-REST-/.test(id);   // a département's smaller communes together
     return false;
@@ -531,10 +534,9 @@
   function nowPoint(row, metric, id) {
     if (!row) return null;
     if (metric === "enrYear" || metric === "pubYear") {
-      if (row["Enrollment estimated"] || /estimated/i.test(row["Enrollment year"] || "")) return null;
       const v = metric === "enrYear" ? toNumber(row.Enrollment) : publicShare(row);
       if (metric === "enrYear" ? !(v > 0) : isNaN(v)) return null;
-      const y = yearOfText(row["Enrollment year"]) || (metric === "pubYear" && yearPairs(row["Enrollment by year"]).map((p) => p[0]).pop()) || dsYears(row, id).enr;
+      const y = (metric === "pubYear" && yearOfText(row["Public share source"])) || yearOfText(row["Enrollment year"]) || (metric === "pubYear" && yearPairs(row["Enrollment by year"]).map((p) => p[0]).pop()) || dsYears(row, id).enr;
       return y ? [y, v] : null;
     }
     if (metric === "povYear") {
@@ -908,6 +910,7 @@
     const v = publicShare(r);
     if (isNaN(v)) return "";
     const priv = toNumber(r[PRIV]);
+    if (r["Public share source"]) return `<br>In public schools: ${Math.round(v)}% of pupils (${toNumber(r["Public school enrollment"]).toLocaleString()} public, ${priv.toLocaleString()} private; ${esc(r["Public share source"])})`;
     return `<br>In public schools: ${Math.round(v)}% of pupils` + (!isNaN(priv)
       ? ` (${toNumber(r["Public school enrollment"]).toLocaleString()} public; ${priv.toLocaleString()} at private schools inside its border, NCES 2021-22)`
       : ` (${toNumber(r["Public school enrollment"]).toLocaleString()} of ${toNumber(r.Enrollment).toLocaleString()})`);
@@ -1234,6 +1237,7 @@
   let index = null, renderer = null, dotRenderer = null;
   const loadingLayers = {};
   const toFC = (name, t) => (!t ? { type: "FeatureCollection", features: [] } : t.type === "FeatureCollection" ? t : topojson.feature(t, t.objects[name]));
+  const SCHOOL_AGE = { ON: 0.139, AB: 0.156 };   // the share of people aged 5-17, 2021 Census
   function addLayer(name, t) {
     const files = { [name]: toFC(name, t) };
     if (name === "canada") {
@@ -1253,6 +1257,12 @@
         const p = f.properties, prov = caNames[p.province] || p.province;
         lookup[gid(f)] = { District: `Rest of ${prov} (no school board)`, Province: prov, "Board type": "No school board", pseudo: true, own: !!p.own,
           Population: p.pop ?? "", "People per km² (estimated)": p.pop && p.land ? Math.round(10 * p.pop / p.land) / 10 : "",
+          // No board counts its pupils: an estimate, its people times the province's share aged 5-17 (2021 Census,
+          // about 13.9% in Ontario and 15.6% in Alberta; younger in the Far North's First Nations, so if anything low).
+          // Its schools (First Nations', federal and provincial schools) are all publicly funded.
+          ...(p.pop && SCHOOL_AGE[p.province] ? { Enrollment: Math.round(p.pop * SCHOOL_AGE[p.province]), "Enrollment estimated": "yes",
+            "Enrollment year": "2021 Census (estimated: its people times the province's share aged 5–17)",
+            "Public school enrollment": Math.round(p.pop * SCHOOL_AGE[p.province]) } : {}),
           Locale: "Rural",   // the Far North, national parks and reserves
           "Poverty rank in country": caRank(p.pct), _rankEst: caRank(p.pct) !== "",
           "Percentage of Children Ages 0-17 in Low Income": p.pct ?? "", "Available Board Meetings": 0,
@@ -1284,9 +1294,26 @@
         if (!/^FRA-/.test(r["District ID"] || "") || String(r["Poverty rank in country"] ?? "") === "") return;
         const k = r.Region; frRank[k] = frRank[k] || [0, 0]; frRank[k][0] += Number(r["Poverty rank in country"]); frRank[k][1]++;
       });
+      // Each département's smaller communes (rows of their own, with no commune poverty rate) added up for the group:
+      // pupils in their schools, population by year, meetings found.
+      const frSmallSum = {};
+      Object.values(lookup).forEach((r) => {
+        if (!/^FRA-/.test(r["District ID"] || "") || r.pseudo || String(r["Poverty rate (all ages)"] ?? "") !== "" || String(r["Poverty rate (region, all ages)"] ?? "") === "") return;
+        const g = frSmallSum[r.Region] || (frSmallSum[r.Region] = { enr: 0, pub: 0, any: false, meet: 0, pop: {}, my: {}, n: 0 });
+        g.n++;
+        if (toNumber(r.Enrollment) > 0) { g.enr += toNumber(r.Enrollment); g.pub += toNumber(r["Public school enrollment"]) || 0; g.any = true; }
+        g.meet += toNumber(r["Available Board Meetings"]) > 0 ? toNumber(r["Available Board Meetings"]) : 0;
+        yearPairs(r["Meetings by year"]).forEach(([y, v]) => { g.my[y] = (g.my[y] || 0) + v; });
+        yearPairs(r["Population by year"]).forEach(([y, v]) => { const q = g.pop[y] || (g.pop[y] = [0, 0]); q[0] += v; q[1]++; });
+      });
       (files.france ? files.france.features : []).filter((f) => f.properties.pseudo).forEach((f) => {
-        const p = f.properties, rk = frRank[p.dep];
-        lookup[gid(f)] = { District: `Smaller communes of ${p.dep}`, Region: p.dep, pseudo: true, "Available Board Meetings": 0, Locale: "Rural",
+        const p = f.properties, rk = frRank[p.dep], g = frSmallSum[p.dep];
+        // population by year: the years every one of them has a figure for
+        const popYears = g ? Object.entries(g.pop).filter(([, q]) => q[1] === g.n).map(([y, q]) => `${y}: ${q[0]}`).join("; ") : "";
+        lookup[gid(f)] = { District: `Smaller communes of ${p.dep}`, Region: p.dep, pseudo: true, "Available Board Meetings": g ? g.meet : 0, Locale: "Rural",
+          ...(g && g.any ? { Enrollment: g.enr, "Public school enrollment": g.pub, "Enrollment year": "2025-26 (nursery and primary schools; these communes' schools added up)" } : {}),
+          ...(popYears ? { "Population by year": popYears } : {}),
+          ...(g && Object.keys(g.my).length ? { "Meetings by year": Object.entries(g.my).map(([y, v]) => `${y}: ${v}`).join("; ") } : {}),
           Population: p.pop ?? "",   // its density: these communes' people over their land together
           "Poverty rate (all ages)": p.pct ?? "", "Child poverty rate (département)": p.child ?? "",
           "Poverty rank in country": rk ? String(Math.round(rk[0] / rk[1])) : "", _rankEst: !!rk,
@@ -1609,6 +1636,17 @@
       let t = "";
       Object.values(layers).forEach((l) => l.eachLayer((f) => { if (!t && f.feature && String(gid(f.feature)).startsWith(prefix)) t = tip(f.feature).replace(/<[^>]+>/g, " ").replace(/\s+/g, " "); }));
       return t;
+    },
+    // For checking: the areas drawn grey (no figure) in the current colouring, with their names.
+    noData: () => {
+      const out = [];
+      Object.entries(layers).forEach(([n, l]) => l.eachLayer((f) => {
+        const ft = f.feature;
+        if (!ft || isWorld(ft) || undefinedArea(ft)) return;
+        const id = gid(ft);
+        if (colorOf(rowFor(id), id) === NO_DATA) out.push({ layer: n, id, name: (rowFor(id) || {}).District || ft.properties.NAME || "" });
+      }));
+      return out;
     },
     // For checking: areas whose tooltip doesn't show the figure their colour comes from, in the current colouring.
     tipGaps: () => {
