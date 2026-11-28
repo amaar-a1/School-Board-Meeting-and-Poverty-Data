@@ -559,7 +559,18 @@
 
   // Countries the site doesn't cover: grey outlines only (data/map/world.json, Natural Earth).
   const isWorld = (f) => String(gid(f)).startsWith("W-");
-  const WORLD_STYLE = { fillColor: "#cfcfcf", fillOpacity: 0.35, color: "#9a9a9a", weight: 0.5 };
+  // On the dark map they're near the background, so they can't be taken for a country of small districts, whose
+  // many outlines would otherwise grey it over: there each district's outline is its own colour, darker.
+  const DARK = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const WORLD_STYLE = DARK ? { fillColor: "#2b2e33", fillOpacity: 0.9, color: "#6b7077", weight: 0.5 }
+    : { fillColor: "#cfcfcf", fillOpacity: 0.35, color: "#9a9a9a", weight: 0.5 };
+  // the fill's own colour, a third darker (hex colours; anything else gets a dark grey)
+  const shade = (c) => {
+    const m = /^#([0-9a-f]{6})$/i.exec(String(c));
+    if (!m) return "#202226";
+    const n = parseInt(m[1], 16), d = (v) => Math.round(v * 0.66).toString(16).padStart(2, "0");
+    return "#" + d(n >> 16) + d((n >> 8) & 255) + d(n & 255);
+  };
   const undefinedArea = (f) => /^School District Not Defined$/i.test(f.properties.NAME || "") || sharedLand(f);
   // Spain: land shared by several towns (Bardenas Reales, facerías, comunidades), part of no single municipality.
   // Ecuador: the zones whose canton is disputed (zonas no delimitadas).
@@ -580,6 +591,112 @@
   }
   const olderBorders = (feature) => !!YEAR_COL[metricNow()] && preSplit(rowFor(gid(feature)), selectedYear());
 
+  // Detail: districts and municipalities as they are, or each coloured by its region's (state's, province's) or whole
+  // country's figures added up, as in Compare (window.SiteCompare's areas). Shown so, the lines inside an area take
+  // its colour and it reads as one; ranks and same-size comparisons, which are about single places, are left grey.
+  const detailLevel = () => ($("map-detail") ? $("map-detail").value : "place");
+  let areaIndex = null;
+  function areaEntry(id) {
+    const C = window.SiteCompare, lv = detailLevel();
+    if (lv === "place" || !C || !C.areas) return null;
+    const list = C.areas();
+    if (!areaIndex || areaIndex.list !== list) {
+      areaIndex = { region: {}, country: {}, byId: {}, prefix: {}, list };
+      list.forEach((e) => {
+        const k = e.id.split(":").length > 2 ? "region" : "country";
+        areaIndex.byId[e.id] = e;
+        e.rows.forEach((r) => { areaIndex[k][r["District ID"]] = e; });
+        const p = k === "country" && e.rows[0] && String(e.rows[0]["District ID"] || "").split("-")[0];
+        if (p && !areaIndex.prefix[p]) areaIndex.prefix[p] = e;
+      });
+    }
+    const base = rowFor(id);
+    const find = (k) => areaIndex[k][id] || (base && areaIndex[k][base["District ID"]]);
+    let hit = find(lv) || (lv === "region" ? find("country") : null);   // a country with no regions: the whole country
+    if (!hit && base && base.pseudo) {
+      // A map-only part of a country (Canada's land outside every board, France's smaller communes): its province's
+      // or region's area, else its country's.
+      const c = areaIndex.prefix[String(id).split("-")[0]];
+      const r = c && lv === "region" && areaIndex.byId[`${c.id}:${base.Province || base.Region || base.State || ""}`];
+      hit = r || c || null;
+    }
+    return hit;
+  }
+  function shownRow(id) {
+    const e = areaEntry(id);
+    return e ? window.SiteCompare.rowOf(e) : rowFor(id);
+  }
+
+  // Shown by region or country, each area gets its border: the edges of the features where the area changes (or
+  // the land ends), found from the borders each pair of neighbours shares, drawn as lines over the fills. Country
+  // borders are drawn heavier than those between a country's regions.
+  let outlineLayer = null, outlineKey = null, outer = null, outerLoading = null;
+  const outlineCache = new WeakMap();
+  // A layer's outer edge: from data/map/outlines.json (map_outlines.py) where its districts were simplified one by
+  // one; TopoJSON layers' neighbours share their borders exactly, so there the edges no neighbour shares are it.
+  function outlinesOf(name, l, lv, list) {
+    const c = outlineCache.get(l);
+    if (c && c.lv === lv && c.list === list) return c.lines;
+    const seg = new Map();   // edge -> [area key, country key, count]
+    l.eachLayer((x) => {
+      const f = x.feature, g = f && f.geometry;
+      if (!g || isWorld(f) || !/Polygon/.test(g.type) || (frSmall && /^FRA-REST-/.test(gid(f)))) return;
+      const e = areaEntry(gid(f));
+      if (!e) return;   // in no area (a map-only part of a country): its edges are its neighbours' or the outline's
+      const key = e.id, ck = e.id.split(":").slice(0, 2).join(":");
+      (g.type === "Polygon" ? [g.coordinates] : g.coordinates).forEach((poly) => poly.forEach((ring) => {
+        for (let i = 1; i < ring.length; i++) {
+          const a = ring[i - 1], b = ring[i], ka = a[0] + "," + a[1], kb = b[0] + "," + b[1];
+          if (ka === kb) continue;
+          const k = ka < kb ? ka + "|" + kb : kb + "|" + ka, s = seg.get(k);
+          if (!s) seg.set(k, [key, ck, 1, a, b]);
+          else { s[2]++; if (s[0] !== key) s[0] = "*"; if (s[1] !== ck) s[1] = "*"; }
+        }
+      }));
+    });
+    const lines = { region: [], country: [] };
+    const own = outer && outer[name];
+    seg.forEach(([k, ck, n, a, b]) => {
+      const ll = [[a[1], a[0]], [b[1], b[0]]];
+      if (n === 1 ? !own : ck === "*") lines.country.push(ll);
+      else if (n > 1 && k === "*") lines.region.push(ll);
+    });
+    if (own) own.forEach((line) => lines.country.push(line.map(([x, y]) => [y, x])));
+    outlineCache.set(l, { lv, list, lines });
+    return lines;
+  }
+  // Thinner when zoomed out, where a country's regions are small.
+  function outlineWeights() {
+    if (!outlineLayer) return;
+    const z = map.getZoom(), [r, c] = outlineLayer.getLayers();
+    r.setStyle({ weight: z < 3 ? 0.35 : z < 5 ? 0.6 : 0.9, opacity: z < 3 ? 0.55 : 0.75 });
+    c.setStyle({ weight: z < 3 ? 0.9 : 1.6, opacity: 0.95 });
+  }
+  function drawOutlines() {
+    const lv = detailLevel();
+    const C = window.SiteCompare, list = lv !== "place" && C && C.areas ? C.areas() : null;
+    const shown = list ? Object.entries(layers).filter(([n, l]) => !["world", "islands", "canada-fn", "france-small"].includes(n) && map.hasLayer(l)) : [];
+    const key = [lv, shown.length].concat(shown.map(([, l]) => L.stamp(l))).join(",");
+    if (key === outlineKey && list === (outlineLayer && outlineLayer._list)) return;
+    outlineKey = key;
+    if (outlineLayer) { outlineLayer.remove(); outlineLayer = null; }
+    if (!list) return;
+    if (!outer) {
+      outerLoading = outerLoading || fetch("data/map/outlines.json").then((r) => (r.ok ? r.json() : {})).catch(() => ({}))
+        .then((o) => { outer = o; outlineKey = null; drawOutlines(); });
+      return;
+    }
+    const dark = window.matchMedia("(prefers-color-scheme: dark)").matches, ink = dark ? "#f2f2f2" : "#1d1d1d";
+    const region = [], country = [];
+    shown.forEach(([n, l]) => { const o = outlinesOf(n, l, lv, list); region.push(...o.region); country.push(...o.country); });
+    outlineLayer = L.layerGroup([
+      L.polyline(region, { renderer, color: ink, interactive: false }),
+      L.polyline(country, { renderer, color: ink, interactive: false })
+    ]).addTo(map);
+    outlineWeights();
+    outlineLayer._list = list;
+  }
+
   function style(feature) {
     if (isWorld(feature)) return WORLD_STYLE;
     if (undefinedArea(feature)) return { fillColor: NO_DISTRICT, fillOpacity: 0.9, color: "#8a9a80", weight: 0.3, dashArray: "2 3" };
@@ -593,16 +710,34 @@
       on = !!r && f.test(r);
     }
     // opacity and interactive undo the hidden state above (setStyle keeps options it isn't given).
-    const fill = color(rowFor(gid(feature)), gid(feature)), op = on ? 0.85 : 0.35;
+    const lvl = detailLevel() !== "place" && areaEntry(gid(feature));
+    const fill = lvl && ["rank", "peers"].includes(metricNow()) ? NO_DATA : color(lvl ? shownRow(gid(feature)) : rowFor(gid(feature)), gid(feature)), op = on ? 0.85 : 0.35;
+    // solid, so the lines inside an area (drawn over one another) don't show
+    if (lvl) return { fillColor: fill, fillOpacity: on ? 1 : 0.35, opacity: on ? 1 : 0.35, color: fill, weight: 2, interactive: true };
+    // a map-only part of a country (no row of the data, so in no area): no lines of its own either
+    if (detailLevel() !== "place") return { fillColor: fill, fillOpacity: op, opacity: 0, interactive: true };   // a region or country, read as one
     if (olderBorders(feature) && feature.properties.INSIDE) return { fillColor: fill, fillOpacity: 0, opacity: 0, interactive: false };   // under the older border it came from, which shows alone
     if (olderBorders(feature)) return { fillColor: fill, fillOpacity: op, opacity: op, color: fill, weight: 1.2, interactive: true };
-    return { fillColor: fill, fillOpacity: op, opacity: 1, color: "#555", weight: on ? 0.4 : 0.2, interactive: true };
+    return { fillColor: fill, fillOpacity: op, opacity: 1, color: DARK ? shade(fill) : "#555", weight: on ? 0.4 : 0.2, interactive: true };
   }
 
   const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
   function tip(feature) {
     if (isWorld(feature)) return `<div class="map-tip"><strong>${esc(feature.properties.NAME)}</strong>Not covered on this site yet</div>`;
+    const ae = areaEntry(gid(feature));
+    if (ae) {   // shown by region or country: its figures added up
+      const a = shownRow(gid(feature)), place = rowFor(gid(feature));
+      const v = (c, f) => (String(a[c] ?? "") === "" ? "" : `<br>${f}: ${esc(a[c])}`);
+      const pc = Object.keys(a).find((k) => /poverty|low income/i.test(k) && /%$/.test(String(a[k])));
+      return `<div class="map-tip"><strong>${esc(a.District)}</strong>${esc(ae.label || "")}` +
+        (pc ? `<br>Poverty (average, weighted by population): ${esc(a[pc])}` : "") +
+        `<br>Available board meetings: ${toNumber(a["Available Board Meetings"]).toLocaleString()}` +
+        (toNumber(a.Enrollment) > 0 ? `<br>Enrollment: ${toNumber(a.Enrollment).toLocaleString()}` : "") +
+        (toNumber(a.Population) > 0 ? `<br>Population: ${toNumber(a.Population).toLocaleString()}` : "") +
+        v("People per km² (estimated)", "People per km²") + v("Locale", "Locale (where most of its people live)") +
+        (place ? `<div class="tip-note">Pointing at ${esc(place.District)}; pick "Districts and municipalities" under Detail for its own figures.</div>` : "") + "</div>";
+    }
     const r = rowFor(gid(feature));
     if (r && r.Province && isCA(gid(feature))) return caTip(r);   // Canada's boards (Peru has a Province column too)
     if (sharedLand(feature)) return /^EC-/.test(feature.properties.id)
@@ -869,6 +1004,7 @@
       else if (new RegExp(`(^|; )\\d{4}: ${String(r.District).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")} was made from `).test(r["Border changes"])) x.bringToFront();
     }));
     islandDots.forEach(({ dot, f }) => { const st = style(f); dot.setStyle({ fillColor: st.fillColor, fillOpacity: st.fillOpacity, opacity: st.fillOpacity }); });
+    drawOutlines();
     legend();
   }
 
@@ -1112,6 +1248,7 @@
       byId.forEach((g) => { if (g.layers.some((l) => gone.has(l))) g.layers = g.layers.filter((l) => !gone.has(l)); });
       addLayer(n, t);
       detail[n] = level;
+      drawOutlines();
       updateDetail();   // in case the view moved meanwhile
     }).catch((e) => { swapping[n] = false; console.error("map detail", n, e); });
   }
@@ -1166,6 +1303,7 @@
     };
     fitMinZoom();
     map.on("resize", fitMinZoom);
+    map.on("zoomend", () => outlineWeights());
     L.tileLayer(`https://{s}.basemaps.cartocdn.com/${dark ? "dark_all" : "light_all"}/{z}/{x}/{y}{r}.png`, {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
       subdomains: "abcd", maxZoom: 14, noWrap: true, bounds: WORLD
@@ -1191,6 +1329,7 @@
     Object.keys(JUMPS).forEach((k) => sel.add(new Option(k, k)));
     sel.addEventListener("change", () => sel.value && jump(sel.value));
     $("map-metric").addEventListener("change", () => { fillYears(); restyle(); });
+    if ($("map-detail")) $("map-detail").addEventListener("change", () => restyle());
     if ($("map-year")) $("map-year").addEventListener("change", restyle);
     if ($("map-play")) $("map-play").addEventListener("click", togglePlay);
     $("map-secondary").addEventListener("change", setSecondary);

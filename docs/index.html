@@ -91,6 +91,14 @@
 
     <div data-view="overview">
 
+    <section id="map-preview" class="card map-preview" aria-label="Map preview" hidden>
+      <button type="button" id="map-preview-open" class="map-preview-open" title="Open the map">
+        <span id="map-preview-pics" class="map-preview-pics"></span>
+        <span class="map-preview-bar"><strong id="map-preview-title"></strong><span class="map-preview-go">Open the map →</span></span>
+      </button>
+      <div class="map-preview-foot"><span class="map-preview-dots" role="group" aria-label="Measures"></span><span id="map-preview-updated" class="note"></span></div>
+    </section>
+
     <section id="stats" class="stats" aria-label="Summary"></section>
 
     <section id="compare" class="card" hidden>
@@ -294,6 +302,13 @@
                   <option value="locale">Locale (city, suburb, town, rural)</option>
                   <option value="density">Population density</option>
                 </optgroup>
+              </select>
+            </label>
+            <label title="Colour each region (state, province) or whole country by its places' figures added up, as in Compare">Detail
+              <select id="map-detail">
+                <option value="place">Districts and municipalities</option>
+                <option value="region">Regions (states, provinces)</option>
+                <option value="country">Countries</option>
               </select>
             </label>
             <span id="map-year-wrap" class="map-year" hidden><label>Year <select id="map-year"></select></label><button type="button" id="map-play" aria-pressed="false" title="Step through the years">▶ Play</button></span>
@@ -530,6 +545,7 @@
   <script src="assistant.js"></script>
   <script src="search.js"></script>
   <script src="compare.js"></script>
+  <script src="preview.js"></script>
   <script src="i18n.js"></script>
   <script src="terms.js"></script>
 </body>
