@@ -1,3 +1,130 @@
 places 1213
-YouTube asked to sign in at place 0; stopped
-done: 0 places, 0 channels
+1/1213 1 channels, 5s
+oembed belmont-redwood-shores-elementary-california: HTTP Error 401: Unauthorized
+oembed berlin-area-school-district-wisconsin: HTTP Error 404: Not Found
+26/1213 24 channels, 167s
+oembed kiel-area-school-district-wisconsin: HTTP Error 404: Not Found
+51/1213 48 channels, 366s
+oembed central-valley-sd-pennsylvania: HTTP Error 401: Unauthorized
+76/1213 72 channels, 572s
+101/1213 97 channels, 778s
+oembed comstock-public-schools-michigan: HTTP Error 403: Forbidden
+oembed msd-north-posey-co-schools-indiana: HTTP Error 401: Unauthorized
+126/1213 120 channels, 957s
+151/1213 145 channels, 1142s
+oembed alpine-district-utah: HTTP Error 404: Not Found
+oembed hudson-school-district-wisconsin: HTTP Error 401: Unauthorized
+oembed lamar-cisd-texas: HTTP Error 401: Unauthorized
+oembed cromwell-school-district-connecticut: HTTP Error 401: Unauthorized
+oembed duluth-public-school-district-minnesota: HTTP Error 401: Unauthorized
+176/1213 165 channels, 1327s
+oembed delanco-township-school-district-new-jersey: HTTP Error 403: Forbidden
+oembed muncie-community-schools-indiana: HTTP Error 401: Unauthorized
+201/1213 188 channels, 1495s
+oembed district-wisconsin: HTTP Error 403: Forbidden
+oembed bayfield-school-district-no-10jt-r-colorado: HTTP Error 403: Forbidden
+oembed crestwood-school-district-michigan: HTTP Error 401: Unauthorized
+226/1213 210 channels, 1685s
+oembed caldwell-west-school-district-new-jersey: HTTP Error 401: Unauthorized
+oembed dublin-city-ohio: HTTP Error 404: Not Found
+oembed north-pike-school-dist-mississippi: HTTP Error 401: Unauthorized
+251/1213 232 channels, 1843s
+oembed frankfort-independent-kentucky: HTTP Error 403: Forbidden
+oembed ouachita-parish-louisiana: HTTP Error 401: Unauthorized
+oembed bear-valley-unified-california: HTTP Error 401: Unauthorized
+276/1213 254 channels, 2047s
+oembed vallejo-city-unified-california: HTTP Error 401: Unauthorized
+oembed fredericktown-local-ohio: HTTP Error 401: Unauthorized
+oembed madison-county-public-schools-virginia: HTTP Error 401: Unauthorized
+301/1213 276 channels, 2207s
+oembed oxford-school-district-connecticut: HTTP Error 404: Not Found
+oembed shirley-school-district-arkansas: HTTP Error 401: Unauthorized
+oembed muroc-joint-unified-california: HTTP Error 403: Forbidden
+oembed oak-park-unified-california: HTTP Error 403: Forbidden
+326/1213 297 channels, 2396s
+oembed cherry-creek-school-district-no-5-in-the-county-of-arapah-colorado: HTTP Error 403: Forbidden
+351/1213 321 channels, 2596s
+376/1213 346 channels, 2844s
+oembed manhasset-union-free-school-district-new-york: HTTP Error 403: Forbidden
+oembed cheyenne-mountain-school-district-no-12-in-the-county-of-e-colorado: HTTP Error 404: Not Found
+oembed district-0613530-california: HTTP Error 401: Unauthorized
+401/1213 368 channels, 3038s
+oembed gloucester-township-public-schools-new-jersey: HTTP Error 401: Unauthorized
+oembed natrona-county-school-district-1-wyoming: HTTP Error 403: Forbidden
+426/1213 391 channels, 3224s
+oembed district-alaska: HTTP Error 404: Not Found
+451/1213 415 channels, 3392s
+oembed salisbury-township-sd-pennsylvania: HTTP Error 401: Unauthorized
+oembed portsmouth-city-public-schools-virginia: HTTP Error 401: Unauthorized
+476/1213 438 channels, 3574s
+oembed dallastown-area-sd-pennsylvania: HTTP Error 403: Forbidden
+501/1213 462 channels, 3740s
+526/1213 487 channels, 3923s
+551/1213 512 channels, 4141s
+oembed smith-county-tennessee: HTTP Error 401: Unauthorized
+576/1213 536 channels, 4336s
+oembed south-putnam-community-schools-indiana: HTTP Error 401: Unauthorized
+601/1213 560 channels, 4540s
+oembed north-scott-comm-school-district-iowa: HTTP Error 401: Unauthorized
+626/1213 584 channels, 4719s
+oembed millersburg-area-sd-pennsylvania: HTTP Error 404: Not Found
+oembed hot-springs-county-school-district-1-wyoming: HTTP Error 403: Forbidden
+651/1213 607 channels, 4870s
+676/1213 632 channels, 5065s
+oembed norwin-sd-pennsylvania: HTTP Error 404: Not Found
+701/1213 656 channels, 5263s
+oembed lewis-county-schools-west: HTTP Error 403: Forbidden
+oembed clear-creek-amana-comm-school-district-iowa: HTTP Error 403: Forbidden
+726/1213 679 channels, 5423s
+oembed district-0633630-california: HTTP Error 401: Unauthorized
+751/1213 703 channels, 5638s
+oembed ankeny-comm-school-district-iowa: HTTP Error 403: Forbidden
+oembed burlingame-elementary-california: HTTP Error 401: Unauthorized
+776/1213 726 channels, 5833s
+oembed newport-mesa-unified-california: HTTP Error 401: Unauthorized
+801/1213 750 channels, 6017s
+826/1213 775 channels, 6175s
+oembed wyoming-city-ohio: HTTP Error 401: Unauthorized
+851/1213 799 channels, 6346s
+oembed western-placer-unified-california: HTTP Error 403: Forbidden
+oembed wahoo-public-schools-nebraska: HTTP Error 401: Unauthorized
+876/1213 822 channels, 6504s
+oembed bethany-school-district-connecticut: HTTP Error 401: Unauthorized
+901/1213 846 channels, 6699s
+oembed northwestern-lehigh-sd-pennsylvania: HTTP Error 401: Unauthorized
+oembed davenport-comm-school-district-iowa: HTTP Error 401: Unauthorized
+926/1213 869 channels, 7027s
+oembed east-aurora-union-free-school-district-new-york: HTTP Error 401: Unauthorized
+951/1213 893 channels, 7310s
+oembed solanco-sd-pennsylvania: HTTP Error 403: Forbidden
+oembed beachwood-city-ohio: HTTP Error 404: Not Found
+976/1213 916 channels, 7596s
+oembed york-city-sd-pennsylvania: HTTP Error 403: Forbidden
+oembed streator-esd-44-illinois: HTTP Error 401: Unauthorized
+1001/1213 939 channels, 7782s
+oembed oregon-city-sd-62-oregon: HTTP Error 403: Forbidden
+1026/1213 963 channels, 7952s
+oembed university-city-missouri: HTTP Error 404: Not Found
+oembed richland-44-north-dakota: HTTP Error 403: Forbidden
+oembed cornwall-central-school-district-new-york: HTTP Error 403: Forbidden
+1051/1213 985 channels, 8213s
+oembed paso-robles-joint-unified-california: HTTP Error 404: Not Found
+oembed la-crosse-school-district-wisconsin: HTTP Error 401: Unauthorized
+1076/1213 1008 channels, 8567s
+oembed downingtown-area-sd-pennsylvania: HTTP Error 404: Not Found
+1101/1213 1032 channels, 8841s
+oembed cloquet-public-school-district-minnesota: HTTP Error 404: Not Found
+oembed branchburg-township-school-district-new-jersey: HTTP Error 403: Forbidden
+1126/1213 1055 channels, 9015s
+oembed little-falls-public-school-district-minnesota: HTTP Error 401: Unauthorized
+oembed harrison-county-kentucky: HTTP Error 404: Not Found
+oembed shawano-school-district-wisconsin: HTTP Error 403: Forbidden
+1151/1213 1077 channels, 9216s
+oembed alexander-local-ohio: HTTP Error 401: Unauthorized
+oembed geary-county-schools-kansas: HTTP Error 403: Forbidden
+1176/1213 1100 channels, 9380s
+oembed sangamon-valley-cusd-9-illinois: HTTP Error 403: Forbidden
+oembed flandreau-school-district-50-3-south-dakota: HTTP Error 403: Forbidden
+oembed piper-kansas-city-kansas: HTTP Error 404: Not Found
+1201/1213 1122 channels, 9542s
+done: 1213 places, 1134 channels
