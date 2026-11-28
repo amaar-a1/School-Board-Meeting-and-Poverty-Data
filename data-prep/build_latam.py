@@ -653,6 +653,7 @@ def colombia():
         n = norm(f["properties"]["shapeName"]); n = ALIAS["CO"].get(n, n)
         keyed.setdefault((d, n), f)
     rows, feats = [], []
+    co_pop = json.load(open(os.path.join(IN, "population_history.json"), encoding="utf-8")).get("colombia", {})
     # Exact matches (department and name) first, so a fuzzy match never takes another municipality's border.
     exact = {code: keyed.get((code[:2], ALIAS["CO"].get(norm(r[1]), norm(r[1])))) for code, r in ipm.items()}
     used = {id(f) for f in exact.values() if f}
@@ -669,13 +670,26 @@ def colombia():
         # MEN's gross coverage is the municipality's enrollment (transición to media, every age) over its population aged
         # 5-16, so the two together give back the ministry's own enrollment count (to within rounding of the rate).
         area = area_km2(f["geometry"]) if f else 0
-        dens = pop / 0.19 / area if area and pop else 0
         did = f"CO-{code}"
+        tot = (co_pop.get(did) or {})
+        tot = tot[max(tot)] if tot else 0
+        dens = pop / 0.19 / area if area and pop else (tot / area if area and tot else 0)   # else its whole population (DANE projection)
+        enr, pub, eyear = (round(pop * rate / 100), None, "2024 (Ministry of Education: pupils enrolled in transición to media, from its gross coverage rate × population 5–16)") if pop and rate else ("", None, "")
+        if enr == "" and pop:   # no coverage rate published (Papunahua): its children aged 5-16, as an estimate
+            enr, eyear = round(pop), "2024 (estimated: children aged 5–16 living there; no enrollment published)"
+        hist = enr_hist.get(code, {})
+        if enr == "" and hist:   # left out of the 2024 figures (Mapiripana): its latest count
+            y = max(hist); enr, eyear = hist[y], f"{y} (Ministry of Education; the latest year it was published)"
+        if enr != "" and code in sec and sum(sec[code]):
+            pub = round((pop * rate / 100 if pop and rate else enr) * sec[code][0] / sum(sec[code]))
+        elif enr != "" and code[:2] in ("91", "94", "97") and "estimated" not in eyear:
+            # The Amazon's non-municipalized areas (áreas no municipalizadas), whose few schools are missing from the
+            # sector file: every school in the others is official (state-run, many run by the church under contract).
+            pub = enr
         rows.append({**history_cols({"pupil_years": enr_hist.get(code, {})}), "District": nm, "Region": dept_name.get(code[:2], ""), "Poverty rate (all ages)": f"{float(r[2]):.2f}%" if isinstance(r[2], (int, float)) else "",
                      "Poverty note": "Multidimensional poverty, all ages, 2018 census (DANE); no child or income rate is published by municipality",
-                     "Enrollment": round(pop * rate / 100) if pop and rate else "",
-                     "Public school enrollment": round(pop * rate / 100 * sec[code][0] / sum(sec[code])) if pop and rate and code in sec and sum(sec[code]) else "", "Enrollment year": "2024 (Ministry of Education: pupils enrolled in transición to media, from its gross coverage rate × population 5–16)" if pop and rate else "",
-                     "School system": m.get("etc", ""), "Locale": loc(dens) if dens else "", "People per km² (estimated)": round(dens) if dens else "",
+                     "Enrollment": enr, "Public school enrollment": pub if pub is not None else "", "Enrollment year": eyear,
+                     "School system": m.get("etc", ""), "Locale": loc(dens) if dens else "", "People per km² (estimated)": (round(dens) if dens >= 10 else round(dens, 2)) if dens else "",
                      "District ID": did, "_geo": bool(f)})
         if f: feats.append({"type": "Feature", "properties": {"id": did, "NAME": nm}, "geometry": {"type": f["geometry"]["type"], "coordinates": rnd(f["geometry"]["coordinates"])}})
     write("CO", "colombia", rows, feats)
