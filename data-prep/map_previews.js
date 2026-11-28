@@ -35,7 +35,7 @@ const LOCAL = { "papaparse.min.js": "papaparse/papaparse.min.js", "chart.umd.min
 
   // Opens a view on the map, then takes a picture for each measure it has.
   async function shoot(key, query, metrics, dir) {
-    await p.goto(`${BASE}?${query}&metric=${metrics[0]}#map`, { waitUntil: "load" });
+    await p.goto(`${BASE}?${query}&theme=light&metric=${metrics[0]}#map`, { waitUntil: "load" });
     await p.waitForTimeout(1200);
     await p.evaluate(() => { const d = document.getElementById("terms-gate"); if (d && d.open) d.close(); });
     await p.addStyleTag({ content: ".leaflet-control-container, .map-legend, .leaflet-control { display: none !important; }" });

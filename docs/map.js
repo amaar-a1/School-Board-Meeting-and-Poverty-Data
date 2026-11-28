@@ -561,9 +561,11 @@
   const isWorld = (f) => String(gid(f)).startsWith("W-");
   // On the dark map they're near the background, so they can't be taken for a country of small districts, whose
   // many outlines would otherwise grey it over: there each district's outline is its own colour, darker.
-  const DARK = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const WORLD_STYLE = DARK ? { fillColor: "#2b2e33", fillOpacity: 0.9, color: "#6b7077", weight: 0.5 }
-    : { fillColor: "#cfcfcf", fillOpacity: 0.35, color: "#9a9a9a", weight: 0.5 };
+  // (Light or dark as the site is: theme.js, whose switch redraws the map.)
+  const isDark = () => (window.SiteTheme ? window.SiteTheme.dark() : !!(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches));
+  const WORLD_STYLES = { dark: { fillColor: "#2b2e33", fillOpacity: 0.9, color: "#6b7077", weight: 0.5 },
+    light: { fillColor: "#cfcfcf", fillOpacity: 0.35, color: "#9a9a9a", weight: 0.5 } };
+  const worldStyle = () => WORLD_STYLES[isDark() ? "dark" : "light"];
   // the fill's own colour, a third darker (hex colours; anything else gets a dark grey)
   const shade = (c) => {
     const m = /^#([0-9a-f]{6})$/i.exec(String(c));
@@ -686,7 +688,7 @@
         .then((o) => { outer = o; outlineKey = null; drawOutlines(); });
       return;
     }
-    const dark = window.matchMedia("(prefers-color-scheme: dark)").matches, ink = dark ? "#f2f2f2" : "#1d1d1d";
+    const ink = isDark() ? "#f2f2f2" : "#1d1d1d";
     const region = [], country = [];
     shown.forEach(([n, l]) => { const o = outlinesOf(n, l, lv, list); region.push(...o.region); country.push(...o.country); });
     outlineLayer = L.layerGroup([
@@ -698,7 +700,7 @@
   }
 
   function style(feature) {
-    if (isWorld(feature)) return WORLD_STYLE;
+    if (isWorld(feature)) return worldStyle();
     if (undefinedArea(feature)) return { fillColor: NO_DISTRICT, fillOpacity: 0.9, color: "#8a9a80", weight: 0.3, dashArray: "2 3" };
     // With France's small communes drawn, each département's group of them stays underneath, unseen but clickable
     // (the communes are drawn on top, so it answers only between them).
@@ -718,7 +720,7 @@
     if (detailLevel() !== "place") return { fillColor: fill, fillOpacity: op, opacity: 0, interactive: true };   // a region or country, read as one
     if (olderBorders(feature) && feature.properties.INSIDE) return { fillColor: fill, fillOpacity: 0, opacity: 0, interactive: false };   // under the older border it came from, which shows alone
     if (olderBorders(feature)) return { fillColor: fill, fillOpacity: op, opacity: op, color: fill, weight: 1.2, interactive: true };
-    return { fillColor: fill, fillOpacity: op, opacity: 1, color: DARK ? shade(fill) : "#555", weight: on ? 0.4 : 0.2, interactive: true };
+    return { fillColor: fill, fillOpacity: op, opacity: 1, color: isDark() ? shade(fill) : "#555", weight: on ? 0.4 : 0.2, interactive: true };
   }
 
   const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -952,7 +954,7 @@
       poverty: "a rate borrowed from a wider area or another place", rank: "a rank from a borrowed or estimated rate",
       enrollment: "school-age children living there, where no count is published", peers: "its size group comes from an estimated enrollment",
       locale: "borrowed from its area's other places", density: "a French département's smaller communes taken together" }[metricNow()] || "none in this colouring"}</span>`);
-    items.push(`<span><i style="background:${WORLD_STYLE.fillColor};border:1px solid ${WORLD_STYLE.color}"></i>Country not covered on this site</span>`);
+    items.push(`<span><i style="background:${worldStyle().fillColor};border:1px solid ${worldStyle().color}"></i>Country not covered on this site</span>`);
     if (faded.length) items.push(`<span class="map-faded">Faded: districts ${faded.join(" or ")}</span>`);
     $("map-legend").innerHTML = items.join("");
   }
@@ -1284,7 +1286,7 @@
       if (r["District ID"]) lookup[r["District ID"]] = r;
       if (r.State && r["District ID"]) fips[r.State] = r["District ID"].slice(0, 2);
     }));
-    const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const tileUrl = () => `https://{s}.basemaps.cartocdn.com/${isDark() ? "dark_all" : "light_all"}/{z}/{x}/{y}{r}.png`;
     // One copy of the world: the map can't be dragged past its edges, and can't be zoomed out further than the world
     // fills the map (the minimum zoom follows the map's size).
     const WORLD = L.latLngBounds([[-85, -180], [85, 180]]);
@@ -1304,10 +1306,12 @@
     fitMinZoom();
     map.on("resize", fitMinZoom);
     map.on("zoomend", () => outlineWeights());
-    L.tileLayer(`https://{s}.basemaps.cartocdn.com/${dark ? "dark_all" : "light_all"}/{z}/{x}/{y}{r}.png`, {
+    const tiles = L.tileLayer(tileUrl(), {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
       subdomains: "abcd", maxZoom: 14, noWrap: true, bounds: WORLD
     }).addTo(map);
+    // The light/dark switch: the tiles, the grey countries, the outlines and the island dots follow it.
+    if (window.SiteTheme) window.SiteTheme.onChange(() => { tiles.setUrl(tileUrl()); outlineKey = null; restyle(); });
     renderer = L.canvas({ padding: 0.3 });
     // Islands and small countries are circles drawn above every border (their own pane, over the canvas the
     // districts share), so a country loaded later never covers them. SVG, so the pane only catches the circles.
@@ -1329,7 +1333,14 @@
     Object.keys(JUMPS).forEach((k) => sel.add(new Option(k, k)));
     sel.addEventListener("change", () => sel.value && jump(sel.value));
     $("map-metric").addEventListener("change", () => { fillYears(); restyle(); });
-    if ($("map-detail")) $("map-detail").addEventListener("change", () => restyle());
+    if ($("map-detail")) {
+      // The Detail slider (district, regional, national) sets the menu underneath, which links keep.
+      const sel = $("map-detail"), range = $("map-detail-range"), LV = ["place", "region", "country"], WORD = ["District", "Regional", "National"];
+      const sync = () => { if (!range) return; const i = Math.max(0, LV.indexOf(sel.value)); range.value = i; range.setAttribute("aria-valuetext", WORD[i]); };
+      if (range) range.addEventListener("input", () => { sel.value = LV[+range.value]; sel.dispatchEvent(new Event("change")); });
+      sel.addEventListener("change", () => { sync(); restyle(); });
+      sync();
+    }
     if ($("map-year")) $("map-year").addEventListener("change", restyle);
     if ($("map-play")) $("map-play").addEventListener("click", togglePlay);
     $("map-secondary").addEventListener("change", setSecondary);

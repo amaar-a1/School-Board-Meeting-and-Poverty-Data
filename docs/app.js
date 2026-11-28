@@ -1448,7 +1448,8 @@
   const viewFromHash = () => { if (["#size", "#locale", "#density", "#boards", "#map", "#trends", "#stats", "#compare", "#guide", "#rules", "#sources"].includes(location.hash)) setView(location.hash.slice(1)); };
   viewFromHash();
   window.addEventListener("hashchange", viewFromHash);
-  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+  const onTheme = (f) => (window.SiteTheme ? window.SiteTheme.onChange(f) : window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", f));
+  onTheme(() => {
     if (!current) return;
     renderChart();
     renderUrban();
@@ -1456,6 +1457,8 @@
     if (view === "locale") renderLocale();
     if (view === "density") renderDensity();
     if (view === "boards") renderBoards();
+    if (view === "trends") renderTrends();
+    if (view === "stats" && window.SiteStats) window.SiteStats.render(current);
   });
 
   load();

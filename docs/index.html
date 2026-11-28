@@ -7,6 +7,7 @@
   <meta name="description" content="School board meeting and poverty data, with charts, a searchable table and sources.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <link rel="stylesheet" href="style.css">
+  <script src="theme.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -304,8 +305,12 @@
                 </optgroup>
               </select>
             </label>
-            <label title="Colour each region (state, province) or whole country by its places' figures added up, as in Compare">Detail
-              <select id="map-detail">
+            <label class="detail-slider" title="Colour each region (state, province) or whole country by its places' figures added up, as in Compare">Detail
+              <span class="detail-slider-box">
+                <input type="range" id="map-detail-range" min="0" max="2" step="1" value="0" list="map-detail-ticks" aria-valuetext="District">
+                <span class="detail-slider-ticks" aria-hidden="true"><span>District</span><span>Regional</span><span>National</span></span>
+              </span>
+              <select id="map-detail" hidden>
                 <option value="place">Districts and municipalities</option>
                 <option value="region">Regions (states, provinces)</option>
                 <option value="country">Countries</option>
