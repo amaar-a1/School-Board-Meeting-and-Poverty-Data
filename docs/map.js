@@ -1073,6 +1073,51 @@
     }, 1300);
   }
 
+  // Lighter borders when zoomed out, as map sites do: each zoom redraws every border from its points, and most of
+  // them can't be told apart at a world or country zoom. Each border gets simplified copies (Douglas-Peucker, to
+  // about two-thirds of a pixel at the band's closest zoom), made the first time they're needed; from zoom 6 the full
+  // borders show, and from zoom 7 the detailed files (updateDetail). Swapped in before Leaflet projects the points.
+  const LOD = [{ max: 3, tol: 0.12 }, { max: 5, tol: 0.03 }];
+  const lodBand = (z) => { const i = LOD.findIndex((b) => z <= b.max); return i === -1 ? LOD.length : i; };
+  let lodNow = null;
+  function dpRing(pts, tol) {
+    const n = pts.length;
+    if (n <= 4) return pts;
+    const keep = new Uint8Array(n), stack = [[0, n - 1]], t2 = tol * tol;
+    keep[0] = keep[n - 1] = 1;
+    while (stack.length) {
+      const [a, b] = stack.pop();
+      const ax = pts[a].lng, ay = pts[a].lat, dx = pts[b].lng - ax, dy = pts[b].lat - ay, l2 = dx * dx + dy * dy;
+      let worst = -1, at = -1;
+      for (let i = a + 1; i < b; i++) {
+        let ex = pts[i].lng - ax, ey = pts[i].lat - ay;
+        if (l2 > 0) { const t = Math.max(0, Math.min(1, (ex * dx + ey * dy) / l2)); ex -= t * dx; ey -= t * dy; }
+        const d = ex * ex + ey * ey;
+        if (d > worst) { worst = d; at = i; }
+      }
+      if (worst > t2) { keep[at] = 1; stack.push([a, at], [at, b]); }
+    }
+    const out = pts.filter((p, i) => keep[i]);
+    if (out.length >= 3) return out;
+    const k = Math.floor(n / 3);   // a place smaller than the tolerance: a triangle, so it still shows
+    return [pts[0], pts[k], pts[2 * k]];
+  }
+  const lodOf = (ll, tol) => (ll.length && ll[0] && ll[0].lat !== undefined ? dpRing(ll, tol) : ll.map((x) => lodOf(x, tol)));
+  function lodPath(l, band) {
+    if (!l._latlngs || !l.feature) return;
+    if (!l._lodFull) l._lodFull = l._latlngs;
+    if (band >= LOD.length) { l._latlngs = l._lodFull; return; }
+    const c = l._lod || (l._lod = []);
+    l._latlngs = c[band] || (c[band] = lodOf(l._lodFull, LOD[band].tol));
+  }
+  function lodLayer(layer) { if (map && layer) { const b = lodBand(map.getZoom()); layer.eachLayer((l) => lodPath(l, b)); } }
+  function lodAll() {
+    const b = lodBand(map.getZoom());
+    if (b === lodNow) return;
+    lodNow = b;
+    Object.values(layers).forEach((layer) => layer.eachLayer((l) => lodPath(l, b)));
+  }
+
   function restyle() {
     // Saint-Pierre-et-Miquelon's label shows only in its own view.
     if (spmLabel) { if (current && current.country === "FR") spmLabel.addTo(map); else spmLabel.remove(); }
@@ -1107,6 +1152,7 @@
       $("map-status").textContent = "Loading France's smaller communes…";
       frSmallLoading = fetch("data/map/france-small.json").then((r) => r.json()).then((fc) => {
         layers["france-small"] = makeLayer(fc);
+        lodLayer(layers["france-small"]);
         layers["france-small"].eachLayer((l) => { const g = byId.get(gid(l.feature)); if (g && !g.layers.includes(l)) g.layers.push(l); });
         $("map-status").textContent = "";
       });
@@ -1252,6 +1298,7 @@
     if (name === "territories") fc.features = fc.features.filter((f) => f.properties.GEOID !== "7200030");
     else if (!name.startsWith("canada")) fc.features = fc.features.filter((f) => !/^(60|66|69|78)/.test(String(f.properties.GEOID || "")));
     layers[name] = makeLayer(fc);
+    lodLayer(layers[name]);
     if (name !== "scsd" || ($("map-secondary") && $("map-secondary").checked)) layers[name].addTo(map);
     // France's groups of small communes go underneath: their simplified borders overlap the larger communes' edges,
     // which should answer the mouse there.
@@ -1376,6 +1423,8 @@
     map = L.map("map", { preferCanvas: true, minZoom: 1, zoomSnap: 0.25, maxBounds: WORLD, maxBoundsViscosity: 1, worldCopyJump: false,
       zoomAnimation: !calm, fadeAnimation: !calm, markerZoomAnimation: !calm, keyboard: true })
       .setView([30, 0], 2);   // a view first: the island dots need one
+    // before the canvas's own handlers (added with the first border), so the lighter borders are the ones projected
+    map.on("viewreset zoomend", lodAll);
     const fitMinZoom = () => {
       const sz = map.getSize();
       const z = Math.max(1, Math.ceil(Math.log2(Math.max(sz.x, sz.y) / 256) * 4) / 4);
